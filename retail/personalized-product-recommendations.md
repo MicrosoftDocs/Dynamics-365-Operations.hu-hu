@@ -41,14 +41,14 @@ Az alábbi esetekben POS termék ajánlások engedélyezettek. Felhő POS vagy M
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-1.  A a **tranzakció** oldalon:
+2.  A a **tranzakció** oldalon:
 
 -   Az ajánlás motor cikkeket a kosárba cikkek teljes listája alapján javasol.
 -   Ha a tároló hozzárendelése vevő hozzáadása a tranzakcióhoz, az ajánlás motor segítségével a vevői tranzakciók előzményeinek és az elemek közül a kosár személyes javaslatokat tesz.
 
 **Megjegyzés:** javaslatok megjelenítése a **tranzakció** lap, a kiskereskedő kell frissíteni a képernyő-elrendezésén Dynamics 365 műveletekhez. A **ajánlások** vezérlő kell elveti a a **tranzakció** oldalon. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-1.  A a **vevő adatai** oldalon:
+3.  A a **vevő adatai** oldalon:
     -   Az ajánlás motor javasol cikkeket a felhasználói Azonosítót és a vevő kívánja lista alapján.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
