@@ -1,0 +1,49 @@
+---
+title: "Venni egy engedményt, amelyet több, mint a kiszámított engedmény szállítói kifizetés"
+description: "A cikk végigvezeti egy eseten, ahol egy készpénzfizetési engedmény nagyobb, mint az az engedmény, ami a számlán eredeti rendelkezésre álló összegként szerepelt. Ez az eset akkor fordulhat elő, ha egy szervezet megállapodik a szállítóval a számlán szereplő kisebb összeg kifizetésére."
+author: twheeloc
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
+audience: Application User
+ms.reviewer: twheeloc
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 14281
+ms.assetid: 7f0a4197-95dd-4969-ade9-154815cf659e
+ms.search.region: Global
+ms.author: kweekley
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
+ms.openlocfilehash: 22ba73681faa509a5144517163cc173a1267a534
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="take-a-discount-that-is-more-than-the-calculated-discount-for-a-vendor-payment"></a>Venni egy engedményt, amelyet több, mint a kiszámított engedmény szállítói kifizetés
+
+A cikk végigvezeti egy eseten, ahol egy készpénzfizetési engedmény nagyobb, mint az az engedmény, ami a számlán eredeti rendelkezésre álló összegként szerepelt. Ez az eset akkor fordulhat elő, ha egy szervezet megállapodik a szállítóval a számlán szereplő kisebb összeg kifizetésére. 
+
+A 3051. számú szállító 4 százalékos készpénzfizetési engedményt ad a Fabrikamnak, ha a számlát hét napon belül fizetik. Június 29-én April egy 1000,00 értékű számlát rögzít. A szállító 60,00 értékű kedvezményt ad Aprilnek az alapértelmezett engedmény helyett, amely a számlára vonatkozóan 40,00 lenne. April egyszeri kifizetést rögzít a Kötelezettségek fizetési naplóban. Ő megadja a szállító a kifizetést, és ezután megnyitja a **tranzakciók kiegyenlítése** oldalon. Ő a számlát megjelöli, és módosítja az értéket a **készpénzfizetési engedmény összege** mező **60.00**.
+| Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
+|----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
+| Kijelölve | Normál            | Inv-10040 | 3051    | 2015/29/6 | 2015/29/7 | 10040   | 1000,00                       | dollár      | 940,00           |
+
+Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg.
+|                              |           |
+|------------------------------|-----------|
+| Készpénzfizetési engedmény dátuma           | 2015/7/12 |
+| Készpénzfizetési engedmény összege         | 60,00     |
+| Készpénzfizetési engedmény használata            | Normál    |
+| Alkalmazott készpénzfizetési engedmény          | 0,00      |
+| Alkalmazandó készpénzfizetési engedmény összege | 60,00     |
+
+April ezután feladja ezt a naplót. A számla teljesen ki van egyenlítve a 940,00 értékű fizetéssel és a 60,00 engedménnyel.
+
+

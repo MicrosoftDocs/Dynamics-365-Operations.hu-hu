@@ -1,0 +1,53 @@
+---
+title: "Kiegyenlítés – áttekintés"
+description: "Ez a cikk a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit."
+author: twheeloc
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
+audience: Application User
+ms.reviewer: twheeloc
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 14551
+ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
+ms.search.region: Global
+ms.author: kweekley
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
+ms.openlocfilehash: adbfa6f99c481129e8cbf4a2dc4b23b4be1e8b34
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="settlement-overview"></a>Kiegyenlítés – áttekintés
+
+Ez a cikk a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit.
+
+Kiegyenlítés során az egy bizonylaton található tranzakciók alkalmazásra kerülnek egy másik bizonylaton található tranzakciókhoz, hogy az egyes bizonylatok egyenlegét növeljék vagy csökkentsék. Például a fizetési számla alkalmazhatók. Különböző tranzakciótípusokhoz is rendeznek, különböző időpontokban és különböző módszerek segítségével. A kiegyenlítés járhat továbbá új tranzakciók létrehozásával.
+
+## <a name="what-transactions-can-be-settled"></a>Mely tranzakciók egyenlíthetőek ki
+A kötelezettségeken vagy kinnlevőségeken belüli tranzakciók létrejöhetnek bármely tranzakció-típus között, amely hatással van a szállítói egyenlegre vagy vevői egyenlegre, úgy mint számlák, kifizetések, jóváírások és díjak. Bármely tranzakció-típus kiegyenlíthető bármely egyéb tranzakció-típussal Például kiegyenlíthet egy kifizetést egy számlával, egy jóváírást egy számlával, egy számlát egy számlával vagy egy kifizetést egy kifizetéssel. Kiegyenlíthet kifizetést egy tranzakcióval ugyanazon jogi személyben vagy más jogi személyben. A szervezetek, amelyek egy központosított kifizetési modell [központosított kifizetések](set-up-centralized-payments.md) segíthet a fizetési folyamatot egyszerűbbé.
+
+## <a name="when-to-settle-transactions"></a>Mikor történik a tranzakciók kiegyenlítése
+A tranzakciók a fizetési tétel idejében egyenlíthetőek ki. Például, amikor létrehoz egy kifizetést egy szállítónak, akkor általában kiválasztja a kifizetendő számlákat. Számlák kiválasztásával bejelöli azokat a fizetés ellenében kiegyenlítésre. Kinnlevőségek kifizetési írnokok vevői kifizetés rögzítésekor, ha azok kiegyenlítésre a vevő fizetési információk alapján a megfelelő számlákat jelölheti meg. A **Tranzakciók kiegyenlítése** lap használatos a tranzakciók megjelöléséhez kiegyenlítéshez. Ez a lap megnyitható bármely feladatlan számlából vagy kifizetésből. Amikor a tranzakció feladásra kerül, akkor a kiegyenlítés is feladásra kerül. A tranzakciók kiegyenlíthetőek továbbá a feladásuk után. Megadhat és feladhat egy vevői kifizetést anélkül, hogy kiegyenlítene vele bármilyen számlát. Előfordulhat azonban, hogy utána kell járnia a dolgoknak, hogy meggyőződjön, hogy a kifizetés a megfelelő számlát egyenlíti ki. A **Tranzakciók kiegyenlítése** lap megnyitható az **Összes vevő** vagy **Összes szállító** lapról, vagy a **Tranzakciók** lapról bármely vevőhöz, vagy szállítóhoz. Lefoglalhat továbbá feladott előlegeket egy számlához a megjelölve a kifizetést a beszerzési rendelés vagy értékesítési rendelés kiegyenlítéséhez. Ebben az esetben a fizetés még mindig megtalálható egy nyitott egyenleg, de egy másik számla ellen nem lehet kiegyenlíteni. A kifizetés automatikusan rendezik a számlát a beszerzési vagy értékesítési rendelés létrehozott ellen.
+
+## <a name="how-to-settle-transactions"></a>Hogyan történik a tranzakciók kiegyenlítése
+A tranzakciók kiegyenlíthetőek manuálisan, automatikusan, vagy a két módszer kombinálásával. A kifizetési mód kiválasztása az üzleti folyamatoktól függ, amely ezután megvalósítható a kiegyenlítés beállításai alapján, amely a kötelezettségek paraméterekben és a kinnlevőségek paraméterekben található. Létrehozhat szállítói kifizetéseket és vevői közvetlen levonás kifizetéseket egy kifizetési ajánlat használatával, amely a kifizetendő számlák kiválasztásánál használatos. A fizetési javaslat manuálisan kezdeményezett, de a Microsoft Dynamics 365 műveletek automatikusan megjelöli a kiegyenlítésre kijelölt számlák a kifizetések létrehozásakor. Ha a kifizetéseket manuálisan hozza létre, akkor használhatja a **Tranzakciók kiegyenlítése** lapot, hogy kiválassza a kiegyenlítendő számlákat. Manuálisan kiválaszthatja a számlákat vagy használhatja a **Megjelölés prioritás szerint** opciót, hogy a számlákat automatikusan megjelölje kiegyenlítéshez. A **Megjelölés prioritás szerint** beállítás csak a kinnlevőségek számára érhető el. Hogy engedélyezze ezt a beállítást használja a **Kiegyenlítési rangsor** lapot a kinnlevőségi paraméterekben. Ha egy kifizetési ügynök rögzít egy kifizetés, de nem egyenlíti ki a kifizetést mielőtt feladja, akkor a kifizetés kiegyenlíthető automatikusan. Automatikus kiegyenlítés a Kinnlevőségek paraméterei és a Kötelezettségek paramétereinek engedélyezheti. Ha automatikus elszámolása, használhatja az előre definiált Kiegyenlítési sorrend, vagy saját elszámolás prioritási sorrendben meghatározhatja a Kinnlevőségek paramétereiben. Ez a funkció csak a kinnlevőségek számára érhető el.
+
+## <a name="results-of-settlement"></a>A kifizetés eredménye
+Ahogy a tranzakciók kifizetésre kerülnek az egyes tranzakciók hátralékos egyenlege növekszik vagy csökken a megfelelő mértékben. Egy jellemző esetben, ahol egy számla és kifizetés kerül kiegyenlítésre az egyes tranzakciók állapota és egyenlege a következő szabályoknak megfelelően frissül:
+
+-   Ha a kifizetés összege több mint a számla összege, akkor a számla egyenlege 0,00-ra csökken és a számla lezárul. A kifizetés nyitva marad és az egyenlege az az összeg lesz, amellyel a kifizetés meghaladja a számla összegét.
+-   Ha a kifizetés összege kevesebb mint a számla összege, akkor a kifizetés egyenlege 0,00-ra csökken és a kifizetés lezárul. A számla nyitva marad és az egyenlege azzal az összeggel lesz egyenlő, amennyivel a kifizetés alulfizette a számlát.
+-   Ha a kifizetés összege egyenlő a számla egyenlegével, akkor a számla és a kifizetés is lezárul és mindkettő egyenlege 0,00 lesz.
+
+Ha a [kifizetés kevesebb mint a számla összege](../accounts-payable/vendor-payments-partial-amount.md) egy készpénzfizetési engedmény, leírás vagy alulfizetés miatt, akkor a számla és a kifizetés még mindig lezárható, a kiegyenlítés beállításaitól függően a kötelezettség paraméterek és a kinnlevőségi paraméterek szerint. Egy kiegyenlítés létre is hozhat tranzakciókat. Például egy számla és kifizetés kiegyenlítése termelhet készpénzfizetés engedményt, realizált nyereséget vagy veszteséget, áfakorrekciókat, leírásokat vagy fillérkülönbözeteket.
+
+

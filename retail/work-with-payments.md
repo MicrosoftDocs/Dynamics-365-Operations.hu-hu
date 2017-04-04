@@ -1,0 +1,48 @@
+---
+title: "A telefonos ügyfélszolgálatok a fizetési módok"
+description: "Ez a témakör bemutatja a Kiskereskedelem és kereskedelem hívásközpontjaiban használható fizetési módokat."
+author: josaw1
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 92163
+ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
+ms.openlocfilehash: 636d83ecc7732a164924352853603588cded0db4
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="payment-methods-in-a-call-center"></a>A telefonos ügyfélszolgálatok a fizetési módok
+
+Ez a témakör bemutatja a Kiskereskedelem és kereskedelem hívásközpontjaiban használható fizetési módokat.
+
+A Microsoft Dynamics AX Kiskereskedelem és kereskedelem modul más csatornáiban használt fizetési módok, például: készpénz, csekk, hitelkártya és ajándékutalvány is használható telefonos ügyfélszolgálatnál. A telefonos ügyfélszolgálatra történő fizetési mód beállítása után a telefonos ügyfélszolgálat felhasználóinak a **Fizetések** képernyő **Értékesítési rendelés** részében az egyik választható beállításként jelenik meg. Továbbá utalványokat állíthat be, amelyek kedvezményeket biztosítanak azon vásárlók részére, akik a rendeléseiket a szervezet hívásközpontjában adták le. Az utalványok lehetnek fix összegűek, illetve egy termék árának vagy a teljes rendelésnek egy bizonyos százaléka. Például az összeg alapú utalvány adhat 75,00 értékű kedvezményt, ha a vásárló legalább 750,00 értékben költ. Létrehozhat különböző utalványokat, felállíthat alá- és fölérendelt utalványokat, valamint másolhatja és érvénytelenítheti is őket. Használja az alábbi táblázatban szereplő beállításokat az utalvány létrehozásához.
+
+|                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Attribútum**             | A **Beváltási arány **mezőben adja meg a várható beváltási arányt százalékban, majd válassza ki, hogy az utalvány egyszer használható legyen-e, ki legyen--e adva újra automatikusan, vagy pedig egy adott vevőre vonatkozzon-e.                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Érvényes**                 | A **Kezdő dátum** és a **Záró dátum** mezőkben adja meg azt a kezdő és befejező dátumot, amelyek között az utalvány érvényes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Szabályokkal/szabályok nélkül** | A **Katalógusok** és a **Cikkek** mezőkben adja meg, hogy melyik katalógust vagy cikket foglalja, illetve nem foglalja magában az utalvány. Ha kiválasztja a **Felvétel** vagy **Kihagyás** lehetőséget, kattintson a **Beállítás** lehetőségre, majd válassza **Katalógusok felvétele/kihagyása** vagy a **Termékek felvétele/kihagyása** lehetőséget, hogy adatokat adhasson meg a katalógusról vagy cikkről. Ha az **Egyik sem** lehetőséget választja, akkor az összes cikket és katalógust magában foglalja az utalvány.                                                                                                                                                                                                                          |
+| **Vegyes**         | Ha nem szeretné, hogy ezt az utalványt további kedvezményekkel is igénybe vegyék, jelölje be a **Kizárólagos** jelölőnégyzetet. Ezután az **Eredet** mezőben válassza ki, hogy hol lehet használni az utalványt. Ha ez egy gyártói utalvány, válassza a **Gyártó kupon** jelölőnégyzetet.                                                                                                                                                                                                                                                                                                                                                                |
+| **Jövőbeni utalvány**         | Ha ez az utalvány más kuponok fölé van rendelve, válassza a **Fölérendelt kupon** jelölőnégyzetet. Ha az imént említett utalványt más utalvány alá szeretné rendelni, válassza ki a fölérendelt kupont a **Fölérendelt utalvány azonosítója** mezőben. Például Ön létrehoz egy utalványt a közelgő tavaszi katalógushoz. Az összes többi utalvány, amit a továbbiakban létrehoz a tavaszi katalógus alárendelt utalványa lesz. Az alárendelt utalvány nyújthat egy 20 százalékos kedvezményt az új vevői rendelésekre, egy 10 százalékos kedvezményt egy újonnan megjelent cikkre, vagy egy 95,00 értékű kedvezményt 1000,00 érték feletti vásárlásnál. |
+
+Egy elküld egy bankkártyás fizetést az **Értékesítési rendelés** lapon, majd kap egy üzenetet, hogy a kártya nincs engedélyezve, akkor engedélyezheti azt manuálisan. Engedélyezhet, elutasíthat, vagy újraküldhet egy bankkártyás tranzakciót az **Engedély kezelése** lapon. A további fizetés feldolgozási opciók beállításához használja a hívásközpont-paraméterek lapot:
+
+-   A csekkvárakoztatások, mivel csekkel volt fizetve, várakoztatásba helyezte a pénzügyi személyzet feldolgozásokat, valamint a csekkvárakoztatás küszöbértéke meg lett haladva. A várakoztatásokat ki lehet adni manuálisan, vagy automatikusan lejár a beállítási időszak végén.
+-   Megadhatja azokat a küszöbértékeket, amely felett a csekkes vagy hitelkártyás visszatérítést manuálisan kell jóváhagyni. A küszöbértéket meghaladó visszatérítés a jóváhagyási várólistára kerül. A visszatérítés jóváhagyása után számlázható a visszárurendelés.
+
+
+

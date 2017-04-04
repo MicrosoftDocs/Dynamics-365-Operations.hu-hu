@@ -1,0 +1,69 @@
+---
+title: "Karanténutasítások"
+description: "Ez a cikk bemutatja, hogy a karanténutasításokat hogyan lehet a készlet blokkolására használni."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 30021
+ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
+ms.search.region: Global
+ms.author: perlynne
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
+ms.openlocfilehash: 394276e6908f2c1f6bc72eea061facc3afe701e9
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="quarantine-orders"></a>Karanténutasítások
+
+Ez a cikk bemutatja, hogy a karanténutasításokat hogyan lehet a készlet blokkolására használni. 
+
+A karantén-utasítások használhatóak a készlet blokkolására. Például érdemes karantén minőség-ellenőrzési okokból elemek. Karanténba helyezett van már készlet egy karanténraktárba kerül át. **Megjegyzés:** Ha speciális raktárkezelési folyamatokat használ (a Raktárkezelésben), a karantén utasítás feldolgozása csak értékesítési visszáru-rendeléseknél lesz használva.
+
+## <a name="quarantine-onhand-inventory-items"></a>Karantén onhand készletcikkek
+Cikkek karanténba helyezésekor létrehozhatja a karanténutasításokat manuálisan, vagy beállíthatja a rendszert, hogy automatikusan hozza létre a karantén utasításokat a bejövő feldolgozás során. Karantén-utasítások automatikus létrehozásához válassza ki a **Karantén kezelése** lehetőséget a **Készletre vonatkozó irányelvek** fülön a **Cikkmodellcsoportok** lapon. Az alapértelmezett karantén raktárt is meg kell adnia a **Karantén raktár** mezőben, a fogadó raktár esetén. Amikor az aktuális készlet rögzítve lesz egy beszerzési rendelésben vagy termelési rendelésben, a karanténba helyezett cikkek automatikus egy karanténraktárba kerülnek a Microsoft Dynamics 365 for Operations rendszerben. Ez a mozgás akkor következik be, a karantén rendelés állapota felveszi a következő értéket: **Elindítva**. Amikor manuálisan hoz létre karanténutasításokat, akkor nincs rá szükség, hogy az aktuális cikkhez be legyen állítva a karantén kezelés a társított cikkmodellcsoportban. Ehhez a folyamathoz meg kell határoznia a karanténozásra váró aktuális készletet, valamint a használni kívánt karantén raktárt. A folyamat megtervezéséhez használhatja a karanténutasítás állapotokat.
+
+## <a name="quarantine-order-statuses"></a>Karanténutasítás-állapotok
+A karanténutasítások a következő állapotúak lehetnek:
+
+-   Létrehozva
+-   Elkezdve
+-   Készként jelentve
+-   Befejezve
+
+### <a name="created"></a>Létrehozva
+
+Ha egy karanténutasítást manuálisan hoztak létre, de a cikk még nincs a karantén raktárban, akkor a karanténutasítás állapota **Létrehozott**. Két készlettranzakció jön létre. Az egyik tranzakció egy kiadási tranzakció, amelynek az állapota lehet **Megrendelt**, **Foglalt tényleges**, vagy** Kitárolt**. A második pedig egy bevételezési tranzakció, amely a **Megrendelt** vagy** Regisztrált** állapotokkal rendelkezhet a karantén raktárban. A szokásos folyamatokkal végezheti a lefoglalását, a kitárolást és a készlet frissítésének regisztrálást.
+
+### <a name="started"></a>Elkezdve
+
+Ha egy karanténutasítás állapota **Elindítva** a készlet átkerül a szokásos raktárból a karanténraktárba, és létrejön két készlettranzakció. Az egyik tranzakció állapota **Levonva**, a másik tranzakció állapota pedig **Bevételezett**. Ugyanakkor két olyan készlettranzakció is létrejön, amelyek a visszáru-átvezetés kezelését szolgálják. Ezek a tranzakciók nem dátumhoz kötöttek. Az egyik tranzakció állapota **Foglalt tényleges**, a másik tranzakció állapota pedig **Megrendelt**.
+
+### <a name="reported-as-finished"></a>Készként jelentve
+
+A **Jelentés készként** parancsra kattintva jelentheti, hogy egy elindított karanténutasítás befejeződött. A cikk felszabadul a karanténból, de még nem kerül vissza a szokásos raktárba. A visszamozgatást az eredeti raktárba egy cikkbeérkezési naplón keresztül lehet feldolgozni, amelyet a Jelentés során lehet befejezett folyamatként inicializálni.
+
+### <a name="ended"></a>Befejezve
+
+Egy karanténutasítás befejezésekor, a cikk a karantén raktárból visszakerül a rendes raktárba. A cikktranzakció állapota **Eladva** a karanténraktárban és **Beszerezve** a rendes raktárban.
+
+## <a name="quarantine-order-scrap"></a>Karanténutasítás-selejt
+A karanténutasítási folyamat részeként lehetséges a készlet selejtezése. A selejt feldolgozásakor a készlet állapota **Értékesítve** lesz, a karantén raktárból származó kiadási tranzakció által.
+
+<a name="see-also"></a>Lásd még
+--------
+
+[Inventory blocking](inventory-blocking.md)
+
+

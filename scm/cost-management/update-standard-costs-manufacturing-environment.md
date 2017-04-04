@@ -1,0 +1,47 @@
+---
+title: "Az elszámolóár frissítése gyártási környezetben"
+description: "A cikk az elszámolóárak gyártási környezetben történő frissítésének útmutatását tartalmazza."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: CostingVersion, InventStdCostConv
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 79663
+ms.assetid: 3a7c3d13-8dbc-442d-a281-ac0ebe99ec83
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: mguada
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: 9a7199b62ea0037e709da983b6fd53aaadeca4ad
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="update-standard-costs-in-a-manufacturing-environment"></a>Az elszámolóár frissítése gyártási környezetben
+
+A cikk az elszámolóárak gyártási környezetben történő frissítésének útmutatását tartalmazza. 
+
+A frissítések visszajelzést adhatnak az új cikkekről, költségkategóriákról vagy közvetett költségszámítási képletekről. Visszatükrözhetik a korrekciókat és a költségváltozásokat. A frissítés típusa kihatással van az önköltségi árak frissítéséhez szükséges lépésekre, amint azt az alábbi esetek bemutatják:
+
+-   A várható önköltségiár-változások megadása az alapanyagoknál, majd a megfelelő dátumnál a cikkek költségrekordjainak átállítása **Aktív** állapotra. Azonban nem számolják újra az alapanyagokat felhasználó termékek költségeit.
+-   Egy új alapanyag önköltségi árának megadása, de nem történik meg az olyan termékek költségeinek újraszámítása, amelyek olyan anyagjegyzék-verzióval rendelkeznek, amelyben összetevőként szerepel az új alapanyag.
+-   Egy alapanyag költségének helyesbítése vagy megváltoztatása, vagy egy alapanyag költségcsoportjának megváltoztatása, és a termékek költségeinek újraszámítása egy olyan anyagjegyzék-verzióval rendelkezik, amelyben az alapanyag összetevőként szerepel.
+-   Egy költségkategóriához tartozó költség megváltoztatása, és az összes olyan gyártott cikk, amely egy olyan útvonalverzióval rendelkezik, amely ezt a költségkategóriát használó útvonalműveleteket tartalmazza.
+-   Az útvonalműveletekhez rendelt költségkategóriák vagy a költségkategóriákhoz rendelt költségcsoport megváltoztatása. Számítsa ki az összes gyártott cikkre vonatkozó költséget, amely rendelkezik egy olyan útvonalverzióval, amelyben szerepelnek a költségkategóriákat használó útvonalműveletek.
+-   Egy közvetett költségszámítási képlet megváltoztatása, és a változtatás által érintett termékek költségeinek újraszámítása.
+-   Egy termékgyártási hely megváltoztatása vagy hozzáadása, és a cikk helyi gyártási költségének kiszámítása.
+-   Számítsa ki vagy számítsa újra a gyártott termékre vonatkozó költséget, számítsa újra az összes olyan gyártott termékre vonatkozó költséget, amely rendelkezik olyan anyagjegyzék-verzióval, amely a gyártott termékeket összetevőkként tartalmazza.
+-   Számítsa ki az új gyártott termék költségeit, annak meghatározott, jóváhagyott és aktív anyagjegyzék és útvonal-információi alapján.
+
+Minden egyes eset gondos odafigyelést igényel, amikor az önköltségi árak frissítésére kerül sor.
+
+
