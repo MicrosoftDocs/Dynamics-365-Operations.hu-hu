@@ -33,9 +33,8 @@ A következő típusú dokumentumok segítségével a kezelheti a szervezete ké
 
 ## <a name="purchase-orders"></a>Beszerzési rendelések
 A beszerzési rendeléseket a központi irodában készítik. Kiskereskedelmi raktár szerepel a beszerzési rendelés fejlécében, ha a rendelés képes fogadni az üzletben Modern POS (MPOS) vagy felhő POS használata a Microsoft Dynamics 365 műveletek - kiskereskedelmi. Miután az üzletben kapott mennyiségek vannak megadva, hogy helyben is elmentheti további módosításra. Másik lehetőségként a mennyiségek vállalhatóak és a központi irodába küldhetőek. A központi iroda az üzletben kapott mennyiségek jelennek meg Dynamics 365 műveletek, a **fogadása most** mező a beszerzési rendelésen.
-Átmozgatási rendelések
----------------
 
+## <a name="transfer-orders"></a>Átmozgatási rendelések
 Az átmozgatási rendelés megadhatja, hogy egy adott üzlet egy olyan hely, ahonnan cikkek szállíthatóak. Ebben az esetben az átadás rendelés jelenik meg az üzletben MPOS vagy felhő POS kiadási kérelem. Után igényelt mennyiségek leltárhoz, ezeket véglegesítése és a központi iroda küldött. A központi iroda az üzletben kivett mennyiségek jelennek meg Dynamics 365 műveletek, a **Szállítás most** az átadás rendelés mezőben. Az átmozgatási rendelés megadhatja, hogy egy adott üzlet egy olyan hely, ahová cikkek szállíthatóak. Ebben az esetben az átadás rendelés jelenik meg az üzletben MPOS vagy felhő POS fogadó kérelmet. Miután az üzletben kapott mennyiségek vannak megadva, hogy helyben is elmentheti további módosításra. Másik lehetőségként a mennyiségek vállalhatóak és a központi irodába küldhetőek. A központi iroda az üzletben kapott mennyiségek jelennek meg Dynamics 365 műveletek, a **fogadása most** az átadás rendelés mezőben.
 
 ## <a name="stock-counts"></a>Leltárok
