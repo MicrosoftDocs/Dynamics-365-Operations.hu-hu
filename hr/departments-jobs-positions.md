@@ -56,10 +56,6 @@ A munkakör azon feladatok és felelősségek gyűjteménye, amelyek egy adott m
 Létrehozhat olyan munkaköri feladatokat, amelyek bemutatják az adott pozíciójú dolgozótól elvárt alapvető feladatokat. Ugyanazon munkaköri feladatok több munkához is hozzáadhatók, valamint az adott munkához tartozó pozíciók öröklik ezen munkaköri feladatokat. Az alábbi táblázatban látható néhány példa munkaköri feladatokra.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Munka</th>

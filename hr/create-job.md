@@ -48,10 +48,10 @@ Feladattípusok segítségével kategóriákba csoportosítani a hasonló felada
 ## <a name="job-functions"></a>Beosztások
 Feladat találkozását magas szintű funkcionális kategóriák írják le, és magas szintű vámok vonatkoznak. Beosztások nem lesz szükség. Beosztások típusai, és segítségével kiszűrheti a kompenzációs konstrukciók konkrét projektekre. Társítania beosztások és feladattípusok juttatási programok által a támogathatósági szabályok beállítása a **támogathatósági szabályok** oldalon. A feladat típusa és a jogosultság-szabály segítéségével beállított feladatkör egyedi kombinációja érvényes kompenzációs terv is csatolhatja a szintek egy halmazát. (Ezek a funkciók fix kompenzációs tervek és a változó kompenzációs konstrukciók vonatkozik.) Azonban ha szeretné használni a beosztások, kompenzációs kezelésére vonatkozó támogathatósági szabályok beállításakor, állítson be beosztások feladatok beállítása előtt. A következő táblázat néhány példát mutat feladatokkal kapcsolatos funkciókat.
 
-| Munka           | Beosztás      |
-|---------------|-------------------|
-| Értékesítési igazgató | Középkategóriás kezelő |
-| Könyvelő    | Szakemberek számára     |
+| Munka           | Beosztás         |
+|---------------|----------------------|
+| Értékesítési igazgató | Középkategóriás kezelő    |
+| Könyvelő    | Szakemberek számára        |
 
 Megmaradjanak a projekt funkciók segítségével a **feladatkörét** oldalon. A a **feladatkörét** lap, adja meg azonosítóját és a feladatkör rövid leírását.
 
