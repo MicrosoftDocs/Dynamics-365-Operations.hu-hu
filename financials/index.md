@@ -41,3 +41,5 @@ További információkért válasszon ki egy funkcióterületet.
 - [Public sector](public-sector\public-sector-functionality.md) 
 - [Budgeting](budgeting\budgeting-overview.md) 
 
+
+

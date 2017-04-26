@@ -88,3 +88,5 @@ Felhasználói útmutató segít útmutató Dynamics 365 műveletekhez a vállal
 </tbody>
 </table>
 
+
+

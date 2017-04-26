@@ -55,3 +55,5 @@ Például a legutóbbi bejegyzések olvashat tudnivalókat:
 ## <a name="elearning-courses"></a>e-tanulás tanfolyamok
 További információt a Microsoft Dynamics 365 műveletek képzés, lásd: <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">a Microsoft Dynamics tanulás portál</a>. (a CustomerSource-fiókjához igényel) 
 
+
+

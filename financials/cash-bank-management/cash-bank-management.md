@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>Készpénz- és bankkezelés kezdőlap
 
+[!include[banner](../includes/banner.md)]
+
+
 A Készpénz- és bankkezelés modul segítségével karbantarthatók a jogi személy bankszámlái, valamint a hozzájuk társított pénzügyi eszközök. 
 
 Ide tartoznak a letéti jegyek, csekkek, váltók és kötelezvények. Ugyanitt egyeztetheti a banki kivonatokat és banki adatokat nyomtathat szabványos jelentésekre.
@@ -69,4 +72,6 @@ Ide tartoznak a letéti jegyek, csekkek, váltók és kötelezvények. Ugyanitt 
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Forgatókönyv: Egy vevői kifizetés segítségével több kedvezményes időszakra kiterjedő több számla kiegyenlítése](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 

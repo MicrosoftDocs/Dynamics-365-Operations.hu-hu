@@ -75,3 +75,4 @@
 # Egyéb erőforrások
 ## [365 Dynamics vonatkozó műveletek szószedet](get-started/glossary.md)
 ## [Mi az, ami új vagy módosított](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/toc.json)
+

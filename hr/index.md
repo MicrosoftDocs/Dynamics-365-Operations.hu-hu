@@ -98,3 +98,5 @@ Lehetősége van kérdőívek tervezésére és kezelésére, különböző cél
 -   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
 
+
+
