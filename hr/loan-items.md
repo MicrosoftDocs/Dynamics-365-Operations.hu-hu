@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-items-lent-to-workers"></a>A dolgozóknak kölcsönzött cikkek kezelése
 
+[!include[banner](includes/banner.md)]
+
+
 A kölcsöncikkek olyan rekordok, amelyek segítik a menedzsert a cég által a munkavállalók számára kölcsönadott tényleges cikkkek követésében. 
 
 A következő szempontok olyan elemek példáit sorolja fel, amelyeket a vállalat kölcsönözhet a munkavállalóknak:
@@ -39,7 +42,7 @@ Minden fizikai cikknek rendelkeznie kell egy megfelelő kölcsöncikkel. Minden 
 
 Tétel kölcsönzése esetén jegyezze fel a tétel kölcsönzésének az időpontját és a visszaadás tervezett időpontját. Ha a cikk visszaérkezett, adja meg a tényleges visszaadási időpontot is.
 
-Alkalmazottak megtekinthessék a rekordok segítségével az alkalmazotti önkiszolgáló munkaterület kölcsönzött cikkre. Azok is szerkesztheti a meglévő rekordokat, vagy adjon meg új kölcsöncikkek, ha azok további fizikai elemeket kapott.  Munkafolyamat állíthatja a jóváhagyási folyamat új vagy meglévő kölcsöncikkek útvonal módosítása. 
+Az alkalmazottak az Alkalmazott önkiszolgáló munkaterület segítségével tekinthetik meg a kölcsönadott cikkek rekordjait. Szerkeszthetik is a meglévő rekordokat vagy megadhatnak új kölcsöncikkeket, ha már kaptak további tényleges cikkeket.  A munkafolyamatot be lehet állítani úgy, hogy a változtatásokat irányítsa új vagy már meglévő kölcsöncikkekhez egy jóváhagyási folyamaton keresztül. 
 
 A vezetők megtekinthetik a közvetlen jelentések közvetlen cikkeit. Megkaphatják az engedélyt új kölcsön cikkek hozzáadására az alkalmazottaik nevében.
 
@@ -52,6 +55,8 @@ Ha egy tétel megsérül vagy rossz helyre kerül, adjon meg egy fiktív visszaa
 <a name="see-also"></a>Lásd még
 --------
 
-[Human resources](index.md)
+[Emberi erőforrások](index.md)
+
+
 
 

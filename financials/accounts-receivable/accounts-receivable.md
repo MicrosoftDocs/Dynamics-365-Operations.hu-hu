@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-receivable-home-page"></a>Kinnlevőségek kezdőlap
 
-A Kinnlevőségek szakasz a vevői számlák és a beérkező kifizetések nyilvántartására szolgál.
+[!include[banner](../includes/banner.md)]
+
+
+A Kinnlevőségek szakasz a vevői számlák és a beérkező kifizetések nyilvántartására szolgál. 
 
 Vevői számlák, értékesítési rendelések vagy a csomagjegyzék alapján hozhat létre. Olyan szállítói számlákat is megadhat, amelyek nincsenek hozzárendelve beszerzési rendelésekhez. Kifizetések kaphat segítségével több különböző fizetéstípusok. Ezek közé tartozik a váltók, készpénzfizetési, csekkek, hitelkártyákat és az elektronikus kifizetésekhez. Ha a szervezet több jogi személy is tartalmaz, a jogi személyek nevében használhat rekord kifizetésekhez központosított kifizetések egyetlen jogi személy.
+
+
 
 
 

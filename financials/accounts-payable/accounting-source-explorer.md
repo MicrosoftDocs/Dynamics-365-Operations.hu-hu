@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-source-explorer"></a>Könyvelési források böngészője
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk információt biztosít a Könyvelés forrás felfedezőről, aminek segítségével részletes elemzést végezhet a főkönyvi könyvelés bejegyzései mögötti forrásinformációról.
 
-A számlázási forrás megtekintő egy új oldal, amely megjeleníti a forrásinformációt. Számviteli adatforrás-tallózóban önálló eszközként vagy főkönyvi könyvelési tételek mögött részletes elemzésére használhatja. Adatforrás-tallózóban számviteli segítségével például a legtöbb részletes információ forrás Trail számlakivonat egyenlege vagy a tranzakció bizonylata. Ezután az Exportálás MS Excelbe funkció használatával, majd a Microsoft Excel programot használhatja az adatok további feldolgozására (például a Pivot táblával vagy Pivot tábla kimutatással).
+A számlázási forrás megtekintő egy új oldal, amely megjeleníti a forrásinformációt. A Könyvelési források böngészője önálló eszközként vagy főkönyvi könyvelési tételek mögötti részletek elemzésére használható. Például a Könyvelési források böngészőjével lehívhatók a legrészletesebb forrásinformációk ellenőrzési egyenlegeket vagy bizonylati tranzakciókat illetően. Ezután az Exportálás MS Excelbe funkció használatával, majd a Microsoft Excel programot használhatja az adatok további feldolgozására (például a Pivot táblával vagy Pivot tábla kimutatással).
 
 Könyvelési források böngészője mindig ugyan azt a teljes összeget mutatja főkönyvi számlánként amelyet a Főkönyv (például a főkönyvi kivonat). A főkönyvi kivonatban, megjelenítheti a szegmenseket külön oszlopokban. Csak válassza ki a megfelelő pénzügyi dimenzió készletet. 
 
 Paraméterek segítségével meghatározhatja za elemzési időszakot. Ez a funkció hasonlít a Főkönyvi kivonat funkciójára.
 
-A forrás dokumentum keretében, gazdasági forrást használó valamennyi dokumentumok explorer jeleníti meg további információt a könyvelési felosztás alapján és, adott esetben a projekt könyvelési felosztások. Ez az információ tartalmazza a pénzben kifejezett összeg típusa, projekt, tevékenység, kategória és a sortulajdonság. Következzék pár példa az elvégezhető elemzésekre:
+A forrásdokumentum-keretet használó valamennyi dokumentumnál a Könyvelési források böngészője további információkat jeleníti meg könyvelési felosztások és adott esetben projektszintű könyvelési felosztások alapján. Ezek az információk többek között: a pénzben kifejezett összeg típusa, projekt, tevékenység, kategória és sortulajdonság. Következzék pár példa az elvégezhető elemzésekre:
 
 -   A beszerzési rendelés és szállítói számla közötti különbségek, mert minden eltérést egy pénzösszeg típus jelez, például költségeltérés
 -   Számlázható és a nem számlázható órák és kiadások projekt, üzleti egység és a fő számla
@@ -46,5 +49,7 @@ Azokhoz a forrásbizonylatokhoz, amelyek a forrásbizonylat hivatkozás identit�
 -   Engedmény szállítókra, termékre, részletre bontva
 
 Ezek a dokumentumoknál navigálhat a tényleges forrásbizonylathoz a Könyvelési források böngészőjéből.
+
+
 
 

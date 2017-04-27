@@ -1,6 +1,6 @@
 ---
-title: "Értékesítési rendelések mobil munkaterület Microsoft Dynamics 365 műveletek app"
-description: "Az értékesítési rendelések mobil munkaterület maradhat, ha naprakész bárhol a eladási rendeléseken és bármikor."
+title: "Értékesítési rendelések mobil munkaterülete a Microsoft Dynamics 365 for Operations alkalmazásban"
+description: "Az értékesítési rendelések mobil munkaterületének segítségével bármikor és bárhol is legyen, naprakész maradhat az értékesítési rendeléseivel kapcsolatban."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,93 +25,93 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Értékesítési rendelések mobil munkaterület Microsoft Dynamics 365 műveletek app
+# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Értékesítési rendelések mobil munkaterülete a Microsoft Dynamics 365 for Operations alkalmazásban
 
-Az értékesítési rendelések mobil munkaterület maradhat, ha naprakész bárhol a eladási rendeléseken és bármikor. 
+Az értékesítési rendelések mobil munkaterületének segítségével bármikor és bárhol is legyen, naprakész maradhat az értékesítési rendeléseivel kapcsolatban. 
 
 <a name="prerequisites"></a>Előfeltételek
 -------------
 
 | Előfeltételek                                                         | Leírás                                                                                                                                                                   |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Olvassa el a Microsoft Dynamics 365 műveletek mobil platform | [365 Dynamics műveletek mobil platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| 365 Dynamics műveletek                                          | Győződjön meg arról, hogy olyan környezetben, amely rendelkezik a Microsoft Dynamics 365 műveletek verzió 1611 használ, és a Microsoft Dynamics műveletek platform frissítése (November 2016) 3. |
-| A gyorsjavítás KB 3215650                                                    | A gyorsjavítást a Microsoft Dynamics 365 műveletekhez biztosított munkaterületek engedélyezése.                                                                       |
-| Mobil eszköz, amely a Dynamics 365 a műveletek alkalmazás telepítve van | Töltse le a mobil app store app műveletek esetében a Dynamics 365.                                                                                                      |
+| Tudnivalók a Microsoft Dynamics 365 for Operations mobilplatformról | [Dynamics 365 for Operations mobilplatform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
+| Dynamics 365 for Operations                                          | Győződjön meg arról, hogy olyan környezetet használ, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november). |
+| Gyorsjavítás – Tudásbázis, 3215650                                                    | Telepítse a gyorsjavítást a Microsoft Dynamics 365 for Operationsben biztosított munkaterületek engedélyezéséhez.                                                                       |
+| Mobileszköz, amelyre telepítve van Dynamics 365 for Operations alkalmazás | Töltse le Dynamics 365 for Operations mobilalkalmazást a mobiljához tartozó alkalmazásáruházból.                                                                                                      |
 
 ## <a name="overview"></a>Áttekintés
-A mobil munkaterület éri el a Dynamics 365 műveletek alkalmazás, és lehetővé teszi minden eladási rendeléshez például rendelés állapota, a vevők kapcsolattartói adatainak és a rendelés elfogadója kapcsolati információkat kapcsolatos részletes információk megtekintése. A mobil munkaterületet biztosít azonnali információkra az értékesítési rendeléseket. Vevő, értékesítési rendelések megtekintése vagy az összes értékesítési rendelés megjelenítése, vagy egy meghatározott értékesítési rendelés adatainak megtekintése. A mobil munkaterület két ablakokban eladási rendelések mély elemzéséhez.
+Ez a mobil munkaterület hozzáférést biztosít a Dynamics 365 for Operations alkalmazáshoz, és segítségével megtekintheti az egyes értékesítési rendelésekkel kapcsolatos részletes információkat, például a rendelés állapotát, a vevő kapcsolattartási adatait és a megrendelő kapcsolattartási adatait. A mobil munkaterület azonnali rálátást biztosít az értékesítési rendelésekre. Megtekintheti az értékesítési rendeléseket ügyfelek szerint, vagy megtekintheti egy adott értékesítési rendelés információit. A mobil munkaterület két nézetet kínál, ahol részletesen elemezheti az értékesítési rendeléseket.
 
-### <a name="view-all-sales-orders"></a>Összes értékesítési rendelés megjelenítése
+### <a name="view-all-sales-orders"></a>Összes értékesítési rendelés megtekintése
 
-Ebben a nézetben az összes értékesítési rendelések listájának megjelenítése.
+Ez a nézet az összes értékesítési rendelést megjeleníti.
 
--   A következő szűrők segítségével válassza ki a megtekinteni kívánt értékesítési rendelésekkel.
-    -   Értékesítési rendelés keresése
-    -   Vevői számla a kereséshez
-    -   Vevő név szerinti keresés
-    -   Keresési állapot szerint
-    -   A kiadás állapot szerinti keresés
-    -   Keresés létrehozásának dátuma és időpontja
+-   A következő szűrők egyikének segítségével kiválaszthatja a megtekinteni kívánt értékesítési rendeléseket.
+    -   Keresés értékesítési rendelés szerint
+    -   Keresés vevői számla alapján
+    -   Keresés vevő neve szerint
+    -   Keresés állapot szerint
+    -   Keresés kiadási állapot szerint
+    -   Keresés a létrehozás dátuma és ideje alapján
 
 <!-- -->
 
--   Miután kiválasztotta az értékesítési rendelések, bizonyos típusú rendelések adatait tekintheti meg. Pontosabban tekintheti meg:
-    -   Vevő neve és címe adatai
-    -   Különböző eladási rendelés dátumok, például a kért szállítási dátum és visszaigazolt szállítási dátum
-    -   Rendelés elfogadója kapcsolattartási adatok
-    -   Vevő kapcsolattartási adatai
+-   A értékesítési rendelések kiválasztását követően megtekintheti az adott rendelések részleteit. Pontosabban a következőket tekintheti meg:
+    -   Ügyfél neve és címadatai
+    -   Különböző értékesítésirendelés-dátumok, például a kért szállítási dátum és a visszaigazolt szállítási dátum
+    -   Megrendelő kapcsolattartási adatai
+    -   Vevői kapcsolattartási adatok
     -   Rendeléssorok
-    -   Hogyan és mikor szállított egy értékesítési rendelés megjelenítése szállítások
+    -   Szállítmányok, amelyek megmutatják, hogyan és mikor szállították ki az értékesítési rendelést
 
-### <a name="view-orders-for-a-customer-"></a>A vevő ** rendelések megtekintése **
+### <a name="view-orders-for-a-customer-"></a>Vevő rendeléseinek megtekintése** **
 
-Ez a nézet vevőnként értékesítési rendelések listájának megjelenítése.
+Ez a nézet értékesítési rendeléseket jelenít meg vevőnként.
 
--   A következő szűrők segítségével megtekintheti a vevő rendeléseit.
-    -   Keresés név alapján
-    -   Partner keresése
+-   A következő szűrők segítségével tekintheti meg egy vevő rendeléseit.
+    -   Keresés név szerint
+    -   Keresés számla alapján
 
 <!-- -->
 
--   Miután kiválasztotta a vevő, tekintheti meg:
-    -   Vevő neve és csoport
-    -   Vevő kapcsolattartási adatai
-    -   Vevői megrendelések és az értékesítési rendelések részletei:
-        -   Vevő neve és címe adatai
-        -   Különböző eladási rendelés dátuma
-        -   Rendelés elfogadója kapcsolattartási adatok
-        -   Vevő kapcsolattartási adatai
+-   Egy vevő kiválasztását követően a következőket tekintheti meg:
+    -   Vevő neve és csoportja
+    -   Vevői kapcsolattartási adatok
+    -   Vevői értékesítési rendelések és az értékesítési rendelések részletei:
+        -   Ügyfél neve és címadatai
+        -   Különböző értékesítésirendelés-dátumok
+        -   Megrendelő kapcsolattartási adatai
+        -   Vevői kapcsolattartási adatok
         -   Rendeléssorok
-        -   Hogyan és mikor szállított értékesítési rendelések megjelenítése szállítások
+        -   Szállítmányok, amelyek megmutatják, hogyan és mikor szállították ki az értékesítési rendeléseket
 
 ## <a name="get-started"></a>Első lépések
-Kövesse az alábbi lépéseket a mobileszközön a Mobil eladási rendelések munkaterület használatának megkezdéséhez.
+Kövesse az alábbi lépéseket, és kezdjen hozzá az értékesítési rendelések mobil munkaterületének használatához a mobileszközén.
 
-1.  A mobil app-tárolóban töltse le és telepítse a Microsoft Dynamics 365 app műveletek esetében.
-2.  Az alkalmazás indításához az eszközön.
-3.  A Dynamics 365 URL-CÍMÉT adja meg.
-4.  Adja meg a vállalat a bejelentkezéshez. Például, adja meg az **USMF**.
-5.  Az első bejelentkezéskor kéri a felhasználónevet és jelszót a Microsoft Dynamics 365 költségszámla esetében. Adja meg hitelesítő adatait. A bejelentkezést követően a vállalat jelennek meg a rendelkezésre álló munkaterületek.
+1.  A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Microsoft Dynamics 365 for Operations alkalmazást.
+2.  Indítsa el az alkalmazást a készülékén.
+3.  Adja meg a Dynamics 365 URL-címét.
+4.  Adja meg a vállalatot a bejelentkezéshez. Például írja be azt, hogy **USMF**.
+5.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót a Microsoft Dynamics 365 for Operations-fiókjához. Adja meg a hitelesítési adatait. A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek.
 
-A mobil app munkaterületek megtekintéséhez először a kívánt munkaterületet kell közzétenni a vonatkozó műveletek app a Dynamics 365.
+A munkaterületek a mobilalkalmazásban történő megtekintéséhez először a kívánt munkaterületeket közzé kell tenni Dynamics 365 for Operations alkalmazásban.
 
-1.  Indítsa el a Dynamics 365 műveletekhez.
-2.  Ugrás a **rendszer felügyeleti**&gt;**a telepítő**&gt;**Rendszerparaméterek**.
-3.  Válassza ki **mobile alkalmazás kezelése**.
-4.  Válassza ki a munkaterületen való közzétételéhez a mobil platform.
-5.  Válassza ki **közzététele a munkaterület**.
-6.  Frissítse az eszközt, és ellenőrizze a közzétett munkaterületek.
+1.  Indítsa el a Dynamics 365 for Operationst.
+2.  Lépjen a **Rendszerfelügyelet** &gt; **Beállítás** &gt; **Rendszerparaméterek** elemre.
+3.  Válassza a **Mobilalkalmazás kezelése** lehetőséget.
+4.  Válassza ki a munkaterületet a mobilplatformon való közzétételre.
+5.  Válassza a **Munkaterület közzététele** lehetőséget.
+6.  Frissítse az eszközt a közzétett munkaterületek ellenőrzéséhez.
 
-## <a name="view-information-about-sales-orders-for-a-customer"></a>A vevőhöz tartozó értékesítési rendelésekkel kapcsolatos információk megtekintése
-1.  A mobileszközön válassza ki a **értékesítési rendelések** munkaterület.
-2.  Válassza ki **a vevői rendelések megtekintése**.
-3.  Használata ** fiók ** vagy ** Vevőnév ** keresse meg a kívánt vevőt az információt.
-4.  Válassza ki a vevőt.
-5.  Válassza ki **elérhetőségi adatok** vagy **értékesítési rendelések**.
-6.  Ha **értékesítési rendelések** van jelölve, a vevőhöz tartozó értékesítési rendelések listája fog megjelenni.
-7.  Válassza ki **az eladási rendelés**.
-8.  Itt megtekintheti értékesítésirendelés-sorok, szállítások, vevők kapcsolattartói adatainak és rendelés elfogadója elérhetőségi adatait.
+## <a name="view-information-about-sales-orders-for-a-customer"></a>Vevőhöz tartozó értékesítési rendelésekkel kapcsolatos információk megjelenítése
+1.  A mobileszközön válassza az **Értékesítési rendelések** munkaterület.
+2.  Válassza ki a **Vevő rendeléseinek megtekintése** lehetőséget.
+3.  Keresse ki a kívánt ügyfél adatait a **Számla **vagy a **Vevő neve **információknál.
+4.  Válassza ki az ügyfelet.
+5.  Válassza ki a **Kapcsolattartó adatai** vagy az **Értékesítési rendelések** lehetőséget.
+6.  Az **Értékesítési rendelések** kiválasztása esetén megjelenik egy lista a vevő számára az értékesítési rendelésekről.
+7.  Válassza ki az **Értékesítési rendelés** lehetőséget.
+8.  Itt tekintheti meg az értékesítési rendelések sorairól, a szállítmányokról, a vevői kapcsolattartási adatokról és a megrendelő elérhetőségéről szóló információkat.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Helyezze a költségvetés – hibaelhárítás"
+title: "Beosztás-költségvetéskészítés hibaelhárítása"
 description: "Ez a cikk olyan kérdésekre ad választ, amelyek a beosztás-költségvetés elkészítésekor merülhetnek fel. A költségvetési költségösszetevők, kompenzációs csoportok és a kompenzációs rácsok létrehozásával kapcsolatban leggyakrabban feltett kérdéseket tárgyalja."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="position-budgeting-troubleshooting"></a>Helyezze a költségvetés – hibaelhárítás
+# <a name="position-budgeting-troubleshooting"></a>Beosztás-költségvetéskészítés hibaelhárítása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk olyan kérdésekre ad választ, amelyek a beosztás-költségvetés elkészítésekor merülhetnek fel. A költségvetési költségösszetevők, kompenzációs csoportok és a kompenzációs rácsok létrehozásával kapcsolatban leggyakrabban feltett kérdéseket tárgyalja. 
 
@@ -58,6 +61,8 @@ Az előre jelzett beosztás költségösszetevő sorának dátuma a következő 
 -   A beosztás aktiválási és kivezetési dátuma.
 -   A költségvetési költségösszetevő aktiválási és lejárati dátuma.
 -   Azon költségvetési ciklus kezdő és záró dátumai, amely az előre jelzett beosztás költségvetés-tervezési folyamatával van társítva.
+
+
 
 
 

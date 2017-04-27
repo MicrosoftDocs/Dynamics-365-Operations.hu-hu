@@ -1,6 +1,6 @@
 ---
-title: "Készlet napló jelentések"
-description: "Konfigurálható nyilvántartási jelentések elektronikus jelentés alapján használatakor szüksége egy adott jelentés és a napló típusa közötti kapcsolat beállítása."
+title: "Készletnapló-jelentések"
+description: "Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,23 +25,28 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="inventory-journal-reports"></a>Készlet napló jelentések
+# <a name="inventory-journal-reports"></a>Készletnapló-jelentések
 
-Konfigurálható nyilvántartási jelentések elektronikus jelentés alapján használatakor szüksége egy adott jelentés és a napló típusa közötti kapcsolat beállítása.
+[!include[banner](../includes/banner.md)]
 
-Egy adott jelentés és a napló típusa közötti kapcsolat beállítása a a **Készlet-napló neve** lap (**Inventory management**&gt;**a telepítő**&gt;**Naplónevek**&gt;**készlet**), adja meg a jelentés nevét. **Megjegyzés:** támogatott konfigurációk beállításához töltse le a szükséges elektronikus jelentési konfigurációkat. További tudnivalókért lásd: [letöltés elektronikus jelentési szolgáltatások életciklus konfigurációk](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Példák a támogatott konfigurációk Európában a nyilvántartási jelentések az alábbi táblázatban szerepelnek.
+
+Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.
+
+Egy adott jelentés és naplótípus közötti kapcsolat beállításához a **Készletnaplónevek** oldalon (**Készletgazdálkodás** &gt; **Beállítás** &gt; **Naplónevek** &gt; **Készlet**) adja meg a jelentés nevét. **Megjegyzés:** támogatott konfigurációk beállításához töltse le a szükséges elektronikus jelentési konfigurációkat. További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Az alábbi táblázatban példák találhatók Európában támogatott konfigurációjú készletjelentésekre.
 |                    |                                     |                  |                                         |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
-| **Country**        | **Jelentés leírása**              | **Journal type** | **Formátum leképezésnév**                 |
-| Litvánia, Magyarország | Jelentés          | Számlálás         | Készletkimutatás (HU, LT)            |
+| **Ország**        | **Jelentés leírása**              | **Napló típusa** | **Formátum-hozzárendelés neve**                 |
+| Litvánia, Magyarország | Készletkimutatás-jelentés          | Számlálás         | Készletkimutatás (HU, LT)            |
 | Lettország, Lengyelország     | Készletátsorolási bizonylat | Átvitel         | InventoryReclassificationDocument\_PLLV |
 | Észtország            | Készletátsorolási bizonylat | Átvitel         | InventoryReclassificationDocument\_EE   |
 | Lengyelország             | Belső PW/RW                      | Mozgás         | InventJournalLinesDocPL                 |
 | Lettország             |  Készletmozgási bizonylat         | Mozgás         | Mozgás\_LV                            |
-| Lettország             | Leírás árukészlet-bizonylat       | Korrekció       | InventJournalLines\_LV                  |
+| Lettország             | Készletleírási bizonylat       | Korrekció       | InventJournalLines\_LV                  |
 | Lettország             | Szállítás - szállítólevél              | Átvitel         | InternalTransferDeliveryNote\_LV        |
-| Lettország             | Leltári bizonylat jelentés            | Számlálás         | CountedDocument\_LV                     |
+| Lettország             | Leltáribizonylat-jelentés            | Számlálás         | CountedDocument\_LV                     |
 | Lettország             | Leltárlista-jelentés                | Számlálás         | Leltárlista                           |
+
+
 
 
 

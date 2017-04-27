@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Adja meg a számla és dimenzió kombinációkat (szegmentált bejegyzés ellenőrzés)
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk bemutatja, hogyan adhat meg számla és dimenzió kombinációkat vagy főkönyvi számlákat. A bejegyzés tapasztalatot gyakran nevezik szegmentált bejegyzés ellenőrzésnek.
 
-Költségvetés és a feladásdefiníciók felhasználók fiók és a dimenzió kombinációk különböző oldalakon, például a főkönyvi naplók oldalakat adja meg. Az érvényes számla és dimenzió kombináció a főkönyvhöz rendelt számlastruktúrától és a számlastruktúrához rendelt speciális szabályok függ. Kombinációja bevitelekor azokat kézzel írja be az értékeket, vagy egy gazdag, keresési tapasztalat előnyeit. A mező megadásakor indítható be, és megkeresi az érték és a leírás. Például ha 180 megkeresi bármilyen érték, amely a szám kombinációt kezdődik. Készpénz is beírhatja, illetve bármilyen érték, amelynek leírását készpénz kezdődő megkeresi. Egy helyettesítő karaktert is használható például a \*készpénz vagy \*180 keresésére, ha az érték vagy a leírás tartalmazza a keresési feltételeket. 
+A felhasználók több oldalon adhatnak meg számla- és dimenziókombinációkat, például általános naplók, költségvetés-tervezés és feladásdefiníciók. Az érvényes számla és dimenzió kombináció a főkönyvhöz rendelt számlastruktúrától és a számlastruktúrához rendelt speciális szabályok függ. Amikor egy felhasználó megad egy kombinációt, begépelheti az értékeket vagy élvezheti a gazdag keresési tapasztalatok előnyeit. Amikor belép a mezőbe, elkezdhet gépelni, és a rendszer megkeresi az értéket és a leírást. Például ha 180-at ír be, a rendszer minden értéket megkeres, amely ezzel a számkombinációval kezdődik. Vagy ha azt írja be, hogy Készpénz, a rendszer minden értéket megkeres, amely leírása a Készpénz szóval kezdődik. Helyettesítő karaktert is használhat (például \*Készpénz vagy \*180) a keresésre, ha az érték vagy a leírás tartalmazza a keresési feltételeket. 
 
 A következő táblázat leírja a gyorsbillentyűket, amelyek akkor használhatóak, amikor a keresés le van zárva.
 
@@ -108,5 +111,7 @@ A következő táblázat leírja a gyorsbillentyűket, amelyek akkor használhat
 </table>
 
  
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Robbanás egy Anyagjegyzék-verzió"
-description: "Ez a cikk ismerteti az Alaptervezés forgatókönyv, amely magában foglalja az anyagjegyzék-verzió anyagjegyzék alábontása."
+title: "Anyagjegyzék-verzió alábontása"
+description: "Ez a cikk egy anyagjegyzék-verzió alábontásának alaptervezési forgatókönyvét ismerteti."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>Robbanás egy Anyagjegyzék-verzió
+# <a name="explosion-of-a-bom-version"></a>Anyagjegyzék-verzió alábontása
 
-Ez a cikk ismerteti az Alaptervezés forgatókönyv, amely magában foglalja az anyagjegyzék-verzió anyagjegyzék alábontása.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk egy anyagjegyzék-verzió alábontásának alaptervezési forgatókönyvét ismerteti.
 
 Egy anyagjegyzék-verzió igényalábontása létrehoz egy igényt minden anyagjegyzéksor-cikkhez egy adott telephelyen, esetleg egy adott raktárban. Egy telephely-specifikus anyagjegyzékben egy adott raktár határozható meg minden anyagjegyzék-sorhoz. Továbbá minden anyagjegyzék-sorhoz a cikk dimenzióbeállításai meghatározzák, hogy a raktár szükséges-e. Az egyes anyagjegyzékcikk-sorokhoz megjelenő igény ezután a további igényalábontás kezdőpontja lesz. Ez az alaptervezési eset a következő feltételeket tartalmazza:
 
@@ -41,8 +44,10 @@ A következő ábra mutatja az alaptervezési igényalábontás folyamatát. ![A
 <a name="see-also"></a>Lásd még
 --------
 
-[Alaptervezés - hogyan határozza meg az AJ-verzió](master-plan-bom-version-determined.md)
+[Alaptervezés - anyagjegyzék verzió meghatározása](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+Az alaptervezés és a többhelyes funkció[](master-plan-multisite-functionality.md)
+
+
 
 

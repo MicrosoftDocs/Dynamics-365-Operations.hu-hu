@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-posting-profiles"></a>Szállítói feladási profilok
 
+[!include[banner](../includes/banner.md)]
+
+
 A szállítói feladási profilok a szállítói tranzakciók főkönyvbe történő feladását szabályozzák.
 
 <a name="vendor-posting-profiles"></a>Szállítói feladási profilok
@@ -146,6 +149,8 @@ Határozza meg a következő értékeket a feladási profil beállításához:
 | **Elszámolás** | Válassza ki ezt a lehetőséget a feladási profillal rendelkező tranzakciók automatikus elszámolásának engedélyezéséhez. Ha ez a lehetőség nincs bejelölve, manuálisan kell rendeznie a tranzakciókat a Nyitott tranzakciók kiegyenlítése oldalon vagy a Vevő kifizetések megadása oldalon. |
 | **Mégse**     | Válassza ki ezt a lehetőséget, ha szeretné érvényteleníteni a feladási profillal rendelkező tranzakciókat.                                                                                                               |
 | **Zárás**      | Válasszon ki egy másik feladási profilt, amelyre váltani szeretne a jelen feladási profilt használó tranzakciók bezárásakor. Egy tranzakció akkor minősül bezártnak, ha a teljes kiegyenlítése megtörtént.                                       |
+
+
 
 
 

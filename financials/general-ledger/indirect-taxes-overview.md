@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-overview"></a>Áfa áttekintése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a forgalmiadó-rendszerről nyújt áttekintést. Bemutatja az áfa beállításának az elemeit, és azt, hogy ezek hogyan kapcsolódnak egymáshoz.
 
 <a name="overview"></a>Áttekintés
 --------
 
-A forgalmi adó keretrendszer támogatja a számos különböző típusú közvetett adók, mint például a forgalmi adót, hozzáadottérték-adó (HÉA), az áruk és szolgáltatások adó (GST), darabszám szerinti díjak és adóelőleg. Ezeket az adókat kiszámítása és dokumentált beszerzési és értékesítési tranzakciók során. Rendszeresen akkor kell kell bevallani és kifizetni az adóhatóságoknak. 
+A forgalmiadó-keretrendszer számos különböző típusú közvetett adót támogat, mint például a forgalmi adót, általános forgalmi adót (áfa), az áruk és szolgáltatások adóját (GST), darabszám szerinti díjakat és adóelőleget. Ezen adók kiszámítása és dokumentálása beszerzési és értékesítési tranzakciók során történik. Rendszeres időközönként be kell vallani és be kell fizetni őket az adóhatóságoknak. 
 
 A következő ábra az adóbeállítás entitásait és azok viszonyait szemlélteti.
 
 [![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
-Minden forgalmi adó, amely a vállalat figyelni kell meg kell határozni a forgalmi adó kódja. Az áfakód tartalmazza az adókulcsokat és a forgalmi adó számítási szabályait. 
+Minden forgalmi adóhoz, amit a vállalatnak könyvelnie kell, áfakódot kell megadni. Az áfakód tartalmazza az adókulcsokat és a forgalmi adó számítási szabályait. 
 
 Minden forgalmi adót hozzá kell rendelni egy áfakifizetési időszakhoz. Az áfakifizetési időszakok határozzák meg, mely időszakokban kell bevallani és kifizetni a forgalmi adókat az adóhatóságnak. Minden áfakifizetési időszakot hozzá kell rendelni egy adóhatósághoz. Az adóhatóság azt az entitást képviseli, ahova a forgalmi adót be kell vallani és ki kell fizetni. A forgalmi adó bevallásának elrendezését is az adóhatóság határozza meg. Az adóhatóságok kapcsolódhatnak a szállítói fiókokhoz. 
 
@@ -69,26 +72,28 @@ Minden tranzakcióhoz (értékesítési vagy beszerzési bizonylatsorok, naplók
 Minden tranzakcióhoz megtekintheti a számított forgalmi adót a **Forgalmi adó tranzakció** oldalon. Megtekintheti a forgalmi adót egy dokumentumsorra vagy a teljes dokumentumra. Bizonyos dokumentumok esetében (például a szállítói számla és a főkönyvi naplók) módosíthatja a számított forgalmi adót, ha az eredeti dokumentum eltérő összegeket tartalmaz.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Áfakiegyenlítés és -bevallás
-A forgalmi adót be kell vallani és kifizetni az adóhatóságoknak szabályozott időközönként (havi, negyedéves stb.). A Microsoft Dynamics 365 műveletekhez funkció, amely lehetővé teszi az intervallum adó számlákat és Ellenszámla ÁFA elszámolási számlára a főkönyvi feladási csoportokat meghatározott egyenlegeinek biztosít. Ezt a funkciót elérheti a a **rendezésére és a forgalmi adót könyvelni** oldalon. Meg kell adnia az áfakifizetési időszak, amely a forgalmi adót kell rendezni. 
+A forgalmi adót be kell vallani és kifizetni az adóhatóságoknak szabályozott időközönként (havi, negyedéves stb.). A Microsoft Dynamics 365 for Operations tartalmaz egy funkciót, amely lehetővé teszi az adószámlák kiegyenlítését egy intervallumra és az egyenlegek kiegyenlítési számláján az egyenlegek kiegyenlítését a főkönyvi feladási csoportokban meghatározottak szerint. Ez a funkció elérhető a **Forgalmi adó kiegyenlítése és feladása** oldalon. Meg kell adnia az áfakiegyenlítési időszakot, amelyben a forgalmi adót ki kell egyenlíteni. 
 
 A forgalmi adó kifizetése után az áfakiegyenlítési számlán az egyenleget a bankszámlával szemben kell meghatározni. Ha az áfakifizetési időszakhoz megadott adóhatóság egy szállítói számlához kapcsolódik, akkor az áfaegyenleg nyitott szállítói számlaként lesz feladva, és szerepeltethető a rendszeres kifizetési javaslatban.
 
 ## <a name="conditional-sales-tax"></a>Feltételes áfa
-Feltételes áfa esetén arányosan fizetendő tényleges összeg kifizetése a számlán szereplő áfa. Ezzel szemben a szokásos forgalmi adó számítása számlázáskor. Feltételes áfa ki kell fizetni az adóhatóságnak a fizetés könyvelése után nem a számla feladásakor. A számla könyvelésekor a program a tranzakció jelenteni kell a könyv áfajelentésben. Azonban a tranzakciót ki kell zárni az áfabefizetési jelentést. 
+A feltételes forgalmi adó azt jelzi, hogy a számlán szereplő tényleges összegre megállapított áfának csak egy részét kell kifizetni. A rendes áfát ellenben a számlázás időpontjában számítjuk ki. A feltételes áfát a kifizetés, nem pedig a számla feladásakor kell megfizetni az adóhatóságnak. A számla könyvelésekor a tranzakciót jelenteni kell az áfakönyv-jelentésben. Az áfakifizetési jelentésből azonban a tranzakciót ki kell zárni. 
 
-Ha a feltételes forgalmi adó jelölőnégyzetet bejelöli a főkönyvi paraméterek képernyőn, forgalmi adót is le kell vonni mindaddig, amíg ki nem fizetett számlát. Ez az egyes országokban/régiókban jogi követelmény.
+Ha a feltételes forgalmi adó jelölőnégyzetet bejelöli a főkönyvi paraméterek képernyőn, forgalmi adót nem kell levonni mindaddig, amíg ki nem fizeti a számlát. Ez egy jogi előírás néhány országban/régióban.
 
 > [!NOTE]
-> Ha a feltételes forgalmi adó jelölőnégyzetet bejelöli, Áfakódok és Áfacsoportok beállítása, és az is létrehozhat főkönyvi könyvelési csoportok a támogatásához. |
+> A Feltételes áfa jelölőnégyzet bejelölése esetén be kell állítani a funkciókat támogató áfakódokat, áfacsoportokat, és létre kell hozni a szükséges főkönyvi feladási csoportokat. |
 
 ###  <a name="example"></a>Példa
 
-Áfa kiegyenlítése havonta. Június 15-én a 10 000, valamint a forgalmi adó vevő számlát hoz létre.
--   Az áfa 25 %-a, vagy 2500.
--   A számla fizetési határidő július 30 van.
+Az áfát havonta kell befizetni. Június 15-én kiállít egy 10 000 összegű számlát, plusz áfa.
+-   Az áfa 25 százalékos, vagyis 2500.
+-   Az számla fizetési határideje július 30.
 
-Akkor általában kellene rendezni és a fizetés 2500 az adóhatóságnak szóló, a számla könyvelésekor annak ellenére, hogy az ügyfél még nem kapott a kifizetés. 
+Normál esetben akkor rendezne és fizetne be 2500-at az adóhatóságnak, amikor júniusban sor kerül a számla feladására - akkor is, ha a fizetést a vevőtől még nem kapta meg. 
 
-Azonban ha a feltételes forgalmi adó egyenlíti ki az adóhatóság felé megjelenésekor a kifizetés a vevőtől július 30-án.
+Ha viszont feltételes áfát használ, akkor rendezi az adót az adóhatósággal szemben, amikor július 30-án megérkezik a kifizetés a vevőtől.
+
+
 
 

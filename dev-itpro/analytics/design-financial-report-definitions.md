@@ -30,7 +30,7 @@ ms.lasthandoff: 03/29/2017
 
 Ez a cikk a jelentésdefiníciókról tartalmaz információt. A jelentésdefiníció egy jelentés-összetevő (vagy építőelem), amely egy sordefiníció, egy oszlopdefiníció és egy opcionális jelentési-fa definíciót használ a jelentés elkészítéséhez. Továbbá a jelentésdefiníció biztosít lehetőségeket és beállításokat, a jelentés testreszabásához. 
 
-A jelentésdefiníció egy jelentés-összetevő (vagy építőelem), amely egy sordefiníció, egy oszlopdefiníció és egy opcionális jelentési-fa definíciót használ a jelentés elkészítéséhez. A jelentésdefiníció is tartalmaz olyan beállításokat, amelyek segítségével a jelentés testreszabása. A sordefiníciók és oszlopdefiníciók meghatározása után kombinálni kell azokat egy jelentésdefinícióban. Ezen a ponton határozhatja meg a definíciók egyéb aspektusait, például a részletezési szintet és a jelentés dátumát. Ezután mentheti, majd generálhat jelentéseket. A pénzügyi jelentéskészítés a következő részletességi szinteket nyújtja:
+A jelentésdefiníció egy jelentés-összetevő (vagy építőelem), amely egy sordefiníció, egy oszlopdefiníció és egy opcionális jelentési-fa definíciót használ a jelentés elkészítéséhez. A jelentésdefiníció emellett további lehetőségeket és beállításokat tartalmaz, amelyeket a jelentés testreszabásához használhat. A sordefiníciók és oszlopdefiníciók meghatározása után kombinálni kell azokat egy jelentésdefinícióban. Ezen a ponton határozhatja meg a definíciók egyéb aspektusait, például a részletezési szintet és a jelentés dátumát. Ezután mentheti, majd generálhat jelentéseket. A pénzügyi jelentéskészítés a következő részletességi szinteket nyújtja:
 
 -   Pénzügyi
 -   Pénzügy és számla
@@ -89,6 +89,6 @@ A következő táblázat bemutatja a jelentésdefinícióban lévő lapokat és 
 <a name="see-also"></a>Lásd még
 --------
 
-[Pénzügyi beszámolás Microsoft Dynamics 365 műveletek](financial-reporting-intro.md)
+[Pénzügyi jelentéskészítés a Microsoft Dynamics 365 for Operations rendszerben](financial-reporting-intro.md)
 
 

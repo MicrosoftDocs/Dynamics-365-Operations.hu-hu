@@ -1,5 +1,5 @@
 ---
-title: "POS hardverperifériák"
+title: "POS-hardverperifériák"
 description: "A Retail Modern pénztár (POS) és a Felhőalapú POS a POS hardver perifériák széles palettáját tudja alkalmazni, számos felülettel és telepítési beállításokkal a kiskereskedő különböző üzleti eseteinek megvalósítása érdekében."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>POS hardverperifériák
+# <a name="pos-hardware-peripherals"></a>POS-hardverperifériák
+
+[!include[banner](includes/banner.md)]
+
 
 A Retail Modern pénztár (POS) és a Felhőalapú POS a POS hardver perifériák széles palettáját tudja alkalmazni, számos felülettel és telepítési beállításokkal a kiskereskedő különböző üzleti eseteinek megvalósítása érdekében. 
 
@@ -63,6 +66,8 @@ Az alábbi lista azon eszközmodelleket tartalmazza osztályokra lebontva, amely
 
 -   Vonalkód – Honeywell 1900, HP LS2208
 -   MSR – Magtek PN - 21073075
+
+
 
 
 

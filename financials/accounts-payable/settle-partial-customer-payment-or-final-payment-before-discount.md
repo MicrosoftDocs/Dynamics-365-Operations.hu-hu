@@ -1,5 +1,5 @@
 ---
-title: "Részleges vevői kifizetés és végső kifizetés teljes kiegyenlítése előtt az engedmény dátumát"
+title: "Részleges vevői kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt"
 description: "Ez a cikk olyan eseteket mutat be, amelyek megmutatják, hogyan regisztráljon részfizetéseket egy ügyfélhez és hogyan vegye igénybe a készpénzfizetési engedményeket a készpénzfizetési engedményi időszakban."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges vevői kifizetés és végső kifizetés teljes kiegyenlítése előtt az engedmény dátumát
+# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges vevői kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk olyan eseteket mutat be, amelyek megmutatják, hogyan regisztráljon részfizetéseket egy ügyfélhez és hogyan vegye igénybe a készpénzfizetési engedményeket a készpénzfizetési engedményi időszakban.
 
-A Fabrikam áruk 4028 vevőnek értékesíti. A Fabrikam kínálja 1 százalékos készpénzfizetési engedményt a számla kifizetése 14 napon belül. A számlakat 30 napon belül be kell fizetni. A Fabrikam emellett a részleges kifizetésekra is nyújt készpénzfizetési engedményt. A kiegyenlítés paraméterek találhatók a **Kinnlevőségek paraméterei** oldalon.
+A FabriKam a 4028.-es számú vevőnek árut értékesít. A Gyár 1 százalékos készpénzfizetési engedményt ajánl, ha a számla 14 napon belül befizetésre kerül. A számlakat 30 napon belül be kell fizetni. A Fabrikam emellett a részleges kifizetésekra is nyújt készpénzfizetési engedményt. A Kiegyenlítési paraméterek a **Kinnlevőségek paraméterei** oldalon találhatóak.
 
 ## <a name="customer-invoice"></a>Vevői számla
-Június 25-én Anna lép, és a számlát a vevő 4028 1 000,00. Arnie megtekintheti ezt a tranzakciót a **Vevői tranzakciók** oldalon.
+Június 25-én Arnie egy 1.000,00 értékű számlát rögzít és ad fel 4028-es vevő számára. Arnie megtekintheti ezt a tranzakciót a **Vevői tranzakciók** oldalon.
 
 | Bizonylat   | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg  | Pénznem |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -63,14 +66,14 @@ Arnie rákattint a **Készpénzfizetési engedmény** lapra, hogy megnézze az e
 | 2015-07-25          | 0,00                 | 1000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Részleges kifizetés a Vevői kifizetések rögzítése lapon
-Vevő 4028 500,00 forintos kifizetése július 1-én küld. Adja meg a kifizetés, Anna nem kattintson a **vonalak**. Ehelyett a kifizetés rögzítését egy új kifizetési napló készítésével, majd a **Vevői kifizetések rögzítése** lap megnyitásával teszi meg. Beviszi a kifizetési adatokat és megjelöli a rögzített számlát. Amikor Arnie az összeghez **500,00** értéket ad meg, akkor megadja még az **500,00** értéket a **Kifizetendő összeg** mezőben a rácsban. Mivel a Gyár engedélyezi a készpénzfizetési engedményt a részleges kifizetéseket látja, hogy 5,05 értékű részleges készpénzfizetési engedmény lesz még levonva. A számítás ehhez az engedményhez 500,00 ÷ 0,99 × 0,01 = 5,05. (Ebben a számításban az 500,00 0,99-el van osztva, mert 1% az engedmény. Ezért a vevő a számla 99 százalékát fizeti ki. Az eredmény ezután megszorzásra kerül az engedmény százalékával, ami 1 százalék, vagy 0,01. Ha a vevő a teljes engedmény 10,00, tart, az elszámolandó összeg lesz 990.00.) Engedményadatok a rács alján jelenik meg a **adja meg a vevői kifizetések** oldalon.
+A 4028-as vevő elküld egy 500,00 összegű kifizetés július 1-jén. A kifizetés rögzítéséhez Arnie nem kattint a **Sorok** elemre. Ehelyett a kifizetés rögzítését egy új kifizetési napló készítésével, majd a **Vevői kifizetések rögzítése** lap megnyitásával teszi meg. Beviszi a kifizetési adatokat és megjelöli a rögzített számlát. Amikor Arnie az összeghez **500,00** értéket ad meg, akkor megadja még az **500,00** értéket a **Kifizetendő összeg** mezőben a rácsban. Mivel a Gyár engedélyezi a készpénzfizetési engedményt a részleges kifizetéseket látja, hogy 5,05 értékű részleges készpénzfizetési engedmény lesz még levonva. A számítás ehhez az engedményhez 500,00 ÷ 0,99 × 0,01 = 5,05. (Ebben a számításban az 500,00 0,99-el van osztva, mert 1% az engedmény. Ezért a vevő a számla 99 százalékát fizeti ki. Az eredmény ezután megszorzásra kerül az engedmény százalékával, ami 1 százalék, vagy 0,01. Ha a vevő a teljes 10,00 értékű engedményt igénybe veszi, akkor a kiegyenlítendő összeg 990,00 lesz.) Az engedményadatok a **Vevői kifizetések rögzítése** lapon található rács alján jelennek meg.
 
 | Alkalmazandó készpénzfizetési engedmény összege | Alkalmazott készpénzfizetési engedmény | Fizetendő összeg |
 |------------------------------|---------------------|---------------|
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Részleges kifizetés naplósorok használatával
-Ahelyett, hogy megnyitná a **Vevői kifizetések rögzítése** lapot a kifizetési naplóban Arnie rákattint a **Sorok** elemre, hogy rögzítse a kifizetést. A kifizetési napló jelenik meg, ahol Anna is adjon meg egy sort a vevő 4028. Anna ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a számlát kiegyenlítettnek jelölje. Arnie megjelöli a számlát és módosítja az értéket a **Kiegyenlítendő összeg** mezőben **500,00** értékre Ismét látja, hogy az érték a **Készpénzfizetési engedmény összege** mezőben **10,00** a teljes számlához és az érték a **Alkalmazandó készpénzfizetési engedmény összege** mezőben **5,05**. Ezért Arnie 505,05 értéket egyenlít ki ebből a számlából.
+Ahelyett, hogy megnyitná a **Vevői kifizetések rögzítése** lapot a kifizetési naplóban Arnie rákattint a **Sorok** elemre, hogy rögzítse a kifizetést. A kifizetési napló megjelenik, ahol Arnie rögzíthet egy sort a 4028-as vevőhöz. Anna ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a számlát kiegyenlítettnek jelölje. Arnie megjelöli a számlát és módosítja az értéket a **Kiegyenlítendő összeg** mezőben **500,00** értékre Ismét látja, hogy az érték a **Készpénzfizetési engedmény összege** mezőben **10,00** a teljes számlához és az érték a **Alkalmazandó készpénzfizetési engedmény összege** mezőben **5,05**. Ezért Arnie 505,05 értéket egyenlít ki ebből a számlából.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -143,6 +146,8 @@ Arnie feladja ezt a naplót és áttekinti a vevői tranzakciókat a **Vevői tr
 | DISC-10010 | Készpénzfizetési engedmény    | 2015-01-07  |         |                                      | 5,00                                  | 0,00    | dollár      |
 | ARP-10011  | Kifizetés          | 2015-08-07  |         |                                      | 495,00                                | 0,00    | dollár      |
 | DISC-10011 | Készpénzfizetési engedmény    | 2015-08-07  |         |                                      | 5,00                                  | 0,00    | dollár      |
+
+
 
 
 

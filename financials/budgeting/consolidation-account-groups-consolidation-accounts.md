@@ -1,6 +1,6 @@
 ---
-title: "Konszolidációs számla csoportok és további konszolidációs számlák"
-description: "Ez a témakör tájékoztatást nyújt konszolidációs számlák csoportjainak és további konszolidációs számlák, és elmagyarázza, hogy azok hogyan használhatók a Microsoft Dynamics 365 műveletekhez."
+title: "Konszolidációsszámla-csoportok és további konszolidációs számlák"
+description: "Ez a témakör konszolidációsszámla-csoportokról és további konszolidációs számlákról nyújt tájékoztatást, és elmagyarázza, hogyan történik ezek használata a Microsoft Dynamics 365 for Operationsben"
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,27 +24,32 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konszolidációs számla csoportok és további konszolidációs számlák
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konszolidációsszámla-csoportok és további konszolidációs számlák
 
-Ez a témakör tájékoztatást nyújt konszolidációs számlák csoportjainak és további konszolidációs számlák, és elmagyarázza, hogy azok hogyan használhatók a Microsoft Dynamics 365 műveletekhez.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a témakör konszolidációsszámla-csoportokról és további konszolidációs számlákról nyújt tájékoztatást, és elmagyarázza, hogyan történik ezek használata a Microsoft Dynamics 365 for Operationsben
 
 <a name="consolidation-account-groups"></a>Konszolidációsszámla-csoportok
 ----------------------------
 
-Konszolidációsszámla-csoportok segítségével hozzon létre csoportokat az adatok összesítésénél használni kívánt számlákat. Leggyakrabban a konszolidáció számlacsoport kormányzati megbízáson alapuló Számlatükör jelenti, vagy fiókokat rendel egy csoportot, amely definiálja a vállalat székhelyével. Konszolidációs számla csoportok is megtalálhatja a **a telepítő** területén a **konszolidációs** modul. Amikor hozzáad egy új csoportot, adja meg egy egyedi azonosítót a csoport és egy nevet.
+Konszolidációsszámla-csoportok segítségével számlacsoportokat hozhat létre, amelyeket adatok összesítéséhez használhat. Leggyakrabban a konszolidációsszámla-csoport egy kormányzati megbízáson alapuló számlatükröt jelent, vagy a vállalat központja által meghatározott számlákat rendel egy csoporthoz. A konszolidációsszámla-csoportok a **Konszolidáció** modul **Beállítások** területén találhatók. Amikor hozzáad egy új csoportot, adja meg a számlacsoport egyedi azonosítóját és egy nevet.
 
 ## <a name="additional-consolidation-accounts"></a>További konszolidációs számlák
-További konszolidációs számlák lehetővé teszik egy már meglévő számlatükörbe fiók hozzárendelése egy konszolidációsszámla-csoportot. Meghatározhatja a konszolidációs számla értékének és nevét. 
+További konszolidációs számlák segítségével egy már meglévő számlatükörben található számla egy konszolidációsszámla-csoporthoz rendelhető hozzá. Ezután meghatározhatja a konszolidációs számla értékét és nevét. 
 
-További konszolidációs számlákat is megtalálhatja a **a telepítő** területén a **konszolidáció** modul. Egy új konszolidációs számla létrehozásakor meg kell adnia a következő információkat:
+További konszolidációs számlák találhatók a **Konszolidáció** modul **Beállítások** területén. Új konszolidációs számla létrehozásakor meg kell adnia a következő információkat:
 
--   **Fő számla** – ezt a mezőt, amely tartalmazza a fő számlák a számlatükörben kijelölt lapon alapuló keresés. Egy számla kijelölésekor a neve automatikusan bekerül a **fő fióknév** mezőben.
--   **Konszolidációs számla csoport** – a mező segítségével adja meg a fiók hozzárendelése a csoporthoz. Ha a két különböző módon, hozzá kell adnia minden négy konszolidáció számlacsoportok ugyanazt a fiókot.
--   **Konszolidációs számla** – a konszolidációs számla értékének megadása. Ez az érték nem kell egy számlát a Számlatükör. Minden olyan érték, amely szükséges lehet.
--   **Konszolidációs számla neve** – adja meg a fiók nevét, a lekérdezésekben és jelentésekben megjeleníteni kívánt.
--   **SAT szint** – ezzel a mezővel számlakivonatokat a Mexikói adóhatóságnak jelenteni. 
+-   **Fő számla** – ezt a mező egy keresés, amely az oldalon megadott számlatükrön alapuló összes fő számlát mutatja. Egy számla kijelölésekor a neve automatikusan bekerül a **Fő számla neve** mezőbe.
+-   **Konszolidációsszámla-csoport** – e mező segítségével adja meg a csoportot, amelyhez hozzá kívánja rendelni a számlát. Ha a két különböző módon összegez, ugyanazt a mind a négy konszolidációsszámla-csoporthoz hozzá kell adnia.
+-   **Konszolidációs számla** – a konszolidációs számla értékének megadása. Ez az érték nem feltétlenül egy a számlatükörből származó számla. Minden olyan érték lehet, amelyre szüksége van.
+-   **Konszolidációs számla neve** – a számla nevének megadása, amely meg fog jelenni a lekérdezésekben és jelentésekben.
+-   **SAT-szint** – ezzel a mezővel számlakivonatokat küldhet a mexikói adóhatóságnak. 
 
-Ha befejezte a konszolidációsszámla-csoportok és további konszolidációs számlák létrehozása, akkor jelölje ki a csoportot a Konszolidál online folyamat.
+Amikor befejezte a konszolidációsszámla-csoportok és kiegészítő konszolidációs számlák létrehozását, kiválaszthatja a csoportot az online Konszolidálás folyamat során.
+
+
 
 
 

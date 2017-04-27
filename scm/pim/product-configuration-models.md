@@ -1,6 +1,6 @@
 ---
-title: "Termék konfigurációs modellek áttekintése"
-description: "Ez a cikk a szakkifejezések és fogalmak, amelyek megfelelnek a Termékmodellek konfiguráció határozza meg. Termékmodellek konfiguráció lehetővé teszi, hogy általános termékszerkezet egyetlen terméknek számos termékváltozatok konfigurálásához használható."
+title: "Termékkonfigurálási modellek áttekintése"
+description: "Ez a cikk a termékkonfigurálási modellekkel kapcsolatos szakkifejezéseket és fogalmakat határozza meg. A termékkonfigurálási modellek általános termékszerkezet felépítését teszik lehetővé, amely számos termékváltozat konfigurálásához használható egyetlen termékhez."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-configuration-models-overview"></a>Termék konfigurációs modellek áttekintése
+# <a name="product-configuration-models-overview"></a>Termékkonfigurálási modellek áttekintése
 
-Ez a cikk a szakkifejezések és fogalmak, amelyek megfelelnek a Termékmodellek konfiguráció határozza meg. Termékmodellek konfiguráció lehetővé teszi, hogy általános termékszerkezet egyetlen terméknek számos termékváltozatok konfigurálásához használható.
+Ez a cikk a termékkonfigurálási modellekkel kapcsolatos szakkifejezéseket és fogalmakat határozza meg. A termékkonfigurálási modellek általános termékszerkezet felépítését teszik lehetővé, amely számos termékváltozat konfigurálásához használható egyetlen termékhez.
 
 A termékkonfigurációs modelleket egy általános termékszerkezet megjelenítésére hozzák létre. Egy termékkonfigurációs modell beállítása után konfigurálhat egy egyedi termékváltozatot, amelynek egyedi anyagjegyzéke (BOM) és egyedi útvonala van. A termékkonfigurációs modellek a különböző termékváltozatok közti kapcsolatok és korlátozások kezeléséhez együttesen használnak deklaratív megszorításokat és imperatív számításokat. Konfigurálhatja a cikkeket az értékesítési rendeléseken, az értékesítési ajánlatokon, a beszerzési rendeléseken és a termelési rendeléseken. Az alábbi táblázat ismerteti a táblamegszorítás alapú szakkifejezéseket és fogalmakat.
 <table>
@@ -69,16 +69,16 @@ Egy feltételt is megadhat az attribútumokhoz. Ha a feltétel teljesül, meg ke
 <li><strong>Szöveg</strong>, rögzített listával vagy anélkül</li>
 <li><strong>Logikai</strong></li>
 </ul>
-Ha az attribútum típusa <strong>Logikai</strong>, tartományba eső <strong>Egész</strong> vagy rögzített listájú <strong>Szöveg</strong>, az értékek halmaza egy termékkonfigurációs modell beállításakor érhető el. <strong>Megjegyzés:</strong> a termék konfigurációs solver felismeri csak a következő attribútumtípusok: <strong>logikai</strong>, <strong>szöveg</strong> a rögzített listából, és <strong>egész</strong> körével. Ezért csak ezek az attribútumtípusok szerepelhetnek a kifejezések megszorításaiban és a feltételeiben.</td>
+Ha az attribútum típusa <strong>Logikai</strong>, tartományba eső <strong>Egész</strong> vagy rögzített listájú <strong>Szöveg</strong>, az értékek halmaza egy termékkonfigurációs modell beállításakor érhető el. <strong>Megjegyzés:</strong> A Termékkonfiguráció-feloldó csak a következő attribútumtípusokat ismeri fel: <strong>Logikai</strong>, rögzített listájú <strong>Szöveg</strong> valamint tartományba eső <strong>Egész</strong>. Ezért csak ezek az attribútumtípusok szerepelhetnek a kifejezések megszorításaiban és a feltételeiben.</td>
 </tr>
 <tr class="even">
 <td>Megszorítások</td>
 <td>A megszorítások írják le a termékmodell konfigurálásának korlátozásait. A megszorítások használata garantálja, hogy csak az érvényes értékeket lehessen kiválasztani a termék konfigurálása során. A megszorítások kifejezést vagy táblázatot korlátozhatnak:
 <ul>
 <li>A kifejezés megszorításai csak olyan összetevőnél használhatók, melyhez hozzá vannak kapcsolva. Egy összetevőre vonatkozó kifejezés megszorításai az összetevők részösszetevőinek attribútumaira is hivatkozhatnak. A megszorításokat a Termékkonfiguráció-feloldó oldja meg, megszorítások írásakor a feloldási szintaktikát kell használnia. További tudnivalók: lásd a kifejezésmegszorítások és táblamegszorítások wiki hivatkozását.</li>
-<li>A táblamegszorításokban konfigurációs termékmodell összetevőhöz alkalmazható előtt definiálni kell. A táblamegszorításokban vagy felhasználó által definiált vagy rendszer által definiált is lehet. Egy táblázat felhasználó által definiált megszorítása egy olyan mátrix, mely az attribútumtípusok által definiált attribútumértékek kombinációinak halmaza leírására használható. Például hangszórók gyártása esetén a felhasználó által definiált táblamegszorításnál az oszlopok a hangszórók borítását és rácsát tartalmazhatják.</li>
+<li>A táblamegszorításokat a konfigurációs termékmodell összetevőire való alkalmazás előtt definiálni kell. A táblázatok megszorításai felhasználó által definiáltak vagy rendszer definiáltak is lehetnek. Egy táblázat felhasználó által definiált megszorítása egy olyan mátrix, mely az attribútumtípusok által definiált attribútumértékek kombinációinak halmaza leírására használható. Például hangszórók gyártása esetén a felhasználó által definiált táblamegszorításnál az oszlopok a hangszórók borítását és rácsát tartalmazhatják.</li>
 </ul>
-<strong>Példa</strong> A hangszórók négyféle borításban érhetőek el: Fekete, Tölgyfa, Rózsafa, Fehér. A hangszórók három első rácsok egyike lehet: fekete, fém-, vagy fehér. A fekete felület érhető el minden rácsok, de az egyéb hasonló különleges rácsok korlátozódnak. Az alábbi táblázat egy példát mutat a <strong>Táblamegszorítás szerkesztése</strong> oldal <strong>Megengedett kombinációk</strong> lapján megjelenő információkra.
+<strong>Példa</strong> A hangszórók négyféle borításban érhetőek el: Fekete, Tölgyfa, Rózsafa, Fehér. A hangszórók a három első rács egyikével rendelkezhetnek: fekete, fém vagy fehér. A fekete szín minden rácshoz elérhető, de a többi szín különleges rácsokra korlátozódik. Az alábbi táblázat egy példát mutat a <strong>Táblamegszorítás szerkesztése</strong> oldal <strong>Megengedett kombinációk</strong> lapján megjelenő információkra.
 <table>
 <thead>
 <tr class="header">
@@ -117,11 +117,11 @@ Ha az attribútum típusa <strong>Logikai</strong>, tartományba eső <strong>Eg
 </tr>
 </tbody>
 </table>
-A rendszer által definiált táblamegszorítás egy attribútum típusa és a Dynamics 365 műveletek tábla egy mezője közötti leképezést ábrázol. A rendszer által definiált táblamegszorítás a mező dinamikusan csatol az attribútum típusa. A kapcsolat lehetővé teszi, hogy az attribútum egy termékmodell konfigurációs műveletek tábla a Dynamics 365 mezőjének az adatoknak megfelelően.</td>
+Egy rendszer által definiált táblamegszorítás egy attribútumtípus és egy mező közötti leképezést jelöl egy Dynamics 365 for Operations táblában. Egy rendszer által meghatározott táblamegszorítás dinamikusan kapcsolja az attribútumtípust a mezőhöz. A kapcsolat lehetővé teszi, hogy egy termékkonfigurációs modell attribútuma a Dynamics 365 for Operations Dynamics 365 tábla mezőjének adatát mutassa.</td>
 </tr>
 <tr class="odd">
 <td>Számítások</td>
-<td>Számítások pótlékot korlátozó feltételeket. Számítás segítségével attribútumait aritmetikai műveletek végrehajtását a <strong>decimális</strong> és <strong>egész</strong> -típusok vagy attribútumainak igénylő logikai műveletek a <strong>szöveges</strong> rögzített listájú és <strong>logikai</strong> típusok. Az egyes számítások célattribútummal rendelkeznek, amely a számítási kifejezés eredményét tárolja. A számítási kifejezés a kifejezésszerkesztő használatával építhető fel.</td>
+<td>A számítások kiegészítik a megszorításokat. Számítások használatával aritmetikai műveleteket végezhet a <strong>Decimális</strong> és <strong>Egész</strong> típusú attribútumokon, vagy logikai műveleteket hajthat végre rögzített listájú <strong>Szöveg</strong> és <strong>Logikai</strong> típusú attribútumok bevonásával. Az egyes számítások célattribútummal rendelkeznek, amely a számítási kifejezés eredményét tárolja. A számítási kifejezés a kifejezésszerkesztő használatával építhető fel.</td>
 </tr>
 <tr class="even">
 <td>Részösszetevők</td>

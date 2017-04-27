@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-external-vendors"></a>A külső szállítókkal történő szállítói együttműködés
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt.
 
 A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 for Operations rendszerhez. Lehetővé teszi a szállítók számára a beszerzési rendelés, a számla és a bizományosi készlet adatainak kezelését. Ez a témakör leírja, hogyan működhet együtt a szállítói együttműködési felületet használó külső szállítókkal a beszerzési rendelések és a bizományosi készlet kezelésében. Bemutatja, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során. Ha többet szeretne megtudni arról, hogy milyen tevékenységeket végezhetnek a külső szállítók a szállítói együttműködési felületen, olvassa el a [Szállítói együttműködés vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md) részt.  
@@ -64,11 +67,11 @@ Ha meg szeretné osztani az árakkal kapcsolatos adatokat, például az egység�
 ## <a name="work-with-pos-when-using-vendor-collaboration"></a>Beszerzési rendelések kezelése szállítói együttműködési használatakor
 ### <a name="sending-a-po-to-the-vendor"></a>Beszerzési rendelés küldése a szállítónak
 
-A beszerzési rendeléseket a Dynamics 365 for Operations rendszerben kell elkészíteni. Amikor a beszerzési rendelés állapota a **jóváhagyott**, a szállító használatával küldi a ** visszaigazolás küldése ** művelet a **beszerzési rendelés** lap. A beszerzési rendelés állapota **Külső ellenőrzés alatt** státuszra változik. A beszerzési rendelés elküldése után a szállító megjelenik a **Beszerzési rendelések véleményezésre** lapon a szállítói együttműködési felületen, ahol elfogadhatja, elutasíthatja és módosításokat javasolhat a rendeléshez. A szállító hozzászólások hozzáadásával oszthat meg olyan információkat, mint a beszerzési rendelés módosítása. Ha fel szeretné hívni a szállító figyelmét az új beszerzési rendelésre, elküldheti azt egy e-mailben is a nyomtatáskezelő rendszer segítségével.
+A beszerzési rendeléseket a Dynamics 365 for Operations rendszerben kell elkészíteni. Amikor a beszerzési rendelés állapota **Jóváhagyva**, a szállítónak a **Elküldés visszaigazolásra** művelet segítségével elküldheti a rendelést a **Beszerzési rendelés** lapon. A beszerzési rendelés állapota **Külső ellenőrzés alatt** státuszra változik. A beszerzési rendelés elküldése után a szállító megjelenik a **Beszerzési rendelések véleményezésre** lapon a szállítói együttműködési felületen, ahol elfogadhatja, elutasíthatja és módosításokat javasolhat a rendeléshez. A szállító hozzászólások hozzáadásával oszthat meg olyan információkat, mint a beszerzési rendelés módosítása. Ha fel szeretné hívni a szállító figyelmét az új beszerzési rendelésre, elküldheti azt egy e-mailben is a nyomtatáskezelő rendszer segítségével.
 
 ### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>A beszerzési rendelés szállító általi visszaigazolása és elfogadása
 
-Amikor a szállító elfogadja a beszerzési rendelést, a beszerzési rendelés automatikusan vagy manuálisan erősíthető meg. Ez attól függ, hogy a ** szállító aktiválási ** mező értéke **aktív (az automatikus megerősítést PO)** a szállító vagy a **aktív (beszerzési rendelés nincs automatikus megerősítik)**.  
+Amikor a szállító elfogadja a beszerzési rendelést, a beszerzési rendelés automatikusan vagy manuálisan erősíthető meg. Ez attól függ, hogy a **Szállító aktiválása** mező értéke **Aktív (beszerzési rendelés automatikus megerősítése)** vagy **Aktív (beszerzési rendelés nincs automatikusan megerősítve)**.  
 
 Az alábbi táblázat bemutatja a tipikus információcserét attól függően, hogy hogyan reagál a szállító, amikor egy beszerzési rendelés visszaigazolást küld nekik.
 
@@ -95,19 +98,19 @@ Az alábbi táblázat bemutatja a tipikus információcserét attól függően, 
 <td>A szállító válasza <strong>Elutasítva</strong> értékű lesz, de a beszerzési rendelés <strong>Külső ellenőrzés alatt</strong> állapotú marad. Az elutasítás az indoklással kerül kézbesítésre.</td>
 </tr>
 <tr class="odd">
-<td>A szállító <strong>elfogadja a változások a rendelést</strong>. Módosítások a sor szintjén használata javasolt. Lehetőség van az egyes sorok elfogadására vagy elutasítására. Egyéb lehetséges módosítások a következők:
+<td>Az a szállító, aki <strong>módosításokkal fogadja el a rendelést</strong>. A módosításokat a sor szintjén javasolja a program. Lehetőség van az egyes sorok elfogadására vagy elutasítására. Egyéb lehetséges módosítások a következők:
 <ul>
 <li>Módosíthatja a dátumokat vagy a mennyiségeket.</li>
 <li>Feloszthatja a sorokat eltérő szállítási dátumok vagy mennyiségek alapján.</li>
 <li>Helyettesíthet egy cikket.</li>
 </ul>
 Az árinformáció és a költségek a szállító által nem módosítható értékek. Ezekhez megjegyzések segítségével javasolhat módosításokat.</td>
-<td>A szállítói válasz formájában van <strong>elfogadott módosításokkal</strong>, <strong></strong>és a beszerzési rendelés állapota továbbra is <strong>a külső ellenőrzés</strong>.</td>
+<td>A szállító válasza <strong>Elfogadva módosításokkal</strong> értékű lesz, <strong></strong> és a beszerzési rendelés <strong>Külső ellenőrzés alatt</strong> állapotú marad.</td>
 </tr>
 </tbody>
 </table>
 
-Használhatja a **beszerzési rendelés****készítmény** munkaterület mely válaszolt a szállító POs figyelésére. A munkaterület tartalmaz két állapotú beszerzési rendeléseket tartalmazó listák **a külső ellenőrzés**:
+Használhatja a **Beszerzési rendelés** **előkészítése** munkaterületet, hogy nyomon kövesse, mely beszerzési rendelésekre válaszolt a szállító. A munkaterület két listát tartalmaz, amelyek felsorolják a **Külső ellenőrzés alatt** állapotú beszerzési rendeléseket:
 
 -   Külső ellenőrzés alatt, intézkedést igényel.
 -   Külső ellenőrzés alatt, a szállító válaszára várva.
@@ -125,7 +128,7 @@ A beszerzési rendelés visszavonásakor az állapot **Jóváhagyva** állapotú
 A dokumentumkezelő rendszer segítségével fájlokat, képeket és megjegyzéseket csatolhat a beszerzési megrendeléshez. A **Külső** típusú korlátozással rendelkező mellékleteket a szállító a beszerzési rendelés elküldése után tudja megtekinteni.
 
 ## <a name="purchase-order-statuses-and-versions"></a>Beszerzési rendelés állapotai és verziói
-Ez a szakasz bemutatja a beszerzési rendelés megerősítés előtti különböző állapotait, valamint azt, hogy mikor a beszerzési rendelés új verziói mikor válnak elérhetővé a szállító számára. Attól függően, hogy változáskezelés használja a beszerzési rendelésekhez, e különbségek vannak. 
+Ez a szakasz bemutatja a beszerzési rendelés megerősítés előtti különböző állapotait, valamint azt, hogy mikor a beszerzési rendelés új verziói mikor válnak elérhetővé a szállító számára. Az eltérések attól függnek, hogy használja-e a beszerzési rendelések változáskezelését. 
 
 ### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Verziók és állapotok, ha nem használja a változáskezelést
 
@@ -168,6 +171,8 @@ Bizományosi készlet használatakor a szállító a szállítói együttműköd
 -   **Bizományosi készletet használó beszerzési rendelések** – A bizományosi készletet használó beszerzési rendelések akkor jönnek létre, amikor az ön vállalata lesz a készlet tulajdonosa. Ezzel egy időben egy termékbevételezési bizonylat is feladásra kerül. A bizományosi beszerzési rendelések csak a **Bizományosi készletet használó beszerzési rendelések** lapon jelennek meg. Nem szerepelnek **Az összes visszaigazolt beszerzési rendelés** lapon a **Szállító együttműködés** modulban.
 -   **Bizományosi készletből kapott termékek** – Ez a lap minden olyan tranzakciót listáz, amelynek során a termékek tulajdonjoga a szállítóról az ön vállalatára ruházódott át. A szállítók ezt az információt a vevői számlák kibocsátására használhatják.
 -   **Aktuális bizományosi készlet** – Ez a lap megjeleníti a szállító tulajdonában levő aktuális bizományosi készletet, amely beérkezett a raktárába.
+
+
 
 
 

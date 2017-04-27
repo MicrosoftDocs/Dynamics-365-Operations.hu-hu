@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="packing-materials-and-fees"></a>Csomagolóanyagok és díjak
 
+[!include[banner](../includes/banner.md)]
+
+
 A csomagolóanyag-díjakat meghatározott időközönként kell kifizetni egy feldolgozó vállalatnak. Súlyegységenként egy bizonyos összeget kell kifizetni a csomagolási egységet alkotó minden egyes anyag után. A program a csomagolóanyag-díjakat kiszámítja és jelentést is készít róluk, viszont – mivel nem számít a hatóságoknak fizetendő adónak – nem ad fel főkönyvi tranzakciót a díjjal kapcsolatban.
 
 A csomagolóanyag-súlyokat és -díjakat az értékesítési rendeléssoroknál és a beszerzési rendeléssoroknál a program számolja ki.
@@ -52,7 +55,7 @@ A csomagolóanyag-súlyok/-díjak vagy mindkettő kiszámítása előtt létre k
 ## <a name="packing-units-on-purchase-order-lines"></a>A beszerzési rendelési sorokon lévő csomagolási egységek
 Nem hoz létre a rendszer a beszerzési rendelés sorokhoz csomagolási anyag tranzakciókat. Tranzakciókat hoz létre manuálisan a számlázott beszerzési rendelési sorhoz a **Csomagolóanyag-tranzakciók** oldalon.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Vevő packagingmaterialfee licencszámok beállítása
+## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Vevő csomagolóanyag-díjakhoz való licencszámának beállítása
 Ha a vevő fizeti a csomagolóanyag-díjakat, határozza meg a vevő csomagolási anyag díjához való licencszámokat a **Vevők** oldalon. Ha társított licencszámot a vevőhöz, akkor a program értékesítési rendelések számlázása során automatikusan kiszámítja a csomagolóanyag-díjakat. Számlázás után a **Díj kiszámítása** jelölőnégyzet törlődik a **Csomagoló anyag tranzakciók** oldalon, mert nem szükséges a kiszámítása és a jelentés nyomtatása. A csomagolóanyag súlyadatait rá lehet nyomtatni a számlára, és tájékoztatni lehet a vevőt arról, hogy ő fizeti a díjakat. 
 
 Ha a vállalat fizeti a csomagolóanyag-díjakat, ne adja meg a vevő licencszámát. Számlázás után a **Díjak kiszámítása** jelölőnégyzet be van jelölve a **Csomagolóanyag-tranzakciók** oldalon. Ez azt jelzi, hogy egy jelentés létrejöttekor a díjak kiszámítása megtörtént. A súlyadatokat rá lehet nyomtatni a számlára, és jelezni lehet, hogy a vállalat fizeti a díjakat.
@@ -60,6 +63,8 @@ Ha a vállalat fizeti a csomagolóanyag-díjakat, ne adja meg a vevő licencszá
 ## <a name="print-packaging-material-weights-on-invoices"></a>Csomagolóanyag súlyadatainak nyomtatása a számlákra
 A számlákra rá lehet nyomtatni a csomagolóanyag súlyadatait, és jelezni lehet, hogy ki fizeti a számlán szereplő csomagolóanyag-díjakat. A súlyok összegzése a csomagolóanyag-kód alapján történik.
  
+
+
 
 
 

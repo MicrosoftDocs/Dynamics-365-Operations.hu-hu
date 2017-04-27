@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-the-properties-of-a-workflow"></a>A munkafolyamat elemeinek beállítása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a témakör bemutatja, hogyan kell konfigurálni a munkafolyamat különböző tulajdonságait.
 
 A munkafolyamat tulajdonságainak beállítására, a munkafolyamat-szerkesztő megnyitása a munkafolyamat. Kattintson a munkafolyamat-szerkesztő vásznára, majd ezt követően kattintson a **Tulajdonságok** megnyitásához a **Tulajdonságok** képernyőn. A következő eljárások segítségével beállíthatja a munkafolyamat különféle tulajdonságait.
@@ -147,10 +150,10 @@ Amikor elküldenek egy dokumentumot feldolgozásra, létrejön egy munkafolyamat
     </tr>
     <tr class="odd">
     <td>Felhasználó</td>
-    <td>Adott Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>A <strong>Címzett</strong> lapon, kattintson a <strong>Felhasználó</strong> lehetőségre.</li>
-    <li>A a <strong>felhasználói</strong> lap, a <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Felhasználók</strong> lapon található <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -165,6 +168,8 @@ Ha megjegyzéseket szeretne fűzni a munkafolyamathoz az elvégzett változtatá
 2.  Írja be a megjegyzéseit az **Adja meg a munkafolyamatra vonatkozó megjegyzéseket** mezőbe.
 3.  Megjegyzések áttekintése. Miután hozzáadta a megjegyzéseket, nem módosíthatja azokat.
 4.  Kattintson a **Hozzáadás** gombra a megjegyzések az **Előző megjegyzések** területre történő hozzáadásához.
+
+
 
 
 

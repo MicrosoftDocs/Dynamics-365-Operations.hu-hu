@@ -1,6 +1,6 @@
 ---
 title: "Termékdimenziók"
-description: "Vannak négy cikkdimenziók – szín, konfiguráció, méretét és stílusát. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is."
+description: "Négy termékdimenzió létezik: szín, konfiguráció, méret és stílus. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,21 +29,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-dimensions"></a>Termékdimenziók
 
-Vannak négy cikkdimenziók – szín, konfiguráció, méretét és stílusát. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is.
+[!include[banner](../includes/banner.md)]
+
+
+Négy termékdimenzió létezik: szín, konfiguráció, méret és stílus. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is.
 
 Termékdimenziók olyan jellemzőket termékváltozat azonosítására szolgál. Cikkdimenziók kombinációi használhatja termékváltozatok meghatározására. Termékváltozat létrehozásához meg kell adnia legalább egy termékdimenzió alaptermék.
 Termékváltozatok
 ----------------
 
-Termékváltozatok is nevezik cikkeket. Cikk tárgyi eszközök termék, amely nem azonos a szolgáltatás fut. Egyben a szolgáltatástípushoz alaptermék definiálhat. A Szolgáltatástípus használatával megadhat szolgáltatásokat magukba foglaló termékváltozatokat. Például megadhatja a tanácsadói munka és a termékbevételezés változatok vezető tanácsadók és beosztott tanácsadók által végrehajtott munka alaptermék.
+Termékváltozatok is nevezik cikkeket. Cikk tárgyi eszközök termék, amely nem azonos a szolgáltatás fut. Azonban lehetőség van alaptermék meghatározására is a szolgáltatástípussal. A Szolgáltatástípus használatával megadhat szolgáltatásokat magukba foglaló termékváltozatokat. Például megadhatja a tanácsadói munka és a termékbevételezés változatok vezető tanácsadók és beosztott tanácsadók által végrehajtott munka alaptermék.
 
 ## <a name="product-dimensions"></a>Termékdimenziók
-Érhetők el a következő cikkdimenziók: konfiguráció, szín, méret és stílus. Termékváltozat termék dimenzió értékek alapján jön létre.
+A következő termékdimenziók léteznek: szín, konfiguráció, méret és stílus. Termékváltozat hozható létre a termékdimenzió-értékek alapján.
 
-Termék dimenzió értékek, például a méret, szín és stílus hozható létre a a **méretét**, **szín** és **stílus** lapok, amelyek a következő helyekről érhető el: **Termékinformációk kezelése**&gt;**a telepítő**&gt;**dimenzió- és változatszűrők csoportok**&gt;**méretek-színek-stílusok**. A Konfigurációdimenzió termékdimenzió-értékei általában a Termékkonfiguráló vagy a Dimenzión alapuló konfiguráló használatával hozhatók létre. A termékdimenziók létrehozása és karbantartása a **Termékdimenziók** oldalon lehetséges, amely a következő helyekről érhető el:
--   Kattintson a **Termékinformációk kezelése**&gt;**termékek**&gt;**alaptermékekhez**. A a **műveletpanel**, kattintson a **termékdimenziók**.
--   Kattintson a **Termékinformációk kezelése**&gt;**termékek**&gt;**minden termék és alaptermék**. Válasszon ki egy alapterméket. A a **műveletpanel**, kattintson a **termékdimenziók**.
--   Kattintson a **Termékinformációk kezelése**&gt;**, amely a termékek**. Válasszon ki egy alapterméket. A a **műveletpanel**, kattintson a **termék**. Az **Alaptermék** csoportban kattintson a **Termékdimenziók** gombra.
+Termékdimenzió-értékek, mint például méret, szín és stílus a **Méret**, **Szín** és **Stílus** lapokon hozhatók létre, amelyek a következő helyekről érhetők el: **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Dimenzió- és változatcsoportok** &gt; **Méretek/Színek/Stílusok**. A Konfigurációdimenzió termékdimenzió-értékei általában a Termékkonfiguráló vagy a Dimenzión alapuló konfiguráló használatával hozhatók létre. A termékdimenziók létrehozása és karbantartása a **Termékdimenziók** oldalon lehetséges, amely a következő helyekről érhető el:
+-   Kattintson a **Termékinformációk kezelése** &gt; **Termékek** &gt; **Alaptermékek** lehetőségekre. A **Műveleti panel** modulon kattintson a **Termékdimenziók** elemre.
+-   Kattintson a  **Termékinformációk kezelése** &gt; **Termékek** &gt; **Minden termék és alaptermék** lehetőségekre. Válasszon ki egy alapterméket. A **Műveleti panel** modulon kattintson a **Termékdimenziók** elemre.
+-   Kattintson a **Termékinformációk kezelése** &gt; **Kiadott termékek** lehetőségekre. Válasszon ki egy alapterméket. A **Műveleti panel** modulon kattintson a **Termék** elemre. Az **Alaptermék** csoportban kattintson a **Termékdimenziók** gombra.
 
 A változatok létrehozható egy cikkhez száma lehetséges termék cikkdimenzió-kombinációk száma korlátozza.
 | **Tipp **                                                                                                                                              |
@@ -64,6 +67,8 @@ Egy vállalat farmernadrágokat értékesít. A Farmernadrág cikknél a Szín �
 | Barna | K    |
 | Barna | XL   |
 | Barna | XXL  |
+
+
 
 
 

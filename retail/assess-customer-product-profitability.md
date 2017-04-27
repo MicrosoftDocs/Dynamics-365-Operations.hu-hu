@@ -1,6 +1,6 @@
 ---
 title: "A vevők és a termék nyereségesség felmérése"
-description: "Ez a cikk ismerteti, hogyan használható a memóriában, és a valós idejű analytics elérését, feltárása és a műveleti adatok a Microsoft Dynamics 365 ügyfelekkel és a termék nyereségessége insight nyereség."
+description: "A cikk azt ismerteti, hogyan használhatja a memóriában lévő és a valós idejű analitikát az ügyfelek és a termék nyereségességének elérésére, böngészésére és megtekintésére a Microsoft Dynamics 365 for Operations adatokból."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="assess-customer-and-product-profitability"></a>A vevők és a termék nyereségesség felmérése
 
-Ez a cikk ismerteti, hogyan használható a memóriában, és a valós idejű analytics elérését, feltárása és a műveleti adatok a Microsoft Dynamics 365 ügyfelekkel és a termék nyereségessége insight nyereség. 
+[!include[banner](includes/banner.md)]
 
-Dynamics 365 műveletek részeként a felhasználók is tanulmányi nyereségesség felső vevők (10-100) keresztül különböző szinteket a szervezeti hierarchia, a következő kritériumok alapján:
+
+A cikk azt ismerteti, hogyan használhatja a memóriában lévő és a valós idejű analitikát az ügyfelek és a termék nyereségességének elérésére, böngészésére és megtekintésére a Microsoft Dynamics 365 for Operations adatokból. 
+
+A Dynamics 365 for Operations részeként a felhasználók tanulmányozhatják a nyereségességet a legjobb vásárlók (10-től 100-ig) esetében, a szervezeti hierarchia különböző szintjein keresztül. Ez a következő kritériumok egyike alapján történik:
 
 -   Értékesítési összeg
 -   Mennyiség
@@ -38,8 +41,8 @@ Dynamics 365 műveletek részeként a felhasználók is tanulmányi nyereségess
 
 Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb vásárlók** jelentést, melyet a következő helyek bármelyikéről megnyithat:
 
--   **Retail store management** Dynamics 365 munkaterület műveletek &gt;**kereskedelmi és kereskedelmi**&gt;**csatornák**&gt;**Retail store management**&gt;**jelentések**&gt;**felső vevők jelentés**
--   **Lekérdezések és jelentések** Dynamics 365 műveletek szakasz &gt;**kereskedelmi és kereskedelmi**&gt;**lekérdezések és jelentések**&gt;**értékesítési jelentések**&gt;**felső vevők jelentés**
+-   **Kiskereskedelmi üzlet kezelése** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések** &gt; **Legfőbb vevők – jelentés**
+-   **Lekérdezések és jelentések** szakasz Dynamics 365 for Operations &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Legfőbb vevők – jelentés**
 
 Hasonlóan tanulmányozhatják a felhasználók a legjobb termékeket (10-től 100-ig) a szervezeti hierarchia különböző szintjein keresztül a következő kritériumok egyike alapján:
 
@@ -50,8 +53,10 @@ Hasonlóan tanulmányozhatják a felhasználók a legjobb termékeket (10-től 1
 
 Ehhez az értékeléshez alkalmazhatja a nem beépített ** Legjobb termékek **jelentést, melyet a következő helyek bármelyikéről megnyithat:
 
--   **Retail store management** munkaterület Dynamics 365 műveletek &gt;**kereskedelmi és kereskedelmi**&gt;**csatornák**&gt;**Retail store management**&gt;**jelentések**&gt;**a legjobb termékek jelentés**
--   **Kategória- és kezelési** munkaterület Dynamics 365 műveletek &gt;**kereskedelmi és kereskedelmi**&gt;**termékek és kategóriák**&gt;**Retail store management**&gt;**jelentések**&gt;**a legjobb termékek jelentés**
--   **Lekérdezések és jelentések** Dynamics 365 műveletek szakasz &gt;**kereskedelmi és kereskedelmi**&gt;**lekérdezésekben és jelentésekben**&gt;**értékesítési jelentések**&gt;**a legjobb termékek jelentés**
+-   **Kiskereskedelmi üzlet kezelése** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések** &gt; **Vezető termékek jelentése**
+-   **Kategória és termékkezelő** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Termékek és kategóriák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**
+-   **Lekérdezések és jelentések** szakasz Dynamics 365 for Operations &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Vezető termékek jelentése**
+
+
 
 

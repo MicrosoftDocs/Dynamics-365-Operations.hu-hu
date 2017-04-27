@@ -1,6 +1,6 @@
 ---
-title: "Termék-nómenklatúra"
-description: "Ez a témakör ismerteti a hogyan állíthat be egy termék-nómenklatúra cseréje [termék fő szám - konfiguráció - méret, - szín - stílus] formátumban, amely tartalmazza a fő termékszám, aktív cikkdimenziók és tetszés szerinti szöveget határoló célzott formátummal. A megszorításon alapuló termékkonfiguráló által létrehozott konfigurációk azonosítására szolgáló elnevezési rendszert is létrehozhat. Ezek az elnevezési rendszerek tetszés szerinti attribútumokat tartalmazhatnak."
+title: "Termékszámozási rendszer"
+description: "Ez a témakör leírja, hogyan állíthat be termékszámozási rendszert a rögzített formátum lecserélése érdekében [Alaptermék száma - Konfiguráció - Méret - Szín - Stílus]: a célzott formátum tartalmazza az alaptermék számát, az aktív termékdimenziókat és tetszés szerinti szövegelválasztókat. A megszorításon alapuló termékkonfiguráló által létrehozott konfigurációk azonosítására szolgáló elnevezési rendszert is létrehozhat. Ezek az elnevezési rendszerek tetszés szerinti attribútumokat tartalmazhatnak."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-number-nomenclature"></a>Termék-nómenklatúra
+# <a name="product-number-nomenclature"></a>Termékszámozási rendszer
 
-Ez a témakör ismerteti a hogyan állíthat be egy termék-nómenklatúra cseréje [termék fő szám - konfiguráció - méret, - szín - stílus] formátumban, amely tartalmazza a fő termékszám, aktív cikkdimenziók és tetszés szerinti szöveget határoló célzott formátummal. A megszorításon alapuló termékkonfiguráló által létrehozott konfigurációk azonosítására szolgáló elnevezési rendszert is létrehozhat. Ezek az elnevezési rendszerek tetszés szerinti attribútumokat tartalmazhatnak.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a témakör leírja, hogyan állíthat be termékszámozási rendszert a rögzített formátum lecserélése érdekében [Alaptermék száma - Konfiguráció - Méret - Szín - Stílus]: a célzott formátum tartalmazza az alaptermék számát, az aktív termékdimenziókat és tetszés szerinti szövegelválasztókat. A megszorításon alapuló termékkonfiguráló által létrehozott konfigurációk azonosítására szolgáló elnevezési rendszert is létrehozhat. Ezek az elnevezési rendszerek tetszés szerinti attribútumokat tartalmazhatnak.
 
 Az új termékváltozat-számozási rendszer lehetővé teszi, hogy szegmenseket foglaljon bele szerepeljenek a termékváltozat-azonosítókba. Ezek a szegmensek tartalmazhatják az alaptermék számát, a termékdimenziókat, a számsorozatokat, szöveges konstansokat és az attribútumokat. Ezzel egy értékesítési rendelés vagy beszerzési rendelés létrehozásakor gyorsan megtalálhatja a konkrét termékváltozatot.
 
@@ -66,8 +69,8 @@ Egy pólót (TS1234) 3 különböző méretben (S, M, L), 4 különböző színb
 
 A termékváltozat száma a Piros, Kicsi, Polo esetében: TS1234-Piros-Kicsi-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Constraintbased konfigurációk nómenklatúrája
-A megszorítás alapú konfiguráció esetében a Konfiguráció cikkdimenzió dedikált Nómenklatúra is épített. A következő szegmenseket a **Termékek elnevezési rendszere** lapon választhatja ki.
+## <a name="nomenclature-of-constraintbased-configurations"></a>Megszorításon alapuló konfigurációk elnevezési rendszere
+A megszorításon alapuló konfigurációk esetében dedikált elnevezési rendszer építhető a konfiguráció termékdimenzió számára. A következő szegmenseket a **Termékek elnevezési rendszere** lapon választhatja ki.
 
 -   Számsorozat értéke
 -   Szöveges állandó
@@ -90,8 +93,8 @@ A konfigurációs elnevezési rendszer meghatározása a következő szegmensek 
 
 A 78 hosszúságú fa anyag konfigurációs azonosítója a következő lesz: WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Dimensionbased konfigurációk nómenklatúrája
-Dimenzión alapuló konfigurációk esetén a Konfiguráció cikkdimenzió dedikált Nómenklatúra is épített. A következő szegmenseket a **Termékek elnevezési rendszere** lapon választhatja ki.
+## <a name="nomenclature-of-dimensionbased-configurations"></a>Dimenzión alapuló konfigurációk elnevezési rendszere
+A dimenzión alapuló konfigurációk esetében dedikált elnevezési rendszer építhető a konfiguráció termékdimenzió számára. A következő szegmenseket a **Termékek elnevezési rendszere** lapon választhatja ki.
 
 -   Számsorozat értéke
 -   Szöveges állandó
@@ -132,7 +135,7 @@ Akár megszorításon alapuló, akár dimenzión alapuló konfigurációs techno
 Ebben a példában egy olyan termékváltozat-számozási rendszert használhat, amely a következő szegmensekből áll:
 
 1.  Alaptermék száma
-2.  Szövegkonstanst "\_"
+2.  Szöveges állandó: '\_'
 3.  Konfiguráció
 
 A konfigurációs elnevezési rendszer a következő szegmensekből állhat:
@@ -147,7 +150,7 @@ A szegmensekhez a következő értékeket adhatja meg:
 -   Anyag = Műanyag
 -   Hossz = 12
 
-A termék változat szám lesz: M0099\_PlasticAAA12.
+A termékváltozat száma: M0099\_PlasticAAA12.
 
 ### <a name="example-for-dimension-based-configurations"></a>Példák dimenzión alapuló konfigurációkra
 
@@ -180,7 +183,7 @@ Hiba lép fel, ha kézzel vagy automatikusan próbál termékváltozatokat létr
 
 ### <a name="constraint-based-configurations"></a>Megszorításon alapuló konfigurációk
 
-Az elnevezési rendszertől függően a rendszer megkísérelhet nem egyedi számot hozzárendelni egy konfigurációhoz. Ebben az esetben a rendszer fogja használni a számsorozat a konfigurációdimenzió termék változat szám helyett. Ha ez történik, egy figyelmeztető üzenetet fog kapni. Ennek elkerülése érdekében elegendő attribútumot kell felvennie az elnevezési rendszerbe az egyediség biztosítása érdekében, valamint meg kell győződnie arról, hogy az **Újrahasználat** beállítás engedélyezve van az összetevő esetében.
+Az elnevezési rendszertől függően a rendszer megkísérelhet nem egyedi számot hozzárendelni egy konfigurációhoz. Ilyenkor a rendszer a konfigurációdimenzió számsorozatát fogja használni a termékváltozatszám helyett. Ebben az esetben egy figyelmeztetést fog kapni. Ennek elkerülése érdekében elegendő attribútumot kell felvennie az elnevezési rendszerbe az egyediség biztosítása érdekében, valamint meg kell győződnie arról, hogy az **Újrahasználat** beállítás engedélyezve van az összetevő esetében.
 
 ### <a name="dimension-based-configurations"></a>Dimenzión alapuló konfigurációk
 
@@ -191,8 +194,10 @@ A konfigurálási folyamat egy lépést is tartalmaz, amelyben a rendszer az eln
 <a name="see-also"></a>Lásd még
 --------
 
-[Hozzon létre egy szám termék-nómenklatúra előre definiált termékváltozatok (feladat guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Termékszámozási rendszer létrehozása előre definiált termékváltozatokhoz (feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Hozzon létre egy szám termék-nómenklatúra konfigurált termékváltozatok (feladat guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+[Termékszámozási rendszer létrehozása konfigurált termékváltozatokhoz (feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+
+
 
 

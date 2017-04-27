@@ -1,5 +1,5 @@
 ---
-title: "Egységközi számlázás kiegyensúlyozott naplók"
+title: "Kiegyensúlyozott naplók egységközi számlázáshoz"
 description: "Ez a cikk ismerteti, hogyan történik a napló automatikus kiegyensúlyozása a főkönyvi oldalon található kiegyenlítő pénzügyi dimenzió kijelölésekor."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Egységközi számlázás kiegyensúlyozott naplók
+# <a name="balanced-journals-for-interunit-accounting"></a>Kiegyensúlyozott naplók egységközi számlázáshoz
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk ismerteti, hogyan történik a napló automatikus kiegyensúlyozása a főkönyvi oldalon található kiegyenlítő pénzügyi dimenzió kijelölésekor. 
 
@@ -34,9 +37,9 @@ Ha a könyvelési bejegyzések a pénzügyi dimenzióértékek szintjén nem kie
 
 |                      |           |
 |----------------------|-----------|
-| 6100 – MSP-OU\_256 | 100,00 TARTOZÁS |
+| 6100 – MSP – OU\_256 | 100,00 TARTOZÁS |
 | 6100 – NY – OU\_249  | 100,00 TARTOZÁS |
-| 2100 – MSP-OU\_256 | 200.00 CR |
+| 2100 – MSP – OU\_256 | 200.00 CR |
 
 Ebben az esetben a következő egyenlegek vannak meghatározva:
 
@@ -47,8 +50,10 @@ Ezért a következő könyvelési bejegyzések automatikusan létrejönnek a nap
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Egységközi tartozik) – MSP-OU\_256 | 100,00 TARTOZÁS |
-| (Egységközi követelés) – NY – OU\_249 | 100.00 CR |
+| (Egységközi - terhelés) – MSP – OU\_256 | 100,00 TARTOZÁS |
+| (Egységközi - jóváírás) – NY – OU\_249 | 100.00 CR |
+
+
 
 
 

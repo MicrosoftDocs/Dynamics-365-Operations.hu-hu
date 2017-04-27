@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="work-breakdown-structures"></a>Munkalebontási struktúrák
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Munkalebontási struktúrák A munkalebontási struktúra (WBS), a projektben elvégzendő munka leírása. Ez egy feladatokból álló hierarchia, amely a projektcsapat munka-összeállításra vonatkozó elképzeléseit tükrözi, és az egyes komponensek és feladatok méretét, költségét és időtartamát. A WBS-nek három fő célja van:
@@ -39,17 +42,17 @@ A WBS részletességének mértéke attól függ, hogy milyen mértékű pontoss
 
 Ezzel szemben a média- és reklámiparban, illetve a szoftverekkel és informatikai infrastruktúrával foglalkozó ágazatokban futó projektek mindig egyediek, ezért a termelékenység relatív a feladatot elvégző személy tapasztalatához és kompetenciájához képest. Ezért ezek az ágazatok egy munkalebontási struktúrát (WBS) használnak ahhoz, hogy megközelítőleg megkapják a projekt értékét, és ezt nem a projekt előrehaladásának részletes nyomon követéséhez használják. 
 
-A munkalebontási struktúra (WBS) létrehozása időigényes folyamat, amely általában hosszabb időt vesz igénybe, és amelyhez sok személy együttműködése és a tőlük érkező információk szükségesek. Ez a témakör leírja a használatát WBS továbbfejlesztett Microsoft Dynamics 365 műveletek becslések és nyomon követési igényeinek.
+A munkalebontási struktúra (WBS) létrehozása időigényes folyamat, amely általában hosszabb időt vesz igénybe, és amelyhez sok személy együttműködése és a tőlük érkező információk szükségesek. Ez a témakör leírja, hogyan használhatja WBS-bővítményeket a Microsoft Dynamics 365 for Operations programban becslési és nyomon követési igényeinek megfelelően.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>A WBS létrehozásának előfeltételei
 A WBS létrehozásához létre kell hoznia egy munkaütemezést és meg kell becsülnie a munka költségeit.
 
 ### <a name="prerequisites-for-creating-a-work-schedule"></a>Munkaütemezés létrehozásának előfeltételei
 
-A WBS-szolgáltatások teljes ütemezési szolgáltatásait használja, hajtsa végre a következő beállítást:
+A munkalebontási struktúra (WBS) ütemezési funkcióinak teljes kihasználásához hajtsa végre a következő beállításokat:
 
 1.  Alapértelmezett naptár és egy projektnaptár beállítása:
-    1.  Kattintson a **projekt igazgatási és számviteli**&gt;**a telepítő**&gt;**ütemezés**. Az **Alapértelmezett Munkanaptár** mezőben adja meg az alapértelmezett naptárt. Ez lesz az alapértelmezett munkanaptár minden új projekt létrehozásakor.
+    1.  Kattintson a következőkre: **Projektvezetési és könyvelés** &gt; **Beállítás** &gt; **Ütemezés**. Az **Alapértelmezett Munkanaptár** mezőben adja meg az alapértelmezett naptárt. Ez lesz az alapértelmezett munkanaptár minden új projekt létrehozásakor.
     2.  A konkrét projekteknél lehetősége van módosítani az alapértelmezett naptárat. Kattintson a projekt részletes adatainak lapjára, majd a **Projektcsapat és ütemezés** gyorslapon frissítse az **Ütemezési naptár** mezőt úgy, hogy válasszon ki egy másik naptárat.
 
 2.  Állítsa be a normál munkanapokat és munkaórákat. A projekt számára munkanaptárként beállított naptárat a WBS következő információk meghatározására használja:
@@ -57,13 +60,13 @@ A WBS-szolgáltatások teljes ütemezési szolgáltatásait használja, hajtsa v
 -   Munkanapok és ünnepek
 -   A napi munkaórák száma
 
-A munkanapok és a munkaidő naptár beállítása, vagy új naptár létrehozásához kattintson a **szervezet felügyelete**&gt;**közös**&gt;**naptárak**.
+Egy naptár esetében a munkanapok és a munkaórák beállításához, vagy új naptár létrehozásához kattintson a következőkre: **Szervezeti adminisztráció** &gt; **Közös** &gt; **Naptárak**.
 
 ### <a name="prerequisites-for-estimating-the-cost-of-work"></a>Előfeltételek a munka költségének becsléséhez
 
 A WBS teljes költségbecslési kapacitásának kihasználásához be kell állítania a dolgozók számára a költségeket és az eladási árakat, a munkakategóriákat, a kiadásokat és a díjakat, illetve a cikkeket.
 
--   Önköltségi és eladási ár, munka, költség és díjkategóriákra beállításához kattintson a **projekt igazgatási és számviteli**&gt;**a telepítő**&gt;**árak**.
+-   A költség és a munka eladási árának, illetve a kiadás és a díjkategória beállításához kattintson a következőkre: **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Árak**.
 -   A cikkek költségének és eladási árának beállításához használja a **Kereskedelmi megállapodások **oldalt minden egyes cikk esetében, a **Felszabadított termékek** listalapon, a Termékinformációk kezelésénél.
 
 ## <a name="creating-a-wbs"></a>WBS létrehozása
@@ -73,11 +76,11 @@ A WBS létrehozása három tevékenységből áll:
 2.  **Munkaütemezés** – Egy a feladat végrehajtásához szükséges idő megbecslése, feladatfüggőségek beállítása és a feladatok kezdési és záró dátumainak kiválasztása.
 3.  **Költség becslés** – Az egyes feladatokhoz költségeinek becslése.
 
-A következő részekben megismerheti, hogyan WBS képességeit segíthet e tevékenységek minden.
+Az alábbi szakaszok ismertetik, hogyan segíthetnek a WBS lehetőségei az egyes tevékenységek során.
 
 ### <a name="work-decomposition"></a>Munka lebontása
 
-A munka le- vagy felbontása általában a WBS létrehozásának első lépése. A WBS-funkciók a következő alapvető szerkezeteket munka leállása vagy bomlási támogatja. 
+A munka le- vagy felbontása általában a WBS létrehozásának első lépése. A WBS-funkció a következő alapvető konstrukciókat támogatja munkalebontás vagy -felbontás során. 
 
 **Projekt gyökérfeladata** A projekt gyökérfeladata a legfelső szintű projektfeladat egy projekt esetében. Minden más projektfeladat ez alatt jön létre. A gyökérfeladat neve mindig a projektnévhez van igazítva. A gyökércsomópont esetében a munka, a dátumok és az időtartam a gyökérfeladat alatti feladatok értékeit foglalják össze. A gyökércsomópont tulajdonságait nem lehet módosítani és törölni.
 
@@ -94,7 +97,7 @@ Jelenleg nem szabható testre a WBS-számozás.
 **Feladat beljebb húzása** Ha beljebb húz egy feladatot, akkor az az azt megelőző feladat alárendelt feladata lesz. Az új alárendelt feladat WBS-számát a program automatikusan újraszámítja a fölérendelt feladat WBS-száma alapján. A fölérendelt feladat így összegző vagy tároló feladattá válik, és ezért az alkotó feladatok összesítése lesz. 
 
 > [!NOTE] 
-> Ha behúz egy tevékenységhez, amely a francia művelet előtt Levélcsomópont volt feladatok, az újonnan létrehozott összefoglaló tevékenység elveszíti a saját dátumok, erőfeszítés és erőforrások számát. Ezután már az új alkotó feladatok értékeinek összefoglalását használja. 
+> Amikor feladatokat húz be egy olyan feladat alá, amely levélcsomópont volt a behúzási műveletet megelőzően, az újonnan létrehozott összefoglaló feladat elveszti a saját dátumait, munkáját és az erőforrások számát. Ezután már az új alkotó feladatok értékeinek összefoglalását használja. 
 
 **Feladat kijjebb húzása** Egy feladat kijjebb húzása után az már nem lesz a korábban fölérendelt feladat alkotó feladata. Ennek a feladatnak a WBS-számát a program automatikusan újraszámítja, hogy az tükrözze feladat új szintjét a hierarchiában. A feladat korábbi fölérendelt feladata esetében munka, költség, és a dátumok újra lesznek számolva, a korábbi alkotó feladat kizárásával. 
 
@@ -102,10 +105,10 @@ Jelenleg nem szabható testre a WBS-számozás.
 
 ### <a name="schedule-estimation"></a>Ütemezés becslése
 
-Az ütemezés becslése általában a WBS létrehozásának második lépése. Legjobb gyakorlatként érdemes a feladatok létrehozása után végrehajtani az ütemezés becslését. A **munkalebontási szerkezet** oldal Microsoft Dynamics 365 a művelet két részből áll. A felső ablak az ütemezés becsléséhez készült, az alsó ablak pedig tartalmaz egy **Becsült költségek és bevételek** lapot, amely költségbecslésre használható. 
+Az ütemezés becslése általában a WBS létrehozásának második lépése. Legjobb gyakorlatként érdemes a feladatok létrehozása után végrehajtani az ütemezés becslését. A **Munkalebontási struktúra** oldal a Microsoft Dynamics 365 for Operation programban két szakaszból áll. A felső ablak az ütemezés becsléséhez készült, az alsó ablak pedig tartalmaz egy **Becsült költségek és bevételek** lapot, amely költségbecslésre használható. 
 **Feladatfüggőségek** A WBS-ben létrehozhat előzménykapcsolatot a feladatok között. Ha előzményfeladatokat rendel hozzá egy feladathoz, akkor ez a feladat csak akkor kezdődhet meg, amikor minden előzményfeladatát befejezték. A feladat tervezett kezdési dátuma automatikusan az előzmények legkésőbbi dátuma lesz. 
 
-**Feladat ütemezése a Microsoft Dynamics 365 műveletek** a következő tényezők határozzák meg a levél csomópont feladatok ütemezése:
+**Feladat ütemezése a Microsoft Dynamics 365 for Operations programban** A következő tényezők határozzák meg a levélcsomópont feladatainak ütemezését:
 
 -   Megelőző tevékenységek
 -   Munka
@@ -114,27 +117,27 @@ Az ütemezés becslése általában a WBS létrehozásának második lépése. L
 
 Az előzmények nélküli levélcsomópont kezdődátuma automatikusan a projektütemezés kezdő dátumára lesz állítva. Levélcsomópont-feladat időtartamának számítása mindig a kezdő és záró dátum közötti munkanapok száma alapján történik. 
 
-Ütemezési szabályok *** Ha automatikus ütemezési támogatás be van kapcsolva, a következő szabályok vonatkoznak altevékenység csomópont feladat ütemezése:
+****Ütemezési szabályok**** Ha az automatikus ütemezési támogatás be van kapcsolva, a következő szabályok érvényesek feladatütemezésre a levélcsomópont-feladatok esetében:
 
 -   A projekt ütemezési naptára szerint a feladat kezdő és záró dátumainak munkanapnak kell lenniük.
 -   Az előzményekkel rendelkező feladat kezdési dátuma automatikusan az előzmények legkésőbbi dátuma lesz.
 -   A feladathoz tartozó munkát a program automatikusan számítja ki, a következőképpen:
 
-Emberek × óraszámot a projektnaptárban a rendes munkaidő időtartamát × száma. 
+Személyek száma x Időtartam x Normál munkanap óráinak száma a projektnaptárban. 
 
-Bizonyos esetekben lehet, hogy el akar majd térni ezektől a szabályoktól. Automatikus ütemezés Microsoft Dynamics 365 automatikusan beállítása vagy javítása minden altevékenység csomópont tulajdonságainak műveletek elkerülése érdekében kikapcsolhatja. Amikor olyan információt ad meg egy feladathoz, melynek eredményeképpen megsérti az ütemezési szabályokat, egy ütemezési hibát jelző ikon jelenik meg a feladatnál. Ha nem szeretné, hogy látszódjanak az ütemezési hibák, kattintson az **Ütemezési hibák megjelenítve** lehetőségre, hogy kikapcsolja a szolgáltatást. 
+Bizonyos esetekben lehet, hogy el akar majd térni ezektől a szabályoktól. Az automatikus ütemezés kikapcsolásával megakadályozhatja, hogy a Microsoft Dynamics 365 for Operations automatikusan beállítása vagy javítása levélcsomópont feladatainak tulajdonságait. Amikor olyan információt ad meg egy feladathoz, melynek eredményeképpen megsérti az ütemezési szabályokat, egy ütemezési hibát jelző ikon jelenik meg a feladatnál. Ha nem szeretné, hogy látszódjanak az ütemezési hibák, kattintson az **Ütemezési hibák megjelenítve** lehetőségre, hogy kikapcsolja a szolgáltatást. 
 
 > [!NOTE] 
-> Az értékek egy Összegzés vagy tároló tevékenység továbbra is alkotó feladatok, függetlenül attól, hogy automatikus ütemezési támogatás be van kapcsolva be- vagy kikapcsolása értékeinek összegeként kell kiszámítani. 
+> Függetlenül attól, hogy az automatikus ütemezés támogatása be van-e kapcsolva, az összefoglaló vagy tároló feladat értékeit továbbra is az alkotó feladatok összegeként számítja ki a program. 
 
 **Ütemezési hibák kijavítása** Ha az automatikus ütemezés támogatása be van kapcsolva, nem valószínű, hogy lesznek ütemezési hibák. Azonban ha kikapcsolja az automatikus ütemezés támogatását, és később újra bekapcsolja azt, ütemezési hibát jelző ikonok jelenhetnek meg a WBS-ben. 
 
 **Ütemezési hibák javítása a feladat által** Ha duplán kattint az ütemezés hibát jelző ikonra egy feladatnál, egy párbeszédpanelen megjelenik az összes ütemezési hiba az adott feladat esetében. Eldöntheti, hogy mely ütemezési hibákat javítja a feladathoz. 
 
-**Összes ütemezési hibák javítása** Ha azt szeretné, hogy a Microsoft Dynamics 365 műveletekhez a műveletpanel a WBS összes ütemezési hiba megoldásához kattintson a **összes ütemezési eltéréseket Fix**. 
+**Az összes ütemezési hiba kijavítása** Ha azt szeretné, hogy a Microsoft Dynamics 365 for Operations minden ütemezési hibát kijavítson a WBS-ben, akkor kattintson a **Minden ütemezési eltérés kijavítása** lehetőségre a Műveleti panelen. 
 
 > [!NOTE] 
-> Ez a funkció okozhat a WBS jelentős módosításokat. A hibák a következő sorrendben vannak kijavítva:
+> Ez a funkció jelentős módosításokat okozhat a WBS-ben. A hibák a következő sorrendben vannak kijavítva:
 
 1.  A becsült munka módosul az összes feladatnál, így az egyenlő lesz a projektnaptárban meghatározott kapacitással.
 2.  Minden feladat kezdő dátuma úgy módosul, hogy a feladat azt követően kezdődik, hogy az összes megelőző feladatát végrehajtották.
@@ -145,7 +148,7 @@ Bizonyos esetekben lehet, hogy el akar majd térni ezektől a szabályoktól. Au
 Mint ahogy korábban említettük a dokumentumban, minden levélcsomópont-feladatnál a költségeket a **Becsült költségek és bevételek** lap használatával adja meg, a **Munkalebontási struktúra** oldal alsó ablakában. 
 
 > [!NOTE] 
-> A Költségbecslés összegzése vagy tároló tevékenység nem módosítható. Az összefoglaló feladat esetében a költségbecslés megegyezik a levélcsomópontok feladatai esetében az egyes költségbecslések összegével. Minden feladat becsült teljes költsége a következő tranzakciótípusok becsült költségeinek összegeként lesz kiszámítva:
+> A költségbecslés nem módosítható az összefoglaló vagy tároló feladatok esetében. Az összefoglaló feladat esetében a költségbecslés megegyezik a levélcsomópontok feladatai esetében az egyes költségbecslések összegével. Minden feladat becsült teljes költsége a következő tranzakciótípusok becsült költségeinek összegeként lesz kiszámítva:
 
 -   Munka
 -   Cikk vagy anyag
@@ -161,12 +164,12 @@ Amikor a munka és az anyagok költségeit, illetve a kiadásokat becsüli az eg
 
 **Kiadások és anyagköltségek becslése** A **Becsült költségek és bevételek** lap azt is lehetővé teszi, hogy megbecsülje egy feladat kiadásait és anyagi költségeit, ha becslésre van szüksége. 
 
-Önköltségi és eladási ár minden munka vagy költség becslése, a telepítő minden kategóriához, az árképzési táblázatokban megadott sor alapuló **projektek igazgatási és számviteli**&gt;**a telepítő**&gt;**árképzés**. A cikkek esetében a költség és eladási ár alapértelmezett beállításként hozzáadódik a cikkből vagy a kereskedelmi megállapodásokból a **Kiadott termékek** listalapon, a Termékinformációk kezelésénél.
+A költség és eladási ár minden munka vagy a kiadásbecslési sor esetében az ártáblázatokban megadott beállításoktól függ, kategóriánként, a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Árképzés** részben. A cikkek esetében a költség és eladási ár alapértelmezett beállításként hozzáadódik a cikkből vagy a kereskedelmi megállapodásokból a **Kiadott termékek** listalapon, a Termékinformációk kezelésénél.
 
 ## <a name="tracking-progress-on-the-wbs"></a>Nyomonkövetési folyamat a WBS-en
 Egyes ágazatokban nagyon részletesen nyomon követik a projekt előrehaladását a WBS alapján, míg mások a WBS magasabb szintjén követik nyomon az előrehaladást. Ez a szakasz leírja, hogyan használható a WBS-nyomonkövetés a projektkövetelmények teljesítéséhez. 
 
-A Microsoft Dynamics 365 műveletek esetében a projekt WBS három nézete van: a Tervezés nézetben, erőfeszítés követés megtekintése és költség követés megtekintése.
+A Microsoft Dynamics 365 for Operations három nézettel rendelkezik a projekt WBS-éhez: a Tervezés nézet, a Munkakövetési nézet és a Költségkövetési nézet.
 
 ### <a name="planning-view"></a>Tervezési nézet
 
@@ -177,7 +180,7 @@ A Tervezés nézet jeleníti meg az ütemezés tervezett vagy alapbecslését é
 A Munkakövetési nézet megjeleníti a WBS-es feladatok folyamatának követését. Összehasonlítja a feladat halmozott tényleges ráfordított óráit a tervezett munkaórákkal. A következő képletek adják meg az értékeket a Munkakövetési nézetben:
 
 -   Végrehajtási százalék = Tényleges munka a mai napig ÷ Tervezett munka a feladathoz
--   Fennmaradó munkamennyiség (más néven becslés--végre \[stb\]) = tervezett tevékenységi – tényleges annak érdekében, hogy a dátum
+-   Hátralevő munka (más néven Becsült munka a befejezésig \[ETC\]) = Tervezett munka – tényleges munka a mai napig
 -   Becslés befejezéskor (EAC) = Hátralevő munka + Tényleges munka a mai napig
 -   Előre jelzett munkaeltérés = Tervezett munka – EAC
 
@@ -188,7 +191,7 @@ A Munkakövetési nézet jeleníti meg az előre jelzett munkaeltérést a felad
 
 **A munka újbóli előrejelzése a projektvezető által** Esetenként a projektmenedzsernek vagy más személyeknek, akik a projekt előrehaladását követik nyomon, újra felül kell vizsgálniuk a feladat eredeti becsléseit. Lehet, hogy egy feladat az eredeti előrejelzéshez képest gyorsabban vagy lassabban halad előre, különféle okokból kifolyólag. Például csökkent a hatókör, vagy a dolgozók tapasztalata kevesebb, mint az eredetileg tervezett. A prognózisok a projektvezető becslései, a projekt aktuális állapota alapján. Általában nem kell módosítania a kiindulási számokat, mert a projekt kiindulási pontja jól közzétett dokumentumban, a projektütemezésben és a költségbecslésben jelenik meg, amelyhez a projektben érdekelt összes fél hozzájárult. 
 
-Két módon, hogy a projektmenedzserek módosíthatják a munka feladatok:
+A projektvezetők kétféleképpen módosíthatják a feladatra fordított munkát:
 
 -   Módosítsa a hátralevő munkát, amely automatikus frissítésre van beállítva a feladatban a tényleges fennmaradó munkával kapcsolatban.
 -   Módosítsa a százalékos előrehaladást, amely automatikus frissítésre van beállítva a feladatban a tényleges előrehaladással kapcsolatban.
@@ -222,7 +225,7 @@ A Költségkövetési nézet jeleníti meg az előre jelzett költségeltérést
 **A költség újbóli előrejelzése a projektvezető által** A Projektvezetőknek a CTC-t kell használniuk a feladat eredeti költségbecsléséhez. A projektmenedzser módosíthatja a CTC-értéket arra a költségre, amely a feladat befejezéséhez szükséges. Ha módosítja a CTC-értéket, a feladat CTC-je, az EAC, a felhasznált költség százaléka és a feladat előre jelzett költségeltérése újra lesz számítva. Az EAC, az ETC és a felhasznált költség százalékos értéke is újra lesz számítva az összefoglaló feladatoknál, és az előre jelzett költségeltérés frissül. 
 
 > [!NOTE] 
-> Amikor megváltoztat erőkifejtés erőfeszítés követés nézetben, a feladat CTC, BECSÉ, tevékenység WBS költség százaléka fogyasztott, és a tervezett költségeltérés összes újraszámít a nyomon követési nézetet költség. Azonban költség felülvizsgálata nem befolyásolja a Munkakövetési nézet értékeit, mert a tranzakció típusa (munka, anyag vagy költség) vagy a projektkategória szerinti költség nincs módosítva. 
+> Amikor felülvizsgálja a munkát egy WBS-feladatnál a Munkakövetési nézetben, a feladat CTC-je, EAC-je, a felhasznált költség százaléka és az előre jelzett költségeltérés is újra lesz számítva a Költségkövetési nézetben. Azonban költség felülvizsgálata nem befolyásolja a Munkakövetési nézet értékeit, mert a tranzakció típusa (munka, anyag vagy költség) vagy a projektkategória szerinti költség nincs módosítva. 
 
 **Összefoglaló feladatok költség-előrejelzésének felülvizsgálata** Módosíthatja az összefoglaló tevékenységek költségeit, és a számítások automatikusan a következő sorrendben jelennek meg:
 
@@ -236,24 +239,24 @@ Kattintson a **Kibontás szintig** lehetőségre a Költségkövetési nézetben
 
 ### <a name="earned-value-management"></a>Jelenérték-kezelés
 
-A létrehozottérték-módszer (EVM) segítségével nyomon követheti a projekt előrehaladását. Megtekintheti a jelenérték mérőszámait a projektvezető Szerepkör főoldalán. A létrehozott érték diagram-összetevő megmutatja a tervezett érték és a tényleges költség időbeli értékeit. Az aktuális dátum szerinti jelenérték pontként jelenik meg. A jelenérték időbeli adatai most nem érhetők el. 
+A jelenérték mód (EVM) segítségével nyomon követheti a projekt előrehaladását. Megtekintheti a jelenérték mérőszámait a projektvezető Szerepkör főoldalán. A létrehozott érték diagram-összetevő megmutatja a tervezett érték és a tényleges költség időbeli értékeit. Az aktuális dátum szerinti jelenérték pontként jelenik meg. A jelenérték időbeli adatai most nem érhetők el. 
 
 A jelenérték-diagramon az időfázis hetek vagy hónapok szerint jelenik meg. Ez a szakasz az EVM három pillérét mutatja be: tervezett érték, létrehozott érték és a tényleges költség. 
 
 **Tervezett érték** Az EVM-elmélet kimondja, hogy az tervezett értéktáblázat jelzi, hogy a projektcsapat milyen tempóban tervezte az értéklétrehozást a projekten belül. 
 
-Microsoft Dynamics 365 műveletekhez használja a 0:100 szabály megszerzéséhez, amikor azt rajzolja fel a tervezett érték. A szabály alapján a feladat értékét a feladat záró dátuma szerint kell beírni a feladathoz. Addig nincs megadva érték, amíg a feladat 100%-ig el nem készül. 
+A Microsoft Dynamics 365 for Operations a 0:100 kereseti szabályt használja a tervezett érték megjelenítésekor. A szabály alapján a feladat értékét a feladat záró dátuma szerint kell beírni a feladathoz. Addig nincs megadva érték, amíg a feladat 100%-ig el nem készül. 
 
 A Projektvezetés és könyvelés részben a levélcsomópontok záró dátumát és a tervezett költséget adja meg. Ha a tervezett érték diagramja hetek szerint jelenik meg, a tervezett érték az összes levélcsomópont-feladat esetében hetek szerint lesz összesítve a projekt időtartama alatt. 
 
 **Jelenérték** Az EVM-elmélet kimondja, hogy a jelenérték-táblázat jelzi, hogy a projektcsapat ténylegesen milyen tempóban hoz létre értéket a projekten belül. 
 
-Microsoft Dynamics 365 műveletekhez használja a szabály megszerzéséhez, amikor a parcellák létrehozott érték 0:100. A szabály alapján a feladat értékét a feladat záró dátuma szerint kell beírni a feladathoz. Addig nincs megadva érték, amíg a feladat 100%-ig el nem készül. 
+A Microsoft Dynamics 365 for Operations a 0:100 kereseti szabályt használja a jelenérték megjelenítésekor. A szabály alapján a feladat értékét a feladat záró dátuma szerint kell beírni a feladathoz. Addig nincs megadva érték, amíg a feladat 100%-ig el nem készül. 
 
 Jelenérték összeg számítása során minden egyes feladat előrehaladási százaléka számít. A 0:100 kereseti szabály szerint csak egy adott időszakban végrehajtott feladatok lesznek figyelembe véve a jelenérték kiszámításakor, az adott időszak vége alapján. A projekt jelenértékét az összes, a diagram létrehozásakor befejezett feladat vonatkozásában számítja ki a rendszer. 
 
 > [!NOTE] 
-> WBS nyomon követési rendszere jelenleg nem rendelkezik adatstruktúrákat tárolja a történelmi fejlődés százalékos feladatokra. Emiatt a jelenérték csak a kocka feldolgozásának időpontjára vonatkozóan jelenthető. A kockát rendszeresen fel kell dolgozni, hogy frissüljenek a létrehozott érték adatai a Szerepkör oldalon. 
+> Jelenleg a WBS-nyomonkövetéshez használatos rendszer nem rendelkezik olyan adatstruktúrákkal, amelyekben feladatonként lehetne tárolni a az előrehaladás visszamenőleges százalékos adatait. Emiatt a jelenérték csak a kocka feldolgozásának időpontjára vonatkozóan jelenthető. A kockát rendszeresen fel kell dolgozni, hogy frissüljenek a létrehozott érték adatai a Szerepkör oldalon. 
 
 **Tényleges költség** Az EVM-elmélet kimondja, hogy a tényleges költség kijelzése mutatja, hogy milyen arányban költik el a pénzt a projektre. 
 
@@ -274,7 +277,7 @@ Esetén időtartamra töltött tényleges költsége nagyobb, mint a jelenérté
 Ha a tényleges kiadott költség egy időszakra kevesebb, mint a létrehozott érték, akkor több pénzt keresett, mint amennyit elköltött. A projekt ezért a költségvetés alatt van.
 
 ## <a name="wbs-templates"></a>WBS-sablonok
-A WBS-sablonok funkciók segítségével projektek szabványos sablonokat hozhat létre. Ha a cég által kínált projektek sok ismételhető munkával járnak, vegye figyelembe a WBS-sablon létrehozását. 
+A WBS sablonok funkció segítségével szabványos sablonokat hozhat létre a projektek számára. Ha a cég által kínált projektek sok ismételhető munkával járnak, vegye figyelembe a WBS-sablon létrehozását. 
 
 WBS-sablont létrehozhat egy meglévő projekt WBS-éből, hogy a tudás és a legjobb gyakorlatok, melyeket a tervezés során összegyűjtött, hasonló projektekben is felhasználhatók legyenek a jövőben. Azonban előfordul, hogy nincs értelme annak, hogy a teljes WBS-t elmentsük sablonként. Ezért a projekt WBS-ének részeiből is létrehozhat sablonokat.
 
@@ -313,5 +316,7 @@ Munka = Erőforrások száma × Időtartam × Órák száma egy normál munkanap
 Egyszerre kijavíthat minden ütemezési hibát, ha a **Minden ütemezési hiba kijavítása** lehetőségre kattint. 
 
 Azt is megteheti, hogy külön-külön javítja ki az ütemezési hibákat úgy, hogy az egyes feladatoknál rákattint a figyelmeztető ikonra.
+
+
 
 

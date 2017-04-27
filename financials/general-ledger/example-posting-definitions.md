@@ -1,6 +1,6 @@
 ---
 title: "Feladásdefiníciók"
-description: "Ez a cikk példákat megjelenítése feladásdefiníciók kötelezettségvállalások a beszerzési rendelés és a költségvetési előirányzatok felhasználásáról."
+description: "Ez a cikk arra tartalmaz példákat, hogyan használatosak feladásdefiníciók beszerzési rendelések terheléséhez és költségvetési előirányzatokhoz."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="posting-definition-examples"></a>Feladási példák meghatározása
+# <a name="posting-definition-examples"></a>Példák feladásdefiníciókra
 
-Ez a cikk példákat megjelenítése feladásdefiníciók kötelezettségvállalások a beszerzési rendelés és a költségvetési előirányzatok felhasználásáról.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk arra tartalmaz példákat, hogyan használatosak feladásdefiníciók beszerzési rendelések terheléséhez és költségvetési előirányzatokhoz.
 
 Mielőtt ezt a témakört elolvassa, a feladási definíciókkal és a tranzakciós feladási feladási definíciókkal tisztában kell lennie. Információ: lásd a [Feladási definíciók](posting-definitions.md) részt. Az alábbi példákat be kell állítani a **Feladási definíciók** oldalon. Mindegyik példa ezeket a szakaszokat tartalmazza:
 
@@ -39,7 +42,7 @@ Mielőtt ezt a témakört elolvassa, a feladási definíciókkal és a tranzakci
 
 Egyezés esetén a számlák és dimenzióértékek között az **Egyeztetési feltételek** ablakban a feladási definíciónál és a számláknál és dimenzióértékeknél a tranzakcióm, főkönyvi bejegyzések készülnek a **Létrehozott bejegyzések** ablak alapján a feladási definíciónál. 
 > [!NOTE]
-> Feladási definíciót társítani egy adott tranzakció típusát, használja a **Tranzakció-feladásdefiníciók** oldalon. Miután feladási definíciót kapcsolhatja a tranzakció típusát, és válassza ki **Feladásdefiníciók használata** a a **főkönyvi paraméterek** lap, minden a kijelölt tranzakció típusú tranzakciókhoz használja feladásdefiníciók.
+> Feladásdefiníciók tranzakciótípusokhoz rendeléséhez használja a **Tranzakció-feladásdefiníciók** oldalt. Miután társítja a feladásdefiníciót a tranzakciótípussal, és bejelöli a **Feladásdefiníciók használata** opciót a **Főkönyvi paraméterek** oldalon, a kijelölt tranzakciótípus minden tranzakciójának feladásdefiníciókat kell használnia.
 
 ## <a name="example-purchase-order-encumbrances"></a>Példa: beszerzési rendelések terhelései
 Amikor engedélyezi a kötelezettségvállalás feldolgozását a **Kötelezettségvállalási folyamat engedélyezése** lehetőség kiválasztásával a **Főkönyvi paraméterek** lapon, feladásdefiníciókat kell használni a kötelezettségvállalások rögzítéséhez főkönyvi számlában, bármely lefoglalandó számla esetében. A legtöbb esetben az összes költségszámla fenn van tartva a mérlegben. 
@@ -69,7 +72,7 @@ A számlák és dimenzióértékek vagy a beszerzési rendelés sorához beírt 
 
 | Számla + dimenzió           | Tartozik  | Követel | Megjegyzés |
 |--------------------------------|--------|--------|---------|
-| 606400-OU\_1-OU\_3566-képzés | 250,00 |        |         |
+| 606400-OU\_1-OU\_3566-Oktatás | 250.00 |        |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>A feladási definíció által létrehozott főkönyvi bejegyzések
 
@@ -77,10 +80,10 @@ A létrehozott főkönyvi bejegyzések a kötelezettségvállalások rögzítés
 
 | Számla + dimenzió           | Tartozik  | Követel | Megjegyzés |
 |--------------------------------|--------|--------|---------|
-| 300143-OU\_1-OU\_3566-képzés | 250,00 |        |         |
-| 300144-OU\_1-OU\_3566-képzés |        | 250,00 |         |
+| 300143-OU\_1-OU\_3566-Oktatás | 250.00 |        |         |
+| 300144-OU\_1-OU\_3566-Oktatás |        | 250.00 |         |
 
-Az alábbi példában minden számla esetében, amely része a Számlastruktúrának - a P&L (eredmény) megfelel a feladási definíció kritériumainak. Ezért, ha 606500-OU\_1-OU\_3566-képzés értékelik, a létrehozott bejegyzések jönnek létre a fiókok definiált a **generálta tételek** ablak Könyvelés meghatározását.
+Az alábbi példában minden számla esetében, amely része a Számlastruktúrának - a P&L (eredmény) megfelel a feladási definíció kritériumainak. Ezért amikor a 606500-OU\_1-OU\_3566-Oktatást vizsgálja meg a program, a létrehozott bejegyzések a **Létrehozott bejegyzések** ablakban definiált számlákhoz jönnek létre, a feladásdefiníció esetében.
 
 ## <a name="example-budget-appropriations"></a>Példa: Költségvetési előirányzatok
 Amikor engedélyezi a költségvetési előirányzatot a **Költségvetési előirányzat engedélyezése** bejelölésével a **Főkönyvi paraméterek** lapon, feladásdefiníciókat kell használni a költségvetési tételjegyzék-bejegyzések főkönyvbe történő rögzítéséhez. Amikor egy költségvetés-ellenőrzési konfiguráció aktív, és be van kapcsolva, feladásdefiníciók és tranzakció-feladásdefiníciók használhatók a bejegyzések rögzítésére az előirányzatokról, változatokról, átvitelekről, projektekről, tárgyi eszközökről és kereslet-kínálati előrejelzésekről a főkönyvbe. 
@@ -110,7 +113,7 @@ A számlákat, a dimenzióértékeket és az összegeket a költségvetési szá
 
 | Számla + dimenzió           | Tartozik | Követel | Megjegyzés |
 |--------------------------------|-------|--------|---------|
-| 606400-OU\_1-OU\_3566-képzés |       | 250,00 |         |
+| 606400-OU\_1-OU\_3566-Oktatás |       | 250.00 |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>A feladási definíció által létrehozott főkönyvi bejegyzések
 
@@ -118,10 +121,12 @@ A generált főkönyvi bejegyzések az eredeti költségvetés rögzítésére j
 
 | Számla + dimenzió           | Tartozik  | Követel | Megjegyzés |
 |--------------------------------|--------|--------|---------|
-| 300145-OU\_1-OU\_3566-képzés |        | 250,00 |         |
-| 300146-OU\_1-OU\_3566-képzés | 250,00 |        |         |
+| 300145-OU\_1-OU\_3566-Oktatás |        | 250.00 |         |
+| 300146-OU\_1-OU\_3566-Oktatás | 250.00 |        |         |
 
-Az alábbi példában minden számla esetében, amely része a Számlastruktúrának - a P&L (eredmény) megfelel a feladási definíció kritériumainak. Ezért, ha 606400-OU\_1-OU\_3566-képzés értékelik, a létrehozott könyvelési tételek jönnek létre.
+Az alábbi példában minden számla esetében, amely része a Számlastruktúrának - a P&L (eredmény) megfelel a feladási definíció kritériumainak. Ezért amikor a 606400-OU\_1-OU\_3566-Oktatást vizsgálja meg a program, létrejönnek a generált főkönyvi bejegyzések.
+
+
 
 
 

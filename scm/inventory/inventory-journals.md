@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-journals"></a>Készletnaplók
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk leírja, hogyan kell alkalmazni a készletnaplót különböző típusú fizikai készlet tranzakciók közzétételéhez. 
 
 A Microsoft Dynamics 365 for Operations rendszerben a készletnaplókkal különböző típusú készlettranzakciók adhatók fel, például kiadások és bevételek feladása, készletmozgások, anyagjegyzékek (BOM) létrehozása és a fizikai készlet egyeztetése. Ezek a készletnaplók hasonló módon használhatók, de különböző típusúak.
@@ -72,7 +75,7 @@ A termelési bemenet naplók úgy működnek, mint a cikkérkezési naplók, de 
 
 ### <a name="counting"></a>Számlálás
 
-Leltárnaplók segítségével javítsa ki az aktuális készleteket amelyek cikkekhez vagy cikkcsoportokhoz vannak regisztrálva és adja fel az aktuális fizikai mennyiséget, így elvégezheti a különbségek egyeztetetéséhez szükséges kiigazítást. Társíthat leltár irányelveket leltárcsoportokkal, így könnyebb eltérő tulajdonságú cikkeket csoportosítani, emiatt a cikkek hozzáadhatók a leltárnaplóhoz. Például beállíthat leltárcsoportokat, olyan cikkek leltárazásához, amelyek adott gyakorisággal rendelkeznek, vagy ha a készlet egy adott szintre csökken. Adatainak definiálása a számlálási csoportok, lásd [definiálása leltározási folyamat (feladat guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Leltárnaplók segítségével javítsa ki az aktuális készleteket amelyek cikkekhez vagy cikkcsoportokhoz vannak regisztrálva és adja fel az aktuális fizikai mennyiséget, így elvégezheti a különbségek egyeztetetéséhez szükséges kiigazítást. Társíthat leltár irányelveket leltárcsoportokkal, így könnyebb eltérő tulajdonságú cikkeket csoportosítani, emiatt a cikkek hozzáadhatók a leltárnaplóhoz. Például beállíthat leltárcsoportokat, olyan cikkek leltárazásához, amelyek adott gyakorisággal rendelkeznek, vagy ha a készlet egy adott szintre csökken. További információért a leltárcsoportok meghatározásával kapcsolatban, lásd [Leltárazási folyamatok meghatározása (Feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
 
 ### <a name="tag-counting"></a>Címkeleltár
 
@@ -89,5 +92,7 @@ Egy naplósorhoz egyszerre csak egy felhasználó férhet hozzá. Ha egyszerre t
 
 ## <a name="posting-journal-lines"></a>Naplósorok feladása
 Feladhat naplósorokat, amelyeket bármikor létrehozhat, amíg nem rögzített egy cikket további tranzakciókból. A naplóba beírt adatok mindig megmaradnak a naplóban, még akkor is, ha a sorok feladása nélkül zárja be a naplót.
+
+
 
 

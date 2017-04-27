@@ -1,5 +1,5 @@
 ---
-title: "Különböző költség elem dimenzió tagjai hozzárendelése egy dimenzió tagjai közös csoportja"
+title: "Különböző költségösszetevő-dimenziótagok hozzárendelése dimenziótagok közös készletéhez"
 description: "Azzal, hogy a különböző költségösszetevő-dimenziótagokat hozzárendeli a költségösszetevő-dimenziótagok egy közös csoportjához, az adatokat egy közös formátumnak megfelelően egyesíti elemzési célokra."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Különböző költség elem dimenzió tagjai hozzárendelése egy dimenzió tagjai közös csoportja
+# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Különböző költségösszetevő-dimenziótagok hozzárendelése dimenziótagok közös készletéhez
 
 Azzal, hogy a különböző költségösszetevő-dimenziótagokat hozzárendeli a költségösszetevő-dimenziótagok egy közös csoportjához, az adatokat egy közös formátumnak megfelelően egyesíti elemzési célokra.
 
@@ -38,10 +38,10 @@ A következő példa azt mutatja meg, hogy Ön költségellenőrként létrehozh
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Egyesült államokbeli számlatükrökből importált költségösszetevő-dimenziótagok | Francia számlatükrökből importált költségösszetevő-dimenziótagok | Egyesült államokbeli és francia költségösszetevő-dimenziótagok hozzárendelése egy közös csoporthoz |
 | 5001: Értékesítés                                                           | 5001: Értékesítés és reklám                                               | 5000: Értékesítés és reklám                                             |
-| 5030: Hirdetés                                                     | 6390: beszerzési törzsoldat\*                                                    | 7000: Takarítási költségek                                                 |
+| 5030: Hirdetés                                                     | 6390: Készlet beszerzése\*                                                    | 7000: Takarítási költségek                                                 |
 | 7001: Takarítási költségek                                               | 7001: Utazási költségek                                                      | 7001: Utazási költségek                                                   |
 
-\*A készlet beszerzési költség francia elem dimenzió tag nincs leképezve.
+\*A készletbeszerzési francia költségösszetevő-dimenziótag nincs megfeleltetve.
 
 ## <a name="currency-conversion"></a>Pénznemátváltás
 Az Ön által használt különböző számlatükröket be lehet állítani eltérő pénznemek használatához. Ebben az esetben mindenképpen adja meg a pénznemátváltást úgy, hogy költségadatok feldolgozása a megfelelő pénznem használatával történjen, a költségkönyvelés főkönyvvében meghatározott módon, ahol a költségösszetevő-dimenziótagokat használják. Az előző példában, ha amerikai dollárt (USD) használnak a költségkönyvelés főkönyvében, létre kell hoznia egy pénznemátváltást USD-ről euróra (EUR) a hozzárendelt költségösszetevő-dimenziótagra vonatkozó tranzakciók feldolgozásához.

@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reverse-a-vendor-payment"></a>Borderó kifizetés sztornózása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk egy kifizetés sztornírozását, törlését, érvénytelenítését és visszautasítását mutatja be. Elmagyarázza továbbá szállítói számlák sztornírozásának két módját. 
 
-Bizonyos esetekben szállítói kifizetés feladása után a kifizetés sztornírozni kell. Sztornírozás eltér a törlése, érvénytelenítése vagy a kifizetés elutasítása. A kifizetés csak akkor, ha az állapota törölheti **Készült**. Azt jelzi, hogy a kifizetés létrejött, de még nem lett létrehozva. Mindig ez a korlátozás vonatkozik, függetlenül a fizetési mód. Fel nem adott csekkek érvénytelenítése alkalmával is azok elkészülte után, de a könyvelés előtt. Ha a létrehozott fizetési történik, mint az alap elektronikus átutalás (EFT), akkor elutasíthatja a fizetés feladása előtt. Elutasítja a fizetés, módosítsa a **fizetési állapot** érték. Érvénytelenített vagy elutasított kifizetés után helyreállíthatja a **fizetési állapot** értéke módosult vissza a **nincs**. 
+Bizonyos esetekben szállítói kifizetés feladása után a kifizetés sztornírozni kell. Sztornírozás eltér a törlése, érvénytelenítése vagy a kifizetés elutasítása. A kifizetés csak akkor, ha az állapota törölheti **Készült**. Azt jelzi, hogy a kifizetés létrejött, de még még nem lett létrehozva. Mindig ez a korlátozás vonatkozik, függetlenül attól, a fizetési mód. Fel nem adott csekkek lehet érvényteleníteni, azok elkészülte után, de csak akkor feladni. Ha a létrehozott fizetési az alap elektronikus átutalás (EFT) szerint történik, feladás előtt visszautasítja a kifizetés. Egy kifizetés elutasításához módosítsa a **Fizetés állapota** értéket. A kifizetés érvénytelenítve vagy elutasított újra kell generálni után a **Kifizetési állapot** beállítás **Nincs** értékre módosul. 
 
-A fizetés könyvelése után szolgálnak sztornírozásához. Elektronikus úton végrehajtott kifizetések nem lehet visszavonni, azok könyvelése után. Ennyi a felelősség eléréséhez jelentkezzen be a szállító számláján a fizetési ehelyett egy új tranzakciót kell létrehozni. Könyvelt csekkek hátrameneti két módja van. Egy metódusban sztornírozásának feladása azonnal megtörténik, amikor rákattint **Kifizetés sztornírozása** meg a **Ellenőrzése** oldalon. A másik esetben ha a **Ellenőrzés** képernyőn a **Kifizetés sztornírozása** gombra kattint, a rendszer előbb elküldi a sztornírozást a Készpénz- és bankkezelési modul naplójába, ahol egy ellenőr feladhatja vagy elutasíthatja a sztornírozást. 
+A kifizetés feladása után a sztornírozások használhatók. Elektronikusan végrehajtott kifizetéseket nem lehet visszavonni azok feladása után. Ehelyett új tranzakciót kell létrehozni a kifizetés összegéről, hogy visszaállítsa a kötelezettséget a szállító számlájára. A feladott csekkek sztornírozására kétféle lehetőség van. Egy metódusban sztornírozásának feladása azonnal megtörténik, amikor rákattint **Kifizetés sztornírozása** meg a **Ellenőrzése** oldalon. A másik esetben ha a **Ellenőrzés** képernyőn a **Kifizetés sztornírozása** gombra kattint, a rendszer előbb elküldi a sztornírozást a Készpénz- és bankkezelési modul naplójába, ahol egy ellenőr feladhatja vagy elutasíthatja a sztornírozást. 
 
 Tudnivalók a szervezet által használt módszertől, megtekintheti a **Készpénz- és bankkezelési paraméterek** oldalon. Ha a **Használata ellenőrzési folyamat a kifizetések sztornírozásakor** beállítás **Igen**, sztornírozásokat ellenőrzésre sztornírozási napló ellenőrzése. A következő táblázat leírja, hogyan a csekk sztornírozása módszerek különböznek egymástól.
 
@@ -57,7 +60,7 @@ Ha Önnek felhasználóként feladatai közé tartozik a sztornírozások ellen�
 -   A sztornírozást úgy utasíthatja vissza, hogy törli a sztornírozás sorát.
 
 > [!NOTE]
-> Ha a napló törlése, a sztornírozás eltávolítják a rendszerből, de marad az eredeti csekket a **ellenőrizze a** oldalon. Ezt követően a csekk állapota nem **Visszavonásra vár** lesz.
+> A napló törlése eltávolítja a rendszerből a sztornírozást, de az eredeti csekk megmarad a **Ellenőrzés** képernyőn. Ezt követően a csekk állapota nem **Visszavonásra vár** lesz.
 
 ## <a name="results-of-posting-a-reversal"></a>Sztornírozás feladásának eredményei
 Csekksztornírozás feladásakor a következők történnek:
@@ -78,6 +81,8 @@ Ha a sztornírozott csekk vevői kifizetésre volt kiadva, a következő folyama
 
 -   Tranzakciót ad fel a rendszer a kifizetéssztornírozás vevői rekordjával szemben, sztornírozza az eredeti kifizetés és a kifizetés eredeti kiegyenlítéséhez használt dokumentum közötti kiegyenlítést (negatív kifizetés jön létre).
 -   Az eredeti kifizetésre kifizetéssztornírozást alkalmaz a rendszer. A **Szállítói tranzakciók** oldal **Utolsó kiegyenlítés bizonylata** mezőjében az eredeti szállítói kifizetés frissítése a sztornírozott tranzakció bizonylatszámának felel meg.
+
+
 
 
 

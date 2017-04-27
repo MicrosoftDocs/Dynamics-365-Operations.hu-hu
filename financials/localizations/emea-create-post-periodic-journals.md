@@ -1,5 +1,5 @@
 ---
-title: "Időszaki naplók időszakok felosztása"
+title: "Osztott időszakok időszaki naplókban"
 description: "Az időszaki naplókat olykor ismétlődő naplónak is nevezik, mivel az összeg, a szöveg és más adatok a napló feladásakor minden alkalommal megismétlődnek. Napló létrehozásakor adja meg az ismétlődéshez tartozó időszakot (pl. nap vagy hónap). Azoknak az időszakoknak a számát is adja meg, amelyek szerint a napló fel lesz adva."
 author: ShylaThompson
 manager: AnnBe
@@ -24,24 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="split-periods-in-periodic-journals"></a>Időszaki naplók időszakok felosztása
+# <a name="split-periods-in-periodic-journals"></a>Osztott időszakok időszaki naplókban
+
+[!include[banner](../includes/banner.md)]
+
 
 Az időszaki naplókat olykor ismétlődő naplónak is nevezik, mivel az összeg, a szöveg és más adatok a napló feladásakor minden alkalommal megismétlődnek. Napló létrehozásakor adja meg az ismétlődéshez tartozó időszakot (pl. nap vagy hónap). Azoknak az időszakoknak a számát is adja meg, amelyek szerint a napló fel lesz adva.
 
-Többször beolvashat és tranzakciósorok feladása, használhatja a **Időszaki naplók** oldalon. A Cseh Köztársaság, Észtország, Magyarország, Lettország, Litvánia, Lengyelország és Oroszország, jogi személyek esetében a **Időszaki naplók** oldal bővített felosztása időszakokra működéséhez. <!---For more information, see [Create and process a periodic journal](http://ax.help.dynamics.com/en/wiki/create-and-process-a-periodic-journal/).-->
+Tranzakciósorok többszöri beolvasásához és feladásához használja az **Időszaki naplók** oldalt. A Cseh Köztársaság, Észtország, Magyarország, Lettország, Litvánia, Lengyelország és Oroszország területén működő jogi személyek esetében az **Időszaki naplók** oldal az időszaki felosztás funkció révén bővítésre került. <!---For more information, see [Create and process a periodic journal](http://ax.help.dynamics.com/en/wiki/create-and-process-a-periodic-journal/).-->
 
-### <a name="example-split-for-periods-in-periodic-journals"></a>Példa: Felosztása az Időszaki naplók időszakokra
+### <a name="example-split-for-periods-in-periodic-journals"></a>Példa: Időszaki felosztás időszaki naplókban
 
-Egy biztosítótársaság kínál a szervezet prepaying a biztosítási kötvény teljes év engedményt. A kifizetést egy eszközszámlán adják fel például előre kifizetett biztosításként. A biztosítás havidíja ezután egész évben csökken egy olyan időszaki napló létrehozásával, amelyhez tartozik egy követelés az előre kifizetett biztosítási számlán, illetve egy tartozás a biztosítási költségszámlán. Ebben az esetben az osztott használható időszakok funkciót. Kattintson a **felosztása időszakokra** gombja a műveletpanel a **időszaknapló****vonalak** oldalon, és adja meg a következő mezőket.
+Egy biztosítótársaság egyéves kedvezményt ajánl a szervezetének, ha előre kifizeti a biztosítást. A kifizetést egy eszközszámlán adják fel például előre kifizetett biztosításként. A biztosítás havidíja ezután egész évben csökken egy olyan időszaki napló létrehozásával, amelyhez tartozik egy követelés az előre kifizetett biztosítási számlán, illetve egy tartozás a biztosítási költségszámlán. Ebben az esetben használhatja az időszaki felosztás funkciót. Kattintson az **Időszaki felosztás** gombra a műveletpanelen a **Időszaki** **naplósorok** oldalon, és adja meg a következő mezőket.
 
 |                       |                                                                                                                                                                                                             |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Field**             | **Description**                                                                                                                                                                                             |
-| **Start date**        | Az első időszaknapló sorának dátumának kiválasztása.                                                                                                                                                        |
-| **Number of periods** | Az időszakok között, amely a naplósor számát adja meg. Ez az érték határozza meg, hány új tranzakció jön létre. A tranzakció összege egyenlően oszlik meg az új tranzakciók között. |
-| **Unit**              | Válassza ki a mértékegységet az időszak.                                                                                                                                                                  |
-| **Időszak-intervallum**   | Határozza meg a könyvelési időszakok közötti intervallum.                                                                                                                                                              |
+| **Mező**             | **Leírás**                                                                                                                                                                                             |
+| **Kezdő dátum**        | Válassza ki az első időszakinapló-sorhoz tartozó dátumot.                                                                                                                                                        |
+| **Időszakok száma** | Adja meg azon időszakok számát, amelyek alapján felosztja a naplósort. Ez az érték határozza meg, hány új tranzakció jön létre. A tranzakció összege egyenlően oszlik meg az új tranzakciók között. |
+| **Egység**              | Válassza ki az időszakhoz tartozó mértékegységet.                                                                                                                                                                  |
+| **Időszak intervalluma**   | Adja meg a feladási időszakok közötti időközt.                                                                                                                                                              |
 
-Negyedéves feladások készítése, például írja be a **4** a a **időszakok száma** mezőjében válassza az **hónap** a a **egység** mezőben, és írja be **3** a a **időszak** mező. A rendszer számára megadott, 3 hónapos időközönként napló sor összegének egynegyedével négy naplósorokat hoz létre. A főkönyvi napló is érhető el hasonló funkcionalitást. Főkönyvi napló sorai megtekintésekor jelölje ki a **időszaknapló**&gt;**mentés napló**.
+Például negyedéves feladások létrehozásához írja a **4**-es számot az **Időszakok száma** mezőbe, válassza a **Hónapok** értéket az **Egység** mezőben, majd írja a **3**-as számot az **Időszak intervalluma** mezőbe. A rendszer négy naplósort hoz létre, egyet-egyet a megadott naplósor-összegek egynegyedéhez, 3 hónapos időszakonként. A főkönyvi naplóban is elérhető hasonló funkcionalitás. Főkönyvi napló sorainak megtekintésekor válassza az **Időszaknapló** &gt; **Napló mentése** elemet.
+
+
 
 

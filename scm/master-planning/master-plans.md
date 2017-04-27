@@ -1,6 +1,6 @@
 ---
 title: Alaptervek
-description: "Különféle alaptervek segítségével támogatja a vállalat napi munka műveleteket, a figyelni kívánt különböző tervezési stratégiák szimulálásához és például belső teljesítmény vagy vevői elégedettség kapcsolatos politikáról, a vállalati politika végrehajtása."
+description: "A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="master-plans"></a>Alaptervek
 
-Különféle alaptervek segítségével támogatja a vállalat napi munka műveleteket, a figyelni kívánt különböző tervezési stratégiák szimulálásához és például belső teljesítmény vagy vevői elégedettség kapcsolatos politikáról, a vállalati politika végrehajtása. 
+[!include[banner](../includes/banner.md)]
+
+
+A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket. 
 
 Az alapterveket az **Alaptervek** oldalon lehet konfigurálni.
 
@@ -50,8 +53,10 @@ Beállíthatja, hogy a kezdő dinamikus terv az alaptervezés minden futtatása 
 
 [Fedezeti beállítások](coverage-settings.md)
 
-[A fő ütemezés tervezési operatív és taktikai elválasztó](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[Alaptervezés taktikai és operatív tervezésének elválasztása](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[Fő tervezési: Statikus és dinamikus alapterv vagy egy terv?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+[Alaptervezés: Statikus és dinamikus alaptervet vagy csak egy tervet használjon?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+
+
 
 

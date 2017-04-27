@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bonus-depreciation"></a>Rendkívüli értékcsökkenés
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a rendkívüli értékcsökkenési funkcióról nyújt áttekintést.
 
 Rendkívüli értékcsökkenés esetében különleges vagy rendkívüli értékcsökkenési összegeket alkalmazhat egy eszköz üzembe helyezésének és értékcsökkenésének első évében. A rendkívüli értékcsökkenést a többi értékcsökkenési számítás előtt kell végrehajtani. Ezért célszerű a rendkívüli értékcsökkenés olyan könyvekkel történő használata, ahol a Feladás a főkönyvbe funkció le van tiltva. Használhatja a **Főkönyvbe nem feladott tranzakciók törlése** lehetőséget könyveket, a nem a főkönyvbe feladott könyvek előzménytranzakcióinak törléséhez. A rendkívüli értékcsökkenést az eszköz életciklusának későbbi pontjában rendezheti úgy, hogy törli a korábban feladott értékcsökkenési tranzakciókat. 
@@ -61,5 +64,7 @@ Ha a rendkívüli értékcsökkenést a javaslati művelettel számítja ki, akk
 A létrehozható rendkívüli értékcsökkenési rekordok száma korlátlan. Miután az eszközcsoport könyvéhez társította a rekordokat, a program alkalmazza őket az eszköz könyvére. 
 
 A rendkívüli értékcsökkenést százalékként vagy százalékként vagy rögzített összegként kell megadni. Ha értékcsökkenési javaslatot ad fel, akkor a program az értékcsökkenés tranzakcióitól különálló tranzakciókként adja fel a rendkívüli értékcsökkenés tranzakcióit a könyvbe.
+
+
 
 

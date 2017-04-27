@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-receipt-against-purchase-orders"></a>Termékbevételezés beszerzési rendelések ellenében
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk ismerteti a termékek átvettként történő regisztrálására vonatkozó különböző opciókat.
 
 A termékbevételezés azon megrendelt termékek dokumentálása, melyek leszállításra kerültek, ezáltal a beszerzésirendelés-sorok készen állnak a kiszámlázásra történő feldolgozásra. Bizonyos esetekben a termékek előregisztráción esnek át, ahol a szállítótól a termékek átadása előtt további információk kerülnek dokumentálásra. Amikor a termékek megérkeznek, először **Regisztrált** megjelölést kapnak. A termékek ezután további folyamatokon eshetnek át, mint pl. a minőségellenőrzés, mielőtt véglegesen **Átvett** megjelölést kapnak.
@@ -52,19 +55,21 @@ Több rendelést és bevételezési feldolgozást is kiválaszthat együttesen, 
 
 A beszerzési rendelések értékesítési rendelésekből is létrehozhatók, ahol a **Közvetlen szállítás** opciót kiválasztották. Közvetlen kiszállítás esetén a termékek nem az Ön raktárába, hanem közvetlenül a szállítótól a fogyasztóhoz kerülnek kiszállításra. Ebben az esetben a bevételezést közvetlenül a beszerzési rendelésen rögzítik. A bevételezés végrehajtható automatikusan, pl. a szállítóval folytatott elektronikus adatcserével (EDI - Electronic Data Interchange). Amennyiben a beszerzési rendelés vállalatok közötti beszerzési rendelés, a Microsoft Dynamics 365 for Operations rendszer használatával a kiszállításkor választhatja bevételezés automatizálását a vállalatok közötti értékesítési rendelésen. A termékek közvetlen kiszállítás esetén is készletként kerülnek elszámolásra, annak ellenére, hogy fizikailag nem voltak a raktárban. Ezért, amikor a termékbevételezés rögzítésre kerül a beszerzési rendelésen, az értékesítési rendelés automatikusan egy szállítólevéllel frissül, így a készlet változásainak végösszege 0 (nulla). Közvetlen kiszállítás esetén nem szükséges az előregisztráció. Amennyiben raktárkezelésre alkalmas raktárakat használ, a rendszámtábla-regisztráció helyett virtuális raktárat is megadhat. Ezt a raktárat a **Közvetlen kiszállítási raktár** mezőben megadhatja a terméken. 
 
-Után a szállítólevél feldolgozása megtörtént a beszerzési rendelés, beszerzési rendelés állapota értéke **érkezett** annak jelzésére, hogy a számla a rendeléshez kell feldolgozni. A már átvett termékekre vonatkozó részleteket megtekintheti a **Termékbevételezési naplók** oldalon.  
+Miután a termékbevételezés megtörtént a beszerzési rendelésen, a beszerzési rendelés állapota **Átvett** lesz, így jelölve, hogy a rendeléshez tartozó számla feldolgozható. A már átvett termékekre vonatkozó részleteket megtekintheti a **Termékbevételezési naplók** oldalon.  
 
 Ezt az oldalt a **Bevételezés** műveletcsoportból, a **Beszerzési** rendelés oldalon érheti el. Ezek az információk a naplókban tartalmazzák a mennyiségekre, dátumokra, és dimenziókra vonatkozó adatokat.
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Beszerzési rendelések áttekintése](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Beszerzési rendelés létrehozása](purchase-order-creation.md)
 
 [Beszerzési rendelés jóváhagyása és visszaigazolása](purchase-order-approval-confirmation.md)
 
 [Szállítói számlák áttekintése](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

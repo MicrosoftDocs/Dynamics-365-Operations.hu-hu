@@ -1,5 +1,5 @@
 ---
-title: "A munkafolyamat egy automatizált feladat konfigurálása"
+title: "Automatikus feladat konfigurálása munkafolyamatban"
 description: "Ez a témakör bemutatja, hogyan kell konfigurálni az automatizált feladat tulajdonságait."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>A munkafolyamat egy automatizált feladat konfigurálása
+# <a name="configure-an-automated-task-in-a-workflow"></a>Automatikus feladat konfigurálása munkafolyamatban
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör bemutatja, hogyan kell konfigurálni az automatizált feladat tulajdonságait.
 
@@ -92,16 +95,18 @@ A következő lépések segítségével elnevezheti az automatizált feladatot.
     </tr>
     <tr class="odd">
     <td>Felhasználó</td>
-    <td>Bizonyos Microsoft Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Microsoft Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
 8.  Ismételje meg a 3 – 7. lépést a 2. lépésben kiválasztott összes eseményhez.
+
+
 
 
 

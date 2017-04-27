@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Az alapértelmezett ellenszámlák a következő szállítói számla naplóoldalakon használatosak:
@@ -92,6 +95,8 @@ Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az
 </tr>
 </tbody>
 </table>
+
+
 
 
 

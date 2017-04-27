@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentés
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást.
 
 <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentése
@@ -64,11 +67,11 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 <tbody>
 <tr class="odd">
 <td>Jogi személy<strong>beállítása</strong> .</td>
-<td>A jogi személy elsődleges címének egy EU tagállamban kell lennie. A a <strong>jogi személyek</strong> lap (kattintson a <strong>szervezet felügyelete</strong>&gt;<strong>szervezetek</strong>&gt;<strong>jogi személyek</strong>), a jogi személy kijelölése. A <strong>Címek</strong> gyorslapon hozzon létre egy címet, válassza ki az országot/régiót, valamint a cím további részeit és jelölje meg, mint <strong>Elsődleges</strong>cím. Az <strong>Adó regisztráció</strong> gyorslapon, az <strong>Adószám</strong> mezőben adja meg a vállalat adószámát.</td>
+<td>A jogi személy elsődleges címének egy EU tagállamban kell lennie. A <strong>Jogi személyek</strong> lapon (az eléréshez kattintson a <strong>Szervezet felügyelete</strong> &gt; <strong>Szervezetek</strong> &gt; <strong>Jogi személyek</strong> elemre) válassza ki a jogi személyt. A <strong>Címek</strong> gyorslapon hozzon létre egy címet, válassza ki az országot/régiót, valamint a cím további részeit és jelölje meg, mint <strong>Elsődleges</strong>cím. Az <strong>Adó regisztráció</strong> gyorslapon, az <strong>Adószám</strong> mezőben adja meg a vállalat adószámát.</td>
 </tr>
 <tr class="even">
 <td><strong>Beállítás:</strong> Adómentesség azonosítási paraméterei</td>
-<td>Adó alól azonosítási paraméterek beállítása a <strong>ország paraméterek</strong> lap (kattintson a <strong>adó</strong>&gt;<strong>a telepítő</strong>&gt;<strong>áfa</strong>&gt;<strong>ország paraméterek</strong>). Minden külön országban/régióban tartózkodó ügyfélhez hozzon létre egy rekordot az oldalon, és adja meg a következő információkkal:
+<td>Állítsa be az adómentesség azonosítási paramétereit az <strong>Országos/területi paraméterek</strong> lapon (kattintson az <strong>Adó</strong> &gt; <strong>Beállítások</strong> &gt; <strong>Áfa</strong> &gt; <strong>Országos/területi paraméterek</strong> elemre). Minden külön országban/régióban tartózkodó ügyfélhez hozzon létre egy rekordot az oldalon, és adja meg a következő információkkal:
 <ul>
 <li><strong>Ország/régió</strong> – Válasszon ki egy országot/területet egy adómentességi azonosítóval.</li>
 <li><strong>Forgalmi adó</strong> – Adja meg a kiválasztott ország/régió adómentességi azonosító számát (az adómentességi szám előtagja).</li>
@@ -77,7 +80,7 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 </tr>
 <tr class="odd">
 <td><strong>Beállítás: </strong>Adómentességi számok</td>
-<td>Adószámok létrehozása az ügyfelek esetében a a <strong>adómentességi számok</strong> lap (kattintson a <strong>adó</strong>&gt;<strong>a telepítő</strong>&gt;<strong>áfa</strong>&gt;<strong>adómentességi számok</strong>). Minden egyes adómentességi számhoz hozzon létre egy rekordot az oldalon, és adja meg a következő adatokat:
+<td>Hozzon létre adómentességi számokat az ügyfeleinek az <strong>Adómentességi számok</strong> lapon (kattintson az <strong>Adó</strong> &gt; <strong>Beállítás</strong> &gt; <strong>Áfa</strong> &gt; <strong>Adómentességi számok</strong> elemre). Minden egyes adómentességi számhoz hozzon létre egy rekordot az oldalon, és adja meg a következő adatokat:
 <ul>
 <li><strong>Ország/régió </strong>– Válassza ki az ügyfél adónyilvántartásának országát/régióját.</li>
 <li><strong>Adómentességi szám</strong> – Adja meg az ügyfél adómentességi számát.</li>
@@ -86,11 +89,11 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 </tr>
 <tr class="even">
 <td><strong>Beállítás: </strong>Az ügyfelek adónyilvántartása</td>
-<td>Adó regisztrációs adatok megadása az ügyfelek vagy a a <strong>vevőket</strong> lap (kattintson a <strong>értékesítési és marketing</strong>&gt;<strong>vevők</strong>&gt;<strong>vevőket</strong>, jelölje be az ügyfél bejegyzését, és kattintson <strong>beállítások</strong>&gt;<strong>nézet módosítása</strong>&gt;<strong>Részletek nézetben láthatók</strong>) vagy a <strong>szállítók</strong> lap (kattintson a <strong>beszerzés és forrás</strong>&gt;<strong>szállítók</strong>&gt;<strong>szállítók</strong>, és válasszon ki egy szállítói rekordot, majd kattintson az <strong>beállítások</strong>&gt;<strong>nézet módosítása</strong>&gt;<strong>Részletek nézetben láthatók</strong>). A <strong>Számlázás és szállítás</strong> gyorslapon, az <strong>Adómentességi szám</strong> mezőben válassza ki az adószámot.</td>
+<td>Az ügyfelek adónyilvántartási adatainak beállításához nyissa meg az <strong>Összes vevő</strong> oldalt (kattintson az <strong>Értékesítés és marketing</strong> &gt; <strong>Vevők</strong> &gt; <strong>Összes vevő</strong> elemre, majd válasszon ki egy vevőrekordot, és kattintson a <strong>Beállítások</strong> &gt; <strong>Nézetváltás</strong> &gt; <strong>Részletek nézet</strong> elemre), vagy nyissa meg a <strong>Szállítók</strong> oldalt (kattintson a <strong>Beszerzések és források</strong> &gt; <strong>Szállítók</strong> &gt; <strong>Szállítók</strong> fülre, majd válasszon ki egy szállítói rekordot, és kattintson a <strong>Beállítások</strong> &gt; <strong>Nézetváltás</strong> &gt; <strong>Részletek nézet</strong> fülre). A <strong>Számlázás és szállítás</strong> gyorslapon, az <strong>Adómentességi szám</strong> mezőben válassza ki az adószámot.</td>
 </tr>
 <tr class="odd">
 <td><strong>Beállítás: </strong>Forgalmi adó beállítása</td>
-<td>Az Áfakódok beállítása a a <strong>az EU értékesítési lista</strong> jelentést a <strong>Áfakódok</strong> lap (kattintson a <strong>adó</strong>&gt;<strong>közvetett adók</strong>&gt;<strong>áfa</strong>&gt;<strong>Áfakódok</strong>). A <strong>Jelentés beállítása</strong> gyorslapon, minden áfa kódnál, aminek szerepelnie kell a jelentésben, törölje a jelet a <strong>Kizárt </strong>jelölőnégyzetből. A cikkek forgalmiadó-paraméterek beállítása a <strong>cikk-áfacsoportok</strong> lap (kattintson a <strong>adó</strong>&gt;<strong>közvetett adók</strong>&gt;<strong>forgalmi adó</strong>&gt;<strong>cikk-áfacsoportok</strong>). Minden cikkáfacsoporthoz adjon meg egy értéket a <strong>Jelentéstípus</strong> mezőben. A megadott érték határozza meg az ESL összeg oszlopot, amiben szerepel a sor összege.
+<td>Áfakódok beállítása, hogy megjelenjenek az <strong>EU értékesítési lista</strong> jelentésben, az <strong>Áfakódok</strong> lapon lehetséges (kattintson az <strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Áfa-kódok</strong> fülre). A <strong>Jelentés beállítása</strong> gyorslapon, minden áfa kódnál, aminek szerepelnie kell a jelentésben, törölje a jelet a <strong>Kizárt </strong>jelölőnégyzetből. Állítsa be a cikkek forgalmiadó-paramétereit a <strong>Cikkáfacsoportok</strong> lapon (kattintson az <strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Cikkáfacsoportok</strong> fülre). Minden cikkáfacsoporthoz adjon meg egy értéket a <strong>Jelentéstípus</strong> mezőben. A megadott érték határozza meg az ESL összeg oszlopot, amiben szerepel a sor összege.
 <ul>
 <li><strong>Üres</strong> – A sor, aminek értékét a <strong>Nem hozzárendelt érték</strong> oszlop tartalmazza.</li>
 <li><strong>Cikk</strong> – A sor, aminek értékét a <strong>Cikkek értéke</strong> oszlop tartalmazza.</li>
@@ -104,7 +107,7 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 </tr>
 <tr class="odd">
 <td><strong>Beállítás: </strong>Általános paraméterek beállítása</td>
-<td>ESL a jelentési paraméterek beállítása a <strong>Külkereskedelmi paraméterek</strong> lap (kattintson a <strong>adó</strong>&gt;<strong>a telepítő</strong>&gt;<strong>külkereskedelmi</strong>&gt;<strong>Külkereskedelmi paraméterek</strong>). Adja meg az alábbi paramétereket:
+<td>Az ESL jelentés paramétereinek beállításához nyissa meg a <strong>Külkereskedelmi paraméterek</strong> lapot (kattintson az <strong>Adó</strong> &gt; <strong>Beállítás</strong> &gt; <strong>Külkereskedelem</strong> &gt; <strong>Külkereskedelmi paraméterek</strong> fülre). Adja meg az alábbi paramétereket:
 <ul>
 <li><strong>EU értékesítési lista</strong> lap:
 <ul>
@@ -147,7 +150,7 @@ A következő típusú tranzakciók Közösségen belüli kereskedelmi tranzakci
 -   Projektszámlák
 -   Szállítói számlák
 
-Egy tranzakció Közösségen belüli kereskedelmi tranzakciónak minősül, ha a tranzakció szállítási címe egy EU-tagállamon belül van. Létre kell hozni egy rekordot az ilyen országokhoz és régiókhoz az **Országok/régiók paraméterei** lapján a **Külkereskedelmi paraméterek** oldalnak, és az **Ország/régió típusa** értékhez az **EU**értéket kell megadni. A Közösségen belüli kereskedelmi tranzakciók meg vannak jelölve a **Listakód** mezőben. Ezzel a mezővel elkülöníthetőek az általános Közösségen belüli kereskedelmi tranzakciók a Háromszögügylet tranzakcióktól. Gyűjtheti a Közösségen belüli kereskedelmi tranzakciókkal kapcsolatos információkat a **EU értékesítési lista** lap (kattintson a **adó**&gt;**nyilatkozatok**&gt;**külkereskedelmi**&gt;**EU értékesítési lista**) segítségével a **át** függvény. Ennek a funkciónak segítségével olyan tranzakciókról is kaphat információkat, amelyek különböző jelentéstípusokkal bírnak (pl. cikkek vagy szolgáltatások) a tranzakció sorban megadott cikkáfacsoportokat illetően. Egyéb szűrőket is alkalmazhat, hogy megadja, mely tranzakciók szerepeljenek benne. Az **Áthelyezés** funkció létrehoz egy rekordot az **EU értékesítési lista** oldalon minden Közösségen belüli kereskedelmi tranzakcióhoz, ami szerepel benne, valamint megadja egy ügyfél számlaszámát, országát/régióját, adómentességi számát, egy számlaszámot és dátumot, illetve a sorok teljes összegét jelentésenként. Át is másolja a **Listakód** értékét a tranzakcióból. Egy tranzakció listakódját manuálisan is megváltoztathatja az **EU értékesítési lista** oldalon. Az **Áthelyezés** funkció rekordokat hoz létre, ha a **Jelentéskészítési állapot** értéke **Beleszámít**. Ellenőrizheti az összegyűjtött adatokat az **EU értékesítési lista **lapon, az **Érvényesítés** funkció használatával.
+Egy tranzakció Közösségen belüli kereskedelmi tranzakciónak minősül, ha a tranzakció szállítási címe egy EU-tagállamon belül van. Létre kell hozni egy rekordot az ilyen országokhoz és régiókhoz az **Országok/régiók paraméterei** lapján a **Külkereskedelmi paraméterek** oldalnak, és az **Ország/régió típusa** értékhez az **EU**értéket kell megadni. A Közösségen belüli kereskedelmi tranzakciók meg vannak jelölve a **Listakód** mezőben. Ezzel a mezővel elkülöníthetőek az általános Közösségen belüli kereskedelmi tranzakciók a Háromszögügylet tranzakcióktól. Közösségen belüli kereskedelmi tranzakciókkal kapcsolatos információkat gyűjthet az **EU értékesítési lista** lapon (kattintson az **Adó** &gt; **Nyilatkozatok** &gt; **Külkereskedelem** &gt; **EU értékesítési lista** fülre) az **Áthelyezés** funkció segítségével. Ennek a funkciónak segítségével olyan tranzakciókról is kaphat információkat, amelyek különböző jelentéstípusokkal bírnak (pl. cikkek vagy szolgáltatások) a tranzakció sorban megadott cikkáfacsoportokat illetően. Egyéb szűrőket is alkalmazhat, hogy megadja, mely tranzakciók szerepeljenek benne. Az **Áthelyezés** funkció létrehoz egy rekordot az **EU értékesítési lista** oldalon minden Közösségen belüli kereskedelmi tranzakcióhoz, ami szerepel benne, valamint megadja egy ügyfél számlaszámát, országát/régióját, adómentességi számát, egy számlaszámot és dátumot, illetve a sorok teljes összegét jelentésenként. Át is másolja a **Listakód** értékét a tranzakcióból. Egy tranzakció listakódját manuálisan is megváltoztathatja az **EU értékesítési lista** oldalon. Az **Áthelyezés** funkció rekordokat hoz létre, ha a **Jelentéskészítési állapot** értéke **Beleszámít**. Ellenőrizheti az összegyűjtött adatokat az **EU értékesítési lista **lapon, az **Érvényesítés** funkció használatával.
 
 ### <a name="generating-the-eu-sales-list-report"></a>EU értékesítési lista jelentés létrehozása.
 
@@ -156,5 +159,7 @@ Létrehozhat egy **EU értékesítési lista** jelentés, a **Jelentés **funkci
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Az EU értékesítési lista jelentési időszakának lezárása.
 
 Amikor befejezte az adott időszakra kiterjedő jelentési folyamatot (például amikor az adóhatóságok elfogadták az **EU értékesítési lista** jelentést), az ESL rekordokat, amelyek szerepelnek a jelentésben, megjelölheti, ha a **Jelentéskészítési állapot** értékét **Lezárt**értékre módosítja. Ezen állapot beállításához használja a **Megjelölés lezártként **funkciót az **EU értékesítési lista **oldalon. Az időszak zárásának visszaállításával megjelölheti az ESL rekordokat,ha a **Jelentéskészítési állapot** értékét **Beleszámít**értékre módosítja. Ezeket a rekordokat aztán felveheti egy **EU értékesítési lista** jelentésben újra. Ezen állapot beállításához használja a **Megjelölés** **beleszámítottként **funkciót az **EU értékesítési lista** oldalon.
+
+
 
 

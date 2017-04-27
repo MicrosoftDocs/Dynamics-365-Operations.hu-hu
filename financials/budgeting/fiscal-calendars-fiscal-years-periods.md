@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Pénzügyi naptárak, pénzügyi évek és időszakok
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a pénzügyi naptárakat, a pénzügyi éveket és időszakokat, valamint azok alkalmazását tárgyalja jogi személyek, tárgyi eszközök és a költségvetés esetében.
 
 Pénzügyi naptárak keretrendszert biztosít egy szervezet pénzügyi tevékenységének. Pénzügyi naptári tartalmaz egy vagy több pénzügyi évre, és valamennyi pénzügyi évre több pontokat tartalmaz. Pénzügyi naptárak kifejezhető egy január 1-től December 31-én naptári év, vagy bármilyen határidőhöz, ha bejelöli. Például egyes szervezetek kiválasztása a pénzügyi naptár, amely egy év július 1-én kezdődik, és a következő év június 30-án ér véget. 
@@ -39,7 +42,7 @@ Létrehozhat és törölhet pénzügyi naptárakat, pénzügyi éveket és idős
 
 A záró időszakot a pénzügyi év lezárásakor létrehozott főkönyvi tranzakciók elkülönítésére használhatja. Amikor a záró tranzakciók egy pénzügyi időszakba esnek, egyszerűbb létrehozni olyan pénzügyi kimutatásokat, amelyekben belefoglalhatók vagy kizárhatók a záró bejegyzések különböző típusai. Ha a pénzügyi év 12 pénzügyi időszakra van felosztva, a záró időszak általában a 13. időszak. Azonban egy záró időszak létrehozható bármely időszakból, amelynek állapota szabad. 
 
-Amikor létrehoz egy záró időszakot válassza ki az időszakot, amelynek állapota szabad és azokkal a dátumokkal rendelkezik, amelyeket használni kíván. Az új záró időszak átveszi a meglévő időszak kezdő és záró dátumát. Az eredeti időszak is megmarad. Például jelölje ki a pénzügyi év utolsó időszaka, és az augusztus 1-augusztus 31-ig dátuma van, amely időszak 12. Akkor adja meg a nevét a záró időszakban, például a Bezárás gombra. Miután létrehozta az új záró időszakot, a rendszerben megtalálja az eredeti időszakot és a záró időszakot is. Mindkét időszak augusztus 1-jén kezdődik, és augusztus 31-én fejeződik be.
+Amikor létrehoz egy záró időszakot válassza ki az időszakot, amelynek állapota szabad és azokkal a dátumokkal rendelkezik, amelyeket használni kíván. Az új záró időszak átveszi a meglévő időszak kezdő és záró dátumát. Az eredeti időszak is megmarad. Válassza ki például a 12. időszak lehetőséget, amely a pénzügyi év utolsó időszaka, és az augusztus 1–31. dátumokat tartalmazza. A záró időszaknak megadhatja például a Zárás nevet. Miután létrehozta az új záró időszakot, a rendszerben megtalálja az eredeti időszakot és a záró időszakot is. Mindkét időszak augusztus 1-jén kezdődik, és augusztus 31-én fejeződik be.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Főkönyvekben, tárgyi eszközöknél és költségvetéseknél használt naptárak beállítása
 Pénzügyi naptárak tárgyi eszköz értékcsökkenése, a pénzügyi tranzakciók használják, és a költségvetési ciklusok. A pénzügyi naptár létrehozása esetén több célra is használhatja. Kiválaszthatja, hogy egy pénzügyi naptárat érték értékmodellt vagy értékcsökkenés könyvet a tárgyieszköz-naptár létrehozásához. Választhat, hogy a pénzügyi naptár könnyebb főkönyvi naptár a főkönyvhöz. Választhat, hogy a pénzügyi naptár könnyebb főkönyvi naptár a főkönyvhöz. Használhatja ugyanazt a pénzügyi naptárat, ezek közül.
@@ -58,6 +61,8 @@ Költségvetési ciklus időtartama, ameddig költségvetést használ. Költsé
 
 ## <a name="maintain-periods-for-your-organization"></a>A szervezet időszakok karbantartása
 Használhatja a főkönyvi naptár oldalt, hogy megtekintse a pénzügyi naptár részleteit, pénzügyi éveket és időszakokat, amelyeket a szervezete használ. Az időszakok állapotának módosítása, és válassza ki, mely felhasználók adhatnak fel tranzakciókat könyvelési időszakok is. Ez például egy új időszak kezdetén hasznos, ha azt szeretné, hogy csak egy adott felhasználócsoport végezzen feladásokat a régi időszakban, miközben a többi csoport csak az új időszakon dolgozik.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Útvonalak és a műveletek"
-description: "Ez a témakör információt az útvonalak és a műveletek. Útvonal határozza meg a folyamat, a termék vagy a termék változat készítésére. A gyártási folyamat és a megadott sorrendben az alábbi lépéseket kell végrehajtani minden egyes lépés (művelet) írja le. Minden egyes lépés az útvonal is meghatározza a szükséges műveletek erőforrásokat, a szükséges beállítási és futási idő, és hogyan kell kiszámolni a költséget."
+title: "Útvonalak és műveletek"
+description: "Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban. Az útvonal határozza meg egy termék vagy termékváltozat előállításának folyamatát. Leírja az termelési folyamat minden egyes lépését (műveletét), valamint meghatározza a lépések végrehajtásának sorrendjét is. Az útvonal minden egyes lépés esetében meghatározza a szükséges üzemi erőforrásokat, beállítási időt és futtatási időt, továbbá azt, hogy miként kell számítani a költséget."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,149 +26,152 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="routes-and-operations"></a>Útvonalak és a műveletek
+# <a name="routes-and-operations"></a>Útvonalak és műveletek
 
-Ez a témakör információt az útvonalak és a műveletek. Útvonal határozza meg a folyamat, a termék vagy a termék változat készítésére. A gyártási folyamat és a megadott sorrendben az alábbi lépéseket kell végrehajtani minden egyes lépés (művelet) írja le. Minden egyes lépés az útvonal is meghatározza a szükséges műveletek erőforrásokat, a szükséges beállítási és futási idő, és hogyan kell kiszámolni a költséget.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban. Az útvonal határozza meg egy termék vagy termékváltozat előállításának folyamatát. Leírja az termelési folyamat minden egyes lépését (műveletét), valamint meghatározza a lépések végrehajtásának sorrendjét is. Az útvonal minden egyes lépés esetében meghatározza a szükséges üzemi erőforrásokat, beállítási időt és futtatási időt, továbbá azt, hogy miként kell számítani a költséget.
 
 <a name="overview"></a>Áttekintés
 --------
 
-Útvonal írja le, amely egy termék vagy változat termék előállításához szükséges műveletek sorrendje. Minden művelet az útvonal is van szükség, az idő beállítása, és hogyan kell kiszámolni a költséget, és a művelet végrehajtásához szükséges műveletek erőforrások határozza meg. Az ugyanazon útvonal segítségével több termék előállításához, vagy minden egyes termék vagy termékváltozat egyedi útvonalat definiálhat. Még akkor is több útvonal ugyanarra a termékre. Ebben az esetben az útvonal használt függ tényezők, mint például a mennyiség, amelyet be kell mutatni. A Microsoft Dynamics 365 műveletek útvonal meghatározása négy különböző elemeinek leíró, együtt, a gyártási folyamat áll:
+Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Microsoft Dynamics 365 for Operations szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
 
--   **Útvonal** – egy útvonalat a gyártási folyamat szerkezete határozza meg. Más szóval azt határozza meg a műveleteket.
--   **A művelet** – műveletet azonosítja egy elnevezett lépés egy útvonal, például a **szerelvény**. Azonos művelet több útvonal is előfordulhatnak, és lehet különböző műveleti számok.
--   **Kapcsolat** – műveleti kapcsolat határozza meg, például a beállítási idő, Üzemidő, költségkategóriák, fogyasztási paraméterek és erőforrásigények művelet működési tulajdonságait. A kapcsolat lehetővé teszi, hogy a művelet típusától függ, az útvonalat, amely a művelet szerepel, vagy éppen előállított termékek működési jellemzői.
--   **Útvonalverzió** – egy útvonalverziót, amely egy termék vagy változat termék előállításához használt útvonalat határozza meg. Útvonalverziók engedélyezze ismételten termékek vagy idővel megváltozott útvonalakat. Is lehetővé teszik a különböző útvonalakon kell felhasználni az ugyanarra a termékre. Ebben az esetben az útvonal használt tényezők, mint például a helyet vagy a gyártandó mennyiség függ.
+-   **Útvonal** – Az útvonal határozza meg az előállítási folyamat szerkezetét. Más szavakkal a műveletek sorrendjét határozza meg.
+-   **Művelet** – A művelet egy névvel ellátott lépést jelent az útvonalban, mint például **Összeszerelés**. Azonos művelet több útvonalnál is előfordulhat, így a műveleti számok eltérőek lehetnek.
+-   **Művelet kapcsolata** – Egy művelet kapcsolata a művelet tulajdonságait határozza meg, így például a beállítási és futási időket, a költségkategóriákat, a fogyasztási paramétereket, valamint az erőforrás-szükségletet. A művelet kapcsolata lehetővé teszi a művelet tulajdonságai számára a változtathatóságot, azon útvonaltól függően, amelyet a művelet használ, illetve az előállított termékektől függően.
+-   **Útvonalverzió** – Az útvonalverzió határozza meg a termék vagy termékváltozat előállításánál használt útvonalat. Az útvonalverziók lehetővé teszik az útvonalak újrahasznosítását a különböző termékekben, és időről időre módosíthatók. Azt is lehetővé teszik, hogy ugyanannál a terméknél más és más útvonalakat használjanak. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például a hely vagy az előállítandó mennyiség.
 
 ## <a name="routes"></a>Útvonalak
-Egy útvonal egy termék vagy változat termék előállításához használt műveletek sorrendjét ismerteti. Minden egyes művelet a jogutód művelet műveletszámot van rendelve. Műveletek sorrendje is képviselteti magát, amelynek egy vagy több kiindulási pontokat és záró egypontos irányított diagram útvonal hálózat alkotja. Műveletek 365 Dynamics, a szerkezet típusa alapján különböztethetők meg útvonalak. Az útvonalak kétféle egyszerű útvonalak és útvonal hálózatok. A termelési paraméterek megadhatja, hogy csak egyszerű útvonalak is használhatók, vagy hogy az összetettebb útvonalhálózatokkal használható.
+Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításánál használatosak. Minden egyes művelethez műveletszámot és következő műveletet rendel a rendszer. A műveletek sorrendje olyan útvonalhálózatot alkot, amely olyan irányított diagramon jeleníthető meg, amelyik egy vagy több kezdőponttal és egy végponttal rendelkezik. A Dynamics 365 for Operations programban az útvonalak a szerkezettípus alapján különülnek el. A két útvonaltípus az egyszerű útvonal és az útvonalhálózat. A Gyártásvezérlés paramétereinél megadhatja, hogy csak egyszerű útvonalakat lehet használni vagy összetettebb útvonalhálózatokat is.
 
 ### <a name="simple-routes"></a>Egyszerű útvonalak
 
-Egy egyszerű útvonal szekvenciális, és az útvonal csak egy kiindulási pont.  
+Az egyszerű útvonalak szekvenciálisak, és az útvonal csak egy kezdőponttal rendelkezik.  
 
 [![Egyszerű útvonal](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Ha engedélyezi a termelési paraméterek csak egyszerű útvonalak, Dynamics 365 műveletek automatikusan létrehozza a műveletszámok (10, 20, 30 és így tovább) amikor az útvonal határozza meg.
+Ha csak az egyszerű útvonalakat engedélyezi a Gyártásvezérlési paramétereknél, akkor a Dynamics 365 for Operations automatikusan generálja a műveletszámokat (10, 20, 30 és így tovább) az útvonal meghatározásakor.
 
-### <a name="route-networks"></a>Útvonal-hálózatok
+### <a name="route-networks"></a>Útvonalhálózatok
 
-Ha engedélyezi a termelési paraméterek a bonyolultabb útvonal hálózatok, útvonalak, amelyek több kiindulási pontokat és párhuzamosan futó műveletek határozhatja meg.  
+Ha engedélyezi az összetettebb útvonalhálózatokat a Gyártásvezérlési paramétereknél, akkor olyan útvonalakat is megadhat, amelyek több kezdőponttal rendelkeznek, illetve olyan műveleteket is, amelyek párhuzamosan futhatnak.  
 
-[![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Útvonalhálózat](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 **Megjegyzések:**
 
--   Minden egyes művelet lehet csak egy követő műveletet, és egyetlen művelettel az egész útvonalat kell végződnie.
--   Nem biztos, hogy azonos követő művelet (például műveletek 30 és 40 az előző ábrán) rendelkező több műveletet ténylegesen futnak párhuzamosan van. A rendelkezésre állás és az erőforrások kapacitásának korlátai a módját, hogy a műveletek ütemezése helyezhet.
--   A műveleti szám 0 (nulla) nem használható. Ez a szám foglalt, segítségével megadhatja, hogy az útvonal utolsó művelete nem követő művelet van.
+-   Minden egyes művelethez csak egy következő művelet tartozhat, és a teljes útvonalnak egyetlen művelettel kell befejeződnie.
+-   Nincs garancia arra, hogy több olyan művelet, amelynek azonos a következő művelete (az előző példában a 30-as és 40-es művelet), ténylegesen párhuzamosan fog futni. Az erőforrások rendelkezésre állása és kapacitása korlátokat szabhat a műveletek ütemezésére vonatkozóan.
+-   Műveleti számként a 0 (zéró) nem használható. Ez a szám foglalt, és segítségével megadhatja, hogy az útvonal utolsó művelete nem rendelkezik következő művelettel.
 
 ### <a name="parallel-operations"></a>Párhuzamos műveletek
 
-Néha több, különböző tulajdonságokkal rendelkező műveletek erőforrások kombinációját egy művelet végrehajtásához szükséges. Az összeszerelési művelet például szükség lehet egy gép, eszköz és minden két gép egy munkavállaló felügyelik a működését. Ebben a példában a párhuzamos műveletek, ahol egy művelet az elsődleges művelet minősítenek, és a többi másodlagos lehet modellezni.  
+Néha több, különböző tulajdonságokkal rendelkező üzemi erőforrás kombinációja szükséges egy művelet elvégzéséhez. Egy összeszerelési művelethez például szükség lehet egy gépre, egy szerszámra, továbbá minden két géphez egy dolgozóra, aki felügyeli a működését. Ez a példa párhuzamos műveletek segítségével modellezhető, ahol egy művelet ki van jelölve elsődleges műveletként, a többi pedig másodlagosként.  
 
 [![Elsődleges és másodlagos műveleteket tartalmazó útvonal](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
-Az elsődleges műveletnek általában jelzi a szűk keresztmetszetű erőforrás, és szabja meg a másodlagos műveletek esetében az üzemidő. Azonban az ütemezés során, amely magában foglalja a véges kapacitás, erőforrások ütemezése az elsődleges művelet, mind a másodlagos műveletek érhetők el és szabad kapacitással rendelkezik egy időben kell.  
+Az elsődleges művelet általában a szűk keresztmetszetű erőforrást jelöli ki, és megszabja a másodlagos műveletek futtatási idejét. Azonban az olyan ütemezés során, amely véges kapacitást foglal magába, a mind az elsődleges műveletre, mind a másodlagos műveletekre ütemezett erőforrásoknak egyidejűleg elérhetőnek kell lenniük, illetve szabad kapacitással kell rendelkezniük.  
 
-Az elsődleges műveletnek, mind a másodlagos műveletek (az előző ábrán 30) azonos műveletszámmal kell rendelkeznie.  
+Az elsődleges műveletnek és a másodlagos műveletnek azonos műveletszámmal kell rendelkeznie (az előző ábrán ez a szám 30).  
 
-Az előző példában az elsődleges művelethez (30) az erőforrás követelmény a gép, mivel a másodlagos műveletek (30' és 30'') erőforrás-szükségleteit az eszköz és a munkavállaló. Ötven százalékos terhelés segít garantálni, hogy az ütemezett munkavégző két gép ellenőrizhető egy időben.
+Az előző példában az elsődleges művelet erőforrás-szükséglete (30) a gép, míg a másodlagos műveletek erőforrás-szükségletei (30' és 30'') a szerszám és a dolgozó. Az ötven százalékos terhelés segítségével garantálható, hogy az ütemezett dolgozó egy időben két gépet is felügyelni tud.
 
 ### <a name="approval-of-routes"></a>Útvonalak jóváhagyása
 
-Útvonal jóvá kell hagyni, mielőtt fel lehetne használni a tervezési vagy gyártási folyamatban. Jóváhagyási azt jelzi, hogy az útvonal-tervezési befejeződött. Ugyanaz, amely a termék vagy a kiadott termékváltozat jóváhagyott több útvonal is. Egy útvonal jóváhagyása általában akkor jelentkezik, ha az első megfelelő útvonal-verzió jóvá van hagyva. Azonban az egyes üzleti forgatókönyvek, az útvonal és az útvonalverzió jóváhagyását is külön tevékenységeket foglalhat magában, más folyamat tulajdonosok.  
+Ahhoz, hogy egy útvonal használható legyen a tervezési vagy termelési folyamatban, jóvá kell hagyni azt. A jóváhagyás azt jelzi, hogy az útvonaltervezés befejeződött. Egy kiadott termék vagy kiadott termékváltozat több jóváhagyott útvonallal is rendelkezhet. Jellemzően az útvonal jóváhagyása akkor történik, amikor az első a tárgyhoz tartozó útvonalverzió jóváhagyásra kerül. Egyes üzleti forgatókönyvek esetén azonban az útvonal és az útvonalverzió jóváhagyása különálló tevékenységek, melyekhez különböző folyamattulajdonosok tartozhatnak.  
 
-Minden egyes útvonal jóváhagyott vagy nem jóváhagyott külön-külön is lehet. Azonban ne feledje, hogy, ha az útvonal jóvá nem hagyott, kapcsolódó Útvonalverziók is jóvá nem hagyott. A termelési paraméterek megadhatja, hogy az útvonalak lehetnek jóvá nem hagyott, és e jóváhagyott útvonalak módosítható.  
+Minden útvonal külön jóváhagyott vagy jóvá nem hagyott lehet. Vegye figyelembe azonban, hogy jóvá nem hagyott útvonalak esetén az összes kapcsolódó útvonalverzió szintén jóvá nem hagyott. A Gyártásvezérlési paramétereknél megadhatja, hogy megszüntethető-e az útvonalak jóváhagyása, illetve, hogy a jóváhagyott útvonalak módosíthatók-e.  
 
-A napló a rekordokat minden egyes útvonal jóváhagyó kell tartani, ha az elektronikus aláírások előírhatja a útvonal jóváhagyásra. Felhasználók kell majd személyazonosságuk segítségével egy [az elektronikus aláírás](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalat ki hagyta jóvá, akkor elektronikus aláírásokat kell használni az útvonalak jóváhagyásakor. A felhasználóknak ezt követően meg kell erősíteniük személyazonosságukat egy [elektronikus aláírás](/dynamics365/operations/organization-administration/electronic-signature-overview) segítségével.
 
 ## <a name="operations"></a>Műveletek
-Egy művelet a termelési folyamat lépése. Műveletek 365 Dynamics minden egyes művelet Azonosítóját és a egyszerű rendelkezik. Az alábbi táblázatok a gép üzemi műveletei Tipikus példája mutatja.
+A művelet a termelési folyamat egy lépése. A Dynamics 365 for Operations programban minden egyes művelethez tartozik egy azonosító és egy egyszerű leírás. A következő táblázatok egy műhely jellemző műveleteit mutatják be.
 
 | Művelet  | Leírás        |
 |------------|--------------------|
-| PipeCut    | Cső daraboló       |
-| TIGweld    | AVI-hegesztőgép        |
-| JigAssy    | Koordináta szerelvény       |
-| Vizsgálat | Minőség-ellenőrzés |
+| PipeCut    | Csővágás       |
+| TIGweld    | TIG-hegesztés        |
+| JigAssy    | Jig-szerelvény       |
+| Vizsgálat | Minőségvizsgálat |
 
-A művelet a beállítási idő és a futási idő, erőforrás-igényű, költségadatok és felhasználás számítása, például működési tulajdonságok a kapcsolat lehet megadni. (További információt a műveleti kapcsolatok, lásd a következő szakaszt.)
+A művelet tulajdonságai a művelet olyan tulajdonságait határozzák meg, mint például a beállítási és futási időket, az erőforrás-szükségletet, a költségadatokat, valamint a fogyasztási számításokat. (További információkért a műveleti kapcsolatokkal kapcsolatban tekintse meg a következő szakaszt.)
 
 ## <a name="operation-relations"></a>Műveleti kapcsolatok
-A kapcsolat által támogatott művelet a következő működési tulajdonságok:
+A műveletek következő tulajdonságai maradnak meg a műveleti kapcsolatnál:
 
 -   Költségkategóriák
 -   Fogyasztási paraméterek
 -   Feldolgozási idők
--   Feldolgozási mennyiséget
+-   Feldolgozási mennyiségek
 -   Erőforrásigények
 -   Megjegyzések és utasítások
 
-Az azonos művelet több műveleti kapcsolatok határozhatja meg. Minden művelet kapcsolata azonban egyetlen művelettel adott, és egy útvonalat, kiadott termék vagy egy cikkcsoporthoz kapcsolódó engedélyezett termékek tulajdonságait tárolja. Emiatt több különböző működési tulajdonságokkal rendelkező útvonal azonos művelet használható. Ezen túlmenően, egyszerűbben lehet karbantartani a törzsadatok azonos működési tulajdonságú, függetlenül a használt útvonal és az előállított termék szokásos műveletek használata. A művelet kapcsolatához köre keresztül lehet definiálni a **cikk kódja**, **cikk-kapcsolat**, **kód útvonal** és **útvonal-kapcsolat** az alábbi táblázatban látható tulajdonságai.
+Egy műveletnél több műveleti kapcsolatot is meghatározhat. Azonban minden egyes műveleti kapcsolat egyetlen műveletre jellemző, és olyan tulajdonságokat tárol, amelyek egy cikkcsoporthoz kapcsolódó útvonalhoz, kiadott termékhez vagy kiadott termékek egy készletéhez tartoznak. Emiatt ugyanazt a műveletet több olyan útvonalnál is használni lehet, amelyek különböző műveleti tulajdonságokkal rendelkeznek. Ezen túlmenően egyszerűbben tudja karbantartani az alapadatokat, ha olyan szabványos műveleteket használ, melyeknek azonosak a műveleti tulajdonságai, tekintet nélkül a használt útvonalra és az előállított termékre. A műveleti kapcsolat hatóköre a **Cikk-kód**, a **Cikk-kapcsolat**, az **Útvonalkód** és az **Útvonalkapcsolat** tulajdonságokkal határozható meg, ahogyan az a következő táblázatban is látható.
 
-| Cikk kódja | Cikk-kapcsolat         | Útvonal kódja | Útvonalkapcsolat   | A művelet kapcsolatához alkalmazási köre                                                                                                                                                                                                                                                                              |
+| Cikk kódja | Cikk-kapcsolat         | Útvonal kódja | Útvonalkapcsolat   | A műveleti kapcsolat hatóköre                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tábla     | &lt;Cikkazonosító&gt;       | Útvonal      | &lt;Útvonal-azonosító&gt; | Egy művelet az útvonal használatakor működési tulajdonságok ahol **útvonalszám**=&lt;útvonalazonosítót&gt; megjelent termék gyártására hol **cikkszám**=&lt;cikk azonosítója&gt;.                                                                                                                        |
-| Tábla     | &lt;Cikkazonosító&gt;       | Mind        |                  | Működési jellemzői egy műveletet, ha a kiadott termék előállítására használják, ahol **cikkszám**=&lt;cikk azonosítója&gt;. Más szóval a működési tulajdonságok alkalmazni, ha nincs kapcsolat a kiadott termékhez tartozó útvonal-specifikus művelet.                                     |
-| Csoport     | &lt;Cikkcsoport azonosítója&gt; | Útvonal      | &lt;Útvonal-azonosító&gt; | Egy művelet az útvonal használatakor működési tulajdonságok hol **útvonalszám**=&lt;útvonalazonosítót&gt; társított cikkcsoport kiadott termékek előállításához &lt;Csoportazonosító cikk&gt;, kivéve, ha van egy útvonal-specifikus kapcsolat az engedélyezett termék.                         |
-| Csoport     | &lt;Cikkcsoport azonosítója&gt; | Mind        |                  | Egy művelet, ha társított cikkcsoport kiadott termékek előállításához használják alapértelmezett működési tulajdonságok &lt;Csoportazonosító cikk&gt;, kivéve, ha egy adott kapcsolat létezik.                                                                                                  |
-| Mind       |                       | Útvonal      | &lt;Útvonal-azonosító&gt; | Működési jellemzői a műveletet, ha az útvonal szerepel, ahol **útvonalszám**=&lt;útvonalazonosítót&gt;. Más szóval a működési tulajdonságok vonatkoznak, amikor nincs művelet kapcsolat vagy adott útvonal a kiadott termék vagy társított cikkcsoport. |
-| Mind       |                       | Mind        |                  | Az alapértelmezett működési tulajdonságok művelet. A működési tulajdonságok vonatkoznak, amikor egy adott kapcsolat nem létezik.                                                                                                                                                                |
+| Tábla     | &lt;Cikkazonosító&gt;       | Útvonal      | &lt;Útvonal-azonosító&gt; | Egy művelet alapértelmezett műveleti tulajdonságai olyankor, amikor az **Útvonaszám**=&lt;útvonalazonosító&gt; segítségével állítható elő a kiadott termék az adott **cikkszámmal**=&lt;cikkazonosítóval&gt;.                                                                                                                        |
+| Tábla     | &lt;Cikkazonosító&gt;       | Mind        |                  | Egy művelet alapértelmezett műveleti tulajdonságai olyankor, amikor segítségével állítható elő a kiadott termék az adott **cikkszámmal**=&lt;cikkazonosítóval&gt;. Más szóval ezek a műveleti tulajdonságok akkor érvényesek, amikor nincs útvonalspecifikus műveleti kapcsolat megadva a kiadott termékhez.                                     |
+| Csoport     | &lt;Cikkcsoport-azonosító&gt; | Útvonal      | &lt;Útvonal-azonosító&gt; | Az útvonalnál használt művelet tulajdonságai, ahol az **Útvonalszám**=&lt;útvonal-azonosító&gt;, melynek segítségével olyan kiadott termékek állíthatók elő, amelyek adott &lt;cikkcsoport-azonosítóval&gt; rendelkező cikkcsoporttal rendelkeznek, hacsak nem útvonalspecifikus műveleti kapcsolat van érvényben a kiadott terméknél.                         |
+| Csoport     | &lt;Cikkcsoport-azonosító&gt; | Mind        |                  | Egy művelet alapértelmezett tulajdonságai olyankor, amikor segítségével olyan kiadott termékeket állít elő a rendszer, amelyek cikkcsoporthoz &lt;cikkcsoport-azonosítóhoz&gt; kapcsolódnak, kivéve ha létezik pontosabb műveleti kapcsolat.                                                                                                  |
+| Mind       |                       | Útvonal      | &lt;Útvonal-azonosító&gt; | A művelet alapértelmezett tulajdonságai az útvonalban történő használat esetén olyankor, amikor az **Útvonalszám**=&lt;útvonalazonosító&gt;. Más szóval ezek a műveleti tulajdonságok akkor érvényesek, amikor nincs olyan műveleti kapcsolat megadva ennél az útvonalnál, amely a kiadott termékre vagy a kapcsolódó cikkcsoportra jellemző. |
+| Mind       |                       | Mind        |                  | Egy művelet alapértelmezett tulajdonságai. Ezek a tulajdonságok akkor érvényesek, ha nem létezik pontosabb műveleti kapcsolat.                                                                                                                                                                |
 
-Megadhatja azt is, hogy adott helyhez-e műveleti kapcsolat. Ezzel a módszerrel egy művelet működési tulajdonságok is függ, a hely (hely), ahol a műveletet végzi. Konfigurált termékek minden egyes termék-konfiguráció különböző működési tulajdonságok is megadhatja.  
+Azt is megadhatja, hogy egy műveleti kapcsolat egy adott helyre érvényes. Ezzel a módszerrel egy művelet tulajdonságai eltérőek lehetnek a művelet elvégzésénak helyszínétől (azaz a telephelytől) függően. Konfigurált termékek esetén minden egyes termékkonfigurációnál különböző műveleti tulajdonságokat is megadhat.  
 
-Műveleti kapcsolatok ad rugalmasan az útvonal definiálásakor. Ezenkívül határozhatnak meg az alapértelmezett tulajdonságok segítségével csökkentheti a törzsadatok kell állnia. Azonban ez a rugalmasság azt is jelenti, hogy figyelembe kell venni a környezet, amely módosítja a műveleti kapcsolat.  
+A műveleti kapcsolatok révén rendkívül rugalmasan határozhatja meg az útvonalait. Továbbá az alapértelmezett tulajdonságok meghatározásának képessége révén csökkenthető azoknak az alapadatoknak a mennyisége, amelyeket fenn kell tartania. Ez a rugalmasság azonban azt is jelenti, hogy figyelembe kell vennie azt a környezetet, amelyben módosítja a műveleti kapcsolatot.  
 
-**Megjegyzés:** útvonalanként műveletenként műveleti kapcsolatok működési tulajdonságok tárolják, mert minden előfordulását ugyanannak a műveletnek (például szerelvény) rendelkezik a ugyanazt a beállítási idő, Üzemidő, erőforrás-igényű, és így tovább. Ezért ha egy művelet két előfordulása kell az ugyanazon útvonalon történik, de eltérő futtatási időt rendelkezik, létre kell hoznia két különböző műveleteket, például Assembly1 és Assembly2.
+**Megjegyzés:**? Mivel a műveleti tulajdonságok tárolása útvonalanként és műveletenként történik, az adott művelet minden előfordulásánál (például összeszerelés) azonos a beállítási idő, a futtatási idő, az erőforrás-szükséglet stb. Ezért ha egy műveletnek kétszer kell előfordulnia ugyanazon az útvonalon, de eltérő futtatási időkkel, létre kell hoznia két különböző műveletet, például Összeszerelés1 és Összeszerelés2.
 
-### <a name="modifying-product-specific-routes"></a>Termékspecifikus útvonal módosítása
+### <a name="modifying-product-specific-routes"></a>Termékspecifikus útvonalak módosítása
 
-Amikor megnyitja a **útvonal** a lap a **megjelent termék részletei** lapon látható a kijelölt kiadott termékhez tartozó útvonal-változatokat. Ebben az összefüggésben az egyes műveletekhez Dynamics 365 műveletek működési tulajdonságainak megjelenítése a művelet kapcsolatához az, amely a legközelebb az útvonalverzió. Megfigyelheti, hogy a műveletek listája tartalmazza a **cikk kódja** és **kód útvonal** a kapcsolat tulajdonságait. Ezért megállapítható, mely művelet a kapcsolatot.  
+Amikor megnyitja az **Útvonal** oldalt a **Megjelent termék részletei** oldalról, akkor megjelennek a kiválasztott kiadott termékhez kapcsolódó útvonalverziók. Ebben az összefüggésben a Dynamics 365 for Operations az egyes műveleteknél azokat a műveleti tulajdonságokat jeleníti meg, amelyek legjobban megfelelnek az útvonalverziónak. Észreveheti, hogy a műveletek listája tartalmazza a műveleti kapcsolat **Cikk-kód** és **Útvonalkód** tulajdonságait. Ezáltal megállapíthatja, hogy melyik műveleti kapcsolat látható.  
 
-A a **útvonal** lapon módosíthatja a művelet, például az üzemidő vagy költségkategóriák működési tulajdonságait. A művelet kapcsolatához az útvonalat és az aktuális útvonalverziót hivatkozott kiadott termék adott tárolja a módosításokat. Ha a megjelenő kapcsolat nem az útvonal és az engedélyezett termék, mielőtt a rendszer tárolja a módosításokat, a rendszer létrehoz egy példányát a művelet kapcsolatához. Ez a példány *van* az útvonalat és a kiadott termék-specifikus. Ezért a módosítások nem befolyásolják más útvonalak vagy kiadott termékek. Ellenőrizze, hogy melyik kapcsolat megváltoztatta a a **útvonal** oldal, tekintse meg a **cikk kódja** és **kód útvonal** mezők.  
+Az **Útvonal** lapon módosíthatja a művelet tulajdonságait, így például a futtatási időt vagy a költségkategóriákat. A változtatások tárolása az útvonalra jellemző műveleti kapcsolatnál, az aktuális útvonal-verzióban hivatkozott kiadott terméknél történik. Ha a megjelenő műveleti kapcsolat nem az útvonalra és a kiadott termékre jellemző, akkor a rendszer a módosítások tárolása előtt létrehoz egy másolatot a műveleti kapcsolatról. Ez a példány *az* útvonalhoz és a kiadott termékhez kapcsolódik. Emiatt a módosítások nem befolyásolnak más útvonalakat vagy kiadott termékeket. Annak ellenőrzéséhez, hogy melyik kapcsolatot módosítja az **Útvonal** oldalon, ellenőrizze a **Cikk-kód** és az **Útvonalkód** mezőket.  
 
-Egy művelet, amely egy útvonal és a kiadott termékhez adott segítségével kézzel is létrehozhatja a **másolás és kapcsolat szerkesztése** függvény.  
+Emellett manuálisan is létrehozhat egy olyan műveletet, amelye egy útvonalhoz és kiadott termékhez kapcsolódik a **Kapcsolat másolása és szerkesztése** funkció segítségével.  
 
-**Megjegyzés:** Ha egy útvonalhoz új művelet hozzáadásához kattintson a **útvonal** lap műveleti kapcsolat jön létre csak a jelenlegi engedélyezett termék. Ezért ha az útvonal más felszabadított termékek gyártásához is felhasználják, nem alkalmazható a művelet kapcsolatához az ilyen engedélyezett termékek létezni fog, és az útvonal már nem használható a kiadott termékek.
+**Megjegyzés:** Ha új műveletet ad egy útvonalhoz az **Útvonal** oldalon, akkor létrejön egy műveleti kapcsolat csak az aktuálisan kiadott termékhez. Ezért, ha az útvonalat más kiadott termékek előállítására is használják, akkor ezeknek a kiadott termékeknek nem lesz megfelelő műveleti kapcsolata, és az útvonalat már nem lehet használni a kiadott termékek esetében.
 
-### <a name="maintaining-operation-relations-per-route"></a>A művelet kapcsolattartás útvonalanként
+### <a name="maintaining-operation-relations-per-route"></a>Műveleti kapcsolatok karbantartása útvonalanként
 
-Megnyitásakor a **részleteinek útvonal-** a lap a **útvonalak** listáján, amelyekre vonatkoznak a kiválasztott útvonal összes műveleti kapcsolatok listája látható. Így könnyen ellenőrizheti működési tulajdonságok milyen termékeket használnak. Módosíthatja az alapértelmezett tulajdonságértékei, mind a termék-specifikus.  
+Amikor megnyitja az **Útvonal részletei** oldalt az **Útvonalak** listaoldalról, akkor megjelenik egy lista az összes olyan műveleti kapcsolatról, amely érvényes a kiválasztott útvonalra. Így könnyen ellenőrizheti, hogy mely műveleti tulajdonságok mely termékeknél használatosak. Egyaránt módosíthatja mind az alapértelmezett tulajdonságértékeket, mind a termékspecifikus tulajdonságértékeket.  
 
-Ha a művelet új kapcsolatot a **részleteinek útvonal** lapon a **útvonal kódja** mező értéke automatikusan **útvonal**, és a **útvonal-kapcsolat** mező értéke az aktuális útvonal útvonal száma.
+Ha új műveleti kapcsolatot ad meg az **Útvonal részletei** lapon, akkor az **Útvonalkód** mező értéke automatikusan **Útvonal** lesz, az **Útvonalkapcsolat** mezőben pedig az aktuális útvonal útszáma látható.
 
-### <a name="maintaining-operation-relations-per-operation"></a>Műveletenként műveleti kapcsolatok fenntartása
+### <a name="maintaining-operation-relations-per-operation"></a>Műveletenkénti műveleti kapcsolatok karbantartása
 
-A a **műveletek** lap, megnyithatja a **műveleti kapcsolatok** oldalon. Ezen a lapon módosíthatja egy adott művelet minden műveleti kapcsolatok. Műveleti kapcsolatok alapértelmezett értékeket tartalmazó is módosíthatja.  
+A **Műveletek** oldalon megnyithatja a **Műveleti kapcsolatok** oldalt. Ezen az oldalon módosíthatja egy adott művelet minden műveleti kapcsolatát. Akár az alapértelmezett értékeket tartalmazó műveleti kapcsolatokat is módosíthatja.  
 
 Ha a vállalat szokásos műveleteket, és a működési paraméterek azonosak-az összes olyan termékek és eljárások, a **műveleti kapcsolatok** lap itt kényelmesen működési jellemzői, ezek a műveletek karbantartása.
 
 ### <a name="applying-operation-relations"></a>Műveleti kapcsolatok alkalmazása
 
-Bizonyos esetekben Dynamics 365 műveletek esetében meg kell keresnie a működési tulajdonságok egy művelethez. Például egy beszerzési rendelés létrehozásakor minden egyes művelet működési tulajdonságok kell másolja a műveleti kapcsolatok, a termelési útvonalon. Ezekben az esetekben Dynamics 365 műveletek keresi a megfelelő művelet kapcsolatok a leginkább specifikus kombináció legalább egyedi kombinációja.  
+A Dynamics 365 for Operations programnak bizonyos esetekben meg kell keresnie egy adott művelet tulajdonságait. Amikor például létrejön egy beszerzési rendelés, az egyes műveletek tulajdonságait át kell másolni a műveleti kapcsolatoktól a termelési útvonalhoz. Ezekben az esetekben Dynamics 365 műveletek keresi a megfelelő művelet kapcsolatok a leginkább specifikus kombináció legalább egyedi kombinációja.  
 
-Amikor műveletek megkeresi a leginkább megfelelő kapcsolat engedélyezett termék, műveleti kapcsolat, amely a kiadott termék azonosítója megegyezik a Dynamics 365 előnyben műveleti kapcsolat keresztül, hogy megfelel a cikk-csoport azonosítója. Viszont, amely megfelel a csoport azonosítója műveleti kapcsolat ajánlott keresztül az alapértelmezett művelet kapcsolatához. A Keresés a következő sorrendben történik:
+Amikor műveletek megkeresi a leginkább megfelelő kapcsolat engedélyezett termék, műveleti kapcsolat, amely a kiadott termék azonosítója megegyezik a Dynamics 365 előnyben műveleti kapcsolat keresztül, hogy megfelel a cikk-csoport azonosítója. Ennek megfelelően az olyan műveleti kapcsolat, amelyik megegyezik a cikkcsoport-azonosítóval, előnyt élvez az alapértelmezett műveleti kapcsolattal szemben. A keresés a következő sorrendben történik:
 
-1.  **Cikk kódja**=**tábla** és **cikk-kapcsolat**=&lt;elem azonosítója&gt;
-2.  **Cikk kódja**=**csoport** és **cikk-kapcsolat**=&lt;cikk-csoport azonosítója&gt;
-3.  **Cikk kódja**=**minden**
-4.  **Útvonal-kód**=**útvonal** és **kapcsolat Route**=&lt;útvonal-azonosító&gt;
-5.  **Útvonal-kód**=**minden**
+1.  **Cikk kódja**=**Tábla** és **Cikk-kapcsolat**=&lt;cikkazonosító&gt;
+2.  **Cikk kódja**=**Tábla** és **Cikk-kapcsolat**=&lt;cikkazonosító&gt;
+3.  **Item code**=**All**
+4.  **Route code**=**Route** and **Route relation**=&lt;route ID&gt;
+5.  **Útvonal kódja**=**Mind**
 6.  **Konfigurációs**=&lt;konfiguráció azonosítója&gt;
-7.  **Configuration**=
-8.  **Hely**=&lt;a webhely-azonosító&gt;
-9.  **Site**=
+7.  **Konfiguráció**=
+8.  **Hely**=&lt;helyazonosító&gt;
+9.  **Telephely**=
 
-Ezért egy művelet csak egyszer minden útvonal kell használni. A művelet az ugyanazon útvonal többször fordul elő, ha a művelet összes előfordulását ugyanazon művelet kapcsolat lesz, és nem fogunk tudni szeretné, hogy a különböző tulajdonságokat (például időket) minden egyes.
+Ezért egy műveletet csak egyszer szabad használni minden egyes útvonalnál. Ha a művelet ugyanazon az útvonalon többször is előfordul, akkor az adott művelet mindegyik előfordulásának ugyanaz lesz a műveletkapcsolata, és Ön nem adhat meg különböző tulajdonságokat (például futtatási időket) az egyes előfordulásokhoz.
 
 ## <a name="route-versions"></a>Útvonalverziók
-Az Útvonalverziók termékek előállításában fennálló különbségek kezelését, illetve a termelési folyamat jobban szabályozhatja. Meghatározzák, hogy melyik útvonalat kell használni, amikor egy adott termék, amely vagy kiadott termékváltozat állították elő. Az alábbi megszorítások segítségével megadhatja, mely útvonalat használja a kiadott termékhez tartozó:
+Az útvonalverziók az egyes termékek előállításában fennálló különbségek kezelését teszik lehetővé, illetve kiterjedtebb ellenőrzést biztosítanak Önnek a termelési folyamat felett. Meghatározzák, hogy melyik útvonalat kell használni, amikor egy kiadott termék vagy termékváltozat elkészül. Az alábbi megszorítások segítségével megadhatja, hogy melyik útvonalat szeretné használni a kiadott terméknél:
 
--   Cikkdimenziók (méret, szín, stílus vagy konfiguráció)
+-   Termékdimenziók (méret, szín, stílus vagy konfiguráció)
 -   Termelési mennyiség
--   Gyártási hely
--   Gyártási dátum
+-   Termelés helye
+-   Termelés dátuma
 
 Ha meg vagyunk egy adott helyen egy adott mennyiségű terméket előállító, vagy egy adott időszakban kijelölhet egy adott útvonalverzión az alapértelmezett útvonal verzió. Megjegyzendő azonban, hogy csak egyetlen aktív útvonal engedélyezett egy adott kiadott termék és korlátozások egy adott készletét.  
 
@@ -176,40 +179,40 @@ A termelési paramétereit előírhatja, hogy az érvényességi időtartam egy 
 
 ### <a name="approval-of-route-versions"></a>Útvonalverziók jóváhagyása
 
-Mielőtt egy útvonalverziót is használható a tervezési vagy gyártási folyamat, jóvá kell hagyni. Amikor jóváhagy egy útvonalverziót, akkor hagyhatja jóvá a kapcsolt útvonal is. Megjegyzendő azonban, hogy egy útvonalverziót jóváhagyott, csak akkor, ha a kapcsolt útvonal is jóváhagyja.
+Ahhoz, hogy egy útvonal használható legyen a tervezési vagy termelési folyamatban, jóvá kell hagyni azt. Amikor jóváhagy egy útvonalverziót, akkor az útvonalat is automatikusan jóváhagyja a program. Vegye figyelembe azonban, hogy egy útvonalverzió csak akkor hagyható jóvá, ha a kapcsolódó útvonal is jóvá van hagyva.
 
-### <a name="activating-the-default-route-version"></a>Az alapértelmezett útvonal verzió aktiválása
+### <a name="activating-the-default-route-version"></a>Az alapértelmezett útvonalverzió aktiválása
 
-Amikor aktivál egy útvonalverziót, kijelölhet azt használja az alapértelmezett útvonal verzió, amely a fő tervezési vagy gyártási rendelések létrehozását, amely lesz. Akkor is csak egy aktív útvonalverzió megkötések (időszak, hely vagy mennyiség) egy adott készletét. Ha a verziót, hogy próbált ütközik egy verzió aktiválása, amely már aktív, hibaüzenetet kap. Nem egyértelmű aktiválás elkerülésére kell majd inaktívvá tétele az ütköző verziójú vagy módosítható az útvonalverzió korlátait (általában az időszak).
+Amikor aktivál egy útvonalverziót, akkor kijelöli azt alapértelmezett útvonalverzióként, amelyet az alaptervezés használni fog, illetve amelyet a rendszer a termelési rendelések létrehozásakor használ majd. Csak egy aktív útvonalverzióval rendelkezhet a korlátozások egy adott készletéhez (például időszak, telephely vagy mennyiség). Hibaüzenetet kap, ha a verzió, amit aktiválni próbál, ütközik egy verzióval, ami már aktív. Ezután vagy hatástalanítania kell az ütköző verziót vagy módosítania kell a verzió megszorításait (jellemzően az időszakot), hogy megakadályozza a kétértelmű aktivációt.
 
-### <a name="electronic-signatures"></a>Az elektronikus aláírások
+### <a name="electronic-signatures"></a>Elektronikus aláírások
 
-Adott rekordok, aki hagyja jóvá, és minden egyes útvonalverzió aktiválása naplót kell vezessen, ha ezen tevékenységek előírhatja az elektronikus aláírások. Felhasználók jóváhagyása és útvonalverzió aktiválása a személyazonosságuk majd lesz egy [az elektronikus aláírás](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalverziót ki hagyta jóvá, akkor elektronikus aláírásokat kell használni ezeknél a feladatoknál. Az útvonalverziókat jóváhagyó és aktiváló felhasználóknak ezt követően igazolniuk kell személyazonosságukat egy [elektronikus aláírás](/dynamics365/operations/organization-administration/electronic-signature-overview) segítségével.
 
-### <a name="product-change-that-uses-case-management"></a>Esetkezelési használó termék módosítása
+### <a name="product-change-that-uses-case-management"></a>Termékmódosítás, amely esetkezelést használ.
 
-A termék esetében a jóváhagyás módosítása és új vagy módosított útvonal- és útvonalverzió aktiválása egyszerűen áttekintheti az útvonal verzió korlátozások lehetővé teszi. Jóváhagyása és aktiválása adott módosítását egyetlen művelettel kapcsolatos, és az eredményeket a termék Kisbetű-nagybetű dokumentum összes útvonalat is.
+A termékmódosítási eset új vagy módosított anyagjegyzékek vagy anyagjegyzék verziók jóváhagyása és aktiválása esetén egyszerű módot biztosít, hogy áttekintsük az anyagjegyzék verziók megszorításait. Jóváhagyása és aktiválása adott módosítását egyetlen művelettel kapcsolatos, és az eredményeket a termék Kisbetű-nagybetű dokumentum összes útvonalat is.
 
 ## <a name="maintaining-routes"></a>Útvonalak karbantartása
 Üzleti szükségletektől függően előfordulhat, amely szükséges annak érdekében, hogy a folyamat meghatározása az erőkifejtés csökkentése érdekében.
 
-### <a name="making-routes-independent-of-resources"></a>Így erőforrások független útvonalak
+### <a name="making-routes-independent-of-resources"></a>Erőforrásoktól független útvonalak készítése
 
-Számos rendszer a műveletek erőforrás vagy erőforrás csoport, amelyek műveletet hajtanak végre meg kell adni az útvonal. Műveletek 365 Dynamics, meghatározhatja az üzemi erőforrás teljesítenie kell a művelethez alkalmazandó követelmények együttese. Ezért a konkrét műveletek erőforrás vagy erőforrás csoport használandó nem kell addig, amíg a művelet éppenséggel korábbra kell meghatározni. Ez a szolgáltatás akkor különösen hasznos, ha sok a munkavállalók vagy gépek, amelyek ugyanazt a műveletet lehet végrehajtani.  
+Számos rendszerben meg kell határozni azt a művelet-erőforrást vagy erőforráscsoportot, amelynek el kell végeznie egy műveletet. A However, in Dynamics 365 for Operations programban azonban megadhatja a szükségletek egy olyan készletét, amelynek teljesülnie kell a műveletre való alkalmazhatóság érdekében. Ezért a konkrét műveletek erőforrás vagy erőforrás csoport használandó nem kell addig, amíg a művelet éppenséggel korábbra kell meghatározni. Ez a szolgáltatás akkor különösen hasznos, ha sok a munkavállalók vagy gépek, amelyek ugyanazt a műveletet lehet végrehajtani.  
 
 Például megadhatja a egy művelethez egy műveletek erőforrás, a **gép** típusú, amelynek a **Stamping** képességének 20 tonna. Az ütemezési motor majd megoldja ezeket a követelményeket, a konkrét műveletek erőforrás vagy erőforrás csoport ütemezése a művelet során. Most adhatja meg ezeket a követelményeket nem kötelező a művelet egy adott gép, mert akkor sokkal nagyobb rugalmasságot. Továbbá karbantartás akkor könnyebb, ha erőforrásokat helyez át, és az új erőforrások hozzáadása.  
 
 A különféle erőforrás-igényű, és használatukkal kapcsolatos további tudnivalókért lásd: erőforrás-igényű műveleteket és [erőforrás-képességek](resource-capabilities.md).
 
-### <a name="sharing-routes-across-sites"></a>Útvonalak-helyeken keresztül történő megosztása
+### <a name="sharing-routes-across-sites"></a>Útvonalak megosztása a helyek között
 
-Ha egynél több termelési helyszínen azonos termék előállításában, és ha a terméket előállító lépéseket minden azonos telephelyen, gyakran használt összes termelési hely megosztott útvonalat tervezhet. Megosztott útvonal létrehozása nem adja meg a hely maga az útvonal. Azonban továbbra is létre kell hoznia egy útvonalverziót, amely összekapcsolja a megosztott útvonal a termék minden telephelyen.  
+Ha egynél több termelési helyszínen azonos termék előállításában, és ha a terméket előállító lépéseket minden azonos telephelyen, gyakran használt összes termelési hely megosztott útvonalat tervezhet. Megosztott útvonal létrehozásához ne adjon meg olyan helyet, amely magán az útvonalon található. Azonban továbbra is létre kell hoznia egy olyan útvonalverziót, amelyik hozzárendeli a megosztott útvonalat a termékkel minden egyes hely esetében.  
 
-Is győződjön meg arról, hogy az útvonal minden művelete erőforrás-szükségleteit nem igényelnek különleges tevékenységek, erőforrások vagy erőforráscsoportok, de ehelyett a szükséges erőforrások jellemzői vannak kifejezve. Az ütemezési motor a megfelelő erőforrásokhoz rendelni a termelés ütemezése a webhely képes lesz. Például ha a futási idő alatt kis különbségek vannak, vagy ha egy bizonyos művelet beállítási ideje helyspecifikus, megadhatja ezt az információt, hogy a webhely további műveleti kapcsolat hozzáadásával.  
+Biztosítani kell azt is, hogy az útvonalon végrehajtott egyes műveletek erőforrás-követelményei ne írjanak elő konkrét műveleti erőforrásokat vagy erőforráscsoportokat, hanem kifejezésük a szükséges erőforrások jellemzői alapján történjen. Az ütemezőmotor ezután képes lesz a megfelelő üzemi erőforrás hozzárendelésére arról a helyszínről, ahová a gyártást ütemezték. Ha például a futási időben enyhe eltérések vannak, vagy ha egy adott művelet beállítási ideje helyspecifikus, akkor megadhatja ezt az információt egy másik műveleti kapcsolat hozzáadásával az adott webhely számára.  
 
-A megosztott útvonalak előnyeit teljes mértékben is erőforrás-felhasználás kell válasszuk a megfelelő anyagjegyzék (AJ). Az erőforrás-felhasználás jelzőt az anyagjegyzéksor beállításakor a raktár és a nyersanyagok kell a felhasznált hely van következtetni a művelet ütemezett műveletek erőforrásból. Ezért a raktározási és a helyet nem kell mindaddig, amíg a termelés ütemezése ténylegesen kell meghatározni. Ily módon hogy mind az Anyagjegyzék és az útvonal független a fizikai hely, ahol a termék előállítása.
+A megosztott útvonalak előnyeinek teljes kihasználása érdekében a megfelelő anyagjegyzéknél (BOM) is használnia kell az erőforrás-fogyasztást. Amikor beállítja az erőforrás-fogyasztás jelzőjét a BOM soron, a raktár és a hely, ahonnan a nyersanyagokat fogyasztani, kell, abból az üzemi erőforrásból származik, amelynél a művelet ütemezve van. Emiatt a raktárat és a helyszínt nem kell meghatározni addig, amíg a termelés nincs ténylegesen beütemezve. Így mind az anyagjegyzék, mind az útvonal függetleníthető attól a fizikai helytől, ahol a terméket előállítják.
 
-### <a name="standard-operation-relations"></a>Standard műveleti kapcsolatok
+### <a name="standard-operation-relations"></a>Normál műveleti kapcsolatok
 
 Ha a vállalat termelési egész szabványosított műveleti, és ha alig vagy egyáltalán nem változása a beállítási idő, Üzemidő, felhasználás számításhoz, költségszámítás, és stb akkor előnyt jelenthet az alapértelmezett minden műveletre vonatkozóan műveleti kapcsolatok létrehozása. Ebben az esetben ne jellemző bármely útvonalon vagy termék, amely a műveleti kapcsolatok létrehozása.  
 
@@ -217,25 +220,27 @@ Ha is express erőforrás-igényű készségek és képességek, és az útvonal
 
 Ez a módszer használata esetén a **műveleti kapcsolatok** oldal lesz az elsődleges cél fenntartásához a Lefutási idő és egyéb tulajdonságokat.
 
-### <a name="resource-specific-process-times"></a>Erőforrás-specifikus feldolgozási időt
+### <a name="resource-specific-process-times"></a>Erőforrás-specifikus feldolgozási idők
 
-Egy műveletek erőforrás vagy erőforrás csoport nem adja meg az erőforrás-igényű művelet részeként, a megfelelő erőforrások eltérő sebességgel is működnek. Ezért a művelet feldolgozásához szükséges idő változhat. A probléma megoldásához használja a **képlet** mezőjében adja meg a feldolgozási idő kiszámítási módját a művelet kapcsolatához. Az alábbi lehetőségek közül választhat:
+Ha nem ad meg üzemi erőforrást vagy erőforráscsoportot egy művelet erőforrásigényének részeként, az alkalmazott erőforrások különböző sebességgel működhetnek. Emiatt az egy-egy művelet feldolgozásához szükséges idő változó lehet. A probléma megoldásához használhatja a műveleti kapcsolat **Képlet** mezőjét, ahol megadhatja a feldolgozási idő kiszámításának módját. Az alábbi lehetőségek közül választhat:
 
--   **Szabványos** – (alapértelmezett beállítás) a számítás csak azokat a mezőket a művelet kapcsolatához az használ, és a megadott Lefutási idő szerint a rendelési mennyiség szorzata.
--   **Kapacitás** – a számítás a **kapacitás** a műveletek erőforrás mezőben. Ezért az idő az erőforrás-függő. A tevékenységek erőforrás megadott érték óránkénti kapacitása. Ezt az értéket megszorozza a rendelési mennyiség és a **tényező** értéket a művelet kapcsolatához.
--   **Kötegelt** – A kötegelt kapacitás a kapcsolat adatainak használatával számítható. Kötegek, és ezért a feldolgozási idő száma majd alapján számítható be a rendelési mennyiség.
--   **Erőforrás kötegelt** – Ez a beállítás akkor alapvetően ugyanaz, mint a **kötegelt** lehetőséget. A számítás azonban a **kötegelt kapacitás** a műveletek erőforrás mezőben. Ezért az idő az erőforrás-függő.
+-   **Szabványos** – (Alapértelmezett beállítás) A számítás csak a műveleti kapcsolat mezőit használja, és megszorozza a megadott futási időt a rendelés mennyiségével.
+-   **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. Az értéket megszorozza a rendszer a műveleti kapcsolat rendelt mennyiségével és **Tényező** értékével.
+-   **Köteg** – A kötegkapacitás kiszámítása a műveleti kapcsolat adatainak felhasználásával történik. Ezt követően a rendelt mennyiség alapján kiszámítható a kötegek száma, és így a feldolgozási idő is.
+-   **Erőforrásköteg** – Ez a lehetőség gyakorlatilag megegyezik a **Köteg** beállítással. A számítás azonban magába foglalja a **Kötegkapacitás** mezőt a műveletek erőforrás mezőből. Ezért az idő erőforrásfüggő.
 
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Bills of materials and formulas](bill-of-material-bom.md)
+[Anyagjegyzékek és receptúrák](bill-of-material-bom.md)
 
-[Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)
+[A termelési útvonalakban használt költségkategóriák](../cost-management/cost-categories-used-production-routings.md)
 
-[Resource capabilities](resource-capabilities.md)
+[Erőforrás-képességek](resource-capabilities.md)
 
-[Electronic signature overview](/dynamics365/operations/organization-administration/electronic-signature-overview)
+[Az elektronikus aláírás áttekintése](/dynamics365/operations/organization-administration/electronic-signature-overview)
+
+
 
 

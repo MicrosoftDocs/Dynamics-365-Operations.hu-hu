@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16161
 ms.assetid: 646d560c-f856-4701-b4ca-44e357ef09b8
 ms.search.region: Global
@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 ---
 
 # <a name="online-store-overview"></a>Online áruház áttekintése
+
+[!include[banner](includes/banner.md)]
+
 
 Ez a cikk a kiskereskedelmi online áruházakkal és a Microsoft Dynamics 365 for Operations rendszerben való beállításukkal kapcsolatban tartalmaz információkat.
 
@@ -50,5 +53,7 @@ Az online áruház létrehozása előtt meg kell határoznia azt a kiskereskedel
 
 ## <a name="organization-hierarchies"></a>Szervezeti hierarchiák
 A szervezeti hierarchiák használatosak a kiskereskedelmi csatornák strukturálására. A szervezeti hierarchiák az üzleti rendszer-struktúrát alkotó szervezetek között kapcsolatokat jelölik. Amikor egy online üzletet konfigurál, azt egy szervezeti hierarchiához is hozzáadhatja. Az üzletek ezt követően megoszthatják a szortimentekhez, a feltöltéshez és jelentéshez használt adatokat. Egy szervezeti hierarchia létrehozásakor ahhoz egy adott célt is hozzá rendelni. A cél azt jelzi, hogy az adott hierarchiát hogyan használják az üzleti szerkezetben. Létrehozhat egy szervezeti hierarchiát az áruházi műveletekre és felhesználhatja azt a szortimentek kezeléséhez, a feltöltési és lejelentési műveletek végrehajtásakor. Azt is megteheti, hogy minden célra külön szervezeti hierarchiát hoz létre. Létrehozhat továbbá többrétű hierarchiákat is ugyanarra a célra, és egyesével külön csatornákat rendelhet hozzájuk. Ha kiskereskedelmi termékkatalógusokat szeretne közzétenni az online áruházban, akkor legalább a szortimentekre vonatkozóan hozzá kell adnia az online áruházat egy szervezeti hierarchiához. A katalógusban lévő termékek az online áruházhoz rendelt termékszortimentekből vannak kiválasztva. A katalógus közzétételekor a a közzétételi folyamat összehasonlítja az online áruházhoz rendelt szortiment hatályossági dátumait a katalógusban található termékekével, hogy meghatározza, mely termékek legyenek elérhetők az online áruházban.
+
+
 
 

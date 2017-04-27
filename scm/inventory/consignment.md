@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consignment"></a>Szállítás
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a témakör azt mutatja be, hogyan kell használni a bejövő szállítmány-készlet folyamatait.
 
-A bizományosi árukészlet olyan készlet, amely a szállító tulajdonában van, de a tárolása az Ön telephelyén történik. Ha készen áll a felhasználására vagy a készlet használatára, átveszi a készlet tulajdonjogát. Ez a témakör információt fizikailag hozzájuthat a szállító tulajdonában lévő készlet létrehozása a főkönyvi tranzakciókat, termelési folyamat, ahol a szállító tulajdonában lévő készlet fizikailag foglalható indítása. és a nyersanyag tulajdonjogának módosítása annak érdekében, hogy feldolgozza a fogyasztás, a gyártási rendelések feldolgozása során. Arra vonatkozóan is vannak információk, hogy a szállítók hogyan követhetik figyelemmel a készletük felhasználását a szállítói együttműködési felületén. A bejövő szállítmány folyamatainak engedélyezésére és konfigurálására vonatkozó tudnivalókat lásd itt: [Szállítmány beállítása](set-up-consignment.md).
+A bizományosi árukészlet olyan készlet, amely a szállító tulajdonában van, de a tárolása az Ön telephelyén történik. Ha készen áll a felhasználására vagy a készlet használatára, átveszi a készlet tulajdonjogát. Ez a témakör arra vonatkozóan tartalmaz tudnivalókat, hogyan lehet fizikailag átvenni a szállító által birtokolt készletet főkönyvi tranzakciók létrehozása nélkül, hogyan lehet elindítani egy termelési folyamatot. és hogyan lehet a nyersanyag tulajdonosát megváltoztatni annak érdekében, hogy fel lehessen dolgozni a felhasználást a termelési rendelés feldolgozása részeként. Arra vonatkozóan is vannak információk, hogy a szállítók hogyan követhetik figyelemmel a készletük felhasználását a szállítói együttműködési felületén. A bejövő szállítmány folyamatainak engedélyezésére és konfigurálására vonatkozó tudnivalókat lásd itt: [Szállítmány beállítása](set-up-consignment.md).
 
 ## <a name="overview-of-the-consignment-process"></a>A szállítmányozási folyamat áttekintése
 Ebben a példában az USMF vállalat szállítmányozási szerződést köt az US-104 szállítóval M9211CI nyersanyagra vonatkozóan.
@@ -57,9 +60,9 @@ Az USMF további ismétlődő folyamatokat végez:
 Az US-104 szállító figyelemmel követheti a frissítéseket a **Szállítmány aktuális készlete** oldal segítségével.
 
 ## <a name="consignment-replenishment-orders"></a>Bizományosi feltöltési rendelések
-A szállítmány feltöltési rendelése olyan dokumentum, amely egy szállító által, bizonyos dátumintervallumon belül leszállítani kívánt készlettranzakciók kérésére és nyomon követésére szolgál. Ez megrendelt készletmennyiségeket létrehozásával történik. Általában ennek alapja az adott termékre vonatkozó előrejelzés és tényleges igény. A szállítmány feltöltési rendelése alapján leszállított készlet a szállító tulajdonában marad. Csak a termékeknek a fizikai átvételhez kapcsolódó birtokbavételének frissítése kerül rögzítésre, és ennek megfelelően nincsenek frissítések a főkönyvi tranzakciókban. A **Tulajdonos** dimenzió segítségével lehet különválasztani azokat az információkat, melyek alapján megállapítható, hogy melyik készlet tulajdonosa a szállító, és melyiknek a fogadó jogi személy. Szállítmány feltöltési átmozgatásirendelés-sor egy **nyitott rendelés** akkora, mint a teljes mennyiség sorok nem fogadott és a visszavont állapotot. Ha a teljes mennyiség kapott, vagy a visszavont, az állapota **kész**. A szállítmány feltöltési rendeléséhez kapcsolódó, tényleges, aktuális készletet egy regisztrálási folyamat és egy termék-bevételezési frissítési folyamat segítségével lehet rögzíteni. A regisztrációt a cikk érkeztetési eljárásának segítségével vagy a rendeléssorok manuális frissítésével lehet elvégezni. A termék-bevételezési frissítési folyamatot használják, a termékbevételezési naplóban létrejön egy rekord, amellyel nyugtázni lehet az áruk átvételét a szállítók számára. 
+A szállítmány feltöltési rendelése olyan dokumentum, amely egy szállító által, bizonyos dátumintervallumon belül leszállítani kívánt készlettranzakciók kérésére és nyomon követésére szolgál. Ez megrendelt készletmennyiségeket létrehozásával történik. Általában ennek alapja az adott termékre vonatkozó előrejelzés és tényleges igény. A szállítmány feltöltési rendelése alapján leszállított készlet a szállító tulajdonában marad. Csak a termékeknek a fizikai átvételhez kapcsolódó birtokbavételének frissítése kerül rögzítésre, és ennek megfelelően nincsenek frissítések a főkönyvi tranzakciókban. A **Tulajdonos** dimenzió segítségével lehet különválasztani azokat az információkat, melyek alapján megállapítható, hogy melyik készlet tulajdonosa a szállító, és melyiknek a fogadó jogi személy. A szállítmányfeltöltési megrendelési sorok állapota **Nyitott rendelés** mindaddig, amíg a sorok teljes mennyisége nincs leszállítva vagy érvénytelenítve. Amikor a teljes mennyiség leszállításra vagy érvénytelenítésre kerül, az állapot **Kész** értékre változik. A szállítmány feltöltési rendeléséhez kapcsolódó, tényleges, aktuális készletet egy regisztrálási folyamat és egy termék-bevételezési frissítési folyamat segítségével lehet rögzíteni. A regisztrációt a cikk érkeztetési eljárásának segítségével vagy a rendeléssorok manuális frissítésével lehet elvégezni. A termék-bevételezési frissítési folyamatot használják, a termékbevételezési naplóban létrejön egy rekord, amellyel nyugtázni lehet az áruk átvételét a szállítók számára. 
 
-[![szállítmány-feltöltés-rendelés](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![consignment-replenishment-order](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Készlet tulajdonosváltozási naplója
 A készlettulajdonos-változási napló segítségével végezhető el az a folyamat, amelynek során a tulajdonjog átszáll a szállítóról a fogadó jogi személyre. Várhatóan nem jönnek létre készlettranzakciók a naplóhoz kapcsolódóan. Csak olyan készlettranzakciók jönnek létre, amelyek a feladott naplóhoz kapcsolódnak. Mikor kerül feladásra a napló?
@@ -69,14 +72,16 @@ A készlettulajdonos-változási napló segítségével végezhető el az a foly
 
 A szállítmány beszerzési rendelésének soraiban szereplő mennyiséget nem lehet frissíteni a rendelés létrehozása után. 
 
-[![készlet-tulajdonjog-változás napló](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Szállítói együttműködés a bizományosi folyamatokban.
 A szállítói együttműködés felülete három oldallal rendelkezik a bejövő szállítmány folyamatához kapcsolódóan:
 
--   **Beszerzési rendelések****szállítmány készlet fogyasztó** -részletes megjelenítése beszerzési rendelési információkhoz kapcsolódó a tulajdonjog-változás a szállítmány folyamat.
+-   **Beszerzési rendelések** **szállítmány-készlet felhasználása** - a szállítmányozási folyamat alapján megváltozott tulajdonjoghoz kapcsolódó beszerzési rendelés adatainak részleteit tünteti fel.
 -   **Szállítmány-készletből érkező termékek** - olyan cikkekről és mennyiségekről mutat információkat, amelyek termékbevételezése frissült a tulajdonjog megváltozásának folyamata során.
 -   **Az aktuális szállítmány készlete** - olyan szállítmányelemekről mutat információkat, amelyek várhatóan leszállításra kerülnek, és olyan cikkekről, amelyek már ténylegesen rendelkezésre állnak a vevő telephelyén.
+
+
 
 
 

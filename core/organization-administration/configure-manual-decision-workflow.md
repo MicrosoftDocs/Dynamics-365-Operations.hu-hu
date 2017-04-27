@@ -1,5 +1,5 @@
 ---
-title: "A manuális döntés a munkafolyamat beállítása"
+title: "Manuális döntés konfigurálása munkafolyamatban"
 description: "Ez a témakör bemutatja, hogy hogyan kell konfigurálni a manuális döntés tulajdonságait."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-decision-in-a-workflow"></a>A manuális döntés a munkafolyamat beállítása
+# <a name="configure-a-manual-decision-in-a-workflow"></a>Manuális döntés konfigurálása munkafolyamatban
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör bemutatja, hogy hogyan kell konfigurálni a manuális döntés tulajdonságait.
 
@@ -95,8 +98,8 @@ Meg kell adnia egy tárgysort, illetve utasításokat a manuális döntéshez ho
 
 1.  A bal oldali panelen kattintson az **Értesítések** gombra.
 2.  Jelölje be a jelölőnégyzetet azon eseményekhez, amelyekhez ki kell küldeni az értesítéseket:
-    -   **\[Választás 1\]** – a hozzárendelt felhasználó választott- **\[választás 1\]**.
-    -   **\[Választás 2\]** – a hozzárendelt felhasználó választott- **\[választás 2\]**.
+    -   **\[Választható 1\]** – A hozzárendelt felhasználó a **\[Választható 1\]** lehetőséget választotta.
+    -   **\[Választható 2\]** – A hozzárendelt felhasználó a **\[Választható 2\]** lehetőséget választotta.
     -   **Delegált** – A hozzárendelt felhasználó hozzárendelte a döntést egy másik felhasználóhoz.
     -   **Eszkaláció** – A hozzárendelt felhasználó nem végezte el a döntést a kijelölt időn belül.
 
@@ -148,10 +151,10 @@ Meg kell adnia egy tárgysort, illetve utasításokat a manuális döntéshez ho
     </tr>
     <tr class="odd">
     <td>Felhasználó</td>
-    <td>Bizonyos Microsoft Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Microsoft Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -213,10 +216,10 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket a m
     </tr>
     <tr class="even">
     <td>Felhasználó</td>
-    <td>Adott Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki a döntéshez hozzárendelni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki a döntéshez hozzárendelni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -234,8 +237,8 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket a m
     <li>A <strong>Várólista típusa</strong> listán, válassza ki a <strong>Feltételes munkatétel-várólisták</strong> lehetőséget.</li>
     <li>A <strong>Várólista neve</strong> listán jelölje ki a <strong>Feltételes várólista</strong> lehetőséget.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Megjegyzés:</strong> Ez a lehetőség csak néhány munkafolyamatok, például az esetkezelési szolgál.</td>
+    </ol>
+    <strong>Megjegyzés</strong>: Ezt a beállítást csak néhány munkafolyamatnál használják, például Esetkezelésnél.</td>
     </tr>
     </tbody>
     </table>
@@ -258,9 +261,9 @@ Ha a felhasználó nem hozza meg a döntést a megadott idő alatt, lejár a dö
     |----------|----------------------------|
     | 1        | Hozzárendelés a következőhöz: Dóra           |
     | 2        | Hozzárendelés a következőhöz: Ervin            |
-    | 3        | Végső művelet: \[1 választás\] |
+    | 3        | Végső művelet: \[Választható 1\] |
 
-    Ebben a példában a rendszer Dórához rendeli a lejárt döntést. Ha Dóra nem hozza meg a döntést a kijelölt időkereten belül, a rendszer Ervinhez rendeli hozzá. Ha Erin nem-e a megadott idő alatt, a rendszer kijelöli **\[választás 1\]** szóló döntést.
+    Ebben a példában a rendszer Dórához rendeli a lejárt döntést. Ha Dóra nem hozza meg a döntést a kijelölt időkereten belül, a rendszer Ervinhez rendeli hozzá. Ha Ervin nem hozza meg a döntést a kijelölt időkereten belül, a rendszer a **\[Választható 1\]** lehetőséget választja ki döntésként.
 3.  A felhasználó eszkalációs útvonalhoz történő hozzáadásához, kattintson az **Újabb eszkalációs lépés** lehetőségre. Válasszon ki egy lehetőséget a következő táblázatban, majd ezt követően végezze el a további lépéseket a beállításhoz, mielőtt továbblép a 4. lépésre.
     <table>
     <colgroup>
@@ -303,10 +306,10 @@ Ha a felhasználó nem hozza meg a döntést a megadott idő alatt, lejár a dö
     </tr>
     <tr class="odd">
     <td>Felhasználó</td>
-    <td>Adott Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki a döntéshez eszkalálni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki a döntéshez eszkalálni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -335,6 +338,8 @@ Kövesse az alábbi lépéseket, ha a döntést egy megadott időn belül kell m
     -   **Évek** – Válassza ki, hogy mely hónap, mely hét, mely napjáig kell a döntést meghozni. Kérheti például, hogy a döntést december harmadik hetének péntekéig kell meghozni.
 
 4.  Ha lejár az időkorlát, a rendszer hozza meg a döntést. Válassza ki a **Művelet** listából, hogy milyen beállítást kell a rendszernek kiválasztania.
+
+
 
 
 

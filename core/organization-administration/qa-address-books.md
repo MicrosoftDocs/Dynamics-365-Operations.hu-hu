@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="address-books"></a>Címjegyzékek
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="how-do-i-check-for-duplicate-records"></a>Hogyan tudom ellenőrizni, hogy vannak-e ismétlődő rekordok?
@@ -53,7 +56,7 @@ Bármikor tudja frissíteni a partnerrekordok nevét, illetve az azzal társíto
 ## <a name="can-i-merge-two-or-more-party-records-into-one-record"></a>Tudok-e két vagy több partnerrekordot egy rekordban egyesíteni?
 Bizonyos esetekben szükség lehet két vagy több partnerrekord egyetlen rekordban történő egyesítésére. Ez akkor fordulhat elő, ha szándékosan vagy véletlenül egy vagy több ismétlődő rekordot hoz létre. Partnerrekordok egyesítése esetén ki kell választania, hogy melyik rekordot szeretné megtartani. A további rekordokból származó információkat a rendszer ezzel a rekorddal egyesíti. Tegyük fel, például, hogy azt veszi észre, hogy a Faktúra Kft. adatait három partnerrekord tartalmazza: az A, B és C jelű. Úgy határoz, hogy az A jelűt fogja megtartani. Így a B és C jelű partnerrekordokban tárolt adatok az A jelűben kerülnek egyesítésre. Bizonyos esetekben nincs lehetőség a partnerrekordok egyesítésére:
 
--   Nem lehet egyesíteni az azonos félszerepkörhöz, például egyazon jogi személyhez tartozó vevőhöz vagy szállítóhoz társított partnerrekordokat. A fél társítva a vevő jogi személy 123, és a B fél rendelve egy másik vevő jogalany 123. Fél ezeket a rekordokat nem egyesíthetők, mert ha összevonva, az egyesített címjegyzékrekord kell társítani az azonos jogalany több ügyfelekkel, és ez nem megengedett. A rekordokat azonban egyesíthetők, ha a B jelű fél egy, az 123 jogi személyhez tartozó szállítóhoz, vagy egy másik jogi személyhez tartozó vevőhöz van társítva.
+-   Nem lehet egyesíteni az azonos félszerepkörhöz, például egyazon jogi személyhez tartozó vevőhöz vagy szállítóhoz társított partnerrekordokat. Vegyük például azt az esetet, hogy az A jelű fél társítva van egy, az 123 jogi személyhez tartozó vevőhöz, a B jelű fél pedig társítva van egy, az 123 jogi személyhez tartozó másik vevőhöz. Ezek a partnerrekordok nem egyesíthetők, mivel az egyesített partnerrekord több, egyazon jogi személyhez tartozó vevőhöz lenne társítva, ami nem engedélyezett. A rekordokat azonban egyesíthetők, ha a B jelű fél egy, az 123 jogi személyhez tartozó szállítóhoz, vagy egy másik jogi személyhez tartozó vevőhöz van társítva.
 -   Nem egyesíthetők az egyazon jogi személyhez vagy üzemi egységhez tartozó belsőfél-szervezetrekordok.
 
 ## <a name="should-i-create-a-party-record-in-the-global-address-book-or-in-another-place-such-as-the-customer-or-vendor-page"></a>A globális címjegyzékben, vagy egy másik helyen, például a vevő vagy szállító lapon érdemes létrehoznom a címjegyzék-bejegyzést?
@@ -64,5 +67,7 @@ A felek rekordjait a globális címjegyzékben vagy a megfelelő entitáslapon a
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Le lehet fordítani a partnerrekordok címadatait?
 A címadatok fordítását be tudja úgy állítani, hogy az adatok az Ön felhasználói nyelvén (a rendszernyelven) jelenjenek meg a Microsoft Dynamics 365 for Operations rendszerben, de más nyelven az olyan dokumentumokban, mint például egy értékesítési rendelés. Az országok és régiók nevei, illetve címzési célok és névsorozatok kapcsán tud megadni fordításokat. Ha például az Ön rendszernyelve a dán, tud értékesítési rendelést hozni létre egy franciaországi vevő részére. Ebben az esetben a programban tudja dán nyelven megjeleníteni a vevőrekordot, a nyomtatott értékesítési rendelésen azonban franciául tüntetni fel a címadatokat. A fordítások beállításakor a listában szereplő minden cikkhez kell megadnia fordítást. Azok a cikkek, melyekhez nem ad meg fordítás, a rendszernyelven jelennek meg. Ha például az Ön rendszernyelve a dán, tud dokumentumot küldeni egy spanyolországi vevő részére. Ha nem adott meg spanyol (ESP) fordításokat a címadatok kapcsán, úgy ezek az adatok dán nyelven jelennek meg, mind a programban, mind a bizonylaton.
+
+
 
 

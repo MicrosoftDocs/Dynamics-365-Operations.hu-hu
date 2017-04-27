@@ -1,5 +1,5 @@
 ---
-title: "Több rendelkező áru szállítási útvonalak tervezése"
+title: "Többmegállós szállítási útvonal tervezése"
 description: "Ez a cikk a Microsoft Dynamics AX szállítási útvonalak tervezéséhez használt különböző elemeit ismerteti."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Több rendelkező áru szállítási útvonalak tervezése
+# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Többmegállós szállítási útvonal tervezése
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk a Microsoft Dynamics AX szállítási útvonalak tervezéséhez használt különböző elemeit ismerteti.
 
@@ -48,5 +51,7 @@ Az ütemezett út egy előre meghatározott útvonalterv, mely ütemezett száll
 
 ## <a name="load-building-workbench"></a>Rakomány-összeállítási munkaterület
 A Rakomány-összeállítási munkaterület rakományjavaslat készítésekor vevői rendelésekhez tartozó vevők címeit és szállítási dátumokat, valamint az elérhető ütemezett útvonalakat használja. Az útvonal értékei a munkaterületre kerülnek az alapértelmezés szerint. Ugyanakkor az útvonal kezdő dátumánál korábbi kezdő dátum is választható. Rakományjavaslat esetén minden nyitott értékesítési rendelés szállítási címe és a szállítási dátuma ellenőrzésre kerül. Ha a szállítási cím irányítószáma és a központ irányítószáma egyezik az útvonaltervben, és ha a szállítási dátum a feltételekben a kijelölt tartományon belül van, a értékesítési rendelés javasolt lesz rakománynak. A rakománysablon-kapacitás szintén mérlegelésre kerül. Egyszerre csak rakományjavaslat lehetséges. Ha egy értékesítési rendelése nincs feltüntetve, más rakománysablont kell használnia (például egy rakománysablont nagyobb teherautó vagy tároló számára) vagy extra kiszállítást kell terveznie.
+
+
 
 

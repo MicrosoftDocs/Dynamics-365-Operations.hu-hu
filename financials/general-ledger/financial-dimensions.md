@@ -28,13 +28,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="financial-dimensions"></a>Pénzügyi dimenziók
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk bemutatja a pénzügyi dimenziók különféle típusait és azok beállításának módját.
 
 Használja a Pénzügyi dimenziók oldalt pénzügyi dimenziók létrehozásához, melyeket számlaszegmensként használhat számlatükrökhöz. Kétféle pénzügyi dimenzió van, egyéni és entitás által támogatott dimenzió. Az egyéni dimenziók jogi entitások között oszlanak meg, és az értékeket a felhasználó adja meg és tartja karban. Az entitás által támogatott dimenziók értéke a rendszerben máshol van meghatározva, például Vevők vagy Üzletek. Néhány entitás által támogatott dimenzió megoszlik a jogi személyek között, és néhány entitás által támogatott dimenzió vállalatspecifikus. 
 
 A pénzügyi dimenziók létrehozása után használja a Pénzügyi dimenzióértékek oldalt, és rendeljen hozzá további tulajdonságokat az egyes pénzügyi dimenziókhoz. 
 
-Bár a pénzügyi dimenziók segítségével Microsoft Dynamics 365 műveletek esetében a jogi személy létrehozása nélkül jogi személyek képviseletére, pénzügyi dimenziók a működési megoldására nem terveztek vagy jogi személyek üzleti igények. A Microsoft Dynamics 365 műveletek egységközi könyvelési funkció csak az egyes tranzakciók által létrehozott könyvelési tételek megoldását szolgálja. 
+Annak ellenére, hogy a pénzügyi dimenziók felhasználhatók jogi személyek képviseletére jogi személyek létrehozása nélkül a Microsoft Dynamics 365 for Operations alkalmazásban, a pénzügyi dimenziókat nem jogi személyek működési vagy üzleti igényeinek kielégítésére tervezték. A Microsoft Dynamics 365 for Operations rendszerben a Egységközi könyvelés funkció csak az egyes tranzakciók által létrehozott könyvelési tételek kezelését szolgálja. 
 
 Jogi személyiséggel rendelkező pénzügyi dimenziók beállítása előtt a következő területeken értékelje ki az üzleti folyamatait annak meghatározására, hogy ez a beállítás működik-e a szervezete esetében:
 
@@ -48,29 +51,31 @@ A következőkben néhány példa szerepel a korlátozásokra:
 -   Az áfa funkciók csak jogi személyekhez használhatók, a pénzügyi dimenziókhoz pedig nem.
 -   Egyes jelentések nem tartalmazzák a pénzügyi dimenziókat, ezért nem mindig jelenthet pénzügyi dimenziók szerint, csak ha ezeket a jelentéseket módosítják.
 
-**Custom dimensions** 
+**Egyéni dimenziók** 
 
-A használat mező értékei a felhasználó által definiált pénzügyi dimenzió, létrehozásához jelölje ki &lt;egyéni dimenzió&gt;. A formátummaszk megadásával továbbá korlátozhatja a dimenzióértékekhez megadható adatok mennyiségét és típusát. Megadhat olyan karaktereket, például betűket vagy kötőjelet, amelyek minden egyes dimenzióértéknél változatlanok maradnak. Kettős kereszteket is megadhat (\#) és a változónevekben (&) betűk és számok, amelyek módosítják a dimenzió érték jön létre minden egyes helyőrzőjeként. Használja a kettős kereszt (\#) számára egy számot és egy ampersand jelet (&) levél helyőrzője. 
+A felhasználó által definiált pénzügyi dimenziók létrehozásához az Értékek használata innen mezőben jelölje be az &lt; Egyéni dimenzió &gt; lehetőséget. A formátummaszk megadásával továbbá korlátozhatja a dimenzióértékekhez megadható adatok mennyiségét és típusát. Megadhat olyan karaktereket, például betűket vagy kötőjelet, amelyek minden egyes dimenzióértéknél változatlanok maradnak. Emellett megadhat kettős kereszt (\#) vagy és-jelet (&) olyan karaktereket, számok és betűk helyőrzőjeként, amelyek változni fognak a dimenzióértékek minden létrehozásakor. A kettős kereszt (\#) a számok, míg az és-jel (&) a betűk helyőrzője. 
 
 **példa** 
 
-A dimenzió értéket a levelek másolatot kap és a három számának korlátozásához meg CC -\#\#\# a formátum maszkként. Ez a mező csak akkor használható választja &lt;egyéni dimenzió &gt;a használandó értékek mezőjéből. 
+Ha például a dimenzióértéket két C betűre és három számra szeretné korlátozni, formátummaszkként a CC-\#\#\# értéket adja meg. Ez a mező csak akkor érhető el, ha az &lt; Egyéni dimenzió &gt; opciót választja ki az Értékek használata innen mezőből. 
 
-**Biztonsági entitás dimenziók** 
+**Entitás által támogatott dimenziók** 
 
-Mező értékei használja egy biztonsági szervezet pénzügyi dimenzió létrehozásához válassza ki a rendszer által definiált entitást a pénzügyi dimenzió alapjául. A kijelölés alapján létrejönnek a pénzügyi dimenzióértékek. Például projektek dimenzióértékeinek létrehozásához jelölje ki a Projekteket. A rendszer minden projektnévhez létrehozza a dimenzióértéket. A dimenzióértékek oldal megjeleníti az entitás értékeit, és ha ezek vállalatspecifikusak, az értékhez tartozó vállalatot. 
+Entitás által támogatott pénzügyi dimenzió létrehozásához az Értékek használata innen mezőben válasszon ki egy a pénzügyi dimenzió alapjául szolgáló rendszer által definiált entitást. A kijelölés alapján létrejönnek a pénzügyi dimenzióértékek. Például projektek dimenzióértékeinek létrehozásához jelölje ki a Projekteket. A rendszer minden projektnévhez létrehozza a dimenzióértéket. A dimenzióértékek oldal megjeleníti az entitás értékeit, és ha ezek vállalatspecifikusak, az értékhez tartozó vállalatot. 
 
-**Dimenzió aktiválása** 
+**Dimenziók aktiválása** 
 
 A pénzügyi dimenzió aktiválásával frissítheti a pénzügyi dimenzió nevét tartalmazó táblázatot, és eltávolíthatja a törölt dimenziókat. A pénzügyi dimenziók aktiválása előtt megadhat dimenzióértékeket, de a pénzügyi dimenzió nem használható fel sehol, amíg nincs aktiválva. Például nem adhat hozzá pénzügyi dimenziót számlastruktúrához, amíg nem aktiválódik a pénzügyi dimenzió. Az aktiválásra kattintva minden állapotmódosítással rendelkező dimenzió frissül. 
 
-**Translations** 
+**Fordítások** 
 
-A szöveg fordítása lap segítségével adja meg a kiválasztott pénzügyi dimenzió más nyelven megjeleníteni kívánt szöveget. A Fő számla fordítási oldalon a fő számlához különböző nyelveken megjeleníteni kívánt szöveget adhat meg. 
+A szövegek fordítása oldalon megadhat egy szöveget, amelyet a kijelölt pénzügyi dimenzióhoz különböző nyelveken megjeleníthet. A Fő számla fordítási oldalon a fő számlához különböző nyelveken megjeleníteni kívánt szöveget adhat meg. 
 
-**Legal entity overrides** 
+**Jogi személy felülbírálásai** 
 
-Nem minden méretek az alábbiakra érvényesek minden jogi személy, és néhány csak vonatkozhat egy adott ideig. Ebben az esetben a Jogi személy felülbírálása szakasz használható annak azonosítására, hogy mely vállalatok számára kell felfüggeszteni a dimenziót, ki a tulajdonos, és mely időszakban aktív a dimenzió.
+Nem minden dimenzió érvényes minden jogi személyre, és néhány csak egy adott időszakra vonatkozhat. Ebben az esetben a Jogi személy felülbírálása szakasz használható annak azonosítására, hogy mely vállalatok számára kell felfüggeszteni a dimenziót, ki a tulajdonos, és mely időszakban aktív a dimenzió.
+
+
 
 
 

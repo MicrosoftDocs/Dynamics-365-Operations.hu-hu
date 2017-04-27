@@ -1,5 +1,5 @@
 ---
-title: "Szállító jóváírásokon engedmények rendelkező részleges szállítói kifizetés kiegyenlítése"
+title: "Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik"
 description: "Ez a cikk végigvezeti Önt egy eseten, amelyben egy jóváírás egy számlával van kiegyenlítve."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Szállító jóváírásokon engedmények rendelkező részleges szállítói kifizetés kiegyenlítése
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk végigvezeti Önt egy eseten, amelyben egy jóváírás egy számlával van kiegyenlítve.
 
 A FAbrikam szállítói készpénzfizetési engedményeket kínálnak a jóváírásokra. A 3050. számú szállító 1 százalékos készpénzfizetési engedményt ad a Fabrikamnak, ha a számlát 14 napon belül fizetik.
 
 ## <a name="invoice-and-credit-memo"></a>Számla és jóváírás
-A június 29-én április 1 000,00 3050 szállítói számlát hoz létre. Július 2-án őt a 200,00 jóváírást hoz létre. A **Szállítók** oldalon April megnyitja a **Tranzakciók kiegyenlítése** lapot. A **Tranzakciók kiegyenlítése** lapon megjelöli a kiegyenlítéshez tartozó jóváírást és számlát is. Az 2,00 értékű engedményt a rendszer kiszámítja a jóváíráson. Így a jóváírás összértéke 198,00-ra csökken.
+Június 29-én April egy 1.000,00 értékű számlát hoz létre 3050-es szállító számára. Július 2-án 200,00 értékű jóváírást hoz létre. A **Szállítók** oldalon April megnyitja a **Tranzakciók kiegyenlítése** lapot. A **Tranzakciók kiegyenlítése** lapon megjelöli a kiegyenlítéshez tartozó jóváírást és számlát is. Az 2,00 értékű engedményt a rendszer kiszámítja a jóváíráson. Így a jóváírás összértéke 198,00-ra csökken.
 
 | Jelölés                     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -65,6 +68,8 @@ April a **Szállítói tranzakciók** oldalon tudja áttekinteni a szállítói 
 | Inv-10071  |                  | 2015/7/2  | CR10071 | 200,00                               |                                       | 0,00    | dollár      |
 | DISC-10071 |  Készpénzfizetési engedmény   | 2015/7/2  |         | 2,00                                 |                                       | 0,00    | dollár      |
 | DISC-10071 |  Készpénzfizetési engedmény   | 2015/7/2  |         |                                      | 2,00                                  | 0,00    | dollár      |
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Kérdőívek tervezése"
-description: "Ez a témakör ismerteti a kérdőív létrehozásának folyamata. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek."
+description: "Ez a témakor a kérdőívkészítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="design-a-questionnaire"></a>Kérdőívek tervezése
 
-Ez a témakör ismerteti a kérdőív létrehozásának folyamata. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
+Ez a témakor a kérdőívkészítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
 
 Egy alaposan megtervezett kérdőív segítségével javítható a begyűjtött adatok minősége. Alapos tervezéssel könnyebben kiválaszthatja a megfelelő beállításokat a megfelelő időben kérdőívhez. A következő szempontok segíthetnek hatékony kérdőívet tervezni:
 
@@ -87,12 +87,12 @@ A kérdőív-paraméterek opcionálisak. A vállalata igényeinek megfelelően h
 
 A kérdőív paraméterek meghatározzák az anonimitást, a sorozatszám kódokat és a kérdőív referencia típusait. Amikor egy szervezet szétosztja a kérdőíveket, a válaszadók anonimitásának megőrzése problémát jelenthet. 
 
-A számsorozat-kódok a kérdések és a válaszok rendszerezésére szolgálnak. A számsorozat-kódok alapján, értékeit automatikusan hozzárendeli az elemeket. 
+A számsorozat-kódok a kérdések és a válaszok rendszerezésére szolgálnak. E számsorozat-kódok alapján az értékeket a rendszer automatikusan hozzárendeli a cikkekhez. 
 
 Az adatok elkészítése előtt ajánlott minden paramétert meghatározni. A kérdőív beállítások később bármikor módosíthatóak.
 
 ## <a name="questionnaire-components"></a>A kérdőív részei
-Kérdőívek három fő elemekből áll: válasz a válaszokat a több választási lehetőséget tartalmazó csoport kérdések, kérdések és a kérdőív. A kérdések kérdőív eredménye csoportokba tetszés szerint csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
+A kérdőívek három fő elemből állnak: válaszcsoportok, melyek a feleletválasztós kérdések válaszait tartalmazzák, kérdések és a kérdőív maga. A kérdéseket a kérdőíven válaszcsoportokba csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -235,6 +235,6 @@ Másik lehetőségként egy kérdőív összeállítható úgy is, hogy ha a vá
 
 [Kérdőívek kiosztása és kitöltése](distribute-questionnaires.md)
 
-[Megtekintés, és a kérdőív eredményeinek értékelése](evaluate-questionnaire-results.md)
+[Kérdőívek megtekintése, az eredmények kiértékelése](evaluate-questionnaire-results.md)
 
 

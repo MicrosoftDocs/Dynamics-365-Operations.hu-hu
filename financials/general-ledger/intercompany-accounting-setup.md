@@ -1,6 +1,6 @@
 ---
 title: "Vállalatközi könyvelés beállítása"
-description: "Ez a témakör ismerteti, hogy a vállalatközi naplók a főkönyvi felosztásban és pénzügyi naplókra, például a napi naplókat, szállítói számla naplók és kifizetési naplók használható vállalatközi könyvelés beállítása."
+description: "Ez a témakör ismerteti a vállalatközi könyvelés beállításának módját annak érdekében, hogy a vállalatközi naplók használhatók legyenek főkönyvi felosztásokhoz és pénzügyi naplókhoz, például a napi naplókhoz, szállítóiszámla-naplókhoz és fizetési naplókhoz."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,23 +27,28 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="intercompany-accounting-setup"></a>Vállalatközi könyvelés beállítása
 
-Ez a témakör ismerteti, hogy a vállalatközi naplók a főkönyvi felosztásban és pénzügyi naplókra, például a napi naplókat, szállítói számla naplók és kifizetési naplók használható vállalatközi könyvelés beállítása.
+[!include[banner](../includes/banner.md)]
 
-Vállalatközi naplók is létrehozható különböző helyzetekben, például a napi naplókat, szállítói számla naplók, főkönyvi felosztásban és központosított fizetési. Az esetek engedélyezéséhez, be kell állítania a vállalatközi könyvelést.
+
+Ez a témakör ismerteti a vállalatközi könyvelés beállításának módját annak érdekében, hogy a vállalatközi naplók használhatók legyenek főkönyvi felosztásokhoz és pénzügyi naplókhoz, például a napi naplókhoz, szállítóiszámla-naplókhoz és fizetési naplókhoz.
+
+Vállalatközi naplók számos helyzetben létrehozhatóak, például napi naplók, szállítóiszámla-naplók, főkönyvi felosztások és központosított kifizetések számára. Az esetek engedélyezéséhez, be kell állítania a vállalatközi könyvelést.
 
 ## <a name="define-main-accounts"></a>Fő számlák meghatározása
-Először, létre kell hoznia a vállalatközi fő számlákat, hogy használhassa az Esedékes ide és az Esedékes innen lehetőségeket a számlázási bejegyzésekből. Tanácsos minden egyes vállalatnál egyedi fő számlát használni, az egyeztetés és a vállalatközi számlázási bejegyzések törlésének egyszerűsítése érdekében. Ha a kereskedelmi partnerekkel vagy partner dimenzió vállalatközi fél azonosítására használ, ezt a dimenziót határozhat meg rögzített dimenziónak a fő számla meghatározása a vállalatközi könyvelés. A fő számlák beállításakor meg kell a **fő típusa** mező **mérleg** meg a **fő számlák** oldalon.
+Először, létre kell hoznia a vállalatközi fő számlákat, hogy használhassa az Esedékes ide és az Esedékes innen lehetőségeket a számlázási bejegyzésekből. Tanácsos minden egyes vállalatnál egyedi fő számlát használni, az egyeztetés és a vállalatközi számlázási bejegyzések törlésének egyszerűsítése érdekében. Ha egy kereskedelmi partnert, vagy ellenoldali dimenziót használ a vállalatközi fél azonosítására, a dimenziót megadhatja fix dimenzióként a főszámlán, amely a vállalatközi számlázásban van megadva. Amikor a fő számlákat állítja be, állítsa a **Főszámla típusa** mezőt **Mérleg** értékre a **Fő számlák** oldalon.
 
-## <a name="define-journal-names"></a>A Naplónevek megadása
-Ezután meg kell adnia egy naplónevet. Állítsa be a **naplótípus** mező **napi** a a **Naplónevek** oldalon. Rendkívül hasznos lehet, ha a vállalatközi könyveléshez egy adott naplónevet használ.
+## <a name="define-journal-names"></a>Naplónevek meghatározása
+Ezután meg kell adnia egy naplónevet. Állítsa a **Naplótípus** mezőt **Napi** értékre a **Naplónevek** oldalon. Rendkívül hasznos lehet, ha a vállalatközi könyveléshez egy adott naplónevet használ.
 
-## <a name="define-intercompany-accounting-setup"></a>Adja meg a vállalatközi könyvelés beállítása
-A **vállalatközi könyvelés** lap egymással a párok is transact jogalanyok létrehozására szolgál. A vállalatközi könyvelési beállítás meg van osztva, így a telepítő minden jogi személy belül látható. Két új jogi személy létrehozása esetén ellenőrizze, hogy milyen jogi személy minősül, és a célvállalat származó vállalat tudomást. Vállalatközi tranzakciók megadásakor a tranzakció határozza meg, mely jogi személy kezdeményezése, vagy a tranzakció származó. Például a vállalatközi könyvelés van beállítva (származó) USMF és USSI (cél). Ha a felhasználó aktív a USSI és USMF tartalmazó vállalatközi tranzakciók belép, a tranzakció nem könyveli, mert a vállalatközi könyvelés csak USMF van definiálva a megbízó alatt. Amennyiben mindkét vállalat egy tranzakció is származnak, szüksége lesz egy második jogalany pár a kölcsönös beállítás létrehozásához. 
+## <a name="define-intercompany-accounting-setup"></a>Vállalatközi könyvelés beállításának meghatározása
+A **Vállalatközi könyvelés** oldal használatával létrehozhatók azon jogiszemély-párok, amelyek tranzakciókat bonyolíthatnak le egymással. A Vállalatközi könyvelési beállítása meg van osztva, így a beállítások minden jogi személyen belülről láthatók. Új jogiszemély-pár létrehozásánál ellenőrizze, hogy tudja-e, melyik jogi személy minősül meghatározás szerint kiindulási vállalatnak és melyik célvállalatnak. Vállalatközi tranzakciók megadásakor a tranzakció határozza meg, mely jogi személy kezdeményezése vagy indítja a tranzakciót. Vegyük például, hogy a vállalatközi könyvelés USMF-re (kiindulási) and USSI-re (van) van beállítva. Ha egy felhasználó az USSI-nél aktív, és megad egy vállalatközi tranzakciót az USMF-rel, a tranzakció nem kerül feladásra, mert a vállalatközi könyvelésben csak az USMF van kezdeményezőként meghatározva. Amennyiben mindkét vállalat kezdeményezhet tranzakciót, úgy egy második jogiszemély-párt is létre kell hoznia a fordított beállítás céljára. 
 
-Válassza ki a **tartozik számla (által fizetendő)** és **követel számla (mert a)** mind a kiinduló és a jogi személy. Határozza meg, amely **neve** lesz, ha a tranzakció létrejön a célvállalat. A napló a származó vállalat már ismert, mert be van jelölve a felhasználó által, a vállalatközi tranzakciók létrehozásakor. 
+Válassza ki a **Tartozik számla (Kiinduló)** és **Követel számla (Cél)** elemeket mind a kezdeményező, mind a cél jogi személynek. Határozza meg, mely **Napló neve** lesz használatos akkor, ha a tranzakció a célvállalatban jön létre. A kiindulási vállalat naplója már ismert, mert a vállalatközi tranzakció létrehozásakor a felhasználó kiválasztotta. 
 
-Végül válassza ki, mely jogi személy kap a kiegészítő összegeket, például a készpénzfizetési engedmény és központosított fizetési realizált nyereség/veszteség elszámolása. 
+Végül válassza ki, mely jogi személyhez kerül a könyvelés a kiegészítő összegek után - ilyen például a készpénzfizetési engedmény, illetve a központosított fizetések realizált nyereségeinek/veszteségeinek elszámolása. 
 
-Kölcsönös kapcsolat könnyen beállíthatja a a **vállalatközi könyvelés** lap segítségével a **kölcsönös kapcsolat létrehozása** után az első pár jogi személy létrehozása gombra. A kölcsönös kulcspár létrehozásakor a célvállalatnak az a adatainak másolása kiindulási vállalatát és fordítva. A célvállalat definiálva a napló marad. A legtöbb szervezet használja az azonos elnevezési a Naplónevek, úgy, hogy a napló neve megegyezik. Ha eltér a napló nevét, figyelmeztetés jelenik meg a mező jelzi, hogy a napló nem létezik, és kiválasztható egy másik naplóban.
+Fordított kapcsolat az első jogiszemély-pár létrehozása után könnyen beállítható a **Vállalatközi könyvelés** oldalon a **Fordított kapcsolat létrehozása** gomb segítségével. A fordított pár létrehozásakor a célvállalat adatai átmásolódnak a kiindulási vállalathoz, és fordítva. A célvállalat számára meghatározott napló megmarad. A legtöbb szervezet ugyanazokat az elnevezési szokásokat használja a naplónevekhez, hogy a naplónév azonos legyen. Ha a naplónév eltér, figyelmeztetés jelenik meg a mezőben, amely jelzi, hogy a napló nem létezik, és hogy ki lehet választani egy másik naplót.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Továbbfejlesztett banki egyeztetés áttekintés"
-description: "Továbbfejlesztett banki egyeztetés lehetővé teszi elektronikus banki kivonatok importálása és a Microsoft Dynamics 365 műveletek banki tranzakciók automatikusan egyeztetni.  Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan."
+description: "A Továbbfejlesztett banki egyeztetés lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Operations banki tranzakcióiba.  Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,34 +26,39 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Továbbfejlesztett banki egyeztetés áttekintés
 
-Továbbfejlesztett banki egyeztetés lehetővé teszi elektronikus banki kivonatok importálása és a Microsoft Dynamics 365 műveletek banki tranzakciók automatikusan egyeztetni.  Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan.  
+[!include[banner](../includes/banner.md)]
 
-Számos darabot, hogy a továbbfejlesztett banki egyeztetés funkció használata előtt be kell állítani. Bankkivonat importálása beállításával kapcsolatos további tudnivalókért lásd: [a banki kivonat importálási folyamat beállítása](set-up-advanced-bank-reconciliation-import-process.md).  Állítsa be az egyeztetési folyamat követelményei vannak az alább részletezett.
+
+A Továbbfejlesztett banki egyeztetés lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Operations banki tranzakcióiba.  Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan.  
+
+Számos darabot a továbbfejlesztett banki egyeztetés funkció használata előtt be kell állítani. A Bankkivonat importálásának beállításával kapcsolatos további tudnivalókért lásd: [A banki kivonat importálási folyamatának beállítása](set-up-advanced-bank-reconciliation-import-process.md).  Az egyeztetési folyamatra vonatkozó követelmények alább vannak részletezve.
 
 ## <a name="transaction-codes"></a>Tranzakciókódok
-Kifizetésitranzakció-kódok a banki egyeztetési szabályok részeként használható.  Kifizetésitranzakció-kódok segítségével megfelelően csak az azonos típusú tranzakciók Dynamics 365 műveletekhez és a bankszámlakivonat között.  Ez a típus a megfelelő végrehajtásához kell először Dynamics 365 műveletekhez a banki tranzakciókhoz használt tranzakciótípus megadása, majd e típusok hozzárendelése a bank által használt szereplő tranzakciókódok.  Tranzakciótípusok 365 Dynamics műveletek banki tranzakciók meg vannak adva a **banki tranzakciótípus** oldalon.  Ez akkor is, ahol megadhatja a társított tranzakció típusát feladásokhoz használt fő számla. 
+A tranzakciókódok a banki egyeztetési szabályok részeként használhatók.  Tranzakciókódok segítségével biztosítható, hogy csak az azonos típusú tranzakciók kerüljenek egyeztetésre a Dynamics 365 for Operations és a bankszámlakivonat között.  Ezen típusú egyeztetés végrehajtásához először meg kell határozni a banki tranzakciókhoz használt tranzakciótípusokat a Dynamics 365 for Operationsből, majd e típusokat hozzá kell rendelni a bank kivonatán szereplő tranzakciókódokhoz.  A Dynamics 365 for Operations banki tranzakcióinak tranzakciótípusai a **Banki tranzakciótípusok** lapon vannak meghatározva.  Itt adhatja meg a tranzakció típusával társított feladásokhoz használt fő számlát is. 
 
-Miután a Dynamics 365 műveletek banki tranzakció kódok vannak megadva, akkor rendelje hozzá azokat, az elektronikus banki kivonatok használt tranzakciókódok.  Történik a leképezési folyamat segítségével a **Tranzakciókód-hozzárendelés** oldalon.  Minden bankszámlát külön kitöltése Tranzakciókód-hozzárendelés.
+Miután meghatározta a Dynamics 365 for Operations banki tranzakciókódjait, rendelje hozzá azokat az elektronikus banki kivonatokban használt tranzakciókódokhoz.  Ez a leképezési folyamat a **Tranzakciókód-hozzárendelés** oldalon hajtható végre.  A tranzakciókódok hozzárendelését minden bankszámlánál külön el kell végezni.
 
 ## <a name="matching-rules-and-matching-rule-sets"></a>Az Egyeztetési szabályok és a megfelelő szabálykészletek
-Egyeztetési szabályok lehetővé teszik az automatikus egyeztetését Dynamics 365 műveletek banki tranzakciókhoz és a bankszámlakivonaton szereplő feltételek meghatározása.  Egyeztetési szabályok beállítása úgy történik, a **egyeztetési szabályok** oldalon.  További tudnivalókért lásd: [banki egyeztetési szabályok beállítása](set-up-bank-reconciliation-matching-rules.md). 
+Az egyeztetési szabályok lehetővé teszik a Dynamics 365 for Operations banki tranzakciói és a bankszámlakivonat tranzakciói közötti automatikus egyeztetést.  Egyeztetési szabályok beállításához használja az **Egyeztetési szabályok** oldalt.  További tudnivalókért lásd: [Banki egyeztetési szabályok beállítása](set-up-bank-reconciliation-matching-rules.md). 
 
-Adjon meg egy csoportot a megfelelő sorrendben a banki egyeztetés során futtatandó szabályok szabálykészletek szolgálnak.  Szabálykészletek van beállítva a **Egyeztetési szabálykészletek** oldalon.
+Az egyeztetési szabálykészlet olyan egyeztetési szabályok csoportjainak meghatározására szolgál, amelyeket a rendszer sorrendben futtat a banki kivonat egyeztetési folyamata során.  Az egyeztetési szabálykészletek konfigurálása az **Egyeztetési szabálykészletek** oldalon történik.
 
 ## <a name="cash-and-bank-management-parameters"></a>Készpénz- és bankkezelési paraméterek
-Számos paramétert a továbbfejlesztett banki egyeztetési folyamat jellemző a **banki paraméterek** oldalon.  A **megjelenítése kivonat sor összege tartozik/követel** megváltozik az összegek megtekintése a **banki kivonat** oldalon.  Ha ezt a beállítást választja, a banki kivonat tranzakció összegeit tartozik és a követel oszlopokban jelenik meg.  Ha nincs bejelölve, a banki kivonat tranzakció összegeit a megfelelő jelzéssel legyen egyetlen összeg oszlopban jelenik meg. 
+A **Készpénz- és bankkezelési paraméterek** oldalon számos, kifejezetten a továbbfejlesztett banki egyeztetési folyamattal kapcsolatos paraméter található.  A **Kivonatsor mennyiségének megjelenítése tartozik/követel oszlopokban** módosítja a **Banki kivonat** oldalon szereplő összegek nézetét.  Ha ezt a beállítást választja, a banki kivonat tranzakcióösszegei külön-külön a tartozik és követel oszlopokban fognak megjelenni.  Ha nem ezt választja, akkor a banki kivonat tranzakcióösszegei a megfelelő jellel egy összegmezőben fognak megjelenni. 
 
-A ellenőrzési beállításokat a Paraméterek lapon beállított egyeztetési szabályok beállítása a beállítások felülbírálása.  Például nem lehet manuálisan vagy automatikusan megfelelteti a dokumentumok a Paraméterek lapon beállított dátum különbség túl.  Is ha a lehetőséget, hogy **tranzakciótípus-leképezésének ellenőrzése** van jelölve, a tranzakciótípusok le kell képezni illeszkednie kell manuálisan vagy automatikusan a Dynamics 365 műveletek banki tranzakció és annak érdekében, hogy a tranzakciók a bankszámlakivonaton szereplő tranzakció között. 
+A Paraméterek lapon beállított ellenőrzési beállítások felülírják az egyeztetési szabályokban beállított kiválasztásokat.  Például nem lehet manuálisan vagy automatikusan egyeztetni dokumentumokat a paraméterek lapon beállított dátumkülönbségen túl.  Ha a beállítás **Tranzakciótípus hozzárendelésének ellenőrzése** lehetőségre van beállítva, a tranzakciótípusokat a Dynamics 365 for Operations banki tranzakciói és a banki kivonat tranzakciói között le kell képezni a tranzakciók manuálisan vagy automatikusan történő egyeztetéséhez. 
 
-Is konfigurálnia kell a szükséges számsorozatokat a **banki paraméterek** oldalon.  A a **Number sequences** lapon, a beállított számsorozat-kódok a Letöltés **azonosító, utasítást azonosító, azonosító összehangolása és banki egyeztetési** hivatkozásokat.
+Továbbá konfigurálnia kell a szükséges számsorozatokat a **Készpénz- és bankkezelési paraméterek** oldalon.  A **Számsorozatok** lapon állítsa be a számsorozat-kódokat az **Azonosító, az Utasítás azonosítója, az Egyeztetési azonosító, és a banki egyeztetés** Letöltés hivatkozásra vonatkozóan.
 
 ## <a name="bank-account-reconciliation-options"></a>Bankszámla-egyeztetés beállítások
-Először engedélyeznie kell a bankszámlához tartozó speciális banki egyeztetést.  Számos további beállítások érhetők el a **bankszámla** oldalon a továbbfejlesztett banki egyeztetés funkció engedélyezése után. 
+Először engedélyeznie kell a bankszámlához tartozó Továbbfejlesztett banki egyeztetést.  Számos további beállítás érhető el a **Bankszámla** oldalon a Továbbfejlesztett banki egyeztetés funkció engedélyezése után. 
 
-**Elektronikus fizetési visszaigazolásként használata banki kivonatok** funkció a banki egyeztetés funkciók integrálható elektronikus fizetési állapot.  Ha ez engedélyezve van, a banki bizonylat automatikusan létrejön az elektronikus fizetési állapot értéke a **küldött**.  Ezenkívül egy elektronikus fizetési állapotának frissülni fog a **küldött**, **érkezett** után a fizetési mérik, egyeztetett, és könyvelt. 
+A **Banki kivonatok használata az elektronikus fizetések visszaigazolására** funkció a banki egyeztetés funkcióját az elektronikus fizetési állapotokba integrálja.  Ha ez engedélyezve van, a banki bizonylat automatikusan létrejön az **Elküldött** állapotra beállított elektronikus fizetési állapotra vonatkozóan.  Ezenkívül az elektronikus fizetések állapota az **Elküldött** állapotról **Fogadott** állapotra fog frissülni a fizetés megfeleltetése, egyeztetése és feladása után. 
 
-A **a kimutatásokban bankszámla neve** a neve, az elektronikus banki kivonatok a bankszámlához használt.  Ez a név használatos, mely tranzakciók importálása olyan nyilatkozat, amely több bankszámlákra vonatkozó információkat tartalmazhat a bankszámlához tartozó meghatározásakor. 
+**A kimutatásokban szereplő bankszámla neve** mező neve az elektronikus banki kivonatokban szereplő bankszámlára vonatkozó névvel egyezik meg.  Ez a név annak eldöntésekor használatos, hogy mely tranzakciók kerüljenek importálásra azon kivonatból származó bankszámlára vonatkozóan, amely több bankszámlára vonatkozó információkat tartalmazhat. 
 
-A lehetőséget, hogy **az importálás után összehangolás** lesz automatikusan a banki kivonat ellenőrzése, hozzon létre egy új bankszámla-egyeztetés és a munkalap és az alapértelmezett szabály beállítása megfelelő futtatásához.  Ez a funkció az előfizetőknek a tranzakciókat kézzel kell egyeztetni, pontig.  A bankszámla a beállítás alapértelmezés szerint importálásakor.
+Az **Egyeztetés az importálás után** lehetőségre történő beállítás automatikusan ellenőrzi a banki kivonatot, új banki egyeztetést és munkalapot hoz létre, és futtatja az Alapértelmezett egyeztetési szabálykészletet.  Ez a funkció automatizálja a folyamatot addig a pontig, ahol már a tranzakciókat kézzel kell egymáshoz rendelni.  A bankszámla beállítása visszaáll alapértelmezésre az importáláskor.
+
+
 
 

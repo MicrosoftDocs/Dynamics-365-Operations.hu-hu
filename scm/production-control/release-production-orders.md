@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="release-production-orders"></a>Termelési rendelések kiadása
 
+[!include[banner](../includes/banner.md)]
+
+
 A kiadott termelési rendelés olyan rendelés, amely engedélyt kapott termelésre. A „Kiadva” kifejezés, egy a termelés rendelési ciklus állapotát leíró elnevezés. Jelentése, hogy a termelési rendelés készen áll a raktári folyamatokra és az értékesítésre. 
 
 <a name="characteristics-of-the-released-state"></a>A Kiadott állapot szerinti jellemzők
@@ -42,7 +45,7 @@ A **Kiadott** folyamatállapot a termelési rendelés életciklusának egy álla
 -   A ténylegesen lefoglalt anyagok esetében raktár munka generálódik, hogy az anyagokat ki lehessen tárolni a termelési rendeléshez.
 
 ## <a name="releasing-jobs-to-the-shop-floor"></a>Feladatok kiadása az üzem számára
-Egy termelési rendelést kiadását követően, a hozzá kapcsolódó termelési feladatok láthatók, és készen állnak a regisztrációra. A piaci szereplők teheti a feladatregisztrációk, Start, Stop és befejezését, sem a **feladat kártya terminál** lap vagy a **feladat kártya eszköz** lap. A regisztrált idő és a mennyiség automatikusan átkerülnek a regisztrációs lapok a termelési naplók segítségével nyomon tudja követni a felhasznált idő és mennyiség.
+Egy termelési rendelést kiadását követően, a hozzá kapcsolódó termelési feladatok láthatók, és készen állnak a regisztrációra. A kezelők feladatregisztrációkat végezhetnek – például indítás, leállítás és befejezés – a **Feladatkártya-terminál** vagy a **Feladatkártya-eszköz** lapon. A regisztrált idő és mennyiség automatikusan átkerül a regisztrációs lapokról a termelési naplókba, hogy nyomon követhető legyen a felhasznált idő és mennyiség.
 
 ## <a name="route-cards"></a>Útvonalkártyák
 Az útvonalkártya áttekintő információt tartalmaz az útvonal és a művelet beállítása, illetve a feladatütemezési módszerek alapján.
@@ -54,11 +57,13 @@ Az útvonalfeladat egy művelet mindegyik feladatát részletesen felsorolja, é
 A feladatkártya egy adott művelet egyéni feladatszámait sorolja fel. Egy feladat jelenik meg minden oldalon. A feladatkártyán szereplő feladatok és becsült idejük az útvonal és a művelet beállítási adataiból származik. A feladatkártyáról megnyithatók a **Termelésinapló-sorok**, a **Feladatkártya **oldalon. A műveleti erőforrásokat működtető emberek visszajelzést adhatnak a termelési folyamatról. Vannak olyan mezők, ahol felhasználási statisztikai adatokat és egyéb információkat adhatnak meg, például a hibák mennyiségét.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Raktári munka a nyersanyag-kitároláshoz.
-A nyersanyag-kitárolási munka a kiadás során jön létre. Munka csak anyagok előtt jelent meg a rendelés a termelési rendelés ténylegesen lefoglalt mennyiség keletkezik. A következő telepítési szükség a nyersanyag kitárolási raktár építése létrehozásához:
+A nyersanyag-kitárolási munka a kiadás során jön létre. A munka csak ahhoz az anyagmennyiséghez jön létre, amelyet ténylegesen lefoglaltak a termelési rendeléshez a rendelés kiadása előtt. A következő beállítás szükséges raktári munka létrehozásához a nyersanyag-kitároláshoz:
 
 -   A nyersanyag-kitárolási helyutasítás azt határozza meg, hogy melyik helyen lévő raktárból legyenek az anyagok kitárolva.
 -   Hullámsablon nyersanyagok számára, ahol a raktári munka végrehajtásához szükséges szabályok konfigurálódnak.
 -   Termelések beérkezési helye, amely meghatározza, hogy hová teszik az anyagokat
+
+
 
 
 

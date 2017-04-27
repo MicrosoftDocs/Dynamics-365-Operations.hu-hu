@@ -1,5 +1,5 @@
 ---
-title: "Kanban átviteli tábla támogatja vonalkód lapolvasók"
+title: "Kanban átviteli tábla támogatás vonalkódolvasókhoz"
 description: "A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban átviteli tábla támogatja vonalkód lapolvasók
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban átviteli tábla támogatás vonalkódolvasókhoz
+
+[!include[banner](../includes/banner.md)]
+
 
 A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot.
 
@@ -46,13 +49,13 @@ A **Leolvasó regisztrálása** gyorslapon kiválaszthatja a regisztrációs mó
 <a name="registration-mode-select"></a>Regisztrációs mód kiválasztása
 ------------------------
 
-Amikor segítségével vonalkódolvasóval jelöljünk ki egy feladatot, a megjelenítési mód a kanban testület módosításokat. Ebben az üzemmódban a következő feltételek érvényesek:
+Amikor vonalkódolvasó segítségével választ ki egy feladatot, a kanban tábla megjelenítési módja megváltozik. Ebben a módban a következő feltételek érvényesek:
 
 -   Csak a beolvasott kanbanfeladat jelenik meg.
 -   A kiválasztott feladat részletei megjelennek a **Részletek** gyorslapon.
 -   Az **Üzenetek** gyorslap csak a kijelölt feladathoz jelenít meg az üzeneteket.
 -   A feladat állapota a rendelkezésre álló funkciók használatával módosítható a Műveleti ablak modulban. Ezalatt a Kanban átviteli tábla továbbra is a csak egyetlen feladatot jelenít meg.
--   A feladatok listájában információkat saját kezűleg is frissítheti, kattintson **frissítési** (Shift + F5) meg a műveletpanelen. Az adatok frissítése után a feladatszűrő teljes eredményei jelennek meg ismét.
+-   A feladatok a listáján szereplő adatokat manuálisan frissítheti a **Frissítés** (Shift + F5) lehetőségre kattintva műveleti panelen. Az adatok frissítése után a feladatszűrő teljes eredményei jelennek meg ismét.
 
 ## <a name="job-status-and-possible-actions"></a>Feladat állapota, és a lehetséges műveletek
 Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állapota határozza meg, hogy lehet-e tovább feldolgozni a feladatot. Az alábbi táblázat a következő állapotok és feladatok adatait jeleníti meg:
@@ -185,6 +188,8 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 </tr>
 </tbody>
 </table>
+
+
 
 
 

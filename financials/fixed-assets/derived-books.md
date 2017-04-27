@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="derived-books"></a>Származtatott könyvek
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a származtatott könyv funkcióról nyújt áttekintést.
 
-Származtatott könyvek célja egyszerűsítése érdekében a befektetett eszköz tranzakcióinak rendszeres időközönként tervezett feladása.  Az elsődleges könyvként választhat egy könyvet. Ez általában az értékcsökkenés könyveléséhez használatos könyv. Ezután hozzákapcsolhatja ezt más könyvekhez, amelyek úgy vannak beállítva, hogy az elsődleges könyvvel megegyező időintervallumokban adjanak fel tranzakciókat. Az adózási szempontú értékcsökkenés könyvei gyakran származtatott könyvként vannak beállítva. 
+A származtatott könyvek célja az, hogy egyszerűbb legyen a tárgyi eszközök tranzakcióinak rendszeres időközönként tervezett feladása.  Elsődleges könyvként egy könyvet választhat ki. Ez általában az értékcsökkenés könyveléséhez használatos könyv. Ezután hozzákapcsolhatja ezt más könyvekhez, amelyek úgy vannak beállítva, hogy az elsődleges könyvvel megegyező időintervallumokban adjanak fel tranzakciókat. Az adózási szempontú értékcsökkenés könyvei gyakran származtatott könyvként vannak beállítva. 
 
 A származtatott könyvekkel feladott leggyakoribb tranzakciók a beszerzések, a beszerzési helyesbítések és a kivezetések. 
 
@@ -42,6 +45,8 @@ A tranzakció feladása során a program a B könyvben és a C könyvben is lét
 > [!NOTE]                                                                                                                               
 > Azokat a könyveket, amelyek úgy vannak beállítva, hogy az elsődleges könyv feladási időközeitől eltérő időközönként adják fel a tranzakciókat, külön könyvként (nem származtatott könyvként) kell a tárgyi eszközhöz társítani.  
 
-További tudnivalókért lásd: [feladás származtatott könyvek](post-derived-value-models.md).
+További információért lásd: [Feladás származtatott könyvekkel](post-derived-value-models.md).
+
+
 
 

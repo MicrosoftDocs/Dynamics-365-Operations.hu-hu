@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-methods-and-conventions"></a>Értékcsökkenési módszerek és szabályok
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk betekintést nyújt a Microsoft Dynamics AX által támogatott értékcsökkenési szabályokba és az értékcsökkenési metódusokba.
 
 Különféle értékcsökkenési módszerek és szabályok közül lehet választani. A módszerek célja, hogy a pénzügyi időszakok között felosszák a tárgyi eszköz értékcsökkenésként elszámolható értékét. A tárgyi eszköz értékcsökkenésként elszámolható részét úgy lehet kiszámítani, hogy a beszerzési árat csökkenti az esetleges maradványértékkel. 
@@ -66,26 +69,27 @@ A következő értékcsökkenési módok közül választhat.
 <a name="see-also"></a>Lásd még
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Tárgyi eszközök értékcsökkenése](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[Lineáris – élettartam szerinti értékcsökkenés](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[Degresszív értékcsökkenés](reduce-balance-depreciation.md)
 
-[Manual depreciation](manual-depreciation.md)
+[Kézi értékcsökkenés](manual-depreciation.md)
 
-[Factor depreciation](factor-depreciation.md)
+[Értékcsökkenési tényező](factor-depreciation.md)
 
-[Consumption depreciation](consumption-depreciation.md)
+[Felhasználás értékcsökkenése](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[Lineáris - hátralevő élettartam értékcsökkenés](straight-line-life-remaining-depreciation.md)
 
-[125 % degresszív értékcsökkenés](125-percent-reducing-balance-depreciation.md)
+[125 százalékos degresszív értékcsökkenés](125-percent-reducing-balance-depreciation.md)
 
-[150 % degresszív értékcsökkenés](150-percent-reducing-balance-depreciation.md)
+[150 százalék degresszív értékcsökkenés](150-percent-reducing-balance-depreciation.md)
 
-[175 % degresszív értékcsökkenés](175-percent-reducing-balance-depreciation.md)
+[175 százalék degresszív értékcsökkenés](175-percent-reducing-balance-depreciation.md)
 
-[200 % degresszív értékcsökkenés](200-percent-reducing-balance-depreciation.md)
+[200 százalék degresszív értékcsökkenés](200-percent-reducing-balance-depreciation.md)
+
 
 

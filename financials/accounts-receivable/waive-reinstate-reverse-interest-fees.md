@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Kamatok, díjak elengedése, visszaállítása vagy sztornírozása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ennek a cikknek a célja, hogy elmagyarázza a kamatok és díjak elengedésének, visszaállításának és fordított áfázásának folyamatát.
 
 Az **Összes vevő** listalap **Gyűjtés** lapján levő gombok használhatók a díjak elengedésére, sztornírozására vagy visszaállítására:
@@ -43,7 +46,7 @@ Ezek a műveletek megváltoztatják a kamatlevelet. A kamatlevél egy üzleti do
 | Teljes kamatlevelek sztornírozása. –vagy– Sztornírozhat a kamatlevelek részét képező kijelölt kamattranzakciókat. **Megjegyzés:** Nem vonhat vissza díjat. Ugyanakkor visszavonhatja a teljes kamatlevelet, amelyik tartalmazza a díjat. | A díjak már nem esedékesek a vevőtől. A díjak azonban újból esedékessé válnak, ha újraszámítja a kamatot. | A folyamat ugyanaz, mint a kamatlevelek vagy kijelölt kamattranzakciók elengedésének folyamata. A program létrehoz egy jóváírást vagy módosító számlát a vevő részére. Ennek a jóváírásnak a felhasználásával automatikusan kiegyenlíti a kamatlevelet. Külön folyamatot használhat a kamat újraszámítására és új kamatlevél létrehozására.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 > [!NOTE] 
-> Egy külön folyamat segítségével kétes követelések leírása. Ez a folyamat megjelöli az összes kiegyenlítésre szánt vevői tranzakciót, ahelyett, hogy csak a kamatlevelekben szereplő díjakat engedné el.
+> Külön folyamatokat is használhat behajthatatlan adósságok leírására. Ez a folyamat megjelöli az összes kiegyenlítésre szánt vevői tranzakciót, ahelyett, hogy csak a kamatlevelekben szereplő díjakat engedné el.
 
 ## <a name="adjust-interest-for-invoices"></a>Kamat beállítása számlákhoz
 A kamatlevelek kiigazítása mellett az alábbi eljárások használatával eltávolíthatja a számlákon szereplő kamatköltségeket is. Mindkét eljárás kiigazítást is végrehajt a kapcsolódó kamatleveleken.
@@ -89,5 +92,7 @@ Sztornírozhat kamattranzakciókat a **Kamattranzakció** gomb segítségével a
 Megtekintheti a kamatleveleken végzett módosítások részletes előzményeit, például a módosítást megadó felhasználó nevét, a módosítás típusát, az összeget, valamint a módosítás megadásának dátumát. Például célszerű lehet megtekinteni egy kamatlevélhez korábban megadott módosításokat, mielőtt új kamatlevelet hoz létre. 
 
 Sztornírozhat kamattranzakciókat az **Előzmények **gomb segítségével a **Vevő** oldal **Begyűjtés** lapján.
+
+
 
 

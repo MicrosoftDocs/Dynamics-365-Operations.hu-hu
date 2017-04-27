@@ -1,6 +1,6 @@
 ---
 title: "Billentyűparancsok"
-description: "A következő billentyűparancsok Microsoft Dynamics 365 műveleteknél alkalmazhatók."
+description: "A következő gyorsbillentyűk alkalmazhatók a Microsoft Dynamics 365 for Operations programban."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
-A következő billentyűparancsok Microsoft Dynamics 365 műveleteknél alkalmazhatók. 
+[!include[banner](../includes/banner.md)]
+
+
+A következő gyorsbillentyűk alkalmazhatók a Microsoft Dynamics 365 for Operations programban. 
 
 **Megjegyzés:** Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
 
@@ -40,7 +43,7 @@ A következő billentyűparancsok Microsoft Dynamics 365 műveleteknél alkalmaz
 | Ugrás a következő/előző opcióra egy menüben            | Lefelé nyíl/Felfelé nyíl            |
 | Lap bezárása a műveleti ablakban vagy egy menüben          | Esc                              |
 | Jobb-kattintás szimulálása                            | Shift+F10                        |
-| A Dynamics 365 műveletek helyi menüjének megnyitása | Ctrl+F10                         |
+| Nyissa meg a Dynamics 365 for Operations helyi menüjét | Ctrl+F10                         |
 | Az alapértelmezett gomb végrehajtása egy űrlapon/párbeszédablakban       | Alt+Enter                        |
 | Kattintás egy gombra vagy csempére                            | Enter vagy Szóköz                   |
 | Számláló csempe frissítési információinak megtekintése         | Alt+Felfelé nyíl                     |
@@ -64,7 +67,7 @@ A következő billentyűparancsok Microsoft Dynamics 365 műveleteknél alkalmaz
 | Az adatterület ablak megnyitása (vagy az adatterület ablakra fókuszálás, ha már meg van nyitva) | Ctrl+F2                                   |
 | Az adatterület ablak bezárása (a fókusszal az adatterület ablakban)                         | Esc                                       |
 | Ugrás a következő/előző adatterületre (a fókusszal az adatterület ablakban)              | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl |
-| Ugrás a &lt;n&gt;th adatterületet (a fókusz az adatterület)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Ugrás az &lt;n&gt;-edik adatterületre (a fókusszal az adatterület ablakban)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Adatterület kibontása (a fókusszal az adatterület fejlécen)                             | Szóköz vagy Enter                            |
 | Az aktuális adatterület összecsukása                                                    | Alt+0                                     |
 
@@ -111,8 +114,8 @@ A következő billentyűparancsok Microsoft Dynamics 365 műveleteknél alkalmaz
 | Ugrás a következő/előző mezőre                     | Tab/Shift+Tab                              |
 | Ugrás az következő/előző lapra                       | Alt+Shift+Jobbra nyíl/Alt+Shift+Balra nyíl |
 | Ugrás a következő/előző gyorslapra                   | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl    |
-| Ugrás a &lt;n&gt;th gyorslap                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Ugrás a &lt;n&gt;th lap                         | Alt + Shift +&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Ugrás az &lt;n&gt;-edik gyorslapra                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Ugrás az &lt;n&gt;-edik lapra                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Gyorslap kibontása (a fókusszal az Gyorslap fejlécen) | Szóköz vagy Enter                               |
 | Az aktuális gyorslap összecsukása                        | Alt+0                                        |
 | Váltás rácsnézetre                                 | Ctrl+Shift+G                                 |
@@ -152,7 +155,7 @@ A következő billentyűparancsok Microsoft Dynamics 365 műveleteknél alkalmaz
 | Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel megnyitása           | Alt+Lefelé nyíl                |
 | Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel bezárása          | Esc                           |
 | Fókusz áthelyezése egy keresésbe (Ha a keresés már meg nyitva) | Alt+Lefelé nyíl                |
-| Nyissa meg a vezérlő bővített megtekintés                        | Alt+Felfelé nyíl                  |
+| A vezérlés haladó előnézetének megtekintése                        | Alt+Felfelé nyíl                  |
 | Szöveg kiválasztása az aktuális mezőben                           | Ctrl+A                        |
 | Szövegterület belépés/elhagyás egy HTML szerkesztő vezérlőben        | Alt+Lefelé nyíl/Alt+Felfelé nyíl |
 
@@ -174,18 +177,18 @@ A következő billentyűparancsok Microsoft Dynamics 365 műveleteknél alkalmaz
 | Ugrás az irányítópultra                                                       | Alt+Shift+Home  |
 | Ugrás a navigációs sávra                                                  | Alt+Shift+F1    |
 | Ugrás a navigációs ablakra                                                 | Alt+F1          |
-| Kedvenc/un-favorite űrlap (a fókusz a navigációs ablak a képernyőn) | SHIFT + F         |
+| Űrlap megjelölése kedvencként/eltávolítása a kedvencek közül (űrlappal a navigációs ablakban) | Shift+F         |
 | Ugrás a vállalatválasztóba                                                  | Ctrl+Shift+O    |
 | Ugrás a navigációs keresésre                                                   | Ctrl+/ vagy Alt+G |
-| Nyissa meg a Súgó ablaktábla                                                        | CTRL +?          |
-| Nyissa meg a trace parser                                                     | Alt + Shift + T     |
+| A Súgó ablak megnyitása                                                        | Ctrl+?          |
+| Trace Parser megnyitása                                                     | Alt+Shift+T     |
 
  
 
 ## <a name="segmented-entry-shortcuts"></a>Szegmentált beviteli billentyűparancsok
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **To do this**                                                                                                          | **Press**                        |
+| **Teendő:**                                                                                                          | **Billentyű vagy billentyűkombináció**                        |
 | Legördülő lista megnyitása (amikor a legördülő lista zárva van)                                                             | Alt+Lefelé nyíl                   |
 | Fókusz áthelyezése az aktuális szegmens beviteli mezőjébe, a legördülő listában (amikor a legördülő lista már meg nyitva) | Alt+Lefelé nyíl                   |
 | Legördülő lista bezárása                                                                                                | Alt+Felfelé nyíl                     |
@@ -199,5 +202,7 @@ A következő billentyűparancsok Microsoft Dynamics 365 műveleteknél alkalmaz
 | Ugrás a keresés tetejére/aljára                                                                                    | Home/End                       |
 
  
+
+
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="maintain-planned-orders"></a>Tervezett rendelések karbantartása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a tervezett rendelések kezelésével kapcsolatban nyújt információkat. Leírja, hogyan frissítheti a tervezett rendelések állapotát, erősítheti meg őket, és hogy hogyan szűrheti a kijelölttel azonos állapotú tervezett rendeléseket.
 
 A tervezett rendeléseket kezelheti az **Alaptervezés** munkaterületen, a **Tervezett rendelés** listában, vagy a **Tervezett termelési rendelések**, **Tervezett beszerzési rendelések**, és **Tervezett átmozgatás** listákban. Használhatja az **Állapot** mezőt, ami segít nyomon követni folyamatot. A következő értékek kerülnek felhasználásra:
@@ -48,6 +51,8 @@ Amikor egy tervezett rendelést megerősít, akkor az a megfelelő modul rendel�
 <a name="see-also"></a>Lásd még
 --------
 
-[Master plans](master-plans.md)
+[Alaptervek](master-plans.md)
+
+
 
 

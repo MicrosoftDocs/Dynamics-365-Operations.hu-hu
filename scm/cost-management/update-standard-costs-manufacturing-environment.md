@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Az elszámolóár frissítése gyártási környezetben
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk az elszámolóárak gyártási környezetben történő frissítésének útmutatását tartalmazza. 
 
 A frissítések visszajelzést adhatnak az új cikkekről, költségkategóriákról vagy közvetett költségszámítási képletekről. Visszatükrözhetik a korrekciókat és a költségváltozásokat. A frissítés típusa kihatással van az önköltségi árak frissítéséhez szükséges lépésekre, amint azt az alábbi esetek bemutatják:
@@ -43,5 +46,7 @@ A frissítések visszajelzést adhatnak az új cikkekről, költségkategóriák
 -   Számítsa ki az új gyártott termék költségeit, annak meghatározott, jóváhagyott és aktív anyagjegyzék és útvonal-információi alapján.
 
 Minden egyes eset gondos odafigyelést igényel, amikor az önköltségi árak frissítésére kerül sor.
+
+
 
 

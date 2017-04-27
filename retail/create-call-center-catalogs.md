@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16212
 ms.assetid: c9d1b9df-82e8-4b3a-a13c-166df8b9718e
 ms.search.region: global
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-call-center-catalog"></a>Új hívásközpont létrehozása
 
+[!include[banner](includes/banner.md)]
+
+
 Ez a cikk egy áttekintést nyújt a telefonos ügyfélszolgálathoz tartozó katalógus létrehozásának folyamatáról. 
 
-Az ügyfélszolgálaton használhatja a termékkatalógusokat a termékek azonosításához, amelyet a vevőknek szeretne árusítani. Az ügyfélszolgálatok általában nyomtatott katalógusokat használnak. A tervezési és gyártási nyomtatott katalógus kívüli műveletek a Microsoft Dynamics 365 kezeli. Azonban létrehozhat és kiskereskedelmi és kereskedelmi műveletek Dynamics 365 ugyanazokat a űrlapokat, amelyek segítségével állítsa be az online kiskereskedelmi katalógusok segítségével a katalógus egy digitális formában tárolja. Katalógus létrehozása előtt állítsa be a termék szortimenteket a rendszerben, és a szortimenteket rendelje hozzá egy ügyfélszolgálathoz. Majd adja hozzá a termékeket a katalógushoz a termékek kijelölésével a szortimentekből. Miután a termékeket hozzáadta a katalógushoz, és a katalógus befejeződött, ellenőriznie kell a katalógust, az adatok igazolásához. Ezután küldje el a katalógust ellenőrzésre és jóváhagyásra. Jóváhagyás után a katalógus közzétehető. Az ügyfélszolgálati katalógus létrehozásakor, megnézheti a katalógusadatok pillanatképét abban az időpontban, amikor a katalógus közzétele történik. A pillanatkép-funkció segítségével elérheti a katalógus egy adott verzióját, még akkor is, ha a katalógus később módosul és frissül. Az ügyfélszolgálati katalógusokat is be lehet állítani, hogy az alábbi választható szolgáltatásokat tartalmazzák.
+Az ügyfélszolgálaton használhatja a termékkatalógusokat a termékek azonosításához, amelyet a vevőknek szeretne árusítani. Az ügyfélszolgálatok általában nyomtatott katalógusokat használnak. A nyomtatott katalógusok tervezése és gyártása a Microsoft Dynamics 365 for Operations rendszeren kívül történik. Azonban a katalógus digitális formáját a Dynamics 365 for Operations Kiskereskedelem és kereskedelem megoldásában is létrehozhatja és tárolhatja ugyanazon űrlapokkal, amelyeket az online kiskereskedelmi katalógusok beállítására használ. Katalógus létrehozása előtt állítsa be a termék szortimenteket a rendszerben, és a szortimenteket rendelje hozzá egy ügyfélszolgálathoz. Majd adja hozzá a termékeket a katalógushoz a termékek kijelölésével a szortimentekből. Miután a termékeket hozzáadta a katalógushoz, és a katalógus befejeződött, ellenőriznie kell a katalógust, az adatok igazolásához. Ezután küldje el a katalógust ellenőrzésre és jóváhagyásra. Jóváhagyás után a katalógus közzétehető. Az ügyfélszolgálati katalógus létrehozásakor, megnézheti a katalógusadatok pillanatképét abban az időpontban, amikor a katalógus közzétele történik. A pillanatkép-funkció segítségével elérheti a katalógus egy adott verzióját, még akkor is, ha a katalógus később módosul és frissül. Az ügyfélszolgálati katalógusokat is be lehet állítani, hogy az alábbi választható szolgáltatásokat tartalmazzák.
 
 -   **Forráskódok** – Kódok, amelyek az egyes katalógusokra kapott vevői válaszok nyomon követésére használatosak.
 -   **Szabadszöveges termékek** – Termékek, amelyek a vevői rendelésben extra díjak nélkül szerepelnek. Ezek a termékek hozzáadódnak a rendeléshez automatikusan a katalógus forráskódjának a rendelésbe történő bevitelekor.
@@ -62,11 +65,13 @@ A katalógust az érvényesítést követően elküldheti ellenőrzésre és jó
 ## <a name="optional-add-source-codes-free-products-and-scripts"></a>Választható: Forráskódok, ingyenes termékek és a parancsprogramok hozzáadása
 A következő elemeket hívás center katalógushoz is megadhat. Ezeket a funkciókat nem kötelező beállítani.
 
--   Míg mások nyomtatott katalógusok **Forráskódok** segítségével nyomon követheti a vevő választ melyik katalógusokban. Forráskódok gyakran nyomtatott katalógus hátoldalán és az értékesítési rendelés kerülnek be, amikor egy vevő. A forráskód hozzáadása a katalógushoz, először létre kell hoznia egy cél piac. A célzott piac általában hozzá van rendelve egy saját tulajdonú vagy bérelt levelezési listát.
+-   Míg mások nyomtatott katalógusok **Forráskódok** segítségével nyomon követheti a vevő választ melyik katalógusokban. Forráskódok gyakran egy katalógus hátoldalán vannak nyomtatva, és akkor kerülnek be az értékesítési rendelésbe, amikor a vevő leadja a rendelést. Forráskód a katalógushoz való hozzáadásához először létre kell hoznia egy célpiacot. A célpiac általában hozzá van rendelve egy saját tulajdonú vagy bérelt levelezési listához.
 -   **Ingyenes termékek** esetén szereplő akciós cikkek díjmentesen a vevői rendeléshez a katalógus hivatkozik.
 -   **Parancsfájlok** vezet a dolgozó interakciók vevők összefüggésben a katalógust vagy a katalógus belül használható.
 
 ## <a name="publish-the-catalog"></a>Katalógus közzététele
 A katalógus ügyfélszolgálat részére történő közzétételével véglegesíti a termékkel kapcsolatos információt a katalógusban. A közzététel azt is jelzi, hogy a katalógus kész további műveletekre, amelyeket szeretne végezni, például egy nyomtatott katalógus létrehozása. Ha például egy nyomtatott katalógus is létrehozhat. A katalógusokat manuálisan, vagy kötegfolyamat segítségével ütemezés alapján is közzéteheti. A katalógust a közzététel előtt ellenőrizni kell, és jóvá kell hagyni. Ha módosítani szeretné a katalógust a közzétételt követően, visszavonhatja a katalógust, és majd tegye közzé újra.
+
+
 
 

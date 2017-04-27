@@ -1,6 +1,6 @@
 ---
 title: "Munkaidő és jelenlét"
-description: "Ez a témakör ismerteti a munkaidő-nyilvántartás kezelése a Microsoft Dynamics 365 műveletek - kiskereskedelmi támogatott forgatókönyvek."
+description: "Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a Microsoft Dynamics 365 for Operations - Retail programot."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="retail-time-and-attendance"></a>Munkaidő és jelenlét
 
-Ez a témakör ismerteti a munkaidő-nyilvántartás kezelése a Microsoft Dynamics 365 műveletek - kiskereskedelmi támogatott forgatókönyvek. 
+[!include[banner](includes/banner.md)]
 
-<a name="manage-worker-setup-and-scheduling"></a>Dolgozó beállításainak és az ütemezés kezelése
+
+Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a Microsoft Dynamics 365 for Operations - Retail programot. 
+
+<a name="manage-worker-setup-and-scheduling"></a>Dolgozók elhelyezésének és ütemezésének kezelése
 ----------------------------------
 
 ### <a name="initial-configuration"></a> Induló konfiguráció
@@ -45,8 +48,8 @@ A konfigurációs lépésekkel kapcsolatos információkért látogassa meg a <h
 
 ### <a name="retail-specific-configuration"></a>Kiskereskedelem-specifikus konfiguráció
 
--   Engedélyezzen egy funkcionális profilt a Blokkolóórához azon dolgozók számára, akiknek lehetővé kívánja tenni az időregisztrációt. Kattintson a **POS-funkcióprofilok**&gt;**funkciók**&gt;**POS regisztrációk idő**&gt;**Időregisztrációk engedélyezése**.
--   Állítsa át a Pénztár (POS) engedélycsoportokat, hogy elérhetővé tegye a blokkolóóra bejegyzések megtekintése engedélyt. Ez az engedély lehetővé teszi, hogy a felhasználó megtekintse a bolt (Illetve más, a címjegyzék alapján a felhasználóhoz társítható boltok) dolgozóinak blokkolóóra regisztrációit. Ezt az engedélyt a vezető szerepkörű dolgozók számára ajánlott engedélyezni. Kattintson a **POS-engedélycsoportok**&gt;**Blokkolóóra bejegyzéseinek megtekintése**.
+-   Engedélyezzen egy funkcionális profilt a Blokkolóórához azon dolgozók számára, akiknek lehetővé kívánja tenni az időregisztrációt. Kattintson a **Pénztár-funkcióprofilok** &gt; **Funkciók** &gt; **Pénztár idő regisztrációk** &gt; **Időregisztrációk engedélyezése** lehetőségre.
+-   Állítsa át a Pénztár (POS) engedélycsoportokat, hogy elérhetővé tegye a blokkolóóra bejegyzések megtekintése engedélyt. Ez az engedély lehetővé teszi, hogy a felhasználó megtekintse a bolt (Illetve más, a címjegyzék alapján a felhasználóhoz társítható boltok) dolgozóinak blokkolóóra regisztrációit. Ezt az engedélyt a vezető szerepkörű dolgozók számára ajánlott engedélyezni. Kattintson a **Pénztár-engedélycsoportok** &gt; **Blokkolóóra bejegyzéseinek megtekintése** gombra.
 
 ## <a name="register-time"></a>Idő regisztrálása
 ### <a name="cashier-and-non-cashier-time-registrations"></a>Pénztáros és nem a pénztáros időregisztrációk
@@ -96,7 +99,7 @@ A konfigurációs lépésekkel kapcsolatos információkért látogassa meg a <h
     </tbody>
     </table>
 
-    [![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)
+    [![BlokkolóóraÁllások](./media/timeclockstates.png)](./media/timeclockstates.png)
 -   Tekintse meg a konfigurációs üzenetet és igazolja, hogy a pillanatnyi tevékenység idő korrekt.
 -   Napló:
     -   Kattintson a **Napló** gombra a blokkolóóra tevékenység megtekintéséhez.
@@ -106,9 +109,9 @@ A konfigurációs lépésekkel kapcsolatos információkért látogassa meg a <h
 <!-- -->
 
 -   Eltérő időzónák:
-    -   Ha az időt egy másik helyről nézi meg (a pénztáros naplóhoz vagy vezetői pozíció esetén a **Blokkolóóra bejegyzések megtekintése** opciót használva) és az adott hely másik időzónába esik, a megjelenített időpontok automatikusan az ön időzónájához igazodnak. Például egy két tárolókhoz vezető, az Arizona, Nevada másik. A pénztáros regisztrálja az egy óra a reggel 9:00 órakor Az Arizona. Az adott időpontban Nevadában, reggel 8 óra van. Tehát, ha ön a nevadai üzletben tartózkodik és megnézi az időregisztrációkat, a regisztrált idő reggel 8 óraként lesz mutatva.
+    -   Ha az időt egy másik helyről nézi meg (a pénztáros naplóhoz vagy vezetői pozíció esetén a **Blokkolóóra bejegyzések megtekintése** opciót használva) és az adott hely másik időzónába esik, a megjelenített időpontok automatikusan az ön időzónájához igazodnak. Például, ön két üzlet vezetője. Az egyik Arizónában, a másik Nevadában található. Az arizonai üzlet pénztárosa beregisztrál a blokkolóórán reggel 9 órakor. Az adott időpontban Nevadában, reggel 8 óra van. Tehát, ha ön a nevadai üzletben tartózkodik és megnézi az időregisztrációkat, a regisztrált idő reggel 8 óraként lesz mutatva.
 
-## <a name="view-worker-time-registrations"></a>Dolgozó idő regisztrációk megtekintése
+## <a name="view-worker-time-registrations"></a>Dolgozói munkaidő-nyilvántartás megtekintése
 ### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Dolgozói időregisztrációk megtekintése és szűrés üzlet vagy tevékenységtípus alapján
 
 A Pénztáron:
@@ -117,8 +120,8 @@ A Pénztáron:
 -   Az összes olyan dolgozó időregisztrációját láthatja akik önnel azonos üzlethez vannak hozzárendelve.
 -   Az időregisztrációk szűréséhez használhatja a tevékenységtípus szerinti és az üzlet szerinti szűrőket.
 
-## <a name="process-and-manage-time-registrations"></a>Feldolgozása és időregisztrációk kezelése
-A Dynamics 365 - műveletekhez kiskereskedelmi felhasználói számítása, jóváhagyása és bérlista idő regisztrációk átvitele a munkafolyamat következik.
+## <a name="process-and-manage-time-registrations"></a>Időregisztrációk feldolgozása és kezelése
+A Dynamics 365 for Operations - Retail-felhasználó követi a munkafolyamatot, hogy kiszámolja, jóváhagyja, valamint áthelyezze az időregisztrációkat a bérlistára.
 
 ### <a name="primary-operations"></a>Elsődleges műveletek
 
@@ -132,5 +135,7 @@ A Dynamics 365 - műveletekhez kiskereskedelmi felhasználói számítása, jóv
 -   Távollét regisztrálása
 
 Az idő feldolgozásáról és a jelenléti regisztrációkról szóló további információkért látogassa meg a következő oldalt: <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+
+
 
 

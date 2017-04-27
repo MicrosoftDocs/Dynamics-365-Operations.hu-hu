@@ -1,5 +1,5 @@
 ---
-title: "Több kedvezményes időszakok rendelkező részleges vevői kifizetés kiegyenlítése"
+title: "Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik"
 description: "Ez a cikk ismerteti, hogy a részleges vevői kifizetések hogyan kerülnek kiegyenlítésre több engedményes időszak esetén."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Több kedvezményes időszakok rendelkező részleges vevői kifizetés kiegyenlítése
+# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk ismerteti, hogy a részleges vevői kifizetések hogyan kerülnek kiegyenlítésre több engedményes időszak esetén.
 
-A Fabrikam 4031. számú vevőjének két készpénzfizetési engedményes időszakot is kínál. A vevő 2 százalékos készpénzfizetési engedményt kap, ha a számlát öt napon belül kifizeti, és 1 százalékot, ha a számlát 14 napon belül kifizeti. A Fabrikam emellett a részleges kifizetésekra is nyújt készpénzfizetési engedményt. A kiegyenlítés paraméterek találhatók a **Kinnlevőségek paraméterei** oldalon.
+A Fabrikam 4031. számú vevőjének két készpénzfizetési engedményes időszakot is kínál. A vevő 2 százalékos készpénzfizetési engedményt kap, ha a számlát öt napon belül kifizeti, és 1 százalékot, ha a számlát 14 napon belül kifizeti. A Fabrikam emellett a részleges kifizetésekra is nyújt készpénzfizetési engedményt. A Kiegyenlítési paraméterek a **Kinnlevőségek paraméterei** oldalon találhatóak.
 
 ## <a name="invoice"></a>Számla
-Június 25-én Anna lép, és a számlát a vevő 4031 1 000,00. Ha ő ellenőrzi, hogy a számla a készpénzfizetési engedmények, Anna látja, 4031 vevő engedmény összege 20,00 kapja meg, ha a számla ki van fizetve, június 30. A számla július 9 fizeti, ha a vevő a 10,00 engedményt kap.
+Június 25-én Arnie egy 1.000,00 értékű számlát rögzít és ad fel 4031-es vevő számára. mikor megnézi a számlára vonatkozó készpénzfizetési engedményeket, azt látja, hogy a vevő 20,00 engedményt kap, ha június 30.-ig fizet. Ha a számla teljes összegét kifizeti július 9.-ig, akkor 10,00 értékű engedményt kap.
 
 | Készpénzfizetési engedmény dátuma | Készpénzfizetési engedmény összege | Összeg a tranzakció pénznemében. |
 |--------------------|----------------------|--------------------------------|
@@ -92,6 +95,8 @@ A számla egyenlege ekkor 0,00. Arnie megtekintheti ezt az információt a **Vev
 | DISC-10030 |  Készpénzfizetési engedmény   | 2015/6/28 |         |                                      | 6,00                                  | 0,00    | dollár      |
 | ARP-10031  |  Kifizetés         | 2015/8/7  |         |                                      | 693,00                                | 0,00    | dollár      |
 | DISC-1031  |  Készpénzfizetési engedmény   | 2015/8/7  |         |                                      | 7:00                                  | 0,00    | dollár      |
+
+
 
 
 

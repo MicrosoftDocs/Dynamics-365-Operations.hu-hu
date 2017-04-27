@@ -1,6 +1,6 @@
 ---
 title: "A kérdőív megtekintése, és az eredmények kiértékelése"
-description: "Ez a témakör ismerteti, hogyan tekintheti meg és értékeljék az eredményeket, hogy a válaszadók kérdőívek."
+description: "Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>A kérdőív megtekintése, és az eredmények kiértékelése
 
-Ez a témakör ismerteti, hogyan tekintheti meg és értékeljék az eredményeket, hogy a válaszadók kérdőívek. 
+Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait. 
 
 Ha a válaszadók kitöltötték a kérdőívet, megtekintheti, valamint kiértékelheti a kérdőív eredményét az alábbi módokon:
 

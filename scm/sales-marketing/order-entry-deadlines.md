@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-entry-deadlines"></a>Rendelésbeviteli határidők
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk a rendelésbevitel határidőiről tartalmaz információkat. A rendelésbeviteli határidő, egy lezárási idő, amely meghatározza, hogy a vevői rendelés úgy lesz-e kezelve (és teljesítve), mintha az aktuális napon lett volna befogadva, vagy a következőn.
 
 Számos vállalat esetében az értékesítési rendelések csak akkor számítanak még aznapi rendelésnek, ha még a nap egy bizonyos időpontja előtt be vannak vételezve. Minden olyan rendelés, amely ez után az időpont után van bevételezve, a következő munkanapon beérkezettként kezelendő. Ez az átfutási idő a rendelések esetében a rendelésbeviteli határidő.  
 
-A rendelésbeviteli határidők bemenetként szolgálnak a rendelési ígérethez. Ezért segítenek megfelelni ügyfelei elvárásainak, ami a rendelések kiszállítását illeti. Például a vevők láthatják, hogy ha egy bizonyos időpont előtt leadnak egy rendelést, akkor a rendelést még ugyanazon a napon kiszállítják. Azonban ezt a határidőt tartani őket, ha a szállítmány csak a következő üzleti napon számíthatnak. Rendelésbeviteli határidők alapján a raktározási lehetőségek és a szállítási fuvarozó ütemezések beállítása  
+A rendelésbeviteli határidők bemenetként szolgálnak a rendelési ígérethez. Ezért segítenek megfelelni ügyfelei elvárásainak, ami a rendelések kiszállítását illeti. Például a vevők láthatják, hogy ha egy bizonyos időpont előtt leadnak egy rendelést, akkor a rendelést még ugyanazon a napon kiszállítják. Azonban, ha ennél később adják le a rendelést, akkor a szállítmány csak a következő munkanapon érkezik meg. A rendelésbeviteli határidőket a raktár lehetőségeinek és a szállítási ütemezéseknek megfelelően állíthatja be.  
 
 A **Rendelésbeviteli határidők** lapon a hét egyes napjain érvényes rendelésbeviteli határidőket adhat meg. Ha a rendelések a meghatározott időpont után érkeznek be, a következő munkanapon beérkezettként kezelendők. Az alapértelmezés szerint beállított időpont 23:59 (vagyis egy perccel az adott nap vége előtt). Az alapértelmezett időpontokat módosítani lehet, hogy megegyezzenek a tényleges szállítási vagy bevételezési határidőkkel.  
 
@@ -43,7 +46,7 @@ Ha vállalata több telephellyel rendelkezik, beállíthat helyi rendelési hat�
 A **Rendelésbeviteli határidő-kombinációk aktiválása** lapon megadhatja a helyek és rendelésbeviteli határidőcsoport engedélyezett kombinációit.
 
 ## <a name="example-order-entry-deadline"></a>Példa: rendelésbeviteli határidő
-A rendelésbeviteli határidő kedden 16:00 órára lett állítva. Egy keddi napon 17:00 órakor a jelenlegi dátumot próbálja szállítási dátumként beállítani. (Megjegyzendő, hogy nincs ebben a példában az átfutási idő.) Ha a **szállítási dátum ellenőrzésének** jelölőnégyzet be van jelölve, akkor a figyelmeztetést arról, hogy a dátum nem érvényes. Ez a figyelmeztetés az **Elérhető szállítási és kézhezvételi dátumok** lapon jelenik meg, amelyen ezután választhat másik dátumokat.
+A rendelésbeviteli határidő kedden 16:00 órára lett állítva. Egy keddi napon 17:00 órakor a jelenlegi dátumot próbálja szállítási dátumként beállítani. (Megjegyzendő, hogy ennél a példánál nincs átfutási idő.) Ha a **Szállításidátum-ellenőrzés** jelölőnégyzet be van jelölve, akkor figyelmeztetést kap, amely arról tájékoztat, hogy a dátum nem érvényes. Ez a figyelmeztetés az **Elérhető szállítási és kézhezvételi dátumok** lapon jelenik meg, amelyen ezután választhat másik dátumokat.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Példa: helyenként eltérő rendelésbeviteli határidők
 Vállalata két helyből áll. A helyek eltérő időzónában találhatók, az alábbi táblázatban ábrázolt módon.
@@ -55,7 +58,7 @@ Vállalata két helyből áll. A helyek eltérő időzónában találhatók, az 
 
 Az A és a B helyek a következő rendelésbeviteli határidőket definiálták.
 
-| A hét napja             | A: rendelés rendelésbeviteli határidők (PST) | B. rendelés rendelésbeviteli határidők (EST) |
+| A hét napja             | A: Rendelésbeviteli határidők (PST) | B: Rendelésbeviteli határidők (EST) |
 |-----------------------------|--------------------------------|--------------------------------|
 | Hétfő                      | 13:00:00                          | 14:00:00                          |
 | Kedd                     | 13:00:00                          | 14:00:00                          |
@@ -67,7 +70,7 @@ Az A és a B helyek a következő rendelésbeviteli határidőket definiálták.
 
 A következő táblázatban az A és a B hely rendelésbeviteli határidői láthatók az MST időzónára konvertálva.
 
-| A: PST webhely         | A: MST webhely        | B: EST webhely           | B: MST webhely        |
+| A hely: PST         | A hely: MST        | B hely: EST           | B hely: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00:00               | 14:00:00              | 14:00:00                 | 12:00:00              |
 
@@ -95,7 +98,7 @@ Az A és a B helyek a következő rendelésbeviteli határidőket definiálták.
 
 A következő táblázatban az A és a B hely rendelésbeviteli határidői láthatók az MST időzónára konvertálva.
 
-| A: PST webhely         | A: MST webhely        | B: EST webhely           | B: MST webhely        |
+| A hely: PST         | A hely: MST        | B hely: EST           | B hely: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00:00               | 14:00:00              | 13:00:00                 | 11:00:00              |
 
@@ -104,6 +107,8 @@ A következő táblázatban az A és a B hely rendelésbeviteli határidői lát
 <a name="see-also"></a>Lásd még
 --------
 
-[Delivery schedules](delivery-schedules.md)
+[Szállítási ütemezések](delivery-schedules.md)
+
+
 
 

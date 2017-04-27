@@ -1,6 +1,6 @@
 ---
-title: "Új vagy frissített tevékenység segédvonalak (2016. November)"
-description: "Ez a témakör felsorolja azokat az új vagy frissített tevékenység útmutatók kiadott a Microsoft (November 2016 - minden nyelv) APQC Unified tárban Microsoft Dynamics 365 műveletekhez. Nincs új Első lépések könyvtár."
+title: "Új vagy frissített Feladat-útmutatók (2016. november)"
+description: "A témakör felsorolja a Microsoft Dynamics 365 for Operations (2016. november – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-november-2016"></a>Új vagy frissített tevékenység segédvonalak (2016. November)
+# <a name="new-or-updated-task-guides-november-2016"></a>Új vagy frissített Feladat-útmutatók (2016. november)
 
-Ez a témakör felsorolja azokat az új vagy frissített tevékenység útmutatók kiadott a Microsoft (November 2016 - minden nyelv) APQC Unified tárban Microsoft Dynamics 365 műveletekhez. Nincs új Első lépések könyvtár.
+[!include[banner](../includes/banner.md)]
 
-A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók segítséget a Microsoft Dynamics 365 műveletek, műveleti platform frissítés 3, 2, Microsoft Dynamics AX Platform frissítés a Dynamics AX Microsoft Dynamics 365 használni kívánják május 2016 update és a Microsoft Dynamics AX február 2016 engedje fel. A kiadásokkal kapcsolatos további tudnivalókért lásd: [Mi az új vagy módosított](whats-new-changed.md). A feladat segédvonalak honosított verziói a tár érhetők el. A Súgó rendszer tevékenység útmutató könyvtár való kapcsolódás módjáról további információt lásd: [az első lépések segítségével](help-overview.md). **Megjegyzés:** a csillag (**\***) egy üzleti folyamat modellező (BPM) címe mellett sor jelzi, hogy üzleti folyamat útmutató a feladat létrejött 365 Dynamics November 2016 műveletek frissítése és korábbi verzióiban a Microsoft Dynamics AX nem támogatja.
+
+A témakör felsorolja a Microsoft Dynamics 365 for Operations (2016. november – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár.
+
+A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics 365 for Operationshöz, a Microsoft Dynamics 365 for Operations 3. platformfrissítéséhez, a Microsoft Dynamics AX 2. platformfrissítéséhez, a Dynamics AX 2016. májusi frissítéséhez és a Microsoft Dynamics AX 2016. februári kiadásához szánt, Súgóval használatos Feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md). **Megjegyzés**: Egy csillag (**\***) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat Feladat-útmutatója a Dynamics 365 for Operations 2016. novemberi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióit nem támogatja.
 
 ### <a name="accounts-payable"></a>Kötelezettségek
 
 | BPM-sor                                                                                           | Ország/régió |
 |----------------------------------------------------------------------------------------------------|----------------|
-| Fő számla adatok hozzáférési pont rendszer jóváhagyási napló használata                                               | Globális         |
-| Szállítói számla (Enter és a megfelelő szállítói számla feladása) hozzáférési pont rendszer fő számla adatok | Globális         |
+| Fő számlaadatok a Kintlevőségek rendszerben, jóváhagyási napló használatával                                               | Globális         |
+| Fő számlaadatok a Kintlevőségek rendszerben szállítói számla használatával (Szállítói számla megadása és feladása egyeztetéssel) | Globális         |
 | Fő számlaadatok a Kintlevőségek rendszerbe, számlanapló használatával                                              | Globális         |
 | Fő számlaadatok a Kintlevőségek rendszerbe, számlagyűjtő használatával                                                 | Globális         |
-| Szállítói számla rögzítheti és szemben a bevételezett mennyiség                           | Globális         |
+| A szállítói számla érkezésének rögzítése és összevetése a bevételezett mennyiséggel                           | Globális         |
 | A kötelezettségek modul beállítása a számlaegyeztetés ellenőrzéséhez                                                | Globális         |
 | Szállítói számlák irányelveinek beállítása                                                                    | Globális         |
 
@@ -49,7 +52,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | BPM-sor                                                                           | Ország/régió |
 |------------------------------------------------------------------------------------|----------------|
 | Ismétlődő szabadszöveges számlasablon hozzárendelése vevőhöz                        | Globális         |
-| Kamatszámítás és létrehozása és nyomtatása és kamatlevelek (folyamat kamat) | Globális         |
+| Kamatszámítás, valamint kamatlevelek létrehozása és nyomtatása | Globális         |
 | Fizetésifelszólítás-sorozat létrehozása                                                | Globális         |
 | Beszedési megbízási felhatalmazás létrehozása vevő részére                                       | Globális         |
 | Szabadszöveges számla létrehozása                                                         | Globális         |
@@ -59,7 +62,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | Értékesítési rendelési számlák létrehozása                                                        | Globális         |
 | Ismétlődő szabadszöveges számlák generálása és feladása                                     | Globális         |
 | Fizetési felszólítások feldolgozása                                                         | Globális         |
-| Fizetési információk áttekintése                                                      | Globális         |
+| A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata                                                      | Globális         |
 | Kinnlevőségek korosítási adatainak beállítás és létrehozása                          | Globális         |
 
 ### 
@@ -77,7 +80,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 
 | BPM-sor                    | Ország/régió |
 |-----------------------------|----------------|
-| A költségvetési terv elrendezés módosítása | Globális         |
+| Költségvetési terv elrendezésének módosítása | Globális         |
 
 ### 
 
@@ -104,7 +107,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | Jövőben esedékes csekkek beállítása                                              | Globális         |
 | Szállítónak kiállított, jövőben esedékes csekk kiegyenlítése                                | Globális         |
 | Vevő által kiállított, jövőben esedékes csekk kiegyenlítése                             | Globális         |
-| Szállítói kifizetések – áttekintés                                             | Globális         |
+| Szállítói fizetések áttekintése                                             | Globális         |
 
 ### 
 
@@ -137,45 +140,45 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 
 | BPM-sor                                                                                                                             | Ország/régió                    |
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| BAS jelentésmezők és Ausztrália üzleti tevékenység utasítás (BAS) készítése                                                    | Ausztrália és Új-Zéland         |
+| BAS jelentésmezők hozzáadása és a BAS - Ausztrál Üzleti Tevékenységi Nyilatkozat generálása                                                    | Ausztrália és Új-Zéland         |
 | BAS Ausztrália okkódok beállítása                                                                                                | Ausztrália és Új-Zéland         |
-| **\***Chinese voucher continuity check                                                                                               | Kína                             |
-| **\***Számlatükör Kína CN-00010 hierarchia                                                                                  | Kína                             |
-| **\***CN-00016 felhasználói művelet napló Kínában működő szabály                                                                              | Kína                             |
-| **\***Golden tax integration export setup                                                                                            | Kína                             |
-| **\***Post vouchers from other modules, like sales invoices                                                                          | Kína                             |
-| **\***Post vouchers from the general journal                                                                                         | Kína                             |
-| **\***Set up basic tax integration profile for China                                                                                 | Kína                             |
-| **\***Set up Chinese vouchers                                                                                                        | Kína                             |
+| **\***Kínai bizonylatok folytonosságellenőrzése                                                                                               | Kína                             |
+| **\***CN-00010 Kínai számlatükör-hierarchia                                                                                  | Kína                             |
+| **\***CN-00016 Felhasználói műveletek naplója a kínai munkaszabályok szerint                                                                              | Kína                             |
+| **\***Aranyadó-integráció exportálásának beállítása                                                                                            | Kína                             |
+| **\***Bizonylatok feladása más modulokból, például eladási számlák közül                                                                          | Kína                             |
+| **\***Bizonylatok feladása a főkönyvi naplóból                                                                                         | Kína                             |
+| **\***Alapvető adóintegrációs profil beállítása Kínához                                                                                 | Kína                             |
+| **\***Kínai bizonylatok beállítása                                                                                                        | Kína                             |
 | Vevői számla létrehozása és feladása állami szektorba tartozó vevőhöz                                                                      | Dánia                           |
 | Szabadszöveges számla létrehozása és feladása állami szektorba tartozó vevőhöz                                                                     | Dánia                           |
 | Projektszámla létrehozása és feladása állami szektorba tartozó vevőhöz                                                                       | Dánia                           |
-| DK-00007 rendszer FIK 752 giro átutalást slip/feladása egy fizetési bizonylatot a szabadszöveges számla                                               | Dánia                           |
-| DK-00007 rendszer FIK 752 giro átutalást slip/feladása egy fizetési bizonylatot projektszámla                                                 | Dánia                           |
+| DK-00007 FIK 752 zsíróátutalási bizonylat / szabadszöveges számla feladása fizetési bizonylattal                                               | Dánia                           |
+| DK-00007 FIK 752 zsíróátutalási bizonylat / projektszámla feladása fizetési bizonylattal                                                 | Dánia                           |
 | OIOUBL elektronikus számlázási konfiguráció importálása                                                                                    | Dánia                           |
 | Az OIOUBL formátumú elektronikus számlázásban használt vevői számlák beállítása                                                                             | Dánia                           |
 | Az OIOXML formátumú elektronikus számlázás beállítása                                                                                                   | Dánia                           |
 | Fizetési bizonylat formátumának beállítása                                                                                                           | Dánia                           |
-| **\***EEU-00047 Advance payment to employee                                                                                          | Kelet-Európa                    |
+| **\***EEU-00047 Előlegfizetés alkalmazottnak                                                                                          | Kelet-Európa                    |
 | Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban                                                                      | Európa                            |
 | Kifizetések létrehozása beszedési megbízási felhatalmazásokkal rendelkező vevők számára                                                                          | Európa                            |
-| **\***EE-00015 fizetési hivatkozás létrehozása eszközzel                                                                                     | Európa                            |
+| **\***EE-00015 Fizetésihivatkozás-generáló eszköz                                                                                     | Európa                            |
 | EUR 00002 Az EU Intrastat nyilatkozat létrehozása                                                                                       | Európa                            |
-| **\***A szerződések címe EUR-00002 adja meg egy Közösségen belüli tranzakciót                                                          | Európa                            |
+| **\***EUR-00002 Közösségen belüli tranzakcióhoz berakodási cím megadása                                                          | Európa                            |
 | EUR-00002 Tranzakciók átvitele az Intrastatba                                                                                     | Európa                            |
 | EUR-00011 EU értékesítési lista jelentés létrehozása.                                                                                          | Európa                            |
 | EUR-00011 Értékesítési lista jelentés beállítása                                                                                             | Európa                            |
 | EUR-00012 Európai beérkezési igazolás kibocsátása                                                                                              | Európa                            |
 | EUR-00012 Európai beérkezési igazolás fogadása                                                                                            | Európa                            |
-| **\***EUR-00015 Party search using VAT ID                                                                                            | Európa                            |
-| **\***EUR-00015 Registration of vendor VAT ID                                                                                        | Európa                            |
-| **\***EURÓ-00015 ÁFA azonosító beállítása                                                                                                        | Európa                            |
-| **\***HU-00001 Exchange számítás                                                                                             | Európa                            |
+| **\***EUR-00015 Fél keresése adószám használatával                                                                                            | Európa                            |
+| **\***EUR-00015 Szállítói adószám rögzítése                                                                                        | Európa                            |
+| **\***EUR-00015 Adószám beállítása                                                                                                        | Európa                            |
+| **\***HU-00001 Árfolyamszámítás                                                                                             | Európa                            |
 | ISO20022 jóváírási konfiguráció importálása                                                                                        | Európa                            |
 | ISO20022 beszedési megbízási konfiguráció importálása                                                                                           | Európa                            |
-| **\***Az áruk mozgását a belső vállalat/létrehozás átviteli dokumentumot egy belső készlet átmozgatásának LT-00003 átadás dokumentum   | Európa                            |
-| **\***LT-00003 átadás dokumentum árumozgás belül az áruk mozgását a vállalat belső átruházási okiratok vállalat/beállítása | Európa                            |
-| **\***NEM-00002 vevői kifizetés fizetési azonosító alapján                                                                                  | Európa                            |
+| **\***LT-00003 Vállalaton belüli árumozgás dokumentuma / Árumozgási dokumentum létrehozása belső készlet átviteléhez   | Európa                            |
+| **\***LT-00003 Vállalaton belüli árumozgás dokumentuma / Vállalaton belüli árumozgás dokumentumainak beállítása | Európa                            |
+| **\***NO-00002 Vevői kifizetés fizetési azonosító alapján                                                                                  | Európa                            |
 | Vállalati bankszámlák beállítása ISO20022 típusú átutalásokhoz                                                                           | Európa                            |
 | Vállalati bankszámlák beállítása ISO20022 beszedési megbízásokhoz                                                                              | Európa                            |
 | Vevők és vevői bankszámlák beállítása ISO20022 beszedési megbízásokhoz                                                               | Európa                            |
@@ -183,10 +186,10 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | Fizetési mód beállítása ISO20022 beszedési megbízáshoz                                                                                   | Európa                            |
 | Szállítók szállítói bankszámlák beállítása ISO20022 típusú átutalásokhoz                                                                | Európa                            |
 | Vevő fizetési módjainak kialakítása                                                                                                | Franciaország                            |
-| Vevői és szállítói számla FR-00002                                                                                                 | Franciaország                            |
+| FR-00002 Vevői és szállítói számla                                                                                                 | Franciaország                            |
 | FR-00003 NAF-kódok és Siret-számok (Franciaország)                                                                                                 | Franciaország                            |
 | FR-00004 Váltókiállítás jóváhagyása és feladása                                                                                      | Franciaország                            |
-| Francia FR-00004 váltók és kötelezvények                                                                               | Franciaország                            |
+| FR-00004 Francia anyagjegyzék és kötelezvények                                                                               | Franciaország                            |
 | FR-00004 Elutasított váltókiállítási napló feladása                                                                                  | Franciaország                            |
 | FR-00004 Váltó-újrakiállítási napló feladása                                                                                       | Franciaország                            |
 | FR-00004 Fizetési mód beállítása                                                                                                     | Franciaország                            |
@@ -200,7 +203,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | ER Számláláshoz és összegzéshez használt formátum konfigurálása (2. rész: Számlálások konfigurálása)                                                      | Németország                           |
 | ER Számláláshoz és összegzéshez használt formátum konfigurálása (3. rész: Számlálások használata a kimenet elkészítéséhez)                                         | Németország                           |
 | ER Számláláshoz és összegzéshez használt formátum konfigurálása (4. rész: Formátum futtatása)                                                                  | Németország                           |
-| Hozzon létre egy konfigurációs szolgáltató ER, és az aktív                                                                             | Németország                           |
+| ER Konfigurációszolgáltató létrehozása és megjelölése aktívként                                                                             | Németország                           |
 | ER – A Microsoft WORD formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)                                            | Németország                           |
 | ER – Tartományspecifikus adatmodell kialakítása (2016. november)                                                                                 | Németország                           |
 | ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból                                                                                    | Németország                           |
@@ -218,28 +221,28 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | ER Vízszintesen bővíthető tartományok használata oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához (2. rész: Formátum futtatása)                               | Németország                           |
 | Német könyvvizsgálati fájl generálása                                                                                                           | Németország                           |
 | Német könyvvizsgálati fájlkonfiguráció importálása                                                                                               | Németország                           |
-| **\***EURÓ-00018 egyeztetés áfajelentés                                                                                            | Izland                           |
-| IS-00006 szállító számla a szállítói számla vámáru-nyilatkozat létrehozása és csatolása a számlanyilatkozaton                                       | Izland                           |
-| Szállítói számla nyilatkozat/állítsa be a számlanyilatkozat szállítók IS-00006                                                        | Izland                           |
-| IS-00006 szállítói számla nyilatkozat/frissítés szállítói számla bevallásainak és jelentés készítése a                                       | Izland                           |
-| Számlák/kötelező fizetési hivatkozásokat beállítása a Számlatükör karbantartása                                                                       | Izland                           |
+| **\***EUR-00018 Áfa-egyeztetési jelentés                                                                                            | Izland                           |
+| IS-00006 Szállítói számla bevallása / Szállítói számla létrehozása és számlabevallás csatolása                                       | Izland                           |
+| IS-00006 Szállítói számla bevallása / Szállítók számára történő számlabevallás beállítása                                                        | Izland                           |
+| IS-00006 Szállítói számla bevallása / Szállítói számla bevallásainak frissítése, és jelentés készítése                                       | Izland                           |
+| Számlatükör karbantartása / Kötelező fizetési hivatkozások beállítása                                                                       | Izland                           |
 | Tárgyi eszköz beszerzése kivezetési kötelezettséggel                                                                              | Japán                             |
-| Tárgyi eszközök beszerzése, az állami támogatás jogcíme                                                                                 | Japán                             |
+| Tárgyi eszközök beszerzése és állami támogatás igénylése                                                                                 | Japán                             |
 | A tárgyi eszköz kivezetési kötelezettségével kapcsolatos becslés kiigazítása                                                                               | Japán                             |
-| Megosztott eszközt és a készpénzforgalom egységek létrehozása a goodwill könyv szerinti felosztása                                                   | Japán                             |
+| Megosztott eszköz és goodwill átvitel összegének felosztása készpénzgeneráló egységekre                                                   | Japán                             |
 | A tárgyi eszköz élettartama során használt értékcsökkenési mód megváltoztatása                                                                   | Japán                             |
 | A könyv élettartama során használt értékcsökkenési mód megváltoztatása                                                                        | Japán                             |
 | Gyorsított értékcsökkentési paraméterek és a feladási profilok konfigurálása                                                                   | Japán                             |
 | CN-00004 Tárgyi eszközök értékcsökkenési felosztása (JP-)                                                                                   | Japán                             |
-| Értékcsökkenési profil és a feladási profil további értékcsökkenés beállítása                                                   | Japán                             |
-| Értékcsökkenési profil és a különleges értékcsökkenés feladási profil beállítása                                                      | Japán                             |
+| Értékcsökkenési profil és feladási profil konfigurálása további értékcsökkenéshez                                                   | Japán                             |
+| Értékcsökkenési profil és feladási profil konfigurálása különleges értékcsökkenéshez                                                      | Japán                             |
 | Gyűjtőszámla-paraméterek konfigurálása és beállítása kötelezettségekre vonatkozóan                                                             | Japán                             |
 | Tárgyi eszköz kivezetési kötelezettségével kapcsolatos feladási és a piaci kedvezményes árak fő számláinak beállítása                                            | Japán                             |
 | Tárgyi eszköz létrehozása további értékcsökkenéssel                                                                                    | Japán                             |
 | Tárgyi eszköz létrehozása különleges értékcsökkenési profillal                                                                               | Japán                             |
 | Gyorsított értékcsökkenési profil létrehozása és hozzárendelése könyvhöz                                                                        | Japán                             |
 | Gyorsított értékcsökkentési dokumentum létrehozása és használati adatok rögzítése                                                                     | Japán                             |
-| Létrehozása és hozzárendelése egy berendezés csoport                                                                                                 | Japán                             |
+| Berendezéscsoport létrehozása és hozzárendelése                                                                                                 | Japán                             |
 | Csökkentési tételdokumentum létrehozása és hozzárendelése                                                                                           | Japán                             |
 | Konszolidált szállítói számla létrehozása és megerősítése                                                                                     | Japán                             |
 | Elismerési teszt létrehozása és megerősítése                                                                                                  | Japán                             |
@@ -259,14 +262,14 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | A tárgyi eszköz kivezetési kötelezettségével kapcsolatos tranzakciók lekérdezései                                                                    | Japán                             |
 | Levonható költségek lekérdezése                                                                                                       | Japán                             |
 | JP-00005 Bemeneti napló T-számla formátumban (Japán)                                                                                     | Japán                             |
-| összevont számla - AR JP-00011 - létrehozása és megerősítése az összevont (konszolidált) vevői számla                                              | Japán                             |
-| Az ÉCS adóbevallás űrlap 26 JP-00027                                                                                     | Japán                             |
+| JP-00011 Gyűjtőszámla - AR - Konszolidált vevői számla létrehozása és megerősítése                                              | Japán                             |
+| JP-00027 Form 26 értékcsökkenthető adóbevalláshoz                                                                                     | Japán                             |
 | Levonható költségek tárgyieszköz-alapadatfájljainak karbantartása                                                                       | Japán                             |
 | Az egyes tárgyi eszközök értékvesztési mutatóinak karbantartása                                                                                  | Japán                             |
 | Szállítói tranzakció kifizetése vevői váltó érvényesítésével                                                                    | Japán                             |
 | Értéknövekedés és értékcsökkenés időszaki elszámolása                                                                                   | Japán                             |
 | Kiegészítő értékcsökkenés felkínálása                                                                                                      | Japán                             |
-| Javasol, és a gyorsított értékcsökkenés könyvelése                                                                                        | Japán                             |
+| A gyorsított értékcsökkentés felkínálása és feladása                                                                                        | Japán                             |
 | Kötegelt értékvesztési összeg felkínálása és feladása                                                                                      | Japán                             |
 | Értékvesztési összeg felkínálása és feladása a tárgyieszköz-napló használatával                                                                  | Japán                             |
 | Értékvesztés összegének felkínálása és feladása egy pénzgeneráló egységre                                                                     | Japán                             |
@@ -300,12 +303,12 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | MX-00010 Elektronikus számla lekérdezése és nyomtatása                                                                                     | Mexikó                            |
 | MX-00010 Szabadszöveges számla feladása                                                                                                    | Mexikó                            |
 | MX-00010 Elektronikus számla paramétereinek beállítása                                                                                    | Mexikó                            |
-| MX-00020: A termék mexikói elektronikus főkönyvi könyvelési jelentés 1.1-es verzió                                                            | Mexikó                            |
+| MX-00020: Mexikói elektronikus főkönyvi könyvelési jelentés (1.1-es verzió) előállítása                                                            | Mexikó                            |
 | MX-00020 Mexikói jogi személy számlatükrének beállítása                                                                   | Mexikó                            |
 | MX-00020 - Mexikói bankszámlák RFC regisztrációs azonosítójának megadása                                                                 | Mexikó                            |
 | NL-00003 Semansys XBRL-integráció                                                                                                   | Hollandia                       |
 | NL-00010 Elektronikus adóbevallások (EVAT)                                                                                          | Hollandia                       |
-| MY-00003 kezelés vevő terhelési és jóváírási értesítést GST                                                                          | Szingapúr, Malajzia és Thaiföld |
+| MY-00003 Vevői terhelések és jóváírások kezelése - GST                                                                          | Szingapúr, Malajzia és Thaiföld |
 | MY-00004 Szállítói terhelések és jóváírások kezelése – GST                                                                            | Szingapúr, Malajzia és Thaiföld |
 | MY-00005 GST adószámlák nyomtatása                                                                                                      | Szingapúr, Malajzia és Thaiföld |
 | MY-00006 01 - GST mentesség záradékok beállítása                                                                                                | Szingapúr, Malajzia és Thaiföld |
@@ -340,7 +343,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | Eszközcsoport módosítása                                        | Globális         |
 | Értékcsökkenési szabály módosítása több tárgyi eszközre | Globális         |
 | Tárgyi eszköz létrehozása                                      | Globális         |
-| Hozzon létre, és a kötelezettségek eszközök beszerzésére fordított           | Globális         |
+| Eszközök létrehozása és beszerzése a követelések modulból           | Globális         |
 | Értékcsökkenési javaslat létrehozása                              | Globális         |
 | Tárgyi eszköz kivezetése szabadszöveges számlával        | Globális         |
 | Tárgyi eszköz kiegészítésének bevitele                        | Globális         |
@@ -362,7 +365,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | BPM-sor                                       | Ország/régió |
 |------------------------------------------------|----------------|
 | Pénzügyi év lezárása                          | Globális         |
-| Sablon segítségével naplóbejegyzés létrehozása        | Globális         |
+| Naplóbejegyzés létrehozása sablon alapján        | Globális         |
 | Fő számla létrehozása                          | Globális         |
 | Számlastruktúrák létrehozása                      | Globális         |
 | Könyvelési sémák létrehozása                         | Globális         |
@@ -371,7 +374,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | Főkönyvi könyvelés tranzakcióinak létrehozása             | Globális         |
 | Pénzügyi dimenziók meghatározása                    | Globális         |
 | Feladott naplóbejegyzések naplózása              | Globális         |
-| Pénzügyi dimenzió-sablonok karbantartása         | Globális         |
+| Pénzügyi dimenzió sablonjainak karbantartása         | Globális         |
 | Tömeges pénzügyi időszak zárás                    | Globális         |
 | Naplóbejegyzések feldolgozása                        | Globális         |
 | Főkönyvi felosztási napló feldolgozása              | Globális         |
@@ -387,9 +390,9 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 
 | BPM-sor                                                                       | Ország/régió |
 |--------------------------------------------------------------------------------|----------------|
-| **\***Change the ownership of consignment inventory based on production demand | Globális         |
-| **\***Create a consignment replenishment order                                 | Globális         |
-| **\***Monitor consignment inventory using vendor collaboration                 | Globális         |
+| **\***Bizományosi készlet tulajdonosának módosítása gyártási igény alapján | Globális         |
+| **\***Bizományosi feltöltési rendelés létrehozása                                 | Globális         |
+| **\***Bizományosi készlet figyelése szállítói együttműködéssel                 | Globális         |
 
 ### 
 
@@ -416,9 +419,9 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 
 | BPM-sor                                                         | Ország/régió |
 |------------------------------------------------------------------|----------------|
-| **\***Add to your performance journal and send praise to someone | Globális         |
-| **\***Create a goal                                              | Globális         |
-| **\***Create a performance review                                | Globális         |
+| **\***Hozzáadás saját teljesítménynaplóhoz és pozitív visszajelzés elküldése másnak | Globális         |
+| **\***Cél létrehozása                                              | Globális         |
+| **\***Teljesítmény-áttekintés létrehozása                                | Globális         |
 
 ### 
 
@@ -442,9 +445,9 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | Kép hozzáadása termékhez                                               | Globális         |
 | Termék besorolása kategória-hierarchiák segítségével                           | Globális         |
 | Vonalkód létrehozása termékhez                                         | Globális         |
-| \*A termék előre definiált termékváltozatok száma Nómenklatúra létrehozása | Globális         |
-| \*Hozzon létre egy konfigurált termékváltozatok száma termékek nómenklatúrájának | Globális         |
-| \*Egy cikk alapértelmezett beállítások megadása                            | Globális         |
+| \* Termékszámozási rendszer létrehozása előre definiált termékváltozatokhoz | Globális         |
+| \* Termékszámozás-elnevezési rendszer létrehozása konfigurált termékváltozatokhoz | Globális         |
+| \* Határozza meg egy cikk alapértelmezett rendelési beállításait                            | Globális         |
 | Értékesítési rendelés létrehozása konfigurálható termékhez                         | Globális         |
 | Eladási ár kiválasztási feltételeinek létrehozása                                   | Globális         |
 | Termék GTIN-kódjának megadása                                       | Globális         |
@@ -468,11 +471,11 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | BPM-sor                                                                      | Ország/régió |
 |-------------------------------------------------------------------------------|----------------|
 | Szállítói hitelesítési típus hozzáadása egy állami szektorbeli szállítóhoz                        | Globális         |
-| A beszerzési megállapodások a közszféra elérés                      | Globális         |
+| Állami szektori beszerzési szerződésekhez való hozzáférés vezérlése                      | Globális         |
 | Számlázási osztály létrehozása                                               | Globális         |
 | Számlázási kód létrehozása                                                         | Globális         |
 | Kötelezettségvállalás létrehozása költségvetési alapok lefoglalásához az állami szektor részére                 | Globális         |
-| A számlázási kóddal egyéni mező létrehozása                                      | Globális         |
+| Egyéni mező létrehozása számlázási kódhoz                                      | Globális         |
 | Alaptípusok létrehozása                                                            | Globális         |
 | Egyszeri szállító és számla létrehozása                                          | Globális         |
 | Előzetes költségvetés létrehozása az állami szektor részére                                 | Globális         |
@@ -480,10 +483,10 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | Speciális főkönyvi bejegyzés létrehozása állami szektorban.                          | Globális         |
 | Eredeti költségvetés létrehozása, majd az előzetes költségvetési bejegyzések sztornírozása         | Globális         |
 | Kereskedelmi partnerkód létrehozása és hozzárendelése az állami szektorban                 | Globális         |
-| Hozzon létre fedezet és az állami szektorra vonatkozó kifizetések jelentések aláírás oldalakat   | Globális         |
+| Fedőlap és aláírási ívek létrehozása állami szektor kifizetési jelentéseire vonatkozóan   | Globális         |
 | Több egyszeri szállító és számla importálása és létrehozása az állami szektorban. | Globális         |
 | Származtatott pénzügyi hierarchia beállítása az állami szektorban                     | Globális         |
-| Az állami szférában egy alap beállítása                                            | Globális         |
+| Alaptípus beállítása az állami szektor részére                                            | Globális         |
 | Beszerzési szerződés osztályozásainak beállítása az állami szektor számára                   | Globális         |
 
 ### 
@@ -493,17 +496,17 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | BPM-sor                                                         | Ország/régió |
 |------------------------------------------------------------------|----------------|
 | Dolgozó konfigurálása                                               | Globális         |
-| **\***Configure machine learning-powered product recommendations | Globális         |
+| **\***Gépi tanulási alapú termékajánlások konfigurálása | Globális         |
 | Funkcióprofil konfigurálása értékesítési képviselőnek   | Globális         |
-| **\***Create a POS visual profile (November 2016)                | Globális         |
+| **\***Pénztár vizuális profiljának létrehozása (2016. november)                | Globális         |
 | Pénztárgépek létrehozása és hozzárendelése                                   | Globális         |
 | Hívásközponti rendelések létrehozása                                        | Globális         |
 | Kereskedelmi megállapodások létrehozása egy kategória-árazási szabály használatával            | Globális         |
 | Üzlet kimutatásának létrehozása, kiszámítása és feladása              | Globális         |
 | Fiók definiálása és engedmény hozzárendelése                      | Globális         |
-| Meghatározása és kezelése a POS-engedélycsoportok                          | Globális         |
-| Adja meg az ütemezést folytonosságát                                       | Globális         |
-| **\***Kiskereskedelmi csatorna kommunikáció (CDX) meghatározása                 | Globális         |
+| POS-engedélycsoportok meghatározása és kezelése                          | Globális         |
+| Folytonossági ütemezés meghatározása                                       | Globális         |
+| **\***Kiskereskedelmi csatornakommunikáció (CDX) meghatározása                 | Globális         |
 | Hűségkártya pontok módosítása                                      | Globális         |
 | Szortimentek kezelése                                               | Globális         |
 | Áfa-hozzárendelés és felülbírálás                                | Globális         |
@@ -526,7 +529,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | Értékesítési szerződések teljesítése                   | Globális         |
 | Vevő visszatérítések létrehozása és feldolgozása      | Globális         |
 | Alkalmazandó árak és engedmények keresése    | Globális         |
-| Értékesítési rendelés mentességek kezelése                   | Globális         |
+| Értékesítési rendelések várakoztatásának kezelése                   | Globális         |
 | Értékesítési ajánlatok tömeges létrehozása               | Globális         |
 | Kifizetés-visszatérítések feldolgozása                | Globális         |
 | Értékesítési jutalékok regisztrálása                 | Globális         |
@@ -554,7 +557,7 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 
 ### 
 
-### <a name="supply-relationship-management"></a>Ügyfélkapcsolat-kezelés
+### <a name="supply-relationship-management"></a>Szállítói kapcsolatkezelés
 
 | BPM-sor                                                           | Ország/régió |
 |--------------------------------------------------------------------|----------------|
@@ -575,14 +578,14 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 | BPM-sor                                                                    | Ország/régió |
 |-----------------------------------------------------------------------------|----------------|
 | Helyprofil létrehozása                                                   | Globális         |
-| **\***Create a mobile device menu item for license plate consolidation      | Globális         |
+| **\***Menüelem létrehozása mobileszközhöz azonosítótábla-konszolidáláshoz      | Globális         |
 | Fuvarlevél egyeztetése manuálisan                                                  | Globális         |
 | Illesztőprogram bejelentkezésének és kijelentkezésének regisztrálása egy találkozóhoz                   | Globális         |
-| Állítsa be a mobil eszköz menüelem munka típusú beszerzési rendelés befejezése | Globális         |
+| Mobileszköz menüelemének beállítása beszerzési rendelési típusú munka befejezéséhez | Globális         |
 | Találkozó beállítása berakodáshoz                                            | Globális         |
 | Szállítási ajánlat beállítása                                              | Globális         |
 | Automatikus fuvarlevél-egyeztetés beállítása                                     | Globális         |
-| **\***Set up short picking item reallocation                                | Globális         |
+| **\***Cikkek újbóli felosztására vonatkozó szabályok rövid kitárolásának beállítása                                | Globális         |
 
 
 
@@ -593,6 +596,8 @@ A (November 2016--minden nyelv) APQC Unified könyvtárban a feladat útmutatók
 
 [Új vagy frissített feladat-útmutatók állnak rendelkezésre (2016. május)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Új vagy frissített feladat-útmutatók állnak rendelkezésre (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
+
+
 
 

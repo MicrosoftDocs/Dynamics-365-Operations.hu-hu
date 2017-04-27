@@ -101,7 +101,7 @@ Miután létrehozott egy új építőelem-csoportot, hozzá kell rendelnie azt l
 
 ### <a name="export-a-building-block-group"></a> Építőelem-csoport exportálása
 
-Építőelem csoport vagy a konkrét jelentést építőelemek építőelem csoportban is exportálható. Az exportált építőelem csoport mentésként használható. Az exportált adatok között építőelem csoportok vagy Dynamics 365 műveletek telepítések is másolhatja. Jelentéstervező tartalmaz a hivatkozott betűstílusok és a Dimenziókészletek és az építőelem-csoport.
+Exportálhat építőelem-csoportokat vagy adott építőelemeket egy építőelem-csoportból. Az exportált építőelem-csoportokat használhatja biztonsági mentésnek. Az exportált adatokat építőelem csoportok vagy a Dynamics 365 for Operations programok között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
 1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
 2.  Jelölje ki az **Építőelem-csoportok** párbeszédpanelben az exportálni kívánt építőelem-csoportot, majd kattintson az **Exportálás** lehetőségre.
 3.  Jelölje ki az exportálandó jelentésdefiníciókat az **Exportálás** párbeszédpanelben:

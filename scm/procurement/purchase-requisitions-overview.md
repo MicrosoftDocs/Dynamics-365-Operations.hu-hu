@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-overview"></a>Beszerzési igénylések áttekintése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a beszerzési igénylési munkafolyamatot és a beszerzési igénylés különböző felvehető állapotait írja le.
 
 Szervezete működésének beállításaitól függően lehetősége van a szervezete által használt anyagokhoz beszerzési igénylések létrehozására és elküldésére. A beszerzési igénylés olyan belső dokumentum, amely feljogosítja a Beszerzési részleget az elemek vagy szolgáltatások megvásárlására.  
@@ -48,7 +51,7 @@ Konfigurálhatja a beszerzési igénylés munkafolyamatot, hogy egyetlen dokumen
 
 Az alábbi diagrammon a beszerzési igénylés állapotai és a beszerzési igénylések sorai láthatók, amint áthaladnak a munkafolyamaton.  
 
-[![Beszerzési igénylés fej és sor állapotok](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![A beszerzési igénylési sor fejléce és sorok állapota](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>A beszerzési igénylési sor fejléce és sorok állapotainak kapcsolatai
 
@@ -77,7 +80,7 @@ Egy beszerzési igénylés általános állapotát a beszerzési igénylési sor
 <td>Ha a munkafolyamat úgy lett konfigurálva, hogy a beszerzési igénylés sorokat egyéni ellenőrökhöz irányítsa, akkor az egyes sorok állapota <strong>Vizsgált</strong> vagy <strong>Elutasítva</strong>. A beszerzési igénylés állapota frissül, ha az összes beszerzési igénylés sor ellenőrzési folyamata befejeződött és nincs hátralévő ellenőrzési lépés a beszerzési igényléshez.
 <ul>
 <li><strong>Vizsgált</strong> – A beszerzési igénylés sorok ellenőrzésre küldve. Ha egy beszerzési igénylés sorához tartozó munkafolyamat befejeződött, a sor állapota <strong>Vizsgált</strong> marad, amíg a hátralévő beszerzési igénylés sorainak ellenőrzése lefut.</li>
-<li><strong>Elutasított</strong> – A beszerzési igénylési sor el lett utasítva. Elutasított állapotú beszerzési igénylési sorok módosíthatók és küldeni.</li>
+<li><strong>Elutasított</strong> – A beszerzési igénylési sor el lett utasítva. A visszautasított beszerzési igénylési sorok módosíthatók és újraküldhetők.</li>
 </ul>
 Ha újraküldi a visszautasított beszerzési igénylés sorát, az ellenőrzési folyamat minden ellenőrzés alatt lévő beszerzési igénylés sornál újrakezdődik. <strong>Megjegyzés:</strong> Visszahívhat beszerzési igénylést amelyet már feladott. Ha visszahívja a beszerzési igénylést, az összes beszerzési igénylés is visszahívásra kerül. Visszahívott beszerzési igénylés sorok törölhetők.</td>
 </tr>
@@ -133,7 +136,7 @@ Ha újraküldi a visszautasított beszerzési igénylés sorát, az ellenőrzés
 Egy beszerzési igényben szereplő termék költségét feloszthatja pénzügyi számlára. Ha a szervezete használ a költséghelyekhez vagy részlegekhez hasonló dimenziókat, akkor fel lehet osztani a termék árát a pénzügyi számlák dimenziói között.
 
 ## <a name="requisition-purposes"></a>Igénylési célok
-Az igénylési célok a teljesítés igénylési igényét folyamatát rugalmasabbá teszi. Az igénylések létrehozásakor a következő két cél közül választhat: felhasználás vagy feltöltés. Attól függően, hogy az igénylési cél beállításai és a szervezetben igénylési igény szerint egy beszerzési rendelés, átmozgatási rendelés, gyártási rendelés vagy kanban által teljesíteni tudják.  
+Az igénylési célok a teljesítés igénylési igényét folyamatát rugalmasabbá teszi. Az igénylések létrehozásakor a következő két cél közül választhat: felhasználás vagy feltöltés. Az igénylés céljától és a szervezet beállításaitól függően az igénylési igény teljesíthető beszerzési rendeléssel, átmozgatási rendeléssel, gyártási rendeléssel vagy kanbannal.  
 
 A beszerzési irányelveknél ellenőrizheti az elérhető beszerzési célt a szervezete számára meghatározott igénylések között.
 
@@ -152,7 +155,7 @@ A feltöltési célú beszerzési igénylések használatához a rendszer alapü
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Beszerzési igények és árajánlatkérést szabályozó szabályok
 Bizonyos esetekben el kell indítania az ajánlatkérési (RFQ) folyamatot, hogy megadhassa a szállítót és termék árát amelyet a beszerzési igényléssel szeretne beszerezni. Az ajánlatkérés akkor hozható létre, ha a beszerzési igénylés ellenőrzés alatt van. Ha elfogad egy ajánlatot, akkor a szállító, ár és egyéb adatok továbbításra kerülnek az igényléshez.  
 
-Beszerzési igénylés visszatartott kiválasztásával helyezhet a **visszatartott** jelölőnégyzetet az **beszerzési igénylés részletei** lap. A beszerzési igénylés feldolgozása továbbra is csak azt követően a mentesség a négyzet jelölésének törlésével távolítsa el.  
+A beszerzési igénylések visszatarthatók a **Visszatartott** jelölőnégyzet kiválasztásával a **Beszerzési igénylés részletei** lapon. A beszerzési igénylés feldolgozása csak azt követően folytatódhat, hogy eltávolítja a visszatartást a négyzet bejelölésének törlésével.  
 
 **Megjegyzés:** Az e-beszerzésben, a beszerzési igényléshez az ajánlatkérés lehetővé teszi a szállítóknak alternatív sorok megadását. Ebben az esetben a beszerzési igénylésben a jóváhagyott alternatívák jelennek meg.
 
@@ -178,7 +181,7 @@ Olyan beszerzési igénylés létrehozásakor, beszerzési rendelésnél, amelye
 
 Az igényösszesítési eljárás akkor indul el, amikor a munkafolyamatban a beszerzési igénylés jóváhagyásra kerül és ha a költségvetés-ellenőrzés a szervezethez lett konfigurálva a költségvetési tartalékok és az előzetes kötelezettségvállalások rögzítésénél. A következő ábrán az igényösszesítés folyamata látható.  
 
-[![Igény szerint konszolidációs folyamat](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Folyamatáramlat igényösszesítéshez](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a következőket:
 
@@ -192,8 +195,10 @@ A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a köve
 <a name="see-also"></a>Lásd még
 --------
 
-[Hozzon létre egy igénylési fogyasztásra (feladat guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Felhasználási igénylés létrehozása (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Beszerzési igénylési munkafolyamat](purchase-requisitions-workflow.md)
+
+
 
 

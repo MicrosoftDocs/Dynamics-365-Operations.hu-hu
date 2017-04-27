@@ -46,7 +46,7 @@ A **Tömeges felvételi projektek** oldalon válassza ki a „NyariGyakoronokok�
 
 Miután kiválasztotta a szakmai gyakorlathoz felvenni kívánt hallgatókat, az adataikat a **Beosztás részletei** oldalon adhatja meg a számukra kiválasztott beosztásra. Miután megadta a beosztások adatait, jelölje meg a pozíciót a Tömeges felvételi projektek lapon, és kattintson a **Felvételi** gombra. Egy beosztásrekord jön létre minden pozícióhoz, és egy dolgozói rekord kerül hozzárendelésre minden felvett dolgozóhoz.
 
-## <a name="masshire-project-statuses"></a>Masshire projekt állapota
+## <a name="masshire-project-statuses"></a>Tömeges felvételi projektek állapota.
 A tömeges felvételi projekt állapota a következők egyike lehet.
 -   Létrehozva
 -   Nyitva

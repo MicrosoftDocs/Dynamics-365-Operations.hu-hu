@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk beszerzési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési szerződést olyan megállapodás, amely egy szevezetet arra kötelez, hogy több beszerzési rendelés használatával egy adott mennyiségnek vagy összegnek megfelelő terméket vásároljon. Ezen kötelezettségvállalás ellenében a vevő különleges árakat és engedményeket kaphat. 
 
 A beszerzési szerződések vonatkozhatnak egy meghatározott termékmennyiségre, egy termék meghatározott pénznemösszegére vagy egy beszerzési kategória termékeinek meghatározott pénznemösszegére. A beszerzési szerződésben foglalt árak és engedmények felülírják a többi létező kereskedelmi megállapodásokban beállított árak és engedmények mértékét.  
@@ -70,7 +73,7 @@ A **Megállapodás** terület mutatja az összes mennyiséget vagy összeget, am
 A beszerzésirendelés-sorok és a számlasorok, amelyek hozzájárulnak a számítás teljesítéséhez hozzáférhetőek a **Kapcsolódó információk** művelet kijelölésével a sorokban vagy a beszerzési megállapodás fejlécében.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Beszerzési szerződés visszaigazolási és verzióelőzményeinek megtekintése
-Miután a beszerzési szerződést megerősítették, aktuális verziója bekerül az előzményeket tároló táblába. Ha módosítja a beszerzési szerződést, akkor is újra megerősítheti, ezzel új verziót tárol el az előzményekben. Ha a beszerzési megállapodás nem kér megerősítést, továbbra is használhatja azt POs létrehozásához. Azonban az előzmények adatait a beszerzési megállapodás nem tárolja. A megállapodás minden verzióját kinyomtathatja, vagy megtekintheti az előnézetét. Ezután megoszthatja a revíziókat szállítójával, hogy jóváhagyását kérje rájuk.
+Miután a beszerzési szerződést megerősítették, aktuális verziója bekerül az előzményeket tároló táblába. Ha módosítja a beszerzési szerződést, akkor is újra megerősítheti, ezzel új verziót tárol el az előzményekben. Ha nem erősíti meg a beszerzési szerződést, akkor is használhatja beszerzési rendelések létrehozásához. Ilyenkor azonban a beszerzési szerződés előzményadatait nem tárolja. A megállapodás minden verzióját kinyomtathatja, vagy megtekintheti az előnézetét. Ezután megoszthatja a revíziókat szállítójával, hogy jóváhagyását kérje rájuk.
 
 ## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Beszerzési szerződések használata a rendelési folyamatban
 Amikor beszerzési rendelést hoz létre alkalmazhat hozzá egy beszerzési megállapodást. A megállapodás feltételeinek információja, úgy mint fizetési feltételek, szállítási feltételek és szállítási cím ezután a beszerzési rendelés fejlécébe másolódik. Ha a beszerzési rendelés tartalmaz egy vagy több sort olyan termékekhez, vagy kategóriákhoz, amelyek szerepelnek a megállapodásnak, akkor az árak és engedmények a beszerzési megállapodásból azokra a sorokra lesznek alkalmazva. Az összeg vagy mennyiség a rendelési soron hozzájárul a beszerzési megállapodás kötelezettségének teljesítéséhez. Ugyanaz a beszerzési rendelés tartalmazhat sorokat, amelyek nincsenek kapcsolatban egy beszerzési szerződéssel és sorokat, amelyek rendelkeznek kötelezettséggel egy beszerzési szerződéshez.  
@@ -91,8 +94,10 @@ Pénzügyi dimenziókat átmásolhat beszerzési szerződések fejlécébe vagy 
 <a name="see-also"></a>Lásd még
 --------
 
-[Hozzon létre egy beszerzési szerződés (feladat guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Új beszerzési szerződés létrehozása (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[A beszerzési Rendeléskiadás létrehozása beszerzési megállapodásból (feladat guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
+
 
 

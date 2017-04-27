@@ -1,5 +1,5 @@
 ---
-title: "Készpénzfizetési engedmények Túlfizetések kezelése"
+title: "Készpénzfizetési engedmény kezelése túlfizetések esetén"
 description: "Ez a cikk azokat az eseteket mutatja be, amelyek megmutatják a fizetés kezelésének módját, amikor a felhasználó a készpénzfizetési engedményt tesz, de a túlfizetés esetében is."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Készpénzfizetési engedmények Túlfizetések kezelése
+# <a name="handling-cash-discounts-for-overpayments"></a>Készpénzfizetési engedmény kezelése túlfizetések esetén
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk azokat az eseteket mutatja be, amelyek megmutatják a fizetés kezelésének módját, amikor a felhasználó a készpénzfizetési engedményt tesz, de a túlfizetés esetében is. 
 
@@ -133,6 +136,8 @@ A készpénzfizetési engedmény 10,50 értékről 10,00 értékre csökken. A k
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Készpénzfizetési engedmény (A **Vevői engedmények fő számlája** mező a **Készpénzfizetési engedmények** lapon) | 10,50        |               |
 | Kinnlevőségek                                                                              |              | 10,50         |
+
+
 
 
 

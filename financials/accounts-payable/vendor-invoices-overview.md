@@ -1,5 +1,5 @@
 ---
-title: "Szállítói számlák – áttekintés"
+title: "Szállítói számlák áttekintése"
 description: "Ez a cikk a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak."
 author: twheeloc
 manager: AnnBe
@@ -25,20 +25,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-invoices-overview"></a>Szállítói számlák – áttekintés
+# <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak. 
 
 <a name="vendor-invoices"></a>Szállítói számlák
 ---------------
 
-A beszerzési rendelés szállítói számlája egy olyan számla, amit a szállítóval egyeztetett beszerzési rendelés alapján termékek vagy szolgáltatások kézbesítésekor jön létre. A szállítói számla fejlécet, valamint a cikkek és szolgáltatások egy vagy több sort tartalmaz. Szállítói számla a szállítói számla, szállítólevél, beszerzési rendelés ciklus befejeződik. 
+A beszerzési rendelés szállítói számlája egy olyan számla, amit a szállítóval egyeztetett beszerzési rendelés alapján termékek vagy szolgáltatások kézbesítésekor jön létre. A szállítói számla fejlécet, valamint a cikkekre vagy szolgáltatásokra vonatkozó egy vagy több sort tartalmaz. A szállítói számlával a ciklus beszerzési rendelésből termékbevételezésre és szállítói számlára léphet tovább. 
 
 Annak ellenére, hogy néhány szállítói számla beszerzési rendeléshez kapcsolódik a szállítói számlák tartalmazhatnak olyan sorokat is, amelyek nem tartoznak beszerzési rendeléssorokhoz. Olyan szállítói számlákat is létrehozhat, amelyek nincsenek hozzárendelve egyetlen beszerzési rendeléshez sem. Ezek a szállítói számlák jelenthetnek folyamatban lévő szolgáltatásokat, például segédprogram számlát, amelyek nem rendelkeznek hivatkozással a beszerzési rendeléshez hozzáadáskor. 
 
 Számos módja van a szállítói számla bevitelének:
 
--   A szállítói számlajegyzék segítségével gyorsan adja meg, amely nem hivatkozik a beszerzési rendelés, számla, hogy akkor is esedékes a költség. A számla-jóváhagyási napló segítségével jelölje ki azokat a számlákat, és könyvelje őket a szállítói egyenleg a könyvelés sztornírozásához.
+-   A szállítói számlajegyzék használatával gyorsan adhat meg számlákat amelyek nem rendelkeznek hivatkozással egy beszerzési rendeléshez, így elhatárolhatja a kiadást. Szállítói számla jóváhagyási napló használatával kiválaszthat számlákat és feladhatja azokat a szállítói egyenlegbe a könyvelt összeg sztornírozásához.
 -   A szállítói számlanapló használatával gyorsan megadhat egy lépésben számlákat amelyek nem hivatkoznak a beszerzési rendelésre.
 -   A szállítói gyűjtőszámlával a szállítói számlajegyzékkel gyorsan megadhat számlákat a költség elhatárolásához. Megnyithatja a kapcsolódó beszerzési rendeléseket később a számla kiadási számlára történő feladásához.
 -   A **Nyitott szállítói számlák** és a **Függőben lévő szállítói számlák** lapok lehetővé teszik a szállítói számlák létrehozását a visszaigazolt beszerzési rendelésekből.
@@ -57,7 +60,7 @@ Ha szállítói számlát egy kapcsolódó beszerzési rendelésből nyit meg, a
 Ha a jogi személy számlaegyeztetést használ, akkor megtekintheti a mennyiségegyeztetés eredményeit a **Termékbevételezés mennyiségi egyeztetése** oszlopban. Használhatja az **Egyezetés részletei** menü parancsot is az **Ellenőrzés** fülön a mennyiségegyeztetés eredményeinek megtekintéséhez.
 
 ## <a name="adding-a-line-that-wasnt-on-the-purchase-order"></a>Új sor hozzáadása amely nem volt megnyitva a beszerzési rendelésen
-Egy új sort, amely a beszerzési rendelésen a szállítói számla nem adhat meg. Jelöljön ki egy cikk számát vagy a beszerzési kategóriát. Ezután hozzáadhatja mennyiségeket, árakat és összegeket a sorhoz. A sor csak az egyeztetési irányelvek számlaösszegeiben fog szerepelni.
+Hozzáadhat új sorokat, amelyek nem voltak a szállítói számla beszerzési rendelésében. Ki kell választania egy cikkszámot vagy beszerzési kategóriát. Ezután hozzáadhatja mennyiségeket, árakat és összegeket a sorhoz. A sor csak az egyeztetési irányelvek számlaösszegeiben fog szerepelni.
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Szállítói számla küldése ellenőrzésre
 A szervezet használhat meghatározott munkafolyamatokat a szállítói számlák ellenőrzési eljárásához. A munkafolyamat előírhatja a számlafejléc, a számlasor vagy mindkettő ellenőrzését. A munkafolyamat vezérlőelemei a fejlécre vagy a sorra vonatkoznak, attól függően, hogy hol van a fókusz, amikor a vezérlőelemre kattint. A **Feladás** gomb helyett a **Küldés** gomb jelenik meg, amelyet használhat szállítói számla feladásához az ellenőrzési folyamat során.
@@ -74,6 +77,8 @@ Ez a lehetőség azt feltételezi, hogy legalább egy termékbevételezést fela
 ## <a name="working-with-multiple-invoices"></a>Több számla használata
 
 Dolgozhat egyszerre több számlával, és fel is adhatja azokat egyszerre. Ha több számlát kell létrehoznia, akkor használja a **Függőben lévő szállítói számlák** oldalt. Ha több szállítói számlát kell feladni és nyomtatni, akkor használja a számla-jóváhagyási napló oldal.t Ha számla-jóváhagyási naplót használ, legalább egy termékbevételezést feladtak, és a beszerzési rendelés számláját fel kell adni a számlajegyzékbe. A számla pénzügyi adatai a számlajegyzékbe feladott számláról származnak.
+
+
 
 
 

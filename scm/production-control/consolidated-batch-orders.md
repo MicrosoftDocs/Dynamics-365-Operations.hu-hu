@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consolidated-batch-orders"></a>Összesített kötegrendelések
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az összesített kötegrendelések koncepcióját mutatja be.
 
 Az ömlesztett cikket tekintjük szülőcikknek, a csomagolt cikket pedig gyermekcikknek. Az ömlesztett cikk és a csomagolt cikk közötti összefüggés az ömlesztett cikk konverziója. Az ömlesztett cikk konverzióját magában az ömlesztett cikkben kell meghatározni.  
@@ -41,6 +44,8 @@ Az összesített kötegrendelés a következő rendelések bármely kombináció
 -   Több tömeges rendelés, több csomagolt rendeléssel
 -   Több tömeges rendelés, egyetlen csomagolt rendeléssel
 -   Csak csomagolt rendelések
+
+
 
 
 

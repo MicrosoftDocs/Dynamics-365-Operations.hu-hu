@@ -1,6 +1,6 @@
 ---
 title: "Számsorozatok áttekintése"
-description: "Számsorozatok Microsoft Dynamics 365 műveletekhez szolgálnak törzsadatrekordok és azonosítók igénylő rekordok olvashatók, egyedi azonosítók létrehozása. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket <em>hivatkozásnak</em> nevezik."
+description: "A Microsoft Dynamics 365 for Operations rendszerben a számsorozatok az alapadat-rekordok és tranzakciórekordok egyéni, olvasható azonosítójának létrehozásához szükségesesek, abban az esetben, ha szükséges hozzájuk azonosító. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket <em>hivatkozásnak</em> nevezik."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="number-sequence-overview"></a>Számsorozatok áttekintése
 
-Számsorozatok Microsoft Dynamics 365 műveletekhez szolgálnak törzsadatrekordok és azonosítók igénylő rekordok olvashatók, egyedi azonosítók létrehozása. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket <em>hivatkozásnak</em> nevezik.
+[!include[banner](../includes/banner.md)]
 
-Mielőtt a Microsoft Dynamics 365 műveletek hivatkozás új bejegyzéseket hozhat létre, állítson be egy számsorozatot, és a hivatkozáshoz társítani. Javasoljuk, hogy a **Szervezeti adminisztráció** űrlapon belül található lapokat használja a számsorozatok beállításakor. Ha modulspecifikus beállításokat kell megadni, akkor használhatja a paraméterek lapot a modulban, hogy meghatározza az abban a modulban található hivatkozásokhoz tartozó számsorozatokat. Például a **Kinnlevőségek** és **Kötelezettségek** modulokban beállíthat számsorozat csoportokat, hogy meghatározott számsorozatokat meghatározott vevőkhöz vagy szállítókhoz rendeljen. Számsorozat beállításakor mindig meg kell adnia egy hatókört, ami megadja, mely szervezet használja a számsorozatot. A hatókör lehet **megosztott**, **vállalat**, **jogi személy**, vagy **operációs egység**. A **jogi személy** és **vállalat** hatókörök összevonhatóak a **pénzügyi naptári időszak** modullal, hogy még több meghatározott számsorozatot hozzon létre. A számsorozatok formátumai szegmensekből állnak. Az olyan számsorozatok, amelyek hatóköre nem **megosztott** tartalmazhatnak olyan szegmenseket, amelyek megfelelnek a hatókörnek. Például egy számsorozat a **jogi személy** hatókörrel tartalmazhat egy jogi személy szegmenst. Ha hatókör-szegmenst is felvesz a számsorozat-formátumba, akkor már a szám alapján beazonosíthatja egy adott rekord hatókörét. A hatóköröket jelölő szegmenseken kívül a számsorozat-formátumok tartalmazhatnak **állandó** és **alfanumerikus szegmens** értékeket. Az **állandó** szegmens olyan betűket, számokat vagy szimbólumokat tartalmaz, amelyek nem változnak. Az **alfanumerikus** szegmens olyan betűhalmazt vagy számot is tartalmazhat, amely a szám minden új használatakor nő. Használja a kettős kereszt (\#) növekvő számok és az ampersand (&) növekvő betűk jelölésére. Ha például a formátum \#\#\#\#\#\_2017 hoz létre a sorozat 00001\_2017, 00002\_2017, és így tovább.
+
+A Microsoft Dynamics 365 for Operations rendszerben a számsorozatok az alapadat-rekordok és tranzakciórekordok egyéni, olvasható azonosítójának létrehozásához szükségesesek, abban az esetben, ha szükséges hozzájuk azonosító. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket <em>hivatkozásnak</em> nevezik.
+
+Mielőtt egy hivatkozáshoz új rekordokat hozhat létre a Microsoft Dynamics 365 for Operations rendszerben, be kell állítania egy számsorozatot és a hivatkozáshoz társítani. Javasoljuk, hogy a **Szervezeti adminisztráció** űrlapon belül található lapokat használja a számsorozatok beállításakor. Ha modulspecifikus beállításokat kell megadni, akkor használhatja a paraméterek lapot a modulban, hogy meghatározza az abban a modulban található hivatkozásokhoz tartozó számsorozatokat. Például a **Kinnlevőségek** és **Kötelezettségek** modulokban beállíthat számsorozat csoportokat, hogy meghatározott számsorozatokat meghatározott vevőkhöz vagy szállítókhoz rendeljen. Számsorozat beállításakor mindig meg kell adnia egy hatókört, ami megadja, mely szervezet használja a számsorozatot. A hatókör lehet **megosztott**, **vállalat**, **jogi személy**, vagy **operációs egység**. A **jogi személy** és **vállalat** hatókörök összevonhatóak a **pénzügyi naptári időszak** modullal, hogy még több meghatározott számsorozatot hozzon létre. A számsorozatok formátumai szegmensekből állnak. Az olyan számsorozatok, amelyek hatóköre nem **megosztott** tartalmazhatnak olyan szegmenseket, amelyek megfelelnek a hatókörnek. Például egy számsorozat a **jogi személy** hatókörrel tartalmazhat egy jogi személy szegmenst. Ha hatókör-szegmenst is felvesz a számsorozat-formátumba, akkor már a szám alapján beazonosíthatja egy adott rekord hatókörét. A hatóköröket jelölő szegmenseken kívül a számsorozat-formátumok tartalmazhatnak **állandó** és **alfanumerikus szegmens** értékeket. Az **állandó** szegmens olyan betűket, számokat vagy szimbólumokat tartalmaz, amelyek nem változnak. Az **alfanumerikus** szegmens olyan betűhalmazt vagy számot is tartalmazhat, amely a szám minden új használatakor nő. A kettős kereszt (\#) használatával jelezheti a növekvő számokat, az (&) jellel pedig a növekvő betűket. Például a \#\#\#\#\#\_2017 formátum a 00001\_2017, 00002\_2017 és így tovább sorozatot hozza létre.
 Példák a számsorozatokra
 ------------------------
 
@@ -73,6 +76,8 @@ Egy számsorozat lehet folyamatos vagy nem folyamatos. A folyamatos számsor nem
 ### <a name="automatic-cleanup-of-number-sequences"></a>Számsorozatok automatikus tisztítása
 
 Áramszünet, szoftverhiba vagy egyéb váratlan probléma esetén a rendszer nem tudja automatikusan újrahasznosítani a folyamatos számsorozatok korábbi számait. Ezért ezen elveszett sorszámok rendbetételéhez manuállis vagy automatikus tisztítási folyamatot futtathat. A tisztítási folyamat betervezésekor vegye figyelembe, hogy milyen használati terhelés alatt van éppen a szerver. Javasolt a tisztítás kötegelt feladatként történő futtatása a csúcsidőn kívüli órákban.
+
+
 
 
 

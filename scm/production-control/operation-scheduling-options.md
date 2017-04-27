@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling-options"></a>A műveletek ütemezésének beállításai
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a témakör leírja a műveletek ütemezési beállításait. A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról.
 
 A műveleti ütemezés a következő adatokat számítja ki a terhelési rendelés esetén:
@@ -128,6 +131,8 @@ A jelenlegi értékeket alapértelmezett értékekként mentheti. Két lehetős�
 <a name="see-also"></a>Lásd még
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[Műveletek ütemezése](operations-scheduling.md)
+
+
 
 

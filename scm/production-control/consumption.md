@@ -1,5 +1,5 @@
 ---
-title: "Az anyagfelhasználás számítása"
+title: "Anyagfelhasználás kiszámítása"
 description: "Ez a cikk tájékoztatást nyújt az anyagfelhasználás kiszámításához kapcsolódó különféle lehetőségekkel kapcsolatban."
 author: YuyuScheller
 manager: AnnBe
@@ -27,22 +27,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculate-material-consumption"></a>Az anyagfelhasználás számítása
+# <a name="calculate-material-consumption"></a>Anyagfelhasználás kiszámítása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk tájékoztatást nyújt az anyagfelhasználás kiszámításához kapcsolódó különféle lehetőségekkel kapcsolatban. 
 
 A következő, anyagfelhasználás kiszámításához való lehetőségek a **Beállítás** és **Fokozatos felhasználás** a lapokon, a **Sor adatai** gyorslapjon, az **Anyagjegyzék** oldalon érhetők el.
 
 ## <a name="variable-and-constant-consumption"></a>Változó és állandó felhasználás
-A a **felhasználás** mezőben ki lehet választani e mennyiség állandó vagy változó mennyiséget kell kiszámítani. Válassza ki **állandó** Ha egy rögzített mennyiség vagy kötet előállításához szükséges, a mennyiségtől függetlenül, amely elő. Válassza a **Változó**lehetőséget, amely az alapértelmezett beállítás, ha a szükséges anyag a késztermékek mérete arányos a befejezett termékek számával.
+A **Felhasználás** mezőben kiválaszthatja, hogy a felhasználás állandó vagy változó mennyiségként legyen kiszámolva. Válassza az **Állandó** lehetőséget, ha egy fix mennyiség vagy terjedelem szükséges a termeléshez, a termelt mennyiségtől függetlenül. Válassza a **Változó**lehetőséget, amely az alapértelmezett beállítás, ha a szükséges anyag a késztermékek mérete arányos a befejezett termékek számával.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Felhasználás számítása képletből
 A **Képlet** mezőben be lehet állítani különböző képleteket az anyagfelhasználás kiszámítására. Ha az alapértelmezett **Normál** értéket használja, a felhasználás a nem képletből lesz kiszámolva. A következő képletek együttműködnek a **Magasság**, **Szélesség**, **Mélység**, **Dűrűség**, és **Állandó** mezőkkel:
 
--   Magasság \*állandó
--   Magasság \*szélessége \*állandó
--   Magasság \*szélessége \*z \*állandó
--   (Magasság \*szélessége \*mélység / sűrűség) \*Állandó
+-   Magasság \* Konstans
+-   Magasság \* Szélesség \* Konstans
+-   Magasság \* Szélesség \* Mélység \* Konstans
+-   (Magasság \* Szélesség \* Mélység / Sűrűség) \* Konstans
 
 ## <a name="rounding-up-and-multiples"></a>Kerekítés és többszörösök
 A **Kerekítés** és a **Többszörösök** mezők együttesen lehetővé teszik az anyagfelhasználás értékének kerekítését. Például az anyagkezelési egység szerint kerekítheti az értéket, amelyben a nyersanyagot kitárolják a termeléshez. A következő lehetőségek érhetők el a **Kerekítés** mezőben: **Mennyiség**, **Mérték**, és **Felhasználás**.
@@ -53,7 +56,7 @@ Ha bejelöli **Mennyiség** lehetőséget a kerekítés módszereként, a mennyi
 
 ### <a name="measurement"></a>Mérték
 
-Általában a **Mérték** lehetőséget kell a kerekítés módszerként választani, ha a nyersanyag meghatározott méretekben érkezik. Például egy 2 méteres fémcső szükséges egy késztermékhez, és fémcsövet 4,5 méteres hosszúságban tárolják. Ebben az esetben a **Mérték** kerekítési mechanizmusa használható annak kiszámítására, hogy hány fémcsőre van szükség egy adott számú késztermék előállításához. Például a **képlet** mező értéke **magasság \*állandó**. A **magasság** mező értéke **2** a csövet, a késztermék szükséges hosszát jelzi. A **Többszörös** mező értéke **4,5**, amely jelzi, hogy a cső 4,5 méteres hosszban lesz kitárolva. A számítás a következő:
+Általában a **Mérték** lehetőséget kell a kerekítés módszerként választani, ha a nyersanyag meghatározott méretekben érkezik. Például egy 2 méteres fémcső szükséges egy késztermékhez, és fémcsövet 4,5 méteres hosszúságban tárolják. Ebben az esetben a **Mérték** kerekítési mechanizmusa használható annak kiszámítására, hogy hány fémcsőre van szükség egy adott számú késztermék előállításához. Ebben a példában a **Képlet** mező értéke a **Magasság \* Konstans**  értékre van állítva. A **Magasság** mező értéke **2**, amely a késztermékhez szükséges csőhosszt jelzi. A **Többszörös** mező értéke **4,5**, amely jelzi, hogy a cső 4,5 méteres hosszban lesz kitárolva. A számítás a következő:
 
 1.  A 10 darab késztermékhez szükséges többszörösök száma: 10 ÷ 2 = 5 darab
 2.  Összes felhasználás: 4,5 x 5 = 22,5 méter fémcső.
@@ -78,5 +81,7 @@ A fokozatos felhasználást kell használni a mennyiségi intervallumokban tört
 | 200,00      | 40.0000  |
 
 Az anyagjegyzék (AJ) mennyisége 1, a termelési mennyiség pedig 110. A felhasználás receptúrája: Kezdő sorozat (Mennyiség) = Felhasználás. Mivel a termelési mennyiség 110, az beleesik a „100 fölött” sorozatba. Ezért a mennyiség 20.
+
+
 
 

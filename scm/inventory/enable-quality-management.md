@@ -1,5 +1,5 @@
 ---
-title: "Minőség – áttekintés"
+title: "Minőségkezelés áttekintése"
 description: "Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="quality-management-overview"></a>Minőség – áttekintés
+# <a name="quality-management-overview"></a>Minőségkezelés áttekintése
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül.
 
@@ -344,7 +347,7 @@ Definiálnia kell egy minőségi társítást az üzleti folyamat minden olyan v
 </tr>
 <tr class="even">
 <td>Tesztváltozó eredményei</td>
-<td>Ezen az oldalon lehet beállítani, módosítani vagy megtekinteni a minőségi teszthez kapcsolódó tesztváltozó lehetséges teszteredményeit. Mindegyik eredményhez egy <strong>megfelelt</strong> vagy egy <strong>nem felelt meg</strong> állapotot kell hozzárendelni. Minden egyes, a <strong>Tesztek</strong> oldalon megadott minőségi teszthez definiálnia kell egy változót és annak eredményeit. (Minőségi vizsgálatok a vizsgálati típusának beállítása <strong>lehetőség</strong> a a <strong>vizsgálatok</strong> oldalon.) Használja a <strong>vizsgálati csoportok</strong> vizsgált változó és az alapértelmezett eredménynek hozzárendelése az egyes minőségi vizsgálat lap.</td>
+<td>Ezen az oldalon lehet beállítani, módosítani vagy megtekinteni a minőségi teszthez kapcsolódó tesztváltozó lehetséges teszteredményeit. Mindegyik eredményhez egy <strong>megfelelt</strong> vagy egy <strong>nem felelt meg</strong> állapotot kell hozzárendelni. Minden egyes, a <strong>Tesztek</strong> oldalon megadott minőségi teszthez definiálnia kell egy változót és annak eredményeit. (Minőségi tesztek esetén a <strong>Tesztek</strong> oldalon beállított teszttípus <strong>Lehetőség</strong>.) A <strong>Tesztcsoportok</strong> oldal használatával lehet tesztváltozót és az alapértelmezett eredményt adott minőségi teszthez hozzárendelni.</td>
 <td>Egy süteménygyártó a készterméken vizsgálatot végez. Ennek a vizsgálati tesztnek többféle változója van. Az egyik változó az íz, ennek lehetséges eredményei: jó és rossz. Egy másik változó a szín, ennek lehetséges eredményei: túl sötét, túl világos és megfelelő. Mindegyik eredményhez hozzá van rendelve egy <strong>megfelelt</strong> vagy <strong>nem felelt meg</strong> állapot. Az egyes változók vizsgálatakor az ellenőr a teszt eredményét az egyik eredmény kiválasztásával jelenti.</td>
 </tr>
 </tbody>
@@ -355,8 +358,10 @@ Definiálnia kell egy minőségi társítást az üzleti folyamat minden olyan v
 <a name="see-also"></a>Lásd még
 --------
 
-[Quality management processes](quality-management-processes.md)
+[Minőségkezelési folyamatok](quality-management-processes.md)
 
 [Szabálytalanság kezelésének aktiválása](enable-nonconformance-management.md)
+
+
 
 

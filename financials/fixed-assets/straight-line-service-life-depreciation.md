@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Lineáris – élettartam szerinti értékcsökkenés
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a Lineáris, élettartam szerinti értékcsökkenés módszeréről nyújt tájékoztatást.
 
 Ha lineáris vagy degresszív tárgyieszköz-értékcsökkenési profilt állít be, akkor a Lineáris - hátralevő élettartam érték is választható az Értékcsökkenési profilok képernyő Módszer mezőjében, és az értékcsökkenési profilhoz társított tárgyi eszközök értékcsökkenésének az eszköz fennmaradó élettartama lesz az alapja. Ez általában időszakonként azonos értékcsökkenési összeget eredményez. 
@@ -57,7 +60,7 @@ Ha például az Évente beállítást választja, az éves értékcsökkenés cs
 
 Ha a Pénzügyi beállítást választja az Értékcsökkenési év mezőben, akkor a lineáris hátralévő élettartam típusú értékcsökkenési módszert alkalmazza a rendszer. Ezt a rendszer a pénzügyi év alapján számítja ki, amelyet a könyvnél meghatározott pénzügyi naptár, vagy a Főkönyv lapon kiválasztott pénzügyi naptár definiál. A pénzügyi naptárak a Pénzügyi naptárak oldalon állíthatóak be.
 
-Például a pénzügyi év július 1-június 30., az értékcsökkenés számítása kezdődik július 1-én. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az értékcsökkenés minden egyes pénzügyi időszak végén módosul. A következő pénzügyi év hossza az új pénzügyi évnek a Pénzügyi naptárak lapon való létrehozásakor beállított pénzügyi időszakoktól függ. 
+Egy július 1-től június 30-ig tartó pénzügyi év esetén az értékcsökkenés számítása július 1-jén kezdődik. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az értékcsökkenés minden egyes pénzügyi időszak végén módosul. A következő pénzügyi év hossza az új pénzügyi évnek a Pénzügyi naptárak lapon való létrehozásakor beállított pénzügyi időszakoktól függ. 
 
 Ha a Pénzügyi beállítást választja, az alábbi opciók lesznek elérhetőek az az Időszak gyakorisága mezőben:
 -   Az Éves beállítás esetében az üzleti évre vonatkozó értékcsökkenés teljes összege a pénzügyi év utolsó napján egy összegként lesz feladva.
@@ -98,9 +101,11 @@ A beszerzés-módosítás élettartama azonos a tárgyi eszköz élettartamával
 | 3. év | 14 000/5 = 2800                        | 10 200 - 2800 = 7400                |
 | 4. év | 14 000/5 = 2800                        | 7400 - 2800 = 4600                 |
 | 5. év | 14 000/5 = 2800                        | 4600 - 2800 = 1800                 |
-| 6. év | Fennmaradó 800\*                           | 1800 – 800 = 1000                   |
+| 6. év | Maradék: 800*\*                           | 1800 – 800 = 1000                   |
 
-\*Mivel a fennmaradó összeg kisebb, mint az értékcsökkenési összeg, csak a fennmaradó összeg mínusz a maradványérték származik.
+\*Mivel a maradék összeg kisebb az értékcsökkenés összegénél, ezért csak a maradványérték lesz kiszámítva.
+
+
 
 
 

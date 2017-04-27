@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchasing-policies"></a>Beszerzési irányelvek
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a beszerzési irányelvekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési irányelv az igénylési folyamatot szabályozó szabályok gyűjteménye. A beszerzési irányelvek lehetővé teszik a beszerzési rendszergazdáknak a beszerzési stratégia megvalósítását a szervezet stratégiai beszerzési követelményihez igazodó irányelv struktúrájának létrehozásával.
 
 Egy beszerzési irányelv irányelvszabályokból épül fel. Irányelvszabály definiálásakor elsőként ki kell választania egy irányelvszabály-típust. Ezután a szabály beállításainak, a kezdő dátumának és záró dátumának meghatározásával hozhat létre szabályt a szabálytípushoz.  
@@ -41,13 +44,13 @@ A beszerzési irányelvek konfigurálásának módjától függően több szabá
 
 ### <a name="example-1-simple-purchasing-policy-configuration"></a>1. példa: Beszerzési irányelv egyszerű konfigurálása
 
-Szervezetek, amelyek a kis- és kevésbé összetett állíthat be beszerzési irányelvek szerint a jogi személy, és a vállalatok szervezeti hierarchia használhatja.  
+Kisebb, kevésbé összetett szervezetek beállíthatják a beszerzési irányelveket jogi személyek szerint, ehhez elegendő csupán a Vállalatok szervezeti hierarchia használata.  
 
 A Fabrikam egy kisvállalkozás, amelyen belül a beszerzési követelmények kevéssé változnak. A beszerzési szabályok csak a szervezet különböző jogi személyei esetén eltérőek. Például a Fabrikam kanadai, illetve USA-beli vállalatának alkalmazottai más katalógusokból és más szállítóktól rendelnek. Ezért a Fabrikam a beszerzési irányelveit a jogi személyek szintjén állítja be.  
 
-A Fabrikam két beszerzési irányelvet hoz létre. A házirend vonatkozik az Egyesült Államok jogi személy 1111. B házirend vonatkozik a kanadai jogalany 2222. Ha egy jogi személy 1111 alkalmazott beszerzési igénylés hoz létre, a szabályok származó házirend A. Például a termékkatalógusban, amelyet az alkalmazott látja megadott házirend A. a katalógus-irányelvszabály  
+A Fabrikam két beszerzési irányelvet hoz létre. Az A. házirend az egyesült államokbeli jogi személyre vonatkozik, 1111. A B. házirend az kanadai jogi személyre vonatkozik, 2222. Ha egy, az 1111-es jogi személyhez tartozó alkalmazott hoz létre beszerzési igénylést, az irányelvszabályokat a rendszer az A irányelvből származtatja. Például az alkalmazott számára látható termékkatalógust az A irányelv katalógus-irányelvszabálya határozza meg.  
 
-Ha egy jogi személy 2222 alkalmazott beszerzési igénylés hoz létre, a szabályok származó házirend B.  
+Ha egy, a 2222-es jogi személyhez tartozó alkalmazott hoz létre beszerzési igénylést, az irányelvszabályokat a rendszer a B irányelvből származtatja.  
 
 **Megjegyzés:** Amennyiben egy 1111-es jogi személyhez tartozó alkalmazott egy 2222-es jogi személyhez tartozó alkalmazott nevében vásárol egy cikket, a 2222-es jogi személyhez megadott irányelvszabályok (azaz a B irányelv irányelvszabályai) érvényesülnek.
 
@@ -117,7 +120,7 @@ A feltöltés-ellenőrzési szabály egy választható szabály, amely meghatár
 
 ### <a name="purchase-order-creation-and-demand-consolidation-rule"></a>Beszerzési rendelés létrehozására és igényösszesítésre vonatkozó szabály
 
-A beszerzési rendelés létrehozása és igény szerinti konszolidációs szabály határozza meg, hogy a szabályok egy jóváhagyott beszerzési igénylés a beszerzési rendelés létrehozásakor használandó. Az ilyen típusú szabályok létrehozásakor különböző lapokon található beállításokat adhat meg:
+A beszerzési rendelés létrehozására és igényösszesítésre vonatkozó szabály meghatározza egy beszerzési rendelés jóváhagyott beszerzési igénylésből való generálásakor használt irányelvszabályokat. Az ilyen típusú szabályok létrehozásakor különböző lapokon található beállításokat adhat meg:
 
 -   A **Beszerzési rendelés felosztása** lapon meghatározhatja a beszerzési igénylési sorok különálló beszerzési rendelésekre való felosztásának feltételeit.
 -   Az **Ár/engedmény átvitele** lapon megadhatja, hogy beszerzési rendelés létrehozásakor mely esetben kerüljön sor az ármegállapodások újraszámítására:
@@ -126,7 +129,7 @@ A beszerzési rendelés létrehozása és igény szerinti konszolidációs szab�
 
     A kérelmezőnek engedélyezheti az ár és az engedmény átviteli módszerének megváltoztatását az egyes beszerzési igénylési soroknál, függetlenül az ár/engedmény definiált átviteli szabályától. Válassza ki a **Kézi felülbírálás engedélyezése beszerzésiigénylés-soronként** lehetőséget, ha engedélyezni szeretné ezt a képességet.
 -   A **Cikkleírás átvitele** lapon átviheti a cikkleírást az igénylésből, ha az egy ajánlatkérésből származik.
--   Az **Árkülönbözet tűréshatára** lapon definiálhatja azokat a szabályokat, amelyekkel a beszerzési katalógus egy cikkének árnövekedésekor a jóváhagyott beszerzési igénylések visszairányíthatók az ellenőrzési folyamatba. Beállíthatja azt a maximális összeget, amellyel a beszerzés igényléseken szereplő cikkek nettó összege növelhető a beszerzési igénylés jóváhagyásának időpontja és a beszerzési rendelés létrehozásának időpontja között. A nettó összeg a következő képlet segítségével számítható ki: (\[mennyiség × (egységár-engedmény) ÷ áregység\] + beszerzési vegyes költségek) × (100-engedmény %) ÷ 100 beszerzési igénylési sorok az ártűréshatárt beállított manuális feldolgozás céljából tartanak. A **Hibafeldolgozás** lapon konfigurált szabályok határozzák meg a beszerzési igénylési sorok feldolgozásának módját.
+-   Az **Árkülönbözet tűréshatára** lapon definiálhatja azokat a szabályokat, amelyekkel a beszerzési katalógus egy cikkének árnövekedésekor a jóváhagyott beszerzési igénylések visszairányíthatók az ellenőrzési folyamatba. Beállíthatja azt a maximális összeget, amellyel a beszerzés igényléseken szereplő cikkek nettó összege növelhető a beszerzési igénylés jóváhagyásának időpontja és a beszerzési rendelés létrehozásának időpontja között. A nettó összeg a következő képlettel számítható: (\[Mennyiség × (Egységár – Engedmény) ÷ Áregység\] + Beszerzés vegyes költségei) × (100 – Engedményszázalék) ÷ 100 A megadott ártűréshatárt túllépő beszerzési igénylési sorokat manuálisan kell feldolgozni. A **Hibafeldolgozás** lapon konfigurált szabályok határozzák meg a beszerzési igénylési sorok feldolgozásának módját.
 -   A **Hibafeldolgozás** lapon adhatja meg azt a feldolgozási szabályt, amelyet akkor kell alkalmazni a beszerzési igénylésekre, ha szállítói hiba vagy ártűréshatár-hiba miatt nem sikerül az ellenőrzésük. Válasszon a következő lehetőségek közül:
     -   **Nincs művelet** – A beszerzési igénylési sorok a **Jóváhagyott beszerzési igénylések kiadása** oldalon maradnak. A beszerzési igénylési sorok állapota **Jóváhagyva** marad. A hibákat azonban meg kell oldani ahhoz, hogy beszerzési rendelést lehessen létrehozni a beszerzési igénylési sorokhoz.
     -   **Beszerzési igénylés sorának visszavonása** – A beszerzési igénylési sorok visszavonásra kerülnek. A kérelmező létrehozhat új beszerzési igénylést a visszavont sorokhoz, ha továbbra is kérelmezni kívánja a cikkeket.
@@ -141,6 +144,8 @@ A beszerzési rendelés létrehozása és igény szerinti konszolidációs szab�
     -   **Igényösszevonás tiltása** – Igényösszevonáskor nem vehetőek figyelembe a jóváhagyott beszerzési igénylési sorok. Ez az alapértelmezett beállítás, és csak azokra a beszerzési igénylési sorokra vonatkozik, amelyek kézi feldolgozást igényelnek a beszerzési rendelések létrehozásához.
     -   **Igényösszevonás mindenkori engedélyezése** – Igényösszevonáskor minden jóváhagyott beszerzési igénylési sor figyelembe vehető. **Megjegyzés:** Ha az **Igényösszevonás mindenkori engedélyezése** beállítást választja az **Igényösszevonás** lapon, azonban a **Beszerzési rendelések automatikus létrehozása** beállítást a **Beszerzési rendelés manuális létrehozása** lapon, az összes beszerzési igénylést manuálisan kell feldolgozni.
     -   **Igényösszevonás engedélyezése a megadott feltételek teljesülése esetén** – Definiálhatja azokat a feltételeket, amelyek meghatározzák, hogy a jóváhagyott beszerzési igénylési sorok figyelembe vehetőek-e igényösszevonáskor. A beszerzési igénylési sorok mindegyik típusához beállíthatja a feltételeket a beszerzési kategória és a szállító szerint. Ha az **Igényösszevonás engedélyezése a megadott feltételek teljesülése esetén** lehetőséget választja, a beszerzési igénylési sorok mindegyik típusához beállíthatja a feltételeket a beszerzési kategória és a szállító szerint. Amikor beszerzési kategóriát választ, a beszerzési kategóriához tartozó összes alkategóriát is kiválasztja. Ha az **Összes** lehetőséget választja egy meghatározott sortípusnál, az adott sortípussal rendelkező összes beszerzési igénylési sor használható lesz az igényösszevonáshoz.
+
+
 
 
 

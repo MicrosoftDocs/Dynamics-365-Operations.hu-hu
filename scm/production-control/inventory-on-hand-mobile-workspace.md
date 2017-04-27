@@ -1,6 +1,6 @@
 ---
-title: "Készlet aktuális mobil munkaterület Microsoft Dynamics 365 műveletek app"
-description: "A készlet aktuális mobil munkaterület segítségével szerezhet a fenntartott és a rendelkezésre álló készlet mobil végértékeket bármikor és bárhol."
+title: "Aktuális készlet mobil munkaterület a Microsoft Dynamics 365 for Operations alkalmazás számára"
+description: "Az Aktuális készlet mobil munkaterület segítségével bármikor és bárhol, mobilon tájékozódhat a fenntartott és a rendelkezésre álló készletről."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,72 +25,72 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Készlet aktuális mobil munkaterület Microsoft Dynamics 365 műveletek app
+# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Aktuális készlet mobil munkaterület a Microsoft Dynamics 365 for Operations alkalmazás számára
 
-A készlet aktuális mobil munkaterület segítségével szerezhet a fenntartott és a rendelkezésre álló készlet mobil végértékeket bármikor és bárhol. 
+Az Aktuális készlet mobil munkaterület segítségével bármikor és bárhol, mobilon tájékozódhat a fenntartott és a rendelkezésre álló készletről. 
 
 <a name="prerequisites"></a>Előfeltételek
 -------------
 
 | Előfeltételek                                                         | Leírás                                                                                                                                        |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Olvassa el a Microsoft Dynamics 365 műveletek mobil platform | [365 Dynamics műveletek mobil platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
-| 365 Dynamics műveletek                                          | Olyan környezetben, amely a Microsoft Dynamics 365 1611 műveletek verziójához és a Microsoft Dynamics műveletek platform frissítése (November 2016) 3 |
-| A gyorsjavítás KB 3215650                                                    | Telepítse a gyorsjavítást a munkaterületek, amelyeket a Microsoft Dynamics 365 műveletek engedélyezéséhez.                                       |
-| Mobil eszköz, amely a Dynamics 365 a műveletek alkalmazás telepítve van | Töltse le a mobil app store app műveletek esetében a Dynamics 365.                                                                           |
+| Tudnivalók a Microsoft Dynamics 365 for Operations mobilplatformról | [Dynamics 365 for Operations mobilplatform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
+| Dynamics 365 for Operations                                          | Olyan környezet, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november). |
+| Gyorsavítás – Tudásbázis, 3215650                                                    | Telepítse a gyorsjavítást a Microsoft Dynamics 365 for Operationsben biztosított munkaterületek engedélyezéséhez.                                       |
+| Mobileszköz, amelyre telepítve van Dynamics 365 for Operations alkalmazás | Töltse le Dynamics 365 for Operations mobilalkalmazást a mobiljához tartozó alkalmazásáruházból.                                                                           |
 
 ## <a name="introduction"></a>Bevezetés
-Általában cégek még több szállítások és bevételezések készlet minden nap. Ezeket a mozgásokat folyamatosan a raktárkészlet állapotának módosítása. A készlet aktuális mobil munkaterület lehetővé teszi a több vállalatot érintő aktuális készlet állapota látható, hogy kaphatnak a tetszés szerinti a mobileszközön szereplő adatok a legújabb végértékeket. Függetlenül attól, hogy a raktár, beszerzési, értékesítési, gyártási vagy kezelés működik, vagy más szerepkörökkel rendelkeznek bárhol és bármikor elérheti az aktuális készlet adatokat. A mobil munkaterület létesítmények lehetővé teszi az azonnali információkra az aktuális állapotát, és lehetővé teszi az aktuális készlet létesítmények, anyagi aktuális foglalások és korlátozás nélküli kijelentést az aktuális készlet megtekintése. Adjon meg a cikkszámok és lekérdezés az aktuális készlet, és végre keresést szűrt készleten levő termékek vagy változatok is. A mobil munkaterület, az alábbi szolgáltatásokat nyújtja:
+Általában a cégek készleténél több szállításra és bevételezésre kerül sor mindennap. Ezek a mozgások folyamatosan módosítják az aktuális készlet állapotát. Az Aktuális készlet mobil munkaterület segítségével átláthatja a több vállalatot érintő aktuális készlet állapotát, így tetszés szerinti a mobileszközön a legfrissebb adatok alapján tájékozódhat a készletadatokról. Függetlenül attól, hogy a raktárban, beszerzésnél, értékesítésben, gyártásban vagy a vezetőségben dolgozik-e, vagy más szerepkörrel rendelkezik, az aktuális készletadatokat bárhol és bármikor elérheti. A mobil munkaterületen azonnal megtekinthető az aktuális, különböző létesítményeket felölelő állapot, és megtekinthető a különböző létesítményeket felölelő aktuális készlet, aktuális anyagfoglalások és le nem foglalt aktuális készlet. Ezenkívül az aktuális készlet cikkszámok megadásával lekérdezhető , és az aktuális termékekre vagy változatokra szűrt keresés végezhető. A mobil munkaterület konkrétan az alábbi szolgáltatásokat nyújtja:
 
--   Kereshet terméktípus és termék neve termékek keresése a raktárkészlet állapotának megtekintése.
--   A kijelölt termékek a következő információkat tekintheti meg:
-    -   Egy webhely aktuális készlet
-    -   Az aktuális készlet raktáranként
-    -   Az aktuális készlet raktár szerint
-    -   Az aktuális készlet tételenként (a kötegelt által szabályozott termékek)
-    -   Az aktuális készlet készlet állapot szerint
+-   Kereshet terméktípus és termék neve alapján termékeket, és megtekintheti a rájuk vonatkozó aktuális készletállapotot.
+-   A kijelölt termékeknél a következő információkat tekintheti meg:
+    -   Aktuális készlet telephely szerint
+    -   Aktuális készlet raktár szerint
+    -   Aktuális készlet hely szerint
+    -   Aktuális készlet köteg szerint (kötegvezérelt termékeknél)
+    -   Aktuális készlet készlet állapota szerint
 
 <!-- -->
 
--   Termék készlet az alábbi módon jelenik meg:
-    -   Által a fizikai készlet (Ez a nézet a teljes munkamennyiségre vonatkozik.)
-    -   Által lefoglalt fizikai (ebben a nézetben a fenntartott összeg jelöli.)
-    -   Által elérhető fizikai (a nézet jelöli rendelkezésre álló összeg fenntartások nem rendelkezik.)
+-   Az aktuális termékkészlet az alábbi módon jelenik meg:
+    -   Fizikai készlet alapján (Ez a nézet a teljes mennyiséget jelöli.)
+    -   Fizikai fenntartott alapján (Ez a nézet a fenntartott mennyiséget jelöli.)
+    -   Elérhető fizikai alapján (Ez a nézet a rendelkezésre álló, nem fenntartott mennyiséget jelöli.)
 
 ## <a name="get-started"></a>Első lépések
-Ismerkedés a mobileszközön:
+A használat megkezdése a mobileszközön:
 
-1.  A mobil app-tárolóból töltse le és telepítse a Microsoft Dynamics 365 app műveletek esetében.
-2.  Az alkalmazás indításához az eszközön.
-3.  A Dynamics 365 URL-CÍMÉT adja meg.
-4.  Adja meg a vállalat a bejelentkezéshez. Például, adja meg az **USMF**.
-5.  Az első bejelentkezéskor kéri a felhasználónevet és jelszót a Microsoft Dynamics 365 költségszámla esetében. Adja meg hitelesítő adatait. A bejelentkezést követően a vállalat jelennek meg a rendelkezésre álló munkaterületek.
+1.  A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Microsoft Dynamics 365 for Operations alkalmazást.
+2.  Indítsa el az alkalmazást a készülékén.
+3.  Adja meg a Dynamics 365 URL-címét.
+4.  Adja meg a vállalatot a bejelentkezéshez. Például írja be azt, hogy **USMF**.
+5.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót a Microsoft Dynamics 365 for Operations-fiókjához. Adja meg a hitelesítési adatait. A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek.
 
-A mobil app munkaterületek megtekintéséhez először a kívánt munkaterületet kell közzétenni a vonatkozó műveletek app a Dynamics 365.
+A munkaterületek a mobilalkalmazásban történő megtekintéséhez először a kívánt munkaterületeket közzé kell tenni Dynamics 365 for Operations alkalmazásban.
 
-1.  Indítsa el a Dynamics 365 műveletekhez.
-2.  Ugrás a **rendszer felügyeleti**&gt;**a telepítő**&gt;**Rendszerparaméterek**.
-3.  Válassza ki **mobile alkalmazás kezelése**.
-4.  Válassza ki a munkaterületen való közzétételéhez a mobil platform.
-5.  Válassza ki **közzététele a munkaterület**.
-6.  Frissítse az eszközt, és ellenőrizze a közzétett munkaterületek.
+1.  Indítsa el a Dynamics 365 for Operationst.
+2.  Lépjen a **Rendszerfelügyelet** &gt; **Beállítás** &gt; **Rendszerparaméterek** elemre.
+3.  Válassza a **Mobilalkalmazás kezelése** lehetőséget.
+4.  Válassza ki a munkaterületet a mobilplatformon való közzétételre.
+5.  Válassza a **Munkaterület közzététele** lehetőséget.
+6.  Frissítse az eszközt a közzétett munkaterületek ellenőrzéséhez.
 
-## <a name="view-the-onhand-inventory-for-a-product"></a>A termék onhand készletének megjelenítése
-1.  A mobileszközön válassza ki a **– az aktuális készlet** munkaterület.
-2.  Válassza ki **ellenőrizze az aktuális cikk**. A kapcsolat nélküli használatra app betöltött termékek listájának megtekintéséhez. Alapértelmezés szerint 50 elemeket tölti be, de módosíthatja ezt a számot. További tudnivalókért tanulmányozza a előre olvasási kézikönyvet.
-3.  Ha a cikk nem szerepel a listán, jelölje be a **keres több** 365 Dynamics online keres műveletek végrehajtásához. Terméktípus keresés, vagy térjünk át a keresés terméknév.
-4.  Válasszon ki egy terméket. Ha a cikk egy képet, a kép jelenik meg.
-5.  A raktárkészlet állapotának megjelenítéséhez a következő lehetőségek közül választhat:
-    -   Aktuális készlet megtekintése helyenként
-    -   Aktuális készlet megjelenítése raktáranként
-    -   Aktuális készlet megtekintése raktár szerint
-    -   Aktuális készlet megtekintése tételenként (a kötegelt által szabályozott termékek)
-    -   Nézet az aktuális készlet állapot szerint
+## <a name="view-the-onhand-inventory-for-a-product"></a>Termék aktuális készletének megtekintése
+1.  A mobileszközön válassza az **Aktuális készlet** munkaterület.
+2.  Válassza az **Aktuális ellenőrzése egy cikkhez** lehetőséget. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött termékek listája. Alapértelmezés szerint 50 elem töltődik be, de módosíthatja ezt a számot. A további tudnivalókat lásd az előre olvasási kézikönyvben.
+3.  Ha a cikk nem szerepel a listán, válassza a **Továbbiak keresése** elemet a Dynamics 365 for Operationsben végzett online keresés érdekében. Keressen termékszám alapján, vagy térjen át terméknévalapú keresésre.
+4.  Válasszon ki egy terméket. Ha a cikkhez tartozik kép, a kép megjelenik.
+5.  A készlet aktuális állapotának megjelenítéséhez a következő lehetőségek közül választhat:
+    -   Aktuális megjelenítése telephely szerint
+    -   Aktuális megjelenítése raktár szerint
+    -   Aktuális megjelenítése hely szerint
+    -   Aktuális megjelenítése köteg szerint (kötegvezérelt termékeknél)
+    -   Aktuális megjelenítése készletállapot szerint
 
-    Termék készlet az alábbi módon jelenik meg:
-    -   Által a fizikai készlet (Ez a nézet a teljes munkamennyiségre vonatkozik.)
-    -   Által lefoglalt fizikai (ebben a nézetben a fenntartott összeg jelöli.)
-    -   Által elérhető fizikai (ebben a nézetben a rendelkezésre álló összeget, amelynek fenntartások jelöli.)
+    Az aktuális termékkészlet az alábbi módon jelenik meg:
+    -   Fizikai készlet alapján (Ez a nézet a teljes mennyiséget jelöli.)
+    -   Fizikai fenntartott alapján (Ez a nézet a fenntartott mennyiséget jelöli.)
+    -   Elérhető fizikai alapján (Ez a nézet a rendelkezésre álló, nem fenntartott mennyiséget jelöli.)
 
 
 

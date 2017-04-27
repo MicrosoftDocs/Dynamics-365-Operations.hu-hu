@@ -1,6 +1,6 @@
 ---
-title: "Együttműködik a szállító a Szállítói portál használatával"
-description: "Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt. Ezt az információt csak azokra a február 2016 &amp;Dynamics AX verziói május 2016."
+title: "Együttműködés a szállítókkal a Szállítói portálon keresztül"
+description: "Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt. Az itt olvasható információk csak a Dynamics AX 2016. februári és 2016. májusi verzióira vonatkoznak."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Együttműködik a szállító a Szállítói portál használatával
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Együttműködés a szállítókkal a Szállítói portálon keresztül
 
-Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt. Ezt az információt csak azokra a február 2016 &amp;Dynamics AX verziói május 2016.
+[!include[banner](../includes/banner.md)]
 
-Az ebben a témakörben olvasható információk csak a Dynamics AX 2016 februári és 2016 májusi verzióira vonatkoznak. A Szállítói portál funkciók kiterjesztett szállító csoportmunka 365 Dynamics műveletek verzió 1611 váltotta ki. Új szállító együttműködési szolgáltatásaival kapcsolatban további tudnivalókért lásd: [szállító együttműködési használata külső szállítók](vendor-collaboration-work-external-vendors.md).  
+
+Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt. Az itt olvasható információk csak a Dynamics AX 2016. februári és 2016. májusi verzióira vonatkoznak.
+
+Az ebben a témakörben olvasható információk csak a Dynamics AX 2016 februári és 2016 májusi verzióira vonatkoznak. A Szállítói portál funkciót a Dynamics 365 for Operations rendszer 1611-es verziójának Kiterjesztett szállítói együttműködés funkciója váltotta le. Az új szállítói együttműködés funkcióval kapcsolatos további tudnivalókat lásd: [A szállítói együttműködés a külső szállítókkal való együttműködésre történő használata](vendor-collaboration-work-external-vendors.md).  
 
 A Szállítói portál olyan szállítók számára készült, akik nem rendelkeznek Microsoft Dynamics AX electronic data interchange (EDI) integrációval a beszerzés rendelés (PO) információjának cseréjéhez. A portál lehetővé teszi, hogy a megbízott beszerzők a szállítóknak küldjék a PO-t, és közvetlenül a Dynamics AX-től kapják a Megerősítve vagy Elutasítva válaszokat.  
 
@@ -66,9 +69,9 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 | Küldje el a beszerzési rendelés új verzióját a Szállító portálra. | Egy új verzió lesz regisztrálva a Szállítói portálon, és az állapota **Külső ellenőrzés alatt** állapotra módosul. |
 | A szállító jóváhagyja a beszerzési rendelés új verzióját.           | Az állapot **Visszaigazolt** lesz.                                                                |
 
-A szállító és a szállítói válasz elküldve a beszerzési rendelés verzióinak megtekintéséhez kattintson a **naplók**&gt;**megerősítő kérelmek** a a beszerzési Rendelésből.  
+Ha meg akarja nézni a szállítónak elküldött beszerzési rendeléseket és a szállító válaszait, kattintson a **Naplók** &gt; **Visszaigazolási kérések** pontra a beszerzési rendelésnél.  
 
-Azok a rendelések, amelyeket válaszért küldtek a szállítóknak, és **Külső ellenőrzés alatt** állapotúak, megjelenhetnek mind **A szállítói portálra küldött és válaszra váró beszerzési rendelések** és **A szállítói portálra küldött beszerzési rendelések, amelyekre a válasz műveletet igényel** listában is. Ha módosít egy olyan rendelést, amely el lett küldve a szállítónak, így annak állapota újra **Jóváhagyva** lesz, és a rendelés már nem szerepel a listákban. Korábban volt-e válasz a szállítótól a rendelés megtekintéséhez kattintson a **naplók**&gt;**megerősítő kérelmek**.  
+Azok a rendelések, amelyeket válaszért küldtek a szállítóknak, és **Külső ellenőrzés alatt** állapotúak, megjelenhetnek mind **A szállítói portálra küldött és válaszra váró beszerzési rendelések** és **A szállítói portálra küldött beszerzési rendelések, amelyekre a válasz műveletet igényel** listában is. Ha módosít egy olyan rendelést, amely el lett küldve a szállítónak, így annak állapota újra **Jóváhagyva** lesz, és a rendelés már nem szerepel a listákban. Ha meg szeretné tekinteni, hogy a rendelésre volt-e már korábban válasz, kattintson a **Naplók** &gt; **Visszaigazolási kérések** lehetőségre.  
 
 A szállítóknak nem kell jóváhagyniuk a beszerzési rendelést a Szállítói portálon. Küldhetnek email üzenetet, illetve egyéb csatornákon keresztül is kommunikálhatják a beszerzési rendelés elfogadását. Ezután a rendelést manuálisan is jóváhagyhatja a Dynamics AX rendszerben. Ebben az esetben egy figyelmeztetést fog kapni, ami jelzi, hogy a rendelés jóvá lesz hagyva annak ellenére is, hogy nincs válasz a szállítótól. A beszerzési rendelés ezután megjelenik a jóváhagyási előzményekben a Szállítói portálon, úgy, mint egy megnyitott rendelés amelyre nem érkezett válasz. Ezenkívül a szállító többé nem tudja majd se elfogadni, se visszautasítani a beszerzési rendelést.  
 
@@ -97,5 +100,7 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 [Biztonsági funkciók konfigurálása a szállítói együttműködés felhasználói számára](configure-security-vendor-portal-users.md)
 
 [Szállítói együttműködési számlázás munkaterület](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+
+
 
 

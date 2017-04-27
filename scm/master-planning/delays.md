@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delays"></a>Késések
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az alaptervezésben szereplő késleltetett dátumokról szolgál információval. A késleltetett dátum egy olyan valós határidő, amelyet a tranzakció kap meg, akkor ha az alaptervezés által kiszámított legkorábbi teljesítési dátum későbbre esik, mint a kért dátum.
 
 Az alaptervezés kiszámíthatja egy tranzakció legkorábbi teljesítési dátumát, az átfutási idők, az anyagok rendelkezésre állása, a rendelkezésre álló kapacitás és a különböző tervezési paraméterek alapján. 
@@ -41,11 +44,13 @@ Beállíthatja, hogyan számítsa ki a rendszer a fedezetcsoport késéseit. Ezt
 
 Az **Alaptervezés paraméterei** lapon beállíthatja a késések számításának kezdő időpontját. Ha egy rendelés ezen időpont után teljesül, akkor egy nap hozzáadódik a rendelés késési dátumához. 
 
-**Megjegyzés:** korábbi verzióiban számított késések elnevezést használták *határidő-üzenetek*, késleltetett időpontjában ismert a *határidő*, és egy késleltetett tranzakciós néven ismert *jövőbeli készlet tranzakciók*.
+**Megjegyzés:** A korábbi változatokban a késések kiszámítását *határidő-üzeneteknek* nevezték, a késleltetett dátum neve *határiő dátum* volt, a késleltetett tranzakcióé pedig *beállított jövőbeli tranzakció*.
 
 <a name="see-also"></a>Lásd még
 --------
 
 [Fedezeti beállítások](coverage-settings.md)
+
+
 
 

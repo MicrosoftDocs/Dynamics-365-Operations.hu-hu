@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="quarantine-orders"></a>Karanténutasítások
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk bemutatja, hogy a karanténutasításokat hogyan lehet a készlet blokkolására használni. 
 
-A karantén-utasítások használhatóak a készlet blokkolására. Például érdemes karantén minőség-ellenőrzési okokból elemek. Karanténba helyezett van már készlet egy karanténraktárba kerül át. **Megjegyzés:** Ha speciális raktárkezelési folyamatokat használ (a Raktárkezelésben), a karantén utasítás feldolgozása csak értékesítési visszáru-rendeléseknél lesz használva.
+A karantén-utasítások használhatóak a készlet blokkolására. Például lehet, hogy minőség-ellenőrzési okok miatt szeretne karanténba tenni cikkeket. A karanténba helyezett készlet át lesz szállítva egy karantén raktárba. **Megjegyzés:** Ha speciális raktárkezelési folyamatokat használ (a Raktárkezelésben), a karantén utasítás feldolgozása csak értékesítési visszáru-rendeléseknél lesz használva.
 
-## <a name="quarantine-onhand-inventory-items"></a>Karantén onhand készletcikkek
+## <a name="quarantine-onhand-inventory-items"></a>Aktuálisan készleten lévő cikkek karanténba helyezése
 Cikkek karanténba helyezésekor létrehozhatja a karanténutasításokat manuálisan, vagy beállíthatja a rendszert, hogy automatikusan hozza létre a karantén utasításokat a bejövő feldolgozás során. Karantén-utasítások automatikus létrehozásához válassza ki a **Karantén kezelése** lehetőséget a **Készletre vonatkozó irányelvek** fülön a **Cikkmodellcsoportok** lapon. Az alapértelmezett karantén raktárt is meg kell adnia a **Karantén raktár** mezőben, a fogadó raktár esetén. Amikor az aktuális készlet rögzítve lesz egy beszerzési rendelésben vagy termelési rendelésben, a karanténba helyezett cikkek automatikus egy karanténraktárba kerülnek a Microsoft Dynamics 365 for Operations rendszerben. Ez a mozgás akkor következik be, a karantén rendelés állapota felveszi a következő értéket: **Elindítva**. Amikor manuálisan hoz létre karanténutasításokat, akkor nincs rá szükség, hogy az aktuális cikkhez be legyen állítva a karantén kezelés a társított cikkmodellcsoportban. Ehhez a folyamathoz meg kell határoznia a karanténozásra váró aktuális készletet, valamint a használni kívánt karantén raktárt. A folyamat megtervezéséhez használhatja a karanténutasítás állapotokat.
 
 ## <a name="quarantine-order-statuses"></a>Karanténutasítás-állapotok
@@ -64,6 +67,8 @@ A karanténutasítási folyamat részeként lehetséges a készlet selejtezése.
 <a name="see-also"></a>Lásd még
 --------
 
-[Inventory blocking](inventory-blocking.md)
+[Készletzárolás](inventory-blocking.md)
+
+
 
 

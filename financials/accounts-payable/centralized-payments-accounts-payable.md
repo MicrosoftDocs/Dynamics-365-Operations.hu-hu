@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Központosított kifizetések a Kötelezettségekhez
 
+[!include[banner](../includes/banner.md)]
+
+
 Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egyetlen, minden kifizetést kezelő jogi személy alkalmazásával. Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni. A cikk néhány példát mutat be, amelyek a különböző helyzetekben felmerülő központosított kifizetések feladási módjait jelenítik meg.
 
 Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni. Továbbá a szervezet időt takarít meg, mivel a kifizetési folyamat hatékony.
@@ -66,14 +69,14 @@ A Keleti Gyárnak van egy nyitott számlája a 100-as szállítói számla (a Ba
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                           | Tartozik összeg | Követel összeg |
 |-----------------------------------|--------------|---------------|
 | Esedékes a Keleti Gyártól (Gyár) | 600,00       |               |
 | Kötelezettségek (Gyár)       |              | 600,00        |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                          | Tartozik összeg | Követel összeg |
 |----------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) száll
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                           | Tartozik összeg | Követel összeg |
 |-----------------------------------|--------------|---------------|
 | Esedékes a Keleti Gyártól (Gyár) | 58000       |               |
 | Kötelezettségek (Gyár)       |              | 58000        |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                          | Tartozik összeg | Követel összeg |
 |----------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) száll
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                           | Tartozik összeg            | Követel összeg           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) száll
 | Realizált veszteség (Gyár)          | 0,00 EUR / 12,90 USD    |                         |
 | Esedékes a Keleti Gyártól (Gyár) |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                          | Tartozik összeg            | Követel összeg           |
 |----------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) száll
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                           | Tartozik összeg            | Követel összeg           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) száll
 | Realizált veszteség (Gyár)          | 0,00 EUR / 12,66 USD    |                         |
 | Esedékes a Keleti Gyártól (Gyár) |                         | 0,00 EUR / 12,66 USD    |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                          | Tartozik összeg            | Követel összeg           |
 |----------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) száll
 | Készpénzfizetési engedmény (Keleti Gyár)    |                         | 11,28 EUR / 13,61 USD   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>5. példa: Szállítói jóváírás elsődleges kifizetéssel
-A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Kávézó). A kifizetés elszámolása a Nyugati Gyár 3004-es szállítójának egy nyitott számlájával, és a Keleti Gyár 100-as szállítójának egy nyitott jóváírásával történik. A kifizetés az elsődleges kifizetésként van jelölve, az a **tranzakciók kiegyenlítése** oldalon.
+A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Kávézó). A kifizetés elszámolása a Nyugati Gyár 3004-es szállítójának egy nyitott számlájával, és a Keleti Gyár 100-as szállítójának egy nyitott jóváírásával történik. A kifizetést a **Tranzakciók kiegyenlítése** képernyőn elsődleges kifizetésként jelölik meg.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Számla feladása a Nyugati Gyár 3004-es szállítójára
 
@@ -224,7 +227,7 @@ A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Káv�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>A Gyár kifizetésének elszámolása a Nyugati Gyár számlájával és a Keleti Gyár jóváírásával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                           | Tartozik összeg | Követel összeg |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Káv�
 | Esedékes a Nyugati Gyártól (Gyár) | 100,00       |               |
 | Kötelezettségek (Gyár)       |              | 100,00        |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                           | Tartozik összeg | Követel összeg |
 |-----------------------------------|--------------|---------------|
 | Esedékes a Gyártól (Keleti gyár) | 25,00        |               |
 | Kötelezettségek (Keleti Gyár)  |              | 25,00         |
 
-**Fabrikam West posting**
+**Nyugati Gyár – feladás**
 
 | Számla                          | Tartozik összeg | Követel összeg |
 |----------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Káv�
 | Esedékes a Gyárnak (Nyugati Gyár)  |              | 100,00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>6. példa: Szállítói jóváírás elsődleges kifizetés nélkül
-A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Kávézó). A kifizetés elszámolása a Nyugati Gyár 3004-es szállítójának egy nyitott számlájával, és a Keleti Gyár 100-as szállítójának egy nyitott jóváírásával történik. A kifizetés nincs bejelölve az elsődleges kifizetésként meg a **tranzakciók kiegyenlítése** oldalon.
+A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Kávézó). A kifizetés elszámolása a Nyugati Gyár 3004-es szállítójának egy nyitott számlájával, és a Keleti Gyár 100-as szállítójának egy nyitott jóváírásával történik. A kifizetést a **Tranzakciók kiegyenlítése** képernyőn nem jelölik meg elsődleges kifizetésként.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Számla feladása a Nyugati Gyár 3004-es szállítójára
 
@@ -273,21 +276,21 @@ A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Káv�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>A Gyár kifizetésének elszámolása a Nyugati Gyár számlájával és a Keleti Gyár jóváírásával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                           | Tartozik összeg | Követel összeg |
 |-----------------------------------|--------------|---------------|
 | Esedékes a Nyugati Gyártól (Gyár) | 75,00        |               |
 | Kötelezettségek (Gyár)       |              | 75,00         |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                                | Tartozik összeg | Követel összeg |
 |----------------------------------------|--------------|---------------|
 | Esedékes a Nyugati Gyártól (Keleti Gyár) | 25,00        |               |
 | Kötelezettségek (Keleti Gyár)       |              | 25,00         |
 
-**Fabrikam West posting**
+**Nyugati Gyár – feladás**
 
 | Számla                              | Tartozik összeg | Követel összeg |
 |--------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Káv�
 | Esedékes a Gyárnak (Nyugati Gyár)      |              | 75,00         |
 | Kötelezettségek (Nyugati gyár)     | 25,00        |               |
 | Esedékes a Keleti Gyártól (Nyugati Gyár) |              | 25,00         |
+
+
 
 
 

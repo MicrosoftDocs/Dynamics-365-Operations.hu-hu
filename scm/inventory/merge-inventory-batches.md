@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="merge-inventory-batches"></a>Készletkötegek egyesítése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a két vagy több készletköteg egyesített köteggé történő összevonásáról nyújt tájékoztatást. 
 
 A Kötegek egyesítésekor a számítások segíthetnek optimalizálni az egyesített köteg jellemzőit és kötegattribútumait. Miután kiválasztotta a forráskötegeket, áttekintheti és módosíthatja az egyesített köteget a feladás előtt. A kötegegyesítést átvezetheti egy készletnaplóba is jóváhagyáshoz. Ezután a készletet közvetlenül a készletnaplóból foglalhatja le és adhatja fel. Egyesített köteg feladása esetén a készletet a forrás-kötegekhez és az egyesített köteghez van módosítva.
@@ -48,7 +51,7 @@ Igen, vqan néhány dolog, amelyet be kell állítania a kötegeket egyesítő e
 <tbody>
 <tr class="odd">
 <td>Naplónevek, készlet</td>
-<td>Létre kell hoznia egy alapértelmezés szerint használt naplónevet a készletnaplóba történő kötegegyesítés feladásakor. Nem kötelező, de ajánlott: Meghatározhatja, hogy a foglalások automatikusan létrejöjjenek a kötegegyesítés készletnaplóba történő átvitelekor. Ellenkező esetben fennáll annak a veszélye, hogy módosítani lehet az aktuális készletet a kötegegyesítés részleteinek beállítása és a napló feladása után. Ahhoz, hogy a naplónév automatikus foglalásokat beállítani, jelölje be a <strong>automatikus</strong> a a <strong><strong>foglalás</strong></strong> mező.</td>
+<td>Létre kell hoznia egy alapértelmezés szerint használt naplónevet a készletnaplóba történő kötegegyesítés feladásakor. Nem kötelező, de ajánlott: Meghatározhatja, hogy a foglalások automatikusan létrejöjjenek a kötegegyesítés készletnaplóba történő átvitelekor. Ellenkező esetben fennáll annak a veszélye, hogy módosítani lehet az aktuális készletet a kötegegyesítés részleteinek beállítása és a napló feladása után. A naplónévre vonatkozó automatikus foglalás engedélyezéséhez válassza ki az <strong>Automatikus</strong> lehetőséget a <strong><strong>Foglalás</strong></strong> mezőben.</td>
 </tr>
 <tr class="even">
 <td>Készlet- és raktárkezelési paraméterek</td>
@@ -134,9 +137,11 @@ A feladási folyamat kétféleképpen történik, attól függően, hogy haszná
 -   **Átvezetés naplóba** – Átvezeti a kötegegyesítés adatait egy új készletnaplóba. Ha beállította az automatikus foglalásokat, a forráskötegek mennyiségei le vannak foglalva. A kötegegyesítés adatait nem lehet módosítani. A kötegegyesítés módosításához törölnie kell a naplót. A naplót olyan feladatként is használhatja, amelyet egy másik alkalmazottnak kell később végrehajtania. A naplósorhoz tartozó kötegmennyiség foglalása védett. Ez a felosztás lehetővé teszi, hogy a minőségi tervező vagy egy raktár vezetője a saját alkalmazottai számára feladatokat hozzon létre.
 -   **A készletköteg-egyesítés feladása** – A kötegegyesítés közvetlen feladása. Ez a művelet a tényleges egyesítés megtörténte után hajtható végre.
 
-Jóváhagyhatja a kötegegyesítés készletnaplóját **Az összes kötegegyesítés** listaoldalról. Kattintson a **napló**&gt;**utáni**. A napló feladása után az egyesített köteg részletei nem módosíthatók. Miután a kötegegyesítést átadja egy készletnaplóba csak akkor módosíthatja annak részleteit, ha törli a naplót.
+Jóváhagyhatja a kötegegyesítés készletnaplóját **Az összes kötegegyesítés** listaoldalról. Kattintson a **Napló** &gt; **Feladás** elemre. A napló feladása után az egyesített köteg részletei nem módosíthatók. Miután a kötegegyesítést átadja egy készletnaplóba csak akkor módosíthatja annak részleteit, ha törli a naplót.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>I egyesíti a catchweight elem után miért nem látom a catchweight információkat a készletnapló?
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Miután egyesítettem a tényleges súllyal rendelkező cikkeket, miért nem látszik a tényleges súly adat a készletnaplóban?
 Ugyanúgy egyesítheti a tényleges súllyal rendelkező cikkek kötegeit, mint minden más cikket. Azonban a tényleges súly adaton nem jelennek meg a készletnaplóban. Ajánlatos a tényleges súly adatok ellenőrzése a kötegegyesítés készletnaplóba történő átvitele előtt.
+
+
 
 

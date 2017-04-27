@@ -1,6 +1,6 @@
 ---
-title: "Monitor előrejelzés pontossága"
-description: "A cikk ismerteti a Microsoft Dynamics 365 műveletek számítja ki, és bemutatja, hogy miként tekintheti meg a pontossági előrejelzési pontosság típusú."
+title: "Előrejelzés pontosságának megfigyelése"
+description: "Ez a cikk leírja azon előrejelzés pontossági típusokat, melyeket a Microsoft Dynamics 365 for Operations kiszámol, majd megmagyarázza, hogyan tekintheti meg a pontosság értékeit."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,23 +25,28 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="monitor-forecast-accuracy"></a>Monitor előrejelzés pontossága
+# <a name="monitor-forecast-accuracy"></a>Előrejelzés pontosságának megfigyelése
 
-A cikk ismerteti a Microsoft Dynamics 365 műveletek számítja ki, és bemutatja, hogy miként tekintheti meg a pontossági előrejelzési pontosság típusú.
+[!include[banner](../includes/banner.md)]
 
-365 Dynamics műveletek számítja ki a következő típusú előrejelzés pontossága:
+
+Ez a cikk leírja azon előrejelzés pontossági típusokat, melyeket a Microsoft Dynamics 365 for Operations kiszámol, majd megmagyarázza, hogyan tekintheti meg a pontosság értékeit.
+
+A Microsoft Dynamics 365 for Operations a következő típusú előrejelzési pontosságokat számítja ki:
 
 -   Múltbéli előrejelzés pontossága, az alaptervezés által használt múltbéli előrejelzés összehasonlítása a múltbéli igényekkel. A múltbéli előrejelzés pontosságának értékeiért (abszolút értékek, valamint százalékos értékek) kattintson a **Pontosság megjelenítése** gombra az **Igény-előrejelzés részletek** oldalon.
 -   Az előrejelzések létrehozásához használt előrejelző modell előrelátható pontossága. A pontosság százalékos értékét megtekintheti a **Modell adatok - MAPE** opció alatt, az **Igény-előrejelzés adatok** oldalon. 
 
-**Megjegyzés:** a Dynamics 365 műveletek igény-előrejelzés Microsoft Azure gép Learning szolgáltatás használatakor kiszámítása belső modell pontosságának a vizsgálati adatkészlet alapul. Vizsgálati adatkészlet méretének megadásához állítsa a **teszt\_meg\_mérete\_SZÁZALÉK** paraméter a **igény-előrejelzés paraméterek** lap. Ha a beállított érték például **20**, akkor a belső modell pontosságának kiszámításához a múltbéli adatok utolsó 20 százaléka lesz alapul véve.
+**Megjegyzés:** amennyiben a Dynamics 365 for Operations az Igény-előrejelző Microsoft Azure Machine Learning szolgáltatást veszi igénybe, a belső modell pontosságának kalkulációja a tesztadatokat veszi alapul. A teszt adathalmaz méretének megadásához állítsa be a **TEST\_SET\_SIZE\_PERCENT** paramétert az **Igény-előrejelző** paraméterek oldalon. Ha a beállított érték például **20**, akkor a belső modell pontosságának kiszámításához a múltbéli adatok utolsó 20 százaléka lesz alapul véve.
 
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Beállított előrejelzés engedélyezése](authorize-adjusted-forecast.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Vevői kifizetés segítségével több kedvezményes időszakra kiterjedő több számla kiegyenlítése"
+title: "Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel"
 description: "Ez a cikk bemutatja, hogyan lehetséges több számlát is kifizetni akkor, ha az összes számla jogosult készpénzfizetési engedményre. A cikkben bemutatott esetek rávilágítanak arra, hogy a készpénzfizetési engedmények, hogyan függnek a kifizetés idejétől."
 author: twheeloc
 manager: AnnBe
@@ -26,18 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Vevői kifizetés segítségével több kedvezményes időszakra kiterjedő több számla kiegyenlítése
+# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk bemutatja, hogyan lehetséges több számlát is kifizetni akkor, ha az összes számla jogosult készpénzfizetési engedményre. A cikkben bemutatott esetek rávilágítanak arra, hogy a készpénzfizetési engedmények, hogyan függnek a kifizetés idejétől.
 
-A Fabrikam áruk 4032 vevőnek értékesíti. A Fabrikam kínálja 1 százalékos készpénzfizetési engedményt a számla kifizetése 14 napon belül. A Fabrikam emellett a részleges kifizetésekre is nyújt készpénzfizetési engedményt. A settement paraméterek találhatók a **Kinnlevőségek paraméterei** oldalon.
+A Gyár a 4032.-es számú vevőnek árut értékesít. A Gyár 1 százalékos készpénzfizetési engedményt ajánl, ha a számla 14 napon belül befizetésre kerül. A Gyár emellett a részleges kifizetésekre is nyújt készpénzfizetési engedményt. A Kiegyenlítési paraméterek a **Kinnlevőségek paraméterei** oldalon találhatóak.
 
 ## <a name="invoices"></a>Számlák
 Vevői 4032 három számla van, amelynek 3000,00 összesen:
 
--   Számla FTI-10040, 1,000.00, a május 15-én írt. Ez a számla 14 napban kifizetett esetén jogosult 1 százalékos készpénzfizetési engedményt.
--   Számla FTI-10041, 1,000.00, a megadott június 25. Ez a számla 14 napban kifizetett esetén jogosult 1 százalékos készpénzfizetési engedményt.
--   Számla FTI-10042, 1,000.00, a megadott június 25. Ez a számla akkor jogosult 2 százalékos készpénzfizetési engedményt, ha azt kifizették az öt nap és 1-százalékos engedményt Ha 14 nap alatt ki van fizetve.
+-   Az FTI-10040, 1000,00 értékű számla május 15-én került rögzítésre. Ez a számla 14 napon belüli kifizetés esetén 1 százalékos készpénzfizetési engedményre jogosult.
+-   Az FTI-10041, 1000,00 értékű számla június 25-én került rögzítésre. Ez a számla 14 napon belüli kifizetés esetén 1 százalékos készpénzfizetési engedményre jogosult.
+-   Az FTI-10042, 1000,00 értékű számla június 25-én került rögzítésre. Ez a számla 2 százalékos készpénzfizetési engedményre jogosult, ha öt napon belüli kifizetik és 1 százalékos engedményre, ha 14 napon belül fizetik ki.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Minden számla kiegyenlítése június 29.
 Anna a június 29 ezeket a számlákat teljesen kiegyenlítendő kifizetési naplót hoz létre, a kifizetés esetén 2970,00. Összes engedmény összege 30,00. Anna létrehoz egy kifizetést a vevő 4032 és megnyílik az **Tranzakciók kiegyenlítése** oldalon. Az **Tranzakciók kiegyenlítése** lapon Anna megjelölése kiegyenlítésre három számla egyes sorai:
@@ -76,7 +79,7 @@ Vevői 4032 kifizethet a részleges összeget, például minden egyes számláho
 | Kijelölve                 | Normál            | FTI-10041 | 4032    | 2015-06-25 | 2015/07/25 | 10041   | 1000,00                             |                                       | dollár      | 495,00           |
 | Kiválasztva és kiemelve | Normál            | FTI-10042 | 4032    | 2015-06-25 | 2015/07/25 | 10042   | 1000,00                             |                                       | dollár      | 490.00           |
 
-Anna manuálisan is adhat meg a kifizetés összege a 1,485.00, ő megnyitása előtt a **tranzakciók kiegyenlítése** oldalon. Ha Anna kézzel beírja a kifizetés összege, és megjelöli a három tranzakcióit, de ő nem módosítsa az értéket a **kiegyenlítendő összeg** mező minden tranzakció, akkor a következő üzenetet kapja ő a lap bezárásakor:
+Anna manuálisan is megadhatja a 1485,00 értékű kifizetés összegét, mielőtt megnyitná a **Tranzakciók kiegyenlítése** oldalt. Ha Anna kézzel beírja a kifizetés összegét, és megjelöli a három tranzakciót, de nem módosítja az értéket a **Kiegyenlítendő összeg** mezőben minden tranzakciónál, akkor a következő üzenetet kapja a lap bezárásakor:
 
 > A jelölt tranzakciók összege eltér a napló összegétől. Módosítja a napló összegét?
 
@@ -95,6 +98,8 @@ Arnie megtekintheti ezt az információt a **Vevői tranzakciók** oldalon.
 | FTI-10042  | Számla          | 2015-06-25 | 10042   | 1000,00                             |                                       | 505.10   | dollár      |
 | ARP-10040  | Kifizetés          | 2015/29/6 |         |                                      | 1,485.00                              | 0,00     | dollár      |
 | DISC-10040 | Készpénzfizetési engedmény    | 2015/29/6 |         |                                      | 9,90                                  | 0,00     | dollár      |
+
+
 
 
 

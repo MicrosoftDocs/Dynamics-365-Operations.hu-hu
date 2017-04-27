@@ -1,6 +1,6 @@
 ---
-title: "A kelet-európai értékesítési rendeléseken azonosítók számla szerkesztése"
-description: "Ez a témakör ismerteti a Kinnlevőségek paraméterei, amelyek hatással vannak a számlaszámok a csomagjegyzékekre és számlákra vonatkozóan a Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország és Lengyelország."
+title: "Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken"
+description: "Ez a témakör olyan kinnlevőségi paramétereket ismertet, amelyek hatással vannak a csomagjegyzékeken található számlaszámokra, valamint a cseh, észt, magyar, litván, lett és lengyel számlákra."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,11 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>A kelet-európai értékesítési rendeléseken azonosítók számla szerkesztése
+# <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken
 
-Ez a témakör ismerteti a Kinnlevőségek paraméterei, amelyek hatással vannak a számlaszámok a csomagjegyzékekre és számlákra vonatkozóan a Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország és Lengyelország.
+[!include[banner](../includes/banner.md)]
 
-A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország és Lengyelország, jogi személyek esetében a **eladási rendeléseken Számlaazonosító módosítása az** beállítás segítségével manuálisan adja meg a csomagjegyzék és a vevő számlaszámok a csomagjegyzékével és számlák. Az alábbi lehetőségek állnak rendelkezésre a **Kinnlevőségek paraméterei** a lap a **számla** gyorslapján a **frissítések** lap.
+
+Ez a témakör olyan kinnlevőségi paramétereket ismertet, amelyek hatással vannak a csomagjegyzékeken található számlaszámokra, valamint a cseh, észt, magyar, litván, lett és lengyel számlákra.
+
+Csehország, Észtország, Magyarország, Litvánia, Lettország és Lengyelország esetén a jogi személyeknél a **Számlaazonosító módosítása az értékesítési rendelésen** beállítás segítségével manuálisan adhatja meg a csomagjegyzék számát és a számlaszámokat a vevő csomagjegyzékén és számláin. Az alábbi lehetőségek állnak rendelkezésre a **Kinnlevőségek paraméterei** lapon, a **Számla** gyorslapon a **Frissítések** lapon belül.
 <table>
 <colgroup>
 <col width="50%" />
@@ -36,25 +39,27 @@ A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország és L
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>A paraméter</strong></td>
-<td> <strong>Description</strong></td>
+<td><strong> Paraméter</strong></td>
+<td> <strong>Leírás</strong></td>
 </tr>
 <tr class="even">
 <td>Számlaazonosító módosítása az értékesítési rendelésen</td>
-<td>Ha ez a beállítás be van jelölve, lesz tegye a következőket:
+<td>Ha bejelöli ezt a lehetőséget, a következőkre nyílik lehetősége:
 <ul>
-<li>Szerkesztése a <strong>szállítólevél</strong> mezőjében a <strong>Csomagjegyzék feladása</strong> oldalon.</li>
-<li>Szerkesztése a <strong>számla</strong> mezőjében a <strong>számla feladása</strong> oldalon.</li>
-<li>Válassza ki a <strong>használt számlaszám jelölőnégyzet</strong> paraméter.</li>
+<li>Szerkesztheti a <strong>Szállítólevél</strong> mezőt a <strong>Csomagjegyzék feladása</strong> oldalon.</li>
+<li>Szerkesztheti a <strong>számla</strong> mezőt a <strong>Számla feladása</strong> oldalon.</li>
+<li>Bejelölheti a <strong>Használt számlaszám ellenőrzése</strong> paramétert.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Használt számlaszám ellenőrzése</td>
-<td>Ha ez a beállítás ki van jelölve, a számla könyvelési folyamat során a rendszer ellenőrzi, hogy a számlaszám nem létezik a könyvelt számlák. Ha a szám létezik, egy hibaüzenet jelenik meg.</td>
+<td>Ha ez a beállítás ki van jelölve, a számla könyvelési folyamata során a rendszer ellenőrzi, hogy a számlaszám nem létezik-e már a könyvelt számlák között. Ha a szám létezik, hibaüzenet jelenik meg.</td>
 </tr>
 </tbody>
 </table>
 
  
+
+
 
 

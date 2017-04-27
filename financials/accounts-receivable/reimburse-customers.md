@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reimburse-customers"></a>Visszatérítés vevőknek
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk ismerteti a vásárlók egy csoportját érintő visszatérítési tranzakciók létrehozásának folyamatát. Ha a vevőnek követel egyenlege van, visszatéríthet a vevőnek az egyenleg összegéért. 
 
 Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfeltételeket.
@@ -47,6 +50,8 @@ A visszatérítési tranzakciók létrehozásakor a szállítói számla a köve
     A követel összegek átkerülnek a vevők szállítói számláira, és normál kifizetésként dolgozza fel őket a program. Ha a vevő nem rendelkezik szállítói számlával, a program automatikusan létrehoz a vevő számára egy egyszer használatos szállítói számlát.
 3.  A létrehozott visszatérítési tranzakciók megjelenítéséhez használja a **Visszatérítés** oldalt.
 4.  A kötelezettségekben hozzon létre kifizetést a szállítói számlákhoz, amelyek a bevételezési folyamat során jöttek létre.
+
+
 
 
 

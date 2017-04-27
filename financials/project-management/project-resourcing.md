@@ -1,6 +1,6 @@
 ---
 title: "Projekterőforrás"
-description: "Ez a témakör ismerteti a projekt finanszírozása."
+description: "Ez a témakör a projekterőforrásokkal kapcsolatban tartalmaz információkat."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,59 +27,62 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-resourcing"></a>Projekterőforrás
 
-Ez a témakör ismerteti a projekt finanszírozása.
+[!include[banner](../includes/banner.md)]
 
-Projektmenedzserek és erőforrás-kezelők a projekt tervezési szakasz során egy kihívás az erőforrás-elosztás, ahol kell megállapítani és fenntartani a megfelelő erőforrást a projekthez. Microsoft Dynamics 365 műveletekhez projektekhez képességek resourcing segítségével ideiglenes egy adott Eljegyzési, vagy annak egy részére egy felvételi lefoglalt erőforrásokat kezelik, szerepek meghatározása. Ezek az erőforrás-típusok teszik lehetővé a projektkezelőknek és az erőforrás-kezelőknek, hogy elvégezzék az alábbi feladatokat:
+
+Ez a témakör a projekterőforrásokkal kapcsolatban tartalmaz információkat.
+
+Az erőforrás felosztás kihívást jelent a projektkezelőknek és az erőforrás-kezelőknek a projekt tervezési szakaszában, mert itt meg kell határozniuk és fenn kell tartaniuk a megfelelő erőforrásokat a projekthez. A Microsoft Dynamics 365 for Operations rendszerben a projektek esetében az erőforrás-képességek lehetővé teszik azon szerepkörök meghatározását, amelyek olyan ideiglenes erőforrásként vannak kezelve, amelyek fenntarthatók egy bizonyos előjegyzéshez vagy egy előjegyzés egy részéhez. Ezek az erőforrás-típusok teszik lehetővé a projektkezelőknek és az erőforrás-kezelőknek, hogy elvégezzék az alábbi feladatokat:
 
 -   Meghatározhatnak egy olyan szerepkört, amely rendelkezik a szükséges szakértelemmel az erőforrások megfeleltetéséhez.
--   Szerepkörök segítségével megadhatja egy kezdeti kapcsolatfelvétel ütemterv lefoglalt erőforrások alapján.
+-   Felhasználhatnak szerepköröket a fenntartott erőforrásokon alapuló kezdeti előjegyzés-ütemezés meghatározásához.
 -   Költségbecslést végezhetnek, valamint meghatározhatják a kezdeti költségvetést a projekthez hozzárendelt szerepkörök és erőforrások alapján.
--   Szerepkörök segítségével becsléséhez szükséges valamennyi pályázatát erőforrás-lefoglalások számát.
+-   Felhasználhatnak szerepköröket az egyes előjegyzésekhez szükséges erőforrás-fenntartások számának becsléséhez.
 -   Megbecsülhetik a szükséges erőforrásokat egy projekt teljes életciklusához.
 -   A kezdeti erőforrás-hozzárendelés használatával megtervezhetnek egy munkalebontási struktúrát (WBS).
 
-[![Projekt életciklusában](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
+[![Projekt élettartama](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
 
-A projekt tervezési bevételből tervezett erőforrások személyzettel erőforrásokat lehet cserélni. A projektmenedzser is vissza, és a resourcing foglalások frissítése a projekt szakaszai során.
+A projekttervezés előrehaladtával a tervezett erőforrások helyettesíthetők a személyzettel ellátott erőforrásokkal. A projektmenedzser vissza is léphet és frissítheti az erőforrás-fenntartásokat a projekt bármely szakaszában.
 
 ## <a name="set-up-project-resources"></a>Projekterőforrások beállítása
-Be kell állítania egy új naptárt és hozzá kell rendelnie egy alkalmazottat vagy egy dolgozót. A naptár segítségével a projekt és a munkaidő, a lefoglalt erőforrások a projekt ütemezése. A naptár beállítása alatt a projektvezető az erőforrás optimalizálásának részeként elvégezheti az erőforrás kiegyenlítést. A naptár-ütemezés alapján korlátozások helyezhetők az erőforrásokra. Állíthat be egy naptárt a a **naptárak** oldalon. 
+Be kell állítania egy új naptárt és hozzá kell rendelnie egy alkalmazottat vagy egy dolgozót. A naptár a projekthez fenntartott erőforrások munkaidejének és a projektek ütemezésére lesz használva. A naptár beállítása alatt a projektvezető az erőforrás optimalizálásának részeként elvégezheti az erőforrás kiegyenlítést. A naptár-ütemezés alapján korlátozások helyezhetők az erőforrásokra. Beállíthat egy naptárat a **Naptárak** oldalon. 
 
-A munkavállaló projekt erőforrásként beállításakor választhat, hogy a társaság, amelynek az erőforrások beállítása a munkavállalók vagy a szervezeten belüli más vállalatok munkavállalók is választhat. Ezek a vállalatközi erőforrásokat. Az alábbi eljárások bemutatják, hogyan állítható be egy munkavégző projekt erőforrásként a vállalaton belül és egy vállalatközi projekterőforrás beállítása.
+Ha beállít egy munkavállalót projekterőforrásként, választhat annak a vállalatnak a dolgozói közül, amelyhez beállítja az erőforrásokat, vagy a szervezeten belüli más vállalatok dolgozói közül is. Ezek a vállalatközi erőforrások. Az alábbi eljárások bemutatják, hogyan állítható be egy dolgozó projekterőforrásként a vállalaton belül, és hogyan állítható be egy vállalatközi projekterőforrás.
 
 ### <a name="set-up-a-worker-as-a-project-resource"></a>Dolgozó beállítása, mint projekterőforrás
 
-1.  A a **munkavállalók** a lap a **munkavállalók** listában, jelölje ki a dolgozó, projekt erőforrásként hozzáadni, és nyissa meg a dolgozó bejegyzést.
-2.  Kattintson a műveletek ablaktábla **projekt**&gt;**a telepítő**&gt;**Project telepítő**.
-3.  Válasszon ki egy naptárat, és zárja be a lapot.
+1.  A **Dolgozók** oldalon, a **Dolgozók** listában jelölje ki azt a dolgozót, akit projekterőforrásként szeretne hozzáadni, majd nyissa meg a dolgozó rekordot.
+2.  A Műveleti ablaktáblán kattintson a **Projekt** &gt; **Beállítás** &gt; **Projektbeállítás** lehetőségre.
+3.  Válasszon ki egy naptárt, és zárja be a lapot.
 
 Meghatározhat alapértelmezett projekteket az erőforráshoz, mint előzetes hozzárendelés típus. Az előzetes hozzárendelések akkor használhatóak, ha az erőforrás-kezelő vagy a projektkezelő előre tudja, hogy az erőforrás milyen projekteken fog dolgozni. Az előzetes hozzárendelések alapulhatnak a projekttámogató vagy a vevő kérelmein. A projekt előzetes hozzárendeléséhez a **Projektek hozzárendelése** oldalon a **Projektek** lapon a **Fennmaradó projektet** listáján jelölje ki a megfelelő projektet.
 
 ### <a name="set-up-an-intercompany-resource"></a>Egy vállalatközi erőforrás beállítása
 
-A munkavállaló vállalatközi erőforrásként beállításakor ki kell töltenie a hitelezési és a hitelfelvétel vállalat beállítása. 
+A munkavállaló vállalatközi erőforrásként való beállításakor el kell végezni a beállítást a kölcsönbe adó és a kölcsönbe vevő vállalatnál. 
 
-**A hitelezési vállalatnál:**
+**A kölcsönbe adó vállalatnál:**
 
-1.  Műveletek 365 Dynamics ellenőrizze, hogy a hitelező társaság van kijelölve, majd töltse ki a fenti eljárás "A munkavállaló a project erőforrás beállítása."
-2.  Ugrás ** főkönyvi **&gt; ** könyvelési mátrix **&gt;**vállalatközi könyvelés**. Click **New**.
-3.  A a ** jogalany ID ** mezőben, válassza ki a hitelt nyújtó vállalatot. Töltse ki a többi megfelelő mezőt, és kattintson a **Mentés**.
-4.  Nyissa meg a ** projektek igazgatási és számviteli **&gt; ** a telepítő **&gt;**árak ** &gt;**átadási ár**.** **
-5.  A a ** átadási ár ** képernyő, kattintson a **új**, és a ** kölcsönbe vevő jogi személy ** mezőben, válassza ki a megfelelő vállalatot.
-6.  Ha azt szeretné, hogy a hitelfelvételi vállalat az erőforrás, az e szakasz elején létrehozott kölcsönözni csak a **erőforrás** mezőben, válassza ki a létrehozott erőforrás nevét. Ha az összes erőforrás a vállalat számára elérhetővé szeretné tenni a hitelfelvételi vállalat azt szeretné, hagyja a ** erőforrás ** a mező üres.
-7.  Ugrás ** projektek igazgatási és számviteli **&gt; ** telepítő **&gt;**projekt management és könyvelési paraméterek**, és a ** vállalatközi ** lapon a ** vállalatközi erőforrás-ütemezés és a munkaidő-nyilvántartások ** mező **Igen**.
+1.  A Dynamics 365 for Operations rendszerben ellenőrizze, hogy a kölcsönbe adó vállalat ki legyen jelölve, majd végezze el a fenti eljárást: „Dolgozó beállítása, mint projekterőforrás”.
+2.  Ugrás **Főkönyv **&gt; **Feladás beállítása **&gt; **Vállalatközi könyvelés** elemre. Kattintson az **Új** elemre.
+3.  A **Jogi személy azonosítója **mezőben válassza ki a kölcsönbe adó vállalatot. Töltse ki a többi megfelelő mezőt, és kattintson a **Mentés** elemre.
+4.  Ugorjon a **Projektvezetés és könyvelés **&gt; **Beállítás&gt; **Árak &gt; **Transzferár** lehetőségre.** **
+5.  A **Transzferár ** űrlapon kattintson az **Új** lehetőségre, és a **Kölcsönbe vevő jogi személy ** mezőben válassza ki a megfelelő vállalatot.
+6.  Ha a kölcsönbe vevő vállalat számára csak az e szakasz elején létrehozott erőforrást szeretné kölcsönbe adni, az **Erőforrás** mezőben válassza ki a létrehozott erőforrás nevét. Ha a vállalat összes erőforrását elérhetővé szeretné tenni a kölcsönbe vevő vállalat számára, hagyja üresen az **Erőforrás **mezőt.
+7.  Ugrás a **Projektvezetés és könyvelés **&gt; **Beállítás **&gt; **Projektvezetési és könyvelési paraméterek** elemre, a ** Vállalatközi **lapon állítsa a **Vállalatközi erőforrás-ütemezés és időnyilvántartások engedélyezése ** mező értékét az **Igen** értékre.
 
-**A hitelfelvételi vállalatnál:**
+**A kölcsönbe vevő vállalatnál:**
 
-1.  Keresse fel **projektek igazgatási és számviteli**&gt;**a Projekt-erőforrások**&gt;**Erőforrások lista**.
-2.  A keresési szűrő írja be a nevét, ellenőrizze, hogy a neve szerepel az erőforráslista a hitelfelvételi vállalat hitelezési vállalat az előző eljárásban létrehozott erőforrás.
+1.  Nyissa meg a **Projektvezetés és könyvelés** &gt; **Projekterőforrások** &gt; **Erőforrások listája** menüpontot.
+2.  A keresési szűrőbe írja be a nevét a kölcsönbe adó vállalat előző eljárásában létrehozott erőforrásnak annak az ellenőrzéséhez, hogy az erőforrás szerepel a kölcsönbe vevő vállalat erőforráslistájában.
 
 ## <a name="manage-resource-competencies"></a>Erőforrás-kompetenciák kezelése
-Erőforrás-kompetenciák erőforrás-kezelés alapvető részét képezik. A kompetenciák használhatóak kiindulásként azon erőforrások megállapítására, amelyek rendelkeznek a megfelelő szakértelemmel, végzettséggel, tanúsítvánnyal és projekt tapasztalattal. Ezt az információt minden egyes erőforrás esetében be kell állítani, valamint rendszeresen kell frissíteni. Ezzel a módszerrel maximalizálhatja a képességeket, ha egy adott erőforrás kompetenciái a projekterőforrás hozzárendelése során teljesülnek. [![Példák a képességek, tanúsítványok, oktatási és a projekttel kapcsolatos tapasztalatok](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
+Az erőforrás-kompetenciák az erőforrás-kezelés fontos részei. A kompetenciák használhatóak kiindulásként azon erőforrások megállapítására, amelyek rendelkeznek a megfelelő szakértelemmel, végzettséggel, tanúsítvánnyal és projekt tapasztalattal. Ezt az információt minden egyes erőforrás esetében be kell állítani, valamint rendszeresen kell frissíteni. Ezzel a módszerrel maximalizálhatja a képességeket, ha egy adott erőforrás kompetenciái a projekterőforrás hozzárendelése során teljesülnek. [![Példák a szakértelmekre, tanúsítványokra, oktatásra, illetve projekttapasztalatra](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
 
 Az alábbi eljárások ismertetik, hogyan állítson be néhány kompetenciát az erőforrás részére. 
 
-Egy dolgozó részére a kompetenciák felállításához használhatja a **Dolgozók** listaoldalt az Emberi erőforrásoknál, vagy az **Erőforrások** listaoldalt a Projektvezetés és könyvelésnél. Az alábbi eljárások esetében a **munkavállalók** az emberi erőforrások listája lapon használatos.
+Egy dolgozó részére a kompetenciák felállításához használhatja a **Dolgozók** listaoldalt az Emberi erőforrásoknál, vagy az **Erőforrások** listaoldalt a Projektvezetés és könyvelésnél. A következő eljárásokhoz a **Dolgozók** listaoldalt használjuk az Emberi erőforrásoknál.
 
 ### <a name="set-up-competencies-certificates"></a>Kompetenciák beállítása: Tanúsítványok
 
@@ -101,40 +104,40 @@ Egy dolgozó részére a kompetenciák felállításához használhatja a **Dolg
 7.  Kattintson a **Mentés** gombra, majd zárja be az oldalt.
 
 ## <a name="create-a-new-project"></a>Új projekt létrehozása
-1.  Kattintson a **projekt igazgatási és számviteli**&gt;**munkaterületek**&gt;**a Projekt management**.
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Munkaterületek** &gt; **Projektvezetés lehetőségre**.
 2.  Kattintson az **Új projekt** elemre, majd adja meg a következő értékeket:
-    -   **Írja be a projekt** – idő- és anyagelszámolású
-    -   **Projekt neve** -XYZ frissítése Phase 2
-    -   **Projektcsoport** -TM\_a folyamatban lévő munka
-    -   **Szerződés azonosítója a Project** -00000002
+    -   **Projekt típusa:** - Idő és anyag
+    -   **Projekt neve:** - XYZ Frissítési Fázis 2
+    -   **Projektcsoport** - TM\_WIP
+    -   **Projektszerződés azonosítója:** - 00000002
 3.  Kattintson a **Projekt létrehozása** elemre.
 
 ### <a name="assign-a-resource-to-a-project"></a>Erőforrás hozzárendelése egy projekthez
 
-1.  Kattintson a **az emberi erőforrások**&gt;**munkavállalók**&gt;**munkavállalók**.
+1.  Kattintson az **Emberi erőforrások** &gt; **Dolgozók** &gt; **Dolgozók** lehetőségre.
 2.  A **Dolgozók** listában válassza ki az ahhoz a dolgozóhoz tartozó rekordot, akihez korábban kompetenciákat állított be, majd nyissa meg azt.
 3.  A Műveleti ablaktáblán a **Projekt** lapon a **Beállítás** csoportban kattintson a **Projekt hozzárendelése** lehetőségre.
 4.  Az **Erőforrás-ellenőrzés projekt-hozzárendelései** oldalon kattintson a **Projektek** lapra.
-5.  A a **a projekt hozzáadása a kijelölt projektek**, a projekt frissítése Phase 2 XYZ szűrő
+5.  A **Projekt hozzáadása a kiválasztott projektekhez** elemnél alkalmazzon szűrőt az XYZ Frissítési Szakasz 2 projekten
 6.  A **Fennmaradó projektek** ablaktáblán válasszon ki egy projektet, majd kattintson a nyílra, hogy hozzáadja azt a **Kiválasztott projektek** ablaktáblához.
 7.  Zárja be a lapot.
 
-Ha szükséges, hozzárendelhet kategóriákat egy erőforráshoz. A kategória típusa Költség vagy Bevétel lehet. Ezt a szervezet határozza meg. Ha az erőforráshoz nem rendelt kategóriák, Dynamics 365 műveletek az alapértelmezett kategória óránkénti árak költség és bevétel megvizsgál.
+Ha szükséges, hozzárendelhet kategóriákat egy erőforráshoz. A kategória típusa Költség vagy Bevétel lehet. Ezt a szervezet határozza meg. Ha nincsenek az erőforráshoz hozzárendelt kategóriák, a Dynamics 365 for Operations megkeresi az alapértelmezett óránkénti árat a költségekhez és bevételekhez.
 
 ### <a name="set-up-project-resource-and-role-characteristics"></a>Projekt erőforrások és szerepkör jellemzők beállítása
 
-A projektvezető a projekterőforrás funkció segítségével hozhat létre a projekthez szükséges szerepköröket. Szerepkörök használhatók, ha igazolt erőforrások még mindig ismeretlen források foglalásakor. Szerepkörök ideiglenesen foglalható tervezett erőforrásként, hogy a projekt tervezési szakaszában továbbra is. 
+A projektvezető a projekterőforrás funkció segítségével hozhat létre a projekthez szükséges szerepköröket. A szerepkörök akkor használhatóak, ha a visszaigazolt erőforrások ismeretlenek az erőforrások fenntartásakor. A szerepkörök ideiglenes fenntarthatók tervezett erőforrásként, így tovább folytathatja a projekttervezést. 
 
-[![Példa egy szerepkör](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
+[![Példa szerepkörre](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
 
-**Forgatókönyv:** Contoso egy olyan Idő- és anyagprojekt elvégzésére lett felvéve, amely rendelkezik egy jóváhagyott projekt alapszabállyal. A beosztott projektvezető továbbra is a projekt hatókörét tölti ki. Az erőforrás-kezelő adott munkát az új projektben lefoglalt erőforrások jelenleg azonosítja. A projekt szponzor kért, a projekt kritikus jellege miatt a szerepkörök egyike a vezető projektmenedzser. Az erőforrás-kezelő kell szerezni az új erőforrás, és meghatározza a szerepkör a rendszer abban az esetben, ha a kezdő projektmenedzser igényel a projekt tervezése során az erőforrásadatokat. 
+**Forgatókönyv:** Contoso egy olyan Idő- és anyagprojekt elvégzésére lett felvéve, amely rendelkezik egy jóváhagyott projekt alapszabállyal. A beosztott projektvezető továbbra is a projekt hatókörét tölti ki. Az erőforrás-kezelő jelenleg azokat a fenntartott erőforrásokat azonosítja, amelyek az új projekthez lesznek rendelve. A Vezető projektmenedzser egy szerepkör, amit a projekt támogató kért a projekt kritikus jellege miatt. Az erőforrás-kezelőnek új erőforrást kell szereznie, majd meghatároznia a szerepkört a rendszerben, hogy ha a beosztott projektvezetőnek szüksége lenne az erőforrás információkra a projekttervezés alatt, rendelkezésre álljon az. 
 
-A következő lépések bemutatják, hogyan az erőforrás-kezelő beállítása vezető projekt vezető szerepét és jellemzők erőforrás társítása. A későbbiek folyamán a szerepkör használható lesz olyan kereséseknél, amelyek azon elérhető erőforrásokat keresik meg, amelyek megfelelnek a szükséges erőforrás kompetenciáknak.
+Az alábbi lépések bemutatják, hogy az erőforrás-kezelő hogyan tud beállítani Vezető projektmenedzser szerepkört a rendszerben, valamint hogyan tud erőforrás jellemzőket társítani hozzá. A későbbiek folyamán a szerepkör használható lesz olyan kereséseknél, amelyek azon elérhető erőforrásokat keresik meg, amelyek megfelelnek a szükséges erőforrás kompetenciáknak.
 
-1.  Kattintson a **projektek igazgatási és számviteli**&gt;**a telepítő**&gt;**erőforrásokat**&gt;**szerepkörök beállítása**.
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Erőforrások** &gt; **Szerepkörök beállítása** lehetőségre.
 2.  Kattintson az **Új** elemre, majd adja meg a következő értékeket:
-    -   **Szerepkör-azonosító** -projekt vezető
-    -   **Leírás** -projekt vezető
+    -   **Szerepkör-azonosító:** - Vezető Projektmenedzser
+    -   **Leírás:** - Vezető Projektmenedzser
 3.  Kattintson az **Új** > lehetőségre.
 4.  Válassza ki a **Vezető projektmenedzser** szerepkört, és kattintson a **Jellemzők konfigurálása** lehetőségre.
 5.  A **Jellemzők típusa** mezőben válassza ki a **Szakértelem** lehetőséget.
@@ -145,67 +148,67 @@ A következő lépések bemutatják, hogyan az erőforrás-kezelő beállítása
 
 ### <a name="assign-a-project-resource-to-a-project"></a>Projekterőforrás hozzárendelése egy projekthez
 
-1.  Kattintson a **projekt igazgatási és számviteli**&gt;**közös**&gt;**projektek**&gt;**minden projekt**, és nyissa meg a **XYZ frissítése Phase 2** projekt.
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Közös** &gt; **Projektek** &gt; **Összes projekt** lehetőségre, majd nyissa meg az **XYZ Upgrade fázis 2** projektet.
 2.  A **Projektcsapat és ütemezés** fülön kattintson a **Hozzáadás** lehetőségre.
 3.  A **Szerepkör** mezőben válassza a **Csapat tagja** lehetőséget.
 4.  Kattintson a **Foglalás naptárból** lehetőségre.
 5.  Az **Erőforrás elérhetősége** lapon kattintson a **Beállítások megtekintése** lehetőségre.
 6.  A **Nézet beállításának módosítása** lapon adja meg az alábbi értékeket:
-    -   **Dátum tartomány nézet formátumát** - nap
-    -   **Rendelkezésre állás-leírások megjelenítése** - Igen
-    -   **Fennmaradó kapacitás megjelenítése** - Igen
+    -   **Dátumtartomány-nézet formátuma:** - Nap
+    -   **Elérhetőség leírásának megjelenítése:** - Igen
+    -   **Hátralévő kapacitás megjelenítése:** - Igen
 7.  Az erőforrások listájából válasszon egy erőforrást.
-8.  Kattintson a **kemény könyv**&gt;**teljes kapacitás**.
+8.  Kattintson a **Végleges lefoglalás** &gt; **Teljes kapacitás** lehetőségre.
 9.  Zárja be a lapot.
 
 ### <a name="assign-a-resource-to-a-default-role"></a>Erőforrás hozzárendelése egy alapértelmezett szerepkörhöz
 
-Projekt- vagy erőforrás-menedzserek könnyebben részletező le lehet foglalni egy projekt erőforrásait tovább. Alapértelmezett szerepkört társíthat már meglévő, valamint újonnan szerzett erőforrásokhoz. Például Daniel utasokkal volt a tapasztalat és készségek üzleti elemző szerepét töltik be. Az erőforrás-kezelő a Daniel's alapértelmezett szerepkörként e szerepkörhöz rendelve; Ezért az erőforrás-kezelő Daniel hozzá egy címkészletet üzleti elemzők, akik rendelkezésére projekten dolgozik. 
+A projekthez fenntartható erőforrásokon történő leásással segítheti a projektvezetőket és az erőforrás-kezelőket. Alapértelmezett szerepkört társíthat már meglévő, valamint újonnan szerzett erőforrásokhoz. Amikor például Danielt felvették, megfelelő tapasztalattal és készségekkel rendelkezett az üzleti elemző szerep betöltéséhez. Az erőforrás-kezelő ezt a szerepkört rendelte Danielhez alapértelmezett szerepkörként. Ezért az erőforrás-kezelő Danielt hozzáadta az üzleti elemzők készletéhez, akik rendelkezésre állnak a projekteken végzett munkához. 
 
-Erőforrás-foglaláshoz során a projektmenedzserek szerepkör projekten dolgozik, a rendelkezésre álló erőforrások végezhet. Ezeket az adatokat használhatják egy feltételként több kritérium felhasználásával történő döntéshozatal végrehajtásakor erőforrás teljesítése során. Más erőforrás tulajdonságait is hozzáadhatják a szűrőhöz meghatározott szakértelemmel, végzettséggel és adott projekttapasztalattal rendelkező erőforrások keresésekor. 
+Erőforrás-fenntartás során a projektvezetők szűrhetik a szerepkör erőforrásait, amelyek rendelkezésre állnak projekteken való munkához. Ezeket az adatokat használhatják egy feltételként több kritérium felhasználásával történő döntéshozatal végrehajtásakor erőforrás teljesítése során. Más erőforrás tulajdonságait is hozzáadhatják a szűrőhöz meghatározott szakértelemmel, végzettséggel és adott projekttapasztalattal rendelkező erőforrások keresésekor. 
 
-**Forgatókönyv:** egy jóváhagyott projekt indult, és a magas rangú project manager szerepkör tervezett erőforrásként, a projekt tervezési szakasza során fenntartott. Az erőforrás-kezelő már megszerezte az erőforrást a Vezető projektmenedzser szerepkör betöltéséhez.
+**Eset:** Egy jóváhagyott projekt elindult, és a Vezető projektmenedzser szerepkört tervezett erőforrásként tartották fenn a projekt tervezési szakaszában. Az erőforrás-kezelő már megszerezte az erőforrást a Vezető projektmenedzser szerepkör betöltéséhez.
 
-1.  Kattintson a **projektek igazgatási és számviteli**&gt;**a Projekt-erőforrások**&gt;**erőforrások listájában**.
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Projekt erőforrások** &gt; **Erőforrások listája** menüpontra.
 2.  Az **Erőforrás** listán válassza a **Daniel Goldschmidt**nevet.
-3.  Kattintson a **a Project erőforrás**&gt;**kezelése**&gt;**erőforrás szerepkör**.
+3.  Kattintson a **Projekterőforrás** &gt; **Karbantartás** &gt; **Erőforrás szerepköre** menüpontra.
 4.  Kattintson az **Új** elemre, majd adja meg a következő értékeket:
-    -   **Hatékony** - (aktuális dátum)
-    -   **Lejárati** - soha nem
-    -   **Szerepkör** -projekt vezető
+    -   **Hatályos:** - (Jelenlegi dátum)
+    -   **Lejárat:** - Soha
+    -   **Szerepkör:** - Vezető Projektmenedzser
 5.  Kattintson a **Mentés** gombra, majd zárja be az oldalt.
 6.  A **Kompetenciák** lapon adja hozzá a **ProjectMgmt** szakértelem és **PMP** tanúsítványt.
 
 ## <a name="set-up-role-based-pricing"></a>Szerepköralapú árképzés beállítása
 Minden költség, értékesítés, és transzferár beállítható szerepkörökhöz.
 
-1.  Kattintson a **projekt igazgatási és számviteli**&gt;**a telepítő**&gt;**árak**&gt;**eladási ár (óra)**.
-2.  Click **New**.
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Árak** &gt; **Eladási ár (óra)** lehetőségre.
+2.  Kattintson az **Új** elemre.
 3.  Adja meg az érvénybelépés dátumát.
 4.  A **Szerepkör** oszlopban válasszon szerepkört.
 5.  Az **Árképzés** oszlopban adja meg a kiválasztott erőforrás-szerepkör árát.
 
-## <a name="form-a-project-team"></a>A projektcsapat űrlap
-A korábban beállított árkombinációknak projektben szerepkörök használatához egy projektmenedzser a szerepek kell társítania a projekt. Egy projekt több szerepkör is rendelhető, és a műveletek Dynamics 365 automatikusan ezeket a szerepköröket a problémák elkerülése érdekében a foglalás során. Például ha a projektmenedzser igényel három szoftverfejlesztő, három szoftver mérnök-szerepkörök szoftver mérnök 1, 2 szoftver mérnök, és szoftver mérnök 3 feliratuk szerint automatikusan generál. Ha a szerepkör jellemzőit korábban beállították a szerepkörhöz, ezek szűrőként működnek erőforrás keresése során. A keresést finomíthatja a további szükség szerint további jellemzői lehet adni. 
+## <a name="form-a-project-team"></a>Projektcsapat kialakítása
+A projektben korábban beállított szerepkörök használatához egy projektmenedzsernek a szerepköröket társítania kell a projekthez. Egy projekthez több szerepkör is hozzárendelhető, és a Dynamics 365 for Operations automatikusan osztályozza ezeket a szerepköröket a fenntartás során a zavar megelőzése érdekében. Ha például a projektmenedzsernek három szoftverfejlesztőre van szüksége, a rendszer automatikusan létrehoz három szoftverfejlesztő szerepkört, melyek a szoftverfejlesztő 1, szoftverfejlesztő 2 és szoftverfejlesztő 3 osztályzást kapják. Ha a szerepkör jellemzőit korábban beállították a szerepkörhöz, ezek szűrőként működnek erőforrás keresése során. A keresést finomíthatja a további szükség szerint további jellemzői lehet adni. 
 
 A beállítások megtekintése is testreszabható, hogy jobb áttekintést adjon a rendelkezésre álló erőforrásról. Lehetőség van óránkénti, napi, heti, havi, negyedéves vagy éves elérhetőség megjelenítésére. Lehetőség van megjeleníteni az elérhető és fennmaradó erőforrások kapacitását. Ez a beállítás jól használható időkezelésre tevékenységek idejének vagy erőforrás elérhetőségének becslésekor. 
 
-A projektmenedzser is az oldalon szerepkör kijelölése és a rendelkezésre álló erőforrás, amely megfelel a szükséglet esetén jelöljük ki egy erőforrást lefoglalni. Ne feledje, hogy az erőforrás nem foglalható ezen a ponton a tervezési szakaszban. A WBS létrehozásakor szerepkörök lecserélheti személyzettel erőforrásokat a projekthez. Ha szerepköröket cseréli, amelyek a WBS személyzettel erőforrások, az erőforrások beállítása automatikusan frissíti a projektcsapat listázása és az ütemezés. 
+A projektmenedzser szerepkört választhat az oldalon, és ha elérhető szabad erőforrás, amely megfelel a követelménynek, válassza az erőforrás fenntartását a szerepkör betöltéséhez. Ne feledje, hogy az erőforrások fenntartása nem szükséges ezen a ponton a tervezési szakaszban. Amikor létrehoz egy WBS-t, a szerepkörök lecserélhetők a projekt személyzettel ellátott erőforrásaira. Ha a WBS-ben a szerepköröket lecserélték a személyzettel ellátott erőforrásokra, az erőforrás beállítása automatikusan frissíti a projektcsapat listáját és az ütemezést. 
 
-[![Szerepkörök és a tényleges erőforrásokat tartalmazó projekt team listázása](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
+[![Projektcsapat listázása, amely tartalmazza a szerepköröket és a tényleges erőforrásokat](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
 
 A projektmenedzser több lehetőséggel rendelkezik egy erőforrás projekthez történő lefoglalásához, például **Fennmaradó kapacitás**, **Teljes kapacitás**, **Kapacitás százaléka** és **Óraszám megadása**. Ezek a foglalási beállítások bármikor visszavonhatók, ha az erőforrás-hozzárendelések módosulnak. A foglalásnak két típusa támogatott:
 
--   **Kemény könyv** – az erőforrás-foglaláshoz jóváhagyott és a megadott ideig foglalkoztatni munkát erősíteni.
--   **Lágy könyv** – az erőforrás-foglalások feltételesen volt beállítva a megadott időre foglalkoztatni munkát.
+-   **Végleges lefoglalás** – Az erőforrás-fenntartást jóváhagyták és megerősítették, hogy az előjegyzésen dolgozni lehessen a megadott időtartamban.
+-   **Ideiglenes lefoglalás** – Az erőforrás-fenntartásokat feltételesen állították be, hogy az előjegyzéssel dolgozni lehessen a megadott időtartamban.
 
 Az alábbi eljárás ismerteti, hogyan lehet projektcsapatot létrehozni.
 
 ### <a name="create-a-project-team"></a>Projektcsapat létrehozása.
 
 1.  Jelöljön ki egy projektet az **Összes projekt** listaoldalon, és kattintson a **Szerkesztés**lehetőségre.
-2.  A a **csoport és az ütemezés a projekt** lapon, az a **ütemezés kezdő dátuma** mezőjébe írja be az ütemezés kezdő dátuma plusz egy hónap. Például, ha az ütemezés kezdő dátuma nem 2017. június 24. (24/06/2017), adja meg **24/07/2017**.
-3.  Click **Add**.
+2.  A **Projektcsapat és ütemezés** lapon a **Záró dátum ütemezése** mezőbe írja be az ütemezés kezdő dátumát, egy hónapot hozzáadva. Például ha az ütemezés kezdő dátuma 2017. június 24. (24/06/2017), írja be **24/07/2017**.
+3.  Kattintson a **Hozzáadás** parancsra.
 4.  A **Szerepkör hozzáadása a projekthez** ablakban, a **Szerepkör **mezőben válassza a **Projektmenedzser** lehetőséget.
 5.  Kattintson a **Szükséges kompetenciák** lehetőségre.
 6.  A **Jellemző választása** oldalon a Vezető projektmenedzser szerepkörhöz korábban beállított jellemzők alapértelmezés szerint be vannak jelölve. Kattintson az **OK** gombra.
@@ -221,25 +224,25 @@ Az erőforrás-szinkronizálási folyamatok segítségével garantálható, hogy
 
 ### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Naptár szinkronizálása](./media/projectresourcing04-1024x471.jpg)
 
-**Synchronize resource capacity roll-ups**
+**Erőforrás kapacitás-összesítéseinek szinkronizálása**
 
-A szinkronizálási folyamat arra szolgál, hogy az összes naptári erőforrásadatot szinkronizálja. Ez az információ alapnaptár adatokat tartalmaz a projekt Erőforrásnaptár kapacitás tábláját ért bármely módosításról. Új erőforrások hozzáadása a project programban, ha szinkronizálás biztosítja, hogy a frissített adatok érhető el. Ez a szinkronizálás bármikor megtehető. 
+A szinkronizálási folyamat arra szolgál, hogy az összes naptári erőforrásadatot szinkronizálja. Ez az információ alapnaptár adatokat tartalmaz a projekt Erőforrásnaptár kapacitás tábláját ért bármely módosításról. Ha új erőforrások kerülnek a projekthez, a szinkronizálás biztosítja a frissített naptáradatok elérhetőségét. Ez a szinkronizálás bármikor megtehető. 
 
 Köteg használatát javasoljuk. A beállítások a kapacitásfoglalások szinkronizálása lehetőségnél érhető el.
 
--   Kattintson a **projekt igazgatási és számviteli**&gt;**időszakos**&gt;**kapacitás szinkronizálás**&gt;**szinkronizálása az erőforrás-kapacitás-összesítésben**.
+-   Kattintson a **Projektvezetés és könyvelés** &gt; **Időszakos** &gt; **Kapacitás szinkronizálás** &gt; **Erőforrás kapacitás-összesítéseinek szinkronizálása** lehetőségekre.
 
 | Lehetőség | Leírás                                                                                                                                                                                          |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Igen    | Szinkronizálja az összes erőforrásadatot a naptárral és az alapnaptár-információval, és cserélje le az összes információt a projekterőforrás kapacitásnaptárában.                                                  |
 | Szám     | Szinkronizálja az erőforrásadatot dátumintervallum-kód és meghatározott kezdő és záró dátum szerint. Ez a beállítás nem távolítja el a meglévő adatokat, és csak az újonnan hozzáadott erőforrások adatait frissíti. |
 
-[![A szinkronizálási folyamat](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
+[![Szinkronizálási folyamat](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
 
 ## <a name="set-up-roles-on-wbs-templates"></a>WBS sablonok szerepköreinek beállítása
-A projektvezetők beállíthatnak olyan WBS-sablonokat, amelyek felhasználhatók új WBS-projektek létrehozásakor. A projektmenedzserek adhat hozzá szerepköröket a sablon létrehozásakor. A következő eljárással szerepkör hozzárendelése a WBS-template.* * **
+A projektvezetők beállíthatnak olyan WBS-sablonokat, amelyek felhasználhatók új WBS-projektek létrehozásakor. A projektvezetők létrehozáskor szerepköröket adhatnak a sablonokhoz. Használja a következő eljárást, hogy szerepet rendeljen egy WBS-sablonhoz.** **
 
-1.  Kattintson a **projekt igazgatási és számviteli**&gt;**a telepítő**&gt;**projektek**&gt;**munkalebontási struktúra sablonjai**.
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Projektek** &gt; **Munkalebontási struktúra sablonjai** lehetőségre.
 2.  Kattintson a **Részletek** lehetőségre a kiválasztott WBS-sablonnál.
 3.  Jelöljön ki egy feladatot a listán, majd a **Szerepkör** mezőben válassza ki a feladathoz társítandó szerepkört.
 
@@ -273,7 +276,7 @@ A WBS további lehetőségekkel bővült az erőforrás funkció jobb használha
 </tr>
 <tr class="even">
 <td>Csapat automatikus előállítása</td>
-<td>Tervezett erőforrások automatikus hozzáadása társított feladattal rendelkező szerepkörök használatával. 365 Dynamics műveletek automatikusan felajánlja a tervezett erőforrások szerepkörök alapján több feltétel határozat elemzés segítségével. Miután a szerepkörök és munka (órák) be lettek állítva a WBS-ben található feladatokhoz, és a struktúra ki lett adva, kattintson a <strong>Csapat automatikus létrehozása</strong> lehetőségre. A tervezett erőforrások szükséges száma hozzáadódik a WBS-hez és a <strong>Projekt és csapat ütemezés</strong> laphoz.</td>
+<td>Tervezett erőforrások automatikus hozzáadása társított feladattal rendelkező szerepkörök használatával. A Dynamics 365 for Operations automatikusan javasol tervezett erőforrásokat, egy szerepkörökön alapuló több kritérium felhasználásával történő döntéshozatal használatával. Miután a szerepkörök és munka (órák) be lettek állítva a WBS-ben található feladatokhoz, és a struktúra ki lett adva, kattintson a <strong>Csapat automatikus létrehozása</strong> lehetőségre. A tervezett erőforrások szükséges száma hozzáadódik a WBS-hez és a <strong>Projekt és csapat ütemezés</strong> laphoz.</td>
 </tr>
 <tr class="odd">
 <td>Erőforrás (legördülő lista)</td>
@@ -281,15 +284,15 @@ A WBS további lehetőségekkel bővült az erőforrás funkció jobb használha
 <ul>
 <li><strong>Elfogadás</strong> – A feladathoz társított erőforrásban bekövetkezett módosítások megerősítése.</li>
 <li><strong>Mégse</strong> – A feladathoz társított erőforrásban bekövetkezett módosítások érvénytelenítése.</li>
-<li><strong>Automatikus kiosztása</strong> – ezt a beállítást választja, egy rendelkezésre álló személyzettel erőforrás a kijelölt feladathoz megfelelő szerepkörrel rendelkező.</li>
+<li><strong>Automatikus hozzárendelés</strong> – Ez a beállítás egy rendelkezésre álló, személyzettel ellátott, megfelelő szerepkörrel rendelkező erőforrást jelöl ki feladathoz.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-1.  Kattintson a **projekt igazgatási és számviteli**&gt;**projektek**&gt;**minden**.
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Projektek** &gt; **Minden projekt** lehetőségre.
 2.  Válassza ki a listából az **XYZ Frissítési Fázis 2** projektet.
-3.  Kattintson a **tervezett**&gt;**tevékenységek**&gt;**munkalebontási szerkezet**.
+3.  Kattintson a **Terv** &gt; **Tevékenységek** &gt; **Munkalebontási struktúra** lehetőségre.
 4.  Kattintson az **Új** gombra, hogy a WBS-hez adja a következő elsőszintű tevékenységeket:
     -   Indítás
     -   Tervezés
@@ -297,7 +300,7 @@ A WBS további lehetőségekkel bővült az erőforrás funkció jobb használha
     -   Rendszerfigyelés és ellenőrzés
     -   Közeli
 
-5.  A dátumok és erőkifejtés (óra), ahogy az a következő képernyőkép. [![Beállítás, a dátumok és tevékenységi](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
+5.  Állítsa be a dátumokat és a munkát (órák) a következő képernyőkép alapján.[![A dátumok és a munka beállítása](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
 6.  Válassza ki az **Indítás** tevékenység-sort, majd a **Szerepkör** mezőben válassza ki **Vezető Projektmenedzser** lehetőséget.
 7.  Kattintson a **Közzététel** gombra.
 8.  Ugyanabban a sorban az **Erőforrás** mezőben válassza ki a **Daniel Goldschmidt** lehetőséget.
@@ -308,49 +311,51 @@ A WBS további lehetőségekkel bővült az erőforrás funkció jobb használha
 13. Győződjön meg róla, hogy az **Erőforrás** mezőben az érték **Üzleti elemző 1**.
 14. Az **Üzleti elemző 1** erőforráshoz, nyissa meg a keresőt és kattintson **Erőforrás-hozzárendelések képernyő indítása**.
 15. Válasza ki a dolgozót a feladathoz.
-16. Kattintson a **lágy hozzárendelése**&gt;**teljes kapacitás**.
+16. Kattintson az **Ideiglenes hozzárendelés** &gt; **Teljes kapacitás** lehetőségre.
 17. Kattintson a **Mentés** gombra és zárja be az oldalt. 
 
 > [!NOTE] 
-> Egy figyelmeztetés, hogy a megadott erőforrás már 2, nem kap, mert az erőforrások száma 1 helyen marad.
+> Nem kap figyelmeztetést, hogy az adott erőforrás most 2, mert az erőforrások száma 1 marad.
 18. Az a **munkalebontási struktúra **oldalon, a WBS-t az erőforrás-hozzárendelés ellenőrzése, és kattintson **Mentés**.
 
 ## <a name="resource-fulfillment-for-planned-resources"></a>A tervezett erőforrások erőforrás-teljesítése
 Egy projektvezető megtervezheti a szükséges erőforrás-szerepköröket egy projekthez. Az erőforrás-kezelő ezeket a tervezett erőforrásokat kérelemként fogja látni az **Erőforrás teljesítése** oldalon, és tényleges erőforrásokat rendelhet hozzzájuk.
 
-1.  Kattintson a **projekt igazgatási és számviteli**&gt;**projektek**&gt;**minden**.
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Projektek** &gt; **Minden projekt** lehetőségre.
 2.  Válassza ki a listából az **XYZ Frissítési Fázis 2** projektet.
 3.  Kattintson a **Projekt** lehetőségre.
 4.  Kattintson a **Szerkesztés**lehetőségre.
-5.  A a **csoport és az ütemezés a projekt** lap ** ** kattintson a **hozzáadása**.
+5.  A **Projektcsapat és ütemezés** fülön** **kattintson a **Hozzáadás** lehetőségre.
 6.  A **Szerepkörök hozzáadása** párbeszédpanelen jelölje ki a **Szoftverfejlesztő** szerepkört.
 7.  Kattintson az **Új** > lehetőségre.
 8.  Zárja be a projektlapot.
-9.  Kattintson a **projektek igazgatási és számviteli**&gt;**a Projekt-erőforrások**&gt;**erőforrás teljesítési**.
+9.  Kattintson a **Projektvezetés és könyvelés** &gt; **Projekt erőforrások** &gt; **Erőforrások** teljesítése menüpontra.
 10. Válassza ki a **Szoftverfejlesztő 1** lehetőséget az **XYZ Frissítési projekt Fázis 2** projekthez.
 11. Válasszon ki egy dolgozót, majd kattintson a **Hozzárendelés** gombra.
 12. Ellenőrizze, hogy a **Szoftverfejlesztő 1** sora el lett távolítva a **XYZ Frissítési projekt Fázis 2** projektből.
 13. A **Projektcsapat és ütemezés** lapon ellenőrizze, hogy az **XYZ Frissítési Fázis 2** projekthez a dolgozó, akit kiválasztott a 11. lépésben hozzá lett adva, úgy mint egy **Szoftverfejlesztő**.
 
-## <a name="requests-for-project-resources"></a>Projekterőforrások iránti kérelmek
-A projekt erőforrás-ütemezési szolgáltatásaira csak az erőforrás-kezelők bekapcsolódása vagy projektek személyzettel erőforrások elosztása támogatja. A funkció engedélyezéséhez a következő feladatokat, vagy győződjön meg arról, hogy azok befejeződtek.
+## <a name="requests-for-project-resources"></a>Projekterőforrás-kérések
+A projekterőforrás-ütemezési szolgáltatás csak a személyzettel ellátott erőforrások vagy előjegyzések elosztásában támogatja az erőforrás-kezelőket. A funkció engedélyezéséhez végezze el a következő feladatokat, vagy győződjön meg arról, hogy befejeződtek.
 
 -   Számsorozatok beállítása.
--   Projektvezetési és számviteli munkafolyamatok beállítása.
--   Erőforrás-kérelem munkafolyamata engedélyezése.
+-   Munkafolyamatok beállítása a projektvezetéshez és a könyveléshez.
+-   Erőforrás-kérelem munkafolyamatának engedélyezése.
 
-Vagy ellenőrzött vagy a fenti műveletek végrehajtása, után kitöltheti az alábbi feladatok, szükség szerint.
+Miután ellenőrizte vagy végrehajtotta a fenti műveleteket, elvégezheti az alábbi feladatokat, szükség szerint.
 
--   Ideiglenes személyzettel erőforrás létrehozása erőforrás-igénylést.
--   Erőforrás-kérések figyelése.
+-   Erőforrás-igénylés létrehozása ideiglenesen lefoglalt személyzettel ellátott erőforráshoz.
+-   Erőforrás-kérelmek figyelése.
 -   Erőforrás-kérelmek teljesítése.
--   WBS személyzettel erőforrások kérnie.
--   Könyv erőforrások személyzettel erőforrás iránti kérelem nélküli projekt.
+-   Személyzettel ellátott erőforrás kérése a WBS-től.
+-   Erőforrások foglalása egy projekthez személyzettel ellátott erőforrások iránti kérelem nélkül.
 
-## <a name="monitor-project-teams"></a>Monitor projekt csapatok
-1.  Kattintson a **projekt igazgatási és számviteli**&gt;**projektek**&gt;**minden**.
+## <a name="monitor-project-teams"></a>Projektcsoportok figyelése
+1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Projektek** &gt; **Minden projekt** lehetőségre.
 2.  A projektek listájában kattintson a **Projektazonosító** hivatkozásra az **XYZ Frissítési Fázis 2** projektnél.
 3.  A **Projektcsapat és ütemezés** gyorslapon győződjön meg róla, hogy a felsorolt projekterőforrások helyesek.
+
+
 
 
 

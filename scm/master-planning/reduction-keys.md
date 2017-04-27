@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reduction-keys"></a>Csökkentési kulcsok
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az csökkentési kulcs beállítását bemutató példákat tartalmaz. Tartalmaz információkat a különböző csökkentési kulcs beállításokról és azok eredményéről. A csökkentési kulcsot használhatja az előrejelzési követelmények csökkentésének módjának meghatározásához.
 
 <a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>1. példa: Százalék – csökkentési kulcs előrejelzés csökkentési elv
@@ -58,7 +61,7 @@ Ha előrejelzési ütemezést január 1-jén futtatja, az igény-előrejelzés k
 | Április                | 750                       |
 | május – december | 1000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>2. példa: A tranzakciók csökkentési kulcs előrejelzés csökkentési elv
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>2. példa: Tranzakciók csökkentési kulcs előrejelzés csökkentési elv
 Csökkentési kulcs az előrejelzési követelmények csökkentése a százalékok és az időszakok alapján történik, amelyeket a csökkentési kulcs definiál.
 
 -   Az **Alaptervek** az oldalon a **Csökkentési elv** mezőben válassza ki **Tranzakciók - csökkentési kulcs**.
@@ -82,7 +85,7 @@ Ugyanazt a havi 1000 darabos értékesítési előrejelzést alkalmazva az aláb
 | Április                | 881                       |
 | május – december | 1000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>3. példa: A tranzakciók dinamikus időszak előrejelzés csökkentési elv
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>3. példa: Tranzakciók dinamikus periódus előrejelzés csökkentési elv
 A legtöbb esetben rendszerek vannak beállítva, hogy a tranzakciók csökkenti az igény-előrejelzés egyedi előrejelzési időszakokon belül: hét, hónap, és így tovább. A csökkentési kulcs határozza meg ezeket az időszakokat. Ugyanakkor két között eltelt idő igény-előrejelzési sort is *Jelenti* egy időszakot.
 
 1.  Hozzon létre egy igény-előrejelzés a következő dátumokat és mennyiségeket.
@@ -129,6 +132,8 @@ A következő tervezett rendelés létrejön, az előrejelzés kielégítése c�
 <a name="see-also"></a>Lásd még
 --------
 
-[Master plans](master-plans.md)
+[Alaptervek](master-plans.md)
+
+
 
 

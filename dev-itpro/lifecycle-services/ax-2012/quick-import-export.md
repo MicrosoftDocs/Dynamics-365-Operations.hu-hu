@@ -1,5 +1,5 @@
 ---
-title: "Használatra kész importálása/exportálása"
+title: "Használja a Gyors importálás/exportálás lehetőséget"
 description: "A Gyors importálás-exportálás célja lehetővé tenni a behozatalt és kivitelt kevesebb lépésben."
 author: margoc
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>A vizsgálati adatok átvitele eszközt (beta) futtatása a Dynamics AX (AX 2012)
+# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Futtassa a Test Data Transfer Tool (beta) for Dynamics AX (AX 2012) eszközt
+
+[!include[banner](../../includes/banner.md)]
+
 
 A Gyors importálás-exportálás célja lehetővé tenni a behozatalt és kivitelt kevesebb lépésben.
 
@@ -36,5 +39,7 @@ Elérhetővé tettük a Gyors importálás/exportálás szolgáltatást, amely a
 -   A gyors importálási/exportálás lehetőséghez nem kell feldolgozás csoportot létrehoznia, ez automatikusan létrehozásra kerül a rendszer által a behozatali vagy kiviteli feladat végrehajtásakor. Választhatja a gyors import-export által importált adatok előzményeinek megőrzését is.
 
   Vegye figyelembe, hogy a gyors importálás és exportálás feltételezi, hogy jártas a DIXF-fel kapcsolatos fogalmakban.
+
+
 
 

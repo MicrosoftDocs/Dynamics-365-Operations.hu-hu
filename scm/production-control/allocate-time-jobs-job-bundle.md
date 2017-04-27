@@ -1,5 +1,5 @@
 ---
-title: "Foglalható idő a feladatok a kötegelt feldolgozás"
+title: "Idők hozzárendelése egy feladatköteg feladataihoz"
 description: "A gyártásvégrehajtásban kötegelhetők a feladatok. Egyszerre több feladatot is elkezdhet a feladatlista lapon."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Foglalható idő a feladatok a kötegelt feldolgozás
+# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Idők hozzárendelése egy feladatköteg feladataihoz
+
+[!include[banner](../includes/banner.md)]
+
 
 A gyártásvégrehajtásban kötegelhetők a feladatok. Egyszerre több feladatot is elkezdhet a feladatlista lapon.
 
@@ -107,5 +110,7 @@ Vegyük a három feladatot, amelyet egy 12 dolláros órabérrel dolgozó alkalm
 | 3. feladat | (3,33 ÷ 5) × 12,00 USD                 | 8,00 USD                | 5 óra        | 40,00 USD         |
 
 A javított óránkénti költséget és a feladatidőt a termelési naplóba adja fel a program. **Megjegyzés:** Ha bejelöli a **Költségkategória** opciót az **Általános** lapon, amelyet a **Termelési rendelés alapértelmezései** oldalon talál, akkor az egyes feladatok tényleges idejét átmásolja a rendszer a termelési naplóba, ahol a költség az adott feladat költségkategóriájára lesz alkalmazva.
+
+
 
 

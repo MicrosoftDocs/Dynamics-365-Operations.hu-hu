@@ -1,6 +1,6 @@
 ---
 title: "Üzletteljesítmény elemzés"
-description: "Ez a cikk ismerteti, hogyan használható a memóriában, és a valós idejű analytics elérését, feltárása és tárolási teljesítmény, a Microsoft Dynamics 365 műveleti adatok alapján betekintést kapnak."
+description: "Ez a cikk azt ismerteti, hogyan használhatja a memóriában lévő és a valós idejű analitikát az üzlet teljesítményéről a Microsoft Dynamics 365 for Operations adatai alapján."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 57811
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
 ms.search.region: global
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="analyze-store-performance"></a>Üzletteljesítmény elemzés
 
-Ez a cikk ismerteti, hogyan használható a memóriában, és a valós idejű analytics elérését, feltárása és tárolási teljesítmény, a Microsoft Dynamics 365 műveleti adatok alapján betekintést kapnak. 
+[!include[banner](includes/banner.md)]
 
-Dynamics 365 műveletek részeként felhasználók is tanulmányi tároló teljesítményét valós időben több különböző szinteket a szervezeti hierarchia egy adott időszakon megnyitásával az out-of-box **csatorna-összefoglaló** jelentése az alábbi helyeken:
 
--   **Retail store management** Dynamics 365 munkaterület műveletek &gt;**kereskedelmi és kereskedelmi**&gt;**csatornák**&gt;**Retail store management**&gt;**jelentések**&gt;**csatorna összefoglaló jelentés**
--   **Kiskereskedelmi üzlet Pénzügy** munkaterület Dynamics 365 műveletek &gt;**kereskedelmi és kereskedelmi**&gt;**csatornák**&gt;**Retail store Pénzügy**&gt;**jelentések**&gt;**csatorna összefoglaló jelentés**
--   **Lekérdezések és jelentések** Dynamics 365 műveletek szakasz &gt;**kereskedelmi és kereskedelmi**&gt;**lekérdezések és jelentések**&gt;**értékesítési jelentések**&gt;**csatorna összefoglaló jelentés**
+Ez a cikk azt ismerteti, hogyan használhatja a memóriában lévő és a valós idejű analitikát az üzlet teljesítményéről a Microsoft Dynamics 365 for Operations adatai alapján. 
+
+A Microsoft Dynamics 365 for Operations részeként a felhasználók valós időben tanulmányozhatják az (kiválasztott idő alatti) üzletteljesítményt a szervezeti hierarchia különböző szintjein. Ezt úgy tehetik meg, hogy megnyitják a (nem beépített) **Csatorna összegzés** jelentést, a következő helyszínek egyikéről:
+
+-   **Kiskereskedelmi raktárkezelő** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Csatorna összegzés jelentés**
+-   **Kiskereskedelmi üzlet pénzügyei** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet pénzügyei** &gt; **Jelentések** &gt; **Csatorna összegzés jelentés**
+-   **Lekérdezések és jelentések** szakasz Dynamics 365 for Operations &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Csatorna összegzés jelentés**
 
 Ez a jelentés pillanatképet mutat a következő összegzésekről az üzletteljesítmény részeként:
 
@@ -42,4 +45,6 @@ Ez a jelentés pillanatképet mutat a következő összegzésekről az üzlettel
 -   Adóösszesítés
 -   Ár-felülbírálási összesítés
 -   Engedmények összesítése
+
+
 

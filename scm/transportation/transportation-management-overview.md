@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-overview"></a>Szállítás kezelés áttekintése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a témakör áttekintést nyújt a szállításkezelés funkcióról a Microsoft Dynamics 365 for Operations szolgáltatásban.
 
 A Szállításkezelés lehetővé teszi, hogy a vállalata szállítását használja és kezelje, továbbá hogy azonosítsa a szállítót és az útvonal-tervezési megoldásokat a bejövő és a kimenő rendelésekhez. Például azonosíthatja a leggyorsabb vagy a legolcsóbb útvonalat a szállítmányhoz. A következő táblázat bemutatja a szállításkezelésben használatos fő eseteket a Microsoft Dynamics 365 for Operations rendszerben.
@@ -70,16 +73,18 @@ A szállításkezelésben a szállítási tervezés alapulhat rendeléseken vagy
 ![Rajz betöltése](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Kimenő szállítás
-Ha a megrendelt cikkeket a szállítótól, és be kell nyújtani a cikkeket a raktárban, érdemes a cikkek szállítását saját maga gondoskodik. Dynamics 365 műveletek segítségével tervezze meg a szállítás és a bejövő terhelés átvételét. A következő ábra bemutatja a szállítás bejövő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat. 
+Amikor cikkeket rendel szállítótól, és a cikkeket a raktárába kell szállítani, akkor érdemes saját magának elrendeznie a cikkek szállítását. Használhatja a Dynamics 365 for Operations-t, hogy megtervezze egy beérkező rakomány fogadását. A következő ábra bemutatja a szállítás bejövő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat. 
 
 ![Üzleti folyamatábra: bejövő szállítási rakományok](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Kimenő szállítás
 Megtervezheti és feldolgozhat egy kimenő terhelést bizonyos cikkek szállításához a cég raktárából a vevőhöz. Használhatja a Dynamics 365 for Operations-t, hogy megtervezze egy kimenő rakomány szállítását. A következő ábra bemutatja a szállítás kimenő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat. 
 
-![Tervezés és a kimenő feldolgozási tölti be.](./media/Planningandprocessingoutboundloads.jpg)
+![Kimenő rakományok tervezése és feldolgozása](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Rakomány-összeállítás
 A Dynamics 365 for Operations biztosít egy rakomány-összeállítási stratégiát, amely a Térfogaton alapuló rakomány-összeállítási stratégia nevet viseli. Ez a stratégia lehetővé teszi a rakomány-sablonban megadott maximális magasság- és súlyértékek használatát, vagy a beállítások felülírását új értékek megadásával. A használatához válassza ki a stratégiát a **Rakomány-összeállító munkaterület** oldal **Beállítások** gyorslapján található **Rakomány-összeállítási stratégia** mezőben. Ezenkívül hozzáadhatja a saját rakomány-összeállítási stratégiáját egy új osztály létrehozásával az alkalmazásobjektum-fán (AOT) belül.
+
+
 
 

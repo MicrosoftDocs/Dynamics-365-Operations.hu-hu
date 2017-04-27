@@ -1,6 +1,6 @@
 ---
 title: "A főkönyv lezárása időszak végén"
-description: "Ez a témakör ismerteti a főkönyvi időszak záró végrehajtásakor általában befejezett feladatok."
+description: "A témakör a főkönyvi időszak zárásának végrehajtásakor általában elvégzett feladatokat ismerteti."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>A főkönyv lezárása időszak végén
 
-Ez a témakör ismerteti a főkönyvi időszak záró végrehajtásakor általában befejezett feladatok. 
+[!include[banner](../includes/banner.md)]
 
-A Főkönyvben, záró eljárásokat az időszak vagy az év végén hajthatja végre. A záró folyamatok előkészítik a rendszert egy új időszakra. A rendszer előkészítése az új év, az év végi szoros feldolgozása kell futtatnia. Minden egyes szervezet rendelkezik a különböző folyamatok és az időszak végén végrehajtott lépéseket. Az alábbiakban néhány választható lépést az időszak vége:
+
+A témakör a főkönyvi időszak zárásának végrehajtásakor általában elvégzett feladatokat ismerteti. 
+
+A Főkönyvben, záró eljárásokat az időszak vagy az év végén hajthatja végre. A záró folyamatok előkészítik a rendszert egy új időszakra. A rendszer új évre történő felkészítéséhez futtatni kell az év végi zárás folyamatot. Minden szervezetnek különböző folyamatai és lépései vannak, amelyek az időszakok végén futnak le. Néhány a lehetséges időszakvégi lépések közül:
 
 -   Fejezzen be minden feladatot minden más modulhoz, például Kinnlevőségek, Kötelezettségek, és Készlet.
 -   Győződjön meg róla, hogy az összes napló feladása került.
@@ -39,9 +42,11 @@ A Főkönyvben, záró eljárásokat az időszak vagy az év végén hajthatja v
 -   Tranzakciók naplózása, és a **Főkönyvi napló** jelentés felülvizsgálata.
 -   Egy konszolidációs vállalat vagy Pénzügyi jelentések segítségével konszolidáció végrehajtása.
 -   Időszak végi pénzügyi kimutatások létrehozása a Pénzügyi jelentések segítségével.
--   Főkönyvi időszak átállítása **Várakoztatott** állapotra, így további feladás nem történik. Időszakot korlátozhat egy megadott felhasználócsoportnak, amikor az időszakvégi tevékenységek megjelennek, a jobb ellenőrzés érdekében. Nincs időszakot, érdemes **véglegesen lezárt**, mert egy lezárt időszakot nem lehet újranyitni.
+-   Főkönyvi időszak átállítása **Várakoztatott** állapotra, így további feladás nem történik. Időszakot korlátozhat egy megadott felhasználócsoportnak, amikor az időszakvégi tevékenységek megjelennek, a jobb ellenőrzés érdekében. Nem tanácsos időszakokat **Véglegesen lezárva** állapotba helyezni, mert egy lezárt időszakot nem lehet újranyitni.
 
-A pénzügyi időszak lezárása munkaterület megszervezéséhez és nyomon követéséhez szükséges különböző időszak záró folyamatok feladatokat is használható. Olvassa el a [pénzügyi időszak lezárása munkaterület](financial-period-close-workspace.md) és [év végén közel](Year-end-close.md) kaphat tájékoztatást. 
+A Pénzügyi időszak lezárása munkaterület használható a különböző időszakzáró folyamatok megszervezéséhez és nyomon követéséhez. További információ: [Pénzügyi időszak lezárása munkaterület](financial-period-close-workspace.md) és [Év végi zárás](Year-end-close.md) témakörök. 
+
+
 
 
 

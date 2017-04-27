@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Fiók követelések és hitelek és gyűjtemények konfigurálása
 
+[!include[banner](../includes/banner.md)]
+
+
 A Kinnlevőségek, valamint a Követelések és beszedések konfigurálása a vevőktől érkező kifizetések és számlák nyomon követése érdekében.
 
 Lehetőség van vevőcsoportok, vevők, feladási profilok, különböző fizetési lehetőségek, kamatlevelek, fizetési felszólítások, jutalékok, vevőkre vonatkozó paraméterek, költségek, szállítások és célok, váltók és a fiók kötelezvény és Hitel és gyűjtemény információk más típusának beállítására.
 Az alábbi táblázat felsorolja azokat az oldalakat, amelyek a Fiók kötelezvény és Hitel és gyűjtemények konfigurációját és karbantartását szolgálja. A táblázat bejegyzései feladatok szerint, azon belül pedig betűrend szerint vannak rendezve.
 
-| ![Megjegyzés:](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Megjegyzés:")**Megjegyzés:**          |
+| ![Megjegyzés](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Megjegyzés")**Megjegyzés**          |
 |--------------------------------------------------------------------------------------------------|
 | Az alábbi táblázatban szereplő oldalak közül egyeseknél be kell állítani bizonyos adatokat és paramétereket, hogy el lehessen érni őket. |
 
@@ -98,14 +101,16 @@ Az alábbi táblázat felsorolja azokat az oldalakat, amelyek a Fiók kötelezv�
 |                                                      | Vevői kapcsolattartók és e-mail beállítások | Az e-mail címmel rendelkező vevő kapcsolattartók beállítása. Ezek a címek megjelennek a beszedések lapján, és a vevőkhöz kerülő e-mailek létrehozásához használják fel. Minden egyes vevőhöz tartozó alapértemezett Beszedések kapcsolat beállítható, ami először a Beszedések oldalán fog megjelenni. |
 |                                                      | Vevőgyűjtők                       | Állítson be vevőgyűjtőket, olyan lekérdezéseket, amelyek meghatározzák a beszedési vagy korosítási folyamathoz megjeleníthető és kezelhető vevőkódok egy adott csoportját.                                                                                                                           |
 |                                                      | Vevő feladási profilja             | A vevői tranzakciók főkönyvbe történő feladását szabályozó profilok beállítása.                                                                                                                                                                                      |
-|                                                      | Vevői okkódok                | Vevő okok kódok beállítása                                                                                                                                                                                                                                                    |
-|                                                      | Vevői leírási okkódok      | Leírási tranzakciók használandó vevő leírási okok kódok beállítása                                                                                                                                                                                             |
+|                                                      | Vevői okkódok                | Állítsa be a vevői okkódokat.                                                                                                                                                                                                                                                    |
+|                                                      | Vevőleírási okkódok megtekintése      | Állítsa be a vevőleírási okkódokat, amelyeket a leírási tranzakcióknál kerülnek felhasználásra.                                                                                                                                                                                             |
 |                                                      | Képernyő beállítása                           | Az árajánlatok, visszaigazolások, kitárolási listák, csomagjegyzékek, vevői számlák, szabadszöveges számlák, számlák és kamatlevelek képernyő-paramétereinek megadása.                                                                                                                               |
 |                                                      | Érdeklődési terület                             | Kamatkódok beállítása és kezelése.                                                                                                                                                                                                                                                 |
-|                                                      | Információ Elégtelen.                     | Állítsa be az NSF információt azon a bankszámlán, amelyet használni fog akkor, amikor a fizetés NSF tranzakcióként jelölik meg a Beszedések lapon.                                                                                                                                              |
+|                                                      | NSF információ.                     | Állítsa be az NSF információt azon a bankszámlán, amelyet használni fog akkor, amikor a fizetés NSF tranzakcióként jelölik meg a Beszedések lapon.                                                                                                                                              |
 |                                                      | Értékesítő adatai              | Állítsa be az értékesítők e-mail címeit. Ez a cím megjelenik a beszedések lapon és a felhasználásukkal az értékesítő számára e-mail üzenetet küldhet erről a lapról.                                                                                                                |
 
  
-További tudnivalókért lásd: [hitelezési és beszedési a Kinnlevőségek](collections-credit-accounts-receivable.md).
+További tudnivalókért lásd: [Követelések és beszedések a Kinnlevőségek között](collections-credit-accounts-receivable.md).
+
+
 
 

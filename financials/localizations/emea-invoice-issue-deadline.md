@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="invoice-issue-deadline"></a>Számlakibocsátás határideje
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk bemutatja, hogy hogyan állíthatja be az Európai Unió (EU) területén belüli vevői és szállítói számlák kibocsátási határidejének kiszámításához használt paramétereket.
 
 Az Európai Unió (EU) 45/2010-es irányelve és más irányelvek kimondják, hogy az EU-n belüli szállítmányok szálázásának legkésőbb a szállítást követő hónap tizenötödik napján meg kell történnie. Ugyanakkor az egyes EU-országban különböző lehet a belföldi szállítások számlázási határideje. A Számlakibocsátási határidő funkció segítségével a dátumintervallumot az ország/régió típusához tudja igazítani. Ezután minden, adott típusú országból/régióból vagy országba/régióba irányuló szállítmány számlakiadási határidejét a rendszer a megadott dátumintervallumban beállított szabályok alapján számítja. Ezenkívül megjelenítheti az összes, adott számlakibocsátási határidejű szállítólevelet, számlakibocsátási határidő szerint szűrhet az időszakos értékesítési számlázás során, továbbá beállíthatja az értékesítési számla kibocsátásának idejét számlafeladáskor. Beállíthat egy dátumintervallum-kódot, majd beállíthatja a számlakibocsátás határidejének számítási szabályát úgy, hogy az intervallumkódot hozzárendeli egy ország-/régiótípushoz. A számítási szabály a következő tranzakciók számlák kibocsátási határidejének kiszámításához használható:
@@ -42,7 +45,7 @@ Az alábbi táblázat azokat az előfeltételeket mutatja, amelyek fennállása 
 | Kategória            | Előfeltételek                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ország/régió      | A jogi személy elsődleges címének egy EU tagállamban kell lennie.                                                                                                                                                                                                                                                                                                                    |
-| Kapcsolódó beállítási feladatok | A **Dátumintervallumok** lapon állítsa be a számlakibocsátási határidő számításához használni kívánt dátumintervallumot. (Kattintson a **főkönyvi**&gt;**könyvelés beállítása**&gt;**dátum szerinti időközönként**.) A a **Külkereskedelmi paraméterek** külkereskedelmi tulajdonságokat a különböző országok/régiók beállítása lapon. (Kattintson a **adó**&gt;**a telepítő**&gt;**külkereskedelmi**&gt;**Külkereskedelmi paraméterek**.) |
+| Kapcsolódó beállítási feladatok | A **Dátumintervallumok** lapon állítsa be a számlakibocsátási határidő számításához használni kívánt dátumintervallumot. (Kattintson a következőkre: **Főkönyv** &gt; **Főkönyv beállításai** &gt; **Dátumintervallumok**.) A **Külkereskedelmi paraméterek** lapon állítsa be a különböző országokhoz/régiókhoz tartozó külkereskedelmi tulajdonságokat. (Kattintson a következőre: **Adó** &gt; **Beállítás** &gt; **Külkereskedelem** &gt; **Külkereskedelmi paraméterek**.) |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Számlakibocsátási határidő számítási szabálya
 A **Számlakibocsátási határidő kiszámításának beállítása** lapon állíthatja be a számlakibocsátás határidejének számítási szabályát úgy, hogy az intervallumkódot hozzárendeli egy ország-/régiótípushoz.
@@ -51,7 +54,7 @@ A **Számlakibocsátási határidő kiszámításának beállítása** lapon ál
 Lehetősége van dátumvezérlési paraméterek beállítására, amelyek segítségével biztosítható, hogy a rendszer a vevői tranzakciókhoz tartozó vevői számlákat és jóváírásokat a szállítás teljesítését követő megadott időszakon belül generálja. Ezeket a paramétereket a **Kinnlevőségek paraméterei** oldal **Számladátumok ellenőrzése** területén találhatja meg.
 
 ## <a name="example"></a>Példa
-Beállítása a Microsoft Dynamics 365 műveletek alapján számítja ki a számla probléma határideje az EU-n belüli szállítások után a kínálat szállított a hónap tizenötödik napján, a dátum intervallum kód és számítási szabály létrehozása, amelyek rendelkeznek az alábbi beállításokat.
+A Microsoft Dynamics 365 for Operations rendszert beállíthatja úgy, hogy a számlakibocsátási határidőt EU-n belüli szállításoknál mindig a szállítás végrehajtását követő hónap 15-én számítsa ki – ehhez hozzon létre egy dátumintervallum-kódot és egy számítási szabályt az alábbi beállításokkal.
 
 ### <a name="date-interval-code"></a>Dátumtartomány kódja
 
@@ -75,8 +78,8 @@ Beállítása a Microsoft Dynamics 365 műveletek alapján számítja ki a szám
 ## <a name="next-steps"></a>További lépések
 Miután befejezte a számlakibocsátási határidő kiszámításához használt paraméterek beállítását, létrehozhatja és feladhatja az alábbi tranzakciókat, amelyekkel automatikusan kiszámíthatja és aktualizálhatja a számlák kibocsátására vonatkozó határidőket:
 
--   **Értékesítési rendelések** – Amikor értékesítési rendelést hoz létre és szállítólevelet ad fel, a rendszer kiszámítja a számla kibocsátásának határidejét és aktualizálja azt a szállítólevélen. A határidő számítása a társított az ország/régió az értékesítési rendelés szállítási címét a megadott intervallum alapján történik. Után feladja a csomagjegyzéket, ellenőrizheti a számla probléma határidőt a **kiadási számla fizetési határidő** mezőjében a **csomagjegyzékek naplója** lap. (Kattintson a **az értékesítési és**&gt;**az eladási rendelés**&gt;**rendelés szállítási**&gt;**szállítólevél**.) Megtekintheti a csomagjegyzékek, nem számlázott és a számla kiállítás határideje, a **még nem számlázott szállítólevelek** oldalon. (Kattintson a **az értékesítési és**&gt;**az eladási rendelés**&gt;**rendelés szállítási**&gt;**még nem számlázott szállítólevelek**.)
--   **Beszerzési rendelések** – Amikor beszerzési rendelést hoz létre és termékbevételezést ad fel, a rendszer kiszámítja a számla kibocsátásának határidejét és aktualizálja azt a termékbevételezésen. A határidő számítása a szállító elsődleges címében megadott országhoz/régióhoz társított dátumintervallum alapján történik. A termékbevételezés feladása után a számlakibocsátási határidőt a **Termékbevételezési napló** oldal **Számlakibocsátási határidő** mezőjében ellenőrizheti. (Kattintson a **beszerzés és forrás**&gt;**beszerzési rendelések**&gt;**részesülő termékek**&gt;**termékbevételezés**.) Megtekintheti az összes, nem számlázott szállítólevelek és a számla kiállítás határideje, a **még nem számlázott szállítólevelek** oldalon. (Kattintson a **beszerzés és forrás**&gt;**beszerzési rendelések**&gt;**részesülő termékek**&gt;**még nem számlázott szállítólevelek**.)
+-   **Értékesítési rendelések** – Amikor értékesítési rendelést hoz létre és szállítólevelet ad fel, a rendszer kiszámítja a számla kibocsátásának határidejét és aktualizálja azt a szállítólevélen. A határidő kiszámításának alapja az értékesítési rendelés címországához/régiójához meghatározott dátumintervallum. A szállítólevél feladása után a számlakibocsátási határidőt a **Termékbevételezési napló** oldal **Szállítólevél naplója** mezőjében ellenőrizheti. (Kattintson a következőre: **Értékesítés és marketing** &gt; **Értékesítési rendelés** &gt; **Rendelés szállítása** &gt; **Szállítólevél**.) A **Nem számlázott szállítólevelek** oldalon megtekintheti az összes, nem számlázott szállítólevelet és az azokhoz tartozó számlakibocsátási határidőket. (Kattintson a következőre: **Értékesítés és marketing** &gt; **Értékesítési rendelés** &gt; **Rendelés szállítása** &gt; **Nem számlázott szállítólevelek.**)
+-   **Beszerzési rendelések** – Amikor beszerzési rendelést hoz létre és termékbevételezést ad fel, a rendszer kiszámítja a számla kibocsátásának határidejét és aktualizálja azt a termékbevételezésen. A határidő számítása a szállító elsődleges címében megadott országhoz/régióhoz társított dátumintervallum alapján történik. A termékbevételezés feladása után a számlakibocsátási határidőt a **Termékbevételezési napló** oldal **Számlakibocsátási határidő** mezőjében ellenőrizheti. (Kattintson a következőre: **Beszerzés és forrás** &gt; **Beszerzési rendelések** &gt; **Termékek bevételezése** &gt; **Termékbevételezés**.) A **Nem számlázott termékbevételezések** oldalon megtekintheti az összes, nem számlázott termékbevételezést és az azokhoz tartozó számlakibocsátási határidőket. (Kattintson a következőre: **Beszerzés és forrás** &gt; **Beszerzési rendelések** &gt; **Termékek bevételezése** &gt; **Nem számlázott termékbevételezések**.)
 
 ## <a name="technical-information-for-system-administrators"></a>Technikai információk rendszergazdáknak.
 Amennyiben nincs hozzáférése a jelen cikkben szereplő feladatok végrehajtásához használt oldalakhoz, forduljon a rendszergazdához és adja meg azokat az információkat, amelyek a következő táblázatban szerepelnek.
@@ -95,7 +98,7 @@ Amennyiben nincs hozzáférése a jelen cikkben szereplő feladatok végrehajtá
 <tbody>
 <tr class="odd">
 <td>Konfigurációs kulcsok (Configuration Keys)</td>
-<td>Kattintson a <strong>rendszer felügyeleti</strong>&gt;<strong>a telepítő</strong>&gt;<strong>licencelés</strong>&gt;<strong>licenckiszolgáló konfigurációs</strong>. Kattintson a <strong>Főkönyv</strong> konfigurációs kulcsra.</td>
+<td>Kattintson a következőre: <strong>Rendszerfelügyelet</strong> &gt; <strong>Beállítás</strong> &gt; <strong>Licenckezelés</strong> &gt; <strong>Licenckonfiguráció</strong>. Kattintson a <strong>Főkönyv</strong> konfigurációs kulcsra.</td>
 </tr>
 <tr class="even">
 <td>Biztonsági szerepkörök és feladatok</td>
@@ -116,6 +119,8 @@ Amennyiben nincs hozzáférése a jelen cikkben szereplő feladatok végrehajtá
 </tr>
 </tbody>
 </table>
+
+
 
 
 

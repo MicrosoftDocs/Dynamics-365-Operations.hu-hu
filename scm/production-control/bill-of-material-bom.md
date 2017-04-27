@@ -1,6 +1,6 @@
 ---
 title: "Anyagjegyzékek és receptúrák"
-description: "Ez a cikk tájékoztatást tartalmaz a termékek és termékváltozatok központi részét képező anyagjegyzékek (AJ) és képletek kapcsolatban. Anyagjegyzékek és képletek adja meg a szükséges anyagokat vagy összetevőket az adott termékre vonatkozóan. Képleteket is megadhatja a társ- és melléktermékeket, amelyek egy adott termelési környezetben érkeznek."
+description: "Ez a cikk a termékek és termékváltozatok meghatározásának alapvető részét képező anyagjegyzékekkel (AJ) és receptúrákkal kapcsolatban tartalmaz tájékoztatást. Az anyagjegyzékek és receptúrák határozzák meg az adott termékre vonatkozóan a szükséges anyagokat vagy összetevőket. A receptúrák emellett egy adott termelési környezetben kapott társ- és melléktermékeket is meghatároznak."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Anyagjegyzékek és receptúrák
 
-Ez a cikk tájékoztatást tartalmaz a termékek és termékváltozatok központi részét képező anyagjegyzékek (AJ) és képletek kapcsolatban. Anyagjegyzékek és képletek adja meg a szükséges anyagokat vagy összetevőket az adott termékre vonatkozóan. Képleteket is megadhatja a társ- és melléktermékeket, amelyek egy adott termelési környezetben érkeznek. 
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk a termékek és termékváltozatok meghatározásának alapvető részét képező anyagjegyzékekkel (AJ) és receptúrákkal kapcsolatban tartalmaz tájékoztatást. Az anyagjegyzékek és receptúrák határozzák meg az adott termékre vonatkozóan a szükséges anyagokat vagy összetevőket. A receptúrák emellett egy adott termelési környezetben kapott társ- és melléktermékeket is meghatároznak. 
 
 <a name="bills-of-materials"></a>Anyagjegyzékek
 ------------------
@@ -38,7 +41,7 @@ Az anyagjegyzék (AJ) határozza meg azokat az összetevőket, amelyek szükség
 
 Ha egy útvonallal vagy olyan termelési folyamattal van összevonva, amely leírja a termék előállításához szükséges műveleteket és erőforrásokat akkor az anyagjegyzék adja a termék becsült költség számításának alapját.  
 
-Anyagjegyzék egyéni entitás, amely az alábbiakat írja le:
+Az anyagjegyzék egy egyedi entitás, amit a következő információk írnak le:
 
 -   Anyagjegyzék-azonosító
 -   Anyagjegyzék neve
@@ -49,7 +52,7 @@ Egy anyagjegyzék egy szintet ír le, amit egy egyedi azonosító azonosít. El�
 
 ### <a name="formulas-co-products-and-by-products"></a>Receptúrák, társtermékek és melléktermékek
 
-A receptúra az anyagverziók egy altípusa, amit jellemzően a gyártásfolyamat során használnak. Az alkatrészeken és alapanyagokon túl egy receptúra leírja a társtermékeket és melléktermékeket. Az aktuális verzió a végtermékek és melléktermékek a képlet meghatározása a képlet verziója szükséges. A képlet egy adott késztermék (a képlet vagy tervezési elem), amely meg van adva a receptúraverzió általában van definiálva.
+A receptúra az anyagverziók egy altípusa, amit jellemzően a gyártásfolyamat során használnak. Az alkatrészeken és alapanyagokon túl egy receptúra leírja a társtermékeket és melléktermékeket. A tényleges verzióban a társtermékek és melléktermékek a receptúrához történő meghatározása megköveteli a receptúraverziót. A receptúra jellemzően egy a receptúraverzióban meghatározott konkrét végtermékhez van megadva (receptúra vagy tervezési cikk).
 
 ### <a name="boms-in-the-product-lifecycle"></a>Anyagjegyzékek a termék életciklusában.
 
@@ -61,7 +64,7 @@ A termék életciklusában sok anyagjegyzék típus készülhet, különböző o
 -   **Termelési anyagjegyzék** – Ez a konkrét termelés során használt tényleges anyagjegyzék. A termelési anyagjegyzéknek figyelembe kell vennie a tényleges erőforrásokat, amik a termék előállítása során felhasználásra kerülnek. Egy termelési rendelést, kötegrendelés vagy kanban létrehozásakor anyagjegyzékeit megjelenítő kitárolási jelölik a többszintű egyszintű gyűjti össze, és a műveletek sorrendjének elosztva.
 -   **Költségszámítási anyagjegyzék** – Ez az anyagjegyzék használatos egy termék becsült költségének számításához. Használhatja például költségszámítási anyagjegyzéket amikor elszámoló árat használ vagy amikor egy adott termék becsült, tervezett ára kerül számításra. A költségszámítási anyagjegyzékek hivatkozhatnak egy adott anyag– és erőforrás összetételre, amelynek felhasználása várható. Ezért a költségszámítási anyagjegyzék felhasználható egy jellegzetes költségbecslés elkészítéséhez egy időszakra és segít az időben való eltérések elkerülésében.
 
-Az Anyagjegyzék típusú megvalósítása a ténylegesen használt végrehajtásáról és az üzleti forgatókönyvek és a követelmények függenek. Egyszerű megvalósítások esetén egy tervezési anyagjegyzék, egy termelési anyagjegyzék és egy költségszámítási anyagjegyzék modellezhető egy anyagjegyzékként. Olyan környezetekben, ahol gyakoriak a műszaki változások és több alternatív útvonal létezik valószínűleg egy több anyagjegyzéket magában foglaló készletre lesz szükség.
+Az anyagjegyzék-típusok, amelyek ténylegesen felhasználásra kerülnek megvalósításánál, függenek a megvalósítástól és az üzleti esetektől- és elvárásoktól. Egyszerű megvalósítások esetén egy tervezési anyagjegyzék, egy termelési anyagjegyzék és egy költségszámítási anyagjegyzék modellezhető egy anyagjegyzékként. Olyan környezetekben, ahol gyakoriak a műszaki változások és több alternatív útvonal létezik valószínűleg egy több anyagjegyzéket magában foglaló készletre lesz szükség.
 
 ### <a name="approval-of-boms-and-formulas"></a>Anyagjegyzékek és receptúrák jóváhagyása
 
@@ -78,7 +81,7 @@ Mielőtt egy anyagjegyzék verzió használható a tervezési és termelési fol
 
 ### <a name="activation-of-the-default-bom-or-formula-version"></a>Az alapértelmezett anyagjegyzék verzió vagy receptúraverzió aktiválása.
 
-Ahhoz, hogy egy adott anyagjegyzéket vagy receptúrát alapértelmezett anyagjegyzék verziónak vagy receptúraverziónak állítson be, amely az alaptervezésben és a termelési utasítások készítésében lesz használatos aktiválnia kell a verziót. Aktív egy verziót, amikor az adott korlátok (időszak, hely vagy mennyiség) Ez a verzió egyediségét ellenőrzését. Ha a verziót, hogy próbált ütközik egy verzió aktiválása, amely már aktív egy hibaüzenetet kapja. Ezután vagy hatástalanítania kell az ütköző verziót vagy módosítania kell a verzió megszorításait (jellemzően az időszakot) hogy megakadályozza a kétértelmű aktivációt.
+Ahhoz, hogy egy adott anyagjegyzéket vagy receptúrát alapértelmezett anyagjegyzék verziónak vagy receptúraverziónak állítson be, amely az alaptervezésben és a termelési utasítások készítésében lesz használatos aktiválnia kell a verziót. Egy verzió aktiválásakor a verzió egyedisége az adott megszorítások alapján (például: időszak, telephely vagy mennyiség) ellenőrzésre kerül. Hibaüzenetet kap, ha a verzió, amit aktiválni próbál, ütközik egy verzióval, ami már aktív. Ezután vagy hatástalanítania kell az ütköző verziót vagy módosítania kell a verzió megszorításait (jellemzően az időszakot) hogy megakadályozza a kétértelmű aktivációt.
 
 ### <a name="product-change-with-case-management"></a>Termékmódosítás esetkezeléssel.
 
@@ -114,5 +117,7 @@ Válassza ki a** Rögzített készletek** sortípust amikor résztermelést, ami
 Válassz ki a **Szállító** típust, ha a termelési folyamat alvállalkozót használ, és az alvállalkozóhoz automatikusan résztermelést vagy beszerzési rendelést szeretne létrehozni.  
 
 **Az anyagjegyzékben szereplő alvállalkozói műveletekkel kapcsolatos megjegyzés:** a szolgáltatást vagy az alvállalkozó által végzett munkát a készletben nyomon követett szolgáltatási cikként kell létrehozni. A szolgáltatási cikket hozzá kell rendelni a szülő cikkhez az anyagjegyzék sorban. Az útvonalnak tartalmaznia kell egy az alvállalkozó műveleti erőforrásához hozzárendelt műveletet.
+
+
 
 

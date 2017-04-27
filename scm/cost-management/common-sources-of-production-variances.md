@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="common-sources-of-production-variances"></a>A termelési különbözetek gyakori okai
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a termelési eltérések különböző formáinak forrásait ismerteti. 
 
 Íme, néhány tipikus példa az **adag méret** eltéréseire:
@@ -57,6 +60,8 @@ Ez a cikk a termelési eltérések különböző formáinak forrásait ismerteti
 -   Manuálisan hozzáad egy műveletet a termelési útvonalhoz és teljesítettként jelenti a műveletet.
 -   A termelési rendelés létrehozásakor, az alap költségszámításban használt anyagjegyzéktől eltérő anyagjegyzéket választ.
 -   A termelési rendelés létrehozásakor, az alap költségszámításban használt útvonal verziótól eltérő útvonal verziót választ.
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Az értékesítési folyamat sorozatszámok regisztrálása"
+title: "Sorozatszámok regisztrálása az értékesítési folyamatban"
 description: "Ez a cikk bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="register-serial-numbers-in-the-sales-process"></a>Az értékesítési folyamat sorozatszámok regisztrálása
+# <a name="register-serial-numbers-in-the-sales-process"></a>Sorozatszámok regisztrálása az értékesítési folyamatban
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
 
@@ -65,7 +68,7 @@ Igen, futtassa a lekérdezést a csomagjegyzék jegy naplósor vagy a számlát 
 ## <a name="can-i-view-the-serialized-items-that-i-have-on-hand"></a>Megtekintheti a szerializált cikkekről van készleten?
 Nem, nem tekintheti meg a készleten lévő sorozatszámmal ellátott cikkeket, mert a sorozatszámok nincsenek regisztrálva, amíg a cikkek eladásra nem kerülnek.
 
-## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Rögzítheti a catchweight cikkek sorozatszámát?
+## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Regisztrálhatja a tényleges súllyal rendelkező cikkek sorozatszámait?
 Nem, az értékesítési folyamat során nincs lehetősége sorozatszám regisztrálására a tényleges súllyal rendelkező cikkekhez. Továbbá, ha egy termék tényleges súllyal rendelkező cikként van beállítva, akkor nem rendelhető hozzá egy nyomon követő dimenziócsoporthoz, amely úgy van beállítva, hogy csak az értékesítési folyamat során használjon sorozatszámokat.
 Van lehetőségem a kiskereskedelmi POS-nál regisztrálni a sorozatszámokat?
 ------------------------------------------------
@@ -76,6 +79,8 @@ Igen, a kiskereskedelmi pénztár (POS) arra utasítja a felhasználót, hogy ad
 Ez a funkció minden olyan szerep számára elérhető, amely jogosult a szállítólevelek és számlák kezelésére. Az alábbi feladatok engedélyezik a dolgozók számára a sorozatszámok korrekcióját és üres bejegyzések létrehozását az olvashatatlan vagy beolvashatatlan sorozatszámok esetén:
 -   Sorozatszámkorrekciók karbantartása
 -   Olvashatatlan sorozatszámok regisztrációjának karbantartása
+
+
 
 
 

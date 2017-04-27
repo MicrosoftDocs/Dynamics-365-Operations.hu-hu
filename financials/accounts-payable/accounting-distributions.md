@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions"></a>Könyvelési felosztások
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk a könyvelési felosztásokról nyújt tájékoztatást, valamint leírja a feldolgozásra alkalmas opciókat. A könyvelési felosztásokat egy forrásbizonylat pénzösszegeinek egy meghatározott főkönyvi számlára történő áthelyezésére használhatja. 
 
 A könyvelési felosztások program szintű képesség, amelyet a forrásbizonylat használ és terejszt ki, úgy mint beszerzési rendelés, szállítói számla, költségjelentés és szabadszöveges számla. Alapértelmezés szerint az alapértelmezett könyvelési felosztás jön létre mindegyik forrásbizonylatsorhoz és pénzösszeghez, és módosításra feltételesen engedélyezve van. 
 
 > [!Note] 
-> Egyes dokumentumok támogatják a fej dokumentum pénzösszegeket, például a rendelések és számlák díja is. 
+> Egyes dokumentumok támogatják a bizonylat fejlécében található pénzösszegeket, például a rendelések és számlák költségeit. 
 
 Az általános könyvelési felosztás funkciók az alábbi lehetőségeket biztosítja a könyvelési felosztás feldolgozásához:
 
@@ -44,15 +47,17 @@ Az általános könyvelési felosztás funkciók az alábbi lehetőségeket bizt
     -   **Megosztott** gomba a szülő felosztásoknak engedélyezhető. **Megosztott** új könyvelési felosztásokat hoz létre, és a megosztás alapja lehet a százalék, összeg, vagy mennyiség.
     -   Az** Egyenló kiosztés** gomb együtt használható a **Megosztott** funkcióval, az automatikus felosztására az összes felosztás között.
     -   **Alaphelyzet** gomb engedélyezhető a szülő felosztások számára, ha több, mint egy felosztás található. Az **Alaphelyzet** funkció visszafordít minden manuálius változtatást, úgy, hogy kitörtöl minden felostást és újragenerálja az alapértelmezett felosztásokat.
-    -   Bármely gyermekfelosztás, úgy mint engedmény, a költség és a forgalmi adó, mindig követi a szülő felosztását. Megtekintheti a szülő-gyermek kapcsolat, **referencia**&gt;**információ szülő**.
+    -   Bármely gyermekfelosztás, úgy mint engedmény, a költség és a forgalmi adó, mindig követi a szülő felosztását. Meg lehet tekinteni a szülő/gyermek kapcsolatot itt: **Hivatkozás** &gt; **Szülőadatok**.
     -   A fő számla és a pénzügyi dimenzió a gyermekek számára is engedélyezhetőek.
     -   A pénzügyi dimenziók a könyvelési felosztásokon egy alapértelmezési mintát követ, amelyet egy bizonylat kiterjeszthet. További részletekért lásd a kapcsolódó cikkeket.
-    -   Eltérés felosztások egyező feltételeken generálódhatnak, úgy mint egyezés a szállítói számla és a beszerzési rendelés között. Megtekintheti a számlázási eloszlás közötti megfelelő kapcsolatok **referencia**&gt;**adatai**.
-    -   **Helyes** gomb jelenik meg, és engedélyezve van a dokumentumoknak, amelyeken elvégezhetők javítások. **Megfelelő** hoz létre új felosztásokat. Először a felosztások készülnek, amelyek visszaállítják az eredeti felosztások. Ezek a felosztások nem módosítható. Következő, új megfelelő könyvelési felosztások jönnek létre. Ezeknek a felosztások módosíthatóak, ha az eredeti felosztások módosíthatók.
+    -   Eltérés felosztások egyező feltételeken generálódhatnak, úgy mint egyezés a szállítói számla és a beszerzési rendelés között. Meg lehet tekinteni a könyvelési felosztás egyezési kapcsolatait itt: **Hivatkozás** &gt; **Dokumentum adatai**.
+    -   **Helyes** gomb jelenik meg, és engedélyezve van a dokumentumoknak, amelyeken elvégezhetők javítások. A **Megfelelő** új felosztásokat hoz létre. Először felosztások jönnek létre, amelyek megfordítják az eredeti felosztásokat. Ezek a felosztások nem módosíthatók. Ezután létrejönnek az új, megfelelő könyvelési felosztások. Ezeknek a felosztások módosíthatóak, ha az eredeti felosztások módosíthatók.
     -   A** Projektadatok** gomb használható kiterjesztésként, amikor a projekt egy sor kapcsolódik. Projekt könyvelési felosztása segítségével módosíthatja a részleteket, például a finanszírozási forrás és a sortulajdonság.
-    -   Az aktuális dokumentum számviteli állapotát tekintheti meg **referencia**. Az állapotot a teljes dokumentumot, és jelzi, hogy a dokumentum folyamatban van vagy befejeződött.
--   ** Megtekintése felosztások ** – a dokumentum összes sorból és pénzösszegek könyvelési felosztásainak megtekintése. A könyvelési felosztásokat ebből a nézetből nem módosíthatja.
+    -   Az aktuális dokumentum számviteli állapotát itt tekintheti meg: **Hivatkozás**. Az állapot a teljes dokumentumra vonatkozik, és jelzi, hogy a dokumentum folyamatban van vagy befejeződött-e.
+-   ** Felosztások megtekintése** – A bizonylat összes sorához és a pénzösszegekhez tartozó könyvelési felosztás megtekintése. A könyvelési felosztásokat ebből a nézetből nem módosíthatja.
 
 
-További tudnivalókért lásd: [könyvelési felosztások és analitikus naplóbejegyzések a szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+További tájékoztatás: [Könyvelési felosztások és az analitikus napló bejegyzései szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
+
 

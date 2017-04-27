@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-credit-and-collections"></a>Követelések és beszedések beállítása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a beszedési funkciók beállítását ismerteti.
 
 <a name="set-up-aging-period-definitions"></a>Korosítási időszakok definícióinak beállítása
@@ -46,7 +49,7 @@ Ha a szervezetben többen foglalkoznak pénzbeszedéssel, beszedési csapatot ho
 ## <a name="set-up-a-collections-case-category"></a>Beszedési esetkategória beállítása
 Ha eseteket fog használni a beszedési munka megszervezéséhez, akkor állítson be egy esetkategóriát, amely rendelkezik a **beszedések** kategóriatípussal. Ez a beállítás csak akkor szükséges, ha használni akarja az eset funkciót a **beszedések** lapon.
 
-## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>(A kiegyenlítés, a writeoff és a NSF) naplónevek beállítása
+## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Naplónevek beállítása (kiegyenlítés, leírás és elégtelen fedezet)
 Állítson be naplóneveket, amelyek akkor használatosak, amikor a tranzakciók feldolgozásra kerülnek a **beszedések** oldalon. Ez a feldolgozás magában foglalja egy tranzakció kiegyenlítését, leírását és az elégtelen fedezetű (NSF) fizetés feldolgozását.
 
 | Leírás | Naplótípus     |
@@ -55,7 +58,7 @@ Ha eseteket fog használni a beszedési munka megszervezéséhez, akkor állíts
 | Veszteségleírás   | Napi            |
 | Elégtelen fedezet         | Vevői kifizetés |
 
-## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Writeoff a tranzakciókhoz okkódot beállítása
+## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Leírási tranzakciók okkódjainak beállítása
 Állítsa be az alapértelmezett ok-kódot, amely akkor használatos, amikor a tranzakciók leírásra kerülnek a **beszedések** lapon. Módosíthatja a kódot a leírási folyamat ideje alatt.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Mappa beállítása e-mail mellékletekhez, e-mail sablonok létrehozása
@@ -67,7 +70,7 @@ Ha e-mail üzeneteket fog küldeni a **beszedések** lapról, amelyek Microsoft 
 ## <a name="optional-set-up-collections-agents"></a>Pénzbehajtók beállítása (nem kötelező)
 Ha a szervezetben többen foglalkoznak pénzbeszedéssel, pénzbehajtókat adhat meg. A kinnlevőségkezelő egy olyan dolgozó, aki felhasználóként van beállítva a **felhasználói kapcsolatok** lapon. Hozzárendelhet vevőgyűjtőket (vevőlekérdezéseket) a kinnlevőségkezelőkhöz, hogy segítse őket a munkájuk szervezésében. A kinnlevőségkezelők hozzáadódnak a **kinnlevőségek paraméterei** lapon kijelölt csapathoz. Ha egy csapat nincs kijelölve ezen az oldalon, akkor automatikusan létrejön egy új csapat **beszedések** névvel és a kinnlevőségkezelők hozzáadódnak a csapathoz.
 
-## <a name="set-up-a-writeoff-account"></a>Writeoff fiók beállítása
+## <a name="set-up-a-writeoff-account"></a>Leírási számla beállítása
 A leírási számla beállítása, amely a főkönyvi számla leírásához használatos a tranzakciók leírásakor. Ez a számla a vevő feladási profilján van tárolva.
 
 ## <a name="set-up-nsf-information-for-bank-accounts"></a>Elégtelen fedezettel kapcsolatos adatok megadása bankszámlákhoz
@@ -82,11 +85,13 @@ Mielőtt a dolgozók műveleteket tudnak létrehozni, vagy e-mail üzeneteket k�
 A vevőhöz tartozó **követelések és beszedések** gyorslapon a **beszedési kapcsolattartó** mezőben jelölje ki azt a személyt a vevő szervezetében, aki az Ön kinnlevőségkezelőjével dolgozik. Ez a személy használatos alapértelmezett kapcsolattartóként a **beszedések** lapon és az e-mail üzenetek neki kerülnek elküldésre. 
 
 > [!NOTE] 
-> Gyűjtemények kapcsolattartó nincs megadva a vevő, ha a vevő az elsődleges kapcsolattartó használatos. Ha egy elsődleges kapcsolattartó nincs megadva, akkor az e-mail üzenetek a **kapcsolattartók** lapon szereplő első címre lesznek kiküldve.
+> Ha egy beszedési kapcsolattartó nincs megadva a vevőhöz, akkor a vevő elsődleges kapcsolattartója kerül használatra. Ha egy elsődleges kapcsolattartó nincs megadva, akkor az e-mail üzenetek a **kapcsolattartók** lapon szereplő első címre lesznek kiküldve.
 
 ## <a name="set-up-email-settings-for-salespeople"></a>Üzletkötők e-mail beállításainak megadása
 Állítson be e-mail címeket az értékesítőknek, ha e-mail üzeneteket akar küldeni nekik a **beszedések** lapról. Állítson be e-mail címet az egyes értékesítési jutalékcsoportokhoz tartozó összes üzletkötőnek. Az értékesítési képviselő, akinél ki van jelölve a **kapcsolattartó** opció az alapértelmezett értékesítő, akinek az e-mail üzenetek ki lesznek küldve. 
 
 Ha az értékesítési képviselő nincs megadva, akkor a vevőszervezethez tartozó elsődleges értékesítő kerül használatra. Ha az elsődleges értékesítő nincs megadva, akkor az e-mail üzenetek a lapon szereplő első értékesítőhöz lesznek kiküldve.
+
+
 
 

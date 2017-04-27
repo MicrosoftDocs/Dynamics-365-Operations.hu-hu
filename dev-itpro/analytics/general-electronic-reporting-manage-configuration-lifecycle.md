@@ -1,6 +1,6 @@
 ---
 title: "Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése"
-description: "Ez a témakör leírja, hogyan elektronikus jelentési műveletek megoldás a Microsoft Dynamics 365 konfigurációi (ER) életciklusának kezelését."
+description: "Ez a témakör az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését ismerteti a Microsoft Dynamics 365 for Operations megoldás esetén."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,18 +27,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése
 
-Ez a témakör leírja, hogyan elektronikus jelentési műveletek megoldás a Microsoft Dynamics 365 konfigurációi (ER) életciklusának kezelését.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a témakör az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését ismerteti a Microsoft Dynamics 365 for Operations megoldás esetén.
 
 <a name="overview"></a>Áttekintés
 --------
 
-Az Elektronikus jelentés (ER) felel a jogszabályokban követelményként előírt és országspecifikus dokumentumok támogatásáért a Microsoft Dynamics 365 for Operations rendszerben. Általánosságban az ER feltételezi, hogy az alábbi feladatok elvégezhetők egyetlen elektronikus dokumentumhoz. További részletekért lásd: [elektronikus jelentése – áttekintés](general-electronic-reporting.md).
+Az Elektronikus jelentés (ER) felel a jogszabályokban követelményként előírt és országspecifikus dokumentumok támogatásáért a Microsoft Dynamics 365 for Operations rendszerben. Általánosságban az ER feltételezi, hogy az alábbi feladatok elvégezhetők egyetlen elektronikus dokumentumhoz. További részletekért lásd: [Elektronikus jelentés – áttekintés](general-electronic-reporting.md).
 
 -   Sablon tervezése elektronikus dokumentumhoz:
     -   Határozza meg a dokumentumban feltüntethető adatokhoz szükséges forrásokat:
-        -   Dynamics 365 fedezeti műveletek adatok, adattáblák, entitások és osztályok.
-        -   Folyamat-jellemző tulajdonságok, például a végrehajtási dátum és idő és időzóna.
-        -   Felhasználói bemeneti paraméterek, a felhasználó által futási időben megadott.
+        -   Másodlagos Dynamics 365 for Operations adatok (adattáblák, adatentitások és osztályok).
+        -   Folyamat-specifikus tulajdonságok (végrehajtási dátum és idő, valamint időzóna).
+        -   Felhasználó által megadott paraméterek (futásidőben, végfelhasználó által megadott).
     -   Definiálja a szükséges dokumentum elemeinek, valamint ezen elemeknek a végső dokumentum formátumának meghatározásához használt topológiát.
     -   A dokumentum elemeinek (adatforrás kötéssel a dokumentumformátum komponenséhez), valamint a folyamatvezérlő logika meghatározásához konfigurálja a kívánt adatfolyamot a kiválasztott adatforrásokból.
 -   Tegyen elérhetővé egy sablont, amely ezáltal használhatóvá válik más Dynamics 365 for Operations példányokban is:
@@ -49,19 +52,19 @@ Az Elektronikus jelentés (ER) felel a jogszabályokban követelményként elő�
     -   Importáljon egy sablont ER-konfigurációként az aktuális Dynamics 365 for Operations példányba az LCS rendszerből.
     -   Egy ER-konfiguráció testreszabott verziójának megtervezése, hivatkozást biztosítva az alapverzióhoz.
 -   Integráljon egy bizonyos üzleti folyamattal rendelkező sablont, hogy az elérhető legyen a Dynamics 365 for Operations rendszerben:
-    -   Ha hivatkozik a folyamathoz kapcsolódó paraméteren belüli konfigurációra, akkor beállíthatja, hogy a Dynamics 365 for Operations rendszer elkezdje használni az ER konfigurációt. Például a számlák feldolgozására az elektronikus fizetési üzenet létrehozásához egy adott számlák fizetendő fizetési mód ER konfiguráció vonatkoznak.
+    -   Ha hivatkozik a folyamathoz kapcsolódó paraméteren belüli konfigurációra, akkor beállíthatja, hogy a Dynamics 365 for Operations rendszer elkezdje használni az ER konfigurációt. Például hivatkozzon egy ER konfigurációra egy megadott Kötelezettségek fizetése módban, hogy elektronikus fizetési üzenetet hozzon létre a feldolgozás alatt lévő számlákhoz.
 -   Egy sablon használata egy meghatározott üzleti folyamatban:
-    -   Az ER-konfiguráció egy adott üzleti folyamat futtatása. Például ha egy fizetési módot, az ER-konfiguráció hivatkozó számlák feldolgozása egy elektronikus fizetési üzenet létrehozásához van kijelölve.
+    -   Futtasson ER-konfigurációt egy meghatározott üzleti folyamatban. Például hozzon létre számlafeldolgozással kapcsolatos elektronikus fizetési üzenetet, amikor egy ER-konfigurációra mutató hivatkozást használó fizetési módszer van kiválasztva
 
 ## <a name="concepts"></a>Koncepció
-Az ER-konfigurációs életciklus a következő szerepkörök és a kapcsolódó tevékenységek tartoznak.
+A következő szerepkörök és a kapcsolódó tevékenységek társítva vannak az ER-konfigurációk életciklusához.
 
 | Szerep                                       | Tevékenységek                                                      | Leírás                                                                                                                                                                                                                  |
 |--------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Elektronikus jelentések funkcióival foglalkozó konzulens | Hozzon létre és kezeljen egy ER komponenst (modellek és formátumok).           | Üzleti személy, aki tervez ER tartomány-specifikus adatokat modellek, tervek a szükséges elektronikus dokumentumok, sablonok, és ennek megfelelően köti őket.                                                                           |
-| Elektronikus jelentések fejlesztője             | Adatmodell hozzárendelések létrehozása és kezelése.                          | A Dynamics 365 műveletek szakember, aki a szükséges Dynamics 365 adatforrások műveletek kiválasztása, és köti őket ER tartomány-specifikus adatokat modellek esetében.                                                                 |
-| Számviteli felügyelő                      | Az ER műtermékre hivatkozó folyamathoz kapcsolódó beállítás konfigurálása. | Például egy **számviteli felügyelő** szerepkört, amely lehetővé teszi, hogy az ER-konfiguráció beállításainak egy adott számlák kifizetendő fizetési mód egy elektronikus fizetési üzenet feldolgozására számlák létrehozásához használható. |
-| Kötelezettségkifizetési adminisztrátor            | Egy ER műtermék használata egy meghatározott üzleti folyamatban.                | Ha például egy **Kötelezettségkifizetési adminisztrátor** szerepkört, amely lehetővé teszi az üzenetek elektronikus fizetési számlák feldolgozása esetén jön létre alapján az ER-formátum, amely egy speciális fizetési mód van beállítva.           |
+| Elektronikus jelentések funkcióival foglalkozó konzulens | Hozzon létre és kezeljen egy ER komponenst (modellek és formátumok).           | Egy üzleti személy, aki az ER tartomány-specifikus adatmodelleket tervezi, fogja megfelelően hozzákötni és megtervezni az elektronikus dokumentumokhoz szükséges sablonokat.                                                                           |
+| Elektronikus jelentések fejlesztője             | Adatmodell hozzárendelések létrehozása és kezelése.                          | Egy Dynamics 365 for Operations szakember, aki kiválasztja a szükséges Dynamics 365 for Operations-adatforrásokat, és hozzáköti azokat az ER tartomány-specifikus adatmodellekhez                                                                 |
+| Számviteli felügyelő                      | Az ER műtermékre hivatkozó folyamathoz kapcsolódó beállítás konfigurálása. | Például egy **Számviteli felügyelő** szerepkör, ami engedélyezi, hogy az ER konfiguráció beállításai használhatóak legyenek egy megadott Kötelezettségek fizetése módban, a feldolgozás alatt lévő számlákhoz tartozó elektronikus fizetési üzenet létrehozásánál. |
+| Kötelezettségkifizetési adminisztrátor            | Egy ER műtermék használata egy meghatározott üzleti folyamatban.                | Például egy **Kötelezettségkifizetési adminisztrátor** szerepkör, ami engedélyezi a megszabott fizetési módhoz konfigurált ER formátumon alapuló, feldolgozás alatt lévő számlákhoz tartozó elektronikus fizetési üzenet létrehozását.           |
 
 ## <a name="er-configuration-development-lifecycle"></a>ER konfiguráció fejlesztési életciklusa
 A következő, ER rendszerrel kapcsolatos okok miatt javasolt a ER-konfigurációkat a fejlesztői környezetben megtervezni egy különálló 365 for Operations példányként:
@@ -69,11 +72,13 @@ A következő, ER rendszerrel kapcsolatos okok miatt javasolt a ER-konfiguráci�
 -   Az **Elektronikus jelentések fejlesztője** vagy az **Elektronikus jelentések funkcióival foglalkozó konzulens** szerepkörrel rendelkező felhasználók szerkeszthetik a konfigurációkat is futtathatják azokat tesztelés céljából. Olyan osztályok és táblázatok módszereit hívhatja meg, amelyek esetleg károsak lehetnek az üzleti adatokra és a Dynamics 365 for Operations példány használati hatékonyságára nézve.
 -   A Dynamics 365 for Operations belépési pontok és naplózott vállalati tartalmak nem korlátozzák az osztály- és táblázatmódszerek ER-konfigurációkhoz tartozó ER-adatforrásokként történő hívását. Tehát a bizalmas üzleti adatokhoz hozzáférnek az **Elektronikus jelentések fejlesztője** vagy az **Elektronikus jelentések funkcióival foglalkozó konzulens** szerepkörrel rendelkező felhasználók.
 
-ER-konfigurációk, amelyek célja a fejlesztési környezetben feltölthetők a tesztkörnyezetben, minőségbiztosítás, például a szerepkör alapú engedélyeket helyességét és szétválasztására és konfigurációs értékelésének (megfelelő integrálása, az eredmények és a teljesítmény). ER konfigurációs adatcserét lehetővé tevő szolgáltatások használható erre a célra. Végül feltölthetők az igazolt ER konfigurációk LCS, ahol azok megosztható a szolgáltatás előfizetői, vagy belső használatra, mint például az alábbi ábrán látható az éles üzemi környezettel. ![ER konfigurációs életciklus](./media/ger-configuration-lifecycle.png)
+A fejlesztői környezetben megtervezett ER-konfigurációk feltölthetők a tesztkörnyezetbe a konfiguráció kiértékelése (megfelelő folyamatintegrálás, eredményhelyesség, teljesítmény), illetve a minőségbiztosítás (például szerepkörtől függő hozzáférési jogok helyessége, feladatkörök szétválasztása) céljából. Azok a funkciók használhatóak erre a célra, amelyek engedélyezik az ER konfiguráció adatcseréjét. Végül az igazoltan helyes ER-konfigurációk feltölthetők az LCS-be megosztva a szolgáltatás előfizetőivel, vagy az éles környezetbe belső használatra, a következő ábrán látható módon. ![ER-konfigurációs életciklus](./media/ger-configuration-lifecycle.png)
 
 <a name="see-also"></a>Lásd még
 --------
 
 [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
+
+
 
 

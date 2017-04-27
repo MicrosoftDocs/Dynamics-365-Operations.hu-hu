@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Elszámoló árak frissítése nem-termelő jellegű környezetben
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az elszámoló-árak nem-gyártási környezetben történő frissítésének útmutatását tartalmazza.
 
 Az alábbi irányelvek feltételezik, hogy a kétverziós megközelítés segítségével frissíti az elszámoló árat. Ebben a megközelítésben az egyik költségszámítási verzió az eredetileg a befagyasztott időszakra meghatározott elszámolási árakat tartalmazza, míg a másik költségszámítási verzió a járulékos frissítéseket tartalmazza. Minden módosítás a második költségverzióban rögzített költségrekordként kerül bevitelre, végül pedig engedélyezésre. Alternatív megoldás a kezdetben meghatározott elszámolási árakat használó egyverziós megközelítés alkalmazása. A kétverziós megközelítés egy második költségszámítási verzió meghatározását igényli. Az ennek a költségszámítási verziónak a meghatározására vonatkozó irányelvek a következők:
@@ -46,6 +49,8 @@ Az új cikkekre vonatkozó elszámoló árak javításához, korrekciójához va
 4.  Használja a **Költségszámítási verzió fenntartása** lapot, hogy módosítsa a zárolás jelzőt, ezzel lehetővé téve a második költségszámítási verzióba foglalt függőben lévő költségrekordok aktiválását.
 5.  Használja a **Költségszámítási verzió fenntartása** lapról megnyitható **Árak aktiválása** oldalt, hogy aktiválja az összes a második költségszámítási verzióba foglalt függőben lévő költségrekordot. Az egyes cikkekhez tartozó függőköltség-rekordokat is aktiválhatja a **Cikk ár** oldalon szereplő **Függő-ár aktiválása** gombbal .
 6.  A további adat-fenntartás megelőzése érdekében, használja a **Költségszámítási verzió beállítása** lapot, hogy módosítsa a második költségszámítási verzióba foglalt zárolás jelzőket. Az irányelvek zárolása megakadályozza az új függő költségek bevitelét és a függő költségek aktiválását.
+
+
 
 
 

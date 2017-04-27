@@ -1,6 +1,6 @@
 ---
 title: "Főkönyvi kivonat pénzügyi jelentés"
-description: "A cikk ismerteti az alapértelmezett jelentések főkönyvi egyenlegek. Bemutatja az építőelemek társított ezeket a jelentéseket, és hogyan módosíthatja a jelentések, hogy megfeleljenek az üzleti igényeknek is."
+description: "Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be. Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="trial-balance-financial-reports"></a>Főkönyvi kivonat pénzügyi jelentés
 
-A cikk ismerteti az alapértelmezett jelentések főkönyvi egyenlegek. Bemutatja az építőelemek társított ezeket a jelentéseket, és hogyan módosíthatja a jelentések, hogy megfeleljenek az üzleti igényeknek is. 
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be. Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek. 
 
 <a name="default-trial-balance-reports"></a>Alapértelmezett főkönyvi kivonat jelentés
 -----------------------------
@@ -51,7 +54,7 @@ A főkönyvi kivonat pénzügyi jelentések a következő építőelemekből ál
 
 ### <a name="row-definition"></a>Sor definíciója
 
-A sordefiníció kivonat – alapértelmezés szerint tartalmaz, mely lekéri az összes fő számla egyetlen sor. Ezért bárki létrehozhat jelentést anélkül, hogy módosításokat végezne. A jelentés megtekintésekor, láshat egy sorhoz, az egyes számlák részleteinek megtekintéséhez. Módosíthatja a sordefiníciót, hogy további részleteket tartalmazzon. A főkönyvi kivonat módosítása – Alapértelmezett sordefiníció, ezért tartalmazza az összes számla sorait, kövesse az alábbi lépéseket.
+A sordefiníció, Főkönyvi kivonat – Alapértelmezett, egy sort tartalmaz, amely behúzza az összes fő számlát. Ezért bárki létrehozhat jelentést anélkül, hogy módosításokat végezne. A jelentés megtekintésekor, láshat egy sorhoz, az egyes számlák részleteinek megtekintéséhez. Módosíthatja a sordefiníciót, hogy további részleteket tartalmazzon. A főkönyvi kivonat módosítása – Alapértelmezett sordefiníció, ezért tartalmazza az összes számla sorait, kövesse az alábbi lépéseket.
 
 1.  Kattintson a **Szerkesztés** lehetőségre, majd kattintson a **Sorok beszúrása dimenziókból** elemre. A **Sorok beszúrása dimenziókból** parancs segítségével kiválaszthatja, milyen dimenziókat szeretne a sordefiníciójában. Ehhez a sordefinícióhoz a **Fő számlát** fogja használni.
 2.  Győződjön meg róla, hogy a **Fő számla** tartalmaz minden és-jelet (&), majd kattintson az **OK** gombra.
@@ -100,10 +103,12 @@ Minden egyes főkönyvi kivonati jelentés külön oszlopdefiníciót használ. 
 <a name="see-also"></a>Lásd még
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Pénzügyi jelentéskészítés](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Pénzügyi jelentések megtekintése](view-financial-reports.md)
 
-[Dynamics pénzügyi jelentési Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Pénzügyi jelentések blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

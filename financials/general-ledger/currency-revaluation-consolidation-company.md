@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Devizaátértékelés konszolidált vállalatban
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Ha egy könyvelési pénznemből egy másikba konszolidál adatokat és változik az árfolyam, devizaátértékelést kell futtatnia, hogy a számlaegyenlegek átértékelése megfelelően történjen. Az adatok eredeti konszolidációja során használja a **Devizaátváltás** lapot, ahol kiválaszthatja a kezdeti árfolyamot a konszolidációs folyamat kezdeti átváltásához. Ha új árfolyamot ad meg (például következő hónapban), át kell értékelnie a számlaegyenlegeket. A nem realizált nyereség vagy nem realizált veszteség ezután az új árfolyamnak és dátumnak megfelelően frissül. Az alábbi példa a könyvelés bejegyzéseket mutatja be, amelyek egy ilyen folyamat során létrejönnek.
@@ -33,7 +36,7 @@ Ha egy könyvelési pénznemből egy másikba konszolidál adatokat és változi
 ## <a name="company-setup"></a>Vállalat beállítása
 -   **Forrás/működő vállalat (USMF)** – USA-dollárban (USD) van megadva a könyvelési és a jelentési pénznem.
 -   **Konszolidált vállalat (CON)** – Euróban (EUR) van megadva a könyvelési és a jelentési pénznem.
-    -   ** Realizált nyereség ** – főkönyvi számla 801500
+    -   **Realizált nyereség** – 801500 főkönyvi számla
     -   **Realizált veszteség **– 801600 főkönyvi számla
     -   **Nem realizált nyereség **– 801600 főkönyvi számla
     -   **Nem realizált veszteség **– 801400 főkönyvi számla
@@ -82,6 +85,8 @@ A jelentési pénznem összegeihez további tranzakciók történnek.
 | 130100         | HUF      | -500,00 | Eredeti összeg -500 × 1                          |
 | 801400         | HUF      | 250     | 500 – 333,33 = 166,67 166,67 + 83,33 = 250           |
 | 801600         | HUF      | -250    | -500 – (-333,33) = -166,67 -166,67 + (-83,33) = -250 |
+
+
 
 
 

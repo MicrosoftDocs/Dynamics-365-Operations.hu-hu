@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Kiegyenlítés áttekintése (központosított kifizetések)
 
+[!include[banner](../includes/banner.md)]
+
+
 Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Így nem szükséges ugyanazt a tranzakciót több jogi személyhez bevinni, valamint a fizetési javaslat folyamatának, a kiegyenlítés folyamatának, a nyitott tranzakciók szerkesztésének és a lezárt tranzakciók szerkesztésének leegyszerűsítésével időt takarít meg a központosított kifizetéseknél. 
 
 Amikor egy vevői vagy szállítói kifizetést az egyik jogi személynél visznek be, és egy másik jogi személynél bevitt számlával egyenlítenek ki, mindegyik jogi személyhez automatikusan létrejön a megfelelő kiegyenlítés, valamint a mindkét irányú esedékességet kifejező tranzakciók. A tranzakcióban érintett mindegyik számla-kifizetés kombinációhoz kiegyenlítési rekord jön létre. Minden egyes kiegyenlítési rekord új bizonylatszámot kap, amelynek alapja a kifizetési bizonylat számlaszáma, amely a **Kinnlevőségek paraméterei** lapon található a vevők esetén, illetve a **Kötelezettségek paraméterei** lapon a szállítók esetén. 
@@ -108,6 +111,8 @@ Szállítói kifizetések esetében a kifizető jogi személy a jogi személytő
 
 ## <a name="withholding-tax"></a>Adóelőleg
 A számlához társított szállítókód alapján lehet meghatározni, hogy kell-e adóelőleget számítani. Ha az adóelőleg érvényes, a számlához társított jogi személlyel együtt számítja ki a rendszer. A jogi személyek különféle pénznemeket használnak, a rendszer a használt számlához társított jogi személy árfolyamát használja.
+
+
 
 
 

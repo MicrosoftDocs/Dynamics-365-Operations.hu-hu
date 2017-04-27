@@ -1,6 +1,6 @@
 ---
-title: "A termelés alvállalkozói munka kezelése"
-description: "Ez a témakör bemutatja, hogyan alvállalkozói műveletek kezelik a Microsoft Dynamics 365 műveletekhez. Más szóval bemutatja, hogyan kezeli a szállító által lefoglalt erőforrások gyártási műveleteket."
+title: "Gyártás területén végzett alvállalkozói munka kezelése"
+description: "Ez a témakör bemutatja, hogyan kezeli a Microsoft Dynamics 365 for Operations az alvállalkozói műveleteket. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,77 +26,82 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="manage-subcontracting-work-in-production"></a>A termelés alvállalkozói munka kezelése
+# <a name="manage-subcontracting-work-in-production"></a>Gyártás területén végzett alvállalkozói munka kezelése
 
-Ez a témakör bemutatja, hogyan alvállalkozói műveletek kezelik a Microsoft Dynamics 365 műveletekhez. Más szóval bemutatja, hogyan kezeli a szállító által lefoglalt erőforrások gyártási műveleteket.
+[!include[banner](../includes/banner.md)]
 
-A [a termelési folyamatok](production-process-overview.md), munkát által birtokolt vagy a szállítók által kezelt erőforrásokat lehet elvégezni. Általában használt szállító típusú erőforrások szintű időszakos túlzott igényt, amely túllépi a rendelkezésre álló kapacitás a vállalat saját forrásaira. A szállító is lehet konkrét ajánlat [erőforrás-képességek](resource-capabilities.md)vagy erőforrások alacsonyabb áron.  
 
-Attól függően, hogy a szállító típusú erőforrások, amelyek felhasználhatók a termelési folyamat a [útvonal](routes-operations.md) gyakran további logisztikai követelményekkel rendelkezik, mert az anyag és a félkész termékeket először kell szállítani a szállító webhelyére. Majd az alvállalkozásba adott művelet eredményének vagy arra a helyre, a következő művelethez vagy késztermékek raktárba kell szállítani.  
+Ez a témakör bemutatja, hogyan kezeli a Microsoft Dynamics 365 for Operations az alvállalkozói műveleteket. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
 
-Alvállalkozói műveletek vagy tevékenységek használata esetén azok a műveletek a műveletek, amelyek szükségesek a gyártási, költségszámítás, előrejelzés, tervezés és ütemezés, logisztika az alapanyagok, félkész termékek és késztermékek kezelésére meghatározásából minden szakaszában hatással. Végül ezeket az erőforrásokat saját folyamatok szükséges számlázási és költség-ellenőrzés.  
+A [termelési folyamatokban](production-process-overview.md) munkát azon erőforrások végezhetnek, amelyek tulajdonosa vagy kezelője egy szállító. Általában az olyan időszakos kiemelkedő kereslet kielégítésére használnak szállító típusú erőforrásokat, amely meghaladja a vállalat saját forrásainak rendelkezésre álló kapacitásait. A szállító emellett konkrét [erőforrásképességeket](resource-capabilities.md), illetve alacsonyabb árú erőforrásokat is kínálhat.  
 
-A belső erőforrások fix költségszorzót általában lefoglalt időtartamra. Ezzel szemben alvállalkozói erőforrások költsége a kapcsolódó szolgáltatás a beszerzési ár alapján történik. A szolgáltatás egy másik termék meghatározása, és a meghajtó a közbeszerzési és beszerzési folyamatok adott alvállalkozói művelet.  
+A termelési folyamatban felhasznált szállítói erőforrásoktól függően az [útvonal](routes-operations.md) gyakran további logisztikai követelményeet támaszt, mivel az anyagokat és félkész termékeket először el kell szállítani a szállító telephelyére. Az alvállalkozásba adott művelet eredményét pedig aztán el kell szállítani vagy a következő művelet helyére, vagy a késztermékek raktárába.  
 
-Jelenleg nincs félkész termék Microsoft Dynamics 365 műveletekhez explicit fogalmát. Egy gyártási rendelés, amely egynél több műveletet igényel annak érdekében, hogy a nyersanyagok átalakítása kész jó a késztermék programba csak az utolsó műveletet a készlet feladása történik. A félkész termékek, amelyek a korábbi műveletek számolják el a folyamatban lévő munka (Befejezetlen), de nem könyvelt és a készletben nyomon követett. Feloszthatja az útvonalakat és anyagjegyzékeket (AJ) több kisebb egységekre, bár ez a megközelítés növeli a termékek, anyagjegyzékek és útvonalak kell kezelni, a számot.  
+Alvállalkozói műveletek vagy tevékenységek használata esetén ezek a műveletek minden szakaszára hatással vannak a gyártás, költségszámítás, előrejelzés, tervezés és ütemezés során használt műveletek meghatározásától az anyagok, félkész termékek és késztermékek logisztikájának kezeléséig. Végül ezek az erőforrások saját folyamatokat igényelnek a könyvelés és költségellenőrzés terén.  
 
-Az alvállalkozói munka gyártási műveletek modellezési két módja van. Ezek a módszerek eltérő módon, hogy az alvállalkozói folyamat lehet modellezni, félkész termékek jelennek meg a folyamat, és úgy, ahogyan a Költségellenőrzés kezeli.
+Belső erőforrásoknál adott időtartamhoz általában fix költségszorzó tartozik. Ezzel szemben alvállalkozói erőforrásoknál a költség a kapcsolódó szolgáltatás beszerzési árán alapul. A szolgáltatás meghatározás szerint egy másik terméket jelent, melynek célja a beszerzési és vásárlási folyamatok előmozdítása egy adott alvállalkozói művelet kapcsán.  
 
--   A gyártási rendelések vagy kötegelt rendelések útvonalműveletek alvállalkozásba
-    -   A szolgáltatás terméknek kell lennie a raktározott termék, és az AJ részét kell lennie.
-    -   Ezt a módszert először be, először ki (FIFO) vagy elszámolóár támogatja.
-    -   Félkész termékek a Folyamatban szerviz termék jelölik.
-    -   Költségkontroll lefoglalja az alvállalkozói munka jelentős költségekhez kapcsolódó költségek.
--   A lean termelési folyamat termelési folyamat tevékenységeinek alvállalkozásba
-    -   A szolgáltatás szolgáltatás a raktározott termék, és az AJ részét nem.
-    -   Ezt a módszert használja a szolgáltatási szerződések beszerzési szerződések.
-    -   Ez a módszer használ visszavezetéses költségelszámolás.
-    -   Ez a módszer lehetővé teszi az összesített és aszinkron beszerzési. (Anyagáram független a beszerzési folyamatban.)
-    -   Költségkontroll alvállalkozói munka saját költség részletezése blokk foglal le.
+Jelenleg a Microsoft Dynamics 365 for Operationsben nincs kifejezett félkésztermék-fogalom. Olyan termelési rendelésnél, amely egynél több műveletet igényel annak érdekében, hogy a nyersanyagokat késztermékekké alakítsa át, a késztermék csak az utolsó műveletet során kerül vissza a készletbe. A korábbi műveletek során előállított félkész termékek elszámolása befejezetlen termelés formájában történik, ezeket viszont nem könyveljük és nem követjük a készletben. Bár az útvonalak és anyagjegyzékek (AJ) feloszthatók több kisebb egységre, ez a megközelítés növeli a kezelendő termékek, anyagjegyzékek és útvonalak számát.  
 
-## <a name="subcontracting-of-route-operations"></a>Útvonalműveletek alvállalkozásba
-Útvonalműveletek gyártására vagy kötegelt rendelések alvállalkozásba használatához a szolgáltatás termék, amely a szolgáltatás beszerzésére szolgál meg kell határozni a termék a **szolgáltatás** típusa. Ezenkívül rendelkeznie kell olyan cikkmodellcsoporthoz, amelynek a **raktározott termék** beállítás alapján **házirend készlet** értéke **Igen**. Ez a beállítás határozza meg, hogy e termék számolnak el, a készlet termék átvételekor (**raktározott termék** = **Igen**), vagy hogy a termék nyereség és veszteség számlán kiadásként könyvelve (**raktározott termék** = **nem**). Ez a viselkedés ellentmondásos tűnhet, bár van azon a tényen alapszik, hogy csak azok a termékek, amelyek ezt a házirendet hoz létre készlettranzakciók használható Költségkontroll tervezett költség kiszámítása és a tényleges költség határozza meg, amikor a gyártási rendelés be van fejezve.  
+A gyártási műveletek során igénybe vett alvállalkozói munka modellezésének két módja van. Ezek a módszerek az alvállalkozásba adási folyamatot, a félkész termékek megjelenítését a folyamatban, valamint a költségellenőrzést eltérő módon modellezik.
 
-Költség és a tervezési számítás során figyelembe kell venni, hogy a szolgáltatás az AJ hozzá kell adni. Az AJ-sornak kell lennie, a **szállító** típusa, és az útvonalművelet a szolgáltatás lefoglalt kell felosztani. Az útvonalművelet kell a költségszámítási és mutasson az erőforrás az erőforrás követelmény a **szállító**, amely a művelet és a kapcsolódó szolgáltatás csatlakozik a megfelelő szállítói számla típusa.  
+-   Útvonalműveletek alvállalkozásba adása termelési rendelések, illetve kötegrendelések esetén
+    -   A szolgáltatási terméknek raktározott terméknek kell lennie, és az AJ részét kell képeznie.
+    -   Ezt a módszer az először be, először ki (FIFO) vagy elszámolóár elvet támogatja.
+    -   A félkész termékeket a folyamatban a szolgáltatási termék képviseli.
+    -   A költségkontroll az alvállalkozói munkához társított költségeket az anyagköltségekhez kapcsolja.
+-   Termelési folyamat tevékenységeinek alvállalkozásba adásba lean termelési folyamatban
+    -   A szolgáltatás nem készletezett szolgáltatási termék, és nem része az AJ-nek.
+    -   Ez a módszer beszerzési szerződéseket használ szolgáltatási szerződéseket.
+    -   Ez a módszer visszavezetéses költségelszámolást használ.
+    -   Ez a módszer lehetővé teszi az összesített és aszinkron beszerzést. (Az anyagáram független a beszerzési folyamattól.)
+    -   A költségkontroll az alvállalkozói munkát saját költségrészletezési blokkjába sorolja be.
 
-Ez a konfiguráció használata esetén a beszerzési rendelést a kapcsolódó vevőszolgálati termékhez, a becsült termelési rendelés alapján jön létre. A beszerzési rendelés, a szolgáltatás az alvállalkozói műveletek horgony szolgál. Az alvállalkozói munka keresztül lehet kezelni a **munka alvállalkozásba** gyártásellenőrzés lista oldalra. Az alvállalkozói munka nyersanyag, és végül, félkész termék szállítás a szállító a művelet előkészítése szolgál. Azt is fogadására szolgál az alvállalkozásba adott művelet termék a cikk érkezése, ahol a szolgáltatás termék megérkezéséről a félkész termék azonosítására szolgál. A beszerzésirendelés-sor érkezik, a termelési frissül művelet befejezettként.  
+## <a name="subcontracting-of-route-operations"></a>Útvonalműveletek alvállalkozásba adása
+Útvonalműveletek alvállalkozásba adása gyártásnál vagy kötegrendeléseknél úgy történhet, hogy a szolgáltatás beszerzésére szolgáló szolgáltatási terméket, **Szolgáltatási** típusú termékként kell meghatározni. Ezenkívül rendelkeznie kell olyan cikkmodellcsoporttal, amelynél a **Raktározott termék** beállítás a **Készletházirendben** **Igen** értékre van állítva. Ez a beállítás határozza meg, hogy egy termék elszámolása készletként történik-e a termék átvételekor (**Raktározott termék** = **Igen**), vagy hogy a termék kiadásként van-e könyvelve egy eredményszámlán (**Raktározott termék** = **nem**). Bár ez a viselkedés ellentmondásosnak tűnhet, azon alapszik, hogy csak az ehhez a házirendhez tartozó termékeknél jön létre olyan készlettranzakció, amely felhasználható a költségkontrollban a tervezett költség kiszámítására és a tényleges költség meghatározására akkor, amikor a gyártási rendelés lezárul.  
 
-A gyártási rendelés számos művelet lehet, és minden egyes művelet különböző szállító nem foglalható. Ezért egy végpontok közötti gyártási rendelés több beszerzési rendelés válthat ki.
+Tervezésbe és költségszámításba a szolgáltatás akkor kerülhet be, ha hozzá van adva az AJ-hez. Az AJ-sornak **Szállító** típusúnak kell lennie, és ahhoz az útvonalművelhez kell tartoznia, amelyhez a szolgáltatás tartozik. Az útvonalműveletnek rendelkeznie kell költségszámítási erőforrással és olyan erőforráskövetelménnyel, amely egy olyan, **Szállító** típusú erőforrásra mutat, amely összeköti a műveletet és a kapcsolódó szolgáltatást a megfelelő szállítói számlával.  
 
-## <a name="subcontracting-of-production-flow-activities"></a>A termelési folyamat tevékenységeinek alvállalkozói
-A [lean gyártási](lean-manufacturing-overview.md)megoldás modellek az alvállalkozói munka szolgáltatás, amely a tevékenység kapcsolódik a [termelési folyamat](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) (feladat útmutató témakör). Ezért az ilyen alvállalkozói is nevezik [alvállalkozói tevékenység alapú.](activity-based-subcontracting.md) Külön költség csoport típusa **Közvetlen kiszervezés**, vezetett, és az alvállalkozói szolgáltatások nem tartoznak a késztermékek az anyagjegyzék. Lean gyártási használatakor minden olyan tevékenység, amely összefüggésben lehet egy vagy több termelési folyamat tevékenységeinek kanban határozza meg. Eddig adott magyarázat hangzik csak a gyártási rendelések magyarázatot. Mivel a termelési rendelések mindig a késztermék kell végződnie, félkész termék ellátásának kanban hozhat létre. Nem kell bevezetni egy új termék és az AJ-szint.  
+E konfiguráció használata esetén beszerzési rendelés jön létre a kapcsolódó szolgáltatási termékhez a termelési rendelés becslése alapján. A szolgáltatás beszerzési rendelése szolgál az alvállalkozói műveletek horgonyaként. Az alvállalkozói munka a Gyártásvezérlés **Alvállalkozói munka** listaoldaláról kezelhető. Az alvállalkozói munka használatos a nyersanyag és végül a félkész termék a szállítóhoz történő elszállítására a művelet előkészítése során. Szintén használjuk az alvállalkozásba adott művelet eredményéül kapott termék fogadására a cikkérkeztetés során, ahol a szolgáltatási termék szolgál a félkész termék megérkezésének azonosítására. Amikor a beszerzésirendelés-sor beérkezik, a termelési művelet befejezett állapotúra frissül.  
 
-Kanbanszabályok lehet nagyon dinamikus, mert a termelési folyamat különböző változatai az ugyanarra a termékre vonatkozó ellátási modellezhető. Lean használatakor alvállalkozói, az anyagáram és pénzügyi áramlását szigorúan elválasztva. Minden anyagáram kanban tevékenységet jelöl. A beszerzési rendeléseket a szolgáltatási termékekre és az ilyen szolgáltatások a Beérkezés könyvelés automatizálható, a termelési folyamatban kanban-feladatok állapota alapján. Kanbanfeladatok indítható és még mielőtt a beszerzési rendelések létrehozása befejeződött. Az alvállalkozói dokumentumok (beszerzési rendelés és beszerzési elismervény a szolgáltatás) időszak és szolgáltatás is kell összesíteni. Ezért a beszerzési bizonylatok és sorok számát is eltartható kicsi, még akkor is, ha szállítók rendelkeznek a single-darab folyamat alvállalkozói szolgáltatások erősen ismétlődő műveleteket.
+Egy termelési rendeléshez számos művelet tartozhat, és minden egyes művelet különböző szállítóhoz lehet hozzárendelhető. Ezért egy végpontok közötti termelési rendelés számos beszerzési rendelést is kiválthat.
 
-### <a name="modeling-subcontracting-in-a-production-flow"></a>A termelési folyamat az alvállalkozási modellezési
+## <a name="subcontracting-of-production-flow-activities"></a>Termelési folyamat tevékenységeinek alvállalkozásba adása
+A [lean manufacturing](lean-manufacturing-overview.md) megoldási modellekben az alvállalkozói munka egy [termelési folyamat](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) (Feladat-útmutató témaköre) egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Ezért az ilyen típusú alvállalkozásba adást [tevékenységi alapú alvállalkozásba adásnak is nevezzük](activity-based-subcontracting.md) Egy speciális költségcsoporttípus, a **Közvetlen kiszervezés** került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele a késztermékek anyagjegyzékébe (AJ). Lean manufacturing használatakor minden olyan tevékenység meghatározása kanbannal történik, amely összefüggésben lehet egy vagy több termelési folyamat tevékenységeivel. Eddig a magyarázat ugyanúgy hangzik, mint a termelési rendelések magyarázata. A termelési rendeléseknek viszont mindig késztermékkel kell végződniük, félkész termékek biztosításához kanban hozható létre. Nem kell bevezetni új terméket és AJ-szintet.  
 
-Az egy [lean típusú termelési folyamat](lean-manufacturing-modeling-lean-organization.md), a folyamat tevékenység lehet meghatározni, ha a hozzárendelt munka cella (erőforráscsoport) egyetlen szállítói erőforrással rendelkező alvállalkozásba. Alvállalkozói munka cellára, ha a kapcsolódó feldolgozási tevékenységek egy aktív beszerzési szerződés sorában, amely tartalmazza a szervizcikk és a szolgáltatás árát kell kapcsolódniuk. A szolgáltatási szerződéshez a tevékenység is a kanban feladat termék mennyiségét, és az így kapott mennyiséget szerviz számítási aránya határozza meg. Kiválaszthatja, hogy a szolgáltatás mennyiségének feladatok, a feladatok jelentett jó termék mennyisége vagy (a teljes mennyiséget tartalmazza a selejtezett termékek) teljes termékmennyiség alapján kiszámítja.  
+Mivel a kanbanszabályok nagyon dinamikusak lehetnek, a termelési folyamatban ugyanarra a termékre vonatkozóan különböző ellátási változatok modellezhetők. Lean alvállalkozásba adás használatakor az anyagáram és pénzügyi áramlását szigorúan elválnak egymástól. Minden anyagáramot kanbantevékenységek jelölnek. A szolgáltatási termékekre vonatkozó beszerzési rendelések és ezen szolgáltatások beérkezésének könyvelése automatizálható a termelési folyamatban található kanbanfeladatok állapota alapján. Kanbanfeladatok elindíthatók befejezhetők akár a beszerzési rendelések létrehozása előtt is. Az alvállalkozói dokumentumok (a szolgáltatás beszerzési rendelése és beszerzési elismervénye) időszak és szolgáltatás szerint összesíthetők. Ezért a beszerzési bizonylatok és sorok száma nagyon alacsonyan tartható még az olyan, nagy számban ismétlődő műveletek esetén is, amelyeknél a szállítók egységes folyamat formájában biztosítanak alvállalkozói szolgáltatásokat.
 
-Átviteli tevékenységek is definiálható alvállalkozásba. Ez a meghatározás esetén implicit módon a felelős fél számára a szállítás lehetőséget választja az átviteli tevékenységhez. Ha **szállítmányozó** vagy **címzett**, ha a megfelelő forrás vagy cél raktár raktár szállító által kezelt, a tevékenység tekinthető alvállalkozásba. Ha **fuvarozó**, a tevékenység mindig alvállalkozói. Alvállalkozói folyamat tevékenységek, mint a termelési folyamat aktiválása előtt egy átviteli alvállalkozói tevékenységet kell kapcsolni egy szolgáltatási szerződést.
+### <a name="modeling-subcontracting-in-a-production-flow"></a>Alvállalkozásba adás modellezése termelési folyamatban
+
+[Lean típusú termelési folyamatban](lean-manufacturing-modeling-lean-organization.md) a folyamattevékenység akkor határozható meg alvállalkozóiként, ha olyan munkacellához (erőforráscsoporthoz) van hozzárendelve, amelyhez egyetlen szállítói erőforrás tartozik. Munkacella alvállalkozásba adása során a kapcsolódó folyamattevékenységeknek olyan aktív beszerzési szerződési sorhoz kell kapcsolódniuk, amely tartalmazza a szolgáltatási tételt és a szolgáltatás árát. A tevékenység szolgáltatási szerződése emellett meghatározza a termék mennyisége és a kanbanfeladat közti számítási arányt és az eredményül kapott szolgáltatási mennyiséget. Kiválaszthatja, hogy a szolgáltatás mennyiségének kiszámítása a feladatok száma, a feladatokban jelentett jó termékek mennyisége vagy a teljes termékmennyiség (ez a teljes mennyiség a selejtezett termékeket is tartalmazza) alapján történjen-e.  
+
+Az átviteli tevékenységek szintén meghatározhatók alvállalkozásiként. Ez a meghatározás implicit módon történik, amikor az átviteli tevékenységben kiválasztja szállításért felelős felet. Amikor a **Szállítmányozó** vagy **Címzett** lehetőséget választja, ha a kapcsolódó forrás- vagy célraktárat szállító kezeli, a tevékenység alvállalkozásba adottnak minősül. Amikor a **Fuvarozó** elemet választja, a tevékenység mindig alvállalkozásba adottnak minősül. Az alvállalkozói folyamattevékenységekhez hasonlóan az alvállalkozásba adott átviteli tevékenységeknek is szolgáltatási szerződéshez kell kapcsolódniuk a termelési folyamat aktiválása előtt.
 
 ### <a name="backflush-costing"></a>Visszavezetéses költségelszámolás
 
-A Költségkönyvelés alvállalkozói munka teljesen integrálva van a lean gyártási oldat (visszavezetéses költségelszámolás) költségszámítás. A szerviz rendelés beszerzési elismervény könyvelésekor, illetve számlázása esetén a költséget a szerviz a termelési folyamathoz rendelt. Alvállalkozói szolgáltatások varianciája visszavezetéses költségelszámolás, a beérkezett és számlázott szerviz tényleges mennyiségeket a kapott termékek általános költsége alvállalkozói blokk kompenzálásával számítják.
+Az alvállalkozói munkák költségkönyvelése teljesen integrálva van a lean manufacturing költségszámítási megoldásába (visszavezetéses költségelszámolás). Amikor a termék beszerzési rendelésének bevételezése feladásra kerül, illetve számlázáskor, a szolgáltatás költségét a rendszer a termelési folyamathoz rendeli. Visszavezetéses költségelszámolásnál az alvállalkozói szolgáltatások eltérésének kiszámítása a kapott termékek általános költsége alvállalkozói blokkjának a ténylegesen megkapott és kiszámlázott szolgáltatási mennyiségekkel szembeni elszámolásával történik.
 
-## <a name="material-supply-for-subcontracted-operations"></a>Anyagellátási alvállalkozói műveletekhez
-Félkész termékek és egyéb kapcsolódó anyagok át kell arra a helyre, ahol a munkát ténylegesen elvégzik. Alvállalkozói műveletek és tevékenységek használatakor az átvitel gyakran további szállítási szállító működtetett helyhez kapcsolódik. Alvállalkozói működéséhez az AJ anyag kiosztásával deklarálhatja, hogy az anyag az erőforráscsoport számára a hozzárendelt erőforrás a bemeneti helyen kell előkészíteni. Alaptervezés vagy majd lean feltöltési kiépítése az anyag erre a helyre.  
+## <a name="material-supply-for-subcontracted-operations"></a>Anyagellátás alvállalkozói műveleteknél
+A félkész termékeket és egyéb kapcsolódó anyagokat át kell szállítani arra a helyre, ahol a munkát ténylegesen elvégzik. Alvállalkozói műveletek és tevékenységek használatakor ez az átvitel gyakran a szállító által működtetett telephelyre történő egyéb szállításhoz kapcsolódik. Ha az anyagot az AJ-ben az alvállalkozói művelethez kapcsolja, azzal kijelenti, hogy az anyagot elő kell készíteni a hozzárendelt erőforrás erőforráscsoportjának bemeneti helyén. Az alaptervezés vagy lean feltöltés ekkor az anyagot az érintett helyre biztosítja.  
 
-A készlet, amely a szállító telephelyén található minta, a szállító által kezelt raktári meghatározásához az iparág legjobb. A szállítói számlát hoz létre egy új raktári és könnyen adhatja meg a szállító által kezelt raktári. Ilyen anyagok dokumentálása át kell vinni a szállító egy művelet végrehajtása előtt, osztják fel a szállító által kezelt raktári az erőforráscsoportot, amely rendelkezik az erőforrás bemeneti raktárával.  
+A szállító telephelyén található készlet modellezésére az iparág legjobb gyakorlata egy a szállító által kezelt raktár meghatározása. Szállító által kezelt raktárat könnyen megadhat úgy, ha létrehoz egy új raktárat, és a szállítói számlához rendeli. Annak dokumentálására, hogy az anyagokat el kell juttatni a szállítóhoz a műveletek végrehajtása előtt, a szállító által kezelt raktárat az erőforrással rendelkező erőforráscsoport bemeneti raktárához kell hozzárendelni.  
 
-Feltöltéséhez szükséges anyag a raktárban, több stratégiák is használhatja:
+A raktárban lévő anyagok feltöltéséhez több stratégia is használható:
 
 -   Átmozgatási rendelések
 -   Átmozgatási naplók
--   Kanban visszavonása
--   A szállító helyének közvetlen beszerzés
+-   Visszavonási kanbanok
+-   Közvetlen beszerzés a szállító helyére
 
-Félkész termékeket e szabály alól kivételt képeznek. Félkész termékek át, ezek a beállítások csak éppen:
+A félkész termékek e szabály alól kivételt képeznek. Félkész termékek átviteléhez a csak következő lehetőségek érhetők el:
 
--   Termelési és kötegrendelések félkész termékeket csak vihetők át logikailag a kitárolásilista-napló a segítségével a **munka alvállalkozásba** lista lap. Ennek a lapnak a használt félkész átadási szállítólevél dokumentum és a nyersanyag a szállítónak hoz létre.
--   A termelési folyamatok alvállalkozói műveletekhez félkész termékek átadásának dokumentálnia a szállító helyen visszavonása vagy termelési kanban kézhezvételét. Modellezésére kifejezett átviteli tevékenységet, egy további átviteli tevékenységgel termelési kanban leállítható.
+-   Termelési és kötegrendeléseknél a félkész termékek csak logikailag vihetők át az **Alvállalkozói munka** listalapon található kitárolásilista-napló segítségével. Ez a napló szállítólevél dokumentumot hoz létre, amely használható a félkész termék és nyersanyag a szállítóhoz való átvitelére.
+-   Termelési folyamatok alvállalkozói műveleteinél a félkész termékek átvitelének dokumentálása visszavonási vagy termelési kanbanok kézhezvételével történik a szállító helyén. Kifejezett átviteli tevékenység modellezésére termelési kanban egy további átviteli tevékenységgel lezárható.
 
-**Megjegyzés:** A termelési útvonalon egyetlen gyártási rendeléshez nem idegen több hely. Ez a szabály vonatkozik az alvállalkozói munka is. Ezért a raktárak, amely képviseli a szállító által kezelt anyag helyeket meg kell határozni a belső erőforrások az útvonal használt ugyanazon a helyen. Termelési folyamatok áthaladhat a helyek, bár ezek nem egyik helyről a másikra, félkész termékek szállítási mert művelet költség környezet változását jelzi.  
+**Megjegyzés:** egyetlen termelési rendelés termelési útvonala nem érinthet több telehelyet. Ez a szabály az alvállalkozói munkákra is vonatkozik. Ezért a szállító által kezelt anyaghelyeket képviselő raktárakat ugyanazon telephelyen kell meghatározni, mint az útvonalon használt belső erőforrások helye. Bár a termelési folyamatok több telephelyen áthaladhatnak, félkész termékeket ezek nem szállíthatnak egyik telephelyről a másikra, mert ez a művelet a költségkörnyezet változását feltételezné.  
 
-Általában a kimeneti raktár és alvállalkozói erőforráscsoport helyét közvetlenül a raktári és helyét a következő lépés a művelet az útvonal vagy a termelési folyamat számára lefoglalt. Ez a beállítás segítségével csökkentheti a projekt jelentés, amely akkor fordul elő, vagy a szám további átviteli műveletek kell modellezni.
+Általában a kimeneti raktár és alvállalkozói erőforráscsoport helye közvetlenül az útvonal vagy a termelési folyamat következő lépésének raktárához és helyéhez van hozzárendelve. E beállítás segítségével csökkentheti a jelentendő feladatok mennyiségét, illetve a modellezendő további átviteli műveletek számát.
+
+
 
 

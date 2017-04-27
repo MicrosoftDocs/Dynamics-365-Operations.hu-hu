@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>ÁFA-számítási módok kiválasztása az Kiindulás mezőben
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk ismerteti az áfa kódok lapon található Eredet mező opcióit és azt, hogy hogyan kerül kiszámításra az áfa a kiválasztott áfa kód alapján.
 
 Az Áfakódok oldalon létrehozott áfakódokhoz az Kiindulás mezőben ki kell választani az adóalap összegére alkalmazott számítási módszert.
@@ -124,5 +127,7 @@ Amennyiben a dokumentum / napló beállítása: Az összegek tartalmazzák az á
 [Az áfaérték megállapítása a Számítás alapja és a Számítási módszer mezők alapján](marginal-base-field.md)
 
 [Teljes összeg és Intervallumszámítás opciók áfakódokhoz](whole-amount-interval-options-sales-tax-codes.md)
+
+
 
 

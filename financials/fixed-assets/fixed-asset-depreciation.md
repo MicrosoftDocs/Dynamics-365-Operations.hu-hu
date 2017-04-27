@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-depreciation"></a>Tárgyi eszközök értékcsökkenése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a tárgyi eszközök értékcsökkenéséről nyújt áttekintést.
 
 Állítson be értékcsökkenést, ami egy ismétlődő tranzakció, és amely a mérlegszámlán csökkenti a tárgyi eszköz értékét, és a csökkenést kiadásként egy eredményszámlára terheli. Ezért általában a fő számla szolgál a mérlegszámla időszakos értékcsökkenése jóváírására. Az Ellenszámla pedig a a számlatükör eredményszámla részébe egy olyan számla.
@@ -51,6 +54,8 @@ Mindegyik könyvhöz tartozik egy, a tárgyi eszközök értékcsökkenésénél
 
 A Főkönyvben a **Pénzügyi naptárak** lapon megosztott naptárakat hozhat létre.
 
-További tudnivalókért lásd: [értékcsökkenési módszerek és szabályok](depreciation-methods-conventions.md).
+További tudnivalókért lásd: [Értékcsökkenési módszerek és szabályok](depreciation-methods-conventions.md).
+
+
 
 

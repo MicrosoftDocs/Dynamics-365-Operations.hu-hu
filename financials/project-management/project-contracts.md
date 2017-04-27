@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-contracts"></a>Projektszerződések
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Operations rendszerben.
 
 A projektszerződés teljesítésére létrehozott projekt típusa határozza meg a megrendelő felé történő számlakiállítás módszerét. A projektszerződés és a hozzá kapcsolódó projekt módosítható, de a projekt típusa nem. 
@@ -80,7 +83,7 @@ A következő táblázat esteket ad meg a finanszírozási felosztás kezelésé
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Scenario</strong></td>
+<td><strong>Eset</strong></td>
 <td><strong>Finanszírozási forrás </strong></td>
 <td><strong>Felosztási százalék </strong></td>
 <td><strong>Finanszírozás-felosztási prioritás </strong></td>
@@ -192,7 +195,7 @@ Az alábbi táblázat ezt az esetet részletesebben megvizsgálja.
 <tbody>
 <tr class="odd">
 <td><strong>Fókusz </strong></td>
-<td><strong>Details</strong></td>
+<td><strong>Részletek</strong></td>
 </tr>
 <tr class="even">
 <td>Finanszírozási szabályok</td>
@@ -220,17 +223,17 @@ Az alábbi táblázat ezt az esetet részletesebben megvizsgálja.
 </tr>
 <tr class="odd">
 <td>Tranzakció 2</td>
-<td><strong>A tranzakció összege:</strong> 5,000.00<strong>finanszírozás:</strong> a tranzakció minden három szabályok szerint fizetik. <strong>1-szabály</strong><ph id="t1">
-</ph><ul>
+<td><strong>A tranzakció összege:</strong> 5000,00<strong>Finanszírozás:</strong> A tranzakció kifizetése mindhárom szabály alapján történik.<strong>1-es szabály</strong>
+<ul>
 <li>2-es finanszírozási forrás: 450.00</li>
 <li>3-as finanszírozási forrás: 450.00</li>
-</ul><bpt id="t2">
-< strong ></bpt> Szabály 2</strong><ph id="t3">
-</ph><ul>
+</ul>
+<strong>2-es szabály</strong>
+<ul>
 <li>3-as finanszírozási forrás: 250.00 (= 750.00 – 50.00 – 450.00)</li>
-</ul><bpt id="t4">
-< strong ></bpt> Szabály 3</strong><ph id="t5">
-</ph><ul>
+</ul>
+<strong>3-as szabály</strong>
+<ul>
 <li>1-es finanszírozási forrás: 3,850.00 (= 5,000.00 – 450.00 – 450.00 – 250.00)</li>
 </ul></td>
 </tr>
@@ -339,5 +342,7 @@ Amikor létrehozza a projektszerződést, megegyezik, hogy a vevőt minden egyes
 -   Vevői számla létrehozása a projekt során minden naptári hónap végén.
 
 Az első hónapban 800 órák összesen rögzítésre kerülnek a tanácsadók a projekt szerint. A projekthez számlázott irodai kellékek költsége 2 000. Tehát a hónap végén 122 000-re hoz létre számlát, amely úgy kerül kiszámításra, hogy 800 óra, óránkénti 150-el, továbbá 2000 az irodai kellékért.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "A kelet-európai elszámolási tranzakciók megtekintése"
-description: "Ez a témakör a tranzakciókkal kapcsolatos információkat a Kiegyenlítés lapon a vevők és szállítók."
+description: "Ez a témakör a vevők és szállítók Elszámolási tranzakciók lapjával kapcsolatosan tartalmaz információkat."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,22 +27,27 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>A kelet-európai elszámolási tranzakciók megtekintése
 
-Ez a témakör a tranzakciókkal kapcsolatos információkat a Kiegyenlítés lapon a vevők és szállítók.
+[!include[banner](../includes/banner.md)]
 
-Használja a **elszámolási tranzakciók** lapon megtekintheti a vevő vagy szállító összetett kiegyenlítési tranzakciók adatait. Ez a szolgáltatás csak a jogi személyek, Litvánia, Lettország, Észtország, Csehország, Magyarország és Lengyelország az elsődleges címe érhető el. Megtalálhatja a **elszámolási tranzakciók** lap az alábbi helyeken:
 
--   **Kötelezettségek**&gt;**szállítók**&gt;**az összes szállító**. A műveletpanel a a **szállító** fülre, kattintson a **tranzakciók**&gt;**tranzakciók**. A a **szállítói tranzakciók** lap, válasszon ki egy tranzakciót, és kattintson a **elszámolási tranzakciók**.
--   **Kinnlevőségek**&gt;**vevők**&gt;**vevőket**. A műveletpanel a a **vevő** fülre, kattintson a **tranzakciók**. A a **vevői tranzakciók** lap, válasszon ki egy tranzakciót, és kattintson a **elszámolási tranzakciók**.
+Ez a témakör a vevők és szállítók Elszámolási tranzakciók lapjával kapcsolatosan tartalmaz információkat.
 
-Elszámolás kapcsolatos információk rögzítése és jeleníthető meg a **elszámolási tranzakciók** az alábbi esetekben létrehozott tranzakciók lapon:
+Használja az **Elszámolási tranzakciók** lapot a vevők vagy szállítók összetett kiegyenlítési tranzakcióival kapcsolatos információk megtekintésére. Ez a funkció csak az olyan jogi személyek esetében működik, amelyeknek Litvániában, Lettországban, Észtországban, Csehországban, Magyarországon vagy Lengyelországban van az elsődleges címe. Az **Elszámolási tranzakciók** lapot az alábbi helyeken találja:
 
--   **Árfolyam-korrekció** – számla és kifizetés elszámolása a realizált vagy nem realizált árfolyam-különbözet hoz létre.
--   **Feladási profil módosítása** – két bejegyzéseket, számla, jóváírás, például különböző feladási sablonokat leülepedtek.
--   Előleg fizetés alakul, vagy a fizetési előleg lesz konvertálva.
--   **Készpénzfizetési engedmény** – egy számla kiegyenlítése megtörténik, a fizetési engedmény összege levonták.
--   **Filléreltérés** – egy számla kiegyenlítése megtörténik, amely némileg eltérő összeget a számla fizetés esetén.
--   **Feltételes áfa könyvelési** – egy számla kiegyenlítése megtörténik, amely az alkalmazott feltételes áfa fizetés esetén.
--   **Több vállalatot érintő kiegyenlítés** – vállalatközi funkciók segítségével a szervezet a fizetési számla kiegyenlítése.
+-   **Kötelezettségek** &gt; **Szállítók** &gt; **Minden szállító**. A **Szállító** lap műveletpaneljén kattintson a **Tranzakciók** &gt; **Tranzakciók** elemre. A **Szállítói tranzakciók** lapon válasszon ki egy tranzakciót, és kattintson az **Elszámolási tranzakciók** elemre.
+-   **Kinnlevőségek** &gt; **Vevők** &gt; **Minden vevő**. A **Vevő** lap műveletpaneljén kattintson a **Tranzakciók** elemre. A **Vevői tranzakciók** lapon válasszon ki egy tranzakciót, és kattintson az **Elszámolási tranzakciók** elemre.
+
+A rendszer rögzíti az elszámolással kapcsolatos információkat, amelyek megjeleníthetők az **Elszámolási tranzakciók** oldalon azon tranzakcióknál, amelyek a következő helyzetekben jöttek létre:
+
+-   **Árfolyam-korrekció** - amikor egy számla kiegyenlítése és a fizetés realizált vagy nem realizált árfolyam-különbözetet okoz.
+-   **Feladási profil módosítása** – Két bejegyzés, például egy számla és egy jóváírás, amelyeknél különböző feladási profilok vannak beállítva.
+-   Az előlegfizetés fizetéssé vagy a fizetés előleggé van alakítva.
+-   **Készpénzfizetési engedmény** - egy számla olyan fizetéssel való kiegyenlítése, amelyből levontak egy engedményösszeget.
+-   **Filléreltérés** – Egy számla kiegyenlítése olyan fizetéssel történik, amely némileg eltérő összeget a számlán szereplőhöz képest.
+-   **Feltételes adófeladás** - Egy számla olyan fizetéssel való kiegyenlítése, amelyre feltételes adó vonatkozik;
+-   **Több vállalatot érintő kiegyenlítés** – Vállalatközi funkció, amely segítségével egy számla egy szervezettől eredő fizetéssel egyenlíthető ki.
+
+
 
 
 

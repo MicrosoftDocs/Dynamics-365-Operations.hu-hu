@@ -1,6 +1,6 @@
 ---
 title: "Követelések és beszedések a Kinnlevőségek modulban"
-description: "Kinnlevőségek gyűjtemények adatok használata a Microsoft Dynamics 365 műveletek gyűjtemények lap egy központi nézetben kezeli. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából."
+description: "A kinnlevőségek beszedési információját a Microsoft Dynamics 365 for Operations beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Követelések és beszedések a Kinnlevőségek modulban
 
-Kinnlevőségek gyűjtemények adatok használata a Microsoft Dynamics 365 műveletek gyűjtemények lap egy központi nézetben kezeli. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
+[!include[banner](../includes/banner.md)]
+
+
+A kinnlevőségek beszedési információját a Microsoft Dynamics 365 for Operations beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
 
 Mielőtt elkezdené beállítani a beszedéseket vagy elkezdene dolgozni velük, ismerje meg a következő fogalmakat:
 -   Vevő korosítási pillanatképei egy időpontban tartalmazzák Korosított egyenleget
@@ -55,9 +58,9 @@ A rendszer korosítási időszak definícióban lévő egyes korosítási idősz
 A vevőgyűjtők olyan lekérdezések, amelyek meghatározzák a beszedési vagy korosítási folyamathoz megjeleníthető és kezelhető vevőkódok egy adott rekordját. Használja a vevőgyűjtőket a Korosított egyenlegek, Beszedési tevékenységek és Beszedési esetek listaoldalon található adatok szűréséhez. Vevőgyűjtők segítségével továbbá szűrheti a vevői számlákat, amelyek akkor szerepelnek, ha korosítási pillanatképek kerülnek létrehozásra.
 
 ## <a name="collections-agents"></a>Kintlevőségkezelők
-Alapértelmezés szerint a Microsoft Dynamics 365 műveletek számára is minden vevőinformáció megtekintése gyűjtemények listája oldalon. Használhatja a pénzbehajtók rekordjait azoknak a vevőgyűjtőknek a meghatározásához, amelyek elérhetők a beszedési listaoldalakon és a Beszedési oldalon lévő információk szűréséhez. 
+Alapértelmezés szerint a Microsoft Dynamics 365 for Operations-felhasználók láthatják az összes vevői adatot a beszedési listaoldalakon. Használhatja a pénzbehajtók rekordjait azoknak a vevőgyűjtőknek a meghatározásához, amelyek elérhetők a beszedési listaoldalakon és a Beszedési oldalon lévő információk szűréséhez. 
 
-A beszedéskezelő olyan személy, aki a vevőkkel együttműködik annak biztosítására, hogy a kifizetések beszedésre kerüljenek a kellő időben. A Microsoft Dynamics 365 műveletekhez beszedési ügynökök olyan munkavállalóknak, akik a felhasználó telepítőjében a felhasználókhoz rendelt.
+A beszedéskezelő olyan személy, aki a vevőkkel együttműködik annak biztosítására, hogy a kifizetések beszedésre kerüljenek a kellő időben. A Microsoft Dynamics 365 for Operations rendszerben a pénzbehajtók olyan dolgozók, akik a Felhasználó beállítások oldalon lévő felhasználókhoz vannak hozzárendelve.
 
 ## <a name="collections-list-pages"></a> Beszedési listaoldalak 
 A következő listaoldalak megkönnyítik beszedési információk rendezését.
@@ -67,7 +70,7 @@ A következő listaoldalak megkönnyítik beszedési információk rendezését.
 
 > [!NOTE]
 > A korosítási pillanatképet létre kell hozni, mielőtt megtekintheti ezeken az oldalakon lévő információkat. Csak azoknak a vevőknek az információja jelenik meg, akinek a korosítási pillanatképe létre lett hozva. A listaoldalon megjelenített rekordok tovább lehet szűrni a következők alapján:
-<li>Alapértelmezés szerint a Microsoft Dynamics 365 műveletek felhasználó hozzáfér a vevőket, akik rendelkeznek az elévülési pillanatkép.</li>
+<li>Alapértelmezés szerint a Microsoft Dynamics 365 for Operations-felhasználó hozzáféréssel rendelkezik az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
 <li>Ha léteznek vevőgyűjtők, a felhasználót pénzbehajtóként kell beállítani, hogy használhassa a gyűjtőt a beszedési listaoldalon lévő információk szűréséhez. A kiválasztott vevőgyűjtőben lévő vevők számára az információ korlátozott.</li>
 <li>Ha egy felhasználó pénzbehajtóként van beállítva, csak annak a pénzbehajtónak kiválasztott gyűjtők érhetők el a listaoldalon. Ha a Beszedéskezelő megtekintheti az összes vevőgyűjtőt váltás van kiválasztva a Pénzbehajtó oldalon a pénzbehajtó számára, minden gyűjtő elérhető számára.</li>
 
@@ -75,7 +78,7 @@ A következő listaoldalak megkönnyítik beszedési információk rendezését.
 ## <a name="collections-page"></a> Beszedések lap
 Használja a „Beszedések” oldalt a vevővel kapcsolatos beszedési információk, tevékenységek és esetek megtekintéséhez, kezeléséhez és műveletek végrehajtásához. 
 
-A felső ablakban a kijelölt vevőhöz tartozó eseteket jeleníti meg. A középső ablaktáblában a vevő tranzakcióinak megjelenítése. Az alsó ablaktábla a vevőhöz tartozó tevékenységeket jeleníti meg. Beszedési eseteket hozhat létre egy vagy több tranzakcióhoz és a tevékenységhez tartozó kintlévőségek adatainak követésére. A felső és alsó ablaktáblán található információkat az eset alapján szűrni lehet. 
+A felső panel a kiválasztott vevő eseteit jeleníti meg. A középső panel a vevő tranzakcióit jeleníti meg. Az alsó ablaktábla a vevőhöz tartozó tevékenységeket jeleníti meg. Beszedési eseteket hozhat létre egy vagy több tranzakcióhoz és a tevékenységhez tartozó kintlévőségek adatainak követésére. A felső és alsó ablaktáblán található információkat az eset alapján szűrni lehet. 
 
 Az adatterületek megjelenítik a kiválasztott vevőhöz tartozó korosítási egyenlegeket és a hitelkeret információt. A program a korosítási pillanatképben tárolja ezt az információt. Ha szükséges, frissítheti a korosítási pillanatképet az aktuális információkkal. 
 
@@ -86,7 +89,7 @@ Elengedhet, visszaállíthat vagy sztornírozhat teljes kamatleveleket, vagy oly
 
 Ezek a kiigazítások csak a kamatleveleket és azokat a kamatokat és díjakat érinti, amiket azok tartalmaznak. Használja a „Leírási tranzakciók létrehozása egy lépésben” szakaszban megadott lépéseket, hogy leírjon a vevőhöz tartozó minden költséget.
 
-## <a name="create-writeoff-transactions"></a>Writeoff-tranzakciók létrehozása
+## <a name="create-writeoff-transactions"></a>Leírási tranzakciók létrehozása
 Leírhatja a behajtatlan tartozásokat, ha a Beszedések képernyőn és a Korosítási egyenlegek, Vevők és Nyitott vevői számlák listaoldalon a Leírás opcióra kattint. 
 
 Amikor leír egy vevői tranzakciót, a vevő minden tranzakciója automatikusan kiegyenlítésre lesz megjelölve. A leírt összes a megjelölt tranzakció nettó összegétől függ. A program ilyenkor létrehoz egy leírási tranzakciót egy általános naplóban, ez legfeljebb három típusú naplósort tartalmazhat.
@@ -100,6 +103,8 @@ Elégtelen fedezetű (NSF) fizetések feldolgozása
 --------------------------------------------
 
 Feldolgozhatja az Elégtelen fedezetű kifizetéseket, ha rákattint a Beszedések oldalon az Elégtelen fedezetű kifizetés opcióra. Ha erre a gombra kattint, a kifizetés érvénytelenítve lesz. Ha alkalmazni kell elégtelen fedezet miatti díjat a vevőre, a program létrehoz egy költségtranzakciót a fizetési naplóban. A díj összege az automatikus költségek beállításaitól függ. Az elégtelen fedezetű kifizetésekre vonatkozó automatikus költségeket az a költségcsoport szabja meg, amelyik ki van választva az érintett bankszámlához a Bankszámlák képernyőn.
+
+
 
 
 

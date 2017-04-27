@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="replenishment"></a>Feltöltés
 
+[!include[banner](../includes/banner.md)]
+
+
 A leírás ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat.
 
 A leírás ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat. Az adatok nem vonatkoznak a raktározási megoldásra, amely a Készletkezelés modulból érhető el. Három feltöltési stratégia áll rendelkezésre:
@@ -67,6 +70,8 @@ A Rakomány igényfeltöltése stratégia többféle rakomány iránti kereslete
 | Helyprofilok       | Tárolóhelyek létrehozásához helyprofilok meglétére van szükség.                                                                                                                                                                                       |
 | Helyutasítások     | Helyutasítások szükségesek a munka olyan helyekre való irányításához, ahol feltöltés szükséges és ahol a készlet forrása van.                                                                                     |
 | Munkasablonok          | Munkasablonok szükségesek a **Feltöltés** típusához, feltöltési munka létrehozásához, így a készlet a kívánt helyre mozgatható.                                                                                           |
+
+
 
 
 

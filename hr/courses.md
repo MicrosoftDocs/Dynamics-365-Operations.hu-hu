@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-training-courses"></a>Tanfolyamok beállítása
 
+[!include[banner](includes/banner.md)]
+
+
 Az emberi erőforrások-rendszergazdák és a vezetők a tanfolyamok szolgáltatások segítségével karbantartják a dolgozóknak nyújtott képzések információit.
 
  <a name="set-up-prerequisites"></a> A telepítés előfeltételei
@@ -85,7 +88,7 @@ Például a következő műveleteket végezheti:
 -   Ajánlott szállodák a tanfolyam résztvevőinek
 -   A tanfolyam leírásának létrehozása, amelyet közzé lehet tenni az Alkalmazott önkiszolgáló rendszerben
 
-  >**Megjegyzés:** csak akkor, ha nincs regisztrálva van, a tanfolyam törölheti. 
+  >**Megjegyzés** Csak akkor törölhet egy tanfolyamot, ha nincs hozzá regisztráció. 
     
 ## <a name="course-statuses"></a>Tanfolyam állapota
 Az alábbi táblázat felsorolja a tanfolyam lehetséges állapotok és a műveleteket hajthatja végre, ha a tanfolyamhoz meghatározott állapota.
@@ -132,7 +135,9 @@ A tanfolyam résztvevői olyan munkavállalók, pályázók vagy kapcsolattartó
 <a name="workflow"></a>Munkafolyamat
 --------
 
-Alkalmazottakat, akik regisztrál a tanfolyam keresztül a **alkalmazotti önkiszolgáló** jóváhagyási munkafolyamat keresztül a regisztrációs lap tartalmazhat.  Munkafolyamat meg is hozzárendelhető egy tanfolyam a **általános** gyorslapján a **tanfolyamok** oldalon.
+Azok az alkalmazottak regisztrációja, akik a tanfolyamra az **Alkalmazotti önkiszolgáló rendszer** oldalán keresztül regisztrálnak, jóváhagyási munkafolyamaton mehet keresztül.  Munkafolyamatot tanfolyamhoz a **Tanfolyamok** oldal **Általános** gyorslapján lehet hozzárendelni.
+
+
 
 
 

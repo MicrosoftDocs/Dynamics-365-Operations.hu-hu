@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="direct-deliveries"></a>Közvetlen kiszállítások
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk tájékoztatást nyújt a közvetlen kiszállításokkal kapcsolatban. A közvetlen kiszállítások olyan szállítások, amelyeket a rendszer közvetlenül a szállítótól küld a vevőhöz.
 
 A közvetlen szállítással időt és készletezési költséget takaríthat meg, mivel nem kell a termékeket raktárakban tárolnia, mielőtt a vevőhöz szállítaná azokat.  
@@ -49,5 +52,7 @@ Ha **Közvetlen kiszállítás** típusú értékesítésirendelés-sort szeretn
 
 ## <a name="warehouse"></a>Raktár
 Közvetlen szállítás létrehozásakor az értékesített cikk soha nem jelenik meg fizikailag a raktárban. Ennek ellenére is meg kell adnia egy raktárat az értékesítési rendelés sorában. Ehhez hasonlóan kitárolási követelményeket is meg lehet határozni a tétel cikkmodellcsoportjában. Ugyanakkor, mivel a cikk fizikailag soha nem lesz jelen a raktárban, a rendszer közvetlen szállítás típusú értékesítési rendeléseknél ezeket a követelményeket figyelmen kívül hagyja.
+
+
 
 

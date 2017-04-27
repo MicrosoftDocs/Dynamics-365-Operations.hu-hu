@@ -1,6 +1,6 @@
 ---
 title: "Kiskereskedelmi árukészlet kezelése"
-description: "A cikk ismerteti, amelyek segítségével kezelheti a készletet a dokumentumtípusokat."
+description: "A cikk ismerteti, hogy mely dokumentumtípusokat használhat a készlet kezeléséhez."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 21391
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: global
@@ -27,18 +27,23 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-store-inventory"></a>Kiskereskedelmi árukészlet kezelése
 
-A cikk ismerteti, amelyek segítségével kezelheti a készletet a dokumentumtípusokat.
+[!include[banner](includes/banner.md)]
+
+
+A cikk ismerteti, hogy mely dokumentumtípusokat használhat a készlet kezeléséhez.
 
 A következő típusú dokumentumok segítségével a kezelheti a szervezete készletét.
 
 ## <a name="purchase-orders"></a>Beszerzési rendelések
-A beszerzési rendeléseket a központi irodában készítik. Kiskereskedelmi raktár szerepel a beszerzési rendelés fejlécében, ha a rendelés képes fogadni az üzletben Modern POS (MPOS) vagy felhő POS használata a Microsoft Dynamics 365 műveletek - kiskereskedelmi. Miután az üzletben kapott mennyiségek vannak megadva, hogy helyben is elmentheti további módosításra. Másik lehetőségként a mennyiségek vállalhatóak és a központi irodába küldhetőek. A központi iroda az üzletben kapott mennyiségek jelennek meg Dynamics 365 műveletek, a **fogadása most** mező a beszerzési rendelésen.
+A beszerzési rendeléseket a központi irodában készítik. Ha kiskereskedelmi raktár szerepel a beszerzési rendelés fejlécében, akkor a rendelés fogadása az áruháznál történhet a Modern POS (MPOS) vagy a felhőalapú POS segítségével a Microsoft Dynamics 365 for Operations - Retail szolgáltatásban. Az üzletben fogadott mennyiségek beírását követően az értékek helyben menthetők a további módosításokhoz. Másik lehetőségként a mennyiségek vállalhatóak és a központi irodába küldhetőek. A központi irodában az üzlet által bevételezett mennyiségek kijelzésre kerülnek a Microsoft Dynamics 365 for Operations rendszerben a beszerzési rendelés **Fogadás** mezőjében.
 
 ## <a name="transfer-orders"></a>Átmozgatási rendelések
-Az átmozgatási rendelés megadhatja, hogy egy adott üzlet egy olyan hely, ahonnan cikkek szállíthatóak. Ebben az esetben az átadás rendelés jelenik meg az üzletben MPOS vagy felhő POS kiadási kérelem. Után igényelt mennyiségek leltárhoz, ezeket véglegesítése és a központi iroda küldött. A központi iroda az üzletben kivett mennyiségek jelennek meg Dynamics 365 műveletek, a **Szállítás most** az átadás rendelés mezőben. Az átmozgatási rendelés megadhatja, hogy egy adott üzlet egy olyan hely, ahová cikkek szállíthatóak. Ebben az esetben az átadás rendelés jelenik meg az üzletben MPOS vagy felhő POS fogadó kérelmet. Miután az üzletben kapott mennyiségek vannak megadva, hogy helyben is elmentheti további módosításra. Másik lehetőségként a mennyiségek vállalhatóak és a központi irodába küldhetőek. A központi iroda az üzletben kapott mennyiségek jelennek meg Dynamics 365 műveletek, a **fogadása most** az átadás rendelés mezőben.
+Az átmozgatási rendelés megadhatja, hogy egy adott üzlet egy olyan hely, ahonnan cikkek szállíthatóak. Ebben az esetben az átmozgatási rendelés megjelenik az üzletben Modern POS vagy Cloud POS rendszerben kitárolási kérelemként. Miután a kért mennységek kitárolódnak vállalásra kerülnek és a központi irodába lesznek küldve. A központi irodában az üzlet által kitárolt mennyiségek kijelzésre kerülnek a Microsoft Dynamics 365 for Operations rendszerben az átmozgatási rendelés **Szállítás most** mezőjében. Az átmozgatási rendelés megadhatja, hogy egy adott üzlet egy olyan hely, ahová cikkek szállíthatóak. Ebben az esetben az átmozgatási rendelés megjelenik az üzletben az MPOS vagy Cloud POS rendszerben bevételezési kérelemként. Az üzletben fogadott mennyiségek beírását követően az értékek helyben menthetők a további módosításokhoz. Másik lehetőségként a mennyiségek vállalhatóak és a központi irodába küldhetőek. A központi irodában az üzlet által bevételezett mennyiségek kijelzésre kerülnek a Microsoft Dynamics 365 for Operations rendszerben az átmozgatási rendelés **Fogadás** mezőjében.
 
 ## <a name="stock-counts"></a>Leltárok
-A leltárok lehetnek ütemezettek és nem tervezettek is. A tervezett leltárokat a központi irodában kezdeményezik, ami meghatározza, hogy melyik cikkeket kell leltározni. A központi iroda az üzletben, ahol a tényleges aktuális készlet mennyiségét megadott MPOS vagy felhő POS kapott leltárbizonylatot hoz létre. A nem tervezett leltárakat üzlet kezdeményezi, és a tényleges aktuális készlet mennyiségét MPOS vagy a felhő POS frissítette. Ütemezett leltárak, ellentétben a nem tervezett leltárakat nem rendelkezik előre definiált elemek listája. Amikor bármely típusú leltár befejeződik vállalásra kerül és a központi irodába küldik. A központi irodában a leltárt ellenőrzik és feladják.
+A leltárok lehetnek ütemezettek és nem tervezettek is. A tervezett leltárokat a központi irodában kezdeményezik, ami meghatározza, hogy melyik cikkeket kell leltározni. A központi iroda létrehoz egy leltárbizonylatot, amelyet fogadni tudnak az üzletnél, ahol a tényleges készletmennyiségeket rögzítik az MPOS vagy a Cloud POS rendszerben. A nem ütemezett leltárakat az üzlet kezdeményezi, és a frissített tényleges készletmennyiségeket vagy az MPOS, vagy a Cloud POS rendszerben rögzítik. Az ütemezett leltárakkal ellentétben a nem ütemezett leltárak nem rendelkeznek a cikkek előre meghatározott listájával. Amikor bármely típusú leltár befejeződik vállalásra kerül és a központi irodába küldik. A központi irodában a leltárt ellenőrzik és feladják.
+
+
 
 
 

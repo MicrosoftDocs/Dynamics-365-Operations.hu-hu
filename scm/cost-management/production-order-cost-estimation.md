@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-order-cost-estimation"></a>Termelési rendelés költségbecslése
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk a termelési költségbecsléssel kapcsolatos információkról nyújt tájékoztatást. A termelési költségbecslések az előrevetített anyag- és kapacitásfelhasználás költségeivel kapcsolatos információkról nyújt információkat, amelyek a cikkek tervezett rendelésben megadott mennyiségeinek termelésekor merülnek fel. 
 
 Miután létrehozta a termelési rendelés, meg kell becsülnie a termelési költségeik. A cél a cikk és a termelési ütemezésre vonatkozó útvonal-felhasználás megbecslése, mert ezek a becslések képezik a későbbi ütemezés és a termelési folyamatok alapját.
@@ -59,6 +62,8 @@ A Költségbecslés a következő adatokat is tartalmazza:
 -   A korábbi termelésekből származó költségadatok összehasonlítása
 -   Költségvetési és előrejelzési adatok.
 -   Az adott költségszint fenntartásához szükséges termelési mennyiség becslései.
+
+
 
 
 

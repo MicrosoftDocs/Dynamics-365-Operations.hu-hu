@@ -1,5 +1,5 @@
 ---
-title: "Helyettesítési költségek és biztosított értékek tárgyieszköz-csoportokhoz tartozó újraszámítása"
+title: "Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása"
 description: "Ez a cikk ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Helyettesítési költségek és biztosított értékek tárgyieszköz-csoportokhoz tartozó újraszámítása
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát.
 
@@ -38,18 +41,18 @@ A tárgyieszköz-csoportok helyettesítési költségének és biztosított ért
 
 Ha a Helyettesítési költségek és biztosított értékek frissítése képernyővel számítja újra az eszközök helyettesítési költségét és biztosított értékét, akkor a rendszer a következő képleteket alkalmazza:
 
--   \[(Tárgyieszköz-csoport helyettesítési költség tényezője / 100) + 1\]\* eszköz pótlási meglévő
--   \[(Tárgyieszköz-csoport által biztosított érték tényezője / 100) + 1\]\* meglévő eszköz biztosított érték
+-   \[(Eszközcsoport helyettesítési költségének tényezője / 100) + 1\] \* Eszköz helyettesítési költsége
+-   \[(Eszközcsoport biztosított értékének tényezője / 100) + 1\] \* Eszköz jelenlegi biztosított értéke
 
 > [!NOTE] 
 > Ha a Helyettesítési költségek és biztosított értékek frissítése képernyőt alkalmazza, mind a helyettesítési költséget, mind a biztosított értéket újraszámítja a kiválasztott eszközöknél, azt nem állíthatja be, hogy a program csak az egyiket számítsa újra. Ha az egyik értéket meg szeretné hagyni, miközben a másikat frissíti, adjon meg 0 (nulla) értéket a tényező Tárgyieszköz-csoportok képernyőn látható mezőjében. A nulla tényező vagy üres mező esetén a frissítés kihagyja a számítást. Az időszaki frissítés nem érinti a tárgyi eszközök könyv szerinti értékét és nettó könyv szerinti értékét. 
 
 ## <a name="how-to-use-a-date-to-select-which-items-to-update"></a> Frissítendő elemek kiválasztása dátum segítségével
-Alapértelmezés szerint a frissítési folyamat azokat a kiválasztott eszközöket frissíti, amelyeket az aktuális napon nem frissítettek, de a korábbi napokon már frissíthetők lehettek volna. Például &lt;aktuális dátum azt jelenti, "mielőtt ma." A Kijelölés gombra kattintva módosíthatja a dátumot a frissítés helyettesítési költségek és biztosított értékek képernyőn. A program összeveti a megadott dátumfeltételt az eszköz legutóbbi időszaki frissítésének dátumával (a Tárgyi eszközök képernyő Időszaki érték/költség utolsó frissítése mezőjével). Minden alkalommal, amikor sikeresen frissíti egy tárgyi eszköz helyettesítési költségét vagy biztosított értékét, a rendszer automatikusan frissíti az aktuális dátummal az Időszaki érték/költség utolsó frissítése mező tartalmát. 
+Alapértelmezés szerint a frissítési folyamat azokat a kiválasztott eszközöket frissíti, amelyeket az aktuális napon nem frissítettek, de a korábbi napokon már frissíthetők lehettek volna. Például &lt; az aktuális dátum azt jelenti, „a mai nap előtt”. A Kijelölés gombra kattintva módosíthatja a Helyettesítési költségek és biztosított értékek frissítése űrlap dátumát. A program összeveti a megadott dátumfeltételt az eszköz legutóbbi időszaki frissítésének dátumával (a Tárgyi eszközök képernyő Időszaki érték/költség utolsó frissítése mezőjével). Minden alkalommal, amikor sikeresen frissíti egy tárgyi eszköz helyettesítési költségét vagy biztosított értékét, a rendszer automatikusan frissíti az aktuális dátummal az Időszaki érték/költség utolsó frissítése mező tartalmát. 
 
 Példa 
 
-Tegnap 5 százalékkal frissítése, a járművek, irodai bútorokat és épületeket csoportok pótlási, és most ezen eszközök pontosan frissíteni kell figyelembe venni. Ezek az eszközök minden egyéb tárgyi eszközök ma frissítésekor kizárásához dátumot ír az utolsó időszaki érték/költség Mezőfrissítés ez tegnap (&lt; tegnapi dátummal), mert a megadott feltétel kívül történt az utolsó frissítés a járművek, irodai bútorokat és épületeket csoportok.
+A Járművek, Irodabútorok és Épületek csoportok helyettesítési értékét a tegnapi napon 5 százalékkal növelte, és most úgy gondolja, hogy ezek az eszközök a pontos értékre vannak frissítve. Ha a mai napon ki szeretné zárni ezeket az eszközöket a tárgyi eszközök frissítéséből, megadhat egy a tegnapi napot megelőző dátumot (&lt; tegnapi nap) az Időszaki érték/költség utolsó frissítése mezőben, mivel ekkor a Járművek, Irodabútorok és Épületek csoportok utolsó időszaki frissítése a megadott dátumfeltételen kívül történt meg.
 
 ## <a name="cumulative-effect-of-each-update"></a> Az egyes frissítések kumulatív hatása
 Minden frissítésnek van kumulatív hatása. Ezért a frissítéseket gondosan meg kell tervezni. Ha például kedden minden eszköz értékét 3 százalékkal növeli, majd az irodabútorok értékét pénteken további négy százalékkal, akkor az irodabútorok értéke összesen 7,12 százalékkal nő.
@@ -72,6 +75,8 @@ A következő napon felettese közli, hogy a számítógépek értékei 10 száz
 
 > [!NOTE]  
 > A -10 százalékos tényező alkalmazását nem lehet 10 százalékos tényezővel visszaállítani (és a -10 és -8 százalék különbsége, a 2 százalék sem vezet eredményre), mivel az értékek számítása ekkor nem a kívánt eredményt adja. 
+
+
 
 
 

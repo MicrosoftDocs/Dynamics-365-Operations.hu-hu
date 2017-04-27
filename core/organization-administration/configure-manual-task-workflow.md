@@ -1,5 +1,5 @@
 ---
-title: "A munkafolyamat kézi tevékenység beállítása"
+title: "Manuális feladat konfigurálása munkafolyamatban"
 description: "Ez a témakör bemutatja, hogyan kell konfigurálni a manuális feladat tulajdonságait."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>A munkafolyamat kézi tevékenység beállítása
+# <a name="configure-a-manual-task-in-a-workflow"></a>Manuális feladat konfigurálása munkafolyamatban
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör bemutatja, hogyan kell konfigurálni a manuális feladat tulajdonságait.
 
@@ -124,10 +127,10 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket a m
     </tr>
     <tr class="even">
     <td>Felhasználó</td>
-    <td>Bizonyos Microsoft Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Microsoft Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki a feladathoz hozzárendelni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki a feladathoz hozzárendelni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -145,8 +148,8 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket a m
     <li>A <strong>Várólista típusa</strong> listán, válassza ki a <strong>Feltételes munkatétel-várólisták</strong> lehetőséget.</li>
     <li>A <strong>Várólista neve</strong> listán jelölje ki a <strong>Feltételes várólista</strong> lehetőséget.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Megjegyzés:</strong> Ez a lehetőség csak néhány munkafolyamatok, például az esetkezelési szolgál.</td>
+    </ol>
+    <strong>Megjegyzés</strong>: Ezt a beállítást csak néhány munkafolyamatnál használják, például Esetkezelésnél.</td>
     </tr>
     </tbody>
     </table>
@@ -214,10 +217,10 @@ Ha a felhasználó nem hajtja végre a manuális feladatot a megadott idő alatt
     </tr>
     <tr class="odd">
     <td>Felhasználó</td>
-    <td>Adott Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki a feladathoz eszkalálni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki a feladathoz eszkalálni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -234,7 +237,7 @@ Ha a felhasználó nem hajtja végre a manuális feladatot a megadott idő alatt
 6.  Ha az eszkalációs útvonalban szereplő felhasználók nem fejezik be a feladatot a megadott időn belül, a rendszer automatikusan végrehajtja a feladatot. A rendszer által végzett művelet meghatározásához, válassza ki a **Művelet** sort, majd a **Művelet lezárása** fülön válasszon ki egy műveletet.
 
 ## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Adja meg, hogy mikor végzi a rendszer automatikusan a feladatot
-Beállíthatja a rendszert egy manuális művelet végrehajtására, ha bizonyos feltételek teljesülésnek. Például, egy feladathoz szükséges lehet, hogy a költség-jelentések részleg egyik tagja átvizsgálja azokat a bevételezéseket, amelyeket a költségjelentéssel együtt elküldtek. A cég irányelvei szerint ezt a feladatot el kell végezni, ha a költségjelentés teljes összege meghaladja a USD 100. Ebben az esetben állítsa be a rendszer automatikusan megjelölni a feladatot **teljes** a teljes összeg esetén 100-nál kisebb. Végezze el az alábbi lépéseket a manuális feladat végrehajtásának idejének meghatározásához.
+Beállíthatja a rendszert egy manuális művelet végrehajtására, ha bizonyos feltételek teljesülésnek. Például, egy feladathoz szükséges lehet, hogy a költség-jelentések részleg egyik tagja átvizsgálja azokat a bevételezéseket, amelyeket a költségjelentéssel együtt elküldtek. A cég irányelvei szerint ezt a feladatot akkor kell elvégezni, ha a költségjelentés teljes összege meghaladja a 100 USD-t. Ebben az esetben állítsa be a rendszert, hogy automatikusan jelölje meg a feladatot **Készként**, ha a teljes összeg 100-nál kisebb. Végezze el az alábbi lépéseket a manuális feladat végrehajtásának idejének meghatározásához.
 
 1.  A bal oldali panelen kattintson az **Automatikus műveletek** gombra.
 2.  Jelölje ki az **Automatikus műveletek engedélyezése** jelölőnégyzetet.
@@ -308,10 +311,10 @@ Beállíthatja a rendszert egy manuális művelet végrehajtására, ha bizonyos
     </tr>
     <tr class="odd">
     <td>Felhasználó</td>
-    <td>Adott Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -325,8 +328,8 @@ Kövesse az alábbi lépéseket, ha a kézi tevékenységet be kell fejezni egy 
 1.  A bal oldali panelen kattintson az **Speciális beállítások** gombra.
 2.  Válassza ki a **A munkafolyamat-elem időkorlátjának beállítása** jelölőnégyzetet.
 3.  Az **Időtartam** mezőbe adja meg, hogy mikor kell végrehajtani a feladatot. Válasszon a következő lehetőségek közül:
-    -   **Óra** – adja meg a feladatot kell elvégezni a órák száma. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
-    -   **Nap** – a feladatot kell elvégezni a napok számának megadása. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
+    -   **Órák** – Adja meg azon órák számát, amely alatt be kell fejezni a feladatot. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
+    -   **Napok** – Adja meg azon napok számát, amely alatt be kell fejezni a feladatot. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
     -   **Hetek** – Adja meg azon hetek számát, amely alatt be kell fejezni a feladatot.
     -   **Hónapok** – Válassza ki, hogy melyik hét mely napjáig kell a feladatot befejezni. Kérheti például, hogy a feladatot a hónap harmadik hetének péntekéig kell elvégezni.
     -   **Évek** – Válassza ki, hogy mely hónap, mely hét, mely napjáig kell a feladatot elvégezni. Kérheti például, hogy a feladatot december harmadik hetének péntekéig kell elvégezni.
@@ -343,6 +346,8 @@ Amikor hozzárendelik a manuális feladatot egy felhasználóhoz, annak intézke
 5.  Jelölje be a **Delegálás** jelölőnégyzetet, ha a felhasználónak hozzá kell rendelnie a feladatot egy másik felhasználóhoz.
 6.  Jelölje be a **Ismételt hozzárendelés** jelölőnégyzetet, ha a felhasználónak hozzá kell rendelnie ismét a feladatot a munkatétel-várólistán szereplő felhasználóhoz.
 7.  Jelölje be a **Kiadás** jelölőnégyzetet, ha a felhasználónak hozzá kell rendelnie ismét a feladatot a munkatétel-várólistához. Ezt követően a másik felhasználó hajthatja végre a feladatot.
+
+
 
 
 

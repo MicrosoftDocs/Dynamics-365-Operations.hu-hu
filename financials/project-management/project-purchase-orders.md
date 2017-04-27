@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-orders-for-a-project"></a>Projekt beszerzési rendelései
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk különböző a módszereket ismerteti, amelyekkel beszerzési rendeléseket hozhat létre egy projekthez. A használt módszer attól függ, hogy mi a beszerzési rendelés célja, hogy a cikkek mikor kerülnek felhasználásra, hogy mikor kerül sor a cikkek elszámolására egy projektnél.
 
-A Microsoft Dynamics 365 műveletekhez több módszer segítségével egy projekt beszerzési rendelések létrehozása. A használt módszer attól függ, hogy mi a beszerzési rendelés célja, hogy a beszerzett cikkek mikor kerülnek felhasználásra, hogy mikor kerül sor a beszerzett cikkek elszámolására egy projektnél.
+A Microsoft Dynamics 365 for Operations rendszerben többféleképpen hozhat létre beszerzési rendeléseket egy projekthez. A használt módszer attól függ, hogy mi a beszerzési rendelés célja, hogy a beszerzett cikkek mikor kerülnek felhasználásra, hogy mikor kerül sor a beszerzett cikkek elszámolására egy projektnél.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Beszerzési rendelés létrehozásának módszerei
 
@@ -71,6 +74,8 @@ A következő módszerek valamelyikét használhatja egy beszerzési rendelés l
 </table>
 
 > [!NOTE] 
-> A szállítói számla vagy a csomagjegyzék frissítésekor a csomagjegyzék cikkszükséglet kéri.
+> Ha frissíti a szállítói számlát vagy a szállítólevelet, a program figyelmezteti, hogy a cikkszükséglet szállítólevelét is frissítse.
+
+
 
 

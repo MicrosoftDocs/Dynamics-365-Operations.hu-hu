@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-work-policies"></a>Raktári munkairányelvek
 
+[!include[banner](../includes/banner.md)]
+
+
 Új raktári munka-irányelv került bevezetésre a Microsoft Dynamics AX 7.0.1 verziójában (2016. májusi módosítás). Ez a munka-irányelv szabályozza, hogy létrejöjjön-e raktári munka a gyártás raktári folyamataihoz.
 
-Ez a munka-irányelv szabályozza, hogy létrejöjjön-e raktári munka a gyártás raktári folyamataihoz. A munka-irányelvet a **munkarendelési típusok**, egy **készlethely** és egy **termék** kombinációjának segítségével állíthatja be. Termék L0101 jelent, mint például a kimeneti tálcába 001 befejeződött. A késztermék van később felhasznált 001 kimeneti helyen egy másik gyártási rendelésre. Ebben az esetben állíthat be a munka házirend létrehozását, amikor a termék L0101 001 kimenet célhelye készként jelentése a munkát a késztermékek elraktározáshoz megakadályozása érdekében. A munka-irányelv egy egyéni entitás, amelyet a következő információk segítségével lehet leírni:
+Ez a munka-irányelv szabályozza, hogy létrejöjjön-e raktári munka a gyártás raktári folyamataihoz. A munka-irányelvet a **munkarendelési típusok**, egy **készlethely** és egy **termék** kombinációjának segítségével állíthatja be. Például az L0101 termék a jelentés szerint elkészült leszállításra a 001. helyre. A késztermék később egy másik termelési rendelésben kerül felhasználásra a 001. kimeneti helyen. Ebben az esetben beállíthat egy munka-irányelvet annak megakadályozására, hogy munka jöjjön létre a késztermék betárolására, amikor az L0101 termék úgy szerepel a jelentésben, mint amely elkészült leszállításra a 001. helyre. A munka-irányelv egy egyéni entitás, amelyet a következő információk segítségével lehet leírni:
 
 -   **Munka-irányelv neve **(a munka-irányelv egyedi azonosítója)
 -   **Munkarendelési típusok **és** A munka létrehozásának módszere**
@@ -55,7 +58,7 @@ Kiválaszthatja egy terméket, amelyre a munka-irányelv vonatkozik. A munka-ir�
 ## <a name="example"></a>Példa
 A következő példában két termelési rendelés szerepel: a PRD-001 és a PRD-00*2*. A PRD-001 termelési rendeléshez egy **Összeszerelés** nevű művelet tartozik, ahol az SC1 termék a jelentés szerint elkészült leszállításra az O1 helyre. A PRD-002 termelési rendeléshez egy **Festés** nevű művelet tartozik, ami felhasználja az SC1 terméket a O1 helyről. A PRD-002 termelési rendelés RM1 nyersanyagot is felhasznál az O1 helyről. Az RM1 tárolása a BULK-001 raktári helyszínen történik, és kitárolásra kerül az O1 helyre a nyersanyag-kitárolási raktári munka segítségével. A kitárolási munka akkor jön létre, amikor a PRD-002 termelés kiadásra kerül. 
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+[![Raktári munkairányelvek](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 
 Amikor raktári munka-irányelv konfigurálását tervezi ehhez az esethez, vegye figyelembe a következő információkat:
 
@@ -66,12 +69,12 @@ Amikor raktári munka-irányelv konfigurálását tervezi ehhez az esethez, vegy
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| Nem elraktározott 01'                    |-Késztermék elraktározása<br>                           |
-|                                         |**Locations**<br>                                      |
-|                                         |-O1   |                                               |
-|                                         |**Products** <br>                                      |
-|                                         |-SC1                                                  |
+|**Munkairányelv neve**<br>                 |**Munkarendelés típusai**<br>                               |
+| Nincs betárolás a 01 esetében                    |- Késztermék betárolása<br>                           |
+|                                         |**Helyek**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Termékek** <br>                                      |
+|                                         |- SC1                                                  |
 
 Az alábbi eljárások lépésről lépésre ismertetik, hogyan lehet a raktári munka-irányelvet beállítani ehhez az esethez. Egy beállítási minta is ismertetésre kerül, amely azt mutatja meg, hogyan lehet egy jelentésben egy termelési rendelést készként szerepeltetni, ahol a leszállítás egy olyan helyre történik, amelynek szabályozása nem azonosítótáblán alapul.
 
@@ -244,5 +247,7 @@ LÉPÉS (25)
 </tr>
 </tbody>
 </table>
+
+
 
 

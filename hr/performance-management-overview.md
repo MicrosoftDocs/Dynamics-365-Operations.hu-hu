@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="performance-management-overview"></a>Teljesítménykezelés – áttekintés
 
+[!include[banner](includes/banner.md)]
+
+
 A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.  
 
 Ahogyan az alábbi diagram is mutatja, három oldal áll rendelkezésére, amelyek segítenek a folyamat kezelésében:
@@ -34,7 +37,7 @@ Ahogyan az alábbi diagram is mutatja, három oldal áll rendelkezésére, amely
 -   Célok
 -   Teljesítményértékelés
 
-A következő diagram bemutatja, hogyan kapcsolódnak a teljesítménykezelés elsődleges összetevői egymáshoz. [![Teljesítmény folyamat áttekintése](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+A következő diagram bemutatja, hogyan kapcsolódnak a teljesítménykezelés elsődleges összetevői egymáshoz. [![Teljesítményfolyamat áttekintése](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Teljesítménynapló
 Alkalmazottként az értékelés befejezése előtt gyakran gyűjtjük be az adatokat azokról a tevékenységekről vagy eseményekről, amelyek hozzájárultak a sikerünkhöz az értékelési időszak során. A teljesítménynapló az a hely, ahol az ilyen tevékenységek és események dokumentálhatók. Ezenkívül létrehozhat olyan jövőbeni tevékenységeket, amelyeket végre kell hajtani ahhoz, hogy Ön elérhessen egy célt, megfelelhessen a fejlesztési terv előírásainak, illetve megfelelhessen egy teljesítménnyel kapcsolatos kötelezettségnek. Nincs szükség teljesítménynaplókra annak érdelében, hogy célokat vagy teljesítménybeszámolókat hozhasson létre. 
@@ -132,7 +135,7 @@ A dolgozói ellenőrzés munkafolyamat segítségével szabályozhatja az ellen�
 A dolgozóellenőrzési munkafolyamat két elemet tartalmaz:
 
 1.  Ellenőrzés jóváhagyása. Ezzel az elemmel a **Folyamatban** és az **Ellenőrzésre kész** állapotok közötti állapotváltozás szabályozható. Módosítsa a hozzárendelést annak érdekében, hogy használhassa a vezetői hierarchiát, amikor az alkalmazott vezetői szintje 1.
-2.  Végleges ellenőrzés. Adja hozzá ezt az elemet az állapot módosítása a szabályozására **véleményezésre kész**, **végső ellenőrzés**. Módosíthatják a hozzárendelést a vezetői hierarchia használata Ha a Employee.line kezelő szintje = 1, ha azt szeretné, hogy a kezelő a végső elbírálás jóváhagyása. Módosítsa a hozzárendelést Munkafolyamat-felhasználó értékre, ha azt szeretné, hogy az alkalmazott hagyja jóvá. Ha azt szeretné, hogy a vezető és az alkalmazott is jóváhagyja, adjon meg a munkafolyamatban két lépést, és végezze el a megfelelő hozzárendelést mindegyik lépés esetében; abban a sorrendben, ahogyan a jóváhagyásokat szeretné hogy bekövetkezzenek.
+2.  Végleges ellenőrzés. Ezzel az elemmel az **Ellenőrzésre kész** és a **Végleges ellenőrzés** állapotok közötti állapotváltozás szabályozható. Módosítsa a hozzárendelést a vezetői hierarchia használatára úgy, hogy az Employee.line manager level = 1 legyen, ha azt szeretné, hogy a menedzser hagyja jóvá a végső ellenőrzést. Módosítsa a hozzárendelést Munkafolyamat-felhasználó értékre, ha azt szeretné, hogy az alkalmazott hagyja jóvá. Ha azt szeretné, hogy a vezető és az alkalmazott is jóváhagyja, adjon meg a munkafolyamatban két lépést, és végezze el a megfelelő hozzárendelést mindegyik lépés esetében; abban a sorrendben, ahogyan a jóváhagyásokat szeretné hogy bekövetkezzenek.
 
 ## <a name="setup"></a>Beállítás
 Három lap segíthet Önnek, hogy beállíthasson olyan információkat, amelyek annak érdekében szükségesek, hogy elvégezhesse a teljesítményfolyamatot: a **mértékek** lap, a **teljesítménynapló forrástípusai** lap és a **típusok áttekintése** lap.
@@ -148,5 +151,7 @@ A teljesítménynapló forrástípusai leírják, hogy honnan származnak a telj
 ### <a name="review-types"></a>Ellenőrzési típusok
 
 A teljesítmény-ellenőrzés típusai révén szabályozhatja egy ellenőrzés működését. Engedélyezi vagy letiltja a munkafolyamatot egy ellenőrzésnél. Ha az ellenőrzés nem használ munkafolyamatot, akkor definiálhatja azt az alapértelmezett állapotot, amelyet a rendszer a felülvizsgálat létrehozásakor használ. Meghatározhatja azt is, hogy az alkalmazott, a vezető vagy mindkettő szükséges-e az ellenőrzés láttamozáshoz.
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Kamatlábak beállítása kamatkódhoz
 
+[!include[banner](../includes/banner.md)]
+
+
 A kamatkódok olyan beállításokat tartalmaznak, amelyek meghatározzák, hogy mikor kerül sor kamat felszámítására, és hogyan történik annak kiszámítása a hátralékos számlákon.
 
 Megteheti, hogy egyetlen kamatkódot állít be, és azt alkalmazza több vevő feladási profilra, számlázási kódra, illetve adott számlasorokra. Ha a kamatkód adatai megváltoznak, a kódot használó összes funkció automatikusan végrehajtja a változtatásokat az új tranzakciókon. Minden egyes kamatkódnál kétféle típusú kamatlábat állíthat be:
@@ -44,17 +47,17 @@ Beállíthat kamatlábakat, amelyek egy megadott százalékot számítanak.
 
 -   A kamat összege az összes pénznemre vonatkozik.
 -   A nem kötelező kamat összeg határaival lehet megadni.
--   **Százalékos** kijelölt ** ** a a **Kamatszámítás alapján** mezőjében a **Kamatkódok beállítása** oldalon.
+-   **Százalék** van kiválasztva** **a **Kamat számítása alapján** mezőben a **Kamatkódok beállítása** oldalon.
 
-Például egy 5 %-kal kamatozik értékeli, hogy a számla kifizetésének meghaladja a tranzakció minden két hónapig kamatkód beállítása esedékesség, akkor írja be a 2 a **Kamatszámítás minden** mezőben, és válassza a **hónap**.
+Például, ha olyan kamatkódot szeretne beállítani, amely kéthavonta 5 % kamatot számít fel, miután a számla kifizetése túllépte a tranzakció esedékességi dátumát, akkor írjon be 2 értéket az **Összes kamat kiszámítása** mezőbe, és jelölje be **Hónap** lehetőséget.
 
 ## <a name="interest-rates-based-on-amounts"></a>Összegeken alapuló kamatlábak
 Beállíthat olyan kamatlábakat, amelyek egy megadott összeget számítanak ki pénznemenként.
 -   Minden egyes pénznemhez egy kamatösszeg van megadva a kamat kódban.
 -   A nem kötelező kamat összeg határaival lehet megadni.
--   ** Összeg ** kiválasztott a **Kamatszámítás alapján** mezőjében a **Kamatkódok beállítása** oldalon.
+-   **Összeg** van kiválasztva **Számítása kamat alapján** mezőben **Kamat kódok beállítása** oldalon.
 
-Például állítsa be a kamatkód 25,00 érdekeit értékeli, hogy a számla kifizetésének meghaladja a tranzakció minden 20 napig határidejét, akkor írja be a 20 a **Kamatszámítás minden** mezőben, és válassza a **nap**.
+Például, ha olyan kamatkódot szeretne beállítani, amely 20 naponta 25,00 egység kamatot számít fel, miután a számla kifizetése túllépte a tranzakció esedékességi dátumát, akkor írjon be 20 értéket az **Összes kamat kiszámítása** mezőbe és válassza ki a **Nap** lehetőséget.
 
 ## <a name="interest-rates-based-on-ranges"></a>Tartományokon alapuló kamatlábak
 Beállíthat olyan kamatlábakat, amelyek változnak a lejárt összegtől, az összeg késedelmes napjainak számától vagy az összeg késedelmes hónapjainak számától függően.
@@ -67,13 +70,13 @@ Beállíthat olyan kamatlábakat, amelyek változnak a lejárt összegtől, az �
 | **Mezőnév**                  | **Mező értéke** |
 |---------------------------------|-----------------|
 | **Kamatkód**               | 3M%ByAmt        |
-| **Kamatszámítás gyakorisága:**    | 3/hónap         |
+| **Kamatszámítás gyakorisága:**    | 3/Hónap         |
 | **Kamat tartománya**           | Összeg          |
 | **Kamat kiszámítása a következő alapján:** | Százalék      |
 
 A tartomány adatait a következőképpen kell beállítani.
 
-| **From value** | **Interest value** |
+| **Kezdő érték** | **Kamat értéke** |
 |----------------|--------------------|
 | 0              | 1                  |
 | 1,001          | 2                  |
@@ -94,7 +97,7 @@ A tartomány adatait a következőképpen kell beállítani.
 
 A tartomány adatait a következőképpen kell beállítani.
 
-| **From value** | **Interest value** |
+| **Kezdő érték** | **Kamat értéke** |
 |----------------|--------------------|
 | 0              | 10                 |
 | 61             | 15.                 |
@@ -115,7 +118,7 @@ A tartomány adatait a következőképpen kell beállítani.
 
 A tartomány adatait a következőképpen kell beállítani.
 
-| **From value** | **Interest value** |
+| **Kezdő érték** | **Kamat értéke** |
 |----------------|--------------------|
 | 0              | 1.5                |
 | 4              | 2                  |
@@ -125,5 +128,7 @@ A tartomány adatait a következőképpen kell beállítani.
 A kamatkódok dátum érvényességek. Ha szeretné módosítani a kamatlábat, létrehozhat egy **új verziót**, ami a jövőbeli dátum szerint hatályos.
 
 Különböző verziói megtekintéséhez használja a **Dátum, mint** menüt lehetőséget a fordulónap kiválasztásához. Bejelölheti a **Összes rekord megjelenítése** lehetőséget a lapon megjelenő összes kamatkód megtekintéséhez.
+
+
 
 

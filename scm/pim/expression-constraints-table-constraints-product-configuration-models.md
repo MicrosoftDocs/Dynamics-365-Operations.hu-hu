@@ -40,7 +40,7 @@ Táblamegszorítások-kombinációkat termék konfigurálásakor attribútumok m
 
 ### <a name="example-of-a-table-constraint"></a>Táblamegszorítás típusa
 
-Ez a példa azt mutatja, hogyan korlátozhatja egy adott kabinetfájl befejeződik és előlapot hangszóró konfigurációját. Az első táblázat mutatja a méreteket és a televízió, általában elérhető konfigurációs típusú. Az értékek meghatározott, a ** kabinet Befejezés ** és **első rács** típusú attribútum.
+Ez a példa azt mutatja, hogyan korlátozhatja egy adott kabinetfájl befejeződik és előlapot hangszóró konfigurációját. Az első táblázat mutatja a méreteket és a televízió, általában elérhető konfigurációs típusú. Az értékek a **Hangszóró borítása** és **Elülső rács** attribútumtípusokhoz vannak meghatározva.
 
 | Attribútumtípus | Értékek                      |
 |----------------|-----------------------------|
@@ -60,8 +60,8 @@ A következő táblázat bemutatja a kombinációk határozzák meg, hogy a **Sz
 
 A táblázatok megszorításai felhasználó által definiáltak vagy rendszer definiáltak is lehetnek. További tudnivalókért lásd: [Rendszer által definiált és felhasználó által definiált táblamegszorítások](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Milyen szintaxist kell használni megkötések írni?
-A feltételt az Optimization Modeling Language (OML) szintaxisa alapján kell megírnia. A rendszer Microsoft Solver Foundation korlátozás a solver segítségével oldja meg a függőségeket.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Milyen szintaxist kell használni korlátozások kiírására?
+A feltételt az Optimization Modeling Language (OML) szintaxisa alapján kell megírnia. A rendszer a Microsoft Solver Foundation megszorításfeloldóját használja a megszorítások megoldására.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Kifejezés megszorítások és táblamegszorítások
 Kifejezés megszorítások vagy táblamegszorítások, attól függően, hogy hogyan szeretné hozhatják létre a megszorítások használhatja. Hoz létre olyan táblamegszorításhoz be egy mátrixban, mivel egy Kifejezésmegszorítás az egyes utasítást. A termék konfigurálásához teljesen mindegy, milyen megszorítás használatos. Az alábbi példák mutatják a beállításainak alkalmazását.  
@@ -110,32 +110,32 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <td>Ez akkor is igaz, ha az első feltétel nem teljesül, a második feltétel értéke igaz, vagy mindkettőt.</td>
 <td>Azt jelenti, [a, b] infix: a-: b</td>
 <td><ul>
-<li><strong>Üzemeltető:</strong> vonja maga után [x! = 0, y &gt;= 0]</li>
-<li><strong>Infix jelölés:</strong> x! = 0-: i &gt;= 0</li>
+<li><strong>Műveleti jel:</strong> a következőt jelenti: [x != 0, y &gt;= 0]</li>
+<li><strong>Infix jelölés:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>És</td>
 <td>Ez akkor is igaz, csak az összes feltételek teljesülése esetén. Ha a feltétel értéke 0 (nulla), <strong>Igaz</strong> hoz létre.</td>
-<td>Infix [argumentumok], és: a &amp;b &amp; ... &amp;z</td>
+<td>And[argumentumok], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Üzemeltető:</strong> és [x == 2 y &lt;= 2]</li>
-<li><strong>Infix jelölés:</strong> x == 2 &amp;y &lt;= 2</li>
+<li><strong>Műveleti jel:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Infix jelölés:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Vagy</td>
 <td>Ez akkor is igaz, ha bármelyik feltétel teljesül. Ha a feltétel értéke 0 (nulla), <strong>Hamis</strong> hoz létre.</td>
-<td>Infix [argumentumok], vagy: a |}] b |}] ... | z</td>
+<td>Or[argumentumok], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Üzemeltető:</strong> vagy [x == 2 y &lt;= 2]</li>
-<li><strong>Infix jelölés:</strong> x == 2 |}] y &lt;= 2</li>
+<li><strong>Műveleti jel:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Infix jelölés:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Plusz</td>
 <td>Ez az összegek feltételeit. Ha a feltétel értéke 0 (nulla), <strong>0</strong>-t hoz létre.</td>
-<td>Infix [argumentumok], plusz: a + b +... + z</td>
+<td>Plusz[argumentumok], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Művelet:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Infix jelölés:</strong> x + y + 2 == z</li>
@@ -159,7 +159,7 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <tr class="odd">
 <td>Idők</td>
 <td>Ez a feltétel a termék vesz igénybe. Ha a feltétel értéke 0 (nulla), <strong>1</strong>-t hoz létre.</td>
-<td>Infix [argumentumok], időpont: a * b *... * z</td>
+<td>Szorzás[argumentumok], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Művelet:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infix jelölés:</strong> x * y * 2 == z</li>
@@ -167,8 +167,8 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 </tr>
 <tr class="even">
 <td>Teljesítmény</td>
-<td>Ez a termelésnek a tudományos. Ez akkor érvényes hatványkitevő jobbról balra. (Más szóval, jobb asszociatív.) Ezért <strong>[a, b, c] kiemelt</strong> egyenértékű <strong>teljesítmény [, teljesítmény [b, c]]</strong>. A <strong>Power</strong> csak használható pozitív állandó, mint a kitevő.</td>
-<td>[Argumentumok] kiemelt, infix: egy ^ b ^... ^ z</td>
+<td>Ez a termelésnek a tudományos. Ez akkor érvényes hatványkitevő jobbról balra. (Ez azt jelenti, hogy jobbra társuló.) Ezért <strong>Hatvány[a, b, c]</strong> egyenlő: <strong>Hatvány[a, hatvány[b, c]]</strong>. A <strong>Power</strong> csak használható pozitív állandó, mint a kitevő.</td>
+<td>Hatvány[argumentumok], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Művelet:</strong> Power[x, 2] == y</li>
 <li><strong>Infix jelölés:</strong> x ^ 2 == y</li>
@@ -191,7 +191,7 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 <td>A feltétel logikai inverzét jelenít meg. Ez kell pontosan egy feltételt.</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Üzemeltető:</strong> nem [x] &amp;nem [y == 3]</li>
+<li><strong>Műveleti jel:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infix jelölés:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -203,7 +203,7 @@ Az alábbi táblázatban szereplő példák bemutatják, hogyan lehet írni egy 
 | Jelölés Infix:    | Leírás                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
 | x + y + z         | Hozzáadás                                                                                      |
-| X \*y \*z       | szorzás                                                                                |
+| x \* y \* z       | szorzás                                                                                |
 | x - y             | Bináris kivonás egy fordító bináris összeadás második megkereséséhez, megegyezik. |
 | x ^ y ^ z         | A jobb oldali asszociativitást hatványkitevő                                                   |
 | !x                | Logikai                                                                                   |
@@ -212,14 +212,14 @@ Az alábbi táblázatban szereplő példák bemutatják, hogyan lehet írni egy 
 | x & y & z         | Logikai és                                                                                   |
 | x == y == z       | egyenlőség                                                                                      |
 | x != y != z       | Különálló                                                                                      |
-| X &lt;y &lt;z   | Kisebb, mint                                                                                     |
-| X &gt;y &gt;z   | Nagyobb, mint                                                                                  |
-| X &lt;= y &lt;= z | Kisebb vagy egyenlő                                                                         |
-| X &gt;= y &gt;= z | Nagyobb vagy egyenlő                                                                      |
+| x &lt; y &lt; z   | Kisebb, mint                                                                                     |
+| x &gt; y &gt; z   | Nagyobb, mint                                                                                  |
+| x &lt;= y &lt;= z | Kisebb vagy egyenlő                                                                         |
+| x &gt;= y &gt;= z | Nagyobb vagy egyenlő                                                                      |
 | (x)               | Zárójelek alapértelmezett elsőbbségi sorrend felülbírálása.                                                      |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Miért nem megfelelő a kifejezés megszorítások ellenőrzése?
-Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszetevői attribútumfeloldó neve fenntartott kulcsszó nem használható. Itt van, amely nem használható a foglalt kulcsszavak listája:
+Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszetevői attribútumfeloldó neve fenntartott kulcsszó nem használható. Az alábbi lista a foglalt kulcsszavakat mutatja, amelyek nem használhatók:
 
 -   Felső határ
 -   Elem
@@ -245,8 +245,8 @@ Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszete
 <a name="see-also"></a>Lásd még
 --------
 
-[Egy kifejezés korlátozás (feladat guide) létrehozása](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Kifejezésmegszorítás létrehozása (Feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Adja hozzá a számítás konfigurációs termékmodell (feladat guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Kalkuláció hozzáadása termékkonfigurációs modellhez (Feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 
 

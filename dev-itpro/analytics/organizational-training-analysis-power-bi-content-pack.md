@@ -1,6 +1,6 @@
 ---
-title: "Szervezeti képzés kiemelt BI-tartalom"
-description: "Ez a témakör ismerteti a Dynamics 365 műveletek - szervezeti képzés kiemelt BI-tartalom. Ismerteti, hogyan érhető el a csomagot, és a csomag létrehozásához használt entitások és adatmodell mutatja be."
+title: "Szervezeti képzés Power BI-tartalom"
+description: "Ez a témakör a következőt ismerteti: Dynamics 365 for Operations - Szervezeti képzés Power BI-tartalom. Elmagyarázza, hogy hogyan kell hozzáférni a tartalmi csomaghoz, és leírja a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,45 +24,48 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizational-training-power-bi-content"></a>Szervezeti képzés kiemelt BI-tartalom
+# <a name="organizational-training-power-bi-content"></a>Szervezeti képzés Power BI-tartalom
 
-Ez a témakör ismerteti a Dynamics 365 műveletek - szervezeti képzés kiemelt BI-tartalom. Ismerteti, hogyan érhető el a csomagot, és a csomag létrehozásához használt entitások és adatmodell mutatja be.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>A csomag elérése
+
+Ez a témakör a következőt ismerteti: Dynamics 365 for Operations - Szervezeti képzés Power BI-tartalom. Elmagyarázza, hogy hogyan kell hozzáférni a tartalmi csomaghoz, és leírja a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+
+<a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
 --------------------------
 
-A szervezeti képzési csomagot a megosztott eszközök a Microsoft Dynamics életciklus szolgáltatások (LCS) könyvtárban található. Töltse le a csomagot, és csatlakoztassa a Microsoft Dynamics 365 műveletekre vonatkozó további információt lásd: [a Microsoft és a partnerek LCS kiemelt BI-tartalom](power-bi-content-microsoft-partners.md).
+A Szervezeti képzés tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalomcsomag letöltésére és a Microsoft Dynamics 365 for Operations adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>A csomag található jelentések
-A Dynamics 365 műveleti adatok a csomag már csatlakozott, miután a jelentések megjelenítése a szervezet adatait. Ha korábban sosem használta a Microsoft kiemelt BI előtt, többet is megtudhat erről a a [Power BI lap interaktív tanulási](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag tartalmazza a jelentések további információkat tartalmazó táblázatok és diagramok is rendelkezik. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
+## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
+Miután csatlakoztatta a tartalmi csomagot a Dynamics 365 for Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
 
 | Jelentés          | Tartalom                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
-| Tanfolyam-elemzés | Nyilvántartási helye, tanfolyami résztvevők állapotának és regisztráció |
+| Tanfolyamelemzés | Regisztráció hely alapján, tanfolyami résztvevők állapot szerint és regisztrációs lista |
 | Tanfolyamtípusok    | Tanfolyamtípusok szakértelem szerint                                                       |
 
-A diagramok és ezeket a jelentéseket a Mozaik szűrő, és rögzítése a diagramok és a mozaikok az irányítópulton. Szűrő és a PIN-kódot a kiemelt BI kapcsolatos további tudnivalókért lásd: [létrehozása és konfigurálása A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-365 Dynamics műveleti adatok a szervezeti képzési csomagot a jelentések feltöltésére szolgál. A következő táblázat mutatja az entitások a csomag alapult.
+A Szervezeti képzés tartalomcsomag jelentéseinek feltöltésére a Dynamics 365 for Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
 
-| Entitás                    | Tartalom                                                         | Más entitásokkal való                                                                                                                                                                  |
+| Entitás                    | Tartalom                                                         | Más entitásokkal való kapcsolatok                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Képzési\_CalendarOffset  | Naptár eltolja a szelet jelentések                                | Képzési\_CourseAgenda oktatási\_CourseAttendees                                                                                                                                                   |
-| Képzési\_vállalat         | Vállalatok által a jelentések szűréséhez                                   | Képzési\_CourseAgenda oktatási\_CourseAttendees                                                                                                                                                   |
-| Képzési\_tanfolyam          | Tanfolyam, leírás, oktató neve, hely, hely és állapot | Képzési\_CourseAgenda oktatási\_CourseAttendees oktatási\_CourseSkill                                                                                                                             |
-| Képzési\_CourseAgenda    | Napirend, a tanfolyam és a kezdő és záró időpontokat                          | Képzési\_vállalat képzési\_CalendarOffset oktatási\_képzés dátum\_tanfolyam                                                                                                                         |
-| Képzési\_CourseAttendees | Neve, állapota, feladat és regisztráció dátuma                         | Képzési\_vállalat képzési\_CalendarOffset képzés\_képzés dátum\_demográfiai képzési\_foglalkoztatási, képzési\_tanfolyam képzési\_WorkerName képzés\_WorkerTitle képzés\_képzési projekt\_pozíció |
-| Képzési\_CourseSkill     | Szakértelem, szakértelem típusát és szintjét                                     | Képzési\_tanfolyam                                                                                                                                                                                   |
-| Képzési\_dátuma            | Nap, hét, hónap és év                                   | Képzési\_CourseAgenda oktatási\_CourseAttendees                                                                                                                                                   |
-| Képzési\_demográfiai adatai    | Születési idő, a nemek, etnikai és családi állapot dátuma         | Képzési\_CourseAgenda oktatási\_CourseAttendees                                                                                                                                                   |
-| Képzési\_foglalkoztatási      | Kezdő dátum, záró dátum és átállási dátum                        | Képzési\_CourseAgenda oktatási\_CourseAttendees                                                                                                                                                   |
-| Képzési\_feladat             | Függvény, típusa és a cím                                        | Képzési\_CourseAgenda oktatási\_CourseAttendees                                                                                                                                                   |
-| Képzési\_beosztás        | Helyzet, a cím és a teljes munkaidős egyenértékben (FTE)                  | Képzési\_CourseAgenda oktatási\_CourseAttendees                                                                                                                                                   |
-| Képzési\_WorkerName      | Utónév, Vezetéknév és a teljes név                             | Képzési\_CourseAttendees                                                                                                                                                                          |
-| Képzési\_WorkerTitle     | Cím és a szolgálati idő dátuma                                         | Képzési\_CourseAttendees                                                                                                                                                                          |
+| Képzés\_CalendarOffset  | Naptáreltolások, részletes jelentések                                | Képzés\_CourseAgenda Képzés\_CourseAttendees                                                                                                                                                   |
+| Képzés\_Vállalat         | Vállalatok a jelentések szűréséhez                                   | Képzés\_CourseAgenda Képzés\_CourseAttendees                                                                                                                                                   |
+| Képzés\_Tanfolyam          | Tanfolyam, leírás, oktató neve, hely, szoba és állapot | Képzés\_CourseAgenda Training\_CourseAttendees Képzés\_CourseSkill                                                                                                                             |
+| Képzés\_CourseAgenda    | Napirend, tanfolyam, kezdő és záró időpontok                          | Képzés\_Vállalat Képzés\_CalendarOffset Képzés\_Dátum Képzés\_Tanfolyam                                                                                                                         |
+| Képzés\_CourseAttendees | Név, állapot, feladat és regisztráció dátuma                         | Képzés\_Vállalat Képzés\_CalendarOffset Training\_Dátum Képzés\_Demográfia Képzés\_Foglalkoztatás Képzés\_Tanfolyam Képzés\_WorkerName Képzés\_WorkerTitle Képzés\_Feladat Képzés\_Beosztás |
+| Képzés\_CourseSkill     | Szakértelem, szakértelem típusa és szintje                                     | Képzés\_Tanfolyam                                                                                                                                                                                   |
+| Képzés\_Dátum            | Napok, hetek, hónapok és évek                                   | Képzés\_CourseAgenda Képzés\_CourseAttendees                                                                                                                                                   |
+| Képzés\_Demográfia    | Születési idő, nemek, etnikaum és családi állapot         | Képzés\_CourseAgenda Képzés\_CourseAttendees                                                                                                                                                   |
+| Képzés\_Foglalkoztatás      | Kezdő dátum, záró dátum és átállási dátum                        | Képzés\_CourseAgenda Képzés\_CourseAttendees                                                                                                                                                   |
+| Képzés\_Feladat             | Funkció, típus és a cím                                        | Képzés\_CourseAgenda Képzés\_CourseAttendees                                                                                                                                                   |
+| Képzés\_Beosztás        | Beosztás, cím és teljes munkaidős egyenérték (FTE)                  | Képzés\_CourseAgenda Képzés\_CourseAttendees                                                                                                                                                   |
+| Képzés\_WorkerName      | Keresztnév, vezetéknév és teljes név                             | Képzés\_CourseAttendees                                                                                                                                                                          |
+| Képzés\_WorkerTitle     | Cím és szolgálati idő dátuma                                         | Képzés\_CourseAttendees                                                                                                                                                                          |
 
-Ezeknek az entitásoknak az adatmodell számított mértékek létrehozására használták. Ezek kiszámítása intézkedések használata a fő teljesítménymutatók (KPI) kiszámításához és a jelentések, amelyek felhasználhatók a csomagot a. Ha szeretné felvenni a további számításokhoz a jelentések és irányítópultok, töltse le, és módosítsa a Training.pbix fájlt a LCS. Ez a fájl a csomag létrehozásához használt alapértelmezett adatmodell. Után végrehajtott módosításokat, egy szervezeti csomagot és felvett adatokat tartalmazó irányítópultot hozhat létre.
+Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. E kiszámított mértékek aztán a fő teljesítménymutatók (KPI-k) és a tartalmi csomagban használt jelentések kiszámításához használatosak. Ha szeretné felvenni a további számításokat a jelentésekbe és irányítópultokba, töltse le és módosítsa a Training.pbix fájlt a LCS-ből. Ez a fájl azon alapértelmezett adatmodell, amelyet a tartalmi csomag létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
 
 ## <a name="additional-resources"></a>További erőforrások
 Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
@@ -71,6 +74,8 @@ Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia
 -   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

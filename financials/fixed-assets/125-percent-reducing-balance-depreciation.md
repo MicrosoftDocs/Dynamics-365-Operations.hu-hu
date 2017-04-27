@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>125 százalékos degresszív értékcsökkenés
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a 125 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 
 Amikor beállít egy tárgyieszköz-értékcsökkenési profilt a **125% degresszív** értéket választja a **Mód** mezőben az **Értékcsökkenési profilok** lapon, akkor a tárgyi eszközök, amelyek az értékcsökkenési profilokhoz vannak rendelve értékcsökkenése ugyanazzal százalékos értékkel lesz egyenlő, ami az egyes értékcsökkenési időszakoknál szerepel. A százalék kiszámítása az eszköz élettartama alapján történik. Ha például egy eszköz élettartama öt év, akkor a számított százalékos érték 25% lesz (125% ÷ 5).
@@ -56,7 +59,7 @@ Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő
 
 Ha bejelöli a **Pénzügyi** lehetőséget az **Értékcsökkenési év** mezőben, akkor a 125 % degresszív értékcsökkenés számítása azon pénzügyi év szerint történik, amelynek pénzügyi naptára meg van adva a könyvben vagy amelyik pénzügyi naptár ki van jelölve a **Főkönyv** lapon. A pénzügyi naptárak a **Pénzügyi naptárak** oldalon állíthatóak be. 
 
-Például a pénzügyi év július 1-június 30., az értékcsökkenési számítás elindul a július 1. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az egyes időszakokban az értékcsökkenés automatikusan módosul, és a következő naptári év hossza a **Pénzügyi naptárak** oldalon található időszakok beállítása alapján történik. 
+Egy július 1-től június 30-ig tartó pénzügyi év esetén az értékcsökkenés számítása július 1-jén kezdődik. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az egyes időszakokban az értékcsökkenés automatikusan módosul, és a következő naptári év hossza a **Pénzügyi naptárak** oldalon található időszakok beállítása alapján történik. 
 
 Ha bejelöli **Pénzügyi** értéket az értékcsökkenés éveként a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
 
@@ -81,6 +84,8 @@ A 125% degresszív értékcsökkenési módszer elosztja a 125 százalékot az �
 | 3. év | 5625 × 25% = 1406,25                        | (6625 – 1406,25) = 5218,75 | (5625 – 1406,25) = 4218,75         |
 
 > [!NOTE] 
-> Általában, amikor a 125 % degresszív értékcsökkenési módszer használatával számított összeg lesz alacsonyabb, mint a volna számítani a lineáris módszerrel van egy hátralévő élettartamát a lineáris módszer.
+> Általában amikor az összeg számolása a 125 % degresszív értékcsökkenési módszerrel történik, akkor az érték kisebb lesz, mint amit a lineáris értékcsökkenés módszerrel kapnánk, a hátralévő élettartamra létezik egy átalakítás a lineáris értékcsökkenés módszeréhez.
+
+
 
 

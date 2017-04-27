@@ -1,6 +1,6 @@
 ---
-title: "Szállítói portál felhasználói biztonság"
-description: "Ez a cikk ismerteti a szállítói portált használó külső szállítók biztonságának beállítását. Ezt az információt csak azokra a február 2016 &amp;Dynamics AX verziói május 2016."
+title: "Felhasználói biztonság a szállítói portálon"
+description: "Ez a cikk ismerteti a szállítói portált használó külső szállítók biztonságának beállítását. Az itt olvasható információk csak a Dynamics AX 2016. februári és 2016. májusi verzióira vonatkoznak."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-portal-user-security"></a>Szállítói portál felhasználói biztonság
+# <a name="vendor-portal-user-security"></a>Felhasználói biztonság a szállítói portálon
 
-Ez a cikk ismerteti a szállítói portált használó külső szállítók biztonságának beállítását. Ezt az információt csak azokra a február 2016 &amp;Dynamics AX verziói május 2016.
+[!include[banner](../includes/banner.md)]
 
-A Szállítói portál funkciók kiterjesztett szállító csoportmunka 365 Dynamics műveletek verzió 1611 váltotta ki. Szállító együttműködési biztonsági beállításával kapcsolatos további tudnivalókért lásd: [Set up és karbantartása a szállítói együttműködési](set-up-maintain-vendor-collaboration.md). A szállítói portálon korlátozott mennyiségű információ érhető el a beszerzési rendelésekkel (PO) kapcsolatban külső szállítók számára. A Microsoft Dynamics AX szállítói portáljánál fontos a felhasználói jogosultságok helyes beállítása, hogy a szállítók ne férhessenek hozzá véletlenül további információkhoz a Dynamics AX szolgáltatásban. **Fontos:** más felhasználókkal ellentétben a külső szállítóknak nem szabad **rendszerfelhasználó** szerepkörrel rendelkezniük. A **rendszerfelhasználó** szerepkör olyan jogosultságokhoz ad hozzáférést, amelyek nem megfelelők külső felhasználók számára.
+
+Ez a cikk ismerteti a szállítói portált használó külső szállítók biztonságának beállítását. Az itt olvasható információk csak a Dynamics AX 2016. februári és 2016. májusi verzióira vonatkoznak.
+
+A Szállítói portál funkciót a Dynamics 365 for Operations rendszer 1611-es verziójának Kiterjesztett szállítói együttműködés funkciója váltotta le. A biztonságnak a szállítói együttműködésben való beállítására vonatkozó további tudnivalókat lásd: [Szállítói együttműködés beállítása és karbantartása](set-up-maintain-vendor-collaboration.md). A szállítói portálon korlátozott mennyiségű információ érhető el a beszerzési rendelésekkel (PO) kapcsolatban külső szállítók számára. A Microsoft Dynamics AX szállítói portáljánál fontos a felhasználói jogosultságok helyes beállítása, hogy a szállítók ne férhessenek hozzá véletlenül további információkhoz a Dynamics AX szolgáltatásban. **Fontos:** más felhasználókkal ellentétben a külső szállítóknak nem szabad **rendszerfelhasználó** szerepkörrel rendelkezniük. A **rendszerfelhasználó** szerepkör olyan jogosultságokhoz ad hozzáférést, amelyek nem megfelelők külső felhasználók számára.
 
 ## <a name="setting-up-a-vendor-portal-user"></a>A szállítói portál felhasználóinak beállítása
 Mielőtt létrehozna egy felhasználói fiókot valaki számára, aki a szállítói portált fogja használni, be kell állítania a szállítót, hogy lehetővé váljon a szállítói együttműködés. Használja a **Beszerzési rendelési együttműködési** mezőt az **Általános** lapon, a **Szállítók** oldalon. A szállítói portált használó külső szállítók esetében a következő beállítást kell használni:
@@ -44,6 +47,8 @@ Ha egy adott személynek több szállítói fiókkal kell hozzáférnie a száll
 <a name="see-also"></a>Lásd még
 --------
 
-[Vendor collaboration](collaborate-vendors-vendor-portal.md)
+[Szállítói együttműködés](collaborate-vendors-vendor-portal.md)
+
+
 
 

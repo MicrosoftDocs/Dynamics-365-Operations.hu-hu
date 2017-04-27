@@ -1,5 +1,5 @@
 ---
-title: "Több kedvezményes időszakok rendelkező részleges szállítói kifizetés kiegyenlítése"
+title: "Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik"
 description: "Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Több kedvezményes időszakok rendelkező részleges szállítói kifizetés kiegyenlítése
+# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak. 
 
 A 3054. szállító a Fabrikamnak 2 százalékos készpénzfizetési engedményt ad, ha a számlát öt napon belül kifizeti, és 1 százalékot, ha a számlát 14 napon belül kifizeti.
 
 ## <a name="invoice"></a>Számla
-A június 28 április 1 000,00 3054 szállítói számlát hoz létre. April megtekintheti ezt a tranzakciót a **Szállítói tranzakciók** oldalon.
+Június 28-én April egy 1.000,00 értékű számlát hoz létre 3054-es szállító számára. April megtekintheti ezt a tranzakciót a **Szállítói tranzakciók** oldalon.
 
 | Bizonylat   | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg   | Pénznem |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -48,7 +51,7 @@ A következő készpénzfizetési engedmény dátumok és az összegek érhetők
 | 2015/07/25          | 0,00                 | 1000,00                       |
 
 ## <a name="payment-on-july-2"></a>Kifizetés július 2-án
-Július 2-án április szeretne 300.00 szemben a számla kifizetésére. Ennek érdekében létrehoz egy egyszeri kifizetés segítségével a **kifizetési napló** lap kötelezettségek modulban. Felvesz egy sort a 3054. szállítónak, és beilleszti a fizetési összeget, amely **300,00**. April ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a kiegyenlítendő számlát kiegyenlítettnek jelölje. Frissíti az értéket a **Kiegyenlítendő összeg** mezőben, hogy az **300,00** legyen, és észleli, hogy az érték az **Alkalmazandó készpénzfizetési engedmény összege** mező **6,12** értékre változik. Mivel ezt kifizetést az engedmény első időszakában egyenlítik ki, ezért 2 százalékos engedmény vonatkozik rá.
+Július 2-án April szeretne kifizetni a számlájából 300,00 összegű részt. April egyszeri kifizetést hoz létre a Kötelezettségek **Fizetési napló** lapján. Felvesz egy sort a 3054. szállítónak, és beilleszti a fizetési összeget, amely **300,00**. April ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a kiegyenlítendő számlát kiegyenlítettnek jelölje. Frissíti az értéket a **Kiegyenlítendő összeg** mezőben, hogy az **300,00** legyen, és észleli, hogy az érték az **Alkalmazandó készpénzfizetési engedmény összege** mező **6,12** értékre változik. Mivel ezt kifizetést az engedmény első időszakában egyenlítik ki, ezért 2 százalékos engedmény vonatkozik rá.
 
 | Jelölés | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -134,6 +137,8 @@ Július 20 April végső kifizetést hoz létre a 200,00 összeghez. Kedvezmény
 | APP-10061  | 2015/7/12 |         | 495,00                               |                                       | 0,00    | dollár      |
 | DISC-10061 | 2015/7/12 |         | 5,00                                 |                                       | 0,00    | dollár      |
 | APP-10062  | 2015/7/20 |         | 200,00                               |                                       | 0,00    | dollár      |
+
+
 
 
 

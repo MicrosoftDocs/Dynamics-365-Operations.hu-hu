@@ -1,6 +1,6 @@
 ---
-title: "Kiemelt BI tartalom felvétele"
-description: "Ez a témakör ismerteti a Dynamics 365 műveletek - felvételi teljesítmény BI-tartalom. Ismerteti, hogyan lehet elérni a jelentések, amelyek szerepelnek a csomagot, és tájékoztatást nyújt az adatmodell és a csomag létrehozásához használt entitások."
+title: "Toborzási Power BI-tartalom"
+description: "Ez a témakör a következőt ismerteti: Dynamics 365 for Operations - Toborzási Power BI-tartalom. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,49 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recruiting-power-bi-content"></a>Kiemelt BI tartalom felvétele
+# <a name="recruiting-power-bi-content"></a>Toborzási Power BI-tartalom
 
-Ez a témakör ismerteti a Dynamics 365 műveletek - felvételi teljesítmény BI-tartalom. Ismerteti, hogyan lehet elérni a jelentések, amelyek szerepelnek a csomagot, és tájékoztatást nyújt az adatmodell és a csomag létrehozásához használt entitások.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>A csomag elérése
+
+Ez a témakör a következőt ismerteti: Dynamics 365 for Operations - Toborzási Power BI-tartalom. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+
+<a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
 --------------------------
 
-A munkaerő-toborzás csomagot a megosztott eszközök a Microsoft Dynamics életciklus szolgáltatások (LCS) könyvtárban található. Töltse le a csomagot, és csatlakoztassa a Microsoft Dynamics 365 műveletekre vonatkozó további információt lásd: [a Microsoft és a partnerek LCS kiemelt BI-tartalom](power-bi-content-microsoft-partners.md).
+A toborzás tartalomcsomagot a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalomcsomag letöltésére és a Microsoft Dynamics 365 for Operations adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>A csomag található jelentések
-A Dynamics 365 műveleti adatok a csomag már csatlakozott, miután a jelentések megjelenítése a szervezet adatait. Ha korábban sosem használta a Microsoft kiemelt BI előtt, többet is megtudhat erről a a [Power BI lap interaktív tanulási](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag tartalmazza a jelentések további információkat tartalmazó táblázatok és diagramok is rendelkezik. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
+## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
+Miután csatlakoztatta a tartalmi csomagot a Dynamics 365 for Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
 
 | Jelentés                       | Tartalom                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Kérelmező elemzés           | A kérelmezők feladat, a kérelmező források, kérelmezők helyét, és a pályázók száma összesen           |
-| Pályázó állapota             | Pályázók típusa és állapota és a Pályázó állapota                                                    |
-| Kérelmező demográfiai adatai       | Kérelmezők életkora és neme, és a kérelmezők végzettségi szint és állapot                             |
-| Toborzás-elemzés          | NET felvételi arány, a rossz hires és toborzási költségek százalékos felvenni napok átlagos száma                    |
-| Toborzási projekt elemzés | Toborzási projektek, a toborzási projekt által nyílások és a kérelmező által a toborzási projekt száma |
+| Pályázóelemzés           | Pályázók munka szerint, pályázóforrások, pályázók hely szerint, és pályázók összes száma           |
+| Pályázó állapota             | Pályázók típus és állapot szerint és a pályázó állapota                                                    |
+| Pályázó demográfiai adatai       | Pályázók életkor és nem szerint, és kérelmezők végzettségi szint és állapot szerint                             |
+| Toborzási elemzés          | Nettó felvételi arány, felvételig tartó napok átlagos száma, rossz felvételek százaléka és toborzási költségek                    |
+| Toborzási projekt elemzése | Toborzási projektek száma, nyitott pozíciók toborzási projekt szerint, pályázók toborzási projekt szerint |
 
-A diagramok és ezeket a jelentéseket a Mozaik szűrő, és rögzítése a diagramok és a mozaikok az irányítópulton. Szűrő és a PIN-kódot a kiemelt BI kapcsolatos további tudnivalókért lásd: [létrehozása és konfigurálása A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-365 Dynamics műveleti adatok a munkaerő-toborzás csomagot a jelentések feltöltésére szolgál. A következő táblázat mutatja az entitások a csomag alapult.
+A toborzás tartalomcsomag jelentéseinek feltöltésére a Dynamics 365 for Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
 
-| Entitás                          | Tartalom                                                         | Más entitásokkal való                                                                                                                                                                                                                 |
+| Entitás                          | Tartalom                                                         | Más entitásokkal való kapcsolatok                                                                                                                                                                                                                 |
 |---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Felvételi\_kérelmező           | A kérelmezők, felvett pályázók, nettó bérleti arány és költségek          | Felvételi\_ApplicantName felvételi\_társaság, Recruiting\_CalendarOffset Recuriting\_felvételi dátum\_GeographicLocation felvételi\_felvételi demográfiai\_toborzási projekt\_Media toborzási\_RecruitmentProject                                |
-| Felvételi\_ApplicantName       | Kérelmező Utónév, Vezetéknév és a teljes név                   | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_CalendarOffset      | Naptár eltolja a szelet jelentések                                | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_vállalat             | Vállalatok által a jelentések szűréséhez                                   | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_dátuma                | Nap, hét, hónap és év                                   | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_demográfiai adatai        | Születési idő, a nemek, etnikai és családi állapot dátuma         | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_EmployedApplicant   | Kérelmező, teljesítmény, Kezdődátum és pályázó típusa           | Felvételi\_társaság, Recruiting\_CalendarOffset felvételi\_felvételi dátum\_felvételi GeographicLocation\_ApplicantName felvételi\_foglalkoztatási felvételi\_felvételi teljesítmény\_toborzási projekt\_Media toborzási\_RecruitmentProject          |
-| Felvételi\_foglalkoztatási          | Kezdő dátum, záró dátum és átállási dátum                        | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_GeographicLocation  | Város, megye, postai kód és állam vagy megye                 | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_feladat                 | Függvény, típusa és a cím                                        | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_Media               | A kérelmezők forrás                                             | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_teljesítmény         | Minősítés, leírás és minősítési modell                            | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_RecruitmentProject  | Projekt leírása, a projekt állapotának és a nyílások                | Felvételi\_kérelmező felvételi\_EmployedApplicant felvételi\_TerminatedApplicant                                                                                                                                                               |
-| Felvételi\_TerminatedApplicant | Leállt a kérelmezők, ezért, teljesítmény és a Megszűnés dátuma | Felvételi\_társaság, Recruiting\_CalendarOffset felvételi\_felvételi dátum\_GeographicLocation felvételi\_felvételi teljesítmény\_felvételi demográfiai\_foglalkoztatási felvételi\_Media toborzási\_felvételi RecruitmentProject\_ApplicantName |
+| Toborzás\_Pályázó           | Pályázók, felvett pályázók, nettó felvételi arány és költségek          | Felvétel\_ApplicantName felvétel\_Vállalati toborzás\_CalendarOffset toborzás\_Toborzás dátuma\_GeographicLocation toborzás\_Toborzási demográfia\_Toborzás munka\_Media toborzás\_RecruitmentProject                                |
+| Toborzás\_ApplicantName       | Pályázó utóneve, vezetékneve és teljes neve                   | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_CalendarOffset      | Naptáreltolások, részletes jelentések                                | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_Vállalat             | Vállalatok a jelentések szűréséhez                                   | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_Dátum                | Napok, hetek, hónapok és évek                                   | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_Demográfiai adatok        | Születési idő, nemek, etnikaum és családi állapot         | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_EmployedApplicant   | Pályázó, teljesítmény, kezdődátum és pályázó típusa           | Toborzás\_Vállalat toborzás\_CalendarOffset toborzás\_Dátum toborzás\_GeographicLocation toborzás\_ApplicantName toborzás\_Foglalkoztatás toborzás\_Teljesítmény toborzás\_Munka toborzás\_Média toborzás\_RecruitmentProject          |
+| Toborzás\_Foglalkoztatás          | Kezdő dátum, záró dátum és átállási dátum                        | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_GeographicLocation  | Város, megye, irányítószám és állam vagy megye                 | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_Munka                 | Funkció, típus és a cím                                        | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_Média               | Pályázók forrása                                             | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_Teljesítmény         | Minősítési, leírás és minősítési modell                            | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_RecruitmentProject  | Projekt leírása, projekt állapota és nyitott pozíciók                | Toborzás\_Pályázó toborzás\_EmployedApplicant toborzás\_TerminatedApplicant                                                                                                                                                               |
+| Toborzás\_TerminatedApplicant | Megszűnt pályázók, ok, teljesítmény és a megszűnés dátuma | Toborzás\_Vállalat toborzás\_CalendarOffset toborzás\_Dátum toborzás\_GeographicLocation toborzás\_Teljesítmény toborzás\_Demográfia toborzás\_Foglalkoztatás toborzás\_Média toborzás\_RecruitmentProject toborzás\_ApplicantName |
 
-Ezek az entitások számított mértékek létrehozására használták. Ezek kiszámítása intézkedések használata a fő teljesítménymutatók (KPI) kiszámításához és a jelentések, amelyek felhasználhatók a csomagot a. Ha szeretné felvenni a további számításokhoz a jelentések és irányítópultok, töltse le, és módosítsa a Recruiting.pbix fájlt a LCS. Ez a fájl a csomag létrehozásához használt alapértelmezett adatmodell. Után végrehajtott módosításokat, egy szervezeti csomagot és felvett adatokat tartalmazó irányítópultot hozhat létre.
+Ezeket az entitásokat számított mértékek létrehozására használták. E kiszámított mértékek aztán a fő teljesítménymutatók (KPI-k) és a tartalmi csomagban használt jelentések kiszámításához használatosak. Ha szeretné felvenni a további számításokat a jelentésekbe és irányítópultokba, töltse le és módosítsa a Recruiting.pbix fájlt a LCS-ből. Ez a fájl azon alapértelmezett adatmodell, amelyet a tartalmi csomag létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
 
 ## <a name="additional-resources"></a>További erőforrások
 Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
@@ -75,6 +78,8 @@ Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia
 -   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

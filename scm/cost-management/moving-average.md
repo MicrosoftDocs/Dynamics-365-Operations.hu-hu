@@ -68,14 +68,14 @@ Mozgó átlagot alkalmazva a termék költségét a beszerzési elismervény hat
 3.  Hozzon létre egy értékesítési rendelést 1 mennyiséggel és 10,00 egységárral.
 4.  Hozzon létre egy számlát 2 mennyiséggel és 12,00 egységárral.
 
-Az egységárban való eltérés (2,00) is feladásra kerül az Árkülönbség a mozgó átlag számlához a beszerzési számla feladásakor. Ennek az oka, hogy két termék került beszerzésre 20,00 áron. Az egyik termék 10,00 egységáron került értékesítésre. A beszerzési számla feladása az egységár a 12,00-ás, 2 mennyiségű volt. A termék egységára 14.00, nem lehet feladni.
+Az egységárban való eltérés (2,00) is feladásra kerül az Árkülönbség a mozgó átlag számlához a beszerzési számla feladásakor. Ennek az oka, hogy két termék került beszerzésre 20,00 áron. Az egyik termék 10,00 egységáron került értékesítésre. A beszerzési számla 12,00 egységárral és 2 mennyiséggel került könyvelésre. A termék egységára nem könyvelhető el 14,00 értékkel.
 
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Mozgó átlagtermék és készlethelyesbítés
 Ha egy termék mozgó átlagköltségét módosítani kell, a készlethelyesbítések a mai napra vonatkozóan engedélyezettek. Egy készlethelyesbítést nem lehet visszadátumozni egy termék mozgó átlagköltségének helyesbítéséhez. Nem lehet a költségforgalmat további tranzakciókon keresztül vezetni. Ebben a példában módosul a mozgó átlagköltség egy termékre vonatkozóan.
 1.  Válassza ki a terméket, amelyre vonatkozóan módosítani kívánja a mozgó átlagköltséget.
-    | **Note**                                                                                    |
+    | **Megjegyzés**                                                                                    |
     |---------------------------------------------------------------------------------------------|
-    | A ** a mozgó átlaghoz átértékelési ** lap megvizsgálja a készlet egy termékhez. |
+    | Az **Árátértékelés a mozgó átlaghoz** lap megvizsgálja a termékhez rendelkezésre álló készletet. |
 
     A kiválasztott termék feladott mennyisége 1, a feladott értéke 12,00, a feladott egységköltsége 12,00, egységköltsége 12,00.
 2.  Frissítse az **Egységköltség** mezőt a következőre: 16,00. A rendszer kiszámítja a fennmaradó mezőket.
@@ -88,7 +88,7 @@ Ha egy termék mozgó átlagköltségét módosítani kell, a készlethelyesbít
 A **Lezárt bizonylatok** lapon megtekintheti az Önköltségi átértékelés a mozgó átlaghoz nevű számlára feladott 4,00 egységnyi korrekciót.
 
 ## <a name="moving-average-with-production"></a>Mozgó átlag termeléssel
-A mozgó átlag támogatja a termelt cikkeket. Ha szeretné használni a mozgó átlag az éles környezetben, a **becsült önköltségi ár használata** csúszka a ** termelési paraméterek ** lap szélességének kell lennie. Ez azt jelenti, hogy az aktuális anyagjegyzék-számítási ár helyett a becslés során számított önköltségi ár lesz használva.
+A mozgó átlag támogatja a termelt cikkeket. Ha szeretné használni a mozgó átlagot termelési környezetben, ki kell választania a **Becsült önköltségi ár használata** csúszkát a **Gyártásvezérlési paraméterek** lapon. Ez azt jelenti, hogy az aktuális anyagjegyzék-számítási ár helyett a becslés során számított önköltségi ár lesz használva.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Mozgó átlag visszadátumozott tranzakcióval
 A visszadátumozott tranzakciók hozzá lesznek rendelve az aktuális mozgó átlagköltséghez, és a termék tényleges mennyisége frissül, de ez nem befolyásolja a termék mozgó átlagárát. Az alábbi mozgó átlagos példában a mozgó átlagú termékhez egy visszadátumozott tranzakciót adunk fel.

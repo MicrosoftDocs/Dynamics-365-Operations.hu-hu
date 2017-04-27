@@ -1,6 +1,6 @@
 ---
 title: "A kiskereskedelmi csatornák definiálása és karbantartása"
-description: "Ez a cikk beállítása a kiskereskedelmi üzletek a Microsoft Dynamics 365 műveletek nevezik tégla és habarcs áruházak folyamatának áttekintése. A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat."
+description: "Ez a cikk a hagyományos üzlethelyiségek beállításának folyamatáról nyújt áttekintést (ezekre a Microsoft Dynamics 365 for Operations rendszer „kiskereskedelmi üzlet”-ként hivatkozik). A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="define-and-maintain-retail-channels"></a>A kiskereskedelmi csatornák definiálása és karbantartása
 
-Ez a cikk beállítása a kiskereskedelmi üzletek a Microsoft Dynamics 365 műveletek nevezik tégla és habarcs áruházak folyamatának áttekintése. A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
+[!include[banner](includes/banner.md)]
 
-Kiskereskedelmi és kereskedelmi műveletek Dynamics 365 támogatja több kiskereskedelmi csatornák, online áruházak, telefonos ügyfélszolgálatok és tégla és habarcs üzlet. A kiskereskedelemben és kereskedelemben a hagyományos boltokat kiskereskedelmi boltnak hívjak. Az üzletek saját fizetési módokkal, árcsoportokkal, (POS) pénztárgépekkel, bevételi és kiadási számlákkal, valamint munkatársakkal rendelkezhetnek. Az üzlethez kapcsolódó összes elemet be kell állítania, létrehozás előtt. Miután létrehozta a kiskereskedelmi üzletet, rendelje hozzá az üzlet által kezelendő termékeket. Rendelje hozzá az alkalmazottakat, a jegyzékeket, pénztárgépeket és a fogyasztókat is az üzlethez. Végül helyezze el az új üzletet a szervezeti hierarchiában.
+
+Ez a cikk a hagyományos üzlethelyiségek beállításának folyamatáról nyújt áttekintést (ezekre a Microsoft Dynamics 365 for Operations rendszer „kiskereskedelmi üzlet”-ként hivatkozik). A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
+
+A kiskereskedelem és kereskedelem a Dynamics 365 for Operations programban támogatja a többszörös kiskereskedelmi csatornát, mint például online boltok, hívásközpontok, és hagyományos boltok. A kiskereskedelemben és kereskedelemben a hagyományos boltokat kiskereskedelmi boltnak hívjak. Az üzletek saját fizetési módokkal, árcsoportokkal, (POS) pénztárgépekkel, bevételi és kiadási számlákkal, valamint munkatársakkal rendelkezhetnek. Az üzlethez kapcsolódó összes elemet be kell állítania, létrehozás előtt. Miután létrehozta a kiskereskedelmi üzletet, rendelje hozzá az üzlet által kezelendő termékeket. Rendelje hozzá az alkalmazottakat, a jegyzékeket, pénztárgépeket és a fogyasztókat is az üzlethez. Végül helyezze el az új üzletet a szervezeti hierarchiában.
 
 ## <a name="setting-up-retail-stores"></a>Kiskereskedelmi áruházak beállításai
-A kiskereskedelmi műveletek Dynamics 365 beállítása előtt ki kell töltenie néhány szükséges feladatok. Ezután létrehozhatja a kiskereskedelmi üzletet, és megadhatja a részleteket.
+A kiskereskedelmi üzlet a Dynamics 365 for Operations programban való beállítása előtt el kell végeznie néhány előfeltétel feladatot. Ezután létrehozhatja a kiskereskedelmi üzletet, és megadhatja a részleteket.
 
 ### <a name="prerequisites"></a>Előfeltételek
 
@@ -49,7 +52,7 @@ Kiskereskedelmi üzlet beállítása előtt el kell végeznie az alábbi feladat
 8.  Kereskedelmi termékek beállítása. A feladat részeként állítson be kiskereskedelmi termék hierarchiát, termékváltozatot és termék szortimentet.
 9.  Termékárcsoportok beállítása.
 10. Kiskereskedelmi termékárképzés beállítása. A feladat további részeként állítson be árkorrekciókat, engedményeket és kedvezmények időszakokat.
-11. Munkatársak beállításai. **Megjegyzés:** hozzá kell rendelnie megfelelő engedélyekkel a munkavállalók számára, hogy jelentkezzen be, és feladatokat a Retail POS rendszer műveletekhez a Dynamics 365 használatával.
+11. Munkatársak beállításai. **Megjegyzés:** Megfelelő engedélyeket kell társítania a dolgozókhoz, hogy bejelentkezhessenek és feladatokat hajthassanak végre a kiskereskedelmi POS pénztár Dynamics 365 for Operations rendszerében.
 12. Konfigurálja a kiskereskedelmi POS pénztárban az üzlethez hozzárendelendő profilokat. Ez a feladat számos egyéb feladatot foglal magában, mint például a pénztárgépek és jegyzékek, offline profilok és bevételezési formátumok megadása és azok paramétereinek beállítása.
 
 Tekintse át az előfeltételekben foglalt valamennyi feladatot, és hajtsa végre közülük azokat, amelyek Önre vonatkoznak.
@@ -77,5 +80,7 @@ Miután megadta a kiskereskedelmi áruház részletes adatait, hajtsa végre eze
 
 ## <a name="organization-hierarchies"></a>Szervezeti hierarchiák
 A kiskereskedelmi csatorna strukturálásához a Microsoft Dynamics AX programban a kiskereskedelmek szervezeti hierarchiát használnak. A szervezeti hierarchiák az üzleti rendszer-struktúrát alkotó szervezetek között kapcsolatokat jelölik. Amikor egy üzletet konfigurál, azt egy szervezeti hierarchiához is hozzáadhatja. Az üzletek ezt követően megoszthatják a szortimentekhez, a feltöltéshez és jelentéshez használt adatokat.
+
+
 
 

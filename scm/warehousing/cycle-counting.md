@@ -102,7 +102,7 @@ Kétféle módon lehet ütemezni a ciklikus leltározási munka ismétlődő lé
 
 ### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Ciklikus leltározási munka létrehozása, a cikkek küszöbérték paraméterei alapján
 
-Ciklikus leltározási munka létrehozható, ha a cikkek száma egy adott küszöbérték alá esik egy helyen. Ha például 60 elemek vannak olyan helyre, amelynek a számbavételi küszöb 40 ciklus. Egy értékesítési rendelési tranzakció során 25 cikkek kivételezésekor a helyről és egy átmeneti helyen helyezze. Mivel a cikkek új száma 35, és ez kisebb a küszöbérték mennyiségénél, a helyen automatikusan létrejön a ciklikus leltározási munka.
+Ciklikus leltározási munka létrehozható, ha a cikkek száma egy adott küszöbérték alá esik egy helyen. Például 60 cikk van egy olyan helyen, amelynek ciklikus leltározási küszöbértéke 40. Egy értékesítési rendelés tranzakciója közben 25 cikket kitárolnak a helyről, majd betárolják egy előkészítő helyre. Mivel a cikkek új száma 35, és ez kisebb a küszöbérték mennyiségénél, a helyen automatikusan létrejön a ciklikus leltározási munka.
 
 ### <a name="schedule-cycle-counting-work"></a>Ciklikus leltározás ütemezése
 
@@ -129,7 +129,7 @@ Az alábbi példa azt mutatja be, hogyan tud eseti ciklikus leltározást végre
 ## <a name="resolve-cycle-counting-differences"></a>A leltározási eltérések feloldása
 A leltározási eltérés akkor fordul elő a következő esetekben, ha a **ciklikusleltár-felügyelő** beállítás **Nem** értékre van állítva a munkafelhasználó azonosítójában:
 
--   A számolt érték nincs a **Munka felhasználók** oldalon lévő **Maximális százalékarány korlátja** vagy **Maximális mennyiségi korlát** mezőben megadott eltérési határokon belül. Például egy helyen az aktuális készlet mennyiség 50, és a munka felhasználó eltérés határértéke 10. Ha a munka felhasználó nem 40 és 60 közötti értéket ír be, a különbség következik be.
+-   A számolt érték nincs a **Munka felhasználók** oldalon lévő **Maximális százalékarány korlátja** vagy **Maximális mennyiségi korlát** mezőben megadott eltérési határokon belül. Tegyük fel például, hogy egy helyen az aktuális készletmennyiség 50, a munkafelhasználóhoz tartozó eltérési határérték pedig 10. Ha a munkafelhasználó nem 40 és 60 közötti értéket ír be, akkor eltérés keletkezik.
 -   A számolt érték eltér az aktuális készlet mennyiségétől, és nincsenek eltérési határértékek beállítva.
 
 A számolt érték eltéréseit módosíthatja, majd elfogadhatja a számolt értéket a **Ciklikus leltározás ellenőrzése függőben** oldalon. A cikkmennyiség módosított száma jóváhagyható az **Aktuális készlet hely szerint** oldalon. Ha az eltérés nem hagyható jóvá, akkor a számolt érték elutasításra kerül.

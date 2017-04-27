@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-locations"></a>Készlethelyek
 
+[!include[banner](../includes/banner.md)]
+
+
 A készlethelyek az alapvető raktározással (WMS I) együtt alkalmazandóak, a cikkek tárolási helyének és a cikkek WMS I raktárból történő felvételének meghatározásához.
 
 Ez a témakör a Készletkezelés modul szolgáltatásaira vonatkozik. Nem vonatkozik a Raktárkezelés modul funkcióira..
@@ -64,6 +67,8 @@ Lehetséges a helyek másolása egyik raktárból a másikba, és egy varázsló
 <a name="see-also"></a>Lásd még
 --------
 
-[Hozzon létre egy új raktári elrendezést (feladat guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[Új raktárelrendezés létrehozása (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
+
 
 

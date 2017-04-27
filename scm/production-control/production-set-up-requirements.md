@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-setup-requirements"></a>A termelésbeállítás követelményei
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk tájékoztatást ad a beállítási követelményekről a Gyártásvezérlés használatba vétele előtt. 
 
-Gyártásellenőrzés funkciókat más modulok integrálva van. Ez a kapcsolat lehetővé, hogy módosítsa a termelési megrendeléseket és megbizonyosodjon, hogy automatikusan frissítésre kerülnek minden vonatkozó folyamatban és számításban a rendszerben. A következő beállítási folyamatok abban a sorrendben vannak felsorolva, amelyben teljesítenie kell őket.
+A gyártásvezérlés integrálva van más modulokban lévő funkciókkal. Ez a kapcsolat lehetővé, hogy módosítsa a termelési megrendeléseket és megbizonyosodjon, hogy automatikusan frissítésre kerülnek minden vonatkozó folyamatban és számításban a rendszerben. A következő beállítási folyamatok abban a sorrendben vannak felsorolva, amelyben teljesítenie kell őket.
 
 ## <a name="required-baseline-setup-in-other-modules"></a>Kötelező alapbeállítás más modulokban
 Az egyéb modulokban található információkat be kell állítania, mielőtt dolgozhat a gyártásvezérléssel. Az a beállítás a következő feladatokat tartalmazza:
@@ -52,7 +55,7 @@ Mielőtt használja a gyártásvezérlést nyissa meg a szervezeti adminisztrác
 4.  **Erőforrások** – Állítson be műveleti erőforrásokat, hogy meghatározza az erőforrásokat, amelyek ahhoz használatosak, hogy elvégezze a termelési folyamatot és kapacitást tervezzen.
 
 ## <a name="required-production-parameters-setup"></a>Kötelező termelési paraméterek beállítása
-**Termelési paraméterek** – alapvető termelési paraméterek beállítása határozza meg, hogyan kezeli a rendszer, és feldolgozza a termelési rendelések. Határozz meg a termelési rendelések létrehozását, becslését, ütemezését és elhasználódását. Kijelölheti, hogy milyen visszajelzést kíván kapni és hogy hogyan történjen a költségkönyvelés.
+**Gyártásvezérlési paraméterek** – Állítson be alapvető termelési paramétereket, hogy meghatározza, hogy a rendszer hogyan kezelje a folyamatokat és termelési rendeléseket. Határozz meg a termelési rendelések létrehozását, becslését, ütemezését és elhasználódását. Kijelölheti, hogy milyen visszajelzést kíván kapni és hogy hogyan történjen a költségkönyvelés.
 
 ## <a name="required-journal-name-identification"></a>Kötelező naplónevek azonosítása
 **Termelésinapló-nevek** – Adja meg a termelésinapló-neveket, amelyek tranzakciók feljegyzésénél és feladásánál használatosak.
@@ -76,6 +79,8 @@ Ha útvonalakkal dolgozik, a műveleteket minden beállított termelési útvona
 1.  **Termelési csoportok** – Állítson be termelési csoportokat, hogy kapcsolatokat alakítson ki a termelési rendelés és a főkönyvi számlák között. A főkönyvi számlák rendelések jelentésekhez történő feladásához vagy csoportosításához használatosak.
 2.  **Termelési gyűjtők** – Hozzon létre termelési gyűjtőket, hogy csoportosítsa a termelési rendeléseket, annak érdekében, hogy feldolgozhassa a sürgős termelési rendeléseket vagy töröljön és feladjon megrendeléscsoportokat.
 3.  **Tulajdonságok** – Határozzon meg tulajdonságokat, hogy különleges attribútumokat hozzon létre, amelyeket az erőforrásaihoz rendelhet a termelési sorrend irányítása érdekében. Ezek az attribútumok hozzá vannak kapcsolva a munkaidő sablonnal.
+
+
 
 
 

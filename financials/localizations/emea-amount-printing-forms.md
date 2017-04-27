@@ -1,6 +1,6 @@
 ---
-title: "A jelentések és dokumentumok összegek megjelenítésének módosítása"
-description: "Ez a témakör információt a jelentések és egyéb dokumentumok az Észtország, Lettország, Litvánia, Lengyelország, Cseh Köztársaság, Magyarország és Oroszország összegek megjelenítésének frissítése."
+title: "Jelentések és dokumentumok összegformátumának megjelenítésének módosítása"
+description: "Ez a témakör a jelentésekben és egyéb dokumentumokban megjelenített összegek frissítésének módjáról tartalmaz információkat Észtország, Lettország, Litvánia, Lengyelország, Csehország, Magyarország és Oroszország tekintetében."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,32 +24,37 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>A jelentések és dokumentumok összegek megjelenítésének módosítása
+# <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Jelentések és dokumentumok összegformátumának megjelenítésének módosítása
 
-Ez a témakör információt a jelentések és egyéb dokumentumok az Észtország, Lettország, Litvánia, Lengyelország, Cseh Köztársaság, Magyarország és Oroszország összegek megjelenítésének frissítése.
+[!include[banner](../includes/banner.md)]
 
-Észtország, Lettország, Litvánia, Lengyelország, Cseh Köztársaság, Magyarország és Oroszország jogalanyok állíthat be a teljes nevét és rövid neveket valutaegységek és alegységekben. Ezek a nevek hogyan jelennek meg a dokumentumok és jelentések összegek átalakításához használható. Például: az összeg **LTL 100.20** jeleníthető **100 Litas 20 Centas**.
 
-## <a name="set-up-full-and-short-names-for-currency-units-and-subunits"></a>Teljes és rövid neve valutaegységek és részegységeknek beállítása
-Pénznem egység teljes és rövid nevek és nyelvek részegységeknek beállításához kövesse az alábbi lépéseket:
+Ez a témakör a jelentésekben és egyéb dokumentumokban megjelenített összegek frissítésének módjáról tartalmaz információkat Észtország, Lettország, Litvánia, Lengyelország, Csehország, Magyarország és Oroszország tekintetében.
 
-1.  Nyissa meg a **pénznemek** oldalon.
+Az Észtország, Lettország, Litvánia, Lengyelország, Csehország, Magyarország és Oroszország területén működő jogi személyeknél beállítható teljes név és rövid név a valutaegységekhez és alegységekhez. Ezek a nevek használhatók annak átalakításához, hogy hogyan hogyan jelennek meg az összegek a dokumentumokban és jelentésekben. Például: az **LTL 100.20** összeg megjeleníthető úgy, hogy **100 Litas 20 Centas**.
+
+## <a name="set-up-full-and-short-names-for-currency-units-and-subunits"></a>Pénzegységek és részegységek teljes és rövid nevének beállítása
+Pénzegységek teljes és rövid nevének és nyelvek részegységeinek beállításához kövesse az alábbi lépéseket:
+
+1.  Nyissa meg a **Pénznemek** oldalt.
 2.  Válassza ki a pénznemet.
-3.  Kattintson a műveletpanel a **Declension**.
-4.  Teljes nevét és rövid nevét a nyelv hozzáadásához kattintson a **új**, és töltse ki a következő mezőket.
+3.  A Művelet panelen kattintson a **Ragozás** elemre.
+4.  Egy nyelvhez teljes név és rövid név hozzáadásához kattintson a **Új** elemre, és töltse ki a következő mezőket.
     |                                                           |                                                                                                                                                                                                                    |
     |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **Field**                                                 | **Description**                                                                                                                                                                                                    |
-    | **Language**                                              | Adja meg az aktuális szöveg nyelvét.                                                                                                                                                                          |
-    | **Egyes szám alanyeset (egységek mezőcsoport neve)**       | Adja meg a pénznem egyes számú alak. Például az egyes Litas formátuma Litas.                                                                                                                         |
-    | **Többes szám alanyeset (egységek mezőcsoport neve)**         | Adja meg annak a pénznemnek a többes számú alak. Írja be például a Litai. **Megjegyzés:**: A **egyes szám birtokos eset** és **többes szám birtokos eset** mezők állnak rendelkezésre a kiválasztott nyelv alapján a **nyelv** mezőben. |
-    | **Egyes személyes mező (részek mezőcsoport neve)** | Adja meg a pénznem alegység egyes számú formája.                                                                                                                                                            |
-    | **Többes szám alanyeset (részek mezőcsoport neve)**         | Adja meg a pénznem alegység többes számú formája.                                                                                                                                                              |
-    | **(Rövid név mezőcsoport) egységek billentyűparancsneve**       | Adja meg az ISO-kód azonosítja a pénznem. Például a litván litas azonosítására az LTL karaktersort adja meg.                                                                                                                             |
-    | **Billentyűparancsneve (rövid név mezőcsoport)**      | Adja meg a pénznem alegység megnevezése. Írja be például a Centas.                                                                                                                                         |
-    | **Conjunction 'and' between units and parts**             | Bejelölésével kinyomtathatja a együtt "és" a pénznem egységek és az egység részek között. A számlákon vagy a jelentések, például a LTL 100.20 összege 100 Litas és 20 Centas megjelennek.                      |
+    | **Mező**                                                 | **Leírás**                                                                                                                                                                                                    |
+    | **Nyelv**                                              | Adja meg az aktuális szöveg nyelvét.                                                                                                                                                                          |
+    | **Egyes szám alanyeset (Egységek mezőcsoport neve)**       | Adja meg a pénznem egyes számú formáját. Például a Litas egyes számának formája Litas.                                                                                                                         |
+    | **Többes szám alanyeset (Egységek mezőcsoport neve)**         | Adja meg a pénznem többes számú formáját. Például írja be azt, hogy Litai. **Megjegyzés:**: az **Egyes szám birtokos eset** és a **Többes szám birtokos eset** mezők a **Nyelv** mezőben kiválasztott nyelv alapján állnak rendelkezésre. |
+    | **Egyes szám alanyeset mező (Részek mezőcsoport neve)** | Adja meg a pénznem alegységének egyes számú formáját.                                                                                                                                                            |
+    | **Többes szám alanyeset (Részek mezőcsoport neve)**         | Adja meg a pénznem alegységének többes számú formáját.                                                                                                                                                              |
+    | **Egységek rövidített neve (Mezőcsoport rövid neve)**       | Adja meg a pénznem azonosítására szolgáló ISO-kódot. Például a litván litas azonosítására az LTL karaktersort adja meg.                                                                                                                             |
+    | **Részek rövidített neve (Mezőcsoport rövid neve)**      | Adja meg a pénznem alegységének megnevezését. Például írja be azt, hogy Centas.                                                                                                                                         |
+    | **„És” kapcsolat az egységek és részek között**             | Jelölje be a pénzegységek és egységrészek közötti „és” kapcsolat kinyomtatásához. A 100,20 LTL összeg például így „100 litas és 20 centas” formában jelenik meg a számlákon és jelentéseken.                      |
 
-5.  Click **Save**.
+5.  Kattintson a **Mentés** gombra.
+
+
 
 
 

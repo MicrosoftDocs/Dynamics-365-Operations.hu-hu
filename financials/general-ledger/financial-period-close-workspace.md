@@ -28,44 +28,47 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="financial-period-close-workspace"></a>Pénzügyi időszak lezárása munkaterület
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk betekintést nyújt a Pénzügyi időszak zárásának munkaterületébe és az ehhez társított beállításokba.
 
 Pénzügyi időszak lezárása munkaterület
 
-A **a pénzügyi időszak lezárása** munkaterület segítségével nyomon követhetők a záró pénzügyi folyamatok a vállalatok, a területek és a személyek között. Attól függően, hogy a nézet a **a pénzügyi időszak lezárása** munkaterület, látni fogja, vagy a feladatok és a záró ütemezés, vagy csak az Önhöz rendelt feladatok állapotokat. 
+A **Pénzügyi időszak lezárása** munkaterület lehetővé teszi a vállalatok, területek, valamint emberek közti pénzügyi záró folyamatok nyomon követését. A **Pénzügyi időszak zárása** munkaterület nézetétől függően vagy az egy zárási ütemezéshez tartozó összes feladatot és állapotot látja, vagy csak azokat a feladatokat amelyek önre lettek kiosztva. 
 
-A munkaterület tetején záró ütemezés először ki kell választania. Minden adat a munkaterületen megjelenő majd a kijelölt záró ütemezés szerint van szűrve.
+Először meg kell adnia a zárási ütemezést a munkaterület tetején. Ezután a munkaterületen megjelenített összes adatot szűri a program, a kiválasztott zárási ütemterv szerint.
 
 ### <a name="summary-tiles"></a>Összesítő csempék
 
-Az **Összefoglaló** csempéken áttekintheti a folyamatokat és az indikátorok segítenek a zárási folyamat kivitelezésében. Feladatok múltbeli esedékes, a fennmaradó tevékenységek ma, ma esedékesek, de a függőségek miatt blokkolt feladatok és a folyamat további feladatok láthatók. Ez az információ a kijelölt záró engedményes listában szereplő összes vállalat szolgál.
+Az **Összefoglaló** csempéken áttekintheti a folyamatokat és az indikátorok segítenek a zárási folyamat kivitelezésében. Láthatja a lejárt határidejű, hátralévő feladatokat az adott napon, feladatokat amelyeknek az adott napon van a határideje, de a függőségek miatt blokkolva vannak és a folyamat hátralévő feladatait. Ez az információ minden vállalatra vonatkozik, amelyik a kiválasztott zárási ütemtervben szerepel.
 
 ### <a name="tasks-and-status-section"></a>Feladatok és állapot szakasz
 
-A a **feladatok és állapot** szakaszban, a teljes állapotának záró ütemezés többféle módon oszlanak meg: vállalat, területenként állapot és állapot szerint felelős személy állapota. A záró feladatok ütemezése, csak feladatok határidejeként a mai napon, az állapota megtekinthető vagy feladatok, amelyek lejárt határidejű úgy módosítani a szűrőt a kártya lista tetején. Egy adott vállalat állapotának megtekintése a vállalat szűrőt is megadhat. Minden állapota lap adja meg százalékban elkészült és a maradó feladatok száma szerinti bontásban. Kattintson a kártyára vagy a **részletek megtekintése** művelet a kijelölt kártya részletes tevékenység szűrni. 
+A **Feladatok és állapot** szakaszban, az összesített zárási ütemezés állapota különböző módokon kerül lebontásra: vállalat szerinti állapot, terület szerinti állapot, felelős személy szerinti állapot. A kártyalista tetején látható szűrő módosításával megtekintheti a zárási ütemezésben szereplő összes feladat állapotát vagy akár csak a mai vagy a múltbéli feladatok állapotát is. A vállalat szűrőt beállíthatja egy kiválasztott vállalat állapotának mutatására is. Minden állapot lap lebontásra kerül a teljesített feladatok százalékos arányára és a hátralevő feladatok számára. Kattintson a kártyára vagy a **Részletek megtekintése** funkcióra a kiválasztott kártya által felsorolt részletes feladatlista kiszűrésére. 
 
-Az utolsó lapon van részletes a feladatlista. A lista mutatja a teljes és szűrhetők, hogy csak azok a feladatok, amelyek a bennünket érdeklő. A feladatlista többféle módon végezhet. Szűrhet például feladat dátuma, a társult vállalkozás és a hozzá tartozó terület. Választhatja azt is, megjelenítése vagy elrejtése a befejezett feladatokat a feladatlistában. 
+Az utolsó lapon a részletes feladatok listája látható. Ez a lista a teljes feladatot megjeleníti és alkalmazható hozzá szűrő, hogy csak a kívánt feladatokat jelenítse meg. A feladatlistára számos szűrést alkalmazhat. Például alkalmazhat szűrést feladat, határidő, társított vállalat, társított terület szerint. Továbbá kiválaszthatja hogy a teljesített feladatok megjelenjenek-e a listában. 
 
 Két kijelző használatos a feladatokhoz:
 
--   Egy felkiáltójel-ikon azt jelzi, hogy a tevékenység lejárt. Lejárt határidejű feladatok esetében a határidő is vörös színnel lesz kiemelve.
--   Egy lakatot ábrázoló ikon azt jelzi, hogy a feladat függ, egyéb feladatok, amelyek nem fejeződött be. Egy tevékenység, amely blokkolja a függőségek nem lehet megjelölni, befejezését követően. Egy tevékenység függőségei segítségével állíthatjuk be a **függőség beállítása** művelet.
+-   A felkiáltójel azt jelzi, hogy a feladat lejárt határidejű. A lejárt határidejű feladatok határideje piros színnel is ki van emelve.
+-   A lakat ikon azt jelzi, hogy a feladat más, teljesítetlen feladatoktól függ. A függőségek miatt zárolt feladatokat nem lehet befejezettnek jelölni. A feladat függőségeit a **Függőségek beállítása** művelettel állíthatja be.
 
-A tevékenység neve a Műveletek lap vagy más weblap Microsoft Dynamics 365 mutató hivatkozás, ahol a felhasználónak kell lépnie a munka elvégzéséhez. E hivatkozás segítségével is beállíthatjuk a **tevékenységkapcsolat** mezőt a tevékenység létrehozása vagy szerkesztése. 
+A feladat neve egy hivatkozás, amely a Microsoft Dynamics 365 for Operations oldalra vagy egy másik webhelyre mutat, amelyet a felhasználónak fel kell keresnie a feladat befejezéséhez. A **Feladathivatkozás** mezőben beállíthatja ezt a hivatkozást a feladat szerkesztésekor vagy létrehozásakor. 
 
-Csatolhat fájlokat, jegyzetek, képek és URL-címek egy feladat segítségével a **a mellékletek** művelet. Például jelzik a napló számok, amelyek a tevékenység részeként, megjegyzéseket fűzhet az adott tevékenységre, vagy fájlt csatol egy jelentésben kinyomtatott feladat. Egy ikon jelenik meg a **melléklet** a feladat, ha a melléklet e oszlop. 
+Csatolhat fájlokat, megjegyzéseket, képeket és URL-eket egy feladathoz a **Mellékletek** művelettel. Például megjelölhet naplószámokat, amelyek a feladat részét képezik, és megjegyzéseket adhat egy adott feladathoz, vagy jelentést csatolhat a fájlhoz amelyik a feladathoz lett nyomtatva. Egy ikon jelenik meg a **Melléklet** oszlopban a feladatnál, ha a feladat rendelkezik melléklettel. 
 
-A **tevékenység teljes** kézi beállítást a feladat befejezése után. A tevékenység befejezésekor jelölt a **dátum szerzett** mező automatikusan frissül az aktuális dátum és idő. Függőség mutatók szükség szerint frissül.
+A **Kész feladat** lehetőséget manuálisan lehet kiválasztani a feladat befejezése után. Amikor egy feladatot befejezettként jelöl meg, akkor a **Befejezés dátuma** mező automatikusan frissül az aktuális dátumra és időre. A függőségi indikátorok szükség szerint szintén frissülnek.
 
 ## <a name="all-financial-period-close-tasks-list-page"></a>Összes pénzügyi időszak lezárási feladatainak listaoldala
-Minden jelenlegi és az előző időszak bezárás feladatokat is megtekintheti a **tevékenységek minden pénzügyi időszak lezárása** lista lap. A lista lap leginkább használatos a zárási folyamat történeti elemzésre, mert az ütemezett kapcsolatos információkat tartalmaz határidejét, a tényleges befejezési dátuma, valamint az a személy, aki végrehajtotta a feladatot. Jelentések és vizsgálati célokból egyszerűen exportálja a lista lapon található információkat Microsoft Excel.
+Megjelenítheti az összes jelenlegi és előző időszaklezárási feladatot az **Összes pénzügyi időszak zárási feladata** listaoldalon. Ez a listaoldal legjobban az előzmények vizsgálatához használható, zárási folyamat során, mert tartalmazza az ütemezett határidőket, a tényleges teljesítési dátumokat és a személyt aki befejezte a feladatot. Könnyedén exportálhatja az információkat a listaoldalról Microsoft Excel fájlba jelentések elkészítéséhez és auditokhoz.
 
 ## <a name="financial-period-close-configuration-page"></a>Pénzügyi időszak lezárási konfigurációs oldala
-Használata előtt a **a pénzügyi időszak lezárása** munkaterület, be kell állítania a folyamat a Microsoft Dynamics 365 műveletek segítségével a **pénzügyi időszak lezárása konfigurációs** oldalon. (Kattintson a **főkönyvi**&gt;**időszak zárja be a**&gt;**pénzügyi időszak lezárása konfigurációs**.)
+A **Pénzügyi időszak zárása** munkaterület használata előtt konfigurálja a folyamatot a Microsoft Dynamics 365 for Operations rendszerben a **Pénzügyi időszak lezárási konfigurációja** oldalon. (Kattintson a **Főkönyv** &gt; **Időszak zárása** &gt; **Pénzügyi időszak lezárási konfigurációja** lehetőségre.)
 
 ### <a name="resources"></a>Erőforrások
 
-A a **erőforrásokat** lapon megadhatja a zárási folyamat részt vevő személyek. Minden alkalmazott, aki felelős a záró feladat lesz először itt kell rendelni. Meg kell adnia az alkalmazott nézet a munkaterület. Az alábbi lehetőségek közül választhat:
+Az **Erőforrások** lapon meghatározhatja az alkalmazottakat, akiket be kíván vonni a zárási folyamatba. Minden alkalmazottat, aki zárási feladatért felelős, először itt kell hozzárendelni. Az alkalmazott munkaterület-nézetét is meg kel adnia. Az alábbi lehetőségek közül választhat:
 
 -   **Kizárólag hozzárendelt tevékenységek** – A felhasználó csak a hozzárendelt feladatait látja.
 -   **Feladatok és állapot** – A felhasználó teljes folyamat minden lezárási feladatot és állapotot lát.
@@ -78,30 +81,32 @@ Használhat logikai feladatterületeket a szervezeten belül, csoportos zárási
 
 ### <a name="calendars"></a>Naptárak
 
-Létrehozása és szerkesztése a záró pénzügyi naptárak naptárak lapján.  Ez az, ahol határozza meg a munkanap záró folyamatokat, és zárási feladatok ütemezése fogja használni.  Új naptár létrehozása, és adja meg a munkanap a tevékenységek ütemezésére használható.  A legcélszerűbb naptár létrehozása hosszú ideig, mint egy év vagy több év óta létrehozása után is módosíthatók.  Miután létrehozta a naptár, kattintson a Szerkesztés gombra az adott napra, például a munkaszüneti napokat a naptárban frissítése.  Feladat bezárása azokon a napokon, amikor a vezérlőelem értéke nyitott lesz ütemezve.  Záró feladatok ütemezése egy meghatározott napon nem lehet, ha azt a napot kell a vezérlőelemben lévő érték lezárva értékűre.
+A Naptárak lapon létrehozhat és szerkeszthet pénzügyi zárási naptárakat.  Itt definiálhatja a zárási folyamatok munkanapjait és ütemezheti a zárási feladatokat.  Hozzon létre egy új naptárat és jelölje meg a feladat-ütemezés munkanapjait.  Legjobb megoldás, ha hosszú időszakra hozza létre a naptárat, egy, vagy akár több évre, ugyanis a létrehozás után szerkeszthető.  Miután létrehozta a naptárat kattintson a Szerkesztés gombra a naptár frissítéséhez, ha szeretne konkrét napokat, például ünnepeket megadni.  A zárási feladatok olyan napokra lesznek ütemezve ahol a Vezérlőérték Nyitva.  Ha a zárási feladatokat nem akarja egy adott napra ütemezni, akkor azon a napon a Vezérlőértéket állítsa Zárt értékre.
 
 ### <a name="templates"></a>Sablonok
 
-Pénzügyi szoros sablont használ a zárási folyamat részét képező összes feladatok definiálásához. A záró feladat egy ismétlődő munka tevékenység elvégzéséhez minden zárási folyamat részeként az egyén rendelt. A sablon egy relatív határidő dátumát meg kell adni minden záró feladat. A relatív esedékességi dátum előtti napok száma, vagy a meghatározott időszak záró dátuma után a feladatnak el kell készülnie minden időszakban. Esedékesség időpontja is minden tevékenységhez van rendelve. Az esedékességi idő környezetével az időzónát állítja be, és minden felhasználó számára az időzóna konvertálja. 
+A pénzügyi zárási sablont az olyan feladatok definiálásához használhatja, amelyek részei a zárási folyamatnak. A zárási feladat egy ismétlődő munka, amely egy személyhez van rendelve, akinek a zárási folyamat részeként kell azt elvégeznie. A sablonban meg kell adni egy relatív határidőt minden egyes zárási feladathoz. A relatív határidő azoknak a napoknak a száma amelyek előtt vagy után az adott feladatnak a határideje meg lesz határozva minden időszakban. Határidő minden feladathoz szintén hozzárendelésre kerül. A határidő az Ön időzónája alapján kerül meghatározásra, és a rendszer átalakítja a felhasználó időzónájára. 
 
-Feladat a sablon rendelhet egy vagy több társaság, ahol ez a feladat vonatkozik. Ha egy másik személy töltse ki, hogy minden egyes vállalat munka erőkifejtés van rendelve, akkor hasznos lehet az azonos munka erőfeszítések több feladatok létrehozása. Külön feladat létrehozása minden egyes vállalathoz. 
+A sablonban hozzárendelhet egy feladatot egy vagy több vállalatot, amire a feladat vonatkozik. Ha egy másik személy van hozzárendelve a munkához minden egyes vállalatnál, akkor hasznos lehet több feladat létrehozása ugyanahhoz a munkához. Külön feladat létrehozása minden egyes vállalathoz. 
 
-A **tevékenységkapcsolat** menüpont társítva a tevékenység munka erőfeszítés, és a munkaterület feladat hivatkozás közvetlenül a kapcsolódó lap megnyitásához is használható. Például össze kell kapcsolni a záró feladat futtatása kötelezettségek pénznem átértékelés folyamatát és a hozzájuk kapcsolódó **árfolyam-korrekció** a Microsoft Dynamics 365 műveletek lap. Külső URL-címet is hivatkozhat. 
+A **Feladathivatkozás** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például egy zárási feladat pénznem-újraértékelési folyamatának futtatása a Kötelezettségekben hozzárendelhető a Microsoft Dynamics 365 for Operations **Devizaátértékelés** oldalához. Külső URL-címet is hivatkozhat. 
 
-> [! Emlékeztető] Ha szeretné egy adott Management Reporter jelentés a pénzügyi időszak bezárás tevékenységre mutató hivatkozás, használhatja a jelentés URL-címe. A jelentés URL-cím elérésére a report designer nyissuk meg a jelentést, és kattintson **fájl**&gt;**jelentés megtekintése**, egy webböngészőben nyissa meg a jelentést. Ezután bemásolhatja az URL-címet a böngésző címsorába, és beillesztheti a **Feladathivatkozás** **URL** cím mezőbe. 
+> [!Javaslat] Ha szeretne egy adott Felügyeleti jelentéskészítő jelentést csatolni egy pénzügyi időszak zárási feladatához, akkor használhat jelentés-URL-t. A jelentés-URL-címének eléréséhez nyissa meg a jelentést a jelentéstervezőben, és kattintson a **Fájl** &gt; **Jelentés megtekintése** elemre, ha szeretné a jelentést egy webböngészőben megnyitni. Ezután bemásolhatja az URL-címet a böngésző címsorába, és beillesztheti a **Feladathivatkozás** **URL** cím mezőbe. 
 
-Tevékenységfüggőségek meghatározhatja a sablonban. Ha egy feladat függ, hogy egy vagy több feladatot is van, ezt a feladatot nem lehet megjelölni, befejezését követően a függőségeket befejezéséig. 
+Megadhat feladatfüggéseket a sablonban. Ha egy feladat egy vagy több feladattól is függ, akkor az a feladat nem jelölhető meg befejezettként, amíg a függő feladatokat nem végezték el. 
 
-Pénzügyi szoros több sablont is létrehozhat. A különböző sablonokat használ különböző zárási folyamatok nyomon követésére vagy különböző időszaktípusok Záró hónap vagy év végén, a zárási folyamatok nyomon követésére használhatja. Egy sablon létrehozását követően másolja azt egy új sablont, és végezze el a szükséges módosításokat. Csak egy sablon rendelhet minden egyes záró ütemezés.
+Több pénzügyi zárási sablont is létrehozat. Ezután a különböző sablonokat használhatja a különböző időszaktípusokhoz, például hónap végéhez, év végéhez tartozó zárási folyamatok nyomon követéséhez, vagy figyelemmel követhet vállalatokat, amelyek eltérő zárási folyamatokat használnak. Miután létrehozott egy sablont, bemásolhatja egy új sablonba és módosíthatja. Egy zárási ütemtervhez csak egy sablont rendelhet hozzá.
 
 ### <a name="closing-schedules"></a>Lezárási ütemezések
 
-Ütemterv záró pénzügyi szoros sablon rendelhet egy adott pénzügyi időszakban, be kell zárni. A feladatokat a sablonból majd automatikusan létrehozza az adott időszakra vonatkozóan, és az új záró ütemezés kell hozzáadni a munkaterülethez. Egy új záró ütemezés létrehozása a **időszak záró dátuma** mező segítségével meghatározható, hogy a tényleges fizetési dátuma a relatív alapuló záró feladatok teljesítési határidejét a pénzügyi szoros sablon hozzá van rendelve. 
+Használhat egy zárási ütemtervet arra, hogy egy pénzügyi zárási sablont hozzárendeljen egy pénzügyi időszakhoz, amit le kell zárni. A sablonon lévő feladatok ezután automatikusan létrejönnek az adott időszakra, és az új zárási ütemterv hozzáadódik a munkaterülethez. Amikor új zárási ütemtervet hoz létre, akkor az **Időszak záró dátuma** mező határozza meg a tényleges határidőket a lezárási feladatokhoz, a relatív határidő alapján, amelyet a pénzügyi zárási sablonban adott meg. 
 
-Rendelje hozzá a naptár megfelelő záró ütemezés, a tevékenységek ütemezésére használható munkanapon belül jelzi. Ha nem definiálunk egy naptárat, az esedékes Tevékenységdátumok fogják használni a hét minden napján. 
+Rendelje hozzá a megfelelő naptárat a zárási ütemtervhez, hogy megjelölje a feladat ütemezéséhez a munkanapokat. Ha nem ad meg konkrét naptárat, akkor a feladat határidői a hét minden napját igénybe veszik. 
 
-A vállalatok a záró ütemezés rendelendő is meg kell adni. Ha több vállalat sablon tevékenységeket rendel, külön feladatokat minden vállalathoz, amely a záró ütemezését, és a sablon tevékenységhez rendelt hozható létre. 
+Létre kell hoznia a vállalatokat is, amelyekhez a záró ütemezés társítva lesz. Ha a sablonfeladatok több vállalathoz vannak hozzárendelve, akkor külön feladatok jönnek létre minden egyes vállalathoz, amely szerepel a zárási ütemtervben és hozzá van rendelve a sablonfeladathoz. 
 
-Záró ütemezés befejezése után jelölje ki a **zárt** lehetőség. A feladatelőzmények továbbra is elérhetők legyenek a **tevékenységek minden pénzügyi időszak lezárása** lista lap, de a záró ütemezés eltávolítása a munkaterületről. Után záró ütemezés jelölése: **zárt**, nem fogunk tudni, tevékenységek hozzáadása, feladatok szerkesztése vagy feladatok eltávolítása.
+Miután befejezte a záró ütemtervet, válassza a **Lezárt** lehetőséget. A feladatelőzmények továbbra is elérhetők az **Összes pénzügyi időszak zárási feladatai** listaoldalon, de a zárási ütemterv eltávolításra kerül a munkaterületről. A zárási ütemtervhez **Lezárt** állapotban már nem lehet feladatokat adni, azokat szerkeszteni vagy eltávolítani belőle.
+
+
 
 

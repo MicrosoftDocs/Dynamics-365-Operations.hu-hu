@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-rules"></a>Könyvvizsgálati irányelvszabály
 
+[!include[banner](../includes/banner.md)]
+
+
 Naplózási házirendek segítségével kiértékelhet költségjelentéseket, szállítói számlákat és beszerzési rendeléseket, hogy így meggyőződhessen arról, hogy azok megfelelnek-e az Ön által létrehozandó irányelvszabályoknak. Minden olyan szabály, amelyhez egy könyvvizsgálati irányelv van társítva, kötegelt módban van futtatva a megadott ütemezés szerint.  Minden egyes irányelvszabály egy irányelvszabály-típus egy példánya. Minden egyes irányelvszabály-típusra nézve csak egy irányelvszabály lehet aktív egyszerre. 
 
 <a name="queries-and-query-types"></a>Lekérdezések és a lekérdezéstípusok
@@ -97,5 +100,7 @@ Az egy adott auditirányelvre vonatkozó összes irányelvszabály ugyanazon kö
 --------
 
 [A könyvvizsgálati irányelvmegsértések és esetek](audit-policy-violations-cases.md)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Eltávolítási szabályok"
-description: "Ez a témakör információt eltávolítási szabályok és eltávolítások jelentések beállítási lehetőségeit."
+description: "Ez a témakör az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban szolgáltat információt."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="elimination-rules"></a>Eltávolítási szabályok
 
-Ez a témakör információt eltávolítási szabályok és eltávolítások jelentések beállítási lehetőségeit.
+[!include[banner](../includes/banner.md)]
 
-Az eltávolítási tranzakciókra akkor van szükség, amikor egy konszolidált pénzügyi jelentést alkalmazó anyavállalat üzleti kapcsolatban van egy vagy több leányvállalatával. A konszolidált pénzügyi kiadásoknak csak olyan tranzakciókat kell tartalmazniuk, amelyek a konszolidált szervezet és egyéb, a szervezeten kívüli entitások között jönnek létre. Ezért szervezethez tartozó jogi személyek közötti tranzakciók kell eltávolítani, vagy megszűnik, a főkönyvből, nem jelennek meg a pénzügyi beszámolókat. Több mód létezik, hogy jelentést tegyünk az eltávolításokról:
+
+Ez a témakör az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban szolgáltat információt.
+
+Az eltávolítási tranzakciókra akkor van szükség, amikor egy konszolidált pénzügyi jelentést alkalmazó anyavállalat üzleti kapcsolatban van egy vagy több leányvállalatával. A konszolidált pénzügyi kiadásoknak csak olyan tranzakciókat kell tartalmazniuk, amelyek a konszolidált szervezet és egyéb, a szervezeten kívüli entitások között jönnek létre. Emiatt azokat a jogi személyek közötti tranzakciókat, amelyek ugyanazon szervezet között jönnek létre, el kell távolítani a főkönyvből, hogy ne jelenjenek meg a pénzügyi jelentésekben. Több mód létezik, hogy jelentést tegyünk az eltávolításokról:
 
 -   Az eltávolítási szabály létrehozható és feldolgozható egy konszolidáló vagy eltávolító vállalatban.
 -   A pénzügyi jelentés használható, hogy megmutassa az eltávolítások számláit és dimenziót az adott sorban vagy oszlopban.
@@ -129,27 +132,29 @@ Az ön vállalata, A jogi személy, eszközöket értékesített egy, az ön sze
 Mindezen tranzakciók vállalatközi tranzakciók feladásait eredményezik a megfelelő számlákra. Ezen felül a tranzakciók tartalmazhatják a haszonkulcsokat és veszteségkulcsokat abban az esetben, ha a vállalatközi eladások összege és az eladott áruk beszerzési értéke nem egyenlő.
 
 ## <a name="set-up-elimination-rules"></a>Eltávolítási szabályok beállítása
-Dynamics 365 műveletek eltávolítási szabályok beállításakor létrehozott pénzügyi dimenzió megszüntetése céljából kifejezetten ajánlott. A legtöbb ügyfél nevű kereskedelmi Partner, vagy valami hasonló. Ha úgy dönt, hogy nem használja a pénzügyi dimenzió, akkor ellenőrizze, hogy rendelkezik, amelyek csak a vállalatközi tranzakciók az fő számlák. 
+Eltávolítási szabályok beállításakor a Dynamics 365 for Operationsben ajánlott létrehozni egy pénzügyi dimenziót kifejezetten eltávolítás céljából. A legtöbb ügyfél Kereskedelmi partnernek vagy valami hasonlónak nevezi. Ha úgy dönt, hogy nem használ pénzügyi dimenziót, úgy ügyeljen, hogy rendelkezzen olyan fő számlával, amely csak vállalatközi tranzakciókra vonatkozik. 
 
-A telepítő kiküszöbölésekhez a konszolidáció modul Beállítás területén található. Miután megadta a szabály leírását, ki kell választani a vállalat, amely az eltávolítási napló könyveli. El kell végezni egy olyan társaság, amelynek **pénzügyi eltávolítási folyamatokhoz** a jogi személy beállítás. 
+Az eltávolítási beállítások a Konszolidáció modul Beállítás területén találhatók. Miután megadta a szabály leírását, ki kell választania a vállalatot, amelyben az eltávolítási napló könyvelni fog. Ez olyan vállalat legyen, amelynél a **Pénzügyi eltávolítási folyamatokhoz** lehetőség ki van választva a jogi személy beállításainál. 
 
-Az eltávolítási szabály hatályba lép, és amikor lejárt, is beállíthat egy dátumot, ha szükséges. Meg kell **aktív** a **Igen** Ha azt szeretné, hogy a javaslat eltávolítási folyamat. Válassza ki a napló nevét, amelyen egy adott típusú **Eltávolítás**.
+Szükség esetén az eltávolítási szabályhoz beállíthat egy hatálybalépési és egy lejárati dátumot. Az **Aktív** lehetőséget **Igen** értékre kell állítania, ha azt szeretné, hogy elérhető legyen az eltávolítási javaslati folyamat során. Válasszon egy olyan naplónevet, amelynek típusa **Eltávolítás**.
 
-Után az alapvető, a tényleges feldolgozási szabályok gombra kattintva meghatározhatja **vonalak**. Két opció kiküszöbölésekhez, kiküszöbölve a forgalom összegét vagy rögzített összeg meghatározása. 
+Az alapvető beállítások megadása után a tényleges feldolgozási szabályokat a **Sorok** gombra kattintva határozhatja meg. Két opció létezik eltávolításokhoz: a nettó változás összegének eltávolítása vagy rögzített összeg meghatározása. 
 
-Válassza ki a forrásfiókéval. Használhatja a csillag (\*) helyettesítő karakterként. Például 1\* jelöljük ki, minden kezdődő számlákat 1 elosztására vonatkozó adatok forrásaként. 
+Válassza ki a forrásszámlát. Helyettesítő karakterként használhat csillag (\*) karaktert. Ebben a példában az 1\* a felosztás adatforrásaként minden olyan számlát használni fog, amelynek 1-gyel kezdődik a száma. 
 
-A forrásfiókok kiválasztása után a **figyelembe specifikáció** a a célvállalat használt fiókot határozza meg. Válassza ki **forrás** meghatározott ugyanazt a fő fiókot használni kívánt a **forrás** számla. Ha **felhasználó által definiált**, majd meg kell adnia a Célszámla. 
+A forrásszámlák kiválasztása után a **Számla meghatározása** határozza meg a célvállalat használt számláját. Válassza a **Forrás** lehetőséget, ha ugyanazt a fő számlát szeretné használni, mint ami a **Forrás** számlában van megadva. Ha a **Felhasználó által meghatározott** lehetőséget választja, meg kell adnia egy célszámlát. 
 
-A dimenzió meghatározása azonos módon működik. Ha **forrás**, ugyanezeket a dimenziókat a célvállalat, mint a forrás vállalat használja. Ha **felhasználó által definiált**, szüksége lesz a célvállalat a Dimenziók parancsra kattintva adható meg a **Cél dimenziókat** menüpont. 
+A dimenzió meghatározása azonos módon működik. Ha **Forrás** lehetőségetválasztja, ugyanazokat a dimenziókat fogja használni a célvállalatnál, mint a forrásvállalat. Ha a **Felhasználó által meghatározott** lehetőséget választja, a **Cél dimenziói** menüpont használatával meg kell adnia a célvállalat dimenzióit. 
 
-Válassza ki a forrás dimenziói és a pénzügyi dimenziók és az újak forrásként használt értékek.
+Válassza ki a forrásdimenziókat és a pénzügyi dimenziókat, valamint az eltávolítás forrásához használt értékeket.
 
 ## <a name="process-elimination-transactions"></a>Eltávolítási tranzakciók feldolgozása
-Kétféleképpen eltávolítási tranzakciók feldolgozásához vagy az eltávolítási napló létrehozása és futtatása a kármegszüntetési javaslati online összesítés során. Ez a szakasz a napló létrehozása és az eltávolítási folyamat fut összpontosít. 
+Eltávolítási tranzakciók feldolgozása kétféleképpen lehetséges: vagy az online összesítés során, vagy eltávolítási napló létrehozásával és az eltávolítási javaslati folyamat futtatásával. Ez a szakasz a napló létrehozására és az eltávolítási folyamat futtatására összpontosít. 
 
-Egy vállalat határozható meg, mint egy eltávolítási vállalatnak, jelölje ki a **eltávolítási napló** a konszolidáció modulban. Miután kiválasztotta a napló nevét, kattintson a **vonalak**. Kiválasztásával futtathatja a javaslat a **javaslatok** menü, és válassza a **eltávolítási javaslat**.
+Egy eltávolítási vállalatként meghatározott vállalatnál válassza az **Eltávolítási napló** lehetőséget a Konszolidáció modulban. Miután kiválasztotta a napló nevét kattintson a **Sorok** elemre. A javaslat futtatásához válassza a **Javaslatok** menüt, majd az **Eltávolítási javaslat** elemet.
 
-Jelölje ki az adatforrást a konszolidált vállalat, és válassza ki a feldolgozni kívánt szabályt. Adja meg az eltávolítási összegek esetében a keresés megkezdéséhez kezdő dátum és befejező dátum eltávolítási összegek Keresés vége. A **Főkönyvi könyvelési dátum** a mezőben az a dátum, a napló főkönyvbe való feladásához használatos. Amikor rákattint a **OK**, tekintse át az összegeket, és könyvelje a naplót.
+Válassza ki a konszolidált adatok forrásaként szolgáló vállalatot, és válassza ki a feldolgozni kívánt szabályt. Adjon meg egy kezdő dátumot, amelyen az eltávolítási összegek keresése kezdődik, és egy záró dátumot, amelyen az eltávolítási összegek keresése lezárul. A **Főkönyvi feladási dátum** mezőben adja meg a napló a főkönyvbe történő feladásának dátumát. Amikor rákattint a **OK** gombra, áttekintheti az összegeket és feladhatja a naplót.
+
+
 
 

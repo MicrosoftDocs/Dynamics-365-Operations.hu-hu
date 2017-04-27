@@ -1,6 +1,6 @@
 ---
-title: "Személyre szabott termék-ajánlások áttekintése"
-description: "Műveletek 365 Dynamics termék ajánlások egybeesik az értékesítés (POS) eszköz ponttal lehet megjeleníteni. Az ajánlások olyan elemek, amelyek a vevő lehet, hogy érdekli a Vásárlási előzmények, azok kívánságát lista elemeinek és más felhasználók online vásárolt cikkek és a tégla és habarcs üzletek alapján. Ajánlások a kiskereskedők nagy katalógusok, segítségre a vevő termék felderítési. Bemutató termékek szólnak, a vevő érdekeit, és a vevő szokásait, termék ajánlások Kiárusítás és kereszt-eladás kiskereskedők segíthet, és növelheti a vevői visszatartási. Műveletek 365 Dynamics termék ajánlások látja el árammal kognitív szolgáltatások és a Microsoft Azure gép tanulás."
+title: "Személyre szabott termékajánlások áttekintése"
+description: "A Dynamics 365 for Operations rendszerben a termékajánlásokat meg lehet jeleníteni a pénztár (POS) eszközön. Az ajánlások olyan elemek, amelyek érdekelhetik a vevőt a vásárlási előzmények alapján, a kívánságlistájukon levő elemek alapján, illetve olyan elemek alapján, amelyeket más felhasználók vásároltak meg online vagy hagyományos üzletekben. A nagy katalógussal dolgozó kiskereskedők esetében az ajánlások segítenek a vevőknek a termékek felderítésében. A vevő érdeklődésének és vásárlási szokásainak megfelelően célzott termékek bemutatásával a termékajánlások segíthetik a kiskereskedőket az értéknövelő, valamint a keresztértékesítésben, és növelhetik a vevők megtartását. A Dynamics 365 for Operation rendszerben a termékajánlásokat a kognitív szolgáltatás és a Microsoft Azure gépi tanulás szolgálja ki."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,59 +25,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="personalized-product-recommendations-overview"></a>Személyre szabott termék-ajánlások áttekintése
+# <a name="personalized-product-recommendations-overview"></a>Személyre szabott termékajánlások áttekintése
 
-Műveletek 365 Dynamics termék ajánlások egybeesik az értékesítés (POS) eszköz ponttal lehet megjeleníteni. Az ajánlások olyan elemek, amelyek a vevő lehet, hogy érdekli a Vásárlási előzmények, azok kívánságát lista elemeinek és más felhasználók online vásárolt cikkek és a tégla és habarcs üzletek alapján. Ajánlások a kiskereskedők nagy katalógusok, segítségre a vevő termék felderítési. Bemutató termékek szólnak, a vevő érdekeit, és a vevő szokásait, termék ajánlások Kiárusítás és kereszt-eladás kiskereskedők segíthet, és növelheti a vevői visszatartási. Műveletek 365 Dynamics termék ajánlások látja el árammal kognitív szolgáltatások és a Microsoft Azure gép tanulás.
+[!include[banner](includes/banner.md)]
+
+
+A Dynamics 365 for Operations rendszerben a termékajánlásokat meg lehet jeleníteni a pénztár (POS) eszközön. Az ajánlások olyan elemek, amelyek érdekelhetik a vevőt a vásárlási előzmények alapján, a kívánságlistájukon levő elemek alapján, illetve olyan elemek alapján, amelyeket más felhasználók vásároltak meg online vagy hagyományos üzletekben. A nagy katalógussal dolgozó kiskereskedők esetében az ajánlások segítenek a vevőknek a termékek felderítésében. A vevő érdeklődésének és vásárlási szokásainak megfelelően célzott termékek bemutatásával a termékajánlások segíthetik a kiskereskedőket az értéknövelő, valamint a keresztértékesítésben, és növelhetik a vevők megtartását. A Dynamics 365 for Operation rendszerben a termékajánlásokat a kognitív szolgáltatás és a Microsoft Azure gépi tanulás szolgálja ki.
 
 <a name="scenarios"></a>Esetek
 ---------
 
-Az alábbi esetekben POS termék ajánlások engedélyezettek. Felhő POS vagy Modern POS (MPOS) rendelkezésre áll.
+Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vagy a modern POS (MPOS) esetében állnak rendelkezésre.
 
-1.  A a **termékadatok** oldalon:
+1.  A **Termékadatok kezelése** oldalon:
 
--   Ha az üzletekhez társítása látogatások egy **termékadatok** oldalra, ha megnézzük az előző tranzakciók különböző csatornákon keresztül az ajánlás motor javasol további elemek, amelyek várhatóan együtt lehet megvásárolni.
--   Ha a tároló hozzárendelése vevő hozzáadása a tranzakcióhoz, és majd látogatások egy **termékadatok** lap, az ajánlás motor a vevői tranzakciók előzményeinek segítségével személyre szabott javaslatokat tesz.
+-   Ha az üzlet alkalmazottja megnyitja valamelyik **Termékadatok** oldalt, amikor az előző tranzakciókat nézi meg különböző csatornákat lefedve, az ajánlások motor további elemeket javasol, amelyek várhatóan együtt fognak megvásárolni.
+-   Ha az üzlet alkalmazottja hozzáad egy vevőt a tranzakcióhoz, majd látogat egy **Termékadatok** lapot, az ajánlások motor a vevői tranzakciók előzményeinek segítségével személyre szabott ajánlásokat tesz.
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-2.  A a **tranzakció** oldalon:
+2.  A **Tranzakció** oldalon:
 
--   Az ajánlás motor cikkeket a kosárba cikkek teljes listája alapján javasol.
--   Ha a tároló hozzárendelése vevő hozzáadása a tranzakcióhoz, az ajánlás motor segítségével a vevői tranzakciók előzményeinek és az elemek közül a kosár személyes javaslatokat tesz.
+-   Az ajánlások motor a kosárban levő cikkek teljes listája alapján cikkeket javasol.
+-   Ha az üzlet alkalmazottja hozzáad egy vevőt a tranzakcióhoz, az ajánlások motor a vevői tranzakciók előzményeinek segítségével, valamint a kosárban levő cikkel alapján személyes ajánlásokat tesz.
 
-**Megjegyzés:** javaslatok megjelenítése a **tranzakció** lap, a kiskereskedő kell frissíteni a képernyő-elrendezésén Dynamics 365 műveletekhez. A **ajánlások** vezérlő kell elveti a a **tranzakció** oldalon. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+**Megjegyzés:** Javaslatok megjelenítéséhez a **Tranzakció** lapon a kiskereskedőnek frissítenie kell a képernyő-elrendezést Dynamics 365 for Operations rendszerben. Az **Ajánlások** vezérlőt rá kell húzni a **Tranzakció** oldalra. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3.  A a **vevő adatai** oldalon:
-    -   Az ajánlás motor javasol cikkeket a felhasználói Azonosítót és a vevő kívánja lista alapján.
+3.  A **Vevő adatai** oldalon:
+    -   Az ajánlások motor a felhasználói azonosító és a vevő kívánságlistáján levő cikkek alapján cikkeket javasol.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Műveletek engedélyezése POS ajánlások Dynamics 365 beállítása
-Termék ajánlások beállításához tegye a következőket kell.
+## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>A Dynamics 365 for Operations rendszer konfigurálása a POS-ajánlások engedélyezésére
+A termékajánlások beállításához a következőket kell tenni:
 
-1.  Győződjön meg arról, hogy a megfelelő jelölt **jogi személy**.
-2.  Keresse meg **tároló entitás**, jelölje be **kiskereskedelmi értékesítése**, és kattintson a **frissítési**. ** ** Ez az operatív adatbázisból bemutató adatokat (vagy az adatok) használja, és helyezze át a tároló entitás.
-3.  Választható lehetőség: Javaslatok megjelenítése a tranzakciók képernyőn, Ugrás ** képernyő-elrendezés, **a képernyő-elrendezés, indítsa el a **képernyő-elrendezés tervezője**,** ** majd helyezze az elemet a ** ajánlások vezérlő ** ahol szükséges.
-4.  Keresse fel **kiskereskedelmi paraméterek**, válassza **gép-tanulás**, jelölje be ** Igen ** alatt **javaslatok engedélyezése POS**.
-5.  POS javaslatok megtekintéséhez futtassa a globális konfigurációs feladat **1110**. POS képernyő-elrendezés tervezője végzett módosítások tükrözéséhez csatorna konfigurációs feladat futtatása **1070**.
+1.  Győződjön meg arról, hogy a megfelelő **Jogi személy** választotta ki.
+2.  Keresse meg az **Entitástár** elemet, jelölje ki a **Kiskereskedelmi értékesítés** elemet, és kattintson a **Frissítés** lehetőségre. ** ** Ez az operatív adatbázisból származó bemutató adatokat (vagy az ön adatait) használja, és áthelyezi őket az entitástárba.
+3.  Választható lehetőség: Javaslatok megjelenítéséhez a tranzakciók képernyőn, menjen a ** Képernyőelrendezés **lehetőséghez, válassza ki a képernyőelrendezést, indítsa el a **Képernyő-elrendezés tervezőjét**,** ** majd helyezze az ** ajánlások vezérlőjét **oda, ahová szükséges.
+4.  Keresse fel a **Kiskereskedelmi paraméterek** elemet, válassza **Gépi tanulás** elemet, jelölje be az ** Igen **lehetőséget **POS-ajánlások engedélyezése** alatt.
+5.  A javaslatok megtekintéséhez a POS-on, futtassa az **1110** globális konfigurációs feladatot. A POS képernyő-elrendezés tervezőjén végzett módosítások megjelenítéséhez futtassa az **1070** csatorna konfigurációs feladatot.
 
 ## <a name="how-does-it-work"></a>[]()Hogyan működik?
-Frissítésekor a **tároló entitás** egység, a következő műveletek végrehajtása történik.
+Az **Entitástár** entitás frissítésekor a következő műveletek végrehajtása történik.
 
--   A kognitív szolgáltatások által megkövetelt adatokat a Dynamics 365 műveletek működési adatbázis kivonjuk, és az entitás üzlethez.
--   Az adatok tisztítható ADA tevékenységek részeként struktúra parancsfájlok segítségével az adatok által Azure Data Factory (ADF) szolgál. Blob-tároló kitisztítanak adatokat tárolja.
--   Blob-tároló adatai egy ajánlás modell vonat a kognitív szolgáltatások API-t használja.
+-   A kognitív szolgáltatások által megkövetelt formátumban a rendszer kivonja az adatokat a Dynamics 365 for Operations működési adatbázisából, és elküldi őket az entitástárba.
+-   Az adatokat az Azure Data Factory (ADF) használja fel az adatok tisztításához Hive-parancsfájlok használatával, az ADF-tevékenységek részeként. A megtisztított adatokat blobtároló tárolja.
+-   A blobtároló adatait a kognitív szolgáltatások API használja egy ajánlási modell betanításához.
 
-Ha bekapcsolja a **engedélyezése a ajánlásokról** és a konfigurációs feladatok futtatása, a következő műveletek végrehajtása történik.
+Ha bekapcsolja az **Ajánlások engedélyezése** elemet, és elvégzi a konfigurációs feladatok futtatását, a következő műveletek végrehajtása történik.
 
--   Az API kivételezni és a Dynamics 365 műveletek működési adatbázis, AOS a Web.config és is a kiskereskedelmi kiszolgálón tárolt minta hitelesítő adatai és Azonosítóját.
--   Modell hitelesítő adatai és Azonosítóját is elérhetők a CRT úgy, hogy a hívások termék ajánlások felhő POS és MPOS online módban is lehet alkalmazkodni.
+-   A modell hitelesítő adatokat és az azonosítót a rendszer az API segítségével szerzi meg, majd a Dynamics 365 for Operations működési adatbázisában tárolja, az AOS web.config állományában, illetve a kiskereskedelmi kiszolgálón is.
+-   A modell hitelesítő adatok és az azonosító hozzáférhetők a CRT számára, hogy ki lehessen szolgálni a felhő POS és az MPOS felől online módban érkező termékajánlás-lehívásokat.
 
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Ajánlások vezérlő hozzáadása a POS eszközök tranzakció lap](add-recommendations-control-pos-screen.md)
+[Ajánlások vezérlő hozzáadása egy POS-eszköz tranzakció lapján](add-recommendations-control-pos-screen.md)
+
+
 
 

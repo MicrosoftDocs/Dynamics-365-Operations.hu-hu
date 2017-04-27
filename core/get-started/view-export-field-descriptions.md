@@ -36,9 +36,9 @@ Nem minden lap rendelkezik mezőleírásokkal. Csak az összetettebb mezőkhöz 
 Amennyiben ön hozzáfér a Microsoft Dynamics 365 for Operations rendszer fejlesztői környezetéhez, új mezőleírásokat adhat meg, illetve módosíthatja a meglévő leírásokat. Például cégspecifikus információt tehet hozzá egy mezőleíráshoz. További tájékoztatást a [Mező testreszabása – súgó](/dynamics365/operations/dev-itpro/user-interface/customize-field-help) pontnál talál.
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Mezőleírások megtekintése a felhasználói felületen
-A mezőleírásokat az egérmutató adott mező fölé navigálásával tekintheti meg. Ha nem tartozik leírás az adott mezőhöz, az egérmutató mező fölé vitelekor a mező neve jelenik meg. (Megjegyzés: verzió 7.0.0, a mezők leírása megtekinthető csak a a **leírása mezőben** oldalon.) Az alábbi ábrán látható a mező leírás jelenik meg, ha az egérmutatót a **cikkek zárolása leltár közben** mezőben. 
+A mezőleírásokat az egérmutató adott mező fölé navigálásával tekintheti meg. Ha nem tartozik leírás az adott mezőhöz, az egérmutató mező fölé vitelekor a mező neve jelenik meg. (Megjegyzés: a 7.0.0 verzióban a mezők leírásai csak a **Mezőleírások** page.) Az alábbi ábrán az a mezőleírás látható, amely az egérmutató **Cikkek zárolása leltár közben** mező fölé vitelekor jelenik meg. 
 
-[![Például egy mező leírás](./media/field-description.png)](./media/field-description.png)
+[![Példa egy mezőleírásra](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>A Mezőleírások oldal segítségével megtekintheti és exportálhatja a mezőkhöz tartozó súgót
 A **Mezőleírások** oldal segítségével megtekintheti és exportálhatja a mezőleírásokat. Egyszerre csak egy lap leírásai tekinthetők meg.
@@ -73,7 +73,7 @@ Egy adott lap több módon is megkereshető a **Lap kijelölése** mezőben. Sok
     -   Ha egynél több pontos egyezés található, nem jelennek meg leírások. Ez esetben nyissa meg a legördülő listát és jelölje ki a kívánt lapot.
     -   A beírt névnek megfelelő lap leírásai jelennek meg akkor is, ha a beírt név egy másik lap nevének részét képezi. Azonban ha megnyitja a legördülő listát, abban láthatóak lesznek az adott nevet tartalmazó lapok.
 
-Például, a leírások nem jelennek meg beírásakor **leltár** a a *** oldal *** mező kijelölése. Ha rákattint a legördülő listára, két **Leltár** nevű lapot fog látni, valamint több olyan lapot, amelynek nevében szerepel a „Leltár” szó. Ha az **InventJournalCount** AOT-névvel rendelkező lapot választja, akkor megjelennek az adott laphoz tartozó mezőleírások. Azonban ha újra megnyitja a legördülő listát, látni fogja, hogy a lista most már tartalmaz minden olyan lapot, amelynél az AOT-lapnév része az „InventJournalCount”.
+Például ha a **Leltár** kifejezést írja be a ****Lap kijelölése**** mezőbe, nem jelenik meg leírás. Ha rákattint a legördülő listára, két **Leltár** nevű lapot fog látni, valamint több olyan lapot, amelynek nevében szerepel a „Leltár” szó. Ha az **InventJournalCount** AOT-névvel rendelkező lapot választja, akkor megjelennek az adott laphoz tartozó mezőleírások. Azonban ha újra megnyitja a legördülő listát, látni fogja, hogy a lista most már tartalmaz minden olyan lapot, amelynél az AOT-lapnév része az „InventJournalCount”.
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 Ez a szakasz a mezőleírások használata során felmerülő lehetséges problémák elhárításához nyújt segítséget.

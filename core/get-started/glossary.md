@@ -1,5 +1,5 @@
 ---
-title: "365 Dynamics vonatkozó műveletek szószedet"
+title: "A Dynamics 365 for Operations szószedete"
 description: "A Microsoft Dynamics 365 for Operations szószedet kulcsfontosságú szakkifejezéseket és fogalmakat ad meg a Microsoft Dynamics 365 for Operations termékben."
 author: tonyafehr
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>365 Dynamics vonatkozó műveletek szószedet
+# <a name="dynamics-365-for-operations-glossary"></a>A Dynamics 365 for Operations szószedete
+
+[!include[banner](../includes/banner.md)]
+
 
 A Microsoft Dynamics 365 for Operations szószedet kulcsfontosságú szakkifejezéseket és fogalmakat ad meg a Microsoft Dynamics 365 for Operations termékben. 
 
@@ -249,7 +252,7 @@ A felhasználó elfogadási teszt (UAT) és a gyártási környezet esetében a 
 
 Egy Visual Studio-eszköz, amelyet modellelemek létrehozására, frissítésére és vizsgálatára használatos.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**.. \financial-dimensions\dimension-based konfiguráció**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\pénzügyi dimenziókon / dimenziókon alapuló konfiguráció**
 
 Termékváltozatok termékdimenzió-értékek kijelölésével történő létrehozására használt konfigurációs technológia.
 
@@ -499,7 +502,7 @@ Egy termék része.
 
 ###### <a name="product-dimension"></a>**termékdimenzió**
 
-A méret, szín vagy konfigurációs attribútumok használt... \financial-dimensions\dimension-based-konfiguráció.
+A pénzügyi dimenziókon / dimenziókon alapuló konfigurációhoz használt méret-, szín- vagy konfigurációs termékattribútumok.
 
 ###### <a name="product-family"></a>**termékcsalád**
 
@@ -697,7 +700,7 @@ Egy vagy több termelési folyamatot szabályzó üzemi egység.
 
 Alaptermékek modellezésének és termékváltozat-konfigurációk keresésének módszere.
 
-###### <a name="vat-value-added-tax"></a>**A HÉA (hozzáadottérték-adó)**
+###### <a name="vat-value-added-tax"></a>**Áfa (általános forgalmi adó)**
 
 Termékre kivetett adó a termelésük minden szakaszában, az adott szakaszban hozzáadott érték alapján.
 
@@ -722,5 +725,7 @@ Olyan személy, aki alkalmazotti vagy alvállalkozói szerepkört vesz fel, és 
 ###### <a name="workspace"></a>**Munkaterület**
 
 Ez a lap a felhasználó által végrehajtott tevékenységek valamelyikét áttekintést nyújt. Az oldal segítségével lapok, listák és diagramok folyamatban lévő munka- és többféle forrásból származó kapcsolódó adatok megjelenítése, és az oldal felületek gyakran használják ezeket az adatokat kapcsolatos feladatok. A munkaterület összefoglaló részében megjelenő lapok is megjelennek a irányítópult kapcsolódó részében.
+
+
 
 

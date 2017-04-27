@@ -1,5 +1,5 @@
 ---
-title: "A jóváhagyási lépéshez a munkafolyamat beállítása"
+title: "Jóváhagyási lépés konfigurálása munkafolyamatban"
 description: "Ez a témakör bemutatja, hogyan kell konfigurálni a jóváhagyási lépés tulajdonságait."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>A jóváhagyási lépéshez a munkafolyamat beállítása
+# <a name="configure-an-approval-step-in-a-workflow"></a>Jóváhagyási lépés konfigurálása munkafolyamatban
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör bemutatja, hogyan kell konfigurálni a jóváhagyási lépés tulajdonságait.
 
@@ -124,10 +127,10 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket jó
     </tr>
     <tr class="even">
     <td>Felhasználó</td>
-    <td>Bizonyos Microsoft Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Microsoft Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki a lépéshez hozzárendelni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki a lépéshez hozzárendelni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -229,10 +232,10 @@ Ha egy felhasználó nem hajtja végre a dokumentum műveletét a megadott idő 
     </tr>
     <tr class="odd">
     <td>Felhasználó</td>
-    <td>Adott Dynamics 365 műveletek számára.</td>
+    <td>Konkrét Dynamics 365 for Operations-felhasználók</td>
     <td><ol>
     <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>elérhető felhasználók</strong> lista tartalmazza az összes Dynamics 365 műveletek számára. Válassza ki a dokumentumhoz eszkalálni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Dynamics 365 for Operations-felhasználót tartalmazza. Válassza ki a dokumentumhoz eszkalálni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -247,6 +250,8 @@ Ha egy felhasználó nem hajtja végre a dokumentum műveletét a megadott idő 
 
 5.  Ismételje meg a 3 – 4. lépést minden egyes olyan felhasználóra vonatkozóan, akiket hozzá kell adni az eszkalációs útvonalhoz. A felhasználók sorrendje módosítható.
 6.  Ha az eszkalációs útvonalban szereplő felhasználók nem válaszolnak a megadott időn belül, a rendszer automatikusan végrehajtja a dokumentumot. A rendszer által végzett művelet meghatározásához, válassza ki a **Művelet** sort, majd a **Művelet lezárása** fülön válasszon ki egy műveletet.
+
+
 
 
 

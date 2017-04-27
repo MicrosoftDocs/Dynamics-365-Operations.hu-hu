@@ -1,5 +1,5 @@
 ---
-title: "A nyomkövetés használata felbontására"
+title: "Nyomkövetés használata az alábontáshoz"
 description: "Ez a cikk ismerteti, hogyan alkalmazhatja a nyomkövetést a rendelés alábontás eredményeinek alapjául szolgáló okok felfedezésére."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>A nyomkövetés használata felbontására
+# <a name="use-tracing-for-explosion"></a>Nyomkövetés használata az alábontáshoz
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk ismerteti, hogyan alkalmazhatja a nyomkövetést a rendelés alábontás eredményeinek alapjául szolgáló okok felfedezésére.
 
@@ -43,6 +46,8 @@ Részleteket tekinthet meg egy kijelölt rendelés határidőiről és művelete
 <a name="see-also"></a>Lásd még
 --------
 
-[Master plans](master-plans.md)
+[Alaptervek](master-plans.md)
+
+
 
 

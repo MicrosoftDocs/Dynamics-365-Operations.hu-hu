@@ -1,6 +1,6 @@
 ---
-title: "Új kiskereskedelmi környezetben a kiindulási adatok inicializálása"
-description: "A cikk ismerteti a Microsoft Dynamics 365 műveletek - kiskereskedelmi az inicializálási folyamat részeként létrehozott adatokat."
+title: "A kiindulási adatok inicializálása új Retail-környezetben"
+description: "A cikk a Microsoft Dynamics 365 for Operations - Retail inicializálási folyamatának részeként létrehozott adatokat ismerteti."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 49621
 ms.assetid: 4dc762eb-190e-4485-8f55-b0cafc81bc37
 ms.search.region: global
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Új kiskereskedelmi környezetben a kiindulási adatok inicializálása
+# <a name="initialize-seed-data-in-a-new-retail-environment"></a>A kiindulási adatok inicializálása új Retail-környezetben
 
-A cikk ismerteti a Microsoft Dynamics 365 műveletek - kiskereskedelmi az inicializálási folyamat részeként létrehozott adatokat.
+[!include[banner](includes/banner.md)]
+
+
+A cikk a Microsoft Dynamics 365 for Operations - Retail inicializálási folyamatának részeként létrehozott adatokat ismerteti.
 
 Miután megtörtént a Kiskereskedelem megoldás telepítése a Microsoft Dynamics Lifecycle Services (LCS) segítségével, inicializálni kell a kiskereskedelmi konfigurációt, hogy létrejöjjenek az alapvető konfigurációs adatok. **Fontos:** A kiskereskedelmi konfiguráció inicializálása előtt, győződjön meg arról, hogy beállított egy nyelvet és egy postai címet minden jogi személyhez, amelynél kiskereskedelmi üzletet fog beállítani. Ezt a lépést meg kell ismételni minden egyes jogi személy esetében, amelyet kiskereskedelemre akar használni. A kiskereskedelmi konfiguráció inicializálásához kövesse az alábbi lépéseket.
 
-1.  Indítsa el a Dynamics 365 műveletek ügyfél.
-2.  Kattintson a **kereskedelmi és kereskedelmi**&gt;**központ telepítési**&gt;**paraméterek**&gt;**kiskereskedelmi paraméterek**.
+1.  Indítsa el a Dynamics 365 for Operations kliens.
+2.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Központ beállítása** &gt; **Paraméterek** &gt; **Kiskereskedelmi paraméterek** lehetőségre.
 3.  Kattintson az **Inicializálás** lehetőségre.
 
 Az inicializálási a következő alapértelmezett konfigurációs adatokat hozza létre:
@@ -50,13 +53,15 @@ Az inicializálási a következő alapértelmezett konfigurációs adatokat hozz
 -   Entitás-ellenőrzési sablonok
 -   Kötegelt feladat a Commerce Data Exchange-munkamenet-előzmények törlésére
 
-Ezenfelül naplózást, vagyis kapcsolódó műveletek adatbázis a Dynamics 365 engedélyezett-e a fizetési kártya (PCI) ipar. **Megjegyzés:** Nincs lehetőség a Kiskereskedelmi tervezés és ütemezés külön konfigurálására. Ez az opció lehetővé teszi a Kiskereskedelmi tervezés és ütemezés konfigurációjának visszaállítását az alapértelmezett beállításokra. Az inicializálás befejezése után konfigurálni kell a kiegészítő kiskereskedelmi adatokat. Íme néhány példa:
+Továbbá, a fizetésikártya-iparághoz (PCI) kapcsolódó naplózás engedélyezett a Dynamics 365 for Operations-adatbázis esetében. **Megjegyzés:** Nincs lehetőség a Kiskereskedelmi tervezés és ütemezés külön konfigurálására. Ez az opció lehetővé teszi a Kiskereskedelmi tervezés és ütemezés konfigurációjának visszaállítását az alapértelmezett beállításokra. Az inicializálás befejezése után konfigurálni kell a kiegészítő kiskereskedelmi adatokat. Íme néhány példa:
 
 -   Kiskereskedelmi paraméterek
 -   Kiskereskedelmi tervezés és ütemezés paraméterei
 -   Kiskereskedelmi csatornák
 -   Jegyzékek és eszközök
 -   Szortimentek
+
+
 
 
 

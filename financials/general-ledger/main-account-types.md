@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="main-account-types"></a>Főszámlatípusok
 
+[!include[banner](../includes/banner.md)]
+
+
 A fő számlatípus meghatározza a fő számla használatának módját a számlatükörben.
 
 Amikor egy fő számlát hoz létre a Fő számlák - számlatükör lapon, választania kell egy típust.
@@ -35,6 +38,8 @@ Amikor egy fő számlát hoz létre a Fő számlák - számlatükör lapon, vál
 -   Mérleg, eszköz, kötelezettség és saját tőke – ezek a fő számlák használhatóak tranzakciószámlaként, ezekben lehet rögzíteni a jogi személy által birtokolt vagy a tartozásában levő összegeket.
 -   Összesen – ezen fő számlákkal lehet számlaintervallumokat hozzáadni. Az Összesen főszámlatípust a Számlaintervallum oldalon lehet konfigurálni, amely megjeleníti az összes számlaintervallum csoportegyenlegeinek összegét. A Számlaintervallum oldal eléréséhez kattintson az Általános lapon az Összesen elemre, miután egy Összesen számlatípust választott.
 -   Jelentések – ezek a fő számlák csak a Brazil rendszerben használt pénzügyi kimutatási jelentésekre vonatkoznak.
+
+
 
 
 

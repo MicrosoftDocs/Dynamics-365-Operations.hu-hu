@@ -1,6 +1,6 @@
 ---
 title: "Felosztások feldolgozása"
-description: "Ez a cikk foglalások, a feldolgozó őket a Microsoft Dynamics 365 műveletekhez, és hogyan használhatók a költségvetés-tervezési lehetőségeit ismerteti. A felosztások segítségével összegeket oszthat fel több főkönyvi számla kombináció között. Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során."
+description: "A cikk tájékoztatást nyújt a felosztásokról, a Microsoft Dynamics 365 for Operations rendszerben történő feldolgozásukról és arról, hogy hogyan alkalmazzuk őket a költségvetési tervben. A felosztások segítségével összegeket oszthat fel több főkönyvi számla kombináció között. Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -28,11 +28,11 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="process-allocations"></a>Felosztások feldolgozása
 
-Ez a cikk foglalások, a feldolgozó őket a Microsoft Dynamics 365 műveletekhez, és hogyan használhatók a költségvetés-tervezési lehetőségeit ismerteti. A felosztások segítségével összegeket oszthat fel több főkönyvi számla kombináció között. Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során.
+A cikk tájékoztatást nyújt a felosztásokról, a Microsoft Dynamics 365 for Operations rendszerben történő feldolgozásukról és arról, hogy hogyan alkalmazzuk őket a költségvetési tervben. A felosztások segítségével összegeket oszthat fel több főkönyvi számla kombináció között. Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során.
 
-Microsoft Dynamics 365 műveletek esetében e művelet támogatására az alábbi szolgáltatásokat nyújtja:
+A Microsoft Dynamics 365 for Operations a folyamat támogatásához az alábbi funkciókat biztosítja:
 
--   Manuális tranzakció összegek felosztására könyvelési felosztások osztott műveletével vagy pénzügyi dimenzió alapértelmezett sablonok alkalmazásával a dokumentumhoz. További tudnivalókért lásd: [könyvelési felosztásokat.](\accounts-payable\accounting-distributions.md)
+-   Manuálisan is lefoglalhatók tranzakcióösszegek a Felosztás művelettel a könyvelési felosztás pontban, vagy pénzügyi dimenzió alapértelmezett sablonjainak használatával egy dokumentumre. További tudnivalókért lásd: [Könyvelési felosztások.](\accounts-payable\accounting-distributions.md)
 -   Tranzakcióösszegek automatikus felosztása az egyes fő számlán megadott felosztási feltételek alapján. Felosztási számlabejegyzések generálódnak minden naplóhoz, a százalék és a főkönyvi célszámla alapján, amikor egy számlázási bejegyzés megfelel a forrás főkönyvi számlában megadott feltételeknek.
 -   főkönyvi egyenlegek, vagy fix összegek automatikus felosztása a főkönyvi felosztási szabályok alapján. A főkönyvi felosztási szabályok feldolgozása rendszeres időközönként történik, felosztási naplók használatával. 
 

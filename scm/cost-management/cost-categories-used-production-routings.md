@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>A termelési útvonalakban használt költségkategóriák
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk tájékoztatást ad az útvonalakat használó gyártási környezetekre vonatkozó költségkategóriákról.
 
 A költségkategóriák az útvonalat alkalmazó gyártási környezetekre vonatkoznak. Hozzá vannak rendelve az üzemi erőforrásokhoz és az útvonalműveletekhez, az óránkénti költségek meghatározása és a legyártott cikkek számított költségei között szereplő költség-hozzájárulások felosztása céljából. A költségkategóriákhoz hozzárendelt költségcsoportok tehát a gyártási költségek hozzájárulásait az üzemi erőforrás, és a tevékenységtípus (például beállítási és futási idő) alapján sorolják be. A költségcsoportok kiosztásának sajátossága lehetővé teszi a gyártási többletköltségek útvonaladatok alapján történő számítását. 
@@ -51,5 +54,7 @@ A költségrekord, amely egy költségkategóriára vonatkozik lehet helyspecifi
 Az útvonalműveletek általában öröklik az üzemi erőforráshoz vagy az alapművelethez hozzárendelt költségkategóriákat. Amikor egy termelési rendelés létrejön, a termelési útvonalon belüli útvonalműveletek a kiválasztott útvonalverziónak megfelelőek. A termelési útvonalon belüli műveletekhez hozzárendelt költségkategóriák felülbírálhatók. 
 
 A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésére és jelentésekre. Ebben az esetben a költségkategóriára termelési és projektcélokból van szükség. További projektekkel kapcsolatos információkat kell meghatározni, amikor a költségkategória projekthasználatra engedélyezetté válik.
+
+
 
 

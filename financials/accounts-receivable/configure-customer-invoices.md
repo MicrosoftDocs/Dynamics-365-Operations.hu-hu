@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-customer-invoice"></a>Vevői számla létrehozása
 
+[!include[banner](../includes/banner.md)]
 
 
-Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad. Ezen típusú értékesítési számla kiállítása egy értékesítési rendelés alapján történik, amely tartalmazza a rendeléssorokat és cikkszámokat. A cikkszámok a főkönyvben vannak meghatározva és feladva. Analitikus naplóbejegyzések nem érhetők el az értékesítési rendelés vevői számla. 
+
+
+Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad. Ezen típusú értékesítési számla kiállítása egy értékesítési rendelés alapján történik, amely tartalmazza a rendeléssorokat és cikkszámokat. A cikkszámok a főkönyvben vannak meghatározva és feladva. Analitikus naplóbejegyzések nem érhetők el értékesítési rendeléshez tartozó vevői számlához. 
 
 A **szabadszöveges számla** nincs kapcsolatban értékesítési rendeléssel. Olyan rendelési sorokat tartalmaz, amelyek személyesen megadott főkönyvi számlákat, szabadszöveges leírásokat és értékesítési mennyiséget foglalnak magukban. Ezen a számlafajtán nem tud cikkszámot megadni. A megfelelő áfaadatokat kell megadnia. Az értékesítéshez tartozó fő számla fel van tüntetve mindegyik számlasornál, amelyet szét lehet osztani több főkönyvi számla között az **Összegek felosztása** lehetőségre kattintva a **Szabadszöveges számla** lapon. Ezen kívül a vevői egyenleg is feladásra kerül az összegző számlához a szabadszöveges számla esetében használt feladási profilból.
 
@@ -55,7 +58,7 @@ Tekintse meg az **Összes értékesítési rendelés** listaoldalon az értékes
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Értékesítési rendelések vagy szállítólevelek konszolidálása feladáshoz
 Ezt a folyamatot akkor kell használni, amikor egy vagy több értékesítési rendelés is számlázásra kész, és azokat össze kívánja vonni egyetlen számlába. 
 
-Több számlát is kiválaszthat az **Értékesítési rendelés** listaoldalon, és ezután a **Számlák létrehozása** lehetőséggel konszolidálhatja azokat. A a **számla feladása** lapon módosíthatja a **összegző rendelés** rendelésszám Mezőstatisztika beállítást (Ha egy értékesítési rendelés csomagjegyzékek) vagy a számla (ha van egy számla több eladási rendelések). Használja a **elrendezés** gombra, és az értékesítési rendelések egyesíteni egyetlen számlák alapján a **összegző rendelés** beállítások.
+Több számlát is kiválaszthat az **Értékesítési rendelés** listaoldalon, és ezután a **Számlák létrehozása** lehetőséggel konszolidálhatja azokat. A **Számla feladása** lapon módosíthatja a **Rendelés összesítése** beállítást a rendelési szám (ha egy értékesítési rendeléshez több szállítólevél tartozik) vagy a számlaszám (ha egyetlen számlához több értékesítési rendelés tartozik) alapján történő összegzéshez. Használja az **Elrendezés** gombot az értékesítési rendelések összevonásához egyetlen számlába – a **Rendelés összesítése** beállítás alapján.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>További beállítások a feladás módjának megváltoztatásához
 A következő mezők esetében módosul a viselkedés a feladási folyamat során.
@@ -150,6 +153,8 @@ A következő mezők esetében módosul a viselkedés a feladási folyamat sorá
 </tr>
 </tbody>
 </table>
+
+
 
 
 

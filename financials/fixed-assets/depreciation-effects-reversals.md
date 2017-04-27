@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-effects-with-reversals"></a>A sztornírozások értékcsökkenésre gyakorolt hatására
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk egy tárgyieszköz-tranzakció sztornírozásának lehetséges következményeit tárgyalja. 
 
 Sztornírozhatja a tárgyieszköz-tranzakciókat és a azokat a tranzakciókat, amelyek egy tárgyi eszközhöz vannak társítva. Továbbá visszavonhatja a sztornírozott tranzakciót. 
@@ -90,6 +93,8 @@ Az értékcsökkenés túl alacsony, mértéke 16,95 (983,62 - 966,67).
 <a name="see-also"></a>Lásd még
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Tárgyi eszközök értékcsökkenése](fixed-asset-depreciation.md)
+
+
 
 

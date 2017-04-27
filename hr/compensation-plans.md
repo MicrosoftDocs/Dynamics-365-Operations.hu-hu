@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="compensation-plans"></a>Kompenzációs konstrukciók
 
+[!include[banner](includes/banner.md)]
+
+
 A kompenzációkért és juttatásokért felelős vezetők használhatják a Kompenzációkezelést a karbantartáshoz és a szervezet alkalmazottaira vonatkozó fix és változó kompenzáció feldolgozásához.
 
 ### <a name="introduction"></a>Bevezetés
 
-Kompenzáció kezelés segítségével szabályozhatja a szállítási és fizetési jutalmak. Az alkalmazott fix fizetési és fix kompenzációs terv által szabályozott érték növekszik. Az ösztönző díjak kifizetése, például bónuszok, teljesítménydíjak, részvényopciók és kölcsönök, továbbá az egyszeri jutalmak a változó kompenzációs tervekben szabályozhatók. 
+A kompenzációkezeléssel szabályozható az alapfizetés és a jutalmak kifizetése. Egy alkalmazott fix fizetési díjalapja és érdemeken alapuló fizetése kezelhető a fix kompenzációs tervekkel. Az ösztönző díjak kifizetése, például bónuszok, teljesítménydíjak, részvényopciók és kölcsönök, továbbá az egyszeri jutalmak a változó kompenzációs tervekben szabályozhatók. 
 
 Az alkalmazottak mindkét típusú konstrukcióhoz, akár többhöz is társíthatók. Az alkalmazottnak meg kell felelni az alábbi kritériumoknak, hogy hozzárendelhető legyen a kompenzációs tervhez:
 -   Az alkalmazottnak aktív pozícióval kell rendelkeznie.
@@ -54,7 +57,7 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 <td>Fix kompenzációs műveletek, amelyeknek két célt teljesítenek:
 <ul>
 <li>A műveletek megadhatnak olyan információkat amelyeket rögzíteni kell az alkalmazott kompenzációjának változásakor. Például előírhatja ezt előléptetéskor vagy lefokozáskor.</li>
-<li>Műveletek biztosítható, hogy a számítás alkalmazzák, ha fix kompenzációs terveket dolgoznak.  Például saját tőke típusú műveletek hasonlítsa össze a szint az alkalmazott minimális hivatkozási pont, az alkalmazottak fizetési és biztosítására alkalmazott kap legalább a minimális.</li>
+<li>A műveletekkel biztosítható, hogy a számítást alkalmazzák a fix kompenzációs konstrukciók feldolgozásakor.  Például a Saját tőke típusú műveletek összehasonlítják az alkalmazottak fizetését a minimum referenciaponttal az alkalmazott szintjén, és biztosítják, hogy a dolgozó legalább a minimális fizetést megkapja.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -83,7 +86,7 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 </tr>
 <tr class="even">
 <td>Fizetési gyakoriságok</td>
-<td>Fizetési gyakoriságok segítségével határozza meg az időszakot, amelynek a kompenzáció van megadva.  Például a fizetési gyakoriság segít megismeri, ha van megadva az ellentételezés összege évi fizetéssel és az óránkénti fizetési díjalap. Fizetési gyakoriságok is használt átváltási tényezők beállítása kompenzációs összegek át havonta, hetente, biweekly és óránkénti fizetési gyakoriságok, egy éves fizetési gyakoriság.</td>
+<td>A kifizetési gyakoriságokkal meghatározható az időtartam, amelyre a kompenzáció vonatkozik.  Például a kifizetési gyakoriság segít felmérni, hogy a kompenzációs összeget éves fizetés vagy órabér formájában adták-e meg. A kifizetési gyakoriságok továbbá használhatók átváltási tényezők felállításához, ha havi, heti, kétheti és óránkénti kompenzációs összegek kifizetési gyakoriságát akarja átváltani éves kifizetési gyakoriságra.</td>
 </tr>
 <tr class="odd">
 <td>Kompenzációs régiók</td>
@@ -107,7 +110,7 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 </tr>
 <tr class="even">
 <td>Kompenzációs rácsok</td>
-<td>Kompenzációs rácsok a kompenzációs struktúrában tartalmazza.  Kompenzációs rácsok egy vagy több juttatási programok által használható.</td>
+<td>A kompenzációs struktúrát a kompenzációs rácsok tartalmazzák.  A kompenzációs rácsok egy vagy több kompenzációs konstrukcióhoz használhatók.</td>
 </tr>
 <tr class="odd">
 <td>Teljesítménykonstrukciók</td>
@@ -126,9 +129,11 @@ A feldolgozási esemény egy időszakra vonatkozóan az egyes fix és változó 
 <a name="compensation-events"></a>Kompenzációs események
 -------------------
 
-Kompenzációs eseményt egy folyamat esemény minden egyes futtatásakor jön létre.  Kompenzációs események esemény folyamatban szereplő mindegyik alkalmazott esetében a kompenzációs folyamat eredményét tartalmazza.  Ha a számítások helyesek, betöltheti a kompenzációs esemény a kompenzációs rekord frissítése az alkalmazottakat, akik a feldolgozási esemény által érintett.
+Minden feldolgozási esemény futtatásakor létrejön egy kompenzációs esemény.  A kompenzációs események tartalmazzák az egyes alkalmazottak feldolgozási folyamat során érintett kompenzációs folyamatait.  Ha a számítások helyesek, akkor betöltheti a kompenzációs eseményt a feldolgozási eseményben érintett alkalmazottak kompenzációs rekordjainak frissítéséhez.
 
 ## <a name="recommendations"></a> Ajánlások
 Miután lefuttatta a feldolgozási eseményt javaslatot tehet az egyes alkalmazottak érdemeken alapuló emelésre vagy a jutalom összegére a feldolgozási esemény irányelvei alapján. Ha szeretne ajánlásokat létrehozni alkalmazottaknak, akkor engedélyeznie kell az ajánlásokat a kompenzációs konstrukciók létrehozásakor vagy amikor létrehozza a feldolgozási eseményt.
+
+
 
 

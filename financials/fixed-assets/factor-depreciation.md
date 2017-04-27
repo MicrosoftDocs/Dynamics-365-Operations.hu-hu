@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="factor-depreciation"></a>Értékcsökkenési tényező
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az tényezős értékcsökkentési módszerről nyújt áttekintést.
 
 A szorzók a tárgyi eszközök értékcsökkenéséhez használt százalékos értékek. Ha az értékcsökkenési profilok beállítása során a **Mód** mezőjében a **Szorzó** értéket választja az **Értékcsökkenési profilok** oldalon, akkor növekvő, csökkenő vagy lineáris értékcsökkenést állíthat be:
@@ -39,14 +42,14 @@ A szorzók a tárgyi eszközök értékcsökkenéséhez használt százalékos �
 Az itt következő szabályok és példák bemutatják, hogyan kell beállítani a szorzókat az értékcsökkenés különböző típusaihoz. 
 
 > [!NOTE] 
-> Ha **tényező** a a **módszer** mezőben a **tényező** mező és a **időköz** mezőben jelennek meg.
+> Megjegyzés: Ha a **Szorzó** értéket választja a **Mód** mezőben, megjelenik a **Szorzó** és az **Intervallum** mező.
 
 ## <a name="progressive-depreciation"></a>Növekvő értékcsökkenés
 A **Szorzó** mezőben szereplő érték nagyobb mint **50**.
 
 ### <a name="example"></a>Példa
 
-A beszerzési ár 100 000, a tényező 70, élettartama 10 év, és az értékcsökkenés január 1-én indul. Az értékcsökkenés és a nettó könyv szerinti érték összegek láthatók csak az első hat év élettartam.
+A beszerzési ár 100 000, a szorzó 70, az élettartam 10 év, és az értékcsökkenés január 1-jén indul. Az értékcsökkenési összegek és a nettó könyv szerinti érték csak az élettartam első hat évében láthatók.
 
 | Év | Időszak      | Értékcsökkenés összege | Nettó könyv szerinti érték összege |
 |------|-------------|---------------------|-----------------------|
@@ -62,7 +65,7 @@ A **Szorzó** mezőben szereplő érték kisebb, mint **50**.
 
 ### <a name="example"></a>Példa
 
-A beszerzési ár 100 000, a tényező 20, élettartama 10 év, és az értékcsökkenés január 1-én indul. Az értékcsökkenés és a nettó könyv szerinti érték összegek láthatók csak az első hat év élettartam.
+A beszerzési ár 100 000, a szorzó 20, az élettartam 10 év, és az értékcsökkenés január 1-jén indul. Az értékcsökkenési összegek és a nettó könyv szerinti érték csak az élettartam első hat évében láthatók.
 
 | Év | Időszak      | Értékcsökkenés összege | Nettó könyv szerinti érték összege |
 |------|-------------|---------------------|-----------------------|
@@ -75,5 +78,7 @@ A beszerzési ár 100 000, a tényező 20, élettartama 10 év, és az értékcs
 
 ## <a name="straight-line-depreciation"></a>Lineáris értékcsökkenés
 A **Szorzó** mezőben szereplő érték egyenlő az **50** értékkel. Ebben az esetben az értékcsökkenés minden időszakban ugyanannyi, és ajánlott figyelembe venni a többi mezőben megadott beállítás következményeit, az [Élettartam alatti lineáris értékcsökkenés](straight-line-service-life-depreciation.md) témakörben leírtaknak megfelelően.
+
+
 
 

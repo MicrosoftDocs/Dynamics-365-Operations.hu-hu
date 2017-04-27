@@ -1,5 +1,5 @@
 ---
-title: "Engedmények jóváírásokon rendelkező részleges vevői kifizetés kiegyenlítése"
+title: "Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik"
 description: "Ez a cikk végigvezeti egy eseten, ahol készpénzfizetési engedményt vonnak le egy jóváírásból úgy, hogy az eredeti számla is rendelkezett készpénzfizetési engedménnyel."
 author: twheeloc
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Engedmények jóváírásokon rendelkező részleges vevői kifizetés kiegyenlítése
+# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk végigvezeti egy eseten, ahol készpénzfizetési engedményt vonnak le egy jóváírásból úgy, hogy az eredeti számla is rendelkezett készpénzfizetési engedménnyel. 
 
-A gyár lehetővé teszi a felhasználóknak a készpénzfizetési engedmények végrehajtandó részfizetések, valamint a jóváírásokra a számlaadatokat (jóváírás). A készpénzfizetési engedmény vehető jóváírással bizonyult a vevő készpénzfizetési engedményt a számla a jóváírás kibocsátásakor. Helyett a teljes összeget a követelés kezeléséről, a vevő egyenlegét is követel összeg nem tartalmazza a készpénzfizetési engedmény százaléka, amikor a vevő történt. A kiegyenlítés paraméterek találhatók a **Kinnlevőségek paraméterei** oldalon.
+A gyár lehetővé teszi a felhasználóknak a készpénzfizetési engedmények végrehajtandó részfizetések, valamint a jóváírásokra a számlaadatokat (jóváírás). A készpénzfizetési engedmény vehető jóváírással bizonyult a vevő készpénzfizetési engedményt a számla a jóváírás kibocsátásakor. Helyett a teljes összeget a követelés kezeléséről, a vevő egyenlegét is követel összeg nem tartalmazza a készpénzfizetési engedmény százaléka, amikor a vevő történt. A Kiegyenlítési paraméterek a **Kinnlevőségek paraméterei** oldalon találhatóak.
 
 ## <a name="invoice-and-credit-note"></a>Számlajóváírás
 4035-ös vevőnél 1000,00 számlát és 100,00 jóváírás. Az egyes dokumentumokból 14 napon kifizetett 1 százalékos engedmény van. Arnie megtekintheti ezt a tranzakciót a **Vevői tranzakciók** oldalon.
@@ -59,5 +62,7 @@ Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelenn
 | Alkalmazandó készpénzfizetési engedmény összege | -1.00     |
 
 A kiegyenlítés 100,00 lesz, és a fizetés esetén 99,00 és 1,00 engedményt fog szerepelni.
+
+
 
 

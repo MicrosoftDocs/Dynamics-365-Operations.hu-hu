@@ -1,6 +1,6 @@
 ---
-title: "Készként jelentés anyagjegyzékek"
-description: "Ez a cikk ismerteti, Anyagjegyzékek jelentése befejezettként."
+title: "Anyagjegyzékek jelentése befejezettként"
+description: "Ez a cikk az anyagjegyzékek befejezettként való jelentéséről tartalmaz információkat."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-boms-as-finished"></a>Készként jelentés anyagjegyzékek
+# <a name="report-boms-as-finished"></a>Anyagjegyzékek jelentése befejezettként
 
-Ez a cikk ismerteti, Anyagjegyzékek jelentése befejezettként.
+[!include[banner](../includes/banner.md)]
 
-A **jelentés készként** és **Max. készként jelentés** lapok használatosak az anyagjegyzékek (AJ) készként jelentéséhez. Fogalmi szintén az anyagjegyzék készként jelentésének folyamata ugyanaz, mint egy termelési rendelés készként jelentésének folyamata. Ez a folyamat használható például egyszerű összeállítási és kitting folyamatoknál, ahol a termelési rendelések fejlett funkcióira nincs szükség. A **Jelentés készként** lap lehetővé teszi, hogy több anyagjegyzéket kötegben jelentsen késznek. A **Max. Jelentés befejezett** lap lehetővé teszi csak egy Anyagjegyzék jelentése készként egyszerre. A **készként jelenteni** lapon érhető el egy elemet a Készletkezelés, és mindkét oldal áll rendelkezésre, a cikkek egy menü, a **, amely a termékek** oldalon.
+
+Ez a cikk az anyagjegyzékek befejezettként való jelentéséről tartalmaz információkat.
+
+A **jelentés készként** és **Max. készként jelentés** lapok használatosak az anyagjegyzékek (AJ) készként jelentéséhez. Fogalmi szintén az anyagjegyzék készként jelentésének folyamata ugyanaz, mint egy termelési rendelés készként jelentésének folyamata. Ez a folyamat használható például egyszerű összeállítási és kitting folyamatoknál, ahol a termelési rendelések fejlett funkcióira nincs szükség. A **Jelentés készként** lap lehetővé teszi, hogy több anyagjegyzéket kötegben jelentsen késznek. A **Max. készként jelentés** lap segítségével csak egy anyagjegyzék készként jelentése tehető meg egyszerre. A **készként jelentés** lap elérhető egy menüelemből a készletgazdálkodásban és mindkét lap elérhető menüelemekként a **kiadott termékek** lapon.
 
 ## <a name="report-as-finished-page"></a>Készként jelentés lap
 Ha megnyitja a **készként jelentés **lapot egy kiadott termékből, akkor az oldal azt javasolja, hogy jelentse készként a normál készlet alapértelmezett mennyiségét. Alapértelmezés szerint az aktív anyagjegyzék-verzió megjelenik, de módosíthatja az anyagjegyzék verziót ha vannak egyéb jóváhagyott verziók. A lap azt is lehetővé teszi, hogy rekordokat töröljön, vagy új rekordokat hozzon létre a kiadott termékeknek, amelyeket készként kell jelenteni. Lekérdezés használatához a termékek kiválasztásakor kattintson a **Kiválasztás** menüelemre. Manuálisan megerősítheti a kijelölt termékek készként jelentését az **OK** gombra kattintva. Másik lehetőségként beállíthatja a folyamatot, hogy egy kötegben fusson. Amikor kész folyamatként jelentés megerősítésre került a rendszer létrehoz egy anyagjegyzék naplót, ahol az anyagjegyzékbe feladás feldolgozásra kerül. Ez a napló egy sortételből áll a késztermékhez és egy sortételből minden anyagjegyzéksorhoz. Beállíthatja, hogy a napló automatikusan feladásra kerül-e, vagy nyitva marad további módosításokhoz.
 
-## <a name="max-report-as-finished-page"></a>Max. Kész oldal jelentés
+## <a name="max-report-as-finished-page"></a>Max. készként jelentés lap
 A **Max. készként jelentés** lapon minden anyagjegyzék sor mutatja azon darabok számát, amelyeket készként lehet jelenteni. Ez a számítás a ténylegesen elérhető aktuális készleten alapul minden anyagsorhoz. A következő példában egy darab FG cikkszámú cikk felhasznál két darab RM10 nyersanyagot és egy darab RM20 nyersanyagot. Mivel csak 10 darab RM10 van készleten az FG maximális készként jelenthető mennyisége öt darab. Ez az érték szerepel a **Max. készként jelentés** mezőben.
 
 | Szint | Cikkszám | Mennyiség | Aktuális készlet | Max. Készként jelentés |
@@ -68,7 +71,7 @@ A következő táblázatok mutatják, hogy az **Alábontás** mező beállítás
 | 0     | FG          | 3        |
 | 1     | COMP        | -3       |
 
-Amint az az előző táblázatban látható, csak cikkszám COMP számít le kell vonni a naplóban. RM COMP részét képező cikkszám nem bontja alá a program a naplósorban szereplő, és a comp parancs az aktuális kétféle nem tekinthető. **Alábontás: mindig**
+Ahogy a korábbi táblázat mutatja, az egyetlen levontnak tekintett cikkszám a naplóban a COMP. Az RM cikkszám, ami a COMP része nem kerül alábontásra a naplósorhoz és a COMP két készleten lévő darabja nincs figyelembe véve. **Alábontás: mindig**
 
 | Szint | Cikkszám | Mennyiség |
 |-------|-------------|----------|
@@ -84,5 +87,7 @@ Ebben az esetben a COMP cikkszám alábontásra a kerül az RM cikkszámú nyers
 | 1     | RM          | -1       |
 
 Ebben az esetben a két aktuálisan készleten lévő COMP cikkszám figyelembe van véve. Azonban amiért három darab FG cikkszámú cikkre van szükség egy RM cikkszámú cikkre szintén szükség van annak érdekében, hogy létrejöjjön a további egy darab COMP.
+
+
 
 

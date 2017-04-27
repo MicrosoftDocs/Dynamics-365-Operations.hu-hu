@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-invoicing"></a>Projekt számlázása:
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
 
 A projekt típusa határozza meg, hogy melyik számlázási eljárást kell alkalmazni. Kizárólag a két külső projekttípus, az Idő- és anyagelszámolású, illetve a Rögzített árú projektek számlázhatók. Az Idő- és anyagelszámolású projektek és a Rögzített árú projektek mindig projektszerződéshez kapcsolódnak.
@@ -103,7 +106,7 @@ Beállíthatja például az alábbi számlázási ütemezést:
 Ha készen állnak a számlázásra a mérföldkőhöz kapcsolódó kifizetések, a részszámlázott összegek számlázására vonatkozó eljárást kell használnia.
 
 ## <a name="vendor-invoicing"></a>Szállítói számlázás
-Ha megrendel egy cikket egy szállítótól és a cikket egy projekthez rendeli, a cikk kapcsán a beszerzési rendeléshez kiválasztott sortulajdonság határozza meg, hogy a rendszer kiszámlázza-e a beszerzett cikket egy vevő felé, vagy sem. Alapértelmezett sortulajdonságok beállítása, ha a cikkhez a beszerzési rendeléssorban megjelenített (részletek sor &gt;projekt &gt;sortulajdonság). A sortulajdonságot kétféleképpen tudja módosítani:
+Ha megrendel egy cikket egy szállítótól és a cikket egy projekthez rendeli, a cikk kapcsán a beszerzési rendeléshez kiválasztott sortulajdonság határozza meg, hogy a rendszer kiszámlázza-e a beszerzett cikket egy vevő felé, vagy sem. Ha alapértelmezett sortulajdonságokat állít be, úgy azok a cikk kapcsán megjelennek a beszerzési rendeléssoron (Soradatok &gt; Projekt &gt; Sortulajdonság). A sortulajdonságot kétféleképpen tudja módosítani:
 
 -   A cikk számlázása a projekt vevője felé: Állítsa a cikkre vonatkozó sortulajdonságot számlázandó értékre a beszerzési megrendelésben, majd állítsa ki a számlát a vevő felé a helyes projektszámlázási módszer alkalmazásával.
 -   Ne a projekt vevőjének számlázza le a cikket: azaz ne jelölje be a **Számlázható** sortulajdonságot a cikkre vonatkozó beszerzési rendeléssoron. Ezután le tudja számlázni a beszerzési rendelést, és nincs további teendője ezzel kapcsolatosan.
@@ -118,5 +121,7 @@ Egyazon a dokumentumon jóváírásra kijelölt tranzakciókat, jóváírási tr
 Kiszámlázott összeg jóváírásához először ki kell választania a jóváírandó számlázott összeget, majd létre kell hoznia egy jóváírást. Ezután ugyanazokkal a lépésekkel hozhatja létre a jóváírást, amelyeket a vevői számlák létrehozására használ. 
 
 Létrehozhat negatív összegű számlát, ami így jóváírásnak minősülő számla lesz. Jóváírás létrehozásához és nyomtatásához ki kell választania azokat a tranzakciókat, amelyeket korábban feladott egy vevői számlára, majd módosítania kell a tranzakciókat. Amennyiben a jogi személy elsődleges címe nem Németországban van, úgy a számla neve „Javító számla” lesz.
+
+
 
 

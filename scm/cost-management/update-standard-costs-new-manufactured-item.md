@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Újonnan gyártott cikkek elszámoló árának frissítése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a leírás az újonnan gyártott cikkek alapköltségeinek frissítéséhez nyújt útmutatást. 
 
 Az alábbi irányelvek feltételezik, hogy a kétverziós megközelítés segítségével frissíti az elszámoló költséget. Ebben a megközelítésben az egyik költségszámítási verzió az eredetileg a befagyasztott időszakra meghatározott elszámolási árakat tartalmazza, míg a másik költségszámítási verzió az újonnan gyártott cikkekhez tartozó járulékos frissítéseket tartalmazza. A járulékos frissítéseket költségrekordként lehet megadni a második költségszámítási verzióban, majd ezután válnak elérhetővé. A kétverziós megközelítés egy második költségszámítási verzió meghatározását igényli. Az ennek a költségszámítási verziónak a meghatározására vonatkozó irányelvek a következők:
@@ -47,6 +50,8 @@ Ha a befagyasztott időszak során új gyártott cikkeket kíván hozzáadni, te
 5.  Használja a **Költségszámítási verzió beállítása** lapot, hogy módosítsa a zárolás jelzőt, ezzel lehetővé téve a második költségszámítási verzióba foglalt függőben lévő költségrekordok aktiválását.
 6.  Használja a **Költségszámítási verzió fenntartása** lapról megnyitható **Árak aktiválása** oldalt, hogy engedélyezze az összes a második költségszámítási verzióba foglalt függőben lévő költségrekordot. Elérhetővé teheti az egyes cikkekhez tartozó függőköltség-rekordokat is a **Cikk ár** oldalon szereplő **Aktiválás** gombbal.
 7.  A további adat-fenntartás megelőzése érdekében, használja a **Költségszámítási verzió beállítása** lapot, hogy módosítsa a második költségszámítási verzióba foglalt zárolás jelzőket. Az irányelvek zárolása megakadályozza az új függő költségek bevitelét és a függő költségek aktiválását.
+
+
 
 
 

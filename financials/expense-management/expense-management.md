@@ -26,8 +26,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="expense-management"></a>Költséggazdálkodás
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [Költségkezelés tervezése](plan-expense-management.md) További információkért nézzen vissza hamarosan.
+
+
 
 

@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-order-overview"></a>Beszerzési rendelések áttekintése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a beszerzési rendelések általános ismertetését tartalmazza és további hivatkozásokat a beszerzési rendelés különböző szakaszaihoz kapcsolódó cikkekhez .
 
 A beszerzési rendelés áruk vagy szolgáltatások vásárlásáról szóló, a szállítóval kötött megállapodást jelképező dokumentum. A dokumentum szintén segít nyomon követni a rendelés felé készült termékbevételezéseket és később a szállító által a rendelés felé kiállított számlák könyvelését.  
 
-A **Beszerzési rendelések** oldal tartalmazza a rendelkezésre álló rendelések áttekintését, és lehetővé teszi a rendelések módosítását. Amikor megnyit egy beszerzési rendelést, választhatja a **Fejléc** nézetet, amely olyan információkat tartalmaz, amelyek az egyes beszerzési rendeléseknek csak egyszer lett megadva, mint például a szállítói adatok. Másik lehetőségként választhatja a **Sorok** nézetet, ahol a a rendelési sorokat módosíthatja. Általában között válthat két nézetet POs módosítása közben. Költségek nem jelennek meg közvetlenül a **beszerzési rendelések** oldalon, de a menüket, a rendelési fejléc és sorok keresztül érhetők el.  
+A **Beszerzési rendelések** oldal tartalmazza a rendelkezésre álló rendelések áttekintését, és lehetővé teszi a rendelések módosítását. Amikor megnyit egy beszerzési rendelést, választhatja a **Fejléc** nézetet, amely olyan információkat tartalmaz, amelyek az egyes beszerzési rendeléseknek csak egyszer lett megadva, mint például a szállítói adatok. Másik lehetőségként választhatja a **Sorok** nézetet, ahol a a rendelési sorokat módosíthatja. Általában váltunk a két nézet között a beszerzési megrendelések módosítása közben. A költségek nem jelennek meg közvetlenül a **Beszerzési rendelések** oldalon, hanem a menükből nyithatók meg a rendelési fejlécen és sorokon keresztül.  
 
 Számos jelentésben találhat információt a Beszerzési rendelésekről, termékbevételezésekről és szállítói számlákról. Ezek a jelentések megtalálhatók a **beszerzés és forrás** és **kötelezettségek** modulok.  
 
-A **Beszerzési rendelés előkészítése** és a **Beszerzési rendelés bevételezése és követése** munkaterületek lehetővé teszik a beszerzési rendelések megtekintését a feldolgozás különböző állapotaiban. A végrehajtandó műveletekről is összegzést nyújtanak. A **Beszerzési rendelés készítése** munkaterület a beszerzési rendelés létrehozására és ellenőrzésére, jóváhagyására és a szállító visszaigazolására összpontosít. A **a beszerzési rendelés-visszaigazolás és nyomon követése** munkaterület összpontosított áruk vagy szolgáltatások POs ellen a beérkezés feldolgozásra. Ez magában foglalja a listák, amelyek segítségével a bevételek, amelyek a lejárt, vagy, hogy hamarosan a szállító által a szállítási határidejét betekintést. Ezeket a munkaterületeket nem a raktárban végzett kapcsolódó bevételezési tevékenységek végrehajtásához használják. Ezeket a tevékenységeket a **Készletgazdálkodás** és a **Raktárkezelés** modulok oldalainak használatával hajtják végre. Szállítói számlák feldolgozását a **Szállítói számla bevitele** munkaterület használatával kell elvégezni és a kifizetéseket a **Szállítói kifizetések** munkaterület használatával kell elvégezni.  
+A **Beszerzési rendelés előkészítése** és a **Beszerzési rendelés bevételezése és követése** munkaterületek lehetővé teszik a beszerzési rendelések megtekintését a feldolgozás különböző állapotaiban. A végrehajtandó műveletekről is összegzést nyújtanak. A **Beszerzési rendelés készítése** munkaterület a beszerzési rendelés létrehozására és ellenőrzésére, jóváhagyására és a szállító visszaigazolására összpontosít. A **Beszerzési rendelés bevételezése és követése** munkaterület összpontosít a cikkek vagy szolgáltatások beérkezésének feldolgozására a beszerzési rendelés ellenében. Ez magában foglalja a listákat, amelyek segítségével megtekinthetők a lejárt nyugták, vagy amelyek hamarosan aktuálisak lesznek a szállító általi szállításra. Ezeket a munkaterületeket nem a raktárban végzett kapcsolódó bevételezési tevékenységek végrehajtásához használják. Ezeket a tevékenységeket a **Készletgazdálkodás** és a **Raktárkezelés** modulok oldalainak használatával hajtják végre. Szállítói számlák feldolgozását a **Szállítói számla bevitele** munkaterület használatával kell elvégezni és a kifizetéseket a **Szállítói kifizetések** munkaterület használatával kell elvégezni.  
 
 A következő cikkek áttekintést adnak a beszerzési rendelés különböző szakaszairól:
 
@@ -45,7 +48,7 @@ A következő cikkek áttekintést adnak a beszerzési rendelés különböző s
 -   [Szállítói számlák áttekintése](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Beszerzési rendelések típusai
-POs három típusa van. A beszerzési rendelés létrehozásakor meg kell adnia a típusát. Beállíthatja az új rendelések alapértelmezett rendelési típusát a **Beszerzési és forrásparaméterek** oldalon.
+Háromféle BR van. A beszerzési rendelés létrehozásakor meg kell adnia a típusát. Beállíthatja az új rendelések alapértelmezett rendelési típusát a **Beszerzési és forrásparaméterek** oldalon.
 
 | Beszerzési rendelési típusa        | Leírás                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,12 +83,14 @@ A **Jóváhagyási állapot** mező akkor használatos, ha egy beszerzési rende
 <a name="see-also"></a>Lásd még
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Beszerzési rendelés létrehozása](purchase-order-creation.md)
 
 [Beszerzési rendelés jóváhagyása és visszaigazolása](purchase-order-approval-confirmation.md)
 
 [Beszerzési rendelés - termékbevételezés](product-receipt-against-purchase-orders.md)
 
 [Szállítói számlák áttekintése](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

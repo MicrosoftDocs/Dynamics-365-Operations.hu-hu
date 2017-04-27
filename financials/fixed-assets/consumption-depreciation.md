@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consumption-depreciation"></a>Felhasználás értékcsökkenése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az értékcsökkenés felhasználási módszeréről nyújt áttekintést.
 
 Ha beállít egy tárgyi eszközök értékcsökkenésével kapcsolatos profilt, és a **Felhasználás** lehetőséget választja ki a **Mód** mezőben az **Értékcsökkenési profilok** oldalán, akkor az ehhez az értékcsökkenési profilhoz társított tárgyi eszközök értékcsökkenése a tárgyi eszközök használatán alapul. Nem kell a százalékos értékeket és az időszakokat beállítsani az **Értékcsökkenési profilok** oldalon. Miután létrehozta a Felhasználási módot alkalmazó értékcsökkenési profilt, többféle módon is beállíthatja a módszert.
@@ -64,5 +67,7 @@ Január 31-ére vonatkozóan az alábbi tényező van beállítva a felhasznál�
 -   A tárgyi eszköz becsült mennyisége 2 000.
 
 Január 31-i értékcsökkenési javaslat a következőképpen történik: Becsült mennyiség x Százalék x Egység értékcsökkenése 2 000 x.10 x 1,5 = 300
+
+
 
 

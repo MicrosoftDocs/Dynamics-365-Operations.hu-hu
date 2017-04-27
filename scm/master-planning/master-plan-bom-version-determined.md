@@ -1,6 +1,6 @@
 ---
-title: "Határozza meg az AJ-verzió"
-description: "Során igény szerint a robbanás Ha egy cikk alapértelmezett rendelési típus a termelés, a tervezési motor keresi meg a webhelyen alapuló érvényes Anyagjegyzék-verzió."
+title: "Az AJ verziójának meghatározása"
+description: "Igény alábontása során, ha egy cikk az alapértelmezett Termelés rendeléstípushoz tartozik, a tervezési motor megkeresi az érvényes anyagjegyzék-verziót a telephely alapján."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a>Határozza meg az AJ-verzió
+# <a name="determine-the-bom-version"></a>Az AJ verziójának meghatározása
 
-Során igény szerint a robbanás Ha egy cikk alapértelmezett rendelési típus a termelés, a tervezési motor keresi meg a webhelyen alapuló érvényes Anyagjegyzék-verzió. 
+[!include[banner](../includes/banner.md)]
+
+
+Igény alábontása során, ha egy cikk az alapértelmezett Termelés rendeléstípushoz tartozik, a tervezési motor megkeresi az érvényes anyagjegyzék-verziót a telephely alapján. 
 
 A helydimenzió mindig ismert és megjelenik az igénytranzakcióban. A következő folyamat használható, hogy meghatározza a használandó anyagjegyzék-verziót:
 
@@ -38,6 +41,8 @@ A helydimenzió mindig ismert és megjelenik az igénytranzakcióban. A követke
 -   Ha nincs használható általános anyagjegyzék, akkor az igény alábontása ezen a ponton leáll.
 
 Minden érvényes anyagjegyzék-verziónak, legyen az telephelyre jellemző vagy általános verzió, teljesítenie kell a dátumra és a mennyiségre vonatkozó kötelező feltételeket.
+
+
 
 
 

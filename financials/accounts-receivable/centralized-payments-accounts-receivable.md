@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>Kinnlevőségek központosított kifizetései
 
+[!include[banner](../includes/banner.md)]
+
+
 Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egyetlen, minden kifizetést kezelő jogi személy alkalmazásával. Ebből adódóan ugyanazt a tranzakciót nem kell több jogi személyhez megadni. A cikk néhány példát mutat be, amelyek a különböző helyzetekben felmerülő központosított kifizetések feladási módjait jelenítik meg.
 
 Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Ebből adódóan ugyanazt a tranzakciót nem kell több jogi személyhez megadni. Továbbá a szervezet időt takarít meg, mert a kifizetési javaslatok és elszámolások folyamatai és a nyílt és zárt tranzakciók szerkesztése a központosított kifizetésekhez rendszerezve vannak. 
 
-Központosított fizetési szervezetben műveletek számos jogi személyek, és minden működési jogi személy kezeli a saját számlák kapott információkat. Egyetlen jogi személy, amelyről ismert, mint a kifizetés a jogi személy által fogadott valamennyi működési jogi személyhez kifizetések. A kiegyenlítési folyamat során mindkét irányban létrejönnek a vonatkozó esedékességi tranzakciók. Megadhatja, hogy a szervezet melyik jogi személye kap realizált nyereség vagy veszteség tranzakciókat és hogy központosított kifizetéshez kapcsolódó készpénzfizetési engedmények tranzakciói hogyan vannak kezelve. 
+Egy központosított kifizetésű szervezetben sok jogi személy létezik a műveletekhez, és minden működő jogi személy kezeli a saját kinnlevőségeire vonatkozó adatait. Minden működő jogi személy kifizetéseit egy jogi személy fogadja, ami a kifizetés jogi személyeként ismert. A kiegyenlítési folyamat során mindkét irányban létrejönnek a vonatkozó esedékességi tranzakciók. Megadhatja, hogy a szervezet melyik jogi személye kap realizált nyereség vagy veszteség tranzakciókat és hogy központosított kifizetéshez kapcsolódó készpénzfizetési engedmények tranzakciói hogyan vannak kezelve. 
 
 A következő példák bemutatják, hogyan kezeli a rendszer a feladást a különböző helyzetekben. Mindegyik példa a következő konfigurációból indul ki:
 
@@ -66,14 +69,14 @@ A Gyár 600,00 összegű kifizetést kap a Gyár 4000-es vevőkódjára (Hegyvid
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                         | Tartozik összeg | Követel összeg |
 |---------------------------------|--------------|---------------|
 | Kinnlevőségek (Gyár)  | 600,00       |               |
 | Esedékes a Keleti Gyárnak (Gyár) |              | 600,00        |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                             | Tartozik összeg | Követel összeg |
 |-------------------------------------|--------------|---------------|
@@ -81,7 +84,7 @@ A Gyár 600,00 összegű kifizetést kap a Gyár 4000-es vevőkódjára (Hegyvid
 | Kinnlevőségek (Keleti Gyár) |              | 600,00        |
 
 ## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>2. példa: másik jogi személytől érkező, készpénzfizetési engedményt tartalmazó számla vevői kifizetése
-A Gyár 580,00 összegű kifizetést kap a Gyár 4000-es vevőjére (Hegyvidéki Kereskedők). A Fabrikam keleti 4000 vevő nyitott számla tartozik. A számlán 20,00 összegű készpénzfizetési engedmény szerepel. A kifizetés elszámolása a nyitott Keleti Gyár-számlákkal szemben történik. A készpénzfizetési engedményt feladja a rendszer a számla jogi személyének, a Keleti Gyárnak.
+A Gyár 580,00 összegű kifizetést kap a Gyár 4000-es vevőjére (Hegyvidéki Kereskedők). A Keleti Gyárnak van egy nyitott számlája a 4000-as vevővel szemben. A számlán 20,00 összegű készpénzfizetési engedmény szerepel. A kifizetés elszámolása a nyitott Keleti Gyár-számlákkal szemben történik. A készpénzfizetési engedményt feladja a rendszer a számla jogi személyének, a Keleti Gyárnak.
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>A számla feladása a Keleti Gyárban a Keleti Gyár 4000-es vevőjére.
 
@@ -99,14 +102,14 @@ A Gyár 580,00 összegű kifizetést kap a Gyár 4000-es vevőjére (Hegyvidéki
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                         | Tartozik összeg | Követel összeg |
 |---------------------------------|--------------|---------------|
 | Kinnlevőségek (Gyár)  | 580,00       |               |
 | Esedékes a Keleti Gyárnak (Gyár) |              | 580,00        |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                             | Tartozik összeg | Követel összeg |
 |-------------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ A Gyár 600,00 euró (EUR) összegű kifizetést kap a Gyár 4000-es vevőjére 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                         | Tartozik összeg            | Követel összeg           |
 |---------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ A Gyár 600,00 euró (EUR) összegű kifizetést kap a Gyár 4000-es vevőjére 
 | Esedékes a Keleti Gyárnak (Gyár) | 0,00 EUR / 12,90 USD    |                         |
 | Realizált nyereség (Gyár)        |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                             | Tartozik összeg            | Követel összeg           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ A Gyár kifizetést ad fel a Gyár 4000-es vevőjére (Hegyvidéki Kereskedők) 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                         | Tartozik összeg            | Követel összeg           |
 |---------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ A Gyár kifizetést ad fel a Gyár 4000-es vevőjére (Hegyvidéki Kereskedők) 
 | Esedékes a Keleti Gyárnak (Gyár) | 0,00 EUR / 13,46 USD    |                         |
 | Realizált nyereség (Gyár)        |                         | 0,00 EUR / 13,46 USD    |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                             | Tartozik összeg            | Követel összeg           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ A Gyár kifizetést ad fel a Gyár 4000-es vevőjére (Hegyvidéki Kereskedők) 
 | Kinnlevőségek (Keleti Gyár) |                         | 12,00 EUR / 14,47 USD   |
 
 ## <a name="example-5-customer-credit-note-with-primary-payment"></a>5. példa: vevői jóváírás elsődleges kifizetéssel
-A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Kereskedők). A kifizetés elszámolása a Nyugati Gyár 10 000-es vevőjének egy nyitott számlájával és a Keleti Gyár 4000-es vevőjének egy nyitott jóváírásával szemben történik. A kifizetés az elsődleges kifizetésként van jelölve, az a **tranzakciók kiegyenlítése** oldalon.
+A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Kereskedők). A kifizetés elszámolása a Nyugati Gyár 10 000-es vevőjének egy nyitott számlájával és a Keleti Gyár 4000-es vevőjének egy nyitott jóváírásával szemben történik. A kifizetést a **Tranzakciók kiegyenlítése** képernyőn elsődleges kifizetésként jelölik meg.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Számla feladása a Nyugati Gyár 10 000-es vevőjére
 
@@ -224,7 +227,7 @@ A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Keresked�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>A Gyár kifizetésének elszámolása a Nyugati Gyár számlájával és a Keleti Gyár jóváírásával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                           | Tartozik összeg | Követel összeg |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Keresked�
 | Kinnlevőségek (Gyár)    | 100,00       |               |
 | Esedékes a Nyugati Gyárnak (Gyár)   |              | 100,00        |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                             | Tartozik összeg | Követel összeg |
 |-------------------------------------|--------------|---------------|
 | Kinnlevőségek (Keleti Gyár) | 25,00        |               |
 | Esedékes a Gyárnak (Keleti Gyár)     |              | 25,00         |
 
-**Fabrikam West posting**
+**Nyugati Gyár – feladás**
 
 | Számla                             | Tartozik összeg | Követel összeg |
 |-------------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Keresked�
 | Kinnlevőségek (Nyugati Gyár) |              | 100,00        |
 
 ## <a name="example-6-customer-credit-note-without-primary-payment"></a>6. példa: vevői jóváírás elsődleges kifizetés nélkül
-A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Kereskedők). A kifizetés elszámolása a Nyugati Gyár 10 000-es vevőjének egy nyitott számlájával és a Keleti Gyár 4000-es vevőjének egy nyitott jóváírásával szemben történik. A kifizetés nincs bejelölve az elsődleges kifizetésként meg a **tranzakciók kiegyenlítése** oldalon.
+A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Kereskedők). A kifizetés elszámolása a Nyugati Gyár 10 000-es vevőjének egy nyitott számlájával és a Keleti Gyár 4000-es vevőjének egy nyitott jóváírásával szemben történik. A kifizetést a **Tranzakciók kiegyenlítése** képernyőn nem jelölik meg elsődleges kifizetésként.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Számla feladása a Nyugati Gyár 10 000-es vevőjére
 
@@ -273,21 +276,21 @@ A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Keresked�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>A Gyár kifizetésének elszámolása a Nyugati Gyár számlájával és a Keleti Gyár jóváírásával szemben
 
-**Fabrikam posting**
+**Gyár – feladás**
 
 | Számla                         | Tartozik összeg | Követel összeg |
 |---------------------------------|--------------|---------------|
 | Kinnlevőségek (Gyár)  | 75,00        |               |
 | Esedékes a Nyugati Gyárnak (Gyár) |              | 75,00         |
 
-**Fabrikam East posting**
+**Keleti Gyár – feladás**
 
 | Számla                              | Tartozik összeg | Követel összeg |
 |--------------------------------------|--------------|---------------|
 | Kinnlevőségek (Keleti Gyár)  | 25,00        |               |
 | Esedékes a Nyugati Gyárnak (Keleti Gyár) |              | 25,00         |
 
-**Fabrikam West posting**
+**Nyugati Gyár – feladás**
 
 | Számla                                | Tartozik összeg | Követel összeg |
 |----------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ A Gyár 75,00 összegű kifizetést kap a 4000-es vevőre (Hegyvidéki Keresked�
 | Kinnlevőségek (Nyugati Gyár)    |              | 75,00         |
 | Esedékes a Keleti Gyártól (Nyugati Gyár) | 25,00        |               |
 | Kinnlevőségek (Nyugati Gyár)    |              | 25,00         |
+
+
 
 
 

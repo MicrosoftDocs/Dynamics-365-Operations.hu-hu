@@ -1,6 +1,6 @@
 ---
 title: "Költségvetés-tervezési adatfelosztás"
-description: "A cikk ismerteti a Microsoft Dynamics 365 műveletekhez és hogyan használhatók a rendelkezésre álló különböző felosztási módszerek."
+description: "A cikk ismerteti a Microsoft Dynamics 365 for Operations rendszerben elérhető különféle felosztási módszereket és bemutatja azok használatát."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-data-allocation"></a>Költségvetés-tervezési adatfelosztás
 
-A cikk ismerteti a Microsoft Dynamics 365 műveletekhez és hogyan használhatók a rendelkezésre álló különböző felosztási módszerek.  
+[!include[banner](../includes/banner.md)]
+
+
+A cikk ismerteti a Microsoft Dynamics 365 for Operations rendszerben elérhető különféle felosztási módszereket és bemutatja azok használatát.  
 
 A költségvetési tervben számos módon eloszthatja az adatokat a tervezett összegek pontos megjelenítése érdekében.
 
 ## <a name="allocation-methods"></a>Felosztási mód
 Háromféle felosztási móddal (időszakok közötti felosztás, felosztás dimenziókra és főkönyvi felosztási szabályok használata) hozhat létre sorokat a költségvetésben; ezek az azonos költségvetési tervben lévő sorokra épülnek. Más költségvetési tervekben a költségvetésiterv-sorokat három másik módon (összesítés, felosztás és másolás a költségvetési tervből) hozhatja létre. Mind a hat felosztási mód esetén Ön határozza meg a felosztási célváltozatot. A célváltozat megegyezhet a forrásváltozattal, de el is térhet attól. Ezenkívül megadhatja, hogy az új sorokat a rendszer hozzárendelje a költségvetési tervhez, vagy cserélje az aktuális sorokat.
 
-[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)<ph id="t1">
-</ph>**időszakok közötti foglalási** – memóriát foglalni a költségvetési terv sorai a forrás költségvetési terv eset a cél eset időszakok közötti időszak-felosztási kategória használatos. A forrásösszeget a rendszer több sorhoz is hozzárendeli a célváltozatban az időszaki felosztókategóriában meghatározott százalék és dátumon szerint.         
+[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+**Időszakok közötti felosztás** – A költségvetési terv sorait a költségvetési forrás tervváltozatából időszaki felosztókategória segítségével oszthatja fel a célváltozat pénzügyi időszakai között. A forrásösszeget a rendszer több sorhoz is hozzárendeli a célváltozatban az időszaki felosztókategóriában meghatározott százalék és dátumon szerint.         
 
 [![AllocateToDimensions](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Felosztás dimenziókra** – A költségvetési terv sorai a költségvetési forrás tervváltozatából a célváltozat pénzügyi sorai között kerülnek felosztásra a kiválasztott költségvetés-felosztási feltételben meghatározott százalékok és pénzügyi dimenziók alapján.           
@@ -58,7 +61,7 @@ Ha felosztásokat szeretne végrehajtani a költségvetési terv lapon, válassz
 
 [![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
-Ezután válasszon egy elosztási módszert. A többi mezőt a rendszer ezután a kiválasztott módszer alapján állítja be. Ezekben a mezőkben található a költségvetési terv adatainak forrása és célja, valamint egy beállítás, amellyel megadott tényezővel szorozhatja meg a forrást a célösszegek létrehozásakor a tömeges kiigazítás megkönnyítése érdekében. Ezenfelül beállíthatja a **Hozzáfűzés tervhez** lehetőséget. A meglévő költségvetésiterv-sorok felülírásához válassza a **Nem**, azok megtartásához az **Igen** lehetőséget, majd adjon hozzá új sorokat a felosztott összegekhez.
+Ezután válasszon egy felosztási módszert. A többi mezőt a rendszer ezután a kiválasztott módszer alapján állítja be. Ezekben a mezőkben található a költségvetési terv adatainak forrása és célja, valamint egy beállítás, amellyel megadott tényezővel szorozhatja meg a forrást a célösszegek létrehozásakor a tömeges kiigazítás megkönnyítése érdekében. Ezenfelül beállíthatja a **Hozzáfűzés tervhez** lehetőséget. A meglévő költségvetésiterv-sorok felülírásához válassza a **Nem**, azok megtartásához az **Igen** lehetőséget, majd adjon hozzá új sorokat a felosztott összegekhez.
 
 ## <a name="automating-allocations-during-a-workflow"></a>Felosztások automatizálása munkafolyamat során
 Egy hatékony funkciónak köszönhetően automatikusan elvégezheti a felosztások a költségvetés tervezési munkafolyamata részeként. Mikor a költségvetési terv halad a munkafolyamatban, megadott tervezési szakaszok esetén automatizált feladatok kezdeményezhetik a felosztást. 
@@ -70,5 +73,7 @@ Ezután hozzon létre szakaszfelosztást a **Költségvetés-tervezési konfigur
 Végül hozzá kell adni egy automatizált feladatot a költségvetés-tervezési szakaszhoz a kívánt munkafolyamat-szakaszban. A következő példában két költségvetés-tervezési szakaszfelosztás (pirossal jelölve) került a munkafolyamatba.
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+
+
 
 

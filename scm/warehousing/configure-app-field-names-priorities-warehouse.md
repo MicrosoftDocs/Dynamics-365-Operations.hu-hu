@@ -1,6 +1,6 @@
 ---
-title: "A Warehousing app app mezőnevek konfigurálása"
-description: "Ez a témakör ismerteti meghatározása és konfigurálása a raktári app mezőneveket és prioritások Dynamics 365 műveletekhez."
+title: "A Warehousing alkalmazás alkalmazás-mezőneveinek konfigurálása"
+description: "Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Dynamics 365 for Operationsben."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-app-field-names-in-warehousing-app"></a>A Warehousing app app mezőnevek konfigurálása
+# <a name="configure-app-field-names-in-warehousing-app"></a>A Warehousing alkalmazás alkalmazás-mezőneveinek konfigurálása
 
-Ez a témakör ismerteti meghatározása és konfigurálása a raktári app mezőneveket és prioritások Dynamics 365 műveletekhez. 
+[!include[banner](../includes/banner.md)]
 
-**Megjegyzés:** Ez a témakör a Raktárkezelés szolgáltatások vonatkozik. A Készletkezelés szolgáltatások nem vonatkozik. 365 Dynamics - műveletekhez raktározás raktározási feladatok végrehajtásához használt alkalmazás. Meg is határozza meg és állítsa be a mezőneveket, amelyeket az alkalmazás, valamint a mezőnevek hozzárendeli a prioritásának beállítása. Ez a témakör ismerteti az határozza meg, és a raktár app mezőneveket és a prioritások beállítása, és azok hogyan használhatók a Dynamics 365 raktározás - műveletekhez. Dynamics 365 műveletek - raktározás, a kapcsolat beállításával kapcsolatos részletes információkat lásd a tankönyv [telepítse és konfigurálja a Dynamics 365 műveletek - raktározás](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Raktári app mezőnevek konfigurálása
+Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Dynamics 365 for Operationsben. 
+
+**Megjegyzés:** ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A Dynamics 365 for Operations - Warehousing Dynamics egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a témakör elmagyarázza, hogyan történik a raktári alkalmazás ezen mezőneveinek és prioritásainak meghatározása és konfigurálása, valamint használata a Dynamics 365 for Operations - Warehousing alkalmazásban. A Dynamics 365 for Operations - Warehousing alkalmazáshoz való kapcsolódás konfigurálásának részleteihez lásd a [Dynamics 365 for Operations - Warehousing telepítése és konfigurálása](install-configure-warehousing-app.md) oktatóanyagot.
+
+<a name="configure-warehouse-app-field-names"></a>A raktári alkalmazáson belüli mezőnevek konfigurálása
 ===================================
 
-Dynamics 365 - műveletekhez használja a mobileszközön raktározás konfigurálhatók metaadatok hogyan jelenjen meg az eszközön a **app mezőnevek raktár** oldalon. Új vállalat Dynamics 365 műveletekhez, jelölje ki **alapértelmezett beállításainak létrehozása** fogja használni a raktári mobil eszköz munkafolyamatokat, és egy elsődleges beviteli módot és Beviteltípus rendelje hozzá azokat mezőnevek létrehozásához. Miután a mezőnevek hozott létre, kijelölheti a következő beviteli beállítások.
+Amikor a Dynamics 365 for Operations - Warehousing alkalmazást a mobileszközön használja, konfigurálható, hogyan jelenjenek meg az eszközön a metaadatok **A raktári alkalmazáson belüli mezőnevek** oldalon. Egy a Dynamics 365 for Operationsbe felvett új vállalatnál válassza az **Alapértelmezett beállítás létrehozása** elemet a raktármodul mobileszközön használt munkafolyamataiban használt összes mezőnév létrehozásához, majd rendeljen hozzájuk egy elsődleges beviteli módot és beviteltípust. Az összes mezőnév létrehozása után a következő beviteli beállításokat választhatja ki.
 
 <table>
 <colgroup>
@@ -51,25 +54,25 @@ Dynamics 365 - műveletekhez használja a mobileszközön raktározás konfigur�
 <tbody>
 <tr class="odd">
 <td>Preferált beviteli mód</td>
-<td>Ez a beállítás meghatározza, hogy a keresési mezőbe, vagy a kézi betáplálási beviteli mező a kijelölt mező nevét kell feltüntetni. Ez akkor hasznos, mezők függően különbséget tenni a vonalkód mező használatakor. <strong>Megjegyzés:</strong> a mezőnevek elsődleges beviteli mód beállítása <strong>ellenőrzés</strong>, adatokat manuálisan adhat meg, ha a vonalkód nem olvasható vagy sérült.</td>
+<td>Ez a beállítás határozza meg, hogy egy keresési mező vagy egy kézi beviteli mező jelenjen-e meg a kijelölt mezőnévnél. Ez a mezők vonalkódhasználaton alapuló megkülönböztetéséhez hasznos. <strong>Megjegyzés:</strong> azon mezőneveknél, amelyeknél az elsődleges beviteli mód beállítása <strong>Beolvasás</strong>, adatokat manuálisan is megadhat, ha a vonalkód nem olvasható vagy sérült.</td>
 </tr>
 <tr class="even">
 <td>Beviteltípus</td>
-<td>Ez a beállítás határozza meg, milyen beviteli típust kell használni a kiválasztott mező nevét. Négy lehetőségek állnak rendelkezésre:
+<td>Ez a beállítás határozza meg, milyen beviteli típus legyen használva a kiválasztott mezőnévnél. Négy lehetőség érhető el:
 <ul>
-<li><strong>Kijelölés</strong> - a választható lehetőségek listáját tartalmazza. Ezzel a beállítással a mezőnevek nincsenek szerkeszthető.</li>
-<li><strong>Dátum</strong> - mezőben megadott dátum jelenik meg a kívánt dátumformátumot a címkével ellátott nevek. Ez segít, lásd: Adja meg a dátumot, hogy a raktárosok. Ezzel a beállítással a mezőnevek nincsenek szerkeszthető.</li>
-<li><strong>Alfa</strong> - ki, ha az eszköz billentyűzet során alkalmazandó adatok manuális bevitele az alkalmazás. A billentyűzet élmény eszköz használt függően módosítható.</li>
-<li><strong>Numerikus</strong> - a mezőnevek, hogy csak bevitel használata numerikus, akkor válassza ezt az opciót egy egyéni numerikus billentyűzet segítségével az eszköz billentyűzet helyett a beviteli mező megjelenítéséhez.</li>
+<li><strong>Kiválasztás</strong> - választható lehetőségek listáját tartalmazza. Ezzel a beállítással a mezőnevek nem szerkeszthetők.</li>
+<li><strong>Dátum</strong> - a dátumként megadott mezőnevek dátumformátumot jelenítenek meg a címkével. Ez segít a raktárosoknak látni, milyen formátumban adják meg a dátumot. Ezzel a beállítással a mezőnevek nem szerkeszthetők.</li>
+<li><strong>Alfa</strong> - kiválasztása esetén az eszköz billentyűzetén kell adatokat manuálisan bevinni az alkalmazásban. A billentyűzet felülete módosítható a használt eszköztől függően.</li>
+<li><strong>Numerikus</strong> - a csak numerikus bevitelt használó mezőneveknél ennek a lehetőségnek a kiválasztásával egyéni számbillentyűzet jeleníthető meg a beviteli mezőnél az eszköz billentyűzete helyett.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Raktári app mező prioritásának beállítása
+<a name="configure-warehouse-app-field-priority"></a>A raktári alkalmazáson belüli mezőprioritások beállítása
 ======================================
 
-A a **raktár mezőben prioritás app** lapon elhelyezhet mezőneveket különböző prioritási csoportokba. Ez lehetővé teszi annak eldöntésére, hogy milyen információkat kell megjelenítenie a fő feladat lapon az alkalmazás feladatok végrehajtásakor a raktárosok. Ha **alapértelmezett beállításainak létrehozása**, alapértelmezés szerinti prioritás csoportokat hoz létre. Szükség szerint tetszőleges számú kiemelt csoportok létrehozására, de csak három kiemelt csoportok jelennek meg a feladat lap. Dynamics 365 műveletek az alkalmazás metaadat küld, amikor azt fogja hozzárendelni az egyes mezők attól függően, hogy a prioritás csoport a relatív prioritását, és az alkalmazás jelenik meg az első három kiemelt csoportok a metaadatok, a feladat lapon található. A túlnyúló metaadatokat a többi másodlagos részletek lapon jelenik meg. A következő táblázat például öt kiemelt csoportok.
+**A raktári alkalmazáson belüli mezőprioritás** oldalon a mezőneveket különböző prioritási csoportokba rendezheti. Ez lehetővé teszi annak eldöntését, hogy milyen információk jelenjenek meg a fő feladatlapon, amikor a raktári dolgozók feladatokat végeznek az alkalmazás használatával. Ha az **Alapértelmezett beállítás létrehozása** elemre kattint, létrejön az alapértelmezés szerinti prioritáscsoportok sorozata. Szükség szerint tetszőleges számú prioritási csoport hozható létre, de a feladatlapon csak három prioritási csoport jelenik meg. Amikor a Dynamics 365 for Operations metaadatokat küld az alkalmazásnak, minden mezőhöz relatív prioritást rendel a prioritási csoportjától függően, és az alkalmazás a metaadatokban található első három prioritási csoportot jeleníti meg a feladatlapon. Az ezen felüli metaadatok a másodlagos részletek lapon jelennek meg. A következő táblázat öt prioritási csoportra mutat példát.
 
 <table>
 <colgroup>
@@ -78,13 +81,13 @@ A a **raktár mezőben prioritás app** lapon elhelyezhet mezőneveket különb�
 </colgroup>
 <thead>
 <tr class="header">
-<th>Prioritás csoport</th>
+<th>Prioritási csoport</th>
 <th>Hozzárendelt mezők</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td> Prioritás 10</td>
+<td> 10. prioritás</td>
 <td><ul>
 <li>Tétel</li>
 <li>Mennyiség</li>
@@ -92,20 +95,20 @@ A a **raktár mezőben prioritás app** lapon elhelyezhet mezőneveket különb�
 </ul></td>
 </tr>
 <tr class="even">
-<td> Prioritás: 20</td>
+<td> 20. prioritás</td>
 <td><ul>
 <li>Fürtpozíció</li>
 <li>Fürt</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td> Prioritás: 30</td>
+<td> 30. prioritás</td>
 <td><ul>
 <li>Cikk leírása</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td> Prioritás: 40</td>
+<td> 40. prioritás</td>
 <td><ul>
 <li>Konfiguráció</li>
 <li>Szín</li>
@@ -114,7 +117,7 @@ A a **raktár mezőben prioritás app** lapon elhelyezhet mezőneveket különb�
 </ul></td>
 </tr>
 <tr class="odd">
-<td> Prioritás: 50</td>
+<td> 50. prioritás</td>
 <td><ul>
 <li>Tárolóhely</li>
 <li>Azonosítótábla</li>
@@ -123,25 +126,27 @@ A a **raktár mezőben prioritás app** lapon elhelyezhet mezőneveket különb�
 </tbody>
 </table>
 
-Például amikor a raktáros van valamilyen műveletet hajt végre egy mobil eszköz, ha megjelenik az alkalmazás metaadatok áll a következő mezőket:
+Például amikor egy raktári dolgozó valamilyen műveletet hajt végre egy mobileszközön, ha az alkalmazásban megjelenő metaadatok a következő mezőkből állnak:
 
 -   Tétel
 -   Mennyiség
 -   Mértékegység
 -   Cikk leírása
--   Méretét és helyét
+-   Méret és hely
 
-A fenti táblában beállított raktár app mezőben prioritás alapján, a következő 3 sor információ jelenik meg a feladat lapon:
+A raktári alkalmazás a fenti táblában beállított mezőprioritásai alapján a következő 3 sor információ jelenik meg a feladatlapon:
 
--   1. sor: Cikk, mennyiség, mértékegység
--   2. sor: Cikk leírása
--   3 sor: méret
+-   1. sor: Elem, Mennyiség, Mértékegysége
+-   2. sor: Elem leírása
+-   3. sor: Méret
 
-A megmaradt metaadatait, például a hely nem fog megjelenni a feladat lapon, de a részletek lapon fog megjelenni. További és példák a felhasználói felület, olvassa el a blogbejegyzést [Dynamics 365 bejelentése műveletek - raktározás](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+A fennmaradó metaadatok, például a Hely nem fog megjelenni a feladatlapon, de megjelenik a részletek lapon. További információért és a felhasználói felülettel kapcsolatos példákért olvassa el a [Dynamics 365 for Operations - Warehousing bejelentése](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) blogbejegyzést.
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Telepítse és konfigurálja a Microsoft Dynamics 365 műveletekhez – raktározás](install-configure-warehousing-app.md)
+[A Microsoft Dynamics 365 for Operations– Warehousing telepítése és konfigurálása](install-configure-warehousing-app.md)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Kötelezettségek kezdőlap"
-description: "Ez a témakör a kötelezettségek áttekintése."
+description: "Ez a témakör a Kötelezettségekről nyújt áttekintést."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,8 +27,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-home-page"></a>Kötelezettségek kezdőlap
 
-Ez a témakör a kötelezettségek áttekintése.
+[!include[banner](../includes/banner.md)]
 
-Megadhat szállítói számlákat kézzel, vagy egy adatentitáson keresztül elektronikusan is megkaphatja azokat. Után a számlák megadott vagy kapott, tekintse át, és a számlák a számla-jóváhagyási napló jóváhagyása vagy a **szállítói számla** oldalon. Segítségével számlaegyeztetés, a szállítói számlára vonatkozó irányelvek és a munkafolyamat automatizálása az ellenőrzési folyamatot, úgy, hogy a rendszer automatikusan jóváhagyja a számlákat, amelyek megfelelnek bizonyos feltételeknek, és a fennmaradó számlák vannak jelölve ellenőrzésre egy erre jogosult felhasználó.
+
+Ez a témakör a Kötelezettségekről nyújt áttekintést. 
+
+Megadhat szállítói számlákat kézzel, vagy egy adatentitáson keresztül elektronikusan is megkaphatja azokat. A számlák rögzítése vagyfogadása után áttekintheti és jóváhagyhatja a számlákat egy számla-jóváhagyási napló vagy a **Szállítói számla** oldal használatával. Segítségével számlaegyeztetés, a szállítói számlára vonatkozó irányelvek és a munkafolyamat automatizálása az ellenőrzési folyamatot, úgy, hogy a rendszer automatikusan jóváhagyja a számlákat, amelyek megfelelnek bizonyos feltételeknek, és a fennmaradó számlák vannak jelölve ellenőrzésre egy erre jogosult felhasználó.
+
+
 
 

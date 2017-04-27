@@ -34,14 +34,14 @@ A kiskereskedők gyakran különböző engedményeket állítanak be a különb�
 <a name="channel-specific-discounts"></a>Csatornaspecifikus engedmények
 --------------------------
 
-Kereskedők gyakran kínálnak különböző engedményeket számítani a különböző csatornákon. Ez a május megfelelhessen a helyi piacon vagy versengő kiskereskedők foglalkozni kell végrehajtani.
+A kiskereskedők gyakran különböző engedményeket ajánlanak a különböző csatornákon. Ezt tehetik a helyi piaci feltétetelek kezelése vagy a versenytárs kiskereskedők legyőzése érdekében.
 
-Kiskereskedelmi és kereskedelmi műveletek a Microsoft Dynamics 365 árcsoportok segítségével csatorna-specifikus engedmények megadása. Az árcsoportok a következő entitások egy vagy több lehetőségéhez rendelhetők hozzá: csatornák, katalógusok, fiókok és hűségprogramok. A cikk a csatornákat tárgyalja, de az azonos koncepciók a katalógus engedményekre, fiók engedményekre és a hűséges engedményekre vonatkoznak.
+A kiskereskedelem a Microsoft Dynamics 365 for Operations rendszerben árcsoportok segítségével határoz meg csatornaspecifikus engedményeket. Az árcsoportok a következő entitások egy vagy több lehetőségéhez rendelhetők hozzá: csatornák, katalógusok, fiókok és hűségprogramok. A cikk a csatornákat tárgyalja, de az azonos koncepciók a katalógus engedményekre, fiók engedményekre és a hűséges engedményekre vonatkoznak.
 
 ## <a name="price-groups"></a>Árcsoportok
-\[felirat azonosítója = "melléklet\_256084" igazítás = "alignnone" szélesség "640" =\][![csoportok ár](./media/price-groups-1024x608.png)](./media/price-groups.png) csoport kapcsolatok kiskereskedelmi ár\[/felirat\]
+\[caption id="attachment\_256084" align="alignnone" width="640"\][![Árcsoportok](./media/price-groups-1024x608.png)](./media/price-groups.png) Kiskereskedelem árcsoport-hivatkozások\[/caption\]
 
-A fenti ábra azt szemlélteti, entitás, amely lehet, hogy egy tranzakcióban (csatorna, katalógus, kapcsolat, vevői, hűségkártya) és a különböző engedménytípusokra vonatkozókat konfigurálható közötti kapcsolat. Minden tranzakció fordul elő egy csatorna, a csatorna garantáltan jelen a tranzakció. A fennmaradó entitások megadása nem kötelező. Minden egyes alapadat lapon van egy hivatkozás a kapcsolódó árcsoportok lapjához, ahol megtekintheti az árcsoportokat és szükség szerint hozzá is adhat árcsoportokat. Árcsoportot segítségével négy különböző típusú entitások engedményeket, a szervizdíj-helyesbítés és a kereskedelmi megállapodások vonatkoznak. Azt javasoljuk, hogy azt tervezi, hogyan fog nevet az árcsoportok rendszerezetten tárolhatja őket a stratégia. Betű vagy szám előtag vagy utótag használata, amelyekkel megkülönböztethetők egymástól a különféle több lehetőség lenne. Például 1-xxxxx csatorna árcsoportok és 2-xxxxx katalógus ár csoportok számára. Négy lekérdezési oldal van, amely valamennyi engedményekhez rendelt kiskereskedelmi entitásra fókuszál.
+A fenti ábra bemutatja a tranzakciókban megtalálható (csatorna, katalógus, fiók, vevő, hűségkártya) entitások és a különféle konfigurálható engedménytípusok közötti kapcsolatot. Az összes tranzakció egy csatornában fordul elő, így a csatorna garantáltan rajta van egy tranzakción. A fennmaradó entitások megadása nem kötelező. Minden egyes alapadat lapon van egy hivatkozás a kapcsolódó árcsoportok lapjához, ahol megtekintheti az árcsoportokat és szükség szerint hozzá is adhat árcsoportokat. Az árcsoportok segítségével az entitások négy különböző típusát kapcsolják össze az engedményekkel, az ármódosításokkal és kereskedelmi megállapodásokkal. Azt ajánljuk, hogy tervezzen meg egy stratégiát, hogyan fogja az árcsoportjait elnevezni annak érdekében, hogy rendben tartsa őket. Például egy betű- vagy számelőtag vagy -utótag segítségével megkülönböztet különféle típusokat. Például 1-xxxxx a csatornaárcsoportok és 2-xxxxx a katalógusárcsoportok számára. Négy lekérdezési oldal van, amely valamennyi engedményekhez rendelt kiskereskedelmi entitásra fókuszál.
 
 -   **Kiskereskedelmi csatorna árcsoportjai **– Ez a lap megjeleníti a minden egyes árcsoporthoz kapcsolódó engedmények és csatornák listáját.
 -   **Katalógus árcsoportjai **– Ez a lap megjeleníti a minden egyes árcsoporthoz kapcsolódó engedmények és katalógusok listáját.
@@ -62,6 +62,6 @@ A következő példa bemutatja egy csatorna engedmény beállításába bevont f
 <a name="see-also"></a>Lásd még
 --------
 
-[Price adjustments and discounts](price-adjustments-discounts.md)
+[Ármódosítások és engedmények](price-adjustments-discounts.md)
 
 

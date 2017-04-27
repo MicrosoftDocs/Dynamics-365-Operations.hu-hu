@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-process-recurring-invoices"></a>Állítsa be és dolgozza fel az ismétlődő számlákat
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk ismerteti az ismétlődő számlák beállítását és feldolgozását. Használhat ismétlődő számlákat, amennyiben a vevők részére rendszeresen azonos összegű számlákat kell kiállítania.
 
 <a name="create-a-recurring-free-text-invoice-template"></a>Ismétlődő szabadszöveges számlák sablonjának létrehozása
@@ -61,5 +64,7 @@ Szabadszöveges ismétlődő számlák nyomtatása
 ----------------------------------
 
 Ismétlődő számlák feladása után, kinyomtathatja a számlákat a szabadszöveges számla listaoldalról. A kijelölt számlákat ki lehet nyomtatni, vagy kiválaszthat egy számlatartományt nyomtatásra.
+
+
 
 

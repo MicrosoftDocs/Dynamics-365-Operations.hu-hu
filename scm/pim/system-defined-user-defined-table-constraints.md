@@ -1,6 +1,6 @@
 ---
 title: "Rendszer által meghatározott és Felhasználó által meghatározott táblázat megszorítások"
-description: "Ez a cikk ismerteti a kétféle termék konfigurációs modell - felhasználó által definiált vagy rendszer által meghatározott összetevők táblamegszorításokban. A táblamegszorítások az engedélyezett attribútumkombinációk mátrixait jelölik, hol minden sor a lehetséges attribútumértékek egy készletét határozza meg."
+description: "Ez a cikk bemutatja a táblamegszorítások két típusát termékkonfigurációs modell összetevői esetén: felhasználó és rendszer által meghatározott. A táblamegszorítások az engedélyezett attribútumkombinációk mátrixait jelölik, hol minden sor a lehetséges attribútumértékek egy készletét határozza meg."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Rendszer által meghatározott és Felhasználó által meghatározott táblázat megszorítások
 
-Ez a cikk ismerteti a kétféle termék konfigurációs modell - felhasználó által definiált vagy rendszer által meghatározott összetevők táblamegszorításokban. A táblamegszorítások az engedélyezett attribútumkombinációk mátrixait jelölik, hol minden sor a lehetséges attribútumértékek egy készletét határozza meg.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk bemutatja a táblamegszorítások két típusát termékkonfigurációs modell összetevői esetén: felhasználó és rendszer által meghatározott. A táblamegszorítások az engedélyezett attribútumkombinációk mátrixait jelölik, hol minden sor a lehetséges attribútumértékek egy készletét határozza meg.
 
 A táblamegszorítások olyan attribútumok kombinációinak a mátrixát képviselik, melyek megengedettek az összetevőknek egy termék konfigurációs modellnél. A táblázat minden sora egy lehetséges attribútum értékhalmazt határoz meg. Két típusú megszorítást nevezhet meg egy termékkonfigurációs modell esetén:
 
@@ -57,11 +60,13 @@ A rendszer által definiált táblamegszorítás dinamikus leképezést hoz lét
 
 Rendszer által definiált táblamegszorítás létrehozásakor válasszon ki egy táblázatot, tetszés szerint megadhatja a használni kívánt lekérdezést, majd társítsa az attribútum típusokat a kiválasztott táblázatban szereplő mezőkhöz. A mezőtípusoknak meg kell egyezniük az attribútum típusokkal.  
 
-Olyan táblamegszorításhoz is életbe léptetéséhez a termék konfigurációs modell, a táblamegszorítás korlátozásának egyik összetevője a modell szerepelniük kell. Az eljárás akkor hozzon létre új korlátozás, jelölje ki a táblázat következő korlátozó típustól, és válassza ki a használandó táblamegszorítás definíciója. Végül a táblamegszorítás összes mezőjének kapcsolódnia kell a termékkonfigurációs modell attribútumaihoz.
+Mielőtt egy táblamegszorítás érvénybe lépne a termékkonfigurációs modellen, a táblamegszorítást tartalmaznia kell a modell összetevők egy megszorításának. Az eljárás az, hogy új megszorítást kell létrehozni. Ehhez válassza ki a táblázat megszorítás típusát, majd a táblázat megszorítás használni kívánt definícióját. Végül a táblamegszorítás összes mezőjének kapcsolódnia kell a termékkonfigurációs modell attribútumaihoz.
 
 <a name="see-also"></a>Lásd még
 --------
 
 [Termékkonfigurálási modellek alapfogalmai](product-configuration-models.md)
+
+
 
 

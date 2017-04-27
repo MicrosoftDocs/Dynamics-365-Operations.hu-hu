@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Hitelkártya-beállítás, engedélyezés és rögzítés
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a Microsoft Dynamics AX rendszer hitelkártya-engedélyezéséről nyújt tájékoztatást. A fizetési szolgáltatás beállításának módjáról, az értékesítési rendeléshez történő hitelkártya hozzáadásáról és az engedélyezés érvénytelenítéséről nyújt tájékoztatást.
 
 <a name="setting-up-the-credit-card-payment-service"></a>A hitelkártyás fizetési szolgáltatás beállítása
@@ -55,7 +58,7 @@ Igényelheti a kártyaellenőrző kódot, amelyre néha a kártya biztonsági k�
 
 ### <a name="address-verification"></a>Cím ellenőrzése
 
-A kifizetési szolgáltatóhoz mindig beérkezik a címadatok ellenőrzése. Megadhatja, hogy mennyi információt meg kell adni egy tranzakció elfogadása. Mindig ellenőrizze a szolgáltatójánál határozza meg, hogy fogad-e ezt az információt. Az alábbiakban láthatók a címellenőrzés lehetőségei:
+A kifizetési szolgáltatóhoz mindig beérkezik a címadatok ellenőrzése. Megadhatja, hogy mennyi információra szükség egy tranzakció elfogadásához. Ügyeljen arra, hogy egyeztesse a szolgáltatóval, hogy elfogadja-e ezt az információt. Az alábbiakban láthatók a címellenőrzés lehetőségei:
 -   **Tranzakció mindenkori elfogadása** – Elfogadja a tranzakciót, függetlenül a címellenőrzés eredményétől.
 -   **Számlatulajdonos** – A tranzakcióból a kártyatulajdonos nevének összehasonlítása a hitelkártyát feldolgozó vállalat adataival.
 -   **Számlázási cím** – A tranzakcióból a kártyatulajdonos nevének és számlázási címének összehasonlítása a hitelkártyát feldolgozó vállalat adataival.
@@ -68,10 +71,12 @@ Minden egyes támogatott hitelkártyatípushoz be lehet állítani az adattámog
 -   **3. szint** – Az összes 2. szintű információ, valamint a rendelési sor információinak átadása.
 
 ## <a name="partial-payments"></a>Részfizetések
-Szállít egy rendelés része, a részleges rendelés összegének rögzítése, és az engedélyt a teljes rendelés ennyi volt, amely le van zárva. A fennmaradó összeg a még le nem szállított rendelés majd nyújtják be új engedélyeket.
+Ha egy rendelés egy részét szállítja ki, a rendelés részleges összege kerül rögzítésre, és az engedélyezés, amely a teljes rendelés összegére vonatkozott, lezárul. A fennmaradó összeghez a még nem szállított rendelésről egy új engedély lesz leadva.
 
 ## <a name="voiding-an-authorization"></a>Engedélyezés érvénytelenítése 
 A hitelkártya-engedélyezés érvénytelenítéséhez módosíthatja a fizetési módot egy másik módra, amelyhez nem tartozik Hitelkártya-típus.
+
+
 
 
 

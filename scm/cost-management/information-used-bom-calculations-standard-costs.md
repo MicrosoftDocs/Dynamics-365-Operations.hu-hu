@@ -1,5 +1,5 @@
 ---
-title: "Az elszámolóárak az Anyagjegyzék-számítások"
+title: "Elszámolóáras anyagjegyzék-számítások"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-with-standard-costs"></a>Az elszámolóárak az Anyagjegyzék-számítások
+# <a name="bom-calculations-with-standard-costs"></a>Elszámolóáras anyagjegyzék-számítások
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -78,6 +81,8 @@ Az elszámolóár anyagjegyzék-számításánál a költségszámítási verzi�
 -   A költségszámítási verziónak költségeket kell tartalmaznia – a tartalomban mindenképpen szerepelnie kell a költségeknek. Választható módon szerepelhetnek az értékesítési árak is, hogy a legyártott cikkekhez számíthatóak legyenek a javasolt értékesítési árak.
 
 Anyagjegyzék-számítás indításakor többféle információforrást lehet megadni. Ilyen a hely, a számítási dátum és a költségszámítási verzió is.
+
+
 
 
 

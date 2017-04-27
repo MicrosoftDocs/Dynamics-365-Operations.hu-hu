@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
 
+[!include[banner](../includes/banner.md)]
+
+
 A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Operations rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.  
 
 <a name="import-an-electronic-bank-statement"></a>Az elektronikus banki kivonat importálása
@@ -74,7 +77,7 @@ Három mód van a bankszámlakivonat tranzakciók összeillesztésére vagy egye
 -   Tranzakciók egyeztetése sztornírozási bankszámlakivonat tranzakcióval.
 -   Tranzakciók megjelölése **Új** értékként, így később könyvelhetők, mint banki tranzakció a Dynamics 365 for Operations rendszerben.
 
-Kézi egyezik meg a tranzakciók, jelölje be a tranzakciók a **banki tranzakciók** rács, válassza ki a megfelelő tranzakciókat a **műveletek banki tranzakciók** rács, és kattintson **megfelelő**. A kijelölt tranzakciók átkerülnek a nem egyeztetett tranzakciókat tartalmazó felső rácsokról a kiegyenlített tranzakciókat tartalmazó alsó rácsokra. Ezenkívül, az egyeztetett és a nem egyeztetett összegezett értékek frissülnek. Lehet egy az egyhez, több az egyhez és több a többhöz tranzakció megegyezés. Az egyeztetéseknek meg kell felelniük az engedélyezett dátum különbségek és tranzakciótípus leképezések szabályainak. Ezek a szabályok a **Pénz és bank menedzsment paraméterek** oldalon vannak megadva .
+Tranzakciók manuális egyeztetéséhez, jelölje ki a tranzakciókat a **Banki kivonat tranzakciók** rácsban, majd válassza ki a megfelelő tranzakciókat az **Operations banki tranzakciók** rácsban, és kattintson **Egyeztetés** gombra. A kijelölt tranzakciók átkerülnek a nem egyeztetett tranzakciókat tartalmazó felső rácsokról a kiegyenlített tranzakciókat tartalmazó alsó rácsokra. Ezenkívül, az egyeztetett és a nem egyeztetett összegezett értékek frissülnek. Lehet egy az egyhez, több az egyhez és több a többhöz tranzakció megegyezés. Az egyeztetéseknek meg kell felelniük az engedélyezett dátum különbségek és tranzakciótípus leképezések szabályainak. Ezek a szabályok a **Pénz és bank menedzsment paraméterek** oldalon vannak megadva .
 
 Fillér eltérések előfordulhatnak az egyeztetés során. Egyeztethet egy banki kivonat tranzakciót és egy Operations banki tranzakciót, amik fillér eltérésekkel rendelkeznek, ha az eltérés a tűréshatárokon belül van, amit a bankszámla **Megengedett fillér eltérés** mezője határoz meg. Az összeg az egyeztetett Operations banki tranzakció banki tranzakció **Korrekciós összeg** mezőben jelenik meg. Ha a banki egyeztetés egyeztetettként van bejelölve, a javítások feladása automatikusan történik, a kapcsolódó banki tranzakciótípusnál definiált fő számla segítségével. A javítások nem támogatottak az **Ellenőrzés** és a **Letét** dokumentumtípusok esetében. 
 
@@ -90,5 +93,7 @@ Miután minden kimutatássor fel lett dolgozva, be kell jelölnie a Banki egyezt
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Új, már egyeztetéssel egyeztetett tranzakciók könyvelése
 Az egyeztetés munkalapon **Új** értékkel jelölt Banki kivonat tranzakciók a **Banki kivonat** oldalon könyvelődnek. A **Banki kivonat** oldalon válassza a kivonat azonosítóját, a kivont adatainak megtekintéséhez. A **Könyvelés** menüben, használhatja a **Felosztások megtekintése** és a **Könyvelés megtekintése** lehetőségeket, az új tranzakciók és a hozzájuk tartozó tételek részletes adatainak megtekintéséhez. Válassza ki a **Könyvelés** lehetőséget az **Új** értékkel jelölt banki kivonat sorok főkönyvbe könyveléséhez. Fontos megjegyezni, hogy könyvelés csak egyszer hajtható végre banki kivonatonként.
+
+
 
 

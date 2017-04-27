@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-sheets"></a>Költségszámítási táblázatok
 
+[!include[banner](../includes/banner.md)]
+
+
 A költségszámítási táblázat beállításakor két célt kell szem előtt tartani. Az első cél az áruk költségeinek megjelenítésére használt formátum meghatározása a gyártott cikkekre vagy termelési rendelésre vonatkozóan. A formázott megjelenítés neve költségszámítási táblázat. A második cél a közvetett költségek számításához használt alap meghatározása. A költségszámítási táblázat a költségcsoport funkcióra építve jeleníti meg az adatokat, és a költségcsoportokat a közvetett költség számítási képleteiben is felhasználja. Ebben a cikkben a költségszámítási táblázat beállításának két célkitűzése van leírva. 
 
 Az első cél az áruk költségeinek megjelenítésére használt formátum meghatározása a gyártott cikkekre vagy termelési rendelésre vonatkozóan. Költségszámítási táblázat beállításakor az adatok formátumának meghatározása, és is a közvetett költségek számításához használt alap meghatározása. A költségszámítási táblázat a költségcsoport funkcióra építve jeleníti meg az adatokat, és a költségcsoportokat a közvetett költség számítási képleteiben is felhasználja. További információt a költségszámítási táblázat beállításának két célja van:
@@ -43,6 +46,8 @@ A költségszámítási verziók két blokkolási szabálya határozza meg, hogy
 A költségszámítási táblázat formátumának és a közvetett költségek számításának meghatározása után egy külön lépésben kell kezdeményeznie az adatok érvényesítését és mentését. A költségszámítási táblázat olyan formátumot határoz meg, amely vállalatszerte egységesen jeleníti meg a bekerülési költségeket. 
 
 A költségszámítási táblázat részeként jelenik meg a **Tételköltség kiszámítása** oldalon. A gyártott cikkek számított költségrekordjának költségszámítási táblázata az **Cikkár** képernyőn jeleníthető meg, a rendelés-specifikus számítási rekordé pedig az **Anyagjegyzék-számítás eredményei** képernyőn. A **Árszámítás** táblázat látható a termelési rendelés árszámítási lekérdező képernyőjén is.
+
+
 
 
 

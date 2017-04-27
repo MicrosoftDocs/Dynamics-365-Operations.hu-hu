@@ -1,6 +1,6 @@
 ---
-title: "Költségkönyvelés – kezdőlap"
-description: "Ez a témakör a súgótémakörök és egyéb Költségkönyvelés rendelkezésre álló erőforrások listája."
+title: "Költségkönyvelési kezdőlap"
+description: "Ez a témakör a Költségkönyvelés modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-accounting-home-page"></a>Költségkönyvelés – kezdőlap
+# <a name="cost-accounting-home-page"></a>Költségkönyvelési kezdőlap
 
-Ez a témakör a súgótémakörök és egyéb Költségkönyvelés rendelkezésre álló erőforrások listája.
+[!include[banner](../includes/banner.md)]
 
-A Költségkönyvelés modul lehetővé teszi, hogy tegye a következőket:
 
--   Költség elem dimenziók definiálása, költség elem dimenzió tagok importálása és költség elem dimenziók leképezése.
--   Költség objektum dimenziók definiálása, és importálja a költség objektum dimenzió tagjai.
+Ez a témakör a Költségkönyvelés modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel.
+
+A Költségkönyvelés modul lehetővé teszi a következőket:
+
+-   Költségösszetevő-dimenziók meghatározása és költségösszetevő-dimenziótagok importálása, költségösszetevő-dimenziók leképezése.
+-   Költségobjektum-dimenziók meghatározása és költségobjektum-dimenziótagok importálása.
 -   Statisztikai dimenziók meghatározása vagy importálása
 -   Statisztikai mérték szolgáltatójának sablonjainak létrehozása.
 -   Költségkönyvelési főkönyvek létrehozása.
@@ -46,29 +49,31 @@ A Költségkönyvelés modul lehetővé teszi, hogy tegye a következőket:
 
 ## <a name="get-started"></a>Első lépések
 
-A gyakorlati Költségkönyvelés nyújtanak a Microsoft Dynamics 365 műveletekhez – annak érdekében, hogy a tényleges költség elemzés Költségkönyvelés konfigurálása szükséges alapvető lépéseket. Egy sor olyan eljárást, amely abban a sorrendben jelennek meg, amelyek elvégzése is tartalmaz.
+A Költségkönyvelés laborban megtalálja a Microsoft Dynamics 365 for Operations - Költségkönyvelés konfigurálásához és tényleges költségelemzés végzéséhez szükséges alapvető lépéseket. Emellett több eljárást is talál, amelyeket a megjelenés sorrendjében végezhet el.
 
--   [Ismerkedés a Költségkönyvelés](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (fehér papír és a CustomerSource-fiókjához igényel)
+-   [Ismerkedés a Költségkönyveléssel](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (ismertető, CustomerSource fiókot igényel)
 
-Megérteni, hogyan használja a költségkönyvelés a napi munka, látnia kell ezeket a fogalmakat.
+Hogy többet tudjon a Költségkönyvelés mindennapi használatáról, ismernie kell ezeket a fogalmakat.
 
--   [Key terms in Cost accounting](terms-cost-accounting.md)
--   [Elemek költség és költség elem méretek](cost-elements.md)
--   [Map different cost element dimension members to a common set of cost element dimension members](map-cost-elements-dimension-members.md)
--   [Költség elemek létrehozása](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (feladat guide)
--   [Cost object dimensions](cost-objects.md)
--   [Költség-objektumok létrehozása](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (feladat guide)
+-   [A költségkönyvelés kulcsfogalmai](terms-cost-accounting.md)
+-   [Költségösszetevők és költségösszetevő-dimenziók](cost-elements.md)
+-   [Költségösszetevő-dimenziótagok hozzárendelése költségösszetevő-dimenziótagok közös készletéhez](map-cost-elements-dimension-members.md)
+-   [Költségösszetevők létrehozása](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (Feladat-útmutató)
+-   [Költségobjektum-dimenziók](cost-objects.md)
+-   [Költségobjektumok létrehozása](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (Feladat-útmutató)
 
 ## <a name="cost-control-mobile-workspace"></a>Költségkontroll mobil munkaterület
-A költség-ellenőrzési mobil munkaterület költség központ kezelők tekintheti meg a költség központ teljesítmény bármikor és bárhol.
+A Költségkontroll mobil munkaterülettel a költséghelyek vezetői bármikor és bárhol megtekinthetik a költséghely teljesítményét.
 
--   [Cost control mobile workspace](cost-controlling-mobile-workspace.md)
+-   [Költségkontroll mobil munkaterület](cost-controlling-mobile-workspace.md)
 
-## <a name="cost-accounting-analysis-power-bi-content"></a>A Költségkönyvelés elemzés kiemelt BI-tartalom
-A Költségkönyvelés elemzés Microsoft Power BI tartalom költség vezérlők vagy olyan személy, aki felelős a szervezet Költségkontroll szól. Ez magában foglalja a kulcs metrika, például a költség nagysága és tényleges költség, tervezett költség és költség rugalmas költségvetési költségszorzó. Költségkönyvelési tranzakciók adatait használja a Microsoft Dynamics 365 műveletekhez és a költségek egy összesítő nézetet biztosít a teljes szervezet számára kimutatási pénznemben. Vezetők szűrheti az adatokat a szervezeti egységek Költségkontroll végrehajtásához költség objektumok akkor is, ha a szervezet több jogi személyek lehetnek.
+## <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelési elemzés Power BI-tartalom
+A Költségkönyvelési elemzés Microsoft Power BI-tartalom költségellenőrök, illetve olyan személyek részére készült, aki a szervezetük költségellenőrzéséért felelősek. Kulcsfontosságú mérőszámokat foglal magában, például költség, nagyság, illetve költségszorzó és tényleges költség, tervezett költség és rugalmas tervezett költség alapján. A Microsoft Dynamics 365 for Operations költségkönyvelési tranzakciós adatait használja, és összesítő nézetet biztosít a teljes szervezet költségeiről egyetlen kimutatási pénznemben. A vezetők szűrhetik az adatokat költségobjektumok szerint szervezeti egységeik költségkontrollja számára akkor is, ha a szervezet több jogi személyből állhat.
 
--   [A Költségkönyvelés elemzés kiemelt BI-tartalom](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
--   [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+-   [Költségkönyvelési elemzés Power BI-tartalom](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
+-   [Biztonság beállítása a Költségkönyvelési elemzés Power BI-tartalomhoz](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+
+
 
 
 

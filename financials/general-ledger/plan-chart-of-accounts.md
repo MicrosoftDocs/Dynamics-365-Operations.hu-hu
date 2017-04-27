@@ -1,5 +1,5 @@
 ---
-title: "A Számlatükör terv"
+title: "A számlatükör megtervezése"
 description: "A cikk olyan információkat tartalmaz, melyek segítik önt számlatükröt tervezni szervezete számára."
 author: RobinARH
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-your-chart-of-accounts"></a>A Számlatükör terv
+# <a name="plan-your-chart-of-accounts"></a>A számlatükör megtervezése
+
+[!include[banner](../includes/banner.md)]
+
 
 A cikk olyan információkat tartalmaz, melyek segítik önt számlatükröt tervezni szervezete számára.
 
@@ -34,7 +37,7 @@ A szervezet pénzügyi adatainak nyomon követésére és karbantartására szá
 
 A számlatükör a jogi személy főkönyvi számláinak rendszerezett felsorolása. A lista alapján lehet előkészíteni a pénzügyi jelentéseket a hatóságok és a tulajdonosok részére. A számlák számlatípusok szerint vannak csoportosítva, és további nagyobb kategóriákba vannak gyűjtve. A legáltalánosabb szinten a számlák a bevétel- és költségszámlák (eredményszámlák) csoportjára, illetve az eszközök és források (mérlegszámlák) csoportjára vannak felosztva. 
 
-A Számlatükör osztva, és a szervezeten belüli olyan jogi személy által használt is. Az a jogi személy által használt Számlatükör van definiálva a **főkönyvi** oldalon. 
+A Számlatükör osztva, és a szervezeten belüli olyan jogi személy által használt is. A jogi személy által használt számlatükör a **Főkönyv** oldalon van definiálva. 
 
 A szervezeti számlatükör szerkezetével kapcsolatos döntések meghozatalakor többek között a következő tényezőket kell figyelembe venni:
 
@@ -48,10 +51,12 @@ Rendkívül hasznos lehet a fő számlákat összekapcsolni főszámla-kategóri
 
 A **Számlastruktúrák konfigurálása** oldalon hozhat létre számlastruktúrákat. A számlastruktúrák határozzák meg az érvényes kombinációkat. A kombinációkat, a fő számlákat, valamint a Számlatükör képernyő. 
 
-**Legal entity overrides** 
+**Jogi személy felülbírálásai** 
 
-Nem minden fő számlák jogi személyek esetén érvényes, és néhány csak vonatkozhat egy adott ideig. Ebben az esetben a Jogi személy felülbírálása szakasz használható annak azonosítására, hogy mely vállalatok számára kell felfüggeszteni a fő számlát, ki a tulajdonos, és mely időszakban aktív a dimenzió. A megosztott szinten történő felülbírálások nem lehet szigorúbban korlátozóak, mint a jogi személy szintjén történőek.
+Nem minden fő számla érvényes minden jogi személyre, és néhány csak egy adott időszakra vonatkozhat. Ebben az esetben a Jogi személy felülbírálása szakasz használható annak azonosítására, hogy mely vállalatok számára kell felfüggeszteni a fő számlát, ki a tulajdonos, és mely időszakban aktív a dimenzió. A megosztott szinten történő felülbírálások nem lehet szigorúbban korlátozóak, mint a jogi személy szintjén történőek.
 
-További tudnivalókért lásd: [pénzügyi dimenziók](financial-dimensions.md).
+További információért lásd: [Pénzügyi dimenziók](financial-dimensions.md).
+
+
 
 

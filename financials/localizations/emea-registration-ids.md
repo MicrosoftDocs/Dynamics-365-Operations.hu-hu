@@ -1,6 +1,6 @@
 ---
 title: "Nyilvántartási azonosítók"
-description: "Ez a témakör arról szól, beállításával és használatával a regisztrációs azonosítót."
+description: "Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,78 +27,83 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="registration-ids"></a>Nyilvántartási azonosítók
 
-Ez a témakör arról szól, beállításával és használatával a regisztrációs azonosítót.
+[!include[banner](../includes/banner.md)]
 
-Sok országok és régiók eltérő szabályozás és a nyilvántartási számokat vagy azonosítók rögzítésére vonatkozó követelmények rendelkezik. Ez a témakör a szükséges beállításokat és feldolgozása támogatott regisztráció-típusok áttekintése a felek különböző európai országokban/régiókban. Minden országban/régióban van kapcsolódó nyilvántartási számok különböző állami hivatalok által nyújtott különböző ország-specifikus funkciók támogatásához szükséges követelményeknek. Nyilvántartási számok közé, adóazonosító szám (TIN), Európai Áfa azonosítója az EU áfa és a társadalombiztosítási szám (SSN). Ez a szolgáltatás egységes keretet biztosít minden ország minden területen az egyes európai országok ország-specifikus követelmények figyelembevételével. Az alábbi szakaszok ismertetik az általános információáramlást használt beállítása és feldolgozása a regisztrációs azonosítót.
 
-## <a name="registration-type-creation"></a>Regisztráció-típus létrehozása
-Mielőtt a regisztrációs Azonosítót adhat meg, be kell állítania a nyilvántartási számokat, amelyek minden fél hatálya alá tartoznak a különböző típusaihoz. Ugrás a **szervezet felügyelete**&gt;**globális címjegyzék**&gt;**típusaihoz**&gt;**típusaihoz** lapon hozhatja létre és kezelheti a típusaihoz szállítók, vevők, dolgozók, valamint a jogi személyek különböző országokban/régiókban.
+Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást.
+
+Számos ország és régió eltérő szabályokkal és követelményekkel rendelkezik az adónyilvántartási számok és azonosítók nyilvántartására. Ez a témakör a különböző európai országokban/régiókban található felek nyilvántartási típusaihoz szükséges beállításokat és feldolgozási eljárásokat tekinti át. Minden országban/régióban léteznek követelmények a különböző állami hivatalok által kiadott nyilvántartási számokkal kapcsolatos különböző ország-specifikus funkciók támogatását illetően. Nyilvántartási számok közé tartoznak a társadalombiztosítási szám (TAJ szám), az adóazonosító szám (adószám) és a közösségi adószám. Ez a szolgáltatás egységes keretet biztosít minden régióban minden ország számára, és figyelembe veszi az egyes európai országok országspecifikus követelményeit. Az alábbi szakaszok leírják a nyilvántartási azonosítók létrehozásához és feldolgozásához használt teljes információáramlást.
+
+## <a name="registration-type-creation"></a>Nyilvántartási típus létrehozása
+Nyilvántartási azonosító megadása előtt nyilvántartási típusokat kell beállítania az egyes felek által használt különböző nyilvántartási számokhoz. Lépjen a **Szervezeti adminisztráció** &gt; **Globális címjegyzék** &gt; **Nyilvántartástípusok** &gt; **Nyilvántartástípusok** lapra, ahol létrehozat és kezelhet a különböző országokban/régiókban található szállítók, vevők, dolgozók, valamint jogi személyek által használt nyilvántartási típusokat.
 
 |Mező                 |Leírás      |
 |------------------------------|----------------------------|                                                                           
-| Név                | A regisztráció típusának neve. |                                                                           
-| Leírás         | A regisztrációtípus leírása. |
+| Név                | A nyilvántartási típus neve. |                                                                           
+| Leírás         | A nyilvántartási típus leírása. |
 | Ország/régió      | Az ország/régió egyedi azonosítója.|
-| Adóhatóság       | Az adóhatóság a Regisztrációtípus társított.|
-| Korlátozva       | Milyen típusú korlátozást, amely vonatkozik az adószám: nincs, személy, szervezet.|
-| Formátum              | A Regisztrációtípus ellenőrzési formátuma.|
-| Frissíthető      | Meghatározza, hogy a nyilvántartási számot, a regisztrációs típus frissíthető, miután be lett írva.|
-| Egyedi              | Ha a nyilvántartási számot, a regisztrációs típus egyedi határozza meg. |
-| Ország elsődleges címe | Ha valamelyik fél kapcsolódik egy vagy több címet különösen ország és a regisztrációs azonosító érvényes ezekre a címekre, ki kell jelölnie egy cím ország elsődleges. Rögzítheti egy azonosító csak elsődlegesként. Meghatározza, hogy a nyilvántartási számot csak elsődleges ország cím megadható. |
+| Adóhatóság       | A nyilvántartási típushoz társított adóhatóság.|
+| Korlátozva       | Az adónyilvántartás-típusra vonatkozó korlátozás fajtája: Nincs, Személy, Szervezet.|
+| Formátum              | Az nyilvántartástípus ellenőrzési formátuma.|
+| Frissíthető      | Azt határozza meg, hogy a nyilvántartási típus nyilvántartási száma frissíthető-e, miután be lett írva.|
+| Egyedi              | Azt határozza meg, hogy a nyilvántartási típus nyilvántartási száma egyedi-e. |
+| Ország elsődleges címe | Ha valamelyik fél egy vagy több címhez kapcsolódik egy adott országban, és a nyilvántartási azonosító mindezen címekre érvényes, akkor az országnál ki kell jelölni egy címet elsődlegesként. Csak egyetlen azonosító rögzíthető elsődlegesként. Meghatározza, hogy a nyilvántartási számot csak az elsődleges országcímhez lehet-e megadni. |
 
-## <a name="assign-a-registration-type-to-a-registration-category"></a>A regisztráció a regisztráció típusa kategorizálás
-Regisztrálás kategória ország regisztrációs azonosító használata különösen ország adó-, vám- és egyéb célokra engedélyezett érték. Ez a kategória érvényesítési szabályok különösen regisztrációs (beleértve az ellenőrző számjegy stb.) és a felvételt regisztrációs azonosító különböző jelentések határozza meg. Ezen a lapon **szervezet felügyelete**&gt;**globális címjegyzék**&gt;**típusaihoz**&gt;**nyilvántartási kategóriák** adott ország regisztrációs típusának hozzárendelése támogatott regisztrálás kategória.
+## <a name="assign-a-registration-type-to-a-registration-category"></a>Nyilvántartási típus hozzárendelése nyilvántartási kategóriához
+A nyilvántartási kategória egy olyan ország-/régióalapú nyilvántartási azonosító, amelyet jóváhagytak egy adott országban/régióban adó-, vám- és egyéb célokra. Ez a kategória határozza meg az adott nyilvántartási azonosító érvényesítési szabályait (ellenőrző számjegyeket stb.) és a nyilvántartási azonosító belefoglalását különböző jelentésekbe. Adott ország nyilvántartási típusának hozzárendeléséhez támogatott nyilvántartási kategóriához használja a **Szervezeti adminisztráció** &gt; **Globális címjegyzék** &gt; **Nyilvántartástípusok** &gt; **Nyilvántartási kategóriák** oldalt.
 
 | Mező            | Leírás|
 |-----------------------|----------------|
-| Regisztráció típusa     | A regisztráció különösen ország adja.|
-| Korlátozva         | Milyen típusú korlátozás vonatkozik az adószám: nincs, személy, szervezet.|
-| Nyilvántartási kategória | Az ország a jóváhagyott egyedi regisztrációs azonosítója. A teljes listát a támogatott AX7.1 a kategóriák alatt van. |
+| Regisztráció típusa     | A nyilvántartási típus konkrét országban/régióban.|
+| Korlátozva         | Az adónyilvántartás-típusra vonatkozó korlátozás fajtája: Nincs, Személy, Szervezet.|
+| Nyilvántartási kategória | Az országban használatra jóváhagyott egyedi nyilvántartási azonosító. A támogatott AX7.1 kategóriák teljes listáját lásd alább. |
 
-## <a name="enter-registration-ids-for-global-address-book-records"></a>Adja meg a regisztrációs azonosítót globális cím könyv rekordok
-A Microsoft Dynamics 365 műveletekhez a globális címjegyzékben (GAB) vevők, szállítók, partnerek, üzleti kapcsolatok és jogi személyek konszolidált cím adatait tartalmazza. A további tudnivalókat lásd [globális cím könyv áttekintés](/dynamics365/operations/organization-administration/overview-global-address-book). A fél rekordok a globális címjegyzékben tárolt egy vagy több címet bejegyzést tartalmazhat. Ezeket a címeket különböző – például számlázási vagy szállítási – célokra használják. Beállíthatja a vevők, szállítók, a munkavállalók és a jogi személyek címadatainak azonosítók regisztrációja. (Jogi személy, szállító, vevő, dolgozó) fél rögzíteni, amelynek Azonosítóját adja meg, és kattintson a kívánt keresési **regisztrációs azonosítók** fél, jogi személy, szállító, vevő, a munkavállaló számára, hogy nyissa meg a kapcsolódó űrlap a **címek kezelése** oldalon. A a **regisztrációs adó** fülre, kattintson a **hozzáadása**, és adja meg a következő információkat talál a regisztrációs azonosítót.
+## <a name="enter-registration-ids-for-global-address-book-records"></a>Globális címjegyzék nyilvántartási azonosítóinak megadása
+A Microsoft Dynamics 365 for Operations globális címjegyzéke vevők, szállítók, partnerek, üzleti kapcsolatok és jogi személyek összevont címadatait tartalmazza. A további tudnivalókat lásd: [Globális címjegyzék áttekintése](/dynamics365/operations/organization-administration/overview-global-address-book). A globális címjegyzékben tárolt partnerrekordok egy vagy több címrekordot tartalmazhatnak. Ezeket a címeket különböző – például számlázási vagy szállítási – célokra használják. Nyilvántartási azonosítók beállíthatók vevők, szállítók, dolgozók és jogi személyek címadataihoz. Keresse meg a fél (jogi személy, szállító, vevő, dolgozó) rekordját, amelyhez meg kívánja adni a nyilvántartási azonosítót, majd kattintson a **Regisztrációs azonosítók** elemre a fél, jogi személy, szállító, vevő, dolgozó űrlapján a **Címek kezelése** oldal megnyitásához. Az **Adóregisztráció** lapon kattintson a **Hozzáadás** elemre, és adja meg a következő információkat a nyilvántartási azonosítóhoz.
 
 |Mező                |Leírás                                                |
 |---------------------|-----------------------------------------------------------|
-| Regisztráció típusa   | A regisztráció mezőbe írja be a kijelölt országhoz/területhez.     |
-| Regisztrációs szám | A fél regisztrációs azonosítót.                                |
-| Leírás         | A nyilvántartási számot leírása.               |
-| Szakasz             | A további információt a regisztrációs számot. |
-| Kibocsátó ügynökség      | A hatóság a kibocsátó a regisztrációs szám.        |
-| Kiállítás dátuma         | A kiállítás dátuma, nyilvántartási számára.              |
-| Hatályos           | A nyilvántartási számot érvényességi dátuma.           |
+| Regisztráció típusa   | A nyilvántartási típus a kiválasztott országban/régióban.     |
+| Regisztrációs szám | A fél nyilvántartási azonosítója.                                |
+| Leírás         | A nyilvántartási szám leírása.               |
+| Szakasz             | A nyilvántartási számmal kapcsolatos további információk. |
+| Kibocsátó ügynökség      | A nyilvántartási számot kiadó hatóság.        |
+| Kiállítás dátuma         | A nyilvántartási szám kibocsátásának dátuma.              |
+| Hatályos           | A nyilvántartási szám hatálybalépésének dátuma.           |
 | Lejárat          | A nyilvántartási szám lejárati dátuma.          |
 
 > [!NOTE]
-> Jogi személy, szállító, vevő adómentességi száma a regisztrációs lehet kiválasztani az adó azonosítók azonosítójához kapcsolódó, és a fél adott.
+> A jogi személy, szállító, vevő adómentességi számát a félnél megadott, az áfaazonosítóhoz kapcsolódó nyilvántartási azonosítóból lehet kiválasztani.
 
-## <a name="search-for-records-by-registration-id"></a>Regisztrációs azonosító rekordok keresése
-Fél bejegyzéseket a regisztrációs azonosító alapján kereshet a fél, jogi személy, szállítói, vevői és dolgozói kapcsolódó űrlapok érhető el. Kattintson a **regisztrációs Számot keresési** megnyitása a **regisztrációs Számot keresési feltételek** lap. Adja meg a keresési feltételeket, és kattintson a **található**. A rendszer a kijelölt rekordok a globális címjegyzékben és a hozzá tartozó típusú címjegyzékrekord jeleníti meg.
+## <a name="search-for-records-by-registration-id"></a>Rekordok keresése nyilvántartási azonosító alapján
+A felek rekordjainak keresése nyilvántartási azonosító alapján a fél, jogi személy, szállító, vevő és dolgozó adott űrlapján érhető el. Kattintson a **Regisztrációs azonosító keresése** elemre a **Regisztrációs azonosító keresési feltételei** lap megnyitásához. Adja meg a keresési feltételeket, és kattintson a **Keresés** elemre. A rendszer megjeleníti a kijelölt rekordokat a globális címjegyzékből és a fél hozzá tartozó típusú rekordjait.
 
-## <a name="supported-registration-categories"></a>Támogatott regisztrációs kategóriák
-Az alábbi táblázat a támogatott típusaihoz Dynamics 365 műveletekhez. Megismerkedtünk a Microsoft Dynamics AX 2012 regisztrációs azonosító mezőket, ha ezt a táblát is rendeli ezeket a mezőket a Dynamics 365 műveletek regisztrációs kategóriák.
+## <a name="supported-registration-categories"></a>Támogatott nyilvántartási kategóriák
+Az alábbi táblázat a Dynamics 365 for Operations támogatott nyilvántartási típusait sorolja fel. Ha ismeri a Microsoft Dynamics AX 2012 nyilvántartási azonosítókhoz tartozó mezőit, ez a tábla ugyanazon mezőket kapcsolja a Dynamics 365 for Operations nyilvántartási kategóriáihoz.
 
-| 365 Dynamics műveletek regisztrációs kategória         |Ország/régió  | A Dynamics AX 2012 kifejezés/mező|
+| A Dynamics 365 for Operations nyilvántartási kategóriái         |Ország/régió  | Dynamics AX 2012 kifejezés/mező|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| Áfaazonosító                                                        | Minden ország az Európai Unió (EU)|  Adómentességi szám (az AX2012 R3 Adóazonosító jogalkotási típus)|
-| Vállalatazonosító (COID)                                          | Belgium, Cseh Köztársaság Észtország Magyarország Lettország Litvánia Lengyelország Svájc | Vállalati szám (EnterpriseNumber) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) vállalati kód (EnterpriseCode) nyilvántartási szám (RegNum\_W) UID (UID AX2012 R3 a jogalkotási típus) |
+| Áfaazonosító                                                        | Az Európai Unió (EU) összes országa|  Adómentességi szám (jogszabályon alapuló típusú adóazonosító az AX2012 R3-ban)|
+| Vállalatazonosító (COID)                                          | Belgium Csehország Észtország Magyarország Lettország Litvánia Lengyelország Svájc | Vállalati szám (EnterpriseNumber) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) vállalati kód (EnterpriseCode) nyilvántartási szám (RegNum\_W) UID (jogszabályon alapuló típusú UID az AX2012 R3-ban) |
 | Fiókazonosító                                                     | Belgium            | Ágazati szám (BranchNumber)|
-| Spisová značka (regisztrációs szám a kiállító hivatal szakasz) | Cseh Köztársaság     | Szám (CommercialRegisterInsetNumber) Kept szövegbe beszúrt kereskedelmi cégjegyzék (CommercialRegisterSection) (CommercialRegister) szakasza regisztrálása|
+| Spisová značka (nyilvántartási szám, kiállító hivatal, szakasz) | Cseh Köztársaság     | Betétlap száma (CommercialRegisterInsetNumber) nyilvántartja a kereskedelmi cégjegyzék (CommercialRegister) kereskedelmi cégjegyzék szakasza (CommercialRegisterSection)|
 | Vámhivatali vevőazonosító                                           | Finnország | Vámhivatali vevőszám (CustomsCustomerNumber\_FI)|
-| Adóazonosító                                                           | Orosz Föderáció| INN (az AX2012 R3 INN jogalkotási típus)|
-| Regisztrációs okkód                                                           | Orosz Föderáció| Regisztrációs OKKÓD (jogszabályi AX2012 R3 a regisztrációs Okkódja. típus)|
-| OKDP                                                          | Orosz Föderáció| OKDP (az AX2012 R3 OKDP jogalkotási típus)|
-| OKPO                                                          | Orosz Föderáció| OKPO (az AX2012 R3 OKPO jogalkotási típus)|
-| RCOAD                                                         | Orosz Föderáció| RCOAD (RCOAD AX2012 R3 a jogalkotási típus)|
-| OGRN                                                          | Orosz Föderáció| OGRN (OGRN a AX2012 R3 jogalkotási típus) |
-| SNILS                                                         | Orosz Föderáció| SNILS (SNILS a AX2012 R3 jogalkotási típus)|
-| CIFTS                                                         | Orosz Föderáció| CIFTS (CIFTS a AX2012 R3 jogalkotási típus)|
+| Adóazonosító                                                           | Orosz Föderáció| INN (jogszabályon alapuló INN típus az AX2012 R3-ban)|
+| Regisztrációs okkód                                                           | Orosz Föderáció| RRC (jogszabályon alapuló RRC típus az AX2012 R3-ban)|
+| OKDP                                                          | Orosz Föderáció| OKDP (jogszabályon alapuló OKDP típus az AX2012 R3-ban)|
+| OKPO                                                          | Orosz Föderáció| OKPO (jogszabályon alapuló OKPO típus az AX2012 R3-ban)|
+| RCOAD                                                         | Orosz Föderáció| RCOAD (jogszabályon alapuló RCOAD típus az AX2012 R3-ban)|
+| OGRN                                                          | Orosz Föderáció| OGRN (jogszabályon alapuló OGRN típus az AX2012 R3-ban) |
+| SNILS                                                         | Orosz Föderáció| SNILS (jogszabályon alapuló SNILS típus az AX2012 R3-ban)|
+| CIFTS                                                         | Orosz Föderáció| CIFTS (jogszabályon alapuló CIFTS típus az AX2012 R3-ban)|
 
-Feldolgozás, beleértve a szükséges előfeltételek regisztrációs azonosítók további információt talál a következő feladat felvétel áfa Azonosítót életciklus-szolgáltatások (LCS):
+A nyilvántartási azonosítók feldolgozásával kapcsolatos további információkért, ideértve a szükséges előfeltételeket, nézze meg az áfaazonosítóhoz kapcsolódó következő feladatrögzítéseket a Lifecycle Services (LCS) szolgáltatásban:
 
 -   Áfaazonosító beállítása
--   Szállító áfa Azonosítót regisztráció
+-   Szállítói áfaazonosító rögzítése
 -    Fél keresése adószám használatával
+
+
 
 
 

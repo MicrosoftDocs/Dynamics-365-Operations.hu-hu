@@ -1,6 +1,6 @@
 ---
-title: "365 Dynamics műveletek ügyfél gyakran ismételt kérdések"
-description: "Jelen cikk ismerteti a Microsoft Dynamics 365 műveletek ügyfél gyakran ismételt kérdésekre adott válaszok."
+title: "Gyakran feltett kérdések a Dynamics 365 for Operations klienssel kapcsolatban"
+description: "Ez a cikk válaszokat ad a Microsoft Dynamics 365 for Operations-klienssel kapcsolatos gyakori kérdésekre."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,33 +24,38 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-client-faq"></a>365 Dynamics műveletek ügyfél gyakran ismételt kérdések
+# <a name="dynamics-365-for-operations-client-faq"></a>Gyakran feltett kérdések a Dynamics 365 for Operations klienssel kapcsolatban
 
-Jelen cikk ismerteti a Microsoft Dynamics 365 műveletek ügyfél gyakran ismételt kérdésekre adott válaszok.
+[!include[banner](../includes/banner.md)]
 
-<a name="why-arent-symbols-loaded-when-i-use-dynamics-365-for-operations"></a>Miért nincsenek betöltve a szimbólumok Dynamics 365 műveletek használata esetén?
+
+Ez a cikk válaszokat ad a Microsoft Dynamics 365 for Operations-klienssel kapcsolatos gyakori kérdésekre.
+
+<a name="why-arent-symbols-loaded-when-i-use-dynamics-365-for-operations"></a>Miért nem töltődnek be a szimbólumok a Dynamics 365 for Operations használatakor?
 -----------------------------------------------------------------
 
 A böngésző biztonsági beállításai megakadályozhatják a szimbólumok megfelelő betöltődését. A probléma megoldásához kövesse az alábbi lépéseket:
 
--   Ha fennáll a probléma az Internet Explorer programban, kattintson a **eszközök**, majd **Internet-beállítások**.  Az Internetbeállítások párbeszédpanelen a a **adatvédelmi** fülre, kattintson a **Egyéni szint**, és ellenőrizze, hogy a **betűtípus letöltése** beállítást.
--   Ellenkező esetben előfordulhat a Dynamics 365 műveletek webhely felvétele a megbízható helyek listájához.
+-   Ha a probléma az Internet Explorer programban merül fel, kattintson a **Beállítások**, majd az **Internetbeállítások** lehetőségre.  Az Internetbeállítások párbeszédablakban kattintson az **Adatvédelem** lapra, kattintson az **Egyéni szint** elemre, és ellenőrizze, hogy be van-e jelölve a **Betűtípus letöltése** beállítás.
+-   Ellenkező esetben előfordulhat, hogy hozzá kell adnia a Dynamics 365 for Operationst a megbízható helyek listájához.
 
-## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>A menüszalag a Dynamics AX 2012 hiányzol. A műveletpanel lapok megnyitása mindig tartása
-A Microsoft tervezi e szolgáltatás alkalmazásához a legrövidebb időn belül. A felhasználók megtarthatja a lap munkaablakainak a nyitott mindig képes lesz. Ellenkező esetben a lapok mindig össze fognak csuklani, ha azokat nem használják, így biztosítva nagyobb felületet a lap számára.
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Hiányolom a menüszalagot a Dynamics AX 2012 rendszerből. Nyitva tarthatom folyamatosan a Műveleti ablaktáblát?
+Terveink szerint ez a funkció hamarosan elérhetővé válik. Ezt követően a felhasználók dönthetnek úgy, hogy a lapokat a Műveleti ablaktáblákon folyamatosan nyitva tartják. Ellenkező esetben a lapok mindig össze fognak csuklani, ha azokat nem használják, így biztosítva nagyobb felületet a lap számára.
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Miért néha jelennek meg különböző helyi menük amikor I rightclick?
-Ha a jobb gombbal kattint egy szerkeszthető mezőre (vagy kijelölt szövegre), a böngésző helyi menüjének ikonjai jelennek meg. Ezen menü segítségével érheti el a **Kivágás**, a **Másolás** és a **Beillesztés** parancsokat. Azt nem ágyazhat be ezeket a parancsokat a Dynamics 365 műveletek helyi menük számára, mivel biztonsági okokból böngészők nem teszik lehetővé számunkra, hogy hozzáférhetünk a rendszer vágólapja átalakíthatja.
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Miért jelennek meg időnként különböző ikonok, ha az egér jobb gombjával kattintok?
+Ha a jobb gombbal kattint egy szerkeszthető mezőre (vagy kijelölt szövegre), a böngésző helyi menüjének ikonjai jelennek meg. Ezen menü segítségével érheti el a **Kivágás**, a **Másolás** és a **Beillesztés** parancsokat. Ezen parancsokat nem tudjuk beágyazni a Dynamics 365 for Operations helyi menüjébe, mert biztonsági okokból a böngészők nem teszik lehetővé számunkra, hogy a rendszer vágólapjához a programban hozzáférjünk.
 
-Ha jobb gombbal kattint egy mező feliratára vagy egy csak olvasható vezérlőelem értékét, látni fogja a Dynamics 365 műveletek helyi menü.
+Ha a jobb gombbal kattint egy mező címkéjére, vagy egy csak olvasható vezérlőelem értékére, látni fogja a Dynamics 365 for Operations helyi menüjét.
 
-Billentyűparancsok könnyebb tervezzük billentyűparancs a jövőben, amely megnyitja a helyi menü műveletek Dynamics 365 végrehajtásához.
+Annak érdekében, hogy a billentyűket könnyebben elérhesse, a jövőben billentyűparancsokat is hozzá fogunk adni a Dynamics 365 for Operations helyi menüjéhez.
 
-## <a name="where-is-the-view-details-functionality-in-dynamics-365-for-operations"></a>Hol van a nézet részletes funkció Dynamics 365 műveletek?
+## <a name="where-is-the-view-details-functionality-in-dynamics-365-for-operations"></a>Hol található a Részletek megtekintése funkció a Dynamics 365 for Operationsben?
 A **Részletek megtekintése** beállítás több módon is elérhető:
 
 -   Ha valamelyik vezérlő rendelkezik **Részletek megtekintése **lehetőséggel, és a vezérlő értékkel is rendelkezik, ez az érték fog megjelenni hivatkozásként. Rákattinthat a hivatkozásra a további részleteket tartalmazó lap megnyitásához.
--   **Részletek megtekintése** Dynamics 365 műveletek helyi menüknél lehetőség is van. További információt arról, mikor 365 Dynamics műveletek helyi menük jelennek meg a jobb gombbal kattintva, az előző részben talál.
+-   A **Részletek megtekintése** lehetőség is megtalálható a Dynamics 365 for Operations helyi menüjében. Amennyiben szeretne többet megtudni arról, hogy mely helyi menük jelennek meg a Dynamics 365 for Operations rendszerben az egér jobb gombjával kattintva, lásd az előző fejezetet.
+
+
 
 
 

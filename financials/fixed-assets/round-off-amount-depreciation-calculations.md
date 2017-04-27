@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>Az értékcsökkenési számítások kerekítési összegei.
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az Értékcsökkenés kerekítése mezőt taglalja, amely a Könyv beállítása lapon található meg.
 
-Értékcsökkenés kerekítése összegek beállított minden egyes könyv. Értékcsökkenés kerekítése összegek a befektetett eszköz értékcsökkenési profilt, amely tartalmazza a jövőbeli értékcsökkenést és a tárgyi eszköz értéke, valamint értékcsökkenési javaslatot használják. Adja meg a könyvben engedélyezett értékcsökkenés legalacsonyabb összegét. 
+Az értékcsökkenések kerekítési összegei minden egyes könyvhöz beállíthatók. Az értékcsökkenés-kerekítési összegek a tárgyi eszközök értékcsökkenési profiljában használhatóak, amely megmutatja a tárgyi eszköz értékének jövőbeni értékcsökkenését és az értékcsökkenési javaslatot. Adja meg a könyvben engedélyezett értékcsökkenés legalacsonyabb összegét. 
 
 A beállított kerekítéstől függetlenül az utolsó értékcsökkenési időszak értékcsökkenési összege nem kerül kerekítésre. Az utolsó értékcsökkenési időszak végén a tárgyi eszköz értékének nulla kell legyen, vagy a selejtérték összege, ha használ selejtértéket.
 
@@ -40,9 +43,11 @@ A kerekítés nélkül számított értékcsökkenés 2444,44 egység. Ahogy azt
 | Kerekítési mód | Értékcsökkenés összege |
 |-----------------|---------------------|
 | Kerekítés: 0,1    | 2444,40            |
-| Kerekítés: 1,00   | 2444,00            |
-| Kerekítés: 10,00  | 2440,00            |
-| Kerekítés: 100,00 | 2400,00            |
+| Kerekítés: 1,00   | 2,444.00            |
+| Kerekítés: 10,00  | 2,440.00            |
+| Kerekítés: 100,00 | 2,400.00            |
+
+
 
 
 

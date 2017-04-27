@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>A kötelezettségek és Kinnlevőségek árfolyam-korrekció
 
+[!include[banner](../includes/banner.md)]
+
+
 Az árfolyamok ingadozásai a devizában megadott nyitott tranzakciók elméleti értékét (könyv szerinti értéke) az idők során megváltoztatják. Ez a cikk tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik. 
 
-A nyitott szállítói tranzakciók devizában megadott elméleti értéke (könyv szerinti értéke) az idők során az árfolyam ingadozásának megfelelően változik. A kötelezettségek és Kinnlevőségek nyitott tranzakciók értékét frissítik, futtassa a deviza-átértékelési folyamat. A kötelezettségek és Kinnlevőségek árfolyam-korrekció. A folyamat átértékelni a nyitott összeg az új árfolyam használatával, vagy a Kiegyenlítetlen összegek, a megadott dátumon. Az eredetileg feladott összegek és az újraszámított összegek közötti különbségek miatt a nem realizált nyereség vagy veszteség minden nyitott tranzakció. A kötelezettségek és Kinnlevőségek számlák subledgers majd megfelelően frissül a nem realizált nyereséget vagy veszteséget, és egy könyvelési tétel főkönyvi feladásakor.
+A nyitott szállítói tranzakciók devizában megadott elméleti értéke (könyv szerinti értéke) az idők során az árfolyam ingadozásának megfelelően változik. A kötelezettségek és Kinnlevőségek nyitott tranzakciók értékét frissítik, futtassa a deviza-átértékelési folyamat. A kötelezettségek és Kinnlevőségek árfolyam-korrekció. A folyamat átértékelni a nyitott összeg az új árfolyam használatával, vagy a Kiegyenlítetlen összegek, a megadott dátumon. Az eredetileg feladott összegek és az újraszámított összegek közötti különbségek azt eredményezik, hogy nem realizált nyereség vagy veszteség keletkezik minden nyitott tranzakciónál. A Kötelezettségek és Kinnlevőségek részkönyvszámlák ezután a nem realizált nyereséget vagy veszteséget tükrözve frissülnek, és egy könyvelési tétel kerül feladásra a főkönyvbe.
 
 ## <a name="simulate-a-foreign-currency-revaluation"></a>Devizaátértékelés szimulálása
 Előtt meg idegen pénznemösszegek átértékelése nyitott tranzakciókra vonatkozó, futtathatja az árfolyam-korrekció dátuma és a metódus szimulációs jelentés. Az a szimulációs jelentés futtatásához a **Árfolyam-korrekció** lap a **Szimulációs** gombra. A jelentés tartalmazza a nem realizált nyereség vagy veszteség összegét, a szimuláció meghatározott paraméterek alapján előnézete.
 
 ## <a name="process-a-foreign-currency-revaluation"></a>Főkönyvi devizaátértékelés feldolgozása
-Használja a **árfolyam-korrekció** a lap **időszakos feladatok** történő átértékeléséhez nyitott tranzakciók. A folyamatot futtathatja valós időben, vagy köteg segítségével ütemezheti is. Ha az átértékelés folyamat beállításainak megadásához feltétlenül győződjön meg arról, hogy kívánja-e nyomtatni egy jelentést az eredmények. Az átértékelés jelentés a folyamat befejezése után nem lehet újra kell nyomtatni. A deviza-átértékelési jelentés generál, ha jelenik különböző a vevő vagy szállító egyenlegeket és a pénznem:
+Használja a **Devizaátértékelés** oldalt az **Időszakos feladatok** részben a nyitott tranzakciók átértékeléséhez. A folyamatot futtathatja valós időben, vagy köteg segítségével ütemezheti is. Az átértékelési folyamat beállításainak definiálásakor mindenképpen győződjön meg róla, hogy szeretne-e az eredményekről kinyomtatni egy jelentést. Az átértékelési jelentést a folyamat befejezése után nem lehet újra kinyomtatni. A deviza-átértékelési jelentés generál, ha jelenik különböző a vevő vagy szállító egyenlegeket és a pénznem:
 
 -   A vevőre vagy szállítóra vonatkozik, amelyeknél az idegen pénznemű tranzakciókhoz van már újraértékelt egyenlegei. A következő egyenlegek kell meghatározni:
     -   Eredeti egyenlege a külföldi pénznemben.
@@ -45,7 +48,7 @@ Használja a **árfolyam-korrekció** a lap **időszakos feladatok** történő 
     -   Az aktuális és az előző árrés közötti különbség. Ez a különbség a további nem realizált nyereség vagy veszteség.
 -   Teljes nem realizált nyereség vagy veszteség minden egyes pénznemhez.
 
-Árfolyam-korrekció minden futtatásakor mindig egy rekordot. A rekord a a **Idegen pénznemű Készletértékelés** oldalon válassza **Tranzakciók** miatt az átértékelés létrehozott tranzakciók részletes listáját tekintheti meg. Minden bizonylat tranzakció jelöli a nyitott tranzakció, amely átértékelésre került. Nyitott tranzakció átértékelésre került több mint egy alkalommal, ha ugyanazon a bizonylaton használó két bejegyzés jelenik meg. Egy rekord lesz az előző nem realizált nyereség vagy veszteség visszaírása, és a többi rekord lesz az új nem realizált nyereség vagy veszteség. Az átértékelési folyamat futtatásához kattintson a **Árfolyam-korrekció** gombra. A következő paraméterek megadása a munkalapsablonhoz:
+Árfolyam-korrekció minden futtatásakor mindig egy rekordot. A rekord a a **Idegen pénznemű Készletértékelés** oldalon válassza **Tranzakciók** miatt az átértékelés létrehozott tranzakciók részletes listáját tekintheti meg. Minden egyes bizonylattranzakció az átértékelésre került nyitott tranzakciónak felel meg. Ha egy nyitott tranzakció átértékelésére több mint egy alkalommal került sor, úgy két bejegyzés lesz látható, amely ugyanazt a bizonylatot használja. Egy rekord képviseli a korábbi nem realizált nyereség vagy veszteség visszaírását, a másik rekord pedig az új nem realizált nyereséget vagy veszteséget. Az átértékelési folyamat futtatásához kattintson a **Árfolyam-korrekció** gombra. A következő paraméterek megadása a munkalapsablonhoz:
 
 -   **Módszer** – A kiválasztott devizaátértékelési feladatnál használt módszer:
     -   **Normál** – A Normál beállítás azt jelenti, hogy a deviza-átértékelési feladatok attól függetlenül fel lesznek adva, hogy az eredmény nyereség vagy veszteség.
@@ -61,6 +64,8 @@ Használja a **árfolyam-korrekció** a lap **időszakos feladatok** történő 
     -   **Nincs** – nem pénzügyi dimenziói vannak feladva. Ha szükséges, a pénzügyi dimenziók a számlastruktúrában, az átértékelési folyamat továbbra is fut, és, amelyeknél nincsenek dimenziók könyvelési tételeket hoz létre. Egy figyelmeztető üzenetet kap, úgy, hogy vissza tudja vonni az átértékelés.
     -   **Tábla** – A Tábla opció azt jelenti, hogy a vevőkód pénzügyi dimenziói lesznek feladva a devizaátértékelési tranzakcióra.
     -   **Feladás** – A Feladás opció azt jelenti, hogy az átértékelt tranzakció pénzügyi dimenziói lesznek feladva a devizaátértékelési tranzakcióra. Alapértelmezés szerint a pénzügyi dimenziók az eredeti tranzakció vevői/szállítói főkönyvi számláról az átértékelési tranzakció vevői/szállítói fő számla lesz, és az átértékelési tranzakció nem realizált nyereség/veszteség főszámla használandó pénzügyi dimenziókat az eredeti tranzakció költség/tárgyi eszköz/bevétel főkönyvi számláról.
+
+
 
 
 

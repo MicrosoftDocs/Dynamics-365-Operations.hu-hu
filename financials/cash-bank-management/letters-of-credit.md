@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit"></a>Akkreditívek
 
+[!include[banner](../includes/banner.md)]
+
+
 Az akkreditívek általánosan használt banki dokumentumok a termékek nemzetközi beszerzésében és értékesítésében. 
 
 Akkreditívek nemzetközi tranzakciók használják, győződjön meg arról, hogy kifizetések lesznek végrehajtva. Az akkreditív egy bank által kiállított megállapodás, amelyben a bank vállalja a kifizetés teljesítését a vevő részéről, amennyiben a vevő és eladó közti megállapodás feltételei fennállnak. Vegye figyelembe, hogy az akkreditív is nevezik akkreditív (DC). 
 
-Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkreditíven való használathoz. Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkreditíven való használathoz. A következő fél vesz részt, az akkreditív: 
+Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkreditíven való használathoz. Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkreditíven való használathoz. Az akkreditívben a következő felek vesznek részt: 
 
  - A pályázó (személy beszerző) aki az árut kifizetni szándékozik 
  - A kedvezményezett (eladó) aki megkapja a fizetést
@@ -41,5 +44,7 @@ Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkr
 Az akkreditív tartalmaz egy leírást az áruról, az összes szükséges dokumentumot, a szállítási dátumot és a lejárati dátumot, amely után nem lehet fizetni. A kibocsátó bank szedi be tűréshatáron az akkreditíven való használathoz. 
 
 Az akkreditívek visszavonható vagy visszavonhatatlan típusúak lehetnek. Az akkreditív jellege lehet átruházható, nem átruházható, vagy forgó. Az akkreditív általában visszavonhatatlan és visszaigazolt megállapodást, amely a kifizetés teljes és pontos szállítás dokumentáció benyújtása után egy adott kedvezményezett történik.
+
+
 
 

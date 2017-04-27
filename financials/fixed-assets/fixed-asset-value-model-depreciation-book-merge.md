@@ -1,6 +1,6 @@
 ---
 title: "Tárgyi eszközök értékmodellje és az értékcsökkenési könyv egyesítése"
-description: "A korábbi kiadásokban a tárgyieszköz - értékmodellek és értékcsökkenés könyvek két értékelési fogalmak voltak. A Microsoft Dynamics 365 műveletek 1611 kiadásban az értékmodell funkcióval és értékcsökkenési könyv beolvadtak néven ismert könyv egy egységes fogalom."
+description: "A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek. A Microsoft Dynamics 365 for Operations 1611-es változatában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Tárgyi eszközök értékmodellje és az értékcsökkenési könyv egyesítése
 
-A korábbi kiadásokban a tárgyieszköz - értékmodellek és értékcsökkenés könyvek két értékelési fogalmak voltak. A Microsoft Dynamics 365 műveletek 1611 kiadásban az értékmodell funkcióval és értékcsökkenési könyv beolvadtak néven ismert könyv egy egységes fogalom.
+[!include[banner](../includes/banner.md)]
 
-Az új könyvfunkciók korábbi értékmodellfunkción alapul, de magában foglal minden olyan funkciót, amelyek korábban csak az értékcsökkenési könyvekben szerepeltek. [![Könyv szerinti érték értékmodell és az értékcsökkenés könyv funkciók egyesítése,](./media/fixed-assets.png)](./media/fixed-assets.png) miatt az egyesítést használható lapok, lekérdezések és jelentések egységes rendszerét az összes tárgyi eszköz folyamat. A jelen témakörben szereplő táblázatok az értékcsökkenési könyvek és értékmodellek korábbi funkcióit ismerteti, a könyvek új funkcióival együtt.
+
+A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek. A Microsoft Dynamics 365 for Operations 1611-es változatában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv.
+
+Az új könyvfunkciók korábbi értékmodellfunkción alapul, de magában foglal minden olyan funkciót, amelyek korábban csak az értékcsökkenési könyvekben szerepeltek. [![Tárgyi eszközök értékmodellje és az értékcsökkenési könyv funkciójának egyesítéséből származó könyv](./media/fixed-assets.png)](./media/fixed-assets.png) Az egyesítésnek köszönhetően most már minden, tárgyi eszközhöz tartozó folyamathoz ugyanazokat az oldalakat, lekérdezéseket és jelentéseket használhatja. A jelen témakörben szereplő táblázatok az értékcsökkenési könyvek és értékmodellek korábbi funkcióit ismerteti, a könyvek új funkcióival együtt.
 
 ## <a name="setup"></a>Beállítás
 Alapértelmezés szerint a könyvek adatokat szolgáltatnak a főkönyvnek (főkönyv) és a tárgyi eszközök analitikus naplójának. A könyveknek van egy új **továbbítás a főkönyvnek** opciójuk, amely lehetővé teszi a főkönyvi feladás tiltását, ahol a feladás csak a tárgyi eszközök analitikus naplójába történik. Ez a funkció az értékcsökkenési könyv korábbi feladási viselkedésére hasonlít. A naplónevek beállításához a "nincs" nevű új feladási réteg tartozik. A feladási réteg kifejezetten a tárgyieszköz-tranzakciókhoz került hozzáadásra. Ahhoz, hogy olyan könyvekhez végezzen feladást, amelyek nem végeznek feladást a főkönyvhöz, egy olyan naplónevet kell használnia, amelynél a feladási réteg beállítása **nincs**.
@@ -66,5 +69,7 @@ Minden könyvnél rendelkezésre állnak a lekérdezések és jelentések. Azok 
 
 ## <a name="upgrade"></a>Frissítés
 A frissítési folyamat áthelyezi a meglévő beállításokat és a meglévő tranzakciókat az új könyv struktúrájának megfelelően. Az értékmodellek megmaradnak a jelenleg állapotukban, olyan könyvként, amely a főkönyvbe ad fel. Az értékcsökkenési könyvek azonban áthelyezésre kerülnek egy olyan könyv, amelynél a **feladása a főkönyvbe** opció beállítása **nem**. Az értékcsökkenési könyvhöz tartozó naplónevek átkerülnek a főkönyvi napló nevéhez, amelynél a feladási réteg beállítása **nincs**.
+
+
 
 

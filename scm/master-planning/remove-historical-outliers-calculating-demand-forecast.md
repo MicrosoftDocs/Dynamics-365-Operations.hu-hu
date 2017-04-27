@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk bemutatja, hogyan zárhatja ki a kiugró értékeket az igény-előrejelzés számítására szolgáló előzményadatokból. A kiugró értékek kizárásával, javíthatja az előrejelzés pontosságát.
 
-Kizárhatja a kiugró előrejelzési pontosságának növelése érdekében. Ez a feladat nem kötelező. Itt következik egy áttekintés a folyamatról:
+A kiugró értékek kizárásával javíthatja az előrejelzés pontosságát. Ez a feladat nem kötelező. Itt következik egy áttekintés a folyamatról:
 
-1.  Kattintson a **fő tervezési**&gt;**telepítő**&gt;**igény-előrejelzés**&gt;**ítélünk eltávolító** megnyitása a **ítélünk eltávolító** lap, ahol segítségével egy lekérdezést a kizárni kívánt tranzakcióinak kiválasztására.
+1.  Kattintson az **Alaptervezés** &gt; **Beállítások** &gt; **Igény-előrejelzés** &gt; **Kívülálló tételek eltávolítása** elemekre, hogy megnyissa a **Kívülálló tételek eltávolítása** lapot, ahol egy lekérdezés használatával kiválaszthatja a kizárandó tranzakciókat.
 2.  Válassza ki a vállalatot, amelyre a lekérdezés vonatkozik, majd adjon meg egy nevet és leírást. A **Dátum lekérdezés** mező értéke automatikusan az aktuális dátum.
 3.  Válasza ki az **Aktív** jelölőnégyzetet, hogy kizárja azokat a tranzakciókat, amiket a lekérdezés az előzményinformációkban talál. Ez a beállítás a kiinduló előrejelzés létrehozásakor lép érvénybe.
 4.  Az **Lekérdezés kívülálló tételek eltávolításához** képernyőn hozzáadhat, eltávolíthat és kiválaszthat egyes feltételeket, amelyek meghatározzák a kiinduló előrejelzésből kizárandó tranzakciók körét. A kiválasztással kizárhat például egy adott cikket vagy rendelési tranzakciót.
@@ -43,8 +46,10 @@ Kizárhatja a kiugró előrejelzési pontosságának növelése érdekében. Ez 
 <a name="see-also"></a>Lásd még
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Igény-előrejelzés – bevezetés](introduction-demand-forecasting.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Az előrejelzés pontosság megfigyelése](monitor-forecast-accuracy.md)
+
+
 
 

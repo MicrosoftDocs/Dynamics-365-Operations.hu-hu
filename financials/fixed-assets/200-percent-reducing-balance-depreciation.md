@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>200 százalék degresszív értékcsökkenés
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a 200 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 
 Amikor beállít egy tárgyieszköz-értékcsökkenési profilt és kijelöli a **200% degresszív** értéket a **Mód** mezőben az **Értékcsökkenési profilok** lapon, akkor a tárgyi eszközök, amelyek az értékcsökkenési profilokhoz vannak rendelve értékcsökkentve lesznek ugyanazzal százalékos értékkel, ami az egyes értékcsökkenési időszakoknál szerepel. A százalék kiszámítása az eszköz élettartama alapján történik. Ha például egy eszköz élettartama öt év, akkor a számított százalékos érték 40% lesz (200% ÷ 5). 
@@ -44,7 +47,7 @@ A kiválasztás függvényében változnak az **Időszak gyakorisága** mezőben
 
 Megtarthatja az alapértelmezett értéket az **Értékcsökkenési év** mezőben, **Naptár**. 
 
-A **naptár** lehetőség választása esetén az értékcsökkenés alapja minden évben január 1-jén frissül. Az értékcsökkenés jellemzően a nettó könyv szerinti érték csökkentve a maradványértékkel. Az ebben a témában szereplő későbbi példákban az értékcsökkenés alapja a számítások oszlop első kifejezésében szereplő számláló. 
+A **naptár** lehetőség választása esetén az értékcsökkenés alapja minden évben január 1-jén frissül. Jellemzően az értékcsökkenés a nettó könyv szerinti érték mínusz a maradványérték. Az ebben a témában szereplő későbbi példákban az értékcsökkenés alapja a számítások oszlop első kifejezésében szereplő számláló. 
 
 Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
 
@@ -58,7 +61,7 @@ Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő
 
 Ha bejelöli a **Pénzügyi** lehetőséget az **Értékcsökkenési** év mezőben, akkor a 200 % degresszív értékcsökkenés számítása azon pénzügyi év szerint történik, amelynek pénzügyi naptára meg van adva a könyvben vagy amelyik pénzügyi naptár ki van jelölve a **Főkönyv** lapon. A pénzügyi naptárak a **Pénzügyi naptárak** oldalon állíthatóak be. 
 
-Például a pénzügyi év július 1-június 30., az értékcsökkenési számítás elindul a július 1. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az értékcsökkenés minden időszakhoz helyesbítve van. A következő üzleti év hossza az időszakok beállítása alapján van meghatározva a **Pénzügyi naptárak** oldalon. 
+Egy július 1-től június 30-ig tartó pénzügyi év esetén az értékcsökkenés számítása július 1-jén kezdődik. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az értékcsökkenés minden időszakhoz helyesbítve van. A következő üzleti év hossza az időszakok beállítása alapján van meghatározva a **Pénzügyi naptárak** oldalon. 
 
 Ha bejelöli **Pénzügyi** értéket az értékcsökkenés éveként, a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
 
@@ -83,6 +86,8 @@ A 200% degresszív értékcsökkenési módszer elosztja a 200 százalékot az �
 | 3. év | 3 600 × 40% = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
-> Általában, amikor a 200 % degresszív értékcsökkenési módszer használatával számított összeg lesz alacsonyabb, mint a volna számítani a lineáris módszerrel van egy hátralévő élettartamát a lineáris módszer.
+> Általában amikor az összeg számolása a 200% degresszív értékcsökkenési módszerrel történik, akkor az érték kisebb lesz mint amit a lineáris értékcsökkenés módszerrel kapnánk, a hátralévő élettartamhoz létezik egy átalakítás a lineáris értékcsökkenés módszeréhez.
+
+
 
 

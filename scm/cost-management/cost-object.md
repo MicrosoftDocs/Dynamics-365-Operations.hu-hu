@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-objects"></a>Költségobjektumok
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk tájékoztatást ad a költségobjektumokról és elmagyarázza hogyan halmozódnak föl a költségek és a mennyiségek. Egy költségobjektum egy olyan entitás, amelyhez költségek és mennyiségek halmozódnak föl. A költségobjektum-entitás lehet egy termék vagy egy termékváltozat, úgy mint változatok a stílusra és színre.  
 
 <a name="cost-objects"></a>Költségobjektumok
@@ -65,19 +68,21 @@ Az alábbi táblázat bemutatja, hogy mi a költségobjektum és mi a készletob
     -   Feladott mennyiség
 -   Az **Átlagos egységenkénti költség** mező egy kiszámított mező. Az értékét az **Érték** mező **Mennyiség** mezővel való elosztásával kapjuk meg.
 
-**Megjegyzés:** a ** tényleges értékkel együtt ** paraméter nem befolyásolja a fenti számításokhoz.
+**Megjegyzés**: A **Tényleges érték beszámítása** paraméter nem befolyásolja az előző számításokat.
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Termékdimenzió-csoport](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Tárolásidimenzió-csoport](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Nyomonkövetésidimenzió-csoport](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Mi az új vagy megváltozott a Microsoft Dynamics AX rendszerben](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Újdonságok és változások a Microsoft Dynamics AX-ben](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[Költségbejegyzések](cost-entries.md)
+
+
 
 

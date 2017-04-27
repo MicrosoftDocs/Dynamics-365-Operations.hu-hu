@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="position-forecasting"></a>Pozíció-előrejelzés
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 A dolgozókhoz kapcsolódó kiadások gyakran a szervezet költségeinek nagy részét alkotják. A pozíció-előrejelzés lehetővé teszi hogy megtervezze ezeket a költségeket, és beleszámolja őket költségvetések tervezetébe.
 
 ## <a name="position-forecasting-in-budget-planning"></a>Pozíció-előrejelzés a költségvetési tervben
 
-[![Grafikus felső](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Felső grafika](./media/graphic-top.png)](./media/graphic-top.png) 
 
-Pozíció előrejelzés használatával három fő összetevő biztosítja a pontos költségvetési összegek pozíció költségek. Ezeket az összegeket ezután egy költségvetési tervbe lehet összefoglalni a költségvetési számításokhoz. 
+A pozíció-előrejelzés három fő összetevőt használ, hogy pontos költségvetési mennyiségeket adjon meg a pozíció-kiadásokhoz. Ezeket az összegeket ezután egy költségvetési tervbe lehet összefoglalni a költségvetési számításokhoz. 
 
 Az elsődleges összetevő az **előre jelzett beosztás**, amely az egy pozícióhoz kapcsolódó összes költségadatot megadja. Egy előre jelzett beosztás több változatát is létrehozhatja úgy, hogy egy másik költségvetési tervváltozatot rendel minden egyes verzióhoz. A különféle változatok lehetővé teszik a költségvetéshez való ismétlődésen alapuló megközelítést, és így több különféle feltételes kimenetelt hasonlíthat össze. Minden előre jelzett beosztás rendelkezik egy neki megfelelő pozícióval a Humán erőforrásoknál.
 
@@ -47,7 +50,7 @@ A **kompenzációs csoport** opcionális beállítási komponens, amely olyan k�
 
 [![graphic1b](./media/graphic1b.png)](./media/graphic1b.png) 
 
-Pozíció előrejelzéshez tipikus során először hoz létre a telepítő összetevőket (költségvetési költségtényezők és kompenzációs csoportok). Az előre jelzett beosztások generálása a meglévő beosztások alapján. A helyesbítések ekkor elvégezhetők. Például hozzáadhat vagy bezárhat pozíciókat, megváltoztathatja a fizetési díjalapokat és hozzáadhat béremeléseket. Egy előre jelzett beosztás több változatát is létrehozhatja, hogy könnyebben össze lehessen hasonlítani a különböző költségvetési előrejelzéseket. Ezután beleveheti az előrejelzési pozíciókat a költségvetési tervekbe, és az előrejelzési pozíciókból átviheti az összegeket a költségvetésiterv-sorokba.
+Egy jellemző beosztás-előrejelzési folyamatban először létre kell hozni a beállítási komponenseket (költségvetési költségösszetevők és kompenzációs csoportok). Az előre jelzett beosztások generálása a meglévő beosztások alapján. A helyesbítések ekkor elvégezhetők. Például hozzáadhat vagy bezárhat pozíciókat, megváltoztathatja a fizetési díjalapokat és hozzáadhat béremeléseket. Egy előre jelzett beosztás több változatát is létrehozhatja, hogy könnyebben össze lehessen hasonlítani a különböző költségvetési előrejelzéseket. Ezután beleveheti az előrejelzési pozíciókat a költségvetési tervekbe, és az előrejelzési pozíciókból átviheti az összegeket a költségvetésiterv-sorokba.
 
 Létrehozhat további előre jelzett beosztásverziókat, ahogy a költségvetési terveket felülvizsgálja. Ezek az új verziók adják a felülvizsgálat alapját.
 
@@ -64,9 +67,9 @@ A költségvetési költségösszetevő költségelem költségösszegének szá
 
 Ha a költségösszetevő százalékon alapul, meg kell adnia a költségvetési költségösszetevőket, amelyeket a számítás alapjaként használt.
 
-**Example** 
+**Példa** 
 
-Jodi a szervezet biztosítja a képzési támogatás, az alkalmazott fizetési 5 %-át. Jodi ehhez a költséghez szeretne létrehozni egy költségvetési költségösszetevőt. Létrehoz egy új költségvetési költségösszetevőt, és hozzárendeli a **Juttatás** költségvetési költségtípushoz.
+Jodi szervezete egy alkalmazott fizetési díjalapjának 5 százalékát biztosítja képzési keretként. Jodi ehhez a költséghez szeretne létrehozni egy költségvetési költségösszetevőt. Létrehoz egy új költségvetési költségösszetevőt, és hozzárendeli a **Juttatás** költségvetési költségtípushoz.
 
 Jodi nem szeretné, hogy a vezetők megváltoztassák a juttatás mennyiségét. Ezért tehát kiválasztja **Költségváltozások tiltása** lehetőséget a **Előre jelzett beosztás felülírása** mezőben. A szervezet azt szeretné, hogy ez a költség minden hónaphoz egyenlő módon legyen hozzárendelve. Ezért Jodi kiválasztja a **Negyedéves** opciót a **Felosztási mód** mezőben. 
 
@@ -82,7 +85,7 @@ A kompenzációs csoportok alapvető funkciója, hogy költségvetési költség
 
 A kompenzációs csoportok meghatározhatják egy előre jelzett beosztás bevételi arányait is.. Egy csoportot kell felállítania vagy óra, vagy éves fizetés alapján az előre jelzett beosztás bevételének kiszámítására. A **Kompenzációs díjtáblák** lapon a fizetési díjalapok kompenzációs rács határozza meg az előre jelzett beosztáshoz hozzáadott keresetet, hozzárendelt szint és lépés alapján. Ezek a rácsok alapulhatnak a Humán erőforrásokban meglévő kompenzációs rácsokon. Másik lehetőségként létrehozhat új kompenzációs rácsokat is a költségtervezéshez. 
 
-Az érvényességi dátum és a lejárati dátumok a kompenzációs díjtáblákon lehetővé teszik, hogy tetszőleges időben módosítsa a fizetési díjalapokat. Ez a funkció akkor hasznos, ha egy szerződési egység mindenkire egyenlően vonatkozó növekedést tárgyalt ki a költségvetési ciklus közepén. Ebben az esetben a már létező tábla lejárati dátumának módosítása az árfolyam-módosítás időpontja előtt a nap, és új napján kezdődő új sebesség táblát veszünk fel. Amikor hoz létre egy új táblát, ha **egy új kompenzációs rács létrehozása egy meglévő rácsot a**, az emberi erőforrások közül választhat a meglévő árfolyam tábla. A létrehozott díjtáblában a **Tömeges módosítás** opció lehetővé teszi, hogy egy százalékos vagy fix összegű emelést vagy csökkenést alkalmazzon a rács összes díjalapjára. 
+Az érvényességi dátum és a lejárati dátumok a kompenzációs díjtáblákon lehetővé teszik, hogy tetszőleges időben módosítsa a fizetési díjalapokat. Ez a funkció akkor hasznos, ha egy szerződési egység mindenkire egyenlően vonatkozó növekedést tárgyalt ki a költségvetési ciklus közepén. Ebben az esetben a már létező tábla lejárati dátumát módosítjuk az árfolyam-módosítás időpontja előtti napra, és az új dátumon kezdődő új árfolyamtáblát veszünk fel. Amikor létrehoz egy új árfolyamtáblát, ha kiválasztja az **Új kompenzációs rács létrehozása egy meglévőből** lehetőséget, az emberi erőforrások készletéből közül választhat egy meglévő árfolyamtáblát. A létrehozott díjtáblában a **Tömeges módosítás** opció lehetővé teszi, hogy egy százalékos vagy fix összegű emelést vagy csökkenést alkalmazzon a rács összes díjalapjára. 
 
 A **Növelési ütemezés** és a **Növelés dátuma** mezők a kompenzációs csoporton akkor használhatók, ha béremeléseket kell létrehozni, mivel a beosztások egy lépéssel a következőre lépnek. Az éves fizetésemelés erre tipikus példa. A növelési ütemezés határozza meg, hogy a beosztás évfordulója vagy egy közös dátum szolgál a lépcsőzetes növekedés alapjául. A növekedési ütemezés a kompenzációs csoportban szereplő összes előre jelzett beosztásra vonatkozik. 
 
@@ -93,7 +96,7 @@ A kompenzációs csoporton kijelölt kereseti költségösszetevőt akkor kell h
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Előre jelzett beosztások létrehozása létező beosztásokhoz
 
-A legpontosabb költségvetési tervezés, hozzon létre előrejelzési pozíciók részletek használatával meglévő Microsoft Dynamics 365 pozíciói, függetlenül attól, hogy a helyzet jelenleg töltött vagy kitöltetlen műveletekhez. 
+A legpontosabb költségtervezési tervezés érdekében létrehozhat előre jelzett beosztásokat létező beosztásokból származó részletes adatok használatával a Microsoft Dynamics 365 for Operations rendszerben, függetlenül attól, hogy a beosztás jelenleg be van-e töltve vagy nem. 
 
 A **Meglévő beosztások hozzáadása** funkció a szervezet minden beosztását megjeleníti. Az** Ekkor** dátum beállításával módosíthatja a beosztások listáját, hogy azokat beosztásokat tartalmazza, amelyek egy bizonyos napon a múltban vagy gyakoribb esetekben a jövőben (például a következő költségvetési ciklus elején) léteztek/léteznek. Válasszon ki egy költségvetés-tervezési folyamat és a költségvetési tervváltozatot, válasszon ki a listában szereplő beosztásokat, majd kattintson az **OK** gombra, így előre jelzett beosztásokat létrehozva a kiválasztott beosztások számára. Vegye figyelembe, hogy a költségvetés-tervezési folyamatban és tervváltozatban minden meglévő pozícióhoz csak egy előre jelzett beosztást hozhat létre. Azonban más költségvetési tervváltozatok hozzárendelésével további verziókat is létrehozhat. 
 
@@ -107,7 +110,7 @@ A **Kompenzációs csoport hozzárendelése** lehetőség beállítása elsőbbs
 
 [![graphic4](./media/graphic4.png)](./media/graphic4.png) 
 
-Egy másik lehetőség egy évfordulóját rendelni. A kijelölt dátum (módosított kezdési dátum, a dolgozó kezdési dátuma, a foglalkoztatás kezdő dátuma vagy a szolgálati idő dátuma) a hozzárendelt dolgozótól az előre jelzett beosztás évfordulójaként lesz beállítva és tájékoztatásra szolgál a fizetésemelések létrehozásakor.
+Egy másik lehetőség egy évforduló hozzárendelése. A kijelölt dátum (módosított kezdési dátum, a dolgozó kezdési dátuma, a foglalkoztatás kezdő dátuma vagy a szolgálati idő dátuma) a hozzárendelt dolgozótól az előre jelzett beosztás évfordulójaként lesz beállítva és tájékoztatásra szolgál a fizetésemelések létrehozásakor.
 
 ### <a name="creating-new-forecast-positions"></a>Új előre jelzett beosztások létrehozása
 
@@ -138,9 +141,9 @@ Például egy költségvetési költségsorelem 2017. január 1. és 2017. júni
 
 A költségvetési költségösszetevő sorokat újra kell számolni, ha megváltozik az FTE-érték az előre jelzett beosztásnál. A sorokat is újra kell számítani az aktiválási dátumok vagy a visszavonási dátumok változásakor. Ezeknek a dátumoknak a módosítása frissítést idézhet elő a költségvetési költségösszetevő kezdő és záró dátumaiban, amelyeknek az előre jelzett beosztás időszakán belül kell lenniük. Ha újraszámításra van szükség, az **Újraszámítás** gomb elérhetővé válik, és az „Újraszámolás szükséges” üzenet jelenik meg. Újraszámítás akkor is szükséges lehet, ha egy költségvetési költségösszetevőt ad hozzá vagy távolít el.
 
-**Example** 
+**Példa** 
 
-A szervezet tervezi egy könyvelő pozíció költségeinek csökkentésében két lehetőség közül választhat. Egy lehetőség a beosztás megszüntetése évközben. A másik lehetőség a beosztás átállítása részmunkaidőre az egész évre. Brad létrehozott egy előre jelzett beosztást a létező könyvelői beosztásra a kiindulási változatban. Ezt a kiindulási előre jelzett beosztást átmásolja az A változatba, a visszavonás dátumát május 31-re állítja be, és újraszámítja a költségeket. Ezután Brad a kiindulási előre jelzett beosztást a B változatba másolja, az FTE értéket **0,50** értékre módosítja, és újraszámol. Brad így három verzióval rendelkezik, amelyek mindegyikének megvan a saját összes költsége, amelyek hozzá vannak rendelve az opcióihoz.
+A szervezet két lehetőséget fontolgat egy könyvelői beosztás költségeinek csökkentéséhez. Egy lehetőség a beosztás megszüntetése évközben. A másik lehetőség a beosztás átállítása részmunkaidőre az egész évre. Brad létrehozott egy előre jelzett beosztást a létező könyvelői beosztásra a kiindulási változatban. Ezt a kiindulási előre jelzett beosztást átmásolja az A változatba, a visszavonás dátumát május 31-re állítja be, és újraszámítja a költségeket. Ezután Brad a kiindulási előre jelzett beosztást a B változatba másolja, az FTE értéket **0,50** értékre módosítja, és újraszámol. Brad így három verzióval rendelkezik, amelyek mindegyikének megvan a saját összes költsége, amelyek hozzá vannak rendelve az opcióihoz.
 
 #### <a name="assigning-a-compensation-group"></a>Kompenzációs csoport hozzárendelése
 
@@ -160,9 +163,9 @@ Ha másodszor rákattint az **Emelések készítése** lehetőségre, a folyamat
 
 Előre jelzett beosztások frissítései más területekről is származhatnak, például a költségvetési költségösszetevőből és a kompenzációs csoport beállítási oldalaiból. A tömeges frissítési eljárással is módosíthatja az előre jelzett beosztásokat. 
 
-Két lehetőség áll rendelkezésre a **költségvetési költségtényező** telepítőjében: **pozíciók hozzáadása** és **beosztások frissítése**. A **Hozzáadás beosztásokhoz** opció kiválasztott előre jelzett beosztásokhoz adja hozzá a költségvetési költségösszetevőt. Ha az összetevő már hozzá van rendelve egy előre jelzett beosztáshoz, az előrejelzési pozíciót kihagyja a program. A **Beosztások frissítése** opció az aktuális értékeket alkalmazza (a fő számla, százalék, éves összeg, és így tovább) a kijelölt előre jelzett beosztásokra. 
+Két beállítás érhető el a** Költségvetési költségösszetevő** telepítőoldalán: **Hozzáadás beosztásokhoz** és **Beosztások frissítése**. A **Hozzáadás beosztásokhoz** opció kiválasztott előre jelzett beosztásokhoz adja hozzá a költségvetési költségösszetevőt. Ha az összetevő már hozzá van rendelve egy előre jelzett beosztáshoz, az előrejelzési pozíciót kihagyja a program. A **Beosztások frissítése** opció az aktuális értékeket alkalmazza (a fő számla, százalék, éves összeg, és így tovább) a kijelölt előre jelzett beosztásokra. 
 
-Minden folyamathoz tartozik egy hasonló lap, ahol kiválaszthatja az előre jelzett beosztásokat. A **Hozzáadás beosztásokhoz** lap megmutatja az összes előrejelzési pozíciót, amelyek közül lehet választani, míg a **Beosztások frissítése** oldal csak azokat az előrejelzési pozíciókat mutatja, amelyek már rendelkeznek hozzárendelt költségvetési költségösszetevővel. (Tehát a **beosztások frissítése** oldalon megtudhatja, melyik előrejelzési pozíciók már a kapcsolódó költségtényező lehetőséget nyújt.) A felső rácson előrejelzési pozíciók áthelyezése egy alacsonyabb rácshoz a frissítés felvenni. 
+Minden folyamathoz tartozik egy hasonló lap, ahol kiválaszthatja az előre jelzett beosztásokat. A **Hozzáadás beosztásokhoz** lap megmutatja az összes előrejelzési pozíciót, amelyek közül lehet választani, míg a **Beosztások frissítése** oldal csak azokat az előrejelzési pozíciókat mutatja, amelyek már rendelkeznek hozzárendelt költségvetési költségösszetevővel. (Tehát a **Beosztások frissítése** oldal lehetőséget nyújt arra, hogy megtudja, melyik előrejelzési pozícióhoz van már csatolva költségösszetevő.) Az előre jelzett beosztásokat áthelyezheti egy felső rácsból egy alsóbb rácsba, hogy belevegye őket a frissítésbe. 
 
 Vegye figyelembe, hogy a **Dátumok módosítása** funkció a **Költségszámítás** lapon azonnal megváltoztatja a költségvetési költségösszetevő kezdő és záró dátumát az előre jelzett beosztásokon. Nincsenek választható opciók. 
 
@@ -176,7 +179,7 @@ Az újraszámítási folyamat automatikusan végbemegy minden előre jelzett beo
 
 [![graphic6](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
-Létrehozása és módosítása az előrejelzési pozíciók célja felvegye a költségvetési tervek, így a költségvetési tervek tartalmazzák a legpontosabb költségvetési összegek. Kétféleképpen lehet előre jelzett beosztást költségvetési tervhez hozzáadni. A költségvetési terven vagy egy generáló vagy egy kiválasztó folyamat használható.
+Az előre jelzett beosztások létrehozásának és módosításának célja, hogy hozzáadjuk őket költségvetési tervekhez, hogy azok a lehető legpontosabb költségvetési mennyiségeket tartalmazzák. Kétféleképpen lehet előre jelzett beosztást költségvetési tervhez hozzáadni. A költségvetési terven vagy egy generáló vagy egy kiválasztó folyamat használható.
 
 ### <a name="generating-a-budget-plan-from-forecast-positions"></a>Költségvetési terv létrehozása előrejelzési pozíciók alapján
 
@@ -215,5 +218,7 @@ A létrehozási folyamat és a kiválasztási művelet esetében is a költségv
 A költségvetésiterv-sorok megjelenítik a költségvetési összegek forrását (az előre jelzett beosztás számát), de nincsenek összekapcsolva. Ezért az előre jelzett beosztás módosításai nem láthatók a költségvetésiterv-soron, és az előre jelzett beosztásban megjelennek a költségvetési terv sorának módosításai. Ha módosít egy előre jelzett beosztást, és szeretné, hogy a frissítések megjelenjenek költségvetési tervben, újra be kell vinnie a tervbe az előre jelzett beosztást. Ne feledje azonban, hogy ez a folyamat eltávolítja az összes olyan sort, amelyhez ez az előre jelzett beosztás hozzá van rendelve. Ezért az ezekben a sorokban végrehajtott összes módosítás törlődik. 
 
 Ha meg akarja tekinteni, hogy mely költségvetési tervekben szerepel egy előre jelzett beosztás, akkor létrehozhatja az **Előre jelzett beosztások költségvetési terv szerint** jelentést. Másik lehetőség, hogy az előre jelzett beosztáson megnyitja a **Társított költségvetési tervek** adatterületet a tervek megtekintéséhez.
+
+
 
 

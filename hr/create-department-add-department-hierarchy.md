@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Részleg létrehozása és társítása a szervezeti hierarchiához
 
+[!include[banner](includes/banner.md)]
+
+
 A részleg egy működési egység, amely a szervezet egy kategóriáját vagy működési területét képviseli. Egy részleg a szervezet egy konkrét területen végzett tevékenységeiért felel (például értékesítés, könyvelés, emberi erőforrások). A részlegek segítségével hozhatók létre jelentések a működési területekről. A részlegeknek lehet eredménykimutatási felelőssége.
 
-Egy részleg költséghelyek egy csoportját is magában foglalhatja. A Beosztások hozzárendelhetők részlegekhez. Egy osztály létrehozásához kattintson a **az emberi erőforrások**&gt;**szervezeti egységek**&gt;**osztály**. Az alábbi táblázat ismerteti a rendelkezésre álló mezőket.
+Egy részleg költséghelyek egy csoportját is magában foglalhatja. A Beosztások hozzárendelhetők részlegekhez. Részleg létrehozásához kattintson az **Emberi erőforrások** &gt; **Részlegek** &gt; **Részleg** elemre. Az alábbi táblázat bemutatja a rendelkezésre álló mezőket.
 
 | Mező               | Leírás                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,12 +49,14 @@ Egy részleg költséghelyek egy csoportját is magában foglalhatja. A Beosztá
 
 Egy részleg hozzáadásához a részleghierarchiához, tegye a következőket.
 
-1.  Kattintson a **az emberi erőforrások**&gt;**szervezeti egységek**&gt;**szervezeti hierarchia**.
+1.  Kattintson az **Emberi erőforrások** &gt; **Részlegek** &gt; **Részlegek hierarchiája** menüpontra.
 2.  Kattintson a **Szerkesztés** lehetőségre, majd válassza ki a szervezetet, amely alá a részleg tartozik.
 3.  Kattintson a **Beszúrás** lehetőségre, és válassza ki a **Részleget** a listából.
 4.  A megjelenő listából válassza ki a részleget, amelyet hozzá kíván adni a hierarchiához.
-5.  Mentse el a módosításokat. Egy üzenet, hogy a hierarchia egy piszkozatverzióját létrehoztak.
-6.  Ha elkészült, kattintson a **a közzététel** a hierarchiatervezőben. Adhat meg dátumot jelzi, amikor a hierarchia közzé kell tenni. Ha például a következő naptári év kezdetén kell hozzáadni az új részleget, akkor állítsa a hatálybalépési dátumot a következő év január 1-re. A hierarchia módosításai ezen a dátumon lépnek hatályba.
+5.  Mentse el a módosításokat. Egy üzenet fog kapni arról, hogy létrejött-e a hierarchia egy vázlatverziója.
+6.  Ha elkészült, kattintson a **Közzététel** lehetőségre a hierarchiatervezőben. Megadhat egy hatályba lépési dátumot, amely azt jelzi, hogy mikor kell közzétenni a hierarchiát. Ha például a következő naptári év kezdetén kell hozzáadni az új részleget, akkor állítsa a hatálybalépési dátumot a következő év január 1-re. A hierarchia módosításai ezen a dátumon lépnek hatályba.
+
+
 
 
 

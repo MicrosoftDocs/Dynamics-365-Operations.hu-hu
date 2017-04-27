@@ -86,5 +86,5 @@ A **Pénzügyi jelentéskészítés** lehetőség a megoldás. A szervezeti hier
 A **Vállalati egyenlegek exportálása** lehetőséggel exportálhat egy példányból, majd használja a **Konszolidálás importálással** lehetőséget a másik példányban, hogy konszolidálja az adatokat.
 
 
-További tudnivalókért lásd: [a konszolidációs vállalat pénznem revalution](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+További tudnivalókért lásd: [Devizaátértékelés konszolidációs vállalatban](\finanicials\general-ledger\currency-revaluation-consolidation-company).
 

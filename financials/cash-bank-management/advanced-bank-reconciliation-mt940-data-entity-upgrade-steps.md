@@ -1,5 +1,5 @@
 ---
-title: "A banki egyeztetés MT940 behozatali – speciális entitás összetett adatok frissítése"
+title: "Speciális banki egyeztetés MT940 importálása - összetett adatentitás frissítése"
 description: "Egy sorszámot kell hozzáadni a banki kivonat importálási entitásához az MT940 formátum támogatásához."
 author: twheeloc
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>A banki egyeztetés MT940 behozatali – speciális entitás összetett adatok frissítése
+# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Speciális banki egyeztetés MT940 importálása - összetett adatentitás frissítése
+
+[!include[banner](../includes/banner.md)]
+
 
 Egy sorszámot kell hozzáadni a banki kivonat importálási entitásához az MT940 formátum támogatásához. 
 
@@ -36,9 +39,9 @@ A következő lépések segítségével adja hozzá a banki kivonat importálás
     -   Entitás\\BankStatementDocumentEntity
     -   Entitás\\BankStatementEntity
     -   Entitás\\BankStatementLineEntity
-    -   Táblák\\BankStatementStaging
+    -   Táblázatok\\BankStatementStaging
 
-2.  Adatkezelés\\adatok projektek.
+2.  Adatok kezelése\\adatprojektek.
     1.  MT940 importálás projekt(ek) betöltése
         1.  XLST megváltoztatása.
             -   Kattintson a **Térkép megtekintése** menüpontra.
@@ -58,6 +61,8 @@ A következő lépések segítségével adja hozzá a banki kivonat importálás
                 -   Ellenőrizze, hogy a **sorszám** hozzá van-e rendelve a forrásból az előkészítéshez.
 
 3.  Importálja az új kivonatot.
+
+
 
 
 

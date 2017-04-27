@@ -1,6 +1,6 @@
 ---
 title: "Műszak és pénztárgépfiók kezelés"
-description: "Ez a cikk beállítása és használata a kiskereskedelmi pont (POS) értékesítés műszakok - megosztott és önálló kétféle ismerteti. A megosztott műszakokat több felhasználó több helyen is használhatja viszont az önálló műszakokat egyszerre csak egy dolgozó használhatja."
+description: "Ez a cikk a kiskereskedelmi pénztár műszakok két típusa, az önálló és megosztott beállítását és használatát mutatja be. A megosztott műszakokat több felhasználó több helyen is használhatja viszont az önálló műszakokat egyszerre csak egy dolgozó használhatja."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="shift-and-cash-drawer-management"></a>Műszak és pénztárgépfiók kezelés
 
-Ez a cikk beállítása és használata a kiskereskedelmi pont (POS) értékesítés műszakok - megosztott és önálló kétféle ismerteti. A megosztott műszakokat több felhasználó több helyen is használhatja viszont az önálló műszakokat egyszerre csak egy dolgozó használhatja.
+[!include[banner](includes/banner.md)]
+
+
+Ez a cikk a kiskereskedelmi pénztár műszakok két típusa, az önálló és megosztott beállítását és használatát mutatja be. A megosztott műszakokat több felhasználó több helyen is használhatja viszont az önálló műszakokat egyszerre csak egy dolgozó használhatja.
 
 A kiskereskedelmi pénztár műszakoknak két típusa létezik: önálló és megosztott. Az önálló műszakokat egyszerre csak egy dolgozó használhatja. A megosztott műszakokat több felhasználó több helyen is használhatja. Ezért hatékonyan hoznak létre különálló műszakokat több dolgozónak az üzletben.
 
@@ -38,15 +41,15 @@ Az önálló műszakokat hagyományos rögzített pénztár esetében használj�
 
 Önálló műszak a pénztárfiók szintjén van jelölve. Ez az eljárás ismerteti, hogyan állítható be önálló műszak a pénztárjegyzéken.
 
-1.  Kattintson a **kereskedelmi és kereskedelmi**&gt;**csatorna beállításait**&gt;**POS telepítési**&gt;**POS profilok**&gt;**a hardverprofilok**.
+1.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítás** &gt; **POS beállítás** &gt; **POS profilok** &gt; **Hardverprofilok** gombra.
 2.  Válassza ki a hardverprofilt az önálló műszak használatához.
 3.  A **Fiók** Gyorslapon végezzen el megerősítést, hogy a **Megosztott műszakfiók** beállítás **Nem**értékre legyen állítva.
-4.  Click **Save**.
-5.  Kattintson a **kereskedelmi és kereskedelmi**&gt;**csatorna beállításait**&gt;**POS telepítési**&gt;**regisztrálja az**.
+4.  Kattintson a **Mentés** gombra.
+5.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárgépek** lehetőségekre.
 6.  Válassza ki az önálló műszakot igénylő jegyzéket, majd kattintson a **Szerkesztés** lehetőségre.
 7.  A **Hardverprofil** mezőben válassza ki a 2. lépésben kiválasztott hardverprofilt.
-8.  Click **Save**.
-9.  Kattintson a **kereskedelmi és kereskedelmi**&gt;**a Retail IT**&gt;**elosztási ütemezés**.
+8.  Kattintson a **Mentés** gombra.
+9.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 10. Válassza a **1090** elosztási ütemezést, és kattintson a **Futtatás most** lehetőségre a pénztár módosításainak szinkronizálásához.
 
 ### <a name="use-a-stand-alone-shift"></a>Önálló műszak használata
@@ -62,19 +65,19 @@ Az önálló műszakokat hagyományos rögzített pénztár esetében használj�
 **Megjegyzés:** Helyben történő üzleti folyamatoktól függően a műszak alatt más műveletek is elérhetők. A **Széfes befizetés**, **Banki befizetés**, és **Fizetőeszköz kivétele** műveletek segítségével távolítható el pénz a kasszából a nap folyamán vagy a műszak lezárása előtt. Ha egy kasszában elfogy a készpénz a **Váltópénzbetét** művelet használható készpénz hozzáadásához.
 
 ## <a name="shared-shifts"></a>Megosztott műszakok
-Megosztott műszakot olyan környezetben használnak, ahol több pénztáros osztozik egy vagy több pénztárfiókon a munkanap során. Általában a megosztott műszak mobil pénztárkörnyezetben használatos. Mobil környezetben a pénztárosok nincsenek hozzárendelve egyetlen pénztárfiókhoz sem és felelősséggel sem tartoznak érte. Ehelyett minden pénztáros képes kell, hogy legyen értékesítés fizetésére és készpénz hozzáadására a pénztárfiókhoz bármelyik legközelebbi pénztárfióknál. Ebben az esetben a pénztárosok közt megosztott pénztárgépfiókokat tartalmazza a megosztott műszak. Minden megosztott műszakban levő pénztárgépfiók megtalálható ugyanabban a műszakban a műszak készpénzkezeléshez kapcsolódó tevékenységei miatt. Ezért a műszak kezdő összegének ki kell terjednie valamennyi készpénz összegére a megosztott műszak összes pénztárgépfiókjában. Hasonlóképpen a fizetőeszköz-elszámolás a megosztott műszak összes pénztárgépfiókjának készpénz összege lesz. **Megjegyzés:** csak egy megosztott shift lehet megnyitva egyidejűleg az egyes üzletekben. Megosztott műszakok és önálló műszakok ugyanabban az üzletben használhatók.
+Megosztott műszakot olyan környezetben használnak, ahol több pénztáros osztozik egy vagy több pénztárfiókon a munkanap során. Általában a megosztott műszak mobil pénztárkörnyezetben használatos. Mobil környezetben a pénztárosok nincsenek hozzárendelve egyetlen pénztárfiókhoz sem és felelősséggel sem tartoznak érte. Ehelyett minden pénztáros képes kell, hogy legyen értékesítés fizetésére és készpénz hozzáadására a pénztárfiókhoz bármelyik legközelebbi pénztárfióknál. Ebben az esetben a pénztárosok közt megosztott pénztárgépfiókokat tartalmazza a megosztott műszak. Minden megosztott műszakban levő pénztárgépfiók megtalálható ugyanabban a műszakban a műszak készpénzkezeléshez kapcsolódó tevékenységei miatt. Ezért a műszak kezdő összegének ki kell terjednie valamennyi készpénz összegére a megosztott műszak összes pénztárgépfiókjában. Hasonlóképpen a fizetőeszköz-elszámolás a megosztott műszak összes pénztárgépfiókjának készpénz összege lesz. **Megjegyzés:** Csak egy megosztott műszak lehet nyitott egyidejűleg az egyes üzletekben. Megosztott műszakok és önálló műszakok ugyanabban az üzletben használhatók.
 
 ### <a name="set-up-a-shared-shift"></a>Megosztott műszak beállítása
 
-1.  Kattintson a **kereskedelmi és kereskedelmi**&gt;**csatorna beállításait**&gt;**POS telepítési**&gt;**POS profilok**&gt;**a hardverprofilok**.
+1.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítás** &gt; **POS beállítás** &gt; **POS profilok** &gt; **Hardverprofilok** gombra.
 2.  Válassza ki a hardverprofilt az megosztott műszak használatához.
 3.  A **Fiók** Gyorslapon állítsa be a **Megosztott műszakfiók** beállítást **Igen**értékre.
-4.  Click **Save**.
-5.  Kattintson a **kereskedelmi és kereskedelmi**&gt;**csatorna beállításait**&gt;**POS telepítési**&gt;**regisztrálja az**.
+4.  Kattintson a **Mentés** gombra.
+5.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárgépek** lehetőségekre.
 6.  Válassza ki az megosztott műszakot igénylő jegyzéket, majd kattintson a **Szerkesztés** lehetőségre.
 7.  A **Hardverprofil** mezőben válassza ki a 2. lépésben kiválasztott hardverprofilt.
-8.  Click **Save**.
-9.  Kattintson a **kereskedelmi és kereskedelmi**&gt;**a Retail IT**&gt;**elosztási ütemezés**.
+8.  Kattintson a **Mentés** gombra.
+9.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 10. Válassza a **1090** elosztási ütemezést, és kattintson a **Futtatás most** lehetőségre a pénztár módosításainak szinkronizálásához.
 
 ### <a name="use-a-shared-shift"></a>Megosztott műszak használata
@@ -93,6 +96,8 @@ Megosztott műszakot olyan környezetben használnak, ahol több pénztáros osz
 8.  Miután eltávolította a készpénzt a pénztárgépfiókból, számolja meg az összes pénztárgépfiók összes készpénzét.
 9.  Használja a **Fizetőeszköz-elszámolás** műveletet a megosztott műszak összes pénztárgépfiókjának teljes készpénzösszegének elszámolásához.
 10. Használja a **Műszakzárás** a műveletet a megosztott műszak bezárásához.
+
+
 
 
 

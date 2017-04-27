@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="job-scheduling"></a>Feladat ütemezése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk információt biztosít a feladat ütemezésről, ami a művelet ütemezés egy részletesebb ütemezésű formája. A feladatütemezést használhatja az egyéni feladatok vagy bolti sorrendek ütemezésére és a gyártási környezet irányítására.
 
 A feladatütemezést használhatja az egyéni feladatok vagy bolti sorrendek ütemezésére és a gyártási környezet irányítására. A feladatütemezés külön feladatokra bontja az egyes műveleteket. Ezek a feladatok azután az üzemi erőforrásokhoz lesznek hozzárendelve, amik végrehajtják őket. A feladatütemezés lehetővé teszi azoknak a feladatoknak a szinkronizálását, amelyekre a kiválasztott feladat hivatkozik. Megadhatja a feladat kezdő vagy befejező dátumát, majd ezek alapján futtathatja az ütemezést. Az, hogy a kezdő vagy a befejező időpontot adja meg, az ütemezés irányától függ. Ez a funkció akkor hasznos, ha például csak egy feladatot futtathat egy számítógépen egy időben, vagy ha optimalizálni szeretné a futtatott feladatot minden egyes erőforráshoz.
@@ -39,7 +42,7 @@ Az feladatütemezési folyamat a következő feladatokat foglalja magában:
 -   Az egyes műveletek feladatokká bontása.
 -   Az egyes feladatok ütemezése a kapcsolódó műveletek számára megadott erőforrások időpontjai és időtartama alapján.
 -   Minden feladat kezdő és befejező időpontjának kiszámítása. A véges kapacitás segítségével győződjön meg arról, hogy nincsenek egymást átfedő idők.
--   Határozza meg a feladat futtatásához az erőforráscsoport mely erőforrásokat. A feladathoz szükséges, hogy egy erőforrás csoportot kell adni egy művelet. A feladatütemezés az erőforrásokat vagy az erőforráscsoportokat a lehető legrövidebb átfutási idő alapján választja ki, és figyelembe veszi az erőforrások minden korábbi foglalását.
+-   Határozza meg, hogy az erőforráscsoport mely erőforrásain fusson a feladat. Ehhez a lépéshez szükséges egy erőforráscsoport megadása egy művelethez. A feladatütemezés az erőforrásokat vagy az erőforráscsoportokat a lehető legrövidebb átfutási idő alapján választja ki, és figyelembe veszi az erőforrások minden korábbi foglalását.
 -   Műveletek feladatokra bontása a feladatütemezés futtatásakor. A feladatok a termelési útvonal által megadott sorrendben, időpont és időtartam szerint lesznek ütemezve. A művelet beállítása határozza meg a feladatokat, amelyek az ütemezési folyamat során le lesznek bontva. Az az útvonalcsoport szabályozza azt, hogy a feladatok létrejönnek-e, amelyhez hozzá van rendelve a művelet. Egy-egy feladat csak akkor jön létre, ha konkrét hosszúsága van. Szállítási idő típusú feladat például csak akkor jön létre, ha az aktuálisan kiválasztott művelethez meg volt adva szállítási idő.
 
 ## <a name="scheduling-direction"></a>Ütemezési irány
@@ -73,5 +76,7 @@ Az erőforrások a feladatütemezésen keresztül vannak feladatokhoz rendelve. 
 
 ## <a name="resource-efficiency"></a>Erőforrás-hatékonyság
 A feladatütemezés figyelembe veszi az erőforrásokra vonatkozóan megadott hatékonysági százalékokat is. A hatékonysági százalékok csökkentik vagy növelik az erőforrásra lefoglalt időt. Ezért az átfutási idő szintén növekszik vagy csökken. A számítás a következő képlet segítségével történik: ütemezési idő = idő × 100 ÷ hatékonysági százalék. Ebben a képletben az *Idő* egyaránt tartalmazza a lefutási és a beállítási időt.
+
+
 
 

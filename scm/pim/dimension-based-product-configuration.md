@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="dimension-based-product-configuration"></a>Dimenzión alapuló termékkonfiguráció
 
+[!include[banner](../includes/banner.md)]
+
+
 A dimenzión alapuló termékkonfiguráció egy egyszerű megoldás több termékváltozat létrehozására egy alaptermékből és annak anyagjegyzékéből.
 
-Dimenzió-alapú termék konfigurációs egyike a három beépített termék konfigurációs technológia. A két másik technológia az előre definiált változatok és a megszorításon alapuló konfiguráció. Minden három technológia alapterméket használ kiindulási pontként, és a felhasználó termékváltozatokat hozhat létre egy alaptermékhez.
+A dimenzión alapuló termékkonfiguráció egyike a három beépített termék konfigurációs technológiának. A két másik technológia az előre definiált változatok és a megszorításon alapuló konfiguráció. Minden három technológia alapterméket használ kiindulási pontként, és a felhasználó termékváltozatokat hozhat létre egy alaptermékhez.
 
 ## <a name="key-concepts"></a>Alapfogalmak
 A dimenzión alapuló termékkonfiguráció a következő alapfogalmakon alapszik:
@@ -68,10 +71,12 @@ A konfigurációs útvonal határozza meg a konfigurációs csoportok sorozatát
 A konfigurációs szabályok egy meg megfeleltetést képviselnek, amely biztosítja, hogy a termék egy konfigurációs csoporthoz tartozik az anyagjegyzékben, amely megköveteli a termék hozzárendelését vagy kizárását különböző konfigurációs csoportokból ugyanabban az anyagjegyzékben.
 
 ## <a name="product-modeling-process"></a>Termékmodellezési folyamat
-Egy termékmodell építés természetes sorozata, egy dimenzión alapuló termékhez, a kívánt konfigurációs csoportok meghatározásával kezdődik. Fontos, hogy az összes anyagjegyzékben használandó termék ahhoz a vállalathoz legyen kiadva, amelyhez a termékmodell épült. Ezeket az építőelemeket helyen, és a felhasználó az Anyagjegyzék létrehozása és a konfigurációs csoportok hozzárendelése valamennyi érintett AJ-sorok. Az AJ befejeződése után a konfigurációs útvonal sorrendje a konfigurációs csoportokat a megfelelő sorrendben lehet meghatározni. \[felirat azonosítója = "melléklet\_282671" igazítása = "alignnone" szélesség "1187" =\][![modellezési folyamat dimenzión alapuló termék](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) modellezési folyamat dimenzión alapuló termék\[/felirat\] kell, vagy nem használható együtt más konfigurációs csoportok származó egyes termékek esetén a konfigurációs szabályok, amely érvényesíti a termék kapcsolatokat hozhat létre. Miután az anyagjegyzéket egy anyagjegyzék verzió hozzákapcsolta egy dimenzión alapuló alaptermékhez és mindekettő elfogadása és aktválása után, létrehozhat termékkonfigurációkat, és mindegyiknek nevet adhat. A konfigurációkat a tranzakciók generálása előtt létre lehet hozni, vagy amikor szükség van egy bizonyos konfigurációra.
+Egy termékmodell építés természetes sorozata, egy dimenzión alapuló termékhez, a kívánt konfigurációs csoportok meghatározásával kezdődik. Fontos, hogy az összes anyagjegyzékben használandó termék ahhoz a vállalathoz legyen kiadva, amelyhez a termékmodell épült. Ha a felépítési egységek a helyükön vannak, a felhasználó létrehozhat anyagjegyzéket és hozzárendelhet konfigurációs csoportokat az anyagjegyzék érintett soraihoz. Ha az anyagjegyzék kész, a konfigurációs útvonal meghatározható a konfigurációs csoportok a megfelelő sorrendben történő rendeléséhez. \[caption id="attachment\_282671" align="alignnone" width="1187"\][![Dimenzión alapuló termékmodellezési folyamat](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Dimenzión alapuló termékmodellezési folyamat\[/caption\] Létrehozhat termékkapcsolatot biztosító szabályokat arra az esetre, ha különböző konfigurációs csoportokban található termékeket együtt kell használni, vagy nem használhatóak együtt. Miután az anyagjegyzéket egy anyagjegyzék verzió hozzákapcsolta egy dimenzión alapuló alaptermékhez és mindekettő elfogadása és aktválása után, létrehozhat termékkonfigurációkat, és mindegyiknek nevet adhat. A konfigurációkat a tranzakciók generálása előtt létre lehet hozni, vagy amikor szükség van egy bizonyos konfigurációra.
 
 ### <a name="suggested-use"></a>Javasolt használat
 
 A dimenzión alapuló konfiguráció technológiát legjobban olyan termékeknél lehet alkalmazni, amelyek változtathatósága korlátozott, és az alap termékdimenziókkal, mérettel, színnel, vagy konfigurációval nem lehet azonosítani a termékváltozatot. Ilyen lehet például a kerékpár keret magassága, kerék mérete, fékbetét-típusok és különböző fokozatok.
+
+
 
 

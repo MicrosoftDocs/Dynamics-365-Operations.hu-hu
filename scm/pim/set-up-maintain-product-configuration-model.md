@@ -1,5 +1,5 @@
 ---
-title: "A termék konfigurációs modell beállítása"
+title: "Termékkonfigurációs modell beállítása"
 description: "Ez a cikk bemutatja a termékkonfigurációs modell létrehozásának és beállításának lépéseit."
 author: YuyuScheller
 manager: AnnBe
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-product-configuration-model"></a>A termék konfigurációs modell beállítása
+# <a name="set-up-a-product-configuration-model"></a>Termékkonfigurációs modell beállítása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk bemutatja a termékkonfigurációs modell létrehozásának és beállításának lépéseit.
 
 | Feladat                                                        | Leírás                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Alaptermék létrehozása.                                    | Hozzon létre egy alapterméket az **Alaptermék** listából. Az alapterméket minden érintett társaságok. Termékmodell konfigurációs vagy részletes, verzióban használt alaptermék **korlátozás-alapú konfigurációs**, a konfigurációs technológia és a konfiguráció dimenziót ki kell választani csak a termékcsoport dimenziót ki kell választani. |
+| Alaptermék létrehozása.                                    | Hozzon létre egy alapterméket az **Alaptermék** listából. Adja ki az alapterméket az összes érintett vállalat számára. Egy olyan alaptermék esetében, amely egy termékkonfigurációs modell változataként vagy alapösszetevőként használatos, válassza ki a **Megszorításon alapuló konfiguráció** lehetőséget konfigurációs technológiaként, és a konfigurációs dimenziót csak a termékdimenzió-csoporthoz kell kiválasztani. |
 | Hozzon létre összetevőket.                                          | Összetevők létrehozása az **Összetevők** oldalon. Az összetevők a termékkonfigurációs modell építőkövei, és több termékkonfigurációs modellhez is felhasználhatók.                                                                                                                                                                                                                      |
 | Attribútumtípusok létrehozása.                                     | Attribútumtípusok létrehozása az **Attribútumtípusok** oldalon. Az attribútumtípusok határozzák meg a termékkonfigurációs modellben az összes attribútumhoz használt adatok típusát. A rögzített listájú **Logikai**, **Szöveg** attribútumok és az **Egész**, típusok választékával rendelkező attribútumok felsorolják azokat az értékeket, amelyek elérhetők egy termékkonfigurációs modell alapján egy termékváltozat konfigurálásakor.       |
 | Termékkonfigurációs modell létrehozása                       | Termékkonfigurációs modell létrehozása az **Új termékkonfigurációs modell** oldalon.                                                                                                                                                                                                                                                                                                              |
@@ -47,6 +50,8 @@ Ez a cikk bemutatja a termékkonfigurációs modell létrehozásának és beáll
 | Termékkonfigurációs modell tesztelése.                         | A termékkonfigurációs modell tesztelése a **Megszorításon alapuló termékkonfigurációs modell részletei** lapról vagy a **Termékkonfigurációs modellek listája** oldalról. A termékkonfigurációs modell tesztelése szimulálja a termékmodell konfigurálási folyamatát, amely a rendeléskezelés során zajlik.                                                                                                |
 | Termékkonfigurációs modell sablonjának létrehozása.                | Termékkonfigurációs modell sablonjának létrehozása a **Konfigurációs sablonok** oldalon. Konfigurációs sablon attribútumértékeket tartalmaz a termékkonfigurációs modellben. Válassza ki az attribútumértékeket a **Sor konfigurálása** oldalon. A termékmodell konfigurálása során kiválaszthatja a betölteni kívánt termékmodell-konfiguráció sablont.                                                   |
 | Cikk konfigurálása.                                          | A termékkonfigurációs modellek konfigurálhatók egy értékesítési rendelésből, árajánlatból, beszerzési rendelésből vagy termelési rendelésből.                                                                                                                                                                                                                                                                           |
+
+
 
 
 

@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-payments-and-rounding-rules"></a>Forgalmi adókifizetések és kerekítési szabályok
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk bemutatja az adóhatóságokon történő kerekítési szabályok működésének módját és az áfaegyenleg kerekítését az Áfa kiegyenlítése és feladása során.
 
-Rendszeres időközönként forgalmi adót be kell vallani és ki kell fizetni az adóhatóságoknak. Ez a kiegyenlítési futtatásával elvégezhető, és a forgalmi adó lap forgalmi adó folyamat feladni. Időtartamra vonatkozó forgalmi adót kiegyenlítő áfa számlák és a forgalmi adó egyenlege az ÁFA elszámolási számlára könyveli. A forgalmi adóegyenleg, amely az ÁFA elszámolási számláján lesz könyvelve, kerekíthető az adóhatóságok elvárásai szerint, egy kerekítési szabály felállításával a Forgalmi adó lapon. 
+Rendszeres időközönként forgalmi adót be kell vallani és ki kell fizetni az adóhatóságoknak. Ez a Forgalmi adó oldalon a forgalmi adó rendezése és feladása folyamat használatával végezhető el. Az egy időszakra vonatkozó áfa az áfaszámlák alapján egyenlíthető ki, és az áfaegyenleg rákerül az áfakiegyenlítési számlára. A forgalmi adóegyenleg, amely az ÁFA elszámolási számláján lesz könyvelve, kerekíthető az adóhatóságok elvárásai szerint, egy kerekítési szabály felállításával a Forgalmi adó lapon. 
 
 A kerekítési különbség rákerül a Forgalmi adó kerekítési számlájára, amelyet a Számlák automatikus tranzakciókhoz mezőben, a Főkönyvben kell kiválasztani.
 
@@ -42,10 +45,10 @@ Az időszak teljes áfája -98,765.43 követel egyenleget mutat. A jogi személy
 
 A jogi személy olyan kerekítési módszert szeretne alkalmazni, amely az egyenleget a legközelebbi 1,00 egész összegre kerekíti. Az áfa könyveléséért felelős felhasználó tehát a következőket teszi:
 
-1.  Kattintson az adó &gt;közvetett adók &gt;áfa &gt;az adóhatóságok
+1.  Rákattint az Adó &gt; Közvetett adók &gt; Áfa &gt; Adóhatóságok pontra.
 2.  Az Általános gyorslapon Kerekítési képernyő mezőjében kiválasztja a Normál lehetőséget.
 3.  A Lekerekítés mezőben ezt adja meg: 1,00.
-4.  Amikor az áfa kifizetése esedékes az adóhatóság felé, megnyitja az Adók kiegyenlítése és feladása lapot. (Kattintson az adó &gt;nyilatkozatok &gt;áfa &gt;rendezésére és a forgalmi adót könyveli.)
+4.  Amikor az áfa kifizetése esedékes az adóhatóság felé, megnyitja az Adók kiegyenlítése és feladása lapot. (Rákattint az Adó &gt; Bevallások &gt; Áfa &gt; Áfa kiegyenlítése és feladása pontra.)
 5.  Az áfakiegyenlítési számlán az adókötelezettség, amely 98.765,43, 98.765-re lesz kerekítve.
 
 Az alábbi táblázat bemutatja, hogyan kerekítjük a 98.765,43 összeget az egyes kerekítési módok használatával az Adóhatóságok lapon, a Kerekítési képernyő mezőjében.
@@ -56,11 +59,13 @@ Az alábbi táblázat bemutatja, hogyan kerekítjük a 98.765,43 összeget az eg
 | Lefelé                            | 98.765,43              | 98.765,40              | 98,765.00              | 98.700,00                |
 | Felkerekítés                         | 98.765,43              | 98.765,50              | 98.766,00              | 98.800,00                |
 | Saját előny, egy követel egyenleghez | 98.765,43              | 98.765,40              | 98.765,00              | 98.700,00                |
-| Saját előny, egy tartozik egyenleghez  | 98.765,43              | 98.765,50              | 98.766,00              | 98.800,00                |
+| Saját előny, egy tartozik egyenleghez  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
 
 > [!NOTE]                                                                                  
 > Saját előny választása esetén a kerekítés mindig a jogi személy előnyére történik. 
 
-További tudnivalókért lásd: [áfa – áttekintés](indirect-taxes-overview.md). 
+A további tudnivalókat lásd: [Áfa áttekintése](indirect-taxes-overview.md). 
+
+
 
 

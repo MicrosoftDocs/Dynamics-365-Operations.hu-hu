@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="acquire-assets-through-procurement"></a>Eszközök vételezése beszerzésen keresztül
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat.
 
  A Tárgyi eszközök és a Kötelezettségek modul integrálására a következő módszerek állnak rendelkezésre; minden tárgyi eszköz esetében ugyanazt a módszert kell alkalmazni:
@@ -103,6 +106,8 @@ Az alábbiak az előző helyzet variációi:
 -   Ha a mennyiségnek csak egy része érkezik meg, az első szállítói számlához a felhasználói csoport korlátozásai miatt nem jön létre eszközbeszerzés. Beszerzés feladására egyedül a megrendelt mennyiséget teljesítő második szállítói számlához van mód, amennyiben az első szállítói számlához megtörtént a beszerzési tranzakció megadása, és a felhasználó tagja a beszerzések feladására engedélyezett felhasználói csoportnak.
 
 
-További tudnivalókért lásd: [tárgyi eszközök integráció](fixed-asset-integration.md).
+További tudnivalókért lásd: [Tárgyieszköz-integráció](fixed-asset-integration.md).
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Gyakran feltett kérdések a termékkel kapcsolatos fordítások"
+title: "Termékekkel kapcsolatos GYIK"
 description: "Ez a témakör ismerteti, hogyan kell kezelni a termékek, termékdimenzió értékek és termékattribútumok fordításait."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-related-translations-faq"></a>Gyakran feltett kérdések a termékkel kapcsolatos fordítások
+# <a name="product-related-translations-faq"></a>Termékekkel kapcsolatos GYIK
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör ismerteti, hogyan kell kezelni a termékek, termékdimenzió értékek és termékattribútumok fordításait. 
 
@@ -43,27 +46,27 @@ A termékkel kapcsolatos információkat bármely – a **Szöveg fordítása** 
 ## <a name="where-can-i-view-the-translated-information"></a>Hol tekinthetem meg a lefordított információkat?
 A termékkel kapcsolatos információk fordításait bármilyen külső forrásbizonylaton, például egy számlán megtekintheti, ami olyan nyelvet használ, amelyre rendelkezésre állnak fordítások.
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Hogyan productrelated információt a fordítások létre?
+## <a name="how-do-i-create-translations-for-productrelated-information"></a>Hogyan hozható létre fordítás termékkel kapcsolatos információból?
 A termék-fordítások létrehozásához tegye a következőket:
-1.  Kattintson a **Termékinformációk kezelése**&gt;**közös**&gt;**, amely a termékek**.
-2.  Válasszon ki egy terméket, és a műveletek ablaktábla a a **nyelv** csoport, kattintson a **fordítások**.
-3.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadása, bontsa ki a **nyelv** mezőben, és kattintson a **OK**.
+1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Kiadott termékek** lehetőségre.
+2.  Válasszon ki egy terméket, majd a Műveleti ablaktáblapontban a **Nyelvek** csoportban kattintson a **Fordítások** lehetőségre.
+3.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadásához bontsa ki a **Nyelv** mezőt, majd kattintson az **OK** lehetőségre.
 4.  A **Lefordított szöveg** csoportban adja meg a fordításokat a **Leírás** és a **Termék neve** mezőkben.
 
 A termékattribútum-fordítások létrehozásához tegye a következőket:
-1.  Kattintson a **Termékinformációk kezelése**&gt;**közös**&gt;**, amely a termékek**.
+1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Kiadott termékek** lehetőségre.
 2.  A **Beállítás** pontban kattintson az **Attribútumok** lehetőségre, majd kattintson az **Attribútumok** pontra.
 3.  A **Attribútumok** lapon kattintson a **Fordítás** lehetőségre.
-4.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadása, bontsa ki a **nyelv** mezőben, és kattintson a **OK**.
+4.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadásához bontsa ki a **Nyelv** mezőt, majd kattintson az **OK** lehetőségre.
 5.  A **Lefordított szöveg** csoportban adja meg a fordításokat a **Leírás**, a **Rövid név** és a **Súgószöveg** mezőkben.
 
 Termékdimenzió-értékek létrehozásához tegye a következőket:
-1.  Kattintson a **Termékinformációk kezelése**&gt;**közös**&gt;**, amely a termékek**.
+1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Kiadott termékek** lehetőségre.
 2.  Válasszon ki egy terméket, majd kattintson a **Termékdimenziók** elemre.
 3.  Válasszon egyet a termékdimenziók linkjei közül: **Konfigurációk**, **Méretek**, **Színek** vagy **Stílus**.
 4.  Válasszon egy dimenzióértéket, majd kattintson a **Fordítás** elemre.
-5.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadása, bontsa ki a **nyelv** mezőben, és kattintson a **OK**.
-6.  A a **lefordított szöveg** csoport, a fordítások adja meg a **neve** és **leírás** mezők.
+5.  A **Szöveg fordítása** lapon a **Nyelv** mezőben válasszon egy nyelvet. További nyelvek hozzáadásához bontsa ki a **Nyelv** mezőt, majd kattintson az **OK** lehetőségre.
+6.  A **Lefordított szöveg** csoportban adja meg a fordításokat a **Név** és a **Leírás** mezőkben.
 
 ## <a name="can-the-names-of-product-variants-be-translated"></a>Le lehet fordítani termékváltozatok nevét?
 Termékváltozatok egy kiadott termék dimenzióin alapulnak. A termékváltozatok nevei dimenzióértékek kombinációján alapulnak. Amikor a termékváltozattal társított dimenzióértékek le vannak fordítva, a termékváltozat neve megjelenik a lefordított változatban.  
@@ -71,28 +74,28 @@ Termékváltozatok egy kiadott termék dimenzióin alapulnak. A termékváltozat
 **Példa**  
 
 Az Ön terméke egy póló, amely különböző méretű és színű változatokban áll rendelkezésre, a változatok nevei a következő részleteken alapulnak:
--   Termékszám: \#3
+-   Termékszám:\#3
 -   Dimenziók: méret és szín
 -   Méretdimenzió-értékek méret: kicsi, közepes, nagy
 -   Színdimenzió-értékek: piros, zöld, fekete
 
-A dimenzió alapján termékváltozat neve kis értékeket, és vörös **\#3:Small:Red**.  
+A Kicsi és Piros dimenzióértékeken alapuló termékváltozat neve **\#3:Small:Red**.  
 
-Ha a vevő meg kíván vásárolni néhány kis méretű, piros pólót, a póló nevének francia nyelven kell szerepelnie a számlán. Kicsi és vörös, a dimenzió értékek francia lefordítása, és a termékváltozat neve **\#3: Petit: Rouge**.
+Ha a vevő meg kíván vásárolni néhány kis méretű, piros pólót, a póló nevének francia nyelven kell szerepelnie a számlán. A dimenzióértékeket – a Kicsit és a Pirosat – le kell fordítani franciára, a termékváltozat neve pedig **\#3:Petit:Rouge**.
 <table>
 <colgroup>
 <col width="100%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Tip</strong></th>
+<th><strong>Tipp</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Az ügyfél által kívánt nyelv beállításához kövesse az alábbi lépéseket:
 <ol>  
-<li>Kattintson a <strong>az értékesítési és</strong>&gt;<strong>közös</strong>&gt;<strong>vevők</strong>&gt;<strong>minden</strong> <strong>vevők</strong>.</li>
+<li>Kattintson a következő pontokra: <strong>Értékesítés és marketing</strong> &gt; <strong>Közös</strong> &gt; <strong>Vevők</strong> &gt; <strong>Minden</strong> <strong>vevő</strong>.</li>
 <li>A <strong>Vevők</strong> lap megnyitásához kattintson duplán egy vevőre. Az <strong>Általános</strong> lap <strong>Nyelv</strong> mezőjében válassza ki a <strong>nyelvet</strong>.</li>
 </ol></td>
 </tr>
@@ -105,23 +108,25 @@ Ha az ügyfél által megkívánt nyelven nem érhetők el fordítások, a nevek
 ## <a name="can-i-manage-translations-for-a-series-of-dimension-values-at-the-same-time"></a>Van-e lehetőség dimenzióértékek sorozata fordításainak egyszerre történő kezelésére?
 A dimenzióértékek termékspecifikusak, így minden egyes termék dimenzióértékeihez tartozó fordítást kezelhet. Bár, ha dimenzióérték-csoportot hoz létre és az értékcsoportban az értékekhez fordításokat rendel, könnyebben kezelheti a fordításokat.   
 
-**Example**  
+**Példa**  
 
 Vállalata különböző stílusú pólókat gyárt, és minden stílus Kicsi, Közepes és Nagy méretben áll rendelkezésre. A méretek összegyűjtése egy dimenzióérték-csoportban történik. Új pólóstílus hozzáadásakor társíthatja azt a méretekhez használt dimenzióérték-csoporttal, hogy a termékhez minden méret elérhető legyen. A dimenzióérték-csoport méreteihez bármikor hozzáadhat fordításokat vagy módosíthatja azokat.  
 
 Termékkel dimenzióváltozat-csoporton keresztül társított dimenzióértéket a termékváltozat-csoportban tud karbantartani.   
 Dimenzióérték-csoport létrehozásához tegye a következőket:
-1.  Kattintson a **Termékinformációk kezelése**&gt;**a telepítő**&gt;**Változatcsoportok**.
+1.  Kattintson a **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Változatcsoportok** lehetőségre.
 2.  Válasszon a **Méret****csoportok**, **Színcsoportok** vagy **Stíluscsoportok** közül.
-3.  Kattintson a **új**, és írjon be egy nevet a csoport a **méretét****csoport**, **színcsoport**, vagy **stíluscsoport** mezőben. Kattintson a **Méretek**, **Színek** vagy **Stílusok** lehetőségre sorok csoportokban történő létrehozásához.
-4.  A a **méretét****csoport** sorok, **szín****csoport****sorok**, vagy **stílus csoportokhoz vezető vonalak** lap **új**, majd hozza létre a méretek, színek és stílusok a csoportok.
+3.  Kattintson az **Új** lehetőségre, és írjon be egy csoportnevet a **Méret** **csoport**, **Színcsoport** vagy **Stíluscsoport** mezőbe. Kattintson a **Méretek**, **Színek** vagy **Stílusok** lehetőségre sorok csoportokban történő létrehozásához.
+4.  A **Méret** **csoport** sorok, **Szín** **csoport** **sorok** vagy **Stílus csoportsorok** lapon kattintson az **Új** lehetőségre, majd hozza létre a csoportokban használandó méreteket, színeket és a stílusokat.
 
 Az értékek fordításainak dimenzióérték-csoportban történő kezeléséhez kövesse az alábbi lépéseket:
 1.  Kövesse az előző – dimenzióérték-csoportot létrehozó – eljárás lépéseit a **Méretcsoportsorok**, a **Színcsoportsorok** vagy a **Stíluscsoportsorok** lap megnyitásához.
-2.  Kattintson a **Szöveg fordítása** lehetőségre. A a **szöveg fordítása** a lap a **lefordított szöveg** csoport, adja meg a fordítások a **neve** és **leírás** mezők.
+2.  Kattintson a **Szöveg fordítása** lehetőségre. A **Szöveg fordítása** lapon a **Lefordított szöveg** csoportban adja meg a fordításokat a **Név** és a **Leírás** mezőkben.
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Amikor productrelated információk fordítások kezelhető?
+## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Mikor módosíthatók a termékkel kapcsolatos információk fordításai?
 A termékkel kapcsolatos információk fordításai bármikor módosíthatók. Termékhez társított dimenzióérték fordításainak frissítésekor a termék-információ attól függetlenül frissül, hogy a termékhez tartoznak-e tranzakciók.
+
+
 
 
 

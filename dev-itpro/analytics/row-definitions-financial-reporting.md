@@ -45,7 +45,7 @@ Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az
 Egy sordefiníció legfeljebb 20 000 pénzügyidimenzió-sort és a következő információkat tartalmazhatja:
 
 -   Leíró szöveget, amely értelmet ad a jelentésnek szakaszcímek, sorok és terek létrehozásával, például **Készpénz** vagy **Teljes bevétel**
--   Pénzügyi adatok, amelyek tartalmazhatnak hivatkozásokat dimenzió érték a Microsoft Dynamics 365 műveletek **Megjegyzés:** állíthat be a sordefiníció lekéréses adatok a pénzügyi dimenziók rendszer, amely a jelentés készül minden alkalommal.
+-   Pénzügyi adatokra mutató hivatkozásokat, amelyek tartalmazhatnak a Microsoft Dynamics 365 for Operations programban szereplő dimenzióértékeket **Megjegyzés:** Beállíthat egy sordefiníciót, hogy adatokat kérjen le a pénzügyi dimenziókból minden alkalommal amikor a jelentés létrejön.
 -   Sorösszegeket és képleteket, amik a hivatkozott pénzügyi adatokon alapulnak.
 
 Általában minden sordefiníció tartalmaz egyet a következő információtípusok közül:
@@ -64,7 +64,7 @@ Egy dimenzió az adatok és értékek egy metszete. Adat- és jelentéstervező 
 
 | Lehetőség                | Leírás                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimenzió             | A szabály, amely azonosítja a sordimenzióhoz adandó dimenziót. A minta tartalmaz egy ampersand (&) vagy a kettős keresztet (\#) a dimenziók minden pozícióhoz. Általában használjon kizárólag jeleket a Fő számlához és kizárólag számokat a többi dimenzióhoz. |
+| Dimenzió             | A szabály, amely azonosítja a sordimenzióhoz adandó dimenziót. Ez a szabály tartalmaz egy és-jelet (&), vagy egy kettős kereszt jelet (\#), minden pozícióhoz a dimenziókban. Általában használjon kizárólag jeleket a Fő számlához és kizárólag számokat a többi dimenzióhoz. |
 | Dimenziótartomány kezdete | Az első érték, amely ebből a dimenzióból a sordefinícióhoz adandó.                                                                                                                                                                                                                 |
 | Dimenziótartomány vége   | Az utolsó érték, amely ebből a dimenzióból a sordefinícióhoz adandó.                                                                                                                                                                                                                  |
 
@@ -73,9 +73,9 @@ Dimenziók hozzáadásához a sordefiníciókhoz végezze el a következő lép�
 1.  A Jelentéstervezőben kattintson a **Sordefiníciók** lehetőségre, majd nyissa meg a sordefiníciót, hogy módosítsa.
 2.  A **Szerkesztés** menüben kattintson a **Sorok beszúrása dimenziókból** elemre.
 3.  A **Sorok beszúrása dimenziókból **párbeszédpanelen a **Dimenziók** sorban, jelölje ki a dimenzióból a sordefinícióba átvinni kívánt cellát, majd kattintson az **Összes &&&** elemre.
-4.  Hogy korlátozza a sordefiníciót a dimenzióértékek egy adott tartományára, adja meg a kezdő dimenzióértéket a ** Dimenziótartomány kezdete **cellában, majd adja meg a záró dimenzióértéket a **Dimenziótartomány vége** cellában. Ha a kiválasztott dimenzió minden értéket szerepeltetni akarja, hagyja üresen a cellákat. **Megjegyzés:** helyettesítő karakterek (\* vagy?) dimenzió tartományok esetenként nem adják vissza az eredményeket, hogy azt szeretné, attól függően, hogy milyen sorrendbe állítja az ERP adatbázis az adatok.
+4.  Hogy korlátozza a sordefiníciót a dimenzióértékek egy adott tartományára, adja meg a kezdő dimenzióértéket a ** Dimenziótartomány kezdete **cellában, majd adja meg a záró dimenzióértéket a **Dimenziótartomány vége** cellában. Ha a kiválasztott dimenzió minden értéket szerepeltetni akarja, hagyja üresen a cellákat. **Megjegyzés:** A dimenziótartományban szereplő helyettesítő karakterek (\* vagy ?) esetén előfordulhat, hogy a kívánt eredmények nem kerülnek visszaküldésre, attól függően, hogy az ERP adatbázis hogyan egyezteti az adatokat.
 5.  Adjon meg egy értéket a **Kezdő sorkód** mezőben, hogy megadja a sordefinícióhoz adandó, első dimenzióértékhez tartozó sorkódot.
-6.  Adjon meg egy értéket a **Sorok növekménye** mezőben, hogy megadja az egymást követő sorkódok közötti rést. Például ha az első sor kódot 100, és a növekmény értéke 30, az első új sorok vannak a kódok 100, 130, 160, 190 és 220. Használja a növekmény értékét formázás és képlet új sorok beszúrása elegendő helyet biztosít.
+6.  Adjon meg egy értéket a **Sorok növekménye** mezőben, hogy megadja az egymást követő sorkódok közötti rést. Például, ha az első sorkódot 100, és a növekményértéke 30, akkor az első új sorok kódjai rendre 100, 130, 160, 190 és 220. Használjon olyan növekményértéket, amely elég helyet biztosít új formátum és receptúra sorok beszúrásához. Használjon olyan növekményértéket, amely elég helyet biztosít új formátum és receptúra sorok beszúrásához.
 7.  Kattintson az **OK** gombra. Minden kijelölt dimenzióérték után egy sor adódik a sordefinícióhoz.
 
 ## <a name="adjust-rounding-in-a-row-definition"></a> Kerekítés beállítása egy sordefinícióban
@@ -146,7 +146,7 @@ A sordefinícióban meghatározott formázás felülír minden formázást, amel
 
 1.  Nyissa meg a módosítandó sordefiníciót a jelentéstervezőben.
 2.  Válassza ki a formázandó cellákat. Több cella kijelöléséhez tartsa lenyomva a Ctrl gombot, amíg kijelöli a cellát.
-3.  Kattintson a formátum eszköztári gombjára, hogy alkalmazza. Például egy sor behúzásához jelölje ki a sort, és kattintson a **Behúzás növelése**![Behúzás növelése](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Behúzás növelése") az eszköztáron.
+3.  Kattintson a formátum eszköztári gombjára, hogy alkalmazza. Például, egy sor behúzásához jelölje ki a sort, és kattintson a Behúzás növelése **Behúzás növelése** ![Behúzás növelése](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "") („Behúzás növelése”) elemre az eszköztárban.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Oszlopok beállítása a jelentések tervezése közben
 
@@ -173,6 +173,6 @@ Hogy megkönnyítse azon oszlopok áttekintését, amelyeken a sordefinícióban
 <a name="see-also"></a>Lásd még
 --------
 
-[Pénzügyi beszámolás Microsoft Dynamics 365 műveletek](financial-reporting-intro.md)
+[Pénzügyi jelentéskészítés a Microsoft Dynamics 365 for Operations rendszerben](financial-reporting-intro.md)
 
 

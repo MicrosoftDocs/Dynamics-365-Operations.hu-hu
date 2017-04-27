@@ -1,6 +1,6 @@
 ---
-title: "Áfatételjegyzék-tranzakciók a kelet-európai"
-description: "Ez a témakör információt az Észtország, Litvánia, Cseh Köztársaság, Magyarország, Lettország és Lengyelország Áfatételjegyzék-tranzakciók."
+title: "Áfatételjegyzék-tranzakciók (Kelet-európa)"
+description: "Ez a témakör az Észtország, Litvánia, Csehország, Magyarország, Lettország és Lengyelország esetén használt áfatételjegyzék-tranzakciókhoz tartalmaz információkat."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,10 +25,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vat-register-transactions-for-eastern-europe"></a>Áfatételjegyzék-tranzakciók a kelet-európai
+# <a name="vat-register-transactions-for-eastern-europe"></a>Áfatételjegyzék-tranzakciók (Kelet-európa)
 
-Ez a témakör információt az Észtország, Litvánia, Cseh Köztársaság, Magyarország, Lettország és Lengyelország Áfatételjegyzék-tranzakciók. 
+[!include[banner](../includes/banner.md)]
 
-Az Észtország, Litvánia, Cseh Köztársaság, Magyarország, Lettország és Lengyelország elsődleges címmel rendelkező jogalanyok adótranzakciók felülvizsgálja és korszerűsíti a **az áfatételjegyzék dátuma** azokat. Az Áfatételjegyzék-tranzakciók megtekintéséhez nyissa meg a **adó**&gt;**időszakos feladatok**&gt;**Áfatételjegyzék-tranzakciók**. Ezen a lapon látható típusú adókódok alapján létrehozott tranzakciók **normál áfa**, amelynek a **az áfatételjegyzék dátuma** üres. Kitöltheti a **az áfatételjegyzék dátuma** mező adó tranzakciókhoz a **az áfatételjegyzék dátuma** gombja a **főmenü**. A jogi személy elsődleges cím a Cseh Köztársaságból, van egy további oszlopot, **halasztott ÁFÁT**. Ha ez a mező be van jelölve ez azt jelzi, hogy a hozzáadottérték-adó nem jelentett a tranzakcióhoz. Általában ez érvényes eladási jóváírások váró megerősítése a vevőtől. Az eladási számla könyvelési folyamat során is jelölje be ezt a jelölőnégyzetet. A a **Áfakódok** lap (**adó**&gt;**áfa**&gt;**Áfakódok**), itt tekintheti meg és frissítheti a forgalmi adó kódja típus. <!---For more information about sales tax codes, refer to [Set up sales tax codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/).-->
+
+Ez a témakör az Észtország, Litvánia, Csehország, Magyarország, Lettország és Lengyelország esetén használt áfatételjegyzék-tranzakciókhoz tartalmaz információkat. 
+
+Az Észtország, Litvánia, Csehország, Magyarország, Lettország és Lengyelország területén elsődleges címmel rendelkező jogalanyok esetén felülvizsgálhatók az adótranzakciók és frissíthető náluk az **Áfatételjegyzék dátuma**. Az Áfatételjegyzék-tranzakciók megtekintéséhez nyissa meg az **Adó** &gt; **Időszakos feladatok** &gt; **Áfatételjegyzék-tranzakciók** elemet. Ezen a lapon láthatók azon adótranzakciók, amelyek **Normál áfa** áfakóddal jöttek létre, amelyeknél az **Áfatételjegyzék dátuma** üres. Az **Áfatételjegyzék dátuma** mező az adótranzakciókhoz a **Főmenü** **Áfatételjegyzék dátuma** gombjával tölthető ki. Azon jogi személyeknél, amelyek elsődleges címe Csehországban van, van egy további oszlop: **Halasztott áfa**. Ha ez a mező be van jelölve, ez azt jelzi, hogy áfa bejelentésére a tranzakciónál nem került sor. Általában ez azon értékesítési jóváírásokra érvényes, amelyek megerősítésre várnak a vevőtől. A jelölőnégyzet az eladási számla könyvelési folyamata során jelölhető be. Az **Áfakódok** lapon (**Adó** &gt; **Áfa** &gt; **Áfakódok**) megtekintheti és frissítheti az áfakód típusát. <!---For more information about sales tax codes, refer to [Set up sales tax codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/).-->
+
+
 
 

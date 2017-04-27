@@ -85,6 +85,6 @@ További információkért lást az „Interaktív összetevők és navigációs
 
 #<a name="see-also"></a>Lásd még
 
-[Pénzügyi jelentés készítése] ((dynamics365\operations\financials\general-ledger\generate-pénzügyi-jelentés)
+[Pénzügyi jelentés készítése]((dynamics365\operations\financials\general-ledger\generate-financial-report)
 
 

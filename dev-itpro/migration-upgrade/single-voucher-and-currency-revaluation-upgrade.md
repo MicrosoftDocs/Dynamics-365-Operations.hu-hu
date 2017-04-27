@@ -1,6 +1,6 @@
 ---
-title: "Egy bizonylat- és árfolyam-korrekció frissítése Microsoft Dynamics 365 műveletek 1611-es verziójához"
-description: "Néhány szervezet adja meg a naplók, amelyekben a bizonylat egynél több vevőhöz vagy szállítóhoz van, és is futtathatja a Kinnlevőségek vagy számlák külföldi pénznemben fizetendő átértékelési eljárás. Ez a témakör a következő lépések e szervezetek kell műveletek verzió 1611 azok rendszerre Microsoft Dynamics 365."
+title: "Egyetlen bizonylatos és pénznemes értékelési frissítés a Microsoft Dynamics 365 for Operations 1611-es verziójához"
+description: "Egyes szervezetek olyan naplókat adnak meg, amelyek egynél több ügyféllel vagy szállítóval rendelkező bizonylatot tartalmaznak, valamint a Kinnlevőségek és a Kötelezettségek devizaátértékelési folyamatát is. Ez a témakör bemutatja azokat a lépéseket, amelyeket ezeknek a szervezeteknek követniük kell, amikor frissítenek a Microsoft Dynamics 365 for Operations 1611-es verziójára."
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-28 16 - 04 - 17
@@ -24,15 +24,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Egy bizonylat- és árfolyam-korrekció frissítése Microsoft Dynamics 365 műveletek 1611-es verziójához
+# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Egyetlen bizonylatos és pénznemes értékelési frissítés a Microsoft Dynamics 365 for Operations 1611-es verziójához
 
-Néhány szervezet adja meg a naplók, amelyekben a bizonylat egynél több vevőhöz vagy szállítóhoz van, és is futtathatja a Kinnlevőségek vagy számlák külföldi pénznemben fizetendő átértékelési eljárás. Ez a témakör a következő lépések e szervezetek kell műveletek verzió 1611 azok rendszerre Microsoft Dynamics 365.
+Egyes szervezetek olyan naplókat adnak meg, amelyek egynél több ügyféllel vagy szállítóval rendelkező bizonylatot tartalmaznak, valamint a Kinnlevőségek és a Kötelezettségek devizaátértékelési folyamatát is. Ez a témakör bemutatja azokat a lépéseket, amelyeket ezeknek a szervezeteknek követniük kell, amikor frissítenek a Microsoft Dynamics 365 for Operations 1611-es verziójára.
 
-Amikor Microsoft Dynamics 365 műveletek verzió 1611 frissít, kövesse az alábbi lépéseket.
+Kövesse ezeket a lépéseket, amikor frissít a Microsoft Dynamics 365 for Operations 1611-es verziójára.
 
-1.  Dynamics 365 műveletekhez való frissítése előtt futtassa a deviza-átértékelési folyamatok a Kinnlevőségek és kötelezettségek. Állítsa be a **metódus** mező **számladátum**. Újraértékelési tranzakció jön létre, amely az utolsó árfolyam-korrekció visszavonása. Emiatt a nyitott tranzakciókat lehet értékelni az eredeti pénznem.
-2.  Dynamics 365 1611 műveletek verzió frissítése.
-3.  Futtassa újra a Kinnlevőségek és a fiókok külföldi pénznemben fizetendő átértékelési folyamatokat. Ez az idő beállítása a **metódus** mező **Standard**. Új átértékelés tranzakció jön létre, amely az aktuális árfolyamokkal. Ez a tranzakció nem realizált nyereség/veszteség és a megfelelő összesített főkönyvi számláján rögzíti.
+1.  A Dynamics 365 for Operations frissítése előtt futtassa le a devizaátértékelés folyamatait a Kinnlevőségeknél és a Kötelezettségeknél. A **Módszer** mezőben állítsa be a **Számla dátuma** értéket. Átértékelési tranzakció jön létre, amely visszaállítja a legutóbbi devizaátértékelést. Emiatt a nyitott tranzakciók értékelése az eredeti könyvelési pénznemben történik.
+2.  Frissítsen a Dynamics 365 for Operations 1611-es verziójára.
+3.  Futtassa le újra a devizaátértékelés folyamatait a Kinnlevőségeknél és a Kötelezettségeknél. Ekkor állítsa a **Módszer** mezőt **Normál** értékre. Új átértékelési tranzakció jön létre, amelynek alapját a jelenlegi átváltási árfolyamok jelentik. Ez a tranzakció rögzíti a nem realizált nyereséget/veszteséget és a megfelelő összefoglaló főkönyvi számlát.
 
 
 

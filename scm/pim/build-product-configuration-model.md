@@ -1,5 +1,5 @@
 ---
-title: "Konfigurációs termékmodell összeállítása"
+title: "Termékkonfigurációs modell építése"
 description: "A speciális követelmények kielégítése érdekében a termék konfigurálásához szükséges egyre helyett a vállalkozások-, mind az egyéni üzleti kapcsolatok, a kivétel a szabály."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="build-a-product-configuration-model"></a>Konfigurációs termékmodell összeállítása
+# <a name="build-a-product-configuration-model"></a>Termékkonfigurációs modell építése
+
+[!include[banner](../includes/banner.md)]
+
 
 A speciális követelmények kielégítése érdekében a termék konfigurálásához szükséges egyre helyett a vállalkozások-, mind az egyéni üzleti kapcsolatok, a kivétel a szabály.
 
@@ -34,7 +37,7 @@ Egy gyártó vállalat, amely konfigurálása rendelésre helyzet kezelésére a
 
 Egy rendelésre beállítása-beállítást a raktárra gyártás beállításaiból sikeres áthelyezési szükséges a termékszerkezetek gondos elemzésének, termék családjai és componentization azonosítása. Részek számának csökkentésével lehetséges, és a folyamatban lévő áruk a lehető legkevesebb, nagyon fontos a termék interfészek tudomásul, és ő tervezi újrahasznosításának tartozó.  
 
-Nincsenek több termék konfigurációs modellezési elvek, például a dimenzión alapuló szabály alapú, és a megszorításon alapuló modellezési. Tanulmányok a megszorításon alapuló módszerre egyéb modellezési elvek összehasonlítva körülbelül 50%-kal csökkentheti modellek kód sorok számának megjelenítése. Ezért ez a módszer csökkentheti a tulajdonosi (TCO) teljes költségét. Szabály alapú modell, amely a korlát-alapú modell X ++ kód alapján mozgatásával már nincs szüksége a fejlesztői licenc Termékmodellek fenntartása érdekében.
+Nincsenek több termék konfigurációs modellezési elvek, például a dimenzión alapuló szabály alapú, és a megszorításon alapuló modellezési. Tanulmányok a megszorításon alapuló módszerre egyéb modellezési elvek összehasonlítva körülbelül 50%-kal csökkentheti modellek kód sorok számának megjelenítése. Ezért ez a módszer csökkentheti a tulajdonosi (TCO) teljes költségét. Az X++ kódon alapuló szabályalapú modellről a megszorításokon alapuló modellre való átéréssel már nincs szüksége fejlesztői licencre a termékmodellek karbantartásához.
 
 ## <a name="product-configuration"></a>Termékkonfiguráció
 A iparosítási időszak árú kiváló minőségű és a szolgáltatás-multimédiás termékek előállításában nagy teljesítmények vezetett. A nagyságrendi teszik lehetővé beszerezni autók, televízió, háztartási és egyéb áruk, hogy többsége figyelembe kell venni a mindennapi élettartam fontos szerepet a iparosodott világ legtöbb felhasználó számára.  
@@ -64,11 +67,11 @@ A megszorításon alapuló termékkonfigurációs modell használatát, az azt j
 
 ### <a name="table-constraints"></a>Táblamegszorítások
 
-A táblamegszorításokban felhasználói vagy rendszer által definiált is lehet.  
+A táblázatok megszorításai felhasználó által definiáltak vagy rendszer definiáltak is lehetnek.  
 
 A felhasználó által a felhasználó által definiált táblamegszorítás épül fel. A felhasználó választja ki, amely megadja annak a táblának az oszlopok Attribútumtípusok kombinációja, és ezután beírja az értékeket a tartományok, a kijelölt attribútum típusú alakítson ki a sorokat a táblamegszorításban.  
 
-A rendszer által definiált táblamegszorítás melyik Microsoft Dynamics 365, műveletek tábla hivatkozásként használandó kijelölésével, és kiválasztja az ebben a táblában a korláttal oszlopokból származó mezők határozzák meg. A táblamegszorítás sorai a Dynamics 365 műveletek tábla konfigurációs jelen sorok.  
+A rendszer által definiált táblamegszorítás meghatározásához ki kell választani, mely Microsoft Dynamics 365 for Operations-táblát kívánja referenciaként használni, majd ebből a táblából ki kell választani a megszorítás oszlopait adó mezőket. A táblamegszorítás sorai a Dynamics 365 for Operations-tábla a konfiguráció időpontjában meglévő sorai.  
 
 Táblamegszorítás egy termékkonfigurációs modell a Táblamegszorítás oszlopai hivatkozásoknak a táblamegszorítás definíciójának és a modellben a megfelelő attribútumokat tartalmazza.
 
@@ -103,7 +106,7 @@ Végül a teljes termékkonfigurációs modell ellenőrzése a teljes szintaxis�
 
 ### <a name="testing"></a>Tesztelés
 
-A modell tesztelése hasonlít egy tényleges konfigurációs munkamenet futtatása. A felhasználó a konfigurációs lapokból útmutatót és ellenőrizze, hogy a szerkezeti modell támogatja a konfigurálási folyamatot. A felhasználó ellenőrizni tudja, hogy helyesen-e a termékattribútum-értékeit, és az attribútumok leírása végigvezeti a felhasználót, jelölje be a megfelelő értékeket az, hogy. Végül a vizsgálati munkamenet befejezése után a rendszer megpróbálja létrehozni az Anyagjegyzék és az útvonal, amely megfelel a kiválasztott termékattribútum-értékeit, és egy hibaüzenet jeleníti meg, ha bármilyen hiba történne.
+A modell tesztelése hasonlít egy tényleges konfigurációs munkamenet futtatására. A felhasználó végigmehet a konfigurációs lapokon, és ellenőrizheti, hogy a szerkezeti modell támogatja-e a konfigurálási folyamatot. A felhasználó ellenőrizni tudja, hogy helyesen-e a termékattribútum-értékeit, és az attribútumok leírása végigvezeti a felhasználót, jelölje be a megfelelő értékeket az, hogy. Végül a vizsgálati munkamenet befejezése után a rendszer megpróbálja létrehozni az Anyagjegyzék és az útvonal, amely megfelel a kiválasztott termékattribútum-értékeit, és egy hibaüzenet jeleníti meg, ha bármilyen hiba történne.
 
 ### <a name="the-configuration-page"></a>Konfiguráció oldal
 
@@ -129,17 +132,17 @@ Az eladandó különböző országokban/régiókban alkalmazható, ha a konfigur
 A legutóbbi és legfontosabb lépés a véglegesítési folyamatban a termékkonfigurációs modell verzió létrehozásához. A verzió jeleníti meg az alapterméket, amelyen kiválaszthatók a rendelésen, vagy az ajánlati sor konfigurációs, és a termékkonfigurációs modell közötti kapcsolatot. Az anyagverziót az indítás és a használat előtt jóvá kell hagyni.
 
 ## <a name="extending-a-product-configuration-model-through-the-api"></a>A termékkonfigurációs modell az API-k kiterjesztése
-Egy dedikált alkalmazási programozási felület (API), így a partnerek és egyéb fejlesztői licenccel rendelkező bővíthetők az egy termékkonfigurációs modell jellemzőinek hajtották végre. A fő cél egy olyan mechanizmus, amely most partnereinek és ügyfeleinek, akik használják a meglévő Termékszerkesztő át a Product Builder modellek az API-nak beágyazott kód létrehozása megtörtént. Ezzel a módszerrel azokat is át a modellek Termékszerkesztő a termék konfigurációja. Új partnerek és a vevők is is előnyös az API segítségével új termékkonfigurációs modellek kiterjeszteni.
+Egy dedikált alkalmazási programozási felület (API), így a partnerek és egyéb fejlesztői licenccel rendelkező bővíthetők az egy termékkonfigurációs modell jellemzőinek hajtották végre. A fő cél egy olyan mechanizmus létrehozása, amely lehetővé teszi a meglévő Termékszerkesztőt használó partnerek és ügyfelek számára a Termékszerkesztő modelljeibe beágyazott kódok migrálását az API-ba. Ezzel a módszerrel azokat is át a modellek Termékszerkesztő a termék konfigurációja. Új partnerek és a vevők is is előnyös az API segítségével új termékkonfigurációs modellek kiterjeszteni.
 
 ### <a name="pcadaptor-class"></a>PCAdaptor osztály
 
-Az API számos által megvalósított **PCAdaptor** osztályok, amelyek teszik elérhetővé a termékkonfigurációs modellek az adatszerkezet. Egy példányát a **PCAdaptor** osztály kell létrehozni minden egyes modell, hogy ki lesz terjesztve. A konfigurációs munkamenet befejezése után a rendszer ellenőrzi, hogy ez az osztály egy példányát, és fut, ha kiderül.  
+Az API számos által megvalósított **PCAdaptor** osztályok, amelyek teszik elérhetővé a termékkonfigurációs modellek az adatszerkezet. A **PCAdaptor** osztály egy példányát létre kell hozni minden egyes modellhez, amely ki lesz terjesztve. A konfigurációs munkamenet befejezése után a rendszer ellenőrzi, hogy fut-e ezen osztály egy példánya, és hogy megtalálható-e.  
 
 A következő folyamatábra a folyamatot ismerteti.  
 
-[![Adatfolyam-diagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
+[![Folyamatábra](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
-Folyamatábra a termék konfigurációs API
+Termékkonfigurációs API folyamatábrája
 
 ## <a name="product-configuration"></a>Termékkonfiguráció
 Termékkonfiguráció is elvégezhető a következő helyről:
@@ -155,5 +158,7 @@ A konfiguráció az a célja, hogy hozzon létre egy külön változat a termék
 ### <a name="multiple-sites-and-intercompany"></a>Többszörös helyek és a vállalatközi
 
 Ha a beállítás történik, a hely vagy akár egy vállalat, amely eltér a hely vagy vállalat, ahol a termelési sor fog kerülni, az Anyagjegyzék és az útvonal lesz kell létrehozni, és a szállító helyén a szállító vállalatnál. A termékváltozat vesznek részt az ellátási lánc minden vállalatban kiadja a rendszer.
+
+
 
 

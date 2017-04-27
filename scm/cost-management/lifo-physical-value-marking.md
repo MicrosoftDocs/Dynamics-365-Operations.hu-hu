@@ -42,7 +42,7 @@ Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
@@ -55,21 +55,21 @@ Az új, mozgóátlagon alapuló önköltségi ár, a pénzügyileg frissített t
 -   A készlettranzakciókat függőleges nyilak jelölik.
 -   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 -   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   A fenti (vagy alatt) formátumban megadott minden egyes függőleges nyíl, a készlet-tranzakció értékének Quantity@Unitár.
+-   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unit formátumban.
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="lifo-with-the-include-physical-value-option"></a>LIFO a Tényleges értékkel együtt beállítással
-Ha a **tényleges értékkel együtt** jelölőnégyzet be van jelölve egy cikk a **modell cikkcsoportok** lap, a rendszer használja mind a fizikai és pénzügyi bevételezési tranzakciók a futó átlagos önköltségi ár kiszámításához. Ahol erre lehetőség van, a rendszer a fizikailag frissített kiadási tranzakción is végez korrekciót. Ha a **Tényleges értékkel együtt** jelölőnégyzet nincs bejelölve, a LIFO készletmodellel végrehajtott készletzárás csak a pénzügyileg frissített tranzakciókkal szemben végez teljesítést. A következő ábrán ezek a tranzakciók láthatók:
+Ha egy cikkhez be van jelölve a **Tényleges értékkel együtt** jelölőnégyzet a **Cikkmodell-csoportok** lapon, a rendszer a fizikai és a pénzügyi bevételezési tranzakciókat egyaránt felhasználja a mozgóátlagon alapuló önköltségi ár kiszámításához. Ahol erre lehetőség van, a rendszer a fizikailag frissített kiadási tranzakción is végez korrekciót. Ha a **Tényleges értékkel együtt** jelölőnégyzet nincs bejelölve, a LIFO készletmodellel végrehajtott készletzárás csak a pénzügyileg frissített tranzakciókkal szemben végez teljesítést. A következő ábrán ezek a tranzakciók láthatók:
 
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
@@ -78,26 +78,26 @@ Ha a **tényleges értékkel együtt** jelölőnégyzet be van jelölve egy cikk
 -   6a. Fizikai kiadás készletről, 1 mennyiséggel, 21,25 USD áron.
 -   7. Készletzárást hajtanak végre. A LIFO módszer alapján a legutóbbi kiadású tranzakció, a legutóbb frissített bevételezéssel szemben lesz rendezve vagy helyesbítve.
 
-A 6a jelű tranzakció a 4b jelű bevételezési tranzakcióra lesz helyesbítve. A rendszer nem ezek a tranzakciók kiegyenlítése, mert a beérkezést fizikailag, de pénzügyileg nem frissül. Ehelyett csak egy 8,75 USD értékű korrekció lesz feladva a tényleges kiadási tranzakcióra. Az 5b jelű tranzakció a 3a jelű fizikai bevételezési tranzakcióra lesz módosítva. Mivel nem történt meg mindkét tranzakció pénzügyi frissítése, ezért a rendszer nem rendezi őket. Ehelyett, csak egy –3,75 USD értékű korrekció történik a kiadási tranzakción. Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 20,00 USD összegnek felel meg. A következő ábra bemutatja, milyen hatása van a LIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![LIFO Tényleges értékkel együtt](./media/lifowithincludephysicalvalue.gif) **Diagram jelmagyarázata**
+A 6a jelű tranzakció a 4b jelű bevételezési tranzakcióra lesz helyesbítve. A rendszer nem egyenlíti ki ezeket a tranzakciókat, mivel a bevételezés csak fizikailag történt meg, pénzügyileg azonban nem. Ehelyett csak egy 8,75 USD értékű korrekció lesz feladva a tényleges kiadási tranzakcióra. Az 5b jelű tranzakció a 3a jelű fizikai bevételezési tranzakcióra lesz módosítva. Mivel nem történt meg mindkét tranzakció pénzügyi frissítése, ezért a rendszer nem rendezi őket. Ehelyett, csak egy –3,75 USD értékű korrekció történik a kiadási tranzakción. Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 20,00 USD összegnek felel meg. A következő ábra bemutatja, milyen hatása van a LIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![LIFO Tényleges értékkel együtt](./media/lifowithincludephysicalvalue.gif) **Diagram jelmagyarázata**
 
 -   A készlettranzakciókat függőleges nyilak jelölik.
 -   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 -   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   A fenti (vagy alatt) formátumban megadott minden egyes függőleges nyíl, a készlet-tranzakció értékének Quantity@Unitár.
+-   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unit formátumban.
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="lifo-with-marking"></a>LIFO jelöléssel
-Jelölés, amely lehetővé teszi a csatolni vagy megjelölése, a bevételezési tranzakció kiadási tranzakciót. A jelölés történhet a tranzakciók feladása előtt és után is. A jelölés használható a készlet pontos költségének megállapítására a tranzakció feladásakor vagy a készletzárás végrehajtásakor. Tegyük fel például, hogy az ügyfélszolgálati osztály elfogadott egy sürgős megrendelést egy fontos vevőtől. Mivel ez a rendelés sürgős, ezért többet kell fizetni az adott cikkért az ügyfél kérésének teljesítése érdekében. Azt szeretné, ha a készlet költsége tükröződne az árrésben is (más szóval az eladott áruk beszerzési értékébe, ELÁBÉ) az adott értékesítési számla esetében. A beszerzési rendelés feladásakor a készlet bevételezése 120,00 USD értéken történik. Ha ezt az értékesítési rendelési dokumentumot jelöléssel összekapcsolják a beszerzési rendeléssel még a csomagjegyzék vagy a számla feladása előtt, az ELÁBÉ nem a cikk jelenlegi mozgóátlaga lesz, hanem 120,00 USD. Ha még a jelölés előtt feladják a csomagjegyzéket vagy a számlát, a feladott ELÁBÉ megfelel a beszerzési ár mozgóátlagának. A két tranzakció még a készletzárás végrehajtása előtt is összekapcsolható egymással. Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugtához. Ezt megteheti egy értékesítési rendelés sorából az **Értékesítési rendelés** oldalon. A nyitott bevételezési tranzakciókat megtekintheti **Jelölés** oldalon. Kiadási tranzakciót a tranzakció feladása után jelölhet hozzá egy nyugtához. Egyeztethet vagy megjelölhet egy kiadási tranzakciót egy nyílt nyugtájú tranzakcióhoz egy leltárazott cikk esetén, feladott készlethelyesbítési naplósorból. A következő ábrán ezek a tranzakciók láthatók:
+A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzakció egy bevételezési tranzakcióval. A jelölés történhet a tranzakciók feladása előtt és után is. A jelölés használható a készlet pontos költségének megállapítására a tranzakció feladásakor vagy a készletzárás végrehajtásakor. Tegyük fel például, hogy az ügyfélszolgálati osztály elfogadott egy sürgős megrendelést egy fontos vevőtől. Mivel ez a rendelés sürgős, ezért többet kell fizetni az adott cikkért az ügyfél kérésének teljesítése érdekében. Azt szeretné, ha a készlet költsége tükröződne az árrésben is (más szóval az eladott áruk beszerzési értékébe, ELÁBÉ) az adott értékesítési számla esetében. A beszerzési rendelés feladásakor a készlet bevételezése 120,00 USD értéken történik. Ha ezt az értékesítési rendelési dokumentumot jelöléssel összekapcsolják a beszerzési rendeléssel még a csomagjegyzék vagy a számla feladása előtt, az ELÁBÉ nem a cikk jelenlegi mozgóátlaga lesz, hanem 120,00 USD. Ha még a jelölés előtt feladják a csomagjegyzéket vagy a számlát, a feladott ELÁBÉ megfelel a beszerzési ár mozgóátlagának. A két tranzakció még a készletzárás végrehajtása előtt is összekapcsolható egymással. Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugtához. Ezt megteheti egy értékesítési rendelés sorából az **Értékesítési rendelés** oldalon. A nyitott bevételezési tranzakciókat megtekintheti **Jelölés** oldalon. Kiadási tranzakciót a tranzakció feladása után jelölhet hozzá egy nyugtához. Egyeztethet vagy megjelölhet egy kiadási tranzakciót egy nyílt nyugtájú tranzakcióhoz egy leltárazott cikk esetén, feladott készlethelyesbítési naplósorból. A következő ábrán ezek a tranzakciók láthatók:
 
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
@@ -111,11 +111,11 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 -   A készlettranzakciókat függőleges nyilak jelölik.
 -   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
 -   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   A fenti (vagy alatt) formátumban megadott minden egyes függőleges nyíl, a készlet-tranzakció értékének Quantity@Unitár.
+-   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unit formátumban.
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 

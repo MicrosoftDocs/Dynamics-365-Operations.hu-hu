@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manual-depreciation"></a>Kézi értékcsökkenés
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az értékcsökkenés felhasználási módszeréről nyújt áttekintést.
 
 Amikor beállítja egy tárgyi eszköz értékesítési profilját és kijelöli a **Manuális** opciót a **Metódus** mezőben az **Értékcsökkenési profilok** lapon, akkor az értékcsökkenési profilhoz rendelt tárgyi eszközök értékcsökkenése az alapján a százalék alapján van meghatározva, amelyet megad az egyes időintervallumokhoz a naptári évben. Az időközök, amelyekhez százalékokat ad meg feladásra kerülnek azon értéknek megfelelően, amit az **Értékcsökkenési profilok** lap **Általános** gyorslapján az **Időszak-gyakoriság** mezőben meghatároz. Itt szerepelnek a kiválasztható értékek:
@@ -63,13 +66,15 @@ Ha kiválasztja a **Havi** lehetőséget az** Időszak gyakoriság** mezőben, a
 | Január  | (11 000-1 000) × 10% = 1 000 |
 | Február | (11 000-1 000) × 50% = 5 000 |
 
-Ha **féléves** a a *** időszak gyakorisága ** mező ** beállítása két kézi ütemezési intervallum. A következő táblázat mutatja az értékcsökkenés-összegeket ezekhez az időszakokhoz.
+Ha a **Féléves** lehetőséget választja az ****Időszak-gyakoriság** mezőben**, akkor 2 kézi ütemezési intervallum jön létre. A következő táblázat mutatja az értékcsökkenés-összegeket ezekhez az időszakokhoz.
 
 | Intervallum    | Értékcsökkenés összege            |
 |-------------|--------------------------------|
 | június 30.     | (11 000-1 000) × 10% = 1 000 |
 | december 31. | (11 000-1 000) × 50% = 5 000 |
 
-Intervallumokban százalékoknak nem kell 100. Azonban, hibaüzenet jelenik meg ha értéke a **halmozott százalékos** mezőjében a **tárgyi eszköz értékcsökkenési profil ütemezései** lap nem **100**.
+Az intervallumokban megadott százalékoknak nem kell 100-at kiadniuk. Azonban üzenetet kap, ha a **Halmozott százalékos érték** mezőben a **Tárgyi eszköz értékcsökkenési profiljának ütemezései** lapon az érték nem **100**.
+
+
 
 

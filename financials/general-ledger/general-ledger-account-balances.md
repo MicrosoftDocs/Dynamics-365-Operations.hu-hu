@@ -1,6 +1,6 @@
 ---
 title: "Főkönyvi számlaegyenleg"
-description: "Ez a cikk ismerteti a főkönyvi számlák egyenlegeiről - a főkönyvi kivonat listaoldal és pénzügyi jelentések megtekintése kétféleképpen. Ismerteti továbbá a dimenziókészlet egyenlegének frissítését is."
+description: "Ez a cikk két módszert ír le a főkönyv számlaegyenlegének megtekintésére - a főkönyvi kivonat lista lapot és a pénzügyi jelentéseket. Ismerteti továbbá a dimenziókészlet egyenlegének frissítését is."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger-account-balances"></a>Főkönyvi számlaegyenleg
 
-Ez a cikk ismerteti a főkönyvi számlák egyenlegeiről - a főkönyvi kivonat listaoldal és pénzügyi jelentések megtekintése kétféleképpen. Ismerteti továbbá a dimenziókészlet egyenlegének frissítését is.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk két módszert ír le a főkönyv számlaegyenlegének megtekintésére - a főkönyvi kivonat lista lapot és a pénzügyi jelentéseket. Ismerteti továbbá a dimenziókészlet egyenlegének frissítését is.
 
 A felhasználók többféleképp is meg tudják nézni a főkönyvi számlaegyenlegüket. A leggyakrabban használt lehetőségek a következők:
 
@@ -46,6 +49,8 @@ Ha egy felhasználó módosítja a paramétereket az egyenlegek frissülnek. A f
 
 A felhasználók leáshatnak az egyenlegeken hogy megnézzék a tranzakciókat, amikből az egyenleg áll.    
 
-További tudnivalókért lásd: [pénzügyi jelentések megtekintése](view-financial-reports.md).
+További tájékoztatás [Pénzügyi jelentések megtekintése](view-financial-reports.md).
+
+
 
 

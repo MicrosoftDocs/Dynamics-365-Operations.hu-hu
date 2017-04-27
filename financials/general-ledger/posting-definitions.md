@@ -59,5 +59,5 @@ Az alábbi korlátozásokkal kell számolnia a feladásdefiníció-összekapcsol
 -   Egy feladásdefiníciót bármely tranzakciótípushoz hozzárendelhet, de a tranzakciótípus is ugyanabban a modulban kell legyen, mint a feladásdefiníció. Használja a **Tranzakció-feladásdefiníciók** lapot, ahol láthatja, melyik modulban szerepel egy adott tranzakciótípus.
 
 
-További tudnivalókért lásd: [könyvelési meghatározások példák](/general-ledger/example-posting-definitions.md). 
+További információkért lásd: [A feladási típusok példái](/general-ledger/example-posting-definitions.md). 
 

@@ -1,6 +1,6 @@
 ---
 title: "A munkafolyamat-rendszer áttekintése"
-description: "A cikk ismerteti a Microsoft Dynamics 365 műveletek a munkafolyamat-rendszer."
+description: "Ez a cikk a Microsoft 365 for Operations rendszerben használható munkafolyamat-rendszert írja le."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-system-overview"></a>A munkafolyamat-rendszer áttekintése
 
-A cikk ismerteti a Microsoft Dynamics 365 műveletek a munkafolyamat-rendszer.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk a Microsoft 365 for Operations rendszerben használható munkafolyamat-rendszert írja le.
 
 <a name="what-is-workflow"></a>Mi az a munkafolyamat?
 -----------------
@@ -34,7 +37,7 @@ A cikk ismerteti a Microsoft Dynamics 365 műveletek a munkafolyamat-rendszer.
 A *munkafolyamat* kifejezést kétféle módon lehet meghatározni: rendszerként és üzleti folyamatként.
 ### <a name="workflow-is-a-system"></a>A munkafolyamat egy rendszer
 
-A munkafolyamat egy olyan rendszer, amely telepítve van Dynamics 365 műveletekhez és az Application Object Server (AOS) futó. A munkafolyamat rendszer egy olyan funkciót biztosít, amelynek segítségével létrehozhat egyes munkafolyamatokat vagy üzleti eljárásokat.
+A munkafolyamat egy, a 365 for Operations rendszerben telepített rendszer, amely az Application Object Server (AOS) alatt fut. A munkafolyamat rendszer egy olyan funkciót biztosít, amelynek segítségével létrehozhat egyes munkafolyamatokat vagy üzleti eljárásokat.
 
 ### <a name="workflow-is-a-business-process"></a>A munkafolyamat egy üzleti eljárás
 
@@ -46,6 +49,7 @@ A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:
 -   **Egységes folyamatok** — Meghatározhatja az egyes dokumentumok, például a beszerzési igénylések és költségjelentések feldolgozását. A munkafolyamat-rendszer segítségével biztosítható, hogy a dokumentumok feldolgozása és jóváhagyása egységes és hatékony módon történjen.
 -   **A folyamat láthatósága** – Nyomon követheti a munkafolyamat-példányok állapotát, előzményeit és teljesítmény metrikáit. Ennek segítségével meghatározhatja, hogy kell-e módosításokat végezni a munkafolyamatban a hatékonyság növelésének érdekében.
 -   **Központi munkalista** – a felhasználók centralizált munkalistát tekinthetnek meg, amely megjeleníti a hozzájuk rendelt munkafolyamat-feladatokat és jóváhagyásokat.
+
 
 
 

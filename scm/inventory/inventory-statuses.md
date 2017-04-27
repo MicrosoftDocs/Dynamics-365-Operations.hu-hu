@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-statuses"></a>Készletállapotok
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk leírja hogyan alkalmazza a készletállapotokat a készlet nyomon követésének és kategorizálásának érdekében.
 
 A készletállapotok a készlet csoportosítására használhatók. Ezután a elindíthatja a szükséges műveleteket, például a feltöltést vagy betárolási munkát. 
@@ -47,5 +50,7 @@ Kimenő munka esetén mindig elérhető készletállapotú cikkeket használjon.
 Készletállapotok létrehozása után beállíthatja, hogy ez legyen az alapértelmezett készletállapot egy adott telephelyre, cikkre vagy raktárra vonatkozóan. Értékesítéshez, átadáshoz és beszerzési rendeléshez is létrehozhat alapértelmezett állapotot. Az értékesítési rendelések és a kimenő átmozgatási rendelések esetén a **Készletzárolás** alapértelmezett állapota nem lehet **Igen**. A raktár, cikk, beszerzési rendelés, átmozgatási rendelés vagy értékesítési rendelés alapértelmezett beállításaiból örökölt készletállapotot a mobileszköz, beszerzési rendelés, értékesítési rendelés, vagy átmozgatási rendelés sor segítségével lehet módosítani. 
 
 Rendelkezésre álló készlet állapotú cikkek fedezeti tervének elkészítéséhez jelölje be a **Fedezeti terv dimenziónként** lehetőséget tárolási dimenziónak, a **Tárolási dimenziócsoportok** oldalon. A **Cikkfedezet **varázsló megnyitásakor, az elérhető állapotú cikkek jelenjenek meg az **Állapot** oldalon. A cikkekre vonatkozó fedezeti beállítások létrehozásához válassza ki a készletállapot azonosítóját a rendelkezésre álló készletállapotok közül. A fedezeti beállítások alapján számíthatja ki a cikkszükségletet és jelezheti előre az elérhető cikkekre vonatkozó kínálatot és kereslete az alaptervezés során. Zárolt készletállapottal nem lehet cikkfedezeti beállítás létrehozni. A cikkfedezeti paraméterek létrehozásához vagy módosításához használhatja az **Cikk fedezete** képernyőt is.
+
+
 
 

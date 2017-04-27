@@ -1,6 +1,6 @@
 ---
-title: "Szervezetek és szervezeti hierarchiák (kereskedelmi alapok)"
-description: "Commerce alapok belső szervezetek meghatározó a szervezet üzleti folyamat végrehajtása, vagy a cél elérése érdekében három típusa van."
+title: "Szervezetek és szervezeti hierarchiák (Kereskedelmi alapok)"
+description: "A Kereskedelmi alapokban háromféle belső szervezet adható meg, amelyek segítségével a kívánt szervezet üzleti folyamatot hajthat végre vagy célt érhet el."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 21251
 ms.assetid: 2bfc6bfe-784b-42e8-8bf0-116e9f0a558e
 ms.search.region: global
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Szervezetek és szervezeti hierarchiák (kereskedelmi alapok)
+# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Szervezetek és szervezeti hierarchiák (Kereskedelmi alapok)
 
-Commerce alapok belső szervezetek meghatározó a szervezet üzleti folyamat végrehajtása, vagy a cél elérése érdekében három típusa van. 
+[!include[banner](includes/banner.md)]
+
+
+A Kereskedelmi alapokban háromféle belső szervezet adható meg, amelyek segítségével a kívánt szervezet üzleti folyamatot hajthat végre vagy célt érhet el. 
 
 A szervezet olyan emberek egy csoportja, akik egy üzleti folyamat végrehajtásához, vagy egy cél elérése érdekében működnek együtt. A szervezeti hierarchiák a vállalkozását alkotó üzleti egységek közötti kapcsolatotat jelölik.
 
@@ -47,7 +50,7 @@ Egy üzemi egység olyan szervezet, amelynek segítségével meg lehet osztani a
 | Kiskereskedelmi csatorna          | Olyan üzemi egység, amely egy konkrét üzlethelyiségnek felel meg.                             | Ezzel egy vagy több üzletet kezelhet és vezérelhet több jogi személy között is.                                                               |
 
 ## <a name="organizational-hierarchies"></a>Szervezeti hierarchiák
-A Kereskedelmi alapok modulban minden hierachiához hozzá van rendelve egy cél. A hierarchia célja meghatározza a hierarchiában szerepeltethető szervezetek típusait. A cél azt is meghatározza, mely alkalmazás környezetben használható egy hierarchia. Például a kiskereskedelmi hierarchia segítségével beszerzett és értékesített termékek kiskereskedelmi áruházakban. Egy hierarchiába tartozó szervezetek megoszthatják egymással a paramétereket, az irányelveket és a tranzakciókat. Egy szervezet örökölheti, de felül is írhatja a szülő szervezete paramétereit. Azonban a megosztott alapadatok, például a termékek és a címjegyzékek, a teljes szervezetre vonatkoznak, és nem írhatók felül az egyes szervezetek esetében.
+A Kereskedelmi alapok modulban minden hierachiához hozzá van rendelve egy cél. A hierarchia célja meghatározza a hierarchiában szerepeltethető szervezetek típusait. A cél azt is meghatározza, mely alkalmazás környezetben használható egy hierarchia. Például a kiskereskedelmi hierarchia használható termékek beszerzéséhez és értékesítéséhez kiskereskedelmi áruházakban. Egy hierarchiába tartozó szervezetek megoszthatják egymással a paramétereket, az irányelveket és a tranzakciókat. Egy szervezet örökölheti, de felül is írhatja a szülő szervezete paramétereit. Azonban a megosztott alapadatok, például a termékek és a címjegyzékek, a teljes szervezetre vonatkoznak, és nem írhatók felül az egyes szervezetek esetében.
 ### <a name="best-practices-for-setting-up-an-organization-in-a-hierarchy"></a>Gyakorlati tanácsok a szervezeti hierarchia beállításához
 
 Vegye figyelembe a következő legjobb gyakorlati tanácsokat a szervezeti hierarchia végrehajtásánál:
@@ -68,6 +71,8 @@ A következő táblázat leírja, hogy mely Kereskedelmi alapok típusú eseteke
 | Kiskereskedelmi feltöltés                                                    | Csoport feltöltési szabályok alapján feltöltéséhez tárolja.                                                                                                                                                                                                                                          | Kiskereskedelmi feltöltés |
 | Előzetes jelentés adatai                                                         | Főkönyvi csoport a jelentéskészítéshez                                                                                                                                                                                                                                                                                 | Kiskereskedelmi jelentés     |
 | Készlet feladása kimutatások számításához és üzletcsoportokhoz a kimutatások feladása | Hozzon létre egy kötegelt feladat rendelt üzletcsoportokhoz. Készlet feladása, a kimutatások számításához vagy a kimutatások feladása kötegelt feladatként definiálásakor megadhatja mely hierarchia a feladat vonatkozik. Üzletek hozzáadni vagy eltávolítani a hierarchiából, amikor a kötegelt feladat módosítása nincs. | Kiskereskedelmi pénztári feladás   |
+
+
 
 
 

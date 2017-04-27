@@ -1,6 +1,6 @@
 ---
-title: "Költségvetés – áttekintés"
-description: "Ez a cikk bemutatja a költségvetés-ellenőrzés, és költségvetés-ellenőrzés konfigurálását a Microsoft Dynamics 365 műveletek úgy, hogy a pénzügyi forrásokat is kezelheti adatait."
+title: "A költségvetés-ellenőrzés áttekintése"
+description: "Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához a Microsoft Dynamics 365 for Operations rendszerben, hogy kezelni tudja a pénzügyi erőforrásokat."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,16 +24,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-control-overview"></a>Költségvetés – áttekintés
+# <a name="budget-control-overview"></a>A költségvetés-ellenőrzés áttekintése
 
-Ez a cikk bemutatja a költségvetés-ellenőrzés, és költségvetés-ellenőrzés konfigurálását a Microsoft Dynamics 365 műveletek úgy, hogy a pénzügyi forrásokat is kezelheti adatait.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához a Microsoft Dynamics 365 for Operations rendszerben, hogy kezelni tudja a pénzügyi erőforrásokat.
 
 <a name="overview"></a>Áttekintés
 --------
 
-Költségvetés-ellenőrzés a Microsoft Dynamics 365 műveletek esetében támogatja a szervezet pénzügyi forrásokat a Számlatükör, munkafolyamatok, felhasználói csoportok, forrás dokumentumok és naplók, a rendelkezésre álló pénzeszközök, költségvetési ciklusok és küszöbértékek konfigurálható számítási kezelését. Ha a szabályzók a helyén vannak, a szervezet megtervezheti, megmérheti, kezelheti és előre jelezheti a pénzügyi forrásokat a pénzügyi évben. 
+A Microsoft Dynamics 365 for Operations költségvetés-ellenőrzés funkciója támogatja a szervezet pénzügyi forrásainak kezelését a számlatükrökön, munkafolyamaton, felhasználói csoportokon, forrásbizonylatokon, naplókon, konfigurálható források számításán, költségvetési ciklusokon és küszöbértékeken keresztül. Ha a szabályzók a helyén vannak, a szervezet megtervezheti, megmérheti, kezelheti és előre jelezheti a pénzügyi forrásokat a pénzügyi évben. 
 
-Után Dynamics 365 műveletek jóváhagyott költségvetés, költségvetési tervek segítségével rögzítheti a kiadások költségvetési szervezet költségvetési tételjegyzék-bejegyzések létrehozása. Megoldásként hozzon létre vagy költségvetés-tervezési funkciók használata helyett egy külső program költségvetési tételjegyzék-bejegyzéseket importálni. 
+Miután a költségvetéseket jóváhagyták a Dynamics 365 for Operations rendszerben, a költségvetési tervek használatával lehet létrehozni Költségvetési tételjegyzék-bejegyzéseket a szervezetre vonatkozó kiadási költség rögzítéséhez. Másik lehetőségként létrehozhat vagy importálhat a külső programokból költségvetési tételjegyzék-bejegyzéseket a költségvetés-tervezési funkció használata helyett. 
 
 A fő számlák és a pénzügyi dimenziók használatával lehet rögzíteni a kiadásokokat. Konfigurálhatja a teljes kiadások vezérlőjét a szervezet szabályainak és követelményeinek teljesítéséhez a pénzügyi dimenziók és a fő számlák kombinációinak csoportosításával. 
 
@@ -41,22 +44,22 @@ A következő diagram a költségvetés-ellenőrzés helyét mutatja egy tipikus
 
 [![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
-Költségvetés-ellenőrzés különböző szempontok szerint állíthatja be:
+A költségvetés-ellenőrzést különböző szempontok szerint lehet beállítani:
 
 -   **Pénzügyi dimenziók** - Milyen pénzügyi dimenziókat kell használni a költségvetés és az aktualitások rögzítéséhez, és milyen pénzügyi dimenziók szükségesek a költségvetés szabályzásához? Vannak meghatározott dimenziókombinációk vagy fő számlák, amelyek különös figyelmet igényelnek? Például van olyan követelmény, ami alapján követni kell a ténylegesek között a költségvetést költséghely és program szerint? Szükséges az utazási költségekhez különösebb figyelem?
 -   **Idő** - Milyen időkeret (pénzügyi időszak, pénzügyi időszak adott dátumig, stb.) kerül felhasználásra az elérhető költségvetési alapok kiértékeléséhez?
--   **Forrás dokumentumok** – mely forrásbizonylatokat értékelni kell a költségvetés-ellenőrzés? A dokumentumokat értékelni kell a soronként vagy dokumentumonkénti?
+-   **Forrás dokumentumok** – Milyen forrásbizonylatokat kell kiértékelni a költségvetés-ellenőrzéshez? Szükséges a dokumentumokat soronként vagy dokumentumonként kiértékelni?
 -   **Rendelkezésre álló források számítása** - Szükséges a dokumentumokat beszerzési rendelésként (előzetes kötelezettségvállalások) és beszerzési rendelésként (kötelezettségvállalások) használni a rendelkezésre álló pénzalapok számításakor? Figyelembe kell venni a vázlat állapotú dokumentumokat a számítás során?
 -   **Felülbírálási engedély** - Kinek van jogosultsága a rendelkezésre álló költségvetés átlépéséhez?
 
-Költségvetés-ellenőrzési műveletek Dynamics 365 teljesen integrálva van. Emiatt a rendelkezésre álló költségvetést kiértékelheti a tervezett beszerzésekre és a tényleges beszerzésre vonatkozóan egyaránt. Elérhetők a költségvetés lekérdezések és jelentések. Ezért a felhasználók kiértékelhetik a költségvetést a költségvetési cikluson keresztül, és bármennyi szükséges kiigazítást végezhet a költségvetés-verzió vagy átutalások formájában. A költségvetés-kezelő exportálhatja a költségvetést és tényleges kiadásokat a Microsoft Excelbe, hogy szükség szerint jobban tudja elemezni és előre jelezni a folyamatokat.
+A költségvetés-ellenőrzés teljes mértékben integrált a Dynamics 365 for Operations rendszerrel. Emiatt a rendelkezésre álló költségvetést kiértékelheti a tervezett beszerzésekre és a tényleges beszerzésre vonatkozóan egyaránt. Elérhetők a költségvetés lekérdezések és jelentések. Ezért a felhasználók kiértékelhetik a költségvetést a költségvetési cikluson keresztül, és bármennyi szükséges kiigazítást végezhet a költségvetés-verzió vagy átutalások formájában. A költségvetés-kezelő exportálhatja a költségvetést és tényleges kiadásokat a Microsoft Excelbe, hogy szükség szerint jobban tudja elemezni és előre jelezni a folyamatokat.
 
 ## <a name="configuring-budget-control"></a>Költségvetés-ellenőrzés konfigurálása
 ### <a name="budget-cycle-time-span"></a>Költségvetési ciklus időtartama
 
 Miután beállította az alapvető költségvetés-tervezést megadhatja a költségvetés tervezés és költségvetés-ellenőrzés időtartamát vagy a periódus kezdő és záró dátumát a **Költségvetési ciklus időtartama** oldalon. A költségvetési ciklusok gyakran egyeznek a pénzügyi naptárral, de pénzügyi évekre is kiterjedhetnek.
 
-A következő a konfigurációs lépéseket a különböző lapokon található meg a **költségvetés-ellenőrzési konfiguráció** oldalon.
+A konfiguráció következő lépéseinek elvégzése a **Költségvetés-ellenőrzési konfiguráció** oldal különféle lapjain történik.
 
 ### <a name="define-parameters"></a>Paraméterek meghatározása
 
@@ -77,7 +80,7 @@ A következő, a **Költségvetés-túllépési engedélyek** lapon megadhatja a
 A következő, az **Rendelkezésre álló költségvetési alapok** lapon meghatározhatja a rendelkezésre álló költségvetési alapok kiszámításához használt képletet. Attól függően, hogy a vállalat mennyire konzervatívan kezeli a pénzügyi forrásokat, vagy a szabályozásoktól vagy az iparági követelményektől függően a számítás vázlatot vagy fel nem adott dokumentumokat tartalmazhat. 
 
 > [!NOTE] 
-> Ha a számítás során a költségvetési ciklus módosul, a módosítások minden dokumentumot, amely a költségvetés-ellenőrzési ellenőrzést korábban átadott, és, hogy a könyveléskor vagy befejezett nem befolyásolják.
+> Ez a számítás módosul a költségvetési ciklusban, a változók nem befolyásolják azokat a dokumentumokat, amelyek megfeleltek korábban költségvetés-ellenőrzésen, és amelyek feladásra kerültek vagy befejeződtek.
 
 ### <a name="documents-and-journals"></a>Dokumentumok és naplók
 
@@ -96,7 +99,7 @@ Következő, a **Költségvetési modellek társítása** lapon hozzárendeli a 
 Következő, a **Költségvetés-ellenőrzési szabályok meghatározása** lapon létre kell hoznia a költségvetés-ellenőrzés számára elérhető pénzügyi dimenziókon alapuló specifikus szabályokat. Például, ha a kiadáson vagy egy részlegre vonatkozó kiadások tartományán van a fókusz, akkor ezen a lapon található beállítások segítségével meghatározhatja és kiszámíthatja azokat a kiadásokat. Minden egyes költségvetés-ellenőrzési szabályra vonatkozóan meghatározhatja a küszöbéréket. 
 
 > [!Important]
-> Költségvetés-ellenőrzés lesz engedélyezve a fő számla a **eredmény**, **költség**, **bevétel, mérleg, felelősség, a saját tőke** vagy **eszköz** típusa. Ha ez a lap tartalmaz egy olyan szabályt, amelynek üres feltételei vannak, a költségvetés-ellenőrzés engedélyezve lesz az **minden **olyan pénzügyi dimenzió kombináció számára, amelyek tartalmazzák azoknak a típusoknak a fő számláját. Ezért győződjön meg róla, hogy létrehoz-e olyan költségvetés-ellenőrzési szabályokat, amelyek csak a pénzügyi dimenzió kombinációk tartományát szabják meg, ahol a költségvetés-ellenőrzés bekapcsolása fontos.  
+> A költségvetés-ellenőrzés engedélyezve lesz az **Eredmény**, **Költség** **Bevétel, mérleg, forrás, saját tőke** vagy **Eszköz** típus minden fő számlája számára. Ha ez a lap tartalmaz egy olyan szabályt, amelynek üres feltételei vannak, a költségvetés-ellenőrzés engedélyezve lesz az **minden **olyan pénzügyi dimenzió kombináció számára, amelyek tartalmazzák azoknak a típusoknak a fő számláját. Ezért győződjön meg róla, hogy létrehoz-e olyan költségvetés-ellenőrzési szabályokat, amelyek csak a pénzügyi dimenzió kombinációk tartományát szabják meg, ahol a költségvetés-ellenőrzés bekapcsolása fontos.  
 
 ### <a name="select-main-accounts"></a>Főszámlák kiválasztása
 
@@ -114,15 +117,17 @@ Ha a költségvetés-ellenőrzési figyelmeztetéseket le kell tiltani bármilye
 
 A költségvetés-ellenőrzés beállítása után kapcsolja be, és aktiválja a **Költségvetés-ellenőrzés aktiválása** lapon. Ezt követően a piszkozati verzió érvényessé válik.
 > [!Important]
-> Miután költségvetés-ellenőrzés be van kapcsolva, és aktív, és a tranzakciók könyvelése, azt nem kikapcsolása az év közepén. A költségvetés-ellenőrzés kikapcsolásakor a tevékenységeket nem rögzítik a költségvetési-ellenőrzés céljaira vonatkozóan, és a költségvetés-ellenőrzés nem fut tovább. Ezért azokat a dokumentumokat, amelyek már fel lettek adva lehet, hogy nem megfelelően tükrözik a fennmaradó összegeket vagy egyenlegeket és jelentéseket, amelyek a költségvetés-ellenőrzéssel kapcsolatban állnak. Ezek közé tartozik az alsóbb rétegbeli vagy helyesbítő bizonylatok és-naplók költségvetés-ellenőrzési statisztikái. 
+> A költségvetés-ellenőrzés bekapcsolását és aktiválását, és a tranzakciók feladását követően ne kapcsolja ki év közben. A költségvetés-ellenőrzés kikapcsolásakor a tevékenységeket nem rögzítik a költségvetési-ellenőrzés céljaira vonatkozóan, és a költségvetés-ellenőrzés nem fut tovább. Ezért azokat a dokumentumokat, amelyek már fel lettek adva lehet, hogy nem megfelelően tükrözik a fennmaradó összegeket vagy egyenlegeket és jelentéseket, amelyek a költségvetés-ellenőrzéssel kapcsolatban állnak. Ezek közé tartozik az alsóbb rétegbeli vagy helyesbítő bizonylatok és-naplók költségvetés-ellenőrzési statisztikái. 
 
 Ezenkívül vegye figyelembe, hogy azokat a tranzakciókat a költségvetési tételjegyzék-bejegyzéseket beleértve, amelyek feladásra kerültek a költségvetés-ellenőrzés bekapcsolása előtt nem veszi figyelembe a költségvetés-ellenőrzés. Ezért a költségvetés-ellenőrzés bekapcsolása csak az új költségvetési időszak kezdetekor ajánlott. Győződjön meg arról, hogy a Költségvetésjegyzék bejegyzései tartalmazzák a költségvetés kezdő egyenlegeit a költségvetés-ellenőrzésre vonatkozóan, és hogy a költségvetési egyenlegek frissítése csak a költségvetési-ellenőrzés bekapcsolását követően ment végbe. Bármilyen megnyitott dokumentum (pl. Beszerzési rendelés) ellenőrzi a program az elérhető forrásokra vonatkozóan és költségvetési tartalékot hoz létre a költségvetés-ellenőrzéshez, ha a felhasználó manuálisan lefuttatja a költségvetés-ellenőrzést a dokumentumban.
 
 ## <a name="using-budget-control"></a>Költségvetés-ellenőrzés használata
 A költségvetés-ellenőrzés aktiválását követően, a felhasználók költségvetés-ellenőrzési figyelmeztetés és hibaüzenetet kapnak a költségvetés-ellenőrzéshez beállított dokumentumokban és naplókban. Ne feledje, hogy a költségvetés-ellenőrzést beállíthatja úgy, hogy a felhasználók figyelmeztetést kapnak, ha meghaladja a költségvetési alapokat, de továbbra is megerősítheti vagy feladhatja a tranzakciót. A felhasználók a sikertelen költségvetés-ellenőrzés részletes adatait megtekinthetik a **Költségvetés-ellenőrzési hibák és figyelmeztetések** oldalon.   
 
-Ezen a lapon felhasználókat részletezve az **költségvetés-ellenőrzési statisztikák időszakonként** lap költségvetési rendelkezésre állásának részletes adatainak megtekintése és a foglalásokat a vezérlőelem kijelölt költségvetési dimenzió kombináció. Felhasználók beléphetnek a **Költségvetés-ellenőrzési statisztika **lapra az összes költségvetés-ellenőrzésben használt pénzügyi dimenzió kombinációra vonatkozó költségvetés elérhetőségeinek megtekintéséhez. 
+Erről a lapról a felhasználók a **Költségvetés-ellenőrzési statisztika időszak szerint** lapra léphetnek a költségvetés elérhetőségének részleteinek és a kiválasztott költségvetés-ellenőrzési dimenzióra vonatkozó foglalások megtekintéséhez. Felhasználók beléphetnek a **Költségvetés-ellenőrzési statisztika **lapra az összes költségvetés-ellenőrzésben használt pénzügyi dimenzió kombinációra vonatkozó költségvetés elérhetőségeinek megtekintéséhez. 
 
 Ha a költségvetési-ellenőrzés aktív a beszerzési rendelésekre vonatkozóan a költségvetéskezelő használhatja a **Főkönyvi költségvetések és előrejelzések** munkaterületet az összes figyelmeztetéssel és hibával rendelkező jóváhagyásra váró beszerzési rendelés várakozási sorának áttekintéséhez. Ha a költségvetés-kezelő rendelkezik költségvetés átlépési engedéllyel, akkor jóváhagyhat beszerzési rendelést közvetlenül a munkahelyen.    
+
+
 
 

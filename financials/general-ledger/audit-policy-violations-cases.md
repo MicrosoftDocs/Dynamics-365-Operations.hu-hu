@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-violations-and-cases"></a>A könyvvizsgálati irányelvmegsértések és esetek
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk bemutatja, hogyan jönnek létre a naplózási ügyek a naplózási irányelvszabályok megsértése által. Információkat tartalmaz továbbá arról, hogyan alkalmazzák a naplózási irányelvek a dokumentumok határidő-intervallum szerinti kiválasztását.
 
 <a name="how-audit-cases-are-generated"></a>Könyvvizsgálati esetek létrehozásának módja
@@ -39,10 +42,10 @@ A könyvvizsgálati irányelvek kötegelt módban futnak. A könyvvizsgálati ir
 
 Minden egyes irányelvszabály értékel egy dokumentumbeállítást. Az irányelvszabály a dokumentumkiválasztási dátumtartományból választ dokumentumot, amely megfelel a megadott feltételnek. Például egy irányelvszabály kiválaszthat költség jelentéseker, amelyeknél az étkezések száma meghaladta az 50,00-t. Egy másik irányelvszabály kiválaszthatja a szállítói számlákat, amelyek fizethetőek egy adott szállítóra. Minden dokumentumhoz, amely a készletben ki van jelölve, megszegés generálódik. A megsértés egy rekordot, amelyben egy adott dokumentum, például számla 12345, az irányelvszabálynak nem felel meg. 
 
-Több könyvelési megsértéssel rendelkező rekordok együtt csoportosítottak és könyvelési esetekhez rendeltek. Alapértelmezés szerint az egyes könyvvizsgálati irányelv esetek könyvvizsgálati irányelvszabály szerint vannak csoportosítva. Ha azt szeretné, be lehet állítani más csoportosítási feltételeket az **Esetcsoportosítási feltételek** lap használatával. Például csoportosíthatjuk költség fejlécek által projekt azonosítója és a szállítói számlák szállítói számlára. Ebben az esetben a megegyező Projektazonosítójú rendelkező összes költség fej megsértése csoportosulnak ugyanabban az ügyben, és ugyanabban az ügyben minden szállítói számlák, amelyek az azonos szállítói számlához csoportosulnak. 
+Több könyvelési megsértéssel rendelkező rekordok együtt csoportosítottak és könyvelési esetekhez rendeltek. Alapértelmezés szerint az egyes könyvvizsgálati irányelv esetek könyvvizsgálati irányelvszabály szerint vannak csoportosítva. Ha azt szeretné, be lehet állítani más csoportosítási feltételeket az **Esetcsoportosítási feltételek** lap használatával. Például csoportosíthatja a költségfejléceket projektazonosító alapján és a szállítói számlákat szállítókód alapján. Ebben az esetben az összes a megegyező projektazonosítójú költségfejléc-szabálysértés ugyanahhoz az esethez lesz csoportosítva, és az összes szállítói számla, amelynek azonos a szállítókódja, ugyanahhoz az esethez lesz csoportosítva. 
 
 > [!NOTE]
-> Az ellenőrzési szabályok, amelyek alapján egy **ismétlődő** lekérdezéstípus, megsértése nem csoportosított házirendszabály használatával, vagy a megadott feltételek szerint a **esetben csoportosítási feltételt** lap. Ehelyett a könyvvizsgálati irányelvszabályban megadott feltétel alapján csoportosulnak. Például ha egy irányelvszabály értékeli a költségjelentéseket az azonos összeg, kereskedő azonosítója vagy dátum ismétlődő költségeihez, az összes költség, amelynek az értéke megegyezik, egy eset lesz. Különböző értékekkel rendelkező kiadások külön esetek lesznek.
+> A **Másolat** lekérdezéstípuson alapuló könyvvizsgálati irányelvszabály miatt a megszegések nem csoportosulnak irányelvszabály vagy az **Esetcsoportosítási feltételek** lapon megadott feltételek szerint. Ehelyett a könyvvizsgálati irányelvszabályban megadott feltétel alapján csoportosulnak. Például ha egy irányelvszabály értékeli a költségjelentéseket az azonos összeg, kereskedő azonosítója vagy dátum ismétlődő költségeihez, az összes költség, amelynek az értéke megegyezik, egy eset lesz. Különböző értékekkel rendelkező kiadások külön esetek lesznek.
 
 A Könyvvizsgálati esetek elkészülte az esetkezelés tipikus folyamatának használatával kidásra kerülnek.
 
@@ -56,6 +59,8 @@ A könyvvizsgálati irányelv futtatásakor minden irányelvszabály kijelöl ad
 -   Az irányelvszabályok, amelyek **Keresés lista** lekérdezés típuson alapszanak, az irányelv értékeli a dokumentumokat a figyelt entitásokhoz, amelyek érvényesek a dokumentumkiválasztási dátumtartomány utolsó napján.
 
 
-További tudnivalókért lásd: [házirend szabályok naplózása](audit-policy-rules.md)
+További információ: [Könyvvizsgálati irányelvszabály](audit-policy-rules.md)
+
+
 
 

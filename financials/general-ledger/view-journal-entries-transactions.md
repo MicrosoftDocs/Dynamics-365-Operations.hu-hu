@@ -46,12 +46,12 @@ A pénzügyi jelentéseken kívül a következő főkönyvi jelentések állnak 
 
 -   **Dimenziókimutatás** – Ez a jelentés mutatja a tranzakciókat nap és a számla szerint, ezenfelül van egy opció, amely a tranzakciókat dimenzió és időszak szerint jeleníti meg.
 -   **Főkönyvi tranzakciók listája** – Ez a jelentés mutatja a tranzakciókat a tranzakcióban, könyvelést és jelentési pénznemet a számlához.
--   **Nyomtatási napló** – Ez a jelentés tartalmazza a feladott naplókat eredménye. A jelentés futtatása a napló száma vagy a napló típusát, vagy további mezők hozzáadása.
+-   **Nyomtatási napló** – Ez a jelentés tartalmazza a feladott napló az eredményét. Futtathatja a jelentése naplószám vagy naplótípus alapján, vagy további mezők hozzáadásával.
 -   **Feladott tranzakciók napló szerint** – Ez a jelentés bizonylat alapján csoportosítva a naplóba feladott tranzakciókat jeleníti meg.
 -   **Dátum szerinti tranzakciólista** – Ez a jelentés mutatja az összes tranzakciót dátum alapján, a napló számával, a bizonylattal és a főkönyvi számlával. Ezen felül a tranzakciókat is mutatja tranzakcióban, könyvelésben és jelentési pénzegységben.
 -   **Tranzakció eredete** – Ez a tranzakció jelentés mutatja a számlát napló szerint, és tranzakció, könyvelés és jelentési pénznem szerint. Ezen felül megjeleníti napló összes ellentételként használt sorát.
 
 
-További tudnivalókért lásd: [főkönyvi számlák egyenlegeiről](general-ledger-account-balances.md), [adatforrás-tallózóban számviteli](\financials\accounts-payable\accounting-source-explorer) és [pénzügyi beszámoló](financial-reporting-getting-started.md)
+További tájékoztatás: [Főkönyvi számlaegyenleg](general-ledger-account-balances.md), [Könyvelési források böngészője](\financials\accounts-payable\accounting-source-explorer) és [Pénzügyi jelentéskészítés](financial-reporting-getting-started.md)
 
 

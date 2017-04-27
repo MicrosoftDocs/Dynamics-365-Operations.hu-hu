@@ -32,7 +32,7 @@ Ez a cikk bemutatja a teljes költségfelosztás (TCA) használatának irányelv
 
 Az összköltség felosztás (TCA) a kötegrendelés fő receptúrás cikkének az ára és a receptúrához meghatározott társtermékek árösszegei közötti költség kiszámításának a módszere. Ez a módszer dinamikus. A költséget a társtermékek és a receptúrás cikk számára befejezettnek jelentett mennyiségek súlyozott átlagaként számítja ki. TCA használata esetén nem szükséges minden kötegrendelés esetében áttekintenie a költségfelosztásokat. Amennyiben nem alkalmaz TCA-t, a receptúra számítás egy meglevő funkciót alkalmaz.
 
-## <a name="using-tca-for-coproducts"></a>TCA használata coproducts
+## <a name="using-tca-for-coproducts"></a>TCA alkalmazása társtermékekre
 Íme néhány irányelv a TCA társtermékekre történő alkalmazása esetében:
 
 -   Ha a **Teljes költségfelosztás** csúszkát **Igen** opcióra állítja a receptúra verziónál, a társtermékeknek kötelezően 0 (nulla) fölötti önköltségi árral kell rendelkezniük. Az érték visszakapcsolható az aktív költségverzióról az azonos oldalra vagy a receptúra első, nem webhely-specifikus webhelyére. A feltétel érvényesítése a receptúra elfogadásakor történik meg.
@@ -46,7 +46,7 @@ Az összköltség felosztás (TCA) a kötegrendelés fő receptúrás cikkének 
 -   Amikor egy kötegrendelést manuálisan hoznak létre vagy egy tervezett kötegrendelést megerősítenek, akkor a receptúraverzióhoz tartozó **Teljes költségfelosztás** csúszka értéke a kötegrendelésbe másolódik. Azonban ezt a beállítást megváltoztathatja a kötegrendelésben. Ha a **Teljes költségfelosztás** csúszka értéke **Nem** a receptúraverzióban, majd **Igen** értékre módosul a kötegrendelésben, akkor a költségfelosztás módszere minden olyan sorban, amelyben **Manuális** volt **TCA** értékre módosul. A **Nincs** értékű sorok költségfelosztása változatlan marad. Ha a **Teljes költségfelosztás** csúszka értéke **Igen** a receptúraverzióban, majd **Nem** értékre módosul a kötegrendelésben, akkor a költségfelosztás módszere minden **Termelés** típusú társterméknél **Manuális**értékre módosul. A költségfelosztás százalékos értékei változatlanok maradnak.
 -   A **Társtermék költségfelosztási** oldal jeleníti meg a költségfelosztás számított százalékos értékét. Ezt a lapot megnyithatja a **Kötegrendelés** oldalról. Ez az információ akkor hasznos, amikor a jelentett termékek és mennyiségek eltérnek kötegrendelésben található ütemezett vagy elindított mennyiségektől. Amikor a költség elkészült ezek új, TCA-ból származó százalékos felosztások a **Társtermék költségfelosztása** oldalon jelennek meg.
 
-## <a name="calculating-the-burden-for-byproducts"></a>Melléktermék számára kiszámítása
+## <a name="calculating-the-burden-for-byproducts"></a>A melléktermékek költségterhelésének számítása
 A **Melléktermék költségfelosztása** mező a **Társtermékek** oldalon egy enumerátor mező, amely csak melléktermékekhez használatos. A társtermékekhez ezen mező értéke mindig **Nincs**. A mellékterméksoroknál ez a mező határozza meg a melléktermék költségösszegének a termelés teljes költségéhez való hozzáadásának módját. Az alábbi lehetőségek közül választhat:
 
 -   **Nincs** – Nem adódik hozzá összeg a termelés teljes költségéhez ebből a mellékterméksorból.

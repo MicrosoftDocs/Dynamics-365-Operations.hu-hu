@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-line-item-workflow"></a>Sortétel munkafolyamatának beállítása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a témakör bemutatja a sortétel-munkafolyamat-elem beállításának menetét.
 
 A sortétel munkafolyamatának a munkafolyamat-szerkesztőben történő beállításához kattintson a jobb gombbal az elemre, és kattintson **Tulajdonságok** lap megnyitásához a **Tulajdonságok** lehetőségre. Ezután a következő eljárások segítségével beállíthatja a sortétel munkafolyamat-elem különféle tulajdonságait.
 
-## <a name="name-the-lineitem-workflow-element"></a>A lineitem a munkafolyamat-elem neve
+## <a name="name-the-lineitem-workflow-element"></a>A sortétel-munkafolyamat-elem elnevezése
 A következő lépések segítségével elnevezheti a sortétel munkafolyamat-elemet.
 
 1.  A bal oldali panelen kattintson az **Alapbeállítások** gombra.
@@ -50,6 +53,8 @@ A következőképpen határozhatja meg, hogy ugyanazon munkafolyamat segítség�
     6.  Ha ellenőrizni szeretné a megadott feltételkészlet beállításának helyességét, kattintson a **Teszt** lehetőségre. A **Munkafolyamati feltétel tesztelése** lapon, a **Feltétel érvényesítése** területen válasszon ki egy rekordot, majd kattintson a **Teszt** lehetőségre. A rendszer értékeli a bejegyzést, annak érdekében, hogy meghatározza, hogy a meghatározott feltételeknek megfeleljen-e. Kattintson az **OK** vagy a **Mégse** lehetőségre a **Tulajdonságok** lapra történő visszalépéshez.
 
     A **Munkafolyamat** lapon válassza ki azon sortételek feldolgozásához használni kívánt munkafolyamatot, amelyek megfelelnek a meghatározott feltételkészletnek.
+
+
 
 
 

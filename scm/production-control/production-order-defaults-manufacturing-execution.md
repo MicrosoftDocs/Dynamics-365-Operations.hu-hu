@@ -1,5 +1,5 @@
 ---
-title: "Gyártás-végrehajtási gyártási rendelés alapértelmezései"
+title: "Termelési rendelés alapbeállításai a gyártásvégrehajtásban"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-order-defaults-in-manufacturing-execution"></a>Gyártás-végrehajtási gyártási rendelés alapértelmezései
+# <a name="production-order-defaults-in-manufacturing-execution"></a>Termelési rendelés alapbeállításai a gyártásvégrehajtásban
+
+[!include[banner](../includes/banner.md)]
 
 
 
-A beállítások alaposan fontoljon meg a **gyártási rendelés alapértelmezett** oldalon dolgozók regisztrációk legyen a termelési feladatok indítása előtt. Ha a vállalat a többhelyes funkciót használja, érdemes gyártási rendelésekhez mindegyik helyhez más alapértelmezett értékek beállítása. A rendelés alapértelmezései a Gyártásvezérléssel **Termelési rendelés alapértelmezései** lapon a következő oldalakon állíthatók be:
+
+Alaposan fontoljon meg a **Termelési rendelés alapértékei** oldal beállításait, mielőtt a dolgozók elkezdenek regisztrációkat tenni a termelési feladatokba. Ha a vállalat a többhelyes funkciót használja, érdemes a gyártási rendeléseknél mindegyik helyhez más alapértelmezett értékeket beállítani. A rendelés alapértelmezései a Gyártásvezérléssel **Termelési rendelés alapértelmezései** lapon a következő oldalakon állíthatók be:
 
 -   **Általános** – Általános rendelési alapértelmezések a termelési feladatokhoz a Gyártásvégrehajtás modulban.
 -   **Kezdő** – Rendelési alapértelmezések, amelyek a termelési feladatok vagy a műveletek indításakor vannak érvényben.
@@ -68,6 +71,8 @@ Az anyagfelhasználást egy termelési rendelés készként való jelentése sor
 -   **Ürítési elv** – A termelési rendelés készként való jelentésekor az anyagmennyiségek a termelési anyagjegyzék-sorokban beállított ürítési elv szerint lesznek felhasználva. Csak olyan anyagsorok lesznek felhasználva, ahol az ürítési elv a **Befejezés** lehetőségre van beállítva.
 -   **Mindig** – A készként jelentett mennyiséggel arányos anyagmennyiséget mindig felhasználásként rögzíti.
 -   **Soha** – Az anyagmennyiségek soha nem lesznek felhasználva.
+
+
 
 
 

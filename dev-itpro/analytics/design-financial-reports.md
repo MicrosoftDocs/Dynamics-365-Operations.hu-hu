@@ -1,6 +1,6 @@
 ---
-title: "Pénzügyi jelentések megtekintése és a Tervező"
-description: "Ez a cikk megtekintése és pénzügyi jelentések létrehozása a Microsoft Dynamics 365 műveletek gyakorlatok, amelyek elmagyarázzák biztosít. Pénzügyi beszámolás műveletekhez és egy kattintással belül Dynamics 365 egy megtekintés tapasztalat áll-egyszer, amely lehetővé teszi a létrehozása és szerkesztése a pénzügyi jelentések jelentéstervező."
+title: "Pénzügyi jelentések megtekintése és tervezése"
+description: "Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Operationsben. A pénzügyi jelentések egyrészt a Dynamics 365 for Operations rendszeren belüli megtekintésből, másrészt az egy kattintással használható jelentéstervezőből állnak, amellyel pénzügyi jelentéseket hozhat létre és szerkeszthet."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Pénzügyi jelentések megtekintése és a Tervező
+# <a name="view-and-design-financial-reports"></a>Pénzügyi jelentések megtekintése és tervezése
 
-Ez a cikk megtekintése és pénzügyi jelentések létrehozása a Microsoft Dynamics 365 műveletek gyakorlatok, amelyek elmagyarázzák biztosít. Pénzügyi beszámolás műveletekhez és egy kattintással belül Dynamics 365 egy megtekintés tapasztalat áll-egyszer, amely lehetővé teszi a létrehozása és szerkesztése a pénzügyi jelentések jelentéstervező.  
+[!include[banner](../includes/banner.md)]
+
+
+Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Operationsben. A pénzügyi jelentések egyrészt a Dynamics 365 for Operations rendszeren belüli megtekintésből, másrészt az egy kattintással használható jelentéstervezőből állnak, amellyel pénzügyi jelentéseket hozhat létre és szerkeszthet.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>1. Gyakorlat: Alapértelmezett pénzügyi jelentés létrehozása és böngészése
 -----------------------------------------------------------
@@ -45,7 +48,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog létrehozni és b
 3.  Mentse el a dimenzió konfigurációját. Ezután létrehozunk egy jelentést és böngésszük a jelentésben szereplő adatokat.
 4.  Ugrás a **Pénzügyi jelentések** pontra a **Lekérdezések és jelentések** rész alatt a Főkönyvben.
 5.  Válassza ki a **Főkönyvi adatok – Alapértelmezett** jelentés sorát.
-6.  Válassza ki a **Szerkesztés** opciót. Megjegyzés: Kéri, kattintson a letöltés-egyszer jelentéstervező és jelentkezzen be. A hitelesítő adatok használatával jelentkezzen be.
+6.  Válassza ki a **Szerkesztés** opciót. Megjegyzés: A program kérni fogja az egykattintásos jelentés tervező letöltését és a bejelentkezést. A hitelesítő adatok használatával jelentkezzen be.
 7.  Módosítsa az alapévet 2012-re és válassza a **Létrehozás** opciót. Amikor jelentés kerül létrehozásra a jelentés tervezőből, a böngészőben új lapon fog megnyílni. Böngészheti a jelentést az új böngésző lapon, vagy átválthat az eredeti böngésző lapra és megnyithatja a jelentést onnan a **Pénzügyi jelentések** listából történő kiválasztással.
 8.  A megnyitott jelentésben válassza ki az egyik összeget a jelentéssel kapcsolatos számla adatainak kirészletezéséhez.
 9.  A számla részleteinek elérése után válasszon egy számlát adatokkal és a **Leásás a jelentés tranzakciós szintjéig** opciót. A jelentés tranzakció szintjén láthatja azon tulajdonságokat (attribútumokat), amelyek szerepelnek ezen jelentés tervezésében. A tranzakciótól és a számlától függően az attribútumok egy része vagy az összes megjeleníthető.
@@ -55,7 +58,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog létrehozni és b
 13. Válassza ki a **Jelentés beállítások** opciót.
 14. Válassza ki a **Dimenzió szűrő hozzáadása** opciót és válassza az **Üzleti egység** lehetőséget.
 15. Írja be a 001 értéket a mezőbe, majd kattintson az **OK** gombra. A jelentés most már kizárólag a 001 Üzleti egység adatait jeleníti meg. Ez egy testreszabott nézete a jelentésnek, és mások számára nem megtekinthető.
-16. Zárja be a szűrt jelentést. Pénzügyi jelentések Dynamics 365 műveletek felvett bármely pénznemben jeleníthetők meg.
+16. Zárja be a szűrt jelentést. A pénzügyi jelentések bármilyen pénznemben megjeleníthetők, amelyet hozzáadtak a Dynamics 365 for Operations rendszerhez.
 17. Válassza ki a **Pénznem** opciót, majd válassza az **EUR** lehetőséget. A jelentés most euróban jelenik meg. Most bármilyen, a jelentéstervben szereplő pénznemszimbólumok vagy pénznemkódok az alkalmazott pénznemben jelennek meg. Ha egy pénznemre nincs megadva pénznemszimbólum, a pénznem szimbóluma nem jelenik meg.
 18. Zárja be a **Főkönyvi adatok** jelentést.
 19. Zárja be a **Jelentéstervező** ablakot.
@@ -66,7 +69,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fri
 1.  Ugrás a **Pénzügyi jelentések** pontra a Lekérdezések és jelentések rész alatt a Főkönyvben.
 2.  Válassza ki a **Összegző főkönyvi kivonat – Alapértelmezett** jelentés sorát.
 3.  Válassza ki a **Szerkesztés** opciót. Az **Összegző főkönyvi kivonat – Alapértelmezett** a jelentéstervezőben nyílik meg.
-4.  Válassza a **Fájl** menüpontot, majd a **Mentés másként** opciót és adja a jelentésnek a Részletes főkönyvi kivonat attribútumokkal nevet. Megjegyzés: Bármikor Jelentéstervező, létrejön egy új jelentést a pénzügyi jelentések listája frissül a Dynamics 365 műveletekhez.
+4.  Válassza a **Fájl** menüpontot, majd a **Mentés másként** opciót és adja a jelentésnek a Részletes főkönyvi kivonat attribútumokkal nevet. Megjegyzés: Bármikor, ha új jelentés kerül létrehozásra a jelentéstervezőben, a pénzügyi jelentések lista frissítésre kerül a Dynamics 365 for Operations rendszerben.
 5.  A jelentésdefinícióból válassza ki a sordefiníció ikont a **Főkönyvi kivonat – Alapértelmezett sordefiníció** megnyitásához.
 6.  Mentse a sordefiníciót **Részletes főkönyvi kivonat attribútumokkal** néven.
 7.  A kurzort az 50. sorra helyezve válassza a **Szerkesztés** opciót, majd a **Sorok beszúrása dimenziókból** lehetőséget. A Sorok beszúrása dimenziókból segítségével kiválaszthatja, milyen dimenziókat szeretne a sordefiníciójában. Ebben a gyakorlatban létrehozzuk a sordefiníciót a Fő számla használatával.
@@ -96,7 +99,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fri
 25. Zárja be a **Részletes főkönyvi kivonat attribútumokkal **jelentést.
 26. Zárja be a **Jelentéstervező** ablakot.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>3. gyakorlat: Jelentési fa segítségével többdimenziós jelentés létrehozása
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>3. Gyakorlat: Többdimenziós jelentés létrehozása jelentési fa segítségével
 Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Jelentési fát fog létrehozni és hozzáadni jelentésdefinícióhoz egy Költséghely/Felosztásos bevételkimutatás előállításához. Ha befejeződtek a frissítések, létrehozza a Költséghely/Felosztásos bevételkimutatást és böngészi a jelentést a jelentési fa segítségével. A Pénzügyi jelentések listától indulunk.
 
 1.  Ugrás a **Pénzügyi jelentések** pontra a Lekérdezések és jelentések rész alatt a Főkönyvben.
@@ -138,7 +141,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fel
 1.  Ugrás a **Pénzügyi jelentések** pontra a Lekérdezések és jelentések rész alatt a Főkönyvben.
 2.  Válassza ki a sort a nevű jelentés **Mérleg és eredménykimutatás egymás mellé – alapértelmezett**
 3.  Válassza ki a **Szerkesztés** opciót. Válassza ki a sort a nevű jelentés **Mérleg és eredménykimutatás egymás mellé – alapértelmezett**.
-4.  Válassza a **fájl**&gt;**Mentés másként** és a jelentés neve **konszolidált mérleg és eredménykimutatás egymás mellett**.
+4.  Válassza a **Fájl** &gt; **Mentés másként** elemet, és adja a jelentésnek a **Mérleg és bevétel-kimutatás egymás mellett** nevet.
 5.  Módosítsa az alapévet a következőre: 2012.
 6.  Kattintson a **Szervezeti hiearchiák** legördítő nyílra, és válassza a Jelentési fa lehetőséget.
 7.  Kattintson a **Contoso Holdings** legördítő nyílra, és válassza a Jelentési fa lehetőséget.
@@ -151,7 +154,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fel
 14. Zárja be a **Mérleg és bevétel-kimutatás egymás mellett**.
 15. Zárja be a **Jelentéstervező** ablakot.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Gyakorlat 5: Sidebyside megyei jelentés létrehozása
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>5. gyakorlat: Egymás melletti részlegjelentés létrehozása
 A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egymás mellett megyei eredménykimutatásban. Használni egy korábbi sordefiníciót fog, de új jelentésdefiníciót és új oszlopdefiníció használó dimenzió szűrők létrehozása. A Pénzügyi jelentések listától indulunk.
 
 1.  Ugrás a **Pénzügyi jelentések** pontra a Lekérdezések és jelentések rész alatt a Főkönyvben.
@@ -179,8 +182,10 @@ A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egym
 18. **Mentés** a módosításokat, és **készítése**. A jelentés létrehozásának és megnyitásának befejeződése után böngészhet a jelentésben.
 
 ## <a name="additional-resources"></a>További erőforrások
-[Pénzügyi jelentés](\financials\general-ledger\financial-reporting-getting-started.md)<ph id="t1">
-</ph>[pénzügyi jelentések megtekintése](\financials\general-ledger\view-financial-reports.md)<ph id="t2">
-</ph>[Dynamics pénzügyi jelentési Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Pénzügyi jelentések](\financials\general-ledger\financial-reporting-getting-started.md) 
+[Pénzügyi jelentések megtekintése](\financials\general-ledger\view-financial-reports.md) 
+[Dynamics pénzügyi jelentési webnapló](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

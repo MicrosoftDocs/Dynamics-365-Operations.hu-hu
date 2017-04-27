@@ -1,6 +1,6 @@
 ---
 title: "Tárgyi eszközök tömeges módosítása"
-description: "Könyvek használatakor módosíthatja a csoportok az azonos könyv részét képező eszközök értékcsökkenési szabály."
+description: "Ha könyveket használ, akkor egyszerre módosíthatja azoknak az eszközcsoportoknak az értékcsökkenési szabályát, amelyek ugyanahhoz a könyvhöz tartoznak."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-mass-update"></a>Tárgyi eszközök tömeges módosítása
 
-Könyvek használatakor módosíthatja a csoportok az azonos könyv részét képező eszközök értékcsökkenési szabály.
+[!include[banner](../includes/banner.md)]
+
+
+Ha könyveket használ, akkor egyszerre módosíthatja azoknak az eszközcsoportoknak az értékcsökkenési szabályát, amelyek ugyanahhoz a könyvhöz tartoznak.
 
 Például ha az Egyesült Államokban tevékenykedik, és a tárgyi eszközök 40 százalékát az év utolsó negyedévében helyezte üzembe, akkor a negyedéven belüli értékcsökkenés szabályát kell alkalmaznia. A tömeges frissítés segítségével minden eszközt módosíthat, amelynek értékcsökkenését az új szabály szerint kell elszámolni. 
 
@@ -36,6 +39,8 @@ Ha frissíti a tárgyi eszközök értékcsökkenési szabályát, akkor ezzel t
 A már kivezetett eszközök értékcsökkenési szabályának frissítéséhez először törölni kell a meglévő kivezetési tranzakciókat. Emellett illetve a kivezetés következtében létrejött egyéb tranzakciókat is törölni kell. 
 
 Az eszközök értékcsökkenési szabályainak frissítése után elszámolhatja az egyes eszközök rendes és soronkívüli értékcsökkenését. Emellett szükség esetén elvégezheti a manuális korrekciókat is.
+
+
 
 
 

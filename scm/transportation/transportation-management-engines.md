@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-engines"></a>Szállításkezelő kalkulátorok
 
+[!include[banner](../includes/banner.md)]
+
+
 A szállításkezelő programok határozzák meg azt a logikát, amit a Szállításkezelő a szállítási díjak előállítására és feldolgozására használ. 
 
 A szállításkezelő kalkulátor például a szállító szállítmányozási díjához hasonló feladatokat számolja ki. A kalkulátorrendszerrel a Microsoft Dynamics 365 for Operations adatai alapján a számítási stratégiákat futásidőben módosíthatja. A szállításkezelő kalkulátor egy adott szállítmányozó szerződéséhez kapcsolódó, beépülő modulhoz hasonlít.
@@ -58,7 +61,7 @@ Annak érdekében, hogy a szállításkezelő kalkulátor a meghatározott módo
 Az inicializációs adatok beállításához a legtöbb esetben elég a szállításkezelő kalkulátor beállítási képernyőin a **Paraméterek** gombra kattintania. **A távolságkalkulátorra hivatkozó díjkalkulátor példája** A következő példa bemutatja, hogy milyen beállítás szükséges egy díjkalkulátor beállításához, amely a .NET kalkulátortípuson Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine alapul, és egy távolságkalkulátoron alapszik.
 | Paraméter             | Leírás                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | Az adott sémához a díjalap-hozzárendelés adatait értelmező .NET típus. A paraméter értéke szintaxisa áll két szegmensek határolja a függőleges sáv ()|). Az első szegmens a hozzárendelés típusát meghatározó összeállítási nevet tartalmazza. A második szegmens a hozzárendelési típus teljes elérési útvonalának nevét határozza meg. Ebbe beletartozik a típus névtere is. |
+| *RateBaseAssigner*    | Az adott sémához a díjalap-hozzárendelés adatait értelmező .NET típus. A paraméterérték szintaxisa két függőleges vonallal (|) elválasztott szegmensből áll (|). Az első szegmens a hozzárendelés típusát meghatározó összeállítási nevet tartalmazza. A második szegmens a hozzárendelési típus teljes elérési útvonalának nevét határozza meg. Ebbe beletartozik a típus névtere is. |
 | *MileageEngineCode*   | A Microsoft Dynamics 365 for Operations adatbázisban a távolságkalkulátor rekordját azonosító távolságkalkulátor-kód.                                                                                                                                                                                                                                                             |
 | *ApportionmentEngine* | A Microsoft Dynamics 365 for Operations adatbázisban az arányosító kalkulátort azonosító általános kalkulátorkód.                                                                                                                                                                                                                                                              |
 
@@ -87,7 +90,7 @@ A szállításkezelő kalkulátorok metaadatai a különböző kalkulátortípus
 | **Szállításiidő-kalkulátor** és **Távolságkalkulátor** | A metaadatokat közvetlenül olvassa be a távolságkalkulátor konfigurációs beállítási képernyőjéről.                                                                                                                                                                                                                                                                                                                                                                                  |
 
   **Metaadat-példa egy díjkalkulátor esetében** A szállításkezelő kalkulátor számára azonosítani kell a kiindulási címet, a célállamot és a célországot vagy a célrégiót, valamint a szállítás kezdő- és végpontját. A fenti követelmények használatával a metaadatok a következő táblázat adataihoz hasonlóan néznének ki. A táblázat arról is tájékoztat, hogy milyen típusú bemenő adatokra van szükség.
--   Adja meg ezt az információt a **szállítás kezelése**&gt;**telepítő** meg a **minősítse az alaptípus** lap.
+-   Határozza meg ezeket az információkat a **Szállításkezelés** &gt; **Beállítás** pontnál a **Díjalap típusa** lapon.
 
 | Szekvencia | Név                          | Mezőtípus | Adattípus | Keresés típusa    | Kötelező |
 |----------|-------------------------------|------------|-----------|----------------|-----------|
@@ -96,6 +99,8 @@ A szállításkezelő kalkulátorok metaadatai a különböző kalkulátortípus
 | 3        | Kezdőállomás irányítószáma | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
 | 4        | Célállomás irányítószáma   | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
 | 5        | Célország           | Hozzárendelés | Karakterlánc    | Ország/régió |           |
+
+
 
 
 

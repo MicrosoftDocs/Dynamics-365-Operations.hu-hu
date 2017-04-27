@@ -1,6 +1,6 @@
 ---
-title: "Pénzügyi teljesítmény energiaellátási BI-tartalom"
-description: "Ez a témakör ismerteti a Microsoft Dynamics 365 műveletek pénzügyi teljesítmény Microsoft Power BI tartalom csomagjához. Az irányítópult és a jelentések, amelyek szerepelnek a csomag ismerteti, és tájékoztatást nyújt az adatmodell és a csomag létrehozásához használt entitások."
+title: "Pénzügyi Teljesítmény Power BI-tartalom"
+description: "Ez a témakör a Microsoft Dynamics 365 for Operations Pénzügyi Teljesítmény Microsoft Power BI tartalmi csomagot ismerteti. Leírja, hogyan kell használni az irányítópultot és a tartalmi csomagban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,23 +24,26 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Pénzügyi teljesítmény energiaellátási BI-tartalom
+# <a name="financial-performance-power-bi-content"></a>Pénzügyi Teljesítmény Power BI-tartalom
 
-Ez a témakör ismerteti a Microsoft Dynamics 365 műveletek pénzügyi teljesítmény Microsoft Power BI tartalom csomagjához. Az irányítópult és a jelentések, amelyek szerepelnek a csomag ismerteti, és tájékoztatást nyújt az adatmodell és a csomag létrehozásához használt entitások.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>A csomag elérése
+
+Ez a témakör a Microsoft Dynamics 365 for Operations Pénzügyi Teljesítmény Microsoft Power BI tartalmi csomagot ismerteti. Leírja, hogyan kell használni az irányítópultot és a tartalmi csomagban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+
+<a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
 --------------------------
 
-A pénzügyi teljesítmény csomag két változata érhetők el. Egy verziója érhető el a Microsoft Dynamics életciklus szolgáltatások (LCS), és a másik pedig a PowerBI.com.
+A Pénzügyi Teljesítmény csomag két változata érhető el. Az egyik verzió a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból, a másik pedig a PowerBI.com-on érhető el.
 
--   **LCS elérhető verzió:** a pénzügyi teljesítmény LCS elérhető tartalom pack támogatja a Microsoft Dynamics 365 műveletek verzió 1611. A csomag LCS megosztott eszköz könyvtárban található. Töltse le a csomagot, és csatlakoztassa a Microsoft Dynamics 365 műveletekre vonatkozó további információt lásd: [a Microsoft és a partnerek LCS kiemelt BI-tartalom](power-bi-content-microsoft-partners.md).
--   **Elérhető a PowerBI.com verzió:**, amely elérhető a PowerBI.com a pénzügyi teljesítmény csomag támogatja a Microsoft Dynamics AX verziója 7.0 és 7.0.1. Csatlakoztatása és a Dynamics 365 műveleti adatok betöltése kapcsolatos további tudnivalókért lásd: [tartalom Access kiemelt BI PowerBI.com](power-bi-home-page.md).
+-   **LCS-ből elérhető verzió:** az LCS-ből elérhető Pénzügyi Teljesítmény tartalmi csomag a Microsoft Dynamics 365 for Operations 1611-es verzióját támogatja. A tartalmi csomag az LCS Megosztott eszközök könyvtárában található. A tartalomcsomag letöltésére és a Microsoft Dynamics 365 for Operations adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
+-   **A PowerBI.com-ról elérhető verzió:** a PowerBI.com-ról elérhető Pénzügyi Teljesítmény tartalmi csomag a Microsoft Dynamics AX 7.0 és 7.0.1-es verzióját támogatja. A csatlakozással és a Microsoft Dynamics 365 for Operations-adatok betöltésével kapcsolatos további tudnivalókat lásd: [Power BI-tartalom elérése a PowerBI.com webhelyről](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Fő számla beállítása
-Szervezetek szeretné a kötelezettségek és a bevételi összegeket a jelentésekben pozitív összegként jelennek meg, mert a telepítési műveletek Dynamics 365 fő számlák fontos. Ezek pozitív összegként jelennek meg a fő számla, a fő számla típusának meg kell **felelősség** vagy **bevétel**. Ezek a számlatípusokhoz használatakor keresztül a Microsoft kiemelt BI fordított a jelek és megjelenítése a pozitív összegeket.
+Mivel a szervezetek szeretik, ha a kötelezettségeik és a bevételeik összegei pozitív összegként jelennek meg a jelentésekben, a Dynamics 365 for Operations fő számláinak beállítása fontos szerepet játszik. Ugyanis ezen fő számlák pozitív összegként való megjelenítéséhez a fő számla típusaként **Kötelezettség** vagy **Bevétel** értéket kell megadni. E számlatípusok használatakor a Microsoft Power BI szolgáltatáson keresztüli jelentéstétel megfordítja az előjeleket, és az összegeket pozitívként jeleníti meg.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-content-pack"></a>Irányítópult és a jelentések, amelyek szerepelnek a csomag
-Miután csatlakoztatta a tartalmi csomagot a Dynamics 365 for Operations rendszer adataihoz, az irányítópult és a jelentések megjelenítik a pénzügyi adatait. Ha korábban sosem használta a kiemelt BI előtt, többet is megtudhat erről a a [Power BI lap interaktív tanulási](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Az irányítópult az alacsonyabb szintű jelentéseken alapuló adatok összesített lapjait tartalmazza. Minden egyes lap tartalmazza a folyó év összesített információit a szervezeten belüli összes vállalatnál. Íme néhány követ:
+## <a name="dashboard-and-reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott irányítópult és a jelentések
+Miután csatlakoztatta a tartalmi csomagot a Dynamics 365 for Operations rendszer adataihoz, az irányítópult és a jelentések megjelenítik a pénzügyi adatait. Ha még soha nem használt Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Az irányítópult az alacsonyabb szintű jelentéseken alapuló adatok összesített lapjait tartalmazza. Minden egyes lap tartalmazza a folyó év összesített információit a szervezeten belüli összes vállalatnál. Az alábbiakban látható néhány ilyen lap:
 
 -   Készpénz
 -   Az idei teljes bevétel
@@ -56,13 +59,13 @@ Miután csatlakoztatta a tartalmi csomagot a Dynamics 365 for Operations rendsze
 -   Az idei fedezeti mutató
 -   Tényleges vagy költségvetési költségek – Összes vállalat
 
-Minden szelvény biztonsági igazoló jelentést. Ezek a jelentések diagramokot és táblázatokat tartalmaznak, amelyek további információkat nyújtanak. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
+Minden egyes lapot jelentés támaszt alá. Ezek a jelentések diagramokot és táblázatokat tartalmaznak, amelyek további információkat nyújtanak. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
 
 | Jelentés                      | A jelentés tartalmazza az információkat                                                                                                                                                                                                                                                                                                          |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Készpénz-elemzés               | Jogi személy, készpénz negyedévenként, teljes készpénz és készpénz számla szerint a pénzt **Megjegyzés:** a **negyedévenként pénzbeli** jelentés nem tartalmaz nyitó egyenlegek a teljes első negyedévére. Az összes új minden negyedévben feladott tranzakciókat jeleníti meg.                                                                                |
+| Készpénz-elemzés               | Készpénz jogi személyként, negyedévenkénti készpénz, teljes készpénz és készpénz számlánként **Megjegyzés:** A **Negyedévenkénti készpénz** jelentés nem tartalmaz nyitó egyenlegeket a teljes első negyedévére. Az egyes negyedévekben feladott tranzakciók összegét jeleníti meg.                                                                                |
 | Jelenlegi rátaelemzés      | Jogi személy szerinti likviditási ráta, negyedév szerinti, és az aktuális eszközök és a rövid lejáratú kötelezettségek egyenlege szerinti likvidálási ráta                                                                                                                                                                                                                              |
-| Gyorsráta-elemzés        | Jogi személy által gyors arány, gyors arány negyedévenként és készpénz egyenlegek a Kinnlevőségek és a jelenlegi kötelezettségek számlák                                                                                                                                                                                                                      |
+| Gyorsráta-elemzés        | Jogi személy szerinti likvidálási gyorsráta, negyedév szerinti likvidálási gyorsráta, és a készpénz, kinnlevőségek egyenlege és a rövid lejáratú kötelezettségek egyenlege szerinti likvidálási ráta                                                                                                                                                                                                                      |
 | Eladott áruk beszerzési érték elemzése | Eladott áruk beszerzési értéke (ELÁBÉ) jogi személy szerint, az idei és az előző évi ELÁBÉ negyedévenként, ELÁBÉ az értékesítéshez a jogi személy szerint , az összes ELÁBÉ és ELÁBÉ az értékesítési százalék szerint                                                                                                                                                                                   |
 | Forgótőke-elemzés    | Jogi személy szerinti forgótőke, negyedévenkénti forgótőke, aktuális eszközök, rövid lejáratú kötelezettségek és a teljes forgótőke                                                                                                                                                                                                                   |
 | Eszköz- és Tartozás elemzés     | Összes eszköz és tartozás megtérülése a jogi személy szerinti összes eszközhöz, az összes negyedéves eszköz megtérülése a dátumhoz, eszközökhöz, és a kötelezettségekhez                                                                                                                                                                                     |
@@ -71,17 +74,17 @@ Minden szelvény biztonsági igazoló jelentést. Ezek a jelentések diagramokot
 | Bevételelemzés           | A tényleges és a költségvetési eredmény a kamat és az adók előtt (EBIT) a jogi személy, az idei és az előző évi EBIT, a kiadások szerint az árbevétel-százalékhoz, és a tényleges és költségvetési kiadások az árbevételhez                                                                                                                                                          |
 | Bevételelemzés            | A teljes bevétel, a tényleges és a költségvetés teljes árbevétele a jogi személy által, az idei és az előző évi teljes bevétel, az árbevétel kötlségvetés eltérés a jogi személy szerint, és a jelenlegi és az előző időszak összes árbevétele                                                                                                                                                 |
 | Költségelemzés            | Az összes költség, a költségvetés összköltsége a jogi személy szerint, a tényleges és a költségvetési összes kiadás negyedénként, az összes kiadás a számlakategória szerint, és a működési költségek aránya                                                                                                                                                                 |
-| Számlázott bevételelemzés     | Összes kinnlevőség összes kinnlevőség jogi személy által, összesen kinnlévőségek negyedévenként, és a mérleg Követelések számláinak számlák **Megjegyzés:** a jelentés nem tartalmaz, nyitó egyenlegek a fiókok követelések főkönyvi számlák. Az összes feladott számlákat követelés új tranzakciók mutatnak. |
+| Számlázott bevételelemzés     | Összes kinnlevőség, az összes kinnlevőség jogi személy szerint, összes kinnlevőség negyedévenként, a kinnlevőségek számlák egyenlege **Megjegyzés:** A jelentések nem tartalmaznak nyitó egyenlegeket a kinnlevőségek főkönyvi számlákhoz. A Kinnlevőségek közé feladott új tranzakciók összegét mutatják. |
 
 Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálására](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-Az irányítópult és a pénzügyi teljesítményét content Pack jelentéseket tartalmazó adata Dynamics 365 műveleti adatok. A következő vállalkozások a csomag alapjaként használták: **összesített adatok entitások**
+Az irányítópult és a Pénzügyi Teljesítmény tartalmi csomag jelentéseinek kitöltésére a Dynamics 365 for Operations rendszer adatai szolgálnak. A következő entitásokat használták a tartalmi csomag alapjaként: **Összesített adatentitások**
 
--   **GeneralLedgerActivities** – Ez az entitás főkönyvi egyenlegek aggregátumok fiók kategória szerint.
--   **BudgetActivities** – Ez az entitás költségvetési egyenlegek aggregátumok fiók kategória szerint.
+-   **GeneralLedgerActivities** – Ez az entitás a főkönyvi számla egyenlegeit összesíti számlakategória szerint.
+-   **BudgetActivities** – Ez az entitás a költségvetési egyenlegeket összesíti számlakategória szerint.
 
-**Data entities**
+**Adatentitások**
 
 -   FiscalCalendars
 -   MainAccounts
@@ -89,7 +92,7 @@ Az irányítópult és a pénzügyi teljesítményét content Pack jelentéseket
 -   Főkönyvek
 -   ChartofAccounts
 
-Ezeknek az entitásoknak az adatmodell számított mértékek létrehozására használták. A fő teljesítménymutatók (KPI) számítására szolgálnak a számított mértékek és jelentések a csomagot használt. Alapértelmezés szerint a tartalmi csomag tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez módosíthatja a [Microsoft Excel-munkafüzetet](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalmi csomag létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
+Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. A kiszámított mértékek a fő teljesítménymutatók (KPI-k) és a tartalmi csomagban használt jelentések kiszámításához használatosak. Alapértelmezés szerint a tartalmi csomag tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez módosíthatja a [Microsoft Excel-munkafüzetet](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalmi csomag létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
 
 ## <a name="additional-resources"></a>További erőforrások
 Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
@@ -98,6 +101,8 @@ Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia
 -   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](configure-power-bi-integration.md)
+
+
 
 
 

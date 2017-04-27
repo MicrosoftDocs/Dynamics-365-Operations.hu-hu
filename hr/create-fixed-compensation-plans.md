@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-fixed-compensation-plans"></a>Fix kompenzációs konstrukciók létrehozása
 
-A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. Ez a témakör ismerteti az összetevőket, amelyek be kell állítani egy fix kompenzációs konstrukció létrehozása és alkalmazottak igénylése előtt.
+[!include[banner](includes/banner.md)]
 
-A fix kompenzációs összegek az alkalmazottak számára számíthatók ki, a teljesítmény, a régió és az előirányzott fizetésemelések alapján. A Microsoft Dynamics 365 műveletek lépés, a besorolási osztályt és a szalag kompenzációtípusok támogatja.
+
+A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
+
+A fix kompenzációs összegek az alkalmazottak számára számíthatók ki, a teljesítmény, a régió és az előirányzott fizetésemelések alapján. A Microsoft Dynamics 365 for Operations támogatja a lépés, az osztály és a sáv szerinti kompenzációtípust.
 
 ## <a name="fixed-compensation-components"></a>Fix kompenzációs összetevők
 ### <a name="compensation-levels"></a>Kompenzációs szintek
 
-Használható **kompenzációszintek** beállítása a különböző feladatok biztosítása, hogy az alkalmazottak, akik ezeket a feladatokat meglehetősen fizetett kártérítés. A a **kompenzációszintek** lapon állíthatja be a szükséges minden lépést, minőségű és szalag terv kompenzációs szintek. Használja a **Fel** és **Le** gombokat a szinteknek a típusok szerint megfelelő sorrendbe helyezéséhez. Egy adott munkához tartozó kompenzációs szintek beállításával biztosítható, hogy az adott munkához kapcsolódó pozíciókat viselő alkalmazottak ugyanazt a fizetséget kapják.
+**Kompenzációs szintek** megadásával különböző munkákhoz állíthat be kompenzációt, így biztosítva azt, hogy azon alkalmazottak, akik ezeket a feladatokat elvégzik, megfelelően meg legyenek fizetve. A **Kompenzációs szintek** lapon be lehet állítani a lépéses, osztályos és sávos tervekhez tartozó kompenzációs szinteket. Használja a **Fel** és **Le** gombokat a szinteknek a típusok szerint megfelelő sorrendbe helyezéséhez. Egy adott munkához tartozó kompenzációs szintek beállításával biztosítható, hogy az adott munkához kapcsolódó pozíciókat viselő alkalmazottak ugyanazt a fizetséget kapják.
 
 ### <a name="reference-points"></a>Hivatkozási pontok
 
-A **Hivatkozási pontok** a rács azon oszlopai, amelyek meghatározzák az egyes szintekhez tartozó kompenzációs tartományokat. A kompenzációs szintet a sorok jelképezik a rácsban. Referencia osztály típusú tervhez pontok minimális, a középpont és maximum. A hivatkozási pontok létrehozása a **hivatkozásipont** oldalon.
+A **Hivatkozási pontok** a rács azon oszlopai, amelyek meghatározzák az egyes szintekhez tartozó kompenzációs tartományokat. A kompenzációs szintet a sorok jelképezik a rácsban. Az osztályzatok típusához tartozó tervek esetében a minimum, a közép és a maximum a tipikus hivatkozási pontok. A hivatkozási pontokat a **Hivatkozási pontok beállítása** oldalon lehet létrehozni.
 
 ### <a name="compensation-grids"></a>Kompenzációs rácsok
 
@@ -56,11 +59,11 @@ A konfigurált összetevők kombinációjához megtervezhet egy fix kompenzáci�
 
 A **Tartományon kívüliség tűréshatára** beállítás segítségével megadhatja, hogy milyen szigorúan kívánja ellenőrizni, hogy a kompenzációs összegek a minimum és a maximum összeg közé esnek-e. A **Kemény** tűréshatár megköveteli, hogy kompenzáció az adott szinthez meghatározott tartományon belül legyen. A **Puha** tűréshatár figyelmeztetést küld, ha a kompenzációs összeg kívül esik a tartományon, de ennek ellenére lehetővé teszi a folytatást. Ha a tűréshatárhoz a **Nincs** opciót választja, anélkül beírhat bármilyen kompenzációs összeget egy alkalmazotthoz, hogy figyelmeztetést vagy hibaüzenetet kapna. 
 
-A **felvételi szabály** beállítás segítségével megadhatja, hogy minden alkalmazott jár azonos növekedés, függetlenül azok felvételének dátuma (**felvételi szabály** = **nincs**), vagy hogy alkalmazottak az ítélet alapján mennyi ideig őket alkalmazó a ciklus alatt százalékában kell kapnia (**felvételi szabály** = **%**). 
+A **Felvételi szabály** beállításai segítségével megadhatja, hogy minden alkalmazott ugyanazt a fizetésemelést kapja-e, függetlenül felvételük dátumától (**Felvételi szabály** = **Nincs**), vagy az alkalmazottak a jutalom bizonyos százalékát kapják, alkalmazásuk időtartamának függvényében (**Felvételi szabály** = **Százalék**). 
 
 A **Tartomány-kihasználtsági mátrix** akkor hasznos, ha azt szeretné, hogy csökkenjen az időtartam, amely ahhoz szükséges, hogy az alkalmazottak elérjék a tartományuk középpontját, vagy ha növelni szeretné azon időtartamot, amely ahhoz szükséges, hogy az alkalmazottak elérjék a tartományuk maximális hivatkozási pontját. Például azon alkalmazottaknak, akik tartományuk alsó 25%-ában vannak, 110%-os célprémiumot szeretne adni, de azon alkalmazottaknak, akik a tartományuk felső 80%-ban járnak, csak 80%-os célprémiumot kíván adni, így megelőzve azt, hogy a maximális szintet hamar elérjék. 
 
-A fix kompenzációs konstrukció alapjainak meghatározása után beállíthatja a kompenzációs struktúrát a konstrukcióhoz. Kattintson a **kompenzáció beállítása**. A csúszkák párbeszédpanel megnyitása, amely három lehetőséget kínál:
+A fix kompenzációs konstrukció alapjainak meghatározása után beállíthatja a kompenzációs struktúrát a konstrukcióhoz. Kattintson a **Kompenzáció beállítása** lehetőségre. Megnyílik egy párbeszédpaneles csúszka, amely segítségével három lehetőség közül választhat:
 
 -   Új kompenzációs rács létrehozása egy hivatkozásipont-beállítás kijelölésével, és egy rácsnév megadása.
 -   Új kompenzációs rács létrehozása egy meglévő, kiindulási pontként is használható rács másolatának létrehozásával.
@@ -71,7 +74,7 @@ Egy lehetőség kiválasztása után megnyílik a **Kompenzációs struktúra** 
 ## <a name="fixed-compensation-enrollment"></a>Fix kompenzációs beléptetés
 ### <a name="determine-who-is-eligible-for-the-plan"></a>A konstrukcióra jogosultak meghatározása
 
-Ha készen áll az alkalmazottak beléptetésére egy fix kompenzációs tervbe, akkor elsőként meg kell határozni, hogy ki jogosult a tervben meghatározott kompenzációra. A tervet nem lehet hozzárendelni egyetlen alkalmazotthoz sem, amíg nincs meghatározva a jogosultság. Jogosultság beállításához nyissa meg a **támogathatósági szabályok** oldalon. Itt létrehozhatók az új jogosultsági szabály a kompenzációs terv és az alkalmazott teljesítenie kell a terv támogatható feltételeket határozhat meg. Korlátozhatja a jogosultságot részleg, szakszervezet, kompenzációs régió (hely), munka, beosztás funkciója, munka típusa vagy kompenzációs szint szerint. Az alkalmazottak csak akkor léptethetők be a kompenzációs tervbe, ha megfelelnek az összes jogosultsági szabályban meghatározott követelménynek. 
+Ha készen áll az alkalmazottak beléptetésére egy fix kompenzációs tervbe, akkor elsőként meg kell határozni, hogy ki jogosult a tervben meghatározott kompenzációra. A tervet nem lehet hozzárendelni egyetlen alkalmazotthoz sem, amíg nincs meghatározva a jogosultság. A jogosultság beállításához nyissa meg a **Jogosultsági szabályok** oldalt. Itt létrehozhat egy új jogosultsági szabályt a kompenzációs tervhez, és megadhatja a szükséges kritériumokat, amelyek alapján az alkalmazott jogosult a kompenzációs tervre. Korlátozhatja a jogosultságot részleg, szakszervezet, kompenzációs régió (hely), munka, beosztás funkciója, munka típusa vagy kompenzációs szint szerint. Az alkalmazottak csak akkor léptethetők be a kompenzációs tervbe, ha megfelelnek az összes jogosultsági szabályban meghatározott követelménynek. 
 
 **Megjegyzés:** A jogosultsági szabályok meghatározzák a fix és a változó kompenzációs tervhez való jogosultságot. 
 
@@ -83,7 +86,7 @@ A jogosultsági szabályok bizonyos mezőket használnak a Munka, Beosztás és 
     -   A **Szint** mezőt a **Kompenzáció** lapon
 -   A **Beosztások** oldalon az alkalmazhatósági szabály a **Részleg** és a **Kompenzációs régió** mezőket veszi figyelembe.
 
-Az alkalmazhatósági szabály is úgy ítéli meg, az alkalmazott társított szakszervezetek (a a **alkalmazottak** a lap a **dolgozó** fülre, kattintson a **személyes adatok**&gt;**szakszervezetek**).
+Az alkalmazhatósági szabály figyelembe veszi az alkalmazotthoz rendelt szakszervezeteket is (az **Alkalmazottak** oldalon, a **Dolgozó** lapon kattintson a **Személyes adatok** &gt; **Szakszervezetek** lehetőségre).
 
 ### <a name="define-fixed-compensation-actions"></a>Fix kompenzációs műveletek meghatározása
 
@@ -93,7 +96,7 @@ Például ha egy alkalmazotthoz fix kompenzációt állít be, csak **Felvételi
 
 ### <a name="enroll-the-employee"></a>Alkalmazott beléptetése
 
-Az alkalmazott most már hozzárendelhető egy fix kompenzációs konstrukcióhoz. Nyissa meg az **Alkalmazottak** oldalt, majd válassza ki a kompenzációs konstrukcióhoz hozzáadandó alkalmazottat. Kattintson a műveletek ablaktábla **kompenzáció**&gt;**fix konstrukció**. Most már létrehozhat egy új fix kompenzációs művelet azt. 
+Az alkalmazott most már hozzárendelhető egy fix kompenzációs konstrukcióhoz. Nyissa meg az **Alkalmazottak** oldalt, majd válassza ki a kompenzációs konstrukcióhoz hozzáadandó alkalmazottat. A műveleti ablakon kattintson a **Kompenzáció** &gt; **Fix konstrukció** lehetőségre. Most létrehozhat egy fix kompenzációs műveletet ehhez az alkalmazotthoz. 
 
 **Megjegyzés:** A kompenzációs konstrukció mező csak azokat a terveket tartalmazza, amelyre az alkalmazott jogosult az egyes tervekhez beállított alkalmazhatósági szabályok alapján. Ha egy tervhez nincs alkalmazhatósági szabály beállítva,egyetlen alkalmazott sem lesz jogosult az adott tervre. 
 
@@ -103,5 +106,7 @@ A rendszer ellenőrzi, hogy az osztály vagy sáv típusú kompenzációs tervhe
 --------
 
 [Kompenzációs konstrukciók](compensation-plans.md)
+
+
 
 

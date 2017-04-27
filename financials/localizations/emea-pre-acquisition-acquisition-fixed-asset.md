@@ -1,6 +1,6 @@
 ---
-title: "A tárgyi eszköz beszerzés előtti feladása"
-description: "Ez a témakör bemutatja, hogyan állíthatja be és könyvelje a befektetett eszköz beszerzés előtti műveletek."
+title: "Tárgyi eszköz beszerzés előtti műveleteinek feladása"
+description: "Ez a témakör bemutatja, hogyan állíthatja be és könyvelheti a tárgyi eszközök beszerzése előtti műveleteket."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,29 +24,34 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>A tárgyi eszköz beszerzés előtti feladása
+# <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Tárgyi eszköz beszerzés előtti műveleteinek feladása
 
-Ez a témakör bemutatja, hogyan állíthatja be és könyvelje a befektetett eszköz beszerzés előtti műveletek.
+[!include[banner](../includes/banner.md)]
 
-**Megjegyzés:** a funkciót a tárgyieszköz-beszerzés előtti műveletek feladási Magyarország és Csehország elsődleges címe jogalanyokat érhető el. Beszerzés előtti, a befektetett eszköz ÉCS nem, és a beszerzési költségek vagy a tárgyi eszköz nettó könyv szerinti értéke nem változik. Előzetes beszerzés könyvelésekor az a tárgyi eszköz állapota a **szerzett**. A befektetett eszköz, amely a **szerzett** állapota nem értékcsökkenthető. Ezzel szemben, amikor könyveli a beszerzési költséget, az állapota a **nyitott**, és a befektetett eszköz ÉCS.
 
-## <a name="set-up-preacquisitions"></a>Preacquisitions beállítása
-Előzetes beszerzés könyvelése előtt meg kell adnia a következő beállítást:
+Ez a témakör bemutatja, hogyan állíthatja be és könyvelheti a tárgyi eszközök beszerzése előtti műveleteket.
 
--   A a **tárgyi eszközök paraméterei** oldalon, és állítsa a **beszerzés előtti műveletek engedélyezése** be **Igen**.
--   A a **tárgyieszköz-feladási profilok** lapon állítsa be a befektetett eszköz könyvelési profil a beszerzés előtti feladási típus.
+**Megjegyzés:** a tárgyi eszközök beszerzése előtti műveletek könyvelése funkció csak azon jogi személyeknél érhető el, amelyek elsődleges címe Magyarországon vagy Csehországban található. Tárgyi eszköz beszerzés előtti műveletei nem használhatók fel értékcsökkenésben, és ezek nem befolyásolják sem a tárgyi eszköz beszerzési költségeit, sem pedig a tárgyi eszköz nettó könyv szerinti értékét. Beszerzés előtti művelet feladásakor a tárgyi eszköz állapota **Beszerzett** értékre módosul. A **Beszerzett** állapotú tárgyi eszközök nem használhatók fel értékcsökkenésben. Beszerzés feladásakor ellenben a tárgyi eszköz állapota **Nyitva** értékre módosul, és így felhasználható értékcsökkenésben.
 
-## <a name="post-a-preacquisition-of-a-fixed-asset"></a>Könyvelje a befektetett eszköz preacquisition
-1.  A a **tárgyi eszközök** lap, hozzon létre egy új naplót és adja meg a vonatkozó információkat, szükség szerint.
-2.  Kattintson az imént létrehozott napló, **vonalak** megnyitása a **Naplóbizonylat** oldalon.
+## <a name="set-up-preacquisitions"></a>Beszerzési előzmények beállítása
+Beszerzési előzmények feladása előtt meg kell adnia a következő beállításokat:
+
+-   A **Tárgyi eszközök paraméterei** oldalon állítsa a **Beszerzés előtti műveletek engedélyezése** elemet **Igen** értékre.
+-   A **Tárgyieszköz-feladási profilok** lapon állítsa be a beszerzés előtti műveletek feladástípusához használni kívánt tárgyieszköz-feladási profilt.
+
+## <a name="post-a-preacquisition-of-a-fixed-asset"></a>Tárgyi eszköz beszerzés előtti műveletének feladása
+1.  A **Tárgyi eszközök** lapon hozzon létre egy új naplót, és szükség szerint adja meg a vonatkozó információkat.
+2.  Az imént létrehozott naplónál kattintson a **Sorok** elemre a **Naplóbizonylat** oldal megnyitásához.
 3.  Új sor létrehozásához kattintson az **Új** elemre.
-4.  A a **tranzakciótípus** mezőben, válasszon ki egy tranzakciót, amelynek a **a beszerzés előtti** tranzakció típusát.
-5.  Adja meg szükség szerint a többi mező értékeit.
-6.  Kattintson a **ellenőrzi a** a napló sorok ellenőrzéséhez.
-7.  Kattintson a **javaslatok**&gt;**a beszerzés előtti javaslat**.
-8.  Kattintson a **válassza a** a kiválasztási szempontoknak, és kattintson a **OK**.
-9.  Kattintson a **OK** zárja be a **beszerzés előtti javaslat** oldalon.
-10. Kattintson a **feladása**&gt;**feladása** a beszerzés előtti tranzakciók. A a **könyvek** lap, a tárgyi eszköz állapotát kell **szerzett**.
+4.  A **Tranzakciótípus** mezőben válasszon ki egy tranzakciót, amelynek a **Beszerzés előtti** a tranzakciótípusa.
+5.  Igény szerint adjon meg értékeket a fennmaradó mezőkben.
+6.  Kattintson az **Ellenőrzés** elemre a naplósorok ellenőrzéséhez.
+7.  Kattintson a **Javaslatok** &gt; **Beszerzés előtti javaslat** elemre.
+8.  Kattintson a **Kiválasztás** elemre a kijelölési szempontok konfigurálásához, majd kattintson az **OK** gombra.
+9.  Kattintson a **OK** gombra a **Beszerzés előtti javaslat** oldal bezárásához.
+10. A beszerzés előtti tranzakció feladásához kattintson a **Feladás** &gt; **Feladás** lehetőségre. A **Könyvek** oldalon a tárgyi eszköz állapota most elvileg **Beszerzett**.
+
+
 
 
 

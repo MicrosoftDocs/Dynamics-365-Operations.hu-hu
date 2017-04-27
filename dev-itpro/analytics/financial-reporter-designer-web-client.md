@@ -1,5 +1,5 @@
 ---
-title: "Management Reporter - Tervező és a webes ügyfél"
+title: "Felügyeleti jelentéskészítő - Tervező és webes ügyfél"
 description: 
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="management-reporter----the-designer-and-web-client"></a>Management Reporter - Tervező és a webes ügyfél
+# <a name="management-reporter----the-designer-and-web-client"></a>Felügyeleti jelentéskészítő - Tervező és webes ügyfél
+
+[!include[banner](../includes/banner.md)]
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "A felhő POS és MPOS kiterjesztett bejelentkezési funkció beállítása"
+title: "Kiterjesztett bejelentkezés funkció beállítása Pénztár felhőhöz és MPOS-hoz"
 description: "A wiki magába foglalja a felhőalapú pénztár és Kiskereskedelmi Modern pénztár (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit."
 author: josaw1
 manager: AnnBe
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>A felhő POS és MPOS kiterjesztett bejelentkezési funkció beállítása
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Kiterjesztett bejelentkezés funkció beállítása Pénztár felhőhöz és MPOS-hoz
 
 A wiki magába foglalja a felhőalapú pénztár és Kiskereskedelmi Modern pénztár (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
 
 <a name="setting-up-extended-logon"></a>Kiterjesztett bejelentkezés beállítása
 =========================
 
-A vonalkódmaszkok megtalálhatja a telepítő **kereskedelmi és kereskedelmi**&gt;**csatorna beállításait**&gt;**POS telepítési**&gt;**POS profilok**&gt;**Funkcióprofilok**. A **Funkciók** gyorslap a következő kiterjesztett belépéshez tartozó beállításokat tartalmazza.
+A vonalkódmaszkok beállítását megtalálja a következő helyen: **Kiskereskedelem és forgalom** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárprofilok** &gt; **Funkcióprofilok**. A **Funkciók** gyorslap a következő kiterjesztett belépéshez tartozó beállításokat tartalmazza.
 
 ### <a name="staff-bar-code-logon"></a>Munkatárs - vonalkódos bejelentkezés
 
@@ -53,7 +53,7 @@ Ha a **A személyzeti kártyás bejelentkezéshez jelszó szükséges** beállí
 <a name="assigning-an-extended-logon"></a>Hozzárendelés kiterjesztett bejelentkezéshez
 ===========================
 
-Alapesetben csak a menedzser tud kiterjesztett bejelentkezést hozzárendelni a dolgozókhoz. Kiterjesztett bejelentkezési hozzárendeléséhez Ugrás **kiterjesztett bejelentkezés** a POS Terminálon. Saját Kezelőazonosító megadásakor a Keresés mezőbe, majd keresse meg a munkavállaló. Válassza ki a dolgozót, majd kattintson az **Hozzáadás** gombra. A következő oldalon húzza le vagy olvassa be a kiterjesztett belépést, hogy hozzárendelhesse azt a dolgozóhoz. Ha a lehúzás vagy a beolvasás sikeresen megtörtént, az **OK **gomb elérhetővé válik. Kattintson a **OK** gombra, hogy elmentse az adott dolgozóhoz kapcsolódó kiterjesztett bejelentkezést.
+Alapesetben csak a menedzser tud kiterjesztett bejelentkezést hozzárendelni a dolgozókhoz. Kiterjesztett bejelentkezés hozzárendeléséhez, kattintson a **Kiterjesztett bejelentkezés** opcióra a pénztárban. Ezután keressen rá a dolgozóra úgy, hogy begépeli annak dolgozói azonosítóját a keresőmezőbe. Válassza ki a dolgozót, majd kattintson az **Hozzáadás** gombra. A következő oldalon húzza le vagy olvassa be a kiterjesztett belépést, hogy hozzárendelhesse azt a dolgozóhoz. Ha a lehúzás vagy a beolvasás sikeresen megtörtént, az **OK **gomb elérhetővé válik. Kattintson a **OK** gombra, hogy elmentse az adott dolgozóhoz kapcsolódó kiterjesztett bejelentkezést.
 
 <a name="deleting-an-extended-logon"></a>Kiterjesztett bejelentkezés törlése
 ==========================

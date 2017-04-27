@@ -40,7 +40,7 @@ Egy átmozgatási naplóesemény regisztrálásra kerül. Az esemény áthelyezi
 
 ### <a name="example-2-cost-entries-are-created"></a>2. példa: Költségbejegyzések létrehozva
 
-Egy átmozgatási naplóesemény regisztrálásra kerül. Az esemény átadja A cikk egy darab 1 hely 2 helyen. A webhely készletdimenzió önköltségi objektum részének tekintendő. Emiatt az esemény két készlettranzakciót és költségtételt hoz létre.
+Egy átmozgatási naplóesemény regisztrálásra kerül. Az esemény egy darab A cikket visz át az 1. telephelyről a 2. telephelyre. A telephely készletdimenziója az önköltségi objektum részének tekintendő. Emiatt az esemény két készlettranzakciót és költségtételt hoz létre.
 
 ### <a name="example-3-one-cost-entry-is-created"></a>3. példa: Egy költségbejegyzés jön létre
 
@@ -59,11 +59,11 @@ Az új **Költségbejegyzések** lap lehetővé teszi a mennyiségek és a költ
 | 00002   | 2015/01/20 | Beszerzési rendelés | 100001 | 0000101 |               |               |          | 100,00  |
 | 00003   | 2015/01/31 | Kiigazítás     | 100001 | 0000101 |               |               |          | 1500   |
 
-A **Költségtételek** lap lehetővé teszi a dokumentumazonosító és a dátum alapján történő szűréseket. **Megjegyzés:** költség tételek állnak rendelkezésre, csak a [objektumok költség](cost-object.md) vagy engedélyezett termékek.
+A **Költségtételek** lap lehetővé teszi a dokumentumazonosító és a dátum alapján történő szűréseket. **Megjegyzés:** a költségtételek csak a [költségobjektumok](cost-object.md) vagy a kiadott termékek esetében érhetők el.
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Cost objects](cost-object.md)
+[Költségobjektumok](cost-object.md)
 
 

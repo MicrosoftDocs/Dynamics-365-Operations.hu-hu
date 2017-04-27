@@ -39,18 +39,18 @@ Nyomon követheti a szakértelmek például a következők:
 A szakértelem adott személyhez vagy beosztáshoz való hozzárendelése, szakértelem-feltérképezési keresés futtatása és szakértelemprofil létrehozása előtt meg kell adnia a szakértelemre vonatkozó adatokat a **Szakértelmek** képernyőn. Minden egyes szakértelmhez kiválaszthatja a típust és a minősítési modellt.
 
 ## <a name="rating-models"></a>Minősítési modellek
-A minősítési modellek segítenek meghatározni a személy valós szakértelmi szintjét, az elérendő szintet, vagy egy adott beosztáshoz szükséges szintet. Legfeljebb 10 minősítési szintet adhat meg.  A minősítési modell minden egyes szintje hozzá van rendelve egy tényező.  A tényező értéke lesz a pontszámokat, amely különböző minősítési modellek használata normalizálandó.  A tényezőnek kell lennie 0-9 és az egyes szintek között számos egyedi tényező kell rendelkeznie.  A magasabb értékű szorzóval rendelkező szintek nagyobb súlyt képviselnek a minősítés modellben.
+A minősítési modellek segítenek meghatározni a személy valós szakértelmi szintjét, az elérendő szintet, vagy egy adott beosztáshoz szükséges szintet. Legfeljebb 10 minősítési szintet adhat meg.  Egy értékelési modell minden szintjéhez tényező társul.  A tényező értékét a különböző minősítési modelleket használó készségek pontszámainak normalizálására használják.  A tényezőnek egy 0 és 9 közötti számnak kell lennie, és minden szinthez egyedi tényezőnek kell tartoznia.  A magasabb értékű szorzóval rendelkező szintek nagyobb súlyt képviselnek a minősítés modellben.
 
 ## <a name="specify-job-skills"></a>Beosztáshoz szükséges szakértelmek meghatározása
-A feladat adatainak bevitelekor szakértelemről, amely egy személy van szükség a projekthez szükséges munka elvégzése is megadhat.  Megadhatja továbbá a kívánt szinten minden szakértelem, valamint a szakértelem fontossági szintjét. Különböző beosztásoknál ugyanaz a szakértelem eltérő fontosságú lehet.
+Ha információkat ad meg egy munkakörről, megadhatja azokat a készségeket, amelyekre a személynek szüksége van a munkakörhöz szükséges munka elvégzéséhez.  Emellett megadhatja a kívánt szintet minden egyes készség számára, továbbá a készség fontosságának szintjét is. Különböző beosztásoknál ugyanaz a szakértelem eltérő fontosságú lehet.
 
 ## <a name="enter-skills-for-workers-applicants-or-contacts"></a>A dolgozók, pályázók és kapcsolattartók szakértelmeinek megadása
 A dolgozók, pályázók vagy kapcsolattartók megcélzott vagy már megszerzett szakértelmeit is rögzítheti. A megcélzott szakértelem olyan szakértelem, amelyet az adott személy el szeretne érni. A tényleges szakértelem az, amivel már rendelkezik.
 
 ## <a name="skill-mapping-and-skill-mapping-profiles"></a> A szakértelem-feltérképezés és a szakértelem-feltérképezési profilok beállítása
-Létrehozhat egy dolgozó, pályázó vagy kapcsolattartó személy, aki egy adott típusú feladat elvégzéséhez kereséséhez a szakértelem-feltérképezés keresése. Szakértelem-feltérképezési keresés megjelenését keresztül képességek, oktatás, tanúsítványok, a bizalom és a projekt tapasztalat és a megadott feltételeknek megfelelő találatot.  Például hasznos lehet tudni, ahol a munkavállalók a szervezetben létrehozott a CPA.
+Létrehozhat egy készségleképező keresést olyan dolgozó, jelentkező vagy kapcsolattartó kereséséhez, aki megfelelő képesítéssel rendelkezik egy adott feladattípus végrehajtásához. A készségleképező keresések készségek, képzés, tanúsítványok, megbízható pozíciók és projekttapasztalatok között keresnek, és olyan találatokat adnak vissza, amelyek megfelelnek a megadott feltételeknek.  Például hasznos lehet tudni, hogy szervezete mely dolgozói keresték meg a CPA-jukat.
 
-Szakértelem feltérképezése-profilok lehetővé teszik jelenlegi alkalmazottak vagy vállalat igényeinek közvetlenül megfelelő képesítéssel rendelkező jelöltek keresése.  Például létrehozhat egy nyitott pozíciót a szervezetben a szakértelem-feltérképezés profilt. Egy adott beosztáshoz profilok létrehozása és másolása a szakértelem, a végzettség és a tanúsítványt az adott feladat a profilt, gyorsan kereshet dolgozók, pályázó és kapcsolattartó személyek megfelelő egy vagy több mellőzhető a profilban megadott feltételeknek megfelelő és a pályázók, akiknek szakismeretei leginkább megfelelnek a projekthez szükséges szakértelmek listájának megtekintése.
+A készségleképező profilokkal olyan jelenlegi alkalmazottakra vagy jelöltekre kereshet, akiknek olyan végzettségei vannak, amelyek közvetlenül megfelelnek az üzleti szükségleteknek.  Létrehozhat például egy készségleképezési profilt a szervezeténél meglévő nyitott pozícióhoz. Egy adott beosztáshoz profilok létrehozása és másolása a szakértelem, a végzettség és a tanúsítványt az adott feladat a profilt, gyorsan kereshet dolgozók, pályázó és kapcsolattartó személyek megfelelő egy vagy több mellőzhető a profilban megadott feltételeknek megfelelő és a pályázók, akiknek szakismeretei leginkább megfelelnek a projekthez szükséges szakértelmek listájának megtekintése.
 
 <table>
 <thead>
@@ -79,6 +79,6 @@ Szakértelemprofil-elemzés létrehozásával egy dolgozó, pályázó vagy kapc
 <a name="see-also"></a>Lásd még
 --------
 
-[Human resources](index.md)
+[Emberi erőforrások](index.md)
 
 

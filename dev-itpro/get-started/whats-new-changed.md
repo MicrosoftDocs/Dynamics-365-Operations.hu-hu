@@ -41,23 +41,23 @@ A legújabb verzióra való frissítéshez lásd: [A Dynamics 365 for Operations
 <thead>
 <tr class="header">
 <th><strong>Kiadás</strong></th>
-<th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
-<th><strong><strong>További</strong></strong></th>
+<th><strong><strong>Verzió</strong></strong></th>
+<th><strong><strong>Szám felépítése</strong></strong></th>
+<th><strong><strong>Elérhetőség</strong></strong></th>
+<th><strong><strong>További tudnivalókért</strong></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>A Microsoft Dynamics 365 for Operations platformja</td>
-<td>Platformfrissítés 4</td>
+<td>4-as platformfrissítés</td>
 <td>7.0.4425.16160</td>
-<td>Február 2017</td>
+<td>február 2017.</td>
 <td><ol>
-<li>Keresse fel a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a>.</li>
-<li>Válassza ki a <strong>Újdonságok</strong> fülre.</li>
-<li>A a <strong>alkalmazások</strong> részben jelölje be <strong>Dynamics 365 műveletek</strong>.</li>
-<li>A a <strong>területek</strong> részben jelölje be <strong>felhő Platform</strong>.</li>
+<li>Lépjen a <a href="https://roadmap.dynamics.com/">Dynamics 365 tervhez</a>.</li>
+<li>Válassza ki az <strong>Újdonságok</strong> lapfület.</li>
+<li>Az <strong>Alkalmazások</strong> szakaszban válassza ki a <strong>Dynamics 365 for Operations</strong> pontot.</li>
+<li>A <strong>Területek</strong> szakaszban válassza ki a <strong>Felhőplatform</strong> lehetőséget.</li>
 </ol></td>
 </tr>
 <tr class="even">

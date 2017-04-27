@@ -1,6 +1,6 @@
 ---
-title: "Információk kereséséhez használja a keresések"
-description: "Microsoft Dynamics 365 műveletekhez sok mező van kereséseket, amelyek segítségével könnyen megtalálják a megfelelő vagy a kívánt értéket. Számos további lehetőségét, amely teheti ezeket a vezérlőket használhatóbbá és a felhasználók hatékonyabb kereséseket hozzá lettek adva. Ez a témakör új keresési szolgáltatások tanulni fogunk, és kap hasznos tippeket megszerezni a keresések ki optimális használatát a rendszer."
+title: "Információk megtalálása keresésekkel"
+description: "A Microsoft Dynamics 365 for Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,59 +24,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>Információk kereséséhez használja a keresések
+# <a name="use-lookups-to-find-information"></a>Információk megtalálása keresésekkel
 
-Microsoft Dynamics 365 műveletekhez sok mező van kereséseket, amelyek segítségével könnyen megtalálják a megfelelő vagy a kívánt értéket. Számos további lehetőségét, amely teheti ezeket a vezérlőket használhatóbbá és a felhasználók hatékonyabb kereséseket hozzá lettek adva. Ez a témakör új keresési szolgáltatások tanulni fogunk, és kap hasznos tippeket megszerezni a keresések ki optimális használatát a rendszer.  
+[!include[banner](../includes/banner.md)]
 
-<a name="responsive-lookups"></a>Válaszol keresések
+
+A Microsoft Dynamics 365 for Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit.  
+
+<a name="responsive-lookups"></a>Kontextusfüggő keresések
 ------------------
 
-Korábbi verzióiban a Dynamics 365 műveletek esetében a keresési vezérlő tevékenység során a felhasználó kellene explicit műveletet a legördülő menü megnyitása. Ez történt a csillag beírásával (\*) a Keresés a vezérlőelem aktuális értéke alapján szűrni a vezérlőelemet, a legördülő gombra kattintva, és segítségével a **Alt**+**le** billentyűparancsot. Keresési vezérlők web jelenlegi gyakorlatának jobban illeszkedjenek a következőképpen módosult:
+A Dynamics 365 for Operations korábbi verzióinál a keresővel való interakció során a felhasználónak konkrét műveletet kellett végrehajtania a legördülő menü megnyitásához. Lehet, hogy csillagot (\*) írt be a keresés jelenlegi érték alapján történő szűrése érdekében, a legördülő gombra leadott kattintással, illetve az **Alt**+**Lefelé nyíl** billentyűkód megadásával. A kereső felülete a következőképpen módosult annak érdekében, hogy jobban igazodjon a internetes gyakorlatokhoz:
 
--   Keresési legördülő menük most automatikusan megnyíljon enyhe szünetben ír, a legördülő menü tartalmát a keresési vezérlőelem értéke alapján szűrni.
-    -   Vegye figyelembe, hogy a csillag karakter beírása után a legördülő lista automatikus megnyitása a régi viselkedés (\*) elavult.
--   Miután a Keresés legördülő menüből nyitotta meg, a következő történik:
-    -   A kurzor a keresési vezérlő (a fókusz áthelyezése a legördülő menüben) nem marad így a vezérlőelemben lévő érték módosításával is. Azonban a felhasználó továbbra is használhatja a **fel** és **le** sorok a legördülő menüből, és adja meg a legördülő menüben jelölje ki az aktuális sor.
-    -   A legördülő menü tartalmát a keresési vezérlőelem értékének végrehajtott módosításokat követően helyesbíti.
+-   A Keresés legördülő menüi automatikusan megnyílnak a gépelés során jelentkező kis szünet után, és a legördülő menü tartalmát a kereső vezérlőelemeinek értéke alapján szűri a rendszer.
+    -   Kérjük, vegye figyelembe, hogy megszűnt az a régi funkció, hogy a legördülő menü automatikusan megnyílt a csillag (\*) karakter beírását követően.
+-   A kereső legördülő menüjének megnyitását követően a következők történnek:
+    -   A kurzor a keresőben marad (ahelyett, hogy a fókusz a legördülő menübe kerülne), és Ön továbbra is módosításokat hajthat végre a vezérlő értékénél. Azonban a felhasználó továbbra is használhatja a **Felfelé nyíl** és a **Lefelé nyíl** gombokat a sorok legördülő menüben való módosításához, az Enter billentyűvel pedig kijelölheti az aktuális sort a legördülő menüben.
+    -   A legördülő menü tartalma módosul azt követően, hogy módosította a kereső értékét.
 
-Képzelje el például a keresési mező neve **Város**. 
+Képzelje el például a **Város** keresőmezőt. 
 
-Ha a fókusz a van a **Város** mezőben kezdheti a város, amelyet beírásával néhány betűt, mint a "col."  Írja be a befejezése után a keresés automatikusan megnyíljon, e városok "oszlop"-val kezdődő szűrt. 
+Amikor a fókusz a **Város** mezőn van, elkezdheti keresni a kívánt város megkeresését néhány betű beírásával, például: „bud”.  Miután abbahagyja a gépelést, a kereső automatikusan megnyílik, azokra a városokra szűrve, amelyek a „col” betűkkel kezdődnek. 
 
 [![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png) 
 
-Ezen a ponton a kurzor még van a keresési mezőben. Ha folytatja, az értéke "oszlop", írja be, a keresési tartalom automatikus megfelelően legkésőbb a vezérlőelemben lévő érték beállítása. 
+Ezen a ponton a kurzor még mindig a keresési mezőben van. Ha folytatja a gépelést, és az érték „colum” lesz, akkor a kereső tartalma automatikusan módosul, és ezáltal csak a legújabb érték látható a felületen. 
 
 ![updateFilterLookupExample](./media/updatefilterlookupexample.png) 
 
-Annak ellenére, hogy a fókusz még a keresési vezérlő van, akkor is használhatja a **fel** vagy **le** jelölje ki a sort, amely a kijelölni kívánt billentyűket. Ha megnyomja a **Enter** a keresésből a kijelölt sor lesz választva, és a vezérlőelem értéke módosul. 
+Annak ellenére, hogy a fókusz még mindig a keresőben van, a **Felfelé nyíl** vagy a **Lefelé nyíl** billentyűvel kiemelheti a kijelölni kívánt sort. Ha megnyomja az **Enter** billentyűt, kiválasztásra kerül a kijelölt sor a keresésből, és a vezérlő értéke frissül. 
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
-## <a name="typing-in-more-than-ids"></a>Több, mint azonosítók beírása
-Adatok bevitele esetén természetes a felhasználóknak, hogy azonosítja az entitásokat, például egy vevő vagy szállító neve helyett egy azonosítóját az entitás szempontjából. Dynamics 365 keresések sok (de nem minden) most lehetővé teszi a helyi adatbevitel műveletekhez aktuális verziójában. Ez nagyszerű szolgáltatása lehetővé teszi, hogy a felhasználó Azonosítóját vagy a megfelelő nevet írja be a keresési vezérlő. 
+## <a name="typing-in-more-than-ids"></a>Az azonosítón túli adatok beírása
+Adatok bevitele esetén természetes, hogy a felhasználók egy entitást (például ügyfelet vagy szállítót) a neve, és nem az entitásra jellemző azonosító alapján azonosítanak. A Dynamics 365 for Operations jelenlegi verziójában számos (de nem az összes) keresés mostantól a kontextus szerinti adatbevitelt is lehetővé teszi. Ez a nagyszerű funkció lehetővé teszi a felhasználó számára, hogy az azonosítót vagy a megfelelő nevet beírja a keresőbe. 
 
-Tegyük fel, hogy a **vevői számla** mezőben, amikor értékesítési rendelést hoz létre. Ez a mező mutatja a **Fiókazonosító** az a vevő, de a felhasználó általában inkább adja meg egy **fióknév** helyett egy **Fiókazonosító** "Erdő Wholesales" helyett "US-003" például egy eladási rendelés létrehozásakor a mező
+Érdemes például fontolóra vennie a **Vevői számla** mező használatát egy értékesítési rendelés létrehozásakor. Ez a mező mutatja a vevő **számlaazonosítóját**, de a felhasználók általában inkább **számlanevet** írnak be **számlaazonosító** helyett ennél a mezőnél, amikor létrehoznak egy értékesítési rendelést, mint például „Tip-Top Nagyker” a „HU-003” helyett.
 
-Ha a felhasználó adhatja meg az **Fiókazonosító** a keresési vezérlőbe, a legördülő menü automatikusan nyitna az előző szakaszban leírtak szerint, és a felhasználó a keresési lenne látni, ahogy az lent látható.
+Ha a felhasználó elkezdett beírni egy **számlaazonosítót** a keresőbe, akkor a legördülő menü automatikusan megnyílik, ahogyan az előző szakaszban látható, és a keresés a felhasználó számára az alábbiak szerint jelenik meg.
 
-[![A Vevőkód számla bevitelekor környezetfüggő keresés](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Környezetfüggő keresés a vevő számlaazonosítójának megadásakor](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
-Azonban a felhasználó most is megadhat az elején egy **fiók neve** is. Észlelhető, ha a felhasználó látja a következő keresés. Értesítés a **neve** oszlop átkerül a Keresés az első oszlop, és a keresés rendezni és szűrni hogyan alapján a **neve** oszlop.
+A felhasználó immár azonban megadhatja egy **Számlanév** kezdetét is. Ennek észlelése esetén a felhasználó a következő keresőt láthatja. Fedezze fel, hogyan helyeződik át a **Név** oszlop a keresés első oszlopává, és hogyan történik meg a keresés rendezése és szűrése a **Név** oszlop alapján.
 
-[![Környezetfüggő keresés bevitelekor a vevő neve](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![A Vevőnév bevitelekor környezetfüggő keresés](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Rács oszlopfejlécek segítségével speciális szűrés és rendezés
-A keresési fejlesztések nagymértékben az előző két szakaszban tárgyalt javításához keresse meg a sorok alapján a "kezdete" Keresés, keresés képessége, a felhasználó a **ID** vagy **neve** a keresési mezőjében. Azonban vannak olyan helyzetek, amelyekben Speciális szűrés (vagy rendezés) megkereséséhez szükség van a helyes sor. Ebben az esetben a felhasználónak ismernie kell a rács-oszlopazonosítók belül a Keresés a szűrési és rendezési beállítások használata. Képzelje el például egy értékesítésirendelés-sor beírása alkalmazott, aki meg kell találnia "kábel" a termék jobb. Írja be a "kábel" a **cikkszám** vezérlőelem nem hasznos, nem termék neve kezdődik "kábel." 
+## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Rács oszlopfejlécek használata speciális szűrésre és rendezésre
+Az előző két szakaszban tárgyalt keresési fejlesztések nagy mértékben javítják a felhasználók azon képességét, hogy navigáljanak a keresés soraiban az „ezzel kezdődik” keresésekkel, a keresés **Azonosító** vagy **Név** mezőjében. Vannak azonban olyan helyzetek, amelyekben speciálisabb szűrés (vagy rendezés) szükséges a megfelelő sor kikereséséhez. Ezekben a helyzetekben a felhasználónak szüksége van a szűrési és rendezési lehetőségekre a keresésen belül található rács oszlopfejléceinél. Például képzelje el, hogy egy alkalmazott belép egy értékesítési rendelésbe, és meg kell találnia a megfelelő „kábelt” termékként. Ha a „kábel” lehetőséget írja be a **Cikkszám** mezőbe, az nem segít, mert nincsenek olyan terméknevek, amelyek a „kábel” szöveggel kezdődnek. 
 
 ![emptyitemlookup](./media/emptyitemlookup.png) 
 
-Ehelyett a felhasználónak ismernie kell a keresési vezérlőelem értékét, a Keresés legördülő menü megnyitása és a legördülő menü segítségével a rács oszlopnak a fejlécénél, szűrés, ahogy az lent látható. Egér (vagy touch) felhasználó is egyszerűen kattintson (vagy touch) bármelyik oszlop címsorára a szűrési és rendezési beállítások az adott oszlop eléréséhez. Billentyűzet felhasználó, a felhasználó egyszerűen kell nyomja meg az ENTER **Alt**+**le****nyíl** segítségével mozgathatja a fókuszt a legördülő menüből, amely után a felhasználó lapon a megfelelő oszlopba, és nyomja le még egyszer **Ctrl**+**G** a rács oszlopfejléc legördülő menüjének megnyitása. 
+Ehelyett a felhasználónak törölnie kell a keresési vezérlő értékét, nyissa meg a keresési legördülő menüt, és szűrje le a legördülő menüt a rács oszlopfejléc segítségével, az alábbiak szerint. Az egeret (vagy érintéses vezérlőt) használók egyszerűen rákattinthatnak (vagy megérinthetik) bármelyik oszlopfejlécre az adott oszlop szűrési és rendezési lehetőségeinek eléréséhez. A billentyűzetet használóknak egyszerűen meg kell nyomniuk az **Alt**+**Lefelé** **nyíl** kombinációt másodjára a fókusz legördülő menübe való áthelyezését követően, és ezt követően a felhasználó átválthat a megfelelő oszlopra, majd megnyomhatja a **Ctrl**+**G** billentyűkombinációt a rácsos oszlopfejléc legördülő menüjének megnyitásához. 
 
 [![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png) 
 
-A szűrő van alkalmazva (lásd az alábbi képen), miután a felhasználó keresheti meg és jelölje ki a sort, a szokásos módon. 
+A szűrő alkalmazása után (lásd az alábbi képet) a felhasználó a szokásos módon találhatja meg és választhatja ki a sort. 
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
 
 

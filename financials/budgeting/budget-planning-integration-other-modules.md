@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-integration-with-other-modules"></a>A Költségvetés-tervezés integrálása más modulokkal
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="periodic-processes-for-generating-budget-plans"></a>Időszaki folyamatok költségvetési tervek létrehozásához
@@ -49,13 +52,13 @@ Az időszaki folyamatok alapvető összetevői ugyanazok, mint a többi folyamat
 
 Minden létrehozási folyamat kapcsán az alábbi műveletek állnak rendelkezésre:
 
--   **Hozzon létre egy új költségvetési terv** hoz létre egy új tervet, amely a kijelölt attribútumokkal rendelkezik a ** cél ** szakasz. Ezeknek a jellemzőknek nem kell egyedinek lenniük. Így tehát két tervnek is lehet azonos a neve, illetve a további értékei.
+-   Az **Új költségvetési terv létrehozása** a **Cél** szakaszban kiválasztott jellemzőknek megfelelő új tervet hozza létre. Ezeknek a jellemzőknek nem kell egyedinek lenniük. Így tehát két tervnek is lehet azonos a neve, illetve a további értékei.
 -   **A meglévő költségvetési tervváltozat cseréje** a cél költségvetési terv költségvetési tervváltozatában szereplő összes adat törlése, illetve a kiválasztott forrásadatokat használó új sorok létrehozása.
 -   **A meglévő költségvetési tervváltozat frissítése, és új adatok hozzáfűzése** a meglévő sorok frissítése a forrássoroknak megfelelő céltervben, és új sorokat hozzáadása új adatok rögzítéséhez. A megfeleltetés a főkönyvi számla, a dátum, a költségvetési osztály, illetve a többi mező alapján történik. Ha például előre jelzett beosztások alapján hoz létre költségvetési terveket, úgy kiemelt szerepet játszik a beosztásszám. Minden, a forrás beosztásszámmal azonos beosztásszámot tartalmazó sor helyére a forrás új sorai kerülnek.
 
 ### <a name="source"></a>Forrás
 
-Az összes folyamat a **forrás** lap lehetővé teszi adatok szűrése a **szűrő** gombra. Alapértelmezés szerint adott mezők a szűrő minden folyamathoz hozzáadódnak. Ha például a **Költségvetési terv létrehozása főkönyv alapján** folyamatot vesszük, a **Főkönyvi számla** és a **Fő számla** kategóriák érhetők el, és jelennek meg a létrehozás lapon. Az Ön által a szűrőhöz hozzáadott mezők is hozzáadásra kerülnek az oldalhoz , csakúgy, mint az Ön által hozzáadott feltételek.
+A **Forrás** lap minden folyamat esetében lehetővé teszi az adatok, a **Szűrő** gomb segítségével történő szűrését. Az alapértelmezés szerint a rendszer konkrét mezőket társít minden szűrőhöz. Ha például a **Költségvetési terv létrehozása főkönyv alapján** folyamatot vesszük, a **Főkönyvi számla** és a **Fő számla** kategóriák érhetők el, és jelennek meg a létrehozás lapon. Az Ön által a szűrőhöz hozzáadott mezők is hozzáadásra kerülnek az oldalhoz , csakúgy, mint az Ön által hozzáadott feltételek.
 
 ### <a name="target"></a>Cél
 
@@ -63,7 +66,7 @@ Az **Előzmények** beállítás a **Cél** lapon lehetővé teszi, hogy a forr�
 
 Az oldal tetején található **Összesítési szempont** mező meghatározza a használt dátumot is. Ez a mező összesíti az összegeket, illetve opcionálisan a pénzügyi év vagy időszak első napját állítja be érvényességi dátum gyanánt. 
 
-A **Cél** lapon található számos mező az Ön által választott művelet függvényében lesz szerkeszthető vagy írásvédett állapotú. Ha az új költségvetési terv létrehozása művelet helyett egy meglévő terv módosítására vált, úgy nem lesz elérhető a **Költségvetési terv neve** mező, viszont elérhetővé válnak a meglévő terv kiválasztásához kapcsolódó mezők. Mindkét **Target** lap és a ** forrás ** fülre, a **főkönyvi** mező nem érhető el mindig, mivel a értéke határozza meg a kijelölt költségvetés-tervezési folyamat. 
+A **Cél** lapon található számos mező az Ön által választott művelet függvényében lesz szerkeszthető vagy írásvédett állapotú. Ha az új költségvetési terv létrehozása művelet helyett egy meglévő terv módosítására vált, úgy nem lesz elérhető a **Költségvetési terv neve** mező, viszont elérhetővé válnak a meglévő terv kiválasztásához kapcsolódó mezők. Sem a **Cél**, sem a **Forrás** lapon nem érhető el a **Főkönyv** mező, mivel ezt az értéket a kiválasztott költségvetés-tervezési folyamat határozza meg. 
 
 A **Költségvetési osztály** mezőben költségtranzakciók vagy bevételi tranzakciók formájában tudja megadni a költségvetési terv sorait. A bevételi tranzakciók jellemzően követel tételként jelennek meg a főkönyvi számlán, így azokat a rendszer negatív összegként tárolja. Ezek a tranzakciók jellemzően a költségvetési tervben is negatív összegként szerepelnek. Amennyiben azonban a terv elrendezésben hozzáadja a költségvetési osztály mezőt, úgy lehetővé teszi, hogy a bevétel pozitív összegként jelenjen meg.
 
@@ -73,7 +76,7 @@ Három mező nyújt további funkciókat: **Szorzó**, **Minimum** és **Kerekí
 
 A költségvetési tervösszeg kiszámításához a rendszer összeszorozza a **Szorzó** mezőben található értéket a forrásösszeggel. Ezután helyesbítheti az összegeket a költségvetésiterv-sorok létrehozásakor. Egy 3 százalékos növekedés beállításához például adja meg az **1,03** összeget. A szorzó csak pozitív szám lehet. 
 
-A **Minimum** mezőben küszöbértéket tud megadni költségvetésiterv-sor létrehozásához. Ha a forrásösszeg kisebb ennél az értéknél, a rendszer nem hoz létre költségvetésiterv- sort. Érték **0,00** lehetővé teszi, hogy az összegek, de nem korlátozza a sorok pozitív összegek. (Nincs érték korlátozza, hogy a pozitív összegek sorokat. Negatív összegek mindig szerepelnek, és követel tételek általában jelölik.)
+A **Minimum** mezőben küszöbértéket tud megadni költségvetésiterv-sor létrehozásához. Ha a forrásösszeg kisebb ennél az értéknél, a rendszer nem hoz létre költségvetésiterv- sort. A **0,00** beállítás minden összeget lehetővé tesz, ideértve a negatív összegeket is. (Nincs olyan beállítás, amely a pozitív összegekre korlátozná a sorokat. A rendszer mindig figyelembe veszi a negatív összegeket is , melyek általában követel tételek.)
 
 A **Kerekítési szabály** mező lehetővé teszi, hogy beállítsa az Ön által létrehozott költségvetésiterv-sorok pontossági szintjét. Az összegek az adott pénznem legközelebbi 1,00, 10,00, 100,00 stb. értékére kerekíthetők.
 
@@ -86,13 +89,13 @@ A **Költségvetési osztály** mező beállítása a célban **Költség** vagy
 
 ### <a name="generate-budget-plan-from-fixed-assets"></a>Költségvetési terv létrehozása tárgyi eszközök alapján
 
-A **Költségvetési terv létrehozása tárgyi eszközök alapján** folyamat nem tartalmaz időszaki vagy nap összesítési lehetőséget. Még nincs lehetőség a terv szerint történelmi beállításához. A periodikus folyamat segítségével a költségvetés-tervezés tervezett befektetett eszközök tranzakcióit szerepeltetni.
+A **Költségvetési terv létrehozása tárgyi eszközök alapján** folyamat nem tartalmaz időszaki vagy nap összesítési lehetőséget. Ugyanúgy nincs lehetőség a terv előzményként történő beállítására. Ez az időszaki folyamat a tárgyi eszközökre vonatkozó előre jelzett tranzakciók, a költségvetés-tervezés során történő felhasználását teszi lehetővé.
 
 ### <a name="generate-budget-plan-from-forecast-positions"></a>Költségvetési terv létrehozása előrejelzési pozíciók alapján
 
 A **Költségvetési terv létrehozása előre jelzett beosztások alapján** folyamat a forrásban szereplő előre jelzett beosztásokat rendeli hozzá a költségvetési terv sorához. A beosztást úgy tudja megtekinteni, ha az előre jelzett beosztást sorként belefoglalja a költségvetési terv elrendezésbe a **Költségvetésiterv-sorok** lekérdezés segítségével. Ha nem szeretné, hogy az előre jelzett beosztás a költségvetésiterv-sorokhoz hozzárendelésre kerüljön, a **Költségvetésiterv-sor beosztás befoglalása** lehetőséget állítsa **Nem** értékre.
 
-A költségvetési terv sorok főkönyvi számla és a beosztás szerint összesítik. Azonban, hogy a sorok csak főkönyvi számla szerint összesítik a beosztás száma is kizárhat. A **Cél** lapon állítsa a **Beosztás befoglalása a költségvetési tervbe** lehetőséget **Nem** értékre.
+A költségvetési tervben szereplő sorok összesítése főkönyvi számla és a beosztás szerint történik. Ki tudja azonban zárni a beosztásszámot, hogy a rendszer egyedül a főkönyvi számla szerint végezze az összesítést. A **Cél** lapon állítsa a **Beosztás befoglalása a költségvetési tervbe** lehetőséget **Nem** értékre.
 
 A **Költségvetési terv teljes munkaidőssel egyenértékű változata** mezőben tudja kiválasztani, ha szeretné a költségvetési tervben feltüntetni a teljes munkaidős egyenérték (FTE) számot. Ez a mező egyedül a cél költségvetési terv elrendezésében szereplő, mennyiség típusú változatokat tartalmazhat. Teljes munkaidős egyenérték változat kiválasztása esetén ki kell választania egy teljes munkaidős egyenérték fő számlát is. A rendszer ezt a számlát használja a mennyiségalapú költségvetésiterv-sorok létrehozásához. 
 
@@ -140,5 +143,7 @@ Válasszon ki egy sort, majd kattintson a **Költségvetésiterv-sorok** gombra 
 Használja a **Szállítmány-előrejelzés** és **Igény-előrejelzés** gombokat a lekérdezések futtatásához. A lekérdezés mindkét esetben olyan előrejelzés-sorokat keres, melyek alapján a költségvetésiterv-sorok létrehozhatóak lettek volna. 
 
 További rendelkezésre álló jelentés például az **Előre jelzett beosztások költségvetési terv alapján** jelentés. Ez a jelentés különösen akkor hasznos, ha szeretné meghatározni, hogy helyesen történt-e egy beosztás felosztása a költségvetési tervek között.
+
+
 
 

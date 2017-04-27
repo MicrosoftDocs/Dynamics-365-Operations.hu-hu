@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-element-dimensions"></a>Költségösszetevő-dimenziók
 
+[!include[banner](../includes/banner.md)]
+
+
 A költségkönyvelés egyik alapvető elemeként a költségösszetevő-dimenziók használhatók a kategorizáláshoz és a költségmozgások nyomon követéséhez. 
 
 Egy költségösszetevő a számlatükör valamely költségfüggő elemének felel meg. Alapvetően ez bármely olyan elem lehet egy üzletág legalacsonyabb szintjén, ahová költségek bekerülhetnek. A költségösszetevők fogalma mindent lefed a főkönyvi számláktól az összes, költségfüggő erőforrásig. A költségkönyvelés jelenleg támogatja a főkönyvi számlákat.
@@ -64,12 +67,14 @@ A költségösszetevőknek két típusa van: az elsődleges költségösszetevő
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Költségösszetevő-dimenziók és költségösszetevő-dimenziótagok
 A költségösszetevőket *költségösszetevő-dimenzióknak* nevezik. Az egyes dimenzióértékeket *költségösszetevő-dimenziótagoknak* nevezik. Vegyünk például egy Egyesült Államokbeli számlatükör-szerkezetet (számlatükör), amely a kötelezően előírt jelentéskészítés alapja. Ez a számlatükör költségösszetevő-dimenzióként használatos. A számlák, amelyek elsődleges költségösszetevők, a költségkönyvelésben költségösszetevő-dimenziótagokként jelennek meg. Az alábbi képernyőképen látható példa a fő számlákat ábrázolja költségösszetevő-dimenzióként, ahol a tényleges fő számlák a költségösszetevő-dimenziótagok. 
 
-[![költség-elem-dimenziók](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![cost-element-dimensions](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>A költségösszetevő-dimenziótagok importálása adatcsatolókon keresztül
 Ahhoz, hogy megkönnyítse a költségösszetevő-dimenziók beállítását a költségkönyvelésben, használhat olyan adatcsatolókat, amelyeket előre vagy egyedileg készítenek el az elsődleges költségösszetevők lekéréséhez egy vagy több forrásrendszerből.
 
 ## <a name="implementation-considerations"></a>Kivitelezési szempontok
 Mivel a költségösszetevők a legalacsonyabb szintű költségadatokat jelentik, gondoskodnia kell arról, hogy a vezetői jelentések létrehozásához szükségesek összes költségösszetevő legyen figyelembe véve, amikor a költségösszetevők szerkezetét létrehozza. Nehézkes lehet megfelelő számú költségösszetevőt találni a költségkontrollhoz. Ha több ezer költségösszetevő van, az megnehezítheti az egyes költségösszetevők szabályozását. Másik lehetőségként a költségösszetevőket csoportosíthatja, és a költségkontrollt összesített szinten kezelheti.
+
+
 
 

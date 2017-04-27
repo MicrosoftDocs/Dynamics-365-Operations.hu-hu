@@ -1,5 +1,5 @@
 ---
-title: "Az engedmény dátuma előtt, a végső fizetési engedmény dátuma után részleges vevői kifizetés kiegyenlítése"
+title: "A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik."
 description: "Ez a cikk fizetéskiegyenlítések számlákra és vevőkre gyakorolt hatását taglalja. Az eset nem a főkönyvre, hanem az analitikus naplóra gyakorolt hatásokra összpontosít."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Az engedmény dátuma előtt, a végső fizetési engedmény dátuma után részleges vevői kifizetés kiegyenlítése
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik.
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk fizetéskiegyenlítések számlákra és vevőkre gyakorolt hatását taglalja. Az eset nem a főkönyvre, hanem az analitikus naplóra gyakorolt hatásokra összpontosít.
 
-A Fabrikam áruk 4027 vevőnek értékesíti. A Fabrikam kínálja 1 százalékos készpénzfizetési engedményt a számla kifizetése 14 napon belül. A számlakat 30 napon belül be kell fizetni. A Fabrikam emellett a részleges kifizetésekra is nyújt készpénzfizetési engedményt. A kiegyenlítés paraméterek találhatók a **Kinnlevőségek paraméterei** oldalon.
+A FabriKam a 4027.-es számú vevőnek árut értékesít. A Gyár 1 százalékos készpénzfizetési engedményt ajánl, ha a számla 14 napon belül befizetésre kerül. A számlakat 30 napon belül be kell fizetni. A Fabrikam emellett a részleges kifizetésekra is nyújt készpénzfizetési engedményt. A Kiegyenlítési paraméterek a **Kinnlevőségek paraméterei** oldalon találhatóak.
 
 ## <a name="invoice"></a>Számla
-Június 25-én Anna lép, és a számlát a vevő 4027 1 000,00. Anna segítségével tekinthető meg a számla a **tranzakciók** gombja a **vevők** oldalon.
+Június 25-én Arnie egy 1.000,00 értékű számlát rögzít és ad fel 4027-es vevő számára. Ezt a számlát Arnie a **Tranzakciók** gombra kattintva a **Vevők** oldalon tekintheti meg.
 
 | Bizonylat   | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg  | Pénznem |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -46,7 +49,7 @@ Július 2-án a 4027.-es számú vevő elvégzi a 297.00 értékű részfizetés
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Kijelölve | Normál            | FTI-10020 | 4027    | 2015-06-25 | 2015-07-25 | 10020   | 1000,00                             | dollár      | 297.00           |
 
-Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. Ha nem módosítja a **Kiegyenlítendő összeg** értékét 297.00-re, a **Készpénzfizetési engedmény összege** eltérő lesz. Azonban 3,00 kell tekinteni a készpénzfizetési engedmény a fizetés könyvelése után mert elszámolás automatikusan beállítja a ** kiegyenlítendő összeg ** meg értéket.
+Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelennek meg. Ha nem módosítja a **Kiegyenlítendő összeg** értékét 297.00-re, a **Készpénzfizetési engedmény összege** eltérő lesz. A 3.00 érték készpénzfizetési engedményként jelenik meg a fizetés feladása alkalmával, mert a kiegyenlítés automatikusan módosítja a **Kiegyenlítendő összeg** értékét.
 
 |                              |           |
 |------------------------------|-----------|
@@ -105,6 +108,8 @@ Anna a **Készpénzfizetési engedmény használata** mezőt visszaállítja **N
 | ARP-10020  |                  | 2015-1-7  |         |                                      | 297.00                                | 0,00    | dollár      |
 | DISC-10020 |                  | 2015-1-7  |         |                                      | 3,00                                  | 0,00    | dollár      |
 | ARP-10021  |                  | 2015-11-7 |         |                                      | 700.00                                | 0,00    | dollár      |
+
+
 
 
 

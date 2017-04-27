@@ -1,5 +1,5 @@
 ---
-title: "A párhuzamos tevékenység munkafolyamat beállítása"
+title: "Párhuzamos tevékenység beállítása munkafolyamatban"
 description: "A párhuzamos tevékenység beállításához végezze el a következő eljárásokat a munkafolyamat-szerkesztőben."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-parallel-activity-in-a-workflow"></a>A párhuzamos tevékenység munkafolyamat beállítása
+# <a name="configure-a-parallel-activity-in-a-workflow"></a>Párhuzamos tevékenység beállítása munkafolyamatban
 
 A párhuzamos tevékenység beállításához végezze el a következő eljárásokat a munkafolyamat-szerkesztőben.
 
@@ -32,7 +32,7 @@ A párhuzamos tevékenység egy időben futó munkafolyamatágakból áll.
 
 ## <a name="name-a-parallel-activity"></a>Párhuzamos tevékenység elnevezése
 A következő lépések segítségével elnevezheti a párhuzamos tevékenységet.
-1.  Kattintson a jobb gombbal a párhuzamos tevékenység, és kattintson a **tulajdonságok** megnyitni a **tulajdonságok** képernyőn.
+1.  Kattintson a jobb gombbal a párhuzamos tevékenységre, majd kattintson a **Tulajdonságok** lehetőségre a **Tulajdonságok** űrlap megnyitásához.
 2.  A bal oldali panelen kattintson az **Alapbeállítások** gombra.
 3.  Adja meg a párhuzamos tevékenység egyedi nevét a **Név** mezőben.
 4.  Kattintson a **Bezárás** gombra.

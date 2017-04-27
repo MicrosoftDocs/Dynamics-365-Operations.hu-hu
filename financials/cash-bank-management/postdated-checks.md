@@ -1,6 +1,6 @@
 ---
 title: "Jövőben esedékes csekkek"
-description: "Ez a cikk műveletek a Microsoft Dynamics 365 csekkek támogatását ismerteti. A jövőben esedékes csekkek olyan csekkek, amelyeket jövőbeli dátumon való fizetés céljából állítják ki. Emiatt a csekk nem váltható be a megadott dátumig."
+description: "Ez a cikk a Microsoft Dynamics 365 for Operations támogatását írja le a jövőben esedékes csekkeket illetően. A jövőben esedékes csekkek olyan csekkek, amelyeket jövőbeli dátumon való fizetés céljából állítják ki. Emiatt a csekk nem váltható be a megadott dátumig."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="postdated-checks"></a>Jövőben esedékes csekkek
 
-Ez a cikk műveletek a Microsoft Dynamics 365 csekkek támogatását ismerteti. A jövőben esedékes csekkek olyan csekkek, amelyeket jövőbeli dátumon való fizetés céljából állítják ki. Emiatt a csekk nem váltható be a megadott dátumig.
+[!include[banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 műveletek a teljes kezelési ciklus az alábbi táblázatban látható módon a Kinnlevőségek és a kötelezettségek, csekkek támogatja.
+
+Ez a cikk a Microsoft Dynamics 365 for Operations támogatását írja le a jövőben esedékes csekkeket illetően. A jövőben esedékes csekkek olyan csekkek, amelyeket jövőbeli dátumon való fizetés céljából állítják ki. Emiatt a csekk nem váltható be a megadott dátumig.
+
+A Microsoft Dynamics 365 for Operations támogatja a teljes menedzselési ciklust a jövőben esedékes csekkekhez, a Kinnlevőségekben és a Kötelezettségekben is, ahogy a következő táblázat mutatja.
 <table>
 <colgroup>
 <col width="50%" />
@@ -48,14 +51,14 @@ A Microsoft Dynamics 365 műveletek a teljes kezelési ciklus az alábbi táblá
 </tr>
 <tr class="even">
 <td>Szállítónak kiállított, jövőben esedékes csekk regisztrálása és feladása</td>
-<td>Jegyezze be a szállítónak feladni kívánt jövőben esedékes csekk adatait. A fizetés könyvelésekor a program a szállító felelőssége elismert, de a bankszámla nem még követel. Ehelyett erre a célra elszámoló-számlát alkalmaznak.</td>
+<td>Jegyezze be a szállítónak feladni kívánt jövőben esedékes csekk adatait. A kifizetés feladásakor a szállítói felelősség elismerésre kerül, de a bankszámla jóváírása még nem történik meg. Ehelyett erre a célra elszámoló-számlát alkalmaznak.</td>
 </tr>
 <tr class="odd">
 <td>Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása</td>
-<td>Jegyezze fel a vevőtől érkezett, jövőben esedékes csekk adataid. A fizetés könyvelése után a vevő követelés követel, de a bankszámla nem még tartozik. Ehelyett erre a célra elszámoló-számlát alkalmaznak.</td>
+<td>Jegyezze fel a vevőtől érkezett, jövőben esedékes csekk adataid. A kifizetés feladásakor a vevő megkapja az értesítést arról, hogy a kifizetés megtörtént, azonban a bankszámla terhelése még nem történik meg. Ehelyett erre a célra elszámoló-számlát alkalmaznak.</td>
 </tr>
 <tr class="even">
-<td>Regisztrálja és könyveli a helyettesítő jövőben esedékes csekk egy vevő vagy szállító</td>
+<td>Szállítónak vagy vevőnek kiállított helyettesítő, jövőben esedékes csekk regisztrálása és feladása</td>
 <td>
 Ha a szállítónak vagy a vevőnek készült eredeti csekk elveszik vagy megsérül, helyettesítő, jövőben esedékes csekket bocsáthat ki. Amikor nyilvántartásba veszi a csekk részletes adatait, hivatkozzon az eredeti csekkre és jelezze, hogy az új csekk az eredetit helyettesíti. Fel is adhatja a helyettesítő csekket.</td>
 </tr>
@@ -69,17 +72,19 @@ Ha a szállítónak vagy a vevőnek készült eredeti csekk elveszik vagy megsé
 </tr>
 <tr class="odd">
 <td>Szállítónak kiállított, jövőben esedékes csekk érvénytelenítése</td>
-<td>Megszakíthatja a könyvelt csekknek ezekben az esetekben:-az ellenőrzés a bank adja vissza.
--Az ellenőrzés nem megfelelő számlát alkalmazza.
--A készpénzes kifizetés ellen az ellenőrzés.
+<td>Érvénytelenítheti a könyvelt, jövőben esedékes csekket ezekben az esetekben: -A csekket visszaküldik a banknak.
+– A csekket nem megfelelő számlához alkalmazták.
+– Készpénzes fizetés történik a csekkel szemben.
 </td>
 </tr>
 <tr class="even">
-<td>A jövőben esedékes csekk fizetés leállítása</td>
-<td>Leállíthatja egy szállítónak kiállított, jövőben esedékes csekk kifizetését különböző okokból, például elégtelen fedezet esetén, a szállítóval kötött szerződés feltételeinek megváltozásakor, a szállító által szállított hibás áruk, vagy a termékek szállítóhoz történő visszaküldése miatt. Csak ellenőrzi, hogy nincs bejelölve a fizetés leállítása is.</td>
+<td>Jövőben esedékes csekk kifizetésének leállítása</td>
+<td>Leállíthatja egy szállítónak kiállított, jövőben esedékes csekk kifizetését különböző okokból, például elégtelen fedezet esetén, a szállítóval kötött szerződés feltételeinek megváltozásakor, a szállító által szállított hibás áruk, vagy a termékek szállítóhoz történő visszaküldése miatt. Csak olyan csekkek kifizetése állítható le, amelyek még nincsenek kiegyenlítve.</td>
 </tr>
 </tbody>
 </table>
+
+
 
 
 

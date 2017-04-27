@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delivery-schedules"></a>Szállítási ütemezések
 
+[!include[banner](../includes/banner.md)]
+
+
 A szállítási ütemezések lehetővé teszik a rendeléssor mennyiségének nyomon követését, amikor több szállítást használ egyetlen értékesítési rendeléshez, értékesítési ajánlathoz vagy beszerzési rendeléshez.
 
-A szállítási ütemezés akkor használja, ha a teljes mennyiség egy rendelési és az ajánlati sor több részletben kell szállítani. Az egyes szállítmányok kézbesítési vonalak jelölik. Két vagy több szállítási sor alkot egy szállítási ütemezést. A szállítási sorok különböző szállítási dátumokkal, mennyiségekkel, szállítási módokkal és tárolási dimenziókkal rendelkezhetnek, például hely és raktár.  
+A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy ajánlati sorhoz tartozó teljes mennyiséget több részletben kell szállítani. Az egyes szállítmányokat szállítási sorok jelölik. Két vagy több szállítási sor alkot egy szállítási ütemezést. A szállítási sorok különböző szállítási dátumokkal, mennyiségekkel, szállítási módokkal és tárolási dimenziókkal rendelkezhetnek, például hely és raktár.  
 
 **Példa szállítási ütemezésre**
 
@@ -42,7 +45,7 @@ A szállítási ütemezés akkor használja, ha a teljes mennyiség egy rendelé
 
 Ebben az esetben a vevő a 600 szék kiszállítását 100 darabos kötegekben kérte, 6 hónap alatt A szállítási követelmények nyomon követéséhez szállítási ütemezést kell létrehozni. A szállítási ütemezés lapon hat külön szállítás sort kell létrehozni. Minden egyes kézbesítési sor 100 széket tartalmaz, és jelzi az adott 100 szék szállítási dátumát. Ebben az esetben minden sor hat egymást követő hónapig minden hónap elsején lesz elindítva.  
 
-A szállítási ütemezés létrehozásakor az eredeti rendelési sor típusa automatikusan a **Rendeléssor több szállítással** lehetőségre módosul. Egy ilyen típusú sorra a rendszer kereskedelmi sorként hivatkozik és egy ikon jelzi. A kézbesítési sort egy másik ikon jelzi. Ha módosítja egy kézbesítési sorban mennyiséget, a kereskedelmi sor teljes mennyiségét a szállítási ütemezés frissül. Kereskedelmi megállapodás meghatározta a rendelés teljes engedményt, ha a szállítási ütemezés biztosítja, hogy a rendelés a teljes rendelési engedményét jogosult akkor is, ha a rendelés oszlik, külön szállítást.  
+A szállítási ütemezés létrehozásakor az eredeti rendelési sor típusa automatikusan a **Rendeléssor több szállítással** lehetőségre módosul. Egy ilyen típusú sorra a rendszer kereskedelmi sorként hivatkozik és egy ikon jelzi. A kézbesítési sort egy másik ikon jelzi. Ha módosítja egy kézbesítési sorban mennyiségét, a kereskedelmi sor a szállítási ütemezés teljes mennyiségére frissül. Ha egy kereskedelmi megállapodás egy teljes engedményt határozott meg a rendeléshez, a szállítási ütemezés biztosítja, hogy a rendelés jogosult legyen a teljes rendelési engedményre, akkor is, ha a rendelés több kiszállításra oszlik.  
 
 A szállítási ütemezéssel rendelkező rendeléseket a rendszer a szállítási sorok szerint dolgozza fel. A feldolgozás magában foglalja a csomagjegyzékek, termékbevételezések és a számlázás feladását.  
 
@@ -53,5 +56,7 @@ A szállítási ütemezéssel rendelkező rendelések és árajánlatok nyomtato
 -   Tallózással keresse meg a listalapokat és jelentéseket
 
 Ha megerősíti az értékesítési ajánlatokat, az ebből származó értékesítési jelentések az egész szállítási ütemezést mutatják, még a több kiszállításból álló rendelési sorokat is. Ezenkívül a teljes szállítási ütemezés megjelenik az összes fő lapon, például értékesítési rendelések, értékesítési ajánlatok és beszerzési rendelések lapokon.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Bevételkimutatás pénzügyi jelentés"
-description: "A cikk ismerteti az alapértelmezett jelentés eredménykimutatásokat. Bemutatja az építőelemek társított Ez a jelentés is."
+description: "Ez a cikk a bevételkimutatások alapvető jelentését írja le. Emellett a jelentéshez tartozó építőelemeket is leírja."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="income-statement-financial-report"></a>Bevételkimutatás pénzügyi jelentés
 
-A cikk ismerteti az alapértelmezett jelentés eredménykimutatásokat. Bemutatja az építőelemek társított Ez a jelentés is. 
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk a bevételkimutatások alapvető jelentését írja le. Emellett a jelentéshez tartozó építőelemeket is leírja. 
 
 <a name="default-income-statement-report"></a>Alapértelmezett bevételkimutatás jelentés
 -------------------------------
@@ -61,10 +64,12 @@ Az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különb
 <a name="see-also"></a>Lásd még
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Pénzügyi jelentések](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Pénzügyi jelentések megtekintése](view-financial-reports.md)
 
-[Dynamics pénzügyi jelentési Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Pénzügyi jelentések blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

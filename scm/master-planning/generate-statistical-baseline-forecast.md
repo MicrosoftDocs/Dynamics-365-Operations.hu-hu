@@ -1,5 +1,5 @@
 ---
-title: "Előrejelzés statisztikai alapterv készítése"
+title: "Statisztikai kiinduló előrejelzés generálása"
 description: "Ez a cikk az igény-előrejelzés számítása során használt paraméterekről és szűrőkről nyújt tájékoztatást."
 author: YuyuScheller
 manager: AnnBe
@@ -26,32 +26,35 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="generate-a-statistical-baseline-forecast"></a>Előrejelzés statisztikai alapterv készítése
+# <a name="generate-a-statistical-baseline-forecast"></a>Statisztikai kiinduló előrejelzés generálása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk az igény-előrejelzés számítása során használt paraméterekről és szűrőkről nyújt tájékoztatást. 
 
 A kiinduló előrejelzés létrehozásakor először meg kell adni számításhoz használt paramétereket és szűrőket. Például létrehozhat olyan kiinduló előrejelzést, ami egy adott vállalat elmúlt évi tranzakcióadatai alapján hoz létre becslést a jövő hónapra, cikkek egy kiválasztott csoportjára. 
 
-Igény-előrejelzés létrehozásához lépjen a **fő tervezési &gt;előrejelzés &gt;igény-előrejelzés &gt;előrejelzés létrehozása statisztikai eredeti**. 
+Igény-előrejelzés létrehozásához lépjen az **Alaptervezés &gt; Előrejelzés &gt; Igény-előrejelzés &gt; Statisztikai kiinduló előrejelzés generálása** lehetőségre. 
 
 Az előrejelzési időszakot előrejelzés generálásakor lehet kiválasztani. Az elérhető értékek: Nap, Hét és Hónap. 
 
 Az** Előrejelzési horizont** mezőben adható meg azoknak az időszakoknak a száma, amelyekre vonatkozóan létrejön az előrejelzés. 
 
-Ha az előrejelzési stratégia **Korábbi igény átmásolása**-ként van megadva, az előzményhorizont végét a rendszer figyelmen kívül hagyja. A rendszer másolja a megadott időszakok száma a **előrejelzés horizont** mezőben megjeleníti az előrejelzett igény, meghatározott időponttól kezdve a **dátumtól** mező alatt **történeti horizont**. Egy bizonyos dátumtól előrefelé elhelyezkedő előzményigények másolásával a termeléstervezők képesek elkészíteni a következő negyedév tervét. Az alábbi két módszer használható:
+Ha az előrejelzési stratégia **Korábbi igény átmásolása**-ként van megadva, az előzményhorizont végét a rendszer figyelmen kívül hagyja. A rendszer átmásolja az időszakok az **Előrejelzési horizont** mezőben beállított számát a jelzett igénybe az **Előzményhorizont** alatti **Kezdő dátum** mezőben megadott dátumtól indulva. Egy bizonyos dátumtól előrefelé elhelyezkedő előzményigények másolásával a termeléstervezők képesek elkészíteni a következő negyedév tervét. Az alábbi két módszer használható:
 
 -   Igénymásolás az előző év ugyanazon negyedévéből.
 -   Igénymásolás az előző negyedévből.
 
 Annak érdekében, hogy a termelési tervek ne keveredhessenek össze, bizonyos számú előrejelzési időszak befagyasztható. Ezt a számot a **Befagyasztási időkorlát** mezőben lehet megadni. A **Módosított igény-előrejelzés **oldalon a befagyasztott időszakokhoz tartozó cellák letiltásra kerülnek, jelezve, hogy ezek az értékek nem változtathatók. 
 
-A kiinduló igény-előrejelzés kezdő dátumának nem kell feltétlenül aktuális vagy jövőbeli dátumnak lennie. Egy másik kezdő dátum beállításához használja a **Kiinduló előrejelzés kezdő dátuma - Kezdő dátum** mezőt. Például júniusban a felhasználók létrehozhatnak következő évre vonatkozó előrejelzést. Mivel az igényelőzmények vége és a kiindulás kezdete közti előrejelzési időszakok hiányoznak, lehetséges, hogy az előrejelzés pontatlan lesz. Műveletek igény-előrejelzés szolgáltatás használata a Microsoft Dynamics 365, négy módja van, ahol a hiányzó hézagok kitöltheti. Kiválaszthatja a kívánt beállítást a hiányzó módszer\_érték\_helyettesítő paraméter a **igény-előrejelzés paraméterek** oldalon. 
+A kiinduló igény-előrejelzés kezdő dátumának nem kell feltétlenül aktuális vagy jövőbeli dátumnak lennie. Egy másik kezdő dátum beállításához használja a **Kiinduló előrejelzés kezdő dátuma - Kezdő dátum** mezőt. Például júniusban a felhasználók létrehozhatnak következő évre vonatkozó előrejelzést. Mivel az igényelőzmények vége és a kiindulás kezdete közti előrejelzési időszakok hiányoznak, lehetséges, hogy az előrejelzés pontatlan lesz. A Microsoft Dynamics 365 for Operations Igény-előrejelzési szolgáltatás használatával négyféle módon is kitöltheti a hiányzó időszakok helyét. A kívánt módszert az **Igény-előrejelzési paraméterek** oldalon található MISSING\_VALUE\_SUBSTITUTION paraméter megadásával választhatja ki. 
 
-A **eredeti előrejelzés kezdő dátuma** - **kezdő dátum** mezőben adhat meg egy előrejelzési időszak, például az elején az Egyesült Államokban, ha az előrejelzési időszak a hét vasárnap van. A rendszer automatikusan állítja be a **eredeti előrejelzés kezdő dátuma** - **kezdő dátum** megfelelően az előrejelzési időszak kezdete mezőben. 
+A **Kiinduló előrejelzés kezdő dátuma** - **Kezdő dátum** mezőt az előrejelzési időszak kezdetére kell beállítani (például az USA-ban egy vasárnapi napra, amennyiben az előrejelzési időszak a hét). A rendszer automatikusan módosítja a **Kiinduló előrejelzés kezdő dátuma** - **Kezdő dátum** mezőt úgy, hogy az megegyezzen egy előrejelzési időszak kezdetével. 
 
-A **eredeti előrejelzés kezdő dátuma** - **kezdő dátum** mező értéke lehet egy múltbeli dátumra. Azaz múltbeli igény-előrejelzés is generálható. Ez azért hasznos, mert lehetővé teszi a felhasználók számára, hogy úgy módosítsák az előrejelzési szolgáltatás paramétereit, hogy a generált múltbeli statisztikai előrejelzés megegyezzen a tényleges előzményigényekkel. Ezután a felhasználók ugyanezeket a paraméter-beállításokat felhasználva generálhatnak jövőre vonatkozó statisztikai kiinduló előrejelzést. 
+A **Kiinduló előrejelzés kezdő dátuma** - **Kezdő dátum** mező múltbeli dátumra is beállítható. Azaz múltbeli igény-előrejelzés is generálható. Ez azért hasznos, mert lehetővé teszi a felhasználók számára, hogy úgy módosítsák az előrejelzési szolgáltatás paramétereit, hogy a generált múltbeli statisztikai előrejelzés megegyezzen a tényleges előzményigényekkel. Ezután a felhasználók ugyanezeket a paraméter-beállításokat felhasználva generálhatnak jövőre vonatkozó statisztikai kiinduló előrejelzést. 
 
-A korábbi igény-előrejelzési iterációk során végrehajtott manuális kiigazítások a **Manuális kiigazítások átvitele az igény-előrejelzésbe** jelölőnégyzet bejelölésével az új kiinduló előrejelzésben automatikusan alkalmazhatók. Ha a jelölőnégyzet nincs bejelölve, a manuális kiigazítások nem kerülnek be a kiinduló előrejelzésbe – azonban nem törlődnek. Előrejelzésen végrehajtott manuális kiigazítások csak előrejelzés importálásakor törölhetők a **Kiinduló igény-előrejelzésen végrehajtott manuális kiigazítások mentése** jelölőnégyzetben lévő jelölés eltüntetésével. A manuális kiigazítások engedélyezéskor kerülnek mentésre. Ezért, ha a felhasználó kézi korrigálja az előrejelzés, de az előrejelzés vissza a Dynamics 365 műveletekhez nem engedélyezik, a módosítások elvesznek. További információt a manuális helyesbítések és a működésükről lásd: [kiigazított előrejelzés engedélyezése](authorize-adjusted-forecast.md). 
+A korábbi igény-előrejelzési iterációk során végrehajtott manuális kiigazítások a **Manuális kiigazítások átvitele az igény-előrejelzésbe** jelölőnégyzet bejelölésével az új kiinduló előrejelzésben automatikusan alkalmazhatók. Ha a jelölőnégyzet nincs bejelölve, a manuális kiigazítások nem kerülnek be a kiinduló előrejelzésbe – azonban nem törlődnek. Előrejelzésen végrehajtott manuális kiigazítások csak előrejelzés importálásakor törölhetők a **Kiinduló igény-előrejelzésen végrehajtott manuális kiigazítások mentése** jelölőnégyzetben lévő jelölés eltüntetésével. A manuális kiigazítások engedélyezéskor kerülnek mentésre. Ezért ha egy felhasználó manuális kiigazításokat hajt végre az előrejelzésen, de azt nem engedélyezi a Dynamics 365 for Operations rendszerben, a változtatások elvesznek. A manuális kiigazításokkal és azok működésével kapcsolatos további tudnivalókat lásd: [Kiigazított előrejelzés engedélyezése](authorize-adjusted-forecast.md). 
 
 Az igény-előrejelzés generálásához név és leírás adható a generált előrejelzések könnyebb beazonosíthatósága érdekében. Ezek az értékek láthatók az előrejelzés-létrehozási előzményekben, a **Statisztikai kiinduló előrejelzés létrehozási előzményei** oldalon. 
 
@@ -59,15 +62,17 @@ Előrejelzés generálásakor szűrők alkalmazhatók vállalatközi tervezőcso
 
 **Tipp**: egyes esetekben a felhasználók igény-előrejelzés generálása alatt hibaüzeneteket kaphatnak, vagy az előrejelzés generálása munkamenetnapló nélkül fejeződhet be. Ez az előrejelzés generálásához előzőleg használt lekérdezésben maradt adatok miatt fordulhat elő. A probléma megoldásához a **Kiválasztás** gombbal nyissa meg a **Lekérdezés** oldalt, kattintson az **Alaphelyzet** lehetőségre, majd generálja újra a kiinduló előrejelzést. 
 
-Ha az előrejelzés nem keletkezik olyan elemek nagy halmaza, hanem, például egy cikket vagy egy cikkfelosztási kulcs egyszerre, akkor ahhoz, hogy jobb teljesítményt, választhatja a **kérés-válasz mód használata** jelölőnégyzetet az **fő tervezési előrejelzés - Setup - igény szerint** - **előrejelzés paraméterek - gép tanulás Azure igény szerint** lap.
+Ha az előrejelzés generálása nagyszámú cikk esetén sikertelen, de például egyszerre egy cikk vagy egy cikkfelosztási kulcs esetén sikeres, akkor a nagyobb teljesítmény érdekében bejelölheti a **Kérelemre adott válasz mód használata** jelölőnégyzetet az **Alaptervezés - Beállítás - Igény-előrejelzés** - **Igény-előrejelzési paraméterek - Azure Machine Learning** lapon.
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Demand forecasting setup](demand-forecasting-setup.md)
+[Igény-előrejelzési beállítások](demand-forecasting-setup.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[A kiinduló előrejelzés manuális kiigazítása](manual-adjustments-baseline-forecast.md)
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Beállított előrejelzés engedélyezése](authorize-adjusted-forecast.md)
+
+
 
 

@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="benefit-eligibility-policies"></a>Juttatásra való jogosultsági irányelvek
 
-A témával kapcsolatban tartalmaz tájékoztatást juttatás való jogosultsági irányelvek, amely segítségével meghatározhatja adott ellátásra jogosult.
+[!include[banner](includes/banner.md)]
+
+
+Ez a témakör információt biztosít a juttatás alkalmassági irányelveit illetően, így segítve Önt a különleges juttatásokra jogosult személyek meghatározásában.
 
 Juttatások létrehozásakor eldöntheti, mely juttatások mely alkalmazottak számára lesz elérhető. Az alábbi táblázat példákat mutat juttatásokra, amelyeket elérhetővé tehet bizonyos alkalmazottaknak.
 
@@ -38,7 +41,7 @@ Juttatások létrehozásakor eldöntheti, mely juttatások mely alkalmazottak sz
 | Mobiltelefon     | Értékesítési munkatársak, vezetők         |
 | Parkolási engedélyek   | Ügyintézők                      |
 
-Az alábbi összetevők jogosultsági házirendek létrehozásához használt:
+A következő elemek használhatóak jogosultsági irányelvek létrehozására:
 
 -   Irányelvszabály típusai
 -   Juttatásra való jogosultsági irányelvek
@@ -51,5 +54,7 @@ A szabály hatáskörét az irányelven belül lehet megadni. Például ha **Vez
 --------
 
 [Juttatási program meghatározása és kezelése](manage-benefit-program.md)
+
+
 
 

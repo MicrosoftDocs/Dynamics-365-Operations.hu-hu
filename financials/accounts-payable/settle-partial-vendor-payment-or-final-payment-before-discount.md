@@ -1,5 +1,5 @@
 ---
-title: "Részleges szállítói kifizetés és végső kifizetés teljes kiegyenlítése előtt az engedmény dátumát"
+title: "Részleges szállítói kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt"
 description: "Ez a cikk azt az esetet mutatja be, amely során a szállítói számlára vonatkozóan készülnek el a részleges kifizetések és a készpénzfizetési engedmény igénybe van véve."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges szállítói kifizetés és végső kifizetés teljes kiegyenlítése előtt az engedmény dátumát
+# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges szállítói kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk azt az esetet mutatja be, amely során a szállítói számlára vonatkozóan készülnek el a részleges kifizetések és a készpénzfizetési engedmény igénybe van véve.
 
-A Fabrikam vásárol árut szállító 3064. A szállító nyújt a Fabrikam 1 százalékos készpénzfizetési engedményt, ha a számla kifizetése 14 napon belül. A számlakat 30 napon belül be kell fizetni. A szállító továbbá engedélyezi a Gyárnak, készpénzfizetési engedményeket a részleges fizetések esetén. A kiegyenlítés paraméterek találhatók a **kötelezettségek paramétereinek** oldalon. Június 25-én April egy 1000,00 értékű számlát rögzít 3064-es szállító számára.
+A Fabrikam 3064.-es számú szállítótól árut szerez be. A szállító 1 százalékos készpénzfizetési engedményt ad a Fabrikamnak, ha a számlát 14 napon belül fizetik. A számlakat 30 napon belül be kell fizetni. A szállító továbbá engedélyezi a Gyárnak, készpénzfizetési engedményeket a részleges fizetések esetén. A Kiegyenlítési paraméterek a **Kötelezettségek paraméterei** oldalon találhatók. Június 25-én April egy 1000,00 értékű számlát rögzít 3064-es szállító számára.
 
 ## <a name="vendor-invoice-on-june-25"></a>Szállítói számla június 25-én
-Június 25-én április belép, és 1 000,00 3064 szállítói számlát elkönyveli. April megtekintheti ezt a tranzakciót a **Szállítói tranzakciók** oldalon.
+Június 25-én April egy 1.000,00 értékű számlát rögzít és ad fel 3064-es szállító számára. April megtekintheti ezt a tranzakciót a **Szállítói tranzakciók** oldalon.
 
 | Bizonylat   | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg   | Pénznem |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -63,7 +66,7 @@ April rákattint a **Készpénzfizetési engedmény** lapra, hogy megnézze az e
 | 2015/07/25          | 0,00                 | 1000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Részleges kifizetés július 1.-én a Tranzakciók kiegyenlítése lapon
-April kifizetési naplót hozhat létre ehhez a fizetéshez, ha megnyitja a **Fizetési napló** lapot a Kötelezettségek modulban. Ő hozzon létre egy új naplót, és egy sor megadja a szállító 3064. Ő majd megnyitja a **tranzakciók kiegyenlítése** oldalon, így ő megjelölheti, hogy a számla kiegyenlítésre. April megjelöli a számlát, és a **Kiegyenlítendő összeg** mezőt **-500,00** értékre módosítja. Látható, hogy a **Készpénzfizetési engedmény összege** mező értéke **-10,00** a teljes számála, és az érték az **Alkalmazandó készpénzfizetési engedmény összege** mezőben **-5,05**. Ezért April -505,05 értéket egyenlít ki ebből a számlából.
+April kifizetési naplót hozhat létre ehhez a fizetéshez, ha megnyitja a **Fizetési napló** lapot a Kötelezettségek modulban. Létrehoz egy új naplót, és rögzít egy sort a 3064-es szállítónak. Anna ezután megnyitja a **Tranzakciók kiegyenlítése** oldalt, hogy a számlát kiegyenlítettnek jelölje. April megjelöli a számlát, és a **Kiegyenlítendő összeg** mezőt **-500,00** értékre módosítja. Látható, hogy a **Készpénzfizetési engedmény összege** mező értéke **-10,00** a teljes számála, és az érték az **Alkalmazandó készpénzfizetési engedmény összege** mezőben **-5,05**. Ezért April -505,05 értéket egyenlít ki ebből a számlából.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -95,7 +98,7 @@ Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelenn
 | Alkalmazott készpénzfizetési engedmény          | 0,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | -5,00     |
 
-April bezárja a **Tranzakciók kiegyenlítése** oldalt. 495,00 értékű kifizetési sor jön létre a naplóban, majd ezután April feladja a naplót. Április át tudja tekinteni a szállítói tranzakciók a **szállítói tranzakciók** oldalon. Azt látja, hogy a számla egyenlege a-500.00. Emellett láthat egy 495,00 értékű kifizetést és egy 5,00 értékű készpénzfizetési engedményt is.
+April bezárja a **Tranzakciók kiegyenlítése** oldalt. 495,00 értékű kifizetési sor jön létre a naplóban, majd ezután April feladja a naplót. April a szállítói tranzakciókat a **Szállítói tranzakciók** oldalon tekintheti meg. Azt látja, hogy a számla egyenlege -500,00. Emellett láthat egy 495,00 értékű kifizetést és egy 5,00 értékű készpénzfizetési engedményt is.
 
 | Bizonylat    | Tranzakció típusa | Dátum      | Számla | Összeg a tranzakció pénznemtartozásában | Összeg a tranzakció pénznemtartozásában | Egyenleg | Pénznem |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -136,6 +139,8 @@ April feladja a kifizetési naplót, és áttekinti a szállítói tranzakcióka
 | DISC-10010 | Készpénzfizetési engedmény    | 2015-1-7  |         | 5,00                                 |                                       | 0,00    | dollár      |
 | APP-10011  | Kifizetés          | 2015/8/7  |         | 495,00                               |                                       | 0,00    | dollár      |
 | DISC-10011 | Készpénzfizetési engedmény    | 2015-08-07  |         | 5,00                                 |                                       | 0,00    | dollár      |
+
+
 
 
 

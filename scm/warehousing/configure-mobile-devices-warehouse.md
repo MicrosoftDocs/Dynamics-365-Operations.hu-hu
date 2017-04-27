@@ -1,5 +1,5 @@
 ---
-title: "Raktári munka mobil eszközök beállítása"
+title: "Mobileszközök beállítása raktári munkához"
 description: "Ez a cikk bemutatja, hogyan kell konfigurálni a raktári munkások által munkára használt menüpontokat egy mobileszközön."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Raktári munka mobil eszközök beállítása
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
 Ez a cikk bemutatja, hogyan kell konfigurálni a raktári munkások által munkára használt menüpontokat egy mobileszközön.
 
@@ -35,7 +35,7 @@ Ez a cikk bemutatja, hogyan kell konfigurálni a raktári munkások által munk�
 -   Hozzon létre egy másik folyamaton keresztül elvégzendő munkát. Például egy beszerzési rendelés elemének fogadása betárolási munkát hozhat létre egy másik dolgozó számára.
 -   Munka elvégzése, amelyet egy másik folyamatban hoztak létre (meglévő munka), például betárolási munkáé, amely beszerzési rendeléshez tartozó elem fogadásakor jött létre.
 
-Menüelem tevékenység vagy lekérdezés létrehozásához állítsa a **mód** mező **közvetett**. Listája **tevékenység kód** beállítások akkor válik elérhetővé, így a típusának lekérdezése vagy tevékenység, amely a menüelem. Raktári munka létrehozásához menüelem létrehozásához állítsa a **mód** mező **munka**. Listája **munka létrehozásának folyamatát** beállítások, majd elérhetővé válik. Ha szeretne létrehozni egy meglévő raktári munka feldolgozására való menüelemet, állítsa a **Mód** mezőt **Munka** állásba, majd állítsa a **Meglévő munka használata** opciót az **Igen** lehetőségre. **Megjegyzés:** további mezőket nyílhat menüelemhez, akkor válassza a menü elem, és hogy módjától függően a menüelem meglévő munka elvégzéséhez használt. További mező beállításairól további tudnivalókért tanulmányozza a "további menü elem beállításai" szakasz a cikk későbbi részében.
+Menüelem létrehozásához tevékenységhez vagy lekérdezéshez állítsa a **Mód** mezőt **Közvetett** értékre. Ekkor elérhetővé válik a **Tevékenységkód**-lehetőségek listája, és kiválaszthatja a lekérdezés vagy tevékenység típusát, amelyre a menüelem vonatkozni fog. Raktári munka létrehozására szolgáló menüelem készítéséhez állítsa a **Mód** mezőt **Munka** értékre. Ekkor elérhetővé válik a **Munkalétrehozási folyamat** lehetőségeinek listája. Ha szeretne létrehozni egy meglévő raktári munka feldolgozására való menüelemet, állítsa a **Mód** mezőt **Munka** állásba, majd állítsa a **Meglévő munka használata** opciót az **Igen** lehetőségre. **Megjegyzés:** A menüelemhez kiválasztott módtól függően, és attól, hogy a menüelem meglévő munkához használatos-e, további mezők lehetnek elérhetők a menüelemhez. A további mezőválasztékkal kapcsolatos tudnivalókat lásd a jelen cikk „További menüelem-beállítások” című, későbbi szakaszában.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Menüelemek konfigurációja tevékenységekhez és lekérdezésekhez
 Ha a **Mód** mezőjének értéke egy menüelemnél **Közvetett** opcióra van állítva, létrehozhat egy általános tevékenység vagy lekérdezés elvégzéséhez való menüelemet, amely nem hoz létre a munkát. Például ezek közé tartozik az azonosító táblák címkéinek újranyomtatása és az egy helyen található cikkekre vonatkozó lekérdezések. A következő táblázat az elérhető lehetőségeket sorolja fel:
@@ -190,7 +190,7 @@ Létrehozhat egy menüelemet, amely egy másik dolgozónak hoz létre munkát eg
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Menüelemek konfigurálása a meglévő munka feldolgozásához
-A menüelemek raktári munka létrehozására történő beállításán kívül a már létrehozott munkák feldolgozására is állíthat be menüelemeket. Állítsa a **Mód** mezőt a **Munka** lehetőségre, és válassza ki a **Meglévő munka használata** lehetőséget. Néhány további beállítás lesz elérhető a **általános** fülre. Hozzárendelése egy vagy több munka osztályok a szabályozhatja a hozzáférést a menüelem a **munka osztály** gyorslapra. A munkaosztályok határozzák meg a munkát, amelyet a menüelem fel tud dolgozni. A munkaosztály arra is használható, hogy hozzáférést biztosítson adott felhasználói szerepkörök számára, illetve elválaszthatók vele a különböző műveletek feldolgozása. A következő táblázat az elérhető lehetőségeket írja le:
+A menüelemek raktári munka létrehozására történő beállításán kívül a már létrehozott munkák feldolgozására is állíthat be menüelemeket. Állítsa a **Mód** mezőt a **Munka** lehetőségre, és válassza ki a **Meglévő munka használata** lehetőséget. Néhány további beállítás ekkor elérhetővé válik az **Általános** lapon. A menüelem elérése úgy szabályozható, hogy hozzárendel egy vagy több munkaosztályt a **Munkaosztály** gyorslapon. A munkaosztályok határozzák meg a munkát, amelyet a menüelem fel tud dolgozni. A munkaosztály arra is használható, hogy hozzáférést biztosítson adott felhasználói szerepkörök számára, illetve elválaszthatók vele a különböző műveletek feldolgozása. A következő táblázat az elérhető lehetőségeket írja le:
 
 <table>
 
@@ -210,7 +210,7 @@ A menüelemek raktári munka létrehozására történő beállításán kívül
 </tr>
 <tr class="even">
 <td>Rendszer által irányított</td>
-<td>A Microsoft Dynamics 365 műveletekhez a munkavállaló és a rendelés, a munkavállaló a munkát végrehajtó hozzárendelt munka típusú szabályozza. Ha ezt a beállítást választja, kattintson <strong>rendszer felé irányuló munka</strong> megnyitása a műveletpanel a <strong>rendszer irányított rendezési sorrend</strong> oldal, ahol beállíthat rendezési feltételként a munka. A rendezési feltételek sorrendjét a munkavállaló a munkát végez. Szükséges kritériumoknak is hozzáadhat.</td>
+<td>A Microsoft Dynamics 365 for Operations szabályozza a dolgozóhoz rendelt munka típusát és a megrendelés típusát, amelynek keretében a dolgozó a munkát végzi. Amikor ezt a beállítást választja, kattintson <strong>Rendszer által irányított munka</strong> elemre a műveletpanelen a <strong>Rendszer által meghatározott rendezési sorrend</strong> oldal megnyitásához, amelyen beállíthatja rendezési feltételeket a munkához. A rendezési feltételek azt szabályozzák, hogy a dolgozó milyen sorrendben hajtja végre a munkát. Annyi feltételt adhat hozzá, amennyire szüksége van.</td>
 </tr>
 <tr class="odd">
 <td>Felhasználó által irányított</td>
@@ -230,7 +230,7 @@ A menüelemek raktári munka létrehozására történő beállításán kívül
 </tr>
 <tr class="even">
 <td>Ellenőrizve, felhasználó által irányítva</td>
-<td>A dolgozó kiválasztja a végrehajtandó munkát, ha a munka egy nagyobb entitással, például terheléshez vagy szállítmányhoz van társítva. A dolgozó, hogy a cikkeket kell kitárolni a sorrendjét határozza meg. Ha ezt a lehetőséget választja, akkor a következő mezőket kell kitöltenie:
+<td>A dolgozó kiválasztja a végrehajtandó munkát, ha a munka egy nagyobb entitással, például terheléshez vagy szállítmányhoz van társítva. A dolgozó a cikkek kitárolásának sorrendjét határozza meg. Ha ezt a lehetőséget választja, akkor a következő mezőket kell kitöltenie:
 <ul>
 <li><strong>Ellenőrizve, felhasználó által irányítva mező</strong> – Válassza ki azt a mezőt, amelyet a dolgozó beolvas a munka csoportosításához.</li>
 <li><strong>Ellenőrizve, felhasználó által irányítva</strong> – Adja meg a szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be, amikor a rendszer csoportosítja kitárolási munkát.</li>
@@ -271,7 +271,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="even">
 <td>Horgonyzás</td>
-<td>Az opció kiválasztásával engedélyezi a dolgozók számára, hogy megadjanak egy helyet, amely felülbírálja a javasolt előkészítési vagy berakodási helyet. A fennmaradó összes betárolási munka az új helyre irányul. Ez az opció akkor hasznos például, ha egy dolgozónak az 1. megrendelés cikkeit az 1. tároló előkészítő helyére kell tennie, de ez nem lehetséges, mert egy előző rakományt a rendszer még nem törölt az adott helyről. Várakozás az átmeneti hely Dokk 1 lesz elérhető, nem a dolgozó határozhat úgy, hogy a Dokk 2 átmeneti helyet használja. Ebben az esetben a munkavállaló felülbírálja a javasolt átmeneti hely. Ekkor a megrendelés fennmaradó cikkeinek betárolási helyét a rendszer a 2. tároló előkészítési helyére frissíti. Ha ezt a lehetőséget választja, meg kell adni a <strong>Horgonyzó</strong> mezőt.</td>
+<td>Az opció kiválasztásával engedélyezi a dolgozók számára, hogy megadjanak egy helyet, amely felülbírálja a javasolt előkészítési vagy berakodási helyet. A fennmaradó összes betárolási munka az új helyre irányul. Ez az opció akkor hasznos például, ha egy dolgozónak az 1. megrendelés cikkeit az 1. tároló előkészítő helyére kell tennie, de ez nem lehetséges, mert egy előző rakományt a rendszer még nem törölt az adott helyről. Ahelyett, hogy arra várna, hogy az 1. tároló előkészítési helye felszabaduljon, a dolgozó dönthet úgy, hogy inkább a 2. tároló előkészítési helyét használja. Ebben az esetben a dolgozó felülírja a javasolt előkészítési helyet. Ekkor a megrendelés fennmaradó cikkeinek betárolási helyét a rendszer a 2. tároló előkészítési helyére frissíti. Ha ezt a lehetőséget választja, meg kell adni a <strong>Horgonyzó</strong> mezőt.</td>
 </tr>
 <tr class="odd">
 <td>Horgonyzó</td>
@@ -380,7 +380,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="odd">
 <td>Munkasablonkód</td>
-<td>Válassza ki azt a munkasablont, amely létrehozza a folyamathoz a munkát. Például ha egy elemet egy beszerzési rendelés, elraktározás munka generál a munka sablon alapján. Ha nem adja meg a munka sablon, a Microsoft Dynamics 365 műveletek egy sablont, a lekérdezési feltételek alapján rendeli hozzá. A Munkasablonokkal kapcsolatos további információkat lásd: <a href="control-warehouse-location-directives.md">A raktári munka ellenőrzése munkasablonok és helyutasítások használatával</a>.</td>
+<td>Válassza ki azt a munkasablont, amely létrehozza a folyamathoz a munkát. Például ha cikket kap a beszerzési rendeléshez, a betárolási munka a munkasablon alapján jön létre. Ha nem választ ki munkasablont, akkor a Microsoft Dynamics 365 for Operations a lekérdezési feltételek alapján rendel hozzá sablont. A Munkasablonokkal kapcsolatos további információkat lásd: <a href="control-warehouse-location-directives.md">A raktári munka ellenőrzése munkasablonok és helyutasítások használatával</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +409,8 @@ A következő táblázat leírja a különféle munkatípusokat, amelyekkel hasz
 
 [Raktári mobileszköz megjelenítési beállításai](change-warehouse-mobile-device-displays.md)
 
-[Beszerzési rendelés (feladat guide) típusú munka befejezése mobileszköz menüelem beállítása](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez (Feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Egy mobil eszköz menüpont beállítása a beérkezett cikkek (feladat guide) regisztrálása](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Mobileszköz-menüelem beállítása a bevételezett elem regisztrálásához (Feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 
 

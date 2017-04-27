@@ -1,6 +1,6 @@
 ---
 title: "Vonalkódmaszkok beállítása"
-description: "Ez a témakör leírja, hogyan állíthatja be a vonalkódmaszk-karakterek, vonalkódmaszkok, és hozzárendelése a vonalkód, vonalkód maszkok."
+description: "Ez a témakör a vonalkódmaszk-karakterek és a vonalkódmaszkok beállítását ismerteti, valamint arról is beszámol, hogy miként rendelhetők vonalkódmaszkok vonalkódokhoz."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
@@ -27,57 +27,62 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-bar-code-masks"></a>Vonalkódmaszkok beállítása
 
-Ez a témakör leírja, hogyan állíthatja be a vonalkódmaszk-karakterek, vonalkódmaszkok, és hozzárendelése a vonalkód, vonalkód maszkok.
+[!include[banner](includes/banner.md)]
+
+
+Ez a témakör a vonalkódmaszk-karakterek és a vonalkódmaszkok beállítását ismerteti, valamint arról is beszámol, hogy miként rendelhetők vonalkódmaszkok vonalkódokhoz.
 
 <a name="set-up-bar-code-mask-characters"></a>Vonalkódmaszk-karakterek beállítása
 -------------------------------
 
-A vonalkódmaszkok vonalkódok létrehozása és az értékesítés (POS) pontba beolvasott vonalkódok gyors azonosítását használják. Maszkok állnak, amelyek helyőrzőként a létrehozandó vonalkódok formátumát jelző karakter. Vonalkódmaszk konfigurálásához állítsa be a vonalkódmaszk-karaktereket kell. Ugrás a **kereskedelmi és kereskedelmi**&gt;**Inventory management**&gt;**vonalkódok és címkék**&gt;**maszk karakterek**. Kattintson a **új** vonalkódmaszk-karakterek létrehozása. Vonalkódmaszk-karakterek hozhatók létre a következő vonalkód adatok jelöléséhez.
+A vonalkódmaszkok vonalkódok létrehozására és a pénztárnál beolvasott vonalkódok gyors azonosítására használhatók. A maszkok olyan karakterekből állnak, amelyek helyőrzőként szolgálnak, és kijelölik a létrehozandó vonalkódok formátumát. Vonalkódmaszk konfigurálásához be kell állítania a vonalkódmaszk-karaktereket. Lépjen a **Kiskereskedelem és kereskedelem** &gt; **Készletgazdálkodás** &gt; **Vonalkódok és címkék** &gt; **Maszkkarakterek** ponthoz. Új vonalkódmaszk-karakterek létrehozásához kattintson az **Új** gombra. Maszkkarakterek a következő vonalkódadatok jelölésére hozhatók létre .
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
-| **Field**            | **Description**                                                                                                 |
-| **Product**          | Helyőrző a termékazonosítót.                                                                                     |
-| **Any number**       | Adjon meg egy számot, amely lesz kemény kódolva a vonalkódok segítségével.                                                  |
-| **Check digit**      | Azt jelzi, hogy a vonalkód formátum a vonalkódmaszk segítségével egy ellenőrző számjegy megerősíti a vonalkód érvényességét. |
-| **Size digit**       | A vonalkód méretét tartalmazó termékváltozat létrehozott méretét jelzi.                                 |
-| **Color digit**      | Színre színt tartalmazó termékváltozat létre vonalkódokat jelzi.                               |
-| **Style digit**      | Azt jelzi, hogy a stílust tartalmazó termékváltozat létre vonalkódokat stílus.                             |
-| **EAN license code** | EAN licenckódok kiállított EAN licenc helyőrzője.                                                       |
-| **Ár**            | Jelzi, hogy ár ár beépített vonalkód.                                                                   |
-| **Quantity**         | Azt jelzi, hogy a vonalkódokat beágyazott mennyiség véletlenszerű tömeg mennyiség.                                                |
-| **Employee**         | Vonalkód szegmense vonalkód POS bejelentkezési alkalmazott azonosító számát jelzi.                                  |
-| **Customer**         | Ügyfélszegmens Azonosítóját jelzi.                                                                                  |
+| **Mező**            | **Leírás**                                                                                                 |
+| **Termék**          | Helyőrző a termékazonosító számára.                                                                                     |
+| **Bármely szám**       | A vonalkódok véglegesen kódolt számának megadásához használatos.                                                  |
+| **Ellenőrző számjegy**      | Azt jelzi, hogy egy vonalkódmaszkvonalkód formátuma ellenőrző számjegyet használ a vonalkód érvényességének megerősítésére. |
+| **Méret számjegy**       | Egy méretet jelez egy olyan vonalkódnál, amely méretet tartalmazó termékváltozathoz készült.                                 |
+| **Szín számjegy**      | Egy színt jelez egy olyan vonalkódnál, amely színt tartalmazó termékváltozathoz készült.                               |
+| **Stílus számjegy**      | Egy stílust jelez egy olyan vonalkódnál, amely méretet tartalmazó termékstílushoz készült.                             |
+| **EAN-licenckód** | EAN-licenckódok számára kiállított EAN-licenc helyőrzője.                                                       |
+| **Ár**            | Az árat jelzi az árat beépítetten tartalmazó vonalkódoknál.                                                                   |
+| **Mennyiség**         | A mennyiséget jelzi a mennyiséget/véletlenszerű súlyút beágyazottan tartalmazó vonalkódoknál.                                                |
+| **Alkalmazott**         | Az alkalmazott azonosítószámának vonalkódszegmensét jelzi a vonalkódos pénztári bejelentkezésnél.                                  |
+| **Ügyfél**         | Az ügyfélazonosító szegmensét jelzi.                                                                                  |
 | **Adatbevitel**       | *Még nincs megvalósítva.*                                                                                          |
-| **Discount code**    | Jelzi, hogy a vonalkód engedmény hozzáadása az értékesítési tranzakció pont használt engedmény kódja             |
-| **Ajándékutalvány**        | Ajándékutalványok kibocsátásakor vagy a kifizető ajándékutalvány jelzi.                                               |
-| **Loyalty card**     | A hűséges vevők hozzáadása a tranzakcióhoz, és használható, ha a kifizető hűséges.                             |
+| **Engedmény kódja**    | Olyan vonalkód engedménykódját jelzi, amellyel engedményt adna egy pénztári tranzakcióhoz             |
+| **Ajándékutalvány**        | Az ajándékutalvány számát jelzi, ha ajándékutalványt ad ki, vagy azzal fizet.                                               |
+| **Hűségkártya**     | Hűségkártyával rendelkező ügyfél hozzáadása egy tranzakcióhoz – később a hűségkártyával való fizetéseknél használható.                             |
 
-## <a name="define-bar-code-masks"></a>A vonalkódmaszkok meghatározása
-Után a szükséges vonalkódmaszkok vonalkódmaszk-karakterek vannak megadva, Ugrás **kereskedelmi és kereskedelmi**&gt;**Inventory management**&gt;**vonalkódok és címkék**&gt;**vonalkód a munkalapmaszk-beállítás**. Ezen a lapon határozhatja meg a korábban megadott karakterek használatára vonalkódmaszkok. Vonalkód maszkok vonalkódok létrehozásához használt, valamint azt, hogy ezek segítenek azonosítani a POS beolvasott vonalkódok.
+## <a name="define-bar-code-masks"></a>Vonalkódmaszkok meghatározása
+Miután megadta a vonalkódmaszk-karaktereket a szükséges vonalkódmaszkok számára, menjen a **Kiskereskedelem és kereskedelem** &gt; **Készletgazdálkodás** &gt; **Vonalkódok és címkék** &gt; **Vonalkódmaszk beállítása** ponthoz. Ezen az oldalon olyan vonalkódmaszkokat adhat meg, amelyek a korábban megadott karaktereket használják. Ezeket a vonalkódmaszkokat a vonalkódok generálásakor használja a rendszer, és segítenek azonosítani a pénztárban beolvasott vonalkódokat is.
 
-1.  Kattintson a **új** hozhat létre egy új vonalkódmaszkot.
-2.  Írja be az értékeket a **Maszkazonosító** és **leírás** mezők, és válassza ki a vonalkódtípus maszk a **típus** mezőben.
-3.  A a **általános** szakaszban, jelölje be az értéket a **Vonalkódszabvány** mezőben, és adja meg a vonalkód előtagot, ha szükséges.
-4.  A a **Vonalkódmaszkszegmens** szakaszban, hozzá kell létrehozni a vonalkód vonalkód szegmensek használandó.
+1.  Új vonalkódmaszk létrehozásához kattintson az **Új** gombra.
+2.  Adja meg az értékeket a **Maszkazonosító** és a **Leírás** mezőkben, and majd válassza ki a vonalkódmaszk típusát a **Típus** mezőben.
+3.  Az **Általános** szakaszban válasszon ki egy értéket a **Vonalkódszabvány** mezőben, majd adja meg a vonalkód előtagját, amennyiben szükséges.
+4.  A **Vonalkódmaszkszegmens** résznél adjon hozzá olyan vonalkódszegmenseket, amelyeket a létrehozandó vonalkódban fog használni.
 
-Például, hozzon létre vonalkódmaszkot Maszkazonosító "Termék", akkor volna tegye a következőket:
+Például, egy „Termék” maszkazonosítójú vonalkódmaszk létrehozásához a következőket kell tennie:
 
-1.  Hozzon létre egy új vonalkódmaszkot, és válassza ki a "Termék" típusú.
-2.  Válassza ki a vonalkód szabvány, például "kód 39".
-3.  Adja meg könnyen azonosítani a vonalkód használandó előtag. Például "22."
-4.  A maszk szegmens hozzáadása. A "Termék" maszk szegmens be lesz jelölve.
-5.  A termék szegmens, például '10' hosszú biztosítanak. Hossza meg kell egyeznie az üzlet általánosan használt termékazonosító hosszát. A maszk jelenik meg az előnézet a **általános** a szakasz **maszk**.
+1.  Hozzon létre egy új vonalkódmaszkot, és válassza ki a „Termék” típust.
+2.  Válasszon ki egy vonalkódszabványt, például a „Kód: 39” lehetőséget.
+3.  Adjon meg egy előtagot a vonalkód egyszerű azonosításához. Például: „22”.
+4.  Adjon meg egy maszkszegmenst. A „Termék” maszkszegmens lesz kijelölve.
+5.  Adjon meg egy hosszúságot a termékszegmenshez, például „10”. A hosszúságnak meg kell egyeznie az üzletnél általánosan használt termékazonosító hosszúságával. A maszk előnézetként jelenik meg az **Általános** szakaszban, a **Maszk** alatt.
 
-## <a name="assign-bar-code-masks-to-bar-codes"></a>A vonalkódmaszkok vonalkódok rendelni
-A vonalkódok maszkok kell rendelni a vonalkódok előtt be kell állítani. Az előző példában a továbbra is a vonalkódhoz rendelése a vonalkódban, tegye a következőket:
+## <a name="assign-bar-code-masks-to-bar-codes"></a>Vonalkódmaszkok társítása vonalkódokhoz
+A vonalkódokmaszkokat hozzá kell rendelni vonalkódokhoz ahhoz, hogy használni lehessen őket. Az előző példánál maradva, a vonalkódmaszk vonalkódhoz történő hozzárendeléséhez tegye a következőket:
 
-1.  Ugrás a **szervezet felügyelete**&gt;**a telepítő**&gt;**a vonalkódok**. Kattintson a **új** egy új vonalkód létrehozásához.
-2.  Írja be az értékeket a **vonalkód****a telepítő** és ** telepítő ** mezőket.
-3.  A a **általános** ebben a szakaszban a **vonalkódtípus** mezőben, válassza a "Kód 39". A a **maszk****ID** mezőben, jelölje ki a korábban létrehozott "Termék" maszk.
-4.  A **méretét**, adja meg a "12".
-5.  Click **Save**.
+1.  Lépjen a **Szervezetadminisztráció** &gt; **Beállítás** &gt; **Vonalkódok** menüpontba. Új vonalkód létrehozásához kattintson az **Új** gombra.
+2.  Adjon meg értékeket a **Vonalkód** **beállítás** és a **Beállítás **mezőkben.
+3.  Az **Általános** szakaszban, a **Vonalkódtípus** mezőben válassza ki a „Kód: 39” lehetőséget. A **Maszk** **azonosító** mezőben válassza ki a korábban létrehozott „Termék” maszkot.
+4.  A **Méret** beállításnál adja meg a „12” értéket.
+5.  Kattintson a **Mentés** gombra.
 
-A vonalkódban már termékek vonalkódok létrehozásához használható. Példák a fenti lépések vonalkódmaszkok termékek létrehozása, de azok is bemutatják, hogyan lehet létrehozni bármely más támogatott vonalkód típusú vonalkódmaszkok. Vonalkódmaszkok, típusa és hossza az adott környezetben való használatra kell beállítani.
+A vonalkódmaszk mostantól a termékek vonalkódjainak létrehozására használható. A fenti lépések példák arra, hogyan hozhat létre vonalkódmaszkokat a termékek számára, de bemutatják azt is, hogyan hozhat létre vonalkódmaszkokat bármely más támogatott vonalkódtípushoz. A vonalkódmaszkokat, -típusokat és -hosszokat az adott környezetéhez kell igazítania.
+
+
 
 

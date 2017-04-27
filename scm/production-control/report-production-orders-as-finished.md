@@ -1,6 +1,6 @@
 ---
-title: "Termelési rendelések jelentése befejezettként"
-description: "Készként történő jelentés a termelési fázisban. Ebben a szakaszban a késztermék jelentett, és a gyártási rendelés átkerül a készlet."
+title: "Termelési rendelések készként jelentése"
+description: "Termelési szakasz készként jelenítése Ebben a szakaszban megtörténik a késztermék jelentése, és a gyártási rendelés átkerül a készletbe."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-production-orders-as-finished"></a>Termelési rendelések jelentése befejezettként
+# <a name="report-production-orders-as-finished"></a>Termelési rendelések készként jelentése
 
-Készként történő jelentés a termelési fázisban. Ebben a szakaszban a késztermék jelentett, és a gyártási rendelés átkerül a készlet.
+[!include[banner](../includes/banner.md)]
+
+
+Termelési szakasz készként jelenítése Ebben a szakaszban megtörténik a késztermék jelentése, és a gyártási rendelés átkerül a készletbe.
 
 Amikor a késztermékek mennyiségét egy termelési rendelésen készként jelentik, akkor a mennyiség frissül a rendelkezésre álló készletben is. Az eredetileg tervezett rendelési mennyiségből részleges mennyiség is jelenthető készként. Emellett a hibás mennyiségeket is készre lehet jelenteni, kapcsolódó hibaok megadásával. Amikor a termelési rendelés eléri a Készként jelentve fokozatot, az azt jelenti, hogy nem lesz további mennyiség jelentve a termelési rendelésből.
 A következő jellemzők társulnak a **Készként jelentve** folyamathoz:
@@ -44,5 +47,7 @@ A mennyiség a kimeneti helyre lesz jelentve. Ekkor raktári munka jön létre, 
 
 ## <a name="set-a-production-order-to-reporting-as-finished"></a>Termelési rendelés Készre jelentett állapotra állítása
 A termelési rendelés a szokásos termelési rendelés frissítése funkcióval, az útvonal- és feladatkártyanaplókkal, vagy a **Jelentés készként** naplóval lehet **Készként jelenteni**. Emellett a feladatkártya-terminál és a feladatkártya-eszköz oldalakon keresztül is frissítheti az állapotot **Jelentés készként** értékre, amikor a termelési rendelés utolsó feladatát lejelenti. Végül a **Jelentés készként** állapotot a hordozható raktári eszközök megoldásának folyamatán keresztül is aktiválhatja.  
+
+
 
 

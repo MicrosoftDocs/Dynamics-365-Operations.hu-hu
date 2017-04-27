@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-groups"></a>Költségcsoportok
 
+[!include[banner](../includes/banner.md)]
+
+
 A költségcsoportok adják a legyártott cikk kiszámolt költségében a költség-hozzájárulások szegmentálásának és elemzésének alapját, mint például az anyag, a munka és a többletköltség költség-hozzájárulását. A költségcsoport-szegmentálásnak számos szinonimája létezik a gyártási környezetekben, például költséglebontás, költségszétbontás vagy költségosztályozás. 
 
 A költségcsoport-szegmentálásnak számos szinonimája létezik a gyártási környezetekben, például költséglebontás, költségszétbontás vagy költségosztályozás. A költségcsoport-szegmentálás számos célt szolgálhat. Íme néhány példa:
@@ -48,6 +51,8 @@ A költségcsoporthoz egy költségcsoport-típust lehet hozzárendelni és azt,
 
 -   **Költségcsoport-típus** − Minden költségcsoporthoz egy költségcsoport-típust kell hozzárendelni, amely jelzi, hogy a költségcsoport közvetlen anyag, közvetlen gyártás vagy közvetlen kiszervezés, vagy pedig közvetett, illetve definiálatlan. A költségcsoportok, amelyek közvetlen anyagként vannak meghatározva, cikkekhez rendelhetők hozzá. A közvetlen gyártási költségcsoportokat költségkategóriákhoz lehet hozzárendelni. A közvetlen kiszervezési költségcsoport szolgáltatási terméktípusokhoz rendelhető hozzá, amely lehetővé teszi a szolgáltatás beszerzési költségeinek alvállalkozói tevékenységekhez történő társítását. A közvetett költségcsoportok a felárak és pótdíjak közvetett költségéhez rendelhetők hozzá. A meghatározatlannak szánt költségcsoportokat cikkekhez, költségcsoportokhoz és közvetett költségekhez lehet hozzárendelni. Egy költségcsoport-típus társítása számos célt szolgál. Először is, korlátozza egy költségcsoport hozzárendelhetőségét és az alkalmazható költségcsoportok listájának megjeleníthetőségét. Másodszor, jelentési célokat szolgáló kiegészítő szegmentálást biztosít. Harmadszor, felhasználható arra, hogy főkönyvi számlákat rendeljenek az eltérésekhez.
 -   **Viselkedés** − Minden költségcsoport opcionálisan hozzárendelhető egy viselkedéshez, amely jelzi, hogy a költségcsoport a fix költségekre vagy a változó költségekre vonatkozik. Az olyan költségcsoportot, amelynek viselkedése nulla értékre van állítva, változó költségként kezeli a program. A viselkedés hozzárendelése csak jelentési célokat szolgál. Például a költségeket megjelenítheti a költségszámítási táblázaton fix és változó költségek szegmentálásával és a**Költségösszegzés költségcsoportok szerint** oldalon. Ha százalékos nyereségbeállítást rendel az egyes költségcsoportokhoz, az anyagjegyzék-számítás megadja a „költség plusz árrés” elv alapján javasolt eladási árat.
+
+
 
 
 

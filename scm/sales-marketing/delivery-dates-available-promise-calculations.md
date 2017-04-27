@@ -28,23 +28,26 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-promising"></a>Rendelési ígéretek
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
 
 Rendelés ígéret számítja ki a lehető legkorábbi szállítási és kézhezvételi dátumok, és a szállítási dátum vezérlő módot és szállítási napok szállítási alapul. Négy szállítási dátum ellenőrzési módszer közül választhat:
 
--   **Értékesítés átfutási idő** – az értékesítés átfutási ideje az az idő, a értékesítési rendelés létrehozása és a cikkek szállítása közötti. A szállítási dátum kiszámítása egy napok alapértelmezett száma alapján, és nem veszi figyelembe a készlet rendelkezésre állását, ismert igény vagy tervezett ellátás.
--   **ATP (rendelkezésre álló Ígérethez)** – Ígérethez rendelkezésre áll az a mennyiség, az egyik elem áll rendelkezésre, és a vevőnek egy adott napon is ígért. Az Ígérethez rendelkezésre álló mennyiség kiszámítása tartalmazza a nem véglegesített készletet, az átfutási időket a tervezett bevételezéseket és kiadásokat.
+-   **Értékesítés átfutási ideje** – Az értékesítés átfutási ideje az értékesítés rendelés létrehozása és a szállítás közti idő. A kézbesítési dátum számítása a napok egy alapértelmezett száma alapján történik, és nem veszi figyelembe a készlet rendelkezésre állását, az ismert igényt vagy a tervezett ellátást.
+-   **Ígérethez rendelkezésre áll (elérhető Ígérethez)** – Az Ígérethez rendelkezésre áll a cikk azon mennyiségét jelenti, amely elérhető és szállítható a vevőnek adott időre. Az Ígérethez rendelkezésre álló mennyiség kiszámítása tartalmazza a nem véglegesített készletet, az átfutási időket a tervezett bevételezéseket és kiadásokat.
 -   **ígérethez rendelkezésre áll + Kiadási időtartalék**– A szállítás dátuma megegyezik az ígérethez rendelkezésre áll (ATP) dátummal, plusz a cikkre vonatkozó kiadási időtartalékkal. A kiadási időtartalék a szállítandó cikkek előkészítéséhez szükséges idő.
 -   **Ígérhető **– Az elérhetőség az alábontás alapján számítható.
 
 ## <a name="atp-calculations"></a>Ígérethez rendelkezésre áll számítások
-Az Ígérethez rendelkezésre álló mennyiség "a keresési összesített ATP" módszerrel számítják ki. Az ATP számítási módszer fő előnye a hogy is képes kezelni az esetekben, amikor problémák között bevételek összege több, mint a legújabb (például, ha egy korábbi kézhezvételétől számított mennyiség megfeleljen egy követelménynek kell használni). Számítási módszer: a "a keresési összesített ATP" magában foglalja valamennyi kérdést mindaddig, amíg az összesített mennyiség meghaladja az összesített mennyiség kibocsátására. Ezért az ígérethez rendelkezésre állás számítás módszer kiértékeli, hogy a mennyiség egy része a korábbi időszakból használható-e a későbbi időszakban.  
+Az ígérethez rendelkezésre álló mennyiséget a rendszer a „kumulatív és előretekintéssel meghatározott, ígérethez rendelkezésre álló mennyiség” módszerrel számítja ki. Ennek az ígérethez rendelkezésre áll számítási módszernek a fő előnye, hogy kezelhetők olyan esetek, ahol a kiadások összeg a bevételek között nagyobb, mint a legfrissebb bevétel (például amikor egy korábbi bevételezési mennyiséget fel kell használni a követelmények miatt). A „kumulatív ígérethez rendelkezésre állás és előretekintés” számítási módszer minden kiadást magába foglal, amíg a bevételezendő kumulatív mennyiség meghaladja a kumulatív kiadandó mennyiséget. Ezért az ígérethez rendelkezésre állás számítás módszer kiértékeli, hogy a mennyiség egy része a korábbi időszakból használható-e a későbbi időszakban.  
 
 Az Ígérethez rendelkezésre álló mennyiség készletegyenlege nem véglegesített az első időszakban. Általában az egyes időszakokra kerül kiszámításra, amelyekben a bevételezés ütemezve van. A program kiszámítja az ígérethez rendelkezésre álló mennyiség időszakának napjait, és a mennyiség első napjaként az aktuális dátumot határozza meg. Az első időszakban az ígérethez rendelkezésre álló mennyiség az aktuális készlet esedékes és lejárt vevői rendelésekkel csökkentett mennyisége.  
 
 A rendszer a következő képlettel számítja ki az ígérethez rendelkezésre álló mennyiséget:  
 
-Ígérethez rendelkezésre álló mennyiség = ATP az előző időszak + bevételek a tárgyidőszakban – az aktuális időszak problémák – nettó kiadási mennyiség csak az időszakban, amikor minden jövőbeni időszakokra, az elkövetkező időszakra bezárólag bevételek összege meghaladja a problémák összege legfeljebb minden jövőbeli időszakra és többek között az elkövetkező időszakra.  
+Ígérethez rendelkezésre áll = Az előző időszakban ígérethez rendelkezésre álló készlet + Az aktuális időszak bevételezései - Az aktuális időszak kiadásai – Az összes jövőbeni időszak bevételezéseinek összegének időszakáig, minden egyes jövőbeni időszak nettó kiadási mennyisége, a jövőbeni időszakot beleértve és azzal bezárólag nagyobb, mint a kiadások összege a jövőbeni időszakkal bezárólag.  
 
 Ha nincs több figyelembe vehető kiadás vagy bevételezés, akkor az ígérethez rendelkezésre álló mennyiség a további dátumokon ugyanaz lesz, mint az ígérethez rendelkezésre álló utolsó számított mennyiség.  
 
@@ -66,8 +69,10 @@ A vevő telefonál, és 150 egységet venne egy termékből. Ha megerősíti a t
 
 Létrehozhat egy értékesítési rendeléssort a termékhez és megadhat **150** mennyiséget.  
 
-Mivel a szállítási dátum ellenőrzésének módja az ígérethez rendelkezésre áll, az ígérethez rendelkezésre áll adatokat ki kell számítani a legkorábbi szállítási dátumhoz. A beállítások alapján, a késleltetett beszerzési rendelés és eladási rendelés tekintendők, és az aktuális dátumot a létrejövő Ígérethez rendelkezésre álló mennyiség: 0. Holnap, ha a késleltetett beszerzési rendelés várhatóan befolyó, az Ígérethez rendelkezésre álló mennyiség számítása több mint 0 (ebben az esetben kiszámítása a következőképpen történik 125). Azonban 10 nap, amikor a 100 darabot újabb beszerzési rendelés várható kapott, az Ígérethez rendelkezésre álló mennyiség lesz több mint 150.  
+Mivel a szállítási dátum ellenőrzésének módja az ígérethez rendelkezésre áll, az ígérethez rendelkezésre áll adatokat ki kell számítani a legkorábbi szállítási dátumhoz. A beállítások alapján a késleltetett beszerzési rendelés és értékesítési rendelés feldolgozásra kerül és kapott ígérethez rendelkezésre állási mennyiség a jelenlegi dátumhoz 0. Holnap, amikor a késleltetett beszerzési rendelés beérkezése várható, az ígérethez rendelkezésre állási mennyiségre kapott érték nagyobb, mint 0 (ebben az esetben 125 az értéke). Ugyanakkor mostantól 10 nap múlva, amikor a 100 darabra szóló kiegészítő beszerzési rendelés érkezése várható, az ígérethez rendelkezésre állási mennyiség több, mint 150.  
 
-Ezért a szállítási dátum értéke 10 nap múlva, az ígérethez alapján. Ennek megfelelően tájékoztassa az ügyfelet, hogy az igényelt mennyiség 10 nap múlva szállítható.
+Ezért a szállítási dátum az ígérethez rendelkezésre állás számításának alapján a mai naptól számított 10 nap. Ennek megfelelően tájékoztassa az ügyfelet, hogy az igényelt mennyiség 10 nap múlva szállítható.
+
+
 
 

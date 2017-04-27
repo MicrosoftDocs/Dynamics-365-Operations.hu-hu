@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>Számlaösszegek számlaegyeztetési eltéréseinek feloldása
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 A számlaegyeztetés ellenőrzésének egyik módja a számlaösszegek egyeztetése. Ha szeretné beállítani, hogy a rendszer elvégezze a számlaösszegek egyeztetését, a **Kötelezettségek paraméterei** oldalon, a **Számla ellenőrzése** fülön állítsa a **Számlaösszegek egyeztetése** lehetőséget **Igen** értékre. 
@@ -39,6 +42,8 @@ Az eltérés azonosítása után előfordulhat, hogy fel kell vennie a kapcsolat
 -   Az áreltérés elfogadása és a számla feladása az egyeztetési eltérésekkel. Lehetséges, hogy a rendszerben jóváhagyás szükséges az egyeztetési eltérések feladása előtt. Ebben az esetben jóvá kell hagynia az egyeztetési eltérést, és opcionálisan meg kell adnia egy jóváhagyási megjegyzést. Ezután kiválaszthatja a számla feladását.
 -   A számlaösszeg módosítása a várt összegre és a számla feladása.
 -   Teljes jóváírás és új, javított számla kérése a szállítótól.
+
+
 
 
 

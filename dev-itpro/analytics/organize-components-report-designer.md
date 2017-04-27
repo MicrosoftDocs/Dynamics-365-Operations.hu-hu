@@ -49,18 +49,18 @@ Ezzel egy időben a jelentésdefiníciókat csoportosíthatja több jelentés k�
 ### <a name="create-a-report-group"></a>Jelentés csoport létrehozása
 
 1.  A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
-2.  A a **fájl** menüben kattintson a **új**&gt;**csoport jelentésdefiníció** új jelentés csoport a Keretmegtekintés ablak megnyitásához. Másik lehetőségként kattintson a **jelentés csoport** gomb ![jelentés csoport](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "jelentés csoport") az eszköztáron.
+2.  A **Fájl** menüben kattintson az **Új** &gt; **Jelentéscsoport-definíció** lehetőségre, hogy megnyisson egy új jelentéscsoportot a megjelenítő ablakban. Másik lehetőségként kattintson a **Jelentéscsoport** gombra ![Jelentéscsoport](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Jelentéscsoport") az eszköztáron.
 3.  Kattintson a **Jelentés Csoport** lapra. Ha felül szeretné bírálni ennek a jelentés létrehozásának egyes jelentésdefinícióban lévő információkat, jelölje be a **Az egyes jelentésdefiníciókból a vállalat, adat és dátumbeállítások felülbírálása** jelölőnégyzetet. A vállalat nevét, a részletezési szintet, az ideiglenes beállítást és dátum információkat automatikusan feltölti a rendszer, de végezhet rajtuk frissítéseket.
 4.  Több jelentés létrehozásához, amelyek megmutatják a jelentési pénznemeket válassza ki a **Minden jelentési pénznem szerepeltetése** jelölőnégyzetet. Ezután több nézethez férhet hozzá, ha a **Pénznem** gombra kattint a böngészőben, a jelentés megtekintésekkor.
 5.  A **Jelentések a csoportban** mezőben, kattintson a **Hozzáadás** gombra a jelentéscsoportba felvenni kívánt jelentések kiválasztásához. Több jelentés kijelöléséhez a **Hozzáadás** párbeszédablakban, tartsa lenyomva a Ctrl billentyűt, miközben kiválasztja az elemeket. Befejezése után jelölje ki a jelentéseket, és kattintson az **OK** gombra.
-6.  Kattintson a **fájl**&gt;**Mentés** az új csoport jelentés mentéséhez.
+6.  Kattintson a **Fájl** &gt; **Mentés** elemre az új jelentéscsoport mentéséhez.
 
 ### <a name="modify-a-report-group"></a>Jelentéscsoport módosítása
 
 1.  A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
 2.  Kattintson duplán a módosítani kívánt jelentéscsoportra.
 3.  A **Jelentéscsoport** lapon, végezze el a kívánt módosításokat.
-4.  A a **fájl** menüben kattintson a **mentése** menteni a módosított jelentést csoport, azt is megteheti, kattintson a **mentése** gomb ![mentése](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "mentése") az eszköztáron.
+4.  A **Fájl** menüben kattintson a **Mentés** lehetőségre a módosított jelentéscsoport mentéséhez, vagy kattintson a **Mentés** gombra ![Mentés](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Mentés") az eszköztáron.
 
 **Megjegyzés:** Ha meghatározott időközönként létrehozott jelentéseket ütemezett, felülírhatja ezeket a beállításokat, és azonnal jelentéseket készíthet.
 
@@ -68,7 +68,7 @@ Ezzel egy időben a jelentésdefiníciókat csoportosíthatja több jelentés k�
 
 1.  A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
 2.  Nyissa meg a jelentéscsoportot a jelentés készítéséhez.
-3.  Kattintson a **jelentés készítése** gomb ![jelentés készítése](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "jelentés készítése") jelentések.
+3.  Kattintson a **Jelentés készítése** gombra ![Jelentés készítése](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Jelentés készítése") jelentések készítéséhez.
 
 ### <a name="delete-a-report-group"></a>Jelentéscsoport törlése
 
@@ -104,8 +104,8 @@ Az alábbi táblázat ismerteti a **Jelentéscsoport** lap vezérlőit.
 <td>Adja meg, hogy milyen részletes jelentést szeretne készíteni.
 <ul>
 <li><strong>Pénzügyi</strong>− Átfogó és összegző jelentés. Nem lehet számlákra és dimenziókra lebontani, kivéve az olyan számláknál és dimenzióknál, amelyeket a jelentési fán keresztül adtak hozzá.</li>
-<li><strong>Pénzügyi &amp;fiók</strong> − A jelentést, amely tartalmazza a magas szintű összesítést és a számla részletei.</li>
-<li><strong>Pénzügyi, fiók, &amp;tranzakció</strong> − A jelentést, amely magas szintű összesítést és a tranzakció részleteket tartalmazza.</li>
+<li><strong>Pénzügy és Számla</strong> – Egy jelentés, amely átfogó összegzést és részletes számlaadatokat tartalmaz.</li>
+<li><strong>Pénzügy, Számla és Tranzakció</strong> – Egy jelentés, amely átfogó összegzést és a tranzakció részletes adatait tartalmazza.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -154,6 +154,6 @@ Csak az alapértelmezett alapidőszak beállításainak mentése történik a je
 <a name="see-also"></a>Lásd még
 --------
 
-[Pénzügyi beszámolás Microsoft Dynamics 365 műveletek](financial-reporting-intro.md)
+[Pénzügyi jelentéskészítés a Microsoft Dynamics 365 for Operations rendszerben](financial-reporting-intro.md)
 
 

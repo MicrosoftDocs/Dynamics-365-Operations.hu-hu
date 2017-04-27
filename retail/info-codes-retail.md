@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="info-codes"></a>Infókódok
 
+[!include[banner](includes/banner.md)]
+
+
 Ez a cikk áttekintést nyújt az infókódokról, az infókód-csoportokról és azok használatáról.
 
 Az infókódok lehetőséget nyújtanak az adatrögzítésre a pénztárgép (POS) jegyzékben. Az infókódok segítségével a pénztáros információt vihet be a pénztárgépbe az előforduló különféle műveletek során, például cikkeladásokat, visszárukat vagy vevőket választhat ki. A pénztárosok kiválaszthatják a bevitelt a listából, vagy megadhatják kódként, számként, dátumként vagy szövegként. Az infókódokat előre meghatározott üzleti tevékenységekhez, kiskereskedelmi cikkekhez, fizetési módokhoz, vevőkhöz vagy meghatározott pénztári tevékenységekhez társíthatja. Az infókódokat a következőkre használhatja:
@@ -38,7 +41,7 @@ Az infókódok lehetőséget nyújtanak az adatrögzítésre a pénztárgép (PO
 -   A pénztáros a pénztárgép fiókjának kinyitásakor értékesítési művelet végrehajtása nélkül megadhat értéket, vagy az alkódok listájából választhat.
 
 ## <a name="info-codes-group-in-retail-and-commerce"></a>Kiskereskedelmi és commerce adatainak kódok-csoportja
-Dynamics 365 - műveletekhez, kiskereskedelmi csoportokat hozhat létre információ kódok. Az infókód-csoportok rugalmasságot nyújtanak azáltal, hogy lehetővé teszik a kevesebb infókód meghatározását, és ezeket többféle módon használhatja fel. Az infókód-csoportok az alábbi módokon használhatók:
+A Dynamics 365 for Operations - Retail szolgáltatásban infókódok csoportjait hozhatja létre. Az infókód-csoportok rugalmasságot nyújtanak azáltal, hogy lehetővé teszik a kevesebb infókód meghatározását, és ezeket többféle módon használhatja fel. Az infókód-csoportok az alábbi módokon használhatók:
 -   Kevesebb infókód meghatározása és egyszerű újra felhasználása. Az iinfókód-csoportokban szereplő nfókódok nem rendelkeznek előre meghatározott függőséggel más infókódoktól. Az azonos infókódot több infókódcsoport is tartalmazhatja, és rangsor segítségével az azonos infókódok megjeleníthetők a megadott sorrendben, amely értelmes bármely adott helyzetben.
 -   Infókódok csatolása más infókódokhoz vagy infókód-csoportokhoz egy termékről vagy tranzakcióról szóló információ gyűjtéséhez oly módon, ahogyan szüksége van rá anélkül, hogy külön infókódot vagy csatolt infókódot kellene megadnia minden egyes esethez.
 
@@ -47,6 +50,8 @@ Dynamics 365 - műveletekhez, kiskereskedelmi csoportokat hozhat létre informá
 
  
 -
+
+
 
 
 

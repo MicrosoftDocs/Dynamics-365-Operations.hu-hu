@@ -1,5 +1,5 @@
 ---
-title: "Szállítói számlák beállítása"
+title: "Szállítókódok beállítása"
 description: "Ez a témakör ismerteti azokat az információkat, amelyeket egy új szállítói számla létrehozása esetén meg kell adnia."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-vendor-accounts"></a>Szállítói számlák beállítása
+# <a name="set-up-vendor-accounts"></a>Szállítókódok beállítása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör ismerteti azokat az információkat, amelyeket egy új szállítói számla létrehozása esetén meg kell adnia.
 
@@ -40,7 +43,7 @@ Szállítói fiók létrehozásakor meg kell adnia a szállítóra vonatkozó in
 -   A szállító adózási, szállítási, számlázási és fizetési adatainak bevitele. Alapértelmezés szerint ezek az adatok automatikusan betöltődnek a szállítóra vonatkozóan létrehozott dokumentumokba.
 -   Megadhatja az alapértelmezett pénzügyi dimenziókat, melyek segítségével a szállítóval kapcsolatos tranzakciók automatikusan feladhatók a pénzügyi számlákra.
 
-A szállítói fiókok létrehozásának a folyamatát felgyorsíthatja sablonok létrehozásával. Hozzon létre egy sablont, hogy a **szállító** lapon a műveleti ablaktáblán kattintson a **beállítások**&gt;**rekordadatok**. Ezután kattintson a **Vállalati számlák sablonazonosítója** pontra. A vállalatifiók-sablonok meg vannak osztva más felhasználókkal.  
+A szállítói fiókok létrehozásának a folyamatát felgyorsíthatja sablonok létrehozásával. A sablon létrehozásához kattintson a **Szállító** lapon a Műveleti ablakban **Lehetőségek** &gt; **Rögzítési információ** lehetőségre. Ezután kattintson a **Vállalati számlák sablonazonosítója** pontra. A vállalatifiók-sablonok meg vannak osztva más felhasználókkal.  
 
 Felhasználói sablont saját használatra is létrehozhat. Egyéb rekordokhoz, például kapcsolattartókhoz és termékekhez társított szállító nem törölhető.
 
@@ -56,7 +59,7 @@ Minden egyes szállítóhoz több címet is be lehet állítani, amelyek mindegy
 ## <a name="vendor-contacts"></a>Szállítói kapcsolattartás
 Tárolhatja egy szállító kapcsolattartási adatait. Ezek a kapcsolattartási adatok felhasználhatók olyan dokumentumokon, mint például a beszerzési rendelések, vagy az ajánlatkérések (RFQ-k).  
 
-Névjegyek hozzáadása a szállító a a **minden szállítóra** oldalon, a a **szállító** lapon, az a **beállítása** csoport, kattintson a **kapcsolatok**&gt;**felvitele**.  
+Kapcsolattartási adatok hozzáadásához a szállítóhoz kattintson a **Minden szállító** oldalon, a **Szállítók** lapon, a **Beállítás** csoportban, a **Kapcsolattartók** &gt; **Kapcsolattartók felvitele** lehetőségre.  
 
 Szállítói kapcsolattartókat előröl kezdve is létrehozhat. Másik lehetőségként kimásolhat részleteket egy másik, már a Microsoft Dynamics 365 for Operations-ben regisztrált személytől, és szükség szerint szerkesztheti az adatokat.  
 
@@ -64,7 +67,7 @@ Szállítói kapcsolattartókat előröl kezdve is létrehozhat. Másik lehetős
 
 Kapcsolattartás rögzítése nem törölhető, ha egy dokumentumra hivatkozik a kapcsolattartási adat. Ehelyett inaktiválhatja a kapcsolattartót.  
 
-Szállítói kapcsolattartók hozzáadhatja a Microsoft Office 365 személyes névjegyek. Azonban először be kell állítania a szinkronizálás Microsoft Exchange Server és a Microsoft Outlook telepítő varázsló Dynamics 365 műveletekhez és az Office 365 közötti szinkronizálást.
+A szállítói kapcsolattartókat hozzáadhatja a Microsoft Office 365 személyes kapcsolattartókhoz. Azonban először be kell állítania a Dynamics 365 for Operations közötti szinkronizálást mind Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
 
 ## <a name="vendors-in-different-legal-entities"></a>Szállítók különböző jogi személyekként
 Ha a szállító csak egy jogi személyként van regisztrálva szervezetében, és más jogi személyeket kell regisztrálni ugyanahhoz a szállítóhoz, használhatja a **Szállító hozzáadása egy másik jogi személyhez** lapot, hogy konfigurálja a szállítót, hogy áll egy másik jogi személlyel üzletelhessen. Válasszon egy szállítói csoportot, egy pénznemet, és a szállító várakoztatási állapotát a kijelölt jogi személyhez.  
@@ -101,5 +104,7 @@ Ha kifizetést kell végrehajtania a szállítói bankszámlára, akkor szállí
 Megadhatja a szállítói számlanaplón automatikusan megjelenő alapértelmezett számlákat a megadott szállítóhoz. Ez a lehetőséget akkor lehet hasznos, ha általában azonos típusú elemeket, vagy szolgáltatásokat szokott fizetni, ugyanazoktól a szállítóktól. Ha megad egy alapértelmezett számlát, gyorsan és hatékonyan írhat be naplóbejegyzéseket a számlanaplóba. A megadott alapértelmezett számlák nincsenek használatban a beszerzési rendelésekhez, vagy azokhoz a szállítói számlákhoz, amelyek a **Szállítói számla** oldalon vannak rögzítve.  
 
 Alapértelmezett számlákat választhat az **Alapértelmezett számla beállítása** lapon, amely megnyitható a **Számla** lapon szállítórekordon. Naplóbejegyzések amiket itt kiválaszt megjelennek a szállítói számlák szűrt listáján, amikor beír egy naplóbejegyzést. A számlák közül megadhat egy alapértelmezett számlát.
+
+
 
 

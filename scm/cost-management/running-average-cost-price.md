@@ -1,6 +1,6 @@
 ---
 title: "Mozgóátlagon alapuló önköltségi ár"
-description: "A készlet lezárása folyamat kiadási tranzakciók bevételezési tranzakciók a cikk cikkcsoport modell kiválasztott készletértékelési módszer alapján rendezi. Azonban közel készlet futtatása előtt a rendszer kiszámítja a kiadási tranzakciók könyvelésekor használt általában fut átlagos önköltségi ár."
+description: "A készletzárási folyamat a cikk cikkmodellcsoportjában kiválasztott készletértékelési módszer alapján a kiadási tranzakciókat a bevételezési tranzakciókkal szemben egyenlíti ki. Azonban, a készletzárás futtatása előtt a rendszer kiszámít egy mozgóátlagon alapuló önköltségi árat, amely általában a bevételi tranzakciók feladásakor kerül felhasználásra."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-04-07 15 - 11 - 47
@@ -28,29 +28,29 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="running-average-cost-price"></a>Mozgóátlagon alapuló önköltségi ár
 
-A készlet lezárása folyamat kiadási tranzakciók bevételezési tranzakciók a cikk cikkcsoport modell kiválasztott készletértékelési módszer alapján rendezi. Azonban közel készlet futtatása előtt a rendszer kiszámítja a kiadási tranzakciók könyvelésekor használt általában fut átlagos önköltségi ár.
+A készletzárási folyamat a cikk cikkmodellcsoportjában kiválasztott készletértékelési módszer alapján a kiadási tranzakciókat a bevételezési tranzakciókkal szemben egyenlíti ki. Azonban, a készletzárás futtatása előtt a rendszer kiszámít egy mozgóátlagon alapuló önköltségi árat, amely általában a bevételi tranzakciók feladásakor kerül felhasználásra.
 
-A rendszer megbecsüli a futó elem átlagos önköltségi ára a következő képlet segítségével: becsült ár = (tényleges összeg + pénzügyi) ÷ (fizikai mennyiség + pénzügyi mennyiség)
+A rendszer a következő receptúra alkalmazásával becsli meg egy cikk mozgóátlagon alapuló önköltségi árát: Becsült ár = (Fizikai összeg + Pénzügyi összeg) ÷ (Fizikai mennyiség + Pénzügyi mennyiség)
 
 ## <a name="using-the-running-average-cost-price"></a>A mozgóátlagon alapuló önköltségi ár alkalmazása
-A következő táblázat azt mutatja, amikor a rendszer feladja fut átlagos önköltségi ára a készlettranzakciók, és amikor az önköltségi ár definiált cikk fő rekord helyett használja.
+A következő táblázat két eshetőséget mutat be. Az első során a rendszer a mozgóátlagon alapuló önköltségi ár alapján ad fel készlettranzakciókat, a második esetben pedig a cikk törzsadataiban meghatározott önköltségi ára alapján teszi meg ugyan ezt.
 
-| Feltétel                                               | A rendszer használja a becsült futó átlagos önköltségi ár | A rendszer használja az önköltségi ár a cikk fő definiált |
+| Feltétel                                               | A rendszer a becsült mozgóátlagon alapuló önköltségi árat alkalmazza. | A rendszer a cikk törzsadataiban meghatározott önköltségi árat alkalmazza. |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Mindkét számláló\* és a nevező\*\* pozitív.  | Igen                                                      | Nincs                                                                |
-| A számláló\*, nevező\*\*, vagy mindkettő negatív. | Nincs                                                       | Igen                                                               |
-| A nevező\*\* értéke 0 (nulla).                        | Nincs                                                       | Igen                                                               |
+| A számláló\* és a nevező\*\* is pozitív.  | Igen                                                      | Nincs                                                                |
+| A számláló\*, a nevező\*\* vagy mind a kettő negatív. | Nincs                                                       | Igen                                                               |
+| Ha a nevező\*\* 0 (nulla).                        | Nincs                                                       | Igen                                                               |
 
-\*Számláló = (tényleges összeg + pénzügyi) \*\*nevező (fizikai mennyiség + pénzügyi mennyiség) = **Megjegyzés:** Ha a **tényleges értékkel együtt** beállítás nincs bejelölve a cikkhez, a rendszer a 0 (nulla) használja a fizikai mennyiség és a fizikai mennyiség. Az ezzel a beállítással kapcsolatos további tudnivalókért: [Tényleges értékkel együtt](include-physical-value.md).
+\* Számláló = (Fizikai összeg + Pénzügyi összeg) \*\* Nevező = (Fizikai mennyiség + Pénzügyi mennyiség) **Megjegyzés:** Ha a **Tényleges értékkel együtt **lehetőség nincs bejelölve egy cikkhez, akkor a rendszer 0 (nulla) értéket használ a fizikai összeghez és a tényleges mennyiséghez egyaránt. Az ezzel a beállítással kapcsolatos további tudnivalókért: [Tényleges értékkel együtt](include-physical-value.md).
 
 ## <a name="avoiding-pricing-amplification"></a>A túlárazás elkerülése
-Ritka esetekben a rendszer előtt van elég bevételezési ár alapjául szolgáló árak számos problémát. Az ilyen esetek a mozgóátlagon alapuló önköltségi ár túlbecslésével járhatnak. Vannak azonban olyan lépések, amelyekkel elkerülhető a túlárazási probléma, illetve annak előfordulása esetén enyhíthető a hatása. **Eset** A következő tranzakciók mennek végbe a **tényleges értékkel együtt** beállítás alkalmazása során:
+Nagyritkán a rendszer több kiadást áraz be azelőtt, hogy elégséges számú bevételezéssel rendelkezne az ár megállapításához. Az ilyen esetek a mozgóátlagon alapuló önköltségi ár túlbecslésével járhatnak. Vannak azonban olyan lépések, amelyekkel elkerülhető a túlárazási probléma, illetve annak előfordulása esetén enyhíthető a hatása. **Eset** A következő tranzakciók mennek végbe a **tényleges értékkel együtt** beállítás alkalmazása során:
 
 1.  Pénzügyileg a 100 mennyiséget kapja 100,00 USD-nél.
 2.  Pénzügyileg a 200-at adja meg, mint mennyiség.
 3.  Fizikailag a 101 mennyiséget kapja 202,00 USD-nél.
 
-Amikor megvizsgálja a cikk becsült mozgóátlagon alapuló önköltségi árát, a várt önköltségi ár 1,51 USD. Ehelyett talál egy becsült átlagos USD 102.00, a következő képlet alapján a futó: becsült ár = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 ÷ 1 = 102 az árképzési erősítés az okozza, hogy 200 elemeket ki a 2 pénzügyileg is, mielőtt bármilyen vonatkozó bevételek van a rendszer kell ár 100 cikkek. Ez a helyzet negatív készletet okoz. A rendszer az egységár a USD 1.00, majd becslést ad, előfordulhat, hogy mikorra várható. Azonban a megfelelő 100 bevételezés megérkezésekor, már 2,00 USD az egységár. **Megjegyzés:** Bár a kiadások negatív készletet eredményeznek, a kiadási ár számításakor pozitív lesz a készlet. Ezért, a cikktörzsben szereplő ár helyett, inkább a mozgóátlagon alapuló önköltségi árat használja a rendszer. Ezen a ponton a rendszer rendelkezik a USD 100.00 érték készlet eltolása. Annak ellenére, hogy az ellenoldal 100 darabból épült fel, azokon a helyeken ahol az egységnyi ellenoldal 1,00 USD volt, most csak egyetlen darab található a készletben. Emiatt a 100,00 USD értékű ellenoldal, ehhez az egy darabhoz van hozzárendelve. Ennek eredménye a becsült önköltségi ár túlbecslése. **Megjegyzés:** Összehasonlításképpen érdemes megfigyelni, hogy a fenti példa 2. és 3. lépésének felcserélése esetén 200 darab kiadása 1,51 USD egységárral történik, egy darab pedig megmarad az 1,51 USD egységáron. Mivel ez a túlárazási helyzet negatív készlet előfordulása esetén állhat elő, a következő helyzetekben nehéz elkerülni:
+Amikor megvizsgálja a cikk becsült mozgóátlagon alapuló önköltségi árát, a várt önköltségi ár 1,51 USD. Ehelyett az ön által talált mozgóátlagon alapuló önköltségi ár 102,00 USD, amely a következő receptúra alapján került kiszámításra: Becsült ár = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 ÷ 1 = 102 A túlárazás oka az, hogy a 200 darab pénzügyileg megadott cikkből a második lépésben a rendszernek 100 cikket bekellett áraznia, mielőtt bármilyen megfelelő bevételezéssel rendelkezne. Ez a helyzet negatív készletet okoz. Ezután a rendszer várhatóan 1,00 USD-t becsül egységárként. Azonban a megfelelő 100 bevételezés megérkezésekor, már 2,00 USD az egységár. **Megjegyzés:** Bár a kiadások negatív készletet eredményeznek, a kiadási ár számításakor pozitív lesz a készlet. Ezért, a cikktörzsben szereplő ár helyett, inkább a mozgóátlagon alapuló önköltségi árat használja a rendszer. Ekkor a rendszerben a készlet ellenoldali értéke 100,00 USD. Annak ellenére, hogy az ellenoldal 100 darabból épült fel, azokon a helyeken ahol az egységnyi ellenoldal 1,00 USD volt, most csak egyetlen darab található a készletben. Emiatt a 100,00 USD értékű ellenoldal, ehhez az egy darabhoz van hozzárendelve. Ennek eredménye a becsült önköltségi ár túlbecslése. **Megjegyzés:** Összehasonlításképpen érdemes megfigyelni, hogy a fenti példa 2. és 3. lépésének felcserélése esetén 200 darab kiadása 1,51 USD egységárral történik, egy darab pedig megmarad az 1,51 USD egységáron. Mivel ez a túlárazási helyzet negatív készlet előfordulása esetén állhat elő, a következő helyzetekben nehéz elkerülni:
 
 -   A kiadási árakat az aktuális készlet értéke és mennyisége alapján kell megbecsülni.
 -   Az aktuális készlet értékét és mennyiségét korrigálni kell a kiadások és a bevételezések alapján.

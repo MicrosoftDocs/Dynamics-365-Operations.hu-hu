@@ -1,6 +1,6 @@
 ---
 title: "Mérleg pénzügyi jelentés"
-description: "A cikk ismerteti a mérleget alapértelmezett jelentéseket. Bemutatja az építőelemek társított ezeket a jelentéseket is."
+description: "Ez a cikk a mérlegek alapértelmezett jelentéseit mutatja be. Emellett az e jelentésekhez tartozó építőelemeket is leírja."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="balance-sheet-financial-reports"></a>Mérleg pénzügyi jelentés
 
-A cikk ismerteti a mérleget alapértelmezett jelentéseket. Bemutatja az építőelemek társított ezeket a jelentéseket is. 
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk a mérlegek alapértelmezett jelentéseit mutatja be. Emellett az e jelentésekhez tartozó építőelemeket is leírja. 
 
 <a name="default-balance-sheet-reports"></a>Alapértelmezett mérlegkimutatások
 -----------------------------
@@ -72,10 +75,12 @@ Az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különb
 <a name="see-also"></a>Lásd még
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Pénzügyi jelentéskészítés](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Pénzügyi jelentések megtekintése](view-financial-reports.md)
 
-[Dynamics pénzügyi jelentési Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Pénzügyi jelentések blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

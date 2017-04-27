@@ -1,5 +1,5 @@
 ---
-title: "Készlet érték"
+title: "Készletobjektum-értékek"
 description: "Ez a cikk tájékoztatást egy készletobjektum értékekének számításáról."
 author: YuyuScheller
 manager: AnnBe
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="inventory-object-values"></a>Készlet érték
+# <a name="inventory-object-values"></a>Készletobjektum-értékek
 
 Ez a cikk tájékoztatást egy készletobjektum értékekének számításáról. 
 
-Egy új funkció nevű ** fizikai mennyiség ** lehetővé teszi egy adott készletdimenziós objektum mezőiben szereplő értékek. Egy költségobjektum annak az entitás szintnek felel meg, ahol a készletkönyvelést végzik. A költségobjektummal kapcsolatos további tudnivalókat lásd: [Költségobjektum](cost-object.md). Egy adott készletdimenziós objektum értékének megtekintéséhez kattintson **fizikai mennyiség** meg a **költség objektum** oldalon. Itt van egy készlet objektum értékének kiszámítási módját: készlet objektum. Érték = költség objektum. Átlagos egységköltség x készlet objektum. Mennyiség a következő példa mutatja a készlet objektum és a költség objektum értékének kiszámítási módját. Két termékbevételezési esemény van az A cikken rögzítve:
+Egy új funkció, aminek a neve **Fizikai mennyiség, **lehetővé teszi, hogy lássa egy megadott készletobjektum értékét. Egy költségobjektum annak az entitás szintnek felel meg, ahol a készletkönyvelést végzik. A költségobjektummal kapcsolatos további tudnivalókat lásd: [Költségobjektum](cost-object.md). Egy adott készletobjektum értékeinek megtekintéséhez kattintson a **Fizikai mennyiség** lehetőségre a **Költségobjektum** oldalon. Egy készletobjektum értéke az alábbi módon lesz kiszámolva: Készletobjektum.Értéke = Költségobjektum.Átlagos egységenkénti költsége × Készletobjektum.Mennyisége. Az alábbi példában látható, hogy a készletobjektum értéke és a költségobjektum hogyan számolható ki. Két termékbevételezési esemény van az A cikken rögzítve:
 
--   Szállítólevél 1: mennyiség = 100 pcs., összege = $1,000.00, hely = 1, raktári = 11, a Köteg száma = B1
--   Szállítólevél 2: mennyiség = 50 pcs., összege = $800.00, hely = 1, raktári = 11, a Köteg száma = B2
+-   Termékbevételezés 1: Mennyiség = 100 darab. Összeg = 1 000,00 $ Hely = 1 Raktár = 11, Köteg száma = B1
+-   Termékbevételezés 2: Mennyiség = 50 darab. Összeg = 800,00 $ Hely = 1 Raktár = 11, Köteg száma = B2
 
 Az alábbi táblázat a költségobjektum-számítás eredményét mutatja. Az eredményeket megtekintheti a **Költségobjektum** oldalon.
 
@@ -130,10 +130,10 @@ Az alábbi táblázat a készletobjektum-számítás eredményét mutatja. Az er
 <a name="see-also"></a>Lásd még
 --------
 
-[Cost objects](cost-object.md)
+[Költségobjektumok](cost-object.md)
 
-[Cost entries](cost-entries.md)
+[Költségbejegyzések](cost-entries.md)
 
-[Mi az új és módosult, a Microsoft Dynamics AX rendszerben](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Újdonságok és változások a Microsoft Dynamics AX rendszerben](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 

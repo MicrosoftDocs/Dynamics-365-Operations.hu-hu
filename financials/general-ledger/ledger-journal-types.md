@@ -1,6 +1,6 @@
 ---
 title: "Főkönyvi naplótípusok"
-description: "Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. A napló neve lap segítségével használható Microsoft Dynamics 365 egész műveletek naplókat állíthat be."
+description: "Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a Naplónevek lapot a Microsoft Dynamics 365 for Operationsben használható naplók beállításához."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-journal-types"></a>Főkönyvi naplótípusok
 
-Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. A napló neve lap segítségével használható Microsoft Dynamics 365 egész műveletek naplókat állíthat be.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a Naplónevek lapot a Microsoft Dynamics 365 for Operationsben használható naplók beállításához.
 
 | Napló típusa                      | Cél                                                                                                                                                                                                                                                                                                                                                     | Adja meg a tranzakciókat ezen az oldalon                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -55,11 +58,13 @@ Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókh
 | Szállító - banki utalás            | Szervezete bankjának átküldhető kötelezvény-átutalási fájl létrehozása.                                                                                                                                                                                                                                                                      | Átutalásnapló                                             |
 | Szállítói kifizetés               | Szállítók kifizetési tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                    | Fizetési napló                                                |
 | Szállítói kötelezvény kiállítása       | Szállítói kötelezvény kiállítása fizetési módként. A naplótípus használatához törölje a **Kötelezvénykiállítási napló automatikus létrehozása és feladása számlák feladásakor** lehetőséget a **Fizetési módok – szállítók** oldalon.                                                                                                                                          | Kötelezvénykiállítási napló                                   |
-| Szállítói számlagyűjtő feladás | Ideiglenes érkeztetési számlára még nem feladott szállítói számlatranzakciók létrehozása.                                                                                                                                                                                                                                                             | Szállítói számlagyűjtő a feladási részletek nélkül                  |
+| Szállítói számla gyűjtője, kivéve feladás | Ideiglenes érkeztetési számlára még nem feladott szállítói számlatranzakciók létrehozása.                                                                                                                                                                                                                                                             | Szállítói számlagyűjtő a feladási részletek nélkül                  |
 | Szállítói számla gyűjtője               | Szállítói számlagyűjtő tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Szállítói számla rögzítése          | Naplóban található szállítói számlák feladása.                                                                                                                                                                                                                                                                                                                 | Számlanapló                                                |
 | Szállítói kötelezvény újbóli kiállítása     | Olyan kötelezvényt újbóli kiállítása, amelyet a szervezet bankja már korábban elfogadott.                                                                                                                                                                                                                                                                      | Újbóli kötelezvénykiállítás naplója                                 |
 | Szállító - kötelezvény kiegyenlítése     | Szállítói kötelezvénykiegyenlítési tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                          | Kötelezvény kiegyenlítésének naplója                                 |
+
+
 
 
 

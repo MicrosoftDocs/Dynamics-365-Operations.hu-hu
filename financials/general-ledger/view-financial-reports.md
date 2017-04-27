@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-financial-reports"></a>Pénzügyi jelentések megtekintése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk bemutatja, hogy hogyan tekintheti meg és hogyan böngészheti a Microsoft Dynamics AX rendszer pénzügyi jelentéseit. Azokról a különféle beállítási lehetőségekről nyújt tájékoztatást, amelyek segítségével módosíthatja a pénzügyi jelentések megjelenését, illetve a bennük lévő adatokat.
 
 <a name="financial-reporting-overview"></a>Pénzügyi jelentéskészítés – áttekintés
@@ -48,7 +51,7 @@ Megváltoztathatja a jelentés dátumát, alkalmazhat attribútum és dimenzió 
 
 -   Az alap időszak és a jelentés alapévének megváltoztatásához válasszon ki egy alap időszakot és egy alap évet, majd kattintson az **OK**gombra.
 -   Attribútum szűrő alkalmazásához egy jelentésen válassza ki az **Egy attribútum szűrő hozzáadása** lehetőséget. Válassza ki az attribútum típusát és az attribútum értékét, majd kattintson az **OK**gombra. Ha például bejelöli a **Számla kategória** attribútumot, adja az **Értékesítési** értéket az attribútumnak. Egy attribútum szűrő eltávolításához kattintson a **Törlés**gombra.
--   Dimenzió szűrőket alkalmazhat a jelentést, jelölje be a **. költségvetésidimenzió-szűrő hozzáadása**. Válassza ki a dimenziót, majd írja be a dimenzió Azonosítót, vagy válassza ki a dimenzió a listában. Egy dimenzió szűrő eltávolításához kattintson a **Törlés**gombra.
+-   Dimenziószűrő alkalmazásához egy jelentésen válassza ki az **Egy dimenziószűrő hozzáadása** lehetőséget. Válassza ki a dimenziót, majd írja be a dimenzióazonosítót, vagy válassza ki a dimenziót a listából. Egy dimenzió szűrő eltávolításához kattintson a **Törlés**gombra.
 -   Az eset módosításához egy **Tény és tervezet költségvetésének összevetése** jelentésen, válasszon ki egy új esetet, és kattintson az **OK**gombra. Ha a kiválasztott eset egy másik évhez tartozik, bizonyosodjon meg róla, hogy frissítette az alap évet. Például, ha az aktuális esetet az FY2015-höz tartozik, majd kiválaszt egy új esetet, ami az FY2016-hoz tartozik, akkor az alap évet a következőre kell változtatni: **2016**.
 
 Amikor rákattint az **OK**gombra, a kiválasztott beállítások lesznek alkalmazva a jelentésre. Ha úgy dönt, hogy nem szeretné alkalmazni a kiválasztott beállításokat, kattintson a **Mégse** gombra.
@@ -66,7 +69,7 @@ A pénzügyi jelentés bármikor megjeleníthető bármely pénznemben. A jelent
 A pénzügyi jelentés részletsorokat és összesítő sorokat tartalmazhat. A részletsorok fő számlákat vagy dimenziókat tartalmazó sorok. Az összesítő sorok leíró, összesítő és számítási sorok. A jelentés összesítő sorainak kizárólagos megjelenítéséhez kattintson a **Megjelenítés**gombra, majd kattintson a **Csak összesítő sorok megjelenítése** lehetőségre. A jelentés bezárul, és csak az összesítő sorok jelennek meg. A részletsorok és az összesítő sorok együttes megjelenítéséhez kattintson a **Megjelenítése**gombra, majd kattintson a **Csak összeszító sorok megjelenítése** lehetőségre újra.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Egy korábbi hónap pénzügyi jelentésének megnyitása
-A jelentéseket megtekintheti az aktuális, vagy a korábbi hónapokra vonatkozóan anélkül, hogy újból létrehozná a jelentést. A megelőző hónapra vonatkozóan a jelentés megnyitásához kattintson a **megjelenítése**, majd **előző jelentések**. Az elmúlt hónapban, hogy a jelentés készült listája jelenik meg. Bontsa ki a hónapot, amihez meg szeretné tekinteni a jelentést, válassza ki a dátumot, majd kattintson az **OK**gombra. Megjelenik a korábbi hónapra vonatkozó jelentés. Az aktuális havi jelentéshez való visszatéréshez kattintson a **Mégse** gombra.
+A jelentéseket megtekintheti az aktuális, vagy a korábbi hónapokra vonatkozóan anélkül, hogy újból létrehozná a jelentést. Egy korábbi hónapra vonatkozó jelentés megnyitásához kattintson a **Megjelenítés**, majd az **Előző jelentések** lehetőségre. A korábbi hónapra vonatkozó jelentésekről létrejön egy lista. Bontsa ki a hónapot, amihez meg szeretné tekinteni a jelentést, válassza ki a dátumot, majd kattintson az **OK**gombra. Megjelenik a korábbi hónapra vonatkozó jelentés. Az aktuális havi jelentéshez való visszatéréshez kattintson a **Mégse** gombra.
 
 ## <a name="print-a-financial-report"></a>Pénzügyi jelentés nyomtatása
 A pénzügyi jelentés nyomtatásához kattintson a műveleti ablakon a **Nyomtatás**gombra, majd kövesse legalább az egyiket, az alábbi lépések közül a nyomtatás beállításához.
@@ -85,5 +88,7 @@ Jelentés exportálásához kattintson a műveleti ablakon az **Exportálás** g
 --------
 
 [Pénzügyi jelentéskészítés a Microsoft Dynamics AX rendszerben](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
+
 
 

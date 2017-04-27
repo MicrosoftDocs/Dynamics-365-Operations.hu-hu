@@ -43,11 +43,11 @@ Az **Összesítés** csempék áttekintést adnak a kiválasztott szállító sz
 Kattintson egy csempére, és megnyílik a **Számlalisták** lap szűrt nézete.
 ### <a name="tabular-lists"></a>Táblázatos listák
 
-A **táblázatos listák **szakaszban a számlázás állapotának bontása megegyezik az összesítés csempékével: Vázlat és Elküldött, jóváhagyással még nem rendelkező listák. Vázlat állapotban a számlát be lehet küldeni a munkafolyamatba, vagy törölni lehet. Az utolsó táblázatos lista beállítás számlák kereséséhez. Végezhet a kereséskor, engedélyezi a gyorsabb keresés érdekében.
+A **táblázatos listák **szakaszban a számlázás állapotának bontása megegyezik az összesítés csempékével: Vázlat és Elküldött, jóváhagyással még nem rendelkező listák. Vázlat állapotban a számlát be lehet küldeni a munkafolyamatba, vagy törölni lehet. Az utolsó táblázatos lista a számlák keresésére szolgáló beállítás. A gyorsabb keresés érdekében lehetőség van a keresés közbeni szűrésre.
 Az összes szállítói számla listaoldal
 -----------------------------
 
-Minden könyvelt és könyveletlen szállítói számlák tekintheti meg a **szállítói együttműködési számlák** lista lap. A lista lap segítségével a számlák kifizetés állapotának megtekintése. A kifizetés állapota lehet Feladatlan, Kifizetetlen, Részben fizetve és Teljesen kifizetve.
+Minden feladott és feladatlan szállítói számla megtekinthető a **Szállítói együttműködési számlák** listaoldalon. A listaoldal segítségével a számlák fizetési állapota jeleníthető meg. A kifizetés állapota lehet Feladatlan, Kifizetetlen, Részben fizetve és Teljesen kifizetve.
 Új számla létrehozása beszerzési rendelés alapján
 --------------------------------------------
 
@@ -55,6 +55,6 @@ Létrehozhat egy új szállítói számlát a következő kiválasztásával: **
 
 
 
-További tudnivalókért lásd: [a Szállítói portál használatával szállítókkal való együttműködés](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+További tájékoztatás: [Együttműködés a szállítókkal, a Szállítói portálon keresztül](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
 
 

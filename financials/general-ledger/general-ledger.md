@@ -26,12 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger"></a>Főkönyv 
 
+[!include[banner](../includes/banner.md)]
+
+
 A Főkönyv segítségével meghatározhatja és kezelheti a jogi személy pénzügyi nyilvántartásait. A főkönyvben a tartozik és követel tételek jegyzéke. Ezek a bejegyzések sorolják be a felsorolt számláknak használata a számlatükörben. 
 
 A felosztás pénzösszegeknek a felosztási szabályok alapján egy vagy több számlára való elosztását jelenti. Két típusú felosztás használható, a fix és a változó felosztás. Főkönyvi számlák közötti tranzakciók kiegyenlítése és pénznemösszegek átértékelése is. A pénzügyi év végén a számlákat elő kell készíteni a következő pénzügyi évre, és le kell zárni az aktuális pénzügyi évet. A konszolidálási funkciók segítségével számos leányvállalat jogi személyek pénzügyi eredményeit egyesítése egyetlen, a konszolidált szervezet eredménye. A leányvállalatok lehetnek ugyanabban az egy Microsoft Dynamics 365 for Operations adatbázisban és különböző adatbázisokban is.
 
 # <a name="sales-tax"></a>Forgalmi adó
 Minden vállalat adót szed be és fizet különféle adóhatóságoknak. A szabályok és a mérték eltérők ország/régió, megye, állam és város. Ezenkívül a szabályokat frissíteni kell rendszeresen módosításakor adóhatóság által előírt követelményeknek. Az áfakód alapvetően azt határozza meg, hogy mennyi áfát kell begyűjteni és befizetni a hatóságoknak. Az áfakódok beállításakor megadhatja a begyűjtendő összeget vagy a százalékos értéket. Azon különböző módszereket is megadhatja, amelyekkel meghatározzák ezen összegeket vagy százalékokat a tranzakcióösszegekre vonatkozóan. Ebben a szakaszban található témakörök nyújtanak tájékoztatást a módok és díjak az adóhatóságnak igénylő áfakódok beállításával kapcsolatban.
+
+
 
 
 

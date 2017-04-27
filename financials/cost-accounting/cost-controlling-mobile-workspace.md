@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Dynamics 365 ellenőrző mobil munkaterület költsége műveletek app"
-description: "A költséget vezérlése hordozható munkaterület, költség, erőforrás-menedzserek tekintheti meg a költség központ teljesítmény bármikor és bárhol."
+title: "Költségkontroll mobil munkaterület a Microsoft Dynamics 365 for Operations alkalmazás számára"
+description: "A Költségkontroll mobil munkaterülettel a költséghelyek vezetői bármikor és bárhol megtekinthetik a költséghely teljesítményét."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-01-12 16 - 53 - 04
@@ -24,89 +24,89 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-controlling-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Microsoft Dynamics 365 ellenőrző mobil munkaterület költsége műveletek app
+# <a name="cost-controlling-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Költségkontroll mobil munkaterület a Microsoft Dynamics 365 for Operations alkalmazás számára
 
-A költséget vezérlése hordozható munkaterület, költség, erőforrás-menedzserek tekintheti meg a költség központ teljesítmény bármikor és bárhol. 
+A Költségkontroll mobil munkaterülettel a költséghelyek vezetői bármikor és bárhol megtekinthetik a költséghely teljesítményét. 
 
 <a name="prerequisites"></a>Előfeltételek
 -------------
 
 | Előfeltételek                                                         | Leírás                                                                                                                                                                   |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Olvassa el a Microsoft Dynamics 365 műveletek mobil platform | [365 Dynamics műveletek mobil platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| 365 Dynamics műveletek                                          | Győződjön meg arról, hogy olyan környezetben, amely rendelkezik a Microsoft Dynamics 365 műveletek verzió 1611 használ, és a Microsoft Dynamics műveletek platform frissítése (November 2016) 3. |
-| A gyorsjavítás KB 3215650                                                    | A gyorsjavítást a Microsoft Dynamics 365 műveletekhez biztosított munkaterületek engedélyezése.                                                                       |
-| Mobil eszköz, amely a Dynamics 365 a műveletek alkalmazás telepítve van | Töltse le a mobil app store app műveletek esetében a Dynamics 365.                                                                                                      |
+| Tudnivalók a Microsoft Dynamics 365 for Operations mobilplatformról | [Dynamics 365 for Operations mobilplatform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
+| Dynamics 365 for Operations                                          | Győződjön meg arról, hogy olyan környezetet használ, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november). |
+| Gyorsavítás – Tudásbázis, 3215650                                                    | Telepítse a gyorsjavítást a Microsoft Dynamics 365 for Operationsben biztosított munkaterületek engedélyezéséhez.                                                                       |
+| Mobileszköz, amelyre telepítve van Dynamics 365 for Operations alkalmazás | Töltse le Dynamics 365 for Operations mobilalkalmazást a mobiljához tartozó alkalmazásáruházból.                                                                                                      |
 
 ## <a name="introduction"></a>Bevezetés
-A vezérlése hordozható munkaterület költség költséghelyek aktuális teljesítmény azonnali információkra tényleges költségek ellen tervezett költségeinek összevetésével biztosít. Az egyes költségtényezők állapotok leáshat.
+A Költségkontroll mobil munkaterületen azonnal megtekinthető a költséghelyek aktuális teljesítménye, és a tényleges költségek összevethetők a tervezett költségekkel. Az egyes költségtényezők állapotáig leáshat.
 
 ### <a name="example"></a>Példa
 
-Az alkalmazott nemzetközi konferencia meghívást kap. Utazási költségek fedezésére a szervezet lesz. Az alkalmazott saját kezelő kéri, ha ő is részt vesz a konferencián. A kezelő gyorsan megnyitja, hogy ő tartozik a konferencián részt venni az alkalmazott költségvetési szabályozása a mobiltelefonon mobil munkaterület költség.
+Egy alkalmazott meghívást kap egy nemzetközi konferenciára. Az utazási költségeket a szervezetnek kell fedeznie. Az alkalmazott megkérdezi a vezetőjét, hogy ő is részt vesz-e a konferencián. A vezető gyorsan megnyitja a Költségkontroll mobil munkaterületet a mobiltelefonján, és megnézi, hogy van-e költségvetése ahhoz, hogy az alkalmazott részt vehessen a konferencián.
 
 ### <a name="data-security"></a>Adatbiztonság
 
-Az adatok ellenőrzése a munkaterület költsége védi-e felhasználói hitelesítő adatokat. Költség központ vezető csak engedélyezett saját erőforrás adatainak megtekintéséhez. Biztonság a hozzáférést a költségkönyvelési modulon belül kezeli. Költség könyvelők határozza meg a költség, a költségkönyvelési modul mobil munkaterület konfigurációjának ellenőrzése. A munkaterület a Microsoft Dynamics 365 a műveletek app van közzétéve, miután érhető el a Dynamics 365 műveletek mobile alkalmazás számára. Ez biztosítja, hogy a szervezet összes költség központ vezetők meg adatokat ugyanabban a formátumban.
+A Költségkontroll mobil munkaterület adatait felhasználói hitelesítő adatok védik. A költséghely vezetője csak a saját költséghelye adatait láthatja. A hozzáférési szint biztonságának kezelése a Költségkönyvelési modulon belül történik. A Költségkontroll mobil munkaterület konfigurációját a költségkönyvelők határozzák meg a Költségkönyvelés modulban. A munkaterület a Microsoft Dynamics 365 for Operations alkalmazásban való közzététele után elérhetővé válik a Dynamics 365 for Operations mobilalkalmazásban. Ez biztosítja, hogy a szervezet összes költséghelyének vezetője ugyanabban a formátumban lássa az adatokat.
 
 ### <a name="actions-views-and-links"></a>Műveletek, nézetek és hivatkozások
 
-Mobil munkaterület szabályozása 365 Dynamics műveletek app a költség a következő műveletek, nézetek és hivatkozásokat biztosít:
+A Dynamics 365 for Operations alkalmazás Költségkontroll mobil munkaterülete a következő műveleteket, nézeteket és hivatkozásokat biztosítja:
 
 -   Műveletek 
-    -   Válassza ki **konfigurációk** elrendezés kiválasztása.
-    -   Válassza ki **objektumok költség** alapjául szolgáló adatok szűrése a költséghelyek kiválasztásához. **Megjegyzés:** a hozzáférést a Költségkönyvelés modul nyújtott megfelelően jelennek meg a listában.
+    -   Válassza a **Konfigurációk** elemet elrendezés kiválasztásához.
+    -   Válassza a **Költségobjektumok** elemet a költséghelyek kiválasztásához, amelyek adatait szűrni szeretné. **Megjegyzés:** a lista a Költségkönyvelés modulban megadott hozzáférésnek megfelelően jelenik meg.
 
 <!-- -->
 
--   A kijelölt alapján **műveletek**, és mi a költségkönyvelési modul van konfigurálva, a következő információkat is megtekinthetik a kártyák. Fontos megjegyezni, hogy az összeg ugyanabban a formában jelenik meg: aktuális, költségvetés, az eltérés és eltérés %. 
-    -   Tényleges vagy költségvetési (aktuális időszak)
-    -   Tényleges és módosított költségvetési (aktuális időszak)
-    -   Tényleges vagy költségvetési (az előző időszak)
-    -   Tényleges és módosított költségvetési (az előző időszak)
-    -   Tényleges vagy költségvetési (dátum év)
-    -   Tényleges és módosított költségvetési (dátum év)
+-   Annak alapján, hogy mi van kiválasztva a **Műveletek** részben, és mi a van konfigurálva a Költségkönyvelési modulban, a következő információkat tekintheti meg a kártyákon. Fontos megjegyezni, hogy az összeg ugyanabban a formában jelenik meg: Tényleges, Költségvetés, Eltérés és Eltérési %. 
+    -   Tényleges és Költségvetés (aktuális időszak)
+    -   Tényleges és Módosított költségvetés (aktuális időszak)
+    -   Tényleges és Költségvetés (előző időszak)
+    -   Tényleges és Módosított költségvetés (előző időszak)
+    -   Tényleges és Költségvetés (folyó év mai dátumig)
+    -   Tényleges és Módosított költségvetés (folyó év mai dátumig)
 
 <!-- -->
 
 -   Hivatkozások
-    -   Aktuális időszak adatait.
-    -   Előző időszak adatait.
-    -   Év elejétől részleteit.
+    -   Aktuális időszak részletei.
+    -   Előző időszak részletei.
+    -   Folyó év mai dátumig részletei.
 
-Ha a hivatkozások egyikét választja, egy kártyát egy költségtényező jelenik meg. Az összeg a kártyák a következő formátumban jelenik meg: aktuális, költségvetés, költségvetés eltérése, költségvetési eltérés %, módosított költségvetési, módosított költségvetés eltérése és módosított költségvetési eltérés %.  [![Költség szabályozás](./media/cost-controlling.png)](./media/cost-controlling.png)
+Ha a hivatkozások egyikét választja, költségtényezőnként megjelenik egy kártya. Az kártyákon szereplő összeg a következő formátumban jelenik meg: Aktuális, Költségvetés, Költségvetés eltérése, Költségvetési eltérés %, Módosított költségvetés, Módosított költségvetés eltérése és Módosított költségvetési eltérés %.  [![cost-controlling](./media/cost-controlling.png)](./media/cost-controlling.png)
 
 ## <a name="get-started"></a>Első lépések
-Kövesse az alábbi lépéseket a kezdéshez a költség vezérlő mobile alkalmazás segítségével a mobileszközön.
+Kövesse az alábbi lépéseket, és kezdjen hozzá a költségkontroll-mobilalkalmazás használatához a mobileszközén.
 
-1.  A mobil app-tárolóban töltse le és telepítse a Microsoft Dynamics 365 app műveletek esetében.
-2.  Az alkalmazás indításához az eszközön.
-3.  A Dynamics 365 URL-CÍMÉT adja meg.
-4.  Adja meg a vállalat a bejelentkezéshez. Például, adja meg az **USMF**.
-5.  Az első bejelentkezéskor kéri a felhasználónevet és jelszót a Microsoft Dynamics 365 költségszámla esetében. Adja meg hitelesítő adatait. A bejelentkezést követően a vállalat jelennek meg a rendelkezésre álló munkaterületek.
+1.  A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Microsoft Dynamics 365 for Operations alkalmazást.
+2.  Indítsa el az alkalmazást a készülékén.
+3.  Adja meg a Dynamics 365 URL-címét.
+4.  Adja meg a vállalatot a bejelentkezéshez. Például írja be azt, hogy **USMF**.
+5.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót a Microsoft Dynamics 365 for Operations-fiókjához. Adja meg a hitelesítési adatait. A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek.
 
-A mobil app munkaterületek megtekintéséhez először a kívánt munkaterületet kell közzétenni a vonatkozó műveletek app a Dynamics 365.
+A munkaterületek a mobilalkalmazásban történő megtekintéséhez először a kívánt munkaterületeket közzé kell tenni Dynamics 365 for Operations alkalmazásban.
 
-1.  Indítsa el a Dynamics 365 műveletekhez.
-2.  Ugrás a **rendszer felügyeleti**&gt;**a telepítő**&gt;**Rendszerparaméterek**.
-3.  Válassza ki **mobile alkalmazás kezelése**.
-4.  Jelölje be a munkaterület ** költség szabályozás ** közzététele a mobil platform.
-5.  Válassza ki **közzététele a munkaterület**.
-6.  Frissítse az eszközt, és ellenőrizze a közzétett munkaterületek.
+1.  Indítsa el a Dynamics 365 for Operationst.
+2.  Lépjen a **Rendszerfelügyelet** &gt; **Beállítás** &gt; **Rendszerparaméterek** elemre.
+3.  Válassza a **Mobilalkalmazás kezelése** lehetőséget.
+4.  Válassza a **Költségkontroll** munkaterületet a mobilplatformon való közzétételre.
+5.  Válassza a **Munkaterület közzététele** lehetőséget.
+6.  Frissítse az eszközt a közzétett munkaterületek ellenőrzéséhez.
 
 ## <a name="view-the-performance-of-your-cost-center"></a>A költséghely teljesítményének megtekintése
-1.  A mobileszközön válassza ki a **szabályozása költség** munkaterület.
-2.  Válassza a **objektum szabályozása költség**.
-3.  Kattintson a **műveletek**.
-4.  Kattintson a **Select configuration** jelölje be az elrendezés szabályozása költséget.
-5.  Click **Done**.
-6.  Kattintson a **műveletek**.
-7.  Kattintson a **válassza ki a költség objektum** jelölje ki a költséghelyek által biztosított hozzáférést.
-8.  Click **Done**.
-9.  A költséghely teljesítménye megtekintése.
-10. Kattintson a **az aktuális időszakra részletek**.
-11. Az egyes költségtényezők teljesítményét megtekinteni.
-12. Egyes költségtényezők is kereshet.
+1.  A mobileszközön válassza a **Költségkontroll** munkaterület.
+2.  Válassza a **Költségobjektum-kontroll** elemet.
+3.  Kattintson a **Műveletek** elemre.
+4.  Kattintson a **Konfiguráció kiválasztása** elemre és válasszon költségkontroll-elrendezést.
+5.  Kattintson a **Kész** gombra.
+6.  Kattintson a **Műveletek** elemre.
+7.  Kattintson a **Költség objektum kiválasztása** elemre, és válassza ki a költséghelyeket, amelyekhez hozzáfér.
+8.  Kattintson a **Kész** gombra.
+9.  Tekintse meg a költséghely összteljesítményét.
+10. Kattintson az **Aktuális időszak részletei** elemre.
+11. Tekintse meg az egyedi költségelemek teljesítményét.
+12. Konkrét költségelemekre is kereshet.
 
 
 

@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-actions"></a>Munkafolyamat-műveletek
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk ismerteti a munkafolyamat elfogadási folyamatának egyes résztvevői által vállalható műveleteket.
 
-A munkafolyamat több csoportot is tartalmazhat: a létrehozó, a feladathoz hozzárendelt személyek, döntéshozók, valamint jóváhagyók. Például, az alábbi a költségjelentés munkafolyamatánál Balázs a létrehozó, a várólista tagjai a hozzárendelt személyek, János a döntéshozó, illetve Ferenc, Zsuzsanna és Anna a jóváhagyók.   [![A munkafolyamat\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) az alábbi szakaszok ismertetik az egyes csoportok végző munkafolyamat-műveletek.
+A munkafolyamat több csoportot is tartalmazhat: a létrehozó, a feladathoz hozzárendelt személyek, döntéshozók, valamint jóváhagyók. Például, az alábbi a költségjelentés munkafolyamatánál Balázs a létrehozó, a várólista tagjai a hozzárendelt személyek, János a döntéshozó, illetve Ferenc, Zsuzsanna és Anna a jóváhagyók.   [![Munkafolyamat\_ManuálisDöntéshozatallal](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) Az alábbi szakaszok leírják a csoportok által végezhető munkafolyamat-műveleteket.
 
 ## <a name="actions-that-an-originator-can-perform"></a>A létrehozó által végrehajtható műveletek
 A létrehozó a munkafolyamat egy példányát dokumentum feldolgozásra vagy jóváhagyásra történő elküldésével indítja el. Például, Balázs kattintson a **Küldés** gombra a **Költségjelentés** lapon, hogy benyújtsa a költségjelentést.
@@ -63,7 +66,7 @@ Néha előfordul, hogy egy munkatétel-várólista tagja elfogad egy feladatot, 
 ## <a name="actions-that-a-decision-maker-can-perform"></a>A feladat döntéshozója által végrehajtható műveletek
 Általában egy dokumentum van a döntéshozóhoz rendelve, mert van egy kérdés, amit a döntéshozónak meg kell válaszolni. A válasz a kérdésre általában **Igen** vagy **Nem**, vagy **Igaz** vagy **Hamis**. Ha a döntés készítője nem választja ki az egyik választ, delegálhatja a döntést.
 
-### <a name="choice-1-or-choice-2"></a>\[Választás 1\] vagy \[2 választás\]
+### <a name="choice-1-or-choice-2"></a>\[1. lehetőség\] vagy \[. lehetőség\]
 
 A döntéshozónak választ kell adnia egy, a dokumentumot érintő kérdésre. A válasz a kérdésre általában **Igen** vagy **Nem**, vagy **Igaz** vagy **Hamis**. A döntéshozó válasza fogja eldönteni, hogy a dokumentum feldolgozása melyik munkafolyamat-ágon fog elindulni. Például, Balázs költségjelentése Jánoshoz van rendelve. Jánosnak el kell döntenie, hogy a dokumentumban található információ miatt felhívja-e Balázs menedzserét. Ha János úgy dönt, hogy szükséges a hívás, a költségjelentés Ilonához lesz rendelve, akinek fel kell hívnia Balázs menedzserét. Ha János úgy dönt, hogy nem szükséges a hívás, a költségjelentés Ferenchez lesz rendelve jóváhagyásra.
 
@@ -89,5 +92,7 @@ Amikor a jóváhagyó feladatot delegál, másik felhasználóhoz rendeli hozzá
 ### <a name="request-change"></a>Változtatás kérése
 
 Amikor a jóváhagyó a dokumentum változtatását kéri, a dokumentumot visszaküldi a rendszer a létrehozónak. Például, Balázs elküldött egy 12,000 USD dollárról szóló költségjelentést, és a dokumentum Zsuzsannához lett rendelve. Ha Zsuzsanna változtatást kér, akkor költségjelentés visszakerül Balázshoz. Balázs ezután újraküldheti a költségjelentést. Elvégezheti a javasolt változtatásokat, vagy újraküldheti a költségjelentés eredeti verzióját. Ha Balázs visszaküldi a költségjelentést, akkor az Ferenchez kerül vissza jóváhagyásra, ugyanis Ferenc a jóváhagyás folyamatának első jóváhagyója.
+
+
 
 

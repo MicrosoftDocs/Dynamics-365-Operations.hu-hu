@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-versions"></a>Költségszámítási verziók
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a költségszámítási verziókról, azok karbantartásának módjáról, illetve az azokba bevihető adattípusokról nyújt tájékoztatást. A költségszámítási verziók elsődleges célja az, hogy tartalmazzák a cikkek, költségkategóriák és a közvetett költségek számítási képleteinek rekordjait.
 
 A költségszámítási verziók többféle célt szolgálhatnak attól függően, hogy milyen adatokat tartalmaznak. A költségszámítási verziók elsődleges célja az, hogy tartalmazzák a cikkek, költségkategóriák és a közvetett költségek számítási képleteinek rekordjait. A költségszámítási verzió elszámolóár-rekordok vagy olyan tervezett költség rekordok halmazát tartalmazhatja, amelyek a költségszámítási verzióhoz társított költségszámítás-típuson alapulnak.
@@ -63,5 +66,7 @@ A beszerzési áradatok engedélyezésének elsődleges célja az összetevőcik
 A beszerzési árak engedélyezéséhez elsőként definiálnia kell egy olyan anyagjegyzék-számítási csoportot, amely tartalmazza a cikk beszerzési árának önköltségiár-modelljét, és az anyagjegyzék-számítási csoportot hozzá kell rendelnie a beszerzett cikkekhez. Ezt követően az anyagjegyzék-számítási csoport egy önköltségiár-modelljének segítségével, ha tervezett költségeket használó anyagjegyzék-számításokat hajt végre, kiszámíthatja a gyártott cikkel eladási árát. 
 
 A cikkek beszerzésiár-rekordjait hivatkozási adatokként is használja a rendszer. Ha egy cikk beszerzésiár-rekordjának **Függőben** állapotát **Aktív** állapotra módosítja, frissítheti a cikk beszerzési alapárát. Azonban a beszerzési alapár nem helyspecifikus, és manuálisan felülbírálható. A cikk beszerzési alapárát a rendszer a beszerzési rendeléseken alapértelmezett beszerzési árként használja.
+
+
 
 

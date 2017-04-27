@@ -33,7 +33,7 @@ Beszerzési rendelés létrehozásakor a teljes rendelés általános informáci
 
 Beszerzési rendelés más beszerzési rendelés vagy értékesítési rendelés sorainak bemásolásával is létrehozható. Ebben az esetben megfordíthatja a készleten szereplő jelzést, ahogyan a számlán is megfordítható a jelzés követelés jelzésére.  
 
-Beszerzési rendelés ugyan manuálisan is létrehozható, de leggyakrabban egyéb folyamatokból kerül generálásra. Rendelések automatikusan létrehozhatók más dokumentumok, például igénylések alapján. Másik megoldásként is létrehozható az Alaptervezés a tervezett POs folyamat részeként. Ha beszerzési szerződések, POs által hozható létre a **rendelés kiadása** művelet. Beszerzési megrendelés automatikus létrehozására további, fejlettebb módszerek is léteznek. Rendelések hozhatók létre például közvetlen kiszállítás vagy vállalatközi rendelés láncok használatával.
+Beszerzési rendelés ugyan manuálisan is létrehozható, de leggyakrabban egyéb folyamatokból kerül generálásra. Rendelések automatikusan létrehozhatók más dokumentumok, például igénylések alapján. Másik megoldásként az alaptervezés részeként is létrehozhatók tervezett beszerzési rendelésekkel. Ha beszerzési szerződéseket használ, a beszerzési rendelések a **Kiadási rendelés** művelettel hozhatók létre. Beszerzési megrendelés automatikus létrehozására további, fejlettebb módszerek is léteznek. Rendelések hozhatók létre például közvetlen kiszállítás vagy vállalatközi rendelés láncok használatával.
 
 ## <a name="creating-a-purchase-order-header"></a>Beszerzési rendelés fejléc létrehozása
 Egy új beszerzési rendelés létrehozásakor megjelenik egy párbeszédpanel, amelyen meg lehet adni a leggyakrabban használt adatokat a beszerzési rendelés fejlécében. Amikor rákattint az **OK** gombra a párbeszédpanel bezárásához, a rendelés létrejön, és a fejlécben további információk határozhatók meg.  
@@ -84,7 +84,7 @@ Előfordulhat, hogy egy adott beszerzési megrendelés végrehajtását késlelt
 <a name="see-also"></a>Lásd még
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Beszerzési rendelések áttekintése](purchase-order-overview.md)
 
 [Beszerzési rendelés jóváhagyása és visszaigazolása](purchase-order-approval-confirmation.md)
 

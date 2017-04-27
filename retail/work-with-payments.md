@@ -1,5 +1,5 @@
 ---
-title: "A telefonos ügyfélszolgálatok a fizetési módok"
+title: "Fizetési módszerek hívásközpontnál"
 description: "Ez a témakör bemutatja a Kiskereskedelem és kereskedelem hívásközpontjaiban használható fizetési módokat."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>A telefonos ügyfélszolgálatok a fizetési módok
+# <a name="payment-methods-in-a-call-center"></a>Fizetési módszerek hívásközpontnál
+
+[!include[banner](includes/banner.md)]
+
 
 Ez a témakör bemutatja a Kiskereskedelem és kereskedelem hívásközpontjaiban használható fizetési módokat.
 
@@ -43,6 +46,8 @@ Egy elküld egy bankkártyás fizetést az **Értékesítési rendelés** lapon,
 
 -   A csekkvárakoztatások, mivel csekkel volt fizetve, várakoztatásba helyezte a pénzügyi személyzet feldolgozásokat, valamint a csekkvárakoztatás küszöbértéke meg lett haladva. A várakoztatásokat ki lehet adni manuálisan, vagy automatikusan lejár a beállítási időszak végén.
 -   Megadhatja azokat a küszöbértékeket, amely felett a csekkes vagy hitelkártyás visszatérítést manuálisan kell jóváhagyni. A küszöbértéket meghaladó visszatérítés a jóváhagyási várólistára kerül. A visszatérítés jóváhagyása után számlázható a visszárurendelés.
+
+
 
 
 

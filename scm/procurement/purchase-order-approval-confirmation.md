@@ -1,5 +1,5 @@
 ---
-title: "Jóváhagyása és a beszerzési rendelések megerősítése"
+title: "Beszerzési rendelések jóváhagyása és visszaigazolása"
 description: "Ez a cikk ismerteti azokat az állapotokat, amiken keresztül megy a beszerzési rendelés létrehozás után, valamint a változáskezelés hatásait a beszerzési rendelésre."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>Jóváhagyása és a beszerzési rendelések megerősítése
+# <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és visszaigazolása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk ismerteti azokat az állapotokat, amiken keresztül megy a beszerzési rendelés létrehozás után, valamint a változáskezelés hatásait a beszerzési rendelésre.
 
@@ -73,12 +76,14 @@ Miután egy rendelés meg lett erősítve, nem törölheti azt. Azonban érvény
 <a name="see-also"></a>Lásd még
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Beszerzési rendelések áttekintése](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Beszerzési rendelés létrehozása](purchase-order-creation.md)
 
 [Beszerzési rendelés - termékbevételezés](product-receipt-against-purchase-orders.md)
 
 [Szállítói számlák áttekintése](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

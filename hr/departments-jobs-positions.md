@@ -1,5 +1,5 @@
 ---
-title: "A munkaerő segítségével a szervezeti egységek és a feladatok rendezése"
+title: "Munkaerő megszervezése részlegek, munkák és beosztások szerint"
 description: "A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően."
 author: rschloma
 manager: AnnBe
@@ -26,22 +26,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>A munkaerő segítségével a szervezeti egységek és a feladatok rendezése
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Munkaerő megszervezése részlegek, munkák és beosztások szerint
+
+[!include[banner](includes/banner.md)]
+
 
 A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően. 
 
 Az alábbi példa mutatja be a jelen témakörben leírt koncepciókat.
 
-|**Részleg**|**Position**|**Job**|
+|**Részleg**|**Pozíció**|**Munka**|
 |---|---|---|
 |**Értékesítések**|Értékesítési igazgató (Kelet)|Értékesítési igazgató|
 |**Értékesítések**|Értékesítési igazgató (Nyugat)|Értékesítési igazgató|
 |**Értékesítések**|Értékesítési igazgató (Közép)|Értékesítési igazgató|
-|**Accounting**|Számviteli felügyelő|Főkönyvelő|
-|**Accounting**|Könyvelés-A|Könyvelő|
-|**Human resources**|HR vezető (Kelet)|HR vezető|
-|**Human resources**|HR vezető (Nyugat)|HR vezető|
-|**Human resources**|HR vezető (Közép)|HR vezető|
+|**Könyvelés**|Számviteli felügyelő|Főkönyvelő|
+|**Könyvelés**|Könyvelés-A|Könyvelő|
+|**Emberi erőforrások**|HR vezető (Kelet)|HR vezető|
+|**Emberi erőforrások**|HR vezető (Nyugat)|HR vezető|
+|**Emberi erőforrások**|HR vezető (Közép)|HR vezető|
 
  
  <a name="departments"></a>Osztályok
@@ -79,7 +82,7 @@ Létrehozhat olyan munkaköri feladatokat, amelyek bemutatják az adott pozíci�
 
 ### <a name="job-functions"></a>Beosztások
 
-A beosztási funkciók hasonlók a munkaköri feladatokhoz. A beosztási funkció egy munkához rendelt egy vagy több feladat, kötelezettség és feladatkör. Beosztások lehetnek rendelt feladatok és beállítása és juttatási programokra vonatkozó támogathatósági szabályok végrehajtására szolgál. Az alábbi táblázatban felsorolt példák feladatokkal kapcsolatos funkciókat.
+A beosztási funkciók hasonlók a munkaköri feladatokhoz. A beosztási funkció egy munkához rendelt egy vagy több feladat, kötelezettség és feladatkör. A beosztásokat a munkákhoz lehet hozzárendelni, és segítségükkel a kompenzációs tervekhez kapcsolódó jogosultsági szabályokat lehet beállítani és alkalmazni. Az alábbi táblázatban látható néhány példa munkaköri beosztásokra.
 
 | Munka           | Beosztás                                                |
 |---------------|-------------------------------------------------------------|
@@ -101,7 +104,7 @@ Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műv
 <a name="positions"></a>Beosztások
 ----------
 
-A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei. Egy beosztás egy feladat egyedi példánya. Például a beosztás "(kelet), értékesítési igazgató" egyike csak a pozíciókat a feladathoz társított "Értékesítési igazgató." Pozíciók részleg szerepel, és a munkavállalók vannak rendelve.
+A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei. Egy beosztás egy feladat egyedi példánya. Például az „Értékesítési igazgató (Kelet)” pozíció csak egyike azon beosztásoknak, amelyek hozzárendelhetők az „Értékesítési igazgató” munkához. A pozíciók egy részlegen belül léteznek, és dolgozókhoz kerülnek hozzárendelésre.
 ### <a name="position-creation-and-maintenance"></a>Beosztások létrehozása és karbantartása
 
 -   Az egyszerű hozzáférést biztosító listaoldalon megtekintheti a pozíciókkal kapcsolatos rendszermódosítások előzményeit.
@@ -161,6 +164,8 @@ Bizonyos rekordok esetében jövőbeni módosításokat is be lehet állítani a
 </table>
 
 Módosíthatja az előző táblázatban említett, az egyes beosztásokhoz és feladatokhoz tartozó adatokat, és megadhat egy dátumot, amikor a beosztáshoz vagy feladathoz kapcsolódó módosításoknak érvénybe kell lépniük. Például egy beosztás csak egy dolgozóhoz rendelhető hozzá, de Sanjay Patel, aki a Könyvelő-A beosztáshoz van rendelve, két hét múlva távozik. Sanjay Patel távozását követően Joe Healey veszi át a pozíciót. Annak ellenére, hogy Sanjay továbbra is hozzá van rendelve a beosztáshoz, Joe Healy is hozzárendelhető ugyanehhez a pozícióhoz úgy, hogy a hozzárendelés ténylegesen csak Sanjay utolsó napját követően lépjen hatályba.
+
+
 
 
 

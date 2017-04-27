@@ -1,6 +1,6 @@
 ---
 title: "Rendszerkövetelmények"
-description: "Ez a témakör a Microsoft Dynamics 365 műveletekhez aktuális verziójának rendszerkövetelményeit."
+description: "Ez a témakör a Microsoft Dynamics 365 for Operations aktuális verziójára vonatkozó rendszerkövetelményeket sorolja fel."
 author: sericks007
 manager: AnnBe
 ms.date: 2017-04-04
@@ -26,102 +26,102 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-requirements"></a>Rendszerkövetelmények
 
-Ez a témakör a Microsoft Dynamics 365 műveletekhez aktuális verziójának rendszerkövetelményeit.
+Ez a témakör a Microsoft Dynamics 365 for Operations aktuális verziójára vonatkozó rendszerkövetelményeket sorolja fel.
 
 <a name="supported-web-browsers"></a>Támogatott böngészők
 ----------------------
 
-A Microsoft Dynamics 365 műveletek webalkalmazás az alábbi webböngészők az adott operációs rendszeren futó bármelyik futtatható:
+A Microsoft Dynamics 365 for Operations webes alkalmazása az alábbi böngészők bármelyikében működik, ha azok a megadott operációs rendszer alatt futnak:
 
--   A Microsoft Edge (legújabb verzió nyilvánosan elérhető) a Windows 10
+-   Microsoft Edge (legfrissebb elérhető verziója) a Windows 10 rendszeren
 -   Internet Explorer 11, Windows 10, Windows 8.1 vagy Windows 7 rendszereken
--   Google Chrome (legújabb verzió nyilvánosan elérhető) a Windows 10, Windows 8.1, Windows 8, Windows 7 vagy a Google Nexus 10 táblaszámítógépen
--   Apple Safari (legújabb verzió nyilvánosan elérhető) a Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) vagy 10.12 (Sierra) vagy Apple iPad
+-   Google Chrome (legfrissebb elérhető verziója) Windows 10, Windows 8.1, Windows 8, Windows 7 rendszereken, vagy Google Nexus 10 táblagépen
+-   Apple Safari (legfrissebb elérhető verziója) Mac OS X 10.10 (Yosemite), 10.11 (El Capitan), 10.12 (Sierra) rendszereken, vagy Apple iPad gépen
 
 A böngésző legfrissebb változatáért látogasson el a szoftver gyártójának webhelyére. **Megjegyzések:**
 
--   Vegyen fel lemezképeket a Feladatrögzítő alapján jöttek létre, és azok szerepelnek-e a Microsoft Word-dokumentumokban, a Chrome bővítmény telepítve kell rendelkeznünk. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
--   A munkafolyamat-szerkesztőben a ClickOnce alkalmazás fut. Csak a Microsoft Edge és az Internet Explorer (a Microsoft Windows támogatott verziója) támogatja a ClickOnce alkalmazásoknak. A munkafolyamat-szerkesztő ClickOnce alkalmazás kompatibilis 64 bites operációs rendszert igényel.
--   A Report Designer, a pénzügyi jelentések a ClickOnce alkalmazás fut. Kompatibilis 64 bites operációs rendszert igényel. Chrome használata, telepítenie kell a ClickOnce-bővítmény a jelentés Tervező ügyfél letölteni. Ha Chrome az incognito mód használata esetén győződjön meg arról, hogy a ClickOnce kiterjesztést is engedélyezve van az incognito mód.
+-   A Task Recorder által generált képek rögzítéséhez és Microsoft Word-dokumentumba való ágyazásához telepítenie kell egy Chrome-bővítményt. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
+-   A munkafolyamat-szerkesztő ClickOnce-alkalmazásként indul el. Csak a Microsoft Edge és az Internet Explorer (a Microsoft Windows egy támogatott verziójának használata esetén) támogatja a ClickOnce-alkalmazásokat. A Workflow Editor ClickOnce alkalmazáshoz 64 bit-kompatibilis operációs rendszer szükséges.
+-   A Report Designer for Financial reporting ClickOnce alkalmazásként indul el. 64 bit-kompatibilis operációs rendszert igényel. Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a Chrome böngészőt inkognitómódban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitómódban.
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>A kiskereskedelmi felhő-POS pénztárgép által támogatott böngészők
 
-A Retail POS Dynamics 365 műveletek felhő rendszer bármely az alábbi webböngészők az adott operációs rendszeren futó futtatható:
+A Microsoft Dynamics 365 for Operations kiskereskedelmi felhő-POS pénztárgépe az alábbi böngészők bármelyikében működik, ha azok a megadott operációs rendszer alatt futnak:
 
--   A Microsoft Edge (legújabb verzió nyilvánosan elérhető) a Windows 10
+-   Microsoft Edge (legfrissebb elérhető verziója) a Windows 10 rendszeren
 -   Internet Explorer 11, Windows 10, Windows 8.1 vagy Windows 7 rendszereken
--   Króm (legújabb verzió nyilvánosan elérhető) Windows 10, Windows 8.1 vagy a Windows 7
+-   Chrome (legutóbbi nyilvánosan elérhető verzió) Windows 10, Windows 8.1 vagy Windows 7 rendszeren
 
 ## <a name="network-requirements"></a>Hálózati követelmények
--   365 Dynamics műveletek hálózatokhoz tervezték, késés, kevesebb mint 150 milliszekundum (ms). Ez a böngésző ügyfélszámítógépről a Microsoft Azure adatközpont tároló Dynamics 365 műveletek várakozási ideje. Azt javasoljuk, hogy a hálózat késése, vizsgálati <http://www.azurespeed.com>.
--   Dynamics 365 műveletek sávszélességi követelmények függenek a forgatókönyv. Legjellemzőbb esetek több mint 50 kilobájt / másodperc (KB/s) esetén van szükség. Azonban nagy terhelés követelményeket támasztanak, például munkaterületek vagy forgatókönyvek széles körű testreszabási forgatókönyvek nagyobb sávszélességet ajánlott.
+-   A Dynamics 365 operációs rendszert olyan hálózatokhoz tervezték, amelyek várakozási ideje kevesebb, mint 150 milliszekund (ms). Ez a latencia a böngészőklienstől a Microsoft Azure adatközpontig, amely tárolja a Dynamics 365 for Operationst. Javasoljuk, hogy tesztelje a hálózati késleltetést a következő helyen: <http://www.azurespeed.com>.
+-   A Dynamics 365 for Operations sávszélességi követelményei a forgatókönyvtől függenek. A legtöbb jellemző forgatókönyv másodpercenként több mint 50 kilobájt sávszélességet igényel (KBps). Azonban olyan nagyteljesítményű forgatókönyvek esetében, mint például a munkaterületek vagy a kiterjedt testreszabást igénylő forgatókönyvek, nagyobb sávszélességet ajánlunk.
 
-Dynamics 365 műveletek általában az interneten van optimalizálva. Elérését a böngészőben ügyfélben az Azure adatközpont száma nagyon kicsi, és a teljes tartalom tömörítve van. **Figyelmeztetés:** ügyfél helyről sávszélességi követelmények nem számítja ki a felhasználók számát megszorozzák a minimális sávszélesség-követelményeket. Egyidejű használatát egy adott helyen, akkor nagyon nehéz kiszámítani. Azok számára, akik aggódnak sávszélesség-követelményeket ezen bétaverziója Dynamics 365 műveletekhez.
+Általánosságban elmondható, hogy a Dynamics 365 for Operations az internetre optimalizált. A böngésző kliensből az Azure adatközpontba történő oda-vissza utak száma nagyon kicsi, és a teljes hasznos tartalom tömörítve van. **Figyelmeztetés:** Ne úgy számítsa ki a sávszélesség követelményeit az ügyfél helyéről, hogy megszorozza a felhasználók számát a minimális sávszélességi követelményekkel. Adott hely egyidejű használatát nagyon nehéz kiszámítani. A sávszélesség miatt aggódó ügyfelek számára a Dynamics 365 for Operations előzetes verziójának használata ajánlott.
 
-## <a name="net-framework-requirements"></a>NET-keretrendszer követelmények
-365 Dynamics műveletekhez szükséges .NET Framework 4.6.2 minden kattintson-egyszer alkalmazások, például a dokumentum útválasztási ügynök. Telepítési utasítások, lásd: [a .NET keretrendszer telepítése](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+## <a name="net-framework-requirements"></a>A .NET keretrendszer követelményei
+A Dynamics 365 for Operations esetében a .NET-keretrendszer 4.6.2-es verziója szükséges az összes click-once alkalmazáshoz, például a dokumentumátirányító ügynökhöz. További tájékoztatás: [A .NET keretrendszer telepítése](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 ## <a name="supported-microsoft-office-applications"></a>Támogatott Microsoft Office-alkalmazások
--   A Microsoft Excel és Word bővítmény futtatásához szükséges Microsoft Office 2016 Windows vagy Mac telepítve. Verziójával kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
--   Az Exportálás az Excel vagy Word funkciók Export által létrehozott dokumentumok megtekintéséhez a Microsoft Office 2007-es vagy újabb verziója szükséges.
+-   A Microsoft Excel és Word bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Az Exportálás Excel-be vagy az Exportálás a Word programba funkcióval létrehozott dokumentumok megtekintéséhez telepíteni kell a Microsoft Office 2007 vagy újabb verzióját.
 
-## <a name="retail-modern-pos-requirements"></a>A Retail Modern POS követelmények
+## <a name="retail-modern-pos-requirements"></a>Retail Modern POS követelményei
 ### <a name="supported-operating-systems"></a>Támogatott operációs rendszerek
 
--   Modern a Retail POS rendszer egy 32 bites alkalmazás, de a x86 és a x64 architektúrák futni fog.
--   Modern a Retail POS csak Windows 10 Pro, vállalati és vállalati hosszú távú karbantartási ág (LTSB) verziója esetén támogatja.
+-   A Retail Modern POS egy 32 bites alkalmazás, de egyaránt fut az x86 és az x64 architektúrán is.
+-   A Retail Modern POS csak Windows 10 Pro, Enterprise, valamint Enterprise Long Term Servicing Branch (LTSB) kiadások esetén támogatott.
 
 ### <a name="minimum-system-requirements"></a>Minimális rendszerkövetelmények
 
--   A minimális támogatott felbontása 1280 × 1024.
--   A számítógépen futó Modern Retail POS ezeknek a követelményeknek kell megfelelniük:
-    -   Kell lennie, legalább egy kétmagos processzorral futó, nem kevesebb, mint 2 gigahertzes (GHz).
-    -   Kell lennie, legalább 3 gigabájt (GB) RAM.
-    -   Azt az Internet-hozzáféréssel kell rendelkeznie.
+-   A minimális támogatott felbontás az 1280×1024.
+-   A Retail Modern POS rendszert futtató számítógépnek meg kell felelnie ezeknek a követelményeknek:
+    -   Legalább kétmagos processzorral kell rendelkeznie, melynek legalább 2 GHz az órajele.
+    -   Legalább 3 GB RAM-mal kell rendelkeznie.
+    -   Internet-hozzáféréssel kell rendelkeznie.
 
-## <a name="retail-hardware-station-requirements"></a>Kiskereskedelmi állomás hardverkövetelmények
+## <a name="retail-hardware-station-requirements"></a>Retail hardware station követelményei
 ### <a name="supported-operating-systems"></a>Támogatott operációs rendszerek
 
--   Kiskereskedelmi hardver állomás egy 32 bites alkalmazás, de a x86 és a x64 architektúrák futni fog.
--   Kiskereskedelmi hardver állomás a következő operációs rendszerek támogatják:
-    -   Windows 7 Professional, Enterprise és Ultimate kiadások **Megjegyzés:** a Windows 7 támogatott csak akkor, ha az Internet Explorer 11 kézzel telepíti a rendszer.
-    -   Windows 8.1 Update 1 Professional, Enterprise és beágyazott kiadások
-    -   Windows 10 Pro, vállalati és vállalati LTSB
+-   A Retail hardware station egy 32 bites alkalmazás, de egyaránt fut az x86 és az x64 architektúrán is.
+-   A Retail hardware station a következő operációs rendszereken támogatott:
+    -   Windows 7 Professional, Enterprise és Ultimate verziók **Megjegyzés:** A Windows 7 csak akkor támogatott, ha a rendszerre manuálisan telepítették az Internet Explorer 11-et.
+    -   Windows 8.1 Update 1 Professional, Enterprise és Embedded verzió
+    -   Windows 10 Pro, Enterprise és Enterprise LTSB verzió
 
 ### <a name="minimum-system-requirements"></a>Minimális rendszerkövetelmények
 
-A számítógépnek meg kell felelnie minden rendszerkövetelmények telepítéséről és használatáról a következő elemeket:
+A számítógépnek teljesítenie kell a rendszerkövetelményeket a következő elemek telepítéséhez és használatához:
 
 -   Internet Information Services (IIS)
--   Harmadik féltől származó hardver
+-   Harmadik fél által biztosított hardver
 
-## <a name="retail-store-scale-unit-requirements"></a>Kiskereskedelmi üzlet skála egységre követelmények
+## <a name="retail-store-scale-unit-requirements"></a>Core Retail Store Scale Unit követelményei
 ### <a name="supported-operating-systems"></a>Támogatott operációs rendszerek
 
--   Retail Store időskála-egységet egy 32 bites alkalmazás, de a x86 és a x64 architektúrák futni fog.
--   Retail Store időskála-egységet a következő operációs rendszerek támogatják:
-    -   Windows 7 Professional, Enterprise és Ultimate kiadásához
-    -   Windows 8.1 Update 1 Professional, Enterprise és beágyazott kiadások
-    -   Windows 10 Pro, vállalati és vállalati LTSB
+-   A Retail Store Scale Unit egy 32 bites alkalmazás, de egyaránt fut az x86 és az x64 architektúrán is.
+-   A Retail Store Scale Unit a következő operációs rendszereken támogatott:
+    -   Windows 7 Professional, Enterprise és Ultimate verzió
+    -   Windows 8.1 Update 1 Professional, Enterprise és Embedded verzió
+    -   Windows 10 Pro, Enterprise és Enterprise LTSB verzió
 
 ### <a name="minimum-system-requirements"></a>Minimális rendszerkövetelmények
 
 -   4 GB RAM
--   Maximális processzorsebesség 1,6 GHz-es per core (két magot minimális is.)
--   Legalább 10 GB szabad lemezterület (a csatorna-adatbázisból is szükséges nagy mennyiségű helyet.)
+-   Maximális processzorsebesség 1,6 GHz magonként (legalább kétmagos)
+-   Legalább 10 GB szabad lemezterület (a csatorna-adatbázis használatához sok helyre lehet szükség).
 
-### <a name="recommended-system-requirements"></a>Ajánlott rendszerkövetelményei
+### <a name="recommended-system-requirements"></a>Ajánlott rendszerkövetelmények
 
 -   6 GB RAM
--   2.4 GHz i7 (vagy ezzel egyenértékű) csúcs CPU sebessége / core (négy magot ajánlott.)
--   Legalább 10 GB szabad lemezterület (a csatorna-adatbázisból is szükséges nagy mennyiségű helyet.)
+-   2.4 GHz i7 (vagy ezzel egyenértékű) magonkénti CPU-sebesség / (négymagos processzor ajánlott).
+-   Legalább 10 GB szabad lemezterület (a csatorna-adatbázis használatához sok helyre lehet szükség).
 
-## <a name="requirements-for-development-on-local-vms"></a>A helyi VMs fejlesztési követelményei
-Fejlesztési követelmények információt a helyi virtuális gépek (VMs), lásd: [helyszíni futtató virtuális gép](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
+## <a name="requirements-for-development-on-local-vms"></a>A helyi virtuális gépek fejlesztési követelményei
+A helyi virtuális gépek fejlesztési követelményeiről lásd: [helyszínen futó virtuális gép](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Műveletek Dynamics 365 próbaverziójának letöltése](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Szerezze be a Dynamics 365 for Operations bétaverzióját](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
 
 

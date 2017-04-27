@@ -1,5 +1,5 @@
 ---
-title: "A készpénzfizetési engedményt a készpénzfizetési engedmény időszakon kívül figyelembe"
+title: "Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül"
 description: "A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt."
 author: twheeloc
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>A készpénzfizetési engedményt a készpénzfizetési engedmény időszakon kívül figyelembe
+# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül
+
+[!include[banner](../includes/banner.md)]
+
 
 A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt.
 
-A június 28 április 2,000.00 3052 szállító számlát hoz létre. A számla van 1 százalékos készpénzfizetési engedményt, ha a számla kifizetése 14 napon belül.
+Június 28-én April egy 2.000,00 értékű számlát hoz létre 3052-es szállító számára. A számla 1 százalékos készpénzfizetési engedményt kínál, ha a számla 14 napon belül befizetésre kerül.
 
 ## <a name="use-cash-discount-option--always"></a>A Mindig készpénzfizetési engedménybállítás
 April létrehoz egy kifizetést június 1-jén, ami az engedmény dátumánál későbbre esik. April megnyitja a **Tranzakciók kiegyenlítése** lapot, ahol megtekintheti azokat a tranzakciókat, amelyeket ki lehet egyenlíteni. 
 
-Megjelöli a számlát kifizetéshez. Készpénzfizetési engedményre nem kerül sor, mert a fizetés túlnyúlik az engedményes időszakon. A szállító azonban mégis figyelembe a készpénzfizetési engedmény április jóváhagyási adott. Ezért április módosítja az értéket a **készpénzfizetési engedmény használata** mező **mindig**.
+Megjelöli a számlát kifizetéshez. Készpénzfizetési engedményre nem kerül sor, mert a fizetés túlnyúlik az engedményes időszakon. Azonban a szállító engedélyt adott Aprilnek, hogy mégis alkalmazhatja a készpénzfizetési engedményt. Ezért April a **Készpénzfizetési engedmény használata** mezőt átállítja **Mindig** beállításra.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Készpénzfizetési engedmény dátuma | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
@@ -85,6 +88,8 @@ Az engedményadatok a **Nyitott tranzakciók kiegyenlítése** lap alján jelenn
 | Készpénzfizetési engedmény használata            | Normál    |
 | Alkalmazott készpénzfizetési engedmény          | 0,00      |
 | Alkalmazandó készpénzfizetési engedmény összege | -5,05     |
+
+
 
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-elements"></a>Munkafolyamat-elemek
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk ismerteti a munkafolyamat különböző összetevőit.
 
 Egy munkafolyamat elemekből áll. A következő részek az elemek összes típusát.
@@ -55,14 +58,14 @@ A *jóváhagyási folyamat* egy több lépésből álló folyamat. Az egyes jóv
 -   A dokumentum módosításának kérése
 -   A dokumentum másik felhasználóhoz rendelése jóváhagyásra.
 
-## <a name="lineitem-workflow-elements"></a>Munkafolyamat-elemek Lineitem
-Munkafolyamat létrehozható dokumentumok vagy a sorban szereplő cikkek egy dokumentumban való feldolgozásához. Például létrehozott jóváhagyási munkafolyamatot időnyilvántartásokhoz. (Mint a munkafolyamat hivatkozik a *dokumentum munkafolyamat*.) Hozzáadhat egy *sortétel-munkafolyamat* elem, dokumentum munkafolyamatba. A sortétel-elem futtatásakor a rendszer a dokumentumon szereplő minden sortételt elküld feldolgozásra. Lehet, hogy az azonos sortétel-munkafolyamattal akarja feldolgoztatni a sorban szereplő cikkeket, vagy egy másik sortétel-munkafolyamattal szeretné feldolgoztatni a sorban szereplő cikkeket. Tegyük fel, hogy az alkalmazott elküldött egy időnyilvántartást, amely hasonlít az alábbi ábrára. ![Munkafolyamat sortételekkel](./media/workflow_lineitemworkflow.gif) Ebben az esetben szükség lehet, a következő sortétel-munkafolyamatok létrehozására:
+## <a name="lineitem-workflow-elements"></a>Sortétel munkafolyamatának elemei
+Munkafolyamat létrehozható dokumentumok vagy a sorban szereplő cikkek egy dokumentumban való feldolgozásához. Például létrehozott jóváhagyási munkafolyamatot időnyilvántartásokhoz. (Erre a munkafolyamatra *dokumentum-munkafolyamat* néven fogunk hivatkozni.) Lehetőség van *egy sortétel-munkafolyamat* elem hozzáadásához a dokumentum-munkafolyamathoz. A sortétel-elem futtatásakor a rendszer a dokumentumon szereplő minden sortételt elküld feldolgozásra. Lehet, hogy az azonos sortétel-munkafolyamattal akarja feldolgoztatni a sorban szereplő cikkeket, vagy egy másik sortétel-munkafolyamattal szeretné feldolgoztatni a sorban szereplő cikkeket. Tegyük fel, hogy az alkalmazott elküldött egy időnyilvántartást, amely hasonlít az alábbi ábrára. ![Munkafolyamat sortételekkel](./media/workflow_lineitemworkflow.gif) Ebben az esetben szükség lehet, a következő sortétel-munkafolyamatok létrehozására:
 
 -   **Sortétel-munkafolyamat 1** – A munkafolyamat segítségével az 1111 projektazonosítójú sortételeket lehet feldolgozni.
 -   **Sortétel-munkafolyamat 2** – A munkafolyamat segítségével a 2222 projektazonosítójú sortételeket lehet feldolgozni.
 -   **Sortétel-munkafolyamat 3** – A munkafolyamat segítségével a 3333 projektazonosítójú sortételeket lehet feldolgozni.
 
-## <a name="flowcontrol-elements"></a>Átvitelvezérlés-elemek
+## <a name="flowcontrol-elements"></a>Vezérlési folyamat elemei
 A következő elemek lehetővé teszik, hogy olyan munkafolyamatokat tervezzen, amelyek másodlagos ágakkal vagy egyszerre futó ágakkal rendelkeznek.
 
 ### <a name="manual-decision"></a>Manuális döntés
@@ -80,5 +83,7 @@ A *párhuzamos tevékenység* egy olyan munkafolyamat-elem, amely két vagy töb
 ### <a name="subworkflow"></a>Almunkafolyamat
 
 Az *almunkafolyamat* egy olyan munkafolyamat, amely egy másik munkafolyamat kontextusán belül megy végbe.
+
+
 
 

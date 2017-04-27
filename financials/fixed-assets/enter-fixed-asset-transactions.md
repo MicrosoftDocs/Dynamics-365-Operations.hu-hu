@@ -1,5 +1,5 @@
 ---
-title: "Tárgyieszköz-tranzakció beállítások"
+title: "Tárgyieszköz-tranzakciók beállításai"
 description: "Ez a cikk a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-asset-transaction-options"></a>Tárgyieszköz-tranzakció beállítások
+# <a name="fixed-asset-transaction-options"></a>Tárgyieszköz-tranzakciók beállításai
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be.
 
@@ -36,7 +39,7 @@ A tárgyi eszközök modul integrálható a főkönyv, a követelések és a kin
 Tárgyieszköz-tranzakciókat a Naplóbizonylat képernyőn is lehet rögzíteni. Ez a lap a Számlanapló lapról nyitható meg. A Naplóbizonylat képernyőt a Számla-jóváhagyási napló képernyőről is megnyithatja. Az Ellenszámla típusa mezőben válassza a Tárgyi eszközök lehetőséget. Aztán az Ellenszámla típusa mezőben válassza ki a tárgyi eszköz számát. A Tárgyi eszközök lapon adjon meg egy értéket a Tranzakció típusa és a Könyv mezőben.
 
 ## <a name="accounts-receivable"></a>Kinnlevőségek
-Tárgyieszköz-tranzakciókat a szabadszöveges számla lapon adhatja meg.  Szabadszöveges számla, számla sorok rácsbeli lapon válassza ki a vonal elemre. Kattintson a Soradatok gyorslapra. Adja meg a tárgyi eszköz számát és könyvét a kivezetési tranzakcióhoz. Szabadszöveges számláknál a tárgyieszköz-tranzakció típusa mindig Kivezetés – eladás.
+Megadhat Tárgyieszköz-tranzakciókat a Szabadszöveges számla képernyőn.  A Szabadszöveges számla képernyőn a Számlasorok rácsban válasszon ki egy sortételt. Kattintson a Soradatok gyorslapra. Adja meg a tárgyi eszköz számát és könyvét a kivezetési tranzakcióhoz. Szabadszöveges számláknál a tárgyieszköz-tranzakció típusa mindig Kivezetés – eladás.
 
 ## <a name="procurement-and-sourcing"></a>Beszerzés és forrás
 Tárgyieszköz-tranzakciókat a Beszerzési rendelés képernyőn is lehet rögzíteni. Adja meg az értékesítési rendelés létrehozásához szükséges adatokat, majd kattintson az OK gombra. A Beszerzési rendelés képernyőn kattintson a Soradatok gyorslapra. Ezt követően a Tárgyi Eszközök lapon adhatja meg a tárgyieszköz-csoportra vonatkozó adatokat. 
@@ -65,6 +68,8 @@ A tárgyieszköz-tranzakciók bármely típusát fel lehet adni az Általános n
 
 
 
-További tudnivalókért lásd: [tárgyi eszközök integráció](fixed-asset-integration.md).
+További tudnivalókért lásd: [Tárgyieszköz-integráció](fixed-asset-integration.md).
+
+
 
 

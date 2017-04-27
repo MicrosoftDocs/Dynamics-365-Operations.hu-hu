@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="correct-a-free-text-invoice"></a>Szabadszöveges számla helyesbítése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a már feladott szabadszöveges számlák kijavításának és azok javított számlaként való újbóli kiadásának módszereit mutatja be.
 
-Szabadszöveges számla már elkönyvelt javításához nyissa meg a könyvelt szabadszöveges számla. A a **számla** lapon adja **Mégse**, majd **helyes számla**. Válassza ki az okkódot, és adjon hozzá megjegyzéseket és válassza ki az új javított számla dátumát. Módosíthatja és feladhatja a javított számlát. 
+Már elkönyvelt szabadszöveges számla javításához nyissa meg a könyvelt szabadszöveges számlát. A **Számla** lapon válassza a **Mégse** elemet, majd a **Helyes számla** lehetőséget. Válassza ki az okkódot, és adjon hozzá megjegyzéseket és válassza ki az új javított számla dátumát. Módosíthatja és feladhatja a javított számlát. 
 
 A javított számla feladásakor egy érvénytelenítő számla jön létrea hitel összeghez, amit kiegyenlíti az eredeti számla összeget. Ezért az eredeti és az érvénytelenítő számla kombinált egyenlege 0 (nulla). Az érvénytelenítő számlát az eredeti számlával szemben számolnak el. 
 
@@ -43,9 +46,11 @@ A javított számla feladásakor, három számlája lesz:
 Kétféle módon határozhatja meg a számlák érvénytelenítését és javítását:
 
 -   Az **összes szabadszöveges számlák** lap tartalmazza a **Javítás** oszlopot, amelyen megtekintheti, hogy mely számlák érvénytelenítési számlák és javított számlák.
--   A szabadszöveges számla fejlécének állapotot jelez, **Cancelling számla '\[számla száma\]"** vagy **Corrected számla '\[számla száma\]"**.
+-   A szabadszöveges számla fejlécének állapotjelzője **Érvénytelenítési számla '\[számlaszám\]'** vagy **Javított számla '\[számlaszám\]'**.
 
 > [!NOTE]
-> Ez a funkció érhető el csak a **szabad szöveges számla javítása** konfigurációs kulcs ki van jelölve.
+> Ez a funkció csak akkor használható, ha be van állítva a **Szabadszöveges számla javítása** konfigurációs kulcs.
+
+
 
 

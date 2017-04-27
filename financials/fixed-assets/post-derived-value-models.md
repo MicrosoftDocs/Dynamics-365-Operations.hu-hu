@@ -1,5 +1,5 @@
 ---
-title: "A származtatott könyvek feladása"
+title: "Feladás származtatott könyvekkel"
 description: "Ez a cikk a származtatott könyvek használatának módját ismerteti."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="post-with-derived-books"></a>A származtatott könyvek feladása
+# <a name="post-with-derived-books"></a>Feladás származtatott könyvekkel
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk a származtatott könyvek használatának módját ismerteti.
 
@@ -49,11 +52,13 @@ A következő adatok leírják, hogyan állítson be beszerzési tranzakciókat 
 
 A könyveket ezután csatolni lehet meghatározott tárgyi eszközökhöz. 
 
-Beszerzés könyvelésekor a befektetett eszköz könyv: ÉM 1, a vásárlás feladása nem csak az ÉM 1, hanem ÉM 2 származtatott könyv. Mindkét tárgyieszköz-könyvek állapotának értékről Nyitott értékre módosul.
+Ha felad egy, az ÉM 1 könyvet használó tárgyi eszközre vonatkozó beszerzést, akkor a program a beszerzést nem csak az ÉM 1-be, hanem ÉM 2 származtatott könyvbe is feladja. Mindkét tárgyi eszközök könyv állapota frissül Nyitottra.
 
 > [!NOTE]                                                                                                         
 > Ha nem használ származtatott értékcsökkenési könyveket, akkor a VM 1 értékmodellbe és VM 2 könyvbe is fel kell adni a tárgyieszköz-beszerzést.
 
-További tudnivalókért lásd: [származtatott könyvek](derived-books.md)
+További információért lásd: [Származtatott könyvek](derived-books.md)
+
+
 
 

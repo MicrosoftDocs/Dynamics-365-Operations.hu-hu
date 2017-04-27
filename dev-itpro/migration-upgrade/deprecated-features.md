@@ -118,7 +118,7 @@ Az eGiro az ENSZ EDIFACT CREMUL (Multiple Credit Advice Message) nemzetközi sza
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Megszűnés oka       | A fizetési formátum már nem használható.                                                     |
-| Felváltotta másik szolgáltatás? | Szám A formátum ISO 20022 kivonat importálási formátumainak a későbbi kiadásokban váltja fel. |
+| Felváltotta másik szolgáltatás? | Szám A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban. |
 | Érintett modulok             | Kinnlevőségek                                                                       |
 
 ### <a name="external-inventory-for-poland"></a>Külső készlet Lengyelország esetében
@@ -138,7 +138,7 @@ Egy eszköz szolgál a könyvelési és adójelentések adatgyűjtésének beál
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
 | Megszűnés oka       | Korlátozott felhasználás                                                                            |
-| Felváltotta másik szolgáltatás? | Szám Az eszköz konfigurációk jövőbeli frissítéseket tartalmazó jelentések elektronikus váltja fel. |
+| Felváltotta másik szolgáltatás? | Szám Az eszközt elektronikus jelentési konfigurációk fogják leváltani a jövőbeli kiadásokban. |
 | Érintett modulok             | Főkönyv                                                                           |
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Vevői kifizetési tranzakciók importálása Finnország esetében
@@ -148,7 +148,7 @@ Kiválaszthat egy olyan importálási formátumot a finn fizetésekhez, amely a 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Megszűnés oka       | A fizetési formátum már nem használható.                                                     |
-| Felváltotta másik szolgáltatás? | Szám A formátum ISO 20022 kivonat importálási formátumainak a későbbi kiadásokban váltja fel. |
+| Felváltotta másik szolgáltatás? | Szám A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban. |
 | Érintett modulok             | Kinnlevőségek                                                                       |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>A Finnországra vonatkozó fizetési tranzakciók importálása a főkönyvi naplóba
@@ -158,7 +158,7 @@ Finnországra vonatkozó, specifikus formátum, amellyel könyvelési tranzakci�
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Megszűnés oka       | A fizetési formátum már nem használható.                                                     |
-| Felváltotta másik szolgáltatás? | Szám A formátum ISO 20022 kivonat importálási formátumainak a későbbi kiadásokban váltja fel. |
+| Felváltotta másik szolgáltatás? | Szám A formátum helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban. |
 | Érintett modulok             | Kinnlevőségek                                                                       |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integráció az Isabel-hez szinkronizált (CIS) rendszerekkel Belgium esetében
@@ -168,7 +168,7 @@ Az Isabel az elektronikus banki ügyintézés európai rendszere, Belgiumban de 
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Megszűnés oka       | Az Isabel-klienssel való integráció már nincs forgalomban.                                                                |
-| Felváltotta másik szolgáltatás? | Szám Már nem használt fizetési formátumok helyébe Belgium ISO20022 követel átviteli fizetési formátumát. |
+| Felváltotta másik szolgáltatás? | Szám A már nem használt fizetési formátumok helyébe ISO20022 átutalási fizetési formátum lépett Belgium esetében. |
 | Érintett modulok             | Kötelezettségek                                                                                                     |
 
 ### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>A számlatükör és a számviteli szabályok módosulása Spanyolország esetében
@@ -218,7 +218,7 @@ Banki fizetés importálása a TeleTeenus formátumot használja.
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
 | Megszűnés oka       | A fizetési formátumok már nem használhatók.                                                    |
-| Felváltotta másik szolgáltatás? | Szám A formátumok váltja fel az ISO 20022 kivonat importálási formátumainak a későbbi kiadásokban. |
+| Felváltotta másik szolgáltatás? | Szám A formátumok helyére ISO-20022 típusú kivonatok importformátumai kerülnek a jövőbeli kiadásokban. |
 | Érintett modulok             | Kinnlevőségek                                                                        |
 
 ### <a name="performance-management-goal-workflow"></a>Teljesítménymenedzsment, célok munkafolyamata
@@ -228,7 +228,7 @@ A teljesítménymenedzsment a célok kezelését tartalmazza, és integrálja a 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Megszűnés oka       | A teljesítménymenedzsment át lett tervezve, és a célok oldalainak száma csökkent a folyamat egyszerűsítése érdekében.                 |
-| Felváltotta másik szolgáltatás? | Szám Célok láthatók a Manager Self Service portál vezetőkkel, és is megváltozik és a kezelő számára. |
+| Felváltotta másik szolgáltatás? | Szám A célok láthatók a vezetők számára az Vezetők önkiszolgáló portálján; ezeket a vezető módosíthatja és megtekintheti. |
 | Érintett modulok             | Emberierőforrás-menedzselés                                                                                                 |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>PostGirot és a Postgirot Utland fizetési formátumok Svédország esetében
@@ -243,17 +243,17 @@ PostGirot és a Postgirot Utland fizetési formátumok Svédország esetében.
 
 ### <a name="radio-frequency-identifier"></a>Rádiófrekvenciás azonosító
 
-Rádiófrekvenciás azonosítás (RFID) olyan adatgyűjtési technológia, amely egy nem-sort-of-sight követelmény olvasót az azonosító adatok azonosítási adatok tárolásához elektronikus címkéket használ.
+A rádiófrekvenciás azonosítás (Radio Frequency Identification – RFID) egy olyan adatgyűjtési technológia, amely az azonosítási adatok tárolásához elektronikus címkéket használ, az azonosítási adatok beolvasásához pedig nem közvetlen rálátású olvasót.
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Megszűnés oka       | Alacsony vevő használati és korlátozott szolgáltatás beállítása. |
+| Megszűnés oka       | Alacsony vevői használat és korlátozott szolgáltatáskészlet. |
 | Felváltotta másik szolgáltatás? | Nincs                                            |
 | Érintett modulok             | Készletgazdálkodás                          |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Állami számlák számozására vonatkozó jelentés Lettország esetében
 
-A lett jogszabályok szigorú szabályokat írnak elő az értékesítési számlák számozására vonatkozóan. A funkció lehetővé teszi az eladási számlák alapján a felhasználó vagy felhasználói csoport konkrét számokat rendel. Egy jelentés vagy XML-fájl akkor hoz létre. A felhasznált számlaszámokról jelentést is lehet nyomtatni.
+A lett jogszabályok szigorú szabályokat írnak elő az értékesítési számlák számozására vonatkozóan. A funkciók segítségével egyedi számokat lehet az értékesítési számlákhoz rendelni, a felhasználó vagy felhasználói csoport alapján. Ezután lehet létrehozni egy jelentést vagy egy XML-fájlt. A felhasznált számlaszámokról jelentést is lehet nyomtatni.
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -312,7 +312,7 @@ A munkavállalók céljai létrehozásának kezelésére vonatkozó munkafolyama
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF, AxD és AxBC integrációja
 
-Az Alkalmazásintegrációs keretrendszerben (AIF-ben) adatok cserélhetőek ki külső rendszerekkel, szolgáltatásként kitett üzleti logikán keresztül. A Dynamics AX dokumentumokon és .NET Business Connector-on (AxBC) alapuló szolgáltatásokat tartalmaz. Dokumentumok XML használatával hozhatóak létre. Az XML által tartalmazott fejlécadatok hozzáadásával *üzenet* hozható létre, amely a Dynamics AX rendszerbe vagy rendszerből átvihető. Dokumentumok például az értékesítési rendelések és a beszerzési rendelések. Azonban szinte minden entitást (például vevőt) képviselhet dokumentum. A dokumentumok használatára épülő szolgáltatások a **Axd &lt;*a dokumentum*&gt;** osztályok.
+Az Alkalmazásintegrációs keretrendszerben (AIF-ben) adatok cserélhetőek ki külső rendszerekkel, szolgáltatásként kitett üzleti logikán keresztül. A Dynamics AX dokumentumokon és .NET Business Connector-on (AxBC) alapuló szolgáltatásokat tartalmaz. Dokumentumok XML használatával hozhatóak létre. Az XML által tartalmazott fejlécadatok hozzáadásával *üzenet* hozható létre, amely a Dynamics AX rendszerbe vagy rendszerből átvihető. Dokumentumok például az értékesítési rendelések és a beszerzési rendelések. Azonban szinte minden entitást (például vevőt) képviselhet dokumentum. A dokumentumokon alapuló szolgáltatások az **Axd &lt;*Dokumentum*&gt;** osztályokat használják.
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -347,7 +347,7 @@ Szövetségi adókimutatás az ICMS adó esetében
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Megszűnés oka       | Ez a kimutatás már nem alkalmazható néhány brazil államban.                                                     |
-| Felváltotta másik szolgáltatás? | Szám A felhasználók általános elektronikus jelentéskészítő eszköz konfigurálása az utasítás szerint adott helyzetekben szükség esetén használható. |
+| Felváltotta másik szolgáltatás? | Szám A felhasználók általános elektronikus jelentési eszközt használhatnak a kimutatás beállításához, ha arra bizonyos helyzetekben szükség van. |
 | Érintett modulok             | Pénzügyi könyvek                                                                                                          |
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brazil SCAN készenléti mód az NF-e esetében
@@ -631,7 +631,7 @@ Emberi Erőforrások Bérlistaadatai
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Megszűnés oka       | Ezt a funkciót az alapvető Bérlista és az Emberi Erőforrások lapokok váltotta fel.                                                                                                                                                                                                                                              |
-| Felváltotta másik szolgáltatás? | A **Juttatások** és a **Bevételek** oldalakon, valamint az egyéb kapcsolódó, korábban az amerikai Bérszámfejtésben levő oldalakon újrakonfigurálást végeztünk, így ezek most az Emberi erőforrások alapkonfiguráció részei, ezért a külső bérlisták feldolgozását segítik. Ez a funkció használatával érhető el a **humánerőforrás-1**&gt;**fizetési** konfigurációs kulcs. |
+| Felváltotta másik szolgáltatás? | A **Juttatások** és a **Bevételek** oldalakon, valamint az egyéb kapcsolódó, korábban az amerikai Bérszámfejtésben levő oldalakon újrakonfigurálást végeztünk, így ezek most az Emberi erőforrások alapkonfiguráció részei, ezért a külső bérlisták feldolgozását segítik. Ez a funkció a **Humán Erőforrások 1** &gt; **Bérlista**-konfigurációs kulcs használatával érhető el. |
 | Érintett modulok             | Emberi Erőforrások, Bérlista                                                                                                                                                                                                                                                                                                     |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Készlet- és raktárkezelési naplók személyes zárolása
@@ -698,12 +698,12 @@ Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, mel
 | Felváltotta másik szolgáltatás? | Szám                                                                                                                                       |
 | Érintett modulok             | HR felvétel, Esetkezelés, Kvóta kérelmek és Szállító regisztrálása                                                                  |
 
-### <a name="ssas-demand-forecasting-strategy"></a>SSAS kereslet előrejelzése stratégia
+### <a name="ssas-demand-forecasting-strategy"></a>SSAS igény-előrejelzési szolgáltatások
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
-| Megszűnés oka       | A funkció kialakítása az új felhő architektúra nem támogatott. |
-| Felváltotta másik szolgáltatás? | Azure gép tanulás kereslet előrejelzése stratégia                           |
+| Megszűnés oka       | A funkció kialakítása az új felhő architektúrában nem támogatható. |
+| Felváltotta másik szolgáltatás? | Azure gépi tanulási kereslet-előrejelzési stratégia                           |
 | Érintett modulok             | Tervezés                                                                     |
 
 ### <a name="travel-requisitions"></a>Utazási igénylések

@@ -1,6 +1,6 @@
 ---
-title: "BI &amp;jelentési honlap"
-description: "Ez a témakör felsorolja a BI &amp;jelentése a Microsoft Dynamics 365 műveletekhez rendelkezésre álló erőforrások."
+title: "Üzleti intelligencia és jelentéskészítés kezdőlap"
+description: "Ez a témakör a Microsoft Dynamics 365 for Operations rendszerben elérhető Üzleti intelligencia és jelentéskészítés erőforrásokat sorolja fel."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,26 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>BI &amp;jelentési honlap
+# <a name="bi-amp-reporting-home-page"></a>Üzleti intelligencia és jelentéskészítés kezdőlap
 
-Ez a témakör felsorolja a BI &amp;jelentése a Microsoft Dynamics 365 műveletekhez rendelkezésre álló erőforrások.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a témakör a Microsoft Dynamics 365 for Operations rendszerben elérhető Üzleti intelligencia és jelentéskészítés erőforrásokat sorolja fel. 
 
 <a name="working-with-aggregate-data"></a>Munka az összevont adatokkal
 ---------------------------
 
--   [Analytics](analytics.md)
+-   [Elemzés](analytics.md)
 -   [A Memóriában tárolt valós idejű összesített modellek helyettesítik a SSAS kockákat](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [A modellezési és összesített adatokkal](model-aggregate-data.md)
--   [Frissített Dynamics AX 2012 R3 értékesítés kocka átvitele az entitás üzlet](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+-   [Összevont adatok modellezése és használata](model-aggregate-data.md)
+-   [A frissített Dynamics AX 2012 R3 értékesítési kocka átvitele az entitásüzletbe](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Önkiszolgáló jelentési rendszer
--   [Power BI integration](power-bi-integration.md)
+## <a name="self-service-reporting"></a>Saját célú jelentések készítése
+-   [Power BI-integráció](power-bi-integration.md)
 -   [A munkaterületek Power BI integrációjának beállítása](configure-power-bi-integration.md)
 -   [Power BI jelentés készítése Microsoft Dynamics 365 for Operations rendszer adatainak felhasználásával](create-powerbi-report-data.md)
--   [Kiemelt BI jelentés és az irányítópult létrehozása](create-powerbi-report-dashboard.md)
--   [Kiskereskedelmi csatorna teljesítményének kiemelt BI-tartalom](retail-channel-performance-dashboard-power-bi-data.md)
--   [Pénzügyi teljesítmény energiaellátási BI-tartalom](financial-performance-power-bi-content-pack.md)
--   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
+-   [Power BI-jelentés és irányítópult létrehozása](create-powerbi-report-dashboard.md)
+-   [Kiskereskedelmi csatorna teljesítmény Power BI-tartalom](retail-channel-performance-dashboard-power-bi-data.md)
+-   [Pénzügyi Teljesítmény Power BI-tartalom](financial-performance-power-bi-content-pack.md)
+-   [Értékesítési és nyereségességi teljesítmény Power BI-tartalom](sales-profitability-performance-content-pack.md)
 -   [Használja az elektronikus jelentési konfigurációt ahhoz, hogy a Dynamics 365 for Operations rendszer adatait továbbítsa a Power BI-nak](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Beágyazott elemző eszközök létrehozása a Dynamics 365 for Operations kliensben
@@ -95,6 +98,8 @@ Ez a témakör felsorolja a BI &amp;jelentése a Microsoft Dynamics 365 művelet
 -   [ER Dokumentumkezelési fájlok használata formátumkimenetekben (5. rész: Formátum módosítása és futtatása)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (Feladat-útmutató)
 -   [ER Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a formátumkonfiguráció segítségével](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (Feladat-útmutató)
 -   [ER A formátum frissítése ezen formátum új, alap verziójának elfogadásával](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (Feladat-útmutató)
+
+
 
 
 

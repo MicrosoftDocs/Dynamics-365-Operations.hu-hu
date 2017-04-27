@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="customer-payments-for-a-partial-amount"></a>Vevői kifizetések részösszegre
 
+[!include[banner](../includes/banner.md)]
+
+
 Bizonyos esetekben a vevő kisebb összeget fizet ki, mint a számlán szereplő összeg. Ez a cikk az ilyen helyzetek megoldásait taglalja. Az Ön számára elérhető beállítások az ön üzleti igényeitől és konfigurációitól függenek.
 
 <a name="partial-payment-with-no-discount"></a>Részleges kifizetés engedmény nélkül
@@ -38,12 +41,12 @@ Egy vevő olyankor kínálhat részletes fizetést, ha nem rendelkezik elegendő
 Vevőinek készpénzfizetési engedményt kínálhat, ha a számla esedékességi dátuma előtt fizetnek. Példa: rögzít egy 100,00 értékű számlát, amely 2%-os készpénzfizetési engedményt biztosít, ha 10 napon belül kifizetik. A számla határideje 30 nap. Ha 10 napon belül megkapja a 98,00 összegű kifizetést, akkor 98,00 értékű fizetést rögzíthet a rendszerben. Ezt követően a számla meg lesz jelölve kiegyenlítésre, a készpénzfizetési engedményt a rendszer automatikusan beleszámítja.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Részleges kifizetések készpénzfizetési engedménnyel
-Ha a vevő részleges kifizetést teljesít, akkor valószínű, hogy egy későbbi részleges fizetéssel teljesen ki kívánja majd egyenlíteni a számlát. Részleges kifizetés készpénzfizetési engedményt veszi, meg kell a ** részfizetések készpénzfizetési engedményeinek számítása ** lehetőséggel **Igen** a a **Kinnlevőségek paraméterei** lap. 
+Ha a vevő részleges kifizetést teljesít, akkor valószínű, hogy egy későbbi részleges fizetéssel teljesen ki kívánja majd egyenlíteni a számlát. Ahhoz, hogy a részleges fizetésre is tudjon készpénzfizetési engedményt alkalmazni, a **Részleges kifizetések készpénzfizetési engedményeinek számítása** opciót **Igen** beállításra kell állítani a **Kinnlevőségek paraméterei** lapon. 
 
 Tegyük fel, hogy 2%-os készpénzfizetési engedmény kínál, ha a számla kifizetése a kiállítás után 10 napon belül megtörténik. Felad egy 100,00 értékű számlát. Ha 10 napon belül megkapja a 49,00 összegű kifizetést, akkor 49,00 értékű követel tételt rögzíthet egy fizetési naplóban. Amikor a részleges kifizetést kiegyenlíti a a **Tranzakciók kiegyenlítése** lapon, **1,00** érték jelenik meg az **Alkalmazandó készpénzfizetési engedmény összege** mezőben. Az engedmény összege egy készpénzfizetési engedmény számlára kerül feladásra. 
 
 > [!NOTE] 
-> Ha egy részleges kifizetést, és hagyja a számla teljes összege a **kiegyenlítendő összeg**, a mező a **készpénzfizetési engedmény összege** mező automatikusan frissül a tranzakciók könyvelésekor.
+> Ha részleges fizetést rögzít a rendszerben, és meghagyja a számla teljes összegét a **Kiegyenlítendő összeg** mezőben, akkor az **Alkalmazandó készpénzfizetési engedmény összege** mezőt a program a tranzakciók feladásakor automatikusan újraszámítja.
 
 ## <a name="credit-notes-with-discounts"></a>Jóváírások engedménnyel
 Ha a vevők a számlán található cikkek közül visszaküldenek, akkor jóváírást állíthat ki. Ha készpénzfizetési engedmény volt az eredeti számlán, akkor a vevői jóváírás az általa kapott készpénzfizetési engedményhez képest nettó összeg kell legyen. Ha a **Jóváírások készpénzfizetési engedményeinek számítása** opció **Igen** beállításra van állítva a **Kinnlevőségek paraméterei** lapon, akkor a program az engedményt automatikusan kiszámítja a jóváíráshoz. 
@@ -54,6 +57,8 @@ Tegyük fel, hogy 2%-os készpénzfizetési engedmény kínált a feltételek k�
 Amikor a vevő kifizetést küld, egyes esetekben visszamarad egy kisebb, még kiegyenlítendő összeg. Tegyük fel, hogy 1000,00 értékben számlázott a vevőnek, a vevő azonban 999,90 értéket fizetett ki. Ha a fennmaradó összeg kevesebb, mint a **Kinnlevőségek paramétereinek** lapon a túl- vagy alulfizetések esetére meghatározott összeg, akkor a különbséget a program automatikusan feladja a túl-/alulfizetés főkönyvi számlára.
 
 ## <a name="full-settlement"></a>Teljes kiegyenlítés
-Felhasználók tehetik egy részfizetést, ahol a fennmaradó összeg nem fizetendő, de nagyobb, mint a megadott alulfizetés összegének a **figyelembe a Kötelezettségek paraméterei** oldalon. Szeretné megjelölni a teljesen kiegyenlített számla, ha a **teljes kiegyenlítés** a beállítás a **tranzakció** lap. (A teljes kiegyenlítési funkciót egy konfigurációs kulccsal engedélyezheti.) Tegyük fel, hogy egy 1000,00 értékű számlát ad fel, a vevő pedig 990,00 értéket fizet ki. Már elfogadott, hogy a vevő nem kell fizetni a fennmaradó 10,00. Miután a számla kiegyenlítésre, megjelölheti a select **teljes kiegyenlítés**. A számla ezután teljesen kiegyenlítettnek fog számítani. A 10,00 különbséget egy készpénzfizetési engedményszámlára adja fel a rendszer, mint további készpénzfizetési engedmény.
+A vevők részleges kifizetést is végezhetnek, amelynél a fennmaradó összeget nem fizeti ki, viszont az összeg nagyobb, mint a **Kötelezettségek paraméterei** oldalon megadott alulfizetési összeg. Ha szeretné a számlát teljesen kiegyenlítettként megjelölni, használja a **Teljes kiegyenlítés** beállítást a **Tranzakció kiegyenlítése** lapon. (A teljes kiegyenlítési funkciót egy konfigurációs kulccsal engedélyezheti.) Tegyük fel, hogy egy 1000,00 értékű számlát ad fel, a vevő pedig 990,00 értéket fizet ki. Már elfogadta, hogy a vevőnek nem kell kifizetnie a fennmaradó 10,00-et. A számla kiegyenlítésre való megjelölése után megjelölheti a **Teljes kiegyenlítés** opciót is. A számla ezután teljesen kiegyenlítettnek fog számítani. A 10,00 különbséget egy készpénzfizetési engedményszámlára adja fel a rendszer, mint további készpénzfizetési engedmény.
+
+
 
 

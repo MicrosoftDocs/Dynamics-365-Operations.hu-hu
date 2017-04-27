@@ -1,9 +1,9 @@
 ---
-title: "Értékcsökkenés csökkentése"
+title: "Degresszív értékcsökkenés"
 description: "Ez a cikk az értékcsökkenés egyenleg csökkentő módszeréről nyújt tájékoztatást."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reduce-balance-depreciation"></a>Értékcsökkenés csökkentése
+# <a name="reduce-balance-depreciation"></a>Degresszív értékcsökkenés
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk az értékcsökkenés egyenleg csökkentő módszeréről nyújt tájékoztatást.
 
@@ -57,7 +60,7 @@ Ha például az Évente beállítást választja, az éves értékcsökkenés cs
 
 ### <a name="fiscal"></a>Pénzügyi
 
-Ha a Pénzügyi beállítást választja az Értékcsökkenés éve mezőben, akkor a lineáris értékcsökkenési módszert alkalmazza a rendszer. Ezt a pénzügyi év alapján számítja ki a rendszer, amelyet a Pénzügyi naptárak lapon állíthat be a Főkönyv lapon kiválasztott pénzügyi naptárhoz. Például a pénzügyi év július 1-június 30., az értékcsökkenés számítása kezdődik július 1-én. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az értékcsökkenés minden egyes pénzügyi időszak végén módosul. A következő pénzügyi év hossza az új pénzügyi évnek a Pénzügyi naptárak lapon való létrehozásakor beállított pénzügyi időszakoktól függ.
+Ha a Pénzügyi beállítást választja az Értékcsökkenés éve mezőben, akkor a lineáris értékcsökkenési módszert alkalmazza a rendszer. Ezt a pénzügyi év alapján számítja ki a rendszer, amelyet a Pénzügyi naptárak lapon állíthat be a Főkönyv lapon kiválasztott pénzügyi naptárhoz. Egy július 1-től június 30-ig tartó pénzügyi év esetén az értékcsökkenés számítása július 1-jén kezdődik. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az értékcsökkenés minden egyes pénzügyi időszak végén módosul. A következő pénzügyi év hossza az új pénzügyi évnek a Pénzügyi naptárak lapon való létrehozásakor beállított pénzügyi időszakoktól függ.
 
 
 Ha a Pénzügyi beállítást választja, az alábbi opciók lesznek elérhetőek az az Időszak gyakorisága mezőben:
@@ -73,12 +76,14 @@ A Degresszív módszerrel az értékcsökkenés alapjának (nettó könyv szerin
 
 | Időszak | Az éves értékcsökkenési összeg számítása | Nettó könyv szerinti érték az év végén |
 |--------|-------------------------------------------|---------------------------------------|
-| 1. év | (11,000 - 1,000) \* 30% = 3,000           | (11 000 - 1000) - 3000 = 7000      |
-| 2. év | (7,000 - 1,000) \* 30% = 1,800            | (7000 -1800) = 5200                |
-| 3. év | (5,200 - 1,000) \* 30% = 1,260            | (5200 - 1260) = 3940               |
+| 1. év | (11 000-1000) \* 30% = 3000           | (11 000 - 1000) - 3000 = 7000      |
+| 2. év | (7000-1000) \* 30% = 1800            | (7000 -1800) = 5200                |
+| 3. év | (5200-1000) \* 30% = 1260            | (5200 - 1260) = 3940               |
 
  
 -
+
+
 
 
 

@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="customer-posting-profiles"></a>Vevői feladási profilok
 
+[!include[banner](../includes/banner.md)]
+
+
 A vevői feladási profilok a vevői tranzakciók főkönyvbe történő feladását szabályozzák.
 
 <a name="customer-posting-profiles"></a>Vevői feladási profilok
 -------------------------
 
-Vevői feladási profilok lehetővé teszik az Ön számára, hogy a főkönyvi számlákat és dokumentumbeállításokat az összes vevőhöz, vevő csoporthoz vagy egyetlen vevőhöz rendelhesse. Ezek a beállítások értékesítési rendelések, szabadszöveges számlák, pénz-kifizetések, fizetési felszólítások és kamatlevelek létrehozásakor történik. Néhány tranzakcióhoz feladói profilt választhat ki, ami különböző és elsőbbséget élvez azokkal a feladói profilokkal szemben, amelyek a tranzakcióhoz be vannak állítva ezen az oldalon. 
+Vevői feladási profilok lehetővé teszik az Ön számára, hogy a főkönyvi számlákat és dokumentumbeállításokat az összes vevőhöz, vevő csoporthoz vagy egyetlen vevőhöz rendelhesse. Ezeket a beállításokat akkor használják értékesítési rendelés, szabadszöveges számlák, készpénz kifizetések, fizetési felszólítások és kamatlevelek létrehozása során. Néhány tranzakcióhoz feladói profilt választhat ki, ami különböző és elsőbbséget élvez azokkal a feladói profilokkal szemben, amelyek a tranzakcióhoz be vannak állítva ezen az oldalon. 
 
 Az alapértelmezett feladási profil a Főkönyv és Áfa gyorslapon a Kinnlevőségek paramétereinek lapján van megadva. Az alapértelmezett feladási profil automatikusan szerepel majd az új dokumentumok fejlécén, amelyen meg lehet változtatni egy másik feladási profilra, ha szükséges.
 
@@ -126,7 +129,7 @@ Ha azt szeretné, hogy a vevői tranzakciók feladási profiljai megegyezzenek, 
 
 ### 
 
-### <a name="table-restrictions"></a>**Table restrictions**
+### <a name="table-restrictions"></a>**Táblakorlátozások**
 
 Azokhoz a tranzakciókhoz, amelyeket a feladási profil kiválasztott, meghatározzák, hogy a tranzakció automatikusan ki van-e egyenlítve, a kamat ki van-e számítva, és a fizetési felszólítások ki vannak-e állítva. Kiválaszthatja a kijelölt feladási profillal rendelkező tranzakciók zárásakor használatos számlát.
 
@@ -138,6 +141,8 @@ Határozza meg a következő értékeket a feladási profil beállításához:
 | **Érdeklődési terület**          | Válassza ki ezt a váltót, ha a kamatot ki kell számítani ezen profilt használó vevő számljának fennmaradó egyenlegei esetében. Ha a váltó nincs bejelölve, akkor az ilyen vevők esetében nem számít kamatot a program.                                           |
 | **Fizetési felszólítás** | Válassza ki ezt a váltót, ha a fizetési felszólításokat ezen profilt használó vevő számljához kell létrehozni. Ha a váltó nincs bejelölve, a program nem számít fizetési felszóltásokat ezen vevők esetében.                                                 |
 | **Zárás**             | Válasszon ki egy másik feladási profilt, amelyre váltani szeretne a jelen feladási profilt használó tranzakciók bezárásakor. Egy tranzakció akkor minősül bezártnak, ha a teljes kiegyenlítése megtörtént.                                                                           |
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Globális címjegyzékek beállítása"
-description: "A cikk ismerteti a szempontok és határozatokat, amelyek előtt kell készíteni a tervezés során állítsa be, és állítsa be a globális címjegyzékben és bármely további címjegyzékek a Microsoft Dynamics 365 műveletekhez. Egyes döntések megkövetelik a korábban, a termék más területével kapcsolatban hozott döntések (pl. a szervezeti hierarchia) megerősítését."
+title: "Globális címjegyzékek konfigurálása"
+description: "Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a globális vagy bármely más címjegyzék Microsoft Dynamics 365 for Operations rendszerben történő beállítása és konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket. Egyes döntések megkövetelik a korábban, a termék más területével kapcsolatban hozott döntések (pl. a szervezeti hierarchia) megerősítését."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-global-address-books"></a>Globális címjegyzékek beállítása
+# <a name="configure-global-address-books"></a>Globális címjegyzékek konfigurálása
 
-A cikk ismerteti a szempontok és határozatokat, amelyek előtt kell készíteni a tervezés során állítsa be, és állítsa be a globális címjegyzékben és bármely további címjegyzékek a Microsoft Dynamics 365 műveletekhez. Egyes döntések megkövetelik a korábban, a termék más területével kapcsolatban hozott döntések (pl. a szervezeti hierarchia) megerősítését.
+[!include[banner](../includes/banner.md)]
+
+
+Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a globális vagy bármely más címjegyzék Microsoft Dynamics 365 for Operations rendszerben történő beállítása és konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket. Egyes döntések megkövetelik a korábban, a termék más területével kapcsolatban hozott döntések (pl. a szervezeti hierarchia) megerősítését.
 
 <a name="global-address-book"></a>Globális címjegyzék
 -------------------
@@ -61,6 +64,8 @@ Miután létrehozta a globális címjegyzéket, további címjegyzéket hozhat l
 Bármikor létrehozhat címjegyzéket, és bármikor beállíthatja a címjegyzékek biztonsági paramétereit. Nem szükséges a címjegyzékhez tartozó biztonsági jogosultság beállítása, de ha nem állítja be, akkor a szervezet összes munkavállalója megtekintheti a címjegyzékben szereplő összes rekordot. Beállíthatja a biztonsági jogosultságota címjegyzéken keresztül a fél rekordjaihoz. Csapatokon alapulnak a biztonsági jogosultságok. Ez a megközelítés garantálja, hogy csak olyan munkavállaló láthatja a címjegyzékben szereplő fél rekordjait, aki hozzá van rendelve egycímjegyzékhez. Ki kell választania azt a csoportot, amely minden egyes címjegyzékhez rendelkezik hozzáféréssel. Minden címjegyzékhez beállíthatja azokat biztonsági jogosultságokat, amelyek engedélyezik vagy megtagadják a hozzáférést az egyes csoportokhoz. Amennyiben hozzáférést biztosít egy csapat számára egy címjegyzékhez, ezen csapat összes tagja láthatja a címjegyzékben szereplő rekordokat. Amennyiben nem biztosít hozzáférést egy csapat számára egy címjegyzékhez, ezen csapat tagji nem láthatják a címjegyzéket és annak tartalmát. **Döntés:**
 
 -   Mely csoportoknak kell hozzáféréssel rendelkeznie minden egyes új címjegyzékhez, amelyet létrehoz?
+
+
 
 
 

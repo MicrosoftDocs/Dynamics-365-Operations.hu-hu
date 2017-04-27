@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-warehouse-workers"></a>Raktári dolgozók irányítása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk leírja, hogyan használható a Microsoft Dynamics AX az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 
 A funkció használatakor a raktárkezelésben minden, raktári dolgozó által elvégzett művelet *munka*. Az munkákat, mint a kitárolás, áthelyezés és az aktuális készlet leltározása, mobilkészülékek segítségével rögzítik. Mielőtt egy raktári dolgozó munkát végezhetne, társítani kell őt egy dolgozóval a humán erőforrásokban. Minden egyes **Dolgozó** fiókhoz több raktárimunka-felhasználó társítható. Ezek a munkafelhasználók dolgozhatnak különböző raktárakban, és különböző szintű hozzáféréssel rendelkezhetnek a különféle mobilkészülékmenükhöz. A raktárimunka-felhasználókra úgy lehet tekinteni, mint egy adott dolgozó többszörös bejelentkezéseire. Minden egyes munkafelhasználó rendelkezik egy alapértelmezett raktárral, és a menüelemek jelenítik meg a konkrét munkafolyamatokat, amelyek elérhetők az adott munkafelhasználó számára. 
@@ -51,6 +54,8 @@ A munkatételek feldolgozásához felhasznált idő elemzése segíthet javítan
 
 -   **Felhasználói munkavégzési** – Ez a jelentés mutatja a dolgozói termelékenységet, a tényleges és az elvárt idők összehasonlítása alapján.
 -   **Munka a munkatranzakció típusa szerint** – Ezen jelentés segítségével kivizsgálhatja a hatékonysággal kapcsolatos hiányokat adott raktári folyamatok esetében. Például észreveszi, hogy az átmozgatási rendelésekhez tartozó kitárolások tovább tartanak ezen a héten, mint az előző hetek folyamán. Ez az információ hasznos lehet e további vizsgálat során.
+
+
 
 
 

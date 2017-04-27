@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Egyetlen bizonylat több vevő- vagy szállítórekorddal
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a témakör áttekinti, mi történik, ha több vevő- vagy szállítórekordot tartalmazó bizonylatot ad fel. Ez a funkció a Microsoft Dynamics 365 for Operations későbbi verzióiban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást. 
 
 Egy bizonylat több vevő vagy szállító esetében történő használatára általánosan elterjedt példa az egyenlegátvitel az ügyfelek között vagy az egyenleg nettóérték-számítása a vevők és a szállítók között az adott szervezeten belül. 
@@ -91,10 +94,10 @@ Ha a felhasználó elégedetlen azzal, hogy a készpénzfizetési engedményt az
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat ** | **Számla típusa** | **Számla**  | **Leírás** | **Tartozik** | **Követel** | **Offset type** | **Offset account** |
+| **Bizonylat ** | **Számla típusa** | **Számla**  | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | GNJL001     | Szállító           | 1001         | INV1            |           | 100,00     | Főkönyv          | &lt;üres&gt;      |
-| GNJL001     | Főkönyv           | 606300-001-- | INV1            |   50,00   |            | Főkönyv          | &lt;üres&gt;      |
-| GNJL001     | Főkönyv           | 606300-002-- | INV1            |   50,00   |            | Főkönyv          | &lt;üres&gt;      |
+| GNJL001     | Főkönyv           | 606300-001-- | INV1            |   50,00   |            | Főkönyv          | &lt;üres&gt;:      |
+| GNJL001     | Főkönyv           | 606300-002-- | INV1            |   50,00   |            | Főkönyv          | &lt;üres&gt;:      |
 | GNJL002     | Szállító           | 1001         | INV2            |           | 200,00     | Főkönyv          | 606300-003--       |
 | GNJL003     | Szállító           | 1001         | INV3            |           | 300,00     | Főkönyv          | 606300-004--       |
 
@@ -248,5 +251,7 @@ A tranzakció jövőbeli kiegyenlítésével kapcsolatos nemkívánatos problém
 | 002         | Szállító           | 1001        |                 |  75,00    |            | Főkönyv          | 999999---          |
 
  
+
+
 
 

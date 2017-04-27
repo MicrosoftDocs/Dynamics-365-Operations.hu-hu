@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-expense-management"></a>Költségkezelés konfigurálása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a Költséggazdálkodás Microsoft Dynamics AX rendszerben történő konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket. A Költséggazdálkodás területén többek között fizetési módokkal, utazásigénylésekkel, költségjelentésekkel és irányelvekkel kapcsolatos információkat tárolhat. 
 
 Mivel a Költséggazdálkodási konfiguráció tervezése során meghozott számos döntés az Ön szervezetének hierarchiáján, illetve annak pénzügyi struktúráján alapszik, így szükséges átolvasnia ezen területek tervezési dokumentumait is.
@@ -133,6 +136,8 @@ Tud létrehozni olyan költségjelentési irányelveket, melyek segítségével 
 -   Mikor jár le az irányelv?
 -   Mi az irányelvszabály?
 -   Mi az irányelvszabály eredménye?
+
+
 
 
 

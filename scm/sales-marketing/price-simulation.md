@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="price-simulation"></a>Árszimuláció
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat. 
 
 Az ajánlatok árszimulációja új végösszeget vagy sor szintű összeget jelenít meg vagy specifikus sorösszeget hoz létre egy külső ajánlathoz egy meglévő ajánlathoz egy javasolt új ár alapján. Az árszimuláció megmutathatja az új mennyiséget egy adott sorban, amelyet egy létező árajánlatban hoztak létre. Megadhatja az árszimulációt és később alkalmazhatja. Vagy csak később alkalmazza, vagy pedig választhatja az eredeti ajánlat használatát árszimuláció nélkül, és további változtatásokat hajthat végre, miközben a vevővel végighalad az értékesítési folyamaton.  
@@ -50,7 +53,7 @@ Hogy az engedmények és árak kiszámítása mindig pontosan menjen végbe, az 
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Kedvezmények típusai a kereskedelmi megállapodásokban
 
-A Microsoft Dynamics 365 műveletek kereskedelmi megállapodások ár engedmények négy típusú lehet. Ezek az engedmények különböző cikkekre, vevőkre vagy árcsoportokra lehetnek beállítva, és időben korlátozhatók. Téves számítások elkerülése végett figyelembe kell venni a kereskedelmi egyezményeket árszimulációk futtatásakor. A kereskedelmi megállapodások négy engedménytípusa:
+A kereskedelmi megállapodásoknak a Microsoft Dynamics 365 for Operations rendszerben négy típusú árengedménye lehet. Ezek az engedmények különböző cikkekre, vevőkre vagy árcsoportokra lehetnek beállítva, és időben korlátozhatók. Téves számítások elkerülése végett figyelembe kell venni a kereskedelmi egyezményeket árszimulációk futtatásakor. A kereskedelmi megállapodások négy engedménytípusa:
 
 -   **Értékesítési ár** – Cikkenkénti eladási árakat lehet meghatározni. Ajánlatkérési sorok létrehozásakor a program megkeresi a megfelelő eladási árat a cikkhez és továbbítja azt az árajánlat sorokhoz. Ebből következően egy ilyen típusú kereskedelmi megállapodás nincs hatással az árszimulációra. Az ajánlati sorban létrejövő ár a kereskedelmi megállapodáson alapul.
 -   **Sorengedmény** – A cikkhez különleges engedmények adhatók meg, a rendelt mennyiségtől függően. A sorösszegek általában a sorkedvezményekkel csökkennek az árszimuláció futtatása előtt. Ebből következően egy ilyen típusú kereskedelmi megállapodás hatással van az árszimulációra.
@@ -79,7 +82,7 @@ A következő táblázat mutatja az árajánlat sorait.
 | Eladási érték forintban         | (10 × 15,32) + (12 × 13,75)          | 31820   |
 | Önköltség forintban          | (10 × 9,52) + (12 × 7,48)            | 18496   |
 | Árrés forintban | 31820 – 18496                      | 13324   |
-| Hozzájárulás aránya         | (\[318.20 – 184.96\] ÷ 318.20) × 100 | 41,87%   |
+| Hozzájárulás aránya         | (\[318,20-184,96\] ÷ 318,20) × 100 | 41,87%   |
 
 Futtat egy árszimulációt, és 15 százalékos teljes engedményt ad a teljes árajánlatra vagy az árajánlat fejlécére. A következő táblázat mutatja az árajánlat új összegeit az árszimuláció futtatása után.
 
@@ -89,11 +92,11 @@ Futtat egy árszimulációt, és 15 százalékos teljes engedményt ad a teljes 
 | Korábbi eladási érték forintban                               | (10 × 15,32) + (12 × 13,75)               | 31820   |
 | Korábbi önköltség forintban                                | (10 × 9,52) + (12 × 7,48)                 | 18496   |
 | Korábbi árrés forintban                       | 31820 – 18496                           | 13324   |
-| Korábbi árrésarány                               | (\[318.20 – (10 × 9.52)\] ÷ 318.20) × 100 | 41,87%   |
+| Korábbi árrésarány                               | (\[318,20-(10 × 9,52)\] ÷ 318,20) × 100 | 41,87%   |
 | Árszimuláció – 15 százalékos teljes engedmény forintban | (15 × 318,2) ÷ 100                        | 4773    |
 | Új eladási érték forintban                               | 31820 – 4773                            | 27047   |
 | Új árrés forintban                       | 27047 – 18496                           | 8551    |
-| Új hozzájárulási arány                               | \[(270.47 – 184.96) ÷ 270.47\] × 100      | 31,61%   |
+| Új hozzájárulási arány                               | \[(270,47-184,96) ÷ 270,47\] × 100      | 31,61%   |
 
 ### <a name="price-simulation-for-single-line-items"></a>Árszimuláció egyes cikksorokhoz
 
@@ -113,12 +116,12 @@ A következő táblázat mutatja az árajánlat sorait.
 | A BR-14 költsége forintban          | 12 × 7,48                            | 8976    |
 | A BR-12 árrése forintban | 15320 – 9520                       | 5800    |
 | A BR-14 árrése forintban | 16500 – 8976                       | 7524    |
-| A BR-12 árrésaránya forintban  | \[(153.20 – 95.20) ÷ 153.20\] × 100  | 3786    |
-| A BR-14 árrésaránya forintban  | \[(165.00 – 89.76) ÷ 165.00\] × 100  | 4560    |
+| A BR-12 árrésaránya forintban  | \[(153,20-95,20) ÷ 153,20\] × 100  | 3786    |
+| A BR-14 árrésaránya forintban  | \[(165,00-89,76) ÷ 165,00\] × 100  | 4560    |
 | Teljes eladási érték forintban             | (10 × 15,32) + (12 × 13,75)          | 31820   |
 | Összes önköltség forintban              | (10 × 9,52) + (12 × 7,48)            | 18496   |
 | Teljes árrés forintban     | 31820 – 18496                      | 13324   |
-| Teljes árrésarány             | \[(318.20 – 184.96) ÷ 318.20\] × 100 | 41,87%   |
+| Teljes árrésarány             | \[(318,20-184,96) ÷ 318,20\] × 100 | 41,87%   |
 
 Futtat egy árszimulációt, és 10 százalékos teljes engedményt ad a BR-12 cikkekre. A következő táblázat mutatja az árajánlat új összegeit az egy cikksorra vonatkozó árszimuláció futtatása után.
 
@@ -133,13 +136,15 @@ Futtat egy árszimulációt, és 10 százalékos teljes engedményt ad a BR-12 c
 | A BR-14 költsége forintban                       | 12 × 7,48                               | 8976    |
 | A BR-12 új árrése forintban          | 13788 – 9520                          | 4268    |
 | A BR-14 árrése forintban              | 16500 – 8976                          | 7524    |
-| A BR-12 új árrésaránya forintban           | \[(137.88 – 95.20) ÷ 137.88\] × 100     | 3095    |
-| A BR-14 árrésaránya forintban               | \[(165.00 – 89.76) ÷ 165.00\] × 100     | 4560    |
-| Új teljes eladási érték forintban                      | \[(10 × 15.32) – 15.32\] + (12 × 13.75) | 30288   |
+| A BR-12 új árrésaránya forintban           | \[(137,88-95,20) ÷ 137,88\] × 100     | 3095    |
+| A BR-14 árrésaránya forintban               | \[(165,00-89,76) ÷ 165,00\] × 100     | 4560    |
+| Új teljes eladási érték forintban                      | \[(10 × 15,32) – 15,32\] + (12 × 13,75) | 30288   |
 | Összes önköltség forintban                           | (10 × 9,52) + (12 × 7,48)               | 18496   |
 | Új teljes árrés forintban              | 30288 – 18496                         | 11792   |
-| Új teljes árrésarány                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38.93%   |
+| Új teljes árrésarány                      | \[(302,88-184,96) ÷ 302,88\] × 100    | 38.93%   |
 
 Az árszimuláció csak azt a sort érinti, amelyre alkalmazták, csökkentve a sor összegét.
+
+
 
 

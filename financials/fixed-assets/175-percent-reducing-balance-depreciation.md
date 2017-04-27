@@ -54,9 +54,9 @@ Ha bejelöli **Naptár** értéket az értékcsökkenés éveként a következő
 
 ### <a name="fiscal"></a>Pénzügyi
 
-Ha bejelöli a **Pénzügyi** lehetőséget az **Értékcsökkenési év** mezőben, akkor a 175 % degresszív értékcsökkenés számítása azon pénzügyi év szerint történik, amelynek pénzügyi naptára meg van adva a könyvben vagy amelyik pénzügyi naptár ki van jelölve a **Főkönyv** lapon. A pénzügyi naptárak a **Pénzügyi naptárak** oldalon állíthatóak be. További tudnivalókért lásd: [pénzügyi naptárak, üzleti évek és időszakok.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Ha bejelöli a **Pénzügyi** lehetőséget az **Értékcsökkenési év** mezőben, akkor a 175 % degresszív értékcsökkenés számítása azon pénzügyi év szerint történik, amelynek pénzügyi naptára meg van adva a könyvben vagy amelyik pénzügyi naptár ki van jelölve a **Főkönyv** lapon. A pénzügyi naptárak a **Pénzügyi naptárak** oldalon állíthatóak be. További tudnivalókért lásd: [Pénzügyi naptárak, pénzügyi évek és időszakok.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
 
-Például a pénzügyi év július 1-június 30., az értékcsökkenési számítás elindul a július 1. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az egyes időszakokban az értékcsökkenés automatikusan módosul, és a következő naptári év hossza a **Pénzügyi naptárak** oldalon található időszakok beállítása alapján történik. 
+Egy július 1-től június 30-ig tartó pénzügyi év esetén az értékcsökkenés számítása július 1-jén kezdődik. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az egyes időszakokban az értékcsökkenés automatikusan módosul, és a következő naptári év hossza a **Pénzügyi naptárak** oldalon található időszakok beállítása alapján történik. 
 
 Ha bejelöli **Pénzügyi** értéket az értékcsökkenés éveként a következő lehetőségek érhetők el az **Időszak-gyakoriság** mezőben:
 
@@ -81,6 +81,6 @@ A 175 % degresszív értékcsökkenési módszer elosztja a 175 százalékot az 
 | 3. év | 4 225 × 35% = 1 478,75                        | 5 225 - 1 478,75 = 3 746,25 | 4 225 - 1 478,75 = 2 746,25           |
 
 > [!NOTE] 
-> Általában, amikor a 175 % degresszív értékcsökkenési módszer használatával számított összeg lesz alacsonyabb, mint a volna számítani a lineáris módszerrel van egy hátralévő élettartamát a lineáris módszer.
+> Általában amikor az összeg számolása a 175 % degresszív értékcsökkenési módszerrel történik, akkor az érték kisebb lesz mint amit a lineáris értékcsökkenés módszerrel kapnánk, a hátralévő élettartamhoz létezik egy átalakítás a lineáris értékcsökkenés módszeréhez.
 
 

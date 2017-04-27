@@ -1,6 +1,6 @@
 ---
-title: "Új feladat segédvonalak (2016. február)"
-description: "A wiki szerint február 2016 Microsoft BPM könyvtáraknak kiadott feladat útmutatók listája.  A közzétett tárak (február 2016) APQC Unified tárban Microsoft Dynamics 365 műveletekhez és (2016. február) bevezetés."
+title: "Új feladatútmutatók (2016. február)"
+description: "Ez a wiki a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február)."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Új feladat segédvonalak (2016. február)
+# <a name="new-task-guides-february-2016"></a>Új feladatútmutatók (2016. február)
 
-A wiki szerint február 2016 Microsoft BPM könyvtáraknak kiadott feladat útmutatók listája.  A közzétett tárak (február 2016) APQC Unified tárban Microsoft Dynamics 365 műveletekhez és (2016. február) bevezetés.
+Ez a wiki a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Segédvonalak (február 2016) a feladat APQC Unified tárban Microsoft Dynamics 365 műveletek
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Feladat-útmutatók (2016. február) a Microsoft Dynamics 365 for Operations APQC egyesített könyvtárában
 ---------------------------------------------------------------------------------
 
-(Február 2016) APQC Unified könyvtárban a feladat segédvonalak, amelyek célja, hogy használható a Dynamics 365 segítségre vonatkozó műveletek 7.0.0. Feladat útmutatókban honosított van szüksége, ha rendelkezésre áll (május 2016) APQC Unified tárban Microsoft Dynamics 365 műveletekhez. A Súgó rendszer tevékenység útmutató könyvtár való kapcsolódás módjáról további információt lásd: [az első lépések segítségével](help-overview.md).
+Az APQC Egyesített Könyvtár (2016. február) tartalmazza a Feladat-útmutatókat, melyeket a Dynamics 365 for Operations 7.0.0 használatához szántak Súgónak. Ha a Feladat-útmutatók honosított verziójára van szüksége, a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárában (2016. május) elérheti azokat. A súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kötelezettségek
 
@@ -531,7 +531,7 @@ A wiki szerint február 2016 Microsoft BPM könyvtáraknak kiadott feladat útmu
 | Kalkuláció hozzáadása termékkonfigurációs modellhez    | Globális             |
 | Termékkonfigurációs modell jóváhagyása                 | Globális             |
 | A kiadott alaptermékek alapbeállításának befejezése | Globális             |
-| Hozzon létre egy... alaptermék \financial-dimensions\dimension-based               | Globális             |
+| ..\ pénzügyi dimenziókon \ dimenziókon alapuló alaptermék létrehozása               | Globális             |
 | A termékosztályozási hierarchia létrehozása          | Globális             |
 | Termékkonfigurációs modell létrehozása                  | Globális             |
 | Alaptermék létrehozása                               | Globális             |
@@ -544,7 +544,7 @@ A wiki szerint február 2016 Microsoft BPM könyvtáraknak kiadott feladat útmu
 | Termékkonfigurációs modell anyagjegyzékének karbantartása        | Globális             |
 | Termékmodell útvonalának karbantartása                    | Globális             |
 | Kiadott termékek kezelése                              | Globális             |
-| A kiadás egy... alaptermék \financial-dimensions\dimension-based              | Globális             |
+| ..\ pénzügyi dimenziókon \ dimenziókon alapuló alaptermék közzététele              | Globális             |
 | Termékmodellekhez szükséges adatok továbbítása                      | Globális             |
 
  
@@ -718,10 +718,10 @@ A wiki szerint február 2016 Microsoft BPM könyvtáraknak kiadott feladat útmu
 <a name="see-also"></a>Lásd még
 --------
 
-[Új vagy frissített tevékenység segédvonalak (2016. május)](new-updated-task-guides-available-may-2016.md)
+[Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 
-[Új vagy frissített tevékenység segédvonalak (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
+[Új vagy frissített feladat-útmutatók (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
 
-[Új vagy frissített tevékenység segédvonalak (2016. November)](new-task-guides-november-2016.md)
+[Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
 
 

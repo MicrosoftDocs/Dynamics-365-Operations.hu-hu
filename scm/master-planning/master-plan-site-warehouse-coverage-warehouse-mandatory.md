@@ -1,5 +1,5 @@
 ---
-title: "Az Alaptervezés a hely és a raktár lefedettség, kötelező raktár"
+title: "Alaptervezés hely- és raktár fedezethez, a raktár kötelező"
 description: "Ez a témakör leírja, hogyan terveznek meg egy fedezeti dimenziókként webhellyel ás raktárral rendelkező cikket. A raktár dimenzió kötelező."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Az Alaptervezés a hely és a raktár lefedettség, kötelező raktár
+# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Alaptervezés hely- és raktár fedezethez, a raktár kötelező
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör leírja, hogyan terveznek meg egy fedezeti dimenziókként webhellyel ás raktárral rendelkező cikket. A raktár dimenzió kötelező.
 
@@ -38,10 +41,10 @@ Ez az alaptervezési eset a következő feltételeket tartalmazza:
 -   A telephely és raktár dimenzió be van állítva a fedezet tervezéséhez. Előfordulhat, hogy más dimenziók is be vannak állítva a fedezet tervezéséhez. A több telephelyes funkciók mindezeket nem érintik.
 
 Az alábbi ábra az alapütemezés folyamatát illusztrálja. Az ábrán látható paraméterek és helyeik a következők:
--   The warehouse is set to **Manual**. Kattintson a **Inventory management &gt;a telepítő &gt;Készlet részletezése &gt;raktár**. Az a **Alaptervezés** gyorslapon lásd a **Kézi** mezőt.
--   A cikkre cikkfedezet van meghatározva. Kattintson a **termék információkezelés &gt;termékek&gt;, amely a termékek**. Jelölje ki az elemet, majd kattintson a műveletek ablaktábla a a **terv** fülre, kattintson a **Cikkfedezet**.
--   A raktárban újratöltési viszonyok vannak meghatározva. Kattintson a **Inventory management &gt;a telepítő &gt;Készlet részletezése &gt;raktár**. Az **Alaptervezés** gyorslapon lásd az **Elsődleges raktár** mezőcsoportot.
--   Az alapértelmezett rendelési típus beállítása Termelés, Beszerzési rendelés vagy Kanban. Kattintson a **termék információkezelés &gt;termékek&gt;, amely a termékek**. Jelölje ki az elemet, majd kattintson a műveletek ablaktábla a a **terv** fülre, kattintson a **alapértelmezett beállítások**. Az a **Alapértelmezett rendelésbeállítások** űrlapon lásd a **Alapértelmezett rendeléstípus** elemet.
+-   A raktár beállítása **Kézi**. Kattintson a következő lehetőségre: **Készletgazdálkodás &gt; Beállítás &gt; Készlet részletezése &gt; Raktárak**. Az a **Alaptervezés** gyorslapon lásd a **Kézi** mezőt.
+-   A cikkre cikkfedezet van meghatározva. Kattintson a **Termékinformációk kezelése &gt; Termékek &gt; Kiadott termékek** lehetőségre. Jelölje ki a cikket, majd a Műveleti ablak ablakon a **Tervezés** lapon kattintson a **Cikk fedezete** elemre.
+-   A raktárban újratöltési viszonyok vannak meghatározva. Kattintson a következő lehetőségre: **Készletgazdálkodás &gt; Beállítás &gt; Készlet részletezése &gt; Raktárak**. Az **Alaptervezés** gyorslapon lásd az **Elsődleges raktár** mezőcsoportot.
+-   Az alapértelmezett rendelési típus beállítása Termelés, Beszerzési rendelés vagy Kanban. Kattintson a **Termékinformációk kezelése &gt; Termékek &gt; Kiadott termékek** lehetőségre. Jelölje ki a cikket, majd a Műveleti ablak ablakon a **Tervezés** lapon kattintson az **Alapértelmezett rendelésbeállítások** elemre. Az a **Alapértelmezett rendelésbeállítások** űrlapon lásd a **Alapértelmezett rendeléstípus** elemet.
 
 ![Telephely és raktárfedezet igénylése, kötelező raktár](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousemandatory.jpg)
 
@@ -50,7 +53,7 @@ Az alábbi ábra az alapütemezés folyamatát illusztrálja. Az ábrán láthat
 <a name="see-also"></a>Lásd még
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+Az alaptervezés és a többhelyes funkció[](master-plan-multisite-functionality.md)
 
 [Alaptervezés - helyfedezet, a raktár kötelező](master-plan-site-coverage-warehouse-mandatory.md)
 
@@ -59,5 +62,7 @@ Az alábbi ábra az alapütemezés folyamatát illusztrálja. Az ábrán láthat
 [Alaptervezés - hely és raktár fedezet, a raktár nem kötelező](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
 [Alaptervezés - Anyagjegyzék verzió meghatározása](master-plan-bom-version-determined.md)
+
+
 
 

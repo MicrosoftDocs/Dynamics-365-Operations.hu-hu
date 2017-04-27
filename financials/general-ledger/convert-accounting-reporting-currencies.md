@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Könyvelési vagy jelentési pénznem átváltása
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Egy vállalat, amelynek módosítania kell a könyvelési pénznemét vagy a jelentési pénznemét, két lehetőség közül választhat. Az első lehetőség új vállalat létrehozása, és új kezdés. A rendelkezésre álló másik lehetőség a könyvelési, illetve a jelentési pénznem átváltási folyamatának futtatása. Ez az egy rendkívül hosszú ideig futó folyamat, amely minden tranzakciót módosít a rendszerben. A folyamat futtatása előtt némi beállítás is szükséges.
@@ -72,6 +75,8 @@ A pénznemváltást után minden egyeztetési jelentést újra kell generálni, 
 -   Ha a főkönyvi könyvelési pénznem kerekítési különbségeket okoz, ezek a különbségek nem lesznek feladva a bizonylat használatával, ahol a kerekítési különbség megjelent. Ehelyett a különbségek annak a bizonylatnak a használatával lesznek feladva, amely az átváltási feladásokhoz lett megadva. Az átváltás után minden jelentésen, amely bizonylat és dátum alapján készül, megjelennek a kerekítési különbségek is. Ez a viselkedés normális, figyelmen kívül hagyható jelenség.
 -   Ha a vevői és a szállítói egyeztetési jelentéseknél különbség jelenik meg a végösszeg sorában, de az átváltás előtt nem volt különbség az összegek között, akkor ezt a különbséget fel kell adni. A használt számla a vevők és szállítók összesítő számlája. Az ellenszámla a főkönyvi számla az átváltási veszteséghez vagy az átváltási nyereséghez.
 
-Ha az összes főkönyvi tranzakciónapló törölve lett, készíthet egy új naplót a főkönyvi tranzakciókról. Kattintson a **főkönyvi**&gt;**időszakos**&gt;**naplók**&gt;**naplózás**. A valutaösszegeket a pénznemátváltás után értékelheti át, ha átértékelésre van szükség. Idegen pénznemben megadott összegeket a **Szokásos** kiválasztásával a **Metódus** mezőben értékelhet át.
+Ha az összes főkönyvi tranzakciónapló törölve lett, készíthet egy új naplót a főkönyvi tranzakciókról. Kattintson a **Főkönyv** &gt; **Időszakos** &gt; **Naplók** &gt; **Naplózás** lehetőségekre. A valutaösszegeket a pénznemátváltás után értékelheti át, ha átértékelésre van szükség. Idegen pénznemben megadott összegeket a **Szokásos** kiválasztásával a **Metódus** mezőben értékelhet át.
+
+
 
 

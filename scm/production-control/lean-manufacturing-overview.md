@@ -1,5 +1,5 @@
 ---
-title: "Lean gyártási – áttekintés"
+title: "Lean manufacturing (áttekintés)"
 description: "A cikk a Microsoft Dynamics AX lean manufacturing funkcióinak áttekintését és leírását nyújtja."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Lean gyártási – áttekintés
+# <a name="lean-manufacturing-overview"></a>Lean manufacturing áttekintése
+
+[!include[banner](../includes/banner.md)]
+
 
 A cikk a Microsoft Dynamics AX lean manufacturing funkcióinak áttekintését és leírását nyújtja.
 
@@ -49,7 +52,7 @@ Hozzon létre egy lean manufacruring alapítványt a gyártási és logisztikai 
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Kanbanok használata szükség követelmények jelzéséhez
 A húzó rendszer csak szükség esetén termel. Ez az eljárás csökkenti a felesleges készleteket és a szállítás átfutási idejét. Használhat kanbanokat tervezéshez, követéshez és folyamat követelményekhez amelyek termelési folyamatokon alapulnak. Kanban keretrendszer létrehozásához hozzon létre kanbanszabályokat, amelyek meghatározzák mikor jönnek létre kanbanok és hogyan teljesülnek a követelmények. Kétféle kanbanszabályt lehet létrehozni. A gyártási szabályok folyamat kanbanfeladatokat hoznak létre, a kanbanszabályok visszavonása pedig transzfer kanbanfeladatokat hoz létre. A következő feltöltési stratégiákat lehet beállítani:
--   **Fix mennyiség** a kanbanszabályok rögzített számú anyagkezelési egységre vonatkoznak, amely azt jelenti, hogy az aktív kanbanok száma állandó. Amikor felhasználják a Kanban származó azon termékek, és kézzel kell a kezelési egységeket, az azonos típusú új kanban jön létre. Ha rögzített mennyiségű kanbanszabályok létrehozása, kiszámíthatja az optimális Kanbanmennyiségek és a használt termékmennyiségek. A számítás figyelembe veszi a számla-előrejelzést, tényleges igényt a nyitott rendelésekből, cikkek feltöltésének átfutási idejét és a korábbi igényeket.
+-   **Fix mennyiség** a kanbanszabályok rögzített számú anyagkezelési egységre vonatkoznak, amely azt jelenti, hogy az aktív kanbanok száma állandó. Amikor egy kanbanból származó összes terméket felhasználnak, és a kezelési egységeket kézzel kiürítik, létrejön egy azonos típusú új kanban. Ha rögzített mennyiségű kanbanszabályt hoz létre, kiszámíthatja az optimális kanbanmennyiségeket és a használt termékmennyiségeket. A számítás figyelembe veszi a számla-előrejelzést, tényleges igényt a nyitott rendelésekből, cikkek feltöltésének átfutási idejét és a korábbi igényeket.
 -   **Ütemezett** Kanbanszabályok az alaptervezet által számított igényeket teljesítik. Az alaptervezet tervezett kanbanokat hoz létre, amelyek kanbanként lehet megerősíteni.
 -   **Esemény** Kanbanszabályok azon igények teljesítésére, melyeket az értékesítési rendelés vonalak, a gyártási anyagjegyzék vonalak vagy a minimális készlet beállítások tartalmaznak. Ha eseménykanbanok jönnek létre, akkor forrás szükségletekhez kerülnek rögzítésre.
 
@@ -76,6 +79,8 @@ A Kanbanfeladatok teljes mértékben integráltak a jelenlegi készlettranzakci�
 Továbbá a Lean manufacturing támogatja a beszerzési és számlázási folyamatokat azokhoz a szolgáltatásokhoz, melyek alvállalkozói termelési tevékenységekhez kapcsolódnak.
 -   Hozzárendelhet beszerzési szerződés sorokat és szolgáltatásokat alvállalkozói tevékenységekhez.
 -   Létrehozhat időszakos beszerzési rendeléseket és bevételezési jelentéseket a szolgáltatások beszerzésének és számlázásának támogatásához.
+
+
 
 
 

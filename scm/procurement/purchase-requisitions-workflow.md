@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-workflow"></a>beszerzési igénylési munkafolyamat
 
+[!include[banner](../includes/banner.md)]
+
+
 A munkafolyamat folyamata végigviszi a beszerzési igénylést az ellenőrzési folyamaton a kiinduló Tervezet állapottól a végső Jóváhagyva állapotig . A beszerzési igénylés ellenőrzésre való elküldésekor, elindul a munkafolyamat. A beszerzési igénylés jóváhagyása után, a beszerzési igénylés soraiban létrehozható egy beszerzési rendelés, amely elküldésre kerül a szállítónak, a rendelés teljesítése céljából.
 
 Beszerzési igénylés, ellenőrzésre történő benyújtása előtt konfigurálnia kell a munkafolyamatot. A munkafolyamat egy vagy több ellenőrzési lépést tartalmazhat, bármilyen sorrendben. A munkafolyamat úgy is konfigurálható, hogy az ellenőrzési feladatokat kihagyva, a beszerzési igénylés automatikusan jóváhagyásra kerül. Beállíthatja, hogy a munkafolyamat egyetlen dokumentumként továbbítsa a beszerzési igénylést, vagy hogy az egyes beszerzési igénylési sorok a megfelelő ellenőrök részére kerüljön-e továbbításra. Létrehozhat olyan változatot is, amelyben a beszerzési igénylés egyetlen dokumentumként kerül továbbításra egyes ellenőrök részére, míg mások a kiválasztott beszerzési igénylési sorokat kapják meg.  
@@ -106,12 +109,14 @@ A valamely munkafolyamatban beállított kiadásellenőrök használatához be k
 <a name="see-also"></a>Lásd még
 --------
 
-[Hozzon létre egy igénylési fogyasztásra (feladat guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Felhasználási igénylés létrehozása (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[Beszerzési igénylés áttekintése](purchase-requisitions-overview.md)
+
+
 
 

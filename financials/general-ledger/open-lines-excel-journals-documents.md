@@ -1,6 +1,6 @@
 ---
-title: "Naplósorok és az Excel dokumentumok közzététele"
-description: "Ez a témakör bemutatja, hogyan adhatja meg, és tegye közzé a Microsoft Excel a főkönyvi naplók sorai. A használt, adta meg tranzakciók típusától függően különböző sablonokat kapcsolatos információkat tartalmaz."
+title: "Naplósorok és dokumentumok közzététele Excelből"
+description: "Ez a témakör bemutatja, hogyan adhat meg és tehet közzé főkönyvinaplók-sorokat Microsoft Excelből. A megadott tranzakciók típusától függően használható különböző sablonokkal kapcsolatos információkat is tartalmaz."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -25,28 +25,28 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="publish-journal-lines-and-documents-from-excel"></a>Naplósorok és az Excel dokumentumok közzététele
+# <a name="publish-journal-lines-and-documents-from-excel"></a>Naplósorok és dokumentumok közzététele Excelből
 
-Ez a témakör bemutatja, hogyan adhatja meg, és tegye közzé a Microsoft Excel a főkönyvi naplók sorai. A használt, adta meg tranzakciók típusától függően különböző sablonokat kapcsolatos információkat tartalmaz.
+Ez a témakör bemutatja, hogyan adhat meg és tehet közzé főkönyvinaplók-sorokat Microsoft Excelből. A megadott tranzakciók típusától függően használható különböző sablonokkal kapcsolatos információkat is tartalmaz.
 
-A felhasználók megadása és pénzügyi naplókhoz, a Microsoft Excel sorok közzététele. Miután egy felhasználó létrehoz egy naplót, a **az Excel programban nyissa meg a sorok** gomb megjeleníti a rendelkezésre álló sablonok. Sablonok adott esetben azonban nem minden számlatípust kombinációját támogatja a naplóban támogatására tervezték. A következő táblázat a rendelkezésre álló sablonok és a számlatípusokat, amelyeket támogattak.
+A felhasználók Microsoft Excelből adhatnak meg és tehetnek közzé sorokat pénzügyi naplókhoz. Miután egy felhasználó létrehoz egy naplót, a rendelkezésre álló sablonokban megjelenik a **Sorok megnyitása az Excel programban** gomb. A sablonokat konkrét esetek támogatására tervezték; nem minden számlatípus kombinációja támogatott a naplóban . A következő táblázat bemutatja a rendelkezésre álló sablonokat és az általuk támogatott számlatípusokat.
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Template**             | **Támogatott típusok**                                                                                             | **Hogyan érhető el a sablon**                                                          |
-| Főkönyvi naplósorok     | Fiók: Főkönyvi, vevői, szállítói, Bank eltolás fiók: főkönyvi, vevői, szállítói, Bank vállalatközi támogatott.       | Általános napló                                                                         |
-| Számlajegyzék         | Számla: Szállítói ellenszámla: a vállalatközi főkönyvi nem támogatja.                                                    | Számlaregiszter AP                                                                     |
-| Számlanapló          | Fiókok: Szállítói ellenszámla: a vállalatközi főkönyvi rendszer támogatja.                                                      | Kötelezettségszámla-napló                                                                      |
+| **Sablon**             | **Támogatott számlatípusok**                                                                                             | **Hogyan érhető el a sablon**                                                          |
+| Főkönyvi naplósorok     | Számola: főkönyvi, vevői, szállítói, banki ellenszámla: főkönyvi, vevői, szállítói, banki vállalatközi támogatott.       | Általános napló                                                                         |
+| Számlajegyzék         | Számla: Szállítói ellenszámla: a főkönyvi vállalatközi nem támogatott.                                                    | Szállítói számlajegyzék                                                                     |
+| Számlanapló          | Számlák: Szállítói ellenszámla: a főkönyvi vállalatközi támogatott.                                                      | Kötelezettségszámla-napló                                                                      |
 | Szállítói számla           |                                                                                                                         | Szállítói számla                                                                          |
-| Vevői számlanapló | Számla: Vevő ellenszámla: a vállalatközi főkönyvi rendszer támogatja.                                                     | Általános napló                                                                         |
-| Szabadszöveges számla        |                                                                                                                         | A a **szabadszöveges számla** lap **az Excel programban megnyitott** (a Microsoft Office ikon). |
-| Tárgyi eszközök naplója     | Főkönyvi, banki, vevő vagy szállító eszköz. Vállalatközi nem támogatja.                                               | Tárgyieszköz-napló                                                                     |
-| Szállító kifizetési naplója   | Számla: Szállítói ellenszámla: vállalatközi főkönyvi, banki támogatott.                                                 | Szállító kifizetési naplója                                                                  |
-| Vevő kifizetési naplója | Számla: Vevő ellenszámla: vállalatközi főkönyvi, banki támogatott.                                               | Vevő kifizetési naplója                                                                |
-| Projektköltségnapló  | Fiók: Projekt főkönyvi, vevő, szállító eltolás fiók: projekt, főkönyvi, vevői, szállítói vállalatközi támogatott. | Főkönyvi napló kiadás (a projektvezetés és könyvelés)                       |
+| Vevői számlanapló | Számlák: Vevői ellenszámla: a főkönyvi vállalatközi támogatott.                                                     | Általános napló                                                                         |
+| Szabadszöveges számla        |                                                                                                                         | A **Szabadszöveges számla** oldalon kattintson a **Megnyitás az Excel programban** elemre (a Microsoft Office-ikonra). |
+| Tárgyi eszközök naplója     | Eszköz főkönyvbe, bankhoz, vevőhöz vagy szállítóhoz. A vállalatközi nem támogatott.                                               | Tárgyieszköz-napló                                                                     |
+| Szállító kifizetési naplója   | Számla: Szállítói ellenszámla: Főkönyvi, banki vállalatközi támogatott.                                                 | Szállító kifizetési naplója                                                                  |
+| Vevő kifizetési naplója | Számlák: Vevői ellenszámla: Főkönyvi, Banki vállalatközi támogatott.                                               | Vevő kifizetési naplója                                                                |
+| Projektköltségnapló  | Számola: projekt, főkönyvi, vevői, szállítói ellenszámla: projekt, főkönyvi, vevői, szállítói vállalatközi támogatott. | Főkönyvinapló-kiadás (a projektvezetés és könyvelés részben)                       |
 
-A sorok közzétételét követően azok validálását, győződjön meg arról, hogy azok megfelelnek a szabályokat, amelyek a pénzügyi naplók állíthatók be. Után a sorok közzétett, a felhasználók szerkeszthetik vagy a Microsoft Dynamics 365 műveletek feladása. 
+A sorok közzétételkor ellenőrzésre kerülnek annak érdekében, hogy biztosan megfeleljenek a pénzügyi naplókban beállított szabályoknak. A sorok közzététele után a felhasználók szerkeszthetik vagy feladhatják a bizonylatokat a Microsoft Dynamics 365 for Operationsből. 
 
-Pénzügyi dimenziók sablon hozzáadásához további módosításokra szükség. További információkért lásd: [dimenziók hozzáadása a Microsoft Excel-sablon](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). Dimenziók hozzáadódnak az entitás, miután érhetők el az Excel-tervezőben, és hozzá lehet adni a sablont.
+Pénzügyi dimenziók sablonhoz történő hozzáadásához további módosításokra szükség. További információkért lásd: [Dimenziók hozzáadása Microsoft Excel-sablonhoz](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). Dimenziók az entitáshoz való hozzáadása után érhetővé válnak az Excel-tervezőben és hozzá lehet adni őket a sablonhoz.
 
 
 

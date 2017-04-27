@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-forecasts-and-budgets"></a>Projekt költségvetések és előrejelzések
 
+[!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 műveletek igazgatását és ellenőrzését, a projektek két lehetőséget biztosít: Projekt előrejelzések és projekt költségvetések. 
+
+
+A Microsoft Dynamics 365 for Operations két lehetőséget nyújt a projektek intézésére és irányítására: projekt előrejelzések és a projekt költségevetések. 
 
 Használja a projekt-előrejelzést, amennyiben a szervezetnek van működési terve, és ha az a meghatározott tranzakciókból származtatott bevételekre és költségekre fókuszál. Használja a projekt költségvetés-tervezéshez, ha a szervezet inkább a pénzügyi összegekre összpontosít. 
 
@@ -45,9 +48,9 @@ Minden metódus előnyökkel jár. A következőket vegye figyelembe mielőtt ki
 | **Tranzakció változók ** | Az előrejelzési tranzakciók megadása után, minden létező attribútumot felhasználhat az aktuális tranzakcióhoz. Ez lehetővé teszi a részletgazdagabb előrejelzést. Például megadhatja a létszám, a dolgozók, a cikkek vagy a sortulajdonságok adatait.         | A költségvetés részleteinek megadásakor csak az összegeket, a kategóriákat és a tevékenységeket használhatja.                                                                                    |
 | **Biztonság **              | Az előrejelzés az előrejelzés képernyőn megadott tranzakciókon alapul, és magába foglalja a folyamaton kívüli vezérlő mechanizmust. Bármelyik dolgozó, aki az előrejelzés képernyőjéhez hozzáféréssel rendelkezik jóváhagyás nélkül módosíthatja az adatokat.                                        | A költségvetés munkafolyamat rendszert használ, amely lehetővé teszi a változáskezelést, és a felülvizsgálat előzményeinek megtartását.                                                       |
 | **Bejegyzéstípus **           | Az előrejelzési tranzakció bejegyzések az egységek számain, és az önköltségi- és eladási egységárakon alapulnak.                                                                                                                                                       | A költségvetés részletei azokon az összegeken alapulnak, amelyek a költségek és bevételek között vannak megosztva.                                                                                        |
-| **Forecast models**       | Mivel minden előrejelzést egy modellel kell társítani, több előrejelzési modellt is létrehozhat, és részmodelleket is megadhat.                                                                                                                               | A projekt-költségvetés korlátozza a költségvetés-tervezéshez használt előrejelzési modelleket. A kevesebb előrejelzési modell segíthet növelni az előrejelzések összefüggéseit.                           |
+| **Előrejelzési modellek**       | Mivel minden előrejelzést egy modellel kell társítani, több előrejelzési modellt is létrehozhat, és részmodelleket is megadhat.                                                                                                                               | A projekt-költségvetés korlátozza a költségvetés-tervezéshez használt előrejelzési modelleket. A kevesebb előrejelzési modell segíthet növelni az előrejelzések összefüggéseit.                           |
 | **Költségtúllépés **         | Csak engedélyezheti vagy letilthatja a tranzakciók engedélyezését, amelyek költségtúllépés okoznak.                                                                                                                                                                | A projekt költségvetés további beállítások választását tartalmazza a felhasználók számára. Engedélyezheti a figyelmeztetéseket és a kerettúllépéseket.                                                                   |
-| **Control**               | Az előrejelzés vezérlő az előrejelzés csökkentés használatával történik. A tényleges összegek az előrejelzési tranzakció egyenlegéből vonhatóak ki bármilyen könyvvizsgálati ellenőrzés nélkül. Ez megnehezítheti azt, hogy nyomon kövessék, hogy hol történt a tényleges tranzakciók.                   | A projekt költségvetés-ellenőrzésben a tényleges összegek a fennmaradó költségvetési összegekből vonhatóak ki. Ez lehetővé teszi a világosabb könyvvizsgálati ellenőrzést.                                   |
+| **Vezérlő**               | Az előrejelzés vezérlő az előrejelzés csökkentés használatával történik. A tényleges összegek az előrejelzési tranzakció egyenlegéből vonhatóak ki bármilyen könyvvizsgálati ellenőrzés nélkül. Ez megnehezítheti azt, hogy nyomon kövessék, hogy hol történt a tényleges tranzakciók.                   | A projekt költségvetés-ellenőrzésben a tényleges összegek a fennmaradó költségvetési összegekből vonhatóak ki. Ez lehetővé teszi a világosabb könyvvizsgálati ellenőrzést.                                   |
 
 ## <a name="project-forecasts"></a>Projekt előrejelzései
 Projekt-előrejelzések használata esetén minden tranzakciótípushoz előrejelzési tranzakciókat rögzíthetnek előrejelzési formában. Az aktuális tranzakciói során minden rendelkezésre álló attribútum felhasználható az előrejelzési tranzakcióhoz—például a sor nyereségessége, a sor attribútumok, a dolgozók vagy a leírások. Megtervezheti, hogy mennyi idő után készít számlát a vevőnek, miután hozzájárult az összeggel. 
@@ -62,7 +65,7 @@ Előrejelzési modellek az ellenőrzési mechanizmusok projektekhez előrejelzé
 
 A projekt előrejelzések felülvizsgálhatóak, másolhatóak, törölhetőek vagy átvihetőek a költségvetés főkönyvébe. Azonban nincs folyamatvezérlés. Bármely olyan dolgozó , amely az előrejelzési laphoz engedéllyel rendelkezik ellenőrzés nélkül felülvizsgálatot végezhet.
 
--   ** Felülvizsgálata ** – módosíthatja az ugyanilyen alakban, ahol az eredeti tételeket történtek az előrejelzési tranzakciót.
+-   **Vizsgálja felül **– Felülvizsgálhatja az előrejelzési tranzakciót azokon a lapokon, ahol az eredeti tételek történtek.
 -   **Másolás vagy törlés** – Miután másolta az előrejelzési tranzakciókat, másolja az egyik előrejelzési modell tranzakciójának sorait egy másik előrejelzési modellbe. A költségvetések törlésekor egy előrejelzési modell előrejelzési tranzakcióit törli. A másolni vagy törölni kívánt előrejelzési tranzakcióik korlátozása érdekében, jelöljön be konkrét tranzakciótípusokat és dátumokat. Ez lehetővé teszi, hogy csak az előrejelzés meghatározott részeit másolja vagy törölje.
 -   **Átvitel** – Miután átvitte a projekt előrejelzést a költségvetés főkönyvbe, átviszi előrejelzési modell előrejelzési tranzakcióit a költségvetési főkönyvbe. Bármely olyan tranzakciót felülírhat, amelyet korábban átvitt a költségvetési főkönyvbe, amelybe a projekt előrejelzést átvitte.
 
@@ -78,6 +81,8 @@ A projektköltségvetéseket automatikusan két előrejelzési modellel társít
 ## <a name="forecast-models"></a>Előrejelzési modellek
 Az előrejelzési modellek egyrétegű hierarchiával rendelkeznek. Ez azt jelenti, hogy egy projekt előrejelzést egy előrejelzési modellel kell társítani.
 
-Használatakor a projekt-előrejelzési modellek mint részmodelleket azonosíthatók. Ezután létrehozhat osztálya, időszak, vagy régió előrejelzések. Például, létrehozhat előrejelzési modellt egy évre vonatkozóan, és ezután részmodelleket készíthet az északkeleti, délkeleti, északnyugati és délnyugati régiók előrejelzéseiről, amelyet az adott területi vezető nyújt be. A rendelkezésre álló jelentések különböző beállítások kiválasztásával információk teljes előrejelzés vagy almodell tekintheti meg.
+A projekt-előrejelzések használatakor a modellek mint részmodellek azonosíthatók. Régió, időszak vagy osztály alapján készíthet előrejelzést. Például, létrehozhat előrejelzési modellt egy évre vonatkozóan, és ezután részmodelleket készíthet az északkeleti, délkeleti, északnyugati és délnyugati régiók előrejelzéseiről, amelyet az adott területi vezető nyújt be. A rendelkezésre álló jelentésekben található különböző beállítások segítségével megtekintheti az összesített előrejelzés vagy a részmodell szerinti információkat.
+
+
 
 

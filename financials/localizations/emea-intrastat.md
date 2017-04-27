@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="intrastat"></a>Intrastat
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket.
 
 Az Intrastat az Európai Unió (EU) országai/régiói közötti kereskedelemről adatokat gyűjtő és statisztikákat készítő rendszer. Intrastat-jelentés szükséges minden olyan esetben, amikor egy termék egy másik EU ország/régió határát átlépi. Az Intrastat-jelentés több országban/régióban szolgáltatásokra is vonatkozik. Az Intrastat-jelentésben kötelező és választható elemek gyűjthetők. A következő elemek kötelezőek: az információszolgáltatásért felelős fél adószáma, a referencia-időszak, a forgalom iránya (beérkezés vagy feladás), a nyolc számjegyű vámtarifakód, a partner tagállam (a partner tagállam a bizományosi ország érkezéskor és a partner tagállam a rendeltetési tagállam a feladáskor), a termékek értéke, a termékek mennyisége (nettó súly és kiegészítő egység) és az ügylet jellege. Országok/régiók opcionális elemeket is gyűjthetnek különböző feltételek mellett. Néhány választható elem: származási ország/régió, a szállítási feltételek, szállítási mód, CN8-nál részletesebb vámtarifaszám, a származási régió kiszállításkor és a rendeltetési régió beérkezéskor, a statisztikai eljárás, a statisztikai érték, az áruk leírása, valamint a be vagy kirakodó kikötő/reptér.
@@ -34,24 +37,24 @@ Az Intrastat az Európai Unió (EU) országai/régiói közötti kereskedelemrő
 ## <a name="overview-of-the-intrastat-reporting-process"></a>Az Intrastat jelentési folyamat áttekintése
 Az alábbi szakaszok leírják az Intrastat-jelentéshez használt teljes információáramlást.
 
-### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Adja meg a tranzakció szegélyét egy másik EU-országból/régióból is magába foglaló
+### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Egy másik EU ország/régió határát átlépő tranzakció megindítása
 
-Vevői számla, szabadszöveges számla, beszerzési számla, projekt számla, vevői szállítólevél, szállítói termékbevételezés vagy átmozgatási rendelés csak akkor kerül át az Intrastat-naplóba, ha a célország/régió típusa (elküldéskor) vagy a bizományosi ország típusa (érkezéskor) **EU**. Ez a funkció műveletek verzió 1611 Microsoft Dynamics 365 meghosszabbították, és lehetővé teszi egy Közösségen belüli tranzakciót lading címeinek megadását. Ha egy lading cím eltér a szállító üzleti címmel (vagy visszárurendelés üzleti ügyfélcím) Ez az információ az Intrastat-jelentésekben működik. Értékesítési rendelés, szabadszöveges számla, beszerzési rendelés, szállítói számla, projekt számla vagy átmozgatási rendelés létrehozásakor bizonyos külkereskedelemhez kapcsolódó mezők alapértelmezett értékkel rendelkeznek a dokumentum fejlécében vagy a sorban. Az alapértelmezett tranzakciókód a **Külkereskedelmi paraméterek** oldal megfelelő mezőjéből származik. Az alapértelmezett vámtarifaszám, a származási ország/régió és a származási állam/tartomány a cikkről származik. Az alapértelmezett értékeket módosíthatja, és más külföldi kereskedelemmel kapcsolatos adatokat is megadhat: a statisztikai eljárást, a szállítási módot és a kikötőt.
+Vevői számla, szabadszöveges számla, beszerzési számla, projekt számla, vevői szállítólevél, szállítói termékbevételezés vagy átmozgatási rendelés csak akkor kerül át az Intrastat-naplóba, ha a célország/régió típusa (elküldéskor) vagy a bizományosi ország típusa (érkezéskor) **EU**. Ez a funkció a Microsoft Dynamics 365 for Operations 1611-es verziójában kiterjesztésre került, és lehetővé teszi egy közösségen belüli tranzakciónál berakodási címek megadását. Ha egy berakodási cím eltér a szállító céges címétől (vagy visszárurendelés esetén vevő üzleti címétől), az Intrastat-jelentések figyelembe veszik ezt az információt. Értékesítési rendelés, szabadszöveges számla, beszerzési rendelés, szállítói számla, projekt számla vagy átmozgatási rendelés létrehozásakor bizonyos külkereskedelemhez kapcsolódó mezők alapértelmezett értékkel rendelkeznek a dokumentum fejlécében vagy a sorban. Az alapértelmezett tranzakciókód a **Külkereskedelmi paraméterek** oldal megfelelő mezőjéből származik. Az alapértelmezett vámtarifaszám, a származási ország/régió és a származási állam/tartomány a cikkről származik. Az alapértelmezett értékeket módosíthatja, és más külföldi kereskedelemmel kapcsolatos adatokat is megadhat: a statisztikai eljárást, a szállítási módot és a kikötőt.
 
-### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. az Intrastat-napló létrehozásához használt kereskedelmi között az EU-országokkal/régiókkal kapcsolatos információk
+### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Az Intrastat-jelentés az EU országok/régiók közötti, kereskedelemmel kapcsolatos információ létrehozására szolgál
 
 Statisztikai okokból az EU országok/régiók közötti, kereskedelemmel kapcsolatos információkat minden hónapban létre kell hozni. Tranzakciók átvihetők a szabadszöveges számlából, a vevői számlából, vevői szállítólevélből, szállítói számlából, szállítói szállítólevélből, projektszámlából vagy átmozgatási rendelésből, a **Külkereskedelmi paraméterek** oldalon felállított átviteli feltételek szerint. Másik lehetőségként a tranzakciók manuálisan is bevihetők. Ha frissítés szükséges, az átvitt tranzakciók manuálisan frissíthetők az Intrastat-naplóban. Bizonyos feltételek fennállása esetén, amelyek a **Az Intrastat tömörítése** lapon találhatóak, az Intrastat-naplóban található tranzakciók tömöríthetők. Egyes országokban/régiókban kis tranzakciós küszöb alkalmazható. Ezután a meghatározott árukód alatti küszöbérték alatt lévő tranzakciók jelentése lehetővé válik. Az árukódok a megfelelő Intrastat-napló soraiban frissíthetők a **Minimum limit** beállítás alapján, amely a **Külkereskedelmi paraméterek** lapon található. Ezek a tranzakciók tömöríthetőek is, **Az Intrastat tömörítése** beállítás alapján. A tranzakció befejezettsége ellenőrizhető az Intrastat-naplóban, a **Beállításának ellenőrzése** beállításnál a **Külkereskedelmi paraméterek** lapon. A megfelelő mezők adatai a teljesség érdekében ellenőrizhetők: ország/régió, állam vagy tartomány, súly, vámtarifaszám, tranzakciókód, kiegészítő egység, port, eredet, szállítási feltételek, szállítási mód és adómentességi szám. A befejezetlen tranzakciók érvénytelenként lesznek megjelölve.
 
-### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. az EU-országok/régiók közötti kereskedelem ismertető jelentés az Intrastat-napló használja
+### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Az EU országok/régiók közötti kereskedelemmel kapcsolatos információ jelentésére az Intrastat-jelentés használatos.
 
-Statisztikai okokból az EU országok/régiók közötti kereskedelemmel kapcsolatos információk jelentése minden hónapban szükséges. Az Intrastat-jelentés kinyomtatható a **Jelentésformátum-hozzárendelés** beállítások alapján, amelyek a **Külkereskedelmi paraméterek** lapon találhatóak. Elektronikus fájl is létrehozható a **Fájlformátum-hozzárendelés** beállítások alapján, amelyek a **Külkereskedelmi paraméterek** lapon találhatóak. Intrastat-jelentésekre, beleértve a szükséges előfeltételek további információt talál az Intrastat jelentési feladat felvételek:
+Statisztikai okokból az EU országok/régiók közötti kereskedelemmel kapcsolatos információk jelentése minden hónapban szükséges. Az Intrastat-jelentés kinyomtatható a **Jelentésformátum-hozzárendelés** beállítások alapján, amelyek a **Külkereskedelmi paraméterek** lapon találhatóak. Elektronikus fájl is létrehozható a **Fájlformátum-hozzárendelés** beállítások alapján, amelyek a **Külkereskedelmi paraméterek** lapon találhatóak. Az Intrastat-jelentésekkel kapcsolatos további információért lásd az Intrastat-jelentésekkel kapcsolatos feladatrögzítéseket, ahol a szükséges előfeltételek is megtalálhatók:
 
--   Az EU Intrastat nyilatkozat készítése
--   Az Intrastat tranzakciók átvitele
--   Egy Közösségen belüli tranzakciót lading cím megadása.
+-   Uniós Intrastat-nyilatkozat létrehozása,
+-   Tranzakciók átvitele az Intrastatba,
+-   Berakodási cím megadása egy Közösségen belüli tranzakcióhoz.
 
 ## <a name="prerequisites"></a>Előfeltételek
-Az alábbi táblázat az előfeltételek az Intrastat jelentésekhez.
+Az alábbi táblázatlista mutatja az Intrastat-jelentés előfeltételeit.
 
 <table>
 <colgroup>
@@ -235,5 +238,7 @@ Használja a **Külkereskedelmi paraméterek** lapot az alábbi táblázatban ta
 </table>
 
  
+
+
 
 

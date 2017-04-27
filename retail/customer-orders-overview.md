@@ -1,6 +1,6 @@
 ---
-title: "Vevői rendelések áttekintése"
-description: "Ez a témakör a kiskereskedelmi Modern POS (MPOS) vevői rendelések adatait. Vevői rendelések speciális rendelések is ismertek. A témakör a kapcsolódó paraméterek és tranzakció egy vitafórum."
+title: "Vevői rendelések – áttekintés"
+description: "Ez a témakör a vevői rendelések a Retail Modern POS (MPOS) modulban történő kezelését ismerteti. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -25,75 +25,80 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="customer-orders-overview"></a>Vevői rendelések áttekintése
+# <a name="customer-orders-overview"></a>Vevői rendelések – áttekintés
 
-Ez a témakör a kiskereskedelmi Modern POS (MPOS) vevői rendelések adatait. Vevői rendelések speciális rendelések is ismertek. A témakör a kapcsolódó paraméterek és tranzakció egy vitafórum.
+[!include[banner](includes/banner.md)]
 
-Az omni-csatorna kiskereskedelmi világ számos kiskereskedő a vevő beállítást adja meg, vagy speciális rendelések különböző termék- és teljesítési követelményeknek. Íme néhány tipikus forgatókönyvet:
 
--   A vevő egy adott napon egy adott címre kiszállítandó termékek kíván.
--   Emelje fel a tárolóból vagy a hely, amely eltér az üzlet vagy hely, ahol az ügyfél vásárolt termékek termékek egy ügyfél szeretne.
--   Egy ügyfél által kért valaki merül fel, amely a vevő által vásárolt termékek.
+Ez a témakör a vevői rendelések a Retail Modern POS (MPOS) modulban történő kezelését ismerteti. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
 
-Kiskereskedők a minimálisra csökkentése érdekében, amelyek tőzsdei kimaradások egyébként okozhatnak, mert az árut szállítani, vagy különböző időben vagy helyen felvett elveszett értékesítési megrendelések is használható.
+A sokcsatornás kiskereskedelmi világ számos kiskereskedő biztosít lehetőséget vevői rendelésekre vagy speciális rendelésekre, hogy így elégítsen ki termékkel és teljesítéssel kapcsolatos különböző igényeket. Íme néhány tipikus forgatókönyv:
+
+-   Egy vevő azt szeretné, ha a termékeket egy adott napon egy adott címre szállítanák ki.
+-   Egy vevő egy olyan üzetben vagy helyen szeretné átvenni a termékeket, amely eltér attól az üzlettől vagy helytől, ahol az ügyfél megvásárolta az adott termékeket.
+-   Egy vevő szeretné, ha valaki más venné át a vevő által vásárolt termékeket.
+
+A kiskereskedők a készlethiány által okozott elmaradt értékesítések minimálisra csökkentése érdekében is használják a vevői rendeléseket, mivel így az áru más időben vagy helyen is kiszállítható vagy átvehető.
 
 ## <a name="set-up-customer-orders"></a>Vevői rendelések beállítása
-Az alábbiakban néhány, a beállított paraméterek az **a kiskereskedelmi paraméterek** oldalra húzva definiálhatja, hogyan teljesülnek a vevői rendelések:
+Íme néhány, a **Kiskereskedelmi paraméterek** oldalon beállítható paraméter, amely megszabja, hogyan teljesülnek a vevői rendelések:
 
--   **Letét százalékban alapértelmezett** – adja meg az összeget, amelyet a vevőnek ki kell fizetnie letétként, mielőtt megrendelés lehet megerősíteni. Az alapértelmezett betét összegét számítja ki a rendelés értékének százalékaként. Jogosultságok, függően összeget használatával felülbírálhatók, hogy lehet a Kiskereskedelmi munkatárs **Letét felülbírálása**.
--   **Érvénytelenítési díj százalékos értéke** – Ha a díjat kell alkalmazni, a vevői rendelés visszavonásakor adja meg, hogy a költség összegét.
--   **Érvénytelenítési díj kódja** – Ha díjat alkalmazzák a vevői rendelés visszavonásakor, hogy ingyenesen jelennek meg a költségkód szerint a Microsoft Dynamics AX értékesítési rendelésen. Ez a paraméter segítségével határozza meg a lemondási díj kódját.
--   **Szállítási költség kódjának** – kiskereskedők egy külön díjat az áru szállítása a vevő felszámíthat. A Dynamics AX értékesítési rendelési megjelennek a költségkód szerint a szállítási költség összegét. Használja ezt a paramétert, a szállítási költség kódja hozzárendelése a vevői rendelés szállítási költségeket.
--   **Szállítási költségek visszatérítése** – adja meg, hogy egy vevői rendeléshez kapcsolódó szállítási költségek visszatéríthető.
--   **Maximális összeg jóváhagyása nélkül** – Ha a szállítási költségek visszatéríthető, adja meg a maximális szállítási költség-visszatérítési visszárurendelések keresztül. Ha túllépi ezt az összeget, kezelő felülbírálása szükséges annak érdekében, hogy folytassa a visszatérítés. Az alábbi esetekben befogadásához szállítási költségek visszatérítése túlléphetik az eredetileg kifizetett összeg:
-    -   Költségek az értékesítési rendelés fejlécében, valamint a szinten érvényesek, ha bizonyos mennyiség egy termékkör vissza, a maximális visszatérítés a szállítási költségeket a termékek engedélyezett, és a mennyiség nem határozható meg, amely minden kiskereskedelmi vevők módon.
-    -   Minden példányának szállítási felmerülő szállítási költségek. Ha a vevő termékek többször vissza, és a kiskereskedő a házirend határozza meg, hogy a kiskereskedő visszatérési szállítási költségek költségét viseli, a visszatérési szállítási költségek több, mint a tényleges szállítási költségek lesz.
+-   **Letét alapértelmezett százalékos értéke** – annak az összegnek a megadása, amelyet a vevőnek ki kell fizetnie letétként, mielőtt a megrendelést meg lehet erősíteni. Az alapértelmezett letét kiszámítása a rendelés százalékának függvényeként történik. Jogosultságoktól függően előfordulhat, hogy egy bolti dolgozó felülbírálhatja az összeget a **Letét felülbírálása** funkcióval.
+-   **Érvénytelenítési díj százalékos értéke** – ha vevői rendelés visszavonásakor díjfizetés szükséges, úgy adja meg ezen díj összegét.
+-   **Érvénytelenítési díj kódja** – ha vevői rendelés visszavonásakor díjfizetés szükséges, ezt a díjat egy díjkód tükrözi az értékesítési rendelésben a Microsoft Dynamics AX rendszerben. E paraméter segítségével határozza meg a lemondási díj kódját.
+-   **Szállítási költség kódjának** – a kiskereskedők külön díjat számolhatnak fel az áru szállításáért a vevőnek. E szállítási költség összege költségkód alatt megjelenik az értékesítési rendelésen a Dynamics AX-ben. Használja ezt a paramétert a szállítási költségkód hozzárendeléséhez a szállítási költségekhez a vevői rendelésen.
+-   **Szállítási költségek visszatérítése** – adja meg, hogy a vevői rendeléshez kapcsolódó szállítási költségek visszatéríthetők-e.
+-   **Maximális összeg jóváhagyás nélkül** – ha a szállítási költségek visszatéríthetők, adja meg a visszárurendeléseken keresztül biztosítható maximális szállításiköltség-visszatérítés összegét. Ha ezt az összeget túllépik, a vezető részéről felülbírálás szükséges a visszatérítés folytatásához. Az alábbi esetek kezeléséhez a szállítási költségek visszatérítése túllépheti az eredetileg kifizetett összeget:
+    -   A költségek alkalmazására az értékesítési rendelés fejlécének szintjén kerül sor, és amikor egy termékkör bizonyos mennyiségét visszaküldik, a szállítási költségek a termékekhez engedélyezett maximális visszatérítése és a mennyiség nem határozható meg úgy, hogy az minden kiskereskedelmi vevő számára megfelelő legyen.
+    -   Minden szállítási példánynál felmerülnek szállítási költségek. Ha egy vevő többször küld vissza termékeket, és a kiskereskedő irányelve kimondja, hogy a visszatérítési szállítási költségek költségét a kiskereskedő viseli, a visszatérítési szállítási költségek összege magasabb lesz a tényleges szállítási költségeknél.
 
-## <a name="transaction-flow-for-customer-orders"></a>Vevői rendelések tranzakciós forgalom
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Modern a Retail POS rendszerben vevői rendelés létrehozása
+## <a name="transaction-flow-for-customer-orders"></a>Tranzakció folyamata vevői rendeléseknél
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Vevői rendelés létrehozása Retail Modern POS-ben
 
 1.  Vevő hozzáadása a tranzakcióhoz
-2.  Termékek hozzáadása a kosárhoz.
-3.  Kattintson a **létrehozása vevői rendelés**, majd válassza ki a rendelés típusát. A rendelés típusa lehet **vevői rendelés** vagy **ajánlat**.
-4.  Kattintson a **a kijelölt hajó** vagy **összes hajó** a termékek címre szállítja a vevői számla, adja meg a kért szállítási dátum, és adja meg a szállítási költségek.
-5.  Kattintson a **felvétele a kijelölt** vagy **felvétel minden** kell megadni a jelenlegi vagy egy másik tárolóba egy adott napon termékek kiválasztásához.
-6.  Gyűjtsük össze a letét összege, ha betét szükség.
+2.  Adjon hozzá termékeket a kosárhoz.
+3.  Kattintson a **Vevői rendelés létrehozása** elemre, majd válassza ki a rendelés típusát. A rendelés típusa lehet **Vevői rendelés** vagy **Ajánlat**.
+4.  Kattintson a **Kijelölt szállítása** vagy az **Összes szállítása** elemre a termékek a vevői fiókban szereplő egyik címre történő kiszállításához, adja meg a kért szállítási dátumot, és adja meg a szállítási költségeket.
+5.  Kattintson a **Kijelölt felvétele** vagy az **Összes felvétele** elemre a jelenlegi vagy egy másik boltból adott napon átvételre kerülő termékek kiválasztásához.
+6.  Szedje be a letét összegét, ha letétre szükség van.
 
-### <a name="edit-an-existing-customer-order"></a>Egy meglévő vevői rendelés szerkesztése
+### <a name="edit-an-existing-customer-order"></a>Meglévő vevői rendelés szerkesztése
 
-1.  A kezdőlapon kattintson a **található egy rendelés**.
-2.  Keresse meg és jelölje ki a szerkesztendő rendelést. A lap alján kattintson a **Szerkesztés**.
+1.  A kezdőlapon kattintson a **Rendelés keresése** elemre.
+2.  Keresse meg és válassza ki a szerkesztendő rendelést. A lap alján kattintson a **Szerkesztés** elemre.
 
-### <a name="pick-up-an-order"></a>Egy rendelés felvétele
+### <a name="pick-up-an-order"></a>Rendelés felvétele
 
-1.  A kezdőlapon kattintson a **található egy rendelés**.
-2.  Válassza ki azt a rendelést, hogy emelje fel. A lap alján kattintson a **válogatási és csomagolási**.
-3.  Kattintson a **vegyen fel**.
+1.  A kezdőlapon kattintson a **Rendelés keresése** elemre.
+2.  Válassza ki a felveendő rendelést. A lap alján kattintson a **Kitárolás és csomagolás** elemre.
+3.  Kattintson a **Felvétel** elemre.
 
-### <a name="cancel-an-order"></a>Megrendelés visszavonása
+### <a name="cancel-an-order"></a>Rendelés visszavonása
 
-1.  A kezdőlapon kattintson a **található egy rendelés**.
-2.  Válassza ki a rendelés visszavonása. A lap alján kattintson a **Mégse**.
+1.  A kezdőlapon kattintson a **Rendelés keresése** elemre.
+2.  Válassza ki a visszavonni kívánt megrendelést. A lap alján kattintson az **Érvénytelenítés** elemre.
 
 #### <a name="create-a-return-order"></a>Visszárurendelés létrehozása
 
-1.  A kezdőlapon kattintson a **található egy rendelés**.
-2.  Válassza ki a vissza, válassza a rendeléshez tartozó számlát, és válassza ki a termék sort az áru vissza.
-3.  A lap alján kattintson a **visszárurendelés**.
+1.  A kezdőlapon kattintson a **Rendelés keresése** elemre.
+2.  Válassza ki a visszaküldeni kívánt rendelést, válassza a rendeléshez tartozó számlát, és válassza ki a visszaküldendő áruhoz tartozó terméksort .
+3.  A lap alján kattintson a **Visszárurendelés** elemre.
 
-## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Vevői rendelések aszinkron tranzakciós forgalom
-Vevői rendelések hozhatók létre pontról történő értékesítés (POS) ügyfél vagy szinkron vagy aszinkron üzemmódban.
+## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Tranzakció aszinkron folyamata vevői rendeléseknél
+Vevői rendelések pénztári (POS) kliensből szinkron vagy aszinkron üzemmódban hozhatók létre.
 
-### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Aszinkron módban létrejön a vevői rendelések engedélyezése
+### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Vevői rendelések aszinkron módban történő létrehozásának engedélyezése
 
-1.  A Dynamics AX rendszerben kattintson a **kereskedelmi és kereskedelmi**&gt;**csatorna beállításait**&gt;**POS telepítési**&gt;**POS profil**&gt;**Funkcióprofilok**.
-2.  A a **általános** gyorslapon állítsa a **vevői rendelés létrehozása aszinkron módban** be **Igen**.
+1.  A Dynamics AX-ben kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztárbeállítás** &gt; **Pénztárprofil** &gt; **Funkcióprofilok** elemre.
+2.  Az **Általános** gyorslapon állítsa a **Vevői rendelés létrehozása aszinkron módban** lehetőséget **Igen** értékre.
 
-Ha a **vevői rendelés létrehozása aszinkron módban** beállítás **Igen**, a vevői rendelések létrehozása mindig aszinkron módban, akkor is, ha a Retail Transaction Service (RTS) érhető el. Ha ebben a beállításban megadott **nem**, vevői rendelések mindig RTS segítségével készülnek szinkron módban. Vevői rendelések létrehozásakor aszinkron módban ezeket lekért és lekéréses (P) feladatok által a Dynamics AX illeszteni. A megfelelő eladási rendeléseket készít a Dynamics AX Ha **rendelések szinkronizálása** kézzel vagy egy kötegelt feldolgozás futtatásakor.
+Ha a **Vevői rendelés létrehozása aszinkron módban** beállítása **Igen**, a vevői rendelések mindig aszinkron módban jönnek létre, akkor is, ha a Retail Transaction Service (RTS) elérhető. Ha ennél a beállításnál **Nem** értéket ad meg, a vevői rendelések mindig szinkron módban jönnek létre az RTS segítségével. Vevői rendelések aszinkron módban történő létrehozásakor ezeket a rendszer lekéri és lekérési (P) feladatként beilleszti a Dynamics AX-be. A megfelelő vevői rendelések a **Rendelések szinkronizálása** manuális futtatásakor vagy kötegelt feldolgozás révén jönnek létre a Dynamics AX-ben.
 
 <a name="see-also"></a>Lásd még
 --------
 
 [Hibrid vevői rendelések](hybrid-customer-orders.md)
+
+
 
 

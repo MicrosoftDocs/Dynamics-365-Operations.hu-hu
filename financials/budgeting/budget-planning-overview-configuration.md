@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-overview"></a>A költségvetés-tervezés áttekintése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolgál a költségvetés-tervezés beállítási és a költségvetés-tervezési folyamatok létrehozási lehetőségeiről.
 
 <a name="overview-of-budget-planning"></a>A költségvetés-tervezés áttekintése
@@ -34,7 +37,7 @@ Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolg
 
 A költségvetés-tervezés az a folyamat, amely során előkészíti a szervezet által a jövőben alkalmazandó költségvetést. Egy szervezet konfigurálhatja a költségvetés-tervezését, és beállíthat olyan költségvetés-tervezési folyamatokat, amelyek célja a szervezet irányelveiknek, eljárás-rendjeiknek és a költségvetési előkészítés követelményeinek való megfelelés. 
 
-Ha megismeri fogalmainak és terminológiájának műveletekhez használt Microsoft Dynamics 365, meg, hogy a szervezet költségvetés-tervezés végrehajtása egyszerűbb lesz.
+Ha megérti a Microsoft Dynamics 365 for Operations rendszerben használt fogalmakat és terminológiát, könnyebben valósíthatja meg a szervezet költségvetés-tervezését.
 
 ### <a name="key-terms"></a>Kulcsfogalmak
 
@@ -55,7 +58,7 @@ Az Emberi erőforrások modullal a következők végezhetők el:
 -   Automatikusan elküldheti ellenőrzésre és jóváhagyásra a költségvetési terveket a munkalapokkal, az indoklásokkal és a mellékletekkel együtt.
 -   Egyesíthet több költségvetési tervet a szervezet alacsonyabb szintjéről egy magasabb szintű költségvetési tervbe. A szervezet egy magasabb szintű egy költségvetési terv kialakítása, továbbá az alacsonyabb szintű a szervezet a költségvetési felosztáshoz.
 
-Költségvetés-tervezés más Microsoft Dynamics 365 műveleti modulok integrálva van. Ezért az előző költségvetések, a tényleges kiadások, a tárgyi eszközök és az emberi erőforrások adatait is felhasználhatja. A költségvetés-tervezés integrálva van a Microsoft Excel és a Microsoft Word programokban is, így ezen eszközök segítségét is felhasználhatja a költségvetés-tervezési adatokkal végzett munkához. Például egy költségvetés-kezelő exportálhatja egy részleg költségvetési kérelmét az egyik költségvetési tervváltozatból egy Excel munkalapra. Az adatok elemezhetők, frissíthetők, felvázolhatók a munkalapon, majd újra közzétehetők a költségvetési terv soraiban.
+A költségvetés-tervezés integrálva van más Microsoft Dynamics 365 for Operations modulokba is. Ezért az előző költségvetések, a tényleges kiadások, a tárgyi eszközök és az emberi erőforrások adatait is felhasználhatja. A költségvetés-tervezés integrálva van a Microsoft Excel és a Microsoft Word programokban is, így ezen eszközök segítségét is felhasználhatja a költségvetés-tervezési adatokkal végzett munkához. Például egy költségvetés-kezelő exportálhatja egy részleg költségvetési kérelmét az egyik költségvetési tervváltozatból egy Excel munkalapra. Az adatok elemezhetők, frissíthetők, felvázolhatók a munkalapon, majd újra közzétehetők a költségvetési terv soraiban.
 
 ## <a name="configuring-budget-planning"></a>A költségvetés-tervezés konfigurálása.
 A **Költségvetés-tervezési konfiguráció** lap tartalmazza a legtöbb beállítást a költségvetés-tervezés beállításához. Az alábbiakban olvasható néhány kulcsfontosságú tényezőt ajánlott figyelembe venni a költségvetés-tervezés konfigurálásakor. A konfiguráció befejezése után a költségvetés-tervezési folyamat beállítása következik.
@@ -64,11 +67,11 @@ A **Költségvetés-tervezési konfiguráció** lap tartalmazza a legtöbb beál
 
 Nem kötelező, de ajánlott először létrehozni egy sablont, amely tartalmazza a szervezet eljárását a költségvetés kialakítására. A sablon létrehozásához valamennyi módszert használhatja. A következő ábrán egy általános példát láthat, ahol a szervezet egyes szintjeinek különböző költségvetés-tervezési munkafolyamatai jönnek létre. A szakaszok minden munkafolyamatban előre definiáltak, és minden szakaszhoz egyedi esetet rendelnek a költségvetési adatok fenntartása céljából. Az adatok egyik szakaszról a másikra történő átvitele különböző eljárásokkal történik. Például az összegek lefoglalhatók, vagy összesíthetők a különböző fiókokra, jóváhagyásokra vagy egyéb ellenőrzésekre. Ezen az ábrán dőlttel jeleztünk egy olyan esetet, ami nem szerkeszthető ebben a szakaszban, illetve az előzményadatokat vagy a korábbi szakaszokban elfogadott adatokat, amelyeket emiatt nem szabad módosítani. 
 
-[![Költségvetési tervezési általános séma](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Költségvetés-tervezési általános sablon](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
-A következő példában a vállalati központ becslést ad az eredeti költségvetés kezdeti összegeinek és értékesítési részlegek eljuttatja azokat. Az értékesítési részleg ezután megbecsüli és elküldi az előrejelzését a központnak, ahol a költségvetés-kezelő összesíti és módosítja az előrejelzést. Végül a költségvetés-kezelő elküldi a módosított költségvetési összegeket a pénzügyi igazgatónak, hogy felülvizsgálja, helyesbítse és jóváhagyja azokat. 
+A következő ábrán a vállalati központ megbecsüli a kezdeti költségvetés kiinduló összegeit, és elosztja őket az értékesítési részlegeken. Az értékesítési részleg ezután megbecsüli és elküldi az előrejelzését a központnak, ahol a költségvetés-kezelő összesíti és módosítja az előrejelzést. Végül a költségvetés-kezelő elküldi a módosított költségvetési összegeket a pénzügyi igazgatónak, hogy felülvizsgálja, helyesbítse és jóváhagyja azokat. 
 
-[![Költségvetés-tervezési séma példa](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Költségvetés-tervezési sablonminta](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ###  <a name="organization-hierarchy-for-budget-planning"></a>Szervezeti hierarchia a költségvetés-tervezésre
 
@@ -84,17 +87,17 @@ A költségvetés-tervezés két biztonsági modell egyikét követheti a felhas
 
 A költségvetés-tervezési munkafolyamatok a költségvetési munkafolyamatokkal együtt használhatók a költségvetési tervek létrehozására és kezelésére.
 
-A költségvetés-tervezési munkafolyamat egy rendezett szakaszokból álló rendszer, amelyen a költségvetési terv végigmegy. Minden költségvetési munkafolyamathoz tartozik egy költségvetés-tervezési munkafolyamat. Költségvetési munkafolyamatok munkafolyamat műveletekhez használt Microsoft Dynamics 365 egész típusú. A költségvetési terveket a munkalapokkal, indoklásokkal és a mellékletekkel együtt a költségvetési munkafolyamat irányítja a szervezeten keresztül ellenőrzésre és jóváhagyásra. 
+A költségvetés-tervezési munkafolyamat egy rendezett szakaszokból álló rendszer, amelyen a költségvetési terv végigmegy. Minden költségvetési munkafolyamathoz tartozik egy költségvetés-tervezési munkafolyamat. A költségvetés-tervezési munkafolyamat az egyik olyan munkafolyamat, amelyet a Microsoft Dynamics 365 for Operations számos helyen használ. A költségvetési terveket a munkalapokkal, indoklásokkal és a mellékletekkel együtt a költségvetési munkafolyamat irányítja a szervezeten keresztül ellenőrzésre és jóváhagyásra. 
 
 Költségvetés-tervezési munkafolyamatot létrehozhat a **Munkafolyamat szakaszai** menüpontban a **Költségvetés-tervezés konfigurációja** lapon. Itt ki tudja választani a program által használt szakaszt és a költségvetési munkafolyamatot, és további beállításokat is hozzáadhat. 
 
 A jó gyakorlat az, ha egy költségvetési hierarchia minden szintjéhez külön költségvetés-tervezési munkafolyamatot hoz létre. Azután olyan költségvetési munkafolyamatot rendel hozzá, melynek elemei megfelelnek a szakaszoknak a költségvetés-tervezési munkafolyamatban. A cikkben szereplő korábbi mintasablonon egy költségvetés-tervezési munkafolyamat szerepelt az értékesítési részleg számára, és egy másik a központ számára. A költségvetési munkafolyamat végigviszi a költségvetési terveket a különböző szakaszokon. 
 
-Költségvetési munkafolyamatot a költségvetés-tervezésre a **Költségvetési munkafolyamatok** oldalon hozhat létre. A folyamat hasonló a Microsoft Dynamics 365 műveletek egyéb munkafolyamatok létrehozásának folyamata. A következő ábrán a Központ munkafolyamatának példája látható. 
+Költségvetési munkafolyamatot a költségvetés-tervezésre a **Költségvetési munkafolyamatok** oldalon hozhat létre. A folyamat hasonlít más munkafolyamatok létrehozására a Microsoft Dynamics 365 for Operations rendszerben. A következő ábrán a Központ munkafolyamatának példája látható. 
 
-[![Költségvetés költségvetés-tervezési munkafolyamat](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Költségvetés-tervezési munkafolyamat költségvetés-tervezéshez](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
-A munkafolyamat értékesítési részlegek és a beadványok, felülvizsgálja a költségvetés-kezelő, a pénzügyi igazgató általi jóváhagyás, szakasz átmenetek minden lépés összesítése kiosztható elemeket tartalmazza. 
+A munkafolyamat tartalmazza az értékesítési részleg beadványait, a költségvetés-kezelő helyesbítéseit, a pénzügyi igazgató hozzájárulását, és a szakaszok közötti átmeneteket. 
 
 Költségvetés-tervezési munkafolyamatot az egyes költségvetés-tervezési munkafolyamatokhoz a **Munkafolyamat szakaszai** menüpontban a **Költségvetés-tervezés konfigurációja** lapon jelölhet ki.
 
@@ -112,8 +115,8 @@ A költségvetés-tervezés során feloszthatja a költségvetési terv sorainak
 
 A felosztási ütemezések automatikusan felosztják a költségvetési terv sorait a munkafolyamat feldolgozása során. A **Felosztási módszer** listán szereplő bármely módszerrel végezhet felosztásokat:
 
--   **Időszaki felosztás** – A költségvetési terv sorait a költségvetési forrás tervváltozatából időszaki felosztókulcs segítségével oszthatja fel a célváltozat pénzügyi időszakai között. **Megjegyzés:** időszakok közötti felosztása, előtt be kell állítania időszaki felosztási kulcsok a a *** időszak-felosztási kategóriák *** oldal.
--   **Dimenziókra való felosztás** – A költségvetési terv sorai a költségvetési forrás tervváltozatából a célváltozat pénzügyi dimenziói között kerülnek felosztásra. **Megjegyzés:** dimenziókkal felosztása, előtt be kell állítania költségvetés-felosztási feltételek a a *** költségvetés felosztási feltételek *** oldal.
+-   **Időszaki felosztás** – A költségvetési terv sorait a költségvetési forrás tervváltozatából időszaki felosztókulcs segítségével oszthatja fel a célváltozat pénzügyi időszakai között. **Megjegyzés**: Mielőtt időszakok közötti felosztást végez, azelőtt be kell állítania az időszaki felosztási kulcsokat az ****Időszak-felosztási kategóriák**** oldalon.
+-   **Dimenziókra való felosztás** – A költségvetési terv sorai a költségvetési forrás tervváltozatából a célváltozat pénzügyi dimenziói között kerülnek felosztásra. **Megjegyzés**: Mielőtt elvégezné a dimenziókra való felosztást, be kell állítania a költségvetés-felosztási feltételeket a ****Költségvetés-felosztási feltételek**** oldalon.
 -   **Összesítés** – A költségvetési terv sorai a szülő költségvetési terv költségvetési forrás tervváltozatából a társított költségvetési terv célváltozatában kerülnek összesítésre.
 -   **Felosztás** – A költségvetési terv sorai a szülő költségvetési terv költségvetési forrás tervváltozatából a társított költségvetési terv célváltozatába kerülnek felosztásra.
 -   **Főkönyvi felosztási szabályok használata** – A költségvetési terv sorai a forrás költségvetési tervváltozat soraiból a kiválasztott főkönyvi felosztásszabály alapján a cél költségvetési tervváltozatba kerülnek felosztásra.
@@ -123,15 +126,15 @@ A felosztási ütemezések automatikusan felosztják a költségvetési terv sor
 
 A szakaszok felosztásait arra használjuk, hogy automatikusan felosszuk a költségvetési terv sorait a munkafolyamat feldolgozása során. Amikor szakaszfelosztásokat használunk, a célváltozat költségvetési terv sorait létrehozhatjuk és módosíthatjuk a költségvetési terv készítőjének vagy ellenőrének beavatkozása nélkül.
 
-Szakaszfelosztás beállításakor társítsa a költségvetés-tervezési munkafolyamatot és a szakaszt a felosztási ütemezéssel. A költségvetés-tervezési munkafolyamat által használt költségvetési munkafolyamat társítva kell lennie a *** a költségvetés-tervezési szakasz felosztási *** automatikus munkafolyamat-feladat. Ha a munkafolyamat eléri a megadott szakaszt, a felosztás automatikusan megtörténik. Ez az automatizált feladat egy új változat költségvetési terv-sorainak létrehozására használható. 
+Szakaszfelosztás beállításakor társítsa a költségvetés-tervezési munkafolyamatot és a szakaszt a felosztási ütemezéssel. A költségvetés-tervezési munkafolyamatot társítani kell egy, a ****Költségvetés-tervezési szakasz felosztása**** automatizált munkafolyamatot használó költségvetési munkafolyamattal. Ha a munkafolyamat eléri a megadott szakaszt, a felosztás automatikusan megtörténik. Ez az automatizált feladat egy új változat költségvetési terv-sorainak létrehozására használható. 
 
 A mintasablonban, amely a cikk korábbi részében szerepelt, egy felosztás végrehajtása szerepel összegek átvitelére a költségvetési tervből és tervváltozatokból a központ kiindulási szakaszában egy másik költségvetési tervbe és tervváltozatba az Értékesítési részleg Becslési szakaszában. A következő ábrán a mintasablon idevágó szakasza látható.
 
-[![Szakasz felosztásának](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Felosztási szakasz](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
-Ezenkívül a példa sémában aggregáció azért van szükség a költségvetési tervek és a kereskedelmi osztály elküldve szakasz forgatókönyvek HQ összegző szakaszában szülő terv. A következő ábrán a mintasablon idevágó szakasza látható.
+Emellett a mintasablonban a költségvetési tervekből és tervváltozatokból aggregációt hajtottunk végre az értékesítési részlegen az Előterjesztési szakaszban egy szülő tervre a központ összesítő szakaszában. A következő ábrán a mintasablon idevágó szakasza látható.
 
-[![Aggregation](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Összesítés](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Prioritások
 
@@ -149,9 +152,9 @@ A költségvetés összege oszlopon kívül a projekt, a javasolt projekt, a tá
 
 A mintasablon szerint előfordulhat, hogy oszlopokat szeretne létrehozni az értékesítési, a szerződési és az előrejelzési tervváltozatokhoz (a következő ábra a sablon megfelelő szakaszát ábrázolja). Ezután különböző oszlopokra bonthatja az egyik vagy az összes tervváltozatot a pénzügyi év minden negyedévére, ezáltal az értékesítési részleg vezetője pontosan megadhatja az előrejelzett összegeket az egyes időszakokra vonatkozóan.
 
-[![Columns](./media/columns.png)](./media/columns.png) 
+[![Oszlopok](./media/columns.png)](./media/columns.png) 
 
-Akkor is kijelölhet, hogy szerkeszthető-e minden elrendezés elem (oszlop), és elérhető bármely munkalapsablon elrendezés létrehozott. A mintasablon szerint a becslési szakaszhoz használt elrendezésben az előrejelzés oszlopai szerkeszthetők, míg a PY értékesítések és a szerződések oszlopok írásvédettek.
+Kijelölheti azt is, hogy szerkeszthető-e minden elrendezési elem (oszlop), és hogy elérhető-e minden munkalapsablonon, amelyet ehhez az elrendezéshez hoztak létre. A mintasablon szerint a becslési szakaszhoz használt elrendezésben az előrejelzés oszlopai szerkeszthetők, míg a PY értékesítések és a szerződések oszlopok írásvédettek.
 
 ### <a name="templates"></a>Sablonok
 
@@ -160,7 +163,7 @@ A **Költségvetés-tervezési konfiguráció** lap **Elrendezések** szakaszán
 Létrehozhat, megjeleníthet vagy feltölthet sablont az egyes elrendezésekhez. Sablon létrehozásakor az elrendezés zárolva van, ezért nem szerkeszthető. A zárolás segítségével garantálható, hogy a sablon formátuma megfelel a költségvetési terv elrendezésének, és ugyanazokat az adatokat tartalmazza. Miután létrehozta a sablont, már megtekinthető, illetve szerkeszthető. Például hozzáadhat diagramokat a sablonhoz, vagy testreszabhatja a megjelenését.
 
 > [!NOTE] 
-> A sablont menteni kell egy helyet, amely a felhasználónak nincs hozzáférése, úgy, hogy azt feltölthetők a elrendezésének módosítása után. Így a sablont azzal a költségvetési tervvel használjuk, amely az elrendezést használja.
+> A sablont olyan helyre kell menteni, amelyhez a felhasználó hozzáférhet, így feltölthető az elrendezések közé a szerkesztés befejezése után. Így a sablont azzal a költségvetési tervvel használjuk, amely az elrendezést használja.
 
 ### <a name="descriptions"></a>Leírások
 
@@ -184,6 +187,8 @@ A **Műveletek** menüben egy létező folyamat másolásával is létrehozhat �
 
 Egy másik hasznos parancs a **Műveletek** menüben a **Költségvetési folyamat állapotának megtekintése** link. Ez a parancs grafikus formában jeleníti meg a költségvetési terveket egy folyamat során a megfelelő adatokkal együtt, mint például a tervek munkafolyamat-állapota, összeg és egység szerinti összesítések, és egy kattintással elérhető navigáció a költségvetési tervekhez.
 
-[![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Költségvetés-tervezési folyamat állapota](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
 
 

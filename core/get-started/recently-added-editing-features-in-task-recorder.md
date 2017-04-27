@@ -1,6 +1,6 @@
 ---
-title: "A Feladatrögzítő nemrégiben a szerkesztési funkciók"
-description: "Ha Feladatrögzítő segítségével feladat segédvonalak létrehozása, szerkesztheti a fájlokat több hatékonyan a funkció használata a wiki ismertetett."
+title: "A feladatrögzítő nemrégiben hozzáadott szerkesztési funkciói"
+description: "Ha a feladatrögzítő segítségével hoz létre feladat-útmutatókat, hatékonyabban szerkesztheti a fájlokat a wikiben ismertetett funkció használatával."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,58 +25,58 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recently-added-editing-features-in-task-recorder"></a>A Feladatrögzítő nemrégiben a szerkesztési funkciók
+# <a name="recently-added-editing-features-in-task-recorder"></a>A feladatrögzítő nemrégiben hozzáadott szerkesztési funkciói
 
-Ha Feladatrögzítő segítségével feladat segédvonalak létrehozása, szerkesztheti a fájlokat több hatékonyan a funkció használata a wiki ismertetett.
+Ha a feladatrögzítő segítségével hoz létre feladat-útmutatókat, hatékonyabban szerkesztheti a fájlokat a wikiben ismertetett funkció használatával.
 
-Ezek a szolgáltatások érhetők el a **beállítások &gt;Feladatrögzítő &gt;felvétel szerkesztés** menü.
+Ezek a szolgáltatások a **Beállítások &gt; Feladatrögzítő &gt; Felvétel szerkesztés** menüben érhetők el.
 
--   Helyezze be a lépéseket a teljes fájl ismételt rögzítése nélkül.
--   Szerelési tevékenység alatt lépések áthelyezése nélkül az egész fájlt újra rögzít.
--   Felvétel név és leírás mezők összecsukása.
+-   Szúrja be a lépéseket a teljes fájl ismételt rögzítése nélkül.
+-   Mozgassa a lépéseket egy alfeladat alá az egész fájl ismételt rögzítése nélkül.
+-   Csukja össze a Felvétel neve és leírása mezőket.
 
-## <a name="insert-steps-without-rerecording-the-entire-file"></a>Lépések nélkül rerecording a teljes fájl beszúrása
-Lépés bárhol most hozzáadása a tevékenység útmutatója lejátszás és felvétel a teljes fájl nélkül.
+## <a name="insert-steps-without-rerecording-the-entire-file"></a>Szúrja be a lépéseket a teljes fájl ismételt rögzítése nélkül.
+Most már bárhol hozzáadhat lépést a feladat-útmutatóhoz a teljes fájl lejátszása vagy ismételt rögzítése nélkül.
 
-1.  Jelölje be a lépés után szeretné beszúrni az új lépés. Ellenőrizze, hogy a lépés ki van emelve.
+1.  Jelölje be a lépés, amely után szeretné beszúrni az új lépést. Ellenőrizze, hogy a lépés ki van emelve.
 
-Ahhoz, hogy egy lépés beszúrása Feladatrögzítő nyissa meg a megfelelő oldalra kell rendelkeznünk. A megfelelő oldalra kerül a lapot az új lépés következik be. A Feladatrögzítő rendelkezik olyan mechanizmus, amely azt határozza meg, mi az aktív lap, és a szolgáltatást letiltja, ha nincs megnyitva a megfelelő oldalra. 
+Ahhoz, hogy egy lépést beszúrjon a Feladatrögzítő, nyissa meg a megfelelő oldalt. A megfelelő oldal az az oldal, amelyen az új lépés következik be. A Feladatrögzítő rendelkezik egy olyan mechanizmussal, amely azt határozza meg, hogy melyik az aktív oldal, és a szolgáltatást letiltja, ha nincs megnyitva a megfelelő oldal. 
 
 [![tg1](./media/tg1.png)](./media/tg1.png) 
 
 
-Ha a megfelelő oldalon **beszúrása lépés** elérhetővé válik.
+Ha a megfelelő oldalon van, elérhetővé válik a **Lépés beszúrása**.
 
 [![tg2](./media/tg2-231x300.png)](./media/tg2.png)
 
-2. Kattintson a **beszúrása lépés**.
+2. Kattintson a **Lépés beszúrása** lehetőségre.
 
-Amikor rákattint **beszúrása lépés**, Feladatrögzítő rekord üzemmódra vált. A felhasználói felület keresetről most kell elszámolni, és helyben hozzáadott lépések.
+Amikor rákattint a **Lépés beszúrása** lehetőségre, a Feladatrögzítő rögzítési üzemmódra vált. A felhasználói felületen végzett minden művelet rögzítve lesz, és helyben hozzáadott lépéssé válik.
 
-3. Kattintson a **le**.
+3. Kattintson az **Állj** lehetőségre.
 
-A folyamat tetszőleges számú lépéseket felvételének és áthelyezésének (lásd az alábbi altevékenységeknél) igény szerint tetszőleges számú altevékenységek megismételheti.
+A folyamat megismételhető, tetszőleges számú lépés hozzáadására vagy alfeladat áthelyezésére van lehetőség (lásd az alábbiakat az alfeladatokra vonatkozóan).
 
-4. Ha befejezte a feladat útmutató szerkesztésével, kattintson a **végzett Szerkesztés**, majd válassza a beállítások mentése vagy közzététele a feladat útmutató.
+4. Ha befejezte a feladat-útmutató szerkesztését, kattintson a **Szerkesztés kész** lehetőségre, majd válassza a beállítások egyikét a feladat-útmutató mentéséhez vagy közzétételéhez.
 
-## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Lépések szerint altevékenységévé áthelyezése nélkül a teljes fájl rerecording
-Lejátszás és felvétel a teljes fájl nélkül áthelyezheti egy altevékenységek részben leírtakat. Ha egy meglévő blokk lépések csoportosítani szeretné az altevékenységek lépés és az altevékenységek befejezési lépés is áthelyezhetők.
+## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Mozgassa a lépéseket egy alfeladat alá az egész fájl ismételt rögzítése nélkül.
+A lépéseket egy alfeladat alá mozgathatja az egész fájl ismételt rögzítése nélkül. Ha egy meglévő lépésblokkot csoportosítani szeretne, az altevékenység-lépést és az altevékenység befejezési lépését is áthelyezheti.
 
-1.  Jelöljük ki a lépés, amely az áthelyezni kívánt altevékenységek lépés. Győződjön meg arról, hogy a lépés ki van emelve.
-2.  Kattintson a három pont, majd **lépés lépés után**.
+1.  Jelölje ki az áthelyezni kívánt lépést vagy alfeladat lépést. Ellenőrizze, hogy a lépés ki van emelve.
+2.  Kattintson a három pont, majd a **Lépés mögé helyezése** lehetőségre.
 
 [![tg3](./media/tg3.png)](./media/tg3.png)
 
-3. Jelöljük ki a lépés altevékenységek lépés, és a cselekmény, vagy az altevékenységek lépés után áthelyezi. A Feladatrögzítő helyezi a lépés.
+3. Jelölje ki a lépést vagy az altevékenység-lépést, amely mögé a lépést vagy az altevékenység-lépést szeretné áthelyezni. A Feladatrögzítő áthelyezi a lépést.
 
-4. Az altevékenységek befejezési lépés áthelyezése, jelölje ki azt, kattintson a Kihagyás gombra, kattintson a **lépés lépés után**, és válassza ki a lépés után a záró altevékenységek lépést kell szeretné.
+4. Az altevékenység befejezési lépésének áthelyezéséhez jelölje ki a lépést, kattintson a három pontra, kattintson a **Lépés mögé helyezése** lehetőségre, és válassza ki a lépést, amely mögé az altevékenység befejezési lépést szeretné áthelyezni.
 
-Ha azt szeretné, hogy az első lépés a feladat útmutató egy altevékenységek belül hozzon létre egy, a második lépcsõben altevékenységek lépést, és az első lépésben helyezhet. Hozzáadása, vagy helyezze át a lépéseket és altevékenységek szükség szerint.
+Ha azt szeretné, hogy az első lépés a feladat-útmutatóba egy altevékenységen belül legyen, második lépésként hozzon létre egy altevékenységek lépést, és az első lépést helyezze át ide. Szükség szerint bármennyi lépést vagy altevékenységet hozzáadhat.
 
-5. Ha befejezte a feladat útmutató szerkesztésével, kattintson a **végzett Szerkesztés**, majd válassza a beállítások mentése vagy közzététele a feladat útmutató.
+5. Ha befejezte a feladat-útmutató szerkesztését, kattintson a **Szerkesztés kész** lehetőségre, majd válassza a beállítások egyikét a feladat-útmutató mentéséhez vagy közzétételéhez.
 
-## <a name="collapse-recording-name-and-description"></a>Összecsukás felvétel nevét és leírását.
-Kibonthatja és összecsukhatja a **felvétel neve** és **felvétel leírás** mezők. Ezek a mezők össze vannak csukva, amikor további lépéseket a Feladatrögzítő szerkesztése ablaktáblán látható lesz. 
+## <a name="collapse-recording-name-and-description"></a>Csukja össze a Felvétel neve és leírását.
+Kibonthatja és összecsukhatja a **Felvétel neve** és **Felvétel leírása** mezőket. Amikor ezek a mezők össze vannak csukva, további lépések lesznek láthatók a Feladatrögzítő szerkesztése ablaktáblán. 
 
 [![tg4](./media/tg4-300x252.png)](./media/tg4.png)  
 
@@ -85,6 +85,6 @@ Kibonthatja és összecsukhatja a **felvétel neve** és **felvétel leírás** 
 
 [Dokumentáció vagy képzés létrehozása feladatrögzítések segítségével.](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
 
-[Feladat író gyors áttekintése](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+[Feladatrögzítő gyors áttekintése](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
 
 

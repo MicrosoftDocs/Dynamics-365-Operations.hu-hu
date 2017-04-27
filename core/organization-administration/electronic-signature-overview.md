@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="electronic-signature-overview"></a>Az elektronikus aláírás áttekintése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk betekintést nyújt az elektronikus aláírásokba, és bemutatja azok használatát Microsoft Dynamics 365 for Operations rendszerben.
 
 <a name="what-is-an-electronic-signature"></a>Mi az elektronikus aláírás?
@@ -35,7 +38,7 @@ Ez a cikk betekintést nyújt az elektronikus aláírásokba, és bemutatja azok
 Az elektronikus aláírás igazolja annak a személynek a személyazonosságát, aki egy számítási folyamat elindítása vagy jóváhagyása előtt áll. Egyes ágazatokban az elektronikus aláírás ugyanúgy jogilag kötelező érvényű, mint a kézzel írott aláírás. Az elektronikus aláírás használatát törvény írja elő számos szabályozott iparágban, például a gyógyszeriparban, az élelmiszer- és italgyártás, a repülőgépgyártás és a honvédelem területén. Az Amerikai Egyesült Államok élelmiszer- és gyógyszerügyi hatóságának (FDA, Food and Drug Administration) 21 CFR Part 11 szabályozásában meghatározott követelmények teljesítéséhez szintén szükséges. **Megjegyzés:** Az elektronikus aláírás önmagában nem ugyanaz, mint a digitális aláírás. Az elektronikus aláírás mindössze a kézzel írt aláírás helyettesítése, míg a digitális aláírás további biztonsági szolgáltatásokat biztosít. A digitális aláírások esetén meghatározható, hogy egy másik felhasználó vagy folyamat nem módosította-e illetéktelenül az adatokat. A digitális aláírások ellenőrizhetők, és ennek az ellenőrzésnek az eredményét nem cáfolhatja meg még az adatok aláírására használt tanúsítvány tulajdonosa sem. Az alábbi leírásból kiderül, hogy a Microsoft Dynamics 365 for Operations rendszerben használt elektronikus aláírásokba a digitális aláírások funkciói is be vannak építve.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-operations"></a>Elektronikus aláírások a Microsoft Dynamics 365 for Operations rendszerben
-A Microsoft Dynamics 365 for Operations rendszerben a kritikus üzleti folyamatoknál használhatja az elektronikus aláírásokat. Egyes folyamatokba be vannak építve az elektronikus aláírási funkciók. Ugyanezen a képernyőn egyéni elektronikus aláírási követelményeket is létrehozhat, tetszőleges adatbázis-táblára és mezőre vonatkozóan. Az elektronikus aláírásokba a digitális aláírások funkciói is be vannak építve. Minden felhasználónak, aki dokumentumokat ír alá, be kell szereznie egy érvényes kriptográfiai tanúsítványt. A dokumentum aláírásakor a tanúsítványhoz társított titkos kulcsot ellenőrzi a rendszer. A Dynamics 365 for Operations rendszer egy naplóban rögzíti az elektronikus aláírások adatait, ezáltal gondoskodik az ellenőrzéshez szükséges könyvvizsgálati naplóról. Az elektronikus aláírások beállításához lásd: [állítsa be az elektronikus aláírások (feladat guide)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+A Microsoft Dynamics 365 for Operations rendszerben a kritikus üzleti folyamatoknál használhatja az elektronikus aláírásokat. Egyes folyamatokba be vannak építve az elektronikus aláírási funkciók. Ugyanezen a képernyőn egyéni elektronikus aláírási követelményeket is létrehozhat, tetszőleges adatbázis-táblára és mezőre vonatkozóan. Az elektronikus aláírásokba a digitális aláírások funkciói is be vannak építve. Minden felhasználónak, aki dokumentumokat ír alá, be kell szereznie egy érvényes kriptográfiai tanúsítványt. A dokumentum aláírásakor a tanúsítványhoz társított titkos kulcsot ellenőrzi a rendszer. A Dynamics 365 for Operations rendszer egy naplóban rögzíti az elektronikus aláírások adatait, ezáltal gondoskodik az ellenőrzéshez szükséges könyvvizsgálati naplóról. Az elektronikus aláírások beállításához lásd: [Elektronikus aláírások beállítása (Feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Felhasználók, akik az elektronikus aláírásokhoz kérnek hozzáférést
 Általában háromféle felhasználónak van szüksége biztonsági hozzáférésre az elektronikus aláíráshoz: az elektronikus aláírás rendszergazdái, az aláírók és az elektronikus aláírás felülvizsgálói.
@@ -78,6 +81,8 @@ Bizonyos esetekben előfordulhat, hogy az egyik felhasználó által végzett m�
 1.  A **Beállítások** oldalon a **Számlák** fülön kattintson **Jóváhagyó kijelölése** parancsra.
 2.  A **Jóváhagyó felhasználó azonosítója** mezőben válassza ki annak a felhasználónak az azonosítóját, akinek alá kell írnia egy másik felhasználó által végzett módosításokat.
 3.  Az **Aláírható felhasználó azonosítója** mezőben válassza ki annak a felhasználónak az azonosítóját, akinek a módosításait alá kell írni.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Tárgyi eszközök kezdőlap"
-description: "Tárgyi eszközök olyan értékkel, épületek, járművek, föld és berendezés, amely egy személy vagy szervezet tulajdonában."
+description: "A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-home-page"></a>Tárgyi eszközök kezdőlap
 
-Tárgyi eszközök olyan értékkel, épületek, járművek, föld és berendezés, amely egy személy vagy szervezet tulajdonában.
+[!include[banner](../includes/banner.md)]
+
+
+A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak. 
 
 A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az eszközök értékcsökkenésének elszámolására, valamint az értékcsökkenést meghatározó tőkésítési küszöb beállítására. Az értékek korrekciójára, végül a tárgyi eszközök kivezetésére. Ha a tárgyi eszközöket a főkönyvvel együtt alkalmazza, akkor megtekintheti az összes tárgyi eszköz aktuális értékét. A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban/régiókban érvényes könyvelési törvényeknek is. A követelmények a tárgyi eszközök beszerzési és kivezetési tranzakcióinak a rögzítésével, értékcsökkenésével, élettartamával, felértékelésével és leértékelésével kapcsolatos szabályokat tartalmazhatnak. A tárgyi eszközökkel kapcsolatos szolgáltatásokban számos megtalálható e szabványok és szabályok közül.
+
+
 
 
 

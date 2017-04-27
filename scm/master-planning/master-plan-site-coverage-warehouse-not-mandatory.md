@@ -1,5 +1,5 @@
 ---
-title: "Hely lefedettsége nem kötelező raktári az Alaptervezés"
+title: "Alaptervezés helyfedezethez, a raktár nem kötelező"
 description: "Ez a témakör leírja, hogyan terveznek meg a fedezetre vonatkozó webhely- dimenzió készlettel rendelkező cikket."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Hely lefedettsége nem kötelező raktári az Alaptervezés
+# <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Alaptervezés helyfedezethez, a raktár nem kötelező
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör leírja, hogyan terveznek meg a fedezetre vonatkozó webhely- dimenzió készlettel rendelkező cikket.
 
@@ -39,9 +42,9 @@ Ez az alaptervezési eset a következő feltételeket tartalmazza:
 -   A raktárdimenzió nincs beállítva a fedezet tervezéséhez. Ezért a program telephelyenként esetleg más fedezeti tervezési dimenziók szerint vonja össze a készleteket és az igényeket.
 
 Az alábbi ábra az alapütemezés folyamatát illusztrálja. Az ábrán látható paraméterek és helyeik a következők:
--   A cikkre cikkfedezet van meghatározva. Kattintson a **termék információkezelés &gt;termékek&gt;, amely a termékek**. Jelölje ki az elemet, és kattintson a **tervezett &gt;Cikkfedezet**.
--   A raktárban újratöltési viszonyok vannak meghatározva. Kattintson a **Inventory management &gt;a telepítő &gt;Készlet részletezése &gt;raktár**. Az **Alaptervezés** lapon lásd az **Elsődleges raktár** mezőcsoportot.
--   Az alapértelmezett rendelési típus beállítása Termelés, Beszerzési rendelés vagy Kanban. Kattintson a **termék információkezelés &gt;termékek&gt;, amely a termékek**. Jelölje ki az elemet, és kattintson **tervezett &gt;rendelés az alapbeállításokat**. Az **Alapértelmezett rendelésbeállítások** képernyőn lásd az **Alapértelmezett rendeléstípus** mezőt.
+-   A cikkre cikkfedezet van meghatározva. Kattintson a **Termékinformációk kezelése &gt; Termékek &gt; Kiadott termékek** lehetőségre. Válassza ki a cikket, majd kattintson a **Terv &gt; Cikkfedezet** pontra.
+-   A raktárban újratöltési viszonyok vannak meghatározva. Kattintson a következő lehetőségre: **Készletgazdálkodás &gt; Beállítás &gt; Készlet részletezése &gt; Raktárak**. Az **Alaptervezés** lapon lásd az **Elsődleges raktár** mezőcsoportot.
+-   Az alapértelmezett rendelési típus beállítása Termelés, Beszerzési rendelés vagy Kanban. Kattintson a **Termékinformációk kezelése &gt; Termékek &gt; Kiadott termékek** lehetőségre. Válassza ki a cikket, majd kattintson a **Terv &gt; Alapértelmezett rendelésbeállítások** parancsra. Az **Alapértelmezett rendelésbeállítások** képernyőn lásd az **Alapértelmezett rendeléstípus** mezőt.
 
 ![Telephely fedezet igénylése, raktár nem kötelező](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
@@ -50,7 +53,7 @@ Az alábbi ábra az alapütemezés folyamatát illusztrálja. Az ábrán láthat
 <a name="see-also"></a>Lásd még
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+Az alaptervezés és a többhelyes funkció[](master-plan-multisite-functionality.md)
 
 [Alaptervezés - helyfedezet, a raktár kötelező](master-plan-site-coverage-warehouse-mandatory.md)
 
@@ -58,6 +61,8 @@ Az alábbi ábra az alapütemezés folyamatát illusztrálja. Az ábrán láthat
 
 [Alaptervezés - hely és raktár fedezet, a raktár kötelező](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Alaptervezés - hogyan határozza meg az AJ-verzió](master-plan-bom-version-determined.md)
+[Alaptervezés - anyagjegyzék verzió meghatározása](master-plan-bom-version-determined.md)
+
+
 
 

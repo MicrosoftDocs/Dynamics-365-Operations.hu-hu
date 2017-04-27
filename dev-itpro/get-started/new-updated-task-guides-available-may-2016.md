@@ -1,6 +1,6 @@
 ---
-title: "Új vagy frissített tevékenység segédvonalak (2016. május)"
-description: "Ez a cikk felsorolja a Microsoft kiadott útmutatók (Előfordulhat, hogy 2016 - minden nyelv) APQC egységes tár a Microsoft Dynamics AX új vagy frissített feladat. Nincs új Első lépések könyvtár."
+title: "Új vagy frissített feladat-útmutatók (2016. május)"
+description: "A cikk felsorolja a Microsoft Dynamics AX (2016. május – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Új vagy frissített tevékenység segédvonalak (2016. május)
+# <a name="new-or-updated-task-guides-may-2016"></a>Új vagy frissített feladat-útmutatók (2016. május)
 
-Ez a cikk felsorolja a Microsoft kiadott útmutatók (Előfordulhat, hogy 2016 - minden nyelv) APQC egységes tár a Microsoft Dynamics AX új vagy frissített feladat. Nincs új Első lépések könyvtár. 
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Feladat vezeti a (május 2016 - minden nyelven) az APQC egységes tár a Microsoft Dynamics AX
+
+A cikk felsorolja a Microsoft Dynamics AX (2016. május – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár. 
+
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Feladat-útmutatók (2016. május - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
 ------------------------------------------------------------------------------------------------
 
-(Május 2016) APQC Unified könyvtárban útmutatók segítséget a Microsoft Dynamics AX használni kívánják 2016 frissítheti a feladatot, és engedje el a Microsoft Dynamics AX február 2016. Honosított verziói a feladat útmutatók (február 2016) kiadott APQC Unified könyvtárban érhetők el ebben a tárban. A Súgó rendszer tevékenység útmutató könyvtár való kapcsolódás módjáról további információt lásd: [az első lépések segítségével](help-overview.md). **Megjegyzés:** a csillag (**\***) egy üzleti folyamat modellező (BPM) címe mellett sor jelzi, hogy üzleti folyamat útmutató a feladat létrejött a Dynamics AX 2016 frissítheti és korábbi verzióiban a Microsoft Dynamics AX nem támogatja.
+A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához és a Microsoft Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat. Az APQC egyesített könyvtárban kiadott (2016. február) Feladat-útmutatók honosított változatai ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md). **Megjegyzés**: Egy csillag (**\***) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics AX 2016. májusi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióiban nem támogatott.
 
 ### <a name="countryregion-functionality"></a>Ország/régió szerinti funkciók
 
@@ -65,7 +68,7 @@ Ez a cikk felsorolja a Microsoft kiadott útmutatók (Előfordulhat, hogy 2016 -
 | ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése         | Globális         |
 | ER – Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a formátumkonfiguráció segítségével | Globális         |
 | ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból                          | Globális         |
-| **\***ER Select service provider                                           | Globális         |
+| **\***ER - szolgáltató kiválasztása                                           | Globális         |
 | ER – A formátum frissítése ezen formátum új alap verziójának elfogadásával      | Globális         |
 | ER - A konfiguráció feltöltése a Lifecycle Services szolgáltatásba                          | Globális         |
 
@@ -126,7 +129,7 @@ Ez a cikk felsorolja a Microsoft kiadott útmutatók (Előfordulhat, hogy 2016 -
 | BPM-sor                                                 | Ország/régió |
 |----------------------------------------------------------|----------------|
 | Új termék létrehozása                                     | Globális         |
-| Létrehozása... \financial-dimensions\dimension-based beállítások                    | Globális         |
+| ..\pénzügyi dimenziókon / dimenziókon alapuló konfigurációk                    | Globális         |
 | Az előre meghatározott termékváltozatok létrehozása                       | Globális         |
 | Eladási ár kiválasztási feltételeinek létrehozása                    | Globális         |
 | Adja meg a konfigurálható termékek rendeléseit                   | Globális         |
@@ -176,22 +179,24 @@ Ez a cikk felsorolja a Microsoft kiadott útmutatók (Előfordulhat, hogy 2016 -
 | BPM-sor                                                            | Ország/régió |
 |---------------------------------------------------------------------|----------------|
 | A Hullámfeldolgozás konfigurálása                                           | Globális         |
-| **\***Nem-rendszámtábla ellenőrzött helyre készként történő jelentés | Globális         |
+| **\***Készként történő jelentés egy nem azonosítótáblás szabályozású helyen | Globális         |
 | A minimum-maximum feltöltési folyamat beállítása                              | Globális         |
 | Tárolóra bontás beállítása                                             | Globális         |
 | A kézi csomagolás beállítása                                               | Globális         |
 | Egy elemre vonatkozó szállítási megszorítások beállítása                       | Globális         |
-| **\***Set up warehouse work policies                                | Globális         |
+| **\***A raktári munkairányelvek beállítása                                | Globális         |
 
 
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Új feladat segédvonalak (2016. február)](new-task-guides-available-february-2016.md)
+[Új Feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
 
-[Új vagy frissített tevékenység segédvonalak (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
+[Új vagy frissített feladat-útmutatók (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
 
-[Új vagy frissített tevékenység segédvonalak (2016. November)](new-task-guides-november-2016.md)
+[Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
+
+
 
 

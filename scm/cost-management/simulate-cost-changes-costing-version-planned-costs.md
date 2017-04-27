@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Költségváltozások szimulálása, a tervezett költségek költségszámítási verziójának alkalmazásával
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk azt mutatja be, hogy hogyan szimulálhatja a költségmódosítások hatásait egy termék kiszámított költségein egy külön költségszámítási verzió alkalmazásával a tervezett költségekre vonatkozóan.
 
 Szimulálhatja a költségmódosítások hatásait egy termék kiszámított költségein egy külön költségszámítási verzió alkalmazásával a tervezett költségekre vonatkozóan. Használja ezt a külön költségszámítási verziót az olyan függő költségrekordok bevitelére, amelyek növekményes költségváltozásokat tükröznek, illetve a termékekre ható költségek kiszámítására. Mivel az aktív költségek tartalékelvét használják az anyagjegyzék-számításokban (BOM), csak a növekményes költségváltozókat kell megadni.
@@ -54,5 +57,7 @@ A következő esetek azt mutatják be, hogy hogyan alkalmazzák a szimulációs 
 -   Szimulálja a költségváltozását egy közvetett költségszámítási képletben. Például a költségváltozás növekedést vagy csökkenést tükrözhet a gyártási többletköltségben. Használja a **Költségszámítási táblázat beállítása** képernyőt egy függő költségrekord megadására a szimulációs költségszámítási verzióban, és a változás ellenőrzésére és mentésére egy közvetett költségszámítási képletben szereplő eltérés meghatározásához.
 
 A szimulált költségváltozások megadása után számítsa ki a költségváltozások által érintett termékek költségeit. Használja az **Számítás** képernyőt a szimulációs költségszámítási verzióhoz, és azonosítsa be a termékek azon csoportját, amelyekre kihatással lesznek a költségváltozások. Az anyagjegyzék-számítások csak akkor vonatkoznak minden termékre, ha kiválasztja a konkrét cikkeket. Másik megoldásként alkalmazhatja az anyagjegyzék-számítás lehetőséget azokra a frissítésekre, ahol azok használtban vannak. Tekintse meg a cikk költségrekordjait a szimulációs költségszámítási verzióban, hogy megvizsgálja hogyan hatottak a megadott termékek költségeire a szimulált költségváltozások. Használja a **Cikkár** lapot és a **Cikk-költség kiszámítása** lapot a költségek megtekintéséhez és elemzéséhez.
+
+
 
 

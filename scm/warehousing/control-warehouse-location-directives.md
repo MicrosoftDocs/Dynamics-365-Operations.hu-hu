@@ -1,5 +1,5 @@
 ---
-title: "Ellenőrzési raktári munka munka sablonokat és hely irányelvek"
+title: "Raktári munka ellenőrzése munkasablonok és helyutasítások használatával"
 description: "A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Ellenőrzési raktári munka munka sablonokat és hely irányelvek
+# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Raktári munka ellenőrzése munkasablonok és helyutasítások használatával
+
+[!include[banner](../includes/banner.md)]
+
 
 A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
 
@@ -40,7 +43,7 @@ A munkafejléc-definíció beállításainak használatával lehet megállapíta
 
 A munkasorok a munka feldolgozásához szükséges fizikai tevékenységnek felelnek meg. Például egy kimenő raktári folyamathoz tartozhat egy munkasor, ami a cikkek raktáron belüli felvételéről szól, valamint egy másik sor, ami a cikkek átmeneti területre való szállításáról szól. Lehet egy további sor a cikkek előkészítő területről való felvételéről, valamint még egy sor, a rakodási folyamat részeként, a cikkek teherautóra helyezéséről. Beállíthat *Utasításkód *értéket a munkasablon sorban. Az utasításkód egy helyutasításhoz kapcsolódik, ezáltal segít biztosítani, hogy a raktári munka a megfelelő helyen legyen feldolgozva a raktárban. 
 
-Beállíthat egy lekérdezést, amivel szabályozza, hogy egy adott munkasablon mikor legyen használva. Például korlátozhatja, hogy egy adott sablon csak egy bizonyos raktárban legyen használható. Másik lehetőségként rendelkezhet több, a kimenő értékesítési rendelés feldolgozásához használatos sablonnal, az értékesítési forrástól függően. A rendszer a **sorszáma** mező, amely az elérhető sablonok bírálják sorrendjének meghatározásához. Ezért ha egy adott munka sablon nagyon specifikus lekérdezés, kell választani, hogy egy alacsony szám. Az a lekérdezés a többi, általánosabb lekérdezés előtt lesz kiértékelve. 
+Beállíthat egy lekérdezést, amivel szabályozza, hogy egy adott munkasablon mikor legyen használva. Például korlátozhatja, hogy egy adott sablon csak egy bizonyos raktárban legyen használható. Másik lehetőségként rendelkezhet több, a kimenő értékesítési rendelés feldolgozásához használatos sablonnal, az értékesítési forrástól függően. A rendszer a **Sorszám** mezőt használja, hogy meghatározza az elérhető munkasablonok sorrendjét. Ezért ha van egy adott lekérdezése egy adott munkasablonhoz, adjon neki alacsony sorozatszámot. Az a lekérdezés a többi, általánosabb lekérdezés előtt lesz kiértékelve. 
 
 Egy munkafolyamat leállításához, vagy felfüggesztéséhez használhatja a **Munka leállítása** beállítást a munkasorból. Ebben az esetben a munkát végző dolgozónak nem kell végrehajtania a következő munkát a sorban. A következő lépéshez, az egyik dolgozónak ki kell választania a munkát újra. Elkülönítheti a feladatokat munkán belül, különböző *Munkaosztály-azonosító *használatával a munkasablon soraiban.
 
@@ -53,12 +56,14 @@ A munkasablonoknál beállíthat egy lekérdezést, ami meghatározza, hogy miko
 
 A helyutasítási sorok további korlátozásokat szabnak meg a helykeresés szabályaival kapcsolatban. Megadhat egy minimális és egy maximális mennyiséget, amire az utasítás vonatkozik, valamint megadhatja, hogy az utasítás csak egy adott készletegységre vonatkozzon. Például ha a mértékegység a raklap a raklapon található cikkeket adott helyre lehet vinni. Megadhatja azt is, hogy a mennyiség el lehet-e osztva több hely között. A helyutasítási műveletek fejléchez hasonlóan minden helyutasítás sorművelete rendelkezik egy sorszámmal, amely meghatározza a sorok értékelési sorrendjét. 
 
-A helyutasítások rendelkeznek egy további részletességi szinttel, ez a: *helyutasítási műveletek*. Több helyutasítási műveletet is megadhat minden sornak. Még egyszer a sorszámot bírálják a műveletek sorrendjének meghatározásához használatos. Ezen a szinten állíthat be a lekérdezés definiálásához, hogyan lehet megtalálni a legjobb hely a raktárban. Emellett használható előre definiált **Stratégia **beállítás, az optimális hely megtalálásához.
+A helyutasítások rendelkeznek egy további részletességi szinttel, ez a: *helyutasítási műveletek*. Több helyutasítási műveletet is megadhat minden sornak. Még egyszer, a sorozatszám meghatározza a műveletek értékelésének sorrendjét. Ezen a szinten megadhat egy lekérdezést, hogy megadja, hogyan legyen megtalálva a legjobb hely a raktárban. Emellett használható előre definiált **Stratégia **beállítás, az optimális hely megtalálásához.
 
 ### <a name="example-of-the-use-of-location-directives"></a>Példa a helyutasítás használatához
 
 Ehhez a példához egy olyan beszerzési rendelési folyamatot veszünk alapul, ahol a helyutasításnak szabad területet kell találnia egy raktáron belül, azoknak a készletcikkeknek, amiket most regisztráltak a bevételezési területen. Először szabad kapacitást kell találnunk a raktár területén, az aktuális készlet konszolidálásával. Ha a konszolidáció nem lehetséges, üres helyet kell találnunk. 
 
 Ebben az esetben két helyutasítási műveletek kell megadni. A sorozat első művelete a **Konszolidálás** stratégiája, a másodiknak az **Üres hely bejövő munka nélkül** stratégiáját használjuk. Hacsak nem adunk meg műveletet a túlcsordulás kezelésére, két végkifejlet lehetséges akkor, ha nincs több kapacitása a raktárnak: a munka létrehozható, habár nem lesz hely meghatározva, vagy a munka-létrehozási folyamat sikertelenül zárul. Az eredményt a **Helyutasítási hibák** lap beállításai határozzák meg, ahol eldöntheti, hogy beállítja-e a **Munka leállítása, ha a helyutasítások sikertelenek** lehetőséget minden Munkarendelés-típushoz.
+
+
 
 

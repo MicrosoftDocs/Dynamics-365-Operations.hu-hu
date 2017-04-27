@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-catalogs"></a>Beszerzési katalógusok
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk magas szinten leírja, hogy a beszerzési szakemberek hogyan állíthatnak be és tarthatnak fenn beszerzési katalógusokat. A beszerzési katalógusok határozzák meg a cikkeket és szolgáltatásokat, amelyeket a vállalati alkalmazottak megrendelhetnek belső használat céljából.
 
 A beszerzési szakemberek a beszerezhető cikkekre és szolgáltatásokra vonatkozó, a vállalaton belüli használatra szóló katalógusokat hozhatnak létre és karbantarthatják azokat. Katalógusok beállítása után a vállalat alkalmazottai beszerzési igényléseket hozhatnak létre a katalógusokból való rendelésekhez. A katalógusok használatával lehet érvényesíteni a beszerzési irányelveket, úgy, hogy az alkalmazottak csak olyan cikkeket és szolgáltatásokat rendelhetnek, amelyek engedélyezve vannak a vásárló jogi személyük számára. Beszerzési katalógus létrehozása esetén a következő feladatok elvégzését kell átgondolnia:
 
 -   A katalógus létrehozása előtt állítsa be a beszerzési kategóriák hierarchiáját.
--   Határozza meg, mely termékeket rendelhessék meg az alkalmazottak. Akkor megjelenítheti vagy elrejtheti az adott termékek katalógus csomópont, vagy akkor megjelenítheti vagy elrejtheti a csomópont a termékeket.
+-   Határozza meg, mely termékeket rendelhessék meg az alkalmazottak. Megjelenítheti vagy elrejtheti az adott termékeket a katalógus csomópontban, vagy megjelenítheti vagy elrejtheti a csomópontban az összes terméket.
 -   Határozza meg, hány beszerzési katalógusra van szüksége. A beszerzési katalógushoz való hozzáférést a katalógus szabálya határozza meg, amelyet konfigurál a jogi személyhez és az üzemi egységhez, amelyhez az alkalmazott hozzá van rendelve.
 
 Számos tényező határozza meg azokat a termékeket, amelyeket az alkalmazottak megrendelhetnek, illetve a lehetséges beszerzési kategóriákat, amelyeket használhatnak a beszerzési igénylések létrehozásakor:
@@ -52,7 +55,7 @@ A következő táblázat leírja a feladatokat, amelyeket el kell végezni miel�
 ## <a name="setting-up-a-catalog"></a>Katalógus beállítása
 Miután teljesültek az előfeltételek, beállíthatja a katalógusokat. Létrehozhat egy katalógust, amelyet a teljes szervezet használ, vagy több katalógust a szervezeten belüli különböző osztályok számára. Ha létrehoz egy katalógust a teljes szervezet számára, a katalógushoz való hozzáférést a beszerzési irányelvek vezérlik.  
 
-A katalógus határozza meg, hogy mely termékek állnak rendelkezésre, amikor a beszerzési igénylések létrejönnek, de használhat kategória-hozzáférési irányelveket további megkötések alkalmazása céljából. Mivel a katalógus csomópontjai beszerzési kategóriák, azok letilthatók egy kategória-hozzáférési irányelvvel. Ebben az esetben az adott kategóriába tartozó termékek nem állnak rendelkezésre az alkalmazottak számára vonatkozó igénylések. Kategória hozzáférési szabályok adhatja meg a **beszerzési irányelvek** oldalon. A következő táblázat leírja a katalógus beállításához elvégzendő feladatokat.
+A katalógus határozza meg, hogy mely termékek állnak rendelkezésre, amikor a beszerzési igénylések létrejönnek, de használhat kategória-hozzáférési irányelveket további megkötések alkalmazása céljából. Mivel a katalógus csomópontjai beszerzési kategóriák, azok letilthatók egy kategória-hozzáférési irányelvvel. Ebben az esetben az adott kategóriába tartozó termékek nem állnak rendelkezésre az alkalmazottak számára az igénylésekhez való használathoz. A kategória-hozzáférési irányelvszabályokat a **Beszerzési irányelvek** oldalon adhatja meg. A következő táblázat leírja a katalógus beállításához elvégzendő feladatokat.
 
 | Feladat                                                   | Szerepkör             | Leírás                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,6 +73,8 @@ A frissítéseket automatikusan vagy manuálisan teszik közzé, attól függőe
 <a name="see-also"></a>Lásd még
 --------
 
-[A beszerzési kategóriák hierarchiája (feladat guide) beállítása](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Beszerzési kategóriahierarchia beállítása (feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
+
 
 

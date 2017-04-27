@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling"></a>Műveletek ütemezése
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a témakör információkat nyújt a műveletek ütemezésével kapcsolatban. A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról.
 
 A termelést műveleti szinten és feladatszinten is ütemezheti. A műveletütemezés a feladatütemezéssel szemben nem biztosítja az útvonalhoz tartalmazó termelési műveletek feladatokká való lebontását. Ha további részleteket szeretne beemelni az ütemezésbe, például az aktuális kapacitás adatait, a műveletütemezés futtatása után futtathatja a feladatütemezést. Csak a feladatütemezést is futtathatja. A feladatütemezést általában az üzemben végrehajtott egyes feladatok ütemezésére használják, rendszerint azonnal vagy rövid távú jelleggel.
@@ -76,5 +79,7 @@ Ha véges anyagokkal dolgozik, az ütemezés a termeléshez szükséges anyagok 
 --------
 
 [A műveleti ütemezés beállításai](operation-scheduling-options.md)
+
+
 
 

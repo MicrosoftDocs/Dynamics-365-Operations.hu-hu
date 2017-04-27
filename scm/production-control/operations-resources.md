@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-resources"></a>Operations-erőforrások
 
+[!include[banner](../includes/banner.md)]
+
+
 Az üzemi erőforrások hajtják végre egy projekt vagy egy termelési folyamat tevékenységeit. Ezek eltérő típusúak lehetnek, illetve eltérő képességeket hordozhatnak. 
 
 <a name="operations-resources"></a>Operations-erőforrások
@@ -36,7 +39,7 @@ Az üzemi erőforrások hajtják végre egy projekt vagy egy termelési folyamat
 Az üzemi erőforrások azok a gépek, eszközök, dolgozók, létesítmények, fizikai területek vagy szállítók, melyek az egy adott projekthez vagy termelési folyamathoz tartozó tevékenységeket végzik. Ezek eltérő típusúak lehetnek, illetve eltérő képességeket hordozhatnak.
 
 -   **Szállító** – Olyan külső erőforrás, amely projekttevékenységeket vagy gyártási műveleteket végez. Példa ilyenre egy alvállalkozó. Ha a szállítói erőforrásokat egy szállítói számlával társítja, úgy alvállalkozói beszerzéseket tud létrehozni az anyagjegyzék (AJ) sorok vagy a termelési sorok alapján.
--   **Emberi erőforrások** – Olyan, egy projektben vagy a termelésben érintett dolgozó, aki önállóan vagy egy eszköz vagy gép kezelőjeként valamilyen tevékenységet végez. A humánerőforrás-funkciók használata, az emberi erőforrások hozzákapcsolhatja a munkavégző. Az ütemezési motor ezt követően el tudja osztani az erőforrásokat, az adott dolgozó kapcsán meghatározott kompetenciák alapján.
+-   **Emberi erőforrások** – Olyan, egy projektben vagy a termelésben érintett dolgozó, aki önállóan vagy egy eszköz vagy gép kezelőjeként valamilyen tevékenységet végez. Ha az Emberi Erőforrások funkciót használja, emberi erőforrásokat tud kapcsolni a dolgozókhoz. Az ütemezési motor ezt követően el tudja osztani az erőforrásokat, az adott dolgozó kapcsán meghatározott kompetenciák alapján.
 -   **Gép** – A termeléshez szükséges gép vagy más termelési berendezés.
 -   **Eszköz** – Olyan szerszám vagy berendezés, amely jellemzően egy másik erőforrással együtt kerül felhasználásra egy tevékenység, egy projekt, vagy a termelés során.
 -   **Hely** – Egy tevékenység végrehajtásához szükséges, meghatározott méretű fizikai hely. Példa ilyenre az összeállítási terület.
@@ -80,5 +83,7 @@ Erőforráscsoport lean munkacellaként történő használata esetén a munkace
 
 ## <a name="costing-resources"></a>Költségszámítási erőforrások
 Ha olyan tevékenységet ad meg, mint például egy útvonalművelet vagy egy projektóra-előrejelzés, úgy meghatározhat egy adott üzemi erőforrásra vagy erőforráscsoportra vonatkozó követelményeket. Megadhat azonban egy adott típusú, vagy egy adott képességgel vagy kompetenciával rendelkező üzemi erőforrásra vonatkozó követelményeket is. Emiatt az aktuális erőforrás-hozzárendelésre csak a tevékenység ütemezésekor, illetve a kapacitás lefoglalásakor kerül sor. Útvonalművelet esetén tehát megadhatja, hogy becslés, illetve az anyagjegyzék-számítás egy konkrét üzemi erőforrásra legyen alapozva. A rendszer a jelen üzemi erőforrásra, mint költségszámítási erőforrásra hivatkozik. A költségszámítási erőforrásról is tud költségkategóriákat és a műveleti időket vinni át a tevékenységre. Művelet ütemezése esetén a becslés és az anyagjegyzék-számítás a ténylegesen ütemezett üzemi erőforrás felhasználásával történik.
+
+
 
 

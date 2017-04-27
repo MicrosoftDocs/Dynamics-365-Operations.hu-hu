@@ -1,6 +1,6 @@
 ---
 title: "Szervezeti adminisztráció kezdőlap"
-description: "Ez a témakör pontok forrásokat, amelyek segítséget Microsoft Dynamics 365 műveletek a szervezetben használt."
+description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek segítségével a szervezete hatékonyabban használhatja a Microsoft Dynamics 365 for Operations rendszert."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,56 +26,61 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="organization-administration-home-page"></a>Szervezeti adminisztráció kezdőlap
 
-Ez a témakör pontok forrásokat, amelyek segítséget Microsoft Dynamics 365 műveletek a szervezetben használt.
+[!include[banner](../includes/banner.md)]
+
+
+Ebből a témakörből olyan erőforrásokat érhet el, amelyek segítségével a szervezete hatékonyabban használhatja a Microsoft Dynamics 365 for Operations rendszert.
 
 <a name="number-sequences"></a>Számsorozatok
 ----------------
 
--   [Number sequence overview](number-sequence-overview.md)
--   [Számsorozatok beállítása varázsló segítségével](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (feladat guide)
--   [Számsorozatok egyedi alapon](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (feladat guide)
+-   [Számsorozatok áttekintése](number-sequence-overview.md)
+-   [Számsorozatok beállítása varázsló segítségével](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (Feladat-útmutató)
+-   [Számsorozatok beállítása egyedi alapon](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (Feladat-útmutató)
 
 ## <a name="address-books"></a>Címjegyzékek
--   [Address books](qa-address-books.md)
--   [Áttekintése: Globális címjegyzék](overview-global-address-book.md)
--   [A globális címjegyzékhez és újabb címjegyzék tervezése](plan-configuration-global-address-book-additional-address-books.md)
+-   [Címjegyzékek](qa-address-books.md)
+-   [Áttekintés: Globális címjegyzék](overview-global-address-book.md)
+-   [A globális címjegyzék és a további címjegyzék konfigurálásának tervezése](plan-configuration-global-address-book-additional-address-books.md)
 
 ## <a name="workflow"></a>Munkafolyamat
--   [Overview of the workflow system](overview-workflow-system.md)
--   [A munkafolyamat-rendszer architektúrája](workflow-system-architecture.md)
--   [Workflow elements](workflow-elements.md)
--   [Workflow actions](workflow-actions.md)
+-   [A munkafolyamat-rendszer áttekintése](overview-workflow-system.md)
+-   [A munkafolyamat-rendszer felépítése](workflow-system-architecture.md)
+-   [Munkafolyamat-elemek](workflow-elements.md)
+-   [Munkafolyamat-műveletek](workflow-actions.md)
 -   [Munkafolyamat létrehozása](create-workflow.md)
--   [Configure the properties of a workflow](configure-workflow-properties.md)
+-   [A munkafolyamat elemeinek beállítása](configure-workflow-properties.md)
 -   [Manuális feladat konfigurálása](configure-manual-task-workflow.md)
 -   [Automatizált feladat konfigurálása](configure-automated-task-workflow.md)
--   [Configure an approval process](configure-approval-process-workflow.md)
+-   [Jóváhagyási folyamat konfigurálása](configure-approval-process-workflow.md)
 -   [Jóváhagyási lépés konfigurálása](configure-approval-step-workflow.md)
 -   [Manuális döntés konfigurálása](configure-manual-decision-workflow.md)
 -   [Feltételes döntés konfigurálása](configure-conditional-decision-workflow.md)
 -   [Párhuzamos tevékenység beállítása](configure-parallel-activity-workflow.md)
 -   [Párhuzamos ág beállítása](configure-parallel-branch-workflow.md)
--   [Sortétel munkafolyamat-elem konfigurálása](configure-line-item-workflow.md)
+-   [Sortételelem munkafolyamatának beállítása](configure-line-item-workflow.md)
 
 ## <a name="case-management"></a>Esetkezelés
--   [Megtervezése: Eset telepítés](plan-case-management.md)
+-   [Tervezés: Esetbeállítás](plan-case-management.md)
 -   [Esetkezelési példák](cases.md)
 
-## <a name="electronic-signatures"></a>Az elektronikus aláírások
--   [Electronic signature overview](electronic-signature-overview.md)
--   [Állítsa be az elektronikus aláírások](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (feladat guide)
+## <a name="electronic-signatures"></a>Elektronikus aláírások
+-   [Az elektronikus aláírás áttekintése](electronic-signature-overview.md)
+-   [Az elektronikus aláírások beállítása](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (Feladat-útmutató)
 
 ## <a name="organizations"></a>Szervezetek
--   [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
--   [Plan the organizational hierarchy](plan-organizational-hierarchy.md)
--   [Hozzon létre egy működési egységet](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (feladat guide)
--   [Hozzon létre egy szervezeti hierarchia](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (feladat guide)
--   [Hozzon létre egy jogi személy](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (feladat guide)
+-   [Szervezetek és szervezeti hierarchiák](organizations-organizational-hierarchies.md)
+-   [Szervezeti hierarchia tervezése](plan-organizational-hierarchy.md)
+-   [Üzemi egység létrehozása](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (Feladat-útmutató)
+-   [Szervezeti hierarchia létrehozása](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (Feladat-útmutató)
+-   [Jogi személy létrehozása](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (Feladat-útmutató)
 
-## <a name="general-administration"></a>Általános felügyelet
--   [Embléma vagy Szalagcím módosítása](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (feladat guide)
--   [About date/time data and time zones](date-time-zones.md)
--   [Record templates](record-templates.md)
+## <a name="general-administration"></a>Általános adminisztráció
+-   [A fejléc vagy embléma módosítása](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (Feladat-útmutató)
+-   [A dátum-idő adatokról és az időzónákról](date-time-zones.md)
+-   [Rekordsablonok](record-templates.md)
+
+
 
 
 

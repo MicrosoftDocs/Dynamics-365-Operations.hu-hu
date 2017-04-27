@@ -1,6 +1,6 @@
 ---
 title: "Főkönyvi devizaátértékelés"
-description: "Ez a témakör a főkönyvi árfolyam átértékelési folyamat - a folyamat, a folyamat és újraértékelési tranzakciók sztornírozása számítási fut, szükség esetén a telepítő a következő áttekintése."
+description: "Ez a témakör áttekintést nyújt a főkönyvi devizaátértékelési folyamat következő pontjairól: telepítés, a folyamat futtatása, a folyamat számításai, valamint szükség esetén az átértékelési tranzakciók sztornírozása."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,14 +27,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Főkönyvi devizaátértékelés
 
-Ez a témakör a főkönyvi árfolyam átértékelési folyamat - a folyamat, a folyamat és újraértékelési tranzakciók sztornírozása számítási fut, szükség esetén a telepítő a következő áttekintése. 
+[!include[banner](../includes/banner.md)]
+
+
+Ez a témakör áttekintést nyújt a főkönyvi devizaátértékelési folyamat következő pontjairól: telepítés, a folyamat futtatása, a folyamat számításai, valamint szükség esetén az átértékelési tranzakciók sztornírozása. 
 
 Az időszak végén a könyvelési szabályok előírják a külföldi pénznemben levő főkönyvi számlaegyenlegek a különböző árfolyamtípusok használatával történő átértékelését (aktuális, múltbeli, átlag stb.). Például az egyik könyvelési megállapodás előírja az eszközök és források aktuális átváltási árfolyamon, a tárgyi eszközök múltbeli árfolyamon, illetve az eredményszámlák havi átlagon történő átértékelését. A Főkönyvi devizaátértékelés segítségével átértékelheti a mérleg- és az eredményszámlákat. 
 
 > [!NOTE]
-> Árfolyam-korrekció érhető el (AR) követelések és kötelezettségek (AP). E modulokat használ, ha a nyitott tranzakciók át kell értékelni az árfolyam-korrekció e modulok használatával. Az AR és az AP devizaátértékelése számlabejegyzést hoz létre a főkönyvben a nem realizált nyereség vagy veszteség megjelenítése érdekében, biztosítva a részkönyvek és a főkönyv egyeztethetőségét. Mivel az AR és az AP devizaátértékelése könyvelési tételeket hoz létre a Főkönyvben, a kinnlevőségek és kötelezettségek főszámlákat ki kell zárni a Főkönyv devizaátértékeléséből. 
+> A devizaátértékelés a Kinnlevőségek (AR) és a Kötelezettségek (AP) pontban is elérhető. Ha ezeket a modulokat használja, a nyitott tranzakciókat át kell értékelni az adott modulok devizaátértékelésének használatával. Az AR és az AP devizaátértékelése számlabejegyzést hoz létre a főkönyvben a nem realizált nyereség vagy veszteség megjelenítése érdekében, biztosítva a részkönyvek és a főkönyv egyeztethetőségét. Mivel az AR és az AP devizaátértékelése könyvelési tételeket hoz létre a Főkönyvben, a kinnlevőségek és kötelezettségek főszámlákat ki kell zárni a Főkönyv devizaátértékeléséből. 
 
-Az átértékelési folyamat futtatásakor az egyes fő számlákon levő, külföldi pénznemben közzétett egyenleget átértékeli a rendszer. Az átértékelési folyamat során létrehozott nem realizált nyereség vagy veszteség tranzakciókat a rendszer generálja. Két tranzakció feltétlenül hozhatók létre, az egyik az alapértelmezett pénznemben, a kimutatási pénznemhez egy második Ha szükséges. Az egyes könyvelési tételt könyvel a nem realizált nyereség vagy veszteség, és a fő számla átértékelendő.
+Az átértékelési folyamat futtatásakor az egyes fő számlákon levő, külföldi pénznemben közzétett egyenleget átértékeli a rendszer. Az átértékelési folyamat során létrehozott nem realizált nyereség vagy veszteség tranzakciókat a rendszer generálja. Két tranzakció hozható létre: egy a könyvelési pénznem és egy a jelentési pénznem számára, ha szükséges. Minden egyes könyvelési tétel a nem realizált nyereségbe vagy veszteségbe adódik fel, a fő számlát pedig átértékeli a rendszer.
 
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Devizaátértékelés futtatásának előkészítése
 Az átértékelési folyamat futtatása előtt a következő beállítás szükséges.
@@ -57,29 +60,29 @@ A **Devizaátértékelés** lap megjeleníti az egyes átértékelési folyamato
 
 A **Kezdő dátum** és a **Záró dátum** értékek meghatározzák az átértékelni kívánt devizaegyenleg számítási dátumtartományát. Eredményszámlák átértékelésekor minden, az adott dátumtartományban előforduló tranzakció összegének átértékelése megtörténik. Mérlegszámlák átértékelésekor a rendszer figyelmen kívül hagyja a Kezdő dátumot. Ehelyett az átértékelendő egyenleg meghatározása a pénzügyi év kezdetétől számítva a Záró dátumig történik. 
 
-A **árfolyam dátuma** segítségével határozza meg a dátumot, amelyre az átváltási árfolyamot kell alapértelmezett. Például a dátum tartomány a január 1-január 31 között az egyenlegek átértékeléséhez, de február 1 meghatározott átváltási árfolyamát. 
+Az **Árfolyam dátuma** segítségével határozza meg a dátumot, amelyre az árfolyam alapértelmezett. Például átértékelheti a január 1-je és a január 31-e dátumtartományban levő egyenlegeket a február 1-jén érvényes árfolyamot használva. 
 
-Válassza ki az átértékelni kívánt fő számlákat: Mind, Mérleg vagy Nyereség és veszteség. Csak a kijelölt átértékelési (a fő számla lapon) fő számlák értékeli. Fő számlák köre tovább korlátozhatja, használja a rekordok **is** fülre, és a fő partnerek vagy egyes fő számlák határozza meg. 
+Válassza ki az átértékelni kívánt fő számlákat: Mind, Mérleg vagy Nyereség és veszteség. A rendszer csak az átértékelésre (a Fő számla lapon) megjelölt fő számlákat értékeli át. Ha tovább szeretné korlátozni a fő számlák tartományát, használja a **Belefoglalandó** rekordok lapot a fő számlák tartományának vagy egyes fő számlák meghatározásához. 
 
-Az átértékelés folyamat futtatható egy vagy több jogi személy számára. A keresés csak a jogi személyek rendelkezünk hozzáféréssel jelenik meg. Válassza ki a jogalanyok, legyen az átértékelési folyamat futtatásához. 
+Az átértékelési folyamat egy vagy több jogi személy számára futtatható. A keresés csak az ön számára hozzáférhető jogi személyeket jeleníti meg. Válassza ki azokat a jogi személyeket, amelyek számára futtatni akarja az átértékelési folyamatot. 
 
-Az átértékelés egy vagy több deviza számára futtatható. A keresés minden olyan pénznem feladott a dátumtartományba fő számla (mérleg vagy eredmény), a kijelölt átértékelni jogalanyok típusának megfelelő fogja tartalmazni. Az alapértelmezett pénznemben szerepelnek a listán, de semmi sem fog átértékelt, ha az alapértelmezett pénznemben van megadva. 
+Az átértékelés egy vagy több deviza számára futtatható. A keresés minden olyan pénznemet tartalmaz, amelyet a fő számlatípus (Mérleg vagy Nyereség és veszteség) dátumtartományán belül adtak fel az átértékelésre kijelölt jogi személyek számára. A könyvelési pénznem szerepel a listában, de a rendszer nem végzi el az átértékelése, ha a könyvelési pénznem van kiválasztva. 
 
-Set **megtekintése könyvelés előtt** a **Igen** Ha szeretne, tekintse át a főkönyvi átértékelés eredménye. A kép általános főkönyvi eltér a szimuláció a P.A. és AP árfolyam-korrekció. A szimuláció P.A. és a hozzáférési pont a jelentést, de főkönyvbe könyvelhető, anélkül, hogy futtassa újra az átértékelési folyamat, amely előzetes van. Az előnézet eredményeit exportálhatja a Microsoft Excel programba, hogy megőrizze az összegek kiszámítási módjának előzményeit. Nem használhat kötegelt feldolgozást, ha meg akarja tekinteni az átértékelés eredményének előnézetét. Az előnézetben a felhasználónak lehetősége van a **Feladás** gombot használó valamennyi jogi személy eredményének feladására. Ha hiba merül fel valamelyik jogi személy eredményeivel kapcsolatban, a felhasználó feladhatja a jogi személyek alkészletét a **Jogi személyek kijelölése feladáshoz** gomb segítségével. 
+Állítsa az **Előnézet feladás előtt** pontot **Igen** lehetőségre, ha szeretné megtekinteni a Főkönyvi átértékelési eredményét. A Főkönyv előnézete eltér a Kinnlevőségek és a Kötelezettségek devizaátértékelési szimulációjától. Az AR és AP szimulációja egy jelentés, de Főkönyvnek van előnézete, amelyet fel lehet adni az átértékelési folyamat újbóli futtatása nélkül. Az előnézet eredményeit exportálhatja a Microsoft Excel programba, hogy megőrizze az összegek kiszámítási módjának előzményeit. Nem használhat kötegelt feldolgozást, ha meg akarja tekinteni az átértékelés eredményének előnézetét. Az előnézetben a felhasználónak lehetősége van a **Feladás** gombot használó valamennyi jogi személy eredményének feladására. Ha hiba merül fel valamelyik jogi személy eredményeivel kapcsolatban, a felhasználó feladhatja a jogi személyek alkészletét a **Jogi személyek kijelölése feladáshoz** gomb segítségével. 
 
-A külföldi pénznemben átértékelési folyamat befejezése után rekord jön létre minden egyes előzményeinek nyomon követéséhez.  Külön nyilvántartást minden jogi személy és a feladási réteg létrejön.
+A devizaátértékelési folyamat befejezése után az egyes futtatások előzményeinek nyomon követésére létrejön egy rekord.  Minden jogi személy és a feladási réteg számára külön rekord jön létre.
 
 ## <a name="calculate-unrealized-gainloss"></a>Nem realizált nyereség/veszteség kiszámítása
-A nem realizált nyereség/veszteség tranzakcióit másképpen hozza létre a rendszer a Főkönyvi devizaátértékelésben, illetve az AR és AP átértékelési folyamat során. Az AR és AP esetén a rendszer teljes mértékben sztornózza az előző átértékelést (feltéve, hogy a tranzakció még nincs kiegyenlítve), és új átértékelési tranzakció jön létre a nem realizált nyereség/veszteség számára az új árfolyam alapján. Ez azért van, mivel a rendszer minden egyes tranzakciót átértékel az AR és az AP lehetőségben. Főkönyvi könyvelés nem vissza az előző átértékelés. Ehelyett között, beleértve a korábbi átértékelési összegek és az új érték az árfolyam dátuma az átváltási árfolyam alapján, a fő számla egyenlegét a különbözeti tranzakció jön létre. 
+A nem realizált nyereség/veszteség tranzakcióit másképpen hozza létre a rendszer a Főkönyvi devizaátértékelésben, illetve az AR és AP átértékelési folyamat során. Az AR és AP esetén a rendszer teljes mértékben sztornózza az előző átértékelést (feltéve, hogy a tranzakció még nincs kiegyenlítve), és új átértékelési tranzakció jön létre a nem realizált nyereség/veszteség számára az új árfolyam alapján. Ez azért van, mivel a rendszer minden egyes tranzakciót átértékel az AR és az AP lehetőségben. A Főkönyvben a korábbi átértékelés nem kerül sztornírozásra. Ehelyett különbözeti tranzakció jön létre a fő számla egyenlege tekintetében, ideértve az előző átértékelési összegeket, valamint az Árfolyam dátuma árfolyamán alapuló új összeget. 
 
-**Példa** a következő egyenlegek fő számla 110110 létezik.
+**Példa** A 110110 fő számlához a következő egyenlegek léteznek.
 
 |            |                    |                        |                       |
 |------------|--------------------|------------------------|-----------------------|
 | **Dátum**   | **Főkönyvi számla** | **Tranzakció összege** | **Könyvelési összeg** |
 | Január 20. | 110110 (készpénz)      | 500 EUR (tartozik)        | 1000 USD (tartozik)      |
 
-A fő számla átértékelésekor január 31.  A nem realizált nyereség/veszteség az alábbiak szerint kell kiszámítani.
+A fő számla január 31-én kerül átértékelésre.  A nem realizált nyereség/veszteség kiszámítása a következőképpen történik.
 
 |                                             |                                            |                                  |                                    |                             |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
@@ -94,7 +97,7 @@ A következő könyvelési bejegyzés jön létre.
 | Január 31. | 110110 (készpénz)            |           | 166.67     |
 | Január 31. | 801400 (Nem realizált veszteség) | 166.67    |            |
 
-Új tranzakciófeladás sem történik a hónap február.  A fő számla február 28 van átértékelni.
+Február hónapra nem történik új tranzakciófeladás.  A fő számla átértékelése február 28-án történik.
 
 |                                             |                                            |                                  |                                    |                             |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
@@ -112,6 +115,8 @@ A következő könyvelési bejegyzés jön létre.
 ## <a name="reverse-foreign-currency-revaluation"></a>Devizaátértékelés sztornózása
 Ha az átértékelési tranzakciót sztorníroznia kell, válassza ki a **Sztornírozási tranzakció** gombot a **Devizaátértékelés** lapon. Új devizaátértékelési előzményrekord jön létre az átértékelés megtörténte vagy sztornírozási időpontja könyvvizsgálati ellenőrzési előzményeinek megőrzése érdekében. 
 
-Dátumsorrend ki az átértékelés eredményének sztornírozhatók, de szükség lehet annak biztosítása érdekében, minden egyes átértékelt fő számla egyenlege megfelelően több aktuális átértékelés is fordított. A sztornírozási elavult rendelés fordulhat elő, mert semmilyen módon szabályozhatja, mely fő számlák újraértékelik és gyakorisága, amikor újra. Egy szervezet például válassza ki a fő készpénzszámlák negyedéves alapon, de a fő számlák havi átértékelni.
+Sztornózhatja az elavult rendelés átértékelési eredményeit, de szükség lehet egy frissebb átértékelés sztornírozására is az egyes átértékelt fő számlák helyes egyenlegeinek biztosításához. Az elavult rendelés sztornírozása azért fordulhat elő, mert nem lehet meghatározni, hogy mely fő számlákat és milyen gyakorisággal értékeljen át a rendszer. Egy szervezet például kiválaszthatja a fő készpénzszámlák negyedéves átértékelését, de a többi fő számla átértékelése havonta történik.
+
+
 
 

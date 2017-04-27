@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="time-and-attendance-registration"></a>Munkaidő és jelenlét rögzítése
 
+[!include[banner](../includes/banner.md)]
+
+
 A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a cikk regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához. 
 
 <a name="registrations"></a>Regisztrációk
@@ -62,7 +65,7 @@ A beállítást követően a dolgozók részére többféle regisztráció is en
 -   Olyan, a dolgozó által esetlegesen végzett közvetett tevékenységek, amelyek nem termelési tevékenységek. Ilyen tevékenység lehet például a megbeszélés vagy a munkaterület megtisztítására.
 -   Túlóra, amely a tervezetten felüli órák, rugalmas munkaidő vagy túlóra formájában regisztrálható.
 
-## <a name="adding-clockout-registrations"></a>Clockout a regisztrációk hozzáadása
+## <a name="adding-clockout-registrations"></a>Távozáskori blokkolások hozzáadása
 Amennyiben a dolgozó távozáskor elfelejt blokkolni a munkanap végén, a hiányzó regisztráció egy kötegelt feladat futtatásával adható hozzá. A rendszer a dolgozó hozzárendelt profilja alapján összehasonlítása a érkezéskori és távozáskori blokkolás időt, és automatikusan beilleszti a hiányzó távozáskori blokkolási regisztrációt, a profil záró időpontjának megfelelően. Az érkezéskori, illetve távozáskori regisztrációk megléte egyaránt elengedhetetlen fontosságú az időjegyzékek későbbi, a bérszámfejtéshez történő továbbítást megelőző kiszámításához és jóváhagyásához.
 
 ## <a name="calculating-registrations"></a>A regisztrációk kiszámítása
@@ -113,6 +116,8 @@ Az olyan munkaköri feladatot, például valamilyen termelési feladatot végző
 -   Időfelhasználás
 -   Projektdíjak
 -   Projektcikkek
+
+
 
 
 

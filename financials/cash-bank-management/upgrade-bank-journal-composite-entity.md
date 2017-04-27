@@ -1,5 +1,5 @@
 ---
-title: "A banki napló összetett entitás frissítése"
+title: "Banki napló összetett entitásának frissítése"
 description: "A következő lépéseket kell elvégeznie ahhoz, hogy az összetett BankJournalEntity lehetőséghez további BankTransactionType mezőt adjon hozzá."
 author: twheeloc
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a>A banki napló összetett entitás frissítése
+# <a name="update-the-bank-journal-composite-entity"></a>Banki napló összetett entitásának frissítése
+
+[!include[banner](../includes/banner.md)]
+
 
 A következő lépéseket kell elvégeznie ahhoz, hogy az összetett BankJournalEntity lehetőséghez további BankTransactionType mezőt adjon hozzá.
 
@@ -34,10 +37,10 @@ A következő lépések segítségével az összetett BankJournalEntity lehetős
     -   Összetett entitás\\BankJournalEntity
     -   Entitás\\BankJournalHeaderEntity
     -   Entitás\\BankJournalLineEntity
-    -   Táblázat\\BankJournalHeaderStaging
-    -   Táblázat\\BankJournalLineStaging
+    -   Tábla\\BankJournalHeaderStaging
+    -   Tábla\\BankJournalLineStaging
 
-2.  Adatkezelés\\adatok projektek
+2.  Adatok kezelése\\adatprojektek
     -   Jelenítse meg a **Banki tranzakció **típusát a **Forrásadatok **elrendezésben.
         -   Forrásadatok formátuma = XML-elem
         -   Entitás neve = Banki napló
@@ -49,6 +52,8 @@ A következő lépések segítségével az összetett BankJournalEntity lehetős
             -   Ellenőrizze, hogy a Banki tranzakció típusa hozzá van-e rendelve a forrásból az előkészítéshez.
 
 3.  Importálja az új kivonatot.
+
+
 
 
 

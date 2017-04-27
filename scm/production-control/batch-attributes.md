@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="batch-attributes"></a>Kötegattribútumok
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a kötegattribútumokkal kapcsolatban tartalmaz információkat. A kötegattribútumok a nyersanyagok és a késztermékek jellemzői, amelyek készletkötegeket alkotnak. A cikk bemutatja továbbá a kötegattribútumok társítását, és hogy a kötegek lefoglalásánál hogyan kereshet rájuk.
 
 A kötegattribútumok a nyersanyagok és a késztermékek jellemzői, amelyek készletkötegeket alkotnak. A kötegattribútumok különbözhetnek olyan tényezők tekintetében, mint a környezeti tényezők, a köteg előállításához használt nyersanyagok minősége, vagy a késztermék eredménye. A használt szám és kötegattribútumok-típusok is jelentősen eltérhetnek iparáganként. Az alábbiakban két példák, illusztrálja, hogy hogyan kell használni a kötegattribútumokat:
@@ -42,12 +45,14 @@ Az attribútumok számának és típusainak jobb kezelése érdekében használh
 Kötegattribútumokat hozzárendelhet az egyes termékekhez, amelyeket készletkötegekben tartanak, vagy hozzárendelheti őket meghatározott vevőkhöz kapcsolódó termékekhez. Mielőtt hozzárendel egy kötegattribútumot a vevő szintjén, a termék szintjén kell hozzárendelnie. A terméknek kell rendelkeznie egy kötegdimenzió-készlettel, amely az **Aktív** lehetőségre van állítva a nyomonkövetési dimenziócsoportban. Használja a termékspecifikus lapot, ha kötegattribútum-csoportot akar hozzárendelni az egyes termékekhez. Ha az attribútum meghatározott vevőhöz tartozó termékre jellemző, akkor a vevőre jellemző lapot kell használni. Attribútum hozzáadásakor egy termékhez megadhat egyéb paramétereket is. Íme néhány példa:
 
 -   Egy attribútum maximális és minimális értékei az **Egész** vagy **Rész** típusban.
--   A tolerancia műveleteket az attribútum a **egész** vagy **tört** típusa. Ha az attribútum értéke a minimális és maximális tartományon kívül esik, a művelet lehet figyelmeztetést vagy hibaüzenetet.
+-   Az attribútum tűréshatárának műveletei az **Egész** vagy **Tört** típusban. Ha az attribútum értéke a minimális és maximális tartományon kívül esik, a művelet lehet figyelmeztetés vagy hibaüzenet.
 -   Az attribútum célértéke. Ez az érték az attribútum optimális értéke, és minden attribútumtípusra vonatkozik.
 
 Hozzáférhet a kiválasztott termékek lapjaihoz, ha a **Felszabadított termékek** oldalon kiválasztja a Termékinformációk kezelése lehetőséget. Miután hozzárendelte kötegattribútumokat egy termékhez, akkor hozzáadhat adott értékeket az attribútumokhoz a **Készletköteg-attribútumok** oldalon.
 
 ## <a name="reserve-batches"></a>Kötegek foglalása
 Rákereshet kötegattribútumokra amikor egy vásárlói rendelés kielégítéséhez kötegfoglalásokat végez egy értékesítési rendeléshez, de egy termelési rendeléshez való kötegkitárolás és -foglalás esetén is megteheti ezt. A keresés segítségével keresse meg a készletköteget, amely tartalmazza a terméket, amely rendelkezik a kívánt kötegattribútummal. A köteg- vagy kötegek megtalálása után lefoglalhatja a terméket a származó készlet-tranzakciósorba.
+
+
 
 

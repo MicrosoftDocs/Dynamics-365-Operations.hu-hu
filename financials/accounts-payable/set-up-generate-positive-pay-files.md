@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Fizetési ellenőrző fájlok beállítása és létrehozása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk ismerteti az ellenőrzött fizetések beállítását és az ellenőrzött fizetési fájlok létrehozását. 
 
 A fizetési ellenőrzés beállítása elektronikus csekklista generálásához, amely a banknak elküldhető. Ezután, amikor egy csekket bemutatnak a banknak a bank összehasonlítja azt a csekklistával. Ha a csekk megfelel a listában szereplő csekkel a bank törli azt. Ha a csekk nem egyezik meg a listában szereplő csekkel, akkor a bank bent tartja ellenőrzésre.
 
 ## <a name="security-for-positive-pay-files"></a>A fizetési ellenőrző fájlok biztonsága
-Az ellenőrzött fizetési fájlok bizalmas információt tartalmazhatnak a kedvezményezettekről és a csekk-összegekről. Ezért győződjön meg róla, hogy a megfelelő biztonsági intézkedéseket használja attól az időponttól, hogy a fájlok létrejönnek addig, amíg a bank meg nem kapja őket. A fizetési ellenőrző fájlok a webböngészője által megadott helyre lesznek letöltve. Pozitív fizetési fájlok bizalmas adatokat tartalmazhatnak, mivel fontos, hogy csak engedéllyel rendelkező felhasználók létrehozhatják és megtekinthetik a ezt az információt a Microsoft Dynamics 365 műveletek hozzáféréssel rendelkeznek. A következő táblázat segítségével határozza meg a szükséges jogosultságokkal.
+Az ellenőrzött fizetési fájlok bizalmas információt tartalmazhatnak a kedvezményezettekről és a csekk-összegekről. Ezért győződjön meg róla, hogy a megfelelő biztonsági intézkedéseket használja attól az időponttól, hogy a fájlok létrejönnek addig, amíg a bank meg nem kapja őket. A fizetési ellenőrző fájlok a webböngészője által megadott helyre lesznek letöltve. Mivel a fizetési ellenőrző fájlok bizalmas adatokat is tartalmazhatnak, fontos, hogy csak engedéllyel rendelkező felhasználók férjenek hozzá ezen információk létrehozásához és megtekintéséhez a Microsoft Dynamics 365 for Operations programban. A következő táblázat segítségével határozza meg a szükséges jogosultságokkal.
 
 <table>
 <colgroup>
@@ -156,5 +159,7 @@ Miután kifizetésre kerültek a fizetési ellenőrző fájlban felsorolt csekke
 
 ## <a name="recall-a-positive-pay-file"></a>Fizetési ellenőrző fájl visszahívása
 Ha módosítania kell valamit a fizetési ellenőrző fájlban, akkor vissza tudja hívni. A **Fizetési ellenőrző fájl összegzése** lapon, válasszon ki egy ellenőrzött fizetést, amelynek állapota **Létrehozva**, majd válassza ki a **Visszahívás** művelet. Minden csekkhez a mező, amely a fizetési ellenőrző fájlban azt jelöli, hogy a csekk szerepel-e egy fizetési ellenőrző fájlban visszaállításra kerül. Ezt követően létrehozhat egy új ellenőrzött fizetési fájlt, amely tartalmazza a visszavont csekket.
+
+
 
 

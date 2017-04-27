@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-guarantee"></a>Garancialevelek
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a garancia levelekkel kapcsolatban tartalmaz információkat. A garancialevélben a bank elfogadja, hogy egy bizonyos pénzösszeget fizet egy személynek, amennyiben a bank egy ügyfele késik a fizetéssel vagy nem teljesíti a megnevezett személy felé a kötelezettségeit. 
 
 A garancialevél egy bank (kezes) megállapodása, vállalja egy megadott pénzösszeg kifizetését egy személynek (kedvezményezettnek), ha a bank ügyfele (meghatalmazott) kihagy egy befizetést vagy egy kötelezettséget a kedvezményezett irányába. A garancialevelek nem átruházhatóak. Csak a megállapodásban foglalt kedvezményezettre érvényesek. A meghatalmazott kérelmezhet növekedést vagy csökkentést a garancialevél értékén, a megállapodás feltételei szerint. 
@@ -55,6 +58,8 @@ A következő táblázat leírja a garancialevelen végrehajtható műveleteket.
 | Kiterjesztés              | Miután átadta a garancialevelet a kedvezményezett számára, növelheti az érvényesség időtartamát, ha az szükséges. |
 | Megszakítás              | Ha a garancialevél okafogyottá válik, visszavonhatja a szerződést.                  |
 | Kiegyenlítés           | Miután a kedvezményezett bemutatja a garancialevelet a banknak, fizesse ki készpénzben a garancialevelet.                      |
+
+
 
 
 

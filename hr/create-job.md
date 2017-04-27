@@ -1,6 +1,6 @@
 ---
-title: "A feladat-alkatrészek beállítása"
-description: "Ez a témakör ismerteti, hogy a feladat lehetnek, és hogyan használhatja a szervezet azon elemeinek példákat tartalmaz a fogalmi elemek."
+title: "Feladat összetevőinek beállítása"
+description: "Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,38 +25,41 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="setting-up-the-components-of-a-job"></a>A feladat-alkatrészek beállítása
+# <a name="setting-up-the-components-of-a-job"></a>Feladat összetevőinek beállítása
 
-Ez a témakör ismerteti, hogy a feladat lehetnek, és hogyan használhatja a szervezet azon elemeinek példákat tartalmaz a fogalmi elemek. 
+[!include[banner](includes/banner.md)]
 
-Feladatok létrehozása előtt be kell állítania néhány hivatkozási információt. A feladat, amely csak egy nevet hozhat létre. További információk, például a beosztást, együtt alapértelmezett értékeket biztosít a beosztások a feladathoz rendelt. Emellett a beírt adatok egy része használható kompenzációs konstrukciók konkrét feladatok szűréséhez. Ha juttatási programok egy bizonyos feladathoz szűrésére használható jogosultsági beállítandó kell beállíthatja beosztások és feladattípusok feladatok beállítása előtt. Úgy, hogy ezeket az alapértelmezett értékeket érhető el, ha beosztások hozzáadása a projekthez időt takaríthat meg. 
 
-Néhány feladat részletei, például a beosztás, a típus és a függvény olyan dátum-hatékony. Hozzon létre egy projektet ma, de nem adja hozzá ezeket az adatokat később, és a feladat a létrehozás dátuma szerint, majd keresse meg, ha ezek az adatok nem jelennek meg. Ezért célszerű létrehozni ezeket az információkat néhány előtt szükség van rá. Ily módon az információkat adhat új feladatok létrehozásakor.
+Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben. 
+
+Feladatok létrehozása előtt be kell állítania bizonyos referenciaadatokat. Létrehozhat olyan feladatot is, amelynek csak neve van. További információk - például beosztás - megadásával viszont alapértelmezett értékek biztosíthatók a feladathoz rendelt beosztások számára. Emellett a beírt adatok egy része használható kompenzációs konstrukciók szűréséhez konkrét feladatokhoz. Ha szeretne jogosultságot beállítani, amelyet felhasználhat bizonyos feladathoz tartozó kompenzációs konstrukciók szűrésére, úgy állítson be feladatbeosztásokat és feladattípusokat a feladatok beállítása előtt. Ha ezen alapértelmezett értékek elérhetők, időt takaríthat meg, amikor beosztások hozzáadását végzi a feladathoz. 
+
+Egyes feladatadatok, például a beosztás, a típus és a funkció dátumfüggőek. Ha ma létrehoz egy feladatot, de ezeket az adatokat csak később adja hozzá, és aztán megnézi a feladatot a létrehozás dátuma szerint, úgy ezek az adatok nem jelennek meg. Ezért célszerű létrehozni ezeket az információkat még azelőtt, hogy szükség lenne rájuk. Ily módon az információkat hozzáadhatja új feladatok létrehozásakor.
 
 ## <a name="job-titles"></a>Beosztások
 A létrehozni kívánt beosztásokhoz titulusokat is be kell állítania. A pozíciók azon beosztások titulusait öröklik, amelyekhez hozzárendelték őket. 
 
-Használatával a beosztások karbantartása a **címek** lapot, amely a keresés funkció segítségével is megnyithatja. A a ** címek ** lapon, írja be a címeket fogja használni a feladatok.
+Beosztások karbantartásához használja a **Beosztások** oldalt, amely a keresés funkció segítségével nyitható meg. A **Beosztások** oldalon írja be a beosztásokat, amelyeket használni tervez a feladatokhoz.
 
 ## <a name="job-types"></a>Beosztástípusok
-Feladattípusok segítségével kategóriákba csoportosítani a hasonló feladatokat. Feladattípusok nem lesz szükség. azonban ha a későbbiekben a kompenzációkezelés jogosultsági szabályainak beállításakor szeretne beosztástípusokat használni, ezeket még a beosztások előtt kell beállítania. Feladattípusok például teljes és részmunkaidős, vagy Munkabér és hourly fizet. Megmaradjanak a feladattípusok segítségével a **projekt-típusok** oldalon. A a **projekt-típusok** lap, adja meg nevét és rövid leírását a feladat típusa. A a **alól állapot** mezőben, ez a feladattípus feladatok alól tisztességes munkára vonatkozó szabványok törvény (FLSA) állapotának jelzésére a következő lehetőségek közül választhat:
+Beosztástípusok segítségével a hasonló feladatok kategóriákba sorolhatók. A beosztástípusok használata nem kötelező, azonban ha a későbbiekben a kompenzációkezelés jogosultsági szabályainak beállításakor szeretne beosztástípusokat használni, ezeket még a beosztások előtt kell beállítania. Beosztástípusok például teljes és részmunkaidős, illetve a munkabéres és az órabéres. A beosztástípusok karbantartásához használja a **Beosztástípusok** oldalt. A **Beosztástípusok** oldalon adja meg a beosztástípus nevét és rövid leírását. A **Mentességi állapot** mezőben a következő lehetőségek közül választhat annak jelzésére az ilyen beosztástípusú feladatoknál, hogy az Egyesült Államok munkajogi törvénye (FLSA, Fair Labor Standards Act) ezekre a feladatokra nem vonatkozik:
 
--   **Adómentes** – feladatok mentesek a FLSA a túlóra.
--   **Nem mentes** – feladatok nem mentesek a FLSA a túlóra.
--   **Nem alkalmazható** – FLSA fedezeti nem vonatkozik.
+-   **Mentes** – A beosztásokhoz az FLSA szerint túlórapénz nem jár.
+-   **Nem mentes** – A beosztásokhoz az FLSA szerint túlórapénz jár.
+-   **Nem alkalmazható** – Az FLSA hatálya erre nem terjed ki.
 
 ## <a name="job-functions"></a>Beosztások
-Feladat találkozását magas szintű funkcionális kategóriák írják le, és magas szintű vámok vonatkoznak. Beosztások nem lesz szükség. Beosztások típusai, és segítségével kiszűrheti a kompenzációs konstrukciók konkrét projektekre. Társítania beosztások és feladattípusok juttatási programok által a támogathatósági szabályok beállítása a **támogathatósági szabályok** oldalon. A feladat típusa és a jogosultság-szabály segítéségével beállított feladatkör egyedi kombinációja érvényes kompenzációs terv is csatolhatja a szintek egy halmazát. (Ezek a funkciók fix kompenzációs tervek és a változó kompenzációs konstrukciók vonatkozik.) Azonban ha szeretné használni a beosztások, kompenzációs kezelésére vonatkozó támogathatósági szabályok beállításakor, állítson be beosztások feladatok beállítása előtt. A következő táblázat néhány példát mutat feladatokkal kapcsolatos funkciókat.
+A beosztási funkciók magas szintű funkcionális kategóriákat írnak le magas szintű feladatokat írnak elő. A beosztási funkciók használata nem kötelező, A beosztási funkciókat és beosztási típusokat együttesen felhasználva az egyes feladatokhoz hozzá lehet szűrni a kompenzációs konstrukciókat. A feladatfunkciók és feladattípusok kompenzációs konstrukciókhoz társítása az **Alkalmazhatósági szabályok** oldalon, alkalmazhatósági szabályok felállításával történik. Ezen túlmenően a kompenzációs konstrukcióhoz hozzá lehet csatolni a szintek azon csoportját, amelyek az alkalmazhatósági szabály által behatárolt, adott feladattípus/feladatfunkció kombinációra vonatkoznak. (Ezek a funkciók mind a fix, mind a változó kompenzációs konstrukcióra vonatkoznak.) A beosztásfunkciók használata nem kötelező, azonban ha a későbbiekben a kompenzációkezelés jogosultsági szabályainak beállításakor szeretne beosztásfunkciókat használni, ezeket még a beosztások előtt kell beállítania. Az alábbi táblázatban látható néhány példa munkaköri beosztásokra.
 
 | Munka           | Beosztás         |
 |---------------|----------------------|
-| Értékesítési igazgató | Középkategóriás kezelő    |
-| Könyvelő    | Szakemberek számára        |
+| Értékesítési igazgató | Középvezetői szint    |
+| Könyvelő    | Szakemberek        |
 
-Megmaradjanak a projekt funkciók segítségével a **feladatkörét** oldalon. A a **feladatkörét** lap, adja meg azonosítóját és a feladatkör rövid leírását.
+A beosztási funkciók karbantartásához használja a **Beosztási funkciók** oldalt. A **Beosztási funkciók** oldalon adja meg a beosztási funkció azonosító kódját és rövid leírását.
 
 ## <a name="job-tasks"></a>Munkaköri feladatok
-Munkaköri feladatok leírása alapvető feladatok, a munkavállaló, aki a projekt olyan helyzetben kell végeznie. Az azonos projektfeladat több feladat, és a projektfeladatok alkalmazó feladatok beosztások adhatók meg. A következő táblázat néhány példát mutat a projektfeladatok.
+A munkaköri feladatok bemutatják az adott pozíciójú dolgozótól elvárt alapvető feladatokat. Ugyanazon munkaköri feladatok több munkához, valamint a munkaköri feladatokat használó munkákkal kapcsolatos beosztásokhoz is hozzáadhatók. Az alábbi táblázatban látható néhány példa munkaköri feladatokra.
 
 <table>
 <thead>
@@ -69,20 +72,22 @@ Munkaköri feladatok leírása alapvető feladatok, a munkavállaló, aki a proj
 <tr class="odd">
 <td>Értékesítési igazgató</td>
 <td><ul>
-<li><strong>A Teljesítményfigyelő-áttekintés</strong> – tekintse át az egyes üzletkötők teljesítménye-feldolgozás.</li>
-<li><strong>ABS-felülvizsgálati</strong> – jóváhagyása vagy elutasítása az egyes üzletkötők távolléti kérelmek vagy -regisztráció.</li>
+<li><strong>Teljesítményellenőrzés</strong> – Az egyes értékesítők teljesítményének áttekintése.</li>
+<li><strong>Hiányzásellenőrzés</strong> – Az üzletkötők távolléti kérelmeinek vagy regisztrációnak jóváhagyása vagy elutasítása.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Könyvelő</td>
-<td><strong>FIN-jelentés</strong> – heti pénzügyi jelentéseket nyújt be a pénzügyi igazgató.</td>
+<td><strong>Pénzügyi jelentés</strong> – Heti pénzügyi jelentések bemutatása a pénzügyi igazgatónak.</td>
 </tr>
 </tbody>
 </table>
 
-Megmaradjanak a munkaköri feladatok segítségével a **projektfeladatok** oldalon. A a **projektfeladatok** lap, adja meg nevét és leírását a projektfeladatra vonatkozóan. A a **Megjegyzés:** mező, tetszés szerint adjon meg további információkat. A megjegyzések egy adott feladat az itt megadott megjegyzések módosítása nélkül lehet frissíteni.
+A munkaköri feladatok karbantartásához használja a **Munkaköri feladatok** oldalt. A **Munkaköri feladatok** oldalon adja meg a munkaköri feladat nevét és leírását. A **Megjegyzés** mezőben igény szerint további információkat is megadhat. A megjegyzések anélkül frissülnek az adott feladathoz, hogy az itt Ön által megadott megjegyzések módosulnának.
 
 ## <a name="areas-of-responsibility"></a>Hatáskörök
-Hatáskörök segítségével adja meg a munka szerepek, folyamatok és termékek, amely felelős a munkavállaló, aki a projekt olyan helyzetben van. Például "Könyvelő" nevű projekt, egy felelősségi köre lehet "Pénzügyi jelentési termék A." Megmaradjanak a hatáskörök segítségével a **hatáskörök** lapot, amely a keresés funkció használatával is megtalálhatja. A a **hatáskörök** lap, adja meg nevét és leírását a felelősség. A a **Megjegyzés:** mező, tetszés szerint adjon meg további információkat. A megjegyzések egy adott feladat az itt megadott megjegyzések módosítása nélkül lehet frissíteni.
+Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műveletek megjelöléséhez, amelyekért a dolgozó egy adott beosztásban felelős. Például a „Könyvelő” nevű beosztáshoz tartozó hatáskörre példa lehet a „Pénzügyi jelentés az A termékkel kapcsolatban”. A hatáskörök karbantartására használja a **Hatáskörök** oldalt, amelyet a keresés funkció használatával találhat meg. A **Hatáskörök** oldalon adja meg a hatáskör nevét és leírását. A **Megjegyzés** mezőben igény szerint további információkat is megadhat. A megjegyzések anélkül frissülnek az adott feladathoz, hogy az itt Ön által megadott megjegyzések módosulnának.
+
+
 
 

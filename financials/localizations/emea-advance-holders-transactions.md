@@ -1,6 +1,6 @@
 ---
 title: "Előlegre jogosult tranzakciói"
-description: "Útmutató a Microsoft Dynamics 365 műveletek előlegre jogosult tranzakcióinak dolgozni."
+description: "Ismerje meg, hogyan dolgozhat a Microsoft Dynamics 365 for Operationsben előlegre jogosultak tranzakcióival."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,36 +27,41 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advance-holder-transactions"></a>Előlegre jogosult tranzakciói
 
-Útmutató a Microsoft Dynamics 365 műveletek előlegre jogosult tranzakcióinak dolgozni.
+[!include[banner](../includes/banner.md)]
 
-Előlegre jogosultak előlegre jogosult fiókok segítségével lehet feladni a munkavállalók tranzakciók. A megadott minden előlegre jogosult munkavállaló azonosító minden előlegre jogosult tranzakcióinak nyomon követésére használható. Ezt a számot a Számlaszám az előlegre jogosult tranzakcióinak olvassa a **a főkönyvi naplók** és **előlegre jogosult tranzakciói** lapok.
 
-## <a name="create-and-post-a-purchase-order-with-advance-holder-details"></a>Hozza létre és könyvelje a beszerzési rendelés előleg jogosultja részletes
-Beszerzési rendelésekkel kapcsolatos általános tudnivalókért tanulmányozza [beszerzési rendelés áttekintése](/manufacturing/procurement/purchase-order-overview). Szállítói számla létrehozása és könyvelt előleg jogosultja részletes, ha az előleg jogosultja egyenlegek az alkalmazott mérlegszámlára helyett a szállítói egyenleg számlára könyveli. Előlegre jogosult részletek hozzáadása egy beszerzési rendelés, tegye a következőket:
+Ismerje meg, hogyan dolgozhat a Microsoft Dynamics 365 for Operationsben előlegre jogosultak tranzakcióival.
 
--   A a **a fizetési feltételek** mezőjében a **ár- és** szakaszban, jelölje be a fizetési feltételek. <!---For more information about **Terms of payment**, see [Define vendor payment terms](http://ax.help.dynamics.com/en/wiki/define-vendor-payment-terms/).-->Jelölje be a fizetési feltétel, amelynek a **az előlegre jogosulttól** jelölve a **a fizetési feltételek** oldalon. Előlegre jogosultak a fizetési feltételek beállításával kapcsolatos további tudnivalókért lásd: [előlegre jogosultak](emea-advance-holders.md).
--   A a **előlegre jogosult** mezőjében a **ár- és** gyorslapon jelölje be az előleg jogosultja a beszerzési rendelés.
+Ezen előlegre jogosult dolgozók számára tranzakciókat előlegrejogosult-fiókok segítségével lehet feladni. A minden előlegre jogosultnál megadott dolgozói azonosító használható az előlegre jogosultak összes tranzakciójának nyomon követésére. Ez a szám számlaszámként hívható le az előlegre jogosultak tranzakcióihoz a **Főkönyvi naplók** és **Előlegre jogosult tranzakciói** oldalakon.
 
-A beszerzési rendelések feladási folyamatot hoz létre, két ellentétes összegeket szállítói tranzakciók és egy előlegre jogosult tranzakcióra. Előleg jogosultja részletek nélkül csak egy szállítói tranzakció jön létre.
+## <a name="create-and-post-a-purchase-order-with-advance-holder-details"></a>Beszerzési rendelés létrehozása és feladása az előlegre jogosultak részletes adataival
+A beszerzési rendelésekkel kapcsolatos általános tudnivalókért lásd: [Beszerzési rendelések áttekintése](/manufacturing/procurement/purchase-order-overview). Előlegjogosulti adatokat tartalmazó szállítói számla létrehozása és feladása esetén az előlegre jogosult egyenlegei alkalmazotti egyenlegszámlára kerülnek feladásra a szállítói egyenlegszámla helyett. Előlegre jogosult részleteinek beszerzési rendeléshez történő hozzáadásához tegye a következőket:
 
-## <a name="settle-advance-holder-balances-via-a-bank"></a>Előlegre jogosult egyenlegeinek kiegyenlítése egy banki átutalással
-Előleg jogosultja egyenlegek a banki átutalással egyenlíti ki, ha az előleg jogosultja egyenlegek záró naplóbejegyzéseinek a főkönyvi naplóban jönnek létre. Állíthatja be a kódot a napló és a bank a **előlegre jogosultak** a szakasz a **kötelezettségek paramétereinek** oldalon. További tudnivalókért lásd: [előlegre jogosultak](emea-advance-holders.md). Előlegre jogosult egyenlege a banki átutalással lezárásához nyissa meg a **kötelezettségek**&gt;**előlegre jogosultak**&gt;**előlegre jogosultak**. Kattintson a **mérleg** a műveletpanel gombra, majd a **szoros banki átutalással**. Adja meg az alábbi adatokat a **szoros banki átutalással** oldalon.
+-   Az **Ár és engedmény** szakasz **Fizetési feltételek** mezőjében válassza ki a fizetési feltételeket. <!---For more information about **Terms of payment**, see [Define vendor payment terms](http://ax.help.dynamics.com/en/wiki/define-vendor-payment-terms/).--> Olyan fizetési feltételt válasszon ki, amelynél a **Kezdő előlegre jogosult** lehetőség ki van választva a **Fizetési feltételek** oldalon. Előlegre jogosultak számára fizetési feltételek beállításával kapcsolatos további tudnivalókért lásd: [Előlegre jogosultak](emea-advance-holders.md).
+-   Az **Ár és engedmény** gyorslap **Előlegre jogosult** mezőjében válassza ki az előlegre jogosultat a beszerzési rendeléshez.
+
+A beszerzési rendelés feladási folyamata két szállítói tranzakciót hoz létre ellentétes összegekkel és egy előlegrejogosult-tranzakcióval. Előlegjogosulti adatok nélkül csak egy szállítói tranzakció jön létre.
+
+## <a name="settle-advance-holder-balances-via-a-bank"></a>Előlegre jogosultak egyenlegeinek banki kiegyenlítése
+Előlegre jogosultak egyenlegeinek banki kiegyenlítésekor az előlegre jogosultak egyenlegeit lezáró naplóbejegyzések a főkönyvben jönnek létre. A naplóhoz tartozó kódot és a bankot a **Kötelezettségek paraméterei** oldal **Előlegre jogosultak** szakaszában állíthatja be. További információ: [Előlegre jogosultak](emea-advance-holders.md). Előlegre jogosultak egyenlegének banki lezárásához nyissa meg a **Kötelezettségek** &gt; **Előlegre jogosultak** &gt; **Előlegre jogosultak** elemet. Kattintson az **Egyenleg** gombra a műveleti ablaktáblában, majd kattintson a **Zárás bankon keresztül** elemre. Adja meg az alábbi adatokat a **Zárás bankon keresztül** oldalon.
 
 | Mező                    | Leírás |
 |------------------------------|-------------------|
-| **Date of payment**          | A dátum, amely a kifizetést kell feladni.|
-| **Átutalandó összeg** | A közben a záró egyenleg összegét adja meg. A jelzett összeg a **összeg** mezőjében a **mérleg** alapértelmezés szerint megjelenik a képernyőn. |
-| **Automatic**                | Válassza ki a **automatikus** készletet hozhat létre, és a napló könyvelése jelölőnégyzetet a **fizetendő paramétereinek** oldalon.|
+| **Fizetés dátuma**          | Adja meg a fizetés feladásának dátumát.|
+| **Átutalandó összeg** | Adja meg a zárás közbeni egyenleget. Az **Egyenleg** képernyő **Összeg** mezőjében jelzett összeg alapértelmezés szerint látható. |
+| **Automatikus**                | Jelölje be az **Automatikus** jelölőnégyzetet a **Kötelezettségek paraméterei** oldalon előre beállított napló létrehozásához és feladásához.|
 
-## <a name="settle-advance-holder-balances-via-cash"></a>Készpénzes előlegre jogosult egyenlegeinek kiegyenlítése
-Ha az előleg jogosultjának egyenlegek készpénzes egyenlíti ki, az előleg jogosultja egyenlegek záró naplóbejegyzéseinek bizonylat a naplóban jönnek létre. Állíthatja be a kódot a napló és a pénz a **előlegre jogosultak** fülre, a **fizetendő paramétereinek** oldalon. További tudnivalókért lásd: [előlegre jogosultak](emea-advance-holders.md). Előlegre jogosult egyenlege készpénzes lezárásához nyissa meg a **kötelezettségek**&gt;**előlegre jogosultak**&gt;**előlegre jogosultak**. Kattintson a **mérleg** a műveletpanel gombra, majd a **készpénzes szoros**. Adja meg az alábbi adatokat a **készpénzes szoros** oldalon.
+## <a name="settle-advance-holder-balances-via-cash"></a>Előlegre jogosultak egyenlegeinek készpénzes kiegyenlítése
+Előlegre jogosultak egyenlegeinek készpénzes kiegyenlítésekor az előlegre jogosultak egyenlegeit lezáró naplóbejegyzések egy bizonylatnaplóban jönnek létre. A naplóhoz tartozó kódot és a készpénzt a **Kötelezettségek paraméterei** oldal **Előlegre jogosultak** lapján állíthatja be. További információ: [Előlegre jogosultak](emea-advance-holders.md). Előlegre jogosultak egyenlegének készpénzes lezárásához nyissa meg a **Kötelezettségek** &gt; **Előlegre jogosultak** &gt; **Előlegre jogosultak** elemet. Kattintson az **Egyenleg** gombra a műveleti ablaktáblában, majd kattintson a **Zárás készpénzen keresztül** elemre. Adja meg az alábbi adatokat a **Zárás készpénzen keresztül** oldalon.
 
 | Mező                    | Leírás
 |------------------------------|-----------------|
-| **Date of payment**          | A dátum, amely a kifizetést kell feladni.|
-| **Átutalandó összeg** | A közben a záró egyenleg összegét adja meg. A jelzett összeg a **összeg** mezőjében a **mérleg** alapértelmezés szerint megjelenik a képernyőn. |
-| **Automatic**                | Válassza ki a **automatikus** készlet jelölőnégyzetet, ha a napló létrehozása és feladása automatikusan egy, a **fizetendő paramétereinek** oldalon.     |
+| **Fizetés dátuma**          | Adja meg a fizetés feladásának dátumát.|
+| **Átutalandó összeg** | Adja meg a zárás közbeni egyenleget. Az **Egyenleg** képernyő **Összeg** mezőjében jelzett összeg alapértelmezés szerint látható. |
+| **Automatikus**                | Jelölje be az **Automatikus** jelölőnégyzetet a **Kötelezettségek paraméterei** oldalon előre beállított napló automatikus létrehozásához és feladásához.     |
 
-A slip után napló feldolgozása, ha az összeg a **átutalandó összeg** mező negatív volt, a készpénz-kifizetési bizonylathoz keletkezik az előlegre jogosult az egyenlegek bezárásakor. Ha az összeg a **átutalandó összeg** mezőben pozitív volt, a bevételezési pénztárbizonylat jön létre.
+A bizonylatnapló feldolgozása után, amennyiben az **Átutalandó összeg** mezőben lévő összeg negatív volt, az egyenlegek lezárásakor az előlegre jogosultakhoz kifizetési pénztárbizonylat jön létre. Amennyiben az **Átutalandó összeg** mezőben lévő összeg pozitív volt, bevételezési pénztárbizonylat jön létre.
+
+
 
 

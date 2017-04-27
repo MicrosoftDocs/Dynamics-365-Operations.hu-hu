@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-entry-certificates"></a>EU beérkezési igazolások
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk az európai uniós (EU) beérkezési igazolásokról nyújt tájékoztatást.
 
 Egy európai uniós (EU) beérkezési igazolással kapcsolatban a következő műveleteket hajthatja végre:
@@ -76,7 +79,7 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 </table>
 
 ## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>EU-s beérkezési igazolás létrehozása, regisztrációja és feltöltése
-Beérkezési igazolás EU hozhat létre, automatikusan vagy kézzel történjen. Az EU tétel tanúsítványt létrehozása és feladása során a csomagjegyzék vagy számla vevő használatával automatikusan nyomtat a **Csomagjegyzék feladása** lap vagy a **könyvelési számla** oldalon. Manuális létrehozásához vagy újranyomtathatja a vevői számla tétel EU bizonyítvánnyal, használja a **Számlanapló** oldalon. Ezenkívül megadhat információkat egy olyan EU beérkezési igazolással kapcsolatban, amelyet egy harmadik fél bocsátott ki a **Beérkezési igazolások naplója** képernyőn keresztül.
+Beérkezési igazolás EU hozhat létre, automatikusan vagy kézzel történjen. Amikor egy csomagjegyzéket vagy számlát ad fel egy vevő részére a **Szállítólevél feladása** oldalt vagy a **Számla feladása** oldalt használva, létrejön és nyomtatásra kerül egy EU beérkezési igazolás. Az EU-s beérkezési igazolás kézi létrehozásához vagy újranyomtatásához egy vevői számla esetében használja a **Számlanapló** képernyőt. Ezenkívül megadhat információkat egy olyan EU beérkezési igazolással kapcsolatban, amelyet egy harmadik fél bocsátott ki a **Beérkezési igazolások naplója** képernyőn keresztül.
 
 ### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>EU-s beérkezési igazolás automatikus vagy kézi létrehozása
 
@@ -121,6 +124,8 @@ Ha nincs hozzáférése a feladat végrehajtásához használt lapokhoz, akkor f
 </tr>
 </tbody>
 </table>
+
+
 
 
 

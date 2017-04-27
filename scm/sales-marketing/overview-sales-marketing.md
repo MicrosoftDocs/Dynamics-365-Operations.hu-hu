@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-and-marketing"></a>Értékesítés és marketing
 
+[!include[banner](../includes/banner.md)]
+
+
 Az értékesítés és marketing segítségével beszerzése, tárolhatók és használhatók a különböző típusú adatokat az értékesítési folyamat. Ezt az adatot tartalmaz, az eredeti értékesítési kezdeményezés jövőbeli intézkedést és kiegészítő értékesítési.
 
 <a name="marketing"></a>Marketing
 ---------
 
-Marketing kampányok és tevékenységek segítségével megtalálhatja a potenciális ügyfeleket, valamint kapcsolatokat építhet ki velük, így a kezdeti interakciók üzleti kapcsolatokká fejlődhetnek. A következő folyamatábra a marketinghez kapcsolódó üzleti folyamatokat ábrázolja. [![Marketing az üzleti folyamat](./media/marketing01.jpg)](./media/marketing01.jpg)
+Marketing kampányok és tevékenységek segítségével megtalálhatja a potenciális ügyfeleket, valamint kapcsolatokat építhet ki velük, így a kezdeti interakciók üzleti kapcsolatokká fejlődhetnek. A következő folyamatábra a marketinghez kapcsolódó üzleti folyamatokat ábrázolja. [![Marketinghez kapcsolódó üzleti folyamatok](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Kapcsolatok
 
@@ -39,10 +42,10 @@ Az értékesítés és marketing folyamán a potenciális ügyfelekkel való kap
 
 ### <a name="campaigns"></a>Kampányok
 
-A kampányok az Ön által részvételre kiválasztott potenciális vevőkhöz, érdeklődőkhöz, lehetőségekhez, valamint vevőkhöz tartozó kapcsolatokat célozzák. A Microsoft Dynamics 365 műveletekhez kampányok, például telemarketinges, levelezési és e-mail kampányok, így maximalizálhatja a potenciális vevő különböző típusú hozhat létre. A kampány előrehaladása során, pozitív visszajelzések beérkezése esetén megkezdheti az értékesítési folyamatot a pozitív választ adó ügyfelekkel.
+A kampányok az Ön által részvételre kiválasztott potenciális vevőkhöz, érdeklődőkhöz, lehetőségekhez, valamint vevőkhöz tartozó kapcsolatokat célozzák. A Microsoft Dynamics 365 for Operations rendszerben a vevői potenciál maximalizálása érdekében többféle kampányt is létrehozhat, többek között telemarketing-, levél- és e-mail-kampányokat. A kampány előrehaladása során, pozitív visszajelzések beérkezése esetén megkezdheti az értékesítési folyamatot a pozitív választ adó ügyfelekkel.
 
 ## <a name="sales"></a>Értékesítés
-Az értékesítési funkció segítségével árajánlatokat, új és meglévő ügyfeleknek történő értéknövelt és párhuzamos értékesítéseket, továbbá értékesítési rendeléseket hozhat létre, valamint értékesítési számlákat készíthet a vevők számára. A következő folyamatábra az értékesítéshez kapcsolódó üzleti folyamatokat ábrázolja. [![Értékesítési üzleti folyamat](./media/sales01.jpg)](./media/sales01.jpg)
+Az értékesítési funkció segítségével árajánlatokat, új és meglévő ügyfeleknek történő értéknövelt és párhuzamos értékesítéseket, továbbá értékesítési rendeléseket hozhat létre, valamint értékesítési számlákat készíthet a vevők számára. A következő folyamatábra az értékesítéshez kapcsolódó üzleti folyamatokat ábrázolja. [![Értékesítéshez kapcsolódó üzleti folyamatok](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Értékesítési ajánlatok
 
@@ -50,7 +53,7 @@ Az értékesítési funkció segítségével árajánlatokat, új és meglévő 
 
 ### <a name="up-sellcross-sell"></a>Párhuzamos értékesítés
 
-Az értéknövelt, illetve a párhuzamos értékesítési technikák akkor alkalmazhatók, amikor bevisznek egy adott vevőhöz tartozó rendelést. Értéknövelt értékesítés esetén az aktuális termék helyett egy másikat javasolnak. Párhuzamos értékesítés esetén pedig az aktuális termék mellé javasolnak egy másikat. Termék listák beállításakor annak jelzésére, hogy mikor kell egy idegen eladását vagy Kiárusítás termék a termék javasolt különleges szabályokat hozhat létre.
+Az értéknövelt, illetve a párhuzamos értékesítési technikák akkor alkalmazhatók, amikor bevisznek egy adott vevőhöz tartozó rendelést. Értéknövelt értékesítés esetén az aktuális termék helyett egy másikat javasolnak. Párhuzamos értékesítés esetén pedig az aktuális termék mellé javasolnak egy másikat. Terméklisták beállításakor egyedi szabályokat hozhat létre annak jelzésére, hogy mikor kell egy terméket párhuzamos vagy értéknövelt értékesítésre javasolni.
 
 ### <a name="sales-orders"></a>Értékesítési rendelés
 
@@ -117,5 +120,7 @@ Egy szabadszöveges számla egy olyan számla, amely nincs kapcsolatban értéke
 #### <a name="pro-forma-invoice"></a>Proforma számla
 
 A pro forma számla olyan számla, amely a tényleges számla mennyiségének becsléseként készül el a számla feladása előtt. Pro forma számlát vevői és szabadszöveges számlához is ki lehet nyomtatni.
+
+
 
 

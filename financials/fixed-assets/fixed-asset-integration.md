@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-integration"></a>Tárgyieszköz-integráció
 
+[!include[banner](../includes/banner.md)]
+
+
 A tárgyi eszközök integrálhatók a főkönyvvel, a készletkezeléssel, a kinnlevőségekkel és a követelésekkel. A tárgyi eszközök emellett a beszerzési rendelésekkel integrálva is beállíthatók.
 
 <a name="general-ledger"></a>Főkönyv
@@ -82,7 +85,7 @@ Az egyes rendelési sorok integrációja a **Tárgyi eszközök** lapon történ
 ## <a name="project-management-and-accounting"></a>Projektvezetés és könyvelés
 A projekteket társítani lehet a projektben érintett eszközhöz. Ezenkívül minden egyes fázist, feladatot vagy alprojektek külön eszközhöz lehet társítani. Minden projektrekordhoz egy-egy tárgyi eszköz társítható. Társítás létrehozásához a tárgyi eszköz számát a **Projektek** lap **Tárgyi eszköz** száma mezőjében kell megadni. A projekt típusa lehet **Belső** vagy **Költségprojekt**. 
 
-A **Projektek** lap használatával lehet a projektekhez társított eszközök részletes adatait is megtekinteni. A tárgyieszköz-rekord megjelenítéséhez kattintson a **Beállítás** gyorslapon található eszközhivatkozásra, ami után megnyílik a **Tárgyi eszközök** lap. Kattintson a **projektek**&gt;**minden** a tárgyi eszközhöz tartozó projektek megtekintése. 
+A **Projektek** lap használatával lehet a projektekhez társított eszközök részletes adatait is megtekinteni. A tárgyieszköz-rekord megjelenítéséhez kattintson a **Beállítás** gyorslapon található eszközhivatkozásra, ami után megnyílik a **Tárgyi eszközök** lap. Ezután kattintson a **Projektek** &gt; **Minden projekt** elemre, és így megtekintheti a tárgyi eszközhöz társított projekteket. 
 
 A tárgyi eszközöket rendszerint akkor társítják projektekhez, amikor a projektek az eszközön végzett munkához, karbantartáshoz vagy javításhoz kapcsolódik. Amikor a projekt elkészült, nem jön létre automatikusan felértékelés az eszközhöz. Ezért a felértékelést manuálisan kell létrehoznia, ha szükség van rá. 
 
@@ -90,6 +93,8 @@ Projekt és eszköz közötti társítás törléséhez törölje a **Tárgyi es
 
 Megjelölheti a tárgyi eszköznél, ha azt egy becsült projekt részeként állította elő vagy hozta létre. A becsült projekt végén automatikusan feladhatja az eszközbeszerzési tranzakciót.
 
-További tudnivalókért lásd: [keresztül beszerzési eszközök beszerzésére fordított](acquire-assets-procurement.md)
+További tudnivalókért lásd: [Eszközök vételezése beszerzésen keresztül](acquire-assets-procurement.md).
+
+
 
 

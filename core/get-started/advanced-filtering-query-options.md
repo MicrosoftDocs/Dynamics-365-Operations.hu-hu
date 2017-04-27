@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-filtering-and-query-syntax"></a>Speciális szűrési és lekérdezési szintaxis
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanel "egyezések" operátor használata esetén.
 
 <a name="advanced-query-syntax"></a>Speciális lekérdezési szintaxis
@@ -52,79 +55,79 @@ A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhet�
 <td><em>Érték</em></td>
 <td>Megegyezik a beírt értékkel.</td>
 <td>Írja be a keresendő érték.</td>
-<td><strong>Kovács</strong> talált &quot;Kovács&quot;.</td>
+<td>A <strong>Kovács</strong> keresésére a program a &quot;Kovács&quot; értéket találja meg.</td>
 </tr>
 <tr class="even">
-<td>! <em>értéke</em> (felkiáltójel)</td>
+<td>!<em>érték</em> (felkiáltójel)</td>
 <td>Nem egyezik meg a beírt értékkel</td>
 <td>Írjon be egy felkiáltójelet az elé az érték elé, amelyet szeretne kizárni a keresésből.</td>
-<td><strong>! Kovács</strong> kivételével minden érték keresése &quot;Kovács&quot;.</td>
+<td>A <strong>!Kovács</strong> keresésére a program a &quot;Kovács&quot; érték kivételével az összes értéket megtalálja.</td>
 </tr>
 <tr class="odd">
 <td><em>Kezdő érték</em>..<em>Záró érték</em> (két pont)</td>
 <td>A két ponttal elválaszott értékek között keres</td>
 <td>Írja be a „-tól” értéket, majd két pontot, végül az „-ig” értéket.</td>
-<td><strong>1..10</strong> 1 és 10 közötti összes érték keresése. Azonban a karakterlánc-mező <strong>A.. C</strong> minden kezdődő értékek keresése &quot;A&quot; és &quot;B&quot;, és az értékek, amelyek pontosan egyezik a &quot;C&quot;. Például nem találja meg a lekérdezés &quot;Ca&quot;. Az összes értékek keresése &quot;A*&quot; - &quot;C*&quot;, típus <strong>A.. D</strong>.</td>
+<td><strong>1..10</strong> keresése esetén az 1 és 10 közötti összes értéket megtalálja a program. Karakterláncmezőkben azonban az <strong>A..C</strong> keresése esetén az összes &quot;A&quot; és &quot;B&quot; kezdetű értéket, valamint a &quot;C&quot; értékkel pontosan megegyező értékeket találja meg a program. A &quot;Ca&quot; értéket például ez a keresés nem fogja megtalálni. Hogy minden értéket megtaláljon &quot;A*&quot; értéktől &quot;C*&quot; értékig, írja be, hogy: <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>érték</em> (két pont)</td>
 <td>Megkeresi a beírt értékkel egyenlő, vagy annál kisebb értékeket</td>
 <td>Írjon be két pontot majd az értéket.</td>
-<td><strong>.. 1000</strong> megtalálja bármely szám, amely kisebb vagy egyenlő, mint 1000, például a &quot;100&quot;, &quot;999.95&quot;, és &quot;1000&quot;.</td>
+<td><strong>..1000</strong> keresése esetén a program minden olyan számot megtalál, amely kisebb vagy egyenlő, mint 1000 - például &quot;100&quot;, &quot;999,95&quot; és &quot;1000&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>érték</em>.. (két pont)</td>
 <td>A beírt értékkel megegyező vagy annál nagyobb értékeket találja meg</td>
 <td>Írja be az értéket, majd két pontot.</td>
-<td><strong>1000..</strong> Megállapítja minden számot, amely nagyobb vagy egyenlő, 1000, például a &quot;1000&quot;, &quot;1000,01&quot;, és &quot;1 000 000&quot;.</td>
+<td><strong>1000..</strong> keresése esetén a program minden olyan számot megtalál, amely nagyobb, mint 1000 vagy pontosan annyi, például a következőket: &quot;1000&quot;, &quot;1000,01&quot; és &quot;1 000 000&quot;.</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>az érték</em> (nagyobb jel)</td>
+<td>&gt;<em>jel</em> (nagyobb mint jel)</td>
 <td>Nagyobb, mint a beírt érték.</td>
-<td>Írja be a nagyobb jel (<strong>&gt;</strong>), és ezután az értéket.</td>
-<td><strong>&gt;1000</strong> megtalálja bármely számot, amely nagyobb, mint 1000, például a &quot;1000.01&quot;, &quot;20 000&quot;, és &quot;1 000 000&quot;.</td>
+<td>Írja be a „nagyobb” (<strong>&gt;</strong>) jelet, majd az értéket.</td>
+<td><strong>&gt;1000</strong> keresésére esetén a program minden olyan számot megtalál, amely nagyobb, mint 1000 vagy pontosan annyi, például a következőket: &quot;1000,01&quot;, &quot;20 000&quot; és &quot;1 000 000&quot;.</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>az érték</em> (kisebb jel)</td>
+<td>&lt;<em>érték</em> (kisebb mint jel)</td>
 <td>Kisebb, mint a beírt érték</td>
-<td>Írjon be egy kisebb mint jel (<strong>&lt;</strong>), és ezután az értéket.</td>
-<td><strong>&lt;1000</strong> megtalálja a számra 1000-nél kisebb, mint &quot;999.99&quot;, &quot;1&quot;, és &quot;-200&quot;.</td>
+<td>Írja be a „kisebb” (<strong>&lt;</strong>) jelet, majd az értéket.</td>
+<td><strong>&lt;1000</strong> keresésére a program minden olyan számot megtalál, amely kisebb, mint 1000, például a következőket: &quot;999,99&quot;, &quot;1&quot; és &quot;-200&quot;.</td>
 </tr>
 <tr class="even">
-<td><em>az érték</em>* (csillag)</td>
+<td><em>érték</em>* (csillag)</td>
 <td>A beírt értéktől kezdve</td>
-<td>Írja be a kezdő értéket, majd a csillag (<strong>*</strong>).</td>
-<td><strong>S *</strong> kezdődik, amely bármely karakterlánc keresése &quot;S&quot;, mint &quot;Stockholm&quot;, &quot;Sydney&quot;, és &quot;San Francisco&quot;.</td>
+<td>Írja be a kezdő értéket, majd egy csillagot (<strong>*</strong>).</td>
+<td><strong>S*</strong> keresése esetén a program minden &quot;S&quot;-sel kezdődő karakterláncot megtalál, például a következőket: &quot;Stockholm&quot;, &quot;Sydney&quot; és &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td>*<em>érték</em> (csillag)</td>
 <td>A beírt értékre végződő</td>
 <td>Írjon be egy csillagot, majd a végződésként szereplő értéket.</td>
-<td><strong>* Kelet-</strong> végződik, amely bármely karakterlánc keresése &quot;keleti&quot;, mint &quot;északkeleti&quot; és &quot;délkeleti&quot;.</td>
+<td><strong>*kelet</strong> keresése esetén a program minden olyan karakterláncot megtalál, amely a &quot;kelet&quot; szóra végződik, például a következőket: &quot;északkelet&quot;, &quot;délkelet&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>az érték</em>* (csillag)</td>
+<td>*<em>érték</em>* (csillag)</td>
 <td>Tartalmazza a beírt értéket</td>
 <td>Írjon be egy csillagot, egy értéket, majd egy másik csillagot.</td>
-<td><strong>*TH*</strong> tartalmaz, amely bármely karakterlánc keresése &quot;th&quot;, mint &quot;északkeleti&quot; és &quot;délkeleti&quot;.</td>
+<td><strong>*nt*</strong> keresése esetén a program minden olyan karakterláncot megtalál, amelyben szerepel az &quot;nt&quot; érték, például a következőket: &quot;Dunántúl&quot; és &quot;Tiszántúl&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (kérdőjel)</td>
 <td>Egy vagy több ismeretlen karakter szerepel benne.</td>
 <td>Írjon be egy kérdőjelet az ismeretlen karakternek az értéken belüli helyére.</td>
-<td><strong>SM? th</strong> talált &quot;Szabó&quot; és &quot;Smyth&quot;.</td>
+<td><strong>Cseh?</strong> keresése esetén a program a &quot;Csehi&quot; és a &quot;Csehy&quot; értéket is megjeleníti.</td>
 </tr>
 <tr class="even">
 <td><em>érték</em>,<em>érték</em> (vessző)</td>
 <td>A vesszővel elválasztott értékekkel megegyező értékek</td>
 <td>Írja be az összes keresési feltételt vesszővel elválasztva.</td>
-<td><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;. <strong>10, 20, 30, 100</strong> keresése &quot;10, 20, 30, 100&quot;.</td>
+<td>Az <strong>A, D, F, G</strong> pontosan az &quot;A&quot;, &quot;D&quot;, &quot;F&quot; és &quot;G&quot; elemeket találja meg. A <strong>10, 20, 30, 100</strong> pontosan a &quot;10, 20, 30, 100&quot; elemeket találja meg.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL-utasítás</span>) (Zárójelben SQL utasítás)</td>
 <td>A megadott lekérdezésnek megfelelő.</td>
 <td>Írjon be zárójelek között egy SQL-lekérdezést.</td>
-<td><strong><span class="code">(adatforrás. Mezőnév! = &quot;A&quot;)</span></strong></td>
+<td><strong><span class="code">(adatforrás.Mezőnév != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
 <td>C</td>
@@ -137,7 +140,7 @@ A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhet�
 <td>Az érték vagy a paraméterek a <strong>SysQueryRangeUtil</strong> metódus által megadott értékek</td>
 <td>Az érték vagy a paraméterek a <strong>SysQueryRangeUtil</strong> metódus által megadott értékek</td>
 <td><ol>
-<li>Kattintson a <strong>követelések</strong>&gt;<strong>számlák</strong>&gt;<strong>nyitott vevői számlák</strong>.</li>
+<li>Ugorjon a következőre: <strong>Kinnlévőségek</strong> &gt; <strong>Számlák</strong> &gt; <strong>Nyitott vevői számlák</strong>.</li>
 <li>Nyomja le a Ctrl+Shift+F3 nyissa meg a <strong>Lekérdezési</strong> oldalon.</li>
 <li>Kattintson a <strong>Tartomány</strong> lap <strong>Hozzáadás</strong> gombjára.</li>
 <li>A <strong>Táblázat</strong> mezőben válassza a <strong>Nyitott vevői tranzakciók</strong> opciót.</li>
@@ -228,6 +231,8 @@ A tábla a következő szakaszban további részletekért lásd <strong>SysQuery
 </tr>
 </tbody>
 </table>
+
+
 
 
 

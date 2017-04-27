@@ -1,5 +1,5 @@
 ---
-title: "Anyagjegyzék-számítások csoportok"
+title: "Anyagjegyzék-számítási csoportok"
 description: "Ez a cikk bemutatja az anyajegyzék (AJ) számítási csoportjait, valamint azok felállítását. Az AJ számítás futtatásához be kell állítania egy számítási csoportokat, majd ezeket hozzá kell rendelnie különböző cikkekhez, vagy be kell állítania egy alapértelmezett számítási csoportot. A számítási csoport számítási beállításai az alapértelmezett értékek az Anyagjegyzék-számítás oldalon az Anyajegyzék számításának ideje alatt."
 author: YuyuScheller
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-groups"></a>Anyagjegyzék-számítások csoportok
+# <a name="bom-calculations-groups"></a>Anyagjegyzék-számítási csoportok
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk bemutatja az anyajegyzék (AJ) számítási csoportjait, valamint azok felállítását. Az AJ számítás futtatásához be kell állítania egy számítási csoportokat, majd ezeket hozzá kell rendelnie különböző cikkekhez, vagy be kell állítania egy alapértelmezett számítási csoportot. A számítási csoport számítási beállításai az alapértelmezett értékek az Anyagjegyzék-számítás oldalon az Anyajegyzék számításának ideje alatt. 
 
-A **Készlet- és raktárkezelési paraméterek** oldalon egy alapértelmezett számítási csoportra, vagy a **Megjelent termék részletei** lapon egy termékkel kapcsolatos számítási csoportra van szükség. A rendszer először megkeresi a számítási csoport beállítása a **, amely a termék részletei** oldalon. Ha nem talál egy számítási csoporthoz tartozik, akkor jelenik meg a **készlet- és raktárkezelési paraméterek** oldalon. Ha a rendszer nem talál egy számítási csoporthoz, a felhasználó hibaüzenetet kap a számítás során. A számítási csoport irányelveket tartalmaz az önköltségiár-modellhez, az eladásiár-modellhez, és a figyelmeztetések feladatlistához. A számítási csoport számítási beállításai az alapértelmezett értékek az **Anyagjegyzék-számítás** oldalon az Anyajegyzék számításának ideje alatt.
+A **Készlet- és raktárkezelési paraméterek** oldalon egy alapértelmezett számítási csoportra, vagy a **Megjelent termék részletei** lapon egy termékkel kapcsolatos számítási csoportra van szükség. A rendszer először a számítási csoport beállításait keresi meg a **Megjelent termék részletei** lapon. Ha itt nem talál számítási csoportot, a **Készlet- és raktárkezelési paraméterek** oldalon keres tovább. Ha a rendszer nem talál számítási csoportot, a felhasználó egy hibaüzenetet kap a számítás során. A számítási csoport irányelveket tartalmaz az önköltségiár-modellhez, az eladásiár-modellhez, és a figyelmeztetések feladatlistához. A számítási csoport számítási beállításai az alapértelmezett értékek az **Anyagjegyzék-számítás** oldalon az Anyajegyzék számításának ideje alatt.
 
 ## <a name="purposes-of-bom-calculation-groups"></a>Az Anyajegyzék-számítási csoportok céljai
 Több ok miatt is hozzárendelhet Anyajegyzék-számítási csoportot egy cikkhez:
@@ -72,7 +75,7 @@ A **Figyelmeztetések** gyorslapon kiválaszthatja, hogy mely figyelmeztető üz
 A Készlet- és raktárkezelési paraméterek alapértelmezett beállítása
 --------------------------------------------------------------
 
-Mivel a számítási csoportok szükségesek a számítások futtatásához, ezért be kell állítania egy alapértelmezett számítási csoportot a készletkezelési paramétereknél. Ez a beállítási lehetővé teszi a vállalatoknak az általános költségcsoport és a nyereség beállítását az összes cikkhez. Ezután ha egy adott cikkhez speciális számítási követelmények szükségesek, a felhasználó hozzárendelhet különböző számítási csoportokat. Általában beállíthat számítási csoportokat az AJ összetevő cikkekhez az AJ cikkek helyett. Azonban ha figyelmeztető üzenetek jelennek meg, akkor számítási csoportok is alkalmazhatóak. Egy cikkhez hozzárendelt számítási csoport felülírja a készletkezelési paramétereknél megadott alapértelmezett értéket. Beállíthatja az alapértelmezett paraméter **kezelési költség**&gt;**számviteli politikák Készletbeállítások**&gt;**paraméterek**&gt;**készlet számviteli**&gt;**számítási csoport**. Alapértelmezett konfigurációs csoport beállításával konfigurálhatja azokat a figyelmeztetési feltételeket is, amelyek az AJ számítási folyamat során jelennek meg a felhasználóknak, ha a kiválasztott összetevő számítási hibákat okozhat.
+Mivel a számítási csoportok szükségesek a számítások futtatásához, ezért be kell állítania egy alapértelmezett számítási csoportot a készletkezelési paramétereknél. Ez a beállítási lehetővé teszi a vállalatoknak az általános költségcsoport és a nyereség beállítását az összes cikkhez. Ezután ha egy adott cikkhez speciális számítási követelmények szükségesek, a felhasználó hozzárendelhet különböző számítási csoportokat. Általában beállíthat számítási csoportokat az AJ összetevő cikkekhez az AJ cikkek helyett. Azonban ha figyelmeztető üzenetek jelennek meg, akkor számítási csoportok is alkalmazhatóak. Egy cikkhez hozzárendelt számítási csoport felülírja a készletkezelési paramétereknél megadott alapértelmezett értéket. Alapértelmezett paramétereket beállíthat a **Költségkezelés** &gt; **Készletkönyvelési irányelvek beállítása** &gt; **Paraméterek** &gt; **Készletkönyvelés** &gt; **Számítási csoport** menüben. Alapértelmezett konfigurációs csoport beállításával konfigurálhatja azokat a figyelmeztetési feltételeket is, amelyek az AJ számítási folyamat során jelennek meg a felhasználóknak, ha a kiválasztott összetevő számítási hibákat okozhat.
 Figyelmeztető üzenetek megtekintése a Teljesített oldalon
 ------------------------------------------
 
@@ -85,5 +88,7 @@ Az AJ számítások figyelmeztető üzeneteket hoznak létre. Megtekintheti a ki
 -   Azonosítja, ha az egyik anyagjegyzék-sorban szereplő cikkhez a kívántnál kisebb nyereségességi százalék tartozik.
 
 A figyelmeztető üzenetek közötti eltérések alapján azonosíthat több AJ számítási csoportot. Elég lehet például egy anyagjegyzék-számítási csoport is, amely figyelmeztetési feltételeket tartalmaz az aktív anyagjegyzékre, a nulla összetevő-mennyiségre és a nulla összetevőköltségre vonatkozóan. Amikor elindít egy AJ számítást, felülírhatja az anyagjegyzék-számítási csoporthoz társított figyelmeztetési feltételeket. Valamint hozzá is adhat, illetve el is távolíthat figyelmeztetési feltételeket. Eltávolítható például az aktív útvonalra vonatkozó figyelmeztetési feltétel, amikor az adott helyzetben nem kell útvonaladatokat kezelni. **Megjegyzés:** A munkaidő és jelenlét tartalmazza a **Számítási csoportok** oldalt, azonban ennek az oldalnak nincsen kapcsolata az AJ számítási csoportokhoz. A Munkaidő és jelenlétben a dolgozók hozzárendelhetőek olyan számítási csoportokhoz, amelyek megmutatják, hogy kik azok a dolgozók, akik ugyan ahhoz a felügyeleti személyhez vagy vezetőhöz tartoznak. A dolgozói regisztrációk számítása elvégezhető automatikusan vagy manuálisan egy felügyeleti személy vagy vezető által.
+
+
 
 

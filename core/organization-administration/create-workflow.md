@@ -26,15 +26,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-workflow"></a>Munkafolyamat létrehozása
 
+[!include[banner](../includes/banner.md)]
+
+
 A következő témakörök a munkafolyamat létrehozásának lépéseit mutatják be.
 
 <a name="open-the-workflow-editor"></a>A munkafolyamat-szerkesztő megnyitása
 ------------------------
 
-A működő műveleti modul a Microsoft Dynamics 365 hozhat létre a munkafolyamat típusát határozza meg. Ezekkel a lépésekkel válassza ki a létrehozni kívánt munkafolyamat-típust, és nyissa meg a munkafolyamat-szerkesztőt.
+A használt Microsoft Dynamics 365 for Operations modul határozza meg, hogy milyen típusú munkafolyamatot hozhat létre. Ezekkel a lépésekkel válassza ki a létrehozni kívánt munkafolyamat-típust, és nyissa meg a munkafolyamat-szerkesztőt.
 
 1.  Nyissa meg a modult, amelyhez új munkafolyamatot szeretne létrehozni. Például egy beszerzési igénylés munkafolyamatának létrehozásához kattintson a **Beszerzés és forrás** lehetőségre.
-2.  Kattintson a **telepítési**&gt;**\[modul neve\] munkafolyamatok**.
+2.  Kattintson a **Beállítás** &gt; **\[Modulnév\]-munkafolyamatok** elemre.
 3.  A megjelenő listaoldalon a műveleti ablaktáblán kattintson az **Új** lehetőségre.
 4.  A **Munkafolyamat létrehozása** oldalon válassza ki a létrehozandó munkafolyamatot, majd kattintson a **Munkafolyamat létrehozása** pontra. A munkafolyamat-szerkesztő megjelenik. A következő eljárásokkal lehet a munkafolyamatot megtervezni.
 
@@ -75,6 +78,8 @@ Ha készen áll a munkafolyamat mentésére és aktiválására, kövesse az al�
 3.  Ha az összes hibát és figyelmeztetést feloldotta, megjelenik a **Munkafolyamat aktiválása** lap. Válasszon a következő lehetőségek közül:
     -   A munkafolyamat aktuális verziójának aktiválásához kattintson az **Új verzió aktiválása** lehetőségre. Ha egy munkafolyamat aktív, akkor a felhasználók dokumentumokat küldhetnek feldolgozásra.
     -   Ha nem szeretné aktiválni ezt a verziót, kattintson a **Ne aktiválja az új verziót** lehetőségre. A munkafolyamatot később is aktiválhatja.
+
+
 
 
 

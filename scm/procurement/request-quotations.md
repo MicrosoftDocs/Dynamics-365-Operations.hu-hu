@@ -1,5 +1,5 @@
 ---
-title: "Ajánlatkérés (ajánlatkérések)"
+title: "Ajánlatkérések (RFQ-k)"
 description: "Ez a cikk betekintést nyújt az árajánlat kérés folyamatába. Egy szervezet akkor ad ki árajánlatkérést, amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat. Az ajánlatkérésben arra kéri a szállítókat, hogy adják meg a meghatározott számú cikkekhez ajánlott áraikat és szállítási idejüket. Emellett kérheti a szállítóktól annak meghatározását, hogy vannak-e egyéb járulékos költségek, például szállítási költséget, illetve kínálnak-e nagyobb rendelések vagy a szállítói számla korai kifizetése esetén engedményeket."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Ajánlatkérés (ajánlatkérések)
+# <a name="request-for-quotations-rfqs"></a>Ajánlatkérések (RFQ-k)
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk betekintést nyújt az árajánlat kérés folyamatába. Egy szervezet akkor ad ki árajánlatkérést, amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat. Az ajánlatkérésben arra kéri a szállítókat, hogy adják meg a meghatározott számú cikkekhez ajánlott áraikat és szállítási idejüket. Emellett kérheti a szállítóktól annak meghatározását, hogy vannak-e egyéb járulékos költségek, például szállítási költséget, illetve kínálnak-e nagyobb rendelések vagy a szállítói számla korai kifizetése esetén engedményeket.
 
@@ -37,9 +40,9 @@ Az ajánlatkérési folyamat az alábbi feladatokat tartalmazza:
 
 A következő ábrán áttekinthető az ajánlatkérési folyamat.  
 
-[![Ajánlatkérési eljárás iránti kérelem](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
+[![Ajánlatkérési folyamat](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
 
-Ajánlatkérést tervezett rendelésekből, beszerzési igénylésből és manuális bevitelből is létrehozhat. A létrehozott ajánlatkérés neve ajánlatkérési eset, amely az egyes szállítóknak kiadott ajánlatkérés alapdokumentuma. Az Ajánlatkérési eset előkészítése és a Szállítók hozzáadása után kattintson az **küldése** az Ajánlatkérési eset és az Ajánlatkérési napló minden szállítóhoz küldött, az Ajánlatkérés jön létre. Jelentés nyomtatása az egyes szállítók egy archív vagy jelentést küldenek minden szállító e-mail címét a küldési művelet nyomtatáskezelési beállítások konfigurálása Ezenkívül az egyes szállítók ajánlatkérési naplóját olyan napló létrehozására is felhasználhatja, amelyet később elküldhet vagy újraküldhet a szállítónak. A Küldés műveletet úgy is beállíthatja, hogy a rendszer a szállító által kitölthető válaszlapot is generáljon.  
+Ajánlatkérést tervezett rendelésekből, beszerzési igénylésből és manuális bevitelből is létrehozhat. A létrehozott ajánlatkérés neve ajánlatkérési eset, amely az egyes szállítóknak kiadott ajánlatkérés alapdokumentuma. Az ajánlatkérési eset előkészítése és a szállítók hozzáadása után kattintson a **Küldése** lehetőségre az ajánlatkérési eseten; ekkor egy ajánlatkérési napló jön létre minden olyan szállítóhoz, amelynek elküldte az ajánlatkérést. A Küldés művelet nyomtatáskezelési beállításait módosítva megadhatja, hogy a rendszer külön jelentést nyomtasson minden szállítóhoz az archívumba, vagy a jelentést e-mailben küldje a szállítók e-mail címére. Ezenkívül az egyes szállítók ajánlatkérési naplóját olyan napló létrehozására is felhasználhatja, amelyet később elküldhet vagy újraküldhet a szállítónak. A Küldés műveletet úgy is beállíthatja, hogy a rendszer a szállító által kitölthető válaszlapot is generáljon.  
 
 Ha egy ajánlatkérést az elküldés után módosítania kell, elküldheti az ajánlatkérést a szállítóknak, ha végzett a módosításokkal.  
 
@@ -49,18 +52,18 @@ Ha egy szállítónak a válasz második ismétlésére is szüksége van, katti
 
 Ha pontozási feltételeket adott hozzá az ajánlatkérési esethez, az ajánlatkérési válasz egy pontozási panelt is tartalmaz, amelyen a pontok megadhatók. Az összesített pontszám akkor jelenik meg, ha a **Válaszok összehasonlítása **oldalon összehasonlítja azokat; ezen az oldalon egyéb válaszadatokat is összehasonlíthat, például az árat, a szállítási dátumot és a teljes árat.  
 
-Ha egy ajánlattal vagy részleges ajánlattal kapcsolatban döntést hozott, elfogadhatja azt, és visszautasíthatja a többit. A rendszer létrehozza az elfogadási naplót, visszautasítási naplót és a megfelelő jelentéseket. A nyomtatott, archiválja, és küldése a nyomtatáskezelési beállítások alapján. Ajánlat vagy adott sorok ajánlat elfogadása, a beszerzési megállapodás vagy beszerzési rendelést hoz létre, vagy a beszerzési igénylések frissül a beszerzési Ajánlatkérés típusától függően. Létrehozhat kereskedelmi megállapodást, amelyet később bármelyik válasz esetében felhasználhat, függetlenül attól, hogy azt elfogadta vagy elutasította.  
+Ha egy ajánlattal vagy részleges ajánlattal kapcsolatban döntést hozott, elfogadhatja azt, és visszautasíthatja a többit. A rendszer létrehozza az elfogadási naplót, visszautasítási naplót és a megfelelő jelentéseket. Ezeket a rendszer a nyomtatáskezelési beállításoknak megfelelően kinyomtatja, archiválja és elküldi. Egy ajánlat vagy bizonyos ajánlati sorok elfogadásakor az ajánlatkérési beszerzés típusától függően egy beszerzési szerződés vagy beszerzési rendelés jön létre, vagy frissül a beszerzési igénylés. Létrehozhat kereskedelmi megállapodást, amelyet később bármelyik válasz esetében felhasználhat, függetlenül attól, hogy azt elfogadta vagy elutasította.  
 
 Az ajánlatkérés állapota megjelenik az ajánlatkérés fejlécében, és az ajánlatkérési sorok állapotától függ. Az állapot azt jelzi, hogy milyen mértékben, amelyhez az Ajánlatkérés feldolgozta. Az egyes Ajánlatkérési van állapotára vonatkozó két érték: legalacsonyabb és legmagasabb. Legalacsonyabb állapota az ajánlatkérés minden sorban a legkevésbé készültségi foka, és a lehető legnagyobb készültségi foka minden olyan sor, az ajánlatkérés legmagasabb állapota. Például ha legalább speciális állomása egy ajánlatkérési sorhoz korábban létrehozott tartozik, az ajánlatkérés legalacsonyabb állapota **Létrehozott**. Ha az Ajánlatkérés legmagasabb szintű állomása sor el lett küldve a szállítókhoz, van-e az ajánlatkérés legmagasabb állapota **Elküldött**. Az Ajánlatkérés dolgozza fel az állapotokat automatikus frissítését.  
 
 Az Ajánlatkérés fejlécében a legalacsonyabb és legmagasabb állapotok tekintheti meg **Az összes ajánlatkérés** oldalán. Az Ajánlatkérési sorban a legalacsonyabb és legmagasabb állapotok tekintheti meg **Sorok** fülön az **Ajánlatkérés** oldalon belül.  
 
-Itt a következő állapotok ajánlatkérések feldolgozásra sorozata:
+Az Ajánlatkérés feldolgozásához az állapotok sorozata a következő:
 
-1.  **Created**
-2.  **Sent**
-3.  **Received**
-4.  **Elfogadott**/**visszavont**/**elutasítva**
+1.  **Létrehozva**
+2.  **Elküldve**
+3.  **Beérkezett**
+4.  **Elfogadva**/**Visszavonva**/**Elutasítva**
 
 Az állapotokról részletesen a jelen cikk későbbi szakaszaiban olvashat.
 
@@ -72,7 +75,7 @@ Az ajánlatkérési eset létrehozása előtt be kell állítania az ajánlatké
 -   Szállítási adatok és fizetési feltételek.
 -   Mezők, amelyeknek szerepelnie kell az ajánlatkérési válaszban
 
-Egy konkrét ajánlatkérési esetnél felülírhatja ezeket az értékeket. A módosítási folyamatot és érdemes beállítani. A konfiguráció részeként a mezők zárolását is beállíthatja. Ha bekapcsolja a mezők zárolását, és egy beszerző módosítani szeretné az ajánlatkérést, először az **Árajánlat** fül **Módosítás** szakaszában a **Létrehozás** lehetőségre kell kattintania. Miután a módosítás az Ajánlatkérés frissült, beszerzési szakmai gombra kattintva a folyamat befejezésével **véglegesítés**. ** ** véglegesítése a művelet, amely értesíti arról, hogy a módosított Ajánlatkérési szállítók e-mail üzenetet hoz létre. A szállítóknak elküldött e-mailes értesítést sablonját a **Beszerzési és forrásparaméterek** oldalon választhatja ki. A létrehozott sablon az alábbi helyettesítő tokeneket tartalmazhatja:
+Egy konkrét ajánlatkérési esetnél felülírhatja ezeket az értékeket. A módosítási folyamatot és érdemes beállítani. A konfiguráció részeként a mezők zárolását is beállíthatja. Ha bekapcsolja a mezők zárolását, és egy beszerző módosítani szeretné az ajánlatkérést, először az **Árajánlat** fül **Módosítás** szakaszában a **Létrehozás** lehetőségre kell kattintania. Az ajánlatkérés frissítése után a beszerző a **Véglegesít**.** **A Véglegesít művelettel a rendszer egy e-mailben értesíti a szállítókat a módosított ajánlatkérésről. A szállítóknak elküldött e-mailes értesítést sablonját a **Beszerzési és forrásparaméterek** oldalon választhatja ki. A létrehozott sablon az alábbi helyettesítő tokeneket tartalmazhatja:
 
 -   %Ajánlat visszaküldésének oka%
 -   %Módosítás oka%
@@ -124,7 +127,7 @@ Az alábbi táblázat bemutatja, hogy változik az ajánlatkérési állapot, ha
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Művelet**                         | **Ajánlatkérés-fejléc legalacsonyabb állapota** | **A legnagyobb Ajánlatkérési fejléc állapota**                   | **Legkisebb Ajánlatkérési sor állapota** | **A legnagyobb Ajánlatkérési sor állapota** |
 | Az ajánlatkérés fejlécének és adatsorának létrehozása    | Létrehozva                      | Létrehozva                                         | Létrehozva                    | Létrehozva                     |
 | Az Ajánlatkérés küldése egy adott szállítóra. | Elküldött                         | Elküldött                                            | Elküldött                       | Elküldött                        |
 | További szállító hozzáadása.                | Létrehozva                      | Elküldött (az Ajánlatkérés el lett küldve csak egy szállítónak.) | Létrehozva                    | Elküldött                        |
@@ -146,7 +149,7 @@ Ha az ajánlatkérési esethez kérdőív is tartozik, a válaszlapra manuálisa
 
 Ha egyéb sorokat kell megadnia, és az ajánlatkérési eset ezt megengedi, a **Beszerzési árajánlat sora** gyorslapon kattintson a **Sor hozzáadása** lehetőségre. Ezután írjon be a termékkel kapcsolatos információkat, mint például a cikkszámot vagy a beszerzési kategóriát, a mennyiséget, az árat és az engedményt.  
 
-Ha a választ adta, de igényel a szállítótól egy új ajánlatot, úgy újra elküldheti az Ajánlatkérés. Ez létrehoz egy új naplóba és jelentés segítségével változtatásokat kér a szállítótól.  
+Ha megadott választ, de új ajánlatra van szükség a szállítótól, újra kiküldheti az ajánlatkérést. A rendszer erre új naplót és jelentést hoz létre, amelyben módosításokat kérhet a szállítótól.  
 
 Az **Árajánlatkérések követése** oldalon áttekintheti az összes ajánlatkérést és a hozzájuk tartozó válaszok állapotát.  
 
@@ -154,7 +157,7 @@ Az alábbi táblázat bemutatja, hogyan változik az ajánlatkérési állapot a
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**                                     | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Művelet**                                     | **Az ajánlatot legalacsonyabb állapota** | **Legmagasabb ajánlat állapota** | **Ajánlatkérés-fejléc legalacsonyabb állapota** | **A legnagyobb Ajánlatkérési fejléc állapota** | **Legkisebb Ajánlatkérési sor állapota** | **A legnagyobb Ajánlatkérési sor állapota** |
 | Egy szállítóval az ajánlatot regisztrálja, majd a mentéshez.        | Elküldött                  | Bevételezve               | Elküldött                         | Bevételezve                      | Elküldött                       | Bevételezve                    |
 | A második szállítónak ajánlat regisztrálja, majd a mentéshez. | Bevételezve              | Bevételezve               | Bevételezve                     | Bevételezve                      | Bevételezve                   | Bevételezve                    |
 
@@ -183,9 +186,11 @@ Az alábbi táblázat bemutatja, hogyan változik az ajánlatkérési állapot, 
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Művelet**              | **Az ajánlatot legalacsonyabb állapota** | **Legmagasabb ajánlat állapota** | **Ajánlatkérés-fejléc legalacsonyabb állapota** | **A legnagyobb Ajánlatkérési fejléc állapota** | **Legkisebb Ajánlatkérési sor állapota** | **A legnagyobb Ajánlatkérési sor állapota** |
 | Az ajánlatok fogadása | Bevételezve              | Elfogadva               | Bevételezve                     | Elfogadva                      | Bevételezve                   | Elfogadva                    |
 | A többi ajánlat elutasítása.  | Elutasítva              | Elfogadva               | Elutasítva                     | Elfogadva                      | Elutasítva                   | Elfogadva                    |
+
+
 
 
 

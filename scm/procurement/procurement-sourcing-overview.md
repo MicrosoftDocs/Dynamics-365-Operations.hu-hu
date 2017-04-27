@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-overview"></a>A Beszerzés és forrás modul áttekintése
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk áttekintést nyújt a beszerzés és forrás modulban elérhető funkciókról.
 
 A Beszerzés és forrás modul kezeli az összes lépést a termék- és szolgáltatásigény azonosításától, a termék beszerzésén keresztül egészen a kézhezvételig, számlázásig, illetve a szállító felé esedékes kifizetés feldolgozásáig. A beszerzési folyamatokat beszerzési irányelvek és munkafolyamatok megadásával tudja az üzleti igényekhez igazítani.
@@ -37,14 +40,14 @@ A termékre vagy szolgáltatásra vonatkozó igény felmerülhet *igénylések* 
   
 A beszerzési részleg azonosítja a szükséges termékek és szolgáltatások lehetséges szállítóit, mely alapján elképzelhetően *ajánlatkérést *küld több potenciális szállító részére. Lehetőség nyílik az igénylendő termék specifikációinak megosztására, a potenciális szállítók pedig meg tudják tekinteni ezeket, és ellenőrizni tudják, hogy képesek-e azoknak megfelelő terméket szállítani le. A szállítók visszaküldik az ajánlataikat, melyeket a beszerzési részleg elbírál, majd kiválasztja a beszerzés céljából használni kívánt szállítót.  
 
-A beszerzési rendelések tartalmaznak egy olyan lehetőséget, amely, az átfogóbb ajánlatkérési folyamat helyett, egy *beszerzési értesítőt *küld ki a szállítóknak. A beszerzési értesítő az olyan feltételek feltérképezését szolgálja, mint az ár, az engedmények, illetve a rendelés leszállítási dátuma. Ha szállítók használatára vannak beállítva a **szállító** portál, * * beszerzési lekérdezési funkciók le vannak tiltva. Ebben az esetben a rendelés a** Szállítói** portálon kerül megosztásra, a *visszaigazolási kérés* kiküldését követően pedig a szállító képes közvetlenül visszaigazolni a rendelést.  
+A beszerzési rendelések tartalmaznak egy olyan lehetőséget, amely, az átfogóbb ajánlatkérési folyamat helyett, egy *beszerzési értesítőt *küld ki a szállítóknak. A beszerzési értesítő az olyan feltételek feltérképezését szolgálja, mint az ár, az engedmények, illetve a rendelés leszállítási dátuma. Amennyiben a szállítókat úgy állítja be, hogy azok a **Szállítói** portált* * használják, úgy nem aktív a beszerzési értesítő funkció. Ebben az esetben a rendelés a** Szállítói** portálon kerül megosztásra, a *visszaigazolási kérés* kiküldését követően pedig a szállító képes közvetlenül visszaigazolni a rendelést.  
 
 *Szállítói katalógusok *segítségével információt tud gyűjteni az általuk forgalmazott termékválasztékról. A szállítók maguk tudják közzétenni a saját katalógusukat, így könnyebb a katalógus naprakészen tartása. Egy termékhez csatolhat *engedélyezett szállítói listát* is, ami elősegítheti a szállító kiválasztását új beszerzési rendelések megnyitásakor, illetve a nem kívánt szállítók mellőzését.
 
 ## <a name="procurement"></a>Beszerzés
 Több módon is tud létrehozni *Beszerzési rendelést *, például az alábbiak szerint:
 
--   A beszerzési igényel, amely megállapította, hogy egy igény szerint az Alaptervezés az eredményét. Ez a folyamat a tervezett beszerzési rendeléseket hoz létre, és ezek felszabadul, amikor a beszerzési rendelések jönnek létre.
+-   Az alaptervezés eredményeként, amely megállapított egy beszerzést igénylő igényt. Ez a folyamat tervezett beszerzési rendeléseket hoz létre, és ezek kiadásakor beszerzési rendelések jönnek létre.
 -   Beszerzést eredményező beszerzési igénylések feldolgozása következtében.
 -   Beszerzési szerződések feldolgozása során, ahol is a rendszer beszerzési rendeléseket hoz létre megállapodásokból származó kiadott megrendelések formájában. Erre jellemzően akkor kerül sor, ha beszerzési szerződéseket használ a keretrendelések jelölésére.
 -   Manuálisan, amikor is a létrehozott beszerzési rendelés nem alapul másik dokumentumon.
@@ -53,7 +56,7 @@ A *beszerzési jóváhagyási munkafolyamatok* segítségével konfigurált besz
 
 A beszerzési rendelések *Jóváhagyása* megerősíti, hogy szerződéses viszony áll fenn a szállítóval. A beszerzési rendelés ezután fokozatosan több állapoton halad keresztül, mígnem végül számlázásra vagy törlésre kerül.  
 
-A beszerzési rendelés létrehozásakor a mezők többsége a szállítóra vonatkozó tárolt adatok az alapértelmezett értékekkel előre a **szállítók** oldalon. Ennek megfelelően, Önnek csak egy korlátozott számú mezőt kell kitöltenie a beszerzési rendelésen, de akár felül is írhatja az alapértelmezett értékeket.
+Beszerzési rendelés létrehozásakor a rendszer több mezőt előre kitölt a **Szállítók** oldalon tárolt szállítói információkból származó alapértelmezett értékekkel. Ennek megfelelően, Önnek csak egy korlátozott számú mezőt kell kitöltenie a beszerzési rendelésen, de akár felül is írhatja az alapértelmezett értékeket.
 
 ### <a name="prices-and-discounts"></a>Árak és engedmények
 
@@ -86,5 +89,7 @@ A leszámlázott beszerzési rendelések a kötelezettséget rögzítik a száll
 
 ## <a name="vendor-performance"></a>Szállító teljesítménye
 A teljesítményt, illetve a beszerzés felülvizsgálatát *beszerzési és kötelezettségjelentések* támogatják, melyek kitérnek a költések, illetve a szállítói teljesítmény elemzésére is.
+
+
 
 

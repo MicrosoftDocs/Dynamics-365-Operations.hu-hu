@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Továbbfejlesztett banki egyeztetés áttekintés
 
+[!include[banner](../includes/banner.md)]
+
+
 A cikk a továbbfejlesztett banki egyeztetés folyamatát ismerteti. A továbbfejlesztett banki egyeztetési funkcióval importálhatja a banki tranzakciókból automatikusan egyeztethető banki kivonatokat.
 
 A továbbfejlesztett banki egyeztetés szolgáltatás lehetővé teszi a banki kivonatok importálását. Az importált banki kivonatot ezután automatikusan lehet egyeztetni, a banki tranzakciókon belül. A lépések a következők a továbbfejlesztett banki egyeztetés folyamatban.
@@ -38,13 +41,15 @@ A továbbfejlesztett banki egyeztetés szolgáltatás lehetővé teszi a banki k
     -   A funkciót minden formátumba ki lehet terjeszteni.
 
 2.  Állítsa be a továbbfejlesztett banki egyeztetés során használandó számsorozatot, és állítsa be a banki egyeztetési szabályokat.
-    -   Egy egyeztetési szabály egy banki kivonat sorainak és a Microsoft Dynamics 365 banki műveletek tranzakciósorok szűrése az egyeztetés során használt feltételek. Attól függően, hogy a vállalati gyakorlat állíthat be egynél több egyeztetési szabály automatizálásához és az egyeztetési folyamat optimalizálása.
+    -   Az egyeztetési szabály olyan kritériumok készlete, melyek a banki kivonat sorainak és a Microsoft Dynamics 365 for Operations bankitranzakció-sorainak szűrésére szolgálnak az egyeztetési folyamat során. Üzleti gyakorlattól függően egynél több egyeztetési szabályt is beállíthat az egyeztetési folyamat automatizálása és optimalizálása érdekében.
 
-3.  Műveletek banki tranzakciókhoz a Dynamics 365 bankszámlakivonatok egyeztetése.
+3.  Banki kivonatok egyeztetése a Dynamics 365 for Operations banki tranzakciókkal.
     -   Automatikus egyeztetés végrehajtása és egyeztetési napló létrehozása.
-    -   Bankszámlakivonatok megtekintése és műveletek banki tranzakciók egymás Dynamics 365.
-    -   Műveletek banki tranzakciók feladása a Dynamics 365 automatikusan Ha jelenik meg a bankszámlakivonaton, de a Dynamics 365 műveletekhez nem jelennek meg.
+    -   Banki kivonatok és a Dynamics 365 for Operations banki tranzakciók megtekintése egymás mellett.
+    -   A Dynamics 365 for Operations banki tranzakciók automatikusan feladása, ha a banki kivonaton megjelennek, de a Dynamics 365 for Operationsben nem jelennek meg.
     -   Egyeztetési kivonat létrehozása.
+
+
 
 
 

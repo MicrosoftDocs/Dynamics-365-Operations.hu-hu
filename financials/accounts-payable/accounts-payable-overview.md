@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-payable"></a>Kötelezettségek konfigurálása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk azoknak az oldalaknak a leírását tartalmazza, amelyek használatával beállíthatók a Microsoft Dynamics AX rendszer Kötelezettségek moduljának alapvető, illetve választható funkciói. Azokat a beállítási lépéseket is bemutatja, amelyeket a Kötelezettségek beállításának elkezdése előtt kell elvégezni.
 
 <a name="prerequisites-for-accounts-payable-setup"></a>Kötelezettségek beállításainak előfeltételei
@@ -40,7 +43,7 @@ Mielőtt beállítja a Kötelezettségeket el kell végezni az alábbiakat:
     -   Ha árfolyam-korrekciókat szeretne futtatni, akkor adja meg a pénznemkódokat a Pénznemek oldalon, adja meg az árfolyamtípust az Árfolyamtípus oldalon és adja meg a pénznem árfolyamokat a Pénznem árfolyamok oldalon.
 -   A Készpénz és bank kezelés szakaszban beállíthatja a kifizetési módokkal használandó bankszámlákat.
 
-## <a name="setup-pages-for-accounts-payable"></a>A telepítő oldalak kötelezettségekhez
+## <a name="setup-pages-for-accounts-payable"></a>A Kötelezettségek modul beállítási oldalai
 
 A következő oldalak segítségével minden egyes jogi személyeknél beállíthatja a Kötelezettségek modul alapvető funkcióit. Az oldalak a javasolt beállítási sorrendben vannak felsorolva. A beállítás egyszerűsítése érdekében az első létrehozott rekordból sablonokat hozhat létre. A sablonban az értékek általában több mezőben találhatók, hogy láthatók legyenek a tulajdonságok, amelyeket a szervezet alkalmazni kíván egy adott szállító típushoz.
 1.  A Fizetési feltételek oldalon adja meg a fizetés feltételeit, amelyeket értékesítési rendelésekhez, beszerzési rendelésekhez, vevőkhöz és szállítókhoz kíván hozzárendelni és amelyek meghatározzák a számlák határidejét.
@@ -51,15 +54,15 @@ A következő oldalak segítségével minden egyes jogi személyeknél beállít
 6.  Az Űrlap beállítása oldalon adja meg a különböző dokumentumok formátumát, amelyek kapcsolódnak a szállítóhoz és amelyet a szervezet használ a szállítói bevételezések követéséhez és adjon meg okokat a fizetési folyamatnál a szállítóknak.
 7.  A Szállítók oldalon hozzon létre és frissítse a szállítói számlákat, továbbá az adóhatóságokat amelyek áfabevallásra kötelezik a szervezetet.
 
-## <a name="optional-setup-pages-for-accounts-payable"></a>Kötelezettségek választható beállítási lapok
+## <a name="optional-setup-pages-for-accounts-payable"></a>A Kötelezettségek modul opcionális beállítási oldalai
 Az alapvető funkciók mellett a Kötelezettségeknek egyéb funkcióit is megadhatja.
 
 A következő beállítási oldalak funkciók szerint vannak csoportosítva.
 
-**Policies**
+**Irányelvek**
 -   A Szállítói számla irányelvek oldalon adja meg a szállítói számla irányelveket.
 
-**Invoice matching**
+**Számlaegyeztetés**
 
 -   A Számlaösszegek tűréshatárai oldalon adja meg a számlaösszegek toleranciáit.
 -   Az Egyeztetési irányelv oldalon adja meg a kétirányú és háromirányú egyeztetési irányelveket.
@@ -68,39 +71,39 @@ A következő beállítási oldalak funkciók szerint vannak csoportosítva.
 -   A Szállítói árak toleranciacsoportok oldalon adjon meg toleranciacsoportokat a szállítói árakhoz.
 -   A Díj tűréshatárok oldalon adja meg a díjak toleranciáit.
 
-**Workflow**
+**Munkafolyamat**
 
 -   A Kötelezettségek munkafolyamatai oldalon adjon meg munkafolyamat konfigurációkat naplójóváhagyásokhoz és beszerzési igénylésekhez.
 
-**Reasons**
+**Okok**
 
 -   A Szállítói okok oldalon adjon meg okkódokat.
 
-**Charges**
+**Költségek**
 
 -   A Költségkódok oldalon adjon meg kódokat a költségekhez, amelyeket a beszerzési rendelésben használ.
--   A szállító díjak csoport lap létrehozása és szállítók költségcsoportok kezelése.
+-   A Szállító költségcsoportja oldalon hozzon létre és frissítse a szállítók költségcsoportjait.
 -   A Cikk-költésgcsoportok oldalon hozza létre és frissítse a cikkek költségcsoportjait.
 -   Az Automatikus díjak oldalon adja meg a költségeket amelyek automatikusan a rendelésekhez adódnak.
 
-**Supplementary items**
+**Kiegészítő cikkek**
 
 -   A Kiegészítő cikkcsoportok – Szállító oldalon hozza létre és frissítse a szállítók kiegészítő cikkcsoportjait.
 -   A Kiegészítő cikkcsoportok – Készlet oldalonhozza létre és frissítse a cikkek kiegészítő cikkcsoportjait.
 
-**Distribution**
+**Kiosztás**
 
 -   A Szállítás feltételei oldalon hozza létre és frissítse egy cikktranszfer feltételeit az eladótól a vevőhöz.
 -   A Szállítási módok oldalon hozza létre és frissítse a szállítási módok amelyek akkor használatosak amikor egy rendelést az eladótól a vevőnek szállítanak.
 -   A Célkódok oldalon hozza létre és frissítse az azonosítókhoz és a szállítási célok leírásához.
 
-**Forms**
+**Képernyők**
 
 -   Az Adatlap megjegyzései oldalon hozza létre a szabványos szöveget, ami megjelenik az egyes oldalakon.
 -   A Képernyő-elrendezés paraméterei oldalon hozzon létre elrendezést igénylésekhez, bevételezési listákhoz, szállítólevelekhez és számlákhoz.
 -   A Nyomatatáskezelési oldalon adjon meg nyomtatáskezelési információkat az eredeti és másolt oldalakhoz.
 
-**Payments**
+**Kifizetések**
 
 -   A Készpénzfizetési engedmény oldalon adja meg és kezelje a készpénzfizetési engedmények megadásával kapcsolatos feltételeket. A készpénzfizetési engedmények kódjai a szállítókhoz kapcsolódnak, és a beszerzési rendelésekre vonatkoznak.
 -   A Fizetési ütemezések oldalon adjon meg fizetési ütemezéseket, amelyeket a szállítóknak történő részletfizetések kezeléséhez használ.
@@ -108,17 +111,17 @@ A következő beállítási oldalak funkciók szerint vannak csoportosítva.
 -   A Fizetési díj oldalonhozza létre és frissítse a szállítókhoz társított fizetési díjakat.
 -   A Fizetési rendelkezés oldalon hozza létre és frissítse a fizetési rendelkezéseket.
 
-**Statistics**
+**Statisztika**
 
 -   A Korosítási időszak definíciók oldalon adja meg a felhasználó által megadott intervallumokat amelyek a szállítói számlák elosztásának esedékességéhez használatosak.
 -   Az Üzletág oldalon hozzon létre üzletágkódokat (LOB) amelyek szállítókhoz rendelhetők.
 
-**1099-es adó**
+**Adó 1099**
 
--   A a **1099-es mezők** oldal, ellenőrizni és jelenteni kell az Internal Revenue Service (IRS), alapján a legújabb IRS-követelményeknek kell a minimális összegek frissítése.
+-   A **1099-es mezők** oldalon ellenőrizze és frissítse a minimális mennyiségeket, amelyeket jelenteni kell az adóhatóságnak (IRS), a legfrissebb követelményeik alapján.
 
-## <a name="optional-setup-for-other-modules"></a>**Választható más modulok beállítása**
-**Organization administration**
+## <a name="optional-setup-for-other-modules"></a>**Opcionális beállítások egyéb modulokhoz**
+**Szervezeti adminisztráció**
 
 -   A Számsorozatok oldalon adjon meg szám-szekvenciacsoportokat számlaszámokhoz.
 -   A következő oldalakon címeket kell beállítani:
@@ -126,7 +129,7 @@ A következő beállítási oldalak funkciók szerint vannak csoportosítva.
     -   NAF-kódok
     -   Irányítószámok importálása
 
-**General ledger**
+**Főkönyv**
 
 -   A Pénzügyi dimenziók oldalon adjon meg pénzügyi dimenziókat.
 -   Az alábbi oldalakon adjon meg adóinformációkat:
@@ -139,9 +142,10 @@ A következő beállítási oldalak funkciók szerint vannak csoportosítva.
     -   Adóhatóságok
     -   Áfakiegyenlítési időszakok
 
-**Cash and bank management**
+**Készpénz- és bankkezelés**
 
 -   A Fizetés célkódok oldalon adja meg a Központi bank célkódját.
+
 
 
 
