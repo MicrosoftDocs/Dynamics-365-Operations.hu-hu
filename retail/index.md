@@ -1,6 +1,6 @@
 ---
-title: Kiskereskedelmi honlapja
-description: "Műveletek – a kiskereskedelmi Dynamics 365 honlap"
+title: "Kiskereskedelmi kezdőlap"
+description: "Dynamics 365 for Operations – Retail kezdőlapja"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,71 +25,71 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="retail-home-page"></a>Kiskereskedelmi honlapja
+# <a name="retail-home-page"></a>Kiskereskedelmi kezdőlap
 
 [!include[banner](includes/banner.md)]
 
-365 Dynamics műveletek – a teljes vásárlási élmény, a gördülékeny és különbségtétel omni-csatorna megoldás, amely a modern, a mobil és a globális kiskereskedelmi kézbesíti. Végpont lehetőségeket, modern ponttól értékesítés (POS) szoftver megoldásokat, tárolási műveletek, kereskedelmi, e-kereskedelem, ügyfélszolgálatok, marketing és ügyfélszolgálati funkciókat, ellátási lánc, a pénzügyek és más, a vállalkozás számára a lehető legcélszerűbb módon is telepíthető.
+A Dynamics 365 for Operations – Retail teljes vásárlási élményt nyújt egy gördülékeny és differenciálásra képes, minden csatornát felölelő megoldás révén, amely egyszerre modern, mobil és globális. Végpontok közötti funkciók a modern pénztári (POS) szoftvermegoldásoktól, üzleti műveletektől, árusítástól, e-kereskedelemtől, ügyfélszolgálati megoldásoktól, valamint marketing- és ügyfélszolgálati funkcióktól kezdve az ellátási láncig, pénzügyekig és sok más megoldásig, amelyeket a vállalkozása számára lehető legcélszerűbb módon telepíthet.
 
-A lap pontok forrásokat, amelyek segítségével Microsoft Dynamics 365 - műveletekhez kiskereskedelmi hatékonyabb használatához. A bal oldali ablaktáblában lévő Ha többet szeretne megtudni, hogy a szolgáltatás terület kiválasztása. 
+Erről a lapról olyan erőforrásokat érhet el, amelyek segítségével a szervezete hatékonyabban használhatja a Microsoft Dynamics 365 for Operations – Retail megoldását. A bal szélső ablaktáblában válasszon ki egy szolgáltatásterületet, amelyről többet szeretne megtudni. 
 
 ## <a name="set-up-retail-channels"></a>Kiskereskedelmi csatornák beállítása
-Beállításakor a kiskereskedelmi felhasználói élmény, definiálása és konfigurálása a tégla és habarcs üzlet is döntse el (úgynevezett *kiskereskedelmi áruház* Dynamics 365 műveletek) és az online áruház műveletek. 
+A kiskereskedelmi felhasználói élmény beállításakor meghatározhatja és konfigurálhatja tényleges üzlethelyiségének (*kiskereskedelmi áruház* a Dynamics 365 for Operations rendszerben) és online áruházának műveleteit. 
 
-Egyes kiskereskedelmi üzletek saját fizetési módok, árcsoportok, POS megoldások, bevételi számlák, kiadási számlákkal és személyzet lehet. Miután létrehozta a kiskereskedelmi üzlet, az üzlet végrehajtásához használni kívánt termékek rendelhet. Rendelje hozzá az alkalmazottakat, a jegyzékeket, pénztárgépeket és a fogyasztókat is az üzlethez. Végül helyezze el az új üzletet a szervezeti hierarchiában.
+Minden kiskereskedelmi áruház saját fizetési módokkal, árcsoportokkal, pénztármegoldásokkal, bevételi számlákkal, költségszámlákkal és személyzettel rendelkezik. Miután létrehozta a kiskereskedelmi áruházat, rendelje hozzá az áruház által kezelendő termékeket. Rendelje hozzá az alkalmazottakat, a jegyzékeket, pénztárgépeket és a fogyasztókat is az áruházhoz. Végül helyezze el az új áruházat a szervezeti hierarchiában.
 
-Az online áruház létrehozásakor be kell állítania a szortimentek, attribútumok, fizetési módok és szállítási módszerek-összetevők. Árak, promóciók, engedmények és szállítási feltételeket az online áruház jellemző is megadhatja.
+Az online áruház létrehozásakor be kell állítania a szortimenteket, az attribútumokat, a fizetési módokat és a szállítási módszereket. Megadhatja az online áruházra vonatkozó árakat, promóciókat, engedményeket és szállítási feltételeket.
 
 -   [Kiskereskedelmi csatornák meghatározása](define-maintain-retail-channels.md)
--   [Online store overview](online-stores.md)
+-   [Online áruház áttekintése](online-stores.md)
 
-## <a name="set-up-a-call-center"></a>Hívásközponti paraméterek
-Beállíthatja a kiskereskedelmi csatorna típus egy hívóközpontot jelent. A hívásközpontban a dolgozók telefonon vesznek fel rendeléseket a vevőktől és hoznak léte értékesítési rendeléseket. A megrendelések felvételére, és kezelni tudja a teljes rendelés teljesítése során az ügyfélszolgálat munkatársai segítségével állíthat be egy értékesítési rendelés lesz, hogyan árképzési fogják szabályozni és ügyfelek, termékek és az árképzési adatok érhetők el. Egyes telefonos ügyfélszolgálatok is állíthat be a felhasználók, fizetési módok, árcsoportok, dimenziókra és szállítási módok.
+## <a name="set-up-a-call-center"></a>Hívásközpont beállítása
+A kiskereskedelmi csatorna típusaként beállíthat egy hívásközpontot. A hívásközpontban a dolgozók telefonon vesznek fel rendeléseket a vevőktől, és értékesítési rendeléseket hoznak léte. Támogassa alkalmazottait a megrendelések felvételében és az ügyfélszolgálati teendők végzésében a teljes rendelés teljesítése során: állítsa be az értékesítési rendelés tartalmát, az árképzés szabályozását, valamint az ügyfél-, termék- és árképzési adatok elérhetőségét. Minden telefonos ügyfélszolgálat esetében beállíthatja a felhasználókat, a fizetési módokat, az árcsoportokat, a pénzügyi dimenziókat és a szállítási módokat.
 
--   [Call center functionality](call-center-functionality.md)
--   [Create call center catalogs](create-call-center-catalogs.md)
+-   [Hívásközpont funkciói](call-center-functionality.md)
+-   [Hívásközpont-katalógusok létrehozása](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>A POS és MPOS megoldások meghatározása
-Kiskereskedelmi Modern POS (MPOS) a személyi számítógépek, tabletták és telefonok pénztári app. Értékesítési munkatársak a vevői rendelések, értékesítési tranzakciók feldolgozása és napi műveleteket és készletgazdálkodás bárhol a tárolóban lévő, valamint a nyilvántartások PC-alapú mobil eszközökkel. POS felhő egy böngésző alapú POS. 
+## <a name="define-your-pos-and-mpos-solutions"></a>A pénztármegoldások és MPOS pénztármegoldások meghatározása
+A Retail Modern POS (MPOS) a személyi számítógépek, táblagépek és telefonok pénztári alkalmazása. Az értékesítési munkatársak mobileszközök és PC alapú pénztárgépek segítségével az üzletben bárhol feldolgozhatják az értékesítési tranzakciókat és a vevői rendeléseket, valamint elvégezhetik a napi műveleteket és a készletgazdálkodást. A felhőalapú pénztár egy böngészőalapú pénztár. 
 
-Több összetevőt is állítsa be az üzlet, a POS-pénztárgépek vagy a tárolóban csatornák közötti kapcsolatok meghatározása, és regisztrálja vagy csatornák kiskereskedelmi perifériák tranzakciók feldolgozásához használja. A POS, beleértve a hardverprofil vagy a telepítő felhasználó jelentkezik be, amely regisztrálja a nyilvántartásban, valamint az üzlet, az oltalom alatt álló hozzárendelt és a vizuális élmény használt perifériák kiskereskedelmi előfordulását jellemzői is is definiál.
+Több összetevőt kell beállítania az üzlet, a POS-pénztárgépek vagy az üzleti csatornák, valamint az ezen pénztárgépek vagy csatornák által a tranzakciók feldolgozására használt kiskereskedelmi perifériás eszközök közötti kapcsolatok meghatározása tekintetében. Meghatározhatja a pénztár adott példányának jellemzőit, beleértve a hardverprofilt vagy a pénztárnál használatos kiskereskedelmi periféria beállítását, a pénztárhoz rendelt üzletet, valamint a pénztárba bejelentkező felhasználó által tapasztalt vizuális megjelenést.
 
--   [Meghatározza és fenntartsa a csatorna ügyfelek, nyilvántartások és hardver állomások](define-maintain-channel-clients-registers-hw-stations.md)
--   [Konfigurálja és telepítse a MPOS](retail-modern-pos-device-activation.md)
--   [Kapcsolat nélküli POS funkcióprofil](pos-offline-functionality.md)
+-   [Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat](define-maintain-channel-clients-registers-hw-stations.md)
+-   [A MPOS pénztár konfigurálása és telepítése](retail-modern-pos-device-activation.md)
+-   [Kapcsolat nélküli pénztár funkciói](pos-offline-functionality.md)
 
-## <a name="set-up-a-customer-loyalty-program"></a>A vevő Hűségprogramok beállítása
-A hűségprogram állíthatja, hogy a vevők után pontot a megadott feltételek alapján, és a pontokat különböző módokon számítható. A hűségprogram lehet egyszerű vagy összetett, és minden olyan kiskereskedelmi csatorna a jogi személyekre vonatkoznak.
--   [A vevő Hűségprogramok beállítása](set-up-customer-loyalty-program.md)
+## <a name="set-up-a-customer-loyalty-program"></a>Vásárlói hűségprogram beállítása
+Beállíthat egy hűségprogramot, amelynek révén a vevők pontokat szerezhetnek a megadott feltételek alapján, a pontok kiszámítása pedig különböző módokon történhet. A hűségprogram lehet egyszerű vagy összetett, és bármely kiskereskedelmi csatornában levő jogi személyre érvényes.
+-   [Vásárlói hűségprogram beállítása](set-up-customer-loyalty-program.md)
 
-## <a name="set-up-discounts-and-price-adjustments"></a>Engedmények és a szervizdíj-helyesbítés létrehozása
-Termékek ára, beállíthatjuk, és egy sortétel vagy tranzakció a POS hívás center értékesítési rendelés vagy online megrendelés alkalmazott engedmények is beállíthatja. 
--   [Price adjustments and discounts](price-adjustments-discounts.md)
--   [Define channel-specific discounts](define-channel-specific-discounts.md)
--   [Átfedő kedvezmények optimális kombinációjának meghatározására](optimal-combination-overlapping-discounts.md)
+## <a name="set-up-discounts-and-price-adjustments"></a>Engedmények és ármódosítások beállítása
+Módosíthatja a termékek árát, és engedményeket állíthat be egy sortételre vagy pénztári tranzakcióra, a hívásközpont értékesítési rendelésére, vagy akár egy online megrendelésre is. 
+-   [Ármódosítások és engedmények](price-adjustments-discounts.md)
+-   [Csatornaspecifikus engedmények definiálása](define-channel-specific-discounts.md)
+-   [Átfedő engedmények optimális kombinációjának meghatározása](optimal-combination-overlapping-discounts.md)
 
-## <a name="set-up-retail-products"></a>Kereskedelmi termékek beállítása
-Mielőtt értékesítésre szánt termékek is kínálnak a kiskereskedelmi csatornák, szüksége lehet létrehozni és konfigurálni a termékek Dynamics 365 műveletekhez. Létrehozhat termékeket, meghatározhatja a terméktulajdonságokat és -attribútumokat és a termékeket hozzárendelheti kiskereskedelmi hierarchiákhoz. A kiskereskedelmi csatornák számára elérhetővé a termékek, és vegye fel azokat az aktív szortiment, majd a jogi személyek, amelyekben azok rendelkezésre állnak a termékek fogja kiadása.
--   [Set up retail products](set-up-retail-products.md)
+## <a name="set-up-retail-products"></a>Kiskereskedelmi termékek beállítása
+Mielőtt értékesítésre kínálna termékeket kiskereskedelmi csatornái révén, létre kell hoznia és konfigurálnia kell a termékeket a Dynamics 365 for Operations rendszerben. Létrehozhat termékeket, meghatározhatja a terméktulajdonságokat és -attribútumokat, valamint hozzárendelheti a termékeket különböző kiskereskedelmi hierarchiákhoz. Ahhoz, hogy a termék elérhetővé váljon a kiskereskedelmi csatornák számára, valamint hogy felvehesse azokat az aktív szortimentbe, ki kell adnia a termékeket azoknak a jogi személyeknek, amelyekben azok rendelkezésre állnak.
+-   [Kiskereskedelmi termékek beállítása](set-up-retail-products.md)
 
-## <a name="monitor-and-analyze-performance"></a>Figyelheti és elemezheti a teljesítményt
-Használja a Dynamics 365 műveletek adatokat, elemezheti a store a teljesítmény, vevő- és a nyereségesség, eladási trendek és több.
--   [Assess customer and product profitability](assess-customer-product-profitability.md)
--   [Analyze store performance](store-performance-information.md)
+## <a name="monitor-and-analyze-performance"></a>Teljesítmény megfigyelése és elemzése
+A Dynamics 365 for Operations adatai segítségével elemezheti az üzlet teljesítményét, a vevők és a termékek nyereségességét, az értékesítési trendeket és még sok más egyebet.
+-   [Vevők és termékek nyereségességének felmérése](assess-customer-product-profitability.md)
+-   [Az üzletteljesítmény elemzése](store-performance-information.md)
 
-## <a name="customize-and-administer-retail-environments"></a>Testreszabhatja és felügyelheti a kiskereskedelmi környezetben
-Ha a környezet testreszabása kéri, vagy ha a kialakítása és fenntartása a rendszer biztosítja, tekintse meg a fejlesztői és jellemző kiskereskedelmi rendszer rendszergazda tartalom, valamint az általánosabb tartalma a Microsoft Dynamics 365 műveletekhez. 
--   [Dynamics 365 - műveletekhez kiskereskedelmi informatikai szakemberek és fejlesztők számára](dev-itpro/dev-retail-home-page.md)
--   [A Microsoft Dynamics 365 műveletek fejlesztők és IT-szakembereknek](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+## <a name="customize-and-administer-retail-environments"></a>Kiskereskedelmi környezetek testreszabása és felügyelete
+Ha szükség van a környezet testreszabására vagy a rendszer telepítésére és fenntartására, tekintse meg a kiskereskedelmi modul fejlesztői és rendszergazda-specifikus tartalmait, valamint a Microsoft Dynamics 365 for Operations rendszer általánosabb leírásait. 
+-   [Dynamics 365 for Operations – Retail informatikai szakemberek és fejlesztők számára](dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 for Operations fejlesztők és informatikai szakemberek számára](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
 
 ## <a name="additional-resources"></a>További erőforrások
-### <a name="whats-new-and-in-development"></a>Mi az új és a fejlesztés
-Keresse fel a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a> milyen új funkciók megjelenésekor, és milyen új szolgáltatások kidolgozás alatt állnak. 
+### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
+Keresse fel a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a> oldalt az új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
 
 ### <a name="blogs"></a>Blogok
-Található vélemények, hírek és egyéb információkat a Microsoft Dynamics 365 műveletek - kiskereskedelmi és egyéb megoldások a <a href="https://community.dynamics.com/b/msftdynamicsblog">a Microsoft Dynamics 365 blog</a>.
+A <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 blogon</a> véleményeket, híreket és egyéb információkat talál a Microsoft Dynamics 365 for Operations - Retail és egyéb megoldásokkal kapcsolatban.
 
-Nincs olyan sok témaköreire kiskereskedelmi a <a href="https://blogs.msdn.microsoft.com/dax/">a Microsoft Dynamics AX blogjában</a>. Néhány ezek az állomások Dynamics 365 műveletekhez, korábbi verziójához készült, de koncepciók továbbra is alkalmazni, és az eljárások hasonlóak a jelenlegi verzióban.
+A <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX termékcsapat blogjában</a> több témakör is szól a kiskereskedelmi modul által nyújtott lehetőségekről. A bejegyezések egy része a Dynamics 365 for Operations rendszer előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
 
-A <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">a Microsoft Dynamics műveleti Partner közösségi Blog</a> biztosít a Microsoft Dynamics-partnerek egy erőforrást, mi az új és a monetáris és Bankstatisztikai műveletek trendfigyelésre megismeréséhez.
+A <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner közösségi blog</a> egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről.
 

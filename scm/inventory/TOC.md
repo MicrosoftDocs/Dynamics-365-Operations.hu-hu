@@ -1,21 +1,21 @@
-# Raktári elrendezés létrehozása
-# Indbound folyamat
+# Raktárelrendezés létrehozása
+# Bejövő folyamat
 # Kimenő folyamat
-# Követési készlet beállítása
-## [Inventory journals](inventory-journals.md)
-## [Inventory locations](inventory-locations.md)
-## [Inventory statuses](inventory-statuses.md)
-## [Tartalék készletmennyiség](reserve-inventory-quantities.md)
-## [Ugyanabból a tételből, értékesítési rendelés foglalása](../sales-marketing/reserve-same-batch-sales-order.md)
+# Készletkövetés beállítása
+## [Készletnaplók](inventory-journals.md)
+## [Készlethelyek](inventory-locations.md)
+## [Készletállapotok](inventory-statuses.md)
+## [Készletmennyiség lefoglalása](reserve-inventory-quantities.md)
+## [Egy értékesítési rendelés foglalása ugyanazon kötegből](../sales-marketing/reserve-same-batch-sales-order.md)
 # Bizományosi készlet
-## [Consignment](consignment.md)
-## [Szállítmány beállítása](set-up-consignment.md)
+## [Szállítás](consignment.md)
+## [Bizomány beállítása](set-up-consignment.md)
 # Minőségkezelés
-## [Enable quality management](enable-quality-management.md)
-## [Inventory blocking](inventory-blocking.md)
-## [A szabálytalanságok kezelése](enable-nonconformance-management.md)
-## [Quarantine order](quarantine-orders.md)
-## [Minőségi kezelési folyamat](quality-management-processes.md)
-# A cikk követési és kötegelt
+## [Minőségkezelés engedélyezése](enable-quality-management.md)
+## [Készletzárolás](inventory-blocking.md)
+## [Szabálytalanság kezelése](enable-nonconformance-management.md)
+## [Karanténutasítás](quarantine-orders.md)
+## [Minőségkezelési folyamat](quality-management-processes.md)
+# Cikk és köteg követése
 ## [Készletköteg egyesítése](merge-inventory-batches.md)
-## [Nyomkövetési elem és nyersanyag](trace-items-raw-materials-inventory-production-sales.md)
+## [Elem és nyersanyag követése](trace-items-raw-materials-inventory-production-sales.md)

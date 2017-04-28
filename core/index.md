@@ -1,6 +1,6 @@
 ---
-title: "Dynamics 365 műveletek bemutatása"
-description: "A Microsoft Dynamics 365 műveletekhez olyan vállalatok számára a Microsoft üzleti alkalmazások. E lap segítségével bemutatása és a start-a termék használatának."
+title: "A Dynamics 365 for Operations bemutatása"
+description: "A Microsoft Dynamics 365 for Operations a Microsoft üzleti alkalmazása vállalatok számára. Ez a lap a terméket és annak használatát mutatja be."
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -23,13 +23,13 @@ ms.lasthandoff: 04/12/2017
 
 
 ---
-# <a name="introduction-to-dynamics-365-for-operations"></a>Dynamics 365 műveletek bemutatása
+# <a name="introduction-to-dynamics-365-for-operations"></a>A Dynamics 365 for Operations bemutatása
 
 [!include[banner](includes/banner.md)]
 
-A Microsoft Dynamics 365 műveletekhez olyan vállalatok számára a Microsoft üzleti alkalmazások. Lehetővé teszi az emberek gyors döntések intelligensebb hozzáférést biztosít valós idejű információkat és adatokat intelligens felhasználói felületen. Átalakítás és innnovate vállalkozások lehetővé teszi, hogy bemutatja a bevált üzleti logika, amely lehetővé teszi számukra a gyorsabb tervezzék újra az üzleti folyamatok. Vállalkozások saját ütemben növekszik, és üzletet szinte bárhol, bármikor lehetővé teheti, hogy az üzleti igények kielégítéséhez globálisan műveleteik méretezése a rugalmasságot biztosít. 
+A Microsoft Dynamics 365 for Operations a Microsoft üzleti alkalmazása vállalatok számára. Lehetővé teszi az okos döntéshozatalt egy olyan intelligens felhasználói felület révén, amely hozzáférést nyújt a valós idejű statisztikákhoz és adatokhoz. Lehetővé teszi a vállalkozások számára az átalakulást és az innovációt olyan bevált üzleti logika segítségével, amely lehetővé teszi számukra üzleti folyamataik gyorsabb újratervezését. Segítségével a vállalkozások rugalmasan, a saját ütemükben növekedhetnek, és szinte bárhol és bármikor folytathatnak kereskedelmet, így tevékenységüket globális szinten méretezhetik az üzleti igények kielégítésére. 
 
-Felhasználói útmutató segít útmutató Dynamics 365 műveletekhez a vállalkozás számára dolgozik.    
+A jelen felhasználói útmutató bemutatja, hogyan fordíthatja vállalkozása javára a Dynamics 365 for Operations által nyújtott megoldásokat.    
 
 <table>
 <colgroup>
@@ -38,52 +38,52 @@ Felhasználói útmutató segít útmutató Dynamics 365 műveletekhez a vállal
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="get-started/onboarding-home.md">Bevezetési a szervezet</a></p>
+<td><p><a href="get-started/onboarding-home.md">Szervezet felvétele</a></p>
 <p>Pénzügyek</p>
-<ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
-<li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
-<li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
-<li><a href="financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></li>
-<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></li>
-<li><a href="financials/fixed-assets/fixed-assets.md">Fixed assets</a></li>
-<li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
-<li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
-<li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
+<ul><li><a href="financials/accounts-payable/accounts-payable.md">Kötelezettségek</a></li>
+<li><a href="financials/accounts-receivable/accounts-receivable.md">Kinnlevőségek</a></li>
+<li><a href="financials/budgeting/budgeting-overview.md">Költségvetés készítése</a></li>
+<li><a href="financials/cash-bank-management/cash-bank-management.md">Készpénz- és bankkezelés</a></li>
+<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Költségkönyvelés</a></li>
+<li><a href="financials/fixed-assets/fixed-assets.md">Tárgyi eszközök</a></li>
+<li><a href="financials/general-ledger/general-ledger.md">Főkönyv</a></li>
+<li><a href="financials/project-management/overview-project-management-accounting.md">Projektvezetés</a></li>
+<li><a href="financials/public-sector/public-sector-functionality.md">Állami szektor</a></li></ul>
 <p><a href="dev-itpro/lcs-solutions/country-region.md">Regionális szolgáltatások</a></p>
 <p>Emberi erőforrások</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR stratégia</a></li>
-  <li><a href="human-resources/manage-recruiting-process.md">Toborzáshoz, felvételi & rávenni</a></li>
+  <li><a href="human-resources/departments-jobs-positions.md">HR-stratégia</a></li>
+  <li><a href="human-resources/manage-recruiting-process.md">Toborzás, felvétel és motiváció</a></li>
   <li><a href="human-resources/performance-management-overview.md">Alkalmazottak képzése</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">Amerikai szolgáltatások</a></li>
+  <li><a href="human-resources/manage-benefit-program.md">Juttatások</a></li>
+  <li><a href="human-resources/questionnaires.md">Kérdőív</a></li>
+  <li><a href="human-resources/localizations/noam-usa-payroll.md">Szolgáltatások az Egyesült Államokban</a></li>
 </ul></td>
   <td>
   <p>Kiskereskedelem</p>
   <ul>
-<li><a href="retail/call-center-functionality.md">Call center</a></li>
-  <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
-  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS és felhő POS</a></li>
-  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Kiskereskedelmi fejlesztői és felügyeleti</a></li></ul>
+<li><a href="retail/call-center-functionality.md">Hívásközpont</a></li>
+  <li><a href="retail/define-maintain-retail-channels.md">Csatorna beállítása és kezelése</a></li>
+  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS pénztár és felhőalapú pénztár</a></li>
+  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Kiskereskedelmi fejlesztő és felügyelet </a></li></ul>
   <p>Ellátásilánc-kezelés</p>
 <ul>
-<li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
-  <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
-  <li><a href="supply-chain/master-planning/master-plans.md">Master planning</a></li>
-  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
-  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
-  <li><a href="supply-chain/production-control/create-production-orders">Production control</a></li>
-  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
-  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
-  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
-  <p>& Fejlesztői felügyeleti funkciók</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
-  <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
-  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobil alkalmazások</a></li>
-  <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
-  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
-  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
+<li><a href="supply-chain/cost-management/costing-sheets.md">Költségkezelés</a></li>
+  <li><a href="supply-chain/inventory/inventory-locations.md">Készletgazdálkodás</a></li>
+  <li><a href="supply-chain/master-planning/master-plans.md">Alaptervezés</a></li>
+  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Beszerzés és forrás</a></li>
+  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Termékinformációk kezelése</a></li>
+  <li><a href="supply-chain/production-control/create-production-orders">Gyártásvezérlés</a></li>
+  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Értékesítés és marketing</a></li>
+  <li><a href="supply-chain/transportation/transportation-management-overview.md">Szállításkezelés</a></li>
+  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Raktárkezelés</a></li></ul>
+  <p>Fejlesztői és felügyeleti funkciók</p>
+  <ul><li><a href="dev-itpro/analytics/analytics.md">Elemzés</a></li>
+  <li><a href="dev-itpro/data-entities/data-entities.md">Adatentitások</a></li>
+  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobilalkalmazások</a></li>
+  <li><a href="dev-itpro/office-integration/office-integration.md">Office-integráció</a></li>
+  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Felügyelet</a></li>
+  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Fejlesztői eszközök</a></li></ul></td>
 </tr>
 </tbody>
 </table>

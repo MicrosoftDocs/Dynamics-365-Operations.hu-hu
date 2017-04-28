@@ -1,6 +1,6 @@
 ---
 title: "Az ellátási lánc kezelése kezdőlap"
-description: "A lap pontok forrásokat, amelyek segítségével hatékonyabb használatához a Microsoft Dynamics 365 műveletek - ellátási lánc management."
+description: "Erről a lapról olyan erőforrásokat érhet el, amelyek segítségével a szervezete hatékonyabban használhatja a Microsoft Dynamics 365 for Operations – Ellátásilánc-kezelés megoldását."
 author: yuyus
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,31 +29,31 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-A lap pontok forrásokat, amelyek segítségével hatékonyabb használatához a Microsoft Dynamics 365 műveletek - ellátási lánc management. 
+Erről a lapról olyan erőforrásokat érhet el, amelyek segítségével a szervezete hatékonyabban használhatja a Microsoft Dynamics 365 for Operations – Ellátásilánc-kezelés megoldását. 
 
-## <a name="whats-new-and-in-development"></a>Mi az új és a fejlesztés
-Keresse fel a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a> milyen új funkciók megjelenésekor, és milyen új szolgáltatások kidolgozás alatt állnak. 
+## <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
+Keresse fel a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a> oldalt az új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
 
 ## <a name="core-concepts-and-tasks"></a>Alapvető fogalmak és feladatok
-*  A bal oldali ablaktáblában Ha többet szeretne megtudni, hogy a szolgáltatás terület kiválasztása. 
-*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Raktárkezelés bejövő ASN-ek feldolgozása</a> (videó) 
+*  A bal ablaktáblában válasszon ki egy szolgáltatásterületet, amelyről többet szeretne megtudni. 
+*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Bejövő ASN-ek feldolgozása a Raktárkezelés modulban</a> (videó) 
 
 
 ## <a name="blogs"></a>Blogok
-Nincs olyan sok témaköreire gyártási és az ellátásilánc-kezelésben a <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX gyártási R & D csoportnapló</a> és <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">ellátási ellátásilánc-kezelés a Dynamics AX R & D csoportnapló</a>. Ezek legtöbbje a Dynamics 365 for Operations rendszer előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
+A <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában</a> és a <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában</a> több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része a Dynamics 365 for Operations rendszer előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
 
-Például a legutóbbi bejegyzések olvashat tudnivalókat: 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Dynamics 365 műveletekhez – raktározás bejelentése</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Továbbfejlesztett csomagolási funkciót (a műveletek 1611 Dynamics 365)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Áttárolás termelési rendelésekből, átadás rendelések</a>
+A legutóbbi bejegyzések témái: 
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Raktárkezelés a Dynamics 365 for Operations rendszerhez</a>
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Továbbfejlesztett csomagolási funkció (Dynamics 365 for Operations 1611)</a>
+* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Termelési rendelések áttárolása átadási rendelésekbe</a>
 
 ## <a name="white-papers"></a>Tanulmányok
-* A <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">a Microsoft Dynamics 365 műveletek - Bevezetés a Költségkönyvelés</a> tanulmány konfigurálása Microsoft Dynamics 365 műveletekhez – annak érdekében, hogy a tényleges költség elemzés költségkönyvelés alapvető lépéseket ismerteti. Egy sor olyan eljárást, amely abban a sorrendben jelennek meg, amelyek elvégzése is tartalmaz.
-* A <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 műveletek - lean Lean Manufacturing: Promise és Kanban feladatütemezés képes</a> tanulmány kanban feladatütemezés részletei ismerteti, és bemutatja a értékesítési rendelés véve használó Ígérhető (CTP) módszer alkalmas a szállítási dátum ellenőrzése. Azt is bemutatja, hogyan CTP kombinálható eseménykanbanok összeállítása rendelésre vagy rendelésre gyártás forgatókönyv modellezésére.
-* A <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">a Microsoft Dynamics 365 műveletek - Anyagjegyzék-számítás költségszámítás lap segítségével</a> a tanulmány ismerteti, hogyan állítható be a költségszámítási táblázat, amely tartalmazza az anyag- és gyártási, és hogyan befolyásolja a telepítő az Anyagjegyzék-számítás eredménye. Hajtsa végre a tanulás céljából a függelék gyakorlatok, és használja az ismeretek, amelyek már nyert Anyagjegyzék-számítás elemzést a dokumentum elolvasásával.
+* A <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Operations – Bevezetés a Költségkönyvelésbe</a> tanulmány ismerteti a Microsoft Dynamics 365 for Operations – Költségkönyvelés modul konfigurálásának alapvető lépéseit a tényleges költségelemzés elvégzése érdekében. Egy sor olyan eljárást is biztosít, amelyeket megjelenésük sorrendjében hajthat végre.
+* A <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 for Operations – Lean Manufacturing: Ígérhető és Kanbanfeladat ütemezése</a> tanulmány ismerteti kanbanfeladatok ütemezésének részleteit, valamint bemutatja az Ígérhető (CTP) módszert használó értékesítési rendelést a szállítási dátum ellenőrzése során. A tanulmány azt is bemutatja, hogyan kombinálható a CTP eseménykanbanokkal a rendelésre történő összeállítás vagy a rendelésre történő gyártás típusú forgatókönyvek modellezésére.
+* A <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Operations – Anyagjegyzék-számítás költségszámítási táblázat segítségével</a> című tanulmány ismerteti az anyagokat és a gyártást tartalmazó költségszámítási táblázat beállítását, valamint hogy a beállítás hogyan befolyásolja az anyagjegyzék-számítás eredményét. A mellékletben tanulású célú gyakorlatokat végezhet, és felhasználhatja a dokumentum elolvasásából származó ismereteit anyagjegyzék-számítás elemzés végzésére.
 
-## <a name="elearning-courses"></a>e-tanulás tanfolyamok
-További információt a Microsoft Dynamics 365 műveletek képzés, lásd: <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">a Microsoft Dynamics tanulás portál</a>. (a CustomerSource-fiókjához igényel) 
+## <a name="elearning-courses"></a>eLearning tanfolyamok
+A Microsoft Dynamics 365 for Operations rendszerről szóló képzésekkel kapcsolatos további információkért látogasson el ide: <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics Tanulási Portál</a>. (CustomerSource-fiókot igényel) 
 
 
 

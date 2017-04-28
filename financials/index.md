@@ -1,6 +1,6 @@
 ---
 title: "Pénzgazdálkodás kezdőlap"
-description: "Ez a témakör a Microsoft Dynamics 365 for Operations pénzgazdálkodással kapcsolatos funkcióinak súgótémaköreit és egyéb erőforrásait tartalmazza."
+description: "Ez a témakör a Microsoft Dynamics 365 for Operations pénzgazdálkodással kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,18 +28,18 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Operations pénzgazdálkodással kapcsolatos funkcióinak súgótémaköreit és egyéb erőforrásait tartalmazza. 
+Ez a témakör a Microsoft Dynamics 365 for Operations pénzgazdálkodással kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza. 
 
-További információkért válasszon ki egy funkcióterületet.
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+További információkért válasszon ki egy szolgáltatásterületet.
+- [Kötelezettségek](accounts-payable\accounts-payable.md) 
+- [Kinnlevőségek](accounts-receivable\accounts-receivable.md) 
+- [Készpénz- és bankkezelés](cash-bank-management\cash-bank-management.md)
+- [Költségkönyvelés](cost-accounting\cost-accounting-home-page.md)
+- [Tárgyi eszközök](fixed-assets\fixed-assets.md)
+- [Főkönyv](general-ledger\general-ledger.md) 
+- [Projektvezetés](project-management\overview-project-management-accounting.md)
+- [Állami szektor](public-sector\public-sector-functionality.md) 
+- [Költségvetés készítése](budgeting\budgeting-overview.md) 
 
 
 
