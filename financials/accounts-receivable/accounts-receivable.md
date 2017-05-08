@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: 03d08f2cf75a8307bc465464917d86efc69be46f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 1afa291099362c31a7a2c972cc45b19bfc3897bf
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 A Kinnlevőségek szakasz a vevői számlák és a beérkező kifizetések nyilvántartására szolgál. 
 
-Vevői számlák, értékesítési rendelések vagy a csomagjegyzék alapján hozhat létre. Olyan szállítói számlákat is megadhat, amelyek nincsenek hozzárendelve beszerzési rendelésekhez. Kifizetések kaphat segítségével több különböző fizetéstípusok. Ezek közé tartozik a váltók, készpénzfizetési, csekkek, hitelkártyákat és az elektronikus kifizetésekhez. Ha a szervezet több jogi személy is tartalmaz, a jogi személyek nevében használhat rekord kifizetésekhez központosított kifizetések egyetlen jogi személy.
+Vevői számlákat értékesítési rendelések vagy szállítólevelek alapján hozhat létre. Olyan szabad szöveges számlákat is megadhat, amelyek nem tartoznak értékesítési rendelésekhez. Kifizetéseket több különböző fizetéstípus használatával fogadhat. Ezek közé tartoznak a váltók, a készpénzfizetés, csekkek, hitelkártyák és elektronikus kifizetések. Ha a szervezete több jogi személyből áll, központosított kifizetéseket használva a kifizetéseket a többi jogi személy nevében egyetlen jogi személynél rögzítheti.
 
 
 

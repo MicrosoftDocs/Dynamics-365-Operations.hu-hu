@@ -60,3 +60,15 @@
 #### [Bérlista adatainak frissítése GYIK](localizations/noam-usa-payroll-data-updates.md)
 #### [Bérlista-jelentések létrehozása](localizations/noam-usa-generate-payroll-reports.md)
 
+# [Pénzügyek](/dynamics365/operations/financials/index)
+
+# [Kiskereskedelem](/dynamics365/operations/retail/index)
+
+# [Ellátásilánc-kezelés](/dynamics365/operations/supply-chain/index)
+
+# [Fejlesztő és Rendszergazda](/dynamics365/operations/dev-itpro/index)
+
+# Egyéb erőforrások
+## [Dynamics_365_for_Operations fogalomtár](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/human-resources/toc.json)
+## [Új vagy módosult elemek](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/human-resources/toc.json)
+

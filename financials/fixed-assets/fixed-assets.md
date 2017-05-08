@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: cdcf247f33a35ebae4af4ff22c10083642e9f97a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 9d2c591b4a3f30ac9a3a842161ee7aa0e6c1db35
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak. 
 
-A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az eszközök értékcsökkenésének elszámolására, valamint az értékcsökkenést meghatározó tőkésítési küszöb beállítására. Az értékek korrekciójára, végül a tárgyi eszközök kivezetésére. Ha a tárgyi eszközöket a főkönyvvel együtt alkalmazza, akkor megtekintheti az összes tárgyi eszköz aktuális értékét. A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban/régiókban érvényes könyvelési törvényeknek is. A követelmények a tárgyi eszközök beszerzési és kivezetési tranzakcióinak a rögzítésével, értékcsökkenésével, élettartamával, felértékelésével és leértékelésével kapcsolatos szabályokat tartalmazhatnak. A tárgyi eszközökkel kapcsolatos szolgáltatásokban számos megtalálható e szabványok és szabályok közül.
+A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az értékcsökkenésük elszámolására, valamint az értékcsökkenést meghatározó tőkésítési küszöb beállítására. Kiszámítható a tárgyi eszközök kiigazítása, végül elvégezhető az eszközök kivezetése. Ha a tárgyi eszközöket a főkönyvben tartja nyilván, akkor megtekintheti az összes tárgyi eszköz aktuális értékét. A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban/régiókban érvényes könyvelési jogszabályoknak is. A követelmények a tárgyi eszközök beszerzési és kivezetési tranzakcióinak a rögzítésével, értékcsökkenésével, élettartamával, felértékelésével és leértékelésével kapcsolatos szabályokat tartalmazhatnak. A Tárgyi eszközök szolgáltatásban számos megtalálható e szabványok és szabályok közül.
 
 
 

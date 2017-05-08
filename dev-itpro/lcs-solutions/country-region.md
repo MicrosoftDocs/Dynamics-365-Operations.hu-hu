@@ -17,31 +17,42 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: b77b61089c359127a7404437c29ef63a01416779
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4a3ecb4cb643d63333666f8d5d49760caacc4e58
+ms.openlocfilehash: e14d0836ee16db4fba9ef49df9a49564aa4c0402
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/27/2017
 
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Honosítási és szabályozó funkciók
 
-A Microsoft Dynamics 365 for Operations tartalmazza az egyes ország-/ területspecifikus rendeletek és folyamatok működését. Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról. 
+[!include[banner](../includes/banner.md)]
 
-## <a name="developer-and-isv-information"></a>Fejlesztői és független szoftverszállítói információk
-A következő erőforrások az ország-/ régióspecifikus testreszabásokat létrehozó fejlesztők és független szoftverszállítók számára nyújtanak információkat.
+
+A Microsoft Dynamics 365 for Operations tartalmaz egyes ország-/ területspecifikus előírásokkal és folyamatokkal kapcsolatos funkciókat, melyek leírása megtalálható a [Termékelérhetőségi útmutatóban](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
+
+Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról. 
+
+## <a name="developing-localized-solutions"></a>Honosított funkciók fejlesztése
+A következő erőforrások az ország-/ régióspecifikus testreszabásokat létrehozó, illetve a Microsoft által nem támogatott ország számára megoldást biztosító fejlesztők és független szoftverszállítók számára nyújtanak útmutatást és információkat.
 -   [Eltérő honosítási modellek](separate-localization-models.md)
 -   [Ország/régióspecifikus tartalom alkalmazása](apply-country-context.md)
 -   [Jogszabályban előírt tanúsítványok](regulatory-certifications.md)
 -   [Honosítási funkciók osztályozása](classify-localization-features.md)
 -   [Országkódok – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates"></a>Honosítási frissítések
+## <a name="localization-updates-and-communication"></a>Honosítási frissítések és közlemények
 A következő erőforrások a tervezett és új honosítási funkciókat ismertetik. 
--   [Honosítási portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC)
+
+### <a name="localization-updates"></a>Honosítási frissítések
+-   [Honosítási portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (hetente frissítve)
+-   [LCS megoldáskereső](../lifecycle-services/issue-search-lcs.md) (naponta frissítve)
+
+### <a name="communication-and-alerts"></a>Közlemények és figyelmeztetések
 -   [Szabályozások figyelésére és frissítésére vonatkozó kommunikáció](regulatory-watch-communication.md)
--   [A Microsoft tájékoztatása az országos/régióbeli szabályozással kapcsolatos figyelmeztetésről és a jogszabály-követési funkciók állapotának nyomon követése](submit-localization-alerts.md)
+-   [A Microsoft tájékoztatása az országos/régióbeli szabályozással kapcsolatos figyelmeztetésről és a jogszabálykövetési funkciók állapotának nyomon követése](submit-localization-alerts.md)
 
 ## <a name="electronic-reporting"></a>Elektronikus jelentés
 Az elektronikus jelentési (ER) eszköz a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. További tájékoztatás a következő témakörök egyikében található:
@@ -51,7 +62,15 @@ Az elektronikus jelentési (ER) eszköz a különböző országok/régiók jogi 
 -   [Elektronikus jelentéskészítési funkciók listájának kibővítése](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Elektronikus jelentéskészítés céljai](../analytics/electronic-reporting-destinations.md)
 -   [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [Elektronikus jelentéskészítés beállítása Power BI-vel](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Elektronikus jelentéskészítés adatok a Power BI-be történő lehívásához](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+## <a name="task-guides"></a>Feladat-útmutatók
+A feladat-útmutatók a termék súgópaneljéről érhetők el, és lépésről lépésre végigvezetik a felhasználót a legfontosabb üzleti folyamatokon. A feladat-útmutatók megnyitásával végigolvashatja a kívánt üzleti folyamat lépéseit, vagy a feladat-útmutatót lejátszva a rendszer végigkíséri az üzleti folyamat és az adatbevitel menetén.
+
+A feladat-útmutatók megkereséséhez lépjen a Microsoft Dynamics 365 for Operations kívánt oldalára, és kattintson a Súgó lehetőségre. A súgó panel felsorolja az oldalt használó feladat-útmutatókat. A súgó panelen cím szerint is kereshet feladat-útmutatókra.
+
+További információ: [Feladat-útmutatók](/dynamics365/operations/dev-itpro/get-started/help-overview#task-guides).
+
 
 ## <a name="countryregion-specific-help-topics"></a>Ország-/régióspecifikus súgó témakörök
 Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják fel.
@@ -62,17 +81,17 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Üzletitevékenység-kimutatás ](/dynamics365/operations/financials/localizations/apac-aus-business-activity-statement)
 -   [Alacsony értékű csoport értékcsökkenése](/dynamics365/operations/financials/localizations/apac-aus-low-value-pool-depreciation)
 
-
 ### <a name="austria"></a>Ausztria
 
+-   [Féléves értékcsökkenés](/dynamics365/operations/financials/localizations/emea-aut-half-year-depreciation)
 -   [Csomagolóanyag díjai](/dynamics365/operations/financials/localizations/emea-aut-packing-material-fee-calculation)
 -   [Áfabevallás](/dynamics365/operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### <a name="belgium"></a>Belgium
 
 -   [CODA banki kivonat](/dynamics365/operations/financials/localizations/emea-bel-coda-bank-statement-import)
+-   [Intervat-adóbevallás](/dynamics365/operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM-jelentés beállítása](/dynamics365/operations/financials/localizations/emea-bel-prodcom-report)
-
 
 ### <a name="brazil"></a>Brazília
 
@@ -93,7 +112,6 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Adófizetések](/dynamics365/operations/financials/localizations/latam-bra-tax-payments)
 -   [Adók](/dynamics365/operations/financials/localizations/latam-bra-calculate-taxes)
 
-
 ### <a name="china"></a>Kína
 -   [Anyagjegyzékek összehasonlítása](/dynamics365/operations/financials/localizations/apac-chn-bom-comparison)
 -   [Kínai bizonylatok](/dynamics365/operations/financials/localizations/apac-chn-vouchers)
@@ -105,12 +123,14 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Fő számlák készletének feladása hely szerint](/dynamics365/operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
 -   [Főkönyvi számla tartozik és követel tételeinek megjelenítése](/dynamics365/operations/financials/localizations/apac-chn-negative-debits-credits)
 
-
 ### <a name="the-czech-republic"></a>Cseh Köztársaság
+
+-   [Készpénzfizetési engedmény jóváírásra](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount)
 -   [Értékcsökkenés kerekítése](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
--       [A tárgyieszköz-kivezetés féléves értékcsökkenése a Cseh Köztársaság esetében](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
-    -   [Értékcsökkenés felfüggesztése (ünnepek)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
-    -   [Tárgyi eszközök értékcsökkenési módjai a Cseh Köztársaság esetében](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+-   [A tárgyieszköz-kivezetés féléves értékcsökkenése a Cseh Köztársaság esetében](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
+-   [Értékcsökkenés felfüggesztése (ünnepek)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
+-   [Tárgyi eszközök értékcsökkenési módjai a Cseh Köztársaság esetében](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+
 -   [Tárgyi eszköz előzetes beszerzésének feladása](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [Áfabevallás a Cseh Köztársaság esetében](/dynamics365/operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Osztott időszakok az időszaki naplókban](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
@@ -127,6 +147,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Számlaazonosítók módosítása az értékesítési rendelésen](/dynamics365/operations/financials/localizations/emea-edit-invoice-id-sales-orders)
 -   [EU beérkezési igazolások](/dynamics365/operations/financials/localizations/emea-entry-certificates)
 -   [EU értékesítési lista jelentés](/dynamics365/operations/financials/localizations/emea-eu-sales-list)
+-   [Árfolyam-korrekciók](/dynamics365/operations/financials/localizations/emea-exchange-rate-adjustments)
 -   [Fizetési módok fájlformátumai](/dynamics365/operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 -   [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](/dynamics365/operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 -   [Intrastat](/dynamics365/operations/financials/localizations/emea-intrastat)
@@ -143,11 +164,9 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Aláírók felállítása a nyomtatási képernyőkhöz](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Osztott időszakok az időszaki naplókban](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
-
+-   [Áfaárfolyamok](/dynamics365/operations/financials/localizations/emea-vat-exchange-rate)
 -   [Európai áfabevallás](/dynamics365/operations/financials/localizations/emea-vat-reporting)
-
 -   [Elszámolási tranzakciók megtekintése](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
-
 
 ### <a name="france"></a>Franciaország
 -   [Számla- és bizonylatszámok kronológiai sorrendben](/dynamics365/operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -164,15 +183,16 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
    -   [Titres de recette](/dynamics365/operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Szállítói számlák visszatartott kifizetése](/dynamics365/operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
 
-
 ### <a name="germany"></a>Németország
 -   [Értékcsökkenés a további beszerzéseken](/dynamics365/operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
 -   [Német könyvvizsgálati fájl (GDPdU/GoBD)](/dynamics365/operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
 -   [Német naplólista jelentése](/dynamics365/operations/financials/localizations/emea-deu-journal-list-report)
--   [Külön címke nyomtatása értékesítésből származó jóváírásoknak (Feladat-útmutató](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
+-   [Külön címke nyomtatása értékesítésből származó jóváírásoknak](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
 
 ### <a name="hungary"></a>Magyarország
 
+-   [Értékcsökkenés módjai tárgyi eszközöknél](/dynamics365/operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods)    
+-   [Tárgyi eszköz áthelyezése készletbe](/dynamics365/operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
 -   [Kis értékű tárgyi eszközök](/dynamics365/operations/financials/localizations/emea-hun-low-cost-fixed-assets)
 
 ### <a name="italy"></a>Olaszország
@@ -184,6 +204,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Szállítólevél dátumigazolása az olaszországi számlákon](/dynamics365/operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Olasz áfakönyvek](/dynamics365/operations/financials/localizations/emea-ita-fiscal-books)
 -   [Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében](/dynamics365/operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
+-   [Adóelőleg](/dynamics365/operations/financials/localizations/emea-ita-withholding tax)
 
 ### <a name="japan"></a>Japán
 
@@ -240,6 +261,9 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Értékesítési számlamásolatok számozása](/dynamics365/operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
 -   [Tárgyi eszközök értékcsökkenése](/dynamics365/operations/financials/localizations/emea-pol-fixed-assets-depreciation)
 -   [Tárgyi eszközök értékesítése](/dynamics365/operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
+-   [Visszaküldhető csomagolás](/dynamics365/operations/financials/localizations/emea-pol-returnable-packages)
+-   [Áfajelentések](/dynamics365/operations/financials/localizations/emea-pol-sales-tax-reports)
+-   [Standard könyvvizsgálati fájl (SAF)](/dynamics365/operations/financials/localizations/emea-pol-standard-audit-file-saf)
 -   [Forgalom- és mérlegkimutatás](/dynamics365/operations/financials/localizations/emea-pol-turnover-balances-statement)
 
 ### <a name="saudi-arabia"></a>Szaúd-Arábia
@@ -252,15 +276,16 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 
 ### <a name="spain"></a>Spanyolország
 
-
--   [Spanyol váltó](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
+-   [Spanyol váltó](/dynamics365/operations/financials/localizations/emea-esp-bill-of-exchange-options)
 -   [A készpénzfizetési engedményt a számlaparaméterben alkalmazza a rendszer](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
--   [Számlaszám pénzügyi adatainak használata](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
+-   [Feltételes áfa](/dynamics365/operations/financials/localizations/emea-esp-conditional-sales-tax)
 -   [Tárgyi eszköz átértékelési csoportjai](/dynamics365/operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
+-   [Közösségi áfa](/dynamics365/operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Egyszeri vevők](/dynamics365/operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
 -   [Spanyol kötelezvény beállításai](/dynamics365/operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Beszerzési és értékesítési ciklusok](/dynamics365/operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Speciális bevitelek és nyitólapok](/dynamics365/operations/financials/localizations/emea-esp-opening-sheets-spain)
+-   [Számlaszám pénzügyi adatainak használata](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
 
 ### <a name="sweden"></a>Svédország
 
@@ -286,4 +311,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Év végi 1099-es jelentés](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Bérlista](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Állami szektor](/dynamics365/operations/financials/public-sector/public-sector-functionality)
+
+
+
 

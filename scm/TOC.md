@@ -54,8 +54,9 @@
 # Termékinformációk kezelése
 ## Termékinformációk
 ### [Anyagjegyzék és receptúra](production-control/bill-of-material-bom.md)
-### [Anyagjegyzék-tervező funkciója](production-control/bom-designer-functionality.md)
+### [Anyagjegyzék-tervező funkció](production-control/bom-designer-functionality.md)
 ### [Termékdimenzió](pim/product-dimensions.md)
+### [Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások](production-control/default-order-settings.md)
 ### [Termékszám elnevezési rendszere](pim/product-variant-identification-nomenclature.md)
 ### [Termékkel kapcsolatos fordítás GYIK](pim/translations-product-related-information.md)
 ### [Sorozatszám bejegyzése az értékesítési folyamat során](sales-marketing/register-serial-numbers-sales-process.md)
@@ -70,49 +71,77 @@
 ### [Konfigurációs modell beállítása](pim/set-up-maintain-product-configuration-model.md)
 ### [Rendszer által definiált és felhasználó által definiált táblamegszorítás](pim/system-defined-user-defined-table-constraints.md)
 # Gyártásvezérlés
-## Termelési folyamat    
-### [Tevékenységalapú alvállalkozásba adás](production-control/activity-based-subcontracting.md)
-### [Kötegattribútumok](production-control/batch-attributes.md)
-### [Anyagjegyzékek és receptúrák](production-control/bill-of-material-bom.md)
-### [Anyagjegyzék-tervező funkciója](production-control/bom-designer-functionality.md)
-### [Összesített kötegrendelések](production-control/consolidated-batch-orders.md)
-### [Alvállalkozói munka kezelése a termelésben](production-control/manage-subcontract-work-production.md)
-### [Vegyes módú tervezés: Elkülönített, folyamatos és lean típusú források kombinálása](production-control/mixed-mode-plan.md)
-### [Termelési folyamat](production-control/production-process-overview.md)
-### [A termelésbeállítás követelményei](production-control/production-set-up-requirements.md)
-### [Útvonalak és műveletek](production-control/routes-operations.md)
-## Termelési rendelések
-### [Termelési rendelések létrehozása](production-control/create-production-orders.md)
-### [Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások](production-control/default-order-settings.md)
-### [Termelési rendelések kiadása](production-control/release-production-orders.md)
-### [Termelési rendelési állapot sztornírozása](production-control/reverse-production-order-status.md)
-### [Anyagjegyzékek jelentése befejezettként](production-control/report-boms-as-finished.md)
-### [Termelési rendelések jelentése befejezettként](production-control/report-production-orders-as-finished.md)
-## Lean termelés 
-### [Kanban átviteli tábla támogatás vonalkódolvasókhoz](production-control/kanban-transfer-board-support-barcode-scanner.md) 
-### [Kanbanfeladat ütemezése – Lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+## [Termelési folyamat áttekintése](production-control/production-process-overview.md)
+## [Vegyes módú tervezés: Elkülönített, folyamatos és lean típusú források kombinálása](production-control/mixed-mode-plan.md)
+## [Alvállalkozói munka kezelése a termelésben](production-control/manage-subcontract-work-production.md)
+## Árucikkgyártás
+### Termelési alapadatainak karbantartása
+#### [A termelésbeállítás követelményei](production-control/production-set-up-requirements.md)
+#### [Anyagjegyzékek és receptúrák](production-control/bill-of-material-bom.md)
+#### [Anyagjegyzék-tervező funkció](production-control/bom-designer-functionality.md)
+#### [Anyagjegyzék-számítások](cost-management/bom-calculations.md)
+#### [Üzemi erőforrások](production-control/operations-resources.md)
+#### [Erőforrás-képességek](production-control/resource-capabilities.md)
+#### [Útvonalak és műveletek](production-control/routes-operations.md)
+#### [Termelési rendelés alapbeállításai a gyártásvégrehajtásban](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Raktári munkairányelvek](warehousing/warehouse-work-policies.md)
+### Termelési műveletek ütemezése
+#### [Műveletek ütemezése](production-control/operations-scheduling.md)
+#### [Feladatütemezés](production-control/job-scheduling.md)
+#### [A műveletek ütemezésének beállításai](production-control/operation-scheduling-options.md)
+### Termelési feladatok működtetése
+#### [Termelési rendelések létrehozása](production-control/create-production-orders.md)
+#### [Termelési rendelések kiadása](production-control/release-production-orders.md)
+#### [Termelési rendelési állapot sztornírozása](production-control/reverse-production-order-status.md)
+#### [Termelési rendelések jelentése befejezettként](production-control/report-production-orders-as-finished.md)
+#### [Anyagjegyzékek jelentése befejezettként](production-control/report-boms-as-finished.md)
+#### [Anyaghelyettesítés a gyártásban](production-control/substitute-items-bom-lines.md)
+#### [Gyártásvégrehajtás regisztrációja](production-control/registration-manufacturing-execution.md)
+#### [Termelési visszajelzés](production-control/production-feedback.md)
+#### [Munkaidő és jelenlét rögzítése](production-control/time-attendance-registrations.md)
+### Pénzügyi termelési adatok kezelése
+#### [Idők hozzárendelése egy feladatköteg feladataihoz](production-control/allocate-time-jobs-job-bundle.md)
+#### [Anyagfelhasználás kiszámítása](production-control/consumption.md)
+#### [Termelés feladása](cost-management/production-posting.md)
+## Lean manufacturing (lean gyártás) 
 ### [Lean manufacturing (áttekintés)](production-control/lean-manufacturing-overview.md)
-### [Lean szervezet modellezése](production-control/lean-manufacturing-modeling-lean-organization.md)
-## Műveletek és feladatok ütemezése
-### [Idők hozzárendelése egy feladatköteg feladataihoz](production-control/allocate-time-jobs-job-bundle.md)
-### [Feladat ütemezése](production-control/job-scheduling.md)
-### [A műveletek ütemezésének beállításai](production-control/operation-scheduling-options.md)
-### [Műveletek ütemezése](production-control/operations-scheduling.md)
-## Erőforrások
-### [Üzemi erőforrások](production-control/operations-resources.md)
-### [Erőforrás-képességek](production-control/resource-capabilities.md)
-### [Munkaidő és jelenlét rögzítése](production-control/time-attendance-registrations.md)
-## Gyártásvégrehajtás
-### [Anyaghelyettesítés a gyártásban](production-control/substitute-items-bom-lines.md)
-### [Anyagfelhasználás kiszámítása](production-control/consumption.md)
-### [Termelési visszajelzés](production-control/production-feedback.md)
-### [Termelési rendelés alapbeállításai a gyártásvégrehajtásban](production-control/production-order-defaults-manufacturing-execution.md)
-### [Termelés feladása](cost-management/production-posting.md)
-### [Gyártásvégrehajtás regisztrációja](production-control/registration-manufacturing-execution.md)
+### [Tevékenységalapú alvállalkozásba adás](production-control/activity-based-subcontracting.md)
+### Termelési alapadatainak karbantartása
+#### [Lean szervezet modellezése](production-control/lean-manufacturing-modeling-lean-organization.md)
+#### [Üzemi erőforrások](production-control/operations-resources.md)
+### Kanbanfeladatok ütemezése
+#### [Kanbanfeladat ütemezése lean manufacturing céljára](production-control/lean-manufacturing-kanban-job-scheduling.md)
+#### [Feladatütemezés](production-control/job-scheduling.md)
+### Kanbanfeladatok működtetése
+#### [Kanbanátviteli tábla támogatása vonalkódolvasókhoz](production-control/kanban-transfer-board-support-barcode-scanner.md)
+#### [Termelési visszajelzés](production-control/production-feedback.md)
+## Folyamatgyártás
+### Termelési alapadatainak karbantartása
+#### [Anyagjegyzékek és receptúrák](production-control/bill-of-material-bom.md)
+#### [Üzemi erőforrások](production-control/operations-resources.md)
+#### [Erőforrás-képességek](production-control/resource-capabilities.md)
+#### [Kötegattribútumok](production-control/batch-attributes.md)
+#### [Termelési rendelés alapbeállításai a gyártásvégrehajtásban](production-control/production-order-defaults-manufacturing-execution.md)
+#### [A termelésbeállítás követelményei](production-control/production-set-up-requirements.md)
+### Termelési műveletek ütemezése
+#### [Műveletek ütemezése](production-control/operations-scheduling.md)
+#### [A műveletek ütemezésének beállításai](production-control/operation-scheduling-options.md)
+#### [Feladatütemezés](production-control/job-scheduling.md)
+### Termelési feladatok működtetése
+#### [Összesített kötegrendelések](production-control/consolidated-batch-orders.md)
+#### [Anyaghelyettesítés a gyártásban](production-control/substitute-items-bom-lines.md)
+#### [Gyártásvégrehajtás regisztrációja](production-control/registration-manufacturing-execution.md)
+#### [Termelési visszajelzés](production-control/production-feedback.md)
+#### [Munkaidő és jelenlét rögzítése](production-control/time-attendance-registrations.md) 
+### Pénzügyi termelési adatok kezelése
+#### [Idők hozzárendelése egy feladatköteg feladataihoz](production-control/allocate-time-jobs-job-bundle.md)
+#### [Anyagfelhasználás kiszámítása](production-control/consumption.md)
+#### [Termelés feladása](cost-management/production-posting.md)
 # Értékesítés és marketing
 ## [Marketing](sales-marketing/overview-sales-marketing.md)
 ## Értékesítési rendelések
 ### [Rendelési ígéretek](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Szállítási alternatívák](sales-marketing/delivery-alternatives.md)
 ### [Rendelésbeviteli határidők](sales-marketing/order-entry-deadlines.md)
 ### [Közvetlen kiszállítások](sales-marketing/direct-deliveries.md)
 ### [Szállítási ütemezések](sales-marketing/delivery-schedules.md)
@@ -138,6 +167,7 @@
 ### [Elrendezés beállítása](warehousing/warehouse-configuration.md)
 ### [Raktári munkairányelvek](warehousing/warehouse-work-policies.md)
 ### [Mértékegység és rakodási irányelvek](warehousing/unit-measure-stocking-policies.md)
+### [Raktár Power BI-tartalom](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
 ## Kitárolás és csomagolás
 ### [Csomagolóanyagok és díjak](warehousing/pack-materials-packing-material-fees.md)
 ## Készletszámlálás
@@ -151,7 +181,21 @@
 ## Feltöltés
 ### [Feltöltés](warehousing/replenishment.md)
 ## Mobileszközök
+### [A raktározási alkalmazás telepítése és konfigurálása ](warehousing/install-configure-warehousing-app.md)
 ### [Mezőnevek konfigurálása a raktározási alkalmazásban](warehousing/configure-app-field-names-priorities-warehouse.md)
 ### [Mobileszközök beállítása raktári munkához](warehousing/configure-mobile-devices-warehouse.md)
 ### [Raktári mobileszközportál (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Raktári mobileszköz megjelenítési beállításai](warehousing/change-warehouse-mobile-device-displays.md)
+
+# [Pénzügyek](/dynamics365/operations/financials/index)
+
+# [Emberi erőforrások](/dynamics365/operations/human-resources/index)
+
+# [Kiskereskedelem](/dynamics365/operations/retail/index)
+
+# [Fejlesztő és Rendszergazda](/dynamics365/operations/dev-itpro/index)
+
+# Egyéb erőforrások
+## [Dynamics 365 for Operations fogalomtár](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Új vagy módosult elemek](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+

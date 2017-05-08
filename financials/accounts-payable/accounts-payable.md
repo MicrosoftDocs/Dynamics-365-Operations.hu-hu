@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: c0febeaf790fd9d2281f0e98089eb557ca1f7cec
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 8bdfc9b29da86460e8f47760cf8afc051ea923fb
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Ez a témakör a Kötelezettségekről nyújt áttekintést. 
 
-Megadhat szállítói számlákat kézzel, vagy egy adatentitáson keresztül elektronikusan is megkaphatja azokat. A számlák rögzítése vagyfogadása után áttekintheti és jóváhagyhatja a számlákat egy számla-jóváhagyási napló vagy a **Szállítói számla** oldal használatával. Segítségével számlaegyeztetés, a szállítói számlára vonatkozó irányelvek és a munkafolyamat automatizálása az ellenőrzési folyamatot, úgy, hogy a rendszer automatikusan jóváhagyja a számlákat, amelyek megfelelnek bizonyos feltételeknek, és a fennmaradó számlák vannak jelölve ellenőrzésre egy erre jogosult felhasználó.
+Megadhat szállítói számlákat kézzel, vagy egy adatentitáson keresztül elektronikusan is megkaphatja azokat. A számlák rögzítése vagy fogadása után áttekintheti és jóváhagyhatja a számlákat egy számlajóváhagyási napló vagy a **Szállítói számla** oldal használatával. Számlaegyeztetés, a szállítói számlára vonatkozó irányelvek és munkafolyamat segítségével automatizálhatja az ellenőrzési folyamatot, úgy, hogy a rendszer automatikusan jóváhagyja a számlákat, amelyek megfelelnek bizonyos feltételeknek, a fennmaradó számlákat pedig megjelölje ellenőrzésre egy erre jogosult felhasználó számára.
 
 
 

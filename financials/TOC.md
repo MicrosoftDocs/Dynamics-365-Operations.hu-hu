@@ -170,8 +170,9 @@
 ## [Költségösszetevő-dimenziók](cost-accounting/cost-elements.md)
 ## [Költségobjektum-dimenziók](cost-accounting/cost-objects.md)
 ## [Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez](cost-accounting/map-cost-elements-dimension-members.md)
+## [Járulékos költség számítása](cost-accounting/overhead-calculation.md)
 ## [Költségellenőrzési mobil munkaterület](cost-accounting/cost-controlling-mobile-workspace.md)
-## [Power BI-tartalmú költségkönyvelés elemzése](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
+## [Költségkönyvelés elemzése Power BI-tartalom](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
 # [Állami szektor](public-sector/public-sector-functionality.md)
 ## [Állami szektor funkció tervezése](public-sector/plan-public-sector-functionality.md)
@@ -206,4 +207,18 @@
 ## [Projektajánlatok](project-management/project-quotations.md)
 ## [Projekterőforrások](project-management/project-resourcing.md)
 ## [Munkalebontási struktúrák](project-management/work-breakdown-structures.md)
+## [Projektidő megadása mobil munkaterület](project-management/project-time-entry-mobile-workspace.md)
 # [Honosítások](localizations/TOC.md)
+
+# [Emberi erőforrások](/dynamics365/operations/human-resources/index)
+
+# [Kiskereskedelem](/dynamics365/operations/retail/index)
+
+# [Ellátásilánc-kezelés](/dynamics365/operations/supply-chain/index)
+
+# [Fejlesztő és Rendszergazda](/dynamics365/operations/dev-itpro/index)
+
+# Egyéb erőforrások
+## [Dynamics_365_for_Operations fogalomtár](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [Új vagy módosult elemek](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+

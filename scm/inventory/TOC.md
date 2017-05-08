@@ -1,5 +1,6 @@
 # Raktárelrendezés létrehozása
 # Bejövő folyamat
+## [Beérkezés áttekintése](arrival-overview.md)
 # Kimenő folyamat
 # Készletkövetés beállítása
 ## [Készletnaplók](inventory-journals.md)
@@ -8,9 +9,10 @@
 ## [Készletmennyiség lefoglalása](reserve-inventory-quantities.md)
 ## [Egy értékesítési rendelés foglalása ugyanazon kötegből](../sales-marketing/reserve-same-batch-sales-order.md)
 # Bizományosi készlet
-## [Szállítás](consignment.md)
+## [Bizomány](consignment.md)
 ## [Bizomány beállítása](set-up-consignment.md)
 # Minőségkezelés
+## [Aktuális készlet mobil munkaterület](inventory-on-hand-mobile-workspace.md)
 ## [Minőségkezelés engedélyezése](enable-quality-management.md)
 ## [Készletzárolás](inventory-blocking.md)
 ## [Szabálytalanság kezelése](enable-nonconformance-management.md)
@@ -19,3 +21,4 @@
 # Cikk és köteg követése
 ## [Készletköteg egyesítése](merge-inventory-batches.md)
 ## [Elem és nyersanyag követése](trace-items-raw-materials-inventory-production-sales.md)
+

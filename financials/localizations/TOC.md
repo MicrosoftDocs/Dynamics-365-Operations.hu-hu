@@ -39,9 +39,10 @@
 
 # Európa
 ## [Előlegre jogosultak](emea-advance-holders.md)
-## [Számlaazonosítók módosítása az értékesítési rendelésen](emea-edit-invoice-id-sales-orders.md)
+## [Számlaazonosítók módosítása az értékesítési rendeléseken](emea-edit-invoice-id-sales-orders.md)
 ## [EU beérkezési igazolások](emea-entry-certificates.md)
 ## [EU értékesítési lista jelentés](emea-eu-sales-list.md)
+## [Árfolyam-korrekciók](emea-exchange-rate-adjustments.md)
 ## [Fizetési módok fájlformátumai](emea-select-file-formats-for-the-method-of-payments.md)
 ## [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](emea-credit-note-reverse-fixed-asset-sale.md)
 ## [Intrastat](emea-intrastat.md)
@@ -55,19 +56,20 @@
 ## [Nyilvántartási azonosítók](emea-registration-ids.md)
 ## [SEPA-átutalás áttekintése](../accounts-payable/sepa-credit-transfer.md)
 ## [SEPA beszedési megbízás – áttekintés](../accounts-receivable/sepa-direct-debit-overview.md)
-## [Aláírók felállítása a nyomtatási képernyőkhöz](emea-set-up-signers-for-printing-forms.md)
-## [Osztott időszakok az időszaki naplókban](emea-create-post-periodic-journals.md)
-## [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](emea-amount-printing-forms.md)
-## [Áfabevallás](emea-vat-reporting.md)
+## [Aláírók beállítása a nyomtatási képernyőkhöz](emea-set-up-signers-for-printing-forms.md)
+## [Áfaárfolyamok](emea-vat-exchange-rate.md)
 ## [Elszámolási tranzakciók megtekintése](emea-transactions-settlement-form.md)
 ## Ausztria
+### [Féléves értékcsökkenés](emea-aut-half-year-depreciation.md)
 ### [Csomagolóanyag díjai](emea-aut-packing-material-fee-calculation.md)
 ### [Áfabevallás](emea-aut-vat-statement-details.md)
 ## Belgium
 ### [CODA banki kivonat](emea-bel-coda-bank-statement-import.md)
+### [Intervat-adóbevallás](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM-jelentés beállítása](emea-bel-prodcom-report.md)
 
 ## Cseh Köztársaság
+### [Készpénzfizetési engedmény jóváírásra](emea-cze-credit-note-cash-discount.md)
 ### [Értékcsökkenés kerekítése](emea-cze-depreciation-rounding.md)
 ### [Értékcsökkenés felfüggesztése](emea-cze-depreciation-suspension-holidays.md)
 ### [Tárgyi eszközök értékcsökkenése](emea-cze-fixed-assets-depreciation.md)
@@ -94,7 +96,9 @@
 ### [Naplólista (jelentés)](emea-deu-journal-list-report.md)
 ### [Külön címke nyomtatása értékesítésből származó jóváírásoknak](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Magyarország
+### [Értékcsökkenés módjai tárgyi eszközöknél](emea-hun-fixed-assets-depreciation-methods.md)    
 ### [Kis értékű tárgyi eszközök](emea-hun-low-cost-fixed-assets.md)
+### [Tárgyi eszköz áthelyezése készletbe](emea-hun-fixed-asset-to-inventory.md)
 ## Olaszország
 ### [Áfabevallások részletei](emea-ita-vat-statements-details.md)
 ### [Tiltólista-jelentés](emea-ita-black-list-report.md)
@@ -103,6 +107,7 @@
 ### [Szállítólevél dátumigazolása a számlákon](emea-ita-packing-slip-date-verification-on-invoice.md)
 ### [Áfakönyvek](emea-ita-fiscal-books.md)
 ### [Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében](emea-ita-split-payment-invoices-issued-public-administration.md)
+### [Adóelőleg](emea-ita-withholding tax.md)
 ## Lettország
 ### [Tárgyieszköz-könyvelés](emea-lva-fixed-assets-accounting.md)
 ### [Tárgyi eszközök helyváltozásának nyomon követése](emea-lva-fixed-assets-location-fields-change.md)
@@ -119,12 +124,17 @@
 ### [Értékesítési számlamásolatok számozása](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [Tárgyi eszközök értékcsökkenése](emea-pol-fixed-assets-depreciation.md)
 ### [Tárgyieszköz-kivezetési funkciók kiterjesztése](emea-pol-fixed-asset-disposal-functionality-extension.md)
+### [Visszaküldhető csomagolás](emea-pol-returnable-packages.md)
+### [Áfajelentések](emea-pol-sales-tax-reports.md)
+### [Standard könyvvizsgálati fájl (SAF)](emea-pol-standard-audit-file-saf.md)
 ### [Forgalom- és mérlegkimutatás](emea-pol-turnover-balances-statement.md)
 ## Spanyolország
-### [Váltó](emea-esp-bill-of-exchange-options.md)
 ### [Készpénzfizetési engedmény alkalmazása a számlán](emea-esp-cash-discount-applied-invoice.md)
+### [Váltó](emea-esp-bill-of-exchange-options.md)
+### [Feltételes áfa](emea-esp-conditional-sales-tax.md)
 ### [Számlafogadó pénzügyi adatai](emea-esp-fiscal-data-invoice-account.md)
 ### [Tárgyieszköz-csoport átértékelése](emea-esp-fixed-asset-group-revaluation.md)
+### [Közösségi áfa](emea-esp-intra-community-vat.md)
 ### [Egyszeri vevők](emea-esp-no-one-time-customer-for-project-contracts.md)
 ### [Kötelezvény beállításai](emea-esp-promissory-note-options.md)
 ### [Beszerzési és értékesítési ciklusok](emea-esp-sales-purchase-cycle.md)
@@ -163,3 +173,4 @@
 
 # Észak-Amerika
 ## [Év végi 1099-es jelentés az Egyesült Államok számára](noam-usa-year-end-1099-reporting.md)
+

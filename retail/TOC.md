@@ -68,3 +68,16 @@
 ## [Kereskedelmi alapok – áttekintés](commerce-essentials.md)
 ## [Szervezetek és szervezeti hierarchiák (kereskedelmi alapok)](organizational-hierarchies-commerce-essentials.md)
 # [Informatikai szakértőknek és fejlesztőknek szánt tartalom](dev-itpro/TOC.md)
+
+# [Pénzügyek](/dynamics365/operations/financials/index)
+
+# [Emberi erőforrások](/dynamics365/operations/human-resources/index)
+
+# [Ellátásilánc-kezelés](/dynamics365/operations/supply-chain/index)
+
+# [Fejlesztő és Rendszergazda](/dynamics365/operations/dev-itpro/index)
+
+# Egyéb erőforrások
+## [Dynamics_365_for_Operations fogalomtár](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
+## [Új vagy módosult elemek](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+

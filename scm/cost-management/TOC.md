@@ -22,10 +22,14 @@
 ## [Dátum szerinti súlyozott átlag](weighted-average-date.md)
 ## [Súlyozott átlag tényleges értékkel és jelöléssel](weighted-average-physical-value-marking.md)
 # Gyártási költségszámítás
+## [A legyártott cikkek állandó költségeinek amortizálása](amortize-constant-costs-manufactured-item.md)
+## [Visszavezetéses költségelszámolás](backflush-costing.md)
+## [Anyagjegyzék-számítások](bom-calculations.md)
 ## [Anyagjegyzék-számítási csoport](bom-calculation-groups.md)
 ## [A termelési különbözet gyakori okai](common-sources-of-production-variances.md)
 ## [A termelési útvonaltervezésben használt költségkategória](cost-categories-used-production-routings.md)
 ## [A gyártásvezérlésben és a Projektvezetés könyvelésében alkalmazott költségkategória](cost-categories-used-production-control-project-management-accounting.md)
+## [Gyártott cikkre vonatkozó költségek megjelenítése](charges-manufactured-item.md)
 ## [Termelési rendelés költségelemzése](production-order-cost-analysis.md)
 ## [Termelési rendelés költségbecslése](production-order-cost-estimation.md)
 ## [Termelés feladása](production-posting.md)
@@ -39,5 +43,6 @@
 ## [Az elszámolóár frissítése gyártási környezetben](update-standard-costs-manufacturing-environment.md)
 ## [Új gyártott cikk elszámolóárának módosítása](update-standard-costs-new-manufactured-item.md)
 ## [Az elszámolóár frissítése nem gyártási környezetben](update-standard-costs-non-manufacturing-environment.md)
+
 
 
