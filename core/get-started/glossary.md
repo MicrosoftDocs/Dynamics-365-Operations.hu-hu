@@ -1,6 +1,6 @@
 ---
-title: "A Dynamics 365 for Operations szószedete"
-description: "A Microsoft Dynamics 365 for Operations szószedet kulcsfontosságú szakkifejezéseket és fogalmakat ad meg a Microsoft Dynamics 365 for Operations termékben."
+title: "Dynamics 365 for Operations fogalomtár"
+description: "A Microsoft Dynamics 365 for Operations fogalomtár a Microsoft Dynamics 365 for Operations termékben használt kulcsfontosságú szakkifejezéseket és fogalmakat határozza meg."
 author: tonyafehr
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,24 +17,25 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0d8af341c8020f756f1a736f6f74402e992d6e16
-ms.openlocfilehash: c6372e366db6abc7b586c2f1185ecd44bbf28502
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: dd9f65e045367aeba081d026da53894679ee7ed0
+ms.contentlocale: hu-hu
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>A Dynamics 365 for Operations szószedete
+# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations fogalomtár
 
 [!include[banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 for Operations szószedet kulcsfontosságú szakkifejezéseket és fogalmakat ad meg a Microsoft Dynamics 365 for Operations termékben. 
+A Microsoft Dynamics 365 for Operations fogalomtár a Microsoft Dynamics 365 for Operations termékben használt kulcsfontosságú szakkifejezéseket és fogalmakat határozza meg. 
 
-### <a name="a"></a>**N**
+### <a name="a"></a>**A**
 
-###### <a name="accounting-journal"></a>**könyvelési napló**
+###### <a name="accounting-journal"></a>**Könyvelési napló**
 
 Olyan napló, amely a számviteli események pénzügyi következményeinek rögzítésére használatos egy könyvelési rendszerben.
 
@@ -52,7 +53,7 @@ Az a mért mennyiség, amely bevitelre kerül egy tevékenységbe, vagy kikerül
 
 ###### <a name="address-verification-service"></a>**címellenőrzési szolgáltatás**
 
-Egy hitelkártya-feldolgozó által nyújtott szolgáltatás, amely ellenőrzi, hogy egy kártyatulajdonos által megadott számlázási cím megegyezik-e a kibocsátó bank fájljában lévő információval.
+Egy hitelkártya-feldolgozó által nyújtott szolgáltatás, amely ellenőrzi, hogy egy kártyatulajdonos által megadott számlázási cím megegyezik-e a kibocsátó bank nyilvántartásában szereplő információval.
 
 ###### <a name="adjusted-unit-price"></a>**módosított egységár**
 
@@ -70,7 +71,7 @@ Időszakok kor szerinti osztályozásának folyamata.
 
 Egy adott időszaknak egy lejárt vevői fizetési egyenleg jelentéséhez használt napjainak száma.
 
-### <a name="b"></a>**milliárd**
+### <a name="b"></a>**B**
 
 ###### <a name="balance-sheet"></a>**mérleg**
 
@@ -82,7 +83,7 @@ Olyan számla, amely a mérlegen szereplő értékváltozásokat ismerteti.
 
 ###### <a name="bank-reconciliation"></a>**banki egyeztetés**
 
-Egy bankszámlát képviselő főkönyvi számla egyeztetésének gyakorlata a főkönyvi számla bejegyzéseinek a banki kivonaton szereplő bejegyzések párosításával.
+Egy bankszámlát képviselő főkönyvi számla egyeztetésének gyakorlata a főkönyvi számla bejegyzéseinek a banki kivonaton szereplő bejegyzésekkel történő párosításával.
 
 ###### <a name="batch-attribute"></a>**kötegattribútum**
 
@@ -98,7 +99,7 @@ Az az időszak, amelyben egy termék megőrzi az optimális minőségét vagy je
 
 ###### <a name="bill-of-exchange"></a>**váltó**
 
-Egy harmadik félnek egy második fél igény szerinti kifizetésére vonatkozó, feltétel nélküli kérelmét dokumentáló forrásbizonylat.
+Forrásbizonylat, az amelyben foglalt szerint feltétel nélküli kérelem alapján egy harmadik fél kérésre köteles egy második fél kifizetését elvégezni.
 
 ###### <a name="bill-of-materials"></a>**anyagjegyzék**
 
@@ -110,7 +111,7 @@ Egy dokumentum vagy termék várakoztatásának művelete.
 
 ###### <a name="budget-control"></a>**költségvetés-ellenőrzés**
 
-A kiadások jóváhagyásának gyakorlata csak abban az esetben, amikor a költségvetési alapok lefoglalhatók a jövőbeni fizetési kötelezettségek teljesítésére.
+A kiadások engedélyezésének gyakorlata csak abban az esetben, amikor a költségvetési alapok lefoglalhatók a jövőbeni fizetési kötelezettségek teljesítésére.
 
 ###### <a name="budget-control-dimension"></a>**költségvetés-ellenőrzési dimenzió**
 
@@ -138,21 +139,21 @@ Receptúrás cikk termékszállítási tevékenységbe történő bevitele.
 
 ###### <a name="bundle"></a>**kötegelés**
 
-Egy egységként értékesítésre szánt termékek kombinációja.
+Egységként értékesítésre szánt termékek kombinációja.
 
 ###### <a name="business-unit"></a>**üzleti egység**
 
 Félig autonóm, a stratégiai üzleti célkitűzések teljesítése érdekében létrehozott üzemi egység.
 
-### <a name="c"></a>**K**
+### <a name="c"></a>**C**
 
 ###### <a name="capacity-load"></a>**kapacitásterhelés**
 
-Egy erőforrás által elvégezhető ütemezett munka maximális mennyisége a szükséges kapacitásszinten.
+Egy erőforrás által a szükséges kapacitásszinten elvégezhető ütemezett munka maximális mennyisége.
 
 ###### <a name="capacity-planning"></a>**kapacitástervezés**
 
-Olyan erőforrás-kapacitásszükségletek meghatározási eljárása, amelyek megfelelnek a jövőbeni kimeneti igénynek bizonyos időszakokban.
+Olyan erőforrás-kapacitásszükségletek meghatározására szolgáló eljárás, amelyek adott időszakokban megfelelnek a jövőbeni kimeneti igénynek.
 
 ###### <a name="carry-forward-budget"></a>**áthozott költségvetés**
 
@@ -160,7 +161,7 @@ Az egyik pénzügyi évről a másikra átvitt, és az új pénzügyi évben nyi
 
 ###### <a name="cash-generating-unit"></a>**pénzgeneráló egység**
 
-Az osztályozható eszközök legkisebb olyan csoportja, amely pénzt generál, függetlenül a szevezet egyéb eszközeitől. Ezek a csoportok az eszközök a felmerülő értékvesztési veszteségeket mérik fel.
+Az osztályozható eszközök legkisebb olyan csoportja, amely pénzt generál, függetlenül a szervezet egyéb eszközeitől. Ezek az eszközcsoportok a felmerülő értékvesztési veszteségeket mérésére szolgálnak.
 
 ###### <a name="catch-weight"></a>**tényleges súly**
 
@@ -176,7 +177,7 @@ A termékgyártás pénzügyi következményeinek összegzéséhez és a készle
 
 ###### <a name="commodity-pricing"></a>**alapanyag szerinti árképzés**
 
-Árképzési stratégia gyakori árváltozásokon átmenő árucikkekből gyártott értékesítési cikkek árának frissítéséhez.
+Árképzési stratégia gyakori árváltozásokon átmenő alapanyagokból gyártott értékesítési cikkek árának frissítéséhez.
 
 ###### <a name="consolidated-order"></a>**összesített rendelés**
 
@@ -206,7 +207,7 @@ Egy várt és egy tényleges költség közötti különbség.
 
 Egy szervezet által beszerzett, termelt vagy nyújtott gazdasági erőforrások költségének kiszámítási, hozzárendelési és lefoglalási folyamata.
 
-###### <a name="ctp-capable-to-promise"></a>**Ígérhető**
+###### <a name="ctp-capable-to-promise"></a>**ígérhető**
 
 Egy adott vevői igény kielégítéséhez szükséges, a rendelkezésre álló üzemi erőforrásokból és a rendelkezésre álló termékbemenetből származó termékkimenet-rész.
 
@@ -218,15 +219,15 @@ Pénzegységet jelölő alfanumerikus azonosító.
 
 Egy tevékenység végrehajtásához szükséges idő.
 
-### <a name="d"></a>**A**
+### <a name="d"></a>**D**
 
 ###### <a name="dashboard"></a>**irányítópult**
 
-A szokásos kezdőlap a Microsoft Dynamics 365 for Operations rendszerben. Az irányítópulton, a felhasználók minden általuk elérhető munkaterületből látnak egy részt. Minden szakasz a kapcsolódó munkaterület Összegzés szakaszából jelenít meg csempéket. Az irányítópult egy névből csempéket tartalmazó szakaszokból áll.
+A szokásos kezdőlap a Microsoft Dynamics 365 for Operations rendszerben. Az irányítópulton a felhasználók minden általuk elérhető munkaterületből látnak egy részt. Minden rész a kapcsolódó munkaterület Összegzés szakaszából jelenít meg csempéket. Az irányítópult egy névből és csempéket tartalmazó szakaszokból áll.
 
 ###### <a name="data-entity"></a>**adatentitás**
 
-Olyan adatszerkezet, amely entitás adatjellemzőit jelöli.
+Olyan adatszerkezet, amely egy entitás adatjellemzőit képviseli.
 
 ###### <a name="delegate"></a>**delegált**
 
@@ -238,21 +239,21 @@ Két fél közötti termékszállítást dokumentáló üzleti dokumentum.
 
 ###### <a name="demand-forecast"></a>**igény-előrejelzés**
 
-A termék iránti jövőbeli kereslet előrejelzése.
+Termék iránti jövőbeli kereslet előrejelzése.
 
-###### <a name="demand-forecasting"></a>**Igény-előrejelzés**
+###### <a name="demand-forecasting"></a>**igény-előrejelzés (folyamat)**
 
-Jövőbeli keresletet becslő és múltbeli keresletadatok alapján keresletelőrejelzéseket létrehozó üzleti folyamat.
+Jövőbeli keresletet becslő és múltbeli keresletadatok alapján kereslet-előrejelzéseket létrehozó üzleti folyamat.
 
 ###### <a name="deployable-package"></a>**telepíthető csomag**
 
-A felhasználó elfogadási teszt (UAT) és a gyártási környezet esetében a telepítésre használt jármű.
+A felhasználói elfogadási teszt (UAT) és a gyártási környezet esetében a telepítésre használt csomag.
 
 ###### <a name="designer"></a>**tervező**
 
 Egy Visual Studio-eszköz, amelyet modellelemek létrehozására, frissítésére és vizsgálatára használatos.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\pénzügyi dimenziókon / dimenziókon alapuló konfiguráció**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**dimenzión alapuló termékkonfiguráció**
 
 Termékváltozatok termékdimenzió-értékek kijelölésével történő létrehozására használt konfigurációs technológia.
 
@@ -282,15 +283,15 @@ Hálózati rendszer pénzalapoknak egyik bankszámláról a másikra történő 
 
 Egy esemény lehetővé teszi egy osztály vagy objektum számára, hogy más osztályokat vagy objektumokat értesítsenek, amikor valami érdemleges történik.
 
-###### <a name="epe-every-product-every"></a>**EPE-ciklus**
+###### <a name="epe-every-product-every"></a>**EPE (EPE-ciklus)**
 
 Rendszeresen ismétlődő termelési ciklus létrehozásához használt lean fogalom.
 
-###### <a name="extension"></a>**kiterjesztés**
+###### <a name="extension"></a>**bővítés**
 
 Egy alkalmazás testreszabása további funkcionalitás hozzáadásával egy már meglévő kódhoz.
 
-### <a name="f"></a>**P**
+### <a name="f"></a>**F**
 
 ###### <a name="financial-dimension"></a>**pénzügyi dimenzió**
 
@@ -304,7 +305,7 @@ Egy pénzügyi dimenzió tartományában található adatelem.
 
 A pénzügyi információkat és egy szervezet pénzügyi helyzetét dokumentáló jelentés.
 
-###### <a name="fixed-cost"></a>**fix költség**
+###### <a name="fixed-cost"></a>**rögzített költség**
 
 Olyan költség, amely nem módosul a termékszállítási teljesítmény vagy kimenet hatására.
 
@@ -314,7 +315,7 @@ Egy pénznem, amely egy másik pénznemre vonatkozóan rögzített árfolyammal 
 
 ###### <a name="fixed-quantity-kanban"></a>**rögzített mennyiségű kanban**
 
-Egy kanbanszabályhoz rendelt kanbanok számának állandósága esetén használt kanbantípus.
+Egy adott kanbanszabályhoz rendelt kanbanok számának állandósága esetén használt kanbantípus.
 
 ###### <a name="flexible-authentication"></a>**rugalmas hitelesítés**
 
@@ -332,7 +333,7 @@ Egy receptúra által szabályozott kötegfolyamat kimenete.
 
 ###### <a name="general-budget-reservation"></a>**általános költségvetési foglalás**
 
-Olyan dokumentum, amelyet az állami szektor entitásai használnak gyakran költségvetési alapok félretételére, illetve előjegyzésére, hogy azok az alapok ne legyenek elérhetők egyéb célokra.
+Olyan dokumentum, amelyet az állami szektor entitásai gyakran használnak gyakran költségvetési alapok félretételére, illetve előjegyzésére, hogy azok az alapok ne legyenek elérhetők egyéb célokra.
 
 ###### <a name="grace-period"></a>**türelmi időszak**
 
@@ -342,7 +343,7 @@ Egy megadott dátumon túli időszak, ameddig egy kötelezettség büntetlenül 
 
 Egyes országokban/régiókban kivetett áfa.
 
-### <a name="i"></a>**Én**
+### <a name="i"></a>**I**
 
 ###### <a name="intercompany"></a>**vállalatközi**
 
@@ -360,15 +361,15 @@ Előrejelzésekhez és igénytervezéshez használt termékcsalád-csoportosít�
 
 A cikkfelosztási csoportra vagy a cikkre és a hozzá tartozó termékdimenziókra történő hivatkozás egy kanbanszabályban.
 
-### <a name="k"></a>**ezer**
+### <a name="k"></a>**K**
 
 ###### <a name="kanban"></a>**kanban**
 
-Egy jelzés, amely közli egy termékmennyiség iránti követelményt.
+Jelzés, amely egy termékmennyiség iránti követelményt közöl.
 
 ###### <a name="kanban-flow"></a>**kanbanfolyamat**
 
-Meghatározza teljesített tevékenységek sorrendjét egy kanbanszabályhoz létrehozott kanbanok esetében.
+Teljesített tevékenységek sorrendjét határozza meg egy kanbanszabályhoz létrehozott kanbanok esetében.
 
 ###### <a name="kanban-job"></a>**kanbanfeladat**
 
@@ -384,13 +385,13 @@ Kanbanszabályon alapuló kanbanon végrehajtott cikkszükségletek száma.
 
 ###### <a name="kanban-rule"></a>**kanbanszabály**
 
-Szabály egy lean manufacturing rendszerben, amely azzal valósítja meg az anyagtervezést és a feltöltési irányelveket, hogy szabályozza a termelési folyamatokban lévő folyamatok és átviteli tevékenységek összehangolásának módját.
+Szabály egy lean manufacturing rendszerben, amely azzal valósítja meg az anyagtervezést és a feltöltési irányelveket, hogy szabályozza a folyamatok és átviteli tevékenységek a termelési folyamatokban történő összehangolásának módját.
 
-### <a name="l"></a>**K**
+### <a name="l"></a>**L**
 
-###### <a name="lean-manufacturing"></a>**lean gyártás**
+###### <a name="lean-manufacturing"></a>**lean manufacturing (lean gyártás)**
 
-Egy szemléletmód, amelyben a gyártási műveletek a lean termelési folyamatokat és az üzleti tevékenységeket helyezik előtérbe.
+Egy szemléletmód, amelyben a gyártási műveletek a lean termelési folyamatokat és üzleti tevékenységeket helyezik előtérbe.
 
 ###### <a name="lean-schedule-group"></a>**lean ütemezési csoport**
 
@@ -398,7 +399,7 @@ Egy mód a cikkek összevonására termeléshez, például egy beállítási cso
 
 ###### <a name="ledger-account"></a>**főkönyvi számla**
 
-A fő számla értékének és más pénzügyi dimenzióértékek kombinációjából létrehozott besorolás, amely egy számladiagramban van listázva, és egy gazdasági tevékenység pénzügyi következményeinek osztályozására használható.
+Fő számla értékéből és más pénzügyi dimenzióértékek kombinációjából létrehozott besorolás, amely egy számlatükörben van felsorolva, és egy gazdasági tevékenység pénzügyi következményeinek osztályozására használható.
 
 ###### <a name="license-code"></a>**licenckód**
 
@@ -406,13 +407,13 @@ Egy alfanumerikus kulcs, amely jogot biztosít a szoftver vagy szoftverösszetev
 
 ###### <a name="liquidity"></a>**likviditás**
 
-Egy fél azon képessége, hogy a rövid lejáratú kötelezettségeit forgóeszközökkel egyenlítse ki.
+Egy fél azon képessége, hogy a rövid lejáratú kötelezettségeit kiegyenlítse forgóeszközökkel.
 
-### <a name="m"></a>**E**
+### <a name="m"></a>**M**
 
 ###### <a name="manufacturing-overhead-based-on-material"></a>**anyagalapú gyártási többletköltségek**
 
-A gyártási többletköltség közvetett költségek felosztási százalékához használható számítási képletként vannak megadva. Az anyag jellegű összetevőkhöz rendelt költségcsoport működik a számítási képlet alapjaként. A számítási képletek meghatározhatók egyes termékekhez vagy termékekhez rendelt cikkcsoportokhoz is, így nagyobb rugalmasságot lehet elérni az anyagokon alapuló gyártási többletköltségek számításánál.
+A gyártási többletköltség közvetett költségszámítási képletek révén százalékos pótköltségként kerül megállapításra. A számítási képlet alapjául az anyagjellegű összetevőkhöz rendelt költségcsoport szolgál. A számítási képletek meghatározhatók egyes termékekhez vagy termékekhez rendelt cikkcsoportokhoz is, mivel így nagyobb rugalmasságot lehet elérni az anyagokon alapuló gyártási többletköltségek számításánál.
 
 ###### <a name="master-scheduling"></a>**alapütemezés**
 
@@ -428,11 +429,11 @@ Egy modell elemek egy csoportja (forrásfájlok és metaadatok), amely egy terje
 
 ### <a name="n"></a>**N**
 
-###### <a name="nbv-net-book-value"></a>**HKÉ (nettó könyv szerinti érték)**
+###### <a name="nbv-net-book-value"></a>**NKÉ (nettó könyv szerinti érték)**
 
 Egy tárgyi eszköznek a tárgyi eszköz eredeti költsége és a belőle levont halmozott értékcsökkenések közötti különbségként kiszámított értéke.
 
-### <a name="o"></a>**B**
+### <a name="o"></a>**O**
 
 ###### <a name="object-permission"></a>**objektumengedély**
 
@@ -440,45 +441,45 @@ Engedélyezett létrehozási, olvasási, frissítési, törlési vagy végrehajt
 
 ###### <a name="operating-unit"></a>**üzemi egység**
 
-Az a szervezet, amely olyan emberek között osztja meg a gazdasági erőforrások és a működési folyamatok felügyeletét, akiknek a szűkös erőforrások maximális kihasználása, a folyamatok javítása és a teljesítményük alapján történő elszámoltatás a feladata.
+Szervezet, amely olyan emberek között osztja meg a gazdasági erőforrások és a működési folyamatok felügyeletét, akiknek a szűkös erőforrások maximális kihasználása, a folyamatok javítása és a teljesítményük alapján történő elszámolás a feladata.
 
 ###### <a name="output-product"></a>**elkészült termék**
 
 Egy tevékenység eredményeként létrejövő fizikai termékek.
 
-###### <a name="overlayering"></a>**felülrétegzési**
+###### <a name="overlayering"></a>**felülrétegzés**
 
-A forráskód testreszabásának egy módszere új forráskód biztosításával, amely felülírja a régit.
+A forráskód testreszabásának módszere olyan új forráskód biztosításával, amely felülírja a régit.
 
 ### <a name="p"></a>**P**
 
 ###### <a name="package"></a>**csomag**
 
-A csomag egy vagy több modellt egy egységének compilable és telepíthető.
+A csomag egy vagy több modellből álló, lefordítható és telepíthető egység.
 
 ###### <a name="party"></a>**fél**
 
-Az az entitás, amely jogilag kötelező érvényű szerepet vesz fel a szerződéses kapcsolatokban való részvétele során.
+Olyan entitás, amely jogilag kötelező érvényű szerepet vesz fel a szerződéses jogviszonyban való részvétele során.
 
 ###### <a name="party"></a>**fél**
 
 Gazdasági tevékenységekben részt vevő személy vagy szervezet.
 
-###### <a name="pegging"></a>**rögzítés**
+###### <a name="pegging"></a>**igénykövetés**
 
 Egy igényelt cikk mennyiségének a forrásáig történő követési folyamata.
 
 ###### <a name="pegging-event"></a>**igényjelző esemény**
 
-Egy termék iránti igényt jelző erőforrás-áramlás esemény.
+Egy termék iránti igényt jelző erőforrás-áramlási esemény.
 
 ###### <a name="phantom-item"></a>**látszólagos cikk**
 
-Előállított, de nem tárolt cikk.
+Előállított, de nem raktározott cikk.
 
 ###### <a name="planned-intercompany-demand"></a>**tervezett vállalatközi igény**
 
-Egy szállító szerepet felvett jogi személynek egy termék iránti előrejelzett igénye. A tervezett igény egy alsóbb rétegbeli jogi személytől származó termék iránti tervezett igényből jön létre.
+Egy szállítói szerepet felvett jogi személynek egy termék iránti előre jelzett igénye. A tervezett igény egy alsóbb rétegbeli jogi személytől származó termék iránti tervezett igényből jön létre.
 
 ###### <a name="post"></a>**feladás**
 
@@ -490,7 +491,7 @@ Forrásbizonylatot létrehozó személy, aki gazdasági erőforrások igénylés
 
 ###### <a name="privilege"></a>**jogosultság**
 
-Egy feladat elvégzéséhez szükséges egy vagy több felhasználói engedély.
+Feladat elvégzéséhez szükséges egy vagy több felhasználói engedély.
 
 ###### <a name="procurement-catalog"></a>**beszerzési katalógus**
 
@@ -502,7 +503,7 @@ Egy termék része.
 
 ###### <a name="product-dimension"></a>**termékdimenzió**
 
-A pénzügyi dimenziókon / dimenziókon alapuló konfigurációhoz használt méret-, szín- vagy konfigurációs termékattribútumok.
+A pénzügyi dimenziókon / dimenzión alapuló termékkonfigurációkhoz használt méret-, szín- vagy konfigurációs termékattribútumok.
 
 ###### <a name="product-family"></a>**termékcsalád**
 
@@ -512,9 +513,9 @@ Az ugyanazon termelési vagy szállítási folyamatokban részt vevő, vagy ugya
 
 Termékváltozatok konfigurálásának alapjául szolgáló szabványos vagy funkcionális termékmegjelenítés.
 
-###### <a name="product-receipt"></a>**termék bevételezése**
+###### <a name="product-receipt"></a>**termékbevételezés**
 
-A megrendelt termékek átvételét, a visszaküldött termékek átvételét vagy a szállítmánnyal érkező termékek átvételét dokumentáló forrásbizonylat.
+A megrendelt termékek átvételét, a visszaküldött termékek átvételét vagy a beérkező bizományosi termékek átvételét dokumentáló forrásbizonylat.
 
 ###### <a name="product-variant"></a>**termékváltozat**
 
@@ -526,13 +527,13 @@ Lean alapelvek alapján megtervezett termelési folyamat.
 
 ###### <a name="production-flow-model"></a>**termelési folyamatmodell**
 
-A termelési kapacitásnak egy termelési folyamatban lévő munkacella-csoport által biztosított megjelenítése.
+A termelési kapacitásnak egy termelési folyamatban lévő munkacellacsoport által biztosított megjelenítése.
 
 ###### <a name="production-order"></a>**termelési rendelés**
 
 Igény kielégítése céljából gyártott termékek követelményeit dokumentáló forrásbizonylat.
 
-###### <a name="production-schedule"></a>**termelési ütemezés**
+###### <a name="production-schedule"></a>**termelés ütemezése**
 
 Ütemezés egy adott cikk vagy cikkmennyiség egy adott időpontban, adott emberi és operatív erőforrások használatával történő előállításához.
 
@@ -540,9 +541,9 @@ Igény kielégítése céljából gyártott termékek követelményeit dokument�
 
 Olyan résztvevő, aki birtokában van annak a meglévő vagy lehetséges képességnek, hogy szolgáltatást nyújtson vagy esetlegesen jövőbeli gazdasági előnyt biztosítson egy jogi személy számára.
 
-###### <a name="purchase-agreement-policy"></a>**beszerzési szerződés irányelvei**
+###### <a name="purchase-agreement-policy"></a>**beszerzési szerződési irányelv**
 
-Az az irányelv, amely engedélyezi a feleknek, hogy módosítsák a beszerzési szerződés feltételeit.
+Irányelv, amely engedélyezi a feleknek, hogy beszerzési szerződés feltételeit módosítsák.
 
 ###### <a name="purchase-order-policy"></a>**megrendelés irányelvei**
 
@@ -550,19 +551,19 @@ Ez az irányelv engedélyezi a feleknek, hogy módosítsák a beszerzési rendel
 
 ###### <a name="purchase-quotation"></a>**beszerzési árajánlat**
 
-Az a forrásdokumentum, amely dokumentál egy adott áron, adott időpontra történő termékmennyiség-vásárlásra vonatkozó, egy beszerzési folyamatban lévő ajánlatkérésre válaszként küldött ajánlatot.
+Az a forrásbizonylat, amely dokumentál egy adott áron, adott időpontra történő termékmennyiség-vásárlásra vonatkozó, egy beszerzési folyamatban lévő ajánlatkérésre válaszként küldött ajánlatot.
 
 ###### <a name="purchase-requisition"></a>**beszerzési igénylés**
 
-Termékkéréseket úgy dokumentáló forrásbizonylat, hogy felülvizsgálatra lehessen küldeni, illetve egy beszerzési szervezet beszerzéseinek jóváhagyására lehessen használni őket.
+Termékkéréseket úgy dokumentáló forrásbizonylat, hogy felülvizsgálatra lehessen küldeni, illetve egy beszerzési szervezet beszerzéseinek engedélyezésére lehessen használni őket.
 
-### <a name="q"></a>**kvadrillió**
+### <a name="q"></a>**Q**
 
 ###### <a name="quantity-variance"></a>**mennyiségi különbözet**
 
 Egy megrendelt termékmennyiség és egy kézhez vett termékmennyiség közötti különbség, amikor nem várható több kézhezvétel.
 
-### <a name="r"></a>**F**
+### <a name="r"></a>**R**
 
 ###### <a name="receipt-advice"></a>**bevételezési jelentés**
 
@@ -570,23 +571,23 @@ Az az üzleti dokumentum, amely dokumentálja a vevő által a szállítótól k
 
 ###### <a name="reconciliation"></a>**egyeztetés**
 
-Két vagy több számla vagy kimutatás módosításának gyakorlata azért, hogy a számok megegyezzenek.
+Két vagy több számla vagy kimutatás módosítása azért, hogy a számok megegyezzenek.
 
 ###### <a name="reduction-key"></a>**csökkentési kulcs**
 
-Olyan, a felhasználó által meghatározott, az adott időszakban alkalmazott százalékokon alapuló módszer, amelyet az alaptervezés során az előrejelzés kritériumainak növelésére vagy csökkentésére használnak.
+Olyan, a felhasználó által meghatározott, adott időszakban alkalmazott százalékokon alapuló módszer, amelyet az alaptervezés során az előre jelzett szükségletek növelésére vagy csökkentésére használnak.
 
 ###### <a name="register"></a>**jegyzék**
 
-Erőforrás-áramlás események működési, jogi és pénzügyi következményeinek rögzítésére szolgáló rekord egy könyvelési rendszerben.
+Erőforrás-áramlási események működési, jogi és pénzügyi következményeinek rögzítésére szolgáló rekord egy könyvelési rendszerben.
 
 ###### <a name="regulated-product"></a>**szabályozott termék**
 
-Megfelelést és vizsgálati jelentést előíró állami szerv által szabályozott termék.
+Megfelelést és auditálási jelentést előíró állami szerv által szabályozott termék.
 
-###### <a name="rfq-request-for-quotation"></a>**RFQ (Ajánlatkérés)**
+###### <a name="rfq-request-for-quotation"></a>**ajánlatkérés**
 
-Az a forrásbizonylat, amely dokumentál egy megadott áron és megadott időre történő termékmennyiség biztosítására vonatkozó pályázati meghívást.
+Egy megadott áron és megadott időre történő termékmennyiség biztosítására vonatkozó pályázati meghívást dokumentáló forrásbizonylat.
 
 ###### <a name="requester"></a>**kérelmező**
 
@@ -596,15 +597,15 @@ A gazdasági erőforrásokat kérelmező személy.
 
 Olyan termék, amelynek a terjesztése korlátozott, vagy egy állami szerv korlátozza.
 
-### <a name="s"></a>**Á**
+### <a name="s"></a>**S**
 
 ###### <a name="sales-agreement"></a>**értékesítési szerződés**
 
-Két vagy több fél közötti, azon a megegyezésen alapuló megállapodást dokumentáló forrásbizonylat, hogy az eladó fél egy adott időszak során adott mennyiségű vagy értékű terméket ad el előnyös ár vagy engedmények ellenében.
+Két vagy több fél közötti, olyan a megegyezésen alapuló megállapodást dokumentáló forrásbizonylat, ami szerint az eladó fél egy adott időszak során adott mennyiségű vagy értékű terméket ad el előnyös ár vagy engedmények ellenében.
 
-###### <a name="sales-agreement-policy"></a>**értékesítési szerződés irányelvei**
+###### <a name="sales-agreement-policy"></a>**értékesítési szerződési irányelv**
 
-Az az irányelv, amely engedélyezi a feleknek, hogy módosítsák az értékesítési szerződés feltételeit.
+Irányelv, amely engedélyezi a feleknek, hogy értékesítési szerződés feltételeit módosítsák.
 
 ###### <a name="sales-order-policy"></a>**értékesítés irányelvei**
 
@@ -612,7 +613,7 @@ Ez az irányelv engedélyezi a feleknek, hogy módosítsák az értékesítési 
 
 ###### <a name="sales-quotation"></a>**értékesítési ajánlat**
 
-Az a forrásdokumentum, amely dokumentál egy adott áron, adott időpontra történő termékmennyiség-ellátásra vonatkozó, egy értékesítési folyamatban lévő ajánlatkérésre válaszként küldött ajánlatot.
+Az a forrásdokumentum, amely dokumentál egy adott áron, adott időpontra történő termékmennyiség-biztosításra vonatkozó, egy értékesítési folyamatban lévő ajánlatkérésre válaszként küldött ajánlatot.
 
 ###### <a name="security-role"></a>**biztonsági szerepkör**
 
@@ -620,7 +621,7 @@ Alkalmazás-hozzáférési jogosultságok megadott csoportja. A felhasználóhoz
 
 ###### <a name="segregation-of-duties"></a>**feladatkörök szétválasztása**
 
-Egy tervezési elv, ami az olyan csalások, szabálytalanságok és hibák kockázatának csökkentésére használatos, amelyek elválasztják egymástól a rögzítést, az ellenőrzést, az engedélyezést, az eszközök felügyeletét, valamint azon személyek feladatainak rendszeres felülvizsgálatát, akik részt vesznek benne, dokumentálják vagy rögzítik a gazdasági tranzakciók pénzügyi következményeit.
+A csalások, szabálytalanságok és hibák kockázatának csökkentésére használatos tervezési elv, amely elválasztja egymástól a rögzítést, az ellenőrzést, az engedélyezést, az eszközök felügyeletét, valamint azon személyek feladatainak rendszeres felülvizsgálatát, akik részt vesznek benne, dokumentálják vagy rögzítik a gazdasági tranzakciók pénzügyi következményeit.
 
 ###### <a name="sequencing"></a>**sorrendbe állítás**
 
@@ -628,23 +629,23 @@ Az a sorrend, amelyben egy gyártási létesítményben sor kerül a feladatok f
 
 ###### <a name="shared-asset"></a>**közös eszköz**
 
-Több mint egy pénzgeneráló egység (CGU) által használt eszköz. Például egy elosztási központ, amit tárolja a cikkeket, mielőtt azokat elszállítják az ugyanazt az elosztási központot használó piacokra.
+Több mint egy pénzgeneráló egység (PGE) által használt eszköz. Például egy elosztási központ, amit tárolja a cikkeket, mielőtt azokat elszállítják az ugyanazt az elosztási központot használó piacokra.
 
 ###### <a name="single-use-kanban"></a>**egyszer használatos kanban**
 
-Olyan kanbantípus, ami rögzített mennyiségű kanbanszabállyal együtt használatos, kivételesen magas igény kielégítésére. Egy egyszer használatos kanban elvetéskor nem idéz elő új kanbant.
+Olyan kanbantípus, amely rögzített mennyiségű kanbanszabállyal együtt használatos, kivételesen magas igény kielégítésére. Az egyszer használatos kanban az elvetéskor nem idéz elő új kanbant.
 
 ###### <a name="smart-rounding"></a>**intelligens kerekítés**
 
-Olyan páratlan számok ármegállapításra használt marketinggyakorlata, amelyek csak kevéssel kisebbek, mint a hozzájuk legközelebbi kerek szám.
+Marketinggyakorlat olyan páratlan számok használatára az ármegállapítás során, amelyek csak kevéssel kisebbek, mint a hozzájuk legközelebbi kerek szám.
 
-###### <a name="source-requirement"></a>**forrás szükséglet**
+###### <a name="source-requirement"></a>**forrásszükséglet**
 
 Egy forrásbizonylat-sorban dokumentált, igénykövetési követelményt létrehozó termékmennyiség.
 
 ###### <a name="statistical-baseline-forecast"></a>**statisztikai kiinduló előrejelzés**
 
-Múltbeli tranzakcióadatokra alkalmazott előrejelzőalgoritmus alkalmazásával létrehozott jövőbeli kereslet becslése.
+Múltbeli tranzakcióadatokra alkalmazott előrejelző algoritmus alkalmazásával létrehozott jövőbeli kereslet becslése.
 
 ###### <a name="supermarket"></a>**szupermarket**
 
@@ -652,29 +653,29 @@ Múltbeli tranzakcióadatokra alkalmazott előrejelzőalgoritmus alkalmazásáva
 
 ###### <a name="system-defined-financial-dimension-type"></a>**rendszerbeli pénzügyi dimenziótípus**
 
-Egy táblához vagy adatbázisnézethez rendelt, entitástípust jelölő pénzügyi dimenzió, amelynek értékei az adott entitástípus egyik attribútumának tartományában találhatók.
+Egy adatbázistáblához vagy -nézethez rendelt, entitástípust jelölő pénzügyi dimenzió, amelynek értékei az adott entitástípus egyik attribútumának tartományában találhatók.
 
-### <a name="t"></a>**trillió**
+### <a name="t"></a>**T**
 
 ###### <a name="takt-time"></a>**taktidő**
 
 Egy termék egy egységének előállításához szükséges idő.
 
-###### <a name="task-guide"></a>**Feladat-útmutatók**
+###### <a name="task-guide"></a>**feladat-útmutató**
 
-Ellenőrzött, irányított tapasztalata a feladat rögzítés lépéseken. Egy feladat útmutató vezet, amely rögzítésének tapasztalatok végig a felhasználót. Az összes biztonsági funkciókat, adatok és alkalmazások működése megegyezik állomásait feladat befejezésekor, a feladat útmutató nélkül változatlanok maradnak. A feladat útmutató az azonos instrumentation Feladatrögzítő, hogy a felhasználó a tervezett lépés befejezését úgy, hogy kérheti, hogy a felhasználó a következő lépés a rögzítés használja.
+A Feladatrögzítés lépéseinek követésével megvalósuló, ellenőrzött, irányított tapasztalat. A Feladat-útmutatók végigvezetik a felhasználót egy rögzített tapasztalaton. A biztonsági funkciók, adatok és alkalmazások ugyanúgy viselkednek a Feladat-útmutató elvégzése során, mint a Feladat-útmutató nélkül. A Feladat-útmutató a Feladatrögzítővel egyező eszközök használatával érzékeli, mikor végezte el a felhasználó a várt lépést, és ezután felszólítja a felhasználót, hogy haladjon tovább a rögzítés következő lépésére.
 
 ###### <a name="task-recorder"></a>**Feladatrögzítő**
 
-Egy előre telepített eszköz a Microsoft Dynamics 365 for Operations rendszerben. Rögzítés során az összes, a felhasználó által a Dynamics 365 for Operations rendszer felhasználói felületén a kiszolgálóval szemben végrehajtott eseményt rögzít – többek között a hozzáadott értékeket, a módosított beállításokat, az eltávolított adatokat stb.
+Egy előre telepített eszköz a Microsoft Dynamics 365 for Operations rendszerben. Rögzítés során az összes, a felhasználó által a Dynamics 365 for Operations rendszer felhasználói felületén a kiszolgálóval szemben végrehajtott eseményt rögzíti – többek között a megadott értékeket, a módosított beállításokat, az eltávolított adatokat stb.
 
 ###### <a name="task-recording"></a>**Feladatrögzítés**
 
-A Microsoft Dynamics 365 for Operations rendszerben a Feladatrögzítő futtatásakor a műveleteket és a jegyzeteket rögzítő fájl.
+A Microsoft Dynamics 365 for Operations rendszerben a Feladatrögzítő futtatásakor a rögzített műveleteket és jegyzeteket tartalmazó fájl.
 
 ###### <a name="three-way-matching-policy"></a>**háromirányú egyeztetési irányelv**
 
-Egy vagy több szállítói számla árait igénylő egyeztetési irányelv annak érdekében, hogy megegyezzenek egy vagy több beszerzési rendelés áraival, illetve egy vagy több szállítói számla mennyiségeit igénylő egyeztetési irányelv annak érdekében, hogy megegyezzenek egy vagy több beszerzési rendelés mennyiségeivel.
+Egyeztetési irányelv, amely megköveteli, hogy egy vagy több szállítói számla árai egyezzenek meg egy vagy több beszerzési rendelés áraival, valamint hogy egy vagy több szállítói számla mennyiségei egyezzenek meg egy vagy több termékbevételezés mennyiségeivel.
 
 ###### <a name="transfer-batch"></a>**átmozgatási köteg**
 
@@ -682,13 +683,13 @@ Egy vagy több cikk átvitt vagy átvihető mennyisége.
 
 ###### <a name="two-way-matching-policy"></a>**kétirányú egyeztetési irányelv**
 
-Egy vagy több szállítói számla árait igénylő egyeztetési irányelv annak érdekében, hogy megegyezzenek egy vagy több beszerzési rendelés áraival.
+Egyeztetési irányelv, amely megköveteli, hogy egy vagy több szállítói számla árai egyezzenek meg egy vagy több beszerzési rendelés áraival.
 
-### <a name="u"></a>**A**
+### <a name="u"></a>**U**
 
 ###### <a name="user-defined-financial-dimension-type"></a>**felhasználói pénzügyi dimenziótípus**
 
-Felhasználói értéklistához rendelt pénzügyi dimenzió.
+Felhasználó által meghatározott értéklistához rendelt pénzügyi dimenzió.
 
 ### <a name="v"></a>**V**
 
@@ -702,7 +703,7 @@ Alaptermékek modellezésének és termékváltozat-konfigurációk kereséséne
 
 ###### <a name="vat-value-added-tax"></a>**Áfa (általános forgalmi adó)**
 
-Termékre kivetett adó a termelésük minden szakaszában, az adott szakaszban hozzáadott érték alapján.
+A termékekre a termelésük minden szakaszában kivetett, az adott szakaszban hozzáadott értéken alapuló adó.
 
 ###### <a name="vendor-catalog"></a>**szállítói katalógus**
 
@@ -712,7 +713,7 @@ Egy szállítótól megvásárolható termékajánlatok listája.
 
 Szállítói kifizetés iránti kérelmet dokumentáló forrásbizonylat. Egy szállítói számla egy vagy több beszerzési rendelésre vonatkozhat. Ha a szállítói számla engedélyezve van, a szállítót ki lehet fizetni.
 
-### <a name="w"></a>**S**
+### <a name="w"></a>**W**
 
 ###### <a name="work-cell"></a>**munkacella**
 
@@ -722,9 +723,9 @@ Egy erőforráscsoport, amely termelésifolyamat-tevékenységben vesz részt.
 
 Olyan személy, aki alkalmazotti vagy alvállalkozói szerepkört vesz fel, és a szolgáltatásai ellenében kap fizetést.
 
-###### <a name="workspace"></a>**Munkaterület**
+###### <a name="workspace"></a>**munkaterület**
 
-Ez a lap a felhasználó által végrehajtott tevékenységek valamelyikét áttekintést nyújt. Az oldal segítségével lapok, listák és diagramok folyamatban lévő munka- és többféle forrásból származó kapcsolódó adatok megjelenítése, és az oldal felületek gyakran használják ezeket az adatokat kapcsolatos feladatok. A munkaterület összefoglaló részében megjelenő lapok is megjelennek a irányítópult kapcsolódó részében.
+Oldal, amely a felhasználó által végrehajtott tevékenységek valamelyikének áttekintését nyújtja. Az oldal csempéket, listákat és diagramokat használ a folyamatban lévő munka és a többféle forrásból származó kapcsolódó adatok megjelenítéséhez, és megmutatja az ezen adatokhoz kapcsolódó gyakori feladatokat. A munkaterület összefoglaló részében megjelenő csempék az irányítópult kapcsolódó részében is megjelennek.
 
 
 
