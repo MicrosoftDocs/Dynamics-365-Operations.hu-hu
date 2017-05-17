@@ -33,7 +33,6 @@
 ## [Mobile workspaces recently released](mobile-apps/mobile-workspaces-released.md)
 ## [Publish a mobile workspace](mobile-apps/publish-mobile-workspace.md)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
-## [Mobile workspace X++ APIs](mobile-apps/mobile-workspace-xpp-apis.md)
 
 # Office integration
 ## [Office integration](office-integration/office-integration.md)
@@ -68,15 +67,15 @@
 ## [Set up technical support for Dynamics 365 for Operations](lifecycle-services/support-experience.md) 
 ## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Pénzügyek](/dynamics365/operations/financials/index)
 
-# [Human resources](/dynamics365/operations/human-resources/index)
+# [Emberi erőforrások](/dynamics365/operations/human-resources/index)
 
-# [Retail](/dynamics365/operations/retail/index)
+# [Kiskereskedelem](/dynamics365/operations/retail/index)
 
-# [Supply chain management](/dynamics365/operations/supply-chain/index)
+# [Ellátásilánc-kezelés](/dynamics365/operations/supply-chain/index)
 
-# Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/dev-itpro/toc.json)
-## [What's new or changed](get-started/whats-new-changed.md)
+# Egyéb erőforrások
+## [Dynamics 365 for Operations fogalomtár](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Új vagy módosult elemek](get-started/whats-new-changed.md)
 
