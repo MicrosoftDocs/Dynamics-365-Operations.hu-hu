@@ -18,10 +18,11 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 7c0bc5b5d86956336012096c11d0d7621abab1f9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d8296dd0347a325a9ff3bd06f558d161ab4030dc
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,7 +38,7 @@ A csomagolóanyag-súlyokat és -díjakat az értékesítési rendeléssoroknál
 
 Megadhat egy vagy több csomagolási egységet egy cikkhez, egy vagy az összes cikk csomagoló csoportjához. A csomagolási egység különféle csomagolóanyagokat tartalmaz, azok súlyából és a csomagolási egységbetartozó cikkek számából áll. A Csomagolóanyag-kód a meghatározott csomagolóanyag minden egyes típusához hozzá van rendelve. A csomagolóanyag-kódon alapul, megadhatja az árat egy adott időszakra. A csomagolóanyag-díj ezen információ alapján számítják ki.
 
-| **Megjegyzés **                                                                                                                                             |
+| **Megjegyzés**                                                                                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Még akkor is, ha a vállalat nem fizeti ki a csomagolási díjakat, használhatja a funkciót a csomagolási anyagok súlyával kapcsolatos statisztikák kiszámításához. |
 

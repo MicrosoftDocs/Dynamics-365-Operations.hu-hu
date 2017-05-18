@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 5b0f3c1a853f8f5e61dedaf588b6f9d2da3a53b5
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9848b70dd6df4d9e3ff616e1a103a5e6ec5b5d05
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,8 +51,8 @@ Az alábbi példák termékek és termékváltozatok használatával illusztrál
 | Terméktípus     | Termék neve    | Termékszám megjelenítése | Cikkszám | Konfiguráció |
 |------------------|-----------------|------------------------|-------------|---------------|
 | Egyedi termék | SpeakerMidRange | D0001                  | D0001       | N. a.            |
-| Termékváltozat  | Active speaker  | D0010:::Black:         | D0010       | 000005        |
-| Termékváltozat  | Active speaker  | D0010:::White:         | D0010       | Fehér         |
+| Termékváltozat  | Aktív hangszóró  | D0010:::Black:         | D0010       | 000005        |
+| Termékváltozat  | Aktív hangszóró  | D0010:::White:         | D0010       | Fehér         |
 
 Ha a **Cikkszám** mezőbe a „speak” kifejezést írja be, a keresés az összes fenti terméket visszaadja. Ha a **Cikkszám** mezőbe a „black” kifejezést írja be, eredményként a második termék jelenik meg, mert ez tartalmazza a „black” szöveget a termékszám megjelenítése részben. Ez a két példa bemutatja, hogy a keresés nem csak a mező elejét figyeli: a rendszer akkor is egyezést talál, ha a keresett szöveg az egyező rekordban egy szöveges karaktersor közepén található.  
 

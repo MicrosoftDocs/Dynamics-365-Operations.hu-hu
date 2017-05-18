@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2225707329c67a30d9234bef5282d49834ea042a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: dad6d4ec3788ae73386d582433a8585602e1290e
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -65,7 +66,7 @@ A feltételezés szerint 0,5 méter selejtcső keletkezik minden 5 darab felhasz
 
 ### <a name="consumption"></a>Felhasználás
 
-Általában a** Felhasználás** lehetőséget kell kerekítési módszerként választani, ha a nyersanyagot a termék egy adott anyagkezelési egység teljes mennyiségében kell megadni. Például 2 liter festékre van szükség egy darab késztermékhez, és a festéket 25 literes tartályokban tárolják ki. Ebben az esetben a **Felhasználás** kerekítési mechanizmusa használható a 25 literes tartályok esetében az egész számokra való kerekítéshez. Ha 180 darab késztermékre van szükség, így lehet kiszámítani a szükséges festék mennyiségét.
+Általában a**Felhasználás** lehetőséget kell kerekítési módszerként választani, ha a nyersanyagot a termék egy adott anyagkezelési egység teljes mennyiségében kell megadni. Például 2 liter festékre van szükség egy darab késztermékhez, és a festéket 25 literes tartályokban tárolják ki. Ebben az esetben a **Felhasználás** kerekítési mechanizmusa használható a 25 literes tartályok esetében az egész számokra való kerekítéshez. Ha 180 darab késztermékre van szükség, így lehet kiszámítani a szükséges festék mennyiségét.
 
 1.  Szükséges festék, a selejtet leszámítva: 180 x 2 = 360 liter
 2.  Festékes dobozok száma: 360 ÷ 25 = 14,4, amely kerekítve 15.

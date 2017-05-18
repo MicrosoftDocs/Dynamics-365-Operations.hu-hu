@@ -1,9 +1,9 @@
 ---
-title: "Különböző költségösszetevő-dimenziótagok hozzárendelése dimenziótagok közös készletéhez"
+title: "Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez"
 description: "Azzal, hogy a különböző költségösszetevő-dimenziótagokat hozzárendeli a költségösszetevő-dimenziótagok egy közös csoportjához, az adatokat egy közös formátumnak megfelelően egyesíti elemzési célokra."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-11-01 13 - 45 - 07
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: global
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a1e9817b6ee596ad516531d7597a2a39e115749c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 24794f371e1914f8466cd9a7407fd263e94b00aa
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Különböző költségösszetevő-dimenziótagok hozzárendelése dimenziótagok közös készletéhez
+# <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez
+
+[!include[banner](../includes/banner.md)]
+
 
 Azzal, hogy a különböző költségösszetevő-dimenziótagokat hozzárendeli a költségösszetevő-dimenziótagok egy közös csoportjához, az adatokat egy közös formátumnak megfelelően egyesíti elemzési célokra.
 
@@ -48,5 +52,7 @@ Az Ön által használt különböző számlatükröket be lehet állítani elt�
 
 ## <a name="update-mappings-at-any-time"></a>A hozzárendelések bármikor frissíthetők
 Bármikor frissítheti a költségösszetevő-dimenziókhoz tartozó hozzárendelési definíciókat. Mivel a hozzárendelések érvényessége nem kötődik dátumhoz, a változások akkor lépnek érvénybe, amikor legközelebb dolgoznak fel költségtranzakciókat vagy futtatnak költségszámításokat.
+
+
 
 

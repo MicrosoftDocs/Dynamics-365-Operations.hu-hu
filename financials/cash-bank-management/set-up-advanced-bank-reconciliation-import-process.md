@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eab840b2974f4e9e8cf542c146482ba8e4239079
-ms.openlocfilehash: acf7bacf6e95725024ff0a542a059349593d01a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 51f45ce0953f31e0573833ba41d9e0b5ac43bfbb
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -64,13 +65,13 @@ Először definiálni kell a banki kivonat formátum feldolgozási csoportját I
 1.  Menjen a **Munkaterületek** &gt; **Adatkezelés** lehetőségre.
 2.  Kattintson az **Importálás** gombra.
 3.  Adja meg a formátum nevét, például **ISO20022**.
-4.  A **Forrás adat formátuma **mezőt állítsa **XML-Element** értékre.
+4.  A **Forrás adat formátuma**mezőt állítsa **XML-Element** értékre.
 5.  Az **Entitás neve** mezőbe írja be **Banki kivonatok**.
 6.  Az importálási fájlok feltöltéséhez, kattintson a **Feltöltés** gombra, majd tallózással válassza ki a **SampleBankCompositeEntity.xml** fájlt, amit már korábban lementett.
 7.  Miután a banki kimutatások entitás feltöltése és a hozzárendelés elkészült, kattintson a **Térkép megjelenítése** entitáshoz tartozó műveletre.
 8.  A banki kimutatások entitás egy összetett entitást, amelyet négy külön entitás alkot. Válassza ki a listából a **BankStatementDocumentEntity** lehetőséget, majd kattintson a **Térkép megjelenítése** műveletre.
 9.  Az **Átalakítások** fülön, kattintson az **Új** lehetőségre.
-10. Az 1-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az** ISO20022XML-Reconciliation.xslt** fájl, amit már korábban lementett. **Megjegyzés:** A Dynamics 365 for Operations fájlok átalakítása szabványos formátumra épülnek. Mivel a bankok gyakran eltérnek ebben a formátumban, lehet, hogy frissíteni kell az átalakító fájlt, hogy leképezze az ön banki kivonat formátumát. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. Az 1-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az**ISO20022XML-Reconciliation.xslt** fájl, amit már korábban lementett. **Megjegyzés:** A Dynamics 365 for Operations fájlok átalakítása szabványos formátumra épülnek. Mivel a bankok gyakran eltérnek ebben a formátumban, lehet, hogy frissíteni kell az átalakító fájlt, hogy leképezze az ön banki kivonat formátumát. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Kattintson az **Új** elemre.
 12. Az 2-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki a **BankReconciliation-to-Composite.xslt** fájl, amit már korábban lementett.
 13. Kattintson az **Átalakítások alkalmazása** lehetőségre.
@@ -88,8 +89,8 @@ Az utolsó lépés, a Speciális bankszámla egyeztetés engedélyezése és a k
 
 1.  Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.
 2.  Válassza ki azt a bankszámlát, és nyissa meg a részletek megtekintéséhez.
-3.  Az **Egyeztetés** lapon, állítsa a **Speciális banki egyeztetés **lehetőséget **Igen** értékre.
-4.  Állítsa be a **Kivonat formátuma **mezőt ahhoz a formátumhoz, amit már korábban létrehozott, például az **ISO20022**.
+3.  Az **Egyeztetés** lapon, állítsa a **Speciális banki egyeztetés**lehetőséget **Igen** értékre.
+4.  Állítsa be a **Kivonat formátuma**mezőt ahhoz a formátumhoz, amit már korábban létrehozott, például az **ISO20022**.
 
 ## <a name="set-up-the-import-of-mt940-bank-statements"></a>Állítsa be a MT940 banki kivonatok importálását
 Először definiálni kell a banki kivonat formátum feldolgozási csoportját MT940 banki kivonatokhoz, az adatentitás keretrendszer használatával.

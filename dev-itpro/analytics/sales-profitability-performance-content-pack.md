@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 3e6b48768bb8e69d46f1555d9300f3b878b01ff1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Értékesítési és nyereségességi teljesítmény Power BI-tartalma
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör leírja, hogy mit tartalmaz a Dynamics 365 for Operations - Értékesítési és a jövedelmezőségi teljesítmény csomag a Microsoft Power BI számára. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
@@ -44,6 +48,7 @@ A nyereségesség elemezhető az alábbiak szerint:
 
 ## <a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
 Az Értékesítési és nyereségességi teljesítmény Power BI-tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) végrehajtási eszközeként van közzétéve, és a Microsoft Dynamics 365 for Operations programból férhető hozzá. A Power BI jelentések elérésével és elindításával kapcsolatos további tudnivalókért lásd: [Power BI-tartalom az LCS megoldásban a Microsoft vállalattól és a partnerektől](power-bi-content-microsoft-partners.md).
+**Megjegyzés:** A KB 4011327 ezen Power BI-tartalom előfeltétele. A Lifecycle Servicesbe való bejelentkezést követően itt férhet hozzá a tudásbázishoz: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## <a name="metrics-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott metrikák
 A tartalomcsomag tartalmaz egy jelentést, amely metrikák diagramok, mozaikok és táblák formájában megjelenített készletéből áll. Az alábbi táblázatban a tartalomcsomag megjelenítési formáinak áttekintése található.
@@ -110,6 +115,8 @@ Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia
 -   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](configure-power-bi-integration.md)
+
+
 
 
 

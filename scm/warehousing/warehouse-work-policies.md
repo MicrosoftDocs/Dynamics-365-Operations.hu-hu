@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 5660e5c8e3329564fc4262b5ad4f2547347bbb1a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 32b401a6faa381c77845347db6aa5e89db5e38c3
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -35,8 +36,8 @@ ms.lasthandoff: 03/31/2017
 
 Ez a munka-irányelv szabályozza, hogy létrejöjjön-e raktári munka a gyártás raktári folyamataihoz. A munka-irányelvet a **munkarendelési típusok**, egy **készlethely** és egy **termék** kombinációjának segítségével állíthatja be. Például az L0101 termék a jelentés szerint elkészült leszállításra a 001. helyre. A késztermék később egy másik termelési rendelésben kerül felhasználásra a 001. kimeneti helyen. Ebben az esetben beállíthat egy munka-irányelvet annak megakadályozására, hogy munka jöjjön létre a késztermék betárolására, amikor az L0101 termék úgy szerepel a jelentésben, mint amely elkészült leszállításra a 001. helyre. A munka-irányelv egy egyéni entitás, amelyet a következő információk segítségével lehet leírni:
 
--   **Munka-irányelv neve **(a munka-irányelv egyedi azonosítója)
--   **Munkarendelési típusok **és** A munka létrehozásának módszere**
+-   **Munka-irányelv neve**(a munka-irányelv egyedi azonosítója)
+-   **Munkarendelési típusok**és**A munka létrehozásának módszere**
 -   **Készlethelyek**
 -   **Termékek**
 

@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 720a1f272948eb310dc3cd02588aeec40b556d20
-ms.openlocfilehash: 31dda85ff2e4a4e5380401b031b2dd74acff394b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4fd6e61e88ca3ca3fa63308dead1258c0263e5aa
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>A munkaerő szakértelmének üzleti igényű igazítása
+
+[!include[banner](includes/banner.md)]
+
 
 Nyomon követheti azokat a szakértelmeket, amelyekkel dolgozók, pályázók vagy kapcsolattartók jelentkeznek vagy jelentkezniük kellene. Emellett megadhatja, hogy egy adott beosztáshoz milyen szakértelem szükséges.
 
@@ -52,24 +56,12 @@ Létrehozhat egy készségleképező keresést olyan dolgozó, jelentkező vagy 
 
 A készségleképező profilokkal olyan jelenlegi alkalmazottakra vagy jelöltekre kereshet, akiknek olyan végzettségei vannak, amelyek közvetlenül megfelelnek az üzleti szükségleteknek.  Létrehozhat például egy készségleképezési profilt a szervezeténél meglévő nyitott pozícióhoz. Egy adott beosztáshoz profilok létrehozása és másolása a szakértelem, a végzettség és a tanúsítványt az adott feladat a profilt, gyorsan kereshet dolgozók, pályázó és kapcsolattartó személyek megfelelő egy vagy több mellőzhető a profilban megadott feltételeknek megfelelő és a pályázók, akiknek szakismeretei leginkább megfelelnek a projekthez szükséges szakértelmek listájának megtekintése.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Megjegyzés </strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Csak a kereséshez kiválasztott dolgozók, pályázók és kapcsolattartó személyek jelennek meg a szakértelem-feltérképezés eredménylistájában és kerülnek bele szakértelemprofilba. A dolgozó, pályázó vagy kapcsolattartó személy a szakértelem-feltérképezés kereséseinek szerepeltetéséhez beállítása a <strong>felvétel a szakértelem-feltérképezés</strong> kiválasztási Igen, a következő lapokon:
-<ul>
-<li>Dolgozó</li>
-<li>Alkalmazott</li>
-<li>Pályázó</li>
-<li>Kapcsolattartók</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+>**Megjegyzés** Csak a kereséshez kiválasztott dolgozók, pályázók és kapcsolattartó személyek jelennek meg a szakértelem-feltérképezés eredménylistájában és kerülnek bele szakértelemprofilba. A dolgozó, pályázó vagy kapcsolattartó személy a szakértelem-feltérképezés kereséseinek szerepeltetéséhez beállítása a **felvétel a szakértelem-feltérképezés** kiválasztási Igen, a következő lapokon:
+
+> + Dolgozó
+> + Alkalmazott
+> + Pályázó
+> + Kapcsolattartók
 
 ## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>Szakértelemhiány-elemzések és szakértelemprofil-elemzések
 Szakértelemprofil-elemzés létrehozásával egy dolgozó, pályázó vagy kapcsolattartó adott dátumon érvényes kompetenciáinak listáját tekintheti meg. Szakértelemhiány-elemzéssel egy személy szakértelmeit összehasonlíthatja egy adott feladathoz szükséges szakértelmi szintekkel  
@@ -80,5 +72,7 @@ Szakértelemprofil-elemzés létrehozásával egy dolgozó, pályázó vagy kapc
 --------
 
 [Emberi erőforrások](index.md)
+
+
 
 

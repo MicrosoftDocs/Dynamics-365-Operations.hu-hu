@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 758c516b378b4858c248fbca2befc6b9c47cc32a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: e8a12f846bb24c9fc79c3533d4e65a2d3ece257b
+ms.openlocfilehash: 6d4d476e294e1b5cbe91a61a7ffe151a6c865ea6
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -40,7 +41,7 @@ A termékre vagy szolgáltatásra vonatkozó igény felmerülhet *igénylések* 
   
 A beszerzési részleg azonosítja a szükséges termékek és szolgáltatások lehetséges szállítóit, mely alapján elképzelhetően *ajánlatkérést *küld több potenciális szállító részére. Lehetőség nyílik az igénylendő termék specifikációinak megosztására, a potenciális szállítók pedig meg tudják tekinteni ezeket, és ellenőrizni tudják, hogy képesek-e azoknak megfelelő terméket szállítani le. A szállítók visszaküldik az ajánlataikat, melyeket a beszerzési részleg elbírál, majd kiválasztja a beszerzés céljából használni kívánt szállítót.  
 
-A beszerzési rendelések tartalmaznak egy olyan lehetőséget, amely, az átfogóbb ajánlatkérési folyamat helyett, egy *beszerzési értesítőt *küld ki a szállítóknak. A beszerzési értesítő az olyan feltételek feltérképezését szolgálja, mint az ár, az engedmények, illetve a rendelés leszállítási dátuma. Amennyiben a szállítókat úgy állítja be, hogy azok a **Szállítói** portált* * használják, úgy nem aktív a beszerzési értesítő funkció. Ebben az esetben a rendelés a** Szállítói** portálon kerül megosztásra, a *visszaigazolási kérés* kiküldését követően pedig a szállító képes közvetlenül visszaigazolni a rendelést.  
+A beszerzési rendelések tartalmaznak egy olyan lehetőséget, amely, az átfogóbb ajánlatkérési folyamat helyett, egy *beszerzési értesítőt *küld ki a szállítóknak. A beszerzési értesítő az olyan feltételek feltérképezését szolgálja, mint az ár, az engedmények, illetve a rendelés leszállítási dátuma. Amennyiben a szállítókat úgy állítja be, hogy azok a **Szállítói** portált használják, úgy nem aktív a beszerzési értesítő funkció. Ebben az esetben a rendelés a**Szállítói** portálon kerül megosztásra, a *visszaigazolási kérés* kiküldését követően pedig a szállító képes közvetlenül visszaigazolni a rendelést.  
 
 *Szállítói katalógusok *segítségével információt tud gyűjteni az általuk forgalmazott termékválasztékról. A szállítók maguk tudják közzétenni a saját katalógusukat, így könnyebb a katalógus naprakészen tartása. Egy termékhez csatolhat *engedélyezett szállítói listát* is, ami elősegítheti a szállító kiválasztását új beszerzési rendelések megnyitásakor, illetve a nem kívánt szállítók mellőzését.
 

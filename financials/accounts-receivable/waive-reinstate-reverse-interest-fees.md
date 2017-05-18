@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 25c2f85298bb89cb2802c7f0f7ff632c08aeca8f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e25a7657c2b859ffd57313ed7eb8da6583e7130d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -61,7 +62,7 @@ Elvégezheti a korrekciót a **Számla javítása** gombbal a szabadszöveges sz
 
 Sztornírozhat egy vevői tranzakciót egy számlán, ha a számla helytelenül lett létrehozva. Ha a sztornírozott vevői tranzakcióhoz kamat tartozik egy kamatlevélen, és a kamatlevelet feladták, a tranzakcióhoz tartozó kamat is sztornírozva lesz a kamatlevélen. Ha kamatlevél vissza lesz vonva, ha még nem adták fel. 
 
-Visszavonhat vevő tranzakciókat a **Visszavonás **gombbal a **Vevői tranzakciók** oldalon.
+Visszavonhat vevő tranzakciókat a **Visszavonás**gombbal a **Vevői tranzakciók** oldalon.
 
 ## <a name="waive-or-reinstate-interest-notes"></a>Kamatlevelek elengedése vagy visszaállítása
 Elengedheti vagy visszaállíthatja a kijelölt kamatleveleken szereplő összes költséget. Költségek elengedésekor az elengedni kívánt teljes összeg nem haladhatja meg a beállított összeghatárokat. Csak olyan kamatlevél állítható vissza, amelyet korábban elengedtek. 
@@ -81,7 +82,7 @@ Elengedheti vagy visszaállíthatja a kamatleveleket a **Díj** gomb segítség�
 ## <a name="reverse-interest-notes"></a>Kamatlevelek sztornírozása
 Sztornírozhatja a kijelölt kamatleveleken szereplő összes költséget. A sztornírozott díjak el lesznek távolítva a vevő számlájáról és többé nem esedékesek. Egy kamatlevél sztornírozása után újraszámíthatja a kamatot, és létrehozhat egy új kamatlevelet. 
 
-Sztornírozhat a kamatleveleket a **Kamatlevél **gomb segítségével a **Vevő** oldal **Begyűjtés** lapján.
+Sztornírozhat a kamatleveleket a **Kamatlevél**gomb segítségével a **Vevő** oldal **Begyűjtés** lapján.
 
 ## <a name="reverse-interest-transactions"></a>Kamattranzakciók sztornírozása
 Sztornírozhatja az összes kiválasztott kamattranzakciót. A sztornírozott díjak el lesznek távolítva a vevő számlájáról és többé nem esedékesek. A tranzakciók sztornírozása után újraszámíthatja a kamatot, és létrehozhat egy új kamatlevelet.
@@ -91,7 +92,7 @@ Sztornírozhat kamattranzakciókat a **Kamattranzakció** gomb segítségével a
 ## <a name="view-the-history-of-adjustments-for-charges-that-were-waived-reinstated-or-reversed"></a>Elengedett, visszaállított vagy sztornírozott költségek módosítási előzményeinek megtekintése
 Megtekintheti a kamatleveleken végzett módosítások részletes előzményeit, például a módosítást megadó felhasználó nevét, a módosítás típusát, az összeget, valamint a módosítás megadásának dátumát. Például célszerű lehet megtekinteni egy kamatlevélhez korábban megadott módosításokat, mielőtt új kamatlevelet hoz létre. 
 
-Sztornírozhat kamattranzakciókat az **Előzmények **gomb segítségével a **Vevő** oldal **Begyűjtés** lapján.
+Sztornírozhat kamattranzakciókat az **Előzmények**gomb segítségével a **Vevő** oldal **Begyűjtés** lapján.
 
 
 

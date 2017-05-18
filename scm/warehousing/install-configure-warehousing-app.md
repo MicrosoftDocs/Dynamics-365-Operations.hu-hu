@@ -3,7 +3,7 @@ title: "A Microsoft Dynamics 365 for Operations &#8211; Warehousing telepítése
 description: "Ez a témakör ismerteti, hogyan telepítse és konfigurálja a Microsoft Dynamics 365 for Operations - Warehousing alkalmazást."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 231c087ddc976aa552fc9cd6c89188f82a0247d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bbf6df8d43889e7a62bfe28921997c45c8b4c632
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>A Microsoft Dynamics 365 for Operations &#8211; Warehousing telepítése és konfigurálása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör ismerteti, hogyan telepítse és konfigurálja a Microsoft Dynamics 365 for Operations - Warehousing alkalmazást.
 
@@ -67,7 +71,7 @@ Ahhoz, hogy az alkalmazás együttműködhessen a kívánt Dynamics 365 for Oper
 ## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Felhasználói fiók létrehozása és konfigurálása a Dynamics 365 for Operationsben
 Annak érdekében, hogy a Dynamics 365 for Operations képes legyen az Azure AD alkalmazás használatára, kövesse az alábbi konfigurációs lépéseket:
 
-1.  Hozzon létre új felhasználói fiókot a Dynamics 365 for Operations bérlője számára az Azure Active Directoryban. E felhasználói fiók célja a raktáralkalmazás konkrét egyéni szolgáltatásának elérése, amit a Dynamics 365 for Operations-kiszolgáló tesz lehetővé. Ezen lépés befejeztével rendelkezni fog a WMDP felhasználóhitelesítő adataival, amelyek WMDP e-mail-címből és WMDP-jelszóból állnak. Felhasználók az Azure AD-hez és a Dynamics 365 for Operationshöz történő hozzáadásának alaplépéseiről a következő oktatóanyagból tájékozódhat: [Microsoft Dynamics 365 for Operations-előfizetés regisztrálása](/dynamics365/operations/dev-itpro/sign-up-preview-subscription).
+1.  Hozzon létre új felhasználói fiókot a Dynamics 365 for Operations bérlője számára az Azure Active Directoryban. E felhasználói fiók célja a raktáralkalmazás konkrét egyéni szolgáltatásának elérése, amit a Dynamics 365 for Operations-kiszolgáló tesz lehetővé. Ezen lépés befejeztével rendelkezni fog a WMDP felhasználóhitelesítő adataival, amelyek WMDP e-mail-címből és WMDP-jelszóból állnak. Felhasználók az Azure AD-hez és a Dynamics 365 for Operationshöz történő hozzáadásának alaplépéseiről a következő oktatóanyagból tájékozódhat: [Microsoft Dynamics 365 for Operations-előfizetés regisztrálása](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 2.  Hozzon létre egy olyan Dynamics 365 for Operations-felhasználót, amely megfelel a raktározási alkalmazás felhasználói hitelesítő adatainak.
     1.  A Dynamics 365 for Operationsben lépjen a **Rendszerfelügyelet** &gt; **Közös** &gt; **Felhasználók** elemre.
     2.  Hozzon létre egy új felhasználót.
@@ -98,6 +102,8 @@ Abban az esetben, ha egy eszköz elveszett vagy a biztonsága sérült, el kell 
 6.  Kattintson a **Konfigurálás** lapra, görgessen le, és győződjön meg róla, hogy az alkalmazás **Ügyfél-azonosítója** megegyezik a jelen szakasz 2. lépésében látottal.
 7.  Kattintson az eszköztár **Törlés** gombjára.
 8.  A megerősítő üzeneten kattintson az **Igen** gombra.
+
+
 
 
 

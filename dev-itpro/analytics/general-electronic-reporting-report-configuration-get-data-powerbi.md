@@ -1,9 +1,9 @@
 ---
-title: "Elektronikus jelentési konfiguráció beállítása a Dynamics 365 for Operations adatainak továbbításához a Power BI számára"
+title: "Elektronikus jelentéskészítés adatok a Power BI-be történő lehívásához"
 description: "Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a Dynamics 365 for Operations alkalmazásból a Power BI szolgáltatásokba. A jelen témakörben bemutatott példa Intrastat-tranzakciókat alkalmaz olyan üzleti adatokként, amelyeket át kell adni. A Power BI térképes megjelenítése ezt az Intrastat-tranzakciós adatot használja egy olyan nézet bemutatásához, amellyel egy vállalat importálási/exportálási tevékenységeit lehet elemezni a Power BI-jelentésben."
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-31 13 - 22 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: ed0192c44b6d7e88120c64e539ebb0ac3b379831
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4bbc77eb1edfe0c109434ce4d26228ed031f48bc
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="set-up-electronic-reporting-to-provide-power-bi-with-data-from-dynamics-365-for-operations"></a>Elektronikus jelentési konfiguráció beállítása a Dynamics 365 for Operations adatainak továbbításához a Power BI számára
+# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Elektronikus jelentéskészítés adatok a Power BI-be történő lehívásához
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a Dynamics 365 for Operations alkalmazásból a Power BI szolgáltatásokba. A jelen témakörben bemutatott példa Intrastat-tranzakciókat alkalmaz olyan üzleti adatokként, amelyeket át kell adni. A Power BI térképes megjelenítése ezt az Intrastat-tranzakciós adatot használja egy olyan nézet bemutatásához, amellyel egy vállalat importálási/exportálási tevékenységeit lehet elemezni a Power BI-jelentésben.
 
@@ -61,7 +65,7 @@ A jelen témakörben szereplő példa elvégzéséhez a következő hozzáféré
 3.  Az **Elektronikus jelentések** munkaterületén aktiválja a megfelelő szolgáltatót; ehhez kattintson a **Beállítás aktívként** lehetőségre. További információkhoz játssza le az **ER-szolgáltató kijelölése** feladat-útmutatót.
 
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>ER-adatmodell használata adatforrásként
-A Power BI-jelentésekben használt üzleti adatok forrásának ER-adatmodellnek kell lennie. Ennek az adatmodellnek a feltöltése a ER-konfigurációk tárházából történik. További tudnivalókért lásd: [Elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](download-electronic-reporting-configuration-lcs.md), vagy játssza le az **ER-konfiguráció importálása a Lifecycle Services rendszerből** feladat-útmutatót. Válassza ki az **Intrastatot **azon adatmodellként, amelyet a program a kiválasztott ER-konfigurációk tárházából feltölt. (Ebben a példában a modell 1. verzióját használjuk.) Ezután érheti el az **Intrastat** ER-modell konfigurációját a **Konfigurációk** oldalon. [![Konfigurációs oldal](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+A Power BI-jelentésekben használt üzleti adatok forrásának ER-adatmodellnek kell lennie. Ennek az adatmodellnek a feltöltése a ER-konfigurációk tárházából történik. További tudnivalókért lásd: [Elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](download-electronic-reporting-configuration-lcs.md), vagy játssza le az **ER-konfiguráció importálása a Lifecycle Services rendszerből** feladat-útmutatót. Válassza ki az **Intrastatot**azon adatmodellként, amelyet a program a kiválasztott ER-konfigurációk tárházából feltölt. (Ebben a példában a modell 1. verzióját használjuk.) Ezután érheti el az **Intrastat** ER-modell konfigurációját a **Konfigurációk** oldalon. [![Konfigurációs oldal](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Egy ER-formátumú konfiguráció kialakítása
 Létre kell hoznia egy olyan új ER-formátum konfigurációt, amely az **Intrastat** adatmodellt használja az üzleti adatok forrásaként. Ennek a formátumkonfigurációnak OpenXML (Excel-fájl) formátumú, elektronikus dokumentumokként kell létrehoznia a kimeneti eredményeket. További információkhoz játssza le az **ER-konfiguráció létrehozása OPENXML formátumú jelentésekhez** feladat-útmutatót. Nevezze el az új konfiguráció **importálási / exportálási tevékenységeknek**, a következő ábrán látható módon. Használja a [ER-érték – importálás és exportálás részletei](https://go.microsoft.com/fwlink/?linkid=845208) Excel-fájlt sablonként, amikor megtervezi az ER formátumát. (A formátumsablonok importálására vonatkozó további tudnivalókkal kapcsolatban játssza le a feladat-útmutatót.) [!["Importálási / exportálási tevékenységek konfigurálása](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png) Az **importálási/exportálási tevékenységek** formátumkonfigurációjának módosításához kövesse ezeket a lépéseket.
@@ -119,5 +123,7 @@ Mentse el a Power BI-jelentést **importálás és exportálás részletezését
 [Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md)
 
 [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
+
+
 
 

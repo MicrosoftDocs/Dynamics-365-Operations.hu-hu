@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f82033798dbe603c0f2e2c92f91d28985c12b3b4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 144a1adbff74aef468dd4b2c9f69bf479a5ec671
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ A Munkaidő és jelenlét lehetőséget használó vállalatoknál a dolgozókna
 -   Olyan dolgozók, akiknek például napi, heti vagy kétheti rendszerességgel regisztrálniuk kell a munkaidejüket és jelenlétüket.
 -   Olyan munkafelügyelők, vezetők és bérszámfejtési tisztviselők, akik kiszámítják, jóváhagyják vagy további feldolgozásra továbbküldik a dolgozók által regisztrált adatokat.
 
-| **Megjegyzés **                                                                                                                                                                                                                                                    |
+| **Megjegyzés**                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ha a Munkaidő és jelenlét funkciót a Gyártásvégrehajtással együtt futtatja, úgy rögzítésre, illetve mindkét modul bérszámfejtési számításaihoz felhasználásra kerül minden, a projektek, projekttevékenységek, közvetett tevékenységek, távolléti kódok, túlóra, illetve rugalmas munkaidő kapcsán regisztrált adat. |
 
@@ -53,7 +54,7 @@ A beállítást követően a dolgozók részére többféle regisztráció is en
 -   Idő- és cikkfelhasználás termelési feladatok során.
 -   Az üzemben egy adott gép használati ideje, amennyiben a gép erőforrásként van megjelölve.
 
-| **Megjegyzés **                                                                                                                                                                                                                      |
+| **Megjegyzés**                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | A dolgozó automatikusan hozzárendelhető az üzem egy adott gépe kapcsán végzett időpont regisztrációkhoz, amennyiben a dolgozó azt állítja be a termelési feladat megkezdésekor, hogy asszisztensként dolgozik az adott gépen. |
 
@@ -82,7 +83,7 @@ A számítási csoporthoz hasonlóan jóváhagyási csoportot is hozzá kell ren
 -   Prémiumok manuális hozzáadása.
 -   További információk megadása a távolléti regisztrációkkal kapcsolatban.
 
-| **Megjegyzés **                                                                                                                                                                             |
+| **Megjegyzés**                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ha egyes dolgozók számára túlórát számol el, a túlórát fel lehet osztani a nap egyes feladatai között. Erre akkor van szükség, ha a feladat költségének kiszámítása a dolgozói fizetés alapján történik. |
 
@@ -102,7 +103,7 @@ A regisztrációk jóváhagyása után azokat át tudja helyezni az ismétlődő
 ## <a name="reversing-transferred-registrations"></a>Áthelyezett regisztrációk sztornírozása
 A tranzakciók sztornírozása – azaz azok visszaállítása – addig lehetséges, amíg le nem futtatja a bérlista-időszak fizetések áthelyezését. Azaz, amíg a bérlistaadatokat át nem helyezi egy külső fájlba. Sztornírozás esetén valamennyi regisztráció visszavonásra kerül, és a meghatározott termelési rendelésekbe és projektekbe feladott valamennyi tranzakcióhoz ellentranzakció készül, így a program semlegesíti a tranzakciókat.
 
-| **Megjegyzés **                                                 |
+| **Megjegyzés**                                                 |
 |----------------------------------------------------------|
 | A külső fájl importálható egy bérszámfejtő rendszerbe . |
 

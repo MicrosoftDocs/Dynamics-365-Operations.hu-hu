@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 68cac68e1ea3db35b44c91f2c1901abf2aa521be
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4b79b21c6c4ceebfd24225643d099a2e2789d303
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Több beállítás határozza meg, hogyan történik a termelési ütemezés kis
 
 Az ütemezés iránya alapvető jellemző az ütemezési folyamatban. A termelés ütemezhető a dátumokat megelőző időszakra és a dátumokat követő időszakra is, az időzítési és ütemezési követelményeknek megfelelően.
 
--   **Előre ütemezés **– A termelést minél korábbi indításra ütemezheti. A termelés kezdési dátuma lehet az adott nap, másnap vagy bármilyen megadott jövőbeni dátum. A termelés kezdetét a lehető legkorábbra ütemezi a program, és attól előre számítva a lehető legkorábbi befejezési dátumig veszi tervbe.
+-   **Előre ütemezés**– A termelést minél korábbi indításra ütemezheti. A termelés kezdési dátuma lehet az adott nap, másnap vagy bármilyen megadott jövőbeni dátum. A termelés kezdetét a lehető legkorábbra ütemezi a program, és attól előre számítva a lehető legkorábbi befejezési dátumig veszi tervbe.
 -   **Visszafelé ütemezés** – A termelést minél későbbi indításra ütemezheti. Az ütemezés azon a dátumon alapul, amelyen a termelést be kell fejezni, és innen számítja vissza a lehető legkésőbbi időpontot, amikor a termelést a határidőből való kifutás nélkül el lehet indítani.
 
 Az alábbi lehetőségek közül választhat:
@@ -98,7 +99,7 @@ Amikor a hivatkozások a termelési rendelésektől függnek, ezeket altermelés
 
 ### <a name="synchronize-references"></a>Hivatkozások szinkronizálása
 
-Szinkronizálhatja a hivatkozásokat a termeléssel. Ha ez a beállítás van kiválasztva, akkor a termelési ütemezés módosításakor az altermelések dátuma is megváltozik és ehhez igazodik. Ha a termelési rendelésnek egy vagy több altermelése van, érdemes az altermelések és a fő termelés együttes ütemezése. Ilyenkor a fő termelés nem indítható el mindaddig, amíg a kapcsolódó altermelések be nem fejeződnek. Ezért jelölje be ezt a jelölőnégyzetet, ha az altermelések ütemezésének alapjául a kiválasztott termelés kezdési és befejezési ideje szolgál. Ezt a jelölőnégyzet csak akkor választhatja ki, ha a** Hivatkozások ütemezése** jelölőnégyzet is be van jelölve.
+Szinkronizálhatja a hivatkozásokat a termeléssel. Ha ez a beállítás van kiválasztva, akkor a termelési ütemezés módosításakor az altermelések dátuma is megváltozik és ehhez igazodik. Ha a termelési rendelésnek egy vagy több altermelése van, érdemes az altermelések és a fő termelés együttes ütemezése. Ilyenkor a fő termelés nem indítható el mindaddig, amíg a kapcsolódó altermelések be nem fejeződnek. Ezért jelölje be ezt a jelölőnégyzetet, ha az altermelések ütemezésének alapjául a kiválasztott termelés kezdési és befejezési ideje szolgál. Ezt a jelölőnégyzet csak akkor választhatja ki, ha a**Hivatkozások ütemezése** jelölőnégyzet is be van jelölve.
 
 ## <a name="cancellation"></a>Érvénytelenítés
 ### <a name="cancel-queue-time"></a>Várakozási idő érvénytelenítése

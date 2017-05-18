@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 8e09c6b042d557e3b2d608fb5e278169fc3c1d88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4a5e6164f8aea2d4a6a063966c10f33a5e1f0cdd
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Kérdőívek terjesztése és kitöltése
+
+[!include[banner](includes/banner.md)]
+
 
 A témakör leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők. 
 
@@ -45,7 +49,7 @@ Létrehozhat kérdőívcsoportokat, amelyekhez beállíthatja azon lehetséges v
 
 A következő oldalakról hozhat létre kérdőív csoportokat:
 
--   **Kérdőív csoportok **– Csak az egyes kérdőív csoportokban szereplő személyek tölthetik ki a kérdőívet. Például ha csak az alvállalkozókat szeretné megkérdezni, létrehozhat olyan kérdőív csoportokat, amelyekbe ezen specifikus válaszadókat vonhatja be.
+-   **Kérdőív csoportok**– Csak az egyes kérdőív csoportokban szereplő személyek tölthetik ki a kérdőívet. Például ha csak az alvállalkozókat szeretné megkérdezni, létrehozhat olyan kérdőív csoportokat, amelyekbe ezen specifikus válaszadókat vonhatja be.
 -   **Kérdőív csoportok tagjai** – Személyek adhat hozzá a kérdőív csoportokhoz.
 
 Kérdőívhez kérdőívcsoport hozzárendeléséhez a **Kérdőívek** oldalon kattintson a **Felhasználói jogok** elemre. A kérdőív aktívként történő elmentése után a kérdőívcsoport tagjai kitölthetik a kérdőívet. Ez a funkció akkor hasznos, ha szeretné a kérdőívet tesztelni személyek egy kiválasztott csoportján, mielőtt nagyobb csoport számára közzétenné, illetve ha egy kérdőívvel egy nagyon specifikus célközönséget szeretne megcélozni.
@@ -53,7 +57,8 @@ Kérdőívhez kérdőívcsoport hozzárendeléséhez a **Kérdőívek** oldalon 
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Tervezett válaszmunkamenet egy kérdőívenben
 A tervezett válaszmunkamenetek olyan kérdőívek, amelyek megtervezettek és a kijelölt válaszadóknak szólnak. 
 
-**Megjegyzés:** Egy tervezett válaszadási munkamenet beállítása előtt meg kell terveznie a kérdőívet. 
+> **Megjegyzés**
+>   Egy tervezett válaszadási munkamenet beállítása előtt meg kell terveznie a kérdőívet. 
 
 A **Tervezett válaszmunkamenetek** képernyőn lehet létrehozni tervezett válaszmunkamenetet egy bizonyos alkalmazotthoz. A lapon megjelenő listában megjelenik minden tervezett kérdőív. 
 
@@ -99,7 +104,8 @@ Kattintson a **Funkciók** &gt; **Start** lehetőségre, hogy a kérdőívet el�
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Válaszadók értesítése a számukra elérhető kérdőívekről
 Kérdőív terjesztésekor értesítést kell küldeni a válaszadóknak arról, hogy a kérdőív elérhető számukra. 
 
-**Megjegyzés:** a válaszadóknak a Microsoft Dynamics 365 for Operations rendszer felhasználóinak kell lenniük a kérdőívek kitöltéséhez.
+> **Megjegyzés**
+>   A válaszadóknak a Microsoft Dynamics 365 for Operations rendszer felhasználóinak kell lenniük a kérdőívek kitöltéséhez.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Válaszadók értesítése egy tervezett válaszmunkamenetről
 
@@ -109,12 +115,14 @@ Ha tervezett válaszmunkamenetet használ, akkor közvetlenül kell értesíteni
 
 A **Kérdívek ütemezése** képernyőn e-mail üzenetet írhat a kérdőívhez társított válaszadóknak. Írja be az e-mail üzenet szövegét az **E-mail üzenet az alkalmazotti önkiszolgáló szolgáltatás számára** lapon. Az ütemezés elindítását követően kattintson a **Funkciók** &gt; **E-mail üzenet küldése** lehetőségre a válaszadók számára küldendő e-mail létrehozásához és elküldéséhez. A válaszadók ezután bejelentkezhetnek a webhelyre, és kitölthetik a kérdőívet. 
 
-**Megjegyzés:** Az e-mail funkció használata előtt a rendszergazdának meg kell adnia az e-mail beállításokat az **E-mail paraméterek** oldalon.
+> **Megjegyzés**
+>   Az e-mail funkció használata előtt a rendszergazdának meg kell adnia az e-mail beállításokat az **E-mail paraméterek** lapon.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Ütemezett kérdőív lezárása
 Ha az összes válaszadó befejezte a kiadott válaszmunkamenetet, akkor be lehet fejezni az ütemezett kérdőívet. Az ütemezett kérdőív befejezése után annak beállításait már nem lehet az új ütemezésekbe másolni. 
 
-**Megjegyzés:** Ha annak ellenére szeretné befejezni az ütemezést, hogy egy vagy több válaszadó még nem töltötte ki a kérdőívet, először törölje a szóban forgó válaszadókat a **Tervezett válaszmunkamanet** képernyő listájáról. Ezután befejezhető az ütemezés.
+> **Megjegyzés**
+>   Ha annak ellenére szeretné befejezni az ütemezést, hogy egy vagy több válaszadó még nem töltötte ki a kérdőívet, először törölje a szóban forgó válaszadókat a **Tervezett válaszmunkamanet** lap listájáról. Ezután befejezhető az ütemezés.
 
 ## <a name="completing-questionnaires"></a>Kérdőív kitöltése
 Miután megtervezte és kiosztotta a kérdőívet, az csak a kijelölt válaszadók számára lesz elérhető. A rendelkezésre álló kérdőíveket két helyen töltheti ki:
@@ -132,5 +140,7 @@ A kérdőívek közzétehetők csak adott felhasználók vagy felhasználócsopo
 [Kérdőívek használata](questionnaires.md)
 
 [Kérdőívek megtekintése, az eredmények kiértékelése](evaluate-questionnaire-results.md)
+
+
 
 

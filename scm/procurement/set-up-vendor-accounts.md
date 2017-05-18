@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 0719a49bee069dc49be084a3fbc4ba5eb4883d03
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2f0ddf0e4cff0d799a7baf6bdc9d5c2da0622f4d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -98,7 +99,7 @@ Ha a szállítót várakoztatja, akkor megadhatja az okot és a várakoztatott �
 Ha egynél több szállító van ugyanazon a számlázási címen, vagy ha egy szállító egy harmadik félen keresztül kapja a számláját, megadhatja a számlázási fiókot a szállító rekordján. A számlafogadó az a számla, amelyen követel tételként jelenik meg a számlaösszeg olyankor, amikor szállítói számlát hoz létre egy beszerzési rendelésből. Ha nem ad meg számlafogadót a szállítói rekordon, akkor a szállítói számla lesz a számlafogadó.
 
 ## <a name="vendor-bank-accounts"></a>Szállítói bankszámlák
-Ha kifizetést kell végrehajtania a szállítói bankszámlára, akkor szállító bankjára és bankszámlákra vonatkozó információkat vihet fel a **Szállítói bankszámlák **oldalra. A kiválasztott bankszámla érvényesítésével és fizetéseivel kapcsolatos adatokat is megadhat. Például hozzáadhat ellenőrző tranzakciókat a szállítói bankszámlához. Ezek az ellenőrző tranzakciók arra használhatók, hogy meggyőződjenek a számlaadatok pontosságáról, például a banki regisztrációs azonosítók és számlaszámok helyességéről. Meg kell adnia egy alapértelmezett számlát a szállítói kifizetésekhez. Azonban amikor tényleges kifizetést hajt végre akkor kicserélheti ezt a számlát a szállító egy egyéb számlájára.
+Ha kifizetést kell végrehajtania a szállítói bankszámlára, akkor szállító bankjára és bankszámlákra vonatkozó információkat vihet fel a **Szállítói bankszámlák**oldalra. A kiválasztott bankszámla érvényesítésével és fizetéseivel kapcsolatos adatokat is megadhat. Például hozzáadhat ellenőrző tranzakciókat a szállítói bankszámlához. Ezek az ellenőrző tranzakciók arra használhatók, hogy meggyőződjenek a számlaadatok pontosságáról, például a banki regisztrációs azonosítók és számlaszámok helyességéről. Meg kell adnia egy alapértelmezett számlát a szállítói kifizetésekhez. Azonban amikor tényleges kifizetést hajt végre akkor kicserélheti ezt a számlát a szállító egy egyéb számlájára.
 
 ## <a name="ledger-accounts"></a>Főkönyvi számlák
 Megadhatja a szállítói számlanaplón automatikusan megjelenő alapértelmezett számlákat a megadott szállítóhoz. Ez a lehetőséget akkor lehet hasznos, ha általában azonos típusú elemeket, vagy szolgáltatásokat szokott fizetni, ugyanazoktól a szállítóktól. Ha megad egy alapértelmezett számlát, gyorsan és hatékonyan írhat be naplóbejegyzéseket a számlanaplóba. A megadott alapértelmezett számlák nincsenek használatban a beszerzési rendelésekhez, vagy azokhoz a szállítói számlákhoz, amelyek a **Szállítói számla** oldalon vannak rögzítve.  

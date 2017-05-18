@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8aa0a58b03ee18e42ca7770ea3e22311c1ddba67
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9aba61178d050f4881c96b7a7fa62937b98b2beb
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Rendelés ígéret számítja ki a lehető legkorábbi szállítási és kézhez
 -   **Értékesítés átfutási ideje** – Az értékesítés átfutási ideje az értékesítés rendelés létrehozása és a szállítás közti idő. A kézbesítési dátum számítása a napok egy alapértelmezett száma alapján történik, és nem veszi figyelembe a készlet rendelkezésre állását, az ismert igényt vagy a tervezett ellátást.
 -   **Ígérethez rendelkezésre áll (elérhető Ígérethez)** – Az Ígérethez rendelkezésre áll a cikk azon mennyiségét jelenti, amely elérhető és szállítható a vevőnek adott időre. Az Ígérethez rendelkezésre álló mennyiség kiszámítása tartalmazza a nem véglegesített készletet, az átfutási időket a tervezett bevételezéseket és kiadásokat.
 -   **ígérethez rendelkezésre áll + Kiadási időtartalék**– A szállítás dátuma megegyezik az ígérethez rendelkezésre áll (ATP) dátummal, plusz a cikkre vonatkozó kiadási időtartalékkal. A kiadási időtartalék a szállítandó cikkek előkészítéséhez szükséges idő.
--   **Ígérhető **– Az elérhetőség az alábontás alapján számítható.
+-   **Ígérhető**– Az elérhetőség az alábontás alapján számítható.
 
 ## <a name="atp-calculations"></a>Ígérethez rendelkezésre áll számítások
 Az ígérethez rendelkezésre álló mennyiséget a rendszer a „kumulatív és előretekintéssel meghatározott, ígérethez rendelkezésre álló mennyiség” módszerrel számítja ki. Ennek az ígérethez rendelkezésre áll számítási módszernek a fő előnye, hogy kezelhetők olyan esetek, ahol a kiadások összeg a bevételek között nagyobb, mint a legfrissebb bevétel (például amikor egy korábbi bevételezési mennyiséget fel kell használni a követelmények miatt). A „kumulatív ígérethez rendelkezésre állás és előretekintés” számítási módszer minden kiadást magába foglal, amíg a bevételezendő kumulatív mennyiség meghaladja a kumulatív kiadandó mennyiséget. Ezért az ígérethez rendelkezésre állás számítás módszer kiértékeli, hogy a mennyiség egy része a korábbi időszakból használható-e a későbbi időszakban.  

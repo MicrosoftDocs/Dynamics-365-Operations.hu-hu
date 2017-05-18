@@ -3,7 +3,7 @@ title: "Raktár konfigurálása"
 description: "Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,19 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 437f2348603db432df6d7589e4043d8145c52a1e
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e312f953d6a29d26b98794ed213d6ec70f6aa4b7
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="warehouse-configuration"></a>Raktár konfigurálása
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat.
 
-**Megjegyzés:** Ez a cikk a** Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A** Készletkezelés** modul raktár funkcióira nem vonatkozik.
+**Megjegyzés:** Ez a cikk a**Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A**Készletkezelés** modul raktár funkcióira nem vonatkozik.
 
 ## <a name="warehouse-layout"></a>Raktárelrendezés
 A Microsoft Dynamics 365 for Operations rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
@@ -40,7 +44,7 @@ A Microsoft Dynamics 365 for Operations rendszerben a Raktárkezelési rendszer 
 -   Csoportosíthatja a helyeket fizikai kapacitás megszorítás beállításai alapján.
 -   Szabályozhatja cikkek tárolását és kitárolását a lekérdezésben megadott szabályokon alapján.
 
-A Microsoft Dynamics 365 for Operations rendszer raktárkezelési használatához hozzon létre egy raktárt, és engedélyezzen több speciális vagy konkrét raktárkezelési tevékenységet. A **Raktárak** oldalon válassza a **Raktárkezelési folyamatok alkalmazása **lehetőséget.
+A Microsoft Dynamics 365 for Operations rendszer raktárkezelési használatához hozzon létre egy raktárt, és engedélyezzen több speciális vagy konkrét raktárkezelési tevékenységet. A **Raktárak** oldalon válassza a **Raktárkezelési folyamatok alkalmazása**lehetőséget.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zónacsoportok, zónák, helytípusok és helyek
 
@@ -66,7 +70,7 @@ Optimális kimenő folyamatok eléréséhez értékelnie kell, hogy fix kiviteli
 
 ### <a name="location-setup-wizard"></a>Hely beállítása varázsló
 
-A hely a raktáron belül gyors létrehozására használható a **Hely beállítása** varázsló. Ennek a folyamatnak a részeként egyszerűen karbantarthatja a helynevek formátumát.
+A hely a raktáron belül gyors létrehozására használható a **Hely beállítása**varázsló. Ennek a folyamatnak a részeként egyszerűen karbantarthatja a helynevek formátumát.
 
 ## <a name="warehouse-processes"></a>Raktárfolyamatok
 A raktár konfiguráció részeként fontos, hogy az üzleti követelményeknek megfelelően engedélyezze a raktárkezelési folyamatokat. A legfontosabb összetevők, amelyeket konfigurálnia kell, a hullámsablonok, munkasablonok, munkagyűjtők és helyutasítások.
@@ -75,7 +79,12 @@ A raktár konfiguráció részeként fontos, hogy az üzleti követelményeknek 
 
 A hullámsablonok segítenek a kimenő „Kiadás raktárba” folyamat engedélyezésében. Amint a rendeléssorokat kiadta (akár közvetlenül a forrásbizonylatból kötegelt folyamaton keresztül, vagy már létrehozott rakományokon keresztül), a hullámsablon funkció használt. 
 
-Háromféle hullámsablont hozhat létre: **Szállítás**, **Termelési rendelés** és **Kanban**. A paraméterek segítségével határozza meg, hogy a rendszer meddig mehet automatikusan a kimenő munkafolyamatokhoz. Egy hullámsablont a hullámsablon-sorrend és a sablonban megadott feltételek alapján választ ki. Ha egy sablon a sorozat elején szerepel, először ellenőrizze abban sablonban a feltételeket. Ha a feltétel teljesíthető, a hullámsablont a rendszer feldolgozza. Ellenkező esetben a rendszer a következő sablonban lévő feltételeket ellenőrzi, és így tovább. Ezért célszerű, hogy azt a sablont, ami a legtöbb kritériummal rendelkezik, a hullámsablon sorozat lista tetejére rakja, így ezt a rendszer ezt dolgozza fel először. Például ma szeretné egy bizonyos szállítóhoz tartozó összes munkát feldolgozni, és ideiglenesen késleltetni az egyéb szállítók munkáinak feldolgozását. Ebben az esetben azt a hullámsablont, amely az ehhez a szállítóhoz tartozó munkákat választja ki, a sorozatban magasabbra kell rakni, mint az egyéb sablonokat. Ellenkező esetben, a más szállítók végzett munkát a rendszer hamarabb dolgozza fel, mint ahogy az ehhez a szállítóhoz tartozó munkát teljesítette volna. 
+A következő három hullámsablon hozható létre: 
+-   **Szállítás**
+-   **Termelési rendelés**
+-   **Kanban** 
+
+A paraméterek segítségével határozza meg, hogy a rendszer meddig mehet automatikusan a kimenő munkafolyamatokhoz. Egy hullámsablont a hullámsablon-sorrend és a sablonban megadott feltételek alapján választ ki. Ha egy sablon a sorozat elején szerepel, először ellenőrizze abban sablonban a feltételeket. Ha a feltétel teljesíthető, a hullámsablont a rendszer feldolgozza. Ellenkező esetben a rendszer a következő sablonban lévő feltételeket ellenőrzi, és így tovább. Ezért célszerű, hogy azt a sablont, ami a legtöbb kritériummal rendelkezik, a hullámsablon sorozat lista tetejére rakja, így ezt a rendszer ezt dolgozza fel először. Például ma szeretné egy bizonyos szállítóhoz tartozó összes munkát feldolgozni, és ideiglenesen késleltetni az egyéb szállítók munkáinak feldolgozását. Ebben az esetben azt a hullámsablont, amely az ehhez a szállítóhoz tartozó munkákat választja ki, a sorozatban magasabbra kell rakni, mint az egyéb sablonokat. Ellenkező esetben, a más szállítók végzett munkát a rendszer hamarabb dolgozza fel, mint ahogy az ehhez a szállítóhoz tartozó munkát teljesítette volna. 
 
 Minden hullámsablonban meg kell adnia a hullámfeldolgozási módokat. A használható módok a kijelölt hullámsablon típusától függően eltérőek.
 
@@ -107,6 +116,8 @@ A különböző helyutasítássorokhoz tartozó tevékenységek meghatározása 
 <a name="see-also"></a>Lásd még
 --------
 
-[Helyek konfigurálása WMS-aktivált raktárban (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Helyek konfigurálása WMS-aktivált raktárban (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 
 

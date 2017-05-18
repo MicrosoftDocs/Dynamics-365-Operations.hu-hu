@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 8965c193839002776b3c61036b23b54625c974a4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 734bf8a5cd71d218942e1a57fbb6af8fef4dc998
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,10 +40,10 @@ A Dynamics 365 for Operations szoftverben megadott bármilyen beállítás csak 
 ## <a name="systemwide-options-for-the-current-user"></a>Az egész rendszerre érvényes beállítások az aktuális felhasználó számára
 A navigációs sávon található egy fogaskerék kép, amelyet **Beállítások** menügombnak hívnak. A **Beállítások** menü megnyitásával választási lehetőségek jelennek meg. A **Beállítások** kijelölésével megnyílik a felhasználói **Beállítások** oldal. Ott négy beállítási lapot talál: **Vizuális**, **Preferenciák**, **Fiók**, és **Munkafolyamat**.
 
--   **Vizuális: **A színtéma kiválasztására és az oldalelemek alapértelmezett méretének beállítására használható.
--   **Preferenciák: **Itt kiválaszthatja a Dynamics 365 for Operations alapértelmezett preferenciáit, amelyek az induláskor betöltődnek, többek között a vállalatot, a kezdőlapot és az alapértelmezett nézet/szerkesztés módot (amely meghatározza, hogy egy oldal csak megtekinthető-e, vagy minden megnyitáskor szerkeszthető). Itt találja meg a nyelvet, az időzónát, illetve a dátum, az idő és a számok formátumának beállítását. A legutóbbi verziókban ez az oldal különböző preferenciákat tartalmaz, amely eltér a különböző verziókban.
--   **Fiók: **Itt adhatja meg a felhasználói azonosítót és más fiókhoz kapcsolódó beállításokat.
--   **Munkafolyamat: **Itt adhatja meg a munkafolyamattal kapcsolatos beállításokat.
+-   **Vizuális:**A színtéma kiválasztására és az oldalelemek alapértelmezett méretének beállítására használható.
+-   **Preferenciák:**Itt kiválaszthatja a Dynamics 365 for Operations alapértelmezett preferenciáit, amelyek az induláskor betöltődnek, többek között a vállalatot, a kezdőlapot és az alapértelmezett nézet/szerkesztés módot (amely meghatározza, hogy egy oldal csak megtekinthető-e, vagy minden megnyitáskor szerkeszthető). Itt találja meg a nyelvet, az időzónát, illetve a dátum, az idő és a számok formátumának beállítását. A legutóbbi verziókban ez az oldal különböző preferenciákat tartalmaz, amely eltér a különböző verziókban.
+-   **Fiók:**Itt adhatja meg a felhasználói azonosítót és más fiókhoz kapcsolódó beállításokat.
+-   **Munkafolyamat:**Itt adhatja meg a munkafolyamattal kapcsolatos beállításokat.
 
 ## <a name="implicit-personalizations"></a>Implicit testreszabás
 Az implicit személyes beállítások olyan személyes beállítások, amelyeket olyan vezérlőkkel hajt végre, amelyek megjegyzik az elemek aktuális láthatósági állapotát. 
@@ -106,7 +107,7 @@ Néhány munkaterület számozott csempét tartalmaz (olyan csempéket, amelyeke
 Az irányítópult legtöbbször az első oldal, amelyet a Dynamics 365 for Operations megnyitásakor lát. Az irányítópult testreszabásával átnevezheti a munkaterület navigációs csempéit, beállíthatja, hogy csak a kívánt csempéket lássa, átnevezheti a csempéket, vagy a kívánt sorrendbe rendezheti őket. Az irányítópult testreszabásához jelöljön ki egy csempét, majd kattintson rá jobb gombbal a helyi menü megnyitásához. Válassza ki a helyi menü **Személyes beállítások** menüpontját. Ha a kiválasztott csempét szeretné elrejteni, átnevezni vagy kihagyni, megváltoztathatja ezt a közvetlenül megjelenő Tulajdonságok ablakon. Ha szeretné módosítani a csempék elrendezését, válassza ki a **Képernyő személyre szabása** beállítást a Tulajdonságok ablakban a Személyes beállítások eszköztár megnyitásához. Az Áthelyezés eszköz segítségével újrarendezheti a csempéket.
 
 ## <a name="administration-of-personalization"></a>Személyes beállítások adminisztrálása
-Lehetséges személyre szabni egy oldalt és megosztani más felhasználókkal úgy, hogy egyszerűen exportálja a személyre szabott oldalt és megkéri a többi felhasználót, hogy navigáljon a személyre szabott oldalra és importálja a testreszabási fájlt, amit létrehozott. Ha egy felhasználó rendszergazdai jogokkal rendelkezik, akkor kezelheti más felhasználók személyes beállításait a **Személyes beállítások** lapon. Nézze meg a b oldalt. A **Személyes beállítások** lapon két fület talál, az egyik a **Rendszer**, a másik a ** Felhasználók**. 
+Lehetséges személyre szabni egy oldalt és megosztani más felhasználókkal úgy, hogy egyszerűen exportálja a személyre szabott oldalt és megkéri a többi felhasználót, hogy navigáljon a személyre szabott oldalra és importálja a testreszabási fájlt, amit létrehozott. Ha egy felhasználó rendszergazdai jogokkal rendelkezik, akkor kezelheti más felhasználók személyes beállításait a **Személyes beállítások** lapon. Nézze meg a b oldalt. A **Személyes beállítások** lapon két fület talál, az egyik a **Rendszer**, a másik a **Felhasználók**. 
 
 **Rendszer:** Itt tudja ideiglenesen letiltani vagy „kikapcsolni” a rendszerben szereplő személyes beállításokat. Ez nem törli a személyes beállításokat, hanem az alapértelmezett állapotra állítja vissza a felületeket. Később újra engedélyezheti a személyes beállításokat, hogy az egyes felhasználói felületeken újra érvényesek legyenek a személyes beállítások. Lehetséges az összes felhasználó személyes beállításainak törlése is. Ne feledje, hogy a személyes beállítások törlésekor nincs lehetőség a személyes beállítások automatikus újraengedélyezésére a rendszerben. Ellenőrizze, hogy exportálta azokat a személyes beállításokat, amelyeket később importálni szeretne, mielőtt végrehajtja ezt a lépést. 
 

@@ -3,7 +3,7 @@ title: "Minőségkezelési folyamatok"
 description: "Ez a cikk a nem megfelelő termékekre vonatkozó minőségkezelési folyamatról nyújt tájékoztatást. a minőségellenőrzési funkció használatát, továbbá a szabálytalanságok meghatározásának, karbantartásának, illetve a helyesbítések kezelésének módját írja le."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 53 - 17
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 2deec6d262e87daf4704ce21ce64546f9c9d638b
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3523a89768bc3aee2aab250ee134128fcc3eeeef
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="quality-management-processes"></a>Minőségkezelési folyamatok
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk a nem megfelelő termékekre vonatkozó minőségkezelési folyamatról nyújt tájékoztatást. a minőségellenőrzési funkció használatát, továbbá a szabálytalanságok meghatározásának, karbantartásának, illetve a helyesbítések kezelésének módját írja le.
 
@@ -52,7 +56,9 @@ A terméktesztelést más néven minőségkezelésnek is nevezik és minőségi 
 -   Rögzítse a minőségi rendelés teszteredményeit, majd mérje össze azokat az általánosan elvárt minőségi szinttel (AQL) és nyomtasson elemzési tanúsítványt, melyen szerepelnek a teszteredmények.
 
 ## <a name="nonconformance"></a>Szabálytalanság
-A szabálytalanság olyan eszközt ír le, melynek minőségével probléma van.** **A szabálytalansági folyamat segít szabálytalan rendeléseket létrehozni, melyek leírják a szabálytalan anyagok mennyiségét, a probléma forrását és típusát, valamint magyarázó megjegyzéseket. A problématípusokat előre osztályozhatja, hogy megkönnyítse a nem megfelelő anyagok elemzését. Nyomtathat továbbá szabálytalansági címkét és szabálytalansági jelentést, hogy irányítsa a nem megfelelő anyagok áthelyezését. Például, a címke és a jelentés jelezhetnek **Használhatatlan** vagy **Korlátozottan felhasználható** állapotot.  Az alábbi táblázat felsorolja a hat alapértelmezett szabálytalanságtípust és leírja a feljegyezendő információkat mindegyik típushoz.
+A szabálytalanság rendelkező cikkeket minőségi probléma ismerteti. A szabálytalansági folyamat segít szabálytalan rendeléseket létrehozni, melyek leírják a szabálytalan anyagok mennyiségét, a probléma forrását és típusát, valamint magyarázó megjegyzéseket. A problématípusokat előre osztályozhatja, hogy megkönnyítse a nem megfelelő anyagok elemzését. Nyomtathat továbbá szabálytalansági címkét és szabálytalansági jelentést, hogy irányítsa a nem megfelelő anyagok áthelyezését. Például, a címke és a jelentés jelezhetnek **Használhatatlan** vagy **Korlátozottan felhasználható** állapotot.  
+
+Az alábbi táblázat felsorolja a hat alapértelmezett szabálytalanságtípust és leírja a feljegyezendő információkat mindegyik típushoz.
 
 | Szabálytalanság-típus   | A forrásra vonatkozó adatok                                                                                                                                                                                                                          |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,10 +78,16 @@ Fűzhet kommentárokat is egy szabálytalansághoz, dokumentum csatolásával. T
 A szabálytalansági jelentésben megjelenik a szabálytalanság száma, a cikk és a probléma típusa. Az ön által felállított jelentés beállítási irányelvek alapján, a jelentés tartalmazhatja a kapcsolódó kommentárokat is a szabálytalanságot illetően. A szabálytalansági címke hasonló adatokat jelenít meg, valamint tartalmazza a szabálytalansághoz rendelt karantén zónát és típust (mint például **Korlátozott felhasználás** vagy **Használhatatlan**), így segítve a hibás anyagok áthelyezését.
 
 ## <a name="approved-nonconformance"></a>Jóváhagyott szabálytalanság
-Tetszés szerint meghatározhat egy vagy több kapcsolódó műveletet egy jóváhagyott szabálytalansághoz. A kapcsolódó művelet leírja az elvégzendő munkát és tartalmaz egy listát azokról a minőségi műveletekről, melyeket megállapított, valamint leíró szöveget a munka okáról. Miután meghatározza a műveletet, tetszés szerint meghatározhatja az egyéb költségeket, az eszközöket és a munka teljesítéséhez szükséges munkaórák számát. A számított költségek a kapcsolódó művelethez jelennek meg, míg az összköltségek szabálytalansághoz. A számított költségek és a mögöttes részletek (cikkek, munkaórák és vegyes költségek) hivatkozási információk és csak a minőségkezelés funkcióiként alkalmazottak. Amennyiben szeretné, létrehozhat minőségi rendelést a szabálytalanságokból úgy, hogy először végrehajt egy lekérdezést a minőségi rendelésekért, majd alkot egy új minőségi rendelést. Például, egy minőségi rendelés felvetheti annak a szükségét, hogy tesztelje (vagy újra tesztelje) a hibás anyagot. Az újonnan létrehozott minőségi rendelés az eredeti szabálytalanság linkjét mutatja. Az egyes szabálytalanságok tetszés szerint egymáshoz kapcsolhatók, illetve a meglévőkből új szabálytalanságok is létrehozhatók. Például a kapcsolat tükrözheti az egyes minőségi problémák közötti összefüggéseket.
+Tetszés szerint meghatározhat egy vagy több kapcsolódó műveletet egy jóváhagyott szabálytalansághoz. A kapcsolódó művelet leírja az elvégzendő munkát és tartalmaz egy listát azokról a minőségi műveletekről, melyeket megállapított, valamint leíró szöveget a munka okáról. Miután meghatározza a műveletet, tetszés szerint meghatározhatja az egyéb költségeket, az eszközöket és a munka teljesítéséhez szükséges munkaórák számát. A számított költségek a kapcsolódó művelethez jelennek meg, míg az összköltségek szabálytalansághoz. A számított költségek és a mögöttes részletek (cikkek, munkaórák és vegyes költségek) hivatkozási információk és csak a minőségkezelés funkcióiként alkalmazottak. 
+
+Amennyiben szeretné, létrehozhat minőségi rendelést a szabálytalanságokból úgy, hogy először végrehajt egy lekérdezést a minőségi rendelésekért, majd alkot egy új minőségi rendelést. Például, egy minőségi rendelés felvetheti annak a szükségét, hogy tesztelje (vagy újra tesztelje) a hibás anyagot. Az újonnan létrehozott minőségi rendelés az eredeti szabálytalanság linkjét mutatja. 
+
+Az egyes szabálytalanságok tetszés szerint egymáshoz kapcsolhatók, illetve a meglévőkből új szabálytalanságok is létrehozhatók. Például a kapcsolat tükrözheti az egyes minőségi problémák közötti összefüggéseket.
 
 ## <a name="correction-handling"></a>Korrekció kezelés
-A **Javítások** lap lehetővé teszi a kijavítandó szabálytalanságok listázását. Minden javító eszköz kapcsolatban áll azzal a diagnosztikai típussal, amely lehetővé tette a probléma felfedezését. A **Javítások** lap információval szolgál továbbá arról is, hogy kinek és mikor kell elvégeznie a javítási műveletet. Leírhatja a probléma és a szükséges javítási művelet részleteit is, amennyiben csatol egy dokumentumot a korrekcióhoz. Miután a szabálytalanságot megnevezte vagy kijavította, „bezáratja” a javító eszközt a **Befejeződött** opció kiválasztásával. Azt is jelezheti, hogy ha megoldás csak rövid távú. Tanácsos egyedi dokumentumtípust megadni a javításokhoz a **Dokumentum típus** oldal segítségével. Ezután használhatja a **Jelentés beállítás** oldalt, hogy megállapítsa megvannak-e jelenítve az ehhez a dokumentum típushoz tartozó megjegyzések a javítási jelentésen. A nyomtatott javítási jelentésben információk találhatóak a szabálytalanságról és a kapcsolódó szabálytalansági jegyzetekről. A jelentés tartalmazza a javítási információkat, mint például a diagnózis típusát, valamint a kapcsolódó javítási jegyzeteket.
+A **Javítások** lap lehetővé teszi a kijavítandó szabálytalanságok listázását. Minden javító eszköz kapcsolatban áll azzal a diagnosztikai típussal, amely lehetővé tette a probléma felfedezését. A **Javítások** lap információval szolgál továbbá arról is, hogy kinek és mikor kell elvégeznie a javítási műveletet. Leírhatja a probléma és a szükséges javítási művelet részleteit is, amennyiben csatol egy dokumentumot a korrekcióhoz. Miután a szabálytalanságot megnevezte vagy kijavította, „bezáratja” a javító eszközt a **Befejeződött** opció kiválasztásával. Azt is jelezheti, hogy ha megoldás csak rövid távú. 
+
+Tanácsos egyedi dokumentumtípust megadni a javításokhoz a **Dokumentum típus** oldal segítségével. Ezután használhatja a **Jelentés beállítás** oldalt, hogy megállapítsa megvannak-e jelenítve az ehhez a dokumentum típushoz tartozó megjegyzések a javítási jelentésen. A nyomtatott javítási jelentésben információk találhatóak a szabálytalanságról és a kapcsolódó szabálytalansági jegyzetekről. A jelentés tartalmazza a javítási információkat, mint például a diagnózis típusát, valamint a kapcsolódó javítási jegyzeteket.
 
 <a name="see-also"></a>Lásd még
 --------
@@ -91,5 +103,7 @@ A **Javítások** lap lehetővé teszi a kijavítandó szabálytalanságok list�
 [Minőségi rendelések beállítása (feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
 [Áru minőségének ellenőrzése (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

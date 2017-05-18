@@ -1,6 +1,6 @@
 ---
 title: "Új feladatútmutatók (2016. február)"
-description: "Ez a wiki a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február)."
+description: "Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február)."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -16,17 +16,21 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 6462951cba3c289368887a037d4b71187f4523df
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d9e6620c1f4c808646e6f5c3b9f5b607c64c51df
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="new-task-guides-february-2016"></a>Új feladatútmutatók (2016. február)
 
-Ez a wiki a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
+[!include[banner](../includes/banner.md)]
+
+
+Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
 
 <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Feladat-útmutatók (2016. február) a Microsoft Dynamics 365 for Operations APQC egyesített könyvtárában
 ---------------------------------------------------------------------------------
@@ -723,5 +727,7 @@ Az APQC Egyesített Könyvtár (2016. február) tartalmazza a Feladat-útmutató
 [Új vagy frissített feladat-útmutatók (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
 
 [Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
+
+
 
 

@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 04e0c066511c1fedf33784944441326201fc2df8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4caef8eb4d11ad5d2ba1ce0e23d869c0b26b5466
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -99,7 +100,7 @@ Következő, a **Költségvetési modellek társítása** lapon hozzárendeli a 
 Következő, a **Költségvetés-ellenőrzési szabályok meghatározása** lapon létre kell hoznia a költségvetés-ellenőrzés számára elérhető pénzügyi dimenziókon alapuló specifikus szabályokat. Például, ha a kiadáson vagy egy részlegre vonatkozó kiadások tartományán van a fókusz, akkor ezen a lapon található beállítások segítségével meghatározhatja és kiszámíthatja azokat a kiadásokat. Minden egyes költségvetés-ellenőrzési szabályra vonatkozóan meghatározhatja a küszöbéréket. 
 
 > [!Important]
-> A költségvetés-ellenőrzés engedélyezve lesz az **Eredmény**, **Költség** **Bevétel, mérleg, forrás, saját tőke** vagy **Eszköz** típus minden fő számlája számára. Ha ez a lap tartalmaz egy olyan szabályt, amelynek üres feltételei vannak, a költségvetés-ellenőrzés engedélyezve lesz az **minden **olyan pénzügyi dimenzió kombináció számára, amelyek tartalmazzák azoknak a típusoknak a fő számláját. Ezért győződjön meg róla, hogy létrehoz-e olyan költségvetés-ellenőrzési szabályokat, amelyek csak a pénzügyi dimenzió kombinációk tartományát szabják meg, ahol a költségvetés-ellenőrzés bekapcsolása fontos.  
+> A költségvetés-ellenőrzés engedélyezve lesz az **Eredmény**, **Költség** **Bevétel, mérleg, forrás, saját tőke** vagy **Eszköz** típus minden fő számlája számára. Ha ez a lap tartalmaz egy olyan szabályt, amelynek üres feltételei vannak, a költségvetés-ellenőrzés engedélyezve lesz az **minden**olyan pénzügyi dimenzió kombináció számára, amelyek tartalmazzák azoknak a típusoknak a fő számláját. Ezért győződjön meg róla, hogy létrehoz-e olyan költségvetés-ellenőrzési szabályokat, amelyek csak a pénzügyi dimenzió kombinációk tartományát szabják meg, ahol a költségvetés-ellenőrzés bekapcsolása fontos.  
 
 ### <a name="select-main-accounts"></a>Főszámlák kiválasztása
 
@@ -124,7 +125,7 @@ Ezenkívül vegye figyelembe, hogy azokat a tranzakciókat a költségvetési t�
 ## <a name="using-budget-control"></a>Költségvetés-ellenőrzés használata
 A költségvetés-ellenőrzés aktiválását követően, a felhasználók költségvetés-ellenőrzési figyelmeztetés és hibaüzenetet kapnak a költségvetés-ellenőrzéshez beállított dokumentumokban és naplókban. Ne feledje, hogy a költségvetés-ellenőrzést beállíthatja úgy, hogy a felhasználók figyelmeztetést kapnak, ha meghaladja a költségvetési alapokat, de továbbra is megerősítheti vagy feladhatja a tranzakciót. A felhasználók a sikertelen költségvetés-ellenőrzés részletes adatait megtekinthetik a **Költségvetés-ellenőrzési hibák és figyelmeztetések** oldalon.   
 
-Erről a lapról a felhasználók a **Költségvetés-ellenőrzési statisztika időszak szerint** lapra léphetnek a költségvetés elérhetőségének részleteinek és a kiválasztott költségvetés-ellenőrzési dimenzióra vonatkozó foglalások megtekintéséhez. Felhasználók beléphetnek a **Költségvetés-ellenőrzési statisztika **lapra az összes költségvetés-ellenőrzésben használt pénzügyi dimenzió kombinációra vonatkozó költségvetés elérhetőségeinek megtekintéséhez. 
+Erről a lapról a felhasználók a **Költségvetés-ellenőrzési statisztika időszak szerint** lapra léphetnek a költségvetés elérhetőségének részleteinek és a kiválasztott költségvetés-ellenőrzési dimenzióra vonatkozó foglalások megtekintéséhez. Felhasználók beléphetnek a **Költségvetés-ellenőrzési statisztika**lapra az összes költségvetés-ellenőrzésben használt pénzügyi dimenzió kombinációra vonatkozó költségvetés elérhetőségeinek megtekintéséhez. 
 
 Ha a költségvetési-ellenőrzés aktív a beszerzési rendelésekre vonatkozóan a költségvetéskezelő használhatja a **Főkönyvi költségvetések és előrejelzések** munkaterületet az összes figyelmeztetéssel és hibával rendelkező jóváhagyásra váró beszerzési rendelés várakozási sorának áttekintéséhez. Ha a költségvetés-kezelő rendelkezik költségvetés átlépési engedéllyel, akkor jóváhagyhat beszerzési rendelést közvetlenül a munkahelyen.    
 

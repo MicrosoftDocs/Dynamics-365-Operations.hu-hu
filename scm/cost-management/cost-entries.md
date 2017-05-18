@@ -3,7 +3,7 @@ title: "Költségbejegyzések"
 description: "Ez a cikk tájékoztat a költségbejegyzésekről és a létrehozásuk idejéről. Egy költségbejegyzés egy olyan rekord, amely feljegyzi egy adott esemény költségét és mennyiségét."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 55f5ee731c40acc40e8fe20c24d4ed707fe2c81a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 341251119304456a89b02c7a8d4af941ea21196d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cost-entries"></a>Költségbejegyzések
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk tájékoztat a költségbejegyzésekről és a létrehozásuk idejéről. Egy költségbejegyzés egy olyan rekord, amely feljegyzi egy adott esemény költségét és mennyiségét.
 
@@ -53,17 +57,22 @@ Az új **Költségbejegyzések** lap lehetővé teszi a mennyiségek és a költ
 -   Néhány nappal a számlaesemény regisztrálását követően a költség 11,00 USD összegre nő. Emiatt a teljes összeg 1100 USD lesz. Egy második bizonylat jön létre az 100 USD értékű eltérés számlázásához.
 -   Néhány nappal később 15,00 USD vegyes költség kerül regisztrálásra a beszerzési rendeléshez a szállítási költségek fedezésére.
 
-| Bizonylat | Dátum       | Hivatkozás      | Szám | Adagazonosító  | Hivatkozási adag | Visszáru adagazonosítója | Mennyiség | Összeg  |
-|---------|------------|----------------|--------|---------|---------------|---------------|----------|---------|
-| 00001   | 2015/01/01 | Beszerzési rendelés | 100001 | 0000101 |               |               | 100,00   | 1000.00 |
-| 00002   | 2015/01/20 | Beszerzési rendelés | 100001 | 0000101 |               |               |          | 100,00  |
-| 00003   | 2015/01/31 | Kiigazítás     | 100001 | 0000101 |               |               |          | 1500   |
+| Bizonylat  | Dátum       | Hivatkozás      | Szám | Adagazonosító  | Mennyiség | Összeg  |
+|---------|------------|----------------|--------|---------|---------------|----|
+| 00001   | 2015/01/01 | Beszerzési rendelés | 100001 | 0000101 | 100,00   | 1000.00 |
+| 00002   | 2015/01/20 | Beszerzési rendelés | 100001 | 0000101 |          | 100,00  |
+| 00003   | 2015/01/31 | Kiigazítás     | 100001 | 0000101 |          | 1500   |
 
-A **Költségtételek** lap lehetővé teszi a dokumentumazonosító és a dátum alapján történő szűréseket. **Megjegyzés:** a költségtételek csak a [költségobjektumok](cost-object.md) vagy a kiadott termékek esetében érhetők el.
+A **Költségtételek** lap lehetővé teszi a dokumentumazonosító és a dátum alapján történő szűréseket. 
+
+> [!NOTE]
+> A költségtételek csak a [költségobjektumok](cost-object.md) vagy a kiadott termékek esetében érhetők el.
 
 <a name="see-also"></a>Lásd még
 --------
 
 [Költségobjektumok](cost-object.md)
+
+
 
 

@@ -3,7 +3,7 @@ title: "Elavult szolgáltatások"
 description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a Dynamics 365 for Operations-ből, vagy eltávolításuk be van tervezve. Olyan funkciókat is tartalmaz, amelyek a Dynamics AX 7.0 kiadásaiban már nem szerepeltek."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,16 +15,20 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: e9ba7239b9ff8b9b97c9dabc06fb2c68760d19d4
-ms.lasthandoff: 03/31/2017
+ms.dyn365.ops.version: Platform update 6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8fbfc8c91c836eb9922f2bf1165ec887d8a0bc8e
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="deprecated-features"></a>Elavult szolgáltatások
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a Dynamics 365 for Operations-ből, vagy eltávolításuk be van tervezve. Olyan funkciókat is tartalmaz, amelyek a Dynamics AX 7.0 kiadásaiban már nem szerepeltek.
 
@@ -474,6 +478,16 @@ Az adatpartíciók az adatok logikus elkülönítését biztosítják a Microsof
 | Felváltotta másik szolgáltatás? | Az új webes ügyfél az asztali képernyő metaadatain és programozási modelljén alapul, amelyeket egy multimédiás webes platform szolgáltatása érdekében módosítottunk. |
 | Érintett modulok             | Mind                                                                                                                                    |
 
+### <a name="direct-database-connection"></a>Közvetlen adatbázis-kapcsolat
+
+A Dynamics AX 2012 R3 rendszerben a Retail Modern pénztár az Enterprise POS rendszerhez hasonló módon, közvetlenül tudott kapcsolódni a csatorna-adatbázishoz. Ez ráadás volt a Retail Modern pénztár Retail Server kiszolgálón keresztül kommunikáló szokásos kommunikációs módja mellett.  
+
+|                              |                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| Megszűnés oka       | A közvetlen adatbázis-kapcsolathoz alacsonyabb szintű biztonsági protokollok voltak szükségesek, és elsődleges használati célja a legmagasabb szintű teljesítmény elérése volt. A Dynamics 365 for Operations teljesítménybeli és biztonsági fejlesztései következtében ez a funkció több problémát okoz, mint amennyit megold. |
+| Felváltotta másik szolgáltatás? | Szám Jelenleg csak a szabványos Retail Server által biztosított kommunikáció támogatott.    |
+| Érintett modulok             | Csatorna-adatbázis/Retail Modern pénztár                                    |
+
 ### <a name="dutch-swift-mt940"></a>Holland SWIFT MT940
 
 |                              |                                                                                                                                                                                                                                       |
@@ -661,8 +675,18 @@ Ez a szolgáltatás lehetővé tette a három alap termékdimenzió egyikének (
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
 | Megszűnés oka       | A Dynamics AX jelenlegi verziója nem támogatja címkék módosítását futtatás alatt. |
-| Felváltotta másik szolgáltatás? | Szám                                                                            |
+| Felváltotta másik szolgáltatás? | Nincs                                                                            |
 | Érintett modulok             | Termékinformációk kezelése                                                |
+
+### <a name="retail-server-connectivity-using-http"></a>Retail Server kapcsolat ellenőrzése HTTP segítségével
+
+A Dynamics AX 2012 R3 rendszerben a Retail Server a HTTP-kommunikáció (nem védett) használatával működött. Ez a szabványos HTTPS-t használó szokásos kommunikáció mellett működött.
+
+|                              |                                                                               |
+|------------------------------|-------------------------------------------------------------------------------|
+| Megszűnés oka       | Új biztonsági óvintézkedések következményeképpen kizárólag a TLS 1.2 (vagy az újabb, ha rendelkezésre áll) protokollt használó biztonságos kommunikáció támogatott. Az önkiszolgáló telepítő automatikusan konfigurálja a számítógépet ehhez a kommunikációs módhoz. |
+| Felváltotta másik szolgáltatás? | Szám Jelenleg csak a szabványos HTTPS által biztosított kommunikáció támogatott.                                                                           |
+| Érintett modulok             | Kiskereskedelmi kiszolgáló                                                |
 
 ### <a name="role-center-pages"></a>Szerepkör főoldalak lapjai
 
@@ -784,6 +808,8 @@ Emberi Erőforrások Bérlistaadatai
 | Megszűnés oka       | Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.                                    |
 | Felváltotta másik szolgáltatás? | Felügyeleti jelentéskészítő (a Dynamics AX jelenlegi verziójában **Pénzügyi jelentéskészítés** megjelöléssel) |
 | Érintett modulok             | Főkönyv                                                                              |
+
+
 
 
 

@@ -16,10 +16,11 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
-ms.openlocfilehash: dd27276533276181ea9a7cb4244ec3b401882370
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d2e7338675a77a2c9589179365b785c31e51b616
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---

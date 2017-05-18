@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 88cdf531b6da615034f9982d3503b9add0100479
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 447ba56a279a29392b00119730c3594fa4ea80f6
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,7 +43,7 @@ A költséggazdálkodás szorosan kapcsolódik szervezete pénzgazdálkodásáho
 
 ### <a name="per-diems"></a>Napidíjak
 
-Meg kell adnia a szervezete által biztosított alkalmazotti napidíjakat. Mivel a napidíjak jellemzően olyan költségek fedezésére szolgálnak, mint az étkezés, a szállás és más járulékos költségek, tud létrehozni a szervezete által térített napidíjakra vonatkozó szabályokat. A napidíj alapja a dátum, az utazási helyszín, vagy a kettő kombinációja lehet. Napidíjszabályt létrehozásakor be tudja állítani, hogy a napidíj egy részét visszatartsa a rendszer, ha a dolgozó ingyenes étkezésben vagy egyéb szolgáltatásban részesül. Emellett tud megadni napidíjszinteket is, melyek a dolgozó útjára alkalmazható napidíjjal érintett órák minimális és maximális számát szabályozzák. **Döntések: **
+Meg kell adnia a szervezete által biztosított alkalmazotti napidíjakat. Mivel a napidíjak jellemzően olyan költségek fedezésére szolgálnak, mint az étkezés, a szállás és más járulékos költségek, tud létrehozni a szervezete által térített napidíjakra vonatkozó szabályokat. A napidíj alapja a dátum, az utazási helyszín, vagy a kettő kombinációja lehet. Napidíjszabályt létrehozásakor be tudja állítani, hogy a napidíj egy részét visszatartsa a rendszer, ha a dolgozó ingyenes étkezésben vagy egyéb szolgáltatásban részesül. Emellett tud megadni napidíjszinteket is, melyek a dolgozó útjára alkalmazható napidíjjal érintett órák minimális és maximális számát szabályozzák. **Döntések:**
 
 -   Az első és utolsó napra érvényes alapértelmezett napidíjszabályok:
     -   Mi az az alkalmazott által benyújtott minimális napi óraszám, amelyre már jár a napidíj?
@@ -124,10 +125,10 @@ A költségekhez kapcsolódó adók kapcsán meg kell adnia, hogy mit ad hozzá,
 -   A költségösszegek tartalmazzák az áfát?
 -   Engedélyezett a költség kapcsán az adó-visszaigénylés?
 
-Kérjük, vegye figyelembe, hogy amennyiben a főkönyv tervezése során az USA-beli áfa és adózási szabályok használata mellett döntött, melyet az ** Áfára vonatkozó adózási szabályok alkalmazása** mező Igen értékének kiválasztása útján tud megtenni, úgy nem tudja engedélyezni az adó-visszaigénylést a költségek kapcsán.
+Kérjük, vegye figyelembe, hogy amennyiben a főkönyv tervezése során az USA-beli áfa és adózási szabályok használata mellett döntött, melyet az **Áfára vonatkozó adózási szabályok alkalmazása** mező Igen értékének kiválasztása útján tud megtenni, úgy nem tudja engedélyezni az adó-visszaigénylést a költségek kapcsán.
 
 ## <a name="policies"></a>Szabályzatok
-Tud létrehozni olyan költségjelentési irányelveket, melyek segítségével a szervezete időt és pénzt takarít meg, amikor az alkalmazottak rendezik a vállalati költségeket. Az irányelvek biztosítják, hogy az alkalmazottak betartsák a költségkertet, hogy megadjanak minden szükséges információt, illetve hogy csak a szükséges mértékű összeget költsék el. Az alábbi döntéseket kell meghoznia minden egyes, Ön által létrehozott költségjelentés irányelv és költségjelentés jóváhagyási irányelv kapcsán. **Döntések: **
+Tud létrehozni olyan költségjelentési irányelveket, melyek segítségével a szervezete időt és pénzt takarít meg, amikor az alkalmazottak rendezik a vállalati költségeket. Az irányelvek biztosítják, hogy az alkalmazottak betartsák a költségkertet, hogy megadjanak minden szükséges információt, illetve hogy csak a szükséges mértékű összeget költsék el. Az alábbi döntéseket kell meghoznia minden egyes, Ön által létrehozott költségjelentés irányelv és költségjelentés jóváhagyási irányelv kapcsán. **Döntések:**
 
 -   Mi az irányelv neve?
 -   Mi a költségirányelv célja?

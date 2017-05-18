@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: fabaacbc7187b38a1745c2139a9eb7760f2be987
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a0a105ade7e47d7c554d62ee112ed03437bb7521
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -54,10 +55,10 @@ A Képernyőelrendezés-tervező segítségével grafikusan hozhatja létre a k�
 5.  A telepítés befejezése után adja meg a Dynamics 365 for Operations-felhasználónevét és jelszavát, majd kattintson a **Bejelentkezés** gombra a tervező indításához.
 6.  Miután a belépő adatai hitelesítésre kerültek és a tervező elindul, megkezdheti a nyugta formátum tervezését vagy a már meglevő módosítását.
 7.  Az űrlap elemeinek létrehozásához válassza ki a **Fejléc**, a **Sorok** vagy a **Lábléc** szekciót, majd húzza a szekcióban található egyik elemet a munkaterületre. A legtöbb elem változókat tartalmaz, amelyekbe a program automatikusan beírja az adatbázis adatait. Más elemek – például a **Szöveg** elem – lehetővé teszik egyéni szöveg nyomtatását a nyugtára. **Megjegyzés:** A terület jobb alsó sarkában lévő szám módosításával meghatározhatja, hogy az adott szekció hány sorra terjedjen ki. Ha egyszerűbbé szeretné tenni a szekció módosítását, akkor növelje meg a szakasz méretét a szekció alján látható méretező sáv segítségével. A szekció munkaterületen látható magassága nem befolyásolja a sorok számát a tényleges nyugtán.
-8.  Miután az elemet a munkaterületre húzta, adja meg a részre vonatkozó tulajdonságokat az oldal alján található **Objektumadatok **ablaktáblában. Adjon meg egyet vagy többet a következő beállítások közük:
+8.  Miután az elemet a munkaterületre húzta, adja meg a részre vonatkozó tulajdonságokat az oldal alján található **Objektumadatok**ablaktáblában. Adjon meg egyet vagy többet a következő beállítások közük:
     -   **Igazítás** – A mező igazításának beállítása **Balra** vagy **Jobbra**.
     -   **Kitöltő karakter** – Az üres hely karakter megadása. Alapértelmezés szerint a program üres szóközt használ, de bármilyen karaktert meg lehet adni.
-    -   **Előtag** – A mező elején megjelenítendő értéket ide írhatja be. Ez a beállítás csak az elrendezés **Sorok **szekciójára vonatkozik.
+    -   **Előtag** – A mező elején megjelenítendő értéket ide írhatja be. Ez a beállítás csak az elrendezés **Sorok**szekciójára vonatkozik.
     -   **Karakterek** – Adja meg a mezőbe írható karakterek maximum számát. Ha a mezőben a szöveg hosszabb, mint a megadott karakterek száma, a szöveg csonkul, hogy elférjen a mezőben.
     -   **Változó** – Ez a jelölőnégyzet automatikusan be van jelölve, ha az elem tartalmaz változót és nem testre szabható.
     -   **Betűtípus** – A betűk stílusának beállítása **Normál** vagy **Félkövér** lehet. A félkövér betűk kétszer annyi helyet foglalnak, mint a normál betűk. Ezért előfordulhat, hogy néhány karaktert levág a program.
@@ -67,7 +68,7 @@ A Képernyőelrendezés-tervező segítségével grafikusan hozhatja létre a k�
 A nyugtaprofilok közvetlenül a nyomtatókhoz vannak rendelve a hardver profilon keresztül.
 
 1.  A hardverprofil megnyitásához kattintson a **Kiskereskedelem és forgalom** &gt; **Csatorna beállítások** &gt; **Pénztár beállítások** &gt; **Pénztár profilok** &gt; **Hardverprofil** gombra.
-2.  Válassza ki a nyomtatót, majd a **Nyugta profil ** mezőben rendelje hozzá a jegyzékben használandó nyugtaprofilt.
+2.  Válassza ki a nyomtatót, majd a **Nyugta profil** mezőben rendelje hozzá a jegyzékben használandó nyugtaprofilt.
 
 **Megjegyzés:** Két nyomtató használata esetén egy nyomtató használható standard 40-oszlopos hő-papiros nyugta nyomtatására. A második nyomtató általában a teljes oldalas, több információt leíró nyugta nyomtatására szolgál. Ezek a nyugta típusok vásárlói rendelés nyugtákat és vevői számlákat tartalmaznak.
 
