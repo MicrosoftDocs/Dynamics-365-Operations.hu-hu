@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 19eeee753c15cf2670948ce2c615a112813c16ad
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2112d6dd45c76af3cea75a4e06b06f9577c572ad
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="master-planning-and-multisite-functionality"></a>Az alaptervezés és a többhelyes funkció
+
+[!include[banner](../includes/banner.md)]
+
 
 Az Alaptervezés figyelembe veszi a webhely beállításait és a raktár készletdimenziót. 
 
@@ -37,7 +41,7 @@ Amikor egy dimenzió kötelező, akkor a dimenzióértéket minden készlettranz
 
 Ha a raktár megadása nem kötelező, akkor előfordulhat, hogy a kezdeti igényből nem határozható meg a raktár. A tervezőmotornak ilyenkor a cikkre, az egyes raktárakra, valamint a rendeléssorra meghatározott beállítások alapján kell meghatároznia, hogy melyik raktárat használja.
 
-A következő wiki cikkek leírják, hogyan működik a tervezési motor, amikor különböző beállítások vannak meghatározva, hogy meghatározzák, hogy melyik raktárak legyenek felhasználva.
+A következő témakörök bemutatják, hogy hogyan határozza meg a tervezőmotor a raktárat különböző beállításoknál.
 
 [Alaptervezés - hely és raktár fedezet, a raktár kötelező](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
@@ -48,5 +52,7 @@ A következő wiki cikkek leírják, hogyan működik a tervezési motor, amikor
 [Alaptervezés - helyfedezet, a raktár nem kötelező](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Alaptervezés - Anyagjegyzék verzió meghatározása](master-plan-bom-version-determined.md)
+
+
 
 

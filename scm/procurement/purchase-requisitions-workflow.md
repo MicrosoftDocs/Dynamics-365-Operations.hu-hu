@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 7c5986dbce88a1cb704dddfc2afbcf2ac8c4b0dd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2a39054e5736c1162634cf9b1dd3f7e0c0c4ec16
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -104,7 +105,7 @@ Nem kell megjelölnie kiadás-ellenőri konfigurációt. Ehelyett a munkafolyama
 
 Kiadásellenőröket a **Beszerzési igénylési kiadásellenőrök** oldalon tud beállítani. Hozzon létre kiadás-ellenőri konfigurációt, és adjon meg értéket a szervezetéhez tartozó összes jogi személyhez. A projekthez rendelt igénylések esetén be tudja állítani az igénylések ellenőrzéséért felelős szerepkört: Projektmenedzser, Projektfelügyelő vagy a Projekt értékesítési menedzsere. A kiadások ahhoz a felhasználóhoz lesznek irányítva, aki a meghatározott szerepkörhöz van hozzárendelve. A kiadást elküldheti a pénzügyi dimenzió tulajdonosának is a **Szervezeti felosztások** lapon található megfelelő pénzügyi dimenzió bejelölésével.  
 
-A valamely munkafolyamatban beállított kiadásellenőrök használatához be kell állítania a **Résztvevő típusa** lehetőséget** Kiadások résztvevői** értékre kell állítania az érintett munkafolyamat összetevőre vonatkozó** Hozzárendelési** jellemzők között.
+A valamely munkafolyamatban beállított kiadásellenőrök használatához be kell állítania a **Résztvevő típusa** lehetőséget**Kiadások résztvevői** értékre kell állítania az érintett munkafolyamat összetevőre vonatkozó**Hozzárendelési** jellemzők között.
 
 <a name="see-also"></a>Lásd még
 --------

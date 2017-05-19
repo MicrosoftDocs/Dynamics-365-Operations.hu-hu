@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 1666691ec122e65128b74056817a0c40551f49b5
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c85c90feb7f314db6b47f64402f8b9455ed53d9d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -67,7 +68,7 @@ Egy naptár esetében a munkanapok és a munkaórák beállításához, vagy új
 A WBS teljes költségbecslési kapacitásának kihasználásához be kell állítania a dolgozók számára a költségeket és az eladási árakat, a munkakategóriákat, a kiadásokat és a díjakat, illetve a cikkeket.
 
 -   A költség és a munka eladási árának, illetve a kiadás és a díjkategória beállításához kattintson a következőkre: **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Árak**.
--   A cikkek költségének és eladási árának beállításához használja a **Kereskedelmi megállapodások **oldalt minden egyes cikk esetében, a **Felszabadított termékek** listalapon, a Termékinformációk kezelésénél.
+-   A cikkek költségének és eladási árának beállításához használja a **Kereskedelmi megállapodások**oldalt minden egyes cikk esetében, a **Felszabadított termékek** listalapon, a Termékinformációk kezelésénél.
 
 ## <a name="creating-a-wbs"></a>WBS létrehozása
 A WBS létrehozása három tevékenységből áll:

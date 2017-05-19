@@ -16,10 +16,11 @@ ms.search.region: global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 415eca2219cdba3da96c1cb54bea8af81fd50119
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 10b96749fd8bfaa1ae98f7f5a0fa3f7dac2d16bb
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -53,7 +54,7 @@ A következő példában a főkönyvben több szállítói számla van rögzítv
 
 |             |                  |              |                 |           |            |
 |-------------|------------------|--------------|-----------------|-----------|------------|
-| **Bizonylat ** | **Számla típusa** | **Számla**  | **Leírás** | **Tartozik** | **Követel** |
+| **Bizonylat** | **Számla típusa** | **Számla**  | **Leírás** | **Tartozik** | **Követel** |
 | GNJL001     | Szállító           | 1001         | INV1            |           | 100,00     |
 | GNJL001     | Szállító           | 1001         | INV2            |           | 200,00     |
 | GNJL001     | Szállító           | 1001         | INV3            |           | 300,00     |
@@ -66,7 +67,7 @@ A feladást követően egy bizonylat jön létre.
 
 |             |              |                  |                                    |
 |-------------|--------------|------------------|------------------------------------|
-| **Bizonylat ** | **Számla**  | **Feladás típusa** | **Összeg a tranzakció pénznemében.** |
+| **Bizonylat** | **Számla**  | **Feladás típusa** | **Összeg a tranzakció pénznemében.** |
 | GNJL001     | 606300-001-- | Főkönyvi napló   | 50,00                              |
 | GNJL001     | 606300-002-- | Főkönyvi napló   | 50,00                              |
 | GNJL001     | 606300-003-- | Főkönyvi napló   | 200,00                             |
@@ -81,7 +82,7 @@ A példa segítségével elemezhető az egy bizonylatos megoldás hatása a lefe
 
 |             |              |                      |           |            |
 |-------------|--------------|----------------------|-----------|------------|
-| **Bizonylat ** | **Számla**  | **Feladás típusa**     | **Tartozik** | **Követel** |
+| **Bizonylat** | **Számla**  | **Feladás típusa**     | **Tartozik** | **Követel** |
 | APPAYM001   | 200110-001-  | Szállítói egyenleg       | 197.00    |            |
 | APPAYM001   | 110110-001-  | Bank                 |           | 197.00     |
 | 14000056    | 520200-001-- | Szállító készpénzfizetési engedménye |           | 0.25       |
@@ -94,7 +95,7 @@ Ha a felhasználó elégedetlen azzal, hogy a készpénzfizetési engedményt az
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat ** | **Számla típusa** | **Számla**  | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
+| **Bizonylat** | **Számla típusa** | **Számla**  | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | GNJL001     | Szállító           | 1001         | INV1            |           | 100,00     | Főkönyv          | &lt;üres&gt;      |
 | GNJL001     | Főkönyv           | 606300-001-- | INV1            |   50,00   |            | Főkönyv          | &lt;üres&gt;:      |
 | GNJL001     | Főkönyv           | 606300-002-- | INV1            |   50,00   |            | Főkönyv          | &lt;üres&gt;:      |
@@ -105,7 +106,7 @@ Az INV2 kifizetésekor a következő bejegyzés történik. Figyelje meg, hogy a
 
 |             |              |                      |           |            |
 |-------------|--------------|----------------------|-----------|------------|
-| **Bizonylat ** | **Számla**  | **Feladás típusa**     | **Tartozik** | **Követel** |
+| **Bizonylat** | **Számla**  | **Feladás típusa**     | **Tartozik** | **Követel** |
 | APPAYM001   | 200110-001-  | Szállítói egyenleg       | 197.00    |            |
 | APPAYM001   | 110110-001-  | Bank                 |           | 197.00     |
 | 14000056    | 520200-003-- | Szállító készpénzfizetési engedménye |           | 3,00       |
@@ -115,15 +116,15 @@ Az INV2 kifizetésekor a következő bejegyzés történik. Figyelje meg, hogy a
 
 |             |                  |             |                 |           |            |                  |              |
 |-------------|------------------|-------------|-----------------|-----------|------------|------------------|--------------|
-| **Bizonylat ** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Számla típusa** | **Számla**  |
+| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Számla típusa** | **Számla**  |
 | GNJL001     | Szállító           | 1001        | INV1            |           | 100,00     | Főkönyv           | 606300-001-- |
 | GNJL001     | Szállító           | 1001        | INV2            |           | 200,00     | Főkönyv           | 606300-002-- |
 
-A következő példában a főkönyvben több szállítói számla van rögzítve egy bizonylaton a **Főkönyvi napló **oldalon. Ezek a számlák több számladimenzión vannak elosztva. A feladást követően egy bizonylat jön létre.
+A következő példában a főkönyvben több szállítói számla van rögzítve egy bizonylaton a **Főkönyvi napló**oldalon. Ezek a számlák több számladimenzión vannak elosztva. A feladást követően egy bizonylat jön létre.
 
 |             |              |                  |                                          |                                         |
 |-------------|--------------|------------------|------------------------------------------|-----------------------------------------|
-| **Bizonylat ** | **Számla**  | **Feladás típusa** | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
+| **Bizonylat** | **Számla**  | **Feladás típusa** | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
 | GNJL001     | 606300-001-- | Főkönyvi napló   | 100,00                                   | 114.00                                  |
 | GNJL001     | 606300-002-- | Főkönyvi napló   | 200,00                                   | 228.00                                  |
 | GNJL001     | 200110-001-  | Szállítói egyenleg   | -100,00                                  | -114.00                                 |
@@ -135,7 +136,7 @@ A példa segítségével elemezhető az egy bizonylatos megoldás hatása a lefe
 
 |             |             |                    |                                          |                                         |
 |-------------|-------------|--------------------|------------------------------------------|-----------------------------------------|
-| **Bizonylat ** | **Számla** | **Feladás típusa**   | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
+| **Bizonylat** | **Számla** | **Feladás típusa**   | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
 | APPAYM001   | 200110-001- | Szállítói egyenleg     | 200,00                                   | 230.00                                  |
 | APPAYM001   | 110110-001- | Bank               | -200,00                                  | -230.00                                 |
 | 14000056    | 801300-001- | Árfolyamveszteség | 0,00                                     | 0.67                                    |
@@ -146,7 +147,7 @@ Ha a felhasználó elégedetlen azzal, hogy az árfolyamveszteséget az eredeti 
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat ** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
+| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | GNJL002     | Szállító           | 1001        | INV1            |           | 100,00     | Főkönyv          | 606300-001--       |
 | GNJL003     | Szállító           | 1001        | INV2            |           | 200,00     | Főkönyv          | 606300-002--       |
 
@@ -154,7 +155,7 @@ Az INV2 kifizetésekor a következő bejegyzés történik. Figyelje meg, hogy a
 
 |             |             |                    |                                          |                                         |
 |-------------|-------------|--------------------|------------------------------------------|-----------------------------------------|
-| **Bizonylat ** | **Számla** | **Feladás típusa**   | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
+| **Bizonylat** | **Számla** | **Feladás típusa**   | **Összeg a tranzakció pénznemében (EUR)** | **Összeg könyvelési pénznemben (USD)** |
 | APPAYM001   | 200110-001- | Szállítói egyenleg     | 200,00                                   | 230.00                                  |
 | APPAYM001   | 110110-001- | Bank               | -200,00                                  | -230.00                                 |
 | 14000056    | 801300-002- | Árfolyamveszteség | 0,00                                     | 2.00                                    |
@@ -179,14 +180,14 @@ Ezután a felhasználó átviszi az ACME-től esedékes egyenleget a biztosító
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat ** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
+| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | ARPAYM001   | Vevő         | ACME        | Átvitel        |           | 100,00     | Vevő        | Biztosítás          |
 
 Figyelje meg, hogy fenti bejegyzést egy bizonylat tartalmazza. Ez a bizonylat két vevőrekordot tartalmaz. A következő bizonylat a fenti főkönyvi bejegyzés feladásakor jön létre.
 
 |             |             |                  |                                    |
 |-------------|-------------|------------------|------------------------------------|
-| **Bizonylat ** | **Számla** | **Feladás típusa** | **Összeg a tranzakció pénznemében.** |
+| **Bizonylat** | **Számla** | **Feladás típusa** | **Összeg a tranzakció pénznemében.** |
 | ARPAYM001   | 130100-002- | Vevői egyenleg | 100,00                             |
 | ARPAYM001   | 130100-002- | Vevői egyenleg | -100,00                            |
 
@@ -194,7 +195,7 @@ Ezután tegyük fel, hogy kifizetés érkezik 98,00 értékben a Biztosítás ve
 
 |             |             |                  |           |            |
 |-------------|-------------|------------------|-----------|------------|
-| **Bizonylat ** | **Számla** | **Feladás típusa** | **Tartozik** | **Követel** |
+| **Bizonylat** | **Számla** | **Feladás típusa** | **Tartozik** | **Követel** |
 | ARPAYM002   | 110110-002- | Bank             | 98.00     |            |
 | ARPAYM002   | 130100-002- | Vevői egyenleg |           | 98.00      |
 
@@ -202,7 +203,7 @@ A készpénzfizetési engedményhez kapcsolódó bizonylaton a pénzügyi dimenz
 
 |             |             |                        |           |            |
 |-------------|-------------|------------------------|-----------|------------|
-| **Bizonylat ** | **Számla** | **Feladás típusa**       | **Tartozik** | **Követel** |
+| **Bizonylat** | **Számla** | **Feladás típusa**       | **Tartozik** | **Követel** |
 | ARP-00001   | 403300-002- | Vevő készpénzfizetési engedménye | 2.00      |            |
 | ARP-00001   | 130100-002- | Vevői egyenleg       |           | 2.00       |
 
@@ -210,7 +211,7 @@ Ha a felhasználó elégedetlen a készpénzfizetési engedmény pénzügyi dime
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat ** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
+| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | ARPAYM001   | Vevő         | ACME        |                 |           | 100,00     | Főkönyv          | 401100-002-023-    |
 | ARPAYM002   | Vevő         | Biztosítás   |                 | 100,00    |            | Főkönyv          | 401100-002-023-    |
 
@@ -218,7 +219,7 @@ Ez azt jelenti, hogy amikor a Biztosítás vevő kifizet 98,00 összeget az ARPA
 
 |             |             |                  |           |            |
 |-------------|-------------|------------------|-----------|------------|
-| **Bizonylat ** | **Számla** | **Feladás típusa** | **Tartozik** | **Követel** |
+| **Bizonylat** | **Számla** | **Feladás típusa** | **Tartozik** | **Követel** |
 | ARPAYM003   | 110110-002- | Bank             | 98.00     |            |
 | ARPAYM003   | 130100-002  | Vevői egyenleg |           | 98.00      |
 
@@ -226,7 +227,7 @@ A készpénzfizetési engedményhez kapcsolódó bizonylaton a rendszer az ARPAY
 
 |             |                 |                        |           |            |
 |-------------|-----------------|------------------------|-----------|------------|
-| **Bizonylat ** | **Számla**     | **Feladás típusa**       | **Tartozik** | **Követel** |
+| **Bizonylat** | **Számla**     | **Feladás típusa**       | **Tartozik** | **Követel** |
 | ARP-00001   | 403300-002-023- | Vevő készpénzfizetési engedménye | 2.00      |            |
 | ARP-00001   | 130100-002-     | Vevői egyenleg       |           | 2.00       |
 
@@ -239,14 +240,14 @@ Illusztrációként tegyük fel, hogy az 1001 jelzetű szállító és az USA-00
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat ** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
+| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | APPAYM001   | Szállító           | 1001        | Nettóérték-számítás         |  75,00    |            | Vevő        | US-008             |
 
 A tranzakció jövőbeli kiegyenlítésével kapcsolatos nemkívánatos problémák elkerülése érdekében a naplóba több bizonylatot kell bevinni a nettóérték-számítási tranzakció rögzítésére. Figyelje meg, hogy a vevői és szállítói egyenlegek ellentételezése egyetlen elszámolószámlával történik egyetlen, több vevői és szállítói egyenleget tartalmazó bizonylat használatának az elkerülése érdekében.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bizonylat ** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
+| **Bizonylat** | **Számla típusa** | **Számla** | **Leírás** | **Tartozik** | **Követel** | **Ellenszámla típusa** | **Ellenszámla** |
 | 001         | Vevő         | US-008      |                 |           |  75,00     | Főkönyv          | 999999---          |
 | 002         | Szállító           | 1001        |                 |  75,00    |            | Főkönyv          | 999999---          |
 

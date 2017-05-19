@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: d585ae0716a4bd9c3531e8639cd7c6b3cab780ac
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c8947f9335b3a2de83ab00bad1043ee14d35f2c8
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -57,8 +58,8 @@ A szállítói együttműködés általános beállításait a Dynamics 365 for 
 
 Mielőtt felhasználói fiókokat hozna létre egy külső szállító számára, konfigurálnia kell a szállítókódot a szállítói együttműködés engedélyezése érdekében. Ehhez állítsa az **Együttműködés aktiválása** mezőt aktívra a **Szállítók** lap **Általános** lapján. Két lehetőség közül választhat:
 
--   **Aktív (beszerzési rendelés automatikus megerősítése) **– A rendszer automatikusan megerősíti a beszerzési rendeléseket, amikor a szállító módosítások nélkül fogadja el azokat.
--   **Aktív (beszerzési rendelés nincs automatikusan megerősítve) **– A beszerzési rendeléseket szervezetének manuálisan kell jóváhagynia, miután a szállító elfogadta azokat.
+-   **Aktív (beszerzési rendelés automatikus megerősítése)**– A rendszer automatikusan megerősíti a beszerzési rendeléseket, amikor a szállító módosítások nélkül fogadja el azokat.
+-   **Aktív (beszerzési rendelés nincs automatikusan megerősítve)**– A beszerzési rendeléseket szervezetének manuálisan kell jóváhagynia, miután a szállító elfogadta azokat.
 
 ### <a name="decide-whether-you-want-the-vendor-to-see-price-information"></a>Eldöntheti, hogy engedélyezi-e a szállítónak az árakkal kapcsolatos adatok megtekintését.
 
@@ -142,7 +143,7 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 | A szállító egy **Elfogadva módosításokkal** választ küld.                  | Az állapot továbbra is **Külső ellenőrzés alatt**.                                                                                                                  |
 | Elvégezhet néhány módosítást, amit a szállító kér.                  | Az állapot **Jóváhagyva** állapotra módosul.                                                                                                                        |
 | A beszerzési rendelés új verzióját küldi el a szállítónak.                        | Egy új verziót regisztrálnak a szállítói együttműködési felületen, és a rendelés állapota **Külső ellenőrzés alatt** állapotra módosul.                                      |
-| A szállító elfogadja a beszerzési rendelés új verzióját.                            | Az állapot továbbra is **Külső ellenőrzés alatt ** lesz kivéve, ha szállító fiókjának beállítása automatikusan **Megerősítve** állapotra vált a beszerzési rendelés elfogadásakor. |
+| A szállító elfogadja a beszerzési rendelés új verzióját.                            | Az állapot továbbra is **Külső ellenőrzés alatt** lesz kivéve, ha szállító fiókjának beállítása automatikusan **Megerősítve** állapotra vált a beszerzési rendelés elfogadásakor. |
 
 A szállítóknak nem kell jóváhagyniuk a beszerzési rendelést a szállítói együttműködési felületen. Küldhetnek email üzenetet, illetve egyéb csatornákon keresztül is kommunikálhatják a beszerzési rendelés elfogadását. Ezután a rendelést manuálisan is jóváhagyhatja a Dynamics 365 for Operations rendszerben. Ebben az esetben egy figyelmeztetést fog kapni, ami jelzi, hogy a rendelés jóvá lesz hagyva annak ellenére is, hogy nincs válasz a szállítótól. A beszerzési rendelés ezután megjelenik a jóváhagyási előzményekben úgy, mint egy megnyitott rendelés, amelyre nem érkezett válasz. A szállító többé nem tudja majd se elfogadni, se visszautasítani a beszerzési rendelést.  
 

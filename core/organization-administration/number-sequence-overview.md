@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a812c93a13fd36f44e659c9976099af62793098f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ce03d3b55ecdc05f70a36762f7de49b3018b6451
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Példák a számsorozatokra
 A következő példák bemutatják, hogyan hozhat létre számsorozat-formátumokat szegmensekből. A példákban azt is láthatja, milyen hatása van a hatókörszegmenseknek.
 ### <a name="expense-report-numbers"></a>Költségjelentésszámok
 
-A következő példában költségjelentésszámokat állítunk be egy **CS** nevű jogi személyhez. **Terület: **Utazás és költségek **Hivatkozás: **A költségjelentés száma **Hatókör: **Jogi személy **Jogi személy: **CS
+A következő példában költségjelentésszámokat állítunk be egy **CS** nevű jogi személyhez. **Terület:**Utazás és költségek **Hivatkozás:**A költségjelentés száma **Hatókör:**Jogi személy **Jogi személy:**CS
 | Szegmensek  | Szegmens típusa | Érték     |
 |-----------|--------------|-----------|
 | 1. szegmens | Jogi személy | CS        |
@@ -49,7 +50,7 @@ A következő példában költségjelentésszámokat állítunk be egy **CS** ne
 
 ### <a name="sales-order-numbers"></a>Értékesítési rendelések számai
 
-A következő példában szereplő értékesítésirendelés-számokat a **CEU** vállalatazonosítóhoz hoztuk létre. **Terület: **Értékesítés **Hivatkozás: **Értékesítési rendelés **Hatókör: **Vállalat **Vállalat **CEU
+A következő példában szereplő értékesítésirendelés-számokat a **CEU** vállalatazonosítóhoz hoztuk létre. **Terület:**Értékesítés **Hivatkozás:**Értékesítési rendelés **Hatókör:**Vállalat **Vállalat**CEU
 | Szegmensek  | Szegmens típusa | Érték    |
 |-----------|--------------|----------|
 | 1. szegmens | Állandó     | SO-      |
@@ -59,7 +60,7 @@ A következő példában szereplő értékesítésirendelés-számokat a **CEU**
 
 ### <a name="purchase-requisition-numbers"></a>Beszerzési igénylések számai
 
-A következő példában szereplő beszerzésiigénylés-számok a teljes szervezeti szintre vonatkoznak. **Terület: **beszerzés **Hivatkozás: **beszerzési igénylés **Hatókör: **megosztott
+A következő példában szereplő beszerzésiigénylés-számok a teljes szervezeti szintre vonatkoznak. **Terület:**beszerzés **Hivatkozás:**beszerzési igénylés **Hatókör:**megosztott
 | Szegmensek  | Szegmens típusa | Érték    |
 |-----------|--------------|----------|
 | 1. szegmens | Állandó     | Besz      |

@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 60abaa69debd891b2fe2dd98184c0dab50b0bf9f
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 26ad7fb0e9371b8e1d45d61f2348241c6aca16b9
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -90,7 +91,7 @@ Az alapértelmezett rendelésbeállítási szabályok rangsorolást is tartalmaz
 
 ### <a name="default-order-settings-for-released-products"></a>Alapértelmezett rendelésbeállítások kiadott termékekhez
 
-Egyedi kiadott termékek esetében általános rendelési beállításokat vagy helyspecifikus rendelésbeállításokat határozhat meg. Az általános rendelésbeállításokhoz mindig 0-ás helyezés tartozik. Ha új értékesítési, beszerzési és készletre vonatkozó rendelésbeállítások állít be együtt, egyszerre, ajánlott, hogy a **Részletes nézetet** használja az **Alapértelmezett rendelésbeállítások **oldalon. Ahhoz, hogy a Részletes nézetre váltson, kövesse ezt az elérési útvonalat: **Beállítások** műveleti ablak &gt; **Lap beállításai** &gt; **Nézet megváltoztatása** &gt; **Részletes nézet**.
+Egyedi kiadott termékek esetében általános rendelési beállításokat vagy helyspecifikus rendelésbeállításokat határozhat meg. Az általános rendelésbeállításokhoz mindig 0-ás helyezés tartozik. Ha új értékesítési, beszerzési és készletre vonatkozó rendelésbeállítások állít be együtt, egyszerre, ajánlott, hogy a **Részletes nézetet** használja az **Alapértelmezett rendelésbeállítások**oldalon. Ahhoz, hogy a Részletes nézetre váltson, kövesse ezt az elérési útvonalat: **Beállítások** műveleti ablak &gt; **Lap beállításai** &gt; **Nézet megváltoztatása** &gt; **Részletes nézet**.
 
 ### <a name="site-specific-order-settings"></a>Helyspecifikus rendelésbeállítások
 
@@ -149,9 +150,9 @@ A rendszer kétszer bejárja a szabálykészletet annak érdekében, hogy meghat
 
 A 0-ás helyezésű szabály biztonsági hálóként szolgál. Ha nem található más szabály, a 0-ás szabály alapértelmezett rendelési beállításai kerülnek felhasználásra. 
 
-Mivel a helyezési szám ennyire fontos, az **Alapértelmezett rendelésbeállítások **műveletpanelén található egy olyan funkció, amellyel felfelé vagy lefelé lehet mozgatni és át lehet számozni a szabályokat úgy, hogy a köztük lévő lépésköz mindig 10. 
+Mivel a helyezési szám ennyire fontos, az **Alapértelmezett rendelésbeállítások**műveletpanelén található egy olyan funkció, amellyel felfelé vagy lefelé lehet mozgatni és át lehet számozni a szabályokat úgy, hogy a köztük lévő lépésköz mindig 10. 
 
-Egy kiadott termékhez létrehozott szabályok száma nagy lehet. Ahhoz, hogy jobban meg lehessen érteni, hogy egy-egy szabály miket ír felül, és miért van rá szükség, a **Rács nézet** használatát javasoljuk az ** Alapértelmezett rendelésbeállítások** oldalon. A Rács nézet engedélyezéséhez kövesse ezt az elérési útvonalat: **Lehetőségek** műveleti ablak &gt; **Oldalbeállítások** &gt; **Nézet megváltoztatása** &gt; **Rácsnézet**. A rácson megjelenő oszlopok száma nagy lehet, különösen az értékesítésre és a készletre vonatkozó lapok esetében. A rácsban látható oszlopok számának korlátozásához az oszlopok csoportjait el lehet rejteni vagy láthatóvá lehet tenni az **Alapértelmezett rendelésbeállítások** &gt; **Oszlop megjelenítése** menüben lévő gombok segítségével.
+Egy kiadott termékhez létrehozott szabályok száma nagy lehet. Ahhoz, hogy jobban meg lehessen érteni, hogy egy-egy szabály miket ír felül, és miért van rá szükség, a **Rács nézet** használatát javasoljuk az **Alapértelmezett rendelésbeállítások** oldalon. A Rács nézet engedélyezéséhez kövesse ezt az elérési útvonalat: **Lehetőségek** műveleti ablak &gt; **Oldalbeállítások** &gt; **Nézet megváltoztatása** &gt; **Rácsnézet**. A rácson megjelenő oszlopok száma nagy lehet, különösen az értékesítésre és a készletre vonatkozó lapok esetében. A rácsban látható oszlopok számának korlátozásához az oszlopok csoportjait el lehet rejteni vagy láthatóvá lehet tenni az **Alapértelmezett rendelésbeállítások** &gt; **Oszlop megjelenítése** menüben lévő gombok segítségével.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Specifikus rendelésbeállítások kiadott termékváltozatokhoz
 

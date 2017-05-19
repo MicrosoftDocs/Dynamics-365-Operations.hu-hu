@@ -3,7 +3,7 @@ title: "FIFO tényleges értékkel és jelöléssel"
 description: "A FIFO-elv (First in, First out) egy készletmodell, amelyben az elsőként bevételezett cikkek kerülnek először kiadásra. A készletből történő pénzügyi kiadások a készlettranzakciók pénzügyi dátuma alapján az első pénzügyi készletbevételezésekkel vannak kiegyenlítve."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18 - 57 - 00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8e3d189fc4dbc5c747a3473d3a221c739c323050
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b0be852bde33e8dfc82ceb42dd98be10537f318d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO tényleges értékkel és jelöléssel
+
+[!include[banner](../includes/banner.md)]
+
 
 A FIFO-elv (First in, First out) egy készletmodell, amelyben az elsőként bevételezett cikkek kerülnek először kiadásra. A készletből történő pénzügyi kiadások a készlettranzakciók pénzügyi dátuma alapján az első pénzügyi készletbevételezésekkel vannak kiegyenlítve. 
 
@@ -50,7 +54,9 @@ Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A
 -   5b. Pénzügyi kiadás készletről, 1 mennyiséggel, 20,00 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
 -   6. Készletzárást hajtanak végre. A FIFO-elv szerint az első pénzügyi kiadást az első pénzügyi bevételezéssel kell kiegyenlíteni. A kiadási tranzakción 10,00 USD értékű korrekció történik.
 
-Az önköltség új mozgóátlaga a pénzügyi tranzakciók átlagát tükrözi. A következő ábra bemutatja, milyen hatása van a FIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítást nincs beállítva. ![FIFO a Tényleges érték nélkül](./media/fifowithoutincludephysicalvalue.gif) **Diagram jelmagyarázata**
+Az önköltség új mozgóátlaga a pénzügyi tranzakciók átlagát tükrözi. A következő ábra bemutatja, milyen hatása van a FIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítást nincs beállítva. ![LIFO a tényleges értékkel nélkül](./media/fifowithoutincludephysicalvalue.gif) 
+
+**Jelmagyarázat**
 
 -   A készlettranzakciókat függőleges nyilak jelölik.
 -   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
@@ -78,7 +84,9 @@ Ha egy cikkhez be van jelölve a **Tényleges értékkel együtt** jelölőnégy
 -   6a. Fizikai kiadás készletről, 1 mennyiséggel, 21,25 USD áron.
 -   7. Készletzárást hajtanak végre. A FIFO-módszer szerint az első pénzügyi tranzakciót az első bevételezéssel kell korrigálni vagy kiegyenlíteni, akár pénzügyi, akár fizikai az bevételezési tranzakció.
 
-Az 5b jelű tranzakciót az 1b jelű bevételezési tranzakció egyenlíti ki. Erre a kiadási tranzakcióra -11,25 USD értékű korrekciót alkalmaz a program. Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. A következő ábra bemutatja, milyen hatása van a FIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![FIFO Tényleges értékkel együtt](./media/fifowithincludephysicalvalue.gif) **Diagram jelmagyarázata**
+Az 5b jelű tranzakciót az 1b jelű bevételezési tranzakció egyenlíti ki. Erre a kiadási tranzakcióra -11,25 USD értékű korrekciót alkalmaz a program. Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. A következő ábra bemutatja, milyen hatása van a FIFO készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![FIFO a tényleges értékkel együtt](./media/fifowithincludephysicalvalue.gif) 
+
+**Jelmagyarázat**
 
 -   A készlettranzakciókat függőleges nyilak jelölik.
 -   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
@@ -106,7 +114,9 @@ A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzak
 -   6a. Fizikai kiadás készletről, 1 mennyiséggel, 21,25 USD áron.
 -   7. Készletzárást hajtanak végre. Mivel a pénzügyileg frissített FIFO tranzakció össze van kapcsolva egy meglévő kiadással, ezeket a tranzakciókat egymással szemben számolja el a program, és nem kerül sor helyesbítésre.
 
-Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. A következő diagram a FIFO-elvű készletmodell hatását ábrázolja olyan tranzakciósorozatra, ahol kiadások és bevételezések vannak egymáshoz rendelve. ![FIFO jelöléssel](./media/fifowithmarking.gif) **Diagram jelmagyarázata**
+Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. A következő diagram a FIFO-elvű készletmodell hatását ábrázolja olyan tranzakciósorozatra, ahol kiadások és bevételezések vannak egymáshoz rendelve. ![FIFO jelöléssel](./media/fifowithmarking.gif) 
+
+**Jelmagyarázat**
 
 -   A készlettranzakciókat függőleges nyilak jelölik.
 -   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
@@ -118,6 +128,8 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 -   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
+
+
 
 
 

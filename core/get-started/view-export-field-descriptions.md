@@ -3,7 +3,7 @@ title: "Mezőleírások megtekintése és exportálása"
 description: "Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: d4fc9cdee0e2160e363f9defcf6bdbc57ed4db74
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3029cb441d124e6e5aa427f7fcd95540700254c6
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Mezőleírások megtekintése és exportálása
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével.
 
@@ -80,11 +84,11 @@ Ez a szakasz a mezőleírások használata során felmerülő lehetséges probl�
 
 ### <a name="i-cant-find-a-field-description"></a>Nem található mezőleírás
 
-Jelenleg zajlik az összetettebb mezők leírásának folyamata. Ha segítségre van szüksége egy adott mezőhöz, kérjük tudassa velünk azzal, hogy hozzászól ehhez a wiki cikkhez.
+Jelenleg zajlik az összetettebb mezők leírásának folyamata. Ha segítségre van szüksége egy adott mezőhöz, kérjük tudassa velünk azzal, hogy hozzászól ehhez a témakörhöz.
 
 ### <a name="the-field-description-isnt-helpful"></a>A mezőleírás nem ad segítséget
 
-Kérjük tudassa ezt velünk azzal, hogy hozzászól ehhez a wiki cikkhez. Ha lehetséges, írja le azokat a kiegészítő információkat, amelyekre szüksége van.
+Kérjük, tudassa ezt velünk azzal, hogy hozzászól ehhez a témakörhöz. Ha lehetséges, írja le azokat a kiegészítő információkat, amelyekre szüksége van.
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Nem találok egy mezőt a Mezőleírások oldalon
 
@@ -97,6 +101,9 @@ A lapok különféle módon megvalósítható megkereséséről bővebben feljeb
 <a name="see-also"></a>Lásd még
 --------
 
-[Mező testreszabása – súgó](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help.md)
+[Mező testreszabása – súgó](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
+
+
 
 

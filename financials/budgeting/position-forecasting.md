@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 1bc458d58834be1e2e9b602619f76424b3bb449b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 62dcc8a9b17ad044ac63080a94593a5f6ae2f182
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -98,7 +99,7 @@ A kompenzációs csoporton kijelölt kereseti költségösszetevőt akkor kell h
 
 A legpontosabb költségtervezési tervezés érdekében létrehozhat előre jelzett beosztásokat létező beosztásokból származó részletes adatok használatával a Microsoft Dynamics 365 for Operations rendszerben, függetlenül attól, hogy a beosztás jelenleg be van-e töltve vagy nem. 
 
-A **Meglévő beosztások hozzáadása** funkció a szervezet minden beosztását megjeleníti. Az** Ekkor** dátum beállításával módosíthatja a beosztások listáját, hogy azokat beosztásokat tartalmazza, amelyek egy bizonyos napon a múltban vagy gyakoribb esetekben a jövőben (például a következő költségvetési ciklus elején) léteztek/léteznek. Válasszon ki egy költségvetés-tervezési folyamat és a költségvetési tervváltozatot, válasszon ki a listában szereplő beosztásokat, majd kattintson az **OK** gombra, így előre jelzett beosztásokat létrehozva a kiválasztott beosztások számára. Vegye figyelembe, hogy a költségvetés-tervezési folyamatban és tervváltozatban minden meglévő pozícióhoz csak egy előre jelzett beosztást hozhat létre. Azonban más költségvetési tervváltozatok hozzárendelésével további verziókat is létrehozhat. 
+A **Meglévő beosztások hozzáadása** funkció a szervezet minden beosztását megjeleníti. Az**Ekkor** dátum beállításával módosíthatja a beosztások listáját, hogy azokat beosztásokat tartalmazza, amelyek egy bizonyos napon a múltban vagy gyakoribb esetekben a jövőben (például a következő költségvetési ciklus elején) léteztek/léteznek. Válasszon ki egy költségvetés-tervezési folyamat és a költségvetési tervváltozatot, válasszon ki a listában szereplő beosztásokat, majd kattintson az **OK** gombra, így előre jelzett beosztásokat létrehozva a kiválasztott beosztások számára. Vegye figyelembe, hogy a költségvetés-tervezési folyamatban és tervváltozatban minden meglévő pozícióhoz csak egy előre jelzett beosztást hozhat létre. Azonban más költségvetési tervváltozatok hozzárendelésével további verziókat is létrehozhat. 
 
 Ha költségvetési költségösszetevők lettek hozzárendelve a beosztáshoz az Emberi erőforrások modulban, ezek a költségvetési költségösszetevők az előre jelzett beosztáshoz is hozzá vannak rendelve és az alapértelmezett összegeket használják. A **Hozzárendelt dolgozó** mező az előre jelzett beosztáson arra a dolgozóra van beállítva, aki a beosztáshoz hozzá van rendelve, ha hozzá van rendelve egy dolgozó. Ez a mező egy egyszerű szövegmező. Nincs közvetlen kapcsolat létrehozva. 
 
@@ -163,7 +164,7 @@ Ha másodszor rákattint az **Emelések készítése** lehetőségre, a folyamat
 
 Előre jelzett beosztások frissítései más területekről is származhatnak, például a költségvetési költségösszetevőből és a kompenzációs csoport beállítási oldalaiból. A tömeges frissítési eljárással is módosíthatja az előre jelzett beosztásokat. 
 
-Két beállítás érhető el a** Költségvetési költségösszetevő** telepítőoldalán: **Hozzáadás beosztásokhoz** és **Beosztások frissítése**. A **Hozzáadás beosztásokhoz** opció kiválasztott előre jelzett beosztásokhoz adja hozzá a költségvetési költségösszetevőt. Ha az összetevő már hozzá van rendelve egy előre jelzett beosztáshoz, az előrejelzési pozíciót kihagyja a program. A **Beosztások frissítése** opció az aktuális értékeket alkalmazza (a fő számla, százalék, éves összeg, és így tovább) a kijelölt előre jelzett beosztásokra. 
+Két beállítás érhető el a**Költségvetési költségösszetevő** telepítőoldalán: **Hozzáadás beosztásokhoz** és **Beosztások frissítése**. A **Hozzáadás beosztásokhoz** opció kiválasztott előre jelzett beosztásokhoz adja hozzá a költségvetési költségösszetevőt. Ha az összetevő már hozzá van rendelve egy előre jelzett beosztáshoz, az előrejelzési pozíciót kihagyja a program. A **Beosztások frissítése** opció az aktuális értékeket alkalmazza (a fő számla, százalék, éves összeg, és így tovább) a kijelölt előre jelzett beosztásokra. 
 
 Minden folyamathoz tartozik egy hasonló lap, ahol kiválaszthatja az előre jelzett beosztásokat. A **Hozzáadás beosztásokhoz** lap megmutatja az összes előrejelzési pozíciót, amelyek közül lehet választani, míg a **Beosztások frissítése** oldal csak azokat az előrejelzési pozíciókat mutatja, amelyek már rendelkeznek hozzárendelt költségvetési költségösszetevővel. (Tehát a **Beosztások frissítése** oldal lehetőséget nyújt arra, hogy megtudja, melyik előrejelzési pozícióhoz van már csatolva költségösszetevő.) Az előre jelzett beosztásokat áthelyezheti egy felső rácsból egy alsóbb rácsba, hogy belevegye őket a frissítésbe. 
 

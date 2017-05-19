@@ -18,10 +18,11 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
-ms.openlocfilehash: a951b1f0159ef61704fb772d81ab6a9bc1c80589
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e9db56910f93599dc1f5f2951ce36d6e76fe0637
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -87,7 +88,7 @@ Létrehozhat egy EU-s beérkezési igazolást automatikusan a szállítólevél 
 
 ### <a name="registering-an-eu-entry-certificate"></a>EU beérkezési igazolás regisztrálása
 
-Ha regisztráció szükséges, regisztrálhat egy olyan EU beérkezési igazolást, amelyet egy harmadik fél bocsátott ki a** Beérkezési igazolások naplója** képernyőn keresztül.
+Ha regisztráció szükséges, regisztrálhat egy olyan EU beérkezési igazolást, amelyet egy harmadik fél bocsátott ki a**Beérkezési igazolások naplója** képernyőn keresztül.
 
 ### <a name="uploading-a-received-eu-entry-certificate"></a>Átvett EU-s beérkezési igazolás feltöltése
 

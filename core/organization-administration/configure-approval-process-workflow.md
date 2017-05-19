@@ -3,7 +3,7 @@ title: "Jóváhagyási folyamat konfigurálása munkafolyamatban"
 description: "A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 579e393ef64bc5ad72d129ac08ac215c524d5c55
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 99decd86602e7537af6393c6d28c262f20ca1f00
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Jóváhagyási folyamat konfigurálása munkafolyamatban
+
+[!include[banner](../includes/banner.md)]
+
 
 A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait.
 
@@ -132,7 +136,7 @@ Végleges jóváhagyót adhat meg olyan esetekben, amikor a jóváhagyó az a sz
 
 ## <a name="set-a-time-limit"></a>Időkorlát beállítása
 Kövesse az alábbi lépéseket, ha a jóváhagyási folyamatot egy megadott időn belül be kell fejezni.
-| **Megjegyzés **                                                                                                                                                |
+| **Megjegyzés**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Az ezen lépésekben kiválasztott beállítások felülbírálják az egyes jóváhagyási lépések esetében a **Hozzárendelés** és az **Eszkaláció** pontokban megadottakat. |
 
@@ -155,13 +159,15 @@ Ha egy dokumentum hozzá van rendelve egy felhasználóhoz jóváhagyásra, a fe
 4.  Ha azt szeretné, hogy a felhasználó kérhesse a dokumentum módosítását, jelölje be a **Változtatás kérése** jelölőnégyzetet.
 5.  Jelölje be a **Delegálás** jelölőnégyzetet, ha a felhasználó jóváhagyásra hozzárendelheti a dokumentumot egy másik felhasználóhoz.
 
-**Megjegyzés:**: A **Műveletek végrehajtásának engedélyezése az Enterprise Portal munkalistájából ** jelölőnégyzet elavult.
+**Megjegyzés:**: A **Műveletek végrehajtásának engedélyezése az Enterprise Portal munkalistájából** jelölőnégyzet elavult.
 
 ## <a name="configure-the-approval-steps"></a> Jóváhagyási lépések konfigurálása
 Egy jóváhagyási eljárás jóváhagyási lépésekből áll. Az alábbi eljárással lépéseket adhat hozzá a jóváhagyási folyamathoz, valamint beállíthatja a lépéseket.
 1.  A munkafolyamat-szerkesztőben kattintson duplán a jóváhagyási folyamatra. A munkafolyamat-szerkesztő megjeleníti a jóváhagyási eljárás lépéseit.
 2.  Jóváhagyási lépés hozzáadásához húzza a **Munkafolyamat-elemek** lehetőséget a vászonra.
-3.  A jóváhagyási lépés konfigurálásához lásd a [Jóváhagyási lépés konfigurálása](http://axhelp.dynamics.com/en/wiki/configure-an-approval-step/) pontot.
+3.  A jóváhagyási lépés konfigurálásához lásd a [Jóváhagyási lépés konfigurálása](configure-approval-step-workflow.md) pontot.
+
+
 
 
 

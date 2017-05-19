@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9f82bf6373e8076fb6786fe9ef184f47f3cf7b84
-ms.openlocfilehash: 5ad918b72962b0a59ab35c292c2a6177fb8a9358
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: f731d0f872ac0f7e369de3744e90e0cb0179e691
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -51,7 +52,7 @@ Hasonlóan tanulmányozhatják a felhasználók a legjobb termékeket (10-től 1
 -   Bruttó haszonkulcs
 -   Árrés százalékosan
 
-Ehhez az értékeléshez alkalmazhatja a nem beépített ** Legjobb termékek **jelentést, melyet a következő helyek bármelyikéről megnyithat:
+Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb termékek**jelentést, melyet a következő helyek bármelyikéről megnyithat:
 
 -   **Kiskereskedelmi üzlet kezelése** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések** &gt; **Vezető termékek jelentése**
 -   **Kategória és termékkezelő** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Termékek és kategóriák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**

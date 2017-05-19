@@ -1,6 +1,6 @@
 ---
-title: "Csatorna-ügyfélprogramok meghatározása és fenntartása, köztük a nyilvántartásokkal és hardverállomásokkal"
-description: "Ez a wiki ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához."
+title: "Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat"
+description: "Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -17,17 +17,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: dee5745670ad86000795f2913f99f49c0f123a00
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: db8b059309ecf4da9728394fc3acb091d60baf4d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
-# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Csatorna-ügyfélprogramok meghatározása és fenntartása, köztük a nyilvántartásokkal és hardverállomásokkal
+# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat
 
-Ez a wiki ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.
+[!include[banner](includes/banner.md)]
+
+
+Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.
 
 **Megjegyzés:** Adott telepítési útmutatásért lásd: [Kiskereskedelmi hardverállomás konfigurációja és telepítése](retail-hardware-station-configuration-installation.md) és [Modern Retail POS önkiszolgáló letöltés/telepítés, és Modern POS és felhő POS eszköz aktiválása](retail-modern-pos-device-activation.md).
 
@@ -60,16 +64,19 @@ Navigáció: kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatornák
 
 ### <a name="hardware-station-profile"></a>Hardverállomás profilja
 
-Navigáció: kattintson a **Kereskedelem** &gt; **Csatornabeállítás** &gt; **POS-beállítás** &gt; **POS-profilok** &gt; **Hardverállomás-profilok** gombra. Mivel maga a hardverállomás a csatorna szintjén van meghatározva, tartalmaz példány-specifikus információkat, úgy mint a hardverállomás URL címe. A hardverállomás-profil olyan információkat tartalmaz, amelyek lehetnek statikusak, vagy megoszthatja őket több hardverállomás között. A statikus információk közé tartozik a használandó port, a hardverállomás csomagja és a hardverprofil. A statikus információk tartalmazzák még a telepített hardverállomás típusának leírását, úgy mint **Pénztár **vagy **Visszáru**, attól függően, hogy az adott hardverállomás milyen hardvereket igényel.
+Navigáció: kattintson a **Kereskedelem** &gt; **Csatornabeállítás** &gt; **POS-beállítás** &gt; **POS-profilok** &gt; **Hardverállomás-profilok** gombra. Mivel maga a hardverállomás a csatorna szintjén van meghatározva, tartalmaz példány-specifikus információkat, úgy mint a hardverállomás URL címe. A hardverállomás-profil olyan információkat tartalmaz, amelyek lehetnek statikusak, vagy megoszthatja őket több hardverállomás között. A statikus információk közé tartozik a használandó port, a hardverállomás csomagja és a hardverprofil. A statikus információk tartalmazzák még a telepített hardverállomás típusának leírását, úgy mint **Pénztár**vagy **Visszáru**, attól függően, hogy az adott hardverállomás milyen hardvereket igényel.
 
 ## <a name="scenarios"></a>Esetek
 ### <a name="mpos-with-connected-peripheral-devices"></a>MOPS kapcsolt perifériás eszközökkel
 
-[![Hagyományos, rögzített pénztár](./media/traditional-300x279.png)](./media/traditional.png) Ha csatlakoztatni szeretne egy MPOS-t egy pénztárhoz egy hagyományos, rögzített pénztáras esetben, először navigáljon magához a pénztárhoz, majd rendeljen hozzá egy hardverprofilt. A pénztárakat megtalálja a **Kiskereskedelem és kereskedelem** &gt; **Csatornabeállítás** &gt; **POS-beállítás** &gt; **Pénztárak** menüpont alatt. Miután hozzárendelte az új hardverprofilt, szinkronizálja a csatorna adatbázisában véghezvitt módosításokat a „Pénztárak” elosztási ütemezés használatával. Az elosztási ütemezéseket a **Kiskereskedelem és Kereskedelem** &gt; **Kiskereskedelmi IT** &gt; **Elosztási ütemezés** menüpont alatt találja. Ezután állítson be egy „helyi” hardverállomást a csatornán. Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzletek** &gt; **Minden kiskereskedelmi üzlet** gombra, és válasszon ki egy üzletet. Ezután a **Hardverállomások** gyorslapon kattintson a **Hozzáadás** gombra egy hardverállomás hozzáadásához. Adjon meg egy leírást, adja meg a **localhost** mezőt az állomás nevének, majd szinkronizálja a csatornában véghezvitt módosításokat a „Csatornakonfiguráció” elosztási ütemezés használatával. Az elosztási ütemezéseket a **Kiskereskedelem és Kereskedelem** &gt; **Kiskereskedelmi IT** &gt; **Elosztási ütemezés** menüpont alatt találja. Végül az MPOS-ban használja a **Hardverállomás kiválasztása** műveletet, hogy kijelölje a **localhost** hardverállomást. Állítsa a hardverállomást **Aktív** állapotúra. A használt hardverprofilnak magából a pénztárból kell származnia. Ebben az esetben nincs szükség a hardverállomás-profilra. **Megjegyzés:** Bizonyos hardverprofil módosítások, például a pénztárfiókban véghezvitt módosítások egy új műszak megnyitását igénylik, a módosítások csatornához történő szinkronizálása után. **Megjegyzés:** A Felhő POS csak az egyedülálló hardverállomás használatával kommunikálhat a kiskereskedelmi perifériákkal.
+[![Hagyományos, rögzített pénztár](./media/traditional-300x279.png)](./media/traditional.png) 
+
+Ha csatlakoztatni szeretne egy MPOS-t egy pénztárhoz egy hagyományos, rögzített pénztáras esetben, először navigáljon magához a pénztárhoz, majd rendeljen hozzá egy hardverprofilt. A pénztárakat megtalálja a **Kiskereskedelem és kereskedelem** &gt; **Csatornabeállítás** &gt; **POS-beállítás** &gt; **Pénztárak** menüpont alatt. Miután hozzárendelte az új hardverprofilt, szinkronizálja a csatorna adatbázisában véghezvitt módosításokat a „Pénztárak” elosztási ütemezés használatával. Az elosztási ütemezéseket a **Kiskereskedelem és Kereskedelem** &gt; **Kiskereskedelmi IT** &gt; **Elosztási ütemezés** menüpont alatt találja. Ezután állítson be egy „helyi” hardverállomást a csatornán. Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzletek** &gt; **Minden kiskereskedelmi üzlet** gombra, és válasszon ki egy üzletet. Ezután a **Hardverállomások** gyorslapon kattintson a **Hozzáadás** gombra egy hardverállomás hozzáadásához. Adjon meg egy leírást, adja meg a **localhost** mezőt az állomás nevének, majd szinkronizálja a csatornában véghezvitt módosításokat a „Csatornakonfiguráció” elosztási ütemezés használatával. Az elosztási ütemezéseket a **Kiskereskedelem és Kereskedelem** &gt; **Kiskereskedelmi IT** &gt; **Elosztási ütemezés** menüpont alatt találja. Végül az MPOS-ban használja a **Hardverállomás kiválasztása** műveletet, hogy kijelölje a **localhost** hardverállomást. Állítsa a hardverállomást **Aktív** állapotúra. A használt hardverprofilnak magából a pénztárból kell származnia. Ebben az esetben nincs szükség a hardverállomás-profilra. **Megjegyzés:** Bizonyos hardverprofil módosítások, például a pénztárfiókban véghezvitt módosítások egy új műszak megnyitását igénylik, a módosítások csatornához történő szinkronizálása után. **Megjegyzés:** A Felhő POS csak az egyedülálló hardverállomás használatával kommunikálhat a kiskereskedelmi perifériákkal.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS vagy Felhő POS egyedülálló hardverállomással
+[![Megosztott hardverperifériák](./media/shared-300x254.png)](./media/shared.png)
 
-\[caption id="attachment\_340041" align="alignleft" width="300"\][![Megosztott perifériák](./media/shared-300x254.png)](./media/shared.png) Megosztott perifériák\[/caption\] Ebben az esetben az önálló hardverállomás fel van osztva MPOS és Felhő POS kliensek között. Ebben az esetben létre kell hoznia egy hardverállomás-profilt, hogy megadja a letöltési csomagot, a portot és a hardverállomás által használt hardverprofilt. A hardverállomás-profilt a **Kiskereskedelem és kereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárprofilok** &gt; **Hardverállomás-profilok** menüpont alatt találja. Miután létrehozta a hardverállomás-profilt, navigáljon az adott kiskereskedelmi csatornához (**Kiskereskedelem és kereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzletek** &gt; **Minden kiskereskedelmi üzlet**), és adjon hozzá egy új hardverállomást. Rendelje hozzá ezt az új hardverállomást a korábban létrehozott hardverállomás-profilhoz. Ezután adjon meg egy leírást, ami segít a pénztárosnak a hardverállomás azonosításában. Az **Állomás neve** mezőbe írja be az állomás-számítógép URL címét a következő formátumban: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Cserélje ki a **&lt;MachineName:Port&gt;** mezőt a hardverállomás tényleges számítógépnevére és a hardverállomás-profilban megadott portra.) Önálló hardverállomás esetén adja meg az elektronikus átutalási tranzakció (EFT) terminálazonosítóját is. Ez az érték azonosítja a hardverállomáshoz csatlakoztatott EFT terminált, amikor a fizetési csatlakoztató kommunikál a fizetési szolgáltatóval. Ezután a tényleges hardverállomás-számítógépből navigáljon a csatornára és válassza ki a hardverállomást. Majd kattintson a **Letöltés** gombra és telepítse a hardverállomást. Ezután az MPOS-ban vagy Felhő POS-ban használja a **Hardverállomás kiválasztása** műveletet, hogy kiválassza az előbb telepített hardverállomást. Válassza ki a **Párosítás** műveletet, hogy létrehozzon egy biztonságos kapcsolatot a pénztár és a hardverállomás között. Ezt a lépést mindig el kell végezni, amikor egy pénztárat csatlakoztat egy hardverállomáshoz. Miután párosította a hardverállomást, ugyanezen művelet használatos a hardverállomás aktiválásra, a használatakor. Ebben az esetben a hardverprofilt érdemes maga a pénztár helyett a hardverállomás-profilhoz hozzárendelni. Ha valamilyen okból a hardverállomás nem rendelkezik közvetlenül hozzátársított hardverprofillal, akkor a hardverprofil a használt pénztárhoz lesz társítva.
+Ebben az esetben az önálló hardverállomás fel van osztva MPOS és Felhő POS kliensek között. Ebben az esetben létre kell hoznia egy hardverállomás-profilt, hogy megadja a letöltési csomagot, a portot és a hardverállomás által használt hardverprofilt. A hardverállomás-profilt a **Kiskereskedelem és kereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárprofilok** &gt; **Hardverállomás-profilok** menüpont alatt találja. Miután létrehozta a hardverállomás-profilt, navigáljon az adott kiskereskedelmi csatornához (**Kiskereskedelem és kereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzletek** &gt; **Minden kiskereskedelmi üzlet**), és adjon hozzá egy új hardverállomást. Rendelje hozzá ezt az új hardverállomást a korábban létrehozott hardverállomás-profilhoz. Ezután adjon meg egy leírást, ami segít a pénztárosnak a hardverállomás azonosításában. Az **Állomás neve** mezőbe írja be az állomás-számítógép URL címét a következő formátumban: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Cserélje ki a **&lt;MachineName:Port&gt;** mezőt a hardverállomás tényleges számítógépnevére és a hardverállomás-profilban megadott portra.) Önálló hardverállomás esetén adja meg az elektronikus átutalási tranzakció (EFT) terminálazonosítóját is. Ez az érték azonosítja a hardverállomáshoz csatlakoztatott EFT terminált, amikor a fizetési csatlakoztató kommunikál a fizetési szolgáltatóval. Ezután a tényleges hardverállomás-számítógépből navigáljon a csatornára és válassza ki a hardverállomást. Majd kattintson a **Letöltés** gombra és telepítse a hardverállomást. Ezután az MPOS-ban vagy Felhő POS-ban használja a **Hardverállomás kiválasztása** műveletet, hogy kiválassza az előbb telepített hardverállomást. Válassza ki a **Párosítás** műveletet, hogy létrehozzon egy biztonságos kapcsolatot a pénztár és a hardverállomás között. Ezt a lépést mindig el kell végezni, amikor egy pénztárat csatlakoztat egy hardverállomáshoz. Miután párosította a hardverállomást, ugyanezen művelet használatos a hardverállomás aktiválásra, a használatakor. Ebben az esetben a hardverprofilt érdemes maga a pénztár helyett a hardverállomás-profilhoz hozzárendelni. Ha valamilyen okból a hardverállomás nem rendelkezik közvetlenül hozzátársított hardverprofillal, akkor a hardverprofil a használt pénztárhoz lesz társítva.
 
 ## <a name="client-maintenance"></a>Kliens karbantartás
 ### <a name="registers"></a>Pénztárgépek
@@ -152,5 +159,7 @@ Az aktiválással kapcsolatos további információk tartalmazzák a dolgozót, 
 ### <a name="client-data-synchronization"></a>Kliensadatok szinkronizálása
 
 A pénztárkliensben az aktivációs állapotban bekövetkezett változásokon kívül minden változást szinkronizálni kell a csatorna adatbázisában, hogy érvénybe lépjenek. A módosítások a csatorna adatbázisában történő szinkronizálásához navigáljon a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelmi IT** &gt; **Elosztási ütemezés**, menüpontra és futtassa a szükséges elosztási ütemezést. A kliensváltoztatásokhoz futtassa a „Pénztárak” és „Csatornakonfiguráció” elosztási ütemezéseket.
+
+
 
 

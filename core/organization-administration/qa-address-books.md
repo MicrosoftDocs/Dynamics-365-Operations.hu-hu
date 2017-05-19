@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 444ffcc8a14650085e24d0ea0d7f725e9d324d69
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f3d34f9ee0c9db97e79b8577d006b198f9a5cb29
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -41,8 +42,8 @@ Az ismétlődő rekordok közvetlenül a **Globális címjegyzék** listaoldalon
 ## <a name="can-i-bulk-add-or-delete-party-records-from-an-address-book"></a>A rendszer engedélyezi-e a partnerrekordok tömeges hozzáadását, illetve eltávolítását egy címjegyzékből?
 Igen, lehetőségében áll több partnerrekordot adni hozzá, vagy távolítani el egy címjegyzékből.
 
--   Több partnerrekordok egy adott címjegyzékhez történő hozzáadásához, válassza ki a listából a kívánt partnereket a **Globális címjegyzék **listaoldalán. Ezután a Műveleti Ablaktábla **Fél **lapján található **Karbantartás **csoportban kattintson a **Felek hozzárendelése** lehetőségre. Jelölje ki azokat a címjegyzékeket, melyekbe a kiválasztott partnerrekordok kerülnek, majd kattintson az **OK** gombra. Az összes kiválasztott partnerrekord bekerül a kiválasztott címjegyzékbe.
--   Több partnerrekord egy adott címjegyzékből történő eltávolításához, válassza ki a listából a kívánt partnereket a **Globális címjegyzék **listaoldalán. Ezután a Műveleti Ablaktábla **Fél **lapján található **Karbantartás **csoportban kattintson a **Felek eltávolítása** lehetőségre. Jelölje ki azokat a címjegyzékeket, melyekből el kívánja távolítani a kiválasztott partnerrekordokat, majd kattintson az **OK** gombra. Az összes kiválasztott partnerrekord eltávolításra kerül a kiválasztott címjegyzékből.
+-   Több partnerrekordok egy adott címjegyzékhez történő hozzáadásához, válassza ki a listából a kívánt partnereket a **Globális címjegyzék**listaoldalán. Ezután a Műveleti Ablaktábla **Fél**lapján található **Karbantartás**csoportban kattintson a **Felek hozzárendelése** lehetőségre. Jelölje ki azokat a címjegyzékeket, melyekbe a kiválasztott partnerrekordok kerülnek, majd kattintson az **OK** gombra. Az összes kiválasztott partnerrekord bekerül a kiválasztott címjegyzékbe.
+-   Több partnerrekord egy adott címjegyzékből történő eltávolításához, válassza ki a listából a kívánt partnereket a **Globális címjegyzék**listaoldalán. Ezután a Műveleti Ablaktábla **Fél**lapján található **Karbantartás**csoportban kattintson a **Felek eltávolítása** lehetőségre. Jelölje ki azokat a címjegyzékeket, melyekből el kívánja távolítani a kiválasztott partnerrekordokat, majd kattintson az **OK** gombra. Az összes kiválasztott partnerrekord eltávolításra kerül a kiválasztott címjegyzékből.
 
 ## <a name="can-i-change-the-party-type-of-a-record-or-do-i-have-to-delete-the-old-record-and-create-a-new-one"></a>Módosítható-e a partnerrekord típusa, vagy törölnöm kell a régi rekordot, és újat hoznom létre?
 Előfordulhat, hogy módosítania kell egy adott rekord típusát magánszemélyről szervezetre, vagy szervezetről magánszemélyre. Noémi például a Faktúra Kft. értékesítési csapatának tagja. Egy pécsi kereskedelmi bemutatón hat új potenciális vevővel találkozik. Noémi potenciálisvevő-rekordot hoz létre mindegyik potenciális vevőhöz. Amikor elmenti a rekordokat, akkor azokat a rendszer létrehozza a Globális címjegyzékben is. A Faktúra Kft-nél a szervezet az alapértelmezett féltípus beállítás, két potenciális vevő kapcsán azonban magánszemély típusú rekordra van szükség. Ezért Noéminek módosítania kell két potenciálisvevő-rekord féltípusát, amikor visszatér a kereskedelmi kiállításról. Egy féltípus egyik alternatíváról a másikra történő átállításához elsőként a globális címjegyzékben létre kell hoznia egy új, megfelelő típusú rekordot. Ezután társítania kell a régi partnerrekordot az újjal. Az új fél társítását követően törölje a rossz féltípusú partnerrekordot.

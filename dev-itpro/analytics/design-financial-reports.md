@@ -1,7 +1,7 @@
 ---
 title: "Pénzügyi jelentések megtekintése és tervezése"
-description: "Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Operationsben. A pénzügyi jelentések egyrészt a Dynamics 365 for Operations rendszeren belüli megtekintésből, másrészt az egy kattintással használható jelentéstervezőből állnak, amellyel pénzügyi jelentéseket hozhat létre és szerkeszthet."
-author: twheeloc
+description: "Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Operationsben."
+author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3319fa0a919ca5e2737319f5cdc4190cf32d59b6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: 635e9e90c63330b3d8b0cc46f16a36fa44ef915d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -96,7 +97,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fri
 22. A **Részletes főkönyvi kivonat attribútumokkal** jelentésdefinícióból válassza a Részletes főkönyvi kivonat attribútumokkal lehetőséget mind a sordefinícióra, mind az oszlopdefinícióra.
 23. Módosítsa az alapévet a következőre: **2012.**
 24. **Mentse** a jelentésdefiníciót és válassza a **Létrehozás** lehetőséget. A jelentés létrehozásának és megnyitásának befejeződése után böngészheti a jelentést, ahogyan az előző gyakorlatban tette. Részletezzen ki különböző számlákat annak megtekintésére, hogy hogyan jelennek meg a további attribútumok.
-25. Zárja be a **Részletes főkönyvi kivonat attribútumokkal **jelentést.
+25. Zárja be a **Részletes főkönyvi kivonat attribútumokkal**jelentést.
 26. Zárja be a **Jelentéstervező** ablakot.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>3. Gyakorlat: Többdimenziós jelentés létrehozása jelentési fa segítségével
@@ -165,7 +166,7 @@ A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egym
 6.  Kattintson duplán a **a Dimenziószűrő** mező.
 7.  A **Dimenzió** ablakban dupla kattintás a **Részleg** oszlopban.
 8.  Jelölje be a párbeszédpanelt egyén vagy egy tartomány csoport a **három pont** tartozó a **származó** mező Részlegek listájának megjelenítése.
-9.  Válassza ki a részleg **022**, **Értékesítés és Marketing** , majd** OK**.
+9.  Válassza ki a részleg **022**, **Értékesítés és Marketing** , majd **OK** pontokat.
 10. Ismételje meg az 5 – 8 lépéseket a 23-25. részlegek esetén.
 11. A **Fejléc 2** FD oszlopfejlécében soránál, akkor írja be a következő osztály leírása:
     -   B oszlop – Értékesítési és marketing
@@ -182,8 +183,8 @@ A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egym
 18. **Mentés** a módosításokat, és **készítése**. A jelentés létrehozásának és megnyitásának befejeződése után böngészhet a jelentésben.
 
 ## <a name="additional-resources"></a>További erőforrások
-[Pénzügyi jelentések](\financials\general-ledger\financial-reporting-getting-started.md) 
-[Pénzügyi jelentések megtekintése](\financials\general-ledger\view-financial-reports.md) 
+[Pénzügyi jelentések](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
+[Pénzügyi jelentések megtekintése](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
 [Dynamics pénzügyi jelentési webnapló](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

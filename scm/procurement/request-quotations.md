@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,9 +49,9 @@ Ha egy ajánlatkérést az elküldés után módosítania kell, elküldheti az a
 
 Ha ajánlatot kap, azokat az **Ajánlatkérési válaszok** oldalon adhatja meg. Ha az **Adatok másolása a válaszba** lehetőséget választja, a mennyiséget és az ajánlatkérés egyéb adatait a rendszer a válaszba másolja. Módosíthatja ezeket az adatokat, hogy azok a szállító ajánlatát tükrözzék.  
 
-Ha egy szállítónak a válasz második ismétlésére is szüksége van, kattintson a **Vissza **lehetőségre az** Ajánlatkérési válasz** oldalon. A Vissza művelet új naplót és egy jelentést hoz létre, amelyet a rendszer a nyomtatáskezelési beállításoktól függően kinyomtat, archivál és elküld.  
+Ha egy szállítónak a válasz második ismétlésére is szüksége van, kattintson a **Vissza**lehetőségre az**Ajánlatkérési válasz** oldalon. A Vissza művelet új naplót és egy jelentést hoz létre, amelyet a rendszer a nyomtatáskezelési beállításoktól függően kinyomtat, archivál és elküld.  
 
-Ha pontozási feltételeket adott hozzá az ajánlatkérési esethez, az ajánlatkérési válasz egy pontozási panelt is tartalmaz, amelyen a pontok megadhatók. Az összesített pontszám akkor jelenik meg, ha a **Válaszok összehasonlítása **oldalon összehasonlítja azokat; ezen az oldalon egyéb válaszadatokat is összehasonlíthat, például az árat, a szállítási dátumot és a teljes árat.  
+Ha pontozási feltételeket adott hozzá az ajánlatkérési esethez, az ajánlatkérési válasz egy pontozási panelt is tartalmaz, amelyen a pontok megadhatók. Az összesített pontszám akkor jelenik meg, ha a **Válaszok összehasonlítása**oldalon összehasonlítja azokat; ezen az oldalon egyéb válaszadatokat is összehasonlíthat, például az árat, a szállítási dátumot és a teljes árat.  
 
 Ha egy ajánlattal vagy részleges ajánlattal kapcsolatban döntést hozott, elfogadhatja azt, és visszautasíthatja a többit. A rendszer létrehozza az elfogadási naplót, visszautasítási naplót és a megfelelő jelentéseket. Ezeket a rendszer a nyomtatáskezelési beállításoknak megfelelően kinyomtatja, archiválja és elküldi. Egy ajánlat vagy bizonyos ajánlati sorok elfogadásakor az ajánlatkérési beszerzés típusától függően egy beszerzési szerződés vagy beszerzési rendelés jön létre, vagy frissül a beszerzési igénylés. Létrehozhat kereskedelmi megállapodást, amelyet később bármelyik válasz esetében felhasználhat, függetlenül attól, hogy azt elfogadta vagy elutasította.  
 
@@ -107,7 +108,7 @@ Ha az ajánlatkérés **beszerzési szerződés** típusú:
 -   Az ajánlat felhasználásra kerül egy megállapodáshoz adott mennyiségű vagy értékű termék vásárlásáról hosszabb idő alatt. Ki kell jelölnie a beszerzési megállapodásra vonatkozó dátumtartományt, illetve a beszerzési megállapodást kezelő személy nevét.
 -   Egy ajánlat elfogadásakor létrejön egy beszerzési szerződés.
 
-Csak akkor hozhat létre ajánlatkérést egy beszerzési igénylésből, ha a beszerzési igénylés állapota **Ellenőrzés alatt **, és Ön van hozzárendelve a munkafolyamat következő feladatához. A beszerzési igénylés sorainak frissítése automatikusan történik, amikor elfogadja a szállítóktól kapott ajánlatkérési válaszok (ajánlatok) sorait. Amíg az ajánlatkérés folyamatban van, a beszerzési igénylésen nem lehet semmiféle műveletet végezni, például befejezést, elutasítást vagy jóváhagyást.  
+Csak akkor hozhat létre ajánlatkérést egy beszerzési igénylésből, ha a beszerzési igénylés állapota **Ellenőrzés alatt**, és Ön van hozzárendelve a munkafolyamat következő feladatához. A beszerzési igénylés sorainak frissítése automatikusan történik, amikor elfogadja a szállítóktól kapott ajánlatkérési válaszok (ajánlatok) sorait. Amíg az ajánlatkérés folyamatban van, a beszerzési igénylésen nem lehet semmiféle műveletet végezni, például befejezést, elutasítást vagy jóváhagyást.  
 
 Az ajánlatkérés létrehozásakor kiválaszthat egy adott meghirdetési típust. A meghirdetési típus az ajánlatkérésre érkező válaszok pontozási feltételét határozza meg.  
 

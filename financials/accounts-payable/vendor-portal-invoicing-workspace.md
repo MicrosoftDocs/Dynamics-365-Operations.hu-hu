@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 822e621f22f8af63b2a827dcc50a6b0ac68d3e21
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7aebcdf0578d931d326420b42e2b220407049bc6
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Szállítói együttműködési számlázás munkaterület
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör bemutatja, hogyan tekintheti meg a szállítói számlákat, és hogyan küldheti be a számlákat a szállítói együttműködési számlázás munkaterületen.
 
@@ -43,7 +47,7 @@ Az **Összesítés** csempék áttekintést adnak a kiválasztott szállító sz
 Kattintson egy csempére, és megnyílik a **Számlalisták** lap szűrt nézete.
 ### <a name="tabular-lists"></a>Táblázatos listák
 
-A **táblázatos listák **szakaszban a számlázás állapotának bontása megegyezik az összesítés csempékével: Vázlat és Elküldött, jóváhagyással még nem rendelkező listák. Vázlat állapotban a számlát be lehet küldeni a munkafolyamatba, vagy törölni lehet. Az utolsó táblázatos lista a számlák keresésére szolgáló beállítás. A gyorsabb keresés érdekében lehetőség van a keresés közbeni szűrésre.
+A **táblázatos listák**szakaszban a számlázás állapotának bontása megegyezik az összesítés csempékével: Vázlat és Elküldött, jóváhagyással még nem rendelkező listák. Vázlat állapotban a számlát be lehet küldeni a munkafolyamatba, vagy törölni lehet. Az utolsó táblázatos lista a számlák keresésére szolgáló beállítás. A gyorsabb keresés érdekében lehetőség van a keresés közbeni szűrésre.
 Az összes szállítói számla listaoldal
 -----------------------------
 
@@ -55,6 +59,8 @@ Létrehozhat egy új szállítói számlát a következő kiválasztásával: **
 
 
 
-További tájékoztatás: [Együttműködés a szállítókkal, a Szállítói portálon keresztül](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+További tájékoztatás: [Együttműködés a szállítókkal, a Szállítói portálon keresztül](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+
+
 
 

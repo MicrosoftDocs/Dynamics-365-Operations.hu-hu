@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: be156afa73de731e54985485b617bcbae883db3a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 917771596a0c56561bf302ae990d95a987f442e0
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Az alkalmazottaknak járó változó kompenzációs összegek számítása szám
 ## <a name="variable-compensation-components"></a>Változó kompenzációs elemei
 ### <a name="create-compensation-types"></a>Kompenzációs típusok létrehozása
 
-A**Változó kompenzációtípusok **szükséges elemek. A Változó kompenzációtípusokkal megadhatja, hogy szervezete milyen változó kompenzációt díjaz. Továbbá ezek segítségével meghatározhatja, hogy a kompenzáció készpénzben vagy nem pénzügyi formában történjen, például a készletből.
+A**Változó kompenzációtípusok**szükséges elemek. A Változó kompenzációtípusokkal megadhatja, hogy szervezete milyen változó kompenzációt díjaz. Továbbá ezek segítségével meghatározhatja, hogy a kompenzáció készpénzben vagy nem pénzügyi formában történjen, például a készletből.
 
 ### <a name="describe-vesting-rules"></a>Átruházási szabályok leírása
 
@@ -53,17 +54,17 @@ A **változó kompenzációterv** tartalmazza a szabályokat, számítási móds
 A változó jutalom összege alapulhat az alkalmazott rendszeres fizetésének bizonyos százalékán vagy adott egységeken.
 
 -   Válassza ki az **Alap százaléka** lehetőséget az alapértelmezett százalék magadásához és határozza meg, hogy a fix fizetés vagy az alkalmazottak kompenzációs szintjeinek kontrollpontja legyen az alap. A kompenzációs szint alapja az alkalmazott munkája. A kompenzációs szerkezetből az egyik referenciapont beállítható kontrollpontnak a fix kompenzációs terven. A rendszer a kompenzációs szintet használja az alkalmazottak munkaköréből és egyezteti azt az alkalmazott fix kompenzációs tervben listázott kontrollpontokkal, így keresve a kontrollpont-mennyiséget az alkalmazott kompenzációs szintjéhez. Ezután a kontrollpont-mennyiséget használja a program - az alkalmazott fix fizetése helyett - a jutalom alapjának.
--   Válassza az** Egységek száma** lehetőséget egy alapértelmezett egységszám, az egyes egységek értékének és az egységérték pénzemének megadásához, ha a kompenzációs terv nem készpénz alapú (például 200 készletegység, amelyek 40 USD értékűek) vagy adja meg csak az egységek számát a kompenzációs tervben ha a kompenzációs terv készpénz alapú. Készpénzes jutalomnál az alkalmazott adott számú egységet kap a rögzített kompenzációs tervben rögzített pénznemben (például 500 egységet 1 USD értékben). Az egy-egy kapcsolat ellenőrzése használható annak ellenőrzésére, hogy az egységek száma között és az egységérték között egy-egy közötti hozzárendelés van-e. Amikor létrehoz egy változó kompenzációs tervet egy készpénzalapú tervhez az egységek számának használatával, akkor ez a lehetőség automatikusan **Igen** értéket kap, és az egységérték **1,0000** lesz.
+-   Válassza az**Egységek száma** lehetőséget egy alapértelmezett egységszám, az egyes egységek értékének és az egységérték pénzemének megadásához, ha a kompenzációs terv nem készpénz alapú (például 200 készletegység, amelyek 40 USD értékűek) vagy adja meg csak az egységek számát a kompenzációs tervben ha a kompenzációs terv készpénz alapú. Készpénzes jutalomnál az alkalmazott adott számú egységet kap a rögzített kompenzációs tervben rögzített pénznemben (például 500 egységet 1 USD értékben). Az egy-egy kapcsolat ellenőrzése használható annak ellenőrzésére, hogy az egységek száma között és az egységérték között egy-egy közötti hozzárendelés van-e. Amikor létrehoz egy változó kompenzációs tervet egy készpénzalapú tervhez az egységek számának használatával, akkor ez a lehetőség automatikusan **Igen** értéket kap, és az egységérték **1,0000** lesz.
 
 A **Felvételi szabály** beállításai segítségével megadhatja, hogy minden alkalmazott ugyanazt a fizetésemelést kapja-e, függetlenül felvételük dátumától (**Felvételi szabály** = **Nincs**), vagy az alkalmazottak a jutalom bizonyos százalékát kapják, alkalmazásuk időtartamának függvényében (**Felvételi szabály** = **Százalék**). 
 
 Az **Emelés** lehetővé teszi egy alkalmazott jutalmának megadását az alkalmazotti részleg által mért teljesítmény alapján. A teljesítménymutatók megadhatók az egyes részlegek számára, a **Részlegek** oldalon, a **Kapcsolódó űrlapok** &gt; **Kompenzáció** &gt; **Teljesítmény** pont alatt. Az adott részlegen dolgozók jutalma függ a **A cél elért százaléka** mező értékétől, amelyik a részleg teljesítményét tükrözi:
 
--   Ha az osztály teljesítménye 100 százalék, az alkalmazottak jutalma az adott részlegben függ a** Kifizetés 100%-nál** mezőben megadott értéktől.
+-   Ha az osztály teljesítménye 100 százalék, az alkalmazottak jutalma az adott részlegben függ a**Kifizetés 100%-nál** mezőben megadott értéktől.
 -   Ha a részleg teljesítménye nagyobb, mint 100 százalék, akkor a rendszer a **1% a cél felett** mezőben lévő értéket adja hozzá a **Kifizetés 100% esetén** mezőhöz, amíg a **Legmagasabb megengedett kifizetés** mező értékét eléri.
 -   Ha a részleg teljesítménye kisebb, mint 100 százalék, akkor a rendszer az **1% a cél felett** mezőben lévő értéket kivonja a **Kifizetés 100% esetén** mezőből, amíg a **Legalacsonyabb megengedett kifizetés** mező értékét eléri.
 
-Beállíthat** toleranciaszinteket** a küszöbérték százalékoknál, így egy figyelmeztető üzenet jelenik meg, ha az emelés miatt a százalék átlépi a küszöbértéket. 
+Beállíthat**toleranciaszinteket** a küszöbérték százalékoknál, így egy figyelmeztető üzenet jelenik meg, ha az emelés miatt a százalék átlépi a küszöbértéket. 
 
 Alapértelmezetten a rendszer megkeresi az alkalmazott pozíciójához rendelt részleget. Ugyanakkor néhány alkalmazott számára a jutalom több részleg teljesítményétől is függhet. Ebben az esetben a különböző részlegek és az egyes részlegek jutalmainak százaléka, amelyet az egyes részlegek teljesítményhez rendeltek, állíthatók be az alkalmazott változó kompenzációs bejegyzésében. További információért tekintse meg a „Változó kompenzációs bejegyzés” szakaszt lentebb. 
 

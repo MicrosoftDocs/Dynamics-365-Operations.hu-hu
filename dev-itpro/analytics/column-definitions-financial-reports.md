@@ -1,16 +1,16 @@
 ---
 title: "Oszlopdefiníciók a pénzügyi jelentésben"
 description: "Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő vagy építőelem, amely meghatározza az oszlopok tartalmait egy jelentésben. Például a sordefiníciók, az alap oszlopdefiníciókat több jelentésben is használhatják."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-08-09 21 - 27 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: af336db81f659d80248aa4ab1fbba96ed1ff48c2
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő vagy építőelem, amely meghatározza az oszlopok tartalmait egy jelentésben. Például a sordefiníciók, az alap oszlopdefiníciókat több jelentésben is használhatják.
 
@@ -150,7 +154,7 @@ Az **Oszlopfejléc** párbeszédablakban hozzáadhat, módosíthat és törölhe
 
 1.  Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
 2.  Jelöljön ki egy cellát a fejlécsorban.
-3.  A **Szerkesztés** menüben kattintson a **Sor beszúrása** elemre. Az új sor fölött a 2. lépésben kiválasztott sor jelenik meg. **Megjegyzés: **Ha a jelentés jelentésben a fejlécek négy vagy több sort tartalmaznak, a fejléc átfedésbe kerül, amikor a jelentést az Excell munkafüzetbe exportálják. A jelentés összes fejlécének megtekintéséhez növelje meg a felső margót a jelentésdefinícióban.
+3.  A **Szerkesztés** menüben kattintson a **Sor beszúrása** elemre. Az új sor fölött a 2. lépésben kiválasztott sor jelenik meg. **Megjegyzés:**Ha a jelentés jelentésben a fejlécek négy vagy több sort tartalmaznak, a fejléc átfedésbe kerül, amikor a jelentést az Excell munkafüzetbe exportálják. A jelentés összes fejlécének megtekintéséhez növelje meg a felső margót a jelentésdefinícióban.
 
 ### <a name="delete-a-column-header-row"></a>Oszlopfejlécsor törlése
 
@@ -320,9 +324,9 @@ A **Nyomtatásvezérlő** cella olyan kódokat tartalmazhat, amelyek módosítj�
 4.  Válasszon egy opciót a **Feltételes nyomtatási beállítások** mezőben. Alapértelmezés szerint a **(nincs)** van kiválasztva. Egyszerre csak egy feltételes nyomtatási kód választható ki.
 5.  Kattintson az **OK** gombra.
 
-**Tipp:** Nyomtatásvezérlő kódokat közvetlenül a **Nyomtatásvezérlés** cellába is beírhat. Ha több nyomtatásvezérlő kód van, ezeket vesszővel válassza el egymástól.
+> [!TIP]
+> Nyomtatásvezérlő kódokat közvetlenül a **Nyomtatásvezérlés** cellába is beírhat. Ha több nyomtatásvezérlő kód van, ezeket vesszővel válassza el egymástól.
 
-### 
 
 ## <a name="column-types"></a>Oszloptípusok
 A jelentés egyes oszlopaiban megjelenő információ típusát az **Oszloptípus** sor határozza meg a sordefinícióban. Minden egyes oszlopdefiníciónak tartalmaznia kell legalább egy leírásoszlopot (**DESC**) és egy összegoszlopot (**FD**, **WKS** vagy **CALC**). **Megjegyzés:** Az oszloptípuskódok nem vonatkoznak az összes számviteli rendszerre. Ha olyan típust választ, amelyik nem érvényes ebben a könyvelési rendszerben, az oszlop üres marad a jelentésben.
@@ -507,7 +511,8 @@ A több pénznemű jelentés megjelenítheti az összegeket a természetes (hely
 -   **Pénznem megjelenítése** – A tranzakciók megjelenítéséhez használt pénznem típusát (természetes, működési vagy jelentési) adja meg. Ezt a funkciót egyes esetekben pénznemátváltásnak is nevezik. A pénznemátváltás az a funkció, amellyel a főkönyvi összegeket olyan pénznemben is megjelenítheti a jelentésben, amely egyébként nem számít a cég működési pénznemének, vagy a tranzakció megadásakor használt pénznemnek.
 -   **Pénznemszűrő** – Pénznemszűrő megadása. Csak a kiválasztott pénznemben megadott tranzakciók jelennek meg a jelentésben.
 
-**Megjegyzés:** Ha több pénznemet használó jelentéseket kíván létrehozni, akkor be kell jelölnie a **Minden jelentési pénznem szerepeltetése** jelölőmezőt a jelentésdefiníció **Jelentés** lapján. A vállalat működési pénznemének meghatározásához kövesse az alábbi lépéseket.
+> [!NOTE]
+> Ha több pénznemet használó jelentéseket kíván létrehozni, akkor be kell jelölnie a **Minden jelentési pénznem szerepeltetése** jelölőmezőt a jelentésdefiníció **Jelentés** lapján. A vállalat működési pénznemének meghatározásához kövesse az alábbi lépéseket.
 
 1.  A Jelentéstervezőben kattintson a **Vállalat** menü **Vállalatok** parancsára.
 2.  A **Vállalatok** párbeszédpanelen válasszon egy vállalatot, majd kattintson az **Megtekintés** gombra.
@@ -516,10 +521,11 @@ A több pénznemű jelentés megjelenítheti az összegeket a természetes (hely
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Pénznem meghatározása több pénznemű jelentésen
 
 1.  Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
-2.  Kattintson duplán a ** Pénznem megjelenítése** cellára a megfelelő **FD** oszlopban, és válassza ki a pénznemadatok megjelenítése lehetőséget: **Természetes/Származó pénznem**, **Működési pénznem a vállalati információkból** vagy a jelentési pénznem.
+2.  Kattintson duplán a **Pénznem megjelenítése** cellára a megfelelő **FD** oszlopban, és válassza ki a pénznemadatok megjelenítése lehetőséget: **Természetes/Származó pénznem**, **Működési pénznem a vállalati információkból** vagy a jelentési pénznem.
 3.  Kattintson duplán a **Pénznemszűrő** cellára a megfelelő **FD** oszlopban, és válassza ki a listában a megfelelő pénznemkódot. Csak az ebben a pénznemben megadott tranzakciók jelennek meg a jelentésben.
 
-**Megjegyzés:** Az itt leírt lehetőségek a használt ERP rendszertől függően eltérhetnek. További tájékoztatásért olvassa át saját [Microsoft ERP rendszerének dokumentációját](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
+> [!NOTE]
+> Az itt leírt lehetőségek a használt ERP rendszertől függően eltérhetnek. További tájékoztatásért olvassa át saját [Microsoft ERP rendszerének dokumentációját](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Példa a Pénznem megjelenítése és a Pénznemszűrő cellákra
 
@@ -572,7 +578,7 @@ Egy adott jelentéscellára is hivatkozhat, ha megadja az oszlop betűjelét és
 
 #### <a name="multiply-or-divide-a-column-by-a-base-row"></a>Oszlop szorzása vagy elosztása egy alapsorral
 
-Létrehozhat olyan oszlopot, amely egy megadott oszlop értékeit egy alapszám százalékaként jeleníti meg. Ezzel megmutathatja a kapcsolatokat a sorok között, amelyek lehetnek például egy értékesítési sor százalékai, vagy a teljes kiadás sor részarányai. Ahhoz, hogy egy adott oszlop minden egyes sorát megszorozhassa vagy eloszthassa egy alapsorral, írja be az oszlopot a kalkulációba, majd használja a **\*ALAPSOR** vagy a **/ALAPSOR** kódot. Példa: **C\*ALAPSOR** vagy **C/ALAPSOR**. ** Megjegyzés:** Ha ilyen alapsorszámítást használ az oszlopdefinícióban, akkor ügyeljen rá, hogy az adott oszlopdefinícióval használt minden egyes sordefiníció legalább egy alapsort tartalmazzon a számítás céljára.
+Létrehozhat olyan oszlopot, amely egy megadott oszlop értékeit egy alapszám százalékaként jeleníti meg. Ezzel megmutathatja a kapcsolatokat a sorok között, amelyek lehetnek például egy értékesítési sor százalékai, vagy a teljes kiadás sor részarányai. Ahhoz, hogy egy adott oszlop minden egyes sorát megszorozhassa vagy eloszthassa egy alapsorral, írja be az oszlopot a kalkulációba, majd használja a **\*ALAPSOR** vagy a **/ALAPSOR** kódot. Példa: **C\*ALAPSOR** vagy **C/ALAPSOR**. **Megjegyzés:** Ha ilyen alapsorszámítást használ az oszlopdefinícióban, akkor ügyeljen rá, hogy az adott oszlopdefinícióval használt minden egyes sordefiníció legalább egy alapsort tartalmazzon a számítás céljára.
 
 #### <a name="divide-the-amount-in-a-column-by-the-number-of-periods"></a>Egy oszlop összegének elosztása az időszakok számával
 
@@ -584,5 +590,7 @@ Egy oszlopban szereplő összeget időszakok egy megadott számával oszhat el. 
 [Sordefiníciók a pénzügyi jelentésben](row-definitions-financial-reporting.md)
 
 [Speciális formázási beállítások a pénzügyi jelentésben](advanced-formatting-options-financial-reporting.md)
+
+
 
 

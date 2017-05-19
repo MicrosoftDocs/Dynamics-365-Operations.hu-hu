@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 33851ff7c9ee2c50544589ade0191798a13706e7
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c7ab943d368c82e7d6c586ec5105210a928e2d31
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -68,7 +69,7 @@ April ezután feladja ezt a fizetést. A számla egyenlege jelenleg 700,00. Apri
 | DISC-10020 | Készpénzfizetési engedmény    | 2015-01-07  |         | 3,00                                 |                                       | 0,00    | dollár      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--normal"></a>A fennmaradó fizetés június 15-én, a készpénzfizetési engedmény használata = normál
-April kifizeti a számla fennmaradó részét július 15-én, ami a kedvezményes időszak után van. A **Nyíl tranzakciók kiegyenlítése** lapon az engedmény összege nem jelenik meg a **Becsült készpénzfizetési engedmény **mezőben, valamint a **Készpénzfizetési engedmény összege** mező értéke **0,00**. Amikor April kifizeti a maradék 700,00 egységet nem kap további engedményt.
+April kifizeti a számla fennmaradó részét július 15-én, ami a kedvezményes időszak után van. A **Nyíl tranzakciók kiegyenlítése** lapon az engedmény összege nem jelenik meg a **Becsült készpénzfizetési engedmény**mezőben, valamint a **Készpénzfizetési engedmény összege** mező értéke **0,00**. Amikor April kifizeti a maradék 700,00 egységet nem kap további engedményt.
 
 | Jelölés     | Készpénzfizetési engedmény használata | Bizonylat   | Fiók | Dátum      | Fiz. határidő  | Számla | Összeg a tranzakció pénznemében. | Pénznem | Kiegyenlítendő összeg |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

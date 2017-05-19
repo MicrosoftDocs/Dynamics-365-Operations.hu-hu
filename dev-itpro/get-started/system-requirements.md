@@ -3,7 +3,7 @@ title: "Rendszerkövetelmények"
 description: "Ez a témakör a Microsoft Dynamics 365 for Operations aktuális verziójára vonatkozó rendszerkövetelményeket sorolja fel."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: 9220c093d3f6d6700127c93651db4083be300311
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="system-requirements"></a>Rendszerkövetelmények
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör a Microsoft Dynamics 365 for Operations aktuális verziójára vonatkozó rendszerkövetelményeket sorolja fel.
 
@@ -43,6 +47,8 @@ A böngésző legfrissebb változatáért látogasson el a szoftver gyártóján
 -   A Task Recorder által generált képek rögzítéséhez és Microsoft Word-dokumentumba való ágyazásához telepítenie kell egy Chrome-bővítményt. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   A munkafolyamat-szerkesztő ClickOnce-alkalmazásként indul el. Csak a Microsoft Edge és az Internet Explorer (a Microsoft Windows egy támogatott verziójának használata esetén) támogatja a ClickOnce-alkalmazásokat. A Workflow Editor ClickOnce alkalmazáshoz 64 bit-kompatibilis operációs rendszer szükséges.
 -   A Report Designer for Financial reporting ClickOnce alkalmazásként indul el. 64 bit-kompatibilis operációs rendszert igényel. Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a Chrome böngészőt inkognitómódban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitómódban.
+-   A PDF-fájlok előnézetének megtekintéséhez olyan modern böngészők használatát javasoljuk, mint a Microsoft Edge (a legújabb nyilvánosan elérhető verzió) Windows 10 rendszeren, illetve a Google Chrome (a legújabb nyilvánosan elérhető verzió) Windows 10, Windows 8.1, Windows 8 vagy Windows 7 rendszeren vagy Google Nexus 10 táblagépeken.
+
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>A kiskereskedelmi felhő-POS pénztárgép által támogatott böngészők
 
@@ -117,11 +123,13 @@ A számítógépnek teljesítenie kell a rendszerkövetelményeket a következő
 -   Legalább 10 GB szabad lemezterület (a csatorna-adatbázis használatához sok helyre lehet szükség).
 
 ## <a name="requirements-for-development-on-local-vms"></a>A helyi virtuális gépek fejlesztési követelményei
-A helyi virtuális gépek fejlesztési követelményeiről lásd: [helyszínen futó virtuális gép](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
+A helyi virtuális gépek fejlesztési követelményeiről lásd: [helyszínen futó virtuális gép](../dev-tools/access-instances.md).
 
 <a name="see-also"></a>Lásd még
 --------
 
 [Szerezze be a Dynamics 365 for Operations bétaverzióját](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+
+
 
 

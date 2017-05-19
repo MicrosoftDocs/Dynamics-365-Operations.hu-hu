@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 1a9bf1067d0f6e0e139ef13d939d2f0e9bf2126b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8dd5cc110e83e1b10db233547b0ac2081cc6c380
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Ez a cikk a beszedési funkciók beállítását ismerteti.
 Állítson be egy korosítási időszak meghatározást. Egy korosításiidőszak-definíció meghatározza az oszlopokat, amelyek megjelennek a **Korosított egyenlegek**, **beszedési tevékenységek**, és **beszedési esetek** listaoldalon. Meghatározza továbbá a **beszedés** lapon megjelenő időszakokat. Ha be van állítva a vevőgyűjtő, akkor az ahhoz megadott definíció szerinti korosítási időszakok lesznek használatban. Ha nincsenek beállítva gyűjtők, akkor az alapértelmezett korosításiidőszak-definíció kerül használatra, amely a **Kinnlevőségek paraméterei** lapon van megadva. Ha nincs megadva alapértelmezett korosításiidőszak-definíció, akkor a **korosításiidőszak-definíciók** lapon található első korosításiidőszak-definíció kerül használatra.
 
 ## <a name="create-an-aging-snapshot"></a>Korosítási pillanatkép létrehozása
-Létrehozhat korosítási pillanatképrekordokat minden vevőre vagy egy adott vevőgyűjtőben levő vevőkre vonatkozóan. A korosítási pillanatkép információ megjelenik a** korosított egyenlegek** listaoldalon és a **beszedés** lapon. A listalap használatához előbb létre kell hozni egy korosítási pillanatképet. A listaoldal csak olyan vevőkről mutat információt, amelyek számára lett korosítási pillanatkép készítve.
+Létrehozhat korosítási pillanatképrekordokat minden vevőre vagy egy adott vevőgyűjtőben levő vevőkre vonatkozóan. A korosítási pillanatkép információ megjelenik a**korosított egyenlegek** listaoldalon és a **beszedés** lapon. A listalap használatához előbb létre kell hozni egy korosítási pillanatképet. A listaoldal csak olyan vevőkről mutat információt, amelyek számára lett korosítási pillanatkép készítve.
 
 ## <a name="optional-set-up-customer-pools"></a>Vevőgyűjtők beállítása (nem kötelező)
 A vevők csoportosítására vevőgyűjtőket hozhat létre. Használhatja a vevőgyűjtőket szűrőkként a vevői információhoz, amely a **beszedések** lap **beszedések** listaoldalán jelenik meg, vagy amikor korosítási pillanatképet hoz létre.

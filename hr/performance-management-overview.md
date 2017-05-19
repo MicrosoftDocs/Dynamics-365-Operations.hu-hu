@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 81b5c9056001b26c33b2b42a95711ff5b50243e6
-ms.openlocfilehash: 4bd934091c80ab9a4d244499d2bce2c4646c3e99
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 769680aff8c018bc042ffce98ee50a9760a65fcf
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -126,7 +127,7 @@ Csatolhat egy dokumentumot egy értékeléshez az **Értékelések** oldal **Mel
 A dolgozói ellenőrzés munkafolyamat segítségével szabályozhatja az ellenőrzések jóváhagyását. Úgy is dönthet, hogy kihagyja az automatikus munkafolyamatot, és manuálisan módosítja az értékelés állapotát, ami lehetővé teszi egyszerűbb dokumentumok, például „one-on-one” megbeszélés létrehozását a munkafolyamat használata nélkül. Az értékeléshez való hozzáférést az értékelés állapota határozza meg.
 
 1.  Az értékelés az elkészültekor a **Nincs elkezdve** állapotba kerül. Az értékelést bárki szerkesztheti.
-2.  Miután az alkalmazott lenyomta az **Ellenőrzés megkezdése** gombot, az értékelés állapota** Folyamatban** állapotra vált. Az alkalmazott ezt követően megkezdi a tartalom hozzáadását. Ekkor a vezető már nem tekintheti meg az értékelés dokumentumát.
+2.  Miután az alkalmazott lenyomta az **Ellenőrzés megkezdése** gombot, az értékelés állapota**Folyamatban** állapotra vált. Az alkalmazott ezt követően megkezdi a tartalom hozzáadását. Ekkor a vezető már nem tekintheti meg az értékelés dokumentumát.
 3.  Az alkalmazott állapota az **Ellenőrzésre kész** értékre vált.
 4.  A vezető megjegyzéseket és minősítéseket vehet fel. Ekkor csak az a vezető tekintheti meg az értékelést.
 5.  A vezető az állapotot **Végleges ellenőrzés** értékre módosítja, hogy mind a vezető, mind az alkalmazott megtekinthesse és megbeszélhesse az értékelést. Megadhatja a paraméterekben, hogy az értékelés ekkor még szerkeszthető legyen-e. Ez a lépés opcionális olyankor, amikor a vezető egyszerűen meg szeretné osztani az ellenőrzést az alkalmazottal, és **Kész** állapotúvá szeretné állítani, amikor elkészült.

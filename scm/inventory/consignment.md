@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: d9dcdd63649d6dbff96efe2eec7cad34025ab2ee
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 01ab473951bc04c68a0248b37041a116eebcaea9
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ Ebben a példában az USMF vállalat szállítmányozási szerződést köt az U
 Az USMF további ismétlődő folyamatokat végez:
 
 -   A szállító által birtokolt készletnek a különböző raktárok közötti fizikai mozgatásának feldolgozása átviteli napló segítségével történik.
--   A tényleges, rendelkezésre álló készlet egy** Cikkleltár **napló segítségével frissül. A leltárt a szállító is használhatja az aktuális készlet frissítésére, ha rendelkezik ehhez engedéllyel.
+-   A tényleges, rendelkezésre álló készlet egy**Cikkleltár**napló segítségével frissül. A leltárt a szállító is használhatja az aktuális készlet frissítésére, ha rendelkezik ehhez engedéllyel.
 
 Az US-104 szállító figyelemmel követheti a frissítéseket a **Szállítmány aktuális készlete** oldal segítségével.
 
@@ -67,14 +68,14 @@ A szállítmány feltöltési rendelése olyan dokumentum, amely egy szállító
 ## <a name="inventory-ownership-change-journal"></a>Készlet tulajdonosváltozási naplója
 A készlettulajdonos-változási napló segítségével végezhető el az a folyamat, amelynek során a tulajdonjog átszáll a szállítóról a fogadó jogi személyre. Várhatóan nem jönnek létre készlettranzakciók a naplóhoz kapcsolódóan. Csak olyan készlettranzakciók jönnek létre, amelyek a feladott naplóhoz kapcsolódnak. Mikor kerül feladásra a napló?
 
--   A szállító által birtokolt készlet kiadása egy **Eladva **állapotú **Tulajdonos módosítása** hivatkozással történik.
+-   A szállító által birtokolt készlet kiadása egy **Eladva**állapotú **Tulajdonos módosítása** hivatkozással történik.
 -   Megtörténik az aktuális készlet érkeztetése felhasználást végző jogi személyhez egy termékbevételezéssel frissített készlettranzakcióval, a beszerzési rendelésen. Ezzel a rendelés állapotát **Beérkezettre** állítja. A szállítmányhoz használt beszerzési rendelések **Származás** mezőjének beállítása **Szállítmány**.
 
 A szállítmány beszerzési rendelésének soraiban szereplő mennyiséget nem lehet frissíteni a rendelés létrehozása után. 
 
 [![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
-## <a name="vendor-collaboration-in-consignment-processes"></a>Szállítói együttműködés a bizományosi folyamatokban.
+## <a name="vendor-collaboration-in-consignment-processes"></a>Szállítói együttműködés a szállítmányozási folyamatokban.
 A szállítói együttműködés felülete három oldallal rendelkezik a bejövő szállítmány folyamatához kapcsolódóan:
 
 -   **Beszerzési rendelések** **szállítmány-készlet felhasználása** - a szállítmányozási folyamat alapján megváltozott tulajdonjoghoz kapcsolódó beszerzési rendelés adatainak részleteit tünteti fel.

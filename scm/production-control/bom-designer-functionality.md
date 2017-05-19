@@ -3,7 +3,7 @@ title: "Az anyagjegyzék-tervező szolgáltatás"
 description: "Ez a cikk bemutatja, hogyan alkalmazza az anyagjegyzék tervezőlapot az anyagjegyzékek (BOM) fastruktúráinak tervezésére és az azokkal történő munkára. A Beállítások gombra kattintva különböző konfigurációkat állíthat be, és eldöntheti, hogy milyen információkat kíván megjeleníteni a fa soraiban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-08 21 - 09 - 22
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2c98039c9fa8179408394f9f66b9fca0f8cad3fe
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ff482c183276a99a3c9a632d41d9121bf77befbf
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="bom-designer-functionality"></a>Az anyagjegyzék-tervező szolgáltatás
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk bemutatja, hogyan alkalmazza az anyagjegyzék tervezőlapot az anyagjegyzékek (BOM) fastruktúráinak tervezésére és az azokkal történő munkára. A Beállítások gombra kattintva különböző konfigurációkat állíthat be, és eldöntheti, hogy milyen információkat kíván megjeleníteni a fa soraiban.
 
@@ -95,7 +99,7 @@ Az anyagjegyzékre és az útvonalra érvényes szűrő megjelenik az Anyagjegyz
 Ha az Anyagjegyzék-tervezőt egy- vagy többszintű kitárolási értékkel rendelkező látszólagos típusok áttekintésére vagy szerkesztésére használja, a felső cikkhez rendelt útvonal általában a teljes anyagjegyzék-hierarchiára is kiterjed. Az áttekintés egyszerűsítéséhez zárolhatja a felső szintű útvonalat a nézetben, ha a **Megtekintés** &gt; **Útvonal zárolása** menüpontra kattint. Az útvonal zárolásának feloldásához kattintson a **Megtekintés** &gt; **Útvonal feloldása** menüpontra.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Anyagjegyzékek és anyagjegyzéksorok hozzáadása és módosítása
-Használja az **Anyagjegyzéksorok** vagy az **Anyagjegyzék** funkciókat anyagjegyzéksorok és anyagjegyzékek módosítására. Ha kiválaszt a fában egy csomópontot, a csomópont típusa határozza meg, milyen funkciók érhetők el.
+Használja az **Anyagjegyzéksorok**vagy az **Anyagjegyzék** funkciókat anyagjegyzéksorok és anyagjegyzékek módosítására. Ha kiválaszt a fában egy csomópontot, a csomópont típusa határozza meg, milyen funkciók érhetők el.
 
 | Funkció                            | Leírás                                                                                               | Csomóponttípus és feltételek                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,6 +119,8 @@ Kattintson a **Beállítás** menüpontra az Anyagjegyzék-tervező fanézetébe
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Anyagjegyzék         | A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek a faszerkezetben jelennek meg. Az Anyagjegyzék-tervező a kiválasztott kritériumokat mindkét lap alján megjeleníti. |
 | Útvonal       | A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek az útvonalak között megjelennek.                                                                                    |
+
+
 
 
 

@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 2c99b2e1f7ddecb61be62832ca1a8d3ac1fd21a8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 94f5874cb24b53476843f1a073dc9c4cfdb36ac9
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -52,7 +53,7 @@ Annak érdekében, hogy a billentyűket könnyebben elérhesse, a jövőben bill
 ## <a name="where-is-the-view-details-functionality-in-dynamics-365-for-operations"></a>Hol található a Részletek megtekintése funkció a Dynamics 365 for Operationsben?
 A **Részletek megtekintése** beállítás több módon is elérhető:
 
--   Ha valamelyik vezérlő rendelkezik **Részletek megtekintése **lehetőséggel, és a vezérlő értékkel is rendelkezik, ez az érték fog megjelenni hivatkozásként. Rákattinthat a hivatkozásra a további részleteket tartalmazó lap megnyitásához.
+-   Ha valamelyik vezérlő rendelkezik **Részletek megtekintése**lehetőséggel, és a vezérlő értékkel is rendelkezik, ez az érték fog megjelenni hivatkozásként. Rákattinthat a hivatkozásra a további részleteket tartalmazó lap megnyitásához.
 -   A **Részletek megtekintése** lehetőség is megtalálható a Dynamics 365 for Operations helyi menüjében. Amennyiben szeretne többet megtudni arról, hogy mely helyi menük jelennek meg a Dynamics 365 for Operations rendszerben az egér jobb gombjával kattintva, lásd az előző fejezetet.
 
 

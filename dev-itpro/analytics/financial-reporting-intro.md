@@ -1,9 +1,9 @@
 ---
 title: "Pénzügyi jelentéskészítés a Dynamics 365 for Operations rendszerben"
 description: "A Pénzügyi jelentéskészítés a Microsoft Dynamics 365 for Operations rendszerben lehetővé teszi üzleti és pénzügyi szakembereknek pénzügyi kimutatások létrehozását, karbantartását, telepítését és megtekintését. A hagyományos jelentési korlátokon túlmenően különböző típusú jelentések hatékony tervezésében nyújt segítséget."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 519b3d3fb53b20d0014c97bcb1b9b21802a376d6
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fee79dad870bfbf8852198c7e825cfaa95a8d10b
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="financial-reporting-for-dynamics-365-for-operations"></a>Pénzügyi jelentéskészítés a Dynamics 365 for Operations rendszerben
+
+[!include[banner](../includes/banner.md)]
+
 
 A Pénzügyi jelentéskészítés a Microsoft Dynamics 365 for Operations rendszerben lehetővé teszi üzleti és pénzügyi szakembereknek pénzügyi kimutatások létrehozását, karbantartását, telepítését és megtekintését. A hagyományos jelentési korlátokon túlmenően különböző típusú jelentések hatékony tervezésében nyújt segítséget.
 
@@ -36,8 +40,7 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 | Összetevő        | Függvények                                                                                                                                                                                                                                                                           | További információk                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Jelentéstervező  | A jelentések építőelemeit hozhatja létre ezzel, amelyekből később jelentést határozhat meg és hozhat létre. A jelentésvarázsló a kevésbé tapasztalt felhasználókat kalauzolja végig a tervezési folyamaton. A haladó felhasználók létrehozhatnak új jelentés-építőelemeket vagy kedvükre módosíthatják a meglévő építőelemeket. |                                                                                                 |
-| Webes megjelenítő       | Jelentések megtekintése a böngészőben. A Web Viewer nem igényli pénzügyi jelentéskészítő kiszolgáló-összetevők telepítését.                                                                                                                                                        | [Webes megjelenítő](financial-reporter-designer-web-client.md)            |
-| Jelentésütemezések | Ütemezzen egyetlen jelentést vagy jelentéscsoportot úgy, hogy az rendszeressé váljon.                                                                                                                                                                                          | [A jelentés létrehozása](/dynamics365/operations/financials/general-ledger/generate-financial-report) |
+| Jelentésütemezések | Ütemezzen egyetlen jelentést vagy jelentéscsoportot úgy, hogy az rendszeressé váljon.                                                                                                                                                                                          | [Pénzügyi jelentés létrehozása](generate-financial-report.md) |
 
 ## <a name="features"></a>Jellemzők
 <table>
@@ -78,13 +81,15 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 <li>Dimenzió-szűrés hozzáadása jelentés tartalmának egy adott dimenzióra vagy a dimenziók kombinációjára való korlátozására.</li>
 <li>Attribútum-szűrés hozzáadása jelentés tartalmának egy adott attribútumra vagy a attribútumok kombinációjára való korlátozására.</li>
 </ul>
-További információkért lást az „Interaktív összetevők és navigációs funkciók” szakaszt az <a href="https://technet.microsoft.com/en-us/library/dn469079.aspx">Asztali megjelenítő felületen</a> .</td>
+</td>
 </tr>
 </tbody>
 </table>
 
 #<a name="see-also"></a>Lásd még
+[Pénzügyi jelentés létrehozása](generate-financial-report.md)
 
-[Pénzügyi jelentés készítése]((dynamics365\operations\financials\general-ledger\generate-financial-report)
+
+
 
 

@@ -3,33 +3,37 @@ title: "Mi az, ami új vagy módosított"
 description: "Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Operations rendszer legújabb verzióinak új szolgáltatásait."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Core
+ms.search.scope: Operations, Core
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0d954043c461975a70f9e0ab867f30cadd9800b5
-ms.openlocfilehash: 2896a11f79d5cbb00137a439e0a2c8caaee705a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed"></a>Mi az, ami új vagy módosított
 
+[!include[banner](../includes/banner.md)]
+
+
 Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Operations rendszer legújabb verzióinak új szolgáltatásait.
 
-A legújabb verzióra való frissítéshez lásd: [A Dynamics 365 for Operations legújabb verziójára történő frissítés folyamata](/migration-upgrade/upgrade-latest-update.md).
+A legújabb verzióra való frissítéshez lásd: [A Dynamics 365 for Operations legújabb verziójára történő frissítés folyamata](../migration-upgrade/upgrade-latest-update.md).
 <table>
 <colgroup>
 <col width="20%" />
@@ -50,15 +54,24 @@ A legújabb verzióra való frissítéshez lásd: [A Dynamics 365 for Operations
 <tbody>
 <tr class="odd">
 <td>A Microsoft Dynamics 365 for Operations platformja</td>
+<td>6-as platformfrissítés</td>
+<td> 7.0.4509.16180</td>
+<td>április 2017.</td>
+<td><a href="whats-new-platform-update-6.md">Mi új vagy mi változott a Dynamics 365 for Operations 6. platformfrissítésében (2017. április)</a></td>
+</tr>
+<tr class="odd">
+<td>A Microsoft Dynamics 365 for Operations platformja</td>
+<td>5-as platformfrissítés</td>
+<td> 7.0.4475.16165</td>
+<td>március 2017.</td>
+<td><a href="whats-new-platform-update-5.md">Mi új vagy mi változott a Dynamics 365 for Operations 5. platformfrissítésében (2017. március)</a></td>
+</tr>
+<tr class="odd">
+<td>A Microsoft Dynamics 365 for Operations platformja</td>
 <td>4-as platformfrissítés</td>
-<td>7.0.4425.16160</td>
+<td> 7.0.4425.16161</td>
 <td>február 2017.</td>
-<td><ol>
-<li>Lépjen a <a href="https://roadmap.dynamics.com/">Dynamics 365 tervhez</a>.</li>
-<li>Válassza ki az <strong>Újdonságok</strong> lapfület.</li>
-<li>Az <strong>Alkalmazások</strong> szakaszban válassza ki a <strong>Dynamics 365 for Operations</strong> pontot.</li>
-<li>A <strong>Területek</strong> szakaszban válassza ki a <strong>Felhőplatform</strong> lehetőséget.</li>
-</ol></td>
+<td><a href="whats-new-platform-update-4.md">Mi új vagy mi változott a Dynamics 365 for Operations 4. platformfrissítésében (2017. február)</a></td>
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -111,6 +124,8 @@ A legújabb verzióra való frissítéshez lásd: [A Dynamics 365 for Operations
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: c29c95fc6abd13e668c44d3ccf437bb0e879e46b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11755e4ab4b3c1f55da80e57ff96e0b13c84c697
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -209,7 +210,7 @@ Az alábbi eljárás ismerteti, hogyan lehet projektcsapatot létrehozni.
 1.  Jelöljön ki egy projektet az **Összes projekt** listaoldalon, és kattintson a **Szerkesztés**lehetőségre.
 2.  A **Projektcsapat és ütemezés** lapon a **Záró dátum ütemezése** mezőbe írja be az ütemezés kezdő dátumát, egy hónapot hozzáadva. Például ha az ütemezés kezdő dátuma 2017. június 24. (24/06/2017), írja be **24/07/2017**.
 3.  Kattintson a **Hozzáadás** parancsra.
-4.  A **Szerepkör hozzáadása a projekthez** ablakban, a **Szerepkör **mezőben válassza a **Projektmenedzser** lehetőséget.
+4.  A **Szerepkör hozzáadása a projekthez** ablakban, a **Szerepkör**mezőben válassza a **Projektmenedzser** lehetőséget.
 5.  Kattintson a **Szükséges kompetenciák** lehetőségre.
 6.  A **Jellemző választása** oldalon a Vezető projektmenedzser szerepkörhöz korábban beállított jellemzők alapértelmezés szerint be vannak jelölve. Kattintson az **OK** gombra.
 7.  A **Szerepkörök hozzáadása projekthez** oldalon az **Erőforrások száma** mezőbe írja be a következőt: **1**.
@@ -316,7 +317,7 @@ A WBS további lehetőségekkel bővült az erőforrás funkció jobb használha
 
 > [!NOTE] 
 > Nem kap figyelmeztetést, hogy az adott erőforrás most 2, mert az erőforrások száma 1 marad.
-18. Az a **munkalebontási struktúra **oldalon, a WBS-t az erőforrás-hozzárendelés ellenőrzése, és kattintson **Mentés**.
+18. Az a **munkalebontási struktúra**oldalon, a WBS-t az erőforrás-hozzárendelés ellenőrzése, és kattintson **Mentés**.
 
 ## <a name="resource-fulfillment-for-planned-resources"></a>A tervezett erőforrások erőforrás-teljesítése
 Egy projektvezető megtervezheti a szükséges erőforrás-szerepköröket egy projekthez. Az erőforrás-kezelő ezeket a tervezett erőforrásokat kérelemként fogja látni az **Erőforrás teljesítése** oldalon, és tényleges erőforrásokat rendelhet hozzzájuk.

@@ -3,7 +3,7 @@ title: "Hol érdemes kezdeni?"
 description: "Tegye meg itt gyorsan az első lépéseket, és ismerje meg a Microsoft Dynamics 365 for Operations felhasználói felületét."
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ o# ms.search.industry:
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 8f75131c6be6ce0f23cce456405d5e211912f19a
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69995d2f8a463e82e7a26b673737889b4ea17402
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="where-to-start"></a>Hol érdemes kezdeni?
+
+[!include[banner](../includes/banner.md)]
+
 
 Tegye meg itt gyorsan az első lépéseket, és ismerje meg a Microsoft Dynamics 365 for Operations felhasználói felületét.
 
@@ -36,7 +40,7 @@ A következő források áttekintést nyújtanak arról, hogyan működhet együ
 - [Microsoft FastTrack for Dynamics 365 – áttekintés](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Regisztrálás előfizetésre](../dev-tools/sign-up-preview-subscription.md) 
 - [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations ügyfelek](../lifecycle-services/lcs-works-lcs.md) 
-- [Hogyan szerezhetik meg a Dynamics 365 for Operations 2012 helyszíni verzióját azok az ügyfelek, akik a Microsoft Dynamics 365 for Operationst felhőszolgáltató révén vásárolták meg?](../deployment/csp-download-customersource.md)
+- [Hogyan szerezhetik meg a Dynamics AX 2012 helyszíni verzióját azok az ügyfelek, akik a Microsoft Dynamics 365 for Operationst felhőszolgáltató révén vásárolták meg?](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Felhasználói felület
 Az alábbi erőforrások a Dynamics 365 for Operations felhasználói élménnyel kapcsolatban nyújtanak információt. 
@@ -71,12 +75,12 @@ A Feladatrögzítő egy olyan Dynamics 365 for Operations-eszköz, amellyel a fe
 <a name="see-also"></a>Lásd még
 --------
 
-[Új képzési könyvtárak létrehozása a Dynamics 365 for Operations számára a Lifecycle Services szolgáltatáson belül a Feladatrögzítő segítségével (külső hivatkozás)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Új Feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
 
 [Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 
 [Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
+
+
 
 

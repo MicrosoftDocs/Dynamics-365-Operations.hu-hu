@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: b46037b9509f329e18f0da69d530f6b1f88c8888
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fef518bf156aa45dff66d21d49b433ed613cead1
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ A fizetési javaslat lekérdezés különféle lapokat tartalmaz, melyek mindegy
 
 ## <a name="parameters"></a>Paraméterek
 -   **Számlák kiválasztása a következők alapján** – A dátumok alapján beállított számlák a **Dátumtól** és a **Dátumig** mezők segítségével szűrhetőek határidő, készpénzfizetési engedmény dátuma vagy épp mindkettő szerint. Amennyiben a készpénzfizetési engedmény dátuma opciót alkalmazza, a rendszer először azokra a számlákra keres rá, amelyeknél a megadott időintervallumba esik a készpénzfizetési engedmény időpontja. A rendszer ezután meghatározza, hogy a számla megfelel-e készpénzfizetési engedménynek a lejárati idő alapján, így biztosítva, hogy az engedmény még nem-e járt le.
--   **Dátumtól** és** Dátumig** – Az olyan számlák, melyeknek van lejárati határideje vagy készpénzfizetési engedmény határideje a megadott időintervallumban lesznek fizetésre kiválasztva.
+-   **Dátumtól** és**Dátumig** – Az olyan számlák, melyeknek van lejárati határideje vagy készpénzfizetési engedmény határideje a megadott időintervallumban lesznek fizetésre kiválasztva.
 -   **Fizetés dátuma** – Amennyiben konkrét dátumot ad meg, minden kifizetés az adott napra lesz kiírva. A **Minimális kifizetési dátum** mezőt a program figyelmen kívül hagyja.
 -   **Minimális kifizetési dátum** – adja meg a minimális kifizetési dátumot. Tegyük fel, hogy a **Dátumtól** és a **Dátumig** mezőben a szeptember elsejétől szeptember tizedikéig tartó időszakot adja meg, és a minimális kifizetési dátum szeptember ötödike lesz. Ebben az esetben az összes szeptember 1. és 5. között kifizetendő számla kifizetési dátuma szeptember 5. lesz. Azonban minden olyan számlánál, melynek a kifizetési határideje szeptember 5. és 10. közé esik, a számla saját határideje lesz az érvényes kifizetési határidő.
 -   **Összeghatár** – Adja meg az összes kifizetés maximális összegét.

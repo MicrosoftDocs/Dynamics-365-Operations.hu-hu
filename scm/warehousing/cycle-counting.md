@@ -3,7 +3,7 @@ title: "Ciklikus leltározás"
 description: "Ez a cikk leírja, hogyan használhatja a ciklikus leltározást a raktározási megoldással, amely a Raktárkezelésben érhető el. A cikk nem vonatkozik a raktározási megoldásra, amely a Készletkezelés modulból érhető el."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: ffc1523d53732616d77511f39b72efc8f97744eb
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 387d114936567fc471cdcafcb2e93c1704db7ead
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cycle-counting"></a>Ciklikus leltározás
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk leírja, hogyan használhatja a ciklikus leltározást a raktározási megoldással, amely a Raktárkezelésben érhető el. A cikk nem vonatkozik a raktározási megoldásra, amely a Készletkezelés modulból érhető el.
 
@@ -39,7 +43,6 @@ Az alábbi ábra a ciklikus leltározás folyamatát mutatja be. ![Ciklikus lelt
 
 ## <a name="cycle-counting-prerequisites"></a>A ciklikus leltározás előfeltételei
 Az alábbi táblázat bemutatja a ciklikus leltár megkezdése előtt biztosítandó előfeltételeket.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,7 +85,7 @@ Az alábbi táblázat bemutatja a ciklikus leltár megkezdése előtt biztosíta
 <li>Ciklikus leltározás csoportosítása</li>
 <li>Eseti ciklikus leltár</li>
 </ul>
-További információkét lásd: <a href="configure-mobile-devices-warehouse">A mobileszközök konfigurálása a raktári munkához</a>.</li>
+</li>
 <li>Mobileszközök menüpontjainak beállítása.</li>
 <li>Hozzon létre egy munkafelhasználói fiókot, és társítson mobileszköz-menüt a munkafelhasználó azonosítójához.</li>
 </ul></td>
@@ -133,6 +136,9 @@ A leltározási eltérés akkor fordul elő a következő esetekben, ha a **cikl
 -   A számolt érték eltér az aktuális készlet mennyiségétől, és nincsenek eltérési határértékek beállítva.
 
 A számolt érték eltéréseit módosíthatja, majd elfogadhatja a számolt értéket a **Ciklikus leltározás ellenőrzése függőben** oldalon. A cikkmennyiség módosított száma jóváhagyható az **Aktuális készlet hely szerint** oldalon. Ha az eltérés nem hagyható jóvá, akkor a számolt érték elutasításra kerül.
+
+# <a name="see-also"></a>Lásd még
+[Mobileszköz konfigurálása raktári munkához](configure-mobile-devices-warehouse.md)
 
 
 

@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 79a43c35691f16d773b88faad63c4ab79cb93f1f
-ms.openlocfilehash: c6fb3922ba2c4b15f1043d0bcbac40ff2da9a469
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82891b44a3ba3da23f3ce7a9b86be5e8f88d2afd
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -794,7 +795,7 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
     3.  A **parancssor** ablakában írja be az **iisreset /Restart** parancsot, majd nyomja le az Enter billentyűt.
     4.  Az IIS újraindítása után indítsa újra a Modern POS alkalmazást.
 -   Miközben gyakori változtatásokat hajt végre a perifériákon, ha emellet gyakran indítja el a pénztárügyfelet és lép ki belőle, az előző pénztármunkamenetből származó dllhost folyamat zavarhatja az aktuális munkamenetet. Ebben az esetben az eszköz néha nem használható, amíg be nem zárja az előző munkamenetet kezelő dinamikus csatolású függvénytár (DLL) gazdagépet. A DLL-gazdagép bezárásához kövesse az alábbi lépéseket:
-    1.  A **Start** menübe írja be a következőt: **Task manager**.
+    1.  A **Start** menübe írja be a következőt: **Feladatkezelő**.
     2.  A keresési eredményeknél kattintson a **Feladatkezelő** találatra.
     3.  A Feladatkezelőben, a **Részletek** fülön, kattintson a **Név** oszlopfejlécre a táblázat rendezéséhez név szerint.
     4.  Görgesse lefelé, amíg meg nem találja a dllhost.exe alkalmazást.

@@ -1,9 +1,9 @@
 ---
 title: "A pénzügyi jelentési adatpiac visszaállítása az adatbázis visszaállítása után"
 description: "Ez a témakör ismerteti, hogyan végezhető el a pénzügyi jelentési adatpiac visszaállítása a Microsoft Dynamics 365 for Operations adatbázis visszaállítása után."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3967cbb869fbb23d5d7716f619e4c22b4a273921
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d4ce390c62cbfb1f693410b004aa296c0ed75eb2
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>A pénzügyi jelentési adatpiac visszaállítása az adatbázis visszaállítása után
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör ismerteti, hogyan végezhető el a pénzügyi jelentési adatpiac visszaállítása a Microsoft Dynamics 365 for Operations adatbázis visszaállítása után. 
 
@@ -43,7 +47,11 @@ Először exportálja a Jelentéstervezőben található jelentésterveket, a k�
 5.  Adjon meg egy fájlnevet, és jelöljön ki egy biztonságos helyet, ahol menteni szeretné az exportált jelentésdefiníciókat.
 6.  Kattintson a **Mentés** gombra.
 
-A fájl másolhatók, illetve feltölthető egy biztonságos helyre, hogy később importálható legyen egy másik környezetbe. A Microsoft Azure tárolófiók használatával kapcsolatos információkért lásd: [Adatátvitel az AzCopy parancssori segédprogrammal](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Megjegyzés:** A Dynamics 365 for Operations megállapodás részeként a Microsoft nem biztosít tárolófiókot. Be kell szereznie egy tárolófiókot, vagy egy külön Azure-előfizetésből származó tárolófiókot kell használnia. **Fontos:** Legyen tisztában a D-meghajtó viselkedésével az Azure virtuális gépeken Ne tárolja itt véglegesen az exportált építőelem-csoportokat. További információt az ideiglenes meghajtókkal kapcsolatban itt talál: [A Windows Azure virtuális gépek ideiglenes meghajtóinak ismertetése](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+A fájl másolhatók, illetve feltölthető egy biztonságos helyre, hogy később importálható legyen egy másik környezetbe. A Microsoft Azure tárolófiók használatával kapcsolatos információkért lásd: [Adatátvitel az AzCopy parancssori segédprogrammal](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+> [!NOTE]
+> A Dynamics 365 for Operations megállapodás részeként a Microsoft nem biztosít tárolófiókot. Be kell szereznie egy tárolófiókot, vagy egy külön Azure-előfizetésből származó tárolófiókot kell használnia. 
+> [!WARNING]
+> Legyen tisztában a D-meghajtó viselkedésével az Azure virtuális gépeken Ne tárolja itt véglegesen az exportált építőelem-csoportokat. További információt az ideiglenes meghajtókkal kapcsolatban itt talál: [A Windows Azure virtuális gépek ideiglenes meghajtóinak ismertetése](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ## <a name="stop-services"></a>Szolgáltatások leállítása
 A Távoli asztal segítségével csatlakozzon az összes számítógéphez a környezetében, és állítsa le a következő Windows-szolgáltatásokat a services.msc segítségével:
@@ -96,7 +104,9 @@ A korábban leállított szolgáltatások újraindításához használja a Servi
 Importálja a jelentésterveket a Jelentéstervezőből, az exportálás során létrehozott fájl használatával:
 
 1.  A Jelentéstervezőben kattintson a **Vállalat** &gt; **Építőelem-csoportok** lehetőségére.
-2.  Válassza ki az exportálandó építőelem-csoportot, majd kattintson az **Export** lehetőségre. **Megjegyzés:** A Dynamics 365 for Operations, csak egy építőelem-csoportot támogat, az **Alapértelmezett** csoportot.
+2.  Válassza ki az exportálandó építőelem-csoportot, majd kattintson az **Export** lehetőségre. 
+    > [!NOTE]
+    > A Dynamics 365 for Operations, csak egy építőelem-csoportot támogat, az **Alapértelmezett** csoportot.
 3.  Válassza ki az **Alapértelmezett** építőelemet, és kattintson az **Importálás** lehetőségre.
 4.  Válassza ki az exportált jelentésdefiníciókat tartalmazó fájlt, és kattintson a **Megnyitás** lehetőségre.
 5.  Jelölje ki az importálandó jelentésdefiníciókat az Importálás párbeszédpanelben:
@@ -104,6 +114,8 @@ Importálja a jelentésterveket a Jelentéstervezőből, az exportálás során 
     -   Konkrét jelentések, sorok, oszlopok, fák vagy dimenziókészletek importálásához válassza ki az importálandó jelentéseket, sorokat, oszlopokat, fákat vagy dimenziókészleteket.
 
 6.  Kattintson az **Importálás** gombra.
+
+
 
 
 

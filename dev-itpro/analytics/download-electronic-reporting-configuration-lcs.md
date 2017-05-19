@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 9dca5dec846670da25926826f59d7bce0fa0dcea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e2f3a352ca70472de838271fdedfede575cb839d
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát mutatja be.
 
@@ -43,9 +47,10 @@ Ez az oktatóanyag bemutatja az elektronikus jelentési (ER) konfiguráció leg�
     1.  Kattintson a **Hozzáadás** lehetőségre egy új tárház hozzáadásához.
     2.  Válassza ki az **LCS** lehetőséget a tárház típusaként.
     3.  Kattintson a **Tárház létrehozása** lehetőségre.
-    4.  Írja be a tárház nevét és leírását.
-    5.  Kattintson az **OK** lehetőségre az új tárház bejegyzés megerősítéséhez.
-    6.  A rácsban jelölje be az **LCS** típus új tárházát.
+    4. Ha a rendszer rákérdez, kövesse engedélyezési útmutatásokat.
+    5.  Írja be a tárház nevét és leírását.
+    6.  Kattintson az **OK** lehetőségre az új tárház bejegyzés megerősítéséhez.
+    7.  A rácsban jelölje be az **LCS** típus új tárházát.
 
 6.  Kattintson a **Megnyitás** lehetőségre a kijelölt tárház ER-konfigurációk listájának megtekintéséhez. [![Az ER frissítése az MS LCS rendszerből - LCS-tárház készítése](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  A bal oldali ablaktáblában jelölje ki a konfigurációkban jelölje ki a szükséges ER-konfigurációt.
@@ -58,5 +63,7 @@ Ez az oktatóanyag bemutatja az elektronikus jelentési (ER) konfiguráció leg�
 --------
 
 [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
+
+
 
 

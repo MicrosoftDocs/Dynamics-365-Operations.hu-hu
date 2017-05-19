@@ -3,7 +3,7 @@ title: "A termékkonfigurációs modellek kifejezésmegszorításai"
 description: "Ez a témakör leírja a kifejezés megszorítások és táblamegszorítások. Megszorítások szabályozni a termékattribútum-értékeinek, amelyből választani lehet a termékek egy értékesítési rendelés, árajánlat, beszerzési rendelés vagy termelési rendelés konfigurálásakor. Kifejezés megszorítások vagy táblamegszorítások, attól függően, hogy hogyan szeretné hozhatják létre a megszorítások használhatja."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 08 - 06
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 1fe8a0d90a3f707fa7b0fea0310c819ce5040a42
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 1a08f537d87178973b3ce90bcb60b891bef1141e
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>A termékkonfigurációs modellek kifejezésmegszorításai
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a témakör leírja a kifejezés megszorítások és táblamegszorítások. Megszorítások szabályozni a termékattribútum-értékeinek, amelyből választani lehet a termékek egy értékesítési rendelés, árajánlat, beszerzési rendelés vagy termelési rendelés konfigurálásakor. Kifejezés megszorítások vagy táblamegszorítások, attól függően, hogy hogyan szeretné hozhatják létre a megszorítások használhatja. 
 
@@ -40,7 +44,7 @@ Táblamegszorítások-kombinációkat termék konfigurálásakor attribútumok m
 
 ### <a name="example-of-a-table-constraint"></a>Táblamegszorítás típusa
 
-Ez a példa azt mutatja, hogyan korlátozhatja egy adott kabinetfájl befejeződik és előlapot hangszóró konfigurációját. Az első táblázat mutatja a méreteket és a televízió, általában elérhető konfigurációs típusú. Az értékek a **Hangszóró borítása** és **Elülső rács** attribútumtípusokhoz vannak meghatározva.
+Ez a példa azt mutatja, hogyan korlátozhatja egy adott kabinetfájl befejeződik és előlapot hangszóró konfigurációját. Az első táblázat mutatja a méreteket és a televízió, általában elérhető konfigurációs típusú. Határozhatók meg az értékeket a **Kabinetfájl befejezés**és **Első rács** attribútum típusa.
 
 | Attribútumtípus | Értékek                      |
 |----------------|-----------------------------|
@@ -84,7 +88,7 @@ A termék a következő megszorítás beállítások használatával konfigurál
 (Szín == "Fekete" & (méret == "30" |} méret == "50")) |} (szín == "Piros" & mérete = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>I. operátorokkal, vagy infix a jelölés kifejezés megszorítások írva?
-Előtag rendelkezésre álló operátorok a használatával egy Kifejezésmegszorítás írhat vagy használatával infix jelölés. A műveletek **Min**, **Max** és **Abs ** egy infix jelölés nem használhat. A legtöbb programnyelven alapértelmezésként ezen operátorok jelennek meg.
+Előtag rendelkezésre álló operátorok a használatával egy Kifejezésmegszorítás írhat vagy használatával infix jelölés. A **Min**, **Max** és **Abs** operátoroknál nem használhat infix jelölést. A legtöbb programnyelven alapértelmezésként ezen operátorok jelennek meg.
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>I. operátorokkal, vagy infix a jelölés kifejezés megszorítások írva?
 A következő táblázatokban a listában az operátorok és infix jelölések, amely lehet használni, amikor egy Kifejezésmegszorítás összetevőhöz ír egy termékkonfigurációs modell. A példákban a első táblázatban megtekintheti a kifejezés írása infix jelöléssel, vagy az operátorok segítségével.
@@ -248,5 +252,7 @@ Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszete
 [Kifejezésmegszorítás létrehozása (Feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
 [Kalkuláció hozzáadása termékkonfigurációs modellhez (Feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+
+
 
 

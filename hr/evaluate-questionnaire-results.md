@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: bcf59ea8862280675c9fb711d2aab1e8dff18806
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0285103ef30ebf8322f2bf60941b07c7496e9c70
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>A kérdőív megtekintése, és az eredmények kiértékelése
+
+[!include[banner](includes/banner.md)]
+
 
 Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait. 
 
@@ -56,7 +60,8 @@ A **Válaszok** oldalon megtekinthet részleteket a válaszokról, az elért pon
 -   **Válasz jelentés** – Ez a jelentés a válaszadó kérdésenkénti válaszait mutatja.
 -   **Helytelen válaszok** – Ez a jelentés a válaszadó által adott helytelen válaszokhoz kapcsolódó információkat mutatja.
 
-**Megjegyzés:** Az **Eredmények** jelentés csak akkor érhető el, ha válaszcsoportokat használt a kérdőívben, valamint ha kiválasztotta az **Eredményoldal** lehetőséget a **Kérdőívek** oldalon. A **Válasz** jelentés és a **Helytelen válaszok** jelentés csak akkor érhető el, ha kiválasztotta a **Válaszjelentés** lehetőséget a **Kérdőívek** oldalon.
+> **Megjegyzés**
+>   Az **Eredmények** jelentés csak akkor érhető el, ha válaszcsoportokat használt a kérdőívben, valamint ha kiválasztotta az **Eredményoldal** lehetőséget a **Kérdőívek** oldalon. A **Válasz** jelentés és a **Helytelen válaszok** jelentés csak akkor érhető el, ha kiválasztotta a **Válaszjelentés** lehetőséget a **Kérdőívek** oldalon.
 
 ## <a name="questionnaire-statistics"></a>Kérdőív-statisztika
 Használhat kérdőív statisztikákat a kitöltött kérdőívek eredményének kiértékeléséhez, az Ön által megszabott számítások alapján. A számítások megadásához az alábbi feladatokat kell elvégeznie:
@@ -79,5 +84,7 @@ A program menti a megadott beállításokat, így ezek az eredmények ismételt 
 [Kérdőívek használata](questionnaires.md)
 
 [Kérdőívek kiosztása és kitöltése](distribute-questionnaires.md)
+
+
 
 

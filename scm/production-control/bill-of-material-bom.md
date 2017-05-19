@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: a3d2d9d2d8dd518d04b289bb5326bcbf34f0cdc2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e7a2b316b7c7f153c0d41e31a0dffea1cf6f20b0
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -110,7 +111,7 @@ Vegye figyelembe, hogy a látszólagos típusok jellemzően azért kerülnek has
 
 ### <a name="pegged-supply"></a>Rögzített készletek
 
-Válassza ki a** Rögzített készletek** sortípust amikor résztermelést, ami egy anyagjegyzék sor esemény kanban, vagy közvetlen beszerzési rendelést kíván létrehozni bármely olyan termékváltozathoz, amire az anyagjegyzék sor hivatkozik. A résztermelés, az esemény kanban vagy a beszerzési rendelés akkor készül el, amikor Ön elvégzi a termelési megrendelés becslését. A szükséges cikkmennyiségeket a program automatikusan lefoglalja a fogyasztó termelési rendeléshez.
+Válassza ki a**Rögzített készletek** sortípust amikor résztermelést, ami egy anyagjegyzék sor esemény kanban, vagy közvetlen beszerzési rendelést kíván létrehozni bármely olyan termékváltozathoz, amire az anyagjegyzék sor hivatkozik. A résztermelés, az esemény kanban vagy a beszerzési rendelés akkor készül el, amikor Ön elvégzi a termelési megrendelés becslését. A szükséges cikkmennyiségeket a program automatikusan lefoglalja a fogyasztó termelési rendeléshez.
 
 ### <a name="vendor"></a>Szállító
 

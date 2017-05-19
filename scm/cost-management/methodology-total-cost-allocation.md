@@ -3,7 +3,7 @@ title: "Összköltség felosztási módszer"
 description: "Ez a cikk bemutatja a teljes költségfelosztás (TCA) használatának irányelveit. A TCA egy számítási módszer, amely a köteghez tartozó fő receptúracikk és a receptúrában meghatározott társtermékek közötti költséget adja meg."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c26dcc5a8caa461bce90f931bb5c584f1816526b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a5c5788a3145dd6cabeed097d25a03a243577b8f
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="total-cost-allocation-method"></a>Összköltség felosztási módszer
+
+[!include[banner](../includes/banner.md)]
+
 
 Ez a cikk bemutatja a teljes költségfelosztás (TCA) használatának irányelveit. A TCA egy számítási módszer, amely a köteghez tartozó fő receptúracikk és a receptúrában meghatározott társtermékek közötti költséget adja meg.
 
@@ -36,6 +40,11 @@ Az összköltség felosztás (TCA) a kötegrendelés fő receptúrás cikkének 
 Íme néhány irányelv a TCA társtermékekre történő alkalmazása esetében:
 
 -   Ha a **Teljes költségfelosztás** csúszkát **Igen** opcióra állítja a receptúra verziónál, a társtermékeknek kötelezően 0 (nulla) fölötti önköltségi árral kell rendelkezniük. Az érték visszakapcsolható az aktív költségverzióról az azonos oldalra vagy a receptúra első, nem webhely-specifikus webhelyére. A feltétel érvényesítése a receptúra elfogadásakor történik meg.
+
+    -   Nem kell manuálisan megadnia a társtermékek költségelosztási százalékát. Ehelyett a rendszer automatikusan létrehozza a költségelosztási százalékot a társtermékek aktív költségárának átlagaként. 
+    -   Nem kell megadnia a normál költséget az olyan nem szabványos költségelemekért, amelyek társtermékek. A rendszerben kétféle költségszámítási változat létezik: a normál költség és a tervezett költség 
+    -   Ha egy elemet nem a normál költségbecslési módszer értékel, javasoljuk, hogy a tervezett költségváltozatban aktív költségárat használjon. Ezt az árat a költségbecsléshez, például az anyagjegyzék kiszámításához, a gyártási költségbecsléshez és a készletértékelési folyamatba tartozó tartalékárhoz használják. 
+
 -   Ha az **Összköltségfelosztás** csúszkát **Igen** opcióra állítja a receptúra verzió számára, és a következő feltételek igazak, akkor **TCA** a költségfelosztás módszere és a költségfelosztás százaléka változatlan:
     -   Társtermékeket adott hozzá.
     -   A társtermékek költségfelosztására más módszert használt.
@@ -53,6 +62,8 @@ A **Melléktermék költségfelosztása** mező a **Társtermékek** oldalon egy
 -   **Százalék** – A költségösszeg a termelés során felhasznált nyersanyagok teljes költségének egy százalékaként van kiszámítva. A számításokhoz használt százalék van megadva a mezőben.
 -   **Sorozatonként** – A költségösszeg a termelési rendelés szabványos kötegméretei utáni összegként van kiszámítva. Ez az összeg független a termelésben jelentett mennyiségtől. A számításokhoz használt összeg van megadva a mezőben.
 -   **Mennyiség szerint** – A költségösszeg a termelésben lévő receptúracikk jelentett mennyisége szerinti összegként van kiszámítva. A számításokhoz használt összeg van megadva a mezőben.
+
+
 
 
 

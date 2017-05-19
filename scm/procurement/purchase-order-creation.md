@@ -3,7 +3,7 @@ title: "Beszerzési rendelések létrehozása"
 description: "A cikk ismerteti a beszerzési megrendelés kézi létrehozásának folyamatát és lehetőségeit."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: de8fa93bfc0119d6f9433fb4215c326abdda2899
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b87e4be4541ce5a33b3f6ed0ffe3b08f6447d293
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="create-purchase-orders"></a>Beszerzési rendelések létrehozása
+
+[!include[banner](../includes/banner.md)]
+
 
 A cikk ismerteti a beszerzési megrendelés kézi létrehozásának folyamatát és lehetőségeit.
 
@@ -66,7 +70,7 @@ Egyes esetekben érdemes felosztani a rendelt mennyiséget úgy, hogy a különb
 A költségeket automatikusan hozzá lehet adni a beszerzésirendelés-sorokhoz, amennyiben a szállítóhoz vagy a szállító költségcsoportjához, és a cikkhez vagy a cikk költségcsoportjához be van állítva az automatikus költségek opció. Azonban gyakoribb, hogy a költségeket manuálisan, a rendeléssor szintjén adják meg. Költség hozzáadásához nyissa meg a **Költségek kezelése** lapot a **Költségek kezelése** művelettel a **Pénzügyek** menüpontban, **Sorok** nézetben. A költségek hozzáadása közvetlenül a rendelési sor szintjén azért előnyös, mert így a költségeket készletköltségként lehet elszámolni. Költségkódok beállításához a számlatermék-költségekhez használja a **Cikk** tartozás opciót. Az ilyen típusú költségeket a rendelés megerősítése előtt a beszerzési rendelés fejlécéből a sorokhoz kell rendelni. Érdemes lehet például a költségeket az egyes sorokban szereplő mennyiség alapján hozzárendelni. A költségkategória is befolyásolja, hogyan kerülnek elszámolásra a költségek. A rögzített költségek például egy fix összeget adnak meg, a százalékköltségek pedig a rendeléssor nettó összege alapján százalékként kerülnek kiszámolásra. A beszerzési rendelések terhelésekhez rendelhetők, és a terhelésekben szerepelhet a szállítási költségekre vonatkozó becslés. Ez a költség a terhelésekből a beszerzésirendelés-sorokhoz rendelhető.
 
 ## <a name="purchase-order-actions"></a>Beszerzési rendelés műveletei
-A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](/dynamics365/operations/action-search) opciót használni a megfelelő elem megtalálására a menüben.  
+A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](/dynamics365/operations/get-started/action-search) opciót használni a megfelelő elem megtalálására a menüben.  
 
 A rendelésen a termékek konfigurálhatók úgy, hogy kiegészítő cikkeket tartalmazzanak. A kiegészítő cikkek olyan termékek, vagy más termékekkel együtt lehet vagy kell megvásárolni. A kiegészítő termékek költségmentesen hozzáadhatók, mint kísérő termékek, vagy eldöntheti, hogy hozzáadja-e őket a rendeléshez vagy sem. A kiegészítő elemeket minden hozzáadott rendelési sor után ellenőrizheti. Azonban a kiegészítő termékek ellenőrzése és hozzáadása kényelmesebb lehet a Kiegészítő termékek oldal használatával a **Műveletek oldalon**, ahol az összes rendeléssort egyszerre kezelheti.  
 
@@ -91,5 +95,7 @@ Előfordulhat, hogy egy adott beszerzési megrendelés végrehajtását késlelt
 [Beszerzési rendelés - termékbevételezés](product-receipt-against-purchase-orders.md)
 
 [Szállítói számlák áttekintése](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 
