@@ -1,23 +1,23 @@
-- name: "Dynamics 365"
+- name: Dynamics 365
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
-  - name: "Operations"
+  - name: Operations
     tocHref: /dynamics365/operations/
     topicHref: /dynamics365/operations/index
     items:
-    - name: "Fejlesztő és Rendszergazda"
+    - name: Fejlesztő és Rendszergazda
       tocHref: /dynamics365/operations/dev-itpro/
       topicHref: /dynamics365/operations/dev-itpro/index
-    - name: "Pénzügyek"
+    - name: Pénzügyek
       tocHref: /dynamics365/operations/financials/
       topicHref: /dynamics365/operations/financials/index
-    - name: "Emberi erőforrások"
+    - name: Emberi erőforrások
       tocHref: /dynamics365/operations/human-resources/
       topicHref: /dynamics365/operations/human-resources/index
-    - name: "Kiskereskedelem"
+    - name: Kiskereskedelem
       tocHref: /dynamics365/operations/retail/
       topicHref: /dynamics365/operations/retail/index
-    - name: "Ellátási lánc"
+    - name: Ellátási lánc 
       tocHref: /dynamics365/operations/supply-chain/
       topicHref: /dynamics365/operations/supply-chain/index
