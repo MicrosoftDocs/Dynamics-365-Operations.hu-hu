@@ -1,15 +1,15 @@
 ---
 title: "Infókódok"
 description: "Ez a cikk áttekintést nyújt az infókódokról, az infókód-csoportokról és azok használatáról."
-author: RobinARH
+author: mumani
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
@@ -47,13 +47,12 @@ A Dynamics 365 for Operations - Retail szolgáltatásban infókódok csoportjait
 -   Infókódok csatolása más infókódokhoz vagy infókód-csoportokhoz egy termékről vagy tranzakcióról szóló információ gyűjtéséhez oly módon, ahogyan szüksége van rá anélkül, hogy külön infókódot vagy csatolt infókódot kellene megadnia minden egyes esethez.
 
 ## <a name="info-code-examples"></a>Csatolt infókód
-**1. példa: Infókódok újra felhasználása** Korábbi változataiban csatolhatja az infókódokat, így amikor egy infókód kiváltása megtörténik, egy másik infókód kiváltása is megtörténik közvetlenül utána. Például egyes termékek eladása esetén azt szeretné a pénztárostól, hogy kérdezze meg a vevőt, hogy kívánja-e elemek és termék garancia beszerzését. Más termékekre vonatkozóan azt szeretné a pénztárostól, hogy kérdezze meg a vevőt, hogy kívánja-e elemek beszerzését és összegyűjtheti az irányítószámokat is. Ha csatolt infókódokat hoz létre ezekre az esetekre, be kell állítania az infókód minden változatát úgy, hogy a pénztáros a megfelelő információkat tudja elkérni. Azonban infókód-csoportok, gyakori infókódok használata esetén, például elemek kérése esetén, ezeket egyszer be lehet állítani majd több infókód-csoportban újra felhasználni. Használhat priorizálást is az infókód-csoportokban a sorrend azonosítására, amelyben az utasítások megjelennek. **2. példa: Infókód-csoportok infókódokhoz történő csatolása** Egyes termékek, például mobileszközök eladása esetén bizonyos adatokat kell mindig összegyűjtenie, mint például a telefonszám, mozgó berendezés azonosítója (MEID) és sorozatszám. Ugyanakkor érdemes különböző adatokat összegyűjtenie a tabletekkel és mobiltelefonokkal kapcsolatban. Beállíthat egy infókód-csoportot, amely utasításokat tartalmaz a telefonszámra, MEID azonosítóra és a sorozatszámra vonatkozóan, majd az infókód-csoportokat az egyes infókódokhoz csatolja. Ha termékspecifikus infókód kiváltása történik, az infókód-csoport kiváltása lehet a következő, hogy lehetővé tegye a gyakori adatok gyűjtését anélkül, hogy minden egyes eszközre több csatolt infókódot kellene meghatároznia.
+**1. példa: Infókódok újra felhasználása** Korábbi változataiban csatolhatja az infókódokat, így amikor egy infókód kiváltása megtörténik, egy másik infókód kiváltása is megtörténik közvetlenül utána. Például egyes termékek eladása esetén azt szeretné a pénztárostól, hogy kérdezze meg a vevőt, hogy kívánja-e elemek és termék garancia beszerzését. Más termékekre vonatkozóan azt szeretné a pénztárostól, hogy kérdezze meg a vevőt, hogy kívánja-e elemek beszerzését és összegyűjtheti az irányítószámokat is. Ha csatolt infókódokat hoz létre ezekre az esetekre, be kell állítania az infókód minden változatát úgy, hogy a pénztáros a megfelelő információkat tudja elkérni. Azonban infókód-csoportok, gyakori infókódok használata esetén, például elemek kérése esetén, ezeket egyszer be lehet állítani majd több infókód-csoportban újra felhasználni. Használhat priorizálást is az infókód-csoportokban a sorrend azonosítására, amelyben az utasítások megjelennek.
+
+
+**2. példa: Infókód-csoportok infókódokhoz történő csatolása** Egyes termékek, például mobileszközök eladása esetén bizonyos adatokat kell mindig összegyűjtenie, mint például a telefonszám, mozgó berendezés azonosítója (MEID) és sorozatszám. Ugyanakkor érdemes különböző adatokat összegyűjtenie a tabletekkel és mobiltelefonokkal kapcsolatban. Beállíthat egy infókód-csoportot, amely utasításokat tartalmaz a telefonszámra, MEID azonosítóra és a sorozatszámra vonatkozóan, majd az infókód-csoportokat az egyes infókódokhoz csatolja. Ha termékspecifikus infókód kiváltása történik, az infókód-csoport kiváltása lehet a következő, hogy lehetővé tegye a gyakori adatok gyűjtését anélkül, hogy minden egyes eszközre több csatolt infókódot kellene meghatároznia.
 
  
--
-
-
-
 
 
 
