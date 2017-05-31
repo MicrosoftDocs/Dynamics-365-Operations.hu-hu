@@ -67,6 +67,7 @@
 ### [CODA banki kivonat](emea-bel-coda-bank-statement-import.md)
 ### [Intervat-adóbevallás](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM-jelentés beállítása](emea-bel-prodcom-report.md)
+### [Egyeztetési jelentések](emea-bel-reconciliation-reports.md)
 
 ## Cseh Köztársaság
 ### [Készpénzfizetési engedmény jóváírásra](emea-cze-credit-note-cash-discount.md)
@@ -74,6 +75,7 @@
 ### [Értékcsökkenés felfüggesztése](emea-cze-depreciation-suspension-holidays.md)
 ### [Tárgyi eszközök értékcsökkenése](emea-cze-fixed-assets-depreciation.md)
 ### [Féléves értékcsökkenés](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Áfa bejelentése ](emea-cze-intra-community-vat-transactions.md)
 ### [Áfabevallás](emea-cze-vat-statement-details.md)
 ## Észtország
 ### [Áfabevallás](emea-est-vat-statement-details.md)

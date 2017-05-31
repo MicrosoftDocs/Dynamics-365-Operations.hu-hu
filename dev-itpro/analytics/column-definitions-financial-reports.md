@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ A jelentés egyes oszlopaiban megjelenő információ típusát az **Oszloptípu
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Pénzügyi adatok vagy Excel munkalapból származó adatok megjelenítése, ha <strong>Hivatkozás a pénzügyi dimenziókhoz</strong> vagy <strong>Hivatkozás munkalapra</strong> oszlopot használ a sordefinícióban. Amikor az <strong>FD</strong> oszloptípust választja, az alábbi sorokhoz alapértelmezett beállításokat állít be a rendszer:
-    <ul>
+    <td>Pénzügyi adatok vagy Excel munkalapból származó adatok megjelenítése, ha <strong>Hivatkozás a pénzügyi dimenziókhoz</strong> vagy <strong>Hivatkozás munkalapra</strong> oszlopot használ a sordefinícióban. Amikor az <strong>FD</strong> oszloptípust választja, az alábbi sorokhoz alapértelmezett beállításokat állít be a rendszer: <ul>
     <li><strong>Könyvelési kód / Attribútumkategória:</strong> TÉNYLEGES</li>
     <li><strong>Könyvelési kód / Attribútumkategória:</strong> TÉNYLEGES</li>
     <li><strong>Pénzügyi év:</strong> ALAP</li>
@@ -359,7 +358,7 @@ A jelentés egyes oszlopaiban megjelenő információ típusát az **Oszloptípu
     <li><strong>Érintett időszakok:</strong> IDŐSZAKOS</li>
     <li><strong>Oszlopszélesség:</strong> 14</li>
     </ul>
-    Az alapértelmezett beállítások módosíthatóak.</td>
+Az alapértelmezett beállítások módosíthatóak.</td>
     </tr>
     <tr class="even">
     <td>CALC</td>
@@ -379,7 +378,7 @@ A jelentés egyes oszlopaiban megjelenő információ típusát az **Oszloptípu
     </tr>
     <tr class="even">
     <td>TÖLT</td>
-    <td>Az aposztrófok közé írt karakterrel tölti ki a cellát. Ha nem ad meg karaktert, az oszlop üres lesz. Például ha pontokkal (...) szeretne kitölteni egy cellát, a következőt adja meg: <strong>TÖLT</strong> <strong>'.'</strong>.</td>
+    <td>Az aposztrófok közé írt karakterrel tölti ki a cellát. Ha nem ad meg karaktert, az oszlop üres lesz. Például ha pontokkal (...) szeretne kitölteni egy cellát, a következőt adja meg: <strong>FILL</strong> <strong>'.'</strong>.</td>
     </tr>
     <tr class="odd">
     <td>OLDAL</td>
@@ -387,12 +386,11 @@ A jelentés egyes oszlopaiban megjelenő információ típusát az **Oszloptípu
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Excel-munkafüzetből beillesztett adatokat jelenít meg. Amikor a <strong>WKS</strong> oszloptípust választja, az alábbi sorokhoz alapértelmezett beállításokat állít be a rendszer:
-    <ul>
+    <td>Excel-munkafüzetből beillesztett adatokat jelenít meg. Amikor a <strong>WKS</strong> oszloptípust választja, az alábbi sorokhoz alapértelmezett beállításokat állít be a rendszer: <ul>
     <li><strong>Pénzügyi év:</strong> IDŐSZAKOS</li>
     <li><strong>Időszak:</strong> ALAP</li>
     </ul>
-    Az alapértelmezett beállítások módosíthatóak.</td>
+Az alapértelmezett beállítások módosíthatóak.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>

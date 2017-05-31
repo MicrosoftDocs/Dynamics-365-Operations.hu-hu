@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 335a0d7ca466028e8b157cb4e04df7d0f4880e73
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5726a6fc60977a82b49e00ca653696e4051cbb10
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -474,7 +474,7 @@ A Név és a Címke mezőben futásidejű értékek jelennek meg a formátum nye
 </tr>
 <tr class="even">
 <td>FORMÁTUM (1-es karakterlánc, 2-es karakterlánc [, 3-as karakterlánc...])</td>
-<td>Azt a megadott karakterláncot jeleníti meg, amely az <strong>%N</strong> elem bármely előfordulásának <em>n</em>argumentumával történő helyettesítése által formázva lett. Az argumentumok karakterláncok. Ha egy argumentum nem érhető el a paraméter számára, a paraméter a karakterláncban <strong>&quot;%N&quot;</strong> elemként jelenik meg. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
+<td>Azt a megadott karakterláncot jeleníti meg, amely az <strong>%N</strong> elem bármely előfordulásának <em>n</em>. argumentumával történő helyettesítése által formázva lett. Az argumentumok karakterláncok. Ha egy argumentum nem érhető el a paraméter számára, a paraméter a karakterláncban <strong>&quot;%N&quot;</strong> elemként jelenik meg. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
 <td>Ebben a példában a <strong>PaymentModel</strong> adatforrás megjeleníti a vevőrekordok listáját a <strong>Vevő</strong> összetevőn keresztül és az adatérték feldolgozását a <strong>ProcessingDate</strong> mezőn keresztül. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> A kijelölt vevőkre vonatkozó elektronikus fájlok létrehozására tervezett ER formátumban a <strong>PaymentModel</strong> adatforrásként van kijelölve, és ellenőrzi a munkafolyamatot. A végfelhasználó kivételt kap, amikor a kiválasztott vevő le van tiltva a jelentés feldolgozása során. Az ellenőrzés feldolgozásának ezen típusára vonatkozóan tervezett formula a következő forrásokat használhatja:
 <ul>
 <li>A SYS70894 címkével ellátott Dynamics 365 for Operations a következő szöveggel rendelkezik:

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.search.scope: Core
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: de2f71a21c5aac953349559c84283d0f76082d42
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -42,7 +42,9 @@ A Microsoft Dynamics 365 for Operations webes alkalmazása az alábbi böngész�
 -   Google Chrome (legfrissebb elérhető verziója) Windows 10, Windows 8.1, Windows 8, Windows 7 rendszereken, vagy Google Nexus 10 táblagépen
 -   Apple Safari (legfrissebb elérhető verziója) Mac OS X 10.10 (Yosemite), 10.11 (El Capitan), 10.12 (Sierra) rendszereken, vagy Apple iPad gépen
 
-A böngésző legfrissebb változatáért látogasson el a szoftver gyártójának webhelyére. **Megjegyzések:**
+A böngésző legfrissebb változatáért látogasson el a szoftver gyártójának webhelyére. 
+
+**Megjegyzések:**
 
 -   A Task Recorder által generált képek rögzítéséhez és Microsoft Word-dokumentumba való ágyazásához telepítenie kell egy Chrome-bővítményt. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   A munkafolyamat-szerkesztő ClickOnce-alkalmazásként indul el. Csak a Microsoft Edge és az Internet Explorer (a Microsoft Windows egy támogatott verziójának használata esetén) támogatja a ClickOnce-alkalmazásokat. A Workflow Editor ClickOnce alkalmazáshoz 64 bit-kompatibilis operációs rendszer szükséges.
@@ -59,10 +61,12 @@ A Microsoft Dynamics 365 for Operations kiskereskedelmi felhő-POS pénztárgép
 -   Chrome (legutóbbi nyilvánosan elérhető verzió) Windows 10, Windows 8.1 vagy Windows 7 rendszeren
 
 ## <a name="network-requirements"></a>Hálózati követelmények
--   A Dynamics 365 operációs rendszert olyan hálózatokhoz tervezték, amelyek várakozási ideje kevesebb, mint 150 milliszekund (ms). Ez a latencia a böngészőklienstől a Microsoft Azure adatközpontig, amely tárolja a Dynamics 365 for Operationst. Javasoljuk, hogy tesztelje a hálózati késleltetést a következő helyen: <http://www.azurespeed.com>.
+-   A Dynamics 365 operációs rendszert olyan hálózatokhoz tervezték, amelyek várakozási ideje kevesebb 250–300 milliszekund (ms) vagy annál kevesebb. Ez a latencia a böngészőklienstől a Microsoft Azure adatközpontig, amely tárolja a Dynamics 365 for Operationst. Javasoljuk, hogy tesztelje a hálózati késleltetést a következő helyen: <http://www.azurespeed.com>.
 -   A Dynamics 365 for Operations sávszélességi követelményei a forgatókönyvtől függenek. A legtöbb jellemző forgatókönyv másodpercenként több mint 50 kilobájt sávszélességet igényel (KBps). Azonban olyan nagyteljesítményű forgatókönyvek esetében, mint például a munkaterületek vagy a kiterjedt testreszabást igénylő forgatókönyvek, nagyobb sávszélességet ajánlunk.
 
-Általánosságban elmondható, hogy a Dynamics 365 for Operations az internetre optimalizált. A böngésző kliensből az Azure adatközpontba történő oda-vissza utak száma nagyon kicsi, és a teljes hasznos tartalom tömörítve van. **Figyelmeztetés:** Ne úgy számítsa ki a sávszélesség követelményeit az ügyfél helyéről, hogy megszorozza a felhasználók számát a minimális sávszélességi követelményekkel. Adott hely egyidejű használatát nagyon nehéz kiszámítani. A sávszélesség miatt aggódó ügyfelek számára a Dynamics 365 for Operations előzetes verziójának használata ajánlott.
+Általánosságban elmondható, hogy a Dynamics 365 for Operations az internetre optimalizált. A böngésző kliensből az Azure adatközpontba történő oda-vissza utak száma nagyon kicsi, és a teljes hasznos tartalom tömörítve van. 
+
+**Figyelmeztetés:** Ne úgy számítsa ki a sávszélesség követelményeit az ügyfél helyéről, hogy megszorozza a felhasználók számát a minimális sávszélességi követelményekkel. Adott hely egyidejű használatát nagyon nehéz kiszámítani. A sávszélesség miatt aggódó ügyfelek számára a Dynamics 365 for Operations előzetes verziójának használata ajánlott.
 
 ## <a name="net-framework-requirements"></a>A .NET keretrendszer követelményei
 A Dynamics 365 for Operations esetében a .NET-keretrendszer 4.6.2-es verziója szükséges az összes click-once alkalmazáshoz, például a dokumentumátirányító ügynökhöz. További tájékoztatás: [A .NET keretrendszer telepítése](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).

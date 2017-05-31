@@ -3,10 +3,10 @@ title: "Aktuális készlet mobil munkaterület"
 description: "Ez a témakör az Aktuális készlet mobil munkaterületről nyújt tájékoztatást, amely a Microsoft Dynamics 365 for Operations mobilalkalmazásban érhető el. A munkaterület segítségével bármikor és bárhol, mobilon tájékozódhat a fenntartott és a rendelkezésre álló készletről."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e703ae80800b993ebca1c7bee455af1be41c7d5f
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,15 +37,21 @@ Ez a témakör az Aktuális készlet mobil munkaterületről nyújt tájékoztat
 <a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Az Aktuális készlet mobil munkaterület áttekintése
 --------------------------------------------------
 
-Általában a cégek készleténél több szállításra és bevételezésre kerül sor mindennap. Ezek a mozgások folyamatosan módosítják az aktuális készlet állapotát. Az **Aktuális készlet** mobil munkaterület segítségével átláthatja a több vállalatot érintő aktuális készlet állapotát, így tetszés szerinti a mobileszközön a legfrissebb adatok alapján tájékozódhat a készletadatokról. Függetlenül attól, hogy a raktárban, beszerzésnél, értékesítésben, gyártásban vagy a vezetőségben dolgozik-e, vagy más szerepkörrel rendelkezik, az aktuális készletadatokat bárhol és bármikor elérheti. A mobil munkaterületen azonnal megtekinthető az aktuális, különböző létesítményeket felölelő állapot. Továbbá megtekinthető a különböző létesítményeket felölelő aktuális készlet, az aktuális anyagfoglalások és a le nem foglalt aktuális készlet. Ezenkívül az aktuális készlet cikkszámok megadásával lekérdezhető, és az aktuális termékekre vagy változatokra szűrt keresés végezhető. A mobil munkaterület konkrétan az alábbi szolgáltatásokat nyújtja:
+Általában a cégek készleténél több szállításra és bevételezésre kerül sor mindennap. Ezek a mozgások folyamatosan módosítják az aktuális készlet állapotát. Az **Aktuális készlet** mobil munkaterület segítségével átláthatja a több vállalatot érintő aktuális készlet állapotát, így tetszés szerinti a mobileszközön a legfrissebb adatok alapján tájékozódhat a készletadatokról. Függetlenül attól, hogy a raktárban, beszerzésnél, értékesítésben, gyártásban vagy a vezetőségben dolgozik-e, vagy más szerepkörrel rendelkezik, az aktuális készletadatokat bárhol és bármikor elérheti. 
+
+A mobil munkaterületen azonnal megtekinthető az aktuális, különböző létesítményeket felölelő állapot. Továbbá megtekinthető a különböző létesítményeket felölelő aktuális készlet, az aktuális anyagfoglalások és a le nem foglalt aktuális készlet. Ezenkívül az aktuális készlet cikkszámok megadásával lekérdezhető, és az aktuális termékekre vagy változatokra szűrt keresés végezhető. 
+
+A mobil munkaterület konkrétan az alábbi szolgáltatásokat nyújtja:
 
 -   Kereshet terméktípus és termék neve alapján termékeket, és megtekintheti a rájuk vonatkozó aktuális készletállapotot.
+
 -   A kijelölt termékeknél a következő információkat tekintheti meg:
     -   Aktuális készlet telephely szerint
     -   Aktuális készlet raktár szerint
     -   Aktuális készlet hely szerint
     -   Aktuális készlet köteg szerint (kötegvezérelt termékeknél)
     -   Aktuális készlet készlet állapota szerint
+    
 -   Az aktuális termékkészlet az alábbi módon jelenik meg:
     -   Fizikai készlet alapján (Ez a nézet a teljes mennyiséget jelöli.)
     -   Fizikai fenntartott alapján (Ez a nézet a fenntartott mennyiséget jelöli.)
@@ -71,7 +77,7 @@ Az **Aktuális készlet** mobil munkaterület használata előtt győződjön me
 <tr class="odd">
 <td>A Microsoft Dynamics 365 for Operations 1611-es verziójához a 3. vagy újabb platformfrissítést kell végrehajtani.</td>
 <td>Rendszergazda</td>
-<td>Ha a vállalati hálózatra még nincs telepítve a Dynamics 365 for Operations, a rendszergazdának el kell olvasnia a következő tudnivalókat: <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>Ha a vállalati hálózatra még nincs telepítve a Dynamics 365 for Operations, a rendszergazdának el kell olvasnia a következő tudnivalókat: <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>A KB 4013633 végrehajtása kötelező.</td>
@@ -79,9 +85,9 @@ Az **Aktuális készlet** mobil munkaterület használata előtt győződjön me
 <td>A KB 4013633 (egy X++ frissítés vagy a metaadatok gyorsjavítása) négy mobil munkaterületet tartalmaz az ellátásilánc-kezeléshez. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket:
 <ol>
 <li>Töltse le a KB 4013633 frissítést a Microsoft Dynamics Lifecycle Services (LCS) webhelyéről.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Telepítse a metaadatok gyorsjavítását</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Alkalmazza a telepíthető csomagot</a> és a Dynamics 365 for Operations rendszerre.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza a telepíthető csomagot</a> és a Dynamics 365 for Operations rendszerre.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -114,7 +120,7 @@ A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Micro
 
 ## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>A termék aktuális készletének megtekintése az Aktuális készlet mobil munkaterület segítségével
 1.  A mobileszközön válassza az **Aktuális készlet** munkaterület.
-2.  Válassza az **Aktuális ellenőrzése egy cikkhez** lehetőséget. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött termékek listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért lásd a [Dynamics 365 for Operations mobilplatformot](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/).
+2.  Válassza az **Aktuális ellenőrzése egy cikkhez** lehetőséget. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött termékek listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért lásd a [Dynamics 365 for Operations mobilplatformot](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
 3.  Ha a cikk nem szerepel a listán, válassza a **Továbbiak keresése** elemet a Dynamics 365 for Operationsben végzett online keresés érdekében. Keressen termékszám alapján, vagy térjen át terméknévalapú keresésre.
 4.  Válasszon ki egy terméket. Ha a cikkhez tartozik kép, a kép megjelenik.
 5.  Az aktuális készlet állapotának megjelenítéséhez a következő lehetőségek közül választhat:

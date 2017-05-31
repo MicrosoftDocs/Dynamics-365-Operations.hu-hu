@@ -4,8 +4,9 @@
 ## Igény-előrejelzés létrehozása
 ### [Igény-előrejelzés áttekintése](master-planning/introduction-demand-forecasting.md)
 ### [Igény-előrejelzés beállítása](master-planning/demand-forecasting-setup.md)
+### [Előzményadatok importálása az igény-előrejelzésekhez](master-planning/import-historical-data.md)
 ### [Statisztikai kiinduló előrejelzés létrehozása](master-planning/generate-statistical-baseline-forecast.md)
-### [Manuális módosítás a kiinduló előrejelzésen](master-planning/manual-adjustments-baseline-forecast.md)
+### [Manuális kiigazítás a kiinduló előrejelzésen](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Módosított előrejelzés engedélyezése](master-planning/authorize-adjusted-forecast.md)
 ### [Előrejelzés pontosságának követése](master-planning/monitor-forecast-accuracy.md)
 ### [Korábbi tranzakcióadatok kiugró értékeinek eltávolítása](master-planning/remove-historical-outliers-calculating-demand-forecast.md)

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ac4f520d17c721e249737b4ae95c10685f914497
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -195,13 +195,11 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket a m
     <td>A meghatározott szervezeti hierarchiában lévő felhasználók.</td>
     <td><ol>
     <li>Miután kiválasztotta <strong>Hierarchia</strong> lehetőséget a <strong>Hierarchia kiválasztása</strong> lapon, a <strong>Hierarchia típusa</strong> listán, jelölje ki a döntéshez hozzárendelni kívánt hierarchia típusát.</li>
-    <li>A rendszernek be kell olvasnia az felhasználó névtartományát a hierarchiából. Ezek a nevek a döntéshez hozzárendelhető felhasználókat jelölik. Végezze el a következő lépéseket azon felhasználók névtartományának kezdő- és végpontját, amelyet a rendszer beolvas:
-    <ol>
+    <li>A rendszernek be kell olvasnia az felhasználó névtartományát a hierarchiából. Ezek a nevek a döntéshez hozzárendelhető felhasználókat jelölik. Végezze el a következő lépéseket azon felhasználók névtartományának kezdő- és végpontját, amelyet a rendszer beolvas: <ol>
     <li>A kezdő pont megadásához válasszon ki egy személyt a <strong>Kezdet</strong> listából.</li>
     <li>A végpont megadásához kattintson a <strong>Feltétel létrehozása</strong> lehetőségre. Ezt követően adja meg azt a feltételt, amely meghatározza, hogy a rendszer hol állítsa meg a hierarchiában a nevek beolvasását.</li>
     </ol></li>
-    <li>A <strong>Hierarchia beállításai</strong> lapon adja meg, hogy mely, a tartományban szereplő felhasználók számára kell a döntést hozzárendelni:
-    <ul>
+    <li>A <strong>Hierarchia beállításai</strong> lapon adja meg, hogy mely, a tartományban szereplő felhasználók számára kell a döntést hozzárendelni: <ul>
     <li><strong>Minden lekért felhasználó hozzárendelése</strong> – A tartományban szereplő összes felhasználóhoz hozzá van rendelve a döntés.</li>
     <li><strong>Csak a legutóbb lekért felhasználó hozzárendelése</strong> – Csak a tartományban szereplő utolsó felhasználóhoz van hozzárendelve a döntés.</li>
     <li><strong>A következő feltételnek megfelelő felhasználók kihagyása</strong> – A döntés nincs hozzárendelve a tartomány minden olyan felhasználójához, akik megfelelnek egy adott feltételnek. Kattintson a <strong>Feltétel hozzáadása</strong> lehetőségre, ha meg szeretné adni a feltételt.</li>
@@ -228,18 +226,16 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket a m
     <td>Munkatétel-várólista</td>
     <td><ol>
     <li>Miután kijelölte <strong>Várólista</strong> lehetőséget, kattintson a <strong>Várólistán alapuló</strong> fülre.</li>
-    <li>A döntés egy specifikus várólistához történő hozzárendeléséhez, kövesse az alábbi lépéseket:
-    <ol>
+    <li>A döntés egy specifikus várólistához történő hozzárendeléséhez, kövesse az alábbi lépéseket: <ol>
     <li>A <strong>Várólista típusa</strong> listán, válassza ki a <strong>Munkatétel-várólisták</strong> lehetőséget.</li>
     <li>A <strong>Várólista neve</strong> listán jelölje ki a várólistát.</li>
     </ol></li>
-    <li>Ha egy adott feltételnek meg kell határoznia, hogy melyik várólistához rendeljék hozzá a döntést, végezze el a következő lépéseket:
-    <ol>
+    <li>Ha egy adott feltételnek meg kell határoznia, hogy melyik várólistához rendeljék hozzá a döntést, végezze el a következő lépéseket: <ol>
     <li>A <strong>Várólista típusa</strong> listán, válassza ki a <strong>Feltételes munkatétel-várólisták</strong> lehetőséget.</li>
     <li>A <strong>Várólista neve</strong> listán jelölje ki a <strong>Feltételes várólista</strong> lehetőséget.</li>
     </ol></li>
     </ol>
-    <strong>Megjegyzés</strong>: Ezt a beállítást csak néhány munkafolyamatnál használják, például Esetkezelésnél.</td>
+    <strong>Megjegyzés:</strong> Ezt a beállítást csak néhány munkafolyamatnál használják, például Esetkezelésnél.</td>
     </tr>
     </tbody>
     </table>
@@ -285,13 +281,11 @@ Ha a felhasználó nem hozza meg a döntést a megadott idő alatt, lejár a dö
     <td>A meghatározott szervezeti hierarchiában lévő felhasználók.</td>
     <td><ol>
     <li>Miután kiválasztotta <strong>Hierarchia</strong> lehetőséget a <strong>Hierarchia kiválasztása</strong> lapon, a <strong>Hierarchia típusa</strong> listán, jelölje ki a döntéshez eszkalálni hierarchia típusát.</li>
-    <li>A rendszernek be kell olvasnia az felhasználó névtartományát a hierarchiából. Ezek a nevek a döntéshez eszkalálható felhasználókat jelölik. Végezze el a következő lépéseket azon felhasználók névtartományának kezdő- és végpontját, amelyet a rendszer beolvas:
-    <ol>
+    <li>A rendszernek be kell olvasnia az felhasználó névtartományát a hierarchiából. Ezek a nevek a döntéshez eszkalálható felhasználókat jelölik. Végezze el a következő lépéseket azon felhasználók névtartományának kezdő- és végpontját, amelyet a rendszer beolvas: <ol>
     <li>A kezdő pont megadásához válasszon ki egy személyt a <strong>Kezdet</strong> listából.</li>
     <li>A végpont megadásához kattintson a <strong>Feltétel létrehozása</strong> lehetőségre. Ezt követően adja meg azt a feltételt, amely meghatározza, hogy a rendszer hol állítsa meg a hierarchiában a nevek beolvasását.</li>
     </ol></li>
-    <li>A <strong>Hierarchia beállításai</strong> lapon adja meg, hogy mely, a tartományban szereplő felhasználókhoz kell a döntést eszkalálni:
-    <ul>
+    <li>A <strong>Hierarchia beállításai</strong> lapon adja meg, hogy mely, a tartományban szereplő felhasználókhoz kell a döntést eszkalálni: <ul>
     <li><strong>Minden lekért felhasználó hozzárendelése</strong> – A tartományban szereplő összes felhasználóhoz eszkalálva van a döntés.</li>
     <li><strong>Csak a legutóbb lekért felhasználó hozzárendelése</strong> – Csak a tartományban szereplő utolsó felhasználóhoz van eszkalálva a döntés.</li>
     <li><strong>A következő feltételnek megfelelő felhasználók kihagyása</strong> – A döntés nincs eszkalálva a tartomány minden olyan felhasználójához, akik megfelelnek egy adott feltételnek. Kattintson a <strong>Feltétel hozzáadása</strong> lehetőségre, ha meg szeretné adni a feltételt.</li>

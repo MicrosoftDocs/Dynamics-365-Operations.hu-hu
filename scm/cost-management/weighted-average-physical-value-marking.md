@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e4d753a4c267058f29443de3ff73aebc2a7d24f2
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: cdbca6d9c71c901a1f4e7a8e5a2f9be1d3efb355
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -81,7 +81,7 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl sorozatszám-azonosítóval rendelkezik, például: *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
@@ -115,7 +115,7 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl sorozatszám-azonosítóval rendelkezik, például: *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 -   A piros nyilak jelzik azt a bevételezési tranzakciót, amelyet a rendszer által létrehozott kiadási tranzakciókkal szemben elszámol a program.
@@ -144,7 +144,7 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl sorozatszám-azonosítóval rendelkezik, például: *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
@@ -225,7 +225,7 @@ A következő diagram a tranzakciók sorozatát, és a súlyozott átlagon alapu
 -   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
 -   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
 -   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+-   Mindegyik függőleges nyíl sorozatszám-azonosítóval rendelkezik, például: *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
 -   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
 -   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
