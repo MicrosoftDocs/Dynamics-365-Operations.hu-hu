@@ -3,10 +3,10 @@ title: "Értékesítési rendelések mobil munkaterület"
 description: "Ez a témakör az Értékesítési rendelések mobil munkaterületről nyújt tájékoztatást, amely a Microsoft Dynamics 365 for Operations mobilalkalmazásban érhető el. A munkaterület segítségével bármikor és bárhol is legyen, naprakész maradhat az értékesítési rendeléseivel kapcsolatban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 119b80e5d8067ffbf75d8b067f4803558c2c94b0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 11898146a13756a6bb22a769e37e8773484e0d04
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,7 +37,9 @@ Ez a témakör az Értékesítési rendelések mobil munkaterületről nyújt t�
 <a name="overview-of-the-sales-orders-mobile-workspace"></a>Az Értékesítési rendelések mobil munkaterület áttekintése
 ---------------------------------------------
 
-Az **Értékesítési rendelések** mobil munkaterület hozzáfér a Microsoft Dynamics 365 for Operations szolgáltatáshoz, így Ön megtekintheti az egyes értékesítési rendelések részletes adatait. Ezek az információk magában foglalják a rendelés állapotát, az ügyfél kapcsolattartási információit és a rendelésfelvevő elérhetőségi adatait. Az **Értékesítési rendelések** mobil munkaterület azonnali rálátást biztosít az értékesítési rendelésekre. Megtekintheti az összes értékesítési rendelést, az értékesítési rendeléseket ügyfelek szerint, vagy megtekintheti egy adott értékesítési rendelés információit. A mobil munkaterület két nézetet kínál, ahol részletesen elemezheti az értékesítési rendeléseket.
+Az **Értékesítési rendelések** mobil munkaterület hozzáfér a Microsoft Dynamics 365 for Operations szolgáltatáshoz, így Ön megtekintheti az egyes értékesítési rendelések részletes adatait. Ezek az információk magában foglalják a rendelés állapotát, az ügyfél kapcsolattartási információit és a rendelésfelvevő elérhetőségi adatait. Az **Értékesítési rendelések** mobil munkaterület azonnali rálátást biztosít az értékesítési rendelésekre. Megtekintheti az összes értékesítési rendelést, az értékesítési rendeléseket ügyfelek szerint, vagy megtekintheti egy adott értékesítési rendelés információit. 
+
+A mobil munkaterület két nézetet kínál, ahol részletesen elemezheti az értékesítési rendeléseket.
 
 ### <a name="view-all-sales-orders"></a>Összes értékesítési rendelés megtekintése
 
@@ -50,6 +52,7 @@ Ez a nézet az összes értékesítési rendelést megjeleníti.
     -   Keresés állapot szerint
     -   Keresés kiadási állapot szerint
     -   Keresés a létrehozás dátuma és ideje alapján
+    
 -   A értékesítési rendelések kiválasztását követően megtekintheti az adott rendelések részleteit. Az alábbi adatokat is megjelenítheti:
     -   Ügyfél neve és címadatai
     -   Az értékesítési rendelés különböző dátumai, így például a kért szállítási dátum, valamint a megerősített szállítási dátum
@@ -65,6 +68,7 @@ Ez a nézet értékesítési rendeléseket jelenít meg vevőnként.
 -   A következő szűrők segítségével tekintheti meg egy vevő rendeléseit:
     -   Keresés név szerint
     -   Keresés számla alapján
+
 -   Miután kiválasztott egy ügyfelet, a következő információkat tekintheti meg:
     -   Vevő neve és csoportja
     -   Vevői kapcsolattartási adatok
@@ -96,7 +100,7 @@ Az **Értékesítési rendelések** mobil munkaterület használata előtt győz
 <tr class="odd">
 <td>Dynamics 365 for Operations 1611-es verziójához 3. vagy újabb platformfrissítését kell végrehajtani.</td>
 <td>Rendszergazda</td>
-<td>Ha a vállalati hálózatra még nincs telepítve a Dynamics 365 for Operations, a rendszergazdának el kell olvasnia a következő tudnivalókat: <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>Ha a vállalati hálózatra még nincs telepítve a Dynamics 365 for Operations, a rendszergazdának el kell olvasnia a következő tudnivalókat: <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>A KB 4013633 végrehajtása kötelező.</td>
@@ -104,9 +108,9 @@ Az **Értékesítési rendelések** mobil munkaterület használata előtt győz
 <td>A KB 4013633 (egy X++ frissítés vagy a metaadatok gyorsjavítása) négy mobil munkaterületet tartalmaz az ellátásilánc-kezeléshez. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket:
 <ol>
 <li>Töltse le a KB 4013633 frissítést a Microsoft Dynamics Lifecycle Services (LCS) webhelyéről.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Telepítse a metaadatok gyorsjavítását</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Alkalmazza a telepíthető csomagot</a> és a Dynamics 365 for Operations rendszerre.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza a telepíthető csomagot</a> és a Dynamics 365 for Operations rendszerre.</li>
 </ol></td>
 </tr>
 <tr class="odd">

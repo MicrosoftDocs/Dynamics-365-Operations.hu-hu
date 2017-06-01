@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
-ms.openlocfilehash: f08434b4c818460009644e77da1b37ba86cc1d54
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 181ad9a7ab4e83ce9eb34312e93b1ebdeb2e04eb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/27/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -38,10 +38,14 @@ A 365 for Operations teljesen új Súgórendszerrel rendelkezik, amely két fő 
 -   Dokumentációs oldal
 -   Feladat-útmutatók
 
-A Dynamics 365 for Operations rendszer Súgó ablakából cikkeket és feladat-útmutatókat is elérhet, amint az az alábbi képernyőképen is látható. [![Súgó ablak](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) Ez a cikk ismerteti a Súgó rendszert, és leírja, hogyan hozhat létre testreszabott dokumentációt és továbbképzési forrásokat szervezetének.
+A Dynamics 365 for Operations rendszer Súgó ablakából cikkeket és feladat-útmutatókat is elérhet, amint az az alábbi képernyőképen is látható.
+
+![Súgó ablak](./media/help-pane-ops-task-guides-1024x741.png)
+
+Ez a cikk ismerteti a Súgó rendszert, és leírja hogyan hozhat létre testreszabott dokumentációt és továbbképzési forrásokat szervezetének.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Súgó a docs.microsoft.com-on
-A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations) a Dynamics 365 for Operations termékdokumentációjának elsődleges forrása. A webhely a következő funkciókat ajánlja:
+A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) a Dynamics 365 for Operations termékdokumentációjának elsődleges forrása. A webhely a következő funkciókat ajánlja:
 
 -   **Hozzáférés a legfrissebb tartalmakhoz** – A webhely lehetőséget ad a termékdokumentációk gyorsabb, rugalmasabb létrehozására, szállítására és frissítésére. Ezért segítségével garantálható, hogy a legfrissebb technikai információkhoz jut hozzá.
 -   **Szakértők által írt tartalmak** – A WEBHELY szélesebb körű termékdokumentációkat kínál, amelyeket a közösség tagjai a Microsofton kívül és belül is bővíthetnek.
@@ -50,13 +54,48 @@ A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/operations](/dynam
 
 A korábbi súgó wiki teljes tartalmát átvittük dokumentumokba. Nagy örömmel mutatjuk be az új weboldalt, és reméljük, hogy Ön is örömét leli majd benne.
 
-### <a name="when-can-we-use-it"></a>Mikor tudjuk használni?
+### <a name="searching-on-docsmicrosoftcom"></a>Keresés a docs.microsoft.com-on
+Sok kérdést kapunk arról, hogy miként kereshetők tartalmaink. Ha webhelyünkön a Dynamics 365 for Operations egy lapjáról indítja a keresést, akkor annak hatóköreként csak a Dynamics 365 for Operations tartalmait adjuk meg. A hatókör szűkítését úgy távolíthatja el, ha az X gombra kattint az Operations mellett a keresőmezőben. 
+![Keresés](./media/search-scope.png)
 
-Most is olvashat tartalmi dokumentumokat – teljesen nyílt hozzáférésű, kereshető, nem szükséges bejelentkezés. Használhatja a kedvenc keresőmotorját a tartalmak kereséséhez. Ha bejelentkezik, kommentálhatja is a weboldal cikkeit.
+Tartalmainkat bármelyik keresőmotorral is megtalálhatja. A legjobb eredmények elérése érdekében azt javasoljuk, hogy webhelyre korlátozott keresést végezzen, mint például: site:docs.microsoft.com "keresőkifejezés"  
+![Keresés a webhelyen](./media/site-search.png)
+
+![Keresési eredmények a webhelyről](./media/site-search-results.png)
+
+
+### <a name="how-can-i-contribute"></a>Hogyan járulhatok hozzá? 
+
+Szóljon hozzá! 
+
+1 Kattintson a **Megjegyzések** lehetőségre, hogy eljusson a lap alján lévő megjegyzésekhez.
+
+![Megjegyzések](./media/comments.png)
+
+2 Írja be megjegyzését, majd kattintson a **Megjegyzés elküldése** gombra.
+
+![Megjegyzés elküldése](./media/before-signin.png)
+
+3 Válassza ki, hogy milyen típusú fiókkal kíván bejelentkezni:  
+Kattintson a bal oldali ikonok egyikére, hogy társíthassa ezt a webhelyet egy meglévő fiókhoz (például Twitter-, Facebook- vagy Microsoft-fiók). 
+
+Vagy 
+
+A jobb oldalon adjon meg egy e-mail-címet és egy új jelszót ahhoz, hogy új fiókot hozzon létre a webhely számára. 
+
+![Bejelentkezési beállítások](./media/signin-options.png)
 
 
 ## <a name="task-guides"></a>Feladat-útmutatók
-A Feladat-útmutató egy kontrollált, irányított, interaktív tapasztalat, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. A Súgó ablakban megnyithatja (lejátszhatja) a Feladat-útmutatót. Amikor először kattint a Feladat-útmutatóra a Súgó ablakban, láthatja lépésenként a feladathoz tartozó utasításokat. A honosított Feladat-útmutatók már elérhetőek. [![Feladat-útmutató olvasási nézete](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) Az irányított, interaktív tapasztalat megkezdéséhez kattintson a **Feladat-útmutató indítása** lehetőségre a Súgó ablak alján. Egy fekete mutató nyílik meg, és jelzi a végrehajtott műveleteket. Kövesse a felhasználói felületen megjelenő utasításokat, és adja meg az adatokat az utasításoknak megfelelően. [![Feladat-útmutató lépésre vonatkozó utasítása](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Fontos:** A Feladat-útmutató lejátszásakor megadott adatok valósak. Ha gyártási területen van, az adatok a használt vállalathoz kerülnek bejegyzésre.
+A Feladat-útmutató egy kontrollált, irányított, interaktív tapasztalat, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. A Súgó ablakban megnyithatja (lejátszhatja) a Feladat-útmutatót. Amikor először kattint a Feladat-útmutatóra a Súgó ablakban, láthatja lépésenként a feladathoz tartozó utasításokat. A honosított Feladat-útmutatók már elérhetőek. 
+
+![Feladat-útmutató olvasási nézete](./media/task-guide-ops-1024x742.png)
+
+Az irányított, interaktív tapasztalat kezdéséhez kattintson a **Feladat útmutató indítása** lehetőségre a Súgó ablak alján. Egy fekete mutató nyílik meg, és jelzi a végrehajtott műveleteket. Kövesse a felhasználói felületen megjelenő utasításokat, és adja meg az adatokat az utasításoknak megfelelően. 
+![Feladat-útmutató lépésre vonatkozó utasítása](./media/task-guide-step-1-ops.png)
+
+> [!IMPORTANT] 
+> A feladatútmutató lejátszásakor megadott adatok valósak. Ha gyártási területen van, az adatok a használt vállalathoz kerülnek bejegyzésre.
 
 ### <a name="it-all-begins-with-task-recorder"></a>A Feladatrögzítővel kezdődik
 
@@ -72,7 +111,9 @@ A Feladatrögzítővel kapcsolatos további információkért lásd: [Feladatrö
 Létrehozhatja a saját feladatrögzítéseit vagy letölthet és testreszabhatja a Microsoft rögzítéseit. Emiatt egyéni Súgót hozhat létre szervezetének, amely tükrözi a Dynamics 365 for Operations rendszer egyéni implementációját. Feladatrögzítés a Dynamics 365 for Operations rendszer Súgójában való megjelenítéséhez és feladatrögzítésként való lejátszásához a rögzítést el kell menteni egy BPM könyvtárba az LCS szolgáltatásban. Ha partnerként hozzájárul egy könyvtárral egy vállalati tár kialakításához, valamint beilleszti azt egy megoldásba, akkor az a vevői számára elérhetővé válik. Teljes körű utasítások: [Feladatrögzítések használata dokumentációhoz vagy továbbképzéshez](../user-interface/task-recorder.md).
 
 ## <a name="in-product-help"></a>Termékbe épített Súgó
-Ha szeretné megtekinteni a Súgó tartalmát a Dynamics 365 for Operations rendszerben, akkor kattintson a **Súgó** (**?**) ikonra, és válassza a Súgó lehetőséget, vagy nyomja meg a Ctrl+Shift+? billentyűkombinációt. Mindkét esetben a Súgó ablak nyílik meg. A Súgó ablakból elérhet cikkeket és feladat-útmutatókat. [![Súgó ablak](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+Ha szeretné megtekinteni a Súgó tartalmát a Dynamics 365 for Operations rendszerben, akkor kattintson a **Súgó** (**?**) ikonra, és válassza a Súgó lehetőséget, vagy nyomja meg a Ctrl+Shift+? billentyűkombinációt. Mindkét esetben a Súgó ablak nyílik meg. A Súgó ablakból elérhet cikkeket és feladat-útmutatókat. 
+
+![Súgó ablak](./media/help-pane-wiki-1024x684.png)
 
 ### <a name="accessing-articles-from-the-help-pane"></a>Cikkek elérése a Súgó ablakból
 
@@ -80,19 +121,24 @@ A Súgó ablakból hozzáférhet a Dynamics 365 for Operations kliensre vonatkoz
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Feladat-útmutatók elérése a Súgó ablakból
 
-Mielőtt Feladat-útmutatókat nyit meg a Súgó ablakban, a Rendszergazdának a Dynamics 365 for Operations rendszerben a **Rendszer paraméterei** lapon be kell állítania néhány paramétert. **Megjegyzések:**
+Mielőtt Feladat-útmutatókat nyit meg a Súgó ablakban, a Rendszergazdának a Dynamics 365 for Operations rendszerben a **Rendszer paraméterei** lapon be kell állítania néhány paramétert. 
 
--   A Súgó konfigurálásához be kell lépnie egy ugyanattól a bérlőtől származó számlába, amelyben a Dynamics 365 for Operations rendszer is telepítve van.
--   Helyi virtuális merevlemezen (VHD) futó Dynamics 365 for Operations példánnyal nem lehet csatlakozni az LCS-könyvtárhoz.
+> [!NOTE]
+> -   A Súgó konfigurálásához be kell lépnie egy ugyanattól a bérlőtől származó számlába, amelyben a Dynamics 365 for Operations rendszer is telepítve van.
+> -   Helyi virtuális merevlemezen (VHD) futó Dynamics 365 for Operations példánnyal nem lehet csatlakozni az LCS-könyvtárhoz.
 
-[![Rendszerparaméterek – súgó beállításai](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) A **Rendszerparaméterek** lapon végezze el az alábbi lépéseket:
+![Rendszerparaméterek űrlap – súgó beállításai](./media/system-parameters_ops-1024x437.png)
 
-1.  **Fontos:**Amikor első alkalommal nyitja meg a Súgó lapot, kapcsolódnia kell a Lifecycle Services szolgáltatáshoz. Ügyeljen arra, hogy az űrlap közepén levő hivatkozásra kattintson, várja meg a kapcsolatot, zárja be a párbeszédpanelt, majd kattintson az OK gombra a paraméter-űrlap eléréséhez.[![Kapcsolódás az LCS-szolgáltatáshoz](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
+A **Rendszer paraméterei** oldalon kövesse az alábbi lépéseket:
+
+1.  **Fontos:**Amikor első alkalommal nyitja meg a Súgó lapot, kapcsolódnia kell a Lifecycle Services szolgáltatáshoz. Ügyeljen arra, hogy az űrlap közepén levő hivatkozásra kattintson, várja meg a kapcsolatot, zárja be a párbeszédpanelt, majd kattintson az OK gombra a paraméter-űrlap eléréséhez.
+![Kapcsolódás az LCS szolgáltatáshoz](./media/connect-to-lcs-crop-1024x365.png)
 2.  A csatlakozáshoz válassza ki a Lifecycle Services-projektet.
 3.  Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
 4.  Adja meg a BPM könyvtárak megjelenítési sorrendjét. Ez meghatározza a sorrendet, amelyben a feladatrögzítések megjelennek a Súgó ablakban.
 
-Miután egy Rendszergazda végrehajtotta ezeket a lépéseket, nyissa meg a Súgó ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek a Dynamics 365 for Operations rendszer aktuális oldalához kapcsolódó Feladat-útmutatók. Amennyiben nem találhatók Feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést. Miután rákattint egy Feladat-útmutatóra a Súgó ablakában, a Súgó ablak lépésekre lebontva megjeleníti az utasításokat, továbbá lehetősége van a feladat-útmutató lejátszására is. [![Feladat-útmutató olvasási nézete](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
+Miután egy Rendszergazda végrehajtotta ezeket a lépéseket, nyissa meg a Súgó ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek a Dynamics 365 for Operations rendszer aktuális oldalához kapcsolódó Feladat-útmutatók. Amennyiben nem találhatók Feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést. Miután rákattint egy Feladat-útmutatóra a Súgó ablakában, a Súgó ablak lépésekre lebontva megjeleníti az utasításokat, továbbá lehetősége van a feladat-útmutató lejátszására is. 
+![Feladat-útmutató olvasási nézete](./media/task-guide-ops-1024x742.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Hol találhatóak a honosított Feladat-útmutatók?
 

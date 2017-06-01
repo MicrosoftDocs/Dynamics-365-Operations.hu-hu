@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,17 +18,15 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e1a9e0eeb45f011ccb2aa091e68aff92782e1ae7
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5962fa36b061382e7f0ad55c08c81ac2cebc047d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="dynamics-365-for-operations-mobile-app-home-page"></a>Dynamics 365 for Operations mobilalkalmazás kezdőlapja
-
-[!include[banner](../includes/banner.md)]
 
 [!include[banner](../includes/banner.md)]
 
@@ -61,7 +59,7 @@ A mobilalkalmazásban történő navigáció négy egyszerű részből áll: eze
 ## <a name="implementation-process"></a>Megvalósítási folyamat
 Az alábbi ábra bemutatja a Dynamics 365 for Operations mobilalkalmazás implementálásának folyamatát a szervezeténél. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+![Mobilalkalmazások megvalósítási folyamata](./media/mobile-implementation-process_4.png)
 
 A következő táblázat olyan forrásokra mutató linkeket is tartalmaz, amelyek segíthetnek a Dynamics 365 for Operations mobilalkalmazás szervezeténél történő implementálásában. Az első oszlopban szereplő számok az előzőekben bemutatott számozott lépéseknek felelnek meg.
 
@@ -85,7 +83,7 @@ A következő táblázat olyan forrásokra mutató linkeket is tartalmaz, amelye
 <td>1</td>
 <td>Rendszergazda</td>
 <td>A Dynamics 365 for Operations implementálása a szervezetnél.</td>
-<td>Ha a vállalati hálózatra még nincs telepítve a Dynamics 365 for Operations, lásd a következő tudnivalókat: <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>Ha a vállalati hálózatra még nincs telepítve a Dynamics 365 for Operations, lásd a következő tudnivalókat: <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -93,32 +91,27 @@ A következő táblázat olyan forrásokra mutató linkeket is tartalmaz, amelye
 <td>Töltse le és telepítse azokat a tudásbáziscikkeket, amelyek lehetővé teszik a Microsoft által biztosított mobil munkaterületeket.</td>
 <td>Lásd az &quot;Előfeltételek&quot; szakaszt arról a mobil munkaterületről, amelyet szervezete használni szeretne:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Költségkontroll mobil munkaterületek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Aktuális készlet mobil munkaterület</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Értékesítési rendelések mobil munkaterületek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Szállítói együttműködési mobil munkaterület</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektidő megadása mobil munkaterület</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Költségkontroll mobil munkaterületek</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Aktuális készlet mobil munkaterület</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Értékesítési rendelések mobil munkaterületek</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Szállítói együttműködési mobil munkaterület</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektidő megadása mobil munkaterület</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Költségkezelés mobil munkaterület</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Rendszergazda</td>
 <td>Tegye közzé a Microsoft által biztosított egyéni mobil munkaterületeket.</td>
-<td>Lásd az &quot;Előfeltételek&quot; szakaszt arról a mobil munkaterületről, amelyet szervezete használni szeretne:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Költségkontroll mobil munkaterületek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Aktuális készlet mobil munkaterület</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Értékesítési rendelések mobil munkaterületek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Szállítói együttműködési mobil munkaterület</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektidő megadása mobil munkaterület</a></li>
-</ul></td>
+<td><a href="publish-mobile-workspace.md">Mobil munkaterület közzététele</a>
+</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Fejlesztő vagy független szoftverszállító (ISV)</td>
 <td>Használja a Dynamics 365 for Operations mobil keretrendszert egyéni mobil munkaterületek létrehozására.</td>
 <td><ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Dynamics 365 for Operations mobil keretrendszer</a></li>
+<li><a href="mobile-platform.md">Dynamics 365 for Operations mobil keretrendszer</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Dynamics 365 for Operations munkaterület X++ API</a></li>
 </ul></td>
 </tr>
@@ -126,19 +119,19 @@ A következő táblázat olyan forrásokra mutató linkeket is tartalmaz, amelye
 <td>5</td>
 <td>ISV</td>
 <td>Hozzon létre egy telepíthető csomagot, amely egyéni mobil munkaterületeket tartalmaz, és töltse fel a csomagot a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásra.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Telepíthető csomag generálása</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Telepíthető csomag létrehozása</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Rendszergazda</td>
 <td>Alkalmazza a telepíthető csomagot, amely tartalmazza az ISV által biztosított egyéni munkaterületeket.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazzon egy telepíthető csomagot és a Dynamics 365 for Operations rendszerre.</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Alkalmazzon egy telepíthető csomagot és a Dynamics 365 for Operations rendszerre.</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Rendszergazda</td>
 <td>Tegye közzé az ISV által biztosított egyéni mobil munkaterületeket.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobil munkaterület közzététele</a></td>
+<td><a href="publish-mobile-workspace.md">Mobil munkaterület közzététele</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -153,24 +146,12 @@ A következő táblázat olyan forrásokra mutató linkeket is tartalmaz, amelye
 <td>9</td>
 <td>Felhasználó</td>
 <td>Jelentkezzen be, és használja a Dynamics 365 for Operations mobilalkalmazást. Az alkalmazás tartalmazza a közzétett mobil munkaterületeket.</td>
-<td>A Microsoft a következő mobil munkaterületeket kínálja:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Költségkontroll mobil munkaterületek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Aktuális készlet mobil munkaterület</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Értékesítési rendelések mobil munkaterületek</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Szállítói együttműködési mobil munkaterület</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Projektidő megadása mobil munkaterület</a></li>
-</ul></td>
+<td>A Microsoft által biztosított munkaterületek megtekintéséhez lásd: <a href="mobile-workspaces-released.md">A Dynamics 365 for Operations mobilalkalmazáshoz nemrégiben kiadott mobil munkaterületek</a>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="see-also"></a>Lásd még
---------
-
-[A Dynamics 365 for Operations mobilalkalmazáshoz nemrégiben kiadott mobil munkaterületek](mobile-workspaces-released.md)
 
 
 

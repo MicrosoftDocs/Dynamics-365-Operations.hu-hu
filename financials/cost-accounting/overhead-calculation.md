@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ A járulékos költség kiszámítása lefuttatja a költségkönyvelési irány
 -   Pénzügyi év
 -   Pénzügyi időszak
 
-A járulékos költség kiszámítása a verziótól függetlenül fut. Ezért a tényleges verzió előtt kiszámíthatja a költségvetési verziót. A járulékos költségek kiszámítása négy lépésből áll, a következő ábrán látható módon. Minden lépésnél létrejön egy naplófejléc naplóbejegyzésekkel. Ez a naplófejléc megtartja az egyes számítási lépések bemeneti adatait. Az irányelvek és szabályok minden egyes naplósorra érvényesek, és kimenetként költségbejegyzések jönnek létre. Ezáltal mindig teljes a nyomon követhetőség. [![Járulékos költség számítása](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+A járulékos költség kiszámítása a verziótól függetlenül fut. Ezért a tényleges verzió előtt kiszámíthatja a költségvetési verziót. A járulékos költségek kiszámítása négy lépésből áll, a következő ábrán látható módon. Minden lépésnél létrejön egy naplófejléc naplóbejegyzésekkel. Ez a naplófejléc megtartja az egyes számítási lépések bemeneti adatait. Az irányelvek és szabályok minden egyes naplósorra érvényesek, és kimenetként költségbejegyzések jönnek létre. Ezáltal mindig teljes a nyomon követhetőség. 
+[![Járulékos költség számítása](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Az elektromos áram járulékos költségének kiszámítása és felosztása
 A pénzügyi könyvelésben egyes költségeket, így például az elektromos áram költségeit gyakran egy összegben regisztrálják. Ezért nem jön létre részletes vezetői betekintést a költségkönyvelésnél. A Költségkönyvelés során a szervezeti egységek és a szintek közötti megfelelő vezetői betekintés biztosításához költségeknek kell bekerülnie a szervezeti egységeken keresztül. A folyamatnak vagy a felhasználás pontos rekordján, vagy a helyes becslésén kell alapulnia. A főkönyvben az elektromos áram költségként feladható a következő táblázatban látható módon.
@@ -622,7 +623,7 @@ A járulékos díj irányelvére vonatkozó részletes információkért lásd: 
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>4. lépés: A kötségfelosztásra vonatkozó számítás feldolgozása
 
-A felosztást arra használják, hogy egy költségobjektum egyenlegét mások költségobjektumokhoz hozzárendeljék egy felosztási alap alkalmazásával. A Microsoft Dynamics 365 for Operations a reciprokális felosztási módszert támogatja. A reciprokális felosztási módszer esetében a segédköltség-objektumok által kicserélt kölcsönös szolgáltatások teljes mértékben elismertek. A rendszer automatikusan meghatározza a felosztások végrehajtásának megfelelő sorrendjét. A költségobjektumok egyenlegének felosztása egyetlen felosztási alap szerint történik. A rendszer támogatja a költségobjektum-dimenziók és a hozzájuk tartozó tagok közötti felosztásokat. A felosztás sorrendjét a költség ellenőrzőegysége vezérli. [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+A felosztást arra használják, hogy egy költségobjektum egyenlegét mások költségobjektumokhoz hozzárendeljék egy felosztási alap alkalmazásával. A Microsoft Dynamics 365 for Operations a reciprokális felosztási módszert támogatja. A reciprokális felosztási módszer esetében a segédköltség-objektumok által kicserélt kölcsönös szolgáltatások teljes mértékben elismertek. A rendszer automatikusan meghatározza a felosztások végrehajtásának megfelelő sorrendjét. A költségobjektumok egyenlegének felosztása egyetlen felosztási alap szerint történik. A rendszer támogatja a költségobjektum-dimenziók és a hozzájuk tartozó tagok közötti felosztásokat. A felosztás sorrendjét a költség ellenőrzőegysége vezérli. [![Fordított módszer](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>A költségfelosztás meghatározása
 
