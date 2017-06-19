@@ -1,5 +1,5 @@
 # Power BI content csomag
-## [Költségkezelési tartalmi csomag](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Költségkezelési tartalmi csomag](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Előre meghatározott költség
 ## [Költségszámítási táblázat](costing-sheets.md)
 ## [Költségszámítási verzió](costing-versions.md)

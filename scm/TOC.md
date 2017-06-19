@@ -43,6 +43,8 @@
 ### [Szállítói számlák beállítása](procurement/set-up-vendor-accounts.md)
 ### [A külső szállítókkal történő szállítói együttműködés](procurement/vendor-collaboration-work-external-vendors.md)
 ### [Szállítói együttműködés a vevőkkel](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Külső katalógus használata engedélyezése a PunchOut e-beszerzés számára](procurement/use-external-catalogs-for-punchout.md)
+### [Állítson be külső katalógust a PunchOut e-beszerzés számára](procurement/set-up-external-catalog-for-punchout.md)
 ### [Együttműködés a szállítókkal a Szállítói portálon keresztül](procurement/collaborate-vendors-vendor-portal.md)
 ### [Szállítói együttműködési mobil munkaterület](procurement/vendor-collaboration-mobile-workspace.md)
 ### [Szállítói portál felhasználói biztonság](procurement/configure-security-vendor-portal-users.md)
@@ -50,19 +52,37 @@
 ### [Beszerzési szerződések](procurement/purchase-agreements.md)
 ## Termékbevételezések és számlázás
 ### [Termékbevételezés összevetése a beszerzési rendelésekkel](procurement/product-receipt-against-purchase-orders.md)
-### [Szállítói számlák áttekintése](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [Szállítói feladási profilok](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Szállítói számlák áttekintése](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Szállítói feladási profilok](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Termékinformációk kezelése
-## Termékinformációk
-### [Anyagjegyzék és receptúra](production-control/bill-of-material-bom.md)
-### [Anyagjegyzék-tervező funkció](production-control/bom-designer-functionality.md)
-### [Termékdimenzió](pim/product-dimensions.md)
-### [Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások](production-control/default-order-settings.md)
-### [Termékszám elnevezési rendszere](pim/product-variant-identification-nomenclature.md)
-### [Termékkel kapcsolatos fordítás GYIK](pim/translations-product-related-information.md)
-### [Sorozatszám bejegyzése az értékesítési folyamat során](sales-marketing/register-serial-numbers-sales-process.md)
-### [Termék keresése rendelésbevitel során](pim/search-products-product-variants.md)
-## Termékkonfiguráció létrehozása
+## [Termékek adatainak áttekintése](pim/product-information.md)
+## Termékkategóriák karbantartása
+## Termékadatok karbantartása
+### Termékdefiníciók karbantartása
+#### [Termékszám elnevezési rendszere](pim/product-variant-identification-nomenclature.md)
+#### Terméksablonok
+#### [Termékdimenzió](pim/product-dimensions.md)
+#### Termékattribútumok
+#### Termékképek és mellékletek
+#### Termékazonosítók
+#### [Termékinformációs GYIK fordítása](pim/translations-product-related-information.md)
+### Termékek kiadása jogi személyeknek
+### Termékek keresése a következő szerint
+#### [Termék keresése rendelésbevitel során](pim/search-products-product-variants.md)
+### Termék előkészítése tervezésre
+#### [Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások](production-control/default-order-settings.md)
+#### Előrejelzési modellek és cikkfelosztási kulcsok
+### Termék előkészítése termelésre
+#### Anyagjegyzék és receptúra
+##### [Anyagjegyzékek és receptúrák](production-control/bill-of-material-bom.md)
+##### [Az Anyagjegyzék-tervező használata](production-control/bom-designer-functionality.md)
+##### [A Képletszerkesztő használata](production-control/formula-designer.md)
+#### Útvonalak
+#### Lean manufacturing (lean gyártás)
+### Termékek előkészítése a raktárhoz és a logisztikához
+### Termékek költségbecslése
+#### [Anyagjegyzék-számítások](cost-management/bom-calculations.md)
+## Termékkonfigurálási modellek karbantartása
 ### [Termékkonfigurációs modell felépítése](pim/build-product-configuration-model.md)
 ### [Számítás a termékkonfigurációs modellhez GYIK](pim/calculate-product-configuration-models.md)
 ### [Konfigurációs szabály](pim/configuration-rules.md)
@@ -71,6 +91,8 @@
 ### [Termékkonfiguráció újrafelhasználása](pim/reuse-product-configurations.md)
 ### [Konfigurációs modell beállítása](pim/set-up-maintain-product-configuration-model.md)
 ### [Rendszer által definiált és felhasználó által definiált táblamegszorítás](pim/system-defined-user-defined-table-constraints.md)
+## Termékinformációs adatok importálása
+## Termékinformációs adatok exportálása
 # Gyártásvezérlés
 ## [Termelési folyamat áttekintése](production-control/production-process-overview.md)
 ## [Vegyes módú tervezés: Elkülönített, folyamatos és lean típusú források kombinálása](production-control/mixed-mode-plan.md)
@@ -96,6 +118,8 @@
 #### [Termelési rendelési állapot sztornírozása](production-control/reverse-production-order-status.md)
 #### [Termelési rendelések jelentése befejezettként](production-control/report-production-orders-as-finished.md)
 #### [Anyagjegyzékek jelentése befejezettként](production-control/report-boms-as-finished.md)
+#### [Termelési rendelések áttárolása kiszállítási területekbe](production-control/cross-docking-opportunities.md)
+#### [Anyagfelhasználás regisztrálása mobileszköz segítségével](production-control/register-material-consumption-hand-held-device.md)
 #### [Anyaghelyettesítés a gyártásban](production-control/substitute-items-bom-lines.md)
 #### [Gyártásvégrehajtás regisztrációja](production-control/registration-manufacturing-execution.md)
 #### [Termelési visszajelzés](production-control/production-feedback.md)
@@ -111,8 +135,9 @@
 #### [Lean szervezet modellezése](production-control/lean-manufacturing-modeling-lean-organization.md)
 #### [Üzemi erőforrások](production-control/operations-resources.md)
 ### Kanbanfeladatok ütemezése
+#### [Vizuális ütemezés lean manufacturing céljára](production-control/visual-scheduling-lean-manufacturing.md)
 #### [Kanbanfeladat ütemezése lean manufacturing céljára](production-control/lean-manufacturing-kanban-job-scheduling.md)
-#### [Feladatütemezés](production-control/job-scheduling.md)
+#### [Feladat ütemezése](production-control/job-scheduling.md)
 ### Kanbanfeladatok működtetése
 #### [Kanbanátviteli tábla támogatása vonalkódolvasókhoz](production-control/kanban-transfer-board-support-barcode-scanner.md)
 #### [Termelési visszajelzés](production-control/production-feedback.md)
@@ -127,7 +152,8 @@
 ### Termelési műveletek ütemezése
 #### [Műveletek ütemezése](production-control/operations-scheduling.md)
 #### [A műveletek ütemezésének beállításai](production-control/operation-scheduling-options.md)
-#### [Feladatütemezés](production-control/job-scheduling.md)
+#### [Feladat ütemezése](production-control/job-scheduling.md)
+#### [Munkaütemezés Gantt-diagram segítségével](production-control/visual-scheduling-production.md)
 ### Termelési feladatok működtetése
 #### [Összesített kötegrendelések](production-control/consolidated-batch-orders.md)
 #### [Anyaghelyettesítés a gyártásban](production-control/substitute-items-bom-lines.md)
@@ -162,18 +188,26 @@
 ## [Szállításkezelés](transportation/transportation-management-overview.md)
 ## [Szállítási kalkulátor](transportation/transportation-management-engines.md)
 # Raktárkezelés
+## Speciális raktárkezelési szolgáltatások
+### [Áttelepítés AX 2012-ből a Finance and Operations alkalmazásba](warehousing/upgrade-migration-warehouse-management-processes.md)
 ## Beállítás 
 ### [Munka ellenőrzése munkasablonok és helyutasítások használatával](warehousing/control-warehouse-location-directives.md)
 ### [Raktári dolgozók kezelése](warehousing/manage-warehouse-workers.md)
 ### [Elrendezés beállítása](warehousing/warehouse-configuration.md)
 ### [Raktári munkairányelvek](warehousing/warehouse-work-policies.md)
 ### [Mértékegység és rakodási irányelvek](warehousing/unit-measure-stocking-policies.md)
-### [Raktár Power BI-tartalom](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [Raktár Power BI-tartalom](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+### [Köteg és azonosítótábla megerősítése](warehousing/batch-and-license-plate-confirmation.md)
+### [Készlet mozgatása társított munkával](warehousing/move-inventory-associated-work.md)
+### [Nyitott munkalista rendszercsoportosítása](warehousing/system-group-on-open-work-list.md)
+### [Termék-visszaigazolás fürt kitárolásához](warehousing/cluster-picking-item-confirmation.md)
 ## Kitárolás és csomagolás
 ### [Csomagolóanyagok és díjak](warehousing/pack-materials-packing-material-fees.md)
+### [Darab kitárolásának megerősítése](warehousing/piece-picking-confirmation.md)
 ## Készletszámlálás
 ### [Készletzárolás](inventory/inventory-blocking.md)
 ### [Ciklikus leltározás](warehousing/cycle-counting.md)
+### [Helyek részleges ciklikus leltározása](warehousing/partial-location-cycle-counting.md)
 ### [Készletnapló](inventory/inventory-journals.md)
 ### [Készlethely](inventory/inventory-locations.md)
 ### [Készlet állapota](inventory/inventory-statuses.md)
@@ -181,6 +215,7 @@
 ## Tárolóra bontás 
 ## Feltöltés
 ### [Feltöltés](warehousing/replenishment.md)
+### [Feltöltés visszavonási kanbanokkal](warehousing/material-replenishment-withdrawal-kanban.md)
 ## Mobileszközök
 ### [A raktározási alkalmazás telepítése és konfigurálása ](warehousing/install-configure-warehousing-app.md)
 ### [Mezőnevek konfigurálása a raktározási alkalmazásban](warehousing/configure-app-field-names-priorities-warehouse.md)
@@ -188,15 +223,15 @@
 ### [Raktári mobileszközportál (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Raktári mobileszköz megjelenítési beállításai](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Pénzügyek](/dynamics365/operations/financials/index)
+# [Pénzügyek](/dynamics365/unified-operations/financials/index)
 
-# [Emberi erőforrások](/dynamics365/operations/human-resources/index)
+# [Emberi erőforrások](/dynamics365/unified-operations/talent/index)
 
-# [Kiskereskedelem](/dynamics365/operations/retail/index)
+# [Kiskereskedelem](/dynamics365/unified-operations/retail/index)
 
-# [Fejlesztő és Rendszergazda](/dynamics365/operations/dev-itpro/index)
+# [Fejlesztő és Rendszergazda](/dynamics365/unified-operations/dev-itpro/index)
 
 # Egyéb erőforrások
-## [Dynamics 365 for Operations fogalomtár](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [Új vagy módosult elemek](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+## [A Finance and Operations alkalmazás fogalomtára](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Új vagy módosult elemek](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 

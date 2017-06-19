@@ -1,4 +1,4 @@
-# [Honosítás – áttekintés](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Honosítás – áttekintés](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # Ázsia és a csendes-óceáni térség
 ## Ausztrália
 ### [Banki fájlok formátumai](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -54,6 +54,7 @@
 ## [Tárgyi eszköz előzetes beszerzésének feladása](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [Irányítószámok](emea-import-create-postal-codes-manually.md)
 ## [Nyilvántartási azonosítók](emea-registration-ids.md)
+## [Fordított áfa](emea-reverse-charge.md)
 ## [SEPA-átutalás áttekintése](../accounts-payable/sepa-credit-transfer.md)
 ## [SEPA beszedési megbízás – áttekintés](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Aláírók beállítása a nyomtatási képernyőkhöz](emea-set-up-signers-for-printing-forms.md)
@@ -98,7 +99,7 @@
 ### [Naplólista (jelentés)](emea-deu-journal-list-report.md)
 ### [Külön címke nyomtatása értékesítésből származó jóváírásoknak](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Magyarország
-### [Értékcsökkenés módjai tárgyi eszközöknél](emea-hun-fixed-assets-depreciation-methods.md)    
+### [Értékcsökkenés módjai tárgyi eszközöknél](emea-hun-fixed-assets-depreciation-methods.md)   
 ### [Kis értékű tárgyi eszközök](emea-hun-low-cost-fixed-assets.md)
 ### [Tárgyi eszköz áthelyezése készletbe](emea-hun-fixed-asset-to-inventory.md)
 ## Olaszország
@@ -138,6 +139,7 @@
 ### [Tárgyieszköz-csoport átértékelése](emea-esp-fixed-asset-group-revaluation.md)
 ### [Közösségi áfa](emea-esp-intra-community-vat.md)
 ### [Egyszeri vevők](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Csekkek kinyomtatása spanyol elrendezésben](emea-esp-print-checks-with-spanish-layout.md)
 ### [Kötelezvény beállításai](emea-esp-promissory-note-options.md)
 ### [Beszerzési és értékesítési ciklusok](emea-esp-sales-purchase-cycle.md)
 ### [Speciális bevitelek és nyitólapok](emea-esp-opening-sheets-spain.md)
@@ -153,7 +155,9 @@
 ### [Pénzügyi könyvek](latam-bra-fiscal-books.md)
 #### [ICMS pénzügyi adóbizonylatok](latam-bra-icms-tax-fiscal-documents.md)
 #### [Pénzügyi bizonylatok importálása](latam-bra-import-fiscal-documents.md)
+#### [A főkönyvi konszolidációban létrehozott jogi személy tranzakcióinak exportálása és importálása](latam-bra-general-ledger-consolidation-transactions.md)
 #### [NF-e XML-dokumentumok és a DANFE-fájlok importálása és ellenőrzése](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Elektronikus fizetési átutalások feldolgozása](latam-bra-process-electronic-payment-remittances.md)
 #### [Pénzügyi dokumentumok](latam-bra-fiscal-documents-fiscal-document-framework.md)
 #### [Pénzügyi dokumentum szöveges helyőrzők](latam-bra-fiscal-document-text-placeholders.md)
 #### [Beszerzés – kiegészítő pénzügyi bizonylatok](latam-bra-purchase-complementary-fiscal-documents.md)
@@ -163,6 +167,8 @@
 ### [Az elektronikus visszafizetési folyamat során létrehozott naplók](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [NF-e folyamat](latam-bra-nf-e-process.md)
 ### [Jogi személyek paraméterei](latam-bra-legal-entity-parameters.md)
+### [CIAP tárgyi eszköz beszerzése](latam-bra-ciap-fixed-asset.md)
+### [CIAP tárgyi eszköz értékesítése](latam-bra-ciap-fixed-asset.md)
 ### [Adók](latam-bra-calculate-taxes.md)
 #### [Adóattribútumok](latam-bra-tax-attributes.md)
 #### [Adófizetések](latam-bra-tax-payments.md)

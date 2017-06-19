@@ -15,8 +15,9 @@
 ## [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)
 ## [Kiskereskedelmi munkaidő és jelenlét](retail-time-attendance.md)
 # Modern pénztár (MPOS) és felhőalapú pénztár
-## Hardverperifériák
+## Hardverek és perifériák
 ### [Kiskereskedelmi perifériás eszközök – áttekintés](retail-peripherals-overview.md)
+### [Kiskereskedelmiperiféria-szimulátor](retail-peripheral-simulator.md)
 ### [A Microsoft által tesztelt pénztári hardverperifériák](microsoft-tested-pos-hardware-peripherals.md)
 ### [Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat](define-maintain-channel-clients-registers-hw-stations.md)
 ## Képernyő-elrendezés
@@ -39,9 +40,10 @@
 ### [A MPOS pénztár konfigurálása és telepítése](retail-modern-pos-device-activation.md)
 ### [Kiterjesztett bejelentkezés beállítása felhőalapú pénztárhoz és MPOS pénztárhoz](extended-logon.md)
 ### [Kiskereskedelmi számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
-## Nyugták
+## Bevételezések
 ### [Nyugtasablonok beállítása](receipt-templates-printing.md) 
 ### [E-mailes nyugták küldése MPOS pénztárból](email-receipts.md)
+## [Feladatrögzítő és Súgó a pénztárhoz](task-recorder-retail-pos.md)
 # Megfigyelés és elemzés
 ## [Értékesítési és teljesítménykülönbözet megfigyelése](monitor-sales-margin-performance.md)
 ## [Értékesítési trendek és mintázatok elemzése](analyze-sales-trends-patterns.md)
@@ -53,6 +55,7 @@
 ## [Ármódosítások és engedmények](price-adjustments-discounts.md)
 ## [Átfedő engedmények optimális kombinációjának meghatározása](optimal-combination-overlapping-discounts.md)
 ## [Csatornaspecifikus engedmények definiálása](define-channel-specific-discounts.md)
+## [Kiskereskedelmi értékesítési utalványok létrehozása](retail-coupons.md)
 # Termékek és árusítás
 ## [Kiskereskedelmi hierarchiák](retail-hierarchies.md)
 ## [Attribútumok létrehozása és kezelése](create-manage-attributes.md)
@@ -60,6 +63,7 @@
 ## [Vonalkódok beállítása](set-up-bar-codes.md)
 ## [Vonalkódmaszkok beállítása](set-up-bar-code-masks.md)
 ## [Szortimentek beállítása](set-up-assortments.md)
+## [Szortimenten kívüli termékek eladása és visszavétele](sell-return-outside-assortments.md)
 # Hűség
 ## [Vásárlói hűségprogram beállítása](set-up-customer-loyalty-program.md)
 # Készlet
@@ -69,15 +73,15 @@
 ## [Szervezetek és szervezeti hierarchiák (kereskedelmi alapok)](organizational-hierarchies-commerce-essentials.md)
 # [Informatikai szakértőknek és fejlesztőknek szánt tartalom](dev-itpro/TOC.md)
 
-# [Pénzügyek](/dynamics365/operations/financials/index)
+# [Pénzügyek](/dynamics365/unified-operations/financials/index)
 
-# [Emberi erőforrások](/dynamics365/operations/human-resources/index)
+# [Emberi erőforrások](/dynamics365/unified-operations/talent/index)
 
-# [Ellátásilánc-kezelés](/dynamics365/operations/supply-chain/index)
+# [Ellátásilánc-kezelés](/dynamics365/unified-operations/supply-chain/index)
 
-# [Fejlesztő és Rendszergazda](/dynamics365/operations/dev-itpro/index)
+# [Fejlesztő és Rendszergazda](/dynamics365/unified-operations/dev-itpro/index)
 
 # Egyéb erőforrások
-## [Dynamics_365_for_Operations fogalomtár](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [Új vagy módosult elemek](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Dynamics 365 for Retail fogalomtár](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Új vagy módosult elemek](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 

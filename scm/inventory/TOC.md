@@ -21,4 +21,5 @@
 # Cikk és köteg követése
 ## [Készletköteg egyesítése](merge-inventory-batches.md)
 ## [Elem és nyersanyag követése](trace-items-raw-materials-inventory-production-sales.md)
+## [Sorozatszám bejegyzése az értékesítési folyamat során](../sales-marketing/register-serial-numbers-sales-process.md)
 

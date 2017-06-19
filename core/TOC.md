@@ -1,34 +1,34 @@
 # [Bevezetés](index.md)
 
-# [A Dynamics 365 for Operations bemutatása](get-started/onboarding-home.md)
-## A Dynamics 365 for Operations bemutatása
+# [Felvétel a Finance and Operations alkalmazásba](get-started/onboarding-home.md)
+## Bevezetés a Finance and Operations alkalmazásba
 ### [Első lépések a Microsoft FastTrack for Dynamics 365 rendszerben](get-started/fasttrack-dynamics-365-overview.md)
-### [Regisztrálás előfizetésre](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/operations/toc.json)
-### [A Dynamics AX 2012 helyszíni verziójának beszerzése](/dynamics365/operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/operations/toc.json)
-## [Bemutatókörnyezet telepítése](/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/operations/toc.json)
+### [Regisztrálás előfizetésre](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [A Dynamics AX 2012 helyszíni verziójának beszerzése](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Bemutatókörnyezet telepítése](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Fedezze fel a felhasználói felületet
 ### [Műveletkeresés](get-started/action-search.md)
 ### [Speciális szűrési és lekérdezési szintaxis](get-started/advanced-filtering-query-options.md)
-### [Dynamics_365_for_Operations kliens GYIK](get-started/client-faq.md)
+### [Finance and Operations alkalmazás kliens GYIK](get-started/client-faq.md)
 ### [Munkaterületek konfigurálása és szűrése](get-started/configure-filter-workspaces.md)
 ### [Oldalak párhuzamos megjelenítése a Megnyitás új ablakban ikon használatával](get-started/display-pages-side-by-side.md)
 ### [Navigációs keresés](get-started/navigation-search.md)
 ### [A felhasználói élmény testreszabása](get-started/personalize-user-experience.md)
 ### [Billentyűparancsok](get-started/shortcut-keys.md)
 ### [Lapok megjelenésének kezelése](get-started/window-management.md)
-### [A Lifecycle Services szolgáltatás bemutatása](/dynamics365/operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/operations/toc.json)
+### [A Lifecycle Services szolgáltatás bemutatása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Súgó és támogatás
-### [Súgó áttekintése](/dynamics365/operations/dev-itpro/get-started/help-overview?toc=/dynamics365/operations/toc.json)
-### [Súgó összekapcsolása](/dynamics365/operations/dev-itpro/get-started/help-connect?toc=/dynamics365/operations/toc.json)
+### [Súgó áttekintése](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Súgó összekapcsolása](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Mezőleírások megtekintése és exportálása](get-started/view-export-field-descriptions.md)
 
 ### Feladat-útmutatók és feladatrögzítő
-#### [Feladatrögzítő](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
-#### [Dokumentáció vagy képzés létrehozása](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
+#### [Feladatrögzítő](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Dokumentáció vagy képzés létrehozása](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Ország-/régióspecifikus súgótartalmak](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/toc.json)
+## [Ország-/régióspecifikus súgótartalmak](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 # [A szervezet konfigurálása](organization-administration/organization-administration-home-page.md)
 ## [Szervezetek és szervezeti hierarchiák](organization-administration/organizations-organizational-hierarchies.md)
@@ -63,17 +63,17 @@
 ## [Az üzenetet feldolgozó kötegelt feladat konfigurálása](organization-administration/workflow-batch-job-critical.md)
 ## [Munkafolyamat-típusok jelentése](organization-administration/workflow-types-report.md)
 
-# [Pénzügyek](/dynamics365/operations/financials/index)
+# [Pénzügyek](/dynamics365/unified-operations/financials/index)
 
-# [Emberi erőforrások](/dynamics365/operations/human-resources/index)
+# [Emberi erőforrások](/dynamics365/unified-operations/talent/index)
 
-# [Kiskereskedelem](/dynamics365/operations/retail/index)
+# [Kiskereskedelem](/dynamics365/unified-operations/retail/index)
 
-# [Ellátásilánc-kezelés](/dynamics365/operations/supply-chain/index)
+# [Ellátásilánc-kezelés](/dynamics365/unified-operations/supply-chain/index)
 
-# [Fejlesztő és Rendszergazda](/dynamics365/operations/dev-itpro/index)
+# [Fejlesztő és Rendszergazda](/dynamics365/unified-operations/dev-itpro/index)
 
 # Egyéb erőforrások
-## [Dynamics_365_for_Operations fogalomtár](get-started/glossary.md)
-## [Új vagy módosult elemek](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/toc.json)
+## [A Finance and Operations alkalmazás fogalomtára](get-started/glossary.md)
+## [Új vagy módosult elemek](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
