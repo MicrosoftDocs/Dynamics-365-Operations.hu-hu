@@ -3,7 +3,7 @@ title: "Lineáris – élettartam szerinti értékcsökkenés"
 description: "Ez a cikk a Lineáris, élettartam szerinti értékcsökkenés módszeréről nyújt tájékoztatást."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Költségcsoportok"
 description: "A költségcsoportok adják a legyártott cikk kiszámolt költségében a költség-hozzájárulások szegmentálásának és elemzésének alapját, mint például az anyag, a munka és a többletköltség költség-hozzájárulását. A költségcsoport-szegmentálásnak számos szinonimája létezik a gyártási környezetekben, például költséglebontás, költségszétbontás vagy költségosztályozás."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

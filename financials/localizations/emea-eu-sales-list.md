@@ -3,7 +3,7 @@ title: "EU értékesítési lista jelentése"
 description: "Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

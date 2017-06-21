@@ -3,7 +3,7 @@ title: "EU-s beérkezési igazolás"
 description: "Ez a cikk az európai uniós (EU) beérkezési igazolásokról nyújt tájékoztatást."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

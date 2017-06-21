@@ -3,7 +3,7 @@ title: "Az elszámolóár frissítéseinek kezelése"
 description: "Az elszámolóár adatainak frissítése két eltérő megközelítés használatával kezelhető - ezek az „egyverziós” megközelítés és a „kétverziós” megközelítés."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Az elszámolóárra való átalakítás előfeltételei"
 description: "Ez a témakör az elszámolóárra való átalakítás futtatása előtt végrehajtandó feladatokat ismerteti."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Naplóbejegyzések és tranzakciók megtekintése"
 description: "Ez a cikk a napló bejegyzések és tranzakciók megtekintésének számos módját ismerteti."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

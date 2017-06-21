@@ -3,7 +3,7 @@ title: "Számlaazonosítók szerkesztése kelet-európai értékesítési rendel
 description: "Ez a témakör olyan kinnlevőségi paramétereket ismertet, amelyek hatással vannak a csomagjegyzékeken található számlaszámokra, valamint a cseh, észt, magyar, litván, lett és lengyel számlákra."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

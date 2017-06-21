@@ -3,7 +3,7 @@ title: "Kalkulációk a termékkonfigurációs modellekhez - GYIK"
 description: "Ez a cikk leírja a termékkonfigurációs modellek számításait, és elmagyarázza a számítások megszorításokkal történő használatát."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Új vagy frissített Feladat-útmutatók (2016. november)"
 description: "A témakör felsorolja a Microsoft Dynamics 365 for Operations (2016. november – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

@@ -3,7 +3,7 @@ title: "Közvetlen kiszállítások"
 description: "A cikk tájékoztatást nyújt a közvetlen kiszállításokkal kapcsolatban. A közvetlen kiszállítások olyan szállítások, amelyeket a rendszer közvetlenül a szállítótól küld a vevőhöz."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

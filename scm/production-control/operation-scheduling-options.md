@@ -3,7 +3,7 @@ title: "A műveletek ütemezésének beállításai"
 description: "Ez a témakör leírja a műveletek ütemezési beállításait. A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

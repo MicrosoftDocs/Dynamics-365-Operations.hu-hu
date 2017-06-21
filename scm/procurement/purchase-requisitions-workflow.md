@@ -3,7 +3,7 @@ title: "beszerzési igénylési munkafolyamat"
 description: "A munkafolyamat folyamata végigviszi a beszerzési igénylést az ellenőrzési folyamaton a kiinduló Tervezet állapottól a végső Jóváhagyva állapotig . A beszerzési igénylés ellenőrzésre való elküldésekor, elindul a munkafolyamat. A beszerzési igénylés jóváhagyása után, a beszerzési igénylés soraiban létrehozható egy beszerzési rendelés, amely elküldésre kerül a szállítónak, a rendelés teljesítése céljából."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

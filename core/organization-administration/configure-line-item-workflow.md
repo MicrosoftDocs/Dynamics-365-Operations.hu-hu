@@ -3,7 +3,7 @@ title: "Sortétel munkafolyamatának beállítása"
 description: "Ez a témakör bemutatja a sortétel-munkafolyamat-elem beállításának menetét."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

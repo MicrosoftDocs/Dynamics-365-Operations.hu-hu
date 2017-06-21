@@ -3,7 +3,7 @@ title: "Minőségkezelési folyamatok"
 description: "Ez a cikk a nem megfelelő termékekre vonatkozó minőségkezelési folyamatról nyújt tájékoztatást. a minőségellenőrzési funkció használatát, továbbá a szabálytalanságok meghatározásának, karbantartásának, illetve a helyesbítések kezelésének módját írja le."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

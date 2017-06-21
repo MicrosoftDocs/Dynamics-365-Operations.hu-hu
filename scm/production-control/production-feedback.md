@@ -3,7 +3,7 @@ title: "Termelési visszajelzés"
 description: "Ez a cikk információt biztosít a termékvisszajelzéssel kapcsolatban. A termékvisszajelzés termelési feladatokkal kapcsolatos visszajelzésekkel szolgál a munkások részére. A cikk a termelési visszajelzés frissítésének számos módjáról szolgál információval."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

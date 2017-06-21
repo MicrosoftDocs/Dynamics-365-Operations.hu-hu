@@ -3,7 +3,7 @@ title: "Mértékegység és rakodási irányelvek"
 description: "Ez a cikk leírja, hogy az alapértelmezett egységek, egységsorozatok és egységátváltások hogyan vannak felhasználva a raktári folyamatokban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

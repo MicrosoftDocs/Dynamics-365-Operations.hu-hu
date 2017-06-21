@@ -3,7 +3,7 @@ title: "A főkönyv lezárása időszak végén"
 description: "A témakör a főkönyvi időszak zárásának végrehajtásakor általában elvégzett feladatokat ismerteti."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

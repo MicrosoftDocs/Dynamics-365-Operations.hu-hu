@@ -3,7 +3,7 @@ title: "Erőforrás-képességek"
 description: "Ez a cikk az erőforrás képességeivel kapcsolatos információkról nyújt tájékoztatást. A képesség egy üzemi erőforrás képességét jelenti egy adott tevékenység végrehajtására. A cikk bemutatja, hogy hogyan használják a képességeket és a kapcsolódó fogalmakat (például a szakértelemszint és a prioritás) a megfelelő erőforrások kiválasztására egy tevékenységre vonatkozóan."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

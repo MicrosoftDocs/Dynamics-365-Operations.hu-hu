@@ -3,7 +3,7 @@ title: "Részleges szállítói kifizetés kiegyenlítése és az utolsó részl
 description: "Ez a cikk azt az esetet mutatja be, amely során a szállítói számlára vonatkozóan készülnek el a részleges kifizetések és a készpénzfizetési engedmény igénybe van véve."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

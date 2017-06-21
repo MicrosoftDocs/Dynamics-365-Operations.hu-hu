@@ -3,7 +3,7 @@ title: "Részleges vevői kifizetés kiegyenlítése és az utolsó részlet tel
 description: "Ez a cikk olyan eseteket mutat be, amelyek megmutatják, hogyan regisztráljon részfizetéseket egy ügyfélhez és hogyan vegye igénybe a készpénzfizetési engedményeket a készpénzfizetési engedményi időszakban."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

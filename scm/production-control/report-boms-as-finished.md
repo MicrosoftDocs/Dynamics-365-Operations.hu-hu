@@ -3,7 +3,7 @@ title: "Anyagjegyzékek jelentése befejezettként"
 description: "Ez a cikk az anyagjegyzékek befejezettként való jelentéséről tartalmaz információkat."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
