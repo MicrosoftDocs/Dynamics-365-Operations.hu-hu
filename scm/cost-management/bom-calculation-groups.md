@@ -3,7 +3,7 @@ title: "Anyagjegyzék-számítási csoportok"
 description: "Ez a cikk bemutatja az anyajegyzék (AJ) számítási csoportjait, valamint azok felállítását. Az AJ számítás futtatásához be kell állítania egy számítási csoportokat, majd ezeket hozzá kell rendelnie különböző cikkekhez, vagy be kell állítania egy alapértelmezett számítási csoportot. A számítási csoport számítási beállításai az alapértelmezett értékek az Anyagjegyzék-számítás oldalon az Anyajegyzék számításának ideje alatt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

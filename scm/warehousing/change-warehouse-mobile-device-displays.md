@@ -3,7 +3,7 @@ title: "Raktári mobileszköz megjelenítési beállításai"
 description: "Ez a cikk azt mutatja be, hogy hogyan állíthatja be egy mobileszköz kijelzőjének megjelenését és hogyan adhatja hozzá a vezérlőkhöz a billentyűparancsokat, mint például gombokat."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

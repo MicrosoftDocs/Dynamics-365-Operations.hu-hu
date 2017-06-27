@@ -3,7 +3,7 @@ title: "Szabálytalanságok kezelése"
 description: "Ez a cikk a szabálytalanságok használatához szükséges alapbeállításokat ismerteti. A minőségi rendelések használatához további beállítások szükségesek."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

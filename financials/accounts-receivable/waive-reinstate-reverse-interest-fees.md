@@ -3,7 +3,7 @@ title: "Kamatok, díjak elengedése, visszaállítása vagy sztornírozása"
 description: "Ennek a cikknek a célja, hogy elmagyarázza a kamatok és díjak elengedésének, visszaállításának és fordított áfázásának folyamatát."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

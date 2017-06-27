@@ -3,7 +3,7 @@ title: "Beszerzési katalógusok"
 description: "Ez a cikk magas szinten leírja, hogy a beszerzési szakemberek hogyan állíthatnak be és tarthatnak fenn beszerzési katalógusokat. A beszerzési katalógusok határozzák meg a cikkeket és szolgáltatásokat, amelyeket a vállalati alkalmazottak megrendelhetnek belső használat céljából."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

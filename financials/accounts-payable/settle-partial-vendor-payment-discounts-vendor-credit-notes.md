@@ -3,7 +3,7 @@ title: "Részleges szállítói kifizetés rendezése, amely szállítói jóvá
 description: "Ez a cikk végigvezeti Önt egy eseten, amelyben egy jóváírás egy számlával van kiegyenlítve."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

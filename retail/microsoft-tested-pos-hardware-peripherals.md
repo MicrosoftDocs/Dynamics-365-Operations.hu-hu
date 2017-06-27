@@ -3,12 +3,13 @@ title: "POS-hardverperifériák"
 description: "A Retail Modern pénztár (POS) és a Felhőalapú POS a POS hardver perifériák széles palettáját tudja alkalmazni, számos felülettel és telepítési beállításokkal a kiskereskedő különböző üzleti eseteinek megvalósítása érdekében."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36

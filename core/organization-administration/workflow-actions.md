@@ -3,7 +3,7 @@ title: "Munkafolyamat-műveletek"
 description: "Ez a cikk ismerteti a munkafolyamat elfogadási folyamatának egyes résztvevői által vállalható műveleteket."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

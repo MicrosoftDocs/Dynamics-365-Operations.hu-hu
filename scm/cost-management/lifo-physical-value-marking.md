@@ -3,7 +3,7 @@ title: "LIFO tényleges értékkel és jelöléssel"
 description: "A LIFO (Last in, first out) egy olyan készletmodell, amelynél a legutóbb bevételezett (legújabb) cikkeket adják ki elsőként. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

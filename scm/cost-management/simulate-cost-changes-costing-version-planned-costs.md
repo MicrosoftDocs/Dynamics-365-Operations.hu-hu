@@ -3,7 +3,7 @@ title: "Költségváltozások szimulálása, a tervezett költségek költségsz
 description: "Ez a cikk azt mutatja be, hogy hogyan szimulálhatja a költségmódosítások hatásait egy termék kiszámított költségein egy külön költségszámítási verzió alkalmazásával a tervezett költségekre vonatkozóan."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

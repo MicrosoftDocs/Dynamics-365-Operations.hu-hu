@@ -3,7 +3,7 @@ title: "Szállítói kifizetés egy részének rendezése, amely több kedvezmé
 description: "Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

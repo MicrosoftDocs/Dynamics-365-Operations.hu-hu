@@ -3,7 +3,7 @@ title: "Rendelésbeviteli határidők"
 description: "A cikk a rendelésbevitel határidőiről tartalmaz információkat. A rendelésbeviteli határidő, egy lezárási idő, amely meghatározza, hogy a vevői rendelés úgy lesz-e kezelve (és teljesítve), mintha az aktuális napon lett volna befogadva, vagy a következőn."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

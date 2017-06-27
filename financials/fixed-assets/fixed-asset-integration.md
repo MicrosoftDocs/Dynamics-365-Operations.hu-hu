@@ -3,7 +3,7 @@ title: "Tárgyieszköz-integráció"
 description: "A tárgyi eszközök integrálhatók a főkönyvvel, a készletkezeléssel, a kinnlevőségekkel és a követelésekkel. A tárgyi eszközök emellett a beszerzési rendelésekkel integrálva is beállíthatók."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

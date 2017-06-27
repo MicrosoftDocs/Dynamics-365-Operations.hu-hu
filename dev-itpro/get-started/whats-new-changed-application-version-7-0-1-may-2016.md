@@ -3,7 +3,7 @@ title: "Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7
 description: "Ez a leírás ismerteti az új vagy módosított a 7.0.1 alkalmazásverziójú Microsoft Dynamics AX szolgáltatásokat. Ez a verzió 2016 Májusában jelent meg és a build száma 7.0.1265.23014."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

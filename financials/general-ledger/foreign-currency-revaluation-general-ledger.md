@@ -3,7 +3,7 @@ title: "Főkönyvi devizaátértékelés"
 description: "Ez a témakör áttekintést nyújt a főkönyvi devizaátértékelési folyamat következő pontjairól: telepítés, a folyamat futtatása, a folyamat számításai, valamint szükség esetén az átértékelési tranzakciók sztornírozása."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

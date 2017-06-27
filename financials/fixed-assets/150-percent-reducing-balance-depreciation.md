@@ -3,7 +3,7 @@ title: "150 százalék degresszív értékcsökkenés"
 description: "Ez a cikk a 150 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

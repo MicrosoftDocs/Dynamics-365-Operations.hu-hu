@@ -3,7 +3,7 @@ title: "Speciális banki egyeztetés MT940 importálása - összetett adatentit�
 description: "Egy sorszámot kell hozzáadni a banki kivonat importálási entitásához az MT940 formátum támogatásához."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

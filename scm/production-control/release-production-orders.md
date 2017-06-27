@@ -3,7 +3,7 @@ title: "Termelési rendelések kiadása"
 description: "A kiadott termelési rendelés olyan rendelés, amely engedélyt kapott termelésre. A „Kiadva” kifejezés, egy a termelés rendelési ciklus állapotát leíró elnevezés. Jelentése, hogy a termelési rendelés készen áll a raktári folyamatokra és az értékesítésre."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Termékek és termékváltozatok keresése a rendelésbevitel során"
 description: "Használja a <strong>Cikkszám</strong> mezőt termékek és termékváltozatok kereséséhez értékesítésirendelés-sor vagy beszerzésirendelés-sor manuális létrehozásakor.  Ez a megoldás lehetővé teszi a termékváltozatok gyors megtalálását, ha csak a konfigurációs karakterlánccal vagy a termék egyik dimenziójával rendelkezik."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

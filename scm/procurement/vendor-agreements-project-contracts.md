@@ -3,7 +3,7 @@ title: "Fizetés a szállítói megállapodások kifizetésekor"
 description: "Ez a cikk a „saját fizetés beérkezésekor történő fizetés” lehetséges feltételeit (a PWP-feltételeket) ismerteti a szállítói megállapodásokra vonatkozóan. A PWP-feltételek segítségével részlegesen vagy teljesen visszatarthat egy szállítói kifizetést mindaddig, amíg a projekt vevője nem fizet. A cikk egy való életből vett példát is bemutat annak szemléltetésére, hogy hogyan használhatók fel a PWP-feltételek egy projekthez."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

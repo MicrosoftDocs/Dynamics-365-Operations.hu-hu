@@ -3,7 +3,7 @@ title: "Beosztás-költségvetéskészítés hibaelhárítása"
 description: "Ez a cikk olyan kérdésekre ad választ, amelyek a beosztás-költségvetés elkészítésekor merülhetnek fel. A költségvetési költségösszetevők, kompenzációs csoportok és a kompenzációs rácsok létrehozásával kapcsolatban leggyakrabban feltett kérdéseket tárgyalja."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

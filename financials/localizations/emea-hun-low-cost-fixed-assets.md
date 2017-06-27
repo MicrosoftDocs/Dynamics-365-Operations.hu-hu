@@ -3,15 +3,15 @@ title: "Kis értékű tárgyi eszközök"
 description: "Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 264684
-ms.assetid: 8452cf9f-13fa-4ea0-a4e2-c35335c863b8
 ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30

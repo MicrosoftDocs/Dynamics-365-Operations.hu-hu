@@ -3,7 +3,7 @@ title: "Cikkek és nyersanyagok nyomon követése a készletben, a gyártás sor
 description: "Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

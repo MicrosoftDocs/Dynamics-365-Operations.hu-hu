@@ -3,7 +3,7 @@ title: "Operations-erőforrások"
 description: "Az üzemi erőforrások hajtják végre egy projekt vagy egy termelési folyamat tevékenységeit. Ezek eltérő típusúak lehetnek, illetve eltérő képességeket hordozhatnak."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

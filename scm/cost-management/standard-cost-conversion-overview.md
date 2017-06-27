@@ -3,7 +3,7 @@ title: "Átalakítás elszámolóárra – áttekintés"
 description: "Ezen cikk tájékoztatást nyújt arról, hogy hogyan lehet beállítani és futtatni az elszámolóár-átalakítást. Miután elvégezte az elszámolóárra való átalakítás előfeltételeit végre kell hajtania a felsorolt lépéseket."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

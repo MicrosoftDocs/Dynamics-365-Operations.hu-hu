@@ -3,7 +3,7 @@ title: "Újonnan gyártott cikkek elszámoló árának frissítése"
 description: "Ez a leírás az újonnan gyártott cikkek alapköltségeinek frissítéséhez nyújt útmutatást."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

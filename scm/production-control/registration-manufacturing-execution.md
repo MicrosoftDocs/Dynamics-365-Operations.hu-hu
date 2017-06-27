@@ -3,7 +3,7 @@ title: "Gyártásvégrehajtás regisztrációja"
 description: "Ez a témakör leírja az alapfogalmakat és folyamatokat, amelyek a gyártásvégrehajtás beállításához és használatához szükségesek."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

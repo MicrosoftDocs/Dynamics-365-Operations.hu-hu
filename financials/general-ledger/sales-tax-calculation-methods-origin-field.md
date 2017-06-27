@@ -3,7 +3,7 @@ title: "ÁFA-számítási módok kiválasztása az Kiindulás mezőben"
 description: "Ez a cikk ismerteti az áfa kódok lapon található Eredet mező opcióit és azt, hogy hogyan kerül kiszámításra az áfa a kiválasztott áfa kód alapján."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

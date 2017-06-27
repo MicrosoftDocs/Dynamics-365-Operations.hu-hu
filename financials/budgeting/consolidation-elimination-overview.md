@@ -3,7 +3,7 @@ title: "Konszolidáció és megszüntetés áttekintése"
 description: "A cikk a konszolidációs és megszüntetési folyamat általános ismertetését tartalmazza. Magában foglalja a gyakori kérdésekre adott válaszokat is."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

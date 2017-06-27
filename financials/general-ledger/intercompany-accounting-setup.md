@@ -3,7 +3,7 @@ title: "Vállalatközi könyvelés beállítása"
 description: "Ez a témakör ismerteti a vállalatközi könyvelés beállításának módját annak érdekében, hogy a vállalatközi naplók használhatók legyenek főkönyvi felosztásokhoz és pénzügyi naplókhoz, például a napi naplókhoz, szállítóiszámla-naplókhoz és fizetési naplókhoz."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

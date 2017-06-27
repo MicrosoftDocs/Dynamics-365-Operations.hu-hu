@@ -3,7 +3,7 @@ title: "A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonb
 description: "Ez a cikk fizetéskiegyenlítések számlákra és vevőkre gyakorolt hatását taglalja. Az eset nem a főkönyvre, hanem az analitikus naplóra gyakorolt hatásokra összpontosít."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Kiegyenlítés áttekintése (központosított kifizetések)"
 description: "Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Így nem szükséges ugyanazt a tranzakciót több jogi személyhez bevinni, valamint a fizetési javaslat folyamatának, a kiegyenlítés folyamatának, a nyitott tranzakciók szerkesztésének és a lezárt tranzakciók szerkesztésének leegyszerűsítésével időt takarít meg a központosított kifizetéseknél."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

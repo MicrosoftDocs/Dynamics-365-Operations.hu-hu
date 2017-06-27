@@ -3,7 +3,7 @@ title: "A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonb
 description: "Ez a cikk egy olyan esetet mutat be, ahol több részfizetés is történt: néhány a készpénzfizetési engedmény időszakán belül, a többi pedig a készpénzfizetési engedmény időszakán kívül."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

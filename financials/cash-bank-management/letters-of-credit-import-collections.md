@@ -3,7 +3,7 @@ title: "Akkreditívek és importbeszedvények"
 description: "Ez a cikk általános információt biztosít a hitellevéllel és az import-beszedésekkel kapcsolatban. A banki dokumentumok ezen két formáját gyakran alkalmazzák termékek nemzetközi beszerzésekor és értékesítésekor."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

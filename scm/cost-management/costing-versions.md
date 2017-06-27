@@ -3,7 +3,7 @@ title: "Költségszámítási verziók"
 description: "Ez a cikk a költségszámítási verziókról, azok karbantartásának módjáról, illetve az azokba bevihető adattípusokról nyújt tájékoztatást. A költségszámítási verziók elsődleges célja az, hogy tartalmazzák a cikkek, költségkategóriák és a közvetett költségek számítási képleteinek rekordjait."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

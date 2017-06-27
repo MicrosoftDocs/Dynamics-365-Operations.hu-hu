@@ -3,7 +3,7 @@ title: "Feladat ütemezése"
 description: "Ez a cikk információt biztosít a feladat ütemezésről, ami a művelet ütemezés egy részletesebb ütemezésű formája. A feladatütemezést használhatja az egyéni feladatok vagy bolti sorrendek ütemezésére és a gyártási környezet irányítására."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

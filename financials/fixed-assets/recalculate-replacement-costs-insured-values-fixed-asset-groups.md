@@ -3,7 +3,7 @@ title: "Tárgyieszköz-csoportok helyettesítési költségének és biztosítot
 description: "Ez a cikk ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

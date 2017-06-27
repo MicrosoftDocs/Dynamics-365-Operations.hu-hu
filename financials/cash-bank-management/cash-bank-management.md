@@ -3,7 +3,7 @@ title: "Készpénz- és bankkezelési kezdőlap"
 description: "A Készpénz- és bankkezelés modul segítségével karbantarthatók a jogi személy bankszámlái, valamint a hozzájuk társított pénzügyi eszközök."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

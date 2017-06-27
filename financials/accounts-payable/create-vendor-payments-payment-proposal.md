@@ -3,7 +3,7 @@ title: "Szállítói kifizetések készítése fizetési javaslat segítségéve
 description: "Ez a témakör tájékoztatást nyújt a fizetési javaslat beállításairól, és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját. A kifizetési javaslatok segítségével gyakran szállítói számlát is létrehozhat, mert a lekérdezést a kifizetés szállítói számláinak gyors kiválasztására lehet használni, amely olyan feltételeken alapul, mint a határidő vagy a készpénzfizetési engedmény."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

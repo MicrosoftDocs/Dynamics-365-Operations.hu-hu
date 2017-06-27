@@ -3,7 +3,7 @@ title: "Az elszámolóár frissítése gyártási környezetben"
 description: "A cikk az elszámolóárak gyártási környezetben történő frissítésének útmutatását tartalmazza."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

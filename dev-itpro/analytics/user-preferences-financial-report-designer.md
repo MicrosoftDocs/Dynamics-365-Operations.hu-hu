@@ -3,7 +3,7 @@ title: "Felhasználói beállítások a pénzügyi jelentés tervezőben"
 description: "A cikk ismerteti, hogyan állítson be felhasználói beállításokat a felhasználói műveletek testreszabásához a pénzügyi jelentés tervezőben, valamint ezek a beállítások meghatározzák a kezdeti bejelentkezés-élményt. Azt is szabályozhatja, hogy hogyan jelenjenek meg az egyes jelentések, a jelentés könyvtár, és az alapértelmezett file elérési helye."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

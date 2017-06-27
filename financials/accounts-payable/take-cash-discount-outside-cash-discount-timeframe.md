@@ -3,7 +3,7 @@ title: "Készpénzfizetési engedmény érvényesítése a készpénzfizetési e
 description: "A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

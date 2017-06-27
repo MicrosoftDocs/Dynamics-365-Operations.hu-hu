@@ -3,14 +3,14 @@ title: "Számlaegyeztetés és vállalatközi beszerzési rendelések"
 description: "A vállalatközi kereskedelmi tranzakcióban érintett vásárló jogi személyt be kell állítani a kötelezettségek számlaegyeztetésének használatához. Ilyenkor a feladási követelményeknek a vállalatközi kereskedelemre és a kötelezettségek számlaegyeztetésre egyaránt teljesülnie kell a vállalatközi szállítói számlák feladása előtt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf

@@ -3,7 +3,7 @@ title: "Csomagolóanyagok és díjak"
 description: "A csomagolóanyag-díjakat meghatározott időközönként kell kifizetni egy feldolgozó vállalatnak. Súlyegységenként egy bizonyos összeget kell kifizetni a csomagolási egységet alkotó minden egyes anyag után. A program a csomagolóanyag-díjakat kiszámítja és jelentést is készít róluk, viszont – mivel nem számít a hatóságoknak fizetendő adónak – nem ad fel főkönyvi tranzakciót a díjjal kapcsolatban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

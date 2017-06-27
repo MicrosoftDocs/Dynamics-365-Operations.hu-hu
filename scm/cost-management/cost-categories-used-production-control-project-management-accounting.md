@@ -3,7 +3,7 @@ title: "A gyártásvezérlésben és a projekt vezetés könyvelésében alkalma
 description: "A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésére és jelentésekre. Ez a cikk tájékoztatást nyújt azokról a költségkategóriákról, amelyeket meg kell határozni a termelési munka ezen típusaihoz a termelés és a projekt céljai számára."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

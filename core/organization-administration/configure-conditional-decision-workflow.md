@@ -3,7 +3,7 @@ title: "Feltételes döntés konfigurálása munkafolyamatban"
 description: "Ezt követően a következő eljárás segítségével állítsa be egy feltételes döntés tulajdonságait."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

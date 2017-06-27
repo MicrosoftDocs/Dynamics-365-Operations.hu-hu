@@ -3,7 +3,7 @@ title: "Vevői kifizetés egy részének rendezése, amely több kedvezményes i
 description: "Ez a cikk ismerteti, hogy a részleges vevői kifizetések hogyan kerülnek kiegyenlítésre több engedményes időszak esetén."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

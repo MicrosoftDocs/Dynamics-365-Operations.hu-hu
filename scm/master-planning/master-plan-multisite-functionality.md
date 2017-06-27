@@ -3,7 +3,7 @@ title: "Az alaptervezés és a többhelyes funkció"
 description: "Az Alaptervezés figyelembe veszi a webhely beállításait és a raktár készletdimenziót."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Főkönyvi számlaegyenleg"
 description: "Ez a cikk két módszert ír le a főkönyv számlaegyenlegének megtekintésére - a főkönyvi kivonat lista lapot és a pénzügyi jelentéseket. Ismerteti továbbá a dimenziókészlet egyenlegének frissítését is."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Tárgyi eszközök kezdőlap"
 description: "A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
