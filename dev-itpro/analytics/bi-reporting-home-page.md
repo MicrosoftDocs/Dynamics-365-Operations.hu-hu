@@ -1,15 +1,15 @@
 ---
 title: "Üzleti intelligencia és jelentéskészítés kezdőlap"
-description: "Ez a témakör a Microsoft Dynamics 365 for Operationsben elérhető üzletiintelligencia- és jelentéskészítési erőforrásokat sorolja fel."
+description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations rendszerben elérhető üzletiintelligencia- és jelentéskészítési erőforrásokat sorolja fel."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
@@ -17,20 +17,20 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3e97fda52acf6b61bf47eb30d53ce6597b4929d3
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 448517531112636d553dc895b17c5644c9c1f0bc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>Üzleti intelligencia és jelentéskészítés kezdőlap
+# <a name="bi-amp-reporting-home-page"></a>Üzletiintelligencia- és jelentéskészítés kezdőlap
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör a Microsoft Dynamics 365 for Operationsben elérhető üzletiintelligencia- és jelentéskészítési erőforrásokat sorolja fel. 
+Ez a témakör a Microsoft Dynamics 365 for Finance and Operations rendszerben elérhető üzletiintelligencia- és jelentéskészítési erőforrásokat sorolja fel. 
 
 <a name="working-with-aggregate-data"></a>Munkavégzés összevont adatokkal
 ---------------------------
@@ -43,14 +43,14 @@ Ez a témakör a Microsoft Dynamics 365 for Operationsben elérhető üzletiinte
 ## <a name="self-service-reporting"></a>Saját célú jelentések készítése
 -   [Power BI-integráció](power-bi-integration.md)
 -   [A munkaterületek Power BI-integrációjának beállítása](configure-power-bi-integration.md)
--   [Power BI-jelentés készítése Microsoft Dynamics 365 for Operations rendszer adatainak felhasználásával](create-powerbi-report-data.md)
+-   [Power BI-jelentés készítése a Microsoft Dynamics 365 for Finance and Operations rendszer adatainak felhasználásával](create-powerbi-report-data.md)
 -   [Power BI-jelentés és irányítópult létrehozása](create-powerbi-report-dashboard.md)
 -   [Kiskereskedelmi csatorna teljesítménye Power BI-tartalom](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Pénzügyi teljesítmény Power BI-tartalom](financial-performance-power-bi-content-pack.md)
 -   [Értékesítési és nyereségességi teljesítmény Power BI-tartalom](sales-profitability-performance-content-pack.md)
--   [Elektronikus jelentési konfiguráció használata a Dynamics 365 for Operations-adatok a Power BI számára történő továbbításához](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Elektronikus jelentési konfiguráció használata a Finance and Operations-adatoknak a Power BI számára történő továbbításához](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Beágyazott elemző eszközök létrehozása a Dynamics 365 for Operations kliensben
+## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a>Beágyazott elemző eszközök létrehozása a Finance and Operations kliensben
 -   [Beágyazott üzleti intelligencia](analytics.md#embedded-business-intelligence)
 -   [KPI-k modellezése és testreszabása](analytics.md#kpi-modeling-and-customization)
 -   [Üzleti intelligencia hozzáadása munkaterületekhez](add-bi-workspaces.md)
@@ -58,7 +58,7 @@ Ez a témakör a Microsoft Dynamics 365 for Operationsben elérhető üzletiinte
 
 ## <a name="document-reporting-and-printing"></a>Jelentésdokumentumok készítése és nyomtatása
 -   [A jelentésdokumentumokkal kapcsolatos szolgáltatások áttekintése](document-reporting-services.md)
--   [Nyomtatás a Dynamics 365 for Operations rendszer alkalmazásaiban](print-documents.md)
+-   [Nyomtatás a Finance and Operations rendszer alkalmazásaiban](print-documents.md)
 -   [A Dokumentumirányítási ügynök telepítése a hálózati nyomtató eszközök engedélyezéséhez](install-document-routing-agent.md)
 -   [A Dokumentumirányítási ügynök futtatása Windows-szolgáltatásként](run-document-routing-agent-as-windows-service.md)
 -   [Következő generációs jelentéskészítési megoldások létrehozása](create-nextgen-reporting-solutions.md)
@@ -72,7 +72,7 @@ Ez a témakör a Microsoft Dynamics 365 for Operationsben elérhető üzletiinte
 -   [Képletszerkesztő elektronikus jelentésekhez](general-electronic-reporting-formula-designer.md)
 -   [Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md)
 -   [Az elektronikus jelentéskészítési beállítások letöltése a Lifecycle Services rendszerből](download-electronic-reporting-configuration-lcs.md)
--   [Elektronikus jelentési konfiguráció használata a Dynamics 365 for Operations-adatok a Power BI számára történő továbbításához](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Elektronikus jelentési konfiguráció használata a Finance and Operations-adatoknak a Power BI számára történő továbbításához](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [ER Konfigurációszolgáltató létrehozása és megjelölése aktívként](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (Feladat-útmutató)
 -   [ER Tartományspecifikus adatmodell kialakítása](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (Feladat-útmutató)
 -   [ER Modelleképezés meghatározása és adatforrások kiválasztása](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (Feladat-útmutató)
