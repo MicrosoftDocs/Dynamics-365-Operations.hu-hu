@@ -1,12 +1,12 @@
 ---
-title: "Emberi erőforrások"
-description: "Az Emberi erőforrások modul segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez. Ezen területek magukba foglalják a toborzást és a megtartást, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést."
+title: Microsoft Dynamics 365 for Talent
+description: "A Talent rendszer segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezen folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
@@ -16,23 +16,25 @@ ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 213d1dc69ac0f6dc10138e185625a142e107f073
+ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
+ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Emberi erőforrások - Üdvözöljük!
+# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Üdvözöljük a Microsoft Dynamics 365 for Talent rendszerben
 
 [!include[banner](includes/banner.md)]
 
-Az Emberi erőforrások modul segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez. Ezen területek magukba foglalják a toborzást és a megtartást, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést.
+A Microsoft Dynamics 365 for Talent számos sokféle nyilvántartási feladatot egyszerűsít le, továbbá a szervezetben számos személyzeti folyamatot automatizál. Ezek közé tartozik többek között az alkalmazottak megtartása, a juttatások adminisztrációja, a képzés, a teljesítmény-ellenőrzés, és a változáskezelés. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez.
 
-Az Emberi erőforrások modullal a következő feladatok végezhetők el:
+A Dynamics 365 for Talent erősen kapcsolódik a Dynamics 365 for Finance and Operations, Enterprise kiadás Emberi erőforrások részlegéhez. Mindkét termék azonos funkciókkal bírhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, Enterprise kiadás, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+
+A Talent rendszerrel a következő feladatok végezhetők el:
 
 > + Szervezeti struktúrák felügyelete.
 > + A dolgozók adatainak átfogó kezelése a felvételtől a nyugdíjazásig.
@@ -42,25 +44,19 @@ Az Emberi erőforrások modullal a következő feladatok végezhetők el:
 > + Dolgozók kompetenciáinak kezelése.
 > + Teljesítmények értékelése és a dolgozói célok megvalósítása.
 > + Tanfolyamok napirendjeinek, munkameneteinek és szekcióinak beállítása, végrehajtása és elemzése.
-> + Dolgozók toborzására és a pályázók figyelemmel kísérése.
 
-<a name="develop-a-human-resources-strategy"></a>Emberi erőforrásokra vonatkozó stratégia kialakítása
+<a name="develop-a-strategy-for-managing-your-human-resources"></a>Emberi erőforrásokra vonatkozó stratégia kialakítása
 ---------------------------------------------------------
 
-Az Emberi erőforrások modulban különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek az Emberi erőforrások modul alapvető elemei. Az egyes alkalmazottak beosztásokhoz rendelhetők, amelyek feladatokhoz vannak társítva.
+A Talent rendszerben dolgozva különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek azon alapvető elemek közé tartoznak, amelyeket konfigurálni szükséges. Az egyes alkalmazottak beosztásokhoz rendelhetők hozzá, amelyek feladatokhoz vannak társítva.
 
 -   [Munkaerő szervezése részlegek, munkák és beosztások szerint](departments-jobs-positions.md)
 -   [Vállalatfüggő HR-paraméterek beállítása](set-up-company-specific-hr-parameters.md)
--   [Több jogi személyre kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md) 
+-   [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>Alkalmazottak toborzása, felvétele és motiválása
+## <a name="retain-and-motivate-employees"></a>Alkalmazottak megtartása és motiválása
 
-A toborzási projektek a nyitott pozíciókra vonatkozó hirdetések tartamát kezelik, továbbá segítséget nyújtanak az álláslehetőségekre való pályázatok feldolgozásában. Használatukkal nyomonkövethetők az álláshirdetésekre érkező válaszok egy adott toborzási projekttel vagy konkrét pályázóval kapcsolatban, valamint frissíthető a nyitott pozíciók állapota. A pályázók felvétele történhet egyesével vagy „tömeges felvételi projektek” használatával is; utóbbiak több dolgozó felvételét segítik elő, például szezonális üzleti igények kielégítése érdekében.
-
--   [A toborzási folyamat kezelése](manage-recruiting-process.md)
--   [Tömeges felvételi projektek](mass-hire-projects.md) 
-
-A munkatársak felvétele után terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, illetve vállalat által az alkalmazottak számára kölcsönadott eszközök (pl. számítógépek, telefonok) kezelésére vonatkozóan. Fix és változó kompenzációs konstrukciókat alakíthat ki, továbbá definiálhatja azokat a kompenzációs konstrukcióra vonatkozó szabályokat, amelyek az adott konstrukció kritériumainak való megfelelést biztosítják.
+Terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, illetve a vállalata által az alkalmazottak számára kölcsönadott eszközök (pl. számítógépek, telefonok) kezelésére vonatkozóan. Fix és változó kompenzációs konstrukciókat alakíthat ki, továbbá definiálhatja azokat a kompenzációs konstrukcióra vonatkozó szabályokat, amelyek az adott konstrukció kritériumainak való megfelelést biztosítják.
 
 -   [Kompenzációs konstrukciók](compensation-plans.md)
 -   [Fix kompenzációs konstrukciók létrehozása](create-fixed-compensation-plans.md)
@@ -84,10 +80,10 @@ A munkatársak bérekkel, illetve jutalmakkal történő kifizetése mellett leh
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Munkahely biztonságosságának és megfelelőségének fenntartása
 
-A Microsoft Dynamics AX rendszer segítséget nyújt egy olyan biztonságos munkakörnyezet fenntartásában, amely megfelel a releváns jogszabályoknak, többek között a fogyatékossággal élő amerikaiakra vonatkozó törvénynek (Americans with Disabilities Act), illetve a honosítási törvényeknek. Például beállíthatja az egyes feladatokra vonatkozó fizikai követelményeket, valamint nyomon követheti a szállásigényléseket; mindezek elősegítik a szervezet munkaerő-szakértelmének optimalizálását.
+A Talent rendszer segítséget nyújt egy olyan biztonságos munkakörnyezet fenntartásában, amely megfelel a releváns jogszabályoknak, többek között a fogyatékossággal élő amerikaiakra vonatkozó törvénynek (Americans with Disabilities Act), illetve a honosítási törvényeknek. Például beállíthatja az egyes feladatokra vonatkozó fizikai követelményeket, valamint nyomon követheti a szállásigényléseket; mindezek elősegítik a szervezet munkaerő-szakértelmének optimalizálását.
 
--   [I-9-es űrlap: foglalkoztatási ellenőrzés](localizations/noam-usa-form-i-9-verification.md)
--   [A fogyatékossággal élő amerikaiakra vonatkozó jogszabály (ADA) betartása](localizations/noam-usa-comply-ada.md)
+-   [I-9-es űrlap: foglalkoztatási ellenőrzés](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
+-   [A fogyatékossággal élő amerikaiakra vonatkozó jogszabály (ADA) betartása](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)
 
 ## <a name="gather-information-using-questionnaires"></a>Információgyűjtés kérdőívekkel
 
@@ -97,7 +93,4 @@ Lehetősége van kérdőívek tervezésére és kezelésére a különböző cé
 -   [Kérdőív tervezése](design-questionnaires.md)
 -   [Kérdőív terjesztése és kitöltése](distribute-questionnaires.md)
 -   [A kérdőív megtekintése és az eredmények kiértékelése](evaluate-questionnaire-results.md)
-
-
-
 

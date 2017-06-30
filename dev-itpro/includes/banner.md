@@ -1,3 +1,3 @@
 > [!IMPORTANT]
-> Üdvözöljük a docs.microsoft.com oldalon, a Microsoft Dynamics 365 for Operations dokumentációjában. Ide helyezzük át a Dynamics 365 for Operations súgó wikijének tartalmát. 
+> Üdvözöljük a Microsoft Dynamics 365 for Finance and Operations dokumentációjában, a docs.microsoft.com oldalon. Ide helyezzük át a Finance and Operations súgó wikijének tartalmát. 
 
