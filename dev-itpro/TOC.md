@@ -2,24 +2,39 @@
 
 ## [Első lépések](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-### [Regisztráció előfizetéshez](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-### [A Dynamics AX 2012 helyszíni verziójának beszerzése](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Regisztrálás előfizetésre](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Hogyan szerezhető be a Finance and Operations on-premises verziója](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Tájékoztatás ügyfeleknek, akik felhőszolgáltató révén vásárolták meg a Finance and Operations alkalmazást](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Bemutatókörnyezet telepítése](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Új vagy módosult elemek](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Elavult szolgáltatások](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Még nem megvalósított AX 2012-funkciók](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [A helyszíni telepítéseknél nem elérhető funkciók](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Finance and Operations, Enterprise kiadás, 2017. júliusi frissítés](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [8. platformfrissítés (2017. június)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [7. platformfrissítés (2017. május)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [6. platformfrissítés (2017. április)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [5. platformfrissítés (2017. március)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [4. platformfrissítés (2017. február)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [1611-es verziójú Operations (2016. november)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [3. platformfrissítés (2016. november)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [2. platformfrissítés (2016. augusztus)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
+#### [7.0.1-es verziójú Dynamics AX (2016. május)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [1. platformfrissítés (2016. május)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Dynamics AX 7.0 (2016. február)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Elavult szolgáltatások](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Még nem megvalósított AX 2012-funkciók](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Az on-premises telepítéseknél nem elérhető funkciók](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Életciklus-irányelv](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Ismerje meg a felhasználói felületet
+#### [Ügyfélfelület GYIK](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Műveletkeresés](/dynamics365/unified-operations/fin-and-ops/get-started/action-search?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Speciális szűrési és lekérdezési szintaxis](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Dynamics 365 for Finance and Operations, Enterprise kiadás, kliens GYIK](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Munkaterületek konfigurálása és szűrése](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Oldalak párhuzamos megjelenítése a Megnyitás új ablakban ikon használatával](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Navigációs keresés](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [A felhasználói élmény testreszabása](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Billentyűparancsok](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Lapok megjelenésének kezelése](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Navigációs keresés](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A felhasználói élmény testreszabása](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Információk megtalálása keresésekkel](/dynamics365/unified-operations/fin-and-ops//get-started/use-lookups-to-find-information?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [A Lifecycle Services szolgáltatás bemutatása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Súgó és támogatás
@@ -28,62 +43,66 @@
 #### [Mezőleírások megtekintése és exportálása](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Feladat-útmutatók és feladatrögzítő
 ##### [Feladatrögzítő](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Dokumentáció vagy képzés létrehozása](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Ország-/régióspecifikus súgótartalmak](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Dokumentáció vagy képzés létrehozása](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [2016. novemberi feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [2016. augusztusi feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [2016. májusi feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [2016. februári feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Honosítási és szabályozó funkciók](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Fogalomtár](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ## Megfelelés
-### [Könyvviteli irányelvszabályok](/dynamics365/unified-operations/financials/general-ledger/audit-policy-rules?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Könyvvizsgálati irányelvszabályok](/dynamics365/unified-operations/financials/general-ledger/audit-policy-rules?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Könyvvizsgálati irányelvmegsértések és esetek](/dynamics365/unified-operations/financials/general-ledger/audit-policy-violations-cases?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ## Költségkezelés
 ### Power BI-tartalmak csomagja
-#### [Költségkezelési tartalmi csomag](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Költségkezelési tartalmi csomag](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### Előre meghatározott költség
-#### [Költségszámítási táblázat](/dynamics365/unified-operations/supply-chain/costing-sheets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Költségszámítási verzió](/dynamics365/unified-operations/supply-chain/costing-versions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Költségváltozás szimulálása tervezett költség költségszámítási verziójának alkalmazásával](/dynamics365/unified-operations/supply-chain/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Költségszámítási táblázat](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Költségszámítási verzió](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Költségváltozás szimulálása tervezett költség költségszámítási verziójának alkalmazásával](/dynamics365/unified-operations/supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### Készlet költségszámítása
-#### [Az aktuális készlet költségértékének korrekciója](/dynamics365/unified-operations/supply-chain/inventory/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Költségobjektum](/dynamics365/unified-operations/supply-chain/inventory/cost-object?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Költségbejegyzés](/dynamics365/unified-operations/supply-chain/inventory/cost-entries?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Költségcsoport](/dynamics365/unified-operations/supply-chain/inventory/cost-groups?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [FIFO tényleges értékkel és jelöléssel](/dynamics365/unified-operations/supply-chain/inventory/fifo-physical-value-marking?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Tényleges értékkel együtt](/dynamics365/unified-operations/supply-chain/inventory/include-physical-value?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Készletobjektum értéke](/dynamics365/unified-operations/supply-chain/inventory/physical-quantity?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Készletzárás](/dynamics365/unified-operations/supply-chain/inventory/inventory-close?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [LIFO dátum tényleges értékkel és jelöléssel](/dynamics365/unified-operations/supply-chain/inventory/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [LIFO tényleges értékkel és jelöléssel](/dynamics365/unified-operations/supply-chain/inventory/lifo-physical-value-marking?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Mozgó átlag](/dynamics365/unified-operations/supply-chain/inventory/moving-average?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Fizikai és pénzügyi frissítés](/dynamics365/unified-operations/supply-chain/inventory/physical-financial-updates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Mozgóátlagon alapuló önköltségi ár](/dynamics365/unified-operations/supply-chain/inventory/running-average-cost-price?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként](/dynamics365/unified-operations/supply-chain/inventory/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Dátum szerinti súlyozott átlag](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-date?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Súlyozott átlag tényleges értékkel és jelöléssel](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Az aktuális készlet költségértékének korrekciója](/dynamics365/unified-operations/supply-chain/cost-management/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Költségobjektum](/dynamics365/unified-operations/supply-chain/cost-management/cost-object?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Költségbejegyzés](/dynamics365/unified-operations/supply-chain/cost-management/cost-entries?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Költségcsoport](/dynamics365/unified-operations/supply-chain/cost-management/cost-groups?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [FIFO tényleges értékkel és jelöléssel](/dynamics365/unified-operations/supply-chain/cost-management/fifo-physical-value-marking?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Tényleges értékkel együtt](/dynamics365/unified-operations/supply-chain/cost-management/include-physical-value?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Készletobjektum értéke](/dynamics365/unified-operations/supply-chain/cost-management/physical-quantity?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Készletzárás](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [LIFO dátum tényleges értékkel és jelöléssel](/dynamics365/unified-operations/supply-chain/cost-management/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [LIFO tényleges értékkel és jelöléssel](/dynamics365/unified-operations/supply-chain/cost-management/lifo-physical-value-marking?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Mozgó átlag](/dynamics365/unified-operations/supply-chain/cost-management/moving-average?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Fizikai és pénzügyi frissítés](/dynamics365/unified-operations/supply-chain/cost-management/physical-financial-updates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Mozgóátlagon alapuló önköltségi ár](/dynamics365/unified-operations/supply-chain/cost-management/running-average-cost-price?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Dátum szerinti súlyozott átlag](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-date?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Súlyozott átlag tényleges értékkel és jelöléssel](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### Gyártási költségszámítás
-#### [A legyártott cikkek állandó költségeinek amortizálása](/dynamics365/unified-operations/supply-chain/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Visszavezetéses költségelszámolás](/dynamics365/unified-operations/supply-chain/backflush-costing?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Anyagjegyzék-számítások](/dynamics365/unified-operations/supply-chain/bom-calculations?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Anyagjegyzék-számítási csoport](/dynamics365/unified-operations/supply-chain/bom-calculation-groups?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [A termelési különbözet gyakori okai](/dynamics365/unified-operations/supply-chain/common-sources-of-production-variances?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [A termelési útvonaltervezésben használt költségkategória](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [A gyártásvezérlésben és a Projektvezetés könyvelésében alkalmazott költségkategória](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Gyártott cikkre vonatkozó költségek megjelenítése](/dynamics365/unified-operations/supply-chain/charges-manufactured-item?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Termelési rendelés költségelemzése](/dynamics365/unified-operations/supply-chain/production-order-cost-analysis?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Termelési rendelés költségbecslése](/dynamics365/unified-operations/supply-chain/production-order-cost-estimation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Termelés feladása](/dynamics365/unified-operations/supply-chain/production-posting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Termelhető vagy beszerezhető termék beállítása](/dynamics365/unified-operations/supply-chain/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Teljes költségfelosztási módszer](/dynamics365/unified-operations/supply-chain/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A legyártott cikkek állandó költségeinek amortizálása](/dynamics365/unified-operations/supply-chain/cost-management/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Visszavezetéses költségelszámolás](/dynamics365/unified-operations/supply-chain/cost-management/backflush-costing?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Anyagjegyzék-számítások](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Anyagjegyzék-számítási csoport](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculation-groups?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A termelési különbözet gyakori okai](/dynamics365/unified-operations/supply-chain/cost-management/common-sources-of-production-variances?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A termelési útvonaltervezésben használt költségkategória](/dynamics365/unified-operations/supply-chain/cost-management/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A gyártásvezérlésben és a Projektvezetés könyvelésében alkalmazott költségkategória](/dynamics365/unified-operations/supply-chain/cost-management/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Gyártott cikkre vonatkozó költségek megjelenítése](/dynamics365/unified-operations/supply-chain/cost-management/charges-manufactured-item?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Termelési rendelés költségelemzése](/dynamics365/unified-operations/supply-chain/cost-management/production-order-cost-analysis?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Termelési rendelés költségbecslése](/dynamics365/unified-operations/supply-chain/cost-management/production-order-cost-estimation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Termelés feladása](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Termelhető vagy beszerezhető termék beállítása](/dynamics365/unified-operations/supply-chain/cost-management/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Teljes költségfelosztási módszer](/dynamics365/unified-operations/supply-chain/cost-management/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### Elszámolóár
-#### [Elszámolóáras anyagjegyzék-számítások](/dynamics365/unified-operations/supply-chain/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Elszámolóár frissítésének kezelése](/dynamics365/unified-operations/supply-chain/manage-standard-cost-updates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Az elszámolóárra való átalakítás előfeltétele](/dynamics365/unified-operations/supply-chain/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Átalakítás elszámolóárra – áttekintés](/dynamics365/unified-operations/supply-chain/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Az elszámolóár frissítése gyártási környezetben](/dynamics365/unified-operations/supply-chain/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Új gyártott cikk elszámolóárának módosítása](/dynamics365/unified-operations/supply-chain/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Az elszámolóár frissítése nem gyártási környezetben](/dynamics365/unified-operations/supply-chain/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Elszámolóáras anyagjegyzék-számítások](/dynamics365/unified-operations/supply-chain/cost-management/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Elszámolóár frissítésének kezelése](/dynamics365/unified-operations/supply-chain/cost-management/manage-standard-cost-updates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Az elszámolóárra való átalakítás előfeltétele](/dynamics365/unified-operations/supply-chain/cost-management/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Átalakítás elszámolóárra – áttekintés](/dynamics365/unified-operations/supply-chain/cost-management/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Az elszámolóár frissítése gyártási környezetben](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Új gyártott cikk elszámolóárának módosítása](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Az elszámolóár frissítése nem gyártási környezetben](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
-## [Pénzgazdálkodás](/dynamics365/unified-operations/financials/TOC)
+## Pénzgazdálkodás
 
 ### [Főkönyv](/dynamics365/unified-operations/financials/general-ledger/general-ledger?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Számlák
@@ -123,7 +142,11 @@
 ##### [Számítás alapján és számítási módokon alapuló áfa értéke](/dynamics365/unified-operations/financials/general-ledger/marginal-base-field?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Áfakifizetések és kerekítési szabályok](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Áfaszámítási módok a Kiindulás mezőben](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Teljes összeg és intervallumszámítás-opciók áfakódokhoz](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Teljes összeg és intervallumszámítási opciók áfakódokhoz](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### Költséggazdálkodás
+##### [Tervköltség-gazdálkodás](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Költséggazdálkodási paraméterek](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Költségkezelési mobil munkaterület](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### [Kötelezettségek](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Szállítói számlák áttekintése](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -140,14 +163,14 @@
 #### [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](/dynamics365/unified-operations/financials/cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Mobil számlajóváhagyások](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Szállítói együttműködés számlázási munkaterülete](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Szállítói számla automatizálása](/dynamics365/unified-operations/financials/vendor-invoice-automation?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
+#### [Szállítói számla automatizálása](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoice-automation?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
 #### Kifizetések és kiegyenlítések
 ##### [A Kötelezettségek modul központosított kifizetései](/dynamics365/unified-operations/financials/accounts-payable/centralized-payments-accounts-payable?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Kiegyenlítés konfigurálása](/dynamics365/unified-operations/financials/cash-bank-management/configure-settlement?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Szállítói kifizetések munkaterület](/dynamics365/unified-operations/financials/vendor-payments-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Szállítói kifizetések munkaterület](/dynamics365/unified-operations/financials/accounts-payable/vendor-payments-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Szállítói kifizetések készítése fizetési javaslat segítségével](/dynamics365/unified-operations/financials/accounts-payable/create-vendor-payments-payment-proposal?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Szállítói kifizetés sztornózása](/dynamics365/unified-operations/financials/accounts-payable/reverse-vendor-payment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Elektronikus jelentéskészítés szállítói csekkekhez](/dynamics365/unified-operations/financials/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Elektronikus jelentéskészítés szállítói csekkekhez](/dynamics365/unified-operations/financials/accounts-payable/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Előlegszámlák és előlegek áttekintése](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Részleges szállítói kifizetés rendezése az engedmény dátuma előtt](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -166,6 +189,7 @@
 #### [Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz](/dynamics365/unified-operations/financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Vevői feladási profilok](/dynamics365/unified-operations/financials/accounts-receivable/customer-posting-profiles?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [SEPA beszedési megbízás – áttekintés](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Felhatalmazás SEPA közvetlen beszedési megbízásra](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-mandate?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Hitelkártya-beállítás, engedélyezés és rögzítés](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Szabadszöveges számla javítása](/dynamics365/unified-operations/financials/accounts-receivable/correct-free-text-invoice?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Kamatlábak beállítása kamatkódhoz](/dynamics365/unified-operations/financials/accounts-receivable/set-up-interest-rates-interest-code?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -177,7 +201,7 @@
 #### Kifizetések és kiegyenlítések
 ##### [Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel](/dynamics365/unified-operations/financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [A Kinnlevőségek modul központosított kifizetései](/dynamics365/unified-operations/financials/accounts-receivable/centralized-payments-accounts-receivable?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Részleges vevői kifizetés vagy végleges kifizetés rendezése az engedmény dátuma előtt](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
+##### [Részleges vevői kifizetés vagy végleges kifizetés rendezése az engedmény dátuma előtt](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
 ##### [Részleges vevői kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Részleges vevői kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -186,8 +210,9 @@
 
 ### [Készpénz- és bankkezelés](/dynamics365/unified-operations/financials/cash-bank-management/cash-bank-management?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Pénzforgalmi előrejelzés](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Bankkezelési munkaterület](/dynamics365/unified-operations/financials/cash-bank-management/bank-management-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Készpénzfizetési engedmények](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Bankkezelési munkaterület](/dynamics365/unified-operations/financials/cash-bank-management/Bank-management-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Készpénzfizetési engedmények](/dynamics365/unified-operations/financials/cash-bank-management/cash-discounts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Készpénzfizetési engedmények túlfizetések esetére](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Kiegyenlítés – áttekintés](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Kiegyenlítés áttekintése (központosított kifizetések)](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Akkreditívek](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -210,7 +235,7 @@
 ##### [Banki napló összetett entitás frissítése](/dynamics365/unified-operations/financials/cash-bank-management/upgrade-bank-journal-composite-entity?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### [Tárgyi eszközök](/dynamics365/unified-operations/financials/fixed-assets/fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Tárgyi eszközök munkaterülete](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Tárgyi eszközök munkaterülete](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-management-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Értékcsökkenési könyv frissítésének áttekintése](/dynamics365/unified-operations/financials/fixed-assets/depreciation-book-upgrade-considerations?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Származtatott könyvek](/dynamics365/unified-operations/financials/fixed-assets/derived-books?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Tárgyi eszközök értékmodellje és az értékcsökkenési könyv egyesítése](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -256,15 +281,15 @@
 #### [A Költségvetés-tervezés integrálása más modulokkal](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Jelentés](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Mérleg – pénzügyi jelentések](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Pénzügyi jelentés létrehozása](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Pénzügyi jelentés létrehozása](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Eredménykimutatási pénzügyi jelentés](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Főkönyvi kivonat pénzügyi jelentések](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Pénzügyi jelentések megtekintése](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Jelentéstervező](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Jelentéstervező](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [Költségkönyvelés](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Feltételek](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Interaktív laboratóriumok (/dynamics365/unified-operations/financials/White paper)](/dynamics365/unified-operations/financials/https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+#### [Interaktív laboratóriumok (tanulmány)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
 #### [Költségösszetevő-dimenziók](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Költségobjektum-dimenziók](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez](/dynamics365/unified-operations/financials/cost-accounting/map-cost-elements-dimension-members?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -276,8 +301,8 @@
 #### [Hozzáférési jogok meghatározása egy költségobjektum-ellenőr számára](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Költségellenőrzési munkaterület](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Költségellenőrzési mobil munkaterület](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Költségkönyvelés elemzése Power BI-tartalom](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Költségkönyvelés elemzése Power BI-tartalom](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [Állami szektor](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Állami szektor funkció tervezése](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -316,7 +341,7 @@
 ### [Sordefiniáló cellák módosítása](/dynamics365/unified-operations/dev-itpro/analytics/modify-row-definition-cells-financial-reporting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [A pénzügyi jelentési adatpiac visszaállítása az adatbázis visszaállítása után](/dynamics365/unified-operations/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
-### [Honosítás – áttekintés](/dynamics365/unified-operations/financials/localizations//dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/localizations/toc.json)
+## [Honosítási és szabályozó funkciók](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### Ázsia és a csendes-óceáni térség
 #### Ausztrália
 ##### [Banki fájlok formátumai](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -327,29 +352,29 @@
 ##### [Anyagjegyzékek összehasonlítása](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Kínai bizonylatok](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Adóintegráció konfigurációja](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Vevői áfaszámlák GYIK](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Vevői áfaszámlák GYIK](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Értékcsökkenés módjai tárgyi eszközök ](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Kínai Arany adó adatentitás importálása](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Havi átlagos készletköltségmodell](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Fő számlák készletének feladása hely szerint](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Negatív jóváírások beállítása ](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Japán
+##### [Felosztási szabályok](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Szállítók által fedezett banki kifizetési díjak](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Gyűjtőszámlák](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### Tárgyi eszközök
-###### [Felosztási szabályok](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Értékcsökkenés GYIK](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Egyenlő arányban elosztott értékcsökkenési módszer](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Értékvesztési könyvelés](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [PGE értékvesztési könyvelése](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [ARO beállítása](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Csökkentési bejegyzések beállítása](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Értékcsökkenés GYIK](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Egyenlő arányban elosztott értékcsökkenési módszer](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Értékvesztési könyvelés](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [PGE értékvesztési könyvelése](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Irányítószámok importálása](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
 ##### [Szállító kifizetése váltó kibocsátásával](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Fokozatos adóelőleg számítása](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [ARO beállítása](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Csökkentési bejegyzések beállítása](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Malajzia
 ##### [Áruk és szolgáltatások adója ](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Szingapúr
-##### [Az GST-05 jelentés elkészítése](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [A GST-05 jelentés elkészítése](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Thaiföld
 ##### [Készletkarton-jelentések](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Nem realizált áfa](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -357,13 +382,20 @@
 
 ### Európa
 #### [Előlegre jogosultak](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Előlegre jogosult tranzakciói](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Speciális számlázás](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Banki egyeztetés](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Helyesbítő számlázás](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Időszaki naplók létrehozása és feladása](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Számlaazonosítók módosítása az értékesítési rendeléseken](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [EU beérkezési igazolások](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [EU értékesítési lista jelentés](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [EU értékesítésilista-jelentés](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Árfolyam-korrekciók](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Fizetési módok fájlformátumai](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [ISO20022 fájlok importálása](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Készletnapló-jelentések](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Számla- és szállítólevél-számozás Lettország és Litvánia esetében](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Számlakibocsátás határidői](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [OIOUBL-előírások](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -372,14 +404,22 @@
 #### [Tárgyi eszköz előzetes beszerzésének feladása](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Irányítószámok](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Nyilvántartási azonosítók](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Fordított adók](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [SEPA-átutalás áttekintése](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [SEPA beszedési megbízás – áttekintés](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Vevői és szállítói kompenzáció beállítása](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Aláírók beállítása a nyomtatási képernyőkhöz](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Sztornókönyvelés](/dynamics365/unified-operations/financials/localizations/emea-storno?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Adóügyi irányelvek](/dynamics365/unified-operations/financials/localizations/emea-tax-directives?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
 #### [Áfaárfolyamok](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Áfatételjegyzék-tranzakciók (Kelet-európa)](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Áfabevallás](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Elszámolási tranzakciók megtekintése](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Ausztria
 ##### [Féléves értékcsökkenés](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Csomagolóanyag díjai](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Beszerzési illetékek](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Áfabevallás](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Belgium
 ##### [CODA banki kivonat](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -388,7 +428,7 @@
 ##### [Egyeztetési jelentések](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 #### Cseh Köztársaság
-##### [Készpénzfizetési engedmény jóváírásra](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Jóváírás készpénzfizetési engedményre](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Értékcsökkenés kerekítése](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Értékcsökkenés felfüggesztése](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Tárgyi eszközök értékcsökkenése](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -402,6 +442,7 @@
 ###### [Állami szektor könyvelése](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Kötelezettségek](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Mandats de paiement](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Beszerzés és forrás](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Szállítói számlák visszatartott kifizetése](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Számlák és bizonylatok kronológiai sorrendben](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -427,7 +468,7 @@
 ##### [Szállítólevél dátumigazolása a számlákon](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Áfakönyvek](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Adóelőleg](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Adóelőleg](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Lettország
 ##### [Tárgyieszköz-könyvelés](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Tárgyi eszközök helyváltozásának nyomon követése](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -438,6 +479,7 @@
 ##### [Áfabevallás részletei](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Norvégia
 ##### [Nets importálási formátum](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Áfabevallás](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
 #### Lengyelország
 ##### [Sorengedmények kiszámítása az egységár alapján](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Javítással kapcsolatos megjegyzések](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -474,6 +516,7 @@
 ###### [Pénzügyi bizonylatok importálása](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [A főkönyvi konszolidációban létrehozott jogi személy tranzakcióinak exportálása és importálása](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [NF-e XML-dokumentumok és a DANFE-fájlok importálása és ellenőrzése](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [NF-e és DANFE fájlok beállítása](/dynamics365/unified-operations/financials/localizations/Set-up-import-nf-e-documents?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
 ###### [Elektronikus fizetési átutalások feldolgozása](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Pénzügyi dokumentumok](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Pénzügyi dokumentum szöveges helyőrzők](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -481,7 +524,7 @@
 ###### [Hivatkozott pénzügyi dokumentumok](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Értékesítés – kiegészítő pénzügyi bizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Szolgáltatás – elektronikus pénzügyi bizonylat](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Az elektronikus visszafizetési folyamat során létrehozott naplók](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Az elektronikus visszafizetési folyamat során létrehozott naplók](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [NF-e folyamat](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Jogi személyek paraméterei](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [CIAP tárgyi eszköz beszerzése](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -495,11 +538,13 @@
 ##### [Elektronikus számlák ](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Elektronikus főkönyvi számla kimutatásai](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [ISR-bevallási jelentés](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-
+### Közel-Kelet
+#### [Szaúd-arábiai zakat-jelentés](/dynamics365/unified-operations/financials/localizations/emea-sau-zakat-reporting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### Észak-Amerika
 #### [Év végi 1099-es jelentés az Egyesült Államok számára](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-## Emberi erőforrások
+#### [1099-es űrlap az állami szektorban](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
+## Emberi erőforrások
 ### Felvétel
 #### [A toborzási folyamat kezelése](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Tömeges felvételi projektek](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -538,6 +583,7 @@
 ### [Power BI-tartalmak elérése](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### [Kiadott Power BI-tartalmak](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Tényleges - költségvetés](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Juttatások](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Készpénzáttekintés](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 #### [Pénzügyi igazgatói áttekintés](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -550,7 +596,7 @@
 #### [Alkalmazotti kompetenciák és fejlődés](/dynamics365/unified-operations/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Alkalmazotti fejlesztés](/dynamics365/unified-operations/dev-itpro/analytics/employee-development-PBI?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
 #### [Pénzügyi teljesítmény](/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Tárgyi eszközök kezelése](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
+#### [Tárgyi eszközök kezelése](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Tanulás](/dynamics365/unified-operations/dev-itpro/analytics/learning-power-bi?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Szervezeti képzés](/dynamics365/unified-operations/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Gyakorlatkezelés](/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -559,7 +605,7 @@
 #### [Felvétel](/dynamics365/unified-operations/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Kiskereskedelmi csatorna teljesítménye ](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Értékesítési és jövedelmezőségi teljesítmény](/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Szállítói kifizetések](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
+#### [Szállítói kifizetések](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Raktári teljesítmény](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Munkaerő-mutatók](/dynamics365/unified-operations/dev-itpro/analytics/workforce-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
@@ -567,6 +613,7 @@
 #### [A jelentésdokumentumokkal kapcsolatos szolgáltatások áttekintése](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Nyomtatás](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Hálózati nyomtatók engedélyezése](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Dokumentum-létrehozási, közzétételi és nyomtatási képességek on-premises telepítéseknél](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [A Dokumentumirányítási ügynök futtatása Windows-szolgáltatásként](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Segítség az időtúllépés megakadályozására hosszú ideig futó jelentések esetén](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Az SQL Server Reporting Services jelentései](/dynamics365/unified-operations/dev-itpro/analytics/SSRS-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -591,8 +638,9 @@
 #### [Elektronikus dokumentumok generálása és alkalmazások adatainak frissítése az Elektronikus jelentéskészítő eszköz használatával](/dynamics365/unified-operations/dev-itpro/analytics/generate-electronic-documents-update-application-data?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Elemzési eszközök és megjelenítések
-#### [Elemzések, összesítő mértékek és KPI-modellezés](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Modellezés és összevont adatok](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Elemzések, összesítő mértékek és KPI-k modellezése](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Adatok modellezése és összevonása](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Pénzügyi dimenziók hozzáadása összesítő mértékekhez](/dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Kontextuális BI hozzáadása űrlapokhoz](/dynamics365/unified-operations/dev-itpro/analytics/add-contextual-bi-forms?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Összesítő mértékeket tartalmazó jelentés](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-measurements-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Összesítő adatentitásokat tartalmazó jelentés](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -600,13 +648,16 @@
 #### [Power BI-integráció](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Power BI beágyazott integráció](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Beágyazott Power BI a munkaterületeken](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Analitika hozzáadása munkaterületekhez Power BI Embedded használatával](/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Analitikai munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Power BI hozzáadása a munkaterületekhez](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Power BI-jelentések rögzítése a munkaterületekhez](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [A Power BI integrációja az Entitástárral](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Power BI-jelentések létrehozása és terjesztése az Entitástárral](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Entitásexportálás saját Azure SQL adatbázisba](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 
-## Készletgazdálkodás
+## Készletkezelés
 ### Raktárelrendezés létrehozása
 ### Bejövő folyamat
 #### [Beérkezés áttekintése](/dynamics365/unified-operations/supply-chain/inventory/arrival-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -657,6 +708,7 @@
 ##### [Nyitott munkalista rendszercsoportosítása](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Kitárolás és csomagolás
 ##### [Legrégebbi köteg kitárolása mobileszközön](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Raktáron belüli régebbi kötegek megjelenítésének konfigurálása mobileszközön](/dynamics365/unified-operations/supply-chain/warehousing/display-older-batches-within-warehouses?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Darab kitárolásának megerősítése](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Csomagolóanyagok és díjak](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Készletszámlálás
@@ -677,6 +729,8 @@
 ##### [Mobileszközök beállítása raktári munkához](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Raktári mobileszközportál (WMDP)](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Raktári mobileszköz megjelenítési beállításai](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### Frissítés és áttelepítés
+##### [Áttelepítés AX 2012-ből a Finance and Operations alkalmazásba](/dynamics365/unified-operations/supply-chain/warehousing/upgrade-migration-warehouse-management-processes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 
 ## Alaptervezés
@@ -719,12 +773,13 @@
 ##### [Beszerzési rendelések áttekintése](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Beszerzési rendelések létrehozása](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Beszerzési rendelések jóváhagyása és megerősítése](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Beszerzési rendelés jóváhagyásának mobil munkaterülete](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Árak és engedmények
 ##### [Beszerzési szerződések](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Termékbevételezések és számlázás
 ##### [Termékbevételezés összevetése a beszerzési rendelésekkel](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Szállítói számlák áttekintése](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-##### [Szállítói feladási profilok](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Szállítói számlák áttekintése](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Szállítói feladási profilok](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Szállítókezelés és együttműködés
 ##### [Szállítói együttműködés beállítása és karbantartása](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Szállítói együttműködés felhasználóinak kezelése](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -762,6 +817,7 @@
 ### [Az elektronikus aláírás áttekintése](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Esetkezelés – áttekintés](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Esetbiztonság, folyamatok és kategóriák konfigurálása](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [A dokumentumkezelés konfigurálása](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Rekordsablonok létrehozása](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [E-mail konfigurálása és küldése](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Dátum-/időadatok és időzónák](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -822,6 +878,9 @@
 #### Nyersanyagok kezelése
 ##### [Termelési rendelések áttárolása kiszállítási területekbe](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Anyagfelhasználás regisztrálása mobileszköz segítségével](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Nyersanyag-fogyasztás kezelése ürítési elvek használatával](/dynamics365/unified-operations/supply-chain/production-control/flushing-principles?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
+#### Késztermékek kezelése
+##### [A termelés kimeneti helyének beállítása késztermékekhez](/dynamics365/unified-operations/supply-chain/production-control/production-output-location?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### Lean manufacturing (lean gyártás) 
 #### [Lean manufacturing (áttekintés)](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Tevékenységalapú alvállalkozásba adás](/dynamics365/unified-operations/supply-chain/production-control/activity-based-subcontracting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -912,35 +971,17 @@
 
 ## [Fejlesztés és adminisztráció a Unified Operations platform használatával](/dynamics365/unified-operations/dev-itpro/index)
 
-### [Fejlesztések és adminisztráció áttekintése](/dynamics365/unified-operations/dev-itpro/get-started/getting-started-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Rendszerkövetelmények](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Bemutató adatok – áttekintés](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### Súgórendszer
-##### [Súgórendszer áttekintése](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [A Súgórendszer csatlakoztatása](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Új vagy módosult elemek](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Az Operations 7. platformfrissítése (2017. május)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Az Operations 6. platformfrissítése (2017. április)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Az Operations 5. platformfrissítése (2017. március)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Az Operations 4. platformfrissítése (2017. február)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [1611-es verziójú Operations (2016. november)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Az Operations 3. platformfrissítése (2016. november)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [2. Dynamics AX platformfrissítés (2016. augusztus)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
-##### [Dynamics AX 7.0.1 alkalmazásverzió (2016. május)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [1. Dynamics AX platformfrissítés (2016. május)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Dynamics AX 7.0 (2016. február)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### Frissített feladat-útmutatók
-###### [2016. novemberi feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [2016. augusztusi feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [2016. májusi feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [2016. februári feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Rendszerkövetelmények](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Bemutató adatok](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Adatellenőrzés](/dynamics365/unified-operations/dev-itpro/user-interface/data-validation-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+
 
 
 ### [Fejlesztés és személyre szabás a Visual Studio használatával](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Az alkalmazásverem és a kiszolgáló felépítése](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Értékelési másolat beszerzése](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Regisztráció előfizetéshez](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [A Dynamics 365 for Finance and Operations, Enterprise kiadás-példányok elérése](/dynamics365/unified-operations/dev-itpro/dev-tools/dev-tools/access-instances?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Regisztrálás előfizetésre](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Hozzáférési példányok](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Fejlesztési rendszerkövetelmények](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Flottakezelés – mintaalkalmazás
 ##### [Flottakezelés – mintaalkalmazás](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -953,13 +994,12 @@
 ##### [Buildműveletek](/dynamics365/unified-operations/dev-itpro/dev-tools/build-operations?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Kódszerkesztő](/dynamics365/unified-operations/dev-itpro/dev-tools/code-editor?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Modell és adatmodellelemek létrehozása](/dynamics365/unified-operations/dev-itpro/dev-tools/create-data-model-elements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Hozzon létre egy új felhasználót egy fejlesztői számítógépen](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Új felhasználó létrehozása fejlesztési gépen](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Testreszabás-elemzési jelentés](/dynamics365/unified-operations/dev-itpro/dev-tools/customization-analysis-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Fejlesztői eszközök](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Elemtervezők](/dynamics365/unified-operations/dev-itpro/dev-tools/element-designers?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Elemhasználat](/dynamics365/unified-operations/dev-itpro/dev-tools/element-usage?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Modell exportálása és importálása](/dynamics365/unified-operations/dev-itpro/dev-tools/models-export-import?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Metaadatok keresése a Visual Studio-ban](/dynamics365/unified-operations/dev-itpro/dev-tools/metadata-search-visual-studio?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Metaadat-keresés a Visual Studio szolgáltatásban](/dynamics365/unified-operations/dev-itpro/dev-tools/metadata-search-visual-studio?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Modellek](/dynamics365/unified-operations/dev-itpro/dev-tools/models?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Dynamics 365 for Finance and Operations, Enterprise kiadás projektjei](/dynamics365/unified-operations/dev-itpro/dev-tools/projects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Visual Studio-eszközök és -bővítmények](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-tools-add-ins?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -970,9 +1010,9 @@
 ##### [Hibakeresés az X++-kódban egy gyártási adatbázissal szemben](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Hibakeresés az X++ kódban](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [EventHandlerResult-osztályok a kérelmi vagy válaszesetekben](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Üzleti logikai írása C#### és X++ forráskóddal](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Üzleti logikai írása C\# és X++ forráskóddal](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Programnyelv-támogatás](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [LINQ-szolgáltató a C#-nyelvhez](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [LINQ-szolgáltató a C\# nyelvhez](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Gyakorlati tanácsok az Authoring szolgáltatáshoz](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Az Application Explorer tulajdonságai](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### X++ nyelvi referencia
@@ -985,7 +1025,7 @@
 ###### [X++-adatkiválasztás és -manipuláció](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [X++-makrók](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [X++-attribútumosztályok](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Az X++ és a C#### összehasonlítása](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Az X++ és a C\# összehasonlítása](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ###### [Az X++ szintaxisa](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Fordításidejű funkciók
 ##### [X++ fordításidejű funkciók](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1039,7 +1079,7 @@
 ##### [W osztályok](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [X osztályok](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Testreszabás kiterjesztésekkel és felülrétegezéssel
-##### Bővíthetőség
+##### [Bővíthetőség](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Modellelemek testreszabása kiterjesztésekkel](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Testreszabás kiterjesztésekkel és felülrétegezéssel](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Osztálykiterjesztések](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1048,8 +1088,11 @@
 ##### Adatbázis szinkronizálása
 #### Csomagok áthelyezése az egyik környezetből a másikba
 ##### Telepíthető csomag létrehozása és alkalmazása
-##### [Folyamatos szállítás](/dynamics365/unified-operations/dev-itpro/continuous-delivery-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-
+#### [Folyamatos szállítás kezdőlap](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Fejlesztési és folyamatos szállítási GYIK](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Tesztcsomagok kizárása az előállított buildből](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Harmadikfél-modellek és futásidejű csomagok kezelése forrásvezérléssel](/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Verziómodellek az automatizált buildben](/dynamics365/unified-operations/dev-itpro/dev-tools/version-models-build?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 #### Teljesítmény kezdőlap
 ##### [Nyomon követés a Trace parser használatával](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1086,8 +1129,8 @@
 ##### [Szűrők](/dynamics365/unified-operations/dev-itpro/user-interface/filtering?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [PowerApps-állomásvezérlő](/dynamics365/unified-operations/dev-itpro/user-interface/powerapps-host-control?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Ablakkezelés
-##### [Helyimenü-kód áthelyezése](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Dupla kattintási kód áthelyezése az egérrel](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Helyimenü-kód áthelyezése](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Dupla kattintási kód áthelyezése az egérrel](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Környezeti adatbevitel a keresésekhez](/dynamics365/unified-operations/dev-itpro/user-interface/contextual-data-entry-lookups?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [HierarchyViewer-vezérlő](/dynamics365/unified-operations/dev-itpro/user-interface/hierarchy-viewer-control?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Keresési vezérlők](/dynamics365/unified-operations/dev-itpro/user-interface/lookups-controls?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1128,8 +1171,8 @@
 ##### [Adatterület űrlapjának mintája](/dynamics365/unified-operations/dev-itpro/user-interface/factbox-form-patterns?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Alminták
 ##### [Egyéni szűrőcsoport-alminta](/dynamics365/unified-operations/dev-itpro/user-interface/custom-filter-group-subpattern?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Dimenzióbelépés-vezérlő alminta](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Dimenziókifejezés-szerkesztési alminta](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Dimenzióbelépés-vezérlő alminta](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Dimenziókifejezés-szerkesztési alminta](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Mezők és mezőcsoportok almintája](/dynamics365/unified-operations/dev-itpro/user-interface/fields-field-groups-subpattern?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Szűrők és az Eszköztár almintái](/dynamics365/unified-operations/dev-itpro/user-interface/filters-toolbar-subpattern?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Szöveges alminta kitöltése](/dynamics365/unified-operations/dev-itpro/user-interface/fill-text-subpattern?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1158,9 +1201,9 @@
 #### Munkaterületek létrehozása
 ##### [Üzemeltetési munkaterület létrehozása](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Csempe- és lista-gyorsítótárazás a munkaterületekhez](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### Feladatrögzítő
-##### [Feladatrögzítő a Dynamics 365 for Finance and Operations, Enterprise kiadásban](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Feladatrögzítő](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Feladatrögzítő gyors áttekintése](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Megoldások kiadása a Lifecycle Services használatával
 #### [Fejlesztés és kiadás](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
@@ -1181,7 +1224,7 @@
 ##### [Szabályozó figyelmeztetés elküldése](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
 
 
-### [Adatentitások](/dynamics365/unified-operations/dev-itpro/data-entities?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+### [Adatentitások](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Alapértelmezett adatentitások
 ##### [Adatentitás-jelentések](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Adatentitások: Kötelezettségek és adók](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1211,7 +1254,9 @@
 
 #### Áthelyezésre kerülő entitások
 ##### [Konfigurációs adatprojektek](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Adatsablonok konfigurálása](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Konfigurációs adatcsomagok](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Konfigurációs adatsablonok](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+
 ###### [Konfigurációs adatok másolása vállalatok között](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Bevált eljárások a kuponok Általános napló entitással történő importáláshoz](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
@@ -1248,7 +1293,7 @@
 ### Office-integráció
 #### [Office-integráció](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Office-integrációs oktatóanyag](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Az Excel-bővítmény használata](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Az Excel-bővítmény használata](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Az Excel programban történő megnyitási élmények létrehozása](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Sablonok hozzáadása a Sorok megnyitása az Excelben menühöz](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [A Megnyitás a Microsoft Office-ban menü személyre szabása](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1278,19 +1323,30 @@
 #### [Gantt fejlesztési útmutató](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Új szállításkezelő motor létrehozása](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
-### [Kiskereskedelmi fejlesztési könyvtár](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Telepítés
-#### [Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás bemutatókörnyezetének telepítése](/dynamics365/unified-operations/dev-itpro/deploy-demo-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Azure Resource Manager bevezetése](/dynamics365/unified-operations/dev-itpro/arm-onboarding?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Azure ExpressRoute és Dynamics 365 for Finance and Operations, Enterprise kiadás](/dynamics365/unified-operations/dev-itpro/expressroute?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás bemutatókörnyezetének telepítése](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Azure Resource Manager bevezetése](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Azure ExpressRoute és Dynamics 365 for Finance and Operations, Enterprise kiadás](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+
+#### [Microsoft Dynamics 365 for Finance and Operations on-premises telepítése](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+##### [Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) áttekintése](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Rendszerkövetelmények](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Hardverméretezés on-premises környezetekhez](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Online szolgáltatási és on-premises szoftveréletciklus-irányelv](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) megvásárlása](/dynamics365/unified-operations/dev-itpro/https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [On-premises projekt létrehozása a Lifecycle Services szolgáltatásban](/dynamics365/unified-operations/dev-itpro/deployment/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [On-premises környezetek beállítása és telepítése](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Az SQL Server Reporting Services konfigurálása on-premises telepítéshez](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Egyéni modellek fejlesztése és telepítése on-premises környezetekhez](/dynamics365/unified-operations/dev-itpro/deployment/develop-deploy-custom-models-on-premises?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+
 
 #### Egyéni kód telepítése
-##### [Telepíthető csomag létrehozása](/dynamics365/unified-operations/dev-itpro/create-apply-deployable-package?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Telepíthető csomag alkalmazása](/dynamics365/unified-operations/dev-itpro/apply-deployable-package-system?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Telepíthető csomag telepítése](/dynamics365/unified-operations/dev-itpro/install-deployable-package?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Telepíthető csomag létrehozása](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Telepíthető csomag alkalmazása](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Telepíthető csomag telepítése](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
-#### [Felhőszolgáltatási szolgáltató letöltései és Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/csp-download-customersource?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Felhőszolgáltatási szolgáltató letöltései és Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### [Frissítés és áttelepítés](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Frissítés AX 2012-ből a Dynamics 365 for Finance and Operations alkalmazásra](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1301,7 +1357,7 @@
 ##### [Frissítés – AX 2012 adatfrissítési feladatok](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Frissítés – Adatfrissítés védőfalkörnyezetben](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Érvényesítés – Átállás teszt](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Érvényesítés – Alkalmazás-érvényesítési folyamat](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Érvényesítés – Frissítést követően elvégzendő feladatok](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Érvényesítés – Funkcionális tesztelés](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Érvényesítés – Előkészítés élesítésre](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
@@ -1321,7 +1377,7 @@
 
 #### Frissítés egy legutóbbi frissítésre
 ##### [Felkészülés a legújabb frissítésre történő váltásra](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Verziók és frissítési irányelv](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Életciklus-irányelv](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Frissítés a legújabb platformfrissítésre](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [A Dynamics-platform frissítése a 2016. augusztusi kiadásra](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Védőfalkörnyezet frissítése](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1341,116 +1397,118 @@
 
 
 ### Rendszerfelügyelet
-#### [Havi platformfrissítések GYIK](/dynamics365/unified-operations/dev-itpro/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez](/dynamics365/unified-operations/dev-itpro/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Licenckódok és konfigurációskulcs-jelentések](/dynamics365/unified-operations/dev-itpro/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Vállalatközi adatmegosztás](/dynamics365/unified-operations/dev-itpro/cross-company-data-sharing?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Karbantartási mód](/dynamics365/unified-operations/dev-itpro/maintenance-mode?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Havi platformfrissítések GYIK](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez](/dynamics365/unified-operations/dev-itpro/sysadmin/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Licenckódok és konfigurációskulcs-jelentések](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Vállalatközi adatmegosztás](/dynamics365/unified-operations/dev-itpro/sysadmin/cross-company-data-sharing?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Karbantartási mód](/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Biztonság
-##### [Szerepkör alapú biztonság](/dynamics365/unified-operations/dev-itpro/role-based-security?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Biztonsági architektúra](/dynamics365/unified-operations/dev-itpro/security-architecture?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Szerepkör alapú biztonság](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Biztonsági architektúra](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Biztonsági jelentések](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Kötegelt feldolgozás
-##### [Kötegfeldolgozás áttekintése](/dynamics365/unified-operations/dev-itpro/batch-processing-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Kötegkiszolgáló áttekintése](/dynamics365/unified-operations/dev-itpro/batch-server-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Kötegfeldolgozás áttekintése](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Kötegkiszolgáló áttekintése](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Lifecycle Services
-#### [A Lifecycle Services áttekintése](/dynamics365/unified-operations/dev-itpro/lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [LCS ügyfelek számára](/dynamics365/unified-operations/dev-itpro/lcs-works-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [LCS a partnerek számára](/dynamics365/unified-operations/dev-itpro/getting-started-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Újdonságok](/dynamics365/unified-operations/dev-itpro/whats-new-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Ismert problémák](/dynamics365/unified-operations/dev-itpro/known-issues?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Dynamics Lifecycle Services használati útmutató](/dynamics365/unified-operations/dev-itpro/lcs-user-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [A biztonsági beállítások megadása](/dynamics365/unified-operations/dev-itpro/configure-lcs-security?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Megoldáskereső](/dynamics365/unified-operations/dev-itpro/issue-search-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Konfigurációkezelő](/dynamics365/unified-operations/dev-itpro/configuration-manager-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Konfigurációkezelő beállítása ](/dynamics365/unified-operations/dev-itpro/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Kódfrissítési szolgáltatás konfigurálása](/dynamics365/unified-operations/dev-itpro/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Módszertan létrehozása ](/dynamics365/unified-operations/dev-itpro/create-methodology?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Üzletifolyamat-modellező](/dynamics365/unified-operations/dev-itpro/business-process-modeler-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Üzletifolyamat-könyvtárak az üzletifolyamat-modellezőben](/dynamics365/unified-operations/dev-itpro/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Az Üzletifolyamat-modellező folyamatábrái](/dynamics365/unified-operations/dev-itpro/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Egyéni üzleti folyamatok kezelése](/dynamics365/unified-operations/dev-itpro/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Megfigyelés és diagnosztika ](/dynamics365/unified-operations/dev-itpro/monitoring-diagnostics?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A Lifecycle Services áttekintése](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [LCS ügyfelek számára](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [LCS a partnerek számára](/dynamics365/unified-operations/dev-itpro/lifecycle-services/getting-started-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Újdonságok](/dynamics365/unified-operations/dev-itpro/lifecycle-services/whats-new-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Ismert problémák](/dynamics365/unified-operations/dev-itpro/lifecycle-services/known-issues?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Dynamics Lifecycle Services használati útmutató](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A biztonsági beállítások megadása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Megoldáskereső](/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Konfigurációkezelő](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configuration-manager-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Konfigurációkezelő beállítása ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Kódfrissítési szolgáltatás konfigurálása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Módszertan létrehozása ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/create-methodology?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Üzletifolyamat-modellező](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-modeler-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Üzletifolyamat-könyvtárak az üzletifolyamat-modellezőben](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Az Üzletifolyamat-modellező folyamatábrái](/dynamics365/unified-operations/dev-itpro/lifecycle-services/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Egyéni üzleti folyamatok kezelése](/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Megfigyelés és diagnosztika ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/monitoring-diagnostics?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Eszköztár](/dynamics365/unified-operations/dev-itpro/lifecycle-services/asset-library?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 #### A Dynamics AX 2012 Lifecycle Services funkciói
 ##### Telepítés
-###### [Felhőbeli környezetek](/dynamics365/unified-operations/dev-itpro/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Konfiguráció másolása](/dynamics365/unified-operations/dev-itpro/copy-configuration-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [A Dynamics AX 2012 R3 telepítésének megtervezése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [A Dynamics AX 2012 R3 telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Dynamics AX 2012 R3 bemutatókörnyezet telepítése](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Fejlesztői környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Magas rendelkezésre állású környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Tesztelési környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [A Dynamics AX 2012 R3 telepítésének kezelése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Enterprise Portal-kiszolgálók egyesítése egyetlen kiszolgálófarmra](/dynamics365/unified-operations/dev-itpro/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Rekord belépési pontjai a Dynamics AX Enterprise Portalon](/dynamics365/unified-operations/dev-itpro/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Kiskereskedelmi e-kereskedelmi fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Retail Essentials bemutató környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Retail Essentials fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Kiskereskedelmi mobilitási fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [A Dynamics AX 2012 R3 telepítésének hibaelhárítása az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [A Dynamics AX 2012 R3 frissítései](/dynamics365/unified-operations/dev-itpro/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Adatimportálási/-exportálási keretrendszer használati útmutatója](/dynamics365/unified-operations/dev-itpro/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Telepítés](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Telepítés az AX 2012 R3 szolgáltatásba](/dynamics365/unified-operations/dev-itpro/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [A Dynamics AX 2012 R2 CU7 verziójának telepítése SQL Server 2014 rendszerre](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Adatok áttelepítése](/dynamics365/unified-operations/dev-itpro/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [SSIS-verzió konfigurálása](/dynamics365/unified-operations/dev-itpro/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Entitásadatok másolása és összehasonlítása vállalatok között](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Adatok másolása Dynamics AX-vállalatok között](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Adatok másolása Dynamics AX-példányok között](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Egyéni célentitás létrehozása](/dynamics365/unified-operations/dev-itpro/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Adatimportálási és -exportálási keretrendszer entitásai](/dynamics365/unified-operations/dev-itpro/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [CSV-adatforrás adatainak importálása](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [ODBC-adatforrás adatainak importálása](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Bemutató fájlok](/dynamics365/unified-operations/dev-itpro/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Gyors importálás-exportálás](/dynamics365/unified-operations/dev-itpro/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Felhőbeli környezetek](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Konfiguráció másolása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/copy-configuration-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [A Dynamics AX 2012 R3 telepítésének megtervezése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [A Dynamics AX 2012 R3 telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Dynamics AX 2012 R3 bemutatókörnyezet telepítése](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Fejlesztői környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Magas rendelkezésre állású környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Tesztelési környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [A Dynamics AX 2012 R3 telepítésének kezelése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Enterprise Portal-kiszolgálók egyesítése egyetlen kiszolgálófarmra](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Rekord belépési pontjai a Dynamics AX Enterprise Portalon](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Kiskereskedelmi e-kereskedelmi fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Retail Essentials bemutató környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Retail Essentials fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Kiskereskedelmi mobilitási fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [A Dynamics AX 2012 R3 telepítésének hibaelhárítása az Azure szolgáltatásban](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [A Dynamics AX 2012 R3 frissítései](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Adatimportálási/-exportálási keretrendszer használati útmutatója](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Telepítés](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Telepítés az AX 2012 R3 szolgáltatásba](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [A Dynamics AX 2012 R2 CU7 verziójának telepítése SQL Server 2014 rendszerre](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Adatok áttelepítése](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [SSIS-verzió konfigurálása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Entitásadatok másolása és összehasonlítása vállalatok között](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Adatok másolása Dynamics AX-vállalatok között](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Adatok másolása Dynamics AX-példányok között](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Egyéni célentitás létrehozása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Adatimportálási és -exportálási keretrendszer entitásai](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [CSV-adatforrás adatainak importálása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [ODBC-adatforrás adatainak importálása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Bemutató fájlok](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Gyors importálás-exportálás](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### Táblák 
-###### [Táblák létrehozása](/dynamics365/unified-operations/dev-itpro/ax-2012/create-tables?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Tábla tulajdonságai](/dynamics365/unified-operations/dev-itpro/ax-2012/table-properties?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Táblák létrehozása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-tables?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Tábla tulajdonságai](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/table-properties?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### Dynamics AX 2012 LCS-eszközök
-###### [Projektek](/dynamics365/unified-operations/dev-itpro/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Módszertanok](/dynamics365/unified-operations/dev-itpro/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Testreszabás-elemzés ](/dynamics365/unified-operations/dev-itpro/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Infrastruktúrabecslő](/dynamics365/unified-operations/dev-itpro/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Licencméretbecslő](/dynamics365/unified-operations/dev-itpro/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Javaslatkérésre (/dynamics365/unified-operations/dev-itpro/RFP) érkezett válaszok](/dynamics365/unified-operations/dev-itpro/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Rendszerdiagnosztika](/dynamics365/unified-operations/dev-itpro/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Rendszerdiagnosztika telepítése és futtatása](/dynamics365/unified-operations/dev-itpro/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Frissítéselemző](/dynamics365/unified-operations/dev-itpro/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Használatiprofil-készítő](/dynamics365/unified-operations/dev-itpro/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Projektek](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Módszertanok](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Testreszabás-elemzés ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Infrastruktúrabecslő](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Licencméretbecslő](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Javaslatkérésre (/dynamics365/unified-operations/dev-itpro/lifecycle-services/RFP) érkezett válaszok](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Rendszerdiagnosztika](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Rendszerdiagnosztika telepítése és futtatása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Frissítéselemző](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Használatiprofil-készítő](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### Dynamics AX 2012 letölthető eszközök
-###### [Kódfrissítési eszköz használati útmutatója (elavult)](/dynamics365/unified-operations/dev-itpro/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [A Lifecycle Services letölthető eszközei](/dynamics365/unified-operations/dev-itpro/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Vizsgálati adatok átvitele eszköz (béta)](/dynamics365/unified-operations/dev-itpro/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Telepítés](/dynamics365/unified-operations/dev-itpro/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Futtatás](/dynamics365/unified-operations/dev-itpro/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Bemutató adatok importálása az AX 2012 R3 szolgáltatáshoz](/dynamics365/unified-operations/dev-itpro/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Biztonsági fejlesztőeszköz](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Telepítés](/dynamics365/unified-operations/dev-itpro/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Használati útmutató](/dynamics365/unified-operations/dev-itpro/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Belépésipont-engedélyek definiálása vagy szerkesztése](/dynamics365/unified-operations/dev-itpro/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Teljesítménytesztelő szoftverfejlesztői készlet](/dynamics365/unified-operations/dev-itpro/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Biztonsági frissítések tanácsadó eszköze](/dynamics365/unified-operations/dev-itpro/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [Intelligens adatkezelési keretrendszer (IDMF)](/dynamics365/unified-operations/dev-itpro/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Áttekintés](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Telepítési útmutató](/dynamics365/unified-operations/dev-itpro/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Konfiguráció](/dynamics365/unified-operations/dev-itpro/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Elemzés](/dynamics365/unified-operations/dev-itpro/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Objektumok törlése és archiválása](/dynamics365/unified-operations/dev-itpro/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Archivált objektumok létrehozása](/dynamics365/unified-operations/dev-itpro/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Törölt objektumok létrehozása](/dynamics365/unified-operations/dev-itpro/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Törlési és elemzési feladatok ütemezése](/dynamics365/unified-operations/dev-itpro/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Törölt vagy archivált munkák megtekintése](/dynamics365/unified-operations/dev-itpro/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Karbantartás](/dynamics365/unified-operations/dev-itpro/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-####### [Hibaelhárítás](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Kódfrissítési eszköz használati útmutatója (elavult)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [A Lifecycle Services letölthető eszközei](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Vizsgálati adatok átvitele eszköz (béta)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Telepítés](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Futtatás](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Bemutató adatok importálása az AX 2012 R3 szolgáltatáshoz](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Biztonsági fejlesztőeszköz](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Telepítés](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Használati útmutató](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Belépésipont-engedélyek definiálása vagy szerkesztése](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Teljesítménytesztelő szoftverfejlesztői készlet](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Biztonsági frissítések tanácsadó eszköze](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [Intelligens adatkezelési keretrendszer (IDMF)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Áttekintés](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Telepítési útmutató](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Konfiguráció](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Elemzés](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Objektumok törlése és archiválása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Archivált objektumok létrehozása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Törölt objektumok létrehozása](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Törlési és elemzési feladatok ütemezése](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Törölt vagy archivált munkák megtekintése](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Karbantartás](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+####### [Hibaelhárítás](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Adatbáziskezelés
-#### [Adatbázis másolása az Azure SQL Database adatbázisból SQL Server környezetbe](/dynamics365/unified-operations/dev-itpro/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Adatbázis másolása az SQL Server szolgáltatásból egy gyártási Azure SQL Database környezetbe](/dynamics365/unified-operations/dev-itpro/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Adatbázis visszaállítása egy nem termelési közegben](/dynamics365/unified-operations/dev-itpro/request-point-in-time-restore?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Adatbázis másolatának exportálása a későbbi visszaállításhoz](/dynamics365/unified-operations/dev-itpro/copy-operations-database?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Adatbázis másolása az Azure SQL Database adatbázisból SQL Server környezetbe](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Adatbázis másolása az SQL Server szolgáltatásból egy gyártási Azure SQL Database környezetbe](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Adatbázis visszaállítása egy nem termelési közegben](/dynamics365/unified-operations/dev-itpro/database/request-point-in-time-restore?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Adatbázis másolatának exportálása a későbbi visszaállításhoz](/dynamics365/unified-operations/dev-itpro/database/copy-operations-database?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Támogatás
 #### [Támogatás igénylése a Dynamics 365 for Finance and Operations, Enterprise kiadáshoz, illetve a Lifecycle Services szolgáltatáshoz](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
@@ -1466,6 +1524,7 @@
 
 ## Kifizetések
 ### [Kifizetési módok](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Kifizetések GYIK](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ## Hívásközpont
 ### [Hívásközpont áttekintése](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1488,6 +1547,7 @@
 ### Hardverperifériák
 #### [Kiskereskedelmi perifériás eszközök – áttekintés](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [A Microsoft által tesztelt pénztári hardverperifériák](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Kiskereskedelmiperiféria-szimulátor](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### Képernyő-elrendezés
 #### [Pénztár képernyő-elrendezésének beállítása](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1512,7 +1572,7 @@
 ### Bevételezések
 #### [Nyugtasablonok beállítása](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/dev-itpro/toc.json) 
 #### [E-mailes nyugták küldése MPOS pénztárból](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-### [Feladatrögzítő és Súgó a pénztárhoz](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Feladatrögzítő és Súgó a pénztárhoz](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ## Megfigyelés és elemzés
 ### [Értékesítési és teljesítménykülönbözet megfigyelése](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Értékesítési trendek és mintázatok elemzése](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1525,7 +1585,7 @@
 ### [Ármódosítások és engedmények](/dynamics365/unified-operations/retail/price-adjustments-discounts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Átfedő engedmények optimális kombinációjának meghatározása](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Csatornaspecifikus engedmények definiálása](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-### [Kiskereskedelmi értékesítési utalványok létrehozása](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Kiskereskedelmi értékesítési utalványok létrehozása](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ## Termékek és árusítás
 ### [Kiskereskedelmi hierarchiák](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Attribútumok létrehozása és kezelése](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1533,15 +1593,12 @@
 ### [Vonalkódok beállítása](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Vonalkódmaszkok beállítása](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ### [Szortimentek beállítása](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-### [Szortimenten kívüli termékek eladása és visszavétele](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Szortimenten kívüli termékek eladása és visszavétele](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ## Hűség
 ### [Vásárlói hűségprogram beállítása](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ## Készlet
 ### [Kiskereskedelmi árukészlet kezelése](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-## Kereskedelmi alapok
-### [Kereskedelmi alapok – áttekintés](/dynamics365/unified-operations/retail/commerce-essentials?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-### [Szervezetek és szervezeti hierarchiák a Kereskedelmi alapokban](/dynamics365/unified-operations/retail/organizational-hierarchies-commerce-essentials?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ## [Kiskereskedelmi fejlesztés és felügyelet](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
@@ -1551,16 +1608,16 @@
 #### [Kommunikáció a kiskereskedelmi csatornán](/dynamics365/unified-operations/retail/dev-itpro/define-retail-channel-communications-cdx?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [MPOS architektúra](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-architecture?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Online kiskereskedelmi áruház közzétételi architektúrája](/dynamics365/unified-operations/retail/dev-itpro/retail-online-store-publishing-architecture?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Kiskereskedelmi csatorna teljesítménye Power BI-tartalom](/dynamics365/unified-operations/retail/dev-itpro//dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+#### [Kiskereskedelmi csatorna teljesítménye Power BI-tartalom](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
 ### Telepítés és gyorsjavítások
 #### [Kiskereskedelmi skálázási egység konfigurálása és telepítése](/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Kiskereskedelmi üzleti rendszer – előkészítés](/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [A Retail Modern POS konfigurálása és telepítése](/dynamics365/unified-operations/retail//retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-##### [Kiskereskedelmi számlák és eszközök kezelése a központból](/dynamics365/unified-operations/retail//set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A Retail Modern POS konfigurálása és telepítése](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Kiskereskedelmi számlák és eszközök kezelése a központból](/dynamics365/unified-operations/retail/set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Retail POS-eszköz aktiválása](/dynamics365/unified-operations/retail/dev-itpro/retail-device-activation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [A kiskereskedelmi Cloud POS biztosítása](/dynamics365/unified-operations/retail/dev-itpro/secure-retail-cloud-pos?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-#### [Kiskereskedelmi hardverállomás konfigurálása és telepítése](/dynamics365/unified-operations/retail//retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [Kiskereskedelmi hardverállomás konfigurálása és telepítése](/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Kiskereskedelmi összetevő-események a diagnosztikához és a hibaelhárításhoz](/dynamics365/unified-operations/retail/dev-itpro/retail-component-events-diagnostics-troubleshooting?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Telepíthető csomag alkalmazása](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
@@ -1570,8 +1627,8 @@
 
 ### Bővíthetőség
 #### Pénztár
-##### [Retail POS képernyő-elrendezései](/dynamics365/unified-operations/retail//pos-screen-layouts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
-###### [A POS képernyőelrendezés-tervező telepítése](/dynamics365/unified-operations/retail//install-pos-layout-designer?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+##### [Retail POS képernyő-elrendezései](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+###### [A POS képernyőelrendezés-tervező telepítése](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [MPOS konfigurálása offline módhoz](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-offline?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [MPOS- és Cloud POS-eseményindító bővíthetősége](/dynamics365/unified-operations/retail/dev-itpro/modern-pos-trigger-extensibility?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Termékváltási alkalmazás létrehozása](/dynamics365/unified-operations/retail/dev-itpro/create-retail-experience-app?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
@@ -1596,7 +1653,7 @@
 ##### [Elektronikus kereskedelmi platform](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Elektronikus kereskedelmi platform SDK](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### Fizetési csatlakoztató
-##### [Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)](/dynamics365/unified-operations/retail/dev-itpro/http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+##### [Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ##### [Fizetési csatlakozó telepítése](/dynamics365/unified-operations/retail/dev-itpro/deploy-payment-connector?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 ##### [Windows-telepítő létrehozása egy fizetési csatlakozóhoz](/dynamics365/unified-operations/retail/dev-itpro/create-windows-installer-payment-connector?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
@@ -1604,13 +1661,14 @@
 #### [A Retail SDK áttekintése](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [A Retail SDK integrálása a folyamatos buildrendszerrel](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [A Retail SDK bővíthetőségi mintái](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+#### [A Retail POS integrációja ellenőrzőegységekkel Svédországnál](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Retail SDK-csomag](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 #### [Retail SDK-minták ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ### Kereskedelmi futtatókörnyezet
 #### [Hűségidő kiterjesztése](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
-# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index)
+# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 
 ## Emberi erőforrásokra vonatkozó stratégia kialakítása
 ### [Munkaerő szervezése részlegek, munkák és beosztások szerint](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
