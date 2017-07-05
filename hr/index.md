@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -32,20 +32,21 @@ ms.lasthandoff: 06/21/2017
 
 A Microsoft Dynamics 365 for Talent számos sokféle nyilvántartási feladatot egyszerűsít le, továbbá a szervezetben számos személyzeti folyamatot automatizál. Ezek közé tartozik többek között az alkalmazottak megtartása, a juttatások adminisztrációja, a képzés, a teljesítmény-ellenőrzés, és a változáskezelés. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez.
 
-A Dynamics 365 for Talent erősen kapcsolódik a Dynamics 365 for Finance and Operations, Enterprise kiadás Emberi erőforrások részlegéhez. Mindkét termék azonos funkciókkal bírhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, Enterprise kiadás, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
-
 A Talent rendszerrel a következő feladatok végezhetők el:
 
-> + Szervezeti struktúrák felügyelete.
-> + A dolgozók adatainak átfogó kezelése a felvételtől a nyugdíjazásig.
-> + Juttatási tervek meghatározása és adminisztrálása, munkavállalók felvétele, eltartott juttatásbeli jogosultságok hozzárendelése, valamint a kedvezményezettek kijelölése.
-> + Távolléti irányelvek létrehozása és felügyelete.
-> + A profilalapú munkaidő kezelésének megvalósítása és nyomonkövetése, valamint fizetési adatok exportálása egy bérrendszerbe.
-> + Dolgozók kompetenciáinak kezelése.
-> + Teljesítmények értékelése és a dolgozói célok megvalósítása.
-> + Tanfolyamok napirendjeinek, munkameneteinek és szekcióinak beállítása, végrehajtása és elemzése.
++ Szervezeti struktúrák felügyelete.
++ A dolgozók adatainak átfogó kezelése a felvételtől a nyugdíjazásig.
++ Juttatási tervek meghatározása és adminisztrálása, munkavállalók felvétele, eltartott juttatásbeli jogosultságok hozzárendelése, valamint a kedvezményezettek kijelölése.
++ Távolléti irányelvek létrehozása és felügyelete.
++ A profilalapú munkaidő kezelésének megvalósítása és nyomonkövetése, valamint fizetési adatok exportálása egy bérrendszerbe.
++ Dolgozók kompetenciáinak kezelése.
++ Teljesítmények értékelése és a dolgozói célok megvalósítása.
++ Tanfolyamok napirendjeinek, munkameneteinek és szekcióinak beállítása, végrehajtása és elemzése.
 
-<a name="develop-a-strategy-for-managing-your-human-resources"></a>Emberi erőforrásokra vonatkozó stratégia kialakítása
+> [!NOTE] 
+> A Dynamics 365 for Talent erősen kapcsolódik a Dynamics 365 for Finance and Operations, Enterprise kiadás Emberi erőforrások részlegéhez. Mindkét termék azonos funkciókkal bírhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, Enterprise kiadás, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+
+<a name="develop-a-strategy-for-managing-your-human-resources"></a>Emberi erőforrások kezelési stratégiájának kialakítása
 ---------------------------------------------------------
 
 A Talent rendszerben dolgozva különböző elemek – például, részlegek, feladatok és beosztások – segítségével meghatározhatja szervezete felépítését. Ezek azon alapvető elemek közé tartoznak, amelyeket konfigurálni szükséges. Az egyes alkalmazottak beosztásokhoz rendelhetők hozzá, amelyek feladatokhoz vannak társítva.
