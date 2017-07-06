@@ -40,7 +40,7 @@ A jelen útmutató bemutatja, hogyan fordíthatja vállalkozása javára a Dynam
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Pénzügyek</h3>
+<td><h3>Financials</h3>
 <p><a href="../financials/general-ledger/audit-policy-rules">Megfelelés</a></p>
 <p>Pénzgazdálkodás</p>
 <ul style="list-style-type:none">
