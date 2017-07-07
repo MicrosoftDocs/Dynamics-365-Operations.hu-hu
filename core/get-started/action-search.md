@@ -1,15 +1,16 @@
 ---
 title: "Műveletkeresés"
-description: "Ez a cikk a Microsoft Dynamics 365 for Operations rendszerben használható műveletkeresés funkciót írja le. A műveletkeresés segít megkeresni és adott lapon lefuttatni műveleteket."
+description: "Ez a cikk a Microsoft Dynamics 365 for Finance and Operations rendszerben használható műveletkeresés funkciót írja le. A műveletkeresés segít megkeresni és adott lapon lefuttatni műveleteket."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62303
 ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
 ms.search.region: Global
@@ -17,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef5709889dcabd4c9ed760f57d210956f38c37e9
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,14 +31,14 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk a Microsoft Dynamics 365 for Operations rendszerben használható műveletkeresés funkciót írja le. A műveletkeresés segít megkeresni és adott lapon lefuttatni műveleteket.
+Ez a cikk a Microsoft Dynamics 365 for Finance and Operations rendszerben használható műveletkeresés funkciót írja le. A műveletkeresés segít megkeresni és adott lapon lefuttatni műveleteket.
 
 <a name="introduction"></a>Bevezetés
 ------------
 
-A Microsoft Dynamics 365 for Operations oldalain az utasítások elsősorban a műveletpaneleken láthatók, egyrészt az oldal tetején megjelenő normál műveletpanelen, és az oldal különböző szakaszaiban megjelenő eszköztárakon. A korábbi verziókban a billentyűtippek szolgáltatás lehetővé tette a műveletpanel bármely gombjának gyors elérését az Alt billentyű, majd egy betűsorozat lenyomásával. 
+A Microsoft Dynamics 365 for Finance and Operations oldalain az utasítások elsősorban a műveletpaneleken láthatók, egyrészt az oldal tetején megjelenő normál műveletpanelen, és az oldal különböző szakaszaiban megjelenő eszköztárakon. A korábbi verziókban a billentyűtippek szolgáltatás lehetővé tette a műveletpanel bármely gombjának gyors elérését az Alt billentyű, majd egy betűsorozat lenyomásával. 
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) A Dynamics 365 for Operations jelenlegi verziójában azonban a billentyűtippek funkció már nem érhető el, és a műveletkeresés funkció lépett a helyébe. Ez az új funkció lehetővé teszi, hogy gyorsan megkeressen és működtessen egy gombot bármelyik látható műveleti ablaktáblán.
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) A Dynamics 365 for Finance and Operations jelenlegi verziójában azonban a billentyűtippek funkció már nem érhető el, és a műveletkeresés funkció lépett a helyébe. Ez az új funkció lehetővé teszi, hogy gyorsan megkeressen és működtessen egy gombot bármelyik látható műveleti ablaktáblán.
 
 ## <a name="using-action-search"></a>A műveletkeresés használatával
 A műveletkeresési funkció használatához kövesse az alábbi lépéseket.
@@ -53,7 +54,7 @@ A gomb futtatása után a fókusz visszakerül az utolsó pozícióra az oldalon
 A Ctrl+/ vagy az Alt+Q billentyűkombinációkkal is elindíthatja a műveletkeresést. Nyomja le a billentyűparancsot ismét, hogy visszatérjen a fókusz az utolsó pozícióra az oldalon.
 
 ## <a name="understanding-the-results-list"></a>Az eredménylista ismertetése
-A Dynamics 365 for Operationsben gyakran a gomb helyét és környezetét is ismernünk kell ahhoz, hogy teljesen átlássuk a gomb funkcióját. Ezért az eredménylistában minden elemnél további információk is láthatók, amelyek segítenek megérteni, pontosan mely gombok láthatók a listában. Főként a gomb „elérési útja” jelenik meg. Az elérési út a felhasználói felület következő elemeihez tartozó címkéket tartalmazhatja lényegesként:
+A Finance and Operationsben gyakran a gomb helyét és környezetét is ismernünk kell ahhoz, hogy teljesen átlássuk a gomb funkcióját. Ezért az eredménylistában minden elemnél további információk is láthatók, amelyek segítenek megérteni, pontosan mely gombok láthatók a listában. Főként a gomb „elérési útja” jelenik meg. Az elérési út a felhasználói felület következő elemeihez tartozó címkéket tartalmazhatja lényegesként:
 
 -   Műveleti ablaktábla lap
 -   Gombcsoport
@@ -70,7 +71,7 @@ Az előző példában a műveletkeresési funkció az oldal tetején található
 [![aktuális készlet](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 ## <a name="action-search-vs-navigation-search"></a>Műveletkeresés és navigációs keresés
-A műveletkereséssel műveletek kereshetők meg és futtathatók egy oldalon. Emellett van egy másik keresési funkció is, amellyel oldalak kereshetők és nyithatók meg a Dynamics 365 for Operations rendszerben. Ezen funkcióval kapcsolatos további információk a [Navigációs keresés](navigation-search.md) cikkben találhatók.
+A műveletkereséssel műveletek kereshetők meg és futtathatók egy oldalon. Emellett van egy másik keresési funkció is, amellyel oldalak kereshetők és nyithatók meg a Finance and Operations rendszerben. Ezen funkcióval kapcsolatos további információk a [Navigációs keresés](navigation-search.md) cikkben találhatók.
 
 
 

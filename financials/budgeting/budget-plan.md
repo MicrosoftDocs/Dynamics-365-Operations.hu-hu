@@ -1,9 +1,9 @@
 ---
 title: "Költségvetés-tervezés"
-description: "Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Az oktatóanyag a következő üzleti folyamatokra és feladatokra fektet hangsúlyt: – Szervezeti hierarchia alkotása a költségvetés tervezéshez és a felhasználói biztonság beállítása – Költségvetési tervváltozat, költségvetési terv oszlopok és Excel sablonok tervezése – Költségvetés-tervezési folyamat létrehozása és aktiválása – Költségvetési tervdokumentum létrehozása a főkönyv alapján – Költségvetési tervdokumentum adatok beállítása felosztások használatával – Költségvetési tervdokumentum adatainak szerkesztése Excelben"
+description: "Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition felhasználói számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Az oktatóanyag a következő üzleti folyamatokra és feladatokra fektet hangsúlyt: – Szervezeti hierarchia alkotása a költségvetés tervezéshez és a felhasználói biztonság beállítása – Költségvetési tervváltozat, költségvetési terv oszlopok és Excel sablonok tervezése – Költségvetés-tervezési folyamat létrehozása és aktiválása – Költségvetési tervdokumentum létrehozása a főkönyv alapján – Költségvetési tervdokumentum adatok beállítása felosztások használatával – Költségvetési tervdokumentum adatainak szerkesztése Excelben"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dbe2b386de9e88af354015705e1444987a3f7e82
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Az oktatóanyag a következő üzleti folyamatokra és feladatokra fektet hangsúlyt: – Szervezeti hierarchia alkotása a költségvetés tervezéshez és a felhasználói biztonság beállítása – Költségvetési tervváltozat, költségvetési terv oszlopok és Excel sablonok tervezése – Költségvetés-tervezési folyamat létrehozása és aktiválása – Költségvetési tervdokumentum létrehozása a főkönyv alapján – Költségvetési tervdokumentum adatok beállítása felosztások használatával – Költségvetési tervdokumentum adatainak szerkesztése Excelben 
+Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition felhasználói számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Az oktatóanyag a következő üzleti folyamatokra és feladatokra fektet hangsúlyt: – Szervezeti hierarchia alkotása a költségvetés tervezéshez és a felhasználói biztonság beállítása – Költségvetési tervváltozat, költségvetési terv oszlopok és Excel sablonok tervezése – Költségvetés-tervezési folyamat létrehozása és aktiválása – Költségvetési tervdokumentum létrehozása a főkönyv alapján – Költségvetési tervdokumentum adatok beállítása felosztások használatával – Költségvetési tervdokumentum adatainak szerkesztése Excelben 
 
 <a name="prerequisites"></a>Előfeltételek 
 ------------------
 
-A jelen oktatóanyaghoz a Dynamics 365 for Operations környezetet Contoso bemutatóadatokkal kell elérnie, és a példányra vonatkozóan rendszergazdai hozzáférés szükségessel kell rendelkeznie. Az oktatóanyag kapcsán ne használja a Privát böngészőmód beállítást - szükség esetén jelentkezzen ki az eltérő böngészőfiókból, majd jelentkezzen be a Dynamics 365 for Operations rendszergazdaadatokkal. A Dynamics 365 for Operationsbe történő bejelentkezéskor **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ez az Excel alkalmazáshoz aktuálisan szükséges cookie-t hoz létre. Ha Internet Explorertől eltérő böngészővel bejelentkezik be a Dynamics 365 for Operations rendszerbe, a rendszer arra kéri majd, hogy jelentkezzen be az Excel alkalmazás segítségével. Ha az Excel alkalmazásban a „Bejelentkezés” lehetőségre kattint, megnyílik egy Internet Explorer felugró ablak, a bejelentkezéskor pedig **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ha a „Bejelentkezés” lehetőség bejelölése az Excel alkalmazásban látszólag nem vezet eredményre, akkor törölje az Internet Explorer cookie-gyorsítótárat.
+A jelen oktatóanyaghoz a Finance and Operations környezetet Contoso bemutatóadatokkal kell elérnie, és a példányra vonatkozóan rendszergazdai hozzáférés szükségessel kell rendelkeznie. Az oktatóanyag kapcsán ne használja a Privát böngészőmód beállítást - szükség esetén jelentkezzen ki az eltérő böngészőfiókból, majd jelentkezzen be a Finance and Operations rendszergazdaadatokkal. A Finance and Operationsbe történő bejelentkezéskor **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ez az Excel alkalmazáshoz aktuálisan szükséges cookie-t hoz létre. Ha Internet Explorertől eltérő böngészővel bejelentkezik be a Finance and Operations rendszerbe, a rendszer arra kéri majd, hogy jelentkezzen be az Excel alkalmazás segítségével. Ha az Excel alkalmazásban a „Bejelentkezés” lehetőségre kattint, megnyílik egy Internet Explorer felugró ablak, a bejelentkezéskor pedig **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ha a „Bejelentkezés” lehetőség bejelölése az Excel alkalmazásban látszólag nem vezet eredményre, akkor törölje az Internet Explorer cookie-gyorsítótárat.
 
 ## <a name="scenario-overview"></a>**Eset áttekintése**
 Ágnes a Contoso Szórakozási Rendszerekben (DEMF) pénzügyi vezetőjeként dolgozik Németországban. Közeleg a 2016-os pénzügyi év, és Ágnesnek be kell állítania vállalat jövő évi költségvetését. A költségvetés előkészítése az alábbiak szerint történik:
@@ -148,7 +148,7 @@ A költségvetésiterv-oszlopok a költségvetés-tervezési dokumentum elrendez
 
 [![Automatikus kitöltés](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Térjen vissza a Dynamics 365 for Operationshöz, és frissítse a lapot. A közzétett értékek megjelennek a Dynamics 365 for Operationsben. 
+4.7. Térjen vissza a Finance and Operationshöz, és frissítse a lapot. A közzétett értékek megjelennek a Finance and Operationsben. 
 
 [![Újratöltés](./media/screenshot23.png)](./media/screenshot23.png)
 
@@ -233,7 +233,7 @@ A rendszer átmásolja az előző évi tényadatokat a tárgyévi költségveté
 
 [![Közzététel](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Térjen vissza a költségvetés-tervezési dokumentumhoz a Dynamics 365 for Operations rendszerben. Kattintson a Munkafolyamat &gt; Elküldés elemre a dokumentum automatikus jóváhagyásához
+9.3. Térjen vissza a költségvetés-tervezési dokumentumhoz a Finance and Operations rendszerben. Kattintson a Munkafolyamat &gt; Elküldés elemre a dokumentum automatikus jóváhagyásához
 
 [![Automatikus jóváhagyás](./media/screenshot37.png)](./media/screenshot37.png) 
 

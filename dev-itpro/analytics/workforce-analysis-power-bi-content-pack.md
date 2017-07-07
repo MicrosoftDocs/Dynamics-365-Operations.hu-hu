@@ -1,15 +1,15 @@
 ---
 title: "Munkaerő-mutatók Power BI-tartalom"
-description: "Ez a témakör a következőt ismerteti: Dynamics 365 for Operations - Munkaerő-mutatók Power BI-tartalom. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
-author: twheeloc
+description: "Ez a témakör a Munkaerő-mutatók Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
+author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2a3f611d29e041a5f05e3f93fd2330f4218b9dd1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1f732a53eee17317417058b92706a9228d783cb5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,73 +29,69 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör a **Munkaerő-mutatók** Microsoft Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
-Ez a témakör a következőt ismerteti: Dynamics 365 for Operations - Munkaerő-mutatók Power BI-tartalom. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+A **Munkaerő-mutatók** Power BI-tartalom a **Személyzetkezelés** munkaterületen jelenik meg a következő termékek valamelyikének használatakor:
 
-<a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
---------------------------
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás, 2017. júliusi frissítés
+- Microsoft Dynamics 365 for Talent
 
-A Munkaerő-mutatók tartalomcsomagot a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalomcsomag letöltésére és a Microsoft Dynamics 365 for Operations adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
+Az alábbi táblázat felsorolja az egyes jelentésekben megjelenő mutatókat.
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
-Miután csatlakoztatta a tartalmi csomagot a Dynamics 365 for Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
-
-| Jelentés                                           | Tartalom                                                                                                                                                                                                            |
+| Jelentés                                           | Mutatók                                                                                                                                                                                                            |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Személyzeti mutatók                                   | További jelentések összefoglalása                                                                                                                           |
 | Számláláselemzés – Vállalat, Részleg, Hely | Számlálás vállalat alapján, számlálás részleg alapján, számlálás hely alapján, illetve teljes számlálás                                                                                                                           |
 | Számláláselemzés – munkakör, lépés, vezető            | Számlálás munkakör alapján, számlálás lépés alapján, számlálás vezető alapján, illetve teljes számlálás                                                                                                                                      |
 | Számlálás trendelemzése                         | Számlálás az idei évre vonatkozóan és az elmúlt évre vonatkozóan vállalat szerint, illetve görgetett számlálás az elmúlt 12 hónapra vonatkozóan                                                                                                                        |
-| Munkaerő-demográfia                           | Számlálás életkor és nem szerint, számlálás etnikai hovatartozás szerint, számlálás veterán állapot szerint, számlálás családi állapot szerint, a nappalis diákok száma, átlagos szolgálati idő, átlagos életkor, valamint a női és férfi alkalmazottak aránya |
+| FTE-elemzés                                     | Teljes teljes munkaidőssel egyenértékű dolgozók (FTE), teljes munkaidőssel egyenértékű dolgozók hozzárendelve összesen, teljes munkaidőssel egyenértékű dolgozók részlegenként, teljes munkaidőssel egyenértékű dolgozók az elmúlt 12 hónapban és teljes munkaidőssel egyenértékű dolgozók feladatok szerint |
+| Munkaerő-demográfia                           | Számlálás életkor és nem szerint, számlálás etnikai hovatartozás szerint, számlálás veterán állapot szerint, számlálás családi állapot szerint, a nappalis diákok száma, átlagos szolgálati idő, átlagos életkor, a női és férfi alkalmazottak aránya, valamint az alkalmazottak által beszélt nyelvek |
 | Pozícióelemzés                                | Nyitott beosztások részleg szerint, betöltésre váró beosztások, aktív és inaktív beosztások, illetve beosztások részleg szerint                                                                                                   |
-| Lemorzsolódáselemzés                               | Lemorzsolódás idén és tavaly, lemorzsolódás, a távozó személyek átlagos szolgálati ideje, a távozó személyek átlagos életkora, illetve távozó személyek ok szerint                                                                   |
+| Lemorzsolódáselemzés                               | Lemorzsolódás idén és tavaly, lemorzsolódás, a kilépő alkalmazottak életkor és nem szerint, a távozó személyek átlagos szolgálati ideje, ebben a hónapban kilépő alkalmazottak, illetve távozó személyek ok szerint                                                                   |
 | Személyek részleg szerint                             | Alkalmazottak személyzeti számmal részleg, pozíció, valamint a hozzárendelés kezdő és befejező dátuma szerint                                                                                                                       |
-| Ledolgozott szolgálati idő elemzése                               | A ledolgozott átlagos évek száma vállalat és szolgálati idő listája szerint                                                                                                                                                              |
-| Évfordulók és szolgálati évek               | Alkalmazottak ledolgozott évek szerint, valamint évfordulók                                                                                                                                                                    |
+| Ledolgozott szolgálati idő elemzése                               | Átlagos szolgálati idő, ledolgozott átlagos évek száma vállalat és szolgálati idő listája szerint                                                                                                                                                              |
+| Alkalmazotti évfordulók                           | Évfordulók ebben a hónapban, évfordulók a következő hónap, alkalmazottak ledolgozott évek szerint és évfordulók, szolgálati évek száma részleg szerint                                                                                                                                                                    |
+| Alkalmazottak születésnapjai                               | Születésnapok ebben a hónapban, születésnapok a következő hónapban, alkalmazotti születésnapok, valamint születésnapok hónap és részleg szerint                                                                                                                                                                    |
+| Tömeges felvételi projektek                               | Tömeges felvételi projektek összesen, tömeges felvételi projektek állapot szerint, tömeges felvételi projektek részleg és tulajdonos szerint, tömeges felvételi projektek munkakörönként, valamint tömeges felvételi projektek                                                                                                                                                                    |
 
-Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
+Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
+
+## <a name="extending-the-power-bi-content"></a>Power BI-tartalom kibővítése
+A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban található tartalomcsomagok révén nagyszerű elemzési lehetőségeket nyújthat azoknak a személyeknek, akik nem jelentkeztek be a Finance and Operations szolgáltatásba. Ezek a tartalomcsomagok módosíthatók, hogy más jelentéseket vagy megjelenítéseket is tartalmazhassanak, majd a tartalomcsomagok elemzés céljából közzétehetők a Power BI.com-bérlőjénél.
+
+A **Munkaerő-mutatók** Power BI-tartalmat az LCS Megosztott eszközök könyvtárában találja. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
+
+Ügyeljen arra, hogy azt a **Munkaerő-mutatók** Power BI-tartalmat töltse le, amely a Microsoft Dynamics 365 rendszer ön által használt verziójára vonatkozik.
+
+>[!NOTE]
+>A Lifecycle Services szolgáltatásban rendelkezésre álló .pbix-fájlok csak a Finance and Operations szolgáltatásra érvényesek.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-A Munkaerő-mutatók tartalomcsomag jelentéseinek feltöltésére a Dynamics 365 for Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
+A következő táblázat mutatja az entitásokat, amelyeken a tartalom alapul.
 
-| Entitás                            | Tartalom                                                                                                   | Más entitásokkal való kapcsolatok                                                                                                                                                                                                                                                                                                |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Munkaerő\_CalendarOffset         | Naptáreltolások, részletes jelentések                                                                          | Munkaerő\_PastPositionAssignment Munkaerő\_PositionTrend Workorce\_WorkerTrend Munkaerő\_TerminatedWorker                                                                                                                                                                                                                     |
-| Munkaerő\_Vállalat                | Vállalatok a jelentések szűréséhez                                                                             | Munkaerő\_CurrentCompensation Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                        |
-| Munkaerő\_Kompenzáció           | Fizetési díjalap és időbeli gyakoriság                                                                           | Munkaerő\_CurrentCompensation Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                        |
-| Munkaerő\_CurrentCompensation    | Fizetési díjalap és gyakoriságát az aktuális dátum szerint                                                              | Munkaerő\_Vállalat Munkaerő\_Kompenzáció Munkaerő\_Demográfia Munkaerő\_Feladat Munkaerő\_Beosztás                                                                                                                                                                                                                            |
-| Munkaerő\_CurrentPosition        | Az aktuális dátum szerinti beosztások, teljes munkaidős egyenérték (FTE), nyitott beosztások és betöltésre váró beosztások | Munkaerő\_Feladat Munkaerő\_Beosztás                                                                                                                                                                                                                                                                                               |
-| Munkaerő\_CurrentWorker          | Az aktuális dátum, kor és létszám szerinti dolgozók                                                         | Munkaerő\_Vállalat Munkaerő\_Kompenzáció Munkaerő\_GeographicLocation Munkaerő\_Teljesítmény Munkaerő\_WorkerName Munkaerő\_ReportsToWorkerName Munkaerő\_WorkerTitle Munkaerő\_Demográfia Munkaerő\_Feladat Munkaerő\_Foglalkoztatás Munkaerő\_Beosztás Munkaerő\_WorkerBenefit                                            |
-| Munkaerő\_Dátum                   | Napok, hetek, hónapok és évek                                                                             | Munkaerő\_PastPositionAssignment Munkaerő\_PositionTrend Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                     |
-| Munkaerő\_Demográfia           | Születési idő, nemek, etnikaum és családi állapot                                                   | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Munkaerő\_Foglalkoztatás             | Kezdő dátum, záró dátum és átállási dátum                                                                  | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Munkaerő\_GeographicLocation     | Város, megye, irányítószám és állam vagy megye                                                           | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Munkaerő\_Feladat                    | Funkció, típus és a cím                                                                                  | Munkaerő\_CurrentPosition Munkaerő\_CurrentWorker                                                                                                                                                                                                                                                                              |
-| Munkaerő\_JobPerferredSkill      |                                                                                                            |                                                                                                                                                                                                                                                                                                                                  |
-| Munkaerő\_PastPositionAssignment | Kijelölés oka, kezdő dátum, záró dátum és feladat                                                           | Munkaerő\_CalendarOffset Munkaerő\_Dátum Munkaerő\_Feladat Munkaerő\_Beosztás                                                                                                                                                                                                                                                     |
-| Munkaerő\_Teljesítmény            | Minősítési, leírás és minősítési modell                                                                      | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Munkaerő\_PersonSkill            | Szint és szakértelem                                                                                            | Munkaerő\_Szakértelem                                                                                                                                                                                                                                                                                                                 |
-| Munkaerő\_PersonSkillAnalysis    | Tanúsítva, szint és szakértelem                                                                                | Munkaerő\_Szakértelem munkaerő\_WorkerName                                                                                                                                                                                                                                                                                           |
-| Munkaerő\_Beosztás               | Részleg, FTE, beosztás, beosztás típusa és cím                                                        | Munkaerő\_CurrentPosition Munkaerő\_CurrentWorker                                                                                                                                                                                                                                                                              |
-| Munkaerő\_PositionTrend          | Beosztások az idők során, FTE és feladat                                                                          | Munkaerő\_CalendarOffset Munkaerő\_Dátum Munkaerő\_Feladat Munkaerő\_Beosztás                                                                                                                                                                                                                                                     |
-| Munkaerő\_ReportsToWorkerName    | Keresztnév, vezetéknév és teljes név                                                                       | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Munkaerő\_Szakértelem                  | Szakértelem, szakértelem típusa és minősítés                                                                              | Munkaerő\_PersonSkill munkaerő\_PersonSkillAnalysis                                                                                                                                                                                                                                                                            |
-| Munkaerő\_TerminatedWorker       | Kilépett dolgozók, kiléptetés dátuma, cím, beosztás és feladat                                             | Munkaerő\_Vállalat Munkaerő\_Kompenzáció Munkaerő\_GeographicLocation Munkaerő\_Teljesítmény Munkaerő\_WorkerName Munkaerő\_ReportsToWorkerName Munkaerő\_CalendarOffset Munkaerő\_Dátum Munkaerő\_WorkerTitle Munkaerő\_Demográfia Munkaerő\_Foglalkoztatás Munkaerő\_Feladat Munkaerő\_Beosztás Munkaerő\_WorkerBenefit |
-| Munkaerő\_WorkerBenefit          | Hatálybalépés, juttatási lehetőség, juttatási konstrukció és juttatási típus                                             | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Munkaerő\_WorkerName             | Keresztnév, vezetéknév és teljes név                                                                       | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend Munkaerő\_PersonSkillAnalysis                                                                                                                                                                                                                        |
-| Munkaerő\_WorkerTitle            | Cím és szolgálati idő dátuma                                                                                   | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Munkaerő\_WorkerTrend             | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Munkaerő\_Vállalat Munkaerő\_Kompenzáció Munkaerő\_GeographicLocation Munkaerő\_Teljesítmény Munkaerő\_WorkerName Munkaerő\_ReportsToWorkerName Munkaerő\_CalendarOffset Munkaerő\_Dátum Munkaerő\_WorkerTitle Munkaerő\_Demográfia Munkaerő\_Foglalkoztatás Munkaerő\_Feladat Munkaerő\_WorkerBenefit                     |
+| Entitás                   | Tartalom                                                                            | Más entitásokkal való kapcsolatok |
+|--------------------------|-------------------------------------------------------------------------------------|-----------------------------------|
+| Naptáreltolás          | Naptáreltolások, részletes jelentések                                                   | Korábbi pozíció hozzárendelése, Pozíciótrend, Alkalmazotti trend, Felmondott alkalmazott |
+| Cég                  | Vállalatok a jelentések szűréséhez                                                      | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
+| Aktuális beosztás         | Az aktuális dátum szerinti beosztások, teljes munkaidős egyenérték (FTE), nyitott beosztások és betöltésre váró beosztások | Feladat, pozíció |
+| Aktuális alkalmazott         | Az aktuális dátum, kor és létszám szerinti dolgozók                                  | Vállalat, Földrajzi elhelyezkedés, Alkalmazott neve, Közvetlen felettes, Alkalmazott beosztása, Demográfia, Feladat, Alkalmazás, Beosztás |
+| Dátum                     | Napok, hetek, hónapok és évek                                                      | Korábbi pozíció hozzárendelése, Pozíciótrend, Alkalmazotti trend, Felmondott alkalmazott |
+| Demográfia             | Születési idő, nemek, etnikaum és családi állapot                            | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
+| Alkalmazás               | Kezdő dátum, záró dátum és átállási dátum                                           | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
+| Földrajzi hely      | Város, megye, irányítószám és állam vagy megye                                    | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
+| Munka                      | Funkció, típus és a cím                                                           | Jelenlegi pozíció, jelenlegi alkalmazott |
+| Korábbi betöltött pozíció | Kijelölés oka, kezdő dátum, záró dátum és feladat                                    | Naptár ennyi nappal később,, Dátum, Munkakör, Pozíció |
+| Pozíció                 | Részleg, FTE, beosztás, beosztás típusa és cím                                 | Jelenlegi pozíció, jelenlegi alkalmazott |
+| Pozíciótrend           | Beosztások az idők során, FTE és feladat                                                   | Naptár ennyi nappal később,, Dátum, Munkakör, Pozíció |
+| Közvetlen felettes               | Keresztnév, vezetéknév és teljes név                                                | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
+| Megszüntetett munkaviszonyú alkalmazott      | Kilépett dolgozók, kiléptetés dátuma, cím, beosztás és feladat                      | Vállalat, Földrajzi elhelyezkedés, Alkalmazott neve, Közvetlen felettes, Naptáreltolás, Dátum, Alkalmazott beosztása, Demográfia, Alkalmazás, Feladat, Beosztás |
+| Alkalmazott neve            | Keresztnév, vezetéknév és teljes név                                                | Jelenlegi dolgozó, Felmondott alkalmazott, Alkalmazotti trend |
+| Alkalmazott beosztása           | Cím és szolgálati idő dátuma                                                            | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
+| Alkalmazotti trend           | Túlórázó dolgozók, létszám, vállalat és beosztás                                 | Vállalat, Földrajzi elhelyezkedés, Alkalmazott neve, Közvetlen felettes, Naptáreltolás, Dátum, Alkalmazott beosztása, Demográfia, Alkalmazás, Feladat |
+| Tömeges felvételi projekt        | Tömeges felvételi projektek, projekt tulajdonosa, valamint projekt állapota                     | Vállalat, tömeges felvétel sora |
+| Tömeges felvétel sora           | Részleg, foglalkoztatási típus és beosztás                                           | Dátum, munkakör, tömeges felvételi projekt |
 
-Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. E kiszámított mértékek aztán a fő teljesítménymutatók (KPI-k) és a tartalmi csomagban használt jelentések kiszámításához használatosak. Ha szeretné felvenni a további számításokat a jelentésekbe és irányítópultokba, töltse le és módosítsa a CompensationandBenefits.pbix fájlt a LCS-ből. Ez a fájl azon alapértelmezett adatmodell, amelyet a tartalmi csomag létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
-
-## <a name="additional-resources"></a>További erőforrások
-Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
-
--   [Adatentitások](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
-
-
-
-
+Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. E kiszámított mértékek aztán a fő teljesítménymutatók (KPI-k) és a Power BI-tartalomban használt jelentések kiszámításához használatosak. Ha szeretné felvenni a további számításokat a jelentésekbe és irányítópultokba, töltse le és módosítsa a .pbix-fájlt a LCS-ből. Ez a fájl azon alapértelmezett adatmodell, amelyet a Power BI-tartalom létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
 

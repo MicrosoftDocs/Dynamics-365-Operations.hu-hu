@@ -9,8 +9,8 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 274443
 ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
 ms.search.region: Hungary
@@ -18,10 +18,10 @@ ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0c4f31f0ac00e081ef151e446dc0feebfe0ecf05
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f598a9bc1e57afd49b6c240d53f5d2f5e89130c9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -57,7 +57,7 @@ Tegyük fel, hogy egy tárgyi eszköz a következő jellemzőkkel rendelkezik.
 | Élettartam napokban  | 1826 (= 365 + 365 + 365 + 366 + 365) |
 | Időszak gyakorisága   | Évente                                |
 
-Az éves értékcsökkenési összeg az év naptári napjai alapjul: Értékcsökkenés összege = Beszerzési költség ÷ Napok összesített száma x Az egyes időszakok napjainak száma Az alábbi táblázat a Lineráris (Magyarország) értékcsökkenési módszer számítási eredményeit, összehasonlításképpen pedig a [Lineáris, élettartam szerinti értékcsökkenés](https://ax.help.dynamics.com/en/wiki/straight-line-service-life-depreciation/) számítási eredményeit jeleníti meg.
+Az éves értékcsökkenési összeg az év naptári napjai alapjul: Értékcsökkenés összege = Beszerzési költség ÷ Napok összesített száma x Az egyes időszakok napjainak száma Az alábbi táblázat a Lineráris (Magyarország) értékcsökkenési módszer számítási eredményeit, összehasonlításképpen pedig a [Lineáris, élettartam szerinti értékcsökkenés](../fixed-assets/straight-line-service-life-depreciation.md) számítási eredményeit jeleníti meg.
 
 | Időszak | Napok száma | Lineáris (Magyarország) értékcsökkenés összege | Lineáris, élettartam szerinti értékcsökkenés összege |
 |--------|----------------|-------------------------------------------------|----------------------------------------------------|

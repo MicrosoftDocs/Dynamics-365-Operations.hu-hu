@@ -1,27 +1,29 @@
 ---
 title: "A vásárlói hűségprogramok beállítása"
-description: "Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Operations programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók."
+description: "Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 04521c20ddeca1154b134b23c1db69f45c554ed3
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Operations programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók.
+Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók.
 
 <a name="loyalty-features"></a>Hűségkártya funkciók
 ----------------
@@ -45,7 +47,7 @@ A hűségprogram beállítása lehet, hogy a következők tartoznak:
 -   Manuálisan rendezze a hűségkártyákat vagy vigye át a hűségpontegyenleget egyik kártyáról a másikra ügyfél befogadása vagy jutalmazására céljából.
 
 ## <a name="setting-up-loyalty-programs"></a>Hűségprogramok beállítása
-Néhány összetevőt be kell állítania ahhoz, hogy a Dynamics 365 for Operations - Retail hűségprogram funkcióját engedélyezhesse. A következő ábra bemutatja a hűségprogram összetevőit és azok egymással való kapcsolódását. ![Hűségbeállítás folyamata](./media/loyaltyprocess.gif)
+Néhány összetevőt be kell állítania ahhoz, hogy a Dynamics 365 for Retail hűségprogram funkcióját engedélyezhesse. A következő ábra bemutatja a hűségprogram összetevőit és azok egymással való kapcsolódását. ![Hűségbeállítás folyamata](./media/loyaltyprocess.gif)
 
 ## <a name="loyalty-components"></a>Hűségelemek beállítása
 A következő táblázat minden egyes összetevőt és azok hűségkártyarendszerben használt helyét ismerteti.
@@ -68,7 +70,7 @@ A következő táblázat leírja a folyamatok, amelyeket el kell végezni a hűs
 
 | Feldolgozás neve                         | Leírás                                                                                                                                                                                                                                                                                                                                                                                                    | Lapnév                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (hűségadatok)           | Futtassa ezt a folyamatot a hűségkonfigurációs adatok Microsoft Dynamics 365 for Operations programból a kiskereskedelmi üzletbe történő küldésére. Tanácsos lehet ütemezni a művelet végrehajtásához gyakran úgy, hogy a hűséges adatátvitel összes áruházhoz.                                                                                                                                                                                               | Elosztási ütemezés                |
+| 1050 (hűségadatok)           | Futtassa ezt a folyamatot a hűségkonfigurációs adatok Microsoft Dynamics 365 for Retail programból a kiskereskedelmi üzletbe történő küldésére. Tanácsos lehet ütemezni a művelet végrehajtásához gyakran úgy, hogy a hűséges adatátvitel összes áruházhoz.                                                                                                                                                                                               | Elosztási ütemezés                |
 | Hűségprogramok feldolgozása              | Futtassa ezt a folyamatot a hűségtervek hozzájuk tartozó kiskereskedelmi adatokkal való társításához. Ezt a folyamatot kötegelt folyamatként való ütemezéssel lehet futtatni. Ha módosítja a hűséges konfigurációs adatok, például a hűségprogramok hűségprogramok és a hűségpontok futtatnia kell ezt a folyamatot.                                                                                               | Hűségprogramok feldolgozása              |
 | Offline hűségtranzakciók feldolgozása | Futtassa ezt a folyamatot a hűségkártyák kapcsolat nélküli feldolgozott tranzakciókat is tartalmazó frissítéséhez. Ezt az eljárást csak akkor kell alkalmazni, ha az **Offline pontszerzés** jelölőnégyzet be van jelölve a **Megosztott kiskereskedelmi paraméterek** oldalon, így offline is lehet jutalompontokat szerezni.                                                                                                                                               | Offline hűségtranzakciók feldolgozása |
 | Hűségkártyarétegek frissítése            | Futtassa ezt a folyamatot a vevő jogosultsági szintjének a hűségprogram szintszabályai ellenében történő értékeléséhez és a vevő szintállapotának frissítéséhez. Erre a folyamatra csak akkor van szükség, ha módosítja a hűségprogramok szintszabályait és a frissített szabályokat a már kibocsátott hűségkártyákra visszamenőlegesen kívánja alkalmazni. Ezt a folyamatot kötegelt folyamatként vagy egyes kártyákra futtatható. | Hűségkártyarétegek frissítése            |

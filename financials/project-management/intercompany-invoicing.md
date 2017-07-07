@@ -1,26 +1,26 @@
 ---
 title: "Vállalatközi számlázás"
-description: "Ebben a cikkben tudnivalók és példák találhatóak a Microsoft Dynamics 365 for Operations rendszer projektjeire vonatkozó vállalatközi számlázásról."
+description: "Ebben a cikkben tudnivalók és példák találhatóak a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás rendszer projektjeire vonatkozó vállalatközi számlázásról."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 65c20479af9d2184bd7f3b92f4c0718553425502
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ebben a cikkben tudnivalók és példák találhatóak a Microsoft Dynamics 365 for Operations rendszer projektjeire vonatkozó vállalatközi számlázásról.
+Ebben a cikkben tudnivalók és példák találhatóak a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás rendszer projektjeire vonatkozó vállalatközi számlázásról.
 
 Előfordulhat, hogy a szervezete több osztállyal, leányvállalattal és egyéb jogi személyekkel rendelkezik, amelyek az adott projektekhez egymás között is átadnak termékeket és szolgáltatásokat. *Kölcsönadó jogi személy* a neve azon jogi személynek, aki szolgáltatást vagy terméket nyújt, és *kölcsönbe vevő jogi személy* a neve azon jogi személynek, aki átveszi a szolgáltatást vagy terméket. 
 
@@ -53,7 +53,7 @@ A cél a Költségkontroll, az árbevétel elszámolást, az adók, és transzfe
     -   **Hozzájárulási arány** – Az **Árképzés** mezőben megadott szám a hozzájárulási arány, amelyet az eladási ár százalékaként fejeznek ki.
 
 ## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>1. Példa: A vállalatközi számlázásra vonatkozó paraméterek beállítása
-Ebben a példában az USSI a kölcsönadó jogi személy, és az erőforrásai azon kölcsönbe vevő jogi személy idő jelentése, amelyhez a végső vevővel kötött szerződést tartozik. Az Órák és kiadások, az USSI alkalmazottak jelentését tartalmazhatja a projekt számlázása, amely FRSI-t hoz létre. Ezen kívül van a tranzakcióknak egy harmadik forrása is, amely a kölcsönadó jogi személytől származik (ebben a példában USSI), amikor az biztosítja a megosztott szállítók szolgáltatásait (például FRSI) és azokat a költségeket továbbítja a projektek számára a leányvállalatokon belül. Az összes megfelelő számladokumentum és adó számítását a Dynamics 365 for Operations rendszer végzi el. 
+Ebben a példában az USSI a kölcsönadó jogi személy, és az erőforrásai azon kölcsönbe vevő jogi személy idő jelentése, amelyhez a végső vevővel kötött szerződést tartozik. Az Órák és kiadások, az USSI alkalmazottak jelentését tartalmazhatja a projekt számlázása, amely FRSI-t hoz létre. Ezen kívül van a tranzakcióknak egy harmadik forrása is, amely a kölcsönadó jogi személytől származik (ebben a példában USSI), amikor az biztosítja a megosztott szállítók szolgáltatásait (például FRSI) és azokat a költségeket továbbítja a projektek számára a leányvállalatokon belül. Az összes megfelelő számladokumentum és adó számítását a Dynamics 365 for Finance and Operations rendszer végzi el. 
 
 Ebben a példában az FRSI lehetőségnek kell az USSI jogi személy vevőjének lennie és az USSI lehetőségnek az FRSI jogi személy szállítójának kell lennie. Ezt követően beállíthat egy vállalatközi kapcsolatot a két jogi személy között. A következő eljárás bemutatja,hogy hogyan állíthatja be úgy a paramétereket, hogy mindkét jogi személy szerepeljen a vállalatközi számlázásban.
 

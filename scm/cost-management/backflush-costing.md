@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fb8fa9f5f17b8d658e2d0fea3a9659ab09562611
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -64,11 +64,11 @@ A termelési folyamaton kívül eső termékek esetében az anyagjegyzék-szám�
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>A termelési folyamaton alapuló számítás
 
-A Microsoft Dynamics 365 for Operations lean manufacturing modulja független az útvonalaktól. A termelési folyamatból megadott termékek költségszámítása magán a termelési folyamaton alapulhat. A számítás végrehajtásához előbb egy kanbanszabályt kell létrehozni, amely a terméket a termelési folyamaton kívül adja meg. Ha egy termék több ugyanazon a helyen több termelési folyamatból származhat a számítási dátumon, kiválaszthatja az anyagjegyzék-számítás termelési folyamatát. Az **Alapértelmezett termelési folyamat** lapon beállíthatja az alapértelmezett termelési folyamatot minden egyes cikkhez. Ha ugyanazon termék ugyanazon termelési folyamatánál több, a számítási napon aktív kanbanszabály létezik, a számítás a számításhoz az első aktív kanbanszabályt választja ki.
+A Microsoft Dynamics 365 for Finance and Operations lean manufacturing modulja független az útvonalaktól. A termelési folyamatból megadott termékek költségszámítása magán a termelési folyamaton alapulhat. A számítás végrehajtásához előbb egy kanbanszabályt kell létrehozni, amely a terméket a termelési folyamaton kívül adja meg. Ha egy termék több ugyanazon a helyen több termelési folyamatból származhat a számítási dátumon, kiválaszthatja az anyagjegyzék-számítás termelési folyamatát. Az **Alapértelmezett termelési folyamat** lapon beállíthatja az alapértelmezett termelési folyamatot minden egyes cikkhez. Ha ugyanazon termék ugyanazon termelési folyamatánál több, a számítási napon aktív kanbanszabály létezik, a számítás a számításhoz az első aktív kanbanszabályt választja ki.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Az útvonalon alapuló számítás
 
-Az útvonalon alapuló számítás ugyanolyan érvényes, mint a termelési folyamaton alapuló számítás. Azonban az útvonalon alapuló számítás nem használja a lean manufacturing funkciókra vonatkozó költségszámítást. Az útvonalnak erőforrásigényeket kell használnia az erőforráscsoportok számára. A rendszeres eltérések elkerülése érdekében ugyanazokat a munkacellákat vagy legalább azonos költségkategóriákat kell használnia. Kerülje a beállítási és a mennyiségre vonatkozó költségkategóriákat. Ezek nem segítenek kiszámítani a költséget részletesebb lebontásban, mint a lean manufacturing visszavezetéses költségelszámolás. Annak megállapításához, hogy melyik beállítás (a termelési folyamat vagy az útvonal) segítségével számítja ki a költséget, figyelembe kell venni a költséglebontás eredményeit. A valósághoz közelebb álló és kevesebb eltérést eredményező verzió általában a jobb választás. Lean manufacturing gyártási környezetben, ahol egy terméket egyetlen termelési folyamat és egyetlen kanbanszabály ad meg, a termelési folyamatot alapul vevő számítás valószínűleg pontosabb. Olyan termék esetében, amelyet ugyanazon a helyen lean manufacturing és termelési rendelések is biztosíthatnak, vagy amelyek több termelési folyamattal vagy több kanbanszabállyal rendelkezhetnek ugyanazon folyamaton belül, a számítás valószínűleg pontosabb, ha olyan útvonalverzióra épül, amely kifejezetten a költségszámításon, nem pedig a termelésen alapul. A termelési folyamat kiszámítását kell használni az alvállalkozásba adást érintő termékek kiszámítása esetén. A Microsoft Dynamics 365 for Operations esetében a termelési rendelések alvállalkozói költségmodelljei és a lean manufacturingben történő alvállalkozásba adás két eltérő megközelítés használnak. A lean manufacturing gyártási egy új költségcsoporttípust vezet be: a **Közvetlen kiszervezés** segítségével számítja ki az alvállalkozói szolgáltatásokat.
+Az útvonalon alapuló számítás ugyanolyan érvényes, mint a termelési folyamaton alapuló számítás. Azonban az útvonalon alapuló számítás nem használja a lean manufacturing funkciókra vonatkozó költségszámítást. Az útvonalnak erőforrásigényeket kell használnia az erőforráscsoportok számára. A rendszeres eltérések elkerülése érdekében ugyanazokat a munkacellákat vagy legalább azonos költségkategóriákat kell használnia. Kerülje a beállítási és a mennyiségre vonatkozó költségkategóriákat. Ezek nem segítenek kiszámítani a költséget részletesebb lebontásban, mint a lean manufacturing visszavezetéses költségelszámolás. Annak megállapításához, hogy melyik beállítás (a termelési folyamat vagy az útvonal) segítségével számítja ki a költséget, figyelembe kell venni a költséglebontás eredményeit. A valósághoz közelebb álló és kevesebb eltérést eredményező verzió általában a jobb választás. Lean manufacturing gyártási környezetben, ahol egy terméket egyetlen termelési folyamat és egyetlen kanbanszabály ad meg, a termelési folyamatot alapul vevő számítás valószínűleg pontosabb. Olyan termék esetében, amelyet ugyanazon a helyen lean manufacturing és termelési rendelések is biztosíthatnak, vagy amelyek több termelési folyamattal vagy több kanbanszabállyal rendelkezhetnek ugyanazon folyamaton belül, a számítás valószínűleg pontosabb, ha olyan útvonalverzióra épül, amely kifejezetten a költségszámításon, nem pedig a termelésen alapul. A termelési folyamat kiszámítását kell használni az alvállalkozásba adást érintő termékek kiszámítása esetén. A Microsoft Dynamics 365 for Finance and Operations esetében a termelési rendelések alvállalkozói költségmodelljei és a lean manufacturingben történő alvállalkozásba adás két eltérő megközelítés használnak. A lean manufacturing gyártási egy új költségcsoporttípust vezet be: a **Közvetlen kiszervezés** segítségével számítja ki az alvállalkozói szolgáltatásokat.
 
 ## <a name="material-consumption"></a>Anyagfelhasználás
 Ha az anyagot a készletből használják fel a folyamatban lévő munkában, az anyagköltséget a folyamatban lévő munkához a költségcsoport tényleges elszámolóáras költségével adják hozzá. Ez a művelet a következő feltételek esetén fordul elő:
@@ -85,7 +85,7 @@ A termékek termelési folyamatból történő fogadása a következő feltétel
 A termelési folyamatból érkező termékeket a folyamatban lévő munkából vonják le.
 
 ## <a name="products-in-wip"></a>Befejezetlen termelés termékei
-A Microsoft Dynamics 365 for Operations lean manufacturing befejezetlen termelés típusú modellje lehetővé teszi, hogy a kanban anyagkezelési egység állapota segítségével használja azokat az anyagokat, félkész termékeket és késztermékeket, amelyek a befejezetlen termelés részei.
+A Microsoft Dynamics 365 for Finance and Operations lean manufacturing befejezetlen termelés típusú modellje lehetővé teszi, hogy a kanban anyagkezelési egység állapota segítségével használja azokat az anyagokat, félkész termékeket és késztermékeket, amelyek a befejezetlen termelés részei.
 
 -   **Hozzárendelve** – A kanban tartalmazhat a folyamatban lévő munkában elszámolt felhasznált anyagot.
 -   **Fogadva** – Ha a kanban egy legutóbbi tevékenységre hivatkozik, amelyben a **Készlet frissítése bevételezéskor** beállítása **Nem**, az azt jelenti, hogy egy termék vagy félkész termék olyan teljes anyagkezelési egységének felel meg, amely nincs regisztrálva a készletbe.

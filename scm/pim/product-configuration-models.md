@@ -3,7 +3,7 @@ title: "Termékkonfigurálási modellek áttekintése"
 description: "Ez a cikk a termékkonfigurálási modellekkel kapcsolatos szakkifejezéseket és fogalmakat határozza meg. A termékkonfigurálási modellek általános termékszerkezet felépítését teszik lehetővé, amely számos termékváltozat konfigurálásához használható egyetlen termékhez."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.dyn365.intro: Feb-16
 ms.dyn365.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 30580b059a4c240ad540a9c347b0551df0ab5c02
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1270c35bc7dbe4c85a1aa991a0387b33e1cb6990
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -121,7 +121,7 @@ Ha az attribútum típusa <strong>Logikai</strong>, tartományba eső <strong>Eg
 </tr>
 </tbody>
 </table>
-Egy rendszer által definiált táblamegszorítás egy attribútumtípus és egy mező közötti leképezést jelöl egy Dynamics 365 for Operations táblában. Egy rendszer által meghatározott táblamegszorítás dinamikusan kapcsolja az attribútumtípust a mezőhöz. A kapcsolat lehetővé teszi, hogy egy termékkonfigurációs modell attribútuma a Dynamics 365 for Operations Dynamics 365 tábla mezőjének adatát mutassa.</td>
+Egy rendszer által definiált táblamegszorítás egy attribútumtípus és egy mező közötti leképezést jelöl egy Finance and Operations táblában. Egy rendszer által meghatározott táblamegszorítás dinamikusan kapcsolja az attribútumtípust a mezőhöz. A kapcsolat lehetővé teszi, hogy egy termékkonfigurációs modell attribútuma a Finance and Operations tábla mezőjének adatát mutassa.</td>
 </tr>
 <tr class="odd">
 <td>Számítások</td>
@@ -129,7 +129,7 @@ Egy rendszer által definiált táblamegszorítás egy attribútumtípus és egy
 </tr>
 <tr class="even">
 <td>Részösszetevők</td>
-<td>A részösszetevők a termékkonfigurációs modell fastruktúráját tükrözik. A részösszetevők a termékkonfigurációs modell szerkezetének létrehozásához használhatók. A részösszetevők meglévő összetevőkre hivatkoznak. Emiatt a részösszetevők megkönnyítik az összetevők több termékkonfigurációs modellben való újrafelhasználását. Egy részösszetevőhöz tartozó <strong>Anyagjegyzéksor részletes adatai</strong> oldalon kiválaszthatja a részösszetevő egyedi értékét. Kiválaszthat egy attribútumot is, amelynek értékét a termékkonfigurációs modell beállításánál lehet megadni. Egy termék összetevőként vagy részösszetevőként való befoglalásához a következő adatokat kell megadnia a<strong> Termék létrehozása</strong> képernyőn, amikor létrehozza a terméket:
+<td>A részösszetevők a termékkonfigurációs modell fastruktúráját tükrözik. A részösszetevők a termékkonfigurációs modell szerkezetének létrehozásához használhatók. A részösszetevők meglévő összetevőkre hivatkoznak. Emiatt a részösszetevők megkönnyítik az összetevők több termékkonfigurációs modellben való újrafelhasználását. Egy részösszetevőhöz tartozó <strong>Anyagjegyzéksor részletes adatai</strong> oldalon kiválaszthatja a részösszetevő egyedi értékét. Kiválaszthat egy attribútumot is, amelynek értékét a termékkonfigurációs modell beállításánál lehet megadni. Egy termék összetevőként vagy részösszetevőként való befoglalásához a következő adatokat kell megadnia a <strong>Termék létrehozása</strong> képernyőn, amikor létrehozza a terméket:
 <ul>
 <li>A <strong>Terméktípus</strong> mezőben válassza a <strong>Cikk</strong> lehetőséget.</li>
 <li>A <strong>Termékaltípus</strong> mezőben válassza az <strong>Alaptermék</strong> lehetőséget.</li>

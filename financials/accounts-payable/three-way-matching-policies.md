@@ -3,15 +3,15 @@ title: "Háromirányú egyeztetési irányelvek"
 description: "Ez a cikk a háromirányú egyeztetésről nyújt tájékoztatást."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b9f66a9a907cf01046c78677a3f1d55f112fa8c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8ae07088fec05ad416ce1891dd0d0ecd489364ca
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -66,7 +66,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 1.  Sammy, a Fabrikam bevételezési osztályának dolgozója, kapja meg az összes gépet amit a Contosotól leszállítottak. A termék bevételezésen szereplő mennyiséghez 5-öt ír. mivel a beszerzési rendelés teljesen megérkezett, a beszerzési rendelés változásai állapotot Teljesítettre állítja.
 2.  April, a Fabrikam kötelezettségek koordinátora, belép és érvényesíti a Contoso által kiállított számlát. A következő információkat ellenőrzi:
     -   A háromirányú egyeztetést igénylő eszközök esetén a számlasoron található mennyiséget a kapott mennyiséggel egyezteti. A kapott mennyiség a termék bevételezésen van feltüntetve és egyeztetve van a számlával.
-    -   Azon eszközök esetében, melyek két- vagy háromirányú egyeztetést igényelnek, a számlasoron feltüntetett áraknak a Microsoft Dynamics 365 for Operations által meghatározott tolerancia szinten belül kell lenniük. Ezek a következő típusú áregyeztetéseket jelentik:
+    -   Azon eszközök esetében, melyek két- vagy háromirányú egyeztetést igényelnek, a számlasoron feltüntetett áraknak a Microsoft Dynamics 365 for Finance and Operations Enterprise edition által meghatározott toleranciaszinten belül kell lenniük. Ezek a következő típusú áregyeztetéseket jelentik:
         -   Nettó egységár-egyeztetés – A számlasorban szereplő nettó egységár megegyezik a beszerzési rendelésen feltüntetett egységárral. Ebben a példában a nettó ára tolerancia szintje +8%.
         -   Összár egyeztetés – A számlasorban szereplő nettó ár megegyezik a beszerzési rendelésen feltüntetett nettó árral. A tolerancia szint lehet mérték, százalék vagy mérték és százalék. Ebben a példában az összárak tolerancia szintje + 15%.
 
@@ -79,7 +79,7 @@ A Contosotól kapott papíralapú számla a következő információkat tartalma
 | Adó                         |          |            | 0,00       |
 | Összesen                       |          |            | 44,500.00  |
 
-A Microsoft Dynamics 365 for Operations programban a számlasor a következő információkat tartalmazza.
+A Finance and Operations rendszerben a számlasor a következő információkat tartalmazza.
 
 | Cikkszám                 | Mennyiség | Egységár | Sor nettó összege | Egyeztetési irányelv    | Termékbevételezések mennyiségének egyeztetése | Áregyeztetés | Teljes ár egyeztetése |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -87,7 +87,7 @@ A Microsoft Dynamics 365 for Operations programban a számlasor a következő in
 
 Ez a sor közzé tehető, mivel túl van a számla egyeztetési folyamaton.
 
-## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Példa: Háromirányú egyeztetés cikk és szállító kombinációk esetén
+## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a>Példa: Háromirányú egyeztetés cikk és szállító kombinációk esetén
 Összegzés: Ken a Fabrikam nevű jogi személy testületi vezetőségének az irányítója. Ken úgy dönt, hogy minden beszerzési rendelésen alapuló szállítói számlát egyeztetni kell a beszerzési rendelés sorokkal (kétirányú egyeztetés). Cassie a Fabrikam Malajziai kirendeltségének könyvelője. Ő határozza megy, hogy a bizonyos a kereskedőktől rendelt eszközöknek egyeznie kell mind a beszerzési rendeléssorokkal, mind pedig a termék bevételezési sorokkal (háromirányú egyeztetés). Emellett, megemelheti az egyeztetési irányelvet magasabb egyeztetési szintre a különleges beszerzési rendelések esetében. 
 
 A mennyiség és az összegek alacsonyak és néhány malajziai árus szállítmányaival problémák is voltak. Ezért Cassie bizonyos Malajziai beszerzésű cikkek és azok beszállítóinak ellenőrzési szintjét háromirányú egyeztetésre emelte. 
@@ -115,7 +115,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 1.  A cikkek érkezése. Sammy, a Fabrikam Malajziai bevételezési osztályának dolgozója, munkáját félbeszakítják és ezért nem adja fel a termék bevételezést azonnal.
 2.  April, a Fabrikam kötelezettségek koordinátora, belép és érvényesíti a Contoso által kiállított számlát. A következő információkat ellenőrzi:
     -   A háromirányú egyeztetést igénylő eszközök esetén a számlasoron található mennyiséget a kapott mennyiséggel egyezteti. A kapott mennyiség a termék bevételezésen van feltüntetve és egyeztetve van a számlával.
-    -   Azon eszközök esetében, melyek két- vagy háromirányú egyeztetést igényelnek, a számlasoron feltüntetett áraknak a Microsoft Dynamics 365 for Operations által meghatározott tolerancia szinten belül kell lenniük. Ezek a következő típusú áregyeztetéseket jelentik: Ezek a következő típusú áregyeztetéseket jelentik:
+    -   Azon eszközök esetében, melyek két- vagy háromirányú egyeztetést igényelnek, a számlasoron feltüntetett áraknak a Finance and Operations által meghatározott toleranciaszinten belül kell lenniük. Ezek a következő típusú áregyeztetéseket jelentik: Ezek a következő típusú áregyeztetéseket jelentik:
         -   Nettó egységár-egyeztetés – A számlasorban szereplő nettó egységár megegyezik a beszerzési rendelésen feltüntetett egységárral. Ebben a példában a nettó egységár tolerancia szintje +2%.
         -   Összár egyeztetés – A számlasorban szereplő nettó ár megegyezik a beszerzési rendelésen feltüntetett nettó árral. A tolerancia szint lehet mérték, százalék vagy mérték és százalék. Ebben a példában az összárak tolerancia szintje +10%.
 
@@ -128,7 +128,7 @@ A Contosotól kapott papíralapú számla a következő információkat tartalma
 | USB Meghajtó             | 200      | 10.05      | 2,010.00   |
 | Számla teljes összege         |          |            | 7,092.00   |
 
-A Microsoft Dynamics 365 for Operations programban a számlasor a következő információkat tartalmazza.
+A Finance and Operations rendszerben a számlasor a következő információkat tartalmazza.
 
 | Cikkszám           | Mennyiség | Egységár | Sor nettó összege | Egyeztetési irányelv    | Termékbevételezések mennyiségének egyeztetése | Áregyeztetés | Teljes ár egyeztetése |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|

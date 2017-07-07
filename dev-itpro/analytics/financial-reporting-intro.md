@@ -1,36 +1,36 @@
 ---
-title: "Pénzügyi jelentéskészítés a Dynamics 365 for Operations rendszerben"
-description: "A Pénzügyi jelentéskészítés a Microsoft Dynamics 365 for Operations rendszerben lehetővé teszi üzleti és pénzügyi szakembereknek pénzügyi kimutatások létrehozását, karbantartását, telepítését és megtekintését. A hagyományos jelentési korlátokon túlmenően különböző típusú jelentések hatékony tervezésében nyújt segítséget."
+title: "Finance and Operations – Pénzügyi jelentéskészítés"
+description: "A Pénzügyi jelentéskészítés a Finance and Operations rendszerben lehetővé teszi üzleti és pénzügyi szakembereknek pénzügyi kimutatások létrehozását, karbantartását, telepítését és megtekintését. A hagyományos jelentési korlátokon túlmenően különböző típusú jelentések hatékony tervezésében nyújt segítséget."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: Management Reporter
+ms.search.scope: Management Reporter, UnifiedOperations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 997c34856d2445b02038d208f91522fe7a9a487c
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 4e0c984b95cd395e7ab23394b886782e55fac90f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="financial-reporting-for-dynamics-365-for-operations"></a>Pénzügyi jelentéskészítés a Dynamics 365 for Operations rendszerben
+# <a name="financial-reporting-for-finance-and-operations"></a>Finance and Operations – Pénzügyi jelentéskészítés
 
 [!include[banner](../includes/banner.md)]
 
 
-A Pénzügyi jelentéskészítés a Microsoft Dynamics 365 for Operations rendszerben lehetővé teszi üzleti és pénzügyi szakembereknek pénzügyi kimutatások létrehozását, karbantartását, telepítését és megtekintését. A hagyományos jelentési korlátokon túlmenően különböző típusú jelentések hatékony tervezésében nyújt segítséget.
+A Pénzügyi jelentéskészítés a Finance and Operations rendszerben lehetővé teszi üzleti és pénzügyi szakembereknek pénzügyi kimutatások létrehozását, karbantartását, telepítését és megtekintését. A hagyományos jelentési korlátokon túlmenően különböző típusú jelentések hatékony tervezésében nyújt segítséget.
 
 Pénzügyi jelentéskészítés tartalmazza a dimenzió támogatást. Ezért a számlaszegmensek vagy dimenziók azonnal elérhetők. További eszközök vagy konfigurációs lépések nem szükségesek.
 

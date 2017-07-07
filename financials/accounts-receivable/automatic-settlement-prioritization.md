@@ -3,7 +3,7 @@ title: "Automatikus kiegyenlítés és rangsorolás"
 description: "Ez a cikk bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 890de45f8425bdc59ca2fd2ed8297ab3690cc98d
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 3e2ca11eef4246d5abfd77351325ac2b4440b446
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 Ez a cikk bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
 
-A kifizetések számlákkal, vagy egyéb tranzakciókkal történő kiegyenlítésekor két lehetőség közül választhat. Kiválaszthatja manuálisan a kiegyenlítendő tranzakciókat, vagy a Microsoft Dynamics 365 for Operations automatikusan kiválasztja a tranzakciókat az automatikus kiegyenlítési funkciót alkalmazva. Az automatikus kiegyenlítés feldolgozását testreszabhatja a **Kiegyenlítés rangsorolása** lehetőséggel. Ezek a beállítások részei a kiegyenlítési paraméterek modulnak, amelyek a **Kinnlevőségek paraméterei** lapon vannak meghatározva. A tranzakciók automatikus kiegyenlítési módjai eltérhetnek, attól függően, hogy milyen módszert használ az automatikus kiegyenlítéshez. A következő módszerek állnak rendelkezésre:
+A kifizetések számlákkal, vagy egyéb tranzakciókkal történő kiegyenlítésekor két lehetőség közül választhat. Kiválaszthatja manuálisan a kiegyenlítendő tranzakciókat, vagy a Microsoft Dynamics 365 for Finance and Operations automatikusan kiválasztja a tranzakciókat az automatikus kiegyenlítési funkciót alkalmazva. Az automatikus kiegyenlítés feldolgozását testreszabhatja a **Kiegyenlítés rangsorolása** lehetőséggel. Ezek a beállítások részei a kiegyenlítési paraméterek modulnak, amelyek a **Kinnlevőségek paraméterei** lapon vannak meghatározva. A tranzakciók automatikus kiegyenlítési módjai eltérhetnek, attól függően, hogy milyen módszert használ az automatikus kiegyenlítéshez. A következő módszerek állnak rendelkezésre:
 
 -   Felhasználó által definiált kiegyenlítési rangsor
 -   alapértelmezett automatikus kiegyenlítés

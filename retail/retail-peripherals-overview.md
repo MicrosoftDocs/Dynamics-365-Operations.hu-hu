@@ -1,27 +1,27 @@
 ---
 title: "Kiskereskedelmi perifériák – áttekintés"
 description: "Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat. A perifériák pénztárhoz (POS) való csatlakoztatásának különböző módszereit írja le, valamint az összetevőket, amelyek a POS-kapcsolat kezeléséért felelősek"
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 268444
-ms.assetid: 2ea93e43-8019-49a0-a7f8-325565ebc52d
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9f7c47c3dc22b2f3c2ea08085326be08011eca4e
+ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
+ms.openlocfilehash: 77049ba4c9c39cd44f1919b672deaf700b91357d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -33,16 +33,15 @@ ms.lasthandoff: 05/25/2017
 
 Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat. A perifériák pénztárhoz (POS) való csatlakoztatásának különböző módszereit írja le, valamint az összetevőket, amelyek a POS-kapcsolat kezeléséért felelősek
 
-<a name="concepts"></a>Koncepció
---------
+## <a name="concepts"></a>Koncepció
 
 ### <a name="pos-registers"></a>POS-pénztárgépek
 
-Navigáció: kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárak** gombra. A pénztár (POS) pénztárgép egy entitás, amely egy adott pénztárpéldány jellemzőinek meghatározására szolgál. E jellemzők közé tartozik a pénztárgépen használ perifériák hardverprofilja vagy beállítása, az üzlet, amelyhez a pénztárgép hozzá van rendelve, és a vizuális élménye annak a felhasználónak, aki bejelentkezik a pénztárgépre.
+Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárak** gombra. A pénztár (POS) pénztárgép egy entitás, amely egy adott pénztárpéldány jellemzőinek meghatározására szolgál. E jellemzők közé tartozik a pénztárgépen használ perifériák hardverprofilja vagy beállítása, az üzlet, amelyhez a pénztárgép hozzá van rendelve, és a vizuális élménye annak a felhasználónak, aki bejelentkezik a pénztárgépre.
 
 ### <a name="devices"></a>Eszközök
 
-Navigáció: kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Eszközök** gombra. Egy eszköz egy olyan entitás, amely egy pénztárhoz rendelt eszköz fizikai reprezentációja. Az eszközöket a létrehozásakor a rendszer hozzárendeli egy pénztárgéphez. Az eszköz-entitás nyomon követi a pénztárgép aktiválásáról, a használt klienstípusról, és az eszközre telepített alkalmazáscsomagról szóló információt. Az eszközök a következő alkalmazástípusokhoz rendelhetők hozzá: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, és Retail Modern POS – iOS.
+Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Eszközök** gombra. Egy eszköz egy olyan entitás, amely egy pénztárhoz rendelt eszköz fizikai reprezentációja. Az eszközöket a létrehozásakor a rendszer hozzárendeli egy pénztárgéphez. Az eszköz-entitás nyomon követi a pénztárgép aktiválásáról, a használt klienstípusról, és az eszközre telepített alkalmazáscsomagról szóló információt. Az eszközök a következő alkalmazástípusokhoz rendelhetők hozzá: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, és Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -66,11 +65,11 @@ A pénztárperifériák olyan eszközök, amely kifejezetten a pénztárfunkció
 
 ### <a name="hardware-station"></a>Hardverállomás
 
-Navigáció: kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzletek** &gt; **Minden kiskereskedelmi üzlet** gombra. Válasszon egy üzletet, majd kattintson a **Hardverállomások** gyorslapra. A **Hardverállomás** beállítás csatornaszintű beállítás, amely definiálja azokat a példányokat, ahol telepítve lesz a kiskereskedelmi perifériás logika. Ez a beállítás a csatorna szintjén a hardverállomás jellemzőinek meghatározására szolgál. Emellett azoknak a hardverállomásoknak a listázására is szolgál, amelyek a Modern POS példány rendelkezésére állnak egy adott üzletben. A hardverállomás be van építve a Windows rendszeren futó Modern POS programba. A hardverállomás függetlenül is telepíthető önálló Microsoft Internet Information Services (IIS) programként. Ebben az esetben a hálózaton keresztül érhető el.
+Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzletek** &gt; **Minden kiskereskedelmi üzlet** gombra. Válasszon egy üzletet, majd kattintson a **Hardverállomások** gyorslapra. A **Hardverállomás** beállítás csatornaszintű beállítás, amely definiálja azokat a példányokat, ahol telepítve lesz a kiskereskedelmi perifériás logika. Ez a beállítás a csatorna szintjén a hardverállomás jellemzőinek meghatározására szolgál. Emellett azoknak a hardverállomásoknak a listázására is szolgál, amelyek a Modern POS példány rendelkezésére állnak egy adott üzletben. A hardverállomás be van építve a Windows rendszeren futó Modern POS programba. A hardverállomás függetlenül is telepíthető önálló Microsoft Internet Information Services (IIS) programként. Ebben az esetben a hálózaton keresztül érhető el.
 
 ### <a name="hardware-profile"></a>Hardverprofil
 
-Navigálás: Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítás** &gt; **POS beállítás** &gt; **POS profiloks** &gt; **Hardverprofiloks** elemre. A hardverprofil a pénztárgéphez vagy a hardverállomáshoz konfigurált eszközök listája. A hardverprofil közvetlenül a pénztárgéphez vagy a hardverállomás-profilhoz lehet hozzárendelve.
+Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárprofilok** &gt; **Hardverprofilok** gombra. A hardverprofil a pénztárgéphez vagy a hardverállomáshoz konfigurált eszközök listája. A hardverprofil közvetlenül a pénztárgéphez vagy a hardverállomás-profilhoz lehet hozzárendelve.
 
 ## <a name="devices-classes"></a>Eszközökosztályok
 A pénztárperifériák általában adott osztályokra vannak felosztva. Ez a szakasz a Modern POS által támogatott eszközöket ismerteti, áttekintést nyújtva róluk.
@@ -118,12 +117,12 @@ A fizetési eszközök támogatása a fizetési csatlakozón keresztül valósul
 ## <a name="supported-interfaces"></a>Támogatott interfészek
 ### <a name="opos"></a>OPOS
 
-Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen használható a Microsoft Dynamics 365 for Operations - Retail programmal, a Microsoft Dynamics 365 for Operations - Retail elsődleges kiskereskedelmi periféria platformként az OLE for POS ipari szabványt támogatja. Az OLE for POS szabvány kidolgozója a National Retail Federation (NRF), amely iparági szabvány kommunikációs protokollokat határoz meg a kiskereskedelmiperiféria-eszközök számára. Az OPOS az OLE for POS szabvány széles körben elfogadott implementációja. Az 1990-es évek közepén fejlesztették ki, és azóta többször módosult. Az OPOS eszközillesztőprogram-architektúrát biztosít, amely lehetővé teszi a pénztárhardverek és a Windows-alapú pénztárrendszerek egyszerű integrációját. Az OPOS-vezérlők kezelik a kommunikációt a pénztárszoftver és a kompatibilis hardver között. Az OPOS-vezérlők két részből állnak:
+Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen használható a Microsoft Dynamics 365 for Retail programmal, a Microsoft Dynamics 365 for Retail elsődleges kiskereskedelmi periféria platformként az OLE for POS ipari szabványt támogatja. Az OLE for POS szabvány kidolgozója a National Retail Federation (NRF), amely iparági szabvány kommunikációs protokollokat határoz meg a kiskereskedelmiperiféria-eszközök számára. Az OPOS az OLE for POS szabvány széles körben elfogadott implementációja. Az 1990-es évek közepén fejlesztették ki, és azóta többször módosult. Az OPOS eszközillesztőprogram-architektúrát biztosít, amely lehetővé teszi a pénztárhardverek és a Windows-alapú pénztárrendszerek egyszerű integrációját. Az OPOS-vezérlők kezelik a kommunikációt a pénztárszoftver és a kompatibilis hardver között. Az OPOS-vezérlők két részből állnak:
 
--   **Vezérlőobjektum** – Egy eszközosztály (például sorkijelző) vezérlőobjektuma biztosítja a felületet a program számára. A Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) standardizált OPOS vezérlőobjektum-készletet kínál: ezek közönséges vezérlőobjektumok (CCOs) néven ismertek. A CCO-k segítségével történik a Microsoft Dynamics 365 for Operations - Retail pénztárösszetevőjének tesztelése. Ezért a tesztek segítenek garantálni azt, hogy ha a Microsoft Dynamics 365 for Operations - Retail támogat egy eszközosztályt az OPOS-on keresztül, sokféle eszköztípus támogatható, amennyiben a gyártó biztosít OPOS-hoz készített szolgáltatásobjektumot. Nem kell külön tesztelni minden egyes eszköztípust.
+-   **Vezérlőobjektum** – Egy eszközosztály (például sorkijelző) vezérlőobjektuma biztosítja a felületet a program számára. A Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) standardizált OPOS vezérlőobjektum-készletet kínál: ezek közönséges vezérlőobjektumok (CCOs) néven ismertek. A CCO-k segítségével történik a Microsoft Dynamics 365 for Retail pénztárösszetevőjének tesztelése. Ezért a tesztek segítenek garantálni azt, hogy ha a Microsoft Dynamics 365 for Retail támogat egy eszközosztályt az OPOS-on keresztül, sokféle eszköztípus támogatható, amennyiben a gyártó biztosít OPOS-hoz készített szolgáltatásobjektumot. Nem kell külön tesztelni minden egyes eszköztípust.
 -   **Szolgáltatásobjektum** – A szolgáltatásobjektum biztosítja a kommunikációt a vezérlőobjektum (CCO) és az eszköz között. Általában az eszköz szolgáltatásobjektumát az eszköz gyártója biztosítja. Azonban egyes esetekben előfordulhat, hogy a szolgáltatásobjektumot le kell tölteni a gyártó webhelyéről. Rendelkezésre állhat például egy újabb szolgáltatásobjektum. A gyártó webhelyének címét lásd a hardverdokumentációban.
 
-[![Vezérlőobjektum és szolgáltatásobjektum](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Az OLE for POS pénztárimplementáció támogatása segít garantálni azt, hogy ha az eszközgyártók és a POS-közzétevők helyesen implementálták a szabványt, a pénztárrendszerek és a támogatott eszközök képesek együtt dolgozni, még akkor is, ha korábban nem tesztelték őket együtt. **Megjegyzés:** Az OPOS-támogatás nem garantálja az összes, OPOS-illesztőprogrammal rendelkező eszköz támogatását. A Microsoft Dynamics 365 for Operations - Retail programnak először támogatnia kell az adott eszköztípust vagy -osztályt az OPOS-on keresztül. Ezenkívül a szolgáltatásobjektumok nem mindig naprakészek a CCO-k a legújabb verziójával. Tudatában kell lennie annak, hogy általánosságban a szolgáltatásobjektumok minősége vegyes.
+[![Vezérlőobjektum és szolgáltatásobjektum](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Az OLE for POS pénztárimplementáció támogatása segít garantálni azt, hogy ha az eszközgyártók és a POS-közzétevők helyesen implementálták a szabványt, a pénztárrendszerek és a támogatott eszközök képesek együtt dolgozni, még akkor is, ha korábban nem tesztelték őket együtt. **Megjegyzés:** Az OPOS-támogatás nem garantálja az összes, OPOS-illesztőprogrammal rendelkező eszköz támogatását. A Microsoft Dynamics 365 for Retail programnak először támogatnia kell az adott eszköztípust vagy -osztályt az OPOS-on keresztül. Ezenkívül a szolgáltatásobjektumok nem mindig naprakészek a CCO-k a legújabb verziójával. Tudatában kell lennie annak, hogy általánosságban a szolgáltatásobjektumok minősége vegyes.
 
 ### <a name="windows"></a>Windows
 
@@ -133,7 +132,7 @@ A nyugtanyomtatás a pénztárban az OPOS-ra van optimalizálva. Az OPOS által�
 -   A nyomtatón keresztül csatlakoztatott („láncba kötött”) eszközök nem feltétlenül működnek megfelelően a Windows-illesztőprogramok használatakor. Például lehetséges, hogy nem nyílik ki a pénztárfiók, vagy az elismervénynyomtató nem a várt módon működik.
 -   Az OPOS emellett változók szélesebb körét támogatja, amelyeket kifejezetten a kiskereskedelmi nyugtanyomtatókhoz terveztek: ilyen például a papírvágás vagy az elismervénynyomtatás.
 
-Ha OPOS-vezérlők érhetők el a Windows-nyomtatóhoz, amelyet használ, a nyomtatónak még mindig gond nélkül működnie a Microsoft Dynamics 365 for Operations - Retail programmal.
+Ha OPOS-vezérlők érhetők el a Windows-nyomtatóhoz, amelyet használ, a nyomtatónak még mindig gond nélkül működnie a Microsoft Dynamics 365 for Retail programmal.
 
 ### <a name="universal-windows-platform"></a>Univerzális Windows-platform
 
@@ -323,7 +322,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <td>OPOS</td>
 </tr>
 <tr class="odd">
-<td>Fizető terminál </td>
+<td>Fizető terminál</td>
 <td><ul>
 <li>Egyéni eszközök támogatása</li>
 <li>Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</li>
@@ -407,7 +406,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 <td>OPOS</td>
 </tr>
 <tr class="even">
-<td>Fizető terminál </td>
+<td>Fizető terminál</td>
 <td><ul>
 <li>Egyéni eszközök támogatása</li>
 <li>Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</li>
@@ -463,7 +462,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Fizető terminál </td>
+<td>Fizető terminál</td>
 <td><ul>
 <li>Egyéni eszközök támogatása</li>
 <li>Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</li>
@@ -473,7 +472,7 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguráció a támogatott forgatókönyvekhez
-A hardverprofilok létrehozásával kapcsolatos további tudnivalókért lásd: [Csatorna-ügyfélprogramok meghatározása és fenntartása, köztük a nyilvántartásokkal és hardverállomásokkal](define-maintain-channel-clients-registers-hw-stations.md). **Megjegyzés:** A Microsoft Dynamics 365 for Operations 1611-es verziója esetében a hardverállomás-profil már nem használatos. A hardverállomás-profilban korábban beállított attribútumok most már a hardverállomás részét képezik.
+A hardverprofilok létrehozásával kapcsolatos további tudnivalókért lásd: [Csatorna-ügyfélprogramok meghatározása és fenntartása, köztük a nyilvántartásokkal és hardverállomásokkal](define-maintain-channel-clients-registers-hw-stations.md). **Megjegyzés:** A Microsoft Dynamics 365 for Retail 1611-es verziója esetében a hardverállomás-profil már nem használatos. A hardverállomás-profilban korábban beállított attribútumok most már a hardverállomás részét képezik.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS for Windows IPC (beépített) hardverállomással
 
@@ -482,7 +481,7 @@ Ez a konfigurációban a leggyakoribb konfiguráció a hagyományos, rögzített
 1.  Hozzon létre egy hardverprofilt, amelyben minden szükséges periféria konfigurálva van.
 2.  Képezze le a hardverprofilt a pénztárgépre.
 3.  Hozzon létre egy **Dedikált** típusú hardverállomást a kiskereskedelmi üzlethez, ahol a pénztárgépet használni fogja. A leírás opcionális. **Megjegyzés:** A hardverállomás többi tulajdonságát nem kell beállítani. Minden más szükséges információ, például a hardverprofil, a pénztárgépből származik.
-4.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
+4.  Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 5.  Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
 6.  Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
 7.  Telepítse és aktiválja a Modern POS for Windows alkalmazást.
@@ -501,7 +500,7 @@ Ez a konfiguráció minden Modern POS ügyféllel használható, amelynek olyan 
     -   **EFT pénztárszám** – Az EFT-terminálazonosító, amelyet az EFT-engedélyek küldésekor kell használni. Ezt az azonosítót a hitelkártya-feldolgozó biztosítja.
     -   **Csomag neve** – A hardverállomás telepítésekor használandó hardverállomás-csomag.
 
-4.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
+4.  Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 5.  Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
 6.  Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
 7.  Telepítse a hardverállomást. A hardverállomás telepítésével kapcsolatos további tudnivalókért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).
@@ -524,12 +523,12 @@ Ez a konfiguráció minden olyan Modern POS-ügyfél esetében használható, am
     -   **Állomásnév** – Annak a gazdaszámítógépnek a neve, ahol a hardverállomás futni fog.
     -   **Leírás** – Szöveg, amely segít azonosítani a hardverállomást, például **Visszáruk** vagy **Üzlet front**.
     -   **Port** – A hardverállomás portja, amellyel a Modern POS-ügyféllel kommunikál.
-    -   **Hardverprofil** – A megosztott hardverállomások esetében minden hardverállomásnak rendelkeznie kell egy hardverprofillal. A hardverprofilok megoszthatók a hardverállomások között, de hozzá kell rendelni őket minden egyes hardverállomáshoz. Ezen kívül megosztott műszakok használatát javasoljuk, ha ugyanazt a megosztott hardverállomást több eszköz használja. A megosztott műszak beállításához kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítás** &gt; **POS beállítás** &gt; **POS profilok** &gt; **Hardverprofilok** elemre. Minden megosztott hardverprofil esetében válassza ki a pénztárfiókot, és állítsa a **Megosztott műszakfiók** beállítást **Igen** értékre.
+    -   **Hardverprofil** – A megosztott hardverállomások esetében minden hardverállomásnak rendelkeznie kell egy hardverprofillal. A hardverprofilok megoszthatók a hardverállomások között, de hozzá kell rendelni őket minden egyes hardverállomáshoz. Ezen kívül megosztott műszakok használatát javasoljuk, ha ugyanazt a megosztott hardverállomást több eszköz használja. A megosztott műszak beállításához kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárprofilok** &gt; **Hardverprofilok** elemre. Minden megosztott hardverprofil esetében válassza ki a pénztárfiókot, és állítsa a **Megosztott műszakfiók** beállítást **Igen** értékre.
     -   **EFT pénztárszám** – Az EFT-terminálazonosító, amelyet az EFT-engedélyek küldésekor kell használni. Ezt az azonosítót a hitelkártya-feldolgozó biztosítja.
     -   **Csomag neve** – A hardverállomás telepítésekor használandó hardverállomás-csomag.
 
 4.  Az üzletben szükséges minden további hardverállomás esetében ismételje meg a 2. és 3. lépést.
-5.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
+5.  Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 6.  Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
 7.  Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
 8.  Telepítse a hardverállomás minden, a 2. és 3. lépésben beállított gazdagépen. A hardverállomás telepítésével kapcsolatos további tudnivalókért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).
@@ -542,7 +541,7 @@ Ez a konfiguráció minden olyan Modern POS-ügyfél esetében használható, am
 14. Jelölje ki a használni kívánt hardverállomást, majd kattintson a **Párosítás** elemre.
 15. Minden, a Modern POS által használt hardverállomás esetében ismételje meg a 14. lépést.
 16. Miután minden szükséges hardverállomás párosítva van, kattintson a **Bezárás** lehetőségre.
-17. A hardverállomás kiválasztása lapon kattintson a legutóbb kijelölt hardverállomásra az aktiválásához. **Megjegyzés:** Ha az eszközök gyakran használnak különböző hardverállomásokat, a Modern POS alkalmazást ajánlott úgy beállítani, hogy a hardverállomás kiválasztását kérje a pénztárosoktól a fizetési folyamat kezdetén. Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárgépek** lehetőségekre. Jelölje ki a pénztárgépet, és állítsa be a **Kiválasztás fizetéskor** opciót az **Igen** értékre. Használja a **1090** elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba.
+17. A hardverállomás kiválasztása lapon kattintson a legutóbb kijelölt hardverállomásra az aktiválásához. **Megjegyzés:** Ha az eszközök gyakran használnak különböző hardverállomásokat, a Modern POS alkalmazást ajánlott úgy beállítani, hogy a hardverállomás kiválasztását kérje a pénztárosoktól a fizetési folyamat kezdetén. Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Jegyzékek** lehetőségekre. Jelölje ki a pénztárgépet, és állítsa be a **Kiválasztás fizetéskor** opciót az **Igen** értékre. Használja a **1090** elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba.
 
 ## <a name="extensibility"></a>Bővíthetőség
 A hardverállomás bővítési forgatókönyveivel kapcsolatos információért lásd: [Hardverállomás-bővíthetőség](dev-itpro/hardware-station-extensibility.md).
@@ -575,7 +574,7 @@ Az aktuális biztonsági normáknak megfelelően az alábbi beállításokat kel
 **Megjegyzés:** Nagyon fontos az IIS biztonsági irányelvek és a Payment Card Industry (PCI) követelmények áttekintése.
 
 ## <a name="peripheral-simulator"></a>Perifériaszimulátor
-Információért lásd: [Kiskereskedelmi perifériás szimulátor](retail-peripheral-simulator.md).
+Információért lásd: [Kiskereskedelmi perifériás szimulátor](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsofttested-peripheral-devices"></a>Microsoft által tesztelt perifériaeszközök
 ### <a name="ipc-built-in-hardware-station"></a>IPC (beépített) hardverállomás
@@ -609,7 +608,7 @@ A következő perifériákat a Modern POS for Windows beépített IPC-hardverál
 |--------------|--------|-----------|-------------------------------------------------|
 | VeriFone     | 1000SE | OPOS      | A fizetési csatlakoztató testreszabását igényli |
 
-#### <a name="payment-terminal"></a>Fizető terminál 
+#### <a name="payment-terminal"></a>Fizető terminál
 
 | Gyártó | Típus | Interfész | Megjegyzések                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -682,7 +681,7 @@ A következő perifériákat dedikált (nem megosztott) IIS-hardverállomás has
 |--------------|--------|-----------|-------------------------------------------------|
 | VeriFone     | 1000SE | OPOS      | A fizetési csatlakoztató testreszabását igényli |
 
-#### <a name="payment-terminal"></a>Fizető terminál 
+#### <a name="payment-terminal"></a>Fizető terminál
 
 | Gyártó | Típus | Interfész | Megjegyzések                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -740,7 +739,7 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
 | Star         | TSP100   | OPOS      | TSP650II-illesztőprogramokat igényel |
 | HP           | F7M67AA  | OPOS      | Tápellátású USB               |
 
-#### <a name="payment-terminal"></a>Fizető terminál 
+#### <a name="payment-terminal"></a>Fizető terminál
 
 | Gyártó | Típus | Interfész | Megjegyzések                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -785,7 +784,7 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
 -   Ha a kiskereskedelmi periférián több pénztáreszköz osztozik, győződjön meg arról, hogy a következő kategóriák valamelyikébe tartozik:
     -   Pénzfiók
     -   Nyugtanyomtató
-    -   Fizető terminál 
+    -   Fizető terminál
 
     Ha a periféria nem tartozik egyik fenti kategóriába sem, a hardverállomás nem teszi lehetővé a periféria megosztását több pénztáreszköz között.
 -   Néha az eszköz-illesztőprogramok okozzák azt, hogy a Common Control Object (CCO) összetevők nem működnek megfelelően. Ha az eszközt nemrégiben telepítették, de nem működik megfelelően, vagy más problémák merülnek fel, gyakran megoldhatja a problémát a CCO-k újratelepítésével. A CCO-k letöltéséhez látogasson el a <http://monroecs.com/oposccos_current.htm> webhelyre.
@@ -806,7 +805,7 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
 <a name="see-also"></a>Lásd még
 --------
 
-[Kiskereskedelmiperiféria-szimulátor](retail-peripheral-simulator.md)
+[Kiskereskedelmiperiféria-szimulátor](dev-itpro/retail-peripheral-simulator.md)
 
 
 

@@ -3,14 +3,14 @@ title: "Készletkötegek egyesítése"
 description: "Ez a cikk a két vagy több készletköteg egyesített köteggé történő összevonásáról nyújt tájékoztatást."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e97257955f4f8fa86c8bf957a182aa71d4fbc8ef
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: aec97976ef6a2b4c66118289f7f76b14351456f8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -91,7 +91,7 @@ Nem, csak azokat a kötegeket lehet egyesíteni, amelyek ugyanazon a webhelyen v
 Ne, csak a kötegek teljes mennyiségét egyesítheti. A kötegegyesítés funkcióit készletfunkcióként alkalmazzák, és nem pedig termelési funkcióként.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Mi történik, ha a kötegek különböző kötegattribútum-értékekkel rendelkeznek?
-Amikor kiválasztja a forráskötegeket az egyesített kötegekben történő kombináláshoz, a Microsoft Dynamics 365 for Operations ellenőrzi, hogy az összeg köteg rendelkezik-e jellemzőkkel vagy attribútumértékekkel. Amikor az attribútumértékek megegyeznek, javasolnak egy értéket az egyesített köteghez. Ez az érték módosítható. A nem azonos attribútum értékek az egyesített kötegre vonatkozó üres mezők, és azoknak az értékeit manuálisan lehet megadni. Ha az attribútum értékre vonatkozó kötegattribútum típusa egy egész vagy egy tört szám, és az érték nem azonos az összes forráskötegre vonatkozóan, akkor az értéket egy súlyozott átlagszámítás segítségével számítják ki. A kiszámított értéket felfelé vagy lefelé lesz kerekítve a legközelebbi növekményre. Ha az érték üres a forráskötegben, a köteg és a mennyisége nem szerepel a számításban. **Példa** A következő példa bemutatja az egyesített kötegre vonatkozó súlyozott átlag számítását. A forráskötegek közül kettő rendelkezik üres értékkel egy olyan kötegattribútum típussal, amely egész. A következő attribútum van a forráskötegekhez rendelve.
+Amikor kiválasztja a forráskötegeket az egyesített kötegekben történő kombináláshoz, a Finance and Operations ellenőrzi, hogy az összeg köteg rendelkezik-e jellemzőkkel vagy attribútumértékekkel. Amikor az attribútumértékek megegyeznek, javasolnak egy értéket az egyesített köteghez. Ez az érték módosítható. A nem azonos attribútum értékek az egyesített kötegre vonatkozó üres mezők, és azoknak az értékeit manuálisan lehet megadni. Ha az attribútum értékre vonatkozó kötegattribútum típusa egy egész vagy egy tört szám, és az érték nem azonos az összes forráskötegre vonatkozóan, akkor az értéket egy súlyozott átlagszámítás segítségével számítják ki. A kiszámított értéket felfelé vagy lefelé lesz kerekítve a legközelebbi növekményre. Ha az érték üres a forráskötegben, a köteg és a mennyisége nem szerepel a számításban. **Példa** A következő példa bemutatja az egyesített kötegre vonatkozó súlyozott átlag számítását. A forráskötegek közül kettő rendelkezik üres értékkel egy olyan kötegattribútum típussal, amely egész. A következő attribútum van a forráskötegekhez rendelve.
 
 | Attribútum | Minimum | Növelés | Maximum |
 |-----------|---------|-----------|---------|

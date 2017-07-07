@@ -1,15 +1,15 @@
 ---
 title: "Beszerzési kiadások elemzése Power BI-tartalom"
-description: "Ez a témakör leírja, hogy mi szerepel a Microsoft Power BI beszerzési kiadások elemzése tartalomcsomagjában. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
-author: YuyuScheller
+description: "Ez a témakör a Beszerzési kiadások elemzése Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a tartalomban szereplő jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+author: FrankDahl
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ad0ee95113d05710cccc1a5e9d215b38244c2047
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: daba17aed7e6cc475a16d6100c5c99ee747ca048
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,23 +29,22 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör a **Beszerzési kiadások elemzése** Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
-Ez a témakör leírja, hogy mi szerepel a Microsoft Power BI beszerzési kiadások elemzése tartalomcsomagjában. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+## <a name="overview"></a>Áttekintés
 
-<a name="overview"></a>Áttekintés
---------
-
-A Microsoft Power BI Beszerzési kiadások elemzése tartalomcsomagja a beszerzési menedzserek, valamint a költségvetésekért felelős vezetők számára készült. Célja az, hogy segítse őket a beszerzési kiadások ellenőrzés alatt tartásában. A Microsoft Dynamics 365 for Operations beszerzési tranzakciós adatait használja, és egyrészt összesített adatokat nyújt a vállalati szintű beszerzési számokról, másrészt a kiadások szállító és termék szerinti lebontását kínálja. A jelentések kiemelik a beszerzési kiadások időbeli változásait. Ezért riasztásokat jelezhetnek a menedzserek számára a kiadások pozitív és negatív trendjeiről az egyes szállítókra és termékekre nézve. Diagramok jelenítik meg a beszerzési kiadásokat a különböző beszerzési kategóriákra és szállítói csoportokra nézve. A kategória- és regionális vezetők számára hasznosak lehetnek ezek a diagramok, segítséget nyújtva a kiadások viselkedési változásainak azonosításához. A tartalomcsomag segítségével a beszerzési menedzserek és a költségvetésekért felelős vezetők a következő módokon elemezheti a beszerzési kiadásokat:
+A **Beszerzési kiadások elemzése** Power BI-tartalom a beszerzési vezetők és olyan vezetők segítségével készült, akik a beszerzési kiadások költségvetéésért felelősek. A vezetők az alábbi módokon elemezhetik a beszerzési költségeket:
 
 -   Az év megadott napjáig tartó beszerzések (szállítói csoport és az egyes szállítók , beszerzési kategória és egyes termékek, valamint a szállító helye szerint)
 -   Egy éves időszak beszerzési változásai (szállítói csoport és a beszerzési kategória szerint)
 
-## <a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
-A beszerzési kiadások elemzése tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) végrehajtási eszközeként van közzétéve, és a Microsoft Dynamics 365 for Operations programból férhető hozzá. A Power BI jelentések elérésével és megnyitásával kapcsolatos további tudnivalókért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
-Megjegyzés: A KB 4011327 ezen Power BI-tartalom előfeltétele. A Lifecycle Servicesbe való bejelentkezést követően itt férhet hozzá a tudásbázishoz: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+A tartalom beszerzési tranzakciós adatokat használ, és egyrészt összesített adatokat nyújt a vállalati szintű beszerzési számokról, másrészt a kiadások szállító és termék szerinti lebontását kínálja. A jelentések kiemelik a beszerzési kiadások időbeli változásait. Ezért a jelentések riasztásra használhatók a menedzserek számára a kiadások pozitív és negatív trendjeiről az egyes szállítókra és termékekre nézve. Ezenkívül diagramok jelenítik meg a beszerzési kiadásokat a különböző beszerzési kategóriákra és szállítói csoportokra nézve. Ezért a kategória- és regionális vezetők a diagramok segítségével a kiadások viselkedési változásait azonosíthatják.
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott metrikák
-A beszerzési kiadások elemzése tartalomcsomag tartalmaz egy jelentést, amely metrikák készletéből áll. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. Az alábbi táblázatban a tartalomcsomag megjelenítési formáinak áttekintése található.
+## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését használja, a **Beszerzési kiadások elemzése** Power BI-tartalom a **Beszerzési és ráfordítási elemzés** (**Beszerzés és forrás** > **Lekérdezések és jelentések** > **Beszerzési teljesítményelemzés** > **Beszerzési és ráfordítási elemzés**) lap található. 
+
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
+A **Beszerzési kiadások elemzése** Power BI-tartalom tartalmaz egy jelentést, amely metrikák készletéből áll. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. Az alábbi táblázat tartalmazza a megjelenítések áttekintését.
 
 <table>
 <colgroup>
@@ -131,16 +130,28 @@ A beszerzési kiadások elemzése tartalomcsomag tartalmaz egy jelentést, amely
 </tbody>
 </table>
 
-\*Erre az évre és az előző évre eső beszerzés, és növekedés beszerzési kategória szerint
+\* Erre az évre és az előző évre eső beszerzés, és növekedés beszerzési kategória szerint
+
+## <a name="extending-the-power-bi-content"></a>Power BI-tartalom kibővítése
+A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban található tartalomcsomagok révén nagyszerű elemzési lehetőségeket nyújthat azoknak a személyeknek, akik nem jelentkeztek be a Microsoft Dynamics 365 szolgáltatásba. Ezek a tartalomcsomagok módosíthatók, hogy más jelentéseket vagy megjelenítéseket is tartalmazhassanak, majd a tartalomcsomagok elemzés céljából közzétehetők a Power BI.com-bérlőjénél. 
+
+A **Beszerzési kiadások elemzése** Power BI-tartalmat az LCS Megosztott eszközök könyvtárában találja. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
+
+Ügyeljen arra, hogy azt a **Beszerzési kiadások elemzése** tartalmat töltse le, amely a Dynamics 365 ön által használt verziójára vonatkozik.
+
+> [!NOTE]
+> Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 1611-es verzióját használja, a KB 4011327 a Power BI-tartalom előfeltétele. A Lifecycle Services szolgáltatásba való bejelentkezést követően itt férhet hozzá a tudásbázishoz: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="data-model-and-entities"></a>Adatmodell és entitások
-A Beszerzési kiadások elemzése tartalomcsomag jelentése a Dynamics 365 for Operations adatait használja. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL-adatbázis. Az entitástárolóval kapcsolatos további információért lásd: [A Power BI és az entitástár integrálása a Dynamics programban](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blogbejegyzést. A tartalomcsomag összesítő mértékek a következőkben rendelkezésre álló összesítő mértékek részhalmazát alkotják: Purchase Cube in Microsoft Dynamics AX 2012 és Microsoft Dynamics AX 2012 R3. A kocka összesítő mértékeinek előkészítéséhez az entitástárban, a mértékeket központilag telepíthetővé kell tenni. További információért lásd a következő blogbejegyzést az összesítő mértékek előkészítésének eljárásáról az entitástárban: [A Power BI és az entitástár integrálása a Dynamics programban](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). A következő kulcs összesítő mértékek közvetlenül a számla sorai entitásból érhetők el, és a tartalomcsomag alapjául szolgálnak.
+A **Beszerzési kiadások elemzése** Power BI-tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
 
-| Entitás        | Kulcs összesítő mértékek | A Dynamics 365 for Operations adatforrása | Mező              | Leírás                           |
-|---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
-| Számlasorok | Beszerzés                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Összeg a könyvelési pénznemben |
+A tartalom összesítő mértékek a következőkben rendelkezésre álló összesítő mértékek részhalmazát alkotják: Purchase Cube in Microsoft Dynamics AX 2012 és Microsoft Dynamics AX 2012 R3. A kocka összesítő mértékeinek előkészítéséhez az entitástárban, a mértékeket központilag telepíthetővé kell tenni. További információért lásd a következő blogbejegyzést az összesítő mértékek előkészítésének eljárásáról az entitástárban: [A Power BI és az entitástár integrálása a Dynamics programban - áttekintés](power-bi-integration-entity-store.md). A következő kulcs összesítő mértékek közvetlenül a számla sorai entitásból érhetők el, és a tartalom alapjául szolgálnak.
 
-Az alábbi táblázat a kulcs mértékeket mutatja, amelyeknek a kiszámítása a tartalomcsomagban történik a számla sorai entitásból.
+| Entitás        | Kulcs összesítő mértékek | Adatforrás                                 | Mező              | Leírás                            |
+|---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
+| Számlasorok | Beszerzés                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Összeg a könyvelési pénznemben. |
+
+Az alábbi táblázat a kulcs mértékeket mutatja, amelyeknek a kiszámítása a tartalomban történik a számla sorai entitásból.
 
 | Méret               | Számítás                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
@@ -148,7 +159,7 @@ Az alábbi táblázat a kulcs mértékeket mutatja, amelyeknek a kiszámítása 
 | Tavalyi év beszerzései    | Tavalyi év beszerzései = CALCULATE(SUM('Számlasorok'\[Beszerzés\]), SAMEPERIODLASTYEAR(Dátumok\[Dátum\])) |
 | Egy éves időszak beszerzési növekedése   | Egy éves időszak beszerzési növekedése = \[Aktuális év beszerzései\] – \[Tavalyi év beszerzései\]                            |
 
-A tartalomcsomagban a következő fő dimenziók szolgálnak szűrőként az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
+A tartalomban a következő fő dimenziók szolgálnak szűrőként az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
 
 | Entitás                 | Példák az attribútumok                                |
 |------------------------|-------------------------------------------------------|
@@ -158,17 +169,5 @@ A tartalomcsomagban a következő fő dimenziók szolgálnak szűrőként az ös
 | Jogi személyek         | Jogi személy neve                                     |
 | Dátumok                  | Dátumok, Év eltolása                                    |
 
-Alapértelmezés szerint a tartalomcsomag a folyó naptári év adatait jeleníti meg. Azonban módosíthatja a dátumszűrőt a jelentésszűrők szakaszban. A vállalatszűrőt is módosíthatja.
-
-## <a name="additional-resources"></a>További erőforrások
-Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
-
--   [Adatentitások](..\data-entities\data-entities.md)
--   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](configure-power-bi-integration.md)
-
-
-
-
+Alapértelmezés szerint a tartalom a folyó naptári év adatait jeleníti meg. Azonban módosíthatja a dátumszűrőt a jelentésszűrők szakaszban. A vállalatszűrőt is módosíthatja.
 

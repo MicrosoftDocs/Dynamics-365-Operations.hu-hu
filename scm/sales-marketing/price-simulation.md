@@ -1,9 +1,9 @@
 ---
 title: "Árszimuláció"
-description: "Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat. "
+description: "Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 293f09ca8758c0b1a66614eb9c75ca266b044fe7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat. 
+Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat.
 
 Az ajánlatok árszimulációja új végösszeget vagy sor szintű összeget jelenít meg vagy specifikus sorösszeget hoz létre egy külső ajánlathoz egy meglévő ajánlathoz egy javasolt új ár alapján. Az árszimuláció megmutathatja az új mennyiséget egy adott sorban, amelyet egy létező árajánlatban hoztak létre. Megadhatja az árszimulációt és később alkalmazhatja. Vagy csak később alkalmazza, vagy pedig választhatja az eredeti ajánlat használatát árszimuláció nélkül, és további változtatásokat hajthat végre, miközben a vevővel végighalad az értékesítési folyamaton.  
 
@@ -54,7 +54,7 @@ Hogy az engedmények és árak kiszámítása mindig pontosan menjen végbe, az 
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Kedvezmények típusai a kereskedelmi megállapodásokban
 
-A kereskedelmi megállapodásoknak a Microsoft Dynamics 365 for Operations rendszerben négy típusú árengedménye lehet. Ezek az engedmények különböző cikkekre, vevőkre vagy árcsoportokra lehetnek beállítva, és időben korlátozhatók. Téves számítások elkerülése végett figyelembe kell venni a kereskedelmi egyezményeket árszimulációk futtatásakor. A kereskedelmi megállapodások négy engedménytípusa:
+A kereskedelmi megállapodásoknak a Microsoft Dynamics 365 for Finance and Operations rendszerben négy típusú árengedménye lehet. Ezek az engedmények különböző cikkekre, vevőkre vagy árcsoportokra lehetnek beállítva, és időben korlátozhatók. Téves számítások elkerülése végett figyelembe kell venni a kereskedelmi egyezményeket árszimulációk futtatásakor. A kereskedelmi megállapodások négy engedménytípusa:
 
 -   **Értékesítési ár** – Cikkenkénti eladási árakat lehet meghatározni. Ajánlatkérési sorok létrehozásakor a program megkeresi a megfelelő eladási árat a cikkhez és továbbítja azt az árajánlat sorokhoz. Ebből következően egy ilyen típusú kereskedelmi megállapodás nincs hatással az árszimulációra. Az ajánlati sorban létrejövő ár a kereskedelmi megállapodáson alapul.
 -   **Sorengedmény** – A cikkhez különleges engedmények adhatók meg, a rendelt mennyiségtől függően. A sorösszegek általában a sorkedvezményekkel csökkennek az árszimuláció futtatása előtt. Ebből következően egy ilyen típusú kereskedelmi megállapodás hatással van az árszimulációra.

@@ -3,14 +3,14 @@ title: "Termékkonfigurációs modell építése"
 description: "A speciális követelmények kielégítése érdekében a termék konfigurálásához szükséges egyre helyett a vállalkozások-, mind az egyéni üzleti kapcsolatok, a kivétel a szabály."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 901d5dd18f0da6f05c185c24b3f11fe32fdc400b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 5bc19e95266e8f1bec8744da688387dca559373f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -72,7 +72,7 @@ A táblázatok megszorításai felhasználó által definiáltak vagy rendszer d
 
 A felhasználó által a felhasználó által definiált táblamegszorítás épül fel. A felhasználó választja ki, amely megadja annak a táblának az oszlopok Attribútumtípusok kombinációja, és ezután beírja az értékeket a tartományok, a kijelölt attribútum típusú alakítson ki a sorokat a táblamegszorításban.  
 
-A rendszer által definiált táblamegszorítás meghatározásához ki kell választani, mely Microsoft Dynamics 365 for Operations-táblát kívánja referenciaként használni, majd ebből a táblából ki kell választani a megszorítás oszlopait adó mezőket. A táblamegszorítás sorai a Dynamics 365 for Operations-tábla a konfiguráció időpontjában meglévő sorai.  
+A rendszer által definiált táblamegszorítás meghatározásához ki kell választani, mely Microsoft Dynamics 365 for Finance and Operations-táblát kívánja referenciaként használni, majd ebből a táblából ki kell választani a megszorítás oszlopait adó mezőket. A táblamegszorítás sorai a Finance and Operations-tábla a sorokat, amelyek a jelenlegi konfiguráció időpontban.  
 
 Táblamegszorítás egy termékkonfigurációs modell a Táblamegszorítás oszlopai hivatkozásoknak a táblamegszorítás definíciójának és a modellben a megfelelő attribútumokat tartalmazza.
 

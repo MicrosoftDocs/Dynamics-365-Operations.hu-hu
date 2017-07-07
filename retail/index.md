@@ -80,7 +80,7 @@ A Retail rendszerben az áruház vezetői műszakokat, illetve ütemterveket hoz
 
 Az áruház munkatársai rálátást nyernek a műszakokra és a hozzájuk tartozó ütemtervekre, valamint a műszakokra vonatkozó utasításokra, és az egyes műszakokhoz hozzárendelt munkatársak listájára. Távolléti, munkatársakkal történő műszakcsere, és műszak felajánlási kérelmeket is küldhetnek be.
 
-## <a name="customize-and-administer-retail-environments"></a>Kiskereskedelmi környezetek testreszabása és felügyelete
+## <a name="customize-and-administer-retail-environments"></a>Retail környezetek testreszabása és felügyelete
 Ha szükség van a környezet testreszabására vagy a rendszer telepítésére és fenntartására, mindenképpen tekintse meg a Retail rendszer fejlesztői és rendszergazda-specifikus tartalmait, és az általánosabb tartalmakat.
 
 - [Dynamics 365 for Retail – Informatikai szakemberek és fejlesztők számára](dev-itpro/dev-retail-home-page.md)

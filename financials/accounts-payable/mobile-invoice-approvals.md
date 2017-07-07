@@ -1,15 +1,15 @@
 ---
-title: "Mobilszámlák jóváhagyása"
-description: "A Microsoft Dynamics 365 for Operations mobilszolgáltatásai segítségével az üzleti felhasználók mobilélményeket tervezhetnek meg. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével. A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható."
+title: "Mobil számlajóváhagyások"
+description: "Ez a témakör gyakorlati megközelítést biztosít Dynamics 365 for Finance and Operations mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
@@ -17,32 +17,32 @@ ms.author: sunilg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c412562a5b224e682c4a555a56e713570a1e4ef
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="mobile-invoice-approvals"></a>Mobilszámlák jóváhagyása
+# <a name="mobile-invoice-approvals"></a>Mobil számlajóváhagyások
 
 [!include[banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 for Operations mobilszolgáltatásai segítségével az üzleti felhasználók mobilélményeket tervezhetnek meg. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével. A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható.
+A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás mobilszolgáltatásai segítségével az üzleti felhasználók mobilélményeket tervezhetnek meg. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével. A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható.
 
 <a name="prerequisites"></a>Előfeltételek
 -------------
 
 | Előfeltételek                                                                                            | Leírás                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobil kézikönyv előzetes olvasás                                                                                |(/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
-| Dynamics 365 for Operations                                                                             | Olyan környezet, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november).                   |
+| Mobil kézikönyv előzetes olvasás                                                                                |[Mobil platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)                                                                                                  |
+| Dynamics 365 for Finance and Operations                                                                             | Olyan környezet, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november).                   |
 | Telepítse a 3204341 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | A Feladatrögzítő tévesen két Bezárás parancsot rögzíthet legördülő párbeszédpaneleknél - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés) |
 | Telepítse a 3207800 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Ez a gyorsjavítás lehetővé teszi a mellékletek megtekintését mobil kliensen - - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés).           |
 | Telepítse a 3208224 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Alkalmazáskód a szállítói számla jóváhagyására szolgáló mobilalkalmazáshoz - ez a Microsoft Dynamics AX alkalmazás 7.0.1 (2016. május) verziójában szerepel.                          |
-| Android-, iOS- vagy Windows-eszköz, amelyre telepítve van a Dynamics 365 for Operations mobilalkalmazása | Keresse meg az alkalmazást a megfelelő alkalmazásáruházban.                                                                                                                     |
+| Android-, iOS- vagy Windows-eszköz, amelyre telepítve van a Finance and Operations mobilalkalmazása | Keresse meg az alkalmazást a megfelelő alkalmazásáruházban.                                                                                                                     |
 
 ## <a name="introduction"></a>Bevezetés
 A szállítói számlák mobil jóváhagyásához az „Előfeltételek” című szakaszban említett három gyorsjavításra van szükség. Ezek a gyorsjavítások nem biztosítanak munkaterületet számlajóváhagyáshoz. A munkaterület mobil környezetben való jelentésének megismeréséhez olvassa el az „Előfeltételek” című részben említett mobil kézikönyvet. A számlajóváhagyások munkaterületét ki kell alakítani. 
@@ -126,7 +126,7 @@ A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott vál
 
 ### <a name="create-the-workspace"></a>Munkaterület létrehozása
 
-1.  A böngészőben nyissa meg a Dynamics 365 for Operations rendszert, és jelentkezzen be.
+1.  A böngészőben nyissa meg a Finance and Operations rendszert, és jelentkezzen be.
 2.  Miután bejelentkezett, fűzze hozzá a **&mode=mobile** karakterláncot az URL-címhez az alábbi példa alapján, és frissítse az oldalt: https://&lt;sajaturl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
 3.  Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre. Megjelenik a mobilalkalmazás tervezője és a Feladatrögzítő.
 4.  Kattintson a **Hozzáadás** elemre új munkaterület létrehozásához. Ebben a példában adja a munkaterületnek a **Jóváhagyásaim** nevet.
@@ -138,9 +138,9 @@ A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott vál
 
 ### <a name="vendor-invoices-assigned-to-me"></a>Hozzám rendelt szállítói számlák
 
-Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhasználóhoz rendelt számlák listája. A mobillap megtervezéséhez használja a Dynamics 365 for Operations **VendMobileInvoiceAssignedToMeListPage** lapját. Az eljárás végrehajtása előtt győződjön meg arról, hogy legalább egy szállítói számla Önhöz van rendelve véleményezésre, és hogy a számlasor két felosztást tartalmaz. Ez a beállítás megfelel a jelen forgatókönyv követelményeinek.
+Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhasználóhoz rendelt számlák listája. A mobillap megtervezéséhez használja a Finance and Operations **VendMobileInvoiceAssignedToMeListPage** lapját. Az eljárás végrehajtása előtt győződjön meg arról, hogy legalább egy szállítói számla Önhöz van rendelve véleményezésre, és hogy a számlasor két felosztást tartalmaz. Ez a beállítás megfelel a jelen forgatókönyv követelményeinek.
 
-1.  A Dynamics 365 for Operations URL-jében cserélje le a menüelem nevét arra, hogy **VendMobileInvoiceAssignedToMeListPage**, és így megnyílik a **Hozzám rendelt függőben levő szállítói számlák** listaoldal mobilváltozata a **Kötelezettségek** modulban. A rendszerben Önhöz hozzárendelt számlák számától függően a lapon megjelennek az érintett számlák. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak arra van szükségünk, hogy legyen néhány Önhöz rendelt számla, ami lehetővé teszi a mobillap megtervezését. A rendelkezésre álló új oldalakat kifejezetten a szállítói számlákhoz kapcsolódó mobilforgatókönyvek kidolgozásához alakítottuk ki. Ezért ezeket az oldalakat kell használnia. Az URL-nek a következő URL-re kell hasonlítania, és miután megadta, meg kell jelennie az ábrán látható oldalnak: https://&lt;sajatURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Hozzám rendelt függőben lévő szállítói számlák oldal](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  A Finance and Operations URL-jében cserélje le a menüelem nevét arra, hogy **VendMobileInvoiceAssignedToMeListPage**, és így megnyílik a **Hozzám rendelt függőben levő szállítói számlák** listaoldal mobilváltozata a **Kötelezettségek** modulban. A rendszerben Önhöz hozzárendelt számlák számától függően a lapon megjelennek az érintett számlák. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak arra van szükségünk, hogy legyen néhány Önhöz rendelt számla, ami lehetővé teszi a mobillap megtervezését. A rendelkezésre álló új oldalakat kifejezetten a szállítói számlákhoz kapcsolódó mobilforgatókönyvek kidolgozásához alakítottuk ki. Ezért ezeket az oldalakat kell használnia. Az URL-nek a következő URL-re kell hasonlítania, és miután megadta, meg kell jelennie az ábrán látható oldalnak: https://&lt;sajatURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Hozzám rendelt függőben lévő szállítói számlák oldal](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre
 3.  Válassza ki a munkaterületet, és kattintson a **Szerkesztés** elemre
 4.  Kattintson az **Oldal hozzáadása** elemre az első mobiloldal létrehozásához.
@@ -148,20 +148,21 @@ Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhaszn�
 6.  Kattintson a **Kész** gombra.
 7.  A mobiltervezőben a **Mezők** fülön kattintson a **Mezők kijelölése** elemre. A listalapon látható oszlopoknak az alábbi ábrához kell hasonlítaniuk. [![Hozzám rendelt függőben lévő szállítói számlák oldalának oszlopai](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
 8.  A listaoldalról adja hozzá a szükséges oszlopokat, amelyeket a felhasználók látni fognak a mobiloldalon. A rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára. A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges. A példánkban szereplő követelmények alapján a következő nyolc mező szükséges. Azonban egyes felhasználók úgy vélhetik, hogy nyolc mező mobileszközön túl sok információt jelent. Ezért csak a legfontosabb mezőket mutatjuk a mobillista-nézetben. A fennmaradó mezők a részletes nézetben jelennek meg, amelyet később fogunk megtervezni. Egyelőre a következő mezőket adjuk hozzá. Kattintson ezekben az oszlopokban a plusz jelre (**+**) a mobiloldalhoz való hozzáadáshoz.
-    1.  Szállító neve
-    2.  Számla összege
-    3.  Számlafogadó
-    4.  Számla száma
-    5.  Számla dátuma
+    - Szállító neve
+    - Számla összege
+    - Számlafogadó
+    - Számla száma
+    - Számla dátuma
 
-    A mezők felvétele után a mobiloldalnak az alábbi ábrához kell hasonlítania. [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    A mezők felvétele után a mobiloldalnak az alábbi ábrához kell hasonlítania. 
+    [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 9.  Most a következő oszlopokat is hozzá kell adnia, hogy később engedélyezni lehessen munkafolyamat-műveleteket.
-    1.  Befejezett feladat megjelenítése
-    2.  Delegált feladat megjelenítése
-    3.  Visszahívási feladat megjelenítése
-    4.  Elutasítási feladat megjelenítése
-    5.  Kérésteljesítési feladat megjelenítése
-    6.  Újraküldési feladat megjelenítése
+    - Befejezett feladat megjelenítése
+    - Delegált feladat megjelenítése
+    - Visszahívási feladat megjelenítése
+    - Elutasítási feladat megjelenítése
+    - Kérésteljesítési feladat megjelenítése
+    - Újraküldési feladat megjelenítése
 
 10. Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
 11. Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
@@ -170,42 +171,44 @@ Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhaszn�
 
 ### <a name="vendor-invoice-details"></a>Szállítói számla részletei
 
-A számla részletei lap mobilra való megtervezéséhez használja a Dynamics 365 for Operations **VendMobileInvoiceHeaderDetails** oldalát. Fontos megjegyezni, hogy a rendszerben található számlák számától függően ezen a lapon a legrégebbi számla (az első létrehozott számla) jelenik meg. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak némi számlaadatra van szükség ahhoz, hogy meg tudjuk tervezni a mobilos oldalt. [![Munkafolyamat oldal](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+A számla részletei lap mobilra való megtervezéséhez használja a Finance and Operations **VendMobileInvoiceHeaderDetails** oldalát. Fontos megjegyezni, hogy a rendszerben található számlák számától függően ezen a lapon a legrégebbi számla (az első létrehozott számla) jelenik meg. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak némi számlaadatra van szükség ahhoz, hogy meg tudjuk tervezni a mobilos oldalt. [![Munkafolyamat oldal](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  A Dynamics 365 for Operations URL-jében cserélje ki a menüelem nevét a **VendMobileInvoiceHeaderDetails** karakterláncra a képernyő megnyitásához
+1.  A Finance and Operations URL-jében cserélje ki a menüelem nevét a **VendMobileInvoiceHeaderDetails** karakterláncra a képernyő megnyitásához
 2.  Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.
 3.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
 4.  Válassza a korábban elkészített **Saját szállítói számlák** oldalt, majd kattintson a **Szerkesztés** elemre.
 5.  A **Mezők** lapon kattintson a **Rács** oszlop fejlécére.
 6.  Kattintson a **Tulajdonságok** &gt; **Oldal hozzáadása** elemre. **Megjegyzés:** amikor a **Rács** fejlécre kattint, és hozzáad egy oldalt, a részletek oldallal való kapcsolat automatikusan létrejön.
 7.  Adja meg a lap címét, például: **Számla részletei**, és egy leírást, például: **Számlafejléc és sor részleteinek megtekintése**.
-8.  Kattintson a **Mezők kijelölése** elemre. Ne feledje, hogy a rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára. A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges.
+8.  Kattintson a **Mezők kijelölése** elemre. Ne feledje, hogy a rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára. A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges. 
 9.  Adja hozzá a példánkban szereplő követelmények alapján a következő mezőket a fejlécből:
-    1.  Szállító neve
-    2.  Számla összege
-    3.  Számlafogadó
-    4.  Számla száma
-    5.  Számla dátuma
-    6.  Számla leírása
-    7.  Esedékes
-    8.  Számla pénzneme
+    - Szállító neve
+    - Számla összege
+    - Számlafogadó
+    - Számla száma
+    - Számla dátuma
+    - Számla leírása
+    - Esedékes
+    - Számla pénzneme
 
 10. Az oldalon szereplő sorrácsból adja hozzá a következő mezőket:
-    1.  Beszerzési kategória
-    2.  Mennyiség
-    3.  Egységár
-    4.  Sor nettó összege
-    5.  1099-es összeg
+    - Beszerzési kategória
+    - Mennyiség
+    - Egységár
+    - Sor nettó összege
+    - 1099-es összeg
 
-11. Miután az előző két lépésből az összes mezőt hozzáadta, kattintson a **Kész** elemre. Az oldalnak az alábbi ábrához kell hasonlítania. [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+11. Miután az előző két lépésből az összes mezőt hozzáadta, kattintson a **Kész** elemre. Az oldalnak az alábbi ábrához kell hasonlítania.
+[![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
 13. Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
 14. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
 
 ### <a name="workflow-actions"></a>Munkafolyamat-műveletek
 
-Munkafolyamat-műveletek hozzáadásához használja a Dynamics 365 for Operations **VendMobileInvoiceHeaderDetails** oldalát. Az oldal megnyitásához cserélje ki a menüpont nevét az URL-címben, mint korábban. Ezután nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal. Kövesse az alábbi lépéseket munkafolyamat-műveletek hozzáadásához a részletek oldalon.
+Munkafolyamat-műveletek hozzáadásához használja a Finance and Operations **VendMobileInvoiceHeaderDetails** oldalát. Az oldal megnyitásához cserélje ki a menüpont nevét az URL-címben, mint korábban. Ezután nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal. Kövesse az alábbi lépéseket munkafolyamat-műveletek hozzáadásához a részletek oldalon. Olyan Önhöz rendelt számlákkal kell rendelkeznie, amelyek olyan megfelelő állapotban vannak, ami elérhetővé teszi azon munkafolyamat-műveleteket, amelyekhez felületet kíván tervezni.
 
+#### <a name="record-workflow-actions"></a>Munkafolyamat-műveletek rögzítése
 1.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
 2.  Válassza a korábban elkészített **Számla részletei** oldalt, majd kattintson a **Szerkesztés** elemre.
 3.  A **Műveletek** lapon kattintson a **Művelet hozzáadása** elemre.
@@ -217,14 +220,40 @@ Munkafolyamat-műveletek hozzáadásához használja a Dynamics 365 for Operatio
 9.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
 10. Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
 11. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
-12. Ismételje meg a 3-11. lépést az összes szükséges munkafolyamat-művelet rögzítéséhez. Ne feledje, hogy olyan Önhöz rendelt számlákkal kell rendelkeznie, amelyek olyan állapotban vannak, ami elérhetővé teszi azon munkafolyamat-műveleteket, amelyekhez felületet kíván tervezni.
-13. Nyissa meg a Jegyzettömböt vagy a Microsoft Visual Studiót, és illessze be a következő kódot. Mentse a fájlt .js fájlként. Ezt a kódot két dolgot tesz:
-    1.  Elrejti a korábban a mobil listaoldalon hozzáadott, a munkafolyamattal kapcsolatos további oszlopokat. Ezeket az oszlopokat azért adtuk hozzá, hogy az alkalmazás összefüggésben rendelkezzen az információkkal, és meg tudjuk tenni a következő lépést.
-    2.  Az aktív munkafolyamat-lépés alapján logikát alkalmazva csak az érintett műveleteket jeleníti meg.
+12. Ismételje meg az előző lépéseket az összes szükséges munkafolyamat-művelet rögzítéséhez. 
 
-Vegye figyelembe, hogy az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
+#### <a name="create-a-js-file"></a>.js fájl létrehozása
+1. Nyissa meg a Jegyzettömböt vagy a Microsoft Visual Studiót, és illessze be a következő kódot. Mentse a fájlt .js fájlként. Ez a kód a következőket hajtja végre:
+    - Elrejti a korábban a mobil listaoldalon hozzáadott, a munkafolyamattal kapcsolatos további oszlopokat. Ezeket az oszlopokat azért adtuk hozzá, hogy az alkalmazás összefüggésben rendelkezzen az információkkal, és meg tudjuk tenni a következő lépést.
+    - Az aktív munkafolyamat-lépés alapján logikát alkalmazva csak az érintett műveleteket jeleníti meg.
 
-1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Szükséges, de nem látható vezérlők elrejtése                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Munkafolyamat-műveletek megjelenítése/elrejtése munkafolyamat-lépés alapján                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
+> [!NOTE]
+> Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
+
+    function main(metadataService, dataService, cacheService, $q) {
+           return {
+               appInit: function (appMetadata) {
+                   // Hide controls that need to be present, but not visible
+                   metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });
+                 metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });
+               metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });
+               },
+               pageInit: function (pageMetadata, params) {
+        if (pageMetadata.Name == 'Invoice-details') {
+                       // Show/hide workflow actions based on workflow step
+                       metadataService.configureAction('Accept', { visible: true });
+                       metadataService.configureAction('Approve', { visible: true });
+                       metadataService.configureAction('Reject', { visible: true });
+                       metadataService.configureAction('Delegate', { visible: true });
+                       metadataService.configureAction('Request-change', { visible: true });
+                       metadataService.configureAction('Recall', { visible: true });
+                       metadataService.configureAction('Complete', { visible: true });
+                       metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -271,19 +300,20 @@ Vegye figyelembe, hogy az oldalak és más vezérlőelemek nevének a JS-kódban
 2.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
 3.  Válassza a korábban elkészített **Számla részletei** oldalt, majd kattintson a **Szerkesztés** elemre.
 4.  Állítsa a **Dokumentumkezelés** lehetőséget **Igen** értékre, ahogy az lent látható. **Megjegyzés:** ha a mellékleteket nem muszáj megjeleníteni a mobileszközön, a beállítást az alapértelmezett **Nem** értéken hagyhatja.
-5.  [![docmanagement](./media/docmanagement-216x300.png)](./media/docmanagement.png)
+![Dokumentumkezelés](./media/docmanagement-216x300.png)
 6.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
 7.  Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
 8.  A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
 
 ### <a name="vendor-invoice-line-distributions"></a>Szállítói számlasorok felosztásai
 
-E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztások lesznek jelen, és hogy a számláknak mindig csak egy soruk lesz. Mivel ez a forgatókönyv egyszerű, a felhasználói felületnek a mobileszközön szintén elég egyszerűnek kell lennie ahhoz, hogy a felhasználónak ne kelljen számos szinten végigásnia magát a felosztások megtekintéséhez. A szállítói számláknál a Dynamics 365 for Operationsben az összes felosztás megjeleníthető a számlafejlécből. A mobilfelülethez erre a funkcióra van szükségünk. Ezért a **VendMobileInvoiceAllDistributionTree** lapot fogjuk használni a mobilfelület ezen részének megtervezéséhez. 
+E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztások lesznek jelen, és hogy a számláknak mindig csak egy soruk lesz. Mivel ez a forgatókönyv egyszerű, a felhasználói felületnek a mobileszközön szintén elég egyszerűnek kell lennie ahhoz, hogy a felhasználónak ne kelljen számos szinten végigásnia magát a felosztások megtekintéséhez. A szállítói számláknál a Finance and Operationsben az összes felosztás megjeleníthető a számlafejlécből. A mobilfelülethez erre a funkcióra van szükségünk. Ezért a **VendMobileInvoiceAllDistributionTree** lapot fogjuk használni a mobilfelület ezen részének megtervezéséhez. 
 
 > [!NOTE] 
 > A követelmények ismerete segít eldönteni, melyik adott oldalt használjuk, és pontosan hogyan optimalizáljuk a mobil felhasználói élményt a felület megtervezése során. A második forgatókönyv szerint másik oldalt fogunk használni a felosztások megjelenítésére, mivel ennek a forgatókönyvnek a követelményei eltérőek.
 
-1.  Az URL-ben cserélje ki a menüpont nevét, mint korábban. A megjelenő lapnak az alábbi ábrához kell hasonlítania. [![Összes eloszlás oldal](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+1.  Az URL-ben cserélje ki a menüpont nevét, mint korábban. A megjelenő lapnak az alábbi ábrához kell hasonlítania.
+[![Összes eloszlás oldal](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 2.  Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.
 3.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához. **Megjegyzés:** látni fogja, hogy két új oldal jön létre automatikusan. A rendszer ezeket az oldalakat azért hozza létre, mert az előző részben bekapcsolta a Dokumentumkezelést. Ezeket az új oldalakat figyelmen kívül hagyhatja.
 4.  Kattintson az **Oldal hozzáadása** elemre.
@@ -294,13 +324,14 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
     2.  Pénznem
     3.  Főkönyvi számla
 
-> [!NOTE] 
-> A **Leírás** oszlopot nem választottuk ki a felosztások rácsból, mert ebben az esetben a követelmények megerősítik, hogy a kiterjesztett ár az egyetlen összeg, amelyhez felosztások lesznek elérhetők. Ezért a felhasználónak nem lesz másik mezőre szüksége ahhoz, hogy lássa, milyen típusú összegre vonatkozik a felosztás. A következő forgatókönyvben azonban **használni fogjuk** ezt az információt, mivel annak a forgatókönyvnek a követelményei azt mondják, hogy egyéb összegtípusokhoz (például áfához) is lesznek felosztások.
+    > [!NOTE] 
+    > A **Leírás** oszlopot nem választottuk ki a felosztások rácsból, mert ebben az esetben a követelmények megerősítik, hogy a kiterjesztett ár az egyetlen összeg, amelyhez felosztások lesznek elérhetők. Ezért a felhasználónak nem lesz másik mezőre szüksége ahhoz, hogy lássa, milyen típusú összegre vonatkozik a felosztás. A következő forgatókönyvben azonban **használni fogjuk** ezt az információt, mivel annak a forgatókönyvnek a követelményei azt mondják, hogy egyéb összegtípusokhoz (például áfához) is lesznek felosztások.
 8.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
 9.  Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
 10. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
 
-**Megjegyzés:** a **Könyvelés megjelenítése** mobillap jelenleg nem hivatkozik az általunk eddig megtervezett egyik mobillapra sem. Mivel a felhasználónak a mobilkészüléken el kell tudnia navigálnia a **Könyvelés megtekintése** oldalra a **Számla részletei** oldalról, navigációs lehetőséget kell biztosítanunk a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra. Ezt a navigációs lehetőséget további logika használatával hozzuk létre JavaScript segítségével.
+> [!NOTE] 
+> A **Könyvelés megjelenítése** mobillap jelenleg nem hivatkozik az általunk eddig megtervezett egyik mobillapra sem. Mivel a felhasználónak a mobilkészüléken el kell tudnia navigálnia a **Könyvelés megtekintése** oldalra a **Számla részletei** oldalról, navigációs lehetőséget kell biztosítanunk a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra. Ezt a navigációs lehetőséget további logika használatával hozzuk létre JavaScript segítségével.
 
 1.  Nyissa meg a korábban létrehozott .js fájlt, és adja hozzá a következő kódban kiemelt sorokat. Ezt a kódot két dolgot tesz:
     1.  Ez segít garantálni, hogy a felhasználók közvetlenül a munkaterületről nem léphetnek a **Könyvelés megtekintése** oldalra.
@@ -309,7 +340,34 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
 > [!NOTE] 
 > Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
 
-1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Szükséges, de nem látható vezérlők elrejtése                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });                // Gyökérnavigációra nem vonatkozó oldalak elrejtése                metadataService.hideNavigation('View-accounting');                //Link to view accounting                metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Munkafolyamat-műveletek megjelenítése/elrejtése munkafolyamat-lépés alapján                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
+    function main(metadataService, dataService, cacheService, $q) {
+           return {
+               appInit: function (appMetadata) {
+                   // Hide controls that need to be present, but not visible
+                   metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });
+                 metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });
+               metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });
+                   // Hide pages not applicable for root navigation
+                   metadataService.hideNavigation('View-accounting');
+                   //Link to view accounting
+                   metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);
+               },
+               pageInit: function (pageMetadata, params) {
+        if (pageMetadata.Name == 'Invoice-details') {
+                       // Show/hide workflow actions based on workflow step
+                       metadataService.configureAction('Accept', { visible: true });
+                       metadataService.configureAction('Approve', { visible: true });
+                       metadataService.configureAction('Reject', { visible: true });
+                       metadataService.configureAction('Delegate', { visible: true });
+                       metadataService.configureAction('Request-change', { visible: true });
+                       metadataService.configureAction('Recall', { visible: true });
+                       metadataService.configureAction('Complete', { visible: true });
+                       metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -352,7 +410,7 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
 
 ### <a name="validation"></a>Ellenőrzés
 
-A mobilkészüléken nyissa meg az alkalmazást, és csatlakozzon saját Dynamics 365 for Operations példányához. Ügyeljen, hogy abba a vállalatba jelentkezzen be, amelynél vannak szállítói számlák Önhöz rendelve véleményezésre. Ekkor elvileg el tudja elvégezni a következő műveleteket:
+A mobilkészüléken nyissa meg az alkalmazást, és csatlakozzon saját Finance and Operations példányához. Ügyeljen, hogy abba a vállalatba jelentkezzen be, amelynél vannak szállítói számlák Önhöz rendelve véleményezésre. Ekkor elvileg el tudja elvégezni a következő műveleteket:
 
 -   Nézze meg a **Jóváhagyásaim** munkaterület.
 -   Jusson el a **Jóváhagyásaim** munkaterületre, és nézze meg a **Saját szállítói számlák** oldalt.
@@ -421,9 +479,9 @@ A mobilkészüléken nyissa meg az alkalmazást, és csatlakozzon saját Dynamic
 </tbody>
 </table>
 
-### <a name="exercise"></a>Feladat
+### <a name="next-steps"></a>További lépések
 
-A következő változatok elvégezhetők az 1. forgatókönyvhöz a 2. forgatókönyv követelményei alapján. Használja ezt a szakaszt gyakorlatként, tanulás céljából.
+A következő változatok elvégezhetők az 1. forgatókönyvhöz a 2. forgatókönyv követelményei alapján. Ez a szakasz a mobilalkalmazás felhasználói élményének fokozására használható.
 
 1.  Mivel a 2. forgatókönyvben több számlasor szükséges, a terv következő módosításai segítenek a mobileszközön a felhasználói élmény optimalizálásában:
     1.  Számlasorok a részletek oldalon történő megjelenítése helyett (mint az 1. forgatókönyvben), a felhasználók itt dönthetnek úgy, hogy a sorokat külön mobiloldalon tekintik meg.
@@ -432,8 +490,6 @@ A következő változatok elvégezhetők az 1. forgatókönyvhöz a 2. forgatók
 
 2.  Mivel a 2. forgatókönyvben egynél több összegtípus várható a felosztások között (áfa stb.), hasznos lesz megjeleníteni az összeg leírását. (Ezt az információt az 1. esetben kihagytuk.)
 
-## <a name="conclusion"></a>Következtetés
-A mobilplatform és alkalmazás lehetőségei lehetővé teszik olyan mobilfelület tervezését, amely egy adott szervezet felhasználói bázisára van optimalizálva. Az ebben a témakörben szereplő példák alapján próbáljon ki más változatokat is, és hozzon létre adott igénynek megfelelő, különböző felületeket.
 
 
 

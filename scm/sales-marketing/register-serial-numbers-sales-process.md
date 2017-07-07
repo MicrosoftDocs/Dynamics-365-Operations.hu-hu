@@ -3,15 +3,15 @@ title: "Sorozatszámok regisztrálása az értékesítési folyamatban"
 description: "Ez a cikk bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
-ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d984a6af2b48f02120ea61b385522a6400d93d4a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ffb567c0ba9c95d059e64e24cbe0ea53ec9f7bc9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,14 +32,15 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
 
 Ez a cikk bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
 
-Sok vállalat csak szolgáltatási és garanciális célokra akar sorozatszámot rögzíteni, és nem kell sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig. Az ilyen esetekben a Microsoft Dynamics 365 for Operations lehetővé teszi, hogy bejegyezze a sorozatszámokat a szállítóleveleken vagy számlákon, amikor a termékek eladásra kerülnek. Ha a termékek később visszatérnek Önhöz, akkor minden termék nyomon követhető egy számlához, hogy meghatározza, hogy Ön adta-e el a terméket és hogy a szerviz és garancia kötelezettségek érvényesek-e.
+Sok vállalat csak szolgáltatási és garanciális célokra akar sorozatszámot rögzíteni, és nem kell sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig. Az ilyen esetekben a Microsoft Dynamics 365 for Finance and Operations lehetővé teszi, hogy bejegyezze a sorozatszámokat a szállítóleveleken vagy számlákon, amikor a termékek eladásra kerülnek. Ha a termékek később visszatérnek Önhöz, akkor minden termék nyomon követhető egy számlához, hogy meghatározza, hogy Ön adta-e el a terméket és hogy a szerviz és garancia kötelezettségek érvényesek-e.
 Vannak-e bármilyen Előfeltételek?
 ----------------------------
 
-Engedélyeznie kell a sorozatszámokat az értékesítési folyamathoz az **Értékesítési folyamatban aktív** opció kijelölésével a **Nyomon követési dimenzió csoportok** oldalon. Ezután a következő események zajlanak le a Microsoft Dynamics 365 for Operations rendszerben:
+Engedélyeznie kell a sorozatszámokat az értékesítési folyamathoz az **Értékesítési folyamatban aktív** opció kijelölésével a **Nyomon követési dimenzió csoportok** oldalon. Ezután a következő események zajlanak le a Microsoft Dynamics 365 for Finance and Operations rendszerben:
 -   A **Sorozatszámok** gyorslapon a **Sorozatszám-ellenőrzés** beállítás be van jelölve. Ha ez a jelölőnégyzet be van jelölve, regisztrálnia kell a csomagjegyzéken vagy a számlán található mindegyik elemhez egy sorozatszámát.
 -   A nyomon követési dimenzió csoport összes sorozatszám kijelölése törlődik, kivéve az **Üres kiadás megengedett** opciót. Kiválaszthatja az **Üres kiadás megengedett** opciót hogy felülírja a sorozatszám-ellenőrzést és engedélyezze, hogy a termékeket sorozatszámok nélkül legyenek csomagolva és számlázva.
 
@@ -56,7 +57,7 @@ A termékhez rendelt nyomon követési dimenziócsoport beállítása meghatáro
 Lehetősége van részleges számlák és szállítólevek készítésére az értékesítési megrendelésekhez és csak azokhoz a cikkekhez sorozatszámot regisztrálni, amelyeket ezek a számlák és szállítólevelek tartalmaznak. Ha részleges számlát szeretne készíteni és több mint egy szállítólevele van az értékesítési megrendeléshez akkor lehetősége van hogy több mint egy szállítólevélből belevegyen sorozatszámokat. Azonban csak egy szállítólevél lehet, amely nem tartalmazza az összes sorozatszámot. Például ha három szállítólevele van és mindegyik szállítólevél két sorozatszámmal ellátott cikket tartalmaz, akkor nem tud részleges számlát készíteni egy cikkhez minden szállítólevélből.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Mi a teendő, amikor egy sorozatszám nem olvasható?
-Ha sorozatszámot nem lehet olvasni vagy beolvasni, akkor lehetősége van, hogy üres sort készítsen a cikkhez a **Nem olvasható**a gombra kattintással a **Sorozatszámok**oldalon. Ha a sorozatszám később elérhetővé válik frissítheti a számlát vagy szállítólevelet. További információhoz lásd a következő szakaszban, "Ki tudom javítani vagy meg tudom változtatni a sorozatszámokat, amiket egy értékesítési megrendeléshez regisztráltam?"
+Ha sorozatszámot nem lehet olvasni vagy beolvasni, akkor lehetősége van, hogy üres sort készítsen a cikkhez a **Nem olvasható** a gombra kattintással a **Sorozatszámok** oldalon. Ha a sorozatszám később elérhetővé válik frissítheti a számlát vagy szállítólevelet. További információhoz lásd a következő szakaszban, "Ki tudom javítani vagy meg tudom változtatni a sorozatszámokat, amiket egy értékesítési megrendeléshez regisztráltam?"
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Ki tudom javítani vagy meg tudom változtatni a sorozatszámokat, amiket egy értékesítési megrendeléshez regisztráltam?
 Igen, sorozatszámok helyesbíthetők, ha a következő feltételek teljesülnek:

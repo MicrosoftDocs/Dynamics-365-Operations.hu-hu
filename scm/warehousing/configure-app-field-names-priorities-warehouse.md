@@ -1,16 +1,16 @@
 ---
 title: "A Warehousing alkalmazás alkalmazás-mezőneveinek konfigurálása"
-description: "Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Dynamics 365 for Operationsben."
+description: "Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Finance and Operationsben."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: edcbf8a0921e0eb08d0f970e681c9d098b354c0b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 49db5ad10914897b2157e123c5803ca51e4e66e7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,14 +32,14 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Dynamics 365 for Operationsben. 
+Ez a témakör ismerteti, hogyan történik a raktári alkalmazás mezőneveinek és prioritásainak meghatározása és konfigurálása a Finance and Operationsben. 
 
-**Megjegyzés:** ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A Dynamics 365 for Operations - Warehousing Dynamics egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a témakör elmagyarázza, hogyan történik a raktári alkalmazás ezen mezőneveinek és prioritásainak meghatározása és konfigurálása, valamint használata a Dynamics 365 for Operations - Warehousing alkalmazásban. A Dynamics 365 for Operations - Warehousing alkalmazáshoz való kapcsolódás konfigurálásának részleteihez lásd a [Dynamics 365 for Operations - Warehousing telepítése és konfigurálása](install-configure-warehousing-app.md) oktatóanyagot.
+**Megjegyzés:** ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A Finance and Operations - Warehousing Dynamics egy raktározási feladatok végrehajtásához használt alkalmazás. Meghatározhatja és beállíthatja az alkalmazásban használt mezőneveket, és konfigurálhatja a prioritást, amelyhez a mezőneveket hozzá kell rendelni. Ez a témakör ismerteti, hogyan történik a raktári alkalmazás ezen mezőneveinek és prioritásainak meghatározása és konfigurálása, továbbá használata a Finance and Operations – Warehousing modulban. A Finance and Operations - Warehousing alkalmazáshoz való kapcsolódás konfigurálásának részleteihez lásd a [Finance and Operations - Warehousing telepítése és konfigurálása](install-configure-warehousing-app.md) oktatóanyagot.
 
 <a name="configure-warehouse-app-field-names"></a>A raktári alkalmazáson belüli mezőnevek konfigurálása
 ===================================
 
-Amikor a Dynamics 365 for Operations - Warehousing alkalmazást a mobileszközön használja, konfigurálható, hogyan jelenjenek meg az eszközön a metaadatok **A raktári alkalmazáson belüli mezőnevek** oldalon. Egy a Dynamics 365 for Operationsbe felvett új vállalatnál válassza az **Alapértelmezett beállítás létrehozása** elemet a raktármodul mobileszközön használt munkafolyamataiban használt összes mezőnév létrehozásához, majd rendeljen hozzájuk egy elsődleges beviteli módot és beviteltípust. Az összes mezőnév létrehozása után a következő beviteli beállításokat választhatja ki.
+Amikor a Finance and Operations - Warehousing alkalmazást a mobileszközön használja, konfigurálható, hogyan jelenjenek meg az eszközön a metaadatok **A raktári alkalmazáson belüli mezőnevek** oldalon. Egy a Finance and Operationsbe felvett új vállalatnál válassza az **Alapértelmezett beállítás létrehozása** elemet a raktármodul mobileszközön használt munkafolyamataiban használt összes mezőnév létrehozásához, majd rendeljen hozzájuk egy elsődleges beviteli módot és beviteltípust. Az összes mezőnév létrehozása után a következő beviteli beállításokat választhatja ki.
 
 <table>
 <colgroup>
@@ -73,7 +73,7 @@ Amikor a Dynamics 365 for Operations - Warehousing alkalmazást a mobileszközö
 <a name="configure-warehouse-app-field-priority"></a>A raktári alkalmazáson belüli mezőprioritások beállítása
 ======================================
 
-**A raktári alkalmazáson belüli mezőprioritás** oldalon a mezőneveket különböző prioritási csoportokba rendezheti. Ez lehetővé teszi annak eldöntését, hogy milyen információk jelenjenek meg a fő feladatlapon, amikor a raktári dolgozók feladatokat végeznek az alkalmazás használatával. Ha az **Alapértelmezett beállítás létrehozása** elemre kattint, létrejön az alapértelmezés szerinti prioritáscsoportok sorozata. Szükség szerint tetszőleges számú prioritási csoport hozható létre, de a feladatlapon csak három prioritási csoport jelenik meg. Amikor a Dynamics 365 for Operations metaadatokat küld az alkalmazásnak, minden mezőhöz relatív prioritást rendel a prioritási csoportjától függően, és az alkalmazás a metaadatokban található első három prioritási csoportot jeleníti meg a feladatlapon. Az ezen felüli metaadatok a másodlagos részletek lapon jelennek meg. A következő táblázat öt prioritási csoportra mutat példát.
+**A raktári alkalmazáson belüli mezőprioritás** oldalon a mezőneveket különböző prioritási csoportokba rendezheti. Ez lehetővé teszi annak eldöntését, hogy milyen információk jelenjenek meg a fő feladatlapon, amikor a raktári dolgozók feladatokat végeznek az alkalmazás használatával. Ha az **Alapértelmezett beállítás létrehozása** elemre kattint, létrejön az alapértelmezés szerinti prioritáscsoportok sorozata. Szükség szerint tetszőleges számú prioritási csoport hozható létre, de a feladatlapon csak három prioritási csoport jelenik meg. Amikor a Finance and Operations metaadatokat küld az alkalmazásnak, minden mezőhöz relatív prioritást rendel a prioritási csoportjától függően, és az alkalmazás a metaadatokban található első három prioritási csoportot jeleníti meg a feladatlapon. Az ezen felüli metaadatok a másodlagos részletek lapon jelennek meg. A következő táblázat öt prioritási csoportra mutat példát.
 
 <table>
 <colgroup>
@@ -141,12 +141,12 @@ A raktári alkalmazás a fenti táblában beállított mezőprioritásai alapjá
 -   2. sor: Elem leírása
 -   3. sor: méret
 
-A fennmaradó metaadatok, például a Hely nem fog megjelenni a feladatlapon, de megjelenik a részletek lapon. További információért és a felhasználói felülettel kapcsolatos példákért olvassa el a [Dynamics 365 for Operations - Warehousing bejelentése](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) blogbejegyzést.
+A fennmaradó metaadatok, például a Hely nem fog megjelenni a feladatlapon, de megjelenik a részletek lapon. További információért és a felhasználói felülettel kapcsolatos példákért olvassa el a [Finance and Operations - Warehousing bejelentése](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/) blogbejegyzést.
 
 <a name="see-also"></a>Lásd még
 --------
 
-[A Microsoft Dynamics 365 for Operations– Warehousing telepítése és konfigurálása](install-configure-warehousing-app.md)
+[A Microsoft Dynamics 365 for Finance and Operations – Warehousing telepítése és konfigurálása](install-configure-warehousing-app.md)
 
 
 

@@ -3,25 +3,27 @@ title: "Képek beállítása és kezelése a Retail Modern POS számára"
 description: "Ez a cikk ismerteti a Retail Modern POS-ben (MPOS) megjelenő különböző entitások számára a képek beállításának és kezelésének lépéseit."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 06915686e1421742c2f1dd1ebbb02491f04431fd
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 3985d731709eff4085927b277996528e4e448ba9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -36,19 +38,19 @@ Ez a cikk ismerteti a Retail Modern POS-ben (MPOS) megjelenő különböző enti
 <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>A média alap URL-cím létrehozása és médiasablonok meghatározása a kép-URL-ek formátumának konfigurálásához.
 -------------------------------------------------------------------------------------------------
 
-A Retail Modern POS-ban (MPOS) megjelenő képeket külső helyen kell tárolni, a Microsoft Dynamics 365 for Operations - Retail programon kívül. Általában egy tartalomkezelési rendszer, a tartalomkézbesítési hálózat (CDN) vagy médiaszerver tárolja őket. Ezután a MPOS lekérdezi és kijelzi a képeket a megfelelő entitások, például termékek és katalógusok számára, a cél URL-cím elérésével. Ezen külsőleg tárolt képek lekéréséhez az MPOS a képek helyes URL-formátumát igényli. A képekhez a megfelelő URL-t a **Média alap URL-cím**érték a csatornaprofilban való beállításával és a **Médiasablon definiálása**funkció használatával állíthatja be az entitások számára. Az entitások alcsoportjainál felül is írhatja a szabvány szerinti URL formátumot a **Szerkesztés az Excel programban** funkció használatával. **Fontos megjegyzés:** A Dynamics 365 for Operations jelenlegi verziójában már nem állíthatja be az URL-formátumot a **Kép** XML attribútumot a MPOS számára az **Alapértelmezett** entitások attribútum-csoportjában. Ha ismeri a Microsoft Dynamics AX 2012 R3-at, és már használja a Dynamics 365 for Operations jelenlegi verzióját, ellenőrizze, hogy mindig az új **Médiasablon definiálása** funkciót használja a képek beállításához. Ne használja vagy módosítsa a **Kép** attribútumot az entitások**Alapértelmezett** attribútumcsoportjában, beleértve a termékeket is. A képek **Alapértelmezett** attribútum-csoportjában közvetlenül elvégzett módosítások nem fognak megjelenni. Ez a beállítás nem lesz használható a jövőbeli programverzióban. Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak beállítva. Ezen eljárások segítségével garantálhatja, hogy a megfelelő képelérési út legyen implicit módon beállítva az összes katalóguskép számára, amelyek közös útvonalat használnak. Például ha kívülről állított be egy médiakiszolgálót vagy CDN-t, és szeretné, hogy a képek MPOS-ben jelenjenek meg az egy adott áruháznál, a **Média sablon definiálása** funkció segítségével beállíthatja az elérési utat, amelyen keresztül az MPOS elérheti és beolvashatja a képeket. **Megjegyzés:** Ebben a bemutató adatpéldában a médiakiszolgáló a Retail szerverre van telepítve. Azonban a Dynamics 365 for Operations rendszeren kívül bárhova telepítheti.
+A Retail Modern POS-ban (MPOS) megjelenő képeket külső helyen kell tárolni, a Microsoft Dynamics 365 for Retail programon kívül. Általában egy tartalomkezelési rendszer, a tartalomkézbesítési hálózat (CDN) vagy médiaszerver tárolja őket. Ezután a MPOS lekérdezi és kijelzi a képeket a megfelelő entitások, például termékek és katalógusok számára, a cél URL-cím elérésével. Ezen külsőleg tárolt képek lekéréséhez az MPOS a képek helyes URL-formátumát igényli. A képekhez a megfelelő URL-t a **Média alap URL-cím** érték a csatornaprofilban való beállításával és a **Médiasablon definiálása** funkció használatával állíthatja be az entitások számára. Az entitások alcsoportjainál felül is írhatja a szabvány szerinti URL formátumot a **Szerkesztés az Excel programban** funkció használatával. **Fontos megjegyzés:** A Dynamics 365 for Retail jelenlegi verziójában már nem állíthatja be az URL-formátumot a **Kép** XML attribútumot a MPOS számára az **Alapértelmezett** entitások attribútum-csoportjában. Ha ismeri a Microsoft Dynamics AX 2012 R3-at, és már használja a Dynamics 365 for Retail jelenlegi verzióját, ellenőrizze, hogy mindig az új **Médiasablon definiálása** funkciót használja a képek beállításához. Ne használja vagy módosítsa a **Kép** attribútumot az entitások **Alapértelmezett** attribútumcsoportjában, beleértve a termékeket is. A képek **Alapértelmezett** attribútum-csoportjában közvetlenül elvégzett módosítások nem fognak megjelenni. Ez a beállítás nem lesz használható a jövőbeli programverzióban. Az alábbi eljárásokban a képek példaként a Katalógus entitásnál vannak beállítva. Ezen eljárások segítségével garantálhatja, hogy a megfelelő képelérési út legyen implicit módon beállítva az összes katalóguskép számára, amelyek közös útvonalat használnak. Például ha kívülről állított be egy médiakiszolgálót vagy CDN-t, és szeretné, hogy a képek MPOS-ben jelenjenek meg az egy adott áruháznál, a **Média sablon definiálása** funkció segítségével beállíthatja az elérési utat, amelyen keresztül az MPOS elérheti és beolvashatja a képeket. **Megjegyzés:** Ebben a bemutató adatpéldában a médiakiszolgáló a Retail szerverre van telepítve. Azonban a Dynamics 365 for Retail rendszeren kívül bárhova telepítheti.
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>A média alap URL-cím beállítása egy csatornához
 
-1.  Nyissa meg a Dynamics 365 for Operations HQ portált.
-2.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Csatornaprofilok** lehetőségekre. [![csatornaprofil1](./media/channel-profile1.png)](./media/channel-profile1.png)
+1.  Nyissa meg a Dynamics 365 for Retail HQ portált.
+2.  Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Csatornaprofilok** lehetőségekre. [![csatornaprofil1](./media/channel-profile1.png)](./media/channel-profile1.png)
 3.  A csatornaprofilban, amelyet az üzlet az MPOS-nél használ, frissítse a **Média alap URL-cím** mezőt a médiakiszolgáló vagy a CDN alap URL-címére. Az alap URL-cím az URL-cím első része, amely a különböző entitások esetében az összes képmappánál ugyanaz.[![csatornaprofil2](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>A médiasablon meghatározása egy entitáshoz
 
-1.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Katalóguskezelés** &gt; **Katalógusképek** lehetőségekre.
+1.  Kattintson a **Kiskereskedelem** &gt; **Katalóguskezelés** &gt; **Katalógusképek** lehetőségekre.
 2.  A **Katalógusképek** oldalon kattintson a Műveleti ablakra, majd **Médiasablon definiálása** lehetőségre. A **Médiasablon definiálása** párbeszédpanelen, az **Entitás** mezőben a **Katalógus** legyen az alapértelmezett beállítás.
-3.  A **Média elérési útja** gyorslapon írja be a fennmaradó útvonalat a kép helyéhez. A média elérési útvonala a **LanguageID** lehetőséget támogatja változóként. Például a bemutató adatok esetében létrehozhat egy **Katalógusok** mappát az összes katalóguskép számára a média alap URL-címe alatt a médiaszerverhez (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Minden egyes nyelvhez felállíthat egy mappát, például en-US vagy fr-FR, és minden mappába bemásolhatja a megfelelő képeket. Ha nem rendelkezik a különböző képekkel a különböző nyelvekhez, akkor kihagyhatja a **LanguageID** változót a mappastruktúrából, és mutathat közvetlenül a katalógusok mappára, amely tartalmazza a katalógusképeket. **Megjegyzés:** A Dynamics AX jelenlegi verziója a **{LanguageId}** tokent a Katalógus, Termék és a Kategória entitások esetében támogatja. (A jelenlegi szabvány alapján a **{LanguageID}** token nem támogatott a Vevő és Dolgozó entitások esetében, ez a Microsoft Dynamics AX 6.x. óta van érvényben)
+3.  A **Média elérési útja** gyorslapon írja be a fennmaradó útvonalat a kép helyéhez. A média elérési útvonala a **LanguageID** lehetőséget támogatja változóként. Például a bemutató adatok esetében létrehozhat egy **Katalógusok** mappát az összes katalóguskép számára a média alap URL-címe alatt a médiaszerverhez (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Minden egyes nyelvhez felállíthat egy mappát, például en-US vagy fr-FR, és minden mappába bemásolhatja a megfelelő képeket. Ha nem rendelkezik a különböző képekkel a különböző nyelvekhez, akkor kihagyhatja a **LanguageID** változót a mappastruktúrából, és mutathat közvetlenül a katalógusok mappára, amely tartalmazza a katalógusképeket. **Megjegyzés:** A Dynamics 365 for Retail jelenlegi verziója a **{LanguageId}** tokent a Katalógus, Termék és a Kategória entitások esetében támogatja. (A jelenlegi szabvány alapján a **{LanguageID}** token nem támogatott a Vevő és Dolgozó entitások esetében, ez a Microsoft Dynamics AX 6.x. óta van érvényben)
 4.  Képek esetén a fájlnév formátuma katalógus nevébe van véglegesen kódolva, és nem lehet módosítani. Ezért úgy nevezze át a képeket, hogy azok megfelelő katalógusnévvel rendelkezzenek, ezzel garantálva, hogy az MPOS megfelelően kezeli azokat.
 5.  A **Fájlkiterjesztés** mezőben válassza ki a várható fájlkiterjesztést, a képek típusától függően. Például a bemutatóadatokhoz a katalógusképek a .jpg kiterjesztéssel vannak beállítva. (A képfájlokat azért is átnevezhetik, hogy legyen katalógusnevük.)
 6.  Kattintson az **OK** gombra.
@@ -78,10 +80,10 @@ Az előző szakaszból tudjuk, hogy egy adott entitás médiasablonja csak egy k
 
 ### <a name="overwrite-by-using-edit-in-excel"></a>Felülírás az Excel Szerkesztés funkciójának használatával
 
-1.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Katalóguskezelés** &gt; **Katalógusképek** lehetőségekre.
+1.  Kattintson a **Kiskereskedelem** &gt; **Katalóguskezelés** &gt; **Katalógusképek** lehetőségekre.
 2.  A **Katalógusképek** oldalon kattintson a **Médiasablon definiálása** lehetőségre. A **Médiasablon definiálása** párbeszédpanelen, az **Entitás** mezőben a **Katalógus** legyen kiválasztva.
 3.  A **Média elérési útvonala** gyorslapon figyelje meg a kép helyét.
-4.  A **Kép-URL-címek létrehozása az Excel számára** gyorslapon kattintson **Létrehozás** lehetőségre. **Fontos:** ha megváltozik a médiasablon, rá kell kattintania **Létrehozás** opcióra, mielőtt használhatja a Szerkesztés funkciót az Excelben. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Megjelenik a kép-URL-címek előnézete, amely az utolsó elmentett médiasablon alapján jött létre. [![excel2](./media/excel2.png)](./media/excel2.png) **Megjegyzés:** az Excel számára generált URL-címek a definiált médiasablon útvonalát és konvencióit használják. Ezek a szabályok tartalmazzák a fájlnevekre vonatkozó szabályokat. Az elvárás, hogy a fizikai képeket a Dynamics AX-en kívül állította be, és a képek az URL-címeken keresztül érhetők el, melyeket a korábban definiált médiasablonból lehet beolvasni. Ezeket a beolvasott URL-eket az Excel Szerkesztés funkciójával írhatja fölül.
+4.  A **Kép-URL-címek létrehozása az Excel számára** gyorslapon kattintson **Létrehozás** lehetőségre. **Fontos:** ha megváltozik a médiasablon, rá kell kattintania **Létrehozás** opcióra, mielőtt használhatja a Szerkesztés funkciót az Excelben. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Megjelenik a kép-URL-címek előnézete, amely az utolsó elmentett médiasablon alapján jött létre. [![excel2](./media/excel2.png)](./media/excel2.png) **Megjegyzés:** az Excel számára generált URL-címek a definiált médiasablon útvonalát és konvencióit használják. Ezek a szabályok tartalmazzák a fájlnevekre vonatkozó szabályokat. Az elvárás, hogy a fizikai képeket a Dynamics 365 for Retail rendszeren kívül állította be, és a képek az URL-címeken keresztül érhetők el, melyeket a korábban definiált médiasablonból lehet beolvasni. Ezeket a beolvasott URL-eket az Excel Szerkesztés funkciójával írhatja fölül.
 5.  Kattintson a **Szerkesztés Excelben** lehetőségre.
 6.  Miután megnyitotta a Microsoft Excel munkalapot, kattintson a **Szerkesztés engedélyezése** lehetőségre, mikor kéri a program.
 7.  Mikor kéri a program, kattintson a **Bővítmény megbízható** lehetőségre a jobb oldali ablakban, és várjon a bővítmény telepítésének befejezéséig. [![A bővítmény megbízható](./media/excel4.jpg)](./media/excel4.jpg)
@@ -132,7 +134,7 @@ Az MPOS-t futtathatja Online módban (ha az MPOS kapcsolódik a Retail szerverhe
 
 A Kapcsolat nélküli módban használandó termékképek úgy állíthatók be, hogy a kívánt fizikai képeket feltölti az alap termékképhez.
 
-1.  Kattintson a **Termékinformációk kezelése** &gt; **Termékek** &gt; **Termékek** lehetőségekre.
+1.  Kattintson a **Termékinformációk kezelése** &gt; **Termékek** &gt; **Termékek** lehetőségekre.
 2.  Jelölje ki a terméket, amelyhez be kívánja állítani az offline képet.
 3.  Kattintson a **Szerkesztés** lehetőségre, majd kattintson a jobb oldali sarokban a nyílra a megfelelő ablak eléréséhez.
 4.  A **Termékkép** gyorslapon kattintson a **Kép módosítása** lehetőségre, és töltse fel a kiválasztott termékhez Offline módban használandó fizikai képet.

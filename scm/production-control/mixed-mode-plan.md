@@ -1,16 +1,16 @@
 ---
 title: "Vegyes módú tervezése - Elkülönített, folyamatos és lean típusú források kombinálása"
-description: "Ez a cikk a vegyes módú tervezéssel kapcsolatban nyújt tájékoztatást. A vegyes módú tervezésben modellezheti az anyagáramláson alapuló ellátási láncot. A Microsoft Dynamics 365 for Operations meggyőződik arról, hogy az anyag folyamat követi a modelleket, függetlenül a kiválasztott ellátási házirendtől (kanban-ok termelési rendelések, beszerzési rendelések, feldolgozásiköteg-rendelések és átmozgatási rendelések)."
+description: "Ez a cikk a vegyes módú tervezéssel kapcsolatban nyújt tájékoztatást. A vegyes módú tervezésben modellezheti az anyagáramláson alapuló ellátási láncot. A Microsoft Dynamics 365 for Finance and Operations meggyőződik arról, hogy az anyag folyamat követi a modelleket, függetlenül a kiválasztott ellátási házirendtől (kanban-ok termelési rendelések, beszerzési rendelések, feldolgozásiköteg-rendelések és átmozgatási rendelések)."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 686d61f476fbdf95348cacfd93b1e18d51e79732
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9dbbe540c919d27bafcc10614f308e5b6ba313f1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk a vegyes módú tervezéssel kapcsolatban nyújt tájékoztatást. A vegyes módú tervezésben modellezheti az anyagáramláson alapuló ellátási láncot. A Microsoft Dynamics 365 for Operations meggyőződik arról, hogy az anyag folyamat követi a modelleket, függetlenül a kiválasztott ellátási házirendtől (kanban-ok termelési rendelések, beszerzési rendelések, feldolgozásiköteg-rendelések és átmozgatási rendelések). 
+Ez a cikk a vegyes módú tervezéssel kapcsolatban nyújt tájékoztatást. A vegyes módú tervezésben modellezheti az anyagáramláson alapuló ellátási láncot. A Microsoft Dynamics 365 for Finance and Operations meggyőződik arról, hogy az anyag folyamat követi a modelleket, függetlenül a kiválasztott ellátási házirendtől (kanban-ok termelési rendelések, beszerzési rendelések, feldolgozásiköteg-rendelések és átmozgatási rendelések). 
 
 Kiválaszthatja a termék biztosítására szolgáló átfogó stratégiáját a termékstruktúrától függetlenül.  
 
@@ -41,17 +41,17 @@ Például, használhat kanbanvezérlést az összeszerelés során, ahol az öss
 Az alapütemezésben használt ellátási irányelvek részletessége a fedezeti dimenzióként engedélyezet tárolási dimenzióktól függ. A különböző típusú helyszínek ellátásának és feltöltésének ellenőrzésére szolgáló alapütemezés engedélyezéséhez (például a gyártószint különböző gyártási egységekre történő felosztásával vagy a különböző anyagtípusokat és kész termékeket tároló raktárak elválasztásával), ajánljuk a Hely és raktár fedezeti dimenzióként való engedélyezését. Másik lehetőségként a raktár kihagyható a fedezeti dimenziók közül. Ebben az esetben a haladó raktárkezelés használata során a raktáron belüli minden mozgást a raktármunka ellenőrzi, míg a raktárak között mozgásokat ellenőrizhetik a visszavonási kanbanok.
 
 ## <a name="supply-policies"></a>Ellátási irányelvek
-A Dynamics 365 for Operations vegyes módú tervezése szabályozza azt, hogy miként biztosítják a termék ellátását, és az ellátás alapján miként adják ki a származtatott követelményeket (termékek fogyasztása anyagjegyzékből \[AJ, BOM\]). A rendeléstípus alapján a rendszer automatikusan biztosítja az anyagforrásokat, hogy megfeleljen a követelményeknek.  
+A Finance and Operations vegyes módú tervezése szabályozza azt, hogy miként biztosítják a termék ellátását, és az ellátás alapján miként adják ki a származtatott követelményeket (termékek fogyasztása anyagjegyzékből \[AJ, BOM\]). A rendeléstípus alapján a rendszer automatikusan biztosítja az anyagforrásokat, hogy megfeleljen a követelményeknek.  
 
-Az ellátási irányelvek meghatározhatók a termék szintjén vagy a követelmény által támogatott bármilyen részletességgel. Az ellátási irányelvek részletességét Ön határozza meg az **Alapértelmezett rendelésbeállítások**oldalon.  
+Az ellátási irányelvek meghatározhatók a termék szintjén vagy a követelmény által támogatott bármilyen részletességgel. Az ellátási irányelvek részletességét Ön határozza meg az **Alapértelmezett rendelésbeállítások** oldalon.  
 
-Az ellátási irányelvek szabályozhatók termék, cikkdimenzió (konfiguráció, szín és méret), hely és raktár szerint. Ez a beállítás a **Cikk fedezete**oldalon végezhető elé.  
+Az ellátási irányelvek szabályozhatók termék, cikkdimenzió (konfiguráció, szín és méret), hely és raktár szerint. Ez a beállítás a **Cikk fedezete** oldalon végezhető elé.  
 
 Az alapértelmezett rendelési típus szabályozza, hogy mit generál a rendelés alaptervezése.  
 
-Az ellátási lánc modelljétől függetlenül a Dynamics 365 for Operations támogatja az Ön ellátási irányelveit. Lehetnek kanban forrásokból származó termelési rendelései. Emellett lehet olyan kötegrendelése, amelyhez szállítással vagy kanbanokkal ellátott termék szükséges.  
+Az ellátási lánc modelljétől függetlenül a Finance and Operations támogatja az Ön ellátási irányelveit. Lehetnek kanban forrásokból származó termelési rendelései. Emellett lehet olyan kötegrendelése, amelyhez szállítással vagy kanbanokkal ellátott termék szükséges.  
 
-A Dynamics 365 for Operations garantálja, hogy az anyagáramlás követi a modellt.  
+A Finance and Operations garantálja, hogy az anyagáramlás követi a modellt.  
 
 Az anyagok kitárolására szolgáló raktár hozzárendelése dinamikusan történik futási idő közben az ellátási irányelvek meghatározása után.  
 
@@ -64,7 +64,7 @@ Az erőforrás-felhasználás fontos funkció. Az erőforrás felhasználás leh
 
 Az erőforrás-felhasználáshoz szükséges, hogy a raktárat, ahonnan kitárolják az anyagokat, a termék ellátási módja alapján rendeljék hozzá. Más szavakkal futási idő közben a rendszer megtalálja a gyártáshoz szükséges erőforrásokat. Az erőforrások alapján a rendszer megtalálja a kitárolási raktárat.  
 
-Az ellátási irányelvektől független munka esetében nem kell megváltoztatnia az anyagjegyzéken szereplő információt, ha az ellátás módosul. Az eseti változások esetében a Dynamics 365 for Operations garantálja, hogy az anyagok forrása a megfelelő raktár lesz.
+Az ellátási irányelvektől független munka esetében nem kell megváltoztatnia az anyagjegyzéken szereplő információt, ha az ellátás módosul. Az eseti változások esetében a Finance and Operations garantálja, hogy az anyagok forrása a megfelelő raktár lesz.
 
 ## <a name="process-manufacturing--the-production-type"></a>Folyamatgyártás – A termelési típus
 A kevert mód teljes rugalmassága érdekében azt ajánljuk, hogy minden termékhez termeléstípusú anyagjegyzéket használjon. Így termelési rendeléseket, kanbanokat, szállítási rendeléseket vagy beszerzési rendeléseket használhat a termék biztosításához. A folyamatgyártás esetében a következő termeléstípusok közül kell választani: **receptúra**, **társtermék**, **melléktermék** vagy **tervezési cikk**. A kanbanok és a termelési rendelések nem használhatók ezen termeléstípusok esetében.

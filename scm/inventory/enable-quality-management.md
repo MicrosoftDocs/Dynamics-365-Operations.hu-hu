@@ -1,16 +1,16 @@
 ---
 title: "Minőségkezelés áttekintése"
-description: "Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül."
+description: "Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,13 +32,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül.
+Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül.
 
-A minőségkezelés segítséget nyújt a szabálytalan termékek javítási folyamatának kezelésében, azok eredetétől függetlenül. Mivel a diagnosztikai típusok javítási jelentésekhez kapcsolódnak, a Microsoft Dynamics 365 for Operations rendszer képes beütemezni a problémák megoldásához és azok visszatérésének megelőzéséhez szükséges feladatokat.
+A minőségkezelés segítséget nyújt a szabálytalan termékek javítási folyamatának kezelésében, azok eredetétől függetlenül. Mivel a diagnosztikai típusok javítási jelentésekhez kapcsolódnak, a Microsoft Dynamics 365 for Finance and Operations rendszer képes beütemezni a problémák megoldásához és azok visszatérésének megelőzéséhez szükséges feladatokat.
 
 A szabálytalanság kezelésére szolgáló funkció mellett a minőségkezelés egyéb funkciói lehetővé teszik a problémakövetést problématípus (akár belső problémák) szerint, valamint a rövid- és hosszútávú megoldások azonosítását. A fő teljesítménymutatókról (KPI-kről) vezetett statisztikák betekintést nyújtanak a múltban megtörtént szabálytalansági problémákba és az azok javítására használt megoldásokba. Az előzményadatok segítségével felülvizsgálhatja a korábbi minőségi mérések hatékonyságát, és kidolgozhatja a jövőben alkalmazni kívánt megfelelő méréseket.
 
-Mikor beállít egy minőségi társítást, a Microsoft Dynamics 365 for Operations rendszer képes létrehozni különféle üzleti folyamatok, események és feltételek minőségi rendeléseit. A minőségi társítás vonatkozhat egyetlen cikkre, cikkek egy csoportjára vagy minden cikkre.
+Mikor beállít egy minőségi társítást, a Finance and Operations képes létrehozni különféle üzleti folyamatok, események és feltételek minőségi rendeléseit. A minőségi társítás vonatkozhat egyetlen cikkre, cikkek egy csoportjára vagy minden cikkre.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Példák a minőségkezelés használatára
 A minőségkezelés rugalmas és sokféle módon megvalósítható, így meg tud felelni az ellátási lánc műveleteinek adott szintjeire vonatkozó követelményeknek. Az alábbi példák ezeknek a funkcióknak a felhasználási lehetőségeit mutatják be.

@@ -1,9 +1,9 @@
 ---
 title: "Követelések és beszedések a Kinnlevőségek modulban"
-description: "A kinnlevőségek beszedési információját a Microsoft Dynamics 365 for Operations beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából."
+description: "A kinnlevőségek beszedési információját a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74f671a35fa1dbeeb120fe968b1bcc09868f57d5
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-A kinnlevőségek beszedési információját a Microsoft Dynamics 365 for Operations beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
+A kinnlevőségek beszedési információját a Finance and Operations beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
 
 Mielőtt elkezdené beállítani a beszedéseket vagy elkezdene dolgozni velük, ismerje meg a következő fogalmakat:
 -   Vevő korosítási pillanatképei egy időpontban tartalmazzák Korosított egyenleget
@@ -59,9 +59,9 @@ A rendszer korosítási időszak definícióban lévő egyes korosítási idősz
 A vevőgyűjtők olyan lekérdezések, amelyek meghatározzák a beszedési vagy korosítási folyamathoz megjeleníthető és kezelhető vevőkódok egy adott rekordját. Használja a vevőgyűjtőket a Korosított egyenlegek, Beszedési tevékenységek és Beszedési esetek listaoldalon található adatok szűréséhez. Vevőgyűjtők segítségével továbbá szűrheti a vevői számlákat, amelyek akkor szerepelnek, ha korosítási pillanatképek kerülnek létrehozásra.
 
 ## <a name="collections-agents"></a>Kintlevőségkezelők
-Alapértelmezés szerint a Microsoft Dynamics 365 for Operations-felhasználók láthatják az összes vevői adatot a beszedési listaoldalakon. Használhatja a pénzbehajtók rekordjait azoknak a vevőgyűjtőknek a meghatározásához, amelyek elérhetők a beszedési listaoldalakon és a Beszedési oldalon lévő információk szűréséhez. 
+Alapértelmezés szerint a Microsoft Dynamics 365 for Finance and Operations-felhasználók láthatják az összes vevői adatot a beszedési listaoldalakon. Használhatja a pénzbehajtók rekordjait azoknak a vevőgyűjtőknek a meghatározásához, amelyek elérhetők a beszedési listaoldalakon és a Beszedési oldalon lévő információk szűréséhez. 
 
-A beszedéskezelő olyan személy, aki a vevőkkel együttműködik annak biztosítására, hogy a kifizetések beszedésre kerüljenek a kellő időben. A Microsoft Dynamics 365 for Operations rendszerben a pénzbehajtók olyan dolgozók, akik a Felhasználó beállítások oldalon lévő felhasználókhoz vannak hozzárendelve.
+A beszedéskezelő olyan személy, aki a vevőkkel együttműködik annak biztosítására, hogy a kifizetések beszedésre kerüljenek a kellő időben. A Finance and Operations rendszerben a pénzbehajtók olyan dolgozók, akik a Felhasználó beállítások oldalon lévő felhasználókhoz vannak hozzárendelve.
 
 ## <a name="collections-list-pages"></a> Beszedési listaoldalak 
 A következő listaoldalak megkönnyítik beszedési információk rendezését.
@@ -71,7 +71,7 @@ A következő listaoldalak megkönnyítik beszedési információk rendezését.
 
 > [!NOTE]
 > A korosítási pillanatképet létre kell hozni, mielőtt megtekintheti ezeken az oldalakon lévő információkat. Csak azoknak a vevőknek az információja jelenik meg, akinek a korosítási pillanatképe létre lett hozva. A listaoldalon megjelenített rekordok tovább lehet szűrni a következők alapján:
-<li>Alapértelmezés szerint a Microsoft Dynamics 365 for Operations-felhasználó hozzáféréssel rendelkezik az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
+<li>Alapértelmezés szerint a Finance and Operations-felhasználó hozzáféréssel rendelkezik az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
 <li>Ha léteznek vevőgyűjtők, a felhasználót pénzbehajtóként kell beállítani, hogy használhassa a gyűjtőt a beszedési listaoldalon lévő információk szűréséhez. A kiválasztott vevőgyűjtőben lévő vevők számára az információ korlátozott.</li>
 <li>Ha egy felhasználó pénzbehajtóként van beállítva, csak annak a pénzbehajtónak kiválasztott gyűjtők érhetők el a listaoldalon. Ha a Beszedéskezelő megtekintheti az összes vevőgyűjtőt váltás van kiválasztva a Pénzbehajtó oldalon a pénzbehajtó számára, minden gyűjtő elérhető számára.</li>
 

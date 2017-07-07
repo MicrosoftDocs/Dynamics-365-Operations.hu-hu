@@ -1,27 +1,28 @@
 ---
 title: "Fizetési módszerek hívásközpontnál"
-description: "Ez a témakör bemutatja a Kiskereskedelem és kereskedelem hívásközpontjaiban használható fizetési módokat."
+description: "Ez a témakör bemutatja a Dynamics 365 for Retail rendszer hívásközpontjaiban használható fizetési módokat."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 930264f9c22cbde102b59237e432df7d7e4836c8
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 07cb1bcb3870b96e34f7f6725fe5b7da32628fde
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,13 +32,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Ez a témakör bemutatja a Kiskereskedelem és kereskedelem hívásközpontjaiban használható fizetési módokat.
+Ez a témakör bemutatja a Dynamics 365 for Retail rendszer hívásközpontjaiban használható fizetési módokat.
 
-A Microsoft Dynamics AX Kiskereskedelem és kereskedelem modul más csatornáiban használt fizetési módok, például: készpénz, csekk, hitelkártya és ajándékutalvány is használható telefonos ügyfélszolgálatnál. A telefonos ügyfélszolgálatra történő fizetési mód beállítása után a telefonos ügyfélszolgálat felhasználóinak a **Fizetések** képernyő **Értékesítési rendelés** részében az egyik választható beállításként jelenik meg. Továbbá utalványokat állíthat be, amelyek kedvezményeket biztosítanak azon vásárlók részére, akik a rendeléseiket a szervezet hívásközpontjában adták le. Az utalványok lehetnek fix összegűek, illetve egy termék árának vagy a teljes rendelésnek egy bizonyos százaléka. Például az összeg alapú utalvány adhat 75,00 értékű kedvezményt, ha a vásárló legalább 750,00 értékben költ. Létrehozhat különböző utalványokat, felállíthat alá- és fölérendelt utalványokat, valamint másolhatja és érvénytelenítheti is őket. Használja az alábbi táblázatban szereplő beállításokat az utalvány létrehozásához.
+Az egyéb csatornákban használt fizetési módok, például: készpénz, csekk, hitelkártya és ajándékutalvány is használható telefonos ügyfélszolgálatnál. A telefonos ügyfélszolgálatra történő fizetési mód beállítása után a telefonos ügyfélszolgálat felhasználóinak a **Fizetések** képernyő **Értékesítési rendelés** részében az egyik választható beállításként jelenik meg. Továbbá utalványokat állíthat be, amelyek kedvezményeket biztosítanak azon vásárlók részére, akik a rendeléseiket a szervezet hívásközpontjában adták le. Az utalványok lehetnek fix összegűek, illetve egy termék árának vagy a teljes rendelésnek egy bizonyos százaléka. Például az összeg alapú utalvány adhat 75,00 értékű kedvezményt, ha a vásárló legalább 750,00 értékben költ. Létrehozhat különböző utalványokat, felállíthat alá- és fölérendelt utalványokat, valamint másolhatja és érvénytelenítheti is őket. Használja az alábbi táblázatban szereplő beállításokat az utalvány létrehozásához.
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Attribútum**             | A **Beváltási arány**mezőben adja meg a várható beváltási arányt százalékban, majd válassza ki, hogy az utalvány egyszer használható legyen-e, ki legyen--e adva újra automatikusan, vagy pedig egy adott vevőre vonatkozzon-e.                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Attribútum**             | A **Beváltási arány** mezőben adja meg a várható beváltási arányt százalékban, majd válassza ki, hogy az utalvány egyszer használható legyen-e, ki legyen--e adva újra automatikusan, vagy pedig egy adott vevőre vonatkozzon-e.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Érvényes**                 | A **Kezdő dátum** és a **Záró dátum** mezőkben adja meg azt a kezdő és befejező dátumot, amelyek között az utalvány érvényes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Szabályokkal/szabályok nélkül** | A **Katalógusok** és a **Cikkek** mezőkben adja meg, hogy melyik katalógust vagy cikket foglalja, illetve nem foglalja magában az utalvány. Ha kiválasztja a **Felvétel** vagy **Kihagyás** lehetőséget, kattintson a **Beállítás** lehetőségre, majd válassza **Katalógusok felvétele/kihagyása** vagy a **Termékek felvétele/kihagyása** lehetőséget, hogy adatokat adhasson meg a katalógusról vagy cikkről. Ha az **Egyik sem** lehetőséget választja, akkor az összes cikket és katalógust magában foglalja az utalvány.                                                                                                                                                                                                                          |
 | **Vegyes**         | Ha nem szeretné, hogy ezt az utalványt további kedvezményekkel is igénybe vegyék, jelölje be a **Kizárólagos** jelölőnégyzetet. Ezután az **Eredet** mezőben válassza ki, hogy hol lehet használni az utalványt. Ha ez egy gyártói utalvány, válassza a **Gyártó kupon** jelölőnégyzetet.                                                                                                                                                                                                                                                                                                                                                                |

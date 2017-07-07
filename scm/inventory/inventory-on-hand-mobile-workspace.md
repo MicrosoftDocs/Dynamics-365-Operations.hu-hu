@@ -1,16 +1,16 @@
 ---
 title: "Aktuális készlet mobil munkaterület"
-description: "Ez a témakör az Aktuális készlet mobil munkaterületről nyújt tájékoztatást, amely a Microsoft Dynamics 365 for Operations mobilalkalmazásban érhető el. A munkaterület segítségével bármikor és bárhol, mobilon tájékozódhat a fenntartott és a rendelkezésre álló készletről."
-author: YuyuScheller
+description: "Ez a témakör az Aktuális készlet mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével bármikor és bárhol, mobilon tájékozódhat a fenntartott és a rendelkezésre álló készletről."
+author: Mirzaab
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
+ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
+ms.openlocfilehash: d14f3510df45169e3b77ee9c4f3d0d9d389e6036
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,11 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör az **Aktuális készlet** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével bármikor és bárhol tájékozódhat a fenntartott és a rendelkezésre álló készletről.
 
-Ez a témakör az Aktuális készlet mobil munkaterületről nyújt tájékoztatást, amely a Microsoft Dynamics 365 for Operations mobilalkalmazásban érhető el. A munkaterület segítségével bármikor és bárhol, mobilon tájékozódhat a fenntartott és a rendelkezésre álló készletről.
+A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban való használatra tervezték.
 
-<a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Az Aktuális készlet mobil munkaterület áttekintése
---------------------------------------------------
-
+## <a name="overview"></a>Áttekintés
 Általában a cégek készleténél több szállításra és bevételezésre kerül sor mindennap. Ezek a mozgások folyamatosan módosítják az aktuális készlet állapotát. Az **Aktuális készlet** mobil munkaterület segítségével átláthatja a több vállalatot érintő aktuális készlet állapotát, így tetszés szerinti a mobileszközön a legfrissebb adatok alapján tájékozódhat a készletadatokról. Függetlenül attól, hogy a raktárban, beszerzésnél, értékesítésben, gyártásban vagy a vezetőségben dolgozik-e, vagy más szerepkörrel rendelkezik, az aktuális készletadatokat bárhol és bármikor elérheti. 
 
 A mobil munkaterületen azonnal megtekinthető az aktuális, különböző létesítményeket felölelő állapot. Továbbá megtekinthető a különböző létesítményeket felölelő aktuális készlet, az aktuális anyagfoglalások és a le nem foglalt aktuális készlet. Ezenkívül az aktuális készlet cikkszámok megadásával lekérdezhető, és az aktuális termékekre vagy változatokra szűrt keresés végezhető. 
@@ -44,8 +43,8 @@ A mobil munkaterületen azonnal megtekinthető az aktuális, különböző léte
 A mobil munkaterület konkrétan az alábbi szolgáltatásokat nyújtja:
 
 -   Kereshet terméktípus és termék neve alapján termékeket, és megtekintheti a rájuk vonatkozó aktuális készletállapotot.
-
 -   A kijelölt termékeknél a következő információkat tekintheti meg:
+
     -   Aktuális készlet telephely szerint
     -   Aktuális készlet raktár szerint
     -   Aktuális készlet hely szerint
@@ -53,19 +52,21 @@ A mobil munkaterület konkrétan az alábbi szolgáltatásokat nyújtja:
     -   Aktuális készlet készlet állapota szerint
     
 -   Az aktuális termékkészlet az alábbi módon jelenik meg:
+
     -   Fizikai készlet alapján (Ez a nézet a teljes mennyiséget jelöli.)
     -   Fizikai fenntartott alapján (Ez a nézet a fenntartott mennyiséget jelöli.)
     -   Elérhető fizikai alapján (Ez a nézet a rendelkezésre álló, nem fenntartott mennyiséget jelöli.)
 
 ## <a name="prerequisites"></a>Előfeltételek
-Az **Aktuális készlet** mobil munkaterület használata előtt győződjön meg arról, hogy a rendszergazda biztosítja a következő előfeltételeket.
+Az előfeltételek eltérőek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás 2017. júliusi frissítését használja 
+Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését, a rendszergazdának közzé kell tennie az **Aktuális készlet** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, 1611-es verzióját használja a 3-as vagy újabb platformfrissítéssel
+Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a szervezeténél a 3-as vagy újabb platformfrissítéssel, akkor a rendszergazdának a következő előfeltételeket kell teljesítenie. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Előfeltételek</th>
@@ -75,55 +76,52 @@ Az **Aktuális készlet** mobil munkaterület használata előtt győződjön me
 </thead>
 <tbody>
 <tr class="odd">
-<td>A Microsoft Dynamics 365 for Operations 1611-es verziójához a 3. vagy újabb platformfrissítést kell végrehajtani.</td>
+<td>Telepítse a KB 4013633 gyorsjavítást.</td>
 <td>Rendszergazda</td>
-<td>Ha a vállalati hálózatra még nincs telepítve a Dynamics 365 for Operations, a rendszergazdának el kell olvasnia a következő tudnivalókat: <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+
+<td>A KB 4013633 egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza az <strong>Aktuális készlet</strong> mobil munkaterületet. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Töltse le a metaadatok gyorsjavítását a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza telepíthető csomagot</a>.</li>
+
+</ol></td>
 </tr>
 <tr class="even">
-<td>A KB 4013633 végrehajtása kötelező.</td>
+<td><strong>Aktuális készlet</strong> mobil munkaterület közzététele.</td>
 <td>Rendszergazda</td>
-<td>A KB 4013633 (egy X++ frissítés vagy a metaadatok gyorsjavítása) négy mobil munkaterületet tartalmaz az ellátásilánc-kezeléshez. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket:
-<ol>
-<li>Töltse le a KB 4013633 frissítést a Microsoft Dynamics Lifecycle Services (LCS) webhelyéről.</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza a telepíthető csomagot</a> és a Dynamics 365 for Operations rendszerre.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>Az <strong>Aktuális készlet</strong> mobil munkaterületet közzé kell tenni a Dynamics 365 for Operations mobilalkalmazás számára.</td>
-<td>Rendszergazda</td>
-<td><ol>
-<li>Indítsa el a Dynamics 365 for Operations rendszert a böngészőben.</li>
-<li>A <strong>Rendszerparaméterek</strong> lapon válassza a <strong>Mobil munkaterületek kezelése</strong> lehetőséget.</li>
-<li>Válassza ki az <strong>Aktuális készlet</strong> munkaterületet.</li>
-<li>Kattintson a <strong>Mobil munkaterület közzététele</strong> lehetőségre.</li>
-</ol></td>
+<td>Lásd: <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobil munkaterület közzététele</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Töltse le és telepítse a Dynamics 365 for Operations mobilalkalmazást
-A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Microsoft Dynamics 365 for Operations mobilalkalmazást.
+## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
 
--   Android: [Dynamics 365 for Operations a Google Play Áruházban](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone: [Dynamics 365 az iTunes App Store áruházban](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Jelentkezzen be a Dynamics 365 for Operations mobilalkalmazásba
+-   [Android-telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## <a name="sign-in-to-the-mobile-app"></a>Bejelentkezés a mobilalkalmazásba
+
 1.  Indítsa el az alkalmazást a mobileszközén.
-2.  Írja be a Dynamics_365_for_Operations URL-jét.
-3.  Adja meg a vállalatot a bejelentkezéshez. Például írja be azt, hogy **USMF**.
-4.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót a Dynamics 365 for Operations-fiókjához. Adja meg a hitelesítési adatait.
-5.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, lekéréssel frissítheti mobil munkaterületek listáját. 
+2.  Adja meg a Dynamics 365 URL-címét.
+3.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
+4.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
 
     [![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>A termék aktuális készletének megtekintése az Aktuális készlet mobil munkaterület segítségével
+## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a>A termék aktuális készletének megtekintése az Aktuális készlet mobil munkaterület segítségével
+
 1.  A mobileszközön válassza az **Aktuális készlet** munkaterület.
-2.  Válassza az **Aktuális ellenőrzése egy cikkhez** lehetőséget. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött termékek listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért lásd a [Dynamics 365 for Operations mobilplatformot](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
-3.  Ha a cikk nem szerepel a listán, válassza a **Továbbiak keresése** elemet a Dynamics 365 for Operationsben végzett online keresés érdekében. Keressen termékszám alapján, vagy térjen át terméknévalapú keresésre.
+
+2.  Válassza az **Aktuális ellenőrzése egy cikkhez** lehetőséget. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött termékek listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)
+3.  Ha a cikk nem szerepel a listán, válassza a **Továbbiak keresése** lehetőséget. Keressen termékszám alapján, vagy térjen át terméknévalapú keresésre.
+
 4.  Válasszon ki egy terméket. Ha a cikkhez tartozik kép, a kép megjelenik.
 5.  Az aktuális készlet állapotának megjelenítéséhez a következő lehetőségek közül választhat:
+
     -   Aktuális megjelenítése telephely szerint
     -   Aktuális megjelenítése raktár szerint
     -   Aktuális megjelenítése hely szerint
@@ -134,9 +132,4 @@ A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Micro
     -   Fizikai készlet alapján (Ez a nézet a teljes mennyiséget jelöli.)
     -   Fizikai fenntartott alapján (Ez a nézet a fenntartott mennyiséget jelöli.)
     -   Elérhető fizikai alapján (Ez a nézet a rendelkezésre álló, nem fenntartott mennyiséget jelöli.)
-
-
-
-
-
 

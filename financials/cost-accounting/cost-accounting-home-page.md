@@ -3,13 +3,13 @@ title: "Költségkönyvelési kezdőlap"
 description: "Ez a témakör a Költségkönyvelés modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bcbf755c7adb3589ca0fa5242589f1aae3ef6e1b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 4514c6dbf014720c29e79889bf1fcc0efd6cd3ec
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -50,7 +50,7 @@ A Költségkönyvelés modul lehetővé teszi a következőket:
 
 ## <a name="get-started"></a>Első lépések
 
-A Költségkönyvelés laborban megtalálja a Microsoft Dynamics 365 for Operations - Költségkönyvelés konfigurálásához és tényleges költségelemzés végzéséhez szükséges alapvető lépéseket. Emellett több eljárást is talál, amelyeket a megjelenés sorrendjében végezhet el.
+A Költségkönyvelés interaktív laboratóriumai ismertetik a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition – Költségkönyvelés modul konfigurálásának alapvető lépéseit a tényleges költségelemzés elvégzése érdekében. Emellett több eljárást is talál, amelyeket a megjelenés sorrendjében végezhet el.
 
 -   [Ismerkedés a Költségkönyveléssel](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (ismertető, CustomerSource fiókot igényel)
 
@@ -69,10 +69,10 @@ A Költségkontroll mobil munkaterülettel a költséghelyek vezetői bármikor 
 -   [Költségkontroll mobil munkaterület](cost-controlling-mobile-workspace.md)
 
 ## <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelési elemzés Power BI-tartalom
-A Költségkönyvelési elemzés Microsoft Power BI-tartalom költségellenőrök, illetve olyan személyek részére készült, aki a szervezetük költségellenőrzéséért felelősek. Kulcsfontosságú mérőszámokat foglal magában, például költség, nagyság, illetve költségszorzó és tényleges költség, tervezett költség és rugalmas tervezett költség alapján. A Microsoft Dynamics 365 for Operations költségkönyvelési tranzakciós adatait használja, és összesítő nézetet biztosít a teljes szervezet költségeiről egyetlen kimutatási pénznemben. A vezetők szűrhetik az adatokat költségobjektumok szerint szervezeti egységeik költségkontrollja számára akkor is, ha a szervezet több jogi személyből állhat.
+A Költségkönyvelési elemzés Microsoft Power BI-tartalom költségellenőrök, illetve olyan személyek részére készült, aki a szervezetük költségellenőrzéséért felelősek. Kulcsfontosságú mérőszámokat foglal magában, például költség, nagyság, illetve költségszorzó és tényleges költség, tervezett költség és rugalmas tervezett költség alapján. A Finance and Operations Költségkönyvelésének tranzakciós adatait használja, és összesítő nézetet biztosít a teljes szervezet költségeiről egyetlen kimutatási pénznemben. A vezetők szűrhetik az adatokat költségobjektumok szerint szervezeti egységeik költségkontrollja számára akkor is, ha a szervezet több jogi személyből állhat.
 
--   [Költségkönyvelési elemzés Power BI-tartalom](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
--   [Biztonság beállítása a Költségkönyvelési elemzés Power BI-tartalomhoz](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+-   [Költségkönyvelési elemzés Power BI-tartalom](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
+-   [Biztonság beállítása a Költségkönyvelési elemzés Power BI-tartalomhoz](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
 
 
 

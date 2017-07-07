@@ -1,27 +1,27 @@
 ---
 title: "Költségkontroll mobil munkaterület"
-description: "Ez a témakör a Költségkontroll mobil munkaterületről nyújt tájékoztatást, amely a Microsoft Dynamics 365 for Operations mobilalkalmazásban érhető el. A munkaterület lehetővé teszi a költséghelyek vezetői számára, hogy bármikor és bárhol megtekinthessék a költséghely teljesítményével kapcsolatos információkat."
+description: "Ez a témakör a Költségellenőrzés mobil munkaterületről nyújt tájékoztatást. A munkaterület lehetővé teszi a költséghelyek vezetői számára, hogy bármikor és bárhol megtekinthessék a költséghely teljesítményével kapcsolatos információkat."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267114
 ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ms.search.region: global
-ms.author: yuyus
+ms.author: aevengir
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 09383c24b0dd2ad61a836f6c8dc97f4389915772
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dbedf75a6f61a9e2bc644056f0dd1e7499cedc42
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,56 +30,62 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör a **Költségellenőrzés** mobil munkaterületről nyújt tájékoztatást. A munkaterület lehetővé teszi a költséghelyek vezetői számára, hogy bármikor és bárhol megtekinthessék a költséghely teljesítményével kapcsolatos információkat.
 
-Ez a témakör a Költségkontroll mobil munkaterületről nyújt tájékoztatást, amely a Microsoft Dynamics 365 for Operations mobilalkalmazásban érhető el. A munkaterület lehetővé teszi a költséghelyek vezetői számára, hogy bármikor és bárhol megtekinthessék a költséghely teljesítményével kapcsolatos információkat. 
+A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban való használatra tervezték.
 
-<a name="overview-of-the-cost-controlling-mobile-workspace"></a>A Költségkontroll mobil munkaterület áttekintése
--------------------------------------------------
-
-A **Költségkontroll** mobil munkaterületen azonnal megtekinthető a költséghelyek aktuális teljesítménye, és a tényleges költségek összevethetők a tervezett költségekkel. Az egyes költségtényezők állapotáig leáshat. 
+## <a name="overview"></a>Áttekintés
+A **Költségkontroll** mobil munkaterületen azonnal megtekinthető a költséghelyek aktuális teljesítménye, és a tényleges költségek összevethetők a tervezett költségekkel. Az egyes költségtényezők állapotáig leáshat.
 
 Például egy alkalmazott meghívót kap egy nemzetközi konferenciára, de a szervezetnek fedeznie kell az utazási költségeket. Az alkalmazott megkérdezi a vezetőjét, hogy részt vehet-e a konferencián. A vezető megnyitja a **Költségkontroll** mobil munkaterületet a mobiltelefonján, és megnézi, hogy van-e költségvetése ahhoz, hogy az alkalmazott részt vehessen a konferencián.
 
 ### <a name="data-security"></a>Adatbiztonság
+A **Költségkontroll** mobil munkaterület adatait felhasználói hitelesítő adatok védik. A költséghely vezetői csak a saját költséghelyük adatait láthatják. A hozzáférési szint biztonságának kezelése a **Költségkönyvelési** modulon belül történik.
 
-A **Költségkontroll** mobil munkaterület adatait felhasználói hitelesítő adatok védik. A költséghely vezetői csak a saját költséghelyük adatait láthatják. A hozzáférési szint biztonságának kezelése a **Költségkönyvelési** modulon belül történik. 
-
-A **Költségkontroll** mobil munkaterület konfigurációját a költségkönyvelők határozzák meg a **Költségkönyvelés** modulban. A munkaterület a Microsoft Dynamics 365 for Operations mobilalkalmazásban való közzététele után elérhetővé válik az alkalmazásban. Ennek következtében a szervezet összes költséghelyének vezetője ugyanabban a formátumban láthatja az adatokat.
+A **Költségkontroll** mobil munkaterület konfigurációját a költségkönyvelők határozzák meg a **Költségkönyvelés** modulban. A munkaterület a mobilalkalmazásban való közzététele után elérhetővé válik az alkalmazásban. Ennek következtében a szervezet összes költséghelyének vezetője ugyanabban a formátumban láthatja az adatokat.
 
 ### <a name="actions-views-and-links"></a>Műveletek, nézetek és hivatkozások
-
-A Dynamics 365 for Operations alkalmazás **Költségkontroll** mobil munkaterülete a következő műveleteket, nézeteket és hivatkozásokat biztosítja:
+A **Költségellenőrzés** mobil munkaterület a következő műveleteket, nézeteket és hivatkozásokat biztosítja:
 
 -   **Műveletek:**
+
     -   Használja a **Konfiguráció kiválasztása** lehetőséget az elrendezés kiválasztásához.
-    -   Használja a **Költségobjektum kiválasztása** elemet azon költséghelyek kiválasztásához, amelyek adatait szűrni szeretné. **Megjegyzés:** a listában megjelenő költséghelyek attól függnek, hogy milyen hozzáférést engedélyezett a **Költségkönyvelés** modulban.
--   **Nézetek:** Annak alapján, hogy milyen műveletek vannak kiválasztva, és milyen a **Költségkönyvelés** modul konfigurációja, a következő információkat tekintheti meg a kártyákon.
-    -   Tényleges és költségvetési (aktuális időszak)
-    -   Tényleges és módosított költségvetési (aktuális időszak)
+    -   Használja a **Költségobjektum kiválasztása** elemet azon költséghelyek kiválasztásához, amelyek adatait szűrni szeretné.
+    
+        > [!NOTE]
+        > A listában megjelenő költséghelyek attól függnek, hogy milyen hozzáférést engedélyezett a **Költségkönyvelés** modulban.
+
+-   **Nézetek:** Annak alapján, hogy milyen műveletek vannak kiválasztva, és milyen a **Költségkönyvelés** modul konfigurációja, a következő információkat tekintheti meg a kártyákon:
+
+    -   Tényleges kontra költségvetés (aktuális időszak)
+    -   Tényleges kontra módosított költségvetés (aktuális időszak)
     -   Tényleges és költségvetési (előző időszak)
     -   Tényleges és módosított költségvetési (előző időszak)
     -   Tényleges és költségvetési (folyó év mai napig)
     -   Tényleges és módosított költségvetési (folyó év mai napig)
 
     A következő összegek jelennek meg minden kártyán: a Tényleges, Költségvetés, Eltérés és Eltérés (%).
+
 -   **Hivatkozások:**
+
     -   Aktuális időszak részletei
     -   Előző időszak részletei
     -   Folyó év mai dátumig részletei
 
-    Ha kiválaszt egy hivatkozást, egy kártya jelenik meg minden egyes költségösszetevőhöz. A kártyákon a következő összegek jelennek meg: Aktuális, Költségvetés, Költségvetés eltérése, Költségvetés eltérése (%), Módosított költségvetés, Módosított költségvetés eltérése és Módosított költségvetés eltérése (%). 
+    Ha kiválaszt egy hivatkozást, egy kártya jelenik meg minden egyes költségösszetevőhöz. A kártyákon a következő összegek jelennek meg: Aktuális, Költségvetés, Költségvetés eltérése, Költségvetés eltérése (%), Módosított költségvetés, Módosított költségvetés eltérése és Módosított költségvetés eltérése (%).
     
-    [![Kártya költségösszetevőhöz ](./media/cost-controlling.png)](./media/cost-controlling.png)
+    [![Kártya költségösszetevőhöz ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## <a name="prerequisites"></a>Előfeltételek
-A **Költségkontroll** mobil munkaterület használata előtt győződjön meg arról, hogy a rendszergazda biztosítja a következő előfeltételeket.
+Az előfeltételek eltérőek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás 2017. júliusi frissítését használja
+Ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 2017. júliusi frissítését telepítették a szervezeténél, akkor a rendszergazdának közzé kell tennie a **Költségkontroll** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, 1611-es verzióját használja a 3-as vagy újabb platformfrissítéssel
+Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a szervezeténél a 3-as vagy újabb platformfrissítéssel, akkor a rendszergazdának a következő előfeltételeket kell teljesítenie.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Előfeltételek</th>
@@ -89,50 +95,44 @@ A **Költségkontroll** mobil munkaterület használata előtt győződjön meg 
 </thead>
 <tbody>
 <tr class="odd">
-<td>Dynamics 365 for Operations 1611-es verziójához 3. vagy újabb platformfrissítését kell végrehajtani.</td>
+<td>Telepítse a KB 4013633 gyorsjavítást.</td>
 <td>Rendszergazda</td>
-<td>Ha a vállalati hálózatra még nincs telepítve a Dynamics 365 for Operations, a rendszergazdának el kell olvasnia a következő tudnivalókat: <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+
+<td>A 4013633-es tudásbáziscikk egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza a <strong>Költségellenőrzés</strong> mobil munkaterületet. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Töltse le a metaadatok gyorsjavítását a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza telepíthető csomagot</a>.</li>
+
+</ol></td>
 </tr>
 <tr class="even">
-<td>A KB 4013633 végrehajtása kötelező.</td>
+<td>Tegye közzé a <strong>Költségellenőrzés</strong> mobil munkaterületet.</td>
 <td>Rendszergazda</td>
-<td>A KB 4013633 (egy X++ frissítés vagy a metaadatok gyorsjavítása) négy mobil munkaterületet tartalmaz az ellátásilánc-kezeléshez. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket:
-<ol>
-<li>Töltse le a KB 4013633 frissítést a Microsoft Dynamics Lifecycle Services (LCS) webhelyéről.</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza a telepíthető csomagot</a> és a Dynamics 365 for Operations rendszerre.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>A <strong>Költségkontroll</strong> mobil munkaterületet közzé kell tenni a Dynamics 365 for Operations mobilalkalmazás számára.</td>
-<td>Rendszergazda</td>
-<td><ol>
-<li>Indítsa el a Dynamics 365 for Operations rendszert a böngészőben.</li>
-<li>A <strong>Rendszerparaméterek</strong> lapon válassza a <strong>Mobil munkaterületek kezelése</strong> lehetőséget.</li>
-<li>Válassza ki a <strong>Költségobjektum-áttekintés</strong> munkaterületet.</li>
-<li>Kattintson a <strong>Mobil munkaterület közzététele</strong> lehetőségre.</li>
-</ol></td>
+<td>Lásd: <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobil munkaterület közzététele</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Töltse le és telepítse a Dynamics 365 for Operations mobilalkalmazást
-A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Microsoft Dynamics 365 for Operations mobilalkalmazást.
 
--   Android: [Dynamics 365 for Operations a Google Play Áruházban](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone: [Dynamics 365 az iTunes App Store áruházban](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
+Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Jelentkezzen be a Dynamics 365 for Operations mobilalkalmazásba
+-   [Android-telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## <a name="sign-in-to-the-mobile-app"></a>Bejelentkezés a mobilalkalmazásba
+
 1.  Indítsa el az alkalmazást a mobileszközén.
-2.  Írja be a Dynamics_365_for_Operations URL-jét.
-3.  Adja meg a vállalatot a bejelentkezéshez. Például írja be azt, hogy **USMF**.
-4.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót a Dynamics 365 for Operations-fiókjához. Adja meg a hitelesítési adatait.
-5.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, lekéréssel frissítheti mobil munkaterületek listáját. 
+2.  Adja meg a Dynamics 365 URL-címét.
+3.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
+4.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
 
-    [![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>A költséghely teljesítményének megtekintése a Költségkontroll mobil munkaterület segítségével
+
 1.  A mobileszközön válassza a **Költségkontroll** munkaterület.
 2.  Válassza a **Költségobjektum-kontroll** elemet.
 3.  Válassza a **Műveletek** lehetőséget.
@@ -145,8 +145,5 @@ A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Micro
 10. Válassza az **Aktuális időszak részletei** hivatkozást.
 11. Tekintse meg az egyedi költségelemek teljesítményét.
 12. Konkrét költségelemekre is kereshet.
-
-
-
 
 

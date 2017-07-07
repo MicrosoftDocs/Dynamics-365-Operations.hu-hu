@@ -1,9 +1,9 @@
 ---
 title: "Az Excel-bővítmény használata"
-description: "Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével. Az entitásadatok megnyitását elindíthatja az Excel vagy a Microsoft Dynamics 365 for Operations programból."
+description: "Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c391fb70d837db9c0f167b392291fc1c5cc2bb53
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: f55e1e89d0e48819962c169a56f0f27dc0d792b4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,16 +30,16 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével. Az entitásadatok megnyitását elindíthatja az Excel vagy a Microsoft Dynamics 365 for Operations programból.
+Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével. Az entitásadatok megnyitását elindíthatja az Excel vagy a Microsoft Dynamics 365 for Finance and Operations Enterprise edition programból.
 
 Az entitásadatok megnyitásával a Microsoft Excel programban gyorsan és egyszerűen tekintheti meg és szerkesztheti az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével. A bővítmény használatához Microsoft Excel 2016 szükséges. **Megjegyzés:** Ha a Microsoft Azure Active Directory (Azure AD) bérlője az Active Directory összevonási szolgáltatások (AD FS) használatára van beállítva, meg kell győződnie arról, hogy a 2016. május frissítés telepítve van, hogy az Excel-bővítmény helyesen jelentkeztesse be.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-operations"></a>Nyissa meg az entitásadatokat az Excel programban a Dynamics 365 for Operations indításakor
-1.  A Microsoft Dynamics 365 for Operations egyik lapján kattintson a **Megnyitás a Microsoft Office programban** lehetőségre. Ha az oldal gyökér adatforrása (tábla) megegyezik bármelyik entitás gyökér adatforrásával, létrejönnek a lap alapértelmezett **Megnyitás az Excel programban** beállításai. A **Megnyitás az Excel programban** lehetőségek megtalálhatók a gyakran használt lapokon, például az **Összes szállító** és **Összes vevő** oldalon.
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations"></a>Nyissa meg az entitásadatokat az Excel programban a Dynamics 365 for Finance and Operations indításakor
+1.  A Microsoft Dynamics 365 for Finance and Operations egyik lapján kattintson a **Megnyitás a Microsoft Office programban** lehetőségre. Ha az oldal gyökér adatforrása (tábla) megegyezik bármelyik entitás gyökér adatforrásával, létrejönnek a lap alapértelmezett **Megnyitás az Excel programban** beállításai. A **Megnyitás az Excel programban** lehetőségek megtalálhatók a gyakran használt lapokon, például az **Összes szállító** és **Összes vevő** oldalon.
 2.  Kattintson az egyik **Megnyitás az Excel programban** lehetőségre, és nyissa meg a létrejövő munkafüzetet. Ez a munkafüzet kötési információkat tartalmaz az entitásra, egy mutatót a környezetre és egy mutatót az Excel-bővítményre.
 3.  Az Excel programban kattintson a **Szerkesztés engedélyezése** lehetőségre az Excel-bővítmény futtatásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4.  Ha az Excel beépülő modult első alkalommal futtatja, kattintson az **Ez a bővítmény megbízható** lehetőségre.
-5.  Ha a rendszer bejelentkezést kér, kattintson a **Bejelentkezés** lehetőségre, majd a Dynamics 365 for Operations bejelentkezéshez használt hitelesítő adatok használatával jelentkezzen be. Az Excel beépülő modul az Internet Explorer korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. Ezért ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában.
+5.  Ha a rendszer bejelentkezést kér, kattintson a **Bejelentkezés** lehetőségre, majd a Dynamics 365 for Finance and Operations bejelentkezéshez használt hitelesítő adatok használatával jelentkezzen be. Az Excel beépülő modul az Internet Explorer korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. Ezért ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában.
 
 Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne felejtse, hogy nincsenek adatok a munkafüzetben mindaddig, amíg be nem olvassa őket az Excel-bővítmény.
 
@@ -48,7 +48,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 2.  Az Office Áruházban keressen a „Dynamics” kulcsszóra, majd kattintson a **Hozzáadás** lehetőségre a **Microsoft Dynamics Office-bővítmény** (az Excel-bővítmény) mellett.
 3.  Ha az Excel beépülő modult első alkalommal futtatja, kattintson az **Ez a bővítmény megbízható** lehetőségre az Excel-bővítmény futásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4.  Kattintson a **Kiszolgáló adatainak hozzáadása** a **Beállítások** ablak megnyitásához.
-5.  A böngésző URL-címét másolja ki a célként megadott Dynamics 365 for Operations példányból, illessze be a **Kiszolgáló URL-címe** mezőben, és töröljön mindent az állomás neve után. Az eredményül kapott URL-címet az állomásnevet kell rendelkeznie.
+5.  A böngésző URL-címét másolja ki a célként megadott Dynamics 365 for Finance and Operations példányból, illessze be a **Kiszolgáló URL-címe** mezőben, és töröljön mindent az állomás neve után. Az eredményül kapott URL-címet az állomásnevet kell rendelkeznie.
 Ha például az URL-cím https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage, töröljön mindent a **https://xxx.dynamics.com**-on kívül.
 6.  A módosítások megerősítéséhez kattintson az **OK**, majd az **Igen** elemre. Az Excel-bővítmény újraindul és betölti a metaadatokat. Most már elérhető a **Terv** menügomb. Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. További információért lásd a „Látszik a Kisalkalmazások betöltése gomb” részt a témakör „Hibaelhárítás” című szakaszában.
 7.  Kattintson a **Terv** pontra. Az Excel-bővítmény lekéri az entitás metaadatait.
