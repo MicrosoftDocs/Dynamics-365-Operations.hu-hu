@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul. A súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák. Ha a dátum szerinti súlyozott átlag elv alapján készletzárást futtat, az egyes napok minden bevételezését egy virtuális kiadással egyenlíti ki. Ez a virtuális kiadás tárolja a teljes bevételezett mennyiséget az adott napra. A virtuális kiadáshoz egy hasonló virtuális bevételezés tartozik, amelyből a kiadások egyenlíthetők ki. Ily módon minden kiadás ugyanazzal a költséggel történik. A virtuális kiadást és bevételezést virtuális átmozgatásnak lehet tekinteni, ezt a *súlyozott átlagú készletzárás átmozgatásának* hívják. 

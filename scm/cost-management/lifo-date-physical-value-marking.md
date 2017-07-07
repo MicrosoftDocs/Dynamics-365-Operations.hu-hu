@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO dátum tényleges értékkel és jelöléssel
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 A LIFO dátum készletmodell a LIFO-elv alapján működik. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. Ha a dátum szerinti LIFO készletmodellben nincs bevételezés a kiadás előtt, akkor a kiadás az utána következő bármelyik bevételezéssel kiegyenlíthető. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki. 
