@@ -2,6 +2,12 @@
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
+  - name: Bevezetés a Dynamics 365 használatába
+    tocHref: /dynamics365/get-started/what-is/
+    topicHref: /dynamics365/get-started/what-is/index
+  - name: Újdonságok
+    tocHref: /dynamics365/get-started/whats-new/
+    topicHref: /dynamics365/get-started/whats-new/index
   - name: 'Finance and Operations, Enterprise kiadás'
     tocHref: /dynamics365/unified-operations/fin-and-ops/
     topicHref: /dynamics365/unified-operations/fin-and-ops/index
@@ -9,7 +15,7 @@
     - name: Fejlesztő és rendszergazda
       tocHref: /dynamics365/unified-operations/dev-itpro/
       topicHref: /dynamics365/unified-operations/dev-itpro/index
-    - name: Pénzügyek
+    - name: Financials
       tocHref: /dynamics365/unified-operations/financials/
       topicHref: /dynamics365/unified-operations/financials/index
     - name: Ellátási lánc
