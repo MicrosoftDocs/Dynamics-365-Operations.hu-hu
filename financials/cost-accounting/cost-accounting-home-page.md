@@ -14,7 +14,7 @@ ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,10 +22,11 @@ ms.openlocfilehash: 4514c6dbf014720c29e79889bf1fcc0efd6cd3ec
 ms.contentlocale: hu-hu
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# <a name="cost-accounting-home-page"></a>Költségkönyvelési kezdőlap
+<a id="cost-accounting-home-page" class="xliff"></a>
+
+# Költségkönyvelési kezdőlap
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,7 +49,11 @@ A Költségkönyvelés modul lehetővé teszi a következőket:
 -   A munkaterületen megtekinthető kimutatásokat hoz létre.
 -   Jelentések létrehozása az Excel programmal.
 
-## <a name="get-started"></a>Első lépések
+<a id="get-started" class="xliff"></a>
+
+## Első lépések
+
+> [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
 A Költségkönyvelés interaktív laboratóriumai ismertetik a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition – Költségkönyvelés modul konfigurálásának alapvető lépéseit a tényleges költségelemzés elvégzése érdekében. Emellett több eljárást is talál, amelyeket a megjelenés sorrendjében végezhet el.
 
@@ -63,12 +68,16 @@ Hogy többet tudjon a Költségkönyvelés mindennapi használatáról, ismernie
 -   [Költségobjektum-dimenziók](cost-objects.md)
 -   [Költségobjektumok létrehozása](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (Feladat-útmutató)
 
-## <a name="cost-control-mobile-workspace"></a>Költségkontroll mobil munkaterület
+<a id="cost-control-mobile-workspace" class="xliff"></a>
+
+## Költségkontroll mobil munkaterület
 A Költségkontroll mobil munkaterülettel a költséghelyek vezetői bármikor és bárhol megtekinthetik a költséghely teljesítményét.
 
 -   [Költségkontroll mobil munkaterület](cost-controlling-mobile-workspace.md)
 
-## <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelési elemzés Power BI-tartalom
+<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
+
+## Költségkönyvelési elemzés Power BI-tartalom
 A Költségkönyvelési elemzés Microsoft Power BI-tartalom költségellenőrök, illetve olyan személyek részére készült, aki a szervezetük költségellenőrzéséért felelősek. Kulcsfontosságú mérőszámokat foglal magában, például költség, nagyság, illetve költségszorzó és tényleges költség, tervezett költség és rugalmas tervezett költség alapján. A Finance and Operations Költségkönyvelésének tranzakciós adatait használja, és összesítő nézetet biztosít a teljes szervezet költségeiről egyetlen kimutatási pénznemben. A vezetők szűrhetik az adatokat költségobjektumok szerint szervezeti egységeik költségkontrollja számára akkor is, ha a szervezet több jogi személyből állhat.
 
 -   [Költségkönyvelési elemzés Power BI-tartalom](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
