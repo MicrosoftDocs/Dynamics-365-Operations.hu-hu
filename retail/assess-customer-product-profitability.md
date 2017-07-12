@@ -1,39 +1,41 @@
 ---
 title: "A vevők és a termék nyereségesség felmérése"
-description: "A cikk azt ismerteti, hogyan használhatja a memóriában lévő és a valós idejű analitikát az ügyfelek és a termék nyereségességének elérésére, böngészésére és megtekintésére a Microsoft Dynamics 365 for Operations adatokból."
+description: "A cikk azt ismerteti, hogyan használhatja a memóriában lévő és a valós idejű analitikát az ügyfelek és a termék nyereségességének elérésére, böngészésére és megtekintésére a Microsoft Dynamics 365 for Retail adatokból."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d32c1b87417b69e5564c4b0e73e867cff511a8f1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: ea35bdd54c476fc5a3d329f7ca0dcf014c417e7a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="assess-customer-and-product-profitability"></a>A vevők és a termék nyereségesség felmérése
+# <a name="assess-customer-and-product-profitability"></a>Vevők és termékek nyereségességének felmérése
 
 [!include[banner](includes/banner.md)]
 
 
-A cikk azt ismerteti, hogyan használhatja a memóriában lévő és a valós idejű analitikát az ügyfelek és a termék nyereségességének elérésére, böngészésére és megtekintésére a Microsoft Dynamics 365 for Operations adatokból. 
+A cikk azt ismerteti, hogyan használhatja a memóriában lévő és a valós idejű analitikát az ügyfelek és a termék nyereségességének elérésére, böngészésére és megtekintésére a Microsoft Dynamics 365 for Retail adatokból. 
 
-A Dynamics 365 for Operations részeként a felhasználók tanulmányozhatják a nyereségességet a legjobb vásárlók (10-től 100-ig) esetében, a szervezeti hierarchia különböző szintjein keresztül. Ez a következő kritériumok egyike alapján történik:
+A Dynamics 365 for Retail részeként a felhasználók tanulmányozhatják a nyereségességet a legjobb vásárlók (10-től 100-ig) esetében, a szervezeti hierarchia különböző szintjein keresztül. Ez a következő kritériumok egyike alapján történik:
 
 -   Értékesítési összeg
 -   Mennyiség
@@ -42,8 +44,8 @@ A Dynamics 365 for Operations részeként a felhasználók tanulmányozhatják a
 
 Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb vásárlók** jelentést, melyet a következő helyek bármelyikéről megnyithat:
 
--   **Kiskereskedelmi üzlet kezelése** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések** &gt; **Legfőbb vevők – jelentés**
--   **Lekérdezések és jelentések** szakasz Dynamics 365 for Operations &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Legfőbb vevők – jelentés**
+-   **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb vásárlók jelentés**
+-   **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Legjobb vásárlók jelentés**
 
 Hasonlóan tanulmányozhatják a felhasználók a legjobb termékeket (10-től 100-ig) a szervezeti hierarchia különböző szintjein keresztül a következő kritériumok egyike alapján:
 
@@ -52,11 +54,11 @@ Hasonlóan tanulmányozhatják a felhasználók a legjobb termékeket (10-től 1
 -   Bruttó haszonkulcs
 -   Árrés százalékosan
 
-Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb termékek**jelentést, melyet a következő helyek bármelyikéről megnyithat:
+Ehhez az értékeléshez alkalmazhatja a nem beépített **Legjobb termékek** jelentést, melyet a következő helyek bármelyikéről megnyithat:
 
--   **Kiskereskedelmi üzlet kezelése** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Csatornák** &gt; **Kiskereskedelmi üzlet kezelése** &gt; **Jelentések** &gt; **Vezető termékek jelentése**
--   **Kategória és termékkezelő** Dynamics 365 for Operations munkaterület &gt; **Kiskereskedelem és forgalom** &gt; **Termékek és kategóriák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**
--   **Lekérdezések és jelentések** szakasz Dynamics 365 for Operations &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Vezető termékek jelentése**
+-   **Kiskereskedelmi raktárkezelő** munkaterület &gt; **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**
+-   **Kategória és termék kezelése** munkaterület &gt; **Kiskereskedelem** &gt; **Termékek és kategóriák** &gt; **Kiskereskedelmi raktárkezelő** &gt; **Jelentések** &gt; **Legjobb termékek jelentés**
+-   **Lekérdezések és jelentések** szekció &gt; **Kiskereskedelem és forgalom** &gt; **Lekérdezések és jelentések** &gt; **Értékesítési jelentések** &gt; **Legjobb termékek jelentés**
 
 
 

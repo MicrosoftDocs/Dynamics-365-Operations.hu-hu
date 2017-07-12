@@ -3,25 +3,27 @@ title: "Műszak és pénztárgépfiók kezelés"
 description: "Ez a cikk a kiskereskedelmi pénztár műszakok két típusa, az önálló és megosztott beállítását és használatát mutatja be. A megosztott műszakokat több felhasználó több helyen is használhatja viszont az önálló műszakokat egyszerre csak egy dolgozó használhatja."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e49d7d931b0796e4d62065793e7e79745c816682
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -42,21 +44,21 @@ Az önálló műszakokat hagyományos rögzített pénztár esetében használj�
 
 Önálló műszak a pénztárfiók szintjén van jelölve. Ez az eljárás ismerteti, hogyan állítható be önálló műszak a pénztárjegyzéken.
 
-1.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítás** &gt; **POS beállítás** &gt; **POS profilok** &gt; **Hardverprofilok** gombra.
+1.  Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárprofilok** &gt; **Hardverprofilok** gombra.
 2.  Válassza ki a hardverprofilt az önálló műszak használatához.
-3.  A **Fiók** Gyorslapon végezzen el megerősítést, hogy a **Megosztott műszakfiók** beállítás **Nem**értékre legyen állítva.
+3.  A **Fiók** Gyorslapon végezzen el megerősítést, hogy a **Megosztott műszakfiók** beállítás **Nem** értékre legyen állítva.
 4.  Kattintson a **Mentés** gombra.
-5.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárgépek** lehetőségekre.
+5.  Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Jegyzékek** lehetőségekre.
 6.  Válassza ki az önálló műszakot igénylő jegyzéket, majd kattintson a **Szerkesztés** lehetőségre.
 7.  A **Hardverprofil** mezőben válassza ki a 2. lépésben kiválasztott hardverprofilt.
 8.  Kattintson a **Mentés** gombra.
-9.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
+9.  Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 10. Válassza a **1090** elosztási ütemezést, és kattintson a **Futtatás most** lehetőségre a pénztár módosításainak szinkronizálásához.
 
 ### <a name="use-a-stand-alone-shift"></a>Önálló műszak használata
 
 1.  Bejelentkezés a pénztárba.
-2.  Ha nincs nyitott műszak, válassza a **Új műszak megnyitása**lehetőséget.
+2.  Ha nincs nyitott műszak, válassza a **Új műszak megnyitása** lehetőséget.
 3.  Ugrás a **Nyitó összeg elszámolása** művelethez, és adja meg a kasszához adott készpénz összegét a munkanap elkezdéséhez.
 4.  Tranzakciók végrehajtása.
 5.  A nap végén válassza a **Fizetőeszköz-elszámolás** pénztárgépfiókban fennmaradt készpénz összegének elszámolásához.
@@ -70,15 +72,15 @@ Megosztott műszakot olyan környezetben használnak, ahol több pénztáros osz
 
 ### <a name="set-up-a-shared-shift"></a>Megosztott műszak beállítása
 
-1.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítás** &gt; **POS beállítás** &gt; **POS profilok** &gt; **Hardverprofilok** gombra.
+1.  Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárprofilok** &gt; **Hardverprofilok** gombra.
 2.  Válassza ki a hardverprofilt az megosztott műszak használatához.
-3.  A **Fiók** Gyorslapon állítsa be a **Megosztott műszakfiók** beállítást **Igen**értékre.
+3.  A **Fiók** Gyorslapon állítsa be a **Megosztott műszakfiók** beállítást **Igen** értékre.
 4.  Kattintson a **Mentés** gombra.
-5.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárgépek** lehetőségekre.
+5.  Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Jegyzékek** lehetőségekre.
 6.  Válassza ki az megosztott műszakot igénylő jegyzéket, majd kattintson a **Szerkesztés** lehetőségre.
 7.  A **Hardverprofil** mezőben válassza ki a 2. lépésben kiválasztott hardverprofilt.
 8.  Kattintson a **Mentés** gombra.
-9.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
+9.  Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 10. Válassza a **1090** elosztási ütemezést, és kattintson a **Futtatás most** lehetőségre a pénztár módosításainak szinkronizálásához.
 
 ### <a name="use-a-shared-shift"></a>Megosztott műszak használata
@@ -87,9 +89,9 @@ Megosztott műszakot olyan környezetben használnak, ahol több pénztáros osz
 2.  Ha még nincs csatlakoztatva a pénztár a hardverállomásra, válassza a **Nem pénztárgépfiókkal kapcsolatos művelet** lehetőséget, és válassza a **Hardverállomás kiválasztása** műveletet hardverállomás aktiválásához a megosztott műszakban. Ez a lépés csak a jegyzék megosztott műszak környezethez adásának első alkalmával szükséges.
 3.  Jelentkezzen ki a pénztárból, majd ismét jelentkezzen be.
 4.  Válassza a **Új műszak létrehozása** lehetőséget.
-5.  Válassza a **Nyitó összeg elszámolása**lehetőséget.
-6.  Adja meg az üzlet minden, megosztott műszakban használt pénztárgépfiókjának kezdőösszegét, majd kattintson a **Mentés**gombra.
-    -   A nyitóösszeg részének minden későbbi pénztárgépfiókhoz való hozzáadásához használja a **Hardverállomás kiválasztása**műveletet a hardverállomás aktiválásához.
+5.  Válassza a **Nyitó összeg elszámolása** lehetőséget.
+6.  Adja meg az üzlet minden, megosztott műszakban használt pénztárgépfiókjának kezdőösszegét, majd kattintson a **Mentés** gombra.
+    -   A nyitóösszeg részének minden későbbi pénztárgépfiókhoz való hozzáadásához használja a **Hardverállomás kiválasztása** műveletet a hardverállomás aktiválásához.
     -   Kassza adott pénztárgépfiókhoz való hozzáadásához használja a **Fiók kinyitása** műveletet.
     -   Folytassa, amíg a megosztott műszak összes pénztárgépfiókja rendelkezik a nyitó összeg egy részével.
 

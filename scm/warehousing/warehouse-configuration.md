@@ -3,14 +3,14 @@ title: "Raktár konfigurálása"
 description: "Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11554
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 08c086767303f6f52e085f8f56b5d09f1e46878f
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 17608d373fbedd20efe0b525ec141989a50a40a2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,10 +33,10 @@ ms.lasthandoff: 05/25/2017
 
 Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat.
 
-**Megjegyzés:** Ez a cikk a**Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A**Készletkezelés** modul raktár funkcióira nem vonatkozik.
+**Megjegyzés:** Ez a cikk a **Raktárkezelés** modul funkcióira vonatkozik (speciális a raktárkészlet-nyilvántartás). A **Készletkezelés** modul raktár funkcióira nem vonatkozik.
 
 ## <a name="warehouse-layout"></a>Raktárelrendezés
-A Microsoft Dynamics 365 for Operations rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
+A Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben a Raktárkezelési rendszer rugalmas lehetőségeket kínál a változó igényekhez alkalmas raktárelrendezés definiálásához, így optimális raktározást érhet el.
 
 -   Magas és alacsony prioritású tárolók területeket hozhat létre a termékek optimális elhelyezéséhez.
 -   A különböző raktározási igényeknek megfelelően, mint például hőmérsékleti követelmények vagy a cikkek változó forgalmi arányai, feloszthatja a raktárat különböző zónákra.
@@ -44,7 +44,7 @@ A Microsoft Dynamics 365 for Operations rendszerben a Raktárkezelési rendszer 
 -   Csoportosíthatja a helyeket fizikai kapacitás megszorítás beállításai alapján.
 -   Szabályozhatja cikkek tárolását és kitárolását a lekérdezésben megadott szabályokon alapján.
 
-A Microsoft Dynamics 365 for Operations rendszer raktárkezelési használatához hozzon létre egy raktárt, és engedélyezzen több speciális vagy konkrét raktárkezelési tevékenységet. A **Raktárak** oldalon válassza a **Raktárkezelési folyamatok alkalmazása**lehetőséget.
+A Finance and Operations rendszer raktárkezelési használatához hozzon létre egy raktárat, és engedélyezzen több speciális vagy konkrét raktárkezelési tevékenységet. A **Raktárak** oldalon válassza a **Raktárkezelési folyamatok alkalmazása** lehetőséget.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zónacsoportok, zónák, helytípusok és helyek
 
@@ -56,13 +56,13 @@ A raktárelrendezés engedélyezési folyamat során definiálni kell raktár z�
 -   **Helytípusok** – Raktározási helyek logikai vagy fizikai csoportosítása. Például létrehozhat egy hely összes előkészítő hely típusa. A **Raktárkezelési paraméterek** oldalon lévő kötelező beállítások vezetik az előkészítő hely típus definiálását, és a végleges kiszállítási hely típusát.
 -   **Helyek** – A hely megadásának legalacsonyabb szintje. A Helyek segítségével nyomon követheti az aktuális készlet tárolását és kitárolását egy raktárban.
 
-A raktárelrendezések definiálásához létrehozott entitás azokban a munkasablonokban beállított lekérdezésekben használt, amelyekkel a raktárakban lévő rendeléseket vezetheti. Ezért a zónák, helytípusok, és hasonlók meghatározásakor figyelembe kell venni, hogy a raktárak különböző területeit hogyan használják a különböző folyamatokhoz. Ezenkívül figyelembe kell venni egyéb tényezőket, mint például az adott terület fizikai jellemzőit. Például lehetnek olyan területek, ahol csak bizonyos típusú emelővillás targoncákat lehet használni. Vagy ha a vállalat ugyanabban a létesítményben termeli és be is fejezi a termékeket, lehetséges, hogy a Dynamics 365 for Operations rendszerben egyetlen raktárt akar létrehozni, de ebben az esetben válassza szét a két műveletet két zónacsoportra. Adja meg az entitások jól felismerhető neveit, így könnyű lesz azonosítani azokat a sablonlekérdezések használatakor.
+A raktárelrendezések definiálásához létrehozott entitás azokban a munkasablonokban beállított lekérdezésekben használt, amelyekkel a raktárakban lévő rendeléseket vezetheti. Ezért a zónák, helytípusok, és hasonlók meghatározásakor figyelembe kell venni, hogy a raktárak különböző területeit hogyan használják a különböző folyamatokhoz. Ezenkívül figyelembe kell venni egyéb tényezőket, mint például az adott terület fizikai jellemzőit. Például lehetnek olyan területek, ahol csak bizonyos típusú emelővillás targoncákat lehet használni. Vagy ha a vállalat ugyanabban a létesítményben termeli és be is fejezi a termékeket, lehetséges, hogy a Finance and Operations rendszerben egyetlen raktárt akar létrehozni, de ebben az esetben válassza szét a két műveletet két zónacsoportra. Adja meg az entitások jól felismerhető neveit, így könnyű lesz azonosítani azokat a sablonlekérdezések használatakor.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Helyi rakodási korlátok, helyprofilok és fix kiviteli helyek
 
 Figyelembe kell venni a raktárak fizikai elrendezését a tárolási kapacitások meghatározásához (helyi rakodási korlátok és helyprofilok), valamint a kísérletek részeként is, hogy optimális raktározási folyamatokat érjen el. 
 
-A helyi raktározás korlátok garantálják, hogy a munka létrehozásakor ne legyen olyan igény, hogy egy készletet olyan helyre rakjanak, amelynek a fizikai kapacitása nem alkalmas ahhoz a készlethez. Például ha a raktár egyes helyei csak egy raklapot tudnak várakoztatni, helyi raktározási korlátot lehet engedélyezni. A **Mennyiség** érték beállítható **1** értékre, és az **Egység** érték beállítható **PL** értékre egy adott hely profil csoportosításán belül. 
+A helyi raktározás korlátok garantálják, hogy a munka létrehozásakor ne legyen olyan igény, hogy egy készletet olyan helyre rakjanak, amelynek a fizikai kapacitása nem alkalmas ahhoz a készlethez. Például ha a raktár egyes helyei csak egy raklapot tudnak várakoztatni, helyi raktározási korlátot lehet engedélyezni. A **Mennyiség** érték beállítható **1** értékre, és az **Egység** érték beállítható **PL** értékre egy adott hely profil csoportosításán belül. 
 
 Ha speciális számítások szükségesek a helyi kapacitási megszorítások vezérléséhez, a helyprofil beállításai használhatók. Ebben az esetben a súly és térfogat számít kapacitásszámítás elvégzésekor. 
 
@@ -70,7 +70,7 @@ Optimális kimenő folyamatok eléréséhez értékelnie kell, hogy fix kiviteli
 
 ### <a name="location-setup-wizard"></a>Hely beállítása varázsló
 
-A hely a raktáron belül gyors létrehozására használható a **Hely beállítása**varázsló. Ennek a folyamatnak a részeként egyszerűen karbantarthatja a helynevek formátumát.
+A hely a raktáron belül gyors létrehozására használható a **Hely beállítása** varázsló. Ennek a folyamatnak a részeként egyszerűen karbantarthatja a helynevek formátumát.
 
 ## <a name="warehouse-processes"></a>Raktárfolyamatok
 A raktár konfiguráció részeként fontos, hogy az üzleti követelményeknek megfelelően engedélyezze a raktárkezelési folyamatokat. A legfontosabb összetevők, amelyeket konfigurálnia kell, a hullámsablonok, munkasablonok, munkagyűjtők és helyutasítások.

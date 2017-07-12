@@ -3,26 +3,27 @@ title: "Infókódok"
 description: "Ez a cikk áttekintést nyújt az infókódokról, az infókód-csoportokról és azok használatáról."
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5790f54a531336b30ee140ebf8b9c782d8b347f7
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b7417a8fece55963dcde53e7016e4d41793a6102
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -41,8 +42,8 @@ Az infókódok lehetőséget nyújtanak az adatrögzítésre a pénztárgép (PO
 -   Termék eladása rendes értékesítésként, kedvezményes értékesítésként vagy ingyenes termékként.
 -   A pénztáros a pénztárgép fiókjának kinyitásakor értékesítési művelet végrehajtása nélkül megadhat értéket, vagy az alkódok listájából választhat.
 
-## <a name="info-codes-group-in-retail-and-commerce"></a>Kiskereskedelmi és commerce adatainak kódok-csoportja
-A Dynamics 365 for Operations - Retail szolgáltatásban infókódok csoportjait hozhatja létre. Az infókód-csoportok rugalmasságot nyújtanak azáltal, hogy lehetővé teszik a kevesebb infókód meghatározását, és ezeket többféle módon használhatja fel. Az infókód-csoportok az alábbi módokon használhatók:
+## <a name="info-codes-group"></a>Infókódok csoport
+A Dynamics 365 for Retail szolgáltatásban infókódok csoportjait hozhatja létre. Az infókód-csoportok rugalmasságot nyújtanak azáltal, hogy lehetővé teszik a kevesebb infókód meghatározását, és ezeket többféle módon használhatja fel. Az infókód-csoportok az alábbi módokon használhatók:
 -   Kevesebb infókód meghatározása és egyszerű újra felhasználása. Az iinfókód-csoportokban szereplő nfókódok nem rendelkeznek előre meghatározott függőséggel más infókódoktól. Az azonos infókódot több infókódcsoport is tartalmazhatja, és rangsor segítségével az azonos infókódok megjeleníthetők a megadott sorrendben, amely értelmes bármely adott helyzetben.
 -   Infókódok csatolása más infókódokhoz vagy infókód-csoportokhoz egy termékről vagy tranzakcióról szóló információ gyűjtéséhez oly módon, ahogyan szüksége van rá anélkül, hogy külön infókódot vagy csatolt infókódot kellene megadnia minden egyes esethez.
 

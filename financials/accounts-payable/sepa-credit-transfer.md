@@ -3,14 +3,14 @@ title: "SEPA átutalás áttekintése"
 description: "Ez a cikk általános információkat tartalmaz az ISO 20022 átutalásokról, amelyek magukban foglalják a SEPA-átutalásokat és minden más elektronikus kifizetést a szállítók számára. A SEPA átutalás olyan euroalapú kifizetéstípus, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A témakör azt is elmagyarázza, hogyan lehet beállítani és elküldeni a SEPA jóváírás-átutalási fájlt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8f1a220babc333fe2091e9286afc565ebeecf036
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,15 +53,15 @@ Az európai bankokból álló EPC kereskedelmi és műszaki keretrendszereket fe
 A SEPA átutalás olyan kifizetés, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A kifizetésnek euróban kell történnie, és tartalmaznia kell mindkét fél nemzetközi bankszámlaszámát (IBAN) és bankazonosító kódját (BIC). (A BIC kód a \[SWIFT\] (Society for Worldwide Interbank Financial Telecommunication) kód néven is ismert.) Ezenkívül a tranzakciós költségek a két fél között oszlanak el. A felek között előforduló átutalások az ISO-20022 kifizetés-feldolgozási szabványt és az EPC által meghatározott XML fájlokat és formátumot kötelesek használni.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Hogyan történik az átutalás?
-A SEPA átutalás fizetési formátuma az európai országokban az elektronikus jelentéskészítés (ER) és a Fizetési módszerek funkciók segítségével készülnek a Microsoft Dynamics 365 for Operations rendszerben. Néhány átutalási formátum, amelyet más régiókban használnak, még mindig a régi fizetési keretrendszert használja. Számos más formátum közül 12 elérhető ISO 20022 átutalási fájlformátum létezik. Ezek az exportformátumok megfelelnek a SEPA ISO 20022 XML szabványnak. Használatukkal nem euró-átutalások juttathatók el azoknak az országoknak/régióknak, ahol használják őket az EPC által kiadott SEPA Credit Transfer Scheme szabálykönyv 8.2-es verziójában meghatározott szabályok szerint. Mielőtt megvalósítana egy átutalást, kapcsolatba kell lépnie a bankjával az elektronikus bankhasználati fájlok feltöltéséhez használt szoftver érvényesítéséhez. Ezt a szoftvert fogja használni az utalványokat tartalmazó XML fájlok banki átviteléhez.
+A SEPA átutalás fizetési formátuma az európai országokban az elektronikus jelentéskészítés (ER) és a Fizetési módszerek funkciók segítségével készülnek a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben. Néhány átutalási formátum, amelyet más régiókban használnak, még mindig a régi fizetési keretrendszert használja. Számos más formátum közül 12 elérhető ISO 20022 átutalási fájlformátum létezik. Ezek az exportformátumok megfelelnek a SEPA ISO 20022 XML szabványnak. Használatukkal nem euró-átutalások juttathatók el azoknak az országoknak/régióknak, ahol használják őket az EPC által kiadott SEPA Credit Transfer Scheme szabálykönyv 8.2-es verziójában meghatározott szabályok szerint. Mielőtt megvalósítana egy átutalást, kapcsolatba kell lépnie a bankjával az elektronikus bankhasználati fájlok feltöltéséhez használt szoftver érvényesítéséhez. Ezt a szoftvert fogja használni az utalványokat tartalmazó XML fájlok banki átviteléhez.
 
-## <a name="what-credit-transfer-formats-are-currently-supported-in-dynamics-365-for-operations"></a>Milyen átutalási formátumokat támogat jelenleg a Dynamics 365 for Operations?
+## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Milyen átutalási formátumokat támogat jelenleg a Finance and Operations?
 Mindig meg kell keresnie a Microsoft Dynamics Lifecycle szolgáltatások (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie a legfrissebb listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő szakasz, a "Mit kell beállítanom?" hivatkozást biztosít a témához, amely leírja, hogyan hozhat létre LCS-adattárat az elérhető konfigurációk áttekintéséhez és a kiválasztott konfigurációk importálásához.
 
 ## <a name="what-do-i-have-to-set-up"></a>Mit kell beállítanom?
--   Mielőtt átutalási fájlokat hoz létre, legalább egy aktív SEPA átutalási konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
--   Válassza ki az **Általános elektronikus jelentéskészítés** jelölőnégyzetet, majd válassza ki a megfelelő átutalási formátumot (pl. **ISO 20022 átutalás (AT)** exportformátum-konfigurációként, amikor konfigurálja a Kötelezettségek fizetési módjait.
--   Be kell állítani a jogi entitást és a bankszámla adatait a Microsoft Dynamics 365 for Operations szoftverben.
+-   Mielőtt átutalási fájlokat hoz létre, legalább egy aktív SEPA átutalási konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Válassza ki az **Általános elektronikus jelentéskészítés** jelölőnégyzetet, majd válassza ki a megfelelő átutalási formátumot (pl. **ISO 20022 átutalás (AT)**) exportformátum-konfigurációként, amikor konfigurálja a Kötelezettségek fizetési módjait.
+-   Be kell állítani a jogi entitást és a bankszámla adatait a Finance and Operations szoftverben.
 -   Bankszámlaszámok, IBAN-ok és néha SWIFT-kódok (BIC-k) vagy más azonosító adatok szükségesek az érvényes átutalások létrehozásához. Ezért be kell állítania őket az eladói bankszámlához és az átutalást kérelmező szervezet bankszámlájához.
 -   További információra is szükség lehet, például az áfaszámokra azoknál a feleknél, akik szerepelnek az átutalási üzenetben. Ezt az információt a kereskedők és a jogi személy számára kérésre kell beállítani.
 -   Egyes kötelezettségek fizetési módjai, főként az ISO 20022-alapú fizetési módok, további beállításra szorulhatnak a **Fizetési formátum kódkészletei** tekintetében, például **Szolgáltatás típusa** = **SLEV**. Ezeket a kódokat a fizetés feldolgozása során a fizetési tranzakciók további címkézésére használják. A fizetési kódok alapértelmezett értékeit (pl. **Kategória célja**, **Költségviselő**, **Helyi eszköz** és **Szolgáltatásszint**) két helyen lehet beállítani. Az első hely a **Kötelezettségek fizetési naplójának fejléce**, a második pedig a **Kötelezettségek fizetési módszerei**. A fizetési napló sorainak létrehozásakor a fizetési napló fejlécében beállított fizetési kódértékek átkerülnek a naplósorba, ha nincs megadva, akkor a Fizetési mód értékeit használja a rendszer.

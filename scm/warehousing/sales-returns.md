@@ -3,13 +3,13 @@ title: "Értékesítési visszáruk"
 description: "Ez a témakör a visszárurendelések folyamatáról nyújt tájékoztatást. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdec28ba1fe3650f59520cb42a71497c54a7d93e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 
 Ez a témakör a visszárurendelések folyamatáról nyújt tájékoztatást. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére.
 
-A vevők számos különböző ok miatt küldhetnek visszárut. Például lehet, hogy egy cikk hibás, vagy nem felel meg a vevő elvárásainak. A visszárufolyamat olyankor indul el, amikor a vevő egy cikk visszaküldését kéri. Miután megérezik egy vevői kérés, a Microsoft Dynamics 365 for Operations programban visszárurendelés jön létre.
+A vevők számos különböző ok miatt küldhetnek visszárut. Például lehet, hogy egy cikk hibás, vagy nem felel meg a vevő elvárásainak. A visszárufolyamat olyankor indul el, amikor a vevő egy cikk visszaküldését kéri. Miután megérezik egy vevői kérés, a Microsoft Dynamics 365 for Finance and Operations programban visszárurendelés jön létre.
 
 ## <a name="return-order-process"></a>Visszárurendelés folyamata
 A következő ábrán áttekinthető a visszárufolyamat.  
@@ -197,7 +197,7 @@ A **Érkeztetési áttekintés** lap felsorolja az összes tervezett bejövő é
 
 ### <a name="edit-the-arrival-journal"></a>Szerkessze az Érkeztetési napló tartalmát.
 
-Beállításával a **Karantén kezelése** **Igen**, a visszáru rendelés sornak a karanténutasítást is létrehozhat. Egy sor el lett küldve a karantén vizsgálatra, a az intézkedéskód nem adható meg. **Megjegyzés:** Ha a **karantén kezelése** be **Igen** a cikk készletmodell-csoport, a a **karantén kezelése** a beállítás a **naplósorok** lap az érkeztetési napló sorában megjelöli, és nem módosítható. Karantén a sort küld, ha meg kell adnia a megfelelő karanténraktár. Ha az érkezési sort nem küldi el ellenőrzésre, a raktár érkeztetési képviselőjének meg kell adnia az intézkedési kódot közvetlenül az Érkeztetési napló sorban, majd fel kell adnia az Érkeztetési naplót. Ha az azonos intézkedéskód nem a teljes mennyiség visszárusor kell rendelni, vagy ha a teljes mennyiséget a sor még nem érkezett meg, fel kell osztania a sor. Az érkeztetési naplósor felosztásakor is felosztja a visszárusor (**SalesLine**), és hozzon létre egy új tétel. A sor szétválaszthatja az érkeztetési napló sorában mennyiségének csökkentésével. A napló könyvelésekor a program visszatérési új sor jön létre, amelyek állapota **várt** a fennmaradó mennyiség. Megoszthatja a sort, ha a **Funkciók**&gt;**Megosztást** pontra kattint.
+Beállításával a **Karantén kezelése** **Igen**, a visszáru rendelés sornak a karanténutasítást is létrehozhat. Egy sor el lett küldve a karantén vizsgálatra, a az intézkedéskód nem adható meg. **Megjegyzés:** Ha a **karantén kezelése** be **Igen** a cikk készletmodell-csoport, a a **karantén kezelése** a beállítás a **naplósorok** lap az érkeztetési napló sorában megjelöli, és nem módosítható. Karantén a sort küld, ha meg kell adnia a megfelelő karanténraktár. Ha az érkezési sort nem küldi el ellenőrzésre, a raktár érkeztetési képviselőjének meg kell adnia az intézkedési kódot közvetlenül az Érkeztetési napló sorban, majd fel kell adnia az Érkeztetési naplót. Ha az azonos intézkedéskód nem a teljes mennyiség visszárusor kell rendelni, vagy ha a teljes mennyiséget a sor még nem érkezett meg, fel kell osztania a sor. Az érkeztetési naplósor felosztásakor is felosztja a visszárusor (**SalesLine**), és hozzon létre egy új tétel. A sor szétválaszthatja az érkeztetési napló sorában mennyiségének csökkentésével. A napló könyvelésekor a program visszatérési új sor jön létre, amelyek állapota **várt** a fennmaradó mennyiség. Megoszthatja a sort, ha a **Funkciók** &gt; **Megosztás** pontra kattint.
 
 ### <a name="process-the-quarantine-order"></a>Karanténutasítás feldolgozása
 
@@ -264,7 +264,7 @@ Ebben az esetben a két vállalat a szervezethez, az alábbi ábrán látható m
 
 [![Egyszerű vállalatközi visszáruk](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
 
-A rendelési lánc akkor jöhet létre, ha a vevő vállalatnál létrehoznak egy szállítói visszárurendelést, illetve amikor az eladó cégnél létrehoznak egy vevői visszárurendelést. A Dynamics 365 for Operations műveleteket hoz létre a megfelelő sorrendben a másik társaság, és meggyőződik arról, hogy a fej és sor-információt a szállítói visszáru rendelés tükrözi a beállításokat a vevő a visszáru rendelés. A létrehozott visszáru rendelést vagy kihagyhatjuk vagy beszámíthatjuk a hivatkozás (**Értékesítési rendelés keresése**) egy meglévő vevő számlát. A csomagjegyzékek és számlák két rendelések dolgozhatók fel külön-külön. Például nem kell létrehozni a szállítói visszáru rendelés csomagjegyzékét a Vevői visszáru rendelés csomagjegyzékének elkészítése előtt.
+A rendelési lánc akkor jöhet létre, ha a vevő vállalatnál létrehoznak egy szállítói visszárurendelést, illetve amikor az eladó cégnél létrehoznak egy vevői visszárurendelést. A Finance and Operations műveleteket hoz létre a megfelelő sorrendben a másik társaság, és meggyőződik arról, hogy a fej és sor-információt a szállítói visszáru rendelés tükrözi a beállításokat a vevő a visszáru rendelés. A létrehozott visszáru rendelést vagy kihagyhatjuk vagy beszámíthatjuk a hivatkozás (**Értékesítési rendelés keresése**) egy meglévő vevő számlát. A csomagjegyzékek és számlák két rendelések dolgozhatók fel külön-külön. Például nem kell létrehozni a szállítói visszáru rendelés csomagjegyzékét a Vevői visszáru rendelés csomagjegyzékének elkészítése előtt.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Közvetlen kiszállítás visszárui három fél között
 

@@ -3,13 +3,13 @@ title: "Költségkezelési Power BI-tartalom"
 description: "Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelési Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a9449e42224d5dfb1bc1f0368a041c45afc334a2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -52,7 +52,7 @@ A **Kezelési költség** Microsoft Power BI tartalom készletkönyvelőknek vag
 A CostAggregatedCostStatementEntryEntity elsődleges adatforrása a CostStatementCache táblában található. Ezt a táblát az Adathalmaz-gyorsítótár keretrendszere kezeli. Alapértelmezés szerint a tábla 24 óránként frissül, de az adatgyorsítótár konfigurációjában engedélyezheti a kézi frissítést is. Ezután a **Költségkezelés** vagy a **Költségelemzés** munkaterületen végezhet kézi frissítést. A CostStatementCache frissítésének futtatása után a frissített adatok a webhelyen történő megtekintéséhez frissítenie kell az OData kapcsolatot a Power BI.com-on. Az eltérési (beszerzés, termelés) mérőszámok ebben a Power BI-tartalomban csak azon elemekre vonatkoznak, amelyek értékelése Normál elszámolóár szerint történik. A termelési eltérés számítása az aktív és a realizált költség közötti különbség formájában történik. A gyártási eltérés kiszámítására akkor kerül sor, amikor a termelési rendelés állapota **Befejezve** lesz. További információért az eltérési típusokkal és az egyes típusok kiszámítási módját illetően lásd: [Befejezett termelési rendelés eltéréseinek elemzése](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Költségkezelés** Power BI-tartalom a PowerBI.com-ról érhető el. A csatlakozással és a Microsoft Dynamics 365 for Operations-adatok betöltésével kapcsolatos további tudnivalókat lásd: [Power BI-tartalom elérése a PowerBI.com webhelyről](power-bi-home-page.md).
+A **Költségkezelés** Power BI-tartalom a PowerBI.com-ról érhető el. A csatlakozással és a Microsoft Dynamics 365 for Finance and Operations-adatok betöltésével kapcsolatos további tudnivalókat lásd: [Power BI-tartalom elérése a PowerBI.com webhelyről](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Költségkezelés** Power BI-tartalom megjelenítési formáinak áttekintése található.
@@ -84,9 +84,9 @@ A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrik
 | |Termelési eltérések Telephelynevenként és 3. Kategórianév-szint alapján | |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-A **Költségkezelés** Power BI-tartalom jelentési oldalainak feltöltésére a Dynamics 365 for Operations adatai szolgálnak. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL-adatbázis. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md). A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
+A **Költségkezelés** Power BI-tartalom jelentési oldalainak feltöltésére a Finance and Operations adatai szolgálnak. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL-adatbázis. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md). A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
 
-| Entitás            | Fő összesítő mérték | A Dynamics 365 for Operations adatforrása | Mező             | Leírás                       |
+| Entitás            | Fő összesítő mérték | Adatforrás a Finance and Operationsnél | Mező             | Leírás                       |
 |-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
 | Kimutatási bejegyzések | Nettó változás                | CostAggregatedCostStatementEntryEntity      | sum(\[Összeg\])   | Összeg a könyvelési pénznemben |
 | Kimutatási bejegyzések | Nettó változás mennyisége       | CostAggregatedCostStatementEntryEntity      | sum(\[Mennyiség\]) |                                   |

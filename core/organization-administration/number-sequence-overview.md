@@ -1,15 +1,15 @@
 ---
 title: "Számsorozatok áttekintése"
-description: "A Microsoft Dynamics 365 for Operations rendszerben a számsorozatok az alapadat-rekordok és tranzakciórekordok egyéni, olvasható azonosítójának létrehozásához szükségesesek, abban az esetben, ha szükséges hozzájuk azonosító. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket <em>hivatkozásnak</em> nevezik."
+description: "A Microsoft Dynamics 365 for Finance and Operations rendszerben a számsorozatok az alapadat-rekordok és tranzakciórekordok egyéni, olvasható azonosítójának létrehozásához szükségesek, abban az esetben, ha szükséges hozzájuk azonosító. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket <em>hivatkozásnak</em> nevezik."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15461
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a2dcbbbd0b67c171d5a26bbf2053d159f7367cc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: d260f460bf0da072eb46909d8c28d18041ecaa78
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,16 +30,16 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 for Operations rendszerben a számsorozatok az alapadat-rekordok és tranzakciórekordok egyéni, olvasható azonosítójának létrehozásához szükségesesek, abban az esetben, ha szükséges hozzájuk azonosító. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket <em>hivatkozásnak</em> nevezik.
+A Microsoft Dynamics 365 for Finance and Operations rendszerben a számsorozatok az alapadat-rekordok és tranzakciórekordok egyéni, olvasható azonosítójának létrehozásához szükségesek, abban az esetben, ha szükséges hozzájuk azonosító. Az azonosítókat igénylő alapadatokrekordokat és tranzakciós bejegyzéseket <em>hivatkozásnak</em> nevezik.
 
-Mielőtt egy hivatkozáshoz új rekordokat hozhat létre a Microsoft Dynamics 365 for Operations rendszerben, be kell állítania egy számsorozatot és a hivatkozáshoz társítani. Javasoljuk, hogy a **Szervezeti adminisztráció** űrlapon belül található lapokat használja a számsorozatok beállításakor. Ha modulspecifikus beállításokat kell megadni, akkor használhatja a paraméterek lapot a modulban, hogy meghatározza az abban a modulban található hivatkozásokhoz tartozó számsorozatokat. Például a **Kinnlevőségek** és **Kötelezettségek** modulokban beállíthat számsorozat csoportokat, hogy meghatározott számsorozatokat meghatározott vevőkhöz vagy szállítókhoz rendeljen. Számsorozat beállításakor mindig meg kell adnia egy hatókört, ami megadja, mely szervezet használja a számsorozatot. A hatókör lehet **megosztott**, **vállalat**, **jogi személy**, vagy **operációs egység**. A **jogi személy** és **vállalat** hatókörök összevonhatóak a **pénzügyi naptári időszak** modullal, hogy még több meghatározott számsorozatot hozzon létre. A számsorozatok formátumai szegmensekből állnak. Az olyan számsorozatok, amelyek hatóköre nem **megosztott** tartalmazhatnak olyan szegmenseket, amelyek megfelelnek a hatókörnek. Például egy számsorozat a **jogi személy** hatókörrel tartalmazhat egy jogi személy szegmenst. Ha hatókör-szegmenst is felvesz a számsorozat-formátumba, akkor már a szám alapján beazonosíthatja egy adott rekord hatókörét. A hatóköröket jelölő szegmenseken kívül a számsorozat-formátumok tartalmazhatnak **állandó** és **alfanumerikus szegmens** értékeket. Az **állandó** szegmens olyan betűket, számokat vagy szimbólumokat tartalmaz, amelyek nem változnak. Az **alfanumerikus** szegmens olyan betűhalmazt vagy számot is tartalmazhat, amely a szám minden új használatakor nő. A kettős kereszt (\#) használatával jelezheti a növekvő számokat, az (&) jellel pedig a növekvő betűket. Például a \#\#\#\#\#\_2017 formátum a 00001\_2017, 00002\_2017 és így tovább sorozatot hozza létre.
+Mielőtt egy hivatkozáshoz új rekordokat hozhat létre a Microsoft Dynamics 365 for Finance and Operations rendszerben, be kell állítania egy számsorozatot és a hivatkozáshoz társítani. Javasoljuk, hogy a **Szervezeti adminisztráció** űrlapon belül található lapokat használja a számsorozatok beállításakor. Ha modulspecifikus beállításokat kell megadni, akkor használhatja a paraméterek lapot a modulban, hogy meghatározza az abban a modulban található hivatkozásokhoz tartozó számsorozatokat. Például a **Kinnlevőségek** és **Kötelezettségek** modulokban beállíthat számsorozat csoportokat, hogy meghatározott számsorozatokat meghatározott vevőkhöz vagy szállítókhoz rendeljen. Számsorozat beállításakor mindig meg kell adnia egy hatókört, ami megadja, mely szervezet használja a számsorozatot. A hatókör lehet **megosztott**, **vállalat**, **jogi személy**, vagy **operációs egység**. A **jogi személy** és **vállalat** hatókörök összevonhatóak a **pénzügyi naptári időszak** modullal, hogy még több meghatározott számsorozatot hozzon létre. A számsorozatok formátumai szegmensekből állnak. Az olyan számsorozatok, amelyek hatóköre nem **megosztott** tartalmazhatnak olyan szegmenseket, amelyek megfelelnek a hatókörnek. Például egy számsorozat a **jogi személy** hatókörrel tartalmazhat egy jogi személy szegmenst. Ha hatókör-szegmenst is felvesz a számsorozat-formátumba, akkor már a szám alapján beazonosíthatja egy adott rekord hatókörét. A hatóköröket jelölő szegmenseken kívül a számsorozat-formátumok tartalmazhatnak **állandó** és **alfanumerikus szegmens** értékeket. Az **állandó** szegmens olyan betűket, számokat vagy szimbólumokat tartalmaz, amelyek nem változnak. Az **alfanumerikus** szegmens olyan betűhalmazt vagy számot is tartalmazhat, amely a szám minden új használatakor nő. A kettős kereszt (\#) használatával jelezheti a növekvő számokat, az (&) jellel pedig a növekvő betűket. Például a \#\#\#\#\#\_2017 formátum a 00001\_2017, 00002\_2017 és így tovább sorozatot hozza létre.
 Példák a számsorozatokra
 ------------------------
 
 A következő példák bemutatják, hogyan hozhat létre számsorozat-formátumokat szegmensekből. A példákban azt is láthatja, milyen hatása van a hatókörszegmenseknek.
 ### <a name="expense-report-numbers"></a>Költségjelentésszámok
 
-A következő példában költségjelentésszámokat állítunk be egy **CS** nevű jogi személyhez. **Terület:**Utazás és költségek **Hivatkozás:**A költségjelentés száma **Hatókör:**Jogi személy **Jogi személy:**CS
+A következő példában költségjelentésszámokat állítunk be egy **CS** nevű jogi személyhez. **Terület:** Utazás és költségek **Hivatkozás:** A költségjelentés száma **Hatókör:** Jogi személy **Jogi személy:** CS
 | Szegmensek  | Szegmens típusa | Érték     |
 |-----------|--------------|-----------|
 | 1. szegmens | Jogi személy | CS        |
@@ -50,7 +50,7 @@ A következő példában költségjelentésszámokat állítunk be egy **CS** ne
 
 ### <a name="sales-order-numbers"></a>Értékesítési rendelések számai
 
-A következő példában szereplő értékesítésirendelés-számokat a **CEU** vállalatazonosítóhoz hoztuk létre. **Terület:**Értékesítés **Hivatkozás:**Értékesítési rendelés **Hatókör:**Vállalat **Vállalat**CEU
+A következő példában szereplő értékesítésirendelés-számokat a **CEU** vállalatazonosítóhoz hoztuk létre. **Terület:** Értékesítés **Hivatkozás:** Értékesítési rendelés **Hatókör:** Vállalat **Vállalat** CEU
 | Szegmensek  | Szegmens típusa | Érték    |
 |-----------|--------------|----------|
 | 1. szegmens | Állandó     | SO-      |
@@ -60,7 +60,7 @@ A következő példában szereplő értékesítésirendelés-számokat a **CEU**
 
 ### <a name="purchase-requisition-numbers"></a>Beszerzési igénylések számai
 
-A következő példában szereplő beszerzésiigénylés-számok a teljes szervezeti szintre vonatkoznak. **Terület:**beszerzés **Hivatkozás:**beszerzési igénylés **Hatókör:**megosztott
+A következő példában szereplő beszerzésiigénylés-számok a teljes szervezeti szintre vonatkoznak. **Terület:** beszerzés **Hivatkozás:** beszerzési igénylés **Hatókör:** megosztott
 | Szegmensek  | Szegmens típusa | Érték    |
 |-----------|--------------|----------|
 | 1. szegmens | Állandó     | Besz      |

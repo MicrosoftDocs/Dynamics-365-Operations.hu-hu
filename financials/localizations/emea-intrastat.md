@@ -3,7 +3,7 @@ title: Intrastat
 description: "Ez a cikk információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5dea47c92c3891ce86b470119ea3bad8252c08d1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6d1141d597e95b0d5cabf77c0248697d256b102a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---

@@ -3,14 +3,14 @@ title: "Naplósorok és dokumentumok közzététele Excelből"
 description: "Ez a témakör bemutatja, hogyan adhat meg és tehet közzé főkönyvinaplók-sorokat Microsoft Excelből. A megadott tranzakciók típusától függően használható különböző sablonokkal kapcsolatos információkat is tartalmaz."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62213
 ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a43bf66de7602aa9fb47925996ec5b979e1f8dac
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1fed8d162a37736883365fa765a059e5beff06be
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -48,9 +48,9 @@ A felhasználók Microsoft Excelből adhatnak meg és tehetnek közzé sorokat p
 | Vevő kifizetési naplója | Számlák: Vevői ellenszámla: Főkönyvi, Banki vállalatközi támogatott.                                               | Vevő kifizetési naplója                                                                |
 | Projektköltségnapló  | Számola: projekt, főkönyvi, vevői, szállítói ellenszámla: projekt, főkönyvi, vevői, szállítói vállalatközi támogatott. | Főkönyvinapló-kiadás (a projektvezetés és könyvelés részben)                       |
 
-A sorok közzétételkor ellenőrzésre kerülnek annak érdekében, hogy biztosan megfeleljenek a pénzügyi naplókban beállított szabályoknak. A sorok közzététele után a felhasználók szerkeszthetik vagy feladhatják a bizonylatokat a Microsoft Dynamics 365 for Operationsből. 
+A sorok közzétételkor ellenőrzésre kerülnek annak érdekében, hogy biztosan megfeleljenek a pénzügyi naplókban beállított szabályoknak. A sorok közzététele után a felhasználók szerkeszthetik vagy feladhatják a bizonylatokat a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban. 
 
-Pénzügyi dimenziók sablonhoz történő hozzáadásához további módosításokra szükség. További információkért lásd: [Dimenziók hozzáadása Microsoft Excel-sablonhoz](/dynamics365/operations/dev-itpro/financial/add-dimensions-excel-templates). Dimenziók az entitáshoz való hozzáadása után érhetővé válnak az Excel-tervezőben és hozzá lehet adni őket a sablonhoz.
+Pénzügyi dimenziók sablonhoz történő hozzáadásához további módosításokra szükség. További információkért lásd: [Dimenziók hozzáadása Microsoft Excel-sablonhoz](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates). Dimenziók az entitáshoz való hozzáadása után érhetővé válnak az Excel-tervezőben és hozzá lehet adni őket a sablonhoz.
 
 
 

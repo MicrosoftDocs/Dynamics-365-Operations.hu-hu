@@ -3,14 +3,14 @@ title: "Lean szervezeti modellezése"
 description: "A cikk a lean szervezet modellezésében szereplő kulcsokról nyújt tájékoztatást."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ec9191054a1b3587ebbde16acf278084cbd22660
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: c5bb642df692451e975be74bd8aa7d856b964a68
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -41,7 +41,7 @@ A termelési rendeléseken alapuló termelési esetekben az anyagok egy adott te
 
 A szállítási átfutási idők és a munkaközpontokban a kötegtermelés miatt keletkező felesleges készletek csökkentése érdekében a lean manufacturing bevezeti a kanban feltöltést és a gyártásban és a raktárfeltöltésben található szupermarketeket. Ezek a funkciók általában megszakítják a részlegesen független kanban-ciklusok termelését. Egy félkész termékre vonatkozó kanban feltöltést nem indít el egy befejezett termékre vonatkozó rendelés. 
 
-A termelés és a Microsoft Dynamics AX rendszerben javasolt különböző kanban-esetek költségkörnyezetének újraindításához, a tevékenység alapú termelési folyamatok alkották a lean manufacturing gerincét. Az összes kanbanszabály erre az előre definiált szerkezetre hivatkozik. A tevékenység-alapú modell támogatja a többféle esetek beállítását, mint a Dynamics AX Lean manufacturing korábbi eseteit. Azonban ez a modell nem adható hozzá az üzemi dolgozók összetettségéhez, mert az összes eset ugyanazt a tevékenység-alapú felhasználói felületet használja.
+A termelés és a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás rendszerben javasolt különböző kanban-esetek költségkörnyezetének újraindításához, a tevékenység alapú termelési folyamatok alkották a lean manufacturing gerincét. Az összes kanbanszabály erre az előre definiált szerkezetre hivatkozik. A tevékenység-alapú modell támogatja a többféle esetek beállítását, mint a Dynamics AX Lean manufacturing korábbi eseteit. Azonban ez a modell nem adható hozzá az üzemi dolgozók összetettségéhez, mert az összes eset ugyanazt a tevékenység-alapú felhasználói felületet használja.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Félkész termékek (nem BOM-szintek)
 A Microsoft Dynamics AX Lean manufacturing egyesíti a raktározott termékek és a félkész termékek kanbanjait egyetlen keretrendszerben, és azonfelül egységes felhasználói tapasztalatot nyújt minden esethez. A kiegészítő architektúra miatt a további Anyagjegyzékszinteket már nem kell bevezetni a félkész termékekhez használatos kanban-ok engedélyezéséhez. A felépítése minimálisra csökkentheti a készlet tranzakcióit.

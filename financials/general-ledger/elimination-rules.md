@@ -3,7 +3,7 @@ title: "Eltávolítási szabályok"
 description: "Ez a témakör az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban szolgáltat információt."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ab1d8fb5bfc9413652d222e701c44b3b91a4c842
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 76af350f37109260a757ccc0b93908637d0579dc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -133,7 +133,7 @@ Az ön vállalata, A jogi személy, eszközöket értékesített egy, az ön sze
 Mindezen tranzakciók vállalatközi tranzakciók feladásait eredményezik a megfelelő számlákra. Ezen felül a tranzakciók tartalmazhatják a haszonkulcsokat és veszteségkulcsokat abban az esetben, ha a vállalatközi eladások összege és az eladott áruk beszerzési értéke nem egyenlő.
 
 ## <a name="set-up-elimination-rules"></a>Eltávolítási szabályok beállítása
-Eltávolítási szabályok beállításakor a Dynamics 365 for Operationsben ajánlott létrehozni egy pénzügyi dimenziót kifejezetten eltávolítás céljából. A legtöbb ügyfél Kereskedelmi partnernek vagy valami hasonlónak nevezi. Ha úgy dönt, hogy nem használ pénzügyi dimenziót, úgy ügyeljen, hogy rendelkezzen olyan fő számlával, amely csak vállalatközi tranzakciókra vonatkozik. 
+Eltávolítási szabályok beállításakor a Microsoft Dynamics 365 for Finance and Operations, Enterprise editionben ajánlott létrehozni egy pénzügyi dimenziót kifejezetten eltávolítás céljából. A legtöbb ügyfél Kereskedelmi partnernek vagy valami hasonlónak nevezi. Ha úgy dönt, hogy nem használ pénzügyi dimenziót, úgy ügyeljen, hogy rendelkezzen olyan fő számlával, amely csak vállalatközi tranzakciókra vonatkozik. 
 
 Az eltávolítási beállítások a Konszolidáció modul Beállítás területén találhatók. Miután megadta a szabály leírását, ki kell választania a vállalatot, amelyben az eltávolítási napló könyvelni fog. Ez olyan vállalat legyen, amelynél a **Pénzügyi eltávolítási folyamatokhoz** lehetőség ki van választva a jogi személy beállításainál. 
 

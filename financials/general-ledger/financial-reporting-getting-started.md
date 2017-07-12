@@ -1,16 +1,16 @@
 ---
 title: "Pénzügyi jelentéskészítés"
-description: "Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 for Operations pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza."
+description: "Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 39db754df7edeca414752ce1844d7f9e85df0b36
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fedde78a563939fd7080e748c412c89c71586823
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 for Operations pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
+Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési szolgáltatásokat. Emellett az elérhető alapértelmezett pénzügyi jelentések leírását is tartalmazza.
 
 <a name="accessing-financial-reporting"></a>Pénzügyi jelentéskészítés elérése
 -----------------------------
 
-A **Pénzügyi jelentéskészítés** menüt a következőképpen találhatja meg a Dynamics 365 for Operations szoftverben:
+A **Pénzügyi jelentéskészítés** menüt a következőképpen találhatja meg a Finance and Operations szoftverben:
 
 -   **Főkönyv** &gt; **Lekérdezések és jelentések**
 -   **Költségvetés készítése** &gt; **Lekérdezések és jelentések** &gt; **Alapvető költségvetés-tervezés**
@@ -83,7 +83,7 @@ A pénzügyi jelentéskészítő funkciók azon felhasználók számára érhet�
 Miután hozzáadtunk egy felhasználót vagy egy szerepkör módosult, a felhasználónak el kell tudni érnie a pénzügyi beszámolókat néhány percen belül. **Megjegyzés:** a sysadmin szerepkör hozzáadódik a pénzügyi beszámoló minden szerepköréhez.
 
 ## <a name="default-reports"></a>Alapértelmezett jelentések
-A pénzügyi jelentések között 22 alapértelmezett pénzügyi jelentés található. Minden jelentés egy alapértelmezett számlakategóriát használ a Dynamics 365 for Operations rendszerben. Használhatja ezeket a jelentéseket úgy, ahogy vannak, vagy kiindulópontként a pénzügyi beszámolók készítéséhez. A hagyományos pénzügyi kimutatások, például a Bevétel-kimutatás vagy a Mérlegkimutatás mellett az alapértelmezett jelentések között olyan jelentések is vannak, amelyek különböző pénzügyi kimutatásokat tartalmaznak, amelyeket létrehozhat. Az alábbi táblázatban minden jelentés egy a jelentéssel kapcsolatos Office Mix bemutatóra mutat.
+A pénzügyi jelentések között 22 alapértelmezett pénzügyi jelentés található. Minden jelentés egy alapértelmezett számlakategóriát használ a Finance and Operations rendszerben. Használhatja ezeket a jelentéseket úgy, ahogy vannak, vagy kiindulópontként a pénzügyi beszámolók készítéséhez. A hagyományos pénzügyi kimutatások, például a Bevétel-kimutatás vagy a Mérlegkimutatás mellett az alapértelmezett jelentések között olyan jelentések is vannak, amelyek különböző pénzügyi kimutatásokat tartalmaznak, amelyeket létrehozhat. Az alábbi táblázatban minden jelentés egy a jelentéssel kapcsolatos Office Mix bemutatóra mutat.
 
 | Alapértelmezett jelentés                                                                                         | Leírás                                                                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -114,7 +114,7 @@ A pénzügyi jelentések között 22 alapértelmezett pénzügyi jelentés talá
 Amikor rákattint a **Pénzügyi jelentéskészítés** menüre, a vállalat alapértelmezett pénzügyi jelentéseinek listája jelenik meg. Ezután megnyithatja vagy módosíthatja a jelentést. Az alapértelmezett jelentés megnyitásához válassza ki a jelentés nevét. A jelentés első megnyitásakor automatikusan létrejön a jelentés az előző hónapra. Például, ha 2016 augusztusában nyit meg egy jelentést először, a jelentés a 2016. július 31-i dátumhoz jön létre. Egy jelentés megnyitása után elkezdheti annak böngészését bizonyos adatok utáni leásással, illetve módosíthatja a jelentés beállításait.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Pénzügyi jelentések létrehozása és módosítása
-A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést. Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az **Új** gombra kattintva a műveletpanelen. Letöltődik a készülékére egy jelentéstervező program. A jelentéstervező elindulása után új jelentést hozhat létre. Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában. A listában csak a Dynamics 365 for Operations rendszerben használt vállalatra vonatkozó jelentések jelennek meg. A pénzügyi jelentések a Dynamics 365 for Operations rendszerben való létrehozásának és módosításának folyamatával kapcsolatos további tudnivalókért olvassa el ezeket a [blogbejegyzések](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) a Dynamics pénzügyi beszámolók webnaplóból. **Megjegyzés:** A számítógépre, amelyre letölti a jelentéstervező klienst, telepítve kell lennie a Microsoft .NET Framework 4.6.2 verziójának. A Microsoft .NET Framework ezen verziója [innen](https://www.microsoft.com/en-us/download/details.aspx?id=53345) tölthető le és telepíthető. Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. Módosíthatja is a jelentést, amely megjelenik a pénzügyi jelentések listájában. Ha be van jelölve a jelentés neve körüli terület, kattintson a **Szerkesztés** menüpontra a Műveleti ablaktáblán. A jelentéstervező program elindul.
+A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést. Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az **Új** gombra kattintva a műveletpanelen. Letöltődik a készülékére egy jelentéstervező program. A jelentéstervező elindulása után új jelentést hozhat létre. Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában. A listában csak a Finance and Operation rendszerben használt vállalatra vonatkozó jelentések jelennek meg. A pénzügyi jelentések a Finance and Operations rendszerben való létrehozásának és módosításának folyamatával kapcsolatos további tudnivalókért olvassa el ezeket a [blogbejegyzések](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) a Dynamics pénzügyi beszámolók webnaplóból. **Megjegyzés:** A számítógépre, amelyre letölti a jelentéstervező klienst, telepítve kell lennie a Microsoft .NET Framework 4.6.2 verziójának. A Microsoft .NET Framework ezen verziója [innen](https://www.microsoft.com/en-us/download/details.aspx?id=53345) tölthető le és telepíthető. Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. Módosíthatja is a jelentést, amely megjelenik a pénzügyi jelentések listájában. Ha be van jelölve a jelentés neve körüli terület, kattintson a **Szerkesztés** menüpontra a Műveleti ablaktáblán. A jelentéstervező program elindul.
 
 <a name="see-also"></a>Lásd még
 --------

@@ -1,15 +1,15 @@
 ---
 title: "Szervezeti képzés Power BI-tartalom"
-description: "Ez a témakör a következőt ismerteti: Dynamics 365 for Operations - Szervezeti képzés Power BI-tartalom. Elmagyarázza, hogy hogyan kell hozzáférni a tartalmi csomaghoz, és leírja a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+description: "Ez a témakör a következőt ismerteti: Finance and Operations - Szervezeti képzés Power BI-tartalom. Elmagyarázza, hogy hogyan kell hozzáférni a tartalmi csomaghoz, és leírja a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263874
 ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e1bfe405e2e4bf6445567d966ab20bd8645f8dbf
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 26499bf5423bc3711d110bd7e548eda238162b7a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör a következőt ismerteti: Dynamics 365 for Operations - Szervezeti képzés Power BI-tartalom. Elmagyarázza, hogy hogyan kell hozzáférni a tartalmi csomaghoz, és leírja a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör a következőt ismerteti: Finance and Operations - Szervezeti képzés Power BI-tartalom. Elmagyarázza, hogy hogyan kell hozzáférni a tartalmi csomaghoz, és leírja a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
 <a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
 --------------------------
 
-A Szervezeti képzés tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalomcsomag letöltésére és a Microsoft Dynamics 365 for Operations adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
+A Szervezeti képzés tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalomcsomag letöltésére és a Microsoft Dynamics 365 for Finance and Operations adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
-Miután csatlakoztatta a tartalmi csomagot a Dynamics 365 for Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
+Miután csatlakoztatta a tartalmi csomagot a Finance and Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
 
 | Jelentés          | Tartalom                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ Miután csatlakoztatta a tartalmi csomagot a Dynamics 365 for Operations rendsze
 Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-A Szervezeti képzés tartalomcsomag jelentéseinek feltöltésére a Dynamics 365 for Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
+A Szervezeti képzés tartalomcsomag jelentéseinek feltöltésére a Finance and Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
 
 | Entitás                    | Tartalom                                                         | Más entitásokkal való kapcsolatok                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

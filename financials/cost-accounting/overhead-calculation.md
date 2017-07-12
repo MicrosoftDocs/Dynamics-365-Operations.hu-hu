@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c040a50d9962d7a900fbef285ea1f1baea124033
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -513,7 +513,7 @@ Az alábbi táblázat azt az eredményt mutatja, amikor a HR-projekteket eloszt�
 <td>1</td>
 <td>10001</td>
 <td>(1 ÷ 1) × 10.00</td>
-<td>1000</td>
+<td>10.00</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +613,7 @@ Az alábbi táblázat azt az eredményt mutatja, amikor a HR-projekteket eloszt�
 <td>10001</td>
 <td>Villamos energia</td>
 <td>Változó költség</td>
-<td>1000</td>
+<td>10.00</td>
 <td>2017. január 31.</td>
 </tr>
 </tbody>
@@ -623,7 +623,7 @@ A járulékos díj irányelvére vonatkozó részletes információkért lásd: 
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>4. lépés: A kötségfelosztásra vonatkozó számítás feldolgozása
 
-A felosztást arra használják, hogy egy költségobjektum egyenlegét mások költségobjektumokhoz hozzárendeljék egy felosztási alap alkalmazásával. A Microsoft Dynamics 365 for Operations a reciprokális felosztási módszert támogatja. A reciprokális felosztási módszer esetében a segédköltség-objektumok által kicserélt kölcsönös szolgáltatások teljes mértékben elismertek. A rendszer automatikusan meghatározza a felosztások végrehajtásának megfelelő sorrendjét. A költségobjektumok egyenlegének felosztása egyetlen felosztási alap szerint történik. A rendszer támogatja a költségobjektum-dimenziók és a hozzájuk tartozó tagok közötti felosztásokat. A felosztás sorrendjét a költség ellenőrzőegysége vezérli. [![Fordított módszer](./media/reciprocal-method.png)]
+A felosztást arra használják, hogy egy költségobjektum egyenlegét mások költségobjektumokhoz hozzárendeljék egy felosztási alap alkalmazásával. A Finance and Operations a reciprokális felosztási módszert támogatja. A reciprokális felosztási módszer esetében a segédköltség-objektumok által kicserélt kölcsönös szolgáltatások teljes mértékben elismertek. A rendszer automatikusan meghatározza a felosztások végrehajtásának megfelelő sorrendjét. A költségobjektumok egyenlegének felosztása egyetlen felosztási alap szerint történik. A rendszer támogatja a költségobjektum-dimenziók és a hozzájuk tartozó tagok közötti felosztásokat. A felosztás sorrendjét a költség ellenőrzőegysége vezérli. [![Fordított módszer](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>A költségfelosztás meghatározása
 
@@ -724,7 +724,7 @@ A CC004 csomagolás költségobjektum több költségobjektumhoz is hozzájárul
 </tbody>
 </table>
 
-**Megjegyzés:** A Dynamics 365 for Operations esetében a statisztikai mérések, például a termék gyártásához szükséges órák száma a forrásadatokból származhatnak. A statisztikai mérési szolgáltatókról szóló bővebb információkért lásd: Statisztikai mérték szolgáltatójának sablonjai. (Kérjük, vegye figyelembe, hogy ez a témakör még nem készült el, de hamarosan megérkezik.) Az alábbi táblázat azt az eredményt mutatja, amikor a HR-szolgáltatásokat a teljes költség (fix költség és változó költség) allokációs alapjaként alkalmazzák.
+**Megjegyzés:** A Finance and Operations esetében a statisztikai mérések, például a termék gyártásához szükséges órák száma a forrásadatokból származhatnak. A statisztikai mérési szolgáltatókról szóló bővebb információkért lásd: Statisztikai mérték szolgáltatójának sablonjai. (Kérjük, vegye figyelembe, hogy ez a témakör még nem készült el, de hamarosan megérkezik.) Az alábbi táblázat azt az eredményt mutatja, amikor a HR-szolgáltatásokat a teljes költség (fix költség és változó költség) allokációs alapjaként alkalmazzák.
 
 <table>
 <thead>

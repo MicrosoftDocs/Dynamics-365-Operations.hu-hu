@@ -1,15 +1,15 @@
 ---
 title: "Projektköltségek könyvelése beszerzési elismervényekkel"
-description: "Ez a témakör leírja, hogy a beszerzési elismervényekkel elszámolt projektköltségek hogyan követhetők nyomom a Microsoft Dynamics 365 for Operations programban."
+description: "Ez a témakör leírja, hogy a beszerzési elismervényekkel elszámolt projektköltségek hogyan követhetők nyomom a Microsoft Dynamics 365 for Finance and Operations Enterprise edition programban."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acb14deb9d77927ffc95500e4e97763ba3ad7826
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b46929d2991f3ec1b38d54ddc57de632aa9b01b9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör leírja, hogy a beszerzési elismervényekkel elszámolt projektköltségek hogyan követhetők nyomom a Microsoft Dynamics 365 for Operations programban. 
+Ez a témakör leírja, hogy a beszerzési elismervényekkel elszámolt projektköltségek hogyan követhetők nyomom a Microsoft Dynamics 365 for Finance and Operations Enterprise edition programban. 
 
 A projekt számlái gyakran érkeznek később az árukhoz és a szolgáltatásokhoz képest, amely jelentős hatással lehet a projekt fő teljesítménymutatóira (KPI). Fontos, hogy ezeket a tranzakciókat nyomon követhessük a pénzügyi és a projektjelentésekben.
 
@@ -38,7 +38,7 @@ Az alábbi példa forgatókönyv ezt ábrázolja.
 
 A Contoso Consulting elindított egy új felhőtelepítési projektet. A beszerzési rendelést hoztak létre egy számítógép megvásárlására a projekt számára. A számítógép ára 1500 USA dollár, a telepítési szolgáltatás ára 150 USA dollár. A szállító leszállította és telepítette a számítógépet, de a számlát még nem kapta meg a Contoso Consulting. A projektmenedzser látni szeretné az 1650 USA dolláros projektköltség elhatárolását, még a számla érkezése előtt. A költségnek a vállalat hónap vége pénzügyi kimutatásában is tükröződnie kell. 
 
-Az elhatárolt költséget jelentési célokra pénzügyi szinten és a projekt szintjén is rögzíteni kell. A Dynamics 365 for Operations esetében a termékbevételezés pénzügyi frissítése a cikk és a beszerzés kategóriákban követhető nyomon. 
+Az elhatárolt költséget jelentési célokra pénzügyi szinten és a projekt szintjén is rögzíteni kell. A Finance and Operations esetében a termékbevételezés pénzügyi frissítése a cikk és a beszerzés kategóriákban követhető nyomon. 
 
 A cikkek esetében a **Kötelezettségek paraméterei** lapon válassza a **Termékbevételezés feladása a főkönyvben** lehetőséget.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -73,7 +73,7 @@ A **Beszerzési kategória** oldalon elvégezhető a projektkategóriák és a b
 
 **3. lépés:** Szállítóiszámla-tervezet létrehozása. 
 
-A Dynamics 365 for Operations esetében egy termékbevételezés feladása nincs hatással a projektinformációkra. Megkerülő megoldásként közvetlenül a termékbevételezés feladása után létrehozható egy szállítóiszámla-tervezet. Keresse fel a következőt: **Beszerzési rendelés** lap &gt; **Számla lap** &gt; **Létrehozás** &gt; **Számla**. Ez létrehoz egy függőben lévő számladokumentumot, amely frissíti a projekt adatait. 
+A Finance and Operations esetében egy termékbevételezés feladása nincs hatással a projektinformációkra. Megkerülő megoldásként közvetlenül a termékbevételezés feladása után létrehozható egy szállítóiszámla-tervezet. Keresse fel a következőt: **Beszerzési rendelés** lap &gt; **Számla lap** &gt; **Létrehozás** &gt; **Számla**. Ez létrehoz egy függőben lévő számladokumentumot, amely frissíti a projekt adatait. 
 
 A szállítóiszámla-tervezet létrehozása függő projekttranzakciókat hoz létre. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 

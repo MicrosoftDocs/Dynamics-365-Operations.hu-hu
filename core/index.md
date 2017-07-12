@@ -114,7 +114,7 @@ A jelen útmutató bemutatja, hogyan fordíthatja vállalkozása javára a Dynam
 <p><a href="../retail/call-center-functionality">Hívásközpont</p>
 <p><a href="../retail/define-maintain-retail-channels">Csatorna beállítása és kezelése</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS és Cloud POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page">Kiskereskedelmi fejlesztő és felügyelet</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Retail fejlesztő és felügyelet</p>
 
 </td>
 </tr>

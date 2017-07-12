@@ -1,16 +1,16 @@
 ---
 title: "A felhasználói felület testreszabása"
-description: "A cikk azt ismerteti, hogyan lehet személyre szabni a Microsoft Dynamics 365 for Operations rendszert."
+description: "A cikk azt ismerteti, hogyan lehet személyre szabni a Microsoft Dynamics 365 Finance and Operations rendszert."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysUserSetup
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
@@ -18,44 +18,44 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 689efef6ffa10bbee30cd734f3f09ba20957834d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="personalize-the-user-experience"></a>A felhasználói felület testreszabása
+# <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
 [!include[banner](../includes/banner.md)]
 
 
-A cikk azt ismerteti, hogyan lehet személyre szabni a Microsoft Dynamics 365 for Operations rendszert.
+A cikk azt ismerteti, hogyan lehet személyre szabni a Microsoft Dynamics 365 Finance and Operations rendszert.
 
-A Microsoft Dynamics 365 for Operations testreszabására számos lehetőség van. Néhány személyes beállítás választási lehetőségként jelenik meg a beállítások oldalon a beállítások listájában. Vannak rejtett személyes beállítások, például a Dynamics 365 for Operations nyomon követi a rácsoszlopok szélességét vagy a gyorslapok összecsukott/kibontott állapotát, ha ezt beállítja. Vannak explicit személyes beállítások. Az explicit személyes beállításokhoz meg kell adnia egy interaktív személyre szabási módot és módosítania kell az oldal megjelenését azzal, hogy közvetlenül kezeli az elem megjelenését és viselkedését az oldalon. 
+A Microsoft Dynamics 365 Finance and Operations testreszabására számos lehetőség van. Néhány személyes beállítás választási lehetőségként jelenik meg a beállítások oldalon a beállítások listájában. Vannak rejtett személyes beállítások, például a Finance and Operations nyomon követi a rácsoszlopok szélességét vagy a gyorslapok összecsukott/kibontott állapotát, ha ezt beállítja. Vannak explicit személyes beállítások. Az explicit személyes beállításokhoz meg kell adnia egy interaktív személyre szabási módot és módosítania kell az oldal megjelenését azzal, hogy közvetlenül kezeli az elem megjelenését és viselkedését az oldalon. 
 
-A Dynamics 365 for Operations szoftverben megadott bármilyen beállítás csak arra a felhasználóra érvényes, aki megadta őket, és függetlenek attól, hogy milyen vállalattal kommunikál. Ha egy felhasználó az oldalon módosításokat hajt végre, az nem módosítja a rendszerben más felhasználók kezelési felületét.
+A Finance and Operations szoftverben megadott bármilyen beállítás csak arra a felhasználóra érvényes, aki megadta őket, és függetlenek attól, hogy milyen vállalattal kommunikál. Ha egy felhasználó az oldalon módosításokat hajt végre, az nem módosítja a rendszerben más felhasználók kezelési felületét.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Az egész rendszerre érvényes beállítások az aktuális felhasználó számára
 A navigációs sávon található egy fogaskerék kép, amelyet **Beállítások** menügombnak hívnak. A **Beállítások** menü megnyitásával választási lehetőségek jelennek meg. A **Beállítások** kijelölésével megnyílik a felhasználói **Beállítások** oldal. Ott négy beállítási lapot talál: **Vizuális**, **Preferenciák**, **Fiók**, és **Munkafolyamat**.
 
--   **Vizuális:**A színtéma kiválasztására és az oldalelemek alapértelmezett méretének beállítására használható.
--   **Preferenciák:**Itt kiválaszthatja a Dynamics 365 for Operations alapértelmezett preferenciáit, amelyek az induláskor betöltődnek, többek között a vállalatot, a kezdőlapot és az alapértelmezett nézet/szerkesztés módot (amely meghatározza, hogy egy oldal csak megtekinthető-e, vagy minden megnyitáskor szerkeszthető). Itt találja meg a nyelvet, az időzónát, illetve a dátum, az idő és a számok formátumának beállítását. A legutóbbi verziókban ez az oldal különböző preferenciákat tartalmaz, amely eltér a különböző verziókban.
--   **Fiók:**Itt adhatja meg a felhasználói azonosítót és más fiókhoz kapcsolódó beállításokat.
--   **Munkafolyamat:**Itt adhatja meg a munkafolyamattal kapcsolatos beállításokat.
+-   **Vizuális:** A színtéma kiválasztására és az oldalelemek alapértelmezett méretének beállítására használható.
+-   **Preferenciák:** Itt kiválaszthatja a Finance and Operations alapértelmezett preferenciáit, amelyek az induláskor betöltődnek, többek között a vállalatot, a kezdőlapot és az alapértelmezett nézet/szerkesztés módot (amely meghatározza, hogy egy oldal csak megtekinthető-e, vagy minden megnyitáskor szerkeszthető). Itt találja meg a nyelvet, az időzónát, illetve a dátum, az idő és a számok formátumának beállítását. A legutóbbi verziókban ez az oldal különböző preferenciákat tartalmaz, amely eltér a különböző verziókban.
+-   **Fiók:** Itt adhatja meg a felhasználói azonosítót és más fiókhoz kapcsolódó beállításokat.
+-   **Munkafolyamat:** Itt adhatja meg a munkafolyamattal kapcsolatos beállításokat.
 
 ## <a name="implicit-personalizations"></a>Implicit testreszabás
 Az implicit személyes beállítások olyan személyes beállítások, amelyeket olyan vezérlőkkel hajt végre, amelyek megjegyzik az elemek aktuális láthatósági állapotát. 
 
-**Rácsoszlopok:** Megadhatja egy oszlop szélességét a listában, ha az oszlop fejlécén található méretező sávot balra vagy jobbra húzza a kívánt szélességig. A Dynamics 365 for Operations rendszer eltárolja a kívánt szélességet, és az oszlopokat így jeleníti meg minden alkalommal, amikor megnyitja a listát tartalmazó oldalt. 
+**Rácsoszlopok:** Megadhatja egy oszlop szélességét a listában, ha az oszlop fejlécén található méretező sávot balra vagy jobbra húzza a kívánt szélességig. A Finance and Operations rendszer eltárolja a kívánt szélességet, és az oszlopokat így jeleníti meg minden alkalommal, amikor megnyitja a listát tartalmazó oldalt. 
 
-**Gyorslapok:** Néhány lapon kibontható szakaszok vannak, amelyeket Gyorslapoknak hívunk. A Dynamics 365 for Operations eltárolja, mely gyorslapokat bontott ki, és mely gyorslapokat csukott össze. Minden alkalommal, amikor visszatér az oldalra, ugyanazok a gyorslapok lesznek kibontva vagy összecsukva, ahogy az utolsó használatkor hagyta őket. Ebben a cikkben bemutatjuk, hogyan változtassa meg a gyorslap-szakaszok sorrendjét. Bizonyos esetekben a gyorslap összecsukása javíthatja a teljesítményt, mivel a Dynamics 365 for Operations szoftvernek nem kell betöltenie annak a gyorslapnak az információit egészen addig, amíg a gyorslapot nem bontjuk ki. 
+**Gyorslapok:** Néhány lapon kibontható szakaszok vannak, amelyeket Gyorslapoknak hívunk. A Finance and Operations eltárolja, mely gyorslapokat bontott ki, és mely gyorslapokat csukott össze. Minden alkalommal, amikor visszatér az oldalra, ugyanazok a gyorslapok lesznek kibontva vagy összecsukva, ahogy az utolsó használatkor hagyta őket. Ebben a cikkben bemutatjuk, hogyan változtassa meg a gyorslap-szakaszok sorrendjét. Bizonyos esetekben a gyorslap összecsukása javíthatja a teljesítményt, mivel a Finance and Operations szoftvernek nem kell betöltenie annak a gyorslapnak az információit egészen addig, amíg a gyorslapot nem bontjuk ki. 
 
-**Adatterületek:** Néhány oldal tartalmaz egy adatterület-panel nevű szakaszt. Ez az ablak csak olvasható információkat tartalmaz az aktuális oldal tartalmáról. Az adatterület-panel minden szakaszát adatterületnek hívjuk. Akkor kibontunk vagy összecsukunk egy adatterületet, a Dynamics 365 for Operations tárolja a beállításokat. Bizonyos esetekben az adatterület összecsukása javíthatja a teljesítményt, mivel a Dynamics 365 for Operations szoftvernek nem kell betöltenie annak az adatterületnek az információit egészen addig, amíg az adatterületet nem bontjuk ki.
+**Adatterületek:** Néhány oldal tartalmaz egy adatterület-panel nevű szakaszt. Ez az ablak csak olvasható információkat tartalmaz az aktuális oldal tartalmáról. Az adatterület-panel minden szakaszát adatterületnek hívjuk. Akkor kibontunk vagy összecsukunk egy adatterületet, a Finance and Operations tárolja a beállításokat. Bizonyos esetekben az adatterület összecsukása javíthatja a teljesítményt, mivel a Finance and Operations szoftvernek nem kell betöltenie annak az adatterületnek az információit egészen addig, amíg az adatterületet nem bontjuk ki.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Explicit testreszabás a Személyes beállítások eszköztárral
-Minden személy és vállalat más nézeteket vall arról, mely adatok a legfontosabbak számukra, vagy mely adatok nem szükségesek az üzlet működéséhez. A Dynamics 365 for Operations személyre szabásához és a hatékony élményhez az a kulcs, hogy képes-e az információkat rendezni, egymáshoz kapcsolni vagy elrejteni. 
+Minden személy és vállalat más nézeteket vall arról, mely adatok a legfontosabbak számukra, vagy mely adatok nem szükségesek az üzlet működéséhez. A Finance and Operations személyre szabásához és a hatékony élményhez az a kulcs, hogy képes-e az információkat rendezni, egymáshoz kapcsolni vagy elrejteni. 
 
 Az explicit személyre szabások olyan személyre szabások, amelyeket kifejezetten azzal a szándékkal hajtunk végre, hogy megváltoztassuk egy elem vagy lap megjelenését vagy működését, egy személyre szabási menü kiválasztásával. Az explicit személyre szabás legalapvetőbb típusa az, ha a jobb egérgombbal kattintunk egy elemre, és a **Személyre szabás** lehetőséget választjuk. (Megjegyzendő, hogy az oldalon nem minden elem szabható személyre.) Ha a személyre szabásnak ezt a módszerét választja, akkor megjelenik az elem tulajdonság ablaka. 
 
@@ -67,11 +67,11 @@ Ha elemeket szeretne áthelyezni, elrejteni vagy módosítani, akkor a Személye
 
 [![Személyes beállítások eszköztára](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-A Személyes beállítások eszköztára számos személyre szabási művelettel rendelkezik. Válassza ki a **Kiválaszt** eszközt, ha egyszerre több elemet szeretne kijelölni, és a tulajdonságaikat egyszerre szeretné megváltoztatni. Először kattintson a Kijelölés eszközre, majd kattintson arra az elemre, amelynek a tulajdonságait módosítani akarja. Amikor kiválaszt egy elemet, az elem tulajdonságok ablaka nyílik meg, és ezen az elem bármilyen tulajdonsága módosítható. Megismételheti a folyamatot más elemekkel is, amelyek a képernyőn testre szabhatók. Bizonyos esetekben, ha kijelöl egy elemet, azt láthatja, hogy néhány tulajdonság nem módosítható. Ez azt jelenti, hogy a Dynamics 365 for Operations nem engedélyezi a tulajdonság módosítását az elem aktuális használata közben. Kötelező mezőt például nem tud elrejteni. 
+A Személyes beállítások eszköztára számos személyre szabási művelettel rendelkezik. Válassza ki a **Kiválaszt** eszközt, ha egyszerre több elemet szeretne kijelölni, és a tulajdonságaikat egyszerre szeretné megváltoztatni. Először kattintson a Kijelölés eszközre, majd kattintson arra az elemre, amelynek a tulajdonságait módosítani akarja. Amikor kiválaszt egy elemet, az elem tulajdonságok ablaka nyílik meg, és ezen az elem bármilyen tulajdonsága módosítható. Megismételheti a folyamatot más elemekkel is, amelyek a képernyőn testre szabhatók. Bizonyos esetekben, ha kijelöl egy elemet, azt láthatja, hogy néhány tulajdonság nem módosítható. Ez azt jelenti, hogy a Finance and Operations nem engedélyezi a tulajdonság módosítását az elem aktuális használata közben. Kötelező mezőt például nem tud elrejteni. 
 
-Válassza ki az **Áthelyezés** eszközt, ha egy elemet ki akar jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. (A szülőcsoporton kívülre nem helyezhető át egy elem). Először kattintson az Áthelyezés eszközre, majd kattintson arra az elemre, amelyet át akar helyezni. Ha jobb gombbal az áthelyezni kívánt elemre kattint, a Dynamics 365 for Operations ellenőrzi a képernyőn azokat a helyeket, ahova az elemet át lehet helyezni, és a „drop zónák” sorozatát a területek melletti színes, félkövér szöveggel jelzi, mialatt az elemet az aktuális csoportban húzza. 
+Válassza ki az **Áthelyezés** eszközt, ha egy elemet ki akar jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. (A szülőcsoporton kívülre nem helyezhető át egy elem). Először kattintson az Áthelyezés eszközre, majd kattintson arra az elemre, amelyet át akar helyezni. Ha jobb gombbal az áthelyezni kívánt elemre kattint, a Finance and Operations ellenőrzi a képernyőn azokat a helyeket, ahova az elemet át lehet helyezni, és a „drop zónák” sorozatát a területek melletti színes, félkövér szöveggel jelzi, mialatt az elemet az aktuális csoportban húzza. 
 
-Válassza ki az **Elrejtés** eszközt egy elem kiválasztásához és elrejtéséhez. Egy elem elrejtéséhez válassza ki az Elrejtés eszközt, és kattintson arra az elemre, amelyet el kíván rejteni. Ha kiválasztja az Elrejtés eszközt, akkor minden aktuálisan elrejtett elem láthatóvá válik egy árnyékolt tárolóban, azután kiválaszthatja, mely elemek elrejtését szeretné megszüntetni. Válassza ki a Kijelölés eszközt, hogy lássa, hogy fog kinézni az oldal a kiválasztott elemek elrejtésével. Válassza ki az **Összegzés** eszközt, ha egy számérték vagy karakterlánc mezőt szeretne megjeleníteni a gyorslapok összegzés területén. Az Összegzés eszköz csak olyan mezőkre érvényes, amelyek a gyorslap szakaszban vannak. Ha kiválasztja az Összegzés eszközt, a Dynamics 365 for Operations minden mezőt megjelenít egy árnyékolt tárolóban, amelyet összegző mezőként választott ki. Interaktívan hozzáadhat és eltávolíthat mezőket a gyorslap összegzőből, ha a mezőre kattint. 
+Válassza ki az **Elrejtés** eszközt egy elem kiválasztásához és elrejtéséhez. Egy elem elrejtéséhez válassza ki az Elrejtés eszközt, és kattintson arra az elemre, amelyet el kíván rejteni. Ha kiválasztja az Elrejtés eszközt, akkor minden aktuálisan elrejtett elem láthatóvá válik egy árnyékolt tárolóban, azután kiválaszthatja, mely elemek elrejtését szeretné megszüntetni. Válassza ki a Kijelölés eszközt, hogy lássa, hogy fog kinézni az oldal a kiválasztott elemek elrejtésével. Válassza ki az **Összegzés** eszközt, ha egy számérték vagy karakterlánc mezőt szeretne megjeleníteni a gyorslapok összegzés területén. Az Összegzés eszköz csak olyan mezőkre érvényes, amelyek a gyorslap szakaszban vannak. Ha kiválasztja az Összegzés eszközt, a Finance and Operations minden mezőt megjelenít egy árnyékolt tárolóban, amelyet összegző mezőként választott ki. Interaktívan hozzáadhat és eltávolíthat mezőket a gyorslap összegzőből, ha a mezőre kattint. 
 
 Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha kiválasztja a Kihagyás eszközt, minden aktuálisan kihagyott eszköz megjelenik egy árnyékolt tárolóban, és kiválaszthatja őket a kihagyott elem kijelölésével, hogy újra a Fülek között szerepeljenek. 
 
@@ -104,16 +104,17 @@ Ha egy listát vagy csempét hozzáad a munkaterülethez, megnyithatja a munkate
 Néhány munkaterület számozott csempét tartalmaz (olyan csempéket, amelyeken számok vannak), amelyeket lehet, hogy az irányítópulton is látni szeretne. A munkaterületen kattintson jobb gombbal egy számozott csempére, majd kattintson a **Személyes beállítások** menüpontra. Válassza ki a **Kitűzés az irányítópultra** lehetőséget. Ha a következő alkalommal a kiválasztott irányítópultra navigál (vagy frissíti az oldalt), láthatja a számot a munkaterület navigációs csempéje alatt az irányítópulton.
 
 ## <a name="explicit-personalization-personalizing-your-dashboard"></a>Explicit személyes beállítások: Az irányítópult személyre szabása
-Az irányítópult legtöbbször az első oldal, amelyet a Dynamics 365 for Operations megnyitásakor lát. Az irányítópult testreszabásával átnevezheti a munkaterület navigációs csempéit, beállíthatja, hogy csak a kívánt csempéket lássa, átnevezheti a csempéket, vagy a kívánt sorrendbe rendezheti őket. Az irányítópult testreszabásához jelöljön ki egy csempét, majd kattintson rá jobb gombbal a helyi menü megnyitásához. Válassza ki a helyi menü **Személyes beállítások** menüpontját. Ha a kiválasztott csempét szeretné elrejteni, átnevezni vagy kihagyni, megváltoztathatja ezt a közvetlenül megjelenő Tulajdonságok ablakon. Ha szeretné módosítani a csempék elrendezését, válassza ki a **Képernyő személyre szabása** beállítást a Tulajdonságok ablakban a Személyes beállítások eszköztár megnyitásához. Az Áthelyezés eszköz segítségével újrarendezheti a csempéket.
+Az irányítópult legtöbbször az első oldal, amelyet a Finance and Operations megnyitásakor lát. Az irányítópult testreszabásával átnevezheti a munkaterület navigációs csempéit, beállíthatja, hogy csak a kívánt csempéket lássa, átnevezheti a csempéket, vagy a kívánt sorrendbe rendezheti őket. Az irányítópult testreszabásához jelöljön ki egy csempét, majd kattintson rá jobb gombbal a helyi menü megnyitásához. Válassza ki a helyi menü **Személyes beállítások** menüpontját. Ha a kiválasztott csempét szeretné elrejteni, átnevezni vagy kihagyni, megváltoztathatja ezt a közvetlenül megjelenő Tulajdonságok ablakon. Ha szeretné módosítani a csempék elrendezését, válassza ki a **Képernyő személyre szabása** beállítást a Tulajdonságok ablakban a Személyes beállítások eszköztár megnyitásához. Az Áthelyezés eszköz segítségével újrarendezheti a csempéket.
 
 ## <a name="administration-of-personalization"></a>Személyes beállítások adminisztrálása
-Lehetséges személyre szabni egy oldalt és megosztani más felhasználókkal úgy, hogy egyszerűen exportálja a személyre szabott oldalt és megkéri a többi felhasználót, hogy navigáljon a személyre szabott oldalra és importálja a testreszabási fájlt, amit létrehozott. Ha egy felhasználó rendszergazdai jogokkal rendelkezik, akkor kezelheti más felhasználók személyes beállításait a **Személyes beállítások** lapon. Nézze meg a b oldalt. A **Személyes beállítások** lapon két fület talál, az egyik a **Rendszer**, a másik a **Felhasználók**. 
+Az oldal személyre szabása után más felhasználókkal is megoszthatja a személyes beállításait. Egyszerűen csak exportálnia kell a személyre szabott lapot. Ezután megkérheti a többi felhasználót, hogy lépjenek a személyre szabott lapra, és importálják az ön által létrehozott személyre szabási fájlt.
 
-**Rendszer:** Itt tudja ideiglenesen letiltani vagy „kikapcsolni” a rendszerben szereplő személyes beállításokat. Ez nem törli a személyes beállításokat, hanem az alapértelmezett állapotra állítja vissza a felületeket. Később újra engedélyezheti a személyes beállításokat, hogy az egyes felhasználói felületeken újra érvényesek legyenek a személyes beállítások. Lehetséges az összes felhasználó személyes beállításainak törlése is. Ne feledje, hogy a személyes beállítások törlésekor nincs lehetőség a személyes beállítások automatikus újraengedélyezésére a rendszerben. Ellenőrizze, hogy exportálta azokat a személyes beállításokat, amelyeket később importálni szeretne, mielőtt végrehajtja ezt a lépést. 
+Rendszergazdai jogokkal rendelkező felhasználók más felhasználók személyes beállításait is kezelhetik a **Személyes beállítások** lapon. Ezen a lapon négy fül van: **Rendszer**, **Felhasználók**, **Importálás** és **Törlés**.
 
-**Felhasználók:** Itt állíthatja be, hogy melyik felhasználó tudjon implicit vagy explicit személyes beállításokat elmenteni. Meghatározhatja azt is, hogy egy bizonyos felületen mely felhasználók állíthatnak be implicit vagy explicit személyes beállításokat. Végül importálhatja, exportálhatja vagy törölheti az egyes felhasználók személyes beállításait. 
-
-**Megjegyzés:** Az eredeti verzióban a személyes beállítások adminisztrációja csak egy felhasználóra engedélyezett.
+- **Rendszer:** – Itt tudja ideiglenesen letiltani vagy kikapcsolni a rendszerben szereplő személyes beállításokat. Ebben az esetben nem törli a személyre szabott beállításokat. Ehelyett csak visszaállítja az összes lapot azok alapértelmezett értékére. Amennyiben későbbólújra engedélyezi a személyes beállításokat, a rendszer minden felhasználói felületen újból alkalmazza a személyes beállításokat. Lehetséges az összes felhasználó személyes beállításainak törlése is. Ne feledje, hogy a személyes beállítások törlésekor nincs lehetőség a személyes beállítások automatikus újraengedélyezésére a rendszerben. Ezért a lépés végrehajtása előtt ellenőrizze, hogy exportálta mindazokat a személyes beállításokat, amelyeket később esetleg importálni szeretne.
+- **Felhasználók** – Megadhatja, hogy a felhasználók implicit vagy explicit személyre szabást hajthatnak végre. Meghatározhatja azt is, hogy egy bizonyos lapon mely felhasználók állíthatnak be implicit vagy explicit személyes beállításokat. Végül importálhatja, exportálhatja vagy törölheti az egyes felhasználók személyes beállításait.
+- **Importálás** – Importálhat egy személyre szabási beállítást egy vagy több felhasználó számára. Ezt a fület akkor használja, miután létrehozott egy személyre szabást egy lapon vagy egy munkaterületen, majd személyre szabási fájlként exportálta azt. A személyre szabási fájl importálásához és egy vagy több felhasználóhoz történő alkalmazásához válassza ki az egyes felhasználókat az összes felhasználó listáján vagy szűrje meg egy adott szerepkör alapján, majd válassza ki az adott szerepkörben lévő felhasználókat. Miután kiválasztotta a személyre szabást használó felhasználókat, kattintson az **Importálás** lehetőségre, és válassza ki a személyre szabási fájlt. A rendszer ellenőrzi a személyre szabást, és alkalmazza az összes kijelölt felhasználóra, amikor azok legközelebb megnyitják a kijelölt lapot.
+- **Törlés** – A lap vagy a munkaterület személyre szabása egy vagy több felhasználó esetében is törölhető. Első lépésként válassza ki azt a lapot vagy munkaterületet, amelyről törölni szeretné a személyre szabási beállításokat. Ezután a felhasználói listában válassza ki a kívánt felhasználókat, vagy szűrje őket egy adott szerepkörön belül, majd válassza ki az adott szerepkörben lévő felhasználókat. Miután kiválasztotta a lapot vagy a munkaterületet és a felhasználókat is, kattintson a **Törlés** lehetőségre. A kiválasztott felhasználók által a kiválasztott lapra vagy munkaterületre alkalmazott valamennyi személyre szabási beállítás törlődik. Ez a művelet nem vonható vissza. Ugyanakkor ha a lapnak vagy a munkaterületnek létezik mentett személyre szabási beállítása, ez a beállítás visszaimportálható.
 
 
 

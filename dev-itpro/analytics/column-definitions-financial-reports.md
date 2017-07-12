@@ -3,7 +3,7 @@ title: "Oszlopdefiníciók a pénzügyi jelentésben"
 description: "Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő vagy építőelem, amely meghatározza az oszlopok tartalmait egy jelentésben. Például a sordefiníciók, az alap oszlopdefiníciókat több jelentésben is használhatják."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -154,7 +154,7 @@ Az **Oszlopfejléc** párbeszédablakban hozzáadhat, módosíthat és törölhe
 
 1.  Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
 2.  Jelöljön ki egy cellát a fejlécsorban.
-3.  A **Szerkesztés** menüben kattintson a **Sor beszúrása** elemre. Az új sor fölött a 2. lépésben kiválasztott sor jelenik meg. **Megjegyzés:**Ha a jelentés jelentésben a fejlécek négy vagy több sort tartalmaznak, a fejléc átfedésbe kerül, amikor a jelentést az Excell munkafüzetbe exportálják. A jelentés összes fejlécének megtekintéséhez növelje meg a felső margót a jelentésdefinícióban.
+3.  A **Szerkesztés** menüben kattintson a **Sor beszúrása** elemre. Az új sor fölött a 2. lépésben kiválasztott sor jelenik meg. **Megjegyzés:** Ha a jelentés jelentésben a fejlécek négy vagy több sort tartalmaznak, a fejléc átfedésbe kerül, amikor a jelentést az Excell munkafüzetbe exportálják. A jelentés összes fejlécének megtekintéséhez növelje meg a felső margót a jelentésdefinícióban.
 
 ### <a name="delete-a-column-header-row"></a>Oszlopfejlécsor törlése
 
@@ -164,7 +164,7 @@ Az **Oszlopfejléc** párbeszédablakban hozzáadhat, módosíthat és törölhe
 
 ### <a name="create-an-automatically-generated-header"></a>Automatikusan generált fejléc létrehozása
 
-A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegkódok alapján. A készszövegkódok változók, amelyek minden jelentés előállításának alkalmával frissülnek. Bármely oszlopfejléc tartalmazhat ilyen kódokat, amelyek változó jelentésinformációkat, például dátumokat vagy időszakszámokat adhatnak meg. Ezért egy oszlopdefiníciót több jelentésdefiníciókhoz, időszakhoz és jelentési fához használhat. Mivel a készszövegkódok az oszlopdefiníció részletsorainak naptárinformációjára alapszanak, ezért csak **CALC**, **FD** és **WKS** oszlopoknál használhatóak. Egy készszövegkód megjelenésének módja az oszlopfejlécben befolyásolja az információ megjelenését a jelentésben. Az **Oszlopfejléc** párbeszédablakban a készszövegkódok kis- és nagybetűket egyaránt használva jelennek meg. Így a szöveg is kis- és nagybetűkkel jelenik meg a jelentésben. Például egy standard naptári évben a(z) **@CalMonthLong** a **7**-es hónapot **július** szövegként jeleníti meg. Ha a hónap nevét csupa nagybetűvel szeretné látni (például **JÚLIUS**), akkor a készszövegkódot csupa nagybetűvel kell megadni az **Oszlopfejléc szövege** mezőben. Például írja be azt, hogy **@CALMONTHLONG**. A kódokat és a szövegeket össze is kombinálhatja. Például a következőt is beírhatja az oszlopfejléc szövegébe: **Időszak @FiscalPeriod-@FiscalYear kezdete: @StartDate vége: @EndDate**. A létrehozott jelentés fejléce ekkor a következőképpen fog megjelenni: **1-02 időszak, 01/01/02 és 01/31/02 között**. **Megjegyzés:** Egyes szövegrészek, például a hosszú dátum a Dynamics 365 for Operations szerver regionális beállításaitól függ. Ezen beállítások módosításához kattintson a **Start** gombra, majd a **Vezérlőpult** elemre, majd válassza a **Régiók és nyelv** opciót. Az alábbi táblázat felsorolja az oszlopfejlécekhez elérhető készszöveg-beállítáokat.
+A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegkódok alapján. A készszövegkódok változók, amelyek minden jelentés előállításának alkalmával frissülnek. Bármely oszlopfejléc tartalmazhat ilyen kódokat, amelyek változó jelentésinformációkat, például dátumokat vagy időszakszámokat adhatnak meg. Ezért egy oszlopdefiníciót több jelentésdefiníciókhoz, időszakhoz és jelentési fához használhat. Mivel a készszövegkódok az oszlopdefiníció részletsorainak naptárinformációjára alapszanak, ezért csak **CALC**, **FD** és **WKS** oszlopoknál használhatóak. Egy készszövegkód megjelenésének módja az oszlopfejlécben befolyásolja az információ megjelenését a jelentésben. Az **Oszlopfejléc** párbeszédablakban a készszövegkódok kis- és nagybetűket egyaránt használva jelennek meg. Így a szöveg is kis- és nagybetűkkel jelenik meg a jelentésben. Például egy standard naptári évben a(z) **@CalMonthLong** a **7**-es hónapot **július** szövegként jeleníti meg. Ha a hónap nevét csupa nagybetűvel szeretné látni (például **JÚLIUS**), akkor a készszövegkódot csupa nagybetűvel kell megadni az **Oszlopfejléc szövege** mezőben. Például írja be azt, hogy **@CALMONTHLONG**. A kódokat és a szövegeket össze is kombinálhatja. Például a következőt is beírhatja az oszlopfejléc szövegébe: **Időszak @FiscalPeriod-@FiscalYear kezdete: @StartDate vége: @EndDate**. A létrehozott jelentés fejléce ekkor a következőképpen fog megjelenni: **1-02 időszak, 01/01/02 és 01/31/02 között**. **Megjegyzés:** Egyes szövegrészek, például a hosszú dátum a Finance and Operations szerver regionális beállításaitól függ. Ezen beállítások módosításához kattintson a **Start** gombra, majd a **Vezérlőpult** elemre, majd válassza a **Régiók és nyelv** opciót. Az alábbi táblázat felsorolja az oszlopfejlécekhez elérhető készszöveg-beállítáokat.
 
 | Kész szövegek beállításai és kódjai                | Leírás                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -488,7 +488,7 @@ A következő példa bemutatja az oszlopleírás azon részét, amely számlaatt
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimenziószűrő az oszlopdefinícióban
 
-Dimenziószűrő használatával korlátozhatók az **FD** oszlopok a dimenzióértékek megadásához. A szűrő tartalmazhat egyetlen dimenziót, dimenziótartományt vagy a dimenziók csoportját. A szűrő is tartalmazhat dimenzióérték-készleteket. Mivel a dimenzióértékek változhatnak, a pénzügyi dimenzióalapú rendszereknek nem kell egy adott hosszúságnak megfelelniük. A szűrő alkalmazására kerül sor, függetlenül attól, hogy a jelentés tartalmaz-e jelentési fát. Bármelyik helyen használhat helyettesítő karaktert (\* vagy ?). Több számla meghatározásakor vesszővel válassza el azokat, például: +Számla=\[1200\], +Számla=\[1100\], Részleg=\[01\] Ahhoz, hogy egy adott számla minden részlegét megkapja, kizárhatja a Részleg dimenziót a dimenziószűrőből. Például a következő dimenziószűrők ugyanúgy lesznek kezelve:
+Dimenziószűrő használatával korlátozhatók az **FD** oszlopok a dimenzióértékek megadásához. A szűrő tartalmazhat egyetlen dimenziót, dimenziótartományt vagy a dimenziók csoportját. A szűrő is tartalmazhat dimenzióérték-készleteket. Mivel a dimenzióértékek változhatnak, a pénzügyi dimenzióalapú rendszereknek nem kell egy adott hosszúságnak megfelelniük. A szűrő alkalmazására kerül sor, függetlenül attól, hogy a jelentés tartalmaz-e jelentési fát. Bármelyik helyen használhat helyettesítő karaktert (\* vagy ?). Több számla meghatározásakor vesszővel válassza el azokat, például: +Számla=\[1200\], +Számla=\[1100\], Részleg=\[01?\] Ahhoz, hogy egy adott számla minden részlegét megkapja, kizárhatja a Részleg dimenziót a dimenziószűrőből. Például a következő dimenziószűrők ugyanúgy lesznek kezelve:
 
 -   +Számla=\[1100\], Részleg
 -   +Számla=\[1100\]

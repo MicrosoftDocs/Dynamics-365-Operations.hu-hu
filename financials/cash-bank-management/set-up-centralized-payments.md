@@ -1,6 +1,6 @@
 ---
 title: "Központosított kifizetések beállítása"
-description: 
+description: "A lépések követésével felkészülhet a kifizetéseknek más jogi személyek nevében egy jogi személyben történő feldolgozására a szervezetben."
 author: twheeloc
 manager: AnnBe
 ms.date: 05/09/2017
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerInterCompany
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62243
 ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 60cc59911cf2d10d73206885eb97b346ec3e3e87
+ms.sourcegitcommit: 975497e8ed0c9738c225bad4db9165bf2ebc0192
+ms.openlocfilehash: 0b33e37699fb9b81ad1803f670a4dedbce6a9c29
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
@@ -29,8 +29,6 @@ ms.lasthandoff: 05/25/2017
 # <a name="set-up-centralized-payments"></a>Központosított kifizetések beállítása
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 A lépések követésével felkészülhet a kifizetéseknek más jogi személyek nevében egy jogi személyben történő feldolgozására a szervezetben. Mielőtt hozzálátna, a következő beállításoknak készen kell lenniük:
@@ -53,10 +51,10 @@ Ha az egyik jogi személyből egy szállítónak kifizetéseket teljesít, és a
 Amikor olyan kifizetést hoz létre egy jogi személyben, amely más jogi személyekben rögzített számlákat egyenlít ki, a feladási profil azonosítóknak mindkét jogi személyben azonosnak kell lenniük. A kifizetések helyes létrehozásának biztosítása érdekében állítson be minden számla szerinti jogi személyben egy olyan feladási profilt, amely megfelel a kifizetés szerinti jogi személyben használt feladási profiloknak. Váltson a számla első jogi személyéhez, majd a **Szállítói feladási profilok** lapon lehet létrehozni új feladási profilt és szerkesztheti a már létező feladási profilt. A számla jogi személyében a feladási profil kiválasztásainak nem kell megfelelniük a fizetés jogi személyének feladási profiljának kiválasztásaihoz.
 
 ## <a name="set-up-methods-of-payment-for-centralized-payments"></a>Fizetési módok beállítása a központosított kifizetések kezeléséhez
-Amikor olyan kifizetést hoz létre egy jogi személyben, amely más jogi személyekben rögzített számlákat egyenlít ki, a fizetési mód azonosítóknak mindkét jogi személyben azonosnak kell lenniük. A kifizetések helyes létrehozásának garantálása érdekében állítson be minden számla szerinti jogi személyben egy olyan fizetési módot, amely megfelel a kifizetés szerinti jogi személyben használt fizetési módoknak. Váltson a számla első jogi személyére, majd a **Fizetési módok**lapon létrehozhat új fizetési módot, vagy szerkeszthet egy meglévő fizetési módot. A számla szerinti jogi személyben lévő fizetési mód esetében kiválasztott beállításoknak nem kell megegyezniük a kifizetés szerinti jogi személyben lévő fizetési mód beállításának módjával.
+Amikor olyan kifizetést hoz létre egy jogi személyben, amely más jogi személyekben rögzített számlákat egyenlít ki, a fizetési mód azonosítóknak mindkét jogi személyben azonosnak kell lenniük. A kifizetések helyes létrehozásának garantálása érdekében állítson be minden számla szerinti jogi személyben egy olyan fizetési módot, amely megfelel a kifizetés szerinti jogi személyben használt fizetési módoknak. Váltson a számla első jogi személyére, majd a **Fizetési módok** lapon létrehozhat új fizetési módot, vagy szerkeszthet egy meglévő fizetési módot. A számla szerinti jogi személyben lévő fizetési mód esetében kiválasztott beállításoknak nem kell megegyezniük a kifizetés szerinti jogi személyben lévő fizetési mód beállításának módjával.
 
 ## <a name="set-up-default-descriptions"></a>Alapértelmezett leírások beállítása
-A vállalatközi kiegyenlítési bizonylatokhoz alapértelmezett leírásokat határozhat meg. Az alapértelmezett leírás a vállalattól és a vállalat részére esedékes tranzakcióknál jelenik meg a vállalatközi kiegyenlítési folyamat során. Az **Alapértelmezett leírások** lapon létrehozhat új leírásokat a **Vállalatközi vevői kiegyenlítés**és a **Vállalatközi szállítói kiegyenlítés** számára, a nyelv kiválasztásával, majd szöveg megadásával.
+A vállalatközi kiegyenlítési bizonylatokhoz alapértelmezett leírásokat határozhat meg. Az alapértelmezett leírás a vállalattól és a vállalat részére esedékes tranzakcióknál jelenik meg a vállalatközi kiegyenlítési folyamat során. Az **Alapértelmezett leírások** lapon létrehozhat új leírásokat a **Vállalatközi vevői kiegyenlítés** és a **Vállalatközi szállítói kiegyenlítés** számára, a nyelv kiválasztásával, majd szöveg megadásával.
 
 
 

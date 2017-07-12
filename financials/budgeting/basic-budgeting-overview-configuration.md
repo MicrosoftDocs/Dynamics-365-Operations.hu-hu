@@ -1,15 +1,15 @@
 ---
 title: "Költségvetés áttekintése"
-description: "Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 for Operations rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Dynamics 365 for Operations rendszerben."
+description: "Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations, Enterprise edition rendszerben."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
@@ -17,27 +17,27 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a4f9c99b8d74e20fbadc6cd9617451cfbfc06ba4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f35db274a6b14f6bae185b69348d3829c77801b5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="budgeting-overview"></a>Költségvetés áttekintése
+# <a name="budgeting-overview"></a>Költségvetés-készítés áttekintése 
 
 [!include[banner](../includes/banner.md)]
 
 
-Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 for Operations rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Dynamics 365 for Operations rendszerben.
+Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
 
 <a name="overview"></a>Áttekintés
 --------
 
 A jogi személy számára jóváhagyott költségvetés egy dokumentumban van vezetve, *költségvetésjegyzék bejegyzés* név alatt. A költségvetésjegyzék-bejegyzési dokumentumok sorai *költségvetési számlabejegyzésekként* ismertek, és pénzügyi dimenziókról tartalmaznak információkat, dátumokat és összegeket az elfogadott költségvetésből. A költségvetésjegyzék bejegyzési dokumentum integrálva van az alapvető pénzügyi dokumentumokba és lekérdezési oldalakba, ahol a főkönyv tényleges összege a költségvetés összegeivel van összehasonlítva. 
 
-Többféle módszer létezik költségvetésitételjegyzék-bejegyzések létrehozására a Dynamics 365 for Operations rendszerben:
+Többféle módszer létezik költségvetésitételjegyzék-bejegyzések létrehozására a Finance and Operations rendszerben:
 
 -   Manuálisan adja meg a dokumentum adatait a **Költségvetésjegyzék bejegyzés** oldalon.
 -   Használja a Microsoft Excel sablont amelyet a **Megnyitás Excel fájlban** gomb megnyomásával nyithat meg a **Költségvetésjegyzék bejegyzések** oldalról.
@@ -77,7 +77,7 @@ A költségvetés-kezelő tekintheti meg a költségvetés aktuális állapotát
 > [!NOTE] 
 > A **Szervezeti egységek** lapon található **Részleg vezetője** mező határozza meg, hogy mely vezetők támogatják az adott pénzügyi dimenziókombinációkat. Kattintson a **bővebb** megnyitásához a lap alján a **Tényleges vs és költségvetés szerinti** lekérdezési lap további részletek a tényleges összegek és a költségvetési összegeket. 
 
-A **tényleges és költségvetési érték összevetése** lekérdezési lap lehetővé teszi a költségvetés-tényleges összegek és részletesen. Válasszon ki egy sort a lekérdezési lapon, és kattintson a **időszaki egyenlegek** pénzügyi időszakok közötti terjednek költségvetés és a tényleges összegek megtekintéséhez. A **költségvetési számlabejegyzések** lap megjeleníti a részletező szeretné a költségvetési tételjegyzék-bejegyzések költségvetési összeg részletes adatait. A **általános naplóbejegyzések**lap megnyitása a főkönyvi tranzakciók szerepelnek a számított **tényleges** összege. 
+A **tényleges és költségvetési érték összevetése** lekérdezési lap lehetővé teszi a költségvetés-tényleges összegek és részletesen. Válasszon ki egy sort a lekérdezési lapon, és kattintson a **időszaki egyenlegek** pénzügyi időszakok közötti terjednek költségvetés és a tényleges összegek megtekintéséhez. A **költségvetési számlabejegyzések** lap megjeleníti a részletező szeretné a költségvetési tételjegyzék-bejegyzések költségvetési összeg részletes adatait. A **általános naplóbejegyzések** lap megnyitása a főkönyvi tranzakciók szerepelnek a számított **tényleges** összege. 
 
 A vállalat által használt költségvetés-tervezési funkció is létrehozása és alkalmazása *költségvetési előrejelzések alapján *a a **főkönyvi költségvetések és az előrejelzések** munkaterület.
 

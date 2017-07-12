@@ -3,7 +3,7 @@ title: "Költségvetés-tervezési sablonok Excelhez"
 description: "Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez használt Microsoft Excel-sablonok."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 93aa0aeffad0411542f36e27745f63198c4438b2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -50,7 +50,7 @@ Az Excel-sablon tartalmazza az összes olyan elemet a költségvetésiterv-dokum
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> A költségvetésiterv-adatok Excelben történő megtekintése és módosítása során fellépő lehetséges problémák elkerülése érdekében ugyanannak a felhasználónak kell bejelentkeznie a Dynamics 365 for Operations rendszerbe és a Microsoft Dynamics Office Adatcsatlakozó bővítményébe.
+> A költségvetésiterv-adatok Excelben történő megtekintése és módosítása során fellépő lehetséges problémák elkerülése érdekében ugyanannak a felhasználónak kell bejelentkeznie a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszerbe és a Microsoft Dynamics Office Adatcsatlakozó bővítményébe.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Fejléc felvétele költségvetésiterv-dokumentum sablonjába
 Fejlécadatok hozzáadásához jelölje ki a felső sort az Excel-fájlban, és illesszen be üres sorokat. Kattintson a **Tervezés** elemre az **Adatcsatlakozóban** a fejlécmezők az Excel-fájlhoz történő hozzáadásához.
@@ -79,11 +79,11 @@ A kiválasztott mezőcsoport megjeleníti a sablonban elérhető oszlopokat. Kat
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> A képlet megadásához hozza létre a képletet a táblázatban, majd másolja a **Tervezés** ablakba. A Dynamics 365 for Operationshöz kapcsolt táblák neve általában „AXTable1”. Például az 1. n.évi kérelem : 4. n.évi kérelem oszlopok a táblázatban való összegzésére szolgáló képlet = AxTable1\[1. n.évi kérelem\]+AxTable1\[2. n.évi kérelem\]+AxTable1\[3. n.évi kérelem\]+AxTable1\[4. n.évi kérelem\].
+> A képlet megadásához hozza létre a képletet a táblázatban, majd másolja a **Tervezés** ablakba. A Finance and Operationshöz kapcsolt táblák neve általában „AXTable1”. Például az 1. n.évi kérelem : 4. n.évi kérelem oszlopok a táblázatban való összegzésére szolgáló képlet = AxTable1\[1. n.évi kérelem\]+AxTable1\[2. n.évi kérelem\]+AxTable1\[3. n.évi kérelem\]+AxTable1\[4. n.évi kérelem\].
 
 Ismételje meg ezeket a lépéseket a **Kiigazítás** oszlop beillesztéséhez. Ennél az oszlopnál használja az = AxTable1\[Teljes kérelem\]\*$I$1 képletet. Ez veszi az I1 cella értékét, és megszorozza **Teljes kérelem** oszlop értékeit a helyesbítési összegek kiszámításához.
 
-Mentse és zárja be az Excel-fájlt. Lépjen vissza a Dynamics 365 for Operations rendszerba, majd az **Elrendezések** részben kattintson a **Sablon &gt; Feltöltés** elemre a mentett és a költségvetési tervhez használandó Excel-sablon feltöltéséhez. 
+Mentse és zárja be az Excel-fájlt. Lépjen vissza a Finance and Operations rendszerbe, majd az **Elrendezések** részben kattintson a **Sablon &gt; Feltöltés** elemre a mentett és a költségvetési tervhez használandó Excel-sablon feltöltéséhez. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 

@@ -3,14 +3,14 @@ title: "Az elektronikus jelentési beállítások letöltése a Lifecycle Servic
 description: "Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát mutatja be."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1e73cd38c33d88feaba825abb64721bc332a4d6e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: be77d76194e9d38589548113cc650599d5af4323
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -35,7 +35,7 @@ Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics
 
 Ez az oktatóanyag bemutatja az elektronikus jelentési (ER) konfiguráció legújabb verziójának a Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát.
 
-1.  Bejelentkezés a Dynamics 365 for Operations rendszerbe az alábbi szerepkörök egyikének használatával:
+1.  Bejelentkezés a Finance and Operations rendszerbe az alábbi szerepkörök egyikének használatával:
     -   Elektronikus jelentések fejlesztője
     -   Elektronikus jelentések funkcióival foglalkozó konzulens
     -   Rendszergazda
@@ -55,7 +55,7 @@ Ez az oktatóanyag bemutatja az elektronikus jelentési (ER) konfiguráció leg�
 6.  Kattintson a **Megnyitás** lehetőségre a kijelölt tárház ER-konfigurációk listájának megtekintéséhez. [![Az ER frissítése az MS LCS rendszerből - LCS-tárház készítése](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  A bal oldali ablaktáblában jelölje ki a konfigurációkban jelölje ki a szükséges ER-konfigurációt.
 8.  A **Verziók** gyorslapon válassza ki a kijelölt ER-konfiguráció szükséges verzióját.
-9.  Kattintson az **Importálás** lehetőségre a kiválasztott verzió LCS rendszerből a jelenlegi Dynamics 365 for Operations példányba történő letöltéséhez. **Megjegyzés:** Az **Importálás** gomb nem érhető el azon ER konfigurációs verziókhoz, amelyek már szerepelnek a Dynamics 365 for Operations aktuális példányában. [![Az ER frissítése az MS LCS rendszerből - Konfiguráció letöltése](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  Kattintson az **Importálás** lehetőségre a kiválasztott verzió LCS rendszerből a jelenlegi Finance and Operations példányba történő letöltéséhez. **Megjegyzés:** Az **Importálás** gomb nem érhető el azon ER konfigurációs verziókhoz, amelyek már szerepelnek a Finance and Operations aktuális példányában. [![Az ER frissítése az MS LCS rendszerből - Konfiguráció letöltése](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 **Megjegyzés:** Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos cikkek listáját.
 

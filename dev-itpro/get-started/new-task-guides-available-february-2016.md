@@ -3,13 +3,13 @@ title: "Új feladatútmutatók (2016. február)"
 description: "Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február)."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3c99753f22e537fdc026342dce12389fb9acc83a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,12 +30,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
+Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics AX APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Feladat-útmutatók (2016. február) a Microsoft Dynamics 365 for Operations APQC egyesített könyvtárában
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat útmutatók (2016 Február) a Microsoft Dynamics AX APQC egyesített könyvtárában
 ---------------------------------------------------------------------------------
 
-Az APQC Egyesített Könyvtár (2016. február) tartalmazza a Feladat-útmutatókat, melyeket a Dynamics 365 for Operations 7.0.0 használatához szántak Súgónak. Ha a Feladat-útmutatók honosított verziójára van szüksége, a Microsoft Dynamics 365 for Operations APQC Egyesített könyvtárában (2016. május) elérheti azokat. A súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
+Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatókat, melyeket a Dynamics AX 7.0.0 használatához szántak Súgónak. Ha a Feladat-útmutatók honosított verziójára van szüksége, a Microsoft Dynamics AX APQC Egyesített könyvtárában (2016 Május) elérheti azokat. A súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kötelezettségek
 

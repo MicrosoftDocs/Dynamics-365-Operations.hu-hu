@@ -3,14 +3,14 @@ title: "Raktári munka ellenőrzése munkasablonok és helyutasítások használ
 description: "A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72921
 ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9d0ad4f64ee84da4e90dfa1525ebb5ff9fec4063
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f8bcdcf70089aaed06ba0f88cdbec8dfdf9121d1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
 
-A Microsoft Dynamics 365 for Operations programban beállított munkasablonok determinálják az utasításokat, amiket a raktári dolgozók a mobileszközeikre kapnak. Ezek határozzák meg a különböző raktári folyamatokat és feladatokat. A munkasablonok határozzák meg, hogy miként történik a munka minden egyes raktári folyamat esetében. A helyutasítás hozzárendelése a munkasablonhoz elősegíti, hogy a munka a raktárak meghatározott területein történjen.
+A Microsoft Dynamics 365 for Finance and Operations programban beállított munkasablonok determinálják az utasításokat, amiket a raktári dolgozók a mobileszközeikre kapnak. Ezek határozzák meg a különböző raktári folyamatokat és feladatokat. A munkasablonok határozzák meg, hogy miként történik a munka minden egyes raktári folyamat esetében. A helyutasítás hozzárendelése a munkasablonhoz elősegíti, hogy a munka a raktárak meghatározott területein történjen.
 
 ## <a name="work-templates"></a>Munkasablonok
 A **Munkasablonok** lapon megadhatja a műveleteket, amiket el kell végezni a raktárban. Általában a raktári műveletek két egymást követő műveletből állnak: egy raktári dolgozó felveszi az aktuális készletet az egyik helyen, majd lerakja a készletet egy másik helyen. 
@@ -57,7 +57,7 @@ A munkasablonoknál beállíthat egy lekérdezést, ami meghatározza, hogy miko
 
 A helyutasítási sorok további korlátozásokat szabnak meg a helykeresés szabályaival kapcsolatban. Megadhat egy minimális és egy maximális mennyiséget, amire az utasítás vonatkozik, valamint megadhatja, hogy az utasítás csak egy adott készletegységre vonatkozzon. Például ha a mértékegység a raklap a raklapon található cikkeket adott helyre lehet vinni. Megadhatja azt is, hogy a mennyiség el lehet-e osztva több hely között. A helyutasítási műveletek fejléchez hasonlóan minden helyutasítás sorművelete rendelkezik egy sorszámmal, amely meghatározza a sorok értékelési sorrendjét. 
 
-A helyutasítások rendelkeznek egy további részletességi szinttel, ez a: *helyutasítási műveletek*. Több helyutasítási műveletet is megadhat minden sornak. Még egyszer, a sorozatszám meghatározza a műveletek értékelésének sorrendjét. Ezen a szinten megadhat egy lekérdezést, hogy megadja, hogyan legyen megtalálva a legjobb hely a raktárban. Emellett használható előre definiált **Stratégia**beállítás, az optimális hely megtalálásához.
+A helyutasítások rendelkeznek egy további részletességi szinttel, ez a: *helyutasítási műveletek*. Több helyutasítási műveletet is megadhat minden sornak. Még egyszer, a sorozatszám meghatározza a műveletek értékelésének sorrendjét. Ezen a szinten megadhat egy lekérdezést, hogy megadja, hogyan legyen megtalálva a legjobb hely a raktárban. Emellett használható előre definiált **Stratégia** beállítás, az optimális hely megtalálásához.
 
 ### <a name="example-of-the-use-of-location-directives"></a>Példa a helyutasítás használatához
 

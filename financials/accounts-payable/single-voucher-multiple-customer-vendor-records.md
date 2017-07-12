@@ -1,15 +1,15 @@
 ---
 title: "Egyetlen bizonylat több vevő- vagy szállítórekorddal"
-description: "Ez a témakör áttekinti, mi történik, ha több vevő- vagy szállítórekordot tartalmazó bizonylatot ad fel. Ez a funkció a Microsoft Dynamics 365 for Operations későbbi verzióiban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást."
+description: "Ez a témakör áttekinti, mi történik, ha több vevő- vagy szállítórekordot tartalmazó bizonylatot ad fel. Ez a funkció a Microsoft Dynamics 365 Finance and Operations Enterprise edition későbbi verzióiban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b1038ea950141f0e7d4678cac9edd3b0bd5beb6f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör áttekinti, mi történik, ha több vevő- vagy szállítórekordot tartalmazó bizonylatot ad fel. Ez a funkció a Microsoft Dynamics 365 for Operations későbbi verzióiban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást. 
+Ez a témakör áttekinti, mi történik, ha több vevő- vagy szállítórekordot tartalmazó bizonylatot ad fel. Ez a funkció a Microsoft Dynamics 365 Finance and Operations Enterprise edition későbbi verzióiban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást. 
 
 Egy bizonylat több vevő vagy szállító esetében történő használatára általánosan elterjedt példa az egyenlegátvitel az ügyfelek között vagy az egyenleg nettóérték-számítása a vevők és a szállítók között az adott szervezeten belül. 
 
@@ -120,7 +120,7 @@ Az INV2 kifizetésekor a következő bejegyzés történik. Figyelje meg, hogy a
 | GNJL001     | Szállító           | 1001        | INV1            |           | 100,00     | Főkönyv           | 606300-001-- |
 | GNJL001     | Szállító           | 1001        | INV2            |           | 200,00     | Főkönyv           | 606300-002-- |
 
-A következő példában a főkönyvben több szállítói számla van rögzítve egy bizonylaton a **Főkönyvi napló**oldalon. Ezek a számlák több számladimenzión vannak elosztva. A feladást követően egy bizonylat jön létre.
+A következő példában a főkönyvben több szállítói számla van rögzítve egy bizonylaton a **Főkönyvi napló** oldalon. Ezek a számlák több számladimenzión vannak elosztva. A feladást követően egy bizonylat jön létre.
 
 |             |              |                  |                                          |                                         |
 |-------------|--------------|------------------|------------------------------------------|-----------------------------------------|
@@ -162,7 +162,7 @@ Az INV2 kifizetésekor a következő bejegyzés történik. Figyelje meg, hogy a
 | 14000056    | 200110-001- | Szállítói egyenleg     |                                          | -2.00                                   |
 
 ## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>Egyetlen bizonylat az egyenlegátvitelekhez és a nettóérték-számítási forgatókönyvekhez
-Ez egy bizonylat több vevő vagy szállító esetében történő használatára általánosan elterjedt forgatókönyvek közé tartozik a következő kettő: egyenlegátvitel egy vevőtől/szállítótól egy másik vevőhöz/szállítóhoz, illetve nettóérték-számítás az ugyanabban a szervezetben található vevők és a szállítók között. A következő két példa ezeknek a forgatókönyveknek az előnyben részesített beviteli módszerét mutatja be a Dynamics 365 for Operations megoldásba az egy bizonylaton történő bevitel alternatívájaként. 
+Ez egy bizonylat több vevő vagy szállító esetében történő használatára általánosan elterjedt forgatókönyvek közé tartozik a következő kettő: egyenlegátvitel egy vevőtől/szállítótól egy másik vevőhöz/szállítóhoz, illetve nettóérték-számítás az ugyanabban a szervezetben található vevők és a szállítók között. A következő két példa ezeknek a forgatókönyveknek az előnyben részesített beviteli módszerét mutatja be a Finance and Operations megoldásba az egy bizonylaton történő bevitel alternatívájaként. 
 
 Az *egyenlegátvitel* több vevőt tartalmazó egyetlen bizonylat, amelyet azért visznek be, hogy egyenlegátvitelt hajtsanak végre egyik vevőtől egy másiknak (vagy egyik szállítótól a másiknak). Ez a forgatókönyv akkor fordul elő, ha a számla kifizetésének felelősségét átviszik egy másik félnek, például a leányvállalat az anyavállalatnak adja át a felelősséget. 
 
@@ -176,7 +176,7 @@ Illusztrálásként tegyük fel, hogy a következő értékesítés az ACME vev�
 | 401100-002-023-    | Bevétel          |           | 100        |
 | 130100-002-        | Vevői egyenleg | 100       |            |
 
-Ezután a felhasználó átviszi az ACME-től esedékes egyenleget a biztosítótársasághoz, egy bizonylaton a kinnlevőségek kifizetési naplóban. A Dynamics 365 for Operations megoldásban a biztosítótársaság a Biztosítás vevőként van beállítva.
+Ezután a felhasználó átviszi az ACME-től esedékes egyenleget a biztosítótársasághoz, egy bizonylaton a kinnlevőségek kifizetési naplóban. A Finance and Operations megoldásban a biztosítótársaság a Biztosítás vevőként van beállítva.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|

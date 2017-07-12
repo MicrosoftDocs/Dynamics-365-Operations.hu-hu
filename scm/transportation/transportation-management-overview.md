@@ -1,15 +1,15 @@
 ---
 title: "Szállítás kezelés áttekintése"
-description: "Ez a témakör áttekintést nyújt a szállításkezelés funkcióról a Microsoft Dynamics 365 for Operations szolgáltatásban."
+description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations rendszer szállításkezelési funkcióját mutatja be."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 796bf42f103bd6d14e872138d07e4a911ddcab1a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör áttekintést nyújt a szállításkezelés funkcióról a Microsoft Dynamics 365 for Operations szolgáltatásban.
+Ez a témakör a Microsoft Dynamics 365 for Finance and Operations rendszer szállításkezelési funkcióját mutatja be.
 
-A Szállításkezelés lehetővé teszi, hogy a vállalata szállítását használja és kezelje, továbbá hogy azonosítsa a szállítót és az útvonal-tervezési megoldásokat a bejövő és a kimenő rendelésekhez. Például azonosíthatja a leggyorsabb vagy a legolcsóbb útvonalat a szállítmányhoz. A következő táblázat bemutatja a szállításkezelésben használatos fő eseteket a Microsoft Dynamics 365 for Operations rendszerben.
+A Szállításkezelés lehetővé teszi, hogy a vállalata szállítását használja és kezelje, továbbá hogy azonosítsa a szállítót és az útvonal-tervezési megoldásokat a bejövő és a kimenő rendelésekhez. Például azonosíthatja a leggyorsabb vagy a legolcsóbb útvonalat a szállítmányhoz. A következő táblázat bemutatja a szállításkezelésben használatos fő eseteket a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 <table>
 <colgroup>
@@ -68,23 +68,23 @@ A Szállításkezelés lehetővé teszi, hogy a vállalata szállítását haszn
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-dynamics-365-for-operations"></a>Szállítási tervezés a Dynamics 365 for Operations rendszerben
+## <a name="planning-transportation-in-finance-and-operations"></a>Szállítási tervezés a Finance and Operations rendszerben
 A szállításkezelésben a szállítási tervezés alapulhat rendeléseken vagy az adott rendelések alapján létrehozott szállítmányokon. A szállítmány mindig létezik valamikor a folyamat során, de nem szükséges a szállítási tervezéshez. Az átmozgatási rendelések a kimeneti eset részei, és megtervezhetők az értékesítési rendelésekkel közösen. 
 
 ![Rajz betöltése](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Kimenő szállítás
-Amikor cikkeket rendel szállítótól, és a cikkeket a raktárába kell szállítani, akkor érdemes saját magának elrendeznie a cikkek szállítását. Használhatja a Dynamics 365 for Operations-t, hogy megtervezze egy beérkező rakomány fogadását. A következő ábra bemutatja a szállítás bejövő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat. 
+Amikor cikkeket rendel szállítótól, és a cikkeket a raktárába kell szállítani, akkor érdemes saját magának elrendeznie a cikkek szállítását. Arra használhatja a Finance and Operations rendszert, hogy megtervezze egy beérkező rakomány fogadását. A következő ábra bemutatja a szállítás bejövő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat. 
 
 ![Üzleti folyamatábra: bejövő szállítási rakományok](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Kimenő szállítás
-Megtervezheti és feldolgozhat egy kimenő terhelést bizonyos cikkek szállításához a cég raktárából a vevőhöz. Használhatja a Dynamics 365 for Operations-t, hogy megtervezze egy kimenő rakomány szállítását. A következő ábra bemutatja a szállítás kimenő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat. 
+Megtervezheti és feldolgozhat egy kimenő terhelést bizonyos cikkek szállításához a cég raktárából a vevőhöz. Arra használhatja a Finance and Operations rendszert, hogy megtervezze egy kimenő rakomány szállítását. A következő ábra bemutatja a szállítás kimenő terhelésének tervezéséhez és feldolgozásához használatos üzleti folyamatokat. 
 
 ![Kimenő rakományok tervezése és feldolgozása](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Rakomány-összeállítás
-A Dynamics 365 for Operations biztosít egy rakomány-összeállítási stratégiát, amely a Térfogaton alapuló rakomány-összeállítási stratégia nevet viseli. Ez a stratégia lehetővé teszi a rakomány-sablonban megadott maximális magasság- és súlyértékek használatát, vagy a beállítások felülírását új értékek megadásával. A használatához válassza ki a stratégiát a **Rakomány-összeállító munkaterület** oldal **Beállítások** gyorslapján található **Rakomány-összeállítási stratégia** mezőben. Ezenkívül hozzáadhatja a saját rakomány-összeállítási stratégiáját egy új osztály létrehozásával az alkalmazásobjektum-fán (AOT) belül.
+A Finance and Operations biztosít egy rakomány-összeállítási stratégiát, amely a Térfogaton alapuló rakomány-összeállítási stratégia nevet viseli. Ez a stratégia lehetővé teszi a rakomány-sablonban megadott maximális magasság- és súlyértékek használatát, vagy a beállítások felülírását új értékek megadásával. A használatához válassza ki a stratégiát a **Rakomány-összeállító munkaterület** oldal **Beállítások** gyorslapján található **Rakomány-összeállítási stratégia** mezőben. Ezenkívül hozzáadhatja a saját rakomány-összeállítási stratégiáját egy új osztály létrehozásával az alkalmazásobjektum-fán (AOT) belül.
 
 
 

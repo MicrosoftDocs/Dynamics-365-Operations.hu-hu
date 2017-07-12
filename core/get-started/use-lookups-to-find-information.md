@@ -1,15 +1,15 @@
 ---
 title: "Információk megtalálása keresésekkel"
-description: "A Microsoft Dynamics 365 for Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit."
+description: "A Microsoft Dynamics 365 for Finance and Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 652fbdb7a96c516ca1fc17357683d94b85cd93f3
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a5d0a9edd2cb5747fc799c6fdca45dd9ba5720f7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,12 +30,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 for Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit.  
+A Microsoft Dynamics 365 for Finance and Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit.  
 
 <a name="responsive-lookups"></a>Kontextusfüggő keresések
 ------------------
 
-A Dynamics 365 for Operations korábbi verzióinál a keresővel való interakció során a felhasználónak konkrét műveletet kellett végrehajtania a legördülő menü megnyitásához. Lehet, hogy csillagot (\*) írt be a keresés jelenlegi érték alapján történő szűrése érdekében, a legördülő gombra leadott kattintással, illetve az **Alt**+**Lefelé nyíl** billentyűkód megadásával. A kereső felülete a következőképpen módosult annak érdekében, hogy jobban igazodjon a internetes gyakorlatokhoz:
+A Dynamics 365 for Finance and Operations korábbi verzióinál a keresővel való interakció során a felhasználónak konkrét műveletet kellett végrehajtania a legördülő menü megnyitásához. Lehet, hogy csillagot (\*) írt be a keresés jelenlegi érték alapján történő szűrése érdekében, a legördülő gombra leadott kattintással, illetve az **Alt**+**Lefelé nyíl** billentyűkód megadásával. A kereső felülete a következőképpen módosult annak érdekében, hogy jobban igazodjon a internetes gyakorlatokhoz:
 
 -   A Keresés legördülő menüi automatikusan megnyílnak a gépelés során jelentkező kis szünet után, és a legördülő menü tartalmát a kereső vezérlőelemeinek értéke alapján szűri a rendszer.
     -   Kérjük, vegye figyelembe, hogy megszűnt az a régi funkció, hogy a legördülő menü automatikusan megnyílt a csillag (\*) karakter beírását követően.
@@ -58,7 +58,7 @@ Annak ellenére, hogy a fókusz még mindig a keresőben van, a **Felfelé nyíl
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Az azonosítón túli adatok beírása
-Adatok bevitele esetén természetes, hogy a felhasználók egy entitást (például ügyfelet vagy szállítót) a neve, és nem az entitásra jellemző azonosító alapján azonosítanak. A Dynamics 365 for Operations jelenlegi verziójában számos (de nem az összes) keresés mostantól a kontextus szerinti adatbevitelt is lehetővé teszi. Ez a nagyszerű funkció lehetővé teszi a felhasználó számára, hogy az azonosítót vagy a megfelelő nevet beírja a keresőbe. 
+Adatok bevitele esetén természetes, hogy a felhasználók egy entitást (például ügyfelet vagy szállítót) a neve, és nem az entitásra jellemző azonosító alapján azonosítanak. A Dynamics 365 for Finance and Operations jelenlegi verziójában számos (de nem az összes) keresés mostantól a kontextus szerinti adatbevitelt is lehetővé teszi. Ez a nagyszerű funkció lehetővé teszi a felhasználó számára, hogy az azonosítót vagy a megfelelő nevet beírja a keresőbe. 
 
 Érdemes például fontolóra vennie a **Vevői számla** mező használatát egy értékesítési rendelés létrehozásakor. Ez a mező mutatja a vevő **számlaazonosítóját**, de a felhasználók általában inkább **számlanevet** írnak be **számlaazonosító** helyett ennél a mezőnél, amikor létrehoznak egy értékesítési rendelést, mint például „Tip-Top Nagyker” a „HU-003” helyett.
 

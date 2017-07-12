@@ -1,15 +1,15 @@
 ---
-title: "Értékesítési és nyereségességi teljesítmény Power BI-tartalma"
-description: "Ez a témakör leírja, hogy mit tartalmaz a Dynamics 365 for Operations - Értékesítési és a jövedelmezőségi teljesítmény csomag a Microsoft Power BI számára. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+title: "Értékesítési és nyereségességi teljesítmény Power BI-tartalom"
+description: "Ez a témakör azt ismerteti, mit tartalmaz az Értékesítési és a jövedelmezőségi teljesítmény Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
@@ -17,45 +17,45 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 357f7071d801b13518c83170f8d0e7946dd9dede
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 16fef86e330a392ddd888fcb46060c3e1efa87c5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Értékesítési és nyereségességi teljesítmény Power BI-tartalma
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Értékesítési és nyereségességi teljesítmény Power BI-tartalom
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör azt ismerteti, mit tartalmaz az **Értékesítési és a jövedelmezőségi teljesítmény** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
-Ez a témakör leírja, hogy mit tartalmaz a Dynamics 365 for Operations - Értékesítési és a jövedelmezőségi teljesítmény csomag a Microsoft Power BI számára. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+## <a name="overview"></a>Áttekintés
 
-<a name="overview"></a>Áttekintés
---------
+Az **Értékesítési és a jövedelmezőségi teljesítmény** Power BI-tartalmat az értékesítési vezetők számára hozták létre a bevétel, a bruttó nyereség és a fedezeti mutató kulcsfontosságú értékesítési mutatóinak figyelemmel kísérésére. Értékesítési tranzakciós adatokat használ, és egyaránt bemutatja a vállalat egészére kiterjedő eladási adatokat és az ügyfelek és termékek értékesítési teljesítményének lebontását.
 
-Ezt a tartalomcsomagot az értékesítési vezetők számára hozták létre a bevétel, a bruttó nyereség és a fedezeti mutató kulcsfontosságú értékesítési mutatóinak figyelemmel kísérésére. A Dynamics 365 for Operations értékesítési tranzakciós adatait használja, és egyaránt bemutatja a vállalat egészére kiterjedő eladási adatokat és az ügyfelek és termékek értékesítési teljesítményének lebontását. A bevételek és a profitnövekedés időbeli változásainak kiemelésével a jelentések felhasználhatók arra, hogy figyelmeztessék a vezetőket az egyes ügyfelek és termékek pozitív és negatív trendjeire. A kategória- és regionális vezetők hasznosnak találják azokat a diagramokat, amelyek összehasonlítják a különböző termékkategóriák és ügyfélcsoportok bevételét és nyereségességét egymással, hogy kimutassák a lemaradókat és a vezetőket. Az egyéni ügyfelek bevételének és fedezeti mutatójának egyaránt átfogó jelentése a számlavezetők számára egy adatvédelemmel ellátott alapot biztosít, hogy értékesítési és marketingerőfeszítéseiket az egyes ügyfelek profiljához igazítsa. Az Értékesítési és a jövedelmezőségi teljesítmény csomag lehetővé teszi az értékesítési vezetők számára az értékesítési teljesítmény elemzését:
+A jelentések kiemelik a bevételek és a profitnövekedés időbeli változásait. Ezért a jelentések riasztásra használhatók a menedzserek számára a pozitív és negatív trendjekről az egyes ügyfelekre és termékekre nézve. Ezenkívül a diagramok összehasonlítják a különböző termékkategóriák és ügyfélcsoportok bevételét és jövedelmezőségét egymással. Ezek segítségével a kategória- és regionális vezetők azonosíthatják a lemaradókat és a vezetőket. Végül pedig egy átfogó jelentés egymás mellé rendezi az egyéni ügyfelek bevételét és és a fedezeti mutatót. Ez a számlavezetők számára egy adatvédelemmel ellátott alapot biztosít, hogy értékesítési és marketingerőfeszítéseiket az egyes ügyfelek profiljához igazítsák. 
+
+Az **Értékesítési és a jövedelmezőségi teljesítmény** tartalom a következő módokon teszi lehetővé az értékesítési vezetők számára az értékesítési teljesítmény elemzését:
 
 -   Bevétel, éves (ügyfélkategória és egyedi ügyfelek, értékesítési kategóriák, egyedi termékek és földrajzi adatok szerint)
 -   Bevételváltozás, évről évre (az ügyfélkör és az értékesítési kategóriák szerint)
 
-A nyereségesség elemezhető az alábbiak szerint:
+A jövedelmezőség elemzése a következő módokon történhet:
 
 -   Bruttó nyereség és fedezeti mutató (ügyfélcsoportok és termékértékesítési kategóriák szerint)
 -   Bruttó nyereségváltozás, évről évre
 -   Ügyfél jövedelmezősége (bevétel és bruttó nyereség szerint)
 
-## <a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
-Az Értékesítési és nyereségességi teljesítmény Power BI-tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) végrehajtási eszközeként van közzétéve, és a Microsoft Dynamics 365 for Operations programból férhető hozzá. A Power BI jelentések elérésével és elindításával kapcsolatos további tudnivalókért lásd: [Power BI-tartalom az LCS megoldásban a Microsoft vállalattól és a partnerektől](power-bi-content-microsoft-partners.md).
-**Megjegyzés:** A KB 4011327 ezen Power BI-tartalom előfeltétele. A Lifecycle Servicesbe való bejelentkezést követően itt férhet hozzá a tudásbázishoz: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
+## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017 júliusi frissítését használja, az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom itt található: **Értékesítési és jövedelmezőségi teljesítmény** lap (**Gyártásvezérlés** > **Lekérdezések és jelentések** > **Értékesítési teljesítmény elemzése** > **Értékesítési és jövedelmezőségi teljesítmény**). 
 
-## <a name="metrics-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott metrikák
-A tartalomcsomag tartalmaz egy jelentést, amely metrikák diagramok, mozaikok és táblák formájában megjelenített készletéből áll. Az alábbi táblázatban a tartalomcsomag megjelenítési formáinak áttekintése található.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
+Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom tartalmaz egy jelentést, amely metrikák készletéből áll. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. Az alábbi táblázatban a tartalom megjelenítési formáinak áttekintése található.
 
-|                        |                                            |                                                         |
+| Jelentéslap            | Diagramok                                     | Mozaik                                                   |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| **Jelentéslap**        | **Diagramok**                                 | **Mozaik**                                               |
 | Bevétel vevő szerint    | 10 vezető vevő bevétel alapján                | Összes bevétel                                           |
 |                        | Vevői csoport összes bevétele            | Éves bevételnövekedés                                      |
 |                        | Vevői csoport átlagos vevői bevétele | Bruttó nyereség                                            |
@@ -76,47 +76,46 @@ A tartalomcsomag tartalmaz egy jelentést, amely metrikák diagramok, mozaikok �
 
 \* Erre az évre és az előző évre eső bevétel és növekedés értékesítési kategória szerint.
 
+## <a name="extending-the-power-bi-content"></a>Power BI-tartalom kibővítése
+A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban található tartalomcsomagok révén nagyszerű elemzési lehetőségeket nyújthat azoknak a személyeknek, akik nem jelentkeztek be a Microsoft Dynamics 365 szolgáltatásba. Ezek a tartalomcsomagok módosíthatók, hogy más jelentéseket vagy megjelenítéseket is tartalmazhassanak, majd a tartalomcsomagok elemzés céljából közzétehetők a Power BI.com-bérlőjénél.
+
+Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalmat az LCS Megosztott eszközök könyvtárában találja. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
+
+Ügyeljen arra, hogy azt az **Értékesítési és jövedelmezőségi teljesítmény** tartalmat töltse le, amely a Dynamics 365 ön által használt verziójára vonatkozik.
+
+> [!NOTE]
+> Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 1611-es verzióját használja, a KB 4011327 a Power BI-tartalom előfeltétele. A Lifecycle Services szolgáltatásba való bejelentkezést követően itt férhet hozzá a tudásbázishoz: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-Az Értékesítési és a jövedelmezőségi teljesítmény tartalomcsomag jelentésének feltöltésére a Dynamics 365 for Operations adatok szolgálnak. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg – az entitástár egy elemzési célra optimalizált Microsoft SQL-adatbázis. További információért olvassa el a következő blogot: [A Power BI és az entitástár integrálása a Dynamics programban](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). A tartalomcsomag összesítő mértékek a következőkben rendelkezésre álló összesítő mértékek részhalmazát alkotják: Sales Cube in Dynamics AX 2012 és az AX 2012 R3. A kocka összesítő mértékeinek előkészítéséhez az entitástárban, a mértékeket központilag telepíthetővé kell tenni. További információért lásd a következő blogot az összesítő mértékek előkészítésének eljárásáról az entitástárban: [A Power BI és az entitástár integrálása a Dynamics programban](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). A következő kulcsfontosságú összesítő mértékek közvetlenül a számla sorai entitásból érhetők el, és a tartalomcsomag alapjául szolgálnak.
+Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom jelentésének feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md). 
 
-|               |                                              |                                                 |                                              |                                          |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **Entitás**    | **Kulcs összesítő mértékek**               | **A Dynamics 365 for Operations adatforrása** | **Mező**                                    | **Leírás**                          |
-| Számlasorok | Bevétel                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Összeg könyvelési pénznemben            |
-|               | Eladott áruk beszerzési értéke                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Költségösszeg + kiigazítás                 |
-|               | Jutaléksor összege – könyvelési pénznem | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Jutalék összege a könyvelési pénznemben |
+A tartalom összesítő mértékek a következőkben rendelkezésre álló összesítő mértékek részhalmazát alkotják: Sales Cube in Microsoft Dynamics AX 2012 és Microsoft Dynamics AX 2012 R3. A kocka összesítő mértékeinek előkészítéséhez az entitástárban, a mértékeket központilag telepíthetővé kell tenni. További információért lásd a következő blogbejegyzést az összesítő mértékek előkészítésének eljárásáról az entitástárban: [A Power BI és az entitástár integrálása a Dynamics programban](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
 
-A következő táblázat azt mutatja, hogyan használjuk a számlasorok entitásának fő összesített mértékeit számos számított mérték létrehozására a tartalomcsomag adathalmazában.
+A következő kulcsfontosságú összesítő mértékek közvetlenül a számla sorai entitásból érhetők el, és a tartalom alapjául szolgálnak.
 
-|                   |                                                                                                  |
+| Entitás        | Kulcs összesítő mértékek                   | Adatforrás a Dynamics 365 szolgáltatáshoz                    | Mező                                        | Leírás                                   |
+|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
+| Számlasorok | Bevétel                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Összeg a könyvelési pénznemben.            |
+|               | Eladott áruk beszerzési értéke                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | A költségösszeg és a helyesbítés összege.    |
+|               | Jutaléksor összege – könyvelési pénznem | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | A jutalék összege a könyvelési pénznemben. |
+
+A következő táblázat azt mutatja, hogyan használjuk a Számlasorok entitásának fő összesített mértékeit számos számított mérték létrehozására a tartalom adathalmazában.
+
+| Méret           | Számítás                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **Méret**       | **Számítás**                                                                                |
 | Bruttó nyereség      | SZUM(Bevétel – ELÁBÉ – Jutalék – (a vevői számlasor összegének áfatartalma) - könyvelési pénznem)          |
 | Bruttó nyereség      | SZUM(Bruttó nyereség/(Bevétel – áfa (a vevői számlasor összegének áfatartalma)))             |
 | Tavalyi bevétel | Tavalyi év bevételei = CALCULATE(SUM('Számlasorok'\[Bevétel\]), SAMEPERIODLASTYEAR(Dátumok\[Dátum\])) |
 
-Az **Értékesítés kocka** következő fő dimenziói szolgálnak szűrőként az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
+Az alábbi táblázat megjeleníti azokat a fő dimenziókat az Értékesítés kockában, amelyek szűrőként szolgálnak az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
 
-|                  |                                                      |
+| Entitás           | Példák az attribútumok                               |
 |------------------|------------------------------------------------------|
-| **Entitás**       | **Példák attribútumokra**                           |
 | Vevők        | Vevőcsoportok, vevőrégiók, cím, iparág |
 | Termékek         | Termékszám, Termék neve, Cikkcsoportok neve       |
 | Értékesítési kategóriák | Értékesítési kategóriák nevei                                 |
 | Jogi személyek   | Jogi személyek nevei                                   |
 | Dátumok            | Dátumok                                                |
 
-Alapértelmezés szerint a tartalomcsomag az aktuális naptári év adatait jeleníti meg, de megnyithatja a jelentésszűrőket, és módosíthatja a dátumszűrőt. A vállalatszűrőt is módosíthatja.
-
-## <a name="additional-resources"></a>További erőforrások
-Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
-
--   [Adatentitások](..\data-entities\data-entities.md)
--   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](configure-power-bi-integration.md)
-
-
-
-
+Alapértelmezés szerint a tartalom a folyó naptári év adatait jeleníti meg. Azonban módosíthatja a dátumszűrőt a jelentésszűrők szakaszban. A vállalatszűrőt is módosíthatja.
 

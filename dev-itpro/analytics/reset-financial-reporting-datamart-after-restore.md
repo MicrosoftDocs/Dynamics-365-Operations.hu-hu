@@ -1,15 +1,15 @@
 ---
 title: "A pénzügyi jelentési adatpiac visszaállítása az adatbázis visszaállítása után"
-description: "Ez a témakör ismerteti, hogyan végezhető el a pénzügyi jelentési adatpiac visszaállítása a Microsoft Dynamics 365 for Operations adatbázis visszaállítása után."
+description: "Ez a témakör ismerteti, hogyan végezhető el a pénzügyi jelentési adatpiac visszaállítása a Microsoft Dynamics 365 for Finance and Operations adatbázis visszaállítása után."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d227452e48914170404f0ee5163a05e6b875e69f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör ismerteti, hogyan végezhető el a pénzügyi jelentési adatpiac visszaállítása a Microsoft Dynamics 365 for Operations adatbázis visszaállítása után. 
+Ez a témakör ismerteti, hogyan végezhető el a pénzügyi jelentési adatpiac visszaállítása a Microsoft Dynamics 365 for Finance and Operations adatbázis visszaállítása után. 
 
-Számos olyan forgatókönyv van, amikor szükség lehet a Dynamics 365 for Operations adatbázis visszaállítására biztonsági másolatból, vagy az adatbázis másolására egy másik környezetből. Ilyenkor a megfelelő lépéseket is végre kell hajtania annak a biztosítására, hogy a pénzügyi jelentési adatpiac megfelelően használja a visszaállított 365 Dynamics for Operations adatbázist. Ha kérdése van a pénzügyi jelentési adatpiac visszaállításával kapcsolatban a Dynamics 365 for Operations visszaállításán kívüli okokból, olvassa el a következőt: [Felügyeleti jelentéskészítő adatpiac alaphelyzetbe állítása](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) további információért. Vegye figyelembe, hogy a folyamat lépéseit a Dynamics 365 for Operations 2016 májusi kiadása támogatja (7.0.1265.23014 alkalmazásbild és 7.0.10000.4 pénzügyi jelentési build), valamint az újabb verziók. Ha a Dynamics 365 for Operations egy korábbi verziójával rendelkezik, lépjen kapcsolatba támogatási csoportunkkal segítségért.
+Számos olyan forgatókönyv van, amikor szükség lehet a Dynamics 365 for Finance and Operations adatbázis visszaállítására biztonsági másolatból, vagy az adatbázis másolására egy másik környezetből. Ilyenkor a megfelelő lépéseket is végre kell hajtania annak a biztosítására, hogy a pénzügyi jelentési adatpiac megfelelően használja a visszaállított 365 Dynamics for Finance and Operations adatbázist. Ha kérdése van a pénzügyi jelentési adatpiac visszaállításával kapcsolatban a Dynamics 365 for Finance and Operations visszaállításán kívüli okokból, olvassa el a következőt: [Felügyeleti jelentéskészítő adatpiac alaphelyzetbe állítása](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) további információért. Vegye figyelembe, hogy a folyamat lépéseit a Dynamics 365 for Operations 2016 májusi kiadása támogatja (7.0.1265.23014 alkalmazásbild és 7.0.10000.4 pénzügyi jelentési build), valamint az újabb verziók. Ha a Dynamics 365 for Finance and Operations egy korábbi verziójával rendelkezik, lépjen kapcsolatba támogatási csoportunkkal segítségért.
 
 ## <a name="export-report-definitions"></a>Jelentésdefiníciók exportálása
 Először exportálja a Jelentéstervezőben található jelentésterveket, a következő lépések végrehajtásával:
 
 1.  A Jelentéstervezőben kattintson a **Vállalat** &gt; **Építőelem-csoportok** lehetőségére.
-2.  Válassza ki az exportálandó építőelem-csoportot, majd kattintson az **Export** lehetőségre. **Megjegyzés:** A Dynamics 365 for Operations, csak egy építőelem-csoportot támogat, az **Alapértelmezett** csoportot.
+2.  Válassza ki az exportálandó építőelem-csoportot, majd kattintson az **Export** lehetőségre. **Megjegyzés:** A Dynamics 365 for Finance and Operations, csak egy építőelem-csoportot támogat, az **Alapértelmezett** csoportot.
 3.  Válassza ki a jelentésdefiníciókat az exportáláshoz:
     -   Az összes jelentésdefiníció illetve a társított építőelemek exportálásához kattintson az **Összes kijelölése** lehetőségre.
     -   Konkrét jelentések, sorok, oszlopok, fák vagy dimenziókészletek exportálásához kattintson a megfelelő lapra, majd válassza ki az exportálandó tételeket. Ha több cikket szeretne kijelölni egy lapon, nyomja le és tartsa lenyomva a Ctrl-billentyűt. Ha exportálandó jelentéseket jelöl ki, úgy kiválasztásra kerülnek a társított sorok, oszlopok, fák és dimenziókészletek is.
@@ -49,7 +49,7 @@ Először exportálja a Jelentéstervezőben található jelentésterveket, a k�
 
 A fájl másolhatók, illetve feltölthető egy biztonságos helyre, hogy később importálható legyen egy másik környezetbe. A Microsoft Azure tárolófiók használatával kapcsolatos információkért lásd: [Adatátvitel az AzCopy parancssori segédprogrammal](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
 > [!NOTE]
-> A Dynamics 365 for Operations megállapodás részeként a Microsoft nem biztosít tárolófiókot. Be kell szereznie egy tárolófiókot, vagy egy külön Azure-előfizetésből származó tárolófiókot kell használnia. 
+> A Dynamics 365 for Finance and Operations megállapodás részeként a Microsoft nem biztosít tárolófiókot. Be kell szereznie egy tárolófiókot, vagy egy külön Azure-előfizetésből származó tárolófiókot kell használnia. 
 > [!WARNING]
 > Legyen tisztában a D-meghajtó viselkedésével az Azure virtuális gépeken Ne tárolja itt véglegesen az exportált építőelem-csoportokat. További információt az ideiglenes meghajtókkal kapcsolatban itt talál: [A Windows Azure virtuális gépek ideiglenes meghajtóinak ismertetése](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
@@ -57,19 +57,19 @@ A fájl másolhatók, illetve feltölthető egy biztonságos helyre, hogy késő
 A Távoli asztal segítségével csatlakozzon az összes számítógéphez a környezetében, és állítsa le a következő Windows-szolgáltatásokat a services.msc segítségével:
 
 -   Webes közzétételi szolgáltatás (az összes AOS-számítógépen)
--   Microsoft Dynamics 365 for Operations Batch Management Service (csak a nem személyes AOS-számítógépeken)
+-   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (csak a nem személyes AOS-számítógépeken)
 -   Management Reporter 2012 Process Service (csak a BI-számítógépeken)
 
-Ezek a szolgáltatások nyitott kapcsolattal rendelkeznek a Dynamics 365 for Operations-adatbázissal.
+Ezek a szolgáltatások nyitott kapcsolattal rendelkeznek a Dynamics 365 for Finance and Operations-adatbázissal.
 
 ## <a name="reset"></a>Alaphelyzet
 #### <a name="locate-the-latest-dataupgradezip-package"></a>Keresse meg a legújabb DataUpgrade.zip csomagot
 
 Keresse meg a legújabb DataUpgrade.zip csomagot a következő utasításokkal: [A DataUpgrade.zip parancsfájl letöltése](..\migration-upgrade\upgrade-data-to-latest-update.md). Az utasítások ismertetik, hogyan keresse meg az adatfrissítési csomagnak a környezetéhez megfelelő verzióját.
 
-#### <a name="execute-scripts-against-dynamics-365-for-operations-database"></a>Parancsfájl-műveletek végrehajtása a Dynamics 365 for Operations adatbázison
+#### <a name="execute-scripts-against-finance-and-operations-database"></a>Parancsfájl-műveletek végrehajtása a Dynamics 365 for Finance and Operations adatbázison
 
-Futtassa a következő parancsfájlokat a Dynamics 365 for Operations adatbázison (nem pénzügyi jelentési adatbázison).
+Futtassa a következő parancsfájlokat a Dynamics 365 for Finance and Operations adatbázison (nem pénzügyi jelentési adatbázison).
 
 -   DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
 -   DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
@@ -78,7 +78,7 @@ Ezeket a parancsfájlok gondoskodnak arról, hogy helyesek legyenek a felhaszná
 
 #### <a name="execute-powershell-command-to-reset-database"></a>Adatbázis alaphelyzetbe állításához PowerShell-parancs végrehajtása
 
-Hajtsa végre a következő parancsot közvetlenül az AOS-számítógépen Dynamics 365 for Operations és a pénzügyi jelentéskészítés közti integráció alaphelyzetbe állításához:
+Hajtsa végre a következő parancsot közvetlenül az AOS-számítógépen Dynamics 365 for Finance and Operations és a pénzügyi jelentéskészítés közti integráció alaphelyzetbe állításához:
 
 1.  Nyissa meg a Windows PowerShell alkalmazást rendszergazdaként.
 2.  Hajtsa végre: F:
@@ -97,7 +97,7 @@ A paraméterek magyarázata:
 A korábban leállított szolgáltatások újraindításához használja a Services.msc parancsot:
 
 -   Webes közzétételi szolgáltatás (az összes AOS-számítógépen)
--   Microsoft Dynamics 365 for Operations Batch Management Service (csak a nem személyes AOS-számítógépeken)
+-   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (csak a nem személyes AOS-számítógépeken)
 -   Management Reporter 2012 Process Service (csak a BI-számítógépeken)
 
 ## <a name="import-report-definitions"></a>Jelentésdefiníciók importálása
@@ -106,7 +106,7 @@ Importálja a jelentésterveket a Jelentéstervezőből, az exportálás során 
 1.  A Jelentéstervezőben kattintson a **Vállalat** &gt; **Építőelem-csoportok** lehetőségére.
 2.  Válassza ki az exportálandó építőelem-csoportot, majd kattintson az **Export** lehetőségre. 
     > [!NOTE]
-    > A Dynamics 365 for Operations, csak egy építőelem-csoportot támogat, az **Alapértelmezett** csoportot.
+    > A Dynamics 365 for Finance and Operations csak egy építőelem-csoportot támogat, az **Alapértelmezett** csoportot.
 3.  Válassza ki az **Alapértelmezett** építőelemet, és kattintson az **Importálás** lehetőségre.
 4.  Válassza ki az exportált jelentésdefiníciókat tartalmazó fájlt, és kattintson a **Megnyitás** lehetőségre.
 5.  Jelölje ki az importálandó jelentésdefiníciókat az Importálás párbeszédpanelben:

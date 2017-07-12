@@ -1,28 +1,29 @@
 ---
 title: "Attribútumok létrehozása és kezelése"
-description: "Ez a cikk a Microsoft Dynamics 365 for Operations attribútumait írja le. Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál által meghatározott mezők segítségével."
+description: "Ez a cikk a Microsoft Dynamics 365 for Retail attribútumait írja le. Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál által meghatározott mezők segítségével."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: eaee0edb4822a386c8781d9929999cea326f0a40
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 4493c2f9e9e9dfe990f3b1670d3cd35e3bbaa38d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Ez a cikk a Microsoft Dynamics 365 for Operations attribútumait írja le. Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál által meghatározott mezők segítségével.
+Ez a cikk a Microsoft Dynamics 365 for Retail attribútumait írja le. Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál által meghatározott mezők segítségével.
 
 Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál által meghatározott mezők segítségével. Például megadhatja a termék memóriaméretét vagy merevlemez-kapacitását, és jelezheti, hogy a termék megfelel-e az Energy star előírásoknak. Az attribútumok különböző kiskereskedelmi entitásokhoz, például termékkategóriákhoz és kiskereskedelmi csatornákhoz, társíthatók, és megadhatók hozzájuk alapértelmezett értékek. A termékek öröklik az attribútumaikat és a hozzájuk tartozó alapértelmezett értékeket, amikor társítják őket egy termékkategóriához vagy kiskereskedelmi csatornához. Az alapértelmezett értékek felülírhatók az egyes termékek és a kiskereskedelmi csatorna szintjén vagy a kiskereskedelmi kategóriában.
 
@@ -59,7 +60,7 @@ Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál �
 ## <a name="attribute-type"></a>Attribútumtípus
   [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
   
-Az attribútumok az attribútumtípusokon alapulnak. Az attribútumtípusok az adott attribútumba bevihető adatok típusát azonosítják. Jelenleg a Microsoft Dynamics 365 for Operations a következő attribútumtípusokat támogatja:
+Az attribútumok az attribútumtípusokon alapulnak. Az attribútumtípusok az adott attribútumba bevihető adatok típusát azonosítják. Jelenleg a Microsoft Dynamics 365 for Retail a következő attribútumtípusokat támogatja:
 
 -   **Currency** – Ez az attribútumtípus a pénznemértékeket támogatja. Lehet kötött (vagyis támogathat egy értéktartományt) vagy nyitva is hagyható.
 -   **DateTime** – Ez az attribútumtípus a dátum és idő értékeket támogatja Lehet kötött (vagyis támogathat egy értéktartományt) vagy nyitva is hagyható.

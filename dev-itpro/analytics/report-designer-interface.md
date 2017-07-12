@@ -3,7 +3,7 @@ title: "Jelentéstervező felület"
 description: "Ez a cikk ismerteti, hogyan navigálhat a Jelentéstervezőben és a különböző beállításokat, segítségével az igényeihez igazíthatja a programot."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 775a836748949a86b64a0ddec15ee4519b1c5127
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,7 +53,7 @@ A **Fájl** menü az összes felhasználó által elérhető, és a következő 
 | Mentés másként                           | Mentse el más néven az aktuális sordefiníciót, oszlopdefiníciót, jelentési-fa definíciót vagy jelentésdefiníciót.                                                                            |
 | Tulajdonságok                        | Nyissa meg a **Tulajdonságok** párbeszédpanelt, ahol módosítani tudja a jelentés nevét és leírását.                                                                                                   |
 | Létrehozás                          | Hozza létre az aktuális jelentést. Ez a parancs egy jelentésdefinícióban érhető el.                                                                                                                 |
-| Jelentés megtekintése                       | Nyissa meg a Dynamics 365 for Operations programban a létrehozott jelentés legfrissebb verzióját. Ez a parancs egy jelentésdefinícióban érhető el, ha már legalább egy jelentést létrehozott.                                 |
+| Jelentés megtekintése                       | Nyissa meg a Finance and Operations programban a létrehozott jelentés legfrissebb verzióját. Ez a parancs egy jelentésdefinícióban érhető el, ha már legalább egy jelentést létrehozott.                                 |
 | Legutolsó Jelentésdefiníciók         | A nemrég létrehozott vagy módosított jelentések listáját jeleníti meg. Ezután ki tud választani egy jelentést a listából.                                                                                    |
 | Legutolsó Sordefiníciók            | A nemrég létrehozott vagy módosított sordefiníciók listáját jeleníti meg. Ezután ki tud választani egy sordefiníciót a listából.                                                                    |
 | Legutolsó Oszlopdefiníciók         | A nemrég létrehozott vagy módosított oszlopdefiníciók listáját jeleníti meg. Ezután ki tud választani egy oszlopdefiníciót a listából.                                                              |
@@ -163,7 +163,7 @@ A **Súgó** menü az összes felhasználó által elérhető, és a következő
 
 | Parancs | Leírás                                                  |
 |---------|--------------------------------------------------------------|
-| Súgó    | Nyissa meg a Dynamics 365 for Operations súgó üzleti jelentésekről szóló témaköroldalát. |
+| Súgó    | Nyissa meg Finance and for Operations súgó üzleti jelentésekről szóló témaköroldalát. |
 |         |                                                              |
 
 ## <a name="report-designer-toolbar-buttons"></a>A Jelentéstervező eszköztár gombjai

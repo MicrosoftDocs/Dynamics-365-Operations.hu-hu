@@ -3,7 +3,7 @@ title: "Nyilvántartási azonosítók"
 description: "Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fc4a56eceb75673b7a044bd8392f8d0cc675e869
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -57,10 +57,12 @@ A nyilvántartási kategória egy olyan ország-/régióalapú nyilvántartási 
 |-----------------------|----------------|
 | Regisztráció típusa     | A nyilvántartási típus konkrét országban/régióban.|
 | Korlátozva         | Az adónyilvántartás-típusra vonatkozó korlátozás fajtája: Nincs, Személy, Szervezet.|
-| Nyilvántartási kategória | Az országban használatra jóváhagyott egyedi nyilvántartási azonosító. A támogatott AX7.1 kategóriák teljes listáját lásd alább. |
+| Nyilvántartási kategória | Az országban használatra jóváhagyott egyedi nyilvántartási azonosító. A Microsoft Dynamics 365 for Finance and Operations Enterprise edition által támogatott kategóriák teljes listája alább található. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Globális címjegyzék nyilvántartási azonosítóinak megadása
-A Microsoft Dynamics 365 for Operations globális címjegyzéke vevők, szállítók, partnerek, üzleti kapcsolatok és jogi személyek összevont címadatait tartalmazza. A további tudnivalókat lásd: [Globális címjegyzék áttekintése](/dynamics365/operations/organization-administration/overview-global-address-book). A globális címjegyzékben tárolt partnerrekordok egy vagy több címrekordot tartalmazhatnak. Ezeket a címeket különböző – például számlázási vagy szállítási – célokra használják. Nyilvántartási azonosítók beállíthatók vevők, szállítók, dolgozók és jogi személyek címadataihoz. Keresse meg a fél (jogi személy, szállító, vevő, dolgozó) rekordját, amelyhez meg kívánja adni a nyilvántartási azonosítót, majd kattintson a **Regisztrációs azonosítók** elemre a fél, jogi személy, szállító, vevő, dolgozó űrlapján a **Címek kezelése** oldal megnyitásához. Az **Adóregisztráció** lapon kattintson a **Hozzáadás** elemre, és adja meg a következő információkat a nyilvántartási azonosítóhoz.
+
+A Microsoft Dynamics 365 for Finance and Operations globális címjegyzéke vevők, szállítók, partnerek, üzleti kapcsolatok és jogi személyek összevont címadatait tartalmazza. A további tudnivalókat lásd: [Globális címjegyzék áttekintése](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). A globális címjegyzékben tárolt partnerrekordok egy vagy több címrekordot tartalmazhatnak. Ezeket a címeket különböző – például számlázási vagy szállítási – célokra használják. Nyilvántartási azonosítók beállíthatók vevők, szállítók, dolgozók és jogi személyek címadataihoz. Keresse meg a fél (jogi személy, szállító, vevő, dolgozó) rekordját, amelyhez meg kívánja adni a nyilvántartási azonosítót, majd kattintson a **Regisztrációs azonosítók** elemre a fél, jogi személy, szállító, vevő, dolgozó űrlapján a **Címek kezelése** oldal megnyitásához. Az **Adóregisztráció** lapon kattintson a **Hozzáadás** elemre, és adja meg a következő információkat a nyilvántartási azonosítóhoz.
+
 
 |Mező                |Leírás                                                |
 |---------------------|-----------------------------------------------------------|
@@ -80,23 +82,23 @@ A Microsoft Dynamics 365 for Operations globális címjegyzéke vevők, szállí
 A felek rekordjainak keresése nyilvántartási azonosító alapján a fél, jogi személy, szállító, vevő és dolgozó adott űrlapján érhető el. Kattintson a **Regisztrációs azonosító keresése** elemre a **Regisztrációs azonosító keresési feltételei** lap megnyitásához. Adja meg a keresési feltételeket, és kattintson a **Keresés** elemre. A rendszer megjeleníti a kijelölt rekordokat a globális címjegyzékből és a fél hozzá tartozó típusú rekordjait.
 
 ## <a name="supported-registration-categories"></a>Támogatott nyilvántartási kategóriák
-Az alábbi táblázat a Dynamics 365 for Operations támogatott nyilvántartási típusait sorolja fel. Ha ismeri a Microsoft Dynamics AX 2012 nyilvántartási azonosítókhoz tartozó mezőit, ez a tábla ugyanazon mezőket kapcsolja a Dynamics 365 for Operations nyilvántartási kategóriáihoz.
+Az alábbi táblázat a Finance and Operations támogatott nyilvántartási típusait sorolja fel. Ha ismeri a Microsoft Dynamics AX 2012 nyilvántartási azonosítókhoz tartozó mezőit, ez a tábla ugyanazon mezőket kapcsolja a Finance and Operations nyilvántartási kategóriáihoz.
 
-| A Dynamics 365 for Operations nyilvántartási kategóriái         |Ország/régió  | Dynamics AX 2012 kifejezés/mező|
+| A Finance and Operations nyilvántartási kategóriái         |Ország/régió  | Dynamics AX 2012 kifejezés/mező|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| Áfaazonosító                                                        | Az Európai Unió (EU) összes országa|  Adómentességi szám (jogszabályon alapuló típusú adóazonosító az AX2012 R3-ban)|
-| Vállalatazonosító (COID)                                          | Belgium Csehország Észtország Magyarország Lettország Litvánia Lengyelország Svájc | Vállalati szám (EnterpriseNumber) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) vállalati kód (EnterpriseCode) nyilvántartási szám (RegNum\_W) UID (jogszabályon alapuló típusú UID az AX2012 R3-ban) |
+| Áfaazonosító                                                        | Az Európai Unió (EU) összes országa|  Adómentességi szám (jogszabályon alapuló típusú adóazonosító az AX 2012 R3-ban)|
+| Vállalatazonosító (COID)                                          | Belgium Csehország Észtország Magyarország Lettország Litvánia Lengyelország Svájc | Vállalati szám (EnterpriseNumber) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) nyilvántartási szám (RegNum\_W) vállalati kód (EnterpriseCode) nyilvántartási szám (RegNum\_W) UID (jogszabályon alapuló típusú UID az AX 2012 R3-ban) |
 | Fiókazonosító                                                     | Belgium            | Ágazati szám (BranchNumber)|
 | Spisová značka (nyilvántartási szám, kiállító hivatal, szakasz) | Cseh Köztársaság     | Betétlap száma (CommercialRegisterInsetNumber) nyilvántartja a kereskedelmi cégjegyzék (CommercialRegister) kereskedelmi cégjegyzék szakasza (CommercialRegisterSection)|
 | Vámhivatali vevőazonosító                                           | Finnország | Vámhivatali vevőszám (CustomsCustomerNumber\_FI)|
-| Adóazonosító                                                           | Orosz Föderáció| INN (jogszabályon alapuló INN típus az AX2012 R3-ban)|
-| Regisztrációs okkód                                                           | Orosz Föderáció| RRC (jogszabályon alapuló RRC típus az AX2012 R3-ban)|
-| OKDP                                                          | Orosz Föderáció| OKDP (jogszabályon alapuló OKDP típus az AX2012 R3-ban)|
-| OKPO                                                          | Orosz Föderáció| OKPO (jogszabályon alapuló OKPO típus az AX2012 R3-ban)|
-| RCOAD                                                         | Orosz Föderáció| RCOAD (jogszabályon alapuló RCOAD típus az AX2012 R3-ban)|
-| OGRN                                                          | Orosz Föderáció| OGRN (jogszabályon alapuló OGRN típus az AX2012 R3-ban) |
-| SNILS                                                         | Orosz Föderáció| SNILS (jogszabályon alapuló SNILS típus az AX2012 R3-ban)|
-| CIFTS                                                         | Orosz Föderáció| CIFTS (jogszabályon alapuló CIFTS típus az AX2012 R3-ban)|
+| Adóazonosító                                                           | Orosz Föderáció| INN (jogszabályon alapuló INN típus az AX 2012 R3-ban)|
+| Regisztrációs okkód                                                           | Orosz Föderáció| RRC (jogszabályon alapuló RRC típus az AX 2012 R3-ban)|
+| OKDP                                                          | Orosz Föderáció| OKDP (jogszabályon alapuló OKDP típus az AX 2012 R3-ban)|
+| OKPO                                                          | Orosz Föderáció| OKPO (jogszabályon alapuló OKPO típus az AX 2012 R3-ban)|
+| RCOAD                                                         | Orosz Föderáció| RCOAD (jogszabályon alapuló RCOAD típus az AX 2012 R3-ban)|
+| OGRN                                                          | Orosz Föderáció| OGRN (jogszabályon alapuló OGRN típus az AX 2012 R3-ban) |
+| SNILS                                                         | Orosz Föderáció| SNILS (jogszabályon alapuló SNILS típus az AX 2012 R3-ban)|
+| CIFTS                                                         | Orosz Föderáció| CIFTS (jogszabályon alapuló CIFTS típus az AX 2012 R3-ban)|
 
 A nyilvántartási azonosítók feldolgozásával kapcsolatos további információkért, ideértve a szükséges előfeltételeket, nézze meg az áfaazonosítóhoz kapcsolódó következő feladatrögzítéseket a Lifecycle Services (LCS) szolgáltatásban:
 

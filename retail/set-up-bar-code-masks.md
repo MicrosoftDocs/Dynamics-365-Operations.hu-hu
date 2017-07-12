@@ -3,25 +3,27 @@ title: "Vonalkódmaszkok beállítása"
 description: "Ez a témakör a vonalkódmaszk-karakterek és a vonalkódmaszkok beállítását ismerteti, valamint arról is beszámol, hogy miként rendelhetők vonalkódmaszkok vonalkódokhoz."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7b71cbe75f2d7e8f20201e8fa50df8ea1021c4de
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 958cac2e85ae7fa514f6f26cbb6178d8fdec9783
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -36,7 +38,7 @@ Ez a témakör a vonalkódmaszk-karakterek és a vonalkódmaszkok beállításá
 <a name="set-up-bar-code-mask-characters"></a>Vonalkódmaszk-karakterek beállítása
 -------------------------------
 
-A vonalkódmaszkok vonalkódok létrehozására és a pénztárnál beolvasott vonalkódok gyors azonosítására használhatók. A maszkok olyan karakterekből állnak, amelyek helyőrzőként szolgálnak, és kijelölik a létrehozandó vonalkódok formátumát. Vonalkódmaszk konfigurálásához be kell állítania a vonalkódmaszk-karaktereket. Lépjen a **Kiskereskedelem és kereskedelem** &gt; **Készletgazdálkodás** &gt; **Vonalkódok és címkék** &gt; **Maszkkarakterek** ponthoz. Új vonalkódmaszk-karakterek létrehozásához kattintson az **Új** gombra. Maszkkarakterek a következő vonalkódadatok jelölésére hozhatók létre .
+A vonalkódmaszkok vonalkódok létrehozására és a pénztárnál beolvasott vonalkódok gyors azonosítására használhatók. A maszkok olyan karakterekből állnak, amelyek helyőrzőként szolgálnak, és kijelölik a létrehozandó vonalkódok formátumát. Vonalkódmaszk konfigurálásához be kell állítania a vonalkódmaszk-karaktereket. Lépjen a **Kiskereskedelem** &gt; **Készletgazdálkodás** &gt; **Vonalkódok és címkék** &gt; **Maszkkarakterek** ponthoz. Új vonalkódmaszk-karakterek létrehozásához kattintson az **Új** gombra. Maszkkarakterek a következő vonalkódadatok jelölésére hozhatók létre .
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -53,12 +55,13 @@ A vonalkódmaszkok vonalkódok létrehozására és a pénztárnál beolvasott v
 | **Alkalmazott**         | Az alkalmazott azonosítószámának vonalkódszegmensét jelzi a vonalkódos pénztári bejelentkezésnél.                                  |
 | **Ügyfél**         | Az ügyfélazonosító szegmensét jelzi.                                                                                  |
 | **Adatbevitel**       | *Még nincs megvalósítva.*                                                                                          |
-| **Engedmény kódja**    | Olyan vonalkód engedménykódját jelzi, amellyel engedményt adna egy pénztári tranzakcióhoz             |
+| **Engedmény kódja**    | *Értékcsökkenés* a Dynamics 365 for Retail 2017 tavaszi verziójára vonatkozóan. Korábban: Olyan vonalkód engedménykódját jelzi, amellyel engedményt adna egy pénztári tranzakcióhoz.                                                                   |
+| **Utalványkód**      | Olyan vonalkód engedménykódját jelzi, amelynek segítségével engedményt lehet hozzáadni egy kiskereskedelmi rendeléshez. Ez lépett az engedménykód helyébe.     |
 | **Ajándékutalvány**        | Az ajándékutalvány számát jelzi, ha ajándékutalványt ad ki, vagy azzal fizet.                                               |
 | **Hűségkártya**     | Hűségkártyával rendelkező ügyfél hozzáadása egy tranzakcióhoz – később a hűségkártyával való fizetéseknél használható.                             |
 
 ## <a name="define-bar-code-masks"></a>Vonalkódmaszkok meghatározása
-Miután megadta a vonalkódmaszk-karaktereket a szükséges vonalkódmaszkok számára, menjen a **Kiskereskedelem és kereskedelem** &gt; **Készletgazdálkodás** &gt; **Vonalkódok és címkék** &gt; **Vonalkódmaszk beállítása** ponthoz. Ezen az oldalon olyan vonalkódmaszkokat adhat meg, amelyek a korábban megadott karaktereket használják. Ezeket a vonalkódmaszkokat a vonalkódok generálásakor használja a rendszer, és segítenek azonosítani a pénztárban beolvasott vonalkódokat is.
+Miután megadta a vonalkódmaszk-karaktereket a szükséges vonalkódmaszkok számára, menjen a **Kiskereskedelem** &gt; **Készletgazdálkodás** &gt; **Vonalkódok és címkék** &gt; **Vonalkódmaszk beállítása** ponthoz. Ezen az oldalon olyan vonalkódmaszkokat adhat meg, amelyek a korábban megadott karaktereket használják. Ezeket a vonalkódmaszkokat a vonalkódok generálásakor használja a rendszer, és segítenek azonosítani a pénztárban beolvasott vonalkódokat is.
 
 1.  Új vonalkódmaszk létrehozásához kattintson az **Új** gombra.
 2.  Adja meg az értékeket a **Maszkazonosító** és a **Leírás** mezőkben, and majd válassza ki a vonalkódmaszk típusát a **Típus** mezőben.

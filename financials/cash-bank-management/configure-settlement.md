@@ -3,7 +3,7 @@ title: "Kiegyenlítés konfigurálása"
 description: "A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a cikk a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a cikk a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be. 
 
-A következő paraméterek befolyásolják, hogyan hajtja végre a Microsoft Dynamics 365 for Operations a kiegyenlítéseket. A kiegyenlítés az a folyamat, amikor a számlát kiegyenlítjük egy kifizetéssel vagy jóváírással szemben. Ezek a paraméterek a **Kiegyenlítés** területen, a **Kinnlevőségek paraméterei** és a **Kötelezettségek paraméterei** lapokon találhatók.
+A következő paraméterek befolyásolják, hogyan hajtja végre a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition a kiegyenlítéseket. A kiegyenlítés az a folyamat, amikor a számlát kiegyenlítjük egy kifizetéssel vagy jóváírással szemben. Ezek a paraméterek a **Kiegyenlítés** területen, a **Kinnlevőségek paraméterei** és a **Kötelezettségek paraméterei** lapokon találhatók.
 
 -   **Automatikus kiegyenlítés** – Állítsa be az **Igen** értéket, ha a tranzakciót automatikusan más nyitott tranzakciókkal szemben kell állítani feladáskor. Ha a **Nem** értéket állítja be, a felhasználók manuálisan egyenlíthetik ki a tranzakciókat, amikor kifizetést adnak meg, vagy később a **Tranzakciók kiegyenlítése** lap segítségével.
 -   **Készpénzfizetési engedmény adminisztrációja** – Határozza meg, hogyan [kell kezelni a kézpénzfizetési engedményt, ha egy számla túlfizetett](cash-discount-handling-overpayments.md). Túlfizetés esetén a készpénzfizetési engedmény csökkenthető, kezelhető különbözetként, vagy maradhat a szállító vagy a vevő számláján.
@@ -51,7 +51,7 @@ A következő paraméterek befolyásolják, hogyan hajtja végre a Microsoft Dyn
 -   **Jóváírások készpénzfizetési engedményeinek számítása** – Állítsa be az **Igen** értéket a készpénzfizetési engedmények jóváírásainak automatikus kiszámításához. A Kinnlevőségekben a jóváírás tranzakció egy negatív tranzakció, amelynek az értéke a **Számla** mezőben jelenik meg a **Szabadszöveges számla** oldalon vagy a **Értékesítési rendelés** lapon visszaadott értékként.
     -   A beállítás hatása függ a **Készpénzfizetési engedmény használata** mező értékétől a **Tranzakciók kiegyenlítése** oldalon. Ha ez a beállítás az **Igen** értékre van állítva, az engedményt akkor alkalmazza a rendszer, ha a ****Készpénzfizetési engedmény használata**** mező **Normál** értékre van állítva. Ha a ****Készpénzfizetési engedmény használata**** mező **Mindig** értékre van állítva, a készpénzfizetési engedmény mindig figyelembe van véve, függetlenül attól, milyen beállítás szerepel ebben a mezőben. Ha a ****Készpénzfizetési engedmény használata**** mező **Soha** értékre van állítva, a készpénzfizetési engedmény soha nincs figyelembe véve, függetlenül attól, milyen beállítás szerepel ebben a mezőben.
     -   Ha ez a beállítás **Igen** értékre van állítva, és a **Tranzakciók kiegyenlítése** lapon meg van adva egy jóváírás, akkor a rendszer automatikusan kiszámítja az engedményt, és alapértelmezett bejegyzésként megjeleníti az **Alkalmazandó készpénzfizetési engedmény összege** mezőben.
-    -   Ha ez a beállítás **Nem**értékre van állítva, és a **Tranzakciók kiegyenlítése** oldalon meg van adva egy jóváírás, akkor az **Alkalmazandó készpénzfizetési engedmény** mező alapértelmezett összege **0** (nulla).
+    -   Ha ez a beállítás **Nem** értékre van állítva, és a **Tranzakciók kiegyenlítése** oldalon meg van adva egy jóváírás, akkor az **Alkalmazandó készpénzfizetési engedmény** mező alapértelmezett összege **0** (nulla).
 -   **Kedvezmény ellenszámlák (csak AP)** – Az alapértelmezett készpénzfizetési engedmény főkönyvi számla megadása, amely a készpénzfizetési engedmények könyvelési tételeként használható.
     -   **Fő számla használata szállítói kedvezményekhez** – A készpénzfizetési engedmény feladása a megadott fő számlára a **Készpénzfizetési engedmény beállítása** oldalon.
     -   **A számla soraiban szereplő számlák** – A készpénzfizetési engedmény feladása a főkönyvi számlákhoz az eredeti számlán.
