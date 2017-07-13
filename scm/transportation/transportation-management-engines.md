@@ -3,14 +3,14 @@ title: "Szállításkezelő kalkulátorok"
 description: "A szállításkezelő programok határozzák meg azt a logikát, amit a Szállításkezelő a szállítási díjak előállítására és feldolgozására használ."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5db69ed204b9503fb710426f449f38e76591641
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: c4aac72d9f7e975d4a270deb340f96ddcc9ca1fb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -33,15 +33,15 @@ ms.lasthandoff: 05/25/2017
 
 A szállításkezelő programok határozzák meg azt a logikát, amit a Szállításkezelő a szállítási díjak előállítására és feldolgozására használ. 
 
-A szállításkezelő kalkulátor például a szállító szállítmányozási díjához hasonló feladatokat számolja ki. A kalkulátorrendszerrel a Microsoft Dynamics 365 for Operations adatai alapján a számítási stratégiákat futásidőben módosíthatja. A szállításkezelő kalkulátor egy adott szállítmányozó szerződéséhez kapcsolódó, beépülő modulhoz hasonlít.
+A szállításkezelő kalkulátor például a szállító szállítmányozási díjához hasonló feladatokat számolja ki. A kalkulátorrendszerrel a Microsoft Dynamics 365 for Finance and Operations adatai alapján a számítási stratégiákat futásidőben módosíthatja. A szállításkezelő kalkulátor egy adott szállítmányozó szerződéséhez kapcsolódó, beépülő modulhoz hasonlít.
 
 ## <a name="what-engines-are-available"></a>Mely motorok érhetők el?
-A következő táblázat a Microsoft Dynamics 365 for Operations rendszerben elérhető szállításkezelő kalkulátorokat mutatja be.
+A következő táblázat a Microsoft Dynamics 365 for Finance and Operations rendszerben elérhető szállításkezelő kalkulátorokat mutatja be.
 
 | Szállításkezelő kalkulátor | Leírás                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Díjkalkulátor**                  | Díjakat számol.                                                                                                                                                                                                                                                                                                           |
-| **Általános kalkulátor**               | A többi kalkulátor által használt egyszerű segédkalkulátor, például az arányosító kalkulátor, nem igényel adatot a Microsoft Dynamics 365 for Operations rendszertől. Az arányosító kalkulátorok a térfogathoz vagy a súlyhoz hasonló dimenziók felhasználásával csökkentik a jellemző megrendelések és sorok szállítási költségeit. |
+| **Általános kalkulátor**               | A többi kalkulátor által használt egyszerű segédkalkulátor, például az arányosító kalkulátor, nem igényel adatot a Microsoft Dynamics 365 for Finance and Operations rendszertől. Az arányosító kalkulátorok a térfogathoz vagy a súlyhoz hasonló dimenziók felhasználásával csökkentik a jellemző megrendelések és sorok szállítási költségeit. |
 | **Távolságkalkulátor**               | Kiszámolja a szállítási távolságot.                                                                                                                                                                                                                                                                                     |
 | **Szállításiidő-kalkulátor**          | Kiszámolja a kezdő- és végállomás közötti út megtételéhez szükséges időt.                                                                                                                                                                                                                                       |
 | **Zónakalkulátor**                  | Az aktuális cím alapján kiszámítja a zónát, valamint azoknak a zónáknak a számát, amelyeken az A és B cím közötti szállítás során áthalad.                                                                                                                                                                    |
@@ -63,23 +63,23 @@ Az inicializációs adatok beállításához a legtöbb esetben elég a szállí
 | Paraméter             | Leírás                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *RateBaseAssigner*    | Az adott sémához a díjalap-hozzárendelés adatait értelmező .NET típus. A paraméterérték szintaxisa két függőleges vonallal (|) elválasztott szegmensből áll (|). Az első szegmens a hozzárendelés típusát meghatározó összeállítási nevet tartalmazza. A második szegmens a hozzárendelési típus teljes elérési útvonalának nevét határozza meg. Ebbe beletartozik a típus névtere is. |
-| *MileageEngineCode*   | A Microsoft Dynamics 365 for Operations adatbázisban a távolságkalkulátor rekordját azonosító távolságkalkulátor-kód.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | A Microsoft Dynamics 365 for Operations adatbázisban az arányosító kalkulátort azonosító általános kalkulátorkód.                                                                                                                                                                                                                                                              |
+| *MileageEngineCode*   | A Microsoft Dynamics 365 for Finance and Operations adatbázisban a távolságkalkulátor rekordját azonosító távolságkalkulátor-kód.                                                                                                                                                                                                                                                             |
+| *ApportionmentEngine* | A Microsoft Dynamics 365 for Finance and Operations adatbázisban az arányosító kalkulátort azonosító általános kalkulátorkód.                                                                                                                                                                                                                                                              |
 
  
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hogyan használják a szállításkezelő kalkulátorok a metaadatokat?
 ----------------------------------------------------------
 
-A Dynamics 365 for Operations részben meghatározott adatokat használó szállításkezelő kalkulátorok más adatsémákat használhatnak. A szállításkezelő rendszer lehetővé teszi, hogy különböző szállításkezelő kalkulátorok ugyanazokat az általános, tényleges adatbázistáblákat használhassák. Annak érdekében, hogy a futási idő alatti kalkulátoradatok értelmezése megfelelő legyen, az adatbázis tábláihoz metaadatokat határozhat meg. Ezzel csökkenthetők egy új szállításkezelő kalkulátor felépítésének költségei, mivel az Operations rendszerben nincs szükség további tábla- és képernyőstruktúrákra.
+A Dynamics 365 for Finance and Operations részben meghatározott adatokat használó szállításkezelő kalkulátorok más adatsémákat használhatnak. A szállításkezelő rendszer lehetővé teszi, hogy különböző szállításkezelő kalkulátorok ugyanazokat az általános, tényleges adatbázistáblákat használhassák. Annak érdekében, hogy a futási idő alatti kalkulátoradatok értelmezése megfelelő legyen, az adatbázis tábláihoz metaadatokat határozhat meg. Ezzel csökkenthetők egy új szállításkezelő kalkulátor felépítésének költségei, mivel az Operations rendszerben nincs szükség további tábla- és képernyőstruktúrákra.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Mit lehet keresési adatként használni a díjszámításokhoz?
-A Microsoft Dynamics 365 for Operations rendszerében történő díjszámításhoz használt adatokat a metaadat-konfiguráció szabályozza. Ha például irányítószámon alapuló díjakra szeretne keresni, a beállított metaadatnak irányítószámon alapuló keresési típusnak kell lennie.
+A Microsoft Dynamics 365 for Finance and Operations rendszerében történő díjszámításhoz használt adatokat a metaadat-konfiguráció szabályozza. Ha például irányítószámon alapuló díjakra szeretne keresni, a beállított metaadatnak irányítószámon alapuló keresési típusnak kell lennie.
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Minden kalkulátorkonfigurációnak szüksége van metaadatokra?
 Nem. Nincs szükségük metaadatra azoknak a szállításkezelő kalkulátoroknak, amelyeket külső rendszerből származó díjkalkulációkhoz szükséges adatok beolvasására használnak. Az ezekhez szükséges díjadatok külső szállítmányozó rendszerekből érkezhetnek, amelyeket általában webszolgáltatással töltenek be. Például használhat olyan távolságkalkulátort, amely közvetlenül Bing térképekről tölti le az adatokat, így ehhez a kalkulátorhoz nincs szükség metaadatra.
 | **Megjegyzés**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A Microsoft Dynamics 365 for Operations rendszeréhez tartozó szállításkezelő kalkulátorok alkalmazásról letöltött adatokra támaszkodnak. A külső rendszerekhez csatlakozó kalkulátorok nem részei az Operations rendszernek. Azonban a kalkulátoralapú bővítési modell lehetővé teszi, hogy a Microsoft Dynamics 365 for Operations Visual Studio Tools segítségével bővítményeket hozzon létre. |
+| A Microsoft Finance and Operations rendszeréhez tartozó szállításkezelő kalkulátorok alkalmazásról letöltött adatokra támaszkodnak. A külső rendszerekhez csatlakozó kalkulátorok nem részei az Operations rendszernek. Azonban a kalkulátoralapú bővítési modell lehetővé teszi, hogy a Microsoft Dynamics 365 for Finance and Operations Visual Studio Tools segítségével bővítményeket hozzon létre. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Hogyan tudok a szállításkezelő kalkulátorhoz metaadatot konfigurálni?
 A szállításkezelő kalkulátorok metaadatai a különböző kalkulátortípusokhoz különféleképpen vannak beállítva.

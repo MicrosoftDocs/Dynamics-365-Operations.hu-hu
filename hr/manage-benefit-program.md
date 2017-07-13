@@ -3,26 +3,26 @@ title: "Juttatási program meghatározása és kezelése"
 description: "Az emberi erőforrások számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a cikk a juttatások beállításával és kezelésével kapcsolatban tartalmaz tájékoztatást."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1d972f2d6bacf6f60ab3ce3bab2fcfaeb8d2e524
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 09ad9ad22c676c3b117cc39e692c64ef92637dc1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,13 +53,13 @@ Az egyes juttatási típusok, például látszerészeti vagy fogorvosi juttatás
 [![juttatási kép](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Jogosultság
-A munkáltató által ajánlott különböző típusú juttatásokra való megfelelőség számos tényezőtől függ. Amikor juttatást hoz létre a Microsoft Dynamics 365 for Operations rendszerben, meghatározhatja a megfelelőségi feltételeket az adott juttatáshoz. 
+A munkáltató által ajánlott különböző típusú juttatásokra való megfelelőség számos tényezőtől függ. Ha egy juttatást hoz létre a Microsoft Talent rendszerben, meghatározhatja a megfelelőségi feltételeket az adott juttatáshoz. 
 
 A juttatást elérhetővé teheti minden dolgozó számára. Egyes vállalatok például mellékjuttatásként parkolási bérletet kínálnak dolgozóiknak. A juttatás létrehozásakor a jogosultságot beállíthatja **Minden dolgozó jogosult** beállításra. 
 
 Egyéb juttatások, például letiltások és adókivetések esetében a jogosultság nem érvényes. Ha ilyen típusú juttatást hoz létre, a jogosultságot a **Jogosultság feldolgozásának kihagyása** lehetőségre kell állítania. 
 
-A jogosultság továbbá szabályalapú is lehet. Tegyük fel például, hogy egy vállalat kétféle életbiztosítást ajánl juttatásként a dolgozóinak. A vezetői beosztásban lévő dolgozók az egyik csomagra jogosultak, míg a többi teljes munkaidős dolgozó a másik életbiztosítási csomagra jogosult. A Dynamics 365 for Operations rendszerben létrehozhat egy jogosultsági szabályt, amelybe minden vezető beosztásban lévő dolgozót belevesz, majd egy másikat, amelybe a többi teljes munkaidős dolgozót veszi be, majd hozzárendelheti a megfelelő szabályokat az adott juttatáshoz.
+A jogosultság továbbá szabályalapú is lehet. Tegyük fel például, hogy egy vállalat kétféle életbiztosítást ajánl juttatásként a dolgozóinak. A vezetői beosztásban lévő dolgozók az egyik csomagra jogosultak, míg a többi teljes munkaidős dolgozó a másik életbiztosítási csomagra jogosult. A Talent rendszerben létrehozhat egy jogosultsági szabályt, amelybe minden vezető beosztásban lévő dolgozót belevesz, majd egy másikat, amelybe a többi teljes munkaidős dolgozót veszi be, majd hozzárendelheti a megfelelő szabályokat az adott juttatáshoz.
 
 ## <a name="enrollment"></a>Bejegyzés
 Miután létrehozta a szervezet által kínált juttatásokat és meghatározta azok jogosultságát, már hozzárendelheti a dolgozókat a juttatásokhoz. Egyetlen dolgozót is hozzárendelhet egy juttatáshoz, de egyszerre több dolgozót is hozzáadhat egy vagy több juttatáshoz, egyetlen folyamat során. 

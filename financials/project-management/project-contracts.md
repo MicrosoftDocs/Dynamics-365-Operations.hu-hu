@@ -1,27 +1,27 @@
 ---
 title: "Projektszerződések"
-description: "Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Operations rendszerben."
+description: "Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23561
 ms.assetid: bfd18d9b-d9a6-4e21-bc95-bf4af45f617f
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9f3bdbd147f3132d64e3b9ac2bdd37f7278ae18d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2aa70e050bf068a26e2d0d86c26045fc000931eb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Operations rendszerben.
+Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben.
 
 A projektszerződés teljesítésére létrehozott projekt típusa határozza meg a megrendelő felé történő számlakiállítás módszerét. A projektszerződés és a hozzá kapcsolódó projekt módosítható, de a projekt típusa nem. 
 
@@ -49,7 +49,7 @@ Egyes projektszerződések megadják, hogy a projektköltségek finanszírozás�
 -   Egy úttal kapcsolatos projektet két közigazgatási terület közösen finanszíroz.
 -   Egy híddal kapcsolatos projektet valamilyen állami támogatás és egy magánvállalkozás finanszíroz.
 
-A Microsoft Dynamics 365 for Operations rendszerben feloszthatja egyetlen tranzakció vagy egy teljes projekt számlázását több vevő, támogatás vagy szervezet között. 
+A Finance and Operations rendszerben feloszthatja egyetlen tranzakció vagy egy teljes projekt számlázását több vevő, támogatás vagy szervezet között. 
 
 A több finanszírozóval rendelkező projektek esetén finanszírozási forrásnak neveznek minden olyan felet, amely hozzájárul egy speciális finanszírozási projekt finanszírozásához. Miután egy vevő, szervezet vagy támogatás finanszírozási forrásként kerül meghatározásra, hozzárendelhető egy vagy több finanszírozási szabályhoz. A finanszírozási szabályok tartalmazzák azon feltételeket, amelyek meghatározzák, hogy hogyan oszlanak fel a költségek egy projekt különböző finanszírozási forrásai között. 
 
@@ -85,9 +85,9 @@ A következő táblázat esteket ad meg a finanszírozási felosztás kezelésé
 <tbody>
 <tr class="odd">
 <td><strong>Eset</strong></td>
-<td><strong>Finanszírozási forrás </strong></td>
-<td><strong>Felosztási százalék </strong></td>
-<td><strong>Finanszírozás-felosztási prioritás </strong></td>
+<td><strong>Finanszírozási forrás</strong></td>
+<td><strong>Felosztási százalék</strong></td>
+<td><strong>Finanszírozás-felosztási prioritás</strong></td>
 </tr>
 <tr class="even">
 <td>Célszerű a költségeket egy finanszírozási forráshoz kiosztani amíg az alapjai kimerülnek, majd egy második finanszírozási forráshoz kiosztani a költségeket amíg annak alapjai kimerülnek, végül a fennmaradó költségeket egy harmadik finanszírozási forráshoz kiosztani.</td>
@@ -195,7 +195,7 @@ Az alábbi táblázat ezt az esetet részletesebben megvizsgálja.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Fókusz </strong></td>
+<td><strong>Fókusz</strong></td>
 <td><strong>Részletek</strong></td>
 </tr>
 <tr class="even">
@@ -250,7 +250,7 @@ Az alábbi táblázat ezt az esetet részletesebben megvizsgálja.
 </table>
 
 ## <a name="billing-rules"></a>Számlázási szabályok
-Olyan projektszerződést választott tárgyaljanak egy vevő, ha definiálni, mikor és hogyan lehet számlát a vevő, a munka a projekt. Miután beállította a projektszerződést és a projektet, beállíthat számlázási szabályokat a projekthez. Számlázási szabályok vannak megadva a projektszerződés projekt feltételei alapján. A létrehozható számlázási szabály a projektszerződés feltételeitől és annak a projektnek a típusától – például  vagy Mérföldkő – függ, amelyhez hozzárendeli a számlázási szabályt. Egy projektszerződéshez több számlázási szabályt is létrehozhat. A számlázási szabály hozzárendelése az azonos projektszerződéshez társított több projekt is, és hasonló számlázási feltételeket kell. 
+Olyan projektszerződést választott tárgyaljanak egy vevő, ha definiálni, mikor és hogyan lehet számlát a vevő, a munka a projekt. Miután beállította a projektszerződést és a projektet, beállíthat számlázási szabályokat a projekthez. Számlázási szabályok vannak megadva a projektszerződés projekt feltételei alapján. A létrehozható számlázási szabály a projektszerződés feltételeitől és annak a projektnek a típusától – például vagy Mérföldkő – függ, amelyhez hozzárendeli a számlázási szabályt. Egy projektszerződéshez több számlázási szabályt is létrehozhat. A számlázási szabály hozzárendelése az azonos projektszerződéshez társított több projekt is, és hasonló számlázási feltételeket kell. 
 
 A következő típusú ármegállapodások hozhatók létre:
 

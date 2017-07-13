@@ -1,9 +1,9 @@
 ---
 title: "Elavult szolgáltatások"
-description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a Dynamics 365 for Operations-ből, vagy eltávolításuk be van tervezve. Olyan funkciókat is tartalmaz, amelyek a Dynamics AX 7.0 kiadásaiban már nem szerepeltek."
+description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve."
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 46a6f054f1cc5162e19d962964eb6eeb780087a6
+ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
+ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -29,8 +29,40 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
 
-Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a Dynamics 365 for Operations-ből, vagy eltávolításuk be van tervezve. Olyan funkciókat is tartalmaz, amelyek a Dynamics AX 7.0 kiadásaiban már nem szerepeltek.
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funkciók, amelyek megszűntek a Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítése óta
+
+### <a name="warehouse-mobile-devices-portal"></a>Raktári mobileszközportál
+
+A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy különálló összetevő volt a helyszíni saját telepítésekhez. Ezt az összetevőt a Microsoft Dynamics 365 for Finance and Operations Enterprise edition már nem támogatja. A WMDP funkció helyére egy natív alkalmazás lépett, amely javítja a felhasználói élményt. 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **Megszűnés oka**       | Máshol már meglévő funkció.                        |
+| **Felváltotta másik szolgáltatás?** | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. Ha további információt szeretne a beállításról és az előfeltételekről, lásd a következőt: [A Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Érintett modulok**             | Raktárkezelés, szállításkezelés |
+
+### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Továbbfejlesztett banki egyeztetési szabály kézi egyeztetéshez
+
+Az egyeztetési munkalapon a dokumentumok kézi egyeztetéséhez egy egyeztetési szabályt használtak.
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **Megszűnés oka**       | Korlátozott felhasználás.                                                                         |
+| **Felváltotta másik szolgáltatás?** | Szám Az oszlopszűrési lehetőségeket kell használni az egyeztetendő dokumentumok keresésére. |
+| **Érintett modulok**             | Készpénz- és bankkezelés                                                               |
+
+### <a name="windows-8-tablet-app"></a>Windows 8 táblagépes alkalmazás
+
+A Windows 8-ra készült táblagépes alkalmazás lehetővé tette a költségbeírást és a jóváhagyást.
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Megszűnés oka**       | A Finance and Operations kompatibilis a táblagépekkel. A táblagépes alkalmazásra már nincs szükség. |
+| **Felváltotta másik szolgáltatás?** | Szám                                                                                      |
+| **Érintett modulok**             | Költséggazdálkodás                                                                       |
+
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Olyan funkciók, amelyek elavulnak a Dynamics 365 for Operations 1611 3. platformfrissítése során
 ---------------------------------------------------------------------------------------------
@@ -301,7 +333,7 @@ A munkavállalók céljai létrehozásának kezelésére vonatkozó munkafolyama
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Megszűnés oka       | A teljesítménymenedzsment teljesen átalakult a Microsoft Dynamics 365 for Operations alatt.                                                                                                                                                                                                                                        |
+| Megszűnés oka       | A teljesítménymenedzsment teljesen átalakult a Microsoft Dynamics 365 for Finance and Operations alatt.                                                                                                                                                                                                                                        |
 | Felváltotta másik szolgáltatás? | Az átalakított teljesítménymendzsment funkciója segítségével jobban lehet felügyelni a célok tartalmát, az előrehaladás nyomon követéséhez használt méréseket és a kiegészítő dokumentumok csatolását. A célok sablonként tárolhatók, és ezután újra felhasználhatók. Ezen funkció segítségével gyorsabban beállíthatók további célok az alkalmazottak számára. |
 | Érintett modulok             | Emberierőforrás-menedzselés                                                                                                                                                                                                                                                                                                               |
 
@@ -484,7 +516,7 @@ A Dynamics AX 2012 R3 rendszerben a Retail Modern pénztár az Enterprise POS re
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Megszűnés oka       | A közvetlen adatbázis-kapcsolathoz alacsonyabb szintű biztonsági protokollok voltak szükségesek, és elsődleges használati célja a legmagasabb szintű teljesítmény elérése volt. A Dynamics 365 for Operations teljesítménybeli és biztonsági fejlesztései következtében ez a funkció több problémát okoz, mint amennyit megold. |
+| Megszűnés oka       | A közvetlen adatbázis-kapcsolathoz alacsonyabb szintű biztonsági protokollok voltak szükségesek, és elsődleges használati célja a legmagasabb szintű teljesítmény elérése volt. A Finance and Operations teljesítménybeli és biztonsági fejlesztései következtében ez a funkció több problémát okoz, mint amennyit megold. |
 | Felváltotta másik szolgáltatás? | Szám Jelenleg csak a szabványos Retail Server által biztosított kommunikáció támogatott.    |
 | Érintett modulok             | Csatorna-adatbázis/Retail Modern pénztár                                    |
 
@@ -808,9 +840,5 @@ Emberi Erőforrások Bérlistaadatai
 | Megszűnés oka       | Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.                                    |
 | Felváltotta másik szolgáltatás? | Felügyeleti jelentéskészítő (a Dynamics AX jelenlegi verziójában **Pénzügyi jelentéskészítés** megjelöléssel) |
 | Érintett modulok             | Főkönyv                                                                              |
-
-
-
-
 
 

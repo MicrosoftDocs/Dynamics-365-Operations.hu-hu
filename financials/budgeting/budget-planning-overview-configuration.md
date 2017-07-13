@@ -3,14 +3,14 @@ title: "A költségvetés-tervezés áttekintése"
 description: "Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolgál a költségvetés-tervezés beállítási és a költségvetés-tervezési folyamatok létrehozási lehetőségeiről."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5212c8401f26f30cf593c52eb88291463b9b8810
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -38,7 +38,7 @@ Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolg
 
 A költségvetés-tervezés az a folyamat, amely során előkészíti a szervezet által a jövőben alkalmazandó költségvetést. Egy szervezet konfigurálhatja a költségvetés-tervezését, és beállíthat olyan költségvetés-tervezési folyamatokat, amelyek célja a szervezet irányelveiknek, eljárás-rendjeiknek és a költségvetési előkészítés követelményeinek való megfelelés. 
 
-Ha megérti a Microsoft Dynamics 365 for Operations rendszerben használt fogalmakat és terminológiát, könnyebben valósíthatja meg a szervezet költségvetés-tervezését.
+Ha megérti a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszerben használt fogalmakat és terminológiát, könnyebben valósíthatja meg a szervezet költségvetés-tervezését.
 
 ### <a name="key-terms"></a>Kulcsfogalmak
 
@@ -59,7 +59,7 @@ Az Emberi erőforrások modullal a következők végezhetők el:
 -   Automatikusan elküldheti ellenőrzésre és jóváhagyásra a költségvetési terveket a munkalapokkal, az indoklásokkal és a mellékletekkel együtt.
 -   Egyesíthet több költségvetési tervet a szervezet alacsonyabb szintjéről egy magasabb szintű költségvetési tervbe. A szervezet egy magasabb szintű egy költségvetési terv kialakítása, továbbá az alacsonyabb szintű a szervezet a költségvetési felosztáshoz.
 
-A költségvetés-tervezés integrálva van más Microsoft Dynamics 365 for Operations modulokba is. Ezért az előző költségvetések, a tényleges kiadások, a tárgyi eszközök és az emberi erőforrások adatait is felhasználhatja. A költségvetés-tervezés integrálva van a Microsoft Excel és a Microsoft Word programokban is, így ezen eszközök segítségét is felhasználhatja a költségvetés-tervezési adatokkal végzett munkához. Például egy költségvetés-kezelő exportálhatja egy részleg költségvetési kérelmét az egyik költségvetési tervváltozatból egy Excel munkalapra. Az adatok elemezhetők, frissíthetők, felvázolhatók a munkalapon, majd újra közzétehetők a költségvetési terv soraiban.
+A költségvetés-tervezés integrálva van más Microsoft Dynamics 365 for Finance and Operations modulokba is. Ezért az előző költségvetések, a tényleges kiadások, a tárgyi eszközök és az emberi erőforrások adatait is felhasználhatja. A költségvetés-tervezés integrálva van a Microsoft Excel és a Microsoft Word programokban is, így ezen eszközök segítségét is felhasználhatja a költségvetés-tervezési adatokkal végzett munkához. Például egy költségvetés-kezelő exportálhatja egy részleg költségvetési kérelmét az egyik költségvetési tervváltozatból egy Excel munkalapra. Az adatok elemezhetők, frissíthetők, felvázolhatók a munkalapon, majd újra közzétehetők a költségvetési terv soraiban.
 
 ## <a name="configuring-budget-planning"></a>A költségvetés-tervezés konfigurálása.
 A **Költségvetés-tervezési konfiguráció** lap tartalmazza a legtöbb beállítást a költségvetés-tervezés beállításához. Az alábbiakban olvasható néhány kulcsfontosságú tényezőt ajánlott figyelembe venni a költségvetés-tervezés konfigurálásakor. A konfiguráció befejezése után a költségvetés-tervezési folyamat beállítása következik.
@@ -78,7 +78,7 @@ A következő ábrán a vállalati központ megbecsüli a kezdeti költségveté
 
 A **Szervezeti hierarchia** lapon költségvetés-tervezési hierarchiaként megadhat egy szervezeti hierarchiát minden egyes költségvetés-tervezési folyamatra. A költségvetés-tervezési hierarchiának nem kell megegyeznie a más célokra használt szokásos szervezeti hierarchiával. Mivel ezt a hierarchiát az adatok összesítésére és felosztására használjuk, érdemes egy másik szerkezetet létrehozni hozzá. A mintasablonban az értékesítési részleg a központ szintje alatt van a költségvetési és a pénzügyi részleggel együtt. Ennek a szerkezetnek valószínűleg eltér a struktúrája attól, amely az értékesítési részlegek műveleteinek kezelésére használunk. Egy költségvetés-tervezési folyamathoz csak egy szervezeti hierarchia rendelhető. 
 
-További tudnivalókért lásd: [Szervezetek és szervezeti hierarchiák](/dynamics365/operations/organization-administration/organizations-organizational-hierarchies).
+További tudnivalókért lásd: [Szervezetek és szervezeti hierarchiák](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
 ### <a name="user-security"></a>Felhasználói biztonság
 
@@ -88,13 +88,13 @@ A költségvetés-tervezés két biztonsági modell egyikét követheti a felhas
 
 A költségvetés-tervezési munkafolyamatok a költségvetési munkafolyamatokkal együtt használhatók a költségvetési tervek létrehozására és kezelésére.
 
-A költségvetés-tervezési munkafolyamat egy rendezett szakaszokból álló rendszer, amelyen a költségvetési terv végigmegy. Minden költségvetési munkafolyamathoz tartozik egy költségvetés-tervezési munkafolyamat. A költségvetés-tervezési munkafolyamat az egyik olyan munkafolyamat, amelyet a Microsoft Dynamics 365 for Operations számos helyen használ. A költségvetési terveket a munkalapokkal, indoklásokkal és a mellékletekkel együtt a költségvetési munkafolyamat irányítja a szervezeten keresztül ellenőrzésre és jóváhagyásra. 
+A költségvetés-tervezési munkafolyamat egy rendezett szakaszokból álló rendszer, amelyen a költségvetési terv végigmegy. Minden költségvetési munkafolyamathoz tartozik egy költségvetés-tervezési munkafolyamat. A költségvetés-tervezési munkafolyamat az egyik olyan munkafolyamat, amelyet a Finance and Operations használ. A költségvetési terveket a munkalapokkal, indoklásokkal és a mellékletekkel együtt a költségvetési munkafolyamat irányítja a szervezeten keresztül ellenőrzésre és jóváhagyásra. 
 
 Költségvetés-tervezési munkafolyamatot létrehozhat a **Munkafolyamat szakaszai** menüpontban a **Költségvetés-tervezés konfigurációja** lapon. Itt ki tudja választani a program által használt szakaszt és a költségvetési munkafolyamatot, és további beállításokat is hozzáadhat. 
 
 A jó gyakorlat az, ha egy költségvetési hierarchia minden szintjéhez külön költségvetés-tervezési munkafolyamatot hoz létre. Azután olyan költségvetési munkafolyamatot rendel hozzá, melynek elemei megfelelnek a szakaszoknak a költségvetés-tervezési munkafolyamatban. A cikkben szereplő korábbi mintasablonon egy költségvetés-tervezési munkafolyamat szerepelt az értékesítési részleg számára, és egy másik a központ számára. A költségvetési munkafolyamat végigviszi a költségvetési terveket a különböző szakaszokon. 
 
-Költségvetési munkafolyamatot a költségvetés-tervezésre a **Költségvetési munkafolyamatok** oldalon hozhat létre. A folyamat hasonlít más munkafolyamatok létrehozására a Microsoft Dynamics 365 for Operations rendszerben. A következő ábrán a Központ munkafolyamatának példája látható. 
+Költségvetési munkafolyamatot a költségvetés-tervezésre a **Költségvetési munkafolyamatok** oldalon hozhat létre. A folyamat hasonlít más munkafolyamatok létrehozása a Finance and Operations rendszerben. A következő ábrán a Központ munkafolyamatának példája látható. 
 
 [![Költségvetés-tervezési munkafolyamat költségvetés-tervezéshez](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 

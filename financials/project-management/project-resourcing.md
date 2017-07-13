@@ -3,14 +3,14 @@ title: "Projekterőforrás"
 description: "Ez a témakör a projekterőforrásokkal kapcsolatban tartalmaz információkat."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 82022
 ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5c00c63e3c55e818934c36b818c90025002092d4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 Ez a témakör a projekterőforrásokkal kapcsolatban tartalmaz információkat.
 
-Az erőforrás felosztás kihívást jelent a projektkezelőknek és az erőforrás-kezelőknek a projekt tervezési szakaszában, mert itt meg kell határozniuk és fenn kell tartaniuk a megfelelő erőforrásokat a projekthez. A Microsoft Dynamics 365 for Operations rendszerben a projektek esetében az erőforrás-képességek lehetővé teszik azon szerepkörök meghatározását, amelyek olyan ideiglenes erőforrásként vannak kezelve, amelyek fenntarthatók egy bizonyos előjegyzéshez vagy egy előjegyzés egy részéhez. Ezek az erőforrás-típusok teszik lehetővé a projektkezelőknek és az erőforrás-kezelőknek, hogy elvégezzék az alábbi feladatokat:
+Az erőforrás felosztás kihívást jelent a projektkezelőknek és az erőforrás-kezelőknek a projekt tervezési szakaszában, mert itt meg kell határozniuk és fenn kell tartaniuk a megfelelő erőforrásokat a projekthez. A Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben a projektek esetében az erőforrás-képességek lehetővé teszik azon szerepkörök meghatározását, amelyek olyan ideiglenes erőforrásként vannak kezelve, amelyek fenntarthatók egy bizonyos előjegyzéshez vagy egy előjegyzés egy részéhez. Ezek az erőforrás-típusok teszik lehetővé a projektkezelőknek és az erőforrás-kezelőknek, hogy elvégezzék az alábbi feladatokat:
 
 -   Meghatározhatnak egy olyan szerepkört, amely rendelkezik a szükséges szakértelemmel az erőforrások megfeleltetéséhez.
 -   Felhasználhatnak szerepköröket a fenntartott erőforrásokon alapuló kezdeti előjegyzés-ütemezés meghatározásához.
@@ -65,10 +65,10 @@ A munkavállaló vállalatközi erőforrásként való beállításakor el kell 
 
 **A kölcsönbe adó vállalatnál:**
 
-1.  A Dynamics 365 for Operations rendszerben ellenőrizze, hogy a kölcsönbe adó vállalat ki legyen jelölve, majd végezze el a fenti eljárást: „Dolgozó beállítása, mint projekterőforrás”.
+1.  A Finance and Operations rendszerben ellenőrizze, hogy a kölcsönbe adó vállalat ki legyen jelölve, majd végezze el a fenti eljárást: „Dolgozó beállítása projekterőforrásként”.
 2.  Ugrás **Főkönyv **&gt; **Feladás beállítása **&gt; **Vállalatközi könyvelés** elemre. Kattintson az **Új** elemre.
 3.  A **Jogi személy azonosítója **mezőben válassza ki a kölcsönbe adó vállalatot. Töltse ki a többi megfelelő mezőt, és kattintson a **Mentés** elemre.
-4.  Ugorjon a **Projektvezetés és könyvelés **&gt; **Beállítás&gt; **Árak &gt; **Transzferár** lehetőségre.** **
+4.  Ugorjon a **Projektvezetés és könyvelés **&gt; **Beállítás **&gt; **Árak ** &gt; **Transzferár** lehetőségre.** **
 5.  A **Transzferár ** űrlapon kattintson az **Új** lehetőségre, és a **Kölcsönbe vevő jogi személy ** mezőben válassza ki a megfelelő vállalatot.
 6.  Ha a kölcsönbe vevő vállalat számára csak az e szakasz elején létrehozott erőforrást szeretné kölcsönbe adni, az **Erőforrás** mezőben válassza ki a létrehozott erőforrás nevét. Ha a vállalat összes erőforrását elérhetővé szeretné tenni a kölcsönbe vevő vállalat számára, hagyja üresen az **Erőforrás **mezőt.
 7.  Ugrás a **Projektvezetés és könyvelés **&gt; **Beállítás **&gt; **Projektvezetési és könyvelési paraméterek** elemre, a ** Vállalatközi **lapon állítsa a **Vállalatközi erőforrás-ütemezés és időnyilvántartások engedélyezése ** mező értékét az **Igen** értékre.
@@ -123,7 +123,7 @@ Egy dolgozó részére a kompetenciák felállításához használhatja a **Dolg
 6.  A **Fennmaradó projektek** ablaktáblán válasszon ki egy projektet, majd kattintson a nyílra, hogy hozzáadja azt a **Kiválasztott projektek** ablaktáblához.
 7.  Zárja be a lapot.
 
-Ha szükséges, hozzárendelhet kategóriákat egy erőforráshoz. A kategória típusa Költség vagy Bevétel lehet. Ezt a szervezet határozza meg. Ha nincsenek az erőforráshoz hozzárendelt kategóriák, a Dynamics 365 for Operations megkeresi az alapértelmezett óránkénti árat a költségekhez és bevételekhez.
+Ha szükséges, hozzárendelhet kategóriákat egy erőforráshoz. A kategória típusa Költség vagy Bevétel lehet. Ezt a szervezet határozza meg. Ha nincsenek az erőforráshoz hozzárendelt kategóriák, a Finance and Operations megkeresi az alapértelmezett óránkénti árat a költségekhez és bevételekhez.
 
 ### <a name="set-up-project-resource-and-role-characteristics"></a>Projekt erőforrások és szerepkör jellemzők beállítása
 
@@ -171,7 +171,7 @@ Erőforrás-fenntartás során a projektvezetők szűrhetik a szerepkör erőfor
 **Eset:** Egy jóváhagyott projekt elindult, és a Vezető projektmenedzser szerepkört tervezett erőforrásként tartották fenn a projekt tervezési szakaszában. Az erőforrás-kezelő már megszerezte az erőforrást a Vezető projektmenedzser szerepkör betöltéséhez.
 
 1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Projekt erőforrások** &gt; **Erőforrások listája** menüpontra.
-2.  Az **Erőforrás** listán válassza a **Daniel Goldschmidt**nevet.
+2.  Az **Erőforrás** listán válassza a **Daniel Goldschmidt** nevet.
 3.  Kattintson a **Projekterőforrás** &gt; **Karbantartás** &gt; **Erőforrás szerepköre** menüpontra.
 4.  Kattintson az **Új** elemre, majd adja meg a következő értékeket:
     -   **Hatályos:** - (Jelenlegi dátum)
@@ -190,7 +190,7 @@ Minden költség, értékesítés, és transzferár beállítható szerepkörök
 5.  Az **Árképzés** oszlopban adja meg a kiválasztott erőforrás-szerepkör árát.
 
 ## <a name="form-a-project-team"></a>Projektcsapat kialakítása
-A projektben korábban beállított szerepkörök használatához egy projektmenedzsernek a szerepköröket társítania kell a projekthez. Egy projekthez több szerepkör is hozzárendelhető, és a Dynamics 365 for Operations automatikusan osztályozza ezeket a szerepköröket a fenntartás során a zavar megelőzése érdekében. Ha például a projektmenedzsernek három szoftverfejlesztőre van szüksége, a rendszer automatikusan létrehoz három szoftverfejlesztő szerepkört, melyek a szoftverfejlesztő 1, szoftverfejlesztő 2 és szoftverfejlesztő 3 osztályzást kapják. Ha a szerepkör jellemzőit korábban beállították a szerepkörhöz, ezek szűrőként működnek erőforrás keresése során. A keresést finomíthatja a további szükség szerint további jellemzői lehet adni. 
+A projektben korábban beállított szerepkörök használatához egy projektmenedzsernek a szerepköröket társítania kell a projekthez. Egy projekthez több szerepkör is hozzárendelhető, és a Finance and Operations automatikusan osztályozza ezeket a szerepköröket a fenntartás során a zavar megelőzése érdekében. Ha például a projektmenedzsernek három szoftverfejlesztőre van szüksége, a rendszer automatikusan létrehoz három szoftverfejlesztő szerepkört, melyek a szoftverfejlesztő 1, szoftverfejlesztő 2 és szoftverfejlesztő 3 osztályzást kapják. Ha a szerepkör jellemzőit korábban beállították a szerepkörhöz, ezek szűrőként működnek erőforrás keresése során. A keresést finomíthatja a további szükség szerint további jellemzői lehet adni. 
 
 A beállítások megtekintése is testreszabható, hogy jobb áttekintést adjon a rendelkezésre álló erőforrásról. Lehetőség van óránkénti, napi, heti, havi, negyedéves vagy éves elérhetőség megjelenítésére. Lehetőség van megjeleníteni az elérhető és fennmaradó erőforrások kapacitását. Ez a beállítás jól használható időkezelésre tevékenységek idejének vagy erőforrás elérhetőségének becslésekor. 
 
@@ -207,10 +207,10 @@ Az alábbi eljárás ismerteti, hogyan lehet projektcsapatot létrehozni.
 
 ### <a name="create-a-project-team"></a>Projektcsapat létrehozása.
 
-1.  Jelöljön ki egy projektet az **Összes projekt** listaoldalon, és kattintson a **Szerkesztés**lehetőségre.
+1.  Jelöljön ki egy projektet az **Összes projekt** listaoldalon, és kattintson a **Szerkesztés** lehetőségre.
 2.  A **Projektcsapat és ütemezés** lapon a **Záró dátum ütemezése** mezőbe írja be az ütemezés kezdő dátumát, egy hónapot hozzáadva. Például ha az ütemezés kezdő dátuma 2017. június 24. (24/06/2017), írja be **24/07/2017**.
 3.  Kattintson a **Hozzáadás** parancsra.
-4.  A **Szerepkör hozzáadása a projekthez** ablakban, a **Szerepkör**mezőben válassza a **Projektmenedzser** lehetőséget.
+4.  A **Szerepkör hozzáadása a projekthez** ablakban, a **Szerepkör** mezőben válassza a **Projektmenedzser** lehetőséget.
 5.  Kattintson a **Szükséges kompetenciák** lehetőségre.
 6.  A **Jellemző választása** oldalon a Vezető projektmenedzser szerepkörhöz korábban beállított jellemzők alapértelmezés szerint be vannak jelölve. Kattintson az **OK** gombra.
 7.  A **Szerepkörök hozzáadása projekthez** oldalon az **Erőforrások száma** mezőbe írja be a következőt: **1**.
@@ -277,7 +277,7 @@ A WBS további lehetőségekkel bővült az erőforrás funkció jobb használha
 </tr>
 <tr class="even">
 <td>Csapat automatikus előállítása</td>
-<td>Tervezett erőforrások automatikus hozzáadása társított feladattal rendelkező szerepkörök használatával. A Dynamics 365 for Operations automatikusan javasol tervezett erőforrásokat, egy szerepkörökön alapuló több kritérium felhasználásával történő döntéshozatal használatával. Miután a szerepkörök és munka (órák) be lettek állítva a WBS-ben található feladatokhoz, és a struktúra ki lett adva, kattintson a <strong>Csapat automatikus létrehozása</strong> lehetőségre. A tervezett erőforrások szükséges száma hozzáadódik a WBS-hez és a <strong>Projekt és csapat ütemezés</strong> laphoz.</td>
+<td>Tervezett erőforrások automatikus hozzáadása társított feladattal rendelkező szerepkörök használatával. A Finance and Operations automatikusan javasol tervezett erőforrásokat, egy szerepkörökön alapuló több kritérium felhasználásával történő döntéshozatal használatával. Miután a szerepkörök és munka (órák) be lettek állítva a WBS-ben található feladatokhoz, és a struktúra ki lett adva, kattintson a <strong>Csapat automatikus létrehozása</strong> lehetőségre. A tervezett erőforrások szükséges száma hozzáadódik a WBS-hez és a <strong>Projekt és csapat ütemezés</strong> laphoz.</td>
 </tr>
 <tr class="odd">
 <td>Erőforrás (legördülő lista)</td>
@@ -317,7 +317,7 @@ A WBS további lehetőségekkel bővült az erőforrás funkció jobb használha
 
 > [!NOTE] 
 > Nem kap figyelmeztetést, hogy az adott erőforrás most 2, mert az erőforrások száma 1 marad.
-18. Az a **munkalebontási struktúra**oldalon, a WBS-t az erőforrás-hozzárendelés ellenőrzése, és kattintson **Mentés**.
+18. Az a **munkalebontási struktúra** oldalon, a WBS-t az erőforrás-hozzárendelés ellenőrzése, és kattintson **Mentés**.
 
 ## <a name="resource-fulfillment-for-planned-resources"></a>A tervezett erőforrások erőforrás-teljesítése
 Egy projektvezető megtervezheti a szükséges erőforrás-szerepköröket egy projekthez. Az erőforrás-kezelő ezeket a tervezett erőforrásokat kérelemként fogja látni az **Erőforrás teljesítése** oldalon, és tényleges erőforrásokat rendelhet hozzzájuk.
@@ -325,7 +325,7 @@ Egy projektvezető megtervezheti a szükséges erőforrás-szerepköröket egy p
 1.  Kattintson a **Projektvezetés és könyvelés** &gt; **Projektek** &gt; **Minden projekt** lehetőségre.
 2.  Válassza ki a listából az **XYZ Frissítési Fázis 2** projektet.
 3.  Kattintson a **Projekt** lehetőségre.
-4.  Kattintson a **Szerkesztés**lehetőségre.
+4.  Kattintson a **Szerkesztés** lehetőségre.
 5.  A **Projektcsapat és ütemezés** fülön** **kattintson a **Hozzáadás** lehetőségre.
 6.  A **Szerepkörök hozzáadása** párbeszédpanelen jelölje ki a **Szoftverfejlesztő** szerepkört.
 7.  Kattintson az **Új** > lehetőségre.

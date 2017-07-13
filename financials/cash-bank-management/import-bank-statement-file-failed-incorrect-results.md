@@ -1,15 +1,15 @@
 ---
 title: "Banki kivonatfájl importálása – hibaelhárítás"
-description: "Fontos, hogy a banki kivonatfájl a Microsoft Dynamics 365 for Operations által támogatott elrendezésnek megfeleljen. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat."
+description: "Fontos, hogy a banki kivonatfájl a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás által támogatott elrendezésnek megfeleljen. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e2029a03cf6b46ee206417076c64a269080119ed
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 33b7a499caf9292e44c155a0e1bd6a8929558be5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Fontos, hogy a banki kivonatfájl a Microsoft Dynamics 365 for Operations által támogatott elrendezésnek megfeleljen. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat.
+Fontos, hogy a banki kivonatfájl a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás által támogatott elrendezésnek megfeleljen. Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni. Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz. Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák. Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat.
 
 <a name="what-is-the-error"></a>Mi a hiba?
 ------------------
@@ -38,7 +38,7 @@ Fontos, hogy a banki kivonatfájl a Microsoft Dynamics 365 for Operations által
 Miután megpróbál importálni egy bankszámlakivonat fájlt, a hiba megkereséséhez ugorjon az Adatok kezelése munkaelőzményekre és a végrehajtás részleteire. A hiba a kimutatható a kivonat, egyenleg vagy kivonatsor választásával. Azonban, nem valószínű, hogy segítségével azonosíthatja a mezőt vagy a problémát okozó elemet.
 
 ## <a name="what-are-the-differences"></a>Mik a különbségek?
-Hasonlítsa össze a bankfájl elrendezésdefinícióját a Microsoft Dynamics 365 for Operations importdefiníciójával, és vegye figyelembe a mezők és elemek esetleges eltéréseit. Hasonlítsa össze a banki kivonatfájlt a Dynamics 365 for Operations kapcsolódó mintafájljával. A ISO20022 fájlokban az esetleges különbségeket elvileg könnyen látni lehet.
+Hasonlítsa össze a bankfájl elrendezésdefinícióját a Finance and Operations importdefiníciójával és vegye figyelembe a mezők és elemek esetleges eltéréseit. Hasonlítsa össze a banki kivonatfájlt a Finance and Operations kapcsolódó mintafájljával. A ISO20022 fájlokban az esetleges különbségeket elvileg könnyen látni lehet.
 
 ## <a name="transformations"></a>Átalakítások
 A változtatást általában a három átalakítás egyikében kell végezni. Minden egyes átalakítás meghatározott szabványhoz van írva.
@@ -80,7 +80,7 @@ Az átalakítás futtatásakor kimeneti fájl készül, amelyet meg lehet tekint
 
 ### <a name="adjust-the-transformation"></a>Állítsa be az átalakítást
 
-Állítsa be az átalakítást, a megfelelő mező vagy elem megkereséséhez a bankszámlakivonat fájlban. Ezután rendelje hozzá azt a mezőt vagy elemet a Dynamics 365 for Operations-elemhez.
+Állítsa be az átalakítást, a megfelelő mező vagy elem megkereséséhez a bankszámlakivonat fájlban. Ezután rendelje hozzá azt a mezőt vagy elemet a Finance and Operations-elemhez.
 
 ### <a name="debitcredit-indicator"></a>Tartozás/követelés jelzése
 

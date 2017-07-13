@@ -3,7 +3,7 @@ title: "A pénzügyi jelentés összetevői"
 description: "A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. Ez a cikk ismerteti, hogyan rendezheti és zárolhatja az építőelemeket, valamint a velük történő munkát."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 057c338c11518b3a1081223e432cbfd109d5e679
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -105,7 +105,7 @@ Miután létrehozott egy új építőelem-csoportot, hozzá kell rendelnie azt l
 
 ### <a name="export-a-building-block-group"></a> Építőelem-csoport exportálása
 
-Exportálhat építőelem-csoportokat vagy adott építőelemeket egy építőelem-csoportból. Az exportált építőelem-csoportokat használhatja biztonsági mentésnek. Az exportált adatokat építőelem csoportok vagy a Dynamics 365 for Operations programok között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
+Exportálhat építőelem-csoportokat vagy adott építőelemeket egy építőelem-csoportból. Az exportált építőelem-csoportokat használhatja biztonsági mentésnek. Az exportált adatokat építőelem csoportok vagy a Finance and Operations programok között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
 1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
 2.  Jelölje ki az **Építőelem-csoportok** párbeszédpanelben az exportálni kívánt építőelem-csoportot, majd kattintson az **Exportálás** lehetőségre.
 3.  Jelölje ki az exportálandó jelentésdefiníciókat az **Exportálás** párbeszédpanelben:

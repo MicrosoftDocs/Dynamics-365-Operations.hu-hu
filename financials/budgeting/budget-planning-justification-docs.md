@@ -3,13 +3,13 @@ title: "Költségvetési tervezés igazoló dokumentumai"
 description: "Az igazoló dokumentumok háttérmagyarázatokat biztosítanak arra az esetre, ha valaki egy költségvetést kikérve rákérdez, miért van szükség az adott költségvetésre."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 259594
 ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6178addb9226912feb1974793525ab4ba9441193
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d23c0e1725a39d25d2be8971f541b2c31bbe859
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -46,7 +46,7 @@ A költségvetés-kezelő Microsoft Wordben létrehoz egy költségvetésiterv-s
 
 1.  Bejelentkezés után kattintson a **Tervezés** elemre a Microsoft Dynamics Office-bővítményben.
 2.  A fejlécadatokhoz használja a **Mezők hozzáadása** gombot.
-3.  Válassza ki a BudgetPlanJustification entitás-adatforrást, majd kattintson a **Tovább** gombra. **Megjegyzés:** erre az entitásra minden igazoló dokumentum esetén szükség van. Más entitások is használhatók, de a Microsoft Dynamics 365 for Operationsbe való visszatöltés sikertelen lesz, ha ez az entitás nincs felvéve.
+3.  Válassza ki a BudgetPlanJustification entitás-adatforrást, majd kattintson a **Tovább** gombra. **Megjegyzés:** erre az entitásra minden igazoló dokumentum esetén szükség van. Más entitások is használhatók, de a Microsoft Dynamics 365 for Finance and Operations, Enterprise editionbe való visszatöltés sikertelen lesz, ha ez az entitás nincs felvéve.
 4.  Adja hozzá a BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter és DocumentNumber címkéket és értékeket a Word-dokumentumban. **Megjegyzés:** szükség esetén használhatja saját egyéni címkéit a szabványos címkék helyett.
 5.  Kattintson a **Kész** elemre a fejléc befejezéséhez.
 6.  A sorszintű részletes költségvetésiterv-összegekhez kattintson a **Tábla hozzáadása** elemre.
@@ -57,7 +57,7 @@ A költségvetés-kezelő Microsoft Wordben létrehoz egy költségvetésiterv-s
 
 ##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>A költségvetés-tervezési folyamat beállítása az indoklási sablon használatára
 
-1.  A Microsoft Dynamics 365 for Operationsben lépjen a **Költségvetés készítése** &gt; **Beállítás** &gt; **Költségvetés-tervezés** &gt; **Igazoló dokumentum sablonjai** elemre.
+1.  A Finance and Operationsben lépjen a **Költségvetés készítése** &gt; **Beállítás** &gt; **Költségvetés-tervezés** &gt; **Igazoló dokumentum sablonjai** elemre.
 2.  Kattintson a **Új** lehetőségre, és keresse meg az újonnan létrehozott Microsoft Word-dokumentumot.
 3.  Adja meg a sablon megjelenítendő nevét és leírását. Kattintson az **OK** gombra.
 4.  Lépjen a következőhöz: **Költségvetés-készítés** &gt; **Beállítás** &gt; **Költségvetés****-tervezés** &gt; **Költségvetés-tervezési folyamat**.
@@ -66,7 +66,7 @@ A költségvetés-kezelő Microsoft Wordben létrehoz egy költségvetésiterv-s
 
 ##### <a name="edit-and-save-personalized-justification-documents"></a>Személyre szabott igazoló dokumentumok szerkesztése és mentése
 
-1.  A Dynamics 365 for Operationsben hozzon létre egy új költségvetési tervet, vagy nyisson meg egy meglévő költségvetési tervet.
+1.  A Finance and Operationsben hozzon létre egy új költségvetési tervet, vagy nyisson meg egy meglévő költségvetési tervet.
 2.  Az **Indoklás** legördülő menüben válassza az **Új igazolás létrehozása** elemet.
 3.  Miután kitöltötte az adatokat, az **Indoklás** legördülő menüből töltse fel a személyre szabott dokumentumot.
 

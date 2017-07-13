@@ -3,25 +3,27 @@ title: "Feladatrögzítő és Súgó a pénztárhoz"
 description: "Ez a témakör azt mutatja be, hogyan használható a Feladatrögzítő a Retail Modern POS és a felhőalapú POS környezetekben."
 author: mugunthanm
 manager: AnnBe
-ms.date: 2017-05-15
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+audience: Application User
 ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
 ms.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3ca86a3353d3f613057dd77754266fc69975229f
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 007a7e8a34f3f5a2d0d18eb3955822a8fd8bdd0a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 ---
 
@@ -40,11 +42,11 @@ A Feladatrögzítő képes az ügyfélprogramban végzett felhasználói művele
 ## <a name="basic-configuration"></a>Alapkonfiguráció
 A feladatrögzítés pénztárnál való aktiválásához kövesse az alábbi lépéseket.
 
-1.  Kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Jegyzékek** lehetőségekre.
+1.  Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Jegyzékek** lehetőségekre.
 2.  Kattintson a jegyzékre a feladatrögzítés engedélyezéséhez.
 3.  A **Jegyzék** lapon, az **Általános** gyorslapon állítsa a **Feladatrögzítés engedélyezése** beállítást **Igen** értékre.
 4.  Kattintson a **Mentés** gombra.
-5.  Ugorjon a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem Informatika** &gt; **Elosztási ütemezéspontra**.
+5.  Lépjen a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
 6.  Válassza ki a **Jegyzékek (1090)** munkát, és kattintson a **Futtatás most** lehetőségre.
 
 ## <a name="create-a-recording"></a>Felvétel létrehozása
@@ -54,7 +56,9 @@ Kövesse ezeket a lépéseket, ha új felvételt szeretne létrehozni a Feladatr
 2.  A **Beállítások** oldalon, a **Feladatrögzítő** szakaszban kattintson a **Feladatrögzítő megnyitása** lehetőségre. Megjelenik a **Feladatrögzítő** ablaktábla. Ha a **Bezárás** gombra (**X**) kattint a jobb felső sarokban, azzal bezárhatja a **Feladatrögzítő** táblát, mielőtt elkezdene egy új felvételt. A tábla újbóli megnyitásához ismételje meg a 2. lépést.
 [![Feladatrögzítő tábla](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
-3.  Adja meg a felvétel nevét és leírását, majd kattintson az **Indítás** gombra. Amikor rákattint az **Indítás** gombra, elindul a rögzítési munkamenet. **Megjegyzés:** Ha a **Bezárás** gombra (**X**) kattint a jobb felső sarokban, miközben a felvétel folyamatban van, akkor a **feladatrögzítés** tábla bezáródik, ám a felvételi munkamenet nem marad abba. A Feladatrögzítő tábla újbóli megnyitásához kattintson a Súgó gombra (kérdőjel) a képernyő tetején. 
+3.  Adja meg a felvétel nevét és leírását, majd kattintson az **Indítás** gombra. Amikor rákattint az **Indítás** gombra, elindul a rögzítési munkamenet.
+
+**Megjegyzés:** Ha a **Bezárás** gombra (**X**) kattint a jobb felső sarokban, miközben a felvétel folyamatban van, akkor a **feladatrögzítés** tábla bezáródik, ám a felvételi munkamenet nem marad abba. A Feladatrögzítő tábla újbóli megnyitásához kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején. 
 
 [![Kérdőjel](./media/help.jpg)](./media/help.jpg)
 
@@ -95,7 +99,10 @@ Ha folytatni szeretné a rögzítési munkamenetet a szüneteltetést követően
 
 ### <a name="capture-screenshots"></a>Képernyőképek rögzítése
 
-A Feladatrögzítő képes képernyőképek készítésére a Retail Modern POS kezelőfelületén az üzleti folyamat rögzítése során. A Feladatrögzítő akkor használja fel a képernyőképeket, ha Word-dokumentumként tölti le a felvételt. A képernyőkép-rögzítés funkció bekapcsolásához állítsa a **Képernyőképek rögzítése** beállítást **Igen** értékre. Megjegyzés: A felhőalapú POS nem támogatja a Képernyőkép rögzítése funkciót.
+A Feladatrögzítő képes képernyőképek készítésére a Retail Modern POS kezelőfelületén az üzleti folyamat rögzítése során. A Feladatrögzítő akkor használja fel a képernyőképeket, ha Word-dokumentumként tölti le a felvételt. A képernyőkép-rögzítés funkció bekapcsolásához állítsa a **Képernyőképek rögzítése** beállítást **Igen** értékre. 
+
+#### <a name="note"></a>Bankjegy
+> A Cloud POS (felhőalapú pénztár) nem támogatja a Képernyőkép rögzítése funkciót.
 
 ### <a name="start-task-and-end-task"></a>Feladat indítása és Feladat befejezése
 
@@ -119,11 +126,13 @@ A **Szöveg** mezőben beírt szöveg a lépés szövege *felett* jelenik meg a 
 
 A **Megjegyzések** mezőben beírt szöveg a lépés szövege *alatt* jelenik meg a Feladat-útmutatóban. A megjegyzés szövegének elolvasásához a felhasználónak ki kell bontania a lépés szövegét az előugró ablakban. Ez a hely megfelelő további anyagok vagy egyéb olyan információ elolvasásához, amely hasznos lehet a felhasználó számára, de a felhasználó számára ez nem kötelező a művelet végrehajtásához.
 
-## <a name="help-at-retail-modern-pos-and-cloud-pos"></a>A Retail Modern POS és a felhőalapú POS súgója
-A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása.](https://ax.help.dynamics.com/en/wiki/working-with-help/#connecting-the-help-system) A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM könyvtárban keres, amelyet kijelöltek a Microsoft Dynamics AX Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot. 
+## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>A Retail Modern POS és a Cloud POS súgója
+A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](/dynamics365/unified-operations/dev-itpro/get-started/help-connect). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM-könyvtárban keres, amelyet kijelöltek a Microsoft Dynamics 365 for Retail Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot. 
 
 [![Súgó gomb](./media/help.jpg)](./media/help.jpg) 
 
-Amikor rákattint egy Feladat-útmutatóra a keresési találatok között, vagy megtekintheti a lépéseket súgótémakörként, vagy exportálhatja őket Word-dokumentumba. Megjegyzés: a Retail Modern POS és a felhőalapú POS nem jeleníti meg automatikusan a feladatútmutatókat az űrlapja vagy műveletei alapján – be kell írnia a folyamat nevét a keresőmezőbe, és le kell nyomnia a Keresés gombot a találatok megjelenítéséhez.
+Amikor rákattint egy Feladat-útmutatóra a keresési találatok között, vagy megtekintheti a lépéseket súgótémakörként, vagy exportálhatja őket Word-dokumentumba. 
+#### <a name="note"></a>Bankjegy
+> A Retail Modern POS és a Cloud POS Súgója nem hozza fel a feladat-útmutatókat a képernyő vagy a végzett művelet alapján. A keresőmezőbe be kell írnia a folyamat nevét, majd kattintson a **Keresés** lehetőségre.
 
 

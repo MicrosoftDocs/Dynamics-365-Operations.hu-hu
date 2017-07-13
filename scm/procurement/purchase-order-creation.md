@@ -3,14 +3,14 @@ title: "Beszerzési rendelések létrehozása"
 description: "A cikk ismerteti a beszerzési megrendelés kézi létrehozásának folyamatát és lehetőségeit."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c6c6b40d8934d1059c54678df8d4fc6530db1b24
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: fbf5337ac41ceae6e911c056db5226c8ed1cefb0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="create-purchase-orders"></a>Beszerzési rendelések létrehozása
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 A cikk ismerteti a beszerzési megrendelés kézi létrehozásának folyamatát és lehetőségeit.
@@ -70,7 +72,7 @@ Egyes esetekben érdemes felosztani a rendelt mennyiséget úgy, hogy a különb
 A költségeket automatikusan hozzá lehet adni a beszerzésirendelés-sorokhoz, amennyiben a szállítóhoz vagy a szállító költségcsoportjához, és a cikkhez vagy a cikk költségcsoportjához be van állítva az automatikus költségek opció. Azonban gyakoribb, hogy a költségeket manuálisan, a rendeléssor szintjén adják meg. Költség hozzáadásához nyissa meg a **Költségek kezelése** lapot a **Költségek kezelése** művelettel a **Pénzügyek** menüpontban, **Sorok** nézetben. A költségek hozzáadása közvetlenül a rendelési sor szintjén azért előnyös, mert így a költségeket készletköltségként lehet elszámolni. Költségkódok beállításához a számlatermék-költségekhez használja a **Cikk** tartozás opciót. Az ilyen típusú költségeket a rendelés megerősítése előtt a beszerzési rendelés fejlécéből a sorokhoz kell rendelni. Érdemes lehet például a költségeket az egyes sorokban szereplő mennyiség alapján hozzárendelni. A költségkategória is befolyásolja, hogyan kerülnek elszámolásra a költségek. A rögzített költségek például egy fix összeget adnak meg, a százalékköltségek pedig a rendeléssor nettó összege alapján százalékként kerülnek kiszámolásra. A beszerzési rendelések terhelésekhez rendelhetők, és a terhelésekben szerepelhet a szállítási költségekre vonatkozó becslés. Ez a költség a terhelésekből a beszerzésirendelés-sorokhoz rendelhető.
 
 ## <a name="purchase-order-actions"></a>Beszerzési rendelés műveletei
-A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](/dynamics365/operations/get-started/action-search) opciót használni a megfelelő elem megtalálására a menüben.  
+A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](/dynamics365/unified-operations/fin-and-ops/get-started/action-search) opciót használni a megfelelő elem megtalálására a menüben.  
 
 A rendelésen a termékek konfigurálhatók úgy, hogy kiegészítő cikkeket tartalmazzanak. A kiegészítő cikkek olyan termékek, vagy más termékekkel együtt lehet vagy kell megvásárolni. A kiegészítő termékek költségmentesen hozzáadhatók, mint kísérő termékek, vagy eldöntheti, hogy hozzáadja-e őket a rendeléshez vagy sem. A kiegészítő elemeket minden hozzáadott rendelési sor után ellenőrizheti. Azonban a kiegészítő termékek ellenőrzése és hozzáadása kényelmesebb lehet a Kiegészítő termékek oldal használatával a **Műveletek oldalon**, ahol az összes rendeléssort egyszerre kezelheti.  
 
@@ -94,7 +96,7 @@ Előfordulhat, hogy egy adott beszerzési megrendelés végrehajtását késlelt
 
 [Beszerzési rendelés - termékbevételezés](product-receipt-against-purchase-orders.md)
 
-[Szállítói számlák áttekintése](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Szállítói számlák áttekintése](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

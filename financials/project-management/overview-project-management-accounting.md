@@ -3,24 +3,24 @@ title: "Projektvezetés és könyvelés"
 description: "A projektvezetési és könyvelési funkció több ágazatban használható egy szolgáltatás nyújtásához, egy termék előállításához vagy egy eredmény eléréshez."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a6235f36af6dfb2f4164405d384f13a7c1cde06
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 12afcde947463b3abf58dea6138653a32dcda6f1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -37,7 +37,7 @@ A projekt olyan tevékenységek csoportja, amelyekkel szolgáltatás nyújtható
 ## <a name="projects-across-industries"></a>Projektek ágazatokban között
 A projektvezetési és könyvelési funkció több ágazatban is használható a következő ábrán látható módokon. [![Ágazatokon átívelő projektek](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-Egy telefonos ügyfélszolgálat esetében, ún. „ticket” használható, amely összefoglalja azt az eljárásmenetet, amely végrehajtásával az adott probléma megoldható. A tanácsadó vállalatok, például a menedzsment- vagy műszaki tanácsadó szervezetek vagy a hirdetési ügynökségek, projektként hivatkoznak a tevékenységükre. A marketingben a kampány egy leszállítandó munkakészletet jelöl. Projekt-alapú gyártás esetén, a termelési rend határozza meg a késztermék előállításához elvégezendő különböző munkafolyamatokat. Akárhogyan is hívják őket, ezek a projektek nyersanyagokat, ütemterveket és költségeket foglalnak magukban, és a Microsoft Dynamics 365 for Operations projektvezetési és könyvelési funkciói ezeknek a projekteknek a tervezésében, kivitelezésében és elemzésében nyújthatnak segítséget.
+Egy telefonos ügyfélszolgálat esetében, ún. „ticket” használható, amely összefoglalja azt az eljárásmenetet, amely végrehajtásával az adott probléma megoldható. A tanácsadó vállalatok, például a menedzsment- vagy műszaki tanácsadó szervezetek vagy a hirdetési ügynökségek, projektként hivatkoznak a tevékenységükre. A marketingben a kampány egy leszállítandó munkakészletet jelöl. Projekt-alapú gyártás esetén, a termelési rend határozza meg a késztermék előállításához elvégezendő különböző munkafolyamatokat. Akárhogyan is hívják őket, ezek a projektek nyersanyagokat, ütemterveket és költségeket foglalnak magukban, és a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás projektvezetési és könyvelési funkciói ezeknek a projekteknek a tervezésében, kivitelezésében és elemzésében nyújthatnak segítséget.
 
 ## <a name="project-phases"></a>A projekt fázisai
 Ugyan a következő folyamatábra olyan külső projektre vagy projektekre vonatkozik, amelyek egy vagy több ügyfél számára kerülnek teljesítésre, ez a funkció a házon belüli, csak kiadással járó projektekre is alkalmazható. 
@@ -75,11 +75,11 @@ További információért lásd: [Munkalebontási szerkezetek](work-breakdown-st
 
 ### <a name="create-project-forecasts-and-budgets"></a>Projekt-előrejelzések és költségvetési tervezetek létrehozása
 
-Használja a projekt-előrejelzést, amennyiben a szervezetnek van működési terve, és ha az a meghatározott tranzakciókból származtatott bevételekre és költségekre fókuszál. Használja a projekt költségvetés-tervezéshez, ha a szervezet inkább a pénzügyi összegekre összpontosít. Minden metódus előnyökkel jár. További információért lásd: [Projekt-előrejelzések és a költségvetési tervezetek](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+Használja a projekt-előrejelzést, amennyiben a szervezetnek van működési terve, és ha az a meghatározott tranzakciókból származtatott bevételekre és költségekre fókuszál. Használja a projekt költségvetés-tervezéshez, ha a szervezet inkább a pénzügyi összegekre összpontosít. Minden metódus előnyökkel jár. További információért lásd: [Projekt-előrejelzések és a költségvetési tervezetek](project-forecasts-budgets.md).
 
 ### <a name="create-projects"></a>Projektek létrehozása
 
-A Microsoft Dynamics 365 for Operations hat projekttípus létrehozását teszi lehetővé. Minden projekttípus beállításai eltérők a költségek és bevételek elszámolása szempontjából. A projekttípus kiválasztása a projekt célkitűzésétől függ. A következő táblázat ismerteti az egyes projekttípusok jellemző használatát.
+A Microsoft Finance and Operations hat projekttípus létrehozását teszi lehetővé. Minden projekttípus beállításai eltérők a költségek és bevételek elszámolása szempontjából. A projekttípus kiválasztása a projekt célkitűzésétől függ. A következő táblázat ismerteti az egyes projekttípusok jellemző használatát.
 
                                                                                                                                                                          |
 | Projekt típusa      | Leírás                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -118,7 +118,7 @@ További információért lásd: [Munkalebontási szerkezetek](work-breakdown-st
 
 Két lehetőség van a projektek intézésére és irányítására: a projekt-előrejelzések és a projektköltségvetések. Használja a projekt-előrejelzést, amennyiben a szervezetnek van működési terve, és ha az a meghatározott tranzakciókból származtatott bevételekre és költségekre fókuszál. Használja a projekt költségvetés-tervezéshez, ha a szervezet inkább a pénzügyi összegekre összpontosít.
 
-További információért lásd: [Projekt-előrejelzések és a költségvetési tervezetek](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+További információért lásd: [Projekt-előrejelzések és a költségvetési tervezetek](project-forecasts-budgets.md).
 
 ### <a name="create-production-orders"></a>Termelési rendelés létrehozása
 
@@ -210,7 +210,7 @@ Az almunkafolyamat hozzáadásáról és konfigurálásáról kapcsolatban az al
 
 ### <a name="calculate-the-cost-to-complete-a-project"></a>A teljesítési költség kiszámítása
 
-Becslés létrehozása esetén választhatja lehet kiszámítani a költséget a projekt teljesítésére használt mód. Kiválaszt egy metódust a a **Metódus teljes költsége**mezőjét a **Létrehozása becsült** oldalon. A program a kiválasztott teljesítendő költség módszert alkalmazza a költségbecslés költségsoraiban. Miközben egy sor állapota **Létrehozott**, módosíthatja a módot, amely azt a vonatkozik a **Költségbecslés** lap. 
+Becslés létrehozása esetén választhatja lehet kiszámítani a költséget a projekt teljesítésére használt mód. Kiválaszt egy metódust a a **Metódus teljes költsége** mezőjét a **Létrehozása becsült** oldalon. A program a kiválasztott teljesítendő költség módszert alkalmazza a költségbecslés költségsoraiban. Miközben egy sor állapota **Létrehozott**, módosíthatja a módot, amely azt a vonatkozik a **Költségbecslés** lap. 
 
 A következő táblázat leírja a projekt a teljesítési költség kiszámításához használt módszerek.
 
@@ -228,7 +228,7 @@ A következő táblázat leírja a projekt a teljesítési költség kiszámít�
 <tbody>
 <tr class="odd">
 <td>Teljes költség – Tényleges</td>
-<td>Becsült költségek manuálisan kell megadni. Után a <strong>Teljes költség</strong> vagy <strong>Mennyiségének</strong> oszlopában meg a <strong>Költségbecslés </strong>lap elkészült, a felhasználó által megadott összegek összegből a tényleges költségeket. A projekt a teljesítési költség eredménye. Általában költségek állapotának nem nyomon követhetők alapján, például a szállodai tartózkodás és a étkezés időszakonként rögzített száma. Helyette. Nyomon követési általában alapul összehasonlítása szemben a becsült órák teljes összege. Ezzel a módszerrel nem szükséges előrejelzési modell, és a teljes költség vagy a teljes mennyiség manuálisan módosítható. Amikor beír egy értéket a <strong>Teljes költség</strong> vagy a <strong>Mennyiségének</strong> oszlopban, a Microsoft 365 for Operations összehasonlítja ezt az értéket az időszakra feladott tényleges tranzakciókat szemben, és ezután a értéke csökken a <strong>Befejezendő mennyiség</strong> vagy <strong>Teljesítendő költség</strong> oszlopban.</td>
+<td>Becsült költségek manuálisan kell megadni. Után a <strong>Teljes költség</strong> vagy <strong>Mennyiségének</strong> oszlopában meg a <strong>Költségbecslés </strong>lap elkészült, a felhasználó által megadott összegek összegből a tényleges költségeket. A projekt a teljesítési költség eredménye. Általában költségek állapotának nem nyomon követhetők alapján, például a szállodai tartózkodás és a étkezés időszakonként rögzített száma. Helyette. Nyomon követési általában alapul összehasonlítása szemben a becsült órák teljes összege. Ezzel a módszerrel nem szükséges előrejelzési modell, és a teljes költség vagy a teljes mennyiség manuálisan módosítható. Amikor beír egy értéket a <strong>Teljes költség</strong> vagy <strong>Összmennyiség</strong> oszlopban a Finance and Operations összehasonlítja ezt az értéket az időszakra feladott tényleges tranzakciókat szemben, és ezután a értéke csökken a <strong>Befejezendő mennyiség</strong> vagy <strong>Teljesítendő költség</strong> oszlopban.</td>
 </tr>
 <tr class="even">
 <td>Teljes költségvetés – Tényleges</td>
@@ -238,7 +238,7 @@ A következő táblázat leírja a projekt a teljesítési költség kiszámít�
 <li>Előrejelzés-tranzakciók tényleges tranzakciók összehasonlítása.</li>
 <li>Karbantartása, csökkenti vagy növeli a becslések a következő időszakra.</li>
 </ol>
-A Microsoft Dynamics 365 for Operations automatikusan nem csökkenti az előre jelzett becsléseket. Ezért célszerű karbantartása rögzített árú projekten összehasonlítás alaptervet létrehozására, a projekt befejezésekor az eredeti előrejelzési modellel. 
+A Finance and Operations automatikusan nem csökkenti az előre jelzett becsléseket. Ezért célszerű karbantartása rögzített árú projekten összehasonlítás alaptervet létrehozására, a projekt befejezésekor az eredeti előrejelzési modellel. 
 > [!NOTE] Ha ezt a módszert választja, legalább két előrejelzési modellt használjon. Egy modell tartalmaznia kell az eredeti előrejelzés. A modell, az előrejelzési tranzakciókat kell másolása egy másik modellbe. Ez a mező csak rögzített árú és beruházási projektekre vonatkozik.</td>
 > </tr>
 <tr class="odd">
@@ -278,7 +278,7 @@ A beállításoktól függően a kiválasztott projekt pénzbeáramlások előre
 -   **Projekt dátuma:** 2012. március 5.
 -   **Számla dátuma:** 2012. március 31. A dátum meghatározása a számlázási gyakoriság alapján történik. Ebben a példában a Számlagyakoriság meg az aktuális hónaphoz. Emiatt a március hónapban feladott összes tranzakció számlázása a hónap utolsó napját.
 -   **Határidő:** 2012. április 14. A dátum meghatározása a projekthez beállított fizetési feltételek alapján történik. Ebben a példában a kiválasztott fizetési feltételek 14 napos. Ezért 14 nap hozzáadódnak rakódó határidő 2012. április 14. a számla dátumát.
--   **Várható értékesítési kifizetési dátuma:** 2012. április 27. A dátum kiszámítása a napok összeadásával történik: először az **Általános puffernapok** mező, **Projektvezetési és könyvelési paraméterek** oldal napjai lesznek összeadva az **Egyedi puffernapok** mező, **Projektszerződések** oldal napjaival, majd az összeg össze lesz adva a **Határidő** mező teljes napszámával. Ebben a példában a beírt **3** a**Általános puffernapok** mező és **10** a **Egyedi puffernapok** mező. Ezért 13 nap hozzáadódnak rakódó határidő 2012. április 27. a számla dátumát.
+-   **Várható értékesítési kifizetési dátuma:** 2012. április 27. A dátum kiszámítása a napok összeadásával történik: először az **Általános puffernapok** mező, **Projektvezetési és könyvelési paraméterek** oldal napjai lesznek összeadva az **Egyedi puffernapok** mező, **Projektszerződések** oldal napjaival, majd az összeg össze lesz adva a **Határidő** mező teljes napszámával. Ebben a példában a beírt **3** a **Általános puffernapok** mező és **10** a **Egyedi puffernapok** mező. Ezért 13 nap hozzáadódnak rakódó határidő 2012. április 27. a számla dátumát.
 
 Az Általános puffernapok vagy cserélhető meg az egyedi puffernapok, vagy hozzá kell adni az egyedi Puffernapok:
 
@@ -316,7 +316,7 @@ Ezek a beállítások alapján, a költségkifizetési dátumot minden tranzakci
 
 A költségkifizetési dátumot puffernapok nem számítja ki. Amikor egy projekt lezárult, és az összes költség és számla teljesült, a költség és az értékesítés feladása megtörténik az számlákra. 
 
-Amikor minden értékesítési és szállítói számla teljesült, megtekintheti a mezők közötti kapcsolatot a **Pénzforgalmi**lapot, majd a mező a **Projekt kimutatások** lap.
+Amikor minden értékesítési és szállítói számla teljesült, megtekintheti a mezők közötti kapcsolatot a **Pénzforgalmi** lapot, majd a mező a **Projekt kimutatások** lap.
 
 | Banki pénzforgalom | Projektkimutatások megjelenítése |
 |----------------|-------------------------|
@@ -333,7 +333,7 @@ A szervezet a projekt során felmerülő, a költségek nyomon követheti a **K�
 
 #### <a name="viewing-the-remaining-budgeted-amounts"></a>A fennmaradó költségvetési összegek megtekintése
 
-Ha a **Fennmaradó költségvetés**kiválasztott költség ellenőrzési módszerként a **Projektvezetési és könyvelési paraméterek** lapot, a **Költségellenőrzés** lap számítja ki a tényleges és vállalt megjelölt még nem feladott költségek. Konkrétabban az összegeket a **Általános** lap alsó részén a **Költségellenőrzés**lap számítása a következőképpen történik:
+Ha a **Fennmaradó költségvetés** kiválasztott költség ellenőrzési módszerként a **Projektvezetési és könyvelési paraméterek** lapot, a **Költségellenőrzés** lap számítja ki a tényleges és vállalt megjelölt még nem feladott költségek. Konkrétabban az összegeket a **Általános** lap alsó részén a **Költségellenőrzés** lap számítása a következőképpen történik:
 
 -   **Tényleges költség** – Teljes összeg lett projektalkalmazott a projekten kiválasztott költségsorra vonatkozó. A tényleges költség összege a számítása a **Főkönyvi frissítések** oldalon.
 -   **Vállalt költség** – A kiegészítő összeg, amely a jogi személy vállalt fizetendő költségek. Az adott vállalt költség összegének számítása a a **Vállalt költségek** oldalon.
@@ -350,14 +350,14 @@ Az **Költségellenőrzés** oldalon a **Eltérés** lapon meg lehet tekinteni a
 
 #### <a name="viewing-the-total-budgeted-amounts"></a>A teljes előirányzott összegek megtekintése
 
-Ha **Teljes költségvetés** kiválasztott költség ellenőrzési módszerként a **Projektvezetési és könyvelési paraméterek** lapot, a **Költségellenőrzés** lap kiszámítja a tényleges költségeket, és segítséget nyújt a kettő közötti különbség észlelése a projekt teljes költsége. Konkrétabban az összegeket a **Költségellenőrzés** lap alsó részén a **Általános**lap számítása a következőképpen történik:
+Ha **Teljes költségvetés** kiválasztott költség ellenőrzési módszerként a **Projektvezetési és könyvelési paraméterek** lapot, a **Költségellenőrzés** lap kiszámítja a tényleges költségeket, és segítséget nyújt a kettő közötti különbség észlelése a projekt teljes költsége. Konkrétabban az összegeket a **Költségellenőrzés** lap alsó részén a **Általános** lap számítása a következőképpen történik:
 
 -   **Teljes előirányzott költség** – A teljes költségvetési összeg a kijelölt költségsorhoz.
 -   **Tényleges költség** – Teljes összeg lett projektalkalmazott a projekten kiválasztott költségsorra vonatkozó.
 -   **Tényleges költség** – Teljes összeg lett projektalkalmazott a projekten kiválasztott költségsorra vonatkozó.
 -   **Eltérés** – A teljes költségvetési költség tényleges és elismert költsége közötti különbség megjelenítése. Az eltérés megmutatja, hogy a teljes költségvetéshez további költségeket kell-e hozzáadni.
 
-Az **Költségellenőrzés** oldalon, a **Eltérés**lapon megtekintheti a teljes költségvetés és az eredeti költségvetés közötti különbség megnézzük a következő mezőket:
+Az **Költségellenőrzés** oldalon, a **Eltérés** lapon megtekintheti a teljes költségvetés és az eredeti költségvetés közötti különbség megnézzük a következő mezőket:
 
 -   **Eredeti költségvetés** – Az eredetileg kiválasztott költségsorra vonatkozó tervezett összeget. A fennmaradó költségvetés összege a számítása a **Főkönyv előnézete** oldalon.
 -   **Teljes költségvetés** – Az eredetileg kiválasztott költségsorra vonatkozó tervezett összeget. A fennmaradó költségvetés összege a számítása a **Főkönyv előnézete** oldalon.
@@ -394,14 +394,14 @@ Dolgozó számításakor a kihasználtsági ráta használhatja a normaidő vagy
 
 ### <a name="review-project-statements"></a>Projektkimutatások megjelenítése
 
-Megtekintheti egy adott projekt előrehaladását gyors pillanatképe Projektkimutatás hozhat létre. Projektkimutatás futtatja, megadhatja a feltételeket, amelyek segítségével a kimutatás számítása a kijelölések alapján a **Általános**lapjáról a **Projekt kimutatások** lap. Választhat, amely felveszi / kizárja a következő adatokat:
+Megtekintheti egy adott projekt előrehaladását gyors pillanatképe Projektkimutatás hozhat létre. Projektkimutatás futtatja, megadhatja a feltételeket, amelyek segítségével a kimutatás számítása a kijelölések alapján a **Általános** lapjáról a **Projekt kimutatások** lap. Választhat, amely felveszi / kizárja a következő adatokat:
 
 -   Projekttípusok
 -   Tranzakciótípusok
 -   Projekt dátum/főkönyv frissítése
 -   Adat
 
-A kimutatás kiszámítása után megtekintheti az egyes lapokon a következő adatokat a **Kimutatások projekt**lap:
+A kimutatás kiszámítása után megtekintheti az egyes lapokon a következő adatokat a **Kimutatások projekt** lap:
 
 -   **Általános** – a Projekt eredmény alapvető szerkezetét vonatkozó általános információkat.
 -   **Nyereség és veszteség** – elhatárolt bevétel adatait.

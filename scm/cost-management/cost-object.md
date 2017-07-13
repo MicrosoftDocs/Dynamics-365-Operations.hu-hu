@@ -3,7 +3,7 @@ title: "Költségobjektumok"
 description: "Ez a cikk tájékoztatást ad a költségobjektumokról és elmagyarázza hogyan halmozódnak föl a költségek és a mennyiségek. Egy költségobjektum egy olyan entitás, amelyhez költségek és mennyiségek halmozódnak föl. A költségobjektum-entitás lehet egy termék vagy egy termékváltozat, úgy mint változatok a stílusra és színre."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventCostOnhandItem
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c818bfac6645b71bcc8b2249534aa80907786651
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -80,7 +80,7 @@ Az alábbi táblázat bemutatja, hogy mi a költségobjektum és mi a készletob
 
 [Nyomonkövetésidimenzió-csoport](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Újdonságok és változások a Microsoft Dynamics AX-ben](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Új vagy módosult elemek](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
 
 [Költségbejegyzések](cost-entries.md)
 

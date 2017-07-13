@@ -3,24 +3,24 @@ title: "Költségkönyvelési elemzés Power BI-tartalom"
 description: "Ez a témakör a Költségkönyvelési elemzés Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ms.search.region: Global
-ms.author: yuyus
+ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ce75a6145bde4a8c33ed785c7d2a60a52416676
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,18 +29,27 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör a **Költségkönyvelési elemzés** Microsoft Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
-Ez a témakör a Költségkönyvelési elemzés Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+## <a name="overview"></a>Áttekintés
 
-<a name="overview"></a>Áttekintés
---------
+A **Költségkönyvelési elemzés** Power BI-tartalom költségellenőrök, illetve olyan személyek részére készült, aki a szervezetük költségellenőrzéséért felelősek. Kulcsfontosságú mérőszámokat foglal magában, például költség, nagyság, illetve költségszorzó és tényleges költség, tervezett költség és rugalmas tervezett költség alapján. A **Költségkönyvelés** modul tranzakciós adatait használja, és összesítő nézetet biztosít a teljes szervezet költségeiről egyetlen kimutatási pénznemben. A vezetők szűrhetik az adatokat költségobjektumok szerint szervezeti egységeik költségkontrollja számára akkor is, ha a szervezet több jogi személyből állhat. 
 
-A **Költségkönyvelési elemzés** Microsoft Power BI-tartalom költségellenőrök, illetve olyan személyek részére készült, aki a szervezetük költségellenőrzéséért felelősek. Kulcsfontosságú mérőszámokat foglal magában, például költség, nagyság, illetve költségszorzó és tényleges költség, tervezett költség és rugalmas tervezett költség alapján. A Microsoft Dynamics 365 for Operations költségkönyvelési tranzakciós adatait használja, és összesítő nézetet biztosít a teljes szervezet költségeiről egyetlen kimutatási pénznemben. A vezetők szűrhetik az adatokat költségobjektumok szerint szervezeti egységeik költségkontrollja számára akkor is, ha a szervezet több jogi személyből állhat. Mvel a **Költségkönyvelési elemzés** Power BI-tartalom kiemeli a tényleges és tervezett költségek közötti eltéréseket, a vezetők értesítésülhetnek a működési egységeiknél fellépő pozitív és negatív tendenciákról. A vezetők költségelem-hierarchiákig vagy egyes költségtényezőkig leásva részletes bepillantást nyerhetnek a költségeltérések megtörténtének módjába, majd eredményes intézkedéseket tehetnek. A **Költségkönyvelési elemzés** Power BI-tartalom segítségével a költségkönyvelők elemezhetik a költségek átfolyását a teljes szervezet költségobjektumain. A Költségkönyveléssel kapcsolatos további tudnivalókért lásd: [Költségkönyvelési honlap](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page). A Költségkönyvelésben hozzáférési szintű biztonság beállításával és ezt a Power BI sorszintű biztonságával kombinálva az összes költségobjektum-tulajdonos számára hozzáférést biztosíthat a **Költségkönyvelési elemzés** Power BI-tartalomhoz. Így a képi megjelenítések összes adatának szűrése a Költségkönyvelésben vezérelt hozzáférési szint alapján történik. Ha többet szeretne megtudni a hozzáférési szintű biztonságról és a sorszintű biztonságról, lásd: [Biztonság beállítása költségkönyvelési tartalomhoz a Power BI-ban](setup-security-cost-accounting-content-pack.md).
+Mvel a **Költségkönyvelési elemzés** tartalom kiemeli a tényleges és tervezett költségek közötti eltéréseket, a vezetők értesítésülhetnek a működési egységeiknél fellépő pozitív és negatív tendenciákról. A vezetők az egyes költségtényezők költségtényező-hierarchiájáig leáshatnak. A vezetők ily módon részletes bepillantást nyerhetnek a költségeltérések megtörténtének módjába, majd eredményes intézkedéseket tehetnek. 
+
+A **Költségkönyvelési elemzés** tartalom segítségével a költségkönyvelők elemezhetik a költségek átfolyását a teljes szervezet költségobjektumain. 
+
+A Költségkönyveléssel kapcsolatos további tudnivalókért lásd: [Költségkönyvelési honlap](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
+
+A Költségkönyvelésben hozzáférési szintű biztonság beállításával és ezt a Power BI sorszintű biztonságával kombinálva az összes költségobjektum-tulajdonos számára hozzáférést biztosíthat a **Költségkönyvelési elemzés** Power BI-tartalomhoz. Így a képi megjelenítések összes adatának szűrése a Költségkönyvelésben vezérelt hozzáférési szint alapján történik. Ha többet szeretne megtudni a hozzáférési szintű biztonságról és a sorszintű biztonságról, lásd: [Biztonság beállítása költségkönyvelési tartalomhoz a Power BI-ban](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Költségkönyvelési elemzés** Power BI-tartalom a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalom letöltésére és a Dynamics 365 for Operations adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). 
+A **Költségkönyvelési elemzés** Power BI-tartalom a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
 
-> MEGJEGYZÉS – A **KB4011327** ezen Power BI-tartalom előfeltétele. A Lifecycle Servicesbe való bejelentkezést követően itt férhet hozzá a tudásbázishoz: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Mindenképp töltse le azt a **Költségkönyvelési elemzés** Power BI-tartalmat, amelyik a Microsoft Dynamics 365 Ön által használt verziójához készült.
+
+> [!NOTE]
+> A KB 4011327 ezen Power BI-tartalom előfeltétele. Az LCS-be való bejelentkezést követően itt férhet hozzá a tudásbázishoz: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Költségkönyvelési elemzés** Power BI-tartalom megjelenítési formáinak áttekintése található.
@@ -64,12 +73,14 @@ A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrik
 |                                  | Tényleges költség Költségobjektum-dimenziótagnév alapján és Költségelem-dimenziótagnév                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-A **Költségkönyvelési elemzés** Power BI-tartalom jelentési oldalainak feltöltésére a Dynamics 365 for Operations adatai szolgálnak. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL-adatbázis. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md). A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
+A következő adatokkal tölthetők ki a jelentések oldalau a **Költségkönyvelési elemzés** Power BI-tartalomban. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md). 
 
-| Entitás                  | Fő összesítő mérték | A Dynamics 365 for Operations adatforrása | Mező     | Leírás                                   |
-|-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Költségkönyvelési tételek | SUM (összeg)               | CAMDATAAggregatedCostEntry                  | Összeg    | Összeg a Költségkönyvelés főkönyvi pénznemében |
-| Statisztikai bejegyzések     | SUM(Nagyság)            | CAMDATAAggregatedStatisctialEntry           | Nagyság |                                               |
+A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
+
+| Entitás                  | Fő összesítő mérték | Adatforrás a Dynamics 365 szolgáltatáshoz      | Mező     | Leírás                                        |
+|-------------------------|---------------------------|-----------------------------------|-----------|----------------------------------------------------|
+| Költségkönyvelési tételek | SUM (összeg)               | CAMDATAAggregatedCostEntry        | Összeg    | Az összeg a Költségkönyvelési főkönyv pénznemében. |
+| Statisztikai bejegyzések     | SUM(Nagyság)            | CAMDATAAggregatedStatisctialEntry | Nagyság |                                                    |
 
 A következő táblázat azt mutatja, hogyan használjuk a fő összesített mértékeket számos számított mérték létrehozására a tartalom adathalmazában.
 
@@ -114,16 +125,4 @@ A következő fő dimenziók szolgálnak szűrőként az összesítő mértékek
 | Pénzügyi naptárak                   | Naptár, Naptár leírása                                                                                       |
 | Pénzügyi évek                       | Naptári év                                                                                                        |
 | Pénzügyi időszakok                     | Naptári év időszak                                                                                                 |
-
-## <a name="additional-resources"></a>További erőforrások
-Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
-
--   [Adatentitások](..\data-entities\data-entities.md)
--   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](configure-power-bi-integration.md)
--   [Biztonság beállítása költségkönyvelési tartalomhoz a Power BI-ban](setup-security-cost-accounting-content-pack.md)
-
-
-
 

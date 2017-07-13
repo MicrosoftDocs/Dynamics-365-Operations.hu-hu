@@ -3,7 +3,7 @@ title: "A gyártási folyamat áttekintése"
 description: "Ez a cikk a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 311debe610b58af7cd986bd33ce9473e41cb3d8b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b73ec05442c8b089435d5813ea93b997c473cbb4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -37,14 +37,14 @@ Ez a cikk a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelé
 
 A termékek legyártása, más néven a termelési életciklus specifikus lépésekben történik, amelyeket a termék előállításához végre kell hajtani. Az életciklus kezdete a termelési rendelés, kötegrendelés vagy a kanban. A vége egy legyártott, kész cikk, amelyik átadható a vevőnek vagy egy másik gyártási fázisnak. Az életciklus minden lépése másféle információkat igényel a feladat végrehajtásához. Amikor az egyes lépések végrehajtása megtörténik, a termelési rendelés vagy kanban műveletben változás látható a gyártási állapotnál. Különböző termékekhez különböző gyártási folyamatok szükségesek.  
 
-A **Gyártásvezérlés** modul egyéb modulokkal van összekötve, például **Termékinformációk kezelése**, **Készletkezelés**, **Főkönyv**, **Raktárkezelés**, **Projekt-könyvelés** és**Szervezeti adminisztráció**. Ez az integráció teremti meg annak az információáramlásnak a feltételeit, amely egy elkészült termék legyártásához szükséges.  
+A **Gyártásvezérlés** modul egyéb modulokkal van összekötve, például **Termékinformációk kezelése**, **Készletkezelés**, **Főkönyv**, **Raktárkezelés**, **Projekt-könyvelés** és **Szervezeti adminisztráció**. Ez az integráció teremti meg annak az információáramlásnak a feltételeit, amely egy elkészült termék legyártásához szükséges.  
 
-A gyártási folyamatot általában a költségkönyvelés és a készletértékelési módszerek befolyásolják, amelyeket egy specifikus gyártási folyamathoz határoztak meg. A Dynamincs 365 for Operations támogatja a tényleges költség (elsőként be, elsőként ki  \[FIFO\]; utolsóként be, utolsóként ki \[LIFO\];; mozgóátlag; és időszakos súlyozott átlag) és standard költség módszereket is. A lean gyártás a visszavezetéses költségelszámolás elv alapján valósítható meg.  
+A gyártási folyamatot általában a költségkönyvelés és a készletértékelési módszerek befolyásolják, amelyeket egy specifikus gyártási folyamathoz határoztak meg. A Finance and Operations támogatja a tényleges költség (elsőként be, elsőként ki \[FIFO\]; utolsóként be, utolsóként ki \[LIFO\]; mozgóátlag; és időszakos súlyozott átlag) és standard költség módszereket is. A lean gyártás a visszavezetéses költségelszámolás elv alapján valósítható meg.  
 
 A kiválasztott költségmérési módszerek meghatározzák a jelentés anyagokkal és forrásfelhasználással kapcsolatos követelményeit a gyártási folyamat során. Általában a tényleges költség módszerekhez pontos jelentés szükséges a feladat szintjén, ugyanakkor az időszakos költségszámítási módszerek lehetővé teszik az elnagyoltabb anyag- és forrásfogyasztás jelentés elkészítését.
 
 ## <a name="mixed-mode-manufacturing"></a>Vegyes módú gyártás
-Különböző termékek és termelési topológiák esetén különböző rendelési típusokat kell alkalmazni. A Dynamics 365 for Operations rendszerben különböző típusú rendeléstípusokat használhat vegyes módban. Más szavakkal minden rendeléstípus megjelenhet a késztermék legyártásának teljes folyamata során.
+Különböző termékek és termelési topológiák esetén különböző rendelési típusokat kell alkalmazni. A Finance and Operations rendszerben különböző típusú rendeléstípusokat használhat vegyes módban. Más szavakkal minden rendeléstípus megjelenhet a késztermék legyártásának teljes folyamata során.
 
 -   **Termelési rendelés** – Ez a klasszikus rendeléstípus, egy adott termék vagy termékvariáns legyártására adott mennyiségben előre meghatározott időpontra. A termelési rendelések anyagjegyzékeken (AJ) és útvonalakon alapulnak.
 -   **Kötegrendelés** – Ez a rendelési típus a feldolgozóiparhoz és a jól elkülöníthető folyamatokhoz használatos, ahol a termelési folyamat a receptúrán alapul, vagy ahol a társtermékek és melléktermékek végtermékek lehetnek, a fő termék helyett vagy annak hozzáadásával. A kötegelt rendelések **Receptúra** típusú anyagjegyzékeket és útvonalakat használnak.

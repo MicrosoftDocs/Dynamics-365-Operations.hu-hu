@@ -3,7 +3,7 @@ title: "Számlakibocsátás határideje"
 description: "Ez a cikk bemutatja, hogy hogyan állíthatja be az Európai Unió (EU) területén belüli vevői és szállítói számlák kibocsátási határidejének kiszámításához használt paramétereket."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10923
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Iceland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 77a498e0d3081cdac39dfe4261b7e8be7b7af9e6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 3fdd9f21964ae6d0c12225feebb6d73e852dc50e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -55,7 +55,7 @@ A **Számlakibocsátási határidő kiszámításának beállítása** lapon ál
 Lehetősége van dátumvezérlési paraméterek beállítására, amelyek segítségével biztosítható, hogy a rendszer a vevői tranzakciókhoz tartozó vevői számlákat és jóváírásokat a szállítás teljesítését követő megadott időszakon belül generálja. Ezeket a paramétereket a **Kinnlevőségek paraméterei** oldal **Számladátumok ellenőrzése** területén találhatja meg.
 
 ## <a name="example"></a>Példa
-A Microsoft Dynamics 365 for Operations rendszert beállíthatja úgy, hogy a számlakibocsátási határidőt EU-n belüli szállításoknál mindig a szállítás végrehajtását követő hónap 15-én számítsa ki – ehhez hozzon létre egy dátumintervallum-kódot és egy számítási szabályt az alábbi beállításokkal.
+A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszert beállíthatja úgy, hogy a számlakibocsátási határidőt EU-n belüli szállításoknál mindig a szállítás végrehajtását követő hónap 15-én számítsa ki – ehhez hozzon létre egy dátumintervallum-kódot és egy számítási szabályt az alábbi beállításokkal.
 
 ### <a name="date-interval-code"></a>Dátumtartomány kódja
 

@@ -3,14 +3,14 @@ title: "Elektronikus jelentéskészítés céljai"
 description: "Konfigurálhatja az egyes Elektronikus jelentés (ER) formátum konfigurációjához tartozó célt és annak kimeneti összetevőit (egy mappa vagy egy fájl). Megfelelő hozzáférési jogokkal rendelkező felhasználók módosíthatják a célbeállításokat futásidőben is. Ez a cikk ismerteti az ER célkezelés, a támogatott célok típusait és a biztonsági megfontolásokat."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5fb008420f82abd7983ee26854f84330705c0c01
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fb2aeee1f38823e7ea96071f773e8448d65ba8ff
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,9 +36,9 @@ Konfigurálhatja az egyes Elektronikus jelentés (ER) formátum konfigurációj�
 Az elektronikus jelentési (ER) formátum konfigurációk általában tartalmaznak legalább egy kimeneti összetevőt: egy fájlt. A konfigurációk általában több, különböző típusú eredménykomponensből állnak (pl. XML, TXT, vagy XLSX), amik egy, vagy több mappában kerülnek csoportosításra. Az ER célkezeléssel előre konfigurálható, hogy mi történjen, mikor a komponenseket futtatja. Alapértelmezés szerint a konfiguráció futtatásakor megjelenik egy párbeszédpanel, aminek segítségével a felhasználó mentheti vagy megnyithatja a fájlt. Ugyanez a viselkedésforma használatos, amikor egy ER konfigurációt importál, de nem konfigurál hozzá meghatározott célt. Miután létrehozta a célt a fő kimeneti komponens részére, a létrehozott cél felülírja az alapértelmezett viselkedést, és a mappa vagy fájl a cél beállításainak megfelelően kerül kiküldésre.
 
 ## <a name="availability-and-general-prerequisites"></a>Elérhetőség és általános előfeltételek
-Az ER célok funkció a Microsoft Dynamics 365 for Operations 7.0-ban (2016. február) nem elérhető. Ezért telepítenie kell a Microsoft Dynamics 365 for Operationst (2016. novemberi kiadás) az ebben a témakörben leírt függvények használatához. Másik lehetőségként telepíthet egyet a következő előfeltételek közül: Azonban ne feledje, hogy ezek az alternatívák az Elektronikus jelentéstétel célok korlátozottabb használatát teszik lehetővé.
+Az ER célok funkció a Microsoft Dynamics AX 7.0-ban (2016. február) nem elérhető. Ezért telepítenie kell a Microsoft Dynamics 365 for Operations 1611-es verzióját (2016. novemberi kiadás) az ebben a témakörben leírt függvények használatához. Másik lehetőségként telepíthet egyet a következő előfeltételek közül: Azonban ne feledje, hogy ezek az alternatívák az Elektronikus jelentéstétel célok korlátozottabb használatát teszik lehetővé.
 
--   Microsoft Dynamics 365 for Operations 7.0.1 alkalmazásverzió (2016. május)
+-   Microsoft Dynamics AX 7.0.1 alkalmazásverzió (2016 Május)
 -   ER célkezelési [alkalmazás gyorsjavítás](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 A célokat csak importált ER konfigurációkhoz, és csak az **Elektronikus jelentéskonfigurációk** oldalon elérhető formátumokban állíthatja be.
@@ -61,7 +61,7 @@ Célok széles választéka támogatott. Minden típust egyszerre kapcsolhat ki 
 
 ### <a name="email-destination"></a>E-mail célja
 
-Állítsa a **Bekapcsolva**opciót **Igen** állapotra egy eredményfájl email-ben történő küldéséhez. Ezen beállítás engedélyezése után szerkesztheti az e-mail címzettjeit, tárgyát és szövegét. Beállíthat állandó szöveget az e-mail tárgyaként és szövegeként, illetve használhat ER-képleteket az e-mail szövegének dinamikus létrehozására. Elektronikus jelentéstételhez e-mail-címeket két módon konfigurálhat. A konfiguráció ugyanúgy hajtható végre, mint a Dynamics 365 for Operations Nyomtatás kezelése funkciójánál. Azt is megteheti, hogy az elektronikus jelentéstételi konfigurációra mutató közvetlen hivatkozással, képlet használatával old fel egy e-mail-címet.
+Állítsa a **Bekapcsolva** opciót **Igen** állapotra egy eredményfájl email-ben történő küldéséhez. Ezen beállítás engedélyezése után szerkesztheti az e-mail címzettjeit, tárgyát és szövegét. Beállíthat állandó szöveget az e-mail tárgyaként és szövegeként, illetve használhat ER-képleteket az e-mail szövegének dinamikus létrehozására. Elektronikus jelentéstételhez e-mail-címeket két módon konfigurálhat. A konfiguráció ugyanúgy hajtható végre, mint a Finance and Operations Nyomtatás kezelése funkciójánál. Azt is megteheti, hogy az elektronikus jelentéstételi konfigurációra mutató közvetlen hivatkozással, képlet használatával old fel egy e-mail-címet.
 
 ### <a name="email-address-types"></a>E-mail-címek típusai
 
@@ -89,15 +89,15 @@ Használja ezt az e-mail-típust, ha a használt konfiguráció tartalmaz egy e-
 
 [![E-mail-cím-adatforrás hozzárendelése e-mail-célhelyhez](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
 
-**Megjegyzés:** Az Egyszerű üzenetátviteli protokoll (Simple Mail Transfer Protocol - SMTP) kiszolgálónak konfiguráltnak és elérhetőnek kell lennie. Az SMTP-kiszolgálót megadhatja a Dynamics 365 for Operations rendszerben itt: **Rendszeradminisztráció** &gt; **Beállítások** &gt; **E-mail** &gt; **E-mail-paraméterek**.
+**Megjegyzés:** Az Egyszerű üzenetátviteli protokoll (Simple Mail Transfer Protocol - SMTP) kiszolgálónak konfiguráltnak és elérhetőnek kell lennie. Az SMTP-kiszolgálót megadhatja a Finance and Operations rendszerben itt: **Rendszeradminisztráció** &gt; **Beállítások** &gt; **E-mail** &gt; **E-mail-paraméterek**.
 
 ### <a name="archive-destination"></a>Archív cél
 
-Ezen opcióval eredmény küldhető egy Microsoft SharePoint vagy Microsoft Azure Storage mappába. A kiválasztott dokumentumtípus által meghatározott célra történő eredményküldéshez állítsa a **Bekapcsolva** opciót **Igen**állapotba. Csak azok a dokumentumtípusok választhatók ki, amelyeknél a csoport beállítása **File**. A dokumentumtípusokat itt határozhatja meg: **Szervezetadminisztráció** &gt; **Dokumentumkezelés** &gt; **Dokumentumtípusok**. Az ER célok konfigurálásának folyamata megegyezik a dokumentumkezelő rendszer konfigurálásával.
+Ezen opcióval eredmény küldhető egy Microsoft SharePoint vagy Microsoft Azure Storage mappába. A kiválasztott dokumentumtípus által meghatározott célra történő eredményküldéshez állítsa a **Bekapcsolva** opciót **Igen** állapotba. Csak azok a dokumentumtípusok választhatók ki, amelyeknél a csoport beállítása **File**. A dokumentumtípusokat itt határozhatja meg: **Szervezetadminisztráció** &gt; **Dokumentumkezelés** &gt; **Dokumentumtípusok**. Az ER célok konfigurálásának folyamata megegyezik a dokumentumkezelő rendszer konfigurálásával.
 
 [![Dokumentumtípusok lapja](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
-A hely határozza meg, hogy a file hol kerül tárolásra. Az **Archívum** cél engedélyezése után a konfiguráció végrehajtásának eredménye elmenthető a Feladatarchívumba. Az eredményeket a **Szervezeti adminisztráció** &gt; **Elektronikus jelentés** &gt; **Elektronikus jelentéskészítési archivált feladatok** elemnél tekintheti meg. **Megjegyzés:** a Feladatarchívumhoz dokumentumtípus a Dynamics 365 for Operationsben a következő helyen választható ki: **Szervezeti adminisztráció** &gt; **Munkaterületek** &gt; **Elektronikus jelentés** &gt; **Elektronikus jelentéskészítés paraméterei**.
+A hely határozza meg, hogy a file hol kerül tárolásra. Az **Archívum** cél engedélyezése után a konfiguráció végrehajtásának eredménye elmenthető a Feladatarchívumba. Az eredményeket a **Szervezeti adminisztráció** &gt; **Elektronikus jelentés** &gt; **Elektronikus jelentéskészítési archivált feladatok** elemnél tekintheti meg. **Megjegyzés:** a Feladatarchívumhoz dokumentumtípus a Finance and Operationsben a következő helyen választható ki: **Szervezeti adminisztráció** &gt; **Munkaterületek** &gt; **Elektronikus jelentés** &gt; **Elektronikus jelentéskészítés paraméterei**.
 
 #### <a name="sharepoint"></a>SharePoint
 
@@ -119,7 +119,7 @@ Ha az **Engedélyezve** elem **Igen** értékre van állítva, létrejön a kime
 
 ### <a name="power-bi-destination"></a>Power BI-célhely
 
-Állítsa az **Engedélyezve** elemet **Igen** értékre ahhoz, hogy az elektronikus jelentési (ER) konfiguráció adatokat vigyen át a Dynamics 365 for Operations alkalmazásból a Microsoft Power BI szolgáltatásokba. Az átvitt fájlok tárolása egy Microsoft SharePoint Server példányon történik, amelyet ennek a célnak megfelelően konfigurálni kell. További tájékoztatásért lásd: [Használja az elektronikus jelentési konfigurációt ahhoz, hogy a Dynamics 365 for Operations adatait továbbítsa a Power BI-nak](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Ötlet:** Az alapértelmezett viselkedés (vagyis a konfiguráció párbeszédpanelének) felülbírálásához létrehozhat egy célhivatkozást és fájlcélt a fő eredménykomponens részére, majd kikapcsolhatja az összes célt.
+Állítsa az **Engedélyezve** elemet **Igen** értékre ahhoz, hogy az elektronikus jelentési (ER) konfiguráció adatokat vigyen át a Finance and Operations alkalmazásból a Microsoft Power BI szolgáltatásokba. Az átvitt fájlok tárolása egy Microsoft SharePoint Server példányon történik, amelyet ennek a célnak megfelelően konfigurálni kell. További tájékoztatásért lásd: [Használja az elektronikus jelentési konfigurációt ahhoz, hogy a Finance and Operations adatait továbbítsa a Power BI-nak](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Ötlet:** Az alapértelmezett viselkedés (vagyis a konfiguráció párbeszédpanelének) felülbírálásához létrehozhat egy célhivatkozást és fájlcélt a fő eredménykomponens részére, majd kikapcsolhatja az összes célt.
 
 ## <a name="security-considerations"></a>Biztonsági megfontolások
 Az ER célokhoz kétféle jog és kötelezettség létezik. Az egyik típus felügyeli azon célok összességének karbantartását, melyek egy jogi személy számára lettek konfigurálva (vagyis vezérli az **Elektronikus jelentés céljai** oldalhoz való hozzáférést). A másik típus szabályozza az alkalmazás felhasználóját abban, hogy a futtatás során felülírja az ER-fejlesztők vagy ER-funkciótanácsadók által konfigurált célbeállításokat.

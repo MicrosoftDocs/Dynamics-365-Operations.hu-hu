@@ -1,16 +1,16 @@
 ---
 title: "Gyártás területén végzett alvállalkozói munka kezelése"
-description: "Ez a témakör bemutatja, hogyan kezeli a Microsoft Dynamics 365 for Operations az alvállalkozói műveleteket. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva."
+description: "Ez a témakör bemutatja, hogyan kezeli a Microsoft Dynamics 365 for Finance and Operations az alvállalkozói műveleteket. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 582807f9f416d3e6e73226dfd2e22af2d6331acd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0e1368d3f637143fd47c3772c811257e8472cc74
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör bemutatja, hogyan kezeli a Microsoft Dynamics 365 for Operations az alvállalkozói műveleteket. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
+Ez a témakör bemutatja, hogyan kezeli a Microsoft Dynamics 365 for Finance and Operations az alvállalkozói műveleteket. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
 
 A [termelési folyamatokban](production-process-overview.md) munkát azon erőforrások végezhetnek, amelyek tulajdonosa vagy kezelője egy szállító. Általában az olyan időszakos kiemelkedő kereslet kielégítésére használnak szállító típusú erőforrásokat, amely meghaladja a vállalat saját forrásainak rendelkezésre álló kapacitásait. A szállító emellett konkrét [erőforrásképességeket](resource-capabilities.md), illetve alacsonyabb árú erőforrásokat is kínálhat.  
 
@@ -42,7 +42,7 @@ Alvállalkozói műveletek vagy tevékenységek használata esetén ezek a műve
 
 Belső erőforrásoknál adott időtartamhoz általában fix költségszorzó tartozik. Ezzel szemben alvállalkozói erőforrásoknál a költség a kapcsolódó szolgáltatás beszerzési árán alapul. A szolgáltatás meghatározás szerint egy másik terméket jelent, melynek célja a beszerzési és vásárlási folyamatok előmozdítása egy adott alvállalkozói művelet kapcsán.  
 
-Jelenleg a Microsoft Dynamics 365 for Operationsben nincs kifejezett félkésztermék-fogalom. Olyan termelési rendelésnél, amely egynél több műveletet igényel annak érdekében, hogy a nyersanyagokat késztermékekké alakítsa át, a késztermék csak az utolsó műveletet során kerül vissza a készletbe. A korábbi műveletek során előállított félkész termékek elszámolása befejezetlen termelés formájában történik, ezeket viszont nem könyveljük és nem követjük a készletben. Bár az útvonalak és anyagjegyzékek (AJ) feloszthatók több kisebb egységre, ez a megközelítés növeli a kezelendő termékek, anyagjegyzékek és útvonalak számát.  
+Jelenleg a Microsoft Dynamics 365 for Finance and Operationsben nincs kifejezett félkésztermék-fogalom. Olyan termelési rendelésnél, amely egynél több műveletet igényel annak érdekében, hogy a nyersanyagokat késztermékekké alakítsa át, a késztermék csak az utolsó műveletet során kerül vissza a készletbe. A korábbi műveletek során előállított félkész termékek elszámolása befejezetlen termelés formájában történik, ezeket viszont nem könyveljük és nem követjük a készletben. Bár az útvonalak és anyagjegyzékek (AJ) feloszthatók több kisebb egységre, ez a megközelítés növeli a kezelendő termékek, anyagjegyzékek és útvonalak számát.  
 
 A gyártási műveletek során igénybe vett alvállalkozói munka modellezésének két módja van. Ezek a módszerek az alvállalkozásba adási folyamatot, a félkész termékek megjelenítését a folyamatban, valamint a költségellenőrzést eltérő módon modellezik.
 

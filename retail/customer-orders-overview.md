@@ -3,25 +3,27 @@ title: "Vevői rendelések – áttekintés"
 description: "Ez a témakör a vevői rendelések a Retail Modern POS (MPOS) modulban történő kezelését ismerteti. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e96579437ab59e99268263a51fc589eaacb98cc1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 89e79c7227e05eec539d9bb142b8f41de092f01b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -46,8 +48,8 @@ A kiskereskedők a készlethiány által okozott elmaradt értékesítések mini
 
 -   **Letét alapértelmezett százalékos értéke** – annak az összegnek a megadása, amelyet a vevőnek ki kell fizetnie letétként, mielőtt a megrendelést meg lehet erősíteni. Az alapértelmezett letét kiszámítása a rendelés százalékának függvényeként történik. Jogosultságoktól függően előfordulhat, hogy egy bolti dolgozó felülbírálhatja az összeget a **Letét felülbírálása** funkcióval.
 -   **Érvénytelenítési díj százalékos értéke** – ha vevői rendelés visszavonásakor díjfizetés szükséges, úgy adja meg ezen díj összegét.
--   **Érvénytelenítési díj kódja** – ha vevői rendelés visszavonásakor díjfizetés szükséges, ezt a díjat egy díjkód tükrözi az értékesítési rendelésben a Microsoft Dynamics AX rendszerben. E paraméter segítségével határozza meg a lemondási díj kódját.
--   **Szállítási költség kódjának** – a kiskereskedők külön díjat számolhatnak fel az áru szállításáért a vevőnek. E szállítási költség összege költségkód alatt megjelenik az értékesítési rendelésen a Dynamics AX-ben. Használja ezt a paramétert a szállítási költségkód hozzárendeléséhez a szállítási költségekhez a vevői rendelésen.
+-   **Érvénytelenítési díj kódja** – ha vevői rendelés visszavonásakor díjfizetés szükséges, ezt a díjat egy díjkód tükrözi az értékesítési rendelésben. E paraméter segítségével határozza meg a lemondási díj kódját.
+-   **Szállítási költség kódjának** – a kiskereskedők külön díjat számolhatnak fel az áru szállításáért a vevőnek. E szállítási költség összege költségkód alatt megjelenik az értékesítési rendelésen. Használja ezt a paramétert a szállítási költségkód hozzárendeléséhez a szállítási költségekhez a vevői rendelésen.
 -   **Szállítási költségek visszatérítése** – adja meg, hogy a vevői rendeléshez kapcsolódó szállítási költségek visszatéríthetők-e.
 -   **Maximális összeg jóváhagyás nélkül** – ha a szállítási költségek visszatéríthetők, adja meg a visszárurendeléseken keresztül biztosítható maximális szállításiköltség-visszatérítés összegét. Ha ezt az összeget túllépik, a vezető részéről felülbírálás szükséges a visszatérítés folytatásához. Az alábbi esetek kezeléséhez a szállítási költségek visszatérítése túllépheti az eredetileg kifizetett összeget:
     -   A költségek alkalmazására az értékesítési rendelés fejlécének szintjén kerül sor, és amikor egy termékkör bizonyos mennyiségét visszaküldik, a szállítási költségek a termékekhez engedélyezett maximális visszatérítése és a mennyiség nem határozható meg úgy, hogy az minden kiskereskedelmi vevő számára megfelelő legyen.
@@ -90,10 +92,10 @@ Vevői rendelések pénztári (POS) kliensből szinkron vagy aszinkron üzemmód
 
 ### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Vevői rendelések aszinkron módban történő létrehozásának engedélyezése
 
-1.  A Dynamics AX-ben kattintson a **Kiskereskedelem és kereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztárbeállítás** &gt; **Pénztárprofil** &gt; **Funkcióprofilok** elemre.
+1.  Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztárbeállítás** &gt; **Pénztárprofil** &gt; **Funkcióprofilok** elemre.
 2.  Az **Általános** gyorslapon állítsa a **Vevői rendelés létrehozása aszinkron módban** lehetőséget **Igen** értékre.
 
-Ha a **Vevői rendelés létrehozása aszinkron módban** beállítása **Igen**, a vevői rendelések mindig aszinkron módban jönnek létre, akkor is, ha a Retail Transaction Service (RTS) elérhető. Ha ennél a beállításnál **Nem** értéket ad meg, a vevői rendelések mindig szinkron módban jönnek létre az RTS segítségével. Vevői rendelések aszinkron módban történő létrehozásakor ezeket a rendszer lekéri és lekérési (P) feladatként beilleszti a Dynamics AX-be. A megfelelő vevői rendelések a **Rendelések szinkronizálása** manuális futtatásakor vagy kötegelt feldolgozás révén jönnek létre a Dynamics AX-ben.
+Ha a **Vevői rendelés létrehozása aszinkron módban** beállítása **Igen**, a vevői rendelések mindig aszinkron módban jönnek létre, akkor is, ha a Retail Transaction Service (RTS) elérhető. Ha ennél a beállításnál **Nem** értéket ad meg, a vevői rendelések mindig szinkron módban jönnek létre az RTS segítségével. Vevői rendelések aszinkron módban történő létrehozásakor ezeket a rendszer lekéri és kiskereskedelmi lekérési (P) feladatként beilleszti. A megfelelő vevői rendelések a **Rendelések szinkronizálása** manuális futtatásakor vagy kötegelt feldolgozás révén jönnek létre a Kiskereskedelem modulban.
 
 <a name="see-also"></a>Lásd még
 --------

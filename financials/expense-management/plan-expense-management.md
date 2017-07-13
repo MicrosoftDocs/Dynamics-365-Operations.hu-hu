@@ -1,27 +1,28 @@
 ---
 title: "Költségkezelés konfigurálása"
-description: "Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a Költséggazdálkodás Microsoft Dynamics AX rendszerben történő konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket. A Költséggazdálkodás területén többek között fizetési módokkal, utazásigénylésekkel, költségjelentésekkel és irányelvekkel kapcsolatos információkat tárolhat."
-author: kfend
+description: "Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a Költséggazdálkodás Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben történő konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket. A Költséggazdálkodás területén többek között fizetési módokkal, utazásigénylésekkel, költségjelentésekkel és irányelvekkel kapcsolatos információkat tárolhat."
+author: KimANelson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPaymethod, TrvPerDiems
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23001
 ms.assetid: aa3fd14d-7e94-4603-985f-ca26d6f860ea
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 62bef78c143f7ad83e78982dbecb1c9e4542187d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: edd3d8ca760c1453ae7cf8d5ff2fdfdedbb022c4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a Költséggazdálkodás Microsoft Dynamics AX rendszerben történő konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket. A Költséggazdálkodás területén többek között fizetési módokkal, utazásigénylésekkel, költségjelentésekkel és irányelvekkel kapcsolatos információkat tárolhat. 
+Ez a cikk ismerteti azokat a szempontokat, amelyeket a tervezési folyamat során – a Költséggazdálkodás Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben történő konfigurálása előtt – figyelembe kell venni, valamint az ekkor meghozandó döntéseket. A Költséggazdálkodás területén többek között fizetési módokkal, utazásigénylésekkel, költségjelentésekkel és irányelvekkel kapcsolatos információkat tárolhat. 
 
 Mivel a Költséggazdálkodási konfiguráció tervezése során meghozott számos döntés az Ön szervezetének hierarchiáján, illetve annak pénzügyi struktúráján alapszik, így szükséges átolvasnia ezen területek tervezési dokumentumait is.
 

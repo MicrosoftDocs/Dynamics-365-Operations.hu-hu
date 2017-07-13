@@ -1,16 +1,16 @@
 ---
 title: "Pénzügyi jelentések megtekintése és tervezése"
-description: "Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Operationsben."
+description: "Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Finance and Operationsben."
 author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1c0787327830d2cdff9e8a48798165dc83493393
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Operationsben. A pénzügyi jelentések egyrészt a Dynamics 365 for Operations rendszeren belüli megtekintésből, másrészt az egy kattintással használható jelentéstervezőből állnak, amellyel pénzügyi jelentéseket hozhat létre és szerkeszthet.  
+Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Finance and Operationsben. A pénzügyi jelentések egyrészt a Dynamics 365 for Finance and Operations rendszeren belüli megtekintésből, másrészt az egy kattintással használható jelentéstervezőből állnak, amellyel pénzügyi jelentéseket hozhat létre és szerkeszthet.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>1. Gyakorlat: Alapértelmezett pénzügyi jelentés létrehozása és böngészése
 -----------------------------------------------------------
@@ -59,7 +59,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog létrehozni és b
 13. Válassza ki a **Jelentés beállítások** opciót.
 14. Válassza ki a **Dimenzió szűrő hozzáadása** opciót és válassza az **Üzleti egység** lehetőséget.
 15. Írja be a 001 értéket a mezőbe, majd kattintson az **OK** gombra. A jelentés most már kizárólag a 001 Üzleti egység adatait jeleníti meg. Ez egy testreszabott nézete a jelentésnek, és mások számára nem megtekinthető.
-16. Zárja be a szűrt jelentést. A pénzügyi jelentések bármilyen pénznemben megjeleníthetők, amelyet hozzáadtak a Dynamics 365 for Operations rendszerhez.
+16. Zárja be a szűrt jelentést. A pénzügyi jelentések bármilyen pénznemben megjeleníthetők, amelyet hozzáadtak a Finance and Operations rendszerhez.
 17. Válassza ki a **Pénznem** opciót, majd válassza az **EUR** lehetőséget. A jelentés most euróban jelenik meg. Most bármilyen, a jelentéstervben szereplő pénznemszimbólumok vagy pénznemkódok az alkalmazott pénznemben jelennek meg. Ha egy pénznemre nincs megadva pénznemszimbólum, a pénznem szimbóluma nem jelenik meg.
 18. Zárja be a **Főkönyvi adatok** jelentést.
 19. Zárja be a **Jelentéstervező** ablakot.
@@ -70,7 +70,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fri
 1.  Ugrás a **Pénzügyi jelentések** pontra a Lekérdezések és jelentések rész alatt a Főkönyvben.
 2.  Válassza ki a **Összegző főkönyvi kivonat – Alapértelmezett** jelentés sorát.
 3.  Válassza ki a **Szerkesztés** opciót. Az **Összegző főkönyvi kivonat – Alapértelmezett** a jelentéstervezőben nyílik meg.
-4.  Válassza a **Fájl** menüpontot, majd a **Mentés másként** opciót és adja a jelentésnek a Részletes főkönyvi kivonat attribútumokkal nevet. Megjegyzés: Bármikor, ha új jelentés kerül létrehozásra a jelentéstervezőben, a pénzügyi jelentések lista frissítésre kerül a Dynamics 365 for Operations rendszerben.
+4.  Válassza a **Fájl** menüpontot, majd a **Mentés másként** opciót és adja a jelentésnek a Részletes főkönyvi kivonat attribútumokkal nevet. Megjegyzés: Bármikor, ha új jelentés kerül létrehozásra a jelentéstervezőben, a pénzügyi jelentések lista frissítésre kerül a Finance and Operations rendszerben.
 5.  A jelentésdefinícióból válassza ki a sordefiníció ikont a **Főkönyvi kivonat – Alapértelmezett sordefiníció** megnyitásához.
 6.  Mentse a sordefiníciót **Részletes főkönyvi kivonat attribútumokkal** néven.
 7.  A kurzort az 50. sorra helyezve válassza a **Szerkesztés** opciót, majd a **Sorok beszúrása dimenziókból** lehetőséget. A Sorok beszúrása dimenziókból segítségével kiválaszthatja, milyen dimenziókat szeretne a sordefiníciójában. Ebben a gyakorlatban létrehozzuk a sordefiníciót a Fő számla használatával.
@@ -97,7 +97,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fri
 22. A **Részletes főkönyvi kivonat attribútumokkal** jelentésdefinícióból válassza a Részletes főkönyvi kivonat attribútumokkal lehetőséget mind a sordefinícióra, mind az oszlopdefinícióra.
 23. Módosítsa az alapévet a következőre: **2012.**
 24. **Mentse** a jelentésdefiníciót és válassza a **Létrehozás** lehetőséget. A jelentés létrehozásának és megnyitásának befejeződése után böngészheti a jelentést, ahogyan az előző gyakorlatban tette. Részletezzen ki különböző számlákat annak megtekintésére, hogy hogyan jelennek meg a további attribútumok.
-25. Zárja be a **Részletes főkönyvi kivonat attribútumokkal**jelentést.
+25. Zárja be a **Részletes főkönyvi kivonat attribútumokkal** jelentést.
 26. Zárja be a **Jelentéstervező** ablakot.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>3. Gyakorlat: Többdimenziós jelentés létrehozása jelentési fa segítségével
@@ -122,7 +122,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Jel
 17. Ismételje meg a 11. lépést.
 18. A B és C oszlopokba írja a következőt: **Kiskereskedelem**. A Marketing, Műveletek és Kiskereskedelem egységek az aktuális összesítő egységekkel azonos szinten jelennek meg. Az új egységek kerülnek rendezésre ezután. A jelentési egységek a jobb gombos lehetőségekkel kerülnek rendezésre; előléptetéssel és visszaléptetéssel, vagy húzással.
 19. Ellenőrizze, hogy a hármas egység, a **Kereskedelmi börzék** aktív, és kattintson a jobb gombbal.
-20. Válassza ki a **Jelentési egység hátrasorolása** opciót. Figyelje meg, hogy az egység ettől kezdve a **Marketing**gyermekeként jelenik meg.
+20. Válassza ki a **Jelentési egység hátrasorolása** opciót. Figyelje meg, hogy az egység ettől kezdve a **Marketing** gyermekeként jelenik meg.
 21. Kattintson a négyes egységre, a **Marketing** elemre és a **Kampány** elemre, és kattintson a jobb gombbal.
 22. Válassza ki a **Jelentési egység hátrasorolása** opciót.
 23. Kattintson a **Szolgáltatási műveletek** elemre a grafikus kijelzőn. Nyomja meg és tartsa lenyomva az egér bal oldali gombját amíg felhúzza az egységet a **Műveletek** elemhez. Engedje fel a bal egérgombot az egységnek a Műveletek összesítőjébe való beleejtéséhez. Ismételje meg a **Termelés, Minőség-ellenőrzés, Beszerzés és Felügyelet** elemre.
@@ -183,8 +183,8 @@ A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egym
 18. **Mentés** a módosításokat, és **készítése**. A jelentés létrehozásának és megnyitásának befejeződése után böngészhet a jelentésben.
 
 ## <a name="additional-resources"></a>További erőforrások
-[Pénzügyi jelentések](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[Pénzügyi jelentések megtekintése](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+[Pénzügyi jelentések](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[Pénzügyi jelentések megtekintése](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Dynamics pénzügyi jelentési webnapló](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

@@ -3,13 +3,13 @@ title: "Értékesítés és marketing"
 description: "Az értékesítés és marketing segítségével beszerzése, tárolhatók és használhatók a különböző típusú adatokat az értékesítési folyamat. Ezt az adatot tartalmaz, az eredeti értékesítési kezdeményezés jövőbeli intézkedést és kiegészítő értékesítési."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 25ea6e64453b22d664dd65a1f1bb18e3a1997bc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dddcc764bb11540b8207350c463d1adb2533e1c0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -43,7 +43,7 @@ Az értékesítés és marketing folyamán a potenciális ügyfelekkel való kap
 
 ### <a name="campaigns"></a>Kampányok
 
-A kampányok az Ön által részvételre kiválasztott potenciális vevőkhöz, érdeklődőkhöz, lehetőségekhez, valamint vevőkhöz tartozó kapcsolatokat célozzák. A Microsoft Dynamics 365 for Operations rendszerben a vevői potenciál maximalizálása érdekében többféle kampányt is létrehozhat, többek között telemarketing-, levél- és e-mail-kampányokat. A kampány előrehaladása során, pozitív visszajelzések beérkezése esetén megkezdheti az értékesítési folyamatot a pozitív választ adó ügyfelekkel.
+A kampányok az Ön által részvételre kiválasztott potenciális vevőkhöz, érdeklődőkhöz, lehetőségekhez, valamint vevőkhöz tartozó kapcsolatokat célozzák. A Microsoft Dynamics 365 for Finance and Operations rendszerben a vevői potenciál maximalizálása érdekében többféle kampányt is létrehozhat, többek között telemarketing-, levél- és e-mail-kampányokat. A kampány előrehaladása során, pozitív visszajelzések beérkezése esetén megkezdheti az értékesítési folyamatot a pozitív választ adó ügyfelekkel.
 
 ## <a name="sales"></a>Értékesítés
 Az értékesítési funkció segítségével árajánlatokat, új és meglévő ügyfeleknek történő értéknövelt és párhuzamos értékesítéseket, továbbá értékesítési rendeléseket hozhat létre, valamint értékesítési számlákat készíthet a vevők számára. A következő folyamatábra az értékesítéshez kapcsolódó üzleti folyamatokat ábrázolja. [![Értékesítéshez kapcsolódó üzleti folyamatok](./media/sales01.jpg)](./media/sales01.jpg)

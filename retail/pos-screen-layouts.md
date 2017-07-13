@@ -1,39 +1,40 @@
 ---
 title: "Képernyő elrendezésének beállítása a pénztár esetében"
-description: "Ez a témakör a Microsoft Dynamics 365 for Operations - Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat."
+description: "Ez a témakör a Microsoft Dynamics 365 for Operations for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7dee20166ea89b56523e3ef38e66de53d6e4a621
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 9f7f46c1bae5bac6eefa0b8c70b079cab76aa8b6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="configure-screen-layouts-for-pos"></a>Képernyő elrendezésének beállítása a pénztár esetében
+# <a name="configure-screen-layouts-for-pos"></a>Pénztár képernyő-elrendezésének beállítása
 
 [!include[banner](includes/banner.md)]
 
 
-Ez a témakör a Microsoft Dynamics 365 for Operations - Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
+Ez a témakör a Microsoft Dynamics 365 for Operations for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 
-A Microsoft Dynamics 365 for Operations - Retail pénztár (POS) felhasználói felülete vizuális profilok és képernyő-elrendezések kombinációjával konfigurálhat, amelyek üzletekhez, nyilvántartásokhoz és/vagy felhasználókhoz rendelhetők.
+A Microsoft Dynamics 365 for Operations for Retail pénztár (POS) felhasználói felülete vizuális profilok és képernyő-elrendezések kombinációjával konfigurálhat, amelyek üzletekhez, nyilvántartásokhoz és/vagy felhasználókhoz rendelhetők.
 
 ## <a name="visual-profile"></a>Vizuális profil
 A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás-specifikus és a felhasználók számára közös vizuális elemek megadására szolgálnak. Bármelyik felhasználónak, aki bejelentkezik a nyilvántartásba, azonos lesz a téma, a színek és a képek. 
@@ -46,7 +47,7 @@ A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás
 
 **Kiemelés színe** - A kiemelőszínt a rendszer használja a pénztárban mindenütt bizonyos vizuális elemek megkülönböztetésére és kiemelésére: ilyenek a csempék, a parancsgombok vagy a hivatkozások. Ezek az elemek általában interaktívak.
 
-**Fejléc színe** - A fejléc színe lehetővé teszi, hogy a felhasználó konfigurálja az oldal fejlécének színét, a kiskereskedő védjegyigényeinek megfelelően. Ez a funkció csak a Dynamics 365 for Operations 1611-es verziójában érhető el.
+**Fejléc színe** - A fejléc színe lehetővé teszi, hogy a felhasználó konfigurálja az oldal fejlécének színét, a kiskereskedő védjegyigényeinek megfelelően. Ez a funkció csak a Dynamics 365 for Operations for Retail 1611-es verziójában érhető el.
 
 **Bejelentkezési hátterek** - A felhasználók megadhatják a bejelentkezési képernyő háttérképét. A háttérkép méretének a lehető legkisebbnek kell lennie, mivel a nagy fájlok tárolása és betöltése hatással lehet az alkalmazás viselkedésére és teljesítményére.
 
@@ -67,7 +68,7 @@ Képernyő-elrendezések üzlet-, nyilvántartás- vagy felhasználószinten ren
 
 ### <a name="layout-sizes"></a>Elrendezési méretek
 
-Ez a funkció csak a Dynamics 365 for Operations 1611-es verziójára vonatkozik. Mivel sok esetben a képernyő-elrendezések több képernyőméreten és felbontáson is használhatók, a felhasználók mindegyikhez beállíthatják saját elrendezésüket és a tartalmukat. A pénztáralkalmazás az indítása alkalmával automatikusan kiválasztja a legközelebbi elrendezésméretet az eszközhöz. A képernyő-elrendezés emellett konfigurációkat is tartalmazhat a teljes-és kompakt eszközök számára. Ez a beállítás lehetővé teszi a felhasználók hozzárendelését egyetlen képernyő-elrendezéshez, amely a különböző méretű és formátumok mindegyikén működik az üzletben. 
+Ez a funkció csak a Dynamics 365 for Operations for Retail 1611-es verziójára vonatkozik. Mivel sok esetben a képernyő-elrendezések több képernyőméreten és felbontáson is használhatók, a felhasználók mindegyikhez beállíthatják saját elrendezésüket és a tartalmukat. A pénztáralkalmazás az indítása alkalmával automatikusan kiválasztja a legközelebbi elrendezésméretet az eszközhöz. A képernyő-elrendezés emellett konfigurációkat is tartalmazhat a teljes-és kompakt eszközök számára. Ez a beállítás lehetővé teszi a felhasználók hozzárendelését egyetlen képernyő-elrendezéshez, amely a különböző méretű és formátumok mindegyikén működik az üzletben. 
 
 **Modern POS - teljes** - A teljes elrendezések általában a nagyobb kijelzők esetén használhatók a legjobban, például a számítógép-monitorokon vagy a táblagépeken. A felhasználók kiválaszthatják, melyik felhasználóifelület-elemeket tartalmazza a rendszer, meghatározhatják a méretüket és az elhelyezkedésüket, és beállíthatják a részletes tulajdonságaikat. A teljes elrendezések az álló és a fekvő konfigurációkat egyaránt támogatják. 
 
@@ -77,11 +78,11 @@ Ez a funkció csak a Dynamics 365 for Operations 1611-es verziójára vonatkozik
 
 Minden elrendezésméretet a képernyő-elrendezésen belül a képernyő-elrendezés tervező segítségével kell konfigurálni. A tervező segítségével a felhasználók megadhatják és konfigurálhatják a tranzakció képernyő felhasználói felületének elemeit. A képernyő-elrendezés tervezője a ClickOnce megoldást használja az alkalmazás legújabb verziójának letöltésére, telepítésére és elindítására minden alkalommal, amikor a felhasználó megnyitja. Ellenőrizze a böngészőprogrammal szembeni követelményeket a ClickOnce használatához – egyes böngészőkben, például Chrome, bővítmények szükségesek. 
 
-**Számbillentyűzet** - A számbillentyűzet a fő felhasználói beviteli mód a pénztár tranzakciók képernyőjén. Beállítható úgy, hogy a teljes, képernyőn megjelenő számbillentyűzetet mutassa, ami ideális az érintőképernyőkhöz, vagy csak a beviteli mező, amely a fizikai billentyűzettel használható. A számbillentyűzet-beállítások csak a teljes elrendezésben állnak rendelkezésre. A Dynamics 365 for Operations 1611-es verziójában a kompakt elrendezések mindig rendelkeznek a teljes számbillentyűzettel a tranzakciók képernyőn.
+**Számbillentyűzet** - A számbillentyűzet a fő felhasználói beviteli mód a pénztár tranzakciók képernyőjén. Beállítható úgy, hogy a teljes, képernyőn megjelenő számbillentyűzetet mutassa, ami ideális az érintőképernyőkhöz, vagy csak a beviteli mező, amely a fizikai billentyűzettel használható. A számbillentyűzet-beállítások csak a teljes elrendezésben állnak rendelkezésre. A Dynamics 365 for Operations for Retail 1611-es verziójában a kompakt elrendezések mindig rendelkeznek a teljes számbillentyűzettel a tranzakciók képernyőn.
 
-**Összegek panel** - Az összegek panel beállítható egy vagy két oszloposként, hogy olyan mezők legyenek megjeleníthetők, mint a sorok száma, az engedmény összege, a díjak, a részösszeg és az adó. A Dynamics 365 for Operations 1611-es verziójában a kompakt elrendezések csak egyetlen összegek oszlop használatát támogatják. 
+**Összegek panel** - Az összegek panel beállítható egy vagy két oszloposként, hogy olyan mezők legyenek megjeleníthetők, mint a sorok száma, az engedmény összege, a díjak, a részösszeg és az adó. A Dynamics 365 for Operations for Retail 1611-es verziójában a kompakt elrendezések csak egyetlen összegek oszlop használatát támogatják. 
 
-**Bevételezés** - A bevételezés panel tartalmazza az eladási sorokat, a fizetési sorokat és pénztárban feldolgozott termékek és szolgáltatások szállítási adatait. A felhasználók megadhatják az oszlopok szélességét és elhelyezését. A Dynamics 365 for Operations 1611-es verziójában, a kompakt elrendezésekben, további információk is konfigurálhatók, amelyek a fő sor alatti sorban jelennek meg. 
+**Bevételezés** - A bevételezés panel tartalmazza az eladási sorokat, a fizetési sorokat és pénztárban feldolgozott termékek és szolgáltatások szállítási adatait. A felhasználók megadhatják az oszlopok szélességét és elhelyezését. A Dynamics 365 for Operations for Retail 1611-es verziójában, a kompakt elrendezésekben, további információk is konfigurálhatók, amelyek a fő sor alatti sorban jelennek meg. 
 
 **Vevőkártya** - A vevőkártya a jelenleg a tranzakcióhoz társított vevővel kapcsolatos információkat jelenít meg. A vevőkártya beállítható úgy, hogy a további információk megjelenjenek vagy el legyenek rejtve. 
 
@@ -89,7 +90,7 @@ Minden elrendezésméretet a képernyő-elrendezésen belül a képernyő-elrend
 
 **Kép**- A kép vezérlőelem segítségével az üzlet emblémája vagy más márkajelzése jeleníthető meg tranzakció képernyőn. A kép vezérlőelem csak a teljes elrendezésekben érhető el. 
 
-**Javasolt termékek** - Ha a környezethez konfigurálva van, a javasolt termékek vezérlő termékjavaslatokat jelenít meg a gépi tanulás alapján. A javasolt termékek vezérlő csak a teljes elrendezésekhez érhető el a Dynamics 365 for Operations 1611-es verziójában. ** Egyéni vezérlő ** - Az egyéni vezérlő helyőrzőként működik a képernyő-elrendezésen belül, és lehetővé teszi a felhasználók számára hely fenntartását egyéni tartalom számára. Az egyéni vezérlőelem csak a teljes elrendezésekben érhető el.
+**Javasolt termékek** - Ha a környezethez konfigurálva van, a javasolt termékek vezérlő termékjavaslatokat jelenít meg a gépi tanulás alapján. A javasolt termékek vezérlő csak a teljes elrendezésekhez érhető el a Dynamics 365 for Operations for Retail 1611-es verziójában. ** Egyéni vezérlő ** - Az egyéni vezérlő helyőrzőként működik a képernyő-elrendezésen belül, és lehetővé teszi a felhasználók számára hely fenntartását egyéni tartalom számára. Az egyéni vezérlőelem csak a teljes elrendezésekben érhető el.
 
 <a name="see-also"></a>Lásd még
 --------

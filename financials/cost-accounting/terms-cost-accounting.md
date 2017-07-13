@@ -3,14 +3,14 @@ title: "Költségkönyvelési terminológia"
 description: "Ez a témakör a költségkönyveléshez használt kulcskifejezéseket határozza meg."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ce12337c22542aea2002ffc5abd09e4f4d770c1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ Ez a témakör a költségkönyveléshez használt kulcskifejezéseket határozz
 
 **Költségkönyvelés**
 
-A költségkönyvelés lehetővé teszi adatok összegyűjtését különböző forrásokból, például: főkönyv, részfőkönyvek, költségvetések és statisztikai adatok. Ezután elemezheti, összesítheti és kiértékelheti a költségadatokat, hogy a vezetőség a lehető legjobb döntéseket hozhassa meg az ármódosításokkal, a költségvetésekkel, a költségkontrollal stb. kapcsolatban. A költségelemzés alapjául használt forrásadatok kezelése önállóan történik a költségkönyvelésben. Emiatt a Költségkönyvelés frissítései nem befolyásolják a forrásadatokat. Azonban amikor költségadatokat gyűjt össze különböző forrásokból, és különösen akkor, ha a fő számlák importálását a Microsoft Dynamics 365 for Operation megoldásban költségösszetevőkként végzi a főkönyvből, adatredundancia lép fel, mert ugyanazok az adatok a főkönyvben és a költségkönyvelésben is léteznek. Ez a redundancia szükséges, kérik, mert a pénzgazdálkodást használjuk külső jelentésekhez és a költségkönyvelést a belső jelentésekhez.
+A költségkönyvelés lehetővé teszi adatok összegyűjtését különböző forrásokból, például: főkönyv, részfőkönyvek, költségvetések és statisztikai adatok. Ezután elemezheti, összesítheti és kiértékelheti a költségadatokat, hogy a vezetőség a lehető legjobb döntéseket hozhassa meg az ármódosításokkal, a költségvetésekkel, a költségkontrollal stb. kapcsolatban. A költségelemzés alapjául használt forrásadatok kezelése önállóan történik a költségkönyvelésben. Emiatt a Költségkönyvelés frissítései nem befolyásolják a forrásadatokat. Azonban amikor költségadatokat gyűjt össze különböző forrásokból, és különösen akkor, ha a fő számlák importálását a Microsoft Dynamics 365 for Finance and Operations Enterprise edition megoldásban költségösszetevőkként végzi a főkönyvből, adatredundancia lép fel, mert ugyanazok az adatok a főkönyvben és a költségkönyvelésben is léteznek. Ez a redundancia szükséges, kérik, mert a pénzgazdálkodást használjuk külső jelentésekhez és a költségkönyvelést a belső jelentésekhez.
 
 **Költségkönyvelési főkönyv**
 

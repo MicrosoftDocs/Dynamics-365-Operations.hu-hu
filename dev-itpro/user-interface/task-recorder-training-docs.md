@@ -3,7 +3,7 @@ title: "Dokumentáció vagy képzés létrehozása feladatrögzítések segíts�
 description: "Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre feladatrögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat, illetve hogyan szerepeltesse azokat a Súgóban."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b44dc66cdcd1ede59cb9bb4ed05be27dd465599
+ms.sourcegitcommit: ee6d455c44a38d9b3962ca20a5cb28007c19cf1d
+ms.openlocfilehash: e71c2638caccb9a31c5254a3cf68c802808960b9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
@@ -31,19 +31,22 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre feladatrögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat, illetve hogyan szerepeltesse azokat a Súgóban.
+Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre feladatrögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat a Unified Operations termékei esetében, illetve hogyan szerepeltesse azokat a Súgóban.
+
+> [!IMPORTANT]
+> A Dynamics 365 for Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat. A Talent súgórendszere automatikusan kapcsolódik a termék feladat-útmutatóihoz. 
 
 <a name="learn-about-task-recorder"></a>További tudnivalók a Feladatrögzítőről
 -------------------------
 
-A Feladatrögzítő egy olyan Microsoft Dynamics 365 for Operations-eszköz, amellyel a termék felhasználói felületén (UI) elvégzett műveleteket rögzítheti. A Feladatrögzítő használatakor az összes, felhasználói felületben elvégzett, a szerveren végrehajtott esemény — beleértve az értékhozzáadást, beállítások megváltoztatását, adatok eltávolítását — rögzítésre kerül. A rögzített lépések összességét *feladatrögzítésnek*hívják. A Feladatrögzítő sokféleképpen használható:
+A Feladatrögzítő egy olyan eszköz, amellyel a termék felhasználói felületén (UI) elvégzett műveleteket jegyezheti fel. A Feladatrögzítő használatakor az összes, felhasználói felületben elvégzett, a szerveren végrehajtott esemény — beleértve az értékhozzáadást, beállítások megváltoztatását, adatok eltávolítását — rögzítésre kerül. A rögzített lépések összességét *feladatrögzítésnek*hívják. A Feladatrögzítő sokféleképpen használható:
 
--   **Feladatrögzítők feladat útmutatókként lejátszhatók.** A feladat-útmutatók a Dynamics 365 for Operations súgó nyújtotta élményének szerves részét képezik. A feladat-útmutató irányított, vezérelt, interaktív élmény, amely végigvezet az üzleti folyamat lépésein. A felhasználónak teljesítenie kell minden lépést felugró kérdések (vagy "buborékdiagram") révén, amely keresztülmozog a felhasználói felületen és azon elemére mutat, amellyel a felhasználónak interakcióba kellene lépnie. A "buborékdiagram" arról is tájékoztatást ad, hogyan kellene interakcióba lépni az elemmel, például "Kattintson ide" vagy "Adjon meg egy értéket ebben a mezőben". A feladat-útmutató a felhasználó aktuális adathalmazára vonatkozóan fut és a bevitt adatok a felhasználó környezetében kerülnek mentésre.
+-   **Feladatrögzítők feladat útmutatókként lejátszhatók.** A feladat-útmutatók a Súgó nyújtotta élmény szerves részét képezik. A feladat-útmutató irányított, vezérelt, interaktív élmény, amely végigvezet az üzleti folyamat lépésein. A felhasználónak teljesítenie kell minden lépést felugró kérdések (vagy "buborékdiagram") révén, amely keresztülmozog a felhasználói felületen és azon elemére mutat, amellyel a felhasználónak interakcióba kellene lépnie. A "buborékdiagram" arról is tájékoztatást ad, hogyan kellene interakcióba lépni az elemmel, például "Kattintson ide" vagy "Adjon meg egy értéket ebben a mezőben". A feladat-útmutató a felhasználó aktuális adathalmazára vonatkozóan fut és a bevitt adatok a felhasználó környezetében kerülnek mentésre.
 -   **A Feladatrögzítő lépésről lépésre megjeleníthető a Súgó ablakban.** A Súgó ablakot használhatja Feladatrögzítő keresésére és megjelenítésére. A **?** gombra való kattintással nyitható meg a Súgó ablaktábla. a felső navigációs sávon, vagy használja **Ctrl+Shift+?** billentyűkódot. A Feladatrögzítő lépéseit a Súgó ablakban olvashatja, vagy dönthet a felvétel lejátszása feladat-útmutatóként mellett, így az végigvezeti Önt a felhasználói felületen.
--   **Feladatrögzítések BPM-be menthetők.** A feladatrögzítést hierarchiasorhoz is mentheti, a Lifecycle Services (LCS) szolgáltatásban lévő Üzletifolyamat-modellező (BPM) tárba. Felsorolt lépések és az üzleti folyamatok ábrája a rögzítésből kerül létrehozásra. A BPM-tárba mentett feladatrögzítések a Dynamics 365 for Operationsben súgóként jeleníthetők meg.
+-   **Feladatrögzítések BPM-be menthetők.** A feladatrögzítést hierarchiasorhoz is mentheti, a Lifecycle Services (LCS) szolgáltatásban lévő Üzletifolyamat-modellező (BPM) tárba. Felsorolt lépések és az üzleti folyamatok ábrája a rögzítésből kerül létrehozásra. A BPM-tárba mentett feladatrögzítések Súgóként jeleníthetők meg.
 -   **Feladatrögzítők Word dokumentumként menthetők.** Ez lehetővé teszi nyomtatható képzési útmutatók egyszerű létrehozását.
 
-Létrehozhatja saját feladatrögzítését, lejátszhatja a Microsoft által biztosított feladatrögzítéseket vagy módosíthatja a Microsoft által biztosított feladatrögzítéseket a saját konfigurációja szerint. A Feladatrögzítővel kapcsolatos további információkért lásd: [Feladatrögzítő a Dynamics 365 for Operations rendszerben](task-recorder.md).
+Létrehozhatja saját feladatrögzítését, lejátszhatja a Microsoft által biztosított feladatrögzítéseket vagy módosíthatja a Microsoft által biztosított feladatrögzítéseket a saját konfigurációja szerint. A Feladatrögzítővel kapcsolatos további információkért lásd: [Feladatrögzítő](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Tervezze meg feladatrögzítését
 Ha új feladatrögzítést készít vagy a rögzítéseit Microsoft feladatrögzítőre alapozza, vegye figyelembe a következőket.
@@ -75,7 +78,7 @@ Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készít
 
 -   **Megjegyzések:** A megjegyzéshez tartozó jegyzet a Feladatrögzítő által automatikusan létrehozott lépés szövege után jelenik meg. A feladat útmutatóban csak akkor lesz látható, ha a felhasználó rákattint a **Részletesebben** hivatkozásra a felada útmutató buborékdiagramjában. E típus használatával mindent leírhat, amit a felhasználónak tudnia kell a lépés teljesítéséhez.
 
-Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készítése közben. Írjon be jegyzetet a megjegyzésekhez a **Megjegyzések**mezőbe. 
+Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készítése közben. Írjon be jegyzetet a megjegyzésekhez a **Megjegyzések** mezőbe. 
 
 [![screen3](./media/screen3.png)](./media/screen3.png) 
 
@@ -83,7 +86,7 @@ Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készít
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Info lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása. **A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, a Dynamics 365 for Operationsön kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hivatkozások létrehozása a jegyzetekben nem lehetséges).
+-   **Info lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása. **A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszeren kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hivatkozások létrehozása a jegyzetekben nem lehetséges).
 
 **Határozza meg, milyen hosszú legyen a felvétel**
 
@@ -101,14 +104,14 @@ Részletes leírásért lásd [Feladatrögzítés létrehozása](task-recorder.m
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>A Microsoft feladatrögzítéseinek másolása és testreszabása
 Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzési anyagaihoz és súgódokumentációjához történő felhasználás érdekében. A Microsoft feladatrögzítéseinek letöltéséhez kövesse az alábbi lépéseket:
 
-1.  Nyissa meg a Feladatrögzítőt a Microsoft Dynamics 365 for Operationsben. A Feladatrögzítő a **Beállítások** menüben található.
+1.  Nyissa meg a Feladatrögzítőt. A Feladatrögzítő a **Beállítások** menüben található.
 2.  A Feladatrögzítő ablakban kattintson a **Felvétel karbantartása** lehetőségre.
 3.  A **Hol található a felvétel** területen, kattintson a **LCS-tárban található** lehetőségre.
 4.  Kattintson **Válassza ki az LCS-tárat** lehetőségre.
 5.  Jelölje ki a Microsoft globális könyvtárat.
 6.  A fastruktúrában válassza ki azt az üzleti folyamatok tára alcsomópontot, amelyhez a feladatrögzítés hozzá van rendelve.
 7.  Kattintson az **OK** gombra.
-8.  Kattintson a **Start**parancsra.
+8.  Kattintson a **Start** parancsra.
 9.  Ezen a ponton lépésenként haladjon végig a felvételen és változtassa meg bármelyik lépést az újrarögzítés közben. **Megjegyzés***: Ha csak a felvétel szövegét szeretné módosítani, megnyithatja a felvételt **Felvétel jegyzeteinek rögzítése** módban, és mentheti azt.
 10. Miután a felvétel végig lejátszásra került, kattintson **Leállítás** elemre a képernyő tetején található Feladatrögzítő sávon.
 11. Válassza ki, hogyan szeretné menteni a feladatrögzítést
@@ -119,18 +122,13 @@ A saját feladatrögzítéseinek A Súgó ablakban való megjelenítéséhez, é
 <a name="see-also"></a>Lásd még
 --------
 
-[Dynamics 365 for Operations Súgó](..\get-started\help-overview.md)
+[Súgó áttekintése](..\get-started\help-overview.md)
 
-[A Súgó rendszer csatlakoztatása](..\get-started\help-connect.md)
+[Súgó összekapcsolása](..\get-started\help-connect.md)
 
-[Feladatrögzítő a Dynamics 365 for Operationsben](task-recorder.md)
+[Feladatrögzítő](task-recorder.md)
 
 [A feladatrögzítő nemrégiben hozzáadott funkciói](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Új Dynamics AX képzési könyvtárak létrehozása a Lifecycle Services szolgáltatáson belül, a Feladatrögzítő segítségével (külső hivatkozás)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Multimédiás súgótémakörök létrehozása a Feladatrögzítővel (külső hivatkozás)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-
 

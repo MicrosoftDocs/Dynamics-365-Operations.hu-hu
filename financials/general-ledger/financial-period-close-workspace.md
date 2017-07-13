@@ -3,7 +3,7 @@ title: "Pénzügyi időszak lezárása munkaterület"
 description: "Ez a cikk betekintést nyújt a Pénzügyi időszak zárásának munkaterületébe és az ehhez társított beállításokba."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 788b0af30eb750cad8f958ecc4c33cf989b2a417
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -65,7 +65,7 @@ A **Kész feladat** lehetőséget manuálisan lehet kiválasztani a feladat befe
 Megjelenítheti az összes jelenlegi és előző időszaklezárási feladatot az **Összes pénzügyi időszak zárási feladata** listaoldalon. Ez a listaoldal legjobban az előzmények vizsgálatához használható, zárási folyamat során, mert tartalmazza az ütemezett határidőket, a tényleges teljesítési dátumokat és a személyt aki befejezte a feladatot. Könnyedén exportálhatja az információkat a listaoldalról Microsoft Excel fájlba jelentések elkészítéséhez és auditokhoz.
 
 ## <a name="financial-period-close-configuration-page"></a>Pénzügyi időszak lezárási konfigurációs oldala
-A **Pénzügyi időszak zárása** munkaterület használata előtt konfigurálja a folyamatot a Microsoft Dynamics 365 for Operations rendszerben a **Pénzügyi időszak lezárási konfigurációja** oldalon. (Kattintson a **Főkönyv** &gt; **Időszak zárása** &gt; **Pénzügyi időszak lezárási konfigurációja** lehetőségre.)
+A **Pénzügyi időszak zárása** munkaterület használata előtt konfigurálja a folyamatot a Microsoft Dynamics 365 for Finance and Operations rendszerben a **Pénzügyi időszak lezárási konfigurációja** oldalon. (Kattintson a **Főkönyv** &gt; **Időszak zárása** &gt; **Pénzügyi időszak lezárási konfigurációja** lehetőségre.)
 
 ### <a name="resources"></a>Erőforrások
 
@@ -90,7 +90,7 @@ A pénzügyi zárási sablont az olyan feladatok definiálásához használhatja
 
 A sablonban hozzárendelhet egy feladatot egy vagy több vállalatot, amire a feladat vonatkozik. Ha egy másik személy van hozzárendelve a munkához minden egyes vállalatnál, akkor hasznos lehet több feladat létrehozása ugyanahhoz a munkához. Külön feladat létrehozása minden egyes vállalathoz. 
 
-A **Feladathivatkozás** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például egy zárási feladat pénznem-újraértékelési folyamatának futtatása a Kötelezettségekben hozzárendelhető a Microsoft Dynamics 365 for Operations **Devizaátértékelés** oldalához. Külső URL-címet is hivatkozhat. 
+A **Feladathivatkozás** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például egy zárási feladat pénznem-újraértékelési folyamatának futtatása a Kötelezettségekben hozzárendelhető a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás **Devizaátértékelés** oldalához. Külső URL-címet is hivatkozhat. 
 
 > [!Javaslat] Ha szeretne egy adott Felügyeleti jelentéskészítő jelentést csatolni egy pénzügyi időszak zárási feladatához, akkor használhat jelentés-URL-t. A jelentés-URL-címének eléréséhez nyissa meg a jelentést a jelentéstervezőben, és kattintson a **Fájl** &gt; **Jelentés megtekintése** elemre, ha szeretné a jelentést egy webböngészőben megnyitni. Ezután bemásolhatja az URL-címet a böngésző címsorába, és beillesztheti a **Feladathivatkozás** **URL** cím mezőbe. 
 

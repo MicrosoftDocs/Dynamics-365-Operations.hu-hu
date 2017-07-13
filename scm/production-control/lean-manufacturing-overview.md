@@ -1,9 +1,9 @@
 ---
 title: "Lean manufacturing (áttekintés)"
-description: "A cikk a Microsoft Dynamics AX lean manufacturing funkcióinak áttekintését és leírását nyújtja."
+description: "A cikk a Microsoft Dynamics 365 for Finance and Operations lean manufacturing funkcióinak áttekintését és leírását nyújtja."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -20,30 +20,30 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dd29e601cb78b6903e09e63182196427183f6dbe
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 376b521a7527b4f60bc01c080f8eabb5cb231b30
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Lean manufacturing áttekintése
+# <a name="lean-manufacturing-overview"></a>Lean manufacturing (áttekintés)
 
 [!include[banner](../includes/banner.md)]
 
 
-A cikk a Microsoft Dynamics AX lean manufacturing funkcióinak áttekintését és leírását nyújtja.
+A cikk a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás lean manufacturing funkcióinak áttekintését és leírását nyújtja.
 
 A lean gyártás olyan eszközöket kínál, amelyeket használhat lean műveletek modellezéséhez. Ezek az eszközök támogatják és elősegítik az alábbi koncepciókat és üzleti tevékenységeket:
 -   Hozzon létre egy lean manufacruring alapítványt a gyártási és logisztikai folyamatok létrehozásával mint termelési folyamatok.
 -   Valósítson meg egy lean pull rendszert kanbanok használatával, melyek jelzik a keresleti követelményeket.
 -   Kanbanfeladatok ellenőrzése és karbantartása.
 
-A lean manufacturing architektúra a Microsoft Dynamics AX 7 programban tartalmazza a termelési folyamatokat, tevékenységeket és kanbanszabályokat. Ezek a struktúrák teljes mértékben integráltak Microsoft Dynamics AX 7 folyamataiba. Használhatja a lean manufacturing legetőséget vegyes módú gyártási környezetben, ahol különféle készletek, termelések és forrásstratégiák vannak. Ezek a stratégiák tartalmazzák a termelési rendeléseket, kötegrendeléseket feldolgozóiparoknak, beszerzési rendeléseket és transzferrendeléseket.
-| **Fontos!**                                                                                                                                                                                                                                                                |
+A lean manufacturing architektúra a Finance and Operations programban tartalmazza a termelési folyamatokat, tevékenységeket és kanbanszabályokat. Ezek a struktúrák teljes mértékben integráltak a Finance and Operations folyamataival. Használhatja a lean manufacturing legetőséget vegyes módú gyártási környezetben, ahol különféle készletek, termelések és forrásstratégiák vannak. Ezek a stratégiák tartalmazzák a termelési rendeléseket, kötegrendeléseket feldolgozóiparoknak, beszerzési rendeléseket és transzferrendeléseket.
+| **Fontos**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A Microsoft Dynamics AX 7 rendszert használhatja a lean manufacturing kanbanokkal történő végrehajtásának támogatásához. Ugyanakkor a lean irányelvek sikeres alkalmazása a használt belső üzleti folyamatokon és a tényleges termelési feltételeken és környezeten múlik. |
+| A Finance and Operations rendszert használhatja a lean manufacturing kanbanokkal történő végrehajtásának támogatásához. Ugyanakkor a lean irányelvek sikeres alkalmazása a használt belső üzleti folyamatokon és a tényleges termelési feltételeken és környezeten múlik. |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a> Termelési és logisztikai folyamatok modellezése termelési folyamatokként
 Hozzon létre egy lean manufacruring alapítványt a gyártási és logisztikai folyamatok létrehozásával mint termelési folyamatok. Ez a tevékenységhez a következő feladatokból áll:
@@ -71,8 +71,8 @@ Az alábbi lista leírja a specializált kanbantáblákat:
 -   Kanbantábla az átviteli feladatokhoz – Ez a tábla az aktuális átviteli feladatokról nyújt áttekintést. Frissíthet és regisztrálhat kitárolási listákat, elindíthat és befejezhet transzferfeladatokat és végrehajthat egyéb feladatokat.
 -   Kanbantábla feldolgozási feladathoz – Ez a tábla a normális termelési folyamat támogatásához lett tervezve, áttekintést nyújt az aktuális helyzethez egy vagy több munkacellában. Erről a tábláról a kanbanok priorizálhatók, kitárolhatók és gyárthatók. Továbbá a tábla segíti a vonalkód beolvasását kanbanok jelentéséhez.
 
-## <a name="kanban-jobs-and-integration-with-microsoft-dynamics-ax-processes"></a> Kanbanfeladatok és integrálás Microsoft Dynamics AX 7 folyamatokkal
-A Kanbanfeladatok teljes mértékben integráltak a jelenlegi készlettranzakciós folyamatokkal a Microsoft Dynamics AX 7 rendszerben.
+## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanbanfeladatok és a Finance and Operations folyamatainak integrálása
+A Kanbanfeladatok teljes mértékben integráltak a jelenlegi készlettranzakciós folyamatokkal a Finance and Operations rendszerben.
 -   Végrehajthat kitárolási tevékenységeket olyan alapanyag feltöltéséhez, amly a kanbanfeladatok követelményeinek teljesítéséhez használatos.
 -   Nyomtathat kanban kártyákat, körbejáró kártyákat és kitárolási listákat kanbanok támogatásához. Ezek a dokumentumok képviselik, jegyzik és nyomon követik a kanbanfeladatokat a raktárban és a termelési szinten.
 -   Használhat vonalkód beolvasást a kitárolási és átviteli tevékenységek regisztrálásához a készletben.

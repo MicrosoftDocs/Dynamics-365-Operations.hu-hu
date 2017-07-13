@@ -3,14 +3,14 @@ title: "Mezőleírások megtekintése és exportálása"
 description: "Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cd84c03baa4f7a9d38e380c37ed2020ee3387954
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,14 +33,14 @@ ms.lasthandoff: 05/25/2017
 
 Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével.
 
-A Microsoft Dynamics 365 for Operations rendszer tartalmazza néhány bonyolultabb mező leírását. Ezek a leírások akkor jelennek meg, ha az adott mező fölé húzza az egérmutatót. Ezenkívül a **Mezőleírások** oldalon megtekintheti és exportálhatja a leírásokat. 
+A Microsoft Dynamics 365 for Finance and Operations rendszer tartalmazza néhány bonyolultabb mező leírását. Ezek a leírások akkor jelennek meg, ha az adott mező fölé húzza az egérmutatót. Ezenkívül a **Mezőleírások** oldalon megtekintheti és exportálhatja a leírásokat. 
 
 Nem minden lap rendelkezik mezőleírásokkal. Csak az összetettebb mezőkhöz kívánunk leírásokat nyújtani, azokhoz nem, amelyek használata nyilvánvaló. Ezért néhány oldalon egyáltalán nem található mezőleírás, egyes oldalakon csak néhány leírás jelenik meg, néhány összetettebb oldalon (ilyen például a legtöbb paraméteroldal) pedig sok leírás érhető el. 
 
-Amennyiben ön hozzáfér a Microsoft Dynamics 365 for Operations rendszer fejlesztői környezetéhez, új mezőleírásokat adhat meg, illetve módosíthatja a meglévő leírásokat. Például cégspecifikus információt tehet hozzá egy mezőleíráshoz. További tájékoztatást a [Mező testreszabása – súgó](/dynamics365/operations/dev-itpro/user-interface/customize-field-help) pontnál talál.
+Amennyiben ön hozzáfér a Finance and Operations rendszer fejlesztői környezetéhez, új mezőleírásokat adhat meg, illetve módosíthatja a meglévő leírásokat. Például cégspecifikus információt tehet hozzá egy mezőleíráshoz. További tájékoztatást a [Mező testreszabása – súgó](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help) pontnál talál.
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Mezőleírások megtekintése a felhasználói felületen
-A mezőleírásokat az egérmutató adott mező fölé navigálásával tekintheti meg. Ha nem tartozik leírás az adott mezőhöz, az egérmutató mező fölé vitelekor a mező neve jelenik meg. (Megjegyzés: a 7.0.0 verzióban a mezők leírásai csak a **Mezőleírások** page.) Az alábbi ábrán az a mezőleírás látható, amely az egérmutató **Cikkek zárolása leltár közben** mező fölé vitelekor jelenik meg. 
+A mezőleírásokat az egérmutató adott mező fölé navigálásával tekintheti meg. Ha nem tartozik leírás az adott mezőhöz, az egérmutató mező fölé vitelekor a mező neve jelenik meg. (Megjegyzés: a Dynamics AX 7.0 (2016. február) verzióban a mezők leírásai csak a **Mezőleírások** page.) Az alábbi ábrán az a mezőleírás látható, amely az egérmutató **Cikkek zárolása leltár közben** mező fölé vitelekor jelenik meg. 
 
 [![Példa egy mezőleírásra](./media/field-description.png)](./media/field-description.png)
 
@@ -101,7 +101,7 @@ A lapok különféle módon megvalósítható megkereséséről bővebben feljeb
 <a name="see-also"></a>Lásd még
 --------
 
-[Mező testreszabása – súgó](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+[Mező testreszabása – súgó](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
 
 
 
