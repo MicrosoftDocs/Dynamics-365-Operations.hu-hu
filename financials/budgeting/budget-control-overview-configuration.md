@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
 ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
 ms.contentlocale: hu-hu
 ms.lasthandoff: 06/20/2017
-
 
 ---
 
@@ -128,3 +128,4 @@ A költségvetés-ellenőrzés aktiválását követően, a felhasználók költ
 Erről a lapról a felhasználók a **Költségvetés-ellenőrzési statisztika időszak szerint** lapra léphetnek a költségvetés elérhetőségének részleteinek és a kiválasztott költségvetés-ellenőrzési dimenzióra vonatkozó foglalások megtekintéséhez. Felhasználók beléphetnek a **Költségvetés-ellenőrzési statisztika** lapra az összes költségvetés-ellenőrzésben használt pénzügyi dimenzió kombinációra vonatkozó költségvetés elérhetőségeinek megtekintéséhez. 
 
 Ha a költségvetési-ellenőrzés aktív a beszerzési rendelésekre vonatkozóan a költségvetéskezelő használhatja a **Főkönyvi költségvetések és előrejelzések** munkaterületet az összes figyelmeztetéssel és hibával rendelkező jóváhagyásra váró beszerzési rendelés várakozási sorának áttekintéséhez. Ha a költségvetés-kezelő rendelkezik költségvetés átlépési engedéllyel, akkor jóváhagyhat beszerzési rendelést közvetlenül a munkahelyen.    
+
