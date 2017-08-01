@@ -24,9 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-<a id="cost-accounting-home-page" class="xliff"></a>
-
-# Költségkönyvelési kezdőlap
+# <a name="cost-accounting-home-page"></a>Költségkönyvelési kezdőlap
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,9 +47,7 @@ A Költségkönyvelés modul lehetővé teszi a következőket:
 -   A munkaterületen megtekinthető kimutatásokat hoz létre.
 -   Jelentések létrehozása az Excel programmal.
 
-<a id="get-started" class="xliff"></a>
-
-## Első lépések
+## <a name="get-started"></a>Első lépések
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -68,16 +64,12 @@ Hogy többet tudjon a Költségkönyvelés mindennapi használatáról, ismernie
 -   [Költségobjektum-dimenziók](cost-objects.md)
 -   [Költségobjektumok létrehozása](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (Feladat-útmutató)
 
-<a id="cost-control-mobile-workspace" class="xliff"></a>
-
-## Költségkontroll mobil munkaterület
+## <a name="cost-control-mobile-workspace"></a>Költségkontroll mobil munkaterület
 A Költségkontroll mobil munkaterülettel a költséghelyek vezetői bármikor és bárhol megtekinthetik a költséghely teljesítményét.
 
 -   [Költségkontroll mobil munkaterület](cost-controlling-mobile-workspace.md)
 
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
-
-## Költségkönyvelési elemzés Power BI-tartalom
+## <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelési elemzés Power BI-tartalom
 A Költségkönyvelési elemzés Microsoft Power BI-tartalom költségellenőrök, illetve olyan személyek részére készült, aki a szervezetük költségellenőrzéséért felelősek. Kulcsfontosságú mérőszámokat foglal magában, például költség, nagyság, illetve költségszorzó és tényleges költség, tervezett költség és rugalmas tervezett költség alapján. A Finance and Operations Költségkönyvelésének tranzakciós adatait használja, és összesítő nézetet biztosít a teljes szervezet költségeiről egyetlen kimutatási pénznemben. A vezetők szűrhetik az adatokat költségobjektumok szerint szervezeti egységeik költségkontrollja számára akkor is, ha a szervezet több jogi személyből állhat.
 
 -   [Költségkönyvelési elemzés Power BI-tartalom](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
