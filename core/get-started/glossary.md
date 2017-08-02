@@ -1,41 +1,39 @@
 ---
-title: "Dynamics 365 for Operations fogalomtár"
-description: "A Microsoft Dynamics 365 for Operations fogalomtár a Microsoft Dynamics 365 for Operations termékben használt kulcsfontosságú szakkifejezéseket és fogalmakat határozza meg."
+title: "A Finance and Operations alkalmazás fogalomtára"
+description: "Ez a szószedet határozza meg a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition termékben használt kulcsfontosságú szakkifejezéseket és fogalmakat."
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations fogalomtár
+# <a name="finance-and-operations-glossary"></a>A Finance and Operations alkalmazás fogalomtára
 
 [!include[banner](../includes/banner.md)]
 
-
-A Microsoft Dynamics 365 for Operations fogalomtár a Microsoft Dynamics 365 for Operations termékben használt kulcsfontosságú szakkifejezéseket és fogalmakat határozza meg. 
+Ez a szószedet határozza meg a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition termékben használt kulcsfontosságú szakkifejezéseket és fogalmakat. 
 
 ### <a name="a"></a>**A**
 
-###### <a name="accounting-journal"></a>**Könyvelési napló**
+###### <a name="accounting-journal"></a>**könyvelési napló**
 
 Olyan napló, amely a számviteli események pénzügyi következményeinek rögzítésére használatos egy könyvelési rendszerben.
 
@@ -51,17 +49,9 @@ Egy, az Egyesült Államokban működő elektronikus átutalási rendszer, amely
 
 Az a mért mennyiség, amely bevitelre kerül egy tevékenységbe, vagy kikerül onnan.
 
-###### <a name="address-verification-service"></a>**címellenőrzési szolgáltatás**
+###### <a name="address-verification"></a>**cím ellenőrzése**
 
 Egy hitelkártya-feldolgozó által nyújtott szolgáltatás, amely ellenőrzi, hogy egy kártyatulajdonos által megadott számlázási cím megegyezik-e a kibocsátó bank nyilvántartásában szereplő információval.
-
-###### <a name="adjusted-unit-price"></a>**módosított egységár**
-
-Az attribútumalapú árképzés alapján számított egységár és a tényleges kapott hatóanyag-tartalom.
-
-###### <a name="advanced-pricing"></a>**speciális árképzés**
-
-Egy hatóanyagtartalom-cikk beszerzési árának kiszámításához használt logika.
 
 ###### <a name="aging"></a>**korosítás**
 
@@ -99,16 +89,15 @@ Az az időszak, amelyben egy termék megőrzi az optimális minőségét vagy je
 
 ###### <a name="bill-of-exchange"></a>**váltó**
 
-Forrásbizonylat, az amelyben foglalt szerint feltétel nélküli kérelem alapján egy harmadik fél kérésre köteles egy második fél kifizetését elvégezni.
-
-###### <a name="bill-of-materials"></a>**anyagjegyzék**
-
-Olyan termékek és a hozzájuk tartozó mennyiségek listája, amelyek egy termék gyártásához szükségesek.
+Egy harmadik félnek egy második fél igény szerinti kifizetésére vonatkozó, feltétel nélküli kérelmét dokumentáló forrásbizonylat.
 
 ###### <a name="blocking"></a>**zárolás**
 
 Egy dokumentum vagy termék várakoztatásának művelete.
 
+###### <a name="bom-bill-of-materials"></a>**Anyagjegyzék**
+
+Olyan termékek és a hozzájuk tartozó mennyiségek listája, amelyek egy termék gyártásához szükségesek.
 ###### <a name="budget-control"></a>**költségvetés-ellenőrzés**
 
 A kiadások engedélyezésének gyakorlata csak abban az esetben, amikor a költségvetési alapok lefoglalhatók a jövőbeni fizetési kötelezettségek teljesítésére.
@@ -175,14 +164,6 @@ A fő számlák listája.
 
 A termékgyártás pénzügyi következményeinek összegzéséhez és a készletezéshez használt könyvelési kategória.
 
-###### <a name="commodity-pricing"></a>**alapanyag szerinti árképzés**
-
-Árképzési stratégia gyakori árváltozásokon átmenő alapanyagokból gyártott értékesítési cikkek árának frissítéséhez.
-
-###### <a name="consolidated-order"></a>**összesített rendelés**
-
-Egynél több hivatkozott rendelést dokumentáló forrásbizonylat.
-
 ###### <a name="contractor"></a>**alvállalkozó**
 
 Olyan személy által vállalt szerepkör, aki alvállalkozói-munkáltatói kapcsolatban van egy jogi személlyel.
@@ -194,10 +175,6 @@ Egy másik cikkel közösen előállított cikk.
 ###### <a name="cost-center"></a>**költséghely**
 
 Olyan üzemi egység, amelynek vezetői elszámoltathatók az előirányzott és a tényleges kiadásokért.
-
-###### <a name="cost-of-goods-sold"></a>**eladott áruk beszerzési értéke**
-
-A termékgyártás pénzügyi következményeinek összegzéséhez és a készletezéshez használt könyvelési kategória.
 
 ###### <a name="cost-variance"></a>**költségeltérés**
 
@@ -223,7 +200,7 @@ Egy tevékenység végrehajtásához szükséges idő.
 
 ###### <a name="dashboard"></a>**irányítópult**
 
-A szokásos kezdőlap a Microsoft Dynamics 365 for Operations rendszerben. Az irányítópulton a felhasználók minden általuk elérhető munkaterületből látnak egy részt. Minden rész a kapcsolódó munkaterület Összegzés szakaszából jelenít meg csempéket. Az irányítópult egy névből és csempéket tartalmazó szakaszokból áll.
+A szokásos kezdőlap a Finance and Operations rendszerben. Az irányítópulton a felhasználók minden általuk elérhető munkaterületből látnak egy részt. Minden rész a kapcsolódó munkaterület Összegzés szakaszából jelenít meg csempéket. Az irányítópult egy névből és csempéket tartalmazó szakaszokból áll.
 
 ###### <a name="data-entity"></a>**adatentitás**
 
@@ -260,10 +237,6 @@ Termékváltozatok termékdimenzió-értékek kijelölésével történő létre
 ###### <a name="distinct-product"></a>**egyedi termék**
 
 Egyedileg azonosítható termék.
-
-###### <a name="document-blocking"></a>**bizonylat zárolása**
-
-Egy műveleti folyamat várakoztatásának módszere, amíg a rendelt cikkek minőségbiztosítási eljárása zajlik.
 
 ###### <a name="document-management-system"></a>**dokumentumkezelő rendszer**
 
@@ -316,10 +289,6 @@ Egy pénznem, amely egy másik pénznemre vonatkozóan rögzített árfolyammal 
 ###### <a name="fixed-quantity-kanban"></a>**rögzített mennyiségű kanban**
 
 Egy adott kanbanszabályhoz rendelt kanbanok számának állandósága esetén használt kanbantípus.
-
-###### <a name="flexible-authentication"></a>**rugalmas hitelesítés**
-
-Olyan hitelesítési folyamat, ahol a többféle identitáskezelő rendszerben található felhasználók hitelesíthetők.
 
 ###### <a name="formula"></a>**receptúra**
 
@@ -379,10 +348,6 @@ Egy kanban által elindított termelési folyamatban lévő folyamat vagy átvit
 
 Termékösszetevők visszavonása a készletből a kanban termelési feladatok elvégzése érdekében.
 
-###### <a name="kanban-product-quantity"></a>**kanban termékmennyiség**
-
-Kanbanszabályon alapuló kanbanon végrehajtott cikkszükségletek száma.
-
 ###### <a name="kanban-rule"></a>**kanbanszabály**
 
 Szabály egy lean manufacturing rendszerben, amely azzal valósítja meg az anyagtervezést és a feltöltési irányelveket, hogy szabályozza a folyamatok és átviteli tevékenységek a termelési folyamatokban történő összehangolásának módját.
@@ -410,10 +375,6 @@ Egy alfanumerikus kulcs, amely jogot biztosít a szoftver vagy szoftverösszetev
 Egy fél azon képessége, hogy a rövid lejáratú kötelezettségeit kiegyenlítse forgóeszközökkel.
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**anyagalapú gyártási többletköltségek**
-
-A gyártási többletköltség közvetett költségszámítási képletek révén százalékos pótköltségként kerül megállapításra. A számítási képlet alapjául az anyagjellegű összetevőkhöz rendelt költségcsoport szolgál. A számítási képletek meghatározhatók egyes termékekhez vagy termékekhez rendelt cikkcsoportokhoz is, mivel így nagyobb rugalmasságot lehet elérni az anyagokon alapuló gyártási többletköltségek számításánál.
 
 ###### <a name="master-scheduling"></a>**alapütemezés**
 
@@ -459,10 +420,6 @@ A csomag egy vagy több modellből álló, lefordítható és telepíthető egys
 
 ###### <a name="party"></a>**fél**
 
-Olyan entitás, amely jogilag kötelező érvényű szerepet vesz fel a szerződéses jogviszonyban való részvétele során.
-
-###### <a name="party"></a>**fél**
-
 Gazdasági tevékenységekben részt vevő személy vagy szervezet.
 
 ###### <a name="pegging"></a>**igénykövetés**
@@ -472,10 +429,6 @@ Egy igényelt cikk mennyiségének a forrásáig történő követési folyamata
 ###### <a name="pegging-event"></a>**igényjelző esemény**
 
 Egy termék iránti igényt jelző erőforrás-áramlási esemény.
-
-###### <a name="phantom-item"></a>**látszólagos cikk**
-
-Előállított, de nem raktározott cikk.
 
 ###### <a name="planned-intercompany-demand"></a>**tervezett vállalatközi igény**
 
@@ -489,17 +442,9 @@ Egy gazdasági esemény pénzügyi értékének rögzítése egy adott számlán
 
 Forrásbizonylatot létrehozó személy, aki gazdasági erőforrások igénylését kezdeményezi.
 
-###### <a name="privilege"></a>**jogosultság**
-
-Feladat elvégzéséhez szükséges egy vagy több felhasználói engedély.
-
 ###### <a name="procurement-catalog"></a>**beszerzési katalógus**
 
 Termékajánlatok beszerzési kategória szerint csoportosított listája. Egy szervezet által belső felhasználású termékek igénylésére szolgáló beszerzési katalógus.
-
-###### <a name="product-component"></a>**termékösszetevő**
-
-Egy termék része.
 
 ###### <a name="product-dimension"></a>**termékdimenzió**
 
@@ -507,7 +452,7 @@ A dimenzión alapuló termékkonfigurációkhoz használt méret-, szín- vagy k
 
 ###### <a name="product-family"></a>**termékcsalád**
 
-Az ugyanazon termelési vagy szállítási tevékenységekben részt vevő, vagy ugyanazon piaci szegmenseknek felkínált cikkek, szolgáltatások vagy jogok egyedi csoportja. A Microsoft Dynamics 365 for Operations rendszerben a csoportosítást előrejelzés-felosztási kulcs jelöli.
+Az ugyanazon termelési vagy szállítási tevékenységekben részt vevő, vagy ugyanazon piaci szegmenseknek felkínált cikkek, szolgáltatások vagy jogok egyedi csoportja. A Finance and Operations rendszerben a csoportosítást előrejelzés-felosztási kulcs jelöli.
 
 ###### <a name="product-master"></a>**alaptermék**
 
@@ -581,10 +526,6 @@ Olyan, a felhasználó által meghatározott, adott időszakban alkalmazott szá
 
 Erőforrás-áramlási események működési, jogi és pénzügyi következményeinek rögzítésére szolgáló rekord egy könyvelési rendszerben.
 
-###### <a name="regulated-product"></a>**szabályozott termék**
-
-Megfelelést és auditálási jelentést előíró állami szerv által szabályozott termék.
-
 ###### <a name="rfq-request-for-quotation"></a>**ajánlatkérés**
 
 Egy megadott áron és megadott időre történő termékmennyiség biztosítására vonatkozó pályázati meghívást dokumentáló forrásbizonylat.
@@ -593,9 +534,6 @@ Egy megadott áron és megadott időre történő termékmennyiség biztosítás
 
 A gazdasági erőforrásokat kérelmező személy.
 
-###### <a name="restricted-product"></a>**korlátozott termék**
-
-Olyan termék, amelynek a terjesztése korlátozott, vagy egy állami szerv korlátozza.
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Egy forrásbizonylat-sorban dokumentált, igénykövetési követelményt létre
 
 Múltbeli tranzakcióadatokra alkalmazott előrejelző algoritmus alkalmazásával létrehozott jövőbeli kereslet becslése.
 
-###### <a name="supermarket"></a>**szupermarket**
-
-„Pont időben” létező, véges kapacitással rendelkező készlethely, amely anyagkötegelésre szolgál egy fogyasztási hely közelében.
-
-###### <a name="system-defined-financial-dimension-type"></a>**rendszerbeli pénzügyi dimenziótípus**
-
-Egy adatbázistáblához vagy -nézethez rendelt, entitástípust jelölő pénzügyi dimenzió, amelynek értékei az adott entitástípus egyik attribútumának tartományában találhatók.
 
 ### <a name="t"></a>**T**
 
@@ -667,11 +598,11 @@ A Feladatrögzítés lépéseinek követésével megvalósuló, ellenőrzött, i
 
 ###### <a name="task-recorder"></a>**Feladatrögzítő**
 
-Egy előre telepített eszköz a Microsoft Dynamics 365 for Operations rendszerben. Rögzítés során az összes, a felhasználó által a Dynamics 365 for Operations rendszer felhasználói felületén a kiszolgálóval szemben végrehajtott eseményt rögzíti – többek között a megadott értékeket, a módosított beállításokat, az eltávolított adatokat stb.
+Egy előre telepített eszköz a Finance and Operations rendszerben. Rögzítés során az összes, a felhasználó által a Finance and Operations rendszer felhasználói felületén a kiszolgálóval szemben végrehajtott eseményt rögzíti – többek között a megadott értékeket, a módosított beállításokat, az eltávolított adatokat stb.
 
 ###### <a name="task-recording"></a>**Feladatrögzítés**
 
-A Microsoft Dynamics 365 for Operations rendszerben a Feladatrögzítő futtatásakor a rögzített műveleteket és jegyzeteket tartalmazó fájl.
+A Finance and Operations rendszerben a Feladatrögzítő futtatásakor a rögzített műveleteket és jegyzeteket tartalmazó fájl.
 
 ###### <a name="three-way-matching-policy"></a>**háromirányú egyeztetési irányelv**
 
@@ -684,12 +615,6 @@ Egy vagy több cikk átvitt vagy átvihető mennyisége.
 ###### <a name="two-way-matching-policy"></a>**kétirányú egyeztetési irányelv**
 
 Egyeztetési irányelv, amely megköveteli, hogy egy vagy több szállítói számla árai egyezzenek meg egy vagy több beszerzési rendelés áraival.
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**felhasználói pénzügyi dimenziótípus**
-
-Felhasználó által meghatározott értéklistához rendelt pénzügyi dimenzió.
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ Olyan személy, aki alkalmazotti vagy alvállalkozói szerepkört vesz fel, és 
 ###### <a name="workspace"></a>**munkaterület**
 
 Oldal, amely a felhasználó által végrehajtott tevékenységek valamelyikének áttekintését nyújtja. Az oldal csempéket, listákat és diagramokat használ a folyamatban lévő munka és a többféle forrásból származó kapcsolódó adatok megjelenítéséhez, és megmutatja az ezen adatokhoz kapcsolódó gyakori feladatokat. A munkaterület összefoglaló részében megjelenő csempék az irányítópult kapcsolódó részében is megjelennek.
-
-
-
 

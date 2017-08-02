@@ -58,7 +58,7 @@ Adja meg a *költségvetési modellt*, amelyik megfelel az összes vagy néhány
 > [!NOTE] 
 > Ha költségvetés-ellenőrzést használ, akkor csak egy költségvetési modellt társíthat egy specifikus költségvetésiciklus-időtartammal. 
 
-Hozzon létre *költségvetési kódokat *amelyek azonosítják a költségvetési tranzakciókat a rekordban vagy bármilyen kapcsolódó munkafolyamatban. A költségvetési kódok az alábbi költségvetéstípusokat támogatják:
+Hozzon létre *költségvetési kódokat* amelyek azonosítják a költségvetési tranzakciókat a rekordban vagy bármilyen kapcsolódó munkafolyamatban. A költségvetési kódok az alábbi költségvetéstípusokat támogatják:
 
 -   Eredeti költségvetés
 -   Áthelyezés
@@ -79,7 +79,7 @@ A költségvetés-kezelő tekintheti meg a költségvetés aktuális állapotát
 
 A **tényleges és költségvetési érték összevetése** lekérdezési lap lehetővé teszi a költségvetés-tényleges összegek és részletesen. Válasszon ki egy sort a lekérdezési lapon, és kattintson a **időszaki egyenlegek** pénzügyi időszakok közötti terjednek költségvetés és a tényleges összegek megtekintéséhez. A **költségvetési számlabejegyzések** lap megjeleníti a részletező szeretné a költségvetési tételjegyzék-bejegyzések költségvetési összeg részletes adatait. A **általános naplóbejegyzések** lap megnyitása a főkönyvi tranzakciók szerepelnek a számított **tényleges** összege. 
 
-A vállalat által használt költségvetés-tervezési funkció is létrehozása és alkalmazása *költségvetési előrejelzések alapján *a a **főkönyvi költségvetések és az előrejelzések** munkaterület.
+A vállalat által használt költségvetés-tervezési funkció is létrehozása és alkalmazása *költségvetési előrejelzések alapján* a a **főkönyvi költségvetések és az előrejelzések** munkaterület.
 
 
 
