@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 36c5e78f4b85d0c763c35b62a6592365501db325
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6be91dfc02b728ffdf0f9d3baf1d41d3d2c10fea
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -103,7 +103,7 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
 A **Konfigurációk** oldalon (**Szervezet felügyelete** &gt; **Elektronikus jelentések** &gt; **Konfigurációk**), a konfigurációs fában, válassza ki azt az **importálási / exportálási tevékenységekre** vonatkozó konfigurációt, amelyet korábban létrehozott. Az 1.1 verzió állapotát módosítsa **Vázlatról** **Készre** , hogy ez a formátum használható legyen. [![Konfigurációs oldal](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) Válassza ki az **importálási / exportálási tevékenységekre** vonatkozó konfiguráció kész verzióját, majd kattintson a **Futtatás** elemre. Vegye figyelembe, hogy a konfigurált célhely az Excel formátumban létrehozott kimeneti eredményhez van hozzárendelve. Állítsa a **Kötegelt feldolgozás** lehetőséget **Igenre** ahhoz, hogy ezt a jelentést felügyelet nélküli üzemmódban futtassa. Kattintson az **Ismétlődésre** ahhoz, hogy beütemezze a kötegelt végrehajtás szükséges ismétlődését. Az ismétlődés határozza meg, hogy a frissített adatok milyen gyakran kerülnek a Finance and Operations alkalmazásból a Power BI-ba. [![Elektronikus jelentések paramétereinek párbeszédablaka](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) A konfigurálás után az ER-jelentés végrehajtási feladatát a **Kötegelt feladatok** lapon találhatja meg (**Rendszerfelügyelet &gt; Lekérdezések &gt; Kötegelt feladatok**). [![Kötegelt feladatok lapja](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) Amikor ez a feladat először fut, a célhely létrehoz egy új Excel-fájlt a konfigurált névvel, a kiválasztott SharePoint-mappában. Minden későbbi alkalommal, amikor ez a feladat fut, a célhely létrehozza ennek az Excel-fájlnak egy új verzióját. [![Az Excel-fájl új verziója](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Power BI-adatkészlet létrehozása az ER-formátum kimeneti eredményeinek felhasználásával
-Jelentkezzen be a Power BI-ba, és nyisson meg egy meglévő Power BI-csoportot (munkaterület), vagy hozzon létre egy új csoportot. Kattintson a **Hozzáadás** elemre a **Fájlok** alatt, az **Adatok importálása vagy csatlakozás adatokhoz** szakaszban, vagy kattintson a pluszjelre (**+**) az **Adatkészletek** mellett a bal oldali ablakban. [![Adatkészlet létrehozása](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Válassza ki a **SharePoint - Csoportwebhelyek lehetőséget**, majd adja meg az Ön által használt a SharePoint-kiszolgáló elérési útját (**https://ax7partner.spoppe.com** ebben a példában). Ezután menjen a **/Megosztott dokumentumok/GER-adatok/PowerBI** mappára, és válassza ki azt az Excel-fájlt, amelyet az új Power BI-adatkészlet adatforrásaként létrehozott. [![Az Excel-fájl kiválasztása](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Kattintson a **Csatlakozás**, majd az **Importálás** elemre. Létrejön az új adatkészlet, amely a kiválasztott Excel-fájlon alapul. Az adatkészlet automatikusan hozzáadódik az újonnan létrehozott irányítópulthoz. [![Adatkészlet az irányítópulton](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Állítsa be úgy a frissítési ütemezést, hogy ez az adatkészlet időszakos frissítést kényszerítsen ki. Az időszakos frissítések lehetővé teszik a Finance and Operations alkalmazásból érkező, új üzleti adatok felhasználását az ER-jelentés időszakos végrehajtása révén, az Excel-fájlnak a SharePoint-kiszolgálón létrehozott új változatai segítségével.
+Jelentkezzen be a Power BI-ba, és nyisson meg egy meglévő Power BI-csoportot (munkaterület), vagy hozzon létre egy új csoportot. Kattintson a **Hozzáadás** elemre a **Fájlok** alatt, az **Adatok importálása vagy csatlakozás adatokhoz** szakaszban, vagy kattintson a pluszjelre (**+**) az **Adatkészletek** mellett a bal oldali ablakban. [![Adatkészlet létrehozása](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Válassza ki a **SharePoint - Csoportwebhelyek lehetőséget**, majd adja meg az Ön által használt a SharePoint-kiszolgáló elérési útját (**https://ax7partner.litware.com** ebben a példában). Ezután menjen a **/Megosztott dokumentumok/GER-adatok/PowerBI** mappára, és válassza ki azt az Excel-fájlt, amelyet az új Power BI-adatkészlet adatforrásaként létrehozott. [![Az Excel-fájl kiválasztása](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Kattintson a **Csatlakozás**, majd az **Importálás** elemre. Létrejön az új adatkészlet, amely a kiválasztott Excel-fájlon alapul. Az adatkészlet automatikusan hozzáadódik az újonnan létrehozott irányítópulthoz. [![Adatkészlet az irányítópulton](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Állítsa be úgy a frissítési ütemezést, hogy ez az adatkészlet időszakos frissítést kényszerítsen ki. Az időszakos frissítések lehetővé teszik a Finance and Operations alkalmazásból érkező, új üzleti adatok felhasználását az ER-jelentés időszakos végrehajtása révén, az Excel-fájlnak a SharePoint-kiszolgálón létrehozott új változatai segítségével.
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Power BI-jelentés létrehozása az új adatkészlet segítségével
 Ahhoz, hogy új Power BI-jelentést hozzon létre, kattintson az **importálás és exportálás részleteit** tartalmazó Power BI-adatkészletre, amelyet létrehozott. Ezután állítsa be a megjelenítést. Például válassza ki a **Kitöltött térkép** megjelenítést, és állítsa be a következőképpen:

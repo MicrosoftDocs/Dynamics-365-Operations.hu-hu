@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2df0c6dc9b41dde861f5361bfcc1226786e7aa76
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/25/2017
 
 ---
 
@@ -35,28 +35,30 @@ Ez a témakör felsorolja az elérhető Microsoft Power BI-tartalmakat, és áti
 Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését használja, a következő Power BI-tartalom érhető el:
 
 - [Juttatások Power BI-tartalom](benefits-power-bi.md)
-- [Készpénzáttekintés Power BI-tartalom](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+- [Készpénzáttekintés Power BI-tartalom](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [Pénzügyi igazgatói áttekintés Power BI-tartalom](CFO-power-bi.md)
 - [Kompenzáció Power BI-tartalom](compensation-power-bi.md)
 - [Költségkönyvelés elemzése Power BI-tartalom*](cost-accounting-analysis-content-pack.md) 
-- [Követelések és beszedések kezelése Power BI-tartalom](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Követelések és beszedések kezelése Power BI-tartalom](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Alkalmazotti fejlesztés Power BI-tartalom](employee-development-PBI.md) 
 - [Pénzügyi teljesítmény Power BI-tartalom*](financial-performance-power-bi-content-pack.md)
-- [Tárgyi eszköz Power BI-tartalom](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
+- [Tárgyi eszköz Power BI-tartalom](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
 - [Tanulás Power BI-tartalom](learning-power-bi.md)
 - [Gyakorlatvezető Power BI tartalom](practice-manager-power-bi.md)
 - [Termelési teljesítmény Power BI-tartalom](production-performance-power-bi.md)
 - [Beszerzési kiadások elemzése Power BI-tartalom](purchase-content-pack-for-power-bi.md) 
 - [Toborzási Power BI-tartalom](recruiting-analysis-power-bi-content-pack.md) 
 - [Értékesítési és nyereségességi teljesítmény Power BI-tartalom](sales-profitability-performance-content-pack.md)
-- [Szállítói kifizetések Power BI-tartalom](/dynamics365/operations/financials/accounts-payable/Vendor-payments-workspace)
+- [Szállítói kifizetések Power BI-tartalom](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
 - [Raktárteljesítmény Power BI-tartalom](warehouse-power-bi-content.md)
 - [Munkaerő-mutatók Power BI-tartalom](workforce-analysis-power-bi-content-pack.md)  
 
 ### <a name="accessing-the-content"></a>A tartalom elérése
 
 #### <a name="embedded-content"></a>Beágyazott tartalom
-A csillaggal (\*) jelölt tartalmat kivéve a fenti listán szereplő összes tartalom be van ágyazva az alkalmazásba. Ha többet szeretne megtudni arról, hol tekintheti meg a Power BI-tartalmat, kattintson a hivatkozásokra.
+A csillaggal (\*) jelölt tartalmat kivéve a fenti listán szereplő összes tartalom be van ágyazva az alkalmazásba. Ha többet szeretne megtudni arról, hol tekintheti meg a Power BI-tartalmat, kattintson a fenti hivatkozásokra.
+
+A Power BI jelentések adatainak megtekintéséhez mindenképp frissítse az Entitástárat. További információért lásd [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md) című cikk *Az entitástár frissítése* szakaszát.
 
 #### <a name="files-available-in-lifecycle-services"></a>Rendelkezésre álló fájlok a Lifecycle Services szolgáltatásban
 Ez a Power BI-tartalom a Microsoft Dynamics Lifecycle Services (LCS) Megosztott eszközök könyvtárában található. A tartalom letöltésére és az adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
@@ -66,7 +68,7 @@ Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise editio
 
 - [Kompenzáció és juttatások Power BI-tartalom](compensation-and-benefits-analysis-power-bi-content-pack.md)   
 - [Költségkönyvelés elemzése Power BI-tartalom](cost-accounting-analysis-content-pack.md) 
-- [Követelések és beszedések kezelése Power BI-tartalom](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Követelések és beszedések kezelése Power BI-tartalom](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Alkalmazotti kompetenciák és fejlődés Power BI-tartalom](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
 - [Pénzügyi teljesítmény Power BI-tartalom](financial-performance-power-bi-content-pack.md)
 - [Szervezeti képzés Power BI-tartalom](organizational-training-analysis-power-bi-content-pack.md) 

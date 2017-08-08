@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11574
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d0af259fd6da8a57bada919f44a2902d9a5854d
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 31a9141feea56f1c8c1ba5fde446181c157953ad
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -69,7 +69,7 @@ Az alábbi táblázat felsorolja a hat alapértelmezett szabálytalanságtípust
 | Belső              | Minőségi rendelés száma vagy a minőségi rendelés tranzakciójának adagszáma. A szabálytalanság kapcsolódhat például egy alkatrészen a minőségi rendelés keretében végrehajtott tesztekhez, vagy egy alkalmazott termékminőségre vonatkozó bejelentéséhez.     |
 | Társtermék gyártása | Társtermék termelési rendelés szabálytalansága, mely termelési rendelések egy kötegéhez köthető.                                                                                                                                                    |
 
-A szabálytalanságok problématípusokhoz vannak társítva. A problématípusok a **Problématípusok** oldalon vannak meghatározva, ahol pontosíthatja melyik probléma típus, milyen szabálytalansági típussal azonosítható. Például, a **Szolgáltatáskérés** típusú szabálytalanságok tükrözhetnek osztályozott vásárlói panaszokat, míg a **Belső **problématípusok hibakódok osztályozását. 
+A szabálytalanságok problématípusokhoz vannak társítva. A problématípusok a **Problématípusok** oldalon vannak meghatározva, ahol pontosíthatja melyik probléma típus, milyen szabálytalansági típussal azonosítható. Például, a **Szolgáltatáskérés** típusú szabálytalanságok tükrözhetnek osztályozott vásárlói panaszokat, míg a **Belső**problématípusok hibakódok osztályozását. 
 
 Új szabálytalanságok létrehozásakor ki kell választani a szabálytalanságtípust és problématípust. A kezdeti jóváhagyási állapot **Új**, amely jelzi a műveletre vonatkozó kérelmet. A következő lépés a jóváhagyási állapot megváltoztatása **Elfogadott** vagy **Megtagadott** állapotba, így jelezvén, hogy tesz-e további lépéseket a szabálytalanság ellen. Lehetőség van a szabálytalanság bezárására is (külön jelölőnégyzet kiválasztásával), így jelezve, hogy készen van vele, vagy újranyithatja a szabálytalanságot, hogy jelezze, szükség van annak újragondolására. 
 
@@ -100,9 +100,9 @@ Tanácsos egyedi dokumentumtípust megadni a javításokhoz a **Dokumentum típu
 
 [Karanténutasítások](quarantine-orders.md)
 
-[Minőségi rendelések beállítása (feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
+[Minőségi rendelések beállítása (Feladat-útmutató)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-quality-orders)
 
-[Áru minőségének ellenőrzése (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Áru minőségének ellenőrzése (Feladat-útmutató)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
 
 
 

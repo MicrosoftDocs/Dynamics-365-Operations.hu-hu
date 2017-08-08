@@ -3,25 +3,25 @@ title: "Elavult szolgáltatások"
 description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, Platform, UnifiedOperations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 6
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
-ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 18274d9ca390ee3d6d463b3a6d67ddc3a39294f8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/16/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -29,9 +29,10 @@ ms.lasthandoff: 06/16/2017
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve.
+Ez a témakör a Dynamics 365 for Finance and Operations, Enterprise edition verziójából eltávolított szolgáltatásokat írja le, illetve azokat, amelyeket a jövőben fognak majd eltávolítani.
 
-## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funkciók, amelyek megszűntek a Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítése óta
+## <a name="features-that-have-been-deprecated-for-all-deployment-types-of-the-july-2017-update-with-platform-update-8"></a>Funkciók, melyek megszűntek minden telepítéstípus esetén a 2017. júliusi 8-as platformfrissítéssel
+A lista azokat a funkciókat tartalmazza, amelyek megszűntek mind a felhőalapú, mind a helyszíni telepítések esetén.
 
 ### <a name="warehouse-mobile-devices-portal"></a>Raktári mobileszközportál
 
@@ -40,7 +41,7 @@ A Raktári mobileszközportál (Warehouse mobile devices portal – WMDP) egy k�
 |                                  |                                                 |
 |----------------------------------|-------------------------------------------------|
 | **Megszűnés oka**       | Máshol már meglévő funkció.                        |
-| **Felváltotta másik szolgáltatás?** | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. Ha további információt szeretne a beállításról és az előfeltételekről, lásd a következőt: [A Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Felváltotta másik szolgáltatás?** | Igen. Ezt a funkciót felváltotta a Finance and Operations – Raktárkezelés funkció. Ha további információt szeretne a beállításról és az előfeltételekről, lásd a következőt: [A Microsoft Dynamics 365 for Finance and Operations – Raktárkezelés telepítése és konfigurálása](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Érintett modulok**             | Raktárkezelés, szállításkezelés |
 
 ### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Továbbfejlesztett banki egyeztetési szabály kézi egyeztetéshez
@@ -62,6 +63,28 @@ A Windows 8-ra készült táblagépes alkalmazás lehetővé tette a költségbe
 | **Megszűnés oka**       | A Finance and Operations kompatibilis a táblagépekkel. A táblagépes alkalmazásra már nincs szükség. |
 | **Felváltotta másik szolgáltatás?** | Szám                                                                                      |
 | **Érintett modulok**             | Költséggazdálkodás                                                                       |
+
+## <a name="features-that-have-been-deprecated-for-on-premises-deployments-of-the-july-2017-update-with-platform-update-8"></a>Funkciók, melyek megszűntek a helyszíni telepítéstípus esetén a 2017. júliusi 8-as platformfrissítéssel
+
+### <a name="ssrs-report-viewer-control"></a>SSRS-jelentés megtekintői ellenőrzése
+
+Ezzel a funkcióval lehetett interakcióba lépni a HTML formátumú jelentésekkel a Finance and Operations webes ügyfélprogramból.
+
+|                                  |  |
+|----------------------------------|--|
+| **Megszűnés oka**       | Az SQL Reporting Services (SSRS) nem támogatja a helyi webes ügyféllel kompatibilis jelentésmegjelenítőt.      |
+| **Felváltotta másik szolgáltatás?** | A jelentések megjelenítése PDF-dokumentumokként történik a helyszíni szolgáltatásnál. Bővítmények használatával engedélyezheti a beágyazott részletezési hivatkozásokat a pályázati jelentésekben. |
+| **Érintett modulok**             | Mind    |
+
+### <a name="document-routing-agent"></a>Dokumentumirányítási ügynök
+
+A dokumentumirányítási ügynök ügyfél szolgáltatásátjáróként szolgál, amely összeköti a felhőalapú és a tartomány által hitelesített hálózati nyomtatókat.
+
+|                                  |  |
+|----------------------------------|--|
+| **Megszűnés oka**       | A helyszíni telepítések tárolása tartományalapú hitelesítést használó kiszolgálókon történik. Ez biztonságos, közvetlen hozzáférést biztosít a hálózati nyomtatók számára. |
+| **Felváltotta másik szolgáltatás?** | Ez az összetevő nem szükséges a helyszíni telepítéseknél.|
+| **Érintett modulok**             | Nincs               |
 
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Olyan funkciók, amelyek elavulnak a Dynamics 365 for Operations 1611 3. platformfrissítése során
@@ -488,11 +511,20 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 
 Az adatpartíciók az adatok logikus elkülönítését biztosítják a Microsoft Dynamics AX adatbázisában.
 
-|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   |   |
+|---|---|
 | Megszűnés oka       | Az adatpartíciókat a Microsoft Dynamics AX 2012 R2 változatában vezették be adatok elkülönítéséhez. Általános esetben a vállalat leányvállalatokkal rendelkezik, és egy leányvállalat adatait nem láthatja egy másik leányvállalat, annak ellenére, hogy mindkét leányvállalatot azonos informatikai részleg kezeli. Azonban további parancsfájlok és kezelési többletköltség voltak szükségesek új partíciók létrehozására és azok adatokkal való feltöltésére, és a partíció adatainak biztonsági mentésére. A felhőben, ahol hozzáférésünk van platformhoz mint szolgáltatáshoz (PaaS), adatbázis-szolgáltatáshoz (Windows Azure a Microsoft SQL adatbázis), sokkal hatékonyabb az adatbázist elkülönítési tárolóként használni, mint a elkülönítést végezni a programon belül. Függetlenül attól, hogy adatpartíció szükségesek leányvállalatoknak, több bérlőnek vagy csak mérlegelésre, úgy véljük, hogy az esetek jobban kezelhetők több adatbázissal vagy több Dynamics AX példánnyal. |
-| Felváltotta másik szolgáltatás? | Az adatpartíciókat több adatbázisra vagy Dynamics AX példányokra cserélik támogatással vagy egy jövőbeli programverzióban.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Érintett modulok             | Mind                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Felváltotta másik szolgáltatás? | Az adatpartíciókat több adatbázisra vagy Dynamics AX példányokra cserélik támogatással vagy egy jövőbeli programverzióban.    |
+| Érintett modulok             | Mind  |
+
+### <a name="database-and-file-share-storage-for-attachments"></a>Adatbázis és fájlmegosztás tárolása a mellékletek számára
+A Microsoft Dynamics AX 2012 lehetővé tette a mellékletek tárolását az adatbázisban és a fájlmegosztásokban. Ezek a lehetőségek a továbbiakban nem támogatottak.
+
+|                              |                                        |
+|------------------------------|----------------------------------------|
+| Megszűnés oka       | A fájlmegosztással történő tárolás a továbbiakban már nem támogatott, mert a felhőalapú tárolási környezet nem tud kommunikálni a helyi fájlmegosztásokkal. Az adatbázia-alapú tárolás helyére az Azure Blob-tárolás lépett. Az Azure Blob-tárolás megegyezik az adatbázisban való tárolással, mivel a dokumentumok elérése csak a Dynamics 365 for Finance and Operations ügyfélképernyőkön keresztül történhet. Ez a megoldás azzal a plusz előnnyel jár, hogy olyan tárhelyet kínál, amely nem befolyásolja negatívan az adatbázis teljesítményét. A Blob-tárolás a dokumentumkezelés alapértelmezett tárolási mechanizmusa, és azonnal működik. |
+| Felváltotta másik szolgáltatás? | Az adatbázia-alapú tárolás helyére az Azure Blob-tárolás lépett.       |
+| Érintett modulok             | Mind                   |
 
 ### <a name="delimitation"></a>Elválasztás
 
@@ -525,7 +557,7 @@ A Dynamics AX 2012 R3 rendszerben a Retail Modern pénztár az Enterprise POS re
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Megszűnés oka       | A honosított funkció helyett már az általános funkció használatos.                                                                                                                                                                 |
-| Felváltotta másik szolgáltatás? | Igen, ezt a funkciót a Továbbfejlesztett banki egyeztetés funkció váltotta fel. Továbbá, a camt.053 ISO20022 számlakivonat-import beépítése is tervbe van véve az Főkönyvi naplóra vonatkozóan a következő Dynamics AX frissítésben. |
+| Felváltotta másik szolgáltatás? | Igen, ezt a funkciót a Továbbfejlesztett banki egyeztetés funkció váltotta fel. |
 | Érintett modulok             | Mind                                                                                                                                                                                                                                   |
 
 ### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL, Németország)
@@ -577,7 +609,7 @@ Előjegyzés létrehozás nem lehetséges köteg használatával, azonban a felh
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Megszűnés oka       | A formátum már nem alkalmazható Németországban, mivel azt felváltotta a SEPA funkció.                                                                                                                                                                 |
-| Felváltotta másik szolgáltatás? | Igen, ez a funkció le lett cserélve a SEPA kifizetési export és a továbbfejlesztett banki egyeztetés funkciókra a számlakivontok importálásához. Továbbá, a camt.053 ISO20022 számlakivonat-import beépítése is tervbe van véve az Főkönyvi naplóra vonatkozóan a következő Dynamics AX frissítésben. |
+| Felváltotta másik szolgáltatás? | Igen, ez a funkció le lett cserélve a SEPA kifizetési export és a továbbfejlesztett banki egyeztetés funkciókra a számlakivontok importálásához. |
 | Érintett modulok             | Mind                                                                                                                                                                                                                                                                                            |
 
 ### <a name="german-dtazv-payment-format"></a>Német DTAZV fizetési formátum
@@ -593,7 +625,7 @@ Előjegyzés létrehozás nem lehetséges köteg használatával, azonban a felh
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Megszűnés oka       | A honosított funkció helyett már az általános funkció használatos.                                                                                                                                                                 |
-| Felváltotta másik szolgáltatás? | Igen, ezt a funkciót a Továbbfejlesztett banki egyeztetés funkció váltotta fel. Továbbá, a camt.053 ISO20022 számlakivonat-import beépítése is tervbe van véve az Főkönyvi naplóra vonatkozóan a következő Dynamics AX frissítésben. |
+| Felváltotta másik szolgáltatás? | Igen, ezt a funkciót a Továbbfejlesztett banki egyeztetés funkció váltotta fel. |
 | Érintett modulok             | Mind                                                                                                                                                                                                                                   |
 
 ### <a name="german-xml-eu-sales-list"></a>Német XML-formátumú EU Értékesítési lista

@@ -1,7 +1,7 @@
 ---
 title: "Állítson be külső katalógust a PunchOut e-beszerzés számára"
 description: "Ez a témakör egy külső katalógus (punchout-katalógus) használatát mutatja be, amelynek révén információt gyűjt egy szállítótól, hozzáadja egy igényléshez."
-author: BibiSp
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2d853cb963471f81d7a2a09a0f7913722de8a417
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 4c89f6f168825f7767b836be09fa73b8659b00c6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -40,9 +40,9 @@ A külső katalógusnak lehetővé kell tennie, hogy a beszerzési igénylésbe 
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Külső szállítói katalógus beállításához a következő feladatokat kell elvégeznie:
 
-1. Beszerzési kategóriahierarchia beállítása. További információkért lásd: [Beszerzésikategória-hierarchiák irányelveinek beállítása](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/)
-2. Regisztrálja a szállítót a Finance and Operations rendszerben. Mielőtt beállíthatná a külső gyártó katalógusához szükséges konfigurációkat, be kell állítania a szállítót és a szállítói kapcsolattartót a Microsoft Dynamics 365 rendszerben. A külső katalógus szállítóját is hozzá kell adni a kiválasztott beszerzési kategóriához. A szállítók Microsoft Dynamics 365 rendszerben történő regisztrálásával kapcsolatos további tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](/procurement/manage-vendor-collaboration-users.md). A szállítónak a beszerzési kategóriához való hozzárendelésével kapcsolatos további tudnivalókat lásd: [Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
-3. Győződjön meg arról, hogy a mértékegységek és a szállító által használt pénznem be van beállítva. A mértékegység létrehozásával kapcsolatos további tudnivalókat lásd: [Mértékegységek létrehozása](/https://ax.help.dynamics.com/en/wiki/manage-unit-of-measure/).
+1. Beszerzési kategóriahierarchia beállítása. További információkért lásd: [Beszerzésikategória-hierarchiák irányelveinek beállítása](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies)
+2. Regisztrálja a szállítót a Finance and Operations rendszerben. Mielőtt beállíthatná a külső gyártó katalógusához szükséges konfigurációkat, be kell állítania a szállítót és a szállítói kapcsolattartót a Microsoft Dynamics 365 rendszerben. A külső katalógus szállítóját is hozzá kell adni a kiválasztott beszerzési kategóriához. A szállítók Microsoft Dynamics 365 rendszerben történő regisztrálásával kapcsolatos további tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md). A szállítónak a beszerzési kategóriához való hozzárendelésével kapcsolatos további tudnivalókat lásd: [Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories).
+3. Győződjön meg arról, hogy a mértékegységek és a szállító által használt pénznem be van beállítva. A mértékegység létrehozásával kapcsolatos további tudnivalókat lásd: [Mértékegységek kezelése](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure).
 4. Állítsa be a külső szállítói katalógust a szállító külső katalógusának webhelye által előírt követelmények használatával. Az ezzel kapcsolatos további információkért tekintse meg a következő szakaszt.
 5. Tesztelje a szállító külső katalógusának konfigurációit, hogy biztosítsa a beállítások érvényességét, valamint hogy hozzáférhet a szállítói külső katalógushoz. Használja a **Beállítások ellenőrzése** műveletet az ön által beállított beállításkérési üzenet ellenőrzéséhez. Az üzenet következményeként a szállítók külső katalóguswebhelyének meg kell nyílnia egy böngészőablakban. Az ellenőrzés során nem rendelhet cikkeket és szolgáltatásokat a szállítótól. Cikkek és szolgáltatások rendeléséhez egy beszerzési igénylésből kell hozzáférnie a szállítói katalógushoz.
 6. Aktiválja a külső katalógust a **Katalógus aktiválása** gombra kattintva a **Külső katalógusok** lapon. A külső katalógust aktiválni kell, mielőtt az alkalmazottak használni kezdenék. A külső katalógust bármikor inaktiválhatja.

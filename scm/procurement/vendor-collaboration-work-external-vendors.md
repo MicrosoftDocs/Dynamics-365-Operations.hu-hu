@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b0aefc62f2d54da963f03dc74d492260722cd451
-ms.openlocfilehash: aabb8277218895566edada3c74d99c02a83dae1e
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/15/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,7 +36,7 @@ A **Szállítói együttműködés** modul azokat a szállítókat célozza meg,
 
 Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace) részt. Az új szállítói együttműködési felhasználók létrehozásával kapcsolatos tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md).
 
-Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace) részt. 
+Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace) részt. 
 
 Az új szállítói együttműködési felhasználók létrehozásával kapcsolatos tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md).
 
@@ -196,12 +196,16 @@ Ha bekapcsolta a beszerzési rendelés számára a változáskezelést, a beszer
 
 Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat, amik érinthetnek egy beszerzési rendelést, ha a változáskezelés be van kapcsolva. Ha be van kapcsolva a változáskezelés a beszerzési rendelésnél, a beszerzési rendelés verziója a jóváhagyás után lesz regisztrálva, nem pedig a megerősítés vagy a szállítónak való küldés után.
 
-|                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Művelet**                                                                                                    | **Állapot és verzió**                                                                                                                                                                                                                                                                                                                                                                      |
-| A beszerzési rendelés eredeti verziója a Finance and Operations rendszerben jön létre.                                      | Az állapota **Vázlat**.                                                                                                                                                                                                                                                                                                                                                                    |
-
-| A beszerzési rendelést elküldik a jóváhagyási folyamatra. (A jóváhagyási folyamat egy belső folyamat, amelyben a szállító nem vesz részt.) | Az állapota **Vázlat** értékről **Ellenőrzés alatt** értékre, majd **Jóváhagyás** értékre módosul, ha a jóváhagyási folyamat során a beszerzési rendelést nem utasították el. A jóváhagyott beszerzési rendelés verzióként van regisztrálva.                                                                                                                                                                                                                     | | A beszerzési rendelést elküldik a szállítónak                                                                            | Egy új verziót regisztrálnak a szállítói együttműködési felületen, és a rendelés állapota **Külső ellenőrzés alatt** állapotra módosul.                                                                                                                                                                                                                                                                       | | Megteszi a szállító által igényelt módosításokat, kézzel vagy a válaszon levő művelet segítségével a beszerzési rendelés frissítése érdekében.                                                       | Az állapot újra **Vázlat** lesz.                                                                                                                                                                                                                                                                                                                                                    | | A beszerzési rendelést újra elküldik a jóváhagyási folyamatra.                                                            | Az állapot **Vázlat** állapotról **Ellenőrzés alatt** állapotra, majd **Jóváhagyva** állapotra módosul, ha a beszerzési rendelés nem kerül elutasításra a jóváhagyási folyamat alatt. Úgy is konfigurálhatja a rendszert, hogy a változás esetén ne legyen szükséges az adott mező ismételt jóváhagyása. Ebben az esetben az állapot **Vázlat** lesz, majd automatikusan frissül **Jóváhagyva** állapotra. A jóváhagyott beszerzési rendelés új verzióként lesz regisztrálva. | | A beszerzési rendelés új verzióját küldi el a szállítónak.                                                             | Egy új verziót regisztrálnak a szállítói együttműködési felületen, és a rendelés állapota **Külső ellenőrzés alatt** állapotra módosul.                                                                                                                                                                                                                                                                   | | A szállító jóváhagyja a beszerzési rendelés új verzióját.                                                                | Az állapot vagy automatikusan változik **Visszaigazolva** állapotra, vagy akkor, amikor megkapja a szállító válaszát, és megerősíti a beszerzési rendelést.                                                                                                                                                                                                                                                     |
+|                                                                          |                                                                                                                                                              |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Művelet**                                                               | **Állapot és verzió**                                                                                                                                       |
+| A beszerzési rendelés eredeti verziója a Finance and Operations rendszerben jön létre.      | Az állapota **Vázlat**.  |
+| A beszerzési rendelést elküldik a jóváhagyási folyamatra. (A jóváhagyás folyamata egy belső folyamat, amelyben a szállító nem vesz részt.)                                                           | Az állapot **Vázlat** állapotról **Ellenőrzés alatt** állapotra, majd **Jóváhagyva** állapotra módosul, ha a beszerzési rendelés nem kerül elutasításra a jóváhagyási folyamat alatt. A jóváhagyott beszerzési rendelés verzióként van regisztrálva.           | 
+| A beszerzési rendelést a rendszer elküldi a szállítónak.                                                            | Egy verziót regisztrálnak a szállítói együttműködési felületen, és a rendelés állapota **Külső ellenőrzés alatt** állapotra módosul.      |
+| Megteszi a szállító által igényelt módosításokat, kézzel vagy a válaszon levő művelet segítségével a beszerzési rendelés frissítése érdekében.                                                            | Az állapot újra **Vázlat** lesz     |
+|A beszerzési rendelést újra elküldik a jóváhagyási folyamatra.                                                |  Az állapot **Vázlat** állapotról **Ellenőrzés alatt** állapotra, majd **Jóváhagyva** állapotra módosul, ha a beszerzési rendelés nem kerül elutasításra a jóváhagyási folyamat alatt. Úgy is konfigurálhatja a rendszert, hogy a változás esetén ne legyen szükséges az adott mező ismételt jóváhagyása. Ebben az esetben az állapot **Vázlat** lesz, majd automatikusan frissül **Jóváhagyva** állapotra. A jóváhagyott beszerzési rendelés új verzióként lesz regisztrálva.                                         |
+|A beszerzési rendelés új verzióját küldi el a szállítónak.                                                |  Egy új verziót regisztrálnak a szállítói együttműködési felületen, és a rendelés állapota **Külső ellenőrzés alatt** állapotra módosul.                                         |
+|A szállító jóváhagyja a beszerzési rendelés új verzióját.                                                |  Az állapot vagy automatikusan változik **Visszaigazolva** állapotra, vagy akkor, amikor megkapja a szállító válaszát, és megerősíti a beszerzési rendelést. |
 
 ## <a name="share-information-about-consignment-inventory"></a>Bizományosi készlettel kapcsolatos adatok megosztása
 Bizományosi készlet használatakor a szállító a szállítói együttműködési felület segítségével megtekintheti az adatokat a következő lapokon:

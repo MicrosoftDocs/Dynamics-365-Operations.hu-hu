@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: d549f38b9278eed222a1318c51962b248149c569
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -78,7 +78,7 @@ A termelési bemenet naplók úgy működnek, mint a cikkérkezési naplók, de 
 
 ### <a name="counting"></a>Számlálás
 
-Leltárnaplók segítségével javítsa ki az aktuális készleteket amelyek cikkekhez vagy cikkcsoportokhoz vannak regisztrálva és adja fel az aktuális fizikai mennyiséget, így elvégezheti a különbségek egyeztetetéséhez szükséges kiigazítást. Társíthat leltár irányelveket leltárcsoportokkal, így könnyebb eltérő tulajdonságú cikkeket csoportosítani, emiatt a cikkek hozzáadhatók a leltárnaplóhoz. Például beállíthat leltárcsoportokat, olyan cikkek leltárazásához, amelyek adott gyakorisággal rendelkeznek, vagy ha a készlet egy adott szintre csökken. További információért a leltárcsoportok meghatározásával kapcsolatban, lásd [Leltárazási folyamatok meghatározása (Feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Leltárnaplók segítségével javítsa ki az aktuális készleteket amelyek cikkekhez vagy cikkcsoportokhoz vannak regisztrálva és adja fel az aktuális fizikai mennyiséget, így elvégezheti a különbségek egyeztetetéséhez szükséges kiigazítást. Társíthat leltár irányelveket leltárcsoportokkal, így könnyebb eltérő tulajdonságú cikkeket csoportosítani, emiatt a cikkek hozzáadhatók a leltárnaplóhoz. Például beállíthat leltárcsoportokat, olyan cikkek leltárazásához, amelyek adott gyakorisággal rendelkeznek, vagy ha a készlet egy adott szintre csökken. További információért a leltárcsoportok meghatározásával kapcsolatban, lásd [Leltárazási folyamatok meghatározása (Feladat-útmutató)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes).
 
 ### <a name="tag-counting"></a>Címkeleltár
 

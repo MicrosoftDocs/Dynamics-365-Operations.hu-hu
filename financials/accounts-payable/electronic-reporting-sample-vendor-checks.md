@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
-ms.dyn365.intro: 2017-06-30
+ms.dyn365.intro: 2017-06-30T00:00:00.000Z
 ms.dyn365.version: Enterprise edition, July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6cb473962f40ed9ef2f5f807f089098764f47009
-ms.openlocfilehash: 8228690ee5ab7839ec19c307c23f9b6150006371
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: a8ba439ff643fce4811be9224a3edf96b2b9025c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/14/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -38,11 +38,11 @@ A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition olyan mi
 
 ## <a name="what-do-i-have-to-set-up"></a>Mit kell beállítanom?
 
-- Mielőtt csekkeket nyomtathatna az ER használatával, legalább egy aktív csekk-konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+- Mielőtt csekkeket nyomtathatna az ER használatával, legalább egy aktív csekk-konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 - Ha készpénz- ls bankkezelési csekkeket konfigurál a bankszámlánál, jelölje be az **Általános elektronikus exportálási formátum** jelölőnégyzetet, majd válassza ki a megfelelő csekkformátumot az exportálási formátum konfigurációjaként.
 - Azoknak a bizonylatsoroknak a számát is adja meg, amelyeket az utalásra nyomtat. Mindig szerepeltesse a fejlécsorokat a szám kiszámításakor. A két próbacsekkformátumnál a bizonylatsorok ajánlott száma 17. Ez a szám azonban változó, a csekk-készlettől és a nyomtatóillesztőktől függően.
 - Javasoljuk, hogy nyomtasson próbacsekket a csekkelrendezés ellenőrzéséhez. Próbacsekk nyomtatásához válassza a **Tesztnyomtatás** lehetőséget. A mintacsekkformátumok akkor működnek legjobban, ha a **Margók** beállítása **Nincs** a Microsoft Excel haladó nyomtatótulajdonságaiban. Miután elkészült a próbacsekk, engedélyezze az Excel-kimenet szerkesztését, és konfigurálja az oldalelrendezést úgy, hogy az összes margó beállítása **0** (zéró) legyen. Hasonlítsa össze a csekkek próbapéldányát a készletével, és módosítsa a beállításokat addig, amíg nem elégedett az elrendezéssel.
 - Amikor a konfigurált bankszámlára befizetéseket generál a fizetési naplóban, az ellenőrzéseket a megadott formátumban nyomtatja ki a rendszer.
 
-További információ: [Elektronikus jelentés formátumának módosítása](/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+További információ: [Elektronikus jelentés formátumának módosítása](/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template).
 

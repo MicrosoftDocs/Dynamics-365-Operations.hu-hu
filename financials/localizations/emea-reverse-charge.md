@@ -1,5 +1,5 @@
 ---
-title: "Fordított áfa | Microsoft dokumentumok"
+title: "Fordított áfa"
 description: "Ez a témakör azt ismerteti, hogyan állítható be a fordított áfa számítása az európai országoknál."
 author: epodkolz
 manager: AnnBe
@@ -13,13 +13,13 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epodkolz
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6cb473962f40ed9ef2f5f807f089098764f47009
-ms.openlocfilehash: b3c94fa73410d9bdcaaec11dee04a7a239e4d45a
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: dba651b4e6f0e661d6743780495c7ee217eefd9d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/14/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -62,7 +62,7 @@ Javasoljuk, hogy külön áfacsoportokat használjon a beszerzési és értékes
 <table>
 <tr>
 <td><strong>Áfacsoportok az értékesítésekre vonatkozóan</strong></td>
-<td>Hozzon létre áfacsoportot a fordított áfát tartalmazó értékesítési műveleteihez (<strong>Adó</strong> > <strong>Közvetett adók</strong> > <strong>Áfa</strong> > <strong>Áfacsoportok</strong>). A <strong>Beállítás</strong> lapon szerepeltesse a csoport költségéhez tartozó áfakódot. Jelölje be az <strong>Adómentes</strong> és a <strong>Fordított adó</strong> négyzetet az áfakódnál.</td>
+<td>Hozzon létre áfacsoportot a fordított áfát tartalmazó értékesítési műveleteihez (<strong>Adó</strong> > <strong>Közvetett adók</strong> > <strong>Áfa</strong> > <strong>Áfacsoportok</strong>).. A <strong>Beállítás</strong> lapon szerepeltesse a csoport költségéhez tartozó áfakódot. Jelölje be az <strong>Adómentes</strong> és a <strong>Fordított adó</strong> négyzetet az áfakódnál.</td>
 </tr>
 <tr>
 <td><strong>Áfacsoportok a beszerzéshez</strong></td>

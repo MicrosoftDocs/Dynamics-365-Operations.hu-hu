@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: a65de22d01d15510c3f2cb792b86e6a88260bed9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2044bd5a3c858fb099fa7f612ede9963acc51efb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,9 +34,10 @@ Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Micro
 
 A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra történő frissítés folyamata](../migration-upgrade/upgrade-latest-update.md).
 
-## <a name="application-releases"></a>Alkalmazáskiadások
+> [!NOTE]
+> A Dynamics 365 for Operations (on-premises) jelenleg átnevezés alatt áll. A kommunikációkban és a licencelési útmutatókban a Dynamics 365 for Operations (on-premises) terméknév szerepel. A terméken belüli név, amelyet a termék telepítésekor lát, a Dynamics 365 for Finance and Operations, Enterprise edition. Mindkét név ugyanarra a termékre vonatkozik.
 
-Ha többet szeretne megtudni a mobil munkaterületekről és a nemrégiben kiadott Power BI-tartalomról, olvassa el a következő részt: [A Dynamics 365 for Finance and Operations mobilalkalmazáshoz nemrégiben kiadott mobil munkaterületek](../mobile-apps/mobile-workspaces-released.md) és [A Dynamics 365 for Finance and Operations programhoz nemrégiben kiadott Power BI-tartalmak](../analytics/power-bi-home-page.md)
+## <a name="application-releases"></a>Alkalmazáskiadások
 
 <table>
 <colgroup>
@@ -57,9 +58,9 @@ Ha többet szeretne megtudni a mobil munkaterületekről és a nemrégiben kiado
 </thead>
 <tbody>
 <tr class="even">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>2017. júliusi frissítés</td>
-<td>X</td>
+<td>7.2.11792.56024</td>
 <td>június 2017.</td>
 <td><a href="whats-new-application-July-2017-update.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítésében</a></td>
 </tr>
@@ -108,9 +109,9 @@ Ha többet szeretne megtudni a mobil munkaterületekről és a nemrégiben kiado
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>8-as platformfrissítés</td>
-<td>X</td>
+<td>7.0.4565.16212</td>
 <td>június 2017.</td>
 <td><a href="whats-new-platform-update-8.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 8. platformfrissítésében (2017 júniusa)</a></td>
 </tr>

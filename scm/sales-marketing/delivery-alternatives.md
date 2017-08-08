@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 79d1e7349df7e5042af016f9b595f9cf9bcfc294
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 33fe96562777443bffc5dac30fd3a273bcffb6e0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -43,7 +42,7 @@ A **Szállítási** **alternatívák** lapot az értékesítésirendelés-sorbó
 1.  Kattintson a **Termékek és készlet** &gt; **Szállítási alternatívák** lehetőségre.
 2.  Kattintson a **Sor adatai** &gt; **Szállítás** &gt; **Szállítási alternatívák** lehetőségre.
 
-A **Szállítási alternatívák** lapot az **Értékesítési rendelés feldolgozása és lekérdezése** munkaterület megnyitásával is megnyithatja, ahol kattintson a **Rendelések és kedvencek** &gt; **Késleltetett rendeléssorok** &gt; **Szállítási alternatívák** lehetőségre **Megjegyzés:**a **Szállítási alternatívák** lapot csak akkor nyithatja meg ha teljesül mindkét következő feltétel:
+A **Szállítási alternatívák** lapot az **Értékesítési rendelés feldolgozása és lekérdezése** munkaterület megnyitásával is megnyithatja, ahol kattintson a **Rendelések és kedvencek** &gt; **Késleltetett rendeléssorok** &gt; **Szállítási alternatívák** lehetőségre **Megjegyzés:** a **Szállítási alternatívák** lapot csak akkor nyithatja meg ha teljesül mindkét következő feltétel:
 
 -   Minden kötelező értékesítési sor adata ki van töltve.
 -   A **Szállítási dátum ellenőrzése** mező a **Nincs** értéktől eltérő értékre van állítva.
@@ -151,7 +150,7 @@ Ez a lap kiemeli a kiválasztott szállítási alternatíva hatását. Ha az **O
 <a name="see-also"></a>Lásd még
 --------
 
-[Rendelési ígéretek](http://ax.help.dynamics.com/en/wiki/delivery-dates-and-available-to-promise-calculations/)
+[Rendelési ígéretek](/dynamics365/unified-operations/supplychain/sales-marketing/delivery-dates-available-promise-calculations)
 
 
 

@@ -1,58 +1,72 @@
 ---
 title: "Költségkezelés mobil munkaterület"
-description: "Ez a témakör a Költségkezelés mobil munkaterületről nyújt tájékoztatást, amely a Microsoft Dynamics 365 for Finance and Operations mobilalkalmazásban érhető el. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A mobil munkaterület azt is lehetővé teszi a felhasználók számára, hogy gyorsan létrehozzanak egy kiadási sort egy mellékelt nyugta segítségével."
-author: annbe
+description: "Ez a témakör a Költséggazdálkodás mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket."
+author: KimANelson
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-audience: end user, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 274023
 ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
-ms.author: annbe
+ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0e52d1c5dde7f79c4a8ac5ac2d9c3b25bba9c2cd
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
+ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="expense-management-mobile-workspace"></a>Költségkezelés mobil munkaterület
+# <a name="expense-management-mobile-workspace"></a>Költségkezelési mobil munkaterület
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör a **Költséggazdálkodás** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket. Ezenkívül a jóváhagyók a **Költséggazdálkodás** mobil munkaterület segítségével megtekinthetik a hozzájuk rendelt költségjelentéseket, majd jóváhagyhatják vagy elutasíthatják az adott költségjelentéseket.
 
-Ez a témakör a Költségkezelés mobil munkaterületről nyújt tájékoztatást, amely a Microsoft Dynamics 365 for Finance and Operations mobilalkalmazásban érhető el. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A mobil munkaterület azt is lehetővé teszi a felhasználók számára, hogy gyorsan létrehozzanak egy kiadási sort egy mellékelt nyugta segítségével.
 
-<a name="overview-of-the-expense-management-mobile-workspace"></a>A Költséggazdálkodás mobil munkaterület áttekintése
----------------------------------------------------
+A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban való használatra tervezték.
 
-Számos szervezet megköveteli, hogy a nyugta egy példányát csatolja az utazással kapcsolatos vagy az üzleti vonatkozású költségjelentéshez az alkalmazott, amikor visszatérítést igényel. A **Költséggazdálkodás** mobil munkaterület lehetővé teszi a felhasználók számára, hogy gyorsan új költségsorokat hozzanak létre a választott mobileszközön a nyugta csatolt fényképével. Alternatív megoldásként a felhasználók rögzíthetnek egy fényképet a nyugtáról, majd később egy költségjelentéshez csatolhatják azt. A **Költséggazdálkodás** mobil munkaterület a következőket teszi lehetővé egy felhasználó számára:
 
--   Készítsen fotót a nyugtáról, és töltse azt fel a Microsoft Dynamics 365 for Finance and Operations szolgáltatásba. A felhasználó később is csatolhatja a fotót a költségjelentéshez.
--   Fájl feltöltése rögzített nyugtaként. A felhasználó később is csatolhatja a fájlt a költségjelentéshez.
--   Új költségsor létrehozása csatolt nyugta használatával. A felhasználó később is hozzáadhatja a sort a költségjelentéshez, majd beküldheti azt jóváhagyás és visszatérítés céljából.
+## <a name="overview"></a>Áttekintés
 
-A témakör fennmaradó szakaszai a **Költséggazdálkodás** mobil munkaterület megvalósítását és használatát mutatják be.
+Számos szervezet megköveteli, hogy a nyugta egy példányát csatolja az utazással kapcsolatos vagy az üzleti vonatkozású költségjelentéshez az alkalmazott, amikor visszatérítést igényel. A **Költséggazdálkodás** mobil munkaterület lehetővé teszi a felhasználók számára, hogy gyorsan új költségsorokat hozzanak létre a választott mobileszközön a nyugta csatolt fényképével. Alternatív megoldásként a felhasználók rögzíthetnek egy fényképet a nyugtáról, majd később egy költségjelentéshez csatolhatják azt. Az alkalmazottak maguk is létrehozhatják és kezelhetik a költségjelentéseiket, majd beküldhetik őket jóváhagyásra és visszatérítésre a mobileszközük használatával.
+
+
+A **Költségkezelés** mobil munkaterület használatával a felhasználók a következő feladatokat hajthatják végre:
+
+- Készítsen fotót a nyugtáról, és töltse azt fel a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition szolgáltatásba. A fotót később is csatolhatja a költségjelentéshez.
+- Fájl feltöltése rögzített nyugtaként. A fájlt később is csatolhatja a költségjelentéshez.
+- Új költségsor létrehozása csatolt nyugta használatával. Később is hozzáadhatja a sort a költségjelentéshez, majd beküldheti azt jóváhagyás és visszatérítés céljából.
+
+Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését használja, a következő funkciók is elérhetők:
+
+- Új költségjelentés készítése.
+- Hitelkártya-tranzakciók és egyéb, korábban létrehozott költségek csatolása egy költségjelentéshez.
+- Új költségek létrehozása egy költségjelentéshez.
+- Nyugta csatolása egy költségjelentéshez tartozó bármely költséghez vagy fénykép készítése által, vagy egy rögzített nyugta képfájljának feltöltésével.
+- A vállalat költségirányelveitől függően vendégek listáját is hozzáadhatja egy költséghez.
+- A vállalat költségirányelveitől függően a költségek részletezése is lehetséges.
+- Költségjelentés benyújtása jóváhagyásra és visszatérítésre.
+- Jóváhagyhatja vagy elutasíthatja az olyan költségjelentéseket, amelyeknek Ön a hozzárendelt jóváhagyója.
 
 ## <a name="prerequisites"></a>Előfeltételek
-A **Költséggazdálkodás** mobil munkaterület használata előtt győződjön meg arról, hogy a rendszergazda biztosítja a következő előfeltételeket.
+Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás 2017. júliusi frissítését használja 
+Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését, a rendszergazdának közzé kell tennie a **Költséggazdálkodás** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, 1611-es verzióját használja a 3-as vagy újabb platformfrissítéssel
+Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a szervezeténél a 3-as vagy újabb platformfrissítéssel, akkor a rendszergazdának a következő előfeltételeket kell teljesítenie. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Előfeltételek</th>
@@ -62,77 +76,171 @@ A **Költséggazdálkodás** mobil munkaterület használata előtt győződjön
 </thead>
 <tbody>
 <tr class="odd">
-<td>A Microsoft Dynamics 365 for Operations 1611-es verziójához a 3. vagy újabb platformfrissítést kell végrehajtani.</td>
+<td>Telepítse a KB 4019015 programot.</td>
 <td>Rendszergazda</td>
-<td>Ha a vállalati hálózatra még nincs telepítve a Finance and Operations, rendszergazdájának el kell olvasnia a következő tudnivalókat: <a href="/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment">Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás bemutatókörnyezetének telepítése</a>.</td>
+<td>A 4019015-es tudásbáziscikk egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza a <strong>Költséggazdálkodás</strong> mobil munkaterületet. A KB 4019015 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Töltse le a metaadatok gyorsjavítását a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza az <strong>ApplicationSuite</strong> és az <strong>ExpenseMobile</strong> modelleket, majd töltse fel a telepíthető csomagot az LCS-be.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza telepíthető csomagot</a>.</li>
+</ol></td>
 </tr>
 <tr class="even">
-<td>A KB 4019015 végrehajtása kötelező.</td>
+<td>Tegye közzé a <strong>Költségkezelés</strong> mobil munkaterületet.</td>
 <td>Rendszergazda</td>
-<td>A KB 4019015 (egy X++ frissítés vagy a metaadatok gyorsjavítása) négy mobil munkaterületet tartalmaz az ellátásilánc-kezeléshez. A KB 4019015 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket:
-<ol>
-<li>Töltse le a KB 4019015 frissítést a Microsoft Dynamics Lifecycle Services (LCS) webhelyéről.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza az <strong>ApplicationSuite</strong> és az <strong>ExpenseMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza a telepíthető csomagot</a> és a Finance and Operations rendszerre.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>A <strong>Költséggazdálkodás</strong> mobil munkaterületet közzé kell tenni a Finance and Operations mobilalkalmazás számára.</td>
-<td>Rendszergazda</td>
-<td><ol>
-<li>Indítsa el a Finance and Operations alkalmazást a böngészőben.</li>
-<li>A <strong>Rendszerparaméterek</strong> lapon válassza a <strong>Mobil munkaterületek kezelése</strong> lehetőséget.</li>
-<li>Válassza ki a <strong>Költséggazdálkodás</strong> munkaterület.</li>
-<li>Kattintson a <strong>Mobil munkaterület közzététele</strong> lehetőségre.</li>
-</ol></td>
+<td>Lásd: <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobil munkaterület közzététele</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-finance-and-operations-mobile-app"></a>Töltse le és telepítse a Finance and Operations mobilalkalmazást.
-A mobiljához tartozó alkalmazásáruházból töltse le és telepítse a Finance and Operations mobilalkalmazást.
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Töltse le és telepítse a Dynamics 365 for Operations mobilalkalmazást
+Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
 
--   Android: [Finance and Operations a Google Play Áruházban](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone: [Finance and Operations az iTunes App Store áruházban](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+- [Android-telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
+- [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-finance-and-operations-mobile-app"></a>Bejelentkezés a Finance and Operations mobilalkalmazásba
-1.  Indítsa el az alkalmazást a mobileszközén.
-2.  Írja be a Finance and Operations URL-címét
-3.  Adja meg a vállalatot a bejelentkezéshez. Például írja be azt, hogy **USMF**.
-4.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót a Finance and Operations-fiókjához. Adja meg a hitelesítési adatait.
-5.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, lekéréssel frissítheti mobil munkaterületek listáját. 
+## <a name="sign-in-to-the-mobile-app"></a>Bejelentkezés a mobilalkalmazásba
+1. Indítsa el az alkalmazást a mobileszközén.
+2. Adja meg a Dynamics 365 URL-címét.
+4. Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
+5. A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
+
 
 [![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Nyugta rögzítése a Költséggazdálkodás mobil munkaterület használatával
-1.  A mobileszközön válassza a **Költséggazdálkodás** munkaterület.
-2.  Válassza a **Nyugta rögzítése** elemet.
-3.  Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
-4.  Ha a **Fénykép készítése** lehetőséget választotta, kövesse az alábbi lépéseket:
-    1.  Ekkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról. Amikor elkészült a fénykép, kattintson az **OK** lehetőségre a fénykép elfogadásához.
-    2.  Nem kötelező: Adja meg a fénykép nevét, vagy írja be megjegyzéseit.
 
-     **Ha pedig** a **Kép kiválasztása** lehetőséget választotta, kövesse az alábbi lépéseket:
-    1.  A listából válasszon ki egy képet.
-    2.  Nem kötelező: Adja meg a kép nevét, vagy írja be megjegyzéseit.
+1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
+2. Válassza a **Nyugta rögzítése** elemet.
+3. Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
+4. Tegye a következők egyikét:
 
-5.  Válassza a **Kész** lehetőséget.
+    - Ha a **Fénykép készítése** lehetőséget választotta, kövesse az alábbi lépéseket:
 
-## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Költségbejegyzés gyors rögzítése a Költséggazdálkodás mobil munkaterület használatával
-1.  A mobileszközön válassza a **Költséggazdálkodás** munkaterület.
-2.  Válassza ki a **Gyors költségbejegyzés** lehetőséget.
-3.  Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint legfeljebb 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért lásd a [Finance and Operations mobilplatformot](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Ha a kategória nem szerepel a listán, válassza a **Keresés** elemet a Finance and Operationsben végzett online keresés érdekében. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
-4.  Adja meg a költségtranzakció dátumát.
-5.  Nem kötelező: Adjon kereskedőt a költséghez.
-6.  Adja meg a költség összegét.
-7.  Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint legfeljebb 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért lásd a [Finance and Operations mobilplatformot](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Ha a pénznem nem szerepel a listán, válassza a **Keresés** elemet a Finance and Operationsben végzett online keresés érdekében. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
-8.  Válassza ki a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
-9.  Ha a **Fénykép készítése** lehetőséget választotta, akkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról. Amikor elkészült a fénykép, kattintson az **OK** lehetőségre a fénykép elfogadásához.  Ha pedig a **Kép kiválasztása** lehetőséget választotta, jelöljön ki egy képet a listán.
+        1. Ekkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról. Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.
+        2. Nem kötelező: Adja meg a fénykép nevét, vagy írja be megjegyzéseit.
+
+    - Ha a **Kép kiválasztása** lehetőséget választotta, kövesse az alábbi lépéseket:
+
+        1. A listából válasszon ki egy képet.
+        2. Nem kötelező: Adja meg a kép nevét, vagy írja be megjegyzéseit.
+
+5. Válassza a **Kész** lehetőséget.
+
+## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Költségek gyors rögzítése a Költséggazdálkodás mobil munkaterület használatával
+1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
+2. Válassza ki a **Gyors költségbejegyzés** lehetőséget.
+3. Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
+4. Adja meg a költségtranzakció dátumát.
+5. Nem kötelező: Adjon kereskedőt a költséghez.
+6. Adja meg a költség összegét.
+7. Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
+8. Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
+9. Tegye a következők egyikét:
+
+    - Ha a **Fénykép készítése** lehetőséget választotta, akkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról. Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.
+    - Ha a **Kép kiválasztása** lehetőséget választotta, jelöljön ki egy képet a listán.
+
 10. Válassza a **Kész** lehetőséget.
 
+## <a name="approve-an-expense-report-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>A költségjelentések jóváhagyását a Költségkezelési mobil munkaterület segítségével is elvégezheti (ha a 2017. júliusi frissítést használja)
+1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
+2. A **Költségjóváhagyások** megmutatja a jóváhagyásra Önhöz rendelt költségjelentések számát. A szám körülbelül 30 percenként frissül. Válassza ki a **Költségjóváhagyások** lehetőséget.
 
+    Megjelenik egy lista a jóváhagyásra Önhöz rendelt költségjelentésekkel.
+    
+3. Válasszon ki egy költségjelentést a költség részleteinek megtekintéséhez.
+4. Válasszon ki egy költséget a részleteinek megtekintéséhez. A költségnél megjelenített információk tartalmazzák az összes nyugta, vendég és részletezés adatait.
+5. A **Költségjelentés** oldalra visszatérve jóváhagyhatja vagy elutasíthatja a költségjelentést.
+6. Adja meg a jóváhagyás műveletére vonatkozó esetleges megjegyzéseket.
+7. Válassza a **Kész** lehetőséget.
 
+## <a name="create-a-new-expense-report-and-submit-it-for-approval-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>Hozzon létre egy új költségjelentést, és küldje be jóváhagyásra a Költségkezelési mobil munkaterület segítségével (ha a 2017. júliusi frissítést használja)
+1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
+2. Válassza ki a **Költségbejegyzés** lehetőséget.
+3. Válassza az **Új jelentés** lehetőséget, vagy válasszon ki egy meglévő költségjelentést a listáról.
+4. Az új költségjelentéseknék adja meg a célt és a további rendelkezésre álló adatokat. Ezek az információk változóak, attól függően, hogy milyen módon konfigurálták a Költséggazdálkodás modult a vállalatánál.
+5. Válassza a **Kész** lehetőséget.
+6. Meglévő költségek, mint a hitelkártya-tranzakciók költségjelentéshez való hozzáadásához válassza a **Csatolás** lehetőséget.
+7. Jelöljön ki egy vagy több költséget a listán.
+8. Válassza a **Kész** lehetőséget.
+9. Ha új költséget szeretne hozzáadni a költségjelentéshez, válassza ki az **Új költség** lehetőséget.
+10. Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
+11. Nem kötelező: Adjon kereskedőt a költséghez.
+12. Adja meg a költségtranzakció dátumát.
+13. Adja meg a költség összegét.
+14. Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
+15. Válassza a **Kész** lehetőséget.
+16. Ha további részleteket szeretne hozzáadni a költséghez, válassza ki a **További részletek hozzáadása** lehetőséget. A rendelkezésre álló mezők a Költséggazdálkodás Ön vállalatánál való konfigurációjától függnek.
+17. Ha a vállalati irányelv nyugtát ír elő a költséghez, válassza ki a **Nyugták** lehetőséget, majd kövesse az alábbi lépéseket:
 
+    1. Válassza ki a **Nyugta rögzítése** vagy a **Nyugta csatolása** lehetőséget.
+    2. Tegye a következők egyikét:
 
+        - Ha a **Nyugta rögzítése** lehetőséget választotta, kövesse az alábbi lépéseket:
+
+            1. Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
+            2. Tegye a következők egyikét:
+
+                - Ha a **Fénykép készítése** lehetőséget választotta, kövesse az alábbi lépéseket:
+
+                    1. Ekkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról. Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.
+                    2. Nem kötelező: Adja meg a fénykép nevét, vagy írja be megjegyzéseit.
+
+                - Ha a **Kép kiválasztása** lehetőséget választotta, kövesse az alábbi lépéseket:
+
+                    1. A listából válasszon ki egy képet.
+                    2. Nem kötelező: Adja meg a kép nevét, vagy írja be megjegyzéseit.
+
+            3.  Válassza a **Kész** lehetőséget.
+
+        - Ha a **Nyugta csatolása** lehetőséget választotta, kövesse az alábbi lépéseket:
+
+            1.  Jelöljön ki egy vagy több képet a listán.
+            2.  Válassza a **Kész** lehetőséget.
+
+    3. Válassza ki a **Vissza** gombot a költségrészletekhez való visszatéréshez.
+
+18. Ha a vállalati irányelv vendégeket ír elő a költséghez, válassza ki a **Vendégek** lehetőséget, majd kövesse az alábbi lépéseket:
+
+    1. Válassza ki a **Vendég**, **Előző vendégek** vagy **Munkatársak** lehetőséget.
+    2. Tegye a következők egyikét:
+
+        - Ha a **Vendég** lehetőséget választotta, kövesse az alábbi lépéseket:
+
+            1. Adja meg a vendég nevét.
+            2. Választható: Adja meg a vendég szervezetét és/vagy országát.
+            3. Választható: A vendég szakmai beosztásának megadása.
+            4. Válassza a **Kész** lehetőséget.
+
+        - Ha az **Előző vendégek** lehetőséget választotta, kövesse az alábbi lépéseket:
+
+            1. Jelöljön ki egy vagy több korábbi vendéget a listán. Megjelenik egy lista azokról a korábbi vendégekről, akiket korábbi költségjelentésekhez adott hozzá, és amelyek betöltődtek az alkalmazásába offline használatra. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a korábbi vendég nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Végezhet név szerinti keresést, vagy átválthat a szervezet, ország vagy beosztás szerinti keresésre.
+            2. Válassza a **Kész** lehetőséget.
+
+        - Ha a **Munkatársak** lehetőséget választotta, kövesse az alábbi lépéseket:
+
+            1. Jelöljön ki egy vagy több munkatársat a listán. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött munkatársak listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a munkatárs nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Végezhet név szerinti keresést, vagy átválthat a vállalat vagy beosztás szerinti keresésre.
+            2. Válassza a **Kész** lehetőséget.
+
+    3. Válassza ki a **Vissza** gombot a költségrészletekhez való visszatéréshez.
+
+19. Ha a vállalati irányelv a költségek részletezését írja elő, válassza ki a **Részletezés** lehetőséget, majd kövesse az alábbi lépéseket:
+
+    1. Válassza ki a részletezni kívánt első dátumot.
+    2. Válassza a **Részletezés hozzáadása** elemet.
+    3. Válassza ki a költségrészletezés alkategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségalkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha az alkategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keresés a költség alkategóriájának neve alapján.
+    4. A részletezés tranzakciós összegének megadása.
+    5. Szükség esetén módosítsa a tranzakció dátumát.
+    6. Válassza a **Kész** lehetőséget.
+    7. Ismételje meg a fenti lépéseket addig, amíg be nem fejezte az összes részletezés hozzáadását a kiválasztott dátum esetében.
+    8. Ha további napokat szeretne megadni, választhatja a **Másolás következő napra** lehetőséget, amellyel átviheti a következő napra is a részletezéseket. Másik lehetőségéként kiválaszthatja a részletezendő dátumot, majd részletezéseket adhat hozzá ugyanúgy, mint az első dátum esetében.
+    9. Miután befejezte a költség részletezését, válassza ki a **Vissza** gombot a költség adataihoz való visszatéréshez.
+
+20. Válassza ki a **Vissza** gombot a **Költségjelentés** oldalhoz való visszatéréshez.
+21. Ismételje meg az előző lépéseket addig, amíg be nem fejezte az összes költség megadását.
+22. Válassza a **Beküldés** lehetőséget.
+23. Adja meg a jóváhagyóra vonatkozó esetleges megjegyzéseket.
+24. Válassza a **Kész** lehetőséget.
 

@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 61548f2e308781e8329ca3cd26c3e6502d2f92c9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 017985645e0f77e7f269fce2932c0ec0f6eaaa1c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -45,7 +45,7 @@ Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék v
 -   **Útvonalverzió** – Az útvonalverzió határozza meg a termék vagy termékváltozat előállításánál használt útvonalat. Az útvonalverziók lehetővé teszik az útvonalak újrahasznosítását a különböző termékekben, és időről időre módosíthatók. Azt is lehetővé teszik, hogy ugyanannál a terméknél más és más útvonalakat használjanak. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például a hely vagy az előállítandó mennyiség.
 
 ## <a name="routes"></a>Útvonalak
-Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításánál használatosak. Minden egyes művelethez műveletszámot és következő műveletet rendel a rendszer. A műveletek sorrendje olyan útvonalhálózatot alkot, amely olyan irányított diagramon jeleníthető meg, amelyik egy vagy több kezdőponttal és egy végponttal rendelkezik. A Dynamics 365 for Finance and Operations programban az útvonalak a szerkezettípus alapján különülnek el. A két útvonaltípus az egyszerű útvonal és az útvonalhálózat. A Gyártásvezérlés paramétereinél megadhatja, hogy csak egyszerű útvonalakat lehet használni vagy összetettebb útvonalhálózatokat is.
+Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításánál használatosak. Minden egyes művelethez műveletszámot és következő műveletet rendel a rendszer. A műveletek sorrendje olyan útvonalhálózatot alkot, amely olyan irányított diagramon jeleníthető meg, amelyik egy vagy több kezdőponttal és egy végponttal rendelkezik. A Finance and Operations programban az útvonalak a szerkezettípus alapján különülnek el. A két útvonaltípus az egyszerű útvonal és az útvonalhálózat. A Gyártásvezérlés paramétereinél megadhatja, hogy csak egyszerű útvonalakat lehet használni vagy összetettebb útvonalhálózatokat is.
 
 ### <a name="simple-routes"></a>Egyszerű útvonalak
 
@@ -87,8 +87,8 @@ Minden útvonal külön jóváhagyott vagy jóvá nem hagyott lehet. Vegye figye
 
 Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalat ki hagyta jóvá, akkor elektronikus aláírásokat kell használni az útvonalak jóváhagyásakor. A felhasználóknak ezt követően meg kell erősíteniük személyazonosságukat egy [elektronikus aláírás](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview) segítségével.
 
-## <a name="operations"></a>Műveletek
-A művelet a termelési folyamat egy lépése. A Dynamics 365 for Finance and Operations programban minden egyes művelethez tartozik egy azonosító és egy egyszerű leírás. A következő táblázatok egy műhely jellemző műveleteit mutatják be.
+## <a name="operations"></a>Operations
+A művelet a termelési folyamat egy lépése. A Finance and Operations programban minden egyes művelethez tartozik egy azonosító és egy egyszerű leírás. A következő táblázatok egy műhely jellemző műveleteit mutatják be.
 
 | Művelet  | Leírás        |
 |------------|--------------------|
@@ -128,7 +128,7 @@ A műveleti kapcsolatok révén rendkívül rugalmasan határozhatja meg az útv
 
 ### <a name="modifying-product-specific-routes"></a>Termékspecifikus útvonalak módosítása
 
-Amikor megnyitja az **Útvonal** oldalt a **Megjelent termék részletei** oldalról, akkor megjelennek a kiválasztott kiadott termékhez kapcsolódó útvonalverziók. Ebben az összefüggésben a Dynamics 365 for Finance and Operations az egyes műveleteknél azokat a műveleti tulajdonságokat jeleníti meg, amelyek legjobban megfelelnek az útvonalverziónak. Észreveheti, hogy a műveletek listája tartalmazza a műveleti kapcsolat **Cikk-kód** és **Útvonalkód** tulajdonságait. Ezáltal megállapíthatja, hogy melyik műveleti kapcsolat látható.  
+Amikor megnyitja az **Útvonal** oldalt a **Megjelent termék részletei** oldalról, akkor megjelennek a kiválasztott kiadott termékhez kapcsolódó útvonalverziók. Ebben az összefüggésben a Finance and Operations az egyes műveleteknél azokat a műveleti tulajdonságokat jeleníti meg, amelyek legjobban megfelelnek az útvonalverziónak. Észreveheti, hogy a műveletek listája tartalmazza a műveleti kapcsolat **Cikk-kód** és **Útvonalkód** tulajdonságait. Ezáltal megállapíthatja, hogy melyik műveleti kapcsolat látható.  
 
 Az **Útvonal** lapon módosíthatja a művelet tulajdonságait, így például a futtatási időt vagy a költségkategóriákat. A változtatások tárolása az útvonalra jellemző műveleti kapcsolatnál, az aktuális útvonal-verzióban hivatkozott kiadott terméknél történik. Ha a megjelenő műveleti kapcsolat nem az útvonalra és a kiadott termékre jellemző, akkor a rendszer a módosítások tárolása előtt létrehoz egy másolatot a műveleti kapcsolatról. Ez a példány *az* útvonalhoz és a kiadott termékhez kapcsolódik. Emiatt a módosítások nem befolyásolnak más útvonalakat vagy kiadott termékeket. Annak ellenőrzéséhez, hogy melyik kapcsolatot módosítja az **Útvonal** oldalon, ellenőrizze a **Cikk-kód** és az **Útvonalkód** mezőket.  
 
@@ -150,9 +150,9 @@ Ha a vállalat szokásos műveleteket, és a működési paraméterek azonosak-a
 
 ### <a name="applying-operation-relations"></a>Műveleti kapcsolatok alkalmazása
 
-A Dynamics 365 for Finance and Operations programnak bizonyos esetekben meg kell keresnie egy adott művelet tulajdonságait. Amikor például létrejön egy beszerzési rendelés, az egyes műveletek tulajdonságait át kell másolni a műveleti kapcsolatoktól a termelési útvonalhoz. Ezekben az esetekben a Finance and Operations a legmegfelelőbb kombinációtól a legkevésbé specifikus kombinációig keresi a releváns műveleti kapcsolatokat.  
+A Finance and Operations programnak bizonyos esetekben meg kell keresnie egy adott művelet tulajdonságait. Amikor például létrejön egy beszerzési rendelés, az egyes műveletek tulajdonságait át kell másolni a műveleti kapcsolatoktól a termelési útvonalhoz. Ezekben az esetekben a Finance and Operations a legmegfelelőbb kombinációtól a legkevésbé specifikus kombinációig keresi a releváns műveleti kapcsolatokat.  
 
-Amikor a Dynamics 365 Finance and Operation a leginkább megfelelő kapcsolatot keresi az engedélyezett termék esetében, a kiadott termék azonosítójával megegyező műveleti kapcsolatot előnyben részesít a cikkcsoport azonosítójával egyező műveleti kapcsolattal szemben. Ennek megfelelően az olyan műveleti kapcsolat, amelyik megegyezik a cikkcsoport-azonosítóval, előnyt élvez az alapértelmezett műveleti kapcsolattal szemben. A keresés a következő sorrendben történik:
+Amikor műveletek megkeresi a leginkább megfelelő kapcsolat engedélyezett termék, műveleti kapcsolat, amely a kiadott termék azonosítója megegyezik a Finance and Operations előnyben műveleti kapcsolat keresztül, hogy megfelel a cikk-csoport azonosítója. Ennek megfelelően az olyan műveleti kapcsolat, amelyik megegyezik a cikkcsoport-azonosítóval, előnyt élvez az alapértelmezett műveleti kapcsolattal szemben. A keresés a következő sorrendben történik:
 
 1.  **Cikk kódja**=**Tábla** és **Cikk-kapcsolat**=&lt;cikkazonosító&gt;
 2.  **Cikk kódja**=**Tábla** és **Cikk-kapcsolat**=&lt;cikkazonosító&gt;
@@ -199,7 +199,7 @@ A termékmódosítási eset új vagy módosított anyagjegyzékek vagy anyagjegy
 
 ### <a name="making-routes-independent-of-resources"></a>Erőforrásoktól független útvonalak készítése
 
-Számos rendszerben meg kell határozni azt a művelet-erőforrást vagy erőforráscsoportot, amelynek el kell végeznie egy műveletet. A Dynamics 365 for Finance and Operations programban azonban megadhatja a szükségletek egy olyan készletét, amelynek teljesülnie kell a műveletre való alkalmazhatóság érdekében. Ezért a konkrét műveletek erőforrás vagy erőforrás csoport használandó nem kell addig, amíg a művelet éppenséggel korábbra kell meghatározni. Ez a szolgáltatás akkor különösen hasznos, ha sok a munkavállalók vagy gépek, amelyek ugyanazt a műveletet lehet végrehajtani.  
+Számos rendszerben meg kell határozni azt a művelet-erőforrást vagy erőforráscsoportot, amelynek el kell végeznie egy műveletet. A Finance and Operations programban azonban megadhatja a szükségletek egy olyan készletét, amelynek teljesülnie kell a műveletre való alkalmazhatóság érdekében. Ezért a konkrét műveletek erőforrás vagy erőforrás csoport használandó nem kell addig, amíg a művelet éppenséggel korábbra kell meghatározni. Ez a szolgáltatás akkor különösen hasznos, ha sok a munkavállalók vagy gépek, amelyek ugyanazt a műveletet lehet végrehajtani.  
 
 Például megadhatja a egy művelethez egy műveletek erőforrás, a **gép** típusú, amelynek a **Stamping** képességének 20 tonna. Az ütemezési motor majd megoldja ezeket a követelményeket, a konkrét műveletek erőforrás vagy erőforrás csoport ütemezése a művelet során. Most adhatja meg ezeket a követelményeket nem kötelező a művelet egy adott gép, mert akkor sokkal nagyobb rugalmasságot. Továbbá karbantartás akkor könnyebb, ha erőforrásokat helyez át, és az új erőforrások hozzáadása.  
 

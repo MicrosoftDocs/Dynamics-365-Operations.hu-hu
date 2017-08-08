@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 84243a91d8b76873cd33651bbdff900b14d9c76e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,8 +36,8 @@ Ebből a témakörből olyan erőforrásokat érhet el, amelyek segítségével 
 ----------------
 
 -   [Számsorozatok áttekintése](number-sequence-overview.md)
--   [Számsorozatok beállítása varázsló segítségével](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (Feladat-útmutató)
--   [Számsorozatok beállítása egyedi alapon](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (Feladat-útmutató)
+-   [Számsorozatok beállítása varázsló segítségével](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (Feladat-útmutató)
+-   [Számsorozatok beállítása egyedi alapon](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (Feladat-útmutató)
 
 ## <a name="address-books"></a>Címjegyzékek
 -   [Címjegyzékek](qa-address-books.md)
@@ -67,17 +67,17 @@ Ebből a témakörből olyan erőforrásokat érhet el, amelyek segítségével 
 
 ## <a name="electronic-signatures"></a>Elektronikus aláírások
 -   [Az elektronikus aláírás áttekintése](electronic-signature-overview.md)
--   [Az elektronikus aláírások beállítása](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (Feladat-útmutató)
+-   [Az elektronikus aláírások beállítása](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (Feladat-útmutató)
 
 ## <a name="organizations"></a>Szervezetek
 -   [Szervezetek és szervezeti hierarchiák](organizations-organizational-hierarchies.md)
 -   [Szervezeti hierarchia tervezése](plan-organizational-hierarchy.md)
--   [Üzemi egység létrehozása](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (Feladat-útmutató)
--   [Szervezeti hierarchia létrehozása](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (Feladat-útmutató)
--   [Jogi személy létrehozása](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (Feladat-útmutató)
+-   [Üzemi egység létrehozása](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (Feladat-útmutató)
+-   [Szervezeti hierarchia létrehozása](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Feladat-útmutató)
+-   [Jogi személy létrehozása](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Feladat-útmutató)
 
 ## <a name="general-administration"></a>Általános adminisztráció
--   [A fejléc vagy embléma módosítása](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (Feladat-útmutató)
+-   [A fejléc vagy embléma módosítása](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Feladat-útmutató)
 -   [A dátum-idő adatokról és az időzónákról](date-time-zones.md)
 -   [Rekordsablonok](record-templates.md)
 
