@@ -3,7 +3,7 @@ title: "Vevői és szállítói kompenzáció beállítása"
 description: "Ez a témakör arról nyújt információkat, hogy miként futtathat kompenzációs folyamatot az olyan szállítói és vevőszámlák esetében, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van."
 author: mrolecki
 manager: AnnBe
-ms.date: 05-19-2017
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
