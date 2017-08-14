@@ -15,14 +15,13 @@ ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: ed80e59579c2356cc3c1e0f13b33026284867a2c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -54,12 +53,15 @@ A Talent rendszerben dolgozva különböző elemek – például, részlegek, fe
 -   [Munkaerő szervezése részlegek, munkák és beosztások szerint](departments-jobs-positions.md)
 -   [Vállalatfüggő HR-paraméterek beállítása](set-up-company-specific-hr-parameters.md)
 -   [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md) 
+-   [Személyzeti műveletek GYIK](personnel-actions-faq.md)
+-   [Szabadság- és távollét áttekintése](leave-absence-overview.md)
 
 ## <a name="retain-and-motivate-employees"></a>Alkalmazottak megtartása és motiválása
 
 Terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, illetve a vállalata által az alkalmazottak számára kölcsönadott eszközök (pl. számítógépek, telefonok) kezelésére vonatkozóan. Fix és változó kompenzációs konstrukciókat alakíthat ki, továbbá definiálhatja azokat a kompenzációs konstrukcióra vonatkozó szabályokat, amelyek az adott konstrukció kritériumainak való megfelelést biztosítják.
 
 -   [Kompenzációs konstrukciók](compensation-plans.md)
+-   [Kompenzációs folyamat](process-compensation.md)
 -   [Fix kompenzációs konstrukciók létrehozása](create-fixed-compensation-plans.md)
 -   [Változó kompenzációs konstrukciók létrehozása](create-variable-compensation-plans.md)
 
