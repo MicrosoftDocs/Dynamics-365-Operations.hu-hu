@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 608ec87233acb05b0d46e367bcb7cd14985d7813
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -88,9 +87,8 @@ A teljes költségvetés-tervezési folyamat a pénzügyi osztályon történik,
 ## <a name="task-2-configure-user-security"></a>2. lépés: A felhasználói biztonság konfigurálása
 A költségvetési tervadatokhoz történő hozzáférés kapcsán a költségvetés-tervezés speciális biztonsági irányelveket alkalmaz. Ágnesnek saját maga részére biztosítani szükséges a hozzáférést a költségvetési tervekhez. 
 
-2.1. Váltson a DEMF jogi személlyel kapcsolatos szövegkörnyezetre: 
+2.1. Váltson a DEMF jogi személlyel kapcsolatos szövegkörnyezetre. 
 
-[![DEMF](./media/screenshot10.png)](./media/screenshot10.png) 
 
 2.2. Lépjen a következőhöz: Költségvetés-készítés &gt; Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési konfiguráció. A Paraméterek lapon állítsa be a Biztonsági modell értéket a Biztonsági szervezetek alapján 
 

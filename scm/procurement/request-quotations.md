@@ -1,6 +1,6 @@
 ---
-title: "Ajánlatkérések (RFQ-k)"
-description: "Ez a cikk betekintést nyújt az árajánlat kérés folyamatába. Egy szervezet akkor ad ki árajánlatkérést, amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat. Az ajánlatkérésben arra kéri a szállítókat, hogy adják meg a meghatározott számú cikkekhez ajánlott áraikat és szállítási idejüket. Emellett kérheti a szállítóktól annak meghatározását, hogy vannak-e egyéb járulékos költségek, például szállítási költséget, illetve kínálnak-e nagyobb rendelések vagy a szállítói számla korai kifizetése esetén engedményeket."
+title: "Ajánlatkérések"
+description: "Ez a témakör betekintést nyújt az árajánlat kérés folyamatába. Egy szervezet akkor ad ki árajánlatkérést, amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,34 +10,34 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d681f4c107a9dbc1ea8c5e1de38b2d45cf19bcfa
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 47e394c8642f502c698dbcd5506979b7cac0a830
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Ajánlatkérések (RFQ-k)
+# <a name="request-for-quotations-rfqs"></a>Ajánlatkérések
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk betekintést nyújt az árajánlat kérés folyamatába. Egy szervezet akkor ad ki árajánlatkérést, amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat. Az ajánlatkérésben arra kéri a szállítókat, hogy adják meg a meghatározott számú cikkekhez ajánlott áraikat és szállítási idejüket. Emellett kérheti a szállítóktól annak meghatározását, hogy vannak-e egyéb járulékos költségek, például szállítási költséget, illetve kínálnak-e nagyobb rendelések vagy a szállítói számla korai kifizetése esetén engedményeket.
+Ez a témakör betekintést nyújt az árajánlat kérés folyamatába. Egy szervezet akkor ad ki árajánlatkérést, amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat. Az ajánlatkérésben arra kéri a szállítókat, hogy adják meg a meghatározott számú cikkekhez ajánlott áraikat és szállítási idejüket. Emellett kérheti a szállítóktól annak meghatározását, hogy vannak-e egyéb járulékos költségek, például szállítási költséget, illetve kínálnak-e nagyobb rendelések vagy a szállítói számla korai kifizetése esetén engedményeket.
 
 Az ajánlatkérési folyamat az alábbi feladatokat tartalmazza:
 
--   Ajánlatkérés létrehozása és küldése egy vagy több szállítónak
--   Az ajánlatkérésre érkezett válaszok (ajánlatok) érkeztetése és rögzítése
--   Az elfogadott ajánlatok átvitele beszerzési rendeléshez, beszerzési szerződéshez vagy beszerzési igényléshez
+-   Ajánlatkérés létrehozása és küldése egy vagy több szállítónak.
+-   Az ajánlatkérésre érkezett válaszok (ajánlatok) érkeztetése és rögzítése.
+-   Az elfogadott ajánlatok átvitele beszerzési rendeléshez, beszerzési szerződéshez vagy beszerzési igényléshez.
 
 A következő ábrán áttekinthető az ajánlatkérési folyamat.  
 
@@ -49,9 +49,9 @@ Ha egy ajánlatkérést az elküldés után módosítania kell, elküldheti az a
 
 Ha ajánlatot kap, azokat az **Ajánlatkérési válaszok** oldalon adhatja meg. Ha az **Adatok másolása a válaszba** lehetőséget választja, a mennyiséget és az ajánlatkérés egyéb adatait a rendszer a válaszba másolja. Módosíthatja ezeket az adatokat, hogy azok a szállító ajánlatát tükrözzék.  
 
-Ha egy szállítónak a válasz második ismétlésére is szüksége van, kattintson a **Vissza**lehetőségre az**Ajánlatkérési válasz** oldalon. A Vissza művelet új naplót és egy jelentést hoz létre, amelyet a rendszer a nyomtatáskezelési beállításoktól függően kinyomtat, archivál és elküld.  
+Ha egy szállítónak a válasz második ismétlésére is szüksége van, kattintson a **Vissza** lehetőségre az **Ajánlatkérési válasz** oldalon. A Vissza művelet új naplót és egy jelentést hoz létre, amelyet a rendszer a nyomtatáskezelési beállításoktól függően kinyomtat, archivál és elküld.  
 
-Ha pontozási feltételeket adott hozzá az ajánlatkérési esethez, az ajánlatkérési válasz egy pontozási panelt is tartalmaz, amelyen a pontok megadhatók. Az összesített pontszám akkor jelenik meg, ha a **Válaszok összehasonlítása**oldalon összehasonlítja azokat; ezen az oldalon egyéb válaszadatokat is összehasonlíthat, például az árat, a szállítási dátumot és a teljes árat.  
+Ha pontozási feltételeket adott hozzá az ajánlatkérési esethez, az ajánlatkérési válasz egy pontozási panelt is tartalmaz, amelyen a pontok megadhatók. Az összesített pontszám akkor jelenik meg, ha a **Válaszok összehasonlítása** oldalon összehasonlítja azokat; ezen az oldalon egyéb válaszadatokat is összehasonlíthat, például az árat, a szállítási dátumot és a teljes árat.  
 
 Ha egy ajánlattal vagy részleges ajánlattal kapcsolatban döntést hozott, elfogadhatja azt, és visszautasíthatja a többit. A rendszer létrehozza az elfogadási naplót, visszautasítási naplót és a megfelelő jelentéseket. Ezeket a rendszer a nyomtatáskezelési beállításoknak megfelelően kinyomtatja, archiválja és elküldi. Egy ajánlat vagy bizonyos ajánlati sorok elfogadásakor az ajánlatkérési beszerzés típusától függően egy beszerzési szerződés vagy beszerzési rendelés jön létre, vagy frissül a beszerzési igénylés. Létrehozhat kereskedelmi megállapodást, amelyet később bármelyik válasz esetében felhasználhat, függetlenül attól, hogy azt elfogadta vagy elutasította.  
 
@@ -66,17 +66,17 @@ Az Ajánlatkérés feldolgozásához az állapotok sorozata a következő:
 3.  **Beérkezett**
 4.  **Elfogadva**/**Visszavonva**/**Elutasítva**
 
-Az állapotokról részletesen a jelen cikk későbbi szakaszaiban olvashat.
+Az állapotokról részletesen a jelen témakör későbbi szakaszaiban olvashat.
 
 ## <a name="setting-up-rfq-functionality"></a>Ajánlatkérési funkció beállítása
 Az ajánlatkérési eset létrehozása előtt be kell állítania az ajánlatkérési információt a **Beszerzési és forrásparaméterek** oldalon. Az ajánlatkérési eset létrehozásakor megadhat alapértelmezett értékeket, amelyek aztán átkerülnek az ajánlatkérésre. Az alábbi alapértelmezett értékeket határozhatja meg:
 
--   Az új ajánlatkérések beszerzési típusa: **Beszerzési rendelés** vagy **beszerzési szerződés**
--   A lejárati dátum és időpont beállításai
+-   Az új ajánlatkérések beszerzési típusa: **Beszerzési rendelés** vagy **beszerzési szerződés**.
+-   A lejárati dátum és időpont beállításai.
 -   Szállítási adatok és fizetési feltételek.
--   Mezők, amelyeknek szerepelnie kell az ajánlatkérési válaszban
+-   Mezők, amelyeknek szerepelnie kell az ajánlatkérési válaszban.
 
-Egy konkrét ajánlatkérési esetnél felülírhatja ezeket az értékeket. A módosítási folyamatot és érdemes beállítani. A konfiguráció részeként a mezők zárolását is beállíthatja. Ha bekapcsolja a mezők zárolását, és egy beszerző módosítani szeretné az ajánlatkérést, először az **Árajánlat** fül **Módosítás** szakaszában a **Létrehozás** lehetőségre kell kattintania. Az ajánlatkérés frissítése után a beszerző a **Véglegesít**.** **A Véglegesít művelettel a rendszer egy e-mailben értesíti a szállítókat a módosított ajánlatkérésről. A szállítóknak elküldött e-mailes értesítést sablonját a **Beszerzési és forrásparaméterek** oldalon választhatja ki. A létrehozott sablon az alábbi helyettesítő tokeneket tartalmazhatja:
+Egy konkrét ajánlatkérési esetnél felülírhatja ezeket az értékeket. A módosítási folyamatot és érdemes beállítani. A konfiguráció részeként a mezők zárolását is beállíthatja. Ha bekapcsolja a mezők zárolását, és egy beszerző módosítani szeretné az ajánlatkérést, először az **Árajánlat** fül **Módosítás** szakaszában a **Létrehozás** lehetőségre kell kattintania. Miután frissítette az ajánlatkérést a módosítással, a beszerzési szakértőnek kell befejeznie a folyamatot a **Véglegesítés** pontra való kattintással. A **Véglegesítés** művelet e-mailt hoz létre, amely értesíti a szállítókat a módosított ajánlatkérésről. A szállítóknak elküldött e-mailes értesítést sablonját a **Beszerzési és forrásparaméterek** oldalon választhatja ki. A létrehozott sablon az alábbi helyettesítő tokeneket tartalmazhatja:
 
 -   %Ajánlat visszaküldésének oka%
 -   %Módosítás oka%
@@ -87,7 +87,10 @@ Az %Ajánlat visszaküldésének oka% és %Módosítás oka% tokeneket a rendsze
 
 Ha az ajánlatkérésre küldött válaszban okkódot kíván használni az ajánlat elfogadásának vagy elutasításának okához, az okkódokat a **Szállítói okok** oldalon állíthatja be.  
 
-A nyomtatott vagy tárolt ajánlatkérési dokumentumok megjelenését a Beszerzés és forrás menü **Képernyő-beállítás** oldalán állíthatja be.  
+A nyomtatott vagy tárolt ajánlatkérési dokumentumok megjelenését a Beszerzés és forrás menü **Képernyő-beállítás** oldalán állíthatja be. 
+
+**Megjegyzés:** A közszféra beállításainál az ajánlatkérés bármely már elküldött módosításánál szükséges a javítási folyamat használata. Az ajánlatkérés elküldésekor a mezők zárolásra kerülnek, így a **Létrehozás** pontra való kattintás a javítási folyamat fent leírt lépései kötelezőek az ajánlatkérés módosítása esetén.
+Ezt a **Ajánlatkérések zárolása kiküldés után** mezőzárolási paraméter irányítja a **Beszerzési és forrásparaméterek** menüben. A paraméter értéke **Igen**, és a közszféra konfigurációjánál ez egy olyan alapérték, amelyet nem lehet megváltoztatni. Ez azt jelenti, hogy bár a módosítási folyamat manuálisan is végrehajtható a nem közszférabeli konfigurációknál, a közszféránál a módosítások kezelése a mezők ajánlatkérés elküldése utáni zárolása által kötelező.
 
 Beszerzési rendeléshez tartozó ajánlatkérés létrehozásakor és egy készletcikk ajánlatkéréshez történő rendelésekor egy készlettranzakció is létrehozásra kerül **Árajánlat-bevételezés** bevételezési állapottal. Csak az ilyen típusú ajánlatkérési állapotok lesznek figyelembe véve, ha az alapterv segítségével számolja a cikkeket. Ha azt szeretné, hogy az alapterv várható bevételezésként tartalmazza az ajánlatkérési sorokat, ezt a viselkedést az alapterv beállításai között konfigurálnia kell.  
 
@@ -137,7 +140,7 @@ Az alábbi táblázat bemutatja, hogy változik az ajánlatkérési állapot, ha
 **Megjegyzés:** Az ajánlatkéréshez bármikor hozzáadhat további szállítókat is, a legalacsonyabb és legmagasabb állapotok pedig az új szállítók szerint változnak. Ha például minden szállítótól kapott ajánlatot, és legalább egy sort elfogadott egy ajánlaton, az ajánlatkérési fejléc legalacsonyabb állapota az **Elutsítva**, a legmagasabb pedig az **Elfogadva** lesz. Új szállító hozzáadásakor az egyes sorok legalacsonyabb állapota a **Létrehozott**. Ennek megfelelően az ajánlatkérési fejléc állapota **Létrehozott**, míg a legmagasabb továbbra is **Elfogadott**.
 
 ## <a name="amending-an-rfq"></a>Ajánlatkérés módosítása
-Időnként előfordulhat, hogy elküldés után módosítani kell egy ajánlatkérést. Ez például olyankor történhet meg, ha a szállítási dátum megváltozott, vagy további termékeket, esetleg módosított mennyiségeket szeretne hozzáadni. A módosítási folyamatot beállíthatja kevésbé vagy jobban korlátozóra is.  
+Időnként előfordulhat, hogy elküldés után módosítani kell egy ajánlatkérést. Ez például akkor történhet meg, ha a szállítási dátum megváltozott, vagy további termékeket, esetleg módosított mennyiségeket szeretne hozzáadni. A módosítási folyamatot beállíthatja kevésbé vagy jobban korlátozóra is.  
 
 A jobban korlátozó módosítási folyamat esetén kattintson a **Létrehoz** lehetőségre az ajánlatkérési eseten a módosítás elindításához, mert csak így módosíthatja az ajánlatkérési eset mezőit. A módosítások befejezéséhez kattintson a **Véglegesítés** lehetőségre. A rendszer ezután végigvezeti a folyamaton, amelyben további információkat adhat hozzá a módosításról tájékoztató e-mailhez, amelyet a szállítók is megkapnak. A frissített ajánlatkérési jelentés, amely tartalmazza a módosítási megjegyzést, automatikusan csatolva lesz az üzenethez.  
 
@@ -181,7 +184,7 @@ Ha elfogad egy **beszerzési igénylés** típusú ajánlatkérési választ, az
 
 A válaszban hozzáadhat okkódot, amelyben megmagyarázza az elfogadás vagy elutasítás okát.  
 
-Egy ajánlat egyes sorait elfogadhatja, miközben másokat visszautasít. Elfogadhatja különböző szállítók egyes sorait is. Ügyeljen arra, hogy bizonyos sorok elfogadásakor minden más sort vissza kell utasítania. Ezért ha más sorokat is el akar fogadni, először az utasítás megjelenésekor az **Érvénytelenít** lehetőségre kell kattintania.  
+Egy ajánlat egyes sorait elfogadhatja, miközben másokat visszautasít. Elfogadhatja különböző szállítók egyes sorait is. Kérjük, ügyeljen arra, hogy bizonyos sorok elfogadásakor minden más sort vissza kell utasítania. Ezért ha más sorokat is el akar fogadni, először az utasítás megjelenésekor az **Érvénytelenít** lehetőségre kell kattintania.  
 
 Az alábbi táblázat bemutatja, hogyan változik az ajánlatkérési állapot, ha elfogadja vagy visszautasítja egy szállító ajánlatát.
 

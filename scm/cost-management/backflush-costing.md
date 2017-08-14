@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
+ms.openlocfilehash: 404803c6317b2aeda78de86d4ba11987b2a8cf65
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 Ez a témakör bemutatja a lean manufacturing során használt visszavezetéses költségelszámolást. 
 
-A lean manufacturing során használt költségszámítás lehetővé teszi, hogy a termelési folyamat a visszavezetéses költségelszámolás néven ismert költséghalmozásos módszert használja. A visszavezetéses költségszámítási módszer esetén a felhasznált közvetlen szükséges anyagok felhalmozódnak a termelési folyamat befejezetlen termelés költségszámláján. Ennek során elszámolóáras készletmodellcsoport használatos. A termelési folyamatból érkező termékeket a folyamatban lévő munkából elszámolóáron vonják le. A visszavezetéses költségelszámolás és az elszámolóár közötti fő különbség, hogy a visszavezetéses költségelszámolás esetében az eltéréseket nem kanbanonként vagy késztermékekként számítják ki. Ehelyett a különbözeteket egy időszakon belül termelési folyamatonként számítják ki. Ez a módszer valódi lean koncepciót vezet be az anyagfelhasználás bejelentése tekintetében. Az erre a célra kijelölt kitárolt mennyiségeket nem jeleni jelentett kanban- vagy a termelési rendeléshez. Ehelyett teljes kötegeket vagy anyagkezelési egységeket helyeznek el a termelési folyamatban. A kötegek vagy az anyagkezelési egységek üresen történő regisztrálása után a rendszer azokat felhasználtnak tekinti. Speciális felhasználás használható a [termelési folyamat konfigurációjától](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/) függően. A speciális felhasználás használata előtt a szervezeteknek lehetővé kell tenniük maguk számára, hogy az anyag eltűnjön a termelési folyamat folyamatban lévő munkájában. Az időszakos visszavezetéses költségelszámolás határozza meg a befejezetlen termelés tényleges értékét az időszak végére. Ez a meghatározás a kanban anyagkezelési egységek és a kanbanfeladat állapota alapján történik. A tényleges értékek és a tényleges befejezetlen termelés értékei közötti eltérések költségcsoportonként és cikkenként könyvelve és eltérésenként megjelenítve jelennek meg.
+A lean manufacturing során használt költségszámítás lehetővé teszi, hogy a termelési folyamat a visszavezetéses költségelszámolás néven ismert költséghalmozásos módszert használja. A visszavezetéses költségszámítási módszer esetén a felhasznált közvetlen szükséges anyagok felhalmozódnak a termelési folyamat befejezetlen termelés költségszámláján. Ennek során elszámolóáras készletmodellcsoport használatos. A termelési folyamatból érkező termékeket a folyamatban lévő munkából elszámolóáron vonják le. A visszavezetéses költségelszámolás és az elszámolóár közötti fő különbség, hogy a visszavezetéses költségelszámolás esetében az eltéréseket nem kanbanonként vagy késztermékekként számítják ki. Ehelyett a különbözeteket egy időszakon belül termelési folyamatonként számítják ki. Ez a módszer valódi lean koncepciót vezet be az anyagfelhasználás bejelentése tekintetében. Az erre a célra kijelölt kitárolt mennyiségeket nem jeleni jelentett kanban- vagy a termelési rendeléshez. Ehelyett teljes kötegeket vagy anyagkezelési egységeket helyeznek el a termelési folyamatban. A kötegek vagy az anyagkezelési egységek üresen történő regisztrálása után a rendszer azokat felhasználtnak tekinti. Speciális felhasználás használható a [termelési folyamat konfigurációjától](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization) függően. A speciális felhasználás használata előtt a szervezeteknek lehetővé kell tenniük maguk számára, hogy az anyag eltűnjön a termelési folyamat folyamatban lévő munkájában. Az időszakos visszavezetéses költségelszámolás határozza meg a befejezetlen termelés tényleges értékét az időszak végére. Ez a meghatározás a kanban anyagkezelési egységek és a kanbanfeladat állapota alapján történik. A tényleges értékek és a tényleges befejezetlen termelés értékei közötti eltérések költségcsoportonként és cikkenként könyvelve és eltérésenként megjelenítve jelennek meg.
 
 ## <a name="configuring-backflush-costing"></a>Visszavezetéses költségelszámolás konfigurálása
 A költségszámítás engedélyezéséhez meg kell adnia a következő beállításokat:

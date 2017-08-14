@@ -3,26 +3,26 @@ title: "Szállítói kifizetések készítése fizetési javaslat segítségéve
 description: "Ez a témakör tájékoztatást nyújt a fizetési javaslat beállításairól, és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját. A kifizetési javaslatok segítségével gyakran szállítói számlát is létrehozhat, mert a lekérdezést a kifizetés szállítói számláinak gyors kiválasztására lehet használni, amely olyan feltételeken alapul, mint a határidő vagy a készpénzfizetési engedmény."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b351ea58a25c763dcf90ff1c61e0e3b3cba6c34a
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,8 +39,8 @@ A fizetési javaslat lekérdezés különféle lapokat tartalmaz, melyek mindegy
 
 ## <a name="parameters"></a>Paraméterek
 -   **Számlák kiválasztása a következők alapján** – A dátumok alapján beállított számlák a **Dátumtól** és a **Dátumig** mezők segítségével szűrhetőek határidő, készpénzfizetési engedmény dátuma vagy épp mindkettő szerint. Amennyiben a készpénzfizetési engedmény dátuma opciót alkalmazza, a rendszer először azokra a számlákra keres rá, amelyeknél a megadott időintervallumba esik a készpénzfizetési engedmény időpontja. A rendszer ezután meghatározza, hogy a számla megfelel-e készpénzfizetési engedménynek a lejárati idő alapján, így biztosítva, hogy az engedmény még nem-e járt le.
--   **Dátumtól** és**Dátumig** – Az olyan számlák, melyeknek van lejárati határideje vagy készpénzfizetési engedmény határideje a megadott időintervallumban lesznek fizetésre kiválasztva.
--   **Fizetés dátuma** – Amennyiben konkrét dátumot ad meg, minden kifizetés az adott napra lesz kiírva. A **Minimális kifizetési dátum** mezőt a program figyelmen kívül hagyja.
+-   **Dátumtól** és **Dátumig** – Az olyan számlák, melyeknek van lejárati határideje vagy készpénzfizetési engedmény határideje a megadott időintervallumban lesznek fizetésre kiválasztva.
+-   **Fizetés dátuma** – Ez csak akkor használatos, amikor az **Időszak** mező értéke a fizetési mód mezőjében **Teljes**. Amennyiben konkrét dátumot ad meg, minden kifizetés az adott napra lesz kiírva. A **Minimális kifizetési dátum** mezőt a program figyelmen kívül hagyja.
 -   **Minimális kifizetési dátum** – adja meg a minimális kifizetési dátumot. Tegyük fel, hogy a **Dátumtól** és a **Dátumig** mezőben a szeptember elsejétől szeptember tizedikéig tartó időszakot adja meg, és a minimális kifizetési dátum szeptember ötödike lesz. Ebben az esetben az összes szeptember 1. és 5. között kifizetendő számla kifizetési dátuma szeptember 5. lesz. Azonban minden olyan számlánál, melynek a kifizetési határideje szeptember 5. és 10. közé esik, a számla saját határideje lesz az érvényes kifizetési határidő.
 -   **Összeghatár** – Adja meg az összes kifizetés maximális összegét.
 -   **Kifizetés számla-előnézet nélkül** – Amennyiben az **Igen** opciót választja ki, a kifizetések helyből a **Szállítói kifizetések** oldalon jönnek létre. A **Fizetési javaslat** oldal így kimarad. Így a kifizetések gyorsabban jönnek létre. A kifizetések továbbra is megváltoztathatóak a **Szállítói kifizetések** oldalon. Másik lehetőségként visszatérhet a **Fizetési javaslat** lapra a **Fizetésre kiválasztott számlák szerkesztése** gombbal.

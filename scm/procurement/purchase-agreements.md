@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
-ms.openlocfilehash: 4266ba2b19c3bd31a10301dd2290cd4b4fa53bdb
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: e7412eb1be4b1f5431fc0dd07aa2f778f461a74b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -95,9 +95,9 @@ Pénzügyi dimenziókat átmásolhat beszerzési szerződések fejlécébe vagy 
 <a name="see-also"></a>Lásd még
 --------
 
-[Új beszerzési szerződés létrehozása (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Új beszerzési szerződés létrehozása (Feladat-útmutató)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-agreement)
 
-[Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből (feladat-útmutató)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből (Feladat-útmutató)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement)
 
 
 

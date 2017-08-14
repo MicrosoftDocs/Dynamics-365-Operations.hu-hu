@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,12 +35,18 @@ Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez has
 Ez a témakör azon Excel-sablonok létrehozásának módját mutatja be, amelyek költségvetési tervekhez használhatók a normál bemutató adatkészlet és rendszergazdai felhasználói bejelentkezés használatával. Költségvetés-tervezéssel kapcsolatos további tudnivalókért lásd: [A költségvetés-tervezés áttekintése.](budget-planning-overview-configuration.md) Végigcsinálhatja a [Költségvetés-tervezés 101](budget-plan.md) oktatóprogramot is a modul alapvető konfigurációjának és használati elveinek megismeréséhez.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Munkalap létrehozása költségvetési terv dokumentumelrendezésben
-A költségvetésiterv-dokumentumok egy vagy több elrendezés használatával tekinthetők meg és szerkeszthetők. Minden elrendezéshez tartozhat egy kapcsolódó költségvetésiterv-dokumentumsablon, amely a költségvetési terv adatainak Excel-munkalapon történő megtekintésére és szerkesztésére szolgál., Ebben a témakörben a költségvetési terv dokumentumsablonját egy meglévő elrendezéskonfiguráció segítségével hozzuk létre. Nyissa meg a **Költségvetési tervek listája** (**Költségvetés készítése**&gt; **Költségvetési tervek**) elemet. Új költségvetésiterv-dokumentum létrehozásához kattintson az **Új** gombra. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+A költségvetésiterv-dokumentumok egy vagy több elrendezés használatával tekinthetők meg és szerkeszthetők. Minden elrendezéshez tartozhat egy kapcsolódó költségvetésiterv-dokumentumsablon, amely a költségvetési terv adatainak Excel-munkalapon történő megtekintésére és szerkesztésére szolgál., Ebben a témakörben a költségvetési terv dokumentumsablonját egy meglévő elrendezéskonfiguráció segítségével hozzuk létre. 
+
+Nyissa meg a **Költségvetési tervek listája** (**Költségvetés készítése** &gt; **Költségvetési tervek**) elemet. Új költségvetésiterv-dokumentum létrehozásához kattintson az **Új** gombra. 
+
+[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Használja a **Hozzáadás** elemet sorok hozzáadásához. Kattintson az **Elrendezések** elemre a költségvetésiterv-dokumentum elrendezési konfigurációjának megtekintéséhez. 
+
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Áttekintheti és szükség szerint módosíthatja az elrendezés konfigurációját. Ha Excel-fájlt akar létrehozni ehhez az elrendezéshez, lépjen a **Sablon** &gt; **Létrehozás** elemre. A sablon létrejötte után a költségvetésiterv-dokumentumsablon megnyitásához és áttekintéséhez lépjen a **Sablon** &gt; **Nézet** elemre. Az Excel-fájlt elmentheti a helyi meghajtóra. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Áttekintheti és szükség szerint módosíthatja az elrendezés konfigurációját. Ha Excel-fájlt akar létrehozni ehhez az elrendezéshez, lépjen a **Sablon** &gt; **Létrehozás** elemre. A sablon létrejötte után a költségvetésiterv-dokumentumsablon megnyitásához és áttekintéséhez lépjen a **Sablon** &gt; **Nézet** elemre. Az Excel-fájlt elmentheti a helyi meghajtóra. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > A költségvetésiterv-dokumentum elrendezését nem lehet szerkeszteni, miután egy Excel-sablonhoz lett társítva. Az elrendezés módosításához törölje a kapcsolódó Excel-sablonfájlt, és hozza létre újra. Ez az elrendezésben és a munkalapon lévő mezők szinkronizálásának megtartásához szükséges. 

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 91207e03902fa8a45ab44270cc61b58ef9e3c98c
+ms.translationtype: HT
+ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
+ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,33 +31,31 @@ ms.lasthandoff: 06/20/2017
 
 Ez a cikk a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára. 
 
-> [!IMPORTANT] 
-> A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Enterprise kiadás; Dynamics 365 for Retail; és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak
-
-A Finance and Operations teljesen új Súgórendszerrel rendelkezik, amely két fő részből áll:
-
--   Dokumentációs oldal
--   Feladat-útmutatók
-
-A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Enterprise kiadás; Dynamics 365 for Retail; és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak. 
+> [!NOTE] 
+> A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Enterprise kiadás; Dynamics 365 for Retail; és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 A súgórendszer közös minden Unified Operations termék esetében:
 - Dynamics 365 for Finance and Operations, Enterprise kiadás
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
+A Finance and Operations teljesen új Súgórendszerrel rendelkezik, amely két fő részből áll:
+
+-   Dokumentációs oldal
+-   Feladat-útmutatók
+
 A Súgó lapról érhetők el a súgótémakörök és a feladat-útmutatók, a használt terméktől függetlenül. A következő képernyőképen a Dynamics 365 for Finance and Operations látható
 
-![Súgó ablak](./media/help-pane-ops-task-guides-1024x741.png)
+![Súgó ablak](./media/help-pane-ops-task-guides.png)
 
 Ez a témakör ismerteti a Súgó rendszert, és leírja, hogyan hozhat létre testreszabott dokumentációt és továbbképzési forrásokat szervezetének.
 
 > [!IMPORTANT]
-> A **Feladat-útmutatók** lap jelenleg nem áll rendelkezésre a Microsoft Dynamics 365 for Talent és a Microsoft Dynamics 365 for Retail esetében. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)), mind a Retail, mind a Talent esetében.
+> A **Feladat-útmutatók** lap jelenleg nem áll rendelkezésre a Microsoft Dynamics 365 for Talent és a Microsoft Dynamics 365 for Retail esetében. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index), mind a Retail, mind a Talent esetében.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Súgó a docs.microsoft.com-on
 
-A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) a Finance and Operations termékdokumentációjának elsődleges forrása. A webhely a következő funkciókat ajánlja:
+A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) a Finance and Operations termékdokumentációjának elsődleges forrása. A webhely a következő funkciókat ajánlja:
 
 -   **Hozzáférés a legfrissebb tartalmakhoz** – A webhely lehetőséget ad a termékdokumentációk gyorsabb, rugalmasabb létrehozására, szállítására és frissítésére. Ezért segítségével biztosítható, hogy a legfrissebb technikai információkhoz jusson hozzá.
 -   **Szakértők által írt tartalmak** – A WEBHELY szélesebb körű termékdokumentációkat kínál, amelyeket a közösség tagjai a Microsofton kívül és belül is bővíthetnek.
@@ -68,12 +65,13 @@ A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/operations](/dynam
 ### <a name="searching-on-docsmicrosoftcom"></a>Keresés a docs.microsoft.com-on
 Sok kérdést kapunk arról, hogy miként kereshetők tartalmaink. Ha webhelyünkön a Finance and Operations egy lapjáról indítja a keresést, akkor annak hatóköreként csak a Finance and Operations tartalmait adjuk meg. A hatókör szűkítését úgy távolíthatja el, ha az X gombra kattint az Operations mellett a keresőmezőben. 
 
-![Rendelések keresése](./media/search-scope.png)
+![Rendelések keresése](./media/search-scope-2.png)
 
 Tartalmainkat bármelyik keresőmotorral is megtalálhatja. A legjobb eredmények elérése érdekében azt javasoljuk, hogy webhelyre korlátozott keresést végezzen, mint például: site:docs.microsoft.com dynamics 365 „keresőkifejezés”  
-![Keresés a webhelyen](./media/site-search.png)
 
-![Keresési eredmények a webhelyről](./media/site-search-results.png)
+![Keresés a webhelyen](./media/site-search-1.png)
+
+![Keresési eredmények a webhelyről](./media/site-search-results-2.png)
 
 ### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>A Unified Operations docs.microsoft.com tartalomjegyzéke
 Az összes terméknek ugyanaz a tartalomjegyzéke a dokumentumok webhelyen, ami lehetővé teszi az ügyfelek számára, hogy lássák az aktuális témakör kontextusát. Emellett lehetővé teszi a szűrő vezérlőelem használatát a kívánt témakörök megkereséséhez.
@@ -105,7 +103,7 @@ A Feladat-útmutató egy kontrollált, irányított, interaktív tapasztalat, am
 
 Minden egyes Unified Operations termékhez eltérő feladat-útmutató készleteket biztosítunk. A Feladat-útmutatók elérése a Súgó ablakból szakasz azt mutatja be, hogyan találhatja meg a termékének megfelelő feladat-útmutatókat. 
 
-![Feladat-útmutató olvasási nézete](./media/task-guide-ops-1024x742.png)
+![Feladat-útmutató olvasási nézete](./media/task-guide-ops.png)
 
 Az irányított, interaktív tapasztalat kezdéséhez kattintson a **Feladat útmutató indítása** lehetőségre a Súgó ablak alján. Egy fekete mutató nyílik meg, és jelzi a kötelezően végrehajtandó műveleteket. Kövesse a felhasználói felületen megjelenő utasításokat, és adja meg az adatokat az utasításoknak megfelelően. 
 ![Feladat-útmutató lépésre vonatkozó utasítása](./media/task-guide-step-1-ops.png)
@@ -129,7 +127,7 @@ Létrehozhatja a saját feladatrögzítéseit vagy letölthet és testreszabhatj
 ## <a name="in-product-help"></a>Termékbe épített Súgó
 Ha szeretné megtekinteni a Súgó tartalmát a Finance and Operation rendszerben, akkor kattintson a **Súgó** (**?**) ikonra, és válassza a Súgó lehetőséget, vagy nyomja meg a Ctrl+Shift+? billentyűkombinációt. Mindkét esetben a Súgó ablak nyílik meg. A Súgó ablakból elérhet cikkeket és feladat-útmutatókat. 
 
-![Súgó ablak](./media/help-pane-wiki-1024x684.png)
+![Súgó ablak](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Súgótémakörök elérése a Súgó ablakból
 
@@ -162,7 +160,7 @@ A **Rendszer paraméterei** oldalon kövesse az alábbi lépéseket:
 
 Miután egy Rendszergazda végrehajtotta ezeket a lépéseket, nyissa meg a Súgó ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek a Finance and Operations aktuális oldalához kapcsolódó Feladat-útmutatók. Amennyiben nem találhatók Feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést. Miután rákattint egy Feladat-útmutatóra a Súgó ablakában, a Súgó ablak lépésekre lebontva megjeleníti az utasításokat, továbbá lehetősége van a feladat-útmutató lejátszására is. 
 
-![Feladat-útmutató olvasási nézete](./media/task-guide-ops-1024x742.png)
+![Feladat-útmutató olvasási nézete](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Hol találhatóak a honosított Feladat-útmutatók?
 

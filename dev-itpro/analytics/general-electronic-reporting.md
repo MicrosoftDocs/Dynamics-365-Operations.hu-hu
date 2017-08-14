@@ -11,19 +11,18 @@ ms.technology:
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: cebd1b6f041e18c2e016142aba7447bf813f570b
-ms.openlocfilehash: f6327b339441f2f1f6d4e557e45d085685245a08
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: b9ad00b4157d1f732a8f2400712c94a92a17b273
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 06/19/2017
 
 Ez a témakör az Elektronikus jelentéskészítés eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról.
 
-Az elektronikus jelentés (ER) egy olyan eszköz, amelyet bejövő és kimenő elektronikus dokumentumok formázására egyaránt használhat, a különböző országok/régiók jogi követelményeinek megfelelően. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. Például alkalmazhat új jogszabályi követelményeket, és létrehozhat üzleti dokumentumokat a kívánt formátumban, annak érdekében, hogy elektronikusan információt cseréljen kormányzati testületekkel, bankokkal és egyéb felekkel.
+Az elektronikus jelentés (ER) olyan eszköz, amelyet bejövő és kimenő elektronikus dokumentumok formázására egyaránt használhat, a különböző országok/régiók jogi követelményeinek megfelelően. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. Például alkalmazhat új jogszabályi követelményeket, és létrehozhat üzleti dokumentumokat a kívánt formátumban, annak érdekében, hogy elektronikusan információt cseréljen kormányzati testületekkel, bankokkal és egyéb felekkel.
 
 Az ER-motor a fejlesztők helyett az üzleti felhasználóknak készült. Mivel nem kódokat, hanem formátumokat konfigurál, az elektronikus dokumentumok formátumának létrehozása és beállítása gyorsabb és könnyebb.
 
@@ -43,8 +42,8 @@ Az ER jelenleg a TEXT, XML, Microsoft Word dokumentum és OPENXML munkalap-form�
 ## <a name="capabilities"></a>Képességek
 Az ER motor a következő képességekkel rendelkezik:
 
-- Egységes, megosztott eszközt képvisel a különböző tartományokban történő elektronikus jelentésekhez, és több mint 20 különböző motort helyettesít, amelyek az elektronikus jelentés valamely típusára képesek a Microsoft Dynamics 365 for Operations rendszerben.
-- A jelentés formátumát elkülöníti jelenlegi Dynamics 365 for Operations rendszertől. Más szóval a formátum a Dynamics 365 for Operations különböző verzióiban is használható.
+- Egységes, megosztott eszközt képvisel a különböző tartományokban történő elektronikus jelentésekhez, és több mint 20 különböző motort helyettesít, amelyek az elektronikus jelentés valamely típusára képesek a Microsoft Dynamics 365 for Finance and Operations rendszerben.
+- A jelentés formátumát elkülöníti jelenlegi Dynamics 365 for Finance and Operations rendszertől. Más szóval a formátum a Dynamics 365 for Finance and Operations különböző verzióiban is használható.
 - Támogatja egy egyéni formátum létrehozását, ami az eredeti formátumon alapul. Emellett képes automatikusan frissíteni az egyéni formátumot, ha változás történik az eredeti formátumban új honosítási/személyre szabási követelmények miatt.
 - Ez válik az elsődleges, szabványos eszközzé a honosítási követelmények támogatására az elektronikus jelentésekben, mind a Microsoft-nál, mind a Microsoft partnereinél.
 - Támogatja a formátumok elosztását a partnerek és a vevők részére, a Microsoft Dynamics Lifecycle Services (LCS) rendszeren keresztül.
@@ -59,7 +58,8 @@ Az ER két összetevő-típust támogat: **Adatmodell** és **Formátum**.
 Az adatmodell-összetevő az adatszerkezet absztrakt ábrázolása. Egy adott üzleti területet leírására szolgál elegendő részletességgel ahhoz, hogy megfeleljen a terület jelentési követelményeinek. Egy adatmodell-összetevő a következő részekből áll:
 
 - Egy adatmodell, ami a területspecifikus üzleti entitások egy csoportja, és egy hierarchikusan felépített kapcsolatrendszer ezen entitások között.
-- Egy modell-leképezés, amely összekapcsolja a Dynamics 365 for Operations adatforrásokat az adatmodell adott, egyes elemeivel a futási időben, valamint az adatfolyam, és az üzleti adatok feltöltésének szabályai az adatmodell-összetevőbe.
+- Egy modell-leképezés, amely összekapcsolja a Finance and Operations adatforrásokat az adatmodell adott, egyes elemeivel a futási időben, valamint az adatfolyam, és az üzleti adatok feltöltésének szabályai az adatmodell-összetevőbe.
+
 Egy adatmodell üzleti entitását egy tároló (rekord) képviseli. Az üzleti entitások tulajdonságai adatelemként (mezőként) jelennek meg. Minden adatelem egyedi névvel, címkével, leírással és értékkel rendelkezik. Az egyes adatelemek értékeit megszerkesztheti, hogy karakterláncként, egész számként, valós számként, dátumként, enumerációként, logikai értékként vagy egyéb változóként legyenek kiolvasva. Továbbá lehet másik rekord vagy rekordlista is.
 
 Egyetlen adatmodell-összetevő több tartományspecifikus üzletientitás-hierarchiát tartalmazhat. Modell-hozzárendeléseket is tartalmazhat, amelyek támogatják a jelentésspecifikus adatáramlást futásidőben. A hierarchiákat egyetlen rekord különbözteti meg, amit a modell-hozzárendelés gyökerének választott ki. Például, a fizetési tartomány adatmodellje támogathatja a következő leképezéseket:
@@ -71,17 +71,18 @@ Vegyük figyelembe, hogy az üzleti entitásokat (úgy mint a vállalat és a fi
 
 A modell-hozzárendelés, amely támogatja a kimenő elektronikus dokumentumokat, a következő lehetőségeket kínálja:
 
-- Használhat különböző Dynamics 365 for Operations-adattípusokat az adatmodell adatforrásaként. Használhat például táblázatokat, adatentitásokat, módszereket vagy felsorolásokat.
+- Használhat különböző Finance and Operations-adattípusokat az adatmodell adatforrásaként. Használhat például táblázatokat, adatentitásokat, módszereket vagy felsorolásokat.
 - Olyan felhasználói bemeneti paramétereket támogat, amelyeket meghatározhat az adatmodell adatforrásaiként, amikor bizonyos adatokat a futási időben kell megadni.
-- Támogatja a Dynamics 365 for Operations adatok átalakítását a szükséges csoportokba. Az adatok szűrését, rendezését és összegzését is lehetővé teszi, továbbá logikai számított mezők hozzáfűzését a Microsoft Excel képleteihez hasonló képletekkel, a következő ábrán látható módon. További tudnivalókért lásd: [Képletszerkesztő elektronikus jelentésekhez](general-electronic-reporting-formula-designer.md)).
+- Támogatja a Finance and Operations adatok átalakítását a szükséges csoportokba. Az adatok szűrését, rendezését és összegzését is lehetővé teszi, továbbá logikai számított mezők hozzáfűzését a Microsoft Excel képleteihez hasonló képletekkel, a következő ábrán látható módon. További tudnivalókért lásd: [Képletszerkesztő elektronikus jelentésekhez](general-electronic-reporting-formula-designer.md)).
 
 [![Képletszerkesztő](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
 
 A modell-hozzárendelés, amely támogatja a bejövő elektronikus dokumentumokat, a következő lehetőségeket kínálja:
 
-- Különböző Dynamics 365 for Operations frissíthető adatelemeket használhat célként. Ezek az adatelemek lefedik a táblákat, az entitásokat és a nézeteket is. A bejövő elektronikus dokumentumok adatai alapján lehet frissíteni az adatokat. Egy modell hozzárendelésben több cél is használható.
+- Különböző frissíthető adatelemeket használhat célként. Ezek az adatelemek lefedik a táblákat, az entitásokat és a nézeteket is. A bejövő elektronikus dokumentumok adatai alapján lehet frissíteni az adatokat. Egy modell hozzárendelésben több cél is használható.
 - Olyan felhasználói bemeneti paramétereket támogat, amelyeket meghatározhat az adatmodell adatforrásaiként, amikor bizonyos adatokat a futási időben kell megadni.
-Minden üzleti tartományhoz készül egy adatmodell-összetevő, amelyet egységes adatforrásként kell használni a jelentésekhez, és amely elkülöníti a jelentéskészítést a Dynamics 365 for Operations adatforrásainak fizikai megvalósításától. Olyan módon képezi le a tartományspecifikus üzleti fogalmakat és funkciókat, amely hatékonyabbá teszi a jelentésformátum kezdeti tervét és további karbantartását.
+
+Minden üzleti tartományhoz készül egy adatmodell-összetevő, amelyet egységes adatforrásként kell használni a jelentésekhez, és amely elkülöníti a jelentéskészítést az adatforrások fizikai megvalósításától. Olyan módon képezi le a tartományspecifikus üzleti fogalmakat és funkciókat, amely hatékonyabbá teszi a jelentésformátum kezdeti tervét és további karbantartását.
 
 #### <a name="format-components-for-outgoing-electronic-documents"></a>Kimenő elektronikus dokumentumok komponensformázása
 
@@ -133,32 +134,32 @@ Az ER-összetevő esetében támogatott a verziókövetés. A következő munkaf
 
 A **Befejeződött** vagy **Megosztott** állapotú verziók elérhetőek más adatcsere céljából. Egy ezekkel az állapotokkal rendelkező összetevőn a következő műveletek végezhetőek el:
 
-- Az összetevők szerializálhatók XML-formátumba, és a Dynamics 365 for Operations rendszerből exportálhatóak XML-formátumú fájlba.
-- Az összetevők újraszerializálhatóak XML fájlból, és importálhatóak a Dynamics 365 for Operationsbe egy ER-összetevő új verziójaként.
+- Az összetevő szerializálható XML-formátumba és a rendszerből exportálható XML formátumú fájlba.
+- Az összetevők újraszerializálhatóak XML fájlból, és importálhatóak a Finance and Operationsbe egy ER-összetevő új verziójaként.
 
 #### <a name="component-date-effectivity"></a>Összetevő érvényességi dátuma
 
-Az ER-összetevő verziói érvényességi dátumhoz kötöttek. Az ER-összetevőhöz beállítható az **Érvényesség kezdete** dátum, hogy meghatározzuk, mikortól lesz érvényes az összetevő a jelentési folyamatban. A Dynamics 365 for Operations munkamenet dátuma arra használható, hogy meghatározzuk, érvényes-e az összetevő a végrehajtásra. Amennyiben egy bizonyos dátumhoz egynél több verzió is érvényes, a jelentési folyamathoz a legutóbbi verzió kerül felhasználásra.
+Az ER-összetevő verziói érvényességi dátumhoz kötöttek. Az ER-összetevőhöz beállítható az **Érvényesség kezdete** dátum, hogy meghatározzuk, mikortól lesz érvényes az összetevő a jelentési folyamatban. A Finance and Operations munkamenet dátuma arra használható, hogy meghatározzuk, érvényes-e az összetevő a végrehajtásra. Amennyiben egy bizonyos dátumhoz egynél több verzió is érvényes, a jelentési folyamathoz a legutóbbi verzió kerül felhasználásra.
 
 #### <a name="component-access"></a>Összetevő hozzáférése
 
-Az ER formátum összetevőinek hozzáférése függ az ország/terület ISO kódjának beállításától. Ha ez a beállítás nincs bejelölve a formátum beállítások kiválasztott verziójánál, akkor a formátum összetevők elérhetőek bármely Dynamics 365 for Operations-vállalatnál a futási idő során. Ha ez a beállítás tartalmazza az ország/régió ISO kódját, akkor a formátum összetevője csak abból a Dynamics 365 for Operations-vállalatból érhető el, amely elsődleges címének egy formátum-összetevő ország/terület ISO kódja van megadva.
+Az ER formátum összetevőinek hozzáférése függ az ország/terület ISO kódjának beállításától. Ha ez a beállítás nincs bejelölve a formátum beállítások kiválasztott verziójánál, akkor a formátum összetevők elérhetőek bármely vállalatnál a futási idő során. Ha ez a beállítás tartalmazza az ország/régió ISO kódját, akkor a formátum összetevője csak abból a vállalatból érhető el, amely elsődleges címének egy formátum-összetevő ország/terület ISO kódja van megadva.
 
 Előfordulhat, hogy az adatformátum-összetevők különböző verziói más ország/terület ISO kód beállításaival rendelkeznek.
 
 #### <a name="configuration"></a>Konfiguráció
 
-Az ER-konfiguráció egy adott ER-összetevő csomagolója. Az összetevő lehet adatmodell-összetevő vagy formátum-összetevő. A konfiguráció tartalmazhatja egy ER-összetevő különböző verzióit. Az egyes konfigurációk tulajdonosa egy konkrét konfigurációs szolgáltatóként van megjelölve. Egy konfiguráció összetevőjének **Tervezet** verziója akkor szerkeszthető, amikor a konfiguráció tulajdonosa aktív szolgáltatóként van beállítva a Dynamics 365 for Operations ER-beállításokban.
+Az ER-konfiguráció egy adott ER-összetevő csomagolója. Az összetevő lehet adatmodell-összetevő vagy formátum-összetevő. A konfiguráció tartalmazhatja egy ER-összetevő különböző verzióit. Az egyes konfigurációk tulajdonosa egy konkrét konfigurációs szolgáltatóként van megjelölve. Egy konfiguráció összetevőjének **Tervezet** verziója akkor szerkeszthető, amikor a konfiguráció tulajdonosa aktív szolgáltatóként van beállítva a Finance and Operations ER-beállításokban.
 
 Minden modellkonfiguráció tartalmaz egy adatmodell összetevőt. Új formátumkonfiguráció származtatható egy bizonyos adatmodell konfigurációból. A létrehozott formátumkonfiguráció a konfigurációfában az eredeti adatmodell-konfiguráció leszármazottjaként jelenik meg.
 
 A létrehozott formátumbeállítás tartalmaz egy formátum-összetevőt. Ez eredeti modell konfiguráció adatmodell komponense automatikusan beillesztésre kerül a leszármazott formátumkonfiguráció formátum komponensébe alapértelmezett adatforrásként.
 
-Az ER-konfiguráció megosztásra kerül a Dynamics 365 for Operations-vállalatok számára.
+Az ER-konfiguráció megosztásra kerül a Finance and Operations-vállalatok számára.
 
 #### <a name="provider"></a>Szolgáltató
 
-Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szerzőjét (tulajdonosát) meghatározza. ER segítségével kezelheti a konfigurációs szolgáltatók listáját. A Dynamics 365 for Operations megoldás részeként kiadott elektromos dokumentumokra érvényes formátumkonfigurációk tulajdonosa a **Microsoft** konfigurációs szolgáltató.
+Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szerzőjét (tulajdonosát) meghatározza. ER segítségével kezelheti a konfigurációs szolgáltatók listáját. A Finance and Operations megoldás részeként kiadott elektromos dokumentumokra érvényes formátumkonfigurációk tulajdonosa a **Microsoft** konfigurációs szolgáltató.
 
 Új ER-szolgáltató regisztrálási módjának megismeréséhez játssza le a feladat-útmutatót: **ER Konfigurációszolgáltató létrehozása és megjelölése aktívként** (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része).
 
@@ -166,11 +167,11 @@ Az ER-szolgáltató az a félazonosító, amely az egyes ER-konfigurációk szer
 
 Egy ER tárház ER konfigurációkat tárol. Két típusú ER-tárház támogatott jelenleg: **Operations-erőforrások** és **LCS-projekt**.
 
-Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigurációk listájához, melyeket a Dynamics 365 for Operations megoldás részeként a Microsoft szállít mint ER-konfigurációszolgáltató,. Ezek a konfigurációk importálhatóak a jelenlegi Dynamics 365 for Operations munkamenetbe és felhasználhatóak elektronikus jelentés céljából. Használhatóak ezen kívül további lokalizációkhoz és testreszabásokhoz.
+Az **Operations-erőforrások** tárház hozzáférést biztosít azon konfigurációk listájához, melyeket a Finance and Operations megoldás részeként a Microsoft szállít mint ER-konfigurációszolgáltató,. Ezek a konfigurációk importálhatóak a jelenlegi Finance and Operations munkamenetbe és felhasználhatóak elektronikus jelentés céljából. Használhatóak ezen kívül további lokalizációkhoz és testreszabásokhoz.
 
-Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi Dynamics 365 for Operations példányból egy adott **LCS-projekt** tárházba. Importálhat továbbá konfigurációkat egy **LCS-projekt** tárházából a Dynamics 365 for Operations jelenlegi példányába.
+Az **LCS projekt** tárház hozzáférést biztosít egy bizonyos, a tárház regisztrációs szakaszában kiválasztott LCS projekt konfigurációinak listájához (LCS projekt eszköztár). Az ER lehetőséget biztosít a megosztott konfigurációk feltöltésére a jelenlegi Finance and Operations példányból egy adott **LCS-projekt** tárházba. Importálhat továbbá konfigurációkat egy **LCS-projekt** tárházából a Finance and Operations jelenlegi példányába.
 
-A szükséges **LCS-projekt** tárházak egyesével regisztrálhatók a jelenlegi Dynamics 365 for Operations példány különböző konfigurációs szolgáltatóihoz. Minden tárház hozzárendelhető egy bizonyos konfigurációs szolgáltatóhoz.
+A szükséges **LCS-projekt** tárházak egyesével regisztrálhatók a jelenlegi Finance and Operations példány különböző konfigurációs szolgáltatóihoz. Minden tárház hozzárendelhető egy bizonyos konfigurációs szolgáltatóhoz.
 
 ## <a name="supported-scenarios"></a>Támogatott esetek
 ### <a name="building-a-data-model"></a>Adatmodell létrehozása
@@ -204,7 +205,7 @@ Az ER biztosít egy modell-leképezés tervezőt, amely lehetővé teszi a felha
 Az ezen forgatókönyv részleteinek megismeréséhez hajtsa végre az **ER modellfeltérképezés definiálása és adatforrások kiválasztása** feladatot, majd az **ER adatmodellezés térkép a kiválasztott adatforrásokhoz** feladatútmutatókat (a **7.5.4.3 IT szolgáltatás/megoldás megszerzése/kifejlesztése elemek (10677))** üzleti folyamat része)
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>A bejövő dokumentumok adatmodell hozzárendeléseinek beállítása
-Az ER biztosít egy modell-leképezés tervezőt, amely lehetővé teszi a felhasználó számára az általuk specifikus célokhoz tervezett adatmodellek leképezését. Az adatmodellek például Dynamics 365 for Operations frissíthető adatösszetevőkhöz (táblák, adatentitások és nézetek) rendelhetők. A leképezés alapján a rendszer futásidőben frissíti a Dynamics 365 for Operations adatokat, az adatmodellből származó adatok felhasználásával. Az ER-formátum absztrakt tárolásaként az adatmodell ki van töltve a bejövő elektronikus dokumentumból importált adatokkal. A következő ábrán egy példa látható az ilyen típusú adatmodell-leképezésre. Ebben a példában a fizetési tartomány adatmodelljének **Megfeleltetés importálása NETS-hez** modell-hozzárendelését használjuk a banki kivonatok importálásának támogatására NETS banki formátumban Norvégia esetében.
+Az ER biztosít egy modell-leképezés tervezőt, amely lehetővé teszi a felhasználó számára az általuk specifikus célokhoz tervezett adatmodellek leképezését. Az adatmodellek például Finance and Operations frissíthető adatösszetevőkhöz (táblák, adatentitások és nézetek) rendelhetők. A leképezés alapján a rendszer futásidőben frissíti a Finance and Operations adatokat, az adatmodellből származó adatok felhasználásával. Az ER-formátum absztrakt tárolásaként az adatmodell ki van töltve a bejövő elektronikus dokumentumból importált adatokkal. A következő ábrán egy példa látható az ilyen típusú adatmodell-leképezésre. Ebben a példában a fizetési tartomány adatmodelljének **Megfeleltetés importálása NETS-hez** modell-hozzárendelését használjuk a banki kivonatok importálásának támogatására NETS banki formátumban Norvégia esetében.
 
 [![Importálási leképezés NETS-adatmodellhez, példa](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
@@ -283,7 +284,7 @@ Az ER segítségével létrehozhat (származtathat) egy új komponenst az LCS-b�
 
 ### <a name="upgrading-a-format-selecting-a-new-version-of-base-format-rebase"></a>Formátum frissítése az alapformátum új verziójának kiválasztásával (új alap megadása)
 
-Az ER automatikusan igazodik az alapösszetevő legújabb verziójához a származtatott összetevő jelenlegi vázlat-verziójában. Ennek a folyamatnak a neve *új alap* megadása. Például az LCS-ből importált formátum-összetevő legújabb verziójában megjelent új szabályozási módosítások automatikusan összevonhatók az elektronikus dokumentum a saját testreszabott verziójával. Az automatikusan nem egyesíthető módosítások ütközésnek minősülnek. Ezek az ütközések a megfelelő összetevőhöz tartozó tervezőeszközben manuális megoldásra megjelennek. Hajtsa végre az **ER formátum frissítése új alapverzió használatával** című feladatútmutatót (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része), hogy megismerje ennek az esetnek a részleteit.
+Az ER automatikusan igazodik az alapösszetevő legújabb verziójához a származtatott összetevő jelenlegi vázlat-verziójában. Ennek a folyamatnak a neve *új alap* megadása. Például az LCS-ből importált formátum-összetevő legújabb verziójában megjelent új szabályozási módosítások automatikusan összevonhatók az elektronikus dokumentum a saját testreszabott verziójával. Az automatikusan nem egyesíthető módosítások ütközésnek minősülnek. Ezek az ütközések a megfelelő összetevőhöz tartozó tervezőeszközben manuális megoldásra megjelennek. Hajtsa végre az **ER formátum frissítése új alapverzió használatával** című feladatútmutatót (a **7.5.5.3 Módosított informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10683)** üzleti folyamat része), hogy megismerje ennek az esetnek a részleteit.
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>A Finance and Operations megoldásra küldött ER-konfigurációk listája
 | Tartományspecifikus adatmodell-konfigurációk: Cím | Tartomány                | Adatmodell-függő formátumkonfigurációk: Cím | Leírás                                                        |

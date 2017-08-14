@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 0cebd30a560ff033efab89c2055827b62cf31576
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 9bc4dba3c31e82da2285ef5e339ace634fbd6fde
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,7 +39,7 @@ Ez a cikk betekintést nyújt az elektronikus aláírásokba, és bemutatja azok
 Az elektronikus aláírás igazolja annak a személynek a személyazonosságát, aki egy számítási folyamat elindítása vagy jóváhagyása előtt áll. Egyes ágazatokban az elektronikus aláírás ugyanúgy jogilag kötelező érvényű, mint a kézzel írott aláírás. Az elektronikus aláírás használatát törvény írja elő számos szabályozott iparágban, például a gyógyszeriparban, az élelmiszer- és italgyártás, a repülőgépgyártás és a honvédelem területén. Az Amerikai Egyesült Államok élelmiszer- és gyógyszerügyi hatóságának (FDA, Food and Drug Administration) 21 CFR Part 11 szabályozásában meghatározott követelmények teljesítéséhez szintén szükséges. **Megjegyzés:** Az elektronikus aláírás önmagában nem ugyanaz, mint a digitális aláírás. Az elektronikus aláírás mindössze a kézzel írt aláírás helyettesítése, míg a digitális aláírás további biztonsági szolgáltatásokat biztosít. A digitális aláírások esetén meghatározható, hogy egy másik felhasználó vagy folyamat nem módosította-e illetéktelenül az adatokat. A digitális aláírások ellenőrizhetők, és ennek az ellenőrzésnek az eredményét nem cáfolhatja meg még az adatok aláírására használt tanúsítvány tulajdonosa sem. Az alábbi leírásból kiderül, hogy a Microsoft Dynamics 365 for Finance and Operations rendszerben használt elektronikus aláírásokba a digitális aláírások funkciói is be vannak építve.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronikus aláírások a Dynamics 365 for Finance and Operations rendszerben
-A Finance and Operations rendszerben a kritikus üzleti folyamatoknál használhatja az elektronikus aláírásokat. Egyes folyamatokba be vannak építve az elektronikus aláírási funkciók. Ugyanezen a képernyőn egyéni elektronikus aláírási követelményeket is létrehozhat, tetszőleges adatbázis-táblára és mezőre vonatkozóan. Az elektronikus aláírásokba a digitális aláírások funkciói is be vannak építve. Minden felhasználónak, aki dokumentumokat ír alá, be kell szereznie egy érvényes kriptográfiai tanúsítványt. A dokumentum aláírásakor a tanúsítványhoz társított titkos kulcsot ellenőrzi a rendszer. A Finance and Operations egy naplóban rögzíti az elektronikus aláírások adatait, ezáltal gondoskodik az ellenőrzéshez szükséges könyvvizsgálati naplóról. Az elektronikus aláírások beállításához lásd: [Elektronikus aláírások beállítása (Feladat-útmutató)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+A Finance and Operations rendszerben a kritikus üzleti folyamatoknál használhatja az elektronikus aláírásokat. Egyes folyamatokba be vannak építve az elektronikus aláírási funkciók. Ugyanezen a képernyőn egyéni elektronikus aláírási követelményeket is létrehozhat, tetszőleges adatbázis-táblára és mezőre vonatkozóan. Az elektronikus aláírásokba a digitális aláírások funkciói is be vannak építve. Minden felhasználónak, aki dokumentumokat ír alá, be kell szereznie egy érvényes kriptográfiai tanúsítványt. A dokumentum aláírásakor a tanúsítványhoz társított titkos kulcsot ellenőrzi a rendszer. A Finance and Operations egy naplóban rögzíti az elektronikus aláírások adatait, ezáltal gondoskodik az ellenőrzéshez szükséges könyvvizsgálati naplóról. Az elektronikus aláírások beállításához lásd: [Elektronikus aláírások beállítása (Feladat-útmutató)](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Felhasználók, akik az elektronikus aláírásokhoz kérnek hozzáférést
 Általában háromféle felhasználónak van szüksége biztonsági hozzáférésre az elektronikus aláíráshoz: az elektronikus aláírás rendszergazdái, az aláírók és az elektronikus aláírás felülvizsgálói.

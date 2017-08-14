@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 1f12e8e82430c79ee93f2284e5fdf47ac559525d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -123,7 +123,11 @@ A járulékos költségek a vállalat működésének folyamatos költségeire v
 
 **Költségfelosztás**
 
-A költségfelosztás a költségek hozzárendelése és felosztása a közös költségek kiváltó oka alapján. A költségösszegeket és -mennyiségeket egyik költségobjektumtól egy vagy több másik költségobjektumokhoz osztjuk fel. A létesítményszolgáltatási költségeket például a közös irodaépületet használó különböző részlegek között osztjuk fel.
+A költségfelosztást arra használhatja, hogy költségeket egy költségobjektumból egy vagy több más költségobjektumhoz rendelje a megfelelő felosztási bázis alkalmazásával. A költségelosztás és a költségek felosztása abban különbözik, hogy a költségelosztás mindig az eredeti költség elsődleges költségelemének szintjén történik.
+
+**Költségfelosztás**
+
+A felosztást arra használják, hogy egy költségobjektum egyenlegét mások költségobjektumokhoz hozzárendeljék egy felosztási alap alkalmazásával. A Finance and Operations a reciprokális felosztási módszert támogatja. A reciprokális felosztási módszer esetében a segédköltség-objektumok által kicserélt kölcsönös szolgáltatások teljes mértékben elismertek. A rendszer automatikusan meghatározza a felosztások végrehajtásának megfelelő sorrendjét. A költségobjektumok egyenlegének felosztása egyetlen felosztási alap szerint történik. A rendszer támogatja a költségobjektum-dimenziók és a hozzájuk tartozó tagok közötti felosztásokat. A felosztás sorrendjét a költség ellenőrzőegysége vezérli.
 
 **Költségfelosztási irányelv**
 

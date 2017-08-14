@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 3c3c215dbc64c3b823ab8537b66f72d7d7fdf5c1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -94,6 +94,18 @@ A szállítót különböző tranzakciótípusokhoz lehet varakozásra helyezni.
 -   **Soha** – a szállító soha nem lesz várakoztatott inaktivitás miatt.
 
 Ha a szállítót várakoztatja, akkor megadhatja az okot és a várakoztatott állapot végét jelölő dátumot is. Ha nem ad meg egy záró dátumot, a szállító várakoztatott állapota határozatlan ideig tart.
+
+Tömegesen **Mind** értékre frissítheti a várakoztatott állapotot a szállítóknál a **Szállító inaktiválása** oldal kiválasztott feltételei alapján, majd hozzárendel egy okot arra vonatkozóan, hogy miért van a szállító várakoztatott állapotban.
+
+A következő kritériumok olyan szállítók bevonására használhatók, akik egy adott időszakban inaktívak voltak, illetve olyan szállítók bevonására vagy kizárására, akik alkalmazottak, továbbá az olyan szállítók kizárására, akik türelmi idő alatt vannak a következő várakoztatás előtt.
+
+- Attól függően, hogy hány napot állít be az **Inaktivitási időszak** mezőben, a **Szállító inaktiválása** oldalon, az alkalmazás kiszámítja a legfrissebb dátumot, amikor a szállító bármilyen tevékenysége inaktívnak tekinthető. Ez azt jelenti, hogy az aktuális dátumból le kell vonni az Ön által megadott napoknak a számát. Ha egy vagy több olyan számla található a szállítónál, ahol a dátum a legkésőbbi kiszámított dátumnál később van, akkor a szállító kizárásra kerül az inaktiválásból. Ezt akkor is ellenőrzi a rendszer, ha a szállítónak befizetései vannak az adott dátum után, illetve nyitott beszerzési rendelésekkel, ajánlatkérésekkel vagy válaszokkal rendelkezik.
+- A **Türelmi idő a következő felfüggesztés előtt** mezőben található napok száma segítségével számítja ki a rendszer a legújabb türelmi idő dátumát. Ez azt jelenti, hogy az aktuális dátumból le kell vonni az Ön által megadott napok számát. Ez csak a korábban inaktivált szállítókra vonatkozik. Előző inaktiválás esetén az alkalmazás ellenőrzi az inaktiválás egyéb előfordulásainak előzményeit a szállítónál, és ellenőrzi, hogy a legutóbbi inaktiválás a legutóbbi türelmi dátum előtt történt-e. Ebben az esetben a szállítót belevonja a rendszer az inaktiválási folyamatba.
+- Az **Alkalmazottak megjelenítése** paraméter azokra a szállítókra vonatkozik, amelyek egy alkalmazotthoz kapcsolódnak. Beállíthatja, hogy szerepeltetni kívánja-e ezeket az alkalmazottakat.
+
+Ez a folyamat mindig kizárja azokat a szállítókat, amelyeknél a **Szállító várakoztatása** mező értéke **Soha**.
+
+Az ellenőrzéseket teljesítő szállítók várakoztatott állapotba kerülnek, ami a **Szállító várakoztatása** mezőt **Mind** értékre, az **Ok** mezőt pedig a kijelölt értékre állítja. A várakoztatott előzményekhez egy rekord kerül létrehozásra a szállítónál.
 
 ## <a name="vendor-invoice-account"></a>Szállító számlaszáma
 Ha egynél több szállító van ugyanazon a számlázási címen, vagy ha egy szállító egy harmadik félen keresztül kapja a számláját, megadhatja a számlázási fiókot a szállító rekordján. A számlafogadó az a számla, amelyen követel tételként jelenik meg a számlaösszeg olyankor, amikor szállítói számlát hoz létre egy beszerzési rendelésből. Ha nem ad meg számlafogadót a szállítói rekordon, akkor a szállítói számla lesz a számlafogadó.
