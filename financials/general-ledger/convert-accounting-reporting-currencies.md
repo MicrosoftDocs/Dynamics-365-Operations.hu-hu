@@ -1,35 +1,33 @@
 ---
 title: "Könyvelési vagy jelentési pénznem átváltása"
 description: 
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 78223
 ms.assetid: 31c56f9a-9c64-40a2-90e3-1969a760614b
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 728af2fff6317c17e47d48ea07dbeb57068fbf3f
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: c738207f3088da151ec2317ce2b445f83278ec79
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Könyvelési vagy jelentési pénznem átváltása
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Egy vállalat, amelynek módosítania kell a könyvelési pénznemét vagy a jelentési pénznemét, két lehetőség közül választhat. Az első lehetőség új vállalat létrehozása, és új kezdés. A rendelkezésre álló másik lehetőség a könyvelési, illetve a jelentési pénznem átváltási folyamatának futtatása. Ez az egy rendkívül hosszú ideig futó folyamat, amely minden tranzakciót módosít a rendszerben. A folyamat futtatása előtt némi beállítás is szükséges.
@@ -77,6 +75,6 @@ A pénznemváltást után minden egyeztetési jelentést újra kell generálni, 
 
 Ha az összes főkönyvi tranzakciónapló törölve lett, készíthet egy új naplót a főkönyvi tranzakciókról. Kattintson a **Főkönyv** &gt; **Időszakos** &gt; **Naplók** &gt; **Naplózás** lehetőségekre. A valutaösszegeket a pénznemátváltás után értékelheti át, ha átértékelésre van szükség. Idegen pénznemben megadott összegeket a **Szokásos** kiválasztásával a **Metódus** mezőben értékelhet át.
 
-
+További tudnivalókért lásd: [Feladott naplóbejegyzések naplózása](tasks/journalize-posted-journal-entries.md).
 
 

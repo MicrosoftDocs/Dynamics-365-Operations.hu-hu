@@ -1,9 +1,9 @@
 ---
 title: "A számlatükör megtervezése"
 description: "A cikk olyan információkat tartalmaz, melyek segítik önt számlatükröt tervezni szervezete számára."
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4c57c4fe8cc66228062f7b64c88efe255657d016
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 424ea5ce12d51d384c86878b7d2199bcd52c40f8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,17 +45,19 @@ A szervezeti számlatükör szerkezetével kapcsolatos döntések meghozatalakor
 -   A jelentési kötelezettségeket a jogi személy
 -   Milyen szintű részletezést szükséges, mind külső szervezetek, mind a a szervezet számára
 
-A számlatükröket a **Számlatükör** oldalon állíthatja be. A fő számlák a **Számlatükör** lapon vagy a **Fő számlák** oldalon hozhatók létre. A fő számlák nevében nem használható olyan speciális karakter, amelyet a számlatükör elválasztójelként használ. Ha a számlatükör-elválasztójelekkel megegyező különleges karaktert használ, akkor a rendszer instabillá válhat, vagy mindig kereséssel vagy helyi menüvel kell megadnia a számla és a dimenzió kombinációját. 
+A számlatükröket a **Számlatükör** oldalon állíthatja be. A fő számlák a **Számlatükör** lapon vagy a **Fő számlák** oldalon hozhatók létre. A fő számlák nevében nem használható olyan speciális karakter, amelyet a számlatükör elválasztójelként használ. Ha a számlatükör-elválasztójelekkel megegyező különleges karaktert használ, akkor a rendszer instabillá válhat, vagy mindig kereséssel vagy helyi menüvel kell megadnia a számla és a dimenzió kombinációját. További tudnivalókkal kapcsolatban lásd: [Fő számla létrehozása](tasks/create-account-structures.md).
+
 
 Rendkívül hasznos lehet a fő számlákat összekapcsolni főszámla-kategóriákkal, így kiélvezheti az alapértelmezett pénzügyi jelentések előnyeit anélkül, hogy módosításokat kellene végrehajtania. Így gyorsaban és egyszerűbben tud jelentéseket tervezni és karbantartani. 
 
-A **Számlastruktúrák konfigurálása** oldalon hozhat létre számlastruktúrákat. A számlastruktúrák határozzák meg az érvényes kombinációkat. A kombinációkat, a fő számlákat, valamint a Számlatükör képernyő. 
+A **Számlastruktúrák konfigurálása** oldalon hozhat létre számlastruktúrákat. A számlastruktúrák határozzák meg az érvényes kombinációkat. A kombinációkat, a fő számlákat, valamint a Számlatükör képernyő.  További tudnivalókkal kapcsolatban lásd: [Számlastruktúra létrehozása](tasks/create-main-account.md).
 
 **Jogi személy felülbírálásai** 
 
 Nem minden fő számla érvényes minden jogi személyre, és néhány csak egy adott időszakra vonatkozhat. Ebben az esetben a Jogi személy felülbírálása szakasz használható annak azonosítására, hogy mely vállalatok számára kell felfüggeszteni a fő számlát, ki a tulajdonos, és mely időszakban aktív a dimenzió. A megosztott szinten történő felülbírálások nem lehet szigorúbban korlátozóak, mint a jogi személy szintjén történőek.
 
-További információért lásd: [Pénzügyi dimenziók](financial-dimensions.md).
+További tájékoztatást a következő témakörökben talál: [Pénzügyi dimenziók](financial-dimensions.md)
+[Speciális szabálystruktúrák létrehozása és hozzárendelése](tasks/create-assign-advanced-rule-structures.md)
 
 
 

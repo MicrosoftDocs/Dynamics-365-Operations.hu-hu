@@ -1,9 +1,9 @@
 ---
 title: "Vevői kifizetések részösszegre"
 description: "Bizonyos esetekben a vevő kisebb összeget fizet ki, mint a számlán szereplő összeg. Ez a cikk az ilyen helyzetek megoldásait taglalja. Az Ön számára elérhető beállítások az ön üzleti igényeitől és konfigurációitól függenek."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 795d13a07065a125a750970beaff85b59307f623
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: ebfa8aaed6f82e9c3142540d0850c59d49328d59
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -61,5 +60,5 @@ Amikor a vevő kifizetést küld, egyes esetekben visszamarad egy kisebb, még k
 A vevők részleges kifizetést is végezhetnek, amelynél a fennmaradó összeget nem fizeti ki, viszont az összeg nagyobb, mint a **Kötelezettségek paraméterei** oldalon megadott alulfizetési összeg. Ha szeretné a számlát teljesen kiegyenlítettként megjelölni, használja a **Teljes kiegyenlítés** beállítást a **Tranzakció kiegyenlítése** lapon. (A teljes kiegyenlítési funkciót egy konfigurációs kulccsal engedélyezheti.) Tegyük fel, hogy egy 1000,00 értékű számlát ad fel, a vevő pedig 990,00 értéket fizet ki. Már elfogadta, hogy a vevőnek nem kell kifizetnie a fennmaradó 10,00-et. A számla kiegyenlítésre való megjelölése után megjelölheti a **Teljes kiegyenlítés** opciót is. A számla ezután teljesen kiegyenlítettnek fog számítani. A 10,00 különbséget egy készpénzfizetési engedményszámlára adja fel a rendszer, mint további készpénzfizetési engedmény.
 
 
-
+További információkért lásd: [Vevői kifizetések letétele](tasks/deposit-customer-payments.md).
 

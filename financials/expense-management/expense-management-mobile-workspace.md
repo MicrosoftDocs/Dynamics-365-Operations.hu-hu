@@ -16,12 +16,12 @@ ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
-ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 58d36505461ea89bf466209d3da968d1357e58ae
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -131,11 +131,11 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 ## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Költségek gyors rögzítése a Költséggazdálkodás mobil munkaterület használatával
 1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
 2. Válassza ki a **Gyors költségbejegyzés** lehetőséget.
-3. Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
+3. Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
 4. Adja meg a költségtranzakció dátumát.
 5. Nem kötelező: Adjon kereskedőt a költséghez.
 6. Adja meg a költség összegét.
-7. Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
+7. Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
 8. Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
 9. Tegye a következők egyikét:
 
@@ -166,11 +166,11 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 7. Jelöljön ki egy vagy több költséget a listán.
 8. Válassza a **Kész** lehetőséget.
 9. Ha új költséget szeretne hozzáadni a költségjelentéshez, válassza ki az **Új költség** lehetőséget.
-10. Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
+10. Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
 11. Nem kötelező: Adjon kereskedőt a költséghez.
 12. Adja meg a költségtranzakció dátumát.
 13. Adja meg a költség összegét.
-14. Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
+14. Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
 15. Válassza a **Kész** lehetőséget.
 16. Ha további részleteket szeretne hozzáadni a költséghez, válassza ki a **További részletek hozzáadása** lehetőséget. A rendelkezésre álló mezők a Költséggazdálkodás Ön vállalatánál való konfigurációjától függnek.
 17. Ha a vállalati irányelv nyugtát ír elő a költséghez, válassza ki a **Nyugták** lehetőséget, majd kövesse az alábbi lépéseket:
@@ -216,12 +216,12 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
         - Ha az **Előző vendégek** lehetőséget választotta, kövesse az alábbi lépéseket:
 
-            1. Jelöljön ki egy vagy több korábbi vendéget a listán. Megjelenik egy lista azokról a korábbi vendégekről, akiket korábbi költségjelentésekhez adott hozzá, és amelyek betöltődtek az alkalmazásába offline használatra. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a korábbi vendég nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Végezhet név szerinti keresést, vagy átválthat a szervezet, ország vagy beosztás szerinti keresésre.
+            1. Jelöljön ki egy vagy több korábbi vendéget a listán. Megjelenik egy lista azokról a korábbi vendégekről, akiket korábbi költségjelentésekhez adott hozzá, és amelyek betöltődtek az alkalmazásába offline használatra. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a korábbi vendég nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Végezhet név szerinti keresést, vagy átválthat a szervezet, ország vagy beosztás szerinti keresésre.
             2. Válassza a **Kész** lehetőséget.
 
         - Ha a **Munkatársak** lehetőséget választotta, kövesse az alábbi lépéseket:
 
-            1. Jelöljön ki egy vagy több munkatársat a listán. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött munkatársak listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha a munkatárs nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Végezhet név szerinti keresést, vagy átválthat a vállalat vagy beosztás szerinti keresésre.
+            1. Jelöljön ki egy vagy több munkatársat a listán. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött munkatársak listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a munkatárs nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Végezhet név szerinti keresést, vagy átválthat a vállalat vagy beosztás szerinti keresésre.
             2. Válassza a **Kész** lehetőséget.
 
     3. Válassza ki a **Vissza** gombot a költségrészletekhez való visszatéréshez.
@@ -230,7 +230,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
     1. Válassza ki a részletezni kívánt első dátumot.
     2. Válassza a **Részletezés hozzáadása** elemet.
-    3. Válassza ki a költségrészletezés alkategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségalkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform) Ha az alkategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keresés a költség alkategóriájának neve alapján.
+    3. Válassza ki a költségrészletezés alkategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségalkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha az alkategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keresés a költség alkategóriájának neve alapján.
     4. A részletezés tranzakciós összegének megadása.
     5. Szükség esetén módosítsa a tranzakció dátumát.
     6. Válassza a **Kész** lehetőséget.

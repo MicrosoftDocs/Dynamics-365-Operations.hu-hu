@@ -1,9 +1,9 @@
 ---
 title: "Követelések és beszedések beállítása"
 description: "Ez a cikk a beszedési funkciók beállítását ismerteti."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4d3682c486e80afd03ec5805575357f4e87781f2
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 76937aacbc1925603766299168ec2d4090bd161b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ Ez a cikk a beszedési funkciók beállítását ismerteti.
 Állítson be egy korosítási időszak meghatározást. Egy korosításiidőszak-definíció meghatározza az oszlopokat, amelyek megjelennek a **Korosított egyenlegek**, **beszedési tevékenységek**, és **beszedési esetek** listaoldalon. Meghatározza továbbá a **beszedés** lapon megjelenő időszakokat. Ha be van állítva a vevőgyűjtő, akkor az ahhoz megadott definíció szerinti korosítási időszakok lesznek használatban. Ha nincsenek beállítva gyűjtők, akkor az alapértelmezett korosításiidőszak-definíció kerül használatra, amely a **Kinnlevőségek paraméterei** lapon van megadva. Ha nincs megadva alapértelmezett korosításiidőszak-definíció, akkor a **korosításiidőszak-definíciók** lapon található első korosításiidőszak-definíció kerül használatra.
 
 ## <a name="create-an-aging-snapshot"></a>Korosítási pillanatkép létrehozása
-Létrehozhat korosítási pillanatképrekordokat minden vevőre vagy egy adott vevőgyűjtőben levő vevőkre vonatkozóan. A korosítási pillanatkép információ megjelenik a**korosított egyenlegek** listaoldalon és a **beszedés** lapon. A listalap használatához előbb létre kell hozni egy korosítási pillanatképet. A listaoldal csak olyan vevőkről mutat információt, amelyek számára lett korosítási pillanatkép készítve.
+Létrehozhat korosítási pillanatképrekordokat minden vevőre vagy egy adott vevőgyűjtőben levő vevőkre vonatkozóan. A korosítási pillanatkép információ megjelenik a **korosított egyenlegek** listaoldalon és a **beszedés** lapon. A listalap használatához előbb létre kell hozni egy korosítási pillanatképet. A listaoldal csak olyan vevőkről mutat információt, amelyek számára lett korosítási pillanatkép készítve.
 
 ## <a name="optional-set-up-customer-pools"></a>Vevőgyűjtők beállítása (nem kötelező)
 A vevők csoportosítására vevőgyűjtőket hozhat létre. Használhatja a vevőgyűjtőket szűrőkként a vevői információhoz, amely a **beszedések** lap **beszedések** listaoldalán jelenik meg, vagy amikor korosítási pillanatképet hoz létre.
@@ -94,5 +94,12 @@ A vevőhöz tartozó **követelések és beszedések** gyorslapon a **beszedési
 Ha az értékesítési képviselő nincs megadva, akkor a vevőszervezethez tartozó elsődleges értékesítő kerül használatra. Ha az elsődleges értékesítő nincs megadva, akkor az e-mail üzenetek a lapon szereplő első értékesítőhöz lesznek kiküldve.
 
 
+További információ a következő témakörökben olvasható:
+
+ - [Fizetésifelszólítás-sorozat létrehozása](tasks/create-collection-letter-sequence.md)
+ 
+ - [Fizetési felszólítások feldolgozása](tasks/process-collection-letters.md)
+ 
+ - [A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata](tasks/review-collections-information.md)
 
 

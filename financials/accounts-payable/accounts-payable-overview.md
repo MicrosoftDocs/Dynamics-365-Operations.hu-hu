@@ -1,9 +1,9 @@
 ---
 title: "Kötelezettségek konfigurálása"
 description: "Ez a cikk azoknak az oldalaknak a leírását tartalmazza, amelyek használatával beállíthatók a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszer Kötelezettségek moduljának alapvető, illetve választható funkciói. Azokat a beállítási lépéseket is bemutatja, amelyeket a Kötelezettségek beállításának elkezdése előtt kell elvégezni."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -47,7 +46,7 @@ Mielőtt beállítja a Kötelezettségeket el kell végezni az alábbiakat:
 ## <a name="setup-pages-for-accounts-payable"></a>A Kötelezettségek modul beállítási oldalai
 
 A következő oldalak segítségével minden egyes jogi személyeknél beállíthatja a Kötelezettségek modul alapvető funkcióit. Az oldalak a javasolt beállítási sorrendben vannak felsorolva. A beállítás egyszerűsítése érdekében az első létrehozott rekordból sablonokat hozhat létre. A sablonban az értékek általában több mezőben találhatók, hogy láthatók legyenek a tulajdonságok, amelyeket a szervezet alkalmazni kíván egy adott szállító típushoz.
-1.  A Fizetési feltételek oldalon adja meg a fizetés feltételeit, amelyeket értékesítési rendelésekhez, beszerzési rendelésekhez, vevőkhöz és szállítókhoz kíván hozzárendelni és amelyek meghatározzák a számlák határidejét.
+1.  A Fizetési feltételek oldalon adja meg a fizetés feltételeit, amelyeket értékesítési rendelésekhez, beszerzési rendelésekhez, vevőkhöz és szállítókhoz kíván hozzárendelni és amelyek meghatározzák a számlák határidejét. További információkért lásd: [Szállítói kifizetési díjak meghatározása](tasks/define-vendor-payment-fees.md).
 2.  A Fizetési módok – szállítók oldalon hozzon létre és frissítse az információkat, hogyan fizet a szervezet a beszállítóknak.
 3.  A Szállítói csoportok oldalon hozzon létre és frissítse az információkat a szállítókkal kapcsolatban, akik fontos paraméterekkel rendelkeznek feladással, kiegyenlítéssel, fizetéssel és előrejelzéssel kapcsolatban.
 4.  A Szállítói feladási profilok oldalon adja meg hogyan kerüljenek postázásra a szállítói tranzakciók a főkönyvbe.
