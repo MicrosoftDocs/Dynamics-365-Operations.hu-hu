@@ -3,7 +3,7 @@ title: "Manuális feladat konfigurálása munkafolyamatban"
 description: "Ez a témakör bemutatja, hogyan kell konfigurálni a manuális feladat tulajdonságait."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -165,6 +165,7 @@ Ha a felhasználó nem hajtja végre a manuális feladatot a megadott idő alatt
 
 1.  A bal oldali panelen kattintson az **Eszkalálás** gombra.
 2.  Válassza ki az **Eszkalációs útvonal használata** jelölőnégyzetet egy eszkalációs útvonal létrehozásához. A rendszer automatikusan hozzárendeli a feladatot az eszkalációs útvonalon felsorolt felhasználókhoz. Például az alábbi táblázat egy eszkalációs útvonalat jelent.
+
     | Sorozat | Eszkalációs útvonal      |
     |----------|----------------------|
     | 1        | Hozzárendelés a következőhöz: Dóra     |
@@ -318,7 +319,9 @@ Beállíthatja a rendszert egy manuális művelet végrehajtására, ha bizonyos
 8.  Ismételje meg a 3 – 7. lépést a 2. lépésben kiválasztott összes eseményhez.
 
 ## <a name="set-a-time-limit"></a>Időkorlát beállítása
-Kövesse az alábbi lépéseket, ha a kézi tevékenységet be kell fejezni egy megadott időn belül. **Megjegyzés:** Az eljárásban kijelölt beállítások felülbírálják az oldal **Hozzárendelés** és **Eszkaláció** területén kijelölt beállításokat.
+Kövesse az alábbi lépéseket, ha a kézi tevékenységet be kell fejezni egy megadott időn belül. 
+
+**Megjegyzés:** Az eljárásban kijelölt beállítások felülbírálják az oldal **Hozzárendelés** és **Eszkaláció** területén kijelölt beállításokat.
 
 1.  A bal oldali panelen kattintson az **Speciális beállítások** gombra.
 2.  Válassza ki a **A munkafolyamat-elem időkorlátjának beállítása** jelölőnégyzetet.
