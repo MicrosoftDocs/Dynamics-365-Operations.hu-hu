@@ -14,13 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
-ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 07/27/2017
 [!include[banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 for Finance and Operations tartalmaz egyes ország-/ területspecifikus előírásokkal és folyamatokkal kapcsolatos funkciókat, melyek leírása megtalálható a [Termékelérhetőségi útmutatóban](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
+A Microsoft Dynamics 365 for Finance and Operations tartalmaz egyes ország-/ területspecifikus előírásokkal és folyamatokkal kapcsolatos funkciókat, melyek leírása megtalálható a [Nemzetközi termékelérhetőségi útmutatóban](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
 
-Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról. 
+Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus megoldásokról, frissítésekről, riasztásokról és funkciókról. 
 
 ## <a name="developing-localized-solutions"></a>Honosított funkciók fejlesztése
 A következő erőforrások az ország-/ régióspecifikus testreszabásokat létrehozó, illetve a Microsoft által nem támogatott ország számára megoldást biztosító fejlesztők és független szoftverszállítók számára nyújtanak útmutatást és információkat.
@@ -96,9 +96,13 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [CODA banki kivonat](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [Intervat-adóbevallás](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM-jelentés beállítása](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
+-   [Egyeztetési jelentések](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
 
 ### <a name="brazil"></a>Brazília
 
+-   [CIAP tárgyi eszköz](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
+-   [Pénzügyi könyvek beállítása](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
+-   [Főkönyvi konszolidációhoz létrehozott tranzakciók exportálása és importálása Brazília esetében](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
 -   [Pénzügyi könyvek](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
 -   [Pénzügyi dokumentum szöveges helyőrzők](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
 -   [Pénzügyi bizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
@@ -108,10 +112,12 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Az elektronikus visszafizetési folyamat során létrehozott naplók](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
 -   [NF-e folyamat](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
 -   [Jogi személyek paraméterei](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
+-   [Elektronikus fizetési átutalások feldolgozása Brazília esetében](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
 -   [Beszerzés – kiegészítő pénzügyi bizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
 -   [Hivatkozott pénzügyi dokumentumok](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
--   [Sales – kiegészítő pénzügyi bizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
+-   [Értékesítést kiegészítő pénzügyi bizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
 -   [Szolgáltatás – elektronikus pénzügyi bizonylat](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
+-   [NF-e XML-dokumentumok és a DANFE-fájlok beállítása, importálása és ellenőrzése](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
 -   [Adóattribútumok](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
 -   [Adófizetések](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
 -   [Adók](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
@@ -159,6 +165,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 - [Árfolyam-korrekciók](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
 - [Fizetési módok fájlformátumai](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 - [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [ISO20022 fájlok importálása](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
 - [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
 - [Készletnapló-jelentések](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
 - [Számla- és szállítólevél-számozás Lettország és Litvánia esetében](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
@@ -174,6 +181,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 - [SEPA beszedési megbízás – áttekintés](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
 - [Vevői és szállítói kompenzáció beállítása](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
 - [Aláírók felállítása a nyomtatási képernyőkhöz](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Sztornókönyvelés](/dynamics365/unified-operations/financials/localizations/emea-storno)
 - [Adóügyi irányelvek](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
 - [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
 - [Áfaárfolyamok](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
@@ -246,6 +254,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 
 -   [Tárgyi eszköz javítási kimutatása](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
 -   [Számla és szállítólevél számozása](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+-   [Áfabevallás részletei](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
 
 ### <a name="mexico"></a>Mexikó
 
@@ -296,6 +305,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Tárgyi eszköz átértékelési csoportjai](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
 -   [Közösségi áfa](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Egyszeri vevők](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
+-   [Csekkek nyomtatása a spanyol elrendezésben](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
 -   [Spanyol kötelezvény beállításai](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Beszerzési és értékesítési ciklusok](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Speciális bevitelek és nyitólapok](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
@@ -313,6 +323,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 ### <a name="thailand"></a>Thaiföld
 
 -   [Készletkarton-jelentések](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
+-   [Helyettesítési/helyesbítési adószámla Thaiföld esetében](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
 -   [Nem realizált áfa](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
 -   [Adóelőleg](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
 
@@ -322,6 +333,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 
 ### <a name="united-states"></a>Amerikai Egyesült Államok
 
+-   [1099-es űrlap az állami szektorban](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
 -   [I-9-es űrlap ellenőrzése](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [Év végi 1099-es jelentés](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Bérlista](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)

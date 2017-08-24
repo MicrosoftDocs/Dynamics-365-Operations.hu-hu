@@ -3,7 +3,7 @@ title: "Költségvetés kezdőlap"
 description: "Ez a témakör áttekintést ad a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban elérhető költségvetési funkció összetevőiről, a költségvetési eszközökről, valamint a jelentéskészítési lehetőségekről."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/09/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 5c18de5a3e8af32564771b6a30c0ec6876e399a6
+ms.translationtype: HT
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: e59c29370353a6e4a67d2b892e2024ca78d560fc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/29/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -36,7 +36,12 @@ Ez a témakör áttekintést ad a Finance for Operations rendszerben elérhető 
 -------------------------------------
 
 Az erőforrástervezési ciklus egy vállalatnál általában tervezési, költségvetési és előrejelző tevékenységekből áll.
-[![A költségvetési funkció összetevői](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg) Mind a hosszú távú stratégiai tervezés, mind az éves költségvetés-tervezés folyamatait támogatja egy költségvetéstervezés-dokumentum. A költségvetéstervezés-dokumentumok szorosan integrálódnak a Microsoft Excellel. A felhasználók korlátlan monetáris és mennyiségi eseteket konfigurálhatnak, és meghatározhatnak egy költségvetés-tervezési szervezeti hierarchiát, így a felülről lefelé, illetve az alulról fölfelé épülő költségvetés-tervezési módszereket is támogatja a rendszer. A költségvetés létrehozása és a Finance and Operations rendszerben történő jóváhagyása után költségvetési tételjegyzék-bejegyzéssé konvertálhatja a költségvetési tervet. A költségvetési tételjegyzék-bejegyzések révén karbantartható a költségvetés, és költségvetési kódok segítségével nyomon követhetők az összegek. A költségvetési tételjegyzék-bejegyzések segítségével felülvizsgálhatók az eredeti költségvetések, és áthozhatók az előző évi költségvetési összegek. A létrehozott költségvetés alapján a vállalat engedélyezheti a költségvetés-ellenőrzést. Az ellenőrzés szintje függ a szervezeti kultúrától és a szervezet érettségi szintjétől. Az alacsonyabb érettségi szintű szervezeteknél előfordulhat, hogy a költségvetést „adott állapotában” hagyják, és inkább reaktívan, mint proaktívan viselkednek, ha a költségvetés nem felel meg az elvárásoknak. Egyéb szervezeteknél előfordulhat olyan költségvetés-ellenőrzési irányelveket engedélyezhetnek, amelyek nem engedik a beszerzést a felhasználóknak, ha a költségvetési források nem érhetők el. Végül pedig a nagyon érett szervezetek kialakíthatnak egy olyan vállalati kultúrát, ahol az alkalmazottak megfelelő oktatást kapnak a szervezeti célokról, és követik ezen célokat, olyan irányelvek révén, mint például az „Online értekezlet megfontolása utazás helyett”. A Finance and Operations rendszer olyan költségvetés-ellenőrzési keretrendszert tartalmaz, amely lehetővé teszi a vállalat vezetésének, hogy válasszon a kemény szabályozás (amely megakadályozza az olyan feladásokat, amelyek átlépnék a költségvetést) és a puha szabályozás (amely figyelmezteti a felhasználókat, hogy túllépik az elérhető költségvetési alapokat, de eldönthetik, hogy hogyan haladnak tovább) között. Végül pedig használhat gördülő előrejelzéseket is. A gördülő előrejelzés rendszeres összehasonlítás a költségvetés és a tényleges tételek között, és segítségével meghatározható, a cég milyen jól teljesíti a költségvetést. A gördülő előrejelzés trendek felfedezésére is szolgál. A Finance and Operations rendszerben a gördülő előrejelzések támogatása kezdeti tervezési tevékenységekként egy költségvetési tervezési dokumentumon keresztül történik. A gördülő előrejelzések elvégezhetőek a következő költségvetési tervezési ciklus tervezésével párhuzamosan.
+
+[![A költségvetés-tervezési funkció összetevői](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+
+Mind a hosszú távú stratégiai tervezés, mind az éves költségvetés-tervezés folyamatait költségvetés-tervezési dokumentum segíti. A költségvetéstervezés-dokumentumok szorosan integrálódnak a Microsoft Excellel. A felhasználók korlátlan monetáris és mennyiségi eseteket konfigurálhatnak, és meghatározhatnak egy költségvetés-tervezési szervezeti hierarchiát, így a felülről lefelé, illetve az alulról fölfelé épülő költségvetés-tervezési módszereket is támogatja a rendszer. A költségvetés létrehozása és a Finance and Operations rendszerben történő jóváhagyása után költségvetési tételjegyzék-bejegyzéssé konvertálhatja a költségvetési tervet. A költségvetési tételjegyzék-bejegyzések révén karbantartható a költségvetés, és költségvetési kódok segítségével nyomon követhetők az összegek. A költségvetési tételjegyzék-bejegyzések segítségével felülvizsgálhatók az eredeti költségvetések, és áthozhatók az előző évi költségvetési összegek. A létrehozott költségvetés alapján a vállalat engedélyezheti a költségvetés-ellenőrzést. Az ellenőrzés szintje függ a szervezeti kultúrától és a szervezet érettségi szintjétől. Az alacsonyabb érettségi szintű szervezeteknél előfordulhat, hogy a költségvetést „adott állapotában” hagyják, és inkább reaktívan, mint proaktívan viselkednek, ha a költségvetés nem felel meg az elvárásoknak. Egyéb szervezeteknél előfordulhat olyan költségvetés-ellenőrzési irányelveket engedélyezhetnek, amelyek nem engedik a beszerzést a felhasználóknak, ha a költségvetési források nem érhetők el.
+
+Végül pedig a nagyon érett szervezetek kialakíthatnak egy olyan vállalati kultúrát, ahol az alkalmazottak megfelelő oktatást kapnak a szervezeti célokról, és követik ezen célokat, olyan irányelvek révén, mint például az „Online értekezlet megfontolása utazás helyett”. A Finance and Operations rendszer olyan költségvetés-ellenőrzési keretrendszert tartalmaz, amely lehetővé teszi a vállalat vezetésének, hogy válasszon a kemény szabályozás (amely megakadályozza az olyan feladásokat, amelyek átlépnék a költségvetést) és a puha szabályozás (amely figyelmezteti a felhasználókat, hogy túllépik az elérhető költségvetési alapokat, de eldönthetik, hogy hogyan haladnak tovább) között. Végül pedig használhat gördülő előrejelzéseket is. A gördülő előrejelzés rendszeres összehasonlítás a költségvetés és a tényleges tételek között, és segítségével meghatározható, a cég milyen jól teljesíti a költségvetést. A gördülő előrejelzés trendek felfedezésére is szolgál. A Finance and Operations rendszerben a gördülő előrejelzések támogatása kezdeti tervezési tevékenységekként egy költségvetési tervezési dokumentumon keresztül történik. A gördülő előrejelzések elvégezhetőek a következő költségvetési tervezési ciklus tervezésével párhuzamosan.
 
 -   [Alapvető költségvetés-tervezés: Áttekintés és konfiguráció](basic-budgeting-overview-configuration.md)
 -   [Költségvetés-ellenőrzés: Áttekintés és konfiguráció](budget-control-overview-configuration.md)
@@ -58,7 +63,9 @@ További költségvetés-tervezési eszközök érhetők el a Finance and Operat
 További információért arról, hogy hogyan hívhat be tervezési adatokat más modulokból a költségvetési tervekbe, lásd: [A költségvetés-tervezés integrációja egyéb modulokkal](budget-planning-integration-other-modules.md).
 
 ## <a name="user-interface-and-reporting-capabilities"></a>Felhasználói felület és jelentési funkciók
-A Finance and Operations rendszerben a felhasználók költségvetési terveket hozhatnak létre közvetlenül vagy a Finance and Operations kliensben (konfigurálható költségvetésiterv-dokumentumlap használatával), vagy az Excel programon keresztül. Az Excel számos további lehetőséget kínál. Például használhat külső adatokat egy költségvetési terv forrásaként, egyéni számításokat végezhet, és használhat Microsoft-kimutatásokat és -diagramokat. A költségvetés-tervezési folyamat változóinak nagy része konfigurálható. Meghatározhatja például, ki tervezi a költségvetést, mire vonatkozik a költségvetés, és milyen legyen a folyamat. Annak ellenére, hogy használhatja az Excel programot a költségvetés-tervezéshez, a Finance and Operations rendszer megmarad az igazság egyetlen forrásának, és ez a rendszer segít a költségvetés-ellenőrzési problémák megelőzésében. Ismétlődő folyamatok felhasználásával a kezdeti költségvetés-tervezési adatok átemelhetők a költségvetési tervbe. A jelentésekhez a Finance and Operations rendszer szabványosított lekérdezési lapok sorát biztosítja, amelyek lehetővé teszik, hogy megtekintse és elemezze a költségvetés adatait. A költségvetési terv adatai a Felügyeleti jelentéskészítőn keresztül érhetők el; külön költségvetésiterv-esetek jeleníthetők meg oszlopokként a Felügyeleti jelentéskészítő jelentésében.
+A Finance and Operations rendszerben a felhasználók költségvetési terveket hozhatnak létre közvetlenül vagy a Finance and Operations kliensben (konfigurálható költségvetésiterv-dokumentumlap használatával), vagy az Excel programon keresztül. Az Excel számos további lehetőséget kínál. Például használhat külső adatokat egy költségvetési terv forrásaként, egyéni számításokat végezhet, és használhat Microsoft-kimutatásokat és -diagramokat. A költségvetés-tervezési folyamat változóinak nagy része konfigurálható. 
+
+Meghatározhatja például, ki tervezi a költségvetést, mire vonatkozik a költségvetés, és milyen legyen a folyamat. Annak ellenére, hogy használhatja az Excel programot a költségvetés-tervezéshez, a Finance and Operations rendszer megmarad az igazság egyetlen forrásának, és ez a rendszer segít a költségvetés-ellenőrzési problémák megelőzésében. Ismétlődő folyamatok felhasználásával a kezdeti költségvetés-tervezési adatok átemelhetők a költségvetési tervbe. A jelentésekhez a Finance and Operations rendszer szabványosított lekérdezési lapok sorát biztosítja, amelyek lehetővé teszik, hogy megtekintse és elemezze a költségvetés adatait. A költségvetési terv adatai a Felügyeleti jelentéskészítőn keresztül érhetők el; külön költségvetésiterv-esetek jeleníthetők meg oszlopokként a Felügyeleti jelentéskészítő jelentésében.
 
 
 
