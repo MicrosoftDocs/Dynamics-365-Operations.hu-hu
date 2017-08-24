@@ -1,9 +1,9 @@
 ---
 title: "Fiók követelések és hitelek és gyűjtemények konfigurálása"
 description: "A Kinnlevőségek, valamint a Követelések és beszedések konfigurálása a vevőktől érkező kifizetések és számlák nyomon követése érdekében."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74556e571c215b0fea8deb061fd968c240b063d4
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 1d37014e8f7b333a15077fc3477808a3ad62b96f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -66,12 +65,12 @@ Az alábbi táblázat felsorolja azokat az oldalakat, amelyek a Fiók kötelezv�
 |                                                      | Pénznemek                           | Hozzon létre tekintse meg a szervezet által használt pénznemeket.                                                                                                                                                                                                                       |
 |                                                      | Pénznemárfolyamok              | Hozzon létre tartsa karban a könyvelési pénznem és egyéb pénznemek közötti átváltási árfolyamokat.                                                                                                                                                                              |
 |                                                      | Vállalatközi könyvelés              | Azon számlák létrehozása, amelyekre az aktuális jogi személyek tételeket adhatnak fel. A másik jogi személyben be kell állítania a tartozások és követelések könyvelését, valamint azt a naplót, amely a tranzakciókat fogadja.                                                                             |
-|                                                      | Fizetési módok - vevő        | A vevőktől érkező fizetés módjaival kapcsolatos információk megadása és karbantartása.                                                                                                                                                                                                           |
+|                                                      | Fizetési módok - vevő        | A vevőktől érkező fizetés módjaival kapcsolatos információk megadása és karbantartása. További információkért lásd: [Vevő fizetési módjának kialakítása](tasks/establish-customer-method-payment.md).                                                                                             |
 |                                                      | Szervezeti hierarchiák             | Szervezeti hierarchia felállítása központosított kifizetésekhez.                                                                                                                                                                                                                        |
 |                                                      | Szervezeti hierarchiához kapcsolódó célok      | Központosított kifizetések megadása.                                                                                                                                                                                                                                       |
 |                                                      | Fizetési napok                         | A kifizetések határidejének számításához használt fizetési napok meghatározása azokhoz a fizetésekhez, amelyekre a vevőktől számít, illetve amelyeket a vállalat fizet a szállítóknak.                                                                                                                                                |
-|                                                      | Kifizetési illeték                          | A vevőkhöz kapcsolódó kifizetési díjak, például a vevői váltók díjának létrehozása.                                                                                                                                                                               |
-|                                                      | Kifizetési díj beállítása                    | Kifizetési díjak beállítása a bankok, fizetési módok, fizetési meghatározások, utalástípusok, pénznemek és időszakok különböző kombinációihoz.                                                                                                                              |
+|                                                      | Kifizetési illeték                          | A vevőkhöz kapcsolódó kifizetési díjak, például a vevői váltók díjának létrehozása.                                                                                                                                                                         |
+|                                                      | Kifizetési díj beállítása                    | Kifizetési díjak beállítása a bankok, fizetési módok, fizetési meghatározások, utalástípusok, pénznemek és időszakok különböző kombinációihoz.  További információkért lásd: [Vevői kifizetési díjak kialakítása](tasks/establish-customer-payment-fees.md).                                                                                   |
 |                                                      | Részletfizetések                    | Fizetési ütemezések készítése, melyeket a vevőktől érkező és a szállítóknak fizetendő részletfizetések ütemezésére használhat.                                                                                                                                                                       |
 |                                                      | Kifizetési előírás                | Hozzon létre és tekintse meg a fizetési módszer fizetés specifikációs kódjait, amelyeket a Fizetési módok oldalon választott ki. A fizetési specifikáció kódjait egy megállapodásnak megfelelően adhatja meg, amelyet a fizetési módhoz megadott bankkal kötött.                    |
 |                                                      | Tranzakció szövege                     | Tranzakciószövegek létrehozása a főkönyvbe történő automatikus feladáshoz. A tranzakciószövegeket több különböző nyelven is be lehet állítani.                                                                                                                                                           |
@@ -83,8 +82,8 @@ Az alábbi táblázat felsorolja azokat az oldalakat, amelyek a Fiók kötelezv�
 |                                                      | Fizetési módok - vevő        | A vevőktől érkező fizetés módjaival kapcsolatos információk megadása és karbantartása.                                                                                                                                                                                                           |
 |                                                      | Aláírás                            | Aláírási képfájl, például .bmp, .jpg vagy .gif fájl hozzáadása, módosítása és eltávolítása. A rendszer hivatalos jogi személy aláírásként nyomtatja a csekkekre az aláírási képfájlokat.                                                                                                             |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
-| A Kinnlevőségek modul statisztikáinak konfigurálása           | Korosítási időszak definíciói             | Felhasználói korosítási időszak-definíciók beállítása és kezelése, amelyek a vevői és szállítói számlák érettségének elemzésére használhatók a megadott dátum alapján.                                                                                                         |
-|                                                      | Üzleti statisztika                  | Üzleti statiszikai lekérdezések beállítása, amelyekkel elemezhető a szervezet teljesítménye.                                                                                                                                                                              |
+| A Kinnlevőségek modul statisztikáinak konfigurálása           | Korosítási időszak definíciói             | Felhasználói korosítási időszak-definíciók beállítása és kezelése, amelyek a vevői és szállítói számlák érettségének elemzésére használhatók a megadott dátum alapján. További információkért lásd: [Kinnlevőségek korosítási adatainak beállítása és létrehozása](tasks/set-up-accounts-receivable-aging-information.md)                                                           |
+|                                                      | Üzleti statisztikák                  | Üzleti statiszikai lekérdezések beállítása, amelyekkel elemezhető a szervezet teljesítménye.                                                                                                                                                                              |
 |                                                      | Üzleti statisztikai adatok             | A kiválasztott üzleti statisztika adatainak megjelenítése rácsformátumban.                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
 | A vevőadatok karbantartása                     | Címjegyzék                         | A vevőkre, az érdeklődőkre, a lehetőségekre, a vevőkre, a kapcsolattartókra, a versenytársakra és az alkalmazottakra vonatkozó információk megadása és módosítása.                                                                                                                                                          |

@@ -1,9 +1,9 @@
 ---
 title: "Költségvetés-tervezési sablonok Excelhez"
 description: "Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez használt Microsoft Excel-sablonok."
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: hu-hu
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ Ez a témakör azon Excel-sablonok létrehozásának módját mutatja be, amelye
 
 A költségvetésiterv-dokumentumok egy vagy több elrendezés használatával tekinthetők meg és szerkeszthetők. Minden elrendezéshez tartozhat egy kapcsolódó költségvetésiterv-dokumentumsablon, amely a költségvetési terv adatainak Excel-munkalapon történő megtekintésére és szerkesztésére szolgál., Ebben a témakörben a költségvetési terv dokumentumsablonját egy meglévő elrendezéskonfiguráció segítségével hozzuk létre. 
 
-Nyissa meg a **Költségvetési tervek listája** (**Költségvetés készítése** &gt; **Költségvetési tervek**) elemet. Új költségvetésiterv-dokumentum létrehozásához kattintson az **Új** gombra. 
+1. Nyissa meg a **Költségvetési tervek listája** (**Költségvetés készítése** &gt; **Költségvetési tervek**) elemet. 
+2. Új költségvetésiterv-dokumentum létrehozásához kattintson az **Új** gombra. 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![Költségvetési tervek listája](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-Használja a **Hozzáadás** elemet sorok hozzáadásához. Kattintson az **Elrendezések** elemre a költségvetésiterv-dokumentum elrendezési konfigurációjának megtekintéséhez. 
+3. Használja a **Hozzáadás** elemet sorok hozzáadásához. Kattintson az **Elrendezések** elemre a költségvetésiterv-dokumentum elrendezési konfigurációjának megtekintéséhez. 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![Költségvetési tervek hozzáadása](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Áttekintheti és szükség szerint módosíthatja az elrendezés konfigurációját. Ha Excel-fájlt akar létrehozni ehhez az elrendezéshez, lépjen a **Sablon** &gt; **Létrehozás** elemre. A sablon létrejötte után a költségvetésiterv-dokumentumsablon megnyitásához és áttekintéséhez lépjen a **Sablon** &gt; **Nézet** elemre. Az Excel-fájlt elmentheti a helyi meghajtóra. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+Áttekintheti és szükség szerint módosíthatja az elrendezés konfigurációját. 
+1. Ha Excel-fájlt akar létrehozni ehhez az elrendezéshez, lépjen a **Sablon** &gt; **Létrehozás** elemre. 
+2. A sablon létrejötte után a költségvetésiterv-dokumentumsablon megnyitásához és áttekintéséhez lépjen a **Sablon** &gt; **Nézet** elemre. Az Excel-fájlt elmentheti a helyi meghajtóra. 
+
+[![Mentés másként](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > A költségvetésiterv-dokumentum elrendezését nem lehet szerkeszteni, miután egy Excel-sablonhoz lett társítva. Az elrendezés módosításához törölje a kapcsolódó Excel-sablonfájlt, és hozza létre újra. Ez az elrendezésben és a munkalapon lévő mezők szinkronizálásának megtartásához szükséges. 
 
 Az Excel-sablon tartalmazza az összes olyan elemet a költségvetésiterv-dokumentumelrendezésből, ahol az **Elérhető a munkalapon** oszlop értéke Igaz. Egymást átfedő elemek nem használhatók az Excel-sablonban. Például ha az elrendezés 1. n.évi kérelem, 2. n.évi kérelem, 3. n.évi kérelem és 4. n.évi kérelem oszlopokat tartalmaz, és van egy összegző oszlop, amely a 4 negyedévi oszlop összegét tartalmazza, csak a negyedévi oszlopok vagy az összegző oszlop használható fel az Excel-sablonban. Az Excel-fájl nem tud átfedésben lévő oszlopokat frissíteni a frissítés során, mivel a tábla adatai elavultakká és pontatlanná válhatnak.
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![példa](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > A költségvetésiterv-adatok Excelben történő megtekintése és módosítása során fellépő lehetséges problémák elkerülése érdekében ugyanannak a felhasználónak kell bejelentkeznie a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszerbe és a Microsoft Dynamics Office Adatcsatlakozó bővítményébe.
@@ -63,7 +68,7 @@ Fejlécadatok hozzáadásához jelölje ki a felső sort az Excel-fájlban, és 
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-A **Tervezés** lapon** **kattintson a **Hozzáadás** mezőre, és válassza ki a **BudgetPlanHeader** elemet az entitás adatforrásaként.
+A **Tervezés** lapon kattintson a **Hozzáadás** mezőre, és válassza ki a **BudgetPlanHeader** elemet az entitás adatforrásaként.
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 

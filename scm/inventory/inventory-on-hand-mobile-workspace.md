@@ -18,12 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
-ms.openlocfilehash: d14f3510df45169e3b77ee9c4f3d0d9d389e6036
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 6e062ffa459b7d008fc5d24f27538f8df04d7e82
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -76,7 +75,7 @@ Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a 
 </thead>
 <tbody>
 <tr class="odd">
-<td>Telepítse a KB 4013633 gyorsjavítást.</td>
+<td>Telepítse a KB 4013633 programot.</td>
 <td>Rendszergazda</td>
 
 <td>A KB 4013633 egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza az <strong>Aktuális készlet</strong> mobil munkaterületet. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
@@ -116,7 +115,7 @@ Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazás
 
 1.  A mobileszközön válassza az **Aktuális készlet** munkaterület.
 
-2.  Válassza az **Aktuális ellenőrzése egy cikkhez** lehetőséget. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött termékek listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)
+2.  Válassza az **Aktuális ellenőrzése egy cikkhez** lehetőséget. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött termékek listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)
 3.  Ha a cikk nem szerepel a listán, válassza a **Továbbiak keresése** lehetőséget. Keressen termékszám alapján, vagy térjen át terméknévalapú keresésre.
 
 4.  Válasszon ki egy terméket. Ha a cikkhez tartozik kép, a kép megjelenik.

@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8fc539a31f4f3f465a877e5ca5e6352de57929ab
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: d7144a979b98b3dbd2052661945e6d4fe22220a7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -61,7 +60,11 @@ A következő táblázat leírja a garancialevelen végrehajtható műveleteket.
 | Kiegyenlítés           | Miután a kedvezményezett bemutatja a garancialevelet a banknak, fizesse ki készpénzben a garancialevelet.                      |
 
 
+További információ a következő témakörökben olvasható:
 
+[Garancialevél-tranzakció](tasks/letter-guarantee-transaction.md)
+
+[Bankhitelek beállítása és a garancialevélhez tartozó profilok feladása](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
 

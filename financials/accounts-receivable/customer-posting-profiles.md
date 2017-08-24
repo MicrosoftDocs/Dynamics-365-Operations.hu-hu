@@ -1,9 +1,9 @@
 ---
 title: "Vevői feladási profilok"
 description: "A vevői feladási profilok a vevői tranzakciók főkönyvbe történő feladását szabályozzák."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 285216807eadeca74b7556cbc10bddc9924e34fb
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: b36e75a5f527b41d50cc73e28a0b4e7e5df67e5c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -144,6 +144,6 @@ Határozza meg a következő értékeket a feladási profil beállításához:
 
 
 
-
+További információkért lásd: [Vevői kifizetések áttekintése](../cash-bank-management/tasks/customer-payment-overview.md).
 
 

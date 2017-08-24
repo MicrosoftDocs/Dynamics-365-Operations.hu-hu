@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 6a535b5f1192b7c27383cb8ece53f76a9c76f047
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -52,7 +51,7 @@ A Microsoft Dynamics 365 for Finance and Operations támogatja a teljes menedzse
 </tr>
 <tr class="even">
 <td>Szállítónak kiállított, jövőben esedékes csekk regisztrálása és feladása</td>
-<td>Jegyezze be a szállítónak feladni kívánt jövőben esedékes csekk adatait. A kifizetés feladásakor a szállítói felelősség elismerésre kerül, de a bankszámla jóváírása még nem történik meg. Ehelyett erre a célra elszámoló-számlát alkalmaznak.</td>
+<td>Jegyezze be a szállítónak feladni kívánt jövőben esedékes csekk adatait. A kifizetés feladásakor a szállítói felelősség elismerésre kerül, de a bankszámla jóváírása még nem történik meg. Ehelyett erre a célra elszámoló-számlát alkalmaznak. </td>
 </tr>
 <tr class="odd">
 <td>Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása</td>
@@ -87,6 +86,17 @@ Ha a szállítónak vagy a vevőnek készült eredeti csekk elveszik vagy megsé
 
 
 
+További információ a következő témakörökben olvasható:
+
+[Jövőben esedékes csekkek beállítása](tasks/set-up-postdated-checks.md)
+
+[Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása](tasks/register-post-postdated-check-customer.md)
+
+[Vevő által kiállított, jövőben esedékes csekk kiegyenlítése](tasks/settle-postdated-check-customer.md)
+
+[Szállító részére kiállított, jövőben esedékes csekk regisztrálása és feladása](tasks/register-post-postdated-check-vendor.md) 
+
+[Szállítónak kiállított, jövőben esedékes csekk kiegyenlítése](tasks/settle-postdated-check-vendor.md)
 
 
 

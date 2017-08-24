@@ -3,7 +3,7 @@ title: "Kötelezettségek számlaegyeztetése"
 description: "A kötelezettségek számlaegyeztetése a szállítói számla, a beszerzési rendelés és a termékbevételezés egyeztetési folyamatát jelenti."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6d1348ad43f8170f29bfc2f3df8a2ec60f9f8912
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: aa195f6057ae4ea511d661ffb47b1feeed58d2f9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -56,7 +55,7 @@ A kétirányú és a háromirányú egyeztetés mindig az egységár alapján eg
 
 A számlaegyeztetési számítások legtöbbször automatikusan történnek, amikor a Szállítói számla lapon szállítói számlákat szerkeszt. Másik lehetőségként a számlaegyeztetés igény szerinti időpontban is végrehajtható. A jogi személyre nézve az igény szerint lefuttatható számlaegyeztetés a Számla ellenőrzése lap Kötelezettségek paraméterei oldalán, a Számlafejléc állapotának automatikus frissítése lehetőséggel vezérelhető. A számlaegyeztetés a számlaellenőrzési folyamat részeként is elvégezhető. A számlaegyeztetés eredményeit a Szállítói számla oldalon és a kapcsolódó számlaegyeztetési oldalakon tekintheti meg.
 
-## <a name="invoice-totals-matching"></a> Számlaösszegek egyeztetése
+## <a name="invoice-totals-matching"></a>Számlaösszegek egyeztetése
 A számlaösszegek egyeztetése annak biztosításában nyújt segítséget, hogy a számlák végösszegei és a várható összegek egy elfogadható eltérésnél nagyobb mértékben ne különbözzenek. A Számlaösszegek egyeztetésének részletei oldalon a következő táblázatban szereplő hat összeg összehasonlítására kerül sor. Ha a számlaösszegek egyeztetésének megengedhető tűréshatára 20%, akkor az engedmény teljes összegének 100%-os eltérése egyeztetési eltérésként jelenik meg.
 
 | Összeg mező    | Tényleges számlaösszeg | Várt számlaösszeg | Eltérés százaléka | Egyeztetési állapot |
@@ -70,7 +69,7 @@ A számlaösszegek egyeztetése annak biztosításában nyújt segítséget, hog
 
 A jogi személyre nézve a számlaösszegek egyeztetését a Számlaösszegek egyeztetése gomb kezeli, amit a Kötelezettségek paraméterei oldalon talál meg. A rendszer a várt számlaösszegek és a tényleges Számlaösszegek egyeztetését hajtja végre. A várt számlaösszegek számítása a beszerzési rendelésben található árak, költségek és áfaadatok, valamint a számlán szereplő mennyiségek alapján történik.
 
-## <a name="two-way-price-totals-matching"></a> Teljes árak kétirányú egyeztetése
+## <a name="two-way-price-totals-matching"></a>Teljes árak kétirányú egyeztetése
 Kétirányú egyeztetés használatával elősegítheti annak biztosítását, hogy a beszerzési rendelésen, illetve a számlán szereplő áradatok közti eltérés az elfogadható tűréshatárokon belül maradjon. Összehasonlíthatja az összes, a számla egyes soraiban feltüntetett nettó összegekre vonatkozó árinformációt és az összes függőben lévő, illetve korábban feladott számlasort a megfelelő beszerzési rendelési sorral. Ezt teljes árak egyeztetésének nevezzük. 
 
 A teljes árak egyeztetése történhet százalék, összeg, vagy százalék és összeg alapján. 
@@ -101,7 +100,7 @@ A jogi személyre nézve a kétirányú egyeztetést a Soregyeztetési irányelv
 
 A jogi személyre nézve a teljes árak egyeztetését a Teljes árak egyeztetése mező kezeli, amit a Kötelezettségek paraméterei oldalon talál meg. Ugyanezen a lapon adhatja meg a teljes beszerzési ár tűréshatárának százalékos értékét és a tűréshatár összegét (a túllépési határt).
 
-## <a name="two-way-net-unit-price-matching"></a> Nettó egységárak kétirányú egyeztetése
+## <a name="two-way-net-unit-price-matching"></a>Nettó egységárak kétirányú egyeztetése
 Kétirányú egyeztetés használatával elősegítheti annak biztosítását, hogy a beszerzési rendelésen, illetve a számlán szereplő áradatok közti eltérés az elfogadható tűréshatárokon belül maradjon. Összehasonlíthatja a számlán szereplő minden egyes cikkre vonatkozó nettó egységár-adatokat. Ezt nettó egységárak egyeztetésének nevezzük. 
 
 A Számlaösszegek egyeztetésének részletei oldalon a következő táblázatban szereplő kilenc sorérték összehasonlítására kerül sor. Ha a nettó egységárak egyeztetésének megengedhető ártűréshatára 10%, akkor a nettó egységár 22,61%-os eltérése egyeztetési eltérésként jelenik meg.
@@ -122,7 +121,7 @@ A jogi személyre nézve a kétirányú egyeztetést a Soregyeztetési irányelv
 
 A jogi személyre nézve a nettó egységárak egyeztetését a Számlaegyeztetés ellenőrzésének engedélyezése mező kezeli, amit a Kötelezettségek paraméterei oldalon talál meg. A nettó egységár-különbözeti tűréshatár százalékos értéke beállítható cikkekre, cikkcsoportokra, szállítókra, szállítói csoportokra, cikk és szállító kombinációira vagy jogi személyre vonatkozóan az Árkülönbözet tűréshatárai oldalon.
 
-## <a name="two-way-price-totals-matching-and-net-unit-price-matching"></a> Teljes árak és nettó egységárak kétirányú egyeztetése
+## <a name="two-way-price-totals-matching-and-net-unit-price-matching"></a>Teljes árak és nettó egységárak kétirányú egyeztetése
 Teljes árakat és nettó egységárakat együttesen is egyeztethet. Ez a példa a következő beállításokat feltételezi:
 
 -   A nettó egységár-különbözeti tűréshatár az USB Meghajtó cikk esetén 10%.
@@ -168,7 +167,7 @@ A Számlaösszegek egyeztetésének részletei oldalon a kétirányú egyezteté
 
 A jogi személyre nézve a háromirányú egyeztetést a Soregyeztetési irányelv mező kezeli, amelyet a Kötelezettségek paraméterei oldalon talál meg. Az Egyeztetési irányelv felülbírálásának engedélyezése mező beállításától függően választhatja a háromirányú egyeztetést egy adott szállítóra, cikkre, illetve ezek kombinációjára vonatkozóan az Egyeztetési irányelv oldalon, valamint egy adott beszerzési rendelésre vonatkozóan a Beszerzési rendelés oldalon.
 
-## <a name="charges-matching"></a> Költségek egyeztetése
+## <a name="charges-matching"></a>Költségek egyeztetése
 A költségek egyeztetése annak biztosításában nyújt segítséget, hogy a költségek összegei és a várható összegek egy elfogadható százalékos eltérésnél nagyobb mértékben ne különbözzenek. A Költségértékek összehasonlítása - Számla: oldalon történik minden egyes, a számlára és a beszerzési rendelésre vonatkozó költségkód végösszegeinek összehasonlítása, amint az a következő táblázatban látható. Ha a költségkód megengedhető tűréshatára 25%, akkor a licencköltség-kód 99999999999,99%-os eltérése egyeztetési eltérésként jelenik meg.
 
 > [!NOTE] 
@@ -185,14 +184,14 @@ A jogi személyre nézve a költségek egyeztetését a Költségek egyeztetése
 > [!NOTE]
 > A költségek egyeztetése csak olyan költségkódok esetén hajtható végre, amelyekre a Költségkód oldalon található Beszerzési rendelés és számla értékeinek összehasonlítása lehetőség ki van választva.
 
-## <a name="related-functionality"></a> Kapcsolódó funkció
+## <a name="related-functionality"></a>Kapcsolódó funkció
 A szállítói számlák gyakran a tényleges szállítmányoknak megfelelő termékbevételezéseken alapulnak, nem a beszerzési rendeléseken. Időnként a számlázott összegek nem felelnek meg a beszerzési rendelés összegeinek, és időnként a kiszállított mennyiségek nem felelnek meg a számlázott mennyiségeknek. A következő módszerekkel megkönnyítheti ezeknek az adatoknak a kezelését:
 -   Hozzon létre szállítói számlákat termékbevételezések alapján. Számlák létrehozásakor automatikus javaslatként megjelennek a termékbevételezések, és kiválaszthatja, hogy melyik termékbevételezést kívánja használni. Amennyiben szükséges, több beszerzési rendelésből is kiválaszthat adott termékbevételezési sortételeket.
 -   Tekintse meg és hagyja jóvá a számlán szereplő számlázott mennyiség és a termékbevételezésen szereplő bevételezett mennyiség közti mennyiségi különbségeket. Ha különböznek az értékek, elmentheti a számlát és később egyeztetheti azt egy másik termékbevételezéssel, vagy módosíthatja a számlázott mennyiséget úgy, hogy megegyezzen a bevételezett mennyiséggel.
 -   Vigye be az eredeti bevételezési rendelésben fel nem tüntetett számlaösszegeket, hogy a számla adatai megegyezzenek a szállítótól kapott számláéival. Összehasonlíthatja a beszerzési rendelés költségeit a számlák költségeivel. Ha szükséges, költségeket adhat a számlákhoz és számlasorokhoz rendelheti azokat.
 -   Tekintse meg és hagyja jóvá a számlán szereplő nettó egységár és a beszerzési rendelésen szereplő nettó egységár közti eltéréseket. Az árkülönbözeti tűréshatár-százalékok beállíthatóak jogi személyekre, szállítókra vagy cikkekre vonatkozóan. Ha a szállítói számlasorban lévő ár kívül esik az árkülönbözeti tűréshatáron, a feladás jóváhagyásáig vagy a szállító helyesbítésének beérkezéséig mentheti a számlát.
 
-További tudnivalókért lásd: [Háromirányú egyeztetési házirendek](three-way-matching-policies.md).
+További tudnivalókért lásd: [Háromirányú egyeztetési irányelvek](three-way-matching-policies.md) és [A kötelezettségek modul beállítása a számlaegyeztetés ellenőrzéséhez](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

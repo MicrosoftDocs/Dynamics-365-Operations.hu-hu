@@ -10,7 +10,6 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventAdjInventOnHand
 audience: Application User
-ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 53231
 ms.assetid: bc1fde9f-5ad9-4339-8ae8-e2839b792eb2
@@ -31,7 +30,6 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-
 Az Aktuális készlet korrekciója lapon beállíthatja az aktuális készlet mennyiségeinek költségértékét a készletzárási folyamat futtatása után.
 
 Az **Aktuális készlet korrekciója** oldalon módosíthatja az aktuális készlet mennyiségeinek költségértékét a készletzárási folyamat futtatása után. **Megjegyzés**: az **Aktuális készlet korrekciója** oldalon a **Zárás és helyesbítés lapon** válasszon ki egy befejezett készletzárási folyamatrekordot, majd kattintson a **Korrekció** &gt; **Aktuális** elemre. **Példa:** Februárban a következő tranzakciók voltak:
@@ -46,7 +44,4 @@ Ez a cikk az elsőként be, elsőként ki FIFO készletmodellhez van beállítva
 -   Febuár 5: mennyiség: 1, a költség 13,00 USD.
 
 Ahhoz, hogy ennek a két cikknek az árát 15,00 USD értékre lehessen beállítani, az aktuális készlet módosítására használható funkcióval korrigálni kell a nyitott aktuális készletmennyiségeket a legutolsó készletzárási időszaknak megfelelően. **Megjegyzés:** Az aktuális készletet korrigáló tranzakció feladási dátuma a legutóbbi készletzárás dátuma lesz. Ez a dátum nem módosítható.
-
-
-
 

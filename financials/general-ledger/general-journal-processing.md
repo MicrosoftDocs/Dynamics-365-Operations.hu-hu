@@ -3,7 +3,7 @@ title: "Általános napló feldolgozása"
 description: "Ez a cikk a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban szereplő funkciókat mutatja be, amelyek megkönnyítik az általános napló feldolgozását, illetve garantálják a megfelelő adatok tárolását, a belső ellenőrzés megfelelő működését."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -82,8 +81,13 @@ A fő számla beállítás számos lehetőséget nyújt az általános napló fe
 
 A könyvelési szerkezetek és a speciális szabályok szerkezetei rendkívül fontosak, mert ezekkel biztosítható, hogy a pénzügyi jelentés készítéséhez és teljesítéskövetéséhez szükséges adatok rögzítése megtörténik az általános napló vagy bármilyen dokumentum feldolgozása során. A könyvelési szerkezetek és a speciális szabályok szerkezetei segítségével személyre szabhatja az adatbeviteli élményt. Megszabhatja, hogy csak a helyzethez kapcsolódó pénzügyi dimenziók adatbevitele legyen lehetséges, és kötelezővé teheti azt a feltételt, mely alapján a megfelelő adat mindig rögzítésre kerül.
 
-További tudnivalókért lásd: [Tervezés: Számlatükör](plan-chart-of-accounts.md). 
-
+További információ a következő témakörökben olvasható:
+- [Tervezés: számlatükör](plan-chart-of-accounts.md). 
+- [Speciális szabályok létrehozása naplók részére](tasks/create-advanced-rules-journals.md)
+- [Naplóbejegyzés létrehozása sablon alapján](tasks/create-journal-entry-template.md)
+- [Naplók létrehozása és érvényesítése](tasks/create-validate-journals.md)
+- [Időszaki naplók közzététele](tasks/post-periodic-journals.md)
+- [Főkönyvi felosztási napló feldolgozása](tasks/process-ledger-allocation-journal.md)
 
 
 

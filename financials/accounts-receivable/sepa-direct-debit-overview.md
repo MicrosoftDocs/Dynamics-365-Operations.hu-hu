@@ -1,9 +1,9 @@
 ---
 title: "SEPA beszedési megbízás – áttekintés"
 description: "Az egységes euro-pénzforgalmi övezet (SEPA) az Európai Bizottság által került meghatározásra, és szabályai előírják, hogy minden elektronikusan küldött kifizetés belföldinek számít, függetlenül az egyes személyek, vállalatok, szervezetek vagy bankok elhelyezkedésétől. Az országon belüli és a nemzetközi kifizetések között nincs különbség. A SEPA magában foglalja a 28 Európai Uniós (EU) tagállamot, csak úgy mint Izlandot, Liechtensteint, Norvégiát, Svájcot, Monacót és San Marinót. A SEPA egységes piacot teremt az Európai Gazdasági Térségen (EGT) belüli kifizetési tranzakciók számára. A várakozások szerint a SEPA csökkenteni fogja a bankok, vállalatok és személyek által használt és kezelt kifizetési formátumok számát."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11144
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f3b20b033fc701204cbb3f62468a421b3bdd6a80
 ms.contentlocale: hu-hu
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

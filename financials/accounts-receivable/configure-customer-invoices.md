@@ -1,9 +1,9 @@
 ---
 title: "Vevői számla létrehozása"
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fd89921a97782c4d09807a730ab077809304159f
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 249b1f331d6889d3b9ed2ace2e5db21d7a5d3e46
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,11 +30,20 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-
-
-Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad. Ezen típusú értékesítési számla kiállítása egy értékesítési rendelés alapján történik, amely tartalmazza a rendeléssorokat és cikkszámokat. A cikkszámok a főkönyvben vannak meghatározva és feladva. Analitikus naplóbejegyzések nem érhetők el értékesítési rendeléshez tartozó vevői számlához. 
+Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad. Ezen típusú értékesítési számla kiállítása egy értékesítési rendelés alapján történik, amely tartalmazza a rendeléssorokat és cikkszámokat. A cikkszámok a főkönyvben vannak meghatározva és feladva. Analitikus naplóbejegyzések nem érhetők el értékesítési rendeléshez tartozó vevői számlához. A további információkat lásd: [Értékesítési rendelési számlák létrehozása](tasks/create-sales-order-invoices.md).
 
 A **szabadszöveges számla** nincs kapcsolatban értékesítési rendeléssel. Olyan rendelési sorokat tartalmaz, amelyek személyesen megadott főkönyvi számlákat, szabadszöveges leírásokat és értékesítési mennyiséget foglalnak magukban. Ezen a számlafajtán nem tud cikkszámot megadni. A megfelelő áfaadatokat kell megadnia. Az értékesítéshez tartozó fő számla fel van tüntetve mindegyik számlasornál, amelyet szét lehet osztani több főkönyvi számla között az **Összegek felosztása** lehetőségre kattintva a **Szabadszöveges számla** lapon. Ezen kívül a vevői egyenleg is feladásra kerül az összegző számlához a szabadszöveges számla esetében használt feladási profilból.
+
+További tudnivalók:
+
+[Szabadszöveges számla létrehozása](tasks/create-free-text-invoice.md)
+
+[Szabadszöveges szövegsablon létrehozása](tasks/create-free-text-invoice-template.md)
+
+[Szabadszöveges számlasablon hozzárendelése egy ügyfélhez](tasks/assign-free-text-invoice-template-customer.md)
+
+[Ismétlődő szabadszöveges számlák generálása és feladása](tasks/post-recurring-free-text-invoices.md)
+
 
 A **pro forma számla** olyan számla, amely a tényleges számla mennyiségeinek becsléseként készül el a számla feladása előtt. Pro forma számlát értékesítési rendeléshez kiadott vevői és szabadszöveges számlához is ki lehet nyomtatni.
 
@@ -117,7 +126,7 @@ A következő mezők esetében módosul a viselkedés a feladási folyamat sorá
 </tr>
 <tr class="odd">
 <td>E-mail küldése</td>
-<td>Ezt a lehetőséget abban az esetben válassza, ha az értékesítési rendeléshez tartozó számlát a feladását követően egy e-mail üzenet mellékleteként szeretné elküldeni a vevőnek. A mellékletek PDF és XML formátumú fájlként kerülnek elküldésre. Ez a beállítás akkor érhető el, ha bejelöli a <strong>CFD (elektronikus számlák) engedélyezése</strong> beállítást az <strong>Elektronikus számla paraméterei </strong>oldalon. <strong>Megjegyzés:</strong> (MEX) Ez a vezérlő csak mexikói elsődleges címmel rendelkező jogi személyek számára elérhető.</td>
+<td>Ezt a lehetőséget abban az esetben válassza, ha az értékesítési rendeléshez tartozó számlát a feladását követően egy e-mail üzenet mellékleteként szeretné elküldeni a vevőnek. A mellékletek PDF és XML formátumú fájlként kerülnek elküldésre. Ez a beállítás akkor érhető el, ha bejelöli a <strong>CFD (elektronikus számlák) engedélyezése</strong> beállítást az <strong>Elektronikus számla paraméterei</strong> lapon. <strong>Megjegyzés:</strong> (MEX) Ez a vezérlő csak mexikói elsődleges címmel rendelkező jogi személyek számára elérhető.</td>
 </tr>
 <tr class="even">
 <td>Nyomtatáskezelés céljának használata</td>

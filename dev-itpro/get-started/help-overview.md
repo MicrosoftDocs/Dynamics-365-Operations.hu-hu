@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -34,7 +34,7 @@ Ez a cikk a Microsoft Dynamics 365 for Finance and Operations Súgórendszer ré
 > [!NOTE] 
 > A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Enterprise kiadás; Dynamics 365 for Retail; és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
-A súgórendszer közös minden Unified Operations termék esetében:
+A súgórendszer közös a következő termékek esetében:
 - Dynamics 365 for Finance and Operations, Enterprise kiadás
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
@@ -73,7 +73,7 @@ Tartalmainkat bármelyik keresőmotorral is megtalálhatja. A legjobb eredménye
 
 ![Keresési eredmények a webhelyről](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>A Unified Operations docs.microsoft.com tartalomjegyzéke
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>A docs.microsoft.com tartalomjegyzéke
 Az összes terméknek ugyanaz a tartalomjegyzéke a dokumentumok webhelyen, ami lehetővé teszi az ügyfelek számára, hogy lássák az aktuális témakör kontextusát. Emellett lehetővé teszi a szűrő vezérlőelem használatát a kívánt témakörök megkereséséhez.
 
 ### <a name="how-can-i-contribute"></a>Hogyan járulhatok hozzá? 
@@ -101,7 +101,7 @@ A jobb oldalon adjon meg egy e-mail-címet és egy új jelszót ahhoz, hogy új 
 ## <a name="task-guides"></a>Feladat-útmutatók
 A Feladat-útmutató egy kontrollált, irányított, interaktív tapasztalat, amely végigvezeti a feladat vagy az üzleti folyamat lépésein. A Súgó ablakban megnyithatja (lejátszhatja) a Feladat-útmutatót. Amikor először kattint a Feladat-útmutatóra a Súgó ablakban, láthatja lépésenként a feladathoz tartozó utasításokat. A honosított Feladat-útmutatók már elérhetőek. 
 
-Minden egyes Unified Operations termékhez eltérő feladat-útmutató készleteket biztosítunk. A Feladat-útmutatók elérése a Súgó ablakból szakasz azt mutatja be, hogyan találhatja meg a termékének megfelelő feladat-útmutatókat. 
+Minden egyes Dynamics 365 for Retail, Dynamics 365 for Finance and Operations vagy Dynamics 365 for Talent termékhez eltérő feladatútmutató-készleteket biztosítunk. A Feladat-útmutatók elérése a Súgó ablakból szakasz azt mutatja be, hogyan találhatja meg a termékének megfelelő feladat-útmutatókat. 
 
 ![Feladat-útmutató olvasási nézete](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ A Feladat-útmutatók a címükben az „Minden nyelv” fordulatot viselő kön
 -   Ha egy Feladat-útmutató még nincs lefordítva, akkor a megnyitásakor a kiválasztott nyelven csak néhány szöveg (a vezérlők szövegei) fog megjelenni.
 
 ## <a name="additional-resources"></a>További erőforrások
-Az alábbi táblázat olyan webhelyeket sorol fel, ahol Unified Operations tartalmak találhatók. A tartalom-webhelyek a vevő-életciklus támogatásához vannak elrendezve. Mindegyik fázishoz különböző webhelyek nyújtanak támogatást. A név mellett közvetlenül csillaggal (\*) jelölt webhelyeken a szolgáltatástervvel társított felhasználói fiókkal lehet belépni.
+A következő táblázat felsorolja a weboldalainkat. A tartalom-webhelyek a vevő-életciklus támogatásához vannak elrendezve. Mindegyik fázishoz különböző webhelyek nyújtanak támogatást. A név mellett közvetlenül csillaggal (\*) jelölt webhelyeken a szolgáltatástervvel társított felhasználói fiókkal lehet belépni.
 
 | Telephely                                                                     | Leírás                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

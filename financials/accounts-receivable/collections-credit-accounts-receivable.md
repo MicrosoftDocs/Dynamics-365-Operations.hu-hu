@@ -1,9 +1,9 @@
 ---
 title: "Követelések és beszedések a Kinnlevőségek modulban"
 description: "A kinnlevőségek beszedési információját a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -46,7 +45,7 @@ Mielőtt elkezdené beállítani a beszedéseket vagy elkezdene dolgozni velük,
 
 A következő részek az egyes fogalmakat mutatják be.
 
-## <a name="customer-aging-snapshots"></a>Vevő korosítási pillanatképek 
+## <a name="customer-aging-snapshots"></a>Vevő korosítási pillanatképek
 A korosítási pillanatkép kiszámítja egy vevő korosított egyenlegeit egy időpontra. Ez az információ megjelenik a Korosított egyenlegek listaoldalon és a Beszedés lapon. A korosítási pillanatképet létre kell hozni, mielőtt megtekintheti a Beszedési lista oldalakon lévő információkat. 
 
 A korosítási pillanatkép minden vevőre tartalmaz egy korosítási pillanatkép fejlécet, és az egyes korosítási időszak definícióban lévő korosítási időszaknak megfelelő adatrekordot. 
@@ -55,7 +54,7 @@ A korosítási pillanatkép fejléce tartalmazza az teljes esedékes összeget, 
 
 A rendszer korosítási időszak definícióban lévő egyes korosítási időszakokhoz létrehoz egy korosítási pillanatkép adatrekordot. Minden egyes korosítási pillanatkép adat rekord tartalmazza a korosítási időszak azonosítót és az korosítási időszakban lévő adatokhoz tartozó tranzakciók teljes összegét. A tranzakciókat egy korosítási időszakhoz rendeli hozzá a rendszer, például 30 meghaladott naphoz. A dátum a Korosításhoz relatív, mivel akkor határozza meg azt, amikor létrehozza a korosítási pillanatképet. Ez az információ megjelenik a Korosított egyenlegek listaoldalon és a Korosítási egyenleg adatterületen a Beszedés lapon.
 
-## <a name="collections-customer-pools"></a> Beszedések vevőgyűjtők 
+## <a name="collections-customer-pools"></a>Beszedések vevőgyűjtők
 A vevőgyűjtők olyan lekérdezések, amelyek meghatározzák a beszedési vagy korosítási folyamathoz megjeleníthető és kezelhető vevőkódok egy adott rekordját. Használja a vevőgyűjtőket a Korosított egyenlegek, Beszedési tevékenységek és Beszedési esetek listaoldalon található adatok szűréséhez. Vevőgyűjtők segítségével továbbá szűrheti a vevői számlákat, amelyek akkor szerepelnek, ha korosítási pillanatképek kerülnek létrehozásra.
 
 ## <a name="collections-agents"></a>Kintlevőségkezelők
@@ -63,7 +62,7 @@ Alapértelmezés szerint a Microsoft Dynamics 365 for Finance and Operations-fel
 
 A beszedéskezelő olyan személy, aki a vevőkkel együttműködik annak biztosítására, hogy a kifizetések beszedésre kerüljenek a kellő időben. A Finance and Operations rendszerben a pénzbehajtók olyan dolgozók, akik a Felhasználó beállítások oldalon lévő felhasználókhoz vannak hozzárendelve.
 
-## <a name="collections-list-pages"></a> Beszedési listaoldalak 
+## <a name="collections-list-pages"></a>Beszedési listaoldalak
 A következő listaoldalak megkönnyítik beszedési információk rendezését.
 -   Korosítási egyenlegek – A listaoldal oszlopai a vevői egyenlegeket és a korosított összegeket mutatják korosítási időszak szerint. A program egy korosítási pillanatképben tárolja ezt az információt. A korosítási időszakok meghatározása a korosítási időszak használt definíciója alapján történik. A korosítási időszak definíciója a vevőgyűjtőből származik, ha meg volt adva a gyűjtő lekérdezéséhez. Ha a gyűjtő nem tartalmazza a korosítási időszak definícióját, akkor a program a korosítási időszaknak a Kinnlevőségek paraméterei oldalon megadott alapértelmezett definícióját használja. Ha nincs megadva alapértelmezett korosítási időszak definíció, akkor a Korosítási időszak definíciók lapon található első korosítási időszak definíció kerül használatra.
 -   Beszedési tevékenységek – A listaoldalon lévő oszlopok a beszerzési tevékenységként azonosított tevékenységeket jelenítik meg. Ezeket a tevékenységeket a Beszedés lap használatával hozza létre. A tevékenységek segítségével nyomon követheti a beszedésekkel kapcsolatosan elvégzett munkát.
@@ -76,7 +75,7 @@ A következő listaoldalak megkönnyítik beszedési információk rendezését.
 <li>Ha egy felhasználó pénzbehajtóként van beállítva, csak annak a pénzbehajtónak kiválasztott gyűjtők érhetők el a listaoldalon. Ha a Beszedéskezelő megtekintheti az összes vevőgyűjtőt váltás van kiválasztva a Pénzbehajtó oldalon a pénzbehajtó számára, minden gyűjtő elérhető számára.</li>
 
 
-## <a name="collections-page"></a> Beszedések lap
+## <a name="collections-page"></a>Beszedések lap
 Használja a „Beszedések” oldalt a vevővel kapcsolatos beszedési információk, tevékenységek és esetek megtekintéséhez, kezeléséhez és műveletek végrehajtásához. 
 
 A felső panel a kiválasztott vevő eseteit jeleníti meg. A középső panel a vevő tranzakcióit jeleníti meg. Az alsó ablaktábla a vevőhöz tartozó tevékenységeket jeleníti meg. Beszedési eseteket hozhat létre egy vagy több tranzakcióhoz és a tevékenységhez tartozó kintlévőségek adatainak követésére. A felső és alsó ablaktáblán található információkat az eset alapján szűrni lehet. 
@@ -85,10 +84,12 @@ Az adatterületek megjelenítik a kiválasztott vevőhöz tartozó korosítási 
 
 A műveleti ablak gombokat tartalmaz, amelyek a kiválasztott vevőhöz, esethez, a tranzakcióhoz vagy a tevékenységhez kapcsolódó információkat jelenítik meg. Végrehajthat általános tevékenységeket, mint például a tranzakciók beszedési állapotának megváltoztatása, e-mailek küldése az integráción keresztül az e-mail szolgáltatójával, visszatérítés a vevőknek, elégtelen fedezetű kifizetések végrehajtása és behajthatatlan egyenlegek leírása.
 
-## <a name="waive-reinstate-or-reverse-interest-and-fees"></a> Kamat és díjak elengedése, visszaállítása vagy sztornírozása 
+## <a name="waive-reinstate-or-reverse-interest-and-fees"></a>Kamat és díjak elengedése, visszaállítása vagy sztornírozása
 Elengedhet, visszaállíthat vagy sztornírozhat teljes kamatleveleket, vagy olyan díjakat és tranzakciókamatokat, amelyek egy kamatlevél részei. Ezt a Minden vevő listaoldalon lévő Műveleti ablaktábla Gyűjtés lapján teheti meg, ha rákattint a Kamatlevél, Tranzakciókamat, vagy Díjak opcióra. 
 
 Ezek a kiigazítások csak a kamatleveleket és azokat a kamatokat és díjakat érinti, amiket azok tartalmaznak. Használja a „Leírási tranzakciók létrehozása egy lépésben” szakaszban megadott lépéseket, hogy leírjon a vevőhöz tartozó minden költséget.
+
+További tudnivalókat lásd a [Kamatkód létrehozása tartománnyal](tasks/create-interest-code-range.md) és a [Kamatfeldolgozás](tasks/process-interest.md) pontokban. 
 
 ## <a name="create-writeoff-transactions"></a>Leírási tranzakciók létrehozása
 Leírhatja a behajtatlan tartozásokat, ha a Beszedések képernyőn és a Korosítási egyenlegek, Vevők és Nyitott vevői számlák listaoldalon a Leírás opcióra kattint. 
@@ -100,7 +101,10 @@ Amikor leír egy vevői tranzakciót, a vevő minden tranzakciója automatikusan
 -   A naplósor harmadik típusa tartalmazza az áfa főkönyvi leírási adatait. A naplósor csak akkor jön létre, ha a Külön áfa váltó van kiválasztva a Kintlévőségek paraméterei oldalon. Ha a megjelölt tranzakció több fizetendő áfa számla kombinációt, dimenziót és áfakódot tartalmaz, egy külön naplóba sor jön létre minden egyes kombinációhoz.
 
 A leírási tranzakció létrehozása a tranzakció pénznemében történik.
-Elégtelen fedezetű (NSF) fizetések feldolgozása  
+
+További tudnivalókat lásd: [Leírási napló létrehozása vevőhöz](tasks/create-write-off-journal-customer.md).
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>Elégtelen fedezetű (NSF) fizetések feldolgozása 
 --------------------------------------------
 
 Feldolgozhatja az Elégtelen fedezetű kifizetéseket, ha rákattint a Beszedések oldalon az Elégtelen fedezetű kifizetés opcióra. Ha erre a gombra kattint, a kifizetés érvénytelenítve lesz. Ha alkalmazni kell elégtelen fedezet miatti díjat a vevőre, a program létrehoz egy költségtranzakciót a fizetési naplóban. A díj összege az automatikus költségek beállításaitól függ. Az elégtelen fedezetű kifizetésekre vonatkozó automatikus költségeket az a költségcsoport szabja meg, amelyik ki van választva az érintett bankszámlához a Bankszámlák képernyőn.

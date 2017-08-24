@@ -15,13 +15,13 @@ ms.custom: 270294
 ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: ea4ee6cfdca6e65f289db32ca41305a39b186033
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 12fd8e11211b701304f9f4a68ff31f3b42e3e8ee
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -45,11 +45,11 @@ A hozzáférésszintű biztonság Power BI szolgáltatásban való alkalmazásá
 3.  Keresse ki a **Költségkönyvelési elemzés** adatkészletét a Power BI-tartalomhoz.
 4.  Nyissa meg a Biztonság lapot. 
 
-    [![A Biztonság lap megnyitása](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
+    ![A Biztonság lap megnyitása](./media/CA-picture-1.png)
 
 5.  A **Költségobjektum-ellenőr** szerepkör már létre van hozva. Vegyen fel további olyan tagokat, akik részesei a Költségkönyvelés hozzáférésszintű szervezeti hierarchiájának. 
 
-    [![Tagok hozzáadása](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)
+    ![Tagok hozzáadása](./media/CA-picture-2.png)
 
 A **Költségobjektum-ellenőr** szerepkörhöz hozzárendelt felhasználók csak a számukra engedélyezett adatokat láthatják, amelyeket engedélyeztek a Költségkönyvelés hozzáférésszintű szervezeti hierarchiában. **Megjegyzés:** A sorszintű biztonság a Microsoft Dynamics 365 for Finance and Operations azon mozaikjaira és jelentéseire vonatkozik, amelyeknek a beágyazása a Power BI-ből történt.
 

@@ -1,9 +1,9 @@
 ---
-title: "Power BI-tartalom elérhető"
+title: Power BI-tartalom
 description: "Ez a témakör felsorolja az elérhető Power BI-tartalmakat, és átirányítja azon erőforrásokhoz, ahol többet tudhat meg róluk."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,17 +15,17 @@ ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
+ms.sourcegitcommit: 0574c8c1164ef54095135bd9b3f2a946320f8996
+ms.openlocfilehash: f6401406981abc3252b7247510e80f12f2c4510d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 
-# <a name="power-bi-content-available"></a>Power BI-tartalom elérhető
+# <a name="power-bi-content"></a>Power BI-tartalom
 [!include[banner](../includes/banner.md)]
 
 
@@ -34,6 +34,7 @@ Ez a témakör felsorolja az elérhető Microsoft Power BI-tartalmakat, és áti
 ## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Power BI-tartalom for Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítés
 Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését használja, a következő Power BI-tartalom érhető el:
 
+- [Tényleges és költségvetési Power BI-tartalom](ledger-budgets-power-bi.md)
 - [Juttatások Power BI-tartalom](benefits-power-bi.md)
 - [Készpénzáttekintés Power BI-tartalom](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [Pénzügyi igazgatói áttekintés Power BI-tartalom](CFO-power-bi.md)
@@ -94,7 +95,7 @@ Amennyiben a Microsoft Dynamics AX 7.0-ás vagy a Microsoft Dynamics AX 7.0.1-es
 Ez a Power BI-tartalom a PowerBI.com oldalról érhető el.
 
 1. Jelentkezzen be a [PowerBI.com](https://www.powerbi.com/) webhelyre.
-2. Kattintson az ***Adatok átvétele** lehetőségre.
+2. Kattintson az **Adatok átvétele** lehetőségre.
 3. A **Szolgáltatások** szövegdobozban kattintson az **Átvétel** lehetőségre.
 4. Válassza a kívánt tartalomcsomagot, majd kattintson az **Átvétel** lehetőségre.
 5. Adja meg a Dynamics AX környezet URL-címet. Az URL-címnek következő formátumúnak kell lennie: **https://&lt;AzÖnAOSBérlője&gt;.cloudax.dynamics.com**. Kattintson a **Tovább** gombra.
