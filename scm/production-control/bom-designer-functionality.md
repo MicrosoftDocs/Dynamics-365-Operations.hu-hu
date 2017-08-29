@@ -1,7 +1,7 @@
 ---
 title: "Az anyagjegyzék-tervező szolgáltatás"
 description: "Ez a cikk bemutatja, hogyan alkalmazza az anyagjegyzék tervezőlapot az anyagjegyzékek (BOM) fastruktúráinak tervezésére és az azokkal történő munkára. A Beállítások gombra kattintva különböző konfigurációkat állíthat be, és eldöntheti, hogy milyen információkat kíván megjeleníteni a fa soraiban."
-author: YuyuScheller
+author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BOMDesigner
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
@@ -24,7 +24,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: c871cf4e5ee7f359010aac1fa0fef81e0e0df564
 ms.contentlocale: hu-hu
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

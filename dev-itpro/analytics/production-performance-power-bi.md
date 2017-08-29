@@ -1,7 +1,7 @@
 ---
 title: "Termelési teljesítmény Power BI-tartalom"
 description: "Ez a témakör azt ismerteti, mit tartalmaz a Termelési teljesítmény Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
-author: sericks
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

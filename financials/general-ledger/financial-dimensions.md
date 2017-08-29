@@ -1,7 +1,7 @@
 ---
 title: "Pénzügyi dimenziók"
 description: "Ez a témakör leírja a pénzügyi dimenziók különféle típusait és azok beállításának módját."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

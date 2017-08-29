@@ -1,7 +1,7 @@
 ---
 title: "A vásárlói hűségprogramok beállítása"
 description: "Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók."
-author: josaw1
+author: scott-tucker
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: hu-hu
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

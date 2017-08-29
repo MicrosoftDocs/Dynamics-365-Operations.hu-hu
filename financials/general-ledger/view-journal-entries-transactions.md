@@ -1,7 +1,7 @@
 ---
 title: "Naplóbejegyzések és tranzakciók megtekintése"
 description: "Ez a cikk a napló bejegyzések és tranzakciók megtekintésének számos módját ismerteti."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

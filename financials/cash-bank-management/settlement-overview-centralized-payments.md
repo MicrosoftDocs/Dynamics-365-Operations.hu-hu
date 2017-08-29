@@ -1,7 +1,7 @@
 ---
 title: "Kiegyenlítés áttekintése (központosított kifizetések)"
 description: "Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Így nem szükséges ugyanazt a tranzakciót több jogi személyhez bevinni, valamint a fizetési javaslat folyamatának, a kiegyenlítés folyamatának, a nyitott tranzakciók szerkesztésének és a lezárt tranzakciók szerkesztésének leegyszerűsítésével időt takarít meg a központosított kifizetéseknél."
-author: twheeloc
+author: abruer
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670

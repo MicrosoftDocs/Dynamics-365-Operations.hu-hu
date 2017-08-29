@@ -1,7 +1,7 @@
 ---
 title: "Központosított kifizetések beállítása"
 description: "A lépések követésével felkészülhet a kifizetéseknek más jogi személyek nevében egy jogi személyben történő feldolgozására a szervezetben."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
