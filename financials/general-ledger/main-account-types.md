@@ -1,7 +1,7 @@
 ---
 title: "Főszámlatípusok"
 description: "A fő számlatípus meghatározza a fő számla használatának módját a számlatükörben."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

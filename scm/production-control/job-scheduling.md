@@ -1,7 +1,7 @@
 ---
 title: "Feladat ütemezése"
 description: "Ez a cikk információt biztosít a feladat ütemezésről, ami a művelet ütemezés egy részletesebb ütemezésű formája. A feladatütemezést használhatja az egyéni feladatok vagy bolti sorrendek ütemezésére és a gyártási környezet irányítására."
-author: YuyuScheller
+author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid: aef37341-91d8-4263-80eb-35d9584be156
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670

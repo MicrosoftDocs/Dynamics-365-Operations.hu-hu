@@ -1,7 +1,7 @@
 ---
 title: "Előlegszámlák Kelet-Európa számára"
 description: "Az előlegszámla egy vevő vagy szállító számára létrehozott dokumentum. Azt az összeget tartalmazza, amelyet előre meg kell fizetni egy értékesítési rendelésre. Ez a témakör a kelet-európai előlegszámlákkal kapcsolatban tartalmaz tájékoztatást."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -21,7 +21,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 948124526f5718d783b1ecd80462701610734f82
 ms.contentlocale: hu-hu
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

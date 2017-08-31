@@ -1,7 +1,7 @@
 ---
 title: "Év végi zárás"
 description: "Ez a témakör Főkönyv év végi zárási eljárására vonatkozó folyamat beállítását és futtatását mutatja be."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

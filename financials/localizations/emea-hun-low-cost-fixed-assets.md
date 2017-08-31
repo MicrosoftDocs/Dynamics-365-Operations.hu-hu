@@ -1,7 +1,7 @@
 ---
 title: "Kis értékű tárgyi eszközök"
 description: "Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -21,7 +21,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: d55bf512edd56f47f2419fc2dd3c2050a342e8a1
 ms.contentlocale: hu-hu
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

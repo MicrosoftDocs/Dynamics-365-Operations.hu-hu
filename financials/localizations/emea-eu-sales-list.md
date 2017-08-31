@@ -1,7 +1,7 @@
 ---
 title: "EU értékesítési lista jelentése"
 description: "Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -21,7 +21,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 06656fe519c82293d5a0eb2d48ae0f89ae0aef49
 ms.contentlocale: hu-hu
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

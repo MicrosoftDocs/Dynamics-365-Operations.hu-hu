@@ -1,7 +1,7 @@
 ---
 title: "Konszolidációsszámla-csoportok és további konszolidációs számlák"
 description: "Ez a témakör konszolidációsszámla-csoportokról és további konszolidációs számlákról nyújt tájékoztatást, és elmagyarázza, hogyan történik ezek használata a Microsoft Dynamics 365 for Finance and Operations, Enterprise editionben"
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

@@ -13,13 +13,13 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/27/2017
 
 A Microsoft Dynamics 365 for Finance and Operations a Microsoft üzleti alkalmazása vállalatok számára. Lehetővé teszi az okos döntéshozatalt egy olyan intelligens felhasználói felület révén, amely hozzáférést nyújt a valós idejű statisztikákhoz és adatokhoz. Lehetővé teszi a vállalkozások számára az átalakulást és az innovációt olyan bevált üzleti logika segítségével, amely lehetővé teszi számukra üzleti folyamataik gyorsabb újratervezését. Segítségével a vállalkozások rugalmasan, a saját ütemükben növekedhetnek, és szinte bárhol és bármikor folytathatnak kereskedelmet, így tevékenységüket globális szinten méretezhetik az üzleti igények kielégítésére. 
 
-A jelen útmutató bemutatja, hogyan fordíthatja vállalkozása javára a Dynamics 365 for Finance and Operations által nyújtott megoldásokat. Az Egyesített Műveletek csomagba tartozó hasonló termékekkel, a Dynamics 365 for Retail és Dynamics 365 for Talent rendszerekkel áll kapcsolatban. 
+A jelen útmutató bemutatja, hogyan fordíthatja vállalkozása javára a Dynamics 365 for Finance and Operations által nyújtott megoldásokat. Az útmutató kapcsolódik a hasonló termékek, a Dynamics 365 for Retail és a Dynamics 365 for Talent rendszerek dokumentációjához. 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ A jelen útmutató bemutatja, hogyan fordíthatja vállalkozása javára a Dynam
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Pénzügyi jelentéskészítés</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Jogszabályban előírt jelentések</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobil platform</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobil platform</a></h3>
 
 <h3>Fejlesztői funkciók</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Fejlesztői honlap</a></p>

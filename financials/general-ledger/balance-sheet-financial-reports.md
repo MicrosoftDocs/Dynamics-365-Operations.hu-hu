@@ -1,7 +1,7 @@
 ---
 title: "Mérleg pénzügyi jelentés"
 description: "Ez a cikk a mérlegek alapértelmezett jelentéseit mutatja be. Emellett az e jelentésekhez tartozó építőelemeket is leírja."
-author: twheeloc
+author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 1cb7ef4b1b08caff39f0693eef6743bbe5d3892e
 ms.contentlocale: hu-hu
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

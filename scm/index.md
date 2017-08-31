@@ -16,13 +16,13 @@ ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 7e916dd91126d140790cbb3a6a740c2e2f20ccef
+ms.sourcegitcommit: 9e0d4e510542ffdeb01c8c9daffab40f5ba4b654
+ms.openlocfilehash: 3875aab63d2046bf6f0ebeb04622babb6f3f104d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -58,9 +58,12 @@ Ezeknek a rövid videóknak a segítségével elkezdheti használni a Microsoft 
 
 -  [Első lépések a költségkönyvelésben](https://youtu.be/1pUDtJQZ8FU)
 -  [Költségellenőrzési mobil munkaterület](https://youtu.be/imsuTg8rUVk)
--  [Az Excel használata a költségelemzéshez](https://youtu.be/-HKHYdClvx8)
+-  [Az Excel használata költségelemzéshez](https://youtu.be/-HKHYdClvx8)
+-  [Beszerzési rendelések jóváhagyása mobileszközön](https://youtu.be/gZ-gOlJe7H8)
 
-### <a name="tech-talk"></a>Technikai előadás 
+### <a name="tech-talks"></a>Technikai előadások
+Ezek legnagyobb része a Finance and Operations rendszer előző verziójának funkcióit tárgyalja, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
+
 -  <a href="https://youtu.be/zotrj3SbCl4">Termékkonfiguráló a Microsoft Dynamics AX szolgáltatásban</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Alaptervezés – tippek és trükkök a hibajavítási teljesítményért</a>
 -  <a href="https://youtu.be/RLXybx20B5o">Segítség! Lassú az MPR!</a>
@@ -71,17 +74,18 @@ Ezeknek a rövid videóknak a segítségével elkezdheti használni a Microsoft 
 -  <a href="https://youtu.be/5w1MngVchBA">Címkék az új Microsoft Dynamics AX 2012 R3 raktárkezelésben</a>
 -  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Fejlett raktárkezelés – Egy nap a folyamatgyártásban</a>
 -  <a href="https://youtu.be/y1jrd3A_k70">Alvállalkozói műveletek és műveletek a gyártásban</a>
+-  <a href="https://youtu.be/jgmTgJIgEFQ">Szállításkezelés (TMS) az új Microsoft Dynamics AX rendszerben</a>
 
 ## <a name="blogs"></a>Blogok
-A <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában</a> és a <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában </a> több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része a Finance and Operations rendszer előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
+A <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában</a> és a <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában</a> több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része a Finance and Operations rendszer előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
 
 ## <a name="white-papers"></a>Tanulmányok
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Költségkönyvelési interaktív laboratórium</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Ígérhető és Kanbanfeladatok ütemezése</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Ígérhető és kanbanfeladatok ütemezése</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Anyagjegyzék-számítás költségszámítási táblázat segítségével</a>
 
-## <a name="elearning-courses"></a>eLearning tanfolyamok
-A Microsoft Dynamics 365 for Finance and Operations rendszerről szóló képzésekkel kapcsolatos további információkért látogasson el ide: <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Tanulási Portál</a>. (CustomerSource-fiókot igényel) 
+## <a name="elearning-courses"></a>eLearning-tanfolyamok
+A Microsoft Dynamics 365 for Finance and Operations rendszerről szóló képzésekkel kapcsolatos további információkért látogasson el ide: <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics Tanulási Portál</a>. (CustomerSource-fiókot igényel) 
 
 
 

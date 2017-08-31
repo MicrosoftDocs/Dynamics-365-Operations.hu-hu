@@ -1,7 +1,7 @@
 ---
 title: "Műszak és pénztárgépfiók kezelés"
 description: "Ez a cikk a kiskereskedelmi pénztár műszakok két típusa, az önálló és megosztott beállítását és használatát mutatja be. A megosztott műszakokat több felhasználó több helyen is használhatja viszont az önálló műszakokat egyszerre csak egy dolgozó használhatja."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: hu-hu
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 
