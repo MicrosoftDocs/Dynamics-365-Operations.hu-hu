@@ -1,7 +1,7 @@
 ---
 title: "Készletkötegek egyesítése"
 description: "Ez a cikk a két vagy több készletköteg egyesített köteggé történő összevonásáról nyújt tájékoztatást."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk a két vagy több készletköteg egyesített köteggé történő összevonásáról nyújt tájékoztatást. 
+Ez a cikk a két vagy több készletköteg egyesített köteggé történő összevonásáról nyújt tájékoztatást.
 
 A Kötegek egyesítésekor a számítások segíthetnek optimalizálni az egyesített köteg jellemzőit és kötegattribútumait. Miután kiválasztotta a forráskötegeket, áttekintheti és módosíthatja az egyesített köteget a feladás előtt. A kötegegyesítést átvezetheti egy készletnaplóba is jóváhagyáshoz. Ezután a készletet közvetlenül a készletnaplóból foglalhatja le és adhatja fel. Egyesített köteg feladása esetén a készletet a forrás-kötegekhez és az egyesített köteghez van módosítva.
 
@@ -142,7 +142,4 @@ Jóváhagyhatja a kötegegyesítés készletnaplóját **Az összes kötegegyes�
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Miután egyesítettem a tényleges súllyal rendelkező cikkeket, miért nem látszik a tényleges súly adat a készletnaplóban?
 Ugyanúgy egyesítheti a tényleges súllyal rendelkező cikkek kötegeit, mint minden más cikket. Azonban a tényleges súly adaton nem jelennek meg a készletnaplóban. Ajánlatos a tényleges súly adatok ellenőrzése a kötegegyesítés készletnaplóba történő átvitele előtt.
-
-
-
 

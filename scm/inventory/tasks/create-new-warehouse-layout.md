@@ -1,4 +1,4 @@
---- 
+---
 title: "Új raktárelrendezés létrehozása"
 description: "Ez az eljárás bemutatja, hogyan adjon meg adatokat a raktár helyeivel kapcsolatban."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +49,7 @@ Ez az eljárás bemutatja, hogyan adjon meg adatokat a raktár helyeivel kapcsol
 7. A Helynevek szakasz bővítésének átváltása.
     * A fejezetben leírt lehetőségek helynevek alapértelmezett formátumát adják meg. Ebben a példában megadjuk a folyosószámot, az állvány számát, illetve a polcszámot.  
 8. A folyosó figyelembevételével beállítása: Igen.
-9. Az állvány figyelembevételével beállítása: Igen. 
+9. Az állvány figyelembevételével beállítása: Igen.
 10. A Formátum mezőbe írjon be egy értéket az állványhoz.
     * Példa: -##  
 11. A polc figyelembevételével beállítása: Igen.
@@ -74,5 +74,4 @@ Ez az eljárás bemutatja, hogyan adjon meg adatokat a raktár helyeivel kapcsol
 14. Kattintson a Finish gombra.
 15. Zárja be a lapot.
 16. Frissítse a lapot..
-
 

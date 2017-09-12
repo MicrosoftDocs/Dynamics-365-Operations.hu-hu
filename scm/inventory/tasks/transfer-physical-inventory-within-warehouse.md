@@ -1,4 +1,4 @@
---- 
+---
 title: "Tényleges készlet áthelyezése a raktáron belül"
 description: "Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készletmozgatási napló egy cikk egy adott raktáron belüli átszállításának nyilvántartásba vételéhez."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
 1. Kattintson a Készlet parancsra.
 2. Kattintson a Tranzakciók elemre.
     * Itt láthatók a napló feladásakor létrehozott tranzakciók.  
-
 

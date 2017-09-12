@@ -1,4 +1,4 @@
---- 
+---
 title: "Új bizományosi feltöltési rendelés létrehozása"
 description: "Ez az eljárás bemutatja a bizományosi feltöltési rendelés létrehozását, ahol nyomon követhetők a várható szállítások egy szállítótól a bizományosi készletbe."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ Ez az eljárás bemutatja a bizományosi feltöltési rendelés létrehozását,
 ## <a name="receive-items"></a>Cikkek átvétele
 1. Kattintson a Termékbevételezés elemre.
 2. Írjon be egy értéket a Külső termékbevételezés mezőbe.
-3. A Mennyiség mezőben adjon meg egy számot, amely kisebb az ott látható számnál. 
+3. A Mennyiség mezőben adjon meg egy számot, amely kisebb az ott látható számnál.
 4. Kattintson az OK gombra.
 
 ## <a name="check-the-on-hand-inventory"></a>Ellenőrizze az aktuális készletet
@@ -70,5 +70,4 @@ Ez az eljárás bemutatja a bizományosi feltöltési rendelés létrehozását,
     * A cikkek, amelyek a szállító tulajdonában álló bizományosi készletként érkeztek, aktuális készletként állnak rendelkezésre. A bizományosi feltöltési rendelés fennmaradó mennyisége a Megrendelve összesen mezőben jelenik meg.  
 4. Zárja be a lapot.
 5. Kattintson a Bezárás gombra.
-
 

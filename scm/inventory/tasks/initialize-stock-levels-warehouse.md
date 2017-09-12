@@ -1,4 +1,4 @@
---- 
+---
 title: "Készletszintek inicializálása a raktárban"
 description: "Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet a Készletmozgási napló segítségével."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet 
 24. Kattintson az OK gombra.
 25. Zárja be a lapot.
 26. Zárja be a lapot.
-
 

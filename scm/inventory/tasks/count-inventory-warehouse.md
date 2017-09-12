@@ -1,4 +1,4 @@
---- 
+---
 title: "Készlet számlálása egy raktárban"
 description: "Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készletleltározási napló a raktárban egy adott helyen található konkrét cikk leltározásához."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -68,5 +68,4 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
 1. Kattintson a Készlet parancsra.
 2. Kattintson a Tranzakciók elemre.
     * Itt láthatók a kapcsolódó tranzakciók, amelyek a készletleltározási napló feladásakor jönnek létre.   
-
 

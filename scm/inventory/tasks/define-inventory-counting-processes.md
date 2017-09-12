@@ -1,4 +1,4 @@
---- 
+---
 title: "Készletleltár-folyamatok meghatározása"
 description: "Ez az eljárás végigvezeti az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ Ez az eljárás végigvezeti az alapvető leltározási folyamatokon a leltárcs
 7. A listán válasszon leltárcsoportot
     * Itt kiválaszthat egy adott leltárcsoportot, amely vonatkozik a kiválasztott raktár adott cikkére. Ha abban a raktárban leltár történik, ez a leltározási irányelv felülírja az általános leltározási irányelvet a cikkre.  
 8. Kattintson a Mentés gombra.
-
 

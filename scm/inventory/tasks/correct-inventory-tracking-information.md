@@ -1,4 +1,4 @@
---- 
+---
 title: "Készletkövetési információk helyesbítése"
 description: "Ez az eljárás végigvezeti a készletátviteli napló feladási létrehozásának folyamatán, hogy képes legyen készletkövetési információk javítására."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Ez az eljárás végigvezeti a készletátviteli napló feladási létrehozásá
 1. Kattintson a Készlet parancsra.
 2. Kattintson a Tranzakciók elemre.
     * Itt láthatók a napló feladásakor létrehozott tranzakciók.   
-
 

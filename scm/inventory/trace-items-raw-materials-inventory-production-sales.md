@@ -1,7 +1,7 @@
 ---
 title: "Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben"
 description: "Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok. 
+Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok.
 
 A cikk nyomon követési funkció a **cikk nyomon követése** oldalon érhető el. A következő szakaszok leírják, hogyan használható a cikk-követés és az ahhoz tartozó beállításokat és korlátozásokat.
 
@@ -142,7 +142,4 @@ Létrehozhatja a **Vevőknek szállítva** jelentést, hogy azonosítsa a kiszá
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>A társtermékeket és melléktermékeket is nyomon követhetem?
 Nyomon követhet társtermékeket, de nem követheti le a melléktermékeket, mivel a nyomon követési dimenziók javarészt, nem a melléktermékekhez vannak hozzárendelve. Egy cikk nyomon követésekor, a nyomon követési részletek minden kapcsolódó társterméket tartalmaznak. Olyan Társtermék tartalmazó csomópont "Társtermék" szó részletes adatait tartalmazza. Megtekintheti továbbá egy társtermék részleteit a csomópont kijelölésével a nyomon-követési részletekben, majd a **Termelés** gyorslap alábontásával.
-
-
-
 

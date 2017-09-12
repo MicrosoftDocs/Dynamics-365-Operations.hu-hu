@@ -1,4 +1,4 @@
---- 
+---
 title: "Menedzsment feltételeinek beállítása"
 description: "Engedélyezze a szabálytalanság kezelési folyamatokat ezen eljárások segítségével"
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -101,5 +101,4 @@ Engedélyezze a szabálytalanság kezelési folyamatokat ezen eljárások segít
 3. Írjon be egy értéket a Karanténzónák mezőbe.
 4. A Leírás mezőben adjon meg egy értéket.
 5. Zárja be a lapot.
-
 

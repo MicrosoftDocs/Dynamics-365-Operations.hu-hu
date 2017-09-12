@@ -1,4 +1,4 @@
---- 
+---
 title: "Készletzárolás létrehozása és karbantartása"
 description: "Ez az eljárás azt mutatja, hogyan előzheti meg a fizikai, aktuális készletek lefoglalását más kimenő forrásbizonylatokkal a készletzárolás segítségével."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -34,7 +34,7 @@ Ez az eljárás azt mutatja, hogyan előzheti meg a fizikai, aktuális készlete
 1. Ugorjon a Készletkezelés > Időszakos feladatok > Készletzárolás lehetőségre.
 2. Kattintson az Új lehetőségre.
 3. A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. A listából válassza ki a használni kívánt cikket. 
+4. A listából válassza ki a használni kívánt cikket.
     * Válasszon ki egy blokkolni kívánt cikkszámot fizikai aktuális készlettel. Az USMF használata esetén választhatja a „M9201” cikket.  
 5. Adjon meg egy számot a Mennyiség mezőben.
     * Az M9201 használata esetén kevesebb, mint 200-at kell választania.  
@@ -55,5 +55,4 @@ Ez az eljárás azt mutatja, hogyan előzheti meg a fizikai, aktuális készlete
 1. Kattintson a Törlés gombra.
 2. Kattintson az Igen gombra.
 3. Zárja be a lapot.
-
 

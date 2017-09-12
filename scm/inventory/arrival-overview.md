@@ -1,7 +1,7 @@
 ---
 title: "Beérkezés áttekintése"
 description: "Ez a témakör a Beérkezés áttekintése funkcióival kapcsolatban tartalmaz tájékoztatást. A funkció része a Beérkezés áttekintése lap, és minden, várhatóan beérkező cikk áttekintését nyújtja."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -37,9 +37,9 @@ Ez a témakör a Beérkezés áttekintése funkcióival kapcsolatban tartalmaz t
 A **Beérkezés áttekintése** lap az összes várhatóan bejövő cikkek áttekintését nyújtja. Megjeleníti az áttekintés alapján inicializálható érkezéseket is. Ez a témakör a bevételezési folyamatra összpontosít.
 
 ## <a name="business-scenario"></a>Üzleti eset
-Fontolja meg a következő példát a bevételezési folyamatokban. 
+Fontolja meg a következő példát a bevételezési folyamatokban.
 
-[![Üzleti eset](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) 
+[![Üzleti eset](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Sanyi, a bevételezési adminisztrátor az iránt érdeklődik, hogy milyen beérkező cikkekre számítson az aktuális napon. A **Beérkezés áttekintése** lapon Sanyi áttekintést kaphat az aktuális feladatokról, valamint megtekintheti a mennyiségek, a térfogat, a súly, a különféle típusú rendelések stb. durva becslését is. Később a szállítás megérkezik az egyik érkeztetési területre, és Sanyi kap egy szállítási listát. A **Beérkezés áttekintése** lapon Sanyi a következő feladatokat végezheti el:
 
@@ -69,7 +69,7 @@ Ennél a példánál a **Beérkezés áttekintése** lap **Érkezési beállít�
 
 Az érkeztetési naplók automatikus létrehozásához a **Beérkezés áttekintése** lapon meg kell adnia a megfelelő adatokat az **Érkezési beállítások** gyorslap **Napló** mezőcsoportjában.
 
--   Új napló létrehozásakor meg kell adnia egy naplónevet. 
+-   Új napló létrehozásakor meg kell adnia egy naplónevet.
 
 [![A napló nevének megadása](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
@@ -123,7 +123,4 @@ Ha minden áru regisztrálása megtörtént, a raktárvezető vagy a beszerzési
 
 ## <a name="summary"></a>Összegzés
 A **Beérkezés áttekintése** lap áttekintést ad a raktárvezetőnek és a raktári dolgozóknak a bejövő feldolgozás részeként elvárt munkáról. A lapot a cikk érkeztetési folyamatának elindítására is használhatja, ezzel biztosítva a cikkek raktárba érkezésük első bejegyzésétől számított nyomon követését.
-
-
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "A készlet elérhetőségének ellenőrzése"
 description: "Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuális, illetve ténylegesen rendelkezésre álló készletét."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuá
 4. Kattintson a Dimenziók megjelenítése elemre.
 5. Kattintson az OK gombra.
 6. Zárja be a lapot.
-
 

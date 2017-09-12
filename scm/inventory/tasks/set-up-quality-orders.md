@@ -1,4 +1,4 @@
---- 
+---
 title: "Minőségi rendelések beállítása"
 description: "Ez az eljárás bemutatja, hogy hogyan engedélyezheti a minőségkezelési folyamatot, ha a bejövő készletet, a beérkezés regisztrációja után azonnal ellenőrizni szükséges."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ Ez az eljárás bemutatja, hogy hogyan engedélyezheti a minőségkezelési foly
 15. A kívánt rekord megkeresése és kijelölése a listán
 16. Kattintson a Mentés gombra.
 17. Zárja be a lapot.
-
 

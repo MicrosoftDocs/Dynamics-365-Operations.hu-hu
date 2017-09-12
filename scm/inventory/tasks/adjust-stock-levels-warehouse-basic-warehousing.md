@@ -1,4 +1,4 @@
---- 
+---
 title: "Készletszintek kiigazítása a raktárban (alap raktározáskészlet-nyilvántartás)"
 description: "Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készlethelyesbítési napló a raktárban található termékek készletszintjének helyesbítéséhez."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
 4. Kattintson az OK gombra.
 5. Zárja be az űrlapot.
 6. Zárja be a lapot.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Áru minőségének ellenőrzése"
 description: "Ez az eljárás bemutatja, hogyan dolgozhat fel egy minőségi rendelést."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ Ez az eljárás bemutatja, hogyan dolgozhat fel egy minőségi rendelést. Ezt a
 4. Kattintson a Kiválasztás lehetőségre.
 5. Kattintson az OK gombra.
 6. Zárja be a lapot.
-
 

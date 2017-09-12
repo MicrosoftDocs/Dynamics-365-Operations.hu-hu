@@ -1,7 +1,7 @@
---- 
+---
 title: "A cikk érkezésáttekintési profiljának beállítása"
 description: "Ez a feladat érkeztetési áttekintési profil létrehozására szolgál."
-author: BibiSp
+author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Ez a feladat érkeztetési áttekintési profil létrehozására szolgál. Az é
     * Nyugtasorok kiválasztása átmozgatási rendelésekből.  
 17. Kattintson a Mentés gombra.
 18. Zárja be a lapot.
-
 

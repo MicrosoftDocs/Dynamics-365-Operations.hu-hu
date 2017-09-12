@@ -1,4 +1,4 @@
---- 
+---
 title: "Egy cikk vagy egy alapanyag nyomon követése"
 description: "Ez az eljárás bemutatja, hogy a cikk-követéssel, hogyan lehet azonosítani, hogy hol használtak vagy használnak egy adott cikket vagy nyersanyagot."
 author: pjacobse
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -54,5 +54,4 @@ Ez az eljárás bemutatja, hogy a cikk-követéssel, hogyan lehet azonosítani, 
 8. A Művelet panelen kattintson a Nyomkövetés elemre.
 9. Kattintson a Kiszállított értékesítési rendelések lehetőségre.
 10. Zárja be a lapot.
-
 
