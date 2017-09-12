@@ -18,321 +18,219 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
-ms.openlocfilehash: 77049ba4c9c39cd44f1919b672deaf700b91357d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Kiskereskedelmi perifériák – áttekintés
+# <a name="retail-peripherals-overview"></a><span data-ttu-id="d7a5d-104">Kiskereskedelmi perifériák – áttekintés</span><span class="sxs-lookup"><span data-stu-id="d7a5d-104">Retail peripherals overview</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat. A perifériák pénztárhoz (POS) való csatlakoztatásának különböző módszereit írja le, valamint az összetevőket, amelyek a POS-kapcsolat kezeléséért felelősek
+<span data-ttu-id="d7a5d-105">Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-105">This topic explains the concepts that are related to retail peripherals.</span></span> <span data-ttu-id="d7a5d-106">A perifériák pénztárhoz (POS) való csatlakoztatásának különböző módszereit írja le, valamint az összetevőket, amelyek a POS-kapcsolat kezeléséért felelősek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-106">It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.</span></span>
 
-## <a name="concepts"></a>Koncepció
+## <a name="concepts"></a><span data-ttu-id="d7a5d-107">Koncepció</span><span class="sxs-lookup"><span data-stu-id="d7a5d-107">Concepts</span></span>
 
-### <a name="pos-registers"></a>POS-pénztárgépek
+### <a name="pos-registers"></a><span data-ttu-id="d7a5d-108">POS-pénztárgépek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-108">POS registers</span></span>
 
-Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárak** gombra. A pénztár (POS) pénztárgép egy entitás, amely egy adott pénztárpéldány jellemzőinek meghatározására szolgál. E jellemzők közé tartozik a pénztárgépen használ perifériák hardverprofilja vagy beállítása, az üzlet, amelyhez a pénztárgép hozzá van rendelve, és a vizuális élménye annak a felhasználónak, aki bejelentkezik a pénztárgépre.
+<span data-ttu-id="d7a5d-109">Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárak** gombra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-109">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span> <span data-ttu-id="d7a5d-110">A pénztár (POS) pénztárgép egy entitás, amely egy adott pénztárpéldány jellemzőinek meghatározására szolgál.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-110">The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS.</span></span> <span data-ttu-id="d7a5d-111">E jellemzők közé tartozik a pénztárgépen használ perifériák hardverprofilja vagy beállítása, az üzlet, amelyhez a pénztárgép hozzá van rendelve, és a vizuális élménye annak a felhasználónak, aki bejelentkezik a pénztárgépre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-111">These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.</span></span>
 
-### <a name="devices"></a>Eszközök
+### <a name="devices"></a><span data-ttu-id="d7a5d-112">Eszközök</span><span class="sxs-lookup"><span data-stu-id="d7a5d-112">Devices</span></span>
 
-Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Eszközök** gombra. Egy eszköz egy olyan entitás, amely egy pénztárhoz rendelt eszköz fizikai reprezentációja. Az eszközöket a létrehozásakor a rendszer hozzárendeli egy pénztárgéphez. Az eszköz-entitás nyomon követi a pénztárgép aktiválásáról, a használt klienstípusról, és az eszközre telepített alkalmazáscsomagról szóló információt. Az eszközök a következő alkalmazástípusokhoz rendelhetők hozzá: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, és Retail Modern POS – iOS.
+<span data-ttu-id="d7a5d-113">Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Eszközök** gombra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-113">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**.</span></span> <span data-ttu-id="d7a5d-114">Egy eszköz egy olyan entitás, amely egy pénztárhoz rendelt eszköz fizikai reprezentációja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-114">A device is an entity that represents a physical instance of a device that is mapped to a POS register.</span></span> <span data-ttu-id="d7a5d-115">Az eszközöket a létrehozásakor a rendszer hozzárendeli egy pénztárgéphez.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-115">When a device is created, it’s mapped to a POS register.</span></span> <span data-ttu-id="d7a5d-116">Az eszköz-entitás nyomon követi a pénztárgép aktiválásáról, a használt klienstípusról, és az eszközre telepített alkalmazáscsomagról szóló információt.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-116">The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device.</span></span> <span data-ttu-id="d7a5d-117">Az eszközök a következő alkalmazástípusokhoz rendelhetők hozzá: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, és Retail Modern POS – iOS.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-117">Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, and Retail Modern POS – iOS.</span></span>
 
-### <a name="retail-modern-pos"></a>Retail Modern POS
+### <a name="retail-modern-pos"></a><span data-ttu-id="d7a5d-118">Retail Modern POS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-118">Retail Modern POS</span></span>
 
-A Modern POS a Microsoft Windows rendszeren futó pénztárprogram. A Windows 10 operációs rendszerre (OS) telepíthető.
+<span data-ttu-id="d7a5d-119">A Modern POS a Microsoft Windows rendszeren futó pénztárprogram.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-119">Modern POS is the POS program for Microsoft Windows.</span></span> <span data-ttu-id="d7a5d-120">A Windows 10 operációs rendszerre (OS) telepíthető.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-120">It can be deployed on Windows 10 operating systems (OSs).</span></span>
 
-### <a name="cloud-pos"></a>Felhő POS
+### <a name="cloud-pos"></a><span data-ttu-id="d7a5d-121">Felhő POS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-121">Cloud POS</span></span>
 
-A Cloud POS a Modern POS program böngészőalapú verziója, amely webböngészőben érhető el.
+<span data-ttu-id="d7a5d-122">A Cloud POS a Modern POS program böngészőalapú verziója, amely webböngészőben érhető el.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-122">Cloud POS is a browser-based version of the Modern POS program that can be accessed in a web browser.</span></span>
 
-### <a name="modern-pos-for-ios"></a>Modern POS for iOS
+### <a name="modern-pos-for-ios"></a><span data-ttu-id="d7a5d-123">Modern POS for iOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-123">Modern POS for iOS</span></span>
 
-A Modern POS for iOS a Modern POS program iOS-alapú változata, amely iOS-eszközökre telepíthető.
+<span data-ttu-id="d7a5d-124">A Modern POS for iOS a Modern POS program iOS-alapú változata, amely iOS-eszközökre telepíthető.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-124">Modern POS for iOS is an iOS-based version of the Modern POS program that can be deployed on iOS devices.</span></span>
 
-### <a name="modern-pos-for-android"></a>Modern POS for Android
+### <a name="modern-pos-for-android"></a><span data-ttu-id="d7a5d-125">Modern POS for Android</span><span class="sxs-lookup"><span data-stu-id="d7a5d-125">Modern POS for Android</span></span>
 
-A Modern POS for Android a Modern POS program Android-alapú változata, amely Android-eszközökre telepíthető.
+<span data-ttu-id="d7a5d-126">A Modern POS for Android a Modern POS program Android-alapú változata, amely Android-eszközökre telepíthető.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-126">Modern POS for Android is an Android-based version of the Modern POS program that can be deployed on Android devices.</span></span>
 
-### <a name="pos-peripherals"></a>Pénztárperifériák
+### <a name="pos-peripherals"></a><span data-ttu-id="d7a5d-127">Pénztárperifériák</span><span class="sxs-lookup"><span data-stu-id="d7a5d-127">POS peripherals</span></span>
 
-A pénztárperifériák olyan eszközök, amely kifejezetten a pénztárfunkciókhoz támogatottak. A perifériák általában adott osztályokra vannak felosztva. További informáciért az osztályokról lásd a témakör „Eszközosztályok” részét.
+<span data-ttu-id="d7a5d-128">A pénztárperifériák olyan eszközök, amely kifejezetten a pénztárfunkciókhoz támogatottak.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-128">POS peripherals are devices that are explicitly supported for POS functions.</span></span> <span data-ttu-id="d7a5d-129">A perifériák általában adott osztályokra vannak felosztva.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-129">These peripherals are typically divided into specific classes.</span></span> <span data-ttu-id="d7a5d-130">További informáciért az osztályokról lásd a témakör „Eszközosztályok” részét.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-130">For more information about these classes, see the “Device classes” section of this topic.</span></span>
 
-### <a name="hardware-station"></a>Hardverállomás
+### <a name="hardware-station"></a><span data-ttu-id="d7a5d-131">Hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-131">Hardware station</span></span>
 
-Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzletek** &gt; **Minden kiskereskedelmi üzlet** gombra. Válasszon egy üzletet, majd kattintson a **Hardverállomások** gyorslapra. A **Hardverállomás** beállítás csatornaszintű beállítás, amely definiálja azokat a példányokat, ahol telepítve lesz a kiskereskedelmi perifériás logika. Ez a beállítás a csatorna szintjén a hardverállomás jellemzőinek meghatározására szolgál. Emellett azoknak a hardverállomásoknak a listázására is szolgál, amelyek a Modern POS példány rendelkezésére állnak egy adott üzletben. A hardverállomás be van építve a Windows rendszeren futó Modern POS programba. A hardverállomás függetlenül is telepíthető önálló Microsoft Internet Information Services (IIS) programként. Ebben az esetben a hálózaton keresztül érhető el.
+<span data-ttu-id="d7a5d-132">Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatornák** &gt; **Kiskereskedelmi üzletek** &gt; **Minden kiskereskedelmi üzlet** gombra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-132">Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.</span></span> <span data-ttu-id="d7a5d-133">Válasszon egy üzletet, majd kattintson a **Hardverállomások** gyorslapra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-133">Select a store, and then click the **Hardware stations** FastTab.</span></span> <span data-ttu-id="d7a5d-134">A **Hardverállomás** beállítás csatornaszintű beállítás, amely definiálja azokat a példányokat, ahol telepítve lesz a kiskereskedelmi perifériás logika.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-134">The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed.</span></span> <span data-ttu-id="d7a5d-135">Ez a beállítás a csatorna szintjén a hardverállomás jellemzőinek meghatározására szolgál.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-135">This setting at the channel level is used to determine characteristics of the hardware station.</span></span> <span data-ttu-id="d7a5d-136">Emellett azoknak a hardverállomásoknak a listázására is szolgál, amelyek a Modern POS példány rendelkezésére állnak egy adott üzletben.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-136">It's also used to list hardware stations that are available for a Modern POS instance in a given store.</span></span> <span data-ttu-id="d7a5d-137">A hardverállomás be van építve a Windows rendszeren futó Modern POS programba.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-137">The hardware station is built into the Modern POS program for Windows.</span></span> <span data-ttu-id="d7a5d-138">A hardverállomás függetlenül is telepíthető önálló Microsoft Internet Information Services (IIS) programként.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-138">The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program.</span></span> <span data-ttu-id="d7a5d-139">Ebben az esetben a hálózaton keresztül érhető el.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-139">In this case, it can be accessed via a network.</span></span>
 
-### <a name="hardware-profile"></a>Hardverprofil
+### <a name="hardware-profile"></a><span data-ttu-id="d7a5d-140">Hardverprofil</span><span class="sxs-lookup"><span data-stu-id="d7a5d-140">Hardware profile</span></span>
 
-Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárprofilok** &gt; **Hardverprofilok** gombra. A hardverprofil a pénztárgéphez vagy a hardverállomáshoz konfigurált eszközök listája. A hardverprofil közvetlenül a pénztárgéphez vagy a hardverállomás-profilhoz lehet hozzárendelve.
+<span data-ttu-id="d7a5d-141">Navigáció: kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárprofilok** &gt; **Hardverprofilok** gombra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-141">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span> <span data-ttu-id="d7a5d-142">A hardverprofil a pénztárgéphez vagy a hardverállomáshoz konfigurált eszközök listája.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-142">The hardware profile is a list of devices that are configured for a POS register or a hardware station.</span></span> <span data-ttu-id="d7a5d-143">A hardverprofil közvetlenül a pénztárgéphez vagy a hardverállomás-profilhoz lehet hozzárendelve.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-143">The hardware profile can be mapped directly to a POS register or a hardware station.</span></span>
 
-## <a name="devices-classes"></a>Eszközökosztályok
-A pénztárperifériák általában adott osztályokra vannak felosztva. Ez a szakasz a Modern POS által támogatott eszközöket ismerteti, áttekintést nyújtva róluk.
+## <a name="devices-classes"></a><span data-ttu-id="d7a5d-144">Eszközökosztályok</span><span class="sxs-lookup"><span data-stu-id="d7a5d-144">Devices classes</span></span>
+<span data-ttu-id="d7a5d-145">A pénztárperifériák általában adott osztályokra vannak felosztva.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-145">POS peripherals are typically divided into classes.</span></span> <span data-ttu-id="d7a5d-146">Ez a szakasz a Modern POS által támogatott eszközöket ismerteti, áttekintést nyújtva róluk.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-146">This section describes and gives an overview of the devices that Modern POS supports.</span></span>
 
-### <a name="printer"></a>Nyomtató
+### <a name="printer"></a><span data-ttu-id="d7a5d-147">Nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-147">Printer</span></span>
 
-A nyomtatók közé a hagyományos pénztár nyugtanyomtatók és az egész oldalas nyomtatók tartoznak. A nyomtatótámogatásáról az Object Linking and Embedding for Retail POS (OPOS) és a Microsoft Windows illesztőprogram-felületek gondoskodik. Legfeljebb két nyomtató használható egyszerre. Ezt a funkcionalitás támogatja azt a forgatókönyvet, amikor az önkiszolgáló diszkontáruházakban a nyugtákat a nyugtanyomtató nyomtatja ki, miközben a több információt tartalmazó vevői rendeléseket egy teljes oldalas nyomtató nyomtatja. A nyugtanyomtatók közvetlenül csatlakoztathatók a számítógéphez USB-n keresztül, hálózatra Ethernet-kábellel, és csatlakoztathatók Bluetooth használatával is.
+<span data-ttu-id="d7a5d-148">A nyomtatók közé a hagyományos pénztár nyugtanyomtatók és az egész oldalas nyomtatók tartoznak.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-148">Printers include traditional POS receipt printers and full-page printers.</span></span> <span data-ttu-id="d7a5d-149">A nyomtatótámogatásáról az Object Linking and Embedding for Retail POS (OPOS) és a Microsoft Windows illesztőprogram-felületek gondoskodik.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-149">Printer are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces.</span></span> <span data-ttu-id="d7a5d-150">Legfeljebb két nyomtató használható egyszerre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-150">Up to two printers can be used at the same time.</span></span> <span data-ttu-id="d7a5d-151">Ezt a funkcionalitás támogatja azt a forgatókönyvet, amikor az önkiszolgáló diszkontáruházakban a nyugtákat a nyugtanyomtató nyomtatja ki, miközben a több információt tartalmazó vevői rendeléseket egy teljes oldalas nyomtató nyomtatja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-151">This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers, whereas customer orders, which carry more information, are printed on a full-page printer.</span></span> <span data-ttu-id="d7a5d-152">A nyugtanyomtatók közvetlenül csatlakoztathatók a számítógéphez USB-n keresztül, hálózatra Ethernet-kábellel, és csatlakoztathatók Bluetooth használatával is.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-152">Receipt printers can be connected directly to a computer via USB, connected to a network via Ethernet, or connected via Bluetooth.</span></span>
 
-### <a name="scanner"></a>Leolvasó
+### <a name="scanner"></a><span data-ttu-id="d7a5d-153">Leolvasó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-153">Scanner</span></span>
 
-Legfeljebb két vonalkódolvasó használható egyszerre. Ezt a funkcionalitás azokat a forgatókönyveket támogatja, ahol a fizetés felgyorsítása érdekében a nagy vagy nehéz cikkek beolvasásához könnyebben mozgatható olvasóra van szükség, miközben a legtöbb szabványos méretű cikk beolvasására rögzített beágyazott vonalkódolvasó szolgál. A beolvasók OPOS, univerzális Windows Platform (UWP) vagy billentyűzethez-ékelt felületekkel támogathatók. A beolvasó és a számítógép csatlakoztatásához USB vagy Bluetooth használható.
+<span data-ttu-id="d7a5d-154">Legfeljebb két vonalkódolvasó használható egyszerre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-154">Up to two bar code scanners can be used at the same time.</span></span> <span data-ttu-id="d7a5d-155">Ezt a funkcionalitás azokat a forgatókönyveket támogatja, ahol a fizetés felgyorsítása érdekében a nagy vagy nehéz cikkek beolvasásához könnyebben mozgatható olvasóra van szükség, miközben a legtöbb szabványos méretű cikk beolvasására rögzített beágyazott vonalkódolvasó szolgál.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-155">This capability supports scenarios where a scanner that is more mobile is required in order to scan large or heavy items, whereas a fixed embedded scanner is used for most standard-sized items, to speed up checkout times.</span></span> <span data-ttu-id="d7a5d-156">A beolvasók OPOS, univerzális Windows Platform (UWP) vagy billentyűzethez-ékelt felületekkel támogathatók.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-156">Scanners can be supported through OPOS, Universal Windows Platform (UWP), or keyboard wedge interfaces.</span></span> <span data-ttu-id="d7a5d-157">A beolvasó és a számítógép csatlakoztatásához USB vagy Bluetooth használható.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-157">USB or Bluetooth can be used to connect a scanner to a computer.</span></span>
 
-### <a name="msr"></a>MSR
+### <a name="msr"></a><span data-ttu-id="d7a5d-158">MSR</span><span class="sxs-lookup"><span data-stu-id="d7a5d-158">MSR</span></span>
 
-Egy USB mágnescsíkolvasó (MSR) állíthat be OPOS-illesztőprogramok segítségével. Ha egy önálló MSR-t szeretne használni az elektronikus átutalási (EFT) fizetési tranzakciókhoz, az MSR-t fizetési csatlakoztatóval kell kezelni. Az önálló MSR vásárlói hűségadatok beviteléhez, alkalmazott-bejelentkezéshez és ajándékkártya-bevitelhez a fizetési csatlakoztatótól függetlenül is használható.
+<span data-ttu-id="d7a5d-159">Egy USB mágnescsíkolvasó (MSR) állíthat be OPOS-illesztőprogramok segítségével.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-159">One USB magnetic stripe reader (MSR) can be set up by using OPOS drivers.</span></span> <span data-ttu-id="d7a5d-160">Ha egy önálló MSR-t szeretne használni az elektronikus átutalási (EFT) fizetési tranzakciókhoz, az MSR-t fizetési csatlakoztatóval kell kezelni.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-160">If you want to use a stand-alone MSR for electronic funds transfer (EFT) payment transactions, the MSR must be managed by a payment connector.</span></span> <span data-ttu-id="d7a5d-161">Az önálló MSR vásárlói hűségadatok beviteléhez, alkalmazott-bejelentkezéshez és ajándékkártya-bevitelhez a fizetési csatlakoztatótól függetlenül is használható.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-161">Stand-alone MSRs can be used for customer loyalty entry, employee sign-in, and gift card entry, independently of the payment connector.</span></span>
 
-### <a name="cash-drawer"></a>Pénzfiók
+### <a name="cash-drawer"></a><span data-ttu-id="d7a5d-162">Pénzfiók</span><span class="sxs-lookup"><span data-stu-id="d7a5d-162">Cash drawer</span></span>
 
-Hardverprofilonként két pénzfiók támogatható. Ez a lehetőség lehetővé teszi, hogy pénztárgépenként egyszerre két aktív műszak álljon rendelkezésre. Megosztott műszak, vagy egyszerre több hordozható pénztáreszközök által használt pénzfiók esetén hardverprofilonként csak egy pénzfiók engedélyezett. A pénzfiókok közvetlenül csatlakoztathatók a számítógéphez USB-n keresztül, hálózatra csatlakoztathatók, vagy nyugtanyomtatóra csatlakoztathatók RJ12-felület használatával. Néhány esetben a pénzfiókok Bluetooth használatával is is csatlakozhatnak.
+<span data-ttu-id="d7a5d-163">Hardverprofilonként két pénzfiók támogatható.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-163">Two cash drawers can be supported per hardware profile.</span></span> <span data-ttu-id="d7a5d-164">Ez a lehetőség lehetővé teszi, hogy pénztárgépenként egyszerre két aktív műszak álljon rendelkezésre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-164">This capability enables two active shifts per register to be available at the same time.</span></span> <span data-ttu-id="d7a5d-165">Megosztott műszak, vagy egyszerre több hordozható pénztáreszközök által használt pénzfiók esetén hardverprofilonként csak egy pénzfiók engedélyezett.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-165">In the case of a shared shift, or a cash drawer that is used by multiple mobile POS devices at the same time, only one cash drawer is allowed per hardware profile.</span></span> <span data-ttu-id="d7a5d-166">A pénzfiókok közvetlenül csatlakoztathatók a számítógéphez USB-n keresztül, hálózatra csatlakoztathatók, vagy nyugtanyomtatóra csatlakoztathatók RJ12-felület használatával.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-166">Cash drawers can be connected directly to a computer via USB, connected to a network, or connected to a receipt printer via an RJ12 interface.</span></span> <span data-ttu-id="d7a5d-167">Néhány esetben a pénzfiókok Bluetooth használatával is is csatlakozhatnak.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-167">In some cases, cash drawers can also be connected via Bluetooth.</span></span>
 
-### <a name="line-display"></a>Sor megjelenítése
+### <a name="line-display"></a><span data-ttu-id="d7a5d-168">Sor megjelenítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-168">Line display</span></span>
 
-Sorkijelző jeleníti meg a termékeket, tranzakcióegyenlegeket és más hasznos információkat a vevőnek a tranzakciók során. Egy sorkijelző csatlakoztatható a számítógéphez USB-n keresztül az OPOS-illesztőprogramok segítségével.
+<span data-ttu-id="d7a5d-169">Sorkijelző jeleníti meg a termékeket, tranzakcióegyenlegeket és más hasznos információkat a vevőnek a tranzakciók során.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-169">Line displays are used to show products, transaction balances, and other useful information to the customer during a transaction.</span></span> <span data-ttu-id="d7a5d-170">Egy sorkijelző csatlakoztatható a számítógéphez USB-n keresztül az OPOS-illesztőprogramok segítségével.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-170">One line display can be connected to the computer via USB by using OPOS drivers.</span></span>
 
-### <a name="signature-capture"></a>Aláírás rögzítése
+### <a name="signature-capture"></a><span data-ttu-id="d7a5d-171">Aláírás rögzítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-171">Signature capture</span></span>
 
-Az aláírás-rögzítő eszközök közvetlenül a számítógéphez csatlakoztathatók USB vagy OPOS-illesztőprogramok segítségével. Ha az aláírás-rögzítés be van állítva, a vevőnek az eszközön kell elvégeznie az aláírást. Az aláírást a beadása után a pénztáros megtekinti elfogadásra.
+<span data-ttu-id="d7a5d-172">Az aláírás-rögzítő eszközök közvetlenül a számítógéphez csatlakoztathatók USB vagy OPOS-illesztőprogramok segítségével.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-172">Signature capture devices can be connected directly to a computer via USB by using OPOS drivers.</span></span> <span data-ttu-id="d7a5d-173">Ha az aláírás-rögzítés be van állítva, a vevőnek az eszközön kell elvégeznie az aláírást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-173">When signature capture is configured, the customer is prompted to sign on the device.</span></span> <span data-ttu-id="d7a5d-174">Az aláírást a beadása után a pénztáros megtekinti elfogadásra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-174">After the signature is provided, it's shown to the cashier for acceptance.</span></span>
 
-### <a name="scale"></a>Lépték
+### <a name="scale"></a><span data-ttu-id="d7a5d-175">Lépték</span><span class="sxs-lookup"><span data-stu-id="d7a5d-175">Scale</span></span>
 
-Mérleg csatlakoztatható a számítógéphez USP-n keresztül az OPOS-illesztőprogramok segítségével. Olyan termék tranzakció való hozzáadásakor, amelynek a megjelölése „lemért” cikk, a pénztár beolvassa a tömeget a mérlegről, a terméket hozzáadja a tranzakcióhoz, és a mérleg által megadott mennyiséget használja.
+<span data-ttu-id="d7a5d-176">Mérleg csatlakoztatható a számítógéphez USP-n keresztül az OPOS-illesztőprogramok segítségével.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-176">Scales can be connected to the computer via USP by using OPOS drivers.</span></span> <span data-ttu-id="d7a5d-177">Olyan termék tranzakció való hozzáadásakor, amelynek a megjelölése „lemért” cikk, a pénztár beolvassa a tömeget a mérlegről, a terméket hozzáadja a tranzakcióhoz, és a mérleg által megadott mennyiséget használja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-177">When a product that is marked as a “Weighed” product is added to a transaction, the POS reads the weight from the scale, adds the product to the transaction, and uses the quantity that the scale provided.</span></span>
 
-### <a name="pin-pad"></a>PIN-billentyűzet
+### <a name="pin-pad"></a><span data-ttu-id="d7a5d-178">PIN-billentyűzet</span><span class="sxs-lookup"><span data-stu-id="d7a5d-178">PIN pad</span></span>
 
-A személyes azonosítószámot (PIN) megadó számbillentyűzetek OPOS-on keresztül támogatottak, de fizetési csatlakozón keresztül lehet kezelni őket.
+<span data-ttu-id="d7a5d-179">A személyes azonosítószámot (PIN) megadó számbillentyűzetek OPOS-on keresztül támogatottak, de fizetési csatlakozón keresztül lehet kezelni őket.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-179">Personal identification number (PIN) pads are supported through OPOS, but they must be managed via a payment connector.</span></span>
 
-### <a name="secondary-display"></a>Másodlagos kijelző
+### <a name="secondary-display"></a><span data-ttu-id="d7a5d-180">Másodlagos kijelző</span><span class="sxs-lookup"><span data-stu-id="d7a5d-180">Secondary display</span></span>
 
-Ha a másodlagos kijelző be van állítva, a 2-es számú Windows megjelenítő használatos az alapvető információk megjelenítése. A másodlagos kijelző célja a független szoftvergyártók (ISV) bővítményeinek támogatása, mert alapértelmezetten a másodlagos kijelző nem konfigurálható, és csak korlátozott tartalom megjelenítésére képes.
+<span data-ttu-id="d7a5d-181">Ha a másodlagos kijelző be van állítva, a 2-es számú Windows megjelenítő használatos az alapvető információk megjelenítése.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-181">When a secondary display is configured, the number 2 Windows display is used to show basic information.</span></span> <span data-ttu-id="d7a5d-182">A másodlagos kijelző célja a független szoftvergyártók (ISV) bővítményeinek támogatása, mert alapértelmezetten a másodlagos kijelző nem konfigurálható, és csak korlátozott tartalom megjelenítésére képes.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-182">The purpose of the secondary display is to support independent software vendor (ISV) extension, because out of the box, the secondary display isn't configurable and shows limited content.</span></span>
 
-### <a name="payment-device"></a>Fizetésre szolgáló eszköz
+### <a name="payment-device"></a><span data-ttu-id="d7a5d-183">Fizetésre szolgáló eszköz</span><span class="sxs-lookup"><span data-stu-id="d7a5d-183">Payment device</span></span>
 
-A fizetési eszközök támogatása a fizetési csatlakozón keresztül valósul meg. A fizetési eszközök egy vagy sok, más eszközosztályok által biztosított funkció végrehajtására képesek. Egy fizetési eszköz működhet például MSR/kártyaolvasóként, sorkijelzőként, aláírás-rögzítő eszközként vagy PIN-billentyűzetként. A fizetési eszközök támogatása függetlenül történik az önálló eszközök támogatásától, amely a hardverprofilban szereplő más eszközökhöz biztosított.
+<span data-ttu-id="d7a5d-184">A fizetési eszközök támogatása a fizetési csatlakozón keresztül valósul meg.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-184">Payment device support is implemented through the payment connector.</span></span> <span data-ttu-id="d7a5d-185">A fizetési eszközök egy vagy sok, más eszközosztályok által biztosított funkció végrehajtására képesek.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-185">Payment devices can perform one or many of the functions that other device classes provide.</span></span> <span data-ttu-id="d7a5d-186">Egy fizetési eszköz működhet például MSR/kártyaolvasóként, sorkijelzőként, aláírás-rögzítő eszközként vagy PIN-billentyűzetként.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-186">For example, a payment device can function as an MSR/card reader, line display, signature capture device, or PIN pad.</span></span> <span data-ttu-id="d7a5d-187">A fizetési eszközök támogatása függetlenül történik az önálló eszközök támogatásától, amely a hardverprofilban szereplő más eszközökhöz biztosított.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-187">Support for payment devices is implemented independently of the stand-alone device support that is provided for other devices that are included in the hardware profile.</span></span>
 
-## <a name="supported-interfaces"></a>Támogatott interfészek
-### <a name="opos"></a>OPOS
+## <a name="supported-interfaces"></a><span data-ttu-id="d7a5d-188">Támogatott interfészek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-188">Supported interfaces</span></span>
+### <a name="opos"></a><span data-ttu-id="d7a5d-189">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-189">OPOS</span></span>
 
-Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen használható a Microsoft Dynamics 365 for Retail programmal, a Microsoft Dynamics 365 for Retail elsődleges kiskereskedelmi periféria platformként az OLE for POS ipari szabványt támogatja. Az OLE for POS szabvány kidolgozója a National Retail Federation (NRF), amely iparági szabvány kommunikációs protokollokat határoz meg a kiskereskedelmiperiféria-eszközök számára. Az OPOS az OLE for POS szabvány széles körben elfogadott implementációja. Az 1990-es évek közepén fejlesztették ki, és azóta többször módosult. Az OPOS eszközillesztőprogram-architektúrát biztosít, amely lehetővé teszi a pénztárhardverek és a Windows-alapú pénztárrendszerek egyszerű integrációját. Az OPOS-vezérlők kezelik a kommunikációt a pénztárszoftver és a kompatibilis hardver között. Az OPOS-vezérlők két részből állnak:
+<span data-ttu-id="d7a5d-190">Annak a biztosítása, hogy az eszközök lehető legnagyobb választéka legyen használható a Microsoft Dynamics 365 for Retail programmal, a Microsoft Dynamics 365 for Retail elsődleges kiskereskedelmi periféria platformként az OLE for POS ipari szabványt támogatja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-190">To help guarantee that the largest range of devices can be used with Microsoft Dynamics 365 for Retail, the OLE for POS industry standard is the primary retail peripheral device platform that is supported in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="d7a5d-191">Az OLE for POS szabvány kidolgozója a National Retail Federation (NRF), amely iparági szabvány kommunikációs protokollokat határoz meg a kiskereskedelmiperiféria-eszközök számára.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-191">The OLE for POS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for retail peripheral devices.</span></span> <span data-ttu-id="d7a5d-192">Az OPOS az OLE for POS szabvány széles körben elfogadott implementációja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-192">OPOS is a widely adopted implementation of the OLE for POS standard.</span></span> <span data-ttu-id="d7a5d-193">Az 1990-es évek közepén fejlesztették ki, és azóta többször módosult.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-193">It was developed in the mid-1990s and has been updated several times since then.</span></span> <span data-ttu-id="d7a5d-194">Az OPOS eszközillesztőprogram-architektúrát biztosít, amely lehetővé teszi a pénztárhardverek és a Windows-alapú pénztárrendszerek egyszerű integrációját.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-194">OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems.</span></span> <span data-ttu-id="d7a5d-195">Az OPOS-vezérlők kezelik a kommunikációt a pénztárszoftver és a kompatibilis hardver között.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-195">OPOS controls handle communication between compatible hardware and the POS software.</span></span> <span data-ttu-id="d7a5d-196">Az OPOS-vezérlők két részből állnak:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-196">An OPOS control consists of two parts:</span></span>
 
--   **Vezérlőobjektum** – Egy eszközosztály (például sorkijelző) vezérlőobjektuma biztosítja a felületet a program számára. A Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) standardizált OPOS vezérlőobjektum-készletet kínál: ezek közönséges vezérlőobjektumok (CCOs) néven ismertek. A CCO-k segítségével történik a Microsoft Dynamics 365 for Retail pénztárösszetevőjének tesztelése. Ezért a tesztek segítenek garantálni azt, hogy ha a Microsoft Dynamics 365 for Retail támogat egy eszközosztályt az OPOS-on keresztül, sokféle eszköztípus támogatható, amennyiben a gyártó biztosít OPOS-hoz készített szolgáltatásobjektumot. Nem kell külön tesztelni minden egyes eszköztípust.
--   **Szolgáltatásobjektum** – A szolgáltatásobjektum biztosítja a kommunikációt a vezérlőobjektum (CCO) és az eszköz között. Általában az eszköz szolgáltatásobjektumát az eszköz gyártója biztosítja. Azonban egyes esetekben előfordulhat, hogy a szolgáltatásobjektumot le kell tölteni a gyártó webhelyéről. Rendelkezésre állhat például egy újabb szolgáltatásobjektum. A gyártó webhelyének címét lásd a hardverdokumentációban.
+-   <span data-ttu-id="d7a5d-197">**Vezérlőobjektum** – Egy eszközosztály (például sorkijelző) vezérlőobjektuma biztosítja a felületet a program számára.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-197">**Control object** – The control object for a device class (such as line displays) provides the interface for the software program.</span></span> <span data-ttu-id="d7a5d-198">A Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) standardizált OPOS vezérlőobjektum-készletet kínál: ezek közönséges vezérlőobjektumok (CCOs) néven ismertek.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-198">Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs).</span></span> <span data-ttu-id="d7a5d-199">A CCO-k segítségével történik a Microsoft Dynamics 365 for Retail pénztárösszetevőjének tesztelése.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-199">The CCOs are used to test the POS component of Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="d7a5d-200">Ezért a tesztek segítenek garantálni azt, hogy ha a Microsoft Dynamics 365 for Retail támogat egy eszközosztályt az OPOS-on keresztül, sokféle eszköztípus támogatható, amennyiben a gyártó biztosít OPOS-hoz készített szolgáltatásobjektumot.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-200">Therefore, the testing helps guarantee that, if Microsoft Dynamics 365 for Retail supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS.</span></span> <span data-ttu-id="d7a5d-201">Nem kell külön tesztelni minden egyes eszköztípust.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-201">You don't have to explicitly test each device type.</span></span>
+-   <span data-ttu-id="d7a5d-202">**Szolgáltatásobjektum** – A szolgáltatásobjektum biztosítja a kommunikációt a vezérlőobjektum (CCO) és az eszköz között.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-202">**Service object** – The service object provides communication between the control object (CCO) and the device.</span></span> <span data-ttu-id="d7a5d-203">Általában az eszköz szolgáltatásobjektumát az eszköz gyártója biztosítja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-203">Typically, the service object for a device is provided by the device manufacturer.</span></span> <span data-ttu-id="d7a5d-204">Azonban egyes esetekben előfordulhat, hogy a szolgáltatásobjektumot le kell tölteni a gyártó webhelyéről.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-204">However, in some cases, you might have to download the service object from the manufacturer’s website.</span></span> <span data-ttu-id="d7a5d-205">Rendelkezésre állhat például egy újabb szolgáltatásobjektum.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-205">For example, a more recent service object might be available.</span></span> <span data-ttu-id="d7a5d-206">A gyártó webhelyének címét lásd a hardverdokumentációban.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-206">To find the address of the manufacturer's website, see your hardware documentation.</span></span>
 
-[![Vezérlőobjektum és szolgáltatásobjektum](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Az OLE for POS pénztárimplementáció támogatása segít garantálni azt, hogy ha az eszközgyártók és a POS-közzétevők helyesen implementálták a szabványt, a pénztárrendszerek és a támogatott eszközök képesek együtt dolgozni, még akkor is, ha korábban nem tesztelték őket együtt. **Megjegyzés:** Az OPOS-támogatás nem garantálja az összes, OPOS-illesztőprogrammal rendelkező eszköz támogatását. A Microsoft Dynamics 365 for Retail programnak először támogatnia kell az adott eszköztípust vagy -osztályt az OPOS-on keresztül. Ezenkívül a szolgáltatásobjektumok nem mindig naprakészek a CCO-k a legújabb verziójával. Tudatában kell lennie annak, hogy általánosságban a szolgáltatásobjektumok minősége vegyes.
+<span data-ttu-id="d7a5d-207">[![Vezérlőobjektum és szolgáltatásobjektum](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Az OLE for POS pénztárimplementáció támogatása segít garantálni azt, hogy ha az eszközgyártók és a POS-közzétevők helyesen implementálták a szabványt, a pénztárrendszerek és a támogatott eszközök képesek együtt dolgozni, még akkor is, ha korábban nem tesztelték őket együtt.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-207">[![Control object and service object](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together.</span></span> <span data-ttu-id="d7a5d-208">**Megjegyzés:** Az OPOS-támogatás nem garantálja az összes, OPOS-illesztőprogrammal rendelkező eszköz támogatását.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-208">**Note:** OPOS support doesn't guarantee support for all devices that have OPOS drivers.</span></span> <span data-ttu-id="d7a5d-209">A Microsoft Dynamics 365 for Retail programnak először támogatnia kell az adott eszköztípust vagy -osztályt az OPOS-on keresztül.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-209">Microsoft Dynamics 365 for Retail must first support that device type, or class, through OPOS.</span></span> <span data-ttu-id="d7a5d-210">Ezenkívül a szolgáltatásobjektumok nem mindig naprakészek a CCO-k a legújabb verziójával.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-210">In addition, service objects might not always be up to date with the latest version of the CCOs.</span></span> <span data-ttu-id="d7a5d-211">Tudatában kell lennie annak, hogy általánosságban a szolgáltatásobjektumok minősége vegyes.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-211">You should also be aware that, in general, the quality of service objects varies.</span></span>
 
-### <a name="windows"></a>Windows
+### <a name="windows"></a><span data-ttu-id="d7a5d-212">Windows</span><span class="sxs-lookup"><span data-stu-id="d7a5d-212">Windows</span></span>
 
-A nyugtanyomtatás a pénztárban az OPOS-ra van optimalizálva. Az OPOS általában sokkal gyorsabb, mint a Windows-nyomtatás. Ezért célszerű az OPOS használata, különösen a kiskereskedelmi környezetekben, ahol 40 oszlopos nyugták nyomtatása történik, és a tranzakciós időnek rövidnek kell lennie. A legtöbb eszköz esetében OPOS-vezérlőket fog használni. Azonban egyes OPOS-nyugtanyomtatók a Windows-illesztőprogramokat is támogatják. A Windows-illesztőprogram használatakor elérheti a legújabb betűtípusokat és az egyes hálózati nyomtatót több pénztárgéphez. Azonban vannak hátrányai is a Windows-illesztőprogramok használatának. Az alábbiakban példa látható a hátrányokra:
+<span data-ttu-id="d7a5d-213">A nyugtanyomtatás a pénztárban az OPOS-ra van optimalizálva.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-213">Receipt printing at the POS is optimized for OPOS.</span></span> <span data-ttu-id="d7a5d-214">Az OPOS általában sokkal gyorsabb, mint a Windows-nyomtatás.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-214">OPOS tends to be much faster than printing through Windows.</span></span> <span data-ttu-id="d7a5d-215">Ezért célszerű az OPOS használata, különösen a kiskereskedelmi környezetekben, ahol 40 oszlopos nyugták nyomtatása történik, és a tranzakciós időnek rövidnek kell lennie.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-215">Therefore, it's a good idea to use OPOS, especially in retail environments where 40-column receipts are printed and transaction times must be fast.</span></span> <span data-ttu-id="d7a5d-216">A legtöbb eszköz esetében OPOS-vezérlőket fog használni.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-216">For most devices, you will use OPOS controls.</span></span> <span data-ttu-id="d7a5d-217">Azonban egyes OPOS-nyugtanyomtatók a Windows-illesztőprogramokat is támogatják.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-217">However, some OPOS receipt printers also support Windows drivers.</span></span> <span data-ttu-id="d7a5d-218">A Windows-illesztőprogram használatakor elérheti a legújabb betűtípusokat és az egyes hálózati nyomtatót több pénztárgéphez.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-218">By using a Windows driver, you can access the latest fonts and network one printer for multiple registers.</span></span> <span data-ttu-id="d7a5d-219">Azonban vannak hátrányai is a Windows-illesztőprogramok használatának.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-219">However, there are drawbacks to using Windows drivers.</span></span> <span data-ttu-id="d7a5d-220">Az alábbiakban példa látható a hátrányokra:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-220">Here are some examples of these drawbacks:</span></span>
 
--   A Windows-illesztőprogramok használatakor megtörténik a képek renderelés a nyomtatás előtt. Ezért a nyomtatás általában lassabb, mint az OPOS-vezérlőket használó nyomtatók esetében.
--   A nyomtatón keresztül csatlakoztatott („láncba kötött”) eszközök nem feltétlenül működnek megfelelően a Windows-illesztőprogramok használatakor. Például lehetséges, hogy nem nyílik ki a pénztárfiók, vagy az elismervénynyomtató nem a várt módon működik.
--   Az OPOS emellett változók szélesebb körét támogatja, amelyeket kifejezetten a kiskereskedelmi nyugtanyomtatókhoz terveztek: ilyen például a papírvágás vagy az elismervénynyomtatás.
+-   <span data-ttu-id="d7a5d-221">A Windows-illesztőprogramok használatakor megtörténik a képek renderelés a nyomtatás előtt.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-221">When Windows drivers are used, images are rendered before printing occurs.</span></span> <span data-ttu-id="d7a5d-222">Ezért a nyomtatás általában lassabb, mint az OPOS-vezérlőket használó nyomtatók esetében.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-222">Therefore, printing tends to be slower than it is on printers that use OPOS controls.</span></span>
+-   <span data-ttu-id="d7a5d-223">A nyomtatón keresztül csatlakoztatott („láncba kötött”) eszközök nem feltétlenül működnek megfelelően a Windows-illesztőprogramok használatakor.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-223">Devices that are connected through the printer (“daisy-chained”) might not work correctly when Windows drivers are used.</span></span> <span data-ttu-id="d7a5d-224">Például lehetséges, hogy nem nyílik ki a pénztárfiók, vagy az elismervénynyomtató nem a várt módon működik.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-224">For example, the cash drawer might not open, or the slip printer might not word as you expect.</span></span>
+-   <span data-ttu-id="d7a5d-225">Az OPOS emellett változók szélesebb körét támogatja, amelyeket kifejezetten a kiskereskedelmi nyugtanyomtatókhoz terveztek: ilyen például a papírvágás vagy az elismervénynyomtatás.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-225">OPOS also supports a more extensive set of variables that are specific to retail receipt printers, such as paper cutting or slip printing.</span></span>
 
-Ha OPOS-vezérlők érhetők el a Windows-nyomtatóhoz, amelyet használ, a nyomtatónak még mindig gond nélkül működnie a Microsoft Dynamics 365 for Retail programmal.
+<span data-ttu-id="d7a5d-226">Ha OPOS-vezérlők érhetők el a Windows-nyomtatóhoz, amelyet használ, a nyomtatónak még mindig gond nélkül működnie a Microsoft Dynamics 365 for Retail programmal.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-226">If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Microsoft Dynamics 365 for Retail.</span></span>
 
-### <a name="universal-windows-platform"></a>Univerzális Windows-platform
+### <a name="universal-windows-platform"></a><span data-ttu-id="d7a5d-227">Univerzális Windows-platform</span><span class="sxs-lookup"><span data-stu-id="d7a5d-227">Universal Windows Platform</span></span>
 
-A kiskereskedelmi perifériák esetében az UWP a Windows Plug and Play eszközök támogatásához kapcsolódik. Ha Plug and Play eszközt csatlakoztatnak egy olyan verziójú Windows operációs rendszerhez, amely támogatja az ilyen típusú eszközöket, nincs szükség illesztőprogramra az eszköz rendeltetésszerű használatához. Ha például a Windows Bluetooth hangszóróeszközt észlel, az operációs rendszer tudja, hogy az eszköz **Hangszóró** osztálytípussal rendelkezik. Ezért az eszközt hangszóróként kezeli. Nincs szükség további beállításra. A pénztáreszközök esetében sok USB-eszköz csatlakoztatható, és a Windows HID-ként ismeri fel őket. Azonban előfordulhat, hogy nem képes meghatározni, milyen funkciókat biztosít az eszköz, mert az eszköz nem adja meg az eszközosztályt vagy -típust. A Windows 10 rendszerben a vonalkódolvasók és az MSR-ek eszközosztályainak hozzáadása történt meg. Ezért ha egy eszköz azt kommunikálja a Windows 10 rendszernek, hogy a fenti osztályok egyikébe tartozik, a Windows figyeli az eseményeket az eszközről a megfelelő időpontokban. A Modern POS támogatja az UWP MSR-eket és beolvasókat. Ezért amikor készen áll az egyik ilyen eszközökről érkező bemenet fogadására, és a fenti osztályok valamelyikébe tartozó eszköz csatlakoztatva van, az eszköz használható. Például ha egy UWP-vonalkódolvasót csatlakoztatunk egy Windows 10 számítógéphez, és a vonalkód-bejelentkezés a Modern POS programban be van állítva, a vonalkódolvasó aktívvá válik a bejelentkezési képernyőn. Nincs szükség további beállításra. A Windows rendszer folyamatosan bővül szolgáltatáspont UWP-eszközökkel. Ezek az osztályok készpénz tartalmazzák a pénzfiókok és nyugtanyomtatók osztályait. Az új eszközosztályok támogatása a Modern POS programban függőben van.
+<span data-ttu-id="d7a5d-228">A kiskereskedelmi perifériák esetében az UWP a Windows Plug and Play eszközök támogatásához kapcsolódik.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-228">UWP, in the case of retail peripherals, is related to Windows support for Plug and Play devices.</span></span> <span data-ttu-id="d7a5d-229">Ha Plug and Play eszközt csatlakoztatnak egy olyan verziójú Windows operációs rendszerhez, amely támogatja az ilyen típusú eszközöket, nincs szükség illesztőprogramra az eszköz rendeltetésszerű használatához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-229">When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended.</span></span> <span data-ttu-id="d7a5d-230">Ha például a Windows Bluetooth hangszóróeszközt észlel, az operációs rendszer tudja, hogy az eszköz **Hangszóró** osztálytípussal rendelkezik.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-230">For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type.</span></span> <span data-ttu-id="d7a5d-231">Ezért az eszközt hangszóróként kezeli.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-231">Therefore, and it treats that device as a speaker.</span></span> <span data-ttu-id="d7a5d-232">Nincs szükség további beállításra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-232">No additional setup is required.</span></span> <span data-ttu-id="d7a5d-233">A pénztáreszközök esetében sok USB-eszköz csatlakoztatható, és a Windows HID-ként ismeri fel őket.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-233">In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs).</span></span> <span data-ttu-id="d7a5d-234">Azonban előfordulhat, hogy nem képes meghatározni, milyen funkciókat biztosít az eszköz, mert az eszköz nem adja meg az eszközosztályt vagy -típust.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-234">However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device.</span></span> <span data-ttu-id="d7a5d-235">A Windows 10 rendszerben a vonalkódolvasók és az MSR-ek eszközosztályainak hozzáadása történt meg.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-235">In Windows 10, device classes for bar code scanners and MSRs have been added.</span></span> <span data-ttu-id="d7a5d-236">Ezért ha egy eszköz azt kommunikálja a Windows 10 rendszernek, hogy a fenti osztályok egyikébe tartozik, a Windows figyeli az eseményeket az eszközről a megfelelő időpontokban.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-236">Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times.</span></span> <span data-ttu-id="d7a5d-237">A Modern POS támogatja az UWP MSR-eket és beolvasókat.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-237">Modern POS supports UWP MSRs and scanners.</span></span> <span data-ttu-id="d7a5d-238">Ezért amikor készen áll az egyik ilyen eszközökről érkező bemenet fogadására, és a fenti osztályok valamelyikébe tartozó eszköz csatlakoztatva van, az eszköz használható.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-238">Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used.</span></span> <span data-ttu-id="d7a5d-239">Például ha egy UWP-vonalkódolvasót csatlakoztatunk egy Windows 10 számítógéphez, és a vonalkód-bejelentkezés a Modern POS programban be van állítva, a vonalkódolvasó aktívvá válik a bejelentkezési képernyőn.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-239">For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen.</span></span> <span data-ttu-id="d7a5d-240">Nincs szükség további beállításra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-240">No additional setup is required.</span></span> <span data-ttu-id="d7a5d-241">A Windows rendszer folyamatosan bővül szolgáltatáspont UWP-eszközökkel.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-241">Additional classes of point of service UWP devices are being added to Windows.</span></span> <span data-ttu-id="d7a5d-242">Ezek az osztályok készpénz tartalmazzák a pénzfiókok és nyugtanyomtatók osztályait.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-242">These classes include classes for cash drawers and receipt printers.</span></span> <span data-ttu-id="d7a5d-243">Az új eszközosztályok támogatása a Modern POS programban függőben van.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-243">Support for these new device classes in Modern POS is pending.</span></span>
 
-### <a name="keyboard-wedge"></a>Billentyűzet ék
+### <a name="keyboard-wedge"></a><span data-ttu-id="d7a5d-244">Billentyűzet ék</span><span class="sxs-lookup"><span data-stu-id="d7a5d-244">Keyboard wedge</span></span>
 
-A billentyűzet ék eszközök adatokat küldenek a számítógépnek úgy, mintha az adatok a billentyűzeten lettek volna beírva. Ezért alapértelmezés szerint a pénztár aktív mezője megkapja a beolvasott vagy lehúzott adatokat. Bizonyos esetekben ez a viselkedés azt okozhatja, hogy hibás típusú adatok olvasódnak be a nem megfelelő mezőbe. Egy vonalkód például a hitelkártyaadatoknak szánt mezőbe olvasódhat be. Sok esetben a pénztár tartalmaz olyan logikát, amely meghatározza, hogy a beolvasott vagy lehúzott adat vonalkód vagy kártyalehúzás. Ezért az adatok megfelelően kezeli a rendszer. Ha azonban az eszközök billentyűzet ék eszköz helyett OPOS-ként vannak beállítva, pontosabban vezérelhető az ilyen eszközök adatainak felhasználása, mert több dolog „ismert” az eszközről, amelyről az adatok származnak. A vonalkód-leolvasók adatait például automatikusan vonalkódként ismeri fel a rendszer, és a kapcsolódó bejegyzés megkeresése az adatbázisban könnyebb és gyorsabb, mint ha általános karakterlánc-keresés futna le, úgy, mint a billentyűzet ék eszközök esetében.
+<span data-ttu-id="d7a5d-245">A billentyűzet ék eszközök adatokat küldenek a számítógépnek úgy, mintha az adatok a billentyűzeten lettek volna beírva.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-245">Keyboard wedge devices send data to the computer as if that data were typed on a keyboard.</span></span> <span data-ttu-id="d7a5d-246">Ezért alapértelmezés szerint a pénztár aktív mezője megkapja a beolvasott vagy lehúzott adatokat.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-246">Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped.</span></span> <span data-ttu-id="d7a5d-247">Bizonyos esetekben ez a viselkedés azt okozhatja, hogy hibás típusú adatok olvasódnak be a nem megfelelő mezőbe.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-247">In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field.</span></span> <span data-ttu-id="d7a5d-248">Egy vonalkód például a hitelkártyaadatoknak szánt mezőbe olvasódhat be.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-248">For example, a bar code might be scanned into a field that is intended for input of credit card data.</span></span> <span data-ttu-id="d7a5d-249">Sok esetben a pénztár tartalmaz olyan logikát, amely meghatározza, hogy a beolvasott vagy lehúzott adat vonalkód vagy kártyalehúzás.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-249">In many cases, there is logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe.</span></span> <span data-ttu-id="d7a5d-250">Ezért az adatok megfelelően kezeli a rendszer.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-250">Therefore, the data is handled correctly.</span></span> <span data-ttu-id="d7a5d-251">Ha azonban az eszközök billentyűzet ék eszköz helyett OPOS-ként vannak beállítva, pontosabban vezérelhető az ilyen eszközök adatainak felhasználása, mert több dolog „ismert” az eszközről, amelyről az adatok származnak.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-251">However, when devices are set up as OPOS instead of keyboard wedge devices, there is more control over how the data from those devices can be consumed, because more is “known” about the device that the data originates from.</span></span> <span data-ttu-id="d7a5d-252">A vonalkód-leolvasók adatait például automatikusan vonalkódként ismeri fel a rendszer, és a kapcsolódó bejegyzés megkeresése az adatbázisban könnyebb és gyorsabb, mint ha általános karakterlánc-keresés futna le, úgy, mint a billentyűzet ék eszközök esetében.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-252">For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.</span></span>
 
-### <a name="native-printer"></a>Natív nyomtató
+### <a name="native-printer"></a><span data-ttu-id="d7a5d-253">Natív nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-253">Native printer</span></span>
 
-A natív (vagy „Eszköz”, a hardverprofilban ez a típus neve) nyomtatók beállíthatók úgy, hogy a felhasználót a számítógépen konfigurált nyomtató kiválasztására kérjék meg. Ha **Eszköz** típusú nyomtató van beállítva, és a Modern POS nyomtatási parancsot észlel, a felhasználó kérést kap, hogy a listában jelöljön ki egy nyomtatót. Ez a viselkedés eltér a Windows-illesztőprogramok viselkedésétől, mert a **Windows** nyomtatótípus a hardverprofilban nem jeleníti meg a nyomtatók listáját. Ehelyett arra van szükség, hogy egy elnevezett nyomtatót legyen megadva az **Eszköznév** mezőben.
+<span data-ttu-id="d7a5d-254">A natív (vagy „Eszköz”, a hardverprofilban ez a típus neve) nyomtatók beállíthatók úgy, hogy a felhasználót a számítógépen konfigurált nyomtató kiválasztására kérjék meg.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-254">Native (or "Device" as the type is named in the hardware profile) printers can be configured to prompt the user to select a printer that is configured for the computer.</span></span> <span data-ttu-id="d7a5d-255">Ha **Eszköz** típusú nyomtató van beállítva, és a Modern POS nyomtatási parancsot észlel, a felhasználó kérést kap, hogy a listában jelöljön ki egy nyomtatót.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-255">When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list.</span></span> <span data-ttu-id="d7a5d-256">Ez a viselkedés eltér a Windows-illesztőprogramok viselkedésétől, mert a **Windows** nyomtatótípus a hardverprofilban nem jeleníti meg a nyomtatók listáját.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-256">This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers.</span></span> <span data-ttu-id="d7a5d-257">Ehelyett arra van szükség, hogy egy elnevezett nyomtatót legyen megadva az **Eszköznév** mezőben.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-257">Instead, it requires that a named printer be provided in the **Device name** field.</span></span>
 
-### <a name="windows"></a>Windows
+### <a name="windows"></a><span data-ttu-id="d7a5d-258">Windows</span><span class="sxs-lookup"><span data-stu-id="d7a5d-258">Windows</span></span>
 
-A **Windows** eszköztípus csak nyomtatókhoz használt. Ha Windows-nyomtatót van konfigurálva a hardverprofilban, az adott nyomtató nevét meg kell adni. Ha a Modern POS nyomtatási eseményeket észlel, ha Windows-nyomtató van beállítva, az eseményt továbbítja a megadott Windows-nyomtatónak. A felhasználót nem kéri nyomtató kiválasztására.
+<span data-ttu-id="d7a5d-259">A **Windows** eszköztípus csak nyomtatókhoz használt.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-259">The **Windows** device type is used for printers only.</span></span> <span data-ttu-id="d7a5d-260">Ha Windows-nyomtatót van konfigurálva a hardverprofilban, az adott nyomtató nevét meg kell adni.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-260">When a Windows printer is configured in the hardware profile, the specific printer name must be provided.</span></span> <span data-ttu-id="d7a5d-261">Ha a Modern POS nyomtatási eseményeket észlel, ha Windows-nyomtató van beállítva, az eseményt továbbítja a megadott Windows-nyomtatónak.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-261">When Modern POS encounters print events, if a Windows printer is configured, the event will be passed to the specified Windows printer.</span></span> <span data-ttu-id="d7a5d-262">A felhasználót nem kéri nyomtató kiválasztására.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-262">The user won't be prompted to select a printer.</span></span>
 
-### <a name="network"></a>Hálózat
+### <a name="network"></a><span data-ttu-id="d7a5d-263">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-263">Network</span></span>
 
-Hálózati címmel rendelkező pénzfiókok, nyugtanyomtatók és fizetési terminálok hálózaton keresztül is használhatók vagy a Modern POS for Windows alkalmazásba beépített folyamatközi kommunikációs (IPC) hardverállomáson keresztül, vagy az IIS-hardverállomáson át más Modern POS-ügyfelek esetében.
+<span data-ttu-id="d7a5d-264">Hálózati címmel rendelkező pénzfiókok, nyugtanyomtatók és fizetési terminálok hálózaton keresztül is használhatók vagy a Modern POS for Windows alkalmazásba beépített folyamatközi kommunikációs (IPC) hardverállomáson keresztül, vagy az IIS-hardverállomáson át más Modern POS-ügyfelek esetében.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-264">Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows application or through the IIS hardware station for other Modern POS clients.</span></span>
 
-## <a name="hardware-station-deployment-options"></a>Hardverállomás-telepítési lehetőségek
-### <a name="ipc-built-in"></a>IPC (beépített)
+## <a name="hardware-station-deployment-options"></a><span data-ttu-id="d7a5d-265">Hardverállomás-telepítési lehetőségek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-265">Hardware station deployment options</span></span>
+### <a name="ipc-built-in"></a><span data-ttu-id="d7a5d-266">IPC (beépített)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-266">IPC (built-in)</span></span>
 
-A Modern POS for Windows alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik. Az IPC-hardverállomás használatához hardverprofilt kell hozzárendelni egy pénztárgéphez, amely a Modern POS for Windows alkalmazást fogja használni. Ezután hozzon létre egy **Dedikált** típusú hardverállomást az üzlethez, ahol a pénztárgépet használni fogja. Amikor elindítja a Modern POS alkalmazást, az IPC-hardverállomás aktív lesz, és a konfigurált POS-perifériák használatra készek lesznek. Ha átmenetileg nincs szüksége a helyi hardverre valamilyen okból, a **Hardverállomások kezelése** művelettel kapcsolja ki a hardverállomás funkcionalitást. A Modern POS arra is használhatja az IPC-hardverállomást, hogy közvetlenül kommunikáljon a hálózati perifériákkal.
+<span data-ttu-id="d7a5d-267">A Modern POS for Windows alkalmazás beépített folyamatközi kommunikációs (IPC) hardverállomással rendelkezik.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-267">The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows application.</span></span> <span data-ttu-id="d7a5d-268">Az IPC-hardverállomás használatához hardverprofilt kell hozzárendelni egy pénztárgéphez, amely a Modern POS for Windows alkalmazást fogja használni.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-268">To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows application.</span></span> <span data-ttu-id="d7a5d-269">Ezután hozzon létre egy **Dedikált** típusú hardverállomást az üzlethez, ahol a pénztárgépet használni fogja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-269">Then create a hardware station of the **Dedicated** type for the store where the register will be used.</span></span> <span data-ttu-id="d7a5d-270">Amikor elindítja a Modern POS alkalmazást, az IPC-hardverállomás aktív lesz, és a konfigurált POS-perifériák használatra készek lesznek.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-270">When you start Modern POS, the IPC hardware station will be active, and the POS peripherals that have been configured will be ready to use.</span></span> <span data-ttu-id="d7a5d-271">Ha átmenetileg nincs szüksége a helyi hardverre valamilyen okból, a **Hardverállomások kezelése** művelettel kapcsolja ki a hardverállomás funkcionalitást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-271">If you temporarily don't require the local hardware for some reason, use the **Manage hardware stations** operation to turn off the hardware station capabilities.</span></span> <span data-ttu-id="d7a5d-272">A Modern POS arra is használhatja az IPC-hardverállomást, hogy közvetlenül kommunikáljon a hálózati perifériákkal.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-272">Modern POS can also use the IPC hardware station to communicate directly with network peripherals.</span></span>
 
-### <a name="iis"></a>IIS
+### <a name="iis"></a><span data-ttu-id="d7a5d-273">IIS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-273">IIS</span></span>
 
-A hardverállomás IIS vagy önálló verzióját kétféleképpen használhatja. Az „IIS” leíró azt jelenti, hogy a pénztáralkalmazás a Microsoft Internet Information Services használatával csatlakozik a hardverállomáshoz. A pénztáralkalmazás az IIS-hardverállomáshoz webes szolgáltatásokon át csatlakozik, amelyek azon a számítógépen futnak, amelyhez az eszközök kapcsolódnak. Az IIS használatakor a hardverállomáshoz csatlakozó kiskereskedelmi perifériákat bármely pénztárgép használhatja, amely ugyanazon a hálózaton van, mint az IIS-hardverállomás. Mivel csak a Modern POS for Windows tartalmazza a kiskereskedelmi perifériák beépített támogatását, minden más Modern POS alkalmazásnak az IIS-hardverállomást kell használnia a kommunikációhoz a hardverprofilban konfigurált pénztárperifériákkal. Emiatt az IIS-hardverállomás minden egyes példányához szükség van egy számítógépre, amely az eszközökkel kommunikáló webes szolgáltatást és alkalmazást futtatja. Az IIS-hardverállomás minden nem Windows Modern POS alkalmazáshoz szükség.
+<span data-ttu-id="d7a5d-274">A hardverállomás IIS vagy önálló verzióját kétféleképpen használhatja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-274">You can use the IIS or stand-alone version of the hardware station in two ways.</span></span> <span data-ttu-id="d7a5d-275">Az „IIS” leíró azt jelenti, hogy a pénztáralkalmazás a Microsoft Internet Information Services használatával csatlakozik a hardverállomáshoz.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-275">The descriptor “IIS” implies that the POS application connects to the hardware station via Microsoft Internet Information Services.</span></span> <span data-ttu-id="d7a5d-276">A pénztáralkalmazás az IIS-hardverállomáshoz webes szolgáltatásokon át csatlakozik, amelyek azon a számítógépen futnak, amelyhez az eszközök kapcsolódnak.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-276">The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected.</span></span> <span data-ttu-id="d7a5d-277">Az IIS használatakor a hardverállomáshoz csatlakozó kiskereskedelmi perifériákat bármely pénztárgép használhatja, amely ugyanazon a hálózaton van, mint az IIS-hardverállomás.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-277">When IIS is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station.</span></span> <span data-ttu-id="d7a5d-278">Mivel csak a Modern POS for Windows tartalmazza a kiskereskedelmi perifériák beépített támogatását, minden más Modern POS alkalmazásnak az IIS-hardverállomást kell használnia a kommunikációhoz a hardverprofilban konfigurált pénztárperifériákkal.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-278">Because only Modern POS for Windows includes built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile.</span></span> <span data-ttu-id="d7a5d-279">Emiatt az IIS-hardverállomás minden egyes példányához szükség van egy számítógépre, amely az eszközökkel kommunikáló webes szolgáltatást és alkalmazást futtatja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-279">Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices.</span></span> <span data-ttu-id="d7a5d-280">Az IIS-hardverállomás minden nem Windows Modern POS alkalmazáshoz szükség.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-280">The IIS hardware station is required for all non-Windows Modern POS applications.</span></span>
 
-#### <a name="dedicated"></a>Dedikált
+#### <a name="dedicated"></a><span data-ttu-id="d7a5d-281">Dedikált</span><span class="sxs-lookup"><span data-stu-id="d7a5d-281">Dedicated</span></span>
 
-A Modern POS a **Dedikált** típusú hardverállomásokat használja annak az észleléséhez, hogy perifériák közvetlenül csatlakoztatva vannak a számítógéphez, amelyen az alkalmazást használják. Azonban a **Dedikált** típus az IIS-hardverállomásokhoz is használható. A hagyományos, rögzített pénztár esetén, amely a Cloud POS alkalmazást haszálja pénztáralkalmazásként, a **Dedikált** hardverállomás-típust használjuk az összes olyan ISS-hardverállomás esetében, amelyek a Cloud POS alkalmazást futtató számítógépre vannak telepítve. A kiskereskedelmi perifériák szempontból a dedikált IIS-hardverállomás jobb kiskereskedelmiperiféria-támogatást nyújt a hagyományos, rögzített pénztárforgatókönyvek esetében. A dedikált hardverállomások a hardverprofilban támogatott összes perifériát támogatják.
+<span data-ttu-id="d7a5d-282">A Modern POS a **Dedikált** típusú hardverállomásokat használja annak az észleléséhez, hogy perifériák közvetlenül csatlakoztatva vannak a számítógéphez, amelyen az alkalmazást használják.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-282">Modern POS uses hardware stations of the **Dedicated** type to detect that peripherals are directly connected to the computer where the app is being used.</span></span> <span data-ttu-id="d7a5d-283">Azonban a **Dedikált** típus az IIS-hardverállomásokhoz is használható.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-283">However, the **Dedicated** type can also be used for IIS hardware stations.</span></span> <span data-ttu-id="d7a5d-284">A hagyományos, rögzített pénztár esetén, amely a Cloud POS alkalmazást haszálja pénztáralkalmazásként, a **Dedikált** hardverállomás-típust használjuk az összes olyan ISS-hardverállomás esetében, amelyek a Cloud POS alkalmazást futtató számítógépre vannak telepítve.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-284">In a traditional, fixed POS scenario that uses Cloud POS as the POS application, the **Dedicated** hardware station type is used for IIS hardware stations that are deployed on the same computer that is running Cloud POS.</span></span> <span data-ttu-id="d7a5d-285">A kiskereskedelmi perifériák szempontból a dedikált IIS-hardverállomás jobb kiskereskedelmiperiféria-támogatást nyújt a hagyományos, rögzített pénztárforgatókönyvek esetében.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-285">From a retail peripherals perspective, the dedicated IIS hardware station has better retail peripheral support for traditional, fixed POS scenarios.</span></span> <span data-ttu-id="d7a5d-286">A dedikált hardverállomások a hardverprofilban támogatott összes perifériát támogatják.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-286">Dedicated hardware stations support all peripherals that are supported in the hardware profile.</span></span>
 
-#### <a name="shared"></a>Megosztott
+#### <a name="shared"></a><span data-ttu-id="d7a5d-287">Megosztott</span><span class="sxs-lookup"><span data-stu-id="d7a5d-287">Shared</span></span>
 
-A megosztott hardverállomások szándékolt felhasználása az, hogy a nap során több pénztáreszköz használja őket. A megosztott hardverállomások csak a pénzfiókok, nyugtanyomtatók és fizetési terminálok támogatására vannak optimalizálva. Önálló vonalkódolvasók, MSR-ek, sorkijelzők, mérlegek vagy más eszközök közvetlenül nem csatlakoztathatók. Ellenkező esetben ütközés történik, amikor több pénztáreszköz próbálja egyszerre igényelni ugyanazokat a perifériákat. Így lehet kezelni az ütközéseket a támogatott eszközök esetében:
+<span data-ttu-id="d7a5d-288">A megosztott hardverállomások szándékolt felhasználása az, hogy a nap során több pénztáreszköz használja őket.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-288">Shared hardware stations are intended to be used by multiple POS devices through the course of the day.</span></span> <span data-ttu-id="d7a5d-289">A megosztott hardverállomások csak a pénzfiókok, nyugtanyomtatók és fizetési terminálok támogatására vannak optimalizálva.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-289">Shared hardware stations are optimized to support only cash drawers, receipt printers, and payment terminals.</span></span> <span data-ttu-id="d7a5d-290">Önálló vonalkódolvasók, MSR-ek, sorkijelzők, mérlegek vagy más eszközök közvetlenül nem csatlakoztathatók.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-290">You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices.</span></span> <span data-ttu-id="d7a5d-291">Ellenkező esetben ütközés történik, amikor több pénztáreszköz próbálja egyszerre igényelni ugyanazokat a perifériákat.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-291">Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time.</span></span> <span data-ttu-id="d7a5d-292">Így lehet kezelni az ütközéseket a támogatott eszközök esetében:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-292">Here is how conflicts are managed for supported devices:</span></span>
 
--   **Pénzfiók** – A pénztárfiók nyitását az eszköznek küldött esemény váltja ki. A pénzfiók meghívásakor az egyetlen lehetséges probléma akkor jelentkezik, ha a pénztárfiók már nyitva van. Megosztott hardverállomások esetében a pénztárfiókot **Megosztott** értékre kell állítani a hardverprofilban. Ez a beállítás megakadályozza, hogy a pénztár ellenőrizze azt, hogy a pénztárfiók már nyitva van-e, amikor a megnyitás parancsot küldi.
--   **Nyugtanyomtató** – Ha a hardverállomásra egy időben két nyugtanyomtatási parancsot küldenek, a parancsok egyike elveszhet az eszköztől függően. Egyes eszközöknek belső memóriája vagy készletezési funkciója van, amely megakadályozhatja a probléma előfordulását. Ha egy nyomtatási parancs nem sikeres, a pénztáros hibaüzenetet kap, és újra megpróbálhatja kiadni a nyomtatási parancsot a pénztárról.
--   **Fizetési terminál** – Ha a pénztáros megpróbál végrehajtani egy tranzakciót egy fizetési terminálról, amely már használatban van, egy üzenet értesíti a pénztárost, hogy a terminál használatban van, és megkér, hogy próbálkozzon újra később. A pénztárosok általában látják, hogy a terminál már használatban van, és várnak, amíg a másik tranzakció befejeződik, mielőtt újra próbálkoznának.
+-   <span data-ttu-id="d7a5d-293">**Pénzfiók** – A pénztárfiók nyitását az eszköznek küldött esemény váltja ki.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-293">**Cash drawer** – The cash drawer is opened via an event that is sent to the device.</span></span> <span data-ttu-id="d7a5d-294">A pénzfiók meghívásakor az egyetlen lehetséges probléma akkor jelentkezik, ha a pénztárfiók már nyitva van.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-294">The only issue that can occur when a cash drawer is called occurs if the cash drawer is already open.</span></span> <span data-ttu-id="d7a5d-295">Megosztott hardverállomások esetében a pénztárfiókot **Megosztott** értékre kell állítani a hardverprofilban.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-295">In the case of shared hardware stations, the cash drawer should be set to **Shared** in the hardware profile.</span></span> <span data-ttu-id="d7a5d-296">Ez a beállítás megakadályozza, hogy a pénztár ellenőrizze azt, hogy a pénztárfiók már nyitva van-e, amikor a megnyitás parancsot küldi.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-296">This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.</span></span>
+-   <span data-ttu-id="d7a5d-297">**Nyugtanyomtató** – Ha a hardverállomásra egy időben két nyugtanyomtatási parancsot küldenek, a parancsok egyike elveszhet az eszköztől függően.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-297">**Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device.</span></span> <span data-ttu-id="d7a5d-298">Egyes eszközöknek belső memóriája vagy készletezési funkciója van, amely megakadályozhatja a probléma előfordulását.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-298">Some devices have internal memory or pooling that can prevent this issue.</span></span> <span data-ttu-id="d7a5d-299">Ha egy nyomtatási parancs nem sikeres, a pénztáros hibaüzenetet kap, és újra megpróbálhatja kiadni a nyomtatási parancsot a pénztárról.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-299">If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.</span></span>
+-   <span data-ttu-id="d7a5d-300">**Fizetési terminál** – Ha a pénztáros megpróbál végrehajtani egy tranzakciót egy fizetési terminálról, amely már használatban van, egy üzenet értesíti a pénztárost, hogy a terminál használatban van, és megkér, hogy próbálkozzon újra később.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-300">**Payment terminal** – If a cashier tries to tender a transaction on a payment terminal that is already being used, a message notifies the cashier that the terminal is being used and asks the cashier to try again later.</span></span> <span data-ttu-id="d7a5d-301">A pénztárosok általában látják, hogy a terminál már használatban van, és várnak, amíg a másik tranzakció befejeződik, mielőtt újra próbálkoznának.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-301">Usually, cashiers can see that a terminal is already being used and will wait until the other transaction is completed before they try to tender again.</span></span>
 
-A jövőbeli programverziók egyik tervezett funkciója annak az ellenőrzése, hogy nem támogatott eszközök vannak-e beállítva egy megosztott hardverállomáshoz hozzárendelt hardverprofilhoz. Ha az ellenőrzés nem támogatott eszközöket érzékel, a felhasználó kap egy üzenetet, amely arról tájékoztatja, hogy az eszközök nem támogatottak a megosztott hardverállomásokhoz. Megosztott hardverállomások esetében a **Kiválasztás fizetéskor** beállítás beállítása **Igen** a pénztárgép szintjén. A pénztárfelhasználó kérést kap a hardverállomás kiválasztására, amikor fizetést választanak egy tranzakciókhoz a pénztárgépen. Ha a hardverállomás kijelölése csak a fizetés idején történik, a hardverállomás kiválasztása közvetlenül a mobil forgatókönyvek pénztár-munkafolyamatához adódik hozzá. További előny, hogy a fizetési terminál sorkijelzője nem használt a megosztott forgatókönyvek esetében. Ha a fizetési terminált használják sorkijelzőként, más felhasználók számára a terminál zárolva lehet a tranzakció befejezéséig. Mobil forgatókönyvek esetében sorok adódhatnak hozzá a tranzakcióhoz hosszabb időszakra vonatkozóan. Ezért a **Kiválasztás fizetéskor** kapcsoló szükséges az eszköz optimális rendelkezésre állásának biztosítása érdekében.
+<span data-ttu-id="d7a5d-302">A jövőbeli programverziók egyik tervezett funkciója annak az ellenőrzése, hogy nem támogatott eszközök vannak-e beállítva egy megosztott hardverállomáshoz hozzárendelt hardverprofilhoz.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-302">Validation is planned for a future release, to detect whether unsupported devices are set up for a hardware profile that is mapped to a shared hardware station.</span></span> <span data-ttu-id="d7a5d-303">Ha az ellenőrzés nem támogatott eszközöket érzékel, a felhasználó kap egy üzenetet, amely arról tájékoztatja, hogy az eszközök nem támogatottak a megosztott hardverállomásokhoz.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-303">If any unsupported devices are detected, the user will receive a message that states that the devices aren't supported for shared hardware stations.</span></span> <span data-ttu-id="d7a5d-304">Megosztott hardverállomások esetében a **Kiválasztás fizetéskor** beállítás beállítása **Igen** a pénztárgép szintjén.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-304">In the case of shared hardware stations, the **Select upon tendering** option is set to **Yes** at the register level.</span></span> <span data-ttu-id="d7a5d-305">A pénztárfelhasználó kérést kap a hardverállomás kiválasztására, amikor fizetést választanak egy tranzakciókhoz a pénztárgépen.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-305">The POS user is then prompted to select a hardware station when a tender is selected for a transaction at the POS.</span></span> <span data-ttu-id="d7a5d-306">Ha a hardverállomás kijelölése csak a fizetés idején történik, a hardverállomás kiválasztása közvetlenül a mobil forgatókönyvek pénztár-munkafolyamatához adódik hozzá.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-306">When the hardware station is selected only at the time of tender, the hardware station selection is added directly to the POS workflow for mobile scenarios.</span></span> <span data-ttu-id="d7a5d-307">További előny, hogy a fizetési terminál sorkijelzője nem használt a megosztott forgatókönyvek esetében.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-307">As an additional benefit, the line display on the payment terminal isn't used for shared scenarios.</span></span> <span data-ttu-id="d7a5d-308">Ha a fizetési terminált használják sorkijelzőként, más felhasználók számára a terminál zárolva lehet a tranzakció befejezéséig.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-308">If the payment terminal is used as a line display, other users might be blocked from using that terminal until the transaction is completed.</span></span> <span data-ttu-id="d7a5d-309">Mobil forgatókönyvek esetében sorok adódhatnak hozzá a tranzakcióhoz hosszabb időszakra vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-309">In mobile scenarios, lines might be added to a transaction over a longer period.</span></span> <span data-ttu-id="d7a5d-310">Ezért a **Kiválasztás fizetéskor** kapcsoló szükséges az eszköz optimális rendelkezésre állásának biztosítása érdekében.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-310">Therefore, the **Select upon tendering** option is required in order to ensure optimum device availability.</span></span>
 
-### <a name="network-peripherals"></a>Hálózati perifériák
+### <a name="network-peripherals"></a><span data-ttu-id="d7a5d-311">Hálózati perifériák</span><span class="sxs-lookup"><span data-stu-id="d7a5d-311">Network peripherals</span></span>
 
-A hardverprofilban levő eszközök hálózati megjelölése lehetővé teszi a pénzfiókok, nyugtanyomtatók és fizetési terminálok hálózati kapcsolaton keresztül való csatlakoztatását.
+<span data-ttu-id="d7a5d-312">A hardverprofilban levő eszközök hálózati megjelölése lehetővé teszi a pénzfiókok, nyugtanyomtatók és fizetési terminálok hálózati kapcsolaton keresztül való csatlakoztatását.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-312">The network designation for devices in the hardware profile enables cash drawers, receipt printers, and payment terminals to be connected via a network connection.</span></span>
 
-#### <a name="modern-pos-for-windows"></a>Modern POS for Windows
+#### <a name="modern-pos-for-windows"></a><span data-ttu-id="d7a5d-313">Modern POS for Windows</span><span class="sxs-lookup"><span data-stu-id="d7a5d-313">Modern POS for Windows</span></span>
 
-Két helyen lehet megadni a hálózati perifériákhoz tartozó IP-címeket. Ha a Modern POS Windows-ügyfél hálózati perifériák egyetlen készletet használja, az IP-címeket az eszközökhöz a Művelet panel **IP-konfiguráció** beállításának segítségével adja a pénztárgéphez. Az olyan hálózati eszközök esetében, amelyeken több pénztárgép osztozik, a hozzárendelt hálózati eszközökkel rendelkező hardverprofil közvetlenül rendelhető egy megosztott hardverállomáshoz. Az IP-címek hozzárendeléséhez jelölje ki a hardverállomást a **Kiskereskedelmi üzletek** oldalon, és alkalmazza az **IP-konfiguráció** lehetőséget a **Hardverállomások** szakaszban a hardverállomáshoz hozzárendelt hálózati eszközök megadásához. Az olyan hardverállomásoknál, amelyek csak hálózati eszközökkel rendelkeznek, nem kell telepíteni magát a hardverállomást. Ebben az esetben a hardverállomásra csak ahhoz van szükség, hogy fogalmi szinten csoportosítsuk a hálózati címmel rendelkező eszközöket a helyük szerint a kiskereskedelmi üzletben.
+<span data-ttu-id="d7a5d-314">Két helyen lehet megadni a hálózati perifériákhoz tartozó IP-címeket.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-314">You can specify IP addresses for network peripherals in two places.</span></span> <span data-ttu-id="d7a5d-315">Ha a Modern POS Windows-ügyfél hálózati perifériák egyetlen készletet használja, az IP-címeket az eszközökhöz a Művelet panel **IP-konfiguráció** beállításának segítségével adja a pénztárgéphez.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-315">If the Modern POS Windows client is using a single set of network peripherals, you should set the IP addresses for those devices by using the **IP configuration** option on the Action Pane for the register itself.</span></span> <span data-ttu-id="d7a5d-316">Az olyan hálózati eszközök esetében, amelyeken több pénztárgép osztozik, a hozzárendelt hálózati eszközökkel rendelkező hardverprofil közvetlenül rendelhető egy megosztott hardverállomáshoz.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-316">In the case of network devices that will be shared among POS registers, a hardware profile that has network devices assigned to it can be mapped directly to a shared hardware station.</span></span> <span data-ttu-id="d7a5d-317">Az IP-címek hozzárendeléséhez jelölje ki a hardverállomást a **Kiskereskedelmi üzletek** oldalon, és alkalmazza az **IP-konfiguráció** lehetőséget a **Hardverállomások** szakaszban a hardverállomáshoz hozzárendelt hálózati eszközök megadásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-317">To assign IP addresses, select that hardware station on the **Retail stores** page, and then use the **IP configuration** option in the **Hardware stations** section to specify the network devices that are assigned to that hardware station.</span></span> <span data-ttu-id="d7a5d-318">Az olyan hardverállomásoknál, amelyek csak hálózati eszközökkel rendelkeznek, nem kell telepíteni magát a hardverállomást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-318">For hardware stations that have only network devices, you don't have to deploy the hardware station itself.</span></span> <span data-ttu-id="d7a5d-319">Ebben az esetben a hardverállomásra csak ahhoz van szükség, hogy fogalmi szinten csoportosítsuk a hálózati címmel rendelkező eszközöket a helyük szerint a kiskereskedelmi üzletben.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-319">In this case, the hardware station is required only in order to conceptually group network-addressable devices according to their location in the retail store.</span></span>
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS for iOS és Modern POS for Android
+#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a><span data-ttu-id="d7a5d-320">Cloud POS, Modern POS for iOS és Modern POS for Android</span><span class="sxs-lookup"><span data-stu-id="d7a5d-320">Cloud POS, Modern POS for iOS, and Modern POS for Android</span></span>
 
-A fizikailag csatlakoztatott és hálózati címmel rendelkező perifériákat működtető logika a hardverállomásban található. Ezért a Modern POS for Windows kivételével az összes ügyfél esetében egy IIS-hardverállomást kell telepíeni és aktiválni ahhoz, hogy a pénztár kommunikálhasson a perifériákkal, függetlenül attól, hogy a perifériák fizikailag csatlakoztatottak egy hardverállomáshoz, vagy a hálózaton keresztül vannak megcímezve.
+<span data-ttu-id="d7a5d-321">A fizikailag csatlakoztatott és hálózati címmel rendelkező perifériákat működtető logika a hardverállomásban található.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-321">The logic that drives physically connected and network-addressable peripherals is contained in the hardware station.</span></span> <span data-ttu-id="d7a5d-322">Ezért a Modern POS for Windows kivételével az összes ügyfél esetében egy IIS-hardverállomást kell telepíeni és aktiválni ahhoz, hogy a pénztár kommunikálhasson a perifériákkal, függetlenül attól, hogy a perifériák fizikailag csatlakoztatottak egy hardverállomáshoz, vagy a hálózaton keresztül vannak megcímezve.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-322">Therefore, for all POS clients except Modern POS for Windows, an IIS hardware station must be deployed and active to enable the POS to communicate with peripherals, regardless of whether those peripherals are physically connected to a hardware station or addressed over the network.</span></span>
 
-## <a name="setup-and-configuration"></a>Beállítás és konfigurálás
-### <a name="hardware-station-installation"></a>Hardverállomás-telepítés
+## <a name="setup-and-configuration"></a><span data-ttu-id="d7a5d-323">Beállítás és konfigurálás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-323">Setup and configuration</span></span>
+### <a name="hardware-station-installation"></a><span data-ttu-id="d7a5d-324">Hardverállomás-telepítés</span><span class="sxs-lookup"><span data-stu-id="d7a5d-324">Hardware station installation</span></span>
 
-További információért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).
+<span data-ttu-id="d7a5d-325">További információért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-325">For information, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
 
-### <a name="modern-pos-for-windows-setup-and-configuration"></a>Modern POS for Windows telepítés és beállítás
+### <a name="modern-pos-for-windows-setup-and-configuration"></a><span data-ttu-id="d7a5d-326">Modern POS for Windows telepítés és beállítás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-326">Modern POS for Windows setup and configuration</span></span>
 
-További információért lásd: [Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md).
+<span data-ttu-id="d7a5d-327">További információért lásd: [Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-327">For information, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
 
-### <a name="opos-device-setup-and-configuration"></a>OPOS-eszköz telepítése és beállítása
+### <a name="opos-device-setup-and-configuration"></a><span data-ttu-id="d7a5d-328">OPOS-eszköz telepítése és beállítása</span><span class="sxs-lookup"><span data-stu-id="d7a5d-328">OPOS device setup and configuration</span></span>
 
-További információért a OPOS-összetevőkről lásd a dokumentum „Támogatott interfészek” részét. Az OPOS-illesztőprogramokat általában az eszköz gyártója biztosítja. Az OPOS-eszközillesztő a telepítésekor egy kulcsot ad a Windows beállításjegyzékéhez a következő helyek egyikén:
+<span data-ttu-id="d7a5d-329">További információért a OPOS-összetevőkről lásd a dokumentum „Támogatott interfészek” részét.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-329">For more information about OPOS components, see the "Supported interfaces" section of this document.</span></span> <span data-ttu-id="d7a5d-330">Az OPOS-illesztőprogramokat általában az eszköz gyártója biztosítja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-330">Typically, OPOS drivers are provided by the device manufacturer.</span></span> <span data-ttu-id="d7a5d-331">Az OPOS-eszközillesztő a telepítésekor egy kulcsot ad a Windows beállításjegyzékéhez a következő helyek egyikén:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-331">When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:</span></span>
 
--   **32 bites rendszer:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS
--   **64 bites rendszer:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS
+-   <span data-ttu-id="d7a5d-332">**32 bites rendszer:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-332">**32-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS</span></span>
+-   <span data-ttu-id="d7a5d-333">**64 bites rendszer:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-333">**64-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS</span></span>
 
-A ServiceOPOS beállításjegyzék-helyen belül a konfigurált eszközök az OPOS-eszközosztály szerint vannak rendezve. A rendszer több eszköz-illesztőprogramot ment.
+<span data-ttu-id="d7a5d-334">A ServiceOPOS beállításjegyzék-helyen belül a konfigurált eszközök az OPOS-eszközosztály szerint vannak rendezve.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-334">Within the ServiceOPOS registry location, configured devices are organized according to the OPOS device class.</span></span> <span data-ttu-id="d7a5d-335">A rendszer több eszköz-illesztőprogramot ment.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-335">Multiple device drivers are saved.</span></span>
 
-## <a name="supported-scenarios-by-hardware-station-type"></a>Támogatott forgatókönyvek hardverállomás-típus szerint
-### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a>Ügyfelek támogatása – IPC-hardverállomás kontra IIS-hardverállomás
+## <a name="supported-scenarios-by-hardware-station-type"></a><span data-ttu-id="d7a5d-336">Támogatott forgatókönyvek hardverállomás-típus szerint</span><span class="sxs-lookup"><span data-stu-id="d7a5d-336">Supported scenarios by hardware station type</span></span>
+### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a><span data-ttu-id="d7a5d-337">Ügyfelek támogatása – IPC-hardverállomás kontra IIS-hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-337">Client support – IPC hardware station vs. IIS hardware station</span></span>
 
-A következő táblázat a támogatott topológiákat és telepítési forgatókönyveket mutatja.
+<span data-ttu-id="d7a5d-338">A következő táblázat a támogatott topológiákat és telepítési forgatókönyveket mutatja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-338">The following table shows the topologies and deployment scenarios that are supported.</span></span>
 
-| Ügyfél      | IPC-hardverállomás | IIS-hardverállomás |
+| <span data-ttu-id="d7a5d-339">Ügyfél</span><span class="sxs-lookup"><span data-stu-id="d7a5d-339">Client</span></span>      | <span data-ttu-id="d7a5d-340">IPC-hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-340">IPC hardware station</span></span> | <span data-ttu-id="d7a5d-341">IIS-hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-341">IIS hardware station</span></span> |
 |-------------|----------------------|----------------------|
-| Windows alkalmazás | Igen                  | Igen                  |
-| Felhő POS   | Nincs                   | Igen                  |
-| Android     | Nincs                   | Igen                  |
-| iOS         | Nincs                   | Igen                  |
+| <span data-ttu-id="d7a5d-342">Windows alkalmazás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-342">Windows app</span></span> | <span data-ttu-id="d7a5d-343">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-343">Yes</span></span>                  | <span data-ttu-id="d7a5d-344">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-344">Yes</span></span>                  |
+| <span data-ttu-id="d7a5d-345">Felhő POS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-345">Cloud POS</span></span>   | <span data-ttu-id="d7a5d-346">Nincs</span><span class="sxs-lookup"><span data-stu-id="d7a5d-346">No</span></span>                   | <span data-ttu-id="d7a5d-347">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-347">Yes</span></span>                  |
+| <span data-ttu-id="d7a5d-348">Android</span><span class="sxs-lookup"><span data-stu-id="d7a5d-348">Android</span></span>     | <span data-ttu-id="d7a5d-349">Nincs</span><span class="sxs-lookup"><span data-stu-id="d7a5d-349">No</span></span>                   | <span data-ttu-id="d7a5d-350">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-350">Yes</span></span>                  |
+| <span data-ttu-id="d7a5d-351">iOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-351">iOS</span></span>         | <span data-ttu-id="d7a5d-352">Nincs</span><span class="sxs-lookup"><span data-stu-id="d7a5d-352">No</span></span>                   | <span data-ttu-id="d7a5d-353">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-353">Yes</span></span>                  |
 
-### <a name="network-peripherals"></a>Hálózati perifériák
+### <a name="network-peripherals"></a><span data-ttu-id="d7a5d-354">Hálózati perifériák</span><span class="sxs-lookup"><span data-stu-id="d7a5d-354">Network peripherals</span></span>
 
-A Modern POS for Windows alkalmazásba beépített hardverállomás segítségével közvetlenül támogathatók a hálózati perifériák. Az összes többi ügyfél esetében telepíteni kell az IIS-hardverállomást.
+<span data-ttu-id="d7a5d-355">A Modern POS for Windows alkalmazásba beépített hardverállomás segítségével közvetlenül támogathatók a hálózati perifériák.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-355">Network peripherals can be supported directly through the hardware station that is built into the Modern POS for Windows application.</span></span> <span data-ttu-id="d7a5d-356">Az összes többi ügyfél esetében telepíteni kell az IIS-hardverállomást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-356">For all other clients, you must deploy an IIS hardware station.</span></span>
 
-| Ügyfél      | IPC-hardverállomás | IIS-hardverállomás |
+| <span data-ttu-id="d7a5d-357">Ügyfél</span><span class="sxs-lookup"><span data-stu-id="d7a5d-357">Client</span></span>      | <span data-ttu-id="d7a5d-358">IPC-hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-358">IPC hardware station</span></span> | <span data-ttu-id="d7a5d-359">IIS-hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-359">IIS hardware station</span></span> |
 |-------------|----------------------|----------------------|
-| Windows alkalmazás | Igen                  | Igen                  |
-| Felhő POS   | Nincs                   | Igen                  |
-| Android     | Nincs                   | Igen                  |
-| iOS         | Nincs                   | Igen                  |
+| <span data-ttu-id="d7a5d-360">Windows alkalmazás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-360">Windows app</span></span> | <span data-ttu-id="d7a5d-361">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-361">Yes</span></span>                  | <span data-ttu-id="d7a5d-362">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-362">Yes</span></span>                  |
+| <span data-ttu-id="d7a5d-363">Felhő POS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-363">Cloud POS</span></span>   | <span data-ttu-id="d7a5d-364">Nincs</span><span class="sxs-lookup"><span data-stu-id="d7a5d-364">No</span></span>                   | <span data-ttu-id="d7a5d-365">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-365">Yes</span></span>                  |
+| <span data-ttu-id="d7a5d-366">Android</span><span class="sxs-lookup"><span data-stu-id="d7a5d-366">Android</span></span>     | <span data-ttu-id="d7a5d-367">Nincs</span><span class="sxs-lookup"><span data-stu-id="d7a5d-367">No</span></span>                   | <span data-ttu-id="d7a5d-368">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-368">Yes</span></span>                  |
+| <span data-ttu-id="d7a5d-369">iOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-369">iOS</span></span>         | <span data-ttu-id="d7a5d-370">Nincs</span><span class="sxs-lookup"><span data-stu-id="d7a5d-370">No</span></span>                   | <span data-ttu-id="d7a5d-371">Igen</span><span class="sxs-lookup"><span data-stu-id="d7a5d-371">Yes</span></span>                  |
 
-## <a name="supported-device-types-by-hardware-station-type"></a>Támogatott eszköztípusok hardverállomás-típus szerint
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS for Windows IPC (beépített) hardverállomással
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Támogatott eszközosztály</th>
-<th>Támogatott interfészek</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nyomtató</td>
-<td><ul>
-<li>OPOS</li>
-<li>Windows-illesztőprogram</li>
-<li>Eszköz</li>
-<li>Hálózat</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>2. nyomtató</td>
-<td><ul>
-<li>OPOS</li>
-<li>Windows-illesztőprogram</li>
-<li>Eszköz</li>
-<li>Hálózat</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Sor megjelenítése</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Két kijelző</td>
-<td>Windows-illesztőprogram</td>
-</tr>
-<tr class="odd">
-<td>MSR</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (Nem szükséges beállítás.)</li>
-<li>Billentyűzet ék (Nem kell beállítani.)</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Kiállító</td>
-<td><ul>
-<li>OPOS</li>
-<li>Hálózati <strong>Megjegyzés:</strong> Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>2. fiók</td>
-<td><ul>
-<li>OPOS</li>
-<li>Hálózati <strong>Megjegyzés:</strong> Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Leolvasó</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (Nem szükséges beállítás.)</li>
-<li>Billentyűzet ék (Nem kell beállítani.)</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>2. leolvasó</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (Nem szükséges beállítás.)</li>
-<li>Billentyűzet ék (Nem kell beállítani.)</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Lépték</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>PIN-billentyűzet</td>
-<td>OPOS (A támogatás nyújtása a fizetési csatlakoztató testreszabásával történik.)</td>
-</tr>
-<tr class="even">
-<td>Aláírás rögzítése</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>Fizető terminál</td>
-<td><ul>
-<li>Egyéni eszközök támogatása</li>
-<li>Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Minden Modern POS-ügyfél, amely dedikált IIS-hardverállomással rendelkezik
-
-**Megjegyzés:** Ha az IIS-hardverállomás „dedikált”, egy-az-egyhez kapcsolat áll fenn pénztárügyfél és a hardverállomás között.
+## <a name="supported-device-types-by-hardware-station-type"></a><span data-ttu-id="d7a5d-372">Támogatott eszköztípusok hardverállomás-típus szerint</span><span class="sxs-lookup"><span data-stu-id="d7a5d-372">Supported device types by hardware station type</span></span>
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a><span data-ttu-id="d7a5d-373">Modern POS for Windows IPC (beépített) hardverállomással</span><span class="sxs-lookup"><span data-stu-id="d7a5d-373">Modern POS for Windows with an IPC (built-in) hardware station</span></span>
 
 <table>
 <colgroup>
@@ -341,82 +239,100 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 </colgroup>
 <thead>
 <tr class="header">
-<th>Támogatott eszközosztály</th>
-<th>Támogatott interfészek</th>
+<th><span data-ttu-id="d7a5d-374">Támogatott eszközosztály</span><span class="sxs-lookup"><span data-stu-id="d7a5d-374">Supported device class</span></span></th>
+<th><span data-ttu-id="d7a5d-375">Támogatott interfészek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-375">Supported interfaces</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Nyomtató</td>
+<td><span data-ttu-id="d7a5d-376">Nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-376">Printer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows-illesztőprogram <strong>Megjegyzés:</strong> A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</li>
-<li>Hálózat</li>
+<li><span data-ttu-id="d7a5d-377">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-377">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-378">Windows-illesztőprogram</span><span class="sxs-lookup"><span data-stu-id="d7a5d-378">Windows driver</span></span></li>
+<li><span data-ttu-id="d7a5d-379">Eszköz</span><span class="sxs-lookup"><span data-stu-id="d7a5d-379">Device</span></span></li>
+<li><span data-ttu-id="d7a5d-380">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-380">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>2. nyomtató</td>
+<td><span data-ttu-id="d7a5d-381">2. nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-381">Printer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows-illesztőprogram</li>
-<li>Hálózat</li>
+<li><span data-ttu-id="d7a5d-382">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-382">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-383">Windows-illesztőprogram</span><span class="sxs-lookup"><span data-stu-id="d7a5d-383">Windows driver</span></span></li>
+<li><span data-ttu-id="d7a5d-384">Eszköz</span><span class="sxs-lookup"><span data-stu-id="d7a5d-384">Device</span></span></li>
+<li><span data-ttu-id="d7a5d-385">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-385">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Sor megjelenítése</td>
-<td>OPOS</td>
+<td><span data-ttu-id="d7a5d-386">Sor megjelenítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-386">Line display</span></span></td>
+<td><span data-ttu-id="d7a5d-387">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-387">OPOS</span></span></td>
 </tr>
 <tr class="even">
-<td>MSR</td>
-<td>OPOS</td>
+<td><span data-ttu-id="d7a5d-388">Két kijelző</span><span class="sxs-lookup"><span data-stu-id="d7a5d-388">Dual display</span></span></td>
+<td><span data-ttu-id="d7a5d-389">Windows-illesztőprogram</span><span class="sxs-lookup"><span data-stu-id="d7a5d-389">Windows driver</span></span></td>
 </tr>
 <tr class="odd">
-<td>Kiállító</td>
+<td><span data-ttu-id="d7a5d-390">MSR</span><span class="sxs-lookup"><span data-stu-id="d7a5d-390">MSR</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Hálózat <strong>Megjegyzés:</strong> Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</li>
+<li><span data-ttu-id="d7a5d-391">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-391">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-392">UWP (Nem szükséges beállítás.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-392">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="d7a5d-393">Billentyűzet ék (Nem kell beállítani.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-393">Keyboard wedge (No setup is required.)</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>2. fiók</td>
+<td><span data-ttu-id="d7a5d-394">Kiállító</span><span class="sxs-lookup"><span data-stu-id="d7a5d-394">Drawer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Hálózat</li>
+<li><span data-ttu-id="d7a5d-395">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-395">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-396">Hálózati <strong>Megjegyzés:</strong> Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-396">Network <strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Leolvasó</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>2. leolvasó</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>Lépték</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>PIN-billentyűzet</td>
-<td>OPOS (A támogatás nyújtása a fizetési csatlakoztató testreszabásával történik.)</td>
-</tr>
-<tr class="odd">
-<td>SIG rögzítés</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Fizető terminál</td>
+<td><span data-ttu-id="d7a5d-397">2. fiók</span><span class="sxs-lookup"><span data-stu-id="d7a5d-397">Drawer 2</span></span></td>
 <td><ul>
-<li>Egyéni eszközök támogatása</li>
-<li>Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</li>
+<li><span data-ttu-id="d7a5d-398">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-398">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-399">Hálózati <strong>Megjegyzés:</strong> Csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-399">Network <strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-400">Leolvasó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-400">Scanner</span></span></td>
+<td><ul>
+<li><span data-ttu-id="d7a5d-401">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-401">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-402">UWP (Nem szükséges beállítás.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-402">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="d7a5d-403">Billentyűzet ék (Nem kell beállítani.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-403">Keyboard wedge (No setup is required.)</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-404">2. leolvasó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-404">Scanner 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="d7a5d-405">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-405">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-406">UWP (Nem szükséges beállítás.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-406">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="d7a5d-407">Billentyűzet ék (Nem kell beállítani.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-407">Keyboard wedge (No setup is required.)</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-408">Lépték</span><span class="sxs-lookup"><span data-stu-id="d7a5d-408">Scale</span></span></td>
+<td><span data-ttu-id="d7a5d-409">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-409">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-410">PIN-billentyűzet</span><span class="sxs-lookup"><span data-stu-id="d7a5d-410">PIN pad</span></span></td>
+<td><span data-ttu-id="d7a5d-411">OPOS (A támogatás nyújtása a fizetési csatlakoztató testreszabásával történik.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-411">OPOS (Support is provided through customization of the payment connector.)</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-412">Aláírás rögzítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-412">Signature capture</span></span></td>
+<td><span data-ttu-id="d7a5d-413">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-413">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-414">Fizető terminál</span><span class="sxs-lookup"><span data-stu-id="d7a5d-414">Payment terminal</span></span></td>
+<td><ul>
+<li><span data-ttu-id="d7a5d-415">Egyéni eszközök támogatása</span><span class="sxs-lookup"><span data-stu-id="d7a5d-415">Custom device support</span></span></li>
+<li><span data-ttu-id="d7a5d-416">Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-416">Network (For more information, see the payment connector documentation.)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Minden Modern POS-ügyfél, amely megosztott IIS-hardverállomással rendelkezik
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a><span data-ttu-id="d7a5d-417">Minden Modern POS-ügyfél, amely dedikált IIS-hardverállomással rendelkezik</span><span class="sxs-lookup"><span data-stu-id="d7a5d-417">All Modern POS clients that have a dedicated IIS hardware station</span></span>
 
-**Megjegyzés:** Ha az IIS-hardverállomás „megosztott”, több eszköz egyszerre használhatja a hardverállomást. Ebben az esetben csak az alábbi táblázatban felsorolt eszközöket kell használnia. Ha megpróbál megosztani a listában nem szereplő eszközöket, például vonalkódolvasókat és MSR-eket, hiba fordul elő, ha több eszköz próbálja magának igényelni ugyanazt a perifériát. A jövőben az ilyen konfigurációkat kifejezetten tiltani fogjuk.
+<span data-ttu-id="d7a5d-418">**Megjegyzés:** Ha az IIS-hardverállomás „dedikált”, egy-az-egyhez kapcsolat áll fenn pénztárügyfél és a hardverállomás között.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-418">**Note:** When the IIS hardware station is “dedicated,” there is a one-to-one relationship between the POS client and the hardware station.</span></span>
 
 <table>
 <colgroup>
@@ -425,386 +341,470 @@ A Modern POS for Windows alkalmazásba beépített hardverállomás segítségé
 </colgroup>
 <thead>
 <tr class="header">
-<th>Támogatott eszközosztály</th>
-<th>Támogatott interfészek</th>
+<th><span data-ttu-id="d7a5d-419">Támogatott eszközosztály</span><span class="sxs-lookup"><span data-stu-id="d7a5d-419">Supported device class</span></span></th>
+<th><span data-ttu-id="d7a5d-420">Támogatott interfészek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-420">Supported interfaces</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Nyomtató</td>
+<td><span data-ttu-id="d7a5d-421">Nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-421">Printer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows-illesztőprogram <strong>Megjegyzés:</strong> A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</li>
-<li>Hálózat</li>
+<li><span data-ttu-id="d7a5d-422">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-422">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-423">Windows-illesztőprogram <strong>Megjegyzés:</strong> A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-423">Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</span></span></li>
+<li><span data-ttu-id="d7a5d-424">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-424">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>2. nyomtató</td>
+<td><span data-ttu-id="d7a5d-425">2. nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-425">Printer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows-illesztőprogram</li>
-<li>Hálózat</li>
+<li><span data-ttu-id="d7a5d-426">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-426">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-427">Windows-illesztőprogram</span><span class="sxs-lookup"><span data-stu-id="d7a5d-427">Windows driver</span></span></li>
+<li><span data-ttu-id="d7a5d-428">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-428">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Kiállító</td>
+<td><span data-ttu-id="d7a5d-429">Sor megjelenítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-429">Line display</span></span></td>
+<td><span data-ttu-id="d7a5d-430">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-430">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-431">MSR</span><span class="sxs-lookup"><span data-stu-id="d7a5d-431">MSR</span></span></td>
+<td><span data-ttu-id="d7a5d-432">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-432">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-433">Kiállító</span><span class="sxs-lookup"><span data-stu-id="d7a5d-433">Drawer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Hálózat <strong>Megjegyzés:</strong> Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</li>
+<li><span data-ttu-id="d7a5d-434">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-434">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-435">Hálózat <strong>Megjegyzés:</strong> Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-435">Network <strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>2. fiók</td>
+<td><span data-ttu-id="d7a5d-436">2. fiók</span><span class="sxs-lookup"><span data-stu-id="d7a5d-436">Drawer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Hálózat</li>
+<li><span data-ttu-id="d7a5d-437">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-437">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-438">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-438">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Fizető terminál</td>
+<td><span data-ttu-id="d7a5d-439">Leolvasó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-439">Scanner</span></span></td>
+<td><span data-ttu-id="d7a5d-440">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-440">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-441">2. leolvasó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-441">Scanner 2</span></span></td>
+<td><span data-ttu-id="d7a5d-442">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-442">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-443">Lépték</span><span class="sxs-lookup"><span data-stu-id="d7a5d-443">Scale</span></span></td>
+<td><span data-ttu-id="d7a5d-444">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-444">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-445">PIN-billentyűzet</span><span class="sxs-lookup"><span data-stu-id="d7a5d-445">PIN pad</span></span></td>
+<td><span data-ttu-id="d7a5d-446">OPOS (A támogatás nyújtása a fizetési csatlakoztató testreszabásával történik.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-446">OPOS (Support is provided through customization of the payment connector.)</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-447">SIG</span><span class="sxs-lookup"><span data-stu-id="d7a5d-447">Sig.</span></span> <span data-ttu-id="d7a5d-448">rögzítés</span><span class="sxs-lookup"><span data-stu-id="d7a5d-448">capture</span></span></td>
+<td><span data-ttu-id="d7a5d-449">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-449">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-450">Fizető terminál</span><span class="sxs-lookup"><span data-stu-id="d7a5d-450">Payment terminal</span></span></td>
 <td><ul>
-<li>Egyéni eszközök támogatása</li>
-<li>Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</li>
+<li><span data-ttu-id="d7a5d-451">Egyéni eszközök támogatása</span><span class="sxs-lookup"><span data-stu-id="d7a5d-451">Custom device support</span></span></li>
+<li><span data-ttu-id="d7a5d-452">Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-452">Network (For more information, see the payment connector documentation.)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="configuration-for-supported-scenarios"></a>Konfiguráció a támogatott forgatókönyvekhez
-A hardverprofilok létrehozásával kapcsolatos további tudnivalókért lásd: [Csatorna-ügyfélprogramok meghatározása és fenntartása, köztük a nyilvántartásokkal és hardverállomásokkal](define-maintain-channel-clients-registers-hw-stations.md). **Megjegyzés:** A Microsoft Dynamics 365 for Retail 1611-es verziója esetében a hardverállomás-profil már nem használatos. A hardverállomás-profilban korábban beállított attribútumok most már a hardverállomás részét képezik.
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a><span data-ttu-id="d7a5d-453">Minden Modern POS-ügyfél, amely megosztott IIS-hardverállomással rendelkezik</span><span class="sxs-lookup"><span data-stu-id="d7a5d-453">All Modern POS clients that have a shared IIS hardware station</span></span>
 
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS for Windows IPC (beépített) hardverállomással
+<span data-ttu-id="d7a5d-454">**Megjegyzés:** Ha az IIS-hardverállomás „megosztott”, több eszköz egyszerre használhatja a hardverállomást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-454">**Note:** When the IIS hardware station is “shared,” multiple devices can use the hardware station at the same time.</span></span> <span data-ttu-id="d7a5d-455">Ebben az esetben csak az alábbi táblázatban felsorolt eszközöket kell használnia.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-455">For this scenario, you should use only the devices that are listed in the following table.</span></span> <span data-ttu-id="d7a5d-456">Ha megpróbál megosztani a listában nem szereplő eszközöket, például vonalkódolvasókat és MSR-eket, hiba fordul elő, ha több eszköz próbálja magának igényelni ugyanazt a perifériát.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-456">If you try to share devices that aren't listed here, such as bar code scanners and MSRs, errors will occur when multiple devices try to claim the same peripheral.</span></span> <span data-ttu-id="d7a5d-457">A jövőben az ilyen konfigurációkat kifejezetten tiltani fogjuk.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-457">In the future, such a configuration will be explicitly prevented.</span></span>
 
-Ez a konfigurációban a leggyakoribb konfiguráció a hagyományos, rögzített pénztárgépek esetében. Ennek a forgatókönynek az esetében a hardverprofil-adatok közvetlenül a pénztárgéphez vannak rendelve. Az EFT-terminálszám szintén a pénztárgépen kell beállítani. A konfiguráció beállításához kövesse az alábbi lépéseket:
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="d7a5d-458">Támogatott eszközosztály</span><span class="sxs-lookup"><span data-stu-id="d7a5d-458">Supported device class</span></span></th>
+<th><span data-ttu-id="d7a5d-459">Támogatott interfészek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-459">Supported interfaces</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-460">Nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-460">Printer</span></span></td>
+<td><ul>
+<li><span data-ttu-id="d7a5d-461">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-461">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-462">Windows-illesztőprogram <strong>Megjegyzés:</strong> A hálózati Windows-nyomtatók esetében a hardverállomás felhasználójának engedéllyel kell rendelkeznie a nyomtató eléréséhez.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-462">Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</span></span></li>
+<li><span data-ttu-id="d7a5d-463">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-463">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-464">2. nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-464">Printer 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="d7a5d-465">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-465">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-466">Windows-illesztőprogram</span><span class="sxs-lookup"><span data-stu-id="d7a5d-466">Windows driver</span></span></li>
+<li><span data-ttu-id="d7a5d-467">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-467">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-468">Kiállító</span><span class="sxs-lookup"><span data-stu-id="d7a5d-468">Drawer</span></span></td>
+<td><ul>
+<li><span data-ttu-id="d7a5d-469">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-469">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-470">Hálózat <strong>Megjegyzés:</strong> Hardverprofilonként csak egy fiókot lehet beállítani, ha a <strong>Megosztott műszak használata</strong> be van állítva a fiókon.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-470">Network <strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="d7a5d-471">2. fiók</span><span class="sxs-lookup"><span data-stu-id="d7a5d-471">Drawer 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="d7a5d-472">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-472">OPOS</span></span></li>
+<li><span data-ttu-id="d7a5d-473">Hálózat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-473">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="d7a5d-474">Fizető terminál</span><span class="sxs-lookup"><span data-stu-id="d7a5d-474">Payment terminal</span></span></td>
+<td><ul>
+<li><span data-ttu-id="d7a5d-475">Egyéni eszközök támogatása</span><span class="sxs-lookup"><span data-stu-id="d7a5d-475">Custom device support</span></span></li>
+<li><span data-ttu-id="d7a5d-476">Hálózat (További tudnivalókért lásd a fizetési csatlakoztató dokumentációját.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-476">Network (For more information, see the payment connector documentation.)</span></span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-1.  Hozzon létre egy hardverprofilt, amelyben minden szükséges periféria konfigurálva van.
-2.  Képezze le a hardverprofilt a pénztárgépre.
-3.  Hozzon létre egy **Dedikált** típusú hardverállomást a kiskereskedelmi üzlethez, ahol a pénztárgépet használni fogja. A leírás opcionális. **Megjegyzés:** A hardverállomás többi tulajdonságát nem kell beállítani. Minden más szükséges információ, például a hardverprofil, a pénztárgépből származik.
-4.  Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
-5.  Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
-6.  Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
-7.  Telepítse és aktiválja a Modern POS for Windows alkalmazást.
-8.  Indítsa el a Modern POS for Window alkalmazást, és kezdje el használni a kapcsolódó perifériaeszközöket.
+## <a name="configuration-for-supported-scenarios"></a><span data-ttu-id="d7a5d-477">Konfiguráció a támogatott forgatókönyvekhez</span><span class="sxs-lookup"><span data-stu-id="d7a5d-477">Configuration for supported scenarios</span></span>
+<span data-ttu-id="d7a5d-478">A hardverprofilok létrehozásával kapcsolatos további tudnivalókért lásd: [Csatorna-ügyfélprogramok meghatározása és fenntartása, köztük a nyilvántartásokkal és hardverállomásokkal](define-maintain-channel-clients-registers-hw-stations.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-478">For more information about how to create hardware profiles, see [Define and maintain channel clients, including registers and hardware stations](define-maintain-channel-clients-registers-hw-stations.md).</span></span> <span data-ttu-id="d7a5d-479">**Megjegyzés:** A Microsoft Dynamics 365 for Retail 1611-es verziója esetében a hardverállomás-profil már nem használatos.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-479">**Note:** For Microsoft Dynamics 365 for Retail version 1611, the hardware station profile is no longer used.</span></span> <span data-ttu-id="d7a5d-480">A hardverállomás-profilban korábban beállított attribútumok most már a hardverállomás részét képezik.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-480">Attributes that you previously set up in the hardware station profile are now part of the hardware station itself.</span></span>
 
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Minden Modern POS-ügyfél, amely dedikált IIS-hardverállomással rendelkezik
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a><span data-ttu-id="d7a5d-481">Modern POS for Windows IPC (beépített) hardverállomással</span><span class="sxs-lookup"><span data-stu-id="d7a5d-481">Modern POS for Windows with an IPC (built-in) hardware station</span></span>
 
-Ez a konfiguráció minden Modern POS ügyféllel használható, amelynek olyan hardverállomása van, amelyet kizárólag egy pénztárgép használ. A konfiguráció beállításához kövesse az alábbi lépéseket:
+<span data-ttu-id="d7a5d-482">Ez a konfigurációban a leggyakoribb konfiguráció a hagyományos, rögzített pénztárgépek esetében.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-482">This configuration is the most typical configuration for traditional, fixed POS registers.</span></span> <span data-ttu-id="d7a5d-483">Ennek a forgatókönynek az esetében a hardverprofil-adatok közvetlenül a pénztárgéphez vannak rendelve.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-483">For this scenario, the hardware profile information is mapped directly to the register itself.</span></span> <span data-ttu-id="d7a5d-484">Az EFT-terminálszám szintén a pénztárgépen kell beállítani.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-484">The EFT terminal number should also be set on the register itself.</span></span> <span data-ttu-id="d7a5d-485">A konfiguráció beállításához kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-485">To set up this configuration, follow these steps.</span></span>
 
-1.  Hozzon létre egy hardverprofilt, amelyben minden szükséges periféria konfigurálva van.
-2.  Hozzon létre egy **Dedikált** típusú hardverállomást a kiskereskedelmi üzlethez, ahol a pénztárgépet használni fogja.
-3.  A dedikált hardverállomáson állítsa be a következő tulajdonságokat:
-    -   **Állomásnév** – Annak a gazdaszámítógépnek a neve, ahol a hardverállomás futni fog. **Megjegyzés:** A Cloud POS felhő képes a **localhost** feloldására, hogy meghatározza a helyi számítógépet, amelyen a Cloud POS fut. Azonban a tanúsítványnak, amely ahhoz szükséges, hogy a hardverállomás és a Cloud POS párosítható legyen, szintén a „Localhost” számítógépnevet kell tartalmaznia. A problémák elkerülése érdekében azt javasoljuk, hogy szükség szerint listázza az üzlet minden dedikált hardverállomásának egy-egy példányát. Minden hardverállomás esetében az állomásnévnek annak a számítógépnek a nevének kell lennie, ahol a hardverállomás telepítve lesz.
-    -   **Port** – A hardverállomás portja, amellyel a Modern POS-ügyféllel kommunikál.
-    -   **Hardverprofil** – Ha a hardverprofil nincs megadva a hardverállomáson, a rendszer a pénztárgéphez rendelt hardverprofilt használja.
-    -   **EFT pénztárszám** – Az EFT-terminálazonosító, amelyet az EFT-engedélyek küldésekor kell használni. Ezt az azonosítót a hitelkártya-feldolgozó biztosítja.
-    -   **Csomag neve** – A hardverállomás telepítésekor használandó hardverállomás-csomag.
+1.  <span data-ttu-id="d7a5d-486">Hozzon létre egy hardverprofilt, amelyben minden szükséges periféria konfigurálva van.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-486">Create a hardware profile where all the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="d7a5d-487">Képezze le a hardverprofilt a pénztárgépre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-487">Map the hardware profile to the POS register.</span></span>
+3.  <span data-ttu-id="d7a5d-488">Hozzon létre egy **Dedikált** típusú hardverállomást a kiskereskedelmi üzlethez, ahol a pénztárgépet használni fogja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-488">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span> <span data-ttu-id="d7a5d-489">A leírás opcionális.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-489">A description is optional.</span></span> <span data-ttu-id="d7a5d-490">**Megjegyzés:** A hardverállomás többi tulajdonságát nem kell beállítani.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-490">**Note:** You don't have to set any other properties on the hardware station.</span></span> <span data-ttu-id="d7a5d-491">Minden más szükséges információ, például a hardverprofil, a pénztárgépből származik.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-491">All other required information, such as the hardware profile, will come from the register itself.</span></span>
+4.  <span data-ttu-id="d7a5d-492">Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-492">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+5.  <span data-ttu-id="d7a5d-493">Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-493">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="d7a5d-494">Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-494">Click **Run now** to sync changes to the POS.</span></span>
+6.  <span data-ttu-id="d7a5d-495">Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-495">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="d7a5d-496">Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-496">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="d7a5d-497">Telepítse és aktiválja a Modern POS for Windows alkalmazást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-497">Install and activate Modern POS for Windows.</span></span>
+8.  <span data-ttu-id="d7a5d-498">Indítsa el a Modern POS for Window alkalmazást, és kezdje el használni a kapcsolódó perifériaeszközöket.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-498">Start Modern POS for Windows, and begin to use the connected peripheral devices.</span></span>
 
-4.  Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
-5.  Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
-6.  Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
-7.  Telepítse a hardverállomást. A hardverállomás telepítésével kapcsolatos további tudnivalókért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).
-8.  Telepítse és aktiválja a Modern POS alkalmazást. A Modern POS telepítésével kapcsolatos további tudnivalókért lásd: [Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md).
-9.  Jelentkezzen be a Modern POS alkalmazásba, és válassza a **Nem pénztárgépfiókkal kapcsolatos művelet végrehajtása** lehetőséget+.
-10. Indítsa el a **Hardverállomások kezelése** művelet.
-11. Kattintson a **Kezelés** elemre.
-12. A hardverállomás kezelése lapon kapcsolja be a hardverállomást.
-13. Jelölje ki a használni kívánt hardverállomást, majd kattintson a **Párosítás** elemre.
-14. Miután a hardverállomás párosítása megtörtént, kattintson a **Bezárás** elemre.
-15. A hardverállomás kiválasztása lapon kattintson a legutóbb kijelölt hardverállomásra az aktiválásához.
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a><span data-ttu-id="d7a5d-499">Minden Modern POS-ügyfél, amely dedikált IIS-hardverállomással rendelkezik</span><span class="sxs-lookup"><span data-stu-id="d7a5d-499">All Modern POS clients that have a dedicated IIS hardware station</span></span>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Minden Modern POS-ügyfél, amely megosztott IIS-hardverállomással rendelkezik
+<span data-ttu-id="d7a5d-500">Ez a konfiguráció minden Modern POS ügyféllel használható, amelynek olyan hardverállomása van, amelyet kizárólag egy pénztárgép használ.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-500">This configuration can be used for all Modern POS clients that have a hardware station that is used exclusively by one POS register.</span></span> <span data-ttu-id="d7a5d-501">A konfiguráció beállításához kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-501">To set up this configuration, follow these steps.</span></span>
 
-Ez a konfiguráció minden olyan Modern POS-ügyfél esetében használható, amely hardverállomásokat oszt meg más eszközökkel. A konfiguráció beállításához kövesse az alábbi lépéseket:
+1.  <span data-ttu-id="d7a5d-502">Hozzon létre egy hardverprofilt, amelyben minden szükséges periféria konfigurálva van.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-502">Create a hardware profile where all the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="d7a5d-503">Hozzon létre egy **Dedikált** típusú hardverállomást a kiskereskedelmi üzlethez, ahol a pénztárgépet használni fogja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-503">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span>
+3.  <span data-ttu-id="d7a5d-504">A dedikált hardverállomáson állítsa be a következő tulajdonságokat:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-504">On the dedicated hardware station, set the following properties:</span></span>
+    -   <span data-ttu-id="d7a5d-505">**Állomásnév** – Annak a gazdaszámítógépnek a neve, ahol a hardverállomás futni fog.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-505">**Host name** – The name of the host computer where the hardware station will run.</span></span> <span data-ttu-id="d7a5d-506">**Megjegyzés:** A Cloud POS felhő képes a **localhost** feloldására, hogy meghatározza a helyi számítógépet, amelyen a Cloud POS fut.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-506">**Note:** Cloud POS can resolve **localhost** to determine the local computer where Cloud POS is running.</span></span> <span data-ttu-id="d7a5d-507">Azonban a tanúsítványnak, amely ahhoz szükséges, hogy a hardverállomás és a Cloud POS párosítható legyen, szintén a „Localhost” számítógépnevet kell tartalmaznia.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-507">However, the certificate that is required in order to pair Cloud POS with the hardware station must also have "Localhost" as the computer name.</span></span> <span data-ttu-id="d7a5d-508">A problémák elkerülése érdekében azt javasoljuk, hogy szükség szerint listázza az üzlet minden dedikált hardverállomásának egy-egy példányát.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-508">To avoid issues, we recommend that you list an instance of each dedicated hardware station for the store, as required.</span></span> <span data-ttu-id="d7a5d-509">Minden hardverállomás esetében az állomásnévnek annak a számítógépnek a nevének kell lennie, ahol a hardverállomás telepítve lesz.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-509">For each hardware station, the host name should be the specific computer name where the hardware station will be deployed.</span></span>
+    -   <span data-ttu-id="d7a5d-510">**Port** – A hardverállomás portja, amellyel a Modern POS-ügyféllel kommunikál.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-510">**Port** – The port to use for the hardware station to communicate with the Modern POS client.</span></span>
+    -   <span data-ttu-id="d7a5d-511">**Hardverprofil** – Ha a hardverprofil nincs megadva a hardverállomáson, a rendszer a pénztárgéphez rendelt hardverprofilt használja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-511">**Hardware profile** – If the hardware profile isn't provided on the hardware station itself, the hardware profile that is assigned to the register will be used.</span></span>
+    -   <span data-ttu-id="d7a5d-512">**EFT pénztárszám** – Az EFT-terminálazonosító, amelyet az EFT-engedélyek küldésekor kell használni.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-512">**EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent.</span></span> <span data-ttu-id="d7a5d-513">Ezt az azonosítót a hitelkártya-feldolgozó biztosítja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-513">This ID is provided by the credit card processor.</span></span>
+    -   <span data-ttu-id="d7a5d-514">**Csomag neve** – A hardverállomás telepítésekor használandó hardverállomás-csomag.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-514">**Package name** – The hardware station package to use when the hardware station is deployed.</span></span>
 
-1.  Hozzon létre egy hardverprofilt, amelyben a szükséges perifériák konfigurálva vannak.
-2.  Hozzon létre egy **Megosztott** típusú hardverállomást a kiskereskedelmi üzlethez, ahol a pénztárgépet használni fogja.
-3.  A megosztott hardverállomáson állítsa be a következő tulajdonságokat:
-    -   **Állomásnév** – Annak a gazdaszámítógépnek a neve, ahol a hardverállomás futni fog.
-    -   **Leírás** – Szöveg, amely segít azonosítani a hardverállomást, például **Visszáruk** vagy **Üzlet front**.
-    -   **Port** – A hardverállomás portja, amellyel a Modern POS-ügyféllel kommunikál.
-    -   **Hardverprofil** – A megosztott hardverállomások esetében minden hardverállomásnak rendelkeznie kell egy hardverprofillal. A hardverprofilok megoszthatók a hardverállomások között, de hozzá kell rendelni őket minden egyes hardverállomáshoz. Ezen kívül megosztott műszakok használatát javasoljuk, ha ugyanazt a megosztott hardverállomást több eszköz használja. A megosztott műszak beállításához kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárprofilok** &gt; **Hardverprofilok** elemre. Minden megosztott hardverprofil esetében válassza ki a pénztárfiókot, és állítsa a **Megosztott műszakfiók** beállítást **Igen** értékre.
-    -   **EFT pénztárszám** – Az EFT-terminálazonosító, amelyet az EFT-engedélyek küldésekor kell használni. Ezt az azonosítót a hitelkártya-feldolgozó biztosítja.
-    -   **Csomag neve** – A hardverállomás telepítésekor használandó hardverállomás-csomag.
+4.  <span data-ttu-id="d7a5d-515">Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-515">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+5.  <span data-ttu-id="d7a5d-516">Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-516">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="d7a5d-517">Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-517">Click **Run now** to sync changes to the POS.</span></span>
+6.  <span data-ttu-id="d7a5d-518">Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-518">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="d7a5d-519">Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-519">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="d7a5d-520">Telepítse a hardverállomást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-520">Install the hardware station.</span></span> <span data-ttu-id="d7a5d-521">A hardverállomás telepítésével kapcsolatos további tudnivalókért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-521">For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
+8.  <span data-ttu-id="d7a5d-522">Telepítse és aktiválja a Modern POS alkalmazást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-522">Install and activate Modern POS.</span></span> <span data-ttu-id="d7a5d-523">A Modern POS telepítésével kapcsolatos további tudnivalókért lásd: [Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-523">For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
+9.  <span data-ttu-id="d7a5d-524">Jelentkezzen be a Modern POS alkalmazásba, és válassza a **Nem pénztárgépfiókkal kapcsolatos művelet végrehajtása** lehetőséget+.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-524">Sign in to Modern POS, and select **Perform non-drawer operations**.</span></span>
+10. <span data-ttu-id="d7a5d-525">Indítsa el a **Hardverállomások kezelése** művelet.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-525">Start the **Manage hardware stations** operation.</span></span>
+11. <span data-ttu-id="d7a5d-526">Kattintson a **Kezelés** elemre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-526">Click **Manage**.</span></span>
+12. <span data-ttu-id="d7a5d-527">A hardverállomás kezelése lapon kapcsolja be a hardverállomást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-527">On the hardware station management page, set the option to turn on the hardware station.</span></span>
+13. <span data-ttu-id="d7a5d-528">Jelölje ki a használni kívánt hardverállomást, majd kattintson a **Párosítás** elemre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-528">Select the hardware station to use, and then click **Pair**.</span></span>
+14. <span data-ttu-id="d7a5d-529">Miután a hardverállomás párosítása megtörtént, kattintson a **Bezárás** elemre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-529">After the hardware station is paired, click **Close**.</span></span>
+15. <span data-ttu-id="d7a5d-530">A hardverállomás kiválasztása lapon kattintson a legutóbb kijelölt hardverállomásra az aktiválásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-530">On the hardware station selection page, click the recently selected hardware station to make it active.</span></span>
 
-4.  Az üzletben szükséges minden további hardverállomás esetében ismételje meg a 2. és 3. lépést.
-5.  Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.
-6.  Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
-7.  Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához. Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.
-8.  Telepítse a hardverállomás minden, a 2. és 3. lépésben beállított gazdagépen. A hardverállomás telepítésével kapcsolatos további tudnivalókért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).
-9.  Telepítse és aktiválja a Modern POS alkalmazást. A Modern POS telepítésével kapcsolatos további tudnivalókért lásd: [Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md).
-10. Jelentkezzen be a Modern POS alkalmazásba, és válassza a **Nem pénztárgépfiókkal kapcsolatos művelet végrehajtása** lehetőséget+.
-11. Indítsa el a **Hardverállomások kezelése** művelet.
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a><span data-ttu-id="d7a5d-531">Minden Modern POS-ügyfél, amely megosztott IIS-hardverállomással rendelkezik</span><span class="sxs-lookup"><span data-stu-id="d7a5d-531">All Modern POS clients that have a shared IIS hardware station</span></span>
 
-12. Kattintson a **Kezelés** elemre.
-13. A hardverállomás kezelése lapon kapcsolja be a hardverállomást.
-14. Jelölje ki a használni kívánt hardverállomást, majd kattintson a **Párosítás** elemre.
-15. Minden, a Modern POS által használt hardverállomás esetében ismételje meg a 14. lépést.
-16. Miután minden szükséges hardverállomás párosítva van, kattintson a **Bezárás** lehetőségre.
-17. A hardverállomás kiválasztása lapon kattintson a legutóbb kijelölt hardverállomásra az aktiválásához. **Megjegyzés:** Ha az eszközök gyakran használnak különböző hardverállomásokat, a Modern POS alkalmazást ajánlott úgy beállítani, hogy a hardverállomás kiválasztását kérje a pénztárosoktól a fizetési folyamat kezdetén. Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Jegyzékek** lehetőségekre. Jelölje ki a pénztárgépet, és állítsa be a **Kiválasztás fizetéskor** opciót az **Igen** értékre. Használja a **1090** elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba.
+<span data-ttu-id="d7a5d-532">Ez a konfiguráció minden olyan Modern POS-ügyfél esetében használható, amely hardverállomásokat oszt meg más eszközökkel.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-532">This configuration can be used for all Modern POS clients that share hardware stations with other devices.</span></span> <span data-ttu-id="d7a5d-533">A konfiguráció beállításához kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-533">To set up this configuration, follow these steps.</span></span>
 
-## <a name="extensibility"></a>Bővíthetőség
-A hardverállomás bővítési forgatókönyveivel kapcsolatos információért lásd: [Hardverállomás-bővíthetőség](dev-itpro/hardware-station-extensibility.md).
+1.  <span data-ttu-id="d7a5d-534">Hozzon létre egy hardverprofilt, amelyben a szükséges perifériák konfigurálva vannak.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-534">Create a hardware profile where the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="d7a5d-535">Hozzon létre egy **Megosztott** típusú hardverállomást a kiskereskedelmi üzlethez, ahol a pénztárgépet használni fogja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-535">Create a hardware station of the **Shared** type for the retail store where the POS register will be used.</span></span>
+3.  <span data-ttu-id="d7a5d-536">A megosztott hardverállomáson állítsa be a következő tulajdonságokat:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-536">On the shared hardware station, set the following properties:</span></span>
+    -   <span data-ttu-id="d7a5d-537">**Állomásnév** – Annak a gazdaszámítógépnek a neve, ahol a hardverállomás futni fog.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-537">**Host name** – The name of the host computer where the hardware station will run.</span></span>
+    -   <span data-ttu-id="d7a5d-538">**Leírás** – Szöveg, amely segít azonosítani a hardverállomást, például **Visszáruk** vagy **Üzlet front**.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-538">**Description** – Text that will help identify the hardware station, such as **Returns** or **Front of store**.</span></span>
+    -   <span data-ttu-id="d7a5d-539">**Port** – A hardverállomás portja, amellyel a Modern POS-ügyféllel kommunikál.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-539">**Port** – The port to use for the hardware station to communicate with the Modern POS client.</span></span>
+    -   <span data-ttu-id="d7a5d-540">**Hardverprofil** – A megosztott hardverállomások esetében minden hardverállomásnak rendelkeznie kell egy hardverprofillal.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-540">**Hardware profile** – For shared hardware stations, each hardware station should have a hardware profile.</span></span> <span data-ttu-id="d7a5d-541">A hardverprofilok megoszthatók a hardverállomások között, de hozzá kell rendelni őket minden egyes hardverállomáshoz.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-541">Hardware profiles can be shared among hardware stations, but they must be mapped to each hardware station.</span></span> <span data-ttu-id="d7a5d-542">Ezen kívül megosztott műszakok használatát javasoljuk, ha ugyanazt a megosztott hardverállomást több eszköz használja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-542">In addition, we recommend that you use shared shifts when multiple devices use the same shared hardware station.</span></span> <span data-ttu-id="d7a5d-543">A megosztott műszak beállításához kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárprofilok** &gt; **Hardverprofilok** elemre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-543">To set up a shared shift, click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span> <span data-ttu-id="d7a5d-544">Minden megosztott hardverprofil esetében válassza ki a pénztárfiókot, és állítsa a **Megosztott műszakfiók** beállítást **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-544">For each shared hardware profile, select the cash drawer, and set the **Shared shift drawer** option to **Yes**.</span></span>
+    -   <span data-ttu-id="d7a5d-545">**EFT pénztárszám** – Az EFT-terminálazonosító, amelyet az EFT-engedélyek küldésekor kell használni.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-545">**EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent.</span></span> <span data-ttu-id="d7a5d-546">Ezt az azonosítót a hitelkártya-feldolgozó biztosítja.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-546">This ID is provided by the credit card processor.</span></span>
+    -   <span data-ttu-id="d7a5d-547">**Csomag neve** – A hardverállomás telepítésekor használandó hardverállomás-csomag.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-547">**Package name** – The hardware station package to use when the hardware station is deployed.</span></span>
 
-## <a name="security"></a>Biztonság
-Az aktuális biztonsági normáknak megfelelően az alábbi beállításokat kell használni a termelési környezetben: **Megjegyzés:** A hardverállomás telepítője automatikusan végrehajtja ezeket a bejegyzésjegyzék-módosításokat az önkiszolgáló telepítés részeként.
+4.  <span data-ttu-id="d7a5d-548">Az üzletben szükséges minden további hardverállomás esetében ismételje meg a 2. és 3. lépést.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-548">Repeat steps 2 and 3 for each additional hardware station that is required in the store.</span></span>
+5.  <span data-ttu-id="d7a5d-549">Kattintson a **Kiskereskedelem** &gt; **Kiskereskedelem IT** &gt; **Elosztási ütemezés** pontra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-549">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+6.  <span data-ttu-id="d7a5d-550">Válassza ki az **1090** elosztási ütemezést az új hardverprofil és az üzlet szinkronizálásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-550">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="d7a5d-551">Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-551">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="d7a5d-552">Válassza ki az **1040** elosztási ütemezést az új hardverállomás és az üzlet szinkronizálásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-552">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="d7a5d-553">Kattintson a **Futtatás most** lehetőségre a változások szinkronizálásához a pénztárgéppel.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-553">Click **Run now** to sync changes to the POS.</span></span>
+8.  <span data-ttu-id="d7a5d-554">Telepítse a hardverállomás minden, a 2. és 3. lépésben beállított gazdagépen.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-554">Install the hardware station on each host computer that you set up in steps 2 and 3.</span></span> <span data-ttu-id="d7a5d-555">A hardverállomás telepítésével kapcsolatos további tudnivalókért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-555">For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
+9.  <span data-ttu-id="d7a5d-556">Telepítse és aktiválja a Modern POS alkalmazást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-556">Install and activate Modern POS.</span></span> <span data-ttu-id="d7a5d-557">A Modern POS telepítésével kapcsolatos további tudnivalókért lásd: [Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-557">For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
+10. <span data-ttu-id="d7a5d-558">Jelentkezzen be a Modern POS alkalmazásba, és válassza a **Nem pénztárgépfiókkal kapcsolatos művelet végrehajtása** lehetőséget+.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-558">Sign in to Modern POS, and select **Perform non-drawer operations**.</span></span>
+11. <span data-ttu-id="d7a5d-559">Indítsa el a **Hardverállomások kezelése** művelet.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-559">Start the **Manage hardware stations** operation.</span></span>
 
--   A Secure Sockets Layer (SSL) használatát le kell tiltani.
--   Csak a Transport Layer Security (TLS) 1.2-es verzióját (vagy a jelenlegi legmagasabb verziót) kell engedélyezni és használni. **Megjegyzés:** Alapértelmezés szerint az SSL és a TLS összes verziója le vannak tiltva, a TLS 1.2 kivételével. Az értékek engedélyezéséhez vagy szerkesztéséhez kövesse az alábbi lépéseket:
-    1.  Nyomja le a Windows billentyű + R kombinációt **Futtatás** ablak megnyitásához.
-    2.  A **Megnyitás** mezőbe írja be a **Regedit** kifejezést, majd nyomja meg az **OK** gombot.
-    3.  Ha egy **Felhasználói fiókok felügyelete** üzenetablak jelenik meg, kattintson az **Igen** gombra.
-    4.  A **Beállításjegyzék-szerkesztő** ablakban keresse meg **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols** kulcsot. A következő kulcsok bevitele automatikusan megtörtént csak a TLS 1.2 engedélyezéséhez:
-        -   TLS 1.2Server:Enabled=1
-        -   TLS 1.2Server:DisabledByDefault=0
-        -   TLS 1.2Client:Enabled=1
-        -   TLS 1.2Client:DisabledByDefault=0
-        -   TLS 1.1Server:Enabled=0
-        -   TLS 1.1Client:Enabled=0
-        -   TLS 1.0Server:Enabled=0
-        -   TLS 1.0Client:Enabled=0
-        -   SSL 3.0Server:Enabled=0
-        -   SSL 3.0Client:Enabled=0
-        -   SSL 2.0Server:Enabled=0
-        -   SSL 2.0Client:Enabled=0
--   Nincs szükség további hálózati portok megnyitásához, kivéve, ha ez ismert, meghatározott okokból szükséges.
--   A forrásokat átfogó erőforrás-megosztást le kell tiltani, és meg kell határozni az engedélyezett, elfogadott forrásokat.
--   Csak megbízható tanúsítványszolgáltatók használhatók a hardverállomást futtató számítógépeken használt tanúsítványok beszerezéséhez.
+12. <span data-ttu-id="d7a5d-560">Kattintson a **Kezelés** elemre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-560">Click **Manage**.</span></span>
+13. <span data-ttu-id="d7a5d-561">A hardverállomás kezelése lapon kapcsolja be a hardverállomást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-561">On the hardware station management page, set the option to turn on the hardware station.</span></span>
+14. <span data-ttu-id="d7a5d-562">Jelölje ki a használni kívánt hardverállomást, majd kattintson a **Párosítás** elemre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-562">Select the hardware station to use, and then click **Pair**.</span></span>
+15. <span data-ttu-id="d7a5d-563">Minden, a Modern POS által használt hardverállomás esetében ismételje meg a 14. lépést.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-563">Repeat step 14 for each hardware station that Modern POS will use.</span></span>
+16. <span data-ttu-id="d7a5d-564">Miután minden szükséges hardverállomás párosítva van, kattintson a **Bezárás** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-564">After all the required hardware stations are paired, click **Close**.</span></span>
+17. <span data-ttu-id="d7a5d-565">A hardverállomás kiválasztása lapon kattintson a legutóbb kijelölt hardverállomásra az aktiválásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-565">On the hardware station selection page, click the recently selected hardware station to make it active.</span></span> <span data-ttu-id="d7a5d-566">**Megjegyzés:** Ha az eszközök gyakran használnak különböző hardverállomásokat, a Modern POS alkalmazást ajánlott úgy beállítani, hogy a hardverállomás kiválasztását kérje a pénztárosoktól a fizetési folyamat kezdetén.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-566">**Note:** If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process.</span></span> <span data-ttu-id="d7a5d-567">Kattintson a **Kiskereskedelem** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Jegyzékek** lehetőségekre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-567">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span> <span data-ttu-id="d7a5d-568">Jelölje ki a pénztárgépet, és állítsa be a **Kiválasztás fizetéskor** opciót az **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-568">Select the register, and then set the **Select upon tender** option to **Yes**.</span></span> <span data-ttu-id="d7a5d-569">Használja a **1090** elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-569">Use the **1090** distribution schedule to sync changes to the channel database.</span></span>
 
-**Megjegyzés:** Nagyon fontos az IIS biztonsági irányelvek és a Payment Card Industry (PCI) követelmények áttekintése.
+## <a name="extensibility"></a><span data-ttu-id="d7a5d-570">Bővíthetőség</span><span class="sxs-lookup"><span data-stu-id="d7a5d-570">Extensibility</span></span>
+<span data-ttu-id="d7a5d-571">A hardverállomás bővítési forgatókönyveivel kapcsolatos információért lásd: [Hardverállomás-bővíthetőség](dev-itpro/hardware-station-extensibility.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-571">For information about extensibility scenarios for the hardware station, see [Hardware Station extensibility](dev-itpro/hardware-station-extensibility.md).</span></span>
 
-## <a name="peripheral-simulator"></a>Perifériaszimulátor
-Információért lásd: [Kiskereskedelmi perifériás szimulátor](dev-itpro/retail-peripheral-simulator.md).
+## <a name="security"></a><span data-ttu-id="d7a5d-572">Biztonság</span><span class="sxs-lookup"><span data-stu-id="d7a5d-572">Security</span></span>
+<span data-ttu-id="d7a5d-573">Az aktuális biztonsági normáknak megfelelően az alábbi beállításokat kell használni a termelési környezetben: **Megjegyzés:** A hardverállomás telepítője automatikusan végrehajtja ezeket a bejegyzésjegyzék-módosításokat az önkiszolgáló telepítés részeként.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-573">According to current security standards, the following settings should be used in a production environment: **Note:** The hardware station installer will automatically make these registry edits as part of the installation through self-service.</span></span>
 
-## <a name="microsofttested-peripheral-devices"></a>Microsoft által tesztelt perifériaeszközök
-### <a name="ipc-built-in-hardware-station"></a>IPC (beépített) hardverállomás
+-   <span data-ttu-id="d7a5d-574">A Secure Sockets Layer (SSL) használatát le kell tiltani.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-574">Secure Sockets Layer (SSL) should be disabled.</span></span>
+-   <span data-ttu-id="d7a5d-575">Csak a Transport Layer Security (TLS) 1.2-es verzióját (vagy a jelenlegi legmagasabb verziót) kell engedélyezni és használni.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-575">Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used.</span></span> <span data-ttu-id="d7a5d-576">**Megjegyzés:** Alapértelmezés szerint az SSL és a TLS összes verziója le vannak tiltva, a TLS 1.2 kivételével.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-576">**Note:** By default, SSL and all version of TLS except TLS 1.2 are disabled.</span></span> <span data-ttu-id="d7a5d-577">Az értékek engedélyezéséhez vagy szerkesztéséhez kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-577">To edit or enable these values, follow these steps:</span></span>
+    1.  <span data-ttu-id="d7a5d-578">Nyomja le a Windows billentyű + R kombinációt **Futtatás** ablak megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-578">Press the Windows logo key+R to open a **Run** window.</span></span>
+    2.  <span data-ttu-id="d7a5d-579">A **Megnyitás** mezőbe írja be a **Regedit** kifejezést, majd nyomja meg az **OK** gombot.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-579">In the **Open** field, type **Regedit**, and then click **OK**.</span></span>
+    3.  <span data-ttu-id="d7a5d-580">Ha egy **Felhasználói fiókok felügyelete** üzenetablak jelenik meg, kattintson az **Igen** gombra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-580">If a **User Account Control** message box appears, click **Yes**.</span></span>
+    4.  <span data-ttu-id="d7a5d-581">A **Beállításjegyzék-szerkesztő** ablakban keresse meg **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols** kulcsot.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-581">In the **Registry Editor** window, navigate to **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**.</span></span> <span data-ttu-id="d7a5d-582">A következő kulcsok bevitele automatikusan megtörtént csak a TLS 1.2 engedélyezéséhez:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-582">The following keys have been automatically entered to allow for TLS 1.2 only:</span></span>
+        -   <span data-ttu-id="d7a5d-583">TLS 1.2Server:Enabled=1</span><span class="sxs-lookup"><span data-stu-id="d7a5d-583">TLS 1.2Server:Enabled=1</span></span>
+        -   <span data-ttu-id="d7a5d-584">TLS 1.2Server:DisabledByDefault=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-584">TLS 1.2Server:DisabledByDefault=0</span></span>
+        -   <span data-ttu-id="d7a5d-585">TLS 1.2Client:Enabled=1</span><span class="sxs-lookup"><span data-stu-id="d7a5d-585">TLS 1.2Client:Enabled=1</span></span>
+        -   <span data-ttu-id="d7a5d-586">TLS 1.2Client:DisabledByDefault=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-586">TLS 1.2Client:DisabledByDefault=0</span></span>
+        -   <span data-ttu-id="d7a5d-587">TLS 1.1Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-587">TLS 1.1Server:Enabled=0</span></span>
+        -   <span data-ttu-id="d7a5d-588">TLS 1.1Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-588">TLS 1.1Client:Enabled=0</span></span>
+        -   <span data-ttu-id="d7a5d-589">TLS 1.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-589">TLS 1.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="d7a5d-590">TLS 1.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-590">TLS 1.0Client:Enabled=0</span></span>
+        -   <span data-ttu-id="d7a5d-591">SSL 3.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-591">SSL 3.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="d7a5d-592">SSL 3.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-592">SSL 3.0Client:Enabled=0</span></span>
+        -   <span data-ttu-id="d7a5d-593">SSL 2.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-593">SSL 2.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="d7a5d-594">SSL 2.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="d7a5d-594">SSL 2.0Client:Enabled=0</span></span>
+-   <span data-ttu-id="d7a5d-595">Nincs szükség további hálózati portok megnyitásához, kivéve, ha ez ismert, meghatározott okokból szükséges.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-595">No additional network ports should be open, unless they are required for known, specified reasons.</span></span>
+-   <span data-ttu-id="d7a5d-596">A forrásokat átfogó erőforrás-megosztást le kell tiltani, és meg kell határozni az engedélyezett, elfogadott forrásokat.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-596">Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.</span></span>
+-   <span data-ttu-id="d7a5d-597">Csak megbízható tanúsítványszolgáltatók használhatók a hardverállomást futtató számítógépeken használt tanúsítványok beszerezéséhez.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-597">Only trusted certificate authorities should be used to obtain certificates that will be used on computers that run the hardware station.</span></span>
 
-A következő perifériákat a Modern POS for Windows beépített IPC-hardverállomásnak használatával tesztelték.
+<span data-ttu-id="d7a5d-598">**Megjegyzés:** Nagyon fontos az IIS biztonsági irányelvek és a Payment Card Industry (PCI) követelmények áttekintése.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-598">**Note:** It’s very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.</span></span>
 
-#### <a name="printer"></a>Nyomtató
+## <a name="peripheral-simulator"></a><span data-ttu-id="d7a5d-599">Perifériaszimulátor</span><span class="sxs-lookup"><span data-stu-id="d7a5d-599">Peripheral simulator</span></span>
+<span data-ttu-id="d7a5d-600">Információért lásd: [Kiskereskedelmi perifériás szimulátor](dev-itpro/retail-peripheral-simulator.md).</span><span class="sxs-lookup"><span data-stu-id="d7a5d-600">For information, see [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md).</span></span>
 
-| Gyártó | Típus    | Interfész | Megjegyzések                |
+## <a name="microsofttested-peripheral-devices"></a><span data-ttu-id="d7a5d-601">Microsoft által tesztelt perifériaeszközök</span><span class="sxs-lookup"><span data-stu-id="d7a5d-601">Microsofttested peripheral devices</span></span>
+### <a name="ipc-built-in-hardware-station"></a><span data-ttu-id="d7a5d-602">IPC (beépített) hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-602">IPC (built-in) hardware station</span></span>
+
+<span data-ttu-id="d7a5d-603">A következő perifériákat a Modern POS for Windows beépített IPC-hardverállomásnak használatával tesztelték.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-603">The following peripherals were tested by using the IPC hardware station that is built into Modern POS for Windows.</span></span>
+
+#### <a name="printer"></a><span data-ttu-id="d7a5d-604">Nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-604">Printer</span></span>
+
+| <span data-ttu-id="d7a5d-605">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-605">Manufacturer</span></span> | <span data-ttu-id="d7a5d-606">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-606">Model</span></span>    | <span data-ttu-id="d7a5d-607">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-607">Interface</span></span> | <span data-ttu-id="d7a5d-608">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-608">Comments</span></span>                |
 |--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Egyéni    | Hálózaton keresztül csatlakozó   |
-| Star         | mPOP     | OPOS      | Bluetooth-kapcsolattal csatlakozó |
-| HP           | F7M67AA  | OPOS      | Tápellátású USB             |
+| <span data-ttu-id="d7a5d-609">Epson</span><span class="sxs-lookup"><span data-stu-id="d7a5d-609">Epson</span></span>        | <span data-ttu-id="d7a5d-610">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="d7a5d-610">Tm-T88IV</span></span> | <span data-ttu-id="d7a5d-611">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-611">OPOS</span></span>      |                         |
+| <span data-ttu-id="d7a5d-612">Epson</span><span class="sxs-lookup"><span data-stu-id="d7a5d-612">Epson</span></span>        | <span data-ttu-id="d7a5d-613">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="d7a5d-613">TM-T88V</span></span>  | <span data-ttu-id="d7a5d-614">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-614">OPOS</span></span>      |                         |
+| <span data-ttu-id="d7a5d-615">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-615">Star</span></span>         | <span data-ttu-id="d7a5d-616">TSP650II</span><span class="sxs-lookup"><span data-stu-id="d7a5d-616">TSP650II</span></span> | <span data-ttu-id="d7a5d-617">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-617">OPOS</span></span>      |                         |
+| <span data-ttu-id="d7a5d-618">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-618">Star</span></span>         | <span data-ttu-id="d7a5d-619">TSP650II</span><span class="sxs-lookup"><span data-stu-id="d7a5d-619">TSP650II</span></span> | <span data-ttu-id="d7a5d-620">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-620">Custom</span></span>    | <span data-ttu-id="d7a5d-621">Hálózaton keresztül csatlakozó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-621">Connected via network</span></span>   |
+| <span data-ttu-id="d7a5d-622">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-622">Star</span></span>         | <span data-ttu-id="d7a5d-623">mPOP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-623">mPOP</span></span>     | <span data-ttu-id="d7a5d-624">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-624">OPOS</span></span>      | <span data-ttu-id="d7a5d-625">Bluetooth-kapcsolattal csatlakozó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-625">Connected via Bluetooth</span></span> |
+| <span data-ttu-id="d7a5d-626">HP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-626">HP</span></span>           | <span data-ttu-id="d7a5d-627">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-627">F7M67AA</span></span>  | <span data-ttu-id="d7a5d-628">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-628">OPOS</span></span>      | <span data-ttu-id="d7a5d-629">Tápellátású USB</span><span class="sxs-lookup"><span data-stu-id="d7a5d-629">Powered USB</span></span>             |
 
-#### <a name="bar-code-scanner"></a>Vonalkódolvasó
+#### <a name="bar-code-scanner"></a><span data-ttu-id="d7a5d-630">Vonalkódolvasó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-630">Bar code scanner</span></span>
 
-| Gyártó  | Típus         | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-631">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-631">Manufacturer</span></span>  | <span data-ttu-id="d7a5d-632">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-632">Model</span></span>         | <span data-ttu-id="d7a5d-633">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-633">Interface</span></span> | <span data-ttu-id="d7a5d-634">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-634">Comments</span></span> |
 |---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Szimbólum        | LS2208        | OPOS      |          |
-| HP-integrált | E1L07AA       | OPOS      |          |
-| Datalogic     | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="d7a5d-635">Motorola</span><span class="sxs-lookup"><span data-stu-id="d7a5d-635">Motorola</span></span>      | <span data-ttu-id="d7a5d-636">DS9208</span><span class="sxs-lookup"><span data-stu-id="d7a5d-636">DS9208</span></span>        | <span data-ttu-id="d7a5d-637">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-637">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-638">Honeywell</span><span class="sxs-lookup"><span data-stu-id="d7a5d-638">Honeywell</span></span>     | <span data-ttu-id="d7a5d-639">1900</span><span class="sxs-lookup"><span data-stu-id="d7a5d-639">1900</span></span>          | <span data-ttu-id="d7a5d-640">UWP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-640">UWP</span></span>       |          |
+| <span data-ttu-id="d7a5d-641">Szimbólum</span><span class="sxs-lookup"><span data-stu-id="d7a5d-641">Symbol</span></span>        | <span data-ttu-id="d7a5d-642">LS2208</span><span class="sxs-lookup"><span data-stu-id="d7a5d-642">LS2208</span></span>        | <span data-ttu-id="d7a5d-643">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-643">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-644">HP-integrált</span><span class="sxs-lookup"><span data-stu-id="d7a5d-644">HP Integrated</span></span> | <span data-ttu-id="d7a5d-645">E1L07AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-645">E1L07AA</span></span>       | <span data-ttu-id="d7a5d-646">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-646">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-647">Datalogic</span><span class="sxs-lookup"><span data-stu-id="d7a5d-647">Datalogic</span></span>     | <span data-ttu-id="d7a5d-648">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="d7a5d-648">Magellan 8400</span></span> | <span data-ttu-id="d7a5d-649">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-649">OPOS</span></span>      |          |
 
-#### <a name="pin-pad"></a>PIN-billentyűzet
+#### <a name="pin-pad"></a><span data-ttu-id="d7a5d-650">PIN-billentyűzet</span><span class="sxs-lookup"><span data-stu-id="d7a5d-650">PIN pad</span></span>
 
-| Gyártó | Típus  | Interfész | Megjegyzések                                        |
+| <span data-ttu-id="d7a5d-651">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-651">Manufacturer</span></span> | <span data-ttu-id="d7a5d-652">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-652">Model</span></span>  | <span data-ttu-id="d7a5d-653">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-653">Interface</span></span> | <span data-ttu-id="d7a5d-654">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-654">Comments</span></span>                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | A fizetési csatlakoztató testreszabását igényli |
+| <span data-ttu-id="d7a5d-655">VeriFone</span><span class="sxs-lookup"><span data-stu-id="d7a5d-655">VeriFone</span></span>     | <span data-ttu-id="d7a5d-656">1000SE</span><span class="sxs-lookup"><span data-stu-id="d7a5d-656">1000SE</span></span> | <span data-ttu-id="d7a5d-657">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-657">OPOS</span></span>      | <span data-ttu-id="d7a5d-658">A fizetési csatlakoztató testreszabását igényli</span><span class="sxs-lookup"><span data-stu-id="d7a5d-658">Requires customization of the payment connector</span></span> |
 
-#### <a name="payment-terminal"></a>Fizető terminál
+#### <a name="payment-terminal"></a><span data-ttu-id="d7a5d-659">Fizető terminál</span><span class="sxs-lookup"><span data-stu-id="d7a5d-659">Payment terminal</span></span>
 
-| Gyártó | Típus | Interfész | Megjegyzések                                                                       |
+| <span data-ttu-id="d7a5d-660">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-660">Manufacturer</span></span> | <span data-ttu-id="d7a5d-661">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-661">Model</span></span> | <span data-ttu-id="d7a5d-662">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-662">Interface</span></span> | <span data-ttu-id="d7a5d-663">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-663">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Egyéni    | A fizetési csatlakoztató testreszabását igényli                                |
-| VeriFone     | MX925 | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
-| VeriFone     | MX915 | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
+| <span data-ttu-id="d7a5d-664">Equinox</span><span class="sxs-lookup"><span data-stu-id="d7a5d-664">Equinox</span></span>      | <span data-ttu-id="d7a5d-665">L5300</span><span class="sxs-lookup"><span data-stu-id="d7a5d-665">L5300</span></span> | <span data-ttu-id="d7a5d-666">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-666">Custom</span></span>    | <span data-ttu-id="d7a5d-667">A fizetési csatlakoztató testreszabását igényli</span><span class="sxs-lookup"><span data-stu-id="d7a5d-667">Requires customization of the payment connector</span></span>                                |
+| <span data-ttu-id="d7a5d-668">VeriFone</span><span class="sxs-lookup"><span data-stu-id="d7a5d-668">VeriFone</span></span>     | <span data-ttu-id="d7a5d-669">MX925</span><span class="sxs-lookup"><span data-stu-id="d7a5d-669">MX925</span></span> | <span data-ttu-id="d7a5d-670">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-670">Custom</span></span>    | <span data-ttu-id="d7a5d-671">A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott</span><span class="sxs-lookup"><span data-stu-id="d7a5d-671">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="d7a5d-672">VeriFone</span><span class="sxs-lookup"><span data-stu-id="d7a5d-672">VeriFone</span></span>     | <span data-ttu-id="d7a5d-673">MX915</span><span class="sxs-lookup"><span data-stu-id="d7a5d-673">MX915</span></span> | <span data-ttu-id="d7a5d-674">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-674">Custom</span></span>    | <span data-ttu-id="d7a5d-675">A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott</span><span class="sxs-lookup"><span data-stu-id="d7a5d-675">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Pénzfiók
+#### <a name="cash-drawer"></a><span data-ttu-id="d7a5d-676">Pénzfiók</span><span class="sxs-lookup"><span data-stu-id="d7a5d-676">Cash drawer</span></span>
 
-| Gyártó | Típus     | Interfész | Megjegyzések                |
+| <span data-ttu-id="d7a5d-677">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-677">Manufacturer</span></span> | <span data-ttu-id="d7a5d-678">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-678">Model</span></span>     | <span data-ttu-id="d7a5d-679">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-679">Interface</span></span> | <span data-ttu-id="d7a5d-680">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-680">Comments</span></span>                |
 |--------------|-----------|-----------|-------------------------|
-| Star         | mPOP      | OPOS      | Bluetooth-kapcsolattal csatlakozó |
-| APG          | Atwood    | Egyéni    | Hálózaton keresztül csatlakozó   |
-| Star         | SMD2-1317 | OPOS      |                         |
-| HP           | QT457AA   | OPOS      |                         |
+| <span data-ttu-id="d7a5d-681">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-681">Star</span></span>         | <span data-ttu-id="d7a5d-682">mPOP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-682">mPOP</span></span>      | <span data-ttu-id="d7a5d-683">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-683">OPOS</span></span>      | <span data-ttu-id="d7a5d-684">Bluetooth-kapcsolattal csatlakozó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-684">Connected via Bluetooth</span></span> |
+| <span data-ttu-id="d7a5d-685">APG</span><span class="sxs-lookup"><span data-stu-id="d7a5d-685">APG</span></span>          | <span data-ttu-id="d7a5d-686">Atwood</span><span class="sxs-lookup"><span data-stu-id="d7a5d-686">Atwood</span></span>    | <span data-ttu-id="d7a5d-687">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-687">Custom</span></span>    | <span data-ttu-id="d7a5d-688">Hálózaton keresztül csatlakozó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-688">Connected via network</span></span>   |
+| <span data-ttu-id="d7a5d-689">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-689">Star</span></span>         | <span data-ttu-id="d7a5d-690">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="d7a5d-690">SMD2-1317</span></span> | <span data-ttu-id="d7a5d-691">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-691">OPOS</span></span>      |                         |
+| <span data-ttu-id="d7a5d-692">HP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-692">HP</span></span>           | <span data-ttu-id="d7a5d-693">QT457AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-693">QT457AA</span></span>   | <span data-ttu-id="d7a5d-694">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-694">OPOS</span></span>      |                         |
 
-#### <a name="line-display"></a>Sor megjelenítése
+#### <a name="line-display"></a><span data-ttu-id="d7a5d-695">Sor megjelenítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-695">Line display</span></span>
 
-| Gyártó  | Típus   | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-696">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-696">Manufacturer</span></span>  | <span data-ttu-id="d7a5d-697">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-697">Model</span></span>   | <span data-ttu-id="d7a5d-698">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-698">Interface</span></span> | <span data-ttu-id="d7a5d-699">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-699">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| HP-integrált | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| <span data-ttu-id="d7a5d-700">HP-integrált</span><span class="sxs-lookup"><span data-stu-id="d7a5d-700">HP integrated</span></span> | <span data-ttu-id="d7a5d-701">G6U79AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-701">G6U79AA</span></span> | <span data-ttu-id="d7a5d-702">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-702">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-703">Epson</span><span class="sxs-lookup"><span data-stu-id="d7a5d-703">Epson</span></span>         | <span data-ttu-id="d7a5d-704">M58DC</span><span class="sxs-lookup"><span data-stu-id="d7a5d-704">M58DC</span></span>   | <span data-ttu-id="d7a5d-705">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-705">OPOS</span></span>      |          |
 
-#### <a name="signature-capture"></a>Aláírás rögzítése
+#### <a name="signature-capture"></a><span data-ttu-id="d7a5d-706">Aláírás rögzítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-706">Signature capture</span></span>
 
-| Gyártó | Típus  | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-707">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-707">Manufacturer</span></span> | <span data-ttu-id="d7a5d-708">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-708">Model</span></span>  | <span data-ttu-id="d7a5d-709">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-709">Interface</span></span> | <span data-ttu-id="d7a5d-710">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-710">Comments</span></span> |
 |--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
+| <span data-ttu-id="d7a5d-711">Scriptel</span><span class="sxs-lookup"><span data-stu-id="d7a5d-711">Scriptel</span></span>     | <span data-ttu-id="d7a5d-712">ST1550</span><span class="sxs-lookup"><span data-stu-id="d7a5d-712">ST1550</span></span> | <span data-ttu-id="d7a5d-713">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-713">OPOS</span></span>      |          |
 
-#### <a name="scale"></a>Lépték
+#### <a name="scale"></a><span data-ttu-id="d7a5d-714">Lépték</span><span class="sxs-lookup"><span data-stu-id="d7a5d-714">Scale</span></span>
 
-| Gyártó | Típus         | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-715">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-715">Manufacturer</span></span> | <span data-ttu-id="d7a5d-716">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-716">Model</span></span>         | <span data-ttu-id="d7a5d-717">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-717">Interface</span></span> | <span data-ttu-id="d7a5d-718">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-718">Comments</span></span> |
 |--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="d7a5d-719">Datalogic</span><span class="sxs-lookup"><span data-stu-id="d7a5d-719">Datalogic</span></span>    | <span data-ttu-id="d7a5d-720">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="d7a5d-720">Magellan 8400</span></span> | <span data-ttu-id="d7a5d-721">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-721">OPOS</span></span>      |          |
 
-#### <a name="msr"></a>MSR
+#### <a name="msr"></a><span data-ttu-id="d7a5d-722">MSR</span><span class="sxs-lookup"><span data-stu-id="d7a5d-722">MSR</span></span>
 
-| Gyártó | Típus       | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-723">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-723">Manufacturer</span></span> | <span data-ttu-id="d7a5d-724">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-724">Model</span></span>       | <span data-ttu-id="d7a5d-725">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-725">Interface</span></span> | <span data-ttu-id="d7a5d-726">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-726">Comments</span></span> |
 |--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
+| <span data-ttu-id="d7a5d-727">Magtek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-727">Magtek</span></span>       | <span data-ttu-id="d7a5d-728">21073075</span><span class="sxs-lookup"><span data-stu-id="d7a5d-728">21073075</span></span>    | <span data-ttu-id="d7a5d-729">UWP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-729">UWP</span></span>       |          |
+| <span data-ttu-id="d7a5d-730">Magtek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-730">Magtek</span></span>       | <span data-ttu-id="d7a5d-731">21073062</span><span class="sxs-lookup"><span data-stu-id="d7a5d-731">21073062</span></span>    | <span data-ttu-id="d7a5d-732">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-732">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-733">HP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-733">HP</span></span>           | <span data-ttu-id="d7a5d-734">IDRA-334133</span><span class="sxs-lookup"><span data-stu-id="d7a5d-734">IDRA-334133</span></span> | <span data-ttu-id="d7a5d-735">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-735">OPOS</span></span>      |          |
 
-### <a name="dedicated-iis-hardware-station"></a>Dedikált IIS-hardverállomás
+### <a name="dedicated-iis-hardware-station"></a><span data-ttu-id="d7a5d-736">Dedikált IIS-hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-736">Dedicated IIS hardware station</span></span>
 
-A következő perifériákat dedikált (nem megosztott) IIS-hardverállomás használatával tesztelték, a Modern POS for Windows és a Cloud POS alkalmazással.
+<span data-ttu-id="d7a5d-737">A következő perifériákat dedikált (nem megosztott) IIS-hardverállomás használatával tesztelték, a Modern POS for Windows és a Cloud POS alkalmazással.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-737">The following peripherals were tested by using a dedicated (not shared) IIS hardware station together with Modern POS for Windows and Cloud POS.</span></span>
 
-#### <a name="printer"></a>Nyomtató
+#### <a name="printer"></a><span data-ttu-id="d7a5d-738">Nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-738">Printer</span></span>
 
-| Gyártó | Típus    | Interfész | Megjegyzések                  |
+| <span data-ttu-id="d7a5d-739">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-739">Manufacturer</span></span> | <span data-ttu-id="d7a5d-740">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-740">Model</span></span>    | <span data-ttu-id="d7a5d-741">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-741">Interface</span></span> | <span data-ttu-id="d7a5d-742">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-742">Comments</span></span>                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
-| Star         | TSP650II | Egyéni    | Hálózaton keresztül csatlakozó     |
-| Star         | TSP100   | OPOS      | TSP650II-illesztőprogramokat igényel |
-| HP           | F7M67AA  | OPOS      | Tápellátású USB               |
+| <span data-ttu-id="d7a5d-743">Epson</span><span class="sxs-lookup"><span data-stu-id="d7a5d-743">Epson</span></span>        | <span data-ttu-id="d7a5d-744">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="d7a5d-744">Tm-T88IV</span></span> | <span data-ttu-id="d7a5d-745">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-745">OPOS</span></span>      |                           |
+| <span data-ttu-id="d7a5d-746">Epson</span><span class="sxs-lookup"><span data-stu-id="d7a5d-746">Epson</span></span>        | <span data-ttu-id="d7a5d-747">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="d7a5d-747">TM-T88V</span></span>  | <span data-ttu-id="d7a5d-748">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-748">OPOS</span></span>      |                           |
+| <span data-ttu-id="d7a5d-749">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-749">Star</span></span>         | <span data-ttu-id="d7a5d-750">TSP650II</span><span class="sxs-lookup"><span data-stu-id="d7a5d-750">TSP650II</span></span> | <span data-ttu-id="d7a5d-751">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-751">OPOS</span></span>      |                           |
+| <span data-ttu-id="d7a5d-752">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-752">Star</span></span>         | <span data-ttu-id="d7a5d-753">TSP650II</span><span class="sxs-lookup"><span data-stu-id="d7a5d-753">TSP650II</span></span> | <span data-ttu-id="d7a5d-754">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-754">Custom</span></span>    | <span data-ttu-id="d7a5d-755">Hálózaton keresztül csatlakozó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-755">Connected via network</span></span>     |
+| <span data-ttu-id="d7a5d-756">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-756">Star</span></span>         | <span data-ttu-id="d7a5d-757">TSP100</span><span class="sxs-lookup"><span data-stu-id="d7a5d-757">TSP100</span></span>   | <span data-ttu-id="d7a5d-758">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-758">OPOS</span></span>      | <span data-ttu-id="d7a5d-759">TSP650II-illesztőprogramokat igényel</span><span class="sxs-lookup"><span data-stu-id="d7a5d-759">Requires TSP650II drivers</span></span> |
+| <span data-ttu-id="d7a5d-760">HP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-760">HP</span></span>           | <span data-ttu-id="d7a5d-761">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-761">F7M67AA</span></span>  | <span data-ttu-id="d7a5d-762">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-762">OPOS</span></span>      | <span data-ttu-id="d7a5d-763">Tápellátású USB</span><span class="sxs-lookup"><span data-stu-id="d7a5d-763">Powered USB</span></span>               |
 
-#### <a name="bar-code-scanner"></a>Vonalkódolvasó
+#### <a name="bar-code-scanner"></a><span data-ttu-id="d7a5d-764">Vonalkódolvasó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-764">Bar code scanner</span></span>
 
-| Gyártó  | Típus   | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-765">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-765">Manufacturer</span></span>  | <span data-ttu-id="d7a5d-766">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-766">Model</span></span>   | <span data-ttu-id="d7a5d-767">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-767">Interface</span></span> | <span data-ttu-id="d7a5d-768">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-768">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Szimbólum        | LS2208  | OPOS      |          |
-| HP-integrált | E1L07AA | OPOS      |          |
+| <span data-ttu-id="d7a5d-769">Motorola</span><span class="sxs-lookup"><span data-stu-id="d7a5d-769">Motorola</span></span>      | <span data-ttu-id="d7a5d-770">DS9208</span><span class="sxs-lookup"><span data-stu-id="d7a5d-770">DS9208</span></span>  | <span data-ttu-id="d7a5d-771">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-771">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-772">Szimbólum</span><span class="sxs-lookup"><span data-stu-id="d7a5d-772">Symbol</span></span>        | <span data-ttu-id="d7a5d-773">LS2208</span><span class="sxs-lookup"><span data-stu-id="d7a5d-773">LS2208</span></span>  | <span data-ttu-id="d7a5d-774">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-774">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-775">HP-integrált</span><span class="sxs-lookup"><span data-stu-id="d7a5d-775">HP Integrated</span></span> | <span data-ttu-id="d7a5d-776">E1L07AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-776">E1L07AA</span></span> | <span data-ttu-id="d7a5d-777">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-777">OPOS</span></span>      |          |
 
-#### <a name="pin-pad"></a>PIN-billentyűzet
+#### <a name="pin-pad"></a><span data-ttu-id="d7a5d-778">PIN-billentyűzet</span><span class="sxs-lookup"><span data-stu-id="d7a5d-778">PIN pad</span></span>
 
-| Gyártó | Típus  | Interfész | Megjegyzések                                        |
+| <span data-ttu-id="d7a5d-779">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-779">Manufacturer</span></span> | <span data-ttu-id="d7a5d-780">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-780">Model</span></span>  | <span data-ttu-id="d7a5d-781">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-781">Interface</span></span> | <span data-ttu-id="d7a5d-782">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-782">Comments</span></span>                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | A fizetési csatlakoztató testreszabását igényli |
+| <span data-ttu-id="d7a5d-783">VeriFone</span><span class="sxs-lookup"><span data-stu-id="d7a5d-783">VeriFone</span></span>     | <span data-ttu-id="d7a5d-784">1000SE</span><span class="sxs-lookup"><span data-stu-id="d7a5d-784">1000SE</span></span> | <span data-ttu-id="d7a5d-785">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-785">OPOS</span></span>      | <span data-ttu-id="d7a5d-786">A fizetési csatlakoztató testreszabását igényli</span><span class="sxs-lookup"><span data-stu-id="d7a5d-786">Requires customization of the payment connector</span></span> |
 
-#### <a name="payment-terminal"></a>Fizető terminál
+#### <a name="payment-terminal"></a><span data-ttu-id="d7a5d-787">Fizető terminál</span><span class="sxs-lookup"><span data-stu-id="d7a5d-787">Payment terminal</span></span>
 
-| Gyártó | Típus | Interfész | Megjegyzések                                                                       |
+| <span data-ttu-id="d7a5d-788">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-788">Manufacturer</span></span> | <span data-ttu-id="d7a5d-789">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-789">Model</span></span> | <span data-ttu-id="d7a5d-790">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-790">Interface</span></span> | <span data-ttu-id="d7a5d-791">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-791">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Egyéni    | A fizetési csatlakoztató testreszabását igényli                                |
-| VeriFone     | MX925 | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
-| VeriFone     | MX915 | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
+| <span data-ttu-id="d7a5d-792">Equinox</span><span class="sxs-lookup"><span data-stu-id="d7a5d-792">Equinox</span></span>      | <span data-ttu-id="d7a5d-793">L5300</span><span class="sxs-lookup"><span data-stu-id="d7a5d-793">L5300</span></span> | <span data-ttu-id="d7a5d-794">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-794">Custom</span></span>    | <span data-ttu-id="d7a5d-795">A fizetési csatlakoztató testreszabását igényli</span><span class="sxs-lookup"><span data-stu-id="d7a5d-795">Requires customization of the payment connector</span></span>                                |
+| <span data-ttu-id="d7a5d-796">VeriFone</span><span class="sxs-lookup"><span data-stu-id="d7a5d-796">VeriFone</span></span>     | <span data-ttu-id="d7a5d-797">MX925</span><span class="sxs-lookup"><span data-stu-id="d7a5d-797">MX925</span></span> | <span data-ttu-id="d7a5d-798">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-798">Custom</span></span>    | <span data-ttu-id="d7a5d-799">A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott</span><span class="sxs-lookup"><span data-stu-id="d7a5d-799">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="d7a5d-800">VeriFone</span><span class="sxs-lookup"><span data-stu-id="d7a5d-800">VeriFone</span></span>     | <span data-ttu-id="d7a5d-801">MX915</span><span class="sxs-lookup"><span data-stu-id="d7a5d-801">MX915</span></span> | <span data-ttu-id="d7a5d-802">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-802">Custom</span></span>    | <span data-ttu-id="d7a5d-803">A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott</span><span class="sxs-lookup"><span data-stu-id="d7a5d-803">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Pénzfiók
+#### <a name="cash-drawer"></a><span data-ttu-id="d7a5d-804">Pénzfiók</span><span class="sxs-lookup"><span data-stu-id="d7a5d-804">Cash drawer</span></span>
 
-| Gyártó | Típus     | Interfész | Megjegyzések              |
+| <span data-ttu-id="d7a5d-805">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-805">Manufacturer</span></span> | <span data-ttu-id="d7a5d-806">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-806">Model</span></span>     | <span data-ttu-id="d7a5d-807">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-807">Interface</span></span> | <span data-ttu-id="d7a5d-808">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-808">Comments</span></span>              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Egyéni    | Hálózaton keresztül csatlakozó |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
+| <span data-ttu-id="d7a5d-809">APG</span><span class="sxs-lookup"><span data-stu-id="d7a5d-809">APG</span></span>          | <span data-ttu-id="d7a5d-810">Atwood</span><span class="sxs-lookup"><span data-stu-id="d7a5d-810">Atwood</span></span>    | <span data-ttu-id="d7a5d-811">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-811">Custom</span></span>    | <span data-ttu-id="d7a5d-812">Hálózaton keresztül csatlakozó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-812">Connected via network</span></span> |
+| <span data-ttu-id="d7a5d-813">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-813">Star</span></span>         | <span data-ttu-id="d7a5d-814">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="d7a5d-814">SMD2-1317</span></span> | <span data-ttu-id="d7a5d-815">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-815">OPOS</span></span>      |                       |
+| <span data-ttu-id="d7a5d-816">HP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-816">HP</span></span>           | <span data-ttu-id="d7a5d-817">QT457AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-817">QT457AA</span></span>   | <span data-ttu-id="d7a5d-818">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-818">OPOS</span></span>      |                       |
 
-#### <a name="line-display"></a>Sor megjelenítése
+#### <a name="line-display"></a><span data-ttu-id="d7a5d-819">Sor megjelenítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-819">Line display</span></span>
 
-| Gyártó  | Típus   | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-820">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-820">Manufacturer</span></span>  | <span data-ttu-id="d7a5d-821">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-821">Model</span></span>   | <span data-ttu-id="d7a5d-822">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-822">Interface</span></span> | <span data-ttu-id="d7a5d-823">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-823">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| HP-integrált | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| <span data-ttu-id="d7a5d-824">HP-integrált</span><span class="sxs-lookup"><span data-stu-id="d7a5d-824">HP integrated</span></span> | <span data-ttu-id="d7a5d-825">G6U79AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-825">G6U79AA</span></span> | <span data-ttu-id="d7a5d-826">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-826">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-827">Epson</span><span class="sxs-lookup"><span data-stu-id="d7a5d-827">Epson</span></span>         | <span data-ttu-id="d7a5d-828">M58DC</span><span class="sxs-lookup"><span data-stu-id="d7a5d-828">M58DC</span></span>   | <span data-ttu-id="d7a5d-829">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-829">OPOS</span></span>      |          |
 
-#### <a name="signature-capture"></a>Aláírás rögzítése
+#### <a name="signature-capture"></a><span data-ttu-id="d7a5d-830">Aláírás rögzítése</span><span class="sxs-lookup"><span data-stu-id="d7a5d-830">Signature capture</span></span>
 
-| Gyártó | Típus  | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-831">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-831">Manufacturer</span></span> | <span data-ttu-id="d7a5d-832">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-832">Model</span></span>  | <span data-ttu-id="d7a5d-833">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-833">Interface</span></span> | <span data-ttu-id="d7a5d-834">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-834">Comments</span></span> |
 |--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
+| <span data-ttu-id="d7a5d-835">Scriptel</span><span class="sxs-lookup"><span data-stu-id="d7a5d-835">Scriptel</span></span>     | <span data-ttu-id="d7a5d-836">ST1550</span><span class="sxs-lookup"><span data-stu-id="d7a5d-836">ST1550</span></span> | <span data-ttu-id="d7a5d-837">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-837">OPOS</span></span>      |          |
 
-#### <a name="scale"></a>Lépték
+#### <a name="scale"></a><span data-ttu-id="d7a5d-838">Lépték</span><span class="sxs-lookup"><span data-stu-id="d7a5d-838">Scale</span></span>
 
-| Gyártó | Típus         | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-839">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-839">Manufacturer</span></span> | <span data-ttu-id="d7a5d-840">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-840">Model</span></span>         | <span data-ttu-id="d7a5d-841">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-841">Interface</span></span> | <span data-ttu-id="d7a5d-842">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-842">Comments</span></span> |
 |--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="d7a5d-843">Datalogic</span><span class="sxs-lookup"><span data-stu-id="d7a5d-843">Datalogic</span></span>    | <span data-ttu-id="d7a5d-844">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="d7a5d-844">Magellan 8400</span></span> | <span data-ttu-id="d7a5d-845">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-845">OPOS</span></span>      |          |
 
-#### <a name="msr"></a>MSR
+#### <a name="msr"></a><span data-ttu-id="d7a5d-846">MSR</span><span class="sxs-lookup"><span data-stu-id="d7a5d-846">MSR</span></span>
 
-| Gyártó | Típus       | Interfész | Megjegyzések |
+| <span data-ttu-id="d7a5d-847">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-847">Manufacturer</span></span> | <span data-ttu-id="d7a5d-848">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-848">Model</span></span>       | <span data-ttu-id="d7a5d-849">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-849">Interface</span></span> | <span data-ttu-id="d7a5d-850">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-850">Comments</span></span> |
 |--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
+| <span data-ttu-id="d7a5d-851">Magtek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-851">Magtek</span></span>       | <span data-ttu-id="d7a5d-852">21073075</span><span class="sxs-lookup"><span data-stu-id="d7a5d-852">21073075</span></span>    | <span data-ttu-id="d7a5d-853">UWP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-853">UWP</span></span>       |          |
+| <span data-ttu-id="d7a5d-854">Magtek</span><span class="sxs-lookup"><span data-stu-id="d7a5d-854">Magtek</span></span>       | <span data-ttu-id="d7a5d-855">21073062</span><span class="sxs-lookup"><span data-stu-id="d7a5d-855">21073062</span></span>    | <span data-ttu-id="d7a5d-856">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-856">OPOS</span></span>      |          |
+| <span data-ttu-id="d7a5d-857">HP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-857">HP</span></span>           | <span data-ttu-id="d7a5d-858">IDRA-334133</span><span class="sxs-lookup"><span data-stu-id="d7a5d-858">IDRA-334133</span></span> | <span data-ttu-id="d7a5d-859">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-859">OPOS</span></span>      |          |
 
-### <a name="shared-iis-hardware-station"></a>Megosztott IIS-hardverállomás
+### <a name="shared-iis-hardware-station"></a><span data-ttu-id="d7a5d-860">Megosztott IIS-hardverállomás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-860">Shared IIS hardware station</span></span>
 
-A következő perifériákat megosztott IIS-hardverállomás használatával tesztelték, a Modern POS for Windows és a Cloud POS alkalmazással. **Megjegyzés:** Csak egy nyomtató, fizetési terminál és pénzfiók támogatott.
+<span data-ttu-id="d7a5d-861">A következő perifériákat megosztott IIS-hardverállomás használatával tesztelték, a Modern POS for Windows és a Cloud POS alkalmazással.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-861">The following peripherals were tested by using a shared IIS hardware station together with Modern POS for Windows and Cloud POS.</span></span> <span data-ttu-id="d7a5d-862">**Megjegyzés:** Csak egy nyomtató, fizetési terminál és pénzfiók támogatott.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-862">**Note:** Only a printer, payment terminal, and cash drawer are supported.</span></span>
 
-#### <a name="printer"></a>Nyomtató
+#### <a name="printer"></a><span data-ttu-id="d7a5d-863">Nyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-863">Printer</span></span>
 
-| Gyártó | Típus    | Interfész | Megjegyzések                  |
+| <span data-ttu-id="d7a5d-864">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-864">Manufacturer</span></span> | <span data-ttu-id="d7a5d-865">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-865">Model</span></span>    | <span data-ttu-id="d7a5d-866">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-866">Interface</span></span> | <span data-ttu-id="d7a5d-867">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-867">Comments</span></span>                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
-| Star         | TSP650II | Egyéni    | Hálózaton keresztül csatlakozó     |
-| Star         | TSP100   | OPOS      | TSP650II-illesztőprogramokat igényel |
-| HP           | F7M67AA  | OPOS      | Tápellátású USB               |
+| <span data-ttu-id="d7a5d-868">Epson</span><span class="sxs-lookup"><span data-stu-id="d7a5d-868">Epson</span></span>        | <span data-ttu-id="d7a5d-869">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="d7a5d-869">Tm-T88IV</span></span> | <span data-ttu-id="d7a5d-870">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-870">OPOS</span></span>      |                           |
+| <span data-ttu-id="d7a5d-871">Epson</span><span class="sxs-lookup"><span data-stu-id="d7a5d-871">Epson</span></span>        | <span data-ttu-id="d7a5d-872">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="d7a5d-872">TM-T88V</span></span>  | <span data-ttu-id="d7a5d-873">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-873">OPOS</span></span>      |                           |
+| <span data-ttu-id="d7a5d-874">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-874">Star</span></span>         | <span data-ttu-id="d7a5d-875">TSP650II</span><span class="sxs-lookup"><span data-stu-id="d7a5d-875">TSP650II</span></span> | <span data-ttu-id="d7a5d-876">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-876">OPOS</span></span>      |                           |
+| <span data-ttu-id="d7a5d-877">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-877">Star</span></span>         | <span data-ttu-id="d7a5d-878">TSP650II</span><span class="sxs-lookup"><span data-stu-id="d7a5d-878">TSP650II</span></span> | <span data-ttu-id="d7a5d-879">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-879">Custom</span></span>    | <span data-ttu-id="d7a5d-880">Hálózaton keresztül csatlakozó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-880">Connected via network</span></span>     |
+| <span data-ttu-id="d7a5d-881">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-881">Star</span></span>         | <span data-ttu-id="d7a5d-882">TSP100</span><span class="sxs-lookup"><span data-stu-id="d7a5d-882">TSP100</span></span>   | <span data-ttu-id="d7a5d-883">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-883">OPOS</span></span>      | <span data-ttu-id="d7a5d-884">TSP650II-illesztőprogramokat igényel</span><span class="sxs-lookup"><span data-stu-id="d7a5d-884">Requires TSP650II drivers</span></span> |
+| <span data-ttu-id="d7a5d-885">HP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-885">HP</span></span>           | <span data-ttu-id="d7a5d-886">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-886">F7M67AA</span></span>  | <span data-ttu-id="d7a5d-887">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-887">OPOS</span></span>      | <span data-ttu-id="d7a5d-888">Tápellátású USB</span><span class="sxs-lookup"><span data-stu-id="d7a5d-888">Powered USB</span></span>               |
 
-#### <a name="payment-terminal"></a>Fizető terminál
+#### <a name="payment-terminal"></a><span data-ttu-id="d7a5d-889">Fizető terminál</span><span class="sxs-lookup"><span data-stu-id="d7a5d-889">Payment terminal</span></span>
 
-| Gyártó | Típus | Interfész | Megjegyzések                                                                       |
+| <span data-ttu-id="d7a5d-890">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-890">Manufacturer</span></span> | <span data-ttu-id="d7a5d-891">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-891">Model</span></span> | <span data-ttu-id="d7a5d-892">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-892">Interface</span></span> | <span data-ttu-id="d7a5d-893">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-893">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
-| VeriFone     | MX915 | Egyéni    | A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott |
+| <span data-ttu-id="d7a5d-894">VeriFone</span><span class="sxs-lookup"><span data-stu-id="d7a5d-894">VeriFone</span></span>     | <span data-ttu-id="d7a5d-895">MX925</span><span class="sxs-lookup"><span data-stu-id="d7a5d-895">MX925</span></span> | <span data-ttu-id="d7a5d-896">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-896">Custom</span></span>    | <span data-ttu-id="d7a5d-897">A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott</span><span class="sxs-lookup"><span data-stu-id="d7a5d-897">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="d7a5d-898">VeriFone</span><span class="sxs-lookup"><span data-stu-id="d7a5d-898">VeriFone</span></span>     | <span data-ttu-id="d7a5d-899">MX915</span><span class="sxs-lookup"><span data-stu-id="d7a5d-899">MX915</span></span> | <span data-ttu-id="d7a5d-900">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-900">Custom</span></span>    | <span data-ttu-id="d7a5d-901">A fizetési csatlakoztató testreszabását igényli; hálózaton és USB-n keresztül csatlakoztatott</span><span class="sxs-lookup"><span data-stu-id="d7a5d-901">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Pénzfiók
+#### <a name="cash-drawer"></a><span data-ttu-id="d7a5d-902">Pénzfiók</span><span class="sxs-lookup"><span data-stu-id="d7a5d-902">Cash drawer</span></span>
 
-| Gyártó | Típus     | Interfész | Megjegyzések              |
+| <span data-ttu-id="d7a5d-903">Gyártó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-903">Manufacturer</span></span> | <span data-ttu-id="d7a5d-904">Típus</span><span class="sxs-lookup"><span data-stu-id="d7a5d-904">Model</span></span>     | <span data-ttu-id="d7a5d-905">Interfész</span><span class="sxs-lookup"><span data-stu-id="d7a5d-905">Interface</span></span> | <span data-ttu-id="d7a5d-906">Megjegyzések</span><span class="sxs-lookup"><span data-stu-id="d7a5d-906">Comments</span></span>              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Egyéni    | Hálózaton keresztül csatlakozó |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
+| <span data-ttu-id="d7a5d-907">APG</span><span class="sxs-lookup"><span data-stu-id="d7a5d-907">APG</span></span>          | <span data-ttu-id="d7a5d-908">Atwood</span><span class="sxs-lookup"><span data-stu-id="d7a5d-908">Atwood</span></span>    | <span data-ttu-id="d7a5d-909">Egyéni</span><span class="sxs-lookup"><span data-stu-id="d7a5d-909">Custom</span></span>    | <span data-ttu-id="d7a5d-910">Hálózaton keresztül csatlakozó</span><span class="sxs-lookup"><span data-stu-id="d7a5d-910">Connected via network</span></span> |
+| <span data-ttu-id="d7a5d-911">Star</span><span class="sxs-lookup"><span data-stu-id="d7a5d-911">Star</span></span>         | <span data-ttu-id="d7a5d-912">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="d7a5d-912">SMD2-1317</span></span> | <span data-ttu-id="d7a5d-913">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-913">OPOS</span></span>      |                       |
+| <span data-ttu-id="d7a5d-914">HP</span><span class="sxs-lookup"><span data-stu-id="d7a5d-914">HP</span></span>           | <span data-ttu-id="d7a5d-915">QT457AA</span><span class="sxs-lookup"><span data-stu-id="d7a5d-915">QT457AA</span></span>   | <span data-ttu-id="d7a5d-916">OPOS</span><span class="sxs-lookup"><span data-stu-id="d7a5d-916">OPOS</span></span>      |                       |
 
-## <a name="troubleshooting"></a>Hibaelhárítás
-### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a>A Modern POS észleli a hardverállomást a kiválasztási listájában, de nem tudja befejezni a párosítást
+## <a name="troubleshooting"></a><span data-ttu-id="d7a5d-917">Hibaelhárítás</span><span class="sxs-lookup"><span data-stu-id="d7a5d-917">Troubleshooting</span></span>
+### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a><span data-ttu-id="d7a5d-918">A Modern POS észleli a hardverállomást a kiválasztási listájában, de nem tudja befejezni a párosítást</span><span class="sxs-lookup"><span data-stu-id="d7a5d-918">Modern POS can detect the hardware station in its list for selection, but it can’t complete the pairing</span></span>
 
-**Megoldás:** Az alábbi listában szereplő lehetséges meghibásodási pontok ellenőrzése:
+<span data-ttu-id="d7a5d-919">**Megoldás:** Az alábbi listában szereplő lehetséges meghibásodási pontok ellenőrzése:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-919">**Solution:** Verify the following list of potential failure points:</span></span>
 
--   A Modern POS rendszert futtató számítógép megbízik a tanúsítványban, amely a hardverállomást futtató számítógépen fut.
-    -   A telepítő ellenőrzéséhez egy webböngészőben nyissa meg a következő URL-címet: https://&lt;Számítógép neve&gt;:&lt;Port száma&gt;/HardwareStation/ping.
-    -   Ez az URL-cím egy ping segítségével ellenőrzi, hogy a számítógép elérhető, és a böngésző jelzi, hogy a tanúsítvány megbízható-e. (Például az Internet Explorer egy lakat ikont jelenít meg a címsorban. Ha erre az ikonra kattint, az Internet Explorer ellenőrzi, hogy a tanúsítvány jelenleg megbízható-e. Telepítheti a tanúsítványt a helyi számítógépen a megjelenített tanúsítvány adatainak megtekintésével.)
--   A hardverállomást futtató számítógépen a hardverállomás által használt port megnyílik a tűzfalon.
--   A hardverállomás megfelelően telepítette a kereskedői számla adatait a Kereskedői adatok telepítése eszköz segítségével, amely a hardverállomás telepítőjének a végén fut.
+-   <span data-ttu-id="d7a5d-920">A Modern POS rendszert futtató számítógép megbízik a tanúsítványban, amely a hardverállomást futtató számítógépen fut.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-920">The computer that is running Modern POS trusts the certificate that is used on the computer that runs the hardware station.</span></span>
+    -   <span data-ttu-id="d7a5d-921">A telepítő ellenőrzéséhez egy webböngészőben nyissa meg a következő URL-címet: https://&lt;Számítógép neve&gt;:&lt;Port száma&gt;/HardwareStation/ping.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-921">To verify this setup, in a web browser, go to the following URL: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.</span></span>
+    -   <span data-ttu-id="d7a5d-922">Ez az URL-cím egy ping segítségével ellenőrzi, hogy a számítógép elérhető, és a böngésző jelzi, hogy a tanúsítvány megbízható-e.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-922">This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted.</span></span> <span data-ttu-id="d7a5d-923">(Például az Internet Explorer egy lakat ikont jelenít meg a címsorban.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-923">(For example, in Internet Explorer, a lock icon appears in the address bar.</span></span> <span data-ttu-id="d7a5d-924">Ha erre az ikonra kattint, az Internet Explorer ellenőrzi, hogy a tanúsítvány jelenleg megbízható-e.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-924">When you click this icon, Internet Explorer verifies whether the certificate is currently trusted.</span></span> <span data-ttu-id="d7a5d-925">Telepítheti a tanúsítványt a helyi számítógépen a megjelenített tanúsítvány adatainak megtekintésével.)</span><span class="sxs-lookup"><span data-stu-id="d7a5d-925">You can install the certificate on the local computer by viewing the details of the certificate that is shown.)</span></span>
+-   <span data-ttu-id="d7a5d-926">A hardverállomást futtató számítógépen a hardverállomás által használt port megnyílik a tűzfalon.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-926">On the computer that runs the hardware station, the port that will be used by the hardware station is opened in the firewall.</span></span>
+-   <span data-ttu-id="d7a5d-927">A hardverállomás megfelelően telepítette a kereskedői számla adatait a Kereskedői adatok telepítése eszköz segítségével, amely a hardverállomás telepítőjének a végén fut.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-927">The hardware station has correctly installed merchant account information through the Install merchant information tool that runs at the end of the hardware station installer.</span></span>
 
-### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a>A Modern POS nem észleli a hardverállomást a kiválasztási listájában
+### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a><span data-ttu-id="d7a5d-928">A Modern POS nem észleli a hardverállomást a kiválasztási listájában</span><span class="sxs-lookup"><span data-stu-id="d7a5d-928">Modern POS can’t detect the hardware station in its list for selection</span></span>
 
-**Megoldás:** A következő tényezők valamelyike okozhatja a hibát:
+<span data-ttu-id="d7a5d-929">**Megoldás:** A következő tényezők valamelyike okozhatja a hibát:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-929">**Solution:** Either of the following factors can cause this issue:</span></span>
 
--   A hardverállomás nincs megfelelően beállítva a központban. A témakör korábbi lépéseinek segítségével ellenőrizze, hogy a hardverállomás-profil és a hardverállomás helyesen legyen megadva.
--   A feladatok még nem futottak a csatornakonfiguráció frissítésére. Ebben az esetben futtassa az 1070-es munkát a csatorna konfigurálására.
+-   <span data-ttu-id="d7a5d-930">A hardverállomás nincs megfelelően beállítva a központban.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-930">The hardware station hasn’t been set up correctly in headquarters.</span></span> <span data-ttu-id="d7a5d-931">A témakör korábbi lépéseinek segítségével ellenőrizze, hogy a hardverállomás-profil és a hardverállomás helyesen legyen megadva.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-931">Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.</span></span>
+-   <span data-ttu-id="d7a5d-932">A feladatok még nem futottak a csatornakonfiguráció frissítésére.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-932">The jobs haven’t been run to update the channel configuration.</span></span> <span data-ttu-id="d7a5d-933">Ebben az esetben futtassa az 1070-es munkát a csatorna konfigurálására.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-933">In this case, run the 1070 job for channel configuration.</span></span>
 
-### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>A Modern POS nem tükrözi az új pénzfiók-beállításokat
+### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a><span data-ttu-id="d7a5d-934">A Modern POS nem tükrözi az új pénzfiók-beállításokat</span><span class="sxs-lookup"><span data-stu-id="d7a5d-934">Modern POS doesn't reflect new cash drawer settings</span></span>
 
-**Megoldás:** Az aktuális köteg lezárása. A pénzfiókon végrehajtott módosítások nem frissülnek a Modern POS alkalmazásban az aktuális köteg lezárásáig.
+<span data-ttu-id="d7a5d-935">**Megoldás:** Az aktuális köteg lezárása.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-935">**Solution:** Close the current batch.</span></span> <span data-ttu-id="d7a5d-936">A pénzfiókon végrehajtott módosítások nem frissülnek a Modern POS alkalmazásban az aktuális köteg lezárásáig.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-936">Changes to the cash drawer aren't updated to Modern POS until the current batch is closed.</span></span>
 
-### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a>A Modern POS a kiskereskedelmi perifériákkal kapcsolatos hibát jelez
+### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a><span data-ttu-id="d7a5d-937">A Modern POS a kiskereskedelmi perifériákkal kapcsolatos hibát jelez</span><span class="sxs-lookup"><span data-stu-id="d7a5d-937">Modern POS is reporting an issue with a retail peripheral</span></span>
 
-**Megoldás:** Az alábbiakban a probléma néhány jellemző oka látható:
+<span data-ttu-id="d7a5d-938">**Megoldás:** Az alábbiakban a probléma néhány jellemző oka látható:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-938">**Solution:** Here are some typical causes of this issue:</span></span>
 
--   Győződjön meg arról, hogy bezárta a többi eszköz-illesztőprogram konfigurációs segédprogramot. Ha ezek a segédprogramok nyitva vannak, megakadályozhatják, hogy a Modern POS vagy a hardverállomás átvegye az eszköz vezérlését.
--   Ha a kiskereskedelmi periférián több pénztáreszköz osztozik, győződjön meg arról, hogy a következő kategóriák valamelyikébe tartozik:
-    -   Pénzfiók
-    -   Nyugtanyomtató
-    -   Fizető terminál
+-   <span data-ttu-id="d7a5d-939">Győződjön meg arról, hogy bezárta a többi eszköz-illesztőprogram konfigurációs segédprogramot.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-939">Make sure that other device driver configuration utilities are closed.</span></span> <span data-ttu-id="d7a5d-940">Ha ezek a segédprogramok nyitva vannak, megakadályozhatják, hogy a Modern POS vagy a hardverállomás átvegye az eszköz vezérlését.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-940">If these utilities are open, they might prevent Modern POS or the hardware station from claiming the device.</span></span>
+-   <span data-ttu-id="d7a5d-941">Ha a kiskereskedelmi periférián több pénztáreszköz osztozik, győződjön meg arról, hogy a következő kategóriák valamelyikébe tartozik:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-941">If the retail peripheral is shared with multiple POS devices, make sure that it belongs to one of the following categories:</span></span>
+    -   <span data-ttu-id="d7a5d-942">Pénzfiók</span><span class="sxs-lookup"><span data-stu-id="d7a5d-942">Cash drawer</span></span>
+    -   <span data-ttu-id="d7a5d-943">Nyugtanyomtató</span><span class="sxs-lookup"><span data-stu-id="d7a5d-943">Receipt printer</span></span>
+    -   <span data-ttu-id="d7a5d-944">Fizető terminál</span><span class="sxs-lookup"><span data-stu-id="d7a5d-944">Payment terminal</span></span>
 
-    Ha a periféria nem tartozik egyik fenti kategóriába sem, a hardverállomás nem teszi lehetővé a periféria megosztását több pénztáreszköz között.
--   Néha az eszköz-illesztőprogramok okozzák azt, hogy a Common Control Object (CCO) összetevők nem működnek megfelelően. Ha az eszközt nemrégiben telepítették, de nem működik megfelelően, vagy más problémák merülnek fel, gyakran megoldhatja a problémát a CCO-k újratelepítésével. A CCO-k letöltéséhez látogasson el a <http://monroecs.com/oposccos_current.htm> webhelyre.
--   Ha gyakran módosítja a perifériákat tesztelés és hibaelhárítás közben, előfordulhat, hogy alaphelyzetbe kell állítania az IIS-t ahelyett, hogy megvárná a gyorsítótár frissítését. Az ISS alaphelyzetbe állításához kövesse az alábbi lépéseket:
-    1.  A **Start** menübe írja be a következőt: **CMD**.
-    2.  A keresési eredményekben kattintson a jobb gombbal a **parancssorra**, majd kattintson a **Futtatás rendszergazdaként** lehetőségre.
-    3.  A **parancssor** ablakában írja be az **iisreset /Restart** parancsot, majd nyomja le az Enter billentyűt.
-    4.  Az IIS újraindítása után indítsa újra a Modern POS alkalmazást.
--   Miközben gyakori változtatásokat hajt végre a perifériákon, ha emellet gyakran indítja el a pénztárügyfelet és lép ki belőle, az előző pénztármunkamenetből származó dllhost folyamat zavarhatja az aktuális munkamenetet. Ebben az esetben az eszköz néha nem használható, amíg be nem zárja az előző munkamenetet kezelő dinamikus csatolású függvénytár (DLL) gazdagépet. A DLL-gazdagép bezárásához kövesse az alábbi lépéseket:
-    1.  A **Start** menübe írja be a következőt: **Feladatkezelő**.
-    2.  A keresési eredményeknél kattintson a **Feladatkezelő** találatra.
-    3.  A Feladatkezelőben, a **Részletek** fülön, kattintson a **Név** oszlopfejlécre a táblázat rendezéséhez név szerint.
-    4.  Görgesse lefelé, amíg meg nem találja a dllhost.exe alkalmazást.
-    5.  Jelölje be az egyes DLL-gazdagépeket, majd kattintson a **Feladat befejezése** lehetőségre.
-    6.  A DLL-gazdagépek bezárása után indítsa újra a Modern POS alkalmazást.
+    <span data-ttu-id="d7a5d-945">Ha a periféria nem tartozik egyik fenti kategóriába sem, a hardverállomás nem teszi lehetővé a periféria megosztását több pénztáreszköz között.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-945">If the peripheral doesn't belong to one of these categories, the hardware station isn't designed to enable the peripheral to be shared among multiple POS devices.</span></span>
+-   <span data-ttu-id="d7a5d-946">Néha az eszköz-illesztőprogramok okozzák azt, hogy a Common Control Object (CCO) összetevők nem működnek megfelelően.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-946">Sometimes, device drivers can cause the common control objects (CCOs) to stop working correctly.</span></span> <span data-ttu-id="d7a5d-947">Ha az eszközt nemrégiben telepítették, de nem működik megfelelően, vagy más problémák merülnek fel, gyakran megoldhatja a problémát a CCO-k újratelepítésével.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-947">If a device has recently been installed, but it isn't working properly or you notice other issues, you can often resolve the issue by reinstalling the CCOs.</span></span> <span data-ttu-id="d7a5d-948">A CCO-k letöltéséhez látogasson el a <http://monroecs.com/oposccos_current.htm> webhelyre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-948">To download the CCOs, visit <http://monroecs.com/oposccos_current.htm>.</span></span>
+-   <span data-ttu-id="d7a5d-949">Ha gyakran módosítja a perifériákat tesztelés és hibaelhárítás közben, előfordulhat, hogy alaphelyzetbe kell állítania az IIS-t ahelyett, hogy megvárná a gyorsítótár frissítését.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-949">If you make frequent peripheral changes during testing or troubleshooting, you might have to reset IIS instead of waiting for the cache to refresh itself.</span></span> <span data-ttu-id="d7a5d-950">Az ISS alaphelyzetbe állításához kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-950">To reset IIS, follow these steps:</span></span>
+    1.  <span data-ttu-id="d7a5d-951">A **Start** menübe írja be a következőt: **CMD**.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-951">From the **Start** menu, type **CMD**.</span></span>
+    2.  <span data-ttu-id="d7a5d-952">A keresési eredményekben kattintson a jobb gombbal a **parancssorra**, majd kattintson a **Futtatás rendszergazdaként** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-952">In the search results, right-click **Command prompt**, and then click **Run as administrator**.</span></span>
+    3.  <span data-ttu-id="d7a5d-953">A **parancssor** ablakában írja be az **iisreset /Restart** parancsot, majd nyomja le az Enter billentyűt.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-953">In the **Command prompt** window, type **iisreset /Restart** and then press Enter.</span></span>
+    4.  <span data-ttu-id="d7a5d-954">Az IIS újraindítása után indítsa újra a Modern POS alkalmazást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-954">After IIS has restarted, restart Modern POS.</span></span>
+-   <span data-ttu-id="d7a5d-955">Miközben gyakori változtatásokat hajt végre a perifériákon, ha emellet gyakran indítja el a pénztárügyfelet és lép ki belőle, az előző pénztármunkamenetből származó dllhost folyamat zavarhatja az aktuális munkamenetet.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-955">While you're making frequent changes to peripheral devices, if you also frequently start and exit the POS client, the dllhost process from a previous POS session can interfere with the current session.</span></span> <span data-ttu-id="d7a5d-956">Ebben az esetben az eszköz néha nem használható, amíg be nem zárja az előző munkamenetet kezelő dinamikus csatolású függvénytár (DLL) gazdagépet.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-956">In this case, a device might not be usable until you close the dynamic-link library (DLL) host that is managing the previous session.</span></span> <span data-ttu-id="d7a5d-957">A DLL-gazdagép bezárásához kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="d7a5d-957">To close the DLL host, follow these steps:</span></span>
+    1.  <span data-ttu-id="d7a5d-958">A **Start** menübe írja be a következőt: **Feladatkezelő**.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-958">From the **Start** menu, type **Task manager**.</span></span>
+    2.  <span data-ttu-id="d7a5d-959">A keresési eredményeknél kattintson a **Feladatkezelő** találatra.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-959">In the search results, click **Task manager**.</span></span>
+    3.  <span data-ttu-id="d7a5d-960">A Feladatkezelőben, a **Részletek** fülön, kattintson a **Név** oszlopfejlécre a táblázat rendezéséhez név szerint.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-960">In Task manager, on the **Details** tab, click the column header that is labeled **Name** to sort the table alphabetically by name.</span></span>
+    4.  <span data-ttu-id="d7a5d-961">Görgesse lefelé, amíg meg nem találja a dllhost.exe alkalmazást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-961">Scroll down until you find dllhost.exe.</span></span>
+    5.  <span data-ttu-id="d7a5d-962">Jelölje be az egyes DLL-gazdagépeket, majd kattintson a **Feladat befejezése** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-962">Select each DLL host, and then click **End task**.</span></span>
+    6.  <span data-ttu-id="d7a5d-963">A DLL-gazdagépek bezárása után indítsa újra a Modern POS alkalmazást.</span><span class="sxs-lookup"><span data-stu-id="d7a5d-963">After the DLL hosts have been closed, restart Modern POS.</span></span>
 
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="d7a5d-964">Lásd még</span><span class="sxs-lookup"><span data-stu-id="d7a5d-964">See also</span></span>
 --------
 
-[Kiskereskedelmiperiféria-szimulátor](dev-itpro/retail-peripheral-simulator.md)
+[<span data-ttu-id="d7a5d-965">Kiskereskedelmiperiféria-szimulátor</span><span class="sxs-lookup"><span data-stu-id="d7a5d-965">Retail peripheral simulator</span></span>](dev-itpro/retail-peripheral-simulator.md)
 
 
 

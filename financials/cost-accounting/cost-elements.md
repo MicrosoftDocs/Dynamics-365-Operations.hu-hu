@@ -16,27 +16,27 @@ ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
 ms.search.region: global
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c06f4f636a58ac8068415b1291bd8668e7a977d5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: eb549d9314799924084c23d0e420fcd377ed8c33
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="cost-element-dimensions"></a>Költségösszetevő-dimenziók
+# <a name="cost-element-dimensions"></a><span data-ttu-id="aae26-103">Költségösszetevő-dimenziók</span><span class="sxs-lookup"><span data-stu-id="aae26-103">Cost element dimensions</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A költségkönyvelés egyik alapvető elemeként a költségösszetevő-dimenziók használhatók a kategorizáláshoz és a költségmozgások nyomon követéséhez. 
+<span data-ttu-id="aae26-104">A költségkönyvelés egyik alapvető elemeként a költségösszetevő-dimenziók használhatók a kategorizáláshoz és a költségmozgások nyomon követéséhez.</span><span class="sxs-lookup"><span data-stu-id="aae26-104">As one of the core pillars in Cost accounting, cost element dimensions are used to categorize and track where costs flow to.</span></span> 
 
-Egy költségösszetevő a számlatükör valamely költségfüggő elemének felel meg. Alapvetően ez bármely olyan elem lehet egy üzletág legalacsonyabb szintjén, ahová költségek bekerülhetnek. A költségösszetevők fogalma mindent lefed a főkönyvi számláktól az összes, költségfüggő erőforrásig. A költségkönyvelés jelenleg támogatja a főkönyvi számlákat.
+<span data-ttu-id="aae26-105">Egy költségösszetevő a számlatükör valamely költségfüggő elemének felel meg.</span><span class="sxs-lookup"><span data-stu-id="aae26-105">A cost element corresponds to a cost-relevant item in the chart of accounts.</span></span> <span data-ttu-id="aae26-106">Alapvetően ez bármely olyan elem lehet egy üzletág legalacsonyabb szintjén, ahová költségek bekerülhetnek.</span><span class="sxs-lookup"><span data-stu-id="aae26-106">Basically, it can be any type of element at the lowest level in a business where costs can flow to.</span></span> <span data-ttu-id="aae26-107">A költségösszetevők fogalma mindent lefed a főkönyvi számláktól az összes, költségfüggő erőforrásig.</span><span class="sxs-lookup"><span data-stu-id="aae26-107">Cost elements as a concept range from ledger accounts to all cost-relevant resources.</span></span> <span data-ttu-id="aae26-108">A költségkönyvelés jelenleg támogatja a főkönyvi számlákat.</span><span class="sxs-lookup"><span data-stu-id="aae26-108">Currently, Cost accounting supports ledger accounts.</span></span>
 
-## <a name="two-types-of-cost-elements"></a>Kétféle típusú költségösszetevők
-A költségösszetevőknek két típusa van: az elsődleges költségösszetevők és a másodlagos költségösszetevők. A következő táblázat a két típus közötti különbséget ismerteti.
+## <a name="two-types-of-cost-elements"></a><span data-ttu-id="aae26-109">Kétféle típusú költségösszetevők</span><span class="sxs-lookup"><span data-stu-id="aae26-109">Two types of cost elements</span></span>
+<span data-ttu-id="aae26-110">A költségösszetevőknek két típusa van: az elsődleges költségösszetevők és a másodlagos költségösszetevők.</span><span class="sxs-lookup"><span data-stu-id="aae26-110">There are two types of cost elements: primary cost elements and secondary cost elements.</span></span> <span data-ttu-id="aae26-111">A következő táblázat a két típus közötti különbséget ismerteti.</span><span class="sxs-lookup"><span data-stu-id="aae26-111">The following table describes the difference between the two types.</span></span>
 
 <table>
 <colgroup>
@@ -45,36 +45,36 @@ A költségösszetevőknek két típusa van: az elsődleges költségösszetevő
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Elsődleges költségösszetevők</strong></td>
-<td><strong>Másodlagos költségösszetevők</strong></td>
+<td><span data-ttu-id="aae26-112"><strong>Elsődleges költségösszetevők</strong></span><span class="sxs-lookup"><span data-stu-id="aae26-112"><strong>Primary cost elements</strong></span></span></td>
+<td><span data-ttu-id="aae26-113"><strong>Másodlagos költségösszetevők</strong></span><span class="sxs-lookup"><span data-stu-id="aae26-113"><strong>Secondary cost elements</strong></span></span></td>
 </tr>
 <tr class="even">
-<td>Az elsődleges költségösszetevők a pénzügyi könyvelésből a költségkönyvelésbe menő költségeket jelentik. A költségösszetevők szerkezete a főkönyv eredménykimutatási szzerkezetének felel meg, ahol egy költségösszetevő egy fő számlának felel meg. Nem minden fő számla jelenik meg feltétlenül költségösszetevőként - ez attól függ, hogy mik a vállalat igényei. Elsődleges költségösszetevők közé páldául a következők tartoznak:
+<td><span data-ttu-id="aae26-114">Az elsődleges költségösszetevők a pénzügyi könyvelésből a költségkönyvelésbe menő költségeket jelentik.</span><span class="sxs-lookup"><span data-stu-id="aae26-114">The primary cost elements represent the flow of costs from financial accounting to cost accounting.</span></span> <span data-ttu-id="aae26-115">A költségösszetevők szerkezete a főkönyv eredménykimutatási szzerkezetének felel meg, ahol egy költségösszetevő egy fő számlának felel meg.</span><span class="sxs-lookup"><span data-stu-id="aae26-115">The cost element structure corresponds to the profit and loss account structure in the general ledger, where a cost element can correspond to a main account.</span></span> <span data-ttu-id="aae26-116">Nem minden fő számla jelenik meg feltétlenül költségösszetevőként - ez attól függ, hogy mik a vállalat igényei.</span><span class="sxs-lookup"><span data-stu-id="aae26-116">Not all main accounts may necessarily be represented as cost elements depending on the business needs.</span></span> <span data-ttu-id="aae26-117">Elsődleges költségösszetevők közé páldául a következők tartoznak:</span><span class="sxs-lookup"><span data-stu-id="aae26-117">Examples of primary cost elements include:</span></span>
 <ul>
-<li>Eladott áruk beszerzési értéke (COG)</li>
-<li>Közvetett anyagköltségek</li>
-<li>Személyi költségek</li>
-<li>Energiaköltségek</li>
+<li><span data-ttu-id="aae26-118">Eladott áruk beszerzési értéke (COG)</span><span class="sxs-lookup"><span data-stu-id="aae26-118">Costs of goods sold (COGs)</span></span></li>
+<li><span data-ttu-id="aae26-119">Közvetett anyagköltségek</span><span class="sxs-lookup"><span data-stu-id="aae26-119">Indirect material costs</span></span></li>
+<li><span data-ttu-id="aae26-120">Személyi költségek</span><span class="sxs-lookup"><span data-stu-id="aae26-120">Personnel costs</span></span></li>
+<li><span data-ttu-id="aae26-121">Energiaköltségek</span><span class="sxs-lookup"><span data-stu-id="aae26-121">Energy costs</span></span></li>
 </ul></td>
-<td>A másodlagos költségösszetevők a belső költségfolyamatokat jelentik, mivel ezeket a költségeket csak a költségkönyvelésben hozzák létre és használják. Arra szolgálnak hogy a költség forrását vissza lehessen keresni. Ezek a költségösszetevők költségfelosztásokban és többletköltség-számításokhoz használatosak. Másodlagos költségösszetevők közé páldául a következők tartoznak:
+<td><span data-ttu-id="aae26-122">A másodlagos költségösszetevők a belső költségfolyamatokat jelentik, mivel ezeket a költségeket csak a költségkönyvelésben hozzák létre és használják.</span><span class="sxs-lookup"><span data-stu-id="aae26-122">The secondary cost elements represent the flow of costs internally because these costs are created and used only in Cost accounting.</span></span> <span data-ttu-id="aae26-123">Arra szolgálnak hogy a költség forrását vissza lehessen keresni.</span><span class="sxs-lookup"><span data-stu-id="aae26-123">They are used to secure that the source of costs can be traced.</span></span> <span data-ttu-id="aae26-124">Ezek a költségösszetevők költségfelosztásokban és többletköltség-számításokhoz használatosak.</span><span class="sxs-lookup"><span data-stu-id="aae26-124">These cost elements are used in cost allocations and overhead calculations.</span></span> <span data-ttu-id="aae26-125">Másodlagos költségösszetevők közé páldául a következők tartoznak:</span><span class="sxs-lookup"><span data-stu-id="aae26-125">Examples of secondary cost elements include:</span></span>
 <ul>
-<li>Gyártási költségek</li>
-<li>Gyártás, anyagok és marketing rezsije</li>
+<li><span data-ttu-id="aae26-126">Gyártási költségek</span><span class="sxs-lookup"><span data-stu-id="aae26-126">Production costs</span></span></li>
+<li><span data-ttu-id="aae26-127">Gyártás, anyagok és marketing rezsije</span><span class="sxs-lookup"><span data-stu-id="aae26-127">Production, material, and marketing overheads</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Költségösszetevő-dimenziók és költségösszetevő-dimenziótagok
-A költségösszetevőket *költségösszetevő-dimenzióknak* nevezik. Az egyes dimenzióértékeket *költségösszetevő-dimenziótagoknak* nevezik. Vegyünk például egy Egyesült Államokbeli számlatükör-szerkezetet (számlatükör), amely a kötelezően előírt jelentéskészítés alapja. Ez a számlatükör költségösszetevő-dimenzióként használatos. A számlák, amelyek elsődleges költségösszetevők, a költségkönyvelésben költségösszetevő-dimenziótagokként jelennek meg. Az alábbi képernyőképen látható példa a fő számlákat ábrázolja költségösszetevő-dimenzióként, ahol a tényleges fő számlák a költségösszetevő-dimenziótagok. 
+## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a><span data-ttu-id="aae26-128">Költségösszetevő-dimenziók és költségösszetevő-dimenziótagok</span><span class="sxs-lookup"><span data-stu-id="aae26-128">Cost element dimensions and cost element dimension members</span></span>
+<span data-ttu-id="aae26-129">A költségösszetevőket *költségösszetevő-dimenzióknak* nevezik.</span><span class="sxs-lookup"><span data-stu-id="aae26-129">Cost elements are referred to as *cost element dimensions* .</span></span> <span data-ttu-id="aae26-130">Az egyes dimenzióértékeket *költségösszetevő-dimenziótagoknak* nevezik.</span><span class="sxs-lookup"><span data-stu-id="aae26-130">The individual dimension values are called *cost element dimension members*.</span></span> <span data-ttu-id="aae26-131">Vegyünk például egy Egyesült Államokbeli számlatükör-szerkezetet (számlatükör), amely a kötelezően előírt jelentéskészítés alapja.</span><span class="sxs-lookup"><span data-stu-id="aae26-131">For example, you have a US chart of accounts structure (COA) that is the base for your statutory reporting.</span></span> <span data-ttu-id="aae26-132">Ez a számlatükör költségösszetevő-dimenzióként használatos.</span><span class="sxs-lookup"><span data-stu-id="aae26-132">This COA is used as the cost element dimension.</span></span> <span data-ttu-id="aae26-133">A számlák, amelyek elsődleges költségösszetevők, a költségkönyvelésben költségösszetevő-dimenziótagokként jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="aae26-133">The accounts, which are primary cost elements, are represented as the cost element dimension members in Cost accounting.</span></span> <span data-ttu-id="aae26-134">Az alábbi képernyőképen látható példa a fő számlákat ábrázolja költségösszetevő-dimenzióként, ahol a tényleges fő számlák a költségösszetevő-dimenziótagok.</span><span class="sxs-lookup"><span data-stu-id="aae26-134">The following screenshot shows an example of Main Accounts as the cost element dimension with its actual main accounts as the cost element dimension members.</span></span> 
 
-[![cost-element-dimensions](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+<span data-ttu-id="aae26-135">[![cost-element-dimensions](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)</span><span class="sxs-lookup"><span data-stu-id="aae26-135">[![cost-element-dimensions](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)</span></span>
 
-## <a name="import-cost-element-dimension-members-through-data-connectors"></a>A költségösszetevő-dimenziótagok importálása adatcsatolókon keresztül
-Ahhoz, hogy megkönnyítse a költségösszetevő-dimenziók beállítását a költségkönyvelésben, használhat olyan adatcsatolókat, amelyeket előre vagy egyedileg készítenek el az elsődleges költségösszetevők lekéréséhez egy vagy több forrásrendszerből.
+## <a name="import-cost-element-dimension-members-through-data-connectors"></a><span data-ttu-id="aae26-136">A költségösszetevő-dimenziótagok importálása adatcsatolókon keresztül</span><span class="sxs-lookup"><span data-stu-id="aae26-136">Import cost element dimension members through data connectors</span></span>
+<span data-ttu-id="aae26-137">Ahhoz, hogy megkönnyítse a költségösszetevő-dimenziók beállítását a költségkönyvelésben, használhat olyan adatcsatolókat, amelyeket előre vagy egyedileg készítenek el az elsődleges költségösszetevők lekéréséhez egy vagy több forrásrendszerből.</span><span class="sxs-lookup"><span data-stu-id="aae26-137">To ease the setup of cost element dimension members in Cost accounting, you can use data connectors that are either pre-built or your custom build to retrieve the primary cost elements from one or more source systems.</span></span>
 
-## <a name="implementation-considerations"></a>Kivitelezési szempontok
-Mivel a költségösszetevők a legalacsonyabb szintű költségadatokat jelentik, gondoskodnia kell arról, hogy a vezetői jelentések létrehozásához szükségesek összes költségösszetevő legyen figyelembe véve, amikor a költségösszetevők szerkezetét létrehozza. Nehézkes lehet megfelelő számú költségösszetevőt találni a költségkontrollhoz. Ha több ezer költségösszetevő van, az megnehezítheti az egyes költségösszetevők szabályozását. Másik lehetőségként a költségösszetevőket csoportosíthatja, és a költségkontrollt összesített szinten kezelheti.
+## <a name="implementation-considerations"></a><span data-ttu-id="aae26-138">Kivitelezési szempontok</span><span class="sxs-lookup"><span data-stu-id="aae26-138">Implementation considerations</span></span>
+<span data-ttu-id="aae26-139">Mivel a költségösszetevők a legalacsonyabb szintű költségadatokat jelentik, gondoskodnia kell arról, hogy a vezetői jelentések létrehozásához szükségesek összes költségösszetevő legyen figyelembe véve, amikor a költségösszetevők szerkezetét létrehozza.</span><span class="sxs-lookup"><span data-stu-id="aae26-139">As cost elements represent the lowest level of cost details, you should make sure that all the cost elements required to make the managerial reporting are included when you implement the cost elements structure.</span></span> <span data-ttu-id="aae26-140">Nehézkes lehet megfelelő számú költségösszetevőt találni a költségkontrollhoz.</span><span class="sxs-lookup"><span data-stu-id="aae26-140">It can be a challenge to find an appropriate number of cost elements for cost control.</span></span> <span data-ttu-id="aae26-141">Ha több ezer költségösszetevő van, az megnehezítheti az egyes költségösszetevők szabályozását.</span><span class="sxs-lookup"><span data-stu-id="aae26-141">Having thousands of cost elements can make it difficult to control each cost element.</span></span> <span data-ttu-id="aae26-142">Másik lehetőségként a költségösszetevőket csoportosíthatja, és a költségkontrollt összesített szinten kezelheti.</span><span class="sxs-lookup"><span data-stu-id="aae26-142">As an alternative, you can group cost elements and manage cost control at an aggregated level.</span></span>
 
 
 

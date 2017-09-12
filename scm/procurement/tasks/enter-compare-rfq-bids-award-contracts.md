@@ -16,104 +16,104 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d7c76eab2cca4e15c13dd9f79432b9c6d81071a2
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5dea9d7bfb1bf7b11f6c49cccaab1b73d4e58d16
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
+# <a name="enter-and-compare-rfq-bids-and-award-contracts"></a><span data-ttu-id="d1674-103">Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket</span><span class="sxs-lookup"><span data-stu-id="d1674-103">Enter and compare RFQ bids and award contracts</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja az Ajánlatkérésre történő válaszadás, az ajánlatok pontozásának és összehasonlításának módját, és ezt követően bemutatja azt is, hogy hogyan rendelheti az ajánlatot egy szállítóhoz. Az USMF bemutatócég adataiban használhatja ezt az eljárást. Mielőtt elkezdené, egy legalább két szállítónak elküldött sorral rendelkező Ajánlatkéréssel kell rendelkeznie. Előfeltételként az "Ajánlatkérés létrehozása" eljárást futtathatja ezen elem létrehozásához. Mielőtt lehetővé válik ezen eljárás futtatása létre kell hozni a pontozási feltételeket.
+<span data-ttu-id="d1674-104">Ez az eljárás bemutatja az Ajánlatkérésre történő válaszadás, az ajánlatok pontozásának és összehasonlításának módját, és ezt követően bemutatja azt is, hogy hogyan rendelheti az ajánlatot egy szállítóhoz.</span><span class="sxs-lookup"><span data-stu-id="d1674-104">This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors.</span></span> <span data-ttu-id="d1674-105">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="d1674-105">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="d1674-106">Mielőtt elkezdené, egy legalább két szállítónak elküldött sorral rendelkező Ajánlatkéréssel kell rendelkeznie.</span><span class="sxs-lookup"><span data-stu-id="d1674-106">Before you start, you must have an RFQ with two lines that has been sent to at least two vendors.</span></span> <span data-ttu-id="d1674-107">Előfeltételként az "Ajánlatkérés létrehozása" eljárást futtathatja ezen elem létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="d1674-107">You can run the "Create a request for quotation" procedure as a prerequisite to create this.</span></span> <span data-ttu-id="d1674-108">Mielőtt lehetővé válik ezen eljárás futtatása létre kell hozni a pontozási feltételeket.</span><span class="sxs-lookup"><span data-stu-id="d1674-108">You need to have set up scoring criteria before you can run this procedure.</span></span>
 
 
-## <a name="enter-a-reply-from-a-vendor"></a>Adjon meg egy választ a szállítótól
-1. Ugorjon a Beszerzés és forrás > Ajánlatkérések > Összes ajánlatkérés pontra.
-2. Válasszon ki egy elküldött állapotú Ajánlatkérést, és kattintson a hivatkozásban szereplő ajánlatkérési eset számára.
-    * Az Ajánlatkérést legalább két szállítónak kellett elküldeni.  
-3. Kattintson a Fejlécre a szállítók listájára történő ugráshoz.
-4. Válassza ki azt a szállítót, akire vonatkozóan meg szeretne adni választ az ajánlatkérésben.
-5. Kattintson a Válasz beírása gombra.
-6. A Művelet panelen kattintson a Válasz elemre.
-7. Kattintson az Adatok másolása a válaszba elemre.
-    * Ez a művelet másolja a kijelölt adatokat, például az Ajánlatkérési esetből származó mennyiséget az Ajánlatkérés-válaszához. Másik lehetőségként hagyja ki ezt a műveletet, és töltse ki manuálisan az összes válaszmezőt a válasz szerkesztésekor.  
-8. Kattintson a Szerkesztés lehetőségre.
-9. Adjon meg egy számot az Egységár mezőben.
-10. Válasszon egy másik árajánlatsort.
-11. Adjon meg egy számot az Egységár mezőben.
+## <a name="enter-a-reply-from-a-vendor"></a><span data-ttu-id="d1674-109">Adjon meg egy választ a szállítótól</span><span class="sxs-lookup"><span data-stu-id="d1674-109">Enter a reply from a vendor</span></span>
+1. <span data-ttu-id="d1674-110">Ugorjon a Beszerzés és forrás > Ajánlatkérések > Összes ajánlatkérés pontra.</span><span class="sxs-lookup"><span data-stu-id="d1674-110">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
+2. <span data-ttu-id="d1674-111">Válasszon ki egy elküldött állapotú Ajánlatkérést, és kattintson a hivatkozásban szereplő ajánlatkérési eset számára.</span><span class="sxs-lookup"><span data-stu-id="d1674-111">Select an RFQ that has a status of Sent and click the link on the Request for quotation case number.</span></span>
+    * <span data-ttu-id="d1674-112">Az Ajánlatkérést legalább két szállítónak kellett elküldeni.</span><span class="sxs-lookup"><span data-stu-id="d1674-112">The RFQ should have been sent to at least 2 vendors.</span></span>  
+3. <span data-ttu-id="d1674-113">Kattintson a Fejlécre a szállítók listájára történő ugráshoz.</span><span class="sxs-lookup"><span data-stu-id="d1674-113">Click Header to go to the list of vendors.</span></span>
+4. <span data-ttu-id="d1674-114">Válassza ki azt a szállítót, akire vonatkozóan meg szeretne adni választ az ajánlatkérésben.</span><span class="sxs-lookup"><span data-stu-id="d1674-114">Select the vendor for whom you want to enter a response on the RFQ.</span></span>
+5. <span data-ttu-id="d1674-115">Kattintson a Válasz beírása gombra.</span><span class="sxs-lookup"><span data-stu-id="d1674-115">Click Enter reply.</span></span>
+6. <span data-ttu-id="d1674-116">A Művelet panelen kattintson a Válasz elemre.</span><span class="sxs-lookup"><span data-stu-id="d1674-116">On the Action Pane, click Reply.</span></span>
+7. <span data-ttu-id="d1674-117">Kattintson az Adatok másolása a válaszba elemre.</span><span class="sxs-lookup"><span data-stu-id="d1674-117">Click Copy data to reply.</span></span>
+    * <span data-ttu-id="d1674-118">Ez a művelet másolja a kijelölt adatokat, például az Ajánlatkérési esetből származó mennyiséget az Ajánlatkérés-válaszához.</span><span class="sxs-lookup"><span data-stu-id="d1674-118">This action will copy selected data, for example, the quantity from the RFQ case to the RFQ reply.</span></span> <span data-ttu-id="d1674-119">Másik lehetőségként hagyja ki ezt a műveletet, és töltse ki manuálisan az összes válaszmezőt a válasz szerkesztésekor.</span><span class="sxs-lookup"><span data-stu-id="d1674-119">Alternatively you can skip this action and fill in all the response fields manually when you edit the reply.</span></span>  
+8. <span data-ttu-id="d1674-120">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d1674-120">Click Edit.</span></span>
+9. <span data-ttu-id="d1674-121">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="d1674-121">In the Unit price field, enter a number.</span></span>
+10. <span data-ttu-id="d1674-122">Válasszon egy másik árajánlatsort.</span><span class="sxs-lookup"><span data-stu-id="d1674-122">Choose the other quotation line.</span></span>
+11. <span data-ttu-id="d1674-123">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="d1674-123">In the Unit price field, enter a number.</span></span>
 
-## <a name="score-the-bid"></a>Ajánlat pontozása
-1. Kattintson a Fejlécre az ajánlat pontozására történő ugráshoz.
-2. Bontsa ki az ajánlat pontozási szakaszát.
-3. A pontszám mezőben adja meg a pontozási feltételek egyikét.
-    * Ha a mutatót valamelyik pontozási feltétel fölé viszi, akkor az elemleírás megjeleníti azt a tartományt, amelyen belül el kell végeznie a pontozást. Ebben a bemutatóban hozzáadhat egy 1 és 5 közötti számot a feltételek bármelyikéhez.  
-4. Válasszon ki egy másik pontozási feltételt.
-5. A pontszám mezőben adjon meg egy számot.
-6. Bontsa ki a Kérdőívek szakaszt.
-    * Ha az ajánlatkérés egy olyan kérdőívet tartalmaz, amelyet már elküldtek a szállítóknak, akkor megadhatja a válaszaikat a Kérdőív szakaszban.  
-7. Zárja be a lapot.
+## <a name="score-the-bid"></a><span data-ttu-id="d1674-124">Ajánlat pontozása</span><span class="sxs-lookup"><span data-stu-id="d1674-124">Score the bid</span></span>
+1. <span data-ttu-id="d1674-125">Kattintson a Fejlécre az ajánlat pontozására történő ugráshoz.</span><span class="sxs-lookup"><span data-stu-id="d1674-125">Click Header to go to the scoring of the bid.</span></span>
+2. <span data-ttu-id="d1674-126">Bontsa ki az ajánlat pontozási szakaszát.</span><span class="sxs-lookup"><span data-stu-id="d1674-126">Expand the Bid scoring section.</span></span>
+3. <span data-ttu-id="d1674-127">A pontszám mezőben adja meg a pontozási feltételek egyikét.</span><span class="sxs-lookup"><span data-stu-id="d1674-127">In the Score field, enter a number for one of the scoring criteria.</span></span>
+    * <span data-ttu-id="d1674-128">Ha a mutatót valamelyik pontozási feltétel fölé viszi, akkor az elemleírás megjeleníti azt a tartományt, amelyen belül el kell végeznie a pontozást.</span><span class="sxs-lookup"><span data-stu-id="d1674-128">If you hover over one of the scoring criteria a tooltip shows the range that you have to score within.</span></span> <span data-ttu-id="d1674-129">Ebben a bemutatóban hozzáadhat egy 1 és 5 közötti számot a feltételek bármelyikéhez.</span><span class="sxs-lookup"><span data-stu-id="d1674-129">In this demo you can add a number between 1 and 5 to any of the criteria.</span></span>  
+4. <span data-ttu-id="d1674-130">Válasszon ki egy másik pontozási feltételt.</span><span class="sxs-lookup"><span data-stu-id="d1674-130">Select another scoring criterion.</span></span>
+5. <span data-ttu-id="d1674-131">A pontszám mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="d1674-131">In the Score field, enter a number.</span></span>
+6. <span data-ttu-id="d1674-132">Bontsa ki a Kérdőívek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="d1674-132">Expand the Questionnaires section.</span></span>
+    * <span data-ttu-id="d1674-133">Ha az ajánlatkérés egy olyan kérdőívet tartalmaz, amelyet már elküldtek a szállítóknak, akkor megadhatja a válaszaikat a Kérdőív szakaszban.</span><span class="sxs-lookup"><span data-stu-id="d1674-133">If the RFQ case has a questionnaire that was sent to the vendors, you can enter their responses in the questionnaire section.</span></span>  
+7. <span data-ttu-id="d1674-134">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="d1674-134">Close the page.</span></span>
 
-## <a name="enter-a-reply-for-another-vendor"></a>Adjon meg egy másik szállítóra vonatkozó választ
-1. Válassza ki a következő szállítót, azon szállító törlésével, akire vonatkozóan megadta a választ és ezt követően a következő szállító sorának kiválasztásával.
-2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. Kattintson a Válasz beírása gombra.
-4. Kattintson az Adatok másolása a válaszba elemre.
-5. Kattintson a Szerkesztés lehetőségre.
-6. Adjon meg egy számot az Egységár mezőben.
-7. Válasszon egy másik árajánlatsort.
-8. Adjon meg egy számot az Egységár mezőben.
+## <a name="enter-a-reply-for-another-vendor"></a><span data-ttu-id="d1674-135">Adjon meg egy másik szállítóra vonatkozó választ</span><span class="sxs-lookup"><span data-stu-id="d1674-135">Enter a reply for another vendor</span></span>
+1. <span data-ttu-id="d1674-136">Válassza ki a következő szállítót, azon szállító törlésével, akire vonatkozóan megadta a választ és ezt követően a következő szállító sorának kiválasztásával.</span><span class="sxs-lookup"><span data-stu-id="d1674-136">Select the next vendor by clearing the vendor you have just entered the reply for and then selecting the row for the next vendor.</span></span>
+2. <span data-ttu-id="d1674-137">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="d1674-137">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="d1674-138">Kattintson a Válasz beírása gombra.</span><span class="sxs-lookup"><span data-stu-id="d1674-138">Click Enter reply.</span></span>
+4. <span data-ttu-id="d1674-139">Kattintson az Adatok másolása a válaszba elemre.</span><span class="sxs-lookup"><span data-stu-id="d1674-139">Click Copy data to reply.</span></span>
+5. <span data-ttu-id="d1674-140">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d1674-140">Click Edit.</span></span>
+6. <span data-ttu-id="d1674-141">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="d1674-141">In the Unit price field, enter a number.</span></span>
+7. <span data-ttu-id="d1674-142">Válasszon egy másik árajánlatsort.</span><span class="sxs-lookup"><span data-stu-id="d1674-142">Choose the other quotation line.</span></span>
+8. <span data-ttu-id="d1674-143">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="d1674-143">In the Unit price field, enter a number.</span></span>
 
-## <a name="score-the-second-bid"></a>Második ajánlat pontozása
-1. Kattintson a Fejlécre az ajánlat pontozására történő ugráshoz.
-2. A pontszám mezőben adjon meg egy számot.
-3. Keresse meg és jelölje ki a kívánt rekordot a listán.
-4. A pontszám mezőben adjon meg egy számot.
+## <a name="score-the-second-bid"></a><span data-ttu-id="d1674-144">Második ajánlat pontozása</span><span class="sxs-lookup"><span data-stu-id="d1674-144">Score the second bid</span></span>
+1. <span data-ttu-id="d1674-145">Kattintson a Fejlécre az ajánlat pontozására történő ugráshoz.</span><span class="sxs-lookup"><span data-stu-id="d1674-145">Click Header to go to scoring of the bid.</span></span>
+2. <span data-ttu-id="d1674-146">A pontszám mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="d1674-146">In the Score field, enter a number.</span></span>
+3. <span data-ttu-id="d1674-147">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="d1674-147">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="d1674-148">A pontszám mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="d1674-148">In the Score field, enter a number.</span></span>
 
-## <a name="compare-the-replies"></a>Válaszok összehasonlítása
-1. A Művelet panelen kattintson az Általános elemre.
-2. Kattintson a Válaszok összehasonlítása elemre.
-3. Adjon meg egy számot a helyezés mezőben.
-    * Ez a lap megjeleníti a fejléccel és sorokkal ellátott ajánlatokat, és a fejléc szintjén szereplő összpontszámot. Összehasonlíthatja a sorokat a rácsba történő rendezéssel, ami által az összehasonlítható sorok egymás mellé kerülnek. Az információ szintén tartalmazza: Mennyiség: A szállító által ajánlott mennyiség. Ez a mennyiség eltérhet az ajánlatkérésben szereplő mennyiségtől.   Nettó összeg: A szállító által ajánlott összeg, a sor cikkeire vonatkozó bármely engedmény levonása után.   Eltérés: Az ajánlat fejlécében vagy sorában megadott szállítási dátum ennyi nappal tér el az ajánlatkérés fejlécében vagy az ajánlatkérés sorában kért szállítási dátumtól.   Minden egyes ajánlat rangsorban elfoglalt helyét megadhatja.  
-4. Válassza ki az azokra az ajánlatokra vonatkozó fejlécet, amelyeket rangsorolni kíván.
-5. Adjon meg egy számot a helyezés mezőben.
-6. Kattintson a Mentés gombra.
+## <a name="compare-the-replies"></a><span data-ttu-id="d1674-149">Válaszok összehasonlítása</span><span class="sxs-lookup"><span data-stu-id="d1674-149">Compare the replies</span></span>
+1. <span data-ttu-id="d1674-150">A Művelet panelen kattintson az Általános elemre.</span><span class="sxs-lookup"><span data-stu-id="d1674-150">On the Action Pane, click General.</span></span>
+2. <span data-ttu-id="d1674-151">Kattintson a Válaszok összehasonlítása elemre.</span><span class="sxs-lookup"><span data-stu-id="d1674-151">Click Compare replies.</span></span>
+3. <span data-ttu-id="d1674-152">Adjon meg egy számot a helyezés mezőben.</span><span class="sxs-lookup"><span data-stu-id="d1674-152">In the Rank field, enter a number.</span></span>
+    * <span data-ttu-id="d1674-153">Ez a lap megjeleníti a fejléccel és sorokkal ellátott ajánlatokat, és a fejléc szintjén szereplő összpontszámot.</span><span class="sxs-lookup"><span data-stu-id="d1674-153">This page shows the bids with the header and lines, and the total score on the header level.</span></span> <span data-ttu-id="d1674-154">Összehasonlíthatja a sorokat a rácsba történő rendezéssel, ami által az összehasonlítható sorok egymás mellé kerülnek.</span><span class="sxs-lookup"><span data-stu-id="d1674-154">You can compare the lines by sorting in the grid so that comparable lines are next to each other.</span></span> <span data-ttu-id="d1674-155">Az információ szintén tartalmazza: Mennyiség: A szállító által ajánlott mennyiség.</span><span class="sxs-lookup"><span data-stu-id="d1674-155">The information also includes:   Quantity: The quantity quoted by the vendor.</span></span> <span data-ttu-id="d1674-156">Ez a mennyiség eltérhet az ajánlatkérésben szereplő mennyiségtől.</span><span class="sxs-lookup"><span data-stu-id="d1674-156">This might not equal the quantity specified in the RFQ.</span></span>   <span data-ttu-id="d1674-157">Nettó összeg: A szállító által ajánlott összeg, a sor cikkeire vonatkozó bármely engedmény levonása után.</span><span class="sxs-lookup"><span data-stu-id="d1674-157">Net amount: The price quoted by a vendor, after subtracting any discounts, for the items on the line.</span></span>   <span data-ttu-id="d1674-158">Eltérés: Az ajánlat fejlécében vagy sorában megadott szállítási dátum ennyi nappal tér el az ajánlatkérés fejlécében vagy az ajánlatkérés sorában kért szállítási dátumtól.</span><span class="sxs-lookup"><span data-stu-id="d1674-158">Deviation: The number of days that the delivery date in the bid header or line deviates from the requested delivery date in the RFQ header or RFQ line.</span></span>   <span data-ttu-id="d1674-159">Minden egyes ajánlat rangsorban elfoglalt helyét megadhatja.</span><span class="sxs-lookup"><span data-stu-id="d1674-159">You can enter a rank for each bid.</span></span>  
+4. <span data-ttu-id="d1674-160">Válassza ki az azokra az ajánlatokra vonatkozó fejlécet, amelyeket rangsorolni kíván.</span><span class="sxs-lookup"><span data-stu-id="d1674-160">Select the header line for the other bid that you want to rank.</span></span>
+5. <span data-ttu-id="d1674-161">Adjon meg egy számot a helyezés mezőben.</span><span class="sxs-lookup"><span data-stu-id="d1674-161">In the Rank field, enter a number.</span></span>
+6. <span data-ttu-id="d1674-162">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="d1674-162">Click Save.</span></span>
 
-## <a name="reject-a-bid"></a>Ajánlat elutasítása
-1. Válassza ki az azokra az ajánlatokra vonatkozó fejlécet, amelyeket el akar utasítani.
-    * Egyszerre csak egy ajánlatot vagy az ajánlaton belül szereplő sorokat fogadhatja el, utasíthatja el, vagy küldheti vissza.  
-2. Jelölje be a Megjelölve jelölőnégyzetet.
-    * Ha az ajánlat fejlécének jelölőnégyzetét bejelöli, akkor az összes sor meg lesz jelölve. Kijelölheti az ajánlaton belül szereplő sorok egy részét azok elutasításához vagy elfogadásához. Arra is lehetőség van, hogy egy ajánlatkérés néhány sorára vonatkozó szállító ajánlatát elfogadja, és ezt követően a többi ajánlatkérés sorát a különböző szállítókhoz rendelje. Azonban két lépésben tudja ezt csak megtenni és egyszerre csak egy ajánlatot tud elvégezni. Ha az alternatívasorok elérhetőek, akkor vagy csak az eredeti ajánlat sorát vagy csak annak alternatíváját fogadhatja el, de mindkettőt egyszerre nem.  
-3. Kattintson az elutasítás elemre.
-4. A „Paraméter” gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-5. A Ok elutasítás mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az elutasítás okát a rendszer a válaszban tárolja.  
-6. Kattintson az OK gombra.
-7. Kattintson az OK gombra.
-8. Zárja be a lapot.
-9. Zárja be a lapot.
-10. Frissítse a lapot..
+## <a name="reject-a-bid"></a><span data-ttu-id="d1674-163">Ajánlat elutasítása</span><span class="sxs-lookup"><span data-stu-id="d1674-163">Reject a bid</span></span>
+1. <span data-ttu-id="d1674-164">Válassza ki az azokra az ajánlatokra vonatkozó fejlécet, amelyeket el akar utasítani.</span><span class="sxs-lookup"><span data-stu-id="d1674-164">Select the header line for the bid that you want to reject.</span></span>
+    * <span data-ttu-id="d1674-165">Egyszerre csak egy ajánlatot vagy az ajánlaton belül szereplő sorokat fogadhatja el, utasíthatja el, vagy küldheti vissza.</span><span class="sxs-lookup"><span data-stu-id="d1674-165">You can only accept, reject, or return one bid or lines within one bid at a time.</span></span>  
+2. <span data-ttu-id="d1674-166">Jelölje be a Megjelölve jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="d1674-166">Select the Mark check box.</span></span>
+    * <span data-ttu-id="d1674-167">Ha az ajánlat fejlécének jelölőnégyzetét bejelöli, akkor az összes sor meg lesz jelölve.</span><span class="sxs-lookup"><span data-stu-id="d1674-167">If you select the Mark check box on the Header of the bid then all the lines will be marked as well.</span></span> <span data-ttu-id="d1674-168">Kijelölheti az ajánlaton belül szereplő sorok egy részét azok elutasításához vagy elfogadásához.</span><span class="sxs-lookup"><span data-stu-id="d1674-168">You could also choose to mark a subset of the lines within the bid to reject or accept those.</span></span> <span data-ttu-id="d1674-169">Arra is lehetőség van, hogy egy ajánlatkérés néhány sorára vonatkozó szállító ajánlatát elfogadja, és ezt követően a többi ajánlatkérés sorát a különböző szállítókhoz rendelje. Azonban két lépésben tudja ezt csak megtenni és egyszerre csak egy ajánlatot tud elvégezni.</span><span class="sxs-lookup"><span data-stu-id="d1674-169">It’s possible to accept one vendor’s bid for some lines of an RFQ, and then award other RFQ lines to a different vendor, however you need to do this in 2 steps, one bid at a time.</span></span> <span data-ttu-id="d1674-170">Ha az alternatívasorok elérhetőek, akkor vagy csak az eredeti ajánlat sorát vagy csak annak alternatíváját fogadhatja el, de mindkettőt egyszerre nem.</span><span class="sxs-lookup"><span data-stu-id="d1674-170">If alternate lines are present, you can only accept either the original bid line or its alternate, but not both.</span></span>  
+3. <span data-ttu-id="d1674-171">Kattintson az elutasítás elemre.</span><span class="sxs-lookup"><span data-stu-id="d1674-171">Click Reject.</span></span>
+4. <span data-ttu-id="d1674-172">A „Paraméter” gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="d1674-172">Click Parameters to open the drop dialog.</span></span>
+5. <span data-ttu-id="d1674-173">A Ok elutasítás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d1674-173">In the Reason reject field, enter or select a value.</span></span>
+    * <span data-ttu-id="d1674-174">Az elutasítás okát a rendszer a válaszban tárolja.</span><span class="sxs-lookup"><span data-stu-id="d1674-174">The reason for rejection will be stored on the reply.</span></span>  
+6. <span data-ttu-id="d1674-175">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d1674-175">Click OK.</span></span>
+7. <span data-ttu-id="d1674-176">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d1674-176">Click OK.</span></span>
+8. <span data-ttu-id="d1674-177">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="d1674-177">Close the page.</span></span>
+9. <span data-ttu-id="d1674-178">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="d1674-178">Close the page.</span></span>
+10. <span data-ttu-id="d1674-179">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="d1674-179">Refresh the page.</span></span>
 
-## <a name="accept-a-bid"></a>Válasz elfogadása
-1. Válassza ki azt az ajánlatot, amelyet el akar fogadni majd kattintson az Ajánlatkérés mezőjében szereplő hivatkozásra.
-2. A Művelet panelen kattintson a Válasz elemre.
-3. Kattintson az Elfogadás lehetőségre.
-    * Ha megjelölt bizonyos sorokat, akkor nem más, mint az elfogadás művelet tartalmazni fogja a megjelölt sorokat. Ha elfogadja az ajánlat összes sorát, akkor nem kell bejelölni a sorokat.  
-4. A „Paraméter” gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-    * Ez lehetővé teszi az ajánlat elfogadására vonatkozó ok rögzítését. Az okot a rendszer az ajánlatban tárolja.  
-5. A Ok elfogadása mezőben adjon meg vagy válasszon ki egy értéket.
-6. Kattintson az OK gombra.
-7. Kattintson az OK gombra.
-    * Amikor az Ok gombra kattint, a rendszer az Ajánlatkérés elfogadás sorain alapuló beszerzési rendelést hoz létre. Más ajánlatok esetén, amelyek még nincsenek feldolgozva (elfogadva, elutasítva vagy visszaadva) esetén a rendszer figyelmezteti Önt a fennmaradó ajánlatok elutasítására.  
+## <a name="accept-a-bid"></a><span data-ttu-id="d1674-180">Válasz elfogadása</span><span class="sxs-lookup"><span data-stu-id="d1674-180">Accept a bid</span></span>
+1. <span data-ttu-id="d1674-181">Válassza ki azt az ajánlatot, amelyet el akar fogadni majd kattintson az Ajánlatkérés mezőjében szereplő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="d1674-181">Select the bid that you want to accept and then click the link in the Request for quotation field.</span></span>
+2. <span data-ttu-id="d1674-182">A Művelet panelen kattintson a Válasz elemre.</span><span class="sxs-lookup"><span data-stu-id="d1674-182">On the Action Pane, click Reply.</span></span>
+3. <span data-ttu-id="d1674-183">Kattintson az Elfogadás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d1674-183">Click Accept.</span></span>
+    * <span data-ttu-id="d1674-184">Ha megjelölt bizonyos sorokat, akkor nem más, mint az elfogadás művelet tartalmazni fogja a megjelölt sorokat.</span><span class="sxs-lookup"><span data-stu-id="d1674-184">If you have marked specific lines and not others then the accept action will only include the marked lines.</span></span> <span data-ttu-id="d1674-185">Ha elfogadja az ajánlat összes sorát, akkor nem kell bejelölni a sorokat.</span><span class="sxs-lookup"><span data-stu-id="d1674-185">If you want to accept all lines on the bid then you do not have to mark the lines.</span></span>  
+4. <span data-ttu-id="d1674-186">A „Paraméter” gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="d1674-186">Click Parameters to open the drop dialog.</span></span>
+    * <span data-ttu-id="d1674-187">Ez lehetővé teszi az ajánlat elfogadására vonatkozó ok rögzítését.</span><span class="sxs-lookup"><span data-stu-id="d1674-187">This allows you to record a reason for accepting the bid.</span></span> <span data-ttu-id="d1674-188">Az okot a rendszer az ajánlatban tárolja.</span><span class="sxs-lookup"><span data-stu-id="d1674-188">The reason will be stored on the bid.</span></span>  
+5. <span data-ttu-id="d1674-189">A Ok elfogadása mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d1674-189">In the Reason accept field, enter or select a value.</span></span>
+6. <span data-ttu-id="d1674-190">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d1674-190">Click OK.</span></span>
+7. <span data-ttu-id="d1674-191">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d1674-191">Click OK.</span></span>
+    * <span data-ttu-id="d1674-192">Amikor az Ok gombra kattint, a rendszer az Ajánlatkérés elfogadás sorain alapuló beszerzési rendelést hoz létre.</span><span class="sxs-lookup"><span data-stu-id="d1674-192">When you click OK this generates a purchase order based on the lines that are included in the RFQ acceptance.</span></span> <span data-ttu-id="d1674-193">Más ajánlatok esetén, amelyek még nincsenek feldolgozva (elfogadva, elutasítva vagy visszaadva) esetén a rendszer figyelmezteti Önt a fennmaradó ajánlatok elutasítására.</span><span class="sxs-lookup"><span data-stu-id="d1674-193">If there are other bids that have not been processed (accepted, rejected, or returned) then the system will prompt you to reject the remaining bids.</span></span>  
 
-## <a name="view-the-purchase-order-thats-been-generated"></a>A létrejött beszerzési rendelés megtekintése
-1. A Művelet panelen kattintson az Általános elemre.
-2. Kattintson a Beszerzési rendelés lehetőségre.
-    * Itt látható az ajánlat elfogadásakor létrehozott beszerzési rendelés.  
-3. Zárja be a lapot.
-4. Zárja be a lapot.
-5. Zárja be a lapot.
-6. Zárja be a lapot.
+## <a name="view-the-purchase-order-thats-been-generated"></a><span data-ttu-id="d1674-194">A létrejött beszerzési rendelés megtekintése</span><span class="sxs-lookup"><span data-stu-id="d1674-194">View the purchase order that's been generated</span></span>
+1. <span data-ttu-id="d1674-195">A Művelet panelen kattintson az Általános elemre.</span><span class="sxs-lookup"><span data-stu-id="d1674-195">On the Action Pane, click General.</span></span>
+2. <span data-ttu-id="d1674-196">Kattintson a Beszerzési rendelés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d1674-196">Click Purchase order.</span></span>
+    * <span data-ttu-id="d1674-197">Itt látható az ajánlat elfogadásakor létrehozott beszerzési rendelés.</span><span class="sxs-lookup"><span data-stu-id="d1674-197">Here you can see the purchase order that was generated when you accepted the bid.</span></span>  
+3. <span data-ttu-id="d1674-198">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="d1674-198">Close the page.</span></span>
+4. <span data-ttu-id="d1674-199">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="d1674-199">Close the page.</span></span>
+5. <span data-ttu-id="d1674-200">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="d1674-200">Close the page.</span></span>
+6. <span data-ttu-id="d1674-201">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="d1674-201">Close the page.</span></span>
 
 

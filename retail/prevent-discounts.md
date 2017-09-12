@@ -26,19 +26,19 @@ ms.lasthandoff: 07/31/2017
 
 ---
 
-# <a name="prevent-discounts-for-retail-products"></a>Kiskereskedelmi termékek engedményeinek megakadályozása
+# <a name="prevent-discounts-for-retail-products"></a><span data-ttu-id="788ba-103">Kiskereskedelmi termékek engedményeinek megakadályozása</span><span class="sxs-lookup"><span data-stu-id="788ba-103">Prevent discounts for retail products</span></span>
 
 [!include[banner](includes/banner.md)]
 
-Különböző okai lehetnek annak, hogy a kiskereskedők megakadályozzák bizonyos termékek engedménnyel való ellátását, akár promóció, akár a POS-ban történő eladás során.
+<span data-ttu-id="788ba-104">Különböző okai lehetnek annak, hogy a kiskereskedők megakadályozzák bizonyos termékek engedménnyel való ellátását, akár promóció, akár a POS-ban történő eladás során.</span><span class="sxs-lookup"><span data-stu-id="788ba-104">There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.</span></span>
 
-A következő opciók, amelyek a kiadott termékek **Kiskereskedelem** lapján találhatók, lehetővé teszik a termék konfigurálását az összes vagy a manuális kedvezmények megakadályozása érdekében. A beállítások kategóriaszinten is meghatározhatók a kiskereskedelmi kategóriák hierarchiájából.
+<span data-ttu-id="788ba-105">A következő opciók, amelyek a kiadott termékek **Kiskereskedelem** lapján találhatók, lehetővé teszik a termék konfigurálását az összes vagy a manuális kedvezmények megakadályozása érdekében.</span><span class="sxs-lookup"><span data-stu-id="788ba-105">The following options, which can be found on the **Retail** tab of released products, will allow the product to be configured to prevent all or manual discounts.</span></span> <span data-ttu-id="788ba-106">A beállítások kategóriaszinten is meghatározhatók a kiskereskedelmi kategóriák hierarchiájából.</span><span class="sxs-lookup"><span data-stu-id="788ba-106">The settings can also be specified at the category level from the retail category hierarchy.</span></span>
 
-**Minden kedvezmény megakadályozása**: Válassza ezt a lehetőséget, hogy megakadályozza bármilyen típusú kedvezmény alkalmazását erre a termékre. Ilyenek például a kombinációs engedmények, a mennyiségi engedmények és a küszöbérték szerinti engedmények, valamint a POS-felhasználó által az értékesítés során alkalmazott manuális sor- és tranzakciós engedmények.
+<span data-ttu-id="788ba-107">**Minden kedvezmény megakadályozása**: Válassza ezt a lehetőséget, hogy megakadályozza bármilyen típusú kedvezmény alkalmazását erre a termékre.</span><span class="sxs-lookup"><span data-stu-id="788ba-107">**Prevent all discounts**: Select this option to prevent all types of discounts from being applied to this product.</span></span> <span data-ttu-id="788ba-108">Ilyenek például a kombinációs engedmények, a mennyiségi engedmények és a küszöbérték szerinti engedmények, valamint a POS-felhasználó által az értékesítés során alkalmazott manuális sor- és tranzakciós engedmények.</span><span class="sxs-lookup"><span data-stu-id="788ba-108">This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.</span></span>
 
-**Manuális engedmények megakadályozása**: Ezzel a beállítással csak a POS-felhasználó által az értékesítés során alkalmazott manuális vagy tranzakciós engedményeket akadályozza meg. Az ezzel a lehetőséggel rendelkező termékek továbbra is jogosultak az olyan promóciókra, mint például a kombinációs engedmények, a mennyiségi és a küszöbérték szerinti engedmények.
+<span data-ttu-id="788ba-109">**Manuális engedmények megakadályozása**: Ezzel a beállítással csak a POS-felhasználó által az értékesítés során alkalmazott manuális vagy tranzakciós engedményeket akadályozza meg.</span><span class="sxs-lookup"><span data-stu-id="788ba-109">**Prevent manual discounts**: Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user.</span></span> <span data-ttu-id="788ba-110">Az ezzel a lehetőséggel rendelkező termékek továbbra is jogosultak az olyan promóciókra, mint például a kombinációs engedmények, a mennyiségi és a küszöbérték szerinti engedmények.</span><span class="sxs-lookup"><span data-stu-id="788ba-110">Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.</span></span>
 
-**Megjegyzés:**: Ezek a beállítások nem korlátozzák az árfelülírás műveletet, mivel a beállítás az alapárat határozza meg, és nem minősül kedvezménynek.  
+<span data-ttu-id="788ba-111">**Megjegyzés:**: Ezek a beállítások nem korlátozzák az árfelülírás műveletet, mivel a beállítás az alapárat határozza meg, és nem minősül kedvezménynek.</span><span class="sxs-lookup"><span data-stu-id="788ba-111">**Note**: These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.</span></span>  
 
 ![engedmények megakadályozása mező](/media/prevent-discounts.png)
 

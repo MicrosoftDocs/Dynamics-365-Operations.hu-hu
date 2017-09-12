@@ -16,51 +16,51 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e84432faf32e519059a21d2b56e320a46599c1e8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: adb759c59d7275e7323dbb760de56acdef2e3cff
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-vendor-bank-account"></a>Szállítói bankszámla létrehozása
+# <a name="create-a-vendor-bank-account"></a><span data-ttu-id="b600c-103">Szállítói bankszámla létrehozása</span><span class="sxs-lookup"><span data-stu-id="b600c-103">Create a vendor bank account</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja a szállítóhoz tartozó bankszámla létrehozásának módját. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
+<span data-ttu-id="b600c-104">Ez az eljárás bemutatja a szállítóhoz tartozó bankszámla létrehozásának módját.</span><span class="sxs-lookup"><span data-stu-id="b600c-104">This procedure shows you how to create a bank account for a vendor.</span></span> <span data-ttu-id="b600c-105">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="b600c-105">You can use this procedure in demo data company USMF.</span></span>
 
-1. Ugrás a Beszerzés és forrás > Beszállítók > Minden szállító pontra.
-2. Válassza ki azt a szállítót, akihez létre szeretne hozni bankszámlát, majd kattintson a Szállítói számla azonosítón található hivatkozásra.
-3. A Művelet ablaktáblában kattintson a Szállító elemre.
-4. Kattintson a Bankszámlák lehetőségre.
-5. Kattintson az Új lehetőségre.
-6. A Bankszámla mezőben adjon meg egy értéket.
-    * Ez az azonosító a szállítói rekordban szereplő bankszámla azonosítására szolgál.  
-7. Írjon be egy értéket a Név mezőbe.
-8. A Bankcsoportok mezőben adjon meg vagy válasszon ki egy értéket.
-9. Válasszon ki egy beállítást az Útvonalszám típusa mezőben.
-    * Ez a nemzetközi fizetésekhez használt útvonaltervezés típusa.  
-10. A Bankszámlaszám mezőben adjon meg egy értéket.
-11. A SWIFT kód mezőbe írjon be egy értéket.
-12. Az IBAN mezőben adjon meg egy értéket.
-    * Megfelelő formátumban kell megadni az IBAN számot. Például, a következő számot használhatja: DE89370400440532013000.  
-    * A bankszámla állapota aktív, ha a rendszer elérte az Aktivitás dátumát, és nem lépte túl a Lejárati dátumot. Ez akkor is aktív, ha az Aktiválás dátuma és a Lejárati dátum mező egyaránt üres. Ha az Aktiválás dátuma és a Lejárati dátum mezőben szereplő dátumok egyaránt jövőbeli dátumok, akkor nincs lehetőség elektronikus fizetésre. A bankszámla egyébként aktív, és az egyéb fizetési típusok alkalmazhatók.  
-13. Bontsa ki a Beállítások szakaszt.
-14. Adjon meg egy értéket a Szöveges kód mezőben.
-    * Ez a mező egy olyan kódot határoz meg, amely az átvevő banki kivonatán fog megjelenni.  
-15. Adjon meg egy értéket az Üzenet a banknak mezőben.
-16. Adjon meg egy értéket az Árfolyam-hivatkozás mezőben.
-    * Ez az esetleges előzetes vagy a rögzített átváltási árfolyam hivatkozási száma.  
-17. A Pénznem mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az ellenőrző tranzakciók elküldésekor, ez a szakasz egy áttekintést nyújt a (folyamatban lévő vagy engedélyezett) állapotukról.  
-18. Bontsa ki a Cím szakaszt.
-19. Bontsa ki az Ellenőrző tranzakciók szakaszt.
-20. Bontsa ki vagy csukja össze a Kapcsolattartási adatok szakaszt.
-21. Írjon be egy értéket a Telefon mezőbe.
-22. Zárja be a lapot.
-23. Kattintson a Szerkesztés lehetőségre.
-24. Bontsa ki a Kifizetés szakaszt.
-25. Válassza ki az újonnan létrehozott számlát a Bankszámla mezőben.
-26. Kattintson a Mentés gombra.
-    * A cím örökölhető a banki csoporttól, ha meg van határozva egy cím, illetve itt, hozzá is adhatja azt.  
+1. <span data-ttu-id="b600c-106">Ugrás a Beszerzés és forrás > Beszállítók > Minden szállító pontra.</span><span class="sxs-lookup"><span data-stu-id="b600c-106">Go to Procurement and sourcing > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="b600c-107">Válassza ki azt a szállítót, akihez létre szeretne hozni bankszámlát, majd kattintson a Szállítói számla azonosítón található hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="b600c-107">Select the vendor that you want to create a bank account for, and then click the link on the Vendor account ID.</span></span>
+3. <span data-ttu-id="b600c-108">A Művelet ablaktáblában kattintson a Szállító elemre.</span><span class="sxs-lookup"><span data-stu-id="b600c-108">On the Action Pane, click Vendor.</span></span>
+4. <span data-ttu-id="b600c-109">Kattintson a Bankszámlák lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b600c-109">Click Bank accounts.</span></span>
+5. <span data-ttu-id="b600c-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b600c-110">Click New.</span></span>
+6. <span data-ttu-id="b600c-111">A Bankszámla mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b600c-111">In the Bank account field, type a value.</span></span>
+    * <span data-ttu-id="b600c-112">Ez az azonosító a szállítói rekordban szereplő bankszámla azonosítására szolgál.</span><span class="sxs-lookup"><span data-stu-id="b600c-112">This ID will be used to identify the bank account on the vendor record.</span></span>  
+7. <span data-ttu-id="b600c-113">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="b600c-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="b600c-114">A Bankcsoportok mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b600c-114">In the Bank groups field, enter or select a value.</span></span>
+9. <span data-ttu-id="b600c-115">Válasszon ki egy beállítást az Útvonalszám típusa mezőben.</span><span class="sxs-lookup"><span data-stu-id="b600c-115">In the Routing number type field, select an option.</span></span>
+    * <span data-ttu-id="b600c-116">Ez a nemzetközi fizetésekhez használt útvonaltervezés típusa.</span><span class="sxs-lookup"><span data-stu-id="b600c-116">This is the type of routing number that’s used for international payments.</span></span>  
+10. <span data-ttu-id="b600c-117">A Bankszámlaszám mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b600c-117">In the Bank account number field, type a value.</span></span>
+11. <span data-ttu-id="b600c-118">A SWIFT kód mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b600c-118">In the SWIFT code field, type a value.</span></span>
+12. <span data-ttu-id="b600c-119">Az IBAN mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b600c-119">In the IBAN field, type a value.</span></span>
+    * <span data-ttu-id="b600c-120">Megfelelő formátumban kell megadni az IBAN számot.</span><span class="sxs-lookup"><span data-stu-id="b600c-120">The IBAN number must be in the correct format.</span></span> <span data-ttu-id="b600c-121">Például, a következő számot használhatja: DE89370400440532013000.</span><span class="sxs-lookup"><span data-stu-id="b600c-121">For example, you could use DE89370400440532013000.</span></span>  
+    * <span data-ttu-id="b600c-122">A bankszámla állapota aktív, ha a rendszer elérte az Aktivitás dátumát, és nem lépte túl a Lejárati dátumot.</span><span class="sxs-lookup"><span data-stu-id="b600c-122">The status of the bank account is Active if the Active date has been reached, and the Expiration date has not been exceeded.</span></span> <span data-ttu-id="b600c-123">Ez akkor is aktív, ha az Aktiválás dátuma és a Lejárati dátum mező egyaránt üres.</span><span class="sxs-lookup"><span data-stu-id="b600c-123">It’s also active if both the Active date and Expiration date fields are blank.</span></span> <span data-ttu-id="b600c-124">Ha az Aktiválás dátuma és a Lejárati dátum mezőben szereplő dátumok egyaránt jövőbeli dátumok, akkor nincs lehetőség elektronikus fizetésre.</span><span class="sxs-lookup"><span data-stu-id="b600c-124">If the dates in both the Active date and Expiration date fields are in the future electronic payments are not available.</span></span> <span data-ttu-id="b600c-125">A bankszámla egyébként aktív, és az egyéb fizetési típusok alkalmazhatók.</span><span class="sxs-lookup"><span data-stu-id="b600c-125">Other payment types are available and the bank account is active.</span></span>  
+13. <span data-ttu-id="b600c-126">Bontsa ki a Beállítások szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b600c-126">Expand the Setup section.</span></span>
+14. <span data-ttu-id="b600c-127">Adjon meg egy értéket a Szöveges kód mezőben.</span><span class="sxs-lookup"><span data-stu-id="b600c-127">In the Text code field, type a value.</span></span>
+    * <span data-ttu-id="b600c-128">Ez a mező egy olyan kódot határoz meg, amely az átvevő banki kivonatán fog megjelenni.</span><span class="sxs-lookup"><span data-stu-id="b600c-128">This field specifies a code that will appear on the bank statement of the recipient.</span></span>  
+15. <span data-ttu-id="b600c-129">Adjon meg egy értéket az Üzenet a banknak mezőben.</span><span class="sxs-lookup"><span data-stu-id="b600c-129">In the Message to bank field, type a value.</span></span>
+16. <span data-ttu-id="b600c-130">Adjon meg egy értéket az Árfolyam-hivatkozás mezőben.</span><span class="sxs-lookup"><span data-stu-id="b600c-130">In the Exchange reference field, type a value.</span></span>
+    * <span data-ttu-id="b600c-131">Ez az esetleges előzetes vagy a rögzített átváltási árfolyam hivatkozási száma.</span><span class="sxs-lookup"><span data-stu-id="b600c-131">This is the reference number for any forward-term or fixed-term rate of exchange.</span></span>  
+17. <span data-ttu-id="b600c-132">A Pénznem mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b600c-132">In the Currency field, enter or select a value.</span></span>
+    * <span data-ttu-id="b600c-133">Az ellenőrző tranzakciók elküldésekor, ez a szakasz egy áttekintést nyújt a (folyamatban lévő vagy engedélyezett) állapotukról.</span><span class="sxs-lookup"><span data-stu-id="b600c-133">When prenotes are issued, this section provides an overview of their status (pending or approved).</span></span>  
+18. <span data-ttu-id="b600c-134">Bontsa ki a Cím szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b600c-134">Expand the Address section.</span></span>
+19. <span data-ttu-id="b600c-135">Bontsa ki az Ellenőrző tranzakciók szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b600c-135">Expand the Prenotes section.</span></span>
+20. <span data-ttu-id="b600c-136">Bontsa ki vagy csukja össze a Kapcsolattartási adatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b600c-136">Expand the Contact information section.</span></span>
+21. <span data-ttu-id="b600c-137">Írjon be egy értéket a Telefon mezőbe.</span><span class="sxs-lookup"><span data-stu-id="b600c-137">In the Telephone field, type a value.</span></span>
+22. <span data-ttu-id="b600c-138">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="b600c-138">Close the page.</span></span>
+23. <span data-ttu-id="b600c-139">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b600c-139">Click Edit.</span></span>
+24. <span data-ttu-id="b600c-140">Bontsa ki a Kifizetés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b600c-140">Expand the Payment section.</span></span>
+25. <span data-ttu-id="b600c-141">Válassza ki az újonnan létrehozott számlát a Bankszámla mezőben.</span><span class="sxs-lookup"><span data-stu-id="b600c-141">In the Bank  account field, select the account that you’ve just created.</span></span>
+26. <span data-ttu-id="b600c-142">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="b600c-142">Click Save.</span></span>
+    * <span data-ttu-id="b600c-143">A cím örökölhető a banki csoporttól, ha meg van határozva egy cím, illetve itt, hozzá is adhatja azt.</span><span class="sxs-lookup"><span data-stu-id="b600c-143">The address may be inherited from the bank group, if one is specified, or you can add it here.</span></span>  
 
 

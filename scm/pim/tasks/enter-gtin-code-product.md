@@ -16,29 +16,29 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: cddfad1042fc3c4dcab7be11fcca43f6f4722380
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0d1fc9e34ce7bfbb9a57ffaf40f8a7056f114972
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enter-the-gtin-code-for-a-product"></a>Adja meg a GTIN-kódot a termékhez
+# <a name="enter-the-gtin-code-for-a-product"></a><span data-ttu-id="f7e4a-103">Adja meg a GTIN-kódot a termékhez</span><span class="sxs-lookup"><span data-stu-id="f7e4a-103">Enter the GTIN code for a product</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A GTIN-kódok kiosztását a GS1 szervezet végzi. Ebben a példában termékszámként az M0001 kódot adja meg az USMF bemutatócég számára.
+<span data-ttu-id="f7e4a-104">A GTIN-kódok kiosztását a GS1 szervezet végzi.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-104">GTIN codes are assigned by the GS1 organization.</span></span> <span data-ttu-id="f7e4a-105">Ebben a példában termékszámként az M0001 kódot adja meg az USMF bemutatócég számára.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-105">In this example, you will enter a code for product number M0001 in demo data company USMF.</span></span>
 
-1. Kattintson a Kiadott termék karbantartása lehetőségre.
-2. Kattintson a Kibocsátott termék lehetőségre.
-3. Bontsa ki a Termék kép Adatterület lehetőséget.
-4. A kívánt rekord megkeresése és kijelölése a listán
-5. A Művelet panelen kattintson a Készletkezelés elemre.
-6. Kattintson a GTIN-kódokra.
-7. Kattintson az Új elemre.
-8. A listában jelölje meg a kiválasztott sort.
-9. Az Egység mezőben adjon meg vagy válasszon ki egy értéket.
-10. A GTIN-kód mezőben válasszon lehetőséget.
-11. Az GTIN mezőben adjon meg egy értéket.
-12. Zárja be a lapot.
+1. <span data-ttu-id="f7e4a-106">Kattintson a Kiadott termék karbantartása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-106">Click Released product maintenance.</span></span>
+2. <span data-ttu-id="f7e4a-107">Kattintson a Kibocsátott termék lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-107">Click Released products.</span></span>
+3. <span data-ttu-id="f7e4a-108">Bontsa ki a Termék kép Adatterület lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-108">Expand the Product image FactBox.</span></span>
+4. <span data-ttu-id="f7e4a-109">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="f7e4a-109">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="f7e4a-110">A Művelet panelen kattintson a Készletkezelés elemre.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-110">On the Action Pane, click Manage inventory.</span></span>
+6. <span data-ttu-id="f7e4a-111">Kattintson a GTIN-kódokra.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-111">Click GTIN codes.</span></span>
+7. <span data-ttu-id="f7e4a-112">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-112">Click New.</span></span>
+8. <span data-ttu-id="f7e4a-113">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-113">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="f7e4a-114">Az Egység mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-114">In the Unit field, enter or select a value.</span></span>
+10. <span data-ttu-id="f7e4a-115">A GTIN-kód mezőben válasszon lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-115">In the GTIN code field, select an option.</span></span>
+11. <span data-ttu-id="f7e4a-116">Az GTIN mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-116">In the GTIN field, type a value.</span></span>
+12. <span data-ttu-id="f7e4a-117">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="f7e4a-117">Close the page.</span></span>
 
 

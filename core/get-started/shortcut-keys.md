@@ -15,192 +15,192 @@ ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 45582c5378fb2b3d6c9e26632accf37197a671bb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="keyboard-shortcuts"></a>Billentyűparancsok
+# <a name="keyboard-shortcuts"></a><span data-ttu-id="6cf36-103">Billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-103">Keyboard shortcuts</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A következő gyorsbillentyűk alkalmazhatók a Microsoft Dynamics 365 for Finance and Operations programban. 
+<span data-ttu-id="6cf36-104">A következő gyorsbillentyűk alkalmazhatók a Microsoft Dynamics 365 for Finance and Operations programban.</span><span class="sxs-lookup"><span data-stu-id="6cf36-104">The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-**Megjegyzés:** Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
+<span data-ttu-id="6cf36-105">**Megjegyzés:** Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="6cf36-105">**Note:** The keyboard shortcuts described here refer to the United States keyboard layout.</span></span> <span data-ttu-id="6cf36-106">Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.</span><span class="sxs-lookup"><span data-stu-id="6cf36-106">Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.</span></span>
 
-## <a name="action-shortcuts"></a>Műveleti billentyűparancsok
+## <a name="action-shortcuts"></a><span data-ttu-id="6cf36-107">Műveleti billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-107">Action shortcuts</span></span>
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
-| **Teendő:**                                    | **Billentyű vagy billentyűkombináció**                        |
-| Műveletkeresés megnyitása                                | Ctrl+’ vagy Alt+Q                  |
-| Ugrás a szokásos műveleti ablakba                  | Ctrl+F6                          |
-| Lap megnyitása a műveleti ablakban vagy egy menüben           | Enter vagy Szóköz vagy Alt+Lefelé nyíl |
-| Ugrás a következő/előző opcióra egy menüben            | Lefelé nyíl/Felfelé nyíl            |
-| Lap bezárása a műveleti ablakban vagy egy menüben          | Esc                              |
-| Jobb-kattintás szimulálása                            | Shift+F10                        |
-| Nyissa meg a Finance and Operations helyimenüt | Ctrl+F10                         |
-| Az alapértelmezett gomb végrehajtása egy űrlapon/párbeszédablakban       | Alt+Enter                        |
-| Kattintás egy gombra vagy csempére                            | Enter vagy Szóköz                   |
-| Számláló csempe frissítési információinak megtekintése         | Alt+Felfelé nyíl                     |
+| <span data-ttu-id="6cf36-108">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-108">**To do this**</span></span>                                    | <span data-ttu-id="6cf36-109">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-109">**Press**</span></span>                        |
+| <span data-ttu-id="6cf36-110">Műveletkeresés megnyitása</span><span class="sxs-lookup"><span data-stu-id="6cf36-110">Open action search</span></span>                                | <span data-ttu-id="6cf36-111">Ctrl+’ vagy Alt+Q</span><span class="sxs-lookup"><span data-stu-id="6cf36-111">Ctrl+’ or Alt+Q</span></span>                  |
+| <span data-ttu-id="6cf36-112">Ugrás a szokásos műveleti ablakba</span><span class="sxs-lookup"><span data-stu-id="6cf36-112">Move to the standard action pane</span></span>                  | <span data-ttu-id="6cf36-113">Ctrl+F6</span><span class="sxs-lookup"><span data-stu-id="6cf36-113">Ctrl+F6</span></span>                          |
+| <span data-ttu-id="6cf36-114">Lap megnyitása a műveleti ablakban vagy egy menüben</span><span class="sxs-lookup"><span data-stu-id="6cf36-114">Open a tab in the action pane or a menu</span></span>           | <span data-ttu-id="6cf36-115">Enter vagy Szóköz vagy Alt+Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-115">Enter or Space or Alt+Down Arrow</span></span> |
+| <span data-ttu-id="6cf36-116">Ugrás a következő/előző opcióra egy menüben</span><span class="sxs-lookup"><span data-stu-id="6cf36-116">Move to next/previous option in a menu</span></span>            | <span data-ttu-id="6cf36-117">Lefelé nyíl/Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-117">Down Arrow / Up Arrow</span></span>            |
+| <span data-ttu-id="6cf36-118">Lap bezárása a műveleti ablakban vagy egy menüben</span><span class="sxs-lookup"><span data-stu-id="6cf36-118">Close a tab in the action pane or a menu</span></span>          | <span data-ttu-id="6cf36-119">Esc</span><span class="sxs-lookup"><span data-stu-id="6cf36-119">Esc</span></span>                              |
+| <span data-ttu-id="6cf36-120">Jobb-kattintás szimulálása</span><span class="sxs-lookup"><span data-stu-id="6cf36-120">Simulate a right-click</span></span>                            | <span data-ttu-id="6cf36-121">Shift+F10</span><span class="sxs-lookup"><span data-stu-id="6cf36-121">Shift+F10</span></span>                        |
+| <span data-ttu-id="6cf36-122">Nyissa meg a Finance and Operations helyimenüt</span><span class="sxs-lookup"><span data-stu-id="6cf36-122">Open the Finance and Operations context menu</span></span> | <span data-ttu-id="6cf36-123">Ctrl+F10</span><span class="sxs-lookup"><span data-stu-id="6cf36-123">Ctrl+F10</span></span>                         |
+| <span data-ttu-id="6cf36-124">Az alapértelmezett gomb végrehajtása egy űrlapon/párbeszédablakban</span><span class="sxs-lookup"><span data-stu-id="6cf36-124">Execute the default button on a form/dialog</span></span>       | <span data-ttu-id="6cf36-125">Alt+Enter</span><span class="sxs-lookup"><span data-stu-id="6cf36-125">Alt+Enter</span></span>                        |
+| <span data-ttu-id="6cf36-126">Kattintás egy gombra vagy csempére</span><span class="sxs-lookup"><span data-stu-id="6cf36-126">Click a button or tile</span></span>                            | <span data-ttu-id="6cf36-127">Enter vagy Szóköz</span><span class="sxs-lookup"><span data-stu-id="6cf36-127">Enter or Space</span></span>                   |
+| <span data-ttu-id="6cf36-128">Számláló csempe frissítési információinak megtekintése</span><span class="sxs-lookup"><span data-stu-id="6cf36-128">View refresh information for a count tile</span></span>         | <span data-ttu-id="6cf36-129">Alt+Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-129">Alt+Up Arrow</span></span>                     |
 
  
 
-## <a name="date-picker-shortcuts"></a>Dátum kiválasztási billentyűparancsok
+## <a name="date-picker-shortcuts"></a><span data-ttu-id="6cf36-130">Dátum kiválasztási billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-130">Date picker shortcuts</span></span>
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
-| **Teendő:**                        | **Billentyű vagy billentyűkombináció**                                 |
-| A dátumválasztó megnyitása                  | Alt+Lefelé nyíl                            |
-| Ugrás a dátumok között a dátumválasztóban | Ctrl+Nyilak                               |
-| Ugrás az következő/előző hónapra       | Page Down/Page Up                       |
-| Ugrás az következő/előző évre        | Ctrl+Shift+Page Down/Ctrl+Shift+Page Up |
+| <span data-ttu-id="6cf36-131">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-131">**To do this**</span></span>                        | <span data-ttu-id="6cf36-132">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-132">**Press**</span></span>                                 |
+| <span data-ttu-id="6cf36-133">A dátumválasztó megnyitása</span><span class="sxs-lookup"><span data-stu-id="6cf36-133">Open the date picker</span></span>                  | <span data-ttu-id="6cf36-134">Alt+Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-134">Alt+Down Arrow</span></span>                            |
+| <span data-ttu-id="6cf36-135">Ugrás a dátumok között a dátumválasztóban</span><span class="sxs-lookup"><span data-stu-id="6cf36-135">Move between dates in the date picker</span></span> | <span data-ttu-id="6cf36-136">Ctrl+Nyilak</span><span class="sxs-lookup"><span data-stu-id="6cf36-136">Ctrl+Arrows</span></span>                               |
+| <span data-ttu-id="6cf36-137">Ugrás az következő/előző hónapra</span><span class="sxs-lookup"><span data-stu-id="6cf36-137">Move to the next/previous month</span></span>       | <span data-ttu-id="6cf36-138">Page Down/Page Up</span><span class="sxs-lookup"><span data-stu-id="6cf36-138">Page Down / Page Up</span></span>                       |
+| <span data-ttu-id="6cf36-139">Ugrás az következő/előző évre</span><span class="sxs-lookup"><span data-stu-id="6cf36-139">Move to the next/previous year</span></span>        | <span data-ttu-id="6cf36-140">Ctrl+Shift+Page Down/Ctrl+Shift+Page Up</span><span class="sxs-lookup"><span data-stu-id="6cf36-140">Ctrl+Shift+Page Down / Ctrl+Shift+Page Up</span></span> |
 
  
 
-## <a name="factbox-shortcuts"></a>Adatterület billentyűparancsok
+## <a name="factbox-shortcuts"></a><span data-ttu-id="6cf36-141">Adatterület billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-141">FactBox shortcuts</span></span>
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| Az adatterület ablak megnyitása (vagy az adatterület ablakra fókuszálás, ha már meg van nyitva) | Ctrl+F2                                   |
-| Az adatterület ablak bezárása (a fókusszal az adatterület ablakban)                         | Esc                                       |
-| Ugrás a következő/előző adatterületre (a fókusszal az adatterület ablakban)              | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl |
-| Ugrás az &lt;n&gt;-edik adatterületre (a fókusszal az adatterület ablakban)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
-| Adatterület kibontása (a fókusszal az adatterület fejlécen)                             | Szóköz vagy Enter                            |
-| Az aktuális adatterület összecsukása                                                    | Alt+0                                     |
+| <span data-ttu-id="6cf36-142">Az adatterület ablak megnyitása (vagy az adatterület ablakra fókuszálás, ha már meg van nyitva)</span><span class="sxs-lookup"><span data-stu-id="6cf36-142">Open the FactBox pane (or move focus to the FactBox pane if it is already open)</span></span> | <span data-ttu-id="6cf36-143">Ctrl+F2</span><span class="sxs-lookup"><span data-stu-id="6cf36-143">Ctrl+F2</span></span>                                   |
+| <span data-ttu-id="6cf36-144">Az adatterület ablak bezárása (a fókusszal az adatterület ablakban)</span><span class="sxs-lookup"><span data-stu-id="6cf36-144">Close the FactBox pane (with focus in the FactBox pane)</span></span>                         | <span data-ttu-id="6cf36-145">Esc</span><span class="sxs-lookup"><span data-stu-id="6cf36-145">Esc</span></span>                                       |
+| <span data-ttu-id="6cf36-146">Ugrás a következő/előző adatterületre (a fókusszal az adatterület ablakban)</span><span class="sxs-lookup"><span data-stu-id="6cf36-146">Move to the next/previous FactBox (with focus in the FactBox pane)</span></span>              | <span data-ttu-id="6cf36-147">Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-147">Alt+Shift+Down Arrow / Alt+Shift+Up Arrow</span></span> |
+| <span data-ttu-id="6cf36-148">Ugrás az &lt;n&gt;-edik adatterületre (a fókusszal az adatterület ablakban)</span><span class="sxs-lookup"><span data-stu-id="6cf36-148">Move to the &lt;n&gt;th FactBox (with focus in the FactBox pane)</span></span>                | <span data-ttu-id="6cf36-149">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="6cf36-149">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>           |
+| <span data-ttu-id="6cf36-150">Adatterület kibontása (a fókusszal az adatterület fejlécen)</span><span class="sxs-lookup"><span data-stu-id="6cf36-150">Expand a FactBox (with focus on the FactBox header)</span></span>                             | <span data-ttu-id="6cf36-151">Szóköz vagy Enter</span><span class="sxs-lookup"><span data-stu-id="6cf36-151">Space or Enter</span></span>                            |
+| <span data-ttu-id="6cf36-152">Az aktuális adatterület összecsukása</span><span class="sxs-lookup"><span data-stu-id="6cf36-152">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="6cf36-153">Alt+0</span><span class="sxs-lookup"><span data-stu-id="6cf36-153">Alt+0</span></span>                                     |
 
  
 
-## <a name="filtering-shortcuts"></a>Szűrő billentyűparancsok
+## <a name="filtering-shortcuts"></a><span data-ttu-id="6cf36-154">Szűrő billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-154">Filtering shortcuts</span></span>
 |                                                                                                                     |               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|
-| **Teendő:**                                                                                                      | **Billentyű vagy billentyűkombináció**     |
-| Rácsszűrés megnyitása az aktuális oszlopra                                                                          | Ctrl+G        |
-| Rácsszűrés bezárása az aktuális oszlopra                                                                         | Esc           |
-| Szűrő ablak megnyitása (vagy váltson fókuszt a szűrő ablak és a fő űrlap között, ha a szűrő ablak már nyitva van) | Ctrl+F3       |
-| Szűrő ablak bezárása (a fókusszal a szűrő ablakban)                                                               | Esc           |
-| Speciális szűrés/rendezés megnyitása                                                                                        | Ctrl+Shift+F3 |
+| <span data-ttu-id="6cf36-155">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-155">**To do this**</span></span>                                                                                                      | <span data-ttu-id="6cf36-156">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-156">**Press**</span></span>     |
+| <span data-ttu-id="6cf36-157">Rácsszűrés megnyitása az aktuális oszlopra</span><span class="sxs-lookup"><span data-stu-id="6cf36-157">Open grid filtering for the current column</span></span>                                                                          | <span data-ttu-id="6cf36-158">Ctrl+G</span><span class="sxs-lookup"><span data-stu-id="6cf36-158">Ctrl+G</span></span>        |
+| <span data-ttu-id="6cf36-159">Rácsszűrés bezárása az aktuális oszlopra</span><span class="sxs-lookup"><span data-stu-id="6cf36-159">Close grid filtering for the current column</span></span>                                                                         | <span data-ttu-id="6cf36-160">Esc</span><span class="sxs-lookup"><span data-stu-id="6cf36-160">Esc</span></span>           |
+| <span data-ttu-id="6cf36-161">Szűrő ablak megnyitása (vagy váltson fókuszt a szűrő ablak és a fő űrlap között, ha a szűrő ablak már nyitva van)</span><span class="sxs-lookup"><span data-stu-id="6cf36-161">Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open)</span></span> | <span data-ttu-id="6cf36-162">Ctrl+F3</span><span class="sxs-lookup"><span data-stu-id="6cf36-162">Ctrl+F3</span></span>       |
+| <span data-ttu-id="6cf36-163">Szűrő ablak bezárása (a fókusszal a szűrő ablakban)</span><span class="sxs-lookup"><span data-stu-id="6cf36-163">Close the Filter pane (with focus in the Filter pane)</span></span>                                                               | <span data-ttu-id="6cf36-164">Esc</span><span class="sxs-lookup"><span data-stu-id="6cf36-164">Esc</span></span>           |
+| <span data-ttu-id="6cf36-165">Speciális szűrés/rendezés megnyitása</span><span class="sxs-lookup"><span data-stu-id="6cf36-165">Open advanced filtering/sort</span></span>                                                                                        | <span data-ttu-id="6cf36-166">Ctrl+Shift+F3</span><span class="sxs-lookup"><span data-stu-id="6cf36-166">Ctrl+Shift+F3</span></span> |
 
  
 
-## <a name="form-shortcuts"></a>Űrlap billentyűparancsok
+## <a name="form-shortcuts"></a><span data-ttu-id="6cf36-167">Űrlap billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-167">Form shortcuts</span></span>
 |                                                                                                                                 |                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **Teendő:**                                                                                                                  | **Billentyű vagy billentyűkombináció**         |
-| Új rekord létrehozása                                                                                                             | Alt+N             |
-| Rekord törlése                                                                                                                 | Alt+Del vagy Alt+F9 |
-| Rekord mentése                                                                                                                     | Alt+S vagy Ctrl+S   |
-| Visszaállítás (helyreállítás)                                                                                                                | Ctrl+Shift+F5     |
-| Adatfrissítés                                                                                                                    | Shift+F5          |
-| Ugrás az első látható mezőbe az űrlapon                                                                                     | Alt+Shift+F       |
-| Szerkesztési mód váltása                                                                                                                | F2                |
-| Dokumentum csatolása                                                                                                               | Ctrl+Shift+A      |
-| Exportálás Excelbe                                                                                                                 | Ctrl+Shift+E      |
-| Ugrás az előző rekordra (egy rácson kívülre)                                                                                    | Ctrl+Felfelé nyíl     |
-| Ugrás a következő rekordra (egy rácson kívülre)                                                                                        | Ctrl+Lefelé nyíl   |
-| Ugrás az első rekordra (egy rácson kívülre)                                                                                       | Ctrl+Home         |
-| Ugrás az utolsó rekordra (egy rácson kívülre)                                                                                        | Ctrl+End          |
-| A navigációs lista megnyitása a Részletek űrlapon (vagy fókuszváltás a navigációs lista és a fő képernyő között, ha már nyitva van) | Ctrl+F8           |
-| A navigációs lista bezárása a Részletek űrlapon (a fókusszal a navigációs listán)                                                   | Esc               |
+| <span data-ttu-id="6cf36-168">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-168">**To do this**</span></span>                                                                                                                  | <span data-ttu-id="6cf36-169">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-169">**Press**</span></span>         |
+| <span data-ttu-id="6cf36-170">Új rekord létrehozása</span><span class="sxs-lookup"><span data-stu-id="6cf36-170">Create a new record</span></span>                                                                                                             | <span data-ttu-id="6cf36-171">Alt+N</span><span class="sxs-lookup"><span data-stu-id="6cf36-171">Alt+N</span></span>             |
+| <span data-ttu-id="6cf36-172">Rekord törlése</span><span class="sxs-lookup"><span data-stu-id="6cf36-172">Delete a record</span></span>                                                                                                                 | <span data-ttu-id="6cf36-173">Alt+Del vagy Alt+F9</span><span class="sxs-lookup"><span data-stu-id="6cf36-173">Alt+Del or Alt+F9</span></span> |
+| <span data-ttu-id="6cf36-174">Rekord mentése</span><span class="sxs-lookup"><span data-stu-id="6cf36-174">Save record</span></span>                                                                                                                     | <span data-ttu-id="6cf36-175">Alt+S vagy Ctrl+S</span><span class="sxs-lookup"><span data-stu-id="6cf36-175">Alt+S or Ctrl+S</span></span>   |
+| <span data-ttu-id="6cf36-176">Visszaállítás (helyreállítás)</span><span class="sxs-lookup"><span data-stu-id="6cf36-176">Revert (restore)</span></span>                                                                                                                | <span data-ttu-id="6cf36-177">Ctrl+Shift+F5</span><span class="sxs-lookup"><span data-stu-id="6cf36-177">Ctrl+Shift+F5</span></span>     |
+| <span data-ttu-id="6cf36-178">Adatfrissítés</span><span class="sxs-lookup"><span data-stu-id="6cf36-178">Data refresh</span></span>                                                                                                                    | <span data-ttu-id="6cf36-179">Shift+F5</span><span class="sxs-lookup"><span data-stu-id="6cf36-179">Shift+F5</span></span>          |
+| <span data-ttu-id="6cf36-180">Ugrás az első látható mezőbe az űrlapon</span><span class="sxs-lookup"><span data-stu-id="6cf36-180">Move to the visible first field on the form</span></span>                                                                                     | <span data-ttu-id="6cf36-181">Alt+Shift+F</span><span class="sxs-lookup"><span data-stu-id="6cf36-181">Alt+Shift+F</span></span>       |
+| <span data-ttu-id="6cf36-182">Szerkesztési mód váltása</span><span class="sxs-lookup"><span data-stu-id="6cf36-182">Toggle edit mode</span></span>                                                                                                                | <span data-ttu-id="6cf36-183">F2</span><span class="sxs-lookup"><span data-stu-id="6cf36-183">F2</span></span>                |
+| <span data-ttu-id="6cf36-184">Dokumentum csatolása</span><span class="sxs-lookup"><span data-stu-id="6cf36-184">Attach a document</span></span>                                                                                                               | <span data-ttu-id="6cf36-185">Ctrl+Shift+A</span><span class="sxs-lookup"><span data-stu-id="6cf36-185">Ctrl+Shift+A</span></span>      |
+| <span data-ttu-id="6cf36-186">Exportálás Excelbe</span><span class="sxs-lookup"><span data-stu-id="6cf36-186">Export to Excel</span></span>                                                                                                                 | <span data-ttu-id="6cf36-187">Ctrl+Shift+E</span><span class="sxs-lookup"><span data-stu-id="6cf36-187">Ctrl+Shift+E</span></span>      |
+| <span data-ttu-id="6cf36-188">Ugrás az előző rekordra (egy rácson kívülre)</span><span class="sxs-lookup"><span data-stu-id="6cf36-188">Move to the previous record (outside a grid)</span></span>                                                                                    | <span data-ttu-id="6cf36-189">Ctrl+Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-189">Ctrl+Up Arrow</span></span>     |
+| <span data-ttu-id="6cf36-190">Ugrás a következő rekordra (egy rácson kívülre)</span><span class="sxs-lookup"><span data-stu-id="6cf36-190">Move to the next record (outside a grid)</span></span>                                                                                        | <span data-ttu-id="6cf36-191">Ctrl+Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-191">Ctrl+Down Arrow</span></span>   |
+| <span data-ttu-id="6cf36-192">Ugrás az első rekordra (egy rácson kívülre)</span><span class="sxs-lookup"><span data-stu-id="6cf36-192">Move to the first record (outside a grid)</span></span>                                                                                       | <span data-ttu-id="6cf36-193">Ctrl+Home</span><span class="sxs-lookup"><span data-stu-id="6cf36-193">Ctrl+Home</span></span>         |
+| <span data-ttu-id="6cf36-194">Ugrás az utolsó rekordra (egy rácson kívülre)</span><span class="sxs-lookup"><span data-stu-id="6cf36-194">Move to the last record (outside a grid)</span></span>                                                                                        | <span data-ttu-id="6cf36-195">Ctrl+End</span><span class="sxs-lookup"><span data-stu-id="6cf36-195">Ctrl+End</span></span>          |
+| <span data-ttu-id="6cf36-196">A navigációs lista megnyitása a Részletek űrlapon (vagy fókuszváltás a navigációs lista és a fő képernyő között, ha már nyitva van)</span><span class="sxs-lookup"><span data-stu-id="6cf36-196">Open the navigation list on Details forms (or switch focus between the navigation list and the main form if it is already open)</span></span> | <span data-ttu-id="6cf36-197">Ctrl+F8</span><span class="sxs-lookup"><span data-stu-id="6cf36-197">Ctrl+F8</span></span>           |
+| <span data-ttu-id="6cf36-198">A navigációs lista bezárása a Részletek űrlapon (a fókusszal a navigációs listán)</span><span class="sxs-lookup"><span data-stu-id="6cf36-198">Close the navigation list on Details form (with focus in the navigation list)</span></span>                                                   | <span data-ttu-id="6cf36-199">Esc</span><span class="sxs-lookup"><span data-stu-id="6cf36-199">Esc</span></span>               |
 
  
 
-## <a name="form-navigation-shortcuts"></a>Navigációs űrlap billentyűparancsok
+## <a name="form-navigation-shortcuts"></a><span data-ttu-id="6cf36-200">Navigációs űrlap billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-200">Form navigation shortcuts</span></span>
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
-| **Teendő:**                                      | **Billentyű vagy billentyűkombináció**                                    |
-| Ugrás a következő/előző mezőre                     | Tab/Shift+Tab                              |
-| Ugrás az következő/előző lapra                       | Alt+Shift+Jobbra nyíl/Alt+Shift+Balra nyíl |
-| Ugrás a következő/előző gyorslapra                   | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl    |
-| Ugrás az &lt;n&gt;-edik gyorslapra                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Ugrás az &lt;n&gt;-edik lapra                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
-| Gyorslap kibontása (a fókusszal az Gyorslap fejlécen) | Szóköz vagy Enter                               |
-| Az aktuális gyorslap összecsukása                        | Alt+0                                        |
-| Váltás rácsnézetre                                 | Ctrl+Shift+G                                 |
-| Váltás részletek nézetre                              | Ctrl+Shift+D                                 |
-| Váltás fejléc nézetre                               | Ctrl+Shift+H                                 |
-| Váltás sor nézetre                                | Ctrl+Shift+L                                 |
-| Az űrlap bezárása (kattintson a vissza gombra)                         | Esc                                          |
-| Képernyő bezárása explicit mentéssel                   | Shift+Esc                                    |
-| Képernyő bezárása az el nem mentett módosítások mentése nélkül       | Alt+Shift+Q                                  |
+| <span data-ttu-id="6cf36-201">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-201">**To do this**</span></span>                                      | <span data-ttu-id="6cf36-202">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-202">**Press**</span></span>                                    |
+| <span data-ttu-id="6cf36-203">Ugrás a következő/előző mezőre</span><span class="sxs-lookup"><span data-stu-id="6cf36-203">Move to the next/previous field</span></span>                     | <span data-ttu-id="6cf36-204">Tab/Shift+Tab</span><span class="sxs-lookup"><span data-stu-id="6cf36-204">Tab / Shift+Tab</span></span>                              |
+| <span data-ttu-id="6cf36-205">Ugrás az következő/előző lapra</span><span class="sxs-lookup"><span data-stu-id="6cf36-205">Move to the next/previous tab</span></span>                       | <span data-ttu-id="6cf36-206">Alt+Shift+Jobbra nyíl/Alt+Shift+Balra nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-206">Alt+Shift+Right Arrow / Alt+Shift+Left Arrow</span></span> |
+| <span data-ttu-id="6cf36-207">Ugrás a következő/előző gyorslapra</span><span class="sxs-lookup"><span data-stu-id="6cf36-207">Move to the next/previous FastTab</span></span>                   | <span data-ttu-id="6cf36-208">Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-208">Alt+Shift+Down Arrow / Alt+Shift+Up Arrow</span></span>    |
+| <span data-ttu-id="6cf36-209">Ugrás az &lt;n&gt;-edik gyorslapra</span><span class="sxs-lookup"><span data-stu-id="6cf36-209">Move to the &lt;n&gt;th FastTab</span></span>                     | <span data-ttu-id="6cf36-210">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="6cf36-210">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>              |
+| <span data-ttu-id="6cf36-211">Ugrás az &lt;n&gt;-edik lapra</span><span class="sxs-lookup"><span data-stu-id="6cf36-211">Move to the &lt;n&gt;th tab</span></span>                         | <span data-ttu-id="6cf36-212">Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="6cf36-212">Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>        |
+| <span data-ttu-id="6cf36-213">Gyorslap kibontása (a fókusszal az Gyorslap fejlécen)</span><span class="sxs-lookup"><span data-stu-id="6cf36-213">Expand a FastTab (with focus on the FastTab header)</span></span> | <span data-ttu-id="6cf36-214">Szóköz vagy Enter</span><span class="sxs-lookup"><span data-stu-id="6cf36-214">Space or Enter</span></span>                               |
+| <span data-ttu-id="6cf36-215">Az aktuális gyorslap összecsukása</span><span class="sxs-lookup"><span data-stu-id="6cf36-215">Collapse the current FastTab</span></span>                        | <span data-ttu-id="6cf36-216">Alt+0</span><span class="sxs-lookup"><span data-stu-id="6cf36-216">Alt+0</span></span>                                        |
+| <span data-ttu-id="6cf36-217">Váltás rácsnézetre</span><span class="sxs-lookup"><span data-stu-id="6cf36-217">Switch to grid view</span></span>                                 | <span data-ttu-id="6cf36-218">Ctrl+Shift+G</span><span class="sxs-lookup"><span data-stu-id="6cf36-218">Ctrl+Shift+G</span></span>                                 |
+| <span data-ttu-id="6cf36-219">Váltás részletek nézetre</span><span class="sxs-lookup"><span data-stu-id="6cf36-219">Switch to details view</span></span>                              | <span data-ttu-id="6cf36-220">Ctrl+Shift+D</span><span class="sxs-lookup"><span data-stu-id="6cf36-220">Ctrl+Shift+D</span></span>                                 |
+| <span data-ttu-id="6cf36-221">Váltás fejléc nézetre</span><span class="sxs-lookup"><span data-stu-id="6cf36-221">Switch to header view</span></span>                               | <span data-ttu-id="6cf36-222">Ctrl+Shift+H</span><span class="sxs-lookup"><span data-stu-id="6cf36-222">Ctrl+Shift+H</span></span>                                 |
+| <span data-ttu-id="6cf36-223">Váltás sor nézetre</span><span class="sxs-lookup"><span data-stu-id="6cf36-223">Switch to lines view</span></span>                                | <span data-ttu-id="6cf36-224">Ctrl+Shift+L</span><span class="sxs-lookup"><span data-stu-id="6cf36-224">Ctrl+Shift+L</span></span>                                 |
+| <span data-ttu-id="6cf36-225">Az űrlap bezárása (kattintson a vissza gombra)</span><span class="sxs-lookup"><span data-stu-id="6cf36-225">Close the form (click Back)</span></span>                         | <span data-ttu-id="6cf36-226">Esc</span><span class="sxs-lookup"><span data-stu-id="6cf36-226">Esc</span></span>                                          |
+| <span data-ttu-id="6cf36-227">Képernyő bezárása explicit mentéssel</span><span class="sxs-lookup"><span data-stu-id="6cf36-227">Close the form with explicit save</span></span>                   | <span data-ttu-id="6cf36-228">Shift+Esc</span><span class="sxs-lookup"><span data-stu-id="6cf36-228">Shift+Esc</span></span>                                    |
+| <span data-ttu-id="6cf36-229">Képernyő bezárása az el nem mentett módosítások mentése nélkül</span><span class="sxs-lookup"><span data-stu-id="6cf36-229">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="6cf36-230">Alt+Shift+Q</span><span class="sxs-lookup"><span data-stu-id="6cf36-230">Alt+Shift+Q</span></span>                                  |
 
  
 
-## <a name="grid-shortcuts"></a>Rács billentyűparancsok
+## <a name="grid-shortcuts"></a><span data-ttu-id="6cf36-231">Rács billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-231">Grid shortcuts</span></span>
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Teendő:**                                                                                                | **Billentyű vagy billentyűkombináció**                       |
-| Ugrás a következő/előző oszlopra                                                                              | Tab/Shift+Tab                 |
-| Ugrás a következő/előző sorra                                                                                 | Lefelé nyíl/Felfelé nyíl           |
-| Ugrás a következő/előző sorba kijelölés nélkül (Megjegyzés: ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.) | Ctrl+Felfelé nyíl/Ctrl+Lefelé nyíl |
-| Az aktuális sor kijelölése/törlése (Megjegyzés: ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.)                    | Ctrl+Szóköz/Ctrl+Kattintás         |
-| A következő/előző sor hozzáadása a kijelölt készlethez (Megjegyzés: ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.)   | Shift+Szóköz                     |
-| Egy sortartomány hozzáadása a kijelölt készlethez (Megjegyzés: ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.)         | Shift+Kattintás                     |
-| Ugrás az adatok következő/előző oldalára                                                                          | Page Up/Page Down             |
-| Új sor létrehozása a rács alján                                                                    | Lefelé nyíl (az utolsó sorból)  |
-| Az összes sor kijelölése vagy törlése                                                                                      | Ctrl+Shift+M                    |
-| Ugrás az első rekordra.                                                                                      | Ctrl+Home                       |
-| Ugrás az utolsó rekordra.                                                                                       | Ctrl+End                        |
+| <span data-ttu-id="6cf36-232">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-232">**To do this**</span></span>                                                                                                | <span data-ttu-id="6cf36-233">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-233">**Press**</span></span>                       |
+| <span data-ttu-id="6cf36-234">Ugrás a következő/előző oszlopra</span><span class="sxs-lookup"><span data-stu-id="6cf36-234">Move to the next/previous column</span></span>                                                                              | <span data-ttu-id="6cf36-235">Tab/Shift+Tab</span><span class="sxs-lookup"><span data-stu-id="6cf36-235">Tab / Shift+Tab</span></span>                 |
+| <span data-ttu-id="6cf36-236">Ugrás a következő/előző sorra</span><span class="sxs-lookup"><span data-stu-id="6cf36-236">Move to the next/previous row</span></span>                                                                                 | <span data-ttu-id="6cf36-237">Lefelé nyíl/Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-237">Down Arrow / Up Arrow</span></span>           |
+| <span data-ttu-id="6cf36-238">Ugrás a következő/előző sorba kijelölés nélkül (Megjegyzés: ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.)</span><span class="sxs-lookup"><span data-stu-id="6cf36-238">Move to the next/previous row without selecting (Note: This shortcut applies to multi-select scenarios only.)</span></span> | <span data-ttu-id="6cf36-239">Ctrl+Felfelé nyíl/Ctrl+Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-239">Ctrl+Up Arrow / Ctrl+Down Arrow</span></span> |
+| <span data-ttu-id="6cf36-240">Az aktuális sor kijelölése/törlése (Megjegyzés: ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.)</span><span class="sxs-lookup"><span data-stu-id="6cf36-240">Select/clear the current row (Note: This shortcut applies to multi-select scenarios only.)</span></span>                    | <span data-ttu-id="6cf36-241">Ctrl+Szóköz/Ctrl+Kattintás</span><span class="sxs-lookup"><span data-stu-id="6cf36-241">Ctrl+Space / Ctrl+Click</span></span>         |
+| <span data-ttu-id="6cf36-242">A következő/előző sor hozzáadása a kijelölt készlethez (Megjegyzés: ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.)</span><span class="sxs-lookup"><span data-stu-id="6cf36-242">Add the next/previous row to the selected set (Note: This shortcut applies to multi-select scenarios only.)</span></span>   | <span data-ttu-id="6cf36-243">Shift+Szóköz</span><span class="sxs-lookup"><span data-stu-id="6cf36-243">Shift+Space</span></span>                     |
+| <span data-ttu-id="6cf36-244">Egy sortartomány hozzáadása a kijelölt készlethez (Megjegyzés: ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.)</span><span class="sxs-lookup"><span data-stu-id="6cf36-244">Add a range of rows to the selected set (Note: This shortcut applies to multi-select scenarios only.)</span></span>         | <span data-ttu-id="6cf36-245">Shift+Kattintás</span><span class="sxs-lookup"><span data-stu-id="6cf36-245">Shift+Click</span></span>                     |
+| <span data-ttu-id="6cf36-246">Ugrás az adatok következő/előző oldalára</span><span class="sxs-lookup"><span data-stu-id="6cf36-246">Go to the next/previous page of data</span></span>                                                                          | <span data-ttu-id="6cf36-247">Page Up/Page Down</span><span class="sxs-lookup"><span data-stu-id="6cf36-247">Page Up / Page Down</span></span>             |
+| <span data-ttu-id="6cf36-248">Új sor létrehozása a rács alján</span><span class="sxs-lookup"><span data-stu-id="6cf36-248">Create a new row at the bottom of the grid</span></span>                                                                    | <span data-ttu-id="6cf36-249">Lefelé nyíl (az utolsó sorból)</span><span class="sxs-lookup"><span data-stu-id="6cf36-249">Down Arrow (from the last row)</span></span>  |
+| <span data-ttu-id="6cf36-250">Az összes sor kijelölése vagy törlése</span><span class="sxs-lookup"><span data-stu-id="6cf36-250">Select or clear all rows</span></span>                                                                                      | <span data-ttu-id="6cf36-251">Ctrl+Shift+M</span><span class="sxs-lookup"><span data-stu-id="6cf36-251">Ctrl+Shift+M</span></span>                    |
+| <span data-ttu-id="6cf36-252">Ugrás az első rekordra.</span><span class="sxs-lookup"><span data-stu-id="6cf36-252">Move to the first record</span></span>                                                                                      | <span data-ttu-id="6cf36-253">Ctrl+Home</span><span class="sxs-lookup"><span data-stu-id="6cf36-253">Ctrl+Home</span></span>                       |
+| <span data-ttu-id="6cf36-254">Ugrás az utolsó rekordra.</span><span class="sxs-lookup"><span data-stu-id="6cf36-254">Move to the last record</span></span>                                                                                       | <span data-ttu-id="6cf36-255">Ctrl+End</span><span class="sxs-lookup"><span data-stu-id="6cf36-255">Ctrl+End</span></span>                        |
 
  
 
-## <a name="input-control-shortcuts"></a>Beviteli vezérlő gyorsbillentyűk
+## <a name="input-control-shortcuts"></a><span data-ttu-id="6cf36-256">Beviteli vezérlő gyorsbillentyűk</span><span class="sxs-lookup"><span data-stu-id="6cf36-256">Input control shortcuts</span></span>
 |                                                            |                               |
 |------------------------------------------------------------|-------------------------------|
-| **Teendő:**                                             | **Billentyű vagy billentyűkombináció**                     |
-| A munkamenet dátumának bevitele egy dátummezőbe.                     | D+Tab                         |
-| A mai dátum bevitele egy dátummezőbe.                     | T+Tab                         |
-| Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel megnyitása           | Alt+Lefelé nyíl                |
-| Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel bezárása          | Esc                           |
-| Fókusz áthelyezése egy keresésbe (Ha a keresés már meg nyitva) | Alt+Lefelé nyíl                |
-| A vezérlés haladó előnézetének megtekintése                        | Alt+Felfelé nyíl                  |
-| Szöveg kiválasztása az aktuális mezőben                           | Ctrl+A                        |
-| Szövegterület belépés/elhagyás egy HTML szerkesztő vezérlőben        | Alt+Lefelé nyíl/Alt+Felfelé nyíl |
+| <span data-ttu-id="6cf36-257">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-257">**To do this**</span></span>                                             | <span data-ttu-id="6cf36-258">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-258">**Press**</span></span>                     |
+| <span data-ttu-id="6cf36-259">A munkamenet dátumának bevitele egy dátummezőbe.</span><span class="sxs-lookup"><span data-stu-id="6cf36-259">Enter the session date in a date field</span></span>                     | <span data-ttu-id="6cf36-260">D+Tab</span><span class="sxs-lookup"><span data-stu-id="6cf36-260">D+Tab</span></span>                         |
+| <span data-ttu-id="6cf36-261">A mai dátum bevitele egy dátummezőbe.</span><span class="sxs-lookup"><span data-stu-id="6cf36-261">Enter the current date in a date field</span></span>                     | <span data-ttu-id="6cf36-262">T+Tab</span><span class="sxs-lookup"><span data-stu-id="6cf36-262">T+Tab</span></span>                         |
+| <span data-ttu-id="6cf36-263">Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel megnyitása</span><span class="sxs-lookup"><span data-stu-id="6cf36-263">Open lookup, combo box, date picker, drop dialog</span></span>           | <span data-ttu-id="6cf36-264">Alt+Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-264">Alt+Down Arrow</span></span>                |
+| <span data-ttu-id="6cf36-265">Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel bezárása</span><span class="sxs-lookup"><span data-stu-id="6cf36-265">Close lookup, combo box, date picker, drop dialog</span></span>          | <span data-ttu-id="6cf36-266">Esc</span><span class="sxs-lookup"><span data-stu-id="6cf36-266">Esc</span></span>                           |
+| <span data-ttu-id="6cf36-267">Fókusz áthelyezése egy keresésbe (Ha a keresés már meg nyitva)</span><span class="sxs-lookup"><span data-stu-id="6cf36-267">Move focus into a lookup (when the lookup is already open)</span></span> | <span data-ttu-id="6cf36-268">Alt+Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-268">Alt+Down Arrow</span></span>                |
+| <span data-ttu-id="6cf36-269">A vezérlés haladó előnézetének megtekintése</span><span class="sxs-lookup"><span data-stu-id="6cf36-269">Open the control's enhanced preview</span></span>                        | <span data-ttu-id="6cf36-270">Alt+Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-270">Alt+Up Arrow</span></span>                  |
+| <span data-ttu-id="6cf36-271">Szöveg kiválasztása az aktuális mezőben</span><span class="sxs-lookup"><span data-stu-id="6cf36-271">Select text in the current field</span></span>                           | <span data-ttu-id="6cf36-272">Ctrl+A</span><span class="sxs-lookup"><span data-stu-id="6cf36-272">Ctrl+A</span></span>                        |
+| <span data-ttu-id="6cf36-273">Szövegterület belépés/elhagyás egy HTML szerkesztő vezérlőben</span><span class="sxs-lookup"><span data-stu-id="6cf36-273">Enter/leave the text area in an HTML editor control</span></span>        | <span data-ttu-id="6cf36-274">Alt+Lefelé nyíl/Alt+Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-274">Alt+Down Arrow / Alt+Up Arrow</span></span> |
 
  
 
-## <a name="messaging-shortcuts"></a>Üzenetkezelő gyorsbillentyűk
+## <a name="messaging-shortcuts"></a><span data-ttu-id="6cf36-275">Üzenetkezelő gyorsbillentyűk</span><span class="sxs-lookup"><span data-stu-id="6cf36-275">Messaging shortcuts</span></span>
 |                          |               |
 |--------------------------|---------------|
-| **Teendő:**           | **Billentyű vagy billentyűkombináció**     |
-| Ugrás az üzenetközpontba | Ctrl+Shift+F7 |
-| Ugrás az üzenetsávba    | Ctrl+F7       |
+| <span data-ttu-id="6cf36-276">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-276">**To do this**</span></span>           | <span data-ttu-id="6cf36-277">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-277">**Press**</span></span>     |
+| <span data-ttu-id="6cf36-278">Ugrás az üzenetközpontba</span><span class="sxs-lookup"><span data-stu-id="6cf36-278">Go to the Message Center</span></span> | <span data-ttu-id="6cf36-279">Ctrl+Shift+F7</span><span class="sxs-lookup"><span data-stu-id="6cf36-279">Ctrl+Shift+F7</span></span> |
+| <span data-ttu-id="6cf36-280">Ugrás az üzenetsávba</span><span class="sxs-lookup"><span data-stu-id="6cf36-280">Go to the Message Bar</span></span>    | <span data-ttu-id="6cf36-281">Ctrl+F7</span><span class="sxs-lookup"><span data-stu-id="6cf36-281">Ctrl+F7</span></span>       |
 
  
 
-## <a name="navigation-shortcuts"></a>Navigációs billentyűparancsok
+## <a name="navigation-shortcuts"></a><span data-ttu-id="6cf36-282">Navigációs billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-282">Navigation shortcuts</span></span>
 |                                                                           |                 |
 |---------------------------------------------------------------------------|-----------------|
-| **Teendő:**                                                            | **Billentyű vagy billentyűkombináció**       |
-| Ugrás az irányítópultra                                                       | Alt+Shift+Home  |
-| Ugrás a navigációs sávra                                                  | Alt+Shift+F1    |
-| Ugrás a navigációs ablakra                                                 | Alt+F1          |
-| Űrlap megjelölése kedvencként/eltávolítása a kedvencek közül (űrlappal a navigációs ablakban) | Shift+F         |
-| Ugrás a vállalatválasztóba                                                  | Ctrl+Shift+O    |
-| Ugrás a navigációs keresésre                                                   | Ctrl+/ vagy Alt+G |
-| A Súgó ablak megnyitása                                                        | Ctrl+?          |
-| Trace Parser megnyitása                                                     | Alt+Shift+T     |
+| <span data-ttu-id="6cf36-283">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-283">**To do this**</span></span>                                                            | <span data-ttu-id="6cf36-284">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-284">**Press**</span></span>       |
+| <span data-ttu-id="6cf36-285">Ugrás az irányítópultra</span><span class="sxs-lookup"><span data-stu-id="6cf36-285">Go to the dashboard</span></span>                                                       | <span data-ttu-id="6cf36-286">Alt+Shift+Home</span><span class="sxs-lookup"><span data-stu-id="6cf36-286">Alt+Shift+Home</span></span>  |
+| <span data-ttu-id="6cf36-287">Ugrás a navigációs sávra</span><span class="sxs-lookup"><span data-stu-id="6cf36-287">Go to the navigation bar</span></span>                                                  | <span data-ttu-id="6cf36-288">Alt+Shift+F1</span><span class="sxs-lookup"><span data-stu-id="6cf36-288">Alt+Shift+F1</span></span>    |
+| <span data-ttu-id="6cf36-289">Ugrás a navigációs ablakra</span><span class="sxs-lookup"><span data-stu-id="6cf36-289">Go to the navigation pane</span></span>                                                 | <span data-ttu-id="6cf36-290">Alt+F1</span><span class="sxs-lookup"><span data-stu-id="6cf36-290">Alt+F1</span></span>          |
+| <span data-ttu-id="6cf36-291">Űrlap megjelölése kedvencként/eltávolítása a kedvencek közül (űrlappal a navigációs ablakban)</span><span class="sxs-lookup"><span data-stu-id="6cf36-291">Favorite/un-favorite a form (with focus on a form in the navigation pane)</span></span> | <span data-ttu-id="6cf36-292">Shift+F</span><span class="sxs-lookup"><span data-stu-id="6cf36-292">Shift+F</span></span>         |
+| <span data-ttu-id="6cf36-293">Ugrás a vállalatválasztóba</span><span class="sxs-lookup"><span data-stu-id="6cf36-293">Go to the company picker</span></span>                                                  | <span data-ttu-id="6cf36-294">Ctrl+Shift+O</span><span class="sxs-lookup"><span data-stu-id="6cf36-294">Ctrl+Shift+O</span></span>    |
+| <span data-ttu-id="6cf36-295">Ugrás a navigációs keresésre</span><span class="sxs-lookup"><span data-stu-id="6cf36-295">Go to navigation search</span></span>                                                   | <span data-ttu-id="6cf36-296">Ctrl+/ vagy Alt+G</span><span class="sxs-lookup"><span data-stu-id="6cf36-296">Ctrl+/ or Alt+G</span></span> |
+| <span data-ttu-id="6cf36-297">A Súgó ablak megnyitása</span><span class="sxs-lookup"><span data-stu-id="6cf36-297">Open the help pane</span></span>                                                        | <span data-ttu-id="6cf36-298">Ctrl+?</span><span class="sxs-lookup"><span data-stu-id="6cf36-298">Ctrl+?</span></span>          |
+| <span data-ttu-id="6cf36-299">Trace Parser megnyitása</span><span class="sxs-lookup"><span data-stu-id="6cf36-299">Open the trace parser</span></span>                                                     | <span data-ttu-id="6cf36-300">Alt+Shift+T</span><span class="sxs-lookup"><span data-stu-id="6cf36-300">Alt+Shift+T</span></span>     |
 
  
 
-## <a name="segmented-entry-shortcuts"></a>Szegmentált beviteli billentyűparancsok
+## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="6cf36-301">Szegmentált beviteli billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="6cf36-301">Segmented entry shortcuts</span></span>
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Teendő:**                                                                                                          | **Billentyű vagy billentyűkombináció**                        |
-| Legördülő lista megnyitása (amikor a legördülő lista zárva van)                                                             | Alt+Lefelé nyíl                   |
-| Fókusz áthelyezése az aktuális szegmens beviteli mezőjébe, a legördülő listában (amikor a legördülő lista már meg nyitva) | Alt+Lefelé nyíl                   |
-| Legördülő lista bezárása                                                                                                | Alt+Felfelé nyíl                     |
-| A legördülő lista jobb részének bezárása/megnyitása                                                                      | Alt+Balra nyíl/Alt+Jobbra nyíl |
-| Váltás "érvényesek megjelenítése" és "minden megjelenítése" módok között                                                                        | Alt+W                            |
-| Az érték kiválasztása a legördülő listából, majd áthelyezés a követező szegmensbe                                                       | Bevitel                            |
-| Ugrás a következő/előző vezérlőre az oldalon (amikor fókusz a beviteli vezérlőn van)                                          | Tab/Shift+Tab                  |
-| Ugrás a következő/előző beviteli mezőre a helyi menüben, (amikor a fókusz a legördülő listában van)                               | Tab/Shift+Tab                  |
-| Ugrás egy sorral feljebb/lentebb a keresőben                                                                                        | Felfelé nyíl/Lefelé nyíl            |
-| Ugrás egy oldallal feljebb/lentebb a keresőben                                                                                       | Page Up/Page Down              |
-| Ugrás a keresés tetejére/aljára                                                                                    | Home/End                       |
+| <span data-ttu-id="6cf36-302">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="6cf36-302">**To do this**</span></span>                                                                                                          | <span data-ttu-id="6cf36-303">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="6cf36-303">**Press**</span></span>                        |
+| <span data-ttu-id="6cf36-304">Legördülő lista megnyitása (amikor a legördülő lista zárva van)</span><span class="sxs-lookup"><span data-stu-id="6cf36-304">Open the drop-down list (when the drop-down list is closed)</span></span>                                                             | <span data-ttu-id="6cf36-305">Alt+Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-305">Alt+Down Arrow</span></span>                   |
+| <span data-ttu-id="6cf36-306">Fókusz áthelyezése az aktuális szegmens beviteli mezőjébe, a legördülő listában (amikor a legördülő lista már meg nyitva)</span><span class="sxs-lookup"><span data-stu-id="6cf36-306">Move focus into the input field for the current segment in the drop-down list (when the drop-down list is already open)</span></span> | <span data-ttu-id="6cf36-307">Alt+Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-307">Alt+Down Arrow</span></span>                   |
+| <span data-ttu-id="6cf36-308">Legördülő lista bezárása</span><span class="sxs-lookup"><span data-stu-id="6cf36-308">Close the drop-down list</span></span>                                                                                                | <span data-ttu-id="6cf36-309">Alt+Felfelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-309">Alt+Up Arrow</span></span>                     |
+| <span data-ttu-id="6cf36-310">A legördülő lista jobb részének bezárása/megnyitása</span><span class="sxs-lookup"><span data-stu-id="6cf36-310">Close/open the right portion of the drop-down list</span></span>                                                                      | <span data-ttu-id="6cf36-311">Alt+Balra nyíl/Alt+Jobbra nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-311">Alt+Left Arrow / Alt+Right Arrow</span></span> |
+| <span data-ttu-id="6cf36-312">Váltás "érvényesek megjelenítése" és "minden megjelenítése" módok között</span><span class="sxs-lookup"><span data-stu-id="6cf36-312">Toggle between “Show valid” and “Show all” modes</span></span>                                                                        | <span data-ttu-id="6cf36-313">Alt+W</span><span class="sxs-lookup"><span data-stu-id="6cf36-313">Alt+W</span></span>                            |
+| <span data-ttu-id="6cf36-314">Az érték kiválasztása a legördülő listából, majd áthelyezés a követező szegmensbe</span><span class="sxs-lookup"><span data-stu-id="6cf36-314">Select the value from drop-down list and move to the next segment</span></span>                                                       | <span data-ttu-id="6cf36-315">Bevitel</span><span class="sxs-lookup"><span data-stu-id="6cf36-315">Enter</span></span>                            |
+| <span data-ttu-id="6cf36-316">Ugrás a következő/előző vezérlőre az oldalon (amikor fókusz a beviteli vezérlőn van)</span><span class="sxs-lookup"><span data-stu-id="6cf36-316">Move to the next/previous control on the page (when focus is in input control)</span></span>                                          | <span data-ttu-id="6cf36-317">Tab/Shift+Tab</span><span class="sxs-lookup"><span data-stu-id="6cf36-317">Tab / Shift+Tab</span></span>                  |
+| <span data-ttu-id="6cf36-318">Ugrás a következő/előző beviteli mezőre a helyi menüben, (amikor a fókusz a legördülő listában van)</span><span class="sxs-lookup"><span data-stu-id="6cf36-318">Move to the next/previous input field in the flyout (when focus is in the drop-down list)</span></span>                               | <span data-ttu-id="6cf36-319">Tab/Shift+Tab</span><span class="sxs-lookup"><span data-stu-id="6cf36-319">Tab / Shift+Tab</span></span>                  |
+| <span data-ttu-id="6cf36-320">Ugrás egy sorral feljebb/lentebb a keresőben</span><span class="sxs-lookup"><span data-stu-id="6cf36-320">Move up/down a row in the lookup</span></span>                                                                                        | <span data-ttu-id="6cf36-321">Felfelé nyíl/Lefelé nyíl</span><span class="sxs-lookup"><span data-stu-id="6cf36-321">Up Arrow / Down Arrow</span></span>            |
+| <span data-ttu-id="6cf36-322">Ugrás egy oldallal feljebb/lentebb a keresőben</span><span class="sxs-lookup"><span data-stu-id="6cf36-322">Move up/down a page in the lookup</span></span>                                                                                       | <span data-ttu-id="6cf36-323">Page Up/Page Down</span><span class="sxs-lookup"><span data-stu-id="6cf36-323">Page Up / Page Down</span></span>              |
+| <span data-ttu-id="6cf36-324">Ugrás a keresés tetejére/aljára</span><span class="sxs-lookup"><span data-stu-id="6cf36-324">Move to the top/bottom of the lookup</span></span>                                                                                    | <span data-ttu-id="6cf36-325">Home/End</span><span class="sxs-lookup"><span data-stu-id="6cf36-325">Home / End</span></span>                       |
 
  
 

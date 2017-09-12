@@ -16,39 +16,39 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 76c948ba99f9b4fa9200c2541c221c4ca86414e4
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ac3fcad40e2d71dbde5fab8d1aa77cbfa879cdb1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="settle-a-postdated-check-for-a-vendor"></a>Szállítónak kiállított, jövőben esedékes csekk kiegyenlítése
+# <a name="settle-a-postdated-check-for-a-vendor"></a><span data-ttu-id="0adba-103">Szállítónak kiállított, jövőben esedékes csekk kiegyenlítése</span><span class="sxs-lookup"><span data-stu-id="0adba-103">Settle a postdated check for a vendor</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Rendezzen egy jövőben esedékes, szállító számára kibocsátott csekket, amennyiben bank a csekk lejárta és törlése után törölte a csekktranzakciót. 
+<span data-ttu-id="0adba-104">Rendezzen egy jövőben esedékes, szállító számára kibocsátott csekket, amennyiben bank a csekk lejárta és törlése után törölte a csekktranzakciót.</span><span class="sxs-lookup"><span data-stu-id="0adba-104">Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank.</span></span> 
 
-Ez előtt a folyamat előtt végezze el a következőeket.
+<span data-ttu-id="0adba-105">Ez előtt a folyamat előtt végezze el a következőeket.</span><span class="sxs-lookup"><span data-stu-id="0adba-105">Complete the following procedures before you start this one.</span></span>
 
-1) Jövőben esedékes csekkek beállítása
+1) <span data-ttu-id="0adba-106">Jövőben esedékes csekkek beállítása</span><span class="sxs-lookup"><span data-stu-id="0adba-106">Set up postdated checks</span></span>
 
-2) Szállító részére kiállított, jövőben esedékes csekk regisztrálása és feladása
+2) <span data-ttu-id="0adba-107">Szállító részére kiállított, jövőben esedékes csekk regisztrálása és feladása</span><span class="sxs-lookup"><span data-stu-id="0adba-107">Register and post a postdated check for a vendor</span></span>
 
 
 
-Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget használja.
+<span data-ttu-id="0adba-108">Ezen eljárás szerepköre: Pénztáros.</span><span class="sxs-lookup"><span data-stu-id="0adba-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="0adba-109">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="0adba-109">This procedure uses the USMF demo company.</span></span>
 
-1. Ugorjon a Kötelezettségek > Kifizetések > Szállító jövőben esedékes csekkjei pontra.
-2. Kattintson a Kiegyenlítés elemre.
-3. Kattintson az Elszámolási tételek kiegyenlítése elemre.
-    * Rendezze a csekktranzakció szállítói számláját.  
-4. Zárja be a lapot.
-5. Ugorjon a Főkönyv > Naplóbejegyzések > Általános naplók pontra.
-6. A Megjelenítés mezőben válassza ki a következőt: „Mind”.
-7. Jelölje be vagy törölje a jelölést a Megjelenítés csak a felhasználó által létrehozott jelölőnégyzetéből.
-8. A listában jelölje meg a kiválasztott sort.
-9. Kattintson a Sorok pontra.
-10. Kattintson a Bizonylat elemre.
-11. Zárja be a lapot.
+1. <span data-ttu-id="0adba-110">Ugorjon a Kötelezettségek > Kifizetések > Szállító jövőben esedékes csekkjei pontra.</span><span class="sxs-lookup"><span data-stu-id="0adba-110">Go to Accounts payable > Payments > Vendor postdated checks.</span></span>
+2. <span data-ttu-id="0adba-111">Kattintson a Kiegyenlítés elemre.</span><span class="sxs-lookup"><span data-stu-id="0adba-111">Click Settle.</span></span>
+3. <span data-ttu-id="0adba-112">Kattintson az Elszámolási tételek kiegyenlítése elemre.</span><span class="sxs-lookup"><span data-stu-id="0adba-112">Click Settle clearing entries.</span></span>
+    * <span data-ttu-id="0adba-113">Rendezze a csekktranzakció szállítói számláját.</span><span class="sxs-lookup"><span data-stu-id="0adba-113">Settle the vendor account for the check transaction.</span></span>  
+4. <span data-ttu-id="0adba-114">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0adba-114">Close the page.</span></span>
+5. <span data-ttu-id="0adba-115">Ugorjon a Főkönyv > Naplóbejegyzések > Általános naplók pontra.</span><span class="sxs-lookup"><span data-stu-id="0adba-115">Go to General ledger > Journal entries > General journals.</span></span>
+6. <span data-ttu-id="0adba-116">A Megjelenítés mezőben válassza ki a következőt: „Mind”.</span><span class="sxs-lookup"><span data-stu-id="0adba-116">In the Show field, select 'All'.</span></span>
+7. <span data-ttu-id="0adba-117">Jelölje be vagy törölje a jelölést a Megjelenítés csak a felhasználó által létrehozott jelölőnégyzetéből.</span><span class="sxs-lookup"><span data-stu-id="0adba-117">Select or clear the Show user-created only check box.</span></span>
+8. <span data-ttu-id="0adba-118">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="0adba-118">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="0adba-119">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="0adba-119">Click Lines.</span></span>
+10. <span data-ttu-id="0adba-120">Kattintson a Bizonylat elemre.</span><span class="sxs-lookup"><span data-stu-id="0adba-120">Click Voucher.</span></span>
+11. <span data-ttu-id="0adba-121">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0adba-121">Close the page.</span></span>
 
 

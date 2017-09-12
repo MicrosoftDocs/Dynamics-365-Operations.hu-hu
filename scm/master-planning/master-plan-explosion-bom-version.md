@@ -20,33 +20,33 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: efb184269c66483304af0589e4305a55ae08ce08
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f8c633e09103c45aff5614270a94a3bfe4fc5e20
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>Anyagjegyzék-verzió alábontása
+# <a name="explosion-of-a-bom-version"></a><span data-ttu-id="47055-103">Anyagjegyzék-verzió alábontása</span><span class="sxs-lookup"><span data-stu-id="47055-103">Explosion of a BOM version</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk egy anyagjegyzék-verzió alábontásának alaptervezési forgatókönyvét ismerteti.
+<span data-ttu-id="47055-104">Ez a cikk egy anyagjegyzék-verzió alábontásának alaptervezési forgatókönyvét ismerteti.</span><span class="sxs-lookup"><span data-stu-id="47055-104">This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.</span></span>
 
-Egy anyagjegyzék-verzió igényalábontása létrehoz egy igényt minden anyagjegyzéksor-cikkhez egy adott telephelyen, esetleg egy adott raktárban. Egy telephely-specifikus anyagjegyzékben egy adott raktár határozható meg minden anyagjegyzék-sorhoz. Továbbá minden anyagjegyzék-sorhoz a cikk dimenzióbeállításai meghatározzák, hogy a raktár szükséges-e. Az egyes anyagjegyzékcikk-sorokhoz megjelenő igény ezután a további igényalábontás kezdőpontja lesz. Ez az alaptervezési eset a következő feltételeket tartalmazza:
+<span data-ttu-id="47055-105">Egy anyagjegyzék-verzió igényalábontása létrehoz egy igényt minden anyagjegyzéksor-cikkhez egy adott telephelyen, esetleg egy adott raktárban.</span><span class="sxs-lookup"><span data-stu-id="47055-105">A demand explosion of a bill of materials (BOM) version creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse.</span></span> <span data-ttu-id="47055-106">Egy telephely-specifikus anyagjegyzékben egy adott raktár határozható meg minden anyagjegyzék-sorhoz.</span><span class="sxs-lookup"><span data-stu-id="47055-106">In a site-specific BOM, a specific warehouse can be defined for each BOM line.</span></span> <span data-ttu-id="47055-107">Továbbá minden anyagjegyzék-sorhoz a cikk dimenzióbeállításai meghatározzák, hogy a raktár szükséges-e.</span><span class="sxs-lookup"><span data-stu-id="47055-107">Additionally, for each BOM line, the item's dimension settings determine whether the warehouse is required.</span></span> <span data-ttu-id="47055-108">Az egyes anyagjegyzékcikk-sorokhoz megjelenő igény ezután a további igényalábontás kezdőpontja lesz.</span><span class="sxs-lookup"><span data-stu-id="47055-108">The resulting demand for each BOM line item then becomes the starting point for additional demand explosion.</span></span> <span data-ttu-id="47055-109">Ez az alaptervezési eset a következő feltételeket tartalmazza:</span><span class="sxs-lookup"><span data-stu-id="47055-109">This master planning scenario involves the following conditions:</span></span>
 
--   A telephely dimenzió kötelező, és meg kell adni az igénytranzakcióban.
--   A hely dimenzió konzisztens. Az alsóbb szintű igények telephelye megegyezik a kiinduló igénytranzakció telephelyével.
+-   <span data-ttu-id="47055-110">A telephely dimenzió kötelező, és meg kell adni az igénytranzakcióban.</span><span class="sxs-lookup"><span data-stu-id="47055-110">The site dimension is mandatory and must be entered on the demand transaction.</span></span>
+-   <span data-ttu-id="47055-111">A hely dimenzió konzisztens.</span><span class="sxs-lookup"><span data-stu-id="47055-111">The site dimension is consistent.</span></span> <span data-ttu-id="47055-112">Az alsóbb szintű igények telephelye megegyezik a kiinduló igénytranzakció telephelyével.</span><span class="sxs-lookup"><span data-stu-id="47055-112">Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.</span></span>
 
-A következő ábra mutatja az alaptervezési igényalábontás folyamatát. ![Alábontás igénylése az anyagjegyzék-verzió használatával](./media/multisitedemandexplosionscenariousingbomversion.gif)
+<span data-ttu-id="47055-113">A következő ábra mutatja az alaptervezési igényalábontás folyamatát.</span><span class="sxs-lookup"><span data-stu-id="47055-113">The following illustration shows how the process for master planning demand explosion.</span></span> ![Alábontás igénylése az anyagjegyzék-verzió használatával](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="47055-115">Lásd még</span><span class="sxs-lookup"><span data-stu-id="47055-115">See also</span></span>
 --------
 
-[Alaptervezés - anyagjegyzék verzió meghatározása](master-plan-bom-version-determined.md)
+[<span data-ttu-id="47055-116">Alaptervezés - anyagjegyzék verzió meghatározása</span><span class="sxs-lookup"><span data-stu-id="47055-116">Master planning - how the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
 
-[Az alaptervezés és a többhelyes funkció](master-plan-multisite-functionality.md)
+[<span data-ttu-id="47055-117">Az alaptervezés és a többhelyes funkció</span><span class="sxs-lookup"><span data-stu-id="47055-117">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
 
 
 

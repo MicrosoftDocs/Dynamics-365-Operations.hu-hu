@@ -18,26 +18,26 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4691ac4456b08084bcd93f7a8447719a15299c93
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c2b62eafc71b5d1ad4eaaf252efd1dcbb97b86f3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók
+# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a><span data-ttu-id="6dfc6-102">Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-jóváhagyási naplók</span><span class="sxs-lookup"><span data-stu-id="6dfc6-102">Default offset accounts for vendor invoice journals and invoice approval journals</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
 
 
-Az alapértelmezett ellenszámlák a következő szállítói számla naplóoldalakon használatosak:
+<span data-ttu-id="6dfc6-103">Az alapértelmezett ellenszámlák a következő szállítói számla naplóoldalakon használatosak:</span><span class="sxs-lookup"><span data-stu-id="6dfc6-103">Default offset accounts are used on the following vendor invoice journal pages:</span></span>
 
--   Számlanapló
--   Számla-jóváhagyási napló
+-   <span data-ttu-id="6dfc6-104">Számlanapló</span><span class="sxs-lookup"><span data-stu-id="6dfc6-104">Invoice journal</span></span>
+-   <span data-ttu-id="6dfc6-105">Számla-jóváhagyási napló</span><span class="sxs-lookup"><span data-stu-id="6dfc6-105">Invoice approval journal</span></span>
 
-Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az alapértelmezett számlákat a számlanaplókhoz.
+<span data-ttu-id="6dfc6-106">Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az alapértelmezett számlákat a számlanaplókhoz.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-106">Use the following table to help decide where you should assign default accounts for invoice journals.</span></span>
 
 <table>
 <colgroup>
@@ -48,51 +48,51 @@ Az alábbi táblázat segítségével eldöntheti, hogy hová rendelje hozzá az
 </colgroup>
 <thead>
 <tr class="header">
-<th>Alapértelmezett számlák beállítása itt</th>
-<th>Hol vannak az alapértelmezett számlák</th>
-<th>Hogyan befolyásolja ez a lehetőség a feldolgozást</th>
-<th>Mikor kell használni ezt a lehetőséget</th>
+<th><span data-ttu-id="6dfc6-107">Alapértelmezett számlák beállítása itt</span><span class="sxs-lookup"><span data-stu-id="6dfc6-107">Set up default accounts here</span></span></th>
+<th><span data-ttu-id="6dfc6-108">Hol vannak az alapértelmezett számlák</span><span class="sxs-lookup"><span data-stu-id="6dfc6-108">Where default accounts are provided</span></span></th>
+<th><span data-ttu-id="6dfc6-109">Hogyan befolyásolja ez a lehetőség a feldolgozást</span><span class="sxs-lookup"><span data-stu-id="6dfc6-109">How this option affects processing</span></span></th>
+<th><span data-ttu-id="6dfc6-110">Mikor kell használni ezt a lehetőséget</span><span class="sxs-lookup"><span data-stu-id="6dfc6-110">When you should use this option</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Szállítócsoport</strong> – Állítsa be az alapértelmezett ellenszámlákat a szállítócsoportoknak az <strong>Alapértelmezett számla beállítása</strong> lapon, amelyet a <strong>Szállítócsoportok</strong> oldalról tud megnyitni.</td>
+<td><span data-ttu-id="6dfc6-111"><strong>Szállítócsoport</strong> – Állítsa be az alapértelmezett ellenszámlákat a szállítócsoportoknak az <strong>Alapértelmezett számla beállítása</strong> lapon, amelyet a <strong>Szállítócsoportok</strong> oldalról tud megnyitni.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-111"><strong>Vendor group</strong> – Set up default offset accounts for vendor groups on the <strong>Default account setup</strong> page, which you can open from the <strong>Vendor groups</strong> page.</span></span></td>
 <td><ul>
-<li>Szállítói számla</li>
-<li>Naplóbejegyzések szállítói számlákhoz a szállítói csoportban, ha az alapértelmezett számlák nincsenek megadva a szállítói számlákhoz</li>
+<li><span data-ttu-id="6dfc6-112">Szállítói számla</span><span class="sxs-lookup"><span data-stu-id="6dfc6-112">Vendor account</span></span></li>
+<li><span data-ttu-id="6dfc6-113">Naplóbejegyzések szállítói számlákhoz a szállítói csoportban, ha az alapértelmezett számlák nincsenek megadva a szállítói számlákhoz</span><span class="sxs-lookup"><span data-stu-id="6dfc6-113">Journal entries for vendor accounts in the vendor group, if default accounts aren’t specified for vendor accounts</span></span></li>
 </ul></td>
-<td>Az alapértelmezett ellenszámlák szállítócsoportok számára szállítói alapértelmezett ellenszámlákként jelennek meg az <strong>Alapértelmezett számla beállítása</strong> oldalon. Ezt a lapot megnyithatja az <strong>Összes szállító</strong> listaoldaláról.</td>
-<td>Ezt a lehetőséget akkor használja, ha általában azonos típusú elemeket szokott fizetni, azonos szállítói csoportok esetében.</td>
+<td><span data-ttu-id="6dfc6-114">Az alapértelmezett ellenszámlák szállítócsoportok számára szállítói alapértelmezett ellenszámlákként jelennek meg az <strong>Alapértelmezett számla beállítása</strong> oldalon.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-114">The default offset accounts for vendor groups are shown as default offset accounts for vendors on the <strong>Default account setup</strong> page.</span></span> <span data-ttu-id="6dfc6-115">Ezt a lapot megnyithatja az <strong>Összes szállító</strong> listaoldaláról.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-115">You can open this page from the <strong>All vendors</strong> list page.</span></span></td>
+<td><span data-ttu-id="6dfc6-116">Ezt a lehetőséget akkor használja, ha általában azonos típusú elemeket szokott fizetni, azonos szállítói csoportok esetében.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-116">Use this option if you typically pay for the same types of things from the same vendor groups over time.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Szállítói számla</strong> – Állítsa be az alapértelmezett számlákat a szállítói számlákhoz az <strong>Alapértelmezett számla beállítása</strong> lapon, amelyet a <strong>Szállítók</strong> oldalról tud megnyitni.</td>
-<td>A szállítói számlához tartozó naplóbejegyzések</td>
-<td>A szállítói számlák alapértelmezett ellenszámlái alapértelmezett ellenszámlaként jelennek meg a naplóbejegyzésekben a szállítói számlánál.</td>
-<td>Ezt a lehetőséget akkor használja, ha általában azonos típusú elemeket szokott fizetni, ugyanazoktól a szállítóktól.</td>
+<td><span data-ttu-id="6dfc6-117"><strong>Szállítói számla</strong> – Állítsa be az alapértelmezett számlákat a szállítói számlákhoz az <strong>Alapértelmezett számla beállítása</strong> lapon, amelyet a <strong>Szállítók</strong> oldalról tud megnyitni.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-117"><strong>Vendor account</strong> – Set up default accounts for vendor accounts on the <strong>Default account setup</strong> page, which you can open from the <strong>Vendors</strong> page.</span></span></td>
+<td><span data-ttu-id="6dfc6-118">A szállítói számlához tartozó naplóbejegyzések</span><span class="sxs-lookup"><span data-stu-id="6dfc6-118">Journal entries for the vendor account</span></span></td>
+<td><span data-ttu-id="6dfc6-119">A szállítói számlák alapértelmezett ellenszámlái alapértelmezett ellenszámlaként jelennek meg a naplóbejegyzésekben a szállítói számlánál.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-119">The default offset accounts for vendor accounts are shown as default offset accounts for journal entries for the vendor account.</span></span></td>
+<td><span data-ttu-id="6dfc6-120">Ezt a lehetőséget akkor használja, ha általában azonos típusú elemeket szokott fizetni, ugyanazoktól a szállítóktól.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-120">Use this option if you typically pay for the same types of things from the same vendors over time.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Naplónevek</strong> – Állítsa be az alapértelmezett ellenszámlákat a naplókhoz a <strong>Naplónevek</strong> oldalon. Válassza ki a <strong>Rögzített ellenszámla</strong> lehetőséget. Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a naplóneveken, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</td>
+<td><span data-ttu-id="6dfc6-121"><strong>Naplónevek</strong> – Állítsa be az alapértelmezett ellenszámlákat a naplókhoz a <strong>Naplónevek</strong> oldalon.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-121"><strong>Journal names</strong> – Set up default offset accounts for journals on the <strong>Journal names</strong> page.</span></span> <span data-ttu-id="6dfc6-122">Válassza ki a <strong>Rögzített ellenszámla</strong> lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-122">Select the <strong>Fixed offset account</strong> option.</span></span> <span data-ttu-id="6dfc6-123">Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a naplóneveken, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-123">Note that you can't specify default offset accounts on journal names if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
 <td><ul>
-<li>Naplófejléc, amely a naplónevet használja.</li>
-<li>Naplóbejegyzések a naplókban, amelyek a naplónevet használják</li>
+<li><span data-ttu-id="6dfc6-124">Naplófejléc, amely a naplónevet használja.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-124">Journal header that uses the journal name</span></span></li>
+<li><span data-ttu-id="6dfc6-125">Naplóbejegyzések a naplókban, amelyek a naplónevet használják</span><span class="sxs-lookup"><span data-stu-id="6dfc6-125">Journal entries in journals that use the journal name</span></span></li>
 </ul></td>
-<td>Ha a <strong>Rögzített ellenszámla</strong> opció a <strong>Naplónevek</strong> lapon be van jelölve, a naplónévhez megadott ellenszámla felülbírálja a szállítóhoz vagy szállítócsoporthoz tartozó alapértelmezett ellenszámlát.</td>
-<td>Az opció segítségével naplókat állíthat be meghatározott költségekre és kiadásokra, amelyek bizonyos számlákat terhelnek, függetlenül attól, hogy ki a szállító vagy mely szállítói csoporthoz tartozik.</td>
+<td><span data-ttu-id="6dfc6-126">Ha a <strong>Rögzített ellenszámla</strong> opció a <strong>Naplónevek</strong> lapon be van jelölve, a naplónévhez megadott ellenszámla felülbírálja a szállítóhoz vagy szállítócsoporthoz tartozó alapértelmezett ellenszámlát.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-126">If the <strong>Fixed offset account</strong> option on the <strong>Journal names</strong> page is selected, the offset account for the journal name overrides the default offset account for the vendor or vendor group.</span></span></td>
+<td><span data-ttu-id="6dfc6-127">Az opció segítségével naplókat állíthat be meghatározott költségekre és kiadásokra, amelyek bizonyos számlákat terhelnek, függetlenül attól, hogy ki a szállító vagy mely szállítói csoporthoz tartozik.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-127">Use this option to set up journals for specific costs and expenses that are charged to specific accounts, regardless of the vendor or the vendor group that the vendor belongs to.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Naplónevek</strong> – Állítsa be az alapértelmezett ellenszámlákat a naplókhoz a <strong>Naplónevek</strong> oldalon. Törölje a <strong>Rögzített ellenszámla</strong> lehetőséget. Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a naplóneveken, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</td>
+<td><span data-ttu-id="6dfc6-128"><strong>Naplónevek</strong> – Állítsa be az alapértelmezett ellenszámlákat a naplókhoz a <strong>Naplónevek</strong> oldalon.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-128"><strong>Journal names</strong> – Set up default offset accounts for journals on the <strong>Journal names</strong> page.</span></span> <span data-ttu-id="6dfc6-129">Törölje a <strong>Rögzített ellenszámla</strong> lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-129">Clear the <strong>Fixed offset account</strong> option.</span></span> <span data-ttu-id="6dfc6-130">Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a naplóneveken, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-130">Note that you can't specify default offset accounts on journal names if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
 <td><ul>
-<li>Napló fejléce</li>
-<li>Naplóbejegyzések a naplókban, amelyek a naplónevet használják</li>
+<li><span data-ttu-id="6dfc6-131">Napló fejléce</span><span class="sxs-lookup"><span data-stu-id="6dfc6-131">Journal header</span></span></li>
+<li><span data-ttu-id="6dfc6-132">Naplóbejegyzések a naplókban, amelyek a naplónevet használják</span><span class="sxs-lookup"><span data-stu-id="6dfc6-132">Journal entries in journals that use the journal name</span></span></li>
 </ul></td>
-<td>Az alapértelmezett bejegyzések a napló fejlécének oldalain használatosak és az ellenszámla a napló fejlécének oldalán egy alapértelmezett bejegyzésként használatos a napló bizonylat oldalakon. Alapértelmezett számlák a <strong>Naplónevek </strong>oldalon csak akkor használatosak, ha az alapértelmezett számlák nincsenek beállítva a szállítói számlára.</td>
-<td>Használja ezt az opciót az alapértelmezett számlák beállításához, amelyeket akkor használ, amikor az alapértelmezett szállítói ellenszámla nincs hozzárendelve.</td>
+<td><span data-ttu-id="6dfc6-133">Az alapértelmezett bejegyzések a napló fejlécének oldalain használatosak és az ellenszámla a napló fejlécének oldalán egy alapértelmezett bejegyzésként használatos a napló bizonylat oldalakon.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-133">These default entries are used on journal header pages, and the offset account on the journal header page is used as a default entry on the journal voucher pages.</span></span> <span data-ttu-id="6dfc6-134">Alapértelmezett számlák a <strong>Naplónevek </strong>oldalon csak akkor használatosak, ha az alapértelmezett számlák nincsenek beállítva a szállítói számlára.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-134">Default accounts from the <strong>Journal names </strong>page are used only if default accounts aren’t set up for the vendor account.</span></span></td>
+<td><span data-ttu-id="6dfc6-135">Használja ezt az opciót az alapértelmezett számlák beállításához, amelyeket akkor használ, amikor az alapértelmezett szállítói ellenszámla nincs hozzárendelve.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-135">Use this option to set up default accounts that are used when a default vendor offset account isn't assigned.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Napló fejléce</strong> – Állítson be alapértelmezett ellenszámlát egy naplóhoz, amelyet alapértelmezett bejegyzésként használhat a napló bizonylat oldalakon. Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a napló fejlécén, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</td>
-<td>A napló naplóbejegyzések a naplóban</td>
-<td>Az alapértelmezett ellenszámla egy naplóhoz alapértelmezett bejegyzésként használatos a napló bizonylat oldalakon.</td>
-<td>A beállítás segítségével felgyorsítható az adatbevitel, ha a naplóban lévő legtöbb bejegyzés ugyanazzal az ellenszámlával rendelkezik.</td>
+<td><span data-ttu-id="6dfc6-136"><strong>Napló fejléce</strong> – Állítson be alapértelmezett ellenszámlát egy naplóhoz, amelyet alapértelmezett bejegyzésként használhat a napló bizonylat oldalakon.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-136"><strong>Journal header</strong> – Set up a default offset account for a journal as a default entry on the journal voucher pages.</span></span> <span data-ttu-id="6dfc6-137">Vegye figyelembe, hogy nem adhat meg alapértelmezett ellenszámlákat a napló fejlécén, ha a naplónevek naplótípusa <strong>Számlaregiszter</strong> vagy <strong>Jóváhagyás</strong>.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-137">Note that you can't specify default offset accounts on the journal header if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</span></span></td>
+<td><span data-ttu-id="6dfc6-138">A napló naplóbejegyzések a naplóban</span><span class="sxs-lookup"><span data-stu-id="6dfc6-138">Journal entries in the journal</span></span></td>
+<td><span data-ttu-id="6dfc6-139">Az alapértelmezett ellenszámla egy naplóhoz alapértelmezett bejegyzésként használatos a napló bizonylat oldalakon.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-139">The default offset account for a journal is used as the default entry on the journal voucher pages.</span></span></td>
+<td><span data-ttu-id="6dfc6-140">A beállítás segítségével felgyorsítható az adatbevitel, ha a naplóban lévő legtöbb bejegyzés ugyanazzal az ellenszámlával rendelkezik.</span><span class="sxs-lookup"><span data-stu-id="6dfc6-140">Use this option to help speed up data entry if most entries in a journal have the same offset account.</span></span></td>
 </tr>
 </tbody>
 </table>

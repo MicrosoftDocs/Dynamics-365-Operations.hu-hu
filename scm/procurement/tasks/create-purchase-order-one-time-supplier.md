@@ -16,26 +16,26 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 580dfe3680c36a32a24999bc8c266a38a07177fd
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2d4dabaf6e1d79cbd626294ee4e327f2725a5e43
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Beszerzési rendelés létrehozása egyszeri szállítóhoz
+# <a name="create-a-purchase-order-for-a-one-time-supplier"></a><span data-ttu-id="10ce2-103">Beszerzési rendelés létrehozása egyszeri szállítóhoz</span><span class="sxs-lookup"><span data-stu-id="10ce2-103">Create a purchase order for a one-time supplier</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy beszerzési rendelést egy egyszeri szállítóhoz. A rendszer automatikusan létrehozza a szállítót a beszerzési rendeléssel együtt, a szállítói számla manuálisan történő létrehozása helyett. Általában a beszerzési ügynök hozza létre a beszerzési rendeléseket. Az útmutatóban mutatott példa használható az USMF demo adatok cégben. Ez az előfeltétele annak, hogy a Kötelezettségek paraméterei lapon az egyszeri szállítói számla legyen beállítva.
+<span data-ttu-id="10ce2-104">Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy beszerzési rendelést egy egyszeri szállítóhoz.</span><span class="sxs-lookup"><span data-stu-id="10ce2-104">This procedure shows you how to create a purchase order for a one-time supplier.</span></span> <span data-ttu-id="10ce2-105">A rendszer automatikusan létrehozza a szállítót a beszerzési rendeléssel együtt, a szállítói számla manuálisan történő létrehozása helyett.</span><span class="sxs-lookup"><span data-stu-id="10ce2-105">The supplier is created automatically with the purchase order, rather than having to create the vendor account manually.</span></span> <span data-ttu-id="10ce2-106">Általában a beszerzési ügynök hozza létre a beszerzési rendeléseket.</span><span class="sxs-lookup"><span data-stu-id="10ce2-106">Purchase orders are typically created by a purchasing agent.</span></span> <span data-ttu-id="10ce2-107">Az útmutatóban mutatott példa használható az USMF demo adatok cégben.</span><span class="sxs-lookup"><span data-stu-id="10ce2-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="10ce2-108">Ez az előfeltétele annak, hogy a Kötelezettségek paraméterei lapon az egyszeri szállítói számla legyen beállítva.</span><span class="sxs-lookup"><span data-stu-id="10ce2-108">It is a prerequisite that a one-time vendor account has been set up in the Account payable parameters page.</span></span>
 
 
-## <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Beszerzési rendelés létrehozása egyszeri szállítóhoz
-1. Ugorjon a Beszerzés és forrás > Beszerzési rendelés > Összes beszerzési rendelés pontra.
-2. Kattintson az Új lehetőségre.
-3. Válassza ki az Igen lehetőséget az Egyszeri szállító mezőben.
-    * A rendszer automatikusan létrehozza a szállítói számlát és hozzárendeli a beszerzési rendeléshez. A rendszer a szállítói számlát a Kötelezettségek paraméterei oldal Általános lapon megadott sablon alapján hozza létre.  
-4. Írja be a szállító nevét a Név mezőbe.
-5. Kattintson az OK gombra.
-    * Lehetséges, hogy már kész van a beszerzési rendelés, és ugyanúgy fel van dolgozva, mint a többi rendelés. Nincsenek olyan különleges jellemzők, amelyek kapcsolatban állnak azzal, hogy hogyan jött létre. A számla számot ad az esedékes tranzakcióról azon a szállítói számlán, amelyet a rendeléssel hoztak létre, illetve a kifizetés ezt követően történik meg. Ha ez kész van, akkor törölni lehet a szállítói számlát. Ezt általában a kötelezettségkezelő osztály végzi el.  
+## <a name="create-a-purchase-order-for-a-one-time-supplier"></a><span data-ttu-id="10ce2-109">Beszerzési rendelés létrehozása egyszeri szállítóhoz</span><span class="sxs-lookup"><span data-stu-id="10ce2-109">Create a purchase order for a one-time supplier</span></span>
+1. <span data-ttu-id="10ce2-110">Ugorjon a Beszerzés és forrás > Beszerzési rendelés > Összes beszerzési rendelés pontra.</span><span class="sxs-lookup"><span data-stu-id="10ce2-110">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="10ce2-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="10ce2-111">Click New.</span></span>
+3. <span data-ttu-id="10ce2-112">Válassza ki az Igen lehetőséget az Egyszeri szállító mezőben.</span><span class="sxs-lookup"><span data-stu-id="10ce2-112">Select Yes in the One-time supplier field.</span></span>
+    * <span data-ttu-id="10ce2-113">A rendszer automatikusan létrehozza a szállítói számlát és hozzárendeli a beszerzési rendeléshez.</span><span class="sxs-lookup"><span data-stu-id="10ce2-113">A vendor account is automatically created and assigned to the purchase order.</span></span> <span data-ttu-id="10ce2-114">A rendszer a szállítói számlát a Kötelezettségek paraméterei oldal Általános lapon megadott sablon alapján hozza létre.</span><span class="sxs-lookup"><span data-stu-id="10ce2-114">The vendor account is created based on the template that is specified on the General tab in the Accounts payable parameters page.</span></span>  
+4. <span data-ttu-id="10ce2-115">Írja be a szállító nevét a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="10ce2-115">In the Name field, type a name for the supplier.</span></span>
+5. <span data-ttu-id="10ce2-116">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="10ce2-116">Click OK.</span></span>
+    * <span data-ttu-id="10ce2-117">Lehetséges, hogy már kész van a beszerzési rendelés, és ugyanúgy fel van dolgozva, mint a többi rendelés.</span><span class="sxs-lookup"><span data-stu-id="10ce2-117">The purchase order can now be completed and processed like any other order.</span></span> <span data-ttu-id="10ce2-118">Nincsenek olyan különleges jellemzők, amelyek kapcsolatban állnak azzal, hogy hogyan jött létre.</span><span class="sxs-lookup"><span data-stu-id="10ce2-118">There are no special characteristics related to how this is done.</span></span> <span data-ttu-id="10ce2-119">A számla számot ad az esedékes tranzakcióról azon a szállítói számlán, amelyet a rendeléssel hoztak létre, illetve a kifizetés ezt követően történik meg.</span><span class="sxs-lookup"><span data-stu-id="10ce2-119">The invoice will account a due transaction on the vendor account that was created with the order, and payment will then be processed.</span></span> <span data-ttu-id="10ce2-120">Ha ez kész van, akkor törölni lehet a szállítói számlát.</span><span class="sxs-lookup"><span data-stu-id="10ce2-120">When this is completed, the vendor account can be deleted.</span></span> <span data-ttu-id="10ce2-121">Ezt általában a kötelezettségkezelő osztály végzi el.</span><span class="sxs-lookup"><span data-stu-id="10ce2-121">This is typically done by the accounts payable department.</span></span>  
 
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Minőségi rendelések beállítása"
 description: "Ez az eljárás bemutatja, hogy hogyan engedélyezheti a minőségkezelési folyamatot, ha a bejövő készletet, a beérkezés regisztrációja után azonnal ellenőrizni szükséges."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,130 +17,129 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 0bd8bc73a3cbb42cb7e6d42a07d58c0b02673ba1
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 73981313fc662094ee4f8bb15a88271e16d41193
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="set-up-quality-orders"></a>Minőségi rendelések beállítása
+# <a name="set-up-quality-orders"></a><span data-ttu-id="9297d-103">Minőségi rendelések beállítása</span><span class="sxs-lookup"><span data-stu-id="9297d-103">Set up quality orders</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogy hogyan engedélyezheti a minőségkezelési folyamatot, ha a bejövő készletet, a beérkezés regisztrációja után azonnal ellenőrizni szükséges. Ezt az eljárást jellemzően egy minőségbiztosítási vezető végzi. A folyamat részét képezi a minőségi csoport létrehozása, a mintavétellel érintett cikkek, valamint a minőségi csoportban szereplő cikkeken végzendő tesztek csoportosítását szolgáló tesztcsoport meghatározása. Ezt az útmutatót lefuttathatja az USMF bemutatócégen.
+<span data-ttu-id="9297d-104">Ez az eljárás bemutatja, hogy hogyan engedélyezheti a minőségkezelési folyamatot, ha a bejövő készletet, a beérkezés regisztrációja után azonnal ellenőrizni szükséges.</span><span class="sxs-lookup"><span data-stu-id="9297d-104">This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration.</span></span> <span data-ttu-id="9297d-105">Ezt az eljárást jellemzően egy minőségbiztosítási vezető végzi.</span><span class="sxs-lookup"><span data-stu-id="9297d-105">The procedure will typically be carried out by a quality manager.</span></span> <span data-ttu-id="9297d-106">A folyamat részét képezi a minőségi csoport létrehozása, a mintavétellel érintett cikkek, valamint a minőségi csoportban szereplő cikkeken végzendő tesztek csoportosítását szolgáló tesztcsoport meghatározása.</span><span class="sxs-lookup"><span data-stu-id="9297d-106">The process includes the creation of a quality group, to define the items that are going to be sampled, and a test group to group the tests that are to be performed on items in the quality group.</span></span> <span data-ttu-id="9297d-107">Ezt az útmutatót lefuttathatja az USMF bemutatócégen.</span><span class="sxs-lookup"><span data-stu-id="9297d-107">You can run this guide in the USMF demo data company.</span></span>
 
 
-## <a name="enable-quality-management"></a>Minőségkezelés engedélyezése
-1. Ugrás a Készletkezelés > Beállítás > Készlet- és raktárkezelési paraméterek lehetőségre.
-2. Kattintson a Minőségkezelés lapra.
-3. Állítsa a Minőségkezelés használata beállítást Igen értékre.
-4. Kattintson a Jelentés-beállítás elemre.
-    * Az USMF-ben, a minőségkezelési jelentések beállításai előre definiálva vannak. Ha ez nem történt meg, adjon hozzá új sorokat a különböző típusú jelentés típusokhoz, majd válassza ki az egyes jelentésekhez használandó dokumentum típust.  
-5. Zárja be a lapot.
-6. Zárja be a lapot.
+## <a name="enable-quality-management"></a><span data-ttu-id="9297d-108">Minőségkezelés engedélyezése</span><span class="sxs-lookup"><span data-stu-id="9297d-108">Enable quality management</span></span>
+1. <span data-ttu-id="9297d-109">Ugrás a Készletkezelés > Beállítás > Készlet- és raktárkezelési paraméterek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-109">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
+2. <span data-ttu-id="9297d-110">Kattintson a Minőségkezelés lapra.</span><span class="sxs-lookup"><span data-stu-id="9297d-110">Click the Quality management tab.</span></span>
+3. <span data-ttu-id="9297d-111">Állítsa a Minőségkezelés használata beállítást Igen értékre.</span><span class="sxs-lookup"><span data-stu-id="9297d-111">Set the Use quality management option to Yes.</span></span>
+4. <span data-ttu-id="9297d-112">Kattintson a Jelentés-beállítás elemre.</span><span class="sxs-lookup"><span data-stu-id="9297d-112">Click Report setup.</span></span>
+    * <span data-ttu-id="9297d-113">Az USMF-ben, a minőségkezelési jelentések beállításai előre definiálva vannak.</span><span class="sxs-lookup"><span data-stu-id="9297d-113">In USMF, the report setup for quality management is already defined.</span></span> <span data-ttu-id="9297d-114">Ha ez nem történt meg, adjon hozzá új sorokat a különböző típusú jelentés típusokhoz, majd válassza ki az egyes jelentésekhez használandó dokumentum típust.</span><span class="sxs-lookup"><span data-stu-id="9297d-114">If this wasn’t done, you’d add new lines here for the different report types, and select the type of document to be used for each report.</span></span>  
+5. <span data-ttu-id="9297d-115">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-115">Close the page.</span></span>
+6. <span data-ttu-id="9297d-116">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-116">Close the page.</span></span>
 
-## <a name="create-a-test"></a>Teszt létrehozása
-1. Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Készlet.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Teszt mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Az „Opció” kiválasztása a Típus mezőben.
-    * Ebben a példában kiválasztjuk az „Opciók” lehetőséget, ami lehetővé teszi a teszteredmények, előre megadott értékek alapján történő társítását.  
-6. Kattintson a Mentés gombra.
-7. Zárja be a lapot.
+## <a name="create-a-test"></a><span data-ttu-id="9297d-117">Teszt létrehozása</span><span class="sxs-lookup"><span data-stu-id="9297d-117">Create a test</span></span>
+1. <span data-ttu-id="9297d-118">Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Készlet.</span><span class="sxs-lookup"><span data-stu-id="9297d-118">Go to Inventory management > Setup > Quality control > Tests.</span></span>
+2. <span data-ttu-id="9297d-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-119">Click New.</span></span>
+3. <span data-ttu-id="9297d-120">Írjon be egy értéket a Teszt mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9297d-120">In the Test field, type a value.</span></span>
+4. <span data-ttu-id="9297d-121">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9297d-121">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="9297d-122">Az „Opció” kiválasztása a Típus mezőben.</span><span class="sxs-lookup"><span data-stu-id="9297d-122">In the Type field, select 'Option'.</span></span>
+    * <span data-ttu-id="9297d-123">Ebben a példában kiválasztjuk az „Opciók” lehetőséget, ami lehetővé teszi a teszteredmények, előre megadott értékek alapján történő társítását.</span><span class="sxs-lookup"><span data-stu-id="9297d-123">In this example, we'll select "Option" which will make it possible to assign the test results based on pre-defined values.</span></span>  
+6. <span data-ttu-id="9297d-124">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-124">Click Save.</span></span>
+7. <span data-ttu-id="9297d-125">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-125">Close the page.</span></span>
 
-## <a name="create-test-variables-to-define-the-way-test-results-are-recorded"></a>Tesztváltozók létrehozása a teszteredmények rögzítési módjának meghatározása érdekében
-1. Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Tesztváltozók.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Változó mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Kattintson a Mentés gombra.
-6. Kattintson az Eredmények elemre.
-7. Kattintson az Új lehetőségre.
-8. Írjon be egy értéket az Eredmény mezőbe.
-9. A Leírás mezőben adjon meg egy értéket.
-10. Az Eredményállapot mezőben válassza a „Megfelelt” értéket.
-11. Kattintson a Mentés gombra.
-12. Kattintson az Új lehetőségre.
-13. Írjon be egy értéket az Eredmény mezőbe.
-14. A Leírás mezőben adjon meg egy értéket.
-15. Kattintson a Mentés gombra.
-16. Zárja be a lapot.
-17. Zárja be a lapot.
+## <a name="create-test-variables-to-define-the-way-test-results-are-recorded"></a><span data-ttu-id="9297d-126">Tesztváltozók létrehozása a teszteredmények rögzítési módjának meghatározása érdekében</span><span class="sxs-lookup"><span data-stu-id="9297d-126">Create Test variables to define the way test results are recorded</span></span>
+1. <span data-ttu-id="9297d-127">Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Tesztváltozók.</span><span class="sxs-lookup"><span data-stu-id="9297d-127">Go to Inventory management > Setup > Quality control > Test variables.</span></span>
+2. <span data-ttu-id="9297d-128">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-128">Click New.</span></span>
+3. <span data-ttu-id="9297d-129">Írjon be egy értéket a Változó mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9297d-129">In the Variable field, type a value.</span></span>
+4. <span data-ttu-id="9297d-130">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9297d-130">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="9297d-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-131">Click Save.</span></span>
+6. <span data-ttu-id="9297d-132">Kattintson az Eredmények elemre.</span><span class="sxs-lookup"><span data-stu-id="9297d-132">Click Outcomes.</span></span>
+7. <span data-ttu-id="9297d-133">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-133">Click New.</span></span>
+8. <span data-ttu-id="9297d-134">Írjon be egy értéket az Eredmény mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9297d-134">In the Outcome field, type a value.</span></span>
+9. <span data-ttu-id="9297d-135">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9297d-135">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="9297d-136">Az Eredményállapot mezőben válassza a „Megfelelt” értéket.</span><span class="sxs-lookup"><span data-stu-id="9297d-136">In the Outcome status field, select 'Pass'.</span></span>
+11. <span data-ttu-id="9297d-137">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-137">Click Save.</span></span>
+12. <span data-ttu-id="9297d-138">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-138">Click New.</span></span>
+13. <span data-ttu-id="9297d-139">Írjon be egy értéket az Eredmény mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9297d-139">In the Outcome field, type a value.</span></span>
+14. <span data-ttu-id="9297d-140">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9297d-140">In the Description field, type a value.</span></span>
+15. <span data-ttu-id="9297d-141">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-141">Click Save.</span></span>
+16. <span data-ttu-id="9297d-142">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-142">Close the page.</span></span>
+17. <span data-ttu-id="9297d-143">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-143">Close the page.</span></span>
 
-## <a name="set-up-item-sampling"></a>Cikk-mintavétel beállítása
-1. Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Cikk-mintavétel.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Cikk-mintavétel mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Adjon meg egy számot az Érték mezőben.
-    * Ez az értéket a szomszédos mezőben kiválasztott Megadott mennyiségre vonatkozik.  
-6. Bontsa ki vagy csukja össze a Folyamat szakaszt.
-7. Jelölje be a Teljes zárolás jelölőnégyzetet, vagy törölje belőle a jelet.
-    * Ha kiválasztja ezt a lehetőséget, úgy sikertelen teszt esetén blokkolva lesz a teljes adat vagy rendelési sor mennyiség. Ha nem választja ki a lehetőséget, úgy csak a minőségi rendelésben szereplő cikkek kerülnek blokkolásra.  
-8. Kattintson a Mentés gombra.
-9. Zárja be a lapot.
+## <a name="set-up-item-sampling"></a><span data-ttu-id="9297d-144">Cikk-mintavétel beállítása</span><span class="sxs-lookup"><span data-stu-id="9297d-144">Set up item sampling</span></span>
+1. <span data-ttu-id="9297d-145">Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Cikk-mintavétel.</span><span class="sxs-lookup"><span data-stu-id="9297d-145">Go to Inventory management > Setup > Quality control > Item sampling.</span></span>
+2. <span data-ttu-id="9297d-146">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-146">Click New.</span></span>
+3. <span data-ttu-id="9297d-147">Írjon be egy értéket a Cikk-mintavétel mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9297d-147">In the Item sampling field, type a value.</span></span>
+4. <span data-ttu-id="9297d-148">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9297d-148">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="9297d-149">Adjon meg egy számot az Érték mezőben.</span><span class="sxs-lookup"><span data-stu-id="9297d-149">In the Value field, enter a number.</span></span>
+    * <span data-ttu-id="9297d-150">Ez az értéket a szomszédos mezőben kiválasztott Megadott mennyiségre vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="9297d-150">This value relates to the Quantity specification that’s selected in the adjacent field.</span></span>  
+6. <span data-ttu-id="9297d-151">Bontsa ki vagy csukja össze a Folyamat szakaszt.</span><span class="sxs-lookup"><span data-stu-id="9297d-151">Expand or collapse the Process section.</span></span>
+7. <span data-ttu-id="9297d-152">Jelölje be a Teljes zárolás jelölőnégyzetet, vagy törölje belőle a jelet.</span><span class="sxs-lookup"><span data-stu-id="9297d-152">Select or clear the Full blocking check box.</span></span>
+    * <span data-ttu-id="9297d-153">Ha kiválasztja ezt a lehetőséget, úgy sikertelen teszt esetén blokkolva lesz a teljes adat vagy rendelési sor mennyiség.</span><span class="sxs-lookup"><span data-stu-id="9297d-153">If you select this option, the whole lot or order line quantity is blocked if a test is failed.</span></span> <span data-ttu-id="9297d-154">Ha nem választja ki a lehetőséget, úgy csak a minőségi rendelésben szereplő cikkek kerülnek blokkolásra.</span><span class="sxs-lookup"><span data-stu-id="9297d-154">If you don't select it, only the items in the quality order are blocked.</span></span>  
+8. <span data-ttu-id="9297d-155">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-155">Click Save.</span></span>
+9. <span data-ttu-id="9297d-156">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-156">Close the page.</span></span>
 
-## <a name="create-a-quality-group"></a>Minőségi csoport létrehozása
-1. Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Minőségi csoportok.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Minőségi csoport mezőbe.
-    * Használjon leíró jellegű nevet, ami segít beazonosítani, hogy a csoport milyen jellegű cikkeket tartalmaz (mintavételi feltételek).  
-4. A Leírás mezőben adjon meg egy értéket.
-5. Kattintson a Mentés gombra.
-6. Kattintson a Cikkek hozzáadása pontra.
-7. Válassza ki a Cikkszám sort
-    * Ebben a példában a szűrést a cikkszám alapján futtatjuk.  
-8. Érték beírása a Feltétel mezőbe.
-    * A T betűvel kezdődő cikkszámok szűréséhez például gépelje be azt, hogy T*.  
-9. Kattintson az OK gombra.
-10. Kattintson az OK gombra.
-11. Cikkminőségi csoportok megtekintése.
-12. Zárja be a lapot.
-13. Zárja be a lapot.
+## <a name="create-a-quality-group"></a><span data-ttu-id="9297d-157">Minőségi csoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="9297d-157">Create a quality group</span></span>
+1. <span data-ttu-id="9297d-158">Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Minőségi csoportok.</span><span class="sxs-lookup"><span data-stu-id="9297d-158">Go to Inventory management > Setup > Quality control > Quality groups.</span></span>
+2. <span data-ttu-id="9297d-159">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-159">Click New.</span></span>
+3. <span data-ttu-id="9297d-160">Írjon be egy értéket a Minőségi csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9297d-160">In the Quality group field, type a value.</span></span>
+    * <span data-ttu-id="9297d-161">Használjon leíró jellegű nevet, ami segít beazonosítani, hogy a csoport milyen jellegű cikkeket tartalmaz (mintavételi feltételek).</span><span class="sxs-lookup"><span data-stu-id="9297d-161">Use a descriptive name to help you identify which kind of items the group will contain (your sampling criteria).</span></span>  
+4. <span data-ttu-id="9297d-162">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9297d-162">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="9297d-163">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-163">Click Save.</span></span>
+6. <span data-ttu-id="9297d-164">Kattintson a Cikkek hozzáadása pontra.</span><span class="sxs-lookup"><span data-stu-id="9297d-164">Click Add items.</span></span>
+7. <span data-ttu-id="9297d-165">Válassza ki a Cikkszám sort</span><span class="sxs-lookup"><span data-stu-id="9297d-165">Select the Item number row</span></span>
+    * <span data-ttu-id="9297d-166">Ebben a példában a szűrést a cikkszám alapján futtatjuk.</span><span class="sxs-lookup"><span data-stu-id="9297d-166">In this example the filtering will be run based on  the item number.</span></span>  
+8. <span data-ttu-id="9297d-167">Érték beírása a Feltétel mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9297d-167">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="9297d-168">A T betűvel kezdődő cikkszámok szűréséhez például gépelje be azt, hogy T*.</span><span class="sxs-lookup"><span data-stu-id="9297d-168">For example, type T* to filter on the item numbers that start with T.</span></span>  
+9. <span data-ttu-id="9297d-169">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-169">Click OK.</span></span>
+10. <span data-ttu-id="9297d-170">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-170">Click OK.</span></span>
+11. <span data-ttu-id="9297d-171">Cikkminőségi csoportok megtekintése.</span><span class="sxs-lookup"><span data-stu-id="9297d-171">Click Item quality groups.</span></span>
+12. <span data-ttu-id="9297d-172">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-172">Close the page.</span></span>
+13. <span data-ttu-id="9297d-173">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-173">Close the page.</span></span>
 
-## <a name="create-a-test-group"></a>Tesztcsoport létrehozása
-1. Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Tesztcsoportok.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Tesztcsoport mezőbe.
-    * Olyan nevet adjon a Tesztcsoportnak, amely utal arra, hogy milyen jellegű teszteket futtat, és azt milyen minőségi csoporttal kell társítani. Ha például azt olyan minőségi csoporttal kívánja használni, ami a „T”-vel kezdődő cikkeket választja ki, úgy nevezze a csoportot például „T-cikk tesztek”-nek.  
-4. A Leírás mezőben adjon meg egy értéket.
-5. A Cikk-mintavétel mezőben válassza a korábban létrehozott cikk-mintavétel sort.
-6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-7. Kattintson a Hozzáadás gombra.
-8. Adjon meg egy számot a Sorozatszám mezőben.
-9. A Teszt mezőben válassza ki az előbbiekben létrehozott tesztet.
-10. A kívánt rekord megkeresése és kijelölése a listán
-11. Kattintson a Teszt lapra.
-12. A Változók mezőben válassza ki az előbbiekben létrehozott változót.
-13. A kívánt rekord megkeresése és kijelölése a listán
-14. Az Alapértelmezett eredmény mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-15. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-16. Kattintson a Mentés gombra.
-17. Zárja be a lapot.
+## <a name="create-a-test-group"></a><span data-ttu-id="9297d-174">Tesztcsoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="9297d-174">Create a test group</span></span>
+1. <span data-ttu-id="9297d-175">Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Tesztcsoportok.</span><span class="sxs-lookup"><span data-stu-id="9297d-175">Go to Inventory management > Setup > Quality control > Test groups.</span></span>
+2. <span data-ttu-id="9297d-176">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-176">Click New.</span></span>
+3. <span data-ttu-id="9297d-177">Írjon be egy értéket a Tesztcsoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="9297d-177">In the Test group field, type a value.</span></span>
+    * <span data-ttu-id="9297d-178">Olyan nevet adjon a Tesztcsoportnak, amely utal arra, hogy milyen jellegű teszteket futtat, és azt milyen minőségi csoporttal kell társítani.</span><span class="sxs-lookup"><span data-stu-id="9297d-178">Give the Test group a name that will help you remember what kind of tests are being run, and which quality group it should be associated with.</span></span> <span data-ttu-id="9297d-179">Ha például azt olyan minőségi csoporttal kívánja használni, ami a „T”-vel kezdődő cikkeket választja ki, úgy nevezze a csoportot például „T-cikk tesztek”-nek.</span><span class="sxs-lookup"><span data-stu-id="9297d-179">For example, it it’s to be used with a quality group that selects items starting with “T”, you could call it “T-item tests”.</span></span>  
+4. <span data-ttu-id="9297d-180">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9297d-180">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="9297d-181">A Cikk-mintavétel mezőben válassza a korábban létrehozott cikk-mintavétel sort.</span><span class="sxs-lookup"><span data-stu-id="9297d-181">In the Item sampling field, select the item sampling line that you created before.</span></span>
+6. <span data-ttu-id="9297d-182">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9297d-182">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="9297d-183">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-183">Click Add.</span></span>
+8. <span data-ttu-id="9297d-184">Adjon meg egy számot a Sorozatszám mezőben.</span><span class="sxs-lookup"><span data-stu-id="9297d-184">In the Sequence number field, enter a number.</span></span>
+9. <span data-ttu-id="9297d-185">A Teszt mezőben válassza ki az előbbiekben létrehozott tesztet.</span><span class="sxs-lookup"><span data-stu-id="9297d-185">In the Test field, select the test that you created earlier.</span></span>
+10. <span data-ttu-id="9297d-186">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="9297d-186">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="9297d-187">Kattintson a Teszt lapra.</span><span class="sxs-lookup"><span data-stu-id="9297d-187">Click the Test tab.</span></span>
+12. <span data-ttu-id="9297d-188">A Változók mezőben válassza ki az előbbiekben létrehozott változót.</span><span class="sxs-lookup"><span data-stu-id="9297d-188">In the Variable field, select the test variable that you created before</span></span>
+13. <span data-ttu-id="9297d-189">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="9297d-189">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="9297d-190">Az Alapértelmezett eredmény mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9297d-190">In the Default outcome field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="9297d-191">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="9297d-191">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="9297d-192">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-192">Click Save.</span></span>
+17. <span data-ttu-id="9297d-193">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-193">Close the page.</span></span>
 
-## <a name="define-when-quality-orders-will-be-created"></a>Határozza meg, hogy mikor történjen a minőségi rendelések létrehozása
-1. Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Minőségi társítások.
-2. Kattintson az Új lehetőségre.
-3. Válasszon egy lehetőséget a Hivatkozástípus mezőben.
-4. Válassza a „Csoport” lehetőséget a Cikk mezőben:
-    * Ebben a példában a „Csoport”-ot " választjuk ki és a korábban létrehozott minőségi csoportot fogjuk felhasználni. Használhatja a „Táblázat” beállítást is, ha manuálisan kívánja megadni a cikkeket, vagy válassza a „Mind” lehetőséget az összes cikk, a minőségi csoporthoz történő hozzáadásához.  
-5. A Cikk mezőben válassza ki az előbbiekben létrehozott minőségi csoportot.
-    * A Cikk mezőben rendelkezésre álló lehetőségek köre attól függ, hogy mit állított be a Cikk-kód mezőben.  
-6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-7. Bontsa ki vagy csukja össze a Folyamat szakaszt.
-8. Válasszon egy lehetőséget az Eseménytípus mezőben.
-    * Ez az esemény aktiválja a tesztet. A rendelkezésre álló lehetőségek köre attól függ, hogy milyen eljárást választott ki a Hivatkozástípus mezőben  
-9. Válasszon egy lehetőséget a Végrehajtás mezőben.
-10. Bontsa ki vagy csukja össze a Minőségi rendelési folyamat szakaszt.
-11. Az Eseményzárolás mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-    * Ez a mező azon eljárások jegyzékét tartalmazza, melyeket zárolni lehet, amikor a minőségi rendelés még nyitva van. A lehetőségek köre attól függ, hogy mit választott ki az Eseménytípus mezőben.  
-12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * Ez a korábban kiválasztott értékek függvénye. Jelölje be, ha a következő folyamatokat zárolni kell, amikor nyitott minőségi rendelések kapcsolódnak egy forrásbizonylat-sorhoz.  
-13. Bontsa ki vagy csukja össze a Specifikációk szakaszt.
-14. A Tesztcsoport mezőben válassza ki az előbbiekben létrehozott tesztcsoportot.
-15. A kívánt rekord megkeresése és kijelölése a listán
-16. Kattintson a Mentés gombra.
-17. Zárja be a lapot.
-
+## <a name="define-when-quality-orders-will-be-created"></a><span data-ttu-id="9297d-194">Határozza meg, hogy mikor történjen a minőségi rendelések létrehozása</span><span class="sxs-lookup"><span data-stu-id="9297d-194">Define when quality orders will be created</span></span>
+1. <span data-ttu-id="9297d-195">Ugorjon a következőhöz: Készletkezelés > Beállítás > Minőség-ellenőrzés > Minőségi társítások.</span><span class="sxs-lookup"><span data-stu-id="9297d-195">Go to Inventory management > Setup > Quality control > Quality associations.</span></span>
+2. <span data-ttu-id="9297d-196">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9297d-196">Click New.</span></span>
+3. <span data-ttu-id="9297d-197">Válasszon egy lehetőséget a Hivatkozástípus mezőben.</span><span class="sxs-lookup"><span data-stu-id="9297d-197">In the Reference type field, select an option.</span></span>
+4. <span data-ttu-id="9297d-198">Válassza a „Csoport” lehetőséget a Cikk mezőben:</span><span class="sxs-lookup"><span data-stu-id="9297d-198">In the Item code field, select 'Group'.</span></span>
+    * <span data-ttu-id="9297d-199">Ebben a példában a „Csoport”-ot " választjuk ki és a korábban létrehozott minőségi csoportot fogjuk felhasználni.</span><span class="sxs-lookup"><span data-stu-id="9297d-199">In this example, we’ll select "Group" and use the quality group we created before.</span></span> <span data-ttu-id="9297d-200">Használhatja a „Táblázat” beállítást is, ha manuálisan kívánja megadni a cikkeket, vagy válassza a „Mind” lehetőséget az összes cikk, a minőségi csoporthoz történő hozzáadásához.</span><span class="sxs-lookup"><span data-stu-id="9297d-200">You could also set this to "Table" to specify the items manually, or select "All" to add all items to the quality order.</span></span>  
+5. <span data-ttu-id="9297d-201">A Cikk mezőben válassza ki az előbbiekben létrehozott minőségi csoportot.</span><span class="sxs-lookup"><span data-stu-id="9297d-201">In the Item field, select the quality group that you created before.</span></span>
+    * <span data-ttu-id="9297d-202">A Cikk mezőben rendelkezésre álló lehetőségek köre attól függ, hogy mit állított be a Cikk-kód mezőben.</span><span class="sxs-lookup"><span data-stu-id="9297d-202">The options available in the Item field depend on what you set in the Item code field.</span></span>  
+6. <span data-ttu-id="9297d-203">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9297d-203">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="9297d-204">Bontsa ki vagy csukja össze a Folyamat szakaszt.</span><span class="sxs-lookup"><span data-stu-id="9297d-204">Expand or collapse the Process section.</span></span>
+8. <span data-ttu-id="9297d-205">Válasszon egy lehetőséget az Eseménytípus mezőben.</span><span class="sxs-lookup"><span data-stu-id="9297d-205">In the Event type field, select an option.</span></span>
+    * <span data-ttu-id="9297d-206">Ez az esemény aktiválja a tesztet.</span><span class="sxs-lookup"><span data-stu-id="9297d-206">This is the event that triggers the test.</span></span> <span data-ttu-id="9297d-207">A rendelkezésre álló lehetőségek köre attól függ, hogy milyen eljárást választott ki a Hivatkozástípus mezőben</span><span class="sxs-lookup"><span data-stu-id="9297d-207">The options available here depend on which process you selected in the Reference type field.</span></span>  
+9. <span data-ttu-id="9297d-208">Válasszon egy lehetőséget a Végrehajtás mezőben.</span><span class="sxs-lookup"><span data-stu-id="9297d-208">In the Execution field, select an option.</span></span>
+10. <span data-ttu-id="9297d-209">Bontsa ki vagy csukja össze a Minőségi rendelési folyamat szakaszt.</span><span class="sxs-lookup"><span data-stu-id="9297d-209">Expand or collapse the Quality order process section.</span></span>
+11. <span data-ttu-id="9297d-210">Az Eseményzárolás mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9297d-210">In the Event blocking field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="9297d-211">Ez a mező azon eljárások jegyzékét tartalmazza, melyeket zárolni lehet, amikor a minőségi rendelés még nyitva van.</span><span class="sxs-lookup"><span data-stu-id="9297d-211">This field shows the list of processes that it’s possible to block if the quality order is still open.</span></span> <span data-ttu-id="9297d-212">A lehetőségek köre attól függ, hogy mit választott ki az Eseménytípus mezőben.</span><span class="sxs-lookup"><span data-stu-id="9297d-212">The options depend on what you selected in the Event type field.</span></span>  
+12. <span data-ttu-id="9297d-213">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="9297d-213">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="9297d-214">Ez a korábban kiválasztott értékek függvénye.</span><span class="sxs-lookup"><span data-stu-id="9297d-214">This will be depending on the previous selected values.</span></span> <span data-ttu-id="9297d-215">Jelölje be, ha a következő folyamatokat zárolni kell, amikor nyitott minőségi rendelések kapcsolódnak egy forrásbizonylat-sorhoz.</span><span class="sxs-lookup"><span data-stu-id="9297d-215">Select if the following processes must be blocked while having open quality orders linked to a source document line.</span></span>  
+13. <span data-ttu-id="9297d-216">Bontsa ki vagy csukja össze a Specifikációk szakaszt.</span><span class="sxs-lookup"><span data-stu-id="9297d-216">Expand or collapse the Specifications section.</span></span>
+14. <span data-ttu-id="9297d-217">A Tesztcsoport mezőben válassza ki az előbbiekben létrehozott tesztcsoportot.</span><span class="sxs-lookup"><span data-stu-id="9297d-217">In the Test group field, select the test group that you created before.</span></span>
+15. <span data-ttu-id="9297d-218">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="9297d-218">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="9297d-219">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9297d-219">Click Save.</span></span>
+17. <span data-ttu-id="9297d-220">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9297d-220">Close the page.</span></span>
 

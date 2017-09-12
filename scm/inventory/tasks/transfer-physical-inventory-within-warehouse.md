@@ -1,4 +1,4 @@
---- 
+---
 title: "Tényleges készlet áthelyezése a raktáron belül"
 description: "Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készletmozgatási napló egy cikk egy adott raktáron belüli átszállításának nyilvántartásba vételéhez."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,55 +17,54 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: fedb209ab111ed1fb6281fda2f4dea345e0905ef
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: bfba69731a4897906d08ff9fb9ce69e79121efeb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="transfer-physical-inventory-within-the-warehouse"></a>Tényleges készlet áthelyezése a raktáron belül
+# <a name="transfer-physical-inventory-within-the-warehouse"></a><span data-ttu-id="fcd3f-103">Tényleges készlet áthelyezése a raktáron belül</span><span class="sxs-lookup"><span data-stu-id="fcd3f-103">Transfer physical inventory within the warehouse</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készletmozgatási napló egy cikk egy adott raktáron belüli átszállításának nyilvántartásba vételéhez. Először be kell állítani egy készletnaplónevet a készletmozgatáshoz. Végig mehet ezen az eljáráson az USMF bemutatócég esetében a megjelenített példaértékeket használva, vagy használhatja a saját adatait is ha beállított termékeket és helyeket. Ezeket a feladatokat általában egy raktári alkalmazott végzi el.
+<span data-ttu-id="fcd3f-104">Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készletmozgatási napló egy cikk egy adott raktáron belüli átszállításának nyilvántartásba vételéhez.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another.</span></span> <span data-ttu-id="fcd3f-105">Először be kell állítani egy készletnaplónevet a készletmozgatáshoz.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-105">You need to have an inventory journal name set up for inventory transfers before you start this.</span></span> <span data-ttu-id="fcd3f-106">Végig mehet ezen az eljáráson az USMF bemutatócég esetében a megjelenített példaértékeket használva, vagy használhatja a saját adatait is ha beállított termékeket és helyeket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-106">You can walk through this procedure in demo data company USMF using the example values that are shown, or using you can use your own data if you have products and locations set up.</span></span> <span data-ttu-id="fcd3f-107">Ezeket a feladatokat általában egy raktári alkalmazott végzi el.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-107">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-transfer-journal"></a>Készletátviteli napló létrehozása
-1. Ugrás az Áthelyezéshez.
-2. Kattintson az Új lehetőségre.
-3. A Név mezőben adjon meg vagy válasszon ki egy értéket.
-4. Kattintson az OK gombra.
-    * Az egyes naplósorok esetében meg lehet adni a „Kezdőérték” és a „Végérték” dimenziókat. Ezek a szükségesek ehhez a naplótípushoz. Más szabályokat alkalmazva is lehet cikkeket átszállítani. Ebben a példában egy adott raktáron belül fogunk egy cikket átszállítani, egy olyan helyről, ahol azonosítótábla alapján történik a vezérlés egy olyan helyre, ahol nem azonosítótábla alapján.   
+## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="fcd3f-108">Készletátviteli napló létrehozása</span><span class="sxs-lookup"><span data-stu-id="fcd3f-108">Create an inventory transfer journal</span></span>
+1. <span data-ttu-id="fcd3f-109">Ugrás az Áthelyezéshez.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-109">Go to Transfer.</span></span>
+2. <span data-ttu-id="fcd3f-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-110">Click New.</span></span>
+3. <span data-ttu-id="fcd3f-111">A Név mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-111">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="fcd3f-112">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-112">Click OK.</span></span>
+    * <span data-ttu-id="fcd3f-113">Az egyes naplósorok esetében meg lehet adni a „Kezdőérték” és a „Végérték” dimenziókat.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-113">There is the option to specify 'From' and 'To' dimensions for each journal line.</span></span> <span data-ttu-id="fcd3f-114">Ezek a szükségesek ehhez a naplótípushoz.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-114">These are essential for this journal type.</span></span> <span data-ttu-id="fcd3f-115">Más szabályokat alkalmazva is lehet cikkeket átszállítani.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-115">You can transfer items to locations using different rules.</span></span> <span data-ttu-id="fcd3f-116">Ebben a példában egy adott raktáron belül fogunk egy cikket átszállítani, egy olyan helyről, ahol azonosítótábla alapján történik a vezérlés egy olyan helyre, ahol nem azonosítótábla alapján.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-116">In this example we’ll transfer an item within the same warehouse, from a license plate controlled location to a location that is not license plate controlled.</span></span>   
 
-## <a name="create-journal-lines"></a>Naplósorok létrehozása
-1. Kattintson az Új lehetőségre.
-2. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „A0001” lehetőséget.  
-3. A Forrástelep mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „2” lehetőséget.  
-4. A Céltelep mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „2” lehetőséget.  
-5. A Forrásraktár mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „24” lehetőséget  
-6. A Célraktár mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „24” lehetőséget  
-7. A Forráshely mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „FL-001” lehetőséget.  
-8. A Célhely mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „BULK-001” lehetőséget.  
-9. Adjon meg egy számot a Mennyiség mezőben.
-10. Kattintson a Készlet dimenziók lapra.
-11. Az Azonosítótábla mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „24” lehetőséget  
-12. Kattintson a Mentés gombra.
+## <a name="create-journal-lines"></a><span data-ttu-id="fcd3f-117">Naplósorok létrehozása</span><span class="sxs-lookup"><span data-stu-id="fcd3f-117">Create journal lines</span></span>
+1. <span data-ttu-id="fcd3f-118">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-118">Click New.</span></span>
+2. <span data-ttu-id="fcd3f-119">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-119">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="fcd3f-120">Az USMF használata esetén választhatja az „A0001” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-120">If you are using USMF, you can select 'A0001'.</span></span>  
+3. <span data-ttu-id="fcd3f-121">A Forrástelep mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-121">In the From site field, enter or select a value.</span></span>
+    * <span data-ttu-id="fcd3f-122">Az USMF használata esetén választhatja az „2” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-122">If you are using USMF, you can select '2'.</span></span>  
+4. <span data-ttu-id="fcd3f-123">A Céltelep mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-123">In the To site field, enter or select a value.</span></span>
+    * <span data-ttu-id="fcd3f-124">Az USMF használata esetén választhatja az „2” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-124">If you are using USMF, you can select '2'.</span></span>  
+5. <span data-ttu-id="fcd3f-125">A Forrásraktár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-125">In the From warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="fcd3f-126">Az USMF használata esetén választhatja a „24” lehetőséget</span><span class="sxs-lookup"><span data-stu-id="fcd3f-126">If you are using USMF, you can select '24'.</span></span>  
+6. <span data-ttu-id="fcd3f-127">A Célraktár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-127">In the To warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="fcd3f-128">Az USMF használata esetén választhatja a „24” lehetőséget</span><span class="sxs-lookup"><span data-stu-id="fcd3f-128">If you are using USMF, you can select '24'.</span></span>  
+7. <span data-ttu-id="fcd3f-129">A Forráshely mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-129">In the From location field, enter or select a value.</span></span>
+    * <span data-ttu-id="fcd3f-130">Az USMF használata esetén választhatja az „FL-001” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-130">If you are using USMF, you can select 'FL-001'.</span></span>  
+8. <span data-ttu-id="fcd3f-131">A Célhely mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-131">In the To location field, enter or select a value.</span></span>
+    * <span data-ttu-id="fcd3f-132">Az USMF használata esetén választhatja a „BULK-001” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-132">If you are using USMF, you can select 'BULK-001'.</span></span>  
+9. <span data-ttu-id="fcd3f-133">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-133">In the Quantity field, enter a number.</span></span>
+10. <span data-ttu-id="fcd3f-134">Kattintson a Készlet dimenziók lapra.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-134">Click the Inventory dimensions tab.</span></span>
+11. <span data-ttu-id="fcd3f-135">Az Azonosítótábla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-135">In the License plate field, enter or select a value.</span></span>
+    * <span data-ttu-id="fcd3f-136">Az USMF használata esetén választhatja a „24” lehetőséget</span><span class="sxs-lookup"><span data-stu-id="fcd3f-136">If you are using USMF, you can select '24'.</span></span>  
+12. <span data-ttu-id="fcd3f-137">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-137">Click Save.</span></span>
 
-## <a name="post-the-inventory-transfer-journal"></a>Készletátviteli napló feladása
-1. Kattintson a Feladás lehetőségre.
-2. Kattintson az OK gombra.
+## <a name="post-the-inventory-transfer-journal"></a><span data-ttu-id="fcd3f-138">Készletátviteli napló feladása</span><span class="sxs-lookup"><span data-stu-id="fcd3f-138">Post the inventory transfer journal</span></span>
+1. <span data-ttu-id="fcd3f-139">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-139">Click Post.</span></span>
+2. <span data-ttu-id="fcd3f-140">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-140">Click OK.</span></span>
 
-## <a name="view-inventory-transactions"></a>Készlettranzakciók megtekintése
-1. Kattintson a Készlet parancsra.
-2. Kattintson a Tranzakciók elemre.
-    * Itt láthatók a napló feladásakor létrehozott tranzakciók.  
-
+## <a name="view-inventory-transactions"></a><span data-ttu-id="fcd3f-141">Készlettranzakciók megtekintése</span><span class="sxs-lookup"><span data-stu-id="fcd3f-141">View inventory transactions</span></span>
+1. <span data-ttu-id="fcd3f-142">Kattintson a Készlet parancsra.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-142">Click Inventory.</span></span>
+2. <span data-ttu-id="fcd3f-143">Kattintson a Tranzakciók elemre.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-143">Click Transactions.</span></span>
+    * <span data-ttu-id="fcd3f-144">Itt láthatók a napló feladásakor létrehozott tranzakciók.</span><span class="sxs-lookup"><span data-stu-id="fcd3f-144">Here you can see the transactions that were created when you posted your journal.</span></span>  
 

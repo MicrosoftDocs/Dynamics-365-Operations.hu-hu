@@ -19,153 +19,153 @@ ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 688550888e5e029e38e945cec633170465df73f9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: af2d61717a5aa02b2a3ef26144a845b81b32ca53
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Munkaerő megszervezése részlegek, munkák és beosztások szerint
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a><span data-ttu-id="6ac5b-104">Munkaerő megszervezése részlegek, munkák és beosztások szerint</span><span class="sxs-lookup"><span data-stu-id="6ac5b-104">Organize your workforce using departments, jobs, and positions</span></span>
 
 [!include[banner](includes/banner.md)]
 
 [!include[retail name](includes/retail-name.md)]
 
 
-A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően. 
+<span data-ttu-id="6ac5b-105">A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-105">Departments, jobs, and positions are organizational elements that are maintained within Human resources.</span></span> <span data-ttu-id="6ac5b-106">Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-106">This topic describes conceptual information about these elements.</span></span> 
 
-Az alábbi példa mutatja be a jelen témakörben leírt koncepciókat.
+<span data-ttu-id="6ac5b-107">Az alábbi példa mutatja be a jelen témakörben leírt koncepciókat.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-107">The following example is used to illustrate the concepts described in this topic.</span></span>
 
-|**Részleg**|**Pozíció**|**Munka**|
+|<span data-ttu-id="6ac5b-108">**Részleg**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-108">**Department**</span></span>|<span data-ttu-id="6ac5b-109">**Pozíció**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-109">**Position**</span></span>|<span data-ttu-id="6ac5b-110">**Munka**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-110">**Job**</span></span>|
 |---|---|---|
-|**Értékesítések**|Értékesítési igazgató (Kelet)|Értékesítési igazgató|
-|**Értékesítések**|Értékesítési igazgató (Nyugat)|Értékesítési igazgató|
-|**Értékesítések**|Értékesítési igazgató (Közép)|Értékesítési igazgató|
-|**Könyvelés**|Számviteli felügyelő|Főkönyvelő|
-|**Könyvelés**|Könyvelés-A|Könyvelő|
-|**Emberi erőforrások**|HR vezető (Kelet)|HR vezető|
-|**Emberi erőforrások**|HR vezető (Nyugat)|HR vezető|
-|**Emberi erőforrások**|HR vezető (Közép)|HR vezető|
+|<span data-ttu-id="6ac5b-111">**Értékesítések**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-111">**Sales**</span></span>|<span data-ttu-id="6ac5b-112">Értékesítési igazgató (Kelet)</span><span class="sxs-lookup"><span data-stu-id="6ac5b-112">Sales manager (East)</span></span>|<span data-ttu-id="6ac5b-113">Értékesítési igazgató</span><span class="sxs-lookup"><span data-stu-id="6ac5b-113">Sales manager</span></span>|
+|<span data-ttu-id="6ac5b-114">**Értékesítések**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-114">**Sales**</span></span>|<span data-ttu-id="6ac5b-115">Értékesítési igazgató (Nyugat)</span><span class="sxs-lookup"><span data-stu-id="6ac5b-115">Sales manager (West)</span></span>|<span data-ttu-id="6ac5b-116">Értékesítési igazgató</span><span class="sxs-lookup"><span data-stu-id="6ac5b-116">Sales manager</span></span>|
+|<span data-ttu-id="6ac5b-117">**Értékesítések**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-117">**Sales**</span></span>|<span data-ttu-id="6ac5b-118">Értékesítési igazgató (Közép)</span><span class="sxs-lookup"><span data-stu-id="6ac5b-118">Sales manager (Central)</span></span>|<span data-ttu-id="6ac5b-119">Értékesítési igazgató</span><span class="sxs-lookup"><span data-stu-id="6ac5b-119">Sales manager</span></span>|
+|<span data-ttu-id="6ac5b-120">**Könyvelés**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-120">**Accounting**</span></span>|<span data-ttu-id="6ac5b-121">Számviteli felügyelő</span><span class="sxs-lookup"><span data-stu-id="6ac5b-121">Accounting supervisor</span></span>|<span data-ttu-id="6ac5b-122">Főkönyvelő</span><span class="sxs-lookup"><span data-stu-id="6ac5b-122">Accounting manager</span></span>|
+|<span data-ttu-id="6ac5b-123">**Könyvelés**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-123">**Accounting**</span></span>|<span data-ttu-id="6ac5b-124">Könyvelés-A</span><span class="sxs-lookup"><span data-stu-id="6ac5b-124">Accounting-A</span></span>|<span data-ttu-id="6ac5b-125">Könyvelő</span><span class="sxs-lookup"><span data-stu-id="6ac5b-125">Accountant</span></span>|
+|<span data-ttu-id="6ac5b-126">**Emberi erőforrások**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-126">**Human resources**</span></span>|<span data-ttu-id="6ac5b-127">HR vezető (Kelet)</span><span class="sxs-lookup"><span data-stu-id="6ac5b-127">HR manager (East)</span></span>|<span data-ttu-id="6ac5b-128">HR vezető</span><span class="sxs-lookup"><span data-stu-id="6ac5b-128">HR manager</span></span>|
+|<span data-ttu-id="6ac5b-129">**Emberi erőforrások**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-129">**Human resources**</span></span>|<span data-ttu-id="6ac5b-130">HR vezető (Nyugat)</span><span class="sxs-lookup"><span data-stu-id="6ac5b-130">HR manager (West)</span></span>|<span data-ttu-id="6ac5b-131">HR vezető</span><span class="sxs-lookup"><span data-stu-id="6ac5b-131">HR manager</span></span>|
+|<span data-ttu-id="6ac5b-132">**Emberi erőforrások**</span><span class="sxs-lookup"><span data-stu-id="6ac5b-132">**Human resources**</span></span>|<span data-ttu-id="6ac5b-133">HR vezető (Közép)</span><span class="sxs-lookup"><span data-stu-id="6ac5b-133">HR manager (Central)</span></span>|<span data-ttu-id="6ac5b-134">HR vezető</span><span class="sxs-lookup"><span data-stu-id="6ac5b-134">HR manager</span></span>|
 
  
- <a name="departments"></a>Osztályok
+ <a name="departments"></a><span data-ttu-id="6ac5b-135">Osztályok</span><span class="sxs-lookup"><span data-stu-id="6ac5b-135">Departments</span></span>
 ------------
 
-A részleg egy olyan üzemi egység, amely a szervezet egy kategóriáját vagy funkcionális területét képviseli, amely a szervezet egy specifikus területéért felel, ilyen például az értékesítés vagy a könyvelés. A részlegekkel – amelyeknek profitjuk és veszteségi felelősségük lehet – funkcionális területekkel kapcsolatos jelentések tehetők. Emellett egy részleg költséghelyek egy csoportját is magában foglalhatja. Az értékesítés, a könyvelés és a HR csak néhány példa a szervezeten belüli részlegekre.
+<span data-ttu-id="6ac5b-136">A részleg egy olyan üzemi egység, amely a szervezet egy kategóriáját vagy funkcionális területét képviseli, amely a szervezet egy specifikus területéért felel, ilyen például az értékesítés vagy a könyvelés.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-136">A department is an operating unit that represents a category or functional area of an organization that is responsible for a specific area of the organization, such as sales or accounting.</span></span> <span data-ttu-id="6ac5b-137">A részlegekkel – amelyeknek profitjuk és veszteségi felelősségük lehet – funkcionális területekkel kapcsolatos jelentések tehetők.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-137">A department is used to report on functional areas and may have profit and loss responsibility.</span></span> <span data-ttu-id="6ac5b-138">Emellett egy részleg költséghelyek egy csoportját is magában foglalhatja.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-138">Also, a department might include a group of cost centers.</span></span> <span data-ttu-id="6ac5b-139">Az értékesítés, a könyvelés és a HR csak néhány példa a szervezeten belüli részlegekre.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-139">Sales, accounting, and human resources are some examples of departments in an organization.</span></span>
 
-## <a name="jobs-and-positions"></a> Munkakörök és beosztások
-A munkakör azon feladatok és felelősségek gyűjteménye, amelyek egy adott munkát végrehajtó személytől elvárt. Egy beosztás egy feladat egyedi példánya. Egy adott munkakörhöz szükséges felelősségi területek, munkafeladatok, beosztások, képességek, tanulmányi adatok és tanúsítványok az adott munkához rendelt pozíciók esetén is elvárt.
-### <a name="job-tasks"></a>Munkaköri feladatok
+## <a name="jobs-and-positions"></a><span data-ttu-id="6ac5b-140"> Munkakörök és beosztások</span><span class="sxs-lookup"><span data-stu-id="6ac5b-140">Jobs and positions</span></span>
+<span data-ttu-id="6ac5b-141">A munkakör azon feladatok és felelősségek gyűjteménye, amelyek egy adott munkát végrehajtó személytől elvárt.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-141">A job is a collection of tasks and responsibilities that are required of a person who performs a job.</span></span> <span data-ttu-id="6ac5b-142">Egy beosztás egy feladat egyedi példánya.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-142">A position is an individual instance of a job.</span></span> <span data-ttu-id="6ac5b-143">Egy adott munkakörhöz szükséges felelősségi területek, munkafeladatok, beosztások, képességek, tanulmányi adatok és tanúsítványok az adott munkához rendelt pozíciók esetén is elvárt.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-143">Areas of responsibility, job tasks, job functions, skills, education information, and certificates that are required for a job are also required for positions that are associated with a job.</span></span>
+### <a name="job-tasks"></a><span data-ttu-id="6ac5b-144">Munkaköri feladatok</span><span class="sxs-lookup"><span data-stu-id="6ac5b-144">Job tasks</span></span>
 
-Létrehozhat olyan munkaköri feladatokat, amelyek bemutatják az adott pozíciójú dolgozótól elvárt alapvető feladatokat. Ugyanazon munkaköri feladatok több munkához is hozzáadhatók, valamint az adott munkához tartozó pozíciók öröklik ezen munkaköri feladatokat. Az alábbi táblázatban látható néhány példa munkaköri feladatokra.
+<span data-ttu-id="6ac5b-145">Létrehozhat olyan munkaköri feladatokat, amelyek bemutatják az adott pozíciójú dolgozótól elvárt alapvető feladatokat.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-145">You can create job tasks that describe the basic tasks that a worker in a position for that job must complete.</span></span> <span data-ttu-id="6ac5b-146">Ugyanazon munkaköri feladatok több munkához is hozzáadhatók, valamint az adott munkához tartozó pozíciók öröklik ezen munkaköri feladatokat.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-146">The same job task can be added to multiple jobs, and positions for those jobs will inherit those job tasks.</span></span> <span data-ttu-id="6ac5b-147">Az alábbi táblázatban látható néhány példa munkaköri feladatokra.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-147">Examples of job tasks are listed in the following table.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Munka</th>
-<th>Munkaköri feladat</th>
+<th><span data-ttu-id="6ac5b-148">Munka</span><span class="sxs-lookup"><span data-stu-id="6ac5b-148">Job</span></span></th>
+<th><span data-ttu-id="6ac5b-149">Munkaköri feladat</span><span class="sxs-lookup"><span data-stu-id="6ac5b-149">Job task</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Értékesítési igazgató</td>
+<td><span data-ttu-id="6ac5b-150">Értékesítési igazgató</span><span class="sxs-lookup"><span data-stu-id="6ac5b-150">Sales manager</span></span></td>
 <td><ul>
-<li><span class="input">Teljesítményellenőrzés</span> – Az egyes értékesítők teljesítményének áttekintése.</li>
-<li><span class="input">Hiányzásellenőrzési</span> – Az üzletkötők távolléti kérelmeinek vagy regisztrációnak jóváhagyása vagy elutasítása.</li>
+<li><span data-ttu-id="6ac5b-151"><span class="input">Teljesítményellenőrzés</span> – Az egyes értékesítők teljesítményének áttekintése.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-151"><span class="input">Perf-review</span> – Review each salesperson’s job performance.</span></span></li>
+<li><span data-ttu-id="6ac5b-152"><span class="input">Hiányzásellenőrzési</span> – Az üzletkötők távolléti kérelmeinek vagy regisztrációnak jóváhagyása vagy elutasítása.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-152"><span class="input">Abs-review</span> – Approve or reject each salesperson’s absence requests or registrations.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Könyvelő</td>
-<td><span class="input">Pénzügyi jelentés</span> – Heti pénzügyi jelentések bemutatása a pénzügyi igazgatónak.</td>
+<td><span data-ttu-id="6ac5b-153">Könyvelő</span><span class="sxs-lookup"><span data-stu-id="6ac5b-153">Accountant</span></span></td>
+<td><span data-ttu-id="6ac5b-154"><span class="input">Pénzügyi jelentés</span> – Heti pénzügyi jelentések bemutatása a pénzügyi igazgatónak.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-154"><span class="input">FIN-Report</span> – Present weekly financial reports to chief financial officer.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="job-functions"></a>Beosztások
+### <a name="job-functions"></a><span data-ttu-id="6ac5b-155">Beosztások</span><span class="sxs-lookup"><span data-stu-id="6ac5b-155">Job functions</span></span>
 
-A beosztási funkciók hasonlók a munkaköri feladatokhoz. A beosztási funkció egy munkához rendelt egy vagy több feladat, kötelezettség és feladatkör. A beosztásokat a munkákhoz lehet hozzárendelni, és segítségükkel a kompenzációs tervekhez kapcsolódó jogosultsági szabályokat lehet beállítani és alkalmazni. Az alábbi táblázatban látható néhány példa munkaköri beosztásokra.
+<span data-ttu-id="6ac5b-156">A beosztási funkciók hasonlók a munkaköri feladatokhoz.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-156">Job functions are like job tasks.</span></span> <span data-ttu-id="6ac5b-157">A beosztási funkció egy munkához rendelt egy vagy több feladat, kötelezettség és feladatkör.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-157">A job function describes one or more tasks, duties or responsibilities that are assigned to a job.</span></span> <span data-ttu-id="6ac5b-158">A beosztásokat a munkákhoz lehet hozzárendelni, és segítségükkel a kompenzációs tervekhez kapcsolódó jogosultsági szabályokat lehet beállítani és alkalmazni.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-158">Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans.</span></span> <span data-ttu-id="6ac5b-159">Az alábbi táblázatban látható néhány példa munkaköri beosztásokra.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-159">Examples of job functions are listed in the following table.</span></span>
 
-| Munka           | Beosztás                                                |
+| <span data-ttu-id="6ac5b-160">Munka</span><span class="sxs-lookup"><span data-stu-id="6ac5b-160">Job</span></span>           | <span data-ttu-id="6ac5b-161">Beosztás</span><span class="sxs-lookup"><span data-stu-id="6ac5b-161">Job function</span></span>                                                |
 |---------------|-------------------------------------------------------------|
-| Értékesítési igazgató | Személyek kezelése – Azon személyek kezelése, akik Önnek jelentenek.               |
-| Könyvelő    | Pénzügyi ellenőrzés – Pénzügyi adatok karbantartása számlák csoportjainak esetében. |
+| <span data-ttu-id="6ac5b-162">Értékesítési igazgató</span><span class="sxs-lookup"><span data-stu-id="6ac5b-162">Sales manager</span></span> | <span data-ttu-id="6ac5b-163">Személyek kezelése – Azon személyek kezelése, akik Önnek jelentenek.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-163">Mng-people – Manage people who report to you.</span></span>               |
+| <span data-ttu-id="6ac5b-164">Könyvelő</span><span class="sxs-lookup"><span data-stu-id="6ac5b-164">Accountant</span></span>    | <span data-ttu-id="6ac5b-165">Pénzügyi ellenőrzés – Pénzügyi adatok karbantartása számlák csoportjainak esetében.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-165">FIN-Review – Maintain financial data for a set of accounts.</span></span> |
 
-### <a name="job-types"></a>Beosztástípusok
+### <a name="job-types"></a><span data-ttu-id="6ac5b-166">Beosztástípusok</span><span class="sxs-lookup"><span data-stu-id="6ac5b-166">Job types</span></span>
 
-Feladattípusok segítségével a hasonló beosztások kategóriákba sorolhatók. A feladattípusokat a beosztási funkciókhoz hasonlóan a feladatokhoz lehet hozzárendelni, és segítségükkel a kompenzációs tervekhez kapcsolódó jogosultsági szabályokat lehet beállítani és alkalmazni. Az alábbi táblázatban látható néhány példa a feladattípusokra:
--   Teljes munkaidős
--   Részmunkaidős
--   Fizetés
--   Órabér
+<span data-ttu-id="6ac5b-167">Feladattípusok segítségével a hasonló beosztások kategóriákba sorolhatók.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-167">Use job types to classify similar jobs into categories.</span></span> <span data-ttu-id="6ac5b-168">A feladattípusokat a beosztási funkciókhoz hasonlóan a feladatokhoz lehet hozzárendelni, és segítségükkel a kompenzációs tervekhez kapcsolódó jogosultsági szabályokat lehet beállítani és alkalmazni.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-168">Job types, just like job functions, can be assigned to jobs and used to set up and implement eligibility rules for compensation plans.</span></span> <span data-ttu-id="6ac5b-169">Az alábbi táblázatban látható néhány példa a feladattípusokra:</span><span class="sxs-lookup"><span data-stu-id="6ac5b-169">Some examples of job types are included in the following list:</span></span>
+-   <span data-ttu-id="6ac5b-170">Teljes munkaidős</span><span class="sxs-lookup"><span data-stu-id="6ac5b-170">Full-time</span></span>
+-   <span data-ttu-id="6ac5b-171">Részmunkaidős</span><span class="sxs-lookup"><span data-stu-id="6ac5b-171">Part-time</span></span>
+-   <span data-ttu-id="6ac5b-172">Fizetés</span><span class="sxs-lookup"><span data-stu-id="6ac5b-172">Salary</span></span>
+-   <span data-ttu-id="6ac5b-173">Órabér</span><span class="sxs-lookup"><span data-stu-id="6ac5b-173">Hourly pay</span></span>
 
-### <a name="areas-of-responsibility"></a>Hatáskörök
+### <a name="areas-of-responsibility"></a><span data-ttu-id="6ac5b-174">Hatáskörök</span><span class="sxs-lookup"><span data-stu-id="6ac5b-174">Areas of responsibility</span></span>
 
-Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műveletek megjelöléséhez, amelyekért a dolgozó egy adott beosztásban felelős. A „Könyvelő” nevű beosztáshoz tartozó hatáskörre példa lehet a „Pénzügyi jelentés az A termékkel kapcsolatban”.
+<span data-ttu-id="6ac5b-175">Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műveletek megjelöléséhez, amelyekért a dolgozó egy adott beosztásban felelős.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-175">Use areas of responsibility to indicate the work roles, processes, and products that a worker in a position for that job would be responsible for.</span></span> <span data-ttu-id="6ac5b-176">A „Könyvelő” nevű beosztáshoz tartozó hatáskörre példa lehet a „Pénzügyi jelentés az A termékkel kapcsolatban”.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-176">An example of an area of responsibility for a job titled “Accountant” might be “Financial reporting for Product A”.</span></span>
 
-<a name="positions"></a>Beosztások
+<a name="positions"></a><span data-ttu-id="6ac5b-177">Beosztások</span><span class="sxs-lookup"><span data-stu-id="6ac5b-177">Positions</span></span>
 ----------
 
-A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei. Egy beosztás egy feladat egyedi példánya. Például az „Értékesítési igazgató (Kelet)” pozíció csak egyike azon beosztásoknak, amelyek hozzárendelhetők az „Értékesítési igazgató” munkához. A pozíciók egy részlegen belül léteznek, és dolgozókhoz kerülnek hozzárendelésre.
-### <a name="position-creation-and-maintenance"></a>Beosztások létrehozása és karbantartása
+<span data-ttu-id="6ac5b-178">A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-178">Positions are an important element of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="6ac5b-179">Egy beosztás egy feladat egyedi példánya.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-179">A position is an individual instance of a job.</span></span> <span data-ttu-id="6ac5b-180">Például az „Értékesítési igazgató (Kelet)” pozíció csak egyike azon beosztásoknak, amelyek hozzárendelhetők az „Értékesítési igazgató” munkához.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-180">For example, the position, “Sales manager (East),” is just one of the positions that is associated with the job, “Sales manager.”</span></span> <span data-ttu-id="6ac5b-181">A pozíciók egy részlegen belül léteznek, és dolgozókhoz kerülnek hozzárendelésre.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-181">Positions exist in a department and are assigned to workers.</span></span>
+### <a name="position-creation-and-maintenance"></a><span data-ttu-id="6ac5b-182">Beosztások létrehozása és karbantartása</span><span class="sxs-lookup"><span data-stu-id="6ac5b-182">Position creation and maintenance</span></span>
 
--   Az egyszerű hozzáférést biztosító listaoldalon megtekintheti a pozíciókkal kapcsolatos rendszermódosítások előzményeit.
--   Okkódokat is létrehozhat, amelyeket a felhasználók a pozíciók létrehozásakor vagy módosításakor választhatnak.
--   Létrehozhat személyzeti művelet típusokat, és számsorozatokat rendelhet a személyzeti műveletekhez.
--   Be lehet állítani munkafolyamat úgy, hogy a beosztásokkal kapcsolatos kiegészítésekhez és módosításokhoz jóváhagyásra is szükség legyen.
+-   <span data-ttu-id="6ac5b-183">Az egyszerű hozzáférést biztosító listaoldalon megtekintheti a pozíciókkal kapcsolatos rendszermódosítások előzményeit.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-183">You can view a history of position-related system changes in an easy-to-access list page.</span></span>
+-   <span data-ttu-id="6ac5b-184">Okkódokat is létrehozhat, amelyeket a felhasználók a pozíciók létrehozásakor vagy módosításakor választhatnak.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-184">You can create reason codes that your users can select when they create or modify positions.</span></span>
+-   <span data-ttu-id="6ac5b-185">Létrehozhat személyzeti művelet típusokat, és számsorozatokat rendelhet a személyzeti műveletekhez.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-185">You can create personnel action types and assign a number sequence to personnel actions.</span></span>
+-   <span data-ttu-id="6ac5b-186">Be lehet állítani munkafolyamat úgy, hogy a beosztásokkal kapcsolatos kiegészítésekhez és módosításokhoz jóváhagyásra is szükség legyen.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-186">You can set up workflow so that position additions and changes can require approval.</span></span>
 
-### <a name="position-duration"></a>Beosztás időtartama
+### <a name="position-duration"></a><span data-ttu-id="6ac5b-187">Beosztás időtartama</span><span class="sxs-lookup"><span data-stu-id="6ac5b-187">Position duration</span></span>
 
-Minden pozícióhoz tartozik egy időtartam, amely a beosztás érvényességi idejét határozza meg. Ezen intervallumot időtartamnak nevezik. Például a nyári beosztások időtartam lehet: 2015. május 1-től 2015. augusztus 31-ig.
+<span data-ttu-id="6ac5b-188">Minden pozícióhoz tartozik egy időtartam, amely a beosztás érvényességi idejét határozza meg.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-188">Every position has a length of time that the position is effective.</span></span> <span data-ttu-id="6ac5b-189">Ezen intervallumot időtartamnak nevezik.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-189">This length of time is referred to as duration.</span></span> <span data-ttu-id="6ac5b-190">Például a nyári beosztások időtartam lehet: 2015. május 1-től 2015. augusztus 31-ig.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-190">For example, summer positions might have duration of May 1, 2015 until August 31, 2015.</span></span>
 
-### <a name="worker-assignments"></a>Dolgozó-hozzárendelések
+### <a name="worker-assignments"></a><span data-ttu-id="6ac5b-191">Dolgozó-hozzárendelések</span><span class="sxs-lookup"><span data-stu-id="6ac5b-191">Worker assignments</span></span>
 
-Ha hozzárendel egy dolgozót egy beosztáshoz, akkor betölti a pozíciót. Egy dolgozót több beosztáshoz is hozzárendelhet, de egy beosztáshoz egyszerre csak egy dolgozót lehet hozzárendelni.
+<span data-ttu-id="6ac5b-192">Ha hozzárendel egy dolgozót egy beosztáshoz, akkor betölti a pozíciót.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-192">When you assign a worker to a position, you fill that position.</span></span> <span data-ttu-id="6ac5b-193">Egy dolgozót több beosztáshoz is hozzárendelhet, de egy beosztáshoz egyszerre csak egy dolgozót lehet hozzárendelni.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-193">You can assign workers to multiple positions, but only one worker can be assigned to a position at the same time.</span></span>
 
-### <a name="reporting-relationships"></a>Jelentési kapcsolatok
+### <a name="reporting-relationships"></a><span data-ttu-id="6ac5b-194">Jelentési kapcsolatok</span><span class="sxs-lookup"><span data-stu-id="6ac5b-194">Reporting relationships</span></span>
 
-A beosztások a szervezeti hierarchia alacsonyabb szintjének fontos részei. A Beosztás képernyőn megadhatja azon beosztást, amely felé az adott beosztottnak jelentenie kell. Ha hozzárendel egy dolgozót egy olyan pozícióhoz, amely egy másik pozíció számára jelent, akkor jelentési kapcsolatot hoz létre a két beosztáshoz hozzárendelt dolgozók között. Például a „Könyvelő-A” pozíció a „Számviteli felügyelő” számára tesz jelentéseket. A „Számviteli felügyelő” pozícióhoz Kim Akers, a „Könyvelő-A” pozícióhoz Sanjay Patel kerül hozzárendelésre. Ez azt jelenti, hogy Sanjay Patel Kim Akers felé jelent. 
+<span data-ttu-id="6ac5b-195">A beosztások a szervezeti hierarchia alacsonyabb szintjének fontos részei.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-195">Positions are important elements of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="6ac5b-196">A Beosztás képernyőn megadhatja azon beosztást, amely felé az adott beosztottnak jelentenie kell.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-196">In the Position form, you can specify the position that a position reports to.</span></span> <span data-ttu-id="6ac5b-197">Ha hozzárendel egy dolgozót egy olyan pozícióhoz, amely egy másik pozíció számára jelent, akkor jelentési kapcsolatot hoz létre a két beosztáshoz hozzárendelt dolgozók között.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-197">When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions.</span></span> <span data-ttu-id="6ac5b-198">Például a „Könyvelő-A” pozíció a „Számviteli felügyelő” számára tesz jelentéseket.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-198">For example, position “Accountant-A” reports to position “Accounting Supervisor”.</span></span> <span data-ttu-id="6ac5b-199">A „Számviteli felügyelő” pozícióhoz Kim Akers, a „Könyvelő-A” pozícióhoz Sanjay Patel kerül hozzárendelésre.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-199">Kim Akers is assigned to position “Accounting Supervisor” and Sanjay Patel is assigned to position “Accountant-A”.</span></span> <span data-ttu-id="6ac5b-200">Ez azt jelenti, hogy Sanjay Patel Kim Akers felé jelent.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-200">This means that Sanjay Patel reports to Kim Akers.</span></span> 
 
-Ha szervezete mátrix hierarchiát vagy egyéb egyéni hierarchiát alkalmaz, beállíthat pozíció hierarchia típusokat, majd hozzáadhat jelentési kapcsolatokat minden egyes beállított hierarchia típushoz. Például Lori Penor az Adventure Works általános igazgatója, így hozzá van rendelve az „Általános igazgató” beosztáshoz. Lori kezeli a fejlesztését egy olyan terméknek, amely különböző eszközök tisztítására szolgál. Lorinak szüksége van egy könyvelőre, aki segít neki a termékfejlesztéssel kapcsolatos pénzügyek kezelésében. Ezért felvette Sanjay Patelt könyvelőnek. Sanjay közvetlenül Kim Akers felé jelent, ugyanakkor együtt dolgozik Lori Penorral is, aki szintén az eszköztisztító fejlesztésével kapcsolatos pénzügyek kezelésében vesz részt. 
+<span data-ttu-id="6ac5b-201">Ha szervezete mátrix hierarchiát vagy egyéb egyéni hierarchiát alkalmaz, beállíthat pozíció hierarchia típusokat, majd hozzáadhat jelentési kapcsolatokat minden egyes beállított hierarchia típushoz.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-201">If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up.</span></span> <span data-ttu-id="6ac5b-202">Például Lori Penor az Adventure Works általános igazgatója, így hozzá van rendelve az „Általános igazgató” beosztáshoz.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-202">For example, Lori Penor is a general manager at Adventure Works and is assigned to the “General Manager” position.</span></span> <span data-ttu-id="6ac5b-203">Lori kezeli a fejlesztését egy olyan terméknek, amely különböző eszközök tisztítására szolgál.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-203">Lori manages the development of a product that is used to clean widgets.</span></span> <span data-ttu-id="6ac5b-204">Lorinak szüksége van egy könyvelőre, aki segít neki a termékfejlesztéssel kapcsolatos pénzügyek kezelésében.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-204">Lori requires an accountant to help her with the finances for developing the product.</span></span> <span data-ttu-id="6ac5b-205">Ezért felvette Sanjay Patelt könyvelőnek.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-205">Therefore, she has recruited Sanjay Patel to be her accountant.</span></span> <span data-ttu-id="6ac5b-206">Sanjay közvetlenül Kim Akers felé jelent, ugyanakkor együtt dolgozik Lori Penorral is, aki szintén az eszköztisztító fejlesztésével kapcsolatos pénzügyek kezelésében vesz részt.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-206">Sanjay reports directly to Kim Akers, but also works with Lori Penor on his work related to the finances for developing the widget cleaner.</span></span> 
 
-Az előző példához a következő feladatokat kellene végrehajtani Sanjay Patel és Anna Penor munkakapcsolatának beállításához:
-1.  Egyéni pozícióhierarchia létrehozása „Eszköz” néven az eszköztisztító termék fejlesztéséért felelős beosztásokat magában foglaló hierarchia létrehozásához.
-2.  Az Általános igazgatói pozíció hozzárendelése a Könyvelő-A pozícióhoz úgy, hogy utóbbi jelentsen az előző számára.
+<span data-ttu-id="6ac5b-207">Az előző példához a következő feladatokat kellene végrehajtani Sanjay Patel és Anna Penor munkakapcsolatának beállításához:</span><span class="sxs-lookup"><span data-stu-id="6ac5b-207">For the previous example, you would complete the following tasks to set up the working relationship between Sanjay Patel and Lori Penor:</span></span>
+1.  <span data-ttu-id="6ac5b-208">Egyéni pozícióhierarchia létrehozása „Eszköz” néven az eszköztisztító termék fejlesztéséért felelős beosztásokat magában foglaló hierarchia létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-208">Create a custom position hierarchy type called “Widget” to create a hierarchy that includes positions responsible for working on the widget cleaner product.</span></span>
+2.  <span data-ttu-id="6ac5b-209">Az Általános igazgatói pozíció hozzárendelése a Könyvelő-A pozícióhoz úgy, hogy utóbbi jelentsen az előző számára.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-209">Assign the General Manager position to be the position that the Accountant-A position reports to in the Widget hierarchy.</span></span>
 
-A beosztáshierarchia a pozíciók jelentési szerkezetének megtekintésére használható. Ha több beosztáshierarchiával rendelkezik, a beosztáshierarchia minden egyes hierarchiatípusához kapcsolódóan megtekintheti a hierarchiákat. Emellett a pozícióazonosító vagy a beosztáshoz hozzárendelt dolgozó neve alapján is megkereshet egy pozíciót. A beosztáshierarchia egy szervezeti hierarchia.
+<span data-ttu-id="6ac5b-210">A beosztáshierarchia a pozíciók jelentési szerkezetének megtekintésére használható.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-210">Use the position hierarchy to view the reporting structure of positions.</span></span> <span data-ttu-id="6ac5b-211">Ha több beosztáshierarchiával rendelkezik, a beosztáshierarchia minden egyes hierarchiatípusához kapcsolódóan megtekintheti a hierarchiákat.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-211">If you have multiple position hierarchies, you can view the hierarchy for each hierarchy type in the position hierarchy.</span></span> <span data-ttu-id="6ac5b-212">Emellett a pozícióazonosító vagy a beosztáshoz hozzárendelt dolgozó neve alapján is megkereshet egy pozíciót.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-212">Also, you can search for a position by position ID or by the name of the worker who is assigned to the position.</span></span> <span data-ttu-id="6ac5b-213">A beosztáshierarchia egy szervezeti hierarchia.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-213">The position hierarchy is an organizational hierarchy.</span></span>
 
-## <a name="date-effective-records"></a>Érvényességidátum-rekordok
-Bizonyos rekordok esetében jövőbeni módosításokat is be lehet állítani a rekordhoz. A következő adatok érvényességi dátumhoz kötöttek.
+## <a name="date-effective-records"></a><span data-ttu-id="6ac5b-214">Érvényességidátum-rekordok</span><span class="sxs-lookup"><span data-stu-id="6ac5b-214">Date effective records</span></span>
+<span data-ttu-id="6ac5b-215">Bizonyos rekordok esetében jövőbeni módosításokat is be lehet állítani a rekordhoz.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-215">For some records, you can specify future changes to the record.</span></span> <span data-ttu-id="6ac5b-216">A következő adatok érvényességi dátumhoz kötöttek.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-216">The following information is date effective.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Rekordok</th>
-<th>Hatályba lépési dátumhoz kötött adat</th>
+<th><span data-ttu-id="6ac5b-217">Rekordok</span><span class="sxs-lookup"><span data-stu-id="6ac5b-217">Records</span></span></th>
+<th><span data-ttu-id="6ac5b-218">Hatályba lépési dátumhoz kötött adat</span><span class="sxs-lookup"><span data-stu-id="6ac5b-218">Date effective information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Feladatok</td>
+<td><span data-ttu-id="6ac5b-219">Feladatok</span><span class="sxs-lookup"><span data-stu-id="6ac5b-219">Jobs</span></span></td>
 <td><ul>
-<li>Részletes információk a munkával kapcsolatban</li>
-<li>Beosztási kategória adatai</li>
-<li>Kompenzációs adatok</li>
+<li><span data-ttu-id="6ac5b-220">Részletes információk a munkával kapcsolatban</span><span class="sxs-lookup"><span data-stu-id="6ac5b-220">Some detailed job information</span></span></li>
+<li><span data-ttu-id="6ac5b-221">Beosztási kategória adatai</span><span class="sxs-lookup"><span data-stu-id="6ac5b-221">Job classification information</span></span></li>
+<li><span data-ttu-id="6ac5b-222">Kompenzációs adatok</span><span class="sxs-lookup"><span data-stu-id="6ac5b-222">Compensation information</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Pozíciók</td>
+<td><span data-ttu-id="6ac5b-223">Pozíciók</span><span class="sxs-lookup"><span data-stu-id="6ac5b-223">Positions</span></span></td>
 <td><ul>
-<li>Részletes információk a pozícióval kapcsolatban</li>
-<li>Dolgozó-hozzárendelések</li>
-<li>Beosztások időtartamai</li>
-<li>Beosztáshierarchiák</li>
+<li><span data-ttu-id="6ac5b-224">Részletes információk a pozícióval kapcsolatban</span><span class="sxs-lookup"><span data-stu-id="6ac5b-224">Some detailed position information</span></span></li>
+<li><span data-ttu-id="6ac5b-225">Dolgozó-hozzárendelések</span><span class="sxs-lookup"><span data-stu-id="6ac5b-225">Worker assignments</span></span></li>
+<li><span data-ttu-id="6ac5b-226">Beosztások időtartamai</span><span class="sxs-lookup"><span data-stu-id="6ac5b-226">Position durations</span></span></li>
+<li><span data-ttu-id="6ac5b-227">Beosztáshierarchiák</span><span class="sxs-lookup"><span data-stu-id="6ac5b-227">Position hierarchies</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-Módosíthatja az előző táblázatban említett, az egyes beosztásokhoz és feladatokhoz tartozó adatokat, és megadhat egy dátumot, amikor a beosztáshoz vagy feladathoz kapcsolódó módosításoknak érvénybe kell lépniük. Például egy beosztás csak egy dolgozóhoz rendelhető hozzá, de Sanjay Patel, aki a Könyvelő-A beosztáshoz van rendelve, két hét múlva távozik. Sanjay Patel távozását követően Joe Healey veszi át a pozíciót. Annak ellenére, hogy Sanjay továbbra is hozzá van rendelve a beosztáshoz, Joe Healy is hozzárendelhető ugyanehhez a pozícióhoz úgy, hogy a hozzárendelés ténylegesen csak Sanjay utolsó napját követően lépjen hatályba.
+<span data-ttu-id="6ac5b-228">Módosíthatja az előző táblázatban említett, az egyes beosztásokhoz és feladatokhoz tartozó adatokat, és megadhat egy dátumot, amikor a beosztáshoz vagy feladathoz kapcsolódó módosításoknak érvénybe kell lépniük.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-228">You can modify the information mentioned in the previous table for a position or a job and specify a date when the modifications to the position or job should take effect.</span></span> <span data-ttu-id="6ac5b-229">Például egy beosztás csak egy dolgozóhoz rendelhető hozzá, de Sanjay Patel, aki a Könyvelő-A beosztáshoz van rendelve, két hét múlva távozik.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-229">For example, a position can only be assigned to one worker, but Sanjay Patel, who is assigned to the position Accountant-A, will be leaving in two weeks.</span></span> <span data-ttu-id="6ac5b-230">Sanjay Patel távozását követően Joe Healey veszi át a pozíciót.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-230">Joe Healy will replace Sanjay Patel when he leaves.</span></span> <span data-ttu-id="6ac5b-231">Annak ellenére, hogy Sanjay továbbra is hozzá van rendelve a beosztáshoz, Joe Healy is hozzárendelhető ugyanehhez a pozícióhoz úgy, hogy a hozzárendelés ténylegesen csak Sanjay utolsó napját követően lépjen hatályba.</span><span class="sxs-lookup"><span data-stu-id="6ac5b-231">Even though Sanjay is still assigned to his position, you can assign Joe Healy to the same position so that the assignment is effective only after Sanjay’s last day.</span></span>
 
 
 

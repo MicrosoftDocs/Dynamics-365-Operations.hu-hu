@@ -17,38 +17,38 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4899c1d0baebb451e665853767e64f660ca25ca6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5a47af6910a9686e74ab6d1069dd02079e60cb8a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a>A feldolgozási kanbanfeladat előkészítése, amikor az anyagok nem elérhetők a munkacellához
+# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="9d87b-103">A feldolgozási kanbanfeladat előkészítése, amikor az anyagok nem elérhetők a munkacellához</span><span class="sxs-lookup"><span data-stu-id="9d87b-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás a kanbanfeladat folyamatának előkészítését mutatja be, amikor egyes anyagok nem érhetőek el a munkacellához, és így a raktárból kell anyagokat választani. Az „A feldolgozási kanbanfeladat előkészítése, amikor az anyagok elérhetők” eljárás előfeltétel, ha ilyen eljárást akar létrehozni. Ezt az eljárást a gépkezelő használja. Ez az eljárás az USMF bemutatócéget használja.
+<span data-ttu-id="9d87b-104">Ez az eljárás a kanbanfeladat folyamatának előkészítését mutatja be, amikor egyes anyagok nem érhetőek el a munkacellához, és így a raktárból kell anyagokat választani.</span><span class="sxs-lookup"><span data-stu-id="9d87b-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="9d87b-105">Az „A feldolgozási kanbanfeladat előkészítése, amikor az anyagok elérhetők” eljárás előfeltétel, ha ilyen eljárást akar létrehozni.</span><span class="sxs-lookup"><span data-stu-id="9d87b-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="9d87b-106">Ezt az eljárást a gépkezelő használja.</span><span class="sxs-lookup"><span data-stu-id="9d87b-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="9d87b-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="9d87b-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Ugorjon a Gyártásvezérlés > Kanban > Kanbantábla feldolgozási feladatokhoz lehetőségre.
-2. A Munkacella mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * Jelölje ki az 1250 munkacellát.  
-4. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Válassza ki a 000356 kanbant.  
-5. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Szüntesse meg a 4. sor kijelölését a listában, jelölje ki a 4. sort, ha nem végezte el az „A feldolgozási kanbanfeladat előkészítése, amikor az anyagok elérhetők” feladatot.  
-6. Bontsa ki a Kitárolási lista részt.
-    * A Nem található bejegyzés ikon az ellátási állapotnál azt jelzi, hogy a P0002 cikk 48 egyedi egysége hiányzik a munkacellából.  
+1. <span data-ttu-id="9d87b-108">Ugorjon a Gyártásvezérlés > Kanban > Kanbantábla feldolgozási feladatokhoz lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9d87b-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="9d87b-109">A Munkacella mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="9d87b-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="9d87b-110">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="9d87b-110">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="9d87b-111">Jelölje ki az 1250 munkacellát.</span><span class="sxs-lookup"><span data-stu-id="9d87b-111">Select work cell 1250.</span></span>  
+4. <span data-ttu-id="9d87b-112">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9d87b-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="9d87b-113">Válassza ki a 000356 kanbant.</span><span class="sxs-lookup"><span data-stu-id="9d87b-113">Select Kanban 000356.</span></span>  
+5. <span data-ttu-id="9d87b-114">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9d87b-114">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="9d87b-115">Szüntesse meg a 4. sor kijelölését a listában,</span><span class="sxs-lookup"><span data-stu-id="9d87b-115">In the list, deselect row 4.</span></span> <span data-ttu-id="9d87b-116">jelölje ki a 4. sort, ha nem végezte el az „A feldolgozási kanbanfeladat előkészítése, amikor az anyagok elérhetők” feladatot.</span><span class="sxs-lookup"><span data-stu-id="9d87b-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
+6. <span data-ttu-id="9d87b-117">Bontsa ki a Kitárolási lista részt.</span><span class="sxs-lookup"><span data-stu-id="9d87b-117">Toggle the expansion of the Picking list section.</span></span>
+    * <span data-ttu-id="9d87b-118">A Nem található bejegyzés ikon az ellátási állapotnál azt jelzi, hogy a P0002 cikk 48 egyedi egysége hiányzik a munkacellából.</span><span class="sxs-lookup"><span data-stu-id="9d87b-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
 
-## <a name="transfer-materials-to-work-cell"></a>Anyagok átvitele a munkacellába
-1. Bontsa ki az Átviteli feladatok részt.
-2. A Gyorsszűrő használatával szűrjön rá a P0002 értékű Cikkszám mezőkre.
-3. Keresse meg és jelölje ki a kívánt rekordot a listán.
-4. Kattintson a Start elemre.
-    * Az áthelyezés folyamatban.  
-5. Kattintson a Befejezés gombra.
-    * A P0002 cikk most már elérhető a kanbanfeladat kitárolási listájában. Ez azt jelenti, hogy elkészíthetjük a kanbant a szükséges anyagokkal.  
-6. Kattintson az Előkészítés lehetőségre.
-    * Figyelje meg, hogy a Feladat állapotának ikonja jelzi, ha a feladat elkészült.  
+## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="9d87b-119">Anyagok átvitele a munkacellába</span><span class="sxs-lookup"><span data-stu-id="9d87b-119">Transfer materials to work cell</span></span>
+1. <span data-ttu-id="9d87b-120">Bontsa ki az Átviteli feladatok részt.</span><span class="sxs-lookup"><span data-stu-id="9d87b-120">Toggle the expansion of the Transfer jobs section.</span></span>
+2. <span data-ttu-id="9d87b-121">A Gyorsszűrő használatával szűrjön rá a P0002 értékű Cikkszám mezőkre.</span><span class="sxs-lookup"><span data-stu-id="9d87b-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
+3. <span data-ttu-id="9d87b-122">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="9d87b-122">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="9d87b-123">Kattintson a Start elemre.</span><span class="sxs-lookup"><span data-stu-id="9d87b-123">Click Start.</span></span>
+    * <span data-ttu-id="9d87b-124">Az áthelyezés folyamatban.</span><span class="sxs-lookup"><span data-stu-id="9d87b-124">Transfer is in progress.</span></span>  
+5. <span data-ttu-id="9d87b-125">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="9d87b-125">Click Complete.</span></span>
+    * <span data-ttu-id="9d87b-126">A P0002 cikk most már elérhető a kanbanfeladat kitárolási listájában.</span><span class="sxs-lookup"><span data-stu-id="9d87b-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="9d87b-127">Ez azt jelenti, hogy elkészíthetjük a kanbant a szükséges anyagokkal.</span><span class="sxs-lookup"><span data-stu-id="9d87b-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
+6. <span data-ttu-id="9d87b-128">Kattintson az Előkészítés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9d87b-128">Click Prepare.</span></span>
+    * <span data-ttu-id="9d87b-129">Figyelje meg, hogy a Feladat állapotának ikonja jelzi, ha a feladat elkészült.</span><span class="sxs-lookup"><span data-stu-id="9d87b-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
 
 

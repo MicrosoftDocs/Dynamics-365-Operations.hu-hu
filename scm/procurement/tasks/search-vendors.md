@@ -16,26 +16,26 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: a4d6e960e7d94ddf2059b1ad6ceb8afebafd790d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fa02b4fb6f309e55d0c74e477952e928ad8dfb12
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="search-for-vendors"></a>Szállítók keresése
+# <a name="search-for-vendors"></a><span data-ttu-id="d3f19-103">Szállítók keresése</span><span class="sxs-lookup"><span data-stu-id="d3f19-103">Search for vendors</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Útmutató a szállítók meghatározott feltételek alapján történő kereséhez. Ez a példa bemutatja, hogyan lehet olyan szállítókat keresni, amelyek egy adott beszerzési kategóriához jóváhagyottak, és az elsődleges címük egy adott országban van. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. Ezt a feladatot általában egy beszerzési szakember végzi el.
+<span data-ttu-id="d3f19-104">Útmutató a szállítók meghatározott feltételek alapján történő kereséhez.</span><span class="sxs-lookup"><span data-stu-id="d3f19-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="d3f19-105">Ez a példa bemutatja, hogyan lehet olyan szállítókat keresni, amelyek egy adott beszerzési kategóriához jóváhagyottak, és az elsődleges címük egy adott országban van.</span><span class="sxs-lookup"><span data-stu-id="d3f19-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="d3f19-106">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="d3f19-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="d3f19-107">Ezt a feladatot általában egy beszerzési szakember végzi el.</span><span class="sxs-lookup"><span data-stu-id="d3f19-107">This task would usually be carried out by a procurement professional.</span></span>
 
-1. Ugorjon a Beszerzés és forrás > Szállítók > Szállítók keresése elemre.
-2. Kattintson a pluszjelre a Beszerzési kategória választó oldal megnyitásához.  
-3. A fán válassza a „CORP PROCUREMENT CATEGORIES\OFFICE MACHINES” pontot.
-    * Ha a folyamatot feladat-útmutatóként használja, szükség lehet a Zárolás feloldása gombra, mielőtt a helyes csomópontot kiválaszthatja. Ha nem használ USMF-et, válassza a meglévő kategóriák egyikét.  
-4. Kattintson a Hozzáadás gombra.
-    * Itt egynél több kategóriát is kiválaszthat. Ha ezt teszi, a keresés megtalálja a kategóriák közül legalább egyhez engedélyezett szállítókat.  
-5. Kattintson az OK gombra.
-6. Írjon be egy értéket az Ország/régió mezőbe.
-7. Kattintson az OK gombra.
+1. <span data-ttu-id="d3f19-108">Ugorjon a Beszerzés és forrás > Szállítók > Szállítók keresése elemre.</span><span class="sxs-lookup"><span data-stu-id="d3f19-108">Go to Procurement and sourcing > Vendors > Vendor search.</span></span>
+2. <span data-ttu-id="d3f19-109">Kattintson a pluszjelre a Beszerzési kategória választó oldal megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d3f19-109">Click on the Plus icon to open the Procurement category selection page.</span></span>  
+3. <span data-ttu-id="d3f19-110">A fán válassza a „CORP PROCUREMENT CATEGORIES\OFFICE MACHINES” pontot.</span><span class="sxs-lookup"><span data-stu-id="d3f19-110">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE MACHINES'.</span></span>
+    * <span data-ttu-id="d3f19-111">Ha a folyamatot feladat-útmutatóként használja, szükség lehet a Zárolás feloldása gombra, mielőtt a helyes csomópontot kiválaszthatja.</span><span class="sxs-lookup"><span data-stu-id="d3f19-111">If you're running this procedure as a task guide, you may have to click the Unlock button before you can select the correct node.</span></span> <span data-ttu-id="d3f19-112">Ha nem használ USMF-et, válassza a meglévő kategóriák egyikét.</span><span class="sxs-lookup"><span data-stu-id="d3f19-112">If you're not using USMF, select one of the categories that you have.</span></span>  
+4. <span data-ttu-id="d3f19-113">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="d3f19-113">Click Add.</span></span>
+    * <span data-ttu-id="d3f19-114">Itt egynél több kategóriát is kiválaszthat.</span><span class="sxs-lookup"><span data-stu-id="d3f19-114">It’s possible to select more than one category here.</span></span> <span data-ttu-id="d3f19-115">Ha ezt teszi, a keresés megtalálja a kategóriák közül legalább egyhez engedélyezett szállítókat.</span><span class="sxs-lookup"><span data-stu-id="d3f19-115">If you do so, the search will find all the vendors that are approved for at least one of the categories.</span></span>  
+5. <span data-ttu-id="d3f19-116">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d3f19-116">Click OK.</span></span>
+6. <span data-ttu-id="d3f19-117">Írjon be egy értéket az Ország/régió mezőbe.</span><span class="sxs-lookup"><span data-stu-id="d3f19-117">In the Country/region field, type a value.</span></span>
+7. <span data-ttu-id="d3f19-118">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d3f19-118">Click OK.</span></span>
 
 

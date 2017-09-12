@@ -17,321 +17,321 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7fb7efdd574c705c2ecfbb46e302985db0729517
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="dimension-hierarchy"></a>Dimenzióhierarchia
+# <a name="dimension-hierarchy"></a><span data-ttu-id="b7902-104">Dimenzióhierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-104">Dimension hierarchy</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör tájékoztatást tartalmaz a dimenzióhierarchiákkal kapcsolatban. Dimenziókészlet-hierarchia segítségével határozza meg a jelentés szerkezetét, a költségirányelveket és a biztonsági beállításokat a költségkönyvelésben.  
+<span data-ttu-id="b7902-105">Ez a témakör tájékoztatást tartalmaz a dimenzióhierarchiákkal kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="b7902-105">This topic provides information about dimension hierarchies.</span></span> <span data-ttu-id="b7902-106">Dimenziókészlet-hierarchia segítségével határozza meg a jelentés szerkezetét, a költségirányelveket és a biztonsági beállításokat a költségkönyvelésben.</span><span class="sxs-lookup"><span data-stu-id="b7902-106">You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.</span></span>  
 
-## <a name="overview"></a>Áttekintés
+## <a name="overview"></a><span data-ttu-id="b7902-107">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="b7902-107">Overview</span></span>
 
-A dimenzióhierarchiákat a Költségkönyvelés különböző helyein használhatja. A dimenzióhierarchia révén megadhatja a következő adatokat:
+<span data-ttu-id="b7902-108">A dimenzióhierarchiákat a Költségkönyvelés különböző helyein használhatja.</span><span class="sxs-lookup"><span data-stu-id="b7902-108">Dimension hierarchies are used in various places in Cost accounting.</span></span> <span data-ttu-id="b7902-109">A dimenzióhierarchia révén megadhatja a következő adatokat:</span><span class="sxs-lookup"><span data-stu-id="b7902-109">A dimension hierarchy lets you define the following information:</span></span>
 
--  A jelentési struktúra, amely megfelel a vállalat szükségleteinek
--  Költségirányelvek
--  A biztonság beállítása
+-  <span data-ttu-id="b7902-110">A jelentési struktúra, amely megfelel a vállalat szükségleteinek</span><span class="sxs-lookup"><span data-stu-id="b7902-110">The reporting structure that fits into the organization's requirements</span></span>
+-  <span data-ttu-id="b7902-111">Költségirányelvek</span><span class="sxs-lookup"><span data-stu-id="b7902-111">Cost policies</span></span>
+-  <span data-ttu-id="b7902-112">A biztonság beállítása</span><span class="sxs-lookup"><span data-stu-id="b7902-112">The security setup</span></span>
 
-Íme, egy példa a dimenzióhierarchiára.
+<span data-ttu-id="b7902-113">Íme, egy példa a dimenzióhierarchiára.</span><span class="sxs-lookup"><span data-stu-id="b7902-113">Here is an example of a dimension hierarchy.</span></span>
 
 ![A dimenzióhierarchia egy példája](./media/dimension-hierarchy.png)
 
-A dimenzióhierarchia a következő dimenziótípusokhoz hozható létre:
+<span data-ttu-id="b7902-115">A dimenzióhierarchia a következő dimenziótípusokhoz hozható létre:</span><span class="sxs-lookup"><span data-stu-id="b7902-115">A dimension hierarchy can be created for the following types of dimensions:</span></span>
 
--  Költségösszetevő-dimenziók
--  Költségobjektum-dimenziók
--  Statisztikai dimenziók
+-  <span data-ttu-id="b7902-116">Költségösszetevő-dimenziók</span><span class="sxs-lookup"><span data-stu-id="b7902-116">Cost element dimensions</span></span>
+-  <span data-ttu-id="b7902-117">Költségobjektum-dimenziók</span><span class="sxs-lookup"><span data-stu-id="b7902-117">Cost object dimensions</span></span>
+-  <span data-ttu-id="b7902-118">Statisztikai dimenziók</span><span class="sxs-lookup"><span data-stu-id="b7902-118">Statistical dimensions</span></span>
 
 > [!NOTE]
-> - Több dimenzióhierarchiát is létrehozhat ugyanarra a dimenzióra, ha más perspektívákra van szükség.
-> - A dimenzióhierarchiához csak egy dimenzió társítható.
-> - A dimenzióhierarchiáknak korlátlan szintje lehet a struktúrájában. Minden szint elérhető a **Költségkontroll** munkaterületen. Ha jelentéseket készít a Microsoft Excel vagy a Microsoft Power BI segítségével, csak a dimenzióhierarchiák első 15 szintje exportálható. Ez a korlátozás azért létezik, mert mind az Excel, mind a Power BI egy fix sémát igényel.
-> - A dimenzióhierarchiák nem dátumfüggők. Ezért a dimenzióhierarchia minden változása azonnal mentésre kerül a rekordban, és nem tudja összehasonlítani a dátum előtti és a dátum utáni állapotot.
+> - <span data-ttu-id="b7902-119">Több dimenzióhierarchiát is létrehozhat ugyanarra a dimenzióra, ha más perspektívákra van szükség.</span><span class="sxs-lookup"><span data-stu-id="b7902-119">You can create multiple dimension hierarchies for the same dimension if different perspectives are required.</span></span>
+> - <span data-ttu-id="b7902-120">A dimenzióhierarchiához csak egy dimenzió társítható.</span><span class="sxs-lookup"><span data-stu-id="b7902-120">A dimension hierarchy can be associated with only one dimension.</span></span>
+> - <span data-ttu-id="b7902-121">A dimenzióhierarchiáknak korlátlan szintje lehet a struktúrájában.</span><span class="sxs-lookup"><span data-stu-id="b7902-121">A dimension hierarchy can have unlimited levels in its structure.</span></span> <span data-ttu-id="b7902-122">Minden szint elérhető a **Költségkontroll** munkaterületen.</span><span class="sxs-lookup"><span data-stu-id="b7902-122">All the levels will be available in the **Cost control** workspace.</span></span> <span data-ttu-id="b7902-123">Ha jelentéseket készít a Microsoft Excel vagy a Microsoft Power BI segítségével, csak a dimenzióhierarchiák első 15 szintje exportálható.</span><span class="sxs-lookup"><span data-stu-id="b7902-123">When you use Microsoft Excel or Microsoft Power BI for reporting purposes, only the first 15 levels of the dimension hierarchy are exported.</span></span> <span data-ttu-id="b7902-124">Ez a korlátozás azért létezik, mert mind az Excel, mind a Power BI egy fix sémát igényel.</span><span class="sxs-lookup"><span data-stu-id="b7902-124">This limitation exists because both Excel and Power BI require a fixed schema.</span></span>
+> - <span data-ttu-id="b7902-125">A dimenzióhierarchiák nem dátumfüggők.</span><span class="sxs-lookup"><span data-stu-id="b7902-125">A dimension hierarchy isn't date-effective.</span></span> <span data-ttu-id="b7902-126">Ezért a dimenzióhierarchia minden változása azonnal mentésre kerül a rekordban, és nem tudja összehasonlítani a dátum előtti és a dátum utáni állapotot.</span><span class="sxs-lookup"><span data-stu-id="b7902-126">Therefore, any change to a dimension hierarchy is immediately saved to the record, and you can't compare the before date and after date.</span></span>
 
-## <a name="dimension-hierarchy-type"></a>Dimenzióhierarchia típusa
+## <a name="dimension-hierarchy-type"></a><span data-ttu-id="b7902-127">Dimenzióhierarchia típusa</span><span class="sxs-lookup"><span data-stu-id="b7902-127">Dimension hierarchy type</span></span>
 
-Új dimenzióhierarchia létrehozásakor meg kell adnia a hierarchia típusát is. Lépjen a **Költségkönyvelés** > **Dimenziók** > **Dimenzióhierarchiák** ponthoz. Kattintson az **Új** lehetőségre, és válasszon Dimenzióhierarchia-típust. A **Dimenzió-kategorizáláshierarchia** vagy a **Dimenzió-osztályozáshierarchia** lehetőséget választhatja.
+<span data-ttu-id="b7902-128">Új dimenzióhierarchia létrehozásakor meg kell adnia a hierarchia típusát is.</span><span class="sxs-lookup"><span data-stu-id="b7902-128">When you create a new dimension hierarchy, you must select a hierarchy type.</span></span> <span data-ttu-id="b7902-129">Lépjen a **Költségkönyvelés** > **Dimenziók** > **Dimenzióhierarchiák** ponthoz.</span><span class="sxs-lookup"><span data-stu-id="b7902-129">Go to **Cost accounting** > **Dimensions** > **Dimension hierarchies**.</span></span> <span data-ttu-id="b7902-130">Kattintson az **Új** lehetőségre, és válasszon Dimenzióhierarchia-típust.</span><span class="sxs-lookup"><span data-stu-id="b7902-130">Click **New**, and select a dimension hierarchy type.</span></span> <span data-ttu-id="b7902-131">A **Dimenzió-kategorizáláshierarchia** vagy a **Dimenzió-osztályozáshierarchia** lehetőséget választhatja.</span><span class="sxs-lookup"><span data-stu-id="b7902-131">You can select either **Dimension categorization hierarchy** or **Dimension classification hierarchy**.</span></span>
 
-### <a name="dimension-categorization-hierarchy"></a>Dimenzió-kategorizáláshierarchia
+### <a name="dimension-categorization-hierarchy"></a><span data-ttu-id="b7902-132">Dimenzió-kategorizáláshierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-132">Dimension categorization hierarchy</span></span>
 
-A **Dimenziókategorizálás-hierarchia** típus a jelentésekhez szükséges. Csak a költségösszetevő-dimenziókat támogatja. Ha ezt a típust választja, az alábbi szabályok lesznek érvényesek:
+<span data-ttu-id="b7902-133">A **Dimenziókategorizálás-hierarchia** típus a jelentésekhez szükséges.</span><span class="sxs-lookup"><span data-stu-id="b7902-133">The **Dimension categorization hierarchy** type is used for reporting purposes.</span></span> <span data-ttu-id="b7902-134">Csak a költségösszetevő-dimenziókat támogatja.</span><span class="sxs-lookup"><span data-stu-id="b7902-134">It supports only the cost element dimensions.</span></span> <span data-ttu-id="b7902-135">Ha ezt a típust választja, az alábbi szabályok lesznek érvényesek:</span><span class="sxs-lookup"><span data-stu-id="b7902-135">When you select this type, the following rules apply:</span></span>
 
--  Egy dimenziótagot egynél többször lehet társítani a hierarchiaszerkezetben.
--  A költségelem dimenziótagot különböző csomópontokban helyezheti el, ha költségviselkedést rendel hozzá a levélcsomóponthoz.
+-  <span data-ttu-id="b7902-136">Egy dimenziótagot egynél többször lehet társítani a hierarchiaszerkezetben.</span><span class="sxs-lookup"><span data-stu-id="b7902-136">A dimension member can be associated more than one time in the hierarchy structure.</span></span>
+-  <span data-ttu-id="b7902-137">A költségelem dimenziótagot különböző csomópontokban helyezheti el, ha költségviselkedést rendel hozzá a levélcsomóponthoz.</span><span class="sxs-lookup"><span data-stu-id="b7902-137">You can put a cost element dimension member in different nodes by assigning a cost behavior to the leaf node.</span></span>
 
-### <a name="dimension-classification-hierarchy"></a>Dimenzió-osztályozáshierarchia
+### <a name="dimension-classification-hierarchy"></a><span data-ttu-id="b7902-138">Dimenzió-osztályozáshierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-138">Dimension classification hierarchy</span></span>
 
-A **Dimenzióosztályozás-hierarchia** típus a szabályokhoz és a jelentésekhez szükséges. Támogatja az összes dimenziót, például költségobjektumokat, költségelemeket és statisztikai dimenziókat. Ha ezt a típust választja ki, egy dimenziótagot egyszer lehet társítani a hierarchiaszerkezetben.
+<span data-ttu-id="b7902-139">A **Dimenzióosztályozás-hierarchia** típus a szabályokhoz és a jelentésekhez szükséges.</span><span class="sxs-lookup"><span data-stu-id="b7902-139">The **Dimension classification hierarchy** type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="b7902-140">Támogatja az összes dimenziót, például költségobjektumokat, költségelemeket és statisztikai dimenziókat.</span><span class="sxs-lookup"><span data-stu-id="b7902-140">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span> <span data-ttu-id="b7902-141">Ha ezt a típust választja ki, egy dimenziótagot egyszer lehet társítani a hierarchiaszerkezetben.</span><span class="sxs-lookup"><span data-stu-id="b7902-141">When you select this type, a dimension member can be associated only one time in the hierarchy structure.</span></span>
 
-## <a name="create-and-maintain-a-dimension-hierarchy"></a>Dimenzióhierarchia létrehozása és karbantartása
+## <a name="create-and-maintain-a-dimension-hierarchy"></a><span data-ttu-id="b7902-142">Dimenzióhierarchia létrehozása és karbantartása</span><span class="sxs-lookup"><span data-stu-id="b7902-142">Create and maintain a dimension hierarchy</span></span>
 
-A dimenzióhierarchiát olyan fastruktúrának hozzák létre, amely csomópont- és levélcsomópont-kapcsolatokat tartalmaz.
+<span data-ttu-id="b7902-143">A dimenzióhierarchiát olyan fastruktúrának hozzák létre, amely csomópont- és levélcsomópont-kapcsolatokat tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="b7902-143">A dimension hierarchy is created as a tree structure that has node and leaf node relationships.</span></span>
 
--  A csomópontnak 1:_n_ alcsomópontja lehet.
--  A csomóponthoz nem lehet hozzárendelni mind alcsomópontot, mind levélcsomópontot.
--  A levélcsomópont csak a hierarchia legalacsonyabb szintjén rendelhető hozzá.
+-  <span data-ttu-id="b7902-144">A csomópontnak 1:_n_ alcsomópontja lehet.</span><span class="sxs-lookup"><span data-stu-id="b7902-144">A node can have 1:_n_ subnodes.</span></span>
+-  <span data-ttu-id="b7902-145">A csomóponthoz nem lehet hozzárendelni mind alcsomópontot, mind levélcsomópontot.</span><span class="sxs-lookup"><span data-stu-id="b7902-145">A node can’t have both subnodes and leaf nodes assigned to it.</span></span>
+-  <span data-ttu-id="b7902-146">A levélcsomópont csak a hierarchia legalacsonyabb szintjén rendelhető hozzá.</span><span class="sxs-lookup"><span data-stu-id="b7902-146">A leaf node can be assigned only at the lowest level in the hierarchy.</span></span>
 
-### <a name="example"></a>Példa
+### <a name="example"></a><span data-ttu-id="b7902-147">Példa</span><span class="sxs-lookup"><span data-stu-id="b7902-147">Example</span></span>
 
-Egy kis cég a következő szervezeti struktúrával rendelkezik, ahol a Pénzügy és a Humán erőforrások az Adminisztráció alatt állnak, a Szerelés és a Csomagolás pedig a Termelés részlegei.
+<span data-ttu-id="b7902-148">Egy kis cég a következő szervezeti struktúrával rendelkezik, ahol a Pénzügy és a Humán erőforrások az Adminisztráció alatt állnak, a Szerelés és a Csomagolás pedig a Termelés részlegei.</span><span class="sxs-lookup"><span data-stu-id="b7902-148">A small company has the following organization structure, where Finance and Human resources are departments under Admin, and Assembly and Packaging are departments under Production.</span></span>
 
 ![Példa szervezeti felépítésre](./media/dimension-hierarchy-org.png)
 
-A költségobjektum dimenziója a szervezet összes költségközpontját jelenti.
+<span data-ttu-id="b7902-150">A költségobjektum dimenziója a szervezet összes költségközpontját jelenti.</span><span class="sxs-lookup"><span data-stu-id="b7902-150">A cost object dimension represents all the cost centers in the organization.</span></span>
 
-- Költségobjektum dimenziója
-    - Költséghelyek
+- <span data-ttu-id="b7902-151">Költségobjektum dimenziója</span><span class="sxs-lookup"><span data-stu-id="b7902-151">Cost object dimension</span></span>
+    - <span data-ttu-id="b7902-152">Költséghelyek</span><span class="sxs-lookup"><span data-stu-id="b7902-152">Cost centers</span></span>
 
-Itt állítható be a költségobjektum dimenziója, amely a szervezet összes költségközpontjára jellemző.
+<span data-ttu-id="b7902-153">Itt állítható be a költségobjektum dimenziója, amely a szervezet összes költségközpontjára jellemző.</span><span class="sxs-lookup"><span data-stu-id="b7902-153">The cost object dimension that represents all the cost centers can be set up as shown here.</span></span>
 
-| Költséghelyek | Leírás |
+| <span data-ttu-id="b7902-154">Költséghelyek</span><span class="sxs-lookup"><span data-stu-id="b7902-154">Cost centers</span></span> | <span data-ttu-id="b7902-155">Leírás</span><span class="sxs-lookup"><span data-stu-id="b7902-155">Description</span></span> |
 |--------------|-------------|
-| CC001        | HR          |
-| CC002        | Pénzügy     |
-| CC003        | Adó         |
-| CC007        | AR/AP       |
-| CC005        | Szerelvény    |
-| CC006        | Csomagolás   |
+| <span data-ttu-id="b7902-156">CC001</span><span class="sxs-lookup"><span data-stu-id="b7902-156">CC001</span></span>        | <span data-ttu-id="b7902-157">HR</span><span class="sxs-lookup"><span data-stu-id="b7902-157">HR</span></span>          |
+| <span data-ttu-id="b7902-158">CC002</span><span class="sxs-lookup"><span data-stu-id="b7902-158">CC002</span></span>        | <span data-ttu-id="b7902-159">Pénzügy</span><span class="sxs-lookup"><span data-stu-id="b7902-159">Finance</span></span>     |
+| <span data-ttu-id="b7902-160">CC003</span><span class="sxs-lookup"><span data-stu-id="b7902-160">CC003</span></span>        | <span data-ttu-id="b7902-161">Adó</span><span class="sxs-lookup"><span data-stu-id="b7902-161">Tax</span></span>         |
+| <span data-ttu-id="b7902-162">CC007</span><span class="sxs-lookup"><span data-stu-id="b7902-162">CC007</span></span>        | <span data-ttu-id="b7902-163">AR/AP</span><span class="sxs-lookup"><span data-stu-id="b7902-163">AR/AP</span></span>       |
+| <span data-ttu-id="b7902-164">CC005</span><span class="sxs-lookup"><span data-stu-id="b7902-164">CC005</span></span>        | <span data-ttu-id="b7902-165">Szerelvény</span><span class="sxs-lookup"><span data-stu-id="b7902-165">Assembly</span></span>    |
+| <span data-ttu-id="b7902-166">CC006</span><span class="sxs-lookup"><span data-stu-id="b7902-166">CC006</span></span>        | <span data-ttu-id="b7902-167">Csomagolás</span><span class="sxs-lookup"><span data-stu-id="b7902-167">Packaging</span></span>   |
 
-A költségelem dimenziója a szervezet összes költségelemét jelenti.
+<span data-ttu-id="b7902-168">A költségelem dimenziója a szervezet összes költségelemét jelenti.</span><span class="sxs-lookup"><span data-stu-id="b7902-168">A cost element dimension represents all the cost elements in the organization.</span></span>
 
-- Költségösszetevő-dimenzió
-    - Költségösszetevők
+- <span data-ttu-id="b7902-169">Költségösszetevő-dimenzió</span><span class="sxs-lookup"><span data-stu-id="b7902-169">Cost element dimension</span></span>
+    - <span data-ttu-id="b7902-170">Költségösszetevők</span><span class="sxs-lookup"><span data-stu-id="b7902-170">Cost elements</span></span>
 
-Itt állítható be a költségösszetevő dimenziója, amely a szervezet összes költségösszetevőjére jellemző.
+<span data-ttu-id="b7902-171">Itt állítható be a költségösszetevő dimenziója, amely a szervezet összes költségösszetevőjére jellemző.</span><span class="sxs-lookup"><span data-stu-id="b7902-171">The cost element dimension that represents all the cost elements can be set up as shown here.</span></span>
 
-| Költségösszetevők | Leírás |
+| <span data-ttu-id="b7902-172">Költségösszetevők</span><span class="sxs-lookup"><span data-stu-id="b7902-172">Cost elements</span></span> | <span data-ttu-id="b7902-173">Leírás</span><span class="sxs-lookup"><span data-stu-id="b7902-173">Description</span></span> |
 |---------------|-------------|
-| 10001         | Villamos energia |
-| 10010         | Takarítás    |
-| 10011         | Fűtés     |
-| 40001         | ELÁBÉ        |
+| <span data-ttu-id="b7902-174">10001</span><span class="sxs-lookup"><span data-stu-id="b7902-174">10001</span></span>         | <span data-ttu-id="b7902-175">Villamos energia</span><span class="sxs-lookup"><span data-stu-id="b7902-175">Electricity</span></span> |
+| <span data-ttu-id="b7902-176">10010</span><span class="sxs-lookup"><span data-stu-id="b7902-176">10010</span></span>         | <span data-ttu-id="b7902-177">Takarítás</span><span class="sxs-lookup"><span data-stu-id="b7902-177">Cleaning</span></span>    |
+| <span data-ttu-id="b7902-178">10011</span><span class="sxs-lookup"><span data-stu-id="b7902-178">10011</span></span>         | <span data-ttu-id="b7902-179">Fűtés</span><span class="sxs-lookup"><span data-stu-id="b7902-179">Heating</span></span>     |
+| <span data-ttu-id="b7902-180">40001</span><span class="sxs-lookup"><span data-stu-id="b7902-180">40001</span></span>         | <span data-ttu-id="b7902-181">ELÁBÉ</span><span class="sxs-lookup"><span data-stu-id="b7902-181">COGS</span></span>        |
 
-A szervezeti jelentési követelményeket teljesítő dimenziók hierarchiája az alábbiak szerint állítható be.
+<span data-ttu-id="b7902-182">A szervezeti jelentési követelményeket teljesítő dimenziók hierarchiája az alábbiak szerint állítható be.</span><span class="sxs-lookup"><span data-stu-id="b7902-182">A dimension hierarchy that meets the organizational reporting requirements can be set up as shown here.</span></span>
 
-**Dimenzióhierarchia részletei**
+<span data-ttu-id="b7902-183">**Dimenzióhierarchia részletei**</span><span class="sxs-lookup"><span data-stu-id="b7902-183">**Dimension hierarchy details**</span></span>
 
-| Dimenzióhierarchia neve | Dimenzió    | Dimenzióhierarchia típus neve      | Hozzáférési lista hierarchia |
+| <span data-ttu-id="b7902-184">Dimenzióhierarchia neve</span><span class="sxs-lookup"><span data-stu-id="b7902-184">Dimension hierarchy name</span></span> | <span data-ttu-id="b7902-185">Dimenzió</span><span class="sxs-lookup"><span data-stu-id="b7902-185">Dimension</span></span>    | <span data-ttu-id="b7902-186">Dimenzióhierarchia típus neve</span><span class="sxs-lookup"><span data-stu-id="b7902-186">Dimension hierarchy type name</span></span>      | <span data-ttu-id="b7902-187">Hozzáférési lista hierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-187">Access list hierarchy</span></span> |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Szervezet             | Költséghelyek | Dimenzió-osztályozáshierarchia | Nincs                    |
+| <span data-ttu-id="b7902-188">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-188">Organization</span></span>             | <span data-ttu-id="b7902-189">Költséghelyek</span><span class="sxs-lookup"><span data-stu-id="b7902-189">Cost centers</span></span> | <span data-ttu-id="b7902-190">Dimenzió-osztályozáshierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-190">Dimension classification hierarchy</span></span> | <span data-ttu-id="b7902-191">Nincs</span><span class="sxs-lookup"><span data-stu-id="b7902-191">No</span></span>                    |
 
-A jelentések dimenzióhierarchiája az alábbiak szerint állítható be.
+<span data-ttu-id="b7902-192">A jelentések dimenzióhierarchiája az alábbiak szerint állítható be.</span><span class="sxs-lookup"><span data-stu-id="b7902-192">The dimension hierarchy for reporting can be set up as shown here.</span></span>
 
-|                   | Dimenziótag tartományok   |                         |
+|                   | <span data-ttu-id="b7902-193">Dimenziótag tartományok</span><span class="sxs-lookup"><span data-stu-id="b7902-193">Dimension member ranges</span></span>   |                         |
 |-------------------|---------------------------|-------------------------|
-| **Csomópontok**         | **Forrásdimenzió-tag** | **Céldimenziótag** |
-| Szervezet      |                           |                         |
-| &nbsp;&nbsp;Rendszergazda         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Pénzügy   | CC002                     | CC003                   |
-|                   | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
-| &nbsp;&nbsp;Termelés    |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Csomagolás | CC005                     | CC005                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Szerelvény  | CC006                     | CC006                   |
+| <span data-ttu-id="b7902-194">**Csomópontok**</span><span class="sxs-lookup"><span data-stu-id="b7902-194">**Nodes**</span></span>         | <span data-ttu-id="b7902-195">**Forrásdimenzió-tag**</span><span class="sxs-lookup"><span data-stu-id="b7902-195">**From dimension member**</span></span> | <span data-ttu-id="b7902-196">**Céldimenziótag**</span><span class="sxs-lookup"><span data-stu-id="b7902-196">**To dimension member**</span></span> |
+| <span data-ttu-id="b7902-197">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-197">Organization</span></span>      |                           |                         |
+| <span data-ttu-id="b7902-198">&nbsp;&nbsp;Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="b7902-198">&nbsp;&nbsp;Admin</span></span>         |                           |                         |
+|<span data-ttu-id="b7902-199">&nbsp;&nbsp;&nbsp;&nbsp;Pénzügy</span><span class="sxs-lookup"><span data-stu-id="b7902-199">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span></span>   | <span data-ttu-id="b7902-200">CC002</span><span class="sxs-lookup"><span data-stu-id="b7902-200">CC002</span></span>                     | <span data-ttu-id="b7902-201">CC003</span><span class="sxs-lookup"><span data-stu-id="b7902-201">CC003</span></span>                   |
+|                   | <span data-ttu-id="b7902-202">CC007</span><span class="sxs-lookup"><span data-stu-id="b7902-202">CC007</span></span>                     | <span data-ttu-id="b7902-203">CC007</span><span class="sxs-lookup"><span data-stu-id="b7902-203">CC007</span></span>                   |
+| <span data-ttu-id="b7902-204">&nbsp;&nbsp;&nbsp;&nbsp;HR</span><span class="sxs-lookup"><span data-stu-id="b7902-204">&nbsp;&nbsp;&nbsp;&nbsp;HR</span></span>        | <span data-ttu-id="b7902-205">CC001</span><span class="sxs-lookup"><span data-stu-id="b7902-205">CC001</span></span>                     | <span data-ttu-id="b7902-206">CC001</span><span class="sxs-lookup"><span data-stu-id="b7902-206">CC001</span></span>                   |
+| <span data-ttu-id="b7902-207">&nbsp;&nbsp;Termelés</span><span class="sxs-lookup"><span data-stu-id="b7902-207">&nbsp;&nbsp;Production</span></span>    |                           |                         |
+| <span data-ttu-id="b7902-208">&nbsp;&nbsp;&nbsp;&nbsp;Csomagolás</span><span class="sxs-lookup"><span data-stu-id="b7902-208">&nbsp;&nbsp;&nbsp;&nbsp;Packaging</span></span> | <span data-ttu-id="b7902-209">CC005</span><span class="sxs-lookup"><span data-stu-id="b7902-209">CC005</span></span>                     | <span data-ttu-id="b7902-210">CC005</span><span class="sxs-lookup"><span data-stu-id="b7902-210">CC005</span></span>                   |
+| <span data-ttu-id="b7902-211">&nbsp;&nbsp;&nbsp;&nbsp;Szerelvény</span><span class="sxs-lookup"><span data-stu-id="b7902-211">&nbsp;&nbsp;&nbsp;&nbsp;Assembly</span></span>  | <span data-ttu-id="b7902-212">CC006</span><span class="sxs-lookup"><span data-stu-id="b7902-212">CC006</span></span>                     | <span data-ttu-id="b7902-213">CC006</span><span class="sxs-lookup"><span data-stu-id="b7902-213">CC006</span></span>                   |
 
-A szervezeti jelentési követelményeket teljesítő dimenziók hierarchiája az alábbiak szerint állítható be.
+<span data-ttu-id="b7902-214">A szervezeti jelentési követelményeket teljesítő dimenziók hierarchiája az alábbiak szerint állítható be.</span><span class="sxs-lookup"><span data-stu-id="b7902-214">A dimension hierarchy that meets the policy requirement can be set up as shown here.</span></span>
 
-**Dimenzióhierarchia részletei**
+<span data-ttu-id="b7902-215">**Dimenzióhierarchia részletei**</span><span class="sxs-lookup"><span data-stu-id="b7902-215">**Dimension hierarchy details**</span></span>
 
-| Dimenzióhierarchia neve | Dimenzió     | Dimenzióhierarchia típus neve      |
+| <span data-ttu-id="b7902-216">Dimenzióhierarchia neve</span><span class="sxs-lookup"><span data-stu-id="b7902-216">Dimension hierarchy name</span></span> | <span data-ttu-id="b7902-217">Dimenzió</span><span class="sxs-lookup"><span data-stu-id="b7902-217">Dimension</span></span>     | <span data-ttu-id="b7902-218">Dimenzióhierarchia típus neve</span><span class="sxs-lookup"><span data-stu-id="b7902-218">Dimension hierarchy type name</span></span>      |
 |--------------------------|---------------|------------------------------------|
-| Költség működése            | Költségösszetevők | Dimenzió-osztályozáshierarchia |
+| <span data-ttu-id="b7902-219">Költség működése</span><span class="sxs-lookup"><span data-stu-id="b7902-219">Cost behavior</span></span>            | <span data-ttu-id="b7902-220">Költségösszetevők</span><span class="sxs-lookup"><span data-stu-id="b7902-220">Cost elements</span></span> | <span data-ttu-id="b7902-221">Dimenzió-osztályozáshierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-221">Dimension classification hierarchy</span></span> |
 
-Az irányelv dimenzióhierarchiája az alábbiak szerint állítható be.
+<span data-ttu-id="b7902-222">Az irányelv dimenzióhierarchiája az alábbiak szerint állítható be.</span><span class="sxs-lookup"><span data-stu-id="b7902-222">The dimension hierarchy for the policy can be set up as shown here.</span></span>
 
-|                   | Dimenziótag tartományok   |                         |
+|                   | <span data-ttu-id="b7902-223">Dimenziótag tartományok</span><span class="sxs-lookup"><span data-stu-id="b7902-223">Dimension member ranges</span></span>   |                         |
 |-------------------|---------------------------|-------------------------|
-| **Csomópontok**         | **Forrásdimenzió-tag** | **Céldimenziótag** |
-| Költség működése     |                           |                         |
-| &nbsp;&nbsp;Fix költség    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Változó költség | 40001                     | 40010                   |
+| <span data-ttu-id="b7902-224">**Csomópontok**</span><span class="sxs-lookup"><span data-stu-id="b7902-224">**Nodes**</span></span>         | <span data-ttu-id="b7902-225">**Forrásdimenzió-tag**</span><span class="sxs-lookup"><span data-stu-id="b7902-225">**From dimension member**</span></span> | <span data-ttu-id="b7902-226">**Céldimenziótag**</span><span class="sxs-lookup"><span data-stu-id="b7902-226">**To dimension member**</span></span> |
+| <span data-ttu-id="b7902-227">Költség működése</span><span class="sxs-lookup"><span data-stu-id="b7902-227">Cost behavior</span></span>     |                           |                         |
+| <span data-ttu-id="b7902-228">&nbsp;&nbsp;Fix költség</span><span class="sxs-lookup"><span data-stu-id="b7902-228">&nbsp;&nbsp;Fixed cost</span></span>    | <span data-ttu-id="b7902-229">10001</span><span class="sxs-lookup"><span data-stu-id="b7902-229">10001</span></span>                     | <span data-ttu-id="b7902-230">10011</span><span class="sxs-lookup"><span data-stu-id="b7902-230">10011</span></span>                   |
+|<span data-ttu-id="b7902-231">&nbsp;&nbsp;Változó költség</span><span class="sxs-lookup"><span data-stu-id="b7902-231">&nbsp;&nbsp;Variable cost</span></span> | <span data-ttu-id="b7902-232">40001</span><span class="sxs-lookup"><span data-stu-id="b7902-232">40001</span></span>                     | <span data-ttu-id="b7902-233">40010</span><span class="sxs-lookup"><span data-stu-id="b7902-233">40010</span></span>                   |
 
 > [!NOTE]
-> A **Dimenziótag-tartományok** alatt egy csomópont 1:_n_ dimenziótagtartományt tartalmazhat. Dimenziótag-azonosítókat illeszthet be, amelyek még nem léteznek dimenziótagokként. Ezzel a módszerrel a hierarchia rugalmas lesz a jövőben.  
+> <span data-ttu-id="b7902-234">A **Dimenziótag-tartományok** alatt egy csomópont 1:_n_ dimenziótagtartományt tartalmazhat.</span><span class="sxs-lookup"><span data-stu-id="b7902-234">Under **Dimension member ranges**, a node can contain 1:_n_ dimension member ranges.</span></span> <span data-ttu-id="b7902-235">Dimenziótag-azonosítókat illeszthet be, amelyek még nem léteznek dimenziótagokként.</span><span class="sxs-lookup"><span data-stu-id="b7902-235">You can insert dimension member IDs that don’t yet exist as dimension members.</span></span> <span data-ttu-id="b7902-236">Ezzel a módszerrel a hierarchia rugalmas lesz a jövőben.</span><span class="sxs-lookup"><span data-stu-id="b7902-236">This approach makes the hierarchy resilient for the future.</span></span>  
 
-### <a name="copy-a-hierarchy"></a>Hierarchia másolása
+### <a name="copy-a-hierarchy"></a><span data-ttu-id="b7902-237">Hierarchia másolása</span><span class="sxs-lookup"><span data-stu-id="b7902-237">Copy a hierarchy</span></span>
 
-Új dimenzióhierarchia kiindulási pontjaként bemásolhatja az aktuális dimenzióhierarchiát. Ez a megközelítés akkor lehet hasznos, ha össze szeretné hasonlítani,az új dimenzióhierarchiát a korábbi dimenzióhierarchiával.
+<span data-ttu-id="b7902-238">Új dimenzióhierarchia kiindulási pontjaként bemásolhatja az aktuális dimenzióhierarchiát.</span><span class="sxs-lookup"><span data-stu-id="b7902-238">You can copy a current dimension hierarchy as the starting point for a new dimension hierarchy.</span></span> <span data-ttu-id="b7902-239">Ez a megközelítés akkor lehet hasznos, ha össze szeretné hasonlítani,az új dimenzióhierarchiát a korábbi dimenzióhierarchiával.</span><span class="sxs-lookup"><span data-stu-id="b7902-239">This approach can be useful if you want to compare the previous dimension hierarchy to the new dimension hierarchy.</span></span>
 
-### <a name="rearrange-nodes-in-a-hierarchy"></a>A csomópontok átrendezése egy hierarchiában
+### <a name="rearrange-nodes-in-a-hierarchy"></a><span data-ttu-id="b7902-240">A csomópontok átrendezése egy hierarchiában</span><span class="sxs-lookup"><span data-stu-id="b7902-240">Rearrange nodes in a hierarchy</span></span>
 
-A csomópontot felfelé és lefelé mozgathatja az aktuális szinten a struktúrában. Ily módon átrendezheti a csomópontok sorrendjét a **Költségkontroll** munkaterület jelentéseihez.
+<span data-ttu-id="b7902-241">A csomópontot felfelé és lefelé mozgathatja az aktuális szinten a struktúrában.</span><span class="sxs-lookup"><span data-stu-id="b7902-241">You can move a node up and down within its current level in the structure.</span></span> <span data-ttu-id="b7902-242">Ily módon átrendezheti a csomópontok sorrendjét a **Költségkontroll** munkaterület jelentéseihez.</span><span class="sxs-lookup"><span data-stu-id="b7902-242">In this way, you can rearrange the order of nodes for reporting in the **Cost control** workspace.</span></span>
 
-A csomópontot a hierarchiában lévő új helyre mozgatja a célcsomópont kiválasztásával. Kétféle módon lehet mozgatni egy csomópontot:
+<span data-ttu-id="b7902-243">A csomópontot a hierarchiában lévő új helyre mozgatja a célcsomópont kiválasztásával.</span><span class="sxs-lookup"><span data-stu-id="b7902-243">You move a node to a new location in the hierarchy by selecting the target node.</span></span> <span data-ttu-id="b7902-244">Kétféle módon lehet mozgatni egy csomópontot:</span><span class="sxs-lookup"><span data-stu-id="b7902-244">There are two ways to move a node:</span></span>
 
-- **Áthelyezés alá** – a kiválasztott csomópont áthelyezése a hierarchia aktuális helyéről, és szúrja be a kijelölt célcsomópont **alá**.
-- **Áthelyezés mögé** – a kiválasztott csomópont áthelyezése a hierarchia aktuális helyéről, és szúrja be a kijelölt célcsomópont **mögé** a saját hierarchiaszintjén.
+- <span data-ttu-id="b7902-245">**Áthelyezés alá** – a kiválasztott csomópont áthelyezése a hierarchia aktuális helyéről, és szúrja be a kijelölt célcsomópont **alá**.</span><span class="sxs-lookup"><span data-stu-id="b7902-245">**Move below** – Move the selected node from its current position in the hierarchy, and insert it **under** the selected target node.</span></span>
+- <span data-ttu-id="b7902-246">**Áthelyezés mögé** – a kiválasztott csomópont áthelyezése a hierarchia aktuális helyéről, és szúrja be a kijelölt célcsomópont **mögé** a saját hierarchiaszintjén.</span><span class="sxs-lookup"><span data-stu-id="b7902-246">**Move after** – Move the selected node from its current position in the hierarchy, and insert it **after** the selected target node at its level of the hierarchy.</span></span>
 
 > [!NOTE] 
-> A csomópontok sorrendjét nem tartja fenn, amikor adatokat exportál Excelbe vagy Power BI-be, mert ezek az eszközök alapértelmezés szerint alfanumerikus rendezést használnak. A sorrendet manuálisan rendezheti.
+> <span data-ttu-id="b7902-247">A csomópontok sorrendjét nem tartja fenn, amikor adatokat exportál Excelbe vagy Power BI-be, mert ezek az eszközök alapértelmezés szerint alfanumerikus rendezést használnak.</span><span class="sxs-lookup"><span data-stu-id="b7902-247">The order of the nodes isn't maintained when you export data to Excel or Power BI, because those tools use an alphanumeric sort order by default.</span></span> <span data-ttu-id="b7902-248">A sorrendet manuálisan rendezheti.</span><span class="sxs-lookup"><span data-stu-id="b7902-248">You should manually rearrange the order.</span></span>
 
-## <a name="define-dimension-hierarchies-for-reporting"></a>A jelentések dimenzióhierarchiája az alábbiak szerint állítható be.
+## <a name="define-dimension-hierarchies-for-reporting"></a><span data-ttu-id="b7902-249">A jelentések dimenzióhierarchiája az alábbiak szerint állítható be.</span><span class="sxs-lookup"><span data-stu-id="b7902-249">Define dimension hierarchies for reporting</span></span>
 
-A dimenzióhierarchiák a jelentéseknél fontosak. Lehetővé teszik, hogy meghatározza az egyedi szervezetnek megfelelő struktúrát. A dimenziók hierarchiájának csomópontján végrehajtott összesítések lehetővé teszik, hogy a szervezet bármely szintjén az érdekelt felek bármely szinten láthassák az adatokat.
+<span data-ttu-id="b7902-250">A dimenzióhierarchiák a jelentéseknél fontosak.</span><span class="sxs-lookup"><span data-stu-id="b7902-250">Dimension hierarchies are important for reporting.</span></span> <span data-ttu-id="b7902-251">Lehetővé teszik, hogy meghatározza az egyedi szervezetnek megfelelő struktúrát.</span><span class="sxs-lookup"><span data-stu-id="b7902-251">They let you define the specific structure that fits into the individual organization.</span></span> <span data-ttu-id="b7902-252">A dimenziók hierarchiájának csomópontján végrehajtott összesítések lehetővé teszik, hogy a szervezet bármely szintjén az érdekelt felek bármely szinten láthassák az adatokat.</span><span class="sxs-lookup"><span data-stu-id="b7902-252">The aggregations that are done at the node level of the dimension hierarchy let stakeholders at any level of the organization see data at any level.</span></span>
 
-A dimenzióhierarchiák a következő jelentéskészítő eszközöknél érhetők el. Ez a megközelítés segíti a jelentéstételi struktúra következetességét.
+<span data-ttu-id="b7902-253">A dimenzióhierarchiák a következő jelentéskészítő eszközöknél érhetők el.</span><span class="sxs-lookup"><span data-stu-id="b7902-253">Dimension hierarchies are available in the following reporting tools.</span></span> <span data-ttu-id="b7902-254">Ez a megközelítés segíti a jelentéstételi struktúra következetességét.</span><span class="sxs-lookup"><span data-stu-id="b7902-254">This approach helps guarantee consistency in the reporting structure.</span></span>
 
-- **Költségkontroll** munkaterület (a kliensben):
+- <span data-ttu-id="b7902-255">**Költségkontroll** munkaterület (a kliensben):</span><span class="sxs-lookup"><span data-stu-id="b7902-255">**Cost control** workspace (Client):</span></span>
 
-    - A konfiguráció szabályozza.
+    - <span data-ttu-id="b7902-256">A konfiguráció szabályozza.</span><span class="sxs-lookup"><span data-stu-id="b7902-256">Controlled by configuration.</span></span>
 
-- **Költségkontroll** munkaterület (a mobilalkalmazásban):
+- <span data-ttu-id="b7902-257">**Költségkontroll** munkaterület (a mobilalkalmazásban):</span><span class="sxs-lookup"><span data-stu-id="b7902-257">**Cost control** workspace (Mobile application):</span></span>
 
-    - A konfiguráció szabályozza.
+    - <span data-ttu-id="b7902-258">A konfiguráció szabályozza.</span><span class="sxs-lookup"><span data-stu-id="b7902-258">Controlled by configuration.</span></span>
 
-- Excel
+- <span data-ttu-id="b7902-259">Excel</span><span class="sxs-lookup"><span data-stu-id="b7902-259">Excel</span></span>
 
-    - Lehetőséget kínál arra, hogy exportdefiníció szerint kiválassza a konkrét dimenziók hierarchiáját:
+    - <span data-ttu-id="b7902-260">Lehetőséget kínál arra, hogy exportdefiníció szerint kiválassza a konkrét dimenziók hierarchiáját:</span><span class="sxs-lookup"><span data-stu-id="b7902-260">Provides the option to select specific dimension hierarchies per export definition:</span></span>
 
-        - Egy költségösszetevő-dimenzióhierarchia (kötelező)
-        - Egy költségobjektum-dimenzióhierarchia (opcionális)
-        - Egy statisztikai dimenzióhierarchia (opcionális)
+        - <span data-ttu-id="b7902-261">Egy költségösszetevő-dimenzióhierarchia (kötelező)</span><span class="sxs-lookup"><span data-stu-id="b7902-261">One cost element dimension hierarchy (mandatory)</span></span>
+        - <span data-ttu-id="b7902-262">Egy költségobjektum-dimenzióhierarchia (opcionális)</span><span class="sxs-lookup"><span data-stu-id="b7902-262">One cost object dimension hierarchy (optional)</span></span>
+        - <span data-ttu-id="b7902-263">Egy statisztikai dimenzióhierarchia (opcionális)</span><span class="sxs-lookup"><span data-stu-id="b7902-263">One statistical dimension hierarchy (optional)</span></span>
 
-- Power BI:
+- <span data-ttu-id="b7902-264">Power BI:</span><span class="sxs-lookup"><span data-stu-id="b7902-264">Power BI:</span></span>
 
-    - Minden dimenzióhierarchia rendelkezésre áll.
+    - <span data-ttu-id="b7902-265">Minden dimenzióhierarchia rendelkezésre áll.</span><span class="sxs-lookup"><span data-stu-id="b7902-265">All dimension hierarchies are available.</span></span>
     
-Ha jelentéseket készít az Excel vagy a Power BI segítségével, csak a dimenzióhierarchiák első 15 szintje exportálható. Ez a korlátozás azért létezik, az Excel és a Power BI egy fix sémát igényel. Ha egy hierarchia több mint 15 szinten van, akkor a további szinteket nem exportálja a rendszer. A normalizált táblázat tartalmaz egy rekordot a hierarchiában lévő minden egyes dimenziótag számára. Ezért automatizált összesítés történik. Ez a viselkedés garantálja, hogy a hierarchiában szereplő 15 rendelkezésre álló szint bármelyik egyenlege még mindig helyes.
+<span data-ttu-id="b7902-266">Ha jelentéseket készít az Excel vagy a Power BI segítségével, csak a dimenzióhierarchiák első 15 szintje exportálható.</span><span class="sxs-lookup"><span data-stu-id="b7902-266">If you create reports by using Excel or Power BI, only the first 15 levels of the dimension hierarchies are exported.</span></span> <span data-ttu-id="b7902-267">Ez a korlátozás azért létezik, az Excel és a Power BI egy fix sémát igényel.</span><span class="sxs-lookup"><span data-stu-id="b7902-267">This limitation exists because a fixed schema is required in Excel and Power BI.</span></span> <span data-ttu-id="b7902-268">Ha egy hierarchia több mint 15 szinten van, akkor a további szinteket nem exportálja a rendszer.</span><span class="sxs-lookup"><span data-stu-id="b7902-268">If a hierarchy has more than 15 levels, the additional levels won't be exported.</span></span> <span data-ttu-id="b7902-269">A normalizált táblázat tartalmaz egy rekordot a hierarchiában lévő minden egyes dimenziótag számára.</span><span class="sxs-lookup"><span data-stu-id="b7902-269">The normalized table contains a record for each dimension member in the hierarchy.</span></span> <span data-ttu-id="b7902-270">Ezért automatizált összesítés történik.</span><span class="sxs-lookup"><span data-stu-id="b7902-270">Therefore, automated aggregation occurs.</span></span> <span data-ttu-id="b7902-271">Ez a viselkedés garantálja, hogy a hierarchiában szereplő 15 rendelkezésre álló szint bármelyik egyenlege még mindig helyes.</span><span class="sxs-lookup"><span data-stu-id="b7902-271">This behavior helps guarantee that the balances at any of the 15 available levels in the hierarchy are still correct.</span></span>
 
-A következő példában bemutatjuk, hogyan nézhet ki egy dimenzióhierarchia a jelentések szerkezetében.
+<span data-ttu-id="b7902-272">A következő példában bemutatjuk, hogyan nézhet ki egy dimenzióhierarchia a jelentések szerkezetében.</span><span class="sxs-lookup"><span data-stu-id="b7902-272">The following example shows what a dimension hierarchy might look like in the reporting structure.</span></span>
 
-| Költségobjektum-dimenzióhierarchia - 1. szint | Költségobjektum-dimenzióhierarchia - 2. szint | Költségobjektum-dimenzióhierarchia - 3. szint | Költségobjektum-dimenzióhierarchia - 4. szint | Költségobjektum-dimenzióhierarchia - 15. szint |
+| <span data-ttu-id="b7902-273">Költségobjektum-dimenzióhierarchia - 1. szint</span><span class="sxs-lookup"><span data-stu-id="b7902-273">Cost object dimension hierarchy – Level 1</span></span> | <span data-ttu-id="b7902-274">Költségobjektum-dimenzióhierarchia - 2. szint</span><span class="sxs-lookup"><span data-stu-id="b7902-274">Cost object dimension hierarchy – Level 2</span></span> | <span data-ttu-id="b7902-275">Költségobjektum-dimenzióhierarchia - 3. szint</span><span class="sxs-lookup"><span data-stu-id="b7902-275">Cost object dimension hierarchy – Level 3</span></span> | <span data-ttu-id="b7902-276">Költségobjektum-dimenzióhierarchia - 4. szint</span><span class="sxs-lookup"><span data-stu-id="b7902-276">Cost object dimension hierarchy – Level 4</span></span> | <span data-ttu-id="b7902-277">Költségobjektum-dimenzióhierarchia - 15. szint</span><span class="sxs-lookup"><span data-stu-id="b7902-277">Cost object dimension hierarchy – Level 15</span></span> |
 |-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
-| Szervezet                              | Rendszergazda                                     | Pénzügy                                   | CC002                                     |                                            |
-| Szervezet                              | Rendszergazda                                     | Pénzügy                                   | CC003                                     |                                            |
-| Szervezet                              | Rendszergazda                                     | Pénzügy                                   | CC007                                     |                                            |
-| Szervezet                              | Rendszergazda                                     | HR                                        | CC001                                     |                                            |
-| Szervezet                              | Termelés                                | Csomagolás                                 | CC005                                     |                                            |
-| Szervezet                              | Termelés                                | Szerelvény                                  | CC006                                     |                                            |
+| <span data-ttu-id="b7902-278">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-278">Organization</span></span>                              | <span data-ttu-id="b7902-279">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="b7902-279">Admin</span></span>                                     | <span data-ttu-id="b7902-280">Pénzügy</span><span class="sxs-lookup"><span data-stu-id="b7902-280">Finance</span></span>                                   | <span data-ttu-id="b7902-281">CC002</span><span class="sxs-lookup"><span data-stu-id="b7902-281">CC002</span></span>                                     |                                            |
+| <span data-ttu-id="b7902-282">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-282">Organization</span></span>                              | <span data-ttu-id="b7902-283">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="b7902-283">Admin</span></span>                                     | <span data-ttu-id="b7902-284">Pénzügy</span><span class="sxs-lookup"><span data-stu-id="b7902-284">Finance</span></span>                                   | <span data-ttu-id="b7902-285">CC003</span><span class="sxs-lookup"><span data-stu-id="b7902-285">CC003</span></span>                                     |                                            |
+| <span data-ttu-id="b7902-286">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-286">Organization</span></span>                              | <span data-ttu-id="b7902-287">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="b7902-287">Admin</span></span>                                     | <span data-ttu-id="b7902-288">Pénzügy</span><span class="sxs-lookup"><span data-stu-id="b7902-288">Finance</span></span>                                   | <span data-ttu-id="b7902-289">CC007</span><span class="sxs-lookup"><span data-stu-id="b7902-289">CC007</span></span>                                     |                                            |
+| <span data-ttu-id="b7902-290">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-290">Organization</span></span>                              | <span data-ttu-id="b7902-291">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="b7902-291">Admin</span></span>                                     | <span data-ttu-id="b7902-292">HR</span><span class="sxs-lookup"><span data-stu-id="b7902-292">HR</span></span>                                        | <span data-ttu-id="b7902-293">CC001</span><span class="sxs-lookup"><span data-stu-id="b7902-293">CC001</span></span>                                     |                                            |
+| <span data-ttu-id="b7902-294">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-294">Organization</span></span>                              | <span data-ttu-id="b7902-295">Termelés</span><span class="sxs-lookup"><span data-stu-id="b7902-295">Production</span></span>                                | <span data-ttu-id="b7902-296">Csomagolás</span><span class="sxs-lookup"><span data-stu-id="b7902-296">Packaging</span></span>                                 | <span data-ttu-id="b7902-297">CC005</span><span class="sxs-lookup"><span data-stu-id="b7902-297">CC005</span></span>                                     |                                            |
+| <span data-ttu-id="b7902-298">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-298">Organization</span></span>                              | <span data-ttu-id="b7902-299">Termelés</span><span class="sxs-lookup"><span data-stu-id="b7902-299">Production</span></span>                                | <span data-ttu-id="b7902-300">Szerelvény</span><span class="sxs-lookup"><span data-stu-id="b7902-300">Assembly</span></span>                                  | <span data-ttu-id="b7902-301">CC006</span><span class="sxs-lookup"><span data-stu-id="b7902-301">CC006</span></span>                                     |                                            |
 
-### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Frissítse a jelentéskészítéshez használt dimenzióhierarchiákat 
+### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a><span data-ttu-id="b7902-302">Frissítse a jelentéskészítéshez használt dimenzióhierarchiákat</span><span class="sxs-lookup"><span data-stu-id="b7902-302">Update the dimension hierarchies that are used for reporting</span></span> 
 
-Idővel az előzőekben említett jelentési eszközökben használt dimenzióhierarchiákat frissíteni kell. Az ügyfél frissítésével frissítheti a dimenziók hierarchiáját.
+<span data-ttu-id="b7902-303">Idővel az előzőekben említett jelentési eszközökben használt dimenzióhierarchiákat frissíteni kell.</span><span class="sxs-lookup"><span data-stu-id="b7902-303">Over time, the dimension hierarchies that are used in the previously mentioned reporting tools will have to be updated.</span></span> <span data-ttu-id="b7902-304">Az ügyfél frissítésével frissítheti a dimenziók hierarchiáját.</span><span class="sxs-lookup"><span data-stu-id="b7902-304">You can update dimension hierarchies by refreshing the client.</span></span>
 
-- **Költségkontroll** munkaterület (a kliensben)
-- **Költségkontroll** munkaterület (a mobilalkalmazásban)
+- <span data-ttu-id="b7902-305">**Költségkontroll** munkaterület (a kliensben)</span><span class="sxs-lookup"><span data-stu-id="b7902-305">**Cost control** workspace (Client)</span></span>
+- <span data-ttu-id="b7902-306">**Költségkontroll** munkaterület (a mobilalkalmazásban)</span><span class="sxs-lookup"><span data-stu-id="b7902-306">**Cost control** workspace (Mobile application)</span></span>
 
-A dimenziók hierarchiáinak frissítései 24 óránként előre gyorsítótárazott munkával kerülnek felvételre. Az exportált adatok frissítése után a frissített dimenzióhierarchiák a következő jelentéskészítő eszközöknél érhetők el:
+<span data-ttu-id="b7902-307">A dimenziók hierarchiáinak frissítései 24 óránként előre gyorsítótárazott munkával kerülnek felvételre.</span><span class="sxs-lookup"><span data-stu-id="b7902-307">Updates to dimension hierarchies are picked up every 24 hours by a pre-cached job.</span></span> <span data-ttu-id="b7902-308">Az exportált adatok frissítése után a frissített dimenzióhierarchiák a következő jelentéskészítő eszközöknél érhetők el:</span><span class="sxs-lookup"><span data-stu-id="b7902-308">After the exported data is updated, the updated dimension hierarchies are available in the following tools:</span></span>
 
-- Excel
-- Power BI
+- <span data-ttu-id="b7902-309">Excel</span><span class="sxs-lookup"><span data-stu-id="b7902-309">Excel</span></span>
+- <span data-ttu-id="b7902-310">Power BI</span><span class="sxs-lookup"><span data-stu-id="b7902-310">Power BI</span></span>
 
 > [!NOTE] 
-> A dimenzióhierarchia gyorsítótárának manuális frissítéséhez hozzon létre egy új Excel-exportot az olyan dimenzióhierarchiájához vagy -hierarchiáihoz, amelyeket frissíteni kell.
+> <span data-ttu-id="b7902-311">A dimenzióhierarchia gyorsítótárának manuális frissítéséhez hozzon létre egy új Excel-exportot az olyan dimenzióhierarchiájához vagy -hierarchiáihoz, amelyeket frissíteni kell.</span><span class="sxs-lookup"><span data-stu-id="b7902-311">To manually trigger an update of the dimension hierarchy cache, you can create a new export to Excel for the dimension hierarchy or hierarchies that must be updated.</span></span>
 
-## <a name="define-dimension-hierarchies-for-cost-policies"></a>Dimenzióhierarchiák beállítása költségirányelvekhez
+## <a name="define-dimension-hierarchies-for-cost-policies"></a><span data-ttu-id="b7902-312">Dimenzióhierarchiák beállítása költségirányelvekhez</span><span class="sxs-lookup"><span data-stu-id="b7902-312">Define dimension hierarchies for cost policies</span></span>
 
-A költségszámítás több olyan irányelvet tartalmaz, ahol részletes szabályok vannak meghatározva. A következő irányelvekhez egy vagy több dimenzióhierarchiát kell megadnia:
+<span data-ttu-id="b7902-313">A költségszámítás több olyan irányelvet tartalmaz, ahol részletes szabályok vannak meghatározva.</span><span class="sxs-lookup"><span data-stu-id="b7902-313">Cost accounting consists of multiple policies where detailed rules are defined.</span></span> <span data-ttu-id="b7902-314">A következő irányelvekhez egy vagy több dimenzióhierarchiát kell megadnia:</span><span class="sxs-lookup"><span data-stu-id="b7902-314">You must define one or more dimension hierarchies for the following policies:</span></span>
 
-- Költség működése
-- Költségfelosztás
-- Költségfelosztás
-- Költségösszesítés
+- <span data-ttu-id="b7902-315">Költség működése</span><span class="sxs-lookup"><span data-stu-id="b7902-315">Cost behavior</span></span>
+- <span data-ttu-id="b7902-316">Költségfelosztás</span><span class="sxs-lookup"><span data-stu-id="b7902-316">Cost distribution</span></span>
+- <span data-ttu-id="b7902-317">Költségfelosztás</span><span class="sxs-lookup"><span data-stu-id="b7902-317">Cost allocation</span></span>
+- <span data-ttu-id="b7902-318">Költségösszesítés</span><span class="sxs-lookup"><span data-stu-id="b7902-318">Cost rollup</span></span>
 
-A dimenzió-hierarchiák egyszerűvé teszik a szabályok létrehozását. Annak elkerülése érdekében, hogy szabályokat kelljen létrehoznia minden egyes dimenziótag számára, használhatja a dimenziótagok összesítését, amelyeket a dimenzióhierarchia szintjei nyújtanak. Ha átfedő szabályok vannak, akkor meg kell határoznia azokat a speciális szabályokat, amelyeket a rendszer figyelembe fog venni, amikor az általános költségek számítását végzi.
+<span data-ttu-id="b7902-319">A dimenzió-hierarchiák egyszerűvé teszik a szabályok létrehozását.</span><span class="sxs-lookup"><span data-stu-id="b7902-319">Dimension hierarchies make it easy to create rules.</span></span> <span data-ttu-id="b7902-320">Annak elkerülése érdekében, hogy szabályokat kelljen létrehoznia minden egyes dimenziótag számára, használhatja a dimenziótagok összesítését, amelyeket a dimenzióhierarchia szintjei nyújtanak.</span><span class="sxs-lookup"><span data-stu-id="b7902-320">To avoid having to create rules for every dimension member, you can take advantage of the aggregations of dimension members that are provided by dimension hierarchy levels.</span></span> <span data-ttu-id="b7902-321">Ha átfedő szabályok vannak, akkor meg kell határoznia azokat a speciális szabályokat, amelyeket a rendszer figyelembe fog venni, amikor az általános költségek számítását végzi.</span><span class="sxs-lookup"><span data-stu-id="b7902-321">If you have overlapping rules, you must define specific rules that the system will consider when it does the overhead calculation.</span></span>
 
-### <a name="example-define-a-cost-behavior-policy"></a>Példa: Költségműködési irányelv meghatározása
+### <a name="example-define-a-cost-behavior-policy"></a><span data-ttu-id="b7902-322">Példa: Költségműködési irányelv meghatározása</span><span class="sxs-lookup"><span data-stu-id="b7902-322">Example: Define a cost behavior policy</span></span>
 
-Új költégviselkedési irányelv jön létre, és megfelelő dimenzióhierarchiák kerülnek hozzárendelésre a házirendhez, ahogy az itt látható.
+<span data-ttu-id="b7902-323">Új költégviselkedési irányelv jön létre, és megfelelő dimenzióhierarchiák kerülnek hozzárendelésre a házirendhez, ahogy az itt látható.</span><span class="sxs-lookup"><span data-stu-id="b7902-323">A new cost behavior policy is created, and appropriate dimension hierarchies are assigned to the policy, as shown here.</span></span>
 
-**Költségműködési irányelv**
+<span data-ttu-id="b7902-324">**Költségműködési irányelv**</span><span class="sxs-lookup"><span data-stu-id="b7902-324">**Cost behavior policy**</span></span>
 
-| Irányelv neve   | Költségösszetevő dimenzióhierarchia | Költségobjektum dimenzióhierarchia | Könyvelési pénznem |
+| <span data-ttu-id="b7902-325">Irányelv neve</span><span class="sxs-lookup"><span data-stu-id="b7902-325">Policy name</span></span>   | <span data-ttu-id="b7902-326">Költségösszetevő dimenzióhierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-326">Cost element dimension hierarchy</span></span> | <span data-ttu-id="b7902-327">Költségobjektum dimenzióhierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-327">Cost object dimension hierarchy</span></span> | <span data-ttu-id="b7902-328">Könyvelési pénznem</span><span class="sxs-lookup"><span data-stu-id="b7902-328">Accounting currency</span></span> |
 |---------------|----------------------------------|---------------------------------|---------------------|
-| Költség működése | Költség működése                    | Szervezet                    | dollár                 |
+| <span data-ttu-id="b7902-329">Költség működése</span><span class="sxs-lookup"><span data-stu-id="b7902-329">Cost behavior</span></span> | <span data-ttu-id="b7902-330">Költség működése</span><span class="sxs-lookup"><span data-stu-id="b7902-330">Cost behavior</span></span>                    | <span data-ttu-id="b7902-331">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-331">Organization</span></span>                    | <span data-ttu-id="b7902-332">dollár</span><span class="sxs-lookup"><span data-stu-id="b7902-332">USD</span></span>                 |
 
-**Szabályok**
+<span data-ttu-id="b7902-333">**Szabályok**</span><span class="sxs-lookup"><span data-stu-id="b7902-333">**Rules**</span></span>
 
-| Költségösszetevő dimenzióhierarchia-csomópont | Költségobjektum dimenzióhierarchia-csomópont | Rögzített százalék | Rögzített összeg | Érvényesség kezdete | Érvényesség vége |
+| <span data-ttu-id="b7902-334">Költségösszetevő dimenzióhierarchia-csomópont</span><span class="sxs-lookup"><span data-stu-id="b7902-334">Cost element dimension hierarchy node</span></span> | <span data-ttu-id="b7902-335">Költségobjektum dimenzióhierarchia-csomópont</span><span class="sxs-lookup"><span data-stu-id="b7902-335">Cost object dimension hierarchy node</span></span> | <span data-ttu-id="b7902-336">Rögzített százalék</span><span class="sxs-lookup"><span data-stu-id="b7902-336">Fixed percentage</span></span> | <span data-ttu-id="b7902-337">Rögzített összeg</span><span class="sxs-lookup"><span data-stu-id="b7902-337">Fixed amount</span></span> | <span data-ttu-id="b7902-338">Érvényesség kezdete</span><span class="sxs-lookup"><span data-stu-id="b7902-338">Valid from</span></span> | <span data-ttu-id="b7902-339">Érvényesség vége</span><span class="sxs-lookup"><span data-stu-id="b7902-339">Valid to</span></span> |
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
-| Fix költség                            | Szervezet                         | 100,00           | 0,00         | 2017/1/1   | Soha    |
-| 10001                                 | Szervezet                         | 0,00             | 150,00       | 2017/1/1   | Soha    |
-| 10001 (\*)                             | Pénzügy                              |                  | 50,00        | 2017/1/1   | Soha    |
-| Költségviselkedés + változó költség (\*\*)   | Szervezet                         | 0,00             | 0,00         | 2017/1/1   | Soha    |
+| <span data-ttu-id="b7902-340">Fix költség</span><span class="sxs-lookup"><span data-stu-id="b7902-340">Fixed cost</span></span>                            | <span data-ttu-id="b7902-341">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-341">Organization</span></span>                         | <span data-ttu-id="b7902-342">100,00</span><span class="sxs-lookup"><span data-stu-id="b7902-342">100.00</span></span>           | <span data-ttu-id="b7902-343">0,00</span><span class="sxs-lookup"><span data-stu-id="b7902-343">0.00</span></span>         | <span data-ttu-id="b7902-344">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="b7902-344">1/1/2017</span></span>   | <span data-ttu-id="b7902-345">Soha</span><span class="sxs-lookup"><span data-stu-id="b7902-345">Never</span></span>    |
+| <span data-ttu-id="b7902-346">10001</span><span class="sxs-lookup"><span data-stu-id="b7902-346">10001</span></span>                                 | <span data-ttu-id="b7902-347">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-347">Organization</span></span>                         | <span data-ttu-id="b7902-348">0,00</span><span class="sxs-lookup"><span data-stu-id="b7902-348">0.00</span></span>             | <span data-ttu-id="b7902-349">150,00</span><span class="sxs-lookup"><span data-stu-id="b7902-349">150.00</span></span>       | <span data-ttu-id="b7902-350">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="b7902-350">1/1/2017</span></span>   | <span data-ttu-id="b7902-351">Soha</span><span class="sxs-lookup"><span data-stu-id="b7902-351">Never</span></span>    |
+| <span data-ttu-id="b7902-352">10001 (\*)</span><span class="sxs-lookup"><span data-stu-id="b7902-352">10001 (\*)</span></span>                             | <span data-ttu-id="b7902-353">Pénzügy</span><span class="sxs-lookup"><span data-stu-id="b7902-353">Finance</span></span>                              |                  | <span data-ttu-id="b7902-354">50,00</span><span class="sxs-lookup"><span data-stu-id="b7902-354">50.00</span></span>        | <span data-ttu-id="b7902-355">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="b7902-355">1/1/2017</span></span>   | <span data-ttu-id="b7902-356">Soha</span><span class="sxs-lookup"><span data-stu-id="b7902-356">Never</span></span>    |
+| <span data-ttu-id="b7902-357">Költségviselkedés + változó költség (\*\*)</span><span class="sxs-lookup"><span data-stu-id="b7902-357">Cost behavior or Variable cost (\*\*)</span></span>   | <span data-ttu-id="b7902-358">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-358">Organization</span></span>                         | <span data-ttu-id="b7902-359">0,00</span><span class="sxs-lookup"><span data-stu-id="b7902-359">0.00</span></span>             | <span data-ttu-id="b7902-360">0,00</span><span class="sxs-lookup"><span data-stu-id="b7902-360">0.00</span></span>         | <span data-ttu-id="b7902-361">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="b7902-361">1/1/2017</span></span>   | <span data-ttu-id="b7902-362">Soha</span><span class="sxs-lookup"><span data-stu-id="b7902-362">Never</span></span>    |
 
-\*A változó költségcsomópont nem kötelező. Ha egy költség nem minősül állandó költségnek, akkor annak változó költségnek kell lennie.
+<span data-ttu-id="b7902-363">\*A változó költségcsomópont nem kötelező.</span><span class="sxs-lookup"><span data-stu-id="b7902-363">\* The variable cost node isn't required.</span></span> <span data-ttu-id="b7902-364">Ha egy költség nem minősül állandó költségnek, akkor annak változó költségnek kell lennie.</span><span class="sxs-lookup"><span data-stu-id="b7902-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
 
-\*\* A 10001 költségelem-tag és az összes költségobjektum-tag kombinációjának részletes szabálya a Pénzügy hierarchiája szintjén található (CC002, CC003, CC007).
+<span data-ttu-id="b7902-365">\*\* A 10001 költségelem-tag és az összes költségobjektum-tag kombinációjának részletes szabálya a Pénzügy hierarchiája szintjén található (CC002, CC003, CC007).</span><span class="sxs-lookup"><span data-stu-id="b7902-365">\*\* A detailed rule is created for the combination of cost element member 10001 and all cost object members that are aggregated under the Finance hierarchy level (CC002, CC003, CC007).</span></span>
 
-Az előző szabályok azt a rugalmasságot mutatják, amelyet a dimenzióhierarchiák biztosítanak. A magas szintű szabályok meghatározásával csökkentheti a karbantartást. Ezután részletes szabályokat határozhat meg, amelyek egy adott üzleti célhoz illeszkednek.
+<span data-ttu-id="b7902-366">Az előző szabályok azt a rugalmasságot mutatják, amelyet a dimenzióhierarchiák biztosítanak.</span><span class="sxs-lookup"><span data-stu-id="b7902-366">The preceding rules show the flexibility that dimension hierarchies provide.</span></span> <span data-ttu-id="b7902-367">A magas szintű szabályok meghatározásával csökkentheti a karbantartást.</span><span class="sxs-lookup"><span data-stu-id="b7902-367">By defining high-level rules, you can help minimize maintenance.</span></span> <span data-ttu-id="b7902-368">Ezután részletes szabályokat határozhat meg, amelyek egy adott üzleti célhoz illeszkednek.</span><span class="sxs-lookup"><span data-stu-id="b7902-368">You can then define detailed rules to fit into a specific business objective.</span></span>
 
-Ha a szabályokban használt dimenzióhierarchiák frissülnek, akkor a rendszer automatikusan továbbítja a frissítéseket.
+<span data-ttu-id="b7902-369">Ha a szabályokban használt dimenzióhierarchiák frissülnek, akkor a rendszer automatikusan továbbítja a frissítéseket.</span><span class="sxs-lookup"><span data-stu-id="b7902-369">If the dimension hierarchies that are used in rules are updated, the system automatically brings the updates forward.</span></span>
 
-Ha a szabályok részletességi szintje már nem szükséges, akkor a szabály lejártnak nyilvánítható.
+<span data-ttu-id="b7902-370">Ha a szabályok részletességi szintje már nem szükséges, akkor a szabály lejártnak nyilvánítható.</span><span class="sxs-lookup"><span data-stu-id="b7902-370">If a level of granularity in the rules is no longer required, the rule can be expired.</span></span>
 
-Például a Pénzügy költségobjektum-dimenzióhierarchia csomópontra vonatkozó speciális költségviselkedési szabály már nem szükséges. Ebben az esetben kattintson a **Szabály lejáratának beállítása** lehetőségre a szabály lejáratának beállításához.
+<span data-ttu-id="b7902-371">Például a Pénzügy költségobjektum-dimenzióhierarchia csomópontra vonatkozó speciális költségviselkedési szabály már nem szükséges.</span><span class="sxs-lookup"><span data-stu-id="b7902-371">For example, a specific cost behavior rule for the Finance cost object dimension hierarchy node is no longer required.</span></span> <span data-ttu-id="b7902-372">Ebben az esetben kattintson a **Szabály lejáratának beállítása** lehetőségre a szabály lejáratának beállításához.</span><span class="sxs-lookup"><span data-stu-id="b7902-372">In this case, click **Expire rule** to expire the rule.</span></span>
 
-| Költségösszetevő dimenzióhierarchia-csomópont | Költségobjektum dimenzióhierarchia-csomópont | Rögzített százalék | Rögzített összeg | Érvényesség kezdete | Érvényesség vége  |
+| <span data-ttu-id="b7902-373">Költségösszetevő dimenzióhierarchia-csomópont</span><span class="sxs-lookup"><span data-stu-id="b7902-373">Cost element dimension hierarchy node</span></span> | <span data-ttu-id="b7902-374">Költségobjektum dimenzióhierarchia-csomópont</span><span class="sxs-lookup"><span data-stu-id="b7902-374">Cost object dimension hierarchy node</span></span> | <span data-ttu-id="b7902-375">Rögzített százalék</span><span class="sxs-lookup"><span data-stu-id="b7902-375">Fixed percentage</span></span> | <span data-ttu-id="b7902-376">Rögzített összeg</span><span class="sxs-lookup"><span data-stu-id="b7902-376">Fixed amount</span></span> | <span data-ttu-id="b7902-377">Érvényesség kezdete</span><span class="sxs-lookup"><span data-stu-id="b7902-377">Valid from</span></span> | <span data-ttu-id="b7902-378">Érvényesség vége</span><span class="sxs-lookup"><span data-stu-id="b7902-378">Valid to</span></span>  |
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|-----------|
-| Fix költség                            | Szervezet                         | 100,00           | 0,00         | 2017/1/1   | Soha     |
-| 10001                                 | Szervezet                         | 0,00             | 150,00       | 2017/1/1   | Soha     |
-| 10001                                 | Pénzügy                              |                  | 50,00        | 2017/1/1   | 2017/1/20 |
-| Költségviselkedés + változó költség        | Szervezet                         | 0,00             | 0,00         | 2017/1/1   | Soha     |
+| <span data-ttu-id="b7902-379">Fix költség</span><span class="sxs-lookup"><span data-stu-id="b7902-379">Fixed cost</span></span>                            | <span data-ttu-id="b7902-380">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-380">Organization</span></span>                         | <span data-ttu-id="b7902-381">100,00</span><span class="sxs-lookup"><span data-stu-id="b7902-381">100,00</span></span>           | <span data-ttu-id="b7902-382">0,00</span><span class="sxs-lookup"><span data-stu-id="b7902-382">0,00</span></span>         | <span data-ttu-id="b7902-383">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="b7902-383">1/1/2017</span></span>   | <span data-ttu-id="b7902-384">Soha</span><span class="sxs-lookup"><span data-stu-id="b7902-384">Never</span></span>     |
+| <span data-ttu-id="b7902-385">10001</span><span class="sxs-lookup"><span data-stu-id="b7902-385">10001</span></span>                                 | <span data-ttu-id="b7902-386">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-386">Organization</span></span>                         | <span data-ttu-id="b7902-387">0,00</span><span class="sxs-lookup"><span data-stu-id="b7902-387">0,00</span></span>             | <span data-ttu-id="b7902-388">150,00</span><span class="sxs-lookup"><span data-stu-id="b7902-388">150,00</span></span>       | <span data-ttu-id="b7902-389">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="b7902-389">1/1/2017</span></span>   | <span data-ttu-id="b7902-390">Soha</span><span class="sxs-lookup"><span data-stu-id="b7902-390">Never</span></span>     |
+| <span data-ttu-id="b7902-391">10001</span><span class="sxs-lookup"><span data-stu-id="b7902-391">10001</span></span>                                 | <span data-ttu-id="b7902-392">Pénzügy</span><span class="sxs-lookup"><span data-stu-id="b7902-392">Finance</span></span>                              |                  | <span data-ttu-id="b7902-393">50,00</span><span class="sxs-lookup"><span data-stu-id="b7902-393">50,00</span></span>        | <span data-ttu-id="b7902-394">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="b7902-394">1/1/2017</span></span>   | <span data-ttu-id="b7902-395">2017/1/20</span><span class="sxs-lookup"><span data-stu-id="b7902-395">20/1/2017</span></span> |
+| <span data-ttu-id="b7902-396">Költségviselkedés + változó költség</span><span class="sxs-lookup"><span data-stu-id="b7902-396">Cost behavior or Variable cost</span></span>        | <span data-ttu-id="b7902-397">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-397">Organization</span></span>                         | <span data-ttu-id="b7902-398">0,00</span><span class="sxs-lookup"><span data-stu-id="b7902-398">0,00</span></span>             | <span data-ttu-id="b7902-399">0,00</span><span class="sxs-lookup"><span data-stu-id="b7902-399">0,00</span></span>         | <span data-ttu-id="b7902-400">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="b7902-400">1/1/2017</span></span>   | <span data-ttu-id="b7902-401">Soha</span><span class="sxs-lookup"><span data-stu-id="b7902-401">Never</span></span>     |
 
-A 2017. január 20-a után kezdődő általános költségekre vonatkozó számítás már nem veszi figyelembe ezt a szabályt.
+<span data-ttu-id="b7902-402">A 2017. január 20-a után kezdődő általános költségekre vonatkozó számítás már nem veszi figyelembe ezt a szabályt.</span><span class="sxs-lookup"><span data-stu-id="b7902-402">Any overhead calculation that is run after January 20, 2017, no longer considers this rule.</span></span>
 
 > [!NOTE] 
-> Az **Érvényesség kezdete** és **Érvényesség vége** mezők dátum- és időfüggők. Lejártnak nyilváníthatja a szabályt, és futtathat egy új költségfelmérést ugyanazon a napon.
+> <span data-ttu-id="b7902-403">Az **Érvényesség kezdete** és **Érvényesség vége** mezők dátum- és időfüggők.</span><span class="sxs-lookup"><span data-stu-id="b7902-403">The **Valid from** and **Valid to** fields are date-effective and time-effective.</span></span> <span data-ttu-id="b7902-404">Lejártnak nyilváníthatja a szabályt, és futtathat egy új költségfelmérést ugyanazon a napon.</span><span class="sxs-lookup"><span data-stu-id="b7902-404">You can expire the rule and run a new overhead calculation on the same day.</span></span>
 
-## <a name="define-dimension-hierarchies-for-security-setup"></a>Dimenzióhierarchiák megadása a biztonsági beállításhoz
+## <a name="define-dimension-hierarchies-for-security-setup"></a><span data-ttu-id="b7902-405">Dimenzióhierarchiák megadása a biztonsági beállításhoz</span><span class="sxs-lookup"><span data-stu-id="b7902-405">Define dimension hierarchies for security setup</span></span>
 
-A költségelszámolási adatokat minden olyan vezetőnek elérhetővé kell tennie, aki felelős a jelentéstevő egységért. A költségszámítási terminológiában a jelentéskészítő egység költségobjektumként vagy költségobjektumok készleteként jelenik meg.
+<span data-ttu-id="b7902-406">A költségelszámolási adatokat minden olyan vezetőnek elérhetővé kell tennie, aki felelős a jelentéstevő egységért.</span><span class="sxs-lookup"><span data-stu-id="b7902-406">Cost accounting data should be made available to all managers who are responsible for a reporting unit.</span></span> <span data-ttu-id="b7902-407">A költségszámítási terminológiában a jelentéskészítő egység költségobjektumként vagy költségobjektumok készleteként jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="b7902-407">In Cost accounting terminology, a reporting unit is represented as a cost object or a set of cost objects.</span></span>
 
-Lehetséges, hogy minden vezető képes lesz elérni a rendkívül érzékeny üzleti adatokat, például bevételeket és árréseket. Ezért fontos beállítani a biztonságot, hogy a vezetők csak azokat az adatokat lássák, amelyek rájuk vonatkoznak. Az adatbiztonság ellenőrzéséhez határozza meg a dimenziók hierarchiáját.
+<span data-ttu-id="b7902-408">Lehetséges, hogy minden vezető képes lesz elérni a rendkívül érzékeny üzleti adatokat, például bevételeket és árréseket.</span><span class="sxs-lookup"><span data-stu-id="b7902-408">Potentially, all managers will be able to access highly sensitive business data, such revenues and margins.</span></span> <span data-ttu-id="b7902-409">Ezért fontos beállítani a biztonságot, hogy a vezetők csak azokat az adatokat lássák, amelyek rájuk vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="b7902-409">Therefore, it's important that you set up security, so that managers see only the data that is relevant to them.</span></span> <span data-ttu-id="b7902-410">Az adatbiztonság ellenőrzéséhez határozza meg a dimenziók hierarchiáját.</span><span class="sxs-lookup"><span data-stu-id="b7902-410">To help control data security, you define dimension hierarchies.</span></span>
 
-- A dimenziók hierarchiái csak akkor alkalmazhatók, ha a dimenzióhierarchia referenciáján kiválasztott dimenzióérték költségobjektum-dimenzió.
-- A hozzáférésilista-hierarchiában csak egy dimenziós hierarchia engedélyezhető költségobjektum-dimenzió szerint.
+- <span data-ttu-id="b7902-411">A dimenziók hierarchiái csak akkor alkalmazhatók, ha a dimenzióhierarchia referenciáján kiválasztott dimenzióérték költségobjektum-dimenzió.</span><span class="sxs-lookup"><span data-stu-id="b7902-411">The use of dimension hierarchies applies only when the dimension value that is selected in the dimension hierarchy reference is a cost object dimension.</span></span>
+- <span data-ttu-id="b7902-412">A hozzáférésilista-hierarchiában csak egy dimenziós hierarchia engedélyezhető költségobjektum-dimenzió szerint.</span><span class="sxs-lookup"><span data-stu-id="b7902-412">Only one dimension hierarchy can be enabled per cost object dimension in the access list hierarchy.</span></span>
 
-**Dimenzióhierarchia részletei**
+<span data-ttu-id="b7902-413">**Dimenzióhierarchia részletei**</span><span class="sxs-lookup"><span data-stu-id="b7902-413">**Dimension hierarchy details**</span></span>
 
-| Dimenzióhierarchia neve | Dimenzió    | Dimenzióhierarchia típus neve      | Hozzáférési lista hierarchia |
+| <span data-ttu-id="b7902-414">Dimenzióhierarchia neve</span><span class="sxs-lookup"><span data-stu-id="b7902-414">Dimension hierarchy name</span></span> | <span data-ttu-id="b7902-415">Dimenzió</span><span class="sxs-lookup"><span data-stu-id="b7902-415">Dimension</span></span>    | <span data-ttu-id="b7902-416">Dimenzióhierarchia típus neve</span><span class="sxs-lookup"><span data-stu-id="b7902-416">Dimension hierarchy type name</span></span>      | <span data-ttu-id="b7902-417">Hozzáférési lista hierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-417">Access list hierarchy</span></span> |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Szervezet             | Költséghelyek | Dimenzió-osztályozáshierarchia | **Igen**               |
+| <span data-ttu-id="b7902-418">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-418">Organization</span></span>             | <span data-ttu-id="b7902-419">Költséghelyek</span><span class="sxs-lookup"><span data-stu-id="b7902-419">Cost centers</span></span> | <span data-ttu-id="b7902-420">Dimenzió-osztályozáshierarchia</span><span class="sxs-lookup"><span data-stu-id="b7902-420">Dimension classification hierarchy</span></span> | <span data-ttu-id="b7902-421">**Igen**</span><span class="sxs-lookup"><span data-stu-id="b7902-421">**Yes**</span></span>               |
 
-Egy új **Felhasználók** gyorslap áll rendelkezésre a hierarchiatervezőben. Itt beilleszthet egy vagy több felhasználói azonosítót a hierarchiában lévő minden egyes csomóponthoz.
+<span data-ttu-id="b7902-422">Egy új **Felhasználók** gyorslap áll rendelkezésre a hierarchiatervezőben.</span><span class="sxs-lookup"><span data-stu-id="b7902-422">A new **Users** FastTab is available in the hierarchy designer.</span></span> <span data-ttu-id="b7902-423">Itt beilleszthet egy vagy több felhasználói azonosítót a hierarchiában lévő minden egyes csomóponthoz.</span><span class="sxs-lookup"><span data-stu-id="b7902-423">Here, you can insert one or more user IDs at each node in the hierarchy.</span></span>
 
-|                 | Felhasználók            | Dimenziótag tartományok   |                         |
+|                 | <span data-ttu-id="b7902-424">Felhasználók</span><span class="sxs-lookup"><span data-stu-id="b7902-424">Users</span></span>            | <span data-ttu-id="b7902-425">Dimenziótag tartományok</span><span class="sxs-lookup"><span data-stu-id="b7902-425">Dimension member ranges</span></span>   |                         |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Csomópontok**       | **Felhasználói azonosító**      | **Forrásdimenzió-tag** | **Céldimenziótag** |
-| Szervezet    | Benjamin, Claire |                           |                         |
-| &nbsp;&nbsp;Rendszergazda         | Április            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Pénzügy   | Alicia           | CC002                     | CC003                   |
-|                 |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;HR        | Anna            | CC001                     | CC001                   |
-| &nbsp;&nbsp;Termelés    | Dávid            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Csomagolás | Verebélyi            | CC005                     | CC005                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Szerelvény  | Chris            | CC006                     | CC006                   |
+| <span data-ttu-id="b7902-426">**Csomópontok**</span><span class="sxs-lookup"><span data-stu-id="b7902-426">**Nodes**</span></span>       | <span data-ttu-id="b7902-427">**Felhasználói azonosító**</span><span class="sxs-lookup"><span data-stu-id="b7902-427">**User ID**</span></span>      | <span data-ttu-id="b7902-428">**Forrásdimenzió-tag**</span><span class="sxs-lookup"><span data-stu-id="b7902-428">**From dimension member**</span></span> | <span data-ttu-id="b7902-429">**Céldimenziótag**</span><span class="sxs-lookup"><span data-stu-id="b7902-429">**To dimension member**</span></span> |
+| <span data-ttu-id="b7902-430">Szervezet</span><span class="sxs-lookup"><span data-stu-id="b7902-430">Organization</span></span>    | <span data-ttu-id="b7902-431">Benjamin, Claire</span><span class="sxs-lookup"><span data-stu-id="b7902-431">Benjamin, Claire</span></span> |                           |                         |
+| <span data-ttu-id="b7902-432">&nbsp;&nbsp;Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="b7902-432">&nbsp;&nbsp;Admin</span></span>         | <span data-ttu-id="b7902-433">Április</span><span class="sxs-lookup"><span data-stu-id="b7902-433">April</span></span>            |                           |                         |
+| <span data-ttu-id="b7902-434">&nbsp;&nbsp;&nbsp;&nbsp;Pénzügy</span><span class="sxs-lookup"><span data-stu-id="b7902-434">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span></span>   | <span data-ttu-id="b7902-435">Alicia</span><span class="sxs-lookup"><span data-stu-id="b7902-435">Alicia</span></span>           | <span data-ttu-id="b7902-436">CC002</span><span class="sxs-lookup"><span data-stu-id="b7902-436">CC002</span></span>                     | <span data-ttu-id="b7902-437">CC003</span><span class="sxs-lookup"><span data-stu-id="b7902-437">CC003</span></span>                   |
+|                 |                  | <span data-ttu-id="b7902-438">CC007</span><span class="sxs-lookup"><span data-stu-id="b7902-438">CC007</span></span>                     | <span data-ttu-id="b7902-439">CC007</span><span class="sxs-lookup"><span data-stu-id="b7902-439">CC007</span></span>                   |
+| <span data-ttu-id="b7902-440">&nbsp;&nbsp;&nbsp;&nbsp;HR</span><span class="sxs-lookup"><span data-stu-id="b7902-440">&nbsp;&nbsp;&nbsp;&nbsp;HR</span></span>        | <span data-ttu-id="b7902-441">Anna</span><span class="sxs-lookup"><span data-stu-id="b7902-441">Arnie</span></span>            | <span data-ttu-id="b7902-442">CC001</span><span class="sxs-lookup"><span data-stu-id="b7902-442">CC001</span></span>                     | <span data-ttu-id="b7902-443">CC001</span><span class="sxs-lookup"><span data-stu-id="b7902-443">CC001</span></span>                   |
+| <span data-ttu-id="b7902-444">&nbsp;&nbsp;Termelés</span><span class="sxs-lookup"><span data-stu-id="b7902-444">&nbsp;&nbsp;Production</span></span>    | <span data-ttu-id="b7902-445">Dávid</span><span class="sxs-lookup"><span data-stu-id="b7902-445">David</span></span>            |                           |                         |
+| <span data-ttu-id="b7902-446">&nbsp;&nbsp;&nbsp;&nbsp;Csomagolás</span><span class="sxs-lookup"><span data-stu-id="b7902-446">&nbsp;&nbsp;&nbsp;&nbsp;Packaging</span></span> | <span data-ttu-id="b7902-447">Verebélyi</span><span class="sxs-lookup"><span data-stu-id="b7902-447">Ellen</span></span>            | <span data-ttu-id="b7902-448">CC005</span><span class="sxs-lookup"><span data-stu-id="b7902-448">CC005</span></span>                     | <span data-ttu-id="b7902-449">CC005</span><span class="sxs-lookup"><span data-stu-id="b7902-449">CC005</span></span>                   |
+| <span data-ttu-id="b7902-450">&nbsp;&nbsp;&nbsp;&nbsp;Szerelvény</span><span class="sxs-lookup"><span data-stu-id="b7902-450">&nbsp;&nbsp;&nbsp;&nbsp;Assembly</span></span>  | <span data-ttu-id="b7902-451">Chris</span><span class="sxs-lookup"><span data-stu-id="b7902-451">Chris</span></span>            | <span data-ttu-id="b7902-452">CC006</span><span class="sxs-lookup"><span data-stu-id="b7902-452">CC006</span></span>                     | <span data-ttu-id="b7902-453">CC006</span><span class="sxs-lookup"><span data-stu-id="b7902-453">CC006</span></span>                   |
 
 > [!NOTE] 
-> A költségkönyvelőket a hierarchia felső szintjéhez kell rendelni, hogy láthassák az összes költségkönyvelési tételt.
+> <span data-ttu-id="b7902-454">A költségkönyvelőket a hierarchia felső szintjéhez kell rendelni, hogy láthassák az összes költségkönyvelési tételt.</span><span class="sxs-lookup"><span data-stu-id="b7902-454">Cost accountants should be assigned to the top level of the hierarchy, so that they can see all entries in Cost accounting.</span></span>
 
-A hozzáférési lista hierarchiájának és biztonsági beállításainak engedélyezéséhez lépjen ide: **Költségkönyvelés** > **Beállítás** > **Paraméterek** > **Általános**. Válassza ki a **Költségobjektumdimenzió-tagok megtekintési hozzáférésének engedélyezése** paramétert.
+<span data-ttu-id="b7902-455">A hozzáférési lista hierarchiájának és biztonsági beállításainak engedélyezéséhez lépjen ide: **Költségkönyvelés** > **Beállítás** > **Paraméterek** > **Általános**.</span><span class="sxs-lookup"><span data-stu-id="b7902-455">To enable the access list hierarchy and its security settings, go to **Cost accounting** > **Setup** > **Parameters** > **General**.</span></span> <span data-ttu-id="b7902-456">Válassza ki a **Költségobjektumdimenzió-tagok megtekintési hozzáférésének engedélyezése** paramétert.</span><span class="sxs-lookup"><span data-stu-id="b7902-456">Select the **Enable view access for cost object dimension members** parameter.</span></span>
 
-A Hozzáférési lista hierarchiájának beállításait használja a rendszer azoknak az adatoknak az irányítására, amelyek a következő területeken jelennek meg:
+<span data-ttu-id="b7902-457">A Hozzáférési lista hierarchiájának beállításait használja a rendszer azoknak az adatoknak az irányítására, amelyek a következő területeken jelennek meg:</span><span class="sxs-lookup"><span data-stu-id="b7902-457">The settings for the access list hierarchy are used to control the data that is shown in the following areas:</span></span>
 
-- **Költségkontroll** munkaterület (a kliensben):
+- <span data-ttu-id="b7902-458">**Költségkontroll** munkaterület (a kliensben):</span><span class="sxs-lookup"><span data-stu-id="b7902-458">**Cost control** workspace (Client):</span></span>
 
-    - Adatok azokról az űrlapokról, amelyeket a forgatókönyvek részletezésénél használ a rendszer
+    - <span data-ttu-id="b7902-459">Adatok azokról az űrlapokról, amelyeket a forgatókönyvek részletezésénél használ a rendszer</span><span class="sxs-lookup"><span data-stu-id="b7902-459">Data in forms that are used to drill through scenarios</span></span>
 
-- **Költségkontroll** munkaterület (a mobilalkalmazásban):
+- <span data-ttu-id="b7902-460">**Költségkontroll** munkaterület (a mobilalkalmazásban):</span><span class="sxs-lookup"><span data-stu-id="b7902-460">**Cost control** workspace (Mobile application):</span></span>
 
-    - Egyenlegek a kártyákon
+    - <span data-ttu-id="b7902-461">Egyenlegek a kártyákon</span><span class="sxs-lookup"><span data-stu-id="b7902-461">Balances in cards</span></span>
 
-- Power BI:
+- <span data-ttu-id="b7902-462">Power BI:</span><span class="sxs-lookup"><span data-stu-id="b7902-462">Power BI:</span></span>
 
-    - Adatok, amelyek megjelennek a Power BI ábrázolásaiban
-    - Az adatok azon Power BI megjelenítései, amelyek be vannak építve a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kliensébe.
+    - <span data-ttu-id="b7902-463">Adatok, amelyek megjelennek a Power BI ábrázolásaiban</span><span class="sxs-lookup"><span data-stu-id="b7902-463">Data that is shown in Power BI visualizations</span></span>
+    - <span data-ttu-id="b7902-464">Az adatok azon Power BI megjelenítései, amelyek be vannak építve a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kliensébe.</span><span class="sxs-lookup"><span data-stu-id="b7902-464">Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition client</span></span>
 
 > [!NOTE] 
-> - Ahhoz, hogy a hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a Hozzáférési lista hierarchiát és a sorszintű biztonságot a Power BI-ben. További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
-> - A hozzáférési lista hierarchiája nem segít az adatok biztonságos Excel-exportjában. Ezért a jelentési eszközt csak olyan költségkönyvelők és vezetők használhatják, akiknek teljes hozzáférésük van az adatok megtekintéséhez.
+> - <span data-ttu-id="b7902-465">Ahhoz, hogy a hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a Hozzáférési lista hierarchiát és a sorszintű biztonságot a Power BI-ben.</span><span class="sxs-lookup"><span data-stu-id="b7902-465">Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired.</span></span> <span data-ttu-id="b7902-466">További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)</span><span class="sxs-lookup"><span data-stu-id="b7902-466">For more information, see [Set up security for Cost accounting content pack](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).</span></span>
+> - <span data-ttu-id="b7902-467">A hozzáférési lista hierarchiája nem segít az adatok biztonságos Excel-exportjában.</span><span class="sxs-lookup"><span data-stu-id="b7902-467">The access list hierarchy doesn't help secure the export of data to Excel.</span></span> <span data-ttu-id="b7902-468">Ezért a jelentési eszközt csak olyan költségkönyvelők és vezetők használhatják, akiknek teljes hozzáférésük van az adatok megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="b7902-468">Therefore, that reporting tool should be used only by cost accountants and managers who must have full access to view the data.</span></span>
 

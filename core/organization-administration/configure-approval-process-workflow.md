@@ -15,74 +15,74 @@ ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c2765cf4ed8e0f5e00491bfe74835102bddff611
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: eedadfcbfac9d792a5ab80c1dcd8f3abfaddca08
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Jóváhagyási folyamat konfigurálása munkafolyamatban
+# <a name="configure-an-approval-process-in-a-workflow"></a><span data-ttu-id="31e8a-103">Jóváhagyási folyamat konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="31e8a-103">Configure an approval process in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait.
+<span data-ttu-id="31e8a-104">A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait.</span><span class="sxs-lookup"><span data-stu-id="31e8a-104">Use the following procedure to configure the properties of the approval process.</span></span>
 
-A munkafolyamat-szerkesztő jóváhagyási folyamatának beállításához kattintson a jobb gombbal a jóváhagyási elemre, és kattintson **Tulajdonságok** lapon a **Tulajdonságok** űrlap megnyitásához.
-A jóváhagyási munkafolyamat elnevezése
+<span data-ttu-id="31e8a-105">A munkafolyamat-szerkesztő jóváhagyási folyamatának beállításához kattintson a jobb gombbal a jóváhagyási elemre, és kattintson **Tulajdonságok** lapon a **Tulajdonságok** űrlap megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="31e8a-105">To configure an approval process, in the workflow editor, right-click the approval element, and then click **Properties** to open the **Properties** form.</span></span>
+<span data-ttu-id="31e8a-106">A jóváhagyási munkafolyamat elnevezése</span><span class="sxs-lookup"><span data-stu-id="31e8a-106">Name the approval process</span></span>
 -------------------------
 
-Kövesse ezeket a lépéseket annak érdekében, hogy nevet adjon a jóváhagyási munkafolyamatnak.
-1.  A bal oldali panelen kattintson az **Alapbeállítások** gombra.
-2.  Írja be a jóváhagyási munkafolyamat egyedi nevét a **Név** mezőbe.
+<span data-ttu-id="31e8a-107">Kövesse ezeket a lépéseket annak érdekében, hogy nevet adjon a jóváhagyási munkafolyamatnak.</span><span class="sxs-lookup"><span data-stu-id="31e8a-107">Follow these steps to enter a name for the approval process.</span></span>
+1.  <span data-ttu-id="31e8a-108">A bal oldali panelen kattintson az **Alapbeállítások** gombra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-108">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="31e8a-109">Írja be a jóváhagyási munkafolyamat egyedi nevét a **Név** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="31e8a-109">In the **Name** field, enter a unique name for the approval process.</span></span>
 
-## <a name="specify-when-the-system-automatically-acts-on-the-document"></a>Adja meg, hogy mikor intézkedjen a rendszer automatikusan a dokumentum tekintetében
-Beállíthatja, hogy a rendszer automatikusan intézkedjen arról a dokumentumról, amely megfelel a megadott feltételeknek. A rendszer például 100 USD értéknél kisebb végösszeggel rendelkező költségjelentések jóváhagyására jogosult. Végezze el az alábbi lépéseket a dokumentum tekintetében történő intézkedés idejének meghatározásához.
-1.  A bal oldali panelen kattintson az **Automatikus műveletek** gombra.
-2.  Jelölje ki az **Automatikus műveletek engedélyezése** jelölőnégyzetet.
-3.  Kattintson a **Feltétel hozzáadása** parancsra.
-4.  Feltétel megadása.
-5.  Ha szükséges, adjon meg további feltételeket.
-6.  Ha ellenőrizni szeretné, hogy a megadott feltételek helyesen vannak-e konfigurálva, végezze el a következő lépéseket:
-    1.  Kattintson a **Teszt** elemre a **Munkafolyamati feltétel tesztelése** űrlap megnyitásához.
-    2.  Válasszon ki egy bejegyzést a képernyő **Feltétel érvényesítése** területén.
-    3.  Kattintson a **Teszt** gombra. A rendszer értékeli a bejegyzést, annak érdekében, hogy meghatározza, hogy a meghatározott feltételeknek megfeleljen-e.
-    4.  Kattintson az **OK** vagy a **Mégse** lehetőségre a **Tulajdonságok** űrlapra történő visszalépéshez.
+## <a name="specify-when-the-system-automatically-acts-on-the-document"></a><span data-ttu-id="31e8a-110">Adja meg, hogy mikor intézkedjen a rendszer automatikusan a dokumentum tekintetében</span><span class="sxs-lookup"><span data-stu-id="31e8a-110">Specify when the system automatically acts on the document</span></span>
+<span data-ttu-id="31e8a-111">Beállíthatja, hogy a rendszer automatikusan intézkedjen arról a dokumentumról, amely megfelel a megadott feltételeknek.</span><span class="sxs-lookup"><span data-stu-id="31e8a-111">You can configure the system to automatically act on the document if specific conditions are met.</span></span> <span data-ttu-id="31e8a-112">A rendszer például 100 USD értéknél kisebb végösszeggel rendelkező költségjelentések jóváhagyására jogosult.</span><span class="sxs-lookup"><span data-stu-id="31e8a-112">For example, the system can approve expense reports that have total amounts that are less than USD 100.</span></span> <span data-ttu-id="31e8a-113">Végezze el az alábbi lépéseket a dokumentum tekintetében történő intézkedés idejének meghatározásához.</span><span class="sxs-lookup"><span data-stu-id="31e8a-113">Follow these steps to specify when the system acts on the document.</span></span>
+1.  <span data-ttu-id="31e8a-114">A bal oldali panelen kattintson az **Automatikus műveletek** gombra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-114">In the left pane, click **Automatic actions**.</span></span>
+2.  <span data-ttu-id="31e8a-115">Jelölje ki az **Automatikus műveletek engedélyezése** jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="31e8a-115">Select the **Enable automatic actions** check box.</span></span>
+3.  <span data-ttu-id="31e8a-116">Kattintson a **Feltétel hozzáadása** parancsra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-116">Click **Add condition**.</span></span>
+4.  <span data-ttu-id="31e8a-117">Feltétel megadása.</span><span class="sxs-lookup"><span data-stu-id="31e8a-117">Enter a condition.</span></span>
+5.  <span data-ttu-id="31e8a-118">Ha szükséges, adjon meg további feltételeket.</span><span class="sxs-lookup"><span data-stu-id="31e8a-118">Enter additional conditions, if necessary.</span></span>
+6.  <span data-ttu-id="31e8a-119">Ha ellenőrizni szeretné, hogy a megadott feltételek helyesen vannak-e konfigurálva, végezze el a következő lépéseket:</span><span class="sxs-lookup"><span data-stu-id="31e8a-119">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
+    1.  <span data-ttu-id="31e8a-120">Kattintson a **Teszt** elemre a **Munkafolyamati feltétel tesztelése** űrlap megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="31e8a-120">Click **Test** to open the **Test workflow condition** form.</span></span>
+    2.  <span data-ttu-id="31e8a-121">Válasszon ki egy bejegyzést a képernyő **Feltétel érvényesítése** területén.</span><span class="sxs-lookup"><span data-stu-id="31e8a-121">Select a record in the **Validate condition** area of the form.</span></span>
+    3.  <span data-ttu-id="31e8a-122">Kattintson a **Teszt** gombra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-122">Click **Test**.</span></span> <span data-ttu-id="31e8a-123">A rendszer értékeli a bejegyzést, annak érdekében, hogy meghatározza, hogy a meghatározott feltételeknek megfeleljen-e.</span><span class="sxs-lookup"><span data-stu-id="31e8a-123">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
+    4.  <span data-ttu-id="31e8a-124">Kattintson az **OK** vagy a **Mégse** lehetőségre a **Tulajdonságok** űrlapra történő visszalépéshez.</span><span class="sxs-lookup"><span data-stu-id="31e8a-124">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
 
-7.  Válassza ki az **Automatikus befejezési művelet** listából, hogy milyen intézkedéseket kell a rendszernek végrehajtania a dokumentum tekintetében.
+7.  <span data-ttu-id="31e8a-125">Válassza ki az **Automatikus befejezési művelet** listából, hogy milyen intézkedéseket kell a rendszernek végrehajtania a dokumentum tekintetében.</span><span class="sxs-lookup"><span data-stu-id="31e8a-125">In the **Auto complete action** list, select the action that the system should take on the document.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a>Az értesítések küldési idejének meghatározása
-Értesítéseket küldhet a felhasználóknak a dokumentum jóváhagyása, elutasítása, delegálása vagy eszkalálása, illetve változás kérése esetén. Végezze el a következő lépéseket, annak meghatározása érdekében, hogy mikor és kinek küldje el a rendszer az értesítéseket.
-1.  A bal oldali panelen kattintson az **Értesítések** gombra.
-2.  Jelölje be a jelölőnégyzetet azon eseményekhez, amelyekhez ki kell küldeni az értesítéseket:
-    -   **Delegálás** – amikor jóváhagyás céljából a dokumentumot egy másik felhasználóhoz rendelték hozzá.
-    -   **Eszkalálás** – Ha a kijelölt felhasználó nem intézkedett a dokumentummal kapcsolatban a megadott idő alatt.
-    -   **Jóváhagyás** – amikor egy dokumentumot jóváhagytak.
-    -   **Elutasítás** – amikor egy dokumentumot elutasítottak.
-    -   **Változtatás kérése** – amikor a hozzárendelt felhasználó kérte egy már elküldött dokumentum módosítását.
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="31e8a-126">Az értesítések küldési idejének meghatározása</span><span class="sxs-lookup"><span data-stu-id="31e8a-126">Specify when notifications are sent</span></span>
+<span data-ttu-id="31e8a-127">Értesítéseket küldhet a felhasználóknak a dokumentum jóváhagyása, elutasítása, delegálása vagy eszkalálása, illetve változás kérése esetén.</span><span class="sxs-lookup"><span data-stu-id="31e8a-127">You can send notifications to people when a document has been approved, rejected, delegated, or escalated, or when a change has been requested.</span></span> <span data-ttu-id="31e8a-128">Végezze el a következő lépéseket, annak meghatározása érdekében, hogy mikor és kinek küldje el a rendszer az értesítéseket.</span><span class="sxs-lookup"><span data-stu-id="31e8a-128">Follow these steps to specify when notifications are sent, and who the notifications are sent to.</span></span>
+1.  <span data-ttu-id="31e8a-129">A bal oldali panelen kattintson az **Értesítések** gombra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-129">In the left pane, click **Notifications**.</span></span>
+2.  <span data-ttu-id="31e8a-130">Jelölje be a jelölőnégyzetet azon eseményekhez, amelyekhez ki kell küldeni az értesítéseket:</span><span class="sxs-lookup"><span data-stu-id="31e8a-130">Select the check box next to the events to send notifications for:</span></span>
+    -   <span data-ttu-id="31e8a-131">**Delegálás** – amikor jóváhagyás céljából a dokumentumot egy másik felhasználóhoz rendelték hozzá.</span><span class="sxs-lookup"><span data-stu-id="31e8a-131">**Delegate** – When a document has been assigned to another user for approval.</span></span>
+    -   <span data-ttu-id="31e8a-132">**Eszkalálás** – Ha a kijelölt felhasználó nem intézkedett a dokumentummal kapcsolatban a megadott idő alatt.</span><span class="sxs-lookup"><span data-stu-id="31e8a-132">**Escalate** – When the assigned user has not acted on a document in the allotted time.</span></span>
+    -   <span data-ttu-id="31e8a-133">**Jóváhagyás** – amikor egy dokumentumot jóváhagytak.</span><span class="sxs-lookup"><span data-stu-id="31e8a-133">**Approve** – When a document has been approved.</span></span>
+    -   <span data-ttu-id="31e8a-134">**Elutasítás** – amikor egy dokumentumot elutasítottak.</span><span class="sxs-lookup"><span data-stu-id="31e8a-134">**Reject** – When a document has been rejected.</span></span>
+    -   <span data-ttu-id="31e8a-135">**Változtatás kérése** – amikor a hozzárendelt felhasználó kérte egy már elküldött dokumentum módosítását.</span><span class="sxs-lookup"><span data-stu-id="31e8a-135">**Request change** – When the assigned user has requested a change to a document that was submitted.</span></span>
 
-3.  Jelölje ki a sort a 2. lépésben választott eseményhez.
-4.  Kattintson az **Értesítés szövege** lapra.
-5.  A szövegmezőbe írja be az értesítés szövegét.
-6.  Ha személyre szeretné szabni a szöveget, illesszen be helyőrzőket, amelyek helyére a megfelelő adatok kerülnek akkor, amikor azok megjelennek a felhasználók számára. Végezze el a következő lépéseket a helyőrzők beillesztéséhez:
-    1.  Jelölje ki az egérrel azt a helyet a szövegmezőben, ahol meg szeretné jeleníteni a helyőrzőt.
-    2.  Kattintson a **Helyőrző beszúrása** lehetőségre.
-    3.  A megjelenő listában válassza ki a beilleszteni kívánt helyőrzőt.
-    4.  Kattintson a **Beszúrás** lehetőségre.
+3.  <span data-ttu-id="31e8a-136">Jelölje ki a sort a 2. lépésben választott eseményhez.</span><span class="sxs-lookup"><span data-stu-id="31e8a-136">Select the row for an event that you selected in step 2.</span></span>
+4.  <span data-ttu-id="31e8a-137">Kattintson az **Értesítés szövege** lapra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-137">Click the **Notification text** tab.</span></span>
+5.  <span data-ttu-id="31e8a-138">A szövegmezőbe írja be az értesítés szövegét.</span><span class="sxs-lookup"><span data-stu-id="31e8a-138">In the text box, enter the text for the notification.</span></span>
+6.  <span data-ttu-id="31e8a-139">Ha személyre szeretné szabni a szöveget, illesszen be helyőrzőket, amelyek helyére a megfelelő adatok kerülnek akkor, amikor azok megjelennek a felhasználók számára.</span><span class="sxs-lookup"><span data-stu-id="31e8a-139">To personalize the text, you can insert placeholders, which are replaced with the appropriate data when they are displayed to users.</span></span> <span data-ttu-id="31e8a-140">Végezze el a következő lépéseket a helyőrzők beillesztéséhez:</span><span class="sxs-lookup"><span data-stu-id="31e8a-140">To insert a placeholder, follow these steps:</span></span>
+    1.  <span data-ttu-id="31e8a-141">Jelölje ki az egérrel azt a helyet a szövegmezőben, ahol meg szeretné jeleníteni a helyőrzőt.</span><span class="sxs-lookup"><span data-stu-id="31e8a-141">Click in the text box at the location where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="31e8a-142">Kattintson a **Helyőrző beszúrása** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="31e8a-142">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="31e8a-143">A megjelenő listában válassza ki a beilleszteni kívánt helyőrzőt.</span><span class="sxs-lookup"><span data-stu-id="31e8a-143">In the list that is displayed, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="31e8a-144">Kattintson a **Beszúrás** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="31e8a-144">Click **Insert**.</span></span>
 
-7.  Az értesítések fordításainak hozzáadásához kattintson a **Fordítások** lehetőségre. A megjelenő űrlapon tegye a következőket:
-    1.  Kattintson a **Hozzáadás** parancsra.
-    2.  A megjelenő listában válassza ki a megírandó szöveg nyelvét.
-    3.  Írja be a szöveget az **Lefordított szöveg** mezőbe.
-    4.  A szöveg testreszabásához illesszen be helyőrzőket.
-    5.  Kattintson a **Bezárás** gombra.
+7.  <span data-ttu-id="31e8a-145">Az értesítések fordításainak hozzáadásához kattintson a **Fordítások** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="31e8a-145">To add translations of the notification, click **Translations**.</span></span> <span data-ttu-id="31e8a-146">A megjelenő űrlapon tegye a következőket:</span><span class="sxs-lookup"><span data-stu-id="31e8a-146">In the form that is displayed, follow these steps:</span></span>
+    1.  <span data-ttu-id="31e8a-147">Kattintson a **Hozzáadás** parancsra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-147">Click **Add**.</span></span>
+    2.  <span data-ttu-id="31e8a-148">A megjelenő listában válassza ki a megírandó szöveg nyelvét.</span><span class="sxs-lookup"><span data-stu-id="31e8a-148">In the list that is displayed, select the language in which you will enter the text.</span></span>
+    3.  <span data-ttu-id="31e8a-149">Írja be a szöveget az **Lefordított szöveg** mezőbe.</span><span class="sxs-lookup"><span data-stu-id="31e8a-149">In the **Translated text** text box, enter the text.</span></span>
+    4.  <span data-ttu-id="31e8a-150">A szöveg testreszabásához illesszen be helyőrzőket.</span><span class="sxs-lookup"><span data-stu-id="31e8a-150">To personalize the text, insert placeholders.</span></span>
+    5.  <span data-ttu-id="31e8a-151">Kattintson a **Bezárás** gombra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-151">Click **Close**.</span></span>
 
-8.  Kattintson az **Átvevő** lapra.
-9.  Határozza meg az értesítések címzettjeit. Válasszon ki egy lehetőséget a következő táblázatban, majd ezt követően végezze el a további lépéseket a beállításhoz, mielőtt továbblép a 10. lépésre.
+8.  <span data-ttu-id="31e8a-152">Kattintson az **Átvevő** lapra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-152">Click the **Recipient** tab.</span></span>
+9.  <span data-ttu-id="31e8a-153">Határozza meg az értesítések címzettjeit.</span><span class="sxs-lookup"><span data-stu-id="31e8a-153">Specify who the notifications are sent to.</span></span> <span data-ttu-id="31e8a-154">Válasszon ki egy lehetőséget a következő táblázatban, majd ezt követően végezze el a további lépéseket a beállításhoz, mielőtt továbblép a 10. lépésre.</span><span class="sxs-lookup"><span data-stu-id="31e8a-154">Select one of the options in the following table, and then follow the additional steps for the option before you go to step 10.</span></span>
 
     <table>
     <colgroup>
@@ -92,80 +92,80 @@ Beállíthatja, hogy a rendszer automatikusan intézkedjen arról a dokumentumr�
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Lehetőség</th>
-    <th>Értesítés címzettjei</th>
-    <th>További lépések</th>
+    <th><span data-ttu-id="31e8a-155">Lehetőség</span><span class="sxs-lookup"><span data-stu-id="31e8a-155">Option</span></span></th>
+    <th><span data-ttu-id="31e8a-156">Értesítés címzettjei</span><span class="sxs-lookup"><span data-stu-id="31e8a-156">Notification recipients</span></span></th>
+    <th><span data-ttu-id="31e8a-157">További lépések</span><span class="sxs-lookup"><span data-stu-id="31e8a-157">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td><strong>Résztvevő</strong></td>
-    <td>Egy adott csoporthoz vagy szerephez hozzárendelt felhasználók</td>
+    <td><span data-ttu-id="31e8a-158"><strong>Résztvevő</strong></span><span class="sxs-lookup"><span data-stu-id="31e8a-158"><strong>Participant</strong></span></span></td>
+    <td><span data-ttu-id="31e8a-159">Egy adott csoporthoz vagy szerephez hozzárendelt felhasználók</span><span class="sxs-lookup"><span data-stu-id="31e8a-159">Users who are assigned to a specific group or role</span></span></td>
     <td><ol>
-    <li>Miután kijelölte a <strong>Résztvevő</strong> lehetőséget, kattintson a <strong>Szerepköralapú</strong> lapra.</li>
-    <li>A <strong>Résztvevő típusa</strong> listában jelölje ki azt a csoport- vagy szerepkörtípust, amely számára értesítést kíván küldeni.</li>
-    <li>A <strong>Résztvevő</strong> listáján jelölje ki a csoportot vagy szerepkört, amely számára értesítést kíván küldeni.</li>
+    <li><span data-ttu-id="31e8a-160">Miután kijelölte a <strong>Résztvevő</strong> lehetőséget, kattintson a <strong>Szerepköralapú</strong> lapra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-160">After you select <strong>Participant</strong>, click the <strong>Role based</strong> tab.</span></span></li>
+    <li><span data-ttu-id="31e8a-161">A <strong>Résztvevő típusa</strong> listában jelölje ki azt a csoport- vagy szerepkörtípust, amely számára értesítést kíván küldeni.</span><span class="sxs-lookup"><span data-stu-id="31e8a-161">In the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="31e8a-162">A <strong>Résztvevő</strong> listáján jelölje ki a csoportot vagy szerepkört, amely számára értesítést kíván küldeni.</span><span class="sxs-lookup"><span data-stu-id="31e8a-162">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td><strong>Munkafolyamat felhasználója</strong></td>
-    <td>Az aktuális munkafolyamatban részt vevő felhasználók</td>
+    <td><span data-ttu-id="31e8a-163"><strong>Munkafolyamat felhasználója</strong></span><span class="sxs-lookup"><span data-stu-id="31e8a-163"><strong>Workflow user</strong></span></span></td>
+    <td><span data-ttu-id="31e8a-164">Az aktuális munkafolyamatban részt vevő felhasználók</span><span class="sxs-lookup"><span data-stu-id="31e8a-164">Users who participate in the current workflow</span></span></td>
     <td><ol>
-    <li>Miután kijelölte a <strong>Munkafolyamat felhasználója</strong> lehetőséget, kattintson a <strong>Munkafolyamat felhasználója</strong> lapra.</li>
-    <li>A <strong>Munkafolyamat felhasználója</strong> listában jelölje ki a munkafolyamatban részt vevő felhasználót.</li>
+    <li><span data-ttu-id="31e8a-165">Miután kijelölte a <strong>Munkafolyamat felhasználója</strong> lehetőséget, kattintson a <strong>Munkafolyamat felhasználója</strong> lapra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-165">After you select <strong>Workflow user</strong>, click the <strong>Workflow user</strong> tab.</span></span></li>
+    <li><span data-ttu-id="31e8a-166">A <strong>Munkafolyamat felhasználója</strong> listában jelölje ki a munkafolyamatban részt vevő felhasználót.</span><span class="sxs-lookup"><span data-stu-id="31e8a-166">In the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>Felhasználó</strong></td>
-    <td>Konkrét Microsoft Dynamics 365 for Finance and Operations-felhasználók</td>
+    <td><span data-ttu-id="31e8a-167"><strong>Felhasználó</strong></span><span class="sxs-lookup"><span data-stu-id="31e8a-167"><strong>User</strong></span></span></td>
+    <td><span data-ttu-id="31e8a-168">Konkrét Microsoft Dynamics 365 for Finance and Operations-felhasználók</span><span class="sxs-lookup"><span data-stu-id="31e8a-168">Specific Microsoft Dynamics 365 for Finance and Operations users</span></span></td>
     <td><ol>
-    <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Microsoft Dynamics 365 for Finance and Operations-felhasználót tartalmazza. Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong>: listába.</li>
+    <li><span data-ttu-id="31e8a-169">Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</span><span class="sxs-lookup"><span data-stu-id="31e8a-169">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="31e8a-170">A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Microsoft Dynamics 365 for Finance and Operations-felhasználót tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="31e8a-170">The <strong>Available users</strong>: list includes all Microsoft Dynamics 365 for Finance and Operations users.</span></span> <span data-ttu-id="31e8a-171">Válassza ki azokat a felhasználókat, akik számára értesítéseket kíván küldeni, majd helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong>: listába.</span><span class="sxs-lookup"><span data-stu-id="31e8a-171">Select the users to send notifications to, and then move these users to the <strong>Selected users</strong>: list.</span></span></li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-10. Ismételje meg a 3–9. lépést a 2. lépésben kiválasztott összes eseményhez.
+10. <span data-ttu-id="31e8a-172">Ismételje meg a 3–9. lépést a 2. lépésben kiválasztott összes eseményhez.</span><span class="sxs-lookup"><span data-stu-id="31e8a-172">Repeat steps 3 through 9 for each event that you selected in step 2.</span></span>
 
-## <a name="specify-a-final-approver"></a> A végső jóváhagyó megadása
-Végleges jóváhagyót adhat meg olyan esetekben, amikor a jóváhagyó az a személy, aki a dokumentumot jóváhagyásra elküldte. Kövesse az alábbi lépéseket a végső jóváhagyó megadásához.
-1.  A bal oldali panelen kattintson az **Speciális beállítások** gombra.
-2.  Jelölje be a **Végső jóváhagyó használata** jelölőnégyzetet.
-3.  Válassza ki a listából, hogy ki legyen a végső jóváhagyó.
+## <a name="specify-a-final-approver"></a><span data-ttu-id="31e8a-173"> A végső jóváhagyó megadása</span><span class="sxs-lookup"><span data-stu-id="31e8a-173">Specify a final approver</span></span>
+<span data-ttu-id="31e8a-174">Végleges jóváhagyót adhat meg olyan esetekben, amikor a jóváhagyó az a személy, aki a dokumentumot jóváhagyásra elküldte.</span><span class="sxs-lookup"><span data-stu-id="31e8a-174">You may want to designate a final approver for scenarios where the approver is the person who submitted the document for approval.</span></span> <span data-ttu-id="31e8a-175">Kövesse az alábbi lépéseket a végső jóváhagyó megadásához.</span><span class="sxs-lookup"><span data-stu-id="31e8a-175">Follow these steps to specify a final approver.</span></span>
+1.  <span data-ttu-id="31e8a-176">A bal oldali panelen kattintson az **Speciális beállítások** gombra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-176">In the left pane, click **Advanced settings**.</span></span>
+2.  <span data-ttu-id="31e8a-177">Jelölje be a **Végső jóváhagyó használata** jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="31e8a-177">Select the **Use final approver** check box.</span></span>
+3.  <span data-ttu-id="31e8a-178">Válassza ki a listából, hogy ki legyen a végső jóváhagyó.</span><span class="sxs-lookup"><span data-stu-id="31e8a-178">In the list, select the user to be the final approver.</span></span>
 
-## <a name="set-a-time-limit"></a>Időkorlát beállítása
-Kövesse az alábbi lépéseket, ha a jóváhagyási folyamatot egy megadott időn belül be kell fejezni.
-| **Megjegyzés**                                                                                                                                                |
+## <a name="set-a-time-limit"></a><span data-ttu-id="31e8a-179">Időkorlát beállítása</span><span class="sxs-lookup"><span data-stu-id="31e8a-179">Set a time limit</span></span>
+<span data-ttu-id="31e8a-180">Kövesse az alábbi lépéseket, ha a jóváhagyási folyamatot egy megadott időn belül be kell fejezni.</span><span class="sxs-lookup"><span data-stu-id="31e8a-180">Follow these steps if the approval process must be completed in a specific time.</span></span>
+| <span data-ttu-id="31e8a-181">**Megjegyzés**</span><span class="sxs-lookup"><span data-stu-id="31e8a-181">**Note**</span></span>                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Az ezen lépésekben kiválasztott beállítások felülbírálják az egyes jóváhagyási lépések esetében a **Hozzárendelés** és az **Eszkaláció** pontokban megadottakat. |
+| <span data-ttu-id="31e8a-182">Az ezen lépésekben kiválasztott beállítások felülbírálják az egyes jóváhagyási lépések esetében a **Hozzárendelés** és az **Eszkaláció** pontokban megadottakat.</span><span class="sxs-lookup"><span data-stu-id="31e8a-182">The options that you select in these steps override the options that you selected in the **Assignment** and **Escalation** areas of each approval step.</span></span> |
 
-1.  A bal oldali panelen kattintson az **Speciális beállítások** gombra.
-2.  Válassza ki a **A munkafolyamat-elem időkorlátjának beállítása** **elem** jelölőnégyzetet.
-3.  Az **Időtartam** mezőben adja meg, hogy mikor kell végrehajtani a jóváhagyási folyamatot. Válasszon a következő lehetőségek közül:
-    -   **Óra** – Adja meg, hogy hány órán belül kell végrehajtani a jóváhagyási folyamatot. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
-    -   **Nap** – Adja meg, hogy hány napon belül kell végrehajtani a jóváhagyási folyamatot. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
-    -   **Hét** – Adja meg, hogy hány héten belül kell végrehajtani a jóváhagyási folyamatot.
-    -   **Hónap** – Válassza ki, hogy melyik hét mely napjáig kell befejezni a jóváhagyási folyamatot. Kérheti például, hogy a hónap harmadik péntekéig végre kelljen hajtani a jóváhagyási folyamatot.
-    -   **Év** – Válassza ki, hogy melyik hónap melyik hetének mely napjáig kell befejezni a jóváhagyási folyamatot. Kérheti például, hogy december harmadik hetének péntekéig végre kelljen hajtani a jóváhagyási folyamatot.
+1.  <span data-ttu-id="31e8a-183">A bal oldali panelen kattintson az **Speciális beállítások** gombra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-183">In the left pane, click **Advanced settings**.</span></span>
+2.  <span data-ttu-id="31e8a-184">Válassza ki a **A munkafolyamat-elem időkorlátjának beállítása** **elem** jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="31e8a-184">Select the **Set a time limit for the workflow** **element** check box.</span></span>
+3.  <span data-ttu-id="31e8a-185">Az **Időtartam** mezőben adja meg, hogy mikor kell végrehajtani a jóváhagyási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-185">In the **Duration** field, specify when the approval process must be completed.</span></span> <span data-ttu-id="31e8a-186">Válasszon a következő lehetőségek közül:</span><span class="sxs-lookup"><span data-stu-id="31e8a-186">Select one of the following options:</span></span>
+    -   <span data-ttu-id="31e8a-187">**Óra** – Adja meg, hogy hány órán belül kell végrehajtani a jóváhagyási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-187">**Hours** – Enter the number of hours in which the approval process must be completed.</span></span> <span data-ttu-id="31e8a-188">Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.</span><span class="sxs-lookup"><span data-stu-id="31e8a-188">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="31e8a-189">**Nap** – Adja meg, hogy hány napon belül kell végrehajtani a jóváhagyási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-189">**Days** – Enter the number of days in which the approval process must be completed.</span></span> <span data-ttu-id="31e8a-190">Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.</span><span class="sxs-lookup"><span data-stu-id="31e8a-190">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    -   <span data-ttu-id="31e8a-191">**Hét** – Adja meg, hogy hány héten belül kell végrehajtani a jóváhagyási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-191">**Weeks** – Enter the number of weeks in which the approval process must be completed.</span></span>
+    -   <span data-ttu-id="31e8a-192">**Hónap** – Válassza ki, hogy melyik hét mely napjáig kell befejezni a jóváhagyási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-192">**Months** – Select the day and week by which the approval process must be completed.</span></span> <span data-ttu-id="31e8a-193">Kérheti például, hogy a hónap harmadik péntekéig végre kelljen hajtani a jóváhagyási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-193">For example, you may want the approval process to be completed by Friday of the third week of the month.</span></span>
+    -   <span data-ttu-id="31e8a-194">**Év** – Válassza ki, hogy melyik hónap melyik hetének mely napjáig kell befejezni a jóváhagyási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-194">**Years** – Select the day, week, and month by which the approval process must be completed.</span></span> <span data-ttu-id="31e8a-195">Kérheti például, hogy december harmadik hetének péntekéig végre kelljen hajtani a jóváhagyási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-195">For example, you may want the approval process to be completed by Friday of the third week of December.</span></span>
 
-4.  Ha lejár az időkorlát, a rendszer intézkedik a dokumentummal kapcsolatban. Válassza ki a **Művelet** listából, hogy milyen műveletet kell a rendszernek végrehajtania.
+4.  <span data-ttu-id="31e8a-196">Ha lejár az időkorlát, a rendszer intézkedik a dokumentummal kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="31e8a-196">If the time limit is exceeded, the system acts on the document.</span></span> <span data-ttu-id="31e8a-197">Válassza ki a **Művelet** listából, hogy milyen műveletet kell a rendszernek végrehajtania.</span><span class="sxs-lookup"><span data-stu-id="31e8a-197">In the **Action** list, select the action that the system should take.</span></span>
 
-## <a name="specify-which-actions-are-available-to-the-user"></a>Annak megadása, hogy mely műveletek érhetők el a felhasználó számára.
-Ha egy dokumentum hozzá van rendelve egy felhasználóhoz jóváhagyásra, a felhasználónak intézkednie kell a dokumentumról. Végezze el az alábbi lépéseket annak meghatározásához, hogy mely műveleteket végezhet el a felhasználó az elküldött dokumentumon.
-1.  A bal oldali panelen kattintson az **Speciális beállítások** gombra.
-2.  Ha azt szeretné, hogy a felhasználó jóváhagyhassa a dokumentumot, jelölje be a **Jóváhagyás** jelölőnégyzetet.
-3.  Ha azt szeretné, hogy a felhasználó elutasíthassa a dokumentumot, jelölje be az **Elutasítás** jelölőnégyzetet.
-4.  Ha azt szeretné, hogy a felhasználó kérhesse a dokumentum módosítását, jelölje be a **Változtatás kérése** jelölőnégyzetet.
-5.  Jelölje be a **Delegálás** jelölőnégyzetet, ha a felhasználó jóváhagyásra hozzárendelheti a dokumentumot egy másik felhasználóhoz.
+## <a name="specify-which-actions-are-available-to-the-user"></a><span data-ttu-id="31e8a-198">Annak megadása, hogy mely műveletek érhetők el a felhasználó számára.</span><span class="sxs-lookup"><span data-stu-id="31e8a-198">Specify which actions are available to the user</span></span>
+<span data-ttu-id="31e8a-199">Ha egy dokumentum hozzá van rendelve egy felhasználóhoz jóváhagyásra, a felhasználónak intézkednie kell a dokumentumról.</span><span class="sxs-lookup"><span data-stu-id="31e8a-199">When a document is assigned to a user for approval, the user must act on the document.</span></span> <span data-ttu-id="31e8a-200">Végezze el az alábbi lépéseket annak meghatározásához, hogy mely műveleteket végezhet el a felhasználó az elküldött dokumentumon.</span><span class="sxs-lookup"><span data-stu-id="31e8a-200">Follows these steps to specify which actions the user can take on the document that was submitted.</span></span>
+1.  <span data-ttu-id="31e8a-201">A bal oldali panelen kattintson az **Speciális beállítások** gombra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-201">In the left pane, click **Advanced settings**.</span></span>
+2.  <span data-ttu-id="31e8a-202">Ha azt szeretné, hogy a felhasználó jóváhagyhassa a dokumentumot, jelölje be a **Jóváhagyás** jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="31e8a-202">Select the **Approve** check box if the user can approve the document.</span></span>
+3.  <span data-ttu-id="31e8a-203">Ha azt szeretné, hogy a felhasználó elutasíthassa a dokumentumot, jelölje be az **Elutasítás** jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="31e8a-203">Select the **Reject** check box the user can reject the document.</span></span>
+4.  <span data-ttu-id="31e8a-204">Ha azt szeretné, hogy a felhasználó kérhesse a dokumentum módosítását, jelölje be a **Változtatás kérése** jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="31e8a-204">Select the **Request change** check box the user can request changes to the document.</span></span>
+5.  <span data-ttu-id="31e8a-205">Jelölje be a **Delegálás** jelölőnégyzetet, ha a felhasználó jóváhagyásra hozzárendelheti a dokumentumot egy másik felhasználóhoz.</span><span class="sxs-lookup"><span data-stu-id="31e8a-205">Select the **Delegate** check box if the user can assign the document to another user for approval.</span></span>
 
-**Megjegyzés:**: A **Műveletek végrehajtásának engedélyezése az Enterprise Portal munkalistájából** jelölőnégyzet elavult.
+<span data-ttu-id="31e8a-206">**Megjegyzés:**: A **Műveletek végrehajtásának engedélyezése az Enterprise Portal munkalistájából** jelölőnégyzet elavult.</span><span class="sxs-lookup"><span data-stu-id="31e8a-206">**Note**: The **Enable actions from the work list in Enterprise Portal** check box has been deprecated.</span></span>
 
-## <a name="configure-the-approval-steps"></a> Jóváhagyási lépések konfigurálása
-Egy jóváhagyási eljárás jóváhagyási lépésekből áll. Az alábbi eljárással lépéseket adhat hozzá a jóváhagyási folyamathoz, valamint beállíthatja a lépéseket.
-1.  A munkafolyamat-szerkesztőben kattintson duplán a jóváhagyási folyamatra. A munkafolyamat-szerkesztő megjeleníti a jóváhagyási eljárás lépéseit.
-2.  Jóváhagyási lépés hozzáadásához húzza a **Munkafolyamat-elemek** lehetőséget a vászonra.
-3.  A jóváhagyási lépés konfigurálásához lásd a [Jóváhagyási lépés konfigurálása](configure-approval-step-workflow.md) pontot.
+## <a name="configure-the-approval-steps"></a><span data-ttu-id="31e8a-207"> Jóváhagyási lépések konfigurálása</span><span class="sxs-lookup"><span data-stu-id="31e8a-207">Configure the approval steps</span></span>
+<span data-ttu-id="31e8a-208">Egy jóváhagyási eljárás jóváhagyási lépésekből áll.</span><span class="sxs-lookup"><span data-stu-id="31e8a-208">An approval process consists of approval steps.</span></span> <span data-ttu-id="31e8a-209">Az alábbi eljárással lépéseket adhat hozzá a jóváhagyási folyamathoz, valamint beállíthatja a lépéseket.</span><span class="sxs-lookup"><span data-stu-id="31e8a-209">Complete the following procedure to add steps the approval process and configure the steps.</span></span>
+1.  <span data-ttu-id="31e8a-210">A munkafolyamat-szerkesztőben kattintson duplán a jóváhagyási folyamatra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-210">In the workflow editor, double-click the approval process.</span></span> <span data-ttu-id="31e8a-211">A munkafolyamat-szerkesztő megjeleníti a jóváhagyási eljárás lépéseit.</span><span class="sxs-lookup"><span data-stu-id="31e8a-211">The workflow editor displays the steps of the approval process.</span></span>
+2.  <span data-ttu-id="31e8a-212">Jóváhagyási lépés hozzáadásához húzza a **Munkafolyamat-elemek** lehetőséget a vászonra.</span><span class="sxs-lookup"><span data-stu-id="31e8a-212">To add an approval step, drag the step from the **Workflow elements** area to the canvas.</span></span>
+3.  <span data-ttu-id="31e8a-213">A jóváhagyási lépés konfigurálásához lásd a [Jóváhagyási lépés konfigurálása](configure-approval-step-workflow.md) pontot.</span><span class="sxs-lookup"><span data-stu-id="31e8a-213">To configure an approval step, see [Configure an approval step](configure-approval-step-workflow.md).</span></span>
 
 
 

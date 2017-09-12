@@ -22,79 +22,79 @@ ms.contentlocale: hu-hu
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="set-up-sales-commission-rules"></a>Értékesítési jutalékok szabályainak beállítása
+# <a name="set-up-sales-commission-rules"></a><span data-ttu-id="0d10a-103">Értékesítési jutalékok szabályainak beállítása</span><span class="sxs-lookup"><span data-stu-id="0d10a-103">Set up sales commission rules</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az értékesítési jutalékszámítást és követést. Ez az eljárás bemutatja, hogy hozhat létre vevő és cikk típusú jutalékcsoportokat, és hogyan csatolhatja a kiválasztott vevőt és a terméket a megfelelő csoporthoz. Ezek a csoportok a jutalékszámítás beállításánál használatosak, vevő, cikk, és üzletkötő kombinációk létrehozásához, amelyeket értékesítési rendelésekhez kell kötni, hogy feljogosítsa az értékesítőket üzletkötésre. Vevő és cikk jutalékcsoportok létrehozása nem kötelező, mivel a jutalékszámítás egy vevőre és/vagy cikkre is elvégezhető. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
+<span data-ttu-id="0d10a-104">Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az értékesítési jutalékszámítást és követést.</span><span class="sxs-lookup"><span data-stu-id="0d10a-104">This procedure shows you how to set up and enable sales commission calculation and tracking.</span></span> <span data-ttu-id="0d10a-105">Ez az eljárás bemutatja, hogy hozhat létre vevő és cikk típusú jutalékcsoportokat, és hogyan csatolhatja a kiválasztott vevőt és a terméket a megfelelő csoporthoz.</span><span class="sxs-lookup"><span data-stu-id="0d10a-105">The procedure shows how to create both customer and item commission groups, and then how to link a selected customer and product to the respective groups.</span></span> <span data-ttu-id="0d10a-106">Ezek a csoportok a jutalékszámítás beállításánál használatosak, vevő, cikk, és üzletkötő kombinációk létrehozásához, amelyeket értékesítési rendelésekhez kell kötni, hogy feljogosítsa az értékesítőket üzletkötésre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-106">Those groups are then used in the commission calculation setup to create a customer, item, and sales representatives combination that must be matched by the sales order to entitle the sales people to a commission.</span></span> <span data-ttu-id="0d10a-107">Vevő és cikk jutalékcsoportok létrehozása nem kötelező, mivel a jutalékszámítás egy vevőre és/vagy cikkre is elvégezhető.</span><span class="sxs-lookup"><span data-stu-id="0d10a-107">Creating customer and item commission groups are optional, as the calculation of commission can also be done for an individual customer and/or item.</span></span> <span data-ttu-id="0d10a-108">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="0d10a-108">You can run this procedure in demo data company USMF or on your own data.</span></span>
 
 
-## <a name="set-up-commission-groups-and-commission-rates"></a>Jutalékcsoportok és jutalékarányok beállítása
-1. Ugrás a Értékesítés és marketing > Jutalékok > Vevői csoportok jutalék lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. Érték beírása a Csoport mezőbe.
-4. Írjon be egy értéket a Név mezőbe.
-5. Kattintson a Mentés gombra.
-6. Zárja be a lapot.
-7. Ugrás a Értékesítés és marketing > Jutalékok > Cikk csoportok lehetőségre.
-8. Kattintson az Új lehetőségre.
-9. Érték beírása a Csoport mezőbe.
-10. Írjon be egy értéket a Név mezőbe.
-11. Zárja be a lapot.
-12. Ugrás a Értékesítés és marketing> Jutalékok > Érékesítési csoportok lehetőségre.
-    * A Jutalék értékesítési csoportja a jutalékra jogosult üzletkötő beosztású alkalmazottakat határozza meg, ha a megfelelő értékesítési csoporthoz társított vevő bizonyos cikkeket vásárol.  
-    * Az USMF bemutató vállalat adatai között szerepel egy „Üzletkötők Egyesül Államok” értékesítési csoport.  
-13. A Művelet panelen kattintson az Általános elemre.
-14. Kattintson az üzletkötő nevére.
-    * Az Üzletkötők oldal a vállalat azon értékesítőit listázza, akik egy adott jutalékcsoporthoz vannak társítva. Ugyanahhoz a csoporthoz több értékesítő jutalékot rendelhet hozzá, és meghatározhatja a teljes jutalékdíj megfelelő részesedését százalékban kifejezve. Az összes alkalmazott közötti jutalékfelosztás nem haladhatja meg a 100 értéket.  
-15. A listában jelölje meg a kiválasztott sort.
-16. Kattintson a Szerkesztés lehetőségre.
-17. Állítsa a jutalékfelosztásokat „50”-re.
-18. Kattintson az Új lehetőségre.
-19. A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-20. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a „Név” mezővel a „Susan Burk” szót beírva.
-21. Kattintson a Kiválasztás lehetőségre.
-22. Állítsa a jutalékfelosztásokat „50”-re.
-23. Kattintson a Mentés gombra.
-24. Ugrás a Értékesítés és marketing > Jutalékok > Jutalékszámítás lehetőségre.
-    * A Jutalékszámítás oldalon meghatározhatja az alkalmazott által az értékesítési tranzakciókért kapott jutalékarányt, ha az tartalmazza a vevő és a termék előre beállított kombinációját. A jutalékarány beállításának részeként meg kell adnia a jutalékszámítás alapját, és hogy ez engedménnyel együtt, vagy engedmény nélkül legyen-e érvényes. Ha meg szeretné határozni, hogy mikor aktív a jutalékarány, megadhat érvényességi időtartamot.  
-25. Kattintson az Új lehetőségre.
-26. Válassza a „Csoport” lehetőséget a Cikk mezőben:
-27. A Cikk-viszony mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-28. A listában keresse meg és válassza ki a korábban létrehozott csoportot.
-29. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-30. A Vevőkód mezőben válassza ki a „Csoport” lehetőséget.
-31. A(z) Vevőkapcsolat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-32. A listában válassza ki a korábban beállított csoportot.
-33. Az Üzletkötők kapcsolat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-34. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * A „Sorkedvezmény előtt” beállítás megtartása.  
-    * A „Bevétel” beállítás megtartása a jutalékszámítás alapjául.    
-35. Adjon meg egy számot a Jutalék (százalék) mezőben.
-36. Kattintson a Mentés gombra.
+## <a name="set-up-commission-groups-and-commission-rates"></a><span data-ttu-id="0d10a-109">Jutalékcsoportok és jutalékarányok beállítása</span><span class="sxs-lookup"><span data-stu-id="0d10a-109">Set up commission groups and commission rates</span></span>
+1. <span data-ttu-id="0d10a-110">Ugrás a Értékesítés és marketing > Jutalékok > Vevői csoportok jutalék lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-110">Go to Sales and marketing > Commissions > Customer groups for commission.</span></span>
+2. <span data-ttu-id="0d10a-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-111">Click New.</span></span>
+3. <span data-ttu-id="0d10a-112">Érték beírása a Csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0d10a-112">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="0d10a-113">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0d10a-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="0d10a-114">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="0d10a-114">Click Save.</span></span>
+6. <span data-ttu-id="0d10a-115">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0d10a-115">Close the page.</span></span>
+7. <span data-ttu-id="0d10a-116">Ugrás a Értékesítés és marketing > Jutalékok > Cikk csoportok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-116">Go to Sales and marketing > Commissions > Item groups.</span></span>
+8. <span data-ttu-id="0d10a-117">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-117">Click New.</span></span>
+9. <span data-ttu-id="0d10a-118">Érték beírása a Csoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0d10a-118">In the Group field, type a value.</span></span>
+10. <span data-ttu-id="0d10a-119">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0d10a-119">In the Name field, type a value.</span></span>
+11. <span data-ttu-id="0d10a-120">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0d10a-120">Close the page.</span></span>
+12. <span data-ttu-id="0d10a-121">Ugrás a Értékesítés és marketing> Jutalékok > Érékesítési csoportok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-121">Go to Sales and marketing > Commissions > Sales groups.</span></span>
+    * <span data-ttu-id="0d10a-122">A Jutalék értékesítési csoportja a jutalékra jogosult üzletkötő beosztású alkalmazottakat határozza meg, ha a megfelelő értékesítési csoporthoz társított vevő bizonyos cikkeket vásárol.</span><span class="sxs-lookup"><span data-stu-id="0d10a-122">A Commission sales group specifies the employees in sales representative roles who are eligible to receive a commission when a customer associated with the relevant sales group buys certain items.</span></span>  
+    * <span data-ttu-id="0d10a-123">Az USMF bemutató vállalat adatai között szerepel egy „Üzletkötők Egyesül Államok” értékesítési csoport.</span><span class="sxs-lookup"><span data-stu-id="0d10a-123">In the USMF demo data company, there is a sales group called "Sales reps US."</span></span>  
+13. <span data-ttu-id="0d10a-124">A Művelet panelen kattintson az Általános elemre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-124">On the Action Pane, click General.</span></span>
+14. <span data-ttu-id="0d10a-125">Kattintson az üzletkötő nevére.</span><span class="sxs-lookup"><span data-stu-id="0d10a-125">Click Sales rep..</span></span>
+    * <span data-ttu-id="0d10a-126">Az Üzletkötők</span><span class="sxs-lookup"><span data-stu-id="0d10a-126">The Sales rep.</span></span> <span data-ttu-id="0d10a-127">oldal a vállalat azon értékesítőit listázza, akik egy adott jutalékcsoporthoz vannak társítva.</span><span class="sxs-lookup"><span data-stu-id="0d10a-127">page displays a list of the company's sales people who are associated with a specific commission group.</span></span> <span data-ttu-id="0d10a-128">Ugyanahhoz a csoporthoz több értékesítő jutalékot rendelhet hozzá, és meghatározhatja a teljes jutalékdíj megfelelő részesedését százalékban kifejezve.</span><span class="sxs-lookup"><span data-stu-id="0d10a-128">You can assign multiple sales representatives to the same group and define their respective share of the total commission fee as a percentage value.</span></span> <span data-ttu-id="0d10a-129">Az összes alkalmazott közötti jutalékfelosztás nem haladhatja meg a 100 értéket.</span><span class="sxs-lookup"><span data-stu-id="0d10a-129">The total commission share across all employees must not exceed 100.</span></span>  
+15. <span data-ttu-id="0d10a-130">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="0d10a-130">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="0d10a-131">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-131">Click Edit.</span></span>
+17. <span data-ttu-id="0d10a-132">Állítsa a jutalékfelosztásokat „50”-re.</span><span class="sxs-lookup"><span data-stu-id="0d10a-132">Set Commission share to '50'.</span></span>
+18. <span data-ttu-id="0d10a-133">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-133">Click New.</span></span>
+19. <span data-ttu-id="0d10a-134">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0d10a-134">In the Name field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="0d10a-135">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="0d10a-135">Use the Quick Filter to find records.</span></span> <span data-ttu-id="0d10a-136">Például szűkítsen a „Név” mezővel a „Susan Burk” szót beírva.</span><span class="sxs-lookup"><span data-stu-id="0d10a-136">For example, filter on the Name field with a value of 'Susan Burk'.</span></span>
+21. <span data-ttu-id="0d10a-137">Kattintson a Kiválasztás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-137">Click Select.</span></span>
+22. <span data-ttu-id="0d10a-138">Állítsa a jutalékfelosztásokat „50”-re.</span><span class="sxs-lookup"><span data-stu-id="0d10a-138">Set Commission share to '50'.</span></span>
+23. <span data-ttu-id="0d10a-139">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="0d10a-139">Click Save.</span></span>
+24. <span data-ttu-id="0d10a-140">Ugrás a Értékesítés és marketing > Jutalékok > Jutalékszámítás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-140">Go to Sales and marketing > Commissions > Commission calculation.</span></span>
+    * <span data-ttu-id="0d10a-141">A Jutalékszámítás oldalon meghatározhatja az alkalmazott által az értékesítési tranzakciókért kapott jutalékarányt, ha az tartalmazza a vevő és a termék előre beállított kombinációját.</span><span class="sxs-lookup"><span data-stu-id="0d10a-141">In the Commission calculation page you define the commission rate that the employee is to receive for a sales transaction when it contains the pre-set combination of customer and product.</span></span> <span data-ttu-id="0d10a-142">A jutalékarány beállításának részeként meg kell adnia a jutalékszámítás alapját, és hogy ez engedménnyel együtt, vagy engedmény nélkül legyen-e érvényes.</span><span class="sxs-lookup"><span data-stu-id="0d10a-142">As part of the commission rate setup, you must specify the commission calculation basis and whether it should include or exclude discounts.</span></span> <span data-ttu-id="0d10a-143">Ha meg szeretné határozni, hogy mikor aktív a jutalékarány, megadhat érvényességi időtartamot.</span><span class="sxs-lookup"><span data-stu-id="0d10a-143">You can also enter a validity period for when the commission rate is active.</span></span>  
+25. <span data-ttu-id="0d10a-144">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-144">Click New.</span></span>
+26. <span data-ttu-id="0d10a-145">Válassza a „Csoport” lehetőséget a Cikk mezőben:</span><span class="sxs-lookup"><span data-stu-id="0d10a-145">In the Item code field, select 'Group'.</span></span>
+27. <span data-ttu-id="0d10a-146">A Cikk-viszony mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0d10a-146">In the Item relation field, click the drop-down button to open the lookup.</span></span>
+28. <span data-ttu-id="0d10a-147">A listában keresse meg és válassza ki a korábban létrehozott csoportot.</span><span class="sxs-lookup"><span data-stu-id="0d10a-147">In the list, find and select the group that you created earlier.</span></span>
+29. <span data-ttu-id="0d10a-148">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="0d10a-148">In the list, click the link in the selected row.</span></span>
+30. <span data-ttu-id="0d10a-149">A Vevőkód mezőben válassza ki a „Csoport” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="0d10a-149">In the Customer code field, select 'Group'.</span></span>
+31. <span data-ttu-id="0d10a-150">A(z) Vevőkapcsolat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0d10a-150">In the Customer relation field, click the drop-down button to open the lookup.</span></span>
+32. <span data-ttu-id="0d10a-151">A listában válassza ki a korábban beállított csoportot.</span><span class="sxs-lookup"><span data-stu-id="0d10a-151">In the list, select the group that you set up earlier.</span></span>
+33. <span data-ttu-id="0d10a-152">Az Üzletkötők</span><span class="sxs-lookup"><span data-stu-id="0d10a-152">In the Sales rep.</span></span> <span data-ttu-id="0d10a-153">kapcsolat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0d10a-153">relation field, click the drop-down button to open the lookup.</span></span>
+34. <span data-ttu-id="0d10a-154">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="0d10a-154">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="0d10a-155">A „Sorkedvezmény előtt” beállítás megtartása.</span><span class="sxs-lookup"><span data-stu-id="0d10a-155">Keep the "Before line discount" option.</span></span>  
+    * <span data-ttu-id="0d10a-156">A „Bevétel” beállítás megtartása a jutalékszámítás alapjául.</span><span class="sxs-lookup"><span data-stu-id="0d10a-156">Keep the "Revenue" option as the basis for commission value calculation.</span></span>    
+35. <span data-ttu-id="0d10a-157">Adjon meg egy számot a Jutalék (százalék) mezőben.</span><span class="sxs-lookup"><span data-stu-id="0d10a-157">In the Commission percentage field, enter a number.</span></span>
+36. <span data-ttu-id="0d10a-158">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="0d10a-158">Click Save.</span></span>
 
-## <a name="setting-up-commission-posting"></a>Jutalékfeladás beállítása
-1. Ugrás az Értékesítés és marketing > Jutalékok > Jutalékfeladás lehetőségre.
-    * A jutalékdíjak kifizethetőek az alkalmazottaknak, ezért be kell azokat állítani, a megfelelő pénzügyi feladások biztosítása érdekében, a Főkönyv megfelelő számláira. Ezt a Jutalék feladása lapon lehet intézni. Ellenőrizze a beállítást, amely az aktuális vállalathoz érhető el. A jutalék összegét általában egy külön költség számlára adja fel, és egy kijelölt fizethető számlával ellenszámlázott. Ha nem rendelkezik beállított jutalékfeladási szabályokkal, a rendszer nem tudja befejezni a jogosult jutalékokkal rendelkező értékesítési rendelés számlázását.  
-2. Zárja be a lapot.
+## <a name="setting-up-commission-posting"></a><span data-ttu-id="0d10a-159">Jutalékfeladás beállítása</span><span class="sxs-lookup"><span data-stu-id="0d10a-159">Setting up commission posting</span></span>
+1. <span data-ttu-id="0d10a-160">Ugrás az Értékesítés és marketing > Jutalékok > Jutalékfeladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-160">Go to Sales and marketing > Commissions > Commission posting.</span></span>
+    * <span data-ttu-id="0d10a-161">A jutalékdíjak kifizethetőek az alkalmazottaknak, ezért be kell azokat állítani, a megfelelő pénzügyi feladások biztosítása érdekében, a Főkönyv megfelelő számláira.</span><span class="sxs-lookup"><span data-stu-id="0d10a-161">Commission fees are payable to the employees and must therefore be set up to ensure correct financial posting to the appropriate accounts in the General ledger.</span></span> <span data-ttu-id="0d10a-162">Ezt a Jutalék feladása lapon lehet intézni.</span><span class="sxs-lookup"><span data-stu-id="0d10a-162">This is done in the Commission posting page.</span></span> <span data-ttu-id="0d10a-163">Ellenőrizze a beállítást, amely az aktuális vállalathoz érhető el.</span><span class="sxs-lookup"><span data-stu-id="0d10a-163">Review the setup that is available for the current company.</span></span> <span data-ttu-id="0d10a-164">A jutalék összegét általában egy külön költség számlára adja fel, és egy kijelölt fizethető számlával ellenszámlázott.</span><span class="sxs-lookup"><span data-stu-id="0d10a-164">Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account.</span></span> <span data-ttu-id="0d10a-165">Ha nem rendelkezik beállított jutalékfeladási szabályokkal, a rendszer nem tudja befejezni a jogosult jutalékokkal rendelkező értékesítési rendelés számlázását.</span><span class="sxs-lookup"><span data-stu-id="0d10a-165">If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order which has eligible commissions.</span></span>  
+2. <span data-ttu-id="0d10a-166">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0d10a-166">Close the page.</span></span>
 
-## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Jutalékcsoport vevőhöz és termékhez rendelése.
-1. Lépjen az Értékesítés és marketing > Vevők > Össze vevő menüpontba.
-2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-4. Kattintson a Szerkesztés lehetőségre.
-5. Bontsa ki az Értékesítési rendelés alapértelmezési szakaszt.
-6. A Jutalékcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. A listában válassza ki a korábban létrehozott csoportot.
-8. Az Értékesítési csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-9. Keresse meg és jelölje ki a kívánt rekordot a listán.
-10. Kattintson a Mentés gombra.
-11. Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.
-12. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a Cikkszám mezővel a „T0020” értéket beírva.
-13. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-14. Kattintson a Szerkesztés lehetőségre.
-15. Bontsa ki a Értékesítés szakaszt.
-16. A Jutalékcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-17. A listában válassza ki a korábban létrehozott értékesítési csoportot.
+## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a><span data-ttu-id="0d10a-167">Jutalékcsoport vevőhöz és termékhez rendelése.</span><span class="sxs-lookup"><span data-stu-id="0d10a-167">Assign a commission group to a customer and a product</span></span>
+1. <span data-ttu-id="0d10a-168">Lépjen az Értékesítés és marketing > Vevők > Össze vevő menüpontba.</span><span class="sxs-lookup"><span data-stu-id="0d10a-168">Go to Sales and marketing > Customers > All customers.</span></span>
+2. <span data-ttu-id="0d10a-169">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="0d10a-169">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="0d10a-170">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="0d10a-170">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="0d10a-171">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-171">Click Edit.</span></span>
+5. <span data-ttu-id="0d10a-172">Bontsa ki az Értékesítési rendelés alapértelmezési szakaszt.</span><span class="sxs-lookup"><span data-stu-id="0d10a-172">Expand the Sales order defaults section.</span></span>
+6. <span data-ttu-id="0d10a-173">A Jutalékcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0d10a-173">In the Commission group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="0d10a-174">A listában válassza ki a korábban létrehozott csoportot.</span><span class="sxs-lookup"><span data-stu-id="0d10a-174">In the list, select the group that you created earlier.</span></span>
+8. <span data-ttu-id="0d10a-175">Az Értékesítési csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0d10a-175">In the Sales group field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="0d10a-176">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="0d10a-176">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="0d10a-177">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="0d10a-177">Click Save.</span></span>
+11. <span data-ttu-id="0d10a-178">Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-178">Go to Product information management > Products > Released products.</span></span>
+12. <span data-ttu-id="0d10a-179">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="0d10a-179">Use the Quick Filter to find records.</span></span> <span data-ttu-id="0d10a-180">Például szűkítsen a Cikkszám mezővel a „T0020” értéket beírva.</span><span class="sxs-lookup"><span data-stu-id="0d10a-180">For example, filter on the Item number field with a value of 'T0020 '.</span></span>
+13. <span data-ttu-id="0d10a-181">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="0d10a-181">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="0d10a-182">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0d10a-182">Click Edit.</span></span>
+15. <span data-ttu-id="0d10a-183">Bontsa ki a Értékesítés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="0d10a-183">Expand the Sell section.</span></span>
+16. <span data-ttu-id="0d10a-184">A Jutalékcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0d10a-184">In the Commission group field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="0d10a-185">A listában válassza ki a korábban létrehozott értékesítési csoportot.</span><span class="sxs-lookup"><span data-stu-id="0d10a-185">In the list, select the commission group that you created earlier.</span></span>
 
 

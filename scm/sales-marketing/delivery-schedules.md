@@ -16,46 +16,46 @@ ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 701a8b2b94fecedcddada46ad6438448254c8e77
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 84ae84a567e5f45bc0b20538d04917c6feb21336
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="delivery-schedules"></a>Szállítási ütemezések
+# <a name="delivery-schedules"></a><span data-ttu-id="3fdb3-103">Szállítási ütemezések</span><span class="sxs-lookup"><span data-stu-id="3fdb3-103">Delivery schedules</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A szállítási ütemezések lehetővé teszik a rendeléssor mennyiségének nyomon követését, amikor több szállítást használ egyetlen értékesítési rendeléshez, értékesítési ajánlathoz vagy beszerzési rendeléshez.
+<span data-ttu-id="3fdb3-104">A szállítási ütemezések lehetővé teszik a rendeléssor mennyiségének nyomon követését, amikor több szállítást használ egyetlen értékesítési rendeléshez, értékesítési ajánlathoz vagy beszerzési rendeléshez.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-104">Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.</span></span>
 
-A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy ajánlati sorhoz tartozó teljes mennyiséget több részletben kell szállítani. Az egyes szállítmányokat szállítási sorok jelölik. Két vagy több szállítási sor alkot egy szállítási ütemezést. A szállítási sorok különböző szállítási dátumokkal, mennyiségekkel, szállítási módokkal és tárolási dimenziókkal rendelkezhetnek, például hely és raktár.  
+<span data-ttu-id="3fdb3-105">A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy ajánlati sorhoz tartozó teljes mennyiséget több részletben kell szállítani.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-105">Use a delivery schedule when the total quantity on an order or quotation line must be delivered in multiple shipments.</span></span> <span data-ttu-id="3fdb3-106">Az egyes szállítmányokat szállítási sorok jelölik.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-106">Individual shipments are represented by delivery lines.</span></span> <span data-ttu-id="3fdb3-107">Két vagy több szállítási sor alkot egy szállítási ütemezést.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-107">Two or more delivery lines make up one delivery schedule.</span></span> <span data-ttu-id="3fdb3-108">A szállítási sorok különböző szállítási dátumokkal, mennyiségekkel, szállítási módokkal és tárolási dimenziókkal rendelkezhetnek, például hely és raktár.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-108">The delivery lines can have different delivery dates, quantities, modes of delivery, and storage dimensions, such as site and warehouse.</span></span>  
 
-**Példa szállítási ütemezésre**
+<span data-ttu-id="3fdb3-109">**Példa szállítási ütemezésre**</span><span class="sxs-lookup"><span data-stu-id="3fdb3-109">**Example of a delivery schedule**</span></span>
 
 |                                   |                                          |
 |-----------------------------------|------------------------------------------|
-| Teljes rendelés (eredeti rendelési sor) | 600 szék                               |
-| Kért kézbesítési ütemezés       | Havonta 100 szék                     |
-| Kért kézbesítési időkeret | 6 hónapon keresztül, minden hónap első napján |
+| <span data-ttu-id="3fdb3-110">Teljes rendelés (eredeti rendelési sor)</span><span class="sxs-lookup"><span data-stu-id="3fdb3-110">Total order (original order line)</span></span> | <span data-ttu-id="3fdb3-111">600 szék</span><span class="sxs-lookup"><span data-stu-id="3fdb3-111">600 chairs</span></span>                               |
+| <span data-ttu-id="3fdb3-112">Kért kézbesítési ütemezés</span><span class="sxs-lookup"><span data-stu-id="3fdb3-112">Requested delivery schedule</span></span>       | <span data-ttu-id="3fdb3-113">Havonta 100 szék</span><span class="sxs-lookup"><span data-stu-id="3fdb3-113">100 chairs per month</span></span>                     |
+| <span data-ttu-id="3fdb3-114">Kért kézbesítési időkeret</span><span class="sxs-lookup"><span data-stu-id="3fdb3-114">Requested time frame for delivery</span></span> | <span data-ttu-id="3fdb3-115">6 hónapon keresztül, minden hónap első napján</span><span class="sxs-lookup"><span data-stu-id="3fdb3-115">6 months, on the first day of each month</span></span> |
 
-Ebben az esetben a vevő a 600 szék kiszállítását 100 darabos kötegekben kérte, 6 hónap alatt A szállítási követelmények nyomon követéséhez szállítási ütemezést kell létrehozni. A szállítási ütemezés lapon hat külön szállítás sort kell létrehozni. Minden egyes kézbesítési sor 100 széket tartalmaz, és jelzi az adott 100 szék szállítási dátumát. Ebben az esetben minden sor hat egymást követő hónapig minden hónap elsején lesz elindítva.  
+<span data-ttu-id="3fdb3-116">Ebben az esetben a vevő a 600 szék kiszállítását 100 darabos kötegekben kérte, 6 hónap alatt</span><span class="sxs-lookup"><span data-stu-id="3fdb3-116">In this scenario, the customer requests delivery of 600 chairs in batches of 100 chairs over a period of six months.</span></span> <span data-ttu-id="3fdb3-117">A szállítási követelmények nyomon követéséhez szállítási ütemezést kell létrehozni.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-117">To keep track of the delivery requirements, you create a delivery schedule.</span></span> <span data-ttu-id="3fdb3-118">A szállítási ütemezés lapon hat külön szállítás sort kell létrehozni.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-118">On the delivery schedule page, you create six separate delivery lines.</span></span> <span data-ttu-id="3fdb3-119">Minden egyes kézbesítési sor 100 széket tartalmaz, és jelzi az adott 100 szék szállítási dátumát.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-119">Each delivery line contains 100 chairs and indicates the delivery date for those 100 chairs.</span></span> <span data-ttu-id="3fdb3-120">Ebben az esetben minden sor hat egymást követő hónapig minden hónap elsején lesz elindítva.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-120">In this case, each line is offset on the first of the month for six consecutive months.</span></span>  
 
-A szállítási ütemezés létrehozásakor az eredeti rendelési sor típusa automatikusan a **Rendeléssor több szállítással** lehetőségre módosul. Egy ilyen típusú sorra a rendszer kereskedelmi sorként hivatkozik és egy ikon jelzi. A kézbesítési sort egy másik ikon jelzi. Ha módosítja egy kézbesítési sorban mennyiségét, a kereskedelmi sor a szállítási ütemezés teljes mennyiségére frissül. Ha egy kereskedelmi megállapodás egy teljes engedményt határozott meg a rendeléshez, a szállítási ütemezés biztosítja, hogy a rendelés jogosult legyen a teljes rendelési engedményre, akkor is, ha a rendelés több kiszállításra oszlik.  
+<span data-ttu-id="3fdb3-121">A szállítási ütemezés létrehozásakor az eredeti rendelési sor típusa automatikusan a **Rendeléssor több szállítással** lehetőségre módosul.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-121">When you create a delivery schedule, the type of the original order line is automatically changed to **Order line with multiple deliveries**.</span></span> <span data-ttu-id="3fdb3-122">Egy ilyen típusú sorra a rendszer kereskedelmi sorként hivatkozik és egy ikon jelzi.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-122">A line of this type is referred to as a commercial line and is marked by an icon.</span></span> <span data-ttu-id="3fdb3-123">A kézbesítési sort egy másik ikon jelzi.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-123">The delivery line is marked by a different icon.</span></span> <span data-ttu-id="3fdb3-124">Ha módosítja egy kézbesítési sorban mennyiségét, a kereskedelmi sor a szállítási ütemezés teljes mennyiségére frissül.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-124">If you change a quantity on a delivery line, the commercial line is updated to the total quantity of the delivery schedule.</span></span> <span data-ttu-id="3fdb3-125">Ha egy kereskedelmi megállapodás egy teljes engedményt határozott meg a rendeléshez, a szállítási ütemezés biztosítja, hogy a rendelés jogosult legyen a teljes rendelési engedményre, akkor is, ha a rendelés több kiszállításra oszlik.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-125">If a trade agreement has defined a total discount for the order, the delivery schedule ensures that your order is eligible for the total order discount, even when the order is split into separate deliveries.</span></span>  
 
-A szállítási ütemezéssel rendelkező rendeléseket a rendszer a szállítási sorok szerint dolgozza fel. A feldolgozás magában foglalja a csomagjegyzékek, termékbevételezések és a számlázás feladását.  
+<span data-ttu-id="3fdb3-126">A szállítási ütemezéssel rendelkező rendeléseket a rendszer a szállítási sorok szerint dolgozza fel.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-126">Orders that have a delivery schedule are processed against the delivery lines.</span></span> <span data-ttu-id="3fdb3-127">A feldolgozás magában foglalja a csomagjegyzékek, termékbevételezések és a számlázás feladását.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-127">Processing includes the posting of packing slips, product receipts, and invoicing.</span></span>  
 
-A szállítási ütemezéssel rendelkező rendelések és árajánlatok nyomtatott anyagai csak a szállítási sorokat tartalmazzák. Nem mutatják az eredeti sorokat (kereskedelmi sorokat). **Megjegyzés:** Ezen kívül csak a szállítási sorok jelennek meg a rendszerben a műveletek végrehajtása során:
+<span data-ttu-id="3fdb3-128">A szállítási ütemezéssel rendelkező rendelések és árajánlatok nyomtatott anyagai csak a szállítási sorokat tartalmazzák.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-128">Document printouts of orders and quotations that have a delivery schedule show only the delivery lines.</span></span> <span data-ttu-id="3fdb3-129">Nem mutatják az eredeti sorokat (kereskedelmi sorokat).</span><span class="sxs-lookup"><span data-stu-id="3fdb3-129">They don't show the original lines (commercial lines).</span></span> <span data-ttu-id="3fdb3-130">**Megjegyzés:** Ezen kívül csak a szállítási sorok jelennek meg a rendszerben a műveletek végrehajtása során:</span><span class="sxs-lookup"><span data-stu-id="3fdb3-130">**Note:** In addition, only the delivery lines are shown when you perform these actions:</span></span>
 
--   Feladás
--   Oldalak másolása
--   Tallózással keresse meg a listalapokat és jelentéseket
+-   <span data-ttu-id="3fdb3-131">Feladás</span><span class="sxs-lookup"><span data-stu-id="3fdb3-131">Post</span></span>
+-   <span data-ttu-id="3fdb3-132">Oldalak másolása</span><span class="sxs-lookup"><span data-stu-id="3fdb3-132">Copy pages</span></span>
+-   <span data-ttu-id="3fdb3-133">Tallózással keresse meg a listalapokat és jelentéseket</span><span class="sxs-lookup"><span data-stu-id="3fdb3-133">Browse list pages and reports</span></span>
 
-Ha megerősíti az értékesítési ajánlatokat, az ebből származó értékesítési jelentések az egész szállítási ütemezést mutatják, még a több kiszállításból álló rendelési sorokat is. Ezenkívül a teljes szállítási ütemezés megjelenik az összes fő lapon, például értékesítési rendelések, értékesítési ajánlatok és beszerzési rendelések lapokon.
+<span data-ttu-id="3fdb3-134">Ha megerősíti az értékesítési ajánlatokat, az ebből származó értékesítési jelentések az egész szállítási ütemezést mutatják, még a több kiszállításból álló rendelési sorokat is.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-134">When you confirm sales quotations, the resulting sales orders show the whole delivery schedule, even the order lines that have multiple deliveries.</span></span> <span data-ttu-id="3fdb3-135">Ezenkívül a teljes szállítási ütemezés megjelenik az összes fő lapon, például értékesítési rendelések, értékesítési ajánlatok és beszerzési rendelések lapokon.</span><span class="sxs-lookup"><span data-stu-id="3fdb3-135">In addition, the whole delivery schedule is shown on all the major pages, such as sales orders, sales quotations, and purchase orders.</span></span>
 
 
 

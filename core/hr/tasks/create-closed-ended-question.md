@@ -16,55 +16,55 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 71b2a2da0b705b84f79adcff25672855e7b5253f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 59f1af68e4b1198894a7cdab291021de9f3cf8a9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-closed-ended-question"></a>Eldöntendő kérdés létrehozása
+# <a name="create-a-closed-ended-question"></a><span data-ttu-id="19ec1-103">Eldöntendő kérdés létrehozása</span><span class="sxs-lookup"><span data-stu-id="19ec1-103">Create a closed ended question</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A zárt kérdések lehetővé teszik, hogy válaszlehetőségeket kínáljon fel a válaszadók számára. Először létre kell hoznia a Válaszcsoportot a válaszokkal, majd létre kell hoznia a válaszcsoportot használó kérdést. Ez az eljárás az USMF bemutatócéget használja.
+<span data-ttu-id="19ec1-104">A zárt kérdések lehetővé teszik, hogy válaszlehetőségeket kínáljon fel a válaszadók számára.</span><span class="sxs-lookup"><span data-stu-id="19ec1-104">Closed-ended questions allow you to provide options for the respondent to choose from.</span></span> <span data-ttu-id="19ec1-105">Először létre kell hoznia a Válaszcsoportot a válaszokkal, majd létre kell hoznia a válaszcsoportot használó kérdést.</span><span class="sxs-lookup"><span data-stu-id="19ec1-105">First, you need to create the Answer group with the answers, then create the question that will use the answer group.</span></span> <span data-ttu-id="19ec1-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="19ec1-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-an-answer-group"></a>Válaszcsoport létrehozása
-1. Ugorjon a Kérdőív > Tervezés > Válaszcsoportok lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket az Válaszcsoport mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-    * Használja a Véletlenszerűsítés funkciót, hogy minden alkalommal véletlenszerű sorrendben helyezze el a válaszokat, ha a válaszcsoportot felhasználják egy kérdéshez.  
-5. Kattintson a Válasz lehetőségre.
-6. Kattintson az Új lehetőségre.
-    * Ha a Véletlenszerűsítés nincs kiválasztva a Válaszcsoport számára a sorszám vezérli a válaszok megjelenítésének sorrendjét.  
-    * A válaszokhoz pontok rendelhetőek a kérdőív értékeléséhez.  
-7. A Pontok mezőben adjon meg egy számot.
-    * A helyes válasz megjelölhető, hogy jelezze melyik az. Ez használható a kérdőív pontozására.  
-8. A Válaszok mezőben adjon meg egy értéket.
-    * Folytassa a válaszkiválasztási opciók létrehozását a válaszcsoport számára.  
-9. Kattintson az Új lehetőségre.
-10. A Pontok mezőben adjon meg egy számot.
-11. A Válaszok mezőben adjon meg egy értéket.
-12. Kattintson az Új elemre.
-13. A Pontok mezőben adjon meg egy számot.
-14. A Válaszok mezőben adjon meg egy értéket.
-15. Kattintson az Új elemre.
-16. A Pontok mezőben adjon meg egy számot.
-17. A Válaszok mezőben adjon meg egy értéket.
-18. Kattintson az Új elemre.
-19. A Pontok mezőben adjon meg egy számot.
-20. A Válaszok mezőben adjon meg egy értéket.
-21. Zárja be a lapot.
-22. Zárja be a lapot.
+## <a name="create-an-answer-group"></a><span data-ttu-id="19ec1-107">Válaszcsoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="19ec1-107">Create an answer group</span></span>
+1. <span data-ttu-id="19ec1-108">Ugorjon a Kérdőív > Tervezés > Válaszcsoportok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-108">Go to Questionnaire > Design > Answer groups.</span></span>
+2. <span data-ttu-id="19ec1-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-109">Click New.</span></span>
+3. <span data-ttu-id="19ec1-110">Írjon be egy értéket az Válaszcsoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="19ec1-110">In the Answer group field, type a value.</span></span>
+4. <span data-ttu-id="19ec1-111">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="19ec1-111">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="19ec1-112">Használja a Véletlenszerűsítés funkciót, hogy minden alkalommal véletlenszerű sorrendben helyezze el a válaszokat, ha a válaszcsoportot felhasználják egy kérdéshez.</span><span class="sxs-lookup"><span data-stu-id="19ec1-112">Use the Randomize functionality to randomly place the answers in a different order each time the answer group is used for a question.</span></span>  
+5. <span data-ttu-id="19ec1-113">Kattintson a Válasz lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-113">Click Answer.</span></span>
+6. <span data-ttu-id="19ec1-114">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-114">Click New.</span></span>
+    * <span data-ttu-id="19ec1-115">Ha a Véletlenszerűsítés nincs kiválasztva a Válaszcsoport számára a sorszám vezérli a válaszok megjelenítésének sorrendjét.</span><span class="sxs-lookup"><span data-stu-id="19ec1-115">Sequence number controls the order in which the answers are displayed, unless Randomize is selected for the Answer group.</span></span>  
+    * <span data-ttu-id="19ec1-116">A válaszokhoz pontok rendelhetőek a kérdőív értékeléséhez.</span><span class="sxs-lookup"><span data-stu-id="19ec1-116">Points can be awarded to answers for use in scoring the questionnaire.</span></span>  
+7. <span data-ttu-id="19ec1-117">A Pontok mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="19ec1-117">In the Points field, enter a number.</span></span>
+    * <span data-ttu-id="19ec1-118">A helyes válasz megjelölhető, hogy jelezze melyik az.</span><span class="sxs-lookup"><span data-stu-id="19ec1-118">The correct answer can be marked to indicate that the selected answer is the correct one.</span></span> <span data-ttu-id="19ec1-119">Ez használható a kérdőív pontozására.</span><span class="sxs-lookup"><span data-stu-id="19ec1-119">This can be used for scoring the questionnaire.</span></span>  
+8. <span data-ttu-id="19ec1-120">A Válaszok mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="19ec1-120">In the Answer field, type a value.</span></span>
+    * <span data-ttu-id="19ec1-121">Folytassa a válaszkiválasztási opciók létrehozását a válaszcsoport számára.</span><span class="sxs-lookup"><span data-stu-id="19ec1-121">Continue to create answer selection options for the answer group.</span></span>  
+9. <span data-ttu-id="19ec1-122">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-122">Click New.</span></span>
+10. <span data-ttu-id="19ec1-123">A Pontok mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="19ec1-123">In the Points field, enter a number.</span></span>
+11. <span data-ttu-id="19ec1-124">A Válaszok mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="19ec1-124">In the Answer field, type a value.</span></span>
+12. <span data-ttu-id="19ec1-125">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-125">Click New.</span></span>
+13. <span data-ttu-id="19ec1-126">A Pontok mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="19ec1-126">In the Points field, enter a number.</span></span>
+14. <span data-ttu-id="19ec1-127">A Válaszok mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="19ec1-127">In the Answer field, type a value.</span></span>
+15. <span data-ttu-id="19ec1-128">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-128">Click New.</span></span>
+16. <span data-ttu-id="19ec1-129">A Pontok mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="19ec1-129">In the Points field, enter a number.</span></span>
+17. <span data-ttu-id="19ec1-130">A Válaszok mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="19ec1-130">In the Answer field, type a value.</span></span>
+18. <span data-ttu-id="19ec1-131">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-131">Click New.</span></span>
+19. <span data-ttu-id="19ec1-132">A Pontok mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="19ec1-132">In the Points field, enter a number.</span></span>
+20. <span data-ttu-id="19ec1-133">A Válaszok mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="19ec1-133">In the Answer field, type a value.</span></span>
+21. <span data-ttu-id="19ec1-134">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="19ec1-134">Close the page.</span></span>
+22. <span data-ttu-id="19ec1-135">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="19ec1-135">Close the page.</span></span>
 
-## <a name="create-the-question"></a>Kérdés létrehozása
-1. Ugorjon a Kérdőív > Tervezés > Kérdések lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A Típus mező segítségével rendezze csoportba az összetartozó kérdéseket.
-    * Használhatja a Jelölőnégyzet, Alternatív gomb vagy Kombinált lista beviteli típusokat az eldöntendő kérdésekhez.  
-4. Válasszon ki egy lehetőséget a Beviteli típus mezőben.
-5. A Válaszcsoportok mezőben adjon meg, vagy válasszon ki egy értéket.
-6. Írjon be egy értéket a Szöveg mezőbe.
+## <a name="create-the-question"></a><span data-ttu-id="19ec1-136">Kérdés létrehozása</span><span class="sxs-lookup"><span data-stu-id="19ec1-136">Create the question</span></span>
+1. <span data-ttu-id="19ec1-137">Ugorjon a Kérdőív > Tervezés > Kérdések lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-137">Go to Questionnaire > Design > Questions.</span></span>
+2. <span data-ttu-id="19ec1-138">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="19ec1-138">Click New.</span></span>
+3. <span data-ttu-id="19ec1-139">A Típus mező segítségével rendezze csoportba az összetartozó kérdéseket.</span><span class="sxs-lookup"><span data-stu-id="19ec1-139">Use the Type field to group related questions together.</span></span>
+    * <span data-ttu-id="19ec1-140">Használhatja a Jelölőnégyzet, Alternatív gomb vagy Kombinált lista beviteli típusokat az eldöntendő kérdésekhez.</span><span class="sxs-lookup"><span data-stu-id="19ec1-140">You can use input types of Check box, Alternative button, or Combo box for closed-ended questions.</span></span>  
+4. <span data-ttu-id="19ec1-141">Válasszon ki egy lehetőséget a Beviteli típus mezőben.</span><span class="sxs-lookup"><span data-stu-id="19ec1-141">In the Input type field, select an option.</span></span>
+5. <span data-ttu-id="19ec1-142">A Válaszcsoportok mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="19ec1-142">In the Answer group field, enter or select a value.</span></span>
+6. <span data-ttu-id="19ec1-143">Írjon be egy értéket a Szöveg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="19ec1-143">In the Text field, type a value.</span></span>
 
 

@@ -16,34 +16,34 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 75486202c3fdcaff78a5592389c624d8e21fa969
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 83945932d56abf6bf44476e5647f8ae7abdc3602
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="approve-vendors-for-specific-procurement-categories"></a>Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan
+# <a name="approve-vendors-for-specific-procurement-categories"></a><span data-ttu-id="53a14-103">Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan</span><span class="sxs-lookup"><span data-stu-id="53a14-103">Approve vendors for specific procurement categories</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Amikor egy beszerzési igénylést hoznak létre, lehet szükséges lesz egy engedélyezett vagy preferált szállító kiválasztása, attól függően, hogy a beszerzési irányelvek hogy vannak beállítva. Ez az eljárás bemutatja, hogyan adja meg, hogy a szállító jóváhagyott vagy preferált egy adott beszerzési kategóriához. Ezt a feladatot általában egy beszerzési szakember végzi el. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
+<span data-ttu-id="53a14-104">Amikor egy beszerzési igénylést hoznak létre, lehet szükséges lesz egy engedélyezett vagy preferált szállító kiválasztása, attól függően, hogy a beszerzési irányelvek hogy vannak beállítva.</span><span class="sxs-lookup"><span data-stu-id="53a14-104">When a purchase requisition is created, there may be a requirement to select an approved or preferred vendor, depending on how the purchasing policies are set up.</span></span> <span data-ttu-id="53a14-105">Ez az eljárás bemutatja, hogyan adja meg, hogy a szállító jóváhagyott vagy preferált egy adott beszerzési kategóriához.</span><span class="sxs-lookup"><span data-stu-id="53a14-105">This procedure shows you how to specify that a vendor is approved or preferred for a specific procurement category.</span></span> <span data-ttu-id="53a14-106">Ezt a feladatot általában egy beszerzési szakember végzi el.</span><span class="sxs-lookup"><span data-stu-id="53a14-106">This task would usually be carried out by a procurement professional.</span></span> <span data-ttu-id="53a14-107">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="53a14-107">You can use this procedure in demo data company USMF.</span></span>
 
-1. Ugrás a Beszerzés és forrás > Beszállítók > Minden szállító pontra.
-2. Válassza ki a szállítót, amelyet be szeretne állítani a kategóriához jóváhagyott vagy preferált szállítóként.
-3. A Művelet panelen kattintson az Általános elemre.
-4. Kattintson a Kategóriákra.
-5. Kattintson a Kategória hozzáadására.
-6. A Kategória mezőben válassza ki az OFFICE AND DESK ACCESSORIES (OFFICE AND DESK ACCESSORIES) lehetőséget.
-7. A Szállítói kategória állapot mezőben válassza ki az „Elsődleges” lehetőséget.
-    * Lehetőség van arra, hogy egy kategóriához több mint egy elsődleges szállítót határozzon meg.  
-8. Kattintson a Mentés gombra.
-9. Ugorjon a Beszerzés és forrás > Beszerzési kategóriák pontra.
-10. A fán válassza a „CORP PROCUREMENT CATEGORIES\OFFICE AND DESK ACCESSORIES” pontot.
-11. Bontsa ki a Szállító szakaszt.
-    * Ellenőrizze, hogy a kiválasztott szállító jelenik-e meg az Office és asztali kellékek kategória elsődleges szállítójaként. Ha feladat útmutatójaként használata ezt az eljárást, előfordulhat, hogy rá kell kattintania a Feloldás gombra, hogy letudja görgetni a szállítók listáját.  Ezen az oldalon lehetséges elsődleges és jóváhagyott szállítók hozzáadása.  
-12. A fán, nyissa ki az „OFFICE AND DESK ACCESSORIES” pontot.
-13. A fában válassza a „Scissors” pontot.
-14. Válassza a Nem lehetőséget a Szállítók öröklése szülőkategóriától: mezőben.
-15. Válassza az Igen lehetőséget a Szállítók öröklése szülőkategóriától: mezőben.
+1. <span data-ttu-id="53a14-108">Ugrás a Beszerzés és forrás > Beszállítók > Minden szállító pontra.</span><span class="sxs-lookup"><span data-stu-id="53a14-108">Go to Procurement and sourcing > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="53a14-109">Válassza ki a szállítót, amelyet be szeretne állítani a kategóriához jóváhagyott vagy preferált szállítóként.</span><span class="sxs-lookup"><span data-stu-id="53a14-109">Select the vendor that you want to set as an approved or preferred vendor for a category.</span></span>
+3. <span data-ttu-id="53a14-110">A Művelet panelen kattintson az Általános elemre.</span><span class="sxs-lookup"><span data-stu-id="53a14-110">On the Action Pane, click General.</span></span>
+4. <span data-ttu-id="53a14-111">Kattintson a Kategóriákra.</span><span class="sxs-lookup"><span data-stu-id="53a14-111">Click Categories.</span></span>
+5. <span data-ttu-id="53a14-112">Kattintson a Kategória hozzáadására.</span><span class="sxs-lookup"><span data-stu-id="53a14-112">Click Add category.</span></span>
+6. <span data-ttu-id="53a14-113">A Kategória mezőben válassza ki az OFFICE AND DESK ACCESSORIES (OFFICE AND DESK ACCESSORIES) lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="53a14-113">In the Category field, select OFFICE AND DESK ACCESSORIES (OFFICE AND DESK ACCESSORIES).</span></span>
+7. <span data-ttu-id="53a14-114">A Szállítói kategória állapot mezőben válassza ki az „Elsődleges” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="53a14-114">In the Vendor category status field, select 'Preferred'.</span></span>
+    * <span data-ttu-id="53a14-115">Lehetőség van arra, hogy egy kategóriához több mint egy elsődleges szállítót határozzon meg.</span><span class="sxs-lookup"><span data-stu-id="53a14-115">It’s possible to specify more than one preferred vendor for a category.</span></span>  
+8. <span data-ttu-id="53a14-116">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="53a14-116">Click Save.</span></span>
+9. <span data-ttu-id="53a14-117">Ugorjon a Beszerzés és forrás > Beszerzési kategóriák pontra.</span><span class="sxs-lookup"><span data-stu-id="53a14-117">Go to Procurement and sourcing > Procurement categories.</span></span>
+10. <span data-ttu-id="53a14-118">A fán válassza a „CORP PROCUREMENT CATEGORIES\OFFICE AND DESK ACCESSORIES” pontot.</span><span class="sxs-lookup"><span data-stu-id="53a14-118">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE AND DESK ACCESSORIES'.</span></span>
+11. <span data-ttu-id="53a14-119">Bontsa ki a Szállító szakaszt.</span><span class="sxs-lookup"><span data-stu-id="53a14-119">Expand the Vendors section.</span></span>
+    * <span data-ttu-id="53a14-120">Ellenőrizze, hogy a kiválasztott szállító jelenik-e meg az Office és asztali kellékek kategória elsődleges szállítójaként.</span><span class="sxs-lookup"><span data-stu-id="53a14-120">Check if the vendor that you selected  appears as a preferred vendor for the Office and desk accessories category.</span></span> <span data-ttu-id="53a14-121">Ha feladat útmutatójaként használata ezt az eljárást, előfordulhat, hogy rá kell kattintania a Feloldás gombra, hogy letudja görgetni a szállítók listáját.</span><span class="sxs-lookup"><span data-stu-id="53a14-121">If you’re running this procedure as a task guide, you may have to click the Unlock button to be able to scroll down to the list of vendors.</span></span>  <span data-ttu-id="53a14-122">Ezen az oldalon lehetséges elsődleges és jóváhagyott szállítók hozzáadása.</span><span class="sxs-lookup"><span data-stu-id="53a14-122">It’s also possible to add preferred and approved vendors on this page.</span></span>  
+12. <span data-ttu-id="53a14-123">A fán, nyissa ki az „OFFICE AND DESK ACCESSORIES” pontot.</span><span class="sxs-lookup"><span data-stu-id="53a14-123">In the tree, expand 'OFFICE AND DESK ACCESSORIES'.</span></span>
+13. <span data-ttu-id="53a14-124">A fában válassza a „Scissors” pontot.</span><span class="sxs-lookup"><span data-stu-id="53a14-124">In the tree, select 'Scissors'.</span></span>
+14. <span data-ttu-id="53a14-125">Válassza a Nem lehetőséget a Szállítók öröklése szülőkategóriától: mezőben.</span><span class="sxs-lookup"><span data-stu-id="53a14-125">Select No in the Inherit vendors from parent category: field.</span></span>
+15. <span data-ttu-id="53a14-126">Válassza az Igen lehetőséget a Szállítók öröklése szülőkategóriától: mezőben.</span><span class="sxs-lookup"><span data-stu-id="53a14-126">Select Yes in the Inherit vendors from parent category: field.</span></span>
 
 

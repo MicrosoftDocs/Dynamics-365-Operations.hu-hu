@@ -18,40 +18,40 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: bcf58b0ca995883bc466eec66a3d75c73c0be79e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 16acadf0b814ff5863873280cd8d6e6ddbdcffc8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="close-the-general-ledger-at-period-end"></a>A főkönyv lezárása időszak végén
+# <a name="close-the-general-ledger-at-period-end"></a><span data-ttu-id="d6fa8-103">A főkönyv lezárása időszak végén</span><span class="sxs-lookup"><span data-stu-id="d6fa8-103">Close the general ledger at period end</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A témakör a főkönyvi időszak zárásának végrehajtásakor általában elvégzett feladatokat ismerteti. 
+<span data-ttu-id="d6fa8-104">A témakör a főkönyvi időszak zárásának végrehajtásakor általában elvégzett feladatokat ismerteti.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-104">This topic describes the tasks that are typically completed when performing a period closing for General ledger.</span></span> 
 
-A Főkönyvben, záró eljárásokat az időszak vagy az év végén hajthatja végre. A záró folyamatok előkészítik a rendszert egy új időszakra. A rendszer új évre történő felkészítéséhez futtatni kell az év végi zárás folyamatot. Minden szervezetnek különböző folyamatai és lépései vannak, amelyek az időszakok végén futnak le. Néhány a lehetséges időszakvégi lépések közül:
+<span data-ttu-id="d6fa8-105">A Főkönyvben, záró eljárásokat az időszak vagy az év végén hajthatja végre.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-105">In General ledger, you can complete closing procedures for a period or a year.</span></span> <span data-ttu-id="d6fa8-106">A záró folyamatok előkészítik a rendszert egy új időszakra.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-106">Closing processes prepare the system for a new period.</span></span> <span data-ttu-id="d6fa8-107">A rendszer új évre történő felkészítéséhez futtatni kell az év végi zárás folyamatot.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-107">To prepare the system for a new year, you must run the year end close process.</span></span> <span data-ttu-id="d6fa8-108">Minden szervezetnek különböző folyamatai és lépései vannak, amelyek az időszakok végén futnak le.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-108">Each organization has different processes and steps that it performs for the end of a period.</span></span> <span data-ttu-id="d6fa8-109">Néhány a lehetséges időszakvégi lépések közül:</span><span class="sxs-lookup"><span data-stu-id="d6fa8-109">Here are some optional steps for period ends:</span></span>
 
--   Fejezzen be minden feladatot minden más modulhoz, például Kinnlevőségek, Kötelezettségek, és Készlet.
--   Győződjön meg róla, hogy az összes napló feladása került.
--   Futtasson devizaátértékelést, hogy létrehozzon minden nem realizált nyereséget vagy elvesztett összeget.
--   Kiegyenlítési tranzakciók a főkönyvi számlák között.
--   Felosztási kérések feldolgozása.
--   Manuális helyesbítések időszak végén.
--   Tranzakciók naplózása, és a **Főkönyvi napló** jelentés felülvizsgálata.
--   Egy konszolidációs vállalat vagy Pénzügyi jelentések segítségével konszolidáció végrehajtása.
--   Időszak végi pénzügyi kimutatások létrehozása a Pénzügyi jelentések segítségével.
--   Főkönyvi időszak átállítása **Várakoztatott** állapotra, így további feladás nem történik. Időszakot korlátozhat egy megadott felhasználócsoportnak, amikor az időszakvégi tevékenységek megjelennek, a jobb ellenőrzés érdekében. Nem tanácsos időszakokat **Véglegesen lezárva** állapotba helyezni, mert egy lezárt időszakot nem lehet újranyitni.
+-   <span data-ttu-id="d6fa8-110">Fejezzen be minden feladatot minden más modulhoz, például Kinnlevőségek, Kötelezettségek, és Készlet.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-110">Complete all the tasks for all other modules, such as Accounts receivable, Accounts payable, and Inventory.</span></span>
+-   <span data-ttu-id="d6fa8-111">Győződjön meg róla, hogy az összes napló feladása került.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-111">Verify that all journals are posted.</span></span>
+-   <span data-ttu-id="d6fa8-112">Futtasson devizaátértékelést, hogy létrehozzon minden nem realizált nyereséget vagy elvesztett összeget.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-112">Run foreign currency revaluation to generate any unrealized gain or loss amounts.</span></span>
+-   <span data-ttu-id="d6fa8-113">Kiegyenlítési tranzakciók a főkönyvi számlák között.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-113">Settle transactions for each ledger account.</span></span>
+-   <span data-ttu-id="d6fa8-114">Felosztási kérések feldolgozása.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-114">Process any required allocations.</span></span>
+-   <span data-ttu-id="d6fa8-115">Manuális helyesbítések időszak végén.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-115">Manually post period-end adjustments.</span></span>
+-   <span data-ttu-id="d6fa8-116">Tranzakciók naplózása, és a **Főkönyvi napló** jelentés felülvizsgálata.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-116">Journalize transactions, and review the **Ledger journal** report.</span></span>
+-   <span data-ttu-id="d6fa8-117">Egy konszolidációs vállalat vagy Pénzügyi jelentések segítségével konszolidáció végrehajtása.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-117">Perform a consolidation by using a consolidation company or Financial reporting.</span></span>
+-   <span data-ttu-id="d6fa8-118">Időszak végi pénzügyi kimutatások létrehozása a Pénzügyi jelentések segítségével.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-118">Generate period-end financial statements by using Financial reporting.</span></span>
+-   <span data-ttu-id="d6fa8-119">Főkönyvi időszak átállítása **Várakoztatott** állapotra, így további feladás nem történik.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-119">Set ledger periods to **On hold**, so that no further posting occurs.</span></span> <span data-ttu-id="d6fa8-120">Időszakot korlátozhat egy megadott felhasználócsoportnak, amikor az időszakvégi tevékenységek megjelennek, a jobb ellenőrzés érdekében.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-120">You can also restrict a period to a specific user group while period-end activities are occurring, for better control.</span></span> <span data-ttu-id="d6fa8-121">Nem tanácsos időszakokat **Véglegesen lezárva** állapotba helyezni, mert egy lezárt időszakot nem lehet újranyitni.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-121">It's not a good idea to set periods to **Permanently closed**, because you can't reopen a period that has been closed.</span></span>
 
-A Pénzügyi időszak lezárása munkaterület használható a különböző időszakzáró folyamatok megszervezéséhez és nyomon követéséhez. 
+<span data-ttu-id="d6fa8-122">A Pénzügyi időszak lezárása munkaterület használható a különböző időszakzáró folyamatok megszervezéséhez és nyomon követéséhez.</span><span class="sxs-lookup"><span data-stu-id="d6fa8-122">The Financial period close workspace can be used to organize and track the tasks required for various period end processes.</span></span> 
 
 
-A képernyővel kapcsolatos további információkat lásd a következő témakörökben:
-- [Pénzügyi időszak lezárása munkaterület](financial-period-close-workspace.md) 
-- [Év végi zárás](Year-end-close.md)  
-- [Pénzügyi időszakok tömeges lezárása](tasks/mass-financial-period-close.md)
+<span data-ttu-id="d6fa8-123">A képernyővel kapcsolatos további információkat lásd a következő témakörökben:</span><span class="sxs-lookup"><span data-stu-id="d6fa8-123">For more information, see the following topics for more information:</span></span>
+- [<span data-ttu-id="d6fa8-124">Pénzügyi időszak lezárása munkaterület</span><span class="sxs-lookup"><span data-stu-id="d6fa8-124">Financial period close workspace</span></span>](financial-period-close-workspace.md) 
+- [<span data-ttu-id="d6fa8-125">Év végi zárás</span><span class="sxs-lookup"><span data-stu-id="d6fa8-125">Year end close</span></span>](Year-end-close.md)  
+- [<span data-ttu-id="d6fa8-126">Pénzügyi időszakok tömeges lezárása</span><span class="sxs-lookup"><span data-stu-id="d6fa8-126">Mass financial period close</span></span>](tasks/mass-financial-period-close.md)
 
 
 

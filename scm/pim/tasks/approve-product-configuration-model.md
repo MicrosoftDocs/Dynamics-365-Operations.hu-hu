@@ -16,37 +16,37 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 6745d4d70cfbfdefd6c593ec92b2603059c4e7b0
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fa4548d3017246cbe49e2613f8990df6ea1c368b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="approve-a-product-configuration-model"></a>Termékkonfigurációs modell jóváhagyása
+# <a name="approve-a-product-configuration-model"></a><span data-ttu-id="34bd8-103">Termékkonfigurációs modell jóváhagyása</span><span class="sxs-lookup"><span data-stu-id="34bd8-103">Approve a product configuration model</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonfigurációs modellre. Ezen eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használja. Fontos megjegyezni, hogy a modell már jóvá van hagyva, de az eljárás végigvezeti a teljes folyamaton.
+<span data-ttu-id="34bd8-104">Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonfigurációs modellre.</span><span class="sxs-lookup"><span data-stu-id="34bd8-104">Running this procedure requires that at least one product configuration model is available.</span></span> <span data-ttu-id="34bd8-105">Ezen eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használja.</span><span class="sxs-lookup"><span data-stu-id="34bd8-105">This procedure uses the High end speaker model in the demo data company USMF.</span></span> <span data-ttu-id="34bd8-106">Fontos megjegyezni, hogy a modell már jóvá van hagyva, de az eljárás végigvezeti a teljes folyamaton.</span><span class="sxs-lookup"><span data-stu-id="34bd8-106">Note that this model has already been approved, but the procedure walks you through the entire process.</span></span>
 
-1. Kattintson a Termékváltozat modelldefinícióra.
-2. Kattintson a Termékkonfigurációs modellek lehetőségre.
-3. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Válassza ki a Felső kategóriás modellt ehhez az eljáráshoz.  
-4. Kattintson a Verziókra.
-5. Kattintson az Új lehetőségre.
-6. A Termékszám mezőben adjon meg, vagy válasszon ki egy értéket.
-    * A termékre mutató hivatkozás a termékkonfigurációs modell egy verziójának felel meg. Ez a lista csak olyan alaptermékeket jelenít meg, amelyek a megszorításon alapuló konfigurációs technológiát alkalmazzák.  
-7. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
-    * Válassza ki, hogy mikor lesz elérhető a termékmodell-verzió.  
-8. Adja meg a dátumot a „Záró dátum” mezőben.
-    * Válassza ki a záró dátumot, amikor a termékmodell-verzió lejár, vagy válassza a Soha lehetőséget.  
-9. A Jóváhagyás gombra kattintva megnyithatja a legördülő párbeszédablakot.
-10. A Jóváhagyó mezőben adjon meg vagy válasszon ki egy értéket.
-    * Válassza ki a termékmodellek műveletekben történő használatának jóváhagyásáért felelős személyt.  
-11. Kattintson az OK gombra.
-12. Válassza ki valamelyik lehetőséget az Árazási mód mezőben.
-    * Aktiválja a termékmodell-verziót. Egyszerre csak egy termék lehet aktív egy termékmodell esetében.  
-13. Zárja be a lapot.
+1. <span data-ttu-id="34bd8-107">Kattintson a Termékváltozat modelldefinícióra.</span><span class="sxs-lookup"><span data-stu-id="34bd8-107">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="34bd8-108">Kattintson a Termékkonfigurációs modellek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="34bd8-108">Click Product configuration models.</span></span>
+3. <span data-ttu-id="34bd8-109">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="34bd8-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="34bd8-110">Válassza ki a Felső kategóriás modellt ehhez az eljáráshoz.</span><span class="sxs-lookup"><span data-stu-id="34bd8-110">Select the High end speaker model for this procedure.</span></span>  
+4. <span data-ttu-id="34bd8-111">Kattintson a Verziókra.</span><span class="sxs-lookup"><span data-stu-id="34bd8-111">Click Versions.</span></span>
+5. <span data-ttu-id="34bd8-112">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="34bd8-112">Click New.</span></span>
+6. <span data-ttu-id="34bd8-113">A Termékszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="34bd8-113">In the Product number field, enter or select a value.</span></span>
+    * <span data-ttu-id="34bd8-114">A termékre mutató hivatkozás a termékkonfigurációs modell egy verziójának felel meg.</span><span class="sxs-lookup"><span data-stu-id="34bd8-114">The reference to a product represents a version of a product configuration model.</span></span> <span data-ttu-id="34bd8-115">Ez a lista csak olyan alaptermékeket jelenít meg, amelyek a megszorításon alapuló konfigurációs technológiát alkalmazzák.</span><span class="sxs-lookup"><span data-stu-id="34bd8-115">Only product masters which have the constraint-based configuration technology will appear in this list.</span></span>  
+7. <span data-ttu-id="34bd8-116">Adjon meg egy
+Adjon meg egy dátumot a Kezdő dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="34bd8-116">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="34bd8-117">Válassza ki, hogy mikor lesz elérhető a termékmodell-verzió.</span><span class="sxs-lookup"><span data-stu-id="34bd8-117">Select when the product model version will be available.</span></span>  
+8. <span data-ttu-id="34bd8-118">Adja meg a dátumot a „Záró dátum” mezőben.</span><span class="sxs-lookup"><span data-stu-id="34bd8-118">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="34bd8-119">Válassza ki a záró dátumot, amikor a termékmodell-verzió lejár, vagy válassza a Soha lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="34bd8-119">Select an end date when this product model version will expire, or select Never.</span></span>  
+9. <span data-ttu-id="34bd8-120">A Jóváhagyás gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="34bd8-120">Click Approve to open the drop dialog.</span></span>
+10. <span data-ttu-id="34bd8-121">A Jóváhagyó mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="34bd8-121">In the Approved by field, enter or select a value.</span></span>
+    * <span data-ttu-id="34bd8-122">Válassza ki a termékmodellek műveletekben történő használatának jóváhagyásáért felelős személyt.</span><span class="sxs-lookup"><span data-stu-id="34bd8-122">Select the person who is responsible for approving product models for use in operations.</span></span>  
+11. <span data-ttu-id="34bd8-123">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="34bd8-123">Click OK.</span></span>
+12. <span data-ttu-id="34bd8-124">Válassza ki valamelyik lehetőséget az Árazási mód mezőben.</span><span class="sxs-lookup"><span data-stu-id="34bd8-124">In the Pricing method field, select an option.</span></span>
+    * <span data-ttu-id="34bd8-125">Aktiválja a termékmodell-verziót.</span><span class="sxs-lookup"><span data-stu-id="34bd8-125">Activate the product model version.</span></span> <span data-ttu-id="34bd8-126">Egyszerre csak egy termék lehet aktív egy termékmodell esetében.</span><span class="sxs-lookup"><span data-stu-id="34bd8-126">It is only possible to have one product active for one product model at a time.</span></span>  
+13. <span data-ttu-id="34bd8-127">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="34bd8-127">Close the page.</span></span>
 
 

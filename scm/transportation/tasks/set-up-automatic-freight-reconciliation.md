@@ -17,58 +17,58 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 61b795d52d4d2586db7f42a976790ee8608e179b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-automatic-freight-reconciliation"></a>Automatikus fuvarlevél-egyeztetés beállítása
+# <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="eaae1-103">Automatikus fuvarlevél-egyeztetés beállítása</span><span class="sxs-lookup"><span data-stu-id="eaae1-103">Set up automatic freight reconciliation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan lehet beállítani az adatokat az automatikus fuvaregyeztetéshez. Ezt általában a raktár vezetője végzi el. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
+<span data-ttu-id="eaae1-104">Ez az eljárás bemutatja, hogyan lehet beállítani az adatokat az automatikus fuvaregyeztetéshez.</span><span class="sxs-lookup"><span data-stu-id="eaae1-104">This procedure shows how to set up data for automatic freight reconciliation.</span></span> <span data-ttu-id="eaae1-105">Ezt általában a raktár vezetője végzi el.</span><span class="sxs-lookup"><span data-stu-id="eaae1-105">This is typically done by a warehouse manager.</span></span> <span data-ttu-id="eaae1-106">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="eaae1-106">You can use this procedure in demo data company USMF.</span></span>
 
 
-## <a name="set-up-the-freight-bill-type"></a>Fuvarlevél típusának beállítása
-1. Ugrás a Szállításkezelés > Beállítás > Fuvaregyeztetés > Fuvarlevél típusa elemhez.
-    * A fuvarlevél típusa határozza meg, hogyan kell egyeztetni a fuvarleveleket és a szállítói számlákat.  
-2. Kattintson az Új lehetőségre.
-3. Adjon meg egy értéket a Fuvarlevél típusa mezőben.
-4. A Kalkulátorszerelvény mezőbe írja be a következőt: Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
-    * Ez a szabványos szállításkezelés-egyeztetési kalkulátorkódtár.  
-5. A Kalkulátorosztály mezőbe írja be a következőt: Microsoft.Dynamics.Ax.Tms.dll.
-    * Ez a szabványos szállításkezelés-egyeztetési kalkulátorosztály.  
-6. Kattintson az Új lehetőségre.
-7. A Leírás mezőben válassza ki az értéket, amelynek egyeznie kell a fuvarlevélen és a szállítói számlán.  
-8. Válassza az Igen lehetőséget az Egyezés szükséges mezőben.
-    * Ha ebben a mezőben az Igen értéket állítja be, ez azt jelenti, hogy a Leírás mezőben kiválasztott értéknek egyeznie kell mind a fuvarlevélen, mind a szállítói számlán. Ha a beállítása Nem, a mező üres lehet ezek egyikén.  
-9. Kattintson a Mentés gombra.
+## <a name="set-up-the-freight-bill-type"></a><span data-ttu-id="eaae1-107">Fuvarlevél típusának beállítása</span><span class="sxs-lookup"><span data-stu-id="eaae1-107">Set up the freight bill type</span></span>
+1. <span data-ttu-id="eaae1-108">Ugrás a Szállításkezelés > Beállítás > Fuvaregyeztetés > Fuvarlevél típusa elemhez.</span><span class="sxs-lookup"><span data-stu-id="eaae1-108">Go to Transportation management > Setup > Freight reconciliation > Freight bill type.</span></span>
+    * <span data-ttu-id="eaae1-109">A fuvarlevél típusa határozza meg, hogyan kell egyeztetni a fuvarleveleket és a szállítói számlákat.</span><span class="sxs-lookup"><span data-stu-id="eaae1-109">The freight bill type defines how freight bills and carrier invoices  should be matched.</span></span>  
+2. <span data-ttu-id="eaae1-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eaae1-110">Click New.</span></span>
+3. <span data-ttu-id="eaae1-111">Adjon meg egy értéket a Fuvarlevél típusa mezőben.</span><span class="sxs-lookup"><span data-stu-id="eaae1-111">In the Freight bill type field, type a value.</span></span>
+4. <span data-ttu-id="eaae1-112">A Kalkulátorszerelvény mezőbe írja be a következőt: Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.</span><span class="sxs-lookup"><span data-stu-id="eaae1-112">In the Engine assembly field, type 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.</span></span>
+    * <span data-ttu-id="eaae1-113">Ez a szabványos szállításkezelés-egyeztetési kalkulátorkódtár.</span><span class="sxs-lookup"><span data-stu-id="eaae1-113">This is the standard Transportation management matching engine code library.</span></span>  
+5. <span data-ttu-id="eaae1-114">A Kalkulátorosztály mezőbe írja be a következőt: Microsoft.Dynamics.Ax.Tms.dll.</span><span class="sxs-lookup"><span data-stu-id="eaae1-114">In the Engine class field, type 'Microsoft.Dynamics.Ax.Tms.dll'.</span></span>
+    * <span data-ttu-id="eaae1-115">Ez a szabványos szállításkezelés-egyeztetési kalkulátorosztály.</span><span class="sxs-lookup"><span data-stu-id="eaae1-115">This is the standard Transportation management matching engine class.</span></span>  
+6. <span data-ttu-id="eaae1-116">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eaae1-116">Click New.</span></span>
+7. <span data-ttu-id="eaae1-117">A Leírás mezőben válassza ki az értéket, amelynek egyeznie kell a fuvarlevélen és a szállítói számlán.</span><span class="sxs-lookup"><span data-stu-id="eaae1-117">In the Description field, choose the value that should match on the freight bill and the carrier invoice.</span></span>  
+8. <span data-ttu-id="eaae1-118">Válassza az Igen lehetőséget az Egyezés szükséges mezőben.</span><span class="sxs-lookup"><span data-stu-id="eaae1-118">In the Match required field, select 'Yes'.</span></span>
+    * <span data-ttu-id="eaae1-119">Ha ebben a mezőben az Igen értéket állítja be, ez azt jelenti, hogy a Leírás mezőben kiválasztott értéknek egyeznie kell mind a fuvarlevélen, mind a szállítói számlán.</span><span class="sxs-lookup"><span data-stu-id="eaae1-119">If you set this field to Yes this means that the value selected in the Description field needs to match on both the freight bill and the carrier invoice.</span></span> <span data-ttu-id="eaae1-120">Ha a beállítása Nem, a mező üres lehet ezek egyikén.</span><span class="sxs-lookup"><span data-stu-id="eaae1-120">If you set it to No, the field can be blank on one of these.</span></span>  
+9. <span data-ttu-id="eaae1-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="eaae1-121">Click Save.</span></span>
 
-## <a name="set-up-the-freight-bill-type-assignment"></a>Fuvarlevéltípus-hozzárendelés beállítása
-1. Zárja be a lapot.
-2. Ugrás a Szállításkezelés > Beállítás > Fuvaregyeztetés > Fuvarlevéltípus-hozzárendelések elemhez.
-    * A fuvarlevél típusú hozzárendelés segítségével megadhatja, hogy melyik fuvarlevéltípus használatos egy adott szállítóhoz.   
-3. Kattintson az Új lehetőségre.
-4. A Mód mezőben adjon meg vagy válasszon ki egy értéket.
-5. A Szállítmányozó mezőben adjon meg vagy válasszon ki egy értéket.
-6. A Fuvarlevél típusa mezőben válassza ki a korábban létrehozott fuvarlevéltípust.
-7. Zárja be a lapot.
+## <a name="set-up-the-freight-bill-type-assignment"></a><span data-ttu-id="eaae1-122">Fuvarlevéltípus-hozzárendelés beállítása</span><span class="sxs-lookup"><span data-stu-id="eaae1-122">Set up the freight bill type assignment</span></span>
+1. <span data-ttu-id="eaae1-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eaae1-123">Close the page.</span></span>
+2. <span data-ttu-id="eaae1-124">Ugrás a Szállításkezelés > Beállítás > Fuvaregyeztetés > Fuvarlevéltípus-hozzárendelések elemhez.</span><span class="sxs-lookup"><span data-stu-id="eaae1-124">Go to Transportation management > Setup > Freight reconciliation > Freight bill type assignments.</span></span>
+    * <span data-ttu-id="eaae1-125">A fuvarlevél típusú hozzárendelés segítségével megadhatja, hogy melyik fuvarlevéltípus használatos egy adott szállítóhoz.</span><span class="sxs-lookup"><span data-stu-id="eaae1-125">The freight bill type assignment is used to specify which freight bill type is used for a particular carrier.</span></span>   
+3. <span data-ttu-id="eaae1-126">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eaae1-126">Click New.</span></span>
+4. <span data-ttu-id="eaae1-127">A Mód mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="eaae1-127">In the Mode field, enter or select a value.</span></span>
+5. <span data-ttu-id="eaae1-128">A Szállítmányozó mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="eaae1-128">In the Shipping carrier field, enter or select a value.</span></span>
+6. <span data-ttu-id="eaae1-129">A Fuvarlevél típusa mezőben válassza ki a korábban létrehozott fuvarlevéltípust.</span><span class="sxs-lookup"><span data-stu-id="eaae1-129">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
+7. <span data-ttu-id="eaae1-130">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eaae1-130">Close the page.</span></span>
 
-## <a name="set-up-the-audit-master"></a>Alapvizsgálat beállítása
-1. Ugrás a Szállításkezelés > Beállítás > Fuvaregyeztetés > Alapvizsgálat elemhez.
-    * Az alapvizsgálati beállítás adja meg az automatikus szállítási egyeztetés tűréshatárait. Itt adható meg, mekkora pénzösszegeltérés lehet a fuvarlevélen és a szállítói számlán ahhoz, hogy továbbra is megtörténjen az egyeztetés. Továbbá az eltérések kezelésének módját is meghatározza.  
-2. Kattintson az Új lehetőségre.
-3. Az Alapvizsgálat azonosítója mezőbe írjon be egy értéket.
-4. A Szállítmányozó mezőben válassza ki ugyanazt a szállítmányozót, amelyet korábban már kiválasztott.
-5. A Fuvarlevél típusa mezőben válassza ki a korábban létrehozott fuvarlevéltípust.
-6. Bontsa ki a Tűréshatár szakaszt.
-7. A Minimális tűrési szint mezőben adjon meg egy számot.
-8. A Maximális tűrési szint mezőben adjon meg egy számot.
-9. Bontsa ki az Eredmény szakaszt.
-10. A Túlfizetés okkódja mezőben adjon meg vagy válasszon ki egy értéket.
-    * Ha a pénzösszegek különböznek a fuvarlevélen és a szállítói számlán, a túl- és alulfizetés okkódok megadják a számlákat, ahol nyilvántartásba kell venni a különbséget, amennyiben a különbség a tűrési szinteken belül van.  
-11. Az Alulfizetés okkódja mezőben adjon meg vagy válasszon ki egy értéket.
-12. Zárja be a lapot.
+## <a name="set-up-the-audit-master"></a><span data-ttu-id="eaae1-131">Alapvizsgálat beállítása</span><span class="sxs-lookup"><span data-stu-id="eaae1-131">Set up the audit master</span></span>
+1. <span data-ttu-id="eaae1-132">Ugrás a Szállításkezelés > Beállítás > Fuvaregyeztetés > Alapvizsgálat elemhez.</span><span class="sxs-lookup"><span data-stu-id="eaae1-132">Go to Transportation management > Setup > Freight reconciliation > Audit master.</span></span>
+    * <span data-ttu-id="eaae1-133">Az alapvizsgálati beállítás adja meg az automatikus szállítási egyeztetés tűréshatárait.</span><span class="sxs-lookup"><span data-stu-id="eaae1-133">The audit master defines the tolerance limits for automatic freight reconciliation.</span></span> <span data-ttu-id="eaae1-134">Itt adható meg, mekkora pénzösszegeltérés lehet a fuvarlevélen és a szállítói számlán ahhoz, hogy továbbra is megtörténjen az egyeztetés.</span><span class="sxs-lookup"><span data-stu-id="eaae1-134">It specifies by how much the monetary amounts on the freight bill and the carrier invoice can differ and still allow reconciliation to occur.</span></span> <span data-ttu-id="eaae1-135">Továbbá az eltérések kezelésének módját is meghatározza.</span><span class="sxs-lookup"><span data-stu-id="eaae1-135">It also defines how to handle discrepancies.</span></span>  
+2. <span data-ttu-id="eaae1-136">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eaae1-136">Click New.</span></span>
+3. <span data-ttu-id="eaae1-137">Az Alapvizsgálat azonosítója mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="eaae1-137">In the Audit master ID field, type a value.</span></span>
+4. <span data-ttu-id="eaae1-138">A Szállítmányozó mezőben válassza ki ugyanazt a szállítmányozót, amelyet korábban már kiválasztott.</span><span class="sxs-lookup"><span data-stu-id="eaae1-138">In the Shipping carrier  field, select the same shipping carrier as you did earlier.</span></span>
+5. <span data-ttu-id="eaae1-139">A Fuvarlevél típusa mezőben válassza ki a korábban létrehozott fuvarlevéltípust.</span><span class="sxs-lookup"><span data-stu-id="eaae1-139">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
+6. <span data-ttu-id="eaae1-140">Bontsa ki a Tűréshatár szakaszt.</span><span class="sxs-lookup"><span data-stu-id="eaae1-140">Expand the Tolerance section.</span></span>
+7. <span data-ttu-id="eaae1-141">A Minimális tűrési szint mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="eaae1-141">In the Minimum tolerance level field, enter a number.</span></span>
+8. <span data-ttu-id="eaae1-142">A Maximális tűrési szint mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="eaae1-142">In the Maximum tolerance level field, enter a number.</span></span>
+9. <span data-ttu-id="eaae1-143">Bontsa ki az Eredmény szakaszt.</span><span class="sxs-lookup"><span data-stu-id="eaae1-143">Expand the Result section.</span></span>
+10. <span data-ttu-id="eaae1-144">A Túlfizetés okkódja mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="eaae1-144">In the Overpayment reason code field, enter or select a value.</span></span>
+    * <span data-ttu-id="eaae1-145">Ha a pénzösszegek különböznek a fuvarlevélen és a szállítói számlán, a túl- és alulfizetés okkódok megadják a számlákat, ahol nyilvántartásba kell venni a különbséget, amennyiben a különbség a tűrési szinteken belül van.</span><span class="sxs-lookup"><span data-stu-id="eaae1-145">If the monetary amounts differ on the freight bill and the carrier invoice, the overpayment and underpayment reason codes specify the accounts that the difference should be registered on, as long as the difference is within the tolerance levels.</span></span>  
+11. <span data-ttu-id="eaae1-146">Az Alulfizetés okkódja mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="eaae1-146">In the Underpayment reason code field, enter or select a value.</span></span>
+12. <span data-ttu-id="eaae1-147">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eaae1-147">Close the page.</span></span>
 
 

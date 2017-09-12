@@ -17,48 +17,48 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: bd584bbb49ea83c4debf11ad0169c346ef0f9637
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5d3b5690bfbd10b77e784d35d0c4f4518de58333
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="use-a-continuity-program"></a>Folytonos program használata
+# <a name="use-a-continuity-program"></a><span data-ttu-id="f69db-103">Folytonos program használata</span><span class="sxs-lookup"><span data-stu-id="f69db-103">Use a continuity program</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás a folytonos program révén történő értékesítés és a kapcsolódó vevői rendelések feldolgozását mutatja be. Az eljárás végrehajtásához a felhasználónak hívásközpont felhasználójaként kell beállítva lennie. Ez az eljárás az USRT bemutatócéget használja.
+<span data-ttu-id="f69db-104">Ez az eljárás a folytonos program révén történő értékesítés és a kapcsolódó vevői rendelések feldolgozását mutatja be.</span><span class="sxs-lookup"><span data-stu-id="f69db-104">This procedure walks through selling a continuity program and processing related sales orders.</span></span> <span data-ttu-id="f69db-105">Az eljárás végrehajtásához a felhasználónak hívásközpont felhasználójaként kell beállítva lennie.</span><span class="sxs-lookup"><span data-stu-id="f69db-105">To complete this procedure, the user has to be set up as a call center user.</span></span> <span data-ttu-id="f69db-106">Ez az eljárás az USRT bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="f69db-106">This procedure uses the USRT demo data company.</span></span>
 
-1. Nyissa meg a következőt: Kiskereskedelem és kereskedelem > Vevők > Ügyfélszolgálat.
-2. A Keresés szövegben mezőbe írja be, hogy „Karen”, majd nyomja le a Tab billentyűt.
-    * Megjelenik a Speciális keresés párbeszédpanel. Ha nem, kattintson a Keresés gombra a mező jobb oldalán.  
-3. A listában jelölje meg a kiválasztott sort.
-    * Elvileg csak egy sor látszik, amely a Karen Berg értéket tünteti fel. Jelölje ki a sort úgy, hogy rákattint a rács bal szélén látható pipa oszlopra.  
-4. Kattintson a Kiválasztás lehetőségre.
-5. Kattintson az Új értékesítési rendelés gombra.
-    * Érdemes megjegyezni az értékesítési rendelés számát. Később szükség lesz rá az eljárás során.  
-6. A Cikkszám mezőbe írja be, hogy „88000”, majd nyomja le a Tab billentyűt.
-    * Ez egy folytonos cikk az USRT bemutatóadatok között.  
-7. Kattintson a Befejezés gombra.
-8. A Fizetési mód mezőbe írja be, hogy „Visa”.
-9. Kattintson a Hitelkártya hozzáadása lehetőségre.
-    * Ezen az oldalon adja meg a szükséges hitelkártyaadatokat.  
-10. Kattintson az OK gombra.
-11. Bontsa ki a Kifizetés szakaszt.
-    * Hívásközponti rendelés elküldéséhez meg kell adni a rendeléshez tartozó kifizetéseket.  
-12. Kattintson az OK gombra.
-13. Kattintson a Küldés hivatkozásra.
-    * Végzett az új folyamatos rendelés létrehozásával. Ezt követően két kötegelt eljárás futtatása következik, amelyek a folytonos rendelés feldolgozását végzik.  
-14. Zárja be a lapot.
-15. Ugorjon a Kiskereskedelem és kereskedelem > Folytonosság > Folytonos fizetések feldolgozása elemre.
-16. A Folytonos cikk mezőbe írja be, hogy „88000”, és nyomja le a Tab billentyűt.
-17. Kattintson az OK gombra.
-18. Ugorjon a Kiskereskedelem és kereskedelem > Folytonosság > Folytonos gyermekrendelések létrehozása elemre.
-    * Ezt a folyamat új értékesítési rendeléseket hoz létre a folyamatos programok beállításai alapján.  
-19. A Folytonos cikk mezőbe írja be, hogy „88000”, és nyomja le a Tab billentyűt.
-    * A „88000” egy folytonos cikk az USRT-bemutatóadatok között.  
-20. Az Értékesítési rendelés mezőben adjon meg vagy válasszon ki egy értéket.
-    * Adja meg az eljárás során korábban feljegyzett értékesítési rendelés számát. Ez minimálisra csökkenti az eljáráshoz szükséges feldolgozási időt. A Értékesítési rendelés mező kitöltése nem kötelező - bármely programhoz feldolgozható az összes megrendelés.  
-21. Kattintson az OK gombra.
+1. <span data-ttu-id="f69db-107">Nyissa meg a következőt: Kiskereskedelem és kereskedelem > Vevők > Ügyfélszolgálat.</span><span class="sxs-lookup"><span data-stu-id="f69db-107">Go to Retail and commerce > Customers > Customer service.</span></span>
+2. <span data-ttu-id="f69db-108">A Keresés szövegben mezőbe írja be, hogy „Karen”, majd nyomja le a Tab billentyűt.</span><span class="sxs-lookup"><span data-stu-id="f69db-108">In the SearchText field, type 'Karen' and then press the Tab key.</span></span>
+    * <span data-ttu-id="f69db-109">Megjelenik a Speciális keresés párbeszédpanel.</span><span class="sxs-lookup"><span data-stu-id="f69db-109">The advanced search dialog should pop up.</span></span> <span data-ttu-id="f69db-110">Ha nem, kattintson a Keresés gombra a mező jobb oldalán.</span><span class="sxs-lookup"><span data-stu-id="f69db-110">If it doesn't, click Search to the right of this field.</span></span>  
+3. <span data-ttu-id="f69db-111">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="f69db-111">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="f69db-112">Elvileg csak egy sor látszik, amely a Karen Berg értéket tünteti fel.</span><span class="sxs-lookup"><span data-stu-id="f69db-112">There should be only one row with Karen Berg showing.</span></span> <span data-ttu-id="f69db-113">Jelölje ki a sort úgy, hogy rákattint a rács bal szélén látható pipa oszlopra.</span><span class="sxs-lookup"><span data-stu-id="f69db-113">Select the row by clicking on the checkmark column on the far left of the grid.</span></span>  
+4. <span data-ttu-id="f69db-114">Kattintson a Kiválasztás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f69db-114">Click Select.</span></span>
+5. <span data-ttu-id="f69db-115">Kattintson az Új értékesítési rendelés gombra.</span><span class="sxs-lookup"><span data-stu-id="f69db-115">Click New sales order.</span></span>
+    * <span data-ttu-id="f69db-116">Érdemes megjegyezni az értékesítési rendelés számát.</span><span class="sxs-lookup"><span data-stu-id="f69db-116">It's a good idea to note the sales order number.</span></span> <span data-ttu-id="f69db-117">Később szükség lesz rá az eljárás során.</span><span class="sxs-lookup"><span data-stu-id="f69db-117">You'll need it later in this procedure.</span></span>  
+6. <span data-ttu-id="f69db-118">A Cikkszám mezőbe írja be, hogy „88000”, majd nyomja le a Tab billentyűt.</span><span class="sxs-lookup"><span data-stu-id="f69db-118">In the Item number field, type '88000' and then press the Tab key.</span></span>
+    * <span data-ttu-id="f69db-119">Ez egy folytonos cikk az USRT bemutatóadatok között.</span><span class="sxs-lookup"><span data-stu-id="f69db-119">This is a continuity item in the USRT demo data.</span></span>  
+7. <span data-ttu-id="f69db-120">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="f69db-120">Click Complete.</span></span>
+8. <span data-ttu-id="f69db-121">A Fizetési mód mezőbe írja be, hogy „Visa”.</span><span class="sxs-lookup"><span data-stu-id="f69db-121">In the Payment method field, enter 'Visa'.</span></span>
+9. <span data-ttu-id="f69db-122">Kattintson a Hitelkártya hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f69db-122">Click Add credit card.</span></span>
+    * <span data-ttu-id="f69db-123">Ezen az oldalon adja meg a szükséges hitelkártyaadatokat.</span><span class="sxs-lookup"><span data-stu-id="f69db-123">Enter the required credit card information on this page.</span></span>  
+10. <span data-ttu-id="f69db-124">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f69db-124">Click OK.</span></span>
+11. <span data-ttu-id="f69db-125">Bontsa ki a Kifizetés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="f69db-125">Expand the Payment section.</span></span>
+    * <span data-ttu-id="f69db-126">Hívásközponti rendelés elküldéséhez meg kell adni a rendeléshez tartozó kifizetéseket.</span><span class="sxs-lookup"><span data-stu-id="f69db-126">To submit a call center order, payments have to be entered for the order.</span></span>  
+12. <span data-ttu-id="f69db-127">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f69db-127">Click OK.</span></span>
+13. <span data-ttu-id="f69db-128">Kattintson a Küldés hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="f69db-128">Click Submit.</span></span>
+    * <span data-ttu-id="f69db-129">Végzett az új folyamatos rendelés létrehozásával.</span><span class="sxs-lookup"><span data-stu-id="f69db-129">You're done creating a new continuity order.</span></span> <span data-ttu-id="f69db-130">Ezt követően két kötegelt eljárás futtatása következik, amelyek a folytonos rendelés feldolgozását végzik.</span><span class="sxs-lookup"><span data-stu-id="f69db-130">Next, you'll run two batch processes that are used to process the continuity orders.</span></span>  
+14. <span data-ttu-id="f69db-131">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="f69db-131">Close the page.</span></span>
+15. <span data-ttu-id="f69db-132">Ugorjon a Kiskereskedelem és kereskedelem > Folytonosság > Folytonos fizetések feldolgozása elemre.</span><span class="sxs-lookup"><span data-stu-id="f69db-132">Go to Retail and commerce > Continuity > Process continuity payments.</span></span>
+16. <span data-ttu-id="f69db-133">A Folytonos cikk mezőbe írja be, hogy „88000”, és nyomja le a Tab billentyűt.</span><span class="sxs-lookup"><span data-stu-id="f69db-133">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
+17. <span data-ttu-id="f69db-134">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f69db-134">Click OK.</span></span>
+18. <span data-ttu-id="f69db-135">Ugorjon a Kiskereskedelem és kereskedelem > Folytonosság > Folytonos gyermekrendelések létrehozása elemre.</span><span class="sxs-lookup"><span data-stu-id="f69db-135">Go to Retail and commerce > Continuity > Create continuity child orders.</span></span>
+    * <span data-ttu-id="f69db-136">Ezt a folyamat új értékesítési rendeléseket hoz létre a folyamatos programok beállításai alapján.</span><span class="sxs-lookup"><span data-stu-id="f69db-136">This process will create new sales orders based on the settings of your continuity programs.</span></span>  
+19. <span data-ttu-id="f69db-137">A Folytonos cikk mezőbe írja be, hogy „88000”, és nyomja le a Tab billentyűt.</span><span class="sxs-lookup"><span data-stu-id="f69db-137">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
+    * <span data-ttu-id="f69db-138">A „88000” egy folytonos cikk az USRT-bemutatóadatok között.</span><span class="sxs-lookup"><span data-stu-id="f69db-138">Item '88000' is a continuity item in the USRT demo data.</span></span>  
+20. <span data-ttu-id="f69db-139">Az Értékesítési rendelés mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f69db-139">In the Sales order field, enter or select a value.</span></span>
+    * <span data-ttu-id="f69db-140">Adja meg az eljárás során korábban feljegyzett értékesítési rendelés számát.</span><span class="sxs-lookup"><span data-stu-id="f69db-140">Enter the sales order number that you noted earlier in the procedure.</span></span> <span data-ttu-id="f69db-141">Ez minimálisra csökkenti az eljáráshoz szükséges feldolgozási időt.</span><span class="sxs-lookup"><span data-stu-id="f69db-141">This will keep the processing time to a minimal for this procedure.</span></span> <span data-ttu-id="f69db-142">A Értékesítési rendelés mező kitöltése nem kötelező - bármely programhoz feldolgozható az összes megrendelés.</span><span class="sxs-lookup"><span data-stu-id="f69db-142">The Sales order field field is optional--you could process all orders for any one program.</span></span>  
+21. <span data-ttu-id="f69db-143">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f69db-143">Click OK.</span></span>
 
 

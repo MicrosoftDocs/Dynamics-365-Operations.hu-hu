@@ -16,7 +16,7 @@ ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: b2b1b99fd4c7c439ad89440827ad78173d371855
@@ -26,242 +26,242 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Kérdőívek terjesztése és kitöltése
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="c2db2-103">Kérdőívek terjesztése és kitöltése</span><span class="sxs-lookup"><span data-stu-id="c2db2-103">Distribute and complete a questionnaire</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-A témakör leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők. 
+<span data-ttu-id="c2db2-104">A témakör leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők.</span><span class="sxs-lookup"><span data-stu-id="c2db2-104">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-A kérdőívek terjesztésének több módja van:
+<span data-ttu-id="c2db2-105">A kérdőívek terjesztésének több módja van:</span><span class="sxs-lookup"><span data-stu-id="c2db2-105">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Jelölje meg aktívként a kérdőívet. A kérdőív ezt követően elérhetővé válik minden alkalmazott számára, kivéve ha a kérdőív csoport úgy van beállítva, hogy a hozzáférés korlátozva van.
--   Rendeljen jogokat a kérdőív csoporthoz. A kérdőív ezt követően a kiválasztott csoport minden tagja számára elérhető lesz.
--   Hozzon létre tervezett válaszmunkameneteket. A kérdőív ekkor csak egy bizonyos személy részére áll rendelkezésre.
--   Hozzon létre egy ütemezést. A kérdőív ekkor több felhasználó számára is elérhető lehet.
+-   <span data-ttu-id="c2db2-106">Jelölje meg aktívként a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-106">Mark the questionnaire as active.</span></span> <span data-ttu-id="c2db2-107">A kérdőív ezt követően elérhetővé válik minden alkalmazott számára, kivéve ha a kérdőív csoport úgy van beállítva, hogy a hozzáférés korlátozva van.</span><span class="sxs-lookup"><span data-stu-id="c2db2-107">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="c2db2-108">Rendeljen jogokat a kérdőív csoporthoz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-108">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="c2db2-109">A kérdőív ezt követően a kiválasztott csoport minden tagja számára elérhető lesz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-109">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="c2db2-110">Hozzon létre tervezett válaszmunkameneteket.</span><span class="sxs-lookup"><span data-stu-id="c2db2-110">Create planned answer sessions.</span></span> <span data-ttu-id="c2db2-111">A kérdőív ekkor csak egy bizonyos személy részére áll rendelkezésre.</span><span class="sxs-lookup"><span data-stu-id="c2db2-111">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="c2db2-112">Hozzon létre egy ütemezést.</span><span class="sxs-lookup"><span data-stu-id="c2db2-112">Create a schedule.</span></span> <span data-ttu-id="c2db2-113">A kérdőív ekkor több felhasználó számára is elérhető lehet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-113">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Kérdőív aktívként való megjelölése
-Ha szeretné, hogy a kérdőívet minden alkalmazott kitölthesse, állítsa az **Aktív** mezőt **Igen** értékre a **Kérdőívek** oldalon. A válaszadók több alkalommal is kitölthetik a kérdőívet. Ez a funkció akkor hasznos, ha azt szeretné, hogy egész évben folyamatosak legyenek a visszajelzések. Például létrehozhat egy kérdőívet, amelyen keresztül az alkalmazottak a menza étkezési lehetőségeivel kapcsolatban adhatnak visszajelzéseket.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="c2db2-114">Kérdőív aktívként való megjelölése</span><span class="sxs-lookup"><span data-stu-id="c2db2-114">Marking a questionnaire as active</span></span>
+<span data-ttu-id="c2db2-115">Ha szeretné, hogy a kérdőívet minden alkalmazott kitölthesse, állítsa az **Aktív** mezőt **Igen** értékre a **Kérdőívek** oldalon.</span><span class="sxs-lookup"><span data-stu-id="c2db2-115">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="c2db2-116">A válaszadók több alkalommal is kitölthetik a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-116">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="c2db2-117">Ez a funkció akkor hasznos, ha azt szeretné, hogy egész évben folyamatosak legyenek a visszajelzések.</span><span class="sxs-lookup"><span data-stu-id="c2db2-117">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="c2db2-118">Például létrehozhat egy kérdőívet, amelyen keresztül az alkalmazottak a menza étkezési lehetőségeivel kapcsolatban adhatnak visszajelzéseket.</span><span class="sxs-lookup"><span data-stu-id="c2db2-118">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Kérdőívcsoportok
-Létrehozhat kérdőívcsoportokat, amelyekhez beállíthatja azon lehetséges válaszadókat, akiknek a kérdőív szól. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="c2db2-119">Kérdőívcsoportok</span><span class="sxs-lookup"><span data-stu-id="c2db2-119">Questionnaire groups</span></span>
+<span data-ttu-id="c2db2-120">Létrehozhat kérdőívcsoportokat, amelyekhez beállíthatja azon lehetséges válaszadókat, akiknek a kérdőív szól.</span><span class="sxs-lookup"><span data-stu-id="c2db2-120">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-A következő oldalakról hozhat létre kérdőív csoportokat:
+<span data-ttu-id="c2db2-121">A következő oldalakról hozhat létre kérdőív csoportokat:</span><span class="sxs-lookup"><span data-stu-id="c2db2-121">You can create questionnaire groups from the following pages:</span></span>
 
--   **Kérdőív csoportok**– Csak az egyes kérdőív csoportokban szereplő személyek tölthetik ki a kérdőívet. Például ha csak az alvállalkozókat szeretné megkérdezni, létrehozhat olyan kérdőív csoportokat, amelyekbe ezen specifikus válaszadókat vonhatja be.
--   **Kérdőív csoportok tagjai** – Személyek adhat hozzá a kérdőív csoportokhoz.
+-   <span data-ttu-id="c2db2-122">**Kérdőív csoportok**– Csak az egyes kérdőív csoportokban szereplő személyek tölthetik ki a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-122">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="c2db2-123">Például ha csak az alvállalkozókat szeretné megkérdezni, létrehozhat olyan kérdőív csoportokat, amelyekbe ezen specifikus válaszadókat vonhatja be.</span><span class="sxs-lookup"><span data-stu-id="c2db2-123">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="c2db2-124">**Kérdőív csoportok tagjai** – Személyek adhat hozzá a kérdőív csoportokhoz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-124">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-Kérdőívhez kérdőívcsoport hozzárendeléséhez a **Kérdőívek** oldalon kattintson a **Felhasználói jogok** elemre. A kérdőív aktívként történő elmentése után a kérdőívcsoport tagjai kitölthetik a kérdőívet. Ez a funkció akkor hasznos, ha szeretné a kérdőívet tesztelni személyek egy kiválasztott csoportján, mielőtt nagyobb csoport számára közzétenné, illetve ha egy kérdőívvel egy nagyon specifikus célközönséget szeretne megcélozni.
+<span data-ttu-id="c2db2-125">Kérdőívhez kérdőívcsoport hozzárendeléséhez a **Kérdőívek** oldalon kattintson a **Felhasználói jogok** elemre.</span><span class="sxs-lookup"><span data-stu-id="c2db2-125">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="c2db2-126">A kérdőív aktívként történő elmentése után a kérdőívcsoport tagjai kitölthetik a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-126">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="c2db2-127">Ez a funkció akkor hasznos, ha szeretné a kérdőívet tesztelni személyek egy kiválasztott csoportján, mielőtt nagyobb csoport számára közzétenné, illetve ha egy kérdőívvel egy nagyon specifikus célközönséget szeretne megcélozni.</span><span class="sxs-lookup"><span data-stu-id="c2db2-127">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Tervezett válaszmunkamenet egy kérdőívenben
-A tervezett válaszmunkamenetek olyan kérdőívek, amelyek megtervezettek és a kijelölt válaszadóknak szólnak. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="c2db2-128">Tervezett válaszmunkamenet egy kérdőívenben</span><span class="sxs-lookup"><span data-stu-id="c2db2-128">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="c2db2-129">A tervezett válaszmunkamenetek olyan kérdőívek, amelyek megtervezettek és a kijelölt válaszadóknak szólnak.</span><span class="sxs-lookup"><span data-stu-id="c2db2-129">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-> **Megjegyzés:** Egy tervezett válaszadási munkamenet beállítása előtt meg kell terveznie a kérdőívet. 
+> <span data-ttu-id="c2db2-130">**Megjegyzés:** Egy tervezett válaszadási munkamenet beállítása előtt meg kell terveznie a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-130">**Note** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-A **Tervezett válaszmunkamenetek** képernyőn lehet létrehozni tervezett válaszmunkamenetet egy bizonyos alkalmazotthoz. A lapon megjelenő listában megjelenik minden tervezett kérdőív. 
+<span data-ttu-id="c2db2-131">A **Tervezett válaszmunkamenetek** képernyőn lehet létrehozni tervezett válaszmunkamenetet egy bizonyos alkalmazotthoz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-131">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="c2db2-132">A lapon megjelenő listában megjelenik minden tervezett kérdőív.</span><span class="sxs-lookup"><span data-stu-id="c2db2-132">The list on the page displays all planned questionnaires.</span></span> 
 
-A tervezett válaszadási munkamenetek a **Kérdőív ütemezés** oldalon is használhatók, ahol többféle személy számára alkalmas kérdőíveket lehet tervezni:
+<span data-ttu-id="c2db2-133">A tervezett válaszadási munkamenetek a **Kérdőív ütemezés** oldalon is használhatók, ahol többféle személy számára alkalmas kérdőíveket lehet tervezni:</span><span class="sxs-lookup"><span data-stu-id="c2db2-133">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Alkalmazottak
--   Tanfolyam résztvevői
--   Szervezeti egységek
+-   <span data-ttu-id="c2db2-134">Alkalmazottak</span><span class="sxs-lookup"><span data-stu-id="c2db2-134">Employees</span></span>
+-   <span data-ttu-id="c2db2-135">Tanfolyam résztvevői</span><span class="sxs-lookup"><span data-stu-id="c2db2-135">Course participants</span></span>
+-   <span data-ttu-id="c2db2-136">Szervezeti egységek</span><span class="sxs-lookup"><span data-stu-id="c2db2-136">Organizational units</span></span>
 
-Minden egyes ember csak egyszer töltheti ki a kérdőívet.
+<span data-ttu-id="c2db2-137">Minden egyes ember csak egyszer töltheti ki a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-137">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Kérdőív ütemezése
-Lehetőség van több válaszadó részére is ütemezni egy kérdőívet.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="c2db2-138">Kérdőív ütemezése</span><span class="sxs-lookup"><span data-stu-id="c2db2-138">Scheduling a questionnaire</span></span>
+<span data-ttu-id="c2db2-139">Lehetőség van több válaszadó részére is ütemezni egy kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-139">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Tervezés típusai
+### <a name="planning-types"></a><span data-ttu-id="c2db2-140">Tervezés típusai</span><span class="sxs-lookup"><span data-stu-id="c2db2-140">Planning types</span></span>
 
-A tervezési típusokra akkor van szükség, ha több válaszadó részére szeretné ütemezni a tervezett válaszadási munkameneteket. A tervezési típusok a kérdőív-ütemezések osztályozására szolgálnak. Például az alábbi célokból ütemezhet kérdőíveket:
+<span data-ttu-id="c2db2-141">A tervezési típusokra akkor van szükség, ha több válaszadó részére szeretné ütemezni a tervezett válaszadási munkameneteket.</span><span class="sxs-lookup"><span data-stu-id="c2db2-141">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="c2db2-142">A tervezési típusok a kérdőív-ütemezések osztályozására szolgálnak.</span><span class="sxs-lookup"><span data-stu-id="c2db2-142">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="c2db2-143">Például az alábbi célokból ütemezhet kérdőíveket:</span><span class="sxs-lookup"><span data-stu-id="c2db2-143">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Értékelés
--   Felmérés
--   Tesztelés
+-   <span data-ttu-id="c2db2-144">Értékelés</span><span class="sxs-lookup"><span data-stu-id="c2db2-144">Evaluation</span></span>
+-   <span data-ttu-id="c2db2-145">Felmérés</span><span class="sxs-lookup"><span data-stu-id="c2db2-145">Survey</span></span>
+-   <span data-ttu-id="c2db2-146">Tesztelés</span><span class="sxs-lookup"><span data-stu-id="c2db2-146">Testing</span></span>
 
-A **Kérdőív-ütemezések** oldalon megadhat tervezési típusokat egy kérdőív-ütemezéshez.
+<span data-ttu-id="c2db2-147">A **Kérdőív-ütemezések** oldalon megadhat tervezési típusokat egy kérdőív-ütemezéshez.</span><span class="sxs-lookup"><span data-stu-id="c2db2-147">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Hivatkozástípusok kérdőívhez
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="c2db2-148">Hivatkozástípusok kérdőívhez</span><span class="sxs-lookup"><span data-stu-id="c2db2-148">Reference types for questionnaire</span></span>
 
-Hivatkozástípusok használatával megadhat feltételeket, amelyek segítségével kijelölhet bizonyos válaszadókat a kérdőív ütemezésekor. 
+<span data-ttu-id="c2db2-149">Hivatkozástípusok használatával megadhat feltételeket, amelyek segítségével kijelölhet bizonyos válaszadókat a kérdőív ütemezésekor.</span><span class="sxs-lookup"><span data-stu-id="c2db2-149">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Használja a **Hivatkozástípusok** lapot a kérdőívekhez tartozó hivatkozási típusok beállításához. Minden egyes hivatkozástípus megfelel a Microsoft Dynamics 365 for Finance and Operations egy adott táblájának. Kérdőív-ütemezések létrehozásakor meg lehet adni bizonyos rekordokat vagy tartományokat a táblázatban, amelyhez a kérdőívet társítani szeretné. 
+<span data-ttu-id="c2db2-150">Használja a **Hivatkozástípusok** lapot a kérdőívekhez tartozó hivatkozási típusok beállításához.</span><span class="sxs-lookup"><span data-stu-id="c2db2-150">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="c2db2-151">Minden egyes hivatkozástípus megfelel a Microsoft Dynamics 365 for Finance and Operations egy adott táblájának.</span><span class="sxs-lookup"><span data-stu-id="c2db2-151">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="c2db2-152">Kérdőív-ütemezések létrehozásakor meg lehet adni bizonyos rekordokat vagy tartományokat a táblázatban, amelyhez a kérdőívet társítani szeretné.</span><span class="sxs-lookup"><span data-stu-id="c2db2-152">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Például ha a Tanfolyamok táblázatoz választja, megadhatja, hogy melyik tanfolyam résztvevőinek számára jelenjen meg a kérdőív. Miután beállított egy hivatkozást a Tanfolyamok táblázathoz, bizonyos mezők és gombok elérhetővé válnak a **Tanfolyamok** lapon.
+<span data-ttu-id="c2db2-153">Például ha a Tanfolyamok táblázatoz választja, megadhatja, hogy melyik tanfolyam résztvevőinek számára jelenjen meg a kérdőív.</span><span class="sxs-lookup"><span data-stu-id="c2db2-153">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="c2db2-154">Miután beállított egy hivatkozást a Tanfolyamok táblázathoz, bizonyos mezők és gombok elérhetővé válnak a **Tanfolyamok** lapon.</span><span class="sxs-lookup"><span data-stu-id="c2db2-154">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Kérdőív-ütemezések
+### <a name="questionnaire-schedules"></a><span data-ttu-id="c2db2-155">Kérdőív-ütemezések</span><span class="sxs-lookup"><span data-stu-id="c2db2-155">Questionnaire schedules</span></span>
 
-A kérdőív-ütemezések segítségével több tervezett válaszmunkamenetet is generálhat egy csoport számára, egy hivatkozástípus alapján. Az ütemezés létrehozása a **Kérdőív-ütemezések** oldalon történik. Válasszon ki egy tervezési típust az ütemezés kategorizálásához, valamint válassza ki azon hivatkozási típust, amellyel a meghatározott felhasználókat le szeretné kérdezni a rendszerből. Például a hivatkozás típusaként a Tanfolyamok táblázatot állítja be, kiválaszthat egy adott tanfolyamot a **Hivatkozás** mezőben. 
+<span data-ttu-id="c2db2-156">A kérdőív-ütemezések segítségével több tervezett válaszmunkamenetet is generálhat egy csoport számára, egy hivatkozástípus alapján.</span><span class="sxs-lookup"><span data-stu-id="c2db2-156">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="c2db2-157">Az ütemezés létrehozása a **Kérdőív-ütemezések** oldalon történik.</span><span class="sxs-lookup"><span data-stu-id="c2db2-157">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="c2db2-158">Válasszon ki egy tervezési típust az ütemezés kategorizálásához, valamint válassza ki azon hivatkozási típust, amellyel a meghatározott felhasználókat le szeretné kérdezni a rendszerből.</span><span class="sxs-lookup"><span data-stu-id="c2db2-158">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="c2db2-159">Például a hivatkozás típusaként a Tanfolyamok táblázatot állítja be, kiválaszthat egy adott tanfolyamot a **Hivatkozás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="c2db2-159">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Kattintson a **Beállítás részletei** lehetőségre egy kérdőív és más feltételek kijelöléséhez. Például megadhatja az oktató nevét feltételként, ha a kérdőív az oktató teljesítményére kíváncsi. Miután befejezte a beállítások megadását, a rendszer létrehozza a tervezett válaszadási munkamenetek azon felhasználóknak, akik szerepelnek a lekérdezésben. 
+<span data-ttu-id="c2db2-160">Kattintson a **Beállítás részletei** lehetőségre egy kérdőív és más feltételek kijelöléséhez.</span><span class="sxs-lookup"><span data-stu-id="c2db2-160">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="c2db2-161">Például megadhatja az oktató nevét feltételként, ha a kérdőív az oktató teljesítményére kíváncsi.</span><span class="sxs-lookup"><span data-stu-id="c2db2-161">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="c2db2-162">Miután befejezte a beállítások megadását, a rendszer létrehozza a tervezett válaszadási munkamenetek azon felhasználóknak, akik szerepelnek a lekérdezésben.</span><span class="sxs-lookup"><span data-stu-id="c2db2-162">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Kattintson a **Tervezett válaszadási munkamenetek** lehetőségre, hogy megtekinthesse a válaszadási munkameneteket egy adott ütemezéshez. Ezt követően manuálisan további tervezett válaszadási munkameneteket is létrehozása, illetve kitörölheti azon tervezett válaszadási munkameneteket, amelyre még nem érkezett válasz. 
+<span data-ttu-id="c2db2-163">Kattintson a **Tervezett válaszadási munkamenetek** lehetőségre, hogy megtekinthesse a válaszadási munkameneteket egy adott ütemezéshez.</span><span class="sxs-lookup"><span data-stu-id="c2db2-163">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="c2db2-164">Ezt követően manuálisan további tervezett válaszadási munkameneteket is létrehozása, illetve kitörölheti azon tervezett válaszadási munkameneteket, amelyre még nem érkezett válasz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-164">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Kattintson a **Funkciók** &gt; **Start** lehetőségre, hogy a kérdőívet elérhetővé tegye a tervezett válaszmunkamenetekhez kapcsolódó személyek számára. Kattintson a **Válaszok** lehetőségre, hogy megtekinthesse a kitöltött kérdőíveket. Opcionálisan át is másolhatja egy kérdőív-ütemezés beállításait, a tervezett válaszmunkamenetek és válaszokat egy új kérdőív-ütemezésekbe.
+<span data-ttu-id="c2db2-165">Kattintson a **Funkciók** &gt; **Start** lehetőségre, hogy a kérdőívet elérhetővé tegye a tervezett válaszmunkamenetekhez kapcsolódó személyek számára.</span><span class="sxs-lookup"><span data-stu-id="c2db2-165">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="c2db2-166">Kattintson a **Válaszok** lehetőségre, hogy megtekinthesse a kitöltött kérdőíveket.</span><span class="sxs-lookup"><span data-stu-id="c2db2-166">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="c2db2-167">Opcionálisan át is másolhatja egy kérdőív-ütemezés beállításait, a tervezett válaszmunkamenetek és válaszokat egy új kérdőív-ütemezésekbe.</span><span class="sxs-lookup"><span data-stu-id="c2db2-167">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Válaszadók értesítése a számukra elérhető kérdőívekről
-Kérdőív terjesztésekor értesítést kell küldeni a válaszadóknak arról, hogy a kérdőív elérhető számukra. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="c2db2-168">Válaszadók értesítése a számukra elérhető kérdőívekről</span><span class="sxs-lookup"><span data-stu-id="c2db2-168">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="c2db2-169">Kérdőív terjesztésekor értesítést kell küldeni a válaszadóknak arról, hogy a kérdőív elérhető számukra.</span><span class="sxs-lookup"><span data-stu-id="c2db2-169">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Válaszadók értesítése egy tervezett válaszmunkamenetről
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="c2db2-170">Válaszadók értesítése egy tervezett válaszmunkamenetről</span><span class="sxs-lookup"><span data-stu-id="c2db2-170">Notifying respondents about a planned answer session</span></span>
 
-Ha tervezett válaszmunkamenetet használ, akkor közvetlenül kell értesítenie az adott személyt, például telefonon vagy e-mail üzenetben.
+<span data-ttu-id="c2db2-171">Ha tervezett válaszmunkamenetet használ, akkor közvetlenül kell értesítenie az adott személyt, például telefonon vagy e-mail üzenetben.</span><span class="sxs-lookup"><span data-stu-id="c2db2-171">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Válaszadók értesítése egy ütemezésről
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="c2db2-172">Válaszadók értesítése egy ütemezésről</span><span class="sxs-lookup"><span data-stu-id="c2db2-172">Notifying respondents about a scheduling</span></span>
 
-A **Kérdívek ütemezése** képernyőn e-mail üzenetet írhat a kérdőívhez társított válaszadóknak. Írja be az e-mail üzenet szövegét az **E-mail üzenet az alkalmazotti önkiszolgáló szolgáltatás számára** lapon. Az ütemezés elindítását követően kattintson a **Funkciók** &gt; **E-mail üzenet küldése** lehetőségre a válaszadók számára küldendő e-mail létrehozásához és elküldéséhez. A válaszadók ezután bejelentkezhetnek a webhelyre, és kitölthetik a kérdőívet. 
+<span data-ttu-id="c2db2-173">A **Kérdívek ütemezése** képernyőn e-mail üzenetet írhat a kérdőívhez társított válaszadóknak.</span><span class="sxs-lookup"><span data-stu-id="c2db2-173">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="c2db2-174">Írja be az e-mail üzenet szövegét az **E-mail üzenet az alkalmazotti önkiszolgáló szolgáltatás számára** lapon.</span><span class="sxs-lookup"><span data-stu-id="c2db2-174">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="c2db2-175">Az ütemezés elindítását követően kattintson a **Funkciók** &gt; **E-mail üzenet küldése** lehetőségre a válaszadók számára küldendő e-mail létrehozásához és elküldéséhez.</span><span class="sxs-lookup"><span data-stu-id="c2db2-175">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="c2db2-176">A válaszadók ezután bejelentkezhetnek a webhelyre, és kitölthetik a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-176">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-> **Megjegyzés:** Az e-mail funkció használata előtt a rendszergazdának meg kell adnia az e-mail beállításokat az **E-mail paraméterek** oldalon.
+> <span data-ttu-id="c2db2-177">**Megjegyzés:** Az e-mail funkció használata előtt a rendszergazdának meg kell adnia az e-mail beállításokat az **E-mail paraméterek** oldalon.</span><span class="sxs-lookup"><span data-stu-id="c2db2-177">**Note** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Ütemezett kérdőív lezárása
-Ha az összes válaszadó befejezte a kiadott válaszmunkamenetet, akkor be lehet fejezni az ütemezett kérdőívet. Az ütemezett kérdőív befejezése után annak beállításait már nem lehet az új ütemezésekbe másolni. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="c2db2-178">Ütemezett kérdőív lezárása</span><span class="sxs-lookup"><span data-stu-id="c2db2-178">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="c2db2-179">Ha az összes válaszadó befejezte a kiadott válaszmunkamenetet, akkor be lehet fejezni az ütemezett kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-179">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="c2db2-180">Az ütemezett kérdőív befejezése után annak beállításait már nem lehet az új ütemezésekbe másolni.</span><span class="sxs-lookup"><span data-stu-id="c2db2-180">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-> **Megjegyzés:** Ha annak ellenére szeretné befejezni az ütemezést, hogy egy vagy több válaszadó még nem töltötte ki a kérdőívet, először törölje a szóban forgó válaszadókat a **Tervezett válaszmunkamanet** képernyő listájáról. Ezután befejezhető az ütemezés.
+> <span data-ttu-id="c2db2-181">**Megjegyzés:** Ha annak ellenére szeretné befejezni az ütemezést, hogy egy vagy több válaszadó még nem töltötte ki a kérdőívet, először törölje a szóban forgó válaszadókat a **Tervezett válaszmunkamanet** képernyő listájáról.</span><span class="sxs-lookup"><span data-stu-id="c2db2-181">**Note** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="c2db2-182">Ezután befejezhető az ütemezés.</span><span class="sxs-lookup"><span data-stu-id="c2db2-182">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Kérdőív kitöltése
-Miután megtervezte és kiosztotta a kérdőívet, az csak a kijelölt válaszadók számára lesz elérhető. A rendelkezésre álló kérdőíveket két helyen töltheti ki:
+## <a name="completing-questionnaires"></a><span data-ttu-id="c2db2-183">Kérdőív kitöltése</span><span class="sxs-lookup"><span data-stu-id="c2db2-183">Completing questionnaires</span></span>
+<span data-ttu-id="c2db2-184">Miután megtervezte és kiosztotta a kérdőívet, az csak a kijelölt válaszadók számára lesz elérhető.</span><span class="sxs-lookup"><span data-stu-id="c2db2-184">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="c2db2-185">A rendelkezésre álló kérdőíveket két helyen töltheti ki:</span><span class="sxs-lookup"><span data-stu-id="c2db2-185">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   Kattintson a navigációs ablak **Kérdőívek** &gt; **Terjesztés** &gt; **Kérdőív kitöltése** lehetőségére.
--   Kattintson az Alkalmazotti önkiszolgáló rendszer **Kitöltendő kérdőívek** lehetőségére.
+-   <span data-ttu-id="c2db2-186">Kattintson a navigációs ablak **Kérdőívek** &gt; **Terjesztés** &gt; **Kérdőív kitöltése** lehetőségére.</span><span class="sxs-lookup"><span data-stu-id="c2db2-186">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="c2db2-187">Kattintson az Alkalmazotti önkiszolgáló rendszer **Kitöltendő kérdőívek** lehetőségére.</span><span class="sxs-lookup"><span data-stu-id="c2db2-187">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-A kérdőívek közzétehetők csak adott felhasználók vagy felhasználócsoportok számára is, illetve a hálózat minden tagja számára.
+<span data-ttu-id="c2db2-188">A kérdőívek közzétehetők csak adott felhasználók vagy felhasználócsoportok számára is, illetve a hálózat minden tagja számára.</span><span class="sxs-lookup"><span data-stu-id="c2db2-188">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="c2db2-189">Lásd még</span><span class="sxs-lookup"><span data-stu-id="c2db2-189">See also</span></span>
 --------
 
-[Kérdőívek tervezése](design-questionnaires.md)
+[<span data-ttu-id="c2db2-190">Kérdőívek tervezése</span><span class="sxs-lookup"><span data-stu-id="c2db2-190">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Kérdőívek használata](questionnaires.md)
+[<span data-ttu-id="c2db2-191">Kérdőívek használata</span><span class="sxs-lookup"><span data-stu-id="c2db2-191">Using questionnaires</span></span>](questionnaires.md)
 
-[Kérdőívek megtekintése, az eredmények kiértékelése](evaluate-questionnaire-results.md)
+[<span data-ttu-id="c2db2-192">Kérdőívek megtekintése, az eredmények kiértékelése</span><span class="sxs-lookup"><span data-stu-id="c2db2-192">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 
 
 <a name=""></a>=======
 ---
-# <a name="required-metadata"></a>szükséges metaadatok
+# <a name="required-metadata"></a><span data-ttu-id="c2db2-193">szükséges metaadatok</span><span class="sxs-lookup"><span data-stu-id="c2db2-193">required metadata</span></span>
 
-title: Kérdőív terjesztése és kitöltése description: A témakör leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők. author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology: 
+<span data-ttu-id="c2db2-194">title: Kérdőív terjesztése és kitöltése description: A témakör leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők.</span><span class="sxs-lookup"><span data-stu-id="c2db2-194">title: Distribute and complete a questionnaire description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> <span data-ttu-id="c2db2-195">author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology:</span><span class="sxs-lookup"><span data-stu-id="c2db2-195">author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology:</span></span> 
 
-# <a name="optional-metadata"></a>nem kötelező metaadatok
+# <a name="optional-metadata"></a><span data-ttu-id="c2db2-196">nem kötelező metaadatok</span><span class="sxs-lookup"><span data-stu-id="c2db2-196">optional metadata</span></span>
 
-ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
-# <a name="robots"></a>ROBOTOK: 
-audience: Application User
-# <a name="msdevlang"></a>ms.devlang: 
-ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# <a name="mstgtpltfrm"></a>ms.tgt_pltfrm: 
-ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global
-# <a name="mssearchindustry"></a>ms.search.industry: 
-ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+<span data-ttu-id="c2db2-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span><span class="sxs-lookup"><span data-stu-id="c2db2-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span></span>
+# <a name="robots"></a><span data-ttu-id="c2db2-198">ROBOTOK:</span><span class="sxs-lookup"><span data-stu-id="c2db2-198">ROBOTS:</span></span> 
+<span data-ttu-id="c2db2-199">audience: Application User</span><span class="sxs-lookup"><span data-stu-id="c2db2-199">audience: Application User</span></span>
+# <a name="msdevlang"></a><span data-ttu-id="c2db2-200">ms.devlang:</span><span class="sxs-lookup"><span data-stu-id="c2db2-200">ms.devlang:</span></span> 
+<span data-ttu-id="c2db2-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span><span class="sxs-lookup"><span data-stu-id="c2db2-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span></span>
+# <a name="mstgtpltfrm"></a><span data-ttu-id="c2db2-202">ms.tgt_pltfrm:</span><span class="sxs-lookup"><span data-stu-id="c2db2-202">ms.tgt_pltfrm:</span></span> 
+<span data-ttu-id="c2db2-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span><span class="sxs-lookup"><span data-stu-id="c2db2-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span></span>
+# <a name="mssearchindustry"></a><span data-ttu-id="c2db2-204">ms.search.industry:</span><span class="sxs-lookup"><span data-stu-id="c2db2-204">ms.search.industry:</span></span> 
+<span data-ttu-id="c2db2-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update</span><span class="sxs-lookup"><span data-stu-id="c2db2-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update</span></span>
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Kérdőív terjesztése és kitöltése
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="c2db2-206">Kérdőív terjesztése és kitöltése</span><span class="sxs-lookup"><span data-stu-id="c2db2-206">Distribute and complete a questionnaire</span></span>
 
-A témakör leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők. 
+<span data-ttu-id="c2db2-207">A témakör leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők.</span><span class="sxs-lookup"><span data-stu-id="c2db2-207">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-A kérdőívek terjesztésének több módja van:
+<span data-ttu-id="c2db2-208">A kérdőívek terjesztésének több módja van:</span><span class="sxs-lookup"><span data-stu-id="c2db2-208">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Jelölje meg aktívként a kérdőívet. A kérdőív ezt követően elérhetővé válik minden alkalmazott számára, kivéve ha a kérdőív csoport úgy van beállítva, hogy a hozzáférés korlátozva van.
--   Rendeljen jogokat a kérdőív csoporthoz. A kérdőív ezt követően a kiválasztott csoport minden tagja számára elérhető lesz.
--   Hozzon létre tervezett válaszmunkameneteket. A kérdőív ekkor csak egy bizonyos személy részére áll rendelkezésre.
--   Hozzon létre egy ütemezést. A kérdőív ekkor több felhasználó számára is elérhető lehet.
+-   <span data-ttu-id="c2db2-209">Jelölje meg aktívként a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-209">Mark the questionnaire as active.</span></span> <span data-ttu-id="c2db2-210">A kérdőív ezt követően elérhetővé válik minden alkalmazott számára, kivéve ha a kérdőív csoport úgy van beállítva, hogy a hozzáférés korlátozva van.</span><span class="sxs-lookup"><span data-stu-id="c2db2-210">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="c2db2-211">Rendeljen jogokat a kérdőív csoporthoz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-211">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="c2db2-212">A kérdőív ezt követően a kiválasztott csoport minden tagja számára elérhető lesz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-212">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="c2db2-213">Hozzon létre tervezett válaszmunkameneteket.</span><span class="sxs-lookup"><span data-stu-id="c2db2-213">Create planned answer sessions.</span></span> <span data-ttu-id="c2db2-214">A kérdőív ekkor csak egy bizonyos személy részére áll rendelkezésre.</span><span class="sxs-lookup"><span data-stu-id="c2db2-214">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="c2db2-215">Hozzon létre egy ütemezést.</span><span class="sxs-lookup"><span data-stu-id="c2db2-215">Create a schedule.</span></span> <span data-ttu-id="c2db2-216">A kérdőív ekkor több felhasználó számára is elérhető lehet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-216">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Kérdőív aktívként való megjelölése
-Ha szeretné, hogy a kérdőívet minden alkalmazott kitölthesse, állítsa az **Aktív** mezőt **Igen** értékre a **Kérdőívek** oldalon. A válaszadók több alkalommal is kitölthetik a kérdőívet. Ez a funkció akkor hasznos, ha azt szeretné, hogy egész évben folyamatosak legyenek a visszajelzések. Például létrehozhat egy kérdőívet, amelyen keresztül az alkalmazottak a menza étkezési lehetőségeivel kapcsolatban adhatnak visszajelzéseket.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="c2db2-217">Kérdőív aktívként való megjelölése</span><span class="sxs-lookup"><span data-stu-id="c2db2-217">Marking a questionnaire as active</span></span>
+<span data-ttu-id="c2db2-218">Ha szeretné, hogy a kérdőívet minden alkalmazott kitölthesse, állítsa az **Aktív** mezőt **Igen** értékre a **Kérdőívek** oldalon.</span><span class="sxs-lookup"><span data-stu-id="c2db2-218">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="c2db2-219">A válaszadók több alkalommal is kitölthetik a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-219">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="c2db2-220">Ez a funkció akkor hasznos, ha azt szeretné, hogy egész évben folyamatosak legyenek a visszajelzések.</span><span class="sxs-lookup"><span data-stu-id="c2db2-220">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="c2db2-221">Például létrehozhat egy kérdőívet, amelyen keresztül az alkalmazottak a menza étkezési lehetőségeivel kapcsolatban adhatnak visszajelzéseket.</span><span class="sxs-lookup"><span data-stu-id="c2db2-221">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Kérdőívcsoportok
-Létrehozhat kérdőívcsoportokat, amelyekhez beállíthatja azon lehetséges válaszadókat, akiknek a kérdőív szól. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="c2db2-222">Kérdőívcsoportok</span><span class="sxs-lookup"><span data-stu-id="c2db2-222">Questionnaire groups</span></span>
+<span data-ttu-id="c2db2-223">Létrehozhat kérdőívcsoportokat, amelyekhez beállíthatja azon lehetséges válaszadókat, akiknek a kérdőív szól.</span><span class="sxs-lookup"><span data-stu-id="c2db2-223">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-A következő oldalakról hozhat létre kérdőív csoportokat:
+<span data-ttu-id="c2db2-224">A következő oldalakról hozhat létre kérdőív csoportokat:</span><span class="sxs-lookup"><span data-stu-id="c2db2-224">You can create questionnaire groups from the following pages:</span></span>
 
--   **Kérdőív csoportok**– Csak az egyes kérdőív csoportokban szereplő személyek tölthetik ki a kérdőívet. Például ha csak az alvállalkozókat szeretné megkérdezni, létrehozhat olyan kérdőív csoportokat, amelyekbe ezen specifikus válaszadókat vonhatja be.
--   **Kérdőív csoportok tagjai** – Személyek adhat hozzá a kérdőív csoportokhoz.
+-   <span data-ttu-id="c2db2-225">**Kérdőív csoportok**– Csak az egyes kérdőív csoportokban szereplő személyek tölthetik ki a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-225">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="c2db2-226">Például ha csak az alvállalkozókat szeretné megkérdezni, létrehozhat olyan kérdőív csoportokat, amelyekbe ezen specifikus válaszadókat vonhatja be.</span><span class="sxs-lookup"><span data-stu-id="c2db2-226">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="c2db2-227">**Kérdőív csoportok tagjai** – Személyek adhat hozzá a kérdőív csoportokhoz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-227">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-Kérdőívhez kérdőívcsoport hozzárendeléséhez a **Kérdőívek** oldalon kattintson a **Felhasználói jogok** elemre. A kérdőív aktívként történő elmentése után a kérdőívcsoport tagjai kitölthetik a kérdőívet. Ez a funkció akkor hasznos, ha szeretné a kérdőívet tesztelni személyek egy kiválasztott csoportján, mielőtt nagyobb csoport számára közzétenné, illetve ha egy kérdőívvel egy nagyon specifikus célközönséget szeretne megcélozni.
+<span data-ttu-id="c2db2-228">Kérdőívhez kérdőívcsoport hozzárendeléséhez a **Kérdőívek** oldalon kattintson a **Felhasználói jogok** elemre.</span><span class="sxs-lookup"><span data-stu-id="c2db2-228">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="c2db2-229">A kérdőív aktívként történő elmentése után a kérdőívcsoport tagjai kitölthetik a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-229">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="c2db2-230">Ez a funkció akkor hasznos, ha szeretné a kérdőívet tesztelni személyek egy kiválasztott csoportján, mielőtt nagyobb csoport számára közzétenné, illetve ha egy kérdőívvel egy nagyon specifikus célközönséget szeretne megcélozni.</span><span class="sxs-lookup"><span data-stu-id="c2db2-230">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Tervezett válaszmunkamenet egy kérdőívenben
-A tervezett válaszmunkamenetek olyan kérdőívek, amelyek megtervezettek és a kijelölt válaszadóknak szólnak. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="c2db2-231">Tervezett válaszmunkamenet egy kérdőívenben</span><span class="sxs-lookup"><span data-stu-id="c2db2-231">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="c2db2-232">A tervezett válaszmunkamenetek olyan kérdőívek, amelyek megtervezettek és a kijelölt válaszadóknak szólnak.</span><span class="sxs-lookup"><span data-stu-id="c2db2-232">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-**Megjegyzés:** Egy tervezett válaszadási munkamenet beállítása előtt meg kell terveznie a kérdőívet. 
+<span data-ttu-id="c2db2-233">**Megjegyzés:** Egy tervezett válaszadási munkamenet beállítása előtt meg kell terveznie a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-233">**Note:** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-A **Tervezett válaszmunkamenetek** képernyőn lehet létrehozni tervezett válaszmunkamenetet egy bizonyos alkalmazotthoz. A lapon megjelenő listában megjelenik minden tervezett kérdőív. 
+<span data-ttu-id="c2db2-234">A **Tervezett válaszmunkamenetek** képernyőn lehet létrehozni tervezett válaszmunkamenetet egy bizonyos alkalmazotthoz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-234">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="c2db2-235">A lapon megjelenő listában megjelenik minden tervezett kérdőív.</span><span class="sxs-lookup"><span data-stu-id="c2db2-235">The list on the page displays all planned questionnaires.</span></span> 
 
-A tervezett válaszadási munkamenetek a **Kérdőív ütemezés** oldalon is használhatók, ahol többféle személy számára alkalmas kérdőíveket lehet tervezni:
+<span data-ttu-id="c2db2-236">A tervezett válaszadási munkamenetek a **Kérdőív ütemezés** oldalon is használhatók, ahol többféle személy számára alkalmas kérdőíveket lehet tervezni:</span><span class="sxs-lookup"><span data-stu-id="c2db2-236">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Alkalmazottak
--   Tanfolyam résztvevői
--   Szervezeti egységek
+-   <span data-ttu-id="c2db2-237">Alkalmazottak</span><span class="sxs-lookup"><span data-stu-id="c2db2-237">Employees</span></span>
+-   <span data-ttu-id="c2db2-238">Tanfolyam résztvevői</span><span class="sxs-lookup"><span data-stu-id="c2db2-238">Course participants</span></span>
+-   <span data-ttu-id="c2db2-239">Szervezeti egységek</span><span class="sxs-lookup"><span data-stu-id="c2db2-239">Organizational units</span></span>
 
-Minden egyes ember csak egyszer töltheti ki a kérdőívet.
+<span data-ttu-id="c2db2-240">Minden egyes ember csak egyszer töltheti ki a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-240">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Kérdőív ütemezése
-Lehetőség van több válaszadó részére is ütemezni egy kérdőívet.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="c2db2-241">Kérdőív ütemezése</span><span class="sxs-lookup"><span data-stu-id="c2db2-241">Scheduling a questionnaire</span></span>
+<span data-ttu-id="c2db2-242">Lehetőség van több válaszadó részére is ütemezni egy kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-242">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Tervezés típusai
+### <a name="planning-types"></a><span data-ttu-id="c2db2-243">Tervezés típusai</span><span class="sxs-lookup"><span data-stu-id="c2db2-243">Planning types</span></span>
 
-A tervezési típusokra akkor van szükség, ha több válaszadó részére szeretné ütemezni a tervezett válaszadási munkameneteket. A tervezési típusok a kérdőív-ütemezések osztályozására szolgálnak. Például az alábbi célokból ütemezhet kérdőíveket:
+<span data-ttu-id="c2db2-244">A tervezési típusokra akkor van szükség, ha több válaszadó részére szeretné ütemezni a tervezett válaszadási munkameneteket.</span><span class="sxs-lookup"><span data-stu-id="c2db2-244">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="c2db2-245">A tervezési típusok a kérdőív-ütemezések osztályozására szolgálnak.</span><span class="sxs-lookup"><span data-stu-id="c2db2-245">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="c2db2-246">Például az alábbi célokból ütemezhet kérdőíveket:</span><span class="sxs-lookup"><span data-stu-id="c2db2-246">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Értékelés
--   Felmérés
--   Tesztelés
+-   <span data-ttu-id="c2db2-247">Értékelés</span><span class="sxs-lookup"><span data-stu-id="c2db2-247">Evaluation</span></span>
+-   <span data-ttu-id="c2db2-248">Felmérés</span><span class="sxs-lookup"><span data-stu-id="c2db2-248">Survey</span></span>
+-   <span data-ttu-id="c2db2-249">Tesztelés</span><span class="sxs-lookup"><span data-stu-id="c2db2-249">Testing</span></span>
 
-A **Kérdőív-ütemezések** oldalon megadhat tervezési típusokat egy kérdőív-ütemezéshez.
+<span data-ttu-id="c2db2-250">A **Kérdőív-ütemezések** oldalon megadhat tervezési típusokat egy kérdőív-ütemezéshez.</span><span class="sxs-lookup"><span data-stu-id="c2db2-250">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Hivatkozástípusok kérdőívhez
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="c2db2-251">Hivatkozástípusok kérdőívhez</span><span class="sxs-lookup"><span data-stu-id="c2db2-251">Reference types for questionnaire</span></span>
 
-Hivatkozástípusok használatával megadhat feltételeket, amelyek segítségével kijelölhet bizonyos válaszadókat a kérdőív ütemezésekor. 
+<span data-ttu-id="c2db2-252">Hivatkozástípusok használatával megadhat feltételeket, amelyek segítségével kijelölhet bizonyos válaszadókat a kérdőív ütemezésekor.</span><span class="sxs-lookup"><span data-stu-id="c2db2-252">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Használja a **Hivatkozástípusok** lapot a kérdőívekhez tartozó hivatkozási típusok beállításához. Minden hivatkozástípus megfelel egy táblának a Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionben. Kérdőív-ütemezések létrehozásakor meg lehet adni bizonyos rekordokat vagy tartományokat a táblázatban, amelyhez a kérdőívet társítani szeretné. 
+<span data-ttu-id="c2db2-253">Használja a **Hivatkozástípusok** lapot a kérdőívekhez tartozó hivatkozási típusok beállításához.</span><span class="sxs-lookup"><span data-stu-id="c2db2-253">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="c2db2-254">Minden hivatkozástípus megfelel egy táblának a Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionben.</span><span class="sxs-lookup"><span data-stu-id="c2db2-254">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span></span> <span data-ttu-id="c2db2-255">Kérdőív-ütemezések létrehozásakor meg lehet adni bizonyos rekordokat vagy tartományokat a táblázatban, amelyhez a kérdőívet társítani szeretné.</span><span class="sxs-lookup"><span data-stu-id="c2db2-255">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Például ha a Tanfolyamok táblázatoz választja, megadhatja, hogy melyik tanfolyam résztvevőinek számára jelenjen meg a kérdőív. Miután beállított egy hivatkozást a Tanfolyamok táblázathoz, bizonyos mezők és gombok elérhetővé válnak a **Tanfolyamok** lapon.
+<span data-ttu-id="c2db2-256">Például ha a Tanfolyamok táblázatoz választja, megadhatja, hogy melyik tanfolyam résztvevőinek számára jelenjen meg a kérdőív.</span><span class="sxs-lookup"><span data-stu-id="c2db2-256">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="c2db2-257">Miután beállított egy hivatkozást a Tanfolyamok táblázathoz, bizonyos mezők és gombok elérhetővé válnak a **Tanfolyamok** lapon.</span><span class="sxs-lookup"><span data-stu-id="c2db2-257">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Kérdőív-ütemezések
+### <a name="questionnaire-schedules"></a><span data-ttu-id="c2db2-258">Kérdőív-ütemezések</span><span class="sxs-lookup"><span data-stu-id="c2db2-258">Questionnaire schedules</span></span>
 
-A kérdőív-ütemezések segítségével több tervezett válaszmunkamenetet is generálhat egy csoport számára, egy hivatkozástípus alapján. Az ütemezés létrehozása a **Kérdőív-ütemezések** oldalon történik. Válasszon ki egy tervezési típust az ütemezés kategorizálásához, valamint válassza ki azon hivatkozási típust, amellyel a meghatározott felhasználókat le szeretné kérdezni a rendszerből. Például a hivatkozás típusaként a Tanfolyamok táblázatot állítja be, kiválaszthat egy adott tanfolyamot a **Hivatkozás** mezőben. 
+<span data-ttu-id="c2db2-259">A kérdőív-ütemezések segítségével több tervezett válaszmunkamenetet is generálhat egy csoport számára, egy hivatkozástípus alapján.</span><span class="sxs-lookup"><span data-stu-id="c2db2-259">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="c2db2-260">Az ütemezés létrehozása a **Kérdőív-ütemezések** oldalon történik.</span><span class="sxs-lookup"><span data-stu-id="c2db2-260">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="c2db2-261">Válasszon ki egy tervezési típust az ütemezés kategorizálásához, valamint válassza ki azon hivatkozási típust, amellyel a meghatározott felhasználókat le szeretné kérdezni a rendszerből.</span><span class="sxs-lookup"><span data-stu-id="c2db2-261">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="c2db2-262">Például a hivatkozás típusaként a Tanfolyamok táblázatot állítja be, kiválaszthat egy adott tanfolyamot a **Hivatkozás** mezőben.</span><span class="sxs-lookup"><span data-stu-id="c2db2-262">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Kattintson a **Beállítás részletei** lehetőségre egy kérdőív és más feltételek kijelöléséhez. Például megadhatja az oktató nevét feltételként, ha a kérdőív az oktató teljesítményére kíváncsi. Miután befejezte a beállítások megadását, a rendszer létrehozza a tervezett válaszadási munkamenetek azon felhasználóknak, akik szerepelnek a lekérdezésben. 
+<span data-ttu-id="c2db2-263">Kattintson a **Beállítás részletei** lehetőségre egy kérdőív és más feltételek kijelöléséhez.</span><span class="sxs-lookup"><span data-stu-id="c2db2-263">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="c2db2-264">Például megadhatja az oktató nevét feltételként, ha a kérdőív az oktató teljesítményére kíváncsi.</span><span class="sxs-lookup"><span data-stu-id="c2db2-264">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="c2db2-265">Miután befejezte a beállítások megadását, a rendszer létrehozza a tervezett válaszadási munkamenetek azon felhasználóknak, akik szerepelnek a lekérdezésben.</span><span class="sxs-lookup"><span data-stu-id="c2db2-265">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Kattintson a **Tervezett válaszadási munkamenetek** lehetőségre, hogy megtekinthesse a válaszadási munkameneteket egy adott ütemezéshez. Ezt követően manuálisan további tervezett válaszadási munkameneteket is létrehozása, illetve kitörölheti azon tervezett válaszadási munkameneteket, amelyre még nem érkezett válasz. 
+<span data-ttu-id="c2db2-266">Kattintson a **Tervezett válaszadási munkamenetek** lehetőségre, hogy megtekinthesse a válaszadási munkameneteket egy adott ütemezéshez.</span><span class="sxs-lookup"><span data-stu-id="c2db2-266">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="c2db2-267">Ezt követően manuálisan további tervezett válaszadási munkameneteket is létrehozása, illetve kitörölheti azon tervezett válaszadási munkameneteket, amelyre még nem érkezett válasz.</span><span class="sxs-lookup"><span data-stu-id="c2db2-267">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Kattintson a **Funkciók** &gt; **Start** lehetőségre, hogy a kérdőívet elérhetővé tegye a tervezett válaszmunkamenetekhez kapcsolódó személyek számára. Kattintson a **Válaszok** lehetőségre, hogy megtekinthesse a kitöltött kérdőíveket. Opcionálisan át is másolhatja egy kérdőív-ütemezés beállításait, a tervezett válaszmunkamenetek és válaszokat egy új kérdőív-ütemezésekbe.
+<span data-ttu-id="c2db2-268">Kattintson a **Funkciók** &gt; **Start** lehetőségre, hogy a kérdőívet elérhetővé tegye a tervezett válaszmunkamenetekhez kapcsolódó személyek számára.</span><span class="sxs-lookup"><span data-stu-id="c2db2-268">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="c2db2-269">Kattintson a **Válaszok** lehetőségre, hogy megtekinthesse a kitöltött kérdőíveket.</span><span class="sxs-lookup"><span data-stu-id="c2db2-269">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="c2db2-270">Opcionálisan át is másolhatja egy kérdőív-ütemezés beállításait, a tervezett válaszmunkamenetek és válaszokat egy új kérdőív-ütemezésekbe.</span><span class="sxs-lookup"><span data-stu-id="c2db2-270">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Válaszadók értesítése a számukra elérhető kérdőívekről
-Kérdőív terjesztésekor értesítést kell küldeni a válaszadóknak arról, hogy a kérdőív elérhető számukra. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="c2db2-271">Válaszadók értesítése a számukra elérhető kérdőívekről</span><span class="sxs-lookup"><span data-stu-id="c2db2-271">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="c2db2-272">Kérdőív terjesztésekor értesítést kell küldeni a válaszadóknak arról, hogy a kérdőív elérhető számukra.</span><span class="sxs-lookup"><span data-stu-id="c2db2-272">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-**Megjegyzés:** A kérdőívek kitöltéséhez a válaszadóknak a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition felhasználóinak kell lenniük.
+<span data-ttu-id="c2db2-273">**Megjegyzés:** A kérdőívek kitöltéséhez a válaszadóknak a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition felhasználóinak kell lenniük.</span><span class="sxs-lookup"><span data-stu-id="c2db2-273">**Note:** Respondents must be users in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition to complete a questionnaire.</span></span>
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Válaszadók értesítése egy tervezett válaszmunkamenetről
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="c2db2-274">Válaszadók értesítése egy tervezett válaszmunkamenetről</span><span class="sxs-lookup"><span data-stu-id="c2db2-274">Notifying respondents about a planned answer session</span></span>
 
-Ha tervezett válaszmunkamenetet használ, akkor közvetlenül kell értesítenie az adott személyt, például telefonon vagy e-mail üzenetben.
+<span data-ttu-id="c2db2-275">Ha tervezett válaszmunkamenetet használ, akkor közvetlenül kell értesítenie az adott személyt, például telefonon vagy e-mail üzenetben.</span><span class="sxs-lookup"><span data-stu-id="c2db2-275">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Válaszadók értesítése egy ütemezésről
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="c2db2-276">Válaszadók értesítése egy ütemezésről</span><span class="sxs-lookup"><span data-stu-id="c2db2-276">Notifying respondents about a scheduling</span></span>
 
-A **Kérdívek ütemezése** képernyőn e-mail üzenetet írhat a kérdőívhez társított válaszadóknak. Írja be az e-mail üzenet szövegét az **E-mail üzenet az alkalmazotti önkiszolgáló szolgáltatás számára** lapon. Az ütemezés elindítását követően kattintson a **Funkciók** &gt; **E-mail üzenet küldése** lehetőségre a válaszadók számára küldendő e-mail létrehozásához és elküldéséhez. A válaszadók ezután bejelentkezhetnek a webhelyre, és kitölthetik a kérdőívet. 
+<span data-ttu-id="c2db2-277">A **Kérdívek ütemezése** képernyőn e-mail üzenetet írhat a kérdőívhez társított válaszadóknak.</span><span class="sxs-lookup"><span data-stu-id="c2db2-277">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="c2db2-278">Írja be az e-mail üzenet szövegét az **E-mail üzenet az alkalmazotti önkiszolgáló szolgáltatás számára** lapon.</span><span class="sxs-lookup"><span data-stu-id="c2db2-278">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="c2db2-279">Az ütemezés elindítását követően kattintson a **Funkciók** &gt; **E-mail üzenet küldése** lehetőségre a válaszadók számára küldendő e-mail létrehozásához és elküldéséhez.</span><span class="sxs-lookup"><span data-stu-id="c2db2-279">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="c2db2-280">A válaszadók ezután bejelentkezhetnek a webhelyre, és kitölthetik a kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-280">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-**Megjegyzés:** Az e-mail funkció használata előtt a rendszergazdának meg kell adnia az e-mail beállításokat az **E-mail paraméterek** oldalon.
+<span data-ttu-id="c2db2-281">**Megjegyzés:** Az e-mail funkció használata előtt a rendszergazdának meg kell adnia az e-mail beállításokat az **E-mail paraméterek** oldalon.</span><span class="sxs-lookup"><span data-stu-id="c2db2-281">**Note:** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Ütemezett kérdőív lezárása
-Ha az összes válaszadó befejezte a kiadott válaszmunkamenetet, akkor be lehet fejezni az ütemezett kérdőívet. Az ütemezett kérdőív befejezése után annak beállításait már nem lehet az új ütemezésekbe másolni. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="c2db2-282">Ütemezett kérdőív lezárása</span><span class="sxs-lookup"><span data-stu-id="c2db2-282">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="c2db2-283">Ha az összes válaszadó befejezte a kiadott válaszmunkamenetet, akkor be lehet fejezni az ütemezett kérdőívet.</span><span class="sxs-lookup"><span data-stu-id="c2db2-283">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="c2db2-284">Az ütemezett kérdőív befejezése után annak beállításait már nem lehet az új ütemezésekbe másolni.</span><span class="sxs-lookup"><span data-stu-id="c2db2-284">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-**Megjegyzés:** Ha annak ellenére szeretné befejezni az ütemezést, hogy egy vagy több válaszadó még nem töltötte ki a kérdőívet, először törölje a szóban forgó válaszadókat a **Tervezett válaszmunkamanet** képernyő listájáról. Ezután befejezhető az ütemezés.
+<span data-ttu-id="c2db2-285">**Megjegyzés:** Ha annak ellenére szeretné befejezni az ütemezést, hogy egy vagy több válaszadó még nem töltötte ki a kérdőívet, először törölje a szóban forgó válaszadókat a **Tervezett válaszmunkamanet** képernyő listájáról.</span><span class="sxs-lookup"><span data-stu-id="c2db2-285">**Note:** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="c2db2-286">Ezután befejezhető az ütemezés.</span><span class="sxs-lookup"><span data-stu-id="c2db2-286">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Kérdőív kitöltése
-Miután megtervezte és kiosztotta a kérdőívet, az csak a kijelölt válaszadók számára lesz elérhető. A rendelkezésre álló kérdőíveket két helyen töltheti ki:
+## <a name="completing-questionnaires"></a><span data-ttu-id="c2db2-287">Kérdőív kitöltése</span><span class="sxs-lookup"><span data-stu-id="c2db2-287">Completing questionnaires</span></span>
+<span data-ttu-id="c2db2-288">Miután megtervezte és kiosztotta a kérdőívet, az csak a kijelölt válaszadók számára lesz elérhető.</span><span class="sxs-lookup"><span data-stu-id="c2db2-288">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="c2db2-289">A rendelkezésre álló kérdőíveket két helyen töltheti ki:</span><span class="sxs-lookup"><span data-stu-id="c2db2-289">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   Kattintson a navigációs ablak **Kérdőívek** &gt; **Terjesztés** &gt; **Kérdőív kitöltése** lehetőségére.
--   Kattintson az Alkalmazotti önkiszolgáló rendszer **Kitöltendő kérdőívek** lehetőségére.
+-   <span data-ttu-id="c2db2-290">Kattintson a navigációs ablak **Kérdőívek** &gt; **Terjesztés** &gt; **Kérdőív kitöltése** lehetőségére.</span><span class="sxs-lookup"><span data-stu-id="c2db2-290">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="c2db2-291">Kattintson az Alkalmazotti önkiszolgáló rendszer **Kitöltendő kérdőívek** lehetőségére.</span><span class="sxs-lookup"><span data-stu-id="c2db2-291">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-A kérdőívek közzétehetők csak adott felhasználók vagy felhasználócsoportok számára is, illetve a hálózat minden tagja számára.
+<span data-ttu-id="c2db2-292">A kérdőívek közzétehetők csak adott felhasználók vagy felhasználócsoportok számára is, illetve a hálózat minden tagja számára.</span><span class="sxs-lookup"><span data-stu-id="c2db2-292">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="c2db2-293">Lásd még</span><span class="sxs-lookup"><span data-stu-id="c2db2-293">See also</span></span>
 --------
 
-[Kérdőívek tervezése](design-questionnaires.md)
+[<span data-ttu-id="c2db2-294">Kérdőívek tervezése</span><span class="sxs-lookup"><span data-stu-id="c2db2-294">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Kérdőívek használata](questionnaires.md)
+[<span data-ttu-id="c2db2-295">Kérdőívek használata</span><span class="sxs-lookup"><span data-stu-id="c2db2-295">Using questionnaires</span></span>](questionnaires.md)
 
-[Kérdőívek megtekintése, az eredmények kiértékelése](evaluate-questionnaire-results.md)
+[<span data-ttu-id="c2db2-296">Kérdőívek megtekintése, az eredmények kiértékelése</span><span class="sxs-lookup"><span data-stu-id="c2db2-296">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
-törzs
+<span data-ttu-id="c2db2-297">törzs</span><span class="sxs-lookup"><span data-stu-id="c2db2-297">master</span></span>
 

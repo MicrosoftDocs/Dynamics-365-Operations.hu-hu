@@ -16,30 +16,30 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 3f545d5792a0a5cf132799d5fb04bb43f63343b9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 324be23a1e26de0d05c7cf6a61567f7260d0c390
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-accrual-schemes"></a>Könyvelési sémák létrehozása
+# <a name="create-accrual-schemes"></a><span data-ttu-id="0b051-103">Könyvelési sémák létrehozása</span><span class="sxs-lookup"><span data-stu-id="0b051-103">Create accrual schemes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az útmutató bemutatja a könyvelési séma létrehozásának folyamatát. Ez a feladat az USMF bemutatócéget használja.
+<span data-ttu-id="0b051-104">Ez az útmutató bemutatja a könyvelési séma létrehozásának folyamatát.</span><span class="sxs-lookup"><span data-stu-id="0b051-104">This task guide steps through creating an accrual scheme.</span></span> <span data-ttu-id="0b051-105">Ez a feladat az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="0b051-105">This task uses the USMF demo company.</span></span>
 
-1. Ugorjon a Főkönyv > Naplóbeállítások > Könyvelési sémák pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Könyvelés azonosítója mezőbe.
-4. A Könyvelési séma leírása mezőbe írja be az érték leírását.
-5. A Levonás mezőben adja meg a kívánt értékeket.
-    * A megadott fő számla felülírja a tartozási fő számlát a naplóbizonylat sorában, és ezt használja majd a rendszer a halasztás sztornírozásához is, a főkönyvi könyvelési tranzakciókon alapján.  
-6. A Jóváírás mezőben adja meg a kívánt értékeket.
-    * A megadott fő számla felülírja a jóváírási fő számlát a naplóbizonylat sorában, és ezt használja majd a rendszer a halasztás sztornírozásához is, a főkönyvi könyvelési tranzakciókon alapján.  
-7. A Bizonylat mezőben válassza ki, hogyan szeretné a bizonylatot meghatározni a tranzakcióinak feladása során.
-8. A Leírás mezőben adja meg a feladandó tranzakciók leírásához az értéket.
-9. Az Időszak gyakorisága mezőben válassza ki, milyen gyakran történjenek a tranzakciók.
-10. Adjon meg egy számot az Előfordulások száma időszak szerint mezőben.
-11. A Tranzakciók feladása mezőben válassza ki, hogy mikor szeretné a tranzakciókat feladni, például a Havi értéket.
+1. <span data-ttu-id="0b051-106">Ugorjon a Főkönyv > Naplóbeállítások > Könyvelési sémák pontra.</span><span class="sxs-lookup"><span data-stu-id="0b051-106">Go to General ledger > Journal setup > Accrual schemes.</span></span>
+2. <span data-ttu-id="0b051-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0b051-107">Click New.</span></span>
+3. <span data-ttu-id="0b051-108">Írjon be egy értéket a Könyvelés azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0b051-108">In the Accrual identification field, type a value.</span></span>
+4. <span data-ttu-id="0b051-109">A Könyvelési séma leírása mezőbe írja be az érték leírását.</span><span class="sxs-lookup"><span data-stu-id="0b051-109">In the Description of accrual scheme field, type a value.</span></span>
+5. <span data-ttu-id="0b051-110">A Levonás mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="0b051-110">In the Debit field, specify the desired values.</span></span>
+    * <span data-ttu-id="0b051-111">A megadott fő számla felülírja a tartozási fő számlát a naplóbizonylat sorában, és ezt használja majd a rendszer a halasztás sztornírozásához is, a főkönyvi könyvelési tranzakciókon alapján.</span><span class="sxs-lookup"><span data-stu-id="0b051-111">The main account defined will replace the debit main account on the journal voucher line and it will also be used for the reversal of the deferral based on the ledger accrual transactions.</span></span>  
+6. <span data-ttu-id="0b051-112">A Jóváírás mezőben adja meg a kívánt értékeket.</span><span class="sxs-lookup"><span data-stu-id="0b051-112">In the Credit field, specify the desired values.</span></span>
+    * <span data-ttu-id="0b051-113">A megadott fő számla felülírja a jóváírási fő számlát a naplóbizonylat sorában, és ezt használja majd a rendszer a halasztás sztornírozásához is, a főkönyvi könyvelési tranzakciókon alapján.</span><span class="sxs-lookup"><span data-stu-id="0b051-113">The main account defined will replace the credit main account on the journal voucher line and it will also be used for the reversal of the deferral based on the ledger accrual transactions.</span></span>  
+7. <span data-ttu-id="0b051-114">A Bizonylat mezőben válassza ki, hogyan szeretné a bizonylatot meghatározni a tranzakcióinak feladása során.</span><span class="sxs-lookup"><span data-stu-id="0b051-114">In the Voucher field, select how you want the voucher determined when the transactions are posted.</span></span>
+8. <span data-ttu-id="0b051-115">A Leírás mezőben adja meg a feladandó tranzakciók leírásához az értéket.</span><span class="sxs-lookup"><span data-stu-id="0b051-115">In the Description field, type a value to describe the transactions that will be posted.</span></span>
+9. <span data-ttu-id="0b051-116">Az Időszak gyakorisága mezőben válassza ki, milyen gyakran történjenek a tranzakciók.</span><span class="sxs-lookup"><span data-stu-id="0b051-116">In the Period frequency field, select how often the transactions should occur.</span></span>
+10. <span data-ttu-id="0b051-117">Adjon meg egy számot az Előfordulások száma időszak szerint mezőben.</span><span class="sxs-lookup"><span data-stu-id="0b051-117">In the Number of occurrences by period field, enter a number.</span></span>
+11. <span data-ttu-id="0b051-118">A Tranzakciók feladása mezőben válassza ki, hogy mikor szeretné a tranzakciókat feladni, például a Havi értéket.</span><span class="sxs-lookup"><span data-stu-id="0b051-118">In the Post transactions field, select when the transactions should be posted, such as Monthly.</span></span>
 
 

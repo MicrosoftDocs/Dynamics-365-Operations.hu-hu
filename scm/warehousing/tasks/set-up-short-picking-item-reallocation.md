@@ -17,40 +17,40 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: fedd815cddfea4e00ed61ec6e176b633468c8fb2
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b67965b6c8641b5d91ab3c5b0a7a7fd28a07cba6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-short-picking-item-reallocation"></a>Cikkek újbóli felosztására vonatkozó szabályok rövid kitárolásának beállítása
+# <a name="set-up-short-picking-item-reallocation"></a><span data-ttu-id="33ff4-103">Cikkek újbóli felosztására vonatkozó szabályok rövid kitárolásának beállítása</span><span class="sxs-lookup"><span data-stu-id="33ff4-103">Set up short picking item reallocation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan engedélyezze a raktári dolgozók számára az alternatív helyek gyorsan megtalálását, ha nincs elegendő készlet a helyen, ahová átirányították őket. Lehetőség van automatikus újbóli felosztási folyamat használatára, amely helyirányelvek segítségével teszi lehetővé áruk lekérését, ha elérhetők egy másik helyen. Ha engedélyezve van a manuális újbóli felosztás, a mobileszközön megjelenik a helyek listája az elérhető mennyiségekkel, lehetővé téve a raktáros számára annak a kiválasztását, hogy melyik helyről szeretné használni a készletet. Az USMF bemutatócég adataiban használhatja ezt az eljárást. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+<span data-ttu-id="33ff4-104">Ez az eljárás bemutatja, hogyan engedélyezze a raktári dolgozók számára az alternatív helyek gyorsan megtalálását, ha nincs elegendő készlet a helyen, ahová átirányították őket.</span><span class="sxs-lookup"><span data-stu-id="33ff4-104">This procedure shows you how to enable warehouse workers to quickly find alternative locations if there isn’t sufficient inventory at the location they’ve been directed to.</span></span> <span data-ttu-id="33ff4-105">Lehetőség van automatikus újbóli felosztási folyamat használatára, amely helyirányelvek segítségével teszi lehetővé áruk lekérését, ha elérhetők egy másik helyen.</span><span class="sxs-lookup"><span data-stu-id="33ff4-105">It’s possible to use an automatic re-allocation process, which uses location directives to retrieve the goods if they’re available at another location.</span></span> <span data-ttu-id="33ff4-106">Ha engedélyezve van a manuális újbóli felosztás, a mobileszközön megjelenik a helyek listája az elérhető mennyiségekkel, lehetővé téve a raktáros számára annak a kiválasztását, hogy melyik helyről szeretné használni a készletet.</span><span class="sxs-lookup"><span data-stu-id="33ff4-106">Alternatively, when manual re-allocation is used, a list of the locations with the available quantity is shown on the mobile device, allowing the warehouse worker to choose which location to use inventory from.</span></span> <span data-ttu-id="33ff4-107">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="33ff4-107">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="33ff4-108">Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.</span><span class="sxs-lookup"><span data-stu-id="33ff4-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="set-up-work-exceptions"></a>Munkakivételek beállítása
-1. Ugrás a Raktárkezelés > Beállítás > Munka > Munkakivételek elemre.
-2. Kattintson az Új lehetőségre.
-    * Lehetőség van több munkakivétel meghatározására eltérő cikkfelosztási irányelvekkel, amelyek lehetővé teszik, hogy a raktáros válasszon egyet a feldolgozott szállítmány szükségletei szerint.  
-3. Írjon be egy értéket a Munkakivételkód mezőbe.
-    * Adjon olyan címet a munkakivételnek, amelyik arra utal, hogy mire használják. Például: Rövid kitárolási kézikönyv.  
-4. A Leírás mezőben adjon meg egy értéket.
-5. A Kivételtípus mezőben válassza ki a „Rövid kitárolás” lehetőséget.
-6. Jelölje be a Készlethelyesbítés jelölőnégyzetet.
-    * Ez a beállítás azt jelenti, hogy automatikusan megtörténik a készlet helyesbítése 0-ra a rövid kitárolás helyén.  
-7. Adjon meg vagy válasszon ki egy értéket az Alapértelmezett helyesbítéstípus-kód mezőben.
-    * Az USMF esetében például kiválasztható a következő: „Remove Res Adj Out”.  
-8. A Cikk újbóli felosztása mezőben válassza ki a „Manuális” lehetőséget.
-    * Ha bejelöli a manuális, vagy az automatikus és manuális lehetőséget, a raktáros számára engedélyezni kell a manuális újbóli felosztást.  
+## <a name="set-up-work-exceptions"></a><span data-ttu-id="33ff4-109">Munkakivételek beállítása</span><span class="sxs-lookup"><span data-stu-id="33ff4-109">Set up work exceptions</span></span>
+1. <span data-ttu-id="33ff4-110">Ugrás a Raktárkezelés > Beállítás > Munka > Munkakivételek elemre.</span><span class="sxs-lookup"><span data-stu-id="33ff4-110">Go to Warehouse management > Setup > Work > Work exceptions.</span></span>
+2. <span data-ttu-id="33ff4-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="33ff4-111">Click New.</span></span>
+    * <span data-ttu-id="33ff4-112">Lehetőség van több munkakivétel meghatározására eltérő cikkfelosztási irányelvekkel, amelyek lehetővé teszik, hogy a raktáros válasszon egyet a feldolgozott szállítmány szükségletei szerint.</span><span class="sxs-lookup"><span data-stu-id="33ff4-112">It’s possible to define several work exceptions with different item reallocation policies to enable the warehouse worker to choose one based on the needs of the shipment that they are processing.</span></span>  
+3. <span data-ttu-id="33ff4-113">Írjon be egy értéket a Munkakivételkód mezőbe.</span><span class="sxs-lookup"><span data-stu-id="33ff4-113">In the Work exception code field, type a value.</span></span>
+    * <span data-ttu-id="33ff4-114">Adjon olyan címet a munkakivételnek, amelyik arra utal, hogy mire használják.</span><span class="sxs-lookup"><span data-stu-id="33ff4-114">Give the work exception a title to indicate what it’s used for.</span></span> <span data-ttu-id="33ff4-115">Például: Rövid kitárolási kézikönyv.</span><span class="sxs-lookup"><span data-stu-id="33ff4-115">For example, Short picking manual.</span></span>  
+4. <span data-ttu-id="33ff4-116">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="33ff4-116">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="33ff4-117">A Kivételtípus mezőben válassza ki a „Rövid kitárolás” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="33ff4-117">In the Exception type field, select 'Short pick'.</span></span>
+6. <span data-ttu-id="33ff4-118">Jelölje be a Készlethelyesbítés jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="33ff4-118">Select the Adjust inventory check box.</span></span>
+    * <span data-ttu-id="33ff4-119">Ez a beállítás azt jelenti, hogy automatikusan megtörténik a készlet helyesbítése 0-ra a rövid kitárolás helyén.</span><span class="sxs-lookup"><span data-stu-id="33ff4-119">This option means that inventory will automatically be adjusted to 0 at the short picked location.</span></span>  
+7. <span data-ttu-id="33ff4-120">Adjon meg vagy válasszon ki egy értéket az Alapértelmezett helyesbítéstípus-kód mezőben.</span><span class="sxs-lookup"><span data-stu-id="33ff4-120">In the Default adjustment type code field, enter or select a value.</span></span>
+    * <span data-ttu-id="33ff4-121">Az USMF esetében például kiválasztható a következő: „Remove Res Adj Out”.</span><span class="sxs-lookup"><span data-stu-id="33ff4-121">For example, in USMF you can select 'Remove Res Adj Out'.</span></span>  
+8. <span data-ttu-id="33ff4-122">A Cikk újbóli felosztása mezőben válassza ki a „Manuális” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="33ff4-122">In the Item reallocation field, select 'Manual'.</span></span>
+    * <span data-ttu-id="33ff4-123">Ha bejelöli a manuális, vagy az automatikus és manuális lehetőséget, a raktáros számára engedélyezni kell a manuális újbóli felosztást.</span><span class="sxs-lookup"><span data-stu-id="33ff4-123">If you select Manual, or Automatic and Manual, the warehouse worker needs to be enabled to use manual reallocation.</span></span>  
 
-## <a name="set-up-a-worker-to-use-manual-item-reallocation"></a>A dolgozó beállítása a manuális cikk-újbólifelosztás használatára
-1. Zárja be a lapot.
-2. Ugrás a Raktárkezelés > Beállítás > Dolgozó elemre.
-3. Kattintson a Szerkesztés lehetőségre.
-4. A listában válassza a 24. dolgozó elemet.
-5. Bontsa ki a Dolgozó szakaszt.
-6. Válassza ki az Igen lehetőséget a Cikk újbóli manuális felosztásának engedélyezése mezőben.
+## <a name="set-up-a-worker-to-use-manual-item-reallocation"></a><span data-ttu-id="33ff4-124">A dolgozó beállítása a manuális cikk-újbólifelosztás használatára</span><span class="sxs-lookup"><span data-stu-id="33ff4-124">Set up a worker to use manual item reallocation</span></span>
+1. <span data-ttu-id="33ff4-125">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="33ff4-125">Close the page.</span></span>
+2. <span data-ttu-id="33ff4-126">Ugrás a Raktárkezelés > Beállítás > Dolgozó elemre.</span><span class="sxs-lookup"><span data-stu-id="33ff4-126">Go to Warehouse management > Setup > Worker.</span></span>
+3. <span data-ttu-id="33ff4-127">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="33ff4-127">Click Edit.</span></span>
+4. <span data-ttu-id="33ff4-128">A listában válassza a 24. dolgozó elemet.</span><span class="sxs-lookup"><span data-stu-id="33ff4-128">In the list, select worker 24.</span></span>
+5. <span data-ttu-id="33ff4-129">Bontsa ki a Dolgozó szakaszt.</span><span class="sxs-lookup"><span data-stu-id="33ff4-129">Expand the Work section.</span></span>
+6. <span data-ttu-id="33ff4-130">Válassza ki az Igen lehetőséget a Cikk újbóli manuális felosztásának engedélyezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="33ff4-130">Select Yes in the Allow manual item reallocation field.</span></span>
 
 

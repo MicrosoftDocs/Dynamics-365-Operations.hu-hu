@@ -16,73 +16,73 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f1c279546dfaa738022369f782df57f02afa883e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0008ec19fb9a465a8b342d5c96654f109133f705
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="research-or-resolve-exceptions"></a>Kivételek kivizsgálása/feloldása
+# <a name="research-or-resolve-exceptions"></a><span data-ttu-id="97a2a-103">Kivételek kivizsgálása/feloldása</span><span class="sxs-lookup"><span data-stu-id="97a2a-103">Research or resolve exceptions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A Szállítói számlára vonatkozó irányelvek akkor futnak, amikor a szállítói számla oldal használatával ad fel egy szállítói számlát, és amikor megnyitja a szállítói számlára vonatkozó irányelv megszegéseinek lapját. A szállítói számla munkafolyamatát is beállíthatja úgy, hogy a valahányszor számlát küld egy munkafolyamathoz, futtatja a szállítói számlára vonatkozó irányelveket. 
+<span data-ttu-id="97a2a-104">A Szállítói számlára vonatkozó irányelvek akkor futnak, amikor a szállítói számla oldal használatával ad fel egy szállítói számlát, és amikor megnyitja a szállítói számlára vonatkozó irányelv megszegéseinek lapját.</span><span class="sxs-lookup"><span data-stu-id="97a2a-104">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="97a2a-105">A szállítói számla munkafolyamatát is beállíthatja úgy, hogy a valahányszor számlát küld egy munkafolyamathoz, futtatja a szállítói számlára vonatkozó irányelveket.</span><span class="sxs-lookup"><span data-stu-id="97a2a-105">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
 
-A szállítói számla irányelvek nem vonatkoznak azokra a számlákra, amelyek a számlajegyzékben vagy a számlanaplóban jöttek létre. 
+<span data-ttu-id="97a2a-106">A szállítói számla irányelvek nem vonatkoznak azokra a számlákra, amelyek a számlajegyzékben vagy a számlanaplóban jöttek létre.</span><span class="sxs-lookup"><span data-stu-id="97a2a-106">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span> 
 
-A számlaegyeztetés érvényesítése nem használja a szállítói számla irányelveket, ehelyett egy Kötelezettségek paraméterei oldalt hoz létre.
+<span data-ttu-id="97a2a-107">A számlaegyeztetés érvényesítése nem használja a szállítói számla irányelveket, ehelyett egy Kötelezettségek paraméterei oldalt hoz létre.</span><span class="sxs-lookup"><span data-stu-id="97a2a-107">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>
 
-Ez a felvétel az USMF bemutatócéget használja. A kötelezettségeket kezelő vezető vagy a könyvelésért felelős vezető ezeket a lépéseket hajtja végre. Mielőtt elkezdené a beállítást, győződjön meg arról, hogy a Számlaegyeztetés konfigurációs kulcs be van állítva.
+<span data-ttu-id="97a2a-108">Ez a felvétel az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="97a2a-108">This recording uses the USMF demo company.</span></span> <span data-ttu-id="97a2a-109">A kötelezettségeket kezelő vezető vagy a könyvelésért felelős vezető ezeket a lépéseket hajtja végre.</span><span class="sxs-lookup"><span data-stu-id="97a2a-109">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="97a2a-110">Mielőtt elkezdené a beállítást, győződjön meg arról, hogy a Számlaegyeztetés konfigurációs kulcs be van állítva.</span><span class="sxs-lookup"><span data-stu-id="97a2a-110">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
 
 
-## <a name="prepare-to-create-vendor-invoice-policies"></a>Felkészülés a szállítói számlára vonatkozó irányelvek létrehozására
-1. Ugorjon a Kötelezettségek > Beállítás > Kötelezettségek paraméterei pontra.
-2. Kattintson a Számlaegyeztetés fülre.
-3. Válassza ki vagy állítsa alaphelyzetbe a Számlafejléc állapotának automatikus frissítése jelölőnégyzetét.
-4. Kattintson az OK gombra.
-5. A Számlafeladás eltérésekkel mezőben válasszon a lehetőségek közül.
-6. Zárja be a lapot.
-7. Ugorjon a Kötelezettségek > Irányelv-beállítás > Szállítói számlára vonatkozó irányelvek pontra.
-8. Kattintson a Paraméterek lehetőségre.
-9. Majd a btnAdd lehetőségre.
-10. Zárja be a lapot.
+## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="97a2a-111">Felkészülés a szállítói számlára vonatkozó irányelvek létrehozására</span><span class="sxs-lookup"><span data-stu-id="97a2a-111">Prepare to create vendor invoice policies</span></span>
+1. <span data-ttu-id="97a2a-112">Ugorjon a Kötelezettségek > Beállítás > Kötelezettségek paraméterei pontra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-112">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
+2. <span data-ttu-id="97a2a-113">Kattintson a Számlaegyeztetés fülre.</span><span class="sxs-lookup"><span data-stu-id="97a2a-113">Click the Invoice validation tab.</span></span>
+3. <span data-ttu-id="97a2a-114">Válassza ki vagy állítsa alaphelyzetbe a Számlafejléc állapotának automatikus frissítése jelölőnégyzetét.</span><span class="sxs-lookup"><span data-stu-id="97a2a-114">Select or clear the Automatically update invoice header status check box.</span></span>
+4. <span data-ttu-id="97a2a-115">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-115">Click OK.</span></span>
+5. <span data-ttu-id="97a2a-116">A Számlafeladás eltérésekkel mezőben válasszon a lehetőségek közül.</span><span class="sxs-lookup"><span data-stu-id="97a2a-116">In the Post invoice with discrepancies field, select an option.</span></span>
+6. <span data-ttu-id="97a2a-117">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="97a2a-117">Close the page.</span></span>
+7. <span data-ttu-id="97a2a-118">Ugorjon a Kötelezettségek > Irányelv-beállítás > Szállítói számlára vonatkozó irányelvek pontra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-118">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
+8. <span data-ttu-id="97a2a-119">Kattintson a Paraméterek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="97a2a-119">Click Parameters.</span></span>
+9. <span data-ttu-id="97a2a-120">Majd a btnAdd lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="97a2a-120">Click btnAdd.</span></span>
+10. <span data-ttu-id="97a2a-121">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="97a2a-121">Close the page.</span></span>
 
-## <a name="create-policy-rule-types-for-vendor-invoices"></a>Szállítói számla irányelvszabály-típusainak létrehozása szállítói számlákhoz
-1. Ugorjon a Kötelezettségek > Irányelv-beállítás > Szállítói számlára vonatkozó irányelvszabály típusok pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Szabály neve mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. A Lekérdezés neve mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. Kattintson a Mentés gombra.
-9. Zárja be a lapot.
+## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="97a2a-122">Szállítói számla irányelvszabály-típusainak létrehozása szállítói számlákhoz</span><span class="sxs-lookup"><span data-stu-id="97a2a-122">Create policy rule types for vendor invoices</span></span>
+1. <span data-ttu-id="97a2a-123">Ugorjon a Kötelezettségek > Irányelv-beállítás > Szállítói számlára vonatkozó irányelvszabály típusok pontra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-123">Go to Accounts payable > Policy setup > Vendor invoice policy rule types.</span></span>
+2. <span data-ttu-id="97a2a-124">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="97a2a-124">Click New.</span></span>
+3. <span data-ttu-id="97a2a-125">Írjon be egy értéket a Szabály neve mezőbe.</span><span class="sxs-lookup"><span data-stu-id="97a2a-125">In the Rule name field, type a value.</span></span>
+4. <span data-ttu-id="97a2a-126">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="97a2a-126">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="97a2a-127">A Lekérdezés neve mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="97a2a-127">In the Query name field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="97a2a-128">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="97a2a-128">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="97a2a-129">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-129">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="97a2a-130">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-130">Click Save.</span></span>
+9. <span data-ttu-id="97a2a-131">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="97a2a-131">Close the page.</span></span>
 
-## <a name="define-a-vendor-invoice-policy"></a>Adjon meg egy Szállítói számlára vonatkozó irányelvet
-1. Ugorjon a Kötelezettségek > Irányelv-beállítás > Szállítói számlára vonatkozó irányelvek pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Név mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Csukja be vagy bontsa ki az Irányelv szervezetei szakaszt.
-6. A fán válassza ki a „Contoso Szórakozás rendszer USA” lehetőséget.
-7. Kattintson a Hozzáadás gombra.
-8. Csukja be vagy bontsa ki az Irányelvszabályok szakaszt.
-9. Kattintson az Irányelvszabályra.
-10. Írjon be egy értéket a Irányelvszabály leírása mezőbe.
-11. Kattintson a Szűrő parancsra.
-12. Kattintson a Hozzáadás gombra.
-13. A listában jelölje meg a kiválasztott sort.
-14. A Táblázat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-15. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-16. A Származtatott tábla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-17. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-18. A Mező mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-19. Érték beírása a Mező mezőbe.
-20. Zárja be a lapot.
-21. Érték beírása a Feltétel mezőbe.
-22. Kattintson az OK gombra.
-23. Kattintson az OK gombra.
-24. Zárja be a lapot.
-25. Zárja be a lapot.
+## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="97a2a-132">Adjon meg egy Szállítói számlára vonatkozó irányelvet</span><span class="sxs-lookup"><span data-stu-id="97a2a-132">Define a vendor invoice policy</span></span>
+1. <span data-ttu-id="97a2a-133">Ugorjon a Kötelezettségek > Irányelv-beállítás > Szállítói számlára vonatkozó irányelvek pontra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-133">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
+2. <span data-ttu-id="97a2a-134">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="97a2a-134">Click New.</span></span>
+3. <span data-ttu-id="97a2a-135">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="97a2a-135">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="97a2a-136">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="97a2a-136">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="97a2a-137">Csukja be vagy bontsa ki az Irányelv szervezetei szakaszt.</span><span class="sxs-lookup"><span data-stu-id="97a2a-137">Expand or collapse the Policy organizations section.</span></span>
+6. <span data-ttu-id="97a2a-138">A fán válassza ki a „Contoso Szórakozás rendszer USA” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="97a2a-138">In the tree, select 'Contoso Entertainment System USA'.</span></span>
+7. <span data-ttu-id="97a2a-139">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-139">Click Add.</span></span>
+8. <span data-ttu-id="97a2a-140">Csukja be vagy bontsa ki az Irányelvszabályok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="97a2a-140">Expand or collapse the Policy rules section.</span></span>
+9. <span data-ttu-id="97a2a-141">Kattintson az Irányelvszabályra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-141">Click Create policy rule.</span></span>
+10. <span data-ttu-id="97a2a-142">Írjon be egy értéket a Irányelvszabály leírása mezőbe.</span><span class="sxs-lookup"><span data-stu-id="97a2a-142">In the Policy rule description field, type a value.</span></span>
+11. <span data-ttu-id="97a2a-143">Kattintson a Szűrő parancsra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-143">Click Filter.</span></span>
+12. <span data-ttu-id="97a2a-144">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-144">Click Add.</span></span>
+13. <span data-ttu-id="97a2a-145">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="97a2a-145">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="97a2a-146">A Táblázat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="97a2a-146">In the Table field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="97a2a-147">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-147">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="97a2a-148">A Származtatott tábla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="97a2a-148">In the Derived table field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="97a2a-149">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-149">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="97a2a-150">A Mező mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="97a2a-150">In the Field field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="97a2a-151">Érték beírása a Mező mezőbe.</span><span class="sxs-lookup"><span data-stu-id="97a2a-151">In the Field field, type a value.</span></span>
+20. <span data-ttu-id="97a2a-152">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="97a2a-152">Close the page.</span></span>
+21. <span data-ttu-id="97a2a-153">Érték beírása a Feltétel mezőbe.</span><span class="sxs-lookup"><span data-stu-id="97a2a-153">In the Criteria field, type a value.</span></span>
+22. <span data-ttu-id="97a2a-154">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-154">Click OK.</span></span>
+23. <span data-ttu-id="97a2a-155">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="97a2a-155">Click OK.</span></span>
+24. <span data-ttu-id="97a2a-156">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="97a2a-156">Close the page.</span></span>
+25. <span data-ttu-id="97a2a-157">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="97a2a-157">Close the page.</span></span>
 
 

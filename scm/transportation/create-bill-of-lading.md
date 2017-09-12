@@ -16,32 +16,32 @@ ms.custom: 193583
 ms.assetid: 1ad0c1cb-4346-4042-a59b-923115fac03e
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f3010daa41f54cf026d46b1b7648a277651173da
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: b274ff572d2be9a71b91d533023b95be98591e4f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="create-a-bill-of-lading"></a>Fuvarlevél létrehozása
+# <a name="create-a-bill-of-lading"></a><span data-ttu-id="058fa-103">Fuvarlevél létrehozása</span><span class="sxs-lookup"><span data-stu-id="058fa-103">Create a bill of lading</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör ismerteti, hogy hogyan hozhat létre fuvarlevelet a raktárkezelési folyamatok használata közben.  
+<span data-ttu-id="058fa-104">Ez a témakör ismerteti, hogy hogyan hozhat létre fuvarlevelet a raktárkezelési folyamatok használata közben.</span><span class="sxs-lookup"><span data-stu-id="058fa-104">This topic describes how to create a bill of lading when using warehouse management processes.</span></span>  
 
-A fuvarlevél egy jogi dokumentum a cikkeket leszállító vállalat és a szállítmányozó között. A dokumentum a szállított cikkeket kíséri, és a cikkek célhelyen történő megérkezésekor a kiszáLlítás bizonylataként szolgál. Raktárkezelés használatakor kétféleképpen lehet fuvarlevelet létrehozni:
+<span data-ttu-id="058fa-105">A fuvarlevél egy jogi dokumentum a cikkeket leszállító vállalat és a szállítmányozó között.</span><span class="sxs-lookup"><span data-stu-id="058fa-105">A bill of lading is a legal document between the company that ships the items and the carrier.</span></span> <span data-ttu-id="058fa-106">A dokumentum a szállított cikkeket kíséri, és a cikkek célhelyen történő megérkezésekor a kiszáLlítás bizonylataként szolgál.</span><span class="sxs-lookup"><span data-stu-id="058fa-106">The document accompanies the shipped items, and it serves as a receipt of shipment when the items are delivered at the destination.</span></span> <span data-ttu-id="058fa-107">Raktárkezelés használatakor kétféleképpen lehet fuvarlevelet létrehozni:</span><span class="sxs-lookup"><span data-stu-id="058fa-107">If you're using warehouse management, there are two ways to generate a bill of lading:</span></span>
 
-  -   A jelentés létrehozása manuálisan, a **fuvarlevél** oldalon.
-  -   Jelentés készítése a **Rakománytervező munkaterületről**.
+  -   <span data-ttu-id="058fa-108">A jelentés létrehozása manuálisan, a **fuvarlevél** oldalon.</span><span class="sxs-lookup"><span data-stu-id="058fa-108">Create the report manually, using the **Bill of lading** page.</span></span>
+  -   <span data-ttu-id="058fa-109">Jelentés készítése a **Rakománytervező munkaterületről**.</span><span class="sxs-lookup"><span data-stu-id="058fa-109">Generate the report from the **Load planning workbench**.</span></span>
 
-Ha a fuvarlevelet a **rakománytervező munkaterületről** hozza létre, a rakomány állapota legyen: **kiszállítva.** Ha egynél több szállítmány szerepel a rakományban, a fuvarlevél minden egyes szállítmányhoz létrejön. Fuvarlevél létrehozását követően módosíthatja azt a **Fuvarlevél** oldalon.
+<span data-ttu-id="058fa-110">Ha a fuvarlevelet a **rakománytervező munkaterületről** hozza létre, a rakomány állapota legyen: **kiszállítva.**</span><span class="sxs-lookup"><span data-stu-id="058fa-110">If you generate the bill of lading from the **Load planning workbench**, the load status must be **Shipped.**</span></span> <span data-ttu-id="058fa-111">Ha egynél több szállítmány szerepel a rakományban, a fuvarlevél minden egyes szállítmányhoz létrejön.</span><span class="sxs-lookup"><span data-stu-id="058fa-111">If there's more than one shipment in the load, a bill of lading is created for each shipment.</span></span> <span data-ttu-id="058fa-112">Fuvarlevél létrehozását követően módosíthatja azt a **Fuvarlevél** oldalon.</span><span class="sxs-lookup"><span data-stu-id="058fa-112">After a bill of lading has been created you can make changes to it on the **Bill of lading** page.</span></span>
 
-## <a name="master-bill-of-lading"></a>Fő fuvarlevél
-Ha egynél több szállítmány tartozik a rakományhoz, akkor létrehozhat egy fő fuvarlevelet. Ennek elrendezése és a rajta szereplő információ megegyezik a fuvarlevéllel, de tartalmazza az összes szállítás összesített tartalmát. Ha a **Hozzon létre fő fuvarlevelet, ha egynél több szállítmány van a rakományban** lehetőség **Igenre** van állítva a **Szállításkezelési paraméterek** lapon, és egynél több szállítmány van, akkor a fő fuvarlevél a fuvarlevél létrehozásakor automatikusan létrejön a **Rakománytervező munkaterületről**. Elérheti a fuvarlevelek listáját a következő lehetőségekre kattintva: **Kapcsolódó információk** &gt; **Fuvarlevél**. Ha a fuvarleveleket manuálisan hozza létre, létrehozhat egy fő fuvarlevelet a **Fuvarlevél** oldalon.
+## <a name="master-bill-of-lading"></a><span data-ttu-id="058fa-113">Fő fuvarlevél</span><span class="sxs-lookup"><span data-stu-id="058fa-113">Master bill of lading</span></span>
+<span data-ttu-id="058fa-114">Ha egynél több szállítmány tartozik a rakományhoz, akkor létrehozhat egy fő fuvarlevelet.</span><span class="sxs-lookup"><span data-stu-id="058fa-114">If there's more than one shipment in the load, you can generate a master bill of lading.</span></span> <span data-ttu-id="058fa-115">Ennek elrendezése és a rajta szereplő információ megegyezik a fuvarlevéllel, de tartalmazza az összes szállítás összesített tartalmát.</span><span class="sxs-lookup"><span data-stu-id="058fa-115">This has the same layout and information as a bill of lading, but contains the summarized content for all the shipments.</span></span> <span data-ttu-id="058fa-116">Ha a **Hozzon létre fő fuvarlevelet, ha egynél több szállítmány van a rakományban** lehetőség **Igenre** van állítva a **Szállításkezelési paraméterek** lapon, és egynél több szállítmány van, akkor a fő fuvarlevél a fuvarlevél létrehozásakor automatikusan létrejön a **Rakománytervező munkaterületről**.</span><span class="sxs-lookup"><span data-stu-id="058fa-116">If the **Create a master bill of lading when there's more than one shipment on a load** option is set to **Yes** on the **Transportation management parameters** page, a master bill of lading is automatically generated if you create a bill of lading from the **Load planning workbench**, and there's more than one shipment.</span></span> <span data-ttu-id="058fa-117">Elérheti a fuvarlevelek listáját a következő lehetőségekre kattintva: **Kapcsolódó információk** &gt; **Fuvarlevél**.</span><span class="sxs-lookup"><span data-stu-id="058fa-117">You can also get a list of the bills of lading by clicking **Related information** &gt; **Bill of lading**.</span></span> <span data-ttu-id="058fa-118">Ha a fuvarleveleket manuálisan hozza létre, létrehozhat egy fő fuvarlevelet a **Fuvarlevél** oldalon.</span><span class="sxs-lookup"><span data-stu-id="058fa-118">If you're creating bills of lading manually, you can create a master bill of lading on the **Bill of lading** page.</span></span>
 
 
 

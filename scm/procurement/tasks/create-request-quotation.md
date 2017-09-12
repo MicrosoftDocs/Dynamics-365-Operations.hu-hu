@@ -16,73 +16,73 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: df6d8620316cf0dcde457b06235d9e041a51e100
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 331f516f3483acd79be4ef7b95b53adcfbef1ae2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-request-for-quotation"></a>Ajánlatkérés létrehozása
+# <a name="create-a-request-for-quotation"></a><span data-ttu-id="13336-103">Ajánlatkérés létrehozása</span><span class="sxs-lookup"><span data-stu-id="13336-103">Create a request for quotation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja az ajánlatkérés létrehozásának módját. Ez általában egy beszerzési ügynök által történik. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. A kezdés előtt be kell állítania a meghirdetési típusokat. Miután befejezte ezt a feladatot, és létrehozta, illetve elküldte az Ajánlatkérést, megadhatja ezt követően szállítónként a válaszokat, összehasonlíthatja azokat, és hozzá rendelheti a szerzősédhez.
+<span data-ttu-id="13336-104">Ez az eljárás bemutatja az ajánlatkérés létrehozásának módját.</span><span class="sxs-lookup"><span data-stu-id="13336-104">This procedure shows you how to create a request for quotation.</span></span> <span data-ttu-id="13336-105">Ez általában egy beszerzési ügynök által történik.</span><span class="sxs-lookup"><span data-stu-id="13336-105">This would typically be done by a purchasing agent.</span></span> <span data-ttu-id="13336-106">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.</span><span class="sxs-lookup"><span data-stu-id="13336-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="13336-107">A kezdés előtt be kell állítania a meghirdetési típusokat.</span><span class="sxs-lookup"><span data-stu-id="13336-107">You need to have set up solicitation types before you start.</span></span> <span data-ttu-id="13336-108">Miután befejezte ezt a feladatot, és létrehozta, illetve elküldte az Ajánlatkérést, megadhatja ezt követően szállítónként a válaszokat, összehasonlíthatja azokat, és hozzá rendelheti a szerzősédhez.</span><span class="sxs-lookup"><span data-stu-id="13336-108">Once you’ve completed this task and you’ve created and sent an RFQ you can then enter the replies per vendor, compare them, and award the contract.</span></span>
 
 
-## <a name="prepare-a-new-rfq"></a>Egy új Ajánlatkérések előkészítése
-1. Ugorjon a Beszerzés és forrás > Ajánlatkérések > Összes ajánlatkérés pontra.
-2. Kattintson az Új lehetőségre.
-    * A következő beszerzési lehetségesek: Beszerzési rendelés (Ez az alapértelmezett): olyan dokumentum, amely megerősíti az ajánlatot a termékek megvásárlásához, vagy egy ajánlat elfogadását a termékek fizetés ellenében történő eladásához. Beszerzési igénylés: A rendszer automatikusan ezt a típust választja ki, ha az Ajánlatkérést közvetlenül egy beszerzési igény alapján hoz létre. Ha manuálisan választja ezt a beállítást, akkor hibaüzenetet kap. Beszerzési szerződés: Megállapodás egy megadott mennyiségű vagy értékű termék hosszabb idő alatt történő beszerzéséhez. Ha ezt a beállítást választja, ki kell választania azt a dátumtartományt, amelyre a beszerzési szerződés vonatkozik.  
-3. A Dokumentum címe mezőbe írjon be egy értéket.
-4. A Meghirdetés típusa mezőben adjon meg vagy válasszon ki egy értéket.
-    * Ha a pontozási módhoz meghirdetési típus is társul, akkor ez lesz a létrejövő ajánlatkérésre vonatkozó alapértelmezett pontozási módja. Lehetőség van később a pontozási módszer módosítására.  
-    * Adjon meg egy dátumot a Kiszállítási dátum mezőben.  
-    * Válassza ki azt a dátumot, amikor meg szeretné kapni a cikkeket.  
-    * A Lejárati dátum és idő mezőben adjon meg egy dátumot és időpontot.  
-    * Adja meg a mezőben azt a dátumot és időt, amikor a szállítóknak válaszolni kell az ajánlatkérésre.  
-5. A Raktár mezőben adjon meg vagy válasszon ki egy értéket.
-    * A szállítási cím lesz a raktár alapértelmezett címe.  
-6. Kattintson az OK gombra.
+## <a name="prepare-a-new-rfq"></a><span data-ttu-id="13336-109">Egy új Ajánlatkérések előkészítése</span><span class="sxs-lookup"><span data-stu-id="13336-109">Prepare a new RFQ</span></span>
+1. <span data-ttu-id="13336-110">Ugorjon a Beszerzés és forrás > Ajánlatkérések > Összes ajánlatkérés pontra.</span><span class="sxs-lookup"><span data-stu-id="13336-110">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
+2. <span data-ttu-id="13336-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="13336-111">Click New.</span></span>
+    * <span data-ttu-id="13336-112">A következő beszerzési lehetségesek: Beszerzési rendelés (Ez az alapértelmezett): olyan dokumentum, amely megerősíti az ajánlatot a termékek megvásárlásához, vagy egy ajánlat elfogadását a termékek fizetés ellenében történő eladásához.</span><span class="sxs-lookup"><span data-stu-id="13336-112">The following purchase types are available: Purchase order (this is the default): a document that confirms the offer to buy products, or the acceptance of an offer to sell products in exchange for payment.</span></span> <span data-ttu-id="13336-113">Beszerzési igénylés: A rendszer automatikusan ezt a típust választja ki, ha az Ajánlatkérést közvetlenül egy beszerzési igény alapján hoz létre.</span><span class="sxs-lookup"><span data-stu-id="13336-113">Purchase requisition: this type is automatically selected if you create an RFQ directly from a purchase requisition.</span></span> <span data-ttu-id="13336-114">Ha manuálisan választja ezt a beállítást, akkor hibaüzenetet kap.</span><span class="sxs-lookup"><span data-stu-id="13336-114">If you manually select this option, you’ll get an error.</span></span> <span data-ttu-id="13336-115">Beszerzési szerződés: Megállapodás egy megadott mennyiségű vagy értékű termék hosszabb idő alatt történő beszerzéséhez.</span><span class="sxs-lookup"><span data-stu-id="13336-115">Purchase agreement: an agreement to purchase a specific quantity or value of product over time.</span></span> <span data-ttu-id="13336-116">Ha ezt a beállítást választja, ki kell választania azt a dátumtartományt, amelyre a beszerzési szerződés vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="13336-116">If you select this option, you must select the date range that applies to the purchase agreement.</span></span>  
+3. <span data-ttu-id="13336-117">A Dokumentum címe mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="13336-117">In the Document title field, type a value.</span></span>
+4. <span data-ttu-id="13336-118">A Meghirdetés típusa mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="13336-118">In the Solicitation type field, enter or select a value.</span></span>
+    * <span data-ttu-id="13336-119">Ha a pontozási módhoz meghirdetési típus is társul, akkor ez lesz a létrejövő ajánlatkérésre vonatkozó alapértelmezett pontozási módja.</span><span class="sxs-lookup"><span data-stu-id="13336-119">If a scoring method is associated with the solicitation type, this will be the default scoring method for the RFQ that you’re creating.</span></span> <span data-ttu-id="13336-120">Lehetőség van később a pontozási módszer módosítására.</span><span class="sxs-lookup"><span data-stu-id="13336-120">It is possible to change the scoring method later.</span></span>  
+    * <span data-ttu-id="13336-121">Adjon meg egy dátumot a Kiszállítási dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="13336-121">In the Delivery date field, enter a date.</span></span>  
+    * <span data-ttu-id="13336-122">Válassza ki azt a dátumot, amikor meg szeretné kapni a cikkeket.</span><span class="sxs-lookup"><span data-stu-id="13336-122">Select the date by which you want to receive the items.</span></span>  
+    * <span data-ttu-id="13336-123">A Lejárati dátum és idő mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="13336-123">In the Expiration date and time field, enter a date and time.</span></span>  
+    * <span data-ttu-id="13336-124">Adja meg a mezőben azt a dátumot és időt, amikor a szállítóknak válaszolni kell az ajánlatkérésre.</span><span class="sxs-lookup"><span data-stu-id="13336-124">Specify the date and time by which vendors must respond to the RFQ.</span></span>  
+5. <span data-ttu-id="13336-125">A Raktár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="13336-125">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="13336-126">A szállítási cím lesz a raktár alapértelmezett címe.</span><span class="sxs-lookup"><span data-stu-id="13336-126">The delivery address will default to the warehouse address.</span></span>  
+6. <span data-ttu-id="13336-127">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="13336-127">Click OK.</span></span>
 
-## <a name="add-lines"></a>Sorok hozzáadása
-    * Miután megadta az ajánlatkérés alapvető információit, adja meg, hogy milyen termékekre és szolgáltatásokra kíván ajánlatokat kérni a szállítóktól. A cikk az alapértelmezett típus.   
-1. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Ha az USMF használja, választhatja a T0020-as cikket.  
-2. Adjon meg egy számot a Mennyiség mezőben.
-3. Kattintson az Új sor hozzáadása lehetőségre.
-4. A Sor típusa mezőben válassza ki a „Kategóriát”.
-    * A Kategóriasor típus segítségével a nem készlet árukra vagy szolgáltatásokra vonatkozó ajánlatkéréseket hozhat lére. Akkor ki kell választania az áruk vagy szolgáltatások típusát a beszerzési kategóriák hierarchiája alapján.  
-5. A Beszerzési kategória mezőben adjon meg vagy válasszon ki egy értéket.
-6. Írjon be egy értéket a Terméknév mezőbe.
-7. Adjon meg egy számot a Mennyiség mezőben.
-8. Az Egység mezőben adjon meg vagy válasszon ki egy értéket.
+## <a name="add-lines"></a><span data-ttu-id="13336-128">Sorok hozzáadása</span><span class="sxs-lookup"><span data-stu-id="13336-128">Add lines</span></span>
+    * <span data-ttu-id="13336-129">Miután megadta az ajánlatkérés alapvető információit, adja meg, hogy milyen termékekre és szolgáltatásokra kíván ajánlatokat kérni a szállítóktól.</span><span class="sxs-lookup"><span data-stu-id="13336-129">After you’ve specified the basic information about your RFQ, you specify the goods or services that you want vendors to bid on.</span></span> <span data-ttu-id="13336-130">A cikk az alapértelmezett típus.</span><span class="sxs-lookup"><span data-stu-id="13336-130">Item is the default line type.</span></span>   
+1. <span data-ttu-id="13336-131">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="13336-131">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="13336-132">Ha az USMF használja, választhatja a T0020-as cikket.</span><span class="sxs-lookup"><span data-stu-id="13336-132">If you're using USMF, you can select T0020.</span></span>  
+2. <span data-ttu-id="13336-133">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="13336-133">In the Quantity field, enter a number.</span></span>
+3. <span data-ttu-id="13336-134">Kattintson az Új sor hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="13336-134">Click Add line.</span></span>
+4. <span data-ttu-id="13336-135">A Sor típusa mezőben válassza ki a „Kategóriát”.</span><span class="sxs-lookup"><span data-stu-id="13336-135">In the Line type field, select 'Category'.</span></span>
+    * <span data-ttu-id="13336-136">A Kategóriasor típus segítségével a nem készlet árukra vagy szolgáltatásokra vonatkozó ajánlatkéréseket hozhat lére.</span><span class="sxs-lookup"><span data-stu-id="13336-136">You can use the Category line type to create RFQs for non-inventory goods or services.</span></span> <span data-ttu-id="13336-137">Akkor ki kell választania az áruk vagy szolgáltatások típusát a beszerzési kategóriák hierarchiája alapján.</span><span class="sxs-lookup"><span data-stu-id="13336-137">You then need to select the type of goods or services from a hierarchy of procurement categories.</span></span>  
+5. <span data-ttu-id="13336-138">A Beszerzési kategória mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="13336-138">In the Procurement category field, enter or select a value.</span></span>
+6. <span data-ttu-id="13336-139">Írjon be egy értéket a Terméknév mezőbe.</span><span class="sxs-lookup"><span data-stu-id="13336-139">In the Product name field, type a value.</span></span>
+7. <span data-ttu-id="13336-140">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="13336-140">In the Quantity field, enter a number.</span></span>
+8. <span data-ttu-id="13336-141">Az Egység mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="13336-141">In the Unit field, enter or select a value.</span></span>
 
-## <a name="add-vendors"></a>Szállítók hozzáadása
-1. Kattintson a Fejlécre a Sorok nézetéről a Fejléc nézetére történő módosításhoz. 
-2. Bontsa ki a Szállító szakaszt.
-3. Kattintson a Szállítók automatikus hozzáadása elemre.
-    * Automatikusan hozzáadhatja a szállítókat az ajánlatkéréshez az igényelt cikkek beszerzési kategóriája alapján. Ha a sorokban szereplő kategóriákra vonatkozóan engedélyezett szállító nem szerepel, akkor manuálisan adhat hozzá szállítókat.  
-4. Kattintson a Hozzáadás gombra.
-5. A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.
-6. Kattintson a Hozzáadás gombra.
-7. A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.
-    * Ha kijelölt egy szállítót, akkor az állapota „Létrehozva”. Ez azt jelenti, hogy mentette a szállítói információkat az ajánlatkérésben, de nem küldte el az ajánlatkérést a szállítónak. A szállító ajánlatkérésbe való felvételét nem befolyásolja a szállító állapota.  
+## <a name="add-vendors"></a><span data-ttu-id="13336-142">Szállítók hozzáadása</span><span class="sxs-lookup"><span data-stu-id="13336-142">Add vendors</span></span>
+1. <span data-ttu-id="13336-143">Kattintson a Fejlécre a Sorok nézetéről a Fejléc nézetére történő módosításhoz.</span><span class="sxs-lookup"><span data-stu-id="13336-143">Click Header to change from the Lines view to the Header view.</span></span> 
+2. <span data-ttu-id="13336-144">Bontsa ki a Szállító szakaszt.</span><span class="sxs-lookup"><span data-stu-id="13336-144">Expand the Vendor section.</span></span>
+3. <span data-ttu-id="13336-145">Kattintson a Szállítók automatikus hozzáadása elemre.</span><span class="sxs-lookup"><span data-stu-id="13336-145">Click Auto-add vendors.</span></span>
+    * <span data-ttu-id="13336-146">Automatikusan hozzáadhatja a szállítókat az ajánlatkéréshez az igényelt cikkek beszerzési kategóriája alapján.</span><span class="sxs-lookup"><span data-stu-id="13336-146">You can add vendors to the RFQ automatically, based on the procurement category of the items requested.</span></span> <span data-ttu-id="13336-147">Ha a sorokban szereplő kategóriákra vonatkozóan engedélyezett szállító nem szerepel, akkor manuálisan adhat hozzá szállítókat.</span><span class="sxs-lookup"><span data-stu-id="13336-147">If there are no vendors approved for the categories included in the lines you can add vendors manually.</span></span>  
+4. <span data-ttu-id="13336-148">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="13336-148">Click Add.</span></span>
+5. <span data-ttu-id="13336-149">A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="13336-149">In the Vendor account field, enter or select a value.</span></span>
+6. <span data-ttu-id="13336-150">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="13336-150">Click Add.</span></span>
+7. <span data-ttu-id="13336-151">A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="13336-151">In the Vendor account field, enter or select a value.</span></span>
+    * <span data-ttu-id="13336-152">Ha kijelölt egy szállítót, akkor az állapota „Létrehozva”.</span><span class="sxs-lookup"><span data-stu-id="13336-152">Once you’ve selected a vendor, the status is Created.</span></span> <span data-ttu-id="13336-153">Ez azt jelenti, hogy mentette a szállítói információkat az ajánlatkérésben, de nem küldte el az ajánlatkérést a szállítónak.</span><span class="sxs-lookup"><span data-stu-id="13336-153">This means that the vendor information has been saved in the RFQ, but you have not sent the RFQ to the vendor.</span></span> <span data-ttu-id="13336-154">A szállító ajánlatkérésbe való felvételét nem befolyásolja a szállító állapota.</span><span class="sxs-lookup"><span data-stu-id="13336-154">You can add a vendor to an RFQ regardless of the vendor status.</span></span>  
 
-## <a name="send-the-rfq-to-vendors"></a>RFQ küldése a szállítóknak
-1. Kattintson a Küldés gombra.
-    * Az ajánlatkérés elküldése lapon ellenőrizze, hogy azok a szállítók szerepelnek-e a listában, akiktől meg szeretné kapni az ajánlatkérést.  
-2. Kattintson a Nyomtatás parancsra.
-    * Ez a párbeszédpanel lehetővé teszi az Ajánlatkérés nyomtatását. Ha egy válaszlap nyomtatását választja, akkor annak tartalmát a Beszerzés és forrás paramétereiben határozza meg a rendszer. A válaszlapok nyomtatási módjának kiválasztásához, a nyomtatási párbeszédpanel megnyitása után kattintson a Speciális nyomtatási beállítások elemre. Az ajánlatkérést minden egyes szállítóra vonatkozóan kinyomtatják, ami Létrehozva vagy Elküldve állapotú sorokat tartalmaz. A törölt sorok és a regisztrált válaszokkal rendelkező sorok nem kerülnek kinyomtatásra.   
-3. Kattintson a Mégse gombra.
-4. Kattintson az OK gombra.
-5. Zárja be a lapot.
-6. Zárja be a lapot.
+## <a name="send-the-rfq-to-vendors"></a><span data-ttu-id="13336-155">RFQ küldése a szállítóknak</span><span class="sxs-lookup"><span data-stu-id="13336-155">Send the RFQ to vendors</span></span>
+1. <span data-ttu-id="13336-156">Kattintson a Küldés gombra.</span><span class="sxs-lookup"><span data-stu-id="13336-156">Click Send.</span></span>
+    * <span data-ttu-id="13336-157">Az ajánlatkérés elküldése lapon ellenőrizze, hogy azok a szállítók szerepelnek-e a listában, akiktől meg szeretné kapni az ajánlatkérést.</span><span class="sxs-lookup"><span data-stu-id="13336-157">In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ.</span></span>  
+2. <span data-ttu-id="13336-158">Kattintson a Nyomtatás parancsra.</span><span class="sxs-lookup"><span data-stu-id="13336-158">Click Print.</span></span>
+    * <span data-ttu-id="13336-159">Ez a párbeszédpanel lehetővé teszi az Ajánlatkérés nyomtatását.</span><span class="sxs-lookup"><span data-stu-id="13336-159">This dialog allows you to print the RFQ.</span></span> <span data-ttu-id="13336-160">Ha egy válaszlap nyomtatását választja, akkor annak tartalmát a Beszerzés és forrás paramétereiben határozza meg a rendszer.</span><span class="sxs-lookup"><span data-stu-id="13336-160">If you choose to print a reply sheet, the contents of this are defined in Procurement and Sourcing parameters.</span></span> <span data-ttu-id="13336-161">A válaszlapok nyomtatási módjának kiválasztásához, a nyomtatási párbeszédpanel megnyitása után kattintson a Speciális nyomtatási beállítások elemre.</span><span class="sxs-lookup"><span data-stu-id="13336-161">To choose how to print reply sheets, once you’ve opened the Print dialog, click Advanced printing options.</span></span> <span data-ttu-id="13336-162">Az ajánlatkérést minden egyes szállítóra vonatkozóan kinyomtatják, ami Létrehozva vagy Elküldve állapotú sorokat tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="13336-162">One RFQ will be printed for each vendor containing the lines that have the status of Created or Sent.</span></span> <span data-ttu-id="13336-163">A törölt sorok és a regisztrált válaszokkal rendelkező sorok nem kerülnek kinyomtatásra.</span><span class="sxs-lookup"><span data-stu-id="13336-163">Canceled lines and lines with registered replies will not be printed.</span></span>   
+3. <span data-ttu-id="13336-164">Kattintson a Mégse gombra.</span><span class="sxs-lookup"><span data-stu-id="13336-164">Click Cancel.</span></span>
+4. <span data-ttu-id="13336-165">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="13336-165">Click OK.</span></span>
+5. <span data-ttu-id="13336-166">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="13336-166">Close the page.</span></span>
+6. <span data-ttu-id="13336-167">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="13336-167">Close the page.</span></span>
 
-## <a name="view-the-rfq-journal"></a>Ajánlatkérési napló megjelenítése.
-1. Ugorjon a Beszerzések és források > Ajánlatkérések > Ajánlatkérések követése > Ajánlatkérési naplók pontra.
-2. Kattintson az Előnézet/nyomtatás gombra.
-3. Kattintson az Eredeti előnézete lehetőségre.
-4. Zárja be a lapot.
-5. Zárja be a lapot.
+## <a name="view-the-rfq-journal"></a><span data-ttu-id="13336-168">Ajánlatkérési napló megjelenítése.</span><span class="sxs-lookup"><span data-stu-id="13336-168">View the RFQ journal</span></span>
+1. <span data-ttu-id="13336-169">Ugorjon a Beszerzések és források > Ajánlatkérések > Ajánlatkérések követése > Ajánlatkérési naplók pontra.</span><span class="sxs-lookup"><span data-stu-id="13336-169">Go to Procurement and sourcing > Requests for quotations > Request for quotations follow-up > Request for quotation journals.</span></span>
+2. <span data-ttu-id="13336-170">Kattintson az Előnézet/nyomtatás gombra.</span><span class="sxs-lookup"><span data-stu-id="13336-170">Click Preview/Print.</span></span>
+3. <span data-ttu-id="13336-171">Kattintson az Eredeti előnézete lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="13336-171">Click Original preview.</span></span>
+4. <span data-ttu-id="13336-172">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="13336-172">Close the page.</span></span>
+5. <span data-ttu-id="13336-173">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="13336-173">Close the page.</span></span>
 
 

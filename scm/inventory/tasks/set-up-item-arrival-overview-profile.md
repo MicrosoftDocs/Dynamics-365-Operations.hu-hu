@@ -1,7 +1,7 @@
---- 
+---
 title: "A cikk érkezésáttekintési profiljának beállítása"
 description: "Ez a feladat érkeztetési áttekintési profil létrehozására szolgál."
-author: BibiSp
+author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,50 +17,49 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ca70b6afbbadf1122f57285eff58125f8e10346b
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 9d4377f4ebf777258de13a2d2cd0a3a095f98fdd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="set-up-an-item-arrival-overview-profile"></a>A cikk érkezésáttekintési profiljának beállítása
+# <a name="set-up-an-item-arrival-overview-profile"></a><span data-ttu-id="47a73-103">A cikk érkezésáttekintési profiljának beállítása</span><span class="sxs-lookup"><span data-stu-id="47a73-103">Set up an item arrival overview profile</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez a feladat érkeztetési áttekintési profil létrehozására szolgál. Az érkeztetési áttekintési profil szabályok gyűjteménye, amelyet egy Érkeztetési áttekintési oldal felhasználó általi megnyitásakor alkalmaz a rendszer. Az USMF bemutatócég adataiban használhatja ezt az eljárást. Általában ezt a feladatot egy befogadó jegyző végzi el.
+<span data-ttu-id="47a73-104">Ez a feladat érkeztetési áttekintési profil létrehozására szolgál.</span><span class="sxs-lookup"><span data-stu-id="47a73-104">This task focuses on the setup of an arrival overview profile.</span></span> <span data-ttu-id="47a73-105">Az érkeztetési áttekintési profil szabályok gyűjteménye, amelyet egy Érkeztetési áttekintési oldal felhasználó általi megnyitásakor alkalmaz a rendszer.</span><span class="sxs-lookup"><span data-stu-id="47a73-105">The arrival overview profile is a collection of rules that will be applied when the Arrival overview page is opened by a user.</span></span> <span data-ttu-id="47a73-106">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="47a73-106">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="47a73-107">Általában ezt a feladatot egy befogadó jegyző végzi el.</span><span class="sxs-lookup"><span data-stu-id="47a73-107">This procedure would typically be carried out by a receiving clerk.</span></span>
 
 
 
 
 
-1. Ugorjon a Készletkezelés > Beállítás > Felosztás > Érkeztetési áttekintési profilok pontra.
-2. Kattintson az Új lehetőségre.
-    * Mivel szinte mindig ugyanabban a raktárban dolgozik teljes rakományok lerakásával, mindig kell egy érkezési áttekintési profilt létrehozni a beérkezett cikkek regisztrálásának egyszerűsítéséhez.  
-3. Az Érkeztetési áttekintési profil mezőbe írjon be egy értéket.
-4. Válasszon ki egy lehetőséget a Sorok megjelenítése mezőben.
-    * Válassza ki, hogy mely sorok látsszanak a bevételezéseknél: az összes – valamennyi sor megjelenik, állapottól függetlenül.   Folyamatban – Bevételezési sorok megjelenítése, amelyben az előrehaladás Elkészült vagy Részben. Ez azt jelenti, hogy minden sor teljes vagy egy részleges mennyisége regisztrálva van az érkeztetési naplóban.   Nem teljes – Bevételezési sorok megjelenítése, amelyben az előrehaladás Nincs vagy Részben. Ez azt jelenti, hogy az egyes soroknál semmi sem vagy csak a mennyiség egy része van regisztrálva az érkeztetési naplóba.  
-5. Bontsa ki vagy csukja össze az Érkezési beállítások szakaszt.
-6. A Napok mától mezőbe írjon be egy értéket.
-    * Ez beállít egy szűrőt, hogy megmutassa a következő napban fogadni kívánt nyugtasorokat (a beállított számtól függően).  
-7. A Napra visszamenőleg mezőbe írjon be egy értéket.
-    * Ezzel beállít egy szűrőt, amely megjeleníti az adott nap előtt adott számú nappal fogadott nyugtasorokat.  
-8. A Raktárak mezőbe írjon be egy értéket.
-    * Szűrjön egy vagy több raktárra.  
-9. Válasszon ki egy értéket a Szállítási mód mezőbe.
-    * Ez beállít egy szűrőt, hogy csak ezzel a szállítási móddal jelenjenek meg nyugtasorok.  
-10. A Név mezőben, válassza a WHS-t.
-11. A Raktár mezőben válassza ki a 24-es raktárt.
-    * Ez az alapértelmezett raktár, amellyel a profilt használó nyugtasorok be lesznek jegyezve.  
-12. A Hely mezőben válassza ki a Baydoor-t.
-    * Ez az alapértelmezett hely, amellyel a profilt használó nyugtasorok be lesznek jegyezve.  
-13. Bontsa ki vagy csukja össze a Érkezéslekérdezés részletei szakaszt.
-14. A Készletező hely mezőben válassza 2. helyet.
-    * Ez beállít egy szűrőt, hogy csak ezzel a hellyel jelenjenek meg nyugtasorok.  
-15. A Beszerzési rendelések beállítást állítsa Igen értékre.
-    * Nyugtasorok kiválasztása beszerzési rendelésekből.  
-16. A Szállítási rendelések beállítást állítsa Igen értékre.
-    * Nyugtasorok kiválasztása átmozgatási rendelésekből.  
-17. Kattintson a Mentés gombra.
-18. Zárja be a lapot.
-
+1. <span data-ttu-id="47a73-108">Ugorjon a Készletkezelés > Beállítás > Felosztás > Érkeztetési áttekintési profilok pontra.</span><span class="sxs-lookup"><span data-stu-id="47a73-108">Go to Inventory management > Setup > Distribution > Arrival overview profiles.</span></span>
+2. <span data-ttu-id="47a73-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="47a73-109">Click New.</span></span>
+    * <span data-ttu-id="47a73-110">Mivel szinte mindig ugyanabban a raktárban dolgozik teljes rakományok lerakásával, mindig kell egy érkezési áttekintési profilt létrehozni a beérkezett cikkek regisztrálásának egyszerűsítéséhez.</span><span class="sxs-lookup"><span data-stu-id="47a73-110">Because you will almost always work in the same warehouse offloading full truck loads, you should create an arrival overview profile to simplify the process of registering received items.</span></span>  
+3. <span data-ttu-id="47a73-111">Az Érkeztetési áttekintési profil mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="47a73-111">In the Arrival overview profile name field, type a value.</span></span>
+4. <span data-ttu-id="47a73-112">Válasszon ki egy lehetőséget a Sorok megjelenítése mezőben.</span><span class="sxs-lookup"><span data-stu-id="47a73-112">In the Show lines field, select an option.</span></span>
+    * <span data-ttu-id="47a73-113">Válassza ki, hogy mely sorok látsszanak a bevételezéseknél: az összes – valamennyi sor megjelenik, állapottól függetlenül.</span><span class="sxs-lookup"><span data-stu-id="47a73-113">Select which lines to show for the receipts:   All – Show all lines, regardless of status.</span></span>   <span data-ttu-id="47a73-114">Folyamatban – Bevételezési sorok megjelenítése, amelyben az előrehaladás Elkészült vagy Részben.</span><span class="sxs-lookup"><span data-stu-id="47a73-114">In progress – Show lines for receipts in which the progress is Complete or Partly.</span></span> <span data-ttu-id="47a73-115">Ez azt jelenti, hogy minden sor teljes vagy egy részleges mennyisége regisztrálva van az érkeztetési naplóban.</span><span class="sxs-lookup"><span data-stu-id="47a73-115">This means that for each line, either the full quantity or part of the quantity has been registered in an arrival journal.</span></span>   <span data-ttu-id="47a73-116">Nem teljes – Bevételezési sorok megjelenítése, amelyben az előrehaladás Nincs vagy Részben.</span><span class="sxs-lookup"><span data-stu-id="47a73-116">Not complete – Show lines for receipts in which the progress is None or Partly.</span></span> <span data-ttu-id="47a73-117">Ez azt jelenti, hogy az egyes soroknál semmi sem vagy csak a mennyiség egy része van regisztrálva az érkeztetési naplóba.</span><span class="sxs-lookup"><span data-stu-id="47a73-117">This means that for each line, nothing or only part of the quantity has been registered in an arrival journal.</span></span>  
+5. <span data-ttu-id="47a73-118">Bontsa ki vagy csukja össze az Érkezési beállítások szakaszt.</span><span class="sxs-lookup"><span data-stu-id="47a73-118">Expand or collapse the Arrival options section.</span></span>
+6. <span data-ttu-id="47a73-119">A Napok mától mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="47a73-119">In the Days forward field, type a value.</span></span>
+    * <span data-ttu-id="47a73-120">Ez beállít egy szűrőt, hogy megmutassa a következő napban fogadni kívánt nyugtasorokat (a beállított számtól függően).</span><span class="sxs-lookup"><span data-stu-id="47a73-120">This sets a filter to show the receipt lines expected to be received within the next few days (depending on the number you set).</span></span>  
+7. <span data-ttu-id="47a73-121">A Napra visszamenőleg mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="47a73-121">In the Days back field, type a value.</span></span>
+    * <span data-ttu-id="47a73-122">Ezzel beállít egy szűrőt, amely megjeleníti az adott nap előtt adott számú nappal fogadott nyugtasorokat.</span><span class="sxs-lookup"><span data-stu-id="47a73-122">This sets a filter to show the receipt lines expected to be received a number of days before today.</span></span>  
+8. <span data-ttu-id="47a73-123">A Raktárak mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="47a73-123">In the Warehouses field, type a value.</span></span>
+    * <span data-ttu-id="47a73-124">Szűrjön egy vagy több raktárra.</span><span class="sxs-lookup"><span data-stu-id="47a73-124">Filter on one or more warehouses.</span></span>  
+9. <span data-ttu-id="47a73-125">Válasszon ki egy értéket a Szállítási mód mezőbe.</span><span class="sxs-lookup"><span data-stu-id="47a73-125">In the Mode of delivery field, select a value.</span></span>
+    * <span data-ttu-id="47a73-126">Ez beállít egy szűrőt, hogy csak ezzel a szállítási móddal jelenjenek meg nyugtasorok.</span><span class="sxs-lookup"><span data-stu-id="47a73-126">This sets a filter to show only the receipt lines with this Mode of delivery.</span></span>  
+10. <span data-ttu-id="47a73-127">A Név mezőben, válassza a WHS-t.</span><span class="sxs-lookup"><span data-stu-id="47a73-127">In the Name field, select WHS.</span></span>
+11. <span data-ttu-id="47a73-128">A Raktár mezőben válassza ki a 24-es raktárt.</span><span class="sxs-lookup"><span data-stu-id="47a73-128">In the Warehouse field, select warehouse 24.</span></span>
+    * <span data-ttu-id="47a73-129">Ez az alapértelmezett raktár, amellyel a profilt használó nyugtasorok be lesznek jegyezve.</span><span class="sxs-lookup"><span data-stu-id="47a73-129">This is the default warehouse that will be used for registered receipt lines that use this profile.</span></span>  
+12. <span data-ttu-id="47a73-130">A Hely mezőben válassza ki a Baydoor-t.</span><span class="sxs-lookup"><span data-stu-id="47a73-130">In the Location field, select Baydoor.</span></span>
+    * <span data-ttu-id="47a73-131">Ez az alapértelmezett hely, amellyel a profilt használó nyugtasorok be lesznek jegyezve.</span><span class="sxs-lookup"><span data-stu-id="47a73-131">This is the default location that will be used for registered receipt lines that use this profile.</span></span>  
+13. <span data-ttu-id="47a73-132">Bontsa ki vagy csukja össze a Érkezéslekérdezés részletei szakaszt.</span><span class="sxs-lookup"><span data-stu-id="47a73-132">Expand or collapse the Arrival query details section.</span></span>
+14. <span data-ttu-id="47a73-133">A Készletező hely mezőben válassza 2. helyet.</span><span class="sxs-lookup"><span data-stu-id="47a73-133">In the Restrict to site field, select site 2.</span></span>
+    * <span data-ttu-id="47a73-134">Ez beállít egy szűrőt, hogy csak ezzel a hellyel jelenjenek meg nyugtasorok.</span><span class="sxs-lookup"><span data-stu-id="47a73-134">This sets a filter to show only the receipt lines with this site.</span></span>  
+15. <span data-ttu-id="47a73-135">A Beszerzési rendelések beállítást állítsa Igen értékre.</span><span class="sxs-lookup"><span data-stu-id="47a73-135">Set the Purchase orders option to Yes.</span></span>
+    * <span data-ttu-id="47a73-136">Nyugtasorok kiválasztása beszerzési rendelésekből.</span><span class="sxs-lookup"><span data-stu-id="47a73-136">Select receipt lines from purchase orders.</span></span>  
+16. <span data-ttu-id="47a73-137">A Szállítási rendelések beállítást állítsa Igen értékre.</span><span class="sxs-lookup"><span data-stu-id="47a73-137">Set the Transfer orders option to Yes.</span></span>
+    * <span data-ttu-id="47a73-138">Nyugtasorok kiválasztása átmozgatási rendelésekből.</span><span class="sxs-lookup"><span data-stu-id="47a73-138">Select receipt lines from transfer orders.</span></span>  
+17. <span data-ttu-id="47a73-139">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="47a73-139">Click Save.</span></span>
+18. <span data-ttu-id="47a73-140">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="47a73-140">Close the page.</span></span>
 

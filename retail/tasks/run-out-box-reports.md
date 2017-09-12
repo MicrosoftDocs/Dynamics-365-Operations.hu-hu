@@ -17,56 +17,56 @@ ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: e948525d4c7873fdc5101136ee37cd117268f4dd
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9ba616550120e273429e348ea9cddf7c9e8baee4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="generate-and-run-out-of-box-reports"></a>Kulcsrakész jelentések generálása és futtatása
+# <a name="generate-and-run-out-of-box-reports"></a><span data-ttu-id="c3a12-103">Kulcsrakész jelentések generálása és futtatása</span><span class="sxs-lookup"><span data-stu-id="c3a12-103">Generate and run out-of-box reports</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Használja ezt a feladatútmutató kulcsrakész jelentések futtatásához a központban a különböző munkaterületekről és Lekérdezésekből Értékesítési jelentések a Kiskereskedelem és Kereskedelem alatt.
+<span data-ttu-id="c3a12-104">Használja ezt a feladatútmutató kulcsrakész jelentések futtatásához a központban a különböző munkaterületekről és Lekérdezésekből Értékesítési jelentések a Kiskereskedelem és Kereskedelem alatt.</span><span class="sxs-lookup"><span data-stu-id="c3a12-104">Use this task guide to run out of box reports in headquarters from different workspaces and Inquiries & Sales reports located under Retail & Commerce.</span></span>
 
 
 
-A bemutató adatsor típusa, melyet a vállalat használt az útmutató készítéséhez, az USRT. Ez a felvétel a Rendszeradminisztrátor szerepkör számára készült.
+<span data-ttu-id="c3a12-105">A bemutató adatsor típusa, melyet a vállalat használt az útmutató készítéséhez, az USRT.</span><span class="sxs-lookup"><span data-stu-id="c3a12-105">The demo data company used to create this recording is USRT.</span></span> <span data-ttu-id="c3a12-106">Ez a felvétel a Rendszeradminisztrátor szerepkör számára készült.</span><span class="sxs-lookup"><span data-stu-id="c3a12-106">This recording is intended for the System administrator role.</span></span>
 
 
-## <a name="launch-reports-from-workspaces"></a>Indítsa el a jelentéseket a munkaterületekről
-1. Ugorjon a Kiskereskedelem és kereskedelem > Termékek és kategóriák > Kategóriák és termékmenedzsment lehetőségre.
-2. Kattintson a nyílra a Jelentések szakasz kibontásához vagy összecsukásához.
-3. Kattintson a Vezető termékek jelentései lehetőségre.
-4. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
-5. Adja meg a dátumot a „Záró dátum” mezőben.
-6. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\Central\Houston” lehetőséget.
-    * Ez megmutatja az alapértelmezett kiskereskedelmi szervezeti hierarchiát Kiskereskedelmi jelentési célból.   Ugorjon a Szervezet felügyelete >Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a kiskereskedelmi jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop.      A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy a Kiskereskedelmi áruházak régiók szerint az alapértelmezett szervezeti hierarchia a Kiskereskedelmi jelentési célra.     
-8. Kattintson az OK gombra.
-9. Válasszon ki egy lehetősége a Nézet mezőben.
-10. Válasszon ki egy lehetőséget a Szerint mezőben.
-11. Kattintson az OK gombra.
+## <a name="launch-reports-from-workspaces"></a><span data-ttu-id="c3a12-107">Indítsa el a jelentéseket a munkaterületekről</span><span class="sxs-lookup"><span data-stu-id="c3a12-107">Launch reports from workspaces</span></span>
+1. <span data-ttu-id="c3a12-108">Ugorjon a Kiskereskedelem és kereskedelem > Termékek és kategóriák > Kategóriák és termékmenedzsment lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c3a12-108">Go to Retail and commerce > Products and categories > Category and product management.</span></span>
+2. <span data-ttu-id="c3a12-109">Kattintson a nyílra a Jelentések szakasz kibontásához vagy összecsukásához.</span><span class="sxs-lookup"><span data-stu-id="c3a12-109">Click the arrow to expand or collapse the Reports section.</span></span>
+3. <span data-ttu-id="c3a12-110">Kattintson a Vezető termékek jelentései lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c3a12-110">Click Top products report.</span></span>
+4. <span data-ttu-id="c3a12-111">Adjon meg egy
+Adjon meg egy dátumot a Kezdő dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="c3a12-111">In the From date field, enter a date.</span></span>
+5. <span data-ttu-id="c3a12-112">Adja meg a dátumot a „Záró dátum” mezőben.</span><span class="sxs-lookup"><span data-stu-id="c3a12-112">In the To date field, enter a date.</span></span>
+6. <span data-ttu-id="c3a12-113">A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="c3a12-113">In the Channel field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="c3a12-114">A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\Central\Houston” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c3a12-114">In the tree, select 'Contoso Retail\Contoso Retail USA\Central\Houston'.</span></span>
+    * <span data-ttu-id="c3a12-115">Ez megmutatja az alapértelmezett kiskereskedelmi szervezeti hierarchiát Kiskereskedelmi jelentési célból.</span><span class="sxs-lookup"><span data-stu-id="c3a12-115">This shows the default retail organization hierarchy for Retail reporting purpose.</span></span>   <span data-ttu-id="c3a12-116">Ugorjon a Szervezet felügyelete >Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a kiskereskedelmi jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop.</span><span class="sxs-lookup"><span data-stu-id="c3a12-116">Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.</span></span>      <span data-ttu-id="c3a12-117">A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy a Kiskereskedelmi áruházak régiók szerint az alapértelmezett szervezeti hierarchia a Kiskereskedelmi jelentési célra.</span><span class="sxs-lookup"><span data-stu-id="c3a12-117">As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.</span></span>     
+8. <span data-ttu-id="c3a12-118">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="c3a12-118">Click OK.</span></span>
+9. <span data-ttu-id="c3a12-119">Válasszon ki egy lehetősége a Nézet mezőben.</span><span class="sxs-lookup"><span data-stu-id="c3a12-119">In the View field, select an option.</span></span>
+10. <span data-ttu-id="c3a12-120">Válasszon ki egy lehetőséget a Szerint mezőben.</span><span class="sxs-lookup"><span data-stu-id="c3a12-120">In the By field, select an option.</span></span>
+11. <span data-ttu-id="c3a12-121">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="c3a12-121">Click OK.</span></span>
 
-## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a>Indítsa el a jelentéseket a lekérdezésekből, illetve a Retail & Commerce alkalmazás alatt található értékesítési jelentéseket.
-1. Ugorjon a Kiskereskedelmi és kereskedelem > Lekérdezések és jelentések > Értékesítési jelentések > Értékesítési kategória-jelentés lehetőségre.
-2. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
-3. Adja meg a dátumot a „Záró dátum” mezőben.
-4. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-5. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\West\Seattle” lehetőséget.
-    * Ez megmutatja az alapértelmezett kiskereskedelmi szervezeti hierarchiát Kiskereskedelmi jelentési célból.   Ugorjon a Szervezet felügyelete >Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a kiskereskedelmi jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop.      A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy a Kiskereskedelmi áruházak régiók szerint az alapértelmezett szervezeti hierarchia a Kiskereskedelmi jelentési célra.     
-6. Kattintson az OK gombra.
-7. Kattintson az OK gombra.
+## <a name="launch-reports-from-the-inquiries-and-sales-reports-located-under-retail--commerce-app-link"></a><span data-ttu-id="c3a12-122">Indítsa el a jelentéseket a lekérdezésekből, illetve a Retail & Commerce alkalmazás alatt található értékesítési jelentéseket.</span><span class="sxs-lookup"><span data-stu-id="c3a12-122">Launch reports from the inquiries and sales reports located under Retail & Commerce app link.</span></span>
+1. <span data-ttu-id="c3a12-123">Ugorjon a Kiskereskedelmi és kereskedelem > Lekérdezések és jelentések > Értékesítési jelentések > Értékesítési kategória-jelentés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c3a12-123">Go to Retail and commerce > Inquiries and reports > Sales reports > Category sales report.</span></span>
+2. <span data-ttu-id="c3a12-124">Adjon meg egy
+Adjon meg egy dátumot a Kezdő dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="c3a12-124">In the From date field, enter a date.</span></span>
+3. <span data-ttu-id="c3a12-125">Adja meg a dátumot a „Záró dátum” mezőben.</span><span class="sxs-lookup"><span data-stu-id="c3a12-125">In the To date field, enter a date.</span></span>
+4. <span data-ttu-id="c3a12-126">A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="c3a12-126">In the Channel field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="c3a12-127">A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\West\Seattle” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c3a12-127">In the tree, select 'Contoso Retail\Contoso Retail USA\West\Seattle'.</span></span>
+    * <span data-ttu-id="c3a12-128">Ez megmutatja az alapértelmezett kiskereskedelmi szervezeti hierarchiát Kiskereskedelmi jelentési célból.</span><span class="sxs-lookup"><span data-stu-id="c3a12-128">This shows the default retail organization hierarchy for Retail reporting purpose.</span></span>   <span data-ttu-id="c3a12-129">Ugorjon a Szervezet felügyelete >Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a kiskereskedelmi jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop.</span><span class="sxs-lookup"><span data-stu-id="c3a12-129">Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.</span></span>      <span data-ttu-id="c3a12-130">A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy a Kiskereskedelmi áruházak régiók szerint az alapértelmezett szervezeti hierarchia a Kiskereskedelmi jelentési célra.</span><span class="sxs-lookup"><span data-stu-id="c3a12-130">As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.</span></span>     
+6. <span data-ttu-id="c3a12-131">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="c3a12-131">Click OK.</span></span>
+7. <span data-ttu-id="c3a12-132">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="c3a12-132">Click OK.</span></span>
 
-## <a name="export-an-hq-reports"></a>Központi jelentések exportálása
-1. Ugorjon a Kiskereskedelmi és kereskedelem > Lekérdezések és jelentések > Értékesítési jelentések > Szervezeti kategória-jelentés lehetőségre.
-2. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
-3. Adja meg a dátumot a „Záró dátum” mezőben.
-4. Kattintson az OK gombra.
-5. Kattintson az Exportálás elemre.
-6. Kattintson a PDF elemre.
+## <a name="export-an-hq-reports"></a><span data-ttu-id="c3a12-133">Központi jelentések exportálása</span><span class="sxs-lookup"><span data-stu-id="c3a12-133">Export an HQ reports</span></span>
+1. <span data-ttu-id="c3a12-134">Ugorjon a Kiskereskedelmi és kereskedelem > Lekérdezések és jelentések > Értékesítési jelentések > Szervezeti kategória-jelentés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c3a12-134">Go to Retail and commerce > Inquiries and reports > Sales reports > Organization sales report.</span></span>
+2. <span data-ttu-id="c3a12-135">Adjon meg egy
+Adjon meg egy dátumot a Kezdő dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="c3a12-135">In the From date field, enter a date.</span></span>
+3. <span data-ttu-id="c3a12-136">Adja meg a dátumot a „Záró dátum” mezőben.</span><span class="sxs-lookup"><span data-stu-id="c3a12-136">In the To date field, enter a date.</span></span>
+4. <span data-ttu-id="c3a12-137">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="c3a12-137">Click OK.</span></span>
+5. <span data-ttu-id="c3a12-138">Kattintson az Exportálás elemre.</span><span class="sxs-lookup"><span data-stu-id="c3a12-138">Click Export.</span></span>
+6. <span data-ttu-id="c3a12-139">Kattintson a PDF elemre.</span><span class="sxs-lookup"><span data-stu-id="c3a12-139">Click PDF.</span></span>
 
 

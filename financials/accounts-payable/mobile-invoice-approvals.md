@@ -18,54 +18,54 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0e1b3382bc244996231bfb20f6d65ef2d07aef3a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="mobile-invoice-approvals"></a>Mobil számlajóváhagyások
+# <a name="mobile-invoice-approvals"></a><span data-ttu-id="fd380-103">Mobil számlajóváhagyások</span><span class="sxs-lookup"><span data-stu-id="fd380-103">Mobile invoice approvals</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás mobilszolgáltatásai segítségével az üzleti felhasználók mobilélményeket tervezhetnek meg. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével. A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható.
+<span data-ttu-id="fd380-104">A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás mobilszolgáltatásai segítségével az üzleti felhasználók mobilélményeket tervezhetnek meg.</span><span class="sxs-lookup"><span data-stu-id="fd380-104">Mobile capabilities in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition let a business user design mobile experiences.</span></span> <span data-ttu-id="fd380-105">Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket.</span><span class="sxs-lookup"><span data-stu-id="fd380-105">For advanced scenarios, the platform also lets developers extend the capabilities as they desire.</span></span> <span data-ttu-id="fd380-106">A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása.</span><span class="sxs-lookup"><span data-stu-id="fd380-106">The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios.</span></span> <span data-ttu-id="fd380-107">Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével.</span><span class="sxs-lookup"><span data-stu-id="fd380-107">This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case.</span></span> <span data-ttu-id="fd380-108">A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható.</span><span class="sxs-lookup"><span data-stu-id="fd380-108">This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.</span></span>
 
-<a name="prerequisites"></a>Előfeltételek
+<a name="prerequisites"></a><span data-ttu-id="fd380-109">Előfeltételek</span><span class="sxs-lookup"><span data-stu-id="fd380-109">Prerequisites</span></span>
 -------------
 
-| Előfeltételek                                                                                            | Leírás                                                                                                                                                          |
+| <span data-ttu-id="fd380-110">Előfeltételek</span><span class="sxs-lookup"><span data-stu-id="fd380-110">Prerequisite</span></span>                                                                                            | <span data-ttu-id="fd380-111">Leírás</span><span class="sxs-lookup"><span data-stu-id="fd380-111">Description</span></span>                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobil kézikönyv előzetes olvasás                                                                                |[Mobil platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Olyan környezet, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november).                   |
-| Telepítse a 3204341 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | A Feladatrögzítő tévesen két Bezárás parancsot rögzíthet legördülő párbeszédpaneleknél - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés) |
-| Telepítse a 3207800 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Ez a gyorsjavítás lehetővé teszi a mellékletek megtekintését mobil kliensen - - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés).           |
-| Telepítse a 3208224 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Alkalmazáskód a szállítói számla jóváhagyására szolgáló mobilalkalmazáshoz - ez a Microsoft Dynamics AX alkalmazás 7.0.1 (2016. május) verziójában szerepel.                          |
-| Android-, iOS- vagy Windows-eszköz, amelyre telepítve van a Finance and Operations mobilalkalmazása | Keresse meg az alkalmazást a megfelelő alkalmazásáruházban.                                                                                                                     |
+| <span data-ttu-id="fd380-112">Mobil kézikönyv előzetes olvasás</span><span class="sxs-lookup"><span data-stu-id="fd380-112">Mobile handbook pre-read</span></span>                                                                                |[<span data-ttu-id="fd380-113">Mobil platform</span><span class="sxs-lookup"><span data-stu-id="fd380-113">Mobile platform</span></span>](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
+| <span data-ttu-id="fd380-114">Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="fd380-114">Dynamics 365 for Finance and Operations</span></span>                                                                             | <span data-ttu-id="fd380-115">Olyan környezet, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november).</span><span class="sxs-lookup"><span data-stu-id="fd380-115">An environment that has Microsoft Dynamics 365 for Operations version 1611 and Microsoft Dynamics for Operations platform update 3 (November 2016)</span></span>                   |
+| <span data-ttu-id="fd380-116">Telepítse a 3204341 számú tudásbáziscikkhez tartozó gyorsjavítást.</span><span class="sxs-lookup"><span data-stu-id="fd380-116">Install hotfix KB 3204341.</span></span>                                                                              | <span data-ttu-id="fd380-117">A Feladatrögzítő tévesen két Bezárás parancsot rögzíthet legördülő párbeszédpaneleknél - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés)</span><span class="sxs-lookup"><span data-stu-id="fd380-117">Task recorder can erroneously record two Close commands for dropdown dialogs this is included in Dynamics 365 for Operation platform update 3 (November 2016 update)</span></span> |
+| <span data-ttu-id="fd380-118">Telepítse a 3207800 számú tudásbáziscikkhez tartozó gyorsjavítást.</span><span class="sxs-lookup"><span data-stu-id="fd380-118">Install hotfix KB 3207800.</span></span>                                                                              | <span data-ttu-id="fd380-119">Ez a gyorsjavítás lehetővé teszi a mellékletek megtekintését mobil kliensen - - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés).</span><span class="sxs-lookup"><span data-stu-id="fd380-119">This hotfix enables attachments to be viewed on the mobile client this is included in Dynamics 365 for Operation platform update 3 (November 2016 update).</span></span>           |
+| <span data-ttu-id="fd380-120">Telepítse a 3208224 számú tudásbáziscikkhez tartozó gyorsjavítást.</span><span class="sxs-lookup"><span data-stu-id="fd380-120">Install hotfix KB 3208224.</span></span>                                                                              | <span data-ttu-id="fd380-121">Alkalmazáskód a szállítói számla jóváhagyására szolgáló mobilalkalmazáshoz - ez a Microsoft Dynamics AX alkalmazás 7.0.1 (2016. május) verziójában szerepel.</span><span class="sxs-lookup"><span data-stu-id="fd380-121">Application code for the mobile vendor invoice approval application this is included in Microsoft Dynamics AX application 7.0.1 (May 2016).</span></span>                          |
+| <span data-ttu-id="fd380-122">Android-, iOS- vagy Windows-eszköz, amelyre telepítve van a Finance and Operations mobilalkalmazása</span><span class="sxs-lookup"><span data-stu-id="fd380-122">An Android or iOS or a Windows device that has the mobile app installed for Finance and Operations</span></span> | <span data-ttu-id="fd380-123">Keresse meg az alkalmazást a megfelelő alkalmazásáruházban.</span><span class="sxs-lookup"><span data-stu-id="fd380-123">Search for the app in the appropriate app store.</span></span>                                                                                                                     |
 
-## <a name="introduction"></a>Bevezetés
-A szállítói számlák mobil jóváhagyásához az „Előfeltételek” című szakaszban említett három gyorsjavításra van szükség. Ezek a gyorsjavítások nem biztosítanak munkaterületet számlajóváhagyáshoz. A munkaterület mobil környezetben való jelentésének megismeréséhez olvassa el az „Előfeltételek” című részben említett mobil kézikönyvet. A számlajóváhagyások munkaterületét ki kell alakítani. 
+## <a name="introduction"></a><span data-ttu-id="fd380-124">Bevezetés</span><span class="sxs-lookup"><span data-stu-id="fd380-124">Introduction</span></span>
+<span data-ttu-id="fd380-125">A szállítói számlák mobil jóváhagyásához az „Előfeltételek” című szakaszban említett három gyorsjavításra van szükség.</span><span class="sxs-lookup"><span data-stu-id="fd380-125">Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section.</span></span> <span data-ttu-id="fd380-126">Ezek a gyorsjavítások nem biztosítanak munkaterületet számlajóváhagyáshoz.</span><span class="sxs-lookup"><span data-stu-id="fd380-126">These hotfixes don’t provide a workspace for the invoice approvals.</span></span> <span data-ttu-id="fd380-127">A munkaterület mobil környezetben való jelentésének megismeréséhez olvassa el az „Előfeltételek” című részben említett mobil kézikönyvet.</span><span class="sxs-lookup"><span data-stu-id="fd380-127">To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section.</span></span> <span data-ttu-id="fd380-128">A számlajóváhagyások munkaterületét ki kell alakítani.</span><span class="sxs-lookup"><span data-stu-id="fd380-128">The invoice approvals workspace must be designed.</span></span> 
 
-Minden szervezet eltérő módon szervezi és határozza meg a szállítói számlákkal kapcsolatos üzleti folyamatát. Mielőtt szállítói számlák jóváhagyásához mobilfelületet tervezne, vegye figyelembe az üzleti folyamat következő szempontjait. Az elképzelés lényege, hogy ezen adatpontokat a lehető legjobban kihasználjuk a felhasználói élmény az eszközön való optimalizálására.
+<span data-ttu-id="fd380-129">Minden szervezet eltérő módon szervezi és határozza meg a szállítói számlákkal kapcsolatos üzleti folyamatát.</span><span class="sxs-lookup"><span data-stu-id="fd380-129">Every organization orchestrates and defines its business process for vendor invoices differently.</span></span> <span data-ttu-id="fd380-130">Mielőtt szállítói számlák jóváhagyásához mobilfelületet tervezne, vegye figyelembe az üzleti folyamat következő szempontjait.</span><span class="sxs-lookup"><span data-stu-id="fd380-130">Before you design a mobile experience for vendor invoice approvals, you should consider the following aspects of the business process.</span></span> <span data-ttu-id="fd380-131">Az elképzelés lényege, hogy ezen adatpontokat a lehető legjobban kihasználjuk a felhasználói élmény az eszközön való optimalizálására.</span><span class="sxs-lookup"><span data-stu-id="fd380-131">The idea is to use these data points as much as possible to optimize the user experience on the device.</span></span>
 
--   A számlafejléc mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?
--   A számlasorok mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?
--   Hány számlasor van a számlán? Itt alkalmazza a 80-20-as szabályt, és optimalizáljon 80%-ra.
--   A felhasználók akarnak könyvelési felosztásokat (számlakódolást) látni a mobileszközön ellenőrzések során? Ha erre a kérdésre a válasz Igen, gondolja át a következő kérdéseket:
-    -   Hány könyvelési felosztás (kiterjesztett ár, áfa, költségek, megosztások stb.) van egy-egy számlasornál? Ismételten alkalmazza a 80-20-as szabályt.
-    -   A számlák szintén rendelkeznek könyvelési felosztásokkal a számla fejlécében? Ha igen, e könyvelési felosztásoknak rendelkezésre kell állniuk a készüléken?
+-   <span data-ttu-id="fd380-132">A számlafejléc mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</span><span class="sxs-lookup"><span data-stu-id="fd380-132">What fields from the invoice header will the user want to see in the mobile experience, and in what order?</span></span>
+-   <span data-ttu-id="fd380-133">A számlasorok mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</span><span class="sxs-lookup"><span data-stu-id="fd380-133">What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</span></span>
+-   <span data-ttu-id="fd380-134">Hány számlasor van a számlán?</span><span class="sxs-lookup"><span data-stu-id="fd380-134">How many invoice lines are there in an invoice?</span></span> <span data-ttu-id="fd380-135">Itt alkalmazza a 80-20-as szabályt, és optimalizáljon 80%-ra.</span><span class="sxs-lookup"><span data-stu-id="fd380-135">Apply the 80-20 rule here, and optimize for the 80 percent.</span></span>
+-   <span data-ttu-id="fd380-136">A felhasználók akarnak könyvelési felosztásokat (számlakódolást) látni a mobileszközön ellenőrzések során?</span><span class="sxs-lookup"><span data-stu-id="fd380-136">Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</span></span> <span data-ttu-id="fd380-137">Ha erre a kérdésre a válasz Igen, gondolja át a következő kérdéseket:</span><span class="sxs-lookup"><span data-stu-id="fd380-137">If the answer to this question is yes, consider the following questions:</span></span>
+    -   <span data-ttu-id="fd380-138">Hány könyvelési felosztás (kiterjesztett ár, áfa, költségek, megosztások stb.) van egy-egy számlasornál?</span><span class="sxs-lookup"><span data-stu-id="fd380-138">How many accounting distributions (extended price, sales tax, charges, splits, and so on) are there for an invoice line?</span></span> <span data-ttu-id="fd380-139">Ismételten alkalmazza a 80-20-as szabályt.</span><span class="sxs-lookup"><span data-stu-id="fd380-139">Again, apply the 80-20 rule.</span></span>
+    -   <span data-ttu-id="fd380-140">A számlák szintén rendelkeznek könyvelési felosztásokkal a számla fejlécében?</span><span class="sxs-lookup"><span data-stu-id="fd380-140">Do the invoices also have accounting distributions on the invoice header?</span></span> <span data-ttu-id="fd380-141">Ha igen, e könyvelési felosztásoknak rendelkezésre kell állniuk a készüléken?</span><span class="sxs-lookup"><span data-stu-id="fd380-141">If so, should these accounting distributions be available on the device?</span></span>
 
 > [!NOTE]
-> Ez a témakör nem magyarázza el, hogyan szerkeszthetők a könyvelési felosztások, mert ez a funkció jelenleg a mobilváltozatokban nem támogatott.
+> <span data-ttu-id="fd380-142">Ez a témakör nem magyarázza el, hogyan szerkeszthetők a könyvelési felosztások, mert ez a funkció jelenleg a mobilváltozatokban nem támogatott.</span><span class="sxs-lookup"><span data-stu-id="fd380-142">This topic doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.</span></span>
 
--   A felhasználók látni szeretnék a számlához tartozó mellékleteket az eszközön?
+-   <span data-ttu-id="fd380-143">A felhasználók látni szeretnék a számlához tartozó mellékleteket az eszközön?</span><span class="sxs-lookup"><span data-stu-id="fd380-143">Will users want to see attachments for the invoice on the device?</span></span>
 
-A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott válaszoktól függően eltérő lesz. A cél: optimalizálni a szervezet üzleti folyamatának felhasználói élményét a mobilon. A témakör többi részében két forgatókönyv-változatot vizsgálunk meg közelebbről, amelyek az előző kérdésekre adott különböző válaszokon alapulnak. 
+<span data-ttu-id="fd380-144">A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott válaszoktól függően eltérő lesz.</span><span class="sxs-lookup"><span data-stu-id="fd380-144">The design of the mobile experience for invoice approvals will differ, depending on the answers to these questions.</span></span> <span data-ttu-id="fd380-145">A cél: optimalizálni a szervezet üzleti folyamatának felhasználói élményét a mobilon.</span><span class="sxs-lookup"><span data-stu-id="fd380-145">The objective is to optimize the user experience for the business process on mobile in an organization.</span></span> <span data-ttu-id="fd380-146">A témakör többi részében két forgatókönyv-változatot vizsgálunk meg közelebbről, amelyek az előző kérdésekre adott különböző válaszokon alapulnak.</span><span class="sxs-lookup"><span data-stu-id="fd380-146">In the rest of this topic, we will look at two scenario variations that are based on different answers to the preceding questions.</span></span> 
 
-Általános iránymutatásként a mobiltervezővel való munka során ügyeljen, hogy „tegye közzé” a módosításokat, nehogy elveszítse a frissítéseket.
+<span data-ttu-id="fd380-147">Általános iránymutatásként a mobiltervezővel való munka során ügyeljen, hogy „tegye közzé” a módosításokat, nehogy elveszítse a frissítéseket.</span><span class="sxs-lookup"><span data-stu-id="fd380-147">As a general guidance, when working with the mobile designer, make sure to 'publish' the changes to prevent losing the updates.</span></span>
 
-## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Egyszerű számlajóváhagyási forgatókönyv tervezése a Contoso számára
+## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a><span data-ttu-id="fd380-148">Egyszerű számlajóváhagyási forgatókönyv tervezése a Contoso számára</span><span class="sxs-lookup"><span data-stu-id="fd380-148">Designing a simple invoice approval scenario for Contoso</span></span>
 <table>
 <colgroup>
 <col width="50%" />
@@ -73,162 +73,162 @@ A számlajóváhagyási mobilfelület kialakítása az e kérdésekre adott vál
 </colgroup>
 <thead>
 <tr class="header">
-<th>Változatattribútum</th>
-<th>Válasz</th>
+<th><span data-ttu-id="fd380-149">Változatattribútum</span><span class="sxs-lookup"><span data-stu-id="fd380-149">Scenario attribute</span></span></th>
+<th><span data-ttu-id="fd380-150">Válasz</span><span class="sxs-lookup"><span data-stu-id="fd380-150">Answer</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A számlafejléc mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</td>
+<td><span data-ttu-id="fd380-151">A számlafejléc mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</span><span class="sxs-lookup"><span data-stu-id="fd380-151">What fields from the invoice header will the user want to see in the mobile experience, and in what order?</span></span></td>
 <td><ol>
-<li>Szállító neve</li>
-<li>Számla összege</li>
-<li>Számlafogadó</li>
-<li>Számla száma</li>
-<li>Számla dátuma</li>
-<li>Számla leírása</li>
-<li>Esedékes</li>
-<li>Számla pénzneme</li>
+<li><span data-ttu-id="fd380-152">Szállító neve</span><span class="sxs-lookup"><span data-stu-id="fd380-152">Vendor name</span></span></li>
+<li><span data-ttu-id="fd380-153">Számla összege</span><span class="sxs-lookup"><span data-stu-id="fd380-153">Invoice total</span></span></li>
+<li><span data-ttu-id="fd380-154">Számlafogadó</span><span class="sxs-lookup"><span data-stu-id="fd380-154">Invoice account</span></span></li>
+<li><span data-ttu-id="fd380-155">Számla száma</span><span class="sxs-lookup"><span data-stu-id="fd380-155">Invoice number</span></span></li>
+<li><span data-ttu-id="fd380-156">Számla dátuma</span><span class="sxs-lookup"><span data-stu-id="fd380-156">Invoice date</span></span></li>
+<li><span data-ttu-id="fd380-157">Számla leírása</span><span class="sxs-lookup"><span data-stu-id="fd380-157">Invoice description</span></span></li>
+<li><span data-ttu-id="fd380-158">Esedékes</span><span class="sxs-lookup"><span data-stu-id="fd380-158">Due date</span></span></li>
+<li><span data-ttu-id="fd380-159">Számla pénzneme</span><span class="sxs-lookup"><span data-stu-id="fd380-159">Invoice currency</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>A számlasorok mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</td>
+<td><span data-ttu-id="fd380-160">A számlasorok mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</span><span class="sxs-lookup"><span data-stu-id="fd380-160">What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</span></span></td>
 <td><ol>
-<li>Beszerzési kategória</li>
-<li>Mennyiség</li>
-<li>Egységár</li>
-<li>Sor nettó összege</li>
-<li>1099-es összeg</li>
+<li><span data-ttu-id="fd380-161">Beszerzési kategória</span><span class="sxs-lookup"><span data-stu-id="fd380-161">Procurement category</span></span></li>
+<li><span data-ttu-id="fd380-162">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="fd380-162">Quantity</span></span></li>
+<li><span data-ttu-id="fd380-163">Egységár</span><span class="sxs-lookup"><span data-stu-id="fd380-163">Unit price</span></span></li>
+<li><span data-ttu-id="fd380-164">Sor nettó összege</span><span class="sxs-lookup"><span data-stu-id="fd380-164">Line net amount</span></span></li>
+<li><span data-ttu-id="fd380-165">1099-es összeg</span><span class="sxs-lookup"><span data-stu-id="fd380-165">1099 amount</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Hány számlasor van a számlán? Itt alkalmazza a 80-20-as szabályt, és optimalizáljon 80%-ra.</td>
-<td>1</td>
+<td><span data-ttu-id="fd380-166">Hány számlasor van a számlán?</span><span class="sxs-lookup"><span data-stu-id="fd380-166">How many invoice lines are there in an invoice?</span></span> <span data-ttu-id="fd380-167">Itt alkalmazza a 80-20-as szabályt, és optimalizáljon 80%-ra.</span><span class="sxs-lookup"><span data-stu-id="fd380-167">Apply the 80-20 rule here, and optimize for the 80 percent.</span></span></td>
+<td><span data-ttu-id="fd380-168">1</span><span class="sxs-lookup"><span data-stu-id="fd380-168">1</span></span></td>
 </tr>
 <tr class="even">
-<td>A felhasználók akarnak könyvelési felosztásokat (számlakódolást) látni a mobileszközön ellenőrzések során?</td>
-<td>Igen</td>
+<td><span data-ttu-id="fd380-169">A felhasználók akarnak könyvelési felosztásokat (számlakódolást) látni a mobileszközön ellenőrzések során?</span><span class="sxs-lookup"><span data-stu-id="fd380-169">Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</span></span></td>
+<td><span data-ttu-id="fd380-170">Igen</span><span class="sxs-lookup"><span data-stu-id="fd380-170">Yes</span></span></td>
 </tr>
 <tr class="odd">
-<td>Hány könyvelési felosztás (kiterjesztett ár, áfa, költségek stb.) van egy-egy számlasornál? Ismételten alkalmazza a 80-20-as szabályt.</td>
-<td>Kiterjesztett ár: 2 áfa: 0 költség: 0</td>
+<td><span data-ttu-id="fd380-171">Hány könyvelési felosztás (kiterjesztett ár, áfa, költségek stb.) van egy-egy számlasornál?</span><span class="sxs-lookup"><span data-stu-id="fd380-171">How many accounting distributions (extended price, sales tax, charges, and so on) are there for an invoice line?</span></span> <span data-ttu-id="fd380-172">Ismételten alkalmazza a 80-20-as szabályt.</span><span class="sxs-lookup"><span data-stu-id="fd380-172">Again, apply the 80-20 rule.</span></span></td>
+<td><span data-ttu-id="fd380-173">Kiterjesztett ár: 2 áfa: 0 költség: 0</span><span class="sxs-lookup"><span data-stu-id="fd380-173">Extended price: 2 Sales tax: 0 Charges: 0</span></span></td>
 </tr>
 <tr class="even">
-<td>A számlák szintén rendelkeznek könyvelési felosztásokkal a számla fejlécében? Ha igen, e könyvelési felosztásoknak rendelkezésre kell állniuk a készüléken?</td>
-<td>Nincs használatban</td>
+<td><span data-ttu-id="fd380-174">A számlák szintén rendelkeznek könyvelési felosztásokkal a számla fejlécében?</span><span class="sxs-lookup"><span data-stu-id="fd380-174">Do the invoices also have accounting distributions on the invoice header?</span></span> <span data-ttu-id="fd380-175">Ha igen, e könyvelési felosztásoknak rendelkezésre kell állniuk a készüléken?</span><span class="sxs-lookup"><span data-stu-id="fd380-175">If so, should these accounting distributions be available on the device?</span></span></td>
+<td><span data-ttu-id="fd380-176">Nincs használatban</span><span class="sxs-lookup"><span data-stu-id="fd380-176">Not used</span></span></td>
 </tr>
 <tr class="odd">
-<td>A felhasználók látni szeretnék a számlához tartozó mellékleteket az eszközön?</td>
-<td>Igen</td>
+<td><span data-ttu-id="fd380-177">A felhasználók látni szeretnék a számlához tartozó mellékleteket az eszközön?</span><span class="sxs-lookup"><span data-stu-id="fd380-177">Will users want to see attachments for the invoice on the device?</span></span></td>
+<td><span data-ttu-id="fd380-178">Igen</span><span class="sxs-lookup"><span data-stu-id="fd380-178">Yes</span></span></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="create-the-workspace"></a>Munkaterület létrehozása
+### <a name="create-the-workspace"></a><span data-ttu-id="fd380-179">Munkaterület létrehozása</span><span class="sxs-lookup"><span data-stu-id="fd380-179">Create the workspace</span></span>
 
-1.  A böngészőben nyissa meg a Finance and Operations rendszert, és jelentkezzen be.
-2.  Miután bejelentkezett, fűzze hozzá a **&mode=mobile** karakterláncot az URL-címhez az alábbi példa alapján, és frissítse az oldalt: https://&lt;sajaturl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
-3.  Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre. Megjelenik a mobilalkalmazás tervezője és a Feladatrögzítő.
-4.  Kattintson a **Hozzáadás** elemre új munkaterület létrehozásához. Ebben a példában adja a munkaterületnek a **Jóváhagyásaim** nevet.
-5.  Adjon meg leírást.
-6.  Válasszon színt a munkaterületnek. A munkaterület színe adja a munkaterülethez tartozó mobilfelület általános stílusát.
-7.  Válasszon ikont a munkaterülethez.
-8.  Kattintson a **Kész** gombra.
-9.  A **Munkaterület közzététele** gombra kattintva mentse a módosításokat.
+1.  <span data-ttu-id="fd380-180">A böngészőben nyissa meg a Finance and Operations rendszert, és jelentkezzen be.</span><span class="sxs-lookup"><span data-stu-id="fd380-180">In a browser, open Finance and Operations, and sign in.</span></span>
+2.  <span data-ttu-id="fd380-181">Miután bejelentkezett, fűzze hozzá a **&mode=mobile** karakterláncot az URL-címhez az alábbi példa alapján, és frissítse az oldalt: https://&lt;sajaturl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**</span><span class="sxs-lookup"><span data-stu-id="fd380-181">After you’ve signed in, append **&mode=mobile** to the URL as shown in the following example, and refresh the page: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**</span></span>
+3.  <span data-ttu-id="fd380-182">Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-182">Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**.</span></span> <span data-ttu-id="fd380-183">Megjelenik a mobilalkalmazás tervezője és a Feladatrögzítő.</span><span class="sxs-lookup"><span data-stu-id="fd380-183">The mobile app designer must show up just as Task recorder shows up.</span></span>
+4.  <span data-ttu-id="fd380-184">Kattintson a **Hozzáadás** elemre új munkaterület létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="fd380-184">Click **Add** to create a new workspace.</span></span> <span data-ttu-id="fd380-185">Ebben a példában adja a munkaterületnek a **Jóváhagyásaim** nevet.</span><span class="sxs-lookup"><span data-stu-id="fd380-185">For this example, name the workspace **My approvals**.</span></span>
+5.  <span data-ttu-id="fd380-186">Adjon meg leírást.</span><span class="sxs-lookup"><span data-stu-id="fd380-186">Enter a description.</span></span>
+6.  <span data-ttu-id="fd380-187">Válasszon színt a munkaterületnek.</span><span class="sxs-lookup"><span data-stu-id="fd380-187">Select a workspace color.</span></span> <span data-ttu-id="fd380-188">A munkaterület színe adja a munkaterülethez tartozó mobilfelület általános stílusát.</span><span class="sxs-lookup"><span data-stu-id="fd380-188">The workspace color will be used for the overall style of the mobile experience for this workspace.</span></span>
+7.  <span data-ttu-id="fd380-189">Válasszon ikont a munkaterülethez.</span><span class="sxs-lookup"><span data-stu-id="fd380-189">Select an icon for the workspace.</span></span>
+8.  <span data-ttu-id="fd380-190">Kattintson a **Kész** gombra.</span><span class="sxs-lookup"><span data-stu-id="fd380-190">Click **Done**</span></span>
+9.  <span data-ttu-id="fd380-191">A **Munkaterület közzététele** gombra kattintva mentse a módosításokat.</span><span class="sxs-lookup"><span data-stu-id="fd380-191">Click **Publish workspace** to save the changes</span></span>
 
-### <a name="vendor-invoices-assigned-to-me"></a>Hozzám rendelt szállítói számlák
+### <a name="vendor-invoices-assigned-to-me"></a><span data-ttu-id="fd380-192">Hozzám rendelt szállítói számlák</span><span class="sxs-lookup"><span data-stu-id="fd380-192">Vendor invoices assigned to me</span></span>
 
-Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhasználóhoz rendelt számlák listája. A mobillap megtervezéséhez használja a Finance and Operations **VendMobileInvoiceAssignedToMeListPage** lapját. Az eljárás végrehajtása előtt győződjön meg arról, hogy legalább egy szállítói számla Önhöz van rendelve véleményezésre, és hogy a számlasor két felosztást tartalmaz. Ez a beállítás megfelel a jelen forgatókönyv követelményeinek.
+<span data-ttu-id="fd380-193">Az első mobiloldal, amelyet meg kell terveznie, a véleményezésre a felhasználóhoz rendelt számlák listája.</span><span class="sxs-lookup"><span data-stu-id="fd380-193">The first mobile page that you should design is the list of invoices that are assigned to the user for review.</span></span> <span data-ttu-id="fd380-194">A mobillap megtervezéséhez használja a Finance and Operations **VendMobileInvoiceAssignedToMeListPage** lapját.</span><span class="sxs-lookup"><span data-stu-id="fd380-194">To design this mobile page, use the **VendMobileInvoiceAssignedToMeListPage** page in Finance and Operations.</span></span> <span data-ttu-id="fd380-195">Az eljárás végrehajtása előtt győződjön meg arról, hogy legalább egy szállítói számla Önhöz van rendelve véleményezésre, és hogy a számlasor két felosztást tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="fd380-195">Before you complete this procedure, make sure that at least one vendor invoice is assigned to you for review, and that the invoice line has two distributions.</span></span> <span data-ttu-id="fd380-196">Ez a beállítás megfelel a jelen forgatókönyv követelményeinek.</span><span class="sxs-lookup"><span data-stu-id="fd380-196">This setup meets the requirements for this scenario.</span></span>
 
-1.  A Finance and Operations URL-jében cserélje le a menüelem nevét arra, hogy **VendMobileInvoiceAssignedToMeListPage**, és így megnyílik a **Hozzám rendelt függőben levő szállítói számlák** listaoldal mobilváltozata a **Kötelezettségek** modulban. A rendszerben Önhöz hozzárendelt számlák számától függően a lapon megjelennek az érintett számlák. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak arra van szükségünk, hogy legyen néhány Önhöz rendelt számla, ami lehetővé teszi a mobillap megtervezését. A rendelkezésre álló új oldalakat kifejezetten a szállítói számlákhoz kapcsolódó mobilforgatókönyvek kidolgozásához alakítottuk ki. Ezért ezeket az oldalakat kell használnia. Az URL-nek a következő URL-re kell hasonlítania, és miután megadta, meg kell jelennie az ábrán látható oldalnak: https://&lt;sajatURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Hozzám rendelt függőben lévő szállítói számlák oldal](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
-2.  Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre
-3.  Válassza ki a munkaterületet, és kattintson a **Szerkesztés** elemre
-4.  Kattintson az **Oldal hozzáadása** elemre az első mobiloldal létrehozásához.
-5.  Adjon meg egy nevet, például **Saját szállítói számlák**, és egy leírást, például **Véleményezésre hozzám rendelt szállítói számlák**.
-6.  Kattintson a **Kész** gombra.
-7.  A mobiltervezőben a **Mezők** fülön kattintson a **Mezők kijelölése** elemre. A listalapon látható oszlopoknak az alábbi ábrához kell hasonlítaniuk. [![Hozzám rendelt függőben lévő szállítói számlák oldalának oszlopai](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
-8.  A listaoldalról adja hozzá a szükséges oszlopokat, amelyeket a felhasználók látni fognak a mobiloldalon. A rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára. A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges. A példánkban szereplő követelmények alapján a következő nyolc mező szükséges. Azonban egyes felhasználók úgy vélhetik, hogy nyolc mező mobileszközön túl sok információt jelent. Ezért csak a legfontosabb mezőket mutatjuk a mobillista-nézetben. A fennmaradó mezők a részletes nézetben jelennek meg, amelyet később fogunk megtervezni. Egyelőre a következő mezőket adjuk hozzá. Kattintson ezekben az oszlopokban a plusz jelre (**+**) a mobiloldalhoz való hozzáadáshoz.
-    - Szállító neve
-    - Számla összege
-    - Számlafogadó
-    - Számla száma
-    - Számla dátuma
+1.  <span data-ttu-id="fd380-197">A Finance and Operations URL-jében cserélje le a menüelem nevét arra, hogy **VendMobileInvoiceAssignedToMeListPage**, és így megnyílik a **Hozzám rendelt függőben levő szállítói számlák** listaoldal mobilváltozata a **Kötelezettségek** modulban.</span><span class="sxs-lookup"><span data-stu-id="fd380-197">In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module.</span></span> <span data-ttu-id="fd380-198">A rendszerben Önhöz hozzárendelt számlák számától függően a lapon megjelennek az érintett számlák.</span><span class="sxs-lookup"><span data-stu-id="fd380-198">Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices.</span></span> <span data-ttu-id="fd380-199">Adott számla megkereséséhez használja a bal oldali szűrőt.</span><span class="sxs-lookup"><span data-stu-id="fd380-199">To find a specific invoice, you can use the filter on the left.</span></span> <span data-ttu-id="fd380-200">Ebben a példában viszont nincs szükségünk konkrét számlára.</span><span class="sxs-lookup"><span data-stu-id="fd380-200">However, we don’t require a specific invoice for this example.</span></span> <span data-ttu-id="fd380-201">Csak arra van szükségünk, hogy legyen néhány Önhöz rendelt számla, ami lehetővé teszi a mobillap megtervezését.</span><span class="sxs-lookup"><span data-stu-id="fd380-201">We just require some invoice assigned to you which is going to allow you to design the mobile page.</span></span> <span data-ttu-id="fd380-202">A rendelkezésre álló új oldalakat kifejezetten a szállítói számlákhoz kapcsolódó mobilforgatókönyvek kidolgozásához alakítottuk ki.</span><span class="sxs-lookup"><span data-stu-id="fd380-202">The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice.</span></span> <span data-ttu-id="fd380-203">Ezért ezeket az oldalakat kell használnia.</span><span class="sxs-lookup"><span data-stu-id="fd380-203">Therefore, you must use these pages.</span></span> <span data-ttu-id="fd380-204">Az URL-nek a következő URL-re kell hasonlítania, és miután megadta, meg kell jelennie az ábrán látható oldalnak: https://&lt;sajatURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Hozzám rendelt függőben lévő szállítói számlák oldal](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)</span><span class="sxs-lookup"><span data-stu-id="fd380-204">The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)</span></span>
+2.  <span data-ttu-id="fd380-205">Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre</span><span class="sxs-lookup"><span data-stu-id="fd380-205">Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**</span></span>
+3.  <span data-ttu-id="fd380-206">Válassza ki a munkaterületet, és kattintson a **Szerkesztés** elemre</span><span class="sxs-lookup"><span data-stu-id="fd380-206">Select your workspace and click **Edit**</span></span>
+4.  <span data-ttu-id="fd380-207">Kattintson az **Oldal hozzáadása** elemre az első mobiloldal létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="fd380-207">Click **Add page** to create the first mobile page.</span></span>
+5.  <span data-ttu-id="fd380-208">Adjon meg egy nevet, például **Saját szállítói számlák**, és egy leírást, például **Véleményezésre hozzám rendelt szállítói számlák**.</span><span class="sxs-lookup"><span data-stu-id="fd380-208">Enter a name, such as **My vendor invoices**, and a description, such as **Vendor invoices assigned to me for review**.</span></span>
+6.  <span data-ttu-id="fd380-209">Kattintson a **Kész** gombra.</span><span class="sxs-lookup"><span data-stu-id="fd380-209">Click **Done**.</span></span>
+7.  <span data-ttu-id="fd380-210">A mobiltervezőben a **Mezők** fülön kattintson a **Mezők kijelölése** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-210">In the mobile designer, on the **Fields** tab, click **Select fields**.</span></span> <span data-ttu-id="fd380-211">A listalapon látható oszlopoknak az alábbi ábrához kell hasonlítaniuk.</span><span class="sxs-lookup"><span data-stu-id="fd380-211">The columns on the list page must resemble the following illustration.</span></span> <span data-ttu-id="fd380-212">[![Hozzám rendelt függőben lévő szállítói számlák oldalának oszlopai](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)</span><span class="sxs-lookup"><span data-stu-id="fd380-212">[![Columns on the Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)</span></span>
+8.  <span data-ttu-id="fd380-213">A listaoldalról adja hozzá a szükséges oszlopokat, amelyeket a felhasználók látni fognak a mobiloldalon.</span><span class="sxs-lookup"><span data-stu-id="fd380-213">Add the required columns from the list page that must be shown to the users in the mobile page.</span></span> <span data-ttu-id="fd380-214">A rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára.</span><span class="sxs-lookup"><span data-stu-id="fd380-214">The order in which you add is the order in which the fields will be displayed to the end user.</span></span> <span data-ttu-id="fd380-215">A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges.</span><span class="sxs-lookup"><span data-stu-id="fd380-215">The only way to change the ordering of the fields will be by re-selecting all the fields.</span></span> <span data-ttu-id="fd380-216">A példánkban szereplő követelmények alapján a következő nyolc mező szükséges.</span><span class="sxs-lookup"><span data-stu-id="fd380-216">Based on the requirements for this scenario, the following eight fields are required.</span></span> <span data-ttu-id="fd380-217">Azonban egyes felhasználók úgy vélhetik, hogy nyolc mező mobileszközön túl sok információt jelent.</span><span class="sxs-lookup"><span data-stu-id="fd380-217">However, some users might consider eight fields too much information to have on a mobile device.</span></span> <span data-ttu-id="fd380-218">Ezért csak a legfontosabb mezőket mutatjuk a mobillista-nézetben.</span><span class="sxs-lookup"><span data-stu-id="fd380-218">Therefore, we will show only the most important fields in the mobile list view.</span></span> <span data-ttu-id="fd380-219">A fennmaradó mezők a részletes nézetben jelennek meg, amelyet később fogunk megtervezni.</span><span class="sxs-lookup"><span data-stu-id="fd380-219">The remaining fields will appear in the details view that we will design later.</span></span> <span data-ttu-id="fd380-220">Egyelőre a következő mezőket adjuk hozzá.</span><span class="sxs-lookup"><span data-stu-id="fd380-220">For now, we will add the following fields.</span></span> <span data-ttu-id="fd380-221">Kattintson ezekben az oszlopokban a plusz jelre (**+**) a mobiloldalhoz való hozzáadáshoz.</span><span class="sxs-lookup"><span data-stu-id="fd380-221">Click the plus sign (**+**) in these columns to add to the mobile page.</span></span>
+    - <span data-ttu-id="fd380-222">Szállító neve</span><span class="sxs-lookup"><span data-stu-id="fd380-222">Vendor name</span></span>
+    - <span data-ttu-id="fd380-223">Számla összege</span><span class="sxs-lookup"><span data-stu-id="fd380-223">Invoice total</span></span>
+    - <span data-ttu-id="fd380-224">Számlafogadó</span><span class="sxs-lookup"><span data-stu-id="fd380-224">Invoice account</span></span>
+    - <span data-ttu-id="fd380-225">Számla száma</span><span class="sxs-lookup"><span data-stu-id="fd380-225">Invoice number</span></span>
+    - <span data-ttu-id="fd380-226">Számla dátuma</span><span class="sxs-lookup"><span data-stu-id="fd380-226">Invoice date</span></span>
 
-    A mezők felvétele után a mobiloldalnak az alábbi ábrához kell hasonlítania. 
-    [![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
-9.  Most a következő oszlopokat is hozzá kell adnia, hogy később engedélyezni lehessen munkafolyamat-műveleteket.
-    - Befejezett feladat megjelenítése
-    - Delegált feladat megjelenítése
-    - Visszahívási feladat megjelenítése
-    - Elutasítási feladat megjelenítése
-    - Kérésteljesítési feladat megjelenítése
-    - Újraküldési feladat megjelenítése
+    <span data-ttu-id="fd380-227">A mezők felvétele után a mobiloldalnak az alábbi ábrához kell hasonlítania.</span><span class="sxs-lookup"><span data-stu-id="fd380-227">After the fields are added, the mobile page must resemble the following illustration.</span></span> 
+    <span data-ttu-id="fd380-228">[![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)</span><span class="sxs-lookup"><span data-stu-id="fd380-228">[![Page after fields are added](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)</span></span>
+9.  <span data-ttu-id="fd380-229">Most a következő oszlopokat is hozzá kell adnia, hogy később engedélyezni lehessen munkafolyamat-műveleteket.</span><span class="sxs-lookup"><span data-stu-id="fd380-229">You must also add the following columns now, so that we can enable workflow actions later.</span></span>
+    - <span data-ttu-id="fd380-230">Befejezett feladat megjelenítése</span><span class="sxs-lookup"><span data-stu-id="fd380-230">Show complete task</span></span>
+    - <span data-ttu-id="fd380-231">Delegált feladat megjelenítése</span><span class="sxs-lookup"><span data-stu-id="fd380-231">Show delegate task</span></span>
+    - <span data-ttu-id="fd380-232">Visszahívási feladat megjelenítése</span><span class="sxs-lookup"><span data-stu-id="fd380-232">Show recall task</span></span>
+    - <span data-ttu-id="fd380-233">Elutasítási feladat megjelenítése</span><span class="sxs-lookup"><span data-stu-id="fd380-233">Show reject task</span></span>
+    - <span data-ttu-id="fd380-234">Kérésteljesítési feladat megjelenítése</span><span class="sxs-lookup"><span data-stu-id="fd380-234">Show request completion task</span></span>
+    - <span data-ttu-id="fd380-235">Újraküldési feladat megjelenítése</span><span class="sxs-lookup"><span data-stu-id="fd380-235">Show resubmit task</span></span>
 
-10. Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
-11. Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
-12. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját.
-13. Engedélyezze a **Számla végösszegének megjelenítése a függő szállítói számlák listájában** funkciót a kötelezettségek paraméterei képernyő **Számla** részében. Vegye figyelembe, hogy ezen paraméter engedélyezésével a rendszer kiszámítja a számlaösszegeket, és ezek megjelennek meg a függőben lévő szállítói számlák listaoldalán. Ezt az új képességet az előre szükséges 3208224-es gyorsjavítás biztosítja.
+10. <span data-ttu-id="fd380-236">Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-236">Click **Done** to exit edit mode.</span></span>
+11. <span data-ttu-id="fd380-237">Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-237">Click **Back** and then **Done** to exit the workspace</span></span>
+12. <span data-ttu-id="fd380-238">A **Munkaterület közzététele** gombra kattintva mentse el a munkáját.</span><span class="sxs-lookup"><span data-stu-id="fd380-238">Click **Publish workspace** to save your work.</span></span>
+13. <span data-ttu-id="fd380-239">Engedélyezze a **Számla végösszegének megjelenítése a függő szállítói számlák listájában** funkciót a kötelezettségek paraméterei képernyő **Számla** részében.</span><span class="sxs-lookup"><span data-stu-id="fd380-239">Enable **Display invoice total on pending vendor invoices list** in accounts payable parameters form under **Invoice**.</span></span> <span data-ttu-id="fd380-240">Vegye figyelembe, hogy ezen paraméter engedélyezésével a rendszer kiszámítja a számlaösszegeket, és ezek megjelennek meg a függőben lévő szállítói számlák listaoldalán.</span><span class="sxs-lookup"><span data-stu-id="fd380-240">Note that, only by enabling this parameter, invoice totals will be calculated to be displayed on the pending vendor invoices list page.</span></span> <span data-ttu-id="fd380-241">Ezt az új képességet az előre szükséges 3208224-es gyorsjavítás biztosítja.</span><span class="sxs-lookup"><span data-stu-id="fd380-241">This is a new capability as part of the pre-requisite hot fix 3208224.</span></span>
 
-### <a name="vendor-invoice-details"></a>Szállítói számla részletei
+### <a name="vendor-invoice-details"></a><span data-ttu-id="fd380-242">Szállítói számla részletei</span><span class="sxs-lookup"><span data-stu-id="fd380-242">Vendor invoice details</span></span>
 
-A számla részletei lap mobilra való megtervezéséhez használja a Finance and Operations **VendMobileInvoiceHeaderDetails** oldalát. Fontos megjegyezni, hogy a rendszerben található számlák számától függően ezen a lapon a legrégebbi számla (az első létrehozott számla) jelenik meg. Adott számla megkereséséhez használja a bal oldali szűrőt. Ebben a példában viszont nincs szükségünk konkrét számlára. Csak némi számlaadatra van szükség ahhoz, hogy meg tudjuk tervezni a mobilos oldalt. [![Munkafolyamat oldal](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+<span data-ttu-id="fd380-243">A számla részletei lap mobilra való megtervezéséhez használja a Finance and Operations **VendMobileInvoiceHeaderDetails** oldalát.</span><span class="sxs-lookup"><span data-stu-id="fd380-243">To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page in Finance and Operations.</span></span> <span data-ttu-id="fd380-244">Fontos megjegyezni, hogy a rendszerben található számlák számától függően ezen a lapon a legrégebbi számla (az első létrehozott számla) jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="fd380-244">Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first).</span></span> <span data-ttu-id="fd380-245">Adott számla megkereséséhez használja a bal oldali szűrőt.</span><span class="sxs-lookup"><span data-stu-id="fd380-245">To find a specific invoice, you can use the filter on the left.</span></span> <span data-ttu-id="fd380-246">Ebben a példában viszont nincs szükségünk konkrét számlára.</span><span class="sxs-lookup"><span data-stu-id="fd380-246">However, we don’t require a specific invoice for this example.</span></span> <span data-ttu-id="fd380-247">Csak némi számlaadatra van szükség ahhoz, hogy meg tudjuk tervezni a mobilos oldalt.</span><span class="sxs-lookup"><span data-stu-id="fd380-247">We just require some invoice data so that we can design the mobile page.</span></span> <span data-ttu-id="fd380-248">[![Munkafolyamat oldal](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)</span><span class="sxs-lookup"><span data-stu-id="fd380-248">[![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)</span></span>
 
-1.  A Finance and Operations URL-jében cserélje ki a menüelem nevét a **VendMobileInvoiceHeaderDetails** karakterláncra a képernyő megnyitásához
-2.  Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.
-3.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
-4.  Válassza a korábban elkészített **Saját szállítói számlák** oldalt, majd kattintson a **Szerkesztés** elemre.
-5.  A **Mezők** lapon kattintson a **Rács** oszlop fejlécére.
-6.  Kattintson a **Tulajdonságok** &gt; **Oldal hozzáadása** elemre. **Megjegyzés:** amikor a **Rács** fejlécre kattint, és hozzáad egy oldalt, a részletek oldallal való kapcsolat automatikusan létrejön.
-7.  Adja meg a lap címét, például: **Számla részletei**, és egy leírást, például: **Számlafejléc és sor részleteinek megtekintése**.
-8.  Kattintson a **Mezők kijelölése** elemre. Ne feledje, hogy a rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára. A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges. 
-9.  Adja hozzá a példánkban szereplő követelmények alapján a következő mezőket a fejlécből:
-    - Szállító neve
-    - Számla összege
-    - Számlafogadó
-    - Számla száma
-    - Számla dátuma
-    - Számla leírása
-    - Esedékes
-    - Számla pénzneme
+1.  <span data-ttu-id="fd380-249">A Finance and Operations URL-jében cserélje ki a menüelem nevét a **VendMobileInvoiceHeaderDetails** karakterláncra a képernyő megnyitásához</span><span class="sxs-lookup"><span data-stu-id="fd380-249">In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form</span></span>
+2.  <span data-ttu-id="fd380-250">Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.</span><span class="sxs-lookup"><span data-stu-id="fd380-250">Open the mobile designer from the **Settings** (gear) button.</span></span>
+3.  <span data-ttu-id="fd380-251">Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.</span><span class="sxs-lookup"><span data-stu-id="fd380-251">Click the **Edit** button to start edit mode in the workspace.</span></span>
+4.  <span data-ttu-id="fd380-252">Válassza a korábban elkészített **Saját szállítói számlák** oldalt, majd kattintson a **Szerkesztés** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-252">Select the **My vendor invoices **page that you created earlier, and then click **Edit**.</span></span>
+5.  <span data-ttu-id="fd380-253">A **Mezők** lapon kattintson a **Rács** oszlop fejlécére.</span><span class="sxs-lookup"><span data-stu-id="fd380-253">On the **Fields** tab, click the **Grid** column heading.</span></span>
+6.  <span data-ttu-id="fd380-254">Kattintson a **Tulajdonságok** &gt; **Oldal hozzáadása** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-254">Click **Properties** &gt; **Add page**.</span></span> <span data-ttu-id="fd380-255">**Megjegyzés:** amikor a **Rács** fejlécre kattint, és hozzáad egy oldalt, a részletek oldallal való kapcsolat automatikusan létrejön.</span><span class="sxs-lookup"><span data-stu-id="fd380-255">**Note:** When you click the **Grid** heading and add a page, the relationship with the details page is established automatically.</span></span>
+7.  <span data-ttu-id="fd380-256">Adja meg a lap címét, például: **Számla részletei**, és egy leírást, például: **Számlafejléc és sor részleteinek megtekintése**.</span><span class="sxs-lookup"><span data-stu-id="fd380-256">Enter a page title, such as **Invoice details**, and a description, such as **View invoice header and line details**.</span></span>
+8.  <span data-ttu-id="fd380-257">Kattintson a **Mezők kijelölése** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-257">Click **Select fields**.</span></span> <span data-ttu-id="fd380-258">Ne feledje, hogy a rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára.</span><span class="sxs-lookup"><span data-stu-id="fd380-258">Note that, the order in which you add is the order in which the fields will be displayed to the end user.</span></span> <span data-ttu-id="fd380-259">A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges.</span><span class="sxs-lookup"><span data-stu-id="fd380-259">The only way to change the ordering of the fields will be by re-selecting all the fields.</span></span> 
+9.  <span data-ttu-id="fd380-260">Adja hozzá a példánkban szereplő követelmények alapján a következő mezőket a fejlécből:</span><span class="sxs-lookup"><span data-stu-id="fd380-260">Add the following fields from the header, based on the requirements for this scenario:</span></span>
+    - <span data-ttu-id="fd380-261">Szállító neve</span><span class="sxs-lookup"><span data-stu-id="fd380-261">Vendor name</span></span>
+    - <span data-ttu-id="fd380-262">Számla összege</span><span class="sxs-lookup"><span data-stu-id="fd380-262">Invoice total</span></span>
+    - <span data-ttu-id="fd380-263">Számlafogadó</span><span class="sxs-lookup"><span data-stu-id="fd380-263">Invoice account</span></span>
+    - <span data-ttu-id="fd380-264">Számla száma</span><span class="sxs-lookup"><span data-stu-id="fd380-264">Invoice number</span></span>
+    - <span data-ttu-id="fd380-265">Számla dátuma</span><span class="sxs-lookup"><span data-stu-id="fd380-265">Invoice date</span></span>
+    - <span data-ttu-id="fd380-266">Számla leírása</span><span class="sxs-lookup"><span data-stu-id="fd380-266">Invoice description</span></span>
+    - <span data-ttu-id="fd380-267">Esedékes</span><span class="sxs-lookup"><span data-stu-id="fd380-267">Due date</span></span>
+    - <span data-ttu-id="fd380-268">Számla pénzneme</span><span class="sxs-lookup"><span data-stu-id="fd380-268">Invoice currency</span></span>
 
-10. Az oldalon szereplő sorrácsból adja hozzá a következő mezőket:
-    - Beszerzési kategória
-    - Mennyiség
-    - Egységár
-    - Sor nettó összege
-    - 1099-es összeg
+10. <span data-ttu-id="fd380-269">Az oldalon szereplő sorrácsból adja hozzá a következő mezőket:</span><span class="sxs-lookup"><span data-stu-id="fd380-269">Add the following fields from the lines grid on the page:</span></span>
+    - <span data-ttu-id="fd380-270">Beszerzési kategória</span><span class="sxs-lookup"><span data-stu-id="fd380-270">Procurement category</span></span>
+    - <span data-ttu-id="fd380-271">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="fd380-271">Quantity</span></span>
+    - <span data-ttu-id="fd380-272">Egységár</span><span class="sxs-lookup"><span data-stu-id="fd380-272">Unit price</span></span>
+    - <span data-ttu-id="fd380-273">Sor nettó összege</span><span class="sxs-lookup"><span data-stu-id="fd380-273">Line net amount</span></span>
+    - <span data-ttu-id="fd380-274">1099-es összeg</span><span class="sxs-lookup"><span data-stu-id="fd380-274">1099 amount</span></span>
 
-11. Miután az előző két lépésből az összes mezőt hozzáadta, kattintson a **Kész** elemre. Az oldalnak az alábbi ábrához kell hasonlítania.
-[![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
-12. Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
-13. Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
-14. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
+11. <span data-ttu-id="fd380-275">Miután az előző két lépésből az összes mezőt hozzáadta, kattintson a **Kész** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-275">After all the fields from the previous two steps have been added, click **Done**.</span></span> <span data-ttu-id="fd380-276">Az oldalnak az alábbi ábrához kell hasonlítania.</span><span class="sxs-lookup"><span data-stu-id="fd380-276">The page must resemble the following illustration.</span></span>
+<span data-ttu-id="fd380-277">[![Az oldal mezők hozzáadása után](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)</span><span class="sxs-lookup"><span data-stu-id="fd380-277">[![Page after fields are added](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)</span></span>
+12. <span data-ttu-id="fd380-278">Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-278">Click **Done** to exit edit mode.</span></span>
+13. <span data-ttu-id="fd380-279">Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-279">Click **Back** and then **Done** to exit the workspace</span></span>
+14. <span data-ttu-id="fd380-280">A **Munkaterület közzététele** gombra kattintva mentse el a munkáját</span><span class="sxs-lookup"><span data-stu-id="fd380-280">Click **Publish workspace** to save your work</span></span>
 
-### <a name="workflow-actions"></a>Munkafolyamat-műveletek
+### <a name="workflow-actions"></a><span data-ttu-id="fd380-281">Munkafolyamat-műveletek</span><span class="sxs-lookup"><span data-stu-id="fd380-281">Workflow actions</span></span>
 
-Munkafolyamat-műveletek hozzáadásához használja a Finance and Operations **VendMobileInvoiceHeaderDetails** oldalát. Az oldal megnyitásához cserélje ki a menüpont nevét az URL-címben, mint korábban. Ezután nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal. Kövesse az alábbi lépéseket munkafolyamat-műveletek hozzáadásához a részletek oldalon. Olyan Önhöz rendelt számlákkal kell rendelkeznie, amelyek olyan megfelelő állapotban vannak, ami elérhetővé teszi azon munkafolyamat-műveleteket, amelyekhez felületet kíván tervezni.
+<span data-ttu-id="fd380-282">Munkafolyamat-műveletek hozzáadásához használja a Finance and Operations **VendMobileInvoiceHeaderDetails** oldalát.</span><span class="sxs-lookup"><span data-stu-id="fd380-282">To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page in Finance and Operations.</span></span> <span data-ttu-id="fd380-283">Az oldal megnyitásához cserélje ki a menüpont nevét az URL-címben, mint korábban.</span><span class="sxs-lookup"><span data-stu-id="fd380-283">To open this page, replace the name of the menu item in the URL, as you did earlier.</span></span> <span data-ttu-id="fd380-284">Ezután nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.</span><span class="sxs-lookup"><span data-stu-id="fd380-284">Then open the mobile designer from the **Settings** (gear) button.</span></span> <span data-ttu-id="fd380-285">Kövesse az alábbi lépéseket munkafolyamat-műveletek hozzáadásához a részletek oldalon.</span><span class="sxs-lookup"><span data-stu-id="fd380-285">Follow these steps to add workflow actions on the details page.</span></span> <span data-ttu-id="fd380-286">Olyan Önhöz rendelt számlákkal kell rendelkeznie, amelyek olyan megfelelő állapotban vannak, ami elérhetővé teszi azon munkafolyamat-műveleteket, amelyekhez felületet kíván tervezni.</span><span class="sxs-lookup"><span data-stu-id="fd380-286">You must have invoices assigned to you that are in the appropriate state to make the workflow actions available to you that you are going to design for.</span></span>
 
-#### <a name="record-workflow-actions"></a>Munkafolyamat-műveletek rögzítése
-1.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
-2.  Válassza a korábban elkészített **Számla részletei** oldalt, majd kattintson a **Szerkesztés** elemre.
-3.  A **Műveletek** lapon kattintson a **Művelet hozzáadása** elemre.
-4.  Adjon meg egy műveletcímet, például **Jóváhagyás**, és egy leírást, például a **Számla jóváhagyása**. Fontos megjegyezni, hogy a művelet itt megadott címe lesz a művelet neve, amit a felhasználó a mobilalkalmazásban látni fog.
-5.  Kattintson a **Kész** gombra.
-6.  Kattintson a **Mezők kijelölése** elemre.
-7.  Menjen végig a munkafolyamaton a **VendMobileInvoiceHeaderDetails** oldalon, és végezze el a rögzíteni kívánt műveletet. Ügyeljen, hogy e folyamat során írjon be megjegyzéseket a munkafolyamathoz annak érdekében, hogy a megjegyzések mező is bekerüljön a mobilfelületre.
-8.  A munkafolyamat-művelet futtatása után kattintson a **Kész** elemre a Mezőválasztás feladat elvégzéséhez.
-9.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
-10. Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
-11. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
-12. Ismételje meg az előző lépéseket az összes szükséges munkafolyamat-művelet rögzítéséhez. 
+#### <a name="record-workflow-actions"></a><span data-ttu-id="fd380-287">Munkafolyamat-műveletek rögzítése</span><span class="sxs-lookup"><span data-stu-id="fd380-287">Record workflow actions</span></span>
+1.  <span data-ttu-id="fd380-288">Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.</span><span class="sxs-lookup"><span data-stu-id="fd380-288">Click the **Edit** button to start edit mode in the workspace.</span></span>
+2.  <span data-ttu-id="fd380-289">Válassza a korábban elkészített **Számla részletei** oldalt, majd kattintson a **Szerkesztés** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-289">Select the **Invoice details** page that you created earlier, and then click **Edit**.</span></span>
+3.  <span data-ttu-id="fd380-290">A **Műveletek** lapon kattintson a **Művelet hozzáadása** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-290">On the **Actions** tab, click **Add action**.</span></span>
+4.  <span data-ttu-id="fd380-291">Adjon meg egy műveletcímet, például **Jóváhagyás**, és egy leírást, például a **Számla jóváhagyása**.</span><span class="sxs-lookup"><span data-stu-id="fd380-291">Enter an action title, such as **Approve**, and a description, such as **Approve invoice**.</span></span> <span data-ttu-id="fd380-292">Fontos megjegyezni, hogy a művelet itt megadott címe lesz a művelet neve, amit a felhasználó a mobilalkalmazásban látni fog.</span><span class="sxs-lookup"><span data-stu-id="fd380-292">Note that the action title that you enter here becomes the name of the action that is shown to the user in the mobile app.</span></span>
+5.  <span data-ttu-id="fd380-293">Kattintson a **Kész** gombra.</span><span class="sxs-lookup"><span data-stu-id="fd380-293">Click **Done**.</span></span>
+6.  <span data-ttu-id="fd380-294">Kattintson a **Mezők kijelölése** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-294">Click **Select fields**.</span></span>
+7.  <span data-ttu-id="fd380-295">Menjen végig a munkafolyamaton a **VendMobileInvoiceHeaderDetails** oldalon, és végezze el a rögzíteni kívánt műveletet.</span><span class="sxs-lookup"><span data-stu-id="fd380-295">Go through the workflow process on the **VendMobileInvoiceHeaderDetails** page, and complete the action that you wanted to record.</span></span> <span data-ttu-id="fd380-296">Ügyeljen, hogy e folyamat során írjon be megjegyzéseket a munkafolyamathoz annak érdekében, hogy a megjegyzések mező is bekerüljön a mobilfelületre.</span><span class="sxs-lookup"><span data-stu-id="fd380-296">Make sure that you enter workflow comments during this process, so that a comments field is also included in the mobile experience.</span></span>
+8.  <span data-ttu-id="fd380-297">A munkafolyamat-művelet futtatása után kattintson a **Kész** elemre a Mezőválasztás feladat elvégzéséhez.</span><span class="sxs-lookup"><span data-stu-id="fd380-297">After the workflow action is run, click **Done** to complete the Select fields task.</span></span>
+9.  <span data-ttu-id="fd380-298">Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-298">Click **Done** to exit edit mode.</span></span>
+10. <span data-ttu-id="fd380-299">Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-299">Click **Back** and then **Done** to exit the workspace</span></span>
+11. <span data-ttu-id="fd380-300">A **Munkaterület közzététele** gombra kattintva mentse el a munkáját</span><span class="sxs-lookup"><span data-stu-id="fd380-300">Click **Publish workspace** to save your work</span></span>
+12. <span data-ttu-id="fd380-301">Ismételje meg az előző lépéseket az összes szükséges munkafolyamat-művelet rögzítéséhez.</span><span class="sxs-lookup"><span data-stu-id="fd380-301">Repeat the previous steps to record all the required workflow actions.</span></span> 
 
-#### <a name="create-a-js-file"></a>.js fájl létrehozása
-1. Nyissa meg a Jegyzettömböt vagy a Microsoft Visual Studiót, és illessze be a következő kódot. Mentse a fájlt .js fájlként. Ez a kód a következőket hajtja végre:
-    - Elrejti a korábban a mobil listaoldalon hozzáadott, a munkafolyamattal kapcsolatos további oszlopokat. Ezeket az oszlopokat azért adtuk hozzá, hogy az alkalmazás összefüggésben rendelkezzen az információkkal, és meg tudjuk tenni a következő lépést.
-    - Az aktív munkafolyamat-lépés alapján logikát alkalmazva csak az érintett műveleteket jeleníti meg.
+#### <a name="create-a-js-file"></a><span data-ttu-id="fd380-302">.js fájl létrehozása</span><span class="sxs-lookup"><span data-stu-id="fd380-302">Create a .js file</span></span>
+1. <span data-ttu-id="fd380-303">Nyissa meg a Jegyzettömböt vagy a Microsoft Visual Studiót, és illessze be a következő kódot.</span><span class="sxs-lookup"><span data-stu-id="fd380-303">Open Notepad or Microsoft Visual Studio, and paste the following code.</span></span> <span data-ttu-id="fd380-304">Mentse a fájlt .js fájlként.</span><span class="sxs-lookup"><span data-stu-id="fd380-304">Save the file as a .js file.</span></span> <span data-ttu-id="fd380-305">Ez a kód a következőket hajtja végre:</span><span class="sxs-lookup"><span data-stu-id="fd380-305">This code does the following:</span></span>
+    - <span data-ttu-id="fd380-306">Elrejti a korábban a mobil listaoldalon hozzáadott, a munkafolyamattal kapcsolatos további oszlopokat.</span><span class="sxs-lookup"><span data-stu-id="fd380-306">It hides the extra workflow-related columns that we added earlier on the mobile list page.</span></span> <span data-ttu-id="fd380-307">Ezeket az oszlopokat azért adtuk hozzá, hogy az alkalmazás összefüggésben rendelkezzen az információkkal, és meg tudjuk tenni a következő lépést.</span><span class="sxs-lookup"><span data-stu-id="fd380-307">We added these columns so that the app has that information in context and can do the next step.</span></span>
+    - <span data-ttu-id="fd380-308">Az aktív munkafolyamat-lépés alapján logikát alkalmazva csak az érintett műveleteket jeleníti meg.</span><span class="sxs-lookup"><span data-stu-id="fd380-308">Based on the workflow step that is active, it applies logic to show only those actions.</span></span>
 
 > [!NOTE]
-> Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
+> <span data-ttu-id="fd380-309">Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.</span><span class="sxs-lookup"><span data-stu-id="fd380-309">The name of the pages and other controls in the code must be the same as the names in the workspace.</span></span>
 
     function main(metadataService, dataService, cacheService, $q) {
            return {
@@ -289,56 +289,56 @@ Munkafolyamat-műveletek hozzáadásához használja a Finance and Operations **
            };
         }
 
-2.  Töltse fel a kódfájlt a munkaterületre a **Logika** lap kiválasztásával
-3.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
-4.  Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
-5.  A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
+2.  <span data-ttu-id="fd380-310">Töltse fel a kódfájlt a munkaterületre a **Logika** lap kiválasztásával</span><span class="sxs-lookup"><span data-stu-id="fd380-310">Upload the code file to the workspace by selecting the **Logic** tab</span></span>
+3.  <span data-ttu-id="fd380-311">Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-311">Click **Done** to exit edit mode.</span></span>
+4.  <span data-ttu-id="fd380-312">Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-312">Click **Back** and then **Done** to exit the workspace</span></span>
+5.  <span data-ttu-id="fd380-313">A **Munkaterület közzététele** gombra kattintva mentse el a munkáját</span><span class="sxs-lookup"><span data-stu-id="fd380-313">Click **Publish workspace** to save your work</span></span>
 
-### <a name="vendor-invoice-attachments"></a>Szállítói számlamellékletek
+### <a name="vendor-invoice-attachments"></a><span data-ttu-id="fd380-314">Szállítói számlamellékletek</span><span class="sxs-lookup"><span data-stu-id="fd380-314">Vendor invoice attachments</span></span>
 
-1.  Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre
-2.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
-3.  Válassza a korábban elkészített **Számla részletei** oldalt, majd kattintson a **Szerkesztés** elemre.
-4.  Állítsa a **Dokumentumkezelés** lehetőséget **Igen** értékre, ahogy az lent látható. **Megjegyzés:** ha a mellékleteket nem muszáj megjeleníteni a mobileszközön, a beállítást az alapértelmezett **Nem** értéken hagyhatja.
-![Dokumentumkezelés](./media/docmanagement-216x300.png)
-6.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
-7.  Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
-8.  A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
+1.  <span data-ttu-id="fd380-315">Kattintson a **Beállítások** (fogaskerék) gombra az oldal jobb felső sarkában, majd kattintson a **Mobilalkalmazás** elemre</span><span class="sxs-lookup"><span data-stu-id="fd380-315">Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**</span></span>
+2.  <span data-ttu-id="fd380-316">Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.</span><span class="sxs-lookup"><span data-stu-id="fd380-316">Click the **Edit** button to start edit mode in the workspace.</span></span>
+3.  <span data-ttu-id="fd380-317">Válassza a korábban elkészített **Számla részletei** oldalt, majd kattintson a **Szerkesztés** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-317">Select the **Invoice details **page that you created earlier, and then click **Edit**.</span></span>
+4.  <span data-ttu-id="fd380-318">Állítsa a **Dokumentumkezelés** lehetőséget **Igen** értékre, ahogy az lent látható.</span><span class="sxs-lookup"><span data-stu-id="fd380-318">Set the **Document management** option to **Yes** as shown below.</span></span> <span data-ttu-id="fd380-319">**Megjegyzés:** ha a mellékleteket nem muszáj megjeleníteni a mobileszközön, a beállítást az alapértelmezett **Nem** értéken hagyhatja.</span><span class="sxs-lookup"><span data-stu-id="fd380-319">**Note:** If there are no requirements to show attachments on the mobile device, you can leave this option set to **No**, which is the default setting.</span></span>
+<span data-ttu-id="fd380-320">![Dokumentumkezelés](./media/docmanagement-216x300.png)</span><span class="sxs-lookup"><span data-stu-id="fd380-320">![Document management](./media/docmanagement-216x300.png)</span></span>
+6.  <span data-ttu-id="fd380-321">Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-321">Click **Done** to exit edit mode.</span></span>
+7.  <span data-ttu-id="fd380-322">Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-322">Click **Back** and then **Done** to exit the workspace</span></span>
+8.  <span data-ttu-id="fd380-323">A **Munkaterület közzététele** gombra kattintva mentse el a munkáját</span><span class="sxs-lookup"><span data-stu-id="fd380-323">Click **Publish workspace** to save your work</span></span>
 
-### <a name="vendor-invoice-line-distributions"></a>Szállítói számlasorok felosztásai
+### <a name="vendor-invoice-line-distributions"></a><span data-ttu-id="fd380-324">Szállítói számlasorok felosztásai</span><span class="sxs-lookup"><span data-stu-id="fd380-324">Vendor invoice line distributions</span></span>
 
-E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztások lesznek jelen, és hogy a számláknak mindig csak egy soruk lesz. Mivel ez a forgatókönyv egyszerű, a felhasználói felületnek a mobileszközön szintén elég egyszerűnek kell lennie ahhoz, hogy a felhasználónak ne kelljen számos szinten végigásnia magát a felosztások megtekintéséhez. A szállítói számláknál a Finance and Operationsben az összes felosztás megjeleníthető a számlafejlécből. A mobilfelülethez erre a funkcióra van szükségünk. Ezért a **VendMobileInvoiceAllDistributionTree** lapot fogjuk használni a mobilfelület ezen részének megtervezéséhez. 
+<span data-ttu-id="fd380-325">E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztások lesznek jelen, és hogy a számláknak mindig csak egy soruk lesz.</span><span class="sxs-lookup"><span data-stu-id="fd380-325">The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line.</span></span> <span data-ttu-id="fd380-326">Mivel ez a forgatókönyv egyszerű, a felhasználói felületnek a mobileszközön szintén elég egyszerűnek kell lennie ahhoz, hogy a felhasználónak ne kelljen számos szinten végigásnia magát a felosztások megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="fd380-326">Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions.</span></span> <span data-ttu-id="fd380-327">A szállítói számláknál a Finance and Operationsben az összes felosztás megjeleníthető a számlafejlécből.</span><span class="sxs-lookup"><span data-stu-id="fd380-327">Vendor invoices in Finance and Operations include the option of showing all distributions from the invoice header.</span></span> <span data-ttu-id="fd380-328">A mobilfelülethez erre a funkcióra van szükségünk.</span><span class="sxs-lookup"><span data-stu-id="fd380-328">This experience is what we need for the mobile scenario.</span></span> <span data-ttu-id="fd380-329">Ezért a **VendMobileInvoiceAllDistributionTree** lapot fogjuk használni a mobilfelület ezen részének megtervezéséhez.</span><span class="sxs-lookup"><span data-stu-id="fd380-329">Therefore, we will use the **VendMobileInvoiceAllDistributionTree** page to design this part of the mobile scenario.</span></span> 
 
 > [!NOTE] 
-> A követelmények ismerete segít eldönteni, melyik adott oldalt használjuk, és pontosan hogyan optimalizáljuk a mobil felhasználói élményt a felület megtervezése során. A második forgatókönyv szerint másik oldalt fogunk használni a felosztások megjelenítésére, mivel ennek a forgatókönyvnek a követelményei eltérőek.
+> <span data-ttu-id="fd380-330">A követelmények ismerete segít eldönteni, melyik adott oldalt használjuk, és pontosan hogyan optimalizáljuk a mobil felhasználói élményt a felület megtervezése során.</span><span class="sxs-lookup"><span data-stu-id="fd380-330">Knowing the requirements helps us decide which specific page to use and how exactly to optimize the mobile experience for the user when we design the scenario.</span></span> <span data-ttu-id="fd380-331">A második forgatókönyv szerint másik oldalt fogunk használni a felosztások megjelenítésére, mivel ennek a forgatókönyvnek a követelményei eltérőek.</span><span class="sxs-lookup"><span data-stu-id="fd380-331">In the second scenario, we will use a different page to show the distributions, because the requirements for that scenario differ.</span></span>
 
-1.  Az URL-ben cserélje ki a menüpont nevét, mint korábban. A megjelenő lapnak az alábbi ábrához kell hasonlítania.
-[![Összes eloszlás oldal](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
-2.  Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.
-3.  Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához. **Megjegyzés:** látni fogja, hogy két új oldal jön létre automatikusan. A rendszer ezeket az oldalakat azért hozza létre, mert az előző részben bekapcsolta a Dokumentumkezelést. Ezeket az új oldalakat figyelmen kívül hagyhatja.
-4.  Kattintson az **Oldal hozzáadása** elemre.
-5.  Adja meg az oldal címét, például **Könyvelés megtekintése**, és egy leírást, például a **Számla könyvelésének megtekintése**.
-6.  Kattintson a **Kész** gombra.
-7.  A **mezők** lapon kattintson a **Mezők kiválasztása** elemre, a felosztások lapon válassza a következő mezőket, és kattintson a **Kész** elemre:
-    1.  Összeg
-    2.  Pénznem
-    3.  Főkönyvi számla
+1.  <span data-ttu-id="fd380-332">Az URL-ben cserélje ki a menüpont nevét, mint korábban.</span><span class="sxs-lookup"><span data-stu-id="fd380-332">In the URL, replace the name of the menu item, as you did before.</span></span> <span data-ttu-id="fd380-333">A megjelenő lapnak az alábbi ábrához kell hasonlítania.</span><span class="sxs-lookup"><span data-stu-id="fd380-333">The page that appears should resemble the following illustration.</span></span>
+<span data-ttu-id="fd380-334">[![Összes eloszlás oldal](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)</span><span class="sxs-lookup"><span data-stu-id="fd380-334">[![All distributions page](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)</span></span>
+2.  <span data-ttu-id="fd380-335">Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.</span><span class="sxs-lookup"><span data-stu-id="fd380-335">Open the mobile designer from the **Settings** (gear) button.</span></span>
+3.  <span data-ttu-id="fd380-336">Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.</span><span class="sxs-lookup"><span data-stu-id="fd380-336">Click the **Edit** button to start edit mode in the workspace.</span></span> <span data-ttu-id="fd380-337">**Megjegyzés:** látni fogja, hogy két új oldal jön létre automatikusan.</span><span class="sxs-lookup"><span data-stu-id="fd380-337">**Note:** You will see that two new pages were created automatically.</span></span> <span data-ttu-id="fd380-338">A rendszer ezeket az oldalakat azért hozza létre, mert az előző részben bekapcsolta a Dokumentumkezelést.</span><span class="sxs-lookup"><span data-stu-id="fd380-338">The system creates these pages, because you turned on document management in the previous section.</span></span> <span data-ttu-id="fd380-339">Ezeket az új oldalakat figyelmen kívül hagyhatja.</span><span class="sxs-lookup"><span data-stu-id="fd380-339">You can ignore these new pages.</span></span>
+4.  <span data-ttu-id="fd380-340">Kattintson az **Oldal hozzáadása** elemre.</span><span class="sxs-lookup"><span data-stu-id="fd380-340">Click **Add page**.</span></span>
+5.  <span data-ttu-id="fd380-341">Adja meg az oldal címét, például **Könyvelés megtekintése**, és egy leírást, például a **Számla könyvelésének megtekintése**.</span><span class="sxs-lookup"><span data-stu-id="fd380-341">Enter a page title, such as **View accounting**, and a description, such as **View accounting for the invoice**.</span></span>
+6.  <span data-ttu-id="fd380-342">Kattintson a **Kész** gombra.</span><span class="sxs-lookup"><span data-stu-id="fd380-342">Click **Done**.</span></span>
+7.  <span data-ttu-id="fd380-343">A **mezők** lapon kattintson a **Mezők kiválasztása** elemre, a felosztások lapon válassza a következő mezőket, és kattintson a **Kész** elemre:</span><span class="sxs-lookup"><span data-stu-id="fd380-343">On the **Fields** tab, click **Select fields**, select the following fields from the distributions page, and then click **Done**:</span></span>
+    1.  <span data-ttu-id="fd380-344">Összeg</span><span class="sxs-lookup"><span data-stu-id="fd380-344">Amount</span></span>
+    2.  <span data-ttu-id="fd380-345">Pénznem</span><span class="sxs-lookup"><span data-stu-id="fd380-345">Currency</span></span>
+    3.  <span data-ttu-id="fd380-346">Főkönyvi számla</span><span class="sxs-lookup"><span data-stu-id="fd380-346">Ledger account</span></span>
 
     > [!NOTE] 
-    > A **Leírás** oszlopot nem választottuk ki a felosztások rácsból, mert ebben az esetben a követelmények megerősítik, hogy a kiterjesztett ár az egyetlen összeg, amelyhez felosztások lesznek elérhetők. Ezért a felhasználónak nem lesz másik mezőre szüksége ahhoz, hogy lássa, milyen típusú összegre vonatkozik a felosztás. A következő forgatókönyvben azonban **használni fogjuk** ezt az információt, mivel annak a forgatókönyvnek a követelményei azt mondják, hogy egyéb összegtípusokhoz (például áfához) is lesznek felosztások.
-8.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
-9.  Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
-10. A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
+    > <span data-ttu-id="fd380-347">A **Leírás** oszlopot nem választottuk ki a felosztások rácsból, mert ebben az esetben a követelmények megerősítik, hogy a kiterjesztett ár az egyetlen összeg, amelyhez felosztások lesznek elérhetők.</span><span class="sxs-lookup"><span data-stu-id="fd380-347">We didn’t select the **Description** column from the distributions grid, because the requirements for this scenario confirmed that the extended price is the only amount that there will be distributions for.</span></span> <span data-ttu-id="fd380-348">Ezért a felhasználónak nem lesz másik mezőre szüksége ahhoz, hogy lássa, milyen típusú összegre vonatkozik a felosztás.</span><span class="sxs-lookup"><span data-stu-id="fd380-348">Therefore, the user won’t require another field to determine the amount type that the distribution is for.</span></span> <span data-ttu-id="fd380-349">A következő forgatókönyvben azonban **használni fogjuk** ezt az információt, mivel annak a forgatókönyvnek a követelményei azt mondják, hogy egyéb összegtípusokhoz (például áfához) is lesznek felosztások.</span><span class="sxs-lookup"><span data-stu-id="fd380-349">However, in the next scenario, we **will** use this information, because the requirements for that scenario specify that other amount types have distributions (for example, sales tax).</span></span>
+8.  <span data-ttu-id="fd380-350">Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-350">Click **Done** to exit edit mode.</span></span>
+9.  <span data-ttu-id="fd380-351">Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-351">Click **Back** and then **Done** to exit the workspace</span></span>
+10. <span data-ttu-id="fd380-352">A **Munkaterület közzététele** gombra kattintva mentse el a munkáját</span><span class="sxs-lookup"><span data-stu-id="fd380-352">Click **Publish workspace** to save your work</span></span>
 
 > [!NOTE] 
-> A **Könyvelés megjelenítése** mobillap jelenleg nem hivatkozik az általunk eddig megtervezett egyik mobillapra sem. Mivel a felhasználónak a mobilkészüléken el kell tudnia navigálnia a **Könyvelés megtekintése** oldalra a **Számla részletei** oldalról, navigációs lehetőséget kell biztosítanunk a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra. Ezt a navigációs lehetőséget további logika használatával hozzuk létre JavaScript segítségével.
+> <span data-ttu-id="fd380-353">A **Könyvelés megjelenítése** mobillap jelenleg nem hivatkozik az általunk eddig megtervezett egyik mobillapra sem.</span><span class="sxs-lookup"><span data-stu-id="fd380-353">The **View accounting** mobile page isn’t currently linked to any of the mobile pages that we have designed so far.</span></span> <span data-ttu-id="fd380-354">Mivel a felhasználónak a mobilkészüléken el kell tudnia navigálnia a **Könyvelés megtekintése** oldalra a **Számla részletei** oldalról, navigációs lehetőséget kell biztosítanunk a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra.</span><span class="sxs-lookup"><span data-stu-id="fd380-354">Because the user should be able to navigate to the **View accounting** page from the **Invoice details** page on the mobile device, we must provide navigation from the **Invoice details** page to the **View accounting** page.</span></span> <span data-ttu-id="fd380-355">Ezt a navigációs lehetőséget további logika használatával hozzuk létre JavaScript segítségével.</span><span class="sxs-lookup"><span data-stu-id="fd380-355">We establish this navigation by using additional logic via JavaScript.</span></span>
 
-1.  Nyissa meg a korábban létrehozott .js fájlt, és adja hozzá a következő kódban kiemelt sorokat. Ezt a kódot két dolgot tesz:
-    1.  Ez segít garantálni, hogy a felhasználók közvetlenül a munkaterületről nem léphetnek a **Könyvelés megtekintése** oldalra.
-    2.  Ez létrehoz egy navigációs vezérlőt a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra.
+1.  <span data-ttu-id="fd380-356">Nyissa meg a korábban létrehozott .js fájlt, és adja hozzá a következő kódban kiemelt sorokat.</span><span class="sxs-lookup"><span data-stu-id="fd380-356">Open the .js file that you created earlier, and add the lines that are highlighted in the following code.</span></span> <span data-ttu-id="fd380-357">Ezt a kódot két dolgot tesz:</span><span class="sxs-lookup"><span data-stu-id="fd380-357">This code does two things:</span></span>
+    1.  <span data-ttu-id="fd380-358">Ez segít garantálni, hogy a felhasználók közvetlenül a munkaterületről nem léphetnek a **Könyvelés megtekintése** oldalra.</span><span class="sxs-lookup"><span data-stu-id="fd380-358">It helps guarantee that users can’t navigate directly from the workspace to the **View accounting** page.</span></span>
+    2.  <span data-ttu-id="fd380-359">Ez létrehoz egy navigációs vezérlőt a **Számla részletei** oldalról a **Könyvelés megtekintése** oldalra.</span><span class="sxs-lookup"><span data-stu-id="fd380-359">It establishes a navigation control from the **Invoice details** page to the **View accounting** page.</span></span>
 
 > [!NOTE] 
-> Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.
+> <span data-ttu-id="fd380-360">Az oldalak és más vezérlőelemek nevének a JS-kódban és a munkaterületen egyeznie kell.</span><span class="sxs-lookup"><span data-stu-id="fd380-360">The name of the pages and other controls in the code must be the same as the names in the workspace.</span></span>
 
     function main(metadataService, dataService, cacheService, $q) {
            return {
@@ -403,24 +403,24 @@ E forgatókönyv követelményei megerősítik, hogy csak sorszintű felosztáso
            };
         }
 
-2.  Az előző kód felülírásához töltse fel a kódfájlt a munkaterületre a **Logika** lap kiválasztásával
-3.  Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.
-4.  Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.
-5.  A **Munkaterület közzététele** gombra kattintva mentse el a munkáját
+2.  <span data-ttu-id="fd380-361">Az előző kód felülírásához töltse fel a kódfájlt a munkaterületre a **Logika** lap kiválasztásával</span><span class="sxs-lookup"><span data-stu-id="fd380-361">Upload the code file to the workspace by selecting the **Logic** tab to overwrite the previous code</span></span>
+3.  <span data-ttu-id="fd380-362">Kattintson a **Kész** elemre a szerkesztés módból való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-362">Click **Done** to exit edit mode.</span></span>
+4.  <span data-ttu-id="fd380-363">Kattintson a **Vissza**, majd a **Kész** elemre a munkaterületről való kilépéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-363">Click **Back** and then **Done** to exit the workspace</span></span>
+5.  <span data-ttu-id="fd380-364">A **Munkaterület közzététele** gombra kattintva mentse el a munkáját</span><span class="sxs-lookup"><span data-stu-id="fd380-364">Click **Publish workspace** to save your work</span></span>
 
-### <a name="validation"></a>Ellenőrzés
+### <a name="validation"></a><span data-ttu-id="fd380-365">Ellenőrzés</span><span class="sxs-lookup"><span data-stu-id="fd380-365">Validation</span></span>
 
-A mobilkészüléken nyissa meg az alkalmazást, és csatlakozzon saját Finance and Operations példányához. Ügyeljen, hogy abba a vállalatba jelentkezzen be, amelynél vannak szállítói számlák Önhöz rendelve véleményezésre. Ekkor elvileg el tudja elvégezni a következő műveleteket:
+<span data-ttu-id="fd380-366">A mobilkészüléken nyissa meg az alkalmazást, és csatlakozzon saját Finance and Operations példányához.</span><span class="sxs-lookup"><span data-stu-id="fd380-366">From your mobile device, open the app, and connect to your Finance and Operations instance.</span></span> <span data-ttu-id="fd380-367">Ügyeljen, hogy abba a vállalatba jelentkezzen be, amelynél vannak szállítói számlák Önhöz rendelve véleményezésre.</span><span class="sxs-lookup"><span data-stu-id="fd380-367">Make sure that you sign in to the company where vendor invoices are assigned to you for review.</span></span> <span data-ttu-id="fd380-368">Ekkor elvileg el tudja elvégezni a következő műveleteket:</span><span class="sxs-lookup"><span data-stu-id="fd380-368">You should be able to perform the following actions:</span></span>
 
--   Nézze meg a **Jóváhagyásaim** munkaterület.
--   Jusson el a **Jóváhagyásaim** munkaterületre, és nézze meg a **Saját szállítói számlák** oldalt.
--   Jusson el a **Saját szállítói számlák** oldalra, és nézze meg az Önhöz hozzárendelt számlák listáját.
--   Lépjen be az egyik számlába, és nézze meg a számla fejlécadatait és a sor részleteit.
--   A részletek oldalon nézze meg a mellékletekre mutató hivatkozást, e hivatkozás segítségével lépjen a mellékletek listájára, és nézze meg a mellékleteket.
--   A részletek oldalon nézze meg a **Könyvelés megtekintése** oldalra mutató hivatkozást, e hivatkozás segítségével lépjen a felosztások oldalára, és nézze meg a felosztásokat.
--   A részletek oldalon kattintson a **Műveletek** menüre a lap alján, és hajtsa végre a munkafolyamat-lépésre vonatkozó munkafolyamat-műveleteket.
+-   <span data-ttu-id="fd380-369">Nézze meg a **Jóváhagyásaim** munkaterület.</span><span class="sxs-lookup"><span data-stu-id="fd380-369">See the **My approvals** workspace.</span></span>
+-   <span data-ttu-id="fd380-370">Jusson el a **Jóváhagyásaim** munkaterületre, és nézze meg a **Saját szállítói számlák** oldalt.</span><span class="sxs-lookup"><span data-stu-id="fd380-370">Drill into the **My approvals** workspace and see the **My vendor invoices** page.</span></span>
+-   <span data-ttu-id="fd380-371">Jusson el a **Saját szállítói számlák** oldalra, és nézze meg az Önhöz hozzárendelt számlák listáját.</span><span class="sxs-lookup"><span data-stu-id="fd380-371">Drill into the **My vendor invoices** page and see the list of invoices that are assigned to you.</span></span>
+-   <span data-ttu-id="fd380-372">Lépjen be az egyik számlába, és nézze meg a számla fejlécadatait és a sor részleteit.</span><span class="sxs-lookup"><span data-stu-id="fd380-372">Drill into one of the invoices, and see the invoice header details and line details.</span></span>
+-   <span data-ttu-id="fd380-373">A részletek oldalon nézze meg a mellékletekre mutató hivatkozást, e hivatkozás segítségével lépjen a mellékletek listájára, és nézze meg a mellékleteket.</span><span class="sxs-lookup"><span data-stu-id="fd380-373">On the details page, see a link to attachments, and use this link to navigate to the attachments list and view the attachments.</span></span>
+-   <span data-ttu-id="fd380-374">A részletek oldalon nézze meg a **Könyvelés megtekintése** oldalra mutató hivatkozást, e hivatkozás segítségével lépjen a felosztások oldalára, és nézze meg a felosztásokat.</span><span class="sxs-lookup"><span data-stu-id="fd380-374">On the details page, see a link to the **View accounting** page, and use this link to navigate to the distributions page and view the distributions.</span></span>
+-   <span data-ttu-id="fd380-375">A részletek oldalon kattintson a **Műveletek** menüre a lap alján, és hajtsa végre a munkafolyamat-lépésre vonatkozó munkafolyamat-műveleteket.</span><span class="sxs-lookup"><span data-stu-id="fd380-375">On the details page, click the **Actions** menu at the bottom, and perform workflow actions that are applicable to the workflow step.</span></span>
 
-## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Összetett számlajóváhagyási forgatókönyv tervezése a Gyár számára
+## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a><span data-ttu-id="fd380-376">Összetett számlajóváhagyási forgatókönyv tervezése a Gyár számára</span><span class="sxs-lookup"><span data-stu-id="fd380-376">Designing a complex invoice approval scenario for Fabrikam</span></span>
 <table>
 <colgroup>
 <col width="50%" />
@@ -428,67 +428,67 @@ A mobilkészüléken nyissa meg az alkalmazást, és csatlakozzon saját Finance
 </colgroup>
 <thead>
 <tr class="header">
-<th>Változatattribútum</th>
-<th>Válasz</th>
+<th><span data-ttu-id="fd380-377">Változatattribútum</span><span class="sxs-lookup"><span data-stu-id="fd380-377">Scenario attribute</span></span></th>
+<th><span data-ttu-id="fd380-378">Válasz</span><span class="sxs-lookup"><span data-stu-id="fd380-378">Answer</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A számlafejléc mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</td>
+<td><span data-ttu-id="fd380-379">A számlafejléc mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</span><span class="sxs-lookup"><span data-stu-id="fd380-379">What fields from the invoice header will the user want to see in the mobile experience, and in what order?</span></span></td>
 <td><ol>
-<li>Szállító neve</li>
-<li>Számlaösszeg</li>
-<li>Számlafogadó</li>
-<li>Számla száma</li>
-<li>Számla dátuma</li>
-<li>Számla leírása</li>
-<li>Esedékes</li>
-<li>Számla pénzneme</li>
+<li><span data-ttu-id="fd380-380">Szállító neve</span><span class="sxs-lookup"><span data-stu-id="fd380-380">Vendor name</span></span></li>
+<li><span data-ttu-id="fd380-381">Számlaösszeg</span><span class="sxs-lookup"><span data-stu-id="fd380-381">Invoice amount</span></span></li>
+<li><span data-ttu-id="fd380-382">Számlafogadó</span><span class="sxs-lookup"><span data-stu-id="fd380-382">Invoice account</span></span></li>
+<li><span data-ttu-id="fd380-383">Számla száma</span><span class="sxs-lookup"><span data-stu-id="fd380-383">Invoice number</span></span></li>
+<li><span data-ttu-id="fd380-384">Számla dátuma</span><span class="sxs-lookup"><span data-stu-id="fd380-384">Invoice date</span></span></li>
+<li><span data-ttu-id="fd380-385">Számla leírása</span><span class="sxs-lookup"><span data-stu-id="fd380-385">Invoice description</span></span></li>
+<li><span data-ttu-id="fd380-386">Esedékes</span><span class="sxs-lookup"><span data-stu-id="fd380-386">Due date</span></span></li>
+<li><span data-ttu-id="fd380-387">Számla pénzneme</span><span class="sxs-lookup"><span data-stu-id="fd380-387">Invoice currency</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>A számlasorok mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</td>
+<td><span data-ttu-id="fd380-388">A számlasorok mely mezőit szeretné a felhasználó látni a mobil felületen, és milyen sorrendben?</span><span class="sxs-lookup"><span data-stu-id="fd380-388">What fields from the invoice lines will the user want to see in the mobile experience, and in what order?</span></span></td>
 <td><ol>
-<li>Beszerzési kategória</li>
-<li>Mennyiség</li>
-<li>Egységár</li>
-<li>Sor nettó összege</li>
-<li>1099-es összeg</li>
+<li><span data-ttu-id="fd380-389">Beszerzési kategória</span><span class="sxs-lookup"><span data-stu-id="fd380-389">Procurement category</span></span></li>
+<li><span data-ttu-id="fd380-390">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="fd380-390">Quantity</span></span></li>
+<li><span data-ttu-id="fd380-391">Egységár</span><span class="sxs-lookup"><span data-stu-id="fd380-391">Unit price</span></span></li>
+<li><span data-ttu-id="fd380-392">Sor nettó összege</span><span class="sxs-lookup"><span data-stu-id="fd380-392">Line net amount</span></span></li>
+<li><span data-ttu-id="fd380-393">1099-es összeg</span><span class="sxs-lookup"><span data-stu-id="fd380-393">1099 amount</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Hány számlasor van a számlán? Itt alkalmazza a 80-20-as szabályt, és optimalizáljon 80%-ra.</td>
-<td>5</td>
+<td><span data-ttu-id="fd380-394">Hány számlasor van a számlán?</span><span class="sxs-lookup"><span data-stu-id="fd380-394">How many invoice lines are there in an invoice?</span></span> <span data-ttu-id="fd380-395">Itt alkalmazza a 80-20-as szabályt, és optimalizáljon 80%-ra.</span><span class="sxs-lookup"><span data-stu-id="fd380-395">Apply the 80-20 rule here, and optimize for the 80 percent.</span></span></td>
+<td><span data-ttu-id="fd380-396">5</span><span class="sxs-lookup"><span data-stu-id="fd380-396">5</span></span></td>
 </tr>
 <tr class="even">
-<td>A felhasználók akarnak könyvelési felosztásokat (számlakódolást) látni a mobileszközön ellenőrzések során?</td>
-<td>Igen</td>
+<td><span data-ttu-id="fd380-397">A felhasználók akarnak könyvelési felosztásokat (számlakódolást) látni a mobileszközön ellenőrzések során?</span><span class="sxs-lookup"><span data-stu-id="fd380-397">Will users want to see accounting distributions (invoice coding) on the mobile device during reviews?</span></span></td>
+<td><span data-ttu-id="fd380-398">Igen</span><span class="sxs-lookup"><span data-stu-id="fd380-398">Yes</span></span></td>
 </tr>
 <tr class="odd">
-<td>Hány könyvelési felosztás (kiterjesztett ár, áfa, költségek stb.) van egy-egy számlasornál? Ismételten alkalmazza a 80-20-as szabályt.</td>
-<td>Kiterjesztett ár: 2 áfa: 2 költség: 2</td>
+<td><span data-ttu-id="fd380-399">Hány könyvelési felosztás (kiterjesztett ár, áfa, költségek stb.) van egy-egy számlasornál?</span><span class="sxs-lookup"><span data-stu-id="fd380-399">How many accounting distributions (extended price, sales tax, charges, and so on) are there for an invoice line?</span></span> <span data-ttu-id="fd380-400">Ismételten alkalmazza a 80-20-as szabályt.</span><span class="sxs-lookup"><span data-stu-id="fd380-400">Again, apply the 80-20 rule.</span></span></td>
+<td><span data-ttu-id="fd380-401">Kiterjesztett ár: 2 áfa: 2 költség: 2</span><span class="sxs-lookup"><span data-stu-id="fd380-401">Extended price: 2 Sales tax: 2 Charges: 2</span></span></td>
 </tr>
 <tr class="even">
-<td>A számlák szintén rendelkeznek könyvelési felosztásokkal a számla fejlécében? Ha igen, e könyvelési felosztásoknak rendelkezésre kell állniuk a készüléken?</td>
-<td>Nincs használatban</td>
+<td><span data-ttu-id="fd380-402">A számlák szintén rendelkeznek könyvelési felosztásokkal a számla fejlécében?</span><span class="sxs-lookup"><span data-stu-id="fd380-402">Do the invoices also have accounting distributions on the invoice header?</span></span> <span data-ttu-id="fd380-403">Ha igen, e könyvelési felosztásoknak rendelkezésre kell állniuk a készüléken?</span><span class="sxs-lookup"><span data-stu-id="fd380-403">If so, should these accounting distributions be available on the device?</span></span></td>
+<td><span data-ttu-id="fd380-404">Nincs használatban</span><span class="sxs-lookup"><span data-stu-id="fd380-404">Not used</span></span></td>
 </tr>
 <tr class="odd">
-<td>A felhasználók látni szeretnék a számlához tartozó mellékleteket az eszközön?</td>
-<td>Igen</td>
+<td><span data-ttu-id="fd380-405">A felhasználók látni szeretnék a számlához tartozó mellékleteket az eszközön?</span><span class="sxs-lookup"><span data-stu-id="fd380-405">Will users want to see attachments for the invoice on the device?</span></span></td>
+<td><span data-ttu-id="fd380-406">Igen</span><span class="sxs-lookup"><span data-stu-id="fd380-406">Yes</span></span></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="next-steps"></a>További lépések
+### <a name="next-steps"></a><span data-ttu-id="fd380-407">További lépések</span><span class="sxs-lookup"><span data-stu-id="fd380-407">Next steps</span></span>
 
-A következő változatok elvégezhetők az 1. forgatókönyvhöz a 2. forgatókönyv követelményei alapján. Ez a szakasz a mobilalkalmazás felhasználói élményének fokozására használható.
+<span data-ttu-id="fd380-408">A következő változatok elvégezhetők az 1. forgatókönyvhöz a 2. forgatókönyv követelményei alapján.</span><span class="sxs-lookup"><span data-stu-id="fd380-408">The following variations can be done for scenario 1, based on the requirements for scenario 2.</span></span> <span data-ttu-id="fd380-409">Ez a szakasz a mobilalkalmazás felhasználói élményének fokozására használható.</span><span class="sxs-lookup"><span data-stu-id="fd380-409">You can use this section to improve your mobile app experience.</span></span>
 
-1.  Mivel a 2. forgatókönyvben több számlasor szükséges, a terv következő módosításai segítenek a mobileszközön a felhasználói élmény optimalizálásában:
-    1.  Számlasorok a részletek oldalon történő megjelenítése helyett (mint az 1. forgatókönyvben), a felhasználók itt dönthetnek úgy, hogy a sorokat külön mobiloldalon tekintik meg.
-    2.  Mivel ebben a forgatókönyvben több számlasor szükséges, ha a **VendMobileInvoiceAllDistributionTree** oldalt használjuk a felosztási oldal megtervezéséhez a mobilon (mint az 1. forgatókönyvnél), a felhasználó számára a sorok és a felosztások megfeleltetése nehéz feladat lehet. Ezért használja a **VendMobileInvoiceLineDistributionTree** oldalt a felosztások oldalának megtervezéshez.
-    3.  Ideális esetben ennél a forgatókönyvnél a felosztások egy számlasor kontextusában jelennek meg. Ezért győződjön meg arról, hogy a felhasználó eljuthat a kívánt sorig a felosztások oldal megtekintéséhez. Hivatkozzon az oldalra az útvonal létrehozásához, mint ahogyan a fejlécnél és a részletező oldalnál tette az 1. forgatókönyvben.
+1.  <span data-ttu-id="fd380-410">Mivel a 2. forgatókönyvben több számlasor szükséges, a terv következő módosításai segítenek a mobileszközön a felhasználói élmény optimalizálásában:</span><span class="sxs-lookup"><span data-stu-id="fd380-410">Because more invoice lines are expected in scenario 2, the following changes to the design will help optimize the user experience on the mobile device:</span></span>
+    1.  <span data-ttu-id="fd380-411">Számlasorok a részletek oldalon történő megjelenítése helyett (mint az 1. forgatókönyvben), a felhasználók itt dönthetnek úgy, hogy a sorokat külön mobiloldalon tekintik meg.</span><span class="sxs-lookup"><span data-stu-id="fd380-411">Instead of viewing invoice lines on the details page (as in scenario 1), users can choose to view lines on a separate mobile page.</span></span>
+    2.  <span data-ttu-id="fd380-412">Mivel ebben a forgatókönyvben több számlasor szükséges, ha a **VendMobileInvoiceAllDistributionTree** oldalt használjuk a felosztási oldal megtervezéséhez a mobilon (mint az 1. forgatókönyvnél), a felhasználó számára a sorok és a felosztások megfeleltetése nehéz feladat lehet.</span><span class="sxs-lookup"><span data-stu-id="fd380-412">Because more than one invoice line is expected in this scenario, if the **VendMobileInvoiceAllDistributionTree** page is used to design the distributions page for mobile (as in scenario 1), it might be confusing for the user to correlate lines to distributions.</span></span> <span data-ttu-id="fd380-413">Ezért használja a **VendMobileInvoiceLineDistributionTree** oldalt a felosztások oldalának megtervezéshez.</span><span class="sxs-lookup"><span data-stu-id="fd380-413">Therefore, use the **VendMobileInvoiceLineDistributionTree** page to design the distributions page.</span></span>
+    3.  <span data-ttu-id="fd380-414">Ideális esetben ennél a forgatókönyvnél a felosztások egy számlasor kontextusában jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="fd380-414">Ideally, the distributions should be shown in the context of an invoice line in this scenario.</span></span> <span data-ttu-id="fd380-415">Ezért győződjön meg arról, hogy a felhasználó eljuthat a kívánt sorig a felosztások oldal megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="fd380-415">Therefore, make sure that the user can drill into a line to see the distributions page.</span></span> <span data-ttu-id="fd380-416">Hivatkozzon az oldalra az útvonal létrehozásához, mint ahogyan a fejlécnél és a részletező oldalnál tette az 1. forgatókönyvben.</span><span class="sxs-lookup"><span data-stu-id="fd380-416">Use the page link capability to establish the drill-through, just as you did for the header and details pages in scenario 1.</span></span>
 
-2.  Mivel a 2. forgatókönyvben egynél több összegtípus várható a felosztások között (áfa stb.), hasznos lesz megjeleníteni az összeg leírását. (Ezt az információt az 1. esetben kihagytuk.)
+2.  <span data-ttu-id="fd380-417">Mivel a 2. forgatókönyvben egynél több összegtípus várható a felosztások között (áfa stb.), hasznos lesz megjeleníteni az összeg leírását.</span><span class="sxs-lookup"><span data-stu-id="fd380-417">Because more than one amount type is expected on the distributions in scenario 2 (sales tax, charges, and so on), it will be useful to show the description of the amount type.</span></span> <span data-ttu-id="fd380-418">(Ezt az információt az 1. esetben kihagytuk.)</span><span class="sxs-lookup"><span data-stu-id="fd380-418">(We omitted this information in scenario 1.)</span></span>
 
 
 

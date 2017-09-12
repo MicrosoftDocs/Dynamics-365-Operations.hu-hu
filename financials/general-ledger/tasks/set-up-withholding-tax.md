@@ -16,38 +16,38 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: fa540720cdf1689393093e52ee37fdd74ff6c8e1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: dc4c0745235052cb4145bc7083fef1a88c8bb5c9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-withholding-tax"></a>Adóelőleg beállítása
+# <a name="set-up-withholding-tax"></a><span data-ttu-id="f3aff-103">Adóelőleg beállítása</span><span class="sxs-lookup"><span data-stu-id="f3aff-103">Set up withholding tax</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Az adóelőleg a szállítókra kirótt olyan adó, amely nem hoz létre áfatranzakciókat. A szállítói kifizetésekhez számított adóelőleg kötelezettség. Emiatt az adóelőlegeket csak mérlegszámlákra vagy forrásszámlákra lehet érvényesen feladni. Ez a feladatútmutató bemutatja, hogyan lehet adóelőleget beállítani.
+<span data-ttu-id="f3aff-104">Az adóelőleg a szállítókra kirótt olyan adó, amely nem hoz létre áfatranzakciókat.</span><span class="sxs-lookup"><span data-stu-id="f3aff-104">Withholding tax is a tax on vendors that does not create sales tax transactions.</span></span> <span data-ttu-id="f3aff-105">A szállítói kifizetésekhez számított adóelőleg kötelezettség.</span><span class="sxs-lookup"><span data-stu-id="f3aff-105">Withholding tax that is calculated on vendor payments is a liability.</span></span> <span data-ttu-id="f3aff-106">Emiatt az adóelőlegeket csak mérlegszámlákra vagy forrásszámlákra lehet érvényesen feladni.</span><span class="sxs-lookup"><span data-stu-id="f3aff-106">Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax.</span></span> <span data-ttu-id="f3aff-107">Ez a feladatútmutató bemutatja, hogyan lehet adóelőleget beállítani.</span><span class="sxs-lookup"><span data-stu-id="f3aff-107">This task guide demonstrates how to set up withholding tax.</span></span>
 
-1. Ugorjon az Adó > Közvetett adók > Adóelőleg > Adóelőlegkódok elemre.
-2. Kattintson az Új lehetőségre.
-3. Az Adóelőlegkód kód mezőbe írjon be egy értéket.
-4. Az Adóelőleg-név mezőben adja meg az adóelőlegkód nevét.
-5. A Fő számla mezőben válassza ki a fő számlát az adóelőleg-kötelezettség feladására.
-6. Kattintson a Mentés gombra.
-7. Kattintson az Értékekre.
-8. A listában jelölje meg a kiválasztott sort.
-9. Az Érték mezőben adja meg az adóelőleg számításához használt százalékos értéket.
-10. Kattintson a Mentés gombra.
-11. Zárja be a lapot.
-12. Kattintson a Mentés gombra.
-13. Zárja be a lapot.
-14. Ugorjon az Adó > Közvetett adók > Adóelőleg > Adóelőlegcsoportok elemre.
-15. Kattintson az Új lehetőségre.
-16. Az Adóelőleg-csoport mezőben adja meg az adóelőlegcsoport azonosítóját.
-17. A Leírás mezőben adja meg az adóelőlegcsoport nevét.
-18. A listában jelölje meg a kiválasztott sort.
-19. Az Adóelőlegkód mezőben válassza ki az adóelőlegkódot.
-20. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-21. Kattintson a Mentés gombra.
+1. <span data-ttu-id="f3aff-108">Ugorjon az Adó > Közvetett adók > Adóelőleg > Adóelőlegkódok elemre.</span><span class="sxs-lookup"><span data-stu-id="f3aff-108">Go to Tax > Indirect taxes > Withholding tax > Withholding tax codes.</span></span>
+2. <span data-ttu-id="f3aff-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f3aff-109">Click New.</span></span>
+3. <span data-ttu-id="f3aff-110">Az Adóelőlegkód kód mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f3aff-110">In the Withholding tax code field, type a value.</span></span>
+4. <span data-ttu-id="f3aff-111">Az Adóelőleg-név mezőben adja meg az adóelőlegkód nevét.</span><span class="sxs-lookup"><span data-stu-id="f3aff-111">In the Withholding tax name field, enter the name of the withholding tax code.</span></span>
+5. <span data-ttu-id="f3aff-112">A Fő számla mezőben válassza ki a fő számlát az adóelőleg-kötelezettség feladására.</span><span class="sxs-lookup"><span data-stu-id="f3aff-112">In the Main account field, select the main account for posting the withholding tax liability.</span></span>
+6. <span data-ttu-id="f3aff-113">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="f3aff-113">Click Save.</span></span>
+7. <span data-ttu-id="f3aff-114">Kattintson az Értékekre.</span><span class="sxs-lookup"><span data-stu-id="f3aff-114">Click Values.</span></span>
+8. <span data-ttu-id="f3aff-115">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="f3aff-115">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="f3aff-116">Az Érték mezőben adja meg az adóelőleg számításához használt százalékos értéket.</span><span class="sxs-lookup"><span data-stu-id="f3aff-116">In the Value field, enter a percentage used for the calculation of the withholding tax.</span></span>
+10. <span data-ttu-id="f3aff-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="f3aff-117">Click Save.</span></span>
+11. <span data-ttu-id="f3aff-118">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="f3aff-118">Close the page.</span></span>
+12. <span data-ttu-id="f3aff-119">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="f3aff-119">Click Save.</span></span>
+13. <span data-ttu-id="f3aff-120">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="f3aff-120">Close the page.</span></span>
+14. <span data-ttu-id="f3aff-121">Ugorjon az Adó > Közvetett adók > Adóelőleg > Adóelőlegcsoportok elemre.</span><span class="sxs-lookup"><span data-stu-id="f3aff-121">Go to Tax > Indirect taxes > Withholding tax > Withholding tax groups.</span></span>
+15. <span data-ttu-id="f3aff-122">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f3aff-122">Click New.</span></span>
+16. <span data-ttu-id="f3aff-123">Az Adóelőleg-csoport mezőben adja meg az adóelőlegcsoport azonosítóját.</span><span class="sxs-lookup"><span data-stu-id="f3aff-123">In the Withholding tax group field, enter the identifier of the withholding tax group.</span></span>
+17. <span data-ttu-id="f3aff-124">A Leírás mezőben adja meg az adóelőlegcsoport nevét.</span><span class="sxs-lookup"><span data-stu-id="f3aff-124">In the Description field, enter the name of the withholding tax group.</span></span>
+18. <span data-ttu-id="f3aff-125">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="f3aff-125">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="f3aff-126">Az Adóelőlegkód mezőben válassza ki az adóelőlegkódot.</span><span class="sxs-lookup"><span data-stu-id="f3aff-126">In the Withholding tax code field, select the withholding tax code.</span></span>
+20. <span data-ttu-id="f3aff-127">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="f3aff-127">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="f3aff-128">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="f3aff-128">Click Save.</span></span>
 
 

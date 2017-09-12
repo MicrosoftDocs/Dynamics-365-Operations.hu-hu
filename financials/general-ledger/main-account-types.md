@@ -19,27 +19,27 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: eb8ad0717ce0d9950e479d8e213a82f8e296da1d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2ef6f46b85c9f7784a15f416e1a2a1b009dfa02a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="main-account-types"></a>Főszámlatípusok
+# <a name="main-account-types"></a><span data-ttu-id="325ef-103">Főszámlatípusok</span><span class="sxs-lookup"><span data-stu-id="325ef-103">Main account types</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A fő számlatípus meghatározza a fő számla használatának módját a számlatükörben.
+<span data-ttu-id="325ef-104">A fő számlatípus meghatározza a fő számla használatának módját a számlatükörben.</span><span class="sxs-lookup"><span data-stu-id="325ef-104">The main account types determine how a main account is used in the chart of accounts.</span></span>
 
-Amikor egy fő számlát hoz létre a Fő számlák - számlatükör lapon, választania kell egy típust.
--   Eredmény, Bevétel és Kiadás – ezek a feladási számlaként használt fő számlák. Az eredményszámlákon történik a bevételek és a kiadások rögzítése. Az összes eredmény-, bevétel- és költségszámla összege határozza meg az év végi eredményt. A bevételi és a költség fő számlák funkciója megegyezik az eredményszámláéval.
--   Mérleg, eszköz, kötelezettség és saját tőke – ezek a fő számlák használhatóak tranzakciószámlaként, ezekben lehet rögzíteni a jogi személy által birtokolt vagy a tartozásában levő összegeket.
--   Összesen – ezen fő számlákkal lehet számlaintervallumokat hozzáadni. Az Összesen főszámlatípust a Számlaintervallum oldalon lehet konfigurálni, amely megjeleníti az összes számlaintervallum csoportegyenlegeinek összegét. A Számlaintervallum oldal eléréséhez kattintson az Általános lapon az Összesen elemre, miután egy Összesen számlatípust választott.
--   Jelentések – ezek a fő számlák csak a Brazil rendszerben használt pénzügyi kimutatási jelentésekre vonatkoznak.
+<span data-ttu-id="325ef-105">Amikor egy fő számlát hoz létre a Fő számlák - számlatükör lapon, választania kell egy típust.</span><span class="sxs-lookup"><span data-stu-id="325ef-105">You must select a main account type when you create a main account in the Main accounts - chart of accounts page.</span></span>
+-   <span data-ttu-id="325ef-106">Eredmény, Bevétel és Kiadás – ezek a feladási számlaként használt fő számlák.</span><span class="sxs-lookup"><span data-stu-id="325ef-106">Profit and loss, Revenue, and Expense – These main accounts are used as posting accounts.</span></span> <span data-ttu-id="325ef-107">Az eredményszámlákon történik a bevételek és a kiadások rögzítése.</span><span class="sxs-lookup"><span data-stu-id="325ef-107">Profit and loss accounts are used to record revenue and expenses.</span></span> <span data-ttu-id="325ef-108">Az összes eredmény-, bevétel- és költségszámla összege határozza meg az év végi eredményt.</span><span class="sxs-lookup"><span data-stu-id="325ef-108">The sum of all profit and loss, revenue, and expense accounts determines the year-end results.</span></span> <span data-ttu-id="325ef-109">A bevételi és a költség fő számlák funkciója megegyezik az eredményszámláéval.</span><span class="sxs-lookup"><span data-stu-id="325ef-109">Revenue and Expense main accounts have the same function as Profit and loss main accounts.</span></span>
+-   <span data-ttu-id="325ef-110">Mérleg, eszköz, kötelezettség és saját tőke – ezek a fő számlák használhatóak tranzakciószámlaként, ezekben lehet rögzíteni a jogi személy által birtokolt vagy a tartozásában levő összegeket.</span><span class="sxs-lookup"><span data-stu-id="325ef-110">Balance sheet, Asset, Liability, and Equity – These main accounts are used as transaction accounts to record the amounts that a legal entity owns or owes.</span></span>
+-   <span data-ttu-id="325ef-111">Összesen – ezen fő számlákkal lehet számlaintervallumokat hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="325ef-111">Total – These main accounts are used to add account intervals.</span></span> <span data-ttu-id="325ef-112">Az Összesen főszámlatípust a Számlaintervallum oldalon lehet konfigurálni, amely megjeleníti az összes számlaintervallum csoportegyenlegeinek összegét.</span><span class="sxs-lookup"><span data-stu-id="325ef-112">Configure the Total main account type by using the Account interval page, which displays the total of the group balances for all account intervals.</span></span> <span data-ttu-id="325ef-113">A Számlaintervallum oldal eléréséhez kattintson az Általános lapon az Összesen elemre, miután egy Összesen számlatípust választott.</span><span class="sxs-lookup"><span data-stu-id="325ef-113">Access the Account interval page by click Totals on the General tab once you have selected a Total account type.</span></span>
+-   <span data-ttu-id="325ef-114">Jelentések – ezek a fő számlák csak a Brazil rendszerben használt pénzügyi kimutatási jelentésekre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="325ef-114">Reporting – These main accounts are used for financial statement reporting for Brazil only.</span></span>
 
-További tudnivalókért lásd: [Fő számla kategóriáinak beállítása](tasks/set-up-main-account-categories.md).
+<span data-ttu-id="325ef-115">További tudnivalókért lásd: [Fő számla kategóriáinak beállítása](tasks/set-up-main-account-categories.md).</span><span class="sxs-lookup"><span data-stu-id="325ef-115">For more information, see [Set up main account categories](tasks/set-up-main-account-categories.md).</span></span>
 
 
 

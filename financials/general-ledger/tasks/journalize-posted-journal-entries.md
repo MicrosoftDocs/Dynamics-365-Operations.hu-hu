@@ -16,29 +16,29 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 450bb7fdcc866f45c2fd3357a5ee25e6c6f929c1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 490e9a4beda43f6e32b87792b11153c3e8e322d6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="journalize-posted-journal-entries"></a>Feladott naplóbejegyzések naplózása
+# <a name="journalize-posted-journal-entries"></a><span data-ttu-id="d247f-103">Feladott naplóbejegyzések naplózása</span><span class="sxs-lookup"><span data-stu-id="d247f-103">Journalize posted journal entries</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések. Ez az eljárás az USMF bemutatócéget használja.
+<span data-ttu-id="d247f-104">Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések.</span><span class="sxs-lookup"><span data-stu-id="d247f-104">This procedure shows how to journalize posted journal entries.</span></span> <span data-ttu-id="d247f-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="d247f-105">This procedure uses the USMF demo data company.</span></span>
 
-1. Ellenőrizze a naplózási beállításokat a Főkönyv > Főkönyv beállításai > Főkönyvi paraméterek menüpontban.
-2. A Bővített főkönyvnapló mező értéke lehet Igen vagy Nem. Ha Igen, akkor a kapott jelentés eltérő lesz.
-3. Válassza ki, hogy az időszak lezárható-e, ha a naplózási folyamatot még nem futtatták le.
-    * Ha a megadott érték Igen, az időszakot nem lehet lezárni mindaddig, amíg az adott időszakra a naplózási folyamat be nem fejeződött.  
-4. Zárja be a lapot.
-5. Ugorjon a Főkönyv > Időszaki feladatok > Naplózás pontra.
-6. Kattintson a Szűrő parancsra.
-7. Jelölje ki a sort a megadni kívánt szűrőfeltételekkel.
-8. A Feltételek mezőben adja meg vagy válassza ki a szűrőfeltételeket.
-9. Kattintson az OK gombra a szűrőoldal bezárásához.
-10. Kattintson az OK gombra a naplózási folyamat elindításához.
-    * A folyamat befejezése után jelentés készül.  
+1. <span data-ttu-id="d247f-106">Ellenőrizze a naplózási beállításokat a Főkönyv > Főkönyv beállításai > Főkönyvi paraméterek menüpontban.</span><span class="sxs-lookup"><span data-stu-id="d247f-106">Validate the settings for journalizing under General ledger > Ledger setup > General ledger parameters.</span></span>
+2. <span data-ttu-id="d247f-107">A Bővített főkönyvnapló mező értéke lehet Igen vagy Nem.</span><span class="sxs-lookup"><span data-stu-id="d247f-107">The Extended ledger journal field can be set to Yes or No.</span></span> <span data-ttu-id="d247f-108">Ha Igen, akkor a kapott jelentés eltérő lesz.</span><span class="sxs-lookup"><span data-stu-id="d247f-108">If Yes, the report output will be different.</span></span>
+3. <span data-ttu-id="d247f-109">Válassza ki, hogy az időszak lezárható-e, ha a naplózási folyamatot még nem futtatták le.</span><span class="sxs-lookup"><span data-stu-id="d247f-109">Select whether the period can be closed if the journalizing process hasn't been run.</span></span>
+    * <span data-ttu-id="d247f-110">Ha a megadott érték Igen, az időszakot nem lehet lezárni mindaddig, amíg az adott időszakra a naplózási folyamat be nem fejeződött.</span><span class="sxs-lookup"><span data-stu-id="d247f-110">If this option is set to Yes, the period cannot be closed until the journalizing process has been completed for that period.</span></span>  
+4. <span data-ttu-id="d247f-111">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="d247f-111">Close the page.</span></span>
+5. <span data-ttu-id="d247f-112">Ugorjon a Főkönyv > Időszaki feladatok > Naplózás pontra.</span><span class="sxs-lookup"><span data-stu-id="d247f-112">Go to General ledger > Periodic tasks > Journalizing.</span></span>
+6. <span data-ttu-id="d247f-113">Kattintson a Szűrő parancsra.</span><span class="sxs-lookup"><span data-stu-id="d247f-113">Click Filter.</span></span>
+7. <span data-ttu-id="d247f-114">Jelölje ki a sort a megadni kívánt szűrőfeltételekkel.</span><span class="sxs-lookup"><span data-stu-id="d247f-114">Highlight the row with the filter criteria that you want to define.</span></span>
+8. <span data-ttu-id="d247f-115">A Feltételek mezőben adja meg vagy válassza ki a szűrőfeltételeket.</span><span class="sxs-lookup"><span data-stu-id="d247f-115">In the Criteria field, enter or select the filter criteria..</span></span>
+9. <span data-ttu-id="d247f-116">Kattintson az OK gombra a szűrőoldal bezárásához.</span><span class="sxs-lookup"><span data-stu-id="d247f-116">Click OK to close the filter page.</span></span>
+10. <span data-ttu-id="d247f-117">Kattintson az OK gombra a naplózási folyamat elindításához.</span><span class="sxs-lookup"><span data-stu-id="d247f-117">Click OK to start the journalizing process.</span></span>
+    * <span data-ttu-id="d247f-118">A folyamat befejezése után jelentés készül.</span><span class="sxs-lookup"><span data-stu-id="d247f-118">A report will be generated after the process is complete.</span></span>  
 
 

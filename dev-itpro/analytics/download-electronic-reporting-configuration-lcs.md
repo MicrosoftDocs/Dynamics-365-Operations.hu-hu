@@ -16,53 +16,53 @@ ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: be77d76194e9d38589548113cc650599d5af4323
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: a4411b25285128c849a715fdc7a2f5fe51580a3b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből
+# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a><span data-ttu-id="559b6-103">Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből</span><span class="sxs-lookup"><span data-stu-id="559b6-103">Download Electronic reporting configurations from Lifecycle Services</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát mutatja be.
+<span data-ttu-id="559b6-104">Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát mutatja be.</span><span class="sxs-lookup"><span data-stu-id="559b6-104">This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-Ez az oktatóanyag bemutatja az elektronikus jelentési (ER) konfiguráció legújabb verziójának a Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát.
+<span data-ttu-id="559b6-105">Ez az oktatóanyag bemutatja az elektronikus jelentési (ER) konfiguráció legújabb verziójának a Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát.</span><span class="sxs-lookup"><span data-stu-id="559b6-105">This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-1.  Bejelentkezés a Finance and Operations rendszerbe az alábbi szerepkörök egyikének használatával:
-    -   Elektronikus jelentések fejlesztője
-    -   Elektronikus jelentések funkcióival foglalkozó konzulens
-    -   Rendszergazda
+1.  <span data-ttu-id="559b6-106">Bejelentkezés a Finance and Operations rendszerbe az alábbi szerepkörök egyikének használatával:</span><span class="sxs-lookup"><span data-stu-id="559b6-106">Sign in to Finance and Operations by using one of the following roles:</span></span>
+    -   <span data-ttu-id="559b6-107">Elektronikus jelentések fejlesztője</span><span class="sxs-lookup"><span data-stu-id="559b6-107">Electronic reporting developer</span></span>
+    -   <span data-ttu-id="559b6-108">Elektronikus jelentések funkcióival foglalkozó konzulens</span><span class="sxs-lookup"><span data-stu-id="559b6-108">Electronic reporting functional consultant</span></span>
+    -   <span data-ttu-id="559b6-109">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="559b6-109">System administrator</span></span>
 
-2.  Ugorjon a **Szervezeti adminisztráció** &gt; **Elektronikus jelentés** elemre.
-3.  Jelölje be a **Microsoft** lapot a **Konfigurációs szolgáltatók** részben.
-4.  Kattintson a **Tárházak** lehetőségre a **Microsoft** lapon. [![Az ER frissítése az MS LCS rendszerből - MS tárházak lista megnyitása](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
-5.  A **Konfigurációs tárházak** lapon lévő rácson jelölje ki az **LCS** meglévő tárházát. Ha a tárház nem jelenik meg a rácson, tegye a következőket:
-    1.  Kattintson a **Hozzáadás** lehetőségre egy új tárház hozzáadásához.
-    2.  Válassza ki az **LCS** lehetőséget a tárház típusaként.
-    3.  Kattintson a **Tárház létrehozása** lehetőségre.
-    4. Ha a rendszer rákérdez, kövesse engedélyezési útmutatásokat.
-    5.  Írja be a tárház nevét és leírását.
-    6.  Kattintson az **OK** lehetőségre az új tárház bejegyzés megerősítéséhez.
-    7.  A rácsban jelölje be az **LCS** típus új tárházát.
+2.  <span data-ttu-id="559b6-110">Ugorjon a **Szervezeti adminisztráció** &gt; **Elektronikus jelentés** elemre.</span><span class="sxs-lookup"><span data-stu-id="559b6-110">Go to **Organization administration** &gt; **Electronic reporting**.</span></span>
+3.  <span data-ttu-id="559b6-111">Jelölje be a **Microsoft** lapot a **Konfigurációs szolgáltatók** részben.</span><span class="sxs-lookup"><span data-stu-id="559b6-111">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
+4.  <span data-ttu-id="559b6-112">Kattintson a **Tárházak** lehetőségre a **Microsoft** lapon.</span><span class="sxs-lookup"><span data-stu-id="559b6-112">On the **Microsoft** tile, click **Repositories**.</span></span> <span data-ttu-id="559b6-113">[![Az ER frissítése az MS LCS rendszerből - MS tárházak lista megnyitása](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span><span class="sxs-lookup"><span data-stu-id="559b6-113">[![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span></span>
+5.  <span data-ttu-id="559b6-114">A **Konfigurációs tárházak** lapon lévő rácson jelölje ki az **LCS** meglévő tárházát.</span><span class="sxs-lookup"><span data-stu-id="559b6-114">On the **Configuration repositories** page, in the grid, select the existing repository of the **LCS** type.</span></span> <span data-ttu-id="559b6-115">Ha a tárház nem jelenik meg a rácson, tegye a következőket:</span><span class="sxs-lookup"><span data-stu-id="559b6-115">If this repository doesn't appear in the grid, follow these steps:</span></span>
+    1.  <span data-ttu-id="559b6-116">Kattintson a **Hozzáadás** lehetőségre egy új tárház hozzáadásához.</span><span class="sxs-lookup"><span data-stu-id="559b6-116">Click **Add** to add a new repository.</span></span>
+    2.  <span data-ttu-id="559b6-117">Válassza ki az **LCS** lehetőséget a tárház típusaként.</span><span class="sxs-lookup"><span data-stu-id="559b6-117">Select **LCS** as the repository type.</span></span>
+    3.  <span data-ttu-id="559b6-118">Kattintson a **Tárház létrehozása** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="559b6-118">Click **Create repository**.</span></span>
+    4. <span data-ttu-id="559b6-119">Ha a rendszer rákérdez, kövesse engedélyezési útmutatásokat.</span><span class="sxs-lookup"><span data-stu-id="559b6-119">If prompted, follow the authorization instructions.</span></span>
+    5.  <span data-ttu-id="559b6-120">Írja be a tárház nevét és leírását.</span><span class="sxs-lookup"><span data-stu-id="559b6-120">Enter a name and description for the repository.</span></span>
+    6.  <span data-ttu-id="559b6-121">Kattintson az **OK** lehetőségre az új tárház bejegyzés megerősítéséhez.</span><span class="sxs-lookup"><span data-stu-id="559b6-121">Click **OK** to confirm the new repository entry.</span></span>
+    7.  <span data-ttu-id="559b6-122">A rácsban jelölje be az **LCS** típus új tárházát.</span><span class="sxs-lookup"><span data-stu-id="559b6-122">In the grid, select the new repository of the **LCS** type.</span></span>
 
-6.  Kattintson a **Megnyitás** lehetőségre a kijelölt tárház ER-konfigurációk listájának megtekintéséhez. [![Az ER frissítése az MS LCS rendszerből - LCS-tárház készítése](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
-7.  A bal oldali ablaktáblában jelölje ki a konfigurációkban jelölje ki a szükséges ER-konfigurációt.
-8.  A **Verziók** gyorslapon válassza ki a kijelölt ER-konfiguráció szükséges verzióját.
-9.  Kattintson az **Importálás** lehetőségre a kiválasztott verzió LCS rendszerből a jelenlegi Finance and Operations példányba történő letöltéséhez. **Megjegyzés:** Az **Importálás** gomb nem érhető el azon ER konfigurációs verziókhoz, amelyek már szerepelnek a Finance and Operations aktuális példányában. [![Az ER frissítése az MS LCS rendszerből - Konfiguráció letöltése](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+6.  <span data-ttu-id="559b6-123">Kattintson a **Megnyitás** lehetőségre a kijelölt tárház ER-konfigurációk listájának megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="559b6-123">Click **Open** to view the list of ER configurations for the selected repository.</span></span> <span data-ttu-id="559b6-124">[![Az ER frissítése az MS LCS rendszerből - LCS-tárház készítése](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span><span class="sxs-lookup"><span data-stu-id="559b6-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span></span>
+7.  <span data-ttu-id="559b6-125">A bal oldali ablaktáblában jelölje ki a konfigurációkban jelölje ki a szükséges ER-konfigurációt.</span><span class="sxs-lookup"><span data-stu-id="559b6-125">In the configurations tree in the left pane, select the ER configuration that you require.</span></span>
+8.  <span data-ttu-id="559b6-126">A **Verziók** gyorslapon válassza ki a kijelölt ER-konfiguráció szükséges verzióját.</span><span class="sxs-lookup"><span data-stu-id="559b6-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
+9.  <span data-ttu-id="559b6-127">Kattintson az **Importálás** lehetőségre a kiválasztott verzió LCS rendszerből a jelenlegi Finance and Operations példányba történő letöltéséhez.</span><span class="sxs-lookup"><span data-stu-id="559b6-127">Click **Import** to download the selected version from LCS to the current Finance and Operations instance.</span></span> <span data-ttu-id="559b6-128">**Megjegyzés:** Az **Importálás** gomb nem érhető el azon ER konfigurációs verziókhoz, amelyek már szerepelnek a Finance and Operations aktuális példányában.</span><span class="sxs-lookup"><span data-stu-id="559b6-128">**Note:** The **Import** button is unavailable for ER configuration versions that are already present in the current Finance and Operations instance.</span></span> <span data-ttu-id="559b6-129">[![Az ER frissítése az MS LCS rendszerből - Konfiguráció letöltése](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span><span class="sxs-lookup"><span data-stu-id="559b6-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span></span>
 
-**Megjegyzés:** Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos cikkek listáját.
+<span data-ttu-id="559b6-130">**Megjegyzés:** Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően.</span><span class="sxs-lookup"><span data-stu-id="559b6-130">**Note:** Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="559b6-131">Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap.</span><span class="sxs-lookup"><span data-stu-id="559b6-131">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="559b6-132">Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt.</span><span class="sxs-lookup"><span data-stu-id="559b6-132">You must resolve those issues before you can use the imported configuration version.</span></span> <span data-ttu-id="559b6-133">További információkért nézze meg a jelen témakörrel kapcsolatos cikkek listáját.</span><span class="sxs-lookup"><span data-stu-id="559b6-133">For more information, see the list of related articles for this topic.</span></span>
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="559b6-134">Lásd még</span><span class="sxs-lookup"><span data-stu-id="559b6-134">See also</span></span>
 --------
 
-[Elektronikus jelentések áttekintése](general-electronic-reporting.md)
+[<span data-ttu-id="559b6-135">Elektronikus jelentések áttekintése</span><span class="sxs-lookup"><span data-stu-id="559b6-135">Electronic reporting overview</span></span>](general-electronic-reporting.md)
 
 
 

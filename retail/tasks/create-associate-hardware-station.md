@@ -17,44 +17,44 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 2f85c124957d2f47355544442ad8085e8b3719a1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2705008908699bda9479eb54a4827c71f402b603
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-associate-a-hardware-station"></a>Hardverállomás létrehozása és hozzárendelése
+# <a name="create-and-associate-a-hardware-station"></a><span data-ttu-id="e8ef2-103">Hardverállomás létrehozása és hozzárendelése</span><span class="sxs-lookup"><span data-stu-id="e8ef2-103">Create and associate a hardware station</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás végigveszi, hogyan hozhat létre egy új hardverállomást. Egy új hardverprofillal új hardverállomásokat adhat hozzá egy előre definiált üzlethez (vagy üzleti csatornához). Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.
+<span data-ttu-id="e8ef2-104">Ez az eljárás végigveszi, hogyan hozhat létre egy új hardverállomást.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-104">This procedure walks through how to create a new hardware station.</span></span> <span data-ttu-id="e8ef2-105">Egy új hardverprofillal új hardverállomásokat adhat hozzá egy előre definiált üzlethez (vagy üzleti csatornához).</span><span class="sxs-lookup"><span data-stu-id="e8ef2-105">A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel).</span></span> <span data-ttu-id="e8ef2-106">Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-106">This procedure uses the USRT company in demo data.</span></span>
 
-1. Lépjen a Kereskedelmi alapok > Csatornák > .. > .. > .. > Hardverállomás profiljai lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A Hardverállomás-azonosító mezőbe írja be a következőt: „TestHWProfile”.
-4. Írjon be egy értéket a Név mezőbe.
-5. Írjon be egy számot a Portszám mezőbe.
-6. A Hardverprofil mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. A kívánt rekord megkeresése és kijelölése a listán
-8. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-9. A Csomag neve mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-10. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * Ez a standard csomag, amely új környezettel érkezik. A verziószám változhat.  
-11. Kattintson a Mentés gombra.
-12. Zárja be a lapot.
-13. Ugorjon a következő oldalra: Kiskereskedelem és kereskedelem > Csatornák > Minden kiskereskedelmi üzlet.
-14. Jelölje ki a 17. sort a listában.
-    * Ha az USRT bemutatócéget használja, ekkor ez a Houston üzlet.  
-15. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-16. Váltson a Hardverállomások szakasz kibontására.
-17. Kattintson a Hozzáadás gombra.
-18. A listában jelölje meg a kiválasztott sort.
-19. A Profilazonosító mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-20. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Ez az új hardverállomás-profil, amit az előző lépésekben hozott létre.  
-21. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-22. Írjon be egy értéket az Állomás neve mezőbe.
-23. Írjon be egy értéket az Elektronikus átutalási terminál azonosítója mezőbe.
-24. Kattintson a Mentés gombra.
+1. <span data-ttu-id="e8ef2-107">Lépjen a Kereskedelmi alapok > Csatornák > ..</span><span class="sxs-lookup"><span data-stu-id="e8ef2-107">Go to Commerce essentials > Channels > ..</span></span> <span data-ttu-id="e8ef2-108">> ..</span><span class="sxs-lookup"><span data-stu-id="e8ef2-108">> ..</span></span> <span data-ttu-id="e8ef2-109">> ..</span><span class="sxs-lookup"><span data-stu-id="e8ef2-109">> ..</span></span> <span data-ttu-id="e8ef2-110">> Hardverállomás profiljai lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-110">> Hardware station profiles.</span></span>
+2. <span data-ttu-id="e8ef2-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-111">Click New.</span></span>
+3. <span data-ttu-id="e8ef2-112">A Hardverállomás-azonosító mezőbe írja be a következőt: „TestHWProfile”.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-112">In the Hardware station ID field, type 'TestHWProfile'.</span></span>
+4. <span data-ttu-id="e8ef2-113">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="e8ef2-114">Írjon be egy számot a Portszám mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-114">In the Port number field, enter a number.</span></span>
+6. <span data-ttu-id="e8ef2-115">A Hardverprofil mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-115">In the Hardware profile field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="e8ef2-116">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="e8ef2-116">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="e8ef2-117">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="e8ef2-118">A Csomag neve mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-118">In the Package name field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="e8ef2-119">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-119">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="e8ef2-120">Ez a standard csomag, amely új környezettel érkezik.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-120">This is the standard package that comes with a new environment.</span></span> <span data-ttu-id="e8ef2-121">A verziószám változhat.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-121">The version number may vary.</span></span>  
+11. <span data-ttu-id="e8ef2-122">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-122">Click Save.</span></span>
+12. <span data-ttu-id="e8ef2-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-123">Close the page.</span></span>
+13. <span data-ttu-id="e8ef2-124">Ugorjon a következő oldalra: Kiskereskedelem és kereskedelem > Csatornák > Minden kiskereskedelmi üzlet.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-124">Go to Retail and commerce > Channels > All retail stores.</span></span>
+14. <span data-ttu-id="e8ef2-125">Jelölje ki a 17. sort a listában.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-125">In the list, select row 17.</span></span>
+    * <span data-ttu-id="e8ef2-126">Ha az USRT bemutatócéget használja, ekkor ez a Houston üzlet.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-126">If you are using the USRT demo data company, this is the Houston store.</span></span>  
+15. <span data-ttu-id="e8ef2-127">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-127">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="e8ef2-128">Váltson a Hardverállomások szakasz kibontására.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-128">Toggle the expansion of the Hardware stations section.</span></span>
+17. <span data-ttu-id="e8ef2-129">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-129">Click Add.</span></span>
+18. <span data-ttu-id="e8ef2-130">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-130">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="e8ef2-131">A Profilazonosító mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-131">In the Profile ID field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="e8ef2-132">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-132">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="e8ef2-133">Ez az új hardverállomás-profil, amit az előző lépésekben hozott létre.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-133">This must be the new hardware station profile that was created in the previous steps.</span></span>  
+21. <span data-ttu-id="e8ef2-134">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-134">In the list, click the link in the selected row.</span></span>
+22. <span data-ttu-id="e8ef2-135">Írjon be egy értéket az Állomás neve mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-135">In the Host name field, type a value.</span></span>
+23. <span data-ttu-id="e8ef2-136">Írjon be egy értéket az Elektronikus átutalási terminál azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-136">In the EFT terminal ID field, type a value.</span></span>
+24. <span data-ttu-id="e8ef2-137">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="e8ef2-137">Click Save.</span></span>
 
 

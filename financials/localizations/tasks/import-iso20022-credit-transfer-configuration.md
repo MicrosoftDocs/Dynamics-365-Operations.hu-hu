@@ -16,32 +16,32 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 52d502a53deb6defa619af4ca8cdc3158e086bae
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 71c0175178203006e297466c4a37cd3e6319b6ea
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="import-iso20022-credit-transfer-configuration"></a>ISO20022 jóváírási konfiguráció importálása
+# <a name="import-iso20022-credit-transfer-configuration"></a><span data-ttu-id="4aa31-103">ISO20022 jóváírási konfiguráció importálása</span><span class="sxs-lookup"><span data-stu-id="4aa31-103">Import ISO20022 credit transfer configuration</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan importálható szállítói fizetési elektronikus jelentéskészítési konfiguráció. A német ISO 20022 átutalási formátum szolgál példaként. Ez az eljárás egyéb rendelkezésre álló elektronikus jelentéskészítési formátumokhoz is használható. 
+<span data-ttu-id="4aa31-104">Ez az eljárás bemutatja, hogyan importálható szállítói fizetési elektronikus jelentéskészítési konfiguráció.</span><span class="sxs-lookup"><span data-stu-id="4aa31-104">This procedure shows how to import a vendor payment electronic reporting configuration.</span></span> <span data-ttu-id="4aa31-105">A német ISO 20022 átutalási formátum szolgál példaként.</span><span class="sxs-lookup"><span data-stu-id="4aa31-105">The German ISO 20022 credit transfer format is used as an example.</span></span> <span data-ttu-id="4aa31-106">Ez az eljárás egyéb rendelkezésre álló elektronikus jelentéskészítési formátumokhoz is használható.</span><span class="sxs-lookup"><span data-stu-id="4aa31-106">This procedure can be used for other available electronic reporting format.</span></span> 
 
-A feladat DEMF bemutatócég segítségével készült, de a feladat végrehajtásához bármely bemutatócég adatai felhasználhatók.
+<span data-ttu-id="4aa31-107">A feladat DEMF bemutatócég segítségével készült, de a feladat végrehajtásához bármely bemutatócég adatai felhasználhatók.</span><span class="sxs-lookup"><span data-stu-id="4aa31-107">This task was created using the demo data company DEMF but you can use any demo data company to complete this task.</span></span>
 
-Ez az első azon öt eljárás közül, amelyek együtt mutatják be elektronikus jelentési beállítások használatával a szállítói kifizetési folyamatot. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+<span data-ttu-id="4aa31-108">Ez az első azon öt eljárás közül, amelyek együtt mutatják be elektronikus jelentési beállítások használatával a szállítói kifizetési folyamatot.</span><span class="sxs-lookup"><span data-stu-id="4aa31-108">This is the first of five tasks, that together illustrate the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="4aa31-109">Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.</span><span class="sxs-lookup"><span data-stu-id="4aa31-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
-2. Az elérhető konfigurációs szolgáltatók listájáról válassza a Microsoftot.
-3. Kattintson erre: Beállítás aktívként.
-4. Kattintson a Tárházak gombra.
-5. Kattintson a Megnyitás gombra.
-6. Kattintson a Szűrők megjelenítése pontra.
-7. Alkalmazza a következő szűrőket: adja meg az „ISO20022 átutalás (DE)” szűrőértéket a „Konfiguráció neve” mezőben az „ezzel kezdődik” szűrési operátor használatával
-    * Vagy keresse meg a konfigurációt a listán, válassza ki és helyezze át az Importálási feladatba.  
-8. Kattintson az Importálás gombra.
-    * Ha az Importálás gomb nem elérhető, az azt jelenti, hogy a konfiguráció importálása már megtörtént.  
-9. Kattintson az Igen gombra.
+1. <span data-ttu-id="4aa31-110">Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.</span><span class="sxs-lookup"><span data-stu-id="4aa31-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="4aa31-111">Az elérhető konfigurációs szolgáltatók listájáról válassza a Microsoftot.</span><span class="sxs-lookup"><span data-stu-id="4aa31-111">In the list of available configuration providers, select Microsoft.</span></span>
+3. <span data-ttu-id="4aa31-112">Kattintson erre: Beállítás aktívként.</span><span class="sxs-lookup"><span data-stu-id="4aa31-112">Click Set active.</span></span>
+4. <span data-ttu-id="4aa31-113">Kattintson a Tárházak gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa31-113">Click Repositories.</span></span>
+5. <span data-ttu-id="4aa31-114">Kattintson a Megnyitás gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa31-114">Click Open.</span></span>
+6. <span data-ttu-id="4aa31-115">Kattintson a Szűrők megjelenítése pontra.</span><span class="sxs-lookup"><span data-stu-id="4aa31-115">Click Show filters.</span></span>
+7. <span data-ttu-id="4aa31-116">Alkalmazza a következő szűrőket: adja meg az „ISO20022 átutalás (DE)” szűrőértéket a „Konfiguráció neve” mezőben az „ezzel kezdődik” szűrési operátor használatával</span><span class="sxs-lookup"><span data-stu-id="4aa31-116">Apply the following filters: Enter a filter value of "ISO20022 Credit transfer (DE)" on the "Configuration name" field using the "begins with" filter operator</span></span>
+    * <span data-ttu-id="4aa31-117">Vagy keresse meg a konfigurációt a listán, válassza ki és helyezze át az Importálási feladatba.</span><span class="sxs-lookup"><span data-stu-id="4aa31-117">Alternatively, you can find the configuration in the list, select it, and then move it to the Import task.</span></span>  
+8. <span data-ttu-id="4aa31-118">Kattintson az Importálás gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa31-118">Click Import.</span></span>
+    * <span data-ttu-id="4aa31-119">Ha az Importálás gomb nem elérhető, az azt jelenti, hogy a konfiguráció importálása már megtörtént.</span><span class="sxs-lookup"><span data-stu-id="4aa31-119">If the Import button is not available, it means that the configuration has  already been imported.</span></span>  
+9. <span data-ttu-id="4aa31-120">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="4aa31-120">Click Yes.</span></span>
 
 

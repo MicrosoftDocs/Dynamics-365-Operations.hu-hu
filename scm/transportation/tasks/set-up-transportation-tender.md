@@ -17,34 +17,34 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: a8ad2469bbe51648369d2df17fc027c03e6c97ca
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 8ccd82b3249e99dd2884fb257f3e65261ab64d96
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-transportation-tender"></a>Szállítási ajánlat beállítása
+# <a name="set-up-a-transportation-tender"></a><span data-ttu-id="7e2f1-103">Szállítási ajánlat beállítása</span><span class="sxs-lookup"><span data-stu-id="7e2f1-103">Set up a transportation tender</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan állíthat be egy szállítási ajánlatot. Ezt általában egy szállítási koordinátor végzi. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
+<span data-ttu-id="7e2f1-104">Ez az eljárás bemutatja, hogyan állíthat be egy szállítási ajánlatot.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-104">This procedure shows how to set up a transportation tender.</span></span> <span data-ttu-id="7e2f1-105">Ezt általában egy szállítási koordinátor végzi.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="7e2f1-106">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-106">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-a-route"></a>Válasszon ki egy útvonalat
-1. Ugorjon a Szállításkezelés > Tervezés > Rakománytervező munkaterület elemre.
-2. Törölje a Szállított és bevételezett elrejtése jelölőnégyzet jelölését.
-3. Válassza ki a 00006-os rakományazonosítójú sort.
-4. Kattintson a Minősítés és útvonaltervezés pontra.
-5. Kattintson az Útvonalakra.
+## <a name="select-a-route"></a><span data-ttu-id="7e2f1-107">Válasszon ki egy útvonalat</span><span class="sxs-lookup"><span data-stu-id="7e2f1-107">Select a route</span></span>
+1. <span data-ttu-id="7e2f1-108">Ugorjon a Szállításkezelés > Tervezés > Rakománytervező munkaterület elemre.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="7e2f1-109">Törölje a Szállított és bevételezett elrejtése jelölőnégyzet jelölését.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-109">Clear the Hide shipped and received check box.</span></span>
+3. <span data-ttu-id="7e2f1-110">Válassza ki a 00006-os rakományazonosítójú sort.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-110">Select the line with Load ID 00006.</span></span>
+4. <span data-ttu-id="7e2f1-111">Kattintson a Minősítés és útvonaltervezés pontra.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-111">Click Rating and routing.</span></span>
+5. <span data-ttu-id="7e2f1-112">Kattintson az Útvonalakra.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-112">Click Routes.</span></span>
 
-## <a name="create-the-transportation-tender"></a>A szállítási ajánlat létrehozása
-1. Kattintson a Szállítási ajánlatokra.
-2. Kattintson az Új lehetőségre.
-3. Bontsa ki az Általános szakaszt.
-4. Adjon meg egy számot a Kért díjak mezőben.
-5. Kattintson a Mentés gombra.
-6. Kattintson az Állapot frissítése lehetőségre.
-7. Kattintson a Küldés hivatkozásra.
-8. Válasszon ki egy útvonalat.
+## <a name="create-the-transportation-tender"></a><span data-ttu-id="7e2f1-113">A szállítási ajánlat létrehozása</span><span class="sxs-lookup"><span data-stu-id="7e2f1-113">Create the transportation tender</span></span>
+1. <span data-ttu-id="7e2f1-114">Kattintson a Szállítási ajánlatokra.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-114">Click Transportation tenders.</span></span>
+2. <span data-ttu-id="7e2f1-115">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-115">Click New.</span></span>
+3. <span data-ttu-id="7e2f1-116">Bontsa ki az Általános szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-116">Expand the General section.</span></span>
+4. <span data-ttu-id="7e2f1-117">Adjon meg egy számot a Kért díjak mezőben.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-117">In the Requested rates field, enter a number.</span></span>
+5. <span data-ttu-id="7e2f1-118">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-118">Click Save.</span></span>
+6. <span data-ttu-id="7e2f1-119">Kattintson az Állapot frissítése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-119">Click Update status.</span></span>
+7. <span data-ttu-id="7e2f1-120">Kattintson a Küldés hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-120">Click Submit.</span></span>
+8. <span data-ttu-id="7e2f1-121">Válasszon ki egy útvonalat.</span><span class="sxs-lookup"><span data-stu-id="7e2f1-121">Select a route.</span></span>
 
 

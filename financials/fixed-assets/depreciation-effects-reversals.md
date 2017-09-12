@@ -16,85 +16,85 @@ ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d061ad8df477943259bff853d032c3df620e0b27
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7309cb3175f65bc6b806edb875ac9406a8faaf66
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="depreciation-effects-with-reversals"></a>A sztornírozások értékcsökkenésre gyakorolt hatására
+# <a name="depreciation-effects-with-reversals"></a><span data-ttu-id="cd826-103">A sztornírozások értékcsökkenésre gyakorolt hatására</span><span class="sxs-lookup"><span data-stu-id="cd826-103">Depreciation effects with reversals</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk egy tárgyieszköz-tranzakció sztornírozásának lehetséges következményeit tárgyalja. 
+<span data-ttu-id="cd826-104">Ez a cikk egy tárgyieszköz-tranzakció sztornírozásának lehetséges következményeit tárgyalja.</span><span class="sxs-lookup"><span data-stu-id="cd826-104">This article discusses potential implications of reversing a fixed asset transaction.</span></span> 
 
-Sztornírozhatja a tárgyieszköz-tranzakciókat és a azokat a tranzakciókat, amelyek egy tárgyi eszközhöz vannak társítva. Továbbá visszavonhatja a sztornírozott tranzakciót. 
+<span data-ttu-id="cd826-105">Sztornírozhatja a tárgyieszköz-tranzakciókat és a azokat a tranzakciókat, amelyek egy tárgyi eszközhöz vannak társítva.</span><span class="sxs-lookup"><span data-stu-id="cd826-105">You can reverse fixed asset transactions, and the transactions that are associated with a fixed asset.</span></span> <span data-ttu-id="cd826-106">Továbbá visszavonhatja a sztornírozott tranzakciót.</span><span class="sxs-lookup"><span data-stu-id="cd826-106">You can also revoke a reversed transaction.</span></span> 
 
-Sztornírozhat vagy visszavonhat egy tranzakciót, amely nem a legutóbbi feladott tranzakció a könyvben az eszközhöz. Előbb érdemes megállapítania, hogy lett-e értékcsökkenési tranzakció feladva az után a tranzakció után, amelyet sztorníroz. Ennek oka az, hogy az értékcsökkenés nem kerül kiszámításra amikor sztorníroz egy tranzakciót. Ezért értékcsökkenés gyakran túl nagy vagy túl alacsony, a sztornírozás után, ahogy azt a példák mutatják. 
+<span data-ttu-id="cd826-107">Sztornírozhat vagy visszavonhat egy tranzakciót, amely nem a legutóbbi feladott tranzakció a könyvben az eszközhöz.</span><span class="sxs-lookup"><span data-stu-id="cd826-107">You can reverse or revoke a transaction that was not the most recent transaction posted to the book for the asset.</span></span> <span data-ttu-id="cd826-108">Előbb érdemes megállapítania, hogy lett-e értékcsökkenési tranzakció feladva az után a tranzakció után, amelyet sztorníroz.</span><span class="sxs-lookup"><span data-stu-id="cd826-108">You should first determine whether any depreciation transactions were posted after the transaction that you are reversing.</span></span> <span data-ttu-id="cd826-109">Ennek oka az, hogy az értékcsökkenés nem kerül kiszámításra amikor sztorníroz egy tranzakciót.</span><span class="sxs-lookup"><span data-stu-id="cd826-109">This is because depreciation is not recalculated when you reverse a transaction.</span></span> <span data-ttu-id="cd826-110">Ezért értékcsökkenés gyakran túl nagy vagy túl alacsony, a sztornírozás után, ahogy azt a példák mutatják.</span><span class="sxs-lookup"><span data-stu-id="cd826-110">Therefore, depreciation often is overstated or understated after the reversal, as shown in the examples.</span></span> 
 
-Hogy megbizonyosodjon, hogy az értékcsökkenés helyes, amikor sztorníroz egy tranzakciót ne folytassa a sztornírozást, ha egy olyan üzenetet kap, amelyben az áll, hogy a sztornírozás nem lesz újraszámolva. Ehelyett előbb sztornírozza az értékcsökkenési tranzakciót, amit az után a tranzakció után adtak föl, amit épp sztornírozni próbált, majd folytassa a sztornírozást. Nem lesz figyelmeztetve az értékcsökkenés újraszámításáról és folytathatja a sztornírozást. 
+<span data-ttu-id="cd826-111">Hogy megbizonyosodjon, hogy az értékcsökkenés helyes, amikor sztorníroz egy tranzakciót ne folytassa a sztornírozást, ha egy olyan üzenetet kap, amelyben az áll, hogy a sztornírozás nem lesz újraszámolva.</span><span class="sxs-lookup"><span data-stu-id="cd826-111">To make sure that depreciation is correct when you reverse a transaction, do not continue with the reversal if you receive a message that states that depreciation will not be recalculated.</span></span> <span data-ttu-id="cd826-112">Ehelyett előbb sztornírozza az értékcsökkenési tranzakciót, amit az után a tranzakció után adtak föl, amit épp sztornírozni próbált, majd folytassa a sztornírozást.</span><span class="sxs-lookup"><span data-stu-id="cd826-112">Instead, first reverse the depreciation transaction that was posted after the transaction you tried to reverse, and then continue with the reversal.</span></span> <span data-ttu-id="cd826-113">Nem lesz figyelmeztetve az értékcsökkenés újraszámításáról és folytathatja a sztornírozást.</span><span class="sxs-lookup"><span data-stu-id="cd826-113">You will not be warned about depreciation recalculations, and you can continue with the reversal.</span></span> 
 
-A következő példák bemutatják a számításokat, amelyek akkor történnek, ha folytatja a sztornírozást az üzenet után mielőtt sztornírozta volna a korábbi értékcsökkenési tranzakciókat.
+<span data-ttu-id="cd826-114">A következő példák bemutatják a számításokat, amelyek akkor történnek, ha folytatja a sztornírozást az üzenet után mielőtt sztornírozta volna a korábbi értékcsökkenési tranzakciókat.</span><span class="sxs-lookup"><span data-stu-id="cd826-114">The following examples show the calculations that occur if you continue beyond the message without first reversing the depreciation transactions.</span></span>
 
-## <a name="example-1-depreciation-is-overstated"></a> 1. példa: túl nagy értékcsökkenés
-Az eszköznek 5 év hasznos élettartam és lineáris értékcsökkenés (60 értékcsökkenési időszak) van beállítva. Ebben a példában túl nagy az értékcsökkenés.
-#### <a name="asset-transaction-history"></a>Tárgyieszköz-tranzakciók előzményei
+## <a name="example-1-depreciation-is-overstated"></a><span data-ttu-id="cd826-115"> 1. példa: túl nagy értékcsökkenés</span><span class="sxs-lookup"><span data-stu-id="cd826-115">Example 1: Depreciation is overstated</span></span>
+<span data-ttu-id="cd826-116">Az eszköznek 5 év hasznos élettartam és lineáris értékcsökkenés (60 értékcsökkenési időszak) van beállítva.</span><span class="sxs-lookup"><span data-stu-id="cd826-116">An asset is set up with a 5-year useful life and straight line depreciation (60 depreciation periods).</span></span> <span data-ttu-id="cd826-117">Ebben a példában túl nagy az értékcsökkenés.</span><span class="sxs-lookup"><span data-stu-id="cd826-117">In this example, depreciation is overstated.</span></span>
+#### <a name="asset-transaction-history"></a><span data-ttu-id="cd826-118">Tárgyieszköz-tranzakciók előzményei</span><span class="sxs-lookup"><span data-stu-id="cd826-118">Asset transaction history</span></span>
 
-| Dátum       | Tranzakció típusa                                                          | Összeg                                    |
+| <span data-ttu-id="cd826-119">Dátum</span><span class="sxs-lookup"><span data-stu-id="cd826-119">Date</span></span>       | <span data-ttu-id="cd826-120">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="cd826-120">Transaction type</span></span>                                                          | <span data-ttu-id="cd826-121">Összeg</span><span class="sxs-lookup"><span data-stu-id="cd826-121">Amount</span></span>                                    |
 |------------|---------------------------------------------------------------------------|-------------------------------------------|
-| Január 1.  | Beszerzés                                                               | 59 000,00                                 |
-| Január 1.  | Beszerzés helyesbítése                                                    | 1000,00                                  |
-| Január 31. | Értékcsökkenés (az értékcsökkenés egy időszakának javaslatával létrehozva) | 1 000,00 Számítás: Könyv szerinti érték (59 000 + 1 000) / Hátra lévő értékcsökkenési időszakok száma (60) |
+| <span data-ttu-id="cd826-122">Január 1.</span><span class="sxs-lookup"><span data-stu-id="cd826-122">January 1</span></span>  | <span data-ttu-id="cd826-123">Beszerzés</span><span class="sxs-lookup"><span data-stu-id="cd826-123">Acquisition</span></span>                                                               | <span data-ttu-id="cd826-124">59 000,00</span><span class="sxs-lookup"><span data-stu-id="cd826-124">59,000.00</span></span>                                 |
+| <span data-ttu-id="cd826-125">Január 1.</span><span class="sxs-lookup"><span data-stu-id="cd826-125">January 1</span></span>  | <span data-ttu-id="cd826-126">Beszerzés helyesbítése</span><span class="sxs-lookup"><span data-stu-id="cd826-126">Acquisition adjustment</span></span>                                                    | <span data-ttu-id="cd826-127">1000,00</span><span class="sxs-lookup"><span data-stu-id="cd826-127">1,000.00</span></span>                                  |
+| <span data-ttu-id="cd826-128">Január 31.</span><span class="sxs-lookup"><span data-stu-id="cd826-128">January 31</span></span> | <span data-ttu-id="cd826-129">Értékcsökkenés (az értékcsökkenés egy időszakának javaslatával létrehozva)</span><span class="sxs-lookup"><span data-stu-id="cd826-129">Depreciation (created by using a proposal for one period of depreciation)</span></span> | <span data-ttu-id="cd826-130">1 000,00 Számítás: Könyv szerinti érték (59 000 + 1 000) / Hátra lévő értékcsökkenési időszakok száma (60)</span><span class="sxs-lookup"><span data-stu-id="cd826-130">1,000.00Calculation: Book value (59,000 + 1,000) / Number of depreciation periods remaining (60)</span></span> |
 
-#### <a name="reversal-action"></a>Sztornírozási művelet
+#### <a name="reversal-action"></a><span data-ttu-id="cd826-131">Sztornírozási művelet</span><span class="sxs-lookup"><span data-stu-id="cd826-131">Reversal action</span></span>
 
-| Dátum      | Tranzakció típusa                | Összeg    |
+| <span data-ttu-id="cd826-132">Dátum</span><span class="sxs-lookup"><span data-stu-id="cd826-132">Date</span></span>      | <span data-ttu-id="cd826-133">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="cd826-133">Transaction type</span></span>                | <span data-ttu-id="cd826-134">Összeg</span><span class="sxs-lookup"><span data-stu-id="cd826-134">Amount</span></span>    |
 |-----------|---------------------------------|-----------|
-| Január 1. | Beszerzés-helyesbítési sztornírozás | –1000,00 |
+| <span data-ttu-id="cd826-135">Január 1.</span><span class="sxs-lookup"><span data-stu-id="cd826-135">January 1</span></span> | <span data-ttu-id="cd826-136">Beszerzés-helyesbítési sztornírozás</span><span class="sxs-lookup"><span data-stu-id="cd826-136">Acquisition adjustment reversal</span></span> | <span data-ttu-id="cd826-137">–1000,00</span><span class="sxs-lookup"><span data-stu-id="cd826-137">–1,000.00</span></span> |
 
-#### <a name="depreciation-effect"></a>Az értékcsökkenés hatása
+#### <a name="depreciation-effect"></a><span data-ttu-id="cd826-138">Az értékcsökkenés hatása</span><span class="sxs-lookup"><span data-stu-id="cd826-138">Depreciation effect</span></span>
 
-| Dátum        | Tranzakció típusa        | Összeg                                                                                |
+| <span data-ttu-id="cd826-139">Dátum</span><span class="sxs-lookup"><span data-stu-id="cd826-139">Date</span></span>        | <span data-ttu-id="cd826-140">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="cd826-140">Transaction type</span></span>        | <span data-ttu-id="cd826-141">Összeg</span><span class="sxs-lookup"><span data-stu-id="cd826-141">Amount</span></span>                                                                                |
 |-------------|-------------------------|---------------------------------------------------------------------------------------|
-| Február 28. | Értékcsökkenés (javaslat) | 983,05 Számítás: Könyv szerinti érték (59 000 - 1 000 értékcsökkenés) / Hátralévő értékcsökkenési időszakok száma (59) |
+| <span data-ttu-id="cd826-142">Február 28.</span><span class="sxs-lookup"><span data-stu-id="cd826-142">February 28</span></span> | <span data-ttu-id="cd826-143">Értékcsökkenés (javaslat)</span><span class="sxs-lookup"><span data-stu-id="cd826-143">Depreciation (proposal)</span></span> | <span data-ttu-id="cd826-144">983,05 Számítás: Könyv szerinti érték (59 000 - 1 000 értékcsökkenés) / Hátralévő értékcsökkenési időszakok száma (59)</span><span class="sxs-lookup"><span data-stu-id="cd826-144">983.05Calculation: Book value (59,000 - 1,000 depreciation) / Number of depreciation periods remaining (59)</span></span> |
 
-Az értékcsökkenés túl nagy, mértéke 16,95 (1000 - 983,05).
+<span data-ttu-id="cd826-145">Az értékcsökkenés túl nagy, mértéke 16,95 (1000 - 983,05).</span><span class="sxs-lookup"><span data-stu-id="cd826-145">Depreciation is overstated by 16.95 (1,000 - 983.05).</span></span>
 
-## <a name="example-2-depreciation-is-understated"></a> 2. példa: túl alacsony értékcsökkenés
-Az eszköznek 5 év hasznos élettartam és lineáris értékcsökkenés (60 értékcsökkenési időszak) van beállítva. Ebben a példában túl alacsony az értékcsökkenés.
-#### <a name="asset-transaction-history"></a>Tárgyieszköz-tranzakciók előzményei
+## <a name="example-2-depreciation-is-understated"></a><span data-ttu-id="cd826-146"> 2. példa: túl alacsony értékcsökkenés</span><span class="sxs-lookup"><span data-stu-id="cd826-146">Example 2: Depreciation is understated</span></span>
+<span data-ttu-id="cd826-147">Az eszköznek 5 év hasznos élettartam és lineáris értékcsökkenés (60 értékcsökkenési időszak) van beállítva.</span><span class="sxs-lookup"><span data-stu-id="cd826-147">An asset is set up with a 5-year useful life and straight line depreciation (60 depreciation periods).</span></span> <span data-ttu-id="cd826-148">Ebben a példában túl alacsony az értékcsökkenés.</span><span class="sxs-lookup"><span data-stu-id="cd826-148">In this example, depreciation is understated.</span></span>
+#### <a name="asset-transaction-history"></a><span data-ttu-id="cd826-149">Tárgyieszköz-tranzakciók előzményei</span><span class="sxs-lookup"><span data-stu-id="cd826-149">Asset transaction history</span></span>
 
-| Dátum       | Tranzakció típusa                                                          | Összeg                                      |
+| <span data-ttu-id="cd826-150">Dátum</span><span class="sxs-lookup"><span data-stu-id="cd826-150">Date</span></span>       | <span data-ttu-id="cd826-151">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="cd826-151">Transaction type</span></span>                                                          | <span data-ttu-id="cd826-152">Összeg</span><span class="sxs-lookup"><span data-stu-id="cd826-152">Amount</span></span>                                      |
 |------------|---------------------------------------------------------------------------|---------------------------------------------|
-| Január 1.  | Beszerzés                                                               | 59 000,00                                   |
-| Január 1.  | Leértékelési helyesbítés                                                     | 1000,00                                    |
-| Január 31. | Értékcsökkenés (az értékcsökkenés egy időszakának javaslatával létrehozva) | 966,67 Számítás: könyv szerinti érték (59 000 - 1 000) / Hátralévő értékcsökkenési időszakok száma (60) |
+| <span data-ttu-id="cd826-153">Január 1.</span><span class="sxs-lookup"><span data-stu-id="cd826-153">January 1</span></span>  | <span data-ttu-id="cd826-154">Beszerzés</span><span class="sxs-lookup"><span data-stu-id="cd826-154">Acquisition</span></span>                                                               | <span data-ttu-id="cd826-155">59 000,00</span><span class="sxs-lookup"><span data-stu-id="cd826-155">59,000.00</span></span>                                   |
+| <span data-ttu-id="cd826-156">Január 1.</span><span class="sxs-lookup"><span data-stu-id="cd826-156">January 1</span></span>  | <span data-ttu-id="cd826-157">Leértékelési helyesbítés</span><span class="sxs-lookup"><span data-stu-id="cd826-157">Write-down adjustment</span></span>                                                     | <span data-ttu-id="cd826-158">1000,00</span><span class="sxs-lookup"><span data-stu-id="cd826-158">1,000.00</span></span>                                    |
+| <span data-ttu-id="cd826-159">Január 31.</span><span class="sxs-lookup"><span data-stu-id="cd826-159">January 31</span></span> | <span data-ttu-id="cd826-160">Értékcsökkenés (az értékcsökkenés egy időszakának javaslatával létrehozva)</span><span class="sxs-lookup"><span data-stu-id="cd826-160">Depreciation (created by using a proposal for one period of depreciation)</span></span> | <span data-ttu-id="cd826-161">966,67 Számítás: könyv szerinti érték (59 000 - 1 000) / Hátralévő értékcsökkenési időszakok száma (60)</span><span class="sxs-lookup"><span data-stu-id="cd826-161">966.67Calculation: Book value (59,000 - 1,000) / Number of depreciation periods remaining (60)</span></span> |
 
-#### <a name="reversal-action"></a>Sztornírozási művelet
+#### <a name="reversal-action"></a><span data-ttu-id="cd826-162">Sztornírozási művelet</span><span class="sxs-lookup"><span data-stu-id="cd826-162">Reversal action</span></span>
 
-| Dátum      | Tranzakció típusa               | Összeg    |
+| <span data-ttu-id="cd826-163">Dátum</span><span class="sxs-lookup"><span data-stu-id="cd826-163">Date</span></span>      | <span data-ttu-id="cd826-164">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="cd826-164">Transaction type</span></span>               | <span data-ttu-id="cd826-165">Összeg</span><span class="sxs-lookup"><span data-stu-id="cd826-165">Amount</span></span>    |
 |-----------|--------------------------------|-----------|
-| Január 1. | Leértékelési helyesbítés sztornírozás | –1000,00 |
+| <span data-ttu-id="cd826-166">Január 1.</span><span class="sxs-lookup"><span data-stu-id="cd826-166">January 1</span></span> | <span data-ttu-id="cd826-167">Leértékelési helyesbítés sztornírozás</span><span class="sxs-lookup"><span data-stu-id="cd826-167">Write-down adjustment reversal</span></span> | <span data-ttu-id="cd826-168">–1000,00</span><span class="sxs-lookup"><span data-stu-id="cd826-168">–1,000.00</span></span> |
 
-#### <a name="depreciation-effect"></a>Az értékcsökkenés hatása
+#### <a name="depreciation-effect"></a><span data-ttu-id="cd826-169">Az értékcsökkenés hatása</span><span class="sxs-lookup"><span data-stu-id="cd826-169">Depreciation effect</span></span>
 
-| Dátum        | Tranzakció típusa        | Összeg                                                                                       |
+| <span data-ttu-id="cd826-170">Dátum</span><span class="sxs-lookup"><span data-stu-id="cd826-170">Date</span></span>        | <span data-ttu-id="cd826-171">Tranzakció típusa</span><span class="sxs-lookup"><span data-stu-id="cd826-171">Transaction type</span></span>        | <span data-ttu-id="cd826-172">Összeg</span><span class="sxs-lookup"><span data-stu-id="cd826-172">Amount</span></span>                                                                                       |
 |-------------|-------------------------|----------------------------------------------------------------------------------------------|
-| Február 28. | Értékcsökkenés (javaslat) | 983,62 Számítás: könyv szerinti érték (59 000 - 966,67 értékcsökkenés) / Hátralévő értékcsökkenési időszakok száma (59) |
+| <span data-ttu-id="cd826-173">Február 28.</span><span class="sxs-lookup"><span data-stu-id="cd826-173">February 28</span></span> | <span data-ttu-id="cd826-174">Értékcsökkenés (javaslat)</span><span class="sxs-lookup"><span data-stu-id="cd826-174">Depreciation (proposal)</span></span> | <span data-ttu-id="cd826-175">983,62 Számítás: könyv szerinti érték (59 000 - 966,67 értékcsökkenés) / Hátralévő értékcsökkenési időszakok száma (59)</span><span class="sxs-lookup"><span data-stu-id="cd826-175">983.62Calculation: Book value (59,000 - 966.67 depreciation) / Number of depreciation periods remaining (59)</span></span> |
 
-Az értékcsökkenés túl alacsony, mértéke 16,95 (983,62 - 966,67).
+<span data-ttu-id="cd826-176">Az értékcsökkenés túl alacsony, mértéke 16,95 (983,62 - 966,67).</span><span class="sxs-lookup"><span data-stu-id="cd826-176">Depreciation is understated by 16.95 (983.62 - 966.67).</span></span>
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="cd826-177">Lásd még</span><span class="sxs-lookup"><span data-stu-id="cd826-177">See also</span></span>
 --------
 
-[Tárgyi eszközök értékcsökkenése](fixed-asset-depreciation.md)
+[<span data-ttu-id="cd826-178">Tárgyi eszközök értékcsökkenése</span><span class="sxs-lookup"><span data-stu-id="cd826-178">Fixed asset depreciation</span></span>](fixed-asset-depreciation.md)
 
 
 

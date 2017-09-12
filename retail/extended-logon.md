@@ -19,60 +19,60 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 0b7e5ed451497aea1c2ce798af2b717705538d47
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e29aea4509dd323c295b02f289fbcfa46fab3392
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Kiterjesztett bejelentkezés funkció beállítása Pénztár felhőhöz és MPOS-hoz
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a><span data-ttu-id="cf1f1-103">Kiterjesztett bejelentkezés funkció beállítása Pénztár felhőhöz és MPOS-hoz</span><span class="sxs-lookup"><span data-stu-id="cf1f1-103">Set up extended logon functionality for Cloud POS and MPOS</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-A témakör magába foglalja a felhőalapú pénztár és Kiskereskedelmi Modern pénztár (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
+<span data-ttu-id="cf1f1-104">A témakör magába foglalja a felhőalapú pénztár és Kiskereskedelmi Modern pénztár (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-104">This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).</span></span>
 
-<a name="setting-up-extended-logon"></a>Kiterjesztett bejelentkezés beállítása
+<a name="setting-up-extended-logon"></a><span data-ttu-id="cf1f1-105">Kiterjesztett bejelentkezés beállítása</span><span class="sxs-lookup"><span data-stu-id="cf1f1-105">Setting up extended logon</span></span>
 =========================
 
-A vonalkódmaszkok beállítását megtalálja a következő helyen: **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárprofilok** &gt; **Funkcióprofilok**. A **Funkciók** gyorslap a következő kiterjesztett belépéshez tartozó beállításokat tartalmazza.
+<span data-ttu-id="cf1f1-106">A vonalkódmaszkok beállítását megtalálja a következő helyen: **Kiskereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárprofilok** &gt; **Funkcióprofilok**.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-106">You can find the setup for bar code masks at **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**.</span></span> <span data-ttu-id="cf1f1-107">A **Funkciók** gyorslap a következő kiterjesztett belépéshez tartozó beállításokat tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-107">The **Functions** FastTab includes the following options that are related to extended logon.</span></span>
 
-### <a name="staff-bar-code-logon"></a>Munkatárs - vonalkódos bejelentkezés
+### <a name="staff-bar-code-logon"></a><span data-ttu-id="cf1f1-108">Munkatárs - vonalkódos bejelentkezés</span><span class="sxs-lookup"><span data-stu-id="cf1f1-108">Staff bar code logon</span></span>
 
-Amikor a **Személyzeti vonalkódos bejelentkezés** beállítás engedélyezve van, a pénztárhoz tartozó kiterjesztett bejelentkezéssel rendelkező dolgozók be tudnak lépni vonalkód használatával.
+<span data-ttu-id="cf1f1-109">Amikor a **Személyzeti vonalkódos bejelentkezés** beállítás engedélyezve van, a pénztárhoz tartozó kiterjesztett bejelentkezéssel rendelkező dolgozók be tudnak lépni vonalkód használatával.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-109">When the **Staff bar code logon** option is enabled, workers who have an extended logon assigned to their point of sale (POS) credentials can log on by using a bar code.</span></span>
 
-### <a name="staff-bar-code-logon-requires-password"></a>A személyzeti vonalkódos bejelentkezéshez jelszó szükséges
+### <a name="staff-bar-code-logon-requires-password"></a><span data-ttu-id="cf1f1-110">A személyzeti vonalkódos bejelentkezéshez jelszó szükséges</span><span class="sxs-lookup"><span data-stu-id="cf1f1-110">Staff bar code logon requires password</span></span>
 
-Ha a **A személyzeti vonalkódos bejelentkezéshez jelszó szükséges** beállítás engedélyezve van, a személyzeti vonalkódos bejelentkezés csak azt a dolgozót engedi belépni, akinek van jogosultsága az aktuális kiterjesztett belépéshez. A dolgozóknak be kell írniuk jelszavukat akkor is, ha ez a beállítás van engedélyezve.
+<span data-ttu-id="cf1f1-111">Ha a **A személyzeti vonalkódos bejelentkezéshez jelszó szükséges** beállítás engedélyezve van, a személyzeti vonalkódos bejelentkezés csak azt a dolgozót engedi belépni, akinek van jogosultsága az aktuális kiterjesztett belépéshez.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-111">When the **Staff bar code logon requires password** option is enabled, the staff bar code logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="cf1f1-112">A dolgozóknak be kell írniuk jelszavukat akkor is, ha ez a beállítás van engedélyezve.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-112">Workers must still enter their password when this option is enabled.</span></span>
 
-### <a name="staff-card-logon"></a>Munkatárs - kártyás bejelentkezés
+### <a name="staff-card-logon"></a><span data-ttu-id="cf1f1-113">Munkatárs - kártyás bejelentkezés</span><span class="sxs-lookup"><span data-stu-id="cf1f1-113">Staff card logon</span></span>
 
-Amikor a **Személyzeti kártyás bejelentkezés** beállítás van engedélyezve, a pénztárhoz tartozó kiterjesztett bejelentkezéssel rendelkező dolgozók be tudnak lépni mágnescsík használatával.
+<span data-ttu-id="cf1f1-114">Amikor a **Személyzeti kártyás bejelentkezés** beállítás van engedélyezve, a pénztárhoz tartozó kiterjesztett bejelentkezéssel rendelkező dolgozók be tudnak lépni mágnescsík használatával.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-114">When the **Staff card logon** option is enabled, workers who have an extended logon assigned to their POS credentials can log on by using a magnetic stripe.</span></span>
 
-### <a name="staff-card-logon-requires-password"></a>A személyzeti kártyás bejelentkezéshez jelszó szükséges
+### <a name="staff-card-logon-requires-password"></a><span data-ttu-id="cf1f1-115">A személyzeti kártyás bejelentkezéshez jelszó szükséges</span><span class="sxs-lookup"><span data-stu-id="cf1f1-115">Staff card logon requires password</span></span>
 
-Ha a **A személyzeti kártyás bejelentkezéshez jelszó szükséges** beállítás engedélyezve van, a személyzeti kártyás bejelentkezés csak azt a dolgozót engedi belépni, akinek van jogosultsága az aktuális kiterjesztett belépéshez. A dolgozóknak be kell írniuk jelszavukat akkor is, ha ez a beállítás van engedélyezve.
+<span data-ttu-id="cf1f1-116">Ha a **A személyzeti kártyás bejelentkezéshez jelszó szükséges** beállítás engedélyezve van, a személyzeti kártyás bejelentkezés csak azt a dolgozót engedi belépni, akinek van jogosultsága az aktuális kiterjesztett belépéshez.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-116">When the **Staff card logon requires password** option is enabled, the staff card logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="cf1f1-117">A dolgozóknak be kell írniuk jelszavukat akkor is, ha ez a beállítás van engedélyezve.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-117">Workers must still enter their password when this option is enabled.</span></span>
 
-<a name="assigning-an-extended-logon"></a>Hozzárendelés kiterjesztett bejelentkezéshez
+<a name="assigning-an-extended-logon"></a><span data-ttu-id="cf1f1-118">Hozzárendelés kiterjesztett bejelentkezéshez</span><span class="sxs-lookup"><span data-stu-id="cf1f1-118">Assigning an extended logon</span></span>
 ===========================
 
-Alapesetben csak a menedzser tud kiterjesztett bejelentkezést hozzárendelni a dolgozókhoz. Kiterjesztett bejelentkezés hozzárendeléséhez, kattintson a **Kiterjesztett bejelentkezés** opcióra a pénztárban. Ezután keressen rá a dolgozóra úgy, hogy begépeli annak dolgozói azonosítóját a keresőmezőbe. Válassza ki a dolgozót, majd kattintson az **Hozzáadás** gombra. A következő oldalon húzza le vagy olvassa be a kiterjesztett belépést, hogy hozzárendelhesse azt a dolgozóhoz. Ha a lehúzás vagy a beolvasás sikeresen megtörtént, az **OK** gomb elérhetővé válik. Kattintson a **OK** gombra, hogy elmentse az adott dolgozóhoz kapcsolódó kiterjesztett bejelentkezést.
+<span data-ttu-id="cf1f1-119">Alapesetben csak a menedzser tud kiterjesztett bejelentkezést hozzárendelni a dolgozókhoz.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-119">By default, only managers can assign extended logon to workers.</span></span> <span data-ttu-id="cf1f1-120">Kiterjesztett bejelentkezés hozzárendeléséhez, kattintson a **Kiterjesztett bejelentkezés** opcióra a pénztárban.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-120">To assign extended logon, go to **Extended log on** in POS.</span></span> <span data-ttu-id="cf1f1-121">Ezután keressen rá a dolgozóra úgy, hogy begépeli annak dolgozói azonosítóját a keresőmezőbe.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-121">Then search for a worker by entering his or her operator ID in the search field.</span></span> <span data-ttu-id="cf1f1-122">Válassza ki a dolgozót, majd kattintson az **Hozzáadás** gombra.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-122">Select the worker, and then click **Assign**.</span></span> <span data-ttu-id="cf1f1-123">A következő oldalon húzza le vagy olvassa be a kiterjesztett belépést, hogy hozzárendelhesse azt a dolgozóhoz.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-123">On the next page, swipe or scan the extended logon to assign to the worker.</span></span> <span data-ttu-id="cf1f1-124">Ha a lehúzás vagy a beolvasás sikeresen megtörtént, az **OK** gomb elérhetővé válik.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-124">If the swipe or scan is successfully read, the **OK** button becomes available.</span></span> <span data-ttu-id="cf1f1-125">Kattintson a **OK** gombra, hogy elmentse az adott dolgozóhoz kapcsolódó kiterjesztett bejelentkezést.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-125">Click **OK** to save the extended logon for that worker.</span></span>
 
-<a name="deleting-an-extended-logon"></a>Kiterjesztett bejelentkezés törlése
+<a name="deleting-an-extended-logon"></a><span data-ttu-id="cf1f1-126">Kiterjesztett bejelentkezés törlése</span><span class="sxs-lookup"><span data-stu-id="cf1f1-126">Deleting an extended logon</span></span>
 ==========================
 
-A dolgozó kiterjesztett bejelentkezésének törléséhez keresse meg a dolgozót a **Kiterjesztett bejelentkezés** művelet használatával. Válassza ki a dolgozót, majd kattintson az **Törlés** gombra. Minden (az adott dolgozóhoz tartozó) kiterjesztett bejelentkezési hitelesítő adat törlődik.
+<span data-ttu-id="cf1f1-127">A dolgozó kiterjesztett bejelentkezésének törléséhez keresse meg a dolgozót a **Kiterjesztett bejelentkezés** művelet használatával.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-127">To delete the extended logon that is assigned to a worker, search for the worker by using the **Extended log on** operation.</span></span> <span data-ttu-id="cf1f1-128">Válassza ki a dolgozót, majd kattintson az **Törlés** gombra.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-128">Select the worker, and then click **Unassign**.</span></span> <span data-ttu-id="cf1f1-129">Minden (az adott dolgozóhoz tartozó) kiterjesztett bejelentkezési hitelesítő adat törlődik.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-129">All extended logon credentials that are associated with that worker are removed.</span></span>
 
-<a name="extending-extended-logon"></a>Kiterjesztett bejelentkezés kiterjesztése
+<a name="extending-extended-logon"></a><span data-ttu-id="cf1f1-130">Kiterjesztett bejelentkezés kiterjesztése</span><span class="sxs-lookup"><span data-stu-id="cf1f1-130">Extending extended logon</span></span>
 ========================
 
-A bejelentkezés szolgáltatás kibővíthető, így pedig további beléptető szerkezetek is használhatóvá válnak (például: tenyér beolvasó). További részletek a Pénztár kiterjesztés dokumentációban találhatók.
+<span data-ttu-id="cf1f1-131">A bejelentkezés szolgáltatás kibővíthető, így pedig további beléptető szerkezetek is használhatóvá válnak (például: tenyér beolvasó).</span><span class="sxs-lookup"><span data-stu-id="cf1f1-131">The logon service can be extended to support additional extended logon devices, such as palm scanners.</span></span> <span data-ttu-id="cf1f1-132">További részletek a Pénztár kiterjesztés dokumentációban találhatók.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-132">For more information, see the POS extensibility documentation.</span></span>
 
-<a name="using-extended-logon"></a>Kiterjesztett bejelentkezés használata
+<a name="using-extended-logon"></a><span data-ttu-id="cf1f1-133">Kiterjesztett bejelentkezés használata</span><span class="sxs-lookup"><span data-stu-id="cf1f1-133">Using extended logon</span></span>
 ====================
 
-Amennyiben a kiterjesztett bejelentkezés konfigurációja megtörtént és a dolgozóhoz hozzá lett rendelve jelszó vagy mágnescsík, a dolgozónak csupán le kell húznia vagy beolvastatnia a kártyáját, míg a pénztár belépő oldala meg van jelenítve. Ha a jelszó is szükséges a bejelentkezéshez, a dolgozónak azt is szükséges beütnie..
+<span data-ttu-id="cf1f1-134">Amennyiben a kiterjesztett bejelentkezés konfigurációja megtörtént és a dolgozóhoz hozzá lett rendelve jelszó vagy mágnescsík, a dolgozónak csupán le kell húznia vagy beolvastatnia a kártyáját, míg a pénztár belépő oldala meg van jelenítve.</span><span class="sxs-lookup"><span data-stu-id="cf1f1-134">When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed.</span></span> <span data-ttu-id="cf1f1-135">Ha a jelszó is szükséges a bejelentkezéshez, a dolgozónak azt is szükséges beütnie..</span><span class="sxs-lookup"><span data-stu-id="cf1f1-135">If a password is also required before logon can proceed, the worker is prompted to enter his or her password.</span></span>
 
 
 

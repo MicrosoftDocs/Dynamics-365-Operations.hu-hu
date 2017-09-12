@@ -1,7 +1,7 @@
 ---
 title: "Készletzárolás"
 description: "A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,63 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7d00aaa272de32d4ef2082bf1822125800ca8a1e
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: eed2f3e203808f378ce954b6cc308859fea89e60
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="inventory-blocking"></a>Készletzárolás
+# <a name="inventory-blocking"></a><span data-ttu-id="d5376-104">Készletzárolás</span><span class="sxs-lookup"><span data-stu-id="d5376-104">Inventory blocking</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
+<span data-ttu-id="d5376-105">A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban.</span><span class="sxs-lookup"><span data-stu-id="d5376-105">This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="d5376-106">A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.</span><span class="sxs-lookup"><span data-stu-id="d5376-106">You can use inventory blocking to prevent items from being processed or consumed.</span></span>
 
-Készletcikkeket a következő módokon zárolhat:
--   Manuálisan
--   Minőségi rendelés létrehozásával
--   Minőségi rendelést generáló folyamat használatával
--   Készletállapot zárolásának használatával
+<span data-ttu-id="d5376-107">Készletcikkeket a következő módokon zárolhat:</span><span class="sxs-lookup"><span data-stu-id="d5376-107">You can block inventory items in the following ways:</span></span>
+-   <span data-ttu-id="d5376-108">Manuálisan</span><span class="sxs-lookup"><span data-stu-id="d5376-108">Manually</span></span>
+-   <span data-ttu-id="d5376-109">Minőségi rendelés létrehozásával</span><span class="sxs-lookup"><span data-stu-id="d5376-109">By creating a quality order</span></span>
+-   <span data-ttu-id="d5376-110">Minőségi rendelést generáló folyamat használatával</span><span class="sxs-lookup"><span data-stu-id="d5376-110">By using a process that generates a quality order</span></span>
+-   <span data-ttu-id="d5376-111">Készletállapot zárolásának használatával</span><span class="sxs-lookup"><span data-stu-id="d5376-111">By using inventory status blocking</span></span>
 
-## <a name="blocking-items-manually"></a>Cikkek manuális zárolásával
-Egy cikk adott mennyiségét a **Készlet zárolása** oldalon létrehozott tranzakcióval zárolhatja. Csak az aktuális készletben elérhető cikkeket lehet manuálisan zárolni. Manuálisan zárolt mennyiségeknél el kell döntenie, hogy a várt bevételezések is szerepelhetnek-e (várt aktuális mennyiségként) a tervezési tevékenységben. A várt bevételezések olyan zárolt cikkek, amelyek az ellenőrzés befejezése után várhatóan bekerülnek az aktuális készletbe. A várt dátumot megtarthatja manuálisan. Alapértelmezés szerint a **Várt bevételezések** beállítás van megadva olyan cikkeknél, amelyek a minőségi rendelésen keresztül zárolva vannak. Manuálisan zárolt mennyiségek zárolását feloldhatja a **Készletzárolás** oldalon, a tranzakció törlésével.
+## <a name="blocking-items-manually"></a><span data-ttu-id="d5376-112">Cikkek manuális zárolásával</span><span class="sxs-lookup"><span data-stu-id="d5376-112">Blocking items manually</span></span>
+<span data-ttu-id="d5376-113">Egy cikk adott mennyiségét a **Készlet zárolása** oldalon létrehozott tranzakcióval zárolhatja.</span><span class="sxs-lookup"><span data-stu-id="d5376-113">You can block a quantity of an item by creating a transaction on the **Inventory blocking** page.</span></span> <span data-ttu-id="d5376-114">Csak az aktuális készletben elérhető cikkeket lehet manuálisan zárolni.</span><span class="sxs-lookup"><span data-stu-id="d5376-114">Only items that are available as on-hand inventory can be blocked manually.</span></span> <span data-ttu-id="d5376-115">Manuálisan zárolt mennyiségeknél el kell döntenie, hogy a várt bevételezések is szerepelhetnek-e (várt aktuális mennyiségként) a tervezési tevékenységben.</span><span class="sxs-lookup"><span data-stu-id="d5376-115">For manually blocked quantities, you must decide whether planning activities include expected receipts as an expected on-hand quantity.</span></span> <span data-ttu-id="d5376-116">A várt bevételezések olyan zárolt cikkek, amelyek az ellenőrzés befejezése után várhatóan bekerülnek az aktuális készletbe.</span><span class="sxs-lookup"><span data-stu-id="d5376-116">Expected receipts are blocked items that you expect to be available as on-hand inventory after inspection is completed.</span></span> <span data-ttu-id="d5376-117">A várt dátumot megtarthatja manuálisan.</span><span class="sxs-lookup"><span data-stu-id="d5376-117">You can maintain the expected date.</span></span> <span data-ttu-id="d5376-118">Alapértelmezés szerint a **Várt bevételezések** beállítás van megadva olyan cikkeknél, amelyek a minőségi rendelésen keresztül zárolva vannak.</span><span class="sxs-lookup"><span data-stu-id="d5376-118">By default, the **Expected receipts** option is selected for items that are blocked through a quality order.</span></span> <span data-ttu-id="d5376-119">Manuálisan zárolt mennyiségek zárolását feloldhatja a **Készletzárolás** oldalon, a tranzakció törlésével.</span><span class="sxs-lookup"><span data-stu-id="d5376-119">You can cancel a manual block on a quantity by deleting the transaction on the **Inventory blocking** page.</span></span>
 
-## <a name="blocking-items-by-creating-a-quality-order"></a>Cikkek zárolása minőségi rendelés létrehozásával
-Megadhat cikkeket, amelyeket a minőségi rendelés létrehozásával ellenőrizni kell a **Minőségi rendelések** oldalon. A minőségi rendelés létrehozásakor a cikk megadott mennyisége zárolásra kerül. A mintavételi terv, amely egy minőségi rendeléshez van társítva, csak az ellenőrzendő cikkek mennyiségét szabályozza, nem a zárolt mennyiséget. A minőségi rendelésen megadott mennyiség a zárolt mennyiség, függetlenül a mintavételi terv által megadott mennyiségtől, melyet ellenőrzésre kell küldeni.
+## <a name="blocking-items-by-creating-a-quality-order"></a><span data-ttu-id="d5376-120">Cikkek zárolása minőségi rendelés létrehozásával</span><span class="sxs-lookup"><span data-stu-id="d5376-120">Blocking items by creating a quality order</span></span>
+<span data-ttu-id="d5376-121">Megadhat cikkeket, amelyeket a minőségi rendelés létrehozásával ellenőrizni kell a **Minőségi rendelések** oldalon.</span><span class="sxs-lookup"><span data-stu-id="d5376-121">You can specify items that must be inspected by creating a quality order on the **Quality orders** page.</span></span> <span data-ttu-id="d5376-122">A minőségi rendelés létrehozásakor a cikk megadott mennyisége zárolásra kerül.</span><span class="sxs-lookup"><span data-stu-id="d5376-122">When you create a quality order, the quantity that you specify for an item is blocked.</span></span> <span data-ttu-id="d5376-123">A mintavételi terv, amely egy minőségi rendeléshez van társítva, csak az ellenőrzendő cikkek mennyiségét szabályozza, nem a zárolt mennyiséget.</span><span class="sxs-lookup"><span data-stu-id="d5376-123">The sampling plan that is associated with a quality order controls only the quantity of items that must be inspected, not the quantity that is blocked.</span></span> <span data-ttu-id="d5376-124">A minőségi rendelésen megadott mennyiség a zárolt mennyiség, függetlenül a mintavételi terv által megadott mennyiségtől, melyet ellenőrzésre kell küldeni.</span><span class="sxs-lookup"><span data-stu-id="d5376-124">The quantity that is entered on the quality order is the quantity that is blocked, regardless of the quantity that the sampling plan specifies should be sent for inspection.</span></span>
 
-## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Cikkek zárolása minőségi rendelést generáló folyamat használatával
-Ha egy minőségi folyamat meghatározza, hogy egy cikket felül kell vizsgálni, akkor a cikkmennyiség automatikusan zárolásra kerül. Így ha egy minőségi rendelés automatikusan létrejön, akkor a minőségi rendeléshez hozzárendelt mintavételi terv nem csak a vizsgálandó mennyiséget, hanem a zárolt mennyiséget is meghatározza. Ha a **Teljes zárolás** opció a **Cikkmintavétel** képernyőn meg van jelölve, akkor például a beszerzési rendelés sorának teljes mennyisége zárolásra kerül a vizsgálathoz, a mintavételi mennyiségtől függetlenül.
-### <a name="example"></a>Példa
+## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a><span data-ttu-id="d5376-125">Cikkek zárolása minőségi rendelést generáló folyamat használatával</span><span class="sxs-lookup"><span data-stu-id="d5376-125">Blocking items by using a process that generates a quality order</span></span>
+<span data-ttu-id="d5376-126">Ha egy minőségi folyamat meghatározza, hogy egy cikket felül kell vizsgálni, akkor a cikkmennyiség automatikusan zárolásra kerül.</span><span class="sxs-lookup"><span data-stu-id="d5376-126">If a quality process specifies that an item must be inspected, a quantity of the item is blocked automatically.</span></span> <span data-ttu-id="d5376-127">Így ha egy minőségi rendelés automatikusan létrejön, akkor a minőségi rendeléshez hozzárendelt mintavételi terv nem csak a vizsgálandó mennyiséget, hanem a zárolt mennyiséget is meghatározza.</span><span class="sxs-lookup"><span data-stu-id="d5376-127">Therefore, when a quality order is generated automatically, the item sampling plan that is associated with the quality order controls the both quantity of items that is blocked and the quantity that must be inspected.</span></span> <span data-ttu-id="d5376-128">Ha a **Teljes zárolás** opció a **Cikkmintavétel** képernyőn meg van jelölve, akkor például a beszerzési rendelés sorának teljes mennyisége zárolásra kerül a vizsgálathoz, a mintavételi mennyiségtől függetlenül.</span><span class="sxs-lookup"><span data-stu-id="d5376-128">If the **Full blocking** option on the **Item sampling** page is selected, the full quantity of, for example, a purchase order line is blocked during inspection, regardless of the item sampling quantity.</span></span>
+### <a name="example"></a><span data-ttu-id="d5376-129">Példa</span><span class="sxs-lookup"><span data-stu-id="d5376-129">Example</span></span>
 
-A következő példában minőségi rendelés generálódik egy beszerzési rendelés szállítólevelének feladása során. A **Minőségi társítások** képernyőn meghatározta, hogy a beszerzési rendelés szállítólevele van beállítva a minőségi rendelést kiváltó folyamatként.
+<span data-ttu-id="d5376-130">A következő példában minőségi rendelés generálódik egy beszerzési rendelés szállítólevelének feladása során.</span><span class="sxs-lookup"><span data-stu-id="d5376-130">In the following example, a quality order is generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="d5376-131">A **Minőségi társítások** képernyőn meghatározta, hogy a beszerzési rendelés szállítólevele van beállítva a minőségi rendelést kiváltó folyamatként.</span><span class="sxs-lookup"><span data-stu-id="d5376-131">On the **Quality associations** page, you specified that posting of a purchase order packing slip is the process that activates a quality order.</span></span>
 
-|Beállítás                                                                     |Felhasználói művelet                 |Eredmény             |
+|<span data-ttu-id="d5376-132">Beállítás</span><span class="sxs-lookup"><span data-stu-id="d5376-132">Setup</span></span>                                                                     |<span data-ttu-id="d5376-133">Felhasználói művelet</span><span class="sxs-lookup"><span data-stu-id="d5376-133">User action</span></span>                 |<span data-ttu-id="d5376-134">Eredmény</span><span class="sxs-lookup"><span data-stu-id="d5376-134">Result</span></span>             |
 |--------------------------------------------------------------------------|----------------------------|-------------------|
-| A minőségi társítás megadja, hogy a beszerzési rendelés szállítólevelének feladásakor minőségi rendelést kell generálni. A minőségi rendelés cikkmintavételi beállítása alapján a beszerzési rendelés sorában szereplő mennyiség 10 %-át kell ellenőrizni. Emellett, mivel a **Teljes zárolás** jelölőmező be van jelölve a cikkmintavételi beállításokban, a beszerzési rendelés sorának teljes mennyiségét zárolni kell a vizsgálat idejére, a vizsgálatra küldött mennyiségtől függetlenül. | A csomagjegyzék feladásra kerül. | Minőségi rendelés generálódik. A cikk beszerzési rendelési mennyiségének 10%-át elküldik vizsgálatra. A beszerzési rendelés sorának teljes mennyisége zárolásra kerül. |
+| <span data-ttu-id="d5376-135">A minőségi társítás megadja, hogy a beszerzési rendelés szállítólevelének feladásakor minőségi rendelést kell generálni.</span><span class="sxs-lookup"><span data-stu-id="d5376-135">A quality association specifies that a quality order must be generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="d5376-136">A minőségi rendelés cikkmintavételi beállítása alapján a beszerzési rendelés sorában szereplő mennyiség 10 %-át kell ellenőrizni.</span><span class="sxs-lookup"><span data-stu-id="d5376-136">The item sampling setup of the quality order specifies that 10 percent of the quantity on the purchase order line must be inspected.</span></span> <span data-ttu-id="d5376-137">Emellett, mivel a **Teljes zárolás** jelölőmező be van jelölve a cikkmintavételi beállításokban, a beszerzési rendelés sorának teljes mennyiségét zárolni kell a vizsgálat idejére, a vizsgálatra küldött mennyiségtől függetlenül.</span><span class="sxs-lookup"><span data-stu-id="d5376-137">Furthermore, because the **Full blocking** option selected in the item sampling setup, the full quantity of the purchase order line must be blocked during inspection, regardless of the quantity that is sent for inspection.</span></span> | <span data-ttu-id="d5376-138">A csomagjegyzék feladásra kerül.</span><span class="sxs-lookup"><span data-stu-id="d5376-138">The packing slip is posted.</span></span> | <span data-ttu-id="d5376-139">Minőségi rendelés generálódik.</span><span class="sxs-lookup"><span data-stu-id="d5376-139">A quality order is generated.</span></span> <span data-ttu-id="d5376-140">A cikk beszerzési rendelési mennyiségének 10%-át elküldik vizsgálatra.</span><span class="sxs-lookup"><span data-stu-id="d5376-140">Ten percent of the purchase order quantity for the item is sent to inspection.</span></span> <span data-ttu-id="d5376-141">A beszerzési rendelés sorának teljes mennyisége zárolásra kerül.</span><span class="sxs-lookup"><span data-stu-id="d5376-141">The full quantity of the purchase order line is blocked.</span></span> |
 
-## <a name="blocking-items-by-using-inventory-status-blocking"></a>Cikkek zárolása a készletállapot zárolásának használatával
-Megadhatja, hogy mely készletállapotok zároló állapotok, a **Készletzárolás** paraméter használatával, a **Készletállapotok** oldalon.  Készletállapotok nem használhatók zároló állapotokként termelési rendelések, értékesítési rendelések, átmozgatási rendelések, kimenő tranzakciók vagy projektintegráció esetén. Kimenő munka esetén mindig elérhető készletállapotú cikkeket használjon. Ha **Törött** állapotú cikkekkel futtat alaptervezést, a rendszer hiányzónak fogja tekinteni őket, és automatikusan feltölti a készletet.
+## <a name="blocking-items-by-using-inventory-status-blocking"></a><span data-ttu-id="d5376-142">Cikkek zárolása a készletállapot zárolásának használatával</span><span class="sxs-lookup"><span data-stu-id="d5376-142">Blocking items by using inventory status blocking</span></span>
+<span data-ttu-id="d5376-143">Megadhatja, hogy mely készletállapotok zároló állapotok, a **Készletzárolás** paraméter használatával, a **Készletállapotok** oldalon.</span><span class="sxs-lookup"><span data-stu-id="d5376-143">You can specify which inventory statuses are blocking statuses by using the **Inventory blocking** parameter on the **Inventory statuses** page.</span></span> <span data-ttu-id="d5376-144"> Készletállapotok nem használhatók zároló állapotokként termelési rendelések, értékesítési rendelések, átmozgatási rendelések, kimenő tranzakciók vagy projektintegráció esetén.</span><span class="sxs-lookup"><span data-stu-id="d5376-144">You can't use inventory statuses as blocking statuses for production orders, sales orders, transfer orders, outbound transactions, or project integrations.</span></span> <span data-ttu-id="d5376-145">Kimenő munka esetén mindig elérhető készletállapotú cikkeket használjon.</span><span class="sxs-lookup"><span data-stu-id="d5376-145">For outbound work, use items that have an available inventory status.</span></span> <span data-ttu-id="d5376-146">Ha **Törött** állapotú cikkekkel futtat alaptervezést, a rendszer hiányzónak fogja tekinteni őket, és automatikusan feltölti a készletet.</span><span class="sxs-lookup"><span data-stu-id="d5376-146">If items have a status of **Broken**, and master planning is run on those items, the items are considered missing, and inventory is automatically replenished.</span></span>
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="d5376-147">Lásd még</span><span class="sxs-lookup"><span data-stu-id="d5376-147">See also</span></span>
 --------
 
-[Készletzárolás létrehozása és karbantartása (Feladat-útmutató)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
+[<span data-ttu-id="d5376-148">Készletzárolás létrehozása és karbantartása (Feladat-útmutató)</span><span class="sxs-lookup"><span data-stu-id="d5376-148">Create and maintain an inventory blocking (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
 
-[Minőségkezelési folyamatok](quality-management-processes.md)
+[<span data-ttu-id="d5376-149">Minőségkezelési folyamatok</span><span class="sxs-lookup"><span data-stu-id="d5376-149">Quality management processes</span></span>](quality-management-processes.md)
 
-[Áru minőségének ellenőrzése (Feladat-útmutató)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
-
-
-
+[<span data-ttu-id="d5376-150">Áru minőségének ellenőrzése (Feladat-útmutató)</span><span class="sxs-lookup"><span data-stu-id="d5376-150">Inspect the quality of goods (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
 

@@ -16,53 +16,53 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: aa2bb25207be4fde43ae9dee85ee6868b1b58972
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 956edeac33f8531ecebef64301f2318333000429
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-delivery-schedule"></a>Szállítási ütemezés létrehozása
+# <a name="create-a-delivery-schedule"></a><span data-ttu-id="b4d02-103">Szállítási ütemezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="b4d02-103">Create a delivery schedule</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések kiszállítási ütemezését. A szállítási ütemezés akkor használatos, ha egy rendeléshez tartozó mennyiséget több részletben kell szállítani, vagy ilyen árajánlat szükséges. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
+<span data-ttu-id="b4d02-104">Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések kiszállítási ütemezését.</span><span class="sxs-lookup"><span data-stu-id="b4d02-104">This procedure demonstrates how to create a delivery schedule for a sales order.</span></span> <span data-ttu-id="b4d02-105">A szállítási ütemezés akkor használatos, ha egy rendeléshez tartozó mennyiséget több részletben kell szállítani, vagy ilyen árajánlat szükséges.</span><span class="sxs-lookup"><span data-stu-id="b4d02-105">A delivery schedule is used when a quantity on an order or a quotation is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="b4d02-106">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="b4d02-106">You can run this procedure in demo data company USMF or on your own data.</span></span>
 
 
-## <a name="create-delivery-schedule"></a>Szállítási ütemezés létrehozása
-1. Ugrás az összes értékesítési rendelésre.
-2. Kattintson az Új lehetőségre.
-3. A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.
-4. Kattintson az OK gombra.
-5. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-6. A Mennyiség mezőben adjon meg egy 1-nél nagyobb számot.
-7. Kattintson az Értékesítésirendelés-sor lehetőségre.
-8. Kattintson a Szállítási ütemezés elemre.
-    * A Szállítási ütemezés lap az a hely, ahol megadhatja a szállítmányok számát, amely mennyiséggel a rendelési sor szállításra kerül a vevőnek.    
-    * Alapértelmezés szerint a rendszer bemásolja a teljes mennyiséget és az egyéb részleteket az eredeti eladási sorból az első szállítási ütemezés sorába. Ebben a példában két szállítmányhoz ütemezést hozunk létre, a második szállítmány dátumát egy héttel eltolva az első szállítmányétól.  
-9. A Mennyiség mezőben adjon meg egy számot, amely a teljes mennyiség része.
-10. Kattintson az Új elemre.
-11. Ezután a Mennyiség mezőben adja meg a visszamaradó mennyiséget.
-12. A kért szállítási dátum mezőben adjon meg egy olyan dátumot, amelyik egy héttel korábbi az első szállítási dátumnál.
-    * A két lehetőség a Költségek átalakítás gyorslapon meghatározza, hogy hogyan oszoljanak el a költségek a szállítási ütemezés sorok között, miután hozzárendelte őket az eredeti rendelési sorhoz. Ha a Bruttó összeg másolását választja ugyanaz a költségösszeg kerül másolásra minden sorba. A Felosztás szállítmánysorokra lehetőség egyenlően osztja el a költségeket a szállítmánysorok között.  
-    * Csak rögzített költségek oszthatók, míg a változó költségek változatlanul a sorokba kerülnek.  
-13. Vigye el a kurzort a második szállítási sortól az oldal frissítéséhez.
-    * Nyomon követheti a teljes mennyiséget, ami a szállítási ütemezés soraihoz van rendelve ha megtekinti az Összes és Maradvány mezőket. Ha a maradvány mennyisége nulla, akkor a teljes mennyiség az eredeti sorból az ütemezéshez lett rendelve.   
-14. Kattintson az OK gombra.
-    * A szállítási ütemezés most a rendeléssorokba lett másolva.   
-    * Az eredeti rendelési sorra hivatkozó Kereskedelmi sor egy több szállítással rendelkező Rendeléssorhoz lett konvertálva. Egy külön ikon jelzi, ami fejlécként szolgál a szállítási sorokhoz.  
-    * A szállítási sorokként hivatkozott két új sor egy szállítási ütemezést képez. A rendelés szembeni ezen sorok és nem az eredeti sor szerint kerül feldolgozásra. Ha a dokumentumokat, például visszaigazolási leveleket, szállítóleveleket, kitárolási leveleket vagy számlákat nyomtat csak a szállítási sorok láthatóak.   
-    * A szállítási sorok különböző szállítási dátumokkal, mennyiségekkel, szállítási módokkal és tárolási dimenziókkal rendelkezhetnek, például webhely és raktár. Ugyanakkor a termékdimenzióknak mindig egyezniük kell a kereskedelmi sorral, amit nem lehet változtatni.  
-15. A Mennyiség mezőben adjon meg a jelenleginél nagyobb számot.
-16. Válassza ki a kereskedelmi sort a mennyiség-újraszámítás hatásának megtekintéséhez.
-17. A Művelet panelen kattintson a Kitárolás és csomagolás elemre.
-18. Kattintson A szállítólevél feladása lehetőségre.
-19. Bontsa ki a Paraméterek szakaszt.
-20. A Mennyiség mezőben válassza a „Mind” lehetőséget.
-    * Vegye figyelembe, hogy a szállítólevél a két szállítási ütemezési sorba és a nem az eredeti rendelési sorba fog létrejönni.  
-21. Válassza az Igen lehetőséget az Szállítólevél nyomtatása mezőben.
-22. Kattintson az OK gombra.
-23. Kattintson az Igen gombra.
-24. Zárja be a lapot.
+## <a name="create-delivery-schedule"></a><span data-ttu-id="b4d02-107">Szállítási ütemezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="b4d02-107">Create delivery schedule</span></span>
+1. <span data-ttu-id="b4d02-108">Ugrás az összes értékesítési rendelésre.</span><span class="sxs-lookup"><span data-stu-id="b4d02-108">Go to All sales orders.</span></span>
+2. <span data-ttu-id="b4d02-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b4d02-109">Click New.</span></span>
+3. <span data-ttu-id="b4d02-110">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b4d02-110">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="b4d02-111">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="b4d02-111">Click OK.</span></span>
+5. <span data-ttu-id="b4d02-112">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b4d02-112">In the Item number field, enter or select a value.</span></span>
+6. <span data-ttu-id="b4d02-113">A Mennyiség mezőben adjon meg egy 1-nél nagyobb számot.</span><span class="sxs-lookup"><span data-stu-id="b4d02-113">In the Quantity field, enter a number that is bigger than 1.</span></span>
+7. <span data-ttu-id="b4d02-114">Kattintson az Értékesítésirendelés-sor lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b4d02-114">Click Sales order line.</span></span>
+8. <span data-ttu-id="b4d02-115">Kattintson a Szállítási ütemezés elemre.</span><span class="sxs-lookup"><span data-stu-id="b4d02-115">Click Delivery schedule.</span></span>
+    * <span data-ttu-id="b4d02-116">A Szállítási ütemezés lap az a hely, ahol megadhatja a szállítmányok számát, amely mennyiséggel a rendelési sor szállításra kerül a vevőnek.</span><span class="sxs-lookup"><span data-stu-id="b4d02-116">The Delivery schedule page is the place where you can specify the number of shipments in which the total quantity of the order line will be delivered to the customer.</span></span>    
+    * <span data-ttu-id="b4d02-117">Alapértelmezés szerint a rendszer bemásolja a teljes mennyiséget és az egyéb részleteket az eredeti eladási sorból az első szállítási ütemezés sorába.</span><span class="sxs-lookup"><span data-stu-id="b4d02-117">By default, the system copies the total quantity and other delivery details of the original sales line into the first delivery schedule line.</span></span> <span data-ttu-id="b4d02-118">Ebben a példában két szállítmányhoz ütemezést hozunk létre, a második szállítmány dátumát egy héttel eltolva az első szállítmányétól.</span><span class="sxs-lookup"><span data-stu-id="b4d02-118">In this example, we’ll create a schedule for two shipments, with the second shipment's date offset by a week from the first one.</span></span>  
+9. <span data-ttu-id="b4d02-119">A Mennyiség mezőben adjon meg egy számot, amely a teljes mennyiség része.</span><span class="sxs-lookup"><span data-stu-id="b4d02-119">In the Quantity field, enter a number that is part of the total quantity.</span></span>
+10. <span data-ttu-id="b4d02-120">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="b4d02-120">Click New.</span></span>
+11. <span data-ttu-id="b4d02-121">Ezután a Mennyiség mezőben adja meg a visszamaradó mennyiséget.</span><span class="sxs-lookup"><span data-stu-id="b4d02-121">In the Quantity field, enter the remaining quantity.</span></span>
+12. <span data-ttu-id="b4d02-122">A kért szállítási dátum mezőben adjon meg egy olyan dátumot, amelyik egy héttel korábbi az első szállítási dátumnál.</span><span class="sxs-lookup"><span data-stu-id="b4d02-122">In the Requested ship date field, enter a date a date that is one week ahead from the date of the first delivery line.</span></span>
+    * <span data-ttu-id="b4d02-123">A két lehetőség a Költségek átalakítás gyorslapon meghatározza, hogy hogyan oszoljanak el a költségek a szállítási ütemezés sorok között, miután hozzárendelte őket az eredeti rendelési sorhoz.</span><span class="sxs-lookup"><span data-stu-id="b4d02-123">The two options on the Charges conversion FastTab control how you want the charges to be distributed across the delivery schedule lines, once they’ve been assigned to the original order line.</span></span> <span data-ttu-id="b4d02-124">Ha a Bruttó összeg másolását választja ugyanaz a költségösszeg kerül másolásra minden sorba.</span><span class="sxs-lookup"><span data-stu-id="b4d02-124">If you select Copy gross amounts, the same charge amount is copied to each line.</span></span> <span data-ttu-id="b4d02-125">A Felosztás szállítmánysorokra lehetőség egyenlően osztja el a költségeket a szállítmánysorok között.</span><span class="sxs-lookup"><span data-stu-id="b4d02-125">The Allocate to delivery lines option divides the charge equally across the delivery lines.</span></span>  
+    * <span data-ttu-id="b4d02-126">Csak rögzített költségek oszthatók, míg a változó költségek változatlanul a sorokba kerülnek.</span><span class="sxs-lookup"><span data-stu-id="b4d02-126">Only fixed charges can be divided, whereas variable charges will still be copied to the lines.</span></span>  
+13. <span data-ttu-id="b4d02-127">Vigye el a kurzort a második szállítási sortól az oldal frissítéséhez.</span><span class="sxs-lookup"><span data-stu-id="b4d02-127">Move the cursor away from the second delivery line to update the page.</span></span>
+    * <span data-ttu-id="b4d02-128">Nyomon követheti a teljes mennyiséget, ami a szállítási ütemezés soraihoz van rendelve ha megtekinti az Összes és Maradvány mezőket.</span><span class="sxs-lookup"><span data-stu-id="b4d02-128">You can keep track of the total quantity that’s allocated to the delivery schedule lines by looking at the Total and Remaining fields.</span></span> <span data-ttu-id="b4d02-129">Ha a maradvány mennyisége nulla, akkor a teljes mennyiség az eredeti sorból az ütemezéshez lett rendelve.</span><span class="sxs-lookup"><span data-stu-id="b4d02-129">When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.</span></span>   
+14. <span data-ttu-id="b4d02-130">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="b4d02-130">Click OK.</span></span>
+    * <span data-ttu-id="b4d02-131">A szállítási ütemezés most a rendeléssorokba lett másolva.</span><span class="sxs-lookup"><span data-stu-id="b4d02-131">The delivery schedule has now been copied to the order lines.</span></span>   
+    * <span data-ttu-id="b4d02-132">Az eredeti rendelési sorra hivatkozó Kereskedelmi sor egy több szállítással rendelkező Rendeléssorhoz lett konvertálva.</span><span class="sxs-lookup"><span data-stu-id="b4d02-132">The original order line, referred to as a Commercial line, has been converted to an Order line with multiple deliveries.</span></span> <span data-ttu-id="b4d02-133">Egy külön ikon jelzi, ami fejlécként szolgál a szállítási sorokhoz.</span><span class="sxs-lookup"><span data-stu-id="b4d02-133">It is marked with a distinct icon and acts as a header for the delivery lines.</span></span>  
+    * <span data-ttu-id="b4d02-134">A szállítási sorokként hivatkozott két új sor egy szállítási ütemezést képez.</span><span class="sxs-lookup"><span data-stu-id="b4d02-134">The two new lines, referred to as delivery lines, make up one delivery schedule.</span></span> <span data-ttu-id="b4d02-135">A rendelés szembeni ezen sorok és nem az eredeti sor szerint kerül feldolgozásra.</span><span class="sxs-lookup"><span data-stu-id="b4d02-135">The order will be processed against these lines and not the original line.</span></span> <span data-ttu-id="b4d02-136">Ha a dokumentumokat, például visszaigazolási leveleket, szállítóleveleket, kitárolási leveleket vagy számlákat nyomtat csak a szállítási sorok láthatóak.</span><span class="sxs-lookup"><span data-stu-id="b4d02-136">If documents such as confirmation slips, picking lists, packing slips, or invoices are printed, only the delivery lines are shown.</span></span>   
+    * <span data-ttu-id="b4d02-137">A szállítási sorok különböző szállítási dátumokkal, mennyiségekkel, szállítási módokkal és tárolási dimenziókkal rendelkezhetnek, például webhely és raktár.</span><span class="sxs-lookup"><span data-stu-id="b4d02-137">The delivery lines can have different delivery dates, quantities, modes of delivery, and storage dimensions, such as site and warehouse.</span></span> <span data-ttu-id="b4d02-138">Ugyanakkor a termékdimenzióknak mindig egyezniük kell a kereskedelmi sorral, amit nem lehet változtatni.</span><span class="sxs-lookup"><span data-stu-id="b4d02-138">However, the product dimensions must always match the ones on the commercial line and can't be changed.</span></span>  
+15. <span data-ttu-id="b4d02-139">A Mennyiség mezőben adjon meg a jelenleginél nagyobb számot.</span><span class="sxs-lookup"><span data-stu-id="b4d02-139">In the Quantity field, enter a number that's bigger than the current one.</span></span>
+16. <span data-ttu-id="b4d02-140">Válassza ki a kereskedelmi sort a mennyiség-újraszámítás hatásának megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="b4d02-140">Select the commercial line to see the effect of the quantity recalculation.</span></span>
+17. <span data-ttu-id="b4d02-141">A Művelet panelen kattintson a Kitárolás és csomagolás elemre.</span><span class="sxs-lookup"><span data-stu-id="b4d02-141">On the Action Pane, click Pick and pack.</span></span>
+18. <span data-ttu-id="b4d02-142">Kattintson A szállítólevél feladása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b4d02-142">Click Post packing slip.</span></span>
+19. <span data-ttu-id="b4d02-143">Bontsa ki a Paraméterek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b4d02-143">Expand the Parameters section.</span></span>
+20. <span data-ttu-id="b4d02-144">A Mennyiség mezőben válassza a „Mind” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="b4d02-144">In the Quantity field, select 'All'.</span></span>
+    * <span data-ttu-id="b4d02-145">Vegye figyelembe, hogy a szállítólevél a két szállítási ütemezési sorba és a nem az eredeti rendelési sorba fog létrejönni.</span><span class="sxs-lookup"><span data-stu-id="b4d02-145">Note that the packing slip will be created for the two delivery schedule lines and not the original order line.</span></span>  
+21. <span data-ttu-id="b4d02-146">Válassza az Igen lehetőséget az Szállítólevél nyomtatása mezőben.</span><span class="sxs-lookup"><span data-stu-id="b4d02-146">Select Yes in the Print packing slip field.</span></span>
+22. <span data-ttu-id="b4d02-147">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="b4d02-147">Click OK.</span></span>
+23. <span data-ttu-id="b4d02-148">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="b4d02-148">Click Yes.</span></span>
+24. <span data-ttu-id="b4d02-149">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="b4d02-149">Close the page.</span></span>
 
 

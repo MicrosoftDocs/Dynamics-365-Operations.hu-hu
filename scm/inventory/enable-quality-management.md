@@ -1,7 +1,7 @@
 ---
 title: "Minőségkezelés áttekintése"
 description: "Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,293 +10,293 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: c2c7a9c82809bd989eb362995dfe8e6d7829e89d
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 28ef47e2dc1f9c7e1c0b262c58332dcfea1f7495
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="quality-management-overview"></a>Minőségkezelés áttekintése
+# <a name="quality-management-overview"></a><span data-ttu-id="96e0d-103">Minőségkezelés áttekintése</span><span class="sxs-lookup"><span data-stu-id="96e0d-103">Quality management overview</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül.
+<span data-ttu-id="96e0d-104">Ez a cikk leírja, hogyan alkalmazza a minőségkezelés funkciót a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy ezzel segítse a termékminőség fejlesztését az ellátási láncán belül.</span><span class="sxs-lookup"><span data-stu-id="96e0d-104">This article describes how you can use quality management in Microsoft Dynamics 365 for Finance and Operations to help improve product quality within your supply chain.</span></span>
 
-A minőségkezelés segítséget nyújt a szabálytalan termékek javítási folyamatának kezelésében, azok eredetétől függetlenül. Mivel a diagnosztikai típusok javítási jelentésekhez kapcsolódnak, a Microsoft Dynamics 365 for Finance and Operations rendszer képes beütemezni a problémák megoldásához és azok visszatérésének megelőzéséhez szükséges feladatokat.
+<span data-ttu-id="96e0d-105">A minőségkezelés segítséget nyújt a szabálytalan termékek javítási folyamatának kezelésében, azok eredetétől függetlenül.</span><span class="sxs-lookup"><span data-stu-id="96e0d-105">Quality management can help you manage turnaround times when you handle nonconforming products, regardless of their point of origin.</span></span> <span data-ttu-id="96e0d-106">Mivel a diagnosztikai típusok javítási jelentésekhez kapcsolódnak, a Microsoft Dynamics 365 for Finance and Operations rendszer képes beütemezni a problémák megoldásához és azok visszatérésének megelőzéséhez szükséges feladatokat.</span><span class="sxs-lookup"><span data-stu-id="96e0d-106">Because diagnostic types are linked to correction reporting, Microsoft Dynamics 365 for Finance and Operations can schedule tasks to correct problems and prevent them from recurring.</span></span>
 
-A szabálytalanság kezelésére szolgáló funkció mellett a minőségkezelés egyéb funkciói lehetővé teszik a problémakövetést problématípus (akár belső problémák) szerint, valamint a rövid- és hosszútávú megoldások azonosítását. A fő teljesítménymutatókról (KPI-kről) vezetett statisztikák betekintést nyújtanak a múltban megtörtént szabálytalansági problémákba és az azok javítására használt megoldásokba. Az előzményadatok segítségével felülvizsgálhatja a korábbi minőségi mérések hatékonyságát, és kidolgozhatja a jövőben alkalmazni kívánt megfelelő méréseket.
+<span data-ttu-id="96e0d-107">A szabálytalanság kezelésére szolgáló funkció mellett a minőségkezelés egyéb funkciói lehetővé teszik a problémakövetést problématípus (akár belső problémák) szerint, valamint a rövid- és hosszútávú megoldások azonosítását.</span><span class="sxs-lookup"><span data-stu-id="96e0d-107">In addition to functionality for managing nonconformance, quality management includes functionality for tracking issues by problem type (even internal problems), and for identifying solutions as short-term or long-term.</span></span> <span data-ttu-id="96e0d-108">A fő teljesítménymutatókról (KPI-kről) vezetett statisztikák betekintést nyújtanak a múltban megtörtént szabálytalansági problémákba és az azok javítására használt megoldásokba.</span><span class="sxs-lookup"><span data-stu-id="96e0d-108">Statistics about key performance indicators (KPIs) provide insight into the history of previous nonconformance issues and the solutions that were used to correct them.</span></span> <span data-ttu-id="96e0d-109">Az előzményadatok segítségével felülvizsgálhatja a korábbi minőségi mérések hatékonyságát, és kidolgozhatja a jövőben alkalmazni kívánt megfelelő méréseket.</span><span class="sxs-lookup"><span data-stu-id="96e0d-109">You can use historical data to review the effectiveness of previous quality measures and determine appropriate measures to use in the future.</span></span>
 
-Mikor beállít egy minőségi társítást, a Finance and Operations képes létrehozni különféle üzleti folyamatok, események és feltételek minőségi rendeléseit. A minőségi társítás vonatkozhat egyetlen cikkre, cikkek egy csoportjára vagy minden cikkre.
+<span data-ttu-id="96e0d-110">Mikor beállít egy minőségi társítást, a Finance and Operations képes létrehozni különféle üzleti folyamatok, események és feltételek minőségi rendeléseit.</span><span class="sxs-lookup"><span data-stu-id="96e0d-110">When you set up a quality association, Finance and Operations can generate quality orders for various business processes, events, and conditions.</span></span> <span data-ttu-id="96e0d-111">A minőségi társítás vonatkozhat egyetlen cikkre, cikkek egy csoportjára vagy minden cikkre.</span><span class="sxs-lookup"><span data-stu-id="96e0d-111">The quality association can cover a specific item, a specific group of items, or all items.</span></span>
 
-## <a name="examples-of-the-use-of-quality-management"></a>Példák a minőségkezelés használatára
-A minőségkezelés rugalmas és sokféle módon megvalósítható, így meg tud felelni az ellátási lánc műveleteinek adott szintjeire vonatkozó követelményeknek. Az alábbi példák ezeknek a funkcióknak a felhasználási lehetőségeit mutatják be.
+## <a name="examples-of-the-use-of-quality-management"></a><span data-ttu-id="96e0d-112">Példák a minőségkezelés használatára</span><span class="sxs-lookup"><span data-stu-id="96e0d-112">Examples of the use of quality management</span></span>
+<span data-ttu-id="96e0d-113">A minőségkezelés rugalmas és sokféle módon megvalósítható, így meg tud felelni az ellátási lánc műveleteinek adott szintjeire vonatkozó követelményeknek.</span><span class="sxs-lookup"><span data-stu-id="96e0d-113">Quality management is flexible and can be implemented in various ways to meet the requirements of specific levels of supply chain operations.</span></span> <span data-ttu-id="96e0d-114">Az alábbi példák ezeknek a funkcióknak a felhasználási lehetőségeit mutatják be.</span><span class="sxs-lookup"><span data-stu-id="96e0d-114">The following examples illustrate possible uses of these features:</span></span>
 
--   Indítson automatikusan minőségellenőrzési folyamatot előre meghatározott feltételek teljesülésekor (adott szállítótól történő beszerzési rendelés raktári regisztrációja alapján).
--   Vizsgálat alatt zárolja a készletet a jóvá nem hagyott készlet használatának megakadályozása érdekében (a beszerzési rendelési mennyiségek teljes zárolása).
--   Az aktuális tényleges készlet vizsgálandó mennyiségének meghatározásához használja a minőségi társítás részét képező cikkmintavételt. A mintavétel történhet adott mennyiség vagy százalékos érték alapján. 
--   A részleges bevételezésekhez minőségi rendeléseket kell létrehozni. Ha olyan minőségi rendelést szeretne létrehozni, amely egy rendelésen fizikailag bevételezett mennyiségen alapul, akkor be kell jelölnie a **Frissített mennyiségenként** jelölőnégyzetet a **Cikkmintavétel** űrlapon. 
--   Hozzon létre minimum, maximum és cél tesztértékeket magukban foglaló teszttípusokat, és végezzen előre definiált ellenőrzési eredményeket adó minőségi-mennyiségi teszteket.
--   Adja meg az elfogadható minőségi szint értékét a minőségi mérések tűréshatárainak szabályozása érdekében.
--   Határozza meg a vizsgálati művelethez szükséges erőforrásokat (például tesztterület és tesztműszerek).
+-   <span data-ttu-id="96e0d-115">Indítson automatikusan minőségellenőrzési folyamatot előre meghatározott feltételek teljesülésekor (adott szállítótól történő beszerzési rendelés raktári regisztrációja alapján).</span><span class="sxs-lookup"><span data-stu-id="96e0d-115">Automatically start a quality control process, based on predefined criteria (upon warehouse registration of a purchase order from a specific vendor).</span></span>
+-   <span data-ttu-id="96e0d-116">Vizsgálat alatt zárolja a készletet a jóvá nem hagyott készlet használatának megakadályozása érdekében (a beszerzési rendelési mennyiségek teljes zárolása).</span><span class="sxs-lookup"><span data-stu-id="96e0d-116">Block inventory during inspection to prevent non-approved inventory from being used (full blocking of purchase order quantities).</span></span>
+-   <span data-ttu-id="96e0d-117">Az aktuális tényleges készlet vizsgálandó mennyiségének meghatározásához használja a minőségi társítás részét képező cikkmintavételt.</span><span class="sxs-lookup"><span data-stu-id="96e0d-117">Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected.</span></span> <span data-ttu-id="96e0d-118">A mintavétel történhet adott mennyiség vagy százalékos érték alapján.</span><span class="sxs-lookup"><span data-stu-id="96e0d-118">Sampling can be based on fixed quantities or a percentage.</span></span>
+-   <span data-ttu-id="96e0d-119">A részleges bevételezésekhez minőségi rendeléseket kell létrehozni.</span><span class="sxs-lookup"><span data-stu-id="96e0d-119">Create quality orders for partial receipts.</span></span> <span data-ttu-id="96e0d-120">Ha olyan minőségi rendelést szeretne létrehozni, amely egy rendelésen fizikailag bevételezett mennyiségen alapul, akkor be kell jelölnie a **Frissített mennyiségenként** jelölőnégyzetet a **Cikkmintavétel** űrlapon.</span><span class="sxs-lookup"><span data-stu-id="96e0d-120">To create a quality order that is based on the quantity that is physically received with an order, you must select the **Per updated quantity** check box on the **Item sampling** form.</span></span>
+-   <span data-ttu-id="96e0d-121">Hozzon létre minimum, maximum és cél tesztértékeket magukban foglaló teszttípusokat, és végezzen előre definiált ellenőrzési eredményeket adó minőségi-mennyiségi teszteket.</span><span class="sxs-lookup"><span data-stu-id="96e0d-121">Create test types that include minimum, maximum, and target test values, and perform qualitative-versus-quantitative testing that has predefined validation results.</span></span>
+-   <span data-ttu-id="96e0d-122">Adja meg az elfogadható minőségi szint értékét a minőségi mérések tűréshatárainak szabályozása érdekében.</span><span class="sxs-lookup"><span data-stu-id="96e0d-122">Specify an acceptable quality level (AQL) to control quality measure tolerances.</span></span>
+-   <span data-ttu-id="96e0d-123">Határozza meg a vizsgálati művelethez szükséges erőforrásokat (például tesztterület és tesztműszerek).</span><span class="sxs-lookup"><span data-stu-id="96e0d-123">Specify the resources that an inspection operation requires, such as a test area and test instruments.</span></span>
 
-## <a name="working-with-quality-associations"></a>Minőségi társítások használata
-Egy minőségi társítást használó üzleti folyamat különféle forrásbizonylatokkal lehet kapcsolatban (például beszerzési rendelésekkel, értékesítési rendelésekkel, vagy termelési rendelésekkel). 
+## <a name="working-with-quality-associations"></a><span data-ttu-id="96e0d-124">Minőségi társítások használata</span><span class="sxs-lookup"><span data-stu-id="96e0d-124">Working with quality associations</span></span>
+<span data-ttu-id="96e0d-125">Egy minőségi társítást használó üzleti folyamat különféle forrásbizonylatokkal lehet kapcsolatban (például beszerzési rendelésekkel, értékesítési rendelésekkel, vagy termelési rendelésekkel).</span><span class="sxs-lookup"><span data-stu-id="96e0d-125">The business process that uses a quality association can be related to various source documents, such as purchase orders, sales orders, or production orders.</span></span>
 
-Minden egyes minőségi társítási rekord meghatározza a létrehozott minőségi rendelésekre vonatkozó teszteket, elfogadható minőségi szintet és mintavételi eljárást. Az üzleti folyamat minden egyes változatára definiálnia kell egy minőségi társítási rekordot. Például beállíthat egy olyan minőségi társítást, amely egy beszerzési rendelés termékbevételezésének frissítésekor létrehoz egy minőségi rendelést. A végrehajtási terv beállításától függően letiltható maga az indító folyamat, ha van egy nyitott minőségi rendelés, vagy letilthatóak az ezután következő folyamatok, például a beszerzési rendelés számlázása. 
+<span data-ttu-id="96e0d-126">Minden egyes minőségi társítási rekord meghatározza a létrehozott minőségi rendelésekre vonatkozó teszteket, elfogadható minőségi szintet és mintavételi eljárást.</span><span class="sxs-lookup"><span data-stu-id="96e0d-126">Each quality association record defines the set of tests, the AQL, and the sampling plan that applies to the quality orders that are generated.</span></span> <span data-ttu-id="96e0d-127">Az üzleti folyamat minden egyes változatára definiálnia kell egy minőségi társítási rekordot.</span><span class="sxs-lookup"><span data-stu-id="96e0d-127">You must define a quality association record for each variation in a business process.</span></span> <span data-ttu-id="96e0d-128">Például beállíthat egy olyan minőségi társítást, amely egy beszerzési rendelés termékbevételezésének frissítésekor létrehoz egy minőségi rendelést.</span><span class="sxs-lookup"><span data-stu-id="96e0d-128">For example, you can set up a quality association that generates a quality order when a purchase order product receipt is updated.</span></span> <span data-ttu-id="96e0d-129">A végrehajtási terv beállításától függően letiltható maga az indító folyamat, ha van egy nyitott minőségi rendelés, vagy letilthatóak az ezután következő folyamatok, például a beszerzési rendelés számlázása.</span><span class="sxs-lookup"><span data-stu-id="96e0d-129">Depending on the setup of the execution plan, the triggering process itself can be blocked while there is an open quality order, or the next processes, such as purchase order invoicing, can be blocked.</span></span>
 
-**Megjegyzés:** Amíg vannak nyitott minőségi rendelések, a készletmennyiségek kiadása automatikusan le van tiltva. A **Cikkmintavételek** lap **Teljes zárolás** beállításától függően a mennyiség a minőségi rendelésen vagy a forrásbizonylat sorában szereplő mennyiség lehet. 
+<span data-ttu-id="96e0d-130">**Megjegyzés:** Amíg vannak nyitott minőségi rendelések, a készletmennyiségek kiadása automatikusan le van tiltva.</span><span class="sxs-lookup"><span data-stu-id="96e0d-130">**Note:** While there are open quality orders, inventory quantities are automatically blocked from being issued.</span></span> <span data-ttu-id="96e0d-131">A **Cikkmintavételek** lap **Teljes zárolás** beállításától függően a mennyiség a minőségi rendelésen vagy a forrásbizonylat sorában szereplő mennyiség lehet.</span><span class="sxs-lookup"><span data-stu-id="96e0d-131">Depending on the **Full blocking** setting on the **Item samplings** page, the quantity is either the quantity on the quality order or the quantity on the source document line.</span></span>
 
-Egy adott üzleti folyamatra a minőségi társítási rekord azonosítja azokat az eseményeket és feltételeket, amelyek fennállása esetén a minőségi rendelés létrejön. A feltételek helyre vagy jogi személyre vonatkozhatnak. Romboló teszteket igénylő minőségi rendelés csak akkor generálható, ha az eseményhez létezik aktuális készlet. 
+<span data-ttu-id="96e0d-132">Egy adott üzleti folyamatra a minőségi társítási rekord azonosítja azokat az eseményeket és feltételeket, amelyek fennállása esetén a minőségi rendelés létrejön.</span><span class="sxs-lookup"><span data-stu-id="96e0d-132">For a given business process, the quality association record identifies the event and the conditions that a quality order is generated for.</span></span> <span data-ttu-id="96e0d-133">A feltételek helyre vagy jogi személyre vonatkozhatnak.</span><span class="sxs-lookup"><span data-stu-id="96e0d-133">The conditions can be specific to either a site or a legal entity.</span></span> <span data-ttu-id="96e0d-134">Romboló teszteket igénylő minőségi rendelés csak akkor generálható, ha az eseményhez létezik aktuális készlet.</span><span class="sxs-lookup"><span data-stu-id="96e0d-134">A quality order that involves destructive tests can be generated only when on-hand inventory exists for the event.</span></span>
 
-A következő példák bemutatják egy minőségi társítási rekord meghatározását az egyes üzleti folyamatok változásainak megfelelően. Egy minőségi társítási rekord által az egyes példák esetén meghatározott eseményeket és feltételeket az alábbi táblázat összegzi.
+<span data-ttu-id="96e0d-135">A következő példák bemutatják egy minőségi társítási rekord meghatározását az egyes üzleti folyamatok változásainak megfelelően.</span><span class="sxs-lookup"><span data-stu-id="96e0d-135">The following examples illustrate how a quality association record is defined for the variations in each business process.</span></span> <span data-ttu-id="96e0d-136">Egy minőségi társítási rekord által az egyes példák esetén meghatározott eseményeket és feltételeket az alábbi táblázat összegzi.</span><span class="sxs-lookup"><span data-stu-id="96e0d-136">For each example, the following table summarizes the events and conditions that are defined by a quality association record.</span></span>
 
 <table>
 <tbody>
 <tr>
-<th>Hivatkozás típusa</th>
-<th>Eseménytípus</th>
-<th>Végrehajtás</th>
-<th>Eseményzárolás</th>
-<th>Dokumentumhivatkozás</th>
+<th><span data-ttu-id="96e0d-137">Hivatkozás típusa</span><span class="sxs-lookup"><span data-stu-id="96e0d-137">Reference type</span></span></th>
+<th><span data-ttu-id="96e0d-138">Eseménytípus</span><span class="sxs-lookup"><span data-stu-id="96e0d-138">Event type</span></span></th>
+<th><span data-ttu-id="96e0d-139">Végrehajtás</span><span class="sxs-lookup"><span data-stu-id="96e0d-139">Execution</span></span></th>
+<th><span data-ttu-id="96e0d-140">Eseményzárolás</span><span class="sxs-lookup"><span data-stu-id="96e0d-140">Event blocking</span></span></th>
+<th><span data-ttu-id="96e0d-141">Dokumentumhivatkozás</span><span class="sxs-lookup"><span data-stu-id="96e0d-141">Document reference</span></span></th>
 </tr>
 <tr>
-<td>Készlet</td>
-<td>Nem alkalmazható</td>
-<td>Nem alkalmazható</td>
-<td>Egyik sem</td>
-<td>Mind</td>
+<td><span data-ttu-id="96e0d-142">Készlet</span><span class="sxs-lookup"><span data-stu-id="96e0d-142">Inventory</span></span></td>
+<td><span data-ttu-id="96e0d-143">Nem alkalmazható</span><span class="sxs-lookup"><span data-stu-id="96e0d-143">Not applicable</span></span></td>
+<td><span data-ttu-id="96e0d-144">Nem alkalmazható</span><span class="sxs-lookup"><span data-stu-id="96e0d-144">Not applicable</span></span></td>
+<td><span data-ttu-id="96e0d-145">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-145">None</span></span></td>
+<td><span data-ttu-id="96e0d-146">Mind</span><span class="sxs-lookup"><span data-stu-id="96e0d-146">All</span></span></td>
 </tr>
 <tr>
-<td rowspan="7">Értékesítés</td>
-<td rowspan="4">Kitárolási folyamat ütemezve</td>
-<td rowspan="4">Előtte</td>
-<td>Egyik sem</td>
-<td rowspan="22">Csak Egyedi azonosító, Csoport vagy Mind</td>
+<td rowspan="7"><span data-ttu-id="96e0d-147">Értékesítés</span><span class="sxs-lookup"><span data-stu-id="96e0d-147">Sales</span></span></td>
+<td rowspan="4"><span data-ttu-id="96e0d-148">Kitárolási folyamat ütemezve</span><span class="sxs-lookup"><span data-stu-id="96e0d-148">Picking process is scheduled</span></span></td>
+<td rowspan="4"><span data-ttu-id="96e0d-149">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-149">Before</span></span></td>
+<td><span data-ttu-id="96e0d-150">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-150">None</span></span></td>
+<td rowspan="22"><span data-ttu-id="96e0d-151">Csak Egyedi azonosító, Csoport vagy Mind</span><span class="sxs-lookup"><span data-stu-id="96e0d-151">Specific ID, Group, or All only</span></span></td>
 </tr>
 <tr>
-<td>Kitárolási folyamat</td>
+<td><span data-ttu-id="96e0d-152">Kitárolási folyamat</span><span class="sxs-lookup"><span data-stu-id="96e0d-152">Picking process</span></span></td>
 </tr>
 <tr>
-<td>Szállítólevél</td>
+<td><span data-ttu-id="96e0d-153">Szállítólevél</span><span class="sxs-lookup"><span data-stu-id="96e0d-153">Packing slip</span></span></td>
 </tr>
 <tr>
-<td>Számla</td>
+<td><span data-ttu-id="96e0d-154">Számla</span><span class="sxs-lookup"><span data-stu-id="96e0d-154">Invoice</span></span></td>
 </tr>
 <tr>
-<td rowspan="3">Szállítólevél</td>
-<td rowspan="3">Előtte</td>
-<td>Egyik sem</td>
+<td rowspan="3"><span data-ttu-id="96e0d-155">Szállítólevél</span><span class="sxs-lookup"><span data-stu-id="96e0d-155">Packing slip</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-156">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-156">Before</span></span></td>
+<td><span data-ttu-id="96e0d-157">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-157">None</span></span></td>
 </tr>
 <tr>
-<td>Szállítólevél</td>
+<td><span data-ttu-id="96e0d-158">Szállítólevél</span><span class="sxs-lookup"><span data-stu-id="96e0d-158">Packing slip</span></span></td>
 </tr>
 <tr>
-<td>Számla</td>
+<td><span data-ttu-id="96e0d-159">Számla</span><span class="sxs-lookup"><span data-stu-id="96e0d-159">Invoice</span></span></td>
 </tr>
 <tr>
-<td rowspan="15">Beszerzés</td>
-<td rowspan="7">Bevételezési lista</td>
-<td rowspan="4">Előtte</td>
-<td>Egyik sem</td>
+<td rowspan="15"><span data-ttu-id="96e0d-160">Beszerzés</span><span class="sxs-lookup"><span data-stu-id="96e0d-160">Purchase</span></span></td>
+<td rowspan="7"><span data-ttu-id="96e0d-161">Bevételezési lista</span><span class="sxs-lookup"><span data-stu-id="96e0d-161">Receipt list</span></span></td>
+<td rowspan="4"><span data-ttu-id="96e0d-162">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-162">Before</span></span></td>
+<td><span data-ttu-id="96e0d-163">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-163">None</span></span></td>
 </tr>
 <tr>
-<td>Bevételezési lista</td>
+<td><span data-ttu-id="96e0d-164">Bevételezési lista</span><span class="sxs-lookup"><span data-stu-id="96e0d-164">Receipt list</span></span></td>
 </tr>
 <tr>
-<td>Termékbevételezés</td>
+<td><span data-ttu-id="96e0d-165">Termékbevételezés</span><span class="sxs-lookup"><span data-stu-id="96e0d-165">Product receipt</span></span></td>
 </tr>
 <tr>
-<td>Számla</td>
+<td><span data-ttu-id="96e0d-166">Számla</span><span class="sxs-lookup"><span data-stu-id="96e0d-166">Invoice</span></span></td>
 </tr>
 <tr>
-<td rowspan="3">Utána</td>
-<td>Egyik sem</td>
+<td rowspan="3"><span data-ttu-id="96e0d-167">Utána</span><span class="sxs-lookup"><span data-stu-id="96e0d-167">After</span></span></td>
+<td><span data-ttu-id="96e0d-168">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-168">None</span></span></td>
 </tr>
 <tr>
-<td>Termékbevételezés</td>
+<td><span data-ttu-id="96e0d-169">Termékbevételezés</span><span class="sxs-lookup"><span data-stu-id="96e0d-169">Product receipt</span></span></td>
 </tr>
 <tr>
-<td>Számla</td>
+<td><span data-ttu-id="96e0d-170">Számla</span><span class="sxs-lookup"><span data-stu-id="96e0d-170">Invoice</span></span></td>
 </tr>
 <tr>
-<td rowspan="3">Nyilvántartás</td>
-<td rowspan="3">Nem alkalmazható</td>
-<td>Egyik sem</td>
+<td rowspan="3"><span data-ttu-id="96e0d-171">Nyilvántartás</span><span class="sxs-lookup"><span data-stu-id="96e0d-171">Registration</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-172">Nem alkalmazható</span><span class="sxs-lookup"><span data-stu-id="96e0d-172">Not applicable</span></span></td>
+<td><span data-ttu-id="96e0d-173">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-173">None</span></span></td>
 </tr>
 <tr>
-<td>Termékbevételezés</td>
+<td><span data-ttu-id="96e0d-174">Termékbevételezés</span><span class="sxs-lookup"><span data-stu-id="96e0d-174">Product receipt</span></span></td>
 </tr>
 <tr>
-<td>Számla</td>
+<td><span data-ttu-id="96e0d-175">Számla</span><span class="sxs-lookup"><span data-stu-id="96e0d-175">Invoice</span></span></td>
 </tr>
 <tr>
-<td rowspan="5">Termékbevételezés</td>
-<td rowspan="3">Előtte</td>
-<td>Egyik sem</td>
+<td rowspan="5"><span data-ttu-id="96e0d-176">Termékbevételezés</span><span class="sxs-lookup"><span data-stu-id="96e0d-176">Product receipt</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-177">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-177">Before</span></span></td>
+<td><span data-ttu-id="96e0d-178">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-178">None</span></span></td>
 </tr>
 <tr>
-<td>Termékbevételezés</td>
+<td><span data-ttu-id="96e0d-179">Termékbevételezés</span><span class="sxs-lookup"><span data-stu-id="96e0d-179">Product receipt</span></span></td>
 </tr>
 <tr>
-<td>Számla</td>
+<td><span data-ttu-id="96e0d-180">Számla</span><span class="sxs-lookup"><span data-stu-id="96e0d-180">Invoice</span></span></td>
 </tr>
 <tr>
-<td rowspan="2">Utána</td>
-<td>Egyik sem</td>
+<td rowspan="2"><span data-ttu-id="96e0d-181">Utána</span><span class="sxs-lookup"><span data-stu-id="96e0d-181">After</span></span></td>
+<td><span data-ttu-id="96e0d-182">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-182">None</span></span></td>
 </tr>
 <tr>
-<td>Számla</td>
+<td><span data-ttu-id="96e0d-183">Számla</span><span class="sxs-lookup"><span data-stu-id="96e0d-183">Invoice</span></span></td>
 </tr>
 <tr>
-<td rowspan="8">Termelés</td>
-<td rowspan="3">Nyilvántartás</td>
-<td rowspan="3">Nem alkalmazható</td>
-<td>Egyik sem</td>
-<td rowspan="12">Mind</td>
+<td rowspan="8"><span data-ttu-id="96e0d-184">Termelés</span><span class="sxs-lookup"><span data-stu-id="96e0d-184">Production</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-185">Nyilvántartás</span><span class="sxs-lookup"><span data-stu-id="96e0d-185">Registration</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-186">Nem alkalmazható</span><span class="sxs-lookup"><span data-stu-id="96e0d-186">Not applicable</span></span></td>
+<td><span data-ttu-id="96e0d-187">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-187">None</span></span></td>
+<td rowspan="12"><span data-ttu-id="96e0d-188">Mind</span><span class="sxs-lookup"><span data-stu-id="96e0d-188">All</span></span></td>
 </tr>
 <tr>
-<td>Készként jelentés</td>
+<td><span data-ttu-id="96e0d-189">Készként jelentés</span><span class="sxs-lookup"><span data-stu-id="96e0d-189">Report as finished</span></span></td>
 </tr>
 <tr>
-<td>Záró</td>
+<td><span data-ttu-id="96e0d-190">Záró</span><span class="sxs-lookup"><span data-stu-id="96e0d-190">End</span></span></td>
 </tr>
 <tr>
-<td rowspan="5">Készként jelentés</td>
-<td rowspan="3">Előtte</td>
-<td>Egyik sem</td>
+<td rowspan="5"><span data-ttu-id="96e0d-191">Készként jelentés</span><span class="sxs-lookup"><span data-stu-id="96e0d-191">Report as finished</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-192">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-192">Before</span></span></td>
+<td><span data-ttu-id="96e0d-193">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-193">None</span></span></td>
 </tr>
 <tr>
-<td>Készként jelentés</td>
+<td><span data-ttu-id="96e0d-194">Készként jelentés</span><span class="sxs-lookup"><span data-stu-id="96e0d-194">Report as finished</span></span></td>
 </tr>
 <tr>
-<td>Záró</td>
+<td><span data-ttu-id="96e0d-195">Záró</span><span class="sxs-lookup"><span data-stu-id="96e0d-195">End</span></span></td>
 </tr>
 <tr>
-<td rowspan="2">Utána</td>
-<td>Egyik sem</td>
+<td rowspan="2"><span data-ttu-id="96e0d-196">Utána</span><span class="sxs-lookup"><span data-stu-id="96e0d-196">After</span></span></td>
+<td><span data-ttu-id="96e0d-197">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-197">None</span></span></td>
 </tr>
 <tr>
-<td>Záró</td>
+<td><span data-ttu-id="96e0d-198">Záró</span><span class="sxs-lookup"><span data-stu-id="96e0d-198">End</span></span></td>
 </tr>
 <tr>
-<td rowspan="4">Karantén</td>
-<td rowspan="3">Készként jelentés</td>
-<td rowspan="2">Előtte</td>
-<td>Készként jelentés</td>
+<td rowspan="4"><span data-ttu-id="96e0d-199">Karantén</span><span class="sxs-lookup"><span data-stu-id="96e0d-199">Quarantine</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-200">Készként jelentés</span><span class="sxs-lookup"><span data-stu-id="96e0d-200">Report as finished</span></span></td>
+<td rowspan="2"><span data-ttu-id="96e0d-201">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-201">Before</span></span></td>
+<td><span data-ttu-id="96e0d-202">Készként jelentés</span><span class="sxs-lookup"><span data-stu-id="96e0d-202">Report as finished</span></span></td>
 </tr>
 <tr>
-<td>Záró</td>
+<td><span data-ttu-id="96e0d-203">Záró</span><span class="sxs-lookup"><span data-stu-id="96e0d-203">End</span></span></td>
 </tr>
 <tr>
-<td>Utána</td>
-<td>Záró</td>
+<td><span data-ttu-id="96e0d-204">Utána</span><span class="sxs-lookup"><span data-stu-id="96e0d-204">After</span></span></td>
+<td><span data-ttu-id="96e0d-205">Záró</span><span class="sxs-lookup"><span data-stu-id="96e0d-205">End</span></span></td>
 </tr>
 <tr>
-<td>Záró</td>
-<td>Előtte</td>
-<td>Záró</td>
+<td><span data-ttu-id="96e0d-206">Záró</span><span class="sxs-lookup"><span data-stu-id="96e0d-206">End</span></span></td>
+<td><span data-ttu-id="96e0d-207">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-207">Before</span></span></td>
+<td><span data-ttu-id="96e0d-208">Záró</span><span class="sxs-lookup"><span data-stu-id="96e0d-208">End</span></span></td>
 </tr>
 <tr>
-<td rowspan="3">Útvonalművelet</td>
-<td rowspan="3">Készként jelentés</td>
-<td rowspan="2">Előtte</td>
-<td>Egyik sem</td>
-<td rowspan="3">Egyedi azonosító, Csoport vagy Mind, valamint Erőforrás-specifikus, Csoport vagy Mind</td>
+<td rowspan="3"><span data-ttu-id="96e0d-209">Útvonalművelet</span><span class="sxs-lookup"><span data-stu-id="96e0d-209">Route operation</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-210">Készként jelentés</span><span class="sxs-lookup"><span data-stu-id="96e0d-210">Report as finished</span></span></td>
+<td rowspan="2"><span data-ttu-id="96e0d-211">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-211">Before</span></span></td>
+<td><span data-ttu-id="96e0d-212">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-212">None</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-213">Egyedi azonosító, Csoport vagy Mind, valamint Erőforrás-specifikus, Csoport vagy Mind</span><span class="sxs-lookup"><span data-stu-id="96e0d-213">Specific ID, Group, or All, and Resource specific, Group, or All</span></span></td>
 </tr>
 <tr>
-<td>Készként jelentés</td>
+<td><span data-ttu-id="96e0d-214">Készként jelentés</span><span class="sxs-lookup"><span data-stu-id="96e0d-214">Report as finished</span></span></td>
 </tr>
 <tr>
-<td>Utána</td>
-<td>Egyik sem</td>
+<td><span data-ttu-id="96e0d-215">Utána</span><span class="sxs-lookup"><span data-stu-id="96e0d-215">After</span></span></td>
+<td><span data-ttu-id="96e0d-216">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-216">None</span></span></td>
 </tr>
 <tr>
-<td rowspan="3">Társtermék gyártása</td>
-<td>Nyilvántartás</td>
-<td>Nem alkalmazható</td>
-<td rowspan="3">Egyik sem</td>
-<td rowspan="3">Mind</td>
+<td rowspan="3"><span data-ttu-id="96e0d-217">Társtermék gyártása</span><span class="sxs-lookup"><span data-stu-id="96e0d-217">Co-product production</span></span></td>
+<td><span data-ttu-id="96e0d-218">Nyilvántartás</span><span class="sxs-lookup"><span data-stu-id="96e0d-218">Registration</span></span></td>
+<td><span data-ttu-id="96e0d-219">Nem alkalmazható</span><span class="sxs-lookup"><span data-stu-id="96e0d-219">Not applicable</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-220">Egyik sem</span><span class="sxs-lookup"><span data-stu-id="96e0d-220">None</span></span></td>
+<td rowspan="3"><span data-ttu-id="96e0d-221">Mind</span><span class="sxs-lookup"><span data-stu-id="96e0d-221">All</span></span></td>
 </tr>
 <tr>
-<td rowspan="2">Készként jelentés</td>
-<td>Előtte</td>
+<td rowspan="2"><span data-ttu-id="96e0d-222">Készként jelentés</span><span class="sxs-lookup"><span data-stu-id="96e0d-222">Report as finished</span></span></td>
+<td><span data-ttu-id="96e0d-223">Előtte</span><span class="sxs-lookup"><span data-stu-id="96e0d-223">Before</span></span></td>
 </tr>
 <tr>
-<td>Utána</td>
+<td><span data-ttu-id="96e0d-224">Utána</span><span class="sxs-lookup"><span data-stu-id="96e0d-224">After</span></span></td>
 </tr>
 </tbody>
 </table>
 
-A következő táblázatban bővebben tájékozódhat arról, hogy hogyan hozhatóak létre minőségi rendelések adott típusú folyamatokhoz.
+<span data-ttu-id="96e0d-225">A következő táblázatban bővebben tájékozódhat arról, hogy hogyan hozhatóak létre minőségi rendelések adott típusú folyamatokhoz.</span><span class="sxs-lookup"><span data-stu-id="96e0d-225">The following table provides more information about how quality orders can be generated for specific types of processes.</span></span>
 <div class="tableSection">
 
 <table>
 <tbody>
 <tr>
-<th>Folyamat típusa</th>
-<th>Mikor hozhatóak létre automatikusan minőségi rendelések?</th>
-<th>Mikor hozhatóak létre minőségi rendelések, amennyiben romboló tesztekre van szükség?</th>
-<th>Feltételekre vonatkozó információ</th>
-<th>Manuális létrehozásra vonatkozó információ</th>
+<th><span data-ttu-id="96e0d-226">Folyamat típusa</span><span class="sxs-lookup"><span data-stu-id="96e0d-226">Type of process</span></span></th>
+<th><span data-ttu-id="96e0d-227">Mikor hozhatóak létre automatikusan minőségi rendelések?</span><span class="sxs-lookup"><span data-stu-id="96e0d-227">When quality orders can be automatically generated</span></span></th>
+<th><span data-ttu-id="96e0d-228">Mikor hozhatóak létre minőségi rendelések, amennyiben romboló tesztekre van szükség?</span><span class="sxs-lookup"><span data-stu-id="96e0d-228">When quality orders can be generated if destructive testing is required</span></span></th>
+<th><span data-ttu-id="96e0d-229">Feltételekre vonatkozó információ</span><span class="sxs-lookup"><span data-stu-id="96e0d-229">Condition information</span></span></th>
+<th><span data-ttu-id="96e0d-230">Manuális létrehozásra vonatkozó információ</span><span class="sxs-lookup"><span data-stu-id="96e0d-230">Manual generation information</span></span></th>
 </tr>
 <tr>
-<td>Beszerzési rendelés</td>
-<td>A bevételezett anyagra vonatkozó bevételezési lista vagy termékbevételezés feladása előtt vagy után</td>
-<td>A bevételezett anyagra vonatkozó termékbevételezés feladása után, mivel az anyagnak rendelkezésre kell állnia a romboló teszt elvégzéséhez</td>
-<td>A minőségi rendelés követelménye vonatkozhat egy adott telephelyre, cikkre vagy szállítóra, illetve ezek bármilyen kombinációjára.</td>
-<td>A beszerzési rendelésekhez manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</td>
+<td><span data-ttu-id="96e0d-231">Beszerzési rendelés</span><span class="sxs-lookup"><span data-stu-id="96e0d-231">Purchase order</span></span></td>
+<td><span data-ttu-id="96e0d-232">A bevételezett anyagra vonatkozó bevételezési lista vagy termékbevételezés feladása előtt vagy után</span><span class="sxs-lookup"><span data-stu-id="96e0d-232">Before or after a receipts list or product receipt for the material that is received is posted</span></span></td>
+<td><span data-ttu-id="96e0d-233">A bevételezett anyagra vonatkozó termékbevételezés feladása után, mivel az anyagnak rendelkezésre kell állnia a romboló teszt elvégzéséhez</span><span class="sxs-lookup"><span data-stu-id="96e0d-233">After the product receipt for the material that is received is posted, because the material must be available for destructive testing</span></span></td>
+<td><span data-ttu-id="96e0d-234">A minőségi rendelés követelménye vonatkozhat egy adott telephelyre, cikkre vagy szállítóra, illetve ezek bármilyen kombinációjára.</span><span class="sxs-lookup"><span data-stu-id="96e0d-234">The requirement for a quality order can reflect a particular site, item, or vendor, or a combination of these conditions.</span></span></td>
+<td><span data-ttu-id="96e0d-235">A beszerzési rendelésekhez manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</span><span class="sxs-lookup"><span data-stu-id="96e0d-235">A manually generated quality order that refers to a purchase order can use information in a quality association record, such as the test sampling plan.</span></span></td>
 </tr>
 <tr>
-<td>Karanténutasítás</td>
-<td>Mielőtt vagy miután a karanténutasítás készként lett jelentve vagy befejeződött</td>
-<td>Romboló teszteket igénylő minőségi rendelések nem hozhatóak létre. A rendszer feltételezi, hogy a karanténutasítás funkció kezeli a roncsolt anyag elhelyezését.</td>
-<td>A minőségi rendelés követelménye vonatkozhat egy adott telephelyre, cikkre vagy szállítóra, illetve ezek bármilyen kombinációjára.</td>
-<td>A karanténutasításokhoz manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</td>
+<td><span data-ttu-id="96e0d-236">Karanténutasítás</span><span class="sxs-lookup"><span data-stu-id="96e0d-236">Quarantine order</span></span></td>
+<td><span data-ttu-id="96e0d-237">Mielőtt vagy miután a karanténutasítás készként lett jelentve vagy befejeződött</span><span class="sxs-lookup"><span data-stu-id="96e0d-237">Before or after the quarantine order is reported as finished or ended</span></span></td>
+<td><span data-ttu-id="96e0d-238">Romboló teszteket igénylő minőségi rendelések nem hozhatóak létre.</span><span class="sxs-lookup"><span data-stu-id="96e0d-238">Quality orders that require destructive tests can't be generated.</span></span> <span data-ttu-id="96e0d-239">A rendszer feltételezi, hogy a karanténutasítás funkció kezeli a roncsolt anyag elhelyezését.</span><span class="sxs-lookup"><span data-stu-id="96e0d-239">It's assumed that the quarantine order functionality handles the disposition of the material that is destroyed.</span></span></td>
+<td><span data-ttu-id="96e0d-240">A minőségi rendelés követelménye vonatkozhat egy adott telephelyre, cikkre vagy szállítóra, illetve ezek bármilyen kombinációjára.</span><span class="sxs-lookup"><span data-stu-id="96e0d-240">The requirement for a quality order can reflect a particular site, item, or vendor, or a combination of these conditions.</span></span></td>
+<td><span data-ttu-id="96e0d-241">A karanténutasításokhoz manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</span><span class="sxs-lookup"><span data-stu-id="96e0d-241">A manually generated quality order that refers to a quarantine order can use information in a quality association record, such as the test sampling plan.</span></span></td>
 </tr>
 <tr>
-<td>Értékesítési rendelés</td>
-<td>A szállított cikkekre vonatkozó ütemezett kitárolási folyamat vagy szállítólevél frissítése előtt</td>
-<td>Bármelyik lépésnél</td>
-<td>A minőségi rendelés követelménye vonatkozhat egy adott telephelyre, cikkre vagy vevőre, illetve ezek bármilyen kombinációjára.</td>
-<td>Az értékesítési rendelésekhez manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</td>
+<td><span data-ttu-id="96e0d-242">Értékesítési rendelés</span><span class="sxs-lookup"><span data-stu-id="96e0d-242">Sales order</span></span></td>
+<td><span data-ttu-id="96e0d-243">A szállított cikkekre vonatkozó ütemezett kitárolási folyamat vagy szállítólevél frissítése előtt</span><span class="sxs-lookup"><span data-stu-id="96e0d-243">Before a scheduled picking process or packing slip update for the items that are being shipped</span></span></td>
+<td><span data-ttu-id="96e0d-244">Bármelyik lépésnél</span><span class="sxs-lookup"><span data-stu-id="96e0d-244">At any step</span></span></td>
+<td><span data-ttu-id="96e0d-245">A minőségi rendelés követelménye vonatkozhat egy adott telephelyre, cikkre vagy vevőre, illetve ezek bármilyen kombinációjára.</span><span class="sxs-lookup"><span data-stu-id="96e0d-245">The requirement for a quality order can reflect a particular site, item, or customer, or a combination of these conditions.</span></span></td>
+<td><span data-ttu-id="96e0d-246">Az értékesítési rendelésekhez manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</span><span class="sxs-lookup"><span data-stu-id="96e0d-246">A manually generated quality order that refers to a sales order can use information in a quality association record, such as the test sampling plan.</span></span></td>
 </tr>
 <tr>
-<td>Termelési rendelés</td>
-<td>A termelési rendelés befejezett mennyiségének jelentése előtt vagy után</td>
-<td>A termelési rendelés befejezett mennyiségének jelentése után</td>
-<td>A minőségi rendelés követelménye vonatkozhat egy adott telephelyre vagy vevőre, illetve ezek kombinációjára.</td>
-<td>A termelési rendelésekhez manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</td>
+<td><span data-ttu-id="96e0d-247">Termelési rendelés</span><span class="sxs-lookup"><span data-stu-id="96e0d-247">Production order</span></span></td>
+<td><span data-ttu-id="96e0d-248">A termelési rendelés befejezett mennyiségének jelentése előtt vagy után</span><span class="sxs-lookup"><span data-stu-id="96e0d-248">Before or after the finished quantity for the production order is reported</span></span></td>
+<td><span data-ttu-id="96e0d-249">A termelési rendelés befejezett mennyiségének jelentése után</span><span class="sxs-lookup"><span data-stu-id="96e0d-249">After the finished quantity for the production order is reported</span></span></td>
+<td><span data-ttu-id="96e0d-250">A minőségi rendelés követelménye vonatkozhat egy adott telephelyre vagy vevőre, illetve ezek kombinációjára.</span><span class="sxs-lookup"><span data-stu-id="96e0d-250">The requirement for a quality order can reflect a particular site or item, or a combination of these conditions.</span></span></td>
+<td><span data-ttu-id="96e0d-251">A termelési rendelésekhez manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</span><span class="sxs-lookup"><span data-stu-id="96e0d-251">A manually generated quality order that refers to a production order can use information in a quality association record, such as the test sampling plan.</span></span></td>
 </tr>
 <tr>
-<td>Útvonalművelettel rendelkező termelési utasítás</td>
-<td>A műveletre vonatkozó jelentés befejezése előtt vagy után</td>
-<td>Miután az utolsó művelet készként való jelentése megtörtént</td>
-<td>A minőségi rendelés követelménye vonatkozhat egy adott telephelyre, cikkre, vevőre vagy üzemi erőforrásra, illetve ezek bármilyen kombinációjára.</td>
-<td>Az útvonalművelethez manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</td>
+<td><span data-ttu-id="96e0d-252">Útvonalművelettel rendelkező termelési utasítás</span><span class="sxs-lookup"><span data-stu-id="96e0d-252">Production order that has a route operation</span></span></td>
+<td><span data-ttu-id="96e0d-253">A műveletre vonatkozó jelentés befejezése előtt vagy után</span><span class="sxs-lookup"><span data-stu-id="96e0d-253">Before or after the report is finished for an operation</span></span></td>
+<td><span data-ttu-id="96e0d-254">Miután az utolsó művelet készként való jelentése megtörtént</span><span class="sxs-lookup"><span data-stu-id="96e0d-254">After the reporting production is finished for the last operation</span></span></td>
+<td><span data-ttu-id="96e0d-255">A minőségi rendelés követelménye vonatkozhat egy adott telephelyre, cikkre, vevőre vagy üzemi erőforrásra, illetve ezek bármilyen kombinációjára.</span><span class="sxs-lookup"><span data-stu-id="96e0d-255">The requirement for a quality order can reflect a particular, site, item, or operations resource, or a combination of these conditions.</span></span></td>
+<td><span data-ttu-id="96e0d-256">Az útvonalművelethez manuálisan generált minőségi rendelésekben felhasználhatók a minőségi társítási rekordban szereplő adatok, például a mintavételezési eljárás.</span><span class="sxs-lookup"><span data-stu-id="96e0d-256">A manually generated quality order that refers to a route operation can use information in a quality association record, such as the test sampling plan.</span></span></td>
 </tr>
 <tr>
-<td>Készlet</td>
-<td>A készletnaplón belüli tranzakciókhoz és az átmozgatási rendelési tranzakciókhoz nem generálhatók automatikusan minőségi rendelések.</td>
+<td><span data-ttu-id="96e0d-257">Készlet</span><span class="sxs-lookup"><span data-stu-id="96e0d-257">Inventory</span></span></td>
+<td><span data-ttu-id="96e0d-258">A készletnaplón belüli tranzakciókhoz és az átmozgatási rendelési tranzakciókhoz nem generálhatók automatikusan minőségi rendelések.</span><span class="sxs-lookup"><span data-stu-id="96e0d-258">A quality order cannot be automatically generated for a transaction in an inventory journal or for transfer order transactions.</span></span></td>
 <td></td>
 <td></td>
-<td>Cikk készletmennyiségére vonatkozó minőségi rendelést manuálisan kell létrehozni. Tényleges aktuális készlet szükséges.</td>
+<td><span data-ttu-id="96e0d-259">Cikk készletmennyiségére vonatkozó minőségi rendelést manuálisan kell létrehozni.</span><span class="sxs-lookup"><span data-stu-id="96e0d-259">A quality order must be created manually for an item's inventory quantity.</span></span> <span data-ttu-id="96e0d-260">Tényleges aktuális készlet szükséges.</span><span class="sxs-lookup"><span data-stu-id="96e0d-260">Physical on-hand inventory is required.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="quality-management-pages"></a>A Minőségkezelés oldalai
+## <a name="quality-management-pages"></a><span data-ttu-id="96e0d-261">A Minőségkezelés oldalai</span><span class="sxs-lookup"><span data-stu-id="96e0d-261">Quality management pages</span></span>
 <table>
 <colgroup>
 <col width="33%" />
@@ -305,65 +305,62 @@ A következő táblázatban bővebben tájékozódhat arról, hogy hogyan hozhat
 </colgroup>
 <thead>
 <tr class="header">
-<th>Oldal</th>
-<th>Leírás</th>
-<th>Példa</th>
+<th><span data-ttu-id="96e0d-262">Oldal</span><span class="sxs-lookup"><span data-stu-id="96e0d-262">Page</span></span></th>
+<th><span data-ttu-id="96e0d-263">Leírás</span><span class="sxs-lookup"><span data-stu-id="96e0d-263">Description</span></span></th>
+<th><span data-ttu-id="96e0d-264">Példa</span><span class="sxs-lookup"><span data-stu-id="96e0d-264">Example</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Minőségi társítások</td>
-<td>Lásd a cikk előző szakaszait.</td>
-<td>A minőségi társítás meghatározza a létrehozott minőségi rendelésre vonatkozó alábbi adatok mindegyikét:
+<td><span data-ttu-id="96e0d-265">Minőségi társítások</span><span class="sxs-lookup"><span data-stu-id="96e0d-265">Quality associations</span></span></td>
+<td><span data-ttu-id="96e0d-266">Lásd a cikk előző szakaszait.</span><span class="sxs-lookup"><span data-stu-id="96e0d-266">See the previous sections of this article.</span></span></td>
+<td><span data-ttu-id="96e0d-267">A minőségi társítás meghatározza a létrehozott minőségi rendelésre vonatkozó alábbi adatok mindegyikét:</span><span class="sxs-lookup"><span data-stu-id="96e0d-267">A quality association defines all the following information for a quality order that is generated:</span></span>
 <ul>
-<li>Tranzakcióesemény</li>
-<li>A cikkeken elvégzendő tesztek</li>
-<li>Elfogadható minőségi szint</li>
-<li>Mintavételi terv</li>
+<li><span data-ttu-id="96e0d-268">Tranzakcióesemény</span><span class="sxs-lookup"><span data-stu-id="96e0d-268">The transaction event</span></span></li>
+<li><span data-ttu-id="96e0d-269">A cikkeken elvégzendő tesztek</span><span class="sxs-lookup"><span data-stu-id="96e0d-269">The set of tests that must be performed on the items</span></span></li>
+<li><span data-ttu-id="96e0d-270">Elfogadható minőségi szint</span><span class="sxs-lookup"><span data-stu-id="96e0d-270">The AQL</span></span></li>
+<li><span data-ttu-id="96e0d-271">Mintavételi terv</span><span class="sxs-lookup"><span data-stu-id="96e0d-271">The sampling plan</span></span></li>
 </ul>
-Definiálnia kell egy minőségi társítást az üzleti folyamat minden olyan változatához, ahol minőségi rendelés automatikus létrehozása szükséges. Minőségi rendelés létrehozható például az üzleti folyamatokban beszerzési rendelésekhez, karanténutasításokhoz, értékesítési rendelésekhez és termelési rendelésekhez.</td>
+<span data-ttu-id="96e0d-272">Definiálnia kell egy minőségi társítást az üzleti folyamat minden olyan változatához, ahol minőségi rendelés automatikus létrehozása szükséges.</span><span class="sxs-lookup"><span data-stu-id="96e0d-272">You must define a quality associationfor each variation in a business process that requires automatic generation of quality orders.</span></span> <span data-ttu-id="96e0d-273">Minőségi rendelés létrehozható például az üzleti folyamatokban beszerzési rendelésekhez, karanténutasításokhoz, értékesítési rendelésekhez és termelési rendelésekhez.</span><span class="sxs-lookup"><span data-stu-id="96e0d-273">For example, a quality order can be generated in the business processes for purchase orders, quarantine orders, sales orders, and production orders.</span></span></td>
 </tr>
 <tr class="even">
-<td>Tesztek</td>
-<td>Ezen az oldalon lehet meghatározni és megtekinteni azokat a teszteket, amelyekkel megállapítható, hogy a termékek megfelelnek-e a minőségi specifikációknak. Hozzárendelhet egy vagy több különálló tesztet egy tesztcsoporthoz. Ebben az esetben tesztspecifikus adatokat is megadhat, például az elfogadható mérési értékeket. Mennyiségi tesztekhez mérési értékek, minőségi tesztekhez pedig tesztváltozók használhatók.
+<td><span data-ttu-id="96e0d-274">Tesztek</span><span class="sxs-lookup"><span data-stu-id="96e0d-274">Tests</span></span></td>
+<td><span data-ttu-id="96e0d-275">Ezen az oldalon lehet meghatározni és megtekinteni azokat a teszteket, amelyekkel megállapítható, hogy a termékek megfelelnek-e a minőségi specifikációknak.</span><span class="sxs-lookup"><span data-stu-id="96e0d-275">Use this page to define and view the individual tests that determine whether your products meet quality specifications.</span></span> <span data-ttu-id="96e0d-276">Hozzárendelhet egy vagy több különálló tesztet egy tesztcsoporthoz.</span><span class="sxs-lookup"><span data-stu-id="96e0d-276">You can assign one or more individual tests to a test group.</span></span> <span data-ttu-id="96e0d-277">Ebben az esetben tesztspecifikus adatokat is megadhat, például az elfogadható mérési értékeket.</span><span class="sxs-lookup"><span data-stu-id="96e0d-277">In this case, you also specify test-specific information, such as the acceptable measurement values.</span></span> <span data-ttu-id="96e0d-278">Mennyiségi tesztekhez mérési értékek, minőségi tesztekhez pedig tesztváltozók használhatók.</span><span class="sxs-lookup"><span data-stu-id="96e0d-278">Measurement values are used for quantitative tests, and test variables are used for qualitative tests.</span></span>
 <ul>
-<li>Egy mennyiségi teszt teszttípusa <strong>Egész</strong> vagy <strong>Tört</strong> lehet, és egy kijelölt mértékegység is tartozik hozzá. A minőségi specifikációk és a teszteredmények számokként fejeződnek ki.</li>
-<li>A minőségi tesztek teszttípusa: <strong>Lehetőség</strong>. A minőségi tesztekhez további, a mérendő tesztváltozóra és annak sorszámozott lehetőségeire vonatkozó adatok szükségesek. A minőségi specifikációk és a teszteredmények egy eredménynek megfelelően fejeződnek ki.</li>
+<li><span data-ttu-id="96e0d-279">Egy mennyiségi teszt teszttípusa <strong>Egész</strong> vagy <strong>Tört</strong> lehet, és egy kijelölt mértékegység is tartozik hozzá.</span><span class="sxs-lookup"><span data-stu-id="96e0d-279">A quantitative test has a test type of <strong>Integer</strong> or <strong>Fraction</strong>, and also has a designated unit of measure.</span></span> <span data-ttu-id="96e0d-280">A minőségi specifikációk és a teszteredmények számokként fejeződnek ki.</span><span class="sxs-lookup"><span data-stu-id="96e0d-280">Quality specifications and test results are expressed as numbers.</span></span></li>
+<li><span data-ttu-id="96e0d-281">A minőségi tesztek teszttípusa: <strong>Lehetőség</strong>.</span><span class="sxs-lookup"><span data-stu-id="96e0d-281">A qualitative test has a test type of <strong>Option</strong>.</span></span> <span data-ttu-id="96e0d-282">A minőségi tesztekhez további, a mérendő tesztváltozóra és annak sorszámozott lehetőségeire vonatkozó adatok szükségesek.</span><span class="sxs-lookup"><span data-stu-id="96e0d-282">Qualitative tests require additional information about the test variable that is being measured and its enumerated options.</span></span> <span data-ttu-id="96e0d-283">A minőségi specifikációk és a teszteredmények egy eredménynek megfelelően fejeződnek ki.</span><span class="sxs-lookup"><span data-stu-id="96e0d-283">Quality specifications and test results are expressed according to an outcome.</span></span></li>
 </ul></td>
-<td>Egy gyártóvállalat a beszerzett anyagon két tesztet végez el: ezek egyike az anyagminőséggel kapcsolatos mennyiségi teszt, a másik pedig a csomagolási sérüléseket felmérő minőségi teszt. A vállalat további adatokat ad meg a kvalitatív tesztre vonatkozóan, hogy meghatározza a tesztváltozót (sérült csomagolás) és annak kimeneteleit. A vállalat a <strong>Tesztcsoportok</strong> oldalon hozzárendeli a két tesztet egy tesztcsoporthoz és megadja a tesztspecifikus adatokat. A tesztcsoportot hozzárendeli egy minőségi rendeléshez, hogy a két teszt eredményét jelenteni tudja.</td>
+<td><span data-ttu-id="96e0d-284">Egy gyártóvállalat a beszerzett anyagon két tesztet végez el: ezek egyike az anyagminőséggel kapcsolatos mennyiségi teszt, a másik pedig a csomagolási sérüléseket felmérő minőségi teszt.</span><span class="sxs-lookup"><span data-stu-id="96e0d-284">A manufacturing company performs two tests on purchased material: a quantitative test about material quality and a qualitative test about packaging damage.</span></span> <span data-ttu-id="96e0d-285">A vállalat további adatokat ad meg a kvalitatív tesztre vonatkozóan, hogy meghatározza a tesztváltozót (sérült csomagolás) és annak kimeneteleit.</span><span class="sxs-lookup"><span data-stu-id="96e0d-285">The company defines additional information about the qualitative test to identify the test variable (damaged packaging) and its outcomes.</span></span> <span data-ttu-id="96e0d-286">A vállalat a <strong>Tesztcsoportok</strong> oldalon hozzárendeli a két tesztet egy tesztcsoporthoz és megadja a tesztspecifikus adatokat.</span><span class="sxs-lookup"><span data-stu-id="96e0d-286">The company uses the <strong>Test groups</strong> page to assign the two tests to a test group and to specify the test-specific information.</span></span> <span data-ttu-id="96e0d-287">A tesztcsoportot hozzárendeli egy minőségi rendeléshez, hogy a két teszt eredményét jelenteni tudja.</span><span class="sxs-lookup"><span data-stu-id="96e0d-287">The test group is assigned to a quality order, so that the company can report test results for the two tests.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Tesztcsoportok</td>
-<td>Ezen az oldalon lehet beállítani, módosítani és megtekinteni a tesztcsoportokat és a tesztcsoportokhoz rendelt különálló teszteket. A felső ablak jeleníti meg a tesztcsoportokat, míg az alsó ablakban láthatók a kiválasztott tesztcsoporthoz tartozó tesztek. Egy tesztcsoporthoz több szabályt is hozzá lehet rendelni, például mintavételi tervet, elfogadható minőségi szintet, valamint a romboló teszt követelményét. Amikor hozzárendel egy különálló tesztet egy tesztcsoporthoz, további adatokat definiálhat, például sorrendet, dokumentumokat és érvényességi dátumokat. Mennyiségi teszt esetén a megadott adatok az elfogadható mérési értékeket is tartalmazzák. Minőségi teszt esetén az adatok a tesztváltozót és az alapértelmezett eredményt tartalmazzák. A minőségi rendelésekhez rendelt tesztcsoport meghatározza azokat az alapértelmezett teszteket, amelyeket az adott cikken végre kell hajtani. Azonban hozzáadhat, törölhet, vagy módosíthat adott minőségi rendelésre vonatkozó teszteket. A minőségi rendelés keretében végzett mindegyik tesztnél megtörténik a teszteredmények jelentése.</td>
-<td>Egy gyártóvállalat minőségi irányelveinek minden variációjához meghatároz egy-egy tesztcsoportot. A különböző tesztcsoportok tükrözik a mintavételi tervek, az együttesen végrehajtandó tesztsorok, az elfogadható mérési értékek, az elfogadható minőségi szint és egyéb tényezők eltéréseit. Mennyiségi teszt esetén az elfogadható mérési értékekben is van különbség. A minőségi irányelveinek érvényesítése érdekében a vállalat minden egyes, minőségi rendeléseket automatikusan generáló szabályhoz a <strong>Minőségi társítások</strong> oldalon hozzárendel egy tesztcsoportot, valamint a manuálisan létrehozott minőségi rendelésekhez is hozzárendel egy tesztcsoportot.</td>
+<td><span data-ttu-id="96e0d-288">Tesztcsoportok</span><span class="sxs-lookup"><span data-stu-id="96e0d-288">Test groups</span></span></td>
+<td><span data-ttu-id="96e0d-289">Ezen az oldalon lehet beállítani, módosítani és megtekinteni a tesztcsoportokat és a tesztcsoportokhoz rendelt különálló teszteket.</span><span class="sxs-lookup"><span data-stu-id="96e0d-289">Use this page to set up, edit, and view test groups and the individual tests that are assigned to a test group.</span></span> <span data-ttu-id="96e0d-290">A felső ablak jeleníti meg a tesztcsoportokat, míg az alsó ablakban láthatók a kiválasztott tesztcsoporthoz tartozó tesztek.</span><span class="sxs-lookup"><span data-stu-id="96e0d-290">The upper pane displays test groups, and the lower pane displays the tests that are assigned to a selected test group.</span></span> <span data-ttu-id="96e0d-291">Egy tesztcsoporthoz több szabályt is hozzá lehet rendelni, például mintavételi tervet, elfogadható minőségi szintet, valamint a romboló teszt követelményét.</span><span class="sxs-lookup"><span data-stu-id="96e0d-291">You assign several policies to a test group, such as a sampling plan, an AQL, and the requirement for destructive testing.</span></span> <span data-ttu-id="96e0d-292">Amikor hozzárendel egy különálló tesztet egy tesztcsoporthoz, további adatokat definiálhat, például sorrendet, dokumentumokat és érvényességi dátumokat.</span><span class="sxs-lookup"><span data-stu-id="96e0d-292">When you assign an individual test to a test group, you define additional information, such as the sequence, documents, and validity dates.</span></span> <span data-ttu-id="96e0d-293">Mennyiségi teszt esetén a megadott adatok az elfogadható mérési értékeket is tartalmazzák.</span><span class="sxs-lookup"><span data-stu-id="96e0d-293">For a quantitative test, the information that you define also includes the acceptable measurement values.</span></span> <span data-ttu-id="96e0d-294">Minőségi teszt esetén az adatok a tesztváltozót és az alapértelmezett eredményt tartalmazzák.</span><span class="sxs-lookup"><span data-stu-id="96e0d-294">For a qualitative test, the information includes the test variable and default outcome.</span></span> <span data-ttu-id="96e0d-295">A minőségi rendelésekhez rendelt tesztcsoport meghatározza azokat az alapértelmezett teszteket, amelyeket az adott cikken végre kell hajtani.</span><span class="sxs-lookup"><span data-stu-id="96e0d-295">The test group that is assigned to a quality order defines the default set of tests that must be performed on the specified item.</span></span> <span data-ttu-id="96e0d-296">Azonban hozzáadhat, törölhet, vagy módosíthat adott minőségi rendelésre vonatkozó teszteket.</span><span class="sxs-lookup"><span data-stu-id="96e0d-296">However, you can add, delete, or change tests on the quality order.</span></span> <span data-ttu-id="96e0d-297">A minőségi rendelés keretében végzett mindegyik tesztnél megtörténik a teszteredmények jelentése.</span><span class="sxs-lookup"><span data-stu-id="96e0d-297">Test results are reported for each test on a quality order.</span></span></td>
+<td><span data-ttu-id="96e0d-298">Egy gyártóvállalat minőségi irányelveinek minden variációjához meghatároz egy-egy tesztcsoportot.</span><span class="sxs-lookup"><span data-stu-id="96e0d-298">A manufacturing company defines a test group for each variation of its quality guidelines.</span></span> <span data-ttu-id="96e0d-299">A különböző tesztcsoportok tükrözik a mintavételi tervek, az együttesen végrehajtandó tesztsorok, az elfogadható mérési értékek, az elfogadható minőségi szint és egyéb tényezők eltéréseit.</span><span class="sxs-lookup"><span data-stu-id="96e0d-299">The various test groups reflect differences in the sampling plans, the sets of tests that must be performed together, the AQL, and other factors.</span></span> <span data-ttu-id="96e0d-300">Mennyiségi teszt esetén az elfogadható mérési értékekben is van különbség.</span><span class="sxs-lookup"><span data-stu-id="96e0d-300">For quantitative tests, there are also differences in the acceptable measurement values.</span></span> <span data-ttu-id="96e0d-301">A minőségi irányelveinek érvényesítése érdekében a vállalat minden egyes, minőségi rendeléseket automatikusan generáló szabályhoz a <strong>Minőségi társítások</strong> oldalon hozzárendel egy tesztcsoportot, valamint a manuálisan létrehozott minőségi rendelésekhez is hozzárendel egy tesztcsoportot.</span><span class="sxs-lookup"><span data-stu-id="96e0d-301">To enforce its quality guidelines, the company assigns a test group to each rule for automatically generating quality orders on the <strong>Quality associations</strong> page, and also assigns a test group to quality orders that are manually created.</span></span></td>
 </tr>
 <tr class="even">
-<td>Cikkminőségi csoportok</td>
-<td>Ezen az oldalon a minőségi csoporthoz rendelt cikkeket, illetve a cikkhez rendelt minőségi csoportokat lehet beállítani, módosítani és megtekinteni. A minőségi csoport a cikkekre vonatkozó közös tesztkövetelményeket képvisel. Miután a <strong>Tesztcsoportok</strong> oldalon definiálta a tesztkövetelményeket, meghatározhatja a minőségi rendelések automatikus létrehozásának szabályait. A folyamat egyszerűsítése érdekében az egyes cikkekhez tartozó szabályokat nem definiáljuk. Ehelyett egy minőségi csoportra vonatkozó szabályokat definiálhatunk a <strong>Minőségi társítások</strong> oldalon. Emellett egy kiválasztott minőségi csoporthoz tartozó <strong>Cikkminőségi csoportok</strong> oldal is használható arra, hogy megfelelő cikkeket az adott csoporthoz rendeljünk. Emellett egy kiválasztott cikkhez tartozó <strong>Cikkminőségi csoportok</strong> oldal is használható arra, hogy megfelelő minőségi csoportokat az adott cikkhez rendeljünk.</td>
-<td>Egy gyártóvállalat több nyersanyagot is vásárol, amelyeknél a beérkezéskor szükséges vizsgálatokra ugyanazok a tesztkövetelmények vonatkoznak. A vállalat definiál egy minőségi csoportot, majd hozzárendeli a nyersanyagokhoz társított cikkszámokat a csoporthoz. Később a vállalat egy új típusú nyersanyagot vásárol, amelyre az előzőekkel azonos tesztkövetelmények vonatkoznak. Ahelyett, hogy az új anyagra új tesztkövetelményeket állítana be, a vállalat hozzáadja az új anyag cikkszámát a meglévő minőségi csoporthoz. Ugyanez a gyártóvállalat olyan cikkeket is gyárt, amelyek gyártási tesztjeire ugyanazok a követelmények érvényesek, és olyan cikkeket is szállít, amelyek szállítás előtti tesztjeire ugyanolyan követelmények vonatkoznak. A vállalat két további minőségi csoportot határoz meg, majd a megfelelő cikkszámokat hozzárendeli az egyes minőségi csoportokhoz.</td>
+<td><span data-ttu-id="96e0d-302">Cikkminőségi csoportok</span><span class="sxs-lookup"><span data-stu-id="96e0d-302">Item quality groups</span></span></td>
+<td><span data-ttu-id="96e0d-303">Ezen az oldalon a minőségi csoporthoz rendelt cikkeket, illetve a cikkhez rendelt minőségi csoportokat lehet beállítani, módosítani és megtekinteni.</span><span class="sxs-lookup"><span data-stu-id="96e0d-303">Use this page to set up, edit, and view the items that are assigned to a quality group or the quality groups that are assigned to an item.</span></span> <span data-ttu-id="96e0d-304">A minőségi csoport a cikkekre vonatkozó közös tesztkövetelményeket képvisel.</span><span class="sxs-lookup"><span data-stu-id="96e0d-304">A quality group represents common testing requirements for items.</span></span> <span data-ttu-id="96e0d-305">Miután a <strong>Tesztcsoportok</strong> oldalon definiálta a tesztkövetelményeket, meghatározhatja a minőségi rendelések automatikus létrehozásának szabályait.</span><span class="sxs-lookup"><span data-stu-id="96e0d-305">After you define the test requirements on the <strong>Test groups</strong> page, you can define the rules for automatically generating quality orders.</span></span> <span data-ttu-id="96e0d-306">A folyamat egyszerűsítése érdekében az egyes cikkekhez tartozó szabályokat nem definiáljuk.</span><span class="sxs-lookup"><span data-stu-id="96e0d-306">To simplify the process, you don't define rules for individual items.</span></span> <span data-ttu-id="96e0d-307">Ehelyett egy minőségi csoportra vonatkozó szabályokat definiálhatunk a <strong>Minőségi társítások</strong> oldalon.</span><span class="sxs-lookup"><span data-stu-id="96e0d-307">Instead, you define rules for a quality group, by using the <strong>Quality associations</strong> page.</span></span> <span data-ttu-id="96e0d-308">Emellett egy kiválasztott minőségi csoporthoz tartozó <strong>Cikkminőségi csoportok</strong> oldal is használható arra, hogy megfelelő cikkeket az adott csoporthoz rendeljünk.</span><span class="sxs-lookup"><span data-stu-id="96e0d-308">You can also use the <strong>Item quality groups</strong> page for a selected quality group to assign relevant items to that group.</span></span> <span data-ttu-id="96e0d-309">Emellett egy kiválasztott cikkhez tartozó <strong>Cikkminőségi csoportok</strong> oldal is használható arra, hogy megfelelő minőségi csoportokat az adott cikkhez rendeljünk.</span><span class="sxs-lookup"><span data-stu-id="96e0d-309">You can also use the <strong>Item quality groups</strong> page for a selected item to assign relevant quality groups to that item.</span></span></td>
+<td><span data-ttu-id="96e0d-310">Egy gyártóvállalat több nyersanyagot is vásárol, amelyeknél a beérkezéskor szükséges vizsgálatokra ugyanazok a tesztkövetelmények vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="96e0d-310">A manufacturing company purchases various raw materials that have the same testing requirements for incoming inspection.</span></span> <span data-ttu-id="96e0d-311">A vállalat definiál egy minőségi csoportot, majd hozzárendeli a nyersanyagokhoz társított cikkszámokat a csoporthoz.</span><span class="sxs-lookup"><span data-stu-id="96e0d-311">The company defines a quality group and then assigns the item numbers that are associated with the raw materials to that group.</span></span> <span data-ttu-id="96e0d-312">Később a vállalat egy új típusú nyersanyagot vásárol, amelyre az előzőekkel azonos tesztkövetelmények vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="96e0d-312">Later, the company purchases a new type of raw material that has the same testing requirements.</span></span> <span data-ttu-id="96e0d-313">Ahelyett, hogy az új anyagra új tesztkövetelményeket állítana be, a vállalat hozzáadja az új anyag cikkszámát a meglévő minőségi csoporthoz.</span><span class="sxs-lookup"><span data-stu-id="96e0d-313">Instead of setting up new testing requirements for the new material, the company adds the item number for the new material to the existing quality group.</span></span> <span data-ttu-id="96e0d-314">Ugyanez a gyártóvállalat olyan cikkeket is gyárt, amelyek gyártási tesztjeire ugyanazok a követelmények érvényesek, és olyan cikkeket is szállít, amelyek szállítás előtti tesztjeire ugyanolyan követelmények vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="96e0d-314">The same manufacturing company also produces items that have the same production testing requirements and ships items that have the same requirement for pre-shipment testing.</span></span> <span data-ttu-id="96e0d-315">A vállalat két további minőségi csoportot határoz meg, majd a megfelelő cikkszámokat hozzárendeli az egyes minőségi csoportokhoz.</span><span class="sxs-lookup"><span data-stu-id="96e0d-315">The company defines two additional quality groups and then assigns the relevant item numbers to each group.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Tesztváltozók</td>
-<td>Ezen az oldalon meghatározhatja és megtekintheti a minőségi tesztekhez társított változókat. Minden változóhoz definiálhat sorszámozott eredményeket, amelyek a szóba jöhető lehetőségeket jelölik. Teszteket a <strong>Tesztek</strong> oldalon adhat meg. Minőségi tesztek esetén a teszt típusát <strong>Lehetőség</strong>-re kell állítania. A <strong>Tesztcsoportok</strong> oldal használatával lehet tesztváltozót adott teszthez hozzárendelni.</td>
-<td>Egy süteménygyártó a készterméken vizsgálatot végez. A vizsgálat tesztnek többféle változója van. Az egyik változó az íz, ennek lehetséges eredményei: jó és rossz. Egy másik változó a szín, ennek lehetséges eredményei: túl sötét, túl világos és megfelelő.</td>
+<td><span data-ttu-id="96e0d-316">Tesztváltozók</span><span class="sxs-lookup"><span data-stu-id="96e0d-316">Test variables</span></span></td>
+<td><span data-ttu-id="96e0d-317">Ezen az oldalon meghatározhatja és megtekintheti a minőségi tesztekhez társított változókat.</span><span class="sxs-lookup"><span data-stu-id="96e0d-317">Use this page to define and view the variables that are associated with a qualitative test.</span></span> <span data-ttu-id="96e0d-318">Minden változóhoz definiálhat sorszámozott eredményeket, amelyek a szóba jöhető lehetőségeket jelölik.</span><span class="sxs-lookup"><span data-stu-id="96e0d-318">For each variable, you define enumerated outcomes that represent the possible options.</span></span> <span data-ttu-id="96e0d-319">Teszteket a <strong>Tesztek</strong> oldalon adhat meg.</span><span class="sxs-lookup"><span data-stu-id="96e0d-319">You define tests on the <strong>Tests</strong> page.</span></span> <span data-ttu-id="96e0d-320">Minőségi tesztek esetén a teszt típusát <strong>Lehetőség</strong>-re kell állítania.</span><span class="sxs-lookup"><span data-stu-id="96e0d-320">For qualitative tests, you must set the test type to <strong>Option</strong>.</span></span> <span data-ttu-id="96e0d-321">A <strong>Tesztcsoportok</strong> oldal használatával lehet tesztváltozót adott teszthez hozzárendelni.</span><span class="sxs-lookup"><span data-stu-id="96e0d-321">Use the <strong>Test groups</strong> page to assign a test variable to an individual test.</span></span></td>
+<td><span data-ttu-id="96e0d-322">Egy süteménygyártó a készterméken vizsgálatot végez.</span><span class="sxs-lookup"><span data-stu-id="96e0d-322">A manufacturing company that produces cookies uses an inspection test for the finished product.</span></span> <span data-ttu-id="96e0d-323">A vizsgálat tesztnek többféle változója van.</span><span class="sxs-lookup"><span data-stu-id="96e0d-323">This inspection test has several variables.</span></span> <span data-ttu-id="96e0d-324">Az egyik változó az íz, ennek lehetséges eredményei: jó és rossz.</span><span class="sxs-lookup"><span data-stu-id="96e0d-324">One variable is taste, and the possible outcomes for this variable are good and bad.</span></span> <span data-ttu-id="96e0d-325">Egy másik változó a szín, ennek lehetséges eredményei: túl sötét, túl világos és megfelelő.</span><span class="sxs-lookup"><span data-stu-id="96e0d-325">A second variable is color, and the possible outcomes are too dark, too light, and correct.</span></span></td>
 </tr>
 <tr class="even">
-<td>Tesztváltozó eredményei</td>
-<td>Ezen az oldalon lehet beállítani, módosítani vagy megtekinteni a minőségi teszthez kapcsolódó tesztváltozó lehetséges teszteredményeit. Mindegyik eredményhez egy <strong>megfelelt</strong> vagy egy <strong>nem felelt meg</strong> állapotot kell hozzárendelni. Minden egyes, a <strong>Tesztek</strong> oldalon megadott minőségi teszthez definiálnia kell egy változót és annak eredményeit. (Minőségi tesztek esetén a <strong>Tesztek</strong> oldalon beállított teszttípus <strong>Lehetőség</strong>.) A <strong>Tesztcsoportok</strong> oldal használatával lehet tesztváltozót és az alapértelmezett eredményt adott minőségi teszthez hozzárendelni.</td>
-<td>Egy süteménygyártó a készterméken vizsgálatot végez. Ennek a vizsgálati tesztnek többféle változója van. Az egyik változó az íz, ennek lehetséges eredményei: jó és rossz. Egy másik változó a szín, ennek lehetséges eredményei: túl sötét, túl világos és megfelelő. Mindegyik eredményhez hozzá van rendelve egy <strong>megfelelt</strong> vagy <strong>nem felelt meg</strong> állapot. Az egyes változók vizsgálatakor az ellenőr a teszt eredményét az egyik eredmény kiválasztásával jelenti.</td>
+<td><span data-ttu-id="96e0d-326">Tesztváltozó eredményei</span><span class="sxs-lookup"><span data-stu-id="96e0d-326">Test variable outcomes</span></span></td>
+<td><span data-ttu-id="96e0d-327">Ezen az oldalon lehet beállítani, módosítani vagy megtekinteni a minőségi teszthez kapcsolódó tesztváltozó lehetséges teszteredményeit.</span><span class="sxs-lookup"><span data-stu-id="96e0d-327">Use this page to set up, edit, and to view the possible test results for a test variable that is associated with a qualitative test.</span></span> <span data-ttu-id="96e0d-328">Mindegyik eredményhez egy <strong>megfelelt</strong> vagy egy <strong>nem felelt meg</strong> állapotot kell hozzárendelni.</span><span class="sxs-lookup"><span data-stu-id="96e0d-328">For each outcome, you assign a <strong>pass</strong> or <strong>fail</strong> status.</span></span> <span data-ttu-id="96e0d-329">Minden egyes, a <strong>Tesztek</strong> oldalon megadott minőségi teszthez definiálnia kell egy változót és annak eredményeit.</span><span class="sxs-lookup"><span data-stu-id="96e0d-329">You must define a variable and its outcomes for each qualitative test that is defined on the <strong>Tests</strong> page.</span></span> <span data-ttu-id="96e0d-330">(Minőségi tesztek esetén a <strong>Tesztek</strong> oldalon beállított teszttípus <strong>Lehetőség</strong>.) A <strong>Tesztcsoportok</strong> oldal használatával lehet tesztváltozót és az alapértelmezett eredményt adott minőségi teszthez hozzárendelni.</span><span class="sxs-lookup"><span data-stu-id="96e0d-330">(For qualitative tests, the test type is set to <strong>Option</strong> on the <strong>Tests</strong> page.) Use the <strong>Test groups</strong> page to assign a test variable and the default outcome to an individual qualitative test.</span></span></td>
+<td><span data-ttu-id="96e0d-331">Egy süteménygyártó a készterméken vizsgálatot végez.</span><span class="sxs-lookup"><span data-stu-id="96e0d-331">A manufacturing company that produces cookies uses an inspection test for the finished product.</span></span> <span data-ttu-id="96e0d-332">Ennek a vizsgálati tesztnek többféle változója van.</span><span class="sxs-lookup"><span data-stu-id="96e0d-332">This inspection test has of several variables.</span></span> <span data-ttu-id="96e0d-333">Az egyik változó az íz, ennek lehetséges eredményei: jó és rossz.</span><span class="sxs-lookup"><span data-stu-id="96e0d-333">One variable is taste, and the possible outcomes for this variable are good and bad.</span></span> <span data-ttu-id="96e0d-334">Egy másik változó a szín, ennek lehetséges eredményei: túl sötét, túl világos és megfelelő.</span><span class="sxs-lookup"><span data-stu-id="96e0d-334">A second variable is color, and the possible outcomes are too dark, too light, and correct.</span></span> <span data-ttu-id="96e0d-335">Mindegyik eredményhez hozzá van rendelve egy <strong>megfelelt</strong> vagy <strong>nem felelt meg</strong> állapot.</span><span class="sxs-lookup"><span data-stu-id="96e0d-335">A status of <strong>pass</strong> or <strong>fail</strong> is assigned to each outcome.</span></span> <span data-ttu-id="96e0d-336">Az egyes változók vizsgálatakor az ellenőr a teszt eredményét az egyik eredmény kiválasztásával jelenti.</span><span class="sxs-lookup"><span data-stu-id="96e0d-336">During the inspection test for each variable, the inspector reports the test result by selecting one of the outcomes.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="96e0d-337">Lásd még</span><span class="sxs-lookup"><span data-stu-id="96e0d-337">See also</span></span>
 --------
 
-[Minőségkezelési folyamatok](quality-management-processes.md)
+[<span data-ttu-id="96e0d-338">Minőségkezelési folyamatok</span><span class="sxs-lookup"><span data-stu-id="96e0d-338">Quality management processes</span></span>](quality-management-processes.md)
 
-[Szabálytalanság kezelésének aktiválása](enable-nonconformance-management.md)
-
-
-
+[<span data-ttu-id="96e0d-339">Szabálytalanság kezelésének aktiválása</span><span class="sxs-lookup"><span data-stu-id="96e0d-339">Enabling nonconformance management</span></span>](enable-nonconformance-management.md)
 

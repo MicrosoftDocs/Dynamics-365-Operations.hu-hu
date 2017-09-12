@@ -19,43 +19,43 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: bcaaa846e0e88eca2c24048b483db8a031b19c43
-ms.openlocfilehash: 703174d3c9809949af2eec2eb996e1e80eac3393
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: fda9e7b017d26f7145414548424e194861095d65
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="questionnaires"></a>Kérdőívek
+# <a name="questionnaires"></a><span data-ttu-id="9e964-105">Kérdőívek</span><span class="sxs-lookup"><span data-stu-id="9e964-105">Questionnaires</span></span>
 
-Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
+<span data-ttu-id="9e964-106">Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="9e964-106">This topic provides general information about questionnaires, and links to more detailed information.</span></span> <span data-ttu-id="9e964-107">A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak.</span><span class="sxs-lookup"><span data-stu-id="9e964-107">A questionnaire is a set of questions that is used to collect information for various purposes.</span></span> <span data-ttu-id="9e964-108">Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket.</span><span class="sxs-lookup"><span data-stu-id="9e964-108">You can design, create, distribute, and complete questionnaires, and then analyze the results.</span></span> 
 
-A Microsoft Dynamics 365 Finance and Operations Enterprise Edition különböző funkcióival testre szabhatja a kérdőívet, hogy megfeleljen az Ön követelményeinek. Íme néhány példa a kérdőív használatához:
+<span data-ttu-id="9e964-109">A Microsoft Dynamics 365 Finance and Operations Enterprise Edition különböző funkcióival testre szabhatja a kérdőívet, hogy megfeleljen az Ön követelményeinek.</span><span class="sxs-lookup"><span data-stu-id="9e964-109">You can customize a questionnaire to fit your specific requirements by using various features that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span></span> <span data-ttu-id="9e964-110">Íme néhány példa a kérdőív használatához:</span><span class="sxs-lookup"><span data-stu-id="9e964-110">Here are some examples of how questionnaires can be used:</span></span>
 
--   Az alkalmazottak és a pályázók szakmai felkészültségének tesztelése.
--   Kiértékelheti, hogy a tanfolyam résztvevői megtanulták-e a tanfolyam anyagát.
--   Kiértékelhet egy tanfolyamot, például a helyszín, a tartalom, vagy az oktató alapján.
--   Az alkalmazotti és vevői elégedettség felmérése.
--   Kiértékelheti az alkalmazottak munkateljesítményét.
+-   <span data-ttu-id="9e964-111">Az alkalmazottak és a pályázók szakmai felkészültségének tesztelése.</span><span class="sxs-lookup"><span data-stu-id="9e964-111">Test the professional skills of employees and applicants.</span></span>
+-   <span data-ttu-id="9e964-112">Kiértékelheti, hogy a tanfolyam résztvevői megtanulták-e a tanfolyam anyagát.</span><span class="sxs-lookup"><span data-stu-id="9e964-112">Evaluate whether course participants learned the course material.</span></span>
+-   <span data-ttu-id="9e964-113">Kiértékelhet egy tanfolyamot, például a helyszín, a tartalom, vagy az oktató alapján.</span><span class="sxs-lookup"><span data-stu-id="9e964-113">Evaluate a course (for example, the facilities, content, and instructor).</span></span>
+-   <span data-ttu-id="9e964-114">Az alkalmazotti és vevői elégedettség felmérése.</span><span class="sxs-lookup"><span data-stu-id="9e964-114">Survey employee and customer satisfaction.</span></span>
+-   <span data-ttu-id="9e964-115">Kiértékelheti az alkalmazottak munkateljesítményét.</span><span class="sxs-lookup"><span data-stu-id="9e964-115">Evaluate employee job performance.</span></span>
 
-Az alábbi táblázatban találhatóak hivatkozások, a kérdőív fő feladatairól. További tudnivalóért kattintson a hivatkozásokra.
+<span data-ttu-id="9e964-116">Az alábbi táblázatban találhatóak hivatkozások, a kérdőív fő feladatairól.</span><span class="sxs-lookup"><span data-stu-id="9e964-116">The following table provides links to information about the core questionnaire tasks.</span></span> <span data-ttu-id="9e964-117">További tudnivalóért kattintson a hivatkozásokra.</span><span class="sxs-lookup"><span data-stu-id="9e964-117">Click the links for more information.</span></span>
 
-| Témakör| Leírás|
+| <span data-ttu-id="9e964-118">Témakör</span><span class="sxs-lookup"><span data-stu-id="9e964-118">Topic</span></span>| <span data-ttu-id="9e964-119">Leírás</span><span class="sxs-lookup"><span data-stu-id="9e964-119">Description</span></span>|
 |------|------------|
-| [Kérdőívek tervezése](design-questionnaires.md)  | Ez a cikk a kérdőívek tervezésével kapcsolatban tartalmaz tájékoztatást. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
-| [Kérdőívek terjesztése és kitöltése](distribute-questionnaires.md)  | Ez a cikk a kérdőívek válaszadóknak történő kiosztásáról, valamint a kérdőívek kitöltéséről szól.                                                                       |
-| [A kérdőív megtekintése, és az eredmények kiértékelése](evaluate-questionnaire-results.md) | Ez a cikk a kitöltött kérdőívek eredményének megtekintéséről és kiértékeléséről szól.                                                                                        |
+| [<span data-ttu-id="9e964-120">Kérdőívek tervezése</span><span class="sxs-lookup"><span data-stu-id="9e964-120">Design a questionnaire</span></span>](design-questionnaires.md)  | <span data-ttu-id="9e964-121">Ez a cikk a kérdőívek tervezésével kapcsolatban tartalmaz tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="9e964-121">This article provides information about how to design a questionnaire.</span></span> <span data-ttu-id="9e964-122">A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába.</span><span class="sxs-lookup"><span data-stu-id="9e964-122">The design process involves setting up prerequisites, answers, and questions, and then combining them into a questionnaire.</span></span> |
+| [<span data-ttu-id="9e964-123">Kérdőívek terjesztése és kitöltése</span><span class="sxs-lookup"><span data-stu-id="9e964-123">Distribute and complete a questionnaire</span></span>](distribute-questionnaires.md)  | <span data-ttu-id="9e964-124">Ez a cikk a kérdőívek válaszadóknak történő kiosztásáról, valamint a kérdőívek kitöltéséről szól.</span><span class="sxs-lookup"><span data-stu-id="9e964-124">This article provides information about how to distribute a questionnaire to respondents and how to complete questionnaires.</span></span>                                                                       |
+| [<span data-ttu-id="9e964-125">A kérdőív megtekintése, és az eredmények kiértékelése</span><span class="sxs-lookup"><span data-stu-id="9e964-125">View and evaluate the results of a questionnaire</span></span>](evaluate-questionnaire-results.md) | <span data-ttu-id="9e964-126">Ez a cikk a kitöltött kérdőívek eredményének megtekintéséről és kiértékeléséről szól.</span><span class="sxs-lookup"><span data-stu-id="9e964-126">This article provides information about how to view and evaluate the results from completed questionnaires.</span></span>                                                                                        |
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="9e964-127">Lásd még</span><span class="sxs-lookup"><span data-stu-id="9e964-127">See also</span></span>
 --------
 
-[Kérdőívek tervezése](design-questionnaires.md)
+[<span data-ttu-id="9e964-128">Kérdőívek tervezése</span><span class="sxs-lookup"><span data-stu-id="9e964-128">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Kérdőívek kiosztása és kitöltése](distribute-questionnaires.md)
+[<span data-ttu-id="9e964-129">Kérdőívek kiosztása és kitöltése</span><span class="sxs-lookup"><span data-stu-id="9e964-129">Distributing and completing questionnaires</span></span>](distribute-questionnaires.md)
 
-[Kérdőívek megtekintése, az eredmények kiértékelése](evaluate-questionnaire-results.md)
+[<span data-ttu-id="9e964-130">Kérdőívek megtekintése, az eredmények kiértékelése</span><span class="sxs-lookup"><span data-stu-id="9e964-130">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 

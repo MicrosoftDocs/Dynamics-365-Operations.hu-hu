@@ -16,67 +16,67 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: bbdb0bbdef966926965c242cb3f2ec0953278954
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3fb430780a91dfdd27ce34908c178917f58df15f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-performance-review"></a>Teljesítmény-áttekintés létrehozása
+# <a name="create-a-performance-review"></a><span data-ttu-id="d14b1-103">Teljesítmény-áttekintés létrehozása</span><span class="sxs-lookup"><span data-stu-id="d14b1-103">Create a performance review</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját. Az eljárás a USMF bemutatócég segítségével lett létrehozva. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+<span data-ttu-id="d14b1-104">Ez az eljárás bemutatja, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját.</span><span class="sxs-lookup"><span data-stu-id="d14b1-104">This procedure shows how to create a performance review and describes the purpose for each section of the review.</span></span> <span data-ttu-id="d14b1-105">Az eljárás a USMF bemutatócég segítségével lett létrehozva.</span><span class="sxs-lookup"><span data-stu-id="d14b1-105">This procedure was created using the USMF demo data company.</span></span> <span data-ttu-id="d14b1-106">Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.</span><span class="sxs-lookup"><span data-stu-id="d14b1-106">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Kattintson az Alkalmazotti önkiszolgáló rendszerre.
-2. Kattintson az Új ellenőrzés lehetőségre új ellenőrzés létrehozásához.
-3. Az Ellenőrzési típus mezőben adjon meg vagy válasszon ki egy értéket.
-4. A Teljesítmény-időszak mezőben adjon meg vagy válasszon ki egy értéket.
-5. Adja meg a dátumot a Záró dátum mezőben.
-6. Kattintson az OK gombra.
-    * Sablonból is létre lehet hozni ellenőrzést. Ez az a legjobb módja az ellenőrzés létrehozásának, mert minden egyes szakasz tartalmazni fogja az ellenőrzés elindításához szükséges információkat.  
-7. Kattintson a Szakaszok megjelenítése lehetőségre a legördülő párbeszédpanel megnyitásához.
-8. Válassza a Nem lehetőséget a Mellékletek megjelenítése mezőben.
-9. Kattintson a Mentés gombra.
-    * Figyelje meg, hogy a Mellékletek lap most nem látható.  
-10. Kattintson a Szakaszok megjelenítése lehetőségre a legördülő párbeszédpanel megnyitásához.
-11. Válassza az Igen lehetőséget a Mellékletek megjelenítése mezőben.
-12. Kattintson a Mentés gombra.
-13. Kattintson a Cél hozzáadása ellenőrzéshez elemre.
-14. Kattintson a Mégse gombra.
-15. Kattintson a Kompetencia hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.
-16. Érték beírása a Címmezőbe.
-17. A Leírás mezőben adja meg a „Vevői képességek növelése a támogatási csoporttal” értéket.
-18. Kattintson az OK gombra.
-19. Kattintson Az összes összecsukása elemre.
-20. Kattintson Az összes kibontása elemre.
-21. Kattintson a Megjegyzés hozzáadása lehetőségre.
-22. Kattintson a Feladás lehetőségre.
-23. Kattintson a Mértékek lapra.
-24. Kattintson a Mérték hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.
-25. A Mérték mezőben adjon meg vagy válasszon ki egy értéket.
-26. A Kitűzött összeg mezőben adjon meg egy számot.
-27. Kattintson az OK gombra.
-28. Kattintson a Tevékenységek fülre.
-29. Kattintson a Hozzáadás gombra.
-30. Érték beírása a Címmezőbe.
-31. A Leírás mezőben adjon meg egy értéket.
-32. Adja meg a dátumot a Kezdő dátum mezőben.
-33. Adja meg a dátumot a Befejezés dátuma mezőben.
-34. A Fejlesztési terv mezőben válassza az Igen lehetőséget.
-35. A Kulcsszavak mezőben adjon meg egy értéket.
-36. Kattintson a Mentés gombra.
-37. Kattintson a Minősítések lapra.
-    * A minősítés részletei gyorslapon az alkalmazottak saját maguk értékelhetik magukat, és a vezető értékelheti az alkalmazottat. Súlyok használata esetén a pontszámok súlyozásának értékét a program automatikusan kiszámítja.    Ennek a szakasznak a megtekintéséhez engedélyezze az alkalmazotti minősítések megjelenítésének paraméterbeállításait.  
-38. Kattintson a Láttamozások fülre.
-    * Ha az ellenőrzés munkafolyamatot alkalmaz, a láttamozások csak a munkafolyamat befejeződése után jelennek meg. Nincs munkafolyamat használva, úgy mind a munkavállaló, mind a vezető egyaránt szerepelnek itt. A szükséges jelölőnégyzet be van jelölve az ellenőrzési típus beállításainak alapján.  
-39. Kattintson az Általános fülre.
-    * A teljesítési időszak létrehozza az alapértelmezett kezdési és befejezési dátumot. E dátumok szerkeszthetők.  
-    * Az állapotok szabályozzák az ellenőrzés elérhetőségét. A Még el nem kezdett állapotnál mindenki szerkesztheti az ellenőrzést. A Folyamatban állapotnál csak az alkalmazott tekintheti meg és szerkesztheti az ellenőrzést. Az Ellenőrzésre kész állapotnál csak a vezető tekintheti meg és szerkesztheti az ellenőrzést. A Végleges ellenőrzés állapotnál az alkalmazott és a vezető egyaránt megtekinthetik az ellenőrzést, és szerkeszthetik is, ha ez be van állítva az ellenőrzés típusában. A Kész, Elutasítva és Visszavonva állapotok csak olvashatóvá teszik az ellenőrzést.  
-40. Az Áttekintés mezőben adjon meg egy értéket.
-41. Kattintson a Ellenőrzés lapra.
-    * Ahogy az ellenőrzés végighalad az állapotokon, mind az alkalmazott, mind a vezető adhat hozzá megjegyzéseket az egyes célokhoz és kompetenciákhoz.  
-42. Kattintson a Láttamozások fülre.
-    * Az ellenőrzést a dolgozó és a vezető láttamozhatja. Ha minden szükséges láttamozás kész, az állapot átáll Befejezett értékre, és többé nem végezhető módosítás.  
+1. <span data-ttu-id="d14b1-107">Kattintson az Alkalmazotti önkiszolgáló rendszerre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-107">Click Employee self service.</span></span>
+2. <span data-ttu-id="d14b1-108">Kattintson az Új ellenőrzés lehetőségre új ellenőrzés létrehozásához.</span><span class="sxs-lookup"><span data-stu-id="d14b1-108">Click New review to create a new review.</span></span>
+3. <span data-ttu-id="d14b1-109">Az Ellenőrzési típus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d14b1-109">In the Review type field, enter or select a value.</span></span>
+4. <span data-ttu-id="d14b1-110">A Teljesítmény-időszak mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d14b1-110">In the Performance period field, enter or select a value.</span></span>
+5. <span data-ttu-id="d14b1-111">Adja meg a dátumot a Záró dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="d14b1-111">In the End date field, enter a date.</span></span>
+6. <span data-ttu-id="d14b1-112">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-112">Click OK.</span></span>
+    * <span data-ttu-id="d14b1-113">Sablonból is létre lehet hozni ellenőrzést.</span><span class="sxs-lookup"><span data-stu-id="d14b1-113">You can also create a review from a template.</span></span> <span data-ttu-id="d14b1-114">Ez az a legjobb módja az ellenőrzés létrehozásának, mert minden egyes szakasz tartalmazni fogja az ellenőrzés elindításához szükséges információkat.</span><span class="sxs-lookup"><span data-stu-id="d14b1-114">This is the best way to create a review because each section will contain the information that you need to start a review.</span></span>  
+7. <span data-ttu-id="d14b1-115">Kattintson a Szakaszok megjelenítése lehetőségre a legördülő párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d14b1-115">Click Show sections to open the drop dialog.</span></span>
+8. <span data-ttu-id="d14b1-116">Válassza a Nem lehetőséget a Mellékletek megjelenítése mezőben.</span><span class="sxs-lookup"><span data-stu-id="d14b1-116">Select No in the Show attachments field.</span></span>
+9. <span data-ttu-id="d14b1-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-117">Click Save.</span></span>
+    * <span data-ttu-id="d14b1-118">Figyelje meg, hogy a Mellékletek lap most nem látható.</span><span class="sxs-lookup"><span data-stu-id="d14b1-118">Notice that the attachments tab is now hidden.</span></span>  
+10. <span data-ttu-id="d14b1-119">Kattintson a Szakaszok megjelenítése lehetőségre a legördülő párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d14b1-119">Click Show sections to open the drop dialog.</span></span>
+11. <span data-ttu-id="d14b1-120">Válassza az Igen lehetőséget a Mellékletek megjelenítése mezőben.</span><span class="sxs-lookup"><span data-stu-id="d14b1-120">Select Yes in the Show attachments field.</span></span>
+12. <span data-ttu-id="d14b1-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-121">Click Save.</span></span>
+13. <span data-ttu-id="d14b1-122">Kattintson a Cél hozzáadása ellenőrzéshez elemre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-122">Click Add goal to review.</span></span>
+14. <span data-ttu-id="d14b1-123">Kattintson a Mégse gombra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-123">Click Cancel.</span></span>
+15. <span data-ttu-id="d14b1-124">Kattintson a Kompetencia hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d14b1-124">Click Add competency to open the drop dialog.</span></span>
+16. <span data-ttu-id="d14b1-125">Érték beírása a Címmezőbe.</span><span class="sxs-lookup"><span data-stu-id="d14b1-125">In the Title field, type a value.</span></span>
+17. <span data-ttu-id="d14b1-126">A Leírás mezőben adja meg a „Vevői képességek növelése a támogatási csoporttal” értéket.</span><span class="sxs-lookup"><span data-stu-id="d14b1-126">In the Description field, enter 'Increase customer skills by working with the support team'.</span></span>
+18. <span data-ttu-id="d14b1-127">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-127">Click OK.</span></span>
+19. <span data-ttu-id="d14b1-128">Kattintson Az összes összecsukása elemre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-128">Click Collapse all.</span></span>
+20. <span data-ttu-id="d14b1-129">Kattintson Az összes kibontása elemre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-129">Click Expand all.</span></span>
+21. <span data-ttu-id="d14b1-130">Kattintson a Megjegyzés hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-130">Click Add comment.</span></span>
+22. <span data-ttu-id="d14b1-131">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-131">Click Post.</span></span>
+23. <span data-ttu-id="d14b1-132">Kattintson a Mértékek lapra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-132">Click the Measurements tab.</span></span>
+24. <span data-ttu-id="d14b1-133">Kattintson a Mérték hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d14b1-133">Click Add measurement to open the drop dialog.</span></span>
+25. <span data-ttu-id="d14b1-134">A Mérték mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d14b1-134">In the Measurement field, enter or select a value.</span></span>
+26. <span data-ttu-id="d14b1-135">A Kitűzött összeg mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="d14b1-135">In the Target amount field, enter a number.</span></span>
+27. <span data-ttu-id="d14b1-136">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-136">Click OK.</span></span>
+28. <span data-ttu-id="d14b1-137">Kattintson a Tevékenységek fülre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-137">Click the Activities tab.</span></span>
+29. <span data-ttu-id="d14b1-138">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-138">Click Add.</span></span>
+30. <span data-ttu-id="d14b1-139">Érték beírása a Címmezőbe.</span><span class="sxs-lookup"><span data-stu-id="d14b1-139">In the Title field, type a value.</span></span>
+31. <span data-ttu-id="d14b1-140">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d14b1-140">In the Description field, type a value.</span></span>
+32. <span data-ttu-id="d14b1-141">Adja meg a dátumot a Kezdő dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="d14b1-141">In the Start date field, enter a date.</span></span>
+33. <span data-ttu-id="d14b1-142">Adja meg a dátumot a Befejezés dátuma mezőben.</span><span class="sxs-lookup"><span data-stu-id="d14b1-142">In the Date completed field, enter a date.</span></span>
+34. <span data-ttu-id="d14b1-143">A Fejlesztési terv mezőben válassza az Igen lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="d14b1-143">Select Yes in the Development plan field.</span></span>
+35. <span data-ttu-id="d14b1-144">A Kulcsszavak mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d14b1-144">In the Keywords field, type a value.</span></span>
+36. <span data-ttu-id="d14b1-145">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-145">Click Save.</span></span>
+37. <span data-ttu-id="d14b1-146">Kattintson a Minősítések lapra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-146">Click the Ratings tab.</span></span>
+    * <span data-ttu-id="d14b1-147">A minősítés részletei gyorslapon az alkalmazottak saját maguk értékelhetik magukat, és a vezető értékelheti az alkalmazottat.</span><span class="sxs-lookup"><span data-stu-id="d14b1-147">The rating details FastTab allows employees to rate themselves and the manager to rate the employee.</span></span> <span data-ttu-id="d14b1-148">Súlyok használata esetén a pontszámok súlyozásának értékét a program automatikusan kiszámítja.</span><span class="sxs-lookup"><span data-stu-id="d14b1-148">If weights are used, the weight value of the scores will be calculated automatically.</span></span>    <span data-ttu-id="d14b1-149">Ennek a szakasznak a megtekintéséhez engedélyezze az alkalmazotti minősítések megjelenítésének paraméterbeállításait.</span><span class="sxs-lookup"><span data-stu-id="d14b1-149">To see this section, enable the parameter settings for showing employee ratings.</span></span>  
+38. <span data-ttu-id="d14b1-150">Kattintson a Láttamozások fülre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-150">Click the Sign offs tab.</span></span>
+    * <span data-ttu-id="d14b1-151">Ha az ellenőrzés munkafolyamatot alkalmaz, a láttamozások csak a munkafolyamat befejeződése után jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="d14b1-151">If the review uses workflow, then the signoffs will appear only after the workflow is complete.</span></span> <span data-ttu-id="d14b1-152">Nincs munkafolyamat használva, úgy mind a munkavállaló, mind a vezető egyaránt szerepelnek itt.</span><span class="sxs-lookup"><span data-stu-id="d14b1-152">If no workflow is used, then both the worker and the manager are listed here.</span></span> <span data-ttu-id="d14b1-153">A szükséges jelölőnégyzet be van jelölve az ellenőrzési típus beállításainak alapján.</span><span class="sxs-lookup"><span data-stu-id="d14b1-153">The required check box is selected based on the settings of the review type.</span></span>  
+39. <span data-ttu-id="d14b1-154">Kattintson az Általános fülre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-154">Click the General tab.</span></span>
+    * <span data-ttu-id="d14b1-155">A teljesítési időszak létrehozza az alapértelmezett kezdési és befejezési dátumot.</span><span class="sxs-lookup"><span data-stu-id="d14b1-155">The performance period creates the default start and end dates.</span></span> <span data-ttu-id="d14b1-156">E dátumok szerkeszthetők.</span><span class="sxs-lookup"><span data-stu-id="d14b1-156">Those dates are editable.</span></span>  
+    * <span data-ttu-id="d14b1-157">Az állapotok szabályozzák az ellenőrzés elérhetőségét.</span><span class="sxs-lookup"><span data-stu-id="d14b1-157">The statuses control the access to the review.</span></span> <span data-ttu-id="d14b1-158">A Még el nem kezdett állapotnál mindenki szerkesztheti az ellenőrzést.</span><span class="sxs-lookup"><span data-stu-id="d14b1-158">The Not started status allows everyone to edit the review.</span></span> <span data-ttu-id="d14b1-159">A Folyamatban állapotnál csak az alkalmazott tekintheti meg és szerkesztheti az ellenőrzést.</span><span class="sxs-lookup"><span data-stu-id="d14b1-159">The In progress status allows only the employee to view and edit the review.</span></span> <span data-ttu-id="d14b1-160">Az Ellenőrzésre kész állapotnál csak a vezető tekintheti meg és szerkesztheti az ellenőrzést.</span><span class="sxs-lookup"><span data-stu-id="d14b1-160">Ready for review allows only the manager to view and edit the review.</span></span> <span data-ttu-id="d14b1-161">A Végleges ellenőrzés állapotnál az alkalmazott és a vezető egyaránt megtekinthetik az ellenőrzést, és szerkeszthetik is, ha ez be van állítva az ellenőrzés típusában.</span><span class="sxs-lookup"><span data-stu-id="d14b1-161">Final review status allows both the employee and manager to view the review and also edit it if set up in the review type.</span></span> <span data-ttu-id="d14b1-162">A Kész, Elutasítva és Visszavonva állapotok csak olvashatóvá teszik az ellenőrzést.</span><span class="sxs-lookup"><span data-stu-id="d14b1-162">The Completed, Rejected, and Canceled statuses make the review read-only.</span></span>  
+40. <span data-ttu-id="d14b1-163">Az Áttekintés mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d14b1-163">In the Overview field, type a value.</span></span>
+41. <span data-ttu-id="d14b1-164">Kattintson a Ellenőrzés lapra.</span><span class="sxs-lookup"><span data-stu-id="d14b1-164">Click the Review tab.</span></span>
+    * <span data-ttu-id="d14b1-165">Ahogy az ellenőrzés végighalad az állapotokon, mind az alkalmazott, mind a vezető adhat hozzá megjegyzéseket az egyes célokhoz és kompetenciákhoz.</span><span class="sxs-lookup"><span data-stu-id="d14b1-165">As the review moves through the statuses, the employee and manager can add comments for each goal or competency.</span></span>  
+42. <span data-ttu-id="d14b1-166">Kattintson a Láttamozások fülre.</span><span class="sxs-lookup"><span data-stu-id="d14b1-166">Click the Sign offs tab.</span></span>
+    * <span data-ttu-id="d14b1-167">Az ellenőrzést a dolgozó és a vezető láttamozhatja.</span><span class="sxs-lookup"><span data-stu-id="d14b1-167">The worker and manager can sign off on the review.</span></span> <span data-ttu-id="d14b1-168">Ha minden szükséges láttamozás kész, az állapot átáll Befejezett értékre, és többé nem végezhető módosítás.</span><span class="sxs-lookup"><span data-stu-id="d14b1-168">When all required signoffs are complete, the status is changed to Completed and no more changes can be made.</span></span>  
 
 

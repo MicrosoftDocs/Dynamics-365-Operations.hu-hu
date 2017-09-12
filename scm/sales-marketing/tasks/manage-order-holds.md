@@ -16,62 +16,62 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 6a9487567620b7b7d6d15015f7f0b7675e227c8a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e9a520b2af7cdfef325f1fa96504f2a20078ed80
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-order-holds"></a>Rendelések várakoztatásának kezelése
+# <a name="manage-order-holds"></a><span data-ttu-id="b3f87-103">Rendelések várakoztatásának kezelése</span><span class="sxs-lookup"><span data-stu-id="b3f87-103">Manage order holds</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan lehet a vevői értékesítési rendeléseket várakoztatásra tenni, hogyan dolgozhat a várakoztatott rendelések kifizetésével, és hogyan tudja a rendelésvárakoztatásokat eltávolítani. Egy megrendelés különféle okokból kerülhet várakoztatásra. Például előfordulhat, hogy egy megrendelés mindaddig várakoztatva van, amíg a vevő címe, vagy a fizetési mód ellenőrzésre nem kerül, vagy amíg a vezető ellenőrzi a vevő hitelkeretét. Amíg a rendelés várakoztatáson van, a raktár nem tudja feldolgozni szállításra. 
+<span data-ttu-id="b3f87-104">Ez az eljárás bemutatja, hogyan lehet a vevői értékesítési rendeléseket várakoztatásra tenni, hogyan dolgozhat a várakoztatott rendelések kifizetésével, és hogyan tudja a rendelésvárakoztatásokat eltávolítani.</span><span class="sxs-lookup"><span data-stu-id="b3f87-104">This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds.</span></span> <span data-ttu-id="b3f87-105">Egy megrendelés különféle okokból kerülhet várakoztatásra.</span><span class="sxs-lookup"><span data-stu-id="b3f87-105">An order might be placed on hold for a variety of reasons.</span></span> <span data-ttu-id="b3f87-106">Például előfordulhat, hogy egy megrendelés mindaddig várakoztatva van, amíg a vevő címe, vagy a fizetési mód ellenőrzésre nem kerül, vagy amíg a vezető ellenőrzi a vevő hitelkeretét.</span><span class="sxs-lookup"><span data-stu-id="b3f87-106">For example, you might hold an order until a customer address or payment method can be verified or until a manager can review the customer’s credit limit.</span></span> <span data-ttu-id="b3f87-107">Amíg a rendelés várakoztatáson van, a raktár nem tudja feldolgozni szállításra.</span><span class="sxs-lookup"><span data-stu-id="b3f87-107">While the order on hold, it cannot be processed by the warehouse for shipping.</span></span> 
 
-Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
+<span data-ttu-id="b3f87-108">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="b3f87-108">You can run this procedure in demo data company USMF or on your own data.</span></span>
 
 
-## <a name="set-up-order-holds"></a>Rendelésvárakoztatások beállítása
-1. Ugorjon az Értékesítés és marketing > Beállítás > Értékesítési rendelések > Rendelésvárakoztatási kódok lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A Várakoztatási kód mezőbe írjon be egy értéket.
-    * Írja be például azt, hogy Visszahívás.  
-4. A Leírás mezőben adjon meg egy értéket.
-    * Például, Rendelés visszatartva, vevői visszahívásra vár.  
-    * Opcionálisan bejelölheti a Foglalások eltávolítása jelölőnégyzetet, ha el szeretné távolítani a rendelésből a fizikai foglalásokat a várakoztatási kód hozzáadásakor.  
-5. Kattintson a Mentés gombra.
+## <a name="set-up-order-holds"></a><span data-ttu-id="b3f87-109">Rendelésvárakoztatások beállítása</span><span class="sxs-lookup"><span data-stu-id="b3f87-109">Set up order holds</span></span>
+1. <span data-ttu-id="b3f87-110">Ugorjon az Értékesítés és marketing > Beállítás > Értékesítési rendelések > Rendelésvárakoztatási kódok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-110">Go to Sales and marketing > Setup > Sales orders > Order hold codes.</span></span>
+2. <span data-ttu-id="b3f87-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-111">Click New.</span></span>
+3. <span data-ttu-id="b3f87-112">A Várakoztatási kód mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b3f87-112">In the Hold code field, type a value.</span></span>
+    * <span data-ttu-id="b3f87-113">Írja be például azt, hogy Visszahívás.</span><span class="sxs-lookup"><span data-stu-id="b3f87-113">For example, type Call back.</span></span>  
+4. <span data-ttu-id="b3f87-114">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b3f87-114">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="b3f87-115">Például, Rendelés visszatartva, vevői visszahívásra vár.</span><span class="sxs-lookup"><span data-stu-id="b3f87-115">For example, Order held waiting for customer callback.</span></span>  
+    * <span data-ttu-id="b3f87-116">Opcionálisan bejelölheti a Foglalások eltávolítása jelölőnégyzetet, ha el szeretné távolítani a rendelésből a fizikai foglalásokat a várakoztatási kód hozzáadásakor.</span><span class="sxs-lookup"><span data-stu-id="b3f87-116">Optionally, select the Remove reservations check box to remove any physical reservations from the order when this hold code is added.</span></span>  
+5. <span data-ttu-id="b3f87-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="b3f87-117">Click Save.</span></span>
 
-## <a name="place-order-on-hold"></a>Rendelés várakoztatásra állítása
-1. Lépjen az Értékesítés és marketing > Értékesítési rendelések > Minden értékesítési rendelés menüpontba.
-2. Kattintson az Új lehetőségre.
-3. A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.
-4. Kattintson az OK gombra.
-5. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-6. Adjon meg egy számot a Mennyiség mezőben.
-7. A Művelet panelen kattintson az Értékesítési rendelés elemre.
-8. Kattintson a Rendelésvárakoztatások lehetőségre.
-9. Kattintson az Új lehetőségre.
-10. A Várakoztatási kód mezőjében válassza ki a korábbi részfeladatban létrehozott kódot.
-11. Kattintson a Mentés gombra.
-12. Zárja be a lapot.
-13. Lépjen az Értékesítés és marketing > Értékesítési rendelések > Minden értékesítési rendelés menüpontba.
-14. A listában jelölje meg a kiválasztott sort.
-    * Az aktuálisan várakoztatásra állított rendeléseknél be van jelölve a „Nem feldolgozandó” és a „Várakoztatott” mező.    
-15. A Művelet panelen kattintson a Kitárolás és csomagolás elemre.
+## <a name="place-order-on-hold"></a><span data-ttu-id="b3f87-118">Rendelés várakoztatásra állítása</span><span class="sxs-lookup"><span data-stu-id="b3f87-118">Place order on hold</span></span>
+1. <span data-ttu-id="b3f87-119">Lépjen az Értékesítés és marketing > Értékesítési rendelések > Minden értékesítési rendelés menüpontba.</span><span class="sxs-lookup"><span data-stu-id="b3f87-119">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+2. <span data-ttu-id="b3f87-120">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-120">Click New.</span></span>
+3. <span data-ttu-id="b3f87-121">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b3f87-121">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="b3f87-122">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="b3f87-122">Click OK.</span></span>
+5. <span data-ttu-id="b3f87-123">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b3f87-123">In the Item number field, enter or select a value.</span></span>
+6. <span data-ttu-id="b3f87-124">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="b3f87-124">In the Quantity field, enter a number.</span></span>
+7. <span data-ttu-id="b3f87-125">A Művelet panelen kattintson az Értékesítési rendelés elemre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-125">On the Action Pane, click Sales order.</span></span>
+8. <span data-ttu-id="b3f87-126">Kattintson a Rendelésvárakoztatások lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-126">Click Order holds.</span></span>
+9. <span data-ttu-id="b3f87-127">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-127">Click New.</span></span>
+10. <span data-ttu-id="b3f87-128">A Várakoztatási kód mezőjében válassza ki a korábbi részfeladatban létrehozott kódot.</span><span class="sxs-lookup"><span data-stu-id="b3f87-128">In the Hold code field, select the code you have created in the previous subtask.</span></span>
+11. <span data-ttu-id="b3f87-129">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="b3f87-129">Click Save.</span></span>
+12. <span data-ttu-id="b3f87-130">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="b3f87-130">Close the page.</span></span>
+13. <span data-ttu-id="b3f87-131">Lépjen az Értékesítés és marketing > Értékesítési rendelések > Minden értékesítési rendelés menüpontba.</span><span class="sxs-lookup"><span data-stu-id="b3f87-131">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+14. <span data-ttu-id="b3f87-132">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="b3f87-132">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="b3f87-133">Az aktuálisan várakoztatásra állított rendeléseknél be van jelölve a „Nem feldolgozandó” és a „Várakoztatott” mező.</span><span class="sxs-lookup"><span data-stu-id="b3f87-133">Orders that are currently on hold have the "Do not process" and "Hold" fields marked.</span></span>    
+15. <span data-ttu-id="b3f87-134">A Művelet panelen kattintson a Kitárolás és csomagolás elemre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-134">On the Action Pane, click Pick and pack.</span></span>
 
-## <a name="manage-order-holds"></a>Rendelések várakoztatásának kezelése
-1. Ugorjon az Értékesítés és marketing > Értékesítési rendelések > Nyitott rendelések > Rendelésvárakoztatások elemre.
-    * A Rendelésvárakoztatások oldal olyan munkaterületként működik, amely a jelenlegi és a feldolgozott várakoztatások áttekintését nyújtja, és ahol elvégezhető a várakoztatások és a társított értékesítési rendelések kezelése.      
-2. A listában jelölje meg a kiválasztott sort.
-3. Kattintson a Várakoztatás kivétele lehetőségre a Művelet panelen.
-4. Kattintson a Kivétel elemre.
-5. A listában szüntesse meg a kiválasztott sor megjelölését.
-    * A Felelős mező most már megjeleníti a felhasználói azonosítót.   
-6. Kattintson a Kivétel törlése elemre.
-7. Kattintson a Várakoztatás megszüntetése lehetőségre a Művelet panelen.
-    * Ha készen áll a várakoztatás eltávolítására és a rendelés feldolgozásának folytatására a teljesítés következő lépésével, törölnie kell a várakoztatást. Ha a rendelésen nem szükséges módosításokat végrehajtani, lefuttathatja a Várakoztatás megszüntetése műveletet. Ha azonban a várakoztatás törlésekor a rendelést frissíteni kell, a Törlés és módosítás műveletet használhatja.      
-    * A Törlés és küldés művelet csak a Hívásközpont funkció használata esetén alkalmazható.  
-8. Kattintson a Várakoztatások megszüntetése elemre.
-    * Ezzel törölte a várakoztatást a rendelésből, és eltávolította az aktív várakoztatások listájáról. Minden várakoztatás megtekintéséhez, vagy egy részhalmazuk megtekintéséhez egy bizonyos állapot szerint, módosítsa a Megjelenítés mező értékét.     
+## <a name="manage-order-holds"></a><span data-ttu-id="b3f87-135">Rendelések várakoztatásának kezelése</span><span class="sxs-lookup"><span data-stu-id="b3f87-135">Manage order holds</span></span>
+1. <span data-ttu-id="b3f87-136">Ugorjon az Értékesítés és marketing > Értékesítési rendelések > Nyitott rendelések > Rendelésvárakoztatások elemre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-136">Go to Sales and marketing > Sales orders > Open orders > Order holds.</span></span>
+    * <span data-ttu-id="b3f87-137">A Rendelésvárakoztatások oldal olyan munkaterületként működik, amely a jelenlegi és a feldolgozott várakoztatások áttekintését nyújtja, és ahol elvégezhető a várakoztatások és a társított értékesítési rendelések kezelése.</span><span class="sxs-lookup"><span data-stu-id="b3f87-137">Order holds page functions as a workbench where you can get an overview of all the current and processed holds, and handle them and associated sales orders.</span></span>      
+2. <span data-ttu-id="b3f87-138">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="b3f87-138">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="b3f87-139">Kattintson a Várakoztatás kivétele lehetőségre a Művelet panelen.</span><span class="sxs-lookup"><span data-stu-id="b3f87-139">On the Action Pane, click Hold checkout.</span></span>
+4. <span data-ttu-id="b3f87-140">Kattintson a Kivétel elemre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-140">Click Check out.</span></span>
+5. <span data-ttu-id="b3f87-141">A listában szüntesse meg a kiválasztott sor megjelölését.</span><span class="sxs-lookup"><span data-stu-id="b3f87-141">In the list, unmark the selected row.</span></span>
+    * <span data-ttu-id="b3f87-142">A Felelős mező most már megjeleníti a felhasználói azonosítót.</span><span class="sxs-lookup"><span data-stu-id="b3f87-142">The Checkout out to field now shows your user ID.</span></span>   
+6. <span data-ttu-id="b3f87-143">Kattintson a Kivétel törlése elemre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-143">Click Clear checkout.</span></span>
+7. <span data-ttu-id="b3f87-144">Kattintson a Várakoztatás megszüntetése lehetőségre a Művelet panelen.</span><span class="sxs-lookup"><span data-stu-id="b3f87-144">On the Action Pane, click Clear hold.</span></span>
+    * <span data-ttu-id="b3f87-145">Ha készen áll a várakoztatás eltávolítására és a rendelés feldolgozásának folytatására a teljesítés következő lépésével, törölnie kell a várakoztatást.</span><span class="sxs-lookup"><span data-stu-id="b3f87-145">When you are ready to remove the hold and allow the order to proceed to the next fulfilment step, you must clear the hold.</span></span> <span data-ttu-id="b3f87-146">Ha a rendelésen nem szükséges módosításokat végrehajtani, lefuttathatja a Várakoztatás megszüntetése műveletet.</span><span class="sxs-lookup"><span data-stu-id="b3f87-146">If the order requires no changes, you can run the Clear holds action.</span></span> <span data-ttu-id="b3f87-147">Ha azonban a várakoztatás törlésekor a rendelést frissíteni kell, a Törlés és módosítás műveletet használhatja.</span><span class="sxs-lookup"><span data-stu-id="b3f87-147">However, you can use the Clear and modify action if, when clearing a hold, the order has to be updated.</span></span>      
+    * <span data-ttu-id="b3f87-148">A Törlés és küldés művelet csak a Hívásközpont funkció használata esetén alkalmazható.</span><span class="sxs-lookup"><span data-stu-id="b3f87-148">The Clear and submit action is only applicable when you use Call center functionality.</span></span>  
+8. <span data-ttu-id="b3f87-149">Kattintson a Várakoztatások megszüntetése elemre.</span><span class="sxs-lookup"><span data-stu-id="b3f87-149">Click Clear holds.</span></span>
+    * <span data-ttu-id="b3f87-150">Ezzel törölte a várakoztatást a rendelésből, és eltávolította az aktív várakoztatások listájáról.</span><span class="sxs-lookup"><span data-stu-id="b3f87-150">The hold has now been cleared from the order and removed from the list of Active holds.</span></span> <span data-ttu-id="b3f87-151">Minden várakoztatás megtekintéséhez, vagy egy részhalmazuk megtekintéséhez egy bizonyos állapot szerint, módosítsa a Megjelenítés mező értékét.</span><span class="sxs-lookup"><span data-stu-id="b3f87-151">To see all the holds or their subset according to a specific status, change the value in the Show field.</span></span>     
 
 

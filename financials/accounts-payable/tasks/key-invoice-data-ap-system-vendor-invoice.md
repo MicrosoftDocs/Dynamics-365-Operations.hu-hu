@@ -16,67 +16,67 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: a365c52af49a66d6af5bb38f0053bd9c0fd34301
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 48535a283cbdfdc7343a20105b139c527cac85f4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="key-invoice-data-into-accounts-payable-using-a-vendor-invoice"></a>Fő számlaadatok a kötelezettségekbe egy szállítói számla használatával
+# <a name="key-invoice-data-into-accounts-payable-using-a-vendor-invoice"></a><span data-ttu-id="4e9bb-103">Fő számlaadatok a kötelezettségekbe egy szállítói számla használatával</span><span class="sxs-lookup"><span data-stu-id="4e9bb-103">Key invoice data into accounts payable using a vendor invoice</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez a feladat-útmutató segít Önnek szállítói számla létrehozásában egy beszerzési rendelésből, valamint a beszerzési rendelés, nyugta és számla egyeztetési eredményeinek megtekintésében (háromirányú egyeztetés).
+<span data-ttu-id="4e9bb-104">Ez a feladat-útmutató segít Önnek szállítói számla létrehozásában egy beszerzési rendelésből, valamint a beszerzési rendelés, nyugta és számla egyeztetési eredményeinek megtekintésében (háromirányú egyeztetés).</span><span class="sxs-lookup"><span data-stu-id="4e9bb-104">This task guide will help you create a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching).</span></span>
 
 
-## <a name="create-a-purchase-order"></a>Beszerzési rendelés létrehozása
-1. Nyissa meg a következőt: Kötelezettségek > Beszerzési rendelések > Minden beszerzési rendelés.
-2. Kattintson az Új lehetőségre.
-3. A Szállítói számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. Keressen egy szállítót. Például görgessen le a US-104 lehetőségre.
-5. US-104 szállító kiválasztása.
-6. Kattintson az OK gombra.
-7. A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-8. Készletcikk kiválasztása. Példábul válassza ki az 1000 cikkszámot.
-9. Bontsa ki vagy csukja össze a Soradatok szakaszt.
-10. Kattintson a Beállítás fülre.
-    * Felülírhatja az egyeztetési irányelvet egyeztetés nélkülire, kétirányú egyeztetésre vagy háromirányú egyeztetésre.  
-11. Bontsa ki vagy csukja össze a Soradatok szakaszt.
-12. A Művelet panelen kattintson a Beszerzés elemre.
-13. Kattintson a Megerősítés gombra.
+## <a name="create-a-purchase-order"></a><span data-ttu-id="4e9bb-105">Beszerzési rendelés létrehozása</span><span class="sxs-lookup"><span data-stu-id="4e9bb-105">Create a purchase order</span></span>
+1. <span data-ttu-id="4e9bb-106">Nyissa meg a következőt: Kötelezettségek > Beszerzési rendelések > Minden beszerzési rendelés.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-106">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="4e9bb-107">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-107">Click New.</span></span>
+3. <span data-ttu-id="4e9bb-108">A Szállítói számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-108">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="4e9bb-109">Keressen egy szállítót.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-109">Find a vendor to select.</span></span> <span data-ttu-id="4e9bb-110">Például görgessen le a US-104 lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-110">For example, scroll down to US-104.</span></span>
+5. <span data-ttu-id="4e9bb-111">US-104 szállító kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-111">Select vendor US-104.</span></span>
+6. <span data-ttu-id="4e9bb-112">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-112">Click OK.</span></span>
+7. <span data-ttu-id="4e9bb-113">A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-113">In the Item number field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="4e9bb-114">Készletcikk kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-114">Select an inventory item.</span></span> <span data-ttu-id="4e9bb-115">Példábul válassza ki az 1000 cikkszámot.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-115">For example, select item number 1000.</span></span>
+9. <span data-ttu-id="4e9bb-116">Bontsa ki vagy csukja össze a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-116">Expand or collapse the Line details section.</span></span>
+10. <span data-ttu-id="4e9bb-117">Kattintson a Beállítás fülre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-117">Click the Setup tab.</span></span>
+    * <span data-ttu-id="4e9bb-118">Felülírhatja az egyeztetési irányelvet egyeztetés nélkülire, kétirányú egyeztetésre vagy háromirányú egyeztetésre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-118">You can override the matching policy to use no matching, 2-way matching, or 3-way matching.</span></span>  
+11. <span data-ttu-id="4e9bb-119">Bontsa ki vagy csukja össze a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-119">Expand or collapse the Line details section.</span></span>
+12. <span data-ttu-id="4e9bb-120">A Művelet panelen kattintson a Beszerzés elemre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-120">On the Action Pane, click Purchase.</span></span>
+13. <span data-ttu-id="4e9bb-121">Kattintson a Megerősítés gombra.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-121">Click Confirm.</span></span>
 
-## <a name="receive-the-products"></a>A termékek bevételezése
-1. A Művelet panelen kattintson a Bevételezés elemre.
-2. Kattintson a Termékbevételezés elemre.
-3. A Termékbevételezés mezőbe írja be a termékbevételezés számát. Például írja be, hogy PR123.
-4. Kattintson az OK gombra a termékbevételezés feladásához.
-5. Zárja be a lapot.
+## <a name="receive-the-products"></a><span data-ttu-id="4e9bb-122">A termékek bevételezése</span><span class="sxs-lookup"><span data-stu-id="4e9bb-122">Receive the products</span></span>
+1. <span data-ttu-id="4e9bb-123">A Művelet panelen kattintson a Bevételezés elemre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-123">On the Action Pane, click Receive.</span></span>
+2. <span data-ttu-id="4e9bb-124">Kattintson a Termékbevételezés elemre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-124">Click Product receipt.</span></span>
+3. <span data-ttu-id="4e9bb-125">A Termékbevételezés mezőbe írja be a termékbevételezés számát.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-125">In the Product receipt field, enter the product receipt number.</span></span> <span data-ttu-id="4e9bb-126">Például írja be, hogy PR123.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-126">For example, enter PR123.</span></span>
+4. <span data-ttu-id="4e9bb-127">Kattintson az OK gombra a termékbevételezés feladásához.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-127">Click OK to post the product receipt.</span></span>
+5. <span data-ttu-id="4e9bb-128">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-128">Close the page.</span></span>
 
-## <a name="create-a-vendor-invoice"></a>Szállítói számla létrehozása
-1. Ugorjon a Kötelezettségek > Beszerzési rendelések > Bevételezett, de még ki nem számlázott beszerzési rendelések pontra.
-2. Válassza ki a létrehozott beszerzési rendelést.
-3. A Művelet panelen kattintson a Számla elemre.
-4. Kattintson a Számlára.
-5. A Szám mezőben adja meg a számlaszámot.
-6. A Számla leírása mezőben adjon meg egy értéket.
-7. A Számla dátuma mezőben adjon meg egy dátumot.
-8. Írjon be 1200 értéket az Egységár mezőbe.
-9. Kattintson az Új sor hozzáadására.
-10. A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-11. Keresse meg a listában a telepítési költség cikkszámát. Például az S0001 elem
-12. Válassza ki a telepítési költség cikkszámát.
-    * Vegye figyelembe, hogy egyeztetés a módosítások óta nem lett végrehajtva.  
-13. Kattintson az Egyeztetési állapot frissítése lehetőségre.
-14. A Művelet panelen kattintson az Áttekintés lehetőségre.
-15. Kattintson a Részletek egyeztetése elemre.
-    * A szolgáltatásokkal rendelkező új sorokat nem kell egyeztetni, ezért az állapotuk „Kihagyva” marad.  
-16. Válassza ki a termékbevételezést a bevételezett készletcikkhez.
-    * A termékbevételezés sora egyeztetve lett, de eltérés található az árban vagy a mennyiségben, ezért sikertelen.  
-17. Adjon meg egy számot az Egységár mezőben.
-    * Most, hogy az egységár megegyezik, az állapot Sikeres értékre frissül. Ha az irányelve megengedi az eltéréseket, vagy az egyeztetés csak egy figyelmeztetés, akkor ettől függetlenül fel tudja adni a számlát.  
-18. Zárja be a lapot.
-19. Kattintson a Feladás lehetőségre.
-20. Zárja be az űrlapot.
-    * Ne felejtse, hogy a beszerzési rendelés már nem bevételezettként, hanem nem számlázottként van listázva.  
+## <a name="create-a-vendor-invoice"></a><span data-ttu-id="4e9bb-129">Szállítói számla létrehozása</span><span class="sxs-lookup"><span data-stu-id="4e9bb-129">Create a vendor invoice</span></span>
+1. <span data-ttu-id="4e9bb-130">Ugorjon a Kötelezettségek > Beszerzési rendelések > Bevételezett, de még ki nem számlázott beszerzési rendelések pontra.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-130">Go to Accounts payable > Purchase orders > Purchase orders received but not invoiced.</span></span>
+2. <span data-ttu-id="4e9bb-131">Válassza ki a létrehozott beszerzési rendelést.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-131">Select the purchase order that you created.</span></span>
+3. <span data-ttu-id="4e9bb-132">A Művelet panelen kattintson a Számla elemre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-132">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="4e9bb-133">Kattintson a Számlára.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-133">Click Invoice.</span></span>
+5. <span data-ttu-id="4e9bb-134">A Szám mezőben adja meg a számlaszámot.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-134">In the Number field, enter the invoice number.</span></span>
+6. <span data-ttu-id="4e9bb-135">A Számla leírása mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-135">In the Invoice description field, type a value.</span></span>
+7. <span data-ttu-id="4e9bb-136">A Számla dátuma mezőben adjon meg egy dátumot.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-136">In the Invoice date field, enter a date.</span></span>
+8. <span data-ttu-id="4e9bb-137">Írjon be 1200 értéket az Egységár mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-137">In the Unit price field, enter 1200.</span></span>
+9. <span data-ttu-id="4e9bb-138">Kattintson az Új sor hozzáadására.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-138">Click Add line.</span></span>
+10. <span data-ttu-id="4e9bb-139">A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-139">In the Item number field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="4e9bb-140">Keresse meg a listában a telepítési költség cikkszámát.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-140">In the list, find the installation charge item number.</span></span> <span data-ttu-id="4e9bb-141">Például az S0001 elem</span><span class="sxs-lookup"><span data-stu-id="4e9bb-141">For example, S0001</span></span>
+12. <span data-ttu-id="4e9bb-142">Válassza ki a telepítési költség cikkszámát.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-142">Select the installation charge item number.</span></span>
+    * <span data-ttu-id="4e9bb-143">Vegye figyelembe, hogy egyeztetés a módosítások óta nem lett végrehajtva.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-143">Note that matching has not been performed since you made the changes.</span></span>  
+13. <span data-ttu-id="4e9bb-144">Kattintson az Egyeztetési állapot frissítése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-144">Click Update match status.</span></span>
+14. <span data-ttu-id="4e9bb-145">A Művelet panelen kattintson az Áttekintés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-145">On the Action Pane, click Review.</span></span>
+15. <span data-ttu-id="4e9bb-146">Kattintson a Részletek egyeztetése elemre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-146">Click Matching details.</span></span>
+    * <span data-ttu-id="4e9bb-147">A szolgáltatásokkal rendelkező új sorokat nem kell egyeztetni, ezért az állapotuk „Kihagyva” marad.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-147">The new line with services does not need to be matched so the status stays "Not performed".</span></span>  
+16. <span data-ttu-id="4e9bb-148">Válassza ki a termékbevételezést a bevételezett készletcikkhez.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-148">Select the product receipt for the inventory item that you received.</span></span>
+    * <span data-ttu-id="4e9bb-149">A termékbevételezés sora egyeztetve lett, de eltérés található az árban vagy a mennyiségben, ezért sikertelen.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-149">The line with the product receipt was matched but there is a mismatch of quantity or price so it fails.</span></span>  
+17. <span data-ttu-id="4e9bb-150">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-150">In the Unit price field, enter a number.</span></span>
+    * <span data-ttu-id="4e9bb-151">Most, hogy az egységár megegyezik, az állapot Sikeres értékre frissül.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-151">Now that the unit price matches, the status is updated to Passed.</span></span> <span data-ttu-id="4e9bb-152">Ha az irányelve megengedi az eltéréseket, vagy az egyeztetés csak egy figyelmeztetés, akkor ettől függetlenül fel tudja adni a számlát.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-152">If your policy allows discrepancies or if matching is only a warning, you can still post the invoice.</span></span>  
+18. <span data-ttu-id="4e9bb-153">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-153">Close the page.</span></span>
+19. <span data-ttu-id="4e9bb-154">Kattintson a Feladás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-154">Click Post.</span></span>
+20. <span data-ttu-id="4e9bb-155">Zárja be az űrlapot.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-155">Close the form.</span></span>
+    * <span data-ttu-id="4e9bb-156">Ne felejtse, hogy a beszerzési rendelés már nem bevételezettként, hanem nem számlázottként van listázva.</span><span class="sxs-lookup"><span data-stu-id="4e9bb-156">Note that the purchase order is no longer listed as received but not invoiced.</span></span>  
 
 

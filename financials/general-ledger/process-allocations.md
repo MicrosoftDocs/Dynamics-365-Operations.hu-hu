@@ -19,33 +19,33 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: e6d88503972850f6163aba6b45547a111f44abab
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 8859359f70132e9116e6a2d534a0f5f1d0bfeb80
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="process-allocations"></a>Felosztások feldolgozása
+# <a name="process-allocations"></a><span data-ttu-id="684a8-105">Felosztások feldolgozása</span><span class="sxs-lookup"><span data-stu-id="684a8-105">Process allocations</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A cikk tájékoztatást nyújt a felosztásokról, a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben történő feldolgozásukról és arról, hogy hogyan alkalmazzuk őket a költségvetési tervben. A felosztások segítségével összegeket oszthat fel több főkönyvi számla kombináció között. Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során.
+<span data-ttu-id="684a8-106">A cikk tájékoztatást nyújt a felosztásokról, a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben történő feldolgozásukról és arról, hogy hogyan alkalmazzuk őket a költségvetési tervben.</span><span class="sxs-lookup"><span data-stu-id="684a8-106">This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and how they can be used in budget planning.</span></span> <span data-ttu-id="684a8-107">A felosztások segítségével összegeket oszthat fel több főkönyvi számla kombináció között.</span><span class="sxs-lookup"><span data-stu-id="684a8-107">Allocations are used to distribute amounts across multiple ledger account combinations.</span></span> <span data-ttu-id="684a8-108">Ezek garantáljak azt, hogy a költségek vagy a bevételek a megfelelő objektumot terhelik a könyvelés során.</span><span class="sxs-lookup"><span data-stu-id="684a8-108">They help guarantee that expenses or revenue is charged to the correct object in accounting.</span></span>
 
-A Microsoft Dynamics 365 for Finance and Operations a folyamat támogatásához az alábbi funkciókat biztosítja:
+<span data-ttu-id="684a8-109">A Microsoft Dynamics 365 for Finance and Operations a folyamat támogatásához az alábbi funkciókat biztosítja:</span><span class="sxs-lookup"><span data-stu-id="684a8-109">Microsoft Dynamics 365 for Finance and Operations provides the following capabilities to support this process:</span></span>
 
--   Manuálisan is lefoglalhatók tranzakcióösszegek a Felosztás művelettel a könyvelési felosztás pontban, vagy pénzügyi dimenzió alapértelmezett sablonjainak használatával egy dokumentumre. További tudnivalókért lásd: [Könyvelési felosztások.](../accounts-payable/accounting-distributions.md)
--   Tranzakcióösszegek automatikus felosztása az egyes fő számlán megadott felosztási feltételek alapján. Felosztási számlabejegyzések generálódnak minden naplóhoz, a százalék és a főkönyvi célszámla alapján, amikor egy számlázási bejegyzés megfelel a forrás főkönyvi számlában megadott feltételeknek.
--   főkönyvi egyenlegek, vagy fix összegek automatikus felosztása a főkönyvi felosztási szabályok alapján. A főkönyvi felosztási szabályok feldolgozása rendszeres időközönként történik, felosztási naplók használatával. 
+-   <span data-ttu-id="684a8-110">Manuálisan is lefoglalhatók tranzakcióösszegek a Felosztás művelettel a könyvelési felosztás pontban, vagy pénzügyi dimenzió alapértelmezett sablonjainak használatával egy dokumentumre.</span><span class="sxs-lookup"><span data-stu-id="684a8-110">Manually allocate transaction amounts by using the Split action in accounting distributions, or by applying financial dimension default templates to a document.</span></span> <span data-ttu-id="684a8-111">További tudnivalókért lásd: [Könyvelési felosztások.](../accounts-payable/accounting-distributions.md)</span><span class="sxs-lookup"><span data-stu-id="684a8-111">For more information, see [Accounting distributions.](../accounts-payable/accounting-distributions.md)</span></span>
+-   <span data-ttu-id="684a8-112">Tranzakcióösszegek automatikus felosztása az egyes fő számlán megadott felosztási feltételek alapján.</span><span class="sxs-lookup"><span data-stu-id="684a8-112">Automatically allocate transactions amounts based on allocation terms defined on individual main account.</span></span> <span data-ttu-id="684a8-113">Felosztási számlabejegyzések generálódnak minden naplóhoz, a százalék és a főkönyvi célszámla alapján, amikor egy számlázási bejegyzés megfelel a forrás főkönyvi számlában megadott feltételeknek.</span><span class="sxs-lookup"><span data-stu-id="684a8-113">Allocation account entries will be generated for each journal based on the percentage and destination ledger account whenever an accounting entry meets the criteria defined as the source ledger account.</span></span>
+-   <span data-ttu-id="684a8-114">főkönyvi egyenlegek, vagy fix összegek automatikus felosztása a főkönyvi felosztási szabályok alapján.</span><span class="sxs-lookup"><span data-stu-id="684a8-114">Automatically allocate ledger balances or fixed amounts based on ledger allocation rules.</span></span> <span data-ttu-id="684a8-115">A főkönyvi felosztási szabályok feldolgozása rendszeres időközönként történik, felosztási naplók használatával.</span><span class="sxs-lookup"><span data-stu-id="684a8-115">The ledger allocation rules are processed on a periodic basis using allocation journals.</span></span> 
 
-###  <a name="allocations-in-budget-planning"></a>Felosztások a költségvetési tervezésben
+###  <a name="allocations-in-budget-planning"></a><span data-ttu-id="684a8-116">Felosztások a költségvetési tervezésben</span><span class="sxs-lookup"><span data-stu-id="684a8-116">Allocations in budget planning</span></span>
 
-Főkönyvi felosztási szabályok a költségvetési tervekhez is használhatóak. Főkönyvi felosztási szabályok használatakor a költségvetés-tervezési felosztási szabályok munka a ugyanúgy, ahogy az a főkönyvben, de a forrásadatok, és a cél adatainak a költségvetési terv származik. Kezdődő a Főkönyvi felosztási szabályok költségvetési tervek. Másik lehetőségként használhatja a munkafolyamatok részeként futó egy felosztási ütemezés.
+<span data-ttu-id="684a8-117">Főkönyvi felosztási szabályok a költségvetési tervekhez is használhatóak.</span><span class="sxs-lookup"><span data-stu-id="684a8-117">Ledger allocation rules can be used for budget plans.</span></span> <span data-ttu-id="684a8-118">Főkönyvi felosztási szabályok használatakor a költségvetés-tervezési felosztási szabályok munka a ugyanúgy, ahogy az a főkönyvben, de a forrásadatok, és a cél adatainak a költségvetési terv származik.</span><span class="sxs-lookup"><span data-stu-id="684a8-118">When you use ledger allocation rules in budget planning, the allocation rules work the same way they would in the ledger, but the source data and destination data comes from the budget plan.</span></span> <span data-ttu-id="684a8-119">Kezdődő a Főkönyvi felosztási szabályok költségvetési tervek.</span><span class="sxs-lookup"><span data-stu-id="684a8-119">You can manually select ledger allocation rules to use for budget plans.</span></span> <span data-ttu-id="684a8-120">Másik lehetőségként használhatja a munkafolyamatok részeként futó egy felosztási ütemezés.</span><span class="sxs-lookup"><span data-stu-id="684a8-120">Alternatively, you can use an allocation schedule that runs as part of a workflow process.</span></span>
 
 > [!NOTE]
-> Kezdődő   , használhatja a Főkönyvi felosztási szabályok költségvetési tervek.
+> <span data-ttu-id="684a8-121">Kezdődő   , használhatja a Főkönyvi felosztási szabályok költségvetési tervek.</span><span class="sxs-lookup"><span data-stu-id="684a8-121">You can’t use intercompany ledger allocation rules for budget planning.</span></span>
 
 
 

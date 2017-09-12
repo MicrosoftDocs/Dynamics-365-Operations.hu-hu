@@ -16,129 +16,129 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: be601efd857a0d57210680adcb0b0a1f17ca2f27
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: cbd9c5e3c4b5966e12f0219b321a548730adcd06
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-the-dependency-of-configurations-from-othcomponents-for-electronic-reporting-er"></a>A konfigurációk függőségének meghatározása más összetevőkből az elektronikus jelentéskészítéshez (ER)
+# <a name="define-the-dependency-of-configurations-from-othcomponents-for-electronic-reporting-er"></a><span data-ttu-id="9285b-103">A konfigurációk függőségének meghatározása más összetevőkből az elektronikus jelentéskészítéshez (ER)</span><span class="sxs-lookup"><span data-stu-id="9285b-103">Define the dependency of configurations from othcomponents for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A lépések végrehajtásához végre kell hajtania a feladat-úmutató lépéseit, az ER model-leképezési konfigurációk kezelését, és hozzáféréssel kell rendelkeznie a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáshoz.
+<span data-ttu-id="9285b-104">A lépések végrehajtásához végre kell hajtania a feladat-úmutató lépéseit, az ER model-leképezési konfigurációk kezelését, és hozzáféréssel kell rendelkeznie a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáshoz.</span><span class="sxs-lookup"><span data-stu-id="9285b-104">To complete these steps, you must first complete the steps in the task guide, ER Manage model mapping configurations, and you must have access to Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-Ez az eljárás bemutatja, hogyan hozhat létre elektronikus jelentési (ER) konfigurációt, és hogyan adhatja meg az egyéb szoftverösszetevőktől való függőségi viszonyt, hogy biztosíthassa, hogy a konfiguráció letöltése megfelelő a Microsoft Dynamics 365 for Finance and Operations Enterprise edition meghatározott verziója esetében. Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. 
+<span data-ttu-id="9285b-105">Ez az eljárás bemutatja, hogyan hozhat létre elektronikus jelentési (ER) konfigurációt, és hogyan adhatja meg az egyéb szoftverösszetevőktől való függőségi viszonyt, hogy biztosíthassa, hogy a konfiguráció letöltése megfelelő a Microsoft Dynamics 365 for Finance and Operations Enterprise edition meghatározott verziója esetében.</span><span class="sxs-lookup"><span data-stu-id="9285b-105">This procedure shows how to design an Electronic reporting (ER) configuration and specify its dependency from other software components, so that you can help guarantee that the configuration is correctly downloaded to a specific version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="9285b-106">Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="9285b-106">In this example, you will create required ER configurations for the sample company Litware, Inc.</span></span> 
 
-Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználók számára készült. Ezeket a lépéseket a vállalat között megosztott ER konfigurációjaként bármely vállalatnál végrehajthatja. 
+<span data-ttu-id="9285b-107">Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználók számára készült.</span><span class="sxs-lookup"><span data-stu-id="9285b-107">This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them.</span></span> <span data-ttu-id="9285b-108">Ezeket a lépéseket a vállalat között megosztott ER konfigurációjaként bármely vállalatnál végrehajthatja.</span><span class="sxs-lookup"><span data-stu-id="9285b-108">The steps can be performed in any company, because ER configurations are shared among companies.</span></span> 
 
-1. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
-    * Győződjön meg arról, hogy a konfigurációs fa tartalmazza a Minta adatmodell konfigurációját és az alsóbb szintű cikkeket. Ellenkező esetben hajtsa végre a feladat-útmutató lépéseit, az ER model-leképezési konfigurációk kezelését, majd indítsa újra az útmutatót.   
+1. <span data-ttu-id="9285b-109">Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.</span><span class="sxs-lookup"><span data-stu-id="9285b-109">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+    * <span data-ttu-id="9285b-110">Győződjön meg arról, hogy a konfigurációs fa tartalmazza a Minta adatmodell konfigurációját és az alsóbb szintű cikkeket.</span><span class="sxs-lookup"><span data-stu-id="9285b-110">Make sure that the configurations tree contains the ‘Sample data model’ configuration and subordinate items.</span></span> <span data-ttu-id="9285b-111">Ellenkező esetben hajtsa végre a feladat-útmutató lépéseit, az ER model-leképezési konfigurációk kezelését, majd indítsa újra az útmutatót.</span><span class="sxs-lookup"><span data-stu-id="9285b-111">Otherwise, complete the steps in the task guide, ER Manage model mapping configurations, and then start this guide again.</span></span>   
 
-## <a name="define-the-dependency-of-er-configurations-from-other-components"></a>ER-konfigurációk függőségének meghatározása más összetevők közül
-1. A fastruktúrában bontsa ki a „Minta adatmodell” elemet.
-2. A fán válassza a következőt: „Sample data model\Sample mapping”.
-    * Most a Mintaleképezés modell-leképezési konfiguráció vázlatverzióját választottuk ki. Meg kell határoznia a többi szoftverösszetevővel való függőségi viszonyát. Ez a lépés a konfiguráció verziójának ER-tárházból történő letöltésének, valamint a jelen verzió további használatának előfeltétele.   
-3. Bontsa ki az Előfeltételek szakaszt.
-    * Vegye figyelembe, hogy az Implementációk előfeltételcsoport automatikusan hozzá van adva ebben a szakaszban. Ez a csoport tartalmazza az adatmodell-konfigurációra hivatkozó előfeltétel-ellenőrzési összetevőt, és az Implementáció jelzője be van kapcsolva. Ez a jelző mutatja, hogy a Mintaleképezés leképezési konfiguráció a Minta adatmodell adatmodell végrehajtásának minősül. Ez az összetevő hatására arra kényszeríti az ER-t, hogy mindig letöltse egy ER-tárházból a Mintaleképezés leképezési konfigurációt, amikor letölti a Minta adatmodell modellkonfigurációt.   
-4. Kattintson a Szerkesztés lehetőségre.
-    * Az összetevő típusának meghatározását használva a szoftverösszetevő aktuális konfigurációjának egyetlen függősége határozható meg, sem az összetevő verziója, sem pedig az összetevőverziók tartománya.  
-    * A kívánt függőségek csoportosíthatók. Amikor az „Összes” csoportosítási típus be van jelölve, ezen csoport függőségi állapota teljesültnek minősül, ha a csoport és az alsóbb szintű csoport minden függőségi feltétele teljesül. Amikor az „Egyik” csoportosítási típus be van jelölve, ezen csoport függőségi állapota teljesültnek minősül, ha a csoport legalább egy függőségi feltétele teljesül.   
-5. Kattintson az Új lehetőségre.
-6. Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.
-7. Válassza ki a Microsoft Dynamics 365 for Operations (1611-es verzió) lehetőséget.
-8. A Verzió mezőbe írja be a következő értéket: [7.1.1541.3036,8).
-    * [7.1.1541.3036,8)  
-    * A beírt függőségeket a rendszer akkor értékeli ki, amikor ezt a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Finance and Operations programban kell elvégezni, amelynek verziója kötelezően 7.1.1541.3036 vagy újabb verzió, de nem haladhatja meg a 8-as főverziót.   
-9. Kattintson a Mentés gombra.
-10. Zárja be a lapot.
-11. Kattintson az Állapot módosítása elemre.
-12. Kattintson a Befejezés gombra.
-13. Kattintson az OK gombra.
-14. A fában válassza ki ezt: „Sample data model\Sample mapping (alternative)”.
-15. Kattintson a Szerkesztés lehetőségre.
-16. Kattintson az Új lehetőségre.
-17. Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.
-18. Válassza ki a a Microsoft Dynamics AX 7.0 RTW alkalmazást.
-19. A Verzió mezőbe írja be a következő értéket: [7.0.1265.3015,7.1).
-    * [7.0.1265.3015,7.1)  
-    * A függőségeket a rendszer akkor értékeli ki, amikor a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Microsoft Dynamics 365 for Finance and Operations Enterprise kiadás programban kell elvégezni, amelynek verziója kötelezően 7.0.1265.3015 vagy újabb verzió, de nem haladhatja meg az 1-es alverziót.   
-20. Kattintson a Mentés gombra.
-21. Zárja be a lapot.
-22. Kattintson az Állapot módosítása elemre.
-23. Kattintson a Befejezés gombra.
-24. Kattintson az OK gombra.
+## <a name="define-the-dependency-of-er-configurations-from-other-components"></a><span data-ttu-id="9285b-112">ER-konfigurációk függőségének meghatározása más összetevők közül</span><span class="sxs-lookup"><span data-stu-id="9285b-112">Define the dependency of ER configurations from other components</span></span>
+1. <span data-ttu-id="9285b-113">A fastruktúrában bontsa ki a „Minta adatmodell” elemet.</span><span class="sxs-lookup"><span data-stu-id="9285b-113">In the tree, expand 'Sample data model'.</span></span>
+2. <span data-ttu-id="9285b-114">A fán válassza a következőt: „Sample data model\Sample mapping”.</span><span class="sxs-lookup"><span data-stu-id="9285b-114">In the tree, select 'Sample data model\Sample mapping'.</span></span>
+    * <span data-ttu-id="9285b-115">Most a Mintaleképezés modell-leképezési konfiguráció vázlatverzióját választottuk ki.</span><span class="sxs-lookup"><span data-stu-id="9285b-115">We selected the draft version of the ‘Sample mapping’ model mapping configuration.</span></span> <span data-ttu-id="9285b-116">Meg kell határoznia a többi szoftverösszetevővel való függőségi viszonyát.</span><span class="sxs-lookup"><span data-stu-id="9285b-116">We will now define its dependency from other software components.</span></span> <span data-ttu-id="9285b-117">Ez a lépés a konfiguráció verziójának ER-tárházból történő letöltésének, valamint a jelen verzió további használatának előfeltétele.</span><span class="sxs-lookup"><span data-stu-id="9285b-117">This step is considered a prerequisite for controlling the download of this configuration’s version from an ER repository and any further use of this version.</span></span>   
+3. <span data-ttu-id="9285b-118">Bontsa ki az Előfeltételek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="9285b-118">Expand the Prerequisites section.</span></span>
+    * <span data-ttu-id="9285b-119">Vegye figyelembe, hogy az Implementációk előfeltételcsoport automatikusan hozzá van adva ebben a szakaszban.</span><span class="sxs-lookup"><span data-stu-id="9285b-119">Note that the ‘Implementations’ prerequisites group has been added automatically at this stage.</span></span> <span data-ttu-id="9285b-120">Ez a csoport tartalmazza az adatmodell-konfigurációra hivatkozó előfeltétel-ellenőrzési összetevőt, és az Implementáció jelzője be van kapcsolva.</span><span class="sxs-lookup"><span data-stu-id="9285b-120">This group contains the prerequisite component that refers to the data model configuration and has the Implementation flag turned on.</span></span> <span data-ttu-id="9285b-121">Ez a jelző mutatja, hogy a Mintaleképezés leképezési konfiguráció a Minta adatmodell adatmodell végrehajtásának minősül.</span><span class="sxs-lookup"><span data-stu-id="9285b-121">This flag indicates that the ‘Sample mapping’ mapping configuration is considered the implementation of the ‘Sample data model’ data model.</span></span> <span data-ttu-id="9285b-122">Ez az összetevő hatására arra kényszeríti az ER-t, hogy mindig letöltse egy ER-tárházból a Mintaleképezés leképezési konfigurációt, amikor letölti a Minta adatmodell modellkonfigurációt.</span><span class="sxs-lookup"><span data-stu-id="9285b-122">This component will force ER to download the ‘Sample mapping’ mapping configuration from an ER repository whenever the ‘Sample data model’ model configuration is downloaded.</span></span>   
+4. <span data-ttu-id="9285b-123">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-123">Click Edit.</span></span>
+    * <span data-ttu-id="9285b-124">Az összetevő típusának meghatározását használva a szoftverösszetevő aktuális konfigurációjának egyetlen függősége határozható meg, sem az összetevő verziója, sem pedig az összetevőverziók tartománya.</span><span class="sxs-lookup"><span data-stu-id="9285b-124">A single dependency of the current version of a configuration from a software component can be specified by using the definition of the component’s type, and either the component version or a range of component versions.</span></span>  
+    * <span data-ttu-id="9285b-125">A kívánt függőségek csoportosíthatók.</span><span class="sxs-lookup"><span data-stu-id="9285b-125">Desired dependencies can be grouped together.</span></span> <span data-ttu-id="9285b-126">Amikor az „Összes” csoportosítási típus be van jelölve, ezen csoport függőségi állapota teljesültnek minősül, ha a csoport és az alsóbb szintű csoport minden függőségi feltétele teljesül.</span><span class="sxs-lookup"><span data-stu-id="9285b-126">When the ‘All of’ grouping type is selected, the dependency condition of this group is considered satisfied when each dependency condition from this group and subordinate group is satisfied.</span></span> <span data-ttu-id="9285b-127">Amikor az „Egyik” csoportosítási típus be van jelölve, ezen csoport függőségi állapota teljesültnek minősül, ha a csoport legalább egy függőségi feltétele teljesül.</span><span class="sxs-lookup"><span data-stu-id="9285b-127">When the ‘One of’ grouping type is selected, the dependency condition of this group is considered satisfied when at least one dependency condition from this group is satisfied.</span></span>   
+5. <span data-ttu-id="9285b-128">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-128">Click New.</span></span>
+6. <span data-ttu-id="9285b-129">Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9285b-129">Select Product prerequisite component.</span></span>
+7. <span data-ttu-id="9285b-130">Válassza ki a Microsoft Dynamics 365 for Operations (1611-es verzió) lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9285b-130">Select Microsoft Dynamics 365 for Operations (1611).</span></span>
+8. <span data-ttu-id="9285b-131">A Verzió mezőbe írja be a következő értéket: [7.1.1541.3036,8).</span><span class="sxs-lookup"><span data-stu-id="9285b-131">In the Version field, type '[7.1.1541.3036,8)'.</span></span>
+    * <span data-ttu-id="9285b-132">[7.1.1541.3036,8)</span><span class="sxs-lookup"><span data-stu-id="9285b-132">[7.1.1541.3036,8)</span></span>  
+    * <span data-ttu-id="9285b-133">A beírt függőségeket a rendszer akkor értékeli ki, amikor ezt a beállítást letölti valamely ER-tárházból.</span><span class="sxs-lookup"><span data-stu-id="9285b-133">Dependencies that you enter will be evaluated when this configuration is downloaded from any ER repository.</span></span> <span data-ttu-id="9285b-134">A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve.</span><span class="sxs-lookup"><span data-stu-id="9285b-134">This configuration version will be downloaded from the ER repository when version 1 of the ‘Sample data model’ configuration is either already in place or downloaded in advance.</span></span> <span data-ttu-id="9285b-135">Amennyiben korábban letöltötték, a kitöltését a Finance and Operations programban kell elvégezni, amelynek verziója kötelezően 7.1.1541.3036 vagy újabb verzió, de nem haladhatja meg a 8-as főverziót.</span><span class="sxs-lookup"><span data-stu-id="9285b-135">If it’s downloaded in advance, it must be completed in Finance and Operations, the version of which must be 7.1.1541.3036 or later, but must not exceed major version 8.</span></span>   
+9. <span data-ttu-id="9285b-136">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-136">Click Save.</span></span>
+10. <span data-ttu-id="9285b-137">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9285b-137">Close the page.</span></span>
+11. <span data-ttu-id="9285b-138">Kattintson az Állapot módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="9285b-138">Click Change status.</span></span>
+12. <span data-ttu-id="9285b-139">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-139">Click Complete.</span></span>
+13. <span data-ttu-id="9285b-140">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-140">Click OK.</span></span>
+14. <span data-ttu-id="9285b-141">A fában válassza ki ezt: „Sample data model\Sample mapping (alternative)”.</span><span class="sxs-lookup"><span data-stu-id="9285b-141">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+15. <span data-ttu-id="9285b-142">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-142">Click Edit.</span></span>
+16. <span data-ttu-id="9285b-143">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-143">Click New.</span></span>
+17. <span data-ttu-id="9285b-144">Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9285b-144">Select Product prerequisite component.</span></span>
+18. <span data-ttu-id="9285b-145">Válassza ki a a Microsoft Dynamics AX 7.0 RTW alkalmazást.</span><span class="sxs-lookup"><span data-stu-id="9285b-145">Select Microsoft Dynamics AX 7.0 RTW.</span></span>
+19. <span data-ttu-id="9285b-146">A Verzió mezőbe írja be a következő értéket: [7.0.1265.3015,7.1).</span><span class="sxs-lookup"><span data-stu-id="9285b-146">In the Version field, type '[7.0.1265.3015,7.1)'.</span></span>
+    * <span data-ttu-id="9285b-147">[7.0.1265.3015,7.1)</span><span class="sxs-lookup"><span data-stu-id="9285b-147">[7.0.1265.3015,7.1)</span></span>  
+    * <span data-ttu-id="9285b-148">A függőségeket a rendszer akkor értékeli ki, amikor a beállítást letölti valamely ER-tárházból.</span><span class="sxs-lookup"><span data-stu-id="9285b-148">Dependencies will be evaluated when the configuration is downloaded from any ER repository.</span></span> <span data-ttu-id="9285b-149">A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve.</span><span class="sxs-lookup"><span data-stu-id="9285b-149">This configuration version will be downloaded from the ER repository when version 1 of the ‘Sample data model’ configuration is either already in place or downloaded in advance.</span></span> <span data-ttu-id="9285b-150">Amennyiben korábban letöltötték, a kitöltését a Microsoft Dynamics 365 for Finance and Operations Enterprise kiadás programban kell elvégezni, amelynek verziója kötelezően 7.0.1265.3015 vagy újabb verzió, de nem haladhatja meg az 1-es alverziót.</span><span class="sxs-lookup"><span data-stu-id="9285b-150">If it’s downloaded in advance, it must be completed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, the version of which must be 7.0.1265.3015 or later, but must not exceed minor version 1.</span></span>   
+20. <span data-ttu-id="9285b-151">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-151">Click Save.</span></span>
+21. <span data-ttu-id="9285b-152">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9285b-152">Close the page.</span></span>
+22. <span data-ttu-id="9285b-153">Kattintson az Állapot módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="9285b-153">Click Change status.</span></span>
+23. <span data-ttu-id="9285b-154">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-154">Click Complete.</span></span>
+24. <span data-ttu-id="9285b-155">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-155">Click OK.</span></span>
 
-## <a name="configure-the-er-repository"></a>ER-tárház konfigurálása
-1. Zárja be a lapot.
-2. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
-    * Nyissa meg az aktuális ER-szolgáltató, a Litware, Inc. ER-tárházainak listáját.  
-3. A listában jelölje meg a kiválasztott sort.
-4. Kattintson a Tárházak gombra.
-5. Kattintson a Szűrők megjelenítése pontra.
-6. Adja meg az LCS szűrőértékét a Típusnév mezőben a „tartalmazza” szűrési operátor használatával.
-    * Ha az LCS tárház már regisztrálva van a jelenlegi ER-szolgáltatónál, kihagyhatja a fennmaradó lépéseket ebben az alfeladatban. Ha az LCS tárház még nincs regisztrálva, végezze el a fennmaradó lépéseket.   
-7. A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-8. A Konfiguráció tárházának típusa mezőbe írja be az „LCS” értéket.
-9. Kattintson a Tárház létrehozása lehetőségre.
-10. A Projekt mezőben adjon meg vagy válasszon ki egy értéket.
-    * Válassza ki a kívánt LCS-projektet a Projekt mező keresőjéből.  
-11. Kattintson az OK gombra.
-12. Zárja be a lapot.
+## <a name="configure-the-er-repository"></a><span data-ttu-id="9285b-156">ER-tárház konfigurálása</span><span class="sxs-lookup"><span data-stu-id="9285b-156">Configure the ER repository</span></span>
+1. <span data-ttu-id="9285b-157">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9285b-157">Close the page.</span></span>
+2. <span data-ttu-id="9285b-158">Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.</span><span class="sxs-lookup"><span data-stu-id="9285b-158">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="9285b-159">Nyissa meg az aktuális ER-szolgáltató, a Litware, Inc. ER-tárházainak listáját.</span><span class="sxs-lookup"><span data-stu-id="9285b-159">Open the list of ER repositories for the current ER provider, Litware, Inc.</span></span>  
+3. <span data-ttu-id="9285b-160">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="9285b-160">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="9285b-161">Kattintson a Tárházak gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-161">Click Repositories.</span></span>
+5. <span data-ttu-id="9285b-162">Kattintson a Szűrők megjelenítése pontra.</span><span class="sxs-lookup"><span data-stu-id="9285b-162">Click Show filters.</span></span>
+6. <span data-ttu-id="9285b-163">Adja meg az LCS szűrőértékét a Típusnév mezőben a „tartalmazza” szűrési operátor használatával.</span><span class="sxs-lookup"><span data-stu-id="9285b-163">Enter a filter value of "LCS" on the "Type name" field using the "contains" filter operator.</span></span>
+    * <span data-ttu-id="9285b-164">Ha az LCS tárház már regisztrálva van a jelenlegi ER-szolgáltatónál, kihagyhatja a fennmaradó lépéseket ebben az alfeladatban.</span><span class="sxs-lookup"><span data-stu-id="9285b-164">If the LCS repository is already registered for the current ER provider, you can skip the remaining steps in this sub-task.</span></span> <span data-ttu-id="9285b-165">Ha az LCS tárház még nincs regisztrálva, végezze el a fennmaradó lépéseket.</span><span class="sxs-lookup"><span data-stu-id="9285b-165">If the LCS repository isn’t already registered, complete the remaining steps.</span></span>   
+7. <span data-ttu-id="9285b-166">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="9285b-166">Click Add to open the drop dialog.</span></span>
+8. <span data-ttu-id="9285b-167">A Konfiguráció tárházának típusa mezőbe írja be az „LCS” értéket.</span><span class="sxs-lookup"><span data-stu-id="9285b-167">In the Configuration repository type field, enter 'LCS'.</span></span>
+9. <span data-ttu-id="9285b-168">Kattintson a Tárház létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-168">Click Create repository.</span></span>
+10. <span data-ttu-id="9285b-169">A Projekt mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="9285b-169">In the Project field, enter or select a value.</span></span>
+    * <span data-ttu-id="9285b-170">Válassza ki a kívánt LCS-projektet a Projekt mező keresőjéből.</span><span class="sxs-lookup"><span data-stu-id="9285b-170">Select the desired LCS project from the lookup of the ‘Project’ field.</span></span>  
+11. <span data-ttu-id="9285b-171">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-171">Click OK.</span></span>
+12. <span data-ttu-id="9285b-172">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9285b-172">Close the page.</span></span>
 
-## <a name="upload-configurations-to-lcs"></a>Konfigurációk feltöltése az LCS rendszerbe
-1. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
-2. A fastruktúrában válassza ki a „Sample data model” elemet.
-3. Válassza ki a jelen konfiguráció teljesített verzióját.
-4. Kattintson az Állapot módosítása elemre.
-5. Kattintson a Megosztás lehetőségre.
-6. Kattintson az OK gombra.
-    * A modellkonfiguráció 1-es verziója fel van töltve az LCS szolgáltatásba a korábban konfigurált, ER-tárháznak szánt LCS-projekt segítségével.   
-7. A fastruktúrában bontsa ki a „Minta adatmodell” elemet.
-8. A fán válassza a következőt: „Sample data model\Sample mapping”.
-9. Válassza ki a jelen konfiguráció teljesített verzióját.
-10. Kattintson az Állapot módosítása elemre.
-11. Kattintson a Megosztás lehetőségre.
-12. Kattintson az OK gombra.
-    * A modell-leképezés 1.1-es verziója fel van töltve az LCS szolgáltatásba a korábban konfigurált, ER-tárháznak szánt LCS-projekt segítségével.   
-13. A fában válassza ki ezt: „Sample data model\Sample mapping (alternative)”.
-14. Válassza ki a jelen konfiguráció teljesített verzióját.
-15. Kattintson az Állapot módosítása elemre.
-16. Kattintson a Megosztás lehetőségre.
-17. Kattintson az OK gombra.
-    * A modell-leképezés 1.1-es verziója fel van töltve az LCS szolgáltatásba a korábban konfigurált, ER-tárháznak szánt LCS-projekt segítségével.   
+## <a name="upload-configurations-to-lcs"></a><span data-ttu-id="9285b-173">Konfigurációk feltöltése az LCS rendszerbe</span><span class="sxs-lookup"><span data-stu-id="9285b-173">Upload configurations to LCS</span></span>
+1. <span data-ttu-id="9285b-174">Kattintson a Jelentéskészítés konfigurációi lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-174">Click Reporting configurations.</span></span>
+2. <span data-ttu-id="9285b-175">A fastruktúrában válassza ki a „Sample data model” elemet.</span><span class="sxs-lookup"><span data-stu-id="9285b-175">In the tree, select 'Sample data model'.</span></span>
+3. <span data-ttu-id="9285b-176">Válassza ki a jelen konfiguráció teljesített verzióját.</span><span class="sxs-lookup"><span data-stu-id="9285b-176">Select the completed version of this configuration.</span></span>
+4. <span data-ttu-id="9285b-177">Kattintson az Állapot módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="9285b-177">Click Change status.</span></span>
+5. <span data-ttu-id="9285b-178">Kattintson a Megosztás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-178">Click Share.</span></span>
+6. <span data-ttu-id="9285b-179">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-179">Click OK.</span></span>
+    * <span data-ttu-id="9285b-180">A modellkonfiguráció 1-es verziója fel van töltve az LCS szolgáltatásba a korábban konfigurált, ER-tárháznak szánt LCS-projekt segítségével.</span><span class="sxs-lookup"><span data-stu-id="9285b-180">Version 1 of this model configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.</span></span>   
+7. <span data-ttu-id="9285b-181">A fastruktúrában bontsa ki a „Minta adatmodell” elemet.</span><span class="sxs-lookup"><span data-stu-id="9285b-181">In the tree, expand 'Sample data model'.</span></span>
+8. <span data-ttu-id="9285b-182">A fán válassza a következőt: „Sample data model\Sample mapping”.</span><span class="sxs-lookup"><span data-stu-id="9285b-182">In the tree, select 'Sample data model\Sample mapping'.</span></span>
+9. <span data-ttu-id="9285b-183">Válassza ki a jelen konfiguráció teljesített verzióját.</span><span class="sxs-lookup"><span data-stu-id="9285b-183">Select the completed version of this configuration.</span></span>
+10. <span data-ttu-id="9285b-184">Kattintson az Állapot módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="9285b-184">Click Change status.</span></span>
+11. <span data-ttu-id="9285b-185">Kattintson a Megosztás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-185">Click Share.</span></span>
+12. <span data-ttu-id="9285b-186">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-186">Click OK.</span></span>
+    * <span data-ttu-id="9285b-187">A modell-leképezés 1.1-es verziója fel van töltve az LCS szolgáltatásba a korábban konfigurált, ER-tárháznak szánt LCS-projekt segítségével.</span><span class="sxs-lookup"><span data-stu-id="9285b-187">Version 1.1 of this model mapping configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.</span></span>   
+13. <span data-ttu-id="9285b-188">A fában válassza ki ezt: „Sample data model\Sample mapping (alternative)”.</span><span class="sxs-lookup"><span data-stu-id="9285b-188">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+14. <span data-ttu-id="9285b-189">Válassza ki a jelen konfiguráció teljesített verzióját.</span><span class="sxs-lookup"><span data-stu-id="9285b-189">Select the completed version of this configuration.</span></span>
+15. <span data-ttu-id="9285b-190">Kattintson az Állapot módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="9285b-190">Click Change status.</span></span>
+16. <span data-ttu-id="9285b-191">Kattintson a Megosztás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-191">Click Share.</span></span>
+17. <span data-ttu-id="9285b-192">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-192">Click OK.</span></span>
+    * <span data-ttu-id="9285b-193">A modell-leképezés 1.1-es verziója fel van töltve az LCS szolgáltatásba a korábban konfigurált, ER-tárháznak szánt LCS-projekt segítségével.</span><span class="sxs-lookup"><span data-stu-id="9285b-193">Version 1.1 of this model mapping configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.</span></span>   
 
-## <a name="evaluate-er-configuration-dependencies"></a>ER konfigurációs függőségek kiértékelése
-    * A rendszer törli a létrehozott konfigurációkat, és visszatölti őket az LCS-tárházból.  
-1. A fán válassza a következőt: „Sample data model\Sample mapping”.
-2. Kattintson a Törlés gombra.
-3. Kattintson az Igen gombra.
-4. A fában válassza ki ezt: „Sample data model\Sample mapping (alternative)”.
-5. Kattintson a Törlés gombra.
-6. Kattintson az Igen gombra.
-7. A fában válassza a „Sample data model\Sample format” lehetőséget.
-8. Kattintson a Törlés gombra.
-9. Kattintson az Igen gombra.
-10. A fastruktúrában válassza ki a „Sample data model” elemet.
-11. Kattintson a Törlés gombra.
-12. Kattintson az Igen gombra.
-13. Zárja be a lapot.
-    * Nyissa meg az aktuális ER-szolgáltató, a Litware, Inc. ER-tárházainak listáját.  
-14. Kattintson a Tárházak gombra.
-15. Kattintson a Szűrők megjelenítése pontra.
-16. Adja meg az LCS szűrőértékét a Típusnév mezőben a „tartalmazza” szűrési operátor használatával.
-17. Kattintson a Megnyitás gombra.
-18. A fastruktúrában válassza ki a „Sample data model” elemet.
-    * Vegye figyelembe, hogy megtekintheti annak értékelését, hogy teljesültek-e a jelenlegi tárház különböző verzióinak ER-konfigurációira vonatkozó előfeltételek. Az értékelés megtekintéséhez kattintson az Előfeltételek ellenőrzése lehetőségre.   
-19. Kattintson az Előfeltételek ellenőrzése lehetőségre.
-20. Kattintson az Importálás gombra.
-21. Kattintson az Igen gombra.
-22. Zárja be a lapot.
-23. Zárja be a lapot.
-24. Zárja be a lapot.
-25. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
-26. A fastruktúrában bontsa ki a „Minta adatmodell” elemet.
-    * Vegye figyelembe, hogy a Mintaleképezés modell-leképezési konfigurációt a rendszer a kijelölt adatmodell-konfigurációval együtt letöltötte. A két fájl letöltése együtt történik, mivel a Mintaleképezés meghatározása a kiválasztott adatmodell végrehajtása, és mivel a Finance and Operations programra vonatkozik. A „Mintaleképezés (másodlagos)” konfiguráció még nincs letöltve, mivel nem teljesült a kívánt alkalmazásverzióhoz kapcsolódó feltétel.   
-    * Ha bejelentkezik a Dynamics 365 for Finance and Operations Enterprise kiadás programba, regisztrálja ugyanazt a szolgáltatót, belép ugyanabba az LCS-projektbe, és letölti ugyanazt az adatmodell-konfigurációt, a „Mintaleképezés (másodlagos)” konfigurációt tölti le, mivel a „Mintaleképezés” konfigurációt átugorja a rendszer.  
+## <a name="evaluate-er-configuration-dependencies"></a><span data-ttu-id="9285b-194">ER konfigurációs függőségek kiértékelése</span><span class="sxs-lookup"><span data-stu-id="9285b-194">Evaluate ER configuration dependencies</span></span>
+    * <span data-ttu-id="9285b-195">A rendszer törli a létrehozott konfigurációkat, és visszatölti őket az LCS-tárházból.</span><span class="sxs-lookup"><span data-stu-id="9285b-195">We will delete created configurations from the system and download them back from the LCS repository.</span></span>  
+1. <span data-ttu-id="9285b-196">A fán válassza a következőt: „Sample data model\Sample mapping”.</span><span class="sxs-lookup"><span data-stu-id="9285b-196">In the tree, select 'Sample data model\Sample mapping'.</span></span>
+2. <span data-ttu-id="9285b-197">Kattintson a Törlés gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-197">Click Delete.</span></span>
+3. <span data-ttu-id="9285b-198">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-198">Click Yes.</span></span>
+4. <span data-ttu-id="9285b-199">A fában válassza ki ezt: „Sample data model\Sample mapping (alternative)”.</span><span class="sxs-lookup"><span data-stu-id="9285b-199">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+5. <span data-ttu-id="9285b-200">Kattintson a Törlés gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-200">Click Delete.</span></span>
+6. <span data-ttu-id="9285b-201">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-201">Click Yes.</span></span>
+7. <span data-ttu-id="9285b-202">A fában válassza a „Sample data model\Sample format” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="9285b-202">In the tree, select 'Sample data model\Sample format'.</span></span>
+8. <span data-ttu-id="9285b-203">Kattintson a Törlés gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-203">Click Delete.</span></span>
+9. <span data-ttu-id="9285b-204">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-204">Click Yes.</span></span>
+10. <span data-ttu-id="9285b-205">A fastruktúrában válassza ki a „Sample data model” elemet.</span><span class="sxs-lookup"><span data-stu-id="9285b-205">In the tree, select 'Sample data model'.</span></span>
+11. <span data-ttu-id="9285b-206">Kattintson a Törlés gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-206">Click Delete.</span></span>
+12. <span data-ttu-id="9285b-207">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-207">Click Yes.</span></span>
+13. <span data-ttu-id="9285b-208">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9285b-208">Close the page.</span></span>
+    * <span data-ttu-id="9285b-209">Nyissa meg az aktuális ER-szolgáltató, a Litware, Inc. ER-tárházainak listáját.</span><span class="sxs-lookup"><span data-stu-id="9285b-209">Open the list of ER repositories for the current ER provider, Litware, Inc.</span></span>  
+14. <span data-ttu-id="9285b-210">Kattintson a Tárházak gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-210">Click Repositories.</span></span>
+15. <span data-ttu-id="9285b-211">Kattintson a Szűrők megjelenítése pontra.</span><span class="sxs-lookup"><span data-stu-id="9285b-211">Click Show filters.</span></span>
+16. <span data-ttu-id="9285b-212">Adja meg az LCS szűrőértékét a Típusnév mezőben a „tartalmazza” szűrési operátor használatával.</span><span class="sxs-lookup"><span data-stu-id="9285b-212">Enter a filter value of "LCS" on the "Type name" field using the "contains" filter operator.</span></span>
+17. <span data-ttu-id="9285b-213">Kattintson a Megnyitás gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-213">Click Open.</span></span>
+18. <span data-ttu-id="9285b-214">A fastruktúrában válassza ki a „Sample data model” elemet.</span><span class="sxs-lookup"><span data-stu-id="9285b-214">In the tree, select 'Sample data model'.</span></span>
+    * <span data-ttu-id="9285b-215">Vegye figyelembe, hogy megtekintheti annak értékelését, hogy teljesültek-e a jelenlegi tárház különböző verzióinak ER-konfigurációira vonatkozó előfeltételek.</span><span class="sxs-lookup"><span data-stu-id="9285b-215">Note that you can view an evaluation of whether prerequisite conditions have been satisfied for each version of the ER configurations for the current repository.</span></span> <span data-ttu-id="9285b-216">Az értékelés megtekintéséhez kattintson az Előfeltételek ellenőrzése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-216">To view this evaluation, click Check prerequisites.</span></span>   
+19. <span data-ttu-id="9285b-217">Kattintson az Előfeltételek ellenőrzése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9285b-217">Click Check prerequisites.</span></span>
+20. <span data-ttu-id="9285b-218">Kattintson az Importálás gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-218">Click Import.</span></span>
+21. <span data-ttu-id="9285b-219">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="9285b-219">Click Yes.</span></span>
+22. <span data-ttu-id="9285b-220">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9285b-220">Close the page.</span></span>
+23. <span data-ttu-id="9285b-221">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9285b-221">Close the page.</span></span>
+24. <span data-ttu-id="9285b-222">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="9285b-222">Close the page.</span></span>
+25. <span data-ttu-id="9285b-223">Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.</span><span class="sxs-lookup"><span data-stu-id="9285b-223">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+26. <span data-ttu-id="9285b-224">A fastruktúrában bontsa ki a „Minta adatmodell” elemet.</span><span class="sxs-lookup"><span data-stu-id="9285b-224">In the tree, expand 'Sample data model'.</span></span>
+    * <span data-ttu-id="9285b-225">Vegye figyelembe, hogy a Mintaleképezés modell-leképezési konfigurációt a rendszer a kijelölt adatmodell-konfigurációval együtt letöltötte.</span><span class="sxs-lookup"><span data-stu-id="9285b-225">Note that the model ‘Sample mapping’ mapping configuration has been downloaded together with the selected data model configuration.</span></span> <span data-ttu-id="9285b-226">A két fájl letöltése együtt történik, mivel a Mintaleképezés meghatározása a kiválasztott adatmodell végrehajtása, és mivel a Finance and Operations programra vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="9285b-226">The two files are downloaded together because ‘Sample mapping’ has been defined as implementing the selected data model, and because it’s applicable for Finance and Operations.</span></span> <span data-ttu-id="9285b-227">A „Mintaleképezés (másodlagos)” konfiguráció még nincs letöltve, mivel nem teljesült a kívánt alkalmazásverzióhoz kapcsolódó feltétel.</span><span class="sxs-lookup"><span data-stu-id="9285b-227">The ‘Sample mapping (alternative)’ configuration hasn’t been downloaded because the condition for the required application version isn’t satisfied.</span></span>   
+    * <span data-ttu-id="9285b-228">Ha bejelentkezik a Dynamics 365 for Finance and Operations Enterprise kiadás programba, regisztrálja ugyanazt a szolgáltatót, belép ugyanabba az LCS-projektbe, és letölti ugyanazt az adatmodell-konfigurációt, a „Mintaleképezés (másodlagos)” konfigurációt tölti le, mivel a „Mintaleképezés” konfigurációt átugorja a rendszer.</span><span class="sxs-lookup"><span data-stu-id="9285b-228">If you sign in to Dynamics 365 for Finance and Operations, Enterprise edition, register the same provider, access the same LCS project, and download the same data model configuration, the ‘Sample mapping (alternative)’ configuration will download, whereas the ‘Sample mapping’ configuration will be skipped.</span></span>  
 
 

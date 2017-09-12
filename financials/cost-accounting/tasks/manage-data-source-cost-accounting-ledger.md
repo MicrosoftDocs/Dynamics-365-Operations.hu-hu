@@ -16,35 +16,35 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 3003a0dfa30c981eacfd5a643a1c5e902c2ba45d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>A költségkönyvelési főkönyv adatforrásának kezelése
+# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="fa522-103">A költségkönyvelési főkönyv adatforrásának kezelése</span><span class="sxs-lookup"><span data-stu-id="fa522-103">Manage a data source for the cost accounting ledger</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ezzel az eljárással kezelheti a költségkönyvelési főkönyv főkönyvi adatforrását. A feladat végrehajtása előtt ellenőrizze, hogy lejátszotta-e a Költségkönyvelési főkönyv létrehozása és a Költség-ellenőrzőegységek meghatározása feladat-útmutatókat. Ez a felvétel az USP2 bemutató vállalati adatait használja.
+<span data-ttu-id="fa522-104">Ezzel az eljárással kezelheti a költségkönyvelési főkönyv főkönyvi adatforrását.</span><span class="sxs-lookup"><span data-stu-id="fa522-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="fa522-105">A feladat végrehajtása előtt ellenőrizze, hogy lejátszotta-e a Költségkönyvelési főkönyv létrehozása és a Költség-ellenőrzőegységek meghatározása feladat-útmutatókat.</span><span class="sxs-lookup"><span data-stu-id="fa522-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="fa522-106">Ez a felvétel az USP2 bemutató vállalati adatait használja.</span><span class="sxs-lookup"><span data-stu-id="fa522-106">This recording uses the USP2 demo data company.</span></span>
 
-1. Lépjen a Költségkönyvelés > Főkönyv beállításai > Költségkönyvelési főkönyvek lehetőségre.
-2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. Kattintson az Aktuális verziók lehetőségre.
-4. A Művelet panelen kattintson a Kezelés elemre.
-5. Kattintson a Főkönyv lehetőségre.
-6. Kattintson az Új lehetőségre.
-7. Írjon be egy értéket a Név mezőbe.
-8. Az Adatszolgáltató mezőben adjon meg vagy válasszon ki egy értéket.
-    * Például válassza ki a Dynamics 365 for Finance and Operations – Főkönyvi bejegyzések lehetőséget.  
-9. A Költségösszetevő-dimenzió mezőben adjon meg vagy válasszon ki egy értéket.
-    * Ehhez a példához válassza ki a Költségösszetevők lehetőséget.  
-10. Kattintson a Mentés gombra.
-11. Kattintson az Adatszolgáltató konfigurálása lehetőségre.
-12. A Jogi személy mezőben adjon meg vagy válasszon ki egy értéket.
-    * Ehhez a példához válassza ki a USP2 értéket.  
-13. Kattintson az Új lehetőségre.
-14. Válassza az Aktuáls lehetőséget a Feladási réteg mezőben.
-15. Kattintson az OK gombra.
+1. <span data-ttu-id="fa522-107">Lépjen a Költségkönyvelés > Főkönyv beállításai > Költségkönyvelési főkönyvek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fa522-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="fa522-108">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="fa522-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="fa522-109">Kattintson az Aktuális verziók lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fa522-109">Click Actual versions.</span></span>
+4. <span data-ttu-id="fa522-110">A Művelet panelen kattintson a Kezelés elemre.</span><span class="sxs-lookup"><span data-stu-id="fa522-110">On the Action Pane, click Manage.</span></span>
+5. <span data-ttu-id="fa522-111">Kattintson a Főkönyv lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fa522-111">Click General ledger.</span></span>
+6. <span data-ttu-id="fa522-112">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fa522-112">Click New.</span></span>
+7. <span data-ttu-id="fa522-113">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="fa522-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="fa522-114">Az Adatszolgáltató mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fa522-114">In the Data provider field, enter or select a value.</span></span>
+    * <span data-ttu-id="fa522-115">Például válassza ki a Dynamics 365 for Finance and Operations – Főkönyvi bejegyzések lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fa522-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
+9. <span data-ttu-id="fa522-116">A Költségösszetevő-dimenzió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fa522-116">In the Cost element dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="fa522-117">Ehhez a példához válassza ki a Költségösszetevők lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="fa522-117">For this example, select Cost elements.</span></span>  
+10. <span data-ttu-id="fa522-118">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="fa522-118">Click Save.</span></span>
+11. <span data-ttu-id="fa522-119">Kattintson az Adatszolgáltató konfigurálása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fa522-119">Click Configure data provider.</span></span>
+12. <span data-ttu-id="fa522-120">A Jogi személy mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="fa522-120">In the Legal entity field, enter or select a value.</span></span>
+    * <span data-ttu-id="fa522-121">Ehhez a példához válassza ki a USP2 értéket.</span><span class="sxs-lookup"><span data-stu-id="fa522-121">For this example, select USP2.</span></span>  
+13. <span data-ttu-id="fa522-122">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fa522-122">Click New.</span></span>
+14. <span data-ttu-id="fa522-123">Válassza az Aktuáls lehetőséget a Feladási réteg mezőben.</span><span class="sxs-lookup"><span data-stu-id="fa522-123">In the Posting layer field, select Current.</span></span>
+15. <span data-ttu-id="fa522-124">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="fa522-124">Click OK.</span></span>
 
 

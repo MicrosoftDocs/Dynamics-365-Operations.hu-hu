@@ -16,69 +16,69 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f831288866af0fbe731c40a7a25c871d4313f8b5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 210bf36f0e989ce0e6ceda046f02d1091592a3c1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-account-structures"></a>Számlastruktúrák létrehozása
+# <a name="create-account-structures"></a><span data-ttu-id="4dfa2-103">Számlastruktúrák létrehozása</span><span class="sxs-lookup"><span data-stu-id="4dfa2-103">Create account structures</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az útmutató bemutatja a számlastruktúra létrehozásának folyamatát. A lépés a USMF bemutató vállalati adatait használja.
+<span data-ttu-id="4dfa2-104">Ez az útmutató bemutatja a számlastruktúra létrehozásának folyamatát.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-104">This task guide steps through creating an account structure.</span></span> <span data-ttu-id="4dfa2-105">A lépés a USMF bemutató vállalati adatait használja.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-105">The steps use demo data company USMF.</span></span>
 
-1. Ugorjon a Főkönyv > Számlatükör > Struktúrák > Számlastruktúrák konfigurálása pontra.
-2. Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-3. A Számlastruktúra mezőbe írjon be egy nevet, amely leírja a számlastruktúra célját.
-4. A Leírás mezőbe írjon be egy leírást, amely megadja a számlastruktúra célját.
-5. Kattintson az Új > lehetőségre.
-6. Kattintson a Szegmens hozzáadása hivatkozásra.
-7. A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.
-8. Kattintson a Szegmens hozzáadása hivatkozásra.
-9. Kattintson a Szegmens hozzáadása hivatkozásra.
-10. A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.
-11. Kattintson a Szegmens hozzáadása hivatkozásra.
-12. Kattintson a Szegmens hozzáadása hivatkozásra.
-13. A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.
-14. Kattintson a Szegmens hozzáadása hivatkozásra.
-15. A rácson jelölje ki a szegmenst a megengedett értékek módosításához.
-    * Kattintson például a Fő számlába.  
-16. A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.
-17. Érték beírása az Érték mezőbe.
-    * Például 600 000.  
-18. Írjon be egy értéket a – mezőbe.
-    * Például 699 999.  
-19. Kattintson az Alkalmaz gombra.
-20. A rácson jelölje ki a szegmenst a megengedett értékek módosításához.
-    * Például: részleg.  
-21. A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.
-22. Érték beírása az Érték mezőbe.
-    * Például: 022.  
-23. Írjon be egy értéket a – mezőbe.
-    * Például: 031.  
-24. Kattintson az Új feltételek hozzáadása elemre.
-25. A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.
-26. Érték beírása az Érték mezőbe.
-    * Például: 033.  
-27. Írjon be egy értéket a – mezőbe.
-    * Például: 034.  
-28. Kattintson az Alkalmaz gombra.
-29. A rácson jelölje ki a szegmenst a megengedett értékek módosításához.
-    * Például: költséghely.  
-30. Írjon be egy értéket a Költséghely mezőbe.
-    * Például 007..021.  
-31. Kattintson a Hozzáadás gombra.
-32. Írjon be egy értéket a Fő számla mezőbe.
-    * Például: 600000..699999  
-33. A rácson jelölje ki a szegmenst a megengedett értékek módosításához.
-    * Például: részleg.  
-34. Írjon be egy értéket a Részleg mezőbe.
-    * Például: 032.  
-35. Írjon be egy értéket a Költséghely mezőbe.
-    * Például: 086.  
-36. Kattintson az Érvényesítés gombra.
-37. Kattintson az Aktiválás gombra.
-38. Kattintson az Aktiválás gombra.
+1. <span data-ttu-id="4dfa2-106">Ugorjon a Főkönyv > Számlatükör > Struktúrák > Számlastruktúrák konfigurálása pontra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-106">Go to General ledger > Chart of accounts > Structures > Configure account structures.</span></span>
+2. <span data-ttu-id="4dfa2-107">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-107">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="4dfa2-108">A Számlastruktúra mezőbe írjon be egy nevet, amely leírja a számlastruktúra célját.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-108">In the Account structure field, type a name to describe the purpose of the account structure.</span></span>
+4. <span data-ttu-id="4dfa2-109">A Leírás mezőbe írjon be egy leírást, amely megadja a számlastruktúra célját.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-109">In the Description field, type a description to specify the purpose of the account structure.</span></span>
+5. <span data-ttu-id="4dfa2-110">Kattintson az Új > lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-110">Click Create.</span></span>
+6. <span data-ttu-id="4dfa2-111">Kattintson a Szegmens hozzáadása hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-111">Click Add segment.</span></span>
+7. <span data-ttu-id="4dfa2-112">A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-112">In the Dimensions list, select the dimension to add to the account structure.</span></span>
+8. <span data-ttu-id="4dfa2-113">Kattintson a Szegmens hozzáadása hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-113">Click Add segment.</span></span>
+9. <span data-ttu-id="4dfa2-114">Kattintson a Szegmens hozzáadása hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-114">Click Add segment.</span></span>
+10. <span data-ttu-id="4dfa2-115">A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-115">In the Dimensions list, select the dimension to add to the account structure.</span></span>
+11. <span data-ttu-id="4dfa2-116">Kattintson a Szegmens hozzáadása hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-116">Click Add segment.</span></span>
+12. <span data-ttu-id="4dfa2-117">Kattintson a Szegmens hozzáadása hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-117">Click Add segment.</span></span>
+13. <span data-ttu-id="4dfa2-118">A Dimenziók listájában válassza ki a számlastruktúrához adandó dimenziót.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-118">In the Dimensions list, select the dimension to add to the account structure.</span></span>
+14. <span data-ttu-id="4dfa2-119">Kattintson a Szegmens hozzáadása hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-119">Click Add segment.</span></span>
+15. <span data-ttu-id="4dfa2-120">A rácson jelölje ki a szegmenst a megengedett értékek módosításához.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-120">In the grid, select the segment to edit the allowed values.</span></span>
+    * <span data-ttu-id="4dfa2-121">Kattintson például a Fő számlába.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-121">For example, click in Main Account.</span></span>  
+16. <span data-ttu-id="4dfa2-122">A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-122">In the Operator field, select an option, such as is between and includes.</span></span>
+17. <span data-ttu-id="4dfa2-123">Érték beírása az Érték mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-123">In the Value field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-124">Például 600 000.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-124">For example, 600000.</span></span>  
+18. <span data-ttu-id="4dfa2-125">Írjon be egy értéket a – mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-125">In the through field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-126">Például 699 999.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-126">For example, 699999.</span></span>  
+19. <span data-ttu-id="4dfa2-127">Kattintson az Alkalmaz gombra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-127">Click Apply.</span></span>
+20. <span data-ttu-id="4dfa2-128">A rácson jelölje ki a szegmenst a megengedett értékek módosításához.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-128">In the grid, select the segment to edit the allowed values.</span></span>
+    * <span data-ttu-id="4dfa2-129">Például: részleg.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-129">For example, Department.</span></span>  
+21. <span data-ttu-id="4dfa2-130">A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-130">In the Operator field, select an option, such as is between and includes.</span></span>
+22. <span data-ttu-id="4dfa2-131">Érték beírása az Érték mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-131">In the Value field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-132">Például: 022.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-132">For example, 022.</span></span>  
+23. <span data-ttu-id="4dfa2-133">Írjon be egy értéket a – mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-133">In the through field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-134">Például: 031.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-134">For example, 031.</span></span>  
+24. <span data-ttu-id="4dfa2-135">Kattintson az Új feltételek hozzáadása elemre.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-135">Click Add new criteria.</span></span>
+25. <span data-ttu-id="4dfa2-136">A Kezelő mezőben válasszon ki egy lehetőséget, például a „között”, vagy a „tartalmazza” elemet.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-136">In the Operator field, select an option, such as is between and includes.</span></span>
+26. <span data-ttu-id="4dfa2-137">Érték beírása az Érték mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-137">In the Value field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-138">Például: 033.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-138">For example, 033.</span></span>  
+27. <span data-ttu-id="4dfa2-139">Írjon be egy értéket a – mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-139">In the through field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-140">Például: 034.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-140">For example, 034.</span></span>  
+28. <span data-ttu-id="4dfa2-141">Kattintson az Alkalmaz gombra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-141">Click Apply.</span></span>
+29. <span data-ttu-id="4dfa2-142">A rácson jelölje ki a szegmenst a megengedett értékek módosításához.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-142">In the grid, select the segment to edit the allowed values.</span></span>
+    * <span data-ttu-id="4dfa2-143">Például: költséghely.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-143">For example, Cost Center.</span></span>  
+30. <span data-ttu-id="4dfa2-144">Írjon be egy értéket a Költséghely mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-144">In the CostCenter field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-145">Például 007..021.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-145">For example, 007..021.</span></span>  
+31. <span data-ttu-id="4dfa2-146">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-146">Click Add.</span></span>
+32. <span data-ttu-id="4dfa2-147">Írjon be egy értéket a Fő számla mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-147">In the MainAccount field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-148">Például: 600000..699999</span><span class="sxs-lookup"><span data-stu-id="4dfa2-148">For example, 600000..699999</span></span>  
+33. <span data-ttu-id="4dfa2-149">A rácson jelölje ki a szegmenst a megengedett értékek módosításához.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-149">In the grid, select the segment to edit the allowed values.</span></span>
+    * <span data-ttu-id="4dfa2-150">Például: részleg.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-150">For example, Department.</span></span>  
+34. <span data-ttu-id="4dfa2-151">Írjon be egy értéket a Részleg mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-151">In the Department field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-152">Például: 032.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-152">For example, 032.</span></span>  
+35. <span data-ttu-id="4dfa2-153">Írjon be egy értéket a Költséghely mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-153">In the CostCenter field, type a value.</span></span>
+    * <span data-ttu-id="4dfa2-154">Például: 086.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-154">For example, 086.</span></span>  
+36. <span data-ttu-id="4dfa2-155">Kattintson az Érvényesítés gombra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-155">Click Validate.</span></span>
+37. <span data-ttu-id="4dfa2-156">Kattintson az Aktiválás gombra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-156">Click Activate.</span></span>
+38. <span data-ttu-id="4dfa2-157">Kattintson az Aktiválás gombra.</span><span class="sxs-lookup"><span data-stu-id="4dfa2-157">Click Activate.</span></span>
 
 

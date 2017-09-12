@@ -17,27 +17,27 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 4c4d4f3d531108c931096069f49e424bfd5e908a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a281b6397e6bee64e6e10bdcd2fb5539c5f73adc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-associate-a-device"></a>Eszköz létrehozása és hozzárendelése
+# <a name="create-and-associate-a-device"></a><span data-ttu-id="da23d-103">Eszköz létrehozása és hozzárendelése</span><span class="sxs-lookup"><span data-stu-id="da23d-103">Create and associate a device</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás végigveszi, hogyan hozhat létre egy új eszközt, és hogyan társíthatja azt egy jegyzékhez. A leírásban feltételezzük, hogy a jegyzéket már elkészítette.  Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat. Ez az eljárás rendszergazdák, Informatikai szakértők vagy kiskereskedelmi informatikusok, illetve az üzletvezető szerepköröket betöltők számára készült.
+<span data-ttu-id="da23d-104">Ez az eljárás végigveszi, hogyan hozhat létre egy új eszközt, és hogyan társíthatja azt egy jegyzékhez.</span><span class="sxs-lookup"><span data-stu-id="da23d-104">This procedure walks through how to create a new device and associate it to a register.</span></span> <span data-ttu-id="da23d-105">A leírásban feltételezzük, hogy a jegyzéket már elkészítette.</span><span class="sxs-lookup"><span data-stu-id="da23d-105">It is assumed that the register is already created.</span></span>  <span data-ttu-id="da23d-106">Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.</span><span class="sxs-lookup"><span data-stu-id="da23d-106">This task uses the USRT company in demo data.</span></span> <span data-ttu-id="da23d-107">Ez az eljárás rendszergazdák, Informatikai szakértők vagy kiskereskedelmi informatikusok, illetve az üzletvezető szerepköröket betöltők számára készült.</span><span class="sxs-lookup"><span data-stu-id="da23d-107">This task is intended for Administrators, IT Professional or Retail IT, and the Store Manager roles.</span></span>
 
-1. Lépjen a Kiskereskedelem és kereskedelem > .. > Eszközök lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. Írjon egy értéket az Eszközazonosító mezőbe.
-4. Az Eszköztípus mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-5. A kívánt rekord megkeresése és kijelölése a listán
-6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-7. A Jegyzék száma mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-8. A kívánt rekord megkeresése és kijelölése a listán
-9. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-10. Kattintson a Mentés gombra.
+1. <span data-ttu-id="da23d-108">Lépjen a Kiskereskedelem és kereskedelem > ..</span><span class="sxs-lookup"><span data-stu-id="da23d-108">Go to Retail and commerce > ..</span></span> <span data-ttu-id="da23d-109">> Eszközök lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="da23d-109">> Devices.</span></span>
+2. <span data-ttu-id="da23d-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="da23d-110">Click New.</span></span>
+3. <span data-ttu-id="da23d-111">Írjon egy értéket az Eszközazonosító mezőbe.</span><span class="sxs-lookup"><span data-stu-id="da23d-111">In the Device ID field, type a value.</span></span>
+4. <span data-ttu-id="da23d-112">Az Eszköztípus mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="da23d-112">In the Device type field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="da23d-113">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="da23d-113">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="da23d-114">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="da23d-114">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="da23d-115">A Jegyzék száma mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="da23d-115">In the Register number field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="da23d-116">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="da23d-116">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="da23d-117">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="da23d-117">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="da23d-118">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="da23d-118">Click Save.</span></span>
 
 

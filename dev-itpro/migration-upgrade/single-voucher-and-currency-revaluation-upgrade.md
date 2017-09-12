@@ -15,28 +15,28 @@ ms.custom: 265364
 ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d3c6d817424be79b09ccdd89deb7f31599fe9bf5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 13ad43cc77731727525aae1edc4d405c166acbc1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade"></a>Egyetlen bizonylatos és pénznemes értékelési frissítés
+# <a name="single-voucher-and-currency-revaluation-upgrade"></a><span data-ttu-id="aa852-104">Egyetlen bizonylatos és pénznemes értékelési frissítés</span><span class="sxs-lookup"><span data-stu-id="aa852-104">Single voucher and currency revaluation upgrade</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Egyes szervezetek olyan naplókat adnak meg, amelyek egynél több ügyféllel vagy szállítóval rendelkező bizonylatot tartalmaznak, valamint a Kinnlevőségek és a Kötelezettségek devizaátértékelési folyamatát is. Ez a témakör bemutatja azokat a lépéseket, amelyeket ezeknek a szervezeteknek követniük kell, amikor frissítenek a Microsoft Dynamics 365 for Operations 1611-es verziójára.
+<span data-ttu-id="aa852-105">Egyes szervezetek olyan naplókat adnak meg, amelyek egynél több ügyféllel vagy szállítóval rendelkező bizonylatot tartalmaznak, valamint a Kinnlevőségek és a Kötelezettségek devizaátértékelési folyamatát is.</span><span class="sxs-lookup"><span data-stu-id="aa852-105">Some organizations enter journals that contain a single voucher that has more than one customer or vendor, and they also run the Accounts receivable or Accounts payable foreign currency revaluation process.</span></span> <span data-ttu-id="aa852-106">Ez a témakör bemutatja azokat a lépéseket, amelyeket ezeknek a szervezeteknek követniük kell, amikor frissítenek a Microsoft Dynamics 365 for Operations 1611-es verziójára.</span><span class="sxs-lookup"><span data-stu-id="aa852-106">This topic describes the steps that these organizations should follow when they upgrade to Microsoft Dynamics 365 for Operations version 1611.</span></span>
 
-Kövesse ezeket a lépéseket, amikor frissít a Microsoft Dynamics 365 for Operations 1611-es verziójára.
+<span data-ttu-id="aa852-107">Kövesse ezeket a lépéseket, amikor frissít a Microsoft Dynamics 365 for Operations 1611-es verziójára.</span><span class="sxs-lookup"><span data-stu-id="aa852-107">Follow these steps when you upgrade to Microsoft Dynamics 365 for Operations version 1611.</span></span>
 
-1.  A Dynamics 365 for Operations frissítése előtt futtassa le a devizaátértékelés folyamatait a Kinnlevőségeknél és a Kötelezettségeknél. A **Módszer** mezőben állítsa be a **Számla dátuma** értéket. Átértékelési tranzakció jön létre, amely visszaállítja a legutóbbi devizaátértékelést. Emiatt a nyitott tranzakciók értékelése az eredeti könyvelési pénznemben történik.
-2.  Frissítsen a Dynamics 365 for Operations 1611-es verziójára.
-3.  Futtassa le újra a devizaátértékelés folyamatait a Kinnlevőségeknél és a Kötelezettségeknél. Ekkor állítsa a **Módszer** mezőt **Normál** értékre. Új átértékelési tranzakció jön létre, amelynek alapját a jelenlegi átváltási árfolyamok jelentik. Ez a tranzakció rögzíti a nem realizált nyereséget/veszteséget és a megfelelő összefoglaló főkönyvi számlát.
+1.  <span data-ttu-id="aa852-108">A Dynamics 365 for Operations frissítése előtt futtassa le a devizaátértékelés folyamatait a Kinnlevőségeknél és a Kötelezettségeknél.</span><span class="sxs-lookup"><span data-stu-id="aa852-108">Before you upgrade to Dynamics 365 for Operations, run the foreign currency revaluation processes for Accounts receivable and Accounts payable.</span></span> <span data-ttu-id="aa852-109">A **Módszer** mezőben állítsa be a **Számla dátuma** értéket.</span><span class="sxs-lookup"><span data-stu-id="aa852-109">Set the **Method** field to **Invoice date**.</span></span> <span data-ttu-id="aa852-110">Átértékelési tranzakció jön létre, amely visszaállítja a legutóbbi devizaátértékelést.</span><span class="sxs-lookup"><span data-stu-id="aa852-110">A revaluation transaction is created that reverses the last foreign currency revaluation.</span></span> <span data-ttu-id="aa852-111">Emiatt a nyitott tranzakciók értékelése az eredeti könyvelési pénznemben történik.</span><span class="sxs-lookup"><span data-stu-id="aa852-111">Therefore, the open transactions are valued at their original accounting currency.</span></span>
+2.  <span data-ttu-id="aa852-112">Frissítsen a Dynamics 365 for Operations 1611-es verziójára.</span><span class="sxs-lookup"><span data-stu-id="aa852-112">Upgrade to Dynamics 365 for Operations version 1611.</span></span>
+3.  <span data-ttu-id="aa852-113">Futtassa le újra a devizaátértékelés folyamatait a Kinnlevőségeknél és a Kötelezettségeknél.</span><span class="sxs-lookup"><span data-stu-id="aa852-113">Run the Accounts receivable and Accounts payable foreign currency revaluation processes again.</span></span> <span data-ttu-id="aa852-114">Ekkor állítsa a **Módszer** mezőt **Normál** értékre.</span><span class="sxs-lookup"><span data-stu-id="aa852-114">This time, set the **Method** field to **Standard**.</span></span> <span data-ttu-id="aa852-115">Új átértékelési tranzakció jön létre, amelynek alapját a jelenlegi átváltási árfolyamok jelentik.</span><span class="sxs-lookup"><span data-stu-id="aa852-115">A new revaluation transaction is created that is based on the current exchange rates.</span></span> <span data-ttu-id="aa852-116">Ez a tranzakció rögzíti a nem realizált nyereséget/veszteséget és a megfelelő összefoglaló főkönyvi számlát.</span><span class="sxs-lookup"><span data-stu-id="aa852-116">This transaction records the unrealized gain/loss and the correct summary ledger account.</span></span>
 
 
 

@@ -16,136 +16,136 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 94898674f02de72111e131f563b33926dda8ac8e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fdba6a68cd98b0ccbc4072f5c1124088ed9d814b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához az elektronikus jelentéskészítéshez (ER)
+# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a><span data-ttu-id="c832f-103">Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához az elektronikus jelentéskészítéshez (ER)</span><span class="sxs-lookup"><span data-stu-id="c832f-103">Design a format to use horizontally-expandable ranges to dynamically add columns in Excel reports for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat elektronikus jelentési (ER) formátumot jelentések létrehozásához OPENXML munkalap (Excel) fájlok formájában, amelyekben a szükséges oszlopok vízszintesen bővíthető tartományokként, dinamikusan hozhatók létre. Ezeket a lépéseket bármely vállalatban végrehajthatja.
+<span data-ttu-id="c832f-104">Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat elektronikus jelentési (ER) formátumot jelentések létrehozásához OPENXML munkalap (Excel) fájlok formájában, amelyekben a szükséges oszlopok vízszintesen bővíthető tartományokként, dinamikusan hozhatók létre.</span><span class="sxs-lookup"><span data-stu-id="c832f-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges.</span></span> <span data-ttu-id="c832f-105">Ezeket a lépéseket bármely vállalatban végrehajthatja.</span><span class="sxs-lookup"><span data-stu-id="c832f-105">These steps can be performed in any company.</span></span>
 
-A lépések végrehajtásához először hajtsa végre ezt a három feladat-útmutatót: 
+<span data-ttu-id="c832f-106">A lépések végrehajtásához először hajtsa végre ezt a három feladat-útmutatót:</span><span class="sxs-lookup"><span data-stu-id="c832f-106">To complete these steps, you must first complete these three task guides:</span></span> 
 
-„ER Konfigurációszolgáltató létrehozása és megjelölése aktívként”
+<span data-ttu-id="c832f-107">„ER Konfigurációszolgáltató létrehozása és megjelölése aktívként”</span><span class="sxs-lookup"><span data-stu-id="c832f-107">“ER Create a configuration provider and mark it as active”</span></span>
 
-„ER Pénzügyi dimenziók használata adatforrásként (1. rész: Adatmodell kialakítása)”
+<span data-ttu-id="c832f-108">„ER Pénzügyi dimenziók használata adatforrásként (1. rész: Adatmodell kialakítása)”</span><span class="sxs-lookup"><span data-stu-id="c832f-108">“ER Use financial dimensions as a data source (Part 1: Design data model)”</span></span>
 
-„ER Pénzügyi dimenziók használata adatforrásként (2. rész: Modell hozzárendelése)”
+<span data-ttu-id="c832f-109">„ER Pénzügyi dimenziók használata adatforrásként (2. rész: Modell hozzárendelése)”</span><span class="sxs-lookup"><span data-stu-id="c832f-109">“ER Use financial dimensions as a data source (Part 2: Model mapping)”</span></span>
 
-Emellett le kell töltenie és el kell mentenie egy helyi példányt az itt található, mintajelentéssel rendelkező sablonból: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+<span data-ttu-id="c832f-110">Emellett le kell töltenie és el kell mentenie egy helyi példányt az itt található, mintajelentéssel rendelkező sablonból: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx</span><span class="sxs-lookup"><span data-stu-id="c832f-110">You must also download and save a local copy of the template with a sample report found here: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx</span></span>
 
-Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+<span data-ttu-id="c832f-111">Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.</span><span class="sxs-lookup"><span data-stu-id="c832f-111">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-new-report-configuration"></a>Új jelentéskonfiguráció létrehozása
-1. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
-2. A fastruktúrában válassza a „Pénzügyi dimenziók mintamodell” szöveget.
-3. A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.
-4. Az Új mezőbe írja be a „ Pénzügyi dimenziók mintamodell adatmodellen alapuló formátum” kifejezést.
-    * Használja az előzetesen létrehozott modellt az új jelentés adatforrásaként.  
-5. A Név mezőbe írja be a következőt: „Mintajelentés vízszintesen bővíthető tartományokkal”.
-    * Mintajelentés vízszintesen bővíthető tartományokkal  
-6. A Leírás mezőbe írja be a következőt: „Excel kimenet készítése oszlopok dinamikus hozzáadásával”.
-    * Excel kimenet készítése oszlopok dinamikus hozzáadásával  
-7. Az Adatmodell definíciója mezőben válassza a Bejegyzés lehetőséget.
-8. Kattintson a Konfiguráció létrehozása lehetőségre.
+## <a name="create-a-new-report-configuration"></a><span data-ttu-id="c832f-112">Új jelentéskonfiguráció létrehozása</span><span class="sxs-lookup"><span data-stu-id="c832f-112">Create a new report configuration</span></span>
+1. <span data-ttu-id="c832f-113">Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.</span><span class="sxs-lookup"><span data-stu-id="c832f-113">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="c832f-114">A fastruktúrában válassza a „Pénzügyi dimenziók mintamodell” szöveget.</span><span class="sxs-lookup"><span data-stu-id="c832f-114">In the tree, select 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="c832f-115">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="c832f-115">Click Create configuration to open the drop dialog.</span></span>
+4. <span data-ttu-id="c832f-116">Az Új mezőbe írja be a „ Pénzügyi dimenziók mintamodell adatmodellen alapuló formátum” kifejezést.</span><span class="sxs-lookup"><span data-stu-id="c832f-116">In the New field, enter 'Format based on data model Financial dimensions sample model'.</span></span>
+    * <span data-ttu-id="c832f-117">Használja az előzetesen létrehozott modellt az új jelentés adatforrásaként.</span><span class="sxs-lookup"><span data-stu-id="c832f-117">Use the model created in advance as the data source for your new report.</span></span>  
+5. <span data-ttu-id="c832f-118">A Név mezőbe írja be a következőt: „Mintajelentés vízszintesen bővíthető tartományokkal”.</span><span class="sxs-lookup"><span data-stu-id="c832f-118">In the Name field, type 'Sample report with horizontally expandable ranges'.</span></span>
+    * <span data-ttu-id="c832f-119">Mintajelentés vízszintesen bővíthető tartományokkal</span><span class="sxs-lookup"><span data-stu-id="c832f-119">Sample report with horizontally expandable ranges</span></span>  
+6. <span data-ttu-id="c832f-120">A Leírás mezőbe írja be a következőt: „Excel kimenet készítése oszlopok dinamikus hozzáadásával”.</span><span class="sxs-lookup"><span data-stu-id="c832f-120">In the Description field, type 'To make Excel output with dynamically adding columns'.</span></span>
+    * <span data-ttu-id="c832f-121">Excel kimenet készítése oszlopok dinamikus hozzáadásával</span><span class="sxs-lookup"><span data-stu-id="c832f-121">To make Excel output with dynamically adding columns</span></span>  
+7. <span data-ttu-id="c832f-122">Az Adatmodell definíciója mezőben válassza a Bejegyzés lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c832f-122">In the Data model definition field, select Entry.</span></span>
+8. <span data-ttu-id="c832f-123">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c832f-123">Click Create configuration.</span></span>
 
-## <a name="design-the-report-format"></a>A jelentésformátum megtervezése
-1. Kattintson a Tervező pontra.
-2. Kapcsolja be állapotban a „Részletek megjelenítése” váltógombot.
-3. A Művelet panelen kattintson az Importálás gombra.
-4. Kattintson az Importálás a Microsoft Excel programból lehetőségre.
-5. Kattintson a Mellékletek lehetőségre.
-    * Importálja a jelentés sablonját. Használja az ehhez letöltött Excel-fájlt.  
-6. Kattintson az Új lehetőségre.
-7. Kattintson a Fájlra.
-8. Zárja be a lapot.
-9. A Sablon mezőben adjon meg vagy válasszon ki egy értéket.
-    * Letöltött sablon kijelölése  
-10. Kattintson az OK gombra.
-    * Adjon hozzá egy új tartományt az Excel-kimenet dinamikus létrehozásához a (felhasználói párbeszédpanelen) kiválasztott számú oszloppal a pénzügyi dimenziókhoz. Az egyes oszlopok minden egyes cellája egy adott pénzügyi dimenzió nevét jelöli.  
-11. A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-12. A fastruktúrában válassza ki a következőt: „Excel\Tartomány”.
-13. Az Excel tartomány mezőbe írja be a következőt: „DimNames”.
-    * DimNames  
-14. A Replikálás iránya mezőben válassza a „Vízszintes” lehetőséget.
-15. Kattintson az OK gombra.
-16. A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Vízszintes”.
-17. Kattintson a Felfelé gombra.
-18. A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Cell<DimNames>”.
-19. Válassza a Kivágás parancsot.
-20. A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Vízszintes”.
-21. Kattintson a Beillesztés parancsra.
-22. A fastruktúrában bontsa ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Vízszintes”.
-23. A fastruktúrában bontsa ki a következőt: „Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges”.
-24. A fastruktúrában bontsa ki a következőt: „Excel = "SampleFinDimWsReport"\Függőleges\Tartomány<JournalLine>JournalLine<TransactionLine>: Függőleges".
-25. A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Függőleges\Tartomány<JournalLine>JournalLine<TransactionLine>: Függőleges".
-    * Adjon hozzá egy új tartományt az Excel-kimenet dinamikus létrehozásához a (felhasználói párbeszédpanelen) kiválasztott számú oszloppal a pénzügyi dimenziókhoz. Az egyes oszlopok minden egyes cellája egy adott pénzügyi dimenzió értékét jelöli mindegyik jelentési tranzakcióra.  
-26. Kattintson a Tartomány hozzáadása lehetőségre.
-27. Az Excel tartomány mezőbe írja be a következőt: „DimValues”.
-    * DimValues  
-28. A Replikálás iránya mezőben válassza a „Vízszintes” lehetőséget.
-29. Kattintson az OK gombra.
-30. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<DimValues>".
-31. Válassza a Kivágás parancsot.
-32. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Vízszintes'.
-33. Kattintson a Beillesztés parancsra.
-34. A fastruktúrában bontsa ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Vízszintes'.
+## <a name="design-the-report-format"></a><span data-ttu-id="c832f-124">A jelentésformátum megtervezése</span><span class="sxs-lookup"><span data-stu-id="c832f-124">Design the report format</span></span>
+1. <span data-ttu-id="c832f-125">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="c832f-125">Click Designer.</span></span>
+2. <span data-ttu-id="c832f-126">Kapcsolja be állapotban a „Részletek megjelenítése” váltógombot.</span><span class="sxs-lookup"><span data-stu-id="c832f-126">Turn on the ‘Show details’ toggle button.</span></span>
+3. <span data-ttu-id="c832f-127">A Művelet panelen kattintson az Importálás gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-127">On the Action Pane, click Import.</span></span>
+4. <span data-ttu-id="c832f-128">Kattintson az Importálás a Microsoft Excel programból lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c832f-128">Click Import from Excel.</span></span>
+5. <span data-ttu-id="c832f-129">Kattintson a Mellékletek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c832f-129">Click Attachments.</span></span>
+    * <span data-ttu-id="c832f-130">Importálja a jelentés sablonját.</span><span class="sxs-lookup"><span data-stu-id="c832f-130">Import the report’s template.</span></span> <span data-ttu-id="c832f-131">Használja az ehhez letöltött Excel-fájlt.</span><span class="sxs-lookup"><span data-stu-id="c832f-131">Use Excel file that you downloaded for that.</span></span>  
+6. <span data-ttu-id="c832f-132">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c832f-132">Click New.</span></span>
+7. <span data-ttu-id="c832f-133">Kattintson a Fájlra.</span><span class="sxs-lookup"><span data-stu-id="c832f-133">Click File.</span></span>
+8. <span data-ttu-id="c832f-134">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="c832f-134">Close the page.</span></span>
+9. <span data-ttu-id="c832f-135">A Sablon mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="c832f-135">In the Template field, enter or select a value.</span></span>
+    * <span data-ttu-id="c832f-136">Letöltött sablon kijelölése</span><span class="sxs-lookup"><span data-stu-id="c832f-136">Select the downloaded template.</span></span>  
+10. <span data-ttu-id="c832f-137">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-137">Click OK.</span></span>
+    * <span data-ttu-id="c832f-138">Adjon hozzá egy új tartományt az Excel-kimenet dinamikus létrehozásához a (felhasználói párbeszédpanelen) kiválasztott számú oszloppal a pénzügyi dimenziókhoz.</span><span class="sxs-lookup"><span data-stu-id="c832f-138">Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions.</span></span> <span data-ttu-id="c832f-139">Az egyes oszlopok minden egyes cellája egy adott pénzügyi dimenzió nevét jelöli.</span><span class="sxs-lookup"><span data-stu-id="c832f-139">Each cell for every column will represent a single financial dimension’s name.</span></span>  
+11. <span data-ttu-id="c832f-140">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="c832f-140">Click Add to open the drop dialog.</span></span>
+12. <span data-ttu-id="c832f-141">A fastruktúrában válassza ki a következőt: „Excel\Tartomány”.</span><span class="sxs-lookup"><span data-stu-id="c832f-141">In the tree, select 'Excel\Range'.</span></span>
+13. <span data-ttu-id="c832f-142">Az Excel tartomány mezőbe írja be a következőt: „DimNames”.</span><span class="sxs-lookup"><span data-stu-id="c832f-142">In the Excel range field, type 'DimNames'.</span></span>
+    * <span data-ttu-id="c832f-143">DimNames</span><span class="sxs-lookup"><span data-stu-id="c832f-143">DimNames</span></span>  
+14. <span data-ttu-id="c832f-144">A Replikálás iránya mezőben válassza a „Vízszintes” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c832f-144">In the Replication direction field, select 'Horizontal'.</span></span>
+15. <span data-ttu-id="c832f-145">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-145">Click OK.</span></span>
+16. <span data-ttu-id="c832f-146">A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Vízszintes”.</span><span class="sxs-lookup"><span data-stu-id="c832f-146">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+17. <span data-ttu-id="c832f-147">Kattintson a Felfelé gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-147">Click Move up.</span></span>
+18. <span data-ttu-id="c832f-148">A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Cell<DimNames>”.</span><span class="sxs-lookup"><span data-stu-id="c832f-148">In the tree, select 'Excel = "SampleFinDimWsReport"\Cell<DimNames>'.</span></span>
+19. <span data-ttu-id="c832f-149">Válassza a Kivágás parancsot.</span><span class="sxs-lookup"><span data-stu-id="c832f-149">Click Cut.</span></span>
+20. <span data-ttu-id="c832f-150">A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Vízszintes”.</span><span class="sxs-lookup"><span data-stu-id="c832f-150">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+21. <span data-ttu-id="c832f-151">Kattintson a Beillesztés parancsra.</span><span class="sxs-lookup"><span data-stu-id="c832f-151">Click Paste.</span></span>
+22. <span data-ttu-id="c832f-152">A fastruktúrában bontsa ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Vízszintes”.</span><span class="sxs-lookup"><span data-stu-id="c832f-152">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+23. <span data-ttu-id="c832f-153">A fastruktúrában bontsa ki a következőt: „Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges”.</span><span class="sxs-lookup"><span data-stu-id="c832f-153">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.</span></span>
+24. <span data-ttu-id="c832f-154">A fastruktúrában bontsa ki a következőt: „Excel = "SampleFinDimWsReport"\Függőleges\Tartomány<JournalLine>JournalLine<TransactionLine>: Függőleges".</span><span class="sxs-lookup"><span data-stu-id="c832f-154">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+25. <span data-ttu-id="c832f-155">A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Függőleges\Tartomány<JournalLine>JournalLine<TransactionLine>: Függőleges".</span><span class="sxs-lookup"><span data-stu-id="c832f-155">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+    * <span data-ttu-id="c832f-156">Adjon hozzá egy új tartományt az Excel-kimenet dinamikus létrehozásához a (felhasználói párbeszédpanelen) kiválasztott számú oszloppal a pénzügyi dimenziókhoz.</span><span class="sxs-lookup"><span data-stu-id="c832f-156">Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions.</span></span> <span data-ttu-id="c832f-157">Az egyes oszlopok minden egyes cellája egy adott pénzügyi dimenzió értékét jelöli mindegyik jelentési tranzakcióra.</span><span class="sxs-lookup"><span data-stu-id="c832f-157">Each cell for every column will represent a single financial dimension’s value for each reporting transaction.</span></span>  
+26. <span data-ttu-id="c832f-158">Kattintson a Tartomány hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c832f-158">Click Add Range.</span></span>
+27. <span data-ttu-id="c832f-159">Az Excel tartomány mezőbe írja be a következőt: „DimValues”.</span><span class="sxs-lookup"><span data-stu-id="c832f-159">In the Excel range field, type 'DimValues'.</span></span>
+    * <span data-ttu-id="c832f-160">DimValues</span><span class="sxs-lookup"><span data-stu-id="c832f-160">DimValues</span></span>  
+28. <span data-ttu-id="c832f-161">A Replikálás iránya mezőben válassza a „Vízszintes” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c832f-161">In the Replication direction field, select 'Horizontal'.</span></span>
+29. <span data-ttu-id="c832f-162">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-162">Click OK.</span></span>
+30. <span data-ttu-id="c832f-163">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<DimValues>".</span><span class="sxs-lookup"><span data-stu-id="c832f-163">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<DimValues>'.</span></span>
+31. <span data-ttu-id="c832f-164">Válassza a Kivágás parancsot.</span><span class="sxs-lookup"><span data-stu-id="c832f-164">Click Cut.</span></span>
+32. <span data-ttu-id="c832f-165">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Vízszintes'.</span><span class="sxs-lookup"><span data-stu-id="c832f-165">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
+33. <span data-ttu-id="c832f-166">Kattintson a Beillesztés parancsra.</span><span class="sxs-lookup"><span data-stu-id="c832f-166">Click Paste.</span></span>
+34. <span data-ttu-id="c832f-167">A fastruktúrában bontsa ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Vízszintes'.</span><span class="sxs-lookup"><span data-stu-id="c832f-167">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
 
-## <a name="map-format-elements-to-data-sources"></a>Formátum-összetevők leképezése az adatforrásokhoz
-1. Kattintson a Hozzárendelés fülre.
-2. A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell”.
-3. A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista”.
-4. A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista”.
-5. A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Dimenzióadatok: Rekordlista”.
-6. A fastruktúrában válassza ki a következőt: Excel = SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>'.
-7. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Dimenzióadatok: Rekordlista\Kód: Karakterlánc”.
-8. Kattintson a Kötés gombra.
-9. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Vízszintes'.
-10. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Dimenzióadatok: Rekordlista”.
-11. Kattintson a Kötés gombra.
-12. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<Credit>".
-13. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Követel: Valós”.
-14. Kattintson a Kötés gombra.
-15. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<Debit>".
-16. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Tartozik: Valós”.
-17. Kattintson a Kötés gombra.
-18. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<Currency>".
-19. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Pénznem: Karakterlánc”.
-20. Kattintson a Kötés gombra.
-21. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<TransDate>".
-22. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Dátum: Dátum”.
-23. Kattintson a Kötés gombra.
-24. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<TransVoucher>".
-25. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Bizonylat: Karakterlánc”.
-26. Kattintson a Kötés gombra.
-27. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<TransBatch>".
-28. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Köteg: Karakterlánc”.
-29. Kattintson a Kötés gombra.
-30. A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Függőleges\Tartomány<JournalLine>JournalLine<TransactionLine>: Függőleges".
-31. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista”.
-32. Kattintson a Kötés gombra.
-33. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>.
-34. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Köteg: Karakterlánc”.
-35. Kattintson a Kötés gombra.
-36. A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges.
-37. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista”.
-38. Kattintson a Kötés gombra.
-39. A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Dimenzióbeállítások: Rekordlista”.
-40. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Dimenzióbeállítások: Rekordlista\Kód: Karakterlánc”.
-41. A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>'.
-42. Kattintson a Kötés gombra.
-43. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Dimenzióbeállítások: Rekordlista”.
-44. A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Vízszintes”.
-45. Kattintson a Kötés gombra.
-46. A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Cell<CompanyName>”.
-47. A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Vállalat: Karakterlánc”.
-48. Kattintson a Kötés gombra.
-49. Kattintson a Mentés gombra.
-50. Zárja be a lapot.
+## <a name="map-format-elements-to-data-sources"></a><span data-ttu-id="c832f-168">Formátum-összetevők leképezése az adatforrásokhoz</span><span class="sxs-lookup"><span data-stu-id="c832f-168">Map format elements to data sources</span></span>
+1. <span data-ttu-id="c832f-169">Kattintson a Hozzárendelés fülre.</span><span class="sxs-lookup"><span data-stu-id="c832f-169">Click the Mapping tab.</span></span>
+2. <span data-ttu-id="c832f-170">A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell”.</span><span class="sxs-lookup"><span data-stu-id="c832f-170">In the tree, expand 'model: Data model Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="c832f-171">A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista”.</span><span class="sxs-lookup"><span data-stu-id="c832f-171">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+4. <span data-ttu-id="c832f-172">A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista”.</span><span class="sxs-lookup"><span data-stu-id="c832f-172">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+5. <span data-ttu-id="c832f-173">A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Dimenzióadatok: Rekordlista”.</span><span class="sxs-lookup"><span data-stu-id="c832f-173">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+6. <span data-ttu-id="c832f-174">A fastruktúrában válassza ki a következőt: Excel = SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>'.</span><span class="sxs-lookup"><span data-stu-id="c832f-174">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>'.</span></span>
+7. <span data-ttu-id="c832f-175">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Dimenzióadatok: Rekordlista\Kód: Karakterlánc”.</span><span class="sxs-lookup"><span data-stu-id="c832f-175">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String'.</span></span>
+8. <span data-ttu-id="c832f-176">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-176">Click Bind.</span></span>
+9. <span data-ttu-id="c832f-177">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Vízszintes'.</span><span class="sxs-lookup"><span data-stu-id="c832f-177">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
+10. <span data-ttu-id="c832f-178">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Dimenzióadatok: Rekordlista”.</span><span class="sxs-lookup"><span data-stu-id="c832f-178">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+11. <span data-ttu-id="c832f-179">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-179">Click Bind.</span></span>
+12. <span data-ttu-id="c832f-180">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<Credit>".</span><span class="sxs-lookup"><span data-stu-id="c832f-180">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Credit>'.</span></span>
+13. <span data-ttu-id="c832f-181">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Követel: Valós”.</span><span class="sxs-lookup"><span data-stu-id="c832f-181">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real'.</span></span>
+14. <span data-ttu-id="c832f-182">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-182">Click Bind.</span></span>
+15. <span data-ttu-id="c832f-183">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<Debit>".</span><span class="sxs-lookup"><span data-stu-id="c832f-183">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Debit>'.</span></span>
+16. <span data-ttu-id="c832f-184">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Tartozik: Valós”.</span><span class="sxs-lookup"><span data-stu-id="c832f-184">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real'.</span></span>
+17. <span data-ttu-id="c832f-185">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-185">Click Bind.</span></span>
+18. <span data-ttu-id="c832f-186">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<Currency>".</span><span class="sxs-lookup"><span data-stu-id="c832f-186">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Currency>'.</span></span>
+19. <span data-ttu-id="c832f-187">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Pénznem: Karakterlánc”.</span><span class="sxs-lookup"><span data-stu-id="c832f-187">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String'.</span></span>
+20. <span data-ttu-id="c832f-188">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-188">Click Bind.</span></span>
+21. <span data-ttu-id="c832f-189">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<TransDate>".</span><span class="sxs-lookup"><span data-stu-id="c832f-189">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransDate>'.</span></span>
+22. <span data-ttu-id="c832f-190">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Dátum: Dátum”.</span><span class="sxs-lookup"><span data-stu-id="c832f-190">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date'.</span></span>
+23. <span data-ttu-id="c832f-191">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-191">Click Bind.</span></span>
+24. <span data-ttu-id="c832f-192">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<TransVoucher>".</span><span class="sxs-lookup"><span data-stu-id="c832f-192">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransVoucher>'.</span></span>
+25. <span data-ttu-id="c832f-193">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista\Bizonylat: Karakterlánc”.</span><span class="sxs-lookup"><span data-stu-id="c832f-193">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String'.</span></span>
+26. <span data-ttu-id="c832f-194">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-194">Click Bind.</span></span>
+27. <span data-ttu-id="c832f-195">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges\Range<TransactionLine>: Vertical\Cell<TransBatch>".</span><span class="sxs-lookup"><span data-stu-id="c832f-195">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransBatch>'.</span></span>
+28. <span data-ttu-id="c832f-196">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Köteg: Karakterlánc”.</span><span class="sxs-lookup"><span data-stu-id="c832f-196">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+29. <span data-ttu-id="c832f-197">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-197">Click Bind.</span></span>
+30. <span data-ttu-id="c832f-198">A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Függőleges\Tartomány<JournalLine>JournalLine<TransactionLine>: Függőleges".</span><span class="sxs-lookup"><span data-stu-id="c832f-198">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+31. <span data-ttu-id="c832f-199">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Tranzakció: Rekordlista”.</span><span class="sxs-lookup"><span data-stu-id="c832f-199">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+32. <span data-ttu-id="c832f-200">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-200">Click Bind.</span></span>
+33. <span data-ttu-id="c832f-201">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>.</span><span class="sxs-lookup"><span data-stu-id="c832f-201">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>'.</span></span>
+34. <span data-ttu-id="c832f-202">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista\Köteg: Karakterlánc”.</span><span class="sxs-lookup"><span data-stu-id="c832f-202">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+35. <span data-ttu-id="c832f-203">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-203">Click Bind.</span></span>
+36. <span data-ttu-id="c832f-204">A fastruktúrában válassza ki a következőt: Excel = "SampleFinDimWsReport"\Range<JournalLine>: Függőleges.</span><span class="sxs-lookup"><span data-stu-id="c832f-204">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.</span></span>
+37. <span data-ttu-id="c832f-205">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Napló: Rekordlista”.</span><span class="sxs-lookup"><span data-stu-id="c832f-205">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+38. <span data-ttu-id="c832f-206">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-206">Click Bind.</span></span>
+39. <span data-ttu-id="c832f-207">A fastruktúrában bontsa ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Dimenzióbeállítások: Rekordlista”.</span><span class="sxs-lookup"><span data-stu-id="c832f-207">In the tree, expand 'model: Data model Financial dimensions sample model\Dimensions setting: Record list'.</span></span>
+40. <span data-ttu-id="c832f-208">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Dimenzióbeállítások: Rekordlista\Kód: Karakterlánc”.</span><span class="sxs-lookup"><span data-stu-id="c832f-208">In the tree, select 'model: Data model Financial dimensions sample model\Dimensions setting: Record list\Code: String'.</span></span>
+41. <span data-ttu-id="c832f-209">A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>'.</span><span class="sxs-lookup"><span data-stu-id="c832f-209">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>'.</span></span>
+42. <span data-ttu-id="c832f-210">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-210">Click Bind.</span></span>
+43. <span data-ttu-id="c832f-211">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Dimenzióbeállítások: Rekordlista”.</span><span class="sxs-lookup"><span data-stu-id="c832f-211">In the tree, select 'model: Data model Financial dimensions sample model\Dimensions setting: Record list'.</span></span>
+44. <span data-ttu-id="c832f-212">A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Range<DimNames>: Vízszintes”.</span><span class="sxs-lookup"><span data-stu-id="c832f-212">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+45. <span data-ttu-id="c832f-213">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-213">Click Bind.</span></span>
+46. <span data-ttu-id="c832f-214">A fastruktúrában válassza ki a következőt: „Excel = "SampleFinDimWsReport"\Cell<CompanyName>”.</span><span class="sxs-lookup"><span data-stu-id="c832f-214">In the tree, select 'Excel = "SampleFinDimWsReport"\Cell<CompanyName>'.</span></span>
+47. <span data-ttu-id="c832f-215">A fastruktúrában válassza ki a következőt: „modell: Adatmodell Pénzügyi dimenziók mintamodell\Vállalat: Karakterlánc”.</span><span class="sxs-lookup"><span data-stu-id="c832f-215">In the tree, select 'model: Data model Financial dimensions sample model\Company: String'.</span></span>
+48. <span data-ttu-id="c832f-216">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-216">Click Bind.</span></span>
+49. <span data-ttu-id="c832f-217">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="c832f-217">Click Save.</span></span>
+50. <span data-ttu-id="c832f-218">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="c832f-218">Close the page.</span></span>
 
 

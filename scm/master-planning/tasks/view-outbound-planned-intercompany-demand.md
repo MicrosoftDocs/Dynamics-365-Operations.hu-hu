@@ -16,30 +16,30 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: c34ddb48cb5acc4c9d7023f2eeefaac5790f9bcc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 183bbba80351c19d2218c577020b1e852ab45ac4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="view-outbound-planned-intercompany-demand"></a>Kimenő tervezett vállalatközi igény megtekintése
+# <a name="view-outbound-planned-intercompany-demand"></a><span data-ttu-id="d7ef5-103">Kimenő tervezett vállalatközi igény megtekintése</span><span class="sxs-lookup"><span data-stu-id="d7ef5-103">View outbound planned intercompany demand</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan tekinthetők meg a vállalatközi szállítók által teljesítendő rendelések. Ez az eljárás az DEMF bemutatócéget használja.
+<span data-ttu-id="d7ef5-104">Ez az eljárás bemutatja, hogyan tekinthetők meg a vállalatközi szállítók által teljesítendő rendelések.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="d7ef5-105">Ez az eljárás az DEMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-105">The demo data company used to create this procedure is DEMF.</span></span>
 
-1. Kattintson az Alaptervezés parancsra.
-2. A Terv mezőben adjon meg vagy válasszon ki egy értéket.
-    * A Terv mezőben válassza a 10-es tervet.  
-3. Kattintson a Futtatás elemre.
-4. Adjon meg egy számot a Szálak száma mezőben.
-    * Ez a fő tervezési célokra használandó párhuzamos szálak számát jelenti.  
-5. Kattintson az OK gombra.
-    * Ez eltarthat egy ideig.  
-6. Kattintson a Tervezett vállalatközi igény elemre.
-7. Kattintson a Kimenő tervezett vállalatközi igény megjelenítése elemre.
-    * Ez a lap a belső ellátási láncba tartozó szállítók által kielégítendő, tervezett kereslet áttekintését biztosítja.  
-8. Bontsa ki a Felfelé irányuló igény részletes adatai részt.
-    * Ebben a szakaszban a kereslet jövőbeli teljesítésének részleteit láthatja. Lehet, hogy meg kell várnia, amíg az alaptervezés a beszállítónál lefut, mielőtt további információkat láthatna itt.  
+1. <span data-ttu-id="d7ef5-106">Kattintson az Alaptervezés parancsra.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-106">Click Master planning.</span></span>
+2. <span data-ttu-id="d7ef5-107">A Terv mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-107">In the Plan field, enter or select a value.</span></span>
+    * <span data-ttu-id="d7ef5-108">A Terv mezőben válassza a 10-es tervet.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-108">In the Plan field, select plan 10.</span></span>  
+3. <span data-ttu-id="d7ef5-109">Kattintson a Futtatás elemre.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-109">Click Run.</span></span>
+4. <span data-ttu-id="d7ef5-110">Adjon meg egy számot a Szálak száma mezőben.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-110">In the Number of threads field, enter a number.</span></span>
+    * <span data-ttu-id="d7ef5-111">Ez a fő tervezési célokra használandó párhuzamos szálak számát jelenti.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-111">This represents the number of parallel threads to be used for master planning.</span></span>  
+5. <span data-ttu-id="d7ef5-112">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-112">Click OK.</span></span>
+    * <span data-ttu-id="d7ef5-113">Ez eltarthat egy ideig.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-113">This may take a while.</span></span>  
+6. <span data-ttu-id="d7ef5-114">Kattintson a Tervezett vállalatközi igény elemre.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-114">Click Planned intercompany demand.</span></span>
+7. <span data-ttu-id="d7ef5-115">Kattintson a Kimenő tervezett vállalatközi igény megjelenítése elemre.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-115">Click Outbound planned intercompany demand.</span></span>
+    * <span data-ttu-id="d7ef5-116">Ez a lap a belső ellátási láncba tartozó szállítók által kielégítendő, tervezett kereslet áttekintését biztosítja.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
+8. <span data-ttu-id="d7ef5-117">Bontsa ki a Felfelé irányuló igény részletes adatai részt.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-117">Expand the Upstream demand details section.</span></span>
+    * <span data-ttu-id="d7ef5-118">Ebben a szakaszban a kereslet jövőbeli teljesítésének részleteit láthatja.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="d7ef5-119">Lehet, hogy meg kell várnia, amíg az alaptervezés a beszállítónál lefut, mielőtt további információkat láthatna itt.</span><span class="sxs-lookup"><span data-stu-id="d7ef5-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
 
 

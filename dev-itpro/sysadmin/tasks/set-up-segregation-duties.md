@@ -16,36 +16,36 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 2ab30f4326b627406f9a39d6c3203b181b67d68f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 754f28cd2831d8a9a57c408518d240de460b732b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-segregation-of-duties"></a>Feladatkörök szétválasztásának beállítása
+# <a name="set-up-segregation-of-duties"></a><span data-ttu-id="4945a-103">Feladatkörök szétválasztásának beállítása</span><span class="sxs-lookup"><span data-stu-id="4945a-103">Set up segregation of duties</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Beállíthat szabályokat a más felhasználók által elvégzendő feladatok elválasztásához. Ezt a fogalmat a feladatkörök szétválasztásának nevezzük. Például nem biztos, hogy ugyanannak a személynek kell az árut átvennie és a szállítói kifizetést feldolgoznia. A feladatkörök szétválasztása segít a csalás kockázatának csökkentésében, illetve a hibák és a szabálytalanságok észlelésében. Használhatja a feladatkörök szétválasztását a belső ellenőrzési irányelvek végrehajtásához is. A szabály létrehozásához hajtsa végre a következő lépéseket. Csak egy rendszergazda hajthatja végre ezt a műveletet. Ez az eljárás a DAT bemutatócéggel jött létre. 
+<span data-ttu-id="4945a-104">Beállíthat szabályokat a más felhasználók által elvégzendő feladatok elválasztásához.</span><span class="sxs-lookup"><span data-stu-id="4945a-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="4945a-105">Ezt a fogalmat a feladatkörök szétválasztásának nevezzük.</span><span class="sxs-lookup"><span data-stu-id="4945a-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="4945a-106">Például nem biztos, hogy ugyanannak a személynek kell az árut átvennie és a szállítói kifizetést feldolgoznia.</span><span class="sxs-lookup"><span data-stu-id="4945a-106">For example, you might not want the same person both to acknowledge the receipt of goods and to process payment to the vendor.</span></span> <span data-ttu-id="4945a-107">A feladatkörök szétválasztása segít a csalás kockázatának csökkentésében, illetve a hibák és a szabálytalanságok észlelésében.</span><span class="sxs-lookup"><span data-stu-id="4945a-107">Segregation of duties helps you reduce the risk of fraud, and it also helps you detect errors or irregularities.</span></span> <span data-ttu-id="4945a-108">Használhatja a feladatkörök szétválasztását a belső ellenőrzési irányelvek végrehajtásához is.</span><span class="sxs-lookup"><span data-stu-id="4945a-108">You can also use segregation of duties to enforce internal control policies.</span></span> <span data-ttu-id="4945a-109">A szabály létrehozásához hajtsa végre a következő lépéseket.</span><span class="sxs-lookup"><span data-stu-id="4945a-109">Complete the following procedure to create a rule.</span></span> <span data-ttu-id="4945a-110">Csak egy rendszergazda hajthatja végre ezt a műveletet.</span><span class="sxs-lookup"><span data-stu-id="4945a-110">You must be a system administrator to complete the procedure.</span></span> <span data-ttu-id="4945a-111">Ez az eljárás a DAT bemutatócéggel jött létre.</span><span class="sxs-lookup"><span data-stu-id="4945a-111">The demo data company used to create this procedure is DAT.</span></span> 
 
-1. Ugrás a Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Feladatkör-szétválasztási szabályok elemre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Név mezőbe.
-    * Adja meg a szabály nevét.  
-4. Az első feladat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-5. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Válassza ki azt az első feladatot, amelyet a szabály határoz meg.  
-6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-7. A második feladat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-8. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Válassza ki azt a második feladatot, amelyet a szabály határoz meg.  
-9. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-10. Válasszon egy lehetőséget a Súlyosság mezőben.
-    * Válassza ki azt a kockázatot, amely akkor lép fel, amikor ugyanaz a felhasználó vagy szerepkör hajtja végre mindkét feladatot.  
-11. Írjon be egy értéket a Biztonsági kockázat mezőbe.
-    * Írja be a biztonsági kockázat leírását.  
-12. Írjon be egy értéket a Biztonsági kockázatcsökkentés mezőbe.
-    * Írja le a műveleteket, amelyeket a biztonsági kockázat enyhítése érdekében vezet be. A kockázatot enyhítheti például úgy, hogy részletesebb áttekintés ad a folyamatnak, havi vezetői ellenőrzést vezet be, vagy más részlegekkel is megoszt erőforrásokat.  
-13. Kattintson a Mentés gombra.
+1. <span data-ttu-id="4945a-112">Ugrás a Rendszerfelügyelet > Biztonság > Feladatkörök szétválasztása > Feladatkör-szétválasztási szabályok elemre.</span><span class="sxs-lookup"><span data-stu-id="4945a-112">Go to System administration > Security > Segregation of duties > Segregation of duties rules.</span></span>
+2. <span data-ttu-id="4945a-113">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4945a-113">Click New.</span></span>
+3. <span data-ttu-id="4945a-114">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4945a-114">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="4945a-115">Adja meg a szabály nevét.</span><span class="sxs-lookup"><span data-stu-id="4945a-115">Enter a name for the rule.</span></span>  
+4. <span data-ttu-id="4945a-116">Az első feladat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="4945a-116">In the First duty field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="4945a-117">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="4945a-117">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="4945a-118">Válassza ki azt az első feladatot, amelyet a szabály határoz meg.</span><span class="sxs-lookup"><span data-stu-id="4945a-118">Select the first duty that is controlled by the rule.</span></span>  
+6. <span data-ttu-id="4945a-119">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4945a-119">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="4945a-120">A második feladat mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="4945a-120">In the Second duty field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="4945a-121">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="4945a-121">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="4945a-122">Válassza ki azt a második feladatot, amelyet a szabály határoz meg.</span><span class="sxs-lookup"><span data-stu-id="4945a-122">Select the second duty that is controlled by the rule.</span></span>  
+9. <span data-ttu-id="4945a-123">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4945a-123">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="4945a-124">Válasszon egy lehetőséget a Súlyosság mezőben.</span><span class="sxs-lookup"><span data-stu-id="4945a-124">In the Severity field, select an option.</span></span>
+    * <span data-ttu-id="4945a-125">Válassza ki azt a kockázatot, amely akkor lép fel, amikor ugyanaz a felhasználó vagy szerepkör hajtja végre mindkét feladatot.</span><span class="sxs-lookup"><span data-stu-id="4945a-125">Select the severity of the risk that occurs when the same user or role performs both duties.</span></span>  
+11. <span data-ttu-id="4945a-126">Írjon be egy értéket a Biztonsági kockázat mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4945a-126">In the Security risk field, type a value.</span></span>
+    * <span data-ttu-id="4945a-127">Írja be a biztonsági kockázat leírását.</span><span class="sxs-lookup"><span data-stu-id="4945a-127">Enter a description of the security risk.</span></span>  
+12. <span data-ttu-id="4945a-128">Írjon be egy értéket a Biztonsági kockázatcsökkentés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4945a-128">In the Security mitigation field, type a value.</span></span>
+    * <span data-ttu-id="4945a-129">Írja le a műveleteket, amelyeket a biztonsági kockázat enyhítése érdekében vezet be.</span><span class="sxs-lookup"><span data-stu-id="4945a-129">Enter a description of the actions that you take to mitigate the security risk.</span></span> <span data-ttu-id="4945a-130">A kockázatot enyhítheti például úgy, hogy részletesebb áttekintés ad a folyamatnak, havi vezetői ellenőrzést vezet be, vagy más részlegekkel is megoszt erőforrásokat.</span><span class="sxs-lookup"><span data-stu-id="4945a-130">For example, you can mitigate the risk by conducting more detailed reviews of the process, by conducting a monthly managerial review, or by sharing resources with other departments.</span></span>  
+13. <span data-ttu-id="4945a-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4945a-131">Click Save.</span></span>
 
 

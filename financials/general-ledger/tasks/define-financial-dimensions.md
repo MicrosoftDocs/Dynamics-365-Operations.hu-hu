@@ -16,48 +16,48 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7cc83b24503fa383d0e2d2acd70173edcb2dcb03
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0b72acf763f0f6dbc64c3e00986bc9eb0e366bb5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-financial-dimensions"></a>Pénzügyi dimenziók meghatározása
+# <a name="define-financial-dimensions"></a><span data-ttu-id="c796a-103">Pénzügyi dimenziók meghatározása</span><span class="sxs-lookup"><span data-stu-id="c796a-103">Define financial dimensions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez a feladat-útmutató bemutatja az entitás által támogatott pénzügyi dimenzió és egyéni pénzügyi dimenzió hozzáadását.  Az útmutató az USMF bemutatócéget használja.
+<span data-ttu-id="c796a-104">Ez a feladat-útmutató bemutatja az entitás által támogatott pénzügyi dimenzió és egyéni pénzügyi dimenzió hozzáadását.</span><span class="sxs-lookup"><span data-stu-id="c796a-104">This task guide demonstrates adding an entity backed financial dimension and a custom financial dimension.</span></span>  <span data-ttu-id="c796a-105">Az útmutató az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="c796a-105">The guide uses the USMF demo company.</span></span>
 
 
-## <a name="create-an-entity-backed-financial-dimension"></a>Entitás által biztosított pénzügyi dimenzió létrehozása
-1. Ugrás a következő útvonalra: Főkönyv > Számlatükör > Dimenziók > Pénzügyi dimenziók.
-2. Kattintson az Új lehetőségre.
-3. A pénzügyi dimenzió alapjául a Felhasználói értékek forrása mezőben jelöljön ki egy rendszer által definiált entitást. 
-4. A Dimenzió neve mezőbe írjon be egy értéket a pénzügyi dimenzió leírásához.
-    * A név eltérhet a rendszer által meghatározott entitástól, de nem tartalmazhat szóközt vagy különleges karaktert.  
-5. Kattintson az Aktiválás gombra.
-    * A pénzügyi dimenzió aktiválásával frissítheti a pénzügyi dimenzió nevét tartalmazó táblázatot, és eltávolíthatja a törölt dimenziókat. A pénzügyi dimenziók aktiválása előtt megadhat dimenzióértékeket, de a pénzügyi dimenzió nem használható, amíg nincs aktiválva.  
-6. Kattintson a Bezárás gombra az aktiváló üzeneten.
-7. Kattintson az Aktiválás gombra.
-    * Megadhatja, hogy a dimenzió aktiválását egy adott napon és időpontban szeretné futtatni, kötegelt módon.  
-8. Kattintson a Dimenzióértékek elemre.
-    * Néhány dimenzióérték vállalatspecifikus érték. Ellenőrizheti, hogy vállalatspecifikusak-e, ha a vállalat neve megjelenik a dimenzióértékek listájában.  
+## <a name="create-an-entity-backed-financial-dimension"></a><span data-ttu-id="c796a-106">Entitás által biztosított pénzügyi dimenzió létrehozása</span><span class="sxs-lookup"><span data-stu-id="c796a-106">Create an entity backed financial dimension</span></span>
+1. <span data-ttu-id="c796a-107">Ugrás a következő útvonalra: Főkönyv > Számlatükör > Dimenziók > Pénzügyi dimenziók.</span><span class="sxs-lookup"><span data-stu-id="c796a-107">Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.</span></span>
+2. <span data-ttu-id="c796a-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c796a-108">Click New.</span></span>
+3. <span data-ttu-id="c796a-109">A pénzügyi dimenzió alapjául a Felhasználói értékek forrása mezőben jelöljön ki egy rendszer által definiált entitást.</span><span class="sxs-lookup"><span data-stu-id="c796a-109">In the User values from field, select a system-defined entity to base the financial dimension on.</span></span> 
+4. <span data-ttu-id="c796a-110">A Dimenzió neve mezőbe írjon be egy értéket a pénzügyi dimenzió leírásához.</span><span class="sxs-lookup"><span data-stu-id="c796a-110">In the Dimension name field, type a value to describe the financial dimension.</span></span>
+    * <span data-ttu-id="c796a-111">A név eltérhet a rendszer által meghatározott entitástól, de nem tartalmazhat szóközt vagy különleges karaktert.</span><span class="sxs-lookup"><span data-stu-id="c796a-111">The name can be different than the system-defined entity but cannot contain spaces or special characters.</span></span>  
+5. <span data-ttu-id="c796a-112">Kattintson az Aktiválás gombra.</span><span class="sxs-lookup"><span data-stu-id="c796a-112">Click Activate.</span></span>
+    * <span data-ttu-id="c796a-113">A pénzügyi dimenzió aktiválásával frissítheti a pénzügyi dimenzió nevét tartalmazó táblázatot, és eltávolíthatja a törölt dimenziókat.</span><span class="sxs-lookup"><span data-stu-id="c796a-113">Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions.</span></span> <span data-ttu-id="c796a-114">A pénzügyi dimenziók aktiválása előtt megadhat dimenzióértékeket, de a pénzügyi dimenzió nem használható, amíg nincs aktiválva.</span><span class="sxs-lookup"><span data-stu-id="c796a-114">You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.</span></span>  
+6. <span data-ttu-id="c796a-115">Kattintson a Bezárás gombra az aktiváló üzeneten.</span><span class="sxs-lookup"><span data-stu-id="c796a-115">Click Close on the activation message.</span></span>
+7. <span data-ttu-id="c796a-116">Kattintson az Aktiválás gombra.</span><span class="sxs-lookup"><span data-stu-id="c796a-116">Click Activate.</span></span>
+    * <span data-ttu-id="c796a-117">Megadhatja, hogy a dimenzió aktiválását egy adott napon és időpontban szeretné futtatni, kötegelt módon.</span><span class="sxs-lookup"><span data-stu-id="c796a-117">Dimension activation can be scheduled to run by batch at a specific date and time.</span></span>  
+8. <span data-ttu-id="c796a-118">Kattintson a Dimenzióértékek elemre.</span><span class="sxs-lookup"><span data-stu-id="c796a-118">Click Dimension values.</span></span>
+    * <span data-ttu-id="c796a-119">Néhány dimenzióérték vállalatspecifikus érték.</span><span class="sxs-lookup"><span data-stu-id="c796a-119">Some dimension values are company specific.</span></span> <span data-ttu-id="c796a-120">Ellenőrizheti, hogy vállalatspecifikusak-e, ha a vállalat neve megjelenik a dimenzióértékek listájában.</span><span class="sxs-lookup"><span data-stu-id="c796a-120">You can verify if they are company specific by if the company name is showing in the dimension values list.</span></span>  
 
-## <a name="create-a-custom-financial-dimension"></a>Egyéni pénzügyi dimenzió létrehozása
-1. Zárja be a lapot.
-2. Kattintson az Új lehetőségre.
-3. Az Értékek forrása mezőben válassza a(z) <Custom dimension> lehetőséget.
-4. A Dimenzió neve mezőbe írjon be egy értéket a pénzügyi dimenzió leírásához.
-    * A név nem tartalmazhat szóközt vagy különleges karaktert.  
-    * A formátummaszk megadásával továbbá korlátozhatja a dimenzióértékekhez megadható adatok mennyiségét és típusát.   
-    * Megadhat olyan karaktereket, például betűket vagy kötőjelet, amelyek minden egyes dimenzióértéknél változatlanok maradnak. Emellett megadhat kettős kereszt (#) vagy és-jel (&) karaktereket számok és betűk helyőrzőjeként, amelyek változni fognak a dimenzióértékek minden létrehozásakor. A kettős kereszt (#) a számok, míg az és-jel (&) a betűk helyőrzője.  Példa: Ha például a dimenzióértéket két C betűre és három számra szeretné korlátozni, formátummaszkként a CC-### értéket adja meg.  
-5. Kattintson az Aktiválás gombra.
-    * A pénzügyi dimenzió aktiválásával frissítheti a pénzügyi dimenzió nevét tartalmazó táblázatot, és eltávolíthatja a törölt dimenziókat. A pénzügyi dimenziók aktiválása előtt megadhat dimenzióértékeket, de a pénzügyi dimenzió nem használható, amíg nincs aktiválva.  
-6. Kattintson az Aktiválás gombra.
-    * Megadhatja, hogy a dimenzió aktiválását egy adott napon és időpontban szeretné futtatni, kötegelt módon.  
-7. Kattintson a Dimenzióértékek elemre.
-8. Kattintson az Új lehetőségre.
-9. A Dimenzió értéke mezőbe írjon be egy nevet a pénzügyi dimenzióérték leírásához.
-10. A Leírás mezőben írja be egy leírást, amely leírja a pénzügyi dimenzió értékét.
+## <a name="create-a-custom-financial-dimension"></a><span data-ttu-id="c796a-121">Egyéni pénzügyi dimenzió létrehozása</span><span class="sxs-lookup"><span data-stu-id="c796a-121">Create a custom financial dimension</span></span>
+1. <span data-ttu-id="c796a-122">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="c796a-122">Close the page.</span></span>
+2. <span data-ttu-id="c796a-123">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c796a-123">Click New.</span></span>
+3. <span data-ttu-id="c796a-124">Az Értékek forrása mezőben válassza a(z) <Custom dimension> lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="c796a-124">In the Use values from field, select <Custom dimension>.</span></span>
+4. <span data-ttu-id="c796a-125">A Dimenzió neve mezőbe írjon be egy értéket a pénzügyi dimenzió leírásához.</span><span class="sxs-lookup"><span data-stu-id="c796a-125">In the Dimension name field, type a value to describe the financial dimension.</span></span>
+    * <span data-ttu-id="c796a-126">A név nem tartalmazhat szóközt vagy különleges karaktert.</span><span class="sxs-lookup"><span data-stu-id="c796a-126">The name cannot contain spaces or special characters.</span></span>  
+    * <span data-ttu-id="c796a-127">A formátummaszk megadásával továbbá korlátozhatja a dimenzióértékekhez megadható adatok mennyiségét és típusát.</span><span class="sxs-lookup"><span data-stu-id="c796a-127">You can also specify an account mask to limit the amount and type of information that you can enter for dimension values.</span></span>   
+    * <span data-ttu-id="c796a-128">Megadhat olyan karaktereket, például betűket vagy kötőjelet, amelyek minden egyes dimenzióértéknél változatlanok maradnak.</span><span class="sxs-lookup"><span data-stu-id="c796a-128">You can enter characters that remain the same for each dimension value, such as letters or a hyphen.</span></span> <span data-ttu-id="c796a-129">Emellett megadhat kettős kereszt (#) vagy és-jel (&) karaktereket számok és betűk helyőrzőjeként, amelyek változni fognak a dimenzióértékek minden létrehozásakor.</span><span class="sxs-lookup"><span data-stu-id="c796a-129">You can also enter number signs (#) and ampersands (&) as placeholders for letters and numbers that will change every time that a dimension value is created.</span></span> <span data-ttu-id="c796a-130">A kettős kereszt (#) a számok, míg az és-jel (&) a betűk helyőrzője.</span><span class="sxs-lookup"><span data-stu-id="c796a-130">Use a number sign (#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter.</span></span>  <span data-ttu-id="c796a-131">Példa: Ha például a dimenzióértéket két C betűre és három számra szeretné korlátozni, formátummaszkként a CC-### értéket adja meg.</span><span class="sxs-lookup"><span data-stu-id="c796a-131">Example: To limit the dimension value to the letters CC and three numbers, you enter CC-### as the format mask.</span></span>  
+5. <span data-ttu-id="c796a-132">Kattintson az Aktiválás gombra.</span><span class="sxs-lookup"><span data-stu-id="c796a-132">Click Activate.</span></span>
+    * <span data-ttu-id="c796a-133">A pénzügyi dimenzió aktiválásával frissítheti a pénzügyi dimenzió nevét tartalmazó táblázatot, és eltávolíthatja a törölt dimenziókat.</span><span class="sxs-lookup"><span data-stu-id="c796a-133">Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions.</span></span> <span data-ttu-id="c796a-134">A pénzügyi dimenziók aktiválása előtt megadhat dimenzióértékeket, de a pénzügyi dimenzió nem használható, amíg nincs aktiválva.</span><span class="sxs-lookup"><span data-stu-id="c796a-134">You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.</span></span>  
+6. <span data-ttu-id="c796a-135">Kattintson az Aktiválás gombra.</span><span class="sxs-lookup"><span data-stu-id="c796a-135">Click Activate.</span></span>
+    * <span data-ttu-id="c796a-136">Megadhatja, hogy a dimenzió aktiválását egy adott napon és időpontban szeretné futtatni, kötegelt módon.</span><span class="sxs-lookup"><span data-stu-id="c796a-136">Dimension activation can be scheduled to run by batch at a specific date and time.</span></span>  
+7. <span data-ttu-id="c796a-137">Kattintson a Dimenzióértékek elemre.</span><span class="sxs-lookup"><span data-stu-id="c796a-137">Click Dimension values.</span></span>
+8. <span data-ttu-id="c796a-138">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c796a-138">Click New.</span></span>
+9. <span data-ttu-id="c796a-139">A Dimenzió értéke mezőbe írjon be egy nevet a pénzügyi dimenzióérték leírásához.</span><span class="sxs-lookup"><span data-stu-id="c796a-139">In the Dimension value field, type a name to describe your financial dimension value.</span></span>
+10. <span data-ttu-id="c796a-140">A Leírás mezőben írja be egy leírást, amely leírja a pénzügyi dimenzió értékét.</span><span class="sxs-lookup"><span data-stu-id="c796a-140">In the Description field, type a description that describes your financial dimension value.</span></span>
 
 

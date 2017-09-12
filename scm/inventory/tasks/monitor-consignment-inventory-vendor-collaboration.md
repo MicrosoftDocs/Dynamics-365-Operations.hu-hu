@@ -1,4 +1,4 @@
---- 
+---
 title: "Bizományosi készlet figyelése szállítói együttműködéssel"
 description: "Ez az eljárás bemutatja, hogyan használható a szállítói együttműködés információk megtekintésére az olyan termékek készletszintjével kapcsolatban, amelyeket bizományba helyeztek a vevőnél."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,29 +17,28 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: ad4868991226aef21a0410860e3f98d11901ffbb
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 567be29bd9989b3471b22d5a970ed0e51e4549ec
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a>Bizományosi készlet figyelése szállítói együttműködéssel
+# <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="0e344-103">Bizományosi készlet figyelése szállítói együttműködéssel</span><span class="sxs-lookup"><span data-stu-id="0e344-103">Monitor consignment inventory using vendor collaboration</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan használható a szállítói együttműködés információk megtekintésére az olyan termékek készletszintjével kapcsolatban, amelyeket bizományba helyeztek a vevőnél. A készlet fogyasztása is megfigyelhető, amikor a vevő átveszi a készlet tulajdonjogát. Az USMF bemutatócég adataiban használhatja ezt az eljárást. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+<span data-ttu-id="0e344-104">Ez az eljárás bemutatja, hogyan használható a szállítói együttműködés információk megtekintésére az olyan termékek készletszintjével kapcsolatban, amelyeket bizományba helyeztek a vevőnél.</span><span class="sxs-lookup"><span data-stu-id="0e344-104">This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer.</span></span> <span data-ttu-id="0e344-105">A készlet fogyasztása is megfigyelhető, amikor a vevő átveszi a készlet tulajdonjogát.</span><span class="sxs-lookup"><span data-stu-id="0e344-105">You can also monitor the consumption of the stock when the customer takes ownership of the inventory.</span></span> <span data-ttu-id="0e344-106">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="0e344-106">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="0e344-107">Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.</span><span class="sxs-lookup"><span data-stu-id="0e344-107">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
 
-## <a name="view-consumed-inventory"></a>Felhasznált készlet megjelenítése
-1. Ugrás a Szállítói együttműködés > Bizományosi készlet > Bizományosi készletből kapott termékek elemre.
-    * A lista azokat a termékbevételezési sorokat tartalmazza, amelyek akkor jöttek létre, amikor a bizományosi készlet tulajdonjoga átszállt a szállítóról a vevőre. Előfordulhat, hogy jobbra kell görgetnie a mennyiségek és az egyéb információk megtekintéséhez. A listában található információ számlák létrehozására használható a vevő számára. Az adatok a Microsoft Excel programba is exportálhatók.   
-2. Kattintson a Beszerzési rendelés megtekintése elemre.
-3. Bontsa ki a Soradatok szakaszt.
-    * A sor Bizományosként van megjelölve, és a fejléc szakasz azt mutatja, hogy a beszerzési rendelés állapota Beérkezett.  
-4. Zárja be a lapot.
+## <a name="view-consumed-inventory"></a><span data-ttu-id="0e344-108">Felhasznált készlet megjelenítése</span><span class="sxs-lookup"><span data-stu-id="0e344-108">View consumed inventory</span></span>
+1. <span data-ttu-id="0e344-109">Ugrás a Szállítói együttműködés > Bizományosi készlet > Bizományosi készletből kapott termékek elemre.</span><span class="sxs-lookup"><span data-stu-id="0e344-109">Go to Vendor collaboration > Consignment inventory > Products received from consignment inventory.</span></span>
+    * <span data-ttu-id="0e344-110">A lista azokat a termékbevételezési sorokat tartalmazza, amelyek akkor jöttek létre, amikor a bizományosi készlet tulajdonjoga átszállt a szállítóról a vevőre.</span><span class="sxs-lookup"><span data-stu-id="0e344-110">The list shows the product receipt lines that were generated when ownership of the consignment inventory was changed from the vendor to the customer.</span></span> <span data-ttu-id="0e344-111">Előfordulhat, hogy jobbra kell görgetnie a mennyiségek és az egyéb információk megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="0e344-111">You might have to scroll to the right to see quantities and other information.</span></span> <span data-ttu-id="0e344-112">A listában található információ számlák létrehozására használható a vevő számára.</span><span class="sxs-lookup"><span data-stu-id="0e344-112">You can use the information in this list to generate invoices for your customer.</span></span> <span data-ttu-id="0e344-113">Az adatok a Microsoft Excel programba is exportálhatók.</span><span class="sxs-lookup"><span data-stu-id="0e344-113">You can also export the data to Microsoft Excel.</span></span>   
+2. <span data-ttu-id="0e344-114">Kattintson a Beszerzési rendelés megtekintése elemre.</span><span class="sxs-lookup"><span data-stu-id="0e344-114">Click View purchase order.</span></span>
+3. <span data-ttu-id="0e344-115">Bontsa ki a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="0e344-115">Expand the Line details section.</span></span>
+    * <span data-ttu-id="0e344-116">A sor Bizományosként van megjelölve, és a fejléc szakasz azt mutatja, hogy a beszerzési rendelés állapota Beérkezett.</span><span class="sxs-lookup"><span data-stu-id="0e344-116">The line is marked as Consignment, and the header section shows that the purchase order has a status of Received.</span></span>  
+4. <span data-ttu-id="0e344-117">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0e344-117">Close the page.</span></span>
 
-## <a name="view-on-hand-inventory"></a>Megtekinti az aktuális készletet
-1. Ugrás a Szállítói együttműködés > Bizományosi készlet > Aktuális bizományosi készlet elemre.
-    * Az aktuális készlet lap a vevő raktárában levő, az ön tulajdonában álló készletet mutatja. További dimenziók, például a hely és a raktár, a Dimenziók megjelenítése fülre kattintva jeleníthetők meg.   
-
+## <a name="view-on-hand-inventory"></a><span data-ttu-id="0e344-118">Megtekinti az aktuális készletet</span><span class="sxs-lookup"><span data-stu-id="0e344-118">View on-hand inventory</span></span>
+1. <span data-ttu-id="0e344-119">Ugrás a Szállítói együttműködés > Bizományosi készlet > Aktuális bizományosi készlet elemre.</span><span class="sxs-lookup"><span data-stu-id="0e344-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
+    * <span data-ttu-id="0e344-120">Az aktuális készlet lap a vevő raktárában levő, az ön tulajdonában álló készletet mutatja.</span><span class="sxs-lookup"><span data-stu-id="0e344-120">The On-hand consignment inventory page shows the stock that you own at the customer’s warehouse.</span></span> <span data-ttu-id="0e344-121">További dimenziók, például a hely és a raktár, a Dimenziók megjelenítése fülre kattintva jeleníthetők meg.</span><span class="sxs-lookup"><span data-stu-id="0e344-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
 

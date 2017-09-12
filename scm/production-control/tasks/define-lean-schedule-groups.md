@@ -17,42 +17,42 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 75d8b6614fd3b36d87bcb95b0b753b611a101f62
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a5bc20c0a9e2396365caebeb3751d2090e4575a4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-lean-schedule-groups"></a>Lean ütemezési csoportok meghatározása
+# <a name="define-lean-schedule-groups"></a><span data-ttu-id="df695-103">Lean ütemezési csoportok meghatározása</span><span class="sxs-lookup"><span data-stu-id="df695-103">Define lean schedule groups</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A lean ütemezési csoportok definiálásával csoportosíthatók és különböztethetők meg a termékek a kanbanütemezésben. A csoportosítás vállalatonként általános társításként hozható létre vagy munkacella-specifikusként. Mindegyik csoport rendelkezik egy színkóddal, amely a vizuális jelöléshez kell a kanbanütemezési listaoldalon. Ez az eljárás az USMF bemutatócéget használja.
+<span data-ttu-id="df695-104">A lean ütemezési csoportok definiálásával csoportosíthatók és különböztethetők meg a termékek a kanbanütemezésben.</span><span class="sxs-lookup"><span data-stu-id="df695-104">Lean schedule groups are defined to group and distinguish products in kanban scheduling.</span></span> <span data-ttu-id="df695-105">A csoportosítás vállalatonként általános társításként hozható létre vagy munkacella-specifikusként.</span><span class="sxs-lookup"><span data-stu-id="df695-105">The grouping can be done as generic association per company or specific to a work cell.</span></span> <span data-ttu-id="df695-106">Mindegyik csoport rendelkezik egy színkóddal, amely a vizuális jelöléshez kell a kanbanütemezési listaoldalon.</span><span class="sxs-lookup"><span data-stu-id="df695-106">Each group has a color code assigned for visual indication in the kanban scheduling listpage.</span></span> <span data-ttu-id="df695-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="df695-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="define-lean-scheduling-group"></a>Lean ütemezési csoport meghatározása
-1. Ugorjon a Termékinformációk kezelése > Lean manufacturing > Lean ütemezéscsoportok lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket az Ütemezés mezőbe.
-    * Egy ütemezéscsoportot meg lehet határozni globális csoportként vagy úgy, hogy egy konkrét munkacellára vonatkozzon. Ebben az egyszerű példában egy globális csoportot definiálunk, és a munkacella üres marad. Ezen csoport beállításai vonatkoznak minden munkacellára, amelyek nem rendelkeznek külön ütemezésicsoportokkal.  
-4. Válasszon egy színt a színválasztékból.
-    * A színek jelölik a feladatokat a kanbanütemezés listaoldalán vagy a kanban-folyamattáblán.  
-5. A listában jelölje meg a kiválasztott sort.
-6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+## <a name="define-lean-scheduling-group"></a><span data-ttu-id="df695-108">Lean ütemezési csoport meghatározása</span><span class="sxs-lookup"><span data-stu-id="df695-108">Define lean scheduling group</span></span>
+1. <span data-ttu-id="df695-109">Ugorjon a Termékinformációk kezelése > Lean manufacturing > Lean ütemezéscsoportok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="df695-109">Go to Product information management > Lean manufacturing > Lean schedule groups.</span></span>
+2. <span data-ttu-id="df695-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="df695-110">Click New.</span></span>
+3. <span data-ttu-id="df695-111">Írjon be egy értéket az Ütemezés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="df695-111">In the Schedule group field, type a value.</span></span>
+    * <span data-ttu-id="df695-112">Egy ütemezéscsoportot meg lehet határozni globális csoportként vagy úgy, hogy egy konkrét munkacellára vonatkozzon.</span><span class="sxs-lookup"><span data-stu-id="df695-112">A schedule group can be defined as global group or specific to a work cell.</span></span> <span data-ttu-id="df695-113">Ebben az egyszerű példában egy globális csoportot definiálunk, és a munkacella üres marad.</span><span class="sxs-lookup"><span data-stu-id="df695-113">In this simple example, we define a global group, and the work cell is kept empty.</span></span> <span data-ttu-id="df695-114">Ezen csoport beállításai vonatkoznak minden munkacellára, amelyek nem rendelkeznek külön ütemezésicsoportokkal.</span><span class="sxs-lookup"><span data-stu-id="df695-114">The settings of this group apply to all work cells that do not have specific schedule groups.</span></span>  
+4. <span data-ttu-id="df695-115">Válasszon egy színt a színválasztékból.</span><span class="sxs-lookup"><span data-stu-id="df695-115">Select a color from the color selection.</span></span>
+    * <span data-ttu-id="df695-116">A színek jelölik a feladatokat a kanbanütemezés listaoldalán vagy a kanban-folyamattáblán.</span><span class="sxs-lookup"><span data-stu-id="df695-116">The colors are used to highlight the jobs on the kanban schedule list page or the kanban process board.</span></span>  
+5. <span data-ttu-id="df695-117">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="df695-117">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="df695-118">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="df695-118">In the list, click the link in the selected row.</span></span>
 
-## <a name="associate-product"></a>Termékek társítása
-1. Egy konkrét termék társítása
-    * Két módon lehet lean ütemezési csoportokhoz társítani termékeket; vagy konkrét termékként (cikk-kapcsolat típusa = Cikk) vagy egy cikkfelosztási kulcs részeként (cikk-kapcsolat típusa = csoport).    
-2. A Cikk-kapcsolat típusa mezőben válassza ki a „Cikk” lehetőséget.
-3. A cikkmezőbe írjon egy értéket.
-4. Adjon meg egy számot a Teljesítmény aránya mezőben.
-    * Az alapértelmezett teljesítményarány 1, amely azt jelenti, hogy a kapcsolódó termékek pontosan a termelési folyamatok folyamattevékenységeiben megadott kapacitást használják fel. A > 1 teljesítményarány egy magasabb erőforrás-felhasználást határoz meg, a < 1 teljesítményarány egy alacsonyabb erőforrás-felhasználást határoz meg. Az arány a költségszámításhoz és a kanbanfeladat felhasználásának kiszámítására használatos.  
+## <a name="associate-product"></a><span data-ttu-id="df695-119">Termékek társítása</span><span class="sxs-lookup"><span data-stu-id="df695-119">Associate product</span></span>
+1. <span data-ttu-id="df695-120">Egy konkrét termék társítása</span><span class="sxs-lookup"><span data-stu-id="df695-120">Associate a specific product</span></span>
+    * <span data-ttu-id="df695-121">Két módon lehet lean ütemezési csoportokhoz társítani termékeket; vagy konkrét termékként (cikk-kapcsolat típusa = Cikk) vagy egy cikkfelosztási kulcs részeként (cikk-kapcsolat típusa = csoport).</span><span class="sxs-lookup"><span data-stu-id="df695-121">There are two ways to associate products to lean schedule groups, either as a specific product (Item relation type = Item) or as part of an item allocation key (item relation type = group).</span></span>    
+2. <span data-ttu-id="df695-122">A Cikk-kapcsolat típusa mezőben válassza ki a „Cikk” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df695-122">In the Item relation type field, select Item</span></span>
+3. <span data-ttu-id="df695-123">A cikkmezőbe írjon egy értéket.</span><span class="sxs-lookup"><span data-stu-id="df695-123">In the Item number field, type a value.</span></span>
+4. <span data-ttu-id="df695-124">Adjon meg egy számot a Teljesítmény aránya mezőben.</span><span class="sxs-lookup"><span data-stu-id="df695-124">In the Throughput ratio field, enter a number.</span></span>
+    * <span data-ttu-id="df695-125">Az alapértelmezett teljesítményarány 1, amely azt jelenti, hogy a kapcsolódó termékek pontosan a termelési folyamatok folyamattevékenységeiben megadott kapacitást használják fel.</span><span class="sxs-lookup"><span data-stu-id="df695-125">The default Throughput ratio is 1, which means that the related products consume exactly the capacity specified in the process activites of the production flows.</span></span> <span data-ttu-id="df695-126">A > 1 teljesítményarány egy magasabb erőforrás-felhasználást határoz meg, a < 1 teljesítményarány egy alacsonyabb erőforrás-felhasználást határoz meg.</span><span class="sxs-lookup"><span data-stu-id="df695-126">Throughput ratio > 1 defines a higher resource consumption, Throughput ratio < 1 defines a lower resource consumption.</span></span> <span data-ttu-id="df695-127">Az arány a költségszámításhoz és a kanbanfeladat felhasználásának kiszámítására használatos.</span><span class="sxs-lookup"><span data-stu-id="df695-127">The ratio is used in the cost calculation and in the calculation of the kanban job consumption.</span></span>  
 
-## <a name="associate-item-allocation-key"></a>Cikkfoglalási kulcs társítása
-1. Cikkfoglalási kulcs társítása
-    * Adjon hozzá egy társítást egy cikkfelosztási kulcshoz a Cikk-kapcsolat típusa csoport segítségével.   Ne feledje, hogy ehhez a folyamathoz, meg kell határozni az adatokban egy előrejelzett cikkfelosztási kulcsot.  
-2. A Cikk-kapcsolat típusa mezőben válassza ki a „Csoport” lehetőséget.
-3. A Cikkfoglalási kulcs mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+## <a name="associate-item-allocation-key"></a><span data-ttu-id="df695-128">Cikkfoglalási kulcs társítása</span><span class="sxs-lookup"><span data-stu-id="df695-128">Associate item allocation key</span></span>
+1. <span data-ttu-id="df695-129">Cikkfoglalási kulcs társítása</span><span class="sxs-lookup"><span data-stu-id="df695-129">Associate an item allocation key</span></span>
+    * <span data-ttu-id="df695-130">Adjon hozzá egy társítást egy cikkfelosztási kulcshoz a Cikk-kapcsolat típusa csoport segítségével.</span><span class="sxs-lookup"><span data-stu-id="df695-130">Add an association to an item allocation key by using the Item relation type Group.</span></span>   <span data-ttu-id="df695-131">Ne feledje, hogy ehhez a folyamathoz, meg kell határozni az adatokban egy előrejelzett cikkfelosztási kulcsot.</span><span class="sxs-lookup"><span data-stu-id="df695-131">Note that for this process, you need a forecast item alllocation key defined in your data.</span></span>  
+2. <span data-ttu-id="df695-132">A Cikk-kapcsolat típusa mezőben válassza ki a „Csoport” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="df695-132">In the Item relation type field, select Group</span></span>
+3. <span data-ttu-id="df695-133">A Cikkfoglalási kulcs mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="df695-133">In the Item allocation key field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="df695-134">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="df695-134">In the list, click the link in the selected row.</span></span>
 
 

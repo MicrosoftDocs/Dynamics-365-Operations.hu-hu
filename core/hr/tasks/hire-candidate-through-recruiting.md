@@ -16,33 +16,33 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 9ea412e4324542a570c1ab2c37824089a3dfec26
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e27dc0623f27ee21408d14aefb93ca13c40be672
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="hire-a-candidate-through-recruiting"></a>Jelölt felvétele toborzás útján
+# <a name="hire-a-candidate-through-recruiting"></a><span data-ttu-id="7fc02-103">Jelölt felvétele toborzás útján</span><span class="sxs-lookup"><span data-stu-id="7fc02-103">Hire a candidate through recruiting</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás lehetővé teszi a toborzók számára az olyan pályázók felvételét, akik egy speciális toborzási projekten keresztül pályáztak. Ha egy toborzási projekten keresztül vesz fel egy pályázót, új dolgozói rekord jön létre, és a pályázó rekordja Alkalmazott állapotra vált. Ez az eljárás az USMF bemutatócéget használja. Az eljárás befejezéséhez ugorjon az Emberi erőforrások > Toborzás > Pályázatok > Pályázatok lehetőségre 
+<span data-ttu-id="7fc02-104">Ez az eljárás lehetővé teszi a toborzók számára az olyan pályázók felvételét, akik egy speciális toborzási projekten keresztül pályáztak.</span><span class="sxs-lookup"><span data-stu-id="7fc02-104">This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project.</span></span> <span data-ttu-id="7fc02-105">Ha egy toborzási projekten keresztül vesz fel egy pályázót, új dolgozói rekord jön létre, és a pályázó rekordja Alkalmazott állapotra vált.</span><span class="sxs-lookup"><span data-stu-id="7fc02-105">When you hire an applicant through a recruiting project, a new worker record will be created and the applicant’s record will have a status of Employed.</span></span> <span data-ttu-id="7fc02-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="7fc02-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="7fc02-107">Az eljárás befejezéséhez ugorjon az Emberi erőforrások > Toborzás > Pályázatok > Pályázatok lehetőségre</span><span class="sxs-lookup"><span data-stu-id="7fc02-107">To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications</span></span> 
 
-1. Pályázat kiválasztása egy Külső pályázótól
-2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-3. Kattintson a Pályázat állapota lehetőségre.
-4. Kattintson az Új dolgozó felvételére.
-5. A „Foglalkoztatás kezdő dátuma” mezőben adjon meg egy dátumot és időpontot.
-6. A Beosztás mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. A Megbízatás kezdete mezőben adjon meg egy dátumot és időpontot.
-9. Kattintson az Új dolgozó felvételére.
-10. Bontsa ki az Alkalmazási előzmények adatterületet.
-11. Bontsa ki a jelenlegi beosztások adatterületet.
-12. Bontsa ki az Alkalmazási előzmények adatterületet.
-13. Bontsa ki a jelenlegi beosztások adatterületet.
-14. Bontsa ki vagy csukja össze a Címek szakaszt.
-15. Bontsa ki vagy csukja össze a Kapcsolattartási adatok szakaszt.
-16. Bontsa ki vagy csukja össze a Személyes adatok szakaszt.
+1. <span data-ttu-id="7fc02-108">Pályázat kiválasztása egy Külső pályázótól</span><span class="sxs-lookup"><span data-stu-id="7fc02-108">Select an Application for an External applicant</span></span>
+2. <span data-ttu-id="7fc02-109">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="7fc02-109">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="7fc02-110">Kattintson a Pályázat állapota lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="7fc02-110">Click Application status.</span></span>
+4. <span data-ttu-id="7fc02-111">Kattintson az Új dolgozó felvételére.</span><span class="sxs-lookup"><span data-stu-id="7fc02-111">Click Hire new worker.</span></span>
+5. <span data-ttu-id="7fc02-112">A „Foglalkoztatás kezdő dátuma” mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="7fc02-112">In the Employment start date field, enter a date and time.</span></span>
+6. <span data-ttu-id="7fc02-113">A Beosztás mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="7fc02-113">In the Position field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="7fc02-114">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="7fc02-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="7fc02-115">A Megbízatás kezdete mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="7fc02-115">In the Assignment start field, enter a date and time.</span></span>
+9. <span data-ttu-id="7fc02-116">Kattintson az Új dolgozó felvételére.</span><span class="sxs-lookup"><span data-stu-id="7fc02-116">Click Hire new worker.</span></span>
+10. <span data-ttu-id="7fc02-117">Bontsa ki az Alkalmazási előzmények adatterületet.</span><span class="sxs-lookup"><span data-stu-id="7fc02-117">Expand the Employment history FactBox.</span></span>
+11. <span data-ttu-id="7fc02-118">Bontsa ki a jelenlegi beosztások adatterületet.</span><span class="sxs-lookup"><span data-stu-id="7fc02-118">Expand the Current positions FactBox.</span></span>
+12. <span data-ttu-id="7fc02-119">Bontsa ki az Alkalmazási előzmények adatterületet.</span><span class="sxs-lookup"><span data-stu-id="7fc02-119">Expand the Employment history FactBox.</span></span>
+13. <span data-ttu-id="7fc02-120">Bontsa ki a jelenlegi beosztások adatterületet.</span><span class="sxs-lookup"><span data-stu-id="7fc02-120">Expand the Current positions FactBox.</span></span>
+14. <span data-ttu-id="7fc02-121">Bontsa ki vagy csukja össze a Címek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7fc02-121">Expand or collapse the Addresses section.</span></span>
+15. <span data-ttu-id="7fc02-122">Bontsa ki vagy csukja össze a Kapcsolattartási adatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7fc02-122">Expand or collapse the Contact information section.</span></span>
+16. <span data-ttu-id="7fc02-123">Bontsa ki vagy csukja össze a Személyes adatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="7fc02-123">Expand or collapse the Personal information section.</span></span>
 
 

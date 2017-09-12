@@ -16,34 +16,34 @@ ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0ecd161cf779977b34017561529cd73961f3c936
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e6e5c84d379ad6a94099cdb68d44d5c7b9ce0969
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-the-global-address-book"></a>A globális címjegyzék konfigurálása
+# <a name="configure-the-global-address-book"></a><span data-ttu-id="c8a3d-103">A globális címjegyzék konfigurálása</span><span class="sxs-lookup"><span data-stu-id="c8a3d-103">Configure the global address book</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ezekkel a lépésekkel beállíthatja az alapértelmezett értékeket és a globális címjegyzék biztonsági irányelveit. 
+<span data-ttu-id="c8a3d-104">Ezekkel a lépésekkel beállíthatja az alapértelmezett értékeket és a globális címjegyzék biztonsági irányelveit.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-104">Use this procedure to set the default values and security policies for the global address book.</span></span> 
 
-A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez a feladat a Tervezési és a konfigurációs csoport számára készült.
+<span data-ttu-id="c8a3d-105">A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="c8a3d-106">Ez a feladat a Tervezési és a konfigurációs csoport számára készült.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-106">This task is intended for the Planning and configuration team.</span></span>
 
-1. Ugrás a Szervezeti felügyelet > Globális címjegyzék > Globális címjegyzék paraméterei elemre.
-2. A Névsorozat mezőben válassza ki a nevek megjelenítési módját.
-3. Válassza ki, hogy törölni szeretné-e azokat a feleket, akikhez még nincs hozzárendelve szerepkör.
-4. Jelölje be, hogy szeretné-e ellenőrizni az ismétlődő rekordokat.
-5. Válassza ki, hogy megjelenítené-e a DUNS számot a címeknél.
-6. Jelölje be, hogy szeretné-e ellenőrizni az egyéni DUNS-számokat.
-7. Egy lehetőség kiválasztása a Fél mezőben.
-8. Egy lehetőség kiválasztása az Ügyfél mezőben.
-9. Egy lehetőség kiválasztása a Szállító mezőben.
-10. Egy lehetőség kiválasztása a Potenciális vevő mezőben.
-11. Egy lehetőség kiválasztása a Versenytárs mezőben.
-12. Kattintson a Privát hely biztonsága lapra.
-13. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Nyomja le a Shift billentyűt, jelöljön be több szerepkört a Kijelölt szerepkörök ablakban való hozzáadáshoz, és kattintson a nyílra a kijelölt szerepkörök hozzáadásához.  
-14. Kattintson a Mentés gombra.
+1. <span data-ttu-id="c8a3d-107">Ugrás a Szervezeti felügyelet > Globális címjegyzék > Globális címjegyzék paraméterei elemre.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-107">Go to Organization administration > Global address book > Global address book parameters.</span></span>
+2. <span data-ttu-id="c8a3d-108">A Névsorozat mezőben válassza ki a nevek megjelenítési módját.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-108">In the Name sequence field, select how names should be shown.</span></span>
+3. <span data-ttu-id="c8a3d-109">Válassza ki, hogy törölni szeretné-e azokat a feleket, akikhez még nincs hozzárendelve szerepkör.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-109">Select whether to delete parties with that have not been assigned a role.</span></span>
+4. <span data-ttu-id="c8a3d-110">Jelölje be, hogy szeretné-e ellenőrizni az ismétlődő rekordokat.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-110">Select whether to check for duplicate records.</span></span>
+5. <span data-ttu-id="c8a3d-111">Válassza ki, hogy megjelenítené-e a DUNS számot a címeknél.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-111">Select whether to display the DUNS number on addresses.</span></span>
+6. <span data-ttu-id="c8a3d-112">Jelölje be, hogy szeretné-e ellenőrizni az egyéni DUNS-számokat.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-112">Select whether to check for unique DUNS numbers.</span></span>
+7. <span data-ttu-id="c8a3d-113">Egy lehetőség kiválasztása a Fél mezőben.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-113">In the Party field, select an option.</span></span>
+8. <span data-ttu-id="c8a3d-114">Egy lehetőség kiválasztása az Ügyfél mezőben.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-114">In the Customer field, select an option.</span></span>
+9. <span data-ttu-id="c8a3d-115">Egy lehetőség kiválasztása a Szállító mezőben.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-115">In the Vendor field, select an option.</span></span>
+10. <span data-ttu-id="c8a3d-116">Egy lehetőség kiválasztása a Potenciális vevő mezőben.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-116">In the Prospect field, select an option.</span></span>
+11. <span data-ttu-id="c8a3d-117">Egy lehetőség kiválasztása a Versenytárs mezőben.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-117">In the Competitor field, select an option.</span></span>
+12. <span data-ttu-id="c8a3d-118">Kattintson a Privát hely biztonsága lapra.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-118">Click the Private location security tab.</span></span>
+13. <span data-ttu-id="c8a3d-119">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-119">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c8a3d-120">Nyomja le a Shift billentyűt, jelöljön be több szerepkört a Kijelölt szerepkörök ablakban való hozzáadáshoz, és kattintson a nyílra a kijelölt szerepkörök hozzáadásához.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-120">Press the Shift key to select multiple roles to add to the Selected roles pane and then click the arrow to add the selected roles.</span></span>  
+14. <span data-ttu-id="c8a3d-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="c8a3d-121">Click Save.</span></span>
 
 

@@ -16,63 +16,63 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 93bd832b4bbb91e6bd0288042098383eb5f4488d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e4a0204d74c8966cd90b52ae13c88e222ebc3ef
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása
+# <a name="create-a-purchase-order-with-a-delivery-schedule"></a><span data-ttu-id="b2827-103">Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása</span><span class="sxs-lookup"><span data-stu-id="b2827-103">Create a purchase order with a delivery schedule</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy szállítási ütemezést egy beszerzési rendeléshez. A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy egy naplóhoz tartozó mennyiséget több részletben kell elszállítani. Az útmutatóban mutatott példa használható az USMF demo adatok cégben. Ezt az eljárást általában a beszerzési ügynök végzi el.
+<span data-ttu-id="b2827-104">Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy szállítási ütemezést egy beszerzési rendeléshez.</span><span class="sxs-lookup"><span data-stu-id="b2827-104">This procedure demonstrates how to create a delivery schedule for a purchase order.</span></span> <span data-ttu-id="b2827-105">A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy egy naplóhoz tartozó mennyiséget több részletben kell elszállítani.</span><span class="sxs-lookup"><span data-stu-id="b2827-105">A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="b2827-106">Az útmutatóban mutatott példa használható az USMF demo adatok cégben.</span><span class="sxs-lookup"><span data-stu-id="b2827-106">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="b2827-107">Ezt az eljárást általában a beszerzési ügynök végzi el.</span><span class="sxs-lookup"><span data-stu-id="b2827-107">This procedure would typically be done by a purchasing agent.</span></span>
 
 
-## <a name="create-a-delivery-schedule"></a>Szállítási ütemezés létrehozása
-1. Ugorjon a Beszerzés és forrás > Beszerzési rendelés > Összes beszerzési rendelés pontra.
-2. Kattintson az Új lehetőségre.
-3. Írja be az „IS-101” értéket a Szállítói számla mezőbe.
-4. Kattintson az OK gombra.
-5. Adja meg a „M0001” értéket a Cikkszám mezőben.
-6. Írja be a „10” értéket a Mennyiség mezőbe.
-7. Kattintson a Beszerzési-rendelés sorra.
-8. Kattintson a Szállítási ütemezés elemre.
-    * A Szállítási ütemezés lap lehetővé teszi azoknak a szállítmányoknak a számának a megadását, amely során a rendszer a rendelési sor teljes mennyiségét elküldi a szállítótól.  
-    * Alapértelmezés szerint a rendszer átmásolja az eredeti beszerzési sor egyéb szállítási részleteit és a teljes mennyiséget az első szállítási ütemezés sorába. Ebben a példában két szállítmányhoz hoztunk létre ütemezést a második szállítmány dátumával, amely egy héttel tér el az első szállítmányétól.  
-9. A Mennyiség mező értékét módosítsa 4-re.
-10. Kattintson az Új lehetőségre.
-11. Adja meg a 6-os értéket visszamaradó mennyiségként a Mennyiség mezőben.
-    * A szállítási dátum mezőben válasszon ki egy olyan dátumot, amely egy héttel későbbi az első szállítási sorban lévő dátumnál.  
-    * Nyomon követheti a teljes mennyiséget, ami a szállítási ütemezés soraihoz van rendelve ha megtekinti az Összes és Maradvány mezőket. Ha a maradvány mennyisége nulla, akkor a teljes mennyiség az eredeti sorból az ütemezéshez lett rendelve.  
-12. Bontsa ki a Költségek átalakítása szakaszt.
-    * Az itt található beállítások lehetővé teszi a költségek szállítási ütemezés sorai között történő elosztási módjának az ellenőrzését. Ha a Bruttó összegek másolása lehetőséget választja, akkor a rendszer minden egyes szállítási sorba átmásolja az eredeti rendelési soron található költség számlát. A Felosztás szállítmánysorokra beállítás az eredeti sor költségét az egyes sorokon lévő mennyiség szerint osztja fel.  
-13. Zárja be a Költségek átalakítása szakaszt.
-14. Kattintson az OK gombra.
-    * A rendszer a szállítási ütemezést alkalmazta a rendeléshez.  
-    * A rendszer több szállítással együtt konvertálta a jelenleg Kereskedelmi sorként hivatkozott, eredeti rendelési sort a Rendelési sorhoz. Ezt egy külön ikon jelzi, és fejlécként szolgál a szállítási sorokhoz.  
-15. Válassza ki azt a második rendelési sort, amely az első a két szállítási sor közül.
-    * A szállítási sorként hivatkozott két új sor egy szállítási ütemezést képez. A rendelés szembeni ezen sorok és nem az eredeti sor szerint kerül feldolgozásra. Ha ki vannak nyomtatva az olyan dokumentumok, mint például a megerősítések, a Termékbevételezési naplók, vagy a számlák, akkor csak a szállítási sorok jelennek meg.  
+## <a name="create-a-delivery-schedule"></a><span data-ttu-id="b2827-108">Szállítási ütemezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="b2827-108">Create a delivery schedule</span></span>
+1. <span data-ttu-id="b2827-109">Ugorjon a Beszerzés és forrás > Beszerzési rendelés > Összes beszerzési rendelés pontra.</span><span class="sxs-lookup"><span data-stu-id="b2827-109">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="b2827-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b2827-110">Click New.</span></span>
+3. <span data-ttu-id="b2827-111">Írja be az „IS-101” értéket a Szállítói számla mezőbe.</span><span class="sxs-lookup"><span data-stu-id="b2827-111">In the Vendor account field, enter US-101.</span></span>
+4. <span data-ttu-id="b2827-112">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="b2827-112">Click OK.</span></span>
+5. <span data-ttu-id="b2827-113">Adja meg a „M0001” értéket a Cikkszám mezőben.</span><span class="sxs-lookup"><span data-stu-id="b2827-113">In the Item number field, enter M0001.</span></span>
+6. <span data-ttu-id="b2827-114">Írja be a „10” értéket a Mennyiség mezőbe.</span><span class="sxs-lookup"><span data-stu-id="b2827-114">In the Quantity field, enter 10.</span></span>
+7. <span data-ttu-id="b2827-115">Kattintson a Beszerzési-rendelés sorra.</span><span class="sxs-lookup"><span data-stu-id="b2827-115">Click Purchase order line.</span></span>
+8. <span data-ttu-id="b2827-116">Kattintson a Szállítási ütemezés elemre.</span><span class="sxs-lookup"><span data-stu-id="b2827-116">Click Delivery schedule.</span></span>
+    * <span data-ttu-id="b2827-117">A Szállítási ütemezés lap lehetővé teszi azoknak a szállítmányoknak a számának a megadását, amely során a rendszer a rendelési sor teljes mennyiségét elküldi a szállítótól.</span><span class="sxs-lookup"><span data-stu-id="b2827-117">The Delivery schedule page allows you to specify the number of shipments in which the total quantity of the order line will be delivered from the vendor.</span></span>  
+    * <span data-ttu-id="b2827-118">Alapértelmezés szerint a rendszer átmásolja az eredeti beszerzési sor egyéb szállítási részleteit és a teljes mennyiséget az első szállítási ütemezés sorába.</span><span class="sxs-lookup"><span data-stu-id="b2827-118">By default, the system copies the total quantity and other delivery details of the original purchase line into the first delivery schedule line.</span></span> <span data-ttu-id="b2827-119">Ebben a példában két szállítmányhoz hoztunk létre ütemezést a második szállítmány dátumával, amely egy héttel tér el az első szállítmányétól.</span><span class="sxs-lookup"><span data-stu-id="b2827-119">In this example, we’ll create a schedule for two shipments, with the second shipment’s date offset by a week from the first shipment.</span></span>  
+9. <span data-ttu-id="b2827-120">A Mennyiség mező értékét módosítsa 4-re.</span><span class="sxs-lookup"><span data-stu-id="b2827-120">In the Quantity field, change the quantity to 4.</span></span>
+10. <span data-ttu-id="b2827-121">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b2827-121">Click New.</span></span>
+11. <span data-ttu-id="b2827-122">Adja meg a 6-os értéket visszamaradó mennyiségként a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="b2827-122">In the Quantity field, enter 6 as the remaining quantity.</span></span>
+    * <span data-ttu-id="b2827-123">A szállítási dátum mezőben válasszon ki egy olyan dátumot, amely egy héttel későbbi az első szállítási sorban lévő dátumnál.</span><span class="sxs-lookup"><span data-stu-id="b2827-123">In the delivery date field, select a date that’s one week after the date on the first delivery line.</span></span>  
+    * <span data-ttu-id="b2827-124">Nyomon követheti a teljes mennyiséget, ami a szállítási ütemezés soraihoz van rendelve ha megtekinti az Összes és Maradvány mezőket.</span><span class="sxs-lookup"><span data-stu-id="b2827-124">You can keep track of the total quantity that’s allocated to the delivery schedule lines by looking at the Total and Remaining fields.</span></span> <span data-ttu-id="b2827-125">Ha a maradvány mennyisége nulla, akkor a teljes mennyiség az eredeti sorból az ütemezéshez lett rendelve.</span><span class="sxs-lookup"><span data-stu-id="b2827-125">When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.</span></span>  
+12. <span data-ttu-id="b2827-126">Bontsa ki a Költségek átalakítása szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b2827-126">Expand the Charges conversion section.</span></span>
+    * <span data-ttu-id="b2827-127">Az itt található beállítások lehetővé teszi a költségek szállítási ütemezés sorai között történő elosztási módjának az ellenőrzését.</span><span class="sxs-lookup"><span data-stu-id="b2827-127">The options here allow you to control how you want charges to be distributed across the delivery schedule lines.</span></span> <span data-ttu-id="b2827-128">Ha a Bruttó összegek másolása lehetőséget választja, akkor a rendszer minden egyes szállítási sorba átmásolja az eredeti rendelési soron található költség számlát.</span><span class="sxs-lookup"><span data-stu-id="b2827-128">If you select Copy gross amounts, the charge amount on the original order line is copied to each delivery line.</span></span> <span data-ttu-id="b2827-129">A Felosztás szállítmánysorokra beállítás az eredeti sor költségét az egyes sorokon lévő mennyiség szerint osztja fel.</span><span class="sxs-lookup"><span data-stu-id="b2827-129">The Allocate to delivery lines option divides the original line charge according to the quantity on each delivery line.</span></span>  
+13. <span data-ttu-id="b2827-130">Zárja be a Költségek átalakítása szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b2827-130">Collapse the Charges conversion section.</span></span>
+14. <span data-ttu-id="b2827-131">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="b2827-131">Click OK.</span></span>
+    * <span data-ttu-id="b2827-132">A rendszer a szállítási ütemezést alkalmazta a rendeléshez.</span><span class="sxs-lookup"><span data-stu-id="b2827-132">The delivery schedule has now been applied to the order.</span></span>  
+    * <span data-ttu-id="b2827-133">A rendszer több szállítással együtt konvertálta a jelenleg Kereskedelmi sorként hivatkozott, eredeti rendelési sort a Rendelési sorhoz.</span><span class="sxs-lookup"><span data-stu-id="b2827-133">The original order line, now referred to as a Commercial line, has been converted to an Order line with multiple deliveries.</span></span> <span data-ttu-id="b2827-134">Ezt egy külön ikon jelzi, és fejlécként szolgál a szállítási sorokhoz.</span><span class="sxs-lookup"><span data-stu-id="b2827-134">It is marked with a distinct icon and acts as a header for the delivery lines.</span></span>  
+15. <span data-ttu-id="b2827-135">Válassza ki azt a második rendelési sort, amely az első a két szállítási sor közül.</span><span class="sxs-lookup"><span data-stu-id="b2827-135">Select the second order line, which is the first of the two delivery lines.</span></span>
+    * <span data-ttu-id="b2827-136">A szállítási sorként hivatkozott két új sor egy szállítási ütemezést képez.</span><span class="sxs-lookup"><span data-stu-id="b2827-136">The two new lines, referred to as Delivery lines, make up one delivery schedule.</span></span> <span data-ttu-id="b2827-137">A rendelés szembeni ezen sorok és nem az eredeti sor szerint kerül feldolgozásra.</span><span class="sxs-lookup"><span data-stu-id="b2827-137">The order will be processed against these lines and not the original line.</span></span> <span data-ttu-id="b2827-138">Ha ki vannak nyomtatva az olyan dokumentumok, mint például a megerősítések, a Termékbevételezési naplók, vagy a számlák, akkor csak a szállítási sorok jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="b2827-138">If documents such as confirmations, product receipt journals, or invoices are printed, only the delivery lines are shown.</span></span>  
 
-## <a name="change-the-delivery-schedule"></a>A szállítási ütemezés módosítása
-    * A mennyiséget a szállítási sorokban meg lehet változtatni. Ha ezt hajtja végre, akkor a rendszer automatikusan frissíti a kereskedelmi sort a szállítási sor teljes mennyiségére.  
-1. Módosítsa a mennyiséget 4-ről 5-re az első szállítási sor Mennyiség mezőben.
-2. Válassza ki az első rendelési sort (a kereskedelmi sor).
-    * A kereskedelmi sorban szereplő mennyiség 11-re lett módosítva.  
+## <a name="change-the-delivery-schedule"></a><span data-ttu-id="b2827-139">A szállítási ütemezés módosítása</span><span class="sxs-lookup"><span data-stu-id="b2827-139">Change the delivery schedule</span></span>
+    * <span data-ttu-id="b2827-140">A mennyiséget a szállítási sorokban meg lehet változtatni.</span><span class="sxs-lookup"><span data-stu-id="b2827-140">You can change the quantity on delivery lines.</span></span> <span data-ttu-id="b2827-141">Ha ezt hajtja végre, akkor a rendszer automatikusan frissíti a kereskedelmi sort a szállítási sor teljes mennyiségére.</span><span class="sxs-lookup"><span data-stu-id="b2827-141">If you do this, the commercial line is automatically updated to the total quantity in the delivery lines.</span></span>  
+1. <span data-ttu-id="b2827-142">Módosítsa a mennyiséget 4-ről 5-re az első szállítási sor Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="b2827-142">In the Quantity field of the first delivery line, change the quantity from 4 to 5.</span></span>
+2. <span data-ttu-id="b2827-143">Válassza ki az első rendelési sort (a kereskedelmi sor).</span><span class="sxs-lookup"><span data-stu-id="b2827-143">Select the first order line (the commercial line).</span></span>
+    * <span data-ttu-id="b2827-144">A kereskedelmi sorban szereplő mennyiség 11-re lett módosítva.</span><span class="sxs-lookup"><span data-stu-id="b2827-144">The quantity on the commercial line has been changed to 11.</span></span>  
 
-## <a name="process-product-receipt-using-delivery-schedules"></a>A Termékbevételezések feldolgozása a szállítási ütemezéssel használatával
-    * A termékbevételezés végrehajtása előtt meg kell erősíteni a beszerzési rendelést. Ebben a példában a bevételezést közvetlenül a beszerzési rendelésen rögzítik. A bevételezés rögzítése akkor is megtörténhetett, amikor az áruk beérkeztek a raktárba.  
-1. A Művelet panelen kattintson a Beszerzés elemre.
-2. Kattintson a Megerősítés gombra.
-3. A Művelet panelen kattintson a Bevételezés elemre.
-4. Kattintson a Termékbevételezés elemre.
-5. Írjon be egy értéket a Termék bevételezés mezőbe.
-    * Ezzel a mezővel lehet megadni olyan hivatkozást, ami bizonylatként lesz használva a termék bevételezési naplójához.  
-    * Válassza ki a „Megrendelt mennyiség” lehetőséget a Mennyiség mezőben. Ez a beállítás azt jelenti, hogy a bevételezés azt a dolgozza fel, amellyel együtt a rendszer létrehozta a rendelési sorokat.  
-    * Győződjön meg arról, hogy a Termékbevételezés nyomtatása mező értéke Nem lehetőségre van beállítva. Ebben a példában nem szükséges a nyomtatás.  
-6. Bontsa ki a Sorok szakaszt.
-    * Ne feledje, hogy a rendszer a termékbevételezést a két szállítási sorhoz hozta létre, és nem az eredeti rendelési sorhoz. Ha a Bevételezés rögzítve van a raktárban, akkor a szállítási ütemezési sorokban is rögzítve van.  
-7. Csukja össze Sorok szakaszt.
-8. Kattintson az OK gombra a bevételezés feladásához.
+## <a name="process-product-receipt-using-delivery-schedules"></a><span data-ttu-id="b2827-145">A Termékbevételezések feldolgozása a szállítási ütemezéssel használatával</span><span class="sxs-lookup"><span data-stu-id="b2827-145">Process product receipt using delivery schedules</span></span>
+    * <span data-ttu-id="b2827-146">A termékbevételezés végrehajtása előtt meg kell erősíteni a beszerzési rendelést.</span><span class="sxs-lookup"><span data-stu-id="b2827-146">The purchase order must be confirmed before product receipt can be processed.</span></span> <span data-ttu-id="b2827-147">Ebben a példában a bevételezést közvetlenül a beszerzési rendelésen rögzítik.</span><span class="sxs-lookup"><span data-stu-id="b2827-147">In this example, receipt is recorded directly on the purchase order.</span></span> <span data-ttu-id="b2827-148">A bevételezés rögzítése akkor is megtörténhetett, amikor az áruk beérkeztek a raktárba.</span><span class="sxs-lookup"><span data-stu-id="b2827-148">Receipt could also have been recorded when the goods arrived in the warehouse.</span></span>  
+1. <span data-ttu-id="b2827-149">A Művelet panelen kattintson a Beszerzés elemre.</span><span class="sxs-lookup"><span data-stu-id="b2827-149">On the Action Pane, click Purchase.</span></span>
+2. <span data-ttu-id="b2827-150">Kattintson a Megerősítés gombra.</span><span class="sxs-lookup"><span data-stu-id="b2827-150">Click Confirm.</span></span>
+3. <span data-ttu-id="b2827-151">A Művelet panelen kattintson a Bevételezés elemre.</span><span class="sxs-lookup"><span data-stu-id="b2827-151">On the Action Pane, click Receive.</span></span>
+4. <span data-ttu-id="b2827-152">Kattintson a Termékbevételezés elemre.</span><span class="sxs-lookup"><span data-stu-id="b2827-152">Click Product receipt.</span></span>
+5. <span data-ttu-id="b2827-153">Írjon be egy értéket a Termék bevételezés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="b2827-153">In the Product receipt field, type any value.</span></span>
+    * <span data-ttu-id="b2827-154">Ezzel a mezővel lehet megadni olyan hivatkozást, ami bizonylatként lesz használva a termék bevételezési naplójához.</span><span class="sxs-lookup"><span data-stu-id="b2827-154">This field is used to enter a reference that will be used as voucher for the product receipt journal.</span></span>  
+    * <span data-ttu-id="b2827-155">Válassza ki a „Megrendelt mennyiség” lehetőséget a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="b2827-155">In the Quantity field, select ‘Ordered quantity’.</span></span> <span data-ttu-id="b2827-156">Ez a beállítás azt jelenti, hogy a bevételezés azt a dolgozza fel, amellyel együtt a rendszer létrehozta a rendelési sorokat.</span><span class="sxs-lookup"><span data-stu-id="b2827-156">This option means that receipt will process for the quantity that the order lines were created with.</span></span>  
+    * <span data-ttu-id="b2827-157">Győződjön meg arról, hogy a Termékbevételezés nyomtatása mező értéke Nem lehetőségre van beállítva.</span><span class="sxs-lookup"><span data-stu-id="b2827-157">Make sure that the Print product receipt field is set to No.</span></span> <span data-ttu-id="b2827-158">Ebben a példában nem szükséges a nyomtatás.</span><span class="sxs-lookup"><span data-stu-id="b2827-158">Printing isn’t needed in this example.</span></span>  
+6. <span data-ttu-id="b2827-159">Bontsa ki a Sorok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b2827-159">Expand the Lines section.</span></span>
+    * <span data-ttu-id="b2827-160">Ne feledje, hogy a rendszer a termékbevételezést a két szállítási sorhoz hozta létre, és nem az eredeti rendelési sorhoz.</span><span class="sxs-lookup"><span data-stu-id="b2827-160">Notice how the product receipt is created for the two delivery lines and not the original order line.</span></span> <span data-ttu-id="b2827-161">Ha a Bevételezés rögzítve van a raktárban, akkor a szállítási ütemezési sorokban is rögzítve van.</span><span class="sxs-lookup"><span data-stu-id="b2827-161">If receipt had been recorded in the warehouse, it would also have been recorded on the delivery schedule lines.</span></span>  
+7. <span data-ttu-id="b2827-162">Csukja össze Sorok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="b2827-162">Collapse the Lines section.</span></span>
+8. <span data-ttu-id="b2827-163">Kattintson az OK gombra a bevételezés feladásához.</span><span class="sxs-lookup"><span data-stu-id="b2827-163">Click OK to post the receipt.</span></span>
 
 

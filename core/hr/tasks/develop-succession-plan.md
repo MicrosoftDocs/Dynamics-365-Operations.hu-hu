@@ -16,47 +16,47 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 93215c752e035e68b8d9a7e80cffd9da63a31bae
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b1caaf5f52282a8daae62602dcc5ef86b901e338
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="develop-a-succession-plan"></a>Utódlási terv kialakítása
+# <a name="develop-a-succession-plan"></a><span data-ttu-id="04b78-103">Utódlási terv kialakítása</span><span class="sxs-lookup"><span data-stu-id="04b78-103">Develop a succession plan</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy.  Szakértelem-feltérképezés segítségével elemezheti a meglévő alkalmazottait és a pályázókat, hogy ellenőrizze, egyeznek-e valamelyik értékelt alkalmazott szakértelemkészletével. Ez az eljárás az USMF bemutatócéget használja.
+<span data-ttu-id="04b78-104">Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy.</span><span class="sxs-lookup"><span data-stu-id="04b78-104">As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.</span></span>  <span data-ttu-id="04b78-105">Szakértelem-feltérképezés segítségével elemezheti a meglévő alkalmazottait és a pályázókat, hogy ellenőrizze, egyeznek-e valamelyik értékelt alkalmazott szakértelemkészletével.</span><span class="sxs-lookup"><span data-stu-id="04b78-105">Skill mapping allows you to analyse your existing employees and applicants to see if they match the skill set of a valued employee.</span></span> <span data-ttu-id="04b78-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="04b78-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Ugrás az Emberi erőforrások > Szakértelem > Szakértelem elemzése > Szakértelem-feltérképezési profilok lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A szakértelem-feltérképezéshez adjon meg egy nevet a Szakértelem feltérképezése mezőben.  Példa: Alkalmazott.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Adja meg a dátumot a Dátum mezőben.
-6. Kattintson a Profil beolvasására.
-7. Kattintson a Személy parancsra.
-8. A Személy mezőben adjon meg egy nevet, vagy válasszon a legördülő listából.  Példa: Cassie Hicks.
-9. Kattintson az OK gombra.
-10. Bontsa ki a tanúsítványok gyorslapot, így láthatja vagy szerkesztheti a szakértelem-feltérképezésben szereplő tanúsítványokat.
-11. Bontsa ki a Szakértelmek gyorslapot a belefoglalandó Szakértelmek megjelenítéséhez és szerkesztéséhez.
-12. A listában jelölje meg az első sort.  Például: könyvelés
-13. Kattintson az Opcionális jelölőnégyzetre.
-14. Egy lehetőség kiválasztása Fontosság mezőben.
-    * Ha egy szakértelmet opcionális cikként jelöl meg, ki kell választania a szakértelem fontosságának szintjét.  
-15. Jelölje ki az 2. sort a listában.
-16. Kattintson az Opcionális jelölőnégyzetre.
-17. Egy lehetőség kiválasztása Fontosság mezőben.
-18. Jelölje ki az 3. sort a listában.
-19. Kattintson az Opcionális jelölőnégyzetre.
-20. Egy lehetőség kiválasztása Fontosság mezőben.
-21. Jelölje ki az 4. sort a listában.
-22. Kattintson az Opcionális jelölőnégyzetre.
-23. Egy lehetőség kiválasztása Fontosság mezőben.
-24. A szakértelem-feltérképezésbe belekerülő végzettség kompetenciák megtekintéséhez és szerkesztéséhez bontsa ki a Végzettségek gyorslapot.
-25. Kattintson a végrehajtásra.
-26. Kattintson az OK gombra.
-27. Kattintson az Eredményre.
-28. Kattintson a Jelentésre.
-    * A jelentés a legjobb találatokat felül mutatja.  Megtekintheti, hogy van-e hiányelem felsorolva.  Ez az elem az eltérést jelzi a szakértelem feltérképezésén felsorolt szint és a személy szakértelmének szintje között.  
+1. <span data-ttu-id="04b78-107">Ugrás az Emberi erőforrások > Szakértelem > Szakértelem elemzése > Szakértelem-feltérképezési profilok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="04b78-107">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
+2. <span data-ttu-id="04b78-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="04b78-108">Click New.</span></span>
+3. <span data-ttu-id="04b78-109">A szakértelem-feltérképezéshez adjon meg egy nevet a Szakértelem feltérképezése mezőben.</span><span class="sxs-lookup"><span data-stu-id="04b78-109">In the Skill mapping field, In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="04b78-110">Példa: Alkalmazott.</span><span class="sxs-lookup"><span data-stu-id="04b78-110">Example: Employee.</span></span>
+4. <span data-ttu-id="04b78-111">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="04b78-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="04b78-112">Adja meg a dátumot a Dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="04b78-112">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="04b78-113">Kattintson a Profil beolvasására.</span><span class="sxs-lookup"><span data-stu-id="04b78-113">Click Retrieve profile.</span></span>
+7. <span data-ttu-id="04b78-114">Kattintson a Személy parancsra.</span><span class="sxs-lookup"><span data-stu-id="04b78-114">Click Person.</span></span>
+8. <span data-ttu-id="04b78-115">A Személy mezőben adjon meg egy nevet, vagy válasszon a legördülő listából.</span><span class="sxs-lookup"><span data-stu-id="04b78-115">In the Person field, type in a name, or select the drop down.</span></span>  <span data-ttu-id="04b78-116">Példa: Cassie Hicks.</span><span class="sxs-lookup"><span data-stu-id="04b78-116">Example: Cassie Hicks.</span></span>
+9. <span data-ttu-id="04b78-117">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="04b78-117">Click OK.</span></span>
+10. <span data-ttu-id="04b78-118">Bontsa ki a tanúsítványok gyorslapot, így láthatja vagy szerkesztheti a szakértelem-feltérképezésben szereplő tanúsítványokat.</span><span class="sxs-lookup"><span data-stu-id="04b78-118">Exapnd the certificates fast tab to view or edit the certificates included in the skill mapping.</span></span>
+11. <span data-ttu-id="04b78-119">Bontsa ki a Szakértelmek gyorslapot a belefoglalandó Szakértelmek megjelenítéséhez és szerkesztéséhez.</span><span class="sxs-lookup"><span data-stu-id="04b78-119">Expand the Skills fast tab to view or edit the skills to be included.</span></span>
+12. <span data-ttu-id="04b78-120">A listában jelölje meg az első sort.</span><span class="sxs-lookup"><span data-stu-id="04b78-120">In the list, mark the first row.</span></span>  <span data-ttu-id="04b78-121">Például: könyvelés</span><span class="sxs-lookup"><span data-stu-id="04b78-121">Example:  Accounting</span></span>
+13. <span data-ttu-id="04b78-122">Kattintson az Opcionális jelölőnégyzetre.</span><span class="sxs-lookup"><span data-stu-id="04b78-122">Click the Optional checkbox.</span></span>
+14. <span data-ttu-id="04b78-123">Egy lehetőség kiválasztása Fontosság mezőben.</span><span class="sxs-lookup"><span data-stu-id="04b78-123">In the Importance field, select an option.</span></span>
+    * <span data-ttu-id="04b78-124">Ha egy szakértelmet opcionális cikként jelöl meg, ki kell választania a szakértelem fontosságának szintjét.</span><span class="sxs-lookup"><span data-stu-id="04b78-124">When you mark a skill as optional, you are required to select the importance level of the skill.</span></span>  
+15. <span data-ttu-id="04b78-125">Jelölje ki az 2. sort a listában.</span><span class="sxs-lookup"><span data-stu-id="04b78-125">In the list, select row 2.</span></span>
+16. <span data-ttu-id="04b78-126">Kattintson az Opcionális jelölőnégyzetre.</span><span class="sxs-lookup"><span data-stu-id="04b78-126">Click the Optional checkbox.</span></span>
+17. <span data-ttu-id="04b78-127">Egy lehetőség kiválasztása Fontosság mezőben.</span><span class="sxs-lookup"><span data-stu-id="04b78-127">In the Importance field, select an option.</span></span>
+18. <span data-ttu-id="04b78-128">Jelölje ki az 3. sort a listában.</span><span class="sxs-lookup"><span data-stu-id="04b78-128">In the list, select row 3.</span></span>
+19. <span data-ttu-id="04b78-129">Kattintson az Opcionális jelölőnégyzetre.</span><span class="sxs-lookup"><span data-stu-id="04b78-129">Click the Optional checkbox.</span></span>
+20. <span data-ttu-id="04b78-130">Egy lehetőség kiválasztása Fontosság mezőben.</span><span class="sxs-lookup"><span data-stu-id="04b78-130">In the Importance field, select an option.</span></span>
+21. <span data-ttu-id="04b78-131">Jelölje ki az 4. sort a listában.</span><span class="sxs-lookup"><span data-stu-id="04b78-131">In the list, select row 4.</span></span>
+22. <span data-ttu-id="04b78-132">Kattintson az Opcionális jelölőnégyzetre.</span><span class="sxs-lookup"><span data-stu-id="04b78-132">Click the Optional checkbox.</span></span>
+23. <span data-ttu-id="04b78-133">Egy lehetőség kiválasztása Fontosság mezőben.</span><span class="sxs-lookup"><span data-stu-id="04b78-133">In the Importance field, select an option.</span></span>
+24. <span data-ttu-id="04b78-134">A szakértelem-feltérképezésbe belekerülő végzettség kompetenciák megtekintéséhez és szerkesztéséhez bontsa ki a Végzettségek gyorslapot.</span><span class="sxs-lookup"><span data-stu-id="04b78-134">Expand the Education fast tab to view or edit the education competencies to be included in the skill mapping.</span></span>
+25. <span data-ttu-id="04b78-135">Kattintson a végrehajtásra.</span><span class="sxs-lookup"><span data-stu-id="04b78-135">Click Execute.</span></span>
+26. <span data-ttu-id="04b78-136">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="04b78-136">Click OK.</span></span>
+27. <span data-ttu-id="04b78-137">Kattintson az Eredményre.</span><span class="sxs-lookup"><span data-stu-id="04b78-137">Click Result.</span></span>
+28. <span data-ttu-id="04b78-138">Kattintson a Jelentésre.</span><span class="sxs-lookup"><span data-stu-id="04b78-138">Click Report.</span></span>
+    * <span data-ttu-id="04b78-139">A jelentés a legjobb találatokat felül mutatja.</span><span class="sxs-lookup"><span data-stu-id="04b78-139">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="04b78-140">Megtekintheti, hogy van-e hiányelem felsorolva.</span><span class="sxs-lookup"><span data-stu-id="04b78-140">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="04b78-141">Ez az elem az eltérést jelzi a szakértelem feltérképezésén felsorolt szint és a személy szakértelmének szintje között.</span><span class="sxs-lookup"><span data-stu-id="04b78-141">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
 
 

@@ -17,102 +17,102 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 38b60098daa0389af596920682c30dcd9b17a7fb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: aeb7d956560c513c08d5e20dcf20989b49137a52
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-containerization"></a>Tárolóra bontás beállítása
+# <a name="set-up-containerization"></a><span data-ttu-id="283a6-103">Tárolóra bontás beállítása</span><span class="sxs-lookup"><span data-stu-id="283a6-103">Set up containerization</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás azt mutatja be, hogy hogyan lehet automatizálni a szállítmányok tárolóra bontását a Raktárkezelésben. Az automatizált tárolóra bontás folyamat tárolókat és a szállítmányok kitárolási munkáját hozza létre, amikor a rendszer feldolgozza a hullámot és amikor a munkasorokat a tárolókhoz illeszkedő mennyiségekre lehet felosztani. Ez megkönnyíti a raktári dolgozóknak a cikkek egyenesen a kiválasztott tárolóba történő kitárolását. A kézi csomagolási folyamathoz képest olyan feladatok, mint például a tárolók létrehozása, a cikkek társítása, és a rendszer által automatizált tárolók lezárása. Ez az eljárás az USMF bemutató vállalatot használja, amelyet a raktárvezető végez.
+<span data-ttu-id="283a6-104">Ez az eljárás azt mutatja be, hogy hogyan lehet automatizálni a szállítmányok tárolóra bontását a Raktárkezelésben.</span><span class="sxs-lookup"><span data-stu-id="283a6-104">This procedure describes how to automate the containerization of loads in Warehouse management.</span></span> <span data-ttu-id="283a6-105">Az automatizált tárolóra bontás folyamat tárolókat és a szállítmányok kitárolási munkáját hozza létre, amikor a rendszer feldolgozza a hullámot és amikor a munkasorokat a tárolókhoz illeszkedő mennyiségekre lehet felosztani.</span><span class="sxs-lookup"><span data-stu-id="283a6-105">Automated containerization creates containers and the picking work for shipments when a wave is processed and work lines can be split into quantities that fit the containers.</span></span> <span data-ttu-id="283a6-106">Ez megkönnyíti a raktári dolgozóknak a cikkek egyenesen a kiválasztott tárolóba történő kitárolását.</span><span class="sxs-lookup"><span data-stu-id="283a6-106">This helps warehouse workers to pick the items directly into the chosen container.</span></span> <span data-ttu-id="283a6-107">A kézi csomagolási folyamathoz képest olyan feladatok, mint például a tárolók létrehozása, a cikkek társítása, és a rendszer által automatizált tárolók lezárása.</span><span class="sxs-lookup"><span data-stu-id="283a6-107">Compared to the manual packing process, tasks such as creating containers, assigning items, and closing containers are automated by the system.</span></span> <span data-ttu-id="283a6-108">Ez az eljárás az USMF bemutató vállalatot használja, amelyet a raktárvezető végez.</span><span class="sxs-lookup"><span data-stu-id="283a6-108">This procedure uses the USMF demo company and is performed by a Warehouse manager.</span></span>
 
 
-## <a name="set-up-a-wave-template"></a>Állítsa be a hullámsablon lehetőséget
-1. Ugorjon a Raktárkezelés > Beállítás > Hullám > Hullámsablonok pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Hullámsablon mezőbe.
-4. Írjon be egy értéket a Hullámsablon leírása mezőbe.
-5. A Hely mezőben adjon meg vagy válasszon ki egy értéket.
-6. A Raktár mezőben adjon meg vagy válasszon ki egy értéket.
-7. Bontsa ki a Módszerek szakaszt.
-    * A kiválasztott módszerek ablaktábláján megtalálhatóak a kiválasztott hullámsablon típusára vonatkozó módszerek. A hullámsablonnak tartalmaznia kell a tárolóra bontás módszert.  
-8. Keresse meg és jelölje ki a kívánt rekordot a listán.
-9. A Hullámlépés kódja mezőben írjon be egy értéket.
-    * Adjon meg egy hullámlépéskódot a hozzáadott módra vonatkozóan, amely bármilyen kód lehet. Egynél többször is hozzáadhatja a módszert, illetve különböző hullámlépéskódokat társíthat. Ehhez válassza ki a Megismételhető ennél a metódusnál a Hullámfeldolgozási módokban lapot.  
-10. Kattintson a Mentés gombra.
-11. Zárja be a lapot.
+## <a name="set-up-a-wave-template"></a><span data-ttu-id="283a6-109">Állítsa be a hullámsablon lehetőséget</span><span class="sxs-lookup"><span data-stu-id="283a6-109">Set up a wave template</span></span>
+1. <span data-ttu-id="283a6-110">Ugorjon a Raktárkezelés > Beállítás > Hullám > Hullámsablonok pontra.</span><span class="sxs-lookup"><span data-stu-id="283a6-110">Go to Warehouse management > Setup > Waves > Wave templates.</span></span>
+2. <span data-ttu-id="283a6-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="283a6-111">Click New.</span></span>
+3. <span data-ttu-id="283a6-112">Írjon be egy értéket a Hullámsablon mezőbe.</span><span class="sxs-lookup"><span data-stu-id="283a6-112">In the Wave template name field, type a value.</span></span>
+4. <span data-ttu-id="283a6-113">Írjon be egy értéket a Hullámsablon leírása mezőbe.</span><span class="sxs-lookup"><span data-stu-id="283a6-113">In the Wave template description field, type a value.</span></span>
+5. <span data-ttu-id="283a6-114">A Hely mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-114">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="283a6-115">A Raktár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-115">In the Warehouse field, enter or select a value.</span></span>
+7. <span data-ttu-id="283a6-116">Bontsa ki a Módszerek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="283a6-116">Expand the Methods section.</span></span>
+    * <span data-ttu-id="283a6-117">A kiválasztott módszerek ablaktábláján megtalálhatóak a kiválasztott hullámsablon típusára vonatkozó módszerek.</span><span class="sxs-lookup"><span data-stu-id="283a6-117">The Selected methods pane lists the methods for the selected wave template type.</span></span> <span data-ttu-id="283a6-118">A hullámsablonnak tartalmaznia kell a tárolóra bontás módszert.</span><span class="sxs-lookup"><span data-stu-id="283a6-118">The wave template must include the containerize method.</span></span>  
+8. <span data-ttu-id="283a6-119">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="283a6-119">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="283a6-120">A Hullámlépés kódja mezőben írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-120">In the Wave step code field, type a value.</span></span>
+    * <span data-ttu-id="283a6-121">Adjon meg egy hullámlépéskódot a hozzáadott módra vonatkozóan, amely bármilyen kód lehet.</span><span class="sxs-lookup"><span data-stu-id="283a6-121">Enter a Wave step code for the added method, which can be any code.</span></span> <span data-ttu-id="283a6-122">Egynél többször is hozzáadhatja a módszert, illetve különböző hullámlépéskódokat társíthat.</span><span class="sxs-lookup"><span data-stu-id="283a6-122">It’s possible to add the method more than once and assign different wave step codes.</span></span> <span data-ttu-id="283a6-123">Ehhez válassza ki a Megismételhető ennél a metódusnál a Hullámfeldolgozási módokban lapot.</span><span class="sxs-lookup"><span data-stu-id="283a6-123">To do this, select Repeatable for this method in the Wave process methods page.</span></span>  
+10. <span data-ttu-id="283a6-124">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="283a6-124">Click Save.</span></span>
+11. <span data-ttu-id="283a6-125">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="283a6-125">Close the page.</span></span>
 
-## <a name="set-up-a-container-type"></a>Tárolótípus beállítása
-1. Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolótípusok pontra.
-    * Meghatározhatja a tárolóit a Tárolótípusok lapon. Konfigurálhatja a tárolók fizikai dimenzióit, többek között a csomagolási súlyát, az össztömegét, a maximális térfogatát, a hosszúságát, a szélességét és a magasságát. Ebben a példában három különböző méretű doboz található.  
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Tároló típuskódja mezőbe.
-4. Adjon meg egy számot a Tárasúly mezőben.
-5. Adjon meg egy számot a Maximális súly mezőben.
-6. A Térfogat mezőben adjon meg egy számot.
-7. Adjon meg egy számot a Hosszúság mezőben.
-8. Adjon meg egy számot a Szélesség mezőben.
-9. Adjon meg egy számot a Magasság mezőben.
-10. A Leírás mezőben adjon meg egy értéket.
-11. Kattintson a Mentés gombra.
-12. Kattintson az Új lehetőségre.
-13. Írjon be egy értéket a Tároló típuskódja mezőbe.
-14. A Leírás mezőben adjon meg egy értéket.
-15. Adjon meg egy számot a Tárasúly mezőben.
-16. Adjon meg egy számot a Maximális súly mezőben.
-17. A Térfogat mezőben adjon meg egy számot.
-18. Adjon meg egy számot a Hosszúság mezőben.
-19. Adjon meg egy számot a Szélesség mezőben.
-20. Adjon meg egy számot a Magasság mezőben.
-21. Kattintson a Mentés gombra.
-22. Kattintson az Új lehetőségre.
-23. Írjon be egy értéket a Tároló típuskódja mezőbe.
-24. A Leírás mezőben adjon meg egy értéket.
-25. Adjon meg egy számot a Tárasúly mezőben.
-26. Adjon meg egy számot a Maximális súly mezőben.
-27. A Térfogat mezőben adjon meg egy számot.
-28. Adjon meg egy számot a Hosszúság mezőben.
-29. Adjon meg egy számot a Szélesség mezőben.
-30. Adjon meg egy számot a Magasság mezőben.
-31. Kattintson a Mentés gombra.
-32. Zárja be a lapot.
+## <a name="set-up-a-container-type"></a><span data-ttu-id="283a6-126">Tárolótípus beállítása</span><span class="sxs-lookup"><span data-stu-id="283a6-126">Set up a container type</span></span>
+1. <span data-ttu-id="283a6-127">Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolótípusok pontra.</span><span class="sxs-lookup"><span data-stu-id="283a6-127">Go to Warehouse management > Setup > Containers > Container types.</span></span>
+    * <span data-ttu-id="283a6-128">Meghatározhatja a tárolóit a Tárolótípusok lapon.</span><span class="sxs-lookup"><span data-stu-id="283a6-128">You can define your containers in the Container types page.</span></span> <span data-ttu-id="283a6-129">Konfigurálhatja a tárolók fizikai dimenzióit, többek között a csomagolási súlyát, az össztömegét, a maximális térfogatát, a hosszúságát, a szélességét és a magasságát.</span><span class="sxs-lookup"><span data-stu-id="283a6-129">You can configure the physical dimensions of containers including tare weight, maximum weight, maximum volume, length, width, and height.</span></span> <span data-ttu-id="283a6-130">Ebben a példában három különböző méretű doboz található.</span><span class="sxs-lookup"><span data-stu-id="283a6-130">In this example, we have three different sizes of boxes.</span></span>  
+2. <span data-ttu-id="283a6-131">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="283a6-131">Click New.</span></span>
+3. <span data-ttu-id="283a6-132">Írjon be egy értéket a Tároló típuskódja mezőbe.</span><span class="sxs-lookup"><span data-stu-id="283a6-132">In the Container type code field, type a value.</span></span>
+4. <span data-ttu-id="283a6-133">Adjon meg egy számot a Tárasúly mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-133">In the Tare weight field, enter a number.</span></span>
+5. <span data-ttu-id="283a6-134">Adjon meg egy számot a Maximális súly mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-134">In the Maximum weight field, enter a number.</span></span>
+6. <span data-ttu-id="283a6-135">A Térfogat mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="283a6-135">In the Volume field, enter a number.</span></span>
+7. <span data-ttu-id="283a6-136">Adjon meg egy számot a Hosszúság mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-136">In the Length field, enter a number.</span></span>
+8. <span data-ttu-id="283a6-137">Adjon meg egy számot a Szélesség mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-137">In the Width field, enter a number.</span></span>
+9. <span data-ttu-id="283a6-138">Adjon meg egy számot a Magasság mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-138">In the Height field, enter a number.</span></span>
+10. <span data-ttu-id="283a6-139">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-139">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="283a6-140">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="283a6-140">Click Save.</span></span>
+12. <span data-ttu-id="283a6-141">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="283a6-141">Click New.</span></span>
+13. <span data-ttu-id="283a6-142">Írjon be egy értéket a Tároló típuskódja mezőbe.</span><span class="sxs-lookup"><span data-stu-id="283a6-142">In the Container type code field, type a value.</span></span>
+14. <span data-ttu-id="283a6-143">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-143">In the Description field, type a value.</span></span>
+15. <span data-ttu-id="283a6-144">Adjon meg egy számot a Tárasúly mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-144">In the Tare weight field, enter a number.</span></span>
+16. <span data-ttu-id="283a6-145">Adjon meg egy számot a Maximális súly mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-145">In the Maximum weight field, enter a number.</span></span>
+17. <span data-ttu-id="283a6-146">A Térfogat mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="283a6-146">In the Volume field, enter a number.</span></span>
+18. <span data-ttu-id="283a6-147">Adjon meg egy számot a Hosszúság mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-147">In the Length field, enter a number.</span></span>
+19. <span data-ttu-id="283a6-148">Adjon meg egy számot a Szélesség mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-148">In the Width field, enter a number.</span></span>
+20. <span data-ttu-id="283a6-149">Adjon meg egy számot a Magasság mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-149">In the Height field, enter a number.</span></span>
+21. <span data-ttu-id="283a6-150">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="283a6-150">Click Save.</span></span>
+22. <span data-ttu-id="283a6-151">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="283a6-151">Click New.</span></span>
+23. <span data-ttu-id="283a6-152">Írjon be egy értéket a Tároló típuskódja mezőbe.</span><span class="sxs-lookup"><span data-stu-id="283a6-152">In the Container type code field, type a value.</span></span>
+24. <span data-ttu-id="283a6-153">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-153">In the Description field, type a value.</span></span>
+25. <span data-ttu-id="283a6-154">Adjon meg egy számot a Tárasúly mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-154">In the Tare weight field, enter a number.</span></span>
+26. <span data-ttu-id="283a6-155">Adjon meg egy számot a Maximális súly mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-155">In the Maximum weight field, enter a number.</span></span>
+27. <span data-ttu-id="283a6-156">A Térfogat mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="283a6-156">In the Volume field, enter a number.</span></span>
+28. <span data-ttu-id="283a6-157">Adjon meg egy számot a Hosszúság mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-157">In the Length field, enter a number.</span></span>
+29. <span data-ttu-id="283a6-158">Adjon meg egy számot a Szélesség mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-158">In the Width field, enter a number.</span></span>
+30. <span data-ttu-id="283a6-159">Adjon meg egy számot a Magasság mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-159">In the Height field, enter a number.</span></span>
+31. <span data-ttu-id="283a6-160">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="283a6-160">Click Save.</span></span>
+32. <span data-ttu-id="283a6-161">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="283a6-161">Close the page.</span></span>
 
-## <a name="set-up-a-container-group"></a>Tárolócsoport beállítása
-1. Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolócsoport azonosítója pontra.
-2. Kattintson az Új lehetőségre.
-    * A tárolótípusokat logikai alapon csoportokba vonhatja össze. Minden csoportban meghatározhatja a tárolók csomagolásának sorrendjét és a tárolók feltöltésének százalékát. A rendszer a cikkek méretadatai alapján dönti el, hogy bele fog-e férni egy adott tárolóba. Az alkalmazás azt a tárolót használja, amely legközelebb áll a kérdéses cikk méretéhez. Ha egy csoportban több tárolótípus is van, akkor érdemes őket méretsorrendbe rendezni, úgy, hogy a legnagyobb tároló legyen a lista tetején 1-es számmal, a legkisebb pedig az utolsó.    
-3. Írjon be egy értéket a Tárolócsoport azonosítója mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Kattintson az Új elemre.
-6. A listában jelölje meg a kiválasztott sort.
-7. A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.
-8. Kattintson az Új elemre.
-9. A listában jelölje meg a kiválasztott sort.
-10. A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.
-11. Kattintson az Új elemre.
-12. A listában jelölje meg a kiválasztott sort.
-13. A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.
-14. Kattintson a Mentés gombra.
-15. Zárja be a lapot.
+## <a name="set-up-a-container-group"></a><span data-ttu-id="283a6-162">Tárolócsoport beállítása</span><span class="sxs-lookup"><span data-stu-id="283a6-162">Set up a container group</span></span>
+1. <span data-ttu-id="283a6-163">Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolócsoport azonosítója pontra.</span><span class="sxs-lookup"><span data-stu-id="283a6-163">Go to Warehouse management > Setup > Containers > Container groups.</span></span>
+2. <span data-ttu-id="283a6-164">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="283a6-164">Click New.</span></span>
+    * <span data-ttu-id="283a6-165">A tárolótípusokat logikai alapon csoportokba vonhatja össze.</span><span class="sxs-lookup"><span data-stu-id="283a6-165">You can set up logical groups of container types.</span></span> <span data-ttu-id="283a6-166">Minden csoportban meghatározhatja a tárolók csomagolásának sorrendjét és a tárolók feltöltésének százalékát. A rendszer a cikkek méretadatai alapján dönti el, hogy bele fog-e férni egy adott tárolóba.</span><span class="sxs-lookup"><span data-stu-id="283a6-166">For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill.The size dimensions of the item is used to determine whether it will fit in a container.</span></span> <span data-ttu-id="283a6-167">Az alkalmazás azt a tárolót használja, amely legközelebb áll a kérdéses cikk méretéhez.</span><span class="sxs-lookup"><span data-stu-id="283a6-167">The container that is closest to the size dimensions of the item is used.</span></span> <span data-ttu-id="283a6-168">Ha egy csoportban több tárolótípus is van, akkor érdemes őket méretsorrendbe rendezni, úgy, hogy a legnagyobb tároló legyen a lista tetején 1-es számmal, a legkisebb pedig az utolsó.</span><span class="sxs-lookup"><span data-stu-id="283a6-168">If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.</span></span>    
+3. <span data-ttu-id="283a6-169">Írjon be egy értéket a Tárolócsoport azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="283a6-169">In the Container group ID field, type a value.</span></span>
+4. <span data-ttu-id="283a6-170">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-170">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="283a6-171">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="283a6-171">Click New.</span></span>
+6. <span data-ttu-id="283a6-172">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="283a6-172">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="283a6-173">A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-173">In the Container type field, enter or select a value.</span></span>
+8. <span data-ttu-id="283a6-174">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="283a6-174">Click New.</span></span>
+9. <span data-ttu-id="283a6-175">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="283a6-175">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="283a6-176">A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-176">In the Container type field, enter or select a value.</span></span>
+11. <span data-ttu-id="283a6-177">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="283a6-177">Click New.</span></span>
+12. <span data-ttu-id="283a6-178">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="283a6-178">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="283a6-179">A tárolótípus mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-179">In the Container type field, enter or select a value.</span></span>
+14. <span data-ttu-id="283a6-180">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="283a6-180">Click Save.</span></span>
+15. <span data-ttu-id="283a6-181">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="283a6-181">Close the page.</span></span>
 
-## <a name="set-up-a-container-build-template"></a>Tárolóépítési sablon beállítása
-1. Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolóépítési sablonok pontra.
-2. Kattintson az Új lehetőségre.
-    * A tárolóépítési sablon azon alapul, amelyen a tároló-létrehozási folyamatait elvégzik. Minden egyes tárolóépítési sablon meghatároz egy hullámsablon által használandó tároló-létrehozási folyamatot. A szerkesztési lekérdezés beállítással meghatározhatja azokat a feltételeket, amelyek alapján a kiválasztott sablonokat feldolgozza. Például az is lehetséges, hogy csak a Tárolóra bontást futtatja a bizonyos vevőkre, a termékekre vagy a raktárakra vonatkozóan, vagy hozzáadhatja a sablonokhoz a megfeleltetési lekérdezési tartományokat. A Hullámlépéskód mező a tárolóépítési sablon a hullámsablonban található lépésekhez történő kapcsolódásának módját jelenti. Amikor végrehajtja a rendszer a hullámot, meghatározza, hogy a rendszer mely tárolóépítési sablon(ok)at használja fel a Tárolóra bontás folyamatának kezdeményezésére. Az Alap lekérdezéstípusok mezőben meghatározza a becsomagolni kívánt terméket és a szűrőlekérdezés alapját.  
-3. A listában jelölje meg a kiválasztott sort.
-4. Írjon be egy értéket a Tárolósablon azonosítója mezőbe.
-5. A Tárolócsoport azonosítója mezőben adjon meg, vagy válasszon ki egy értéket.
-6. A Hullámlépés kódja mezőben írjon be egy értéket.
-7. Jelölje be a Kitárolások szétosztásának engedélyezése jelölőnégyzetet.
-8. Kattintson a Mentés gombra.
-9. Kattintson a Tárolóvegyesítési megszorítások lehetőségre.
-    * A Vegyítési logika felbontásai lehetővé teszik a szabályok felállítását a felosztási sorok tárolóba való csomagolásához. Például ha hozzáadja a Cikkszám mezőt, amikor a rendszer a cikkeket a tárolóhoz rendeli, egy új tárolót hoz létre egy új cikkszám esetén. A rendszer így megakadályozza, hogy a munkavállalók két különböző vevőhöz tartozó felosztási sort ugyanabba a tárolóba csomagoljanak.  
-10. Kattintson az Új lehetőségre.
-11. Válasszon ki egy lehetőséget a Tábla mezőben.
-12. A Mezőválasztás mezőben adjon meg vagy válasszon ki egy értéket.
-13. Kattintson az OK gombra.
+## <a name="set-up-a-container-build-template"></a><span data-ttu-id="283a6-182">Tárolóépítési sablon beállítása</span><span class="sxs-lookup"><span data-stu-id="283a6-182">Set up a container build template</span></span>
+1. <span data-ttu-id="283a6-183">Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolóépítési sablonok pontra.</span><span class="sxs-lookup"><span data-stu-id="283a6-183">Go to Warehouse management > Setup > Containers > Container build templates.</span></span>
+2. <span data-ttu-id="283a6-184">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="283a6-184">Click New.</span></span>
+    * <span data-ttu-id="283a6-185">A tárolóépítési sablon azon alapul, amelyen a tároló-létrehozási folyamatait elvégzik.</span><span class="sxs-lookup"><span data-stu-id="283a6-185">The container build template is based on which of the containerization processes are performed.</span></span> <span data-ttu-id="283a6-186">Minden egyes tárolóépítési sablon meghatároz egy hullámsablon által használandó tároló-létrehozási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="283a6-186">Each container build template defines one containerization process that will be used by a wave template.</span></span> <span data-ttu-id="283a6-187">A szerkesztési lekérdezés beállítással meghatározhatja azokat a feltételeket, amelyek alapján a kiválasztott sablonokat feldolgozza.</span><span class="sxs-lookup"><span data-stu-id="283a6-187">The Edit query option allows you to define the conditions on which the selected template will be processed.</span></span> <span data-ttu-id="283a6-188">Például az is lehetséges, hogy csak a Tárolóra bontást futtatja a bizonyos vevőkre, a termékekre vagy a raktárakra vonatkozóan, vagy hozzáadhatja a sablonokhoz a megfeleltetési lekérdezési tartományokat.</span><span class="sxs-lookup"><span data-stu-id="283a6-188">For example, you may want to only run containerization for specific customers, products, or warehouses or you can add the corresponding query ranges to the template.</span></span> <span data-ttu-id="283a6-189">A Hullámlépéskód mező a tárolóépítési sablon a hullámsablonban található lépésekhez történő kapcsolódásának módját jelenti.</span><span class="sxs-lookup"><span data-stu-id="283a6-189">The Wave step code field is how a container build template is linked to steps in a wave template.</span></span> <span data-ttu-id="283a6-190">Amikor végrehajtja a rendszer a hullámot, meghatározza, hogy a rendszer mely tárolóépítési sablon(ok)at használja fel a Tárolóra bontás folyamatának kezdeményezésére.</span><span class="sxs-lookup"><span data-stu-id="283a6-190">When a wave is executed, it determines which container build template(s) are used to initiate containerization.</span></span> <span data-ttu-id="283a6-191">Az Alap lekérdezéstípusok mezőben meghatározza a becsomagolni kívánt terméket és a szűrőlekérdezés alapját.</span><span class="sxs-lookup"><span data-stu-id="283a6-191">The Base query type field determines what to pack and what to base the filter query on.</span></span>  
+3. <span data-ttu-id="283a6-192">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="283a6-192">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="283a6-193">Írjon be egy értéket a Tárolósablon azonosítója mezőbe.</span><span class="sxs-lookup"><span data-stu-id="283a6-193">In the Container template ID field, type a value.</span></span>
+5. <span data-ttu-id="283a6-194">A Tárolócsoport azonosítója mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-194">In the Container group ID field, enter or select a value.</span></span>
+6. <span data-ttu-id="283a6-195">A Hullámlépés kódja mezőben írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-195">In the Wave step code field, type a value.</span></span>
+7. <span data-ttu-id="283a6-196">Jelölje be a Kitárolások szétosztásának engedélyezése jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="283a6-196">Select the Allow split picks check box.</span></span>
+8. <span data-ttu-id="283a6-197">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="283a6-197">Click Save.</span></span>
+9. <span data-ttu-id="283a6-198">Kattintson a Tárolóvegyesítési megszorítások lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="283a6-198">Click Containier mixing constraints.</span></span>
+    * <span data-ttu-id="283a6-199">A Vegyítési logika felbontásai lehetővé teszik a szabályok felállítását a felosztási sorok tárolóba való csomagolásához.</span><span class="sxs-lookup"><span data-stu-id="283a6-199">Mixing logic breaks allows you to set up rules for packing allocation lines in containers.</span></span> <span data-ttu-id="283a6-200">Például ha hozzáadja a Cikkszám mezőt, amikor a rendszer a cikkeket a tárolóhoz rendeli, egy új tárolót hoz létre egy új cikkszám esetén.</span><span class="sxs-lookup"><span data-stu-id="283a6-200">For example, if you add the Item number field, when items are assigned to containers, a new container will be created when there is a new item number.</span></span> <span data-ttu-id="283a6-201">A rendszer így megakadályozza, hogy a munkavállalók két különböző vevőhöz tartozó felosztási sort ugyanabba a tárolóba csomagoljanak.</span><span class="sxs-lookup"><span data-stu-id="283a6-201">This is will prevent workers from packing allocations lines for two different customers in the same container.</span></span>  
+10. <span data-ttu-id="283a6-202">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="283a6-202">Click New.</span></span>
+11. <span data-ttu-id="283a6-203">Válasszon ki egy lehetőséget a Tábla mezőben.</span><span class="sxs-lookup"><span data-stu-id="283a6-203">In the Table field, select an option.</span></span>
+12. <span data-ttu-id="283a6-204">A Mezőválasztás mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="283a6-204">In the Field Select field, enter or select a value.</span></span>
+13. <span data-ttu-id="283a6-205">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="283a6-205">Click OK.</span></span>
 
 

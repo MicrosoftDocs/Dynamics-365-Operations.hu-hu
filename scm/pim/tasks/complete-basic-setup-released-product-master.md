@@ -16,51 +16,51 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1c7c499b3df92fee5010c731e331e711ea0d1883
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c42476ca3ffee41e303457150ef15da0f5af8a8f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="complete-basic-setup-of-a-released-product-master"></a>Kiadott alaptermék alapbeállításának kitöltése
+# <a name="complete-basic-setup-of-a-released-product-master"></a><span data-ttu-id="6e2fa-103">Kiadott alaptermék alapbeállításának kitöltése</span><span class="sxs-lookup"><span data-stu-id="6e2fa-103">Complete basic setup of a released product master</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan kell elvégezni azt a minimális beállítást, amely szükséges ahhoz, hogy az alapterméket használni lehessen az Anyagjegyzék-verziókban.
+<span data-ttu-id="6e2fa-104">Ez az eljárás bemutatja, hogyan kell elvégezni azt a minimális beállítást, amely szükséges ahhoz, hogy az alapterméket használni lehessen az Anyagjegyzék-verziókban.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-104">This procedure shows how to complete the minimum setup that is required before the product master can be used in BOM versions.</span></span>
 
-Ez a harmadik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti. Ez az eljárás az USMF bemutatócéget használja.
+<span data-ttu-id="6e2fa-105">Ez a harmadik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-105">This is the third procedure out of eight which explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="6e2fa-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.
-2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Válassza ki azt az alapterméket, amelyet a második eljárásban kiadott. Ezt az alapterméket a dimenzión alapuló konfigurációs technológiával hozta létre.  
-3. A Művelet panelen kattintson a Termék elemre.
-4. A Méretcsoportok gombra kattintva megnyithatja a legördülő párbeszédablakot.
-5. A Tárolási dimenzió csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * A tárolásidimenzió-csoport határozza meg, hogy mely tárolási dimenziókat használja a termék tranzakciójához. Jelölje be az eljáráshoz szükséges helyet.  
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. A Nyomon követési dimenzió csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-9. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * A nyomonkövetésidimenzió-csoport határozza meg, hogy mely nyomon követési dimenziókat használja a termék tranzakciójához. Jelölje be az eljáráshoz a Nincs lehetőséget.  
-10. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-11. Kattintson az OK gombra.
-12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-13. Kattintson a Szerkesztés lehetőségre.
-    * A feladat beállítása érdekében nyissa meg a Kiadott termék részletei képernyőt.  
-14. A Cikkmodellcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-15. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * A Cikkmodellcsoportok olyan beállításokat tartalmaznak, amelyek meghatározzák, hogy a rendszer hogyan kezelje a cikkeket a cikkbevételezéseknél és -kiadásoknál. Meghatározzák továbbá a cikkfelhasználás számítását is. Jelölje be az eljáráshoz szükséges FIFO-t.  
-16. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-17. Bontsa ki vagy zárja be a Költségek kezelése szakaszt.
-18. A Cikkcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-19. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Ezen a képernyőn a cikkeket cikkjellemzők szerint csoportosítva kezelheti a készletet. Jelölje be az eljáráshoz a CarAudio lehetőséget.  
-20. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-21. A Művelet panelen kattintson a Terv elemre.
-22. Kattintson az Alapértelmezett rendelésbeállítások elemre.
-23. Az Alapértelmezett rendelés típusa mezőben válasszon ki egy lehetőséget.
-    * Válassza ki a Termelést, ha az alaptermékhez tartozó alapértelmezett ellátási beállítás az előállítás.  
-24. Zárja be a lapot.
-25. Zárja be a Kiadott termék részletei képernyőt.
+1. <span data-ttu-id="6e2fa-107">Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-107">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="6e2fa-108">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6e2fa-109">Válassza ki azt az alapterméket, amelyet a második eljárásban kiadott.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-109">Select the product master that you have released in the second procedure.</span></span> <span data-ttu-id="6e2fa-110">Ezt az alapterméket a dimenzión alapuló konfigurációs technológiával hozta létre.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-110">This product master is created with the dimension-based configuration technology.</span></span>  
+3. <span data-ttu-id="6e2fa-111">A Művelet panelen kattintson a Termék elemre.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-111">On the Action Pane, click Product.</span></span>
+4. <span data-ttu-id="6e2fa-112">A Méretcsoportok gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-112">Click Dimension groups to open the drop dialog.</span></span>
+5. <span data-ttu-id="6e2fa-113">A Tárolási dimenzió csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-113">In the Storage dimension group field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="6e2fa-114">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-114">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6e2fa-115">A tárolásidimenzió-csoport határozza meg, hogy mely tárolási dimenziókat használja a termék tranzakciójához.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-115">The storage dimension group determines which storage dimensions are used for product transaction.</span></span> <span data-ttu-id="6e2fa-116">Jelölje be az eljáráshoz szükséges helyet.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-116">Select Site for this procedure.</span></span>  
+7. <span data-ttu-id="6e2fa-117">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-117">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="6e2fa-118">A Nyomon követési dimenzió csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-118">In the Tracking dimension group field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="6e2fa-119">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-119">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6e2fa-120">A nyomonkövetésidimenzió-csoport határozza meg, hogy mely nyomon követési dimenziókat használja a termék tranzakciójához.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-120">The tracking dimension group determines which tracking dimensions are used for product transaction.</span></span> <span data-ttu-id="6e2fa-121">Jelölje be az eljáráshoz a Nincs lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-121">Select None for this procedure.</span></span>  
+10. <span data-ttu-id="6e2fa-122">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-122">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="6e2fa-123">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-123">Click OK.</span></span>
+12. <span data-ttu-id="6e2fa-124">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-124">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="6e2fa-125">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-125">Click Edit.</span></span>
+    * <span data-ttu-id="6e2fa-126">A feladat beállítása érdekében nyissa meg a Kiadott termék részletei képernyőt.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-126">Open the Released product details form to continue the setup task.</span></span>  
+14. <span data-ttu-id="6e2fa-127">A Cikkmodellcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-127">In the Item model group field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="6e2fa-128">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-128">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6e2fa-129">A Cikkmodellcsoportok olyan beállításokat tartalmaznak, amelyek meghatározzák, hogy a rendszer hogyan kezelje a cikkeket a cikkbevételezéseknél és -kiadásoknál.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-129">Item model groups contain settings that determine how items are controlled and handled on item receipts and issues.</span></span> <span data-ttu-id="6e2fa-130">Meghatározzák továbbá a cikkfelhasználás számítását is.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-130">They also determine how item consumption is calculated.</span></span> <span data-ttu-id="6e2fa-131">Jelölje be az eljáráshoz szükséges FIFO-t.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-131">Select   FIFO for this procedure.</span></span>  
+16. <span data-ttu-id="6e2fa-132">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-132">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="6e2fa-133">Bontsa ki vagy zárja be a Költségek kezelése szakaszt.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-133">Expand or collapse the Manage costs section.</span></span>
+18. <span data-ttu-id="6e2fa-134">A Cikkcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-134">In the Item group field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="6e2fa-135">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-135">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6e2fa-136">Ezen a képernyőn a cikkeket cikkjellemzők szerint csoportosítva kezelheti a készletet.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-136">Item groups are used to manage inventory by dividing inventory items into groups.</span></span> <span data-ttu-id="6e2fa-137">Jelölje be az eljáráshoz a CarAudio lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-137">Select   CarAudio for this procedure.</span></span>  
+20. <span data-ttu-id="6e2fa-138">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-138">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="6e2fa-139">A Művelet panelen kattintson a Terv elemre.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-139">On the Action Pane, click Plan.</span></span>
+22. <span data-ttu-id="6e2fa-140">Kattintson az Alapértelmezett rendelésbeállítások elemre.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-140">Click Default order settings.</span></span>
+23. <span data-ttu-id="6e2fa-141">Az Alapértelmezett rendelés típusa mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-141">In the Default order type field, select an option.</span></span>
+    * <span data-ttu-id="6e2fa-142">Válassza ki a Termelést, ha az alaptermékhez tartozó alapértelmezett ellátási beállítás az előállítás.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-142">Select Production to specify that the default supply option for this product master is to produce it.</span></span>  
+24. <span data-ttu-id="6e2fa-143">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-143">Close the page.</span></span>
+25. <span data-ttu-id="6e2fa-144">Zárja be a Kiadott termék részletei képernyőt.</span><span class="sxs-lookup"><span data-stu-id="6e2fa-144">Close the Released product details form.</span></span>
 
 

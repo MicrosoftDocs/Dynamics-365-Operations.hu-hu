@@ -23,24 +23,24 @@ ms.contentlocale: hu-hu
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="set-up-transportation-constraints-for-an-item"></a>Egy elemre vonatkozó szállítási megszorítások beállítása
+# <a name="set-up-transportation-constraints-for-an-item"></a><span data-ttu-id="f0f2e-103">Egy elemre vonatkozó szállítási megszorítások beállítása</span><span class="sxs-lookup"><span data-stu-id="f0f2e-103">Set up transportation constraints for an item</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás állítja be a szállítási megszorításokat annak érdekében, hogy megakadályozza a kiválasztott cikk egy kijelölt központon keresztül történő szállítását. Általában ezt a feladatot egy Szállítási koordinátor végzi el. Ezt a folyamatot az USMF bemutatócégnél vagy a saját adataiban is használhatja.
+<span data-ttu-id="f0f2e-104">Ez az eljárás állítja be a szállítási megszorításokat annak érdekében, hogy megakadályozza a kiválasztott cikk egy kijelölt központon keresztül történő szállítását.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-104">This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.</span></span> <span data-ttu-id="f0f2e-105">Általában ezt a feladatot egy Szállítási koordinátor végzi el.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-105">This task would typically be carried out by a Transportation coordinator.</span></span> <span data-ttu-id="f0f2e-106">Ezt a folyamatot az USMF bemutatócégnél vagy a saját adataiban is használhatja.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-106">You can use this procedure in the USMF demo data company or on your own data.</span></span>
 
 
-## <a name="create-an-item-constaint"></a>Cikkmegszorítás létrehozása
-1. Ugorjon a Megszorítások pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a megszorítás mezőbe.
-4. Írjon be egy értéket a Név mezőbe.
-5. A Hely mezőben adjon meg vagy válasszon ki egy értéket.
-6. A Raktár mezőben adjon meg vagy válasszon ki egy értéket.
-7. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-8. A Központ mezőben adjon meg vagy válasszon ki egy értéket.
-9. Válasszon ki egy lehetőséget a Megszorítás művelet mezőben.
-10. Kattintson a Mentés gombra.
-11. Zárja be a lapot.
+## <a name="create-an-item-constaint"></a><span data-ttu-id="f0f2e-107">Cikkmegszorítás létrehozása</span><span class="sxs-lookup"><span data-stu-id="f0f2e-107">Create an item constaint</span></span>
+1. <span data-ttu-id="f0f2e-108">Ugorjon a Megszorítások pontra.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-108">Go to Constraints.</span></span>
+2. <span data-ttu-id="f0f2e-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-109">Click New.</span></span>
+3. <span data-ttu-id="f0f2e-110">Írjon be egy értéket a megszorítás mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-110">In the Item constraint field, type a value.</span></span>
+4. <span data-ttu-id="f0f2e-111">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="f0f2e-112">A Hely mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-112">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="f0f2e-113">A Raktár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-113">In the Warehouse field, enter or select a value.</span></span>
+7. <span data-ttu-id="f0f2e-114">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-114">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="f0f2e-115">A Központ mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-115">In the Hub field, enter or select a value.</span></span>
+9. <span data-ttu-id="f0f2e-116">Válasszon ki egy lehetőséget a Megszorítás művelet mezőben.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-116">In the Constraint action field, select an option.</span></span>
+10. <span data-ttu-id="f0f2e-117">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-117">Click Save.</span></span>
+11. <span data-ttu-id="f0f2e-118">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="f0f2e-118">Close the page.</span></span>
 
 

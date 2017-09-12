@@ -25,222 +25,222 @@ ms.lasthandoff: 08/10/2017
 
 ---
 
-# <a name="expense-management-mobile-workspace"></a>Költségkezelési mobil munkaterület
+# <a name="expense-management-mobile-workspace"></a><span data-ttu-id="3b8b6-105">Költségkezelési mobil munkaterület</span><span class="sxs-lookup"><span data-stu-id="3b8b6-105">Expense management mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör a **Költséggazdálkodás** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket. Ezenkívül a jóváhagyók a **Költséggazdálkodás** mobil munkaterület segítségével megtekinthetik a hozzájuk rendelt költségjelentéseket, majd jóváhagyhatják vagy elutasíthatják az adott költségjelentéseket.
+<span data-ttu-id="3b8b6-106">Ez a témakör a **Költséggazdálkodás** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-106">This topic provides information about the **Expense management** mobile workspace.</span></span> <span data-ttu-id="3b8b6-107">A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-107">This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later.</span></span> <span data-ttu-id="3b8b6-108">A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-108">Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports.</span></span> <span data-ttu-id="3b8b6-109">Ezenkívül a jóváhagyók a **Költséggazdálkodás** mobil munkaterület segítségével megtekinthetik a hozzájuk rendelt költségjelentéseket, majd jóváhagyhatják vagy elutasíthatják az adott költségjelentéseket.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-109">Additionally, approvers can use the **Expense management** mobile workspace to view expense reports that are assigned to them, and either approve or reject those expense reports.</span></span>
 
 
-A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban való használatra tervezték.
+<span data-ttu-id="3b8b6-110">A mobil munkaterületet a Microsoft Dynamics 365 for Unified Operations mobilalkalmazásban való használatra tervezték.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-110">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
 
 
-## <a name="overview"></a>Áttekintés
+## <a name="overview"></a><span data-ttu-id="3b8b6-111">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="3b8b6-111">Overview</span></span>
 
-Számos szervezet megköveteli, hogy a nyugta egy példányát csatolja az utazással kapcsolatos vagy az üzleti vonatkozású költségjelentéshez az alkalmazott, amikor visszatérítést igényel. A **Költséggazdálkodás** mobil munkaterület lehetővé teszi a felhasználók számára, hogy gyorsan új költségsorokat hozzanak létre a választott mobileszközön a nyugta csatolt fényképével. Alternatív megoldásként a felhasználók rögzíthetnek egy fényképet a nyugtáról, majd később egy költségjelentéshez csatolhatják azt. Az alkalmazottak maguk is létrehozhatják és kezelhetik a költségjelentéseiket, majd beküldhetik őket jóváhagyásra és visszatérítésre a mobileszközük használatával.
+<span data-ttu-id="3b8b6-112">Számos szervezet megköveteli, hogy a nyugta egy példányát csatolja az utazással kapcsolatos vagy az üzleti vonatkozású költségjelentéshez az alkalmazott, amikor visszatérítést igényel.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-112">Many organizations require that a copy of a receipt be attached to a travel-related or business-related expense report that an employee submits for reimbursement.</span></span> <span data-ttu-id="3b8b6-113">A **Költséggazdálkodás** mobil munkaterület lehetővé teszi a felhasználók számára, hogy gyorsan új költségsorokat hozzanak létre a választott mobileszközön a nyugta csatolt fényképével.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-113">The **Expense management** mobile workspace lets users quickly create new expense lines on the mobile device of their choice by using an attached photo of a receipt.</span></span> <span data-ttu-id="3b8b6-114">Alternatív megoldásként a felhasználók rögzíthetnek egy fényképet a nyugtáról, majd később egy költségjelentéshez csatolhatják azt.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-114">Alternatively, users can capture a photo of a receipt and then attach it to an expense report later.</span></span> <span data-ttu-id="3b8b6-115">Az alkalmazottak maguk is létrehozhatják és kezelhetik a költségjelentéseiket, majd beküldhetik őket jóváhagyásra és visszatérítésre a mobileszközük használatával.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-115">Employees can also create and manage their expense reports, and then submit them for approval and reimbursement by using their mobile device.</span></span>
 
 
-A **Költségkezelés** mobil munkaterület használatával a felhasználók a következő feladatokat hajthatják végre:
+<span data-ttu-id="3b8b6-116">A **Költségkezelés** mobil munkaterület használatával a felhasználók a következő feladatokat hajthatják végre:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-116">Specifically, the **Expense management** mobile workspace lets users perform these tasks:</span></span>
 
-- Készítsen fotót a nyugtáról, és töltse azt fel a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition szolgáltatásba. A fotót később is csatolhatja a költségjelentéshez.
-- Fájl feltöltése rögzített nyugtaként. A fájlt később is csatolhatja a költségjelentéshez.
-- Új költségsor létrehozása csatolt nyugta használatával. Később is hozzáadhatja a sort a költségjelentéshez, majd beküldheti azt jóváhagyás és visszatérítés céljából.
+- <span data-ttu-id="3b8b6-117">Készítsen fotót a nyugtáról, és töltse azt fel a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition szolgáltatásba.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-117">Take a photo of a receipt, and upload it to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="3b8b6-118">A fotót később is csatolhatja a költségjelentéshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-118">You can then attach that photo to an expense report later.</span></span>
+- <span data-ttu-id="3b8b6-119">Fájl feltöltése rögzített nyugtaként.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-119">Upload a file as a captured receipt.</span></span> <span data-ttu-id="3b8b6-120">A fájlt később is csatolhatja a költségjelentéshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-120">You can then attach that file to an expense report later.</span></span>
+- <span data-ttu-id="3b8b6-121">Új költségsor létrehozása csatolt nyugta használatával.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-121">Create a new expense line by using an attached receipt.</span></span> <span data-ttu-id="3b8b6-122">Később is hozzáadhatja a sort a költségjelentéshez, majd beküldheti azt jóváhagyás és visszatérítés céljából.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-122">You can then add the line item to an expense report later, and submit it for approval and reimbursement.</span></span>
 
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését használja, a következő funkciók is elérhetők:
+<span data-ttu-id="3b8b6-123">Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését használja, a következő funkciók is elérhetők:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-123">If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can also use these features:</span></span>
 
-- Új költségjelentés készítése.
-- Hitelkártya-tranzakciók és egyéb, korábban létrehozott költségek csatolása egy költségjelentéshez.
-- Új költségek létrehozása egy költségjelentéshez.
-- Nyugta csatolása egy költségjelentéshez tartozó bármely költséghez vagy fénykép készítése által, vagy egy rögzített nyugta képfájljának feltöltésével.
-- A vállalat költségirányelveitől függően vendégek listáját is hozzáadhatja egy költséghez.
-- A vállalat költségirányelveitől függően a költségek részletezése is lehetséges.
-- Költségjelentés benyújtása jóváhagyásra és visszatérítésre.
-- Jóváhagyhatja vagy elutasíthatja az olyan költségjelentéseket, amelyeknek Ön a hozzárendelt jóváhagyója.
+- <span data-ttu-id="3b8b6-124">Új költségjelentés készítése.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-124">Create a new expense report.</span></span>
+- <span data-ttu-id="3b8b6-125">Hitelkártya-tranzakciók és egyéb, korábban létrehozott költségek csatolása egy költségjelentéshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-125">Attach credit card transactions and other previously created expenses to an expense report.</span></span>
+- <span data-ttu-id="3b8b6-126">Új költségek létrehozása egy költségjelentéshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-126">Create new expenses for an expense report.</span></span>
+- <span data-ttu-id="3b8b6-127">Nyugta csatolása egy költségjelentéshez tartozó bármely költséghez vagy fénykép készítése által, vagy egy rögzített nyugta képfájljának feltöltésével.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-127">Attach a receipt to any expense for an expense report, either by taking a photo of the receipt or by uploading a file as a captured receipt.</span></span>
+- <span data-ttu-id="3b8b6-128">A vállalat költségirányelveitől függően vendégek listáját is hozzáadhatja egy költséghez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-128">Depending on the company's expense policy, add the list of guests to an expense.</span></span>
+- <span data-ttu-id="3b8b6-129">A vállalat költségirányelveitől függően a költségek részletezése is lehetséges.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-129">Depending on the company's expense policy, itemize expenses.</span></span>
+- <span data-ttu-id="3b8b6-130">Költségjelentés benyújtása jóváhagyásra és visszatérítésre.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-130">Submit an expense report for approval and reimbursement.</span></span>
+- <span data-ttu-id="3b8b6-131">Jóváhagyhatja vagy elutasíthatja az olyan költségjelentéseket, amelyeknek Ön a hozzárendelt jóváhagyója.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-131">Approve or reject expense reports that you're an assigned approver for.</span></span>
 
-## <a name="prerequisites"></a>Előfeltételek
-Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
+## <a name="prerequisites"></a><span data-ttu-id="3b8b6-132">Előfeltételek</span><span class="sxs-lookup"><span data-stu-id="3b8b6-132">Prerequisites</span></span>
+<span data-ttu-id="3b8b6-133">Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-133">The prerequisites vary, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás 2017. júliusi frissítését használja 
-Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését, a rendszergazdának közzé kell tennie a **Költséggazdálkodás** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a><span data-ttu-id="3b8b6-134">Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás 2017. júliusi frissítését használja</span><span class="sxs-lookup"><span data-stu-id="3b8b6-134">Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</span></span> 
+<span data-ttu-id="3b8b6-135">Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi frissítését, a rendszergazdának közzé kell tennie a **Költséggazdálkodás** mobil munkaterület.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-135">If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace.</span></span> <span data-ttu-id="3b8b6-136">Utasításokért lásd: [Mobil munkaterület közzététele](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span><span class="sxs-lookup"><span data-stu-id="3b8b6-136">For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, 1611-es verzióját használja a 3-as vagy újabb platformfrissítéssel
-Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a szervezeténél a 3-as vagy újabb platformfrissítéssel, akkor a rendszergazdának a következő előfeltételeket kell teljesítenie. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a><span data-ttu-id="3b8b6-137">Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, 1611-es verzióját használja a 3-as vagy újabb platformfrissítéssel</span><span class="sxs-lookup"><span data-stu-id="3b8b6-137">Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later</span></span>
+<span data-ttu-id="3b8b6-138">Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a szervezeténél a 3-as vagy újabb platformfrissítéssel, akkor a rendszergazdának a következő előfeltételeket kell teljesítenie.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-138">If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.</span></span> 
 
 <table>
 <thead>
 <tr class="header">
-<th>Előfeltételek</th>
-<th>Szerep</th>
-<th>Leírás</th>
+<th><span data-ttu-id="3b8b6-139">Előfeltételek</span><span class="sxs-lookup"><span data-stu-id="3b8b6-139">Prerequisite</span></span></th>
+<th><span data-ttu-id="3b8b6-140">Szerep</span><span class="sxs-lookup"><span data-stu-id="3b8b6-140">Role</span></span></th>
+<th><span data-ttu-id="3b8b6-141">Leírás</span><span class="sxs-lookup"><span data-stu-id="3b8b6-141">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Telepítse a KB 4019015 programot.</td>
-<td>Rendszergazda</td>
-<td>A 4019015-es tudásbáziscikk egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza a <strong>Költséggazdálkodás</strong> mobil munkaterületet. A KB 4019015 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
+<td><span data-ttu-id="3b8b6-142">Telepítse a KB 4019015 programot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-142">Implement KB 4019015.</span></span></td>
+<td><span data-ttu-id="3b8b6-143">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="3b8b6-143">System administrator</span></span></td>
+<td><span data-ttu-id="3b8b6-144">A 4019015-es tudásbáziscikk egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza a <strong>Költséggazdálkodás</strong> mobil munkaterületet.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-144">KB 4019015 is an X++ update or metadata hotfix that contains the <strong>Expense management</strong> mobile workspace.</span></span> <span data-ttu-id="3b8b6-145">A KB 4019015 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-145">To implement KB 4019015, your system administrator must follow these steps.</span></span>
 <ol>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Töltse le a metaadatok gyorsjavítását a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza az <strong>ApplicationSuite</strong> és az <strong>ExpenseMobile</strong> modelleket, majd töltse fel a telepíthető csomagot az LCS-be.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza telepíthető csomagot</a>.</li>
+<li><span data-ttu-id="3b8b6-146"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Töltse le a metaadatok gyorsjavítását a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból</a>.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-146"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</span></span></li>
+<li><span data-ttu-id="3b8b6-147"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-147"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</span></span></li>
+<li><span data-ttu-id="3b8b6-148"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza az <strong>ApplicationSuite</strong> és az <strong>ExpenseMobile</strong> modelleket, majd töltse fel a telepíthető csomagot az LCS-be.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-148"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ExpenseMobile</strong> models, and then upload the deployable package to LCS.</span></span></li>
+<li><span data-ttu-id="3b8b6-149"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza telepíthető csomagot</a>.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-149"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Tegye közzé a <strong>Költségkezelés</strong> mobil munkaterületet.</td>
-<td>Rendszergazda</td>
-<td>Lásd: <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobil munkaterület közzététele</a>.</td>
+<td><span data-ttu-id="3b8b6-150">Tegye közzé a <strong>Költségkezelés</strong> mobil munkaterületet.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-150">Publish the <strong>Expense management</strong> mobile workspace.</span></span></td>
+<td><span data-ttu-id="3b8b6-151">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="3b8b6-151">System administrator</span></span></td>
+<td><span data-ttu-id="3b8b6-152">Lásd: <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Mobil munkaterület közzététele</a>.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-152">See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Töltse le és telepítse a Dynamics 365 for Operations mobilalkalmazást
-Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a><span data-ttu-id="3b8b6-153">Töltse le és telepítse a Dynamics 365 for Operations mobilalkalmazást</span><span class="sxs-lookup"><span data-stu-id="3b8b6-153">Download and install the Dynamics 365 for Operations mobile app</span></span>
+<span data-ttu-id="3b8b6-154">Töltse le és telepítse a Dynamics 365 for Unified Operations mobilalkalmazást:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-154">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
-- [Android-telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
-- [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)
+- [<span data-ttu-id="3b8b6-155">Android-telefonok esetében:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-155">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+- [<span data-ttu-id="3b8b6-156">iPhone esetében:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-156">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a>Bejelentkezés a mobilalkalmazásba
-1. Indítsa el az alkalmazást a mobileszközén.
-2. Adja meg a Dynamics 365 URL-címét.
-4. Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
-5. A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="3b8b6-157">Bejelentkezés a mobilalkalmazásba</span><span class="sxs-lookup"><span data-stu-id="3b8b6-157">Sign in to the mobile app</span></span>
+1. <span data-ttu-id="3b8b6-158">Indítsa el az alkalmazást a mobileszközén.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-158">Start the app on your mobile device.</span></span>
+2. <span data-ttu-id="3b8b6-159">Adja meg a Dynamics 365 URL-címét.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-159">Enter your Dynamics 365 URL.</span></span>
+4. <span data-ttu-id="3b8b6-160">Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-160">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="3b8b6-161">Adja meg a hitelesítési adatait.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-161">Enter your credentials.</span></span>
+5. <span data-ttu-id="3b8b6-162">A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-162">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="3b8b6-163">Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-163">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
 
-[![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+<span data-ttu-id="3b8b6-164">[![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-164">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Nyugta rögzítése a Költséggazdálkodás mobil munkaterület használatával
+## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a><span data-ttu-id="3b8b6-165">Nyugta rögzítése a Költséggazdálkodás mobil munkaterület használatával</span><span class="sxs-lookup"><span data-stu-id="3b8b6-165">Capture a receipt by using the Expense management mobile workspace</span></span>
 
-1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
-2. Válassza a **Nyugta rögzítése** elemet.
-3. Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
-4. Tegye a következők egyikét:
+1. <span data-ttu-id="3b8b6-166">A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-166">On your mobile device, open the **Expense management** workspace.</span></span>
+2. <span data-ttu-id="3b8b6-167">Válassza a **Nyugta rögzítése** elemet.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-167">Select **Capture receipt**.</span></span>
+3. <span data-ttu-id="3b8b6-168">Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-168">Select **Take photo** or **Choose image**.</span></span>
+4. <span data-ttu-id="3b8b6-169">Tegye a következők egyikét:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-169">Follow one of these steps:</span></span>
 
-    - Ha a **Fénykép készítése** lehetőséget választotta, kövesse az alábbi lépéseket:
+    - <span data-ttu-id="3b8b6-170">Ha a **Fénykép készítése** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-170">If you selected **Take photo**, follow these steps:</span></span>
 
-        1. Ekkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról. Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.
-        2. Nem kötelező: Adja meg a fénykép nevét, vagy írja be megjegyzéseit.
+        1. <span data-ttu-id="3b8b6-171">Ekkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-171">You're taken to the camera on your mobile device, so that you can take a photo of the receipt.</span></span> <span data-ttu-id="3b8b6-172">Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-172">When you've finished taking a photo, select **OK** to accept the photo.</span></span>
+        2. <span data-ttu-id="3b8b6-173">Nem kötelező: Adja meg a fénykép nevét, vagy írja be megjegyzéseit.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-173">Optional: Enter a name for the photo, and enter any notes.</span></span>
 
-    - Ha a **Kép kiválasztása** lehetőséget választotta, kövesse az alábbi lépéseket:
+    - <span data-ttu-id="3b8b6-174">Ha a **Kép kiválasztása** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-174">If you selected **Choose image**, follow these steps:</span></span>
 
-        1. A listából válasszon ki egy képet.
-        2. Nem kötelező: Adja meg a kép nevét, vagy írja be megjegyzéseit.
+        1. <span data-ttu-id="3b8b6-175">A listából válasszon ki egy képet.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-175">Select an image in the list.</span></span>
+        2. <span data-ttu-id="3b8b6-176">Nem kötelező: Adja meg a kép nevét, vagy írja be megjegyzéseit.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-176">Optional: Enter a name for the image, and enter any notes.</span></span>
 
-5. Válassza a **Kész** lehetőséget.
+5. <span data-ttu-id="3b8b6-177">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-177">Select **Done**.</span></span>
 
-## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Költségek gyors rögzítése a Költséggazdálkodás mobil munkaterület használatával
-1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
-2. Válassza ki a **Gyors költségbejegyzés** lehetőséget.
-3. Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
-4. Adja meg a költségtranzakció dátumát.
-5. Nem kötelező: Adjon kereskedőt a költséghez.
-6. Adja meg a költség összegét.
-7. Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
-8. Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
-9. Tegye a következők egyikét:
+## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a><span data-ttu-id="3b8b6-178">Költségek gyors rögzítése a Költséggazdálkodás mobil munkaterület használatával</span><span class="sxs-lookup"><span data-stu-id="3b8b6-178">Quickly enter expenses by using the Expense management mobile workspace</span></span>
+1. <span data-ttu-id="3b8b6-179">A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-179">On your mobile device, open the **Expense management** workspace.</span></span>
+2. <span data-ttu-id="3b8b6-180">Válassza ki a **Gyors költségbejegyzés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-180">Select **Quick expense entry**.</span></span>
+3. <span data-ttu-id="3b8b6-181">Válassza ki a költség kategóriáját.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-181">Select the category for the expense.</span></span> <span data-ttu-id="3b8b6-182">Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-182">You see a list of expense categories that are loaded into your app for offline use.</span></span> <span data-ttu-id="3b8b6-183">Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-183">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3b8b6-184">További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-184">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="3b8b6-185">Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-185">If your category isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="3b8b6-186">Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-186">Search by expense category, or switch to search by expense type.</span></span>
+4. <span data-ttu-id="3b8b6-187">Adja meg a költségtranzakció dátumát.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-187">Enter the transaction date of the expense.</span></span>
+5. <span data-ttu-id="3b8b6-188">Nem kötelező: Adjon kereskedőt a költséghez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-188">Optional: Enter the merchant for the expense.</span></span>
+6. <span data-ttu-id="3b8b6-189">Adja meg a költség összegét.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-189">Enter the amount of the expense.</span></span>
+7. <span data-ttu-id="3b8b6-190">Válassza ki az illeték pénznemét.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-190">Select the currency of the expense.</span></span> <span data-ttu-id="3b8b6-191">Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-191">You see a list of the currency codes that are loaded into your app for offline use.</span></span> <span data-ttu-id="3b8b6-192">Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-192">By default, 400 currencies are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3b8b6-193">További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-193">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="3b8b6-194">Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-194">If your currency isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="3b8b6-195">Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-195">Search by currency, or switch to search by name.</span></span>
+8. <span data-ttu-id="3b8b6-196">Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-196">Select **Take photo** or **Choose image**.</span></span>
+9. <span data-ttu-id="3b8b6-197">Tegye a következők egyikét:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-197">Follow one of these steps:</span></span>
 
-    - Ha a **Fénykép készítése** lehetőséget választotta, akkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról. Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.
-    - Ha a **Kép kiválasztása** lehetőséget választotta, jelöljön ki egy képet a listán.
+    - <span data-ttu-id="3b8b6-198">Ha a **Fénykép készítése** lehetőséget választotta, akkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-198">If you selected **Take photo**, you're taken to the camera on your mobile device, so that you can take a photo of the receipt.</span></span> <span data-ttu-id="3b8b6-199">Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-199">When you've finished taking a photo, select **OK** to accept the photo.</span></span>
+    - <span data-ttu-id="3b8b6-200">Ha a **Kép kiválasztása** lehetőséget választotta, jelöljön ki egy képet a listán.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-200">If you selected **Choose image**, select an image in the list.</span></span>
 
-10. Válassza a **Kész** lehetőséget.
+10. <span data-ttu-id="3b8b6-201">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-201">Select **Done**.</span></span>
 
-## <a name="approve-an-expense-report-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>A költségjelentések jóváhagyását a Költségkezelési mobil munkaterület segítségével is elvégezheti (ha a 2017. júliusi frissítést használja)
-1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
-2. A **Költségjóváhagyások** megmutatja a jóváhagyásra Önhöz rendelt költségjelentések számát. A szám körülbelül 30 percenként frissül. Válassza ki a **Költségjóváhagyások** lehetőséget.
+## <a name="approve-an-expense-report-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a><span data-ttu-id="3b8b6-202">A költségjelentések jóváhagyását a Költségkezelési mobil munkaterület segítségével is elvégezheti (ha a 2017. júliusi frissítést használja)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-202">Approve an expense report by using the Expense management mobile workspace (if you use the July 2017 update)</span></span>
+1. <span data-ttu-id="3b8b6-203">A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-203">On your mobile device, open the **Expense management** workspace.</span></span>
+2. <span data-ttu-id="3b8b6-204">A **Költségjóváhagyások** megmutatja a jóváhagyásra Önhöz rendelt költségjelentések számát.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-204">**Expense approvals** shows the number of expense reports that are assigned to you for approval.</span></span> <span data-ttu-id="3b8b6-205">A szám körülbelül 30 percenként frissül.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-205">The number is updated approximately every 30 minutes.</span></span> <span data-ttu-id="3b8b6-206">Válassza ki a **Költségjóváhagyások** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-206">Select **Expense approvals**.</span></span>
 
-    Megjelenik egy lista a jóváhagyásra Önhöz rendelt költségjelentésekkel.
+    <span data-ttu-id="3b8b6-207">Megjelenik egy lista a jóváhagyásra Önhöz rendelt költségjelentésekkel.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-207">The list of expense reports that are assigned to you for approval is shown.</span></span>
     
-3. Válasszon ki egy költségjelentést a költség részleteinek megtekintéséhez.
-4. Válasszon ki egy költséget a részleteinek megtekintéséhez. A költségnél megjelenített információk tartalmazzák az összes nyugta, vendég és részletezés adatait.
-5. A **Költségjelentés** oldalra visszatérve jóváhagyhatja vagy elutasíthatja a költségjelentést.
-6. Adja meg a jóváhagyás műveletére vonatkozó esetleges megjegyzéseket.
-7. Válassza a **Kész** lehetőséget.
+3. <span data-ttu-id="3b8b6-208">Válasszon ki egy költségjelentést a költség részleteinek megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-208">Select an expense report to view the expense details for it.</span></span>
+4. <span data-ttu-id="3b8b6-209">Válasszon ki egy költséget a részleteinek megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-209">Select an expense to view the details for it.</span></span> <span data-ttu-id="3b8b6-210">A költségnél megjelenített információk tartalmazzák az összes nyugta, vendég és részletezés adatait.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-210">The information that is shown for an expense includes any receipt, guest, and itemization details.</span></span>
+5. <span data-ttu-id="3b8b6-211">A **Költségjelentés** oldalra visszatérve jóváhagyhatja vagy elutasíthatja a költségjelentést.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-211">Back on the **Expense report** page, select to approve or reject the expense report.</span></span>
+6. <span data-ttu-id="3b8b6-212">Adja meg a jóváhagyás műveletére vonatkozó esetleges megjegyzéseket.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-212">Enter any comments for the approval action.</span></span>
+7. <span data-ttu-id="3b8b6-213">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-213">Select **Done**.</span></span>
 
-## <a name="create-a-new-expense-report-and-submit-it-for-approval-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>Hozzon létre egy új költségjelentést, és küldje be jóváhagyásra a Költségkezelési mobil munkaterület segítségével (ha a 2017. júliusi frissítést használja)
-1. A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.
-2. Válassza ki a **Költségbejegyzés** lehetőséget.
-3. Válassza az **Új jelentés** lehetőséget, vagy válasszon ki egy meglévő költségjelentést a listáról.
-4. Az új költségjelentéseknék adja meg a célt és a további rendelkezésre álló adatokat. Ezek az információk változóak, attól függően, hogy milyen módon konfigurálták a Költséggazdálkodás modult a vállalatánál.
-5. Válassza a **Kész** lehetőséget.
-6. Meglévő költségek, mint a hitelkártya-tranzakciók költségjelentéshez való hozzáadásához válassza a **Csatolás** lehetőséget.
-7. Jelöljön ki egy vagy több költséget a listán.
-8. Válassza a **Kész** lehetőséget.
-9. Ha új költséget szeretne hozzáadni a költségjelentéshez, válassza ki az **Új költség** lehetőséget.
-10. Válassza ki a költség kategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.
-11. Nem kötelező: Adjon kereskedőt a költséghez.
-12. Adja meg a költségtranzakció dátumát.
-13. Adja meg a költség összegét.
-14. Válassza ki az illeték pénznemét. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája. Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.
-15. Válassza a **Kész** lehetőséget.
-16. Ha további részleteket szeretne hozzáadni a költséghez, válassza ki a **További részletek hozzáadása** lehetőséget. A rendelkezésre álló mezők a Költséggazdálkodás Ön vállalatánál való konfigurációjától függnek.
-17. Ha a vállalati irányelv nyugtát ír elő a költséghez, válassza ki a **Nyugták** lehetőséget, majd kövesse az alábbi lépéseket:
+## <a name="create-a-new-expense-report-and-submit-it-for-approval-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a><span data-ttu-id="3b8b6-214">Hozzon létre egy új költségjelentést, és küldje be jóváhagyásra a Költségkezelési mobil munkaterület segítségével (ha a 2017. júliusi frissítést használja)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-214">Create a new expense report and submit it for approval by using the Expense management mobile workspace (if you use the July 2017 update)</span></span>
+1. <span data-ttu-id="3b8b6-215">A mobileszközön nyissa meg a **Költséggazdálkodás** munkaterület.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-215">On your mobile device, open the **Expense management** workspace.</span></span>
+2. <span data-ttu-id="3b8b6-216">Válassza ki a **Költségbejegyzés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-216">Select **Expense entry**.</span></span>
+3. <span data-ttu-id="3b8b6-217">Válassza az **Új jelentés** lehetőséget, vagy válasszon ki egy meglévő költségjelentést a listáról.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-217">Select **New report**, or select an existing expense report in the list.</span></span>
+4. <span data-ttu-id="3b8b6-218">Az új költségjelentéseknék adja meg a célt és a további rendelkezésre álló adatokat.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-218">For new expense reports, enter the purpose and any additional information that is available.</span></span> <span data-ttu-id="3b8b6-219">Ezek az információk változóak, attól függően, hogy milyen módon konfigurálták a Költséggazdálkodás modult a vállalatánál.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-219">This information varies, depending on that way that expense management is configured for your company.</span></span>
+5. <span data-ttu-id="3b8b6-220">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-220">Select **Done**.</span></span>
+6. <span data-ttu-id="3b8b6-221">Meglévő költségek, mint a hitelkártya-tranzakciók költségjelentéshez való hozzáadásához válassza a **Csatolás** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-221">To add existing expenses, such as credit card transactions, to the expense report, select **Attach**.</span></span>
+7. <span data-ttu-id="3b8b6-222">Jelöljön ki egy vagy több költséget a listán.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-222">Select one or more expenses in the list.</span></span>
+8. <span data-ttu-id="3b8b6-223">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-223">Select **Done**.</span></span>
+9. <span data-ttu-id="3b8b6-224">Ha új költséget szeretne hozzáadni a költségjelentéshez, válassza ki az **Új költség** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-224">To add a new expense to the expense report, select **New expense**.</span></span>
+10. <span data-ttu-id="3b8b6-225">Válassza ki a költség kategóriáját.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-225">Select the category for the expense.</span></span> <span data-ttu-id="3b8b6-226">Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségkategóriák listája.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-226">You see a list of expense categories that are loaded into your app for offline use.</span></span> <span data-ttu-id="3b8b6-227">Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-227">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3b8b6-228">További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-228">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="3b8b6-229">Ha a kategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-229">If your category isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="3b8b6-230">Keressen költségkategória szerint, vagy váltson át a költségtípus szerinti keresésre.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-230">Search by expense category, or switch to search by expense type.</span></span>
+11. <span data-ttu-id="3b8b6-231">Nem kötelező: Adjon kereskedőt a költséghez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-231">Optional: Enter the merchant for the expense.</span></span>
+12. <span data-ttu-id="3b8b6-232">Adja meg a költségtranzakció dátumát.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-232">Enter the transaction date of the expense.</span></span>
+13. <span data-ttu-id="3b8b6-233">Adja meg a költség összegét.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-233">Enter the amount of the expense.</span></span>
+14. <span data-ttu-id="3b8b6-234">Válassza ki az illeték pénznemét.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-234">Select the currency of the expense.</span></span> <span data-ttu-id="3b8b6-235">Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött pénznemkódok listája.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-235">You see a list of the currency codes that are loaded into your app for offline use.</span></span> <span data-ttu-id="3b8b6-236">Alapértelmezés szerint 400 pénznem töltődik be, de a fejlesztő módosíthatja ezt a számot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-236">By default, 400 currencies are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3b8b6-237">További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-237">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="3b8b6-238">Ha a pénznem nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-238">If your currency isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="3b8b6-239">Keressen pénznem szerint, vagy váltson át a név szerinti keresésre.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-239">Search by currency, or switch to search by name.</span></span>
+15. <span data-ttu-id="3b8b6-240">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-240">Select **Done**.</span></span>
+16. <span data-ttu-id="3b8b6-241">Ha további részleteket szeretne hozzáadni a költséghez, válassza ki a **További részletek hozzáadása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-241">To add more details to the expense, select **Add more details**.</span></span> <span data-ttu-id="3b8b6-242">A rendelkezésre álló mezők a Költséggazdálkodás Ön vállalatánál való konfigurációjától függnek.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-242">The fields that are available depend on the configuration of expense management for your company.</span></span>
+17. <span data-ttu-id="3b8b6-243">Ha a vállalati irányelv nyugtát ír elő a költséghez, válassza ki a **Nyugták** lehetőséget, majd kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-243">If company policy requires a receipt for the expense, select **Receipts**, and then follow these steps:</span></span>
 
-    1. Válassza ki a **Nyugta rögzítése** vagy a **Nyugta csatolása** lehetőséget.
-    2. Tegye a következők egyikét:
+    1. <span data-ttu-id="3b8b6-244">Válassza ki a **Nyugta rögzítése** vagy a **Nyugta csatolása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-244">Select **Capture receipt** or **Attach receipt**.</span></span>
+    2. <span data-ttu-id="3b8b6-245">Tegye a következők egyikét:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-245">Follow one of these steps:</span></span>
 
-        - Ha a **Nyugta rögzítése** lehetőséget választotta, kövesse az alábbi lépéseket:
+        - <span data-ttu-id="3b8b6-246">Ha a **Nyugta rögzítése** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-246">If you selected **Capture receipt**, follow these steps:</span></span>
 
-            1. Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.
-            2. Tegye a következők egyikét:
+            1. <span data-ttu-id="3b8b6-247">Válassza a **Fénykép készítése** vagy a **Kép kiválasztása** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-247">Select **Take photo** or **Choose image**.</span></span>
+            2. <span data-ttu-id="3b8b6-248">Tegye a következők egyikét:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-248">Follow one of these steps:</span></span>
 
-                - Ha a **Fénykép készítése** lehetőséget választotta, kövesse az alábbi lépéseket:
+                - <span data-ttu-id="3b8b6-249">Ha a **Fénykép készítése** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-249">If you selected **Take photo**, follow these steps:</span></span>
 
-                    1. Ekkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról. Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.
-                    2. Nem kötelező: Adja meg a fénykép nevét, vagy írja be megjegyzéseit.
+                    1. <span data-ttu-id="3b8b6-250">Ekkor a mobileszköz kamerájához kerül, hogy fényképet készíthessen a nyugtáról.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-250">You're taken to the camera on your mobile device, so that you can take a photo of the receipt.</span></span> <span data-ttu-id="3b8b6-251">Amikor elkészült a fénykép, válassza az **OK** lehetőséget a fénykép elfogadásához.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-251">When you've finished taking a photo, select **OK** to accept the photo.</span></span>
+                    2. <span data-ttu-id="3b8b6-252">Nem kötelező: Adja meg a fénykép nevét, vagy írja be megjegyzéseit.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-252">Optional: Enter a name for the photo, and enter any notes.</span></span>
 
-                - Ha a **Kép kiválasztása** lehetőséget választotta, kövesse az alábbi lépéseket:
+                - <span data-ttu-id="3b8b6-253">Ha a **Kép kiválasztása** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-253">If you selected **Choose image**, follow these steps:</span></span>
 
-                    1. A listából válasszon ki egy képet.
-                    2. Nem kötelező: Adja meg a kép nevét, vagy írja be megjegyzéseit.
+                    1. <span data-ttu-id="3b8b6-254">A listából válasszon ki egy képet.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-254">Select an image in the list.</span></span>
+                    2. <span data-ttu-id="3b8b6-255">Nem kötelező: Adja meg a kép nevét, vagy írja be megjegyzéseit.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-255">Optional: Enter a name for the image, and enter any notes.</span></span>
 
-            3.  Válassza a **Kész** lehetőséget.
+            3.  <span data-ttu-id="3b8b6-256">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-256">Select **Done**.</span></span>
 
-        - Ha a **Nyugta csatolása** lehetőséget választotta, kövesse az alábbi lépéseket:
+        - <span data-ttu-id="3b8b6-257">Ha a **Nyugta csatolása** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-257">If you selected **Attach receipt**, follow these steps:</span></span>
 
-            1.  Jelöljön ki egy vagy több képet a listán.
-            2.  Válassza a **Kész** lehetőséget.
+            1.  <span data-ttu-id="3b8b6-258">Jelöljön ki egy vagy több képet a listán.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-258">Select one or more images in the list.</span></span>
+            2.  <span data-ttu-id="3b8b6-259">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-259">Select **Done**.</span></span>
 
-    3. Válassza ki a **Vissza** gombot a költségrészletekhez való visszatéréshez.
+    3. <span data-ttu-id="3b8b6-260">Válassza ki a **Vissza** gombot a költségrészletekhez való visszatéréshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-260">Select the **Back** button to return to the expense details.</span></span>
 
-18. Ha a vállalati irányelv vendégeket ír elő a költséghez, válassza ki a **Vendégek** lehetőséget, majd kövesse az alábbi lépéseket:
+18. <span data-ttu-id="3b8b6-261">Ha a vállalati irányelv vendégeket ír elő a költséghez, válassza ki a **Vendégek** lehetőséget, majd kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-261">If company policy requires guests for the expense, select **Guests**, and then follow these steps:</span></span>
 
-    1. Válassza ki a **Vendég**, **Előző vendégek** vagy **Munkatársak** lehetőséget.
-    2. Tegye a következők egyikét:
+    1. <span data-ttu-id="3b8b6-262">Válassza ki a **Vendég**, **Előző vendégek** vagy **Munkatársak** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-262">Select **Guest**, **Previous guests**, or **Coworkers**.</span></span>
+    2. <span data-ttu-id="3b8b6-263">Tegye a következők egyikét:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-263">Follow one of these steps:</span></span>
 
-        - Ha a **Vendég** lehetőséget választotta, kövesse az alábbi lépéseket:
+        - <span data-ttu-id="3b8b6-264">Ha a **Vendég** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-264">If you selected **Guest**, follow these steps:</span></span>
 
-            1. Adja meg a vendég nevét.
-            2. Választható: Adja meg a vendég szervezetét és/vagy országát.
-            3. Választható: A vendég szakmai beosztásának megadása.
-            4. Válassza a **Kész** lehetőséget.
+            1. <span data-ttu-id="3b8b6-265">Adja meg a vendég nevét.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-265">Enter the name of the guest.</span></span>
+            2. <span data-ttu-id="3b8b6-266">Választható: Adja meg a vendég szervezetét és/vagy országát.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-266">Optional: Enter the organization and/or country of the guest.</span></span>
+            3. <span data-ttu-id="3b8b6-267">Választható: A vendég szakmai beosztásának megadása.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-267">Optional: Enter the title of the guest.</span></span>
+            4. <span data-ttu-id="3b8b6-268">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-268">Select **Done**.</span></span>
 
-        - Ha az **Előző vendégek** lehetőséget választotta, kövesse az alábbi lépéseket:
+        - <span data-ttu-id="3b8b6-269">Ha az **Előző vendégek** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-269">If you selected **Previous guests**, follow these steps:</span></span>
 
-            1. Jelöljön ki egy vagy több korábbi vendéget a listán. Megjelenik egy lista azokról a korábbi vendégekről, akiket korábbi költségjelentésekhez adott hozzá, és amelyek betöltődtek az alkalmazásába offline használatra. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a korábbi vendég nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Végezhet név szerinti keresést, vagy átválthat a szervezet, ország vagy beosztás szerinti keresésre.
-            2. Válassza a **Kész** lehetőséget.
+            1. <span data-ttu-id="3b8b6-270">Jelöljön ki egy vagy több korábbi vendéget a listán.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-270">Select one or more previous guests in the list.</span></span> <span data-ttu-id="3b8b6-271">Megjelenik egy lista azokról a korábbi vendégekről, akiket korábbi költségjelentésekhez adott hozzá, és amelyek betöltődtek az alkalmazásába offline használatra.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-271">You see a list of previous guests that you've added to previous expense reports that are loaded into your app for offline use.</span></span> <span data-ttu-id="3b8b6-272">Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-272">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3b8b6-273">További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-273">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="3b8b6-274">Ha a korábbi vendég nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-274">If your previous guest isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="3b8b6-275">Végezhet név szerinti keresést, vagy átválthat a szervezet, ország vagy beosztás szerinti keresésre.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-275">Search by name, or switch to search by organization, country, or title.</span></span>
+            2. <span data-ttu-id="3b8b6-276">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-276">Select **Done**.</span></span>
 
-        - Ha a **Munkatársak** lehetőséget választotta, kövesse az alábbi lépéseket:
+        - <span data-ttu-id="3b8b6-277">Ha a **Munkatársak** lehetőséget választotta, kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-277">If you selected **Coworkers**, follow these steps:</span></span>
 
-            1. Jelöljön ki egy vagy több munkatársat a listán. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött munkatársak listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha a munkatárs nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Végezhet név szerinti keresést, vagy átválthat a vállalat vagy beosztás szerinti keresésre.
-            2. Válassza a **Kész** lehetőséget.
+            1. <span data-ttu-id="3b8b6-278">Jelöljön ki egy vagy több munkatársat a listán.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-278">Select one or more coworkers in the list.</span></span> <span data-ttu-id="3b8b6-279">Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött munkatársak listája.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-279">You see a list of coworkers that are loaded into your app for offline use.</span></span> <span data-ttu-id="3b8b6-280">Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-280">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3b8b6-281">További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-281">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="3b8b6-282">Ha a munkatárs nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-282">If your coworker isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="3b8b6-283">Végezhet név szerinti keresést, vagy átválthat a vállalat vagy beosztás szerinti keresésre.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-283">Search by name, or switch to search by company or title.</span></span>
+            2. <span data-ttu-id="3b8b6-284">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-284">Select **Done**.</span></span>
 
-    3. Válassza ki a **Vissza** gombot a költségrészletekhez való visszatéréshez.
+    3. <span data-ttu-id="3b8b6-285">Válassza ki a **Vissza** gombot a költségrészletekhez való visszatéréshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-285">Select the **Back** button to return to the expense details.</span></span>
 
-19. Ha a vállalati irányelv a költségek részletezését írja elő, válassza ki a **Részletezés** lehetőséget, majd kövesse az alábbi lépéseket:
+19. <span data-ttu-id="3b8b6-286">Ha a vállalati irányelv a költségek részletezését írja elő, válassza ki a **Részletezés** lehetőséget, majd kövesse az alábbi lépéseket:</span><span class="sxs-lookup"><span data-stu-id="3b8b6-286">If company policy requires that the expense be itemized, select **Itemize**, and then follow these steps:</span></span>
 
-    1. Válassza ki a részletezni kívánt első dátumot.
-    2. Válassza a **Részletezés hozzáadása** elemet.
-    3. Válassza ki a költségrészletezés alkategóriáját. Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségalkategóriák listája. Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot. További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page) Ha az alkategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez. Keresés a költség alkategóriájának neve alapján.
-    4. A részletezés tranzakciós összegének megadása.
-    5. Szükség esetén módosítsa a tranzakció dátumát.
-    6. Válassza a **Kész** lehetőséget.
-    7. Ismételje meg a fenti lépéseket addig, amíg be nem fejezte az összes részletezés hozzáadását a kiválasztott dátum esetében.
-    8. Ha további napokat szeretne megadni, választhatja a **Másolás következő napra** lehetőséget, amellyel átviheti a következő napra is a részletezéseket. Másik lehetőségéként kiválaszthatja a részletezendő dátumot, majd részletezéseket adhat hozzá ugyanúgy, mint az első dátum esetében.
-    9. Miután befejezte a költség részletezését, válassza ki a **Vissza** gombot a költség adataihoz való visszatéréshez.
+    1. <span data-ttu-id="3b8b6-287">Válassza ki a részletezni kívánt első dátumot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-287">Select the first date to itemize.</span></span>
+    2. <span data-ttu-id="3b8b6-288">Válassza a **Részletezés hozzáadása** elemet.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-288">Select **Add itemization**.</span></span>
+    3. <span data-ttu-id="3b8b6-289">Válassza ki a költségrészletezés alkategóriáját.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-289">Select the subcategory for the expense itemization.</span></span> <span data-ttu-id="3b8b6-290">Megjelenik a kapcsolat nélküli használatra az alkalmazásba betöltött költségalkategóriák listája.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-290">You see a list of expense subcategories that are loaded into your app for offline use.</span></span> <span data-ttu-id="3b8b6-291">Alapértelmezés szerint 50 elem töltődik be, de a fejlesztő módosíthatja ezt a számot.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-291">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="3b8b6-292">További információért a fejlesztők tekintsék meg a következőt: [Mobil munkafelület](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)</span><span class="sxs-lookup"><span data-stu-id="3b8b6-292">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="3b8b6-293">Ha az alkategória nem szerepel a listán, válassza a **Keresés** lehetőséget az online kereséshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-293">If your subcategory isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="3b8b6-294">Keresés a költség alkategóriájának neve alapján.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-294">Search by expense subcategory name.</span></span>
+    4. <span data-ttu-id="3b8b6-295">A részletezés tranzakciós összegének megadása.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-295">Enter the transaction amount for the itemization.</span></span>
+    5. <span data-ttu-id="3b8b6-296">Szükség esetén módosítsa a tranzakció dátumát.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-296">Edit the transaction date if it's required.</span></span>
+    6. <span data-ttu-id="3b8b6-297">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-297">Select **Done**.</span></span>
+    7. <span data-ttu-id="3b8b6-298">Ismételje meg a fenti lépéseket addig, amíg be nem fejezte az összes részletezés hozzáadását a kiválasztott dátum esetében.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-298">Repeat the preceding steps until you've finished adding all itemizations for the selected date.</span></span>
+    8. <span data-ttu-id="3b8b6-299">Ha további napokat szeretne megadni, választhatja a **Másolás következő napra** lehetőséget, amellyel átviheti a következő napra is a részletezéseket.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-299">For additional days, you can select **Copy to next day** to copy the itemizations to the next day.</span></span> <span data-ttu-id="3b8b6-300">Másik lehetőségéként kiválaszthatja a részletezendő dátumot, majd részletezéseket adhat hozzá ugyanúgy, mint az első dátum esetében.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-300">Alternatively, you can select the date to itemize and then add itemizations as you did for the first date.</span></span>
+    9. <span data-ttu-id="3b8b6-301">Miután befejezte a költség részletezését, válassza ki a **Vissza** gombot a költség adataihoz való visszatéréshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-301">After you've finished itemizing the expense, select the **Back** button to return to the expense details.</span></span>
 
-20. Válassza ki a **Vissza** gombot a **Költségjelentés** oldalhoz való visszatéréshez.
-21. Ismételje meg az előző lépéseket addig, amíg be nem fejezte az összes költség megadását.
-22. Válassza a **Beküldés** lehetőséget.
-23. Adja meg a jóváhagyóra vonatkozó esetleges megjegyzéseket.
-24. Válassza a **Kész** lehetőséget.
+20. <span data-ttu-id="3b8b6-302">Válassza ki a **Vissza** gombot a **Költségjelentés** oldalhoz való visszatéréshez.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-302">Select the **Back** button to return to the **Expense report** page.</span></span>
+21. <span data-ttu-id="3b8b6-303">Ismételje meg az előző lépéseket addig, amíg be nem fejezte az összes költség megadását.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-303">Repeat the preceding steps until you've finished adding all expenses.</span></span>
+22. <span data-ttu-id="3b8b6-304">Válassza a **Beküldés** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-304">Select **Submit**.</span></span>
+23. <span data-ttu-id="3b8b6-305">Adja meg a jóváhagyóra vonatkozó esetleges megjegyzéseket.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-305">Enter any comments for the approver.</span></span>
+24. <span data-ttu-id="3b8b6-306">Válassza a **Kész** lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="3b8b6-306">Select **Done**.</span></span>
 

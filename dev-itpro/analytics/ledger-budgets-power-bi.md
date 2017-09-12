@@ -13,55 +13,55 @@ ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: ryansand
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5d52cce3cccb16f0645d9de1832ebeffbfaf3a09
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6e675ccd610561668dec4f5c7410530edaa122b8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="actual-vs-budget-power-bi-content"></a>Tényleges és költségvetési Power BI-tartalom
+# <a name="actual-vs-budget-power-bi-content"></a><span data-ttu-id="5761c-104">Tényleges és költségvetési Power BI-tartalom</span><span class="sxs-lookup"><span data-stu-id="5761c-104">Actual vs budget Power BI content</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör a **Tényleges és költségvetési** Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban. 
+<span data-ttu-id="5761c-105">Ez a témakör a **Tényleges és költségvetési** Power BI-tartalmat ismerteti.</span><span class="sxs-lookup"><span data-stu-id="5761c-105">This topic describes the **Actual vs budget** Microsoft Power BI content.</span></span> <span data-ttu-id="5761c-106">Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="5761c-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span> 
 
-# <a name="overview"></a>Áttekintés
+# <a name="overview"></a><span data-ttu-id="5761c-107">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="5761c-107">Overview</span></span>
 
-A **Tényleges és költségvetési** Power BI-tartalmat azoknak hoztuk létre, akik a valós és a költségvetési teljesítmény összevetéséért felelősek a szervezetnél. A **Tényleges és költségvetési** Power BI-tartalom a költségvetés-eltérésekbe nyújt betekintést. Az aktuális év költségvetését elemezheti számlakategória, költségvetési kód, fő számla, fő számla leírása vagy pénzügyi időszak szerint, hogy jobban megérthesse az esetleges eltérések okát. 
+<span data-ttu-id="5761c-108">A **Tényleges és költségvetési** Power BI-tartalmat azoknak hoztuk létre, akik a valós és a költségvetési teljesítmény összevetéséért felelősek a szervezetnél.</span><span class="sxs-lookup"><span data-stu-id="5761c-108">The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization.</span></span> <span data-ttu-id="5761c-109">A **Tényleges és költségvetési** Power BI-tartalom a költségvetés-eltérésekbe nyújt betekintést.</span><span class="sxs-lookup"><span data-stu-id="5761c-109">The **Actual vs budget** Power BI content provides visibility into your budget variances.</span></span> <span data-ttu-id="5761c-110">Az aktuális év költségvetését elemezheti számlakategória, költségvetési kód, fő számla, fő számla leírása vagy pénzügyi időszak szerint, hogy jobban megérthesse az esetleges eltérések okát.</span><span class="sxs-lookup"><span data-stu-id="5761c-110">You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.</span></span> 
 
-# <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás 2017 júliusi frissítésének használata esetén a **Tényleges és költségvetési** Power BI-tartalom a **Főkönyvi költségvetések és előrejelzések** és a **Pénzügyi igazgató** munkaterületen jelenik meg.
+# <a name="accessing-the-power-bi-content"></a><span data-ttu-id="5761c-111">Power BI-tartalom elérése</span><span class="sxs-lookup"><span data-stu-id="5761c-111">Accessing the Power BI content</span></span>
+<span data-ttu-id="5761c-112">A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás 2017 júliusi frissítésének használata esetén a **Tényleges és költségvetési** Power BI-tartalom a **Főkönyvi költségvetések és előrejelzések** és a **Pénzügyi igazgató** munkaterületen jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="5761c-112">If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.</span></span>
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
-A következő táblázat ismerteti a **Tényleges és költségvetési** Power BI-tartalom egyes jelentésoldalain található mutatókat.
+# <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="5761c-113">A Power BI-tartalomhoz tartozó jelentések</span><span class="sxs-lookup"><span data-stu-id="5761c-113">Reports that are included in the Power BI content</span></span>
+<span data-ttu-id="5761c-114">A következő táblázat ismerteti a **Tényleges és költségvetési** Power BI-tartalom egyes jelentésoldalain található mutatókat.</span><span class="sxs-lookup"><span data-stu-id="5761c-114">The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.</span></span>
 
-| Jelentés                      | Mutatók |
+| <span data-ttu-id="5761c-115">Jelentés</span><span class="sxs-lookup"><span data-stu-id="5761c-115">Report</span></span>                      | <span data-ttu-id="5761c-116">Mutatók</span><span class="sxs-lookup"><span data-stu-id="5761c-116">Metrics</span></span> |
 |-----------------------------|---------|
-| Költségek – Tényleges - költségvetés | <ul><li>Az idei teljes kiadás</li><li>Költségvetés szerinti idei teljes kiadás</li></ul> |
-| Bevétel - Tényleges és költségvetés  | <ul><li>Az idei teljes bevétel</li><li>Költségvetés szerinti idei teljes bevétel</li><ul> |
-| Kiadás                     | <ul><li>Az idei teljes kiadás</li><li>Költségcél a költségvetési alapján </li><ul> |
-| Bevétel                     | <ul><li>Az idei teljes bevétel</li><li>Bevételi cél a költségvetési alapján </li><ul> |
-| Nettó árbevétel                  | <ul><li>Az idei nettó bevétel</li><li>Nettó bevételi cél a költségvetési alapján </li><ul> |
+| <span data-ttu-id="5761c-117">Költségek – Tényleges - költségvetés</span><span class="sxs-lookup"><span data-stu-id="5761c-117">Expenses - Actual vs budget</span></span> | <ul><li><span data-ttu-id="5761c-118">Az idei teljes kiadás</span><span class="sxs-lookup"><span data-stu-id="5761c-118">Total expenses this year</span></span></li><li><span data-ttu-id="5761c-119">Költségvetés szerinti idei teljes kiadás</span><span class="sxs-lookup"><span data-stu-id="5761c-119">Budget total expenses this year</span></span></li></ul> |
+| <span data-ttu-id="5761c-120">Bevétel - Tényleges és költségvetés</span><span class="sxs-lookup"><span data-stu-id="5761c-120">Revenue - Actual vs budget</span></span>  | <ul><li><span data-ttu-id="5761c-121">Az idei teljes bevétel</span><span class="sxs-lookup"><span data-stu-id="5761c-121">Total revenue this year</span></span></li><li><span data-ttu-id="5761c-122">Költségvetés szerinti idei teljes bevétel</span><span class="sxs-lookup"><span data-stu-id="5761c-122">Budget total revenue this year</span></span></li><ul> |
+| <span data-ttu-id="5761c-123">Kiadás</span><span class="sxs-lookup"><span data-stu-id="5761c-123">Expense</span></span>                     | <ul><li><span data-ttu-id="5761c-124">Az idei teljes kiadás</span><span class="sxs-lookup"><span data-stu-id="5761c-124">Total expenses this year</span></span></li><li><span data-ttu-id="5761c-125">Költségcél a költségvetési alapján</span><span class="sxs-lookup"><span data-stu-id="5761c-125">Goal for expenses based on budget</span></span> </li><ul> |
+| <span data-ttu-id="5761c-126">Bevétel</span><span class="sxs-lookup"><span data-stu-id="5761c-126">Revenue</span></span>                     | <ul><li><span data-ttu-id="5761c-127">Az idei teljes bevétel</span><span class="sxs-lookup"><span data-stu-id="5761c-127">Total revenue this year</span></span></li><li><span data-ttu-id="5761c-128">Bevételi cél a költségvetési alapján</span><span class="sxs-lookup"><span data-stu-id="5761c-128">Goal for revenue based on budget</span></span> </li><ul> |
+| <span data-ttu-id="5761c-129">Nettó árbevétel</span><span class="sxs-lookup"><span data-stu-id="5761c-129">Net income</span></span>                  | <ul><li><span data-ttu-id="5761c-130">Az idei nettó bevétel</span><span class="sxs-lookup"><span data-stu-id="5761c-130">Net income this year</span></span></li><li><span data-ttu-id="5761c-131">Nettó bevételi cél a költségvetési alapján</span><span class="sxs-lookup"><span data-stu-id="5761c-131">Goal for net income based on budget</span></span> </li><ul> |
 
-## <a name="extending-the-power-bi-content"></a>Power BI-tartalom kibővítése
-A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban található tartalomcsomagok révén nagyszerű elemzési lehetőségeket nyújthat azoknak a személyeknek, akik nem jelentkeztek be a Microsoft Dynamics 365 szolgáltatásba. Ezek a tartalomcsomagok módosíthatók, hogy más jelentéseket vagy megjelenítéseket is tartalmazhassanak, majd a tartalomcsomagok elemzés céljából közzétehetők a Power BI.com-bérlőjénél. 
+## <a name="extending-the-power-bi-content"></a><span data-ttu-id="5761c-132">Power BI-tartalom kibővítése</span><span class="sxs-lookup"><span data-stu-id="5761c-132">Extending the Power BI content</span></span>
+<span data-ttu-id="5761c-133">A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban található tartalomcsomagok révén nagyszerű elemzési lehetőségeket nyújthat azoknak a személyeknek, akik nem jelentkeztek be a Microsoft Dynamics 365 szolgáltatásba.</span><span class="sxs-lookup"><span data-stu-id="5761c-133">By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365.</span></span> <span data-ttu-id="5761c-134">Ezek a tartalomcsomagok módosíthatók, hogy más jelentéseket vagy megjelenítéseket is tartalmazhassanak, majd a tartalomcsomagok elemzés céljából közzétehetők a Power BI.com-bérlőjénél.</span><span class="sxs-lookup"><span data-stu-id="5761c-134">You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.</span></span> 
 
-A **Tényleges és költségvetési** Power BI-tartalmat az LCS Megosztott eszközök könyvtárában találja. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
+<span data-ttu-id="5761c-135">A **Tényleges és költségvetési** Power BI-tartalmat az LCS Megosztott eszközök könyvtárában találja.</span><span class="sxs-lookup"><span data-stu-id="5761c-135">You can find the **Actual vs budget** Power BI content in the Shared assets library in LCS.</span></span> <span data-ttu-id="5761c-136">A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).</span><span class="sxs-lookup"><span data-stu-id="5761c-136">For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).</span></span> <span data-ttu-id="5761c-137">Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).</span><span class="sxs-lookup"><span data-stu-id="5761c-137">To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.</span></span>
 
-# <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
+# <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="5761c-138">Adatmodell, illetve entitások ismertetése</span><span class="sxs-lookup"><span data-stu-id="5761c-138">Understanding the data model and entities</span></span>
 
-| Entitás                    | Tartalom |
+| <span data-ttu-id="5761c-139">Entitás</span><span class="sxs-lookup"><span data-stu-id="5761c-139">Entity</span></span>                    | <span data-ttu-id="5761c-140">Tartalom</span><span class="sxs-lookup"><span data-stu-id="5761c-140">Contents</span></span> |
 |---------------------------|----------|
-| Főkönyvi tevékenységek | Tranzakciós összegek a főkönyvbe |
-| Költségvetési tevékenységek         | Tranzakciós összegek a költségvetési jegyzékbe |
-| Fő számlák             | Fő számlák a jelentések szűréséhez |
-| Pénzügyi naptárak          | Pénzügyi naptárak a jelentések szűréséhez |
-| Főkönyvek                   | A jelenlegi főkönyvi jelentés szűréséhez használható főkönyvek |
-| Költségvetési kódok              | Költségvetési kódok a jelentések szűréséhez |
-| Jogi személyek            | A jelenlegi jogi személyre vonatkozó jelentés szűréséhez használható jogi személyek |
+| <span data-ttu-id="5761c-141">Főkönyvi tevékenységek</span><span class="sxs-lookup"><span data-stu-id="5761c-141">General Ledger Activities</span></span> | <span data-ttu-id="5761c-142">Tranzakciós összegek a főkönyvbe</span><span class="sxs-lookup"><span data-stu-id="5761c-142">Transaction amounts for the general ledger</span></span> |
+| <span data-ttu-id="5761c-143">Költségvetési tevékenységek</span><span class="sxs-lookup"><span data-stu-id="5761c-143">Budget Activities</span></span>         | <span data-ttu-id="5761c-144">Tranzakciós összegek a költségvetési jegyzékbe</span><span class="sxs-lookup"><span data-stu-id="5761c-144">Transaction amounts for the budget register</span></span> |
+| <span data-ttu-id="5761c-145">Fő számlák</span><span class="sxs-lookup"><span data-stu-id="5761c-145">Main Accounts</span></span>             | <span data-ttu-id="5761c-146">Fő számlák a jelentések szűréséhez</span><span class="sxs-lookup"><span data-stu-id="5761c-146">Main accounts to filter reports by</span></span> |
+| <span data-ttu-id="5761c-147">Pénzügyi naptárak</span><span class="sxs-lookup"><span data-stu-id="5761c-147">Fiscal Calendars</span></span>          | <span data-ttu-id="5761c-148">Pénzügyi naptárak a jelentések szűréséhez</span><span class="sxs-lookup"><span data-stu-id="5761c-148">Fiscal calendars to filter reports by</span></span> |
+| <span data-ttu-id="5761c-149">Főkönyvek</span><span class="sxs-lookup"><span data-stu-id="5761c-149">Ledgers</span></span>                   | <span data-ttu-id="5761c-150">A jelenlegi főkönyvi jelentés szűréséhez használható főkönyvek</span><span class="sxs-lookup"><span data-stu-id="5761c-150">Ledgers that can be used to filter the report to the current ledger</span></span> |
+| <span data-ttu-id="5761c-151">Költségvetési kódok</span><span class="sxs-lookup"><span data-stu-id="5761c-151">Budget Codes</span></span>              | <span data-ttu-id="5761c-152">Költségvetési kódok a jelentések szűréséhez</span><span class="sxs-lookup"><span data-stu-id="5761c-152">Budget codes to filter reports by</span></span> |
+| <span data-ttu-id="5761c-153">Jogi személyek</span><span class="sxs-lookup"><span data-stu-id="5761c-153">Legal Entities</span></span>            | <span data-ttu-id="5761c-154">A jelenlegi jogi személyre vonatkozó jelentés szűréséhez használható jogi személyek</span><span class="sxs-lookup"><span data-stu-id="5761c-154">Legal entities that can be used to filter the report to the current legal entity</span></span> |
 

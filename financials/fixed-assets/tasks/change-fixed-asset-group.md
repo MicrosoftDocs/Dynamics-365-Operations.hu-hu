@@ -16,33 +16,33 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1984a303af844f63ab393675d809e04b78ac857f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 27ac6a4783eba148bcdd462bc8aa360691f67a06
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="change-a-fixed-asset-group"></a>Tárgyieszköz-csoport módosítása
+# <a name="change-a-fixed-asset-group"></a><span data-ttu-id="48757-103">Tárgyieszköz-csoport módosítása</span><span class="sxs-lookup"><span data-stu-id="48757-103">Change a fixed asset group</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A tárgyi eszközöket a megfelelő tárgyieszközök csoportjaihoz kell hozzárendelni. A tárgyieszköz-csoport a következő esetekben használt:
+<span data-ttu-id="48757-104">A tárgyi eszközöket a megfelelő tárgyieszközök csoportjaihoz kell hozzárendelni.</span><span class="sxs-lookup"><span data-stu-id="48757-104">Fixed assets should be assigned to the correct fixed assets group.</span></span> <span data-ttu-id="48757-105">A tárgyieszköz-csoport a következő esetekben használt:</span><span class="sxs-lookup"><span data-stu-id="48757-105">The fixed assets group is used when you:</span></span>
 
- - Vizsgálatok és jelentések készítése
+ - <span data-ttu-id="48757-106">Vizsgálatok és jelentések készítése</span><span class="sxs-lookup"><span data-stu-id="48757-106">Create inquiries and reports</span></span>
 
- - Új tárgyi eszközök beállítása
+ - <span data-ttu-id="48757-107">Új tárgyi eszközök beállítása</span><span class="sxs-lookup"><span data-stu-id="48757-107">Set up new fixed assets</span></span>
 
- - Főkönyvek integrálása és tárgyieszköz-tranzakciók könyvelése megfelelő főkönyvi számlákra
+ - <span data-ttu-id="48757-108">Főkönyvek integrálása és tárgyieszköz-tranzakciók könyvelése megfelelő főkönyvi számlákra</span><span class="sxs-lookup"><span data-stu-id="48757-108">Integrate ledgers and post fixed asset transactions to the appropriate ledger accounts</span></span>
 
-Az útmutató az USMF bemutatócéget használja.
+<span data-ttu-id="48757-109">Az útmutató az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="48757-109">This guide uses the USMF demo company.</span></span>
 
-1. Nyissa meg a következőt: Tárgyi eszközök > Tárgyi eszközök > Tárgyi eszközök.
-2. Azoknak a tárgyi eszközöknek a kiválasztása, amelyekre módosítani szeretné a tárgyieszköz-csoportot.
-3. Kattintson a Tárgyieszköz-csoport módosítása lehetőségre.
-4. Az Új csoport mezőben adjon meg vagy válasszon ki egy értéket.
-5. Jelölje be ezt az opciót, ha egy tárgyieszközszámot kíván hozzárendelni a kiválasztott tárgyi eszközhöz.
-    * A Tárgyi eszköz száma mező elérhetővé válik, amikor kiválasztja az Új tárgyieszköz-szám beállítást.   Ha be van állítva a tárgyi eszközök automatikus sorszámozása, a mező megjeleníti a következő szabad tárgyieszköz-számot. A számot módosíthatja.   Amennyiben a manuális sorszámozás van beállítva, a mező üres, és meg kell adnia az új tárgyieszköz-számot.     
-6. Kattintson az OK gombra.
-7. Kattintson az Igen gombra.
+1. <span data-ttu-id="48757-110">Nyissa meg a következőt: Tárgyi eszközök > Tárgyi eszközök > Tárgyi eszközök.</span><span class="sxs-lookup"><span data-stu-id="48757-110">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="48757-111">Azoknak a tárgyi eszközöknek a kiválasztása, amelyekre módosítani szeretné a tárgyieszköz-csoportot.</span><span class="sxs-lookup"><span data-stu-id="48757-111">Select the fixed asset you would like to change the fixed asset group on.</span></span>
+3. <span data-ttu-id="48757-112">Kattintson a Tárgyieszköz-csoport módosítása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="48757-112">Click Change fixed asset group.</span></span>
+4. <span data-ttu-id="48757-113">Az Új csoport mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="48757-113">In the New group field, enter or select a value.</span></span>
+5. <span data-ttu-id="48757-114">Jelölje be ezt az opciót, ha egy tárgyieszközszámot kíván hozzárendelni a kiválasztott tárgyi eszközhöz.</span><span class="sxs-lookup"><span data-stu-id="48757-114">Select this option to assign a fixed asset number to the selected fixed asset.</span></span>
+    * <span data-ttu-id="48757-115">A Tárgyi eszköz száma mező elérhetővé válik, amikor kiválasztja az Új tárgyieszköz-szám beállítást.</span><span class="sxs-lookup"><span data-stu-id="48757-115">The Fixed asset number field is available if you select the New fixed asset number option.</span></span>   <span data-ttu-id="48757-116">Ha be van állítva a tárgyi eszközök automatikus sorszámozása, a mező megjeleníti a következő szabad tárgyieszköz-számot.</span><span class="sxs-lookup"><span data-stu-id="48757-116">If automatic numbering is set up for fixed assets, this field shows the next available fixed asset number.</span></span> <span data-ttu-id="48757-117">A számot módosíthatja.</span><span class="sxs-lookup"><span data-stu-id="48757-117">You can change the number.</span></span>   <span data-ttu-id="48757-118">Amennyiben a manuális sorszámozás van beállítva, a mező üres, és meg kell adnia az új tárgyieszköz-számot.</span><span class="sxs-lookup"><span data-stu-id="48757-118">If manual numbering is set up, this field is blank and you must enter the new fixed asset number.</span></span>     
+6. <span data-ttu-id="48757-119">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="48757-119">Click OK.</span></span>
+7. <span data-ttu-id="48757-120">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="48757-120">Click Yes.</span></span>
 
 

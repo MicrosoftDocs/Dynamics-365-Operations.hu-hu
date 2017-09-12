@@ -22,84 +22,84 @@ ms.contentlocale: hu-hu
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="ship-orders-as-direct-deliveries"></a>Szállítási rendelés közvetlen kiszállításként
+# <a name="ship-orders-as-direct-deliveries"></a><span data-ttu-id="4fb5e-103">Szállítási rendelés közvetlen kiszállításként</span><span class="sxs-lookup"><span data-stu-id="4fb5e-103">Ship orders as direct deliveries</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait. A közvetlen kiszállítás akkor használatos, amikor a szállítótól közvetlenül a vevőhöz kell árut szállítani, ahelyett hogy a saját raktárába szállítaná. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. A „Közvetlen kiszállítások létrehozása a munkaterületről” második alfeladat sikeres befejezéséhez, ügyeljen rá, hogy az értékesítési rendelésen kiválasztott cikkhez tartozzon alapértelmezett szállító a kiadott alaptermék Beszerzés gyorslapján.
+<span data-ttu-id="4fb5e-104">Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-104">This procedure demonstrates how to create a direct delivery for a sales order.</span></span> <span data-ttu-id="4fb5e-105">A közvetlen kiszállítás akkor használatos, amikor a szállítótól közvetlenül a vevőhöz kell árut szállítani, ahelyett hogy a saját raktárába szállítaná.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-105">You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first.</span></span> <span data-ttu-id="4fb5e-106">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-106">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="4fb5e-107">A „Közvetlen kiszállítások létrehozása a munkaterületről” második alfeladat sikeres befejezéséhez, ügyeljen rá, hogy az értékesítési rendelésen kiválasztott cikkhez tartozzon alapértelmezett szállító a kiadott alaptermék Beszerzés gyorslapján.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-107">To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.</span></span>
 
 
-## <a name="set-an-individual-order-for-direct-delivery"></a>Állítson be egyetlen rendelést közvetlen kiszállításhoz.
-1. Ugrás az összes értékesítési rendelésre.
-2. Kattintson az Új lehetőségre.
-3. A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az „US-001” számlát.  
-4. Kattintson az OK gombra.
-5. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja a „T0020” cikket.  
-6. Kattintson a Mentés gombra.
-7. A Művelet panelen kattintson az Értékesítési rendelés elemre.
-8. Kattintson a Közvetlen kiszállítás lehetőségre.
-    * A Szállítás létrehozás lap felsorolja az összes nyitott értékesítésirendelés-sort az értékesítési rendelésből másolva. Áttekintheti a rendelési részleteket, és ha szükséges módosíthatja az olyan részleteket, mint a beszerzési mennyiség és az árképzési feltételek a közvetlen kiszállítás létrehozása előtt.  
-9. Válassza ki az Igen lehetőséget az Összes belefoglalása mezőben.
-    * Ha az értékesítésirendelés-soroknak csupán egy részhalmazához szeretne közvetlen kiszállítást létrehozni, akkor ezeket egyenként válassza ki.  
-    * A Szállítószámla mező ekkor lehet üres, de akár már szerepelhet is benne egy szállítószám. Ha van alapértelmezett szállítói beállítva a termékhez (a kapcsolódó cikkfedezetnél), akkor az ez a szállító be lesz másolva a sorba. Ellenkező esetben a szállítót manuálisan kell megadni. Ebben a példában egy új szállítót választunk ki a következő lépésben, még akkor is, ha már be van írva egy.   
-10. A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.
-    * Az USMF használata esetén választhatja az 1001 számlát.  
-11. Kattintson az OK gombra.
-    * Az üzenet tájékoztat arról, hogy a beszerzési rendelés létrehozása megtörtént.   
-12. Bontsa ki a Soradatok szakaszt.
-13. Kattintson a Kiszállítás lapra.
-    * A Közvetlen kiszállítás mező értéke most Igen.  
-    * A közvetlen kiszállítás állapota: a beszerzési rendelés létrehozva.   
-14. A Művelet panelen kattintson az Általános elemre.
-15. Kattintson a Kapcsolódó rendelések lehetőségre.
-16. Kattintson a Beszerzési rendelés mezőben található hivatkozásra.
-17. Bontsa ki a Soradatok szakaszt.
-18. Kattintson a Cím fülre.
-    * Ne feledje, hogy a beszerzési rendelési sorhoz a szállítási cím a vevő szállítási címe, és nem a vállalat címe.  
-    * Ha az eredeti értékesítésirendelés-sor vagy a beszerzésirendelés-sor szállítási címét módosítja, akkor a megfelelő rendelési sor szállítási címe automatikusan frissülni fog.  
-19. Kattintson a Kiszállítás lapra.
-    * Ahogy az értékesítésirendelés-sor esetében, a társított beszerzésirendelés-sor típusa is Közvetlen kiszállítás értékre lesz állítva.  
-    * A beszerzésirendelés-sor szállítási dátuma és visszaigazolt szállítási dátuma rendre az eredeti értékesítésirendelés-sor kért bevételezési dátumára és visszaigazolt bevételezési dátumára lesznek állítva.   
-    * Ha ezek közül valamelyik dátumot frissíti a beszerzési sornál vagy az értékesítési sornál, akkor a megfelelő rendelésnél automatikusan frissülnek a dátumok.     
-    * Egy speciális társítás kapcsolja az eredeti értékesítési rendeléshez azon beszerzési rendeléseket, amelyek a beállítás szerint közvetlenül a vevőhöz szállítanak. Ezen társítás azzal a szabállyal jár, hogy az értékesítési rendelés szállítólevél-frissítését nem lehet az értékesítési rendelésből elvégezni, csak a beszerzési rendelés segítségével. A vevői számlázást azonban az értékesítési rendelésből kell elvégezni.  
-20. A Művelet panelen kattintson a Beszerzés elemre.
-21. Kattintson a Megerősítés gombra.
-22. Kattintson az OK gombra.
-23. A Művelet panelen kattintson a Bevételezés elemre.
-24. Kattintson a Termékbevételezés elemre.
-25. Írjon be egy értéket a Termékbevételezés mezőbe.
-26. Kattintson az OK gombra.
-27. A Művelet panelen kattintson az Általános elemre.
-28. Kattintson a Kapcsolódó rendelések lehetőségre.
-29. A listában jelölje meg a kiválasztott sort.
-    * Miután a beszerzési rendelés bevételezett állapotúre frissült, vagyis amikor a szállító kiszállította az árut a vevő címére, az eredeti értékesítési rendelés állapota automatikusan Leszállítottra frissül  
-    * Az értékesítési rendelés most már számlázható.    
-30. Kattintson az OK gombra.
-31. Zárja be a lapot.
-32. Kattintson az OK gombra.
+## <a name="set-an-individual-order-for-direct-delivery"></a><span data-ttu-id="4fb5e-108">Állítson be egyetlen rendelést közvetlen kiszállításhoz.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-108">Set an individual order for direct delivery</span></span>
+1. <span data-ttu-id="4fb5e-109">Ugrás az összes értékesítési rendelésre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-109">Go to All sales orders.</span></span>
+2. <span data-ttu-id="4fb5e-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-110">Click New.</span></span>
+3. <span data-ttu-id="4fb5e-111">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-111">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="4fb5e-112">Az USMF használata esetén választhatja az „US-001” számlát.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-112">If you’re using USMF, you can select account US-001.</span></span>  
+4. <span data-ttu-id="4fb5e-113">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-113">Click OK.</span></span>
+5. <span data-ttu-id="4fb5e-114">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="4fb5e-115">Az USMF használata esetén választhatja a „T0020” cikket.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-115">If you’re using USMF, you can select item T0020.</span></span>  
+6. <span data-ttu-id="4fb5e-116">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-116">Click Save.</span></span>
+7. <span data-ttu-id="4fb5e-117">A Művelet panelen kattintson az Értékesítési rendelés elemre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-117">On the Action Pane, click Sales order.</span></span>
+8. <span data-ttu-id="4fb5e-118">Kattintson a Közvetlen kiszállítás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-118">Click Direct delivery.</span></span>
+    * <span data-ttu-id="4fb5e-119">A Szállítás létrehozás lap felsorolja az összes nyitott értékesítésirendelés-sort az értékesítési rendelésből másolva.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-119">The Create delivery page lists all the open sales order lines as copied from the sales order.</span></span> <span data-ttu-id="4fb5e-120">Áttekintheti a rendelési részleteket, és ha szükséges módosíthatja az olyan részleteket, mint a beszerzési mennyiség és az árképzési feltételek a közvetlen kiszállítás létrehozása előtt.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-120">You can review the order details, and if required, you can modify details such purchase quantity and pricing terms before you create the direct delivery.</span></span>  
+9. <span data-ttu-id="4fb5e-121">Válassza ki az Igen lehetőséget az Összes belefoglalása mezőben.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-121">Select Yes in the Include all field.</span></span>
+    * <span data-ttu-id="4fb5e-122">Ha az értékesítésirendelés-soroknak csupán egy részhalmazához szeretne közvetlen kiszállítást létrehozni, akkor ezeket egyenként válassza ki.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-122">If you want to generate a direct delivery for only a subset of the sales order lines, select these individually.</span></span>  
+    * <span data-ttu-id="4fb5e-123">A Szállítószámla mező ekkor lehet üres, de akár már szerepelhet is benne egy szállítószám.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-123">The Vendor account field may or may not already be populated with a vendor number.</span></span> <span data-ttu-id="4fb5e-124">Ha van alapértelmezett szállítói beállítva a termékhez (a kapcsolódó cikkfedezetnél), akkor az ez a szállító be lesz másolva a sorba.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-124">If the default vendor is set up for the product (on the associated Item coverage) then this vendor will be copied to the line.</span></span> <span data-ttu-id="4fb5e-125">Ellenkező esetben a szállítót manuálisan kell megadni.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-125">Otherwise, you must enter a vendor manually.</span></span> <span data-ttu-id="4fb5e-126">Ebben a példában egy új szállítót választunk ki a következő lépésben, még akkor is, ha már be van írva egy.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-126">In this example, we’ll select a new vendor in the next step, even if one is already populated.</span></span>   
+10. <span data-ttu-id="4fb5e-127">A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-127">In the Vendor account field, enter or select a value.</span></span>
+    * <span data-ttu-id="4fb5e-128">Az USMF használata esetén választhatja az 1001 számlát.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-128">If you’re using USMF, you can select account 1001.</span></span>  
+11. <span data-ttu-id="4fb5e-129">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-129">Click OK.</span></span>
+    * <span data-ttu-id="4fb5e-130">Az üzenet tájékoztat arról, hogy a beszerzési rendelés létrehozása megtörtént.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-130">The message informs you that the purchase order has now been created.</span></span>   
+12. <span data-ttu-id="4fb5e-131">Bontsa ki a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-131">Expand the Line details section.</span></span>
+13. <span data-ttu-id="4fb5e-132">Kattintson a Kiszállítás lapra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-132">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="4fb5e-133">A Közvetlen kiszállítás mező értéke most Igen.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-133">The Direct delivery field is now set to Yes.</span></span>  
+    * <span data-ttu-id="4fb5e-134">A közvetlen kiszállítás állapota: a beszerzési rendelés létrehozva.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-134">The Direct delivery status shows the Purchase order created.</span></span>   
+14. <span data-ttu-id="4fb5e-135">A Művelet panelen kattintson az Általános elemre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-135">On the Action Pane, click General.</span></span>
+15. <span data-ttu-id="4fb5e-136">Kattintson a Kapcsolódó rendelések lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-136">Click Related orders.</span></span>
+16. <span data-ttu-id="4fb5e-137">Kattintson a Beszerzési rendelés mezőben található hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-137">Click to follow the link in the Purchase order field.</span></span>
+17. <span data-ttu-id="4fb5e-138">Bontsa ki a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-138">Expand the Line details section.</span></span>
+18. <span data-ttu-id="4fb5e-139">Kattintson a Cím fülre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-139">Click the Address tab.</span></span>
+    * <span data-ttu-id="4fb5e-140">Ne feledje, hogy a beszerzési rendelési sorhoz a szállítási cím a vevő szállítási címe, és nem a vállalat címe.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-140">Note that the delivery address for this purchase order line is the customer's delivery address and not your company's address.</span></span>  
+    * <span data-ttu-id="4fb5e-141">Ha az eredeti értékesítésirendelés-sor vagy a beszerzésirendelés-sor szállítási címét módosítja, akkor a megfelelő rendelési sor szállítási címe automatikusan frissülni fog.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-141">If you change the delivery address on either the purchase order line or the originating sales order line, the address on the corresponding order line will be automatically updated.</span></span>  
+19. <span data-ttu-id="4fb5e-142">Kattintson a Kiszállítás lapra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-142">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="4fb5e-143">Ahogy az értékesítésirendelés-sor esetében, a társított beszerzésirendelés-sor típusa is Közvetlen kiszállítás értékre lesz állítva.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-143">Like the sales order line, the associated purchase order line type is also set to Direct delivery.</span></span>  
+    * <span data-ttu-id="4fb5e-144">A beszerzésirendelés-sor szállítási dátuma és visszaigazolt szállítási dátuma rendre az eredeti értékesítésirendelés-sor kért bevételezési dátumára és visszaigazolt bevételezési dátumára lesznek állítva.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-144">The purchase order line's Delivery  date and the Confirmed delivery date are set to the Requested receipt date and Confirmed receipt date of the originating sales order line respectively.</span></span>   
+    * <span data-ttu-id="4fb5e-145">Ha ezek közül valamelyik dátumot frissíti a beszerzési sornál vagy az értékesítési sornál, akkor a megfelelő rendelésnél automatikusan frissülnek a dátumok.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-145">If you update any of these dates on either the purchase line or the sales line, the dates on the corresponding order will be automatically updated.</span></span>     
+    * <span data-ttu-id="4fb5e-146">Egy speciális társítás kapcsolja az eredeti értékesítési rendeléshez azon beszerzési rendeléseket, amelyek a beállítás szerint közvetlenül a vevőhöz szállítanak.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-146">The purchase order that is set to deliver goods directly the customer is linked to the originating sales order by means of a special association.</span></span> <span data-ttu-id="4fb5e-147">Ezen társítás azzal a szabállyal jár, hogy az értékesítési rendelés szállítólevél-frissítését nem lehet az értékesítési rendelésből elvégezni, csak a beszerzési rendelés segítségével.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-147">This association imposes the rule that the packing slip update of the sales order can't be done from the sales order itself and must be done by using the purchase order.</span></span> <span data-ttu-id="4fb5e-148">A vevői számlázást azonban az értékesítési rendelésből kell elvégezni.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-148">However, customer invoicing must be carried out from the sales order.</span></span>  
+20. <span data-ttu-id="4fb5e-149">A Művelet panelen kattintson a Beszerzés elemre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-149">On the Action Pane, click Purchase.</span></span>
+21. <span data-ttu-id="4fb5e-150">Kattintson a Megerősítés gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-150">Click Confirmation.</span></span>
+22. <span data-ttu-id="4fb5e-151">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-151">Click OK.</span></span>
+23. <span data-ttu-id="4fb5e-152">A Művelet panelen kattintson a Bevételezés elemre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-152">On the Action Pane, click Receive.</span></span>
+24. <span data-ttu-id="4fb5e-153">Kattintson a Termékbevételezés elemre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-153">Click Product receipt.</span></span>
+25. <span data-ttu-id="4fb5e-154">Írjon be egy értéket a Termékbevételezés mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-154">In the Product receipt field, type a value.</span></span>
+26. <span data-ttu-id="4fb5e-155">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-155">Click OK.</span></span>
+27. <span data-ttu-id="4fb5e-156">A Művelet panelen kattintson az Általános elemre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-156">On the Action Pane, click General.</span></span>
+28. <span data-ttu-id="4fb5e-157">Kattintson a Kapcsolódó rendelések lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-157">Click Related orders.</span></span>
+29. <span data-ttu-id="4fb5e-158">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-158">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="4fb5e-159">Miután a beszerzési rendelés bevételezett állapotúre frissült, vagyis amikor a szállító kiszállította az árut a vevő címére, az eredeti értékesítési rendelés állapota automatikusan Leszállítottra frissül</span><span class="sxs-lookup"><span data-stu-id="4fb5e-159">After the purchase order has been updated as received, or in other words, after the vendor has shipped the goods to your customer's address, the status of the originating sales order is automatically updated to Delivered.</span></span>  
+    * <span data-ttu-id="4fb5e-160">Az értékesítési rendelés most már számlázható.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-160">The sales order can now be invoiced.</span></span>    
+30. <span data-ttu-id="4fb5e-161">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-161">Click OK.</span></span>
+31. <span data-ttu-id="4fb5e-162">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-162">Close the page.</span></span>
+32. <span data-ttu-id="4fb5e-163">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-163">Click OK.</span></span>
 
-## <a name="create-direct-deliveries-from-the-workbench"></a>Közvetlen kiszállítások létrehozása a munkaterületről
-1. Zárja be a lapot.
-2. Zárja be a lapot.
-3. Ugrás az összes értékesítési rendelésre.
-4. Kattintson az Új lehetőségre.
-5. A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.
-6. Kattintson az OK gombra.
-7. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-8. Bontsa ki a Soradatok szakaszt.
-9. Kattintson a Kiszállítás lapra.
-    * Ahelyett, hogy létrehozna egy közvetlen kiszállítást az értékesítési rendelés feldolgozásának a részeként, mint az előző eljárásban, most választhatja azt, hogy átadja ezt a feladatot egy beszerzési szakértőnek. Ahhoz, hogy az értékesítésirendelés-sor közvetlen kiszállítás kezelési folyamtának része legyen, be kell jelölni a közvetlen kiszállítást a sornál.  
-10. Válassza az Igen lehetőséget a Közvetlen kiszállítás mezőben.
-    *   Ha a cikkhez már alapértelmezés szerint a közvetlen kiszállítás van beállítva, akkor a mező értéke automatikusan Igen lesz a rendelésisor-bejegyzésnél. A Közvetlen kiszállítás lehetőséget Igen értékre állítva, és egy alapértelmezett közvetlen kiszállítási raktár kiválasztásával beállíthatja egy cikkhez a közvetlen kiszállítást a kiadott termék alaptermékénél.  
-    * Mivel a beszerzési rendelést még nem hozták létre, a Közvetlen szállítás állapota közvetlen szállítás.   
-11. Zárja be a lapot.
-12. Zárja be a lapot.
-13. Lépjen a Közvetlen kiszállítás részre.
-    * A Közvetlen kiszállítás lap munkaterületként funkcionál, és lehetővé teszi a beszerzési ügynökök számára az összes, közvetlen kiszállításra állított értékesítési rendelés áttekintését, így lehetővé teszi számukra, hogy létrehozzák a megfelelő beszerzési rendeléseket. Továbbá a Visszaigazolás és Kiszállítás lapokon megtekinthetik a nyitott közvetlen kiszállítású rendeléseket és a visszaigazolt rendeléseket.   
-14. Kattintson a Közvetlen kiszállítású rendelés létrehozása lehetőségre.
-15. Kattintson a Visszaigazolás fülre.
-    * Miután létrehozott egy közvetlen kiszállítású rendelést, automatikusan a Visszaigazolás lapra került. Közvetlenül erről a lapról is megerősítheti a rendelést. Amint megtörténik a beszerzés megerősítése, automatikusan átkerül a Szállítás lapra, ahonnan nyilvántartásba vehető a bevételezése.  
+## <a name="create-direct-deliveries-from-the-workbench"></a><span data-ttu-id="4fb5e-164">Közvetlen kiszállítások létrehozása a munkaterületről</span><span class="sxs-lookup"><span data-stu-id="4fb5e-164">Create direct deliveries from the workbench</span></span>
+1. <span data-ttu-id="4fb5e-165">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-165">Close the page.</span></span>
+2. <span data-ttu-id="4fb5e-166">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-166">Close the page.</span></span>
+3. <span data-ttu-id="4fb5e-167">Ugrás az összes értékesítési rendelésre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-167">Go to All sales orders.</span></span>
+4. <span data-ttu-id="4fb5e-168">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-168">Click New.</span></span>
+5. <span data-ttu-id="4fb5e-169">A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-169">In the Customer account field, enter or select a value.</span></span>
+6. <span data-ttu-id="4fb5e-170">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-170">Click OK.</span></span>
+7. <span data-ttu-id="4fb5e-171">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-171">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="4fb5e-172">Bontsa ki a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-172">Expand the Line details section.</span></span>
+9. <span data-ttu-id="4fb5e-173">Kattintson a Kiszállítás lapra.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-173">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="4fb5e-174">Ahelyett, hogy létrehozna egy közvetlen kiszállítást az értékesítési rendelés feldolgozásának a részeként, mint az előző eljárásban, most választhatja azt, hogy átadja ezt a feladatot egy beszerzési szakértőnek.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-174">Instead of creating a direct delivery as part of the sales order processing as in the previous procedure, you can choose to hand over this task to a purchasing professional.</span></span> <span data-ttu-id="4fb5e-175">Ahhoz, hogy az értékesítésirendelés-sor közvetlen kiszállítás kezelési folyamtának része legyen, be kell jelölni a közvetlen kiszállítást a sornál.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-175">To include the sales order line in the direct delivery handling process, you must mark the line for direct delivery.</span></span>  
+10. <span data-ttu-id="4fb5e-176">Válassza az Igen lehetőséget a Közvetlen kiszállítás mezőben.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-176">Select Yes in the Direct delivery field.</span></span>
+    *   <span data-ttu-id="4fb5e-177">Ha a cikkhez már alapértelmezés szerint a közvetlen kiszállítás van beállítva, akkor a mező értéke automatikusan Igen lesz a rendelésisor-bejegyzésnél.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-177">If the item has already been set up for direct delivery by default, the field will automatically be set to Yes at the order line entry.</span></span> <span data-ttu-id="4fb5e-178">A Közvetlen kiszállítás lehetőséget Igen értékre állítva, és egy alapértelmezett közvetlen kiszállítási raktár kiválasztásával beállíthatja egy cikkhez a közvetlen kiszállítást a kiadott termék alaptermékénél.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-178">You can set up an item for direct delivery on the Released product's master by setting the Direct delivery option to Yes and selecting a default Direct delivery warehouse.</span></span>  
+    * <span data-ttu-id="4fb5e-179">Mivel a beszerzési rendelést még nem hozták létre, a Közvetlen szállítás állapota közvetlen szállítás.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-179">Because the purchase order has not yet been created, the Direct delivery status is set to To be direct delivered.</span></span>   
+11. <span data-ttu-id="4fb5e-180">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-180">Close the page.</span></span>
+12. <span data-ttu-id="4fb5e-181">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-181">Close the page.</span></span>
+13. <span data-ttu-id="4fb5e-182">Lépjen a Közvetlen kiszállítás részre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-182">Go to Direct delivery.</span></span>
+    * <span data-ttu-id="4fb5e-183">A Közvetlen kiszállítás lap munkaterületként funkcionál, és lehetővé teszi a beszerzési ügynökök számára az összes, közvetlen kiszállításra állított értékesítési rendelés áttekintését, így lehetővé teszi számukra, hogy létrehozzák a megfelelő beszerzési rendeléseket.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-183">The Direct delivery page acts as a workbench that provides the purchasing agent with an overview of all the sales order lines that are to be direct delivered and it allows them to create the respective purchase orders.</span></span> <span data-ttu-id="4fb5e-184">Továbbá a Visszaigazolás és Kiszállítás lapokon megtekinthetik a nyitott közvetlen kiszállítású rendeléseket és a visszaigazolt rendeléseket.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-184">In addition, they can view the open direct delivery orders and the confirmed orders on the Confirmation and Delivery tabs.</span></span>   
+14. <span data-ttu-id="4fb5e-185">Kattintson a Közvetlen kiszállítású rendelés létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-185">Click Create direct delivery.</span></span>
+15. <span data-ttu-id="4fb5e-186">Kattintson a Visszaigazolás fülre.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-186">Click the Confirmation tab.</span></span>
+    * <span data-ttu-id="4fb5e-187">Miután létrehozott egy közvetlen kiszállítású rendelést, automatikusan a Visszaigazolás lapra került.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-187">After you have created a direct delivery order, it automatically moved to the Confirmation tab.</span></span> <span data-ttu-id="4fb5e-188">Közvetlenül erről a lapról is megerősítheti a rendelést.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-188">You can choose to confirm the order directly from this page.</span></span> <span data-ttu-id="4fb5e-189">Amint megtörténik a beszerzés megerősítése, automatikusan átkerül a Szállítás lapra, ahonnan nyilvántartásba vehető a bevételezése.</span><span class="sxs-lookup"><span data-stu-id="4fb5e-189">When the purchase is confirmed, it will automatically move to the Delivery tab, from which you can registered its receipt.</span></span>  
 
 

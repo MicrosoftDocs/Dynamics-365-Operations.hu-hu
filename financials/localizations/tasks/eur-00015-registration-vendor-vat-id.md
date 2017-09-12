@@ -16,51 +16,51 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 08a4769026c3a6da4331a375191117c7c001ceb9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a626d7b4ef4187d56b23efe5c28e986b11247562
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="register-a-vendor-vat-id"></a>Szállítói adószám regisztrálása
+# <a name="register-a-vendor-vat-id"></a><span data-ttu-id="4bf04-103">Szállítói adószám regisztrálása</span><span class="sxs-lookup"><span data-stu-id="4bf04-103">Register a vendor VAT ID</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan lehet áfaregisztrációs azonosítókat és áfamentességi számot adni egy szállítói fiókhoz. Ez a folyamat hasonló a jogi személyek és az ügyfelek számára. 
+<span data-ttu-id="4bf04-104">Ez az eljárás bemutatja, hogyan lehet áfaregisztrációs azonosítókat és áfamentességi számot adni egy szállítói fiókhoz.</span><span class="sxs-lookup"><span data-stu-id="4bf04-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="4bf04-105">Ez a folyamat hasonló a jogi személyek és az ügyfelek számára.</span><span class="sxs-lookup"><span data-stu-id="4bf04-105">This process is similar for legal entities and customers.</span></span> 
 
-Mielőtt ezt az eljárást elvégezné, áfaazonosítókat kell beállítania. Ez az eljárás minden európai országra/régióra vonatkozik. Ezt az eljárást a németországi elsődleges címmel rendelkező DEMF bemutatócég segítségével hozták létre. Ez az eljárás az adatkezelés rendszergazdája, a kötelezettségeket kezelő vezető és a kinnlevőség-kezelő számára szól. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+<span data-ttu-id="4bf04-106">Mielőtt ezt az eljárást elvégezné, áfaazonosítókat kell beállítania.</span><span class="sxs-lookup"><span data-stu-id="4bf04-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="4bf04-107">Ez az eljárás minden európai országra/régióra vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="4bf04-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="4bf04-108">Ezt az eljárást a németországi elsődleges címmel rendelkező DEMF bemutatócég segítségével hozták létre.</span><span class="sxs-lookup"><span data-stu-id="4bf04-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="4bf04-109">Ez az eljárás az adatkezelés rendszergazdája, a kötelezettségeket kezelő vezető és a kinnlevőség-kezelő számára szól.</span><span class="sxs-lookup"><span data-stu-id="4bf04-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="4bf04-110">Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.</span><span class="sxs-lookup"><span data-stu-id="4bf04-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Ugrás a Kötelezettségek > Szállítók > Minden szállító elemre.
-2. A DE-01001 szállító megkeresése és kijelölése a listán
-3. Kattintson a Nyilvántartási azonosítók lehetőségre.
-4. Kattintson a Hozzáadás gombra.
-5. Áfaazonosító kiválasztása.
-6. Írjon be egy értéket a Regisztrációs szám mezőbe.
-    * A kiválasztott szállítóhoz adjon meg egy áfaazonosítót Németországban. Az azonosítónak meg kell egyeznie a regisztrációs típus megadott formátumával.  
-7. Kattintson az Általános fülre.
-8. Adjon meg egy dátumot az Érvényesség mezőben.
-9. Kattintson a Mentés gombra.
-10. Kattintson az Új lehetőségre.
-11. A „Név vagy leírás” mezőbe írjon be egy értéket.
-    * Például írja be, hogy ITA.  
-12. Az Ország/régió mezőben adjon meg vagy válasszon ki egy értéket.
-    * Válassza, például az ITA-t.  
-13. Válassza az Igen lehetőséget az Ország elsődleges címe mezőben.
-14. Kattintson a Mentés gombra.
-15. Kattintson az Áttekintés fülre.
-16. Kattintson a Hozzáadás gombra.
-17. A Regisztráció típusa mezőben adjon meg vagy válasszon ki egy értéket.
-    * Válassza ki például a „Áfaazonosító” lehetőséget.  
-18. Írjon be egy értéket a Regisztrációs szám mezőbe.
-    * Adjon meg például egy olaszországi áfaazonosítót.  Az azonosítónak meg kell egyeznie a regisztrációs típus formátumával.  
-19. Kattintson a Mentés gombra.
-20. Zárja be a lapot.
-21. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Válassza ki például a DE-01001-et.  
-22. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-23. Nyissa meg A számlázás és szállítás szakaszt.
-24. Kattintson a Szerkesztés lehetőségre.
-25. Az Adómentességi szám mezőben adjon meg, vagy válasszon ki egy értéket.
-26. Kattintson a Mentés gombra.
+1. <span data-ttu-id="4bf04-111">Ugrás a Kötelezettségek > Szállítók > Minden szállító elemre.</span><span class="sxs-lookup"><span data-stu-id="4bf04-111">Go to Accounts payable > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="4bf04-112">A DE-01001 szállító megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="4bf04-112">In the list find and select vendor DE-01001</span></span>
+3. <span data-ttu-id="4bf04-113">Kattintson a Nyilvántartási azonosítók lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4bf04-113">Click Registration IDs.</span></span>
+4. <span data-ttu-id="4bf04-114">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="4bf04-114">Click Add.</span></span>
+5. <span data-ttu-id="4bf04-115">Áfaazonosító kiválasztása.</span><span class="sxs-lookup"><span data-stu-id="4bf04-115">Select VAT ID.</span></span>
+6. <span data-ttu-id="4bf04-116">Írjon be egy értéket a Regisztrációs szám mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4bf04-116">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="4bf04-117">A kiválasztott szállítóhoz adjon meg egy áfaazonosítót Németországban.</span><span class="sxs-lookup"><span data-stu-id="4bf04-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="4bf04-118">Az azonosítónak meg kell egyeznie a regisztrációs típus megadott formátumával.</span><span class="sxs-lookup"><span data-stu-id="4bf04-118">The ID must match the specified format of the registration type.</span></span>  
+7. <span data-ttu-id="4bf04-119">Kattintson az Általános fülre.</span><span class="sxs-lookup"><span data-stu-id="4bf04-119">Click the General tab.</span></span>
+8. <span data-ttu-id="4bf04-120">Adjon meg egy dátumot az Érvényesség mezőben.</span><span class="sxs-lookup"><span data-stu-id="4bf04-120">In the Effective field, enter a date.</span></span>
+9. <span data-ttu-id="4bf04-121">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4bf04-121">Click Save.</span></span>
+10. <span data-ttu-id="4bf04-122">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4bf04-122">Click New.</span></span>
+11. <span data-ttu-id="4bf04-123">A „Név vagy leírás” mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4bf04-123">In the Name or description field, type a value.</span></span>
+    * <span data-ttu-id="4bf04-124">Például írja be, hogy ITA.</span><span class="sxs-lookup"><span data-stu-id="4bf04-124">For example, enter ITA.</span></span>  
+12. <span data-ttu-id="4bf04-125">Az Ország/régió mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4bf04-125">In the Country/region field, enter or select a value.</span></span>
+    * <span data-ttu-id="4bf04-126">Válassza, például az ITA-t.</span><span class="sxs-lookup"><span data-stu-id="4bf04-126">For example, select ITA.</span></span>  
+13. <span data-ttu-id="4bf04-127">Válassza az Igen lehetőséget az Ország elsődleges címe mezőben.</span><span class="sxs-lookup"><span data-stu-id="4bf04-127">Select Yes in the Primary for country field.</span></span>
+14. <span data-ttu-id="4bf04-128">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4bf04-128">Click Save.</span></span>
+15. <span data-ttu-id="4bf04-129">Kattintson az Áttekintés fülre.</span><span class="sxs-lookup"><span data-stu-id="4bf04-129">Click the Overview tab.</span></span>
+16. <span data-ttu-id="4bf04-130">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="4bf04-130">Click Add.</span></span>
+17. <span data-ttu-id="4bf04-131">A Regisztráció típusa mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4bf04-131">In the Registration type field, enter or select a value.</span></span>
+    * <span data-ttu-id="4bf04-132">Válassza ki például a „Áfaazonosító” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="4bf04-132">For example, select VAT ID.</span></span>  
+18. <span data-ttu-id="4bf04-133">Írjon be egy értéket a Regisztrációs szám mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4bf04-133">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="4bf04-134">Adjon meg például egy olaszországi áfaazonosítót.</span><span class="sxs-lookup"><span data-stu-id="4bf04-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="4bf04-135">Az azonosítónak meg kell egyeznie a regisztrációs típus formátumával.</span><span class="sxs-lookup"><span data-stu-id="4bf04-135">The ID must have the same format as the registration type.</span></span>  
+19. <span data-ttu-id="4bf04-136">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4bf04-136">Click Save.</span></span>
+20. <span data-ttu-id="4bf04-137">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4bf04-137">Close the page.</span></span>
+21. <span data-ttu-id="4bf04-138">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="4bf04-138">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="4bf04-139">Válassza ki például a DE-01001-et.</span><span class="sxs-lookup"><span data-stu-id="4bf04-139">For example, select DE-01001.</span></span>  
+22. <span data-ttu-id="4bf04-140">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4bf04-140">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="4bf04-141">Nyissa meg A számlázás és szállítás szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4bf04-141">Expand the Invoice and delivery section.</span></span>
+24. <span data-ttu-id="4bf04-142">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4bf04-142">Click Edit.</span></span>
+25. <span data-ttu-id="4bf04-143">Az Adómentességi szám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4bf04-143">In the Tax exempt number field, enter or select a value.</span></span>
+26. <span data-ttu-id="4bf04-144">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4bf04-144">Click Save.</span></span>
 
 

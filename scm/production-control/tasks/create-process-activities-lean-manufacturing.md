@@ -17,80 +17,80 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 31349983d6f21425a2da8bb19c961f05cf1ee031
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: dbedbf6cd5d366d10726a9c10846c171a297a07f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-process-activities-for-lean-manufacturing"></a>Lean manufacturing gyártási folyamattevékenységek létrehozása
+# <a name="create-process-activities-for-lean-manufacturing"></a><span data-ttu-id="522af-103">Lean manufacturing gyártási folyamattevékenységek létrehozása</span><span class="sxs-lookup"><span data-stu-id="522af-103">Create process activities for lean manufacturing</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Hozzon létre folyamattevékenységet a lean manufacturing számára. 
+<span data-ttu-id="522af-104">Hozzon létre folyamattevékenységet a lean manufacturing számára.</span><span class="sxs-lookup"><span data-stu-id="522af-104">Create a process activity for lean manufacturing.</span></span> 
 
-Előfeltételek: 
+<span data-ttu-id="522af-105">Előfeltételek:</span><span class="sxs-lookup"><span data-stu-id="522af-105">Prerequisites:</span></span> 
 
-1. Létre kell hozni a termelési folyamatot és a nem aktív verziót.
+1. <span data-ttu-id="522af-106">Létre kell hozni a termelési folyamatot és a nem aktív verziót.</span><span class="sxs-lookup"><span data-stu-id="522af-106">A production flow and version that is not active must be created.</span></span>
 
-2. Munkacellát kell létrehozni.
+2. <span data-ttu-id="522af-107">Munkacellát kell létrehozni.</span><span class="sxs-lookup"><span data-stu-id="522af-107">A work cell must be created.</span></span>
 
 
-## <a name="find-the-production-flow-version"></a>Termelési folyamat verziójának megkeresése
-1. Ugrás a Gyártásvezérléshez > Beállítás > Lean típusú termelési folyamat > Termelési folyamatok lehetőségre.
-2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+## <a name="find-the-production-flow-version"></a><span data-ttu-id="522af-108">Termelési folyamat verziójának megkeresése</span><span class="sxs-lookup"><span data-stu-id="522af-108">Find the production flow version</span></span>
+1. <span data-ttu-id="522af-109">Ugrás a Gyártásvezérléshez > Beállítás > Lean típusú termelési folyamat > Termelési folyamatok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="522af-109">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="522af-110">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="522af-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="522af-111">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="522af-111">In the list, click the link in the selected row.</span></span>
 
-## <a name="create-a-new-activity"></a>Új tevékenység létrehozása
-1. Kattintson a Tevékenységek lehetőségre.
-    * Győződjön meg arról, hogy a kiválasztott termelési folyamat rendelkezik vázlatverzióval, és válassza ki azt a verziót.  
-2. Kattintson az Új tervezett tevékenység létrehozása lehetőségre.
-3. Kattintson a Tovább gombra.
-4. Írjon be egy értéket a Név mezőbe.
-5. Írjon be egy értéket a Név mezőbe.
-    * Vegye figyelembe, hogy az adott termelési folyamat nevének egyedinek kell lennie minden verzióban.  
-6. Adjon meg egy számot az Folyamatmennyiség mezőben.
-    * Vegye figyelembe, hogy a feldolgozott feladatmennyiségtől függetlenül a munkaköltség kiszámításakor ez a feladatonkénti minimum mennyiség. Ha a feladatmennyiségek eltérnek ettől a mennyiségtől, munkaköltség-eltérés keletkezik.  
-7. Kattintson a Tovább gombra.
+## <a name="create-a-new-activity"></a><span data-ttu-id="522af-112">Új tevékenység létrehozása</span><span class="sxs-lookup"><span data-stu-id="522af-112">Create a new activity</span></span>
+1. <span data-ttu-id="522af-113">Kattintson a Tevékenységek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="522af-113">Click Activities.</span></span>
+    * <span data-ttu-id="522af-114">Győződjön meg arról, hogy a kiválasztott termelési folyamat rendelkezik vázlatverzióval, és válassza ki azt a verziót.</span><span class="sxs-lookup"><span data-stu-id="522af-114">Ensure that the selected production flow has a version in draft and select that version.</span></span>  
+2. <span data-ttu-id="522af-115">Kattintson az Új tervezett tevékenység létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="522af-115">Click Create new plan activity.</span></span>
+3. <span data-ttu-id="522af-116">Kattintson a Tovább gombra.</span><span class="sxs-lookup"><span data-stu-id="522af-116">Click Next.</span></span>
+4. <span data-ttu-id="522af-117">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="522af-117">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="522af-118">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="522af-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="522af-119">Vegye figyelembe, hogy az adott termelési folyamat nevének egyedinek kell lennie minden verzióban.</span><span class="sxs-lookup"><span data-stu-id="522af-119">Note that the name must be unique for a given production flow for all versions.</span></span>  
+6. <span data-ttu-id="522af-120">Adjon meg egy számot az Folyamatmennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="522af-120">In the Process quantity field, enter a number.</span></span>
+    * <span data-ttu-id="522af-121">Vegye figyelembe, hogy a feldolgozott feladatmennyiségtől függetlenül a munkaköltség kiszámításakor ez a feladatonkénti minimum mennyiség.</span><span class="sxs-lookup"><span data-stu-id="522af-121">Note that no matter what job quantity will be processed, this is the minimum quantity per job to calculate the labor cost.</span></span> <span data-ttu-id="522af-122">Ha a feladatmennyiségek eltérnek ettől a mennyiségtől, munkaköltség-eltérés keletkezik.</span><span class="sxs-lookup"><span data-stu-id="522af-122">If job quantities deviate from this quantity, labor cost variance will be created.</span></span>  
+7. <span data-ttu-id="522af-123">Kattintson a Tovább gombra.</span><span class="sxs-lookup"><span data-stu-id="522af-123">Click Next.</span></span>
 
-## <a name="select-the-work-cell"></a>A munkacella kiválasztása
-1. A Munkacella mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+## <a name="select-the-work-cell"></a><span data-ttu-id="522af-124">A munkacella kiválasztása</span><span class="sxs-lookup"><span data-stu-id="522af-124">Select the work cell</span></span>
+1. <span data-ttu-id="522af-125">A Munkacella mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="522af-125">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+2. <span data-ttu-id="522af-126">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="522af-126">In the list, click the link in the selected row.</span></span>
 
-## <a name="define-the-inventory-updates"></a>A készletfrissítések meghatározása
-1. Jelölje be vagy törölje a jelet az Aktuális bevételezés frissítése jelölőnégyzetből.
-    * Ha az Elérhető frissítése = Nem, úgy is meghatározhatja a tevékenységet, hogy félkész terméket kapjon (a művelet nem éri el a következő anyagjegyzékszintet).    Félkész termékek felhasználását is kiválaszthatja.  
+## <a name="define-the-inventory-updates"></a><span data-ttu-id="522af-127">A készletfrissítések meghatározása</span><span class="sxs-lookup"><span data-stu-id="522af-127">Define the inventory updates</span></span>
+1. <span data-ttu-id="522af-128">Jelölje be vagy törölje a jelet az Aktuális bevételezés frissítése jelölőnégyzetből.</span><span class="sxs-lookup"><span data-stu-id="522af-128">Select or clear the Update on hand receipt check box.</span></span>
+    * <span data-ttu-id="522af-129">Ha az Elérhető frissítése = Nem, úgy is meghatározhatja a tevékenységet, hogy félkész terméket kapjon (a művelet nem éri el a következő anyagjegyzékszintet).</span><span class="sxs-lookup"><span data-stu-id="522af-129">If Update On hand = No, you can define the activity to receive a semi-finished product (the activity does not reach the next BOM level).</span></span>    <span data-ttu-id="522af-130">Félkész termékek felhasználását is kiválaszthatja.</span><span class="sxs-lookup"><span data-stu-id="522af-130">You can also select to consume semi-finished products.</span></span>  
 
-## <a name="define-the-picking-activities"></a>A kitárolási tevékenységek meghatározása
-1. Kattintson a Tovább gombra.
-2. A listában jelölje meg a kiválasztott sort.
-    * Az alapértelmezett kitárolási tevékenység a kiválasztott munkacella bemeneti helyére kerül létrehozásra.  
-3. Kattintson a Hozzáadás gombra.
-    * Létrehozhat további kitárolási tevékenységet az egyes termékekre, amelyek nincsenek előkészítve a munkacella bemeneti tevékenységénél.  
-4. Keresse meg és jelölje ki a kívánt rekordot a listán.
-5. A cikkmezőbe írjon egy értéket.
-6. A Raktár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-    * Ezzel a meghatározással a tevékenység során felhasznált anyagok az alapértelmezett bemeneti raktárból és helyről származnak, kivéve a második kitárolási tevékenységben meghatározott cikk. Ez a cikk egy másik raktárból és helyről kerül kitárolásra.  
-7. Keresse meg és jelölje ki a kívánt rekordot a listán.
-8. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-9. Jelölje be vagy törölje a jelet a Selejt regisztrálása jelölőnégyzetből.
-10. Kattintson a Tovább gombra.
+## <a name="define-the-picking-activities"></a><span data-ttu-id="522af-131">A kitárolási tevékenységek meghatározása</span><span class="sxs-lookup"><span data-stu-id="522af-131">Define the picking activities</span></span>
+1. <span data-ttu-id="522af-132">Kattintson a Tovább gombra.</span><span class="sxs-lookup"><span data-stu-id="522af-132">Click Next.</span></span>
+2. <span data-ttu-id="522af-133">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="522af-133">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="522af-134">Az alapértelmezett kitárolási tevékenység a kiválasztott munkacella bemeneti helyére kerül létrehozásra.</span><span class="sxs-lookup"><span data-stu-id="522af-134">A default picking activity is created for the input location of the selected work cell.</span></span>  
+3. <span data-ttu-id="522af-135">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="522af-135">Click Add.</span></span>
+    * <span data-ttu-id="522af-136">Létrehozhat további kitárolási tevékenységet az egyes termékekre, amelyek nincsenek előkészítve a munkacella bemeneti tevékenységénél.</span><span class="sxs-lookup"><span data-stu-id="522af-136">You can create additional picking activities for specific products, that are not staged at the work cell input activity.</span></span>  
+4. <span data-ttu-id="522af-137">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="522af-137">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="522af-138">A cikkmezőbe írjon egy értéket.</span><span class="sxs-lookup"><span data-stu-id="522af-138">In the Item number field, type a value.</span></span>
+6. <span data-ttu-id="522af-139">A Raktár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="522af-139">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="522af-140">Ezzel a meghatározással a tevékenység során felhasznált anyagok az alapértelmezett bemeneti raktárból és helyről származnak, kivéve a második kitárolási tevékenységben meghatározott cikk.</span><span class="sxs-lookup"><span data-stu-id="522af-140">With this definition, all materials consumed in the activity are picked from the default input warehouse and location except the item that is defined in the second picking activity.</span></span> <span data-ttu-id="522af-141">Ez a cikk egy másik raktárból és helyről kerül kitárolásra.</span><span class="sxs-lookup"><span data-stu-id="522af-141">This item will be picked from a different warehouse and location.</span></span>  
+7. <span data-ttu-id="522af-142">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="522af-142">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="522af-143">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="522af-143">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="522af-144">Jelölje be vagy törölje a jelet a Selejt regisztrálása jelölőnégyzetből.</span><span class="sxs-lookup"><span data-stu-id="522af-144">Select or clear the Register scrap check box.</span></span>
+10. <span data-ttu-id="522af-145">Kattintson a Tovább gombra.</span><span class="sxs-lookup"><span data-stu-id="522af-145">Click Next.</span></span>
 
-## <a name="define-the-activity-times"></a>A tevékenységi idők meghatározása
-1. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * A Futásidő meghatározását meg kell adni. A Futásidő a költségek és a kanbanfeladatok átfutási idejének kiszámítására szolgál. A futásidő nem a kapacitásterhelés és a felhasználás kiszámítására szolgál, ezt a ciklusidő számítja ki a termelésifolyamat-verzió feladat segítségével.  
-2. Adjon meg egy számot az Idő mezőben.
-3. Írjon be egy értéket a Mértékegység mezőbe.
-4. Válasszon ki egy időegységet.
-5. Adjon meg egy számot a Mennyiségenként mezőben.
-6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * A várakozási idő nem kötelező.  
-7. Adjon meg egy számot az Idő mezőben.
-8. Írjon be egy értéket a Mértékegység mezőbe.
-9. Válasszon ki egy időegységet.
-10. Adjon meg egy számot a Mennyiségenként mezőben.
-11. Kattintson a Tovább gombra.
-12. Kattintson a Finish gombra.
-13. Zárja be a lapot.
+## <a name="define-the-activity-times"></a><span data-ttu-id="522af-146">A tevékenységi idők meghatározása</span><span class="sxs-lookup"><span data-stu-id="522af-146">Define the activity times</span></span>
+1. <span data-ttu-id="522af-147">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="522af-147">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="522af-148">A Futásidő meghatározását meg kell adni.</span><span class="sxs-lookup"><span data-stu-id="522af-148">The definition of a Runtime is required.</span></span> <span data-ttu-id="522af-149">A Futásidő a költségek és a kanbanfeladatok átfutási idejének kiszámítására szolgál.</span><span class="sxs-lookup"><span data-stu-id="522af-149">The Runtime is used to calculate costs and the throughput times of the kanban jobs.</span></span> <span data-ttu-id="522af-150">A futásidő nem a kapacitásterhelés és a felhasználás kiszámítására szolgál, ezt a ciklusidő számítja ki a termelésifolyamat-verzió feladat segítségével.</span><span class="sxs-lookup"><span data-stu-id="522af-150">Runtimes are not used to calculate capacity load and consumption, this is calculated by cycle time, derived from the production flow version task.</span></span>  
+2. <span data-ttu-id="522af-151">Adjon meg egy számot az Idő mezőben.</span><span class="sxs-lookup"><span data-stu-id="522af-151">In the Time field, enter a number.</span></span>
+3. <span data-ttu-id="522af-152">Írjon be egy értéket a Mértékegység mezőbe.</span><span class="sxs-lookup"><span data-stu-id="522af-152">In the Unit field, type a value.</span></span>
+4. <span data-ttu-id="522af-153">Válasszon ki egy időegységet.</span><span class="sxs-lookup"><span data-stu-id="522af-153">Select the Time unit.</span></span>
+5. <span data-ttu-id="522af-154">Adjon meg egy számot a Mennyiségenként mezőben.</span><span class="sxs-lookup"><span data-stu-id="522af-154">In the Per quantity field, enter a number.</span></span>
+6. <span data-ttu-id="522af-155">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="522af-155">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="522af-156">A várakozási idő nem kötelező.</span><span class="sxs-lookup"><span data-stu-id="522af-156">Queue times are optional.</span></span>  
+7. <span data-ttu-id="522af-157">Adjon meg egy számot az Idő mezőben.</span><span class="sxs-lookup"><span data-stu-id="522af-157">In the Time field, enter a number.</span></span>
+8. <span data-ttu-id="522af-158">Írjon be egy értéket a Mértékegység mezőbe.</span><span class="sxs-lookup"><span data-stu-id="522af-158">In the Unit field, type a value.</span></span>
+9. <span data-ttu-id="522af-159">Válasszon ki egy időegységet.</span><span class="sxs-lookup"><span data-stu-id="522af-159">Select the Time unit.</span></span>
+10. <span data-ttu-id="522af-160">Adjon meg egy számot a Mennyiségenként mezőben.</span><span class="sxs-lookup"><span data-stu-id="522af-160">In the Per quantity field, enter a number.</span></span>
+11. <span data-ttu-id="522af-161">Kattintson a Tovább gombra.</span><span class="sxs-lookup"><span data-stu-id="522af-161">Click Next.</span></span>
+12. <span data-ttu-id="522af-162">Kattintson a Finish gombra.</span><span class="sxs-lookup"><span data-stu-id="522af-162">Click Finish.</span></span>
+13. <span data-ttu-id="522af-163">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="522af-163">Close the page.</span></span>
 
 

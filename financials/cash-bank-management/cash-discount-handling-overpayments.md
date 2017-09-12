@@ -19,124 +19,124 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5d75794146eada9b9f439d99ad272f5af8db53b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 5604f806eed81c60dfcae7cb7b1a22bba25aa454
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Készpénzfizetési engedmény kezelése túlfizetések esetén
+# <a name="handling-cash-discounts-for-overpayments"></a><span data-ttu-id="505cc-103">Készpénzfizetési engedmény kezelése túlfizetések esetén</span><span class="sxs-lookup"><span data-stu-id="505cc-103">Handling cash discounts for overpayments</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk azokat az eseteket mutatja be, amelyek megmutatják a fizetés kezelésének módját, amikor a felhasználó a készpénzfizetési engedményt tesz, de a túlfizetés esetében is. 
+<span data-ttu-id="505cc-104">Ez a cikk azokat az eseteket mutatja be, amelyek megmutatják a fizetés kezelésének módját, amikor a felhasználó a készpénzfizetési engedményt tesz, de a túlfizetés esetében is.</span><span class="sxs-lookup"><span data-stu-id="505cc-104">This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.</span></span> 
 
-Egy számla akkor tekinthető túlfizetettnek, ha a kifizetési összeg nagyobb, mint a készpénzfizetési engedmény összegével csökkentett számlaösszeg. Annak beállításához, hogy hogyan kezelje a rendszer az elérhető készpénzfizetési engedménykülönbséget, ha egy számlát túlfizetnek, a **Készpénzfizetési engedmény adminisztrációja** és a **Maximális túl- vagy alulfizetés** mezőket kell beállítania a **Kinnlevőségek paraméterei** oldalon. A következő példában a vevő túlfizetett egy számlát 0,50 értékkel.
+<span data-ttu-id="505cc-105">Egy számla akkor tekinthető túlfizetettnek, ha a kifizetési összeg nagyobb, mint a készpénzfizetési engedmény összegével csökkentett számlaösszeg.</span><span class="sxs-lookup"><span data-stu-id="505cc-105">An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount.</span></span> <span data-ttu-id="505cc-106">Annak beállításához, hogy hogyan kezelje a rendszer az elérhető készpénzfizetési engedménykülönbséget, ha egy számlát túlfizetnek, a **Készpénzfizetési engedmény adminisztrációja** és a **Maximális túl- vagy alulfizetés** mezőket kell beállítania a **Kinnlevőségek paraméterei** oldalon.</span><span class="sxs-lookup"><span data-stu-id="505cc-106">To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the **Cash discount administration** and **Maximum overpayment or underpayment** fields on the **Accounts receivable parameters** page.</span></span> <span data-ttu-id="505cc-107">A következő példában a vevő túlfizetett egy számlát 0,50 értékkel.</span><span class="sxs-lookup"><span data-stu-id="505cc-107">In the following example, the customer has overpaid the invoice by 0.50.</span></span>
 
-| Számla összege | Készpénzfizetési engedmény elérhető | A készpénzfizetési engedmény beszámításával fizetendő összeg | A vevő által ténylegesen kifizetett összeg |
+| <span data-ttu-id="505cc-108">Számla összege</span><span class="sxs-lookup"><span data-stu-id="505cc-108">Invoice total</span></span> | <span data-ttu-id="505cc-109">Készpénzfizetési engedmény elérhető</span><span class="sxs-lookup"><span data-stu-id="505cc-109">Cash discount available</span></span> | <span data-ttu-id="505cc-110">A készpénzfizetési engedmény beszámításával fizetendő összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-110">Amount to be paid, which includes the cash discount</span></span> | <span data-ttu-id="505cc-111">A vevő által ténylegesen kifizetett összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-111">Amount the customer actually pays</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
-| 105,00        | 10,50                   | 94,50                                               | 95,00                             |
+| <span data-ttu-id="505cc-112">105,00</span><span class="sxs-lookup"><span data-stu-id="505cc-112">105.00</span></span>        | <span data-ttu-id="505cc-113">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-113">10.50</span></span>                   | <span data-ttu-id="505cc-114">94,50</span><span class="sxs-lookup"><span data-stu-id="505cc-114">94.50</span></span>                                               | <span data-ttu-id="505cc-115">95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-115">95.00</span></span>                             |
 
-## <a name="cash-discount-administration--specific"></a>Készpénzfizetési engedmény adminisztrációja = Meghatározott
-Ha a **Meghatározott** beállítás van kiválasztva a **Készpénzfizetési engedmény adminisztrációja** mezőben, a **Automatikus tranzakciókhoz használt számlák** lapon, akkor a rendszer a teljes készpénzfizetési engedményt alkalmazza. A túlfizetés összegét vagy feladja egy készpénzfizetési engedménykülönbözeti főkönyvi számlára vagy megmarad a vevői számla egyenlegén. A rendszer viselkedése attól függ, hogy a túlfizetés összege 0,00 és a**Maximális túl- vagy alulfizetés** mezőben megadott összeg között van, vagy meghaladja a **Maximális túl- vagy alulfizetés** összegét.
+## <a name="cash-discount-administration--specific"></a><span data-ttu-id="505cc-116">Készpénzfizetési engedmény adminisztrációja = Meghatározott</span><span class="sxs-lookup"><span data-stu-id="505cc-116">Cash discount administration = Specific</span></span>
+<span data-ttu-id="505cc-117">Ha a **Meghatározott** beállítás van kiválasztva a **Készpénzfizetési engedmény adminisztrációja** mezőben, a **Automatikus tranzakciókhoz használt számlák** lapon, akkor a rendszer a teljes készpénzfizetési engedményt alkalmazza.</span><span class="sxs-lookup"><span data-stu-id="505cc-117">When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken.</span></span> <span data-ttu-id="505cc-118">A túlfizetés összegét vagy feladja egy készpénzfizetési engedménykülönbözeti főkönyvi számlára vagy megmarad a vevői számla egyenlegén.</span><span class="sxs-lookup"><span data-stu-id="505cc-118">The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account.</span></span> <span data-ttu-id="505cc-119">A rendszer viselkedése attól függ, hogy a túlfizetés összege 0,00 és a**Maximális túl- vagy alulfizetés** mezőben megadott összeg között van, vagy meghaladja a **Maximális túl- vagy alulfizetés** összegét.</span><span class="sxs-lookup"><span data-stu-id="505cc-119">The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.</span></span>
 
-### <a name="scenario-1"></a>1. eset
+### <a name="scenario-1"></a><span data-ttu-id="505cc-120">1. eset</span><span class="sxs-lookup"><span data-stu-id="505cc-120">Scenario 1</span></span>
 
-Ebben az esetben a túlfizetés értéke nulla és a maximális túlfizetés vagy alulfizetés között van. Egy 105,00 értékű számla kerül rögzítésre, amelyhez készpénzfizetési engedmény érhető el, ha a számla hét napon belül kiegyenlítésre kerül.
+<span data-ttu-id="505cc-121">Ebben az esetben a túlfizetés értéke nulla és a maximális túlfizetés vagy alulfizetés között van.</span><span class="sxs-lookup"><span data-stu-id="505cc-121">In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment.</span></span> <span data-ttu-id="505cc-122">Egy 105,00 értékű számla kerül rögzítésre, amelyhez készpénzfizetési engedmény érhető el, ha a számla hét napon belül kiegyenlítésre kerül.</span><span class="sxs-lookup"><span data-stu-id="505cc-122">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Számla összege | Készpénzfizetési engedmény elérhető | A készpénzfizetési engedmény beszámításával fizetendő összeg |
+| <span data-ttu-id="505cc-123">Számla összege</span><span class="sxs-lookup"><span data-stu-id="505cc-123">Invoice total</span></span> | <span data-ttu-id="505cc-124">Készpénzfizetési engedmény elérhető</span><span class="sxs-lookup"><span data-stu-id="505cc-124">Cash discount available</span></span> | <span data-ttu-id="505cc-125">A készpénzfizetési engedmény beszámításával fizetendő összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-125">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="505cc-126">105,00</span><span class="sxs-lookup"><span data-stu-id="505cc-126">105.00</span></span>        | <span data-ttu-id="505cc-127">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-127">10.50</span></span>                   | <span data-ttu-id="505cc-128">94,50</span><span class="sxs-lookup"><span data-stu-id="505cc-128">94.50</span></span>                                               |
 
-A vevő a készpénzfizetési engedmény időszakában elküld egy 95,00 értékű kifizetést. A kifizetés a 105,00 értékű számla kiegyenlítésére történik. Miután a számlák és fizetések kiegyenlítésre kerültek, a következő tranzakciók jönnek létre a Kinnlevőségek modulban a vevő számára.
+<span data-ttu-id="505cc-129">A vevő a készpénzfizetési engedmény időszakában elküld egy 95,00 értékű kifizetést.</span><span class="sxs-lookup"><span data-stu-id="505cc-129">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="505cc-130">A kifizetés a 105,00 értékű számla kiegyenlítésére történik.</span><span class="sxs-lookup"><span data-stu-id="505cc-130">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="505cc-131">Miután a számlák és fizetések kiegyenlítésre kerültek, a következő tranzakciók jönnek létre a Kinnlevőségek modulban a vevő számára.</span><span class="sxs-lookup"><span data-stu-id="505cc-131">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Tranzakció   | Összeg | Egyenleg |
+| <span data-ttu-id="505cc-132">Tranzakció</span><span class="sxs-lookup"><span data-stu-id="505cc-132">Transaction</span></span>   | <span data-ttu-id="505cc-133">Összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-133">Amount</span></span> | <span data-ttu-id="505cc-134">Egyenleg</span><span class="sxs-lookup"><span data-stu-id="505cc-134">Balance</span></span> |
 |---------------|--------|---------|
-| Számla       | 105,00 | 0,00    |
-| Kifizetés       | -95,00 | 0,00    |
-| Készpénzfizetési engedmény | -10,50 | 0,00    |
+| <span data-ttu-id="505cc-135">Számla</span><span class="sxs-lookup"><span data-stu-id="505cc-135">Invoice</span></span>       | <span data-ttu-id="505cc-136">105,00</span><span class="sxs-lookup"><span data-stu-id="505cc-136">105.00</span></span> | <span data-ttu-id="505cc-137">0,00</span><span class="sxs-lookup"><span data-stu-id="505cc-137">0.00</span></span>    |
+| <span data-ttu-id="505cc-138">Kifizetés</span><span class="sxs-lookup"><span data-stu-id="505cc-138">Payment</span></span>       | <span data-ttu-id="505cc-139">-95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-139">-95.00</span></span> | <span data-ttu-id="505cc-140">0,00</span><span class="sxs-lookup"><span data-stu-id="505cc-140">0.00</span></span>    |
+| <span data-ttu-id="505cc-141">Készpénzfizetési engedmény</span><span class="sxs-lookup"><span data-stu-id="505cc-141">Cash discount</span></span> | <span data-ttu-id="505cc-142">-10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-142">-10.50</span></span> | <span data-ttu-id="505cc-143">0,00</span><span class="sxs-lookup"><span data-stu-id="505cc-143">0.00</span></span>    |
 
-A következő könyvelési tételek a kifizetéshez és a kiegyenlítéshez jönnek létre. **Fizetés**
+<span data-ttu-id="505cc-144">A következő könyvelési tételek a kifizetéshez és a kiegyenlítéshez jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="505cc-144">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="505cc-145">**Fizetés**</span><span class="sxs-lookup"><span data-stu-id="505cc-145">**Payment**</span></span>
 
-| Fiók             | Terhelés összege | Követelés összege |
+| <span data-ttu-id="505cc-146">Fiók</span><span class="sxs-lookup"><span data-stu-id="505cc-146">Account</span></span>             | <span data-ttu-id="505cc-147">Terhelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-147">Debit amount</span></span> | <span data-ttu-id="505cc-148">Követelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-148">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Készpénz                | 95,00        |               |
-| Kinnlevőségek |              | 95,00         |
+| <span data-ttu-id="505cc-149">Készpénz</span><span class="sxs-lookup"><span data-stu-id="505cc-149">Cash</span></span>                | <span data-ttu-id="505cc-150">95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-150">95.00</span></span>        |               |
+| <span data-ttu-id="505cc-151">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="505cc-151">Accounts receivable</span></span> |              | <span data-ttu-id="505cc-152">95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-152">95.00</span></span>         |
 
-**Elszámolás**
+<span data-ttu-id="505cc-153">**Elszámolás**</span><span class="sxs-lookup"><span data-stu-id="505cc-153">**Settlement**</span></span>
 
-| Fiók                                                                                                          | Terhelés összege | Követelés összege |
+| <span data-ttu-id="505cc-154">Fiók</span><span class="sxs-lookup"><span data-stu-id="505cc-154">Account</span></span>                                                                                                          | <span data-ttu-id="505cc-155">Terhelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-155">Debit amount</span></span> | <span data-ttu-id="505cc-156">Követelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-156">Credit amount</span></span> |
 |------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| Készpénzfizetési engedmény (A **Vevői engedmények fő számlája** mező a **Készpénzfizetési engedmények** lapon)                 | 10,50        |               |
-| Kinnlevőségek                                                                                              |              | 10,50         |
-| Vevői készpénzfizetési engedmény (A **Vevői engedmény** mező a **Számlák automatikus tranzakciókhoz** lapon) |              | 0,50          |
-| Kinnlevőségek                                                                                              | 0,50         |               |
+| <span data-ttu-id="505cc-157">Készpénzfizetési engedmény (A **Vevői engedmények fő számlája** mező a **Készpénzfizetési engedmények** lapon)</span><span class="sxs-lookup"><span data-stu-id="505cc-157">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span>                 | <span data-ttu-id="505cc-158">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-158">10.50</span></span>        |               |
+| <span data-ttu-id="505cc-159">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="505cc-159">Accounts receivable</span></span>                                                                                              |              | <span data-ttu-id="505cc-160">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-160">10.50</span></span>         |
+| <span data-ttu-id="505cc-161">Vevői készpénzfizetési engedmény (A **Vevői engedmény** mező a **Számlák automatikus tranzakciókhoz** lapon)</span><span class="sxs-lookup"><span data-stu-id="505cc-161">Customer cash discount (the **Customer cash discount** field on the **Account for automatic transactions** page)</span></span> |              | <span data-ttu-id="505cc-162">0,50</span><span class="sxs-lookup"><span data-stu-id="505cc-162">0.50</span></span>          |
+| <span data-ttu-id="505cc-163">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="505cc-163">Accounts receivable</span></span>                                                                                              | <span data-ttu-id="505cc-164">0,50</span><span class="sxs-lookup"><span data-stu-id="505cc-164">0.50</span></span>         |               |
 
-### <a name="scenario-2"></a>2. eset
+### <a name="scenario-2"></a><span data-ttu-id="505cc-165">2. eset</span><span class="sxs-lookup"><span data-stu-id="505cc-165">Scenario 2</span></span>
 
-Ebben az esetben a túlfizetési összeg értéke meghaladja a maximális túlfizetés vagy alulfizetés összegét. Egy 105,00 értékű számla kerül rögzítésre, amelyhez készpénzfizetési engedmény érhető el, ha a számla hét napon belül kiegyenlítésre kerül.
+<span data-ttu-id="505cc-166">Ebben az esetben a túlfizetési összeg értéke meghaladja a maximális túlfizetés vagy alulfizetés összegét.</span><span class="sxs-lookup"><span data-stu-id="505cc-166">In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount.</span></span> <span data-ttu-id="505cc-167">Egy 105,00 értékű számla kerül rögzítésre, amelyhez készpénzfizetési engedmény érhető el, ha a számla hét napon belül kiegyenlítésre kerül.</span><span class="sxs-lookup"><span data-stu-id="505cc-167">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Számla összege | Készpénzfizetési engedmény elérhető | A készpénzfizetési engedmény beszámításával fizetendő összeg |
+| <span data-ttu-id="505cc-168">Számla összege</span><span class="sxs-lookup"><span data-stu-id="505cc-168">Invoice total</span></span> | <span data-ttu-id="505cc-169">Készpénzfizetési engedmény elérhető</span><span class="sxs-lookup"><span data-stu-id="505cc-169">Cash discount available</span></span> | <span data-ttu-id="505cc-170">A készpénzfizetési engedmény beszámításával fizetendő összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-170">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="505cc-171">105,00</span><span class="sxs-lookup"><span data-stu-id="505cc-171">105.00</span></span>        | <span data-ttu-id="505cc-172">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-172">10.50</span></span>                   | <span data-ttu-id="505cc-173">94,50</span><span class="sxs-lookup"><span data-stu-id="505cc-173">94.50</span></span>                                               |
 
-A vevő a készpénzfizetési engedmény időszakában elküld egy 95,00 értékű kifizetést. A kifizetés a 105,00 értékű számla kiegyenlítésére történik. Miután a számlák és fizetések kiegyenlítésre kerültek, a következő tranzakciók jönnek létre a Kinnlevőségek modulban a vevő számára.
+<span data-ttu-id="505cc-174">A vevő a készpénzfizetési engedmény időszakában elküld egy 95,00 értékű kifizetést.</span><span class="sxs-lookup"><span data-stu-id="505cc-174">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="505cc-175">A kifizetés a 105,00 értékű számla kiegyenlítésére történik.</span><span class="sxs-lookup"><span data-stu-id="505cc-175">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="505cc-176">Miután a számlák és fizetések kiegyenlítésre kerültek, a következő tranzakciók jönnek létre a Kinnlevőségek modulban a vevő számára.</span><span class="sxs-lookup"><span data-stu-id="505cc-176">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Tranzakció   | Összeg | Egyenleg |
+| <span data-ttu-id="505cc-177">Tranzakció</span><span class="sxs-lookup"><span data-stu-id="505cc-177">Transaction</span></span>   | <span data-ttu-id="505cc-178">Összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-178">Amount</span></span> | <span data-ttu-id="505cc-179">Egyenleg</span><span class="sxs-lookup"><span data-stu-id="505cc-179">Balance</span></span> |
 |---------------|--------|---------|
-| Számla       | 105,00 | 0,00    |
-| Kifizetés       | -95,00 | -0,50   |
-| Készpénzfizetési engedmény | -10,50 | 0,00    |
+| <span data-ttu-id="505cc-180">Számla</span><span class="sxs-lookup"><span data-stu-id="505cc-180">Invoice</span></span>       | <span data-ttu-id="505cc-181">105,00</span><span class="sxs-lookup"><span data-stu-id="505cc-181">105.00</span></span> | <span data-ttu-id="505cc-182">0,00</span><span class="sxs-lookup"><span data-stu-id="505cc-182">0.00</span></span>    |
+| <span data-ttu-id="505cc-183">Kifizetés</span><span class="sxs-lookup"><span data-stu-id="505cc-183">Payment</span></span>       | <span data-ttu-id="505cc-184">-95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-184">-95.00</span></span> | <span data-ttu-id="505cc-185">-0,50</span><span class="sxs-lookup"><span data-stu-id="505cc-185">-0.50</span></span>   |
+| <span data-ttu-id="505cc-186">Készpénzfizetési engedmény</span><span class="sxs-lookup"><span data-stu-id="505cc-186">Cash discount</span></span> | <span data-ttu-id="505cc-187">-10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-187">-10.50</span></span> | <span data-ttu-id="505cc-188">0,00</span><span class="sxs-lookup"><span data-stu-id="505cc-188">0.00</span></span>    |
 
-A 0,50 értékű túlfizetési összeg megmarad nyitott egyenlegként a fizetésen, és kiegyenlíthető lesz egy másik számlával szemben. A következő könyvelési tételek a kifizetéshez és a kiegyenlítéshez jönnek létre. **Fizetés**
+<span data-ttu-id="505cc-189">A 0,50 értékű túlfizetési összeg megmarad nyitott egyenlegként a fizetésen, és kiegyenlíthető lesz egy másik számlával szemben.</span><span class="sxs-lookup"><span data-stu-id="505cc-189">The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice.</span></span> <span data-ttu-id="505cc-190">A következő könyvelési tételek a kifizetéshez és a kiegyenlítéshez jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="505cc-190">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="505cc-191">**Fizetés**</span><span class="sxs-lookup"><span data-stu-id="505cc-191">**Payment**</span></span>
 
-| Fiók             | Terhelés összege | Követelés összege |
+| <span data-ttu-id="505cc-192">Fiók</span><span class="sxs-lookup"><span data-stu-id="505cc-192">Account</span></span>             | <span data-ttu-id="505cc-193">Terhelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-193">Debit amount</span></span> | <span data-ttu-id="505cc-194">Követelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-194">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Készpénz                | 95,00        |               |
-| Kinnlevőségek |              | 95,00         |
+| <span data-ttu-id="505cc-195">Készpénz</span><span class="sxs-lookup"><span data-stu-id="505cc-195">Cash</span></span>                | <span data-ttu-id="505cc-196">95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-196">95.00</span></span>        |               |
+| <span data-ttu-id="505cc-197">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="505cc-197">Accounts receivable</span></span> |              | <span data-ttu-id="505cc-198">95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-198">95.00</span></span>         |
 
-**Elszámolás**
+<span data-ttu-id="505cc-199">**Elszámolás**</span><span class="sxs-lookup"><span data-stu-id="505cc-199">**Settlement**</span></span>
 
-| Fiók                                                                                          | Terhelés összege | Követelés összege |
+| <span data-ttu-id="505cc-200">Fiók</span><span class="sxs-lookup"><span data-stu-id="505cc-200">Account</span></span>                                                                                          | <span data-ttu-id="505cc-201">Terhelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-201">Debit amount</span></span> | <span data-ttu-id="505cc-202">Követelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-202">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Készpénzfizetési engedmény (A **Vevői engedmények fő számlája** mező a **Készpénzfizetési engedmények** lapon) | 10,50        |               |
-| Kinnlevőségek                                                                              |              | 10,50         |
+| <span data-ttu-id="505cc-203">Készpénzfizetési engedmény (A **Vevői engedmények fő számlája** mező a **Készpénzfizetési engedmények** lapon)</span><span class="sxs-lookup"><span data-stu-id="505cc-203">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="505cc-204">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-204">10.50</span></span>        |               |
+| <span data-ttu-id="505cc-205">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="505cc-205">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="505cc-206">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-206">10.50</span></span>         |
 
-## <a name="cash-discount-administration--unspecific"></a>Készpénzfizetési engedmény adminisztrációja = Meghatározatlan
-Ha a **Meghatározatlan** beállítás van kiválasztva a **Készpénzfizetési engedmény adminisztrációja** mezőben, a **Automatikus tranzakciókhoz használt számlák** lapon, akkor a készpénzfizetési engedmény összege lecsökken a túlfizetés összegével. A rendszer mindig alkalmazza ezt a viselkedést, függetlenül attól, hogy a túlfizetett összeg meghaladja vagy elmadar a **Maximális túl- vagy alulfizetés** mezőben megadott összegtől.
+## <a name="cash-discount-administration--unspecific"></a><span data-ttu-id="505cc-207">Készpénzfizetési engedmény adminisztrációja = Meghatározatlan</span><span class="sxs-lookup"><span data-stu-id="505cc-207">Cash discount administration = Unspecific</span></span>
+<span data-ttu-id="505cc-208">Ha a **Meghatározatlan** beállítás van kiválasztva a **Készpénzfizetési engedmény adminisztrációja** mezőben, a **Automatikus tranzakciókhoz használt számlák** lapon, akkor a készpénzfizetési engedmény összege lecsökken a túlfizetés összegével.</span><span class="sxs-lookup"><span data-stu-id="505cc-208">When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount.</span></span> <span data-ttu-id="505cc-209">A rendszer mindig alkalmazza ezt a viselkedést, függetlenül attól, hogy a túlfizetett összeg meghaladja vagy elmadar a **Maximális túl- vagy alulfizetés** mezőben megadott összegtől.</span><span class="sxs-lookup"><span data-stu-id="505cc-209">This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.</span></span>
 
-### <a name="scenario-3"></a>3. eset
+### <a name="scenario-3"></a><span data-ttu-id="505cc-210">3. eset</span><span class="sxs-lookup"><span data-stu-id="505cc-210">Scenario 3</span></span>
 
-Ebben az esetben egy 105,00 értékű számla kerül rögzítésre, amelyhez készpénzfizetési engedmény érhető el, ha a számla hét napon belül kiegyenlítésre kerül.
+<span data-ttu-id="505cc-211">Ebben az esetben egy 105,00 értékű számla kerül rögzítésre, amelyhez készpénzfizetési engedmény érhető el, ha a számla hét napon belül kiegyenlítésre kerül.</span><span class="sxs-lookup"><span data-stu-id="505cc-211">In this scenario, an invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Számla összege | Készpénzfizetési engedmény elérhető | A készpénzfizetési engedmény beszámításával fizetendő összeg |
+| <span data-ttu-id="505cc-212">Számla összege</span><span class="sxs-lookup"><span data-stu-id="505cc-212">Invoice total</span></span> | <span data-ttu-id="505cc-213">Készpénzfizetési engedmény elérhető</span><span class="sxs-lookup"><span data-stu-id="505cc-213">Cash discount available</span></span> | <span data-ttu-id="505cc-214">A készpénzfizetési engedmény beszámításával fizetendő összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-214">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00        | 10,50                   | 94,50                                               |
+| <span data-ttu-id="505cc-215">105,00</span><span class="sxs-lookup"><span data-stu-id="505cc-215">105.00</span></span>        | <span data-ttu-id="505cc-216">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-216">10.50</span></span>                   | <span data-ttu-id="505cc-217">94,50</span><span class="sxs-lookup"><span data-stu-id="505cc-217">94.50</span></span>                                               |
 
-A vevő a készpénzfizetési engedmény vége előtt elküld egy 95,00 értékű kifizetést. A kifizetés a 105,00 értékű számla kiegyenlítésére történik. Miután a számlák és fizetések kiegyenlítésre kerültek, a következő tranzakciók jönnek létre a Kinnlevőségek modulban a vevő számára.
+<span data-ttu-id="505cc-218">A vevő a készpénzfizetési engedmény vége előtt elküld egy 95,00 értékű kifizetést.</span><span class="sxs-lookup"><span data-stu-id="505cc-218">The customer submits a payment for 95.00 within the cash discount date.</span></span> <span data-ttu-id="505cc-219">A kifizetés a 105,00 értékű számla kiegyenlítésére történik.</span><span class="sxs-lookup"><span data-stu-id="505cc-219">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="505cc-220">Miután a számlák és fizetések kiegyenlítésre kerültek, a következő tranzakciók jönnek létre a Kinnlevőségek modulban a vevő számára.</span><span class="sxs-lookup"><span data-stu-id="505cc-220">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Tranzakció   | Összeg | Egyenleg |
+| <span data-ttu-id="505cc-221">Tranzakció</span><span class="sxs-lookup"><span data-stu-id="505cc-221">Transaction</span></span>   | <span data-ttu-id="505cc-222">Összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-222">Amount</span></span> | <span data-ttu-id="505cc-223">Egyenleg</span><span class="sxs-lookup"><span data-stu-id="505cc-223">Balance</span></span> |
 |---------------|--------|---------|
-| Számla       | 105,00 | 0,00    |
-| Kifizetés       | -95,00 | -0,00   |
-| Készpénzfizetési engedmény | -10,00 | 0,00    |
+| <span data-ttu-id="505cc-224">Számla</span><span class="sxs-lookup"><span data-stu-id="505cc-224">Invoice</span></span>       | <span data-ttu-id="505cc-225">105,00</span><span class="sxs-lookup"><span data-stu-id="505cc-225">105.00</span></span> | <span data-ttu-id="505cc-226">0,00</span><span class="sxs-lookup"><span data-stu-id="505cc-226">0.00</span></span>    |
+| <span data-ttu-id="505cc-227">Kifizetés</span><span class="sxs-lookup"><span data-stu-id="505cc-227">Payment</span></span>       | <span data-ttu-id="505cc-228">-95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-228">-95.00</span></span> | <span data-ttu-id="505cc-229">-0,00</span><span class="sxs-lookup"><span data-stu-id="505cc-229">-0.00</span></span>   |
+| <span data-ttu-id="505cc-230">Készpénzfizetési engedmény</span><span class="sxs-lookup"><span data-stu-id="505cc-230">Cash discount</span></span> | <span data-ttu-id="505cc-231">-10,00</span><span class="sxs-lookup"><span data-stu-id="505cc-231">-10.00</span></span> | <span data-ttu-id="505cc-232">0,00</span><span class="sxs-lookup"><span data-stu-id="505cc-232">0.00</span></span>    |
 
-A készpénzfizetési engedmény 10,50 értékről 10,00 értékre csökken. A kifizetés és a számla kiegyenlítettnek tekinthető. **Fizetés**
+<span data-ttu-id="505cc-233">A készpénzfizetési engedmény 10,50 értékről 10,00 értékre csökken.</span><span class="sxs-lookup"><span data-stu-id="505cc-233">The cash discount amount is reduced from 10.50 to 10.00.</span></span> <span data-ttu-id="505cc-234">A kifizetés és a számla kiegyenlítettnek tekinthető.</span><span class="sxs-lookup"><span data-stu-id="505cc-234">The payment and invoice are considered settled.</span></span> <span data-ttu-id="505cc-235">**Fizetés**</span><span class="sxs-lookup"><span data-stu-id="505cc-235">**Payment**</span></span>
 
-| Számla             | Tartozik összeg | Jóváírás összege |
+| <span data-ttu-id="505cc-236">Számla</span><span class="sxs-lookup"><span data-stu-id="505cc-236">Account</span></span>             | <span data-ttu-id="505cc-237">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="505cc-237">Debit amount</span></span> | <span data-ttu-id="505cc-238">Jóváírás összege</span><span class="sxs-lookup"><span data-stu-id="505cc-238">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Készpénz                | 95,00        |               |
-| Kinnlevőségek |              | 95,00         |
+| <span data-ttu-id="505cc-239">Készpénz</span><span class="sxs-lookup"><span data-stu-id="505cc-239">Cash</span></span>                | <span data-ttu-id="505cc-240">95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-240">95.00</span></span>        |               |
+| <span data-ttu-id="505cc-241">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="505cc-241">Accounts receivable</span></span> |              | <span data-ttu-id="505cc-242">95,00</span><span class="sxs-lookup"><span data-stu-id="505cc-242">95.00</span></span>         |
 
-**Elszámolás**
+<span data-ttu-id="505cc-243">**Elszámolás**</span><span class="sxs-lookup"><span data-stu-id="505cc-243">**Settlement**</span></span>
 
-| Fiók                                                                                          | Terhelés összege | Követelés összege |
+| <span data-ttu-id="505cc-244">Fiók</span><span class="sxs-lookup"><span data-stu-id="505cc-244">Account</span></span>                                                                                          | <span data-ttu-id="505cc-245">Terhelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-245">Debit amount</span></span> | <span data-ttu-id="505cc-246">Követelés összege</span><span class="sxs-lookup"><span data-stu-id="505cc-246">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Készpénzfizetési engedmény (A **Vevői engedmények fő számlája** mező a **Készpénzfizetési engedmények** lapon) | 10,50        |               |
-| Kinnlevőségek                                                                              |              | 10,50         |
+| <span data-ttu-id="505cc-247">Készpénzfizetési engedmény (A **Vevői engedmények fő számlája** mező a **Készpénzfizetési engedmények** lapon)</span><span class="sxs-lookup"><span data-stu-id="505cc-247">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="505cc-248">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-248">10.50</span></span>        |               |
+| <span data-ttu-id="505cc-249">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="505cc-249">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="505cc-250">10,50</span><span class="sxs-lookup"><span data-stu-id="505cc-250">10.50</span></span>         |
 
 
 

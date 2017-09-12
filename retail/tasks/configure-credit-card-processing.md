@@ -17,49 +17,49 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 10fc776641d0c7bc2576be13a4116281ac3a3768
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c8e7bfbf6b51aca9cf8a7f800ac7db22c0330d00
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-credit-card-processing"></a> Hitelkártya-feldolgozás konfigurálása
+# <a name="configure-credit-card-processing"></a><span data-ttu-id="0b028-103"> Hitelkártya-feldolgozás konfigurálása</span><span class="sxs-lookup"><span data-stu-id="0b028-103">Configure credit card processing</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás végigveszi a fizetési szolgáltatók listája megtekintésének lépéseit, és leírja, hogyan konfigurálhat egy fizetési számlát a kinnlevőségek részére. Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat, és rendszergazdák, illetve informatikai szakemberek számára készült.
+<span data-ttu-id="0b028-104">Ez az eljárás végigveszi a fizetési szolgáltatók listája megtekintésének lépéseit, és leírja, hogyan konfigurálhat egy fizetési számlát a kinnlevőségek részére.</span><span class="sxs-lookup"><span data-stu-id="0b028-104">This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable.</span></span> <span data-ttu-id="0b028-105">Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat, és rendszergazdák, illetve informatikai szakemberek számára készült.</span><span class="sxs-lookup"><span data-stu-id="0b028-105">This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.</span></span>
 
 
-## <a name="view-a-list-of-payment-providers"></a>A fizetési szolgáltatók listájának megtekintése
-1. Ugorjon a következő oldalra: Kinnlevőségek >; Fizetési beállítások > Fizetési szolgáltatások.
-2. Kattintson az Elérhető szolgáltatók megtekintése lehetőségre.
+## <a name="view-a-list-of-payment-providers"></a><span data-ttu-id="0b028-106">A fizetési szolgáltatók listájának megtekintése</span><span class="sxs-lookup"><span data-stu-id="0b028-106">View a list of payment providers</span></span>
+1. <span data-ttu-id="0b028-107">Ugorjon a következő oldalra: Kinnlevőségek >; Fizetési beállítások > Fizetési szolgáltatások.</span><span class="sxs-lookup"><span data-stu-id="0b028-107">Go to Accounts receivable > Payments setup > Payment services.</span></span>
+2. <span data-ttu-id="0b028-108">Kattintson az Elérhető szolgáltatók megtekintése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0b028-108">Click View available providers.</span></span>
 
-## <a name="configure-payment-account"></a>Fizetési számla konfigurálása
-1. Kattintson az Új lehetőségre.
-2. Írjon be egy értéket a Fizetési szolgáltatás mezőbe.
-3. Válasszon ki egy lehetőséget a Fizetési csatlakoztató mezőben.
-4. Bontsa ki a Fizetési szolgáltatás fiókja részt.
-5. Írja be a Környezet: mezőbe a következőt: „PROD”.
-6. Kattintson a Hitelkártyatípusok lehetőségre.
-7. A Fizetési napló mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-8. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-9. Kattintson a Hozzáadás gombra.
-10. Érték beírása a Pénznem mezőbe.
-11. Keresse meg és jelölje ki a kívánt rekordot a listán.
-12. A Fizetési napló mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-13. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-14. Kattintson a Hozzáadás gombra.
-15. Érték beírása a Pénznem mezőbe.
-16. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Ismételje meg ezeket a lépéseket annyi kártyatípus esetén, amennyire szüksége van.  
-17. A Fizetési napló mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-18. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-19. Kattintson a Hozzáadás gombra.
-20. Érték beírása a Pénznem mezőbe.
-21. Kattintson a Mentés gombra.
-22. Zárja be a lapot.
-23. Kattintson az Érvényesítés gombra.
-24. Jelölje be az Új hitelkártyák alapértelmezett feldolgozója jelölőnégyezetet.
-25. Kattintson a Mentés gombra.
+## <a name="configure-payment-account"></a><span data-ttu-id="0b028-109">Fizetési számla konfigurálása</span><span class="sxs-lookup"><span data-stu-id="0b028-109">Configure payment account</span></span>
+1. <span data-ttu-id="0b028-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0b028-110">Click New.</span></span>
+2. <span data-ttu-id="0b028-111">Írjon be egy értéket a Fizetési szolgáltatás mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0b028-111">In the Payment service field, type a value.</span></span>
+3. <span data-ttu-id="0b028-112">Válasszon ki egy lehetőséget a Fizetési csatlakoztató mezőben.</span><span class="sxs-lookup"><span data-stu-id="0b028-112">In the Payment connector field, select an option.</span></span>
+4. <span data-ttu-id="0b028-113">Bontsa ki a Fizetési szolgáltatás fiókja részt.</span><span class="sxs-lookup"><span data-stu-id="0b028-113">Toggle the expansion of the Payment service account section.</span></span>
+5. <span data-ttu-id="0b028-114">Írja be a Környezet: mezőbe a következőt: „PROD”.</span><span class="sxs-lookup"><span data-stu-id="0b028-114">In the Environment: field, type 'PROD'.</span></span>
+6. <span data-ttu-id="0b028-115">Kattintson a Hitelkártyatípusok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="0b028-115">Click Credit card types.</span></span>
+7. <span data-ttu-id="0b028-116">A Fizetési napló mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0b028-116">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="0b028-117">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="0b028-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="0b028-118">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="0b028-118">Click Add.</span></span>
+10. <span data-ttu-id="0b028-119">Érték beírása a Pénznem mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0b028-119">In the Currency field, type a value.</span></span>
+11. <span data-ttu-id="0b028-120">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="0b028-120">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="0b028-121">A Fizetési napló mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0b028-121">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="0b028-122">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="0b028-122">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="0b028-123">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="0b028-123">Click Add.</span></span>
+15. <span data-ttu-id="0b028-124">Érték beírása a Pénznem mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0b028-124">In the Currency field, type a value.</span></span>
+16. <span data-ttu-id="0b028-125">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="0b028-125">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="0b028-126">Ismételje meg ezeket a lépéseket annyi kártyatípus esetén, amennyire szüksége van.</span><span class="sxs-lookup"><span data-stu-id="0b028-126">You can repeat these steps for as many card types as you need.</span></span>  
+17. <span data-ttu-id="0b028-127">A Fizetési napló mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="0b028-127">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+18. <span data-ttu-id="0b028-128">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="0b028-128">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="0b028-129">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="0b028-129">Click Add.</span></span>
+20. <span data-ttu-id="0b028-130">Érték beírása a Pénznem mezőbe.</span><span class="sxs-lookup"><span data-stu-id="0b028-130">In the Currency field, type a value.</span></span>
+21. <span data-ttu-id="0b028-131">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="0b028-131">Click Save.</span></span>
+22. <span data-ttu-id="0b028-132">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="0b028-132">Close the page.</span></span>
+23. <span data-ttu-id="0b028-133">Kattintson az Érvényesítés gombra.</span><span class="sxs-lookup"><span data-stu-id="0b028-133">Click Validate.</span></span>
+24. <span data-ttu-id="0b028-134">Jelölje be az Új hitelkártyák alapértelmezett feldolgozója jelölőnégyezetet.</span><span class="sxs-lookup"><span data-stu-id="0b028-134">Click the Default processor for new credit cards checkbox.</span></span>
+25. <span data-ttu-id="0b028-135">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="0b028-135">Click Save.</span></span>
 
 

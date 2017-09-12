@@ -14,7 +14,7 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 268014
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-elgolu
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
 ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
@@ -24,14 +24,14 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken
+# <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a><span data-ttu-id="a51ec-103">Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken</span><span class="sxs-lookup"><span data-stu-id="a51ec-103">Edit invoice IDs on sales orders for Eastern Europe</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör olyan kinnlevőségi paramétereket ismertet, amelyek hatással vannak a csomagjegyzékeken található számlaszámokra, valamint a cseh, észt, magyar, litván, lett és lengyel számlákra.
+<span data-ttu-id="a51ec-104">Ez a témakör olyan kinnlevőségi paramétereket ismertet, amelyek hatással vannak a csomagjegyzékeken található számlaszámokra, valamint a cseh, észt, magyar, litván, lett és lengyel számlákra.</span><span class="sxs-lookup"><span data-stu-id="a51ec-104">This topic provides information about accounts receivable parameters that affect invoice numbers on packing slips and invoices for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.</span></span>
 
-Csehország, Észtország, Magyarország, Litvánia, Lettország és Lengyelország esetén a jogi személyeknél a **Számlaazonosító módosítása az értékesítési rendelésen** beállítás segítségével manuálisan adhatja meg a csomagjegyzék számát és a számlaszámokat a vevő csomagjegyzékén és számláin. Az alábbi lehetőségek állnak rendelkezésre a **Kinnlevőségek paraméterei** lapon, a **Számla** gyorslapon a **Frissítések** lapon belül.
+<span data-ttu-id="a51ec-105">Csehország, Észtország, Magyarország, Litvánia, Lettország és Lengyelország esetén a jogi személyeknél a **Számlaazonosító módosítása az értékesítési rendelésen** beállítás segítségével manuálisan adhatja meg a csomagjegyzék számát és a számlaszámokat a vevő csomagjegyzékén és számláin.</span><span class="sxs-lookup"><span data-stu-id="a51ec-105">For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland, the **Edit invoice ID on Sales orders** option allows you to manually enter packing slip and invoice numbers on the customer’s packing slip and invoices.</span></span> <span data-ttu-id="a51ec-106">Az alábbi lehetőségek állnak rendelkezésre a **Kinnlevőségek paraméterei** lapon, a **Számla** gyorslapon a **Frissítések** lapon belül.</span><span class="sxs-lookup"><span data-stu-id="a51ec-106">The following options are available on the **Accounts receivable parameters** page, on the **Invoice** FastTab in the **Updates** tab.</span></span>
 <table>
 <colgroup>
 <col width="50%" />
@@ -39,21 +39,21 @@ Csehország, Észtország, Magyarország, Litvánia, Lettország és Lengyelorsz
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong> Paraméter</strong></td>
-<td> <strong>Leírás</strong></td>
+<td><span data-ttu-id="a51ec-107"><strong> Paraméter</strong></span><span class="sxs-lookup"><span data-stu-id="a51ec-107"><strong> Parameter</strong></span></span></td>
+<td> <span data-ttu-id="a51ec-108"><strong>Leírás</strong></span><span class="sxs-lookup"><span data-stu-id="a51ec-108"><strong>Description</strong></span></span></td>
 </tr>
 <tr class="even">
-<td>Számlaazonosító módosítása az értékesítési rendelésen</td>
-<td>Ha bejelöli ezt a lehetőséget, a következőkre nyílik lehetősége:
+<td><span data-ttu-id="a51ec-109">Számlaazonosító módosítása az értékesítési rendelésen</span><span class="sxs-lookup"><span data-stu-id="a51ec-109">Edit invoice ID on sales order</span></span></td>
+<td><span data-ttu-id="a51ec-110">Ha bejelöli ezt a lehetőséget, a következőkre nyílik lehetősége:</span><span class="sxs-lookup"><span data-stu-id="a51ec-110">If this option is selected, you will be able to do the following:</span></span>
 <ul>
-<li>Szerkesztheti a <strong>Szállítólevél</strong> mezőt a <strong>Csomagjegyzék feladása</strong> oldalon.</li>
-<li>Szerkesztheti a <strong>számla</strong> mezőt a <strong>Számla feladása</strong> oldalon.</li>
-<li>Bejelölheti a <strong>Használt számlaszám ellenőrzése</strong> paramétert.</li>
+<li><span data-ttu-id="a51ec-111">Szerkesztheti a <strong>Szállítólevél</strong> mezőt a <strong>Csomagjegyzék feladása</strong> oldalon.</span><span class="sxs-lookup"><span data-stu-id="a51ec-111">Edit the <strong>Packing slip</strong> field on the <strong>Packing slip posting</strong> page.</span></span></li>
+<li><span data-ttu-id="a51ec-112">Szerkesztheti a <strong>számla</strong> mezőt a <strong>Számla feladása</strong> oldalon.</span><span class="sxs-lookup"><span data-stu-id="a51ec-112">Edit the <strong>Invoice</strong> field on the <strong>Invoice posting</strong> page.</span></span></li>
+<li><span data-ttu-id="a51ec-113">Bejelölheti a <strong>Használt számlaszám ellenőrzése</strong> paramétert.</span><span class="sxs-lookup"><span data-stu-id="a51ec-113">Select the <strong>Check the invoice number used</strong> parameter.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Használt számlaszám ellenőrzése</td>
-<td>Ha ez a beállítás ki van jelölve, a számla könyvelési folyamata során a rendszer ellenőrzi, hogy a számlaszám nem létezik-e már a könyvelt számlák között. Ha a szám létezik, hibaüzenet jelenik meg.</td>
+<td><span data-ttu-id="a51ec-114">Használt számlaszám ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="a51ec-114">Check the invoice number used</span></span></td>
+<td><span data-ttu-id="a51ec-115">Ha ez a beállítás ki van jelölve, a számla könyvelési folyamata során a rendszer ellenőrzi, hogy a számlaszám nem létezik-e már a könyvelt számlák között.</span><span class="sxs-lookup"><span data-stu-id="a51ec-115">If this option is selected, during the invoice posting process, the system will verify that the invoice number doesn't already exist for posted invoices.</span></span> <span data-ttu-id="a51ec-116">Ha a szám létezik, hibaüzenet jelenik meg.</span><span class="sxs-lookup"><span data-stu-id="a51ec-116">If the number does exist, an error message is displayed.</span></span></td>
 </tr>
 </tbody>
 </table>

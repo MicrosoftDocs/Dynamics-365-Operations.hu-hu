@@ -25,33 +25,33 @@ ms.lasthandoff: 08/09/2017
 
 ---
 
-# <a name="letters-of-credit"></a>Akkreditívek
+# <a name="letters-of-credit"></a><span data-ttu-id="65f32-103">Akkreditívek</span><span class="sxs-lookup"><span data-stu-id="65f32-103">Letters of credit</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Az akkreditívek általánosan használt banki dokumentumok a termékek nemzetközi beszerzésében és értékesítésében. 
+<span data-ttu-id="65f32-104">Az akkreditívek általánosan használt banki dokumentumok a termékek nemzetközi beszerzésében és értékesítésében.</span><span class="sxs-lookup"><span data-stu-id="65f32-104">Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders.</span></span> 
 
-Akkreditívek nemzetközi tranzakciók használják, győződjön meg arról, hogy kifizetések lesznek végrehajtva. Az akkreditív egy bank által kiállított megállapodás, amelyben a bank vállalja a kifizetés teljesítését a vevő részéről, amennyiben a vevő és eladó közti megállapodás feltételei fennállnak. Vegye figyelembe, hogy az akkreditív is nevezik akkreditív (DC). 
+<span data-ttu-id="65f32-105">Akkreditívek nemzetközi tranzakciók használják, győződjön meg arról, hogy kifizetések lesznek végrehajtva.</span><span class="sxs-lookup"><span data-stu-id="65f32-105">Letters of credit are used for international transactions to ensure that payments will be made.</span></span> <span data-ttu-id="65f32-106">Az akkreditív egy bank által kiállított megállapodás, amelyben a bank vállalja a kifizetés teljesítését a vevő részéről, amennyiben a vevő és eladó közti megállapodás feltételei fennállnak.</span><span class="sxs-lookup"><span data-stu-id="65f32-106">A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met.</span></span> <span data-ttu-id="65f32-107">Vegye figyelembe, hogy az akkreditív is nevezik akkreditív (DC).</span><span class="sxs-lookup"><span data-stu-id="65f32-107">Note that a letter of credit is also referred to as a documentary credit (DC).</span></span> 
 
-Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkreditíven való használathoz. Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkreditíven való használathoz. Az akkreditívben a következő felek vesznek részt: 
+<span data-ttu-id="65f32-108">Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkreditíven való használathoz.</span><span class="sxs-lookup"><span data-stu-id="65f32-108">For an import letter of credit, the legal entity is the buyer or the applicant for the letter of credit.</span></span> <span data-ttu-id="65f32-109">Az Importakkreditív a jogi személy esetében a vevő vagy a pályázó az akkreditíven való használathoz.</span><span class="sxs-lookup"><span data-stu-id="65f32-109">For an export letter of credit, the legal entity is the seller or the beneficiary of the letter of credit.</span></span> <span data-ttu-id="65f32-110">Az akkreditívben a következő felek vesznek részt:</span><span class="sxs-lookup"><span data-stu-id="65f32-110">The following parties are involved with a letter of credit:</span></span> 
 
- - A pályázó (személy beszerző) aki az árut kifizetni szándékozik 
- - A kedvezményezett (eladó) aki megkapja a fizetést
- - A kiállító bank, amely kiadja az akkreditívet
- - Az értesítő bank, amely végrehajtja a tranzakciót, a pályázó nevében
+ - <span data-ttu-id="65f32-111">A pályázó (személy beszerző) aki az árut kifizetni szándékozik</span><span class="sxs-lookup"><span data-stu-id="65f32-111">The applicant (buyer) who intends to pay for the goods</span></span> 
+ - <span data-ttu-id="65f32-112">A kedvezményezett (eladó) aki megkapja a fizetést</span><span class="sxs-lookup"><span data-stu-id="65f32-112">The beneficiary (seller) who will receive the payment</span></span>
+ - <span data-ttu-id="65f32-113">A kiállító bank, amely kiadja az akkreditívet</span><span class="sxs-lookup"><span data-stu-id="65f32-113">The issuing bank that issues the letter of credit</span></span>
+ - <span data-ttu-id="65f32-114">Az értesítő bank, amely végrehajtja a tranzakciót, a pályázó nevében</span><span class="sxs-lookup"><span data-stu-id="65f32-114">The advising bank that carries out the transaction on behalf of the applicant</span></span>
 
-Az akkreditív tartalmaz egy leírást az áruról, az összes szükséges dokumentumot, a szállítási dátumot és a lejárati dátumot, amely után nem lehet fizetni. A kibocsátó bank szedi be tűréshatáron az akkreditíven való használathoz. 
+<span data-ttu-id="65f32-115">Az akkreditív tartalmaz egy leírást az áruról, az összes szükséges dokumentumot, a szállítási dátumot és a lejárati dátumot, amely után nem lehet fizetni.</span><span class="sxs-lookup"><span data-stu-id="65f32-115">The letter of credit includes a description of the goods, any required documents, the date of shipment, and the expiration date after which payment will not be made.</span></span> <span data-ttu-id="65f32-116">A kibocsátó bank szedi be tűréshatáron az akkreditíven való használathoz.</span><span class="sxs-lookup"><span data-stu-id="65f32-116">The issuing bank collects a margin for the letter of credit.</span></span> 
 
-Az akkreditívek visszavonható vagy visszavonhatatlan típusúak lehetnek. Az akkreditív jellege lehet átruházható, nem átruházható, vagy forgó. Az akkreditív általában visszavonhatatlan és visszaigazolt megállapodást, amely a kifizetés teljes és pontos szállítás dokumentáció benyújtása után egy adott kedvezményezett történik.
+<span data-ttu-id="65f32-117">Az akkreditívek visszavonható vagy visszavonhatatlan típusúak lehetnek.</span><span class="sxs-lookup"><span data-stu-id="65f32-117">A letter of credit can be revocable or irrevocable.</span></span> <span data-ttu-id="65f32-118">Az akkreditív jellege lehet átruházható, nem átruházható, vagy forgó.</span><span class="sxs-lookup"><span data-stu-id="65f32-118">The nature of a letter of credit can be transferable, non transferable, or revolving.</span></span> <span data-ttu-id="65f32-119">Az akkreditív általában visszavonhatatlan és visszaigazolt megállapodást, amely a kifizetés teljes és pontos szállítás dokumentáció benyújtása után egy adott kedvezményezett történik.</span><span class="sxs-lookup"><span data-stu-id="65f32-119">Typically, a letter of credit is an irrevocable and confirmed agreement that payment will be made to a specific beneficiary upon submission of complete and accurate shipping documentation.</span></span>
 
-További információ a következő témakörökben olvasható:
+<span data-ttu-id="65f32-120">További információ a következő témakörökben olvasható:</span><span class="sxs-lookup"><span data-stu-id="65f32-120">For more information, see the following topics:</span></span>
 
-[Akkreditív importálása](tasks/import-letter-credit.md)
+[<span data-ttu-id="65f32-121">Akkreditív importálása</span><span class="sxs-lookup"><span data-stu-id="65f32-121">Import a letter of credit</span></span>](tasks/import-letter-credit.md)
 
-[Akkreditív exportálása](tasks/export-letter-credit.md)
+[<span data-ttu-id="65f32-122">Akkreditív exportálása</span><span class="sxs-lookup"><span data-stu-id="65f32-122">Export a letter of credit</span></span>](tasks/export-letter-credit.md)
 
-[Banki hitel létrehozása akkreditívhez](tasks/create-bank-facility-agreement-letter-credit.md)
+[<span data-ttu-id="65f32-123">Banki hitel létrehozása akkreditívhez</span><span class="sxs-lookup"><span data-stu-id="65f32-123">Create a bank facility for a letter of credit</span></span>](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 

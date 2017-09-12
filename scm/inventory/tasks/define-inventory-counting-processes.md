@@ -1,4 +1,4 @@
---- 
+---
 title: "Készletleltár-folyamatok meghatározása"
 description: "Ez az eljárás végigvezeti az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,72 +17,71 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 62c60faafd9ad96ce636a08102bc8652f9fff870
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: c14c846c55a3d821945160835817cd4f467deda9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="define-inventory-counting-processes"></a>Készletleltár-folyamatok meghatározása
+# <a name="define-inventory-counting-processes"></a><span data-ttu-id="1302d-103">Készletleltár-folyamatok meghatározása</span><span class="sxs-lookup"><span data-stu-id="1302d-103">Define inventory counting processes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás végigvezeti az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával. Azt is bemutatja, hogy hogyan engedélyezheti a leltározási irányelveket raktár vagy cikk szintjén. Ezeket a feladatokat jellemzően egy raktárvezető végzi el. Ez előfeltétele annak, hogy legyen létező kiadott termék és raktár. Ha bemutató adatokat használ, ezt az eljárást az USMF vállalatban bármilyen raktározott cikkre futtathatja.
+<span data-ttu-id="1302d-104">Ez az eljárás végigvezeti az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával.</span><span class="sxs-lookup"><span data-stu-id="1302d-104">This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.</span></span> <span data-ttu-id="1302d-105">Azt is bemutatja, hogy hogyan engedélyezheti a leltározási irányelveket raktár vagy cikk szintjén.</span><span class="sxs-lookup"><span data-stu-id="1302d-105">It also shows you how to enable counting policies on a warehouse and item level.</span></span> <span data-ttu-id="1302d-106">Ezeket a feladatokat jellemzően egy raktárvezető végzi el.</span><span class="sxs-lookup"><span data-stu-id="1302d-106">These tasks would typically be carried out by a warehouse supervisor.</span></span> <span data-ttu-id="1302d-107">Ez előfeltétele annak, hogy legyen létező kiadott termék és raktár.</span><span class="sxs-lookup"><span data-stu-id="1302d-107">It is a prerequisite to have some existing released products and warehouses.</span></span> <span data-ttu-id="1302d-108">Ha bemutató adatokat használ, ezt az eljárást az USMF vállalatban bármilyen raktározott cikkre futtathatja.</span><span class="sxs-lookup"><span data-stu-id="1302d-108">If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.</span></span>
 
 
-## <a name="create-a-counting-group"></a>Leltárcsoport létrehozása
-1. Ugorjon a Készletkezelés > Beállítás Készlet > Leltárcsoportok pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Leltárcsoport mezőbe.
-4. Írjon be egy értéket a Név mezőbe.
-5. A Leltárcsoport mezőben válasszon ki egy lehetőséget.
-    * Manuális − a feladat minden egyes futtatásakor tartalmazza a sorokat. Más szóval megadható a leltárcsoport leltározási időszaka.  Időszakos − tartalmazza az időszak sorait a leltárnaplóban az időtartam lejárta után.   Nulla a készleten − ha az aktuális készlet nullára (0) csökken, akkor a feladat futtatásakor létrejönnek sorok a leltárnaplóban. Ha az aktuális készlet nullára csökken a leltározás során, akkor a sorok a leltározás következő indításakor jönnek létre.   Minimum − sorok létrehozása a leltárnaplóban, ha az aktuális készlet a megadott minimummal egyenlő vagy a minimum alá csökken.  
-    * Opcionális: Ha a leltárkód mezőben az Időszak elemet választja, a Leltáridőszak mezőbe kell beírnia az időszak tartamát. Az időszakok egysége a nap.  
-    * Amikor futtatja a leltárnapló új sorainak létrehozására szolgáló feladatot, a jelen mezőben meghatározott intervallum szerint kerülnek létrehozásra az új sorok, függetlenül az adott feladat futtatási gyakoriságától. Ha például a Leltározási időszak 7 és a naplósorokat a leltárhoz utoljára január 1-jén hozta létre, ha január 5-én újabb feladatot indít, még nem telt el hét nap, ezért a rendszer nem hoz létre új sort a naplóban ahhoz az időszaki intervallumhoz. Ha január 8-án újra elindítja a feladatot, akkor az időtartamhoz kapcsolódó sorok létrejönnek a leltárnaplóban, mivel már eltelt 7 nap.  
-6. Kattintson a Mentés gombra.
+## <a name="create-a-counting-group"></a><span data-ttu-id="1302d-109">Leltárcsoport létrehozása</span><span class="sxs-lookup"><span data-stu-id="1302d-109">Create a counting group</span></span>
+1. <span data-ttu-id="1302d-110">Ugorjon a Készletkezelés > Beállítás Készlet > Leltárcsoportok pontra.</span><span class="sxs-lookup"><span data-stu-id="1302d-110">Go to Inventory management > Setup > Inventory > Counting groups.</span></span>
+2. <span data-ttu-id="1302d-111">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1302d-111">Click New.</span></span>
+3. <span data-ttu-id="1302d-112">Írjon be egy értéket a Leltárcsoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="1302d-112">In the Counting group field, type a value.</span></span>
+4. <span data-ttu-id="1302d-113">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="1302d-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="1302d-114">A Leltárcsoport mezőben válasszon ki egy lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1302d-114">In the Counting code field, select an option.</span></span>
+    * <span data-ttu-id="1302d-115">Manuális − a feladat minden egyes futtatásakor tartalmazza a sorokat.</span><span class="sxs-lookup"><span data-stu-id="1302d-115">Manual – Includes lines every time you run the job.</span></span> <span data-ttu-id="1302d-116">Más szóval megadható a leltárcsoport leltározási időszaka.</span><span class="sxs-lookup"><span data-stu-id="1302d-116">In other words, you decide the counting interval for the counting group.</span></span>  <span data-ttu-id="1302d-117">Időszakos − tartalmazza az időszak sorait a leltárnaplóban az időtartam lejárta után.</span><span class="sxs-lookup"><span data-stu-id="1302d-117">Period – Includes lines for the period in the counting journal when the period interval has expired.</span></span>   <span data-ttu-id="1302d-118">Nulla a készleten − ha az aktuális készlet nullára (0) csökken, akkor a feladat futtatásakor létrejönnek sorok a leltárnaplóban.</span><span class="sxs-lookup"><span data-stu-id="1302d-118">Zero in stock – If on-hand inventory reaches zero (0), lines are generated in the counting journal when the job is run.</span></span> <span data-ttu-id="1302d-119">Ha az aktuális készlet nullára csökken a leltározás során, akkor a sorok a leltározás következő indításakor jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="1302d-119">If the on-hand inventory reaches 0 after a count, lines are generated the next time that you start the count.</span></span>   <span data-ttu-id="1302d-120">Minimum − sorok létrehozása a leltárnaplóban, ha az aktuális készlet a megadott minimummal egyenlő vagy a minimum alá csökken.</span><span class="sxs-lookup"><span data-stu-id="1302d-120">Minimum – Inserts lines in the counting journal if the on-hand inventory is equal to or less than the minimum that is specified.</span></span>  
+    * <span data-ttu-id="1302d-121">Opcionális: Ha a leltárkód mezőben az Időszak elemet választja, a Leltáridőszak mezőbe kell beírnia az időszak tartamát.</span><span class="sxs-lookup"><span data-stu-id="1302d-121">Optional: If you have specified Period in the Counting code field, you must type the interval for the period in the Counting period field.</span></span> <span data-ttu-id="1302d-122">Az időszakok egysége a nap.</span><span class="sxs-lookup"><span data-stu-id="1302d-122">The unit for intervals is days.</span></span>  
+    * <span data-ttu-id="1302d-123">Amikor futtatja a leltárnapló új sorainak létrehozására szolgáló feladatot, a jelen mezőben meghatározott intervallum szerint kerülnek létrehozásra az új sorok, függetlenül az adott feladat futtatási gyakoriságától.</span><span class="sxs-lookup"><span data-stu-id="1302d-123">When you run the job for creating new lines in the counting journal, new lines are created at the interval specified in this field, regardless of how often you run the same job.</span></span> <span data-ttu-id="1302d-124">Ha például a Leltározási időszak 7 és a naplósorokat a leltárhoz utoljára január 1-jén hozta létre, ha január 5-én újabb feladatot indít, még nem telt el hét nap, ezért a rendszer nem hoz létre új sort a naplóban ahhoz az időszaki intervallumhoz.</span><span class="sxs-lookup"><span data-stu-id="1302d-124">For example, if Counting period is set to 7, and journal lines were last generated for a count on January 1, if another job is started on January 5, seven days have not passed and so no lines are generated in the journal for that period interval.</span></span> <span data-ttu-id="1302d-125">Ha január 8-án újra elindítja a feladatot, akkor az időtartamhoz kapcsolódó sorok létrejönnek a leltárnaplóban, mivel már eltelt 7 nap.</span><span class="sxs-lookup"><span data-stu-id="1302d-125">If you start the job again on January 8, lines are generated for the period in the counting journal, because 7 days have passed.</span></span>  
+6. <span data-ttu-id="1302d-126">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1302d-126">Click Save.</span></span>
 
-## <a name="create-a-counting-journal-name"></a>Hozzon létre egy leltárnaplónevet.
-1. Ugorjon a Készletkezelés > Beállítás > Naplónevek > Készlet pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Név mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. A Naplótípus mezőben válassza ki a „Leltár” lehetőséget.
-    * Opcionális: másik bizonylatsorozat-azonosítót is választhat, ha adott számsort kíván beállítani a bizonylati azonosítónak a leltárnaplók létrehozásakor. A bizonylatsorozat a Számsorozatok oldalon hozható létre.  
-6. Válasszon egy lehetőséget a Részletezési szint mezőben.
-    * Ez a napló feladásakor alkalmazott részletességi szint.  
-    * Opcionális: módosíthatja a Foglalás mezőben levő értéket. Ezzel a módszerrel leltár során foglalhat cikkeket.   
-    * Kézi – a cikkek foglalása manuálisan történik a Foglalás képernyőn.   Automatikus – a rendelési mennyiséget a program a cikk elérhető aktuális készletében foglalja le.   Alábontás – a foglalás része a tranzakció alaptervezésének.  
-7. Kattintson a Mentés gombra.
+## <a name="create-a-counting-journal-name"></a><span data-ttu-id="1302d-127">Hozzon létre egy leltárnaplónevet.</span><span class="sxs-lookup"><span data-stu-id="1302d-127">Create a counting journal name</span></span>
+1. <span data-ttu-id="1302d-128">Ugorjon a Készletkezelés > Beállítás > Naplónevek > Készlet pontra.</span><span class="sxs-lookup"><span data-stu-id="1302d-128">Go to Inventory management > Setup > Journal names > Inventory.</span></span>
+2. <span data-ttu-id="1302d-129">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1302d-129">Click New.</span></span>
+3. <span data-ttu-id="1302d-130">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="1302d-130">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="1302d-131">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="1302d-131">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="1302d-132">A Naplótípus mezőben válassza ki a „Leltár” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="1302d-132">In the Journal type field, select 'Counting'.</span></span>
+    * <span data-ttu-id="1302d-133">Opcionális: másik bizonylatsorozat-azonosítót is választhat, ha adott számsort kíván beállítani a bizonylati azonosítónak a leltárnaplók létrehozásakor.</span><span class="sxs-lookup"><span data-stu-id="1302d-133">Optional: you can select a different voucher series ID if you want a specific number sequence for the voucher IDs generated when creating counting journals.</span></span> <span data-ttu-id="1302d-134">A bizonylatsorozat a Számsorozatok oldalon hozható létre.</span><span class="sxs-lookup"><span data-stu-id="1302d-134">Voucher series are created in the Number sequences page.</span></span>  
+6. <span data-ttu-id="1302d-135">Válasszon egy lehetőséget a Részletezési szint mezőben.</span><span class="sxs-lookup"><span data-stu-id="1302d-135">In the Detail level field, select an option.</span></span>
+    * <span data-ttu-id="1302d-136">Ez a napló feladásakor alkalmazott részletességi szint.</span><span class="sxs-lookup"><span data-stu-id="1302d-136">This is the level of detail that is applied when the journal is posted.</span></span>  
+    * <span data-ttu-id="1302d-137">Opcionális: módosíthatja a Foglalás mezőben levő értéket.</span><span class="sxs-lookup"><span data-stu-id="1302d-137">Optional: you can change the value in the Reservation field.</span></span> <span data-ttu-id="1302d-138">Ezzel a módszerrel leltár során foglalhat cikkeket.</span><span class="sxs-lookup"><span data-stu-id="1302d-138">This is the method used to reserve items during counting.</span></span>   
+    * <span data-ttu-id="1302d-139">Kézi – a cikkek foglalása manuálisan történik a Foglalás képernyőn.</span><span class="sxs-lookup"><span data-stu-id="1302d-139">Manual – The items are reserved manually in the Reservation form.</span></span>   <span data-ttu-id="1302d-140">Automatikus – a rendelési mennyiséget a program a cikk elérhető aktuális készletében foglalja le.</span><span class="sxs-lookup"><span data-stu-id="1302d-140">Automatic – The order quantity is reserved from the available, on-hand inventory for the item.</span></span>   <span data-ttu-id="1302d-141">Alábontás – a foglalás része a tranzakció alaptervezésének.</span><span class="sxs-lookup"><span data-stu-id="1302d-141">Explosion – The reservation is part of the master planning of the transaction.</span></span>  
+7. <span data-ttu-id="1302d-142">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1302d-142">Click Save.</span></span>
 
-## <a name="set-standard-counting-journal-name"></a>Szokásos leltárnaplónév beállítása
-1. Ugrás a Készletkezelés > Beállítás > Készlet- és raktárkezelési paraméterek lehetőségre.
-2. Kattintson a Naplók fülre.
-3. A Leltár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. Válassza ki a korábban létrehozott naplót.
-    * Ez a napló lesz ezután az alapértelmezett naplónév a Számlálási típus készletnaplóihoz.  
-5. Kattintson az Általános fülre.
-    * Opcionális: Válassza ezt a lehetőséget az egyik cikk lezárásához a számolási folyamat során, hogy megakadályozza a szállítólevelek és kitárolási listák frissítését vagy kitárolási listák regisztrációját.  
+## <a name="set-standard-counting-journal-name"></a><span data-ttu-id="1302d-143">Szokásos leltárnaplónév beállítása</span><span class="sxs-lookup"><span data-stu-id="1302d-143">Set standard counting journal name</span></span>
+1. <span data-ttu-id="1302d-144">Ugrás a Készletkezelés > Beállítás > Készlet- és raktárkezelési paraméterek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1302d-144">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
+2. <span data-ttu-id="1302d-145">Kattintson a Naplók fülre.</span><span class="sxs-lookup"><span data-stu-id="1302d-145">Click the Journals tab.</span></span>
+3. <span data-ttu-id="1302d-146">A Leltár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="1302d-146">In the Counting field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="1302d-147">Válassza ki a korábban létrehozott naplót.</span><span class="sxs-lookup"><span data-stu-id="1302d-147">Select the journal you previously created.</span></span>
+    * <span data-ttu-id="1302d-148">Ez a napló lesz ezután az alapértelmezett naplónév a Számlálási típus készletnaplóihoz.</span><span class="sxs-lookup"><span data-stu-id="1302d-148">This journal will then be the default journal name for inventory journals of the Counting type.</span></span>  
+5. <span data-ttu-id="1302d-149">Kattintson az Általános fülre.</span><span class="sxs-lookup"><span data-stu-id="1302d-149">Click the General tab.</span></span>
+    * <span data-ttu-id="1302d-150">Opcionális: Válassza ezt a lehetőséget az egyik cikk lezárásához a számolási folyamat során, hogy megakadályozza a szállítólevelek és kitárolási listák frissítését vagy kitárolási listák regisztrációját.</span><span class="sxs-lookup"><span data-stu-id="1302d-150">Optional: Select this option to lock an item during the counting process to prevent updates for packing slips, picking lists, or picking list registrations.</span></span>  
 
-## <a name="set-the-counting-policy-for-an-item"></a>Leltározási irányelv beállítása egy cikkhez
-1. Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.
-2. A listában kattintson a Cikkszám hivatkozására annál a terméknél, amelynél leltározási irányelvet szeretne beállítani.
-    * Olyan cikket kell kiválasztania, amely a készletben nyomon követett. A nem készletezett termék nem számlálható. Az USMF bemutatóadatok használata esetén válassza az A0001 cikket.  
-3. Kattintson a Szerkesztés lehetőségre.
-4. A Készletkezelés szakasz bővítésének átváltása.
-5. A Leltárcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-6. A listán kattintson a korábban létrehozott leltárcsoportra.
-    * Ez a termék mostantól mindig hozzáadásra kerül, ha ezen leltárcsoport használatával hoz létre készletleltárnapló-sorokat.  
-7. Kattintson a Mentés gombra.
+## <a name="set-the-counting-policy-for-an-item"></a><span data-ttu-id="1302d-151">Leltározási irányelv beállítása egy cikkhez</span><span class="sxs-lookup"><span data-stu-id="1302d-151">Set the counting policy for an item</span></span>
+1. <span data-ttu-id="1302d-152">Kattintson a Termékinformációk kezelése > Termékek > Kiadott termékek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1302d-152">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="1302d-153">A listában kattintson a Cikkszám hivatkozására annál a terméknél, amelynél leltározási irányelvet szeretne beállítani.</span><span class="sxs-lookup"><span data-stu-id="1302d-153">In the list, click on the link for the Item number of the product that you want to set counting policies on.</span></span>
+    * <span data-ttu-id="1302d-154">Olyan cikket kell kiválasztania, amely a készletben nyomon követett.</span><span class="sxs-lookup"><span data-stu-id="1302d-154">Note that you need to select an item that is inventory tracked.</span></span> <span data-ttu-id="1302d-155">A nem készletezett termék nem számlálható.</span><span class="sxs-lookup"><span data-stu-id="1302d-155">A non-stocked product can't be counted.</span></span> <span data-ttu-id="1302d-156">Az USMF bemutatóadatok használata esetén válassza az A0001 cikket.</span><span class="sxs-lookup"><span data-stu-id="1302d-156">If you are using USMF demo data you can select item A0001.</span></span>  
+3. <span data-ttu-id="1302d-157">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="1302d-157">Click Edit.</span></span>
+4. <span data-ttu-id="1302d-158">A Készletkezelés szakasz bővítésének átváltása.</span><span class="sxs-lookup"><span data-stu-id="1302d-158">Toggle the expansion of the Manage inventory section.</span></span>
+5. <span data-ttu-id="1302d-159">A Leltárcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="1302d-159">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="1302d-160">A listán kattintson a korábban létrehozott leltárcsoportra.</span><span class="sxs-lookup"><span data-stu-id="1302d-160">In the list, click on the counting group you previously created.</span></span>
+    * <span data-ttu-id="1302d-161">Ez a termék mostantól mindig hozzáadásra kerül, ha ezen leltárcsoport használatával hoz létre készletleltárnapló-sorokat.</span><span class="sxs-lookup"><span data-stu-id="1302d-161">This product will now be included when inventory counting journal lines are created using this counting group.</span></span>  
+7. <span data-ttu-id="1302d-162">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1302d-162">Click Save.</span></span>
 
-## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a>Leltározási irányelv beállítási egy cikkhez egy adott raktárban
-1. A Művelet panelen kattintson a Készletkezelés elemre.
-2. Kattintson a Raktárcikkekre.
-3. Kattintson az Új elemre.
-4. A Raktár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-5. A listán válassza ki azt a raktárt, amelyhez leltározási irányelveket kíván beállítani.
-6. A Leltárcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. A listán válasszon leltárcsoportot
-    * Itt kiválaszthat egy adott leltárcsoportot, amely vonatkozik a kiválasztott raktár adott cikkére. Ha abban a raktárban leltár történik, ez a leltározási irányelv felülírja az általános leltározási irányelvet a cikkre.  
-8. Kattintson a Mentés gombra.
-
+## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a><span data-ttu-id="1302d-163">Leltározási irányelv beállítási egy cikkhez egy adott raktárban</span><span class="sxs-lookup"><span data-stu-id="1302d-163">Set the counting policy for an item in a specific warehouse</span></span>
+1. <span data-ttu-id="1302d-164">A Művelet panelen kattintson a Készletkezelés elemre.</span><span class="sxs-lookup"><span data-stu-id="1302d-164">On the Action Pane, click Manage inventory.</span></span>
+2. <span data-ttu-id="1302d-165">Kattintson a Raktárcikkekre.</span><span class="sxs-lookup"><span data-stu-id="1302d-165">Click Warehouse items.</span></span>
+3. <span data-ttu-id="1302d-166">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="1302d-166">Click New.</span></span>
+4. <span data-ttu-id="1302d-167">A Raktár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="1302d-167">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="1302d-168">A listán válassza ki azt a raktárt, amelyhez leltározási irányelveket kíván beállítani.</span><span class="sxs-lookup"><span data-stu-id="1302d-168">In the list, select the warehouse you want set up specific counting policies for.</span></span>
+6. <span data-ttu-id="1302d-169">A Leltárcsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="1302d-169">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="1302d-170">A listán válasszon leltárcsoportot</span><span class="sxs-lookup"><span data-stu-id="1302d-170">In the list, select a counting group</span></span>
+    * <span data-ttu-id="1302d-171">Itt kiválaszthat egy adott leltárcsoportot, amely vonatkozik a kiválasztott raktár adott cikkére.</span><span class="sxs-lookup"><span data-stu-id="1302d-171">Here you can select a specific counting group that should apply to the item in the specific warehouse you have selected.</span></span> <span data-ttu-id="1302d-172">Ha abban a raktárban leltár történik, ez a leltározási irányelv felülírja az általános leltározási irányelvet a cikkre.</span><span class="sxs-lookup"><span data-stu-id="1302d-172">When counting is performed in that warehouse, this counting policy will override the general counting policy for the item.</span></span>  
+8. <span data-ttu-id="1302d-173">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="1302d-173">Click Save.</span></span>
 

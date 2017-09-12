@@ -17,29 +17,29 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 15196b9d651402a7530613ae218fabb7fb71b799
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e8c3f861a53a3f5c2de29248523ff4efd5e1d072
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="post-online-sales-and-payments"></a> Online értékesítések és kifizetések feladása
+# <a name="post-online-sales-and-payments"></a><span data-ttu-id="8feb7-103"> Online értékesítések és kifizetések feladása</span><span class="sxs-lookup"><span data-stu-id="8feb7-103">Post online sales and payments</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ez az eljárás végigveszi egy ismétlődő kötegelt feladat konfigurálásának és futtatásának lépéseit, amellyel értékesítési rendeléseket és kifizetéseket hozhat létre online üzletek tranzakcióihoz. Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.
+<span data-ttu-id="8feb7-104">Ez az eljárás végigveszi egy ismétlődő kötegelt feladat konfigurálásának és futtatásának lépéseit, amellyel értékesítési rendeléseket és kifizetéseket hozhat létre online üzletek tranzakcióihoz.</span><span class="sxs-lookup"><span data-stu-id="8feb7-104">This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions.</span></span> <span data-ttu-id="8feb7-105">Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.</span><span class="sxs-lookup"><span data-stu-id="8feb7-105">This procedure uses the USRT company in demo data.</span></span>
 
-1. Ugorjon a következő oldalra: Összes munkaterület > Kiskereskedelmi üzlet pénzügyei.
-2. Kattintson Rendelések szinkronizálása lehetőségre.
-3. A Szervezeti hierarchia mezőben válassza ki a „Kiskereskedelmi áruházak régiók szerint” lehetőséget.
-    * Válasszon ki egy bizonyos online üzletet vagy egy csomópontot abban az esetben, ha az üzletek egy csoportjához szeretné létrehozni a kötegelt feladatot.  
-    * Kattintson a nyílra a kiválasztás hozzáadásához.  
-4. Kattintson a Futtatás a háttérben lapra.
-5. Jelölje be vagy törölje a jelölést a Kötegelt feldolgozás jelölőnégyzetben.
-6. Kattintson az Ismétlődésre.
-7. Válassza a Nincs záró dátum lehetőséget.
-8. Írjon be egy számot a Számítás mezőbe.
-9. Kattintson az OK gombra.
-10. Kattintson az OK gombra.
+1. <span data-ttu-id="8feb7-106">Ugorjon a következő oldalra: Összes munkaterület > Kiskereskedelmi üzlet pénzügyei.</span><span class="sxs-lookup"><span data-stu-id="8feb7-106">Go to All workspaces > Retail store financials.</span></span>
+2. <span data-ttu-id="8feb7-107">Kattintson Rendelések szinkronizálása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8feb7-107">Click Synchronize orders.</span></span>
+3. <span data-ttu-id="8feb7-108">A Szervezeti hierarchia mezőben válassza ki a „Kiskereskedelmi áruházak régiók szerint” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8feb7-108">In the Organization hierarchy field, select 'Retail Stores by Region'.</span></span>
+    * <span data-ttu-id="8feb7-109">Válasszon ki egy bizonyos online üzletet vagy egy csomópontot abban az esetben, ha az üzletek egy csoportjához szeretné létrehozni a kötegelt feladatot.</span><span class="sxs-lookup"><span data-stu-id="8feb7-109">Select either a specific online store, or select a node if you want to create the batch job for a group of stores.</span></span>  
+    * <span data-ttu-id="8feb7-110">Kattintson a nyílra a kiválasztás hozzáadásához.</span><span class="sxs-lookup"><span data-stu-id="8feb7-110">Click the arrow to add your selection.</span></span>  
+4. <span data-ttu-id="8feb7-111">Kattintson a Futtatás a háttérben lapra.</span><span class="sxs-lookup"><span data-stu-id="8feb7-111">Click the Run in the background tab.</span></span>
+5. <span data-ttu-id="8feb7-112">Jelölje be vagy törölje a jelölést a Kötegelt feldolgozás jelölőnégyzetben.</span><span class="sxs-lookup"><span data-stu-id="8feb7-112">Check or uncheck the Batch processing checkbox.</span></span>
+6. <span data-ttu-id="8feb7-113">Kattintson az Ismétlődésre.</span><span class="sxs-lookup"><span data-stu-id="8feb7-113">Click Recurrence.</span></span>
+7. <span data-ttu-id="8feb7-114">Válassza a Nincs záró dátum lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="8feb7-114">Select the No end date option.</span></span>
+8. <span data-ttu-id="8feb7-115">Írjon be egy számot a Számítás mezőbe.</span><span class="sxs-lookup"><span data-stu-id="8feb7-115">In the Count field, enter a number.</span></span>
+9. <span data-ttu-id="8feb7-116">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="8feb7-116">Click OK.</span></span>
+10. <span data-ttu-id="8feb7-117">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="8feb7-117">Click OK.</span></span>
 
 

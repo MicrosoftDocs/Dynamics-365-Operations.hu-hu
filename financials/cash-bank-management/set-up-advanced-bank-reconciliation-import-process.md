@@ -18,165 +18,165 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 785da18a851c4d040843f49ca9f1b9ae12d701d3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Továbbfejlesztett banki egyeztetés importálásának beállítása
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="fb540-104">Továbbfejlesztett banki egyeztetés importálásának beállítása</span><span class="sxs-lookup"><span data-stu-id="fb540-104">Set up the advanced bank reconciliation import process</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszer banki tranzakcióiba. Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz. 
+<span data-ttu-id="fb540-105">A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszer banki tranzakcióiba.</span><span class="sxs-lookup"><span data-stu-id="fb540-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="fb540-106">Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz.</span><span class="sxs-lookup"><span data-stu-id="fb540-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 
-A banki kivonat importálási beállítások az elektronikus banki kivonat formátumától függően változnak. A Finance and Operations által támogatott három banki kivonat formátuma: ISO20022, MT940 és BAI2.
+<span data-ttu-id="fb540-107">A banki kivonat importálási beállítások az elektronikus banki kivonat formátumától függően változnak.</span><span class="sxs-lookup"><span data-stu-id="fb540-107">The setup for bank statement import varies, depending on the format of your electronic bank statement.</span></span> <span data-ttu-id="fb540-108">A Finance and Operations által támogatott három banki kivonat formátuma: ISO20022, MT940 és BAI2.</span><span class="sxs-lookup"><span data-stu-id="fb540-108">Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.</span></span>
 
-## <a name="sample-files"></a>Mintafájlok
-Mind a három formátumra vonatkozóan rendelkezni kell olyan fájlokkal, amik az elektronikus banki kivonatot lefordítja az eredeti formátumról Finance and Operations által használható formátumra. A szükséges erőforrás fájlokat megtalálhatja az **Erőforrások** fülön, az Application Explorer-ben a Microsoft Visual Studio alkalmazásban. Miután megtalálta a fájlokat, másolja azokat egy ismert helyre, így egyszerűen feltöltheti azokat a telepítési folyamat során.
+## <a name="sample-files"></a><span data-ttu-id="fb540-109">Mintafájlok</span><span class="sxs-lookup"><span data-stu-id="fb540-109">Sample files</span></span>
+<span data-ttu-id="fb540-110">Mind a három formátumra vonatkozóan rendelkezni kell olyan fájlokkal, amik az elektronikus banki kivonatot lefordítja az eredeti formátumról Finance and Operations által használható formátumra.</span><span class="sxs-lookup"><span data-stu-id="fb540-110">For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use.</span></span> <span data-ttu-id="fb540-111">A szükséges erőforrás fájlokat megtalálhatja az **Erőforrások** fülön, az Application Explorer-ben a Microsoft Visual Studio alkalmazásban.</span><span class="sxs-lookup"><span data-stu-id="fb540-111">You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio.</span></span> <span data-ttu-id="fb540-112">Miután megtalálta a fájlokat, másolja azokat egy ismert helyre, így egyszerűen feltöltheti azokat a telepítési folyamat során.</span><span class="sxs-lookup"><span data-stu-id="fb540-112">After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.</span></span>
 
-| Erőforrás neve                                           | Fájlnév                            |
+| <span data-ttu-id="fb540-113">Erőforrás neve</span><span class="sxs-lookup"><span data-stu-id="fb540-113">Resource name</span></span>                                           | <span data-ttu-id="fb540-114">Fájlnév</span><span class="sxs-lookup"><span data-stu-id="fb540-114">File name</span></span>                            |
 |---------------------------------------------------------|--------------------------------------|
-| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt              | BAI2CSV-to-BAI2XML.xslt              |
-| BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt       | BAI2XML-to-Reconciliation.xslt       |
-| BankStmtImport\_BankReconciliation\_to\_Composite\_xslt | BankReconciliation-to-Composite.xslt |
-| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt   | ISO20022XML-to-Reconciliation.xslt   |
-| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt            | MT940TXT-to-MT940XML.xslt            |
-| BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
-| BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
+| <span data-ttu-id="fb540-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span></span>              | <span data-ttu-id="fb540-116">BAI2CSV-to-BAI2XML.xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-116">BAI2CSV-to-BAI2XML.xslt</span></span>              |
+| <span data-ttu-id="fb540-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span></span>       | <span data-ttu-id="fb540-118">BAI2XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-118">BAI2XML-to-Reconciliation.xslt</span></span>       |
+| <span data-ttu-id="fb540-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span></span> | <span data-ttu-id="fb540-120">BankReconciliation-to-Composite.xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-120">BankReconciliation-to-Composite.xslt</span></span> |
+| <span data-ttu-id="fb540-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span></span>   | <span data-ttu-id="fb540-122">ISO20022XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-122">ISO20022XML-to-Reconciliation.xslt</span></span>   |
+| <span data-ttu-id="fb540-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span></span>            | <span data-ttu-id="fb540-124">MT940TXT-to-MT940XML.xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-124">MT940TXT-to-MT940XML.xslt</span></span>            |
+| <span data-ttu-id="fb540-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span></span>      | <span data-ttu-id="fb540-126">MT940XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="fb540-126">MT940XML-to-Reconciliation.xslt</span></span>      |
+| <span data-ttu-id="fb540-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span><span class="sxs-lookup"><span data-stu-id="fb540-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span></span>          | <span data-ttu-id="fb540-128">SampleBankCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="fb540-128">SampleBankCompositeEntity.xml</span></span>        |
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>A banki kivonat formátumainak és a technikai elrendezések példái
-Az alábbiakban a továbbfejlesztett banki egyeztetés importfájl technikai elrendezésű definicóinak példáit és a három kapcsolódó banki kivonat példafájljait találhatja: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a><span data-ttu-id="fb540-129">A banki kivonat formátumainak és a technikai elrendezések példái</span><span class="sxs-lookup"><span data-stu-id="fb540-129">Examples of bank statement formats and technical layouts</span></span>
+<span data-ttu-id="fb540-130">Az alábbiakban a továbbfejlesztett banki egyeztetés importfájl technikai elrendezésű definicóinak példáit és a három kapcsolódó banki kivonat példafájljait találhatja: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span><span class="sxs-lookup"><span data-stu-id="fb540-130">Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span></span>  
 
-| Technikai elrendezésdefiníció                             | Banki kivonat példafájl          |
+| <span data-ttu-id="fb540-131">Technikai elrendezésdefiníció</span><span class="sxs-lookup"><span data-stu-id="fb540-131">Technical layout definition</span></span>                             | <span data-ttu-id="fb540-132">Banki kivonat példafájl</span><span class="sxs-lookup"><span data-stu-id="fb540-132">Bank statement example file</span></span>          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| <span data-ttu-id="fb540-133">DynamicsAXMT940Layout</span><span class="sxs-lookup"><span data-stu-id="fb540-133">DynamicsAXMT940Layout</span></span>                                   | <span data-ttu-id="fb540-134">MT940StatementExample</span><span class="sxs-lookup"><span data-stu-id="fb540-134">MT940StatementExample</span></span>                |
+| <span data-ttu-id="fb540-135">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="fb540-135">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="fb540-136">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="fb540-136">ISO20022StatementExample</span></span>             |
+| <span data-ttu-id="fb540-137">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="fb540-137">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="fb540-138">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="fb540-138">BAI2StatementExample</span></span>                 |
 
  
 
-## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Állítsa be a ISO20022 banki kivonatok importálását
-Először definiálni kell a banki kivonat formátum feldolgozási csoportját ISO20022 banki kivonatokhoz, az adatentitás keretrendszer használatával.
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a><span data-ttu-id="fb540-139">Állítsa be a ISO20022 banki kivonatok importálását</span><span class="sxs-lookup"><span data-stu-id="fb540-139">Set up the import of ISO20022 bank statements</span></span>
+<span data-ttu-id="fb540-140">Először definiálni kell a banki kivonat formátum feldolgozási csoportját ISO20022 banki kivonatokhoz, az adatentitás keretrendszer használatával.</span><span class="sxs-lookup"><span data-stu-id="fb540-140">First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</span></span>
 
-1.  Menjen a **Munkaterületek** &gt; **Adatkezelés** lehetőségre.
-2.  Kattintson az **Importálás** gombra.
-3.  Adja meg a formátum nevét, például **ISO20022**.
-4.  A **Forrás adat formátuma** mezőt állítsa **XML-Element** értékre.
-5.  Az **Entitás neve** mezőbe írja be **Banki kivonatok**.
-6.  Az importálási fájlok feltöltéséhez, kattintson a **Feltöltés** gombra, majd tallózással válassza ki a **SampleBankCompositeEntity.xml** fájlt, amit már korábban lementett.
-7.  Miután a banki kimutatások entitás feltöltése és a hozzárendelés elkészült, kattintson a **Térkép megjelenítése** entitáshoz tartozó műveletre.
-8.  A banki kimutatások entitás egy összetett entitást, amelyet négy külön entitás alkot. Válassza ki a listából a **BankStatementDocumentEntity** lehetőséget, majd kattintson a **Térkép megjelenítése** műveletre.
-9.  Az **Átalakítások** fülön, kattintson az **Új** lehetőségre.
-10. Az 1-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **ISO20022XML-Reconciliation.xslt** fájl, amit már korábban lementett. **Megjegyzés:** A Finance and Operations átalakító fájlok szabványos formátumra épülnek. Mivel a bankok gyakran eltérnek ebben a formátumban, lehet, hogy frissíteni kell az átalakító fájlt, hogy leképezze az ön banki kivonat formátumát. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
-11. Kattintson az **Új** elemre.
-12. Az 2-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki a **BankReconciliation-to-Composite.xslt** fájl, amit már korábban lementett.
-13. Kattintson az **Átalakítások alkalmazása** lehetőségre.
+1.  <span data-ttu-id="fb540-141">Menjen a **Munkaterületek** &gt; **Adatkezelés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-141">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="fb540-142">Kattintson az **Importálás** gombra.</span><span class="sxs-lookup"><span data-stu-id="fb540-142">Click **Import**.</span></span>
+3.  <span data-ttu-id="fb540-143">Adja meg a formátum nevét, például **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="fb540-143">Enter a name for the format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="fb540-144">A **Forrás adat formátuma** mezőt állítsa **XML-Element** értékre.</span><span class="sxs-lookup"><span data-stu-id="fb540-144">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="fb540-145">Az **Entitás neve** mezőbe írja be **Banki kivonatok**.</span><span class="sxs-lookup"><span data-stu-id="fb540-145">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="fb540-146">Az importálási fájlok feltöltéséhez, kattintson a **Feltöltés** gombra, majd tallózással válassza ki a **SampleBankCompositeEntity.xml** fájlt, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-146">To upload the import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="fb540-147">Miután a banki kimutatások entitás feltöltése és a hozzárendelés elkészült, kattintson a **Térkép megjelenítése** entitáshoz tartozó műveletre.</span><span class="sxs-lookup"><span data-stu-id="fb540-147">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="fb540-148">A banki kimutatások entitás egy összetett entitást, amelyet négy külön entitás alkot.</span><span class="sxs-lookup"><span data-stu-id="fb540-148">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="fb540-149">Válassza ki a listából a **BankStatementDocumentEntity** lehetőséget, majd kattintson a **Térkép megjelenítése** műveletre.</span><span class="sxs-lookup"><span data-stu-id="fb540-149">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="fb540-150">Az **Átalakítások** fülön, kattintson az **Új** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-150">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="fb540-151">Az 1-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **ISO20022XML-Reconciliation.xslt** fájl, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-151">For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="fb540-152">**Megjegyzés:** A Finance and Operations átalakító fájlok szabványos formátumra épülnek.</span><span class="sxs-lookup"><span data-stu-id="fb540-152">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="fb540-153">Mivel a bankok gyakran eltérnek ebben a formátumban, lehet, hogy frissíteni kell az átalakító fájlt, hogy leképezze az ön banki kivonat formátumát.</span><span class="sxs-lookup"><span data-stu-id="fb540-153">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+11. <span data-ttu-id="fb540-154">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-154">Click **New**.</span></span>
+12. <span data-ttu-id="fb540-155">Az 2-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki a **BankReconciliation-to-Composite.xslt** fájl, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-155">For sequence number 2, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+13. <span data-ttu-id="fb540-156">Kattintson az **Átalakítások alkalmazása** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-156">Click **Apply transforms**.</span></span>
 
-A formátum feldolgozó csoport beállítása után, a következő lépés célja az ISO20022 banki kivonatok banki kivonat formátuma szabályainak meghatározása.
+<span data-ttu-id="fb540-157">A formátum feldolgozó csoport beállítása után, a következő lépés célja az ISO20022 banki kivonatok banki kivonat formátuma szabályainak meghatározása.</span><span class="sxs-lookup"><span data-stu-id="fb540-157">After the format processing group is set up, the next step is to define the bank statement format rules for ISO20022 bank statements.</span></span>
 
-1.  Menjen a **Készpénz és bankkezelés** &gt; **Beállítás** &gt; **Továbbfejlesztett banki egyeztetés beállítása** &gt; **Banki kivonatok formátuma** elemre.
-2.  Kattintson az **Új** elemre.
-3.  Adja meg a kivonat formátumát, például a **ISO20022**.
-4.  Adja meg a formátum nevét.
-5.  Állítsa be a **Feldolgozó csoport** mezőt ahhoz a csoporthoz, amit már korábban definiált, például a **ISO20022**.
-6.  Jelölje be az **XML file** jelölőnégyzetet.
+1.  <span data-ttu-id="fb540-158">Menjen a **Készpénz és bankkezelés** &gt; **Beállítás** &gt; **Továbbfejlesztett banki egyeztetés beállítása** &gt; **Banki kivonatok formátuma** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-158">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="fb540-159">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-159">Click **New**.</span></span>
+3.  <span data-ttu-id="fb540-160">Adja meg a kivonat formátumát, például a **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="fb540-160">Specify a statement format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="fb540-161">Adja meg a formátum nevét.</span><span class="sxs-lookup"><span data-stu-id="fb540-161">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="fb540-162">Állítsa be a **Feldolgozó csoport** mezőt ahhoz a csoporthoz, amit már korábban definiált, például a **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="fb540-162">Set the **Processing group** field to the group that you defined earlier, such as **ISO20022**.</span></span>
+6.  <span data-ttu-id="fb540-163">Jelölje be az **XML file** jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="fb540-163">Select the **XML file** check box.</span></span>
 
-Az utolsó lépés, a Speciális bankszámla egyeztetés engedélyezése és a kivonat formátumának beállítása a bank számlán.
+<span data-ttu-id="fb540-164">Az utolsó lépés, a Speciális bankszámla egyeztetés engedélyezése és a kivonat formátumának beállítása a bank számlán.</span><span class="sxs-lookup"><span data-stu-id="fb540-164">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.
-2.  Válassza ki azt a bankszámlát, és nyissa meg a részletek megtekintéséhez.
-3.  Az **Egyeztetés** lapon, állítsa a **Speciális banki egyeztetés** lehetőséget **Igen** értékre.
-4.  Állítsa be a **Kivonat formátuma** mezőt ahhoz a formátumhoz, amit már korábban létrehozott, például az **ISO20022**.
+1.  <span data-ttu-id="fb540-165">Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.</span><span class="sxs-lookup"><span data-stu-id="fb540-165">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="fb540-166">Válassza ki azt a bankszámlát, és nyissa meg a részletek megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="fb540-166">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="fb540-167">Az **Egyeztetés** lapon, állítsa a **Speciális banki egyeztetés** lehetőséget **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="fb540-167">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="fb540-168">Állítsa be a **Kivonat formátuma** mezőt ahhoz a formátumhoz, amit már korábban létrehozott, például az **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="fb540-168">Set the **Statement format** field to the format that you created earlier, such as **ISO20022**.</span></span>
 
-## <a name="set-up-the-import-of-mt940-bank-statements"></a>Állítsa be a MT940 banki kivonatok importálását
-Először definiálni kell a banki kivonat formátum feldolgozási csoportját MT940 banki kivonatokhoz, az adatentitás keretrendszer használatával.
+## <a name="set-up-the-import-of-mt940-bank-statements"></a><span data-ttu-id="fb540-169">Állítsa be a MT940 banki kivonatok importálását</span><span class="sxs-lookup"><span data-stu-id="fb540-169">Set up the import of MT940 bank statements</span></span>
+<span data-ttu-id="fb540-170">Először definiálni kell a banki kivonat formátum feldolgozási csoportját MT940 banki kivonatokhoz, az adatentitás keretrendszer használatával.</span><span class="sxs-lookup"><span data-stu-id="fb540-170">First, you must define the bank statement format processing group for MT940 bank statements by using the data entity framework.</span></span>
 
-1.  Menjen a **Munkaterületek** &gt; **Adatkezelés** lehetőségre.
-2.  Kattintson az **Importálás** gombra.
-3.  Adja meg a formátum nevét, például **MT940**.
-4.  A **Forrás adat formátuma** mezőt állítsa **XML-Element** értékre.
-5.  Az **Entitás neve** mezőbe írja be **Banki kivonatok**.
-6.  Az importálási fájlok feltöltéséhez, kattintson a **Feltöltés** gombra, majd tallózással válassza ki a **SampleBankCompositeEntity.xml** fájlt, amit már korábban lementett.
-7.  Miután a banki kimutatások entitás feltöltése és a hozzárendelés elkészült, kattintson a **Térkép megjelenítése** entitáshoz tartozó műveletre.
-8.  A banki kimutatások entitás egy összetett entitást, amelyet négy külön entitás alkot. Válassza ki a listából a **BankStatementDocumentEntity** lehetőséget, majd kattintson a **Térkép megjelenítése** műveletre.
-9.  Az **Átalakítások** fülön, kattintson az **Új** lehetőségre.
-10. Az 1-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **MT940TXT-to-MT940XML.xslt** fájl, amit már korábban lementett.
-11. Kattintson az **Új** elemre.
-12. Az 2-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **MT940XML-Reconciliation.xslt** fájl, amit már korábban lementett. **Megjegyzés:** A Finance and Operations átalakító fájlok szabványos formátumra épülnek. Mivel a bankok gyakran eltérnek ebben a formátumban, lehet, hogy frissíteni kell az átalakító fájlt, hogy leképezze az ön banki kivonat formátumát. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
-13. Kattintson az **Új** elemre.
-14. Az 3-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki a **BankReconciliation-to-Composite.xslt** fájl, amit már korábban lementett.
-15. Kattintson az **Átalakítások alkalmazása** lehetőségre.
+1.  <span data-ttu-id="fb540-171">Menjen a **Munkaterületek** &gt; **Adatkezelés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-171">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="fb540-172">Kattintson az **Importálás** gombra.</span><span class="sxs-lookup"><span data-stu-id="fb540-172">Click **Import**.</span></span>
+3.  <span data-ttu-id="fb540-173">Adja meg a formátum nevét, például **MT940**.</span><span class="sxs-lookup"><span data-stu-id="fb540-173">Enter a name for the format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="fb540-174">A **Forrás adat formátuma** mezőt állítsa **XML-Element** értékre.</span><span class="sxs-lookup"><span data-stu-id="fb540-174">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="fb540-175">Az **Entitás neve** mezőbe írja be **Banki kivonatok**.</span><span class="sxs-lookup"><span data-stu-id="fb540-175">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="fb540-176">Az importálási fájlok feltöltéséhez, kattintson a **Feltöltés** gombra, majd tallózással válassza ki a **SampleBankCompositeEntity.xml** fájlt, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-176">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="fb540-177">Miután a banki kimutatások entitás feltöltése és a hozzárendelés elkészült, kattintson a **Térkép megjelenítése** entitáshoz tartozó műveletre.</span><span class="sxs-lookup"><span data-stu-id="fb540-177">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="fb540-178">A banki kimutatások entitás egy összetett entitást, amelyet négy külön entitás alkot.</span><span class="sxs-lookup"><span data-stu-id="fb540-178">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="fb540-179">Válassza ki a listából a **BankStatementDocumentEntity** lehetőséget, majd kattintson a **Térkép megjelenítése** műveletre.</span><span class="sxs-lookup"><span data-stu-id="fb540-179">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="fb540-180">Az **Átalakítások** fülön, kattintson az **Új** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-180">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="fb540-181">Az 1-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **MT940TXT-to-MT940XML.xslt** fájl, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-181">For sequence number 1, click **Upload file**, and select the **MT940TXT-to-MT940XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="fb540-182">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-182">Click **New**.</span></span>
+12. <span data-ttu-id="fb540-183">Az 2-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **MT940XML-Reconciliation.xslt** fájl, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-183">For sequence number 2, click **Upload file**, and select the **MT940XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="fb540-184">**Megjegyzés:** A Finance and Operations átalakító fájlok szabványos formátumra épülnek.</span><span class="sxs-lookup"><span data-stu-id="fb540-184">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="fb540-185">Mivel a bankok gyakran eltérnek ebben a formátumban, lehet, hogy frissíteni kell az átalakító fájlt, hogy leképezze az ön banki kivonat formátumát.</span><span class="sxs-lookup"><span data-stu-id="fb540-185">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+13. <span data-ttu-id="fb540-186">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-186">Click **New**.</span></span>
+14. <span data-ttu-id="fb540-187">Az 3-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki a **BankReconciliation-to-Composite.xslt** fájl, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-187">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="fb540-188">Kattintson az **Átalakítások alkalmazása** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-188">Click **Apply transforms**.</span></span>
 
-A formátum feldolgozó csoport beállítása után, a következő lépés célja az MT940 banki kivonatok banki kivonat formátuma szabályainak meghatározása.
+<span data-ttu-id="fb540-189">A formátum feldolgozó csoport beállítása után, a következő lépés célja az MT940 banki kivonatok banki kivonat formátuma szabályainak meghatározása.</span><span class="sxs-lookup"><span data-stu-id="fb540-189">After the format processing group is set up, the next step is to define the bank statement format rules for MT940 bank statements.</span></span>
 
-1.  Menjen a **Készpénz és bankkezelés** &gt; **Beállítás** &gt; **Továbbfejlesztett banki egyeztetés beállítása** &gt; **Banki kivonatok formátuma** elemre.
-2.  Kattintson az **Új** elemre.
-3.  Adja meg a kivonat formátumát, például a **MT940**.
-4.  Adja meg a formátum nevét.
-5.  Állítsa be a **Feldolgozó csoport** mezőt ahhoz a csoporthoz, amit már korábban definiált, például a **MT940**.
-6.  Állítsa a **Fájl típus** mezőt **txt** értékre.
+1.  <span data-ttu-id="fb540-190">Menjen a **Készpénz és bankkezelés** &gt; **Beállítás** &gt; **Továbbfejlesztett banki egyeztetés beállítása** &gt; **Banki kivonatok formátuma** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-190">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="fb540-191">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-191">Click **New**.</span></span>
+3.  <span data-ttu-id="fb540-192">Adja meg a kivonat formátumát, például a **MT940**.</span><span class="sxs-lookup"><span data-stu-id="fb540-192">Specify a statement format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="fb540-193">Adja meg a formátum nevét.</span><span class="sxs-lookup"><span data-stu-id="fb540-193">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="fb540-194">Állítsa be a **Feldolgozó csoport** mezőt ahhoz a csoporthoz, amit már korábban definiált, például a **MT940**.</span><span class="sxs-lookup"><span data-stu-id="fb540-194">Set the **Processing group** field to the group that you defined earlier, such as **MT940**.</span></span>
+6.  <span data-ttu-id="fb540-195">Állítsa a **Fájl típus** mezőt **txt** értékre.</span><span class="sxs-lookup"><span data-stu-id="fb540-195">Set the **File type** field to **txt**.</span></span>
 
-Az utolsó lépés, a Speciális bankszámla egyeztetés engedélyezése és a kivonat formátumának beállítása a bank számlán.
+<span data-ttu-id="fb540-196">Az utolsó lépés, a Speciális bankszámla egyeztetés engedélyezése és a kivonat formátumának beállítása a bank számlán.</span><span class="sxs-lookup"><span data-stu-id="fb540-196">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.
-2.  Válassza ki azt a bankszámlát, és nyissa meg a részletek megtekintéséhez.
-3.  Az **Egyeztetés** lapon, állítsa a **Speciális banki egyeztetés** lehetőséget **Igen** értékre.
-4.  Amikor felszólítást kap a választás megerősítéséhez, és lehetővé teszi a Speciális banki egyeztetést, kattintson az **OK** lehetőségre.
-5.  Állítsa be a **Kivonat formátuma** mezőt ahhoz a formátumhoz, amit már korábban létrehozott, például az **MT940**.
+1.  <span data-ttu-id="fb540-197">Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.</span><span class="sxs-lookup"><span data-stu-id="fb540-197">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="fb540-198">Válassza ki azt a bankszámlát, és nyissa meg a részletek megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="fb540-198">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="fb540-199">Az **Egyeztetés** lapon, állítsa a **Speciális banki egyeztetés** lehetőséget **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="fb540-199">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="fb540-200">Amikor felszólítást kap a választás megerősítéséhez, és lehetővé teszi a Speciális banki egyeztetést, kattintson az **OK** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-200">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="fb540-201">Állítsa be a **Kivonat formátuma** mezőt ahhoz a formátumhoz, amit már korábban létrehozott, például az **MT940**.</span><span class="sxs-lookup"><span data-stu-id="fb540-201">Set the **Statement format** field to the format that you created earlier, such as **MT940**.</span></span>
 
-## <a name="set-up-the-import-of-bai2-bank-statements"></a>Állítsa be a BAI2 banki kivonatok importálását
-Először definiálni kell a banki kivonat formátum feldolgozási csoportját BAI2 banki kivonatokhoz, az adatentitás keretrendszer használatával.
+## <a name="set-up-the-import-of-bai2-bank-statements"></a><span data-ttu-id="fb540-202">Állítsa be a BAI2 banki kivonatok importálását</span><span class="sxs-lookup"><span data-stu-id="fb540-202">Set up the import of BAI2 bank statements</span></span>
+<span data-ttu-id="fb540-203">Először definiálni kell a banki kivonat formátum feldolgozási csoportját BAI2 banki kivonatokhoz, az adatentitás keretrendszer használatával.</span><span class="sxs-lookup"><span data-stu-id="fb540-203">First, you must define the bank statement format processing group for BAI2 bank statements by using the data entity framework.</span></span>
 
-1.  Menjen a **Munkaterületek** &gt; **Adatkezelés** lehetőségre.
-2.  Kattintson az **Importálás** gombra.
-3.  Adja meg a formátum nevét, például **BAI2**.
-4.  A **Forrás adat formátuma** mezőt állítsa **XML-Element** értékre.
-5.  Az **Entitás neve** mezőbe írja be **Banki kivonatok**.
-6.  Az importálási fájlok feltöltéséhez, kattintson a **Feltöltés** gombra, majd tallózással válassza ki a **SampleBankCompositeEntity.xml** fájlt, amit már korábban lementett.
-7.  Miután a banki kimutatások entitás feltöltése és a hozzárendelés elkészült, kattintson a **Térkép megjelenítése** entitáshoz tartozó műveletre.
-8.  A banki kimutatások entitás egy összetett entitást, amelyet négy külön entitás alkot. Válassza ki a listából a **BankStatementDocumentEntity** lehetőséget, majd kattintson a **Térkép megjelenítése** műveletre.
-9.  Az **Átalakítások** fülön, kattintson az **Új** lehetőségre.
-10. Az 1-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **BAI2CSV-to-BAI2XML.xslt** fájl, amit már korábban lementett.
-11. Kattintson az **Új** elemre.
-12. Az 2-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **BAI2XML-Reconciliation.xslt** fájl, amit már korábban lementett. **Megjegyzés:** A Finance and Operations átalakító fájlok szabványos formátumra épülnek. Mivel a bankok gyakran eltérnek ebben a formátumban, lehet, hogy frissíteni kell az átalakító fájlt, hogy leképezze az ön banki kivonat formátumát. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
-13. Kattintson az **Új** elemre.
-14. Az 3-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki a **BankReconciliation-to-Composite.xslt** fájl, amit már korábban lementett.
-15. Kattintson az **Átalakítások alkalmazása** lehetőségre.
+1.  <span data-ttu-id="fb540-204">Menjen a **Munkaterületek** &gt; **Adatkezelés** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-204">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="fb540-205">Kattintson az **Importálás** gombra.</span><span class="sxs-lookup"><span data-stu-id="fb540-205">Click **Import**.</span></span>
+3.  <span data-ttu-id="fb540-206">Adja meg a formátum nevét, például **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="fb540-206">Enter a name for the format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="fb540-207">A **Forrás adat formátuma** mezőt állítsa **XML-Element** értékre.</span><span class="sxs-lookup"><span data-stu-id="fb540-207">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="fb540-208">Az **Entitás neve** mezőbe írja be **Banki kivonatok**.</span><span class="sxs-lookup"><span data-stu-id="fb540-208">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="fb540-209">Az importálási fájlok feltöltéséhez, kattintson a **Feltöltés** gombra, majd tallózással válassza ki a **SampleBankCompositeEntity.xml** fájlt, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-209">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="fb540-210">Miután a banki kimutatások entitás feltöltése és a hozzárendelés elkészült, kattintson a **Térkép megjelenítése** entitáshoz tartozó műveletre.</span><span class="sxs-lookup"><span data-stu-id="fb540-210">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="fb540-211">A banki kimutatások entitás egy összetett entitást, amelyet négy külön entitás alkot.</span><span class="sxs-lookup"><span data-stu-id="fb540-211">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="fb540-212">Válassza ki a listából a **BankStatementDocumentEntity** lehetőséget, majd kattintson a **Térkép megjelenítése** műveletre.</span><span class="sxs-lookup"><span data-stu-id="fb540-212">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="fb540-213">Az **Átalakítások** fülön, kattintson az **Új** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-213">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="fb540-214">Az 1-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **BAI2CSV-to-BAI2XML.xslt** fájl, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-214">For sequence number 1, click **Upload file**, and select the **BAI2CSV-to-BAI2XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="fb540-215">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-215">Click **New**.</span></span>
+12. <span data-ttu-id="fb540-216">Az 2-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki az **BAI2XML-Reconciliation.xslt** fájl, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-216">For sequence number 2, click **Upload file**, and select the **BAI2XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="fb540-217">**Megjegyzés:** A Finance and Operations átalakító fájlok szabványos formátumra épülnek.</span><span class="sxs-lookup"><span data-stu-id="fb540-217">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="fb540-218">Mivel a bankok gyakran eltérnek ebben a formátumban, lehet, hogy frissíteni kell az átalakító fájlt, hogy leképezze az ön banki kivonat formátumát.</span><span class="sxs-lookup"><span data-stu-id="fb540-218">Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+13. <span data-ttu-id="fb540-219">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-219">Click **New**.</span></span>
+14. <span data-ttu-id="fb540-220">Az 3-es sorozatszámhoz, kattintson a **Fájlfeltöltés** lehetőségre, és válassza ki a **BankReconciliation-to-Composite.xslt** fájl, amit már korábban lementett.</span><span class="sxs-lookup"><span data-stu-id="fb540-220">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="fb540-221">Kattintson az **Átalakítások alkalmazása** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-221">Click **Apply transforms**.</span></span>
 
-A formátum feldolgozó csoport beállítása után, a következő lépés célja az BAI2 banki kivonatok banki kivonat formátuma szabályainak meghatározása.
+<span data-ttu-id="fb540-222">A formátum feldolgozó csoport beállítása után, a következő lépés célja az BAI2 banki kivonatok banki kivonat formátuma szabályainak meghatározása.</span><span class="sxs-lookup"><span data-stu-id="fb540-222">After the format processing group is set up, the next step is to define the bank statement format rules for BAI2 bank statements.</span></span>
 
-1.  Menjen a **Készpénz és bankkezelés** &gt; **Beállítás** &gt; **Továbbfejlesztett banki egyeztetés beállítása** &gt; **Banki kivonatok formátuma** elemre.
-2.  Kattintson az **Új** elemre.
-3.  Adja meg a kivonat formátumát, például a **BAI2**.
-4.  Adja meg a formátum nevét.
-5.  Állítsa be a **Feldolgozó csoport** mezőt ahhoz a csoporthoz, amit már korábban definiált, például a **BAI2**.
-6.  Állítsa a **Fájl típus** mezőt **txt** értékre.
+1.  <span data-ttu-id="fb540-223">Menjen a **Készpénz és bankkezelés** &gt; **Beállítás** &gt; **Továbbfejlesztett banki egyeztetés beállítása** &gt; **Banki kivonatok formátuma** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-223">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="fb540-224">Kattintson az **Új** elemre.</span><span class="sxs-lookup"><span data-stu-id="fb540-224">Click **New**.</span></span>
+3.  <span data-ttu-id="fb540-225">Adja meg a kivonat formátumát, például a **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="fb540-225">Specify a statement format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="fb540-226">Adja meg a formátum nevét.</span><span class="sxs-lookup"><span data-stu-id="fb540-226">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="fb540-227">Állítsa be a **Feldolgozó csoport** mezőt ahhoz a csoporthoz, amit már korábban definiált, például a **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="fb540-227">Set the **Processing group** field to the group that you defined earlier, such as **BAI2**.</span></span>
+6.  <span data-ttu-id="fb540-228">Állítsa a **Fájl típus** mezőt **txt** értékre.</span><span class="sxs-lookup"><span data-stu-id="fb540-228">Set the **File type** field to **txt**.</span></span>
 
-Az utolsó lépés, a Speciális bankszámla egyeztetés engedélyezése és a kivonat formátumának beállítása a bank számlán.
+<span data-ttu-id="fb540-229">Az utolsó lépés, a Speciális bankszámla egyeztetés engedélyezése és a kivonat formátumának beállítása a bank számlán.</span><span class="sxs-lookup"><span data-stu-id="fb540-229">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.
-2.  Válassza ki azt a bankszámlát, és nyissa meg a részletek megtekintéséhez.
-3.  Az **Egyeztetés** lapon, állítsa a **Speciális banki egyeztetés** lehetőséget **Igen** értékre.
-4.  Amikor felszólítást kap a választás megerősítéséhez, és lehetővé teszi a Speciális banki egyeztetést, kattintson az **OK** lehetőségre.
-5.  Állítsa be a **Kivonat formátuma** mezőt ahhoz a formátumhoz, amit már korábban létrehozott, például az **BAI2**.
+1.  <span data-ttu-id="fb540-230">Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.</span><span class="sxs-lookup"><span data-stu-id="fb540-230">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="fb540-231">Válassza ki azt a bankszámlát, és nyissa meg a részletek megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="fb540-231">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="fb540-232">Az **Egyeztetés** lapon, állítsa a **Speciális banki egyeztetés** lehetőséget **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="fb540-232">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="fb540-233">Amikor felszólítást kap a választás megerősítéséhez, és lehetővé teszi a Speciális banki egyeztetést, kattintson az **OK** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-233">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="fb540-234">Állítsa be a **Kivonat formátuma** mezőt ahhoz a formátumhoz, amit már korábban létrehozott, például az **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="fb540-234">Set the **Statement format** field to the format that you created earlier, such as **BAI2**.</span></span>
 
-## <a name="test-the-bank-statement-import"></a>Bankkivonat importálásának tesztelése
-Az utolsó lépés a banki kivonatok importálásnak tesztelése.
+## <a name="test-the-bank-statement-import"></a><span data-ttu-id="fb540-235">Bankkivonat importálásának tesztelése</span><span class="sxs-lookup"><span data-stu-id="fb540-235">Test the bank statement import</span></span>
+<span data-ttu-id="fb540-236">Az utolsó lépés a banki kivonatok importálásnak tesztelése.</span><span class="sxs-lookup"><span data-stu-id="fb540-236">The final step is to test that you can import your bank statement.</span></span>
 
-1.  Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.
-2.  Válassza ki azt a bankszámlát, amihez a Speciális banki egyeztetés funkció engedélyezve van.
-3.  Az **Egyeztetés** fülön, kattintson a **Banki kivonatok** lehetőségre.
-4.  A **Banki kivonat** oldalon, kattintson az **Importnyilatkozat** lehetőségre.
-5.  Az **Bank számla** mezőt állítsa a kiválasztott a bankszámlára. A **Kivonat formátuma** mező értéke automatikusan lesz beállítva, a bankszámla beállításainak alapján.
-6.  Kattintson a **Keresés** lehetőségre, és jelölje ki az ön elektronikus banki kivonat fájlját.
-7.  Kattintson a **Feltöltés** hivatkozásra.
-8.  Kattintson az **OK** gombra.
+1.  <span data-ttu-id="fb540-237">Nyissa meg a következőt: **Készpénz- és bankkezelés** &gt; **Bankszámlák**.</span><span class="sxs-lookup"><span data-stu-id="fb540-237">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="fb540-238">Válassza ki azt a bankszámlát, amihez a Speciális banki egyeztetés funkció engedélyezve van.</span><span class="sxs-lookup"><span data-stu-id="fb540-238">Select the bank account that Advanced bank reconciliation functionality is enabled for.</span></span>
+3.  <span data-ttu-id="fb540-239">Az **Egyeztetés** fülön, kattintson a **Banki kivonatok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-239">On the **Reconcile** tab, click **Bank statements**.</span></span>
+4.  <span data-ttu-id="fb540-240">A **Banki kivonat** oldalon, kattintson az **Importnyilatkozat** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="fb540-240">On the **Bank statement** page, click **Import statement**.</span></span>
+5.  <span data-ttu-id="fb540-241">Az **Bank számla** mezőt állítsa a kiválasztott a bankszámlára.</span><span class="sxs-lookup"><span data-stu-id="fb540-241">Set the **Bank account** field to the selected bank account.</span></span> <span data-ttu-id="fb540-242">A **Kivonat formátuma** mező értéke automatikusan lesz beállítva, a bankszámla beállításainak alapján.</span><span class="sxs-lookup"><span data-stu-id="fb540-242">The **Statement format** field will be set automatically, based on the setting on the bank account.</span></span>
+6.  <span data-ttu-id="fb540-243">Kattintson a **Keresés** lehetőségre, és jelölje ki az ön elektronikus banki kivonat fájlját.</span><span class="sxs-lookup"><span data-stu-id="fb540-243">Click **Browse**, and select your electronic bank statement file.</span></span>
+7.  <span data-ttu-id="fb540-244">Kattintson a **Feltöltés** hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="fb540-244">Click **Upload**.</span></span>
+8.  <span data-ttu-id="fb540-245">Kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="fb540-245">Click **OK**.</span></span>
 
-Ha az importálás sikeres, egy üzenetet fog kapni, amely arról tájékoztatja, hogy sikeresen importálta az ön kivonatát. Ha az importálás nem sikeres, az **Adatok kezelése** munkaterületen, a **Feladatelőzmények** szakaszban, keresse meg a feladatot. Kattintson a feladathoz tartozó **Végrehajtási részletek** lehetőségre, a **Végrehajtási összefoglalás** lap megnyitásához, majd kattintson a **Végrehajtási napló megtekintése** lehetőségre, az importálási hibák megtekintéséhez.
+<span data-ttu-id="fb540-246">Ha az importálás sikeres, egy üzenetet fog kapni, amely arról tájékoztatja, hogy sikeresen importálta az ön kivonatát.</span><span class="sxs-lookup"><span data-stu-id="fb540-246">If the import is successful, you will receive a message that states that your statement was imported.</span></span> <span data-ttu-id="fb540-247">Ha az importálás nem sikeres, az **Adatok kezelése** munkaterületen, a **Feladatelőzmények** szakaszban, keresse meg a feladatot.</span><span class="sxs-lookup"><span data-stu-id="fb540-247">If the import wasn't successful, in the **Data management** workspace, in the **Job history** section, find the job.</span></span> <span data-ttu-id="fb540-248">Kattintson a feladathoz tartozó **Végrehajtási részletek** lehetőségre, a **Végrehajtási összefoglalás** lap megnyitásához, majd kattintson a **Végrehajtási napló megtekintése** lehetőségre, az importálási hibák megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="fb540-248">Click **Execution details** for the job to open the **Execution summary** page, and then click **View execution log** to view the import errors.</span></span>
 
 
 

@@ -22,132 +22,132 @@ ms.contentlocale: hu-hu
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="modify-format-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Formátum módosítása az alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez (ER)
+# <a name="modify-format-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a><span data-ttu-id="2ce60-103">Formátum módosítása az alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez (ER)</span><span class="sxs-lookup"><span data-stu-id="2ce60-103">Modify format to generate documents with application data update for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Az eljárás lépéseinek elvégzéséhez először hajtsa végre az „ER – Dokumentumok létrehozása alkalmazásadat-frissítéssel (3. rész: Modell és hozzárendelés módosítása)” eljárást.
+<span data-ttu-id="2ce60-104">Az eljárás lépéseinek elvégzéséhez először hajtsa végre az „ER – Dokumentumok létrehozása alkalmazásadat-frissítéssel (3. rész: Modell és hozzárendelés módosítása)” eljárást.</span><span class="sxs-lookup"><span data-stu-id="2ce60-104">To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3: Modify model and mapping)".</span></span>
 
-Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jelentési (ER) konfigurációk megtervezését és az alkalmazásadatok frissítését mutatják be. Ebben az eljárásban módosítjuk az ER-konfigurációkat, hogy ne csak az elektronikus dokumentumok létrehozásához használjuk őket, hanem az alkalmazásadatok frissítéséhez is. Ez az eljárás a rendszergazda vagy az elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. A lépések a DEMF-adathalmazzal hajthatók végre.
+<span data-ttu-id="2ce60-105">Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jelentési (ER) konfigurációk megtervezését és az alkalmazásadatok frissítését mutatják be.</span><span class="sxs-lookup"><span data-stu-id="2ce60-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data.</span></span> <span data-ttu-id="2ce60-106">Ebben az eljárásban módosítjuk az ER-konfigurációkat, hogy ne csak az elektronikus dokumentumok létrehozásához használjuk őket, hanem az alkalmazásadatok frissítéséhez is.</span><span class="sxs-lookup"><span data-stu-id="2ce60-106">In this procedure, you will modify the ER configurations to not just use them to generate electronic documents, but also to update application data.</span></span> <span data-ttu-id="2ce60-107">Ez az eljárás a rendszergazda vagy az elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült.</span><span class="sxs-lookup"><span data-stu-id="2ce60-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="2ce60-108">A lépések a DEMF-adathalmazzal hajthatók végre.</span><span class="sxs-lookup"><span data-stu-id="2ce60-108">These steps can be completed using the DEMF dataset.</span></span>
 
 
-## <a name="modify-format-to-collect-details-of-reporting"></a>Módosítsa a formátumot a jelentés adatainak összegyűjtéséhez
-1. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
-2. A fastruktúrában bontsa ki az „Instrastat (model)” elemet.
-3. A fastruktúrában jelölje ki a következőt: „Intrastat (model)\Intrastat (format)”.
-4. Kattintson a Tervező pontra.
-5. A fastruktúrában bontsa ki ezt: „File”.
-6. A fában bontsa ki a „File\Declaration” elemet.
-7. A fastruktúrában válassza ki ezt: „File\Declaration\Data”.
-8. A Multiplicitás mezőben válassza ki ezt: 'Egy a többhöz'.
-    * Konfigurálja ezt a formátumelemet az Intrastat-jelentési folyamat adatainak archiválásához. Ez az elem az archívum fejlécrekordját jelöli.  
-9. A fában bontsa ki ezt: „File\Declaration\Data”.
-10. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item”.
-11. A Multiplicitás mezőben válassza ki ezt: 'Nulla sok'.
-    * Konfigurálja ezt a formátumelemet az Intrastat-jelentési folyamat adatainak archiválásához. Ez az elem az archivált sorok listáját fogja jelölni.  
-12. A fában bontsa ki ezt: „File\Declaration\Data\Item”.
-13. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim1”.
-14. Válassza az Igen lehetőséget a Kizárás mezőben.
-    * Ezeket az adatokat nem fogja archiválni, ezért ezt a formátumelemet kizárhatja az Intrastat-jelentés részleteinek adatforrásából.  
-15. A fában bontsa ki ezt: „File\Declaration\Data\Item\Dim1”.
-16. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim1\property”.
-17. Válassza az Igen lehetőséget a Kizárás mezőben.
-18. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim1\date”.
-19. Válassza az Igen lehetőséget a Kizárás mezőben.
-20. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim2”.
-21. Válassza az Igen lehetőséget a Kizárás mezőben.
-22. A fában bontsa ki ezt: „File\Declaration\Data\Item\Dim2”.
-23. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim2\property”.
-24. Válassza az Igen lehetőséget a Kizárás mezőben.
-25. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim2\code”.
-26. Válassza az Igen lehetőséget a Kizárás mezőben.
-27. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim3”.
-    * Több formátumelemnek lehet ugyanaz a neve. Például Dim. Nem lehet közvetlenül felismerni őket a formátum használatakor adatforrásként az Intrastat-jelentés részleteinek archiválása céljából, ezért meg kell adni a másodlagos neveket ezekhez a formátumelemekhez.   
-28. A Név mezőbe írja be az 'Amount' szöveget.
-    * Összeg  
-29. A Multiplicitás mezőben válassza ki ezt: 'Pontosan egy'.
-30. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim4”.
-31. A Név mezőbe írja be az Item szót.
-    * Tétel  
-32. A Multiplicitás mezőben válassza ki ezt: 'Pontosan egy'.
-    * A tervezési formátumelemek mellett a következő Intrastat-jelentési adatokat is archiválni kell: az egyes árucikkek egyedi rekordazonosítója, valamint a létrehozott fájl neve. Mivel ezek az adatok az Intrastat-jelentésben nem lesznek kitöltve, adatforráselemként hozzá kell adni az ezekhez az adatelemekhez kapcsolódó formátumot.  
-33. A fastruktúrában válassza ki ezt: „File\Declaration\Data”.
-34. A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-35. Válassza ki az „Data source\Item” lehetőséget a fastruktúrában.
-36. A Név mezőbe írja be a következőt: „Fájlnév”.
-    * Fájlnév  
-37. Az Adattípus mezőben válassza ki a „Karakterlánc” lehetőséget.
-38. Kattintson az OK gombra.
-39. A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item”.
-40. Kattintson a Cikk hozzáadása elemre.
-41. A Név mezőben írja be az „Árucikk rekordazonosító” szöveget.
-    * Árucikk rekordazonosító  
-42. Az Adattípus mezőben válassza ki az „Int64” lehetőséget.
-43. Kattintson az OK gombra.
-44. Kattintson a Hozzárendelés fülre.
-45. A fastruktúrában válassza ki ezt: „File\Declaration\Data\File name”.
-46. Kattintson a Kötés gombra.
-47. A fában bontsa ki a „model” elemet.
-48. A fastruktúrában bontsa ki ezt: „model\Transactions”.
-49. A fában jelölje ki ezt: „File\Declaration\Data\Item =  model.Transactions\Commodity rec id”.
-50. A fán válassza ki ezt: „model\Transactions\Commodity rec id”.
-51. Kattintson a Kötés gombra.
-52. Kattintson a Mentés gombra.
+## <a name="modify-format-to-collect-details-of-reporting"></a><span data-ttu-id="2ce60-109">Módosítsa a formátumot a jelentés adatainak összegyűjtéséhez</span><span class="sxs-lookup"><span data-stu-id="2ce60-109">Modify format to collect details of reporting</span></span>
+1. <span data-ttu-id="2ce60-110">Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.</span><span class="sxs-lookup"><span data-stu-id="2ce60-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="2ce60-111">A fastruktúrában bontsa ki az „Instrastat (model)” elemet.</span><span class="sxs-lookup"><span data-stu-id="2ce60-111">In the tree, expand 'Intrastat (model)'.</span></span>
+3. <span data-ttu-id="2ce60-112">A fastruktúrában jelölje ki a következőt: „Intrastat (model)\Intrastat (format)”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-112">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
+4. <span data-ttu-id="2ce60-113">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-113">Click Designer.</span></span>
+5. <span data-ttu-id="2ce60-114">A fastruktúrában bontsa ki ezt: „File”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-114">In the tree, expand 'File'.</span></span>
+6. <span data-ttu-id="2ce60-115">A fában bontsa ki a „File\Declaration” elemet.</span><span class="sxs-lookup"><span data-stu-id="2ce60-115">In the tree, expand 'File\Declaration'.</span></span>
+7. <span data-ttu-id="2ce60-116">A fastruktúrában válassza ki ezt: „File\Declaration\Data”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-116">In the tree, select 'File\Declaration\Data'.</span></span>
+8. <span data-ttu-id="2ce60-117">A Multiplicitás mezőben válassza ki ezt: 'Egy a többhöz'.</span><span class="sxs-lookup"><span data-stu-id="2ce60-117">In the Multiplicity field, select 'One many'.</span></span>
+    * <span data-ttu-id="2ce60-118">Konfigurálja ezt a formátumelemet az Intrastat-jelentési folyamat adatainak archiválásához.</span><span class="sxs-lookup"><span data-stu-id="2ce60-118">Configure this format element to archive details of the Intrastat reporting process.</span></span> <span data-ttu-id="2ce60-119">Ez az elem az archívum fejlécrekordját jelöli.</span><span class="sxs-lookup"><span data-stu-id="2ce60-119">This item represents the archive’s header record.</span></span>  
+9. <span data-ttu-id="2ce60-120">A fában bontsa ki ezt: „File\Declaration\Data”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-120">In the tree, expand 'File\Declaration\Data'.</span></span>
+10. <span data-ttu-id="2ce60-121">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-121">In the tree, select 'File\Declaration\Data\Item'.</span></span>
+11. <span data-ttu-id="2ce60-122">A Multiplicitás mezőben válassza ki ezt: 'Nulla sok'.</span><span class="sxs-lookup"><span data-stu-id="2ce60-122">In the Multiplicity field, select 'Zero many'.</span></span>
+    * <span data-ttu-id="2ce60-123">Konfigurálja ezt a formátumelemet az Intrastat-jelentési folyamat adatainak archiválásához.</span><span class="sxs-lookup"><span data-stu-id="2ce60-123">Configure this format element to archive details of the Intrastat reporting process.</span></span> <span data-ttu-id="2ce60-124">Ez az elem az archivált sorok listáját fogja jelölni.</span><span class="sxs-lookup"><span data-stu-id="2ce60-124">This item will represent the list of archived lines.</span></span>  
+12. <span data-ttu-id="2ce60-125">A fában bontsa ki ezt: „File\Declaration\Data\Item”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-125">In the tree, expand 'File\Declaration\Data\Item'.</span></span>
+13. <span data-ttu-id="2ce60-126">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim1”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-126">In the tree, select 'File\Declaration\Data\Item\Dim1'.</span></span>
+14. <span data-ttu-id="2ce60-127">Válassza az Igen lehetőséget a Kizárás mezőben.</span><span class="sxs-lookup"><span data-stu-id="2ce60-127">Select Yes in the Excluded field.</span></span>
+    * <span data-ttu-id="2ce60-128">Ezeket az adatokat nem fogja archiválni, ezért ezt a formátumelemet kizárhatja az Intrastat-jelentés részleteinek adatforrásából.</span><span class="sxs-lookup"><span data-stu-id="2ce60-128">You will not archive this data, so you can exclude this format element from the data source of Intrastat reporting details.</span></span>  
+15. <span data-ttu-id="2ce60-129">A fában bontsa ki ezt: „File\Declaration\Data\Item\Dim1”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-129">In the tree, expand 'File\Declaration\Data\Item\Dim1'.</span></span>
+16. <span data-ttu-id="2ce60-130">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim1\property”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-130">In the tree, select 'File\Declaration\Data\Item\Dim1\property'.</span></span>
+17. <span data-ttu-id="2ce60-131">Válassza az Igen lehetőséget a Kizárás mezőben.</span><span class="sxs-lookup"><span data-stu-id="2ce60-131">Select Yes in the Excluded field.</span></span>
+18. <span data-ttu-id="2ce60-132">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim1\date”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-132">In the tree, select 'File\Declaration\Data\Item\Dim1\date'.</span></span>
+19. <span data-ttu-id="2ce60-133">Válassza az Igen lehetőséget a Kizárás mezőben.</span><span class="sxs-lookup"><span data-stu-id="2ce60-133">Select Yes in the Excluded field.</span></span>
+20. <span data-ttu-id="2ce60-134">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim2”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-134">In the tree, select 'File\Declaration\Data\Item\Dim2'.</span></span>
+21. <span data-ttu-id="2ce60-135">Válassza az Igen lehetőséget a Kizárás mezőben.</span><span class="sxs-lookup"><span data-stu-id="2ce60-135">Select Yes in the Excluded field.</span></span>
+22. <span data-ttu-id="2ce60-136">A fában bontsa ki ezt: „File\Declaration\Data\Item\Dim2”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-136">In the tree, expand 'File\Declaration\Data\Item\Dim2'.</span></span>
+23. <span data-ttu-id="2ce60-137">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim2\property”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-137">In the tree, select 'File\Declaration\Data\Item\Dim2\property'.</span></span>
+24. <span data-ttu-id="2ce60-138">Válassza az Igen lehetőséget a Kizárás mezőben.</span><span class="sxs-lookup"><span data-stu-id="2ce60-138">Select Yes in the Excluded field.</span></span>
+25. <span data-ttu-id="2ce60-139">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim2\code”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-139">In the tree, select 'File\Declaration\Data\Item\Dim2\code'.</span></span>
+26. <span data-ttu-id="2ce60-140">Válassza az Igen lehetőséget a Kizárás mezőben.</span><span class="sxs-lookup"><span data-stu-id="2ce60-140">Select Yes in the Excluded field.</span></span>
+27. <span data-ttu-id="2ce60-141">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim3”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-141">In the tree, select 'File\Declaration\Data\Item\Dim3'.</span></span>
+    * <span data-ttu-id="2ce60-142">Több formátumelemnek lehet ugyanaz a neve.</span><span class="sxs-lookup"><span data-stu-id="2ce60-142">Several format elements can have the same name.</span></span> <span data-ttu-id="2ce60-143">Például Dim.</span><span class="sxs-lookup"><span data-stu-id="2ce60-143">For example, Dim.</span></span> <span data-ttu-id="2ce60-144">Nem lehet közvetlenül felismerni őket a formátum használatakor adatforrásként az Intrastat-jelentés részleteinek archiválása céljából, ezért meg kell adni a másodlagos neveket ezekhez a formátumelemekhez.</span><span class="sxs-lookup"><span data-stu-id="2ce60-144">You cannot explicitly recognize them when you use this format as a data source for archiving Intrastat reporting details, so you need to define the alternative names for these format elements.</span></span>   
+28. <span data-ttu-id="2ce60-145">A Név mezőbe írja be az 'Amount' szöveget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-145">In the Name field, type 'Amount'.</span></span>
+    * <span data-ttu-id="2ce60-146">Összeg</span><span class="sxs-lookup"><span data-stu-id="2ce60-146">Amount</span></span>  
+29. <span data-ttu-id="2ce60-147">A Multiplicitás mezőben válassza ki ezt: 'Pontosan egy'.</span><span class="sxs-lookup"><span data-stu-id="2ce60-147">In the Multiplicity field, select 'Exactly one'.</span></span>
+30. <span data-ttu-id="2ce60-148">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item\Dim4”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-148">In the tree, select 'File\Declaration\Data\Item\Dim4'.</span></span>
+31. <span data-ttu-id="2ce60-149">A Név mezőbe írja be az Item szót.</span><span class="sxs-lookup"><span data-stu-id="2ce60-149">In the Name field, type 'Item'.</span></span>
+    * <span data-ttu-id="2ce60-150">Tétel</span><span class="sxs-lookup"><span data-stu-id="2ce60-150">Item</span></span>  
+32. <span data-ttu-id="2ce60-151">A Multiplicitás mezőben válassza ki ezt: 'Pontosan egy'.</span><span class="sxs-lookup"><span data-stu-id="2ce60-151">In the Multiplicity field, select 'Exactly one'.</span></span>
+    * <span data-ttu-id="2ce60-152">A tervezési formátumelemek mellett a következő Intrastat-jelentési adatokat is archiválni kell: az egyes árucikkek egyedi rekordazonosítója, valamint a létrehozott fájl neve.</span><span class="sxs-lookup"><span data-stu-id="2ce60-152">In addition to the design format elements, the following Intrastat reporting details must be archived: unique record identification of each reported commodity item and name of the generated file.</span></span> <span data-ttu-id="2ce60-153">Mivel ezek az adatok az Intrastat-jelentésben nem lesznek kitöltve, adatforráselemként hozzá kell adni az ezekhez az adatelemekhez kapcsolódó formátumot.</span><span class="sxs-lookup"><span data-stu-id="2ce60-153">Because this data will not be populated in the Intrastat report, you need to add the format that is related to these detail elements as data source items.</span></span>  
+33. <span data-ttu-id="2ce60-154">A fastruktúrában válassza ki ezt: „File\Declaration\Data”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-154">In the tree, select 'File\Declaration\Data'.</span></span>
+34. <span data-ttu-id="2ce60-155">A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="2ce60-155">Click Add to open the drop dialog.</span></span>
+35. <span data-ttu-id="2ce60-156">Válassza ki az „Data source\Item” lehetőséget a fastruktúrában.</span><span class="sxs-lookup"><span data-stu-id="2ce60-156">In the tree, select 'Data source\Item'.</span></span>
+36. <span data-ttu-id="2ce60-157">A Név mezőbe írja be a következőt: „Fájlnév”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-157">In the Name field, type 'File name'.</span></span>
+    * <span data-ttu-id="2ce60-158">Fájlnév</span><span class="sxs-lookup"><span data-stu-id="2ce60-158">File name</span></span>  
+37. <span data-ttu-id="2ce60-159">Az Adattípus mezőben válassza ki a „Karakterlánc” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-159">In the Data type field, select 'String'.</span></span>
+38. <span data-ttu-id="2ce60-160">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-160">Click OK.</span></span>
+39. <span data-ttu-id="2ce60-161">A fastruktúrában válassza ki ezt: „File\Declaration\Data\Item”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-161">In the tree, select 'File\Declaration\Data\Item'.</span></span>
+40. <span data-ttu-id="2ce60-162">Kattintson a Cikk hozzáadása elemre.</span><span class="sxs-lookup"><span data-stu-id="2ce60-162">Click Add Item.</span></span>
+41. <span data-ttu-id="2ce60-163">A Név mezőben írja be az „Árucikk rekordazonosító” szöveget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-163">In the Name field, type 'Commodity rec id'.</span></span>
+    * <span data-ttu-id="2ce60-164">Árucikk rekordazonosító</span><span class="sxs-lookup"><span data-stu-id="2ce60-164">Commodity rec id</span></span>  
+42. <span data-ttu-id="2ce60-165">Az Adattípus mezőben válassza ki az „Int64” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-165">In the Data type field, select 'Int64'.</span></span>
+43. <span data-ttu-id="2ce60-166">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-166">Click OK.</span></span>
+44. <span data-ttu-id="2ce60-167">Kattintson a Hozzárendelés fülre.</span><span class="sxs-lookup"><span data-stu-id="2ce60-167">Click the Mapping tab.</span></span>
+45. <span data-ttu-id="2ce60-168">A fastruktúrában válassza ki ezt: „File\Declaration\Data\File name”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-168">In the tree, select 'File\Declaration\Data\File name'.</span></span>
+46. <span data-ttu-id="2ce60-169">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-169">Click Bind.</span></span>
+47. <span data-ttu-id="2ce60-170">A fában bontsa ki a „model” elemet.</span><span class="sxs-lookup"><span data-stu-id="2ce60-170">In the tree, expand 'model'.</span></span>
+48. <span data-ttu-id="2ce60-171">A fastruktúrában bontsa ki ezt: „model\Transactions”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-171">In the tree, expand 'model\Transactions'.</span></span>
+49. <span data-ttu-id="2ce60-172">A fában jelölje ki ezt: „File\Declaration\Data\Item =  model.Transactions\Commodity rec id”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-172">In the tree, select 'File\Declaration\Data\Item =  model.Transactions\Commodity rec id'.</span></span>
+50. <span data-ttu-id="2ce60-173">A fán válassza ki ezt: „model\Transactions\Commodity rec id”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-173">In the tree, select 'model\Transactions\Commodity rec id'.</span></span>
+51. <span data-ttu-id="2ce60-174">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-174">Click Bind.</span></span>
+52. <span data-ttu-id="2ce60-175">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-175">Click Save.</span></span>
 
-## <a name="modify-format-to-memorize-details-of-reporting"></a>Módosítsa a formátumot a jelentés adatainak memorizálásához
-1. Kattintson a Formátum hozzárendelése modellhez lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A Definíció mezőben adja meg vagy válassza ki az 'Alkalmazásadatok frissítéséhez' gyökérelemet.
-    * Alkalmazásadatok módosításához  
-4. A Név mezőbe írja be a következőt: „Hozzárendelés az adatok frissítéséhez”.
-    * Hozzárendelés az adatok frissítéséhez  
-5. Kattintson a Mentés gombra.
-    * Ez a hozzárendelés határozza meg, hogyan kell összegyűjteni az Intrastat-jelentés adatait az adatmodellben, amelynek a szerkezetét az „Alkalmazásadatok módosításához” kiválasztott gyökérelem határozza meg. Ezeket az adatokat – a modell-hozzárendelés az azonos „Alkalmazásadatok módosításához” gyökérelemmel, valamint a „Célhoz” irány – az alkalmazásadatok frissítéséhez használja a rendszer. Az alkalmazásadatok frissítése azonnal elindul, amint megtörtént a kimenő Intrastat-jelentés előállítása. Fontos megjegyezni, hogy az alkalmazásadatok frissítése kihagyható futásidőben, de az adatmodellnek üresnek kell lennie (üres rekordok listáját tartalmazó).   
-6. Kattintson a Tervező pontra.
-    * Vegye figyelembe, hogy a kimenő Intrastat-jelentésformátum alapértelmezés szerint hozzá lesz adva ehhez a modell-hozzárendeléshez adatforrásként.  
-    * Kösse össze a tervezett jelentés elemeit (adatforrásként jelennek meg) az adatmodell elemeivel, amelynek a szűrése a kiválasztott modell gyökéreleme alapján történik.  
-7. A fában bontsa ki az „Archive header” lehetőséget.
-8. A fában bontsa ki ezt: „Archive header\Archive lines”.
-9. A fastruktúrában bontsa ki ezt: „format”.
-10. A fában bontsa ki a „format\Declaration: XML Element(Declaration)”.
-11. A fán jelölje bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)”.
-12. A fában bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)”.
-13. A fában bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)”.
-14. A fában bontsa ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)” lehetőséget.
-15. A fában válassza ki az „Archive header\Number of lines” lehetőséget.
-16. Kattintson a Szerkesztés lehetőségre.
-17. A fastruktúrában válassza ki a „List\COUNT” csomópontot.
-18. Kattintson a Függvény hozzáadása gombra.
-19. A fastruktúrában bontsa ki ezt: „format”.
-20. A fában bontsa ki a „format\Declaration: XML Element(Declaration)”.
-21. A fán jelölje bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)”.
-22. A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)” lehetőséget.
-23. Kattintson az Adatforrás hozzáadása pontra.
-24. A Képlet mezőben adja meg ezt: 'COUNT(format.Declaration.Data.Item)'.
-    * COUNT(format.Declaration.Data.Item)  
-25. Kattintson a Mentés gombra.
-26. Zárja be a lapot.
-27. A fában válassza ki az „Archive header\File name” lehetőséget.
-28. A fán jelölje ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name)” lehetőséget.
-29. Kattintson a Kötés gombra.
-30. A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)” lehetőséget.
-31. A fában válassza ki ezt: „Archive header\Archive lines\Item number”.
-32. Kattintson a Kötés gombra.
-33. A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)” lehetőséget.
-34. A fában válassza ki ezt: „Archive header\Archive lines\Amount”.
-35. Kattintson a Kötés gombra.
-36. A fában jelölje ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id)”.
-37. A fában válassza ki ezt: „Archive header\Archive lines\Commodity rec id”.
-38. Kattintson a Kötés gombra.
-39. A fában válassza ki ezt: „Archive header\Archive lines”.
-40. A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)” lehetőséget.
-41. Kattintson a Kötés gombra.
-42. A fáról válassza ki a Fejléc archiválása lehetőséget.
-43. A fán jelölje be a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)” lehetőséget.
-44. Kattintson a Kötés gombra.
-45. Kattintson a Mentés gombra.
-46. Zárja be a lapot.
-47. Zárja be a lapot.
-48. Zárja be a lapot.
+## <a name="modify-format-to-memorize-details-of-reporting"></a><span data-ttu-id="2ce60-176">Módosítsa a formátumot a jelentés adatainak memorizálásához</span><span class="sxs-lookup"><span data-stu-id="2ce60-176">Modify format to memorize details of reporting</span></span>
+1. <span data-ttu-id="2ce60-177">Kattintson a Formátum hozzárendelése modellhez lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2ce60-177">Click Map format to model.</span></span>
+2. <span data-ttu-id="2ce60-178">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2ce60-178">Click New.</span></span>
+3. <span data-ttu-id="2ce60-179">A Definíció mezőben adja meg vagy válassza ki az 'Alkalmazásadatok frissítéséhez' gyökérelemet.</span><span class="sxs-lookup"><span data-stu-id="2ce60-179">In the Definition field, enter or select the ‘For application data update’ root item.</span></span>
+    * <span data-ttu-id="2ce60-180">Alkalmazásadatok módosításához</span><span class="sxs-lookup"><span data-stu-id="2ce60-180">For application data update</span></span>  
+4. <span data-ttu-id="2ce60-181">A Név mezőbe írja be a következőt: „Hozzárendelés az adatok frissítéséhez”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-181">In the Name field, type 'Mapping to update data'.</span></span>
+    * <span data-ttu-id="2ce60-182">Hozzárendelés az adatok frissítéséhez</span><span class="sxs-lookup"><span data-stu-id="2ce60-182">Mapping to update data</span></span>  
+5. <span data-ttu-id="2ce60-183">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-183">Click Save.</span></span>
+    * <span data-ttu-id="2ce60-184">Ez a hozzárendelés határozza meg, hogyan kell összegyűjteni az Intrastat-jelentés adatait az adatmodellben, amelynek a szerkezetét az „Alkalmazásadatok módosításához” kiválasztott gyökérelem határozza meg.</span><span class="sxs-lookup"><span data-stu-id="2ce60-184">This mapping defines how the details of the Intrastat report are collected in the data model, the structure of which is specified by the selected root item ‘For application data update’.</span></span> <span data-ttu-id="2ce60-185">Ezeket az adatokat – a modell-hozzárendelés az azonos „Alkalmazásadatok módosításához” gyökérelemmel, valamint a „Célhoz” irány – az alkalmazásadatok frissítéséhez használja a rendszer.</span><span class="sxs-lookup"><span data-stu-id="2ce60-185">These details, the model mapping with same root item ‘For application data update’, and the direction ‘To destination’ will be used for the application data update.</span></span> <span data-ttu-id="2ce60-186">Az alkalmazásadatok frissítése azonnal elindul, amint megtörtént a kimenő Intrastat-jelentés előállítása.</span><span class="sxs-lookup"><span data-stu-id="2ce60-186">The application data update starts immediately after the outgoing Intrastat report is generated.</span></span> <span data-ttu-id="2ce60-187">Fontos megjegyezni, hogy az alkalmazásadatok frissítése kihagyható futásidőben, de az adatmodellnek üresnek kell lennie (üres rekordok listáját tartalmazó).</span><span class="sxs-lookup"><span data-stu-id="2ce60-187">Note that the application data update can be skipped at run-time, but the data model must be empty (containing empty record list).</span></span>   
+6. <span data-ttu-id="2ce60-188">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-188">Click Designer.</span></span>
+    * <span data-ttu-id="2ce60-189">Vegye figyelembe, hogy a kimenő Intrastat-jelentésformátum alapértelmezés szerint hozzá lesz adva ehhez a modell-hozzárendeléshez adatforrásként.</span><span class="sxs-lookup"><span data-stu-id="2ce60-189">Note that the outgoing Intrastat report format is added by default as a data source for this model mapping.</span></span>  
+    * <span data-ttu-id="2ce60-190">Kösse össze a tervezett jelentés elemeit (adatforrásként jelennek meg) az adatmodell elemeivel, amelynek a szűrése a kiválasztott modell gyökéreleme alapján történik.</span><span class="sxs-lookup"><span data-stu-id="2ce60-190">Bind elements of the designed report (presented as data source) to elements of the data model, which is filtered based on the selected model’s root item.</span></span>  
+7. <span data-ttu-id="2ce60-191">A fában bontsa ki az „Archive header” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-191">In the tree, expand 'Archive header'.</span></span>
+8. <span data-ttu-id="2ce60-192">A fában bontsa ki ezt: „Archive header\Archive lines”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-192">In the tree, expand 'Archive header\Archive lines'.</span></span>
+9. <span data-ttu-id="2ce60-193">A fastruktúrában bontsa ki ezt: „format”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-193">In the tree, expand 'format'.</span></span>
+10. <span data-ttu-id="2ce60-194">A fában bontsa ki a „format\Declaration: XML Element(Declaration)”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-194">In the tree, expand 'format\Declaration: XML Element(Declaration)'.</span></span>
+11. <span data-ttu-id="2ce60-195">A fán jelölje bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-195">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+12. <span data-ttu-id="2ce60-196">A fában bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-196">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+13. <span data-ttu-id="2ce60-197">A fában bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-197">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)'.</span></span>
+14. <span data-ttu-id="2ce60-198">A fában bontsa ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-198">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)'.</span></span>
+15. <span data-ttu-id="2ce60-199">A fában válassza ki az „Archive header\Number of lines” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-199">In the tree, select 'Archive header\Number of lines'.</span></span>
+16. <span data-ttu-id="2ce60-200">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="2ce60-200">Click Edit.</span></span>
+17. <span data-ttu-id="2ce60-201">A fastruktúrában válassza ki a „List\COUNT” csomópontot.</span><span class="sxs-lookup"><span data-stu-id="2ce60-201">In the tree, select 'List\COUNT'.</span></span>
+18. <span data-ttu-id="2ce60-202">Kattintson a Függvény hozzáadása gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-202">Click Add function.</span></span>
+19. <span data-ttu-id="2ce60-203">A fastruktúrában bontsa ki ezt: „format”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-203">In the tree, expand 'format'.</span></span>
+20. <span data-ttu-id="2ce60-204">A fában bontsa ki a „format\Declaration: XML Element(Declaration)”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-204">In the tree, expand 'format\Declaration: XML Element(Declaration)'.</span></span>
+21. <span data-ttu-id="2ce60-205">A fán jelölje bontsa ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-205">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+22. <span data-ttu-id="2ce60-206">A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-206">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+23. <span data-ttu-id="2ce60-207">Kattintson az Adatforrás hozzáadása pontra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-207">Click Add data source.</span></span>
+24. <span data-ttu-id="2ce60-208">A Képlet mezőben adja meg ezt: 'COUNT(format.Declaration.Data.Item)'.</span><span class="sxs-lookup"><span data-stu-id="2ce60-208">In the Formula field, enter 'COUNT(format.Declaration.Data.Item)'.</span></span>
+    * <span data-ttu-id="2ce60-209">COUNT(format.Declaration.Data.Item)</span><span class="sxs-lookup"><span data-stu-id="2ce60-209">COUNT(format.Declaration.Data.Item)</span></span>  
+25. <span data-ttu-id="2ce60-210">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-210">Click Save.</span></span>
+26. <span data-ttu-id="2ce60-211">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="2ce60-211">Close the page.</span></span>
+27. <span data-ttu-id="2ce60-212">A fában válassza ki az „Archive header\File name” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-212">In the tree, select 'Archive header\File name'.</span></span>
+28. <span data-ttu-id="2ce60-213">A fán jelölje ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-213">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name)'.</span></span>
+29. <span data-ttu-id="2ce60-214">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-214">Click Bind.</span></span>
+30. <span data-ttu-id="2ce60-215">A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-215">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)'.</span></span>
+31. <span data-ttu-id="2ce60-216">A fában válassza ki ezt: „Archive header\Archive lines\Item number”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-216">In the tree, select 'Archive header\Archive lines\Item number'.</span></span>
+32. <span data-ttu-id="2ce60-217">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-217">Click Bind.</span></span>
+33. <span data-ttu-id="2ce60-218">A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-218">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)'.</span></span>
+34. <span data-ttu-id="2ce60-219">A fában válassza ki ezt: „Archive header\Archive lines\Amount”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-219">In the tree, select 'Archive header\Archive lines\Amount'.</span></span>
+35. <span data-ttu-id="2ce60-220">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-220">Click Bind.</span></span>
+36. <span data-ttu-id="2ce60-221">A fában jelölje ki ezt: „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id)”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-221">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id)'.</span></span>
+37. <span data-ttu-id="2ce60-222">A fában válassza ki ezt: „Archive header\Archive lines\Commodity rec id”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-222">In the tree, select 'Archive header\Archive lines\Commodity rec id'.</span></span>
+38. <span data-ttu-id="2ce60-223">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-223">Click Bind.</span></span>
+39. <span data-ttu-id="2ce60-224">A fában válassza ki ezt: „Archive header\Archive lines”.</span><span class="sxs-lookup"><span data-stu-id="2ce60-224">In the tree, select 'Archive header\Archive lines'.</span></span>
+40. <span data-ttu-id="2ce60-225">A fában válassza ki a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-225">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+41. <span data-ttu-id="2ce60-226">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-226">Click Bind.</span></span>
+42. <span data-ttu-id="2ce60-227">A fáról válassza ki a Fejléc archiválása lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-227">In the tree, select 'Archive header'.</span></span>
+43. <span data-ttu-id="2ce60-228">A fán jelölje be a „format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="2ce60-228">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+44. <span data-ttu-id="2ce60-229">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-229">Click Bind.</span></span>
+45. <span data-ttu-id="2ce60-230">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="2ce60-230">Click Save.</span></span>
+46. <span data-ttu-id="2ce60-231">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="2ce60-231">Close the page.</span></span>
+47. <span data-ttu-id="2ce60-232">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="2ce60-232">Close the page.</span></span>
+48. <span data-ttu-id="2ce60-233">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="2ce60-233">Close the page.</span></span>
 
 

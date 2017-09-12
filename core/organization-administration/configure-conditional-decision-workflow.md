@@ -15,41 +15,41 @@ ms.custom: 195703
 ms.assetid: cd5554a4-210c-4c20-a7d3-4b1563c2b5df
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c21c8e33ab3a88e1b93ca81d6f0770f1c77fe139
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: e9d5c8add546cad0446e863f64cac8f9cb603cbb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-a-conditional-decision-in-a-workflow"></a>Feltételes döntés konfigurálása munkafolyamatban
+# <a name="configure-a-conditional-decision-in-a-workflow"></a><span data-ttu-id="6286f-103">Feltételes döntés konfigurálása munkafolyamatban</span><span class="sxs-lookup"><span data-stu-id="6286f-103">Configure a conditional decision in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ezt követően a következő eljárás segítségével állítsa be egy feltételes döntés tulajdonságait.
+<span data-ttu-id="6286f-104">Ezt követően a következő eljárás segítségével állítsa be egy feltételes döntés tulajdonságait.</span><span class="sxs-lookup"><span data-stu-id="6286f-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
 
-A feltételes döntés egy olyan pont, ahol a munkafolyamat két ágra válik szét. A munkafolyamat-szerkesztő feltételes döntésének konfigurálásához kattintson a jobb gombbal a feltételes döntésre, és kattintson a **Tulajdonságok** űrlap megnyitásához a **Tulajdonságok** lehetőségre.
+<span data-ttu-id="6286f-105">A feltételes döntés egy olyan pont, ahol a munkafolyamat két ágra válik szét.</span><span class="sxs-lookup"><span data-stu-id="6286f-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="6286f-106">A munkafolyamat-szerkesztő feltételes döntésének konfigurálásához kattintson a jobb gombbal a feltételes döntésre, és kattintson a **Tulajdonságok** űrlap megnyitásához a **Tulajdonságok** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="6286f-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
 
-## <a name="name-a-decision"></a>A döntés elnevezése
-A következő lépések segítségével elnevezheti a feltételes döntést.
-1.  A bal oldali panelen kattintson az **Alapbeállítások** gombra.
-2.  Adja meg a feltételes döntés egyedi nevét a **Név** mezőben.
+## <a name="name-a-decision"></a><span data-ttu-id="6286f-107">A döntés elnevezése</span><span class="sxs-lookup"><span data-stu-id="6286f-107">Name a decision</span></span>
+<span data-ttu-id="6286f-108">A következő lépések segítségével elnevezheti a feltételes döntést.</span><span class="sxs-lookup"><span data-stu-id="6286f-108">Follow these steps to enter a name for a conditional decision.</span></span>
+1.  <span data-ttu-id="6286f-109">A bal oldali panelen kattintson az **Alapbeállítások** gombra.</span><span class="sxs-lookup"><span data-stu-id="6286f-109">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="6286f-110">Adja meg a feltételes döntés egyedi nevét a **Név** mezőben.</span><span class="sxs-lookup"><span data-stu-id="6286f-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
 
-## <a name="set-conditions"></a> Feltételek beállítása
-A rendszer eldönti, hogy mely ágat használja: a benyújtott dokumentum kiértékelésével határozza meg, hogy az megfelel-e bizonyos feltételeknek.
-1.  A bal oldali panelen kattintson az **Alapbeállítások** gombra.
-2.  Kattintson a **Feltétel hozzáadása** parancsra.
-3.  Feltétel megadása.
-4.  Ha szükséges, adjon meg további feltételeket.
-5.  Ha ellenőrizni szeretné, hogy a megadott feltételek helyesen vannak-e konfigurálva, végezze el a következő lépéseket:
-    1.  Kattintson a **Teszt** elemre a **Munkafolyamati feltétel tesztelése** űrlap megnyitásához.
-    2.  Válasszon ki egy bejegyzést a képernyő **Feltétel érvényesítése** területén.
-    3.  Kattintson a **Teszt** gombra. A rendszer értékeli a bejegyzést, annak érdekében, hogy meghatározza, hogy a meghatározott feltételeknek megfeleljen-e.
-    4.  Kattintson az **OK** vagy a **Mégse** lehetőségre a **Tulajdonságok** űrlapra történő visszalépéshez.
+## <a name="set-conditions"></a><span data-ttu-id="6286f-111"> Feltételek beállítása</span><span class="sxs-lookup"><span data-stu-id="6286f-111">Set conditions</span></span>
+<span data-ttu-id="6286f-112">A rendszer eldönti, hogy mely ágat használja: a benyújtott dokumentum kiértékelésével határozza meg, hogy az megfelel-e bizonyos feltételeknek.</span><span class="sxs-lookup"><span data-stu-id="6286f-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
+1.  <span data-ttu-id="6286f-113">A bal oldali panelen kattintson az **Alapbeállítások** gombra.</span><span class="sxs-lookup"><span data-stu-id="6286f-113">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="6286f-114">Kattintson a **Feltétel hozzáadása** parancsra.</span><span class="sxs-lookup"><span data-stu-id="6286f-114">Click **Add condition**.</span></span>
+3.  <span data-ttu-id="6286f-115">Feltétel megadása.</span><span class="sxs-lookup"><span data-stu-id="6286f-115">Enter a condition.</span></span>
+4.  <span data-ttu-id="6286f-116">Ha szükséges, adjon meg további feltételeket.</span><span class="sxs-lookup"><span data-stu-id="6286f-116">Enter additional conditions, if they are required.</span></span>
+5.  <span data-ttu-id="6286f-117">Ha ellenőrizni szeretné, hogy a megadott feltételek helyesen vannak-e konfigurálva, végezze el a következő lépéseket:</span><span class="sxs-lookup"><span data-stu-id="6286f-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
+    1.  <span data-ttu-id="6286f-118">Kattintson a **Teszt** elemre a **Munkafolyamati feltétel tesztelése** űrlap megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="6286f-118">Click **Test** to open the **Test workflow condition** form.</span></span>
+    2.  <span data-ttu-id="6286f-119">Válasszon ki egy bejegyzést a képernyő **Feltétel érvényesítése** területén.</span><span class="sxs-lookup"><span data-stu-id="6286f-119">Select a record in the **Validate condition** area of the form.</span></span>
+    3.  <span data-ttu-id="6286f-120">Kattintson a **Teszt** gombra.</span><span class="sxs-lookup"><span data-stu-id="6286f-120">Click **Test**.</span></span> <span data-ttu-id="6286f-121">A rendszer értékeli a bejegyzést, annak érdekében, hogy meghatározza, hogy a meghatározott feltételeknek megfeleljen-e.</span><span class="sxs-lookup"><span data-stu-id="6286f-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
+    4.  <span data-ttu-id="6286f-122">Kattintson az **OK** vagy a **Mégse** lehetőségre a **Tulajdonságok** űrlapra történő visszalépéshez.</span><span class="sxs-lookup"><span data-stu-id="6286f-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
 
 
 

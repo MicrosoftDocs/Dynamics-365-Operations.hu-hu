@@ -17,44 +17,44 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: d57d12f4987c25a6b4e52856fc8fd198efcc8c3c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c2423fe91d1531a326080e3a584195ea864f2e3e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-discrete-manufacturing-resource-group"></a>Elkülönített gyártási erőforráscsoport meghatározása
+# <a name="define-discrete-manufacturing-resource-group"></a><span data-ttu-id="be8f1-103">Elkülönített gyártási erőforráscsoport meghatározása</span><span class="sxs-lookup"><span data-stu-id="be8f1-103">Define discrete manufacturing resource group</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Egy erőforráscsoport üzemi erőforrások csoportja, amelyek általában megfelelnek a munkacellák fizikai elrendezésének, amelyet a termelésben a padlón lévő sárga vonalak jelölnek. Ez az eljárás bemutatja, hogyan adjon meg egy erőforráscsoportot különálló termelésben való használathoz.. Ezt a folyamatot az USMF bemutatócégen vagy saját adatai használatával is elvégezheti.
+<span data-ttu-id="be8f1-104">Egy erőforráscsoport üzemi erőforrások csoportja, amelyek általában megfelelnek a munkacellák fizikai elrendezésének, amelyet a termelésben a padlón lévő sárga vonalak jelölnek.</span><span class="sxs-lookup"><span data-stu-id="be8f1-104">A resource group is a set of operations resources that typically correspond to the physical organization of work cells, defined by yellow lines on the production shop floor.</span></span> <span data-ttu-id="be8f1-105">Ez az eljárás bemutatja, hogyan adjon meg egy erőforráscsoportot különálló termelésben való használathoz..</span><span class="sxs-lookup"><span data-stu-id="be8f1-105">This procedure shows you how to define a ressource group for use in discrete production.</span></span> <span data-ttu-id="be8f1-106">Ezt a folyamatot az USMF bemutatócégen vagy saját adatai használatával is elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="be8f1-106">You can walk through this procedure in demo data company USMF, or use your own data.</span></span>
 
-1. Ugrás az erőforráscsoportokra.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket az Erőforráscsoport mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. A Hely mezőben adjon meg vagy válasszon ki egy értéket.
-6. A Termelési egység mezőben adjon meg vagy válasszon ki egy értéket.
+1. <span data-ttu-id="be8f1-107">Ugrás az erőforráscsoportokra.</span><span class="sxs-lookup"><span data-stu-id="be8f1-107">Go to Resource groups.</span></span>
+2. <span data-ttu-id="be8f1-108">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="be8f1-108">Click New.</span></span>
+3. <span data-ttu-id="be8f1-109">Írjon be egy értéket az Erőforráscsoport mezőbe.</span><span class="sxs-lookup"><span data-stu-id="be8f1-109">In the Resource group field, type a value.</span></span>
+4. <span data-ttu-id="be8f1-110">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="be8f1-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="be8f1-111">A Hely mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="be8f1-111">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="be8f1-112">A Termelési egység mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="be8f1-112">In the Production unit field, enter or select a value.</span></span>
 
-## <a name="define-default-operational-parameters"></a>Alapértelmezett működési paraméterek meghatározása
-1. Bontsa ki a Művelet szakaszt.
-2. Adjon meg egy számot a Selejtszázalék mezőben.
-3. A Beállítási kategória mezőben adjon meg vagy válasszon ki egy értéket.
-4. A Lefutásiidő-kategória mezőben adjon meg vagy válasszon ki egy értéket.
-5. A Műveletütemezés százalék mezőjében adjon meg egy számot.
+## <a name="define-default-operational-parameters"></a><span data-ttu-id="be8f1-113">Alapértelmezett működési paraméterek meghatározása</span><span class="sxs-lookup"><span data-stu-id="be8f1-113">Define default operational parameters</span></span>
+1. <span data-ttu-id="be8f1-114">Bontsa ki a Művelet szakaszt.</span><span class="sxs-lookup"><span data-stu-id="be8f1-114">Expand the Operation section.</span></span>
+2. <span data-ttu-id="be8f1-115">Adjon meg egy számot a Selejtszázalék mezőben.</span><span class="sxs-lookup"><span data-stu-id="be8f1-115">In the Scrap percentage field, enter a number.</span></span>
+3. <span data-ttu-id="be8f1-116">A Beállítási kategória mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="be8f1-116">In the Setup category field, enter or select a value.</span></span>
+4. <span data-ttu-id="be8f1-117">A Lefutásiidő-kategória mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="be8f1-117">In the Run time category field, enter or select a value.</span></span>
+5. <span data-ttu-id="be8f1-118">A Műveletütemezés százalék mezőjében adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="be8f1-118">In the Operations scheduling percentage field, enter a number.</span></span>
 
-## <a name="define-operating-hours"></a>Működési óraszám megadása
-1. Bontsa ki a Naptárak szakaszt.
-2. Kattintson a Hozzáadás gombra.
-3. A Naptárak mezőben adjon meg vagy válasszon ki egy értéket.
+## <a name="define-operating-hours"></a><span data-ttu-id="be8f1-119">Működési óraszám megadása</span><span class="sxs-lookup"><span data-stu-id="be8f1-119">Define operating hours</span></span>
+1. <span data-ttu-id="be8f1-120">Bontsa ki a Naptárak szakaszt.</span><span class="sxs-lookup"><span data-stu-id="be8f1-120">Expand the Calendars section.</span></span>
+2. <span data-ttu-id="be8f1-121">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="be8f1-121">Click Add.</span></span>
+3. <span data-ttu-id="be8f1-122">A Naptárak mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="be8f1-122">In the Calendar field, enter or select a value.</span></span>
 
-## <a name="add-operations-resources"></a>Üzemi erőforrások hozzáadása
-1. Bontsa ki az Erőforrások szakaszt.
-2. Kattintson a Hozzáadás gombra.
-3. Az Erőforrások mezőben adjon meg vagy válasszon ki egy értéket.
-4. Kattintson a Hozzáadás gombra.
-5. Az Erőforrások mezőben adjon meg vagy válasszon ki egy értéket.
-6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+## <a name="add-operations-resources"></a><span data-ttu-id="be8f1-123">Üzemi erőforrások hozzáadása</span><span class="sxs-lookup"><span data-stu-id="be8f1-123">Add operations resources</span></span>
+1. <span data-ttu-id="be8f1-124">Bontsa ki az Erőforrások szakaszt.</span><span class="sxs-lookup"><span data-stu-id="be8f1-124">Expand the Resources section.</span></span>
+2. <span data-ttu-id="be8f1-125">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="be8f1-125">Click Add.</span></span>
+3. <span data-ttu-id="be8f1-126">Az Erőforrások mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="be8f1-126">In the Resource field, enter or select a value.</span></span>
+4. <span data-ttu-id="be8f1-127">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="be8f1-127">Click Add.</span></span>
+5. <span data-ttu-id="be8f1-128">Az Erőforrások mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="be8f1-128">In the Resource field, enter or select a value.</span></span>
+6. <span data-ttu-id="be8f1-129">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="be8f1-129">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="be8f1-130">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="be8f1-130">In the list, click the link in the selected row.</span></span>
 
 

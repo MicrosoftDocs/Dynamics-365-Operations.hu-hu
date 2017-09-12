@@ -17,50 +17,50 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 0ccc4d009422b148e46bc6d4772435a18a6dc9e8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7fb52291f15bfe9063b2a9d4a572dcdc44286402
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="validate-a-production-flow-and-version"></a>Termelési folyamat és verzió érvényesítése
+# <a name="validate-a-production-flow-and-version"></a><span data-ttu-id="d4be0-103">Termelési folyamat és verzió érvényesítése</span><span class="sxs-lookup"><span data-stu-id="d4be0-103">Validate a production flow and version</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogyan hozhat létre új termelési folyamatot és első verziót lean manufacturing esetén. Előfeltételek: Ehhez az eljáráshoz meg kell adni a Lean manufacturingre vonatkozó termelési paramétereket és a mértékegységeket. Meg kell adnia egy Érték-előállítási folyamatot és egy Termelési csoportot is. További információt a termelési folyamatokról és a lean manufacturing tevékenységeiről a Lean manufacturing témájáról szóló tanulmányokban talál. Ez az eljárás az USMF jogi személyre utal a bemutatóadatokban. Ugyanakkor, ha az adott jogi személy lean manufacturingre van konfigurálva, akkor más jogi személy is használható.
+<span data-ttu-id="d4be0-104">Ez az eljárás bemutatja, hogyan hozhat létre új termelési folyamatot és első verziót lean manufacturing esetén.</span><span class="sxs-lookup"><span data-stu-id="d4be0-104">This procedure shows how to create a new production flow and a first version for lean manufacturing.</span></span> <span data-ttu-id="d4be0-105">Előfeltételek: Ehhez az eljáráshoz meg kell adni a Lean manufacturingre vonatkozó termelési paramétereket és a mértékegységeket.</span><span class="sxs-lookup"><span data-stu-id="d4be0-105">Prerequisites: The production parameters for Lean manufacturing and the units of measure for class time must be defined.</span></span> <span data-ttu-id="d4be0-106">Meg kell adnia egy Érték-előállítási folyamatot és egy Termelési csoportot is.</span><span class="sxs-lookup"><span data-stu-id="d4be0-106">You need to define a Value stream and a Production group.</span></span> <span data-ttu-id="d4be0-107">További információt a termelési folyamatokról és a lean manufacturing tevékenységeiről a Lean manufacturing témájáról szóló tanulmányokban talál.</span><span class="sxs-lookup"><span data-stu-id="d4be0-107">Refer to the white papers on Lean manufacturing to familiarize yourself with the concepts of production flows and activities.</span></span> <span data-ttu-id="d4be0-108">Ez az eljárás az USMF jogi személyre utal a bemutatóadatokban.</span><span class="sxs-lookup"><span data-stu-id="d4be0-108">This procedure refers to the legal entity USMF in demo data.</span></span> <span data-ttu-id="d4be0-109">Ugyanakkor, ha az adott jogi személy lean manufacturingre van konfigurálva, akkor más jogi személy is használható.</span><span class="sxs-lookup"><span data-stu-id="d4be0-109">However, assuming that the legal entity is configured for Lean manufacturing, other legal entities can be used.</span></span>
 
 
-## <a name="create-a-production-flow"></a>Termelési folyamat létrehozása
-1. Ugrás a Gyártásvezérléshez > Beállítás > Lean típusú termelési folyamat > Termelési folyamatok lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Név mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * Az érték-előállítási folyamat egy olyan üzemi egység, amely az érték-előállítási folyamat minden tevékenységére és folyamatára kiterjed.   Ebben a szakaszban az üzemi egységeknek csak egy jogi személye lehet, és nincs további funkciójuk.  
-7. A Gyártási csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-8. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-    * A termelési csoportokkal meghatározhatja a termelési folyamat anyagát, munkáját és a befejezetlen termelés fiókjait. A termelési folyamat könyvelési környezethez való társításához ki kell választani egy termelési csoportot.  
-9. Kattintson a Mentés gombra.
+## <a name="create-a-production-flow"></a><span data-ttu-id="d4be0-110">Termelési folyamat létrehozása</span><span class="sxs-lookup"><span data-stu-id="d4be0-110">Create a production flow</span></span>
+1. <span data-ttu-id="d4be0-111">Ugrás a Gyártásvezérléshez > Beállítás > Lean típusú termelési folyamat > Termelési folyamatok lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d4be0-111">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="d4be0-112">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="d4be0-112">Click New.</span></span>
+3. <span data-ttu-id="d4be0-113">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="d4be0-113">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="d4be0-114">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="d4be0-114">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="d4be0-115">A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d4be0-115">In the Name field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="d4be0-116">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="d4be0-116">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="d4be0-117">Az érték-előállítási folyamat egy olyan üzemi egység, amely az érték-előállítási folyamat minden tevékenységére és folyamatára kiterjed.</span><span class="sxs-lookup"><span data-stu-id="d4be0-117">A value stream is an operating unit that spans over all activities and flows of the value stream.</span></span>   <span data-ttu-id="d4be0-118">Ebben a szakaszban az üzemi egységeknek csak egy jogi személye lehet, és nincs további funkciójuk.</span><span class="sxs-lookup"><span data-stu-id="d4be0-118">At this stage, operating units are limited to a legal entity and have no further functionality.</span></span>  
+7. <span data-ttu-id="d4be0-119">A Gyártási csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="d4be0-119">In the Production group field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="d4be0-120">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="d4be0-120">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="d4be0-121">A termelési csoportokkal meghatározhatja a termelési folyamat anyagát, munkáját és a befejezetlen termelés fiókjait.</span><span class="sxs-lookup"><span data-stu-id="d4be0-121">Production groups allow the definition of material, labor, and WIP accounts for a production process.</span></span> <span data-ttu-id="d4be0-122">A termelési folyamat könyvelési környezethez való társításához ki kell választani egy termelési csoportot.</span><span class="sxs-lookup"><span data-stu-id="d4be0-122">To associate the accounting context to a production flow, a production group must be selected.</span></span>  
+9. <span data-ttu-id="d4be0-123">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="d4be0-123">Click Save.</span></span>
 
-## <a name="create-a-production-flow-version"></a>Termelési folyamat verziójának létrehozása
-1. Kattintson a Hozzáadás gombra.
-2. Az Lejárati dátum mezőben adjon meg egy dátumot és időpontot.
-    * A verzió lejárati dátumát bármikor frissítheti, akár aktív verziók esetén is. Egy verzió kivezetésének tervezéséhez használja a verzió lejáratát.  
-3. Kattintson az OK gombra.
-4. A listában jelölje meg a kiválasztott sort.
-5. Írjon be egy értéket a Mértékegység mezőbe.
-6. Válassza ki a taktegységet.
-7. Az Átlagos taktidő mezőben adjon meg egy számot.
-    * A termelésifolyamat-verzió taktellenőrzéshez adjon meg egy célzott átlagos taktidőt.   A takt a mennyiség egy adott időszakra vonatkozóan.  Ebben a példában a taktidő 0,2 óra/10 darab. 8 órás munkaidővel ez 400 darabos napi termelési kapacitásnak felel meg.  
-8. Adjon meg egy számot a Mennyiség/ciklus mezőben.
-9. Bontsa ki vagy csukja össze a Verzióadatok szakaszt.
-10. A Minimum taktidő mezőben adjon meg egy számot.
-    * A minimális taktidő kisebb vagy egyenlő lehet az átlagos taktidővel.  
-11. A Maximum taktidő mezőben adjon meg egy számot.
-    * A maximális taktidő nagyobb vagy egyenlő lehet az átlagos taktidővel.  
-12. Adja meg az Időszak a tényleges ciklusidőhöz napjainak a számát
-    * A tényleges ciklusidő időszaka a feladatok által összesített napok száma a tényleges perctől visszafelé, a tényleges ciklusidő kiszámításához. Az érték bármikor módosítható, és azt csak a tényleges ciklusidők kiszámításához használjuk.  
-13. Kattintson a Mentés gombra.
+## <a name="create-a-production-flow-version"></a><span data-ttu-id="d4be0-124">Termelési folyamat verziójának létrehozása</span><span class="sxs-lookup"><span data-stu-id="d4be0-124">Create a production flow version</span></span>
+1. <span data-ttu-id="d4be0-125">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="d4be0-125">Click Add.</span></span>
+2. <span data-ttu-id="d4be0-126">Az Lejárati dátum mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="d4be0-126">In the Expiration date field, enter a date and time.</span></span>
+    * <span data-ttu-id="d4be0-127">A verzió lejárati dátumát bármikor frissítheti, akár aktív verziók esetén is.</span><span class="sxs-lookup"><span data-stu-id="d4be0-127">You can update the Expiration date of the version at any given time, even for active versions.</span></span> <span data-ttu-id="d4be0-128">Egy verzió kivezetésének tervezéséhez használja a verzió lejáratát.</span><span class="sxs-lookup"><span data-stu-id="d4be0-128">Use the expiration of the version to plan for a phase out of a version.</span></span>  
+3. <span data-ttu-id="d4be0-129">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="d4be0-129">Click OK.</span></span>
+4. <span data-ttu-id="d4be0-130">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="d4be0-130">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="d4be0-131">Írjon be egy értéket a Mértékegység mezőbe.</span><span class="sxs-lookup"><span data-stu-id="d4be0-131">In the Unit field, type a value.</span></span>
+6. <span data-ttu-id="d4be0-132">Válassza ki a taktegységet.</span><span class="sxs-lookup"><span data-stu-id="d4be0-132">Select the Takt unit.</span></span>
+7. <span data-ttu-id="d4be0-133">Az Átlagos taktidő mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="d4be0-133">In the Average takt time field, enter a number.</span></span>
+    * <span data-ttu-id="d4be0-134">A termelésifolyamat-verzió taktellenőrzéshez adjon meg egy célzott átlagos taktidőt.</span><span class="sxs-lookup"><span data-stu-id="d4be0-134">For the takt control of the production flow version, define a targeted average takt time.</span></span>   <span data-ttu-id="d4be0-135">A takt a mennyiség egy adott időszakra vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="d4be0-135">The takt is defined as quantity  per time period.</span></span>  <span data-ttu-id="d4be0-136">Ebben a példában a taktidő 0,2 óra/10 darab.</span><span class="sxs-lookup"><span data-stu-id="d4be0-136">In the given example, the takt time is 0.2 hours per 10 pieces.</span></span> <span data-ttu-id="d4be0-137">8 órás munkaidővel ez 400 darabos napi termelési kapacitásnak felel meg.</span><span class="sxs-lookup"><span data-stu-id="d4be0-137">For a working time of 8 hours, this corresponds to a daily throughput capacity of 400 pieces.</span></span>  
+8. <span data-ttu-id="d4be0-138">Adjon meg egy számot a Mennyiség/ciklus mezőben.</span><span class="sxs-lookup"><span data-stu-id="d4be0-138">In the Quantity per cycle field, enter a number.</span></span>
+9. <span data-ttu-id="d4be0-139">Bontsa ki vagy csukja össze a Verzióadatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="d4be0-139">Expand or collapse the Version details section.</span></span>
+10. <span data-ttu-id="d4be0-140">A Minimum taktidő mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="d4be0-140">In the Minimum takt time field, enter a number.</span></span>
+    * <span data-ttu-id="d4be0-141">A minimális taktidő kisebb vagy egyenlő lehet az átlagos taktidővel.</span><span class="sxs-lookup"><span data-stu-id="d4be0-141">The minimum takt time must be less than or equal to the average takt time.</span></span>  
+11. <span data-ttu-id="d4be0-142">A Maximum taktidő mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="d4be0-142">In the Maximum takt time field, enter a number.</span></span>
+    * <span data-ttu-id="d4be0-143">A maximális taktidő nagyobb vagy egyenlő lehet az átlagos taktidővel.</span><span class="sxs-lookup"><span data-stu-id="d4be0-143">The maximum takt time must be higher than or equal to the Average takt time.</span></span>  
+12. <span data-ttu-id="d4be0-144">Adja meg az Időszak a tényleges ciklusidőhöz napjainak a számát</span><span class="sxs-lookup"><span data-stu-id="d4be0-144">Enter a number of days in the Period for actual cycle time</span></span>
+    * <span data-ttu-id="d4be0-145">A tényleges ciklusidő időszaka a feladatok által összesített napok száma a tényleges perctől visszafelé, a tényleges ciklusidő kiszámításához.</span><span class="sxs-lookup"><span data-stu-id="d4be0-145">The period for actual cycle time is the number of days that jobs are aggregated from the actual minute backwards to calculate the actual cycle time.</span></span> <span data-ttu-id="d4be0-146">Az érték bármikor módosítható, és azt csak a tényleges ciklusidők kiszámításához használjuk.</span><span class="sxs-lookup"><span data-stu-id="d4be0-146">The value can be changed at any time and is only used for the calculation of the actual cycle times.</span></span>  
+13. <span data-ttu-id="d4be0-147">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="d4be0-147">Click Save.</span></span>
 
 

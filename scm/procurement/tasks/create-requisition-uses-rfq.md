@@ -16,91 +16,91 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 14eed7982041b7af7dad5453b10f07f063ba1855
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d97ccd15031b2f7398486eee4a716ecef5e9dafd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-requisition-that-uses-an-rfq"></a>Olyan igénylés létrehozása, amely ajánlatkérést használ
+# <a name="create-a-requisition-that-uses-an-rfq"></a><span data-ttu-id="a17ed-103">Olyan igénylés létrehozása, amely ajánlatkérést használ</span><span class="sxs-lookup"><span data-stu-id="a17ed-103">Create a requisition that uses an RFQ</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az útmutató bemutatja, hogy hogyan lehet egy ajánlatkérési folyamat árral és a szállítóval kapcsolatos információit a beszerzési igényléshez hozzáadni. A példában szereplő útmutatót az USMF bemutatócég használhatja, és rendszergazdaként kell bejelentkeznie ahhoz, hogy végrehajthassa az összes lépést. Általában a beszerzési szakemberek hajtják végre a példában szereplő útmutatót.
+<span data-ttu-id="a17ed-104">Ez az útmutató bemutatja, hogy hogyan lehet egy ajánlatkérési folyamat árral és a szállítóval kapcsolatos információit a beszerzési igényléshez hozzáadni.</span><span class="sxs-lookup"><span data-stu-id="a17ed-104">This guide shows how to add price and vendor information to a purchase requisition from an RFQ process.</span></span> <span data-ttu-id="a17ed-105">A példában szereplő útmutatót az USMF bemutatócég használhatja, és rendszergazdaként kell bejelentkeznie ahhoz, hogy végrehajthassa az összes lépést.</span><span class="sxs-lookup"><span data-stu-id="a17ed-105">The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps.</span></span> <span data-ttu-id="a17ed-106">Általában a beszerzési szakemberek hajtják végre a példában szereplő útmutatót.</span><span class="sxs-lookup"><span data-stu-id="a17ed-106">The tasks in this guide would typically be done by procurement professionals.</span></span>
 
 
-## <a name="create-a-requisition"></a>Igénylés létrehozása
-1. Ugrás a Beszerzés és forrás > Beszerzési igénylések > Beszerzési igénylések általam létrehozva elemre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Név mezőbe.
-4. Adja meg a dátumot az Igényelt dátum mezőben.
-5. Adja meg a dátumot a Könyvelés dátuma mezőben.
-6. Kattintson az OK gombra.
-7. A Ok mezőben adjon meg vagy válasszon ki egy értéket.
-8. Kattintson az Új sor hozzáadása lehetőségre.
-9. Válasszon ki egy kategóriát a Beszerzési kategória mezőben a fa struktúrában, és kattintson az OK gombra.
-10. Írjon be egy értéket a Terméknév mezőbe.
-11. Adjon meg egy számot a Mennyiség mezőben.
-12. Az Egység mezőben adjon meg vagy válasszon ki egy értéket.
-13. Kattintson a Mentés gombra.
-14. A Munkafolyamat gombra kattintva megnyithatja a legördülő párbeszédablakot.
-15. Kattintson a Küldés hivatkozásra.
-16. Zárja be a lapot.
-17. Kattintson a Küldés hivatkozásra.
+## <a name="create-a-requisition"></a><span data-ttu-id="a17ed-107">Igénylés létrehozása</span><span class="sxs-lookup"><span data-stu-id="a17ed-107">Create a requisition</span></span>
+1. <span data-ttu-id="a17ed-108">Ugrás a Beszerzés és forrás > Beszerzési igénylések > Beszerzési igénylések általam létrehozva elemre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-108">Go to Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me.</span></span>
+2. <span data-ttu-id="a17ed-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-109">Click New.</span></span>
+3. <span data-ttu-id="a17ed-110">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="a17ed-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="a17ed-111">Adja meg a dátumot az Igényelt dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="a17ed-111">In the Requested date field, enter a date.</span></span>
+5. <span data-ttu-id="a17ed-112">Adja meg a dátumot a Könyvelés dátuma mezőben.</span><span class="sxs-lookup"><span data-stu-id="a17ed-112">In the Accounting date field, enter a date.</span></span>
+6. <span data-ttu-id="a17ed-113">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-113">Click OK.</span></span>
+7. <span data-ttu-id="a17ed-114">A Ok mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a17ed-114">In the Reason field, enter or select a value.</span></span>
+8. <span data-ttu-id="a17ed-115">Kattintson az Új sor hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-115">Click Add line.</span></span>
+9. <span data-ttu-id="a17ed-116">Válasszon ki egy kategóriát a Beszerzési kategória mezőben a fa struktúrában, és kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-116">In the Procurement category field, select a category in the tree, and then click OK.</span></span>
+10. <span data-ttu-id="a17ed-117">Írjon be egy értéket a Terméknév mezőbe.</span><span class="sxs-lookup"><span data-stu-id="a17ed-117">In the Product name field, type a value.</span></span>
+11. <span data-ttu-id="a17ed-118">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="a17ed-118">In the Quantity field, enter a number.</span></span>
+12. <span data-ttu-id="a17ed-119">Az Egység mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a17ed-119">In the Unit field, enter or select a value.</span></span>
+13. <span data-ttu-id="a17ed-120">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-120">Click Save.</span></span>
+14. <span data-ttu-id="a17ed-121">A Munkafolyamat gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="a17ed-121">Click Workflow to open the drop dialog.</span></span>
+15. <span data-ttu-id="a17ed-122">Kattintson a Küldés hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-122">Click Submit.</span></span>
+16. <span data-ttu-id="a17ed-123">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="a17ed-123">Close the page.</span></span>
+17. <span data-ttu-id="a17ed-124">Kattintson a Küldés hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-124">Click Submit.</span></span>
 
-## <a name="reassign-a-workflow-task"></a>Munkafolyamat-feladat ismételt hozzárendelése
-    * A következő feladat egy Ajánlatkérés létrehozása annak érdekében, hogy ajánlatot kapjon a szállítótól a termékre. Az USMF bemutató adatokban az igénylési munkafolyamat egy olyan szabály szerint van beállítva, hogy ha a szállító nincs bejelölve, vagy az egységár értéke 0 soronként, akkor a rendszer a feladatot hozzárendeli egy adott dolgozóhoz, azért, hogy az létrehozzon egy Ajánlatkérést. Az útmutató folytatásához a feladatot ismét hozzá kell rendelni egy másik felhasználóhoz (saját magához). Csak úgy teheti meg ezt, ha Rendszergazdaként jelentkezik be.  
-1. A Munkafolyamat gombra kattintva megnyithatja a legördülő párbeszédablakot.
-2. Kattintson az Előzmények megtekintése lehetőségre.
-3. Frissítse a lapot..
-4. Bontsa ki a Nyomkövetési részletek szakaszt.
-5. Válassza ki a „Sor munkafolyamata aktiválva” értékkel kezdődő sort a fa struktúrában.
-6. Kattintson a Munkafolyamat részleteinek megtekintése lehetőségre.
-7. Bontsa ki a Munkatételek szakaszt.
-8. Kattintson az Hozzárendelés ismét lehetőségre.
-9. Válassza ki a Rendszergazdát a Felhasználó mezőben.
-10. Kattintson az Hozzárendelés ismét lehetőségre.
-11. Zárja be a lapot.
-12. Zárja be a lapot.
+## <a name="reassign-a-workflow-task"></a><span data-ttu-id="a17ed-125">Munkafolyamat-feladat ismételt hozzárendelése</span><span class="sxs-lookup"><span data-stu-id="a17ed-125">Reassign a workflow task</span></span>
+    * <span data-ttu-id="a17ed-126">A következő feladat egy Ajánlatkérés létrehozása annak érdekében, hogy ajánlatot kapjon a szállítótól a termékre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-126">The next task is to create an RFQ to get bids from vendors for the product.</span></span> <span data-ttu-id="a17ed-127">Az USMF bemutató adatokban az igénylési munkafolyamat egy olyan szabály szerint van beállítva, hogy ha a szállító nincs bejelölve, vagy az egységár értéke 0 soronként, akkor a rendszer a feladatot hozzárendeli egy adott dolgozóhoz, azért, hogy az létrehozzon egy Ajánlatkérést.</span><span class="sxs-lookup"><span data-stu-id="a17ed-127">In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ.</span></span> <span data-ttu-id="a17ed-128">Az útmutató folytatásához a feladatot ismét hozzá kell rendelni egy másik felhasználóhoz (saját magához).</span><span class="sxs-lookup"><span data-stu-id="a17ed-128">To continue with this guide, you need to re-assign that task to another user (yourself).</span></span> <span data-ttu-id="a17ed-129">Csak úgy teheti meg ezt, ha Rendszergazdaként jelentkezik be.</span><span class="sxs-lookup"><span data-stu-id="a17ed-129">You can only do this if you are logged in as an Admin.</span></span>  
+1. <span data-ttu-id="a17ed-130">A Munkafolyamat gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="a17ed-130">Click Workflow to open the drop dialog.</span></span>
+2. <span data-ttu-id="a17ed-131">Kattintson az Előzmények megtekintése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-131">Click View history.</span></span>
+3. <span data-ttu-id="a17ed-132">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="a17ed-132">Refresh the page.</span></span>
+4. <span data-ttu-id="a17ed-133">Bontsa ki a Nyomkövetési részletek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="a17ed-133">Expand the Tracking details section.</span></span>
+5. <span data-ttu-id="a17ed-134">Válassza ki a „Sor munkafolyamata aktiválva” értékkel kezdődő sort a fa struktúrában.</span><span class="sxs-lookup"><span data-stu-id="a17ed-134">In the tree, select 'the line that starts with “Line workflow activated on”'.</span></span>
+6. <span data-ttu-id="a17ed-135">Kattintson a Munkafolyamat részleteinek megtekintése lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-135">Click View workflow details.</span></span>
+7. <span data-ttu-id="a17ed-136">Bontsa ki a Munkatételek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="a17ed-136">Expand the Work items section.</span></span>
+8. <span data-ttu-id="a17ed-137">Kattintson az Hozzárendelés ismét lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-137">Click Reassign.</span></span>
+9. <span data-ttu-id="a17ed-138">Válassza ki a Rendszergazdát a Felhasználó mezőben.</span><span class="sxs-lookup"><span data-stu-id="a17ed-138">In the User field, select Admin.</span></span>
+10. <span data-ttu-id="a17ed-139">Kattintson az Hozzárendelés ismét lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-139">Click Reassign.</span></span>
+11. <span data-ttu-id="a17ed-140">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="a17ed-140">Close the page.</span></span>
+12. <span data-ttu-id="a17ed-141">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="a17ed-141">Close the page.</span></span>
 
-## <a name="create-an-rfq"></a>Ajánlatkérés létrehozása
-1. Frissítse a lapot..
-2. Kattintson az Ajánlatkérés lehetőségre.
-3. Válassza ki az USMF lehetőséget a Vevő jogi személy mezőben.
-    * Ugyanazt a jogi személyt kell kiválasztania, mint aki az igénylés sorában szerepel.  
-4. A listában jelölje meg a kiválasztott sort.
-    * Ha a beszerzési igénylésben több sorral rendelkezett, válassza ki az összes olyan sort, amelyet hozzá kíván adni az ajánlatkéréshez.  
-5. Kattintson az OK gombra.
-6. Frissítse a lapot..
-7. Nyissa meg az Adatterület lehetőséget, majd bontsa ki a kapcsolódó dokumentumok szakaszt.
-    * Előfordulhat, hogy már megnyitotta az Adatterület lehetőséget. Keresse meg a nyíllal ellátott ikont, a Sorok/Fejléc váltógombok jobb oldalán. Ha jobbra mutat a nyíl, az Adatterület már meg van nyitva. Ha balra mutat a nyíl, kattintson rá, az Adatterület megnyitásához.  
-8. Kattintson az Ajánlatkérés mezőben szereplő hivatkozásra az újonnan létrehozott Ajánlatkérés megnyitásához.
-9. Kattintson a Fejléc gombra.
-10. Kattintson a Hozzáadás gombra.
-11. A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.
-12. Kattintson a Hozzáadás gombra.
-13. A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.
-14. Kattintson a Küldés gombra.
-15. Kattintson az OK gombra.
-16. Kattintson a Válasz beírása gombra.
-17. A Művelet panelen kattintson a Válasz elemre.
-18. Kattintson az Adatok másolása a válaszba elemre.
-    * Ez olyan adatokat másol a válaszhoz az ajánlatkérésből, mint például a mennyiség vagy a dátumok.  
-19. Adjon meg egy számot az Egységár mezőben.
-    * Ez a szállítótól kapott ár. További információkat is meg kell adnia a szállítóról.  
-20. Kattintson az Elfogadás lehetőségre.
-21. Kattintson az OK gombra.
+## <a name="create-an-rfq"></a><span data-ttu-id="a17ed-142">Ajánlatkérés létrehozása</span><span class="sxs-lookup"><span data-stu-id="a17ed-142">Create an RFQ</span></span>
+1. <span data-ttu-id="a17ed-143">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="a17ed-143">Refresh the page.</span></span>
+2. <span data-ttu-id="a17ed-144">Kattintson az Ajánlatkérés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-144">Click Request for quotation.</span></span>
+3. <span data-ttu-id="a17ed-145">Válassza ki az USMF lehetőséget a Vevő jogi személy mezőben.</span><span class="sxs-lookup"><span data-stu-id="a17ed-145">In the Buying legal entity field, select USMF.</span></span>
+    * <span data-ttu-id="a17ed-146">Ugyanazt a jogi személyt kell kiválasztania, mint aki az igénylés sorában szerepel.</span><span class="sxs-lookup"><span data-stu-id="a17ed-146">You must select the same legal entity that’s on the requisition line.</span></span>  
+4. <span data-ttu-id="a17ed-147">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="a17ed-147">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="a17ed-148">Ha a beszerzési igénylésben több sorral rendelkezett, válassza ki az összes olyan sort, amelyet hozzá kíván adni az ajánlatkéréshez.</span><span class="sxs-lookup"><span data-stu-id="a17ed-148">If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.</span></span>  
+5. <span data-ttu-id="a17ed-149">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-149">Click OK.</span></span>
+6. <span data-ttu-id="a17ed-150">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="a17ed-150">Refresh the page.</span></span>
+7. <span data-ttu-id="a17ed-151">Nyissa meg az Adatterület lehetőséget, majd bontsa ki a kapcsolódó dokumentumok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="a17ed-151">Open the FactBox and then expand the Related documents section.</span></span>
+    * <span data-ttu-id="a17ed-152">Előfordulhat, hogy már megnyitotta az Adatterület lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="a17ed-152">You may already have the FactBox open.</span></span> <span data-ttu-id="a17ed-153">Keresse meg a nyíllal ellátott ikont, a Sorok/Fejléc váltógombok jobb oldalán.</span><span class="sxs-lookup"><span data-stu-id="a17ed-153">Look for the icon with an arrow on it, to the right of the Lines/Header toggle buttons.</span></span> <span data-ttu-id="a17ed-154">Ha jobbra mutat a nyíl, az Adatterület már meg van nyitva.</span><span class="sxs-lookup"><span data-stu-id="a17ed-154">If the arrow is pointing to the right, the FactBox is already open.</span></span> <span data-ttu-id="a17ed-155">Ha balra mutat a nyíl, kattintson rá, az Adatterület megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="a17ed-155">If the arrow points to the left, click it to open the FactBox.</span></span>  
+8. <span data-ttu-id="a17ed-156">Kattintson az Ajánlatkérés mezőben szereplő hivatkozásra az újonnan létrehozott Ajánlatkérés megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="a17ed-156">Click the link in the Request for quotation field to open the RFQ that was just created.</span></span>
+9. <span data-ttu-id="a17ed-157">Kattintson a Fejléc gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-157">Click Header.</span></span>
+10. <span data-ttu-id="a17ed-158">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-158">Click Add.</span></span>
+11. <span data-ttu-id="a17ed-159">A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a17ed-159">In the Vendor account field, enter or select a value.</span></span>
+12. <span data-ttu-id="a17ed-160">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-160">Click Add.</span></span>
+13. <span data-ttu-id="a17ed-161">A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="a17ed-161">In the Vendor account field, enter or select a value.</span></span>
+14. <span data-ttu-id="a17ed-162">Kattintson a Küldés gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-162">Click Send.</span></span>
+15. <span data-ttu-id="a17ed-163">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-163">Click OK.</span></span>
+16. <span data-ttu-id="a17ed-164">Kattintson a Válasz beírása gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-164">Click Enter reply.</span></span>
+17. <span data-ttu-id="a17ed-165">A Művelet panelen kattintson a Válasz elemre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-165">On the Action Pane, click Reply.</span></span>
+18. <span data-ttu-id="a17ed-166">Kattintson az Adatok másolása a válaszba elemre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-166">Click Copy data to reply.</span></span>
+    * <span data-ttu-id="a17ed-167">Ez olyan adatokat másol a válaszhoz az ajánlatkérésből, mint például a mennyiség vagy a dátumok.</span><span class="sxs-lookup"><span data-stu-id="a17ed-167">This copies data, such as the quantity and dates, from the RFQ to the reply .</span></span>  
+19. <span data-ttu-id="a17ed-168">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="a17ed-168">In the Unit price field, enter a number.</span></span>
+    * <span data-ttu-id="a17ed-169">Ez a szállítótól kapott ár.</span><span class="sxs-lookup"><span data-stu-id="a17ed-169">This is the price that you’ve received from the vendor.</span></span> <span data-ttu-id="a17ed-170">További információkat is meg kell adnia a szállítóról.</span><span class="sxs-lookup"><span data-stu-id="a17ed-170">You might also want to enter additional information from the vendor.</span></span>  
+20. <span data-ttu-id="a17ed-171">Kattintson az Elfogadás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-171">Click Accept.</span></span>
+21. <span data-ttu-id="a17ed-172">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-172">Click OK.</span></span>
 
-## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a>Győződjön meg arról, hogy átkerült az ár és a szállító az igényléshez.
-1. Zárja be a lapot.
-2. Kattintson a Sorok pontra.
-3. Kattintson a Kapcsolódó információ lehetőségre.
-4. Kattintson a Beszerzési igénylés lehetőségre.
-5. Válassza ki azt a sort, amelyet a rendszer átvitt az Ajánlatkéréshez.
-    * Győződjön meg arról, hogy átmásolták az árat és a szállítót az igényléshez.  
-6. A Munkafolyamat gombra kattintva megnyithatja a legördülő párbeszédablakot.
-7. Kattintson a Befejezés gombra.
-8. Zárja be a lapot.
-9. Kattintson a Befejezés gombra.
+## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a><span data-ttu-id="a17ed-173">Győződjön meg arról, hogy átkerült az ár és a szállító az igényléshez.</span><span class="sxs-lookup"><span data-stu-id="a17ed-173">Verify that vendor and price have been transferred to the requisition</span></span>
+1. <span data-ttu-id="a17ed-174">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="a17ed-174">Close the page.</span></span>
+2. <span data-ttu-id="a17ed-175">Kattintson a Sorok pontra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-175">Click Lines.</span></span>
+3. <span data-ttu-id="a17ed-176">Kattintson a Kapcsolódó információ lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-176">Click Related information.</span></span>
+4. <span data-ttu-id="a17ed-177">Kattintson a Beszerzési igénylés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="a17ed-177">Click Purchase requisition.</span></span>
+5. <span data-ttu-id="a17ed-178">Válassza ki azt a sort, amelyet a rendszer átvitt az Ajánlatkéréshez.</span><span class="sxs-lookup"><span data-stu-id="a17ed-178">Select the line that was transferred to the RFQ.</span></span>
+    * <span data-ttu-id="a17ed-179">Győződjön meg arról, hogy átmásolták az árat és a szállítót az igényléshez.</span><span class="sxs-lookup"><span data-stu-id="a17ed-179">Verify that the price and vendor have been copied to the requisition.</span></span>  
+6. <span data-ttu-id="a17ed-180">A Munkafolyamat gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="a17ed-180">Click Workflow to open the drop dialog.</span></span>
+7. <span data-ttu-id="a17ed-181">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-181">Click Complete.</span></span>
+8. <span data-ttu-id="a17ed-182">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="a17ed-182">Close the page.</span></span>
+9. <span data-ttu-id="a17ed-183">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="a17ed-183">Click Complete.</span></span>
 
 

@@ -17,60 +17,60 @@ ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1045ecbf7080f12bc60336609180173544e4e0eb
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 8df830b54d578ed9be4f34c8f52986aca16dc5dc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="cost-entries"></a>Költségbejegyzések
+# <a name="cost-entries"></a><span data-ttu-id="a39a9-104">Költségbejegyzések</span><span class="sxs-lookup"><span data-stu-id="a39a9-104">Cost entries</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk tájékoztat a költségbejegyzésekről és a létrehozásuk idejéről. Egy költségbejegyzés egy olyan rekord, amely feljegyzi egy adott esemény költségét és mennyiségét.
+<span data-ttu-id="a39a9-105">Ez a cikk tájékoztat a költségbejegyzésekről és a létrehozásuk idejéről.</span><span class="sxs-lookup"><span data-stu-id="a39a9-105">This article provides information about cost entries and when they are created.</span></span> <span data-ttu-id="a39a9-106">Egy költségbejegyzés egy olyan rekord, amely feljegyzi egy adott esemény költségét és mennyiségét.</span><span class="sxs-lookup"><span data-stu-id="a39a9-106">A cost entry is a record that registers the quantity and cost of a given event.</span></span>
 
-A költségbejegyzések olyan készlettranzakciók aggregációja, amelyek aktív pénzügyi készletdimenziókon lettek rögzítve.
+<span data-ttu-id="a39a9-107">A költségbejegyzések olyan készlettranzakciók aggregációja, amelyek aktív pénzügyi készletdimenziókon lettek rögzítve.</span><span class="sxs-lookup"><span data-stu-id="a39a9-107">Cost entries are aggregations of inventory transactions that are recorded on active financial inventory dimensions.</span></span>
 
-## <a name="examples"></a>Példák
-### <a name="example-1-no-cost-entries-are-created"></a>1. példa: Nincsenek költségbejegyzések létrehozva
+## <a name="examples"></a><span data-ttu-id="a39a9-108">Példák</span><span class="sxs-lookup"><span data-stu-id="a39a9-108">Examples</span></span>
+### <a name="example-1-no-cost-entries-are-created"></a><span data-ttu-id="a39a9-109">1. példa: Nincsenek költségbejegyzések létrehozva</span><span class="sxs-lookup"><span data-stu-id="a39a9-109">Example 1: No cost entries are created</span></span>
 
-Egy átmozgatási naplóesemény regisztrálásra kerül. Az esemény áthelyezi az A cikk egyik részét A helyről B helyre. A helykészlet dimenziója nem képezi a költségobjektum részét. Emiatt az esemény két készlettranzakciót hoz létre, de nem költségtételeket nem jön létre.
+<span data-ttu-id="a39a9-110">Egy átmozgatási naplóesemény regisztrálásra kerül.</span><span class="sxs-lookup"><span data-stu-id="a39a9-110">A transfer journal event is registered.</span></span> <span data-ttu-id="a39a9-111">Az esemény áthelyezi az A cikk egyik részét A helyről B helyre. A helykészlet dimenziója nem képezi a költségobjektum részét.</span><span class="sxs-lookup"><span data-stu-id="a39a9-111">The event transfers one piece of item A from location A to location B. The Location inventory dimension isn't considered part of the cost object.</span></span> <span data-ttu-id="a39a9-112">Emiatt az esemény két készlettranzakciót hoz létre, de nem költségtételeket nem jön létre.</span><span class="sxs-lookup"><span data-stu-id="a39a9-112">Therefore, the event creates two inventory transactions and no cost entries.</span></span>
 
-### <a name="example-2-cost-entries-are-created"></a>2. példa: Költségbejegyzések létrehozva
+### <a name="example-2-cost-entries-are-created"></a><span data-ttu-id="a39a9-113">2. példa: Költségbejegyzések létrehozva</span><span class="sxs-lookup"><span data-stu-id="a39a9-113">Example 2: Cost entries are created</span></span>
 
-Egy átmozgatási naplóesemény regisztrálásra kerül. Az esemény egy darab A cikket visz át az 1. telephelyről a 2. telephelyre. A telephely készletdimenziója az önköltségi objektum részének tekintendő. Emiatt az esemény két készlettranzakciót és költségtételt hoz létre.
+<span data-ttu-id="a39a9-114">Egy átmozgatási naplóesemény regisztrálásra kerül.</span><span class="sxs-lookup"><span data-stu-id="a39a9-114">A transfer journal event is registered.</span></span> <span data-ttu-id="a39a9-115">Az esemény egy darab A cikket visz át az 1. telephelyről a 2. telephelyre.</span><span class="sxs-lookup"><span data-stu-id="a39a9-115">The event transfers one piece of item A from site 1 to site 2.</span></span> <span data-ttu-id="a39a9-116">A telephely készletdimenziója az önköltségi objektum részének tekintendő.</span><span class="sxs-lookup"><span data-stu-id="a39a9-116">The Site inventory dimension is considered part of the cost object.</span></span> <span data-ttu-id="a39a9-117">Emiatt az esemény két készlettranzakciót és költségtételt hoz létre.</span><span class="sxs-lookup"><span data-stu-id="a39a9-117">Therefore, the event creates two inventory transactions and two cost entries.</span></span>
 
-### <a name="example-3-one-cost-entry-is-created"></a>3. példa: Egy költségbejegyzés jön létre
+### <a name="example-3-one-cost-entry-is-created"></a><span data-ttu-id="a39a9-118">3. példa: Egy költségbejegyzés jön létre</span><span class="sxs-lookup"><span data-stu-id="a39a9-118">Example 3: One cost entry is created</span></span>
 
-Egy termék-bevételezési esemény kerül regisztrálásra egy beszerzési rendeléshez. Az esemény 100 darabot regisztrál A cikkből 10,00 USD egységköltség mellett. Mivel az A cikk sorozatszámot alkalmaz a készletkezelés céljának nyomon követéséhez, egy egyedi sorozatszám jön létre minden egyes bevételezett cikkhez. Emiatt az esemény két 100-as készlettranzakciót és egy költségtételt hoz létre.
+<span data-ttu-id="a39a9-119">Egy termék-bevételezési esemény kerül regisztrálásra egy beszerzési rendeléshez.</span><span class="sxs-lookup"><span data-stu-id="a39a9-119">A product receipt event is registered for a purchase order.</span></span> <span data-ttu-id="a39a9-120">Az esemény 100 darabot regisztrál A cikkből 10,00 USD egységköltség mellett.</span><span class="sxs-lookup"><span data-stu-id="a39a9-120">The event registers 100 pieces of item A at a unit cost of 10.00 U.S. dollars (USD).</span></span> <span data-ttu-id="a39a9-121">Mivel az A cikk sorozatszámot alkalmaz a készletkezelés céljának nyomon követéséhez, egy egyedi sorozatszám jön létre minden egyes bevételezett cikkhez.</span><span class="sxs-lookup"><span data-stu-id="a39a9-121">Because item A uses a serial number to track the purpose of inventory management, a unique serial number is created for each item that is received.</span></span> <span data-ttu-id="a39a9-122">Emiatt az esemény két 100-as készlettranzakciót és egy költségtételt hoz létre.</span><span class="sxs-lookup"><span data-stu-id="a39a9-122">Therefore, the event creates 100 inventory transactions and one cost entry.</span></span>
 
-## <a name="cost-entries-page"></a>Költségbejegyzések oldal
-Az új **Költségbejegyzések** lap lehetővé teszi a mennyiségek és a költségek regisztrációjának megtekintését és felügyeletét. Ezen lap a **Készlettranzakció** és a **Készletkiegyenlítési** lapokat egészíti ki. A rekordok időrendi sorrendben kerülnek regisztrálásra egy adott eseményhez. Ezért gyorsan megkeresheti és szabályozhatja az összesített költségeket egy adott eseményre vagy a dokumentumhoz kapcsolódó összes eseményre vonatkozóan. Egy példa:
+## <a name="cost-entries-page"></a><span data-ttu-id="a39a9-123">Költségbejegyzések oldal</span><span class="sxs-lookup"><span data-stu-id="a39a9-123">Cost entries page</span></span>
+<span data-ttu-id="a39a9-124">Az új **Költségbejegyzések** lap lehetővé teszi a mennyiségek és a költségek regisztrációjának megtekintését és felügyeletét.</span><span class="sxs-lookup"><span data-stu-id="a39a9-124">The new **Cost entries** page lets you view and control registrations of quantities and costs.</span></span> <span data-ttu-id="a39a9-125">Ezen lap a **Készlettranzakció** és a **Készletkiegyenlítési** lapokat egészíti ki.</span><span class="sxs-lookup"><span data-stu-id="a39a9-125">This page complements the **Inventory transaction** and **Inventory settlement** pages.</span></span> <span data-ttu-id="a39a9-126">A rekordok időrendi sorrendben kerülnek regisztrálásra egy adott eseményhez.</span><span class="sxs-lookup"><span data-stu-id="a39a9-126">Records are registered in chronological order for an event.</span></span> <span data-ttu-id="a39a9-127">Ezért gyorsan megkeresheti és szabályozhatja az összesített költségeket egy adott eseményre vagy a dokumentumhoz kapcsolódó összes eseményre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="a39a9-127">Therefore, you can quickly find and control the accumulated costs of a specific event or all events that are related to a document.</span></span> <span data-ttu-id="a39a9-128">Egy példa:</span><span class="sxs-lookup"><span data-stu-id="a39a9-128">Here is an example:</span></span>
 
--   Egy termék-bevételezési esemény kerül regisztrálásra az A termékhez. 100 darab kerül bevételezésre 10,00 USD egységköltséggel.
--   Néhány nappal a számlaesemény regisztrálását követően a költség 11,00 USD összegre nő. Emiatt a teljes összeg 1100 USD lesz. Egy második bizonylat jön létre az 100 USD értékű eltérés számlázásához.
--   Néhány nappal később 15,00 USD vegyes költség kerül regisztrálásra a beszerzési rendeléshez a szállítási költségek fedezésére.
+-   <span data-ttu-id="a39a9-129">Egy termék-bevételezési esemény kerül regisztrálásra az A termékhez. 100 darab kerül bevételezésre 10,00 USD egységköltséggel.</span><span class="sxs-lookup"><span data-stu-id="a39a9-129">A product receipt event is registered for item A. One hundred pieces are received at a unit cost of 10.00 USD.</span></span>
+-   <span data-ttu-id="a39a9-130">Néhány nappal a számlaesemény regisztrálását követően a költség 11,00 USD összegre nő.</span><span class="sxs-lookup"><span data-stu-id="a39a9-130">A few days after the invoice event is registered, the cost increases to 11.00 USD.</span></span> <span data-ttu-id="a39a9-131">Emiatt a teljes összeg 1100 USD lesz.</span><span class="sxs-lookup"><span data-stu-id="a39a9-131">Therefore, the total amount is 1,100 USD.</span></span> <span data-ttu-id="a39a9-132">Egy második bizonylat jön létre az 100 USD értékű eltérés számlázásához.</span><span class="sxs-lookup"><span data-stu-id="a39a9-132">A second voucher is created to account for the difference of 100 USD.</span></span>
+-   <span data-ttu-id="a39a9-133">Néhány nappal később 15,00 USD vegyes költség kerül regisztrálásra a beszerzési rendeléshez a szállítási költségek fedezésére.</span><span class="sxs-lookup"><span data-stu-id="a39a9-133">A few days later, a miscellaneous charge of 15.00 USD to cover the transportation cost is registered on the purchase order.</span></span>
 
-| Bizonylat  | Dátum       | Hivatkozás      | Szám | Adagazonosító  | Mennyiség | Összeg  |
+| <span data-ttu-id="a39a9-134">Bizonylat </span><span class="sxs-lookup"><span data-stu-id="a39a9-134">Voucher</span></span> | <span data-ttu-id="a39a9-135">Dátum</span><span class="sxs-lookup"><span data-stu-id="a39a9-135">Date</span></span>       | <span data-ttu-id="a39a9-136">Hivatkozás</span><span class="sxs-lookup"><span data-stu-id="a39a9-136">Reference</span></span>      | <span data-ttu-id="a39a9-137">Szám</span><span class="sxs-lookup"><span data-stu-id="a39a9-137">Number</span></span> | <span data-ttu-id="a39a9-138">Adagazonosító</span><span class="sxs-lookup"><span data-stu-id="a39a9-138">Lot ID</span></span>  | <span data-ttu-id="a39a9-139">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="a39a9-139">Quantity</span></span> | <span data-ttu-id="a39a9-140">Összeg</span><span class="sxs-lookup"><span data-stu-id="a39a9-140">Amount</span></span>  |
 |---------|------------|----------------|--------|---------|---------------|----|
-| 00001   | 2015/01/01 | Beszerzési rendelés | 100001 | 0000101 | 100,00   | 1000.00 |
-| 00002   | 2015/01/20 | Beszerzési rendelés | 100001 | 0000101 |          | 100,00  |
-| 00003   | 2015/01/31 | Kiigazítás     | 100001 | 0000101 |          | 1500   |
+| <span data-ttu-id="a39a9-141">00001</span><span class="sxs-lookup"><span data-stu-id="a39a9-141">00001</span></span>   | <span data-ttu-id="a39a9-142">2015/01/01</span><span class="sxs-lookup"><span data-stu-id="a39a9-142">01-01-2015</span></span> | <span data-ttu-id="a39a9-143">Beszerzési rendelés</span><span class="sxs-lookup"><span data-stu-id="a39a9-143">Purchase order</span></span> | <span data-ttu-id="a39a9-144">100001</span><span class="sxs-lookup"><span data-stu-id="a39a9-144">100001</span></span> | <span data-ttu-id="a39a9-145">0000101</span><span class="sxs-lookup"><span data-stu-id="a39a9-145">0000101</span></span> | <span data-ttu-id="a39a9-146">100,00</span><span class="sxs-lookup"><span data-stu-id="a39a9-146">100.00</span></span>   | <span data-ttu-id="a39a9-147">1000.00</span><span class="sxs-lookup"><span data-stu-id="a39a9-147">1000.00</span></span> |
+| <span data-ttu-id="a39a9-148">00002</span><span class="sxs-lookup"><span data-stu-id="a39a9-148">00002</span></span>   | <span data-ttu-id="a39a9-149">2015/01/20</span><span class="sxs-lookup"><span data-stu-id="a39a9-149">20-01-2015</span></span> | <span data-ttu-id="a39a9-150">Beszerzési rendelés</span><span class="sxs-lookup"><span data-stu-id="a39a9-150">Purchase order</span></span> | <span data-ttu-id="a39a9-151">100001</span><span class="sxs-lookup"><span data-stu-id="a39a9-151">100001</span></span> | <span data-ttu-id="a39a9-152">0000101</span><span class="sxs-lookup"><span data-stu-id="a39a9-152">0000101</span></span> |          | <span data-ttu-id="a39a9-153">100,00</span><span class="sxs-lookup"><span data-stu-id="a39a9-153">100.00</span></span>  |
+| <span data-ttu-id="a39a9-154">00003</span><span class="sxs-lookup"><span data-stu-id="a39a9-154">00003</span></span>   | <span data-ttu-id="a39a9-155">2015/01/31</span><span class="sxs-lookup"><span data-stu-id="a39a9-155">31-01-2015</span></span> | <span data-ttu-id="a39a9-156">Kiigazítás</span><span class="sxs-lookup"><span data-stu-id="a39a9-156">Adjustment</span></span>     | <span data-ttu-id="a39a9-157">100001</span><span class="sxs-lookup"><span data-stu-id="a39a9-157">100001</span></span> | <span data-ttu-id="a39a9-158">0000101</span><span class="sxs-lookup"><span data-stu-id="a39a9-158">0000101</span></span> |          | <span data-ttu-id="a39a9-159">1500</span><span class="sxs-lookup"><span data-stu-id="a39a9-159">15.00</span></span>   |
 
-A **Költségtételek** lap lehetővé teszi a dokumentumazonosító és a dátum alapján történő szűréseket. 
+<span data-ttu-id="a39a9-160">A **Költségtételek** lap lehetővé teszi a dokumentumazonosító és a dátum alapján történő szűréseket.</span><span class="sxs-lookup"><span data-stu-id="a39a9-160">The **Cost entries** page enables filtering by document ID and document date.</span></span> 
 
 > [!NOTE]
-> A költségtételek csak a [költségobjektumok](cost-object.md) vagy a kiadott termékek esetében érhetők el.
+> <span data-ttu-id="a39a9-161">A költségtételek csak a [költségobjektumok](cost-object.md) vagy a kiadott termékek esetében érhetők el.</span><span class="sxs-lookup"><span data-stu-id="a39a9-161">Cost entries are available only for [cost objects](cost-object.md) or released products.</span></span>
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="a39a9-162">Lásd még</span><span class="sxs-lookup"><span data-stu-id="a39a9-162">See also</span></span>
 --------
 
-[Költségobjektumok](cost-object.md)
+[<span data-ttu-id="a39a9-163">Költségobjektumok</span><span class="sxs-lookup"><span data-stu-id="a39a9-163">Cost objects</span></span>](cost-object.md)
 
 
 

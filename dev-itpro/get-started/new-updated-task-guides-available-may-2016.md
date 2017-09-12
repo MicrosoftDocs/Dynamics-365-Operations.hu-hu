@@ -15,188 +15,188 @@ ms.custom: 104233
 ms.assetid: 2a2ffa1e-5a15-4e2a-b18c-c4d890d38a50
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a613f5a84a7c72da3cc76eac147d4754f6259e4c
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 8b5437e5652ca5111ded89cb3417db46ab4b45af
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Új vagy frissített feladat-útmutatók (2016. május)
+# <a name="new-or-updated-task-guides-may-2016"></a><span data-ttu-id="8c652-104">Új vagy frissített feladat-útmutatók (2016. május)</span><span class="sxs-lookup"><span data-stu-id="8c652-104">New or updated task guides (May 2016)</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A cikk felsorolja a Microsoft Dynamics AX (2016. május – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár. 
+<span data-ttu-id="8c652-105">A cikk felsorolja a Microsoft Dynamics AX (2016. május – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat.</span><span class="sxs-lookup"><span data-stu-id="8c652-105">This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="8c652-106">Nincs új Első lépések könyvtár.</span><span class="sxs-lookup"><span data-stu-id="8c652-106">No new Getting Started Library was released.</span></span> 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Feladat-útmutatók (2016. május - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="8c652-107">[]()Feladat-útmutatók (2016. május - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában</span><span class="sxs-lookup"><span data-stu-id="8c652-107">[]()Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX</span></span>
 ------------------------------------------------------------------------------------------------
 
-A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához és a Microsoft Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat. Az APQC egyesített könyvtárban kiadott (2016. február) Feladat-útmutatók honosított változatai ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md). **Megjegyzés**: Egy csillag (**\***) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics AX 2016. májusi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióiban nem támogatott.
+<span data-ttu-id="8c652-108">A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához és a Microsoft Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat.</span><span class="sxs-lookup"><span data-stu-id="8c652-108">The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release.</span></span> <span data-ttu-id="8c652-109">Az APQC egyesített könyvtárban kiadott (2016. február) Feladat-útmutatók honosított változatai ebben a könyvtárban érhetők el.</span><span class="sxs-lookup"><span data-stu-id="8c652-109">Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library.</span></span> <span data-ttu-id="8c652-110">A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).</span><span class="sxs-lookup"><span data-stu-id="8c652-110">For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span> <span data-ttu-id="8c652-111">**Megjegyzés**: Egy csillag (**\***) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics AX 2016. májusi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióiban nem támogatott.</span><span class="sxs-lookup"><span data-stu-id="8c652-111">**Note:** An asterisk (**\***) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.</span></span>
 
-### <a name="countryregion-functionality"></a>Ország/régió szerinti funkciók
+### <a name="countryregion-functionality"></a><span data-ttu-id="8c652-112">Ország/régió szerinti funkciók</span><span class="sxs-lookup"><span data-stu-id="8c652-112">Country/region functionality</span></span>
 
-| BPM-sor                                                                 | Ország/régió                    |
+| <span data-ttu-id="8c652-113">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-113">BPM line</span></span>                                                                 | <span data-ttu-id="8c652-114">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-114">Country/region</span></span>                    |
 |--------------------------------------------------------------------------|-----------------------------------|
-| Az OIOXML formátumú elektronikus számlázás beállítása                                       | Dánia                           |
-| EUR 00002 Az EU Intrastat nyilatkozat létrehozása                           | Európa                            |
-| EUR-00002 Tranzakciók átvitele az Intrastatba                         | Európa                            |
-| FR-00004 A vevői fizetési mód frissítése                            | Európa                            |
-| Vevő fizetési módjainak kialakítása                                    | Franciaország                            |
-| FR-00003 NAF-kódok és Siret-számok (Franciaország)                                     | Franciaország                            |
-| FR-00004 Váltókiállítás jóváhagyása és feladása                          | Franciaország                            |
-| Gyorsított értékcsökkentési paraméterek és a feladási profilok konfigurálása       | Japán                             |
-| Gyűjtőszámla-paraméterek konfigurálása és beállítása kötelezettségekre vonatkozóan | Japán                             |
-| Gyorsított értékcsökkentési dokumentum létrehozása és használati adatok rögzítése         | Japán                             |
-| PGE-csoportok és pénzgeneráló egységek létrehozása                               | Japán                             |
-| Tárgyi eszköz kivezetése csökkentési tétellel                            | Japán                             |
-| MY-00004 Szállítói terhelések és jóváírások kezelése – GST                | Szingapúr, Malajzia és Thaiföld |
+| <span data-ttu-id="8c652-115">Az OIOXML formátumú elektronikus számlázás beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-115">Set up OIOUBL electronic invoicing</span></span>                                       | <span data-ttu-id="8c652-116">Dánia</span><span class="sxs-lookup"><span data-stu-id="8c652-116">Denmark</span></span>                           |
+| <span data-ttu-id="8c652-117">EUR 00002 Az EU Intrastat nyilatkozat létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-117">EUR-00002 Generate an EU Intrastat declaration</span></span>                           | <span data-ttu-id="8c652-118">Európa</span><span class="sxs-lookup"><span data-stu-id="8c652-118">Europe</span></span>                            |
+| <span data-ttu-id="8c652-119">EUR-00002 Tranzakciók átvitele az Intrastatba</span><span class="sxs-lookup"><span data-stu-id="8c652-119">EUR-00002 Transfer transactions to the Intrastat</span></span>                         | <span data-ttu-id="8c652-120">Európa</span><span class="sxs-lookup"><span data-stu-id="8c652-120">Europe</span></span>                            |
+| <span data-ttu-id="8c652-121">FR-00004 A vevői fizetési mód frissítése</span><span class="sxs-lookup"><span data-stu-id="8c652-121">FR-00004 Update method of payment on customer</span></span>                            | <span data-ttu-id="8c652-122">Európa</span><span class="sxs-lookup"><span data-stu-id="8c652-122">Europe</span></span>                            |
+| <span data-ttu-id="8c652-123">Vevő fizetési módjainak kialakítása</span><span class="sxs-lookup"><span data-stu-id="8c652-123">Establish customer methods of payment</span></span>                                    | <span data-ttu-id="8c652-124">Franciaország</span><span class="sxs-lookup"><span data-stu-id="8c652-124">France</span></span>                            |
+| <span data-ttu-id="8c652-125">FR-00003 NAF-kódok és Siret-számok (Franciaország)</span><span class="sxs-lookup"><span data-stu-id="8c652-125">FR-00003 NAF codes and Siret numbers</span></span>                                     | <span data-ttu-id="8c652-126">Franciaország</span><span class="sxs-lookup"><span data-stu-id="8c652-126">France</span></span>                            |
+| <span data-ttu-id="8c652-127">FR-00004 Váltókiállítás jóváhagyása és feladása</span><span class="sxs-lookup"><span data-stu-id="8c652-127">FR-00004 Approve and post draw bill of exchange</span></span>                          | <span data-ttu-id="8c652-128">Franciaország</span><span class="sxs-lookup"><span data-stu-id="8c652-128">France</span></span>                            |
+| <span data-ttu-id="8c652-129">Gyorsított értékcsökkentési paraméterek és a feladási profilok konfigurálása</span><span class="sxs-lookup"><span data-stu-id="8c652-129">Configure accelerated depreciation parameters and posting profiles</span></span>       | <span data-ttu-id="8c652-130">Japán</span><span class="sxs-lookup"><span data-stu-id="8c652-130">Japan</span></span>                             |
+| <span data-ttu-id="8c652-131">Gyűjtőszámla-paraméterek konfigurálása és beállítása kötelezettségekre vonatkozóan</span><span class="sxs-lookup"><span data-stu-id="8c652-131">Configure consolidated invoice parameters and setup for accounts payable</span></span> | <span data-ttu-id="8c652-132">Japán</span><span class="sxs-lookup"><span data-stu-id="8c652-132">Japan</span></span>                             |
+| <span data-ttu-id="8c652-133">Gyorsított értékcsökkentési dokumentum létrehozása és használati adatok rögzítése</span><span class="sxs-lookup"><span data-stu-id="8c652-133">Create an accelerated depreciation document and enter usage data</span></span>         | <span data-ttu-id="8c652-134">Japán</span><span class="sxs-lookup"><span data-stu-id="8c652-134">Japan</span></span>                             |
+| <span data-ttu-id="8c652-135">PGE-csoportok és pénzgeneráló egységek létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-135">Create CGU group and cash generating units</span></span>                               | <span data-ttu-id="8c652-136">Japán</span><span class="sxs-lookup"><span data-stu-id="8c652-136">Japan</span></span>                             |
+| <span data-ttu-id="8c652-137">Tárgyi eszköz kivezetése csökkentési tétellel</span><span class="sxs-lookup"><span data-stu-id="8c652-137">Dispose of a fixed asset with reduction entry</span></span>                            | <span data-ttu-id="8c652-138">Japán</span><span class="sxs-lookup"><span data-stu-id="8c652-138">Japan</span></span>                             |
+| <span data-ttu-id="8c652-139">MY-00004 Szállítói terhelések és jóváírások kezelése – GST</span><span class="sxs-lookup"><span data-stu-id="8c652-139">MY-00004 Manage vendor Debit note and Credit note for GST</span></span>                | <span data-ttu-id="8c652-140">Szingapúr, Malajzia és Thaiföld</span><span class="sxs-lookup"><span data-stu-id="8c652-140">Singapore, Malaysia, and Thailand</span></span> |
 
-### <a name="data-access"></a>Adatelérés
+### <a name="data-access"></a><span data-ttu-id="8c652-141">Adatelérés</span><span class="sxs-lookup"><span data-stu-id="8c652-141">Data access</span></span>
 
-| BPM-sor                                       | Ország/régió |
+| <span data-ttu-id="8c652-142">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-142">BPM line</span></span>                                       | <span data-ttu-id="8c652-143">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-143">Country/region</span></span> |
 |------------------------------------------------|----------------|
-| A pénzügyi vállalatközi adatmegosztás konfigurálása | Globális         |
+| <span data-ttu-id="8c652-144">A pénzügyi vállalatközi adatmegosztás konfigurálása</span><span class="sxs-lookup"><span data-stu-id="8c652-144">Configure financial cross-company data sharing</span></span> | <span data-ttu-id="8c652-145">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-145">Global</span></span>         |
 
-### <a name="electronic-reporting"></a>Elektronikus jelentés
+### <a name="electronic-reporting"></a><span data-ttu-id="8c652-146">Elektronikus jelentés</span><span class="sxs-lookup"><span data-stu-id="8c652-146">Electronic reporting</span></span>
 
-| BPM-sor                                                                   | Ország/régió |
+| <span data-ttu-id="8c652-147">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-147">BPM line</span></span>                                                                   | <span data-ttu-id="8c652-148">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-148">Country/region</span></span> |
 |----------------------------------------------------------------------------|----------------|
-| ER - Célok konfigurálása                                                  | Globális         |
-| ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése         | Globális         |
-| ER – Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a formátumkonfiguráció segítségével | Globális         |
-| ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból                          | Globális         |
-| **\***ER - szolgáltató kiválasztása                                           | Globális         |
-| ER – A formátum frissítése ezen formátum új alap verziójának elfogadásával      | Globális         |
-| ER - A konfiguráció feltöltése a Lifecycle Services szolgáltatásba                          | Globális         |
+| <span data-ttu-id="8c652-149">ER - Célok konfigurálása</span><span class="sxs-lookup"><span data-stu-id="8c652-149">ER Configure destinations</span></span>                                                  | <span data-ttu-id="8c652-150">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-150">Global</span></span>         |
+| <span data-ttu-id="8c652-151">ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése</span><span class="sxs-lookup"><span data-stu-id="8c652-151">ER Design a configuration for generating reports in OPENXML format</span></span>         | <span data-ttu-id="8c652-152">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-152">Global</span></span>         |
+| <span data-ttu-id="8c652-153">ER – Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a formátumkonfiguráció segítségével</span><span class="sxs-lookup"><span data-stu-id="8c652-153">ER Generate electronic documents for payments using a format configuration</span></span> | <span data-ttu-id="8c652-154">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-154">Global</span></span>         |
+| <span data-ttu-id="8c652-155">ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból</span><span class="sxs-lookup"><span data-stu-id="8c652-155">ER Import a configuration from Lifecycle Services</span></span>                          | <span data-ttu-id="8c652-156">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-156">Global</span></span>         |
+| <span data-ttu-id="8c652-157">**\***ER - szolgáltató kiválasztása</span><span class="sxs-lookup"><span data-stu-id="8c652-157">**\***ER Select service provider</span></span>                                           | <span data-ttu-id="8c652-158">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-158">Global</span></span>         |
+| <span data-ttu-id="8c652-159">ER – A formátum frissítése ezen formátum új alap verziójának elfogadásával</span><span class="sxs-lookup"><span data-stu-id="8c652-159">ER Upgrade your format by adopting of new base version of that format</span></span>      | <span data-ttu-id="8c652-160">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-160">Global</span></span>         |
+| <span data-ttu-id="8c652-161">ER - A konfiguráció feltöltése a Lifecycle Services szolgáltatásba</span><span class="sxs-lookup"><span data-stu-id="8c652-161">ER Upload a configuration into Lifecycle Services</span></span>                          | <span data-ttu-id="8c652-162">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-162">Global</span></span>         |
 
-### <a name="human-capital-management"></a>Emberierőforrás-menedzsment
+### <a name="human-capital-management"></a><span data-ttu-id="8c652-163">Emberierőforrás-menedzsment</span><span class="sxs-lookup"><span data-stu-id="8c652-163">Human capital management</span></span>
 
-| BPM-sor                                    | Ország/régió |
+| <span data-ttu-id="8c652-164">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-164">BPM line</span></span>                                    | <span data-ttu-id="8c652-165">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-165">Country/region</span></span> |
 |---------------------------------------------|----------------|
-| Kérdőívek kiküldése ütemezéssel | Globális         |
-| Pozíciók beállítása                            | Globális         |
+| <span data-ttu-id="8c652-166">Kérdőívek kiküldése ütemezéssel</span><span class="sxs-lookup"><span data-stu-id="8c652-166">Distribute a questionnaire using scheduling</span></span> | <span data-ttu-id="8c652-167">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-167">Global</span></span>         |
+| <span data-ttu-id="8c652-168">Pozíciók beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-168">Set up positions</span></span>                            | <span data-ttu-id="8c652-169">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-169">Global</span></span>         |
 
-### <a name="inventory-management"></a>Készletgazdálkodás
+### <a name="inventory-management"></a><span data-ttu-id="8c652-170">Készletgazdálkodás</span><span class="sxs-lookup"><span data-stu-id="8c652-170">Inventory management</span></span>
 
-| BPM-sor                                           | Ország/régió |
+| <span data-ttu-id="8c652-171">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-171">BPM line</span></span>                                           | <span data-ttu-id="8c652-172">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-172">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Határozza meg a cikkek alapértelmezett beállításait.            | Globális         |
-| A szabálytalanságkezelésre vonatkozó előfeltételek beállítása | Globális         |
+| <span data-ttu-id="8c652-173">Határozza meg a cikkek alapértelmezett beállításait.</span><span class="sxs-lookup"><span data-stu-id="8c652-173">Define default order settings for items</span></span>            | <span data-ttu-id="8c652-174">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-174">Global</span></span>         |
+| <span data-ttu-id="8c652-175">A szabálytalanságkezelésre vonatkozó előfeltételek beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-175">Set up prerequisites for nonconformance management</span></span> | <span data-ttu-id="8c652-176">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-176">Global</span></span>         |
 
-### <a name="manufacturing"></a>Gyártás
+### <a name="manufacturing"></a><span data-ttu-id="8c652-177">Gyártás</span><span class="sxs-lookup"><span data-stu-id="8c652-177">Manufacturing</span></span>
 
-| BPM-sor                                           | Ország/régió |
+| <span data-ttu-id="8c652-178">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-178">BPM line</span></span>                                           | <span data-ttu-id="8c652-179">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-179">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Társtermékek másolása meglévő receptúrából          | Globális         |
-| Az Anyagjegyzéksor esemény kanbanszabályának létrehozása                | Globális         |
-| Helyettesítési kanbanszabály létrehozása                   | Globális         |
-| Visszavonási kanbanszabály létrehozása                    | Globális         |
-| Kanbanfeldolgozási feladatok végrehajtása                        | Globális         |
-| Termelési rendelés ütemezése                        | Globális         |
-| Termelési feladatok sorrendje a folyamatszerű gyártáshoz | Globális         |
-| kanbanállapot frissítése                               | Globális         |
+| <span data-ttu-id="8c652-180">Társtermékek másolása meglévő receptúrából</span><span class="sxs-lookup"><span data-stu-id="8c652-180">Copy co-products from an existing formula</span></span>          | <span data-ttu-id="8c652-181">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-181">Global</span></span>         |
+| <span data-ttu-id="8c652-182">Az Anyagjegyzéksor esemény kanbanszabályának létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-182">Create a BOM line event kanban rule</span></span>                | <span data-ttu-id="8c652-183">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-183">Global</span></span>         |
+| <span data-ttu-id="8c652-184">Helyettesítési kanbanszabály létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-184">Create a replacement kanban rule</span></span>                   | <span data-ttu-id="8c652-185">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-185">Global</span></span>         |
+| <span data-ttu-id="8c652-186">Visszavonási kanbanszabály létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-186">Create a withdrawal kanban rule</span></span>                    | <span data-ttu-id="8c652-187">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-187">Global</span></span>         |
+| <span data-ttu-id="8c652-188">Kanbanfeldolgozási feladatok végrehajtása</span><span class="sxs-lookup"><span data-stu-id="8c652-188">Execute kanban process jobs</span></span>                        | <span data-ttu-id="8c652-189">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-189">Global</span></span>         |
+| <span data-ttu-id="8c652-190">Termelési rendelés ütemezése</span><span class="sxs-lookup"><span data-stu-id="8c652-190">Schedule a production order</span></span>                        | <span data-ttu-id="8c652-191">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-191">Global</span></span>         |
+| <span data-ttu-id="8c652-192">Termelési feladatok sorrendje a folyamatszerű gyártáshoz</span><span class="sxs-lookup"><span data-stu-id="8c652-192">Sequence production jobs for process manufacturing</span></span> | <span data-ttu-id="8c652-193">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-193">Global</span></span>         |
+| <span data-ttu-id="8c652-194">kanbanállapot frissítése</span><span class="sxs-lookup"><span data-stu-id="8c652-194">Update kanban status</span></span>                               | <span data-ttu-id="8c652-195">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-195">Global</span></span>         |
 
-### <a name="master-planning"></a>Alaptervezés
+### <a name="master-planning"></a><span data-ttu-id="8c652-196">Alaptervezés</span><span class="sxs-lookup"><span data-stu-id="8c652-196">Master planning</span></span>
 
-| BPM-sor                      | Ország/régió |
+| <span data-ttu-id="8c652-197">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-197">BPM line</span></span>                      | <span data-ttu-id="8c652-198">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-198">Country/region</span></span> |
 |-------------------------------|----------------|
-| Egy helyre vonatkozó terv létrehozása      | Globális         |
-| Webhely-ütemezés létrehozása        | Globális         |
-| Alaptervezés futtatásának megfigyelése | Globális         |
+| <span data-ttu-id="8c652-199">Egy helyre vonatkozó terv létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-199">Create a plan for a site</span></span>      | <span data-ttu-id="8c652-200">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-200">Global</span></span>         |
+| <span data-ttu-id="8c652-201">Webhely-ütemezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-201">Create a site schedule</span></span>        | <span data-ttu-id="8c652-202">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-202">Global</span></span>         |
+| <span data-ttu-id="8c652-203">Alaptervezés futtatásának megfigyelése</span><span class="sxs-lookup"><span data-stu-id="8c652-203">Monitor a master planning run</span></span> | <span data-ttu-id="8c652-204">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-204">Global</span></span>         |
 
-### <a name="organization-administration"></a>Szervezeti adminisztráció
+### <a name="organization-administration"></a><span data-ttu-id="8c652-205">Szervezeti adminisztráció</span><span class="sxs-lookup"><span data-stu-id="8c652-205">Organization administration</span></span>
 
-| BPM-sor                                       | Ország/régió |
+| <span data-ttu-id="8c652-206">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-206">BPM line</span></span>                                       | <span data-ttu-id="8c652-207">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-207">Country/region</span></span> |
 |------------------------------------------------|----------------|
-| Jogi személy létrehozása                          | Globális         |
-| Szervezeti hierarchia létrehozása             | Globális         |
-| Az egyedi alap számsorozatainak beállítása | Globális         |
+| <span data-ttu-id="8c652-208">Jogi személy létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-208">Create a legal entity</span></span>                          | <span data-ttu-id="8c652-209">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-209">Global</span></span>         |
+| <span data-ttu-id="8c652-210">Szervezeti hierarchia létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-210">Create an organizational hierarchy</span></span>             | <span data-ttu-id="8c652-211">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-211">Global</span></span>         |
+| <span data-ttu-id="8c652-212">Az egyedi alap számsorozatainak beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-212">Set up number sequences on an individual basis</span></span> | <span data-ttu-id="8c652-213">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-213">Global</span></span>         |
 
-### <a name="procurement-and-sourcing"></a>Beszerzés és forrás
+### <a name="procurement-and-sourcing"></a><span data-ttu-id="8c652-214">Beszerzés és forrás</span><span class="sxs-lookup"><span data-stu-id="8c652-214">Procurement and sourcing</span></span>
 
-| BPM-sor                                        | Ország/régió |
+| <span data-ttu-id="8c652-215">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-215">BPM line</span></span>                                        | <span data-ttu-id="8c652-216">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-216">Country/region</span></span> |
 |-------------------------------------------------|----------------|
-| A meghatározott termékek szállítójának jóváhagyása           | Globális         |
-| Beszerzési rendelés létrehozása                         | Globális         |
-| Ajánlatkérés létrehozása                  | Globális         |
-| Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket | Globális         |
+| <span data-ttu-id="8c652-217">A meghatározott termékek szállítójának jóváhagyása</span><span class="sxs-lookup"><span data-stu-id="8c652-217">Approve vendors for specific products</span></span>           | <span data-ttu-id="8c652-218">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-218">Global</span></span>         |
+| <span data-ttu-id="8c652-219">Beszerzési rendelés létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-219">Create a purchase order</span></span>                         | <span data-ttu-id="8c652-220">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-220">Global</span></span>         |
+| <span data-ttu-id="8c652-221">Ajánlatkérés létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-221">Create a request for quotation</span></span>                  | <span data-ttu-id="8c652-222">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-222">Global</span></span>         |
+| <span data-ttu-id="8c652-223">Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket</span><span class="sxs-lookup"><span data-stu-id="8c652-223">Enter and compare RFQ bids, and award contracts</span></span> | <span data-ttu-id="8c652-224">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-224">Global</span></span>         |
 
-### <a name="product-information-and-configuration"></a>Termékinformáció és konfiguráció.
+### <a name="product-information-and-configuration"></a><span data-ttu-id="8c652-225">Termékinformáció és konfiguráció.</span><span class="sxs-lookup"><span data-stu-id="8c652-225">Product information and configuration</span></span>
 
-| BPM-sor                                                 | Ország/régió |
+| <span data-ttu-id="8c652-226">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-226">BPM line</span></span>                                                 | <span data-ttu-id="8c652-227">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-227">Country/region</span></span> |
 |----------------------------------------------------------|----------------|
-| Új termék létrehozása                                     | Globális         |
-| Dimenzión alapuló konfigurációk létrehozása                    | Globális         |
-| Az előre meghatározott termékváltozatok létrehozása                       | Globális         |
-| Eladási ár kiválasztási feltételeinek létrehozása                    | Globális         |
-| Adja meg a konfigurálható termékek rendeléseit                   | Globális         |
-| Állítsa be a konfigurálható termékek attribútum-alapú árképzését | Globális         |
+| <span data-ttu-id="8c652-228">Új termék létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-228">Create a new product</span></span>                                     | <span data-ttu-id="8c652-229">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-229">Global</span></span>         |
+| <span data-ttu-id="8c652-230">Dimenzión alapuló konfigurációk létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-230">Create dimension-based configurations</span></span>                    | <span data-ttu-id="8c652-231">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-231">Global</span></span>         |
+| <span data-ttu-id="8c652-232">Az előre meghatározott termékváltozatok létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-232">Create predefined product variants</span></span>                       | <span data-ttu-id="8c652-233">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-233">Global</span></span>         |
+| <span data-ttu-id="8c652-234">Eladási ár kiválasztási feltételeinek létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-234">Create sales price selection criteria</span></span>                    | <span data-ttu-id="8c652-235">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-235">Global</span></span>         |
+| <span data-ttu-id="8c652-236">Adja meg a konfigurálható termékek rendeléseit</span><span class="sxs-lookup"><span data-stu-id="8c652-236">Enter orders for configurable products</span></span>                   | <span data-ttu-id="8c652-237">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-237">Global</span></span>         |
+| <span data-ttu-id="8c652-238">Állítsa be a konfigurálható termékek attribútum-alapú árképzését</span><span class="sxs-lookup"><span data-stu-id="8c652-238">Set up attribute-based pricing for configurable products</span></span> | <span data-ttu-id="8c652-239">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-239">Global</span></span>         |
 
-### <a name="retail-and-commerce"></a>Kiskereskedelem és kereskedelem
+### <a name="retail-and-commerce"></a><span data-ttu-id="8c652-240">Kiskereskedelem és kereskedelem</span><span class="sxs-lookup"><span data-stu-id="8c652-240">Retail and commerce</span></span>
 
-| BPM-sor                                                           | Ország/régió |
+| <span data-ttu-id="8c652-241">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-241">BPM line</span></span>                                                           | <span data-ttu-id="8c652-242">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-242">Country/region</span></span> |
 |--------------------------------------------------------------------|----------------|
-| Feladatok hozzárendelése                                                       | Globális         |
-| Készlet frissítésére használt ismétlődő feladat konfigurálása és futtatása                | Globális         |
-| Termékek áttárolása a fogadó raktárból az üzletbe              | Globális         |
-| Termékek elosztása az elosztási központból az üzletbe a központi elosztás használatával | Globális         |
+| <span data-ttu-id="8c652-243">Feladatok hozzárendelése</span><span class="sxs-lookup"><span data-stu-id="8c652-243">Assign tasks</span></span>                                                       | <span data-ttu-id="8c652-244">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-244">Global</span></span>         |
+| <span data-ttu-id="8c652-245">Készlet frissítésére használt ismétlődő feladat konfigurálása és futtatása</span><span class="sxs-lookup"><span data-stu-id="8c652-245">Configure and run recurrent job to update inventory</span></span>                | <span data-ttu-id="8c652-246">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-246">Global</span></span>         |
+| <span data-ttu-id="8c652-247">Termékek áttárolása a fogadó raktárból az üzletbe</span><span class="sxs-lookup"><span data-stu-id="8c652-247">Cross dock products from receiving warehouse to store</span></span>              | <span data-ttu-id="8c652-248">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-248">Global</span></span>         |
+| <span data-ttu-id="8c652-249">Termékek elosztása az elosztási központból az üzletbe a központi elosztás használatával</span><span class="sxs-lookup"><span data-stu-id="8c652-249">Push products from distribution center to store using buyer's push</span></span> | <span data-ttu-id="8c652-250">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-250">Global</span></span>         |
 
-### <a name="security"></a>Biztonság
+### <a name="security"></a><span data-ttu-id="8c652-251">Biztonság</span><span class="sxs-lookup"><span data-stu-id="8c652-251">Security</span></span>
 
-| BPM-sor                       | Ország/régió |
+| <span data-ttu-id="8c652-252">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-252">BPM line</span></span>                       | <span data-ttu-id="8c652-253">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-253">Country/region</span></span> |
 |--------------------------------|----------------|
-| A felhasználók hozzárendelése a biztonsági szerepkörökhöz | Globális         |
+| <span data-ttu-id="8c652-254">A felhasználók hozzárendelése a biztonsági szerepkörökhöz</span><span class="sxs-lookup"><span data-stu-id="8c652-254">Assign users to security roles</span></span> | <span data-ttu-id="8c652-255">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-255">Global</span></span>         |
 
-### <a name="sales-tax"></a>Forgalmi adó
+### <a name="sales-tax"></a><span data-ttu-id="8c652-256">Forgalmi adó</span><span class="sxs-lookup"><span data-stu-id="8c652-256">Sales tax</span></span>
 
-| BPM-sor                                           | Ország/régió |
+| <span data-ttu-id="8c652-257">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-257">BPM line</span></span>                                           | <span data-ttu-id="8c652-258">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-258">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Szállítói számla forgalmi adójának kiszámítása és kiigazítása | Globális         |
-| Áfafizetés létrehozása                         | Globális         |
-| Áfatranzakciók létrehozása dokumentumokra         | Globális         |
-| Főkönyvi feladási csoportok beállítása az áfához         | Globális         |
-| Adóhatóságok beállítása                       | Globális         |
-| Áfakódok beállítása                             | Globális         |
-| Áfacsoportok és cikkáfacsoportok beállítása  | Globális         |
-| Áfabevallás kódjainak beállítása                   | Globális         |
-| Áfafizetési időszakok beállítása                | Globális         |
-| Adóelőleg beállítása                             | Globális         |
-| Feladott áfatranzakciók megtekintése                 | Globális         |
+| <span data-ttu-id="8c652-259">Szállítói számla forgalmi adójának kiszámítása és kiigazítása</span><span class="sxs-lookup"><span data-stu-id="8c652-259">Calculate and adjust sales tax on a vendor invoice</span></span> | <span data-ttu-id="8c652-260">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-260">Global</span></span>         |
+| <span data-ttu-id="8c652-261">Áfafizetés létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-261">Create a sales tax payment</span></span>                         | <span data-ttu-id="8c652-262">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-262">Global</span></span>         |
+| <span data-ttu-id="8c652-263">Áfatranzakciók létrehozása dokumentumokra</span><span class="sxs-lookup"><span data-stu-id="8c652-263">Create sales tax transactions on documents</span></span>         | <span data-ttu-id="8c652-264">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-264">Global</span></span>         |
+| <span data-ttu-id="8c652-265">Főkönyvi feladási csoportok beállítása az áfához</span><span class="sxs-lookup"><span data-stu-id="8c652-265">Set up ledger posting groups for sales tax</span></span>         | <span data-ttu-id="8c652-266">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-266">Global</span></span>         |
+| <span data-ttu-id="8c652-267">Adóhatóságok beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-267">Set up sales tax authorities</span></span>                       | <span data-ttu-id="8c652-268">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-268">Global</span></span>         |
+| <span data-ttu-id="8c652-269">Áfakódok beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-269">Set up sales tax codes</span></span>                             | <span data-ttu-id="8c652-270">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-270">Global</span></span>         |
+| <span data-ttu-id="8c652-271">Áfacsoportok és cikkáfacsoportok beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-271">Set up sales tax groups and item sales tax groups</span></span>  | <span data-ttu-id="8c652-272">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-272">Global</span></span>         |
+| <span data-ttu-id="8c652-273">Áfabevallás kódjainak beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-273">Set up sales tax reporting codes</span></span>                   | <span data-ttu-id="8c652-274">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-274">Global</span></span>         |
+| <span data-ttu-id="8c652-275">Áfafizetési időszakok beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-275">Set up sales tax settlement periods</span></span>                | <span data-ttu-id="8c652-276">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-276">Global</span></span>         |
+| <span data-ttu-id="8c652-277">Adóelőleg beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-277">Set up withholding tax</span></span>                             | <span data-ttu-id="8c652-278">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-278">Global</span></span>         |
+| <span data-ttu-id="8c652-279">Feladott áfatranzakciók megtekintése</span><span class="sxs-lookup"><span data-stu-id="8c652-279">View posted sales tax transactions</span></span>                 | <span data-ttu-id="8c652-280">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-280">Global</span></span>         |
 
-### <a name="security"></a>Biztonság
+### <a name="security"></a><span data-ttu-id="8c652-281">Biztonság</span><span class="sxs-lookup"><span data-stu-id="8c652-281">Security</span></span>
 
-| BPM-sor                                                | Ország/régió |
+| <span data-ttu-id="8c652-282">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-282">BPM line</span></span>                                                | <span data-ttu-id="8c652-283">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-283">Country/region</span></span> |
 |---------------------------------------------------------|----------------|
-| Új felhasználók létrehozása                                        | Globális         |
-| Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása | Globális         |
-| Feladatkörök szétválasztásának beállítása                            | Globális         |
+| <span data-ttu-id="8c652-284">Új felhasználók létrehozása</span><span class="sxs-lookup"><span data-stu-id="8c652-284">Create new users</span></span>                                        | <span data-ttu-id="8c652-285">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-285">Global</span></span>         |
+| <span data-ttu-id="8c652-286">Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása</span><span class="sxs-lookup"><span data-stu-id="8c652-286">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="8c652-287">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-287">Global</span></span>         |
+| <span data-ttu-id="8c652-288">Feladatkörök szétválasztásának beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-288">Set up segregation of duties</span></span>                            | <span data-ttu-id="8c652-289">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-289">Global</span></span>         |
 
-### <a name="warehouse-and-transportation"></a>Raktározás és szállítás
+### <a name="warehouse-and-transportation"></a><span data-ttu-id="8c652-290">Raktározás és szállítás</span><span class="sxs-lookup"><span data-stu-id="8c652-290">Warehouse and transportation</span></span>
 
-| BPM-sor                                                            | Ország/régió |
+| <span data-ttu-id="8c652-291">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="8c652-291">BPM line</span></span>                                                            | <span data-ttu-id="8c652-292">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="8c652-292">Country/region</span></span> |
 |---------------------------------------------------------------------|----------------|
-| A Hullámfeldolgozás konfigurálása                                           | Globális         |
-| **\***Készként történő jelentés egy nem azonosítótáblás szabályozású helyen | Globális         |
-| A minimum-maximum feltöltési folyamat beállítása                              | Globális         |
-| Tárolóra bontás beállítása                                             | Globális         |
-| A kézi csomagolás beállítása                                               | Globális         |
-| Egy elemre vonatkozó szállítási megszorítások beállítása                       | Globális         |
-| **\***A raktári munkairányelvek beállítása                                | Globális         |
+| <span data-ttu-id="8c652-293">A Hullámfeldolgozás konfigurálása</span><span class="sxs-lookup"><span data-stu-id="8c652-293">Configure wave processing</span></span>                                           | <span data-ttu-id="8c652-294">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-294">Global</span></span>         |
+| <span data-ttu-id="8c652-295">**\***Készként történő jelentés egy nem azonosítótáblás szabályozású helyen</span><span class="sxs-lookup"><span data-stu-id="8c652-295">**\***Report as finished to a non-license plate controlled location</span></span> | <span data-ttu-id="8c652-296">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-296">Global</span></span>         |
+| <span data-ttu-id="8c652-297">A minimum-maximum feltöltési folyamat beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-297">Set up a min-max replenishment process</span></span>                              | <span data-ttu-id="8c652-298">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-298">Global</span></span>         |
+| <span data-ttu-id="8c652-299">Tárolóra bontás beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-299">Set up containerization</span></span>                                             | <span data-ttu-id="8c652-300">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-300">Global</span></span>         |
+| <span data-ttu-id="8c652-301">A kézi csomagolás beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-301">Set up manual packing</span></span>                                               | <span data-ttu-id="8c652-302">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-302">Global</span></span>         |
+| <span data-ttu-id="8c652-303">Egy elemre vonatkozó szállítási megszorítások beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-303">Set up transportation constraints for an item</span></span>                       | <span data-ttu-id="8c652-304">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-304">Global</span></span>         |
+| <span data-ttu-id="8c652-305">**\***A raktári munkairányelvek beállítása</span><span class="sxs-lookup"><span data-stu-id="8c652-305">**\***Set up warehouse work policies</span></span>                                | <span data-ttu-id="8c652-306">Globális</span><span class="sxs-lookup"><span data-stu-id="8c652-306">Global</span></span>         |
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="8c652-307">Lásd még</span><span class="sxs-lookup"><span data-stu-id="8c652-307">See also</span></span>
 --------
 
-[Új Feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
+[<span data-ttu-id="8c652-308">Új Feladatútmutatók (2016. február)</span><span class="sxs-lookup"><span data-stu-id="8c652-308">New Task guides (February 2016)</span></span>](new-task-guides-available-february-2016.md)
 
-[Új vagy frissített feladat-útmutatók (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
+[<span data-ttu-id="8c652-309">Új vagy frissített feladat-útmutatók (2016. augusztus)</span><span class="sxs-lookup"><span data-stu-id="8c652-309">New or updated Task guides (August 2016)</span></span>](new-updated-task-guides-available-august-2016.md)
 
-[Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
+[<span data-ttu-id="8c652-310">Új vagy frissített Feladat-útmutatók (2016. november)</span><span class="sxs-lookup"><span data-stu-id="8c652-310">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
 
 
 

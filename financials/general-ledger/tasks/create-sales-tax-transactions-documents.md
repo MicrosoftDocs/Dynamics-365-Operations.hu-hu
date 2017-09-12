@@ -16,47 +16,47 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 32a33f9dd0009ac932ab7ca89ea8425233b7f3e5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 27bf4ba33bd7d22443512d072572b9b1ffc164fa
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-sales-tax-transactions-on-documents"></a>Áfatranzakciók létrehozása dokumentumokra
+# <a name="create-sales-tax-transactions-on-documents"></a><span data-ttu-id="02ab1-103">Áfatranzakciók létrehozása dokumentumokra</span><span class="sxs-lookup"><span data-stu-id="02ab1-103">Create sales tax transactions on documents</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A dokumentumok áfájának számítása az Áfacsoport és Cikkáfacsoport megadásával történik a bizonylatsorokra. Ezek alapértelmezés szerint eltérnek az alapadatoktól, de manuálisan módosíthatók szükség esetén. A számított áfa a sor- és dokumentumszinten is ellenőrizhető. Ez a feladat az USMF bemutatócéget használja.
+<span data-ttu-id="02ab1-104">A dokumentumok áfájának számítása az Áfacsoport és Cikkáfacsoport megadásával történik a bizonylatsorokra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-104">Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines.</span></span> <span data-ttu-id="02ab1-105">Ezek alapértelmezés szerint eltérnek az alapadatoktól, de manuálisan módosíthatók szükség esetén.</span><span class="sxs-lookup"><span data-stu-id="02ab1-105">These default from master data but can be changed manually if necessary.</span></span> <span data-ttu-id="02ab1-106">A számított áfa a sor- és dokumentumszinten is ellenőrizhető.</span><span class="sxs-lookup"><span data-stu-id="02ab1-106">The calculated sales tax can be checked on a line and document level.</span></span> <span data-ttu-id="02ab1-107">Ez a feladat az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="02ab1-107">This task uses the USMF demo company.</span></span>
 
-1. Ugorjon a Kinnlevőségek > Rendelések > Minden értékesítési rendelés elemre.
-2. Kattintson az Új lehetőségre.
-3. A Vevői számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. Keresse meg és jelölje ki a kívánt rekordot a listán.
-5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-6. Kattintson az OK gombra.
-7. A listában jelölje meg a kiválasztott sort.
-8. A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-9. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-10. Adjon meg egy számot az Egységár mezőben.
-11. Bontsa ki vagy csukja össze a Soradatok szakaszt.
-12. Kattintson a Beállítások fülre.
-13. A Cikkáfacsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-14. A kívánt rekord megkeresése és kijelölése a listán
-15. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-16. Kattintson a Pénzügyre.
-17. Kattintson az Áfa elemre.
-18. Kattintson az OK gombra.
-19. Kattintson az Új sor hozzáadása lehetőségre.
-20. A listában jelölje meg a kiválasztott sort.
-21. A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-22. A kívánt rekord megkeresése és kijelölése a listán
-23. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-24. Adjon meg egy számot az Egységár mezőben.
-25. A Cikkáfacsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-26. A kívánt rekord megkeresése és kijelölése a listán
-27. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-28. A Művelet panelen kattintson az Értékesítés elemre.
-29. Kattintson az Áfa elemre.
-30. Kattintson az OK gombra.
+1. <span data-ttu-id="02ab1-108">Ugorjon a Kinnlevőségek > Rendelések > Minden értékesítési rendelés elemre.</span><span class="sxs-lookup"><span data-stu-id="02ab1-108">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="02ab1-109">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="02ab1-109">Click New.</span></span>
+3. <span data-ttu-id="02ab1-110">A Vevői számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="02ab1-110">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="02ab1-111">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="02ab1-111">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="02ab1-112">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-112">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="02ab1-113">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-113">Click OK.</span></span>
+7. <span data-ttu-id="02ab1-114">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="02ab1-114">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="02ab1-115">A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="02ab1-115">In the Item number field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="02ab1-116">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-116">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="02ab1-117">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="02ab1-117">In the Unit price field, enter a number.</span></span>
+11. <span data-ttu-id="02ab1-118">Bontsa ki vagy csukja össze a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="02ab1-118">Expand or collapse the Line details section.</span></span>
+12. <span data-ttu-id="02ab1-119">Kattintson a Beállítások fülre.</span><span class="sxs-lookup"><span data-stu-id="02ab1-119">Click the Setup tab.</span></span>
+13. <span data-ttu-id="02ab1-120">A Cikkáfacsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="02ab1-120">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="02ab1-121">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="02ab1-121">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="02ab1-122">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-122">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="02ab1-123">Kattintson a Pénzügyre.</span><span class="sxs-lookup"><span data-stu-id="02ab1-123">Click Financials.</span></span>
+17. <span data-ttu-id="02ab1-124">Kattintson az Áfa elemre.</span><span class="sxs-lookup"><span data-stu-id="02ab1-124">Click Sales tax.</span></span>
+18. <span data-ttu-id="02ab1-125">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-125">Click OK.</span></span>
+19. <span data-ttu-id="02ab1-126">Kattintson az Új sor hozzáadása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="02ab1-126">Click Add line.</span></span>
+20. <span data-ttu-id="02ab1-127">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="02ab1-127">In the list, mark the selected row.</span></span>
+21. <span data-ttu-id="02ab1-128">A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="02ab1-128">In the Item number field, click the drop-down button to open the lookup.</span></span>
+22. <span data-ttu-id="02ab1-129">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="02ab1-129">In the list, find and select the desired record.</span></span>
+23. <span data-ttu-id="02ab1-130">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-130">In the list, click the link in the selected row.</span></span>
+24. <span data-ttu-id="02ab1-131">Adjon meg egy számot az Egységár mezőben.</span><span class="sxs-lookup"><span data-stu-id="02ab1-131">In the Unit price field, enter a number.</span></span>
+25. <span data-ttu-id="02ab1-132">A Cikkáfacsoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="02ab1-132">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
+26. <span data-ttu-id="02ab1-133">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="02ab1-133">In the list, find and select the desired record.</span></span>
+27. <span data-ttu-id="02ab1-134">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-134">In the list, click the link in the selected row.</span></span>
+28. <span data-ttu-id="02ab1-135">A Művelet panelen kattintson az Értékesítés elemre.</span><span class="sxs-lookup"><span data-stu-id="02ab1-135">On the Action Pane, click Sell.</span></span>
+29. <span data-ttu-id="02ab1-136">Kattintson az Áfa elemre.</span><span class="sxs-lookup"><span data-stu-id="02ab1-136">Click Sales tax.</span></span>
+30. <span data-ttu-id="02ab1-137">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="02ab1-137">Click OK.</span></span>
 
 

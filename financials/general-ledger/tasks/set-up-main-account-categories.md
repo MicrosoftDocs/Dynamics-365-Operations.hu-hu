@@ -16,32 +16,32 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 27e907d1f9bfafb1df140b6b6d260a2a45809bae
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 94e17d7cbcc8f826e806a8d4bc026a9d7844e910
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-main-account-categories"></a>Fő számla kategóriáinak beállítása
+# <a name="set-up-main-account-categories"></a><span data-ttu-id="f7605-103">Fő számla kategóriáinak beállítása</span><span class="sxs-lookup"><span data-stu-id="f7605-103">Set up main account categories</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A Főszámla-kategóriák használhatók a pénzügyi jelentések alapértelmezett jelentéseihez és a Power BI szolgáltatásban. Az alapértelmezés szerint létrejött Főszámla-kategóriákat át lehet nevezni, de nem lehet törölni. További főkönyviszámla-kategóriákat hozhat létre, majd használhatja azokat jelentéshez és elemzéshez. Ez a feladat az USMF bemutatócéget használja.
+<span data-ttu-id="f7605-104">A Főszámla-kategóriák használhatók a pénzügyi jelentések alapértelmezett jelentéseihez és a Power BI szolgáltatásban.</span><span class="sxs-lookup"><span data-stu-id="f7605-104">Main account categories are used for the default reports in financial reporting and in Power BI.</span></span> <span data-ttu-id="f7605-105">Az alapértelmezés szerint létrejött Főszámla-kategóriákat át lehet nevezni, de nem lehet törölni.</span><span class="sxs-lookup"><span data-stu-id="f7605-105">Main account categories that are created by default can be renamed but not deleted.</span></span> <span data-ttu-id="f7605-106">További főkönyviszámla-kategóriákat hozhat létre, majd használhatja azokat jelentéshez és elemzéshez.</span><span class="sxs-lookup"><span data-stu-id="f7605-106">Additional account categories can be created and used for reporting and analysis purposes.</span></span> <span data-ttu-id="f7605-107">Ez a feladat az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="f7605-107">This task uses the USMF demo company.</span></span>
 
 
-## <a name="create-a-main-account-category"></a>Főszámla-kategória létrehozása
-1. Ugrás a következő útvonalra: Főkönyv > Számlatükör > Számlák > Főszámla-kategóriák.
-2. Kattintson az Új lehetőségre.
-3. A főszámla-kategória mezőben adjon meg egy egyedi nevet.
-4. A Leírás mezőben adja meg a főszámla-kategória leírását.
-5. A Fő számla típusa mezőben válassza ki azt a főszámlatípust, amelyet össze kíván kapcsolni a kategóriával.
+## <a name="create-a-main-account-category"></a><span data-ttu-id="f7605-108">Főszámla-kategória létrehozása</span><span class="sxs-lookup"><span data-stu-id="f7605-108">Create a main account category</span></span>
+1. <span data-ttu-id="f7605-109">Ugrás a következő útvonalra: Főkönyv > Számlatükör > Számlák > Főszámla-kategóriák.</span><span class="sxs-lookup"><span data-stu-id="f7605-109">Go to General ledger > Chart of accounts > Accounts > Main account categories.</span></span>
+2. <span data-ttu-id="f7605-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="f7605-110">Click New.</span></span>
+3. <span data-ttu-id="f7605-111">A főszámla-kategória mezőben adjon meg egy egyedi nevet.</span><span class="sxs-lookup"><span data-stu-id="f7605-111">In the Main account category field, enter a unique name.</span></span>
+4. <span data-ttu-id="f7605-112">A Leírás mezőben adja meg a főszámla-kategória leírását.</span><span class="sxs-lookup"><span data-stu-id="f7605-112">In the Description field, enter a description for the main account category.</span></span>
+5. <span data-ttu-id="f7605-113">A Fő számla típusa mezőben válassza ki azt a főszámlatípust, amelyet össze kíván kapcsolni a kategóriával.</span><span class="sxs-lookup"><span data-stu-id="f7605-113">In the Main account type field, select the main account type that will be linked to the category.</span></span>
 
-## <a name="link-main-accounts-to-account-category"></a>Fő számlák csatolása számlakategóriához
-1. Kattintson a Fő számlák összekapcsolása elemre.
-2. A listában válassza ki azokat a fő számlákat, amelyeket hozzákapcsolna a kijelölt főszámla-kategóriához.
-    * Ha a fú számlákat hozzárendeli a fő számla kategóriájához, azzal összesíti a számlák egyenlegét, amikor a kategóriát pénzügyi jelentéshez és elemzéshez használja.  
-3. Jelölje be, vagy törölje a jelölést az Összekapcsolt elem mellett a fő számlák kiválasztásához.
-4. Kattintson az OK gombra.
-5. Kattintson az Igen gombra.
+## <a name="link-main-accounts-to-account-category"></a><span data-ttu-id="f7605-114">Fő számlák csatolása számlakategóriához</span><span class="sxs-lookup"><span data-stu-id="f7605-114">Link main accounts to account category</span></span>
+1. <span data-ttu-id="f7605-115">Kattintson a Fő számlák összekapcsolása elemre.</span><span class="sxs-lookup"><span data-stu-id="f7605-115">Click Link main accounts.</span></span>
+2. <span data-ttu-id="f7605-116">A listában válassza ki azokat a fő számlákat, amelyeket hozzákapcsolna a kijelölt főszámla-kategóriához.</span><span class="sxs-lookup"><span data-stu-id="f7605-116">In the list, select the main accounts to assign to the main account category.</span></span>
+    * <span data-ttu-id="f7605-117">Ha a fú számlákat hozzárendeli a fő számla kategóriájához, azzal összesíti a számlák egyenlegét, amikor a kategóriát pénzügyi jelentéshez és elemzéshez használja.</span><span class="sxs-lookup"><span data-stu-id="f7605-117">Assigning main accounts to a main account category will aggregate the balances of the accounts when that category is used for financial reporting and analysis.</span></span>  
+3. <span data-ttu-id="f7605-118">Jelölje be, vagy törölje a jelölést az Összekapcsolt elem mellett a fő számlák kiválasztásához.</span><span class="sxs-lookup"><span data-stu-id="f7605-118">Select or clear the Linked option to choose the main accounts.</span></span>
+4. <span data-ttu-id="f7605-119">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="f7605-119">Click OK.</span></span>
+5. <span data-ttu-id="f7605-120">Kattintson az Igen gombra.</span><span class="sxs-lookup"><span data-stu-id="f7605-120">Click Yes.</span></span>
 
 

@@ -15,97 +15,97 @@ ms.custom: 252754
 ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1645d3a749128a92a4a54ad309c99d69b221f5a2
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 5648d38050f843aea77a2b1c8f129f47733884b6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>Új vagy frissített feladat-útmutatók (2016. augusztus)
+# <a name="new-or-updated-task-guides-august-2016"></a><span data-ttu-id="b756c-104">Új vagy frissített feladat-útmutatók (2016. augusztus)</span><span class="sxs-lookup"><span data-stu-id="b756c-104">New or updated task guides (August 2016)</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-A témakör felsorolja a Microsoft Dynamics AX (2016. augusztus – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár.
+<span data-ttu-id="b756c-105">A témakör felsorolja a Microsoft Dynamics AX (2016. augusztus – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat.</span><span class="sxs-lookup"><span data-stu-id="b756c-105">This topic lists the new or updated Task guides that were released to the Microsoft (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="b756c-106">Nincs új Első lépések könyvtár.</span><span class="sxs-lookup"><span data-stu-id="b756c-106">No new Getting Started Library was released.</span></span>
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Feladat-útmutatók (2016. augusztus - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="b756c-107">[]()Feladat-útmutatók (2016. augusztus - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában</span><span class="sxs-lookup"><span data-stu-id="b756c-107">[]()Task guides in the (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX</span></span>
 ---------------------------------------------------------------------------------------------------
 
-A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához, a Microsoft Dynamics AX Platform 2. frissítéséhez (2016. augusztus), valamint a Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
+<span data-ttu-id="b756c-108">A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához, a Microsoft Dynamics AX Platform 2. frissítéséhez (2016. augusztus), valamint a Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat.</span><span class="sxs-lookup"><span data-stu-id="b756c-108">The (August 2016 - all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX platform update 2 (August 2016), the Dynamics AX May 2016 application update, and the Microsoft Dynamics AX February 2016 release.</span></span> <span data-ttu-id="b756c-109">A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások](whats-new-changed.md).</span><span class="sxs-lookup"><span data-stu-id="b756c-109">For more information about these releases, see [What’s new or changed](whats-new-changed.md).</span></span> <span data-ttu-id="b756c-110">A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el.</span><span class="sxs-lookup"><span data-stu-id="b756c-110">Localized versions of the Task guides are available in this library.</span></span> <span data-ttu-id="b756c-111">A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).</span><span class="sxs-lookup"><span data-stu-id="b756c-111">For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span>
 
-### <a name="data-access"></a>Adatelérés
+### <a name="data-access"></a><span data-ttu-id="b756c-112">Adatelérés</span><span class="sxs-lookup"><span data-stu-id="b756c-112">Data access</span></span>
 
-| BPM-sor           | Ország/régió |
+| <span data-ttu-id="b756c-113">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="b756c-113">BPM line</span></span>           | <span data-ttu-id="b756c-114">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="b756c-114">Country/region</span></span> |
 |--------------------|----------------|
-| Kötegelt feladat létrehozása | Globális         |
+| <span data-ttu-id="b756c-115">Kötegelt feladat létrehozása</span><span class="sxs-lookup"><span data-stu-id="b756c-115">Create a batch job</span></span> | <span data-ttu-id="b756c-116">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-116">Global</span></span>         |
 
-### <a name="inventory"></a>Készlet
+### <a name="inventory"></a><span data-ttu-id="b756c-117">Készlet</span><span class="sxs-lookup"><span data-stu-id="b756c-117">Inventory</span></span>
 
-| BPM-sor                                | Ország/régió |
+| <span data-ttu-id="b756c-118">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="b756c-118">BPM line</span></span>                                | <span data-ttu-id="b756c-119">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="b756c-119">Country/region</span></span> |
 |-----------------------------------------|----------------|
-| Készlet rendelkezésre állásának ellenőrzése         | Globális         |
-| A cikk érkezésáttekintési profiljának beállítása | Globális         |
+| <span data-ttu-id="b756c-120">Készlet rendelkezésre állásának ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="b756c-120">Check the availability of stock</span></span>         | <span data-ttu-id="b756c-121">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-121">Global</span></span>         |
+| <span data-ttu-id="b756c-122">A cikk érkezésáttekintési profiljának beállítása</span><span class="sxs-lookup"><span data-stu-id="b756c-122">Set up an item arrival overview profile</span></span> | <span data-ttu-id="b756c-123">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-123">Global</span></span>         |
 
-### <a name="inventory-management"></a>Készletgazdálkodás
+### <a name="inventory-management"></a><span data-ttu-id="b756c-124">Készletgazdálkodás</span><span class="sxs-lookup"><span data-stu-id="b756c-124">Inventory management</span></span>
 
-| BPM-sor              | Ország/régió |
+| <span data-ttu-id="b756c-125">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="b756c-125">BPM line</span></span>              | <span data-ttu-id="b756c-126">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="b756c-126">Country/region</span></span> |
 |-----------------------|----------------|
-| Minőségi rendelések beállítása | Globális         |
+| <span data-ttu-id="b756c-127">Minőségi rendelések beállítása</span><span class="sxs-lookup"><span data-stu-id="b756c-127">Set up quality orders</span></span> | <span data-ttu-id="b756c-128">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-128">Global</span></span>         |
 
-### <a name="procurement"></a>Beszerzés
+### <a name="procurement"></a><span data-ttu-id="b756c-129">Beszerzés</span><span class="sxs-lookup"><span data-stu-id="b756c-129">Procurement</span></span>
 
-| BPM-sor                                          | Ország/régió |
+| <span data-ttu-id="b756c-130">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="b756c-130">BPM line</span></span>                                          | <span data-ttu-id="b756c-131">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="b756c-131">Country/region</span></span> |
 |---------------------------------------------------|----------------|
-| Beszerzési rendelés létrehozása egyszeri szállítóhoz   | Globális         |
-| Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása  | Globális         |
-| Beszerzési visszárurendelés létrehozása                    | Globális         |
-| Ismételt beszerzési rendelés létrehozása                    | Globális         |
-| Az áruk bevételezésének rögzítése a beszerzési rendelésen | Globális         |
+| <span data-ttu-id="b756c-132">Beszerzési rendelés létrehozása egyszeri szállítóhoz</span><span class="sxs-lookup"><span data-stu-id="b756c-132">Create a purchase order for a one-time supplier</span></span>   | <span data-ttu-id="b756c-133">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-133">Global</span></span>         |
+| <span data-ttu-id="b756c-134">Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása</span><span class="sxs-lookup"><span data-stu-id="b756c-134">Create a purchase order with a delivery schedule</span></span>  | <span data-ttu-id="b756c-135">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-135">Global</span></span>         |
+| <span data-ttu-id="b756c-136">Beszerzési visszárurendelés létrehozása</span><span class="sxs-lookup"><span data-stu-id="b756c-136">Create a purchase return order</span></span>                    | <span data-ttu-id="b756c-137">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-137">Global</span></span>         |
+| <span data-ttu-id="b756c-138">Ismételt beszerzési rendelés létrehozása</span><span class="sxs-lookup"><span data-stu-id="b756c-138">Create a repeat purchase order</span></span>                    | <span data-ttu-id="b756c-139">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-139">Global</span></span>         |
+| <span data-ttu-id="b756c-140">Az áruk bevételezésének rögzítése a beszerzési rendelésen</span><span class="sxs-lookup"><span data-stu-id="b756c-140">Record the receipt of goods on the purchase order</span></span> | <span data-ttu-id="b756c-141">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-141">Global</span></span>         |
 
-### <a name="resource-and-activities"></a>Erőforrás és tevékenységek
+### <a name="resource-and-activities"></a><span data-ttu-id="b756c-142">Erőforrás és tevékenységek</span><span class="sxs-lookup"><span data-stu-id="b756c-142">Resource and activities</span></span>
 
-| BPM-sor                                                | Ország/régió |
+| <span data-ttu-id="b756c-143">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="b756c-143">BPM line</span></span>                                                | <span data-ttu-id="b756c-144">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="b756c-144">Country/region</span></span> |
 |---------------------------------------------------------|----------------|
-| A termelési folyamat verziójának aktiválása                      | Globális         |
-| Kanbanszabály létrehozása több tevékenységhez            | Globális         |
-| Kanbanszabály létrehozása kanbansoresemény használatával          | Globális         |
-| Kanbanszabály létrehozása minimális készletesemény használatával        | Globális         |
-| Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet | Globális         |
+| <span data-ttu-id="b756c-145">A termelési folyamat verziójának aktiválása</span><span class="sxs-lookup"><span data-stu-id="b756c-145">Activate a production flow version</span></span>                      | <span data-ttu-id="b756c-146">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-146">Global</span></span>         |
+| <span data-ttu-id="b756c-147">Kanbanszabály létrehozása több tevékenységhez</span><span class="sxs-lookup"><span data-stu-id="b756c-147">Create a kanban rule for multiple activities</span></span>            | <span data-ttu-id="b756c-148">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-148">Global</span></span>         |
+| <span data-ttu-id="b756c-149">Kanbanszabály létrehozása kanbansoresemény használatával</span><span class="sxs-lookup"><span data-stu-id="b756c-149">Create a kanban rule using a kanban line event</span></span>          | <span data-ttu-id="b756c-150">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-150">Global</span></span>         |
+| <span data-ttu-id="b756c-151">Kanbanszabály létrehozása minimális készletesemény használatával</span><span class="sxs-lookup"><span data-stu-id="b756c-151">Create a kanban rule using a minimum stock event</span></span>        | <span data-ttu-id="b756c-152">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-152">Global</span></span>         |
+| <span data-ttu-id="b756c-153">Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet</span><span class="sxs-lookup"><span data-stu-id="b756c-153">Use the safety stock journal to update minimum coverage</span></span> | <span data-ttu-id="b756c-154">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-154">Global</span></span>         |
 
-### <a name="supplier-relationship-management"></a>Szállítókapcsolat-kezelés
+### <a name="supplier-relationship-management"></a><span data-ttu-id="b756c-155">Szállítókapcsolat-kezelés</span><span class="sxs-lookup"><span data-stu-id="b756c-155">Supplier relationship management</span></span>
 
-| BPM-sor                                                           | Ország/régió |
+| <span data-ttu-id="b756c-156">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="b756c-156">BPM line</span></span>                                                           | <span data-ttu-id="b756c-157">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="b756c-157">Country/region</span></span> |
 |--------------------------------------------------------------------|----------------|
-| Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan                | Globális         |
-| Beszerzési katalógus létrehozása                                       | Globális         |
-| Olyan igénylés létrehozása, amely ajánlatkérést használ                              | Globális         |
-| Pontozási mód létrehozása az ajánlatkérésekhez                                   | Globális         |
-| Szállítói bankszámla létrehozása                                       | Globális         |
-| Beszerzési irányelvek létrehozása                                         | Globális         |
-| Meghirdetési típusok és pontozási kritériumok létrehozása az ajánlatkérésekhez            | Globális         |
-| Engedélyek létrehozása, amelyek birtokában mások nevében lehet termékeket rendelni | Globális         |
-| Beszerzésikategória-hierarchiák irányelveinek beállítása               | Globális         |
+| <span data-ttu-id="b756c-158">Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan</span><span class="sxs-lookup"><span data-stu-id="b756c-158">Approve vendors for specific procurement categories</span></span>                | <span data-ttu-id="b756c-159">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-159">Global</span></span>         |
+| <span data-ttu-id="b756c-160">Beszerzési katalógus létrehozása</span><span class="sxs-lookup"><span data-stu-id="b756c-160">Create a procurement catalog</span></span>                                       | <span data-ttu-id="b756c-161">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-161">Global</span></span>         |
+| <span data-ttu-id="b756c-162">Olyan igénylés létrehozása, amely ajánlatkérést használ</span><span class="sxs-lookup"><span data-stu-id="b756c-162">Create a requisition that uses an RFQ</span></span>                              | <span data-ttu-id="b756c-163">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-163">Global</span></span>         |
+| <span data-ttu-id="b756c-164">Pontozási mód létrehozása az ajánlatkérésekhez</span><span class="sxs-lookup"><span data-stu-id="b756c-164">Create a scoring method for RFQs</span></span>                                   | <span data-ttu-id="b756c-165">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-165">Global</span></span>         |
+| <span data-ttu-id="b756c-166">Szállítói bankszámla létrehozása</span><span class="sxs-lookup"><span data-stu-id="b756c-166">Create a vendor bank account</span></span>                                       | <span data-ttu-id="b756c-167">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-167">Global</span></span>         |
+| <span data-ttu-id="b756c-168">Beszerzési irányelvek létrehozása</span><span class="sxs-lookup"><span data-stu-id="b756c-168">Create purchasing policies</span></span>                                         | <span data-ttu-id="b756c-169">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-169">Global</span></span>         |
+| <span data-ttu-id="b756c-170">Meghirdetési típusok és pontozási kritériumok létrehozása az ajánlatkérésekhez</span><span class="sxs-lookup"><span data-stu-id="b756c-170">Create solicitation types and scoring criteria for RFQs</span></span>            | <span data-ttu-id="b756c-171">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-171">Global</span></span>         |
+| <span data-ttu-id="b756c-172">Engedélyek létrehozása, amelyek birtokában mások nevében lehet termékeket rendelni</span><span class="sxs-lookup"><span data-stu-id="b756c-172">Set up permissions for ordering products on behalf of someone else</span></span> | <span data-ttu-id="b756c-173">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-173">Global</span></span>         |
+| <span data-ttu-id="b756c-174">Beszerzésikategória-hierarchiák irányelveinek beállítása</span><span class="sxs-lookup"><span data-stu-id="b756c-174">Set up policies for procurement category hierarchies</span></span>               | <span data-ttu-id="b756c-175">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-175">Global</span></span>         |
 
-### <a name="warehouse-and-transportation"></a>Raktározás és szállítás
+### <a name="warehouse-and-transportation"></a><span data-ttu-id="b756c-176">Raktározás és szállítás</span><span class="sxs-lookup"><span data-stu-id="b756c-176">Warehouse and transportation</span></span>
 
-| BPM-sor                                                                    | Ország/régió |
+| <span data-ttu-id="b756c-177">BPM-sor</span><span class="sxs-lookup"><span data-stu-id="b756c-177">BPM line</span></span>                                                                    | <span data-ttu-id="b756c-178">Ország/régió</span><span class="sxs-lookup"><span data-stu-id="b756c-178">Country/region</span></span> |
 |-----------------------------------------------------------------------------|----------------|
-| Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez | Globális         |
+| <span data-ttu-id="b756c-179">Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez</span><span class="sxs-lookup"><span data-stu-id="b756c-179">Set up a mobile device menu item for completing work of type Purchase order</span></span> | <span data-ttu-id="b756c-180">Globális</span><span class="sxs-lookup"><span data-stu-id="b756c-180">Global</span></span>         |
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="see-also"></a><span data-ttu-id="b756c-181">Lásd még</span><span class="sxs-lookup"><span data-stu-id="b756c-181">See also</span></span>
 --------
 
-[Új Feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
+[<span data-ttu-id="b756c-182">Új Feladatútmutatók (2016. február)</span><span class="sxs-lookup"><span data-stu-id="b756c-182">New Task guides (February 2016)</span></span>](new-task-guides-available-february-2016.md)
 
-[Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
+[<span data-ttu-id="b756c-183">Új vagy frissített Feladat-útmutatók (2016. május)</span><span class="sxs-lookup"><span data-stu-id="b756c-183">New or updated Task guides (May 2016)</span></span>](new-updated-task-guides-available-may-2016.md)
 
-[Új vagy frissített Feladat-útmutatók (2016. november)](new-task-guides-november-2016.md)
+[<span data-ttu-id="b756c-184">Új vagy frissített Feladat-útmutatók (2016. november)</span><span class="sxs-lookup"><span data-stu-id="b756c-184">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
 
 
 

@@ -17,34 +17,34 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: a452f875622dde748d3d1c518212a9a35e498d71
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5023ca589b3ab25d808a52a9162f27430bd69241
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-project-purchase-order"></a>Projekt beszerzési rendelésének létrehozása
+# <a name="create-project-purchase-order"></a><span data-ttu-id="18934-103">Projekt beszerzési rendelésének létrehozása</span><span class="sxs-lookup"><span data-stu-id="18934-103">Create project purchase order</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy projekt beszerzési rendelését. Ez a feladat az USSI-adatkészletet használja.
+<span data-ttu-id="18934-104">Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy projekt beszerzési rendelését.</span><span class="sxs-lookup"><span data-stu-id="18934-104">This procedure shows you how to create a project purchase order.</span></span> <span data-ttu-id="18934-105">Ez a feladat az USSI-adatkészletet használja.</span><span class="sxs-lookup"><span data-stu-id="18934-105">This task uses the USSI data set.</span></span>
 
-1. Ugorjon a Projektvezetés és könyvelés > Projektek > Minden projekt pontra.
-2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-3. A Művelet panelen kattintson a Kezelés elemre.
-4. Kattintson a Cikkfeladatra.
-5. Kattintson a Beszerzési rendelés lehetőségre.
-6. A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.
-7. A Hely mezőben adjon meg vagy válasszon ki egy értéket.
-    * Ezeket a lépéseket nem kötelező végrehajtani, de valóban leegyszerűsítik a beszerzési rendelést azzal, hogy beállítanak egy alapértelmezett telephelyet és raktárat a beszerzési rendeléssorokhoz.  
-8. A Raktár mezőben adjon meg vagy válasszon ki egy értéket.
-9. Kattintson az OK gombra.
-10. A listában jelölje meg a kiválasztott sort.
-11. Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Ez lehet a cikkszám vagy egy beszerzési kategória.  
-12. Bontsa ki a Soradatok szakaszt.
-13. Kattintson a Projekt fülre.
-    * Győződjön meg arról, hogy az értékesítési és az önköltségi árak rendelkezésre állnak. Ha nem állnak rendelkezésre, de szükségesek, adja meg az adatokat.  
-14. Kattintson a Mentés gombra.
+1. <span data-ttu-id="18934-106">Ugorjon a Projektvezetés és könyvelés > Projektek > Minden projekt pontra.</span><span class="sxs-lookup"><span data-stu-id="18934-106">Go to Project management and accounting > Projects > All projects.</span></span>
+2. <span data-ttu-id="18934-107">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="18934-107">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="18934-108">A Művelet panelen kattintson a Kezelés elemre.</span><span class="sxs-lookup"><span data-stu-id="18934-108">On the Action Pane, click Manage.</span></span>
+4. <span data-ttu-id="18934-109">Kattintson a Cikkfeladatra.</span><span class="sxs-lookup"><span data-stu-id="18934-109">Click Item task.</span></span>
+5. <span data-ttu-id="18934-110">Kattintson a Beszerzési rendelés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="18934-110">Click Purchase order.</span></span>
+6. <span data-ttu-id="18934-111">A Szállítószámla mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="18934-111">In the Vendor account field, enter or select a value.</span></span>
+7. <span data-ttu-id="18934-112">A Hely mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="18934-112">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="18934-113">Ezeket a lépéseket nem kötelező végrehajtani, de valóban leegyszerűsítik a beszerzési rendelést azzal, hogy beállítanak egy alapértelmezett telephelyet és raktárat a beszerzési rendeléssorokhoz.</span><span class="sxs-lookup"><span data-stu-id="18934-113">These steps aren't required, but they do simplify the purchase order by setting up a default site and warehouse for the purchase order lines.</span></span>  
+8. <span data-ttu-id="18934-114">A Raktár mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="18934-114">In the Warehouse field, enter or select a value.</span></span>
+9. <span data-ttu-id="18934-115">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="18934-115">Click OK.</span></span>
+10. <span data-ttu-id="18934-116">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="18934-116">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="18934-117">Az Elemszám mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="18934-117">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="18934-118">Ez lehet a cikkszám vagy egy beszerzési kategória.</span><span class="sxs-lookup"><span data-stu-id="18934-118">This can be the item number or a procurement category.</span></span>  
+12. <span data-ttu-id="18934-119">Bontsa ki a Soradatok szakaszt.</span><span class="sxs-lookup"><span data-stu-id="18934-119">Expand the Line details section.</span></span>
+13. <span data-ttu-id="18934-120">Kattintson a Projekt fülre.</span><span class="sxs-lookup"><span data-stu-id="18934-120">Click the Project tab.</span></span>
+    * <span data-ttu-id="18934-121">Győződjön meg arról, hogy az értékesítési és az önköltségi árak rendelkezésre állnak.</span><span class="sxs-lookup"><span data-stu-id="18934-121">Verify that the sales and cost prices are available.</span></span> <span data-ttu-id="18934-122">Ha nem állnak rendelkezésre, de szükségesek, adja meg az adatokat.</span><span class="sxs-lookup"><span data-stu-id="18934-122">If they are not available but needed, enter the information.</span></span>  
+14. <span data-ttu-id="18934-123">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="18934-123">Click Save.</span></span>
 
 

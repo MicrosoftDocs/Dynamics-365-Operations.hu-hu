@@ -16,45 +16,45 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0b1045610881bc272798f1176fbca58731e5d43b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e665fc53455e457a2488f4ec28ebb5b715d90eb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-cost-elements"></a>Költségösszetevők létrehozása 
+# <a name="create-cost-elements"></a><span data-ttu-id="b85cc-103">Költségösszetevők létrehozása</span><span class="sxs-lookup"><span data-stu-id="b85cc-103">Create cost elements</span></span> 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A Költségkönyvelésben számos módon a hozhatók létre költségelemek. Ez az eljárás bemutatja, hogyan lehet költségösszetevőket létrehozni a fő számlák importálásával az adatcsatlakozón keresztül. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás egy olyan költségkönyvelési funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
+<span data-ttu-id="b85cc-104">A Költségkönyvelésben számos módon a hozhatók létre költségelemek.</span><span class="sxs-lookup"><span data-stu-id="b85cc-104">There are several ways to create cost elements in Cost accounting.</span></span> <span data-ttu-id="b85cc-105">Ez az eljárás bemutatja, hogyan lehet költségösszetevőket létrehozni a fő számlák importálásával az adatcsatlakozón keresztül.</span><span class="sxs-lookup"><span data-stu-id="b85cc-105">This procedure shows how to create cost elements by importing main accounts via a data connector.</span></span> <span data-ttu-id="b85cc-106">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="b85cc-106">The USMF demo company was used to create this procedure.</span></span> <span data-ttu-id="b85cc-107">Ez az eljárás egy olyan költségkönyvelési funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.</span><span class="sxs-lookup"><span data-stu-id="b85cc-107">This procedure is for a Cost accounting feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
 
-## <a name="create-new-cost-elements"></a>Új költségösszetevők létrehozása
-1. Ugrás a Költségkönyvelés > Dimenziók > Költségösszetevő-dimenziók elemre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Név mezőbe.
-4. A Dimenziótagok adatcsatlakozója mezőben adjon meg, vagy válasszon ki egy értéket.
-5. A Leírás mezőben adjon meg egy értéket.
-6. Kattintson a Mentés gombra.
+## <a name="create-new-cost-elements"></a><span data-ttu-id="b85cc-108">Új költségösszetevők létrehozása</span><span class="sxs-lookup"><span data-stu-id="b85cc-108">Create new cost elements</span></span>
+1. <span data-ttu-id="b85cc-109">Ugrás a Költségkönyvelés > Dimenziók > Költségösszetevő-dimenziók elemre.</span><span class="sxs-lookup"><span data-stu-id="b85cc-109">Go to Cost accounting > Dimensions > Cost element dimensions.</span></span>
+2. <span data-ttu-id="b85cc-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b85cc-110">Click New.</span></span>
+3. <span data-ttu-id="b85cc-111">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="b85cc-111">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="b85cc-112">A Dimenziótagok adatcsatlakozója mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b85cc-112">In the Data connector for dimension members field, enter or select a value.</span></span>
+5. <span data-ttu-id="b85cc-113">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b85cc-113">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="b85cc-114">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="b85cc-114">Click Save.</span></span>
 
-## <a name="configure-the-data-connector"></a>Az adatcsatlakozó konfigurálása
-1. Kattintson a Dimenziótag-szolgáltató konfigurálása lehetőségre.
-2. A Számlatükör mezőben adjon meg, vagy válasszon ki egy értéket.
-    * Válassza ki a Megosztott lehetőséget a megosztott számlatükör használatához.  
-3. Kattintson az Új lehetőségre.
-4. A listában jelölje meg a kiválasztott sort.
-    * A számlákra szűrőket alkalmazhat, hogy megfeleljenek a feltételeinek.  
-5. A fő számlából mezőben adjon meg vagy válasszon ki egy értéket.
-6. A fő számlához mezőben adjon meg vagy válasszon ki egy értéket.
-7. Kattintson az OK gombra.
+## <a name="configure-the-data-connector"></a><span data-ttu-id="b85cc-115">Az adatcsatlakozó konfigurálása</span><span class="sxs-lookup"><span data-stu-id="b85cc-115">Configure the data connector</span></span>
+1. <span data-ttu-id="b85cc-116">Kattintson a Dimenziótag-szolgáltató konfigurálása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b85cc-116">Click Configure dimension member provider.</span></span>
+2. <span data-ttu-id="b85cc-117">A Számlatükör mezőben adjon meg, vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b85cc-117">In the Chart of accounts field, enter or select a value.</span></span>
+    * <span data-ttu-id="b85cc-118">Válassza ki a Megosztott lehetőséget a megosztott számlatükör használatához.</span><span class="sxs-lookup"><span data-stu-id="b85cc-118">Select Shared to use the shared chart of accounts.</span></span>  
+3. <span data-ttu-id="b85cc-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="b85cc-119">Click New.</span></span>
+4. <span data-ttu-id="b85cc-120">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="b85cc-120">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="b85cc-121">A számlákra szűrőket alkalmazhat, hogy megfeleljenek a feltételeinek.</span><span class="sxs-lookup"><span data-stu-id="b85cc-121">You can apply filters to accounts to meet your criteria.</span></span>  
+5. <span data-ttu-id="b85cc-122">A fő számlából mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b85cc-122">In the From main account field, enter or select a value.</span></span>
+6. <span data-ttu-id="b85cc-123">A fő számlához mezőben adjon meg vagy válasszon ki egy értéket.</span><span class="sxs-lookup"><span data-stu-id="b85cc-123">In the To main account field, enter or select a value.</span></span>
+7. <span data-ttu-id="b85cc-124">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="b85cc-124">Click OK.</span></span>
 
-## <a name="import-main-accounts"></a>Fő számlák importálása
-1. Kattintson a Dimenziótagok importálása elemre.
-    * A fő számlákat a rendszer a Költségkönyvelésbe importálja és költségösszetevőként használja.  
-2. Kattintson az OK gombra.
+## <a name="import-main-accounts"></a><span data-ttu-id="b85cc-125">Fő számlák importálása</span><span class="sxs-lookup"><span data-stu-id="b85cc-125">Import main accounts</span></span>
+1. <span data-ttu-id="b85cc-126">Kattintson a Dimenziótagok importálása elemre.</span><span class="sxs-lookup"><span data-stu-id="b85cc-126">Click Import dimension members.</span></span>
+    * <span data-ttu-id="b85cc-127">A fő számlákat a rendszer a Költségkönyvelésbe importálja és költségösszetevőként használja.</span><span class="sxs-lookup"><span data-stu-id="b85cc-127">Main accounts will be imported into Cost accounting and used as cost elements.</span></span>  
+2. <span data-ttu-id="b85cc-128">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="b85cc-128">Click OK.</span></span>
 
-## <a name="view-the-imported-accounts-as-cost-elements"></a>Importált számlák megjelenítése költségösszetevőként
-1. Kattintson a Dimenziótagok megtekintése elemre.
-    * Az importált főkönyvi számlák megtekintése költségösszetevőként, amelyre a költségek könyvelhetők.  
+## <a name="view-the-imported-accounts-as-cost-elements"></a><span data-ttu-id="b85cc-129">Importált számlák megjelenítése költségösszetevőként</span><span class="sxs-lookup"><span data-stu-id="b85cc-129">View the imported accounts as cost elements</span></span>
+1. <span data-ttu-id="b85cc-130">Kattintson a Dimenziótagok megtekintése elemre.</span><span class="sxs-lookup"><span data-stu-id="b85cc-130">Click View dimension members.</span></span>
+    * <span data-ttu-id="b85cc-131">Az importált főkönyvi számlák megtekintése költségösszetevőként, amelyre a költségek könyvelhetők.</span><span class="sxs-lookup"><span data-stu-id="b85cc-131">View the imported ledger accounts as cost elements in your business that costs can flow to.</span></span>  
 
 

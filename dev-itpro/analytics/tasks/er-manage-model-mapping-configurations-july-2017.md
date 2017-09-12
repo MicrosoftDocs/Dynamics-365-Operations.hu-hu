@@ -16,150 +16,150 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 65db27e59ce5f9234eeb486efeb9bb6e9dad40f7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 473cad588253b0eb42eb927834e186ccfa4c4f1e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>Modell-leképezési konfigurációk kezelése elektronikus jelentéskészítéshez (ER)
+# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a><span data-ttu-id="eced9-103">Modell-leképezési konfigurációk kezelése elektronikus jelentéskészítéshez (ER)</span><span class="sxs-lookup"><span data-stu-id="eced9-103">Manage model mapping configurations for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörhöz rendelt felhasználó miként hozhat létre konfigurációszolgáltatót az Elektronikus jelentéshez (ER). Ebben a feladat-útmutatóban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő feladat-útmutató lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” 
+<span data-ttu-id="eced9-104">A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörhöz rendelt felhasználó miként hozhat létre konfigurációszolgáltatót az Elektronikus jelentéshez (ER).</span><span class="sxs-lookup"><span data-stu-id="eced9-104">The following steps explain how a user assigned to the System administrator or Electronic reporting developer role can manage Electronic reporting (ER) model mappings in separate ER configurations.</span></span> <span data-ttu-id="eced9-105">Ebben a feladat-útmutatóban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő feladat-útmutató lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.”</span><span class="sxs-lookup"><span data-stu-id="eced9-105">In this task guide, you will create required ER configurations for the sample company, Litware, Inc. To complete this task guide, you must first complete the steps in the task guide, “ER Create a configuration provider” and mark it as active.</span></span> 
 
-Mivel az ER-konfigurációk meg vannak osztva a vállalatok között, a feladat-útmutatót a tetszése szerint vállalat-adatkészlettel hajthatja végre. A jelen feladat-útmutatóhoz tartozó funkciók akkor érhetők el, ha telepítette a következő gyorsjavításokat: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 (Dynamics AX 7.0-s verzió) vagy https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 (Dynamics 365 for Operations verzió).
+<span data-ttu-id="eced9-106">Mivel az ER-konfigurációk meg vannak osztva a vállalatok között, a feladat-útmutatót a tetszése szerint vállalat-adatkészlettel hajthatja végre.</span><span class="sxs-lookup"><span data-stu-id="eced9-106">Because ER configurations are shared among companies, you can complete this task guide using the company data set of your choice.</span></span> <span data-ttu-id="eced9-107">A jelen feladat-útmutatóhoz tartozó funkciók akkor érhetők el, ha telepítette a következő gyorsjavításokat: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 (Dynamics AX 7.0-s verzió) vagy https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 (Dynamics 365 for Operations verzió).</span><span class="sxs-lookup"><span data-stu-id="eced9-107">The functionality for this task guide is available if you have installed one of the following hotfixes: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 for the Dynamics AX 7.0 version or https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 for the Dynamics 365 for Operations version.</span></span>
 
-1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
-    * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, először el kell végeznie a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” feladat-útmutatóban szereplő lépéseket.   
+1. <span data-ttu-id="eced9-108">Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="eced9-109">Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató.</span><span class="sxs-lookup"><span data-stu-id="eced9-109">Verify that the configuration provider for the sample company Litware, Inc. is available and marked as active.</span></span> <span data-ttu-id="eced9-110">Ha nem látja a konfigurációszolgáltatót, először el kell végeznie a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” feladat-útmutatóban szereplő lépéseket.</span><span class="sxs-lookup"><span data-stu-id="eced9-110">If you don’t see this configuration provider, you must first complete the steps in the task guide, Create a configuration provider and mark it as active.</span></span>   
 
-## <a name="add-a-new-er-model-configuration"></a>Új ER-modellkonfiguráció hozzáadása
-1. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
-    * Új modellkonfiguráció hozzáadása. A névnek egyedinek kell lennie a konfigurációfában.  
-2. A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.
-3. A Név mezőben írja be a „Minta adatmodell” szöveget.
-    * Minta adatmodell  
-4. Kattintson a Konfiguráció létrehozása lehetőségre.
-5. Kattintson a Tervező pontra.
-6. Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-7. A Név mezőbe írja be a következőt: „Gyökér”.
-    * Gyökér  
-8. Kattintson a Hozzáadás gombra.
-9. Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-10. A Név mezőbe írja be a Vállalat szót.
-    * Cég  
-11. Kattintson a Hozzáadás gombra.
-12. A Leírás mezőben adja meg 'A jogi személy vagy vállalat leírása, amelybe egy felhasználó bejelentkezett futásidőben' szöveget. 
-    * A jogi személy vagy vállalat leírása, amelybe egy felhasználó bejelentkezett futásidőben.  
-13. Kattintson a Gyökérhivatkozás lehetőségre.
-14. Kattintson az OK gombra.
-15. Kattintson a Mentés gombra.
-16. Zárja be a lapot.
-17. Kattintson az Állapot módosítása elemre.
-18. Kattintson a Befejezés gombra.
-19. Kattintson az OK gombra.
+## <a name="add-a-new-er-model-configuration"></a><span data-ttu-id="eced9-111">Új ER-modellkonfiguráció hozzáadása</span><span class="sxs-lookup"><span data-stu-id="eced9-111">Add a new ER model configuration</span></span>
+1. <span data-ttu-id="eced9-112">Kattintson a Jelentéskészítés konfigurációi lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-112">Click Reporting configurations.</span></span>
+    * <span data-ttu-id="eced9-113">Új modellkonfiguráció hozzáadása.</span><span class="sxs-lookup"><span data-stu-id="eced9-113">Add a new model configuration.</span></span> <span data-ttu-id="eced9-114">A névnek egyedinek kell lennie a konfigurációfában.</span><span class="sxs-lookup"><span data-stu-id="eced9-114">The name must be unique in the configurations tree.</span></span>  
+2. <span data-ttu-id="eced9-115">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="eced9-115">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="eced9-116">A Név mezőben írja be a „Minta adatmodell” szöveget.</span><span class="sxs-lookup"><span data-stu-id="eced9-116">In the Name field, type 'Sample data model'.</span></span>
+    * <span data-ttu-id="eced9-117">Minta adatmodell</span><span class="sxs-lookup"><span data-stu-id="eced9-117">Sample data model</span></span>  
+4. <span data-ttu-id="eced9-118">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-118">Click Create configuration.</span></span>
+5. <span data-ttu-id="eced9-119">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-119">Click Designer.</span></span>
+6. <span data-ttu-id="eced9-120">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="eced9-120">Click New to open the drop dialog.</span></span>
+7. <span data-ttu-id="eced9-121">A Név mezőbe írja be a következőt: „Gyökér”.</span><span class="sxs-lookup"><span data-stu-id="eced9-121">In the Name field, type 'Root'.</span></span>
+    * <span data-ttu-id="eced9-122">Gyökér</span><span class="sxs-lookup"><span data-stu-id="eced9-122">Root</span></span>  
+8. <span data-ttu-id="eced9-123">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-123">Click Add.</span></span>
+9. <span data-ttu-id="eced9-124">Az Új gombra kattintva nyissa meg a legördülő párbeszédpanelt.</span><span class="sxs-lookup"><span data-stu-id="eced9-124">Click New to open the drop dialog.</span></span>
+10. <span data-ttu-id="eced9-125">A Név mezőbe írja be a Vállalat szót.</span><span class="sxs-lookup"><span data-stu-id="eced9-125">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="eced9-126">Cég</span><span class="sxs-lookup"><span data-stu-id="eced9-126">Company</span></span>  
+11. <span data-ttu-id="eced9-127">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-127">Click Add.</span></span>
+12. <span data-ttu-id="eced9-128">A Leírás mezőben adja meg 'A jogi személy vagy vállalat leírása, amelybe egy felhasználó bejelentkezett futásidőben' szöveget.</span><span class="sxs-lookup"><span data-stu-id="eced9-128">In the Description field, enter the text, Description of the legal entity or company in which a user logged at run-time.</span></span> 
+    * <span data-ttu-id="eced9-129">A jogi személy vagy vállalat leírása, amelybe egy felhasználó bejelentkezett futásidőben.</span><span class="sxs-lookup"><span data-stu-id="eced9-129">Description of the legal entity or company in which a user logged at run-time.</span></span>  
+13. <span data-ttu-id="eced9-130">Kattintson a Gyökérhivatkozás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-130">Click Root reference.</span></span>
+14. <span data-ttu-id="eced9-131">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-131">Click OK.</span></span>
+15. <span data-ttu-id="eced9-132">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-132">Click Save.</span></span>
+16. <span data-ttu-id="eced9-133">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eced9-133">Close the page.</span></span>
+17. <span data-ttu-id="eced9-134">Kattintson az Állapot módosítása elemre.</span><span class="sxs-lookup"><span data-stu-id="eced9-134">Click Change status.</span></span>
+18. <span data-ttu-id="eced9-135">Kattintson a Befejezés gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-135">Click Complete.</span></span>
+19. <span data-ttu-id="eced9-136">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-136">Click OK.</span></span>
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Új ER-modellhozzárendeléskonfiguráció hozzáadása
-1. A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.
-2. Az Új mezőbe írja be a „Minta adatmodell adatmodellen alapuló modell-hozzárendelés” kifejezést.
-3. A Név mezőbe írja be a „Minta hozzárendelés” szöveget.
-    * Minta leképezés  
-4. Kattintson a Konfiguráció létrehozása lehetőségre.
-5. Bontsa ki az Előfeltételek szakaszt.
-    * Vegye figyelembe, hogy az Implementációk előfeltételcsoport automatikusan hozzá van adva. A csoport tartalmazza a szülő adatmodell-konfigurációra hivatkozó előfeltétel-ellenőrzési összetevőt, és Implementációként van megjelölve. Ez azt jelenti, hogy ez a Minta-hozzárendelés modell-hozzárendelési konfiguráció a Minta adatmodell implementációjának minősül. Ezért ez az összetevő arra kényszeríti az ER-t, hogy mindig letöltse egy ER-tárházból a Minta-hozzárendelés modell-hozzárendelési konfigurációt, amikor letölti a Minta adatmodell modellkonfigurációt.   
-6. Kattintson a Tervező pontra.
-    * Vegye figyelembe, hogy a létrehozott modell-hozzárendelési konfiguráció egy új, üres hozzárendelést tartalmaz, amelynek a neve azonos a létrehozott konfiguráció nevével. Ne feledje, hogy ha egy kijelölt szülő modellkonfiguráció modell-hozzárendeléseket tartalmaz, ha azok át lesznek másolva egy új modell-hozzárendelési konfigurációba.   
-7. Kattintson a Tervező pontra.
-8. A fán válassza ki a „Dynamics 365 for Operations\Table” pontot.
-9. Kattintson a Gyökér hozzáadása gombra.
-10. A Név mezőbe írja be a Vállalat szót.
-    * Cég  
-11. Írja be a Tábla mezőbe a „CompanyInfo” szöveget.
-    * CompanyInfo  
-12. Kattintson az OK gombra.
-13. A fastruktúrában bontsa ki ezt: „Company”.
-14. A fában bontsa ki vagy csukja össze a „Companyfind\()” elemet.
-15. A fastruktúrában válassza ki ezt: „Company\find()\Name”.
-16. Kattintson a Kötés gombra.
-17. Kattintson a Mentés gombra.
-18. Zárja be a lapot.
-19. Zárja be a lapot.
-20. Kattintson a Konfigurációk lehetőségre a Művelet Panelen.
-21. Kattintson a Felhasználói paraméterek lehetőségre.
-22. Válassza az Igen lehetőséget a Beállítások futtatása mezőben.
-23. Kattintson az OK gombra.
-24. Kattintson a Szerkesztés lehetőségre.
-25. Válassza az Igen lehetőséget a Vázlat futtatása mezőben.
+## <a name="add-a-new-er-model-mapping-configuration"></a><span data-ttu-id="eced9-137">Új ER-modellhozzárendeléskonfiguráció hozzáadása</span><span class="sxs-lookup"><span data-stu-id="eced9-137">Add a new ER model mapping configuration</span></span>
+1. <span data-ttu-id="eced9-138">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="eced9-138">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="eced9-139">Az Új mezőbe írja be a „Minta adatmodell adatmodellen alapuló modell-hozzárendelés” kifejezést.</span><span class="sxs-lookup"><span data-stu-id="eced9-139">In the New field, enter 'Model Mapping based on data model Sample data model'.</span></span>
+3. <span data-ttu-id="eced9-140">A Név mezőbe írja be a „Minta hozzárendelés” szöveget.</span><span class="sxs-lookup"><span data-stu-id="eced9-140">In the Name field, type 'Sample mapping'.</span></span>
+    * <span data-ttu-id="eced9-141">Minta leképezés</span><span class="sxs-lookup"><span data-stu-id="eced9-141">Sample mapping</span></span>  
+4. <span data-ttu-id="eced9-142">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-142">Click Create configuration.</span></span>
+5. <span data-ttu-id="eced9-143">Bontsa ki az Előfeltételek szakaszt.</span><span class="sxs-lookup"><span data-stu-id="eced9-143">Expand the Prerequisites section.</span></span>
+    * <span data-ttu-id="eced9-144">Vegye figyelembe, hogy az Implementációk előfeltételcsoport automatikusan hozzá van adva.</span><span class="sxs-lookup"><span data-stu-id="eced9-144">Note that the Implementations prerequisites group has been added automatically.</span></span> <span data-ttu-id="eced9-145">A csoport tartalmazza a szülő adatmodell-konfigurációra hivatkozó előfeltétel-ellenőrzési összetevőt, és Implementációként van megjelölve.</span><span class="sxs-lookup"><span data-stu-id="eced9-145">The group contains the prerequisite component that refers to the parent data model configuration and is marked as Implementation.</span></span> <span data-ttu-id="eced9-146">Ez azt jelenti, hogy ez a Minta-hozzárendelés modell-hozzárendelési konfiguráció a Minta adatmodell implementációjának minősül.</span><span class="sxs-lookup"><span data-stu-id="eced9-146">This means that this Sample mapping model mapping configuration is considered the implementation of the data model, Sample data model.</span></span> <span data-ttu-id="eced9-147">Ezért ez az összetevő arra kényszeríti az ER-t, hogy mindig letöltse egy ER-tárházból a Minta-hozzárendelés modell-hozzárendelési konfigurációt, amikor letölti a Minta adatmodell modellkonfigurációt.</span><span class="sxs-lookup"><span data-stu-id="eced9-147">Therefore, this component will force ER to download the model mapping configuration, Sample mapping from an ER repository when the model configuration, Sample data model, is downloaded.</span></span>   
+6. <span data-ttu-id="eced9-148">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-148">Click Designer.</span></span>
+    * <span data-ttu-id="eced9-149">Vegye figyelembe, hogy a létrehozott modell-hozzárendelési konfiguráció egy új, üres hozzárendelést tartalmaz, amelynek a neve azonos a létrehozott konfiguráció nevével.</span><span class="sxs-lookup"><span data-stu-id="eced9-149">Note that the created model mapping configuration contains a new blank mapping with the same name as the created configuration.</span></span> <span data-ttu-id="eced9-150">Ne feledje, hogy ha egy kijelölt szülő modellkonfiguráció modell-hozzárendeléseket tartalmaz, ha azok át lesznek másolva egy új modell-hozzárendelési konfigurációba.</span><span class="sxs-lookup"><span data-stu-id="eced9-150">Be aware that when a selected parent model configuration contains model mappings, they will be copied to a new model mapping configuration.</span></span>   
+7. <span data-ttu-id="eced9-151">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-151">Click Designer.</span></span>
+8. <span data-ttu-id="eced9-152">A fán válassza ki a „Dynamics 365 for Operations\Table” pontot.</span><span class="sxs-lookup"><span data-stu-id="eced9-152">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+9. <span data-ttu-id="eced9-153">Kattintson a Gyökér hozzáadása gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-153">Click Add root.</span></span>
+10. <span data-ttu-id="eced9-154">A Név mezőbe írja be a Vállalat szót.</span><span class="sxs-lookup"><span data-stu-id="eced9-154">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="eced9-155">Cég</span><span class="sxs-lookup"><span data-stu-id="eced9-155">Company</span></span>  
+11. <span data-ttu-id="eced9-156">Írja be a Tábla mezőbe a „CompanyInfo” szöveget.</span><span class="sxs-lookup"><span data-stu-id="eced9-156">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="eced9-157">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="eced9-157">CompanyInfo</span></span>  
+12. <span data-ttu-id="eced9-158">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-158">Click OK.</span></span>
+13. <span data-ttu-id="eced9-159">A fastruktúrában bontsa ki ezt: „Company”.</span><span class="sxs-lookup"><span data-stu-id="eced9-159">In the tree, expand 'Company'.</span></span>
+14. <span data-ttu-id="eced9-160">A fában bontsa ki vagy csukja össze a „Companyfind\()” elemet.</span><span class="sxs-lookup"><span data-stu-id="eced9-160">In the tree, expand 'Company\find()'.</span></span>
+15. <span data-ttu-id="eced9-161">A fastruktúrában válassza ki ezt: „Company\find()\Name”.</span><span class="sxs-lookup"><span data-stu-id="eced9-161">In the tree, select 'Company\find()\Name'.</span></span>
+16. <span data-ttu-id="eced9-162">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-162">Click Bind.</span></span>
+17. <span data-ttu-id="eced9-163">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-163">Click Save.</span></span>
+18. <span data-ttu-id="eced9-164">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eced9-164">Close the page.</span></span>
+19. <span data-ttu-id="eced9-165">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eced9-165">Close the page.</span></span>
+20. <span data-ttu-id="eced9-166">Kattintson a Konfigurációk lehetőségre a Művelet Panelen.</span><span class="sxs-lookup"><span data-stu-id="eced9-166">On the Action Pane, click Configurations.</span></span>
+21. <span data-ttu-id="eced9-167">Kattintson a Felhasználói paraméterek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-167">Click User parameters.</span></span>
+22. <span data-ttu-id="eced9-168">Válassza az Igen lehetőséget a Beállítások futtatása mezőben.</span><span class="sxs-lookup"><span data-stu-id="eced9-168">Select Yes in the Run settings field.</span></span>
+23. <span data-ttu-id="eced9-169">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-169">Click OK.</span></span>
+24. <span data-ttu-id="eced9-170">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-170">Click Edit.</span></span>
+25. <span data-ttu-id="eced9-171">Válassza az Igen lehetőséget a Vázlat futtatása mezőben.</span><span class="sxs-lookup"><span data-stu-id="eced9-171">Select Yes in the Run Draft field.</span></span>
 
-## <a name="add-a-new-er-format-configuration"></a>Új ER-formátum hozzáadása
-1. A fastruktúrában válassza ki a „Sample data model” elemet.
-2. A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.
-3. Az Új mezőbe írja be a „Minta adatmodell adatmodellen alapuló formátum” kifejezést.
-4. A Név mezőbe írja be a „Minta formátum” szöveget.
-    * Minta formátum  
-5. Kattintson a Konfiguráció létrehozása lehetőségre.
-6. Kattintson a Tervező pontra.
-7. Kattintson a Gyökér hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.
-8. A fában válassza ki ezt: „Text\String”.
-9. Kattintson az OK gombra.
-10. Kattintson a Hozzárendelés fülre.
-11. A fában bontsa ki a „model” elemet.
-12. A fában válassza ki ezt: „model\Company”.
-13. Kattintson a Kötés gombra.
-14. Kattintson a Mentés gombra.
-15. Zárja be a lapot.
-    * A létrehozott formátum piszkozatverziójának futtatása tesztelésre.  
-16. Kattintson a Futtatás elemre.
-    * A verzió gyorslapon kattintson a Futtatás lehetőségre.  
-17. Kattintson az OK gombra.
-    * Tekintse át a kimenetet, amely tartalmazza annak a vállalatnak a nevét, amelybe az ezt a formátumkonfigurációt futtató felhasználó be van jelentkezve. Vegye figyelembe, hogy a létrehozott modell-hozzárendelési konfigurációt ez a formátumkonfigurációra használja, mivel csak egy konfiguráció érhető el, amely tartalmazza a szükséges modell-hozzárendeléseket.   
+## <a name="add-a-new-er-format-configuration"></a><span data-ttu-id="eced9-172">Új ER-formátum hozzáadása</span><span class="sxs-lookup"><span data-stu-id="eced9-172">Add a new ER format configuration</span></span>
+1. <span data-ttu-id="eced9-173">A fastruktúrában válassza ki a „Sample data model” elemet.</span><span class="sxs-lookup"><span data-stu-id="eced9-173">In the tree, select 'Sample data model'.</span></span>
+2. <span data-ttu-id="eced9-174">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="eced9-174">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="eced9-175">Az Új mezőbe írja be a „Minta adatmodell adatmodellen alapuló formátum” kifejezést.</span><span class="sxs-lookup"><span data-stu-id="eced9-175">In the New field, enter 'Format based on data model Sample data model'.</span></span>
+4. <span data-ttu-id="eced9-176">A Név mezőbe írja be a „Minta formátum” szöveget.</span><span class="sxs-lookup"><span data-stu-id="eced9-176">In the Name field, type 'Sample format'.</span></span>
+    * <span data-ttu-id="eced9-177">Minta formátum</span><span class="sxs-lookup"><span data-stu-id="eced9-177">Sample format</span></span>  
+5. <span data-ttu-id="eced9-178">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-178">Click Create configuration.</span></span>
+6. <span data-ttu-id="eced9-179">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-179">Click Designer.</span></span>
+7. <span data-ttu-id="eced9-180">Kattintson a Gyökér hozzáadása lehetőségre a legördülő párbeszédpanel megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="eced9-180">Click Add root to open the drop dialog.</span></span>
+8. <span data-ttu-id="eced9-181">A fában válassza ki ezt: „Text\String”.</span><span class="sxs-lookup"><span data-stu-id="eced9-181">In the tree, select 'Text\String'.</span></span>
+9. <span data-ttu-id="eced9-182">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-182">Click OK.</span></span>
+10. <span data-ttu-id="eced9-183">Kattintson a Hozzárendelés fülre.</span><span class="sxs-lookup"><span data-stu-id="eced9-183">Click the Mapping tab.</span></span>
+11. <span data-ttu-id="eced9-184">A fában bontsa ki a „model” elemet.</span><span class="sxs-lookup"><span data-stu-id="eced9-184">In the tree, expand 'model'.</span></span>
+12. <span data-ttu-id="eced9-185">A fában válassza ki ezt: „model\Company”.</span><span class="sxs-lookup"><span data-stu-id="eced9-185">In the tree, select 'model\Company'.</span></span>
+13. <span data-ttu-id="eced9-186">Kattintson a Kötés gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-186">Click Bind.</span></span>
+14. <span data-ttu-id="eced9-187">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-187">Click Save.</span></span>
+15. <span data-ttu-id="eced9-188">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eced9-188">Close the page.</span></span>
+    * <span data-ttu-id="eced9-189">A létrehozott formátum piszkozatverziójának futtatása tesztelésre.</span><span class="sxs-lookup"><span data-stu-id="eced9-189">Run the draft version of the created format for testing purposes.</span></span>  
+16. <span data-ttu-id="eced9-190">Kattintson a Futtatás elemre.</span><span class="sxs-lookup"><span data-stu-id="eced9-190">Click Run.</span></span>
+    * <span data-ttu-id="eced9-191">A verzió gyorslapon kattintson a Futtatás lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-191">On the Versions FastTab, click Run.</span></span>  
+17. <span data-ttu-id="eced9-192">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-192">Click OK.</span></span>
+    * <span data-ttu-id="eced9-193">Tekintse át a kimenetet, amely tartalmazza annak a vállalatnak a nevét, amelybe az ezt a formátumkonfigurációt futtató felhasználó be van jelentkezve.</span><span class="sxs-lookup"><span data-stu-id="eced9-193">Review the output that contains the name of the company in which the user who is running this format configuration is logged into.</span></span> <span data-ttu-id="eced9-194">Vegye figyelembe, hogy a létrehozott modell-hozzárendelési konfigurációt ez a formátumkonfigurációra használja, mivel csak egy konfiguráció érhető el, amely tartalmazza a szükséges modell-hozzárendeléseket.</span><span class="sxs-lookup"><span data-stu-id="eced9-194">Note that the created model mapping configuration is used by this format configuration because there is only one configuration available that contains required model mappings.</span></span>   
 
-## <a name="add-alternative-er-model-mapping-configuration"></a>Alternatív ER-modell leképezés konfigurációjának hozzáadása
-1. A fastruktúrában válassza ki a „Sample data model” elemet.
-2. A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.
-3. Az Új mezőbe írja be a „Minta adatmodell adatmodellen alapuló modell-hozzárendelés” kifejezést.
-4. A név mezőben írja be a „Mintaleképezés (másodlagos)” szöveget.
-    * Minta-hozzárendelés (másodlagos)  
-5. Kattintson a Konfiguráció létrehozása lehetőségre.
-6. Kattintson a Tervező pontra.
-7. Kattintson a Tervező pontra.
-8. A fán válassza ki a „Dynamics 365 for Operations\Table” pontot.
-9. Kattintson a Gyökér hozzáadása gombra.
-10. A Név mezőbe írja be a Vállalat szót.
-    * Cég  
-11. Írja be a Tábla mezőbe a „CompanyInfo” szöveget.
-    * CompanyInfo  
-12. Kattintson az OK gombra.
-13. Kattintson a Szerkesztés lehetőségre.
-14. A fában válassza ki a 'String\CONCATENATE' lehetőséget.
-15. Kattintson a Függvény hozzáadása gombra.
-16. A fastruktúrában bontsa ki ezt: „Company”.
-17. A fában bontsa ki vagy csukja össze a „Companyfind\()” elemet.
-18. A fastruktúrában válassza ki ezt: „Company\find()\Name”.
-19. Kattintson az Adatforrás hozzáadása pontra.
-20. Írjon be egy értéket a Receptúra mezőbe.
-    * CONCATENATE(Company.'find()'.Name, ";",  
-21. A fastruktúrában válassza ki ezt: „Company\find()\Company(DataArea)”.
-22. Kattintson az Adatforrás hozzáadása pontra.
-23. Írjon be egy értéket a Receptúra mezőbe.
-    * CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)  
-24. Kattintson a Mentés gombra.
-25. Zárja be a lapot.
-26. Kattintson a Mentés gombra.
-27. Zárja be a lapot.
-28. Zárja be a lapot.
-29. Válassza az Igen lehetőséget a Vázlat futtatása mezőben.
+## <a name="add-alternative-er-model-mapping-configuration"></a><span data-ttu-id="eced9-195">Alternatív ER-modell leképezés konfigurációjának hozzáadása</span><span class="sxs-lookup"><span data-stu-id="eced9-195">Add alternative ER model mapping configuration</span></span>
+1. <span data-ttu-id="eced9-196">A fastruktúrában válassza ki a „Sample data model” elemet.</span><span class="sxs-lookup"><span data-stu-id="eced9-196">In the tree, select 'Sample data model'.</span></span>
+2. <span data-ttu-id="eced9-197">A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.</span><span class="sxs-lookup"><span data-stu-id="eced9-197">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="eced9-198">Az Új mezőbe írja be a „Minta adatmodell adatmodellen alapuló modell-hozzárendelés” kifejezést.</span><span class="sxs-lookup"><span data-stu-id="eced9-198">In the New field, enter 'Model Mapping based on data model Sample data model'.</span></span>
+4. <span data-ttu-id="eced9-199">A név mezőben írja be a „Mintaleképezés (másodlagos)” szöveget.</span><span class="sxs-lookup"><span data-stu-id="eced9-199">In the Name field, type 'Sample mapping (alternative)'.</span></span>
+    * <span data-ttu-id="eced9-200">Minta-hozzárendelés (másodlagos)</span><span class="sxs-lookup"><span data-stu-id="eced9-200">Sample mapping (alternative)</span></span>  
+5. <span data-ttu-id="eced9-201">Kattintson a Konfiguráció létrehozása lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-201">Click Create configuration.</span></span>
+6. <span data-ttu-id="eced9-202">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-202">Click Designer.</span></span>
+7. <span data-ttu-id="eced9-203">Kattintson a Tervező pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-203">Click Designer.</span></span>
+8. <span data-ttu-id="eced9-204">A fán válassza ki a „Dynamics 365 for Operations\Table” pontot.</span><span class="sxs-lookup"><span data-stu-id="eced9-204">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+9. <span data-ttu-id="eced9-205">Kattintson a Gyökér hozzáadása gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-205">Click Add root.</span></span>
+10. <span data-ttu-id="eced9-206">A Név mezőbe írja be a Vállalat szót.</span><span class="sxs-lookup"><span data-stu-id="eced9-206">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="eced9-207">Cég</span><span class="sxs-lookup"><span data-stu-id="eced9-207">Company</span></span>  
+11. <span data-ttu-id="eced9-208">Írja be a Tábla mezőbe a „CompanyInfo” szöveget.</span><span class="sxs-lookup"><span data-stu-id="eced9-208">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="eced9-209">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="eced9-209">CompanyInfo</span></span>  
+12. <span data-ttu-id="eced9-210">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-210">Click OK.</span></span>
+13. <span data-ttu-id="eced9-211">Kattintson a Szerkesztés lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="eced9-211">Click Edit.</span></span>
+14. <span data-ttu-id="eced9-212">A fában válassza ki a 'String\CONCATENATE' lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="eced9-212">In the tree, select 'String\CONCATENATE'.</span></span>
+15. <span data-ttu-id="eced9-213">Kattintson a Függvény hozzáadása gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-213">Click Add function.</span></span>
+16. <span data-ttu-id="eced9-214">A fastruktúrában bontsa ki ezt: „Company”.</span><span class="sxs-lookup"><span data-stu-id="eced9-214">In the tree, expand 'Company'.</span></span>
+17. <span data-ttu-id="eced9-215">A fában bontsa ki vagy csukja össze a „Companyfind\()” elemet.</span><span class="sxs-lookup"><span data-stu-id="eced9-215">In the tree, expand 'Company\find()'.</span></span>
+18. <span data-ttu-id="eced9-216">A fastruktúrában válassza ki ezt: „Company\find()\Name”.</span><span class="sxs-lookup"><span data-stu-id="eced9-216">In the tree, select 'Company\find()\Name'.</span></span>
+19. <span data-ttu-id="eced9-217">Kattintson az Adatforrás hozzáadása pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-217">Click Add data source.</span></span>
+20. <span data-ttu-id="eced9-218">Írjon be egy értéket a Receptúra mezőbe.</span><span class="sxs-lookup"><span data-stu-id="eced9-218">In the Formula field, type a value.</span></span>
+    * <span data-ttu-id="eced9-219">CONCATENATE(Company.'find()'.Name, ";",</span><span class="sxs-lookup"><span data-stu-id="eced9-219">CONCATENATE(Company.'find()'.Name, ";",</span></span>  
+21. <span data-ttu-id="eced9-220">A fastruktúrában válassza ki ezt: „Company\find()\Company(DataArea)”.</span><span class="sxs-lookup"><span data-stu-id="eced9-220">In the tree, select 'Company\find()\Company(DataArea)'.</span></span>
+22. <span data-ttu-id="eced9-221">Kattintson az Adatforrás hozzáadása pontra.</span><span class="sxs-lookup"><span data-stu-id="eced9-221">Click Add data source.</span></span>
+23. <span data-ttu-id="eced9-222">Írjon be egy értéket a Receptúra mezőbe.</span><span class="sxs-lookup"><span data-stu-id="eced9-222">In the Formula field, type a value.</span></span>
+    * <span data-ttu-id="eced9-223">CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)</span><span class="sxs-lookup"><span data-stu-id="eced9-223">CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)</span></span>  
+24. <span data-ttu-id="eced9-224">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-224">Click Save.</span></span>
+25. <span data-ttu-id="eced9-225">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eced9-225">Close the page.</span></span>
+26. <span data-ttu-id="eced9-226">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-226">Click Save.</span></span>
+27. <span data-ttu-id="eced9-227">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eced9-227">Close the page.</span></span>
+28. <span data-ttu-id="eced9-228">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="eced9-228">Close the page.</span></span>
+29. <span data-ttu-id="eced9-229">Válassza az Igen lehetőséget a Vázlat futtatása mezőben.</span><span class="sxs-lookup"><span data-stu-id="eced9-229">Select Yes in the Run Draft field.</span></span>
 
-## <a name="use-an-existing-er-model-mapping-configuration"></a>Meglévő ER-modell leképezés konfiguráció használata
-1. A fában válassza a „Sample data model\Sample format” lehetőséget.
-2. Kattintson a Futtatás elemre.
-    * Vegye figyelembe, hogy az ER-formátumkonfigurációhoz kijelölt piszkozatverzió nem hajtható végre, mert egynél több modell-hozzárendelési konfiguráció áll rendelkezésre a nem definiált adatmodellhez, amely a futó ER-formátum adatforrásaként van kiválasztva.   
-    * Ezt követően meg fogja adni, hogy a másodlagos modell-hozzárendelési konfiguráció legyen az, amelynek a modell-hozzárendelései lesznek használva a futó ER-formátum adatforrásaként.   
-3. A fában válassza ki ezt: „Sample data model\Sample mapping (alternative)”.
-4. Válassza az Igen lehetőséget a Modell-leképezés alapértelmezett értéke mezőben.
-5. A fában válassza a „Sample data model\Sample format” lehetőséget.
-6. Kattintson a Futtatás elemre.
-7. Kattintson az OK gombra.
-    * Vegye figyelembe, hogy ez a formátumkonfiguráció az alapértelmezett modell-hozzárendelési konfigurációt használja az elektronikus dokumentum létrehozásához (a létrehozott kimenet tartalmazza a vállalatkódot).  
+## <a name="use-an-existing-er-model-mapping-configuration"></a><span data-ttu-id="eced9-230">Meglévő ER-modell leképezés konfiguráció használata</span><span class="sxs-lookup"><span data-stu-id="eced9-230">Use an existing ER model mapping configuration</span></span>
+1. <span data-ttu-id="eced9-231">A fában válassza a „Sample data model\Sample format” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="eced9-231">In the tree, select 'Sample data model\Sample format'.</span></span>
+2. <span data-ttu-id="eced9-232">Kattintson a Futtatás elemre.</span><span class="sxs-lookup"><span data-stu-id="eced9-232">Click Run.</span></span>
+    * <span data-ttu-id="eced9-233">Vegye figyelembe, hogy az ER-formátumkonfigurációhoz kijelölt piszkozatverzió nem hajtható végre, mert egynél több modell-hozzárendelési konfiguráció áll rendelkezésre a nem definiált adatmodellhez, amely a futó ER-formátum adatforrásaként van kiválasztva.</span><span class="sxs-lookup"><span data-stu-id="eced9-233">Note that the selected draft version of the ER format configuration can’t be executed because there is more than one model mapping configuration available for the undefined data model that has been selected as the data source of the running ER format.</span></span>   
+    * <span data-ttu-id="eced9-234">Ezt követően meg fogja adni, hogy a másodlagos modell-hozzárendelési konfiguráció legyen az, amelynek a modell-hozzárendelései lesznek használva a futó ER-formátum adatforrásaként.</span><span class="sxs-lookup"><span data-stu-id="eced9-234">Next, you will define the alternative model mapping configuration as the one from which model mappings will be used as data sources for running ER format.</span></span>   
+3. <span data-ttu-id="eced9-235">A fában válassza ki ezt: „Sample data model\Sample mapping (alternative)”.</span><span class="sxs-lookup"><span data-stu-id="eced9-235">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+4. <span data-ttu-id="eced9-236">Válassza az Igen lehetőséget a Modell-leképezés alapértelmezett értéke mezőben.</span><span class="sxs-lookup"><span data-stu-id="eced9-236">Select Yes in the Default for model mapping field.</span></span>
+5. <span data-ttu-id="eced9-237">A fában válassza a „Sample data model\Sample format” lehetőséget.</span><span class="sxs-lookup"><span data-stu-id="eced9-237">In the tree, select 'Sample data model\Sample format'.</span></span>
+6. <span data-ttu-id="eced9-238">Kattintson a Futtatás elemre.</span><span class="sxs-lookup"><span data-stu-id="eced9-238">Click Run.</span></span>
+7. <span data-ttu-id="eced9-239">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="eced9-239">Click OK.</span></span>
+    * <span data-ttu-id="eced9-240">Vegye figyelembe, hogy ez a formátumkonfiguráció az alapértelmezett modell-hozzárendelési konfigurációt használja az elektronikus dokumentum létrehozásához (a létrehozott kimenet tartalmazza a vállalatkódot).</span><span class="sxs-lookup"><span data-stu-id="eced9-240">Note that the default model mapping configuration is used by this format configuration for generating the electronic document (the created output contains the company code).</span></span>  
 
 

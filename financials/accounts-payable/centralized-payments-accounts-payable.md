@@ -19,285 +19,285 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 23541bb2d82b552cdc9e0ada4aa4ec473f498d0b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 49d5242168cd43e78dd4b0c63da363f91f680904
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="centralized-payments-for-accounts-payable"></a>Központosított kifizetések a Kötelezettségekhez
+# <a name="centralized-payments-for-accounts-payable"></a><span data-ttu-id="7f247-105">Központosított kifizetések a Kötelezettségekhez</span><span class="sxs-lookup"><span data-stu-id="7f247-105">Centralized payments for Accounts payable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egyetlen, minden kifizetést kezelő jogi személy alkalmazásával. Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni. A cikk néhány példát mutat be, amelyek a különböző helyzetekben felmerülő központosított kifizetések feladási módjait jelenítik meg.
+<span data-ttu-id="7f247-106">Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egyetlen, minden kifizetést kezelő jogi személy alkalmazásával.</span><span class="sxs-lookup"><span data-stu-id="7f247-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="7f247-107">Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni.</span><span class="sxs-lookup"><span data-stu-id="7f247-107">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="7f247-108">A cikk néhány példát mutat be, amelyek a különböző helyzetekben felmerülő központosított kifizetések feladási módjait jelenítik meg.</span><span class="sxs-lookup"><span data-stu-id="7f247-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 
-Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni. Továbbá a szervezet időt takarít meg, mivel a kifizetési folyamat hatékony.
+<span data-ttu-id="7f247-109">Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel.</span><span class="sxs-lookup"><span data-stu-id="7f247-109">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="7f247-110">Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni.</span><span class="sxs-lookup"><span data-stu-id="7f247-110">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="7f247-111">Továbbá a szervezet időt takarít meg, mivel a kifizetési folyamat hatékony.</span><span class="sxs-lookup"><span data-stu-id="7f247-111">Additionally, the organization saves time, because the payment process is streamlined.</span></span>
 
-Egy szervezet központosított kifizetéseiben több jogi személy létezik a műveletekhez és minden működő jogi személy kezeli a saját beszállítói számláit. A kifizetések minden működő jogi személyhez egyetlen jogi személy által jönnek létre, amely a kifizetés jogi személyeként ismert. A kiegyenlítési folyamat során mindkét irányban létrejönnek a vonatkozó esedékességi tranzakciók. Megadhatja, hogy a szervezet melyik jogi személye kap realizált nyereség vagy realizált veszteség tranzakciókat, és hogy a vállalatközi kifizetésekhez kapcsolódó készpénzfizetési-engedmény tranzakciók hogyan legyenek kezelve. 
+<span data-ttu-id="7f247-112">Egy szervezet központosított kifizetéseiben több jogi személy létezik a műveletekhez és minden működő jogi személy kezeli a saját beszállítói számláit.</span><span class="sxs-lookup"><span data-stu-id="7f247-112">In a centralized payments organization, there are many legal entities for operations, and each operating legal entity manages its own vendor invoices.</span></span> <span data-ttu-id="7f247-113">A kifizetések minden működő jogi személyhez egyetlen jogi személy által jönnek létre, amely a kifizetés jogi személyeként ismert.</span><span class="sxs-lookup"><span data-stu-id="7f247-113">Payments for all the operating legal entities are generated from a single legal entity, which is known as the legal entity of the payment.</span></span> <span data-ttu-id="7f247-114">A kiegyenlítési folyamat során mindkét irányban létrejönnek a vonatkozó esedékességi tranzakciók.</span><span class="sxs-lookup"><span data-stu-id="7f247-114">During the settlement process, the applicable due-to and due-from transactions are generated.</span></span> <span data-ttu-id="7f247-115">Megadhatja, hogy a szervezet melyik jogi személye kap realizált nyereség vagy realizált veszteség tranzakciókat, és hogy a vállalatközi kifizetésekhez kapcsolódó készpénzfizetési-engedmény tranzakciók hogyan legyenek kezelve.</span><span class="sxs-lookup"><span data-stu-id="7f247-115">You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a cross-company payment are handled.</span></span> 
 
-A következő példák bemutatják, hogyan kezeli a rendszer a feladást a különböző helyzetekben. Mindegyik példa a következő konfigurációból indul ki:
+<span data-ttu-id="7f247-116">A következő példák bemutatják, hogyan kezeli a rendszer a feladást a különböző helyzetekben.</span><span class="sxs-lookup"><span data-stu-id="7f247-116">The following examples illustrate how posting is handled in various scenarios.</span></span> <span data-ttu-id="7f247-117">Mindegyik példa a következő konfigurációból indul ki:</span><span class="sxs-lookup"><span data-stu-id="7f247-117">The following configuration is assumed for all these examples:</span></span>
 
--   A jogi személyek a Gyár, Keleti gyár és Nyugati gyár. A kifizetések a Gyárból érkeznem.
--   A **Készpénzfizetési engedmény feladása** mező a **Vállalatközi könyvelés** lapon **A számlán szereplő jogi személy** elemre van állítva.
--   Az **Árfolyamnyereség- vagy -veszteség feladása** mező a **Vállalatközi könyvelés** lapon **A kifizetéshez megadott jogi személy** elemre van állítva.
--   A Babszem Kávézó nevű szállító minden jogi személyben szállítóként van beállítva. A szállítók a különböző jogi személyekből ugyanazon szállítóként vannak azonosítva, mivel ugyanazt a globális címjegyzék-azonosítót használják.
+-   <span data-ttu-id="7f247-118">A jogi személyek a Gyár, Keleti gyár és Nyugati gyár.</span><span class="sxs-lookup"><span data-stu-id="7f247-118">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West.</span></span> <span data-ttu-id="7f247-119">A kifizetések a Gyárból érkeznem.</span><span class="sxs-lookup"><span data-stu-id="7f247-119">Payments are made from Fabrikam.</span></span>
+-   <span data-ttu-id="7f247-120">A **Készpénzfizetési engedmény feladása** mező a **Vállalatközi könyvelés** lapon **A számlán szereplő jogi személy** elemre van állítva.</span><span class="sxs-lookup"><span data-stu-id="7f247-120">The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.</span></span>
+-   <span data-ttu-id="7f247-121">Az **Árfolyamnyereség- vagy -veszteség feladása** mező a **Vállalatközi könyvelés** lapon **A kifizetéshez megadott jogi személy** elemre van állítva.</span><span class="sxs-lookup"><span data-stu-id="7f247-121">The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.</span></span>
+-   <span data-ttu-id="7f247-122">A Babszem Kávézó nevű szállító minden jogi személyben szállítóként van beállítva.</span><span class="sxs-lookup"><span data-stu-id="7f247-122">The vendor Fourth Coffee is set up as a vendor in each legal entity.</span></span> <span data-ttu-id="7f247-123">A szállítók a különböző jogi személyekből ugyanazon szállítóként vannak azonosítva, mivel ugyanazt a globális címjegyzék-azonosítót használják.</span><span class="sxs-lookup"><span data-stu-id="7f247-123">The vendors from the various legal entities are identified as the same vendor because they share the same global address book ID.</span></span>
 
-| Címtár-azonosító | Szállítói számla | Név          | Jogi személy  |
+| <span data-ttu-id="7f247-124">Címtár-azonosító</span><span class="sxs-lookup"><span data-stu-id="7f247-124">Directory ID</span></span> | <span data-ttu-id="7f247-125">Szállítói számla</span><span class="sxs-lookup"><span data-stu-id="7f247-125">Vendor account</span></span> | <span data-ttu-id="7f247-126">Név</span><span class="sxs-lookup"><span data-stu-id="7f247-126">Name</span></span>          | <span data-ttu-id="7f247-127">Jogi személy</span><span class="sxs-lookup"><span data-stu-id="7f247-127">Legal entity</span></span>  |
 |--------------|----------------|---------------|---------------|
-| 1050         | 3004           | Babszem Kávézó | Gyár      |
-| 1050         | 100            | Babszem Kávézó | Keleti Gyár |
-| 1050         | 3004           | Babszem Kávézó | Nyugati Gyár |
+| <span data-ttu-id="7f247-128">1050</span><span class="sxs-lookup"><span data-stu-id="7f247-128">1050</span></span>         | <span data-ttu-id="7f247-129">3004</span><span class="sxs-lookup"><span data-stu-id="7f247-129">3004</span></span>           | <span data-ttu-id="7f247-130">Babszem Kávézó</span><span class="sxs-lookup"><span data-stu-id="7f247-130">Fourth Coffee</span></span> | <span data-ttu-id="7f247-131">Gyár</span><span class="sxs-lookup"><span data-stu-id="7f247-131">Fabrikam</span></span>      |
+| <span data-ttu-id="7f247-132">1050</span><span class="sxs-lookup"><span data-stu-id="7f247-132">1050</span></span>         | <span data-ttu-id="7f247-133">100</span><span class="sxs-lookup"><span data-stu-id="7f247-133">100</span></span>            | <span data-ttu-id="7f247-134">Babszem Kávézó</span><span class="sxs-lookup"><span data-stu-id="7f247-134">Fourth Coffee</span></span> | <span data-ttu-id="7f247-135">Keleti Gyár</span><span class="sxs-lookup"><span data-stu-id="7f247-135">Fabrikam East</span></span> |
+| <span data-ttu-id="7f247-136">1050</span><span class="sxs-lookup"><span data-stu-id="7f247-136">1050</span></span>         | <span data-ttu-id="7f247-137">3004</span><span class="sxs-lookup"><span data-stu-id="7f247-137">3004</span></span>           | <span data-ttu-id="7f247-138">Babszem Kávézó</span><span class="sxs-lookup"><span data-stu-id="7f247-138">Fourth Coffee</span></span> | <span data-ttu-id="7f247-139">Nyugati Gyár</span><span class="sxs-lookup"><span data-stu-id="7f247-139">Fabrikam West</span></span> |
 
-## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a>1. példa: Másik jogi személyből érkező számla szállítói kifizetése
-A Keleti Gyárnak van egy nyitott számlája a 100-as szállítói számla (a Babszem Kávézó) felé. A Gyár rögzít és felad egy kifizetést a 3004-es (Babszem Kávézó) szállítói számlára. A kifizetés kiegyenlítése a nyitott számlával történik.
+## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a><span data-ttu-id="7f247-140">1. példa: Másik jogi személyből érkező számla szállítói kifizetése</span><span class="sxs-lookup"><span data-stu-id="7f247-140">Example 1: Vendor payment of invoice from another legal entity</span></span>
+<span data-ttu-id="7f247-141">A Keleti Gyárnak van egy nyitott számlája a 100-as szállítói számla (a Babszem Kávézó) felé.</span><span class="sxs-lookup"><span data-stu-id="7f247-141">Fabrikam East has an open invoice for vendor account 100, Fourth Coffee.</span></span> <span data-ttu-id="7f247-142">A Gyár rögzít és felad egy kifizetést a 3004-es (Babszem Kávézó) szállítói számlára.</span><span class="sxs-lookup"><span data-stu-id="7f247-142">Fabrikam enters and posts a payment to Fabrikam vendor account 3004, Fourth Coffee.</span></span> <span data-ttu-id="7f247-143">A kifizetés kiegyenlítése a nyitott számlával történik.</span><span class="sxs-lookup"><span data-stu-id="7f247-143">The payment is settled with the open invoice.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-vendor-100"></a>A Keleti Gyár feladja a számlát a 100-as szállítónak
+### <a name="invoice-is-posted-in-fabrikam-east-for-vendor-100"></a><span data-ttu-id="7f247-144">A Keleti Gyár feladja a számlát a 100-as szállítónak</span><span class="sxs-lookup"><span data-stu-id="7f247-144">Invoice is posted in Fabrikam East for vendor 100</span></span>
 
-| Számla                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-145">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-145">Account</span></span>                          | <span data-ttu-id="7f247-146">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-146">Debit amount</span></span> | <span data-ttu-id="7f247-147">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-147">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Költség (Keleti Gyár)          | 600,00       |               |
-| Kötelezettségek (Keleti Gyár) |              | 600,00        |
+| <span data-ttu-id="7f247-148">Költség (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-148">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="7f247-149">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-149">600.00</span></span>       |               |
+| <span data-ttu-id="7f247-150">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-150">Accounts payable (Fabrikam East)</span></span> |              | <span data-ttu-id="7f247-151">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-151">600.00</span></span>        |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>Kifizetés generálása és feladása a Gyár 3004-es szállítójára
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a><span data-ttu-id="7f247-152">Kifizetés generálása és feladása a Gyár 3004-es szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-152">Payment is generated and posted in Fabrikam for vendor 3004</span></span>
 
-| Számla                     | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-153">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-153">Account</span></span>                     | <span data-ttu-id="7f247-154">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-154">Debit amount</span></span> | <span data-ttu-id="7f247-155">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-155">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kötelezettségek (Gyár) | 600,00       |               |
-| Készpénz (Gyár)             |              | 600,00        |
+| <span data-ttu-id="7f247-156">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-156">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="7f247-157">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-157">600.00</span></span>       |               |
+| <span data-ttu-id="7f247-158">Készpénz (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-158">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="7f247-159">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-159">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="7f247-160">A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben</span><span class="sxs-lookup"><span data-stu-id="7f247-160">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Gyár – feladás**
+<span data-ttu-id="7f247-161">**Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-161">**Fabrikam posting**</span></span>
 
-| Számla                           | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-162">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-162">Account</span></span>                           | <span data-ttu-id="7f247-163">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-163">Debit amount</span></span> | <span data-ttu-id="7f247-164">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-164">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Esedékes a Keleti Gyártól (Gyár) | 600,00       |               |
-| Kötelezettségek (Gyár)       |              | 600,00        |
+| <span data-ttu-id="7f247-165">Esedékes a Keleti Gyártól (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-165">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="7f247-166">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-166">600.00</span></span>       |               |
+| <span data-ttu-id="7f247-167">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-167">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="7f247-168">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-168">600.00</span></span>        |
 
-**Keleti Gyár – feladás**
+<span data-ttu-id="7f247-169">**Keleti Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-169">**Fabrikam East posting**</span></span>
 
-| Számla                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-170">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-170">Account</span></span>                          | <span data-ttu-id="7f247-171">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-171">Debit amount</span></span> | <span data-ttu-id="7f247-172">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-172">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kötelezettségek (Keleti Gyár) | 600,00       |               |
-| Esedékes a Gyárnak (Keleti Gyár)  |              | 600,00        |
+| <span data-ttu-id="7f247-173">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-173">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="7f247-174">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-174">600.00</span></span>       |               |
+| <span data-ttu-id="7f247-175">Esedékes a Gyárnak (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-175">Due to Fabrikam (Fabrikam East)</span></span>  |              | <span data-ttu-id="7f247-176">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-176">600.00</span></span>        |
 
-## <a name="example-2-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>2. példa: Egy másik jogi személy számlájának készpénzfizetési engedménnyel történő szállítói kifizetése
-A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) szállító felé. A számlán 20,00 készpénzfizetési engedmény van. A Gyár rögzít és felad egy 580,00 összegű kifizetést a Gyár 3004-es szállítójára, amely a Babszem Kávézó. A kifizetés elszámolása a nyitott Keleti Gyár-számlákkal szemben történik. A készpénzfizetési engedményt feladja a rendszer a számla jogi személyének, a Keleti Gyárnak.
+## <a name="example-2-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a><span data-ttu-id="7f247-177">2. példa: Egy másik jogi személy számlájának készpénzfizetési engedménnyel történő szállítói kifizetése</span><span class="sxs-lookup"><span data-stu-id="7f247-177">Example 2: Vendor payment of invoice from another legal entity with cash discount</span></span>
+<span data-ttu-id="7f247-178">A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) szállító felé.</span><span class="sxs-lookup"><span data-stu-id="7f247-178">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="7f247-179">A számlán 20,00 készpénzfizetési engedmény van.</span><span class="sxs-lookup"><span data-stu-id="7f247-179">The invoice has a 20.00 cash discount available.</span></span> <span data-ttu-id="7f247-180">A Gyár rögzít és felad egy 580,00 összegű kifizetést a Gyár 3004-es szállítójára, amely a Babszem Kávézó.</span><span class="sxs-lookup"><span data-stu-id="7f247-180">Fabrikam enters and posts a payment of 580.00 for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="7f247-181">A kifizetés elszámolása a nyitott Keleti Gyár-számlákkal szemben történik.</span><span class="sxs-lookup"><span data-stu-id="7f247-181">The payment is settled with the open Fabrikam East invoices.</span></span> <span data-ttu-id="7f247-182">A készpénzfizetési engedményt feladja a rendszer a számla jogi személyének, a Keleti Gyárnak.</span><span class="sxs-lookup"><span data-stu-id="7f247-182">The cash discount is posted to the legal entity of the invoice, Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Számla feladása a Keleti Gyárban a Keleti Gyár 100-as szállítójára
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a><span data-ttu-id="7f247-183">Számla feladása a Keleti Gyárban a Keleti Gyár 100-as szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-183">Invoice is posted in Fabrikam East for Fabrikam East vendor 100</span></span>
 
-| Számla                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-184">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-184">Account</span></span>                          | <span data-ttu-id="7f247-185">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-185">Debit amount</span></span> | <span data-ttu-id="7f247-186">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-186">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Költség (Keleti Gyár)          | 600,00       |               |
-| Kötelezettségek (Keleti Gyár) |              | 600,00        |
+| <span data-ttu-id="7f247-187">Költség (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-187">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="7f247-188">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-188">600.00</span></span>       |               |
+| <span data-ttu-id="7f247-189">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-189">Accounts payable (Fabrikam East)</span></span> |              | <span data-ttu-id="7f247-190">600,00</span><span class="sxs-lookup"><span data-stu-id="7f247-190">600.00</span></span>        |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Kifizetés generálása és feladása a Gyárban a Gyár 3004-es szállítójára
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a><span data-ttu-id="7f247-191">Kifizetés generálása és feladása a Gyárban a Gyár 3004-es szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-191">Payment is generated and posted in Fabrikam for Fabrikam vendor 3004</span></span>
 
-| Számla                     | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-192">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-192">Account</span></span>                     | <span data-ttu-id="7f247-193">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-193">Debit amount</span></span> | <span data-ttu-id="7f247-194">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-194">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kötelezettségek (Gyár) | 58000       |               |
-| Készpénz (Gyár)             |              | 58000        |
+| <span data-ttu-id="7f247-195">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-195">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="7f247-196">58000</span><span class="sxs-lookup"><span data-stu-id="7f247-196">580.00</span></span>       |               |
+| <span data-ttu-id="7f247-197">Készpénz (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-197">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="7f247-198">58000</span><span class="sxs-lookup"><span data-stu-id="7f247-198">580.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="7f247-199">A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben</span><span class="sxs-lookup"><span data-stu-id="7f247-199">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Gyár – feladás**
+<span data-ttu-id="7f247-200">**Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-200">**Fabrikam posting**</span></span>
 
-| Számla                           | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-201">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-201">Account</span></span>                           | <span data-ttu-id="7f247-202">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-202">Debit amount</span></span> | <span data-ttu-id="7f247-203">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-203">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Esedékes a Keleti Gyártól (Gyár) | 58000       |               |
-| Kötelezettségek (Gyár)       |              | 58000        |
+| <span data-ttu-id="7f247-204">Esedékes a Keleti Gyártól (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-204">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="7f247-205">58000</span><span class="sxs-lookup"><span data-stu-id="7f247-205">580.00</span></span>       |               |
+| <span data-ttu-id="7f247-206">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-206">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="7f247-207">58000</span><span class="sxs-lookup"><span data-stu-id="7f247-207">580.00</span></span>        |
 
-**Keleti Gyár – feladás**
+<span data-ttu-id="7f247-208">**Keleti Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-208">**Fabrikam East posting**</span></span>
 
-| Számla                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-209">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-209">Account</span></span>                          | <span data-ttu-id="7f247-210">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-210">Debit amount</span></span> | <span data-ttu-id="7f247-211">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-211">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kötelezettségek (Keleti Gyár) | 58000       |               |
-| Esedékes a Gyárnak (Keleti Gyár)  |              | 58000        |
-| Kötelezettségek (Keleti Gyár) | 20,00        |               |
-| Készpénzfizetési engedmény (Keleti Gyár)    |              | 20,00         |
+| <span data-ttu-id="7f247-212">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-212">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="7f247-213">58000</span><span class="sxs-lookup"><span data-stu-id="7f247-213">580.00</span></span>       |               |
+| <span data-ttu-id="7f247-214">Esedékes a Gyárnak (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-214">Due to Fabrikam (Fabrikam East)</span></span>  |              | <span data-ttu-id="7f247-215">58000</span><span class="sxs-lookup"><span data-stu-id="7f247-215">580.00</span></span>        |
+| <span data-ttu-id="7f247-216">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-216">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="7f247-217">20,00</span><span class="sxs-lookup"><span data-stu-id="7f247-217">20.00</span></span>        |               |
+| <span data-ttu-id="7f247-218">Készpénzfizetési engedmény (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-218">Cash discount (Fabrikam East)</span></span>    |              | <span data-ttu-id="7f247-219">20,00</span><span class="sxs-lookup"><span data-stu-id="7f247-219">20.00</span></span>         |
 
-## <a name="example-3-vendor-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-loss"></a>3. példa: Egy másik jogi személy számlájának árfolyamveszteséggel történő szállítói kifizetése
-A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) szállító felé. A Gyár rögzít és felad egy kifizetést a Gyár 3004-es szállítójának, a Babszem Kávézónak. A kifizetés kiegyenlítése a Keleti Gyár nyitott számlájával történik. Egy árfolyam-veszteségi tranzakció generálódik az kiegyenlítési folyamat közben.
+## <a name="example-3-vendor-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-loss"></a><span data-ttu-id="7f247-220">3. példa: Egy másik jogi személy számlájának árfolyamveszteséggel történő szállítói kifizetése</span><span class="sxs-lookup"><span data-stu-id="7f247-220">Example 3: Vendor payment of invoice from another legal entity with realized exchange rate loss</span></span>
+<span data-ttu-id="7f247-221">A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) szállító felé.</span><span class="sxs-lookup"><span data-stu-id="7f247-221">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="7f247-222">A Gyár rögzít és felad egy kifizetést a Gyár 3004-es szállítójának, a Babszem Kávézónak.</span><span class="sxs-lookup"><span data-stu-id="7f247-222">Fabrikam enters and posts a payment for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="7f247-223">A kifizetés kiegyenlítése a Keleti Gyár nyitott számlájával történik.</span><span class="sxs-lookup"><span data-stu-id="7f247-223">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="7f247-224">Egy árfolyam-veszteségi tranzakció generálódik az kiegyenlítési folyamat közben.</span><span class="sxs-lookup"><span data-stu-id="7f247-224">A currency exchange loss transaction is generated during the settlement process.</span></span>
 
--   Az EUR-USD átváltási árfolyam a számladátumon: 1,2062
--   Az EUR-USD átváltási árfolyam a kifizetési dátumon: 1,2277
+-   <span data-ttu-id="7f247-225">Az EUR-USD átváltási árfolyam a számladátumon: 1,2062</span><span class="sxs-lookup"><span data-stu-id="7f247-225">Exchange rate for euros (EUR) to U.S. dollars (USD) as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="7f247-226">Az EUR-USD átváltási árfolyam a kifizetési dátumon: 1,2277</span><span class="sxs-lookup"><span data-stu-id="7f247-226">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Számla feladása a Keleti Gyárban a Keleti Gyár 100-as szállítójára
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a><span data-ttu-id="7f247-227">Számla feladása a Keleti Gyárban a Keleti Gyár 100-as szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-227">Invoice is posted in Fabrikam East for Fabrikam East vendor 100</span></span>
 
-| Számla                          | Tartozik összeg            | Követel összeg           |
+| <span data-ttu-id="7f247-228">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-228">Account</span></span>                          | <span data-ttu-id="7f247-229">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-229">Debit amount</span></span>            | <span data-ttu-id="7f247-230">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-230">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Költség (Keleti Gyár)          | 600,00 EUR / 723,72 USD |                         |
-| Kötelezettségek (Keleti Gyár) |                         | 600,00 EUR / 723,72 USD |
+| <span data-ttu-id="7f247-231">Költség (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-231">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="7f247-232">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-232">600.00 EUR / 723.72 USD</span></span> |                         |
+| <span data-ttu-id="7f247-233">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-233">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="7f247-234">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-234">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Kifizetés generálása és feladása a Gyárban a Gyár 3004-es szállítójára
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a><span data-ttu-id="7f247-235">Kifizetés generálása és feladása a Gyárban a Gyár 3004-es szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-235">Payment is generated and posted in Fabrikam for Fabrikam vendor 3004</span></span>
 
-| Számla                     | Tartozik összeg            | Követel összeg           |
+| <span data-ttu-id="7f247-236">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-236">Account</span></span>                     | <span data-ttu-id="7f247-237">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-237">Debit amount</span></span>            | <span data-ttu-id="7f247-238">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-238">Credit amount</span></span>           |
 |-----------------------------|-------------------------|-------------------------|
-| Kötelezettségek (Gyár) | 600,00 EUR / 736,62 USD |                         |
-| Készpénz (Gyár)             |                         | 600,00 EUR / 736,62 USD |
+| <span data-ttu-id="7f247-239">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-239">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="7f247-240">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-240">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="7f247-241">Készpénz (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-241">Cash (Fabrikam)</span></span>             |                         | <span data-ttu-id="7f247-242">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-242">600.00 EUR / 736.62 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="7f247-243">A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben</span><span class="sxs-lookup"><span data-stu-id="7f247-243">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Gyár – feladás**
+<span data-ttu-id="7f247-244">**Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-244">**Fabrikam posting**</span></span>
 
-| Számla                           | Tartozik összeg            | Követel összeg           |
+| <span data-ttu-id="7f247-245">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-245">Account</span></span>                           | <span data-ttu-id="7f247-246">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-246">Debit amount</span></span>            | <span data-ttu-id="7f247-247">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-247">Credit amount</span></span>           |
 |-----------------------------------|-------------------------|-------------------------|
-| Esedékes a Keleti Gyártól (Gyár) | 600,00 EUR / 736,62 USD |                         |
-| Kötelezettségek (Gyár)       |                         | 600,00 EUR / 736,62 USD |
-| Realizált veszteség (Gyár)          | 0,00 EUR / 12,90 USD    |                         |
-| Esedékes a Keleti Gyártól (Gyár) |                         | 0,00 EUR / 12,90 USD    |
+| <span data-ttu-id="7f247-248">Esedékes a Keleti Gyártól (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-248">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="7f247-249">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-249">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="7f247-250">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-250">Accounts payable (Fabrikam)</span></span>       |                         | <span data-ttu-id="7f247-251">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-251">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="7f247-252">Realizált veszteség (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-252">Realized loss (Fabrikam)</span></span>          | <span data-ttu-id="7f247-253">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-253">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="7f247-254">Esedékes a Keleti Gyártól (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-254">Due from Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="7f247-255">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-255">0.00 EUR / 12.90 USD</span></span>    |
 
-**Keleti Gyár – feladás**
+<span data-ttu-id="7f247-256">**Keleti Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-256">**Fabrikam East posting**</span></span>
 
-| Számla                          | Tartozik összeg            | Követel összeg           |
+| <span data-ttu-id="7f247-257">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-257">Account</span></span>                          | <span data-ttu-id="7f247-258">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-258">Debit amount</span></span>            | <span data-ttu-id="7f247-259">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-259">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Kötelezettségek (Keleti Gyár) | 600,00 EUR / 736,62 USD |                         |
-| Esedékes a Gyárnak (Keleti Gyár)  |                         | 600,00 EUR / 736,62 USD |
-| Esedékes a Gyárnak (Keleti Gyár)  | 0,00 EUR / 12,90 USD    |                         |
-| Kötelezettségek (Keleti Gyár) |                         | 0,00 EUR / 12,90 USD    |
+| <span data-ttu-id="7f247-260">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-260">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="7f247-261">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-261">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="7f247-262">Esedékes a Gyárnak (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-262">Due to Fabrikam (Fabrikam East)</span></span>  |                         | <span data-ttu-id="7f247-263">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-263">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="7f247-264">Esedékes a Gyárnak (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-264">Due to Fabrikam (Fabrikam East)</span></span>  | <span data-ttu-id="7f247-265">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-265">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="7f247-266">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-266">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="7f247-267">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-267">0.00 EUR / 12.90 USD</span></span>    |
 
-## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a>4. példa: Egy másik jogi személy számlájának készpénzfizetési engedménnyel és árfolyamveszteséggel történő szállítói kifizetése
-A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) szállító felé. A számlán készpénzfizetési engedmény szerepel, valamint áfatranzakció jön létre. A Gyár felad egy kifizetést a Gyár 3004-es számú szállítójának, a Babszem Kávézónak. A kifizetés elszámolása a nyitott Keleti Gyár-számlával szemben történik. Egy árfolyam-veszteségi tranzakció generálódik az kiegyenlítési folyamat közben. A készpénzfizetési engedmény feladásra kerül a számla jogi személyéhez (Keleti Gyár), az árfolyamveszteség pedig feladásra kerül a kifizetés jogi személyéhez (Gyár).
+## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a><span data-ttu-id="7f247-268">4. példa: Egy másik jogi személy számlájának készpénzfizetési engedménnyel és árfolyamveszteséggel történő szállítói kifizetése</span><span class="sxs-lookup"><span data-stu-id="7f247-268">Example 4: Vendor payment of invoice from another legal entity with cash discount and realized exchange rate loss</span></span>
+<span data-ttu-id="7f247-269">A Keleti Gyárnak van egy nyitott számlája a 100-as (Babszem Kávézó) szállító felé.</span><span class="sxs-lookup"><span data-stu-id="7f247-269">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="7f247-270">A számlán készpénzfizetési engedmény szerepel, valamint áfatranzakció jön létre.</span><span class="sxs-lookup"><span data-stu-id="7f247-270">The invoice has a cash discount available, and a sales tax transaction is generated.</span></span> <span data-ttu-id="7f247-271">A Gyár felad egy kifizetést a Gyár 3004-es számú szállítójának, a Babszem Kávézónak.</span><span class="sxs-lookup"><span data-stu-id="7f247-271">Fabrikam posts a payment for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="7f247-272">A kifizetés elszámolása a nyitott Keleti Gyár-számlával szemben történik.</span><span class="sxs-lookup"><span data-stu-id="7f247-272">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="7f247-273">Egy árfolyam-veszteségi tranzakció generálódik az kiegyenlítési folyamat közben.</span><span class="sxs-lookup"><span data-stu-id="7f247-273">A currency exchange loss transaction is generated during the settlement process.</span></span> <span data-ttu-id="7f247-274">A készpénzfizetési engedmény feladásra kerül a számla jogi személyéhez (Keleti Gyár), az árfolyamveszteség pedig feladásra kerül a kifizetés jogi személyéhez (Gyár).</span><span class="sxs-lookup"><span data-stu-id="7f247-274">The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange loss is posted to the legal entity of the payment (Fabrikam).</span></span>
 
--   Az EUR-USD átváltási árfolyam a számladátumon: 1,2062
--   Az EUR-USD átváltási árfolyam a kifizetési dátumon: 1,2277
+-   <span data-ttu-id="7f247-275">Az EUR-USD átváltási árfolyam a számladátumon: 1,2062</span><span class="sxs-lookup"><span data-stu-id="7f247-275">Exchange rate for EUR to USD as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="7f247-276">Az EUR-USD átváltási árfolyam a kifizetési dátumon: 1,2277</span><span class="sxs-lookup"><span data-stu-id="7f247-276">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a>A számlát feladja a program, és egy adótranzakciót generál a Keleti Gyárnál a 100-as vevőhöz.
+### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a><span data-ttu-id="7f247-277">A számlát feladja a program, és egy adótranzakciót generál a Keleti Gyárnál a 100-as vevőhöz.</span><span class="sxs-lookup"><span data-stu-id="7f247-277">Invoice is posted and a tax transaction is generated in Fabrikam East for vendor 100</span></span>
 
-| Számla                          | Tartozik összeg            | Követel összeg           |
+| <span data-ttu-id="7f247-278">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-278">Account</span></span>                          | <span data-ttu-id="7f247-279">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-279">Debit amount</span></span>            | <span data-ttu-id="7f247-280">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-280">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Költség (Keleti Gyár)          | 564,07 EUR / 680,38 USD |                         |
-| Áfa (Keleti Gyár)        | 35,93 EUR / 43,34 USD   |                         |
-| Kötelezettségek (Keleti Gyár) |                         | 600,00 EUR / 723,72 USD |
+| <span data-ttu-id="7f247-281">Költség (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-281">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="7f247-282">564,07 EUR / 680,38 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-282">564.07 EUR / 680.38 USD</span></span> |                         |
+| <span data-ttu-id="7f247-283">Áfa (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-283">Sales tax (Fabrikam East)</span></span>        | <span data-ttu-id="7f247-284">35,93 EUR / 43,34 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-284">35.93 EUR / 43.34 USD</span></span>   |                         |
+| <span data-ttu-id="7f247-285">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-285">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="7f247-286">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-286">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>Kifizetés generálása és feladása a Gyár 3004-es szállítójára
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a><span data-ttu-id="7f247-287">Kifizetés generálása és feladása a Gyár 3004-es szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-287">Payment is generated and posted in Fabrikam for vendor 3004</span></span>
 
-| Számla                     | Tartozik összeg            | Követel összeg           |
+| <span data-ttu-id="7f247-288">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-288">Account</span></span>                     | <span data-ttu-id="7f247-289">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-289">Debit amount</span></span>            | <span data-ttu-id="7f247-290">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-290">Credit amount</span></span>           |
 |-----------------------------|-------------------------|-------------------------|
-| Kötelezettségek (Gyár) | 588,72 EUR / 722,77 USD |                         |
-| Készpénz (Keleti Gyár)        |                         | 588,72 EUR / 722,77 USD |
+| <span data-ttu-id="7f247-291">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-291">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="7f247-292">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-292">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="7f247-293">Készpénz (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-293">Cash (Fabrikam East)</span></span>        |                         | <span data-ttu-id="7f247-294">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-294">588.72 EUR / 722.77 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="7f247-295">A Gyár kifizetésének kiegyenlítése a Keleti Gyár számlájával szemben</span><span class="sxs-lookup"><span data-stu-id="7f247-295">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Gyár – feladás**
+<span data-ttu-id="7f247-296">**Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-296">**Fabrikam posting**</span></span>
 
-| Számla                           | Tartozik összeg            | Követel összeg           |
+| <span data-ttu-id="7f247-297">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-297">Account</span></span>                           | <span data-ttu-id="7f247-298">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-298">Debit amount</span></span>            | <span data-ttu-id="7f247-299">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-299">Credit amount</span></span>           |
 |-----------------------------------|-------------------------|-------------------------|
-| Esedékes a Keleti Gyártól (Gyár) | 588,72 EUR / 722,77 USD |                         |
-| Kötelezettségek (Gyár)       |                         | 588,72 EUR / 722,77 USD |
-| Realizált veszteség (Gyár)          | 0,00 EUR / 12,66 USD    |                         |
-| Esedékes a Keleti Gyártól (Gyár) |                         | 0,00 EUR / 12,66 USD    |
+| <span data-ttu-id="7f247-300">Esedékes a Keleti Gyártól (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-300">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="7f247-301">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-301">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="7f247-302">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-302">Accounts payable (Fabrikam)</span></span>       |                         | <span data-ttu-id="7f247-303">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-303">588.72 EUR / 722.77 USD</span></span> |
+| <span data-ttu-id="7f247-304">Realizált veszteség (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-304">Realized loss (Fabrikam)</span></span>          | <span data-ttu-id="7f247-305">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-305">0.00 EUR / 12.66 USD</span></span>    |                         |
+| <span data-ttu-id="7f247-306">Esedékes a Keleti Gyártól (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-306">Due from Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="7f247-307">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-307">0.00 EUR / 12.66 USD</span></span>    |
 
-**Keleti Gyár – feladás**
+<span data-ttu-id="7f247-308">**Keleti Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-308">**Fabrikam East posting**</span></span>
 
-| Számla                          | Tartozik összeg            | Követel összeg           |
+| <span data-ttu-id="7f247-309">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-309">Account</span></span>                          | <span data-ttu-id="7f247-310">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-310">Debit amount</span></span>            | <span data-ttu-id="7f247-311">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-311">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Kötelezettségek (Keleti Gyár) | 588,72 EUR / 722,77 USD |                         |
-| Esedékes a Gyárnak (Keleti Gyár)  |                         | 588,72 EUR / 722,77 USD |
-| Esedékes a Gyárnak (Keleti Gyár)   | 0,00 EUR / 12,66 USD    |                         |
-| Kötelezettségek (Keleti Gyár) |                         | 0,00 EUR / 12,66 USD    |
-| Kötelezettségek (Keleti Gyár) | 11,28 EUR / 13,61 USD   |                         |
-| Készpénzfizetési engedmény (Keleti Gyár)    |                         | 11,28 EUR / 13,61 USD   |
+| <span data-ttu-id="7f247-312">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-312">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="7f247-313">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-313">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="7f247-314">Esedékes a Gyárnak (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-314">Due to Fabrikam (Fabrikam East)</span></span>  |                         | <span data-ttu-id="7f247-315">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-315">588.72 EUR / 722.77 USD</span></span> |
+| <span data-ttu-id="7f247-316">Esedékes a Gyárnak (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-316">Due to Fabrikam (Fabrikam East</span></span>   | <span data-ttu-id="7f247-317">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-317">0.00 EUR / 12.66 USD</span></span>    |                         |
+| <span data-ttu-id="7f247-318">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-318">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="7f247-319">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-319">0.00 EUR / 12.66 USD</span></span>    |
+| <span data-ttu-id="7f247-320">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-320">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="7f247-321">11,28 EUR / 13,61 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-321">11.28 EUR / 13.61 USD</span></span>   |                         |
+| <span data-ttu-id="7f247-322">Készpénzfizetési engedmény (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-322">Cash discount (Fabrikam East)</span></span>    |                         | <span data-ttu-id="7f247-323">11,28 EUR / 13,61 USD</span><span class="sxs-lookup"><span data-stu-id="7f247-323">11.28 EUR / 13.61 USD</span></span>   |
 
-## <a name="example-5-vendor-credit-note-with-primary-payment"></a>5. példa: Szállítói jóváírás elsődleges kifizetéssel
-A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Kávézó). A kifizetés elszámolása a Nyugati Gyár 3004-es szállítójának egy nyitott számlájával, és a Keleti Gyár 100-as szállítójának egy nyitott jóváírásával történik. A kifizetést a **Tranzakciók kiegyenlítése** képernyőn elsődleges kifizetésként jelölik meg.
+## <a name="example-5-vendor-credit-note-with-primary-payment"></a><span data-ttu-id="7f247-324">5. példa: Szállítói jóváírás elsődleges kifizetéssel</span><span class="sxs-lookup"><span data-stu-id="7f247-324">Example 5: Vendor credit note with primary payment</span></span>
+<span data-ttu-id="7f247-325">A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Kávézó).</span><span class="sxs-lookup"><span data-stu-id="7f247-325">Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="7f247-326">A kifizetés elszámolása a Nyugati Gyár 3004-es szállítójának egy nyitott számlájával, és a Keleti Gyár 100-as szállítójának egy nyitott jóváírásával történik.</span><span class="sxs-lookup"><span data-stu-id="7f247-326">The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100.</span></span> <span data-ttu-id="7f247-327">A kifizetést a **Tranzakciók kiegyenlítése** képernyőn elsődleges kifizetésként jelölik meg.</span><span class="sxs-lookup"><span data-stu-id="7f247-327">The payment is selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Számla feladása a Nyugati Gyár 3004-es szállítójára
+### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a><span data-ttu-id="7f247-328">Számla feladása a Nyugati Gyár 3004-es szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-328">Invoice is posted to Fabrikam West for vendor 3004</span></span>
 
-| Fiók                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-329">Fiók</span><span class="sxs-lookup"><span data-stu-id="7f247-329">Account</span></span>                          | <span data-ttu-id="7f247-330">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-330">Debit amount</span></span> | <span data-ttu-id="7f247-331">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-331">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Költség (Nyugati Gyár)          | 100,00       |               |
-| Kötelezettségek (Nyugati gyár) |              | 100,00        |
+| <span data-ttu-id="7f247-332">Költség (Nyugati Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-332">Expense (Fabrikam West)</span></span>          | <span data-ttu-id="7f247-333">100,00</span><span class="sxs-lookup"><span data-stu-id="7f247-333">100.00</span></span>       |               |
+| <span data-ttu-id="7f247-334">Kötelezettségek (Nyugati gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-334">Accounts payable (Fabrikam West)</span></span> |              | <span data-ttu-id="7f247-335">100,00</span><span class="sxs-lookup"><span data-stu-id="7f247-335">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>Jóváírás feladása a Keleti Gyár 100-as szállítójára
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a><span data-ttu-id="7f247-336">Jóváírás feladása a Keleti Gyár 100-as szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-336">Credit note is posted to Fabrikam East for vendor 100</span></span>
 
-| Számla                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-337">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-337">Account</span></span>                          | <span data-ttu-id="7f247-338">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-338">Debit amount</span></span> | <span data-ttu-id="7f247-339">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-339">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kötelezettségek (Keleti Gyár) | 25,00        |               |
-| Beszerzések visszáruja (Keleti Gyár) |              | 25,00         |
+| <span data-ttu-id="7f247-340">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-340">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="7f247-341">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-341">25.00</span></span>        |               |
+| <span data-ttu-id="7f247-342">Beszerzések visszáruja (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-342">Purchase returns (Fabrikam East)</span></span> |              | <span data-ttu-id="7f247-343">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-343">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a>Kifizetés feladása a Gyár 3004-es szállítójára
+### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a><span data-ttu-id="7f247-344">Kifizetés feladása a Gyár 3004-es szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-344">Payment is posted to Fabrikam for vendor 3004</span></span>
 
-| Számla                     | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-345">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-345">Account</span></span>                     | <span data-ttu-id="7f247-346">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-346">Debit amount</span></span> | <span data-ttu-id="7f247-347">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-347">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kötelezettségek (Gyár) | 75,00        |               |
-| Készpénz (Gyár)             |              | 75,00         |
+| <span data-ttu-id="7f247-348">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-348">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="7f247-349">75,00</span><span class="sxs-lookup"><span data-stu-id="7f247-349">75.00</span></span>        |               |
+| <span data-ttu-id="7f247-350">Készpénz (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-350">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="7f247-351">75,00</span><span class="sxs-lookup"><span data-stu-id="7f247-351">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>A Gyár kifizetésének elszámolása a Nyugati Gyár számlájával és a Keleti Gyár jóváírásával szemben
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="7f247-352">A Gyár kifizetésének elszámolása a Nyugati Gyár számlájával és a Keleti Gyár jóváírásával szemben</span><span class="sxs-lookup"><span data-stu-id="7f247-352">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Gyár – feladás**
+<span data-ttu-id="7f247-353">**Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-353">**Fabrikam posting**</span></span>
 
-| Számla                           | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-354">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-354">Account</span></span>                           | <span data-ttu-id="7f247-355">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-355">Debit amount</span></span> | <span data-ttu-id="7f247-356">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-356">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Kötelezettségek (Gyár)       | 25,00        |               |
-| Esedékes a Keleti Gyárnak (Gyár)   |              | 25,00         |
-| Esedékes a Nyugati Gyártól (Gyár) | 100,00       |               |
-| Kötelezettségek (Gyár)       |              | 100,00        |
+| <span data-ttu-id="7f247-357">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-357">Accounts payable (Fabrikam)</span></span>       | <span data-ttu-id="7f247-358">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-358">25.00</span></span>        |               |
+| <span data-ttu-id="7f247-359">Esedékes a Keleti Gyárnak (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-359">Due to Fabrikam East (Fabrikam)</span></span>   |              | <span data-ttu-id="7f247-360">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-360">25.00</span></span>         |
+| <span data-ttu-id="7f247-361">Esedékes a Nyugati Gyártól (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-361">Due from Fabrikam West (Fabrikam)</span></span> | <span data-ttu-id="7f247-362">100,00</span><span class="sxs-lookup"><span data-stu-id="7f247-362">100.00</span></span>       |               |
+| <span data-ttu-id="7f247-363">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-363">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="7f247-364">100,00</span><span class="sxs-lookup"><span data-stu-id="7f247-364">100.00</span></span>        |
 
-**Keleti Gyár – feladás**
+<span data-ttu-id="7f247-365">**Keleti Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-365">**Fabrikam East posting**</span></span>
 
-| Számla                           | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-366">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-366">Account</span></span>                           | <span data-ttu-id="7f247-367">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-367">Debit amount</span></span> | <span data-ttu-id="7f247-368">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-368">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Esedékes a Gyártól (Keleti gyár) | 25,00        |               |
-| Kötelezettségek (Keleti Gyár)  |              | 25,00         |
+| <span data-ttu-id="7f247-369">Esedékes a Gyártól (Keleti gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-369">Due from Fabrikam (Fabrikam East)</span></span> | <span data-ttu-id="7f247-370">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-370">25.00</span></span>        |               |
+| <span data-ttu-id="7f247-371">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-371">Accounts payable (Fabrikam East)</span></span>  |              | <span data-ttu-id="7f247-372">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-372">25.00</span></span>         |
 
-**Nyugati Gyár – feladás**
+<span data-ttu-id="7f247-373">**Nyugati Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-373">**Fabrikam West posting**</span></span>
 
-| Számla                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-374">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-374">Account</span></span>                          | <span data-ttu-id="7f247-375">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-375">Debit amount</span></span> | <span data-ttu-id="7f247-376">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-376">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kötelezettségek (Nyugati gyár) | 100,00       |               |
-| Esedékes a Gyárnak (Nyugati Gyár)  |              | 100,00        |
+| <span data-ttu-id="7f247-377">Kötelezettségek (Nyugati gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-377">Accounts payable (Fabrikam West)</span></span> | <span data-ttu-id="7f247-378">100,00</span><span class="sxs-lookup"><span data-stu-id="7f247-378">100.00</span></span>       |               |
+| <span data-ttu-id="7f247-379">Esedékes a Gyárnak (Nyugati Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-379">Due to Fabrikam (Fabrikam West)</span></span>  |              | <span data-ttu-id="7f247-380">100,00</span><span class="sxs-lookup"><span data-stu-id="7f247-380">100.00</span></span>        |
 
-## <a name="example-6-vendor-credit-note-without-primary-payment"></a>6. példa: Szállítói jóváírás elsődleges kifizetés nélkül
-A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Kávézó). A kifizetés elszámolása a Nyugati Gyár 3004-es szállítójának egy nyitott számlájával, és a Keleti Gyár 100-as szállítójának egy nyitott jóváírásával történik. A kifizetést a **Tranzakciók kiegyenlítése** képernyőn nem jelölik meg elsődleges kifizetésként.
+## <a name="example-6-vendor-credit-note-without-primary-payment"></a><span data-ttu-id="7f247-381">6. példa: Szállítói jóváírás elsődleges kifizetés nélkül</span><span class="sxs-lookup"><span data-stu-id="7f247-381">Example 6: Vendor credit note without primary payment</span></span>
+<span data-ttu-id="7f247-382">A Gyár generál egy kifizetést 75,00-ről a 3004 szállítónak (Babszem Kávézó).</span><span class="sxs-lookup"><span data-stu-id="7f247-382">Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="7f247-383">A kifizetés elszámolása a Nyugati Gyár 3004-es szállítójának egy nyitott számlájával, és a Keleti Gyár 100-as szállítójának egy nyitott jóváírásával történik.</span><span class="sxs-lookup"><span data-stu-id="7f247-383">The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100.</span></span> <span data-ttu-id="7f247-384">A kifizetést a **Tranzakciók kiegyenlítése** képernyőn nem jelölik meg elsődleges kifizetésként.</span><span class="sxs-lookup"><span data-stu-id="7f247-384">The payment isn't selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Számla feladása a Nyugati Gyár 3004-es szállítójára
+### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a><span data-ttu-id="7f247-385">Számla feladása a Nyugati Gyár 3004-es szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-385">Invoice is posted to Fabrikam West for vendor 3004</span></span>
 
-| Fiók                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-386">Fiók</span><span class="sxs-lookup"><span data-stu-id="7f247-386">Account</span></span>                          | <span data-ttu-id="7f247-387">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-387">Debit amount</span></span> | <span data-ttu-id="7f247-388">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-388">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Költség (Nyugati Gyár)          | 100,00       |               |
-| Kötelezettségek (Nyugati gyár) |              | 100,00        |
+| <span data-ttu-id="7f247-389">Költség (Nyugati Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-389">Expense (Fabrikam West)</span></span>          | <span data-ttu-id="7f247-390">100,00</span><span class="sxs-lookup"><span data-stu-id="7f247-390">100.00</span></span>       |               |
+| <span data-ttu-id="7f247-391">Kötelezettségek (Nyugati gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-391">Accounts payable (Fabrikam West)</span></span> |              | <span data-ttu-id="7f247-392">100,00</span><span class="sxs-lookup"><span data-stu-id="7f247-392">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>Jóváírás feladása a Keleti Gyár 100-as szállítójára
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a><span data-ttu-id="7f247-393">Jóváírás feladása a Keleti Gyár 100-as szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-393">Credit note is posted to Fabrikam East for vendor 100</span></span>
 
-| Számla                          | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-394">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-394">Account</span></span>                          | <span data-ttu-id="7f247-395">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-395">Debit amount</span></span> | <span data-ttu-id="7f247-396">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-396">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kötelezettségek (Keleti Gyár) | 25,00        |               |
-| Beszerzések visszáruja (Keleti Gyár) |              | 25,00         |
+| <span data-ttu-id="7f247-397">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-397">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="7f247-398">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-398">25.00</span></span>        |               |
+| <span data-ttu-id="7f247-399">Beszerzések visszáruja (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-399">Purchase returns (Fabrikam East)</span></span> |              | <span data-ttu-id="7f247-400">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-400">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a>Kifizetés feladása a Gyár 3004-es szállítójára
+### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a><span data-ttu-id="7f247-401">Kifizetés feladása a Gyár 3004-es szállítójára</span><span class="sxs-lookup"><span data-stu-id="7f247-401">Payment is posted to Fabrikam for vendor 3004</span></span>
 
-| Számla                     | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-402">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-402">Account</span></span>                     | <span data-ttu-id="7f247-403">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-403">Debit amount</span></span> | <span data-ttu-id="7f247-404">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-404">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kötelezettségek (Gyár) | 75,00        |               |
-| Készpénz (Gyár)             |              | 75,00         |
+| <span data-ttu-id="7f247-405">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-405">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="7f247-406">75,00</span><span class="sxs-lookup"><span data-stu-id="7f247-406">75.00</span></span>        |               |
+| <span data-ttu-id="7f247-407">Készpénz (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-407">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="7f247-408">75,00</span><span class="sxs-lookup"><span data-stu-id="7f247-408">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>A Gyár kifizetésének elszámolása a Nyugati Gyár számlájával és a Keleti Gyár jóváírásával szemben
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="7f247-409">A Gyár kifizetésének elszámolása a Nyugati Gyár számlájával és a Keleti Gyár jóváírásával szemben</span><span class="sxs-lookup"><span data-stu-id="7f247-409">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Gyár – feladás**
+<span data-ttu-id="7f247-410">**Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-410">**Fabrikam posting**</span></span>
 
-| Számla                           | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-411">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-411">Account</span></span>                           | <span data-ttu-id="7f247-412">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-412">Debit amount</span></span> | <span data-ttu-id="7f247-413">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-413">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Esedékes a Nyugati Gyártól (Gyár) | 75,00        |               |
-| Kötelezettségek (Gyár)       |              | 75,00         |
+| <span data-ttu-id="7f247-414">Esedékes a Nyugati Gyártól (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-414">Due from Fabrikam West (Fabrikam)</span></span> | <span data-ttu-id="7f247-415">75,00</span><span class="sxs-lookup"><span data-stu-id="7f247-415">75.00</span></span>        |               |
+| <span data-ttu-id="7f247-416">Kötelezettségek (Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-416">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="7f247-417">75,00</span><span class="sxs-lookup"><span data-stu-id="7f247-417">75.00</span></span>         |
 
-**Keleti Gyár – feladás**
+<span data-ttu-id="7f247-418">**Keleti Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-418">**Fabrikam East posting**</span></span>
 
-| Számla                                | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-419">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-419">Account</span></span>                                | <span data-ttu-id="7f247-420">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-420">Debit amount</span></span> | <span data-ttu-id="7f247-421">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-421">Credit amount</span></span> |
 |----------------------------------------|--------------|---------------|
-| Esedékes a Nyugati Gyártól (Keleti Gyár) | 25,00        |               |
-| Kötelezettségek (Keleti Gyár)       |              | 25,00         |
+| <span data-ttu-id="7f247-422">Esedékes a Nyugati Gyártól (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-422">Due from Fabrikam West (Fabrikam East)</span></span> | <span data-ttu-id="7f247-423">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-423">25.00</span></span>        |               |
+| <span data-ttu-id="7f247-424">Kötelezettségek (Keleti Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-424">Accounts payable (Fabrikam East)</span></span>       |              | <span data-ttu-id="7f247-425">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-425">25.00</span></span>         |
 
-**Nyugati Gyár – feladás**
+<span data-ttu-id="7f247-426">**Nyugati Gyár – feladás**</span><span class="sxs-lookup"><span data-stu-id="7f247-426">**Fabrikam West posting**</span></span>
 
-| Számla                              | Tartozik összeg | Követel összeg |
+| <span data-ttu-id="7f247-427">Számla</span><span class="sxs-lookup"><span data-stu-id="7f247-427">Account</span></span>                              | <span data-ttu-id="7f247-428">Tartozik összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-428">Debit amount</span></span> | <span data-ttu-id="7f247-429">Követel összeg</span><span class="sxs-lookup"><span data-stu-id="7f247-429">Credit amount</span></span> |
 |--------------------------------------|--------------|---------------|
-| Kötelezettségek (Nyugati gyár)     | 75,00        |               |
-| Esedékes a Gyárnak (Nyugati Gyár)      |              | 75,00         |
-| Kötelezettségek (Nyugati gyár)     | 25,00        |               |
-| Esedékes a Keleti Gyártól (Nyugati Gyár) |              | 25,00         |
+| <span data-ttu-id="7f247-430">Kötelezettségek (Nyugati gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-430">Accounts payable (Fabrikam West)</span></span>     | <span data-ttu-id="7f247-431">75,00</span><span class="sxs-lookup"><span data-stu-id="7f247-431">75.00</span></span>        |               |
+| <span data-ttu-id="7f247-432">Esedékes a Gyárnak (Nyugati Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-432">Due to Fabrikam (Fabrikam West)</span></span>      |              | <span data-ttu-id="7f247-433">75,00</span><span class="sxs-lookup"><span data-stu-id="7f247-433">75.00</span></span>         |
+| <span data-ttu-id="7f247-434">Kötelezettségek (Nyugati gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-434">Accounts payable (Fabrikam West)</span></span>     | <span data-ttu-id="7f247-435">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-435">25.00</span></span>        |               |
+| <span data-ttu-id="7f247-436">Esedékes a Keleti Gyártól (Nyugati Gyár)</span><span class="sxs-lookup"><span data-stu-id="7f247-436">Due to Fabrikam East (Fabrikam West)</span></span> |              | <span data-ttu-id="7f247-437">25,00</span><span class="sxs-lookup"><span data-stu-id="7f247-437">25.00</span></span>         |
 
 
 

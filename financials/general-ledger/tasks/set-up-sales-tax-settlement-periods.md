@@ -16,47 +16,47 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7aa40362278a0a032e909574a59f842840fb9860
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4d65dee3bd059966458cb9603807de85b704fc49
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-sales-tax-settlement-periods"></a>Áfafizetési időszakok beállítása
+# <a name="set-up-sales-tax-settlement-periods"></a><span data-ttu-id="c658c-103">Áfafizetési időszakok beállítása</span><span class="sxs-lookup"><span data-stu-id="c658c-103">Set up sales tax settlement periods</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Az Áfakiegyenlítési időszakok információval rendelkeznek a periódusokról, hogy melyik áfát kell jelenteni és fizetni. Egy kiegyenlítési folyamat futtatható egy kiegyenlítési időszak megadott intervallumában. Minden kiegyenlítési időszakhoz rendelt adókód kiegyenlítésre kerül. Az érintett Adóhatóság beállításaitól függően az adókötelezettség feladásra kerül a szállítóhoz vagy a Főkönyvi számlához.
+<span data-ttu-id="c658c-104">Az Áfakiegyenlítési időszakok információval rendelkeznek a periódusokról, hogy melyik áfát kell jelenteni és fizetni.</span><span class="sxs-lookup"><span data-stu-id="c658c-104">Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid.</span></span> <span data-ttu-id="c658c-105">Egy kiegyenlítési folyamat futtatható egy kiegyenlítési időszak megadott intervallumában.</span><span class="sxs-lookup"><span data-stu-id="c658c-105">A settlement process can be run for a settlement period for a specific date interval.</span></span> <span data-ttu-id="c658c-106">Minden kiegyenlítési időszakhoz rendelt adókód kiegyenlítésre kerül.</span><span class="sxs-lookup"><span data-stu-id="c658c-106">All tax codes associated with the settlement period will be settled.</span></span> <span data-ttu-id="c658c-107">Az érintett Adóhatóság beállításaitól függően az adókötelezettség feladásra kerül a szállítóhoz vagy a Főkönyvi számlához.</span><span class="sxs-lookup"><span data-stu-id="c658c-107">Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.</span></span>
 
 
 
-Ez a feladat az USMF bemutatócéget használja.
+<span data-ttu-id="c658c-108">Ez a feladat az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="c658c-108">This task uses the USMF demo company.</span></span>
 
 
 
-1. Ugrás az Adó > Közvetett adók > Áfa > Áfa kiegyenlítési periódusok elemre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Kiegyenlítési időszak meghatározása mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. A Hatóság mezőben válassza ki azt az adóhatóságot, amely a kifizetési időszakhoz létrehozott jelentéseket és kifizetéseket kapja.
-6. A kívánt rekord megkeresése és kijelölése a listán
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. A Fizetési feltételek mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-    * Az érintett Adóhatóság beállítható szállítóként és az Áfakiegyenlítés nyitott szállítói számlát hoz létre. A Fizetés feltételei meghatározzák a Határidőt nyitott szállítói számla esetén.  
-9. Keresse meg és jelölje ki a kívánt rekordot a listán.
-10. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-11. Válasszon a kiegyenlítési időszakok időtartamaihoz egy típust.
-12. Adja meg a Periódus időtartam egységek periódusokra vonatkoztatott számát. Például egy negyedév 3 hónapból áll.
-13. Jelölje be, vagy törölje a Kötegfolyamat használata forgalmi adó kiegyenlítéshez jelölőnégyzetet.
-    * A kiegyenlítési időszakhoz tartozó kiegyenlítési folyamat kötegelt feladatként feldolgozható a háttérben. Ez adott időszakban nagyszámú adótranzakcióhoz ajánlott.  
-14. Bontsa ki az Időszak időtartamai fület.
-15. Kattintson a Hozzáadás gombra.
-16. A listában jelölje meg a kiválasztott sort.
-17. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
-18. Adja meg a dátumot a „Záró dátum” mezőben.
-19. Kattintson az Új időszak intervalluma.
-    * Amint megadta az első intervallumot az új időszakok automatikusan létrejönnek. Visszatérhet és szükség szerint új intervallumokat adhat hozzá.  
-20. Zárja be a lapot.
+1. <span data-ttu-id="c658c-109">Ugrás az Adó > Közvetett adók > Áfa > Áfa kiegyenlítési periódusok elemre.</span><span class="sxs-lookup"><span data-stu-id="c658c-109">Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.</span></span>
+2. <span data-ttu-id="c658c-110">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="c658c-110">Click New.</span></span>
+3. <span data-ttu-id="c658c-111">Írjon be egy értéket a Kiegyenlítési időszak meghatározása mezőbe.</span><span class="sxs-lookup"><span data-stu-id="c658c-111">In the Settlement period field, type a value.</span></span>
+4. <span data-ttu-id="c658c-112">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="c658c-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="c658c-113">A Hatóság mezőben válassza ki azt az adóhatóságot, amely a kifizetési időszakhoz létrehozott jelentéseket és kifizetéseket kapja.</span><span class="sxs-lookup"><span data-stu-id="c658c-113">In the Authority field, select the sales tax authority that receives the reports and the payments that are created for the settlement period.</span></span>
+6. <span data-ttu-id="c658c-114">A kívánt rekord megkeresése és kijelölése a listán</span><span class="sxs-lookup"><span data-stu-id="c658c-114">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="c658c-115">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="c658c-115">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="c658c-116">A Fizetési feltételek mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="c658c-116">In the Terms of payment field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c658c-117">Az érintett Adóhatóság beállítható szállítóként és az Áfakiegyenlítés nyitott szállítói számlát hoz létre.</span><span class="sxs-lookup"><span data-stu-id="c658c-117">The related Sales tax authority can be set up as a vendor and the Sales tax settlement will create an open vendor invoice.</span></span> <span data-ttu-id="c658c-118">A Fizetés feltételei meghatározzák a Határidőt nyitott szállítói számla esetén.</span><span class="sxs-lookup"><span data-stu-id="c658c-118">The Terms of payment defines the Due date for the open vendor invoice.</span></span>  
+9. <span data-ttu-id="c658c-119">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="c658c-119">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="c658c-120">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="c658c-120">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="c658c-121">Válasszon a kiegyenlítési időszakok időtartamaihoz egy típust.</span><span class="sxs-lookup"><span data-stu-id="c658c-121">Select a type for the settlement period intervals.</span></span>
+12. <span data-ttu-id="c658c-122">Adja meg a Periódus időtartam egységek periódusokra vonatkoztatott számát.</span><span class="sxs-lookup"><span data-stu-id="c658c-122">Enter the number of Period interval units per period.</span></span> <span data-ttu-id="c658c-123">Például egy negyedév 3 hónapból áll.</span><span class="sxs-lookup"><span data-stu-id="c658c-123">For example, a quarter has 3 months.</span></span>
+13. <span data-ttu-id="c658c-124">Jelölje be, vagy törölje a Kötegfolyamat használata forgalmi adó kiegyenlítéshez jelölőnégyzetet.</span><span class="sxs-lookup"><span data-stu-id="c658c-124">Select or clear the Use batch processing for sales tax settlement check box.</span></span>
+    * <span data-ttu-id="c658c-125">A kiegyenlítési időszakhoz tartozó kiegyenlítési folyamat kötegelt feladatként feldolgozható a háttérben.</span><span class="sxs-lookup"><span data-stu-id="c658c-125">The settlement process for the settlement period can be processed as batch job in the background.</span></span> <span data-ttu-id="c658c-126">Ez adott időszakban nagyszámú adótranzakcióhoz ajánlott.</span><span class="sxs-lookup"><span data-stu-id="c658c-126">This is recommended for a large number of tax transactions within a period interval.</span></span>  
+14. <span data-ttu-id="c658c-127">Bontsa ki az Időszak időtartamai fület.</span><span class="sxs-lookup"><span data-stu-id="c658c-127">Expand the Period intervals tab.</span></span>
+15. <span data-ttu-id="c658c-128">Kattintson a Hozzáadás gombra.</span><span class="sxs-lookup"><span data-stu-id="c658c-128">Click Add.</span></span>
+16. <span data-ttu-id="c658c-129">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="c658c-129">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="c658c-130">Adjon meg egy
+Adjon meg egy dátumot a Kezdő dátum mezőben.</span><span class="sxs-lookup"><span data-stu-id="c658c-130">In the From date field, enter a date.</span></span>
+18. <span data-ttu-id="c658c-131">Adja meg a dátumot a „Záró dátum” mezőben.</span><span class="sxs-lookup"><span data-stu-id="c658c-131">In the To date field, enter a date.</span></span>
+19. <span data-ttu-id="c658c-132">Kattintson az Új időszak intervalluma.</span><span class="sxs-lookup"><span data-stu-id="c658c-132">Click New period interval.</span></span>
+    * <span data-ttu-id="c658c-133">Amint megadta az első intervallumot az új időszakok automatikusan létrejönnek.</span><span class="sxs-lookup"><span data-stu-id="c658c-133">Once the first period interval has been entered, new periods can be created automatically.</span></span> <span data-ttu-id="c658c-134">Visszatérhet és szükség szerint új intervallumokat adhat hozzá.</span><span class="sxs-lookup"><span data-stu-id="c658c-134">You can come back and add new period intervals as required.</span></span>  
+20. <span data-ttu-id="c658c-135">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="c658c-135">Close the page.</span></span>
 
 
