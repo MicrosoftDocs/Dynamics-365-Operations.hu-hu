@@ -1,7 +1,7 @@
 --- 
 title: "Nyersanyagok létrehozása (csak 2016. február)"
 description: "Ez a feladat a késztermékek és a félkész termékek komponenseinek létrehozását összpontosít."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis

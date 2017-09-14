@@ -1,7 +1,7 @@
 --- 
 title: "Az előre meghatározott termékváltozatok létrehozása"
 description: "Ez az eljárás bemutatja az alaptermék termékváltozatainak a termékdimenziók kombinációjának használatával történő létrehozását."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 10/27/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
