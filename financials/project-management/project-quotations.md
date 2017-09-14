@@ -1,9 +1,9 @@
 ---
 title: "Projektajánlatok"
 description: "Ez a cikk a projektajánlatok koncepcióját mutatja be, amelynek segítségével a projektfázis első lépéseként vonzó ajánlatokkal keresheti meg a vevőket. Az ajánlat számos elemre kiterjedhet, például szerepelhetnek az ajánlatokban cikkek és szolgáltatások, alapvető kapcsolattartási információk, különleges kereskedelmi megállapodások és engedmények, valamint lehetséges adók és pótdíjak is."
-author: twheeloc
+author: KimANelson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23621
 ms.assetid: 1ba67109-8c5b-4ada-b730-a72cd46203fd
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 9e8f56c8ee0567d4fd5820462583b79316d44c4b
+ms.sourcegitcommit: 6dd2aa1ebc713287120106a9d1ec7dc15c24def9
+ms.openlocfilehash: 8a5138a75ff17575ae789124b1d1aa08eaa4a986
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 09/14/2017
 
 ---
 
