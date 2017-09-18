@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-## <a name="access-rights-of-a-cost-object-controller"></a>Egy költségobjektum-ellenőr hozzáférési jogai
+# <a name="access-rights-of-a-cost-object-controller"></a>Egy költségobjektum-ellenőr hozzáférési jogai
 
 [!include[banner](../includes/banner.md)]
 
