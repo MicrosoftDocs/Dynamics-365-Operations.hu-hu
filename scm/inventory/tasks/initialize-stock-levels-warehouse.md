@@ -1,0 +1,61 @@
+---
+title: "Készletszintek inicializálása a raktárban"
+description: "Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet a Készletmozgási napló segítségével."
+author: perlynne
+manager: AnnBe
+ms.date: 11/14/2016
+ms.topic: business-process
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: Operations
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: perlynne
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
+ms.openlocfilehash: 953125ae6e9d669bd13a3344c9f679747af6ff93
+ms.contentlocale: hu-hu
+ms.lasthandoff: 07/27/2017
+
+---
+# Készletszintek inicializálása a raktárban
+
+[!include[task guide banner](../../includes/task-guide-banner.md)]
+
+Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet a Készletmozgási napló segítségével. (Az aktuális készlet frissítése az adatentitásokban található tranzakciók importálásával is történhet.) Ezt az útmutatót az USMF bemutatócégen is lefuttathatja, ahol minden előfeltétel elérhető, például a naplónevek, cikkbeállítások, feladási profilok és számlák. Az útmutató a használt cikkre és dimenziókra vonatkozóan adott értékeket javasol. Ha egy másik elemet választ, lehetséges, hogy más dimenziók értékeit kell megadnia.
+
+1. Ugrás a Készletgazdálkodás > Naplóbejegyzések > Cikkek > Mozgás menüpontba.
+2. Kattintson az Új lehetőségre.
+3. A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+4. Válassza ki az IMov. lehetőséget.
+    * Tanácsos különböző naplósablonok nevét használni különböző üzleti célokra.  
+5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+6. Az Ellenszámla mezőben adja meg a „140200” értékeket.
+    * Ez az ellenszámla lesz a naplósorok alapértelmezett számlája. Lehetséges felülírni az alapértelmezettet, ha más ellenszámlát szeretne hozzárendelni egy sorhoz.  
+7. Kattintson az OK gombra.
+8. Kattintson az Új lehetőségre.
+9. A Cikkszám mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+10. Válassza az A0001 elemet.
+11. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+12. Kattintson a Készlet dimenziók lapra.
+13. A Hely mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+14. Válassza ki az 1. helyet.
+15. A Raktár mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+16. Válasszak ki a 13. raktárt.
+17. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+18. A Hely mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
+19. Válassza ki a 13. helyet.
+20. Adjon meg egy számot a Mennyiség mezőben.
+21. Kattintson a Mentés gombra.
+22. Kattintson a Feladás lehetőségre.
+23. Jelölje be a Minden feladási hiba átvitele egy új naplóba jelölőnégyzetet, vagy törölje a jelölést.
+    * Ha engedélyezi ezt a beállítást, a rendszer bemásolja egy új naplóba az olyan sorokat, amelyek nem kerülnek feladásra. A naplóban található információk segítségével korrigálhatja a problémákat, majd újra feladathatja a sorokat.  
+24. Kattintson az OK gombra.
+25. Zárja be a lapot.
+26. Zárja be a lapot.
+
