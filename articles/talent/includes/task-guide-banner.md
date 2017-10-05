@@ -1,2 +1,2 @@
 > [!NOTE]
-> <span data-ttu-id="e4848-101">Nem fogadunk el szerkesztéseket ehhez a témához, mivel a Lifecycle Services egy üzleti folyamata generálta.</span><span class="sxs-lookup"><span data-stu-id="e4848-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>
+> <span data-ttu-id="09cc9-101">Nem fogadunk el szerkesztéseket ehhez a témához, mivel a Lifecycle Services egy üzleti folyamata generálta.</span><span class="sxs-lookup"><span data-stu-id="09cc9-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>

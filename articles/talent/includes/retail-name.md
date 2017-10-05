@@ -1,0 +1,2 @@
+> [!NOTE]
+> <span data-ttu-id="1b6a9-101">Ez a témakör a Dynamics 365 for Finance and Operations, Enterprise edition és a Dynamics 365 for Retail termékeket fedi le.</span><span class="sxs-lookup"><span data-stu-id="1b6a9-101">This topic applies to both Dynamics 365 for Finance and Operations, Enterprise edition and to Dynamics 365 for Retail.</span></span> 
