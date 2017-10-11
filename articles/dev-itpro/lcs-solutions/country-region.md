@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: fd01d40d3e74503e3e310132882306ed8c23ad1d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -55,7 +55,7 @@ A következő erőforrások a tervezett és új honosítási funkciókat ismerte
 ### <a name="dynamics-365-roadmap"></a>Dynamics 365 ütemterv
 A [Dynamics 365 ütemterv](https://roadmap.dynamics.com/) pillanatképet nyújt arról, hogy éppen min dolgozunk. Használja ezt az ütemtervet, ha tudni szeretné, mi válik elérhetővé a közönség számára, és mi áll fejlesztés alatt. Minden dátum és a fejlesztés alatt álló funkciók előzetesnek minősülnek, a jelenlegi várakozásokon alapulnak, továbbá külön értesítés nélkül változhatnak.
 
-## <a name="electronic-reporting"></a>Elektronikus jelentés
+## <a name="electronic-reporting"></a>Elektronikus jelentéskészítés
 Az elektronikus jelentési (ER) eszköz a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. További tájékoztatás a következő témakörök egyikében található:
 -   [Elektronikus jelentések áttekintése](../analytics/general-electronic-reporting.md)
 -   [Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
@@ -72,7 +72,7 @@ A feladat-útmutatók a termék súgópaneljéről érhetők el, és lépésről
 
 A feladat-útmutatók megkereséséhez lépjen a Microsoft Dynamics 365 for Finance and Operations kívánt oldalára, és kattintson a Súgó lehetőségre. A súgó panel felsorolja az oldalt használó feladat-útmutatókat. A súgó panelen cím szerint is kereshet feladat-útmutatókra.
 
-További információ: [Feladat-útmutatók](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides).
+További információ: [Feladat-útmutatók](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
 
 ## <a name="countryregion-specific-help-topics"></a>Ország-/régióspecifikus súgó témakörök
@@ -80,264 +80,264 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 
 ### <a name="australia"></a>Ausztrália
 
--   [Banki fájlok formátumai](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks)
--   [Üzletitevékenység-kimutatás ](/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement)
--   [Alacsony értékű csoport értékcsökkenése](/dynamics365/unified-operations/financials/localizations/apac-aus-low-value-pool-depreciation)
+-   [Banki fájlok formátumai](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
+-   [Üzletitevékenység-kimutatás ](../../financials/localizations/apac-aus-business-activity-statement.md)
+-   [Alacsony értékű csoport értékcsökkenése](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
 
 ### <a name="austria"></a>Ausztria
 
-- [Féléves értékcsökkenés](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
-- [Csomagolóanyag díjai](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
-- [Beszerzési illetékek](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties)
-- [Áfabevallás](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
+- [Féléves értékcsökkenés](../../financials/localizations/emea-aut-half-year-depreciation.md)
+- [Csomagolóanyag díjai](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
+- [Beszerzési illetékek](../../financials/localizations/emea-aut-purchase-duties.md)
+- [Áfabevallás](../../financials/localizations/emea-aut-vat-statement-details.md)
 
 ### <a name="belgium"></a>Belgium
 
--   [CODA banki kivonat](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
--   [Intervat-adóbevallás](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
--   [PRODCOM-jelentés beállítása](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
--   [Egyeztetési jelentések](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
+-   [CODA banki kivonat](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
+-   [Intervat-adóbevallás](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
+-   [PRODCOM-jelentés beállítása](../../financials/localizations/emea-bel-prodcom-report.md)
+-   [Egyeztetési jelentések](../../financials/localizations/emea-bel-reconciliation-reports.md)
 
 ### <a name="brazil"></a>Brazília
 
--   [CIAP tárgyi eszköz](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
--   [Pénzügyi könyvek beállítása](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
--   [Főkönyvi konszolidációhoz létrehozott tranzakciók exportálása és importálása Brazília esetében](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
--   [Pénzügyi könyvek](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
--   [Pénzügyi dokumentum szöveges helyőrzők](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
--   [Pénzügyi bizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
--   [ICMS pénzügyi adóbizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-icms-tax-fiscal-documents)
--   [NF-e XML-dokumentumok és a DANFE-fájlok importálása és ellenőrzése](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails)
--   [Pénzügyi bizonylatok importálása](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents)
--   [Az elektronikus visszafizetési folyamat során létrehozott naplók](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
--   [NF-e folyamat](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
--   [Jogi személyek paraméterei](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
--   [Elektronikus fizetési átutalások feldolgozása Brazília esetében](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
--   [Beszerzés – kiegészítő pénzügyi bizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
--   [Hivatkozott pénzügyi dokumentumok](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
--   [Értékesítést kiegészítő pénzügyi bizonylatok](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
--   [Szolgáltatás – elektronikus pénzügyi bizonylat](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
--   [NF-e XML-dokumentumok és a DANFE-fájlok beállítása, importálása és ellenőrzése](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
--   [Adóattribútumok](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
--   [Adófizetések](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
--   [Adók](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
+-   [CIAP tárgyi eszköz](../../financials/localizations/latam-bra-ciap-fixed-asset.md)
+-   [Pénzügyi könyvek beállítása](../../financials/localizations/latam-bra-configure-fiscal-books.md)
+-   [Főkönyvi konszolidációhoz létrehozott tranzakciók exportálása és importálása Brazília esetében](../../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md)
+-   [Pénzügyi könyvek](../../financials/localizations/latam-bra-fiscal-books.md)
+-   [Pénzügyi dokumentum szöveges helyőrzők](../../financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
+-   [Pénzügyi dokumentumok](../../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
+-   [ICMS pénzügyi adóbizonylatok](../../financials/localizations/latam-bra-icms-tax-fiscal-documents.md)
+-   [NF-e XML-dokumentumok és a DANFE-fájlok importálása és ellenőrzése](../../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+-   [Pénzügyi bizonylatok importálása](../../financials/localizations/latam-bra-import-fiscal-documents.md)
+-   [Az elektronikus visszafizetési folyamat során létrehozott naplók](../../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
+-   [NF-e folyamat](../../financials/localizations/latam-bra-nf-e-process.md)
+-   [Jogi személyek paraméterei](../../financials/localizations/latam-bra-legal-entity-parameters.md)
+-   [Elektronikus fizetési átutalások feldolgozása Brazília esetében](../../financials/localizations/latam-bra-process-electronic-payment-remittances.md)
+-   [Beszerzés – kiegészítő pénzügyi dokumentumok](../../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md)
+-   [Hivatkozott pénzügyi dokumentumok](../../financials/localizations/latam-bra-referenced-fiscal-documents.md)
+-   [Értékesítés – kiegészítő pénzügyi dokumentumok](../../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
+-   [Szolgáltatás – elektronikus pénzügyi dokumentum](../../financials/localizations/latam-bra-service-electronic-fiscal-document.md)
+-   [NF-e XML-dokumentumok és a DANFE-fájlok beállítása, importálása és ellenőrzése](../../financials/localizations/latam-bra-set-up-import-nfe.md)
+-   [Adóattribútumok](../../financials/localizations/latam-bra-tax-attributes.md)
+-   [Adófizetések](../../financials/localizations/latam-bra-tax-payments.md)
+-   [Adók](../../financials/localizations/latam-bra-calculate-taxes.md)
 
 ### <a name="china"></a>Kína
--   [Anyagjegyzékek összehasonlítása](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison)
--   [Kínai bizonylatok](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers)
--   [Adóintegráció konfigurációja](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration)
-    -   [Vevői áfaszámlák GYIK](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices)
-    -   [Értékcsökkenés módjai tárgyi eszközök ](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets)
--   [Kínai Arany adó adatentitás importálása](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity)
--   [Havi átlagos készletköltségmodell](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model)
--   [Fő számlák készletének feladása hely szerint](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
--   [Főkönyvi számla tartozik és követel tételeinek megjelenítése](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits)
+-   [Anyagjegyzékek összehasonlítása](../../financials/localizations/apac-chn-bom-comparison.md)
+-   [Kínai bizonylatok](../../financials/localizations/apac-chn-vouchers.md)
+-   [Adóintegráció konfigurációja](../../financials/localizations/apac-chn-tax-integration.md)
+    -   [Vevői áfaszámlák GYIK](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+    -   [Értékcsökkenés módjai tárgyi eszközök ](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
+-   [Kínai Arany adó adatentitás importálása](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
+-   [Havi átlagos készletköltségmodell](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
+-   [Fő számlák készletének feladása hely szerint](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
+-   [Főkönyvi számla tartozik és követel tételeinek megjelenítése](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
 ### <a name="the-czech-republic"></a>Cseh Köztársaság
 
--   [Készpénzfizetési engedmény jóváírásra](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount)
--   [Értékcsökkenés kerekítése](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding)
--   [A tárgyieszköz-kivezetés féléves értékcsökkenése a Cseh Köztársaság esetében](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
--   [Értékcsökkenés felfüggesztése (ünnepek)](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
--   [Tárgyi eszközök értékcsökkenési módjai a Cseh Köztársaság esetében](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
--   [Tárgyi eszköz előzetes beszerzésének feladása](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
--   [Áfabevallás a Cseh Köztársaság esetében](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
--   [Áfa bejelentése ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
--   [Osztott időszakok az időszaki naplókban](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
--   [Aláírók felállítása a nyomtatási képernyőkhöz](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
--   [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms)
+-   [Készpénzfizetési engedmény jóváírásra](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
+-   [Értékcsökkenés kerekítése](../../financials/localizations/emea-cze-depreciation-rounding.md)
+-   [A tárgyieszköz-kivezetés féléves értékcsökkenése a Cseh Köztársaság esetében](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
+-   [Értékcsökkenés felfüggesztése (ünnepek.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
+-   [Tárgyi eszközök értékcsökkenési módjai a Cseh Köztársaság esetében](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
+-   [Tárgyi eszköz előzetes beszerzésének feladása](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
+-   [Áfabevallás a Cseh Köztársaság esetében](../../financials/localizations/emea-cze-vat-statement-details.md)
+-   [Áfa bejelentése ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
+-   [Osztott időszakok az időszaki naplókban](../../financials/localizations/emea-create-post-periodic-journals.md)
+-   [Aláírók beállítása a nyomtatási képernyőkhöz](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
+-   [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](../../financials/localizations/emea-amount-printing-forms.md)
 
 ### <a name="estonia"></a>Észtország
 
--   [Észtországi áfabevallás részletei](/dynamics365/unified-operations/financials/localizations/emea-est-vat-statement-details)
--   [Tárgyi eszközök értékesítése](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+-   [Észtországi áfabevallás részletei](../../financials/localizations/emea-est-vat-statement-details.md)
+-   [Tárgyi eszközök értékesítése](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
 ### <a name="europe"></a>Európa
-- [Előlegre jogosultak](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
-- [Előlegre jogosult tranzakciói](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions)
-- [Speciális számlázás](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice)
-- [Banki egyeztetés](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation)
-- [Helyesbítő számlázás](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice)
-- [Időszaki naplók létrehozása és feladása](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
-- [Számlaazonosítók módosítása az értékesítési rendeléseken](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
-- [EU beérkezési igazolások](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
-- [EU értékesítésilista-jelentés](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
-- [Árfolyam-korrekciók](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
-- [Fizetési módok fájlformátumai](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
-- [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
-- [ISO20022 fájlok importálása](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
-- [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
-- [Készletnapló-jelentések](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
-- [Számla- és szállítólevél-számozás Lettország és Litvánia esetében](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
-- [Számlakibocsátás határidői](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
-- [OIOUBL-előírások](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
-- [Fizetésiutalvány-jelentés](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
-- [Pénztár](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
-- [Tárgyi eszköz előzetes beszerzésének feladása](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
-- [Irányítószámok](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
-- [Nyilvántartási azonosítók](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
-- [Fordított adók](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
-- [SEPA-átutalás áttekintése](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
-- [SEPA beszedési megbízás – áttekintés](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
-- [Vevői és szállítói kompenzáció beállítása](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
-- [Aláírók felállítása a nyomtatási képernyőkhöz](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
-- [Sztornókönyvelés](/dynamics365/unified-operations/financials/localizations/emea-storno)
-- [Adóügyi irányelvek](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
-- [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
-- [Áfaárfolyamok](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
-- [Áfatételjegyzék-tranzakciók (Kelet-európa)](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions)
-- [Áfabevallás](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
-- [Elszámolási tranzakciók megtekintése](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
+- [Előlegre jogosultak](../../financials/localizations/emea-advance-holders.md)
+- [Előlegre jogosult tranzakciói](../../financials/localizations/emea-advance-holders-transactions.md)
+- [Speciális számlázás](../../financials/localizations/emea-advance-invoice.md)
+- [Banki egyeztetés](../../financials/localizations/emea-bank-reconciliation.md)
+- [Helyesbítő számlázás](../../financials/localizations/emea-corrective-invoice.md)
+- [Időszaki naplók létrehozása és feladása](../../financials/localizations/emea-create-post-periodic-journals.md)
+- [Számlaazonosítók módosítása az értékesítési rendeléseken](../../financials/localizations/emea-edit-invoice-id-sales-orders.md)
+- [EU beérkezési igazolások](../../financials/localizations/emea-entry-certificates.md)
+- [EU értékesítési lista jelentés](../../financials/localizations/emea-eu-sales-list.md)
+- [Árfolyam-korrekciók](../../financials/localizations/emea-exchange-rate-adjustments.md)
+- [Fizetési módok fájlformátumai](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
+- [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+- [ISO20022 fájlok importálása](../../financials/localizations/emea-ISO20022-file-formats.md)
+- [Intrastat](../../financials/localizations/emea-intrastat.md)
+- [Készletnapló-jelentések](../../financials/localizations/emea-set-up-report-inventory-journal-names.md)
+- [Számla- és szállítólevél-számozás Lettország és Litvánia esetében](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+- [Számlakibocsátás határidői](../../financials/localizations/emea-invoice-issue-deadline.md)
+- [OIOUBL-előírások](../../financials/localizations/emea-oioubl-standards-electronic-invoicing.md)
+- [Fizetésiutalvány-jelentés](../../financials/localizations/emea-eur-payment-slip-report-giro.md)
+- [Pénztár](../../financials/localizations/emea-petty-cash.md)
+- [Tárgyi eszköz előzetes beszerzésének feladása](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
+- [Irányítószámok](../../financials/localizations/emea-import-create-postal-codes-manually.md)
+- [Nyilvántartási azonosítók](../../financials/localizations/emea-registration-ids.md)
+- [Fordított adók](../../financials/localizations/emea-reverse-charge.md)
+- [SEPA-átutalás áttekintése](../../financials/accounts-payable/sepa-credit-transfer.md)
+- [SEPA beszedési megbízás – áttekintés](../../financials/accounts-receivable/sepa-direct-debit-overview.md)
+- [Vevői és szállítói kompenzáció beállítása](../../financials/localizations/emea-compensation-customer-vendor-transactions.md)
+- [Aláírók beállítása a nyomtatási képernyőkhöz](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
+- [Sztornókönyvelés](../../financials/localizations/emea-storno.md)
+- [Adóügyi irányelvek](../../financials/localizations/emea-tax-directives.md)
+- [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](../../financials/localizations/emea-amount-printing-forms.md) 
+- [Áfaárfolyamok](../../financials/localizations/emea-vat-exchange-rate.md)
+- [Áfatételjegyzék-tranzakciók (Kelet-Európa)](../../financials/localizations/emea-vat-register-transactions.md)
+- [Áfabevallás](../../financials/localizations/emea-vat-reporting.md)
+- [Elszámolási tranzakciók megtekintése](../../financials/localizations/emea-transactions-settlement-form.md)
 
 ### <a name="france"></a>Franciaország
--   [Számla- és bizonylatszámok kronológiai sorrendben](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
--   [Különbözeti értékcsökkenés Franciaország esetében](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation)
--   [NAF-kódok és siret-számok](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers)
--   [Lejárt határidejű vevői kifizetések kötbérei Franciaországban](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due)
--   [Egyösszegű visszaigénylés szövegének nyomtatása a vevői számlára](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text)
--   [RB/SL értékcsökkenés](/dynamics365/unified-operations/financials/localizations/emea-fra-rbsl-depreciation)
+-   [Számla- és bizonylatszámok kronológiai sorrendben](../../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
+-   [Különbözeti értékcsökkenés Franciaország esetében](../../financials/localizations/emea-fra-derogatory-depreciation.md)
+-   [NAF-kódok és siret-számok](../../financials/localizations/emea-fra-naf-codes-siret-numbers.md)
+-   [Lejárt határidejű vevői kifizetések kötbérei Franciaországban](../../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md)
+-   [Egyösszegű visszaigénylés szövegének nyomtatása a vevői számlára](../../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
+-   [RB/SL értékcsökkenés](../../financials/localizations/emea-fra-rbsl-depreciation.md)
 
 #### <a name="public-sector"></a>Állami szektor
-   -   [Az állami szektor kötelezettségei](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector)
-   -   [Mandatok a franciaországi állami szektorban](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement)
-   -   [Beszerzés és forrás](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-   -   [Állami szektor könyvelése](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting)
-   -   [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
-   -   [Szállítói számlák visszatartott kifizetése](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
+   -   [Az állami szektor kötelezettségei](../../financials/localizations/emea-fra-commitments-public-sector.md)
+   -   [Mandatok a franciaországi állami szektorban](../../financials/localizations/emea-fra-mandats-de-paiement.md)
+   -   [Beszerzés és forrás](../../financials/localizations/emea-fra-procurement-sourcing-public-sector.md)
+   -   [Állami szektor könyvelése](../../financials/localizations/emea-fra-public-sector-accounting.md)
+   -   [Titres de recette](../../financials/localizations/emea-fra-titres-de-recette-public-sector.md)
+   -   [Szállítói számlák visszatartott kifizetése](../../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
 
 ### <a name="germany"></a>Németország
--   [Értékcsökkenés a további beszerzéseken](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
--   [Német könyvvizsgálati fájl (GDPdU/GoBD)](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
--   [Német naplólista jelentése](/dynamics365/unified-operations/financials/localizations/emea-deu-journal-list-report)
--   [Külön címke nyomtatása értékesítésből származó jóváírásoknak](/dynamics365/unified-operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
+-   [Értékcsökkenés a további beszerzéseken](../../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
+-   [Német könyvvizsgálati fájl (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
+-   [Német naplólista jelentése](../../financials/localizations/emea-deu-journal-list-report.md)
+-   [Külön címke nyomtatása értékesítésből származó jóváírásoknak](../../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
 
 ### <a name="hungary"></a>Magyarország
 
--   [Értékcsökkenés módjai tárgyi eszközöknél](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods) 
--   [Tárgyi eszköz áthelyezése készletbe](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
--   [Kis értékű tárgyi eszközök](/dynamics365/unified-operations/financials/localizations/emea-hun-low-cost-fixed-assets)
+-   [Értékcsökkenés módjai tárgyi eszközöknél](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
+-   [Tárgyi eszköz áthelyezése készletbe](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+-   [Kis értékű tárgyi eszközök](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 
 ### <a name="italy"></a>Olaszország
 
--   [Olasz tiltólistás jelentés](/dynamics365/unified-operations/financials/localizations/emea-ita-black-list-report)
--   [Áfabevallások részletei](/dynamics365/unified-operations/financials/localizations/emea-ita-vat-statements-details)
--   [Tranzakciók kompetenciadátuma](/dynamics365/unified-operations/financials/localizations/emea-ita-competence-date)
--   [Tárgyi eszközök kézi értékcsökkenése](/dynamics365/unified-operations/financials/localizations/emea-ita-depreciation-of-fixed-assets)
--   [Szállítólevél dátumigazolása az olaszországi számlákon](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
--   [Olasz áfakönyvek](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
--   [Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [Adóelőleg](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
+-   [Olasz tiltólistás jelentés](../../financials/localizations/emea-ita-black-list-report.md)
+-   [Áfabevallások részletei](../../financials/localizations/emea-ita-vat-statements-details.md)
+-   [Tranzakciók kompetenciadátuma](../../financials/localizations/emea-ita-competence-date.md)
+-   [Tárgyi eszközök kézi értékcsökkenése](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+-   [Szállítólevél dátumigazolása az olaszországi számlákon](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+-   [Olasz áfakönyvek](../../financials/localizations/emea-ita-fiscal-books.md)
+-   [Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
+-   [Adóelőleg](../../financials/localizations/emea-ita-withholding-tax.md)
 
 ### <a name="japan"></a>Japán
 
--  [Szállítók által fedezett banki kifizetési díjak](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
--  [Gyűjtőszámlák](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
--  [Tárgyi eszközök felosztási szabályai](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
--  [Egyenlő arányban elosztott értékcsökkenési módszer](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
--  [Tárgyi eszközök értékcsökkenése](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
--  [Tárgyi eszközök értékvesztésének kezelése a készpénzgeneráló egységen](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
--  [Irányítószámok importálása](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes)
--  [Kivezetési kötelezettség beállítása tárgyi eszközök esetében](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
--  [Tárgyi eszközök csökkentési bejegyzéseinek beállítása](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
--  [Szállító kifizetése váltó kibocsátásával](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
--  [Fokozatos adóelőleg számítása](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
+-  [Szállítók által fedezett banki kifizetési díjak](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
+-  [Gyűjtőszámlák](../../financials/localizations/apac-jpn-consolidate-invoices.md)
+-  [Tárgyi eszközök felosztási szabályai](../../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md)
+-  [Egyenlő arányban elosztott értékcsökkenési módszer](../../financials/localizations/apac-jpn-equally-divided-depreciation-method.md)
+-  [Tárgyi eszközök értékcsökkenése](../../financials/localizations/apac-jpn-fixed-asset-depreciation.md)
+-  [Tárgyi eszközök értékvesztésének kezelése a készpénzgeneráló egységen](../../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md)
+-  [Irányítószámok importálása](../../financials/localizations/apac-jpn-import-postal-codes.md)
+-  [Kivezetési kötelezettség beállítása tárgyi eszközök esetében](../../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md)
+-  [Tárgyi eszközök csökkentési bejegyzéseinek beállítása](../../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md)
+-  [Szállító kifizetése váltó kibocsátásával](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
+-  [Fokozatos adóelőleg számítása](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
 
 ### <a name="latvia"></a>Lettország
 
--   [Tárgyieszköz-könyvelés adószámítási célokra](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting)
--   [Tárgyi eszközök helyváltozásának nyomon követése](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change)
--   [Számla és szállítólevél számozása](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [Természeti erőforrások adójáról szóló jelentés](/dynamics365/unified-operations/financials/localizations/emea-lva-tax-natural-resources)
--   [Áfabevallás részletei](/dynamics365/unified-operations/financials/localizations/emea-lva-vat-statement-details)
+-   [Tárgyieszköz-könyvelés adószámítási célokra](../../financials/localizations/emea-lva-fixed-assets-accounting.md)
+-   [Tárgyi eszközök helyváltozásának nyomon követése](../../financials/localizations/emea-lva-fixed-assets-location-fields-change.md)
+-   [Számla és szállítólevél számozása](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+-   [Természeti erőforrások adójáról szóló jelentés](../../financials/localizations/emea-lva-tax-natural-resources.md)
+-   [Áfabevallás részletei](../../financials/localizations/emea-lva-vat-statement-details.md)
 
 ### <a name="lithuania"></a>Litvánia
 
--   [Tárgyi eszköz javítási kimutatása](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
--   [Számla és szállítólevél számozása](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [Áfabevallás részletei](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
+-   [Tárgyi eszköz javítási kimutatása](../../financials/localizations/emea-ltu-fixed-asset-repair-statement.md)
+-   [Számla és szállítólevél számozása](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+-   [Áfabevallás részletei](../../financials/localizations/emea-ltu-vat-statement-details.md)
 
 ### <a name="mexico"></a>Mexikó
 
--   [DIOT-nyilatkozat kimutatása](/dynamics365/unified-operations/financials/localizations/latam-mex-diot-declaration-statement)
--   [Elektronikus főkönyvi számla kimutatásai](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements)
--   [Helyesbítés – inflációkimutatási jelentés](/dynamics365/unified-operations/financials/localizations/latam-mex-adjustment-inflation-declaration-report)
--   [ISR-bevallás](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes)
--   [Elektronikus számlák (CFDI)](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices)
+-   [DIOT-nyilatkozat kimutatása](../../financials/localizations/latam-mex-diot-declaration-statement.md)
+-   [Elektronikus főkönyvi számla kimutatásai](../../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md)
+-   [Helyesbítés – inflációkimutatási jelentés](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
+-   [ISR-bevallási jelentési jelentés](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
+-   [Elektronikus számlák (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
    
 ### <a name="malaysia"></a>Malajzia
 
--   [Áruk és szolgáltatások adója (GST)](/dynamics365/unified-operations/financials/localizations/apac-mys-gst)
+-   [Áruk és szolgáltatások adója (GST)](../../financials/localizations/apac-mys-gst.md)
 
 ### <a name="netherlands"></a>Hollandia
 
--   [Számlakibocsátás határideje](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
+-   [Számlakibocsátás határideje](../../financials/localizations/emea-invoice-issue-deadline.md)
 
 ### <a name="norway"></a>Norvégia
 
--   [Nets importálási formátum](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format)
--   [Áfabevallás](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report)
+-   [Netes importálási formátum](../../financials/localizations/emea-nor-nets-import-format.md)
+-   [Áfabevallás](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 
 ### <a name="poland"></a>Lengyelország
 
--   [Sorengedmények kiszámítása az egységár alapján](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price)
--   [Javítással kapcsolatos megjegyzések](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes)
--   [Értékesítési számlamásolatok számozása](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
--   [Tárgyi eszközök értékcsökkenése](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-assets-depreciation)
--   [Tárgyi eszközök értékesítése](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
--   [Visszaküldhető csomagolás](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages)
--   [Áfajelentések](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports)
--   [Standard könyvvizsgálati fájl (SAF)](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf)
--   [Forgalom- és mérlegkimutatás](/dynamics365/unified-operations/financials/localizations/emea-pol-turnover-balances-statement)
+-   [Sorengedmények kiszámítása az egységár alapján](../../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
+-   [Javítással kapcsolatos megjegyzések](../../financials/localizations/emea-pol-correction-notes.md)
+-   [Értékesítési számlamásolatok számozása](../../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md)
+-   [Tárgyi eszközök értékcsökkenése](../../financials/localizations/emea-pol-fixed-assets-depreciation.md)
+-   [Tárgyi eszközök értékesítése](../../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md)
+-   [Visszaküldhető csomagolás](../../financials/localizations/emea-pol-returnable-packages.md)
+-   [Áfajelentések](../../financials/localizations/emea-pol-sales-tax-reports.md)
+-   [Standard könyvvizsgálati fájl (SAF)](../../financials/localizations/emea-pol-standard-audit-file-saf.md)
+-   [Forgalom- és mérlegkimutatás](../../financials/localizations/emea-pol-turnover-balances-statement.md)
 
 ### <a name="saudi-arabia"></a>Szaúd-Arábia
 
--   [Zakat-jelentés](/dynamics365/unified-operations/financials/localizations/emea-sau-zakat-reporting)
+-   [Zakat-jelentés](../../financials/localizations/emea-sau-zakat-reporting.md)
 
 ### <a name="singapore"></a>Szingapúr
 
--   [A szingapúri GST-05 jelentés mellékletének létrehozása](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report)
+-   [A szingapúri GST-05 jelentés mellékletének létrehozása](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
 
 ### <a name="spain"></a>Spanyolország
 
--   [Spanyol váltó](/dynamics365/unified-operations/financials/localizations/emea-esp-bill-of-exchange-options)
--   [A készpénzfizetési engedményt a számlaparaméterben alkalmazza a rendszer](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
--   [Feltételes áfa](/dynamics365/unified-operations/financials/localizations/emea-esp-conditional-sales-tax)
--   [Tárgyi eszköz átértékelési csoportjai](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
--   [Közösségi áfa](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
--   [Egyszeri vevők](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
--   [Csekkek nyomtatása a spanyol elrendezésben](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
--   [Spanyol kötelezvény beállításai](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
--   [Beszerzési és értékesítési ciklusok](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
--   [Speciális bevitelek és nyitólapok](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
--   [Számlaszám pénzügyi adatainak használata](/dynamics365/unified-operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
+-   [Spanyol váltó](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
+-   [A készpénzfizetési engedményt a számlaparaméterben alkalmazza a rendszer](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
+-   [Feltételes áfa](../../financials/localizations/emea-esp-conditional-sales-tax.md)
+-   [Tárgyi eszköz átértékelési csoportjai](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
+-   [Közösségi áfa](../../financials/localizations/emea-esp-intra-community-vat.md)
+-   [Egyszeri vevők](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
+-   [Csekkek nyomtatása a spanyol elrendezésben](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
+-   [Spanyol kötelezvény beállításai](../../financials/localizations/emea-esp-promissory-note-options.md)
+-   [Beszerzési és értékesítési ciklusok](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
+-   [Speciális bevitelek és nyitólapok](../../financials/localizations/emea-esp-opening-sheets-spain.md)
+-   [Számlaszám pénzügyi adatainak használata](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
 
 ### <a name="sweden"></a>Svédország
 
--   [Kifizetési formátumok importálása Svédország esetében](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import)
--   [Készpénzjegyzékek Svédország esetében](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers)
+-   [Kifizetési formátumok importálása Svédország esetében](../../financials/localizations/emea-swe-payment-formats-import.md)
+-   [Készpénzjegyzékek Svédország esetében](../../retail/localizations/emea-swe-cash-registers.md)
 
 ### <a name="switzerland"></a>Svájc
 
--   [ESR vevői importkifizetések](/dynamics365/unified-operations/financials/localizations/emea-che-esr-customer-payments-import)
+-   [ESR vevői importkifizetések](../../financials/localizations/emea-che-esr-customer-payments-import.md)
 
 ### <a name="thailand"></a>Thaiföld
 
--   [Készletkarton-jelentések](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
--   [Helyettesítési/helyesbítési adószámla Thaiföld esetében](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
--   [Nem realizált áfa](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
--   [Adóelőleg](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
+-   [Készletkarton-jelentések](../../financials/localizations/apac-tha-stock-card-reports.md)
+-   [Helyettesítési/helyesbítési adószámla Thaiföld esetében](../../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md)
+-   [Nem realizált áfa](../../financials/localizations/apac-tha-unrealized-vat.md)
+-   [Adóelőleg](../../financials/localizations/apac-tha-withholding-tax.md)
 
 ### <a name="united-kingdom"></a>Egyesült Királyság
 
--   [Építőipari séma – Egyesült Királyság](/dynamics365/unified-operations/financials/localizations/emea-gbr-cis-construction-industry-scheme)
+-   [Építőipari séma – Egyesült Királyság](../../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
 
 ### <a name="united-states"></a>Amerikai Egyesült Államok
 
--   [1099-es űrlap az állami szektorban](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
--   [I-9-es űrlap ellenőrzése](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
--   [Év végi 1099-es jelentés](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
--   [Bérlista](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)
--   [Állami szektor](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality)
+-   [1099-es űrlap az állami szektorban](../../financials/localizations/noam-usa-form-1099-public-sector.md)   
+-   [I-9-es űrlap ellenőrzése](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
+-   [Év végi 1099-es jelentés](../../financials/localizations/noam-usa-year-end-1099-reporting.md)
+-   [Bérlista](../../fin-and-ops/hr/localizations/noam-usa-payroll.md)
+-   [Állami szektor](../../financials/public-sector/public-sector-functionality.md)
 
 
 
