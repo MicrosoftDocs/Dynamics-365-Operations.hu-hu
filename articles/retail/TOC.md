@@ -1,5 +1,8 @@
 # [Üdvözöljük a Dynamics 365 for Retail rendszerben!](index.md)
 
+# Első lépések
+## [Új vagy módosult elemek](get-started/whats-new.md)
+
 # Kifizetések
 ## [Kifizetési módok](payment-methods.md)
 ## [Hitelkártya-beállítás, engedélyezés és rögzítés](../financials/accounts-receivable/credit-card-authorizations.md)
@@ -173,9 +176,10 @@
 ### [A Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md)
 #### [Kiskereskedelmi számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS eszköz aktiválása](dev-itpro/retail-device-activation.md)
-#### [A kiskereskedelmi Cloud POS biztosítása](dev-itpro/secure-retail-cloud-pos.md)
-### [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)
-### [Kiskereskedelmi összetevő-események a diagnosztikához és a hibaelhárításhoz](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
+#### [Retail Cloud POS biztosítása](dev-itpro/secure-retail-cloud-pos.md)
+### [Retail hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)
+### [Retail önkiszolgáló központi telepítése](dev-itpro/retail-mass-deployment.md)
+### [Retail összetevő-események a diagnosztikához és a hibaelhárításhoz](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Telepíthető csomag alkalmazása](../dev-itpro/deployment/apply-deployable-package-system.md)
 
 ## Frissítés és N-1-támogatás
