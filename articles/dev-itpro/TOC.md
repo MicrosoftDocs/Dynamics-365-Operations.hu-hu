@@ -451,6 +451,7 @@
 ### [Osztott modellek](dev-tools/model-split.md)
 ### [Delegált használata a modellek közötti függőségek megoldásához](migration-upgrade/delegates-migration.md)
 
+
 ## Frissítés egy legutóbbi frissítésre
 ### [A legújabb kiadásra való áttelepítés folyamata](migration-upgrade/upgrade-latest-update.md)
 ### [Életciklus-irányelv](migration-upgrade/versions-update-policy.md)
@@ -511,6 +512,8 @@
 ## [Egyéni üzleti folyamatok kezelése](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Megfigyelés és diagnosztika ](lifecycle-services/monitoring-diagnostics.md)
 ## [Eszköztár](lifecycle-services/asset-library.md)
+## [Microsoft Dynamics 365 – fordítási szolgáltatás – áttekintés](lifecycle-services/translation-service-overview.md)
+### [Microsoft Dynamics 365 fordítási szolgáltatás – használati útmutató](lifecycle-services/use-translation-service.md)
 
 ## A Dynamics AX 2012 Lifecycle Services funkciói
 ### Telepítés
