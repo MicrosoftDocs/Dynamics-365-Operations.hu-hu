@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Az explicit személyre szabások olyan személyre szabások, amelyeket kifejezet
 
 Ekképpen fogja személyre szabni az oldalon található elemet, ha egyszerűen csak meg akarja változtatni az elem címkéjét, el akarja rejteni, hogy ne jelenjen meg az oldalon (ez semmilyen adatot nem módosít, egyszerűen csak nem jeleníti meg az információt), vagy be akarja emelni az információt a gyorslapok összefoglaló szakaszába (ha az elem egy gyorslap), mezőt szeretne kihagyni a Tab billentyűvel való lépkedés közben, vagy nem szerkeszthetővé tenni az adatot a „Nem szerkeszthető” beállítás kiválasztásával. 
 
-Ha elemeket szeretne áthelyezni, elrejteni vagy módosítani, akkor a Személyes beállítások eszköztárat használhatja, amely az elemek Tulajdonságok ablakáról érhető el a **Képernyő személyre szabása** beállítást kiválasztva. A Személyes beállítások eszköztár elérhető az elem Műveleti ablaktáblájáról, a **Beállítások** lap Személyes beállítás csoportjából. Válassza a **Képernyő személyre szabása** lehetőséget, hogy megjelenítse a Személyes beállítások eszköztárat. 
+Ha elemeket szeretne áthelyezni, elrejteni vagy módosítani, akkor a Személyes beállítások eszköztárat használhatja, amely az elemek Tulajdonságok ablakáról érhető el a **Képernyő személyre szabása** beállítást kiválasztva. A személyre szabási eszköztár elérhető a képernyőn műveleti ablaktábláján is, a **Lehetőségek** lap Személyre szabás csoportja alatt. Válassza a **Képernyő személyre szabása** lehetőséget, és a személyre szabási eszköztár megjelenik. 
 
 [![Személyes beállítások eszköztára](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 

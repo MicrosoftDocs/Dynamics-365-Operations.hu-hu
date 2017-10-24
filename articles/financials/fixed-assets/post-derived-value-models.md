@@ -16,13 +16,13 @@ ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: aaacf596f2ea1107a53647d779e9d2b6c37ab530
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -48,7 +48,7 @@ A következő adatok leírják, hogyan állítson be beszerzési tranzakciókat 
     -   A könyvelési könyv: VM 1, Jelenlegi feladási réteg
     -   Az adózáshoz használt könyv: VM 2, Adó feladási réteg
 
-2.  A VM 1-en kattintson a Származtatott könyvek lapra. Válassza ki a VM 2-t a Könyv mezőben és a Beszerzés elemet a Tranzakciótípus mezőben.
+2.  Kattintson az ÉM 1 Származtatott könyvek fülére. Válassza ki az ÉM 2 elemet a Könyv mezőben, és a Beszerzés elemet a Tranzakció típusa mezőben.
 
 A könyveket ezután csatolni lehet meghatározott tárgyi eszközökhöz. 
 

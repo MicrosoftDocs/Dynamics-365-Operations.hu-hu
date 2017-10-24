@@ -16,13 +16,13 @@ ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 40ae4e0774c5752d697baba6c8add8aaf44fbb6d
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: eb09c0bb28c2ba8e7b890854c444cec80fe8277c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,11 +35,11 @@ A cikk ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi
 
 # <a name="specify-a-row-code-in-a-row-definition"></a>Határozzon meg egy sor kódot a sor definícióban
 
-A sor definíciókban, a számok vagy a címkék a **Sorkód** cellában minden sort azonosítanak a sor definícióban. Megadhatja, hogy a sorkód vonatkozzon az adatokra a számításokban és összegekben.
+A sor definíciókban, a számok vagy a címkék a **Sorkód** cellában minden sort azonosítanak a sor definícióban. A sorkód megadásával lehet hivatkozni az adatokra a számításokban és az összesítésekben.
 
-### <a name="row-code-requirements"></a>Sorkód követelmények
+### <a name="row-code-requirements"></a>A sorkódokkal kapcsolatos követelmények
 
-Egy sorkód szükséges minden sorhoz. Vegyítheti a numerikus, az alfanumerikus és a nem beállított (üres) sorkódokat a sor definícióban. A sorkód lehet bármilyen pozitív egész szám (100 000 000 alatt), vagy egy leíró címke amely azonosítja az adott sort. A leíró címkének ezeknek a szabályoknak kell megfelelnie:
+Mindegyik sorhoz szükség van egy sorkódra. Vegyítheti a numerikus, az alfanumerikus és a nem beállított (üres) sorkódokat a sor definícióban. A sorkód lehet bármilyen pozitív egész szám (100 000 000 alatt), vagy egy leíró címke amely azonosítja az adott sort. A leíró címkének ezeknek a szabályoknak kell megfelelnie:
 
 -   A címkének (a és z között vagy A és Z között) egy alfabetikus karakterrel kell kezdődnie, és legfeljebb 16 karakterig a számoknak és a betűknek bármely kombinációja lehet. 
     > [!NOTE]
@@ -68,7 +68,7 @@ Az alábbi példák érvényes sorkódok:
 ## <a name="add-a-description"></a>Leírás hozzáadása
 A leírás cella biztosítja a pénzügyi adat leírását a jelentés olyan sorába, mint például „Bevétel” vagy „Nettó árbevétel.” A szöveg a **Leírás** cellában pontosan úgy jelenik meg, ahogyan a sordefinícióban megadta. 
 > [!NOTE]
-> A leírás oszlop szélessége a jelentésben az oszlopdefinícióban van megadva. Ha a szöveg a **Leírás** oszlopban a sordefinícióban hosszú, ellenőrizze a **Leírás** oszlop szélességét. Amikor a **Sor Beszúrása Valahonnan** párbeszédpanelt használja, a **Leírás** oszlopban szereplő értékek szegmensértékek vagy dimenzióértékek a pénzügyi adatokból. Leíró szövegnek beszúrhat sorokat, mint például a szakaszfejléc vagy egy szakasz összesen és a formázás hozzáadásának, mint például egy vonalnak az összegező sor elé. Ha a jelentés tartalmazza egy jelentési fát, akkor beleveheti a kiegészítő szöveget is, ami a jelentési egységeknek van definiálva a jelentési fában. Korlátozhatja is a kiegészítő szöveget egy adott jelentési egységhez.
+> A leírás oszlop szélessége a jelentésben az oszlopdefinícióban van megadva. Ha a szöveg a **Leírás** oszlopban a sordefinícióban hosszú, ellenőrizze a **Leírás** oszlop szélességét. Amikor a **Sor Beszúrása Valahonnan** párbeszédpanelt használja, a **Leírás** oszlopban szereplő értékek szegmensértékek vagy dimenzióértékek a pénzügyi adatokból. Sorok beszúrásával leíró jellegű szöveget, például szakaszfejlécet vagy szakaszösszesítőt, illetve formázást, például összegsor előtti sort helyezhet el a jelentésben. Ha a jelentés tartalmazza egy jelentési fát, akkor beleveheti a kiegészítő szöveget is, ami a jelentési egységeknek van definiálva a jelentési fában. Korlátozhatja is a kiegészítő szöveget egy adott jelentési egységhez.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Adjon leírást egy sorhoz a jelentésben
 
@@ -112,12 +112,12 @@ A **Formátum Kód** cella előre megformázott lehetőségeket kínál az adott
     | ---                           | Egyszeres aláhúzás                   | Egyszeres aláhúzást tesz minden összeg oszlop alá a jelentésben.                                                                                                                                                     |
     | ===                           | Kétszeres aláhúzás                   | Kétszeres aláhúzást tesz minden összeg oszlop alá a jelentésben.                                                                                                                                                     |
     | LINE1                         | Vékony vonal                          | Egyetlen vékony vonalat rajzol keresztbe a lapra.                                                                                                                                                                      |
-    | LINE. sor                         | Vastag vonal                         | Egyetlen vékony vonalat rajzol keresztbe a lapra.                                                                                                                                                                     |
-    | LINE3                         | Szaggatott vonal                        | Egyetlen szaggatott vonalat rajzol keresztbe a lapra.                                                                                                                                                                    |
+    | LINE. sor                         | Vastag vonal                         | Egy vastag vonalat húz végig az oldalon.                                                                                                                                                                     |
+    | LINE3                         | Pontozott vonal                        | Egyetlen szaggatott vonalat rajzol keresztbe a lapra.                                                                                                                                                                    |
     | LINE4                         | Vastag vonal és vékony vonal           | Dupla vonalat rajzol keresztbe a lapra. A felső vonal vastag, az alsó vonal pedig vékony.                                                                                                                       |
     | LINE5                         | Vékony vonal és vastag vonal           | Dupla vonalat rajzol keresztbe a lapra. A felső vonal vékony, az alsó vonal pedig vastag.                                                                                                                       |
     | BXB BXC                       | Keretezett sor                          | Keretet rajzol a **BXB**-al kezdődő sor és a **BXC**-al végződő sor köré.                                                                                                               |
-    | REM                           | Megjegyzés                             | Azonosítja az olyan sorokat amik megjegyzés sorok, így nem szükséges kinyomtatni a jelentésre. Például, egy megjegyzés sor lehet a formázási technikádat magyarázza.                                                            |
+    | REM                           | Megjegyzés                             | Azokat a sorokat azonosítja, amelyek megjegyzéseket tartalmaznak, és amelyeket nem kell kinyomtatni a jelentés nyomtatásakor. Például a megjegyzéssor tartalmazhatja a formázási megoldások magyarázatát.                                                            |
     | SORT ASORT SORTDESC ASORTDESC | Rendezés                               | Rendezi a kiadásokat vagy a bevételeket, rendezi az aktuális költségvetést vagy költségvetés eltérés jelentést a legnagyobb eltérés szerint, vagy betűrendbe rendezi a sorokat.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Kapcsolódó képletek/sorok/egységek megadása
@@ -133,7 +133,7 @@ A **Kapcsolódó Képletek/Sorok/Egységek** cellának több célja van. Attól 
 
 Használja a sorösszegező formulát, hogy hozzáadjon vagy kivonjon összegeket más sorokban. Egy sorösszegező formula tartalmazhat + és - műveleteket, hogy egyéni sorkódokkal és tartományokkal is számolhasson. A tartományokat kettőspont (:) jelöli. A képlet legfeljebb 1,024 karakterből állhat. Íme egy példa az alap összegező képletre: 400 + 420 + 430 + 450 + 460LIABILITIES + EQUITY520:546520:546-LIABILITIES
 
-### <a name="components-of-a-row-total-formula"></a>A sorösszegező képlet összetevői
+### <a name="components-of-a-row-total-formula"></a>Sorösszesítő képlet részei
 
 Sorösszegező képlet létrehozásakor kötelező sorkódokat használni az összeadandó vagy a kivonandó sorok megadásánál, és a sorok kombinálásának megadásánál kötelező a műveletjelek használata. Az összegező sorok és az összeg sorok bármilyen kombinációban használhatók. **Megjegyzés:** Minden olyan összegező sor, ami egy tartományban szerepel ki van zárva. Egy végösszeg létrehozásához, megadhatja a sorok tartományát. Ha a tartomány első sora összegező sor, akkor az a sor beleszámít az új összegbe. A következő táblázat leírja a műveletjelek használatát az összegző képletekben.
 
@@ -143,9 +143,9 @@ Sorösszegező képlet létrehozásakor kötelező sorkódokat használni az ös
 | :        | 100:330         | Összead minden sorösszeget a 100-ik és a 330-ik sor között.    |
 | -        | 100-330         | Kivonja a 100-ik sorban lévő összeget a 330-ik sor összegéből. |
 
-### <a name="create-a-row-total"></a>Sorösszeg létrehozása
+### <a name="create-a-row-total"></a>Sorösszesítés létrehozása
 
-1.  A Jelentés Tervező eszközben, kattintson **Sor Definíciók**, majd nyissa meg a sor definíciót, hogy módosítsa.
+1.  A Report Designer eszközben kattintson a **Sordefiníciók** lehetőségre, majd nyissa meg a módosítani kívánt sordefiníciót.
 2.  Kattintson duplán a **Formátum Kód** cellára a sordefinícióban, majd válassza ki a **TOT**-ot.
 3.  A **Kapcsolódó Képletek/Sorok/Egységek** cellába írja be az összegző képletet.
 
@@ -177,7 +177,7 @@ Egy vagy több alapsor van megadva a sordefinícióban, és ezután az oszlopdef
 -   A **CBR** sorok nincsenek kinyomtatva a befejeződött jelentésben.
 -   A **CBR** formátumkód és a kapcsolódó sorkód azon sor vagy a szakasz fölött van elhelyezve, amely a kapcsolódó számításokat jeleníti meg.
 
-Az oszlopdefinícióban a **CALC** oszloptípus jelzi azt az oszlopot, amely meghatározza a képletet a **Képlet** sorban. Ez a képlet dolgozik ennek az jelentésoszlopnak az adataival, és a Baserow kulcsszót használja a számítások alapjául a **CBR** formátumkódokra a sorban. A sordefinícióban, a **CBR** formátumkód határozza meg az alapsort azoknak az oszlopoknak, amik százalékát vagy szorzatát számítják a jelentés összes sorának, az alapsor alapján. Több **CBR** formátumkód is szerepelhet a sorformátumban, mint például egy a nettó értékesítésnek, egy a bruttó értékesítésnek, és egy az összes költségnek. Általában a **CBR** formátumkód számlák százalékos részesedésének létrehozására használatos, amiket az összegzéssel hasonlítanak össze. Egy adott alapsort használunk minden számításhoz egészen addig, amíg egy másik alapsort nem definiálunk. Meg kell adnia egy kezdő **CBR** formátumkódot és egy záró **CBR** formátumkódot. Például ahhoz, hogy meghatározza a nettó értékesítés százalékában a költségeket, eloszthatja a értéket minden egyes költségsorban, a nettó értékesítés sorában szereplő értékkel. Ebben az esetben, a nettó értékesítési sor az alap sor. Megadhat egy oszlopdefiníciót, ami jelenti a jelenlegi eredményt és a folyó évben a mai dátumig elért eredményt, minden eredmény alapszázalékával, mint ahogy az látható a következő példában. Kezdjen a részletes bevétel-kimutatással.
+Az oszlopdefinícióban a **CALC** oszloptípus olyan oszlopot jelez, amely a **Képlet** sorban képletet határoz meg. Ez a képlet dolgozik ennek az jelentésoszlopnak az adataival, és a Baserow kulcsszót használja a számítások alapjául a **CBR** formátumkódokra a sorban. A sordefinícióban, a **CBR** formátumkód határozza meg az alapsort azoknak az oszlopoknak, amik százalékát vagy szorzatát számítják a jelentés összes sorának, az alapsor alapján. Több **CBR** formátumkód is szerepelhet a sorformátumban, mint például egy a nettó értékesítésnek, egy a bruttó értékesítésnek, és egy az összes költségnek. Általában a **CBR** formátumkód számlák százalékos részesedésének létrehozására használatos, amiket az összegzéssel hasonlítanak össze. Egy adott alapsort használunk minden számításhoz egészen addig, amíg egy másik alapsort nem definiálunk. Meg kell adnia egy kezdő **CBR** formátumkódot és egy záró **CBR** formátumkódot. Például ahhoz, hogy meghatározza a nettó értékesítés százalékában a költségeket, eloszthatja a értéket minden egyes költségsorban, a nettó értékesítés sorában szereplő értékkel. Ebben az esetben, a nettó értékesítési sor az alap sor. Megadhat egy oszlopdefiníciót, ami jelenti a jelenlegi eredményt és a folyó évben a mai dátumig elért eredményt, minden eredmény alapszázalékával, mint ahogy az látható a következő példában. Kezdjen a részletes bevétel-kimutatással.
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Válassza ki az alapsort a sordefinícióban oszlopszámításhoz
 
@@ -197,7 +197,7 @@ Az oszlopdefinícióban a **CALC** oszloptípus jelzi azt az oszlopot, amely meg
 A következő sordefiníció-példában, a 100. sor azt mutatja, hogy a számításokhoz használt alapsor a 280. sor. [![Alapsor-számítási példa.](./media/cbrrowdefinition.png)](./media/cbrrowdefinition.png) A következő egy oszlopdefiníció példában, a számítások a **CBR** kódformátumot használják. A számítás a C oszlopban elosztja a B oszlopban található jelentés értékét, a B oszlop 280-ik sorában lévő értékkel. A formátum felülírása a B oszlopban százalékként nyomtatja kis a számítás eredményét. Ehhez hasonlóan, minden összeg az E oszlopban a D oszlop összege, mint a nettó értékesítések százalékai. [![Oszlopdefiníció-példa](./media/cbrcolumndefinition2.png)](./media/cbrcolumndefinition2.png) A következő példa bemutat egy jelentést, ami az előző számítás alapján létrehozható. [![Példajelentés az előző példa számítások alapján.](./media/cbrreport-1024x272.png)](./media/cbrreport.png)
 
 ## <a name="select-a-sorting-code-for-a-row-definition"></a>Rendező kód kiválasztása sordefinícióhoz.
-A rendezőkód rendezi a számlákat, vagy értékeket, rendezi az aktuális költségvetést vagy költségvetés eltérés jelentést a legnagyobb eltérés szerint, vagy betűrendbe rendezi a sorokat. Az alábbi rendezőkódok használhatók:
+A rendezőkód rendezi a számlákat, vagy értékeket, rendezi az aktuális költségvetést vagy költségvetés eltérés jelentést a legnagyobb eltérés szerint, vagy betűrendbe rendezi a sorokat. Az alábbi rendezési kódok használhatók:
 
 -   **SORT** – A jelentést növekvő sorrendbe rendezi, az adott oszlopban szereplő értékek alapján.
 -   **ASORT** – A jelentést növekvő sorrendbe rendezi, az adott oszlopban szereplő értékek abszolút értékeinek alapján. Magyarul az előjelek nincsenek figyelembe véve az értékek sorba rendezésénél. Ez a formátumkód az értékeket az eltérés nagysága szerint rendezi, függetlenül attól, hogy az eltérés pozitív vagy negatív.
@@ -217,21 +217,21 @@ A rendezőkód rendezi a számlákat, vagy értékeket, rendezi az aktuális kö
 
 A következő példában, a jelentés D oszlopában lévő értékek növekvő sorrendbe lesznek rendezve a 160. sortól a 490. sorig. Emellett a jelentés G oszlopának abszolút értékei csökkenő sorrendbe lesznek rendezve a 610. sortól a 940. sorig.
 
-| Sorkód | Leírás                                         | Formátumkód | Kapcsolódó képletek/Sorok/Egységek | Normál Egyenleg | Oszlop Korlátozás | Pénzügyi Dimenziókhoz Csatolás |
+| Sorkód | Leírás                                         | Formátumkód | Kapcsolódó képletek/Sorok/Egységek | Normál egyenleg | Oszlopkorlátozás | Hivatkozás pénzügyi dimenziókra |
 |----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
 | 100      | Növekvő Sorrendbe Rendezve Havi Eltérés Szerint       | DES         |                             |                |                    |                              |
-| 130      |                                                     | SORT        | 160:490                     |                | A                  |                              |
-| 160      | Értékesítés                                               |             |                             | K              |                    | 4100                         |
+| 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
+| 160      | Értékesítés                                               |             |                             | C              |                    | 4100                         |
 | 190      | Értékesítési Visszáruk                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Kamatbevétel                                     |             |                             | K              |                    | 7000                         |
+| 490      | Kamatbevétel                                     |             |                             | C              |                    | 7000                         |
 | 520      |                                                     | DES         |                             |                |                    |                              |
 | 550      | Növekvő Sorrendbe Rendezve az Idei Abszolút Eltérés Szerint | DES         |                             |                |                    |                              |
 | 580      |                                                     | ASORTDESC   | 610:940                     |                | G:                  |                              |
-| 610      | Értékesítés                                               |             |                             | K              |                    | 4100                         |
+| 610      | Értékesítés                                               |             |                             | C              |                    | 4100                         |
 | 640      | Értékesítési Visszáruk                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Kamatbevétel                                     |             |                             | K              |                    | 7000                         |
+| 940      | Kamatbevétel                                     |             |                             | C              |                    | 7000                         |
 
 Íme egy példa a létrehozott jelentésre.
 
@@ -270,9 +270,9 @@ A jelentés nyomtatáskor a **Formátum Felülírás** cella határozza meg a so
 
 ### <a name="currency-formatting"></a>Pénznem formázás
 
-A Pénznem formázás a pénzügyi összegekre vonatkozik és tartalmazza a pénznem szimbólumát. Az alábbi lehetőségek közül választhat:
+A Pénznem formázás a pénzügyi összegekre vonatkozik és tartalmazza a pénznem szimbólumát. Ehhez a következő lehetőségek állnak rendelkezésre:
 
--   **Pénznem szimbólum** – A pénznem szimbólum a jelentéshez. Ez az érték felülbírálja a **Területi Beállítások** vállalati információ beállításait.
+-   **Pénznem jele** – A jelentésben használandó pénznemszimbólum. Ez az érték felülbírálja a **Területi Beállítások** vállalati információ beállításait.
 -   **Negatív számok** – A negatív számok rendelkezhetnek mínusz előjellel (-), szerepelhetnek zárójelben, vagy jelölhetőek háromszöggel (∆).
 -   **Tizedes jegyek** – A tizedesjel után megjelenítendő számjegyek száma.
 -   **Nullérték felülíró szövege** – Az a szöveg, amelyet 0 (nulla) értékeknél szeretne megjeleníteni a jelentésben. Ez a szöveg jelenik meg utolsó sorként a **Minta** területen. 
@@ -303,7 +303,7 @@ A százalékos formázás magában foglalja a százalékjelet (%). Az alábbi le
 
 Az egyéni formázási kategória segítségével egyéni formátum-felülírást hozhat létre. Az alábbi lehetőségek közül választhat:
 
--   **Típus** – Az egyéni formázás.
+-   **Típus** – Itt adható meg az egyéni formátum.
 -   **Nullérték felülíró szövege** – Az a szöveg, amelyet 0 (nulla) értékeknél szeretne megjeleníteni a jelentésben. Ez a szöveg jelenik meg utolsó sorként a **Minta** területen. 
     > [!NOTE]
     >  Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
@@ -365,7 +365,7 @@ Korlátozhatja a sort egy meglévő könyvelési kódra. A oszlopdefiníciónak 
 > [!NOTE]
 > A könyvelési kód sorhoz tartozó korlátozása felülírja az oszlopdefiníció könyvelési kódjának korlátozásait az adott sorra.
 
-### <a name="account-and-transaction-attributes"></a>Számla és tranzakció attribútumok
+### <a name="account-and-transaction-attributes"></a>Számla és tranzakció attribútumai
 
 Néhány könyvelési rendszer támogatja a számla attribútumokat és a tranzakció attribútumokat a pénzügyi adatokban. Ezek az attribútumok virtuális fiók szegmensekként működnek, és kiegészítő információt hordozhatnak a számláról vagy a tranzakcióról. Ezek a kiegészítő információk lehetnek számla azonosítók, kötegelt azonosítók, irányítószámok vagy más jellemzők. Ha a könyvelési rendszer támogatja az attribútumokat, használhat számla attribútumokat vagy tranzakció attribútumokat sor módosítókként a sordefinícióban. A sor információ felülbírálásával kapcsolatos tudnivalókat a „Oszlopdefiníció felülírása” korábban ismertetett részében találja.
 
@@ -378,14 +378,14 @@ A **Hivatkozás a Pénzügyi Dimenziókhoz** cella azokra a pénzügyi adatokra 
 |----------------------------------|----------------------------------------------------|
 | Pénzügyi Dimenziók             | Pénzügyi Dimenziókhoz Csatolás                       |
 | Külső Munkalap               | Hivatkozás Munkalapra                                  |
-| Pénzügyi Dimenziók + Munkalap | Hivatkozás Pénzügyi Dimenziókra + Munkalapra           |
+| Pénzügyi dimenziók + munkalap | Kapcsolás a pénzügyi dimenziókhoz + munkalap           |
 | Felügyeleti jelentéskészítő jelentése       | Felügyeleti jelentéskészítő jelentése                         |
 
-### <a name="specify-a-dimension-or-range"></a>Adjon meg egy dimenziót vagy egy tartományt
+### <a name="specify-a-dimension-or-range"></a>Dimenzió vagy tartomány megadása
 
-1.  Nyissa meg a módosítandó sordefiníciót a jelentéstervezőben.
-2.  Kattintson duplán a cellára a **Hivatkozás Pénzügyi Dimenziókra** oszlopban.
-3.  A **Dimenziók** párbeszédpanelen kattintson duplán a dimenzió neve alatti cellára.
+1.  A Report Designer alkalmazásban nyissa meg a módosítani kívánt sordefiníciót.
+2.  Kattintson duplán egy cellára a **Kapcsolás a pénzügyi dimenziókhoz** oszlopban.
+3.  A **Dimenziók** párbeszédpanelen kattintson duplán egy cellára a dimenzió neve alatt.
 4.  A dimenzióhoz a párbeszédpanelen, válassza az **Egyéni vagy tartomány**-t.
 5.  A **Kezdő érték** mezőben adja meg a kezdő dimenziót, vagy kattintson a ![Tallózás](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Tallózás") elemre, így kereshet a rendelkezésre álló dimenziók között. Dimenziók tartományának megadásához adja meg az utolsó dimenziót az **Idáig** mezőben.
 6.  Kattintson az **OK** gombra, a dimenziók párbeszédpaneljának bezárásához. A **Dimenziók** párbeszédpanel a frissített dimenziókészletet vagy tartományt jeleníti meg.
@@ -464,7 +464,7 @@ Az alábbi táblázat bemutatja a **Dimenziók** párbeszédpanelben megjelenő 
 | Számlák összesítése   | A **Név** mezőbe írja be vagy tallózással keresse meg az összesítő számlákra vonatkozó dimenziót. A Jelentésdefinícióban, a **Képlet** mező, a számlaösszesítő **Hivatkozás Pénzügyi Dimenziókra** cellájában szereplő képlettel van kitöltve.                                                                       |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Dimenzióérték készletek hozzáadása sordefinícióban
-A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimenzióérték-készlet csakis egy dimenziós értékeket tartalmazhat, de egy dimenzió-érték készletet használhat többszörös sordefiníciókban, oszlop definíciókban, jelentésfa definíciókban és jelentés definíciókban. Ezenkívül, a jelentés definícióban kombinálhat dimenzióérték-készleteteket. Amikor a pénzügyi adatok módosítása megköveteli, a dimenzióérték-készlet változtatását, frissítheti a dimenzióérték-készlet definíciót, és ez a frissítés minden területre alkalmazva lesz, amik ezt a dimenzióérték-készletet használják. Például ha gyakran használ értéktartományt a pénzügyi adatokra való hivatkozáshoz, például a 5100-5600 közötti értékeket, akkor ezt a tartományt hozzárendelheti például egy olyan számlakészlethez, amelynek az Értékesítés nevet adja. Miután létrehozta egy dimenzióérték-készletet, kiválaszthatja ezt a készletet pénzügyiadat-hivatkozásként. Egy másik példaként, ha az 5100 és 5600 közötti értéktartomány az Eladásokhoz van rendelve, és a 4175 a Kiadásokhoz, akkor megkaphatja az összes eladást a Eladásokból a Kiadások kivonásával. Ezt a műveletet a **(5100:5600)-4175** kód jelöli.
+A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimenzióérték-készlet csakis egy dimenziós értékeket tartalmazhat, de egy dimenzió-érték készletet használhat többszörös sordefiníciókban, oszlop definíciókban, jelentésfa definíciókban és jelentés definíciókban. Ezenkívül, a jelentés definícióban kombinálhat dimenzióérték-készleteteket. Amikor a pénzügyi adatok módosítása megköveteli, a dimenzióérték-készlet változtatását, frissítheti a dimenzióérték-készlet definíciót, és ez a frissítés minden területre alkalmazva lesz, amik ezt a dimenzióérték-készletet használják. Például ha gyakran használ értéktartományt a pénzügyi adatokra való hivatkozáshoz, például a 5100-5600 közötti értékeket, akkor ezt a tartományt hozzárendelheti például egy olyan számlakészlethez, amelynek az Értékesítés nevet adja. Miután létrehozott egy dimenzióérték-készletet, hozzákapcsolhatja ezt a készletet a pénzügyi adatokhoz. Egy másik példa: ha az 5100-től 5600-ig terjedő értéktartományt hozzárendeli az Értékesítés készlethez, a 4175-öt pedig a Kedvezményekhez, akkor a teljes értékesítés összegét meghatározhatja úgy, hogy a Kedvezmények értékét kivonja az Értékesítés értékéből. Ezt a műveletet a **(5100:5600)-4175** kód jelöli.
 
 ### <a name="create-a-set-of-dimension-values"></a>Dimenzióérték készlet létrehozása
 
@@ -476,11 +476,11 @@ A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimen
 6.  A **Számla** párbeszédpanelen a listában válassza ki a számla nevét, vagy keressen ki egy bejegyzést a **Keresés** mezőben. Ezután kattintson az **OK** gombra.
 7.  Ismételje meg a 5–6. lépést a **Záró érték** oszlopban is, így összeállíthatja a művelet képletét.
 8.  Amikor a képlet kész, kattintson az **OK** gombra.
-9.  A **Dimenziókészletek Kezelése** párbeszédpanelen kattintson a **Bezárás** gombra.
+9.  Kattintson a **Dimenziókészletek kezelése** párbeszédpanel **Bezárás** gombjára.
 
 ### <a name="update-a-set-of-dimension-values"></a>Dimenzióérték-készlet frissítése
 
-1.  A módosításhoz a Jelentéstervezőben nyissa meg a sor, az oszlop, vagy a jelentési fa definícióját.
+1.  A Report Designer alkalmazásban nyissa meg a módosítani kívánt sor-, oszlop- vagy fadefiníciót.
 2.  A **Szerkesztés** menüben kattintson a **Dimenzióérték Készletek Kezelése**.
 3.  A **Dimenziókészlet-értékek kezelése** párbeszédpanelen, a **Dimenzió** mezőben válassza ki a dimenziótípust.
 4.  A listában válassza ki a frissíteni kívánt dimenzióérték-készletet, majd kattintson a **Módosítás** gombra.
@@ -498,9 +498,9 @@ A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimen
 4.  Válassza ki a másolni kívánt készletet a listából, majd kattintson a **Mentés másként** elemre.
 5.  Adjon meg egy új nevet a másolt készletnek, és kattintson az **OK** gombra.
 
-### <a name="delete-a-dimension-set"></a>Dimenzió-készlet törlése
+### <a name="delete-a-dimension-set"></a>Dimenziókészlet törlése
 
-1.  A módosításhoz a Jelentéstervezőben nyissa meg a sor, az oszlop, vagy a jelentési fa definícióját.
+1.  A Report Designer alkalmazásban nyissa meg a módosítani kívánt sor-, oszlop- vagy fadefiníciót.
 2.  A **Szerkesztés** menüben kattintson a **Dimenzióérték Készletek Kezelése**.
 3.  A **Dimenziókészlet-értékek kezelése** párbeszédpanelen, a **Dimenzió** mezőben válassza ki a dimenziótípust.
 4.  Válassza ki a törölni kívánt készletet, majd kattintson a **Törlés** lehetőségre. Kattintson az **Igen** lehetőségre, hogy véglegesen törölje a dimenzióérték készletet.

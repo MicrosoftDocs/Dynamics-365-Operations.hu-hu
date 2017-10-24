@@ -16,13 +16,13 @@ ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 924177f4974358d2283dfd46306d663c27ccd87b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -49,19 +49,19 @@ Az oszlopdefiníció 2 - 255 oszlopot tartalmazhat.
 1.  A Jelentéstervezőben kattintson a navigációs panelen található **Oszlopdefiníciók** lehetőségre.
 2.  A megnyitáshoz kattintson duplán egy oszlopdefinícióra.
 
-### <a name="add-a-column-to-a-column-definition"></a>Oszlop hozzáadása egy oszlopdefinícióhoz
+### <a name="add-a-column-to-a-column-definition"></a>Oszlop hozzáadása oszlopdefinícióhoz
 
 1.  A Jelentéstervező eszközben, kattintson **Oszlopefiníciók**, majd nyissa meg az oszlopdefiníciót, hogy módosítsa.
 2.  Válassza ki azt az oszlopot, ahová új oszlopot szeretne beszúrni.
-3.  A **Szerkesztés** menüben kattintson az **Oszlop beszúrása** elemre. Az új oszlop az Ön által kiválasztott oszloptól balra jelenik meg.
+3.  A **Szerkesztés** menüben kattintson az **Oszlop beszúrása** elemre. Az új oszlop megjelenik a kijelölt oszloptól balra.
 
-### <a name="delete-a-column-from-a-column-definition"></a>Oszlop törlése egy oszlopdefinícióból
+### <a name="delete-a-column-from-a-column-definition"></a>Oszlop törlése oszlopdefinícióból
 
-1.  A Jelentéstervező eszközben, kattintson **Oszlopefiníciók**, majd nyissa meg az oszlopdefiníciót, hogy módosítsa.
+1.  A Report Designer alkalmazásban kattintson az **Oszlopdefiníciók** elemre, majd nyissa meg a módosítani kívánt oszlopdefiníciót.
 2.  Jelölje ki a törölni kívánt oszlopot.
-3.  A **Szerkesztés** menüben kattintson az **oszlop törlése** elemre.
+3.  Válassza a **Szerkesztés** menü **Oszlop törlése** parancsát.
 
-## <a name="contents-of-a-column-definition"></a>Oszlopdefiníció tartalma
+## <a name="contents-of-a-column-definition"></a>Az oszlopdefiníció tartalma
 Egy oszlopdefiníció a következő információkat tartalmazza:
 
 -   Egy oszlop a sordefiníció leírásai számára
@@ -71,7 +71,7 @@ Egy oszlopdefiníció a következő információkat tartalmazza:
 
 Ez az információ az oszlopdefiníció következő területein jelenik meg:
 
--   Az oszlopdefiníciók fejlécek területe tartalmazza a fejlécszöveget és azt a formázást, amely a jelentésben szerepel. A fejlécek vonatkozhatnak egyetlen oszlopnyi adatra, felölelhetnek több oszlopot, vagy vonatkozhatnak oszlopokra feltételes alapon. Az oszlop definíciója annyi oszlopfejlécsort tartalmazhat, amennyi csak szükséges. **Megjegyzés:** Az oszlopfejlécek a jelentésben szereplő minden adatoszlopra vonatkoznak. A jelentésfejlécek a teljes jelentés vonatkoznak. A jelentésfejléceket a jelentésdefiníció **Fejlécek és láblécek** lapján definiálhatja.
+-   Az oszlopdefiníciók fejlécek területe tartalmazza a fejlécszöveget és azt a formázást, amely a jelentésben szerepel. A fejléc vonatkozhat csak egyetlen adatoszlopra, több oszlopra, vagy feltételes alapon is vonatkozhat oszlopokra. Az oszlopdefinícióban tetszőleges számú oszlopfejlécsort adhat meg. **Megjegyzés:** Az oszlopfejlécek a jelentésben szereplő minden adatoszlopra vonatkoznak. A jelentésfejlécek a teljes jelentés vonatkoznak. A jelentésfejléceket a jelentésdefiníció **Fejlécek és láblécek** lapján definiálhatja.
 -   Az oszlop részletsorok a fejlécsorok alatti sorok a oszlopdefinícióban. Az oszloprészletsorok a jelentésbe kerülő információt határozzák meg. Az alábbi táblázat az oszlop részletsorokat foglalja listába és írja le.
 
     | Az oszlop részletetsor neve                                                | Leírás                                                                                            |
@@ -102,7 +102,7 @@ Az **Oszlopkorlátozások** cella tartalmazhat kódokat, amelyek korlátozzák v
 2.  Kattintson duplán a korlátozandó oszlop **Oszlopkorlátozások** cellájára.
 3.  Az **Oszlopkorlátozások** párbeszédpanelen válasszon a listából egy vagy több kódot, és kattintson **OK** gombra.
 
-### <a name="column-restriction-codes"></a>Oszlopkorlátozás kódok
+### <a name="column-restriction-codes"></a>Oszlopkorlátozási kódok
 
 A következő táblázat az oszlopkorlátozás kódokat írja le.
 
@@ -182,7 +182,7 @@ A Jelentéstervező automatikusan oszlopfejléceket generálhat a készszövegk�
 
 ### <a name="create-a-conditional-spanning-header"></a>Feltételesen fejlesztett fejléc létrehozása
 
-A feltételesen terjesztett fejlécek több oszlopon átterjedhetnek, amelyek adott időszakadatokon alapulnak. Ha például a költségvetési jelentés az adott pénzügyi évre vonatkozik, és az elmúlt hónapok valós költségvetéseit össze szeretné vetni a következő hónapok előrejelzett költségvetéseivel, akkor a feltételesen terjesztett fejléc használatával mindig automatikusan frissítheti a jelentés fejlécét. Ügyeljen a következő helyzetekre feltételes fejléc létrehozásakor:
+A feltételesen terjesztett fejlécek több oszlopon átterjedhetnek, amelyek adott időszakadatokon alapulnak. Ha például a költségvetési jelentés az adott pénzügyi évre vonatkozik, és az elmúlt hónapok valós költségvetéseit össze szeretné vetni a következő hónapok előrejelzett költségvetéseivel, akkor a feltételesen terjesztett fejléc használatával mindig automatikusan frissítheti a jelentés fejlécét. Feltételes átívelő fejléc készítésekor mérlegelje az alábbi helyzeteket:
 
 -   A program bármely leállítási feltételt (**Elosztva ide** mező), amely egyeztetve van egy kezdő feltétel előtt (**Elosztva innen** mező) figyelmen kívül hagy. Tegyük fel, hogy a B oszlop terjesztési feltétele ALAP+1 kezdetű és ALAP végződésű, az ALAP a C oszlop, az ALAP+1 pedig a D oszlop. Ebben az esetben a C oszlop leállítási feltételét a rendszer nem veszi figyelembe, és a fejléc nyomtatása a D oszlopban kezdődik.
 -   Ha olyan oszlopfejléceket ad meg, amelyek átfedésben vannak, akkor a jelentés kinyomtatásakor átfedésben jelennek meg. A jelentés elkészül, de a következő figyelmeztetés jelenik meg a **Jelentés-várólista állapota** mezőben: „Az Alap elemet használó oszlopfejlécek átfedésben vannak más fejlécekkel, így a szöveg átfedésben lehet." Ha például a B oszlop fejlécdefiníciója B-től ALAP+1 elemig terjed, és a D oszlop fejlécdefiníciója ALAP+1 kezdetű és F végű, akkor a fejlécek egymásra lesznek nyomtatva, így nem lesznek olvashatóak. Ha ALAP elemet használ az **Ettől terjed/Eddig terjed** definícióban, akkor mindig nézze meg a generált jelentést, hogy nem fedik-e át egymást a fejlécek.
@@ -209,7 +209,7 @@ Phyllis egy jelentést készít egy dinamikus hat hónapos előrejelzéshez. Azt
 | 2. fejléc            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | 3. fejléc            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Oszloptípus         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
-| Könyvelési kód / Attribútum |      | TÉNYLEGES        | KÖLTSÉGVETÉS2012    | TÉNYLEGES        | KÖLTSÉGVETÉS2012    | TÉNYLEGES        | KÖLTSÉGVETÉS2012    | TÉNYLEGES        | KÖLTSÉGVETÉS2012    | TÉNYLEGES        | KÖLTSÉGVETÉS2012    | TÉNYLEGES        | KÖLTSÉGVETÉS2012    |
+| Könyvelési kód / Attribútum |      | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    | TÉNYLEGES        | Költségvetés2012    |
 | Pénzügyi év         |      | ALAP          | ALAP          | ALAP          | ALAP          | ALAP          | ALAP          | ALAP          | ALAP          | ALAP          | ALAP          | ALAP          | ALAP          |
 | Időszak              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
 | Érintett időszakok     |      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      | IDŐSZAKOS      |
@@ -224,7 +224,7 @@ Phyllis duplán rákattint egy oszlopfejléc cellá, hogy megnyissa az **Oszlopf
 | Készszöveg beszúrása    | Nincs bejelölve. |
 | Formátumbeállítások     | Mező                   |
 | Indoklás      | Nincs bejelölve. |
-| Elosztva innen        | milliárd                     |
+| Elosztva innen        | B                     |
 | Elosztva ide          | ALAP                  |
 | Költségvetési fejléc      | ALAP+1 a záró oszlophoz  |
 
@@ -236,7 +236,7 @@ Az adatok bevitele után Phyllis az **OK** gombra kattint. Ezután duplán katti
 | Készszöveg beszúrása    | Nincs bejelölve. |
 | Formátumbeállítások     | Mező                   |
 | Indoklás      | Nincs bejelölve. |
-| Elosztva innen        | K                     |
+| Elosztva innen        | C                     |
 | Elosztva ide          | ALAP+2                |
 
 Ezután valahányszor jelentés geenrálódik, a „Tényleges” szó jelenik meg minden olyan oszlopban, amely tényadatokat tartalmaz, és a „Költségvetés” szó azoknál, amelyek csak költségkeret-előrejelzést tartalmaznak. Ezen kívül a rendszer az oszlopok számát is korrigálja minden hónapban.
@@ -282,10 +282,10 @@ A **Több szóköz az oszlop elé** cellában megadható, hány szóköznyi hely
 
 A **Formátum/pénznem felülírás** cella határozza meg az oszlopban szereplő tizedes, pénznem és százalékos összegek formázását. Ez a formázás felülírja minden, a jelentésdefinícióban meghatározott vagy rendszer szerinti alapértelemezett formátumot.
 
-#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Rendeljen egy formátum/pénznem felülírást egy jelentésoszlophoz
+#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Formátum és pénznem felülbírálásának beállítása egy jelentésoszlopra
 
-1.  Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
-2.  Kattintson duplán a **Formázás/Pénznem felülírása** cellaára egy összegoszlopban.
+1.  A Report Designer alkalmazásban nyissa meg a módosítani kívánt oszlopdefiníciót.
+2.  Kattintson duplán a **Formátum/pénznem felülbírálása** cellára egy összeget tartalmazó oszlopban.
 3.  A **Formátzás felülírása** párbeszédpanelen jelölje ki a formázási beállításokat.
 
 ### <a name="add-a-print-control-code"></a>Adjon hozzá nyomtatási vezérlőkód
@@ -317,10 +317,10 @@ A **Nyomtatásvezérlő** cella olyan kódokat tartalmazhat, amelyek módosítj�
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Nyomtatásvezérlő kódok hozzáadása a jelentés oszlopához
 
-1.  Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
-2.  Kattintson duplán a **Nyomtatásvezérlő** cellára.
+1.  A Report Designer alkalmazásban nyissa meg a módosítani kívánt oszlopdefiníciót.
+2.  Kattintson duplán a **Nyomtatásvezérlés** cellára.
 3.  Az **Nyomtatásvezérlő** párbeszédpanelen válasszon egy kódot a **Nyomtatási vezérlő beállításainak kiválasztása** listáján. Több cella kijelöléséhez tartsa lenyomva a Ctrl gombot, amíg kijelöli a cellát.
-4.  Válasszon egy opciót a **Feltételes nyomtatási beállítások** mezőben. Alapértelmezés szerint a **(nincs)** van kiválasztva. Egyszerre csak egy feltételes nyomtatási kód választható ki.
+4.  Válasszon egy opciót a **Feltételes nyomtatási beállítások** mezőben. Alapértelmezés szerint a **(nincs)** beállítás van kiválasztva. Egyszerre csak egy feltételes nyomtatási kód választható ki.
 5.  Kattintson az **OK** gombra.
 
 > [!TIP]
@@ -377,11 +377,11 @@ Az alapértelmezett beállítások módosíthatóak.</td>
     </tr>
     <tr class="even">
     <td>TÖLT</td>
-    <td>Az aposztrófok közé írt karakterrel tölti ki a cellát. Ha nem ad meg karaktert, az oszlop üres lesz. Például ha pontokkal (...) szeretne kitölteni egy cellát, a következőt adja meg: <strong>FILL</strong> <strong>'.'</strong>.</td>
+    <td>Az aposztrófok közé írt karakterrel tölti ki a cellát. Ha nem ad meg karaktert, az oszlop üres lesz. Például ha pontokkal (...) szeretne kitölteni egy cellát, a következőt adja meg: <strong>TÖLT</strong> <strong>'.'</strong>.</td>
     </tr>
     <tr class="odd">
     <td>OLDAL</td>
-    <td>Függőleges oldaltörést szúr be a jelentésbe. A <strong>LAP</strong> oszloptól jobbra lévő oszlopok a másik oldalon jelennek meg.</td>
+    <td>Függőleges oldaltörést szúr be a jelentésbe. A <strong>PAGE</strong> oszloptól jobbra lévő oszlopok új lapon fognak megjelenni.</td>
     </tr>
     <tr class="even">
     <td>WKS</td>
@@ -393,7 +393,7 @@ Az alapértelmezett beállítások módosíthatóak.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>
-    <td>Ha a könyvelési rendszere támogatja az attribútumok használatát, akkor számla- vagy tranzakcióattribútumot jelenít meg az oszlopban. Egy attribútum, amelynek vonatkoznia kell egyetlen teljes számlára, kivonatolja az alapul szolgáló számla- vagy tranzakcióadatokat a pénzügyi adatokból. Számlaszintű attribútumok a számlából jelenítik meg az adatokat, a tranzakciószintű attribútumok azokat az adatokat jelenítik meg, amelyek a tranzakció feladásával egyidőben történtek. Ha az <strong>ATTR</strong>-t jelöli be oszloptípusként, adja meg az attribútumkategóriát az oszlopdefiníció <strong>Könyvelési kód/Attribútumkategória</strong> részletsorában.</td>
+    <td>Ha a könyvelési rendszere támogatja az attribútumok használatát, akkor számla- vagy tranzakcióattribútumot jelenít meg az oszlopban. Egy attribútum, amelynek vonatkoznia kell egyetlen teljes számlára, kivonatolja az alapul szolgáló számla- vagy tranzakcióadatokat a pénzügyi adatokból. A számlaszintű attribútumok a számlából jelenítenek meg adatokat, míg a tranzakciószintű attribútumok olyan adatokat mutatnak meg, amelyek a tranzakció feladásakor merültek fel. Ha az <strong>ATTR</strong> beállítást választja oszloptípusnak, akkor válasszon egy attribútumkategóriát az oszlopdefiníció <strong>Könyvelési kód / Attribútumkategória</strong> részletsorából.</td>
     </tr>
     </tbody>
     </table>
@@ -435,9 +435,9 @@ Az **Időszak** cella azonosítja a pénzügyi időszakot, amely az oszlopba ker
 
 Bármely időszakmeghatározásban túlléphet a pénzügyi év határokon, és vegyítheti az éveket az időszakoktartományokban. Tegyük fel, hogy az **ALAP-5** értéket adja meg (így a legutóbbi 6 időszakot láthatja), majd olyan jelentést futtat, melynek alapidőszaka 2. Ebben az esetben a jelentés a meghatározott pénzügyi év első két időszakát mutatja, és a korábbi pénzügyi év utolsó hat időszakát.
 
-### <a name="specify-the-periods-for-an-fd-column"></a>Adja meg az FD oszlopra vonatkozó időszakokat
+### <a name="specify-the-periods-for-an-fd-column"></a>Időszakok meghatározása egy FD oszlophoz
 
-1.  Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
+1.  A Report Designer alkalmazásban nyissa meg a módosítani kívánt oszlopdefiníciót.
 2.  Egy **FD** oszlopban kattintson duplán az **Időszak** sorban lévő cellára, majd válasszon ki egy beállítást a listában.
 3.  A navigációs ablak feletti képletsorban vagy az **Időszak** cellában töltse ki a képletet. Minden kettős kereszt (\#) helyére írja be a megfelelő értéket.
 
@@ -464,8 +464,8 @@ Az attribútumok olyan pénzügyi adatértékek, amelyek továbbdefiniálnak egy
 #### <a name="apply-an-attribute-filter-for-an-fd-column-on-a-report"></a>Attribútumszűrő alkalmazása a jelentés egy FD oszlopára
 
 1.  Nyissa meg a módosítandó oszlopdefiníciót a jelentéstervezőben.
-2.  Kattintson duplán az **Attribútumszűrő** cellára egy **FD** oszlophoz.
-3.  Az **Attribútumszűrő** párbeszédpanelen kattintson duplán egy **Attribútum** oszlopban lévő cellára, és válassza ki a szűrés típusát.
+2.  Kattintson duplán egy **FD** oszlophoz tartozó **Attribútumszűrő** cellára.
+3.  Az **Attribútumszűrő** párbeszédpanelen kattintson duplán az **Attribútum** oszlop egy cellájára, majd válassza ki a szűrő típusát.
 4.  Az eredmények további szűréséhez adja meg a tartományt a **-tól** és az **-ig** oszlopokban. A **-tól** cellának pozitív értéket kell tartalmaznia.
 5.  Kattintson az **OK** gombra.
 
@@ -473,7 +473,7 @@ Az attribútumok olyan pénzügyi adatértékek, amelyek továbbdefiniálnak egy
 
 A következő példa bemutatja az oszlopleírás azon részét, amely számlaattribútummal rendelkezik a **Könyvelési kód / Attribútumkategória** sorban. Ezen oszlop attribútumszűrőjre határozza meg a jelentésbe bekerülő értékek tartományát.
 
-|                              | N    | milliárd                    |
+|                              | N    | B                    |
 |------------------------------|------|----------------------|
 | Oszloptípus                  | DESC | FD                   |
 | Könyvelési kód / Attribútumkategória |      | TÉNYLEGES               |
@@ -487,7 +487,7 @@ A következő példa bemutatja az oszlopleírás azon részét, amely számlaatt
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimenziószűrő az oszlopdefinícióban
 
-Dimenziószűrő használatával korlátozhatók az **FD** oszlopok a dimenzióértékek megadásához. A szűrő tartalmazhat egyetlen dimenziót, dimenziótartományt vagy a dimenziók csoportját. A szűrő is tartalmazhat dimenzióérték-készleteket. Mivel a dimenzióértékek változhatnak, a pénzügyi dimenzióalapú rendszereknek nem kell egy adott hosszúságnak megfelelniük. A szűrő alkalmazására kerül sor, függetlenül attól, hogy a jelentés tartalmaz-e jelentési fát. Bármelyik helyen használhat helyettesítő karaktert (\* vagy ?). Több számla meghatározásakor vesszővel válassza el azokat, például: +Számla=\[1200\], +Számla=\[1100\], Részleg=\[01?\] Ahhoz, hogy egy adott számla minden részlegét megkapja, kizárhatja a Részleg dimenziót a dimenziószűrőből. Például a következő dimenziószűrők ugyanúgy lesznek kezelve:
+Dimenziószűrő használatával korlátozhatók az **FD** oszlopok a dimenzióértékek megadásához. Egy szűrő tartalmazhat egyetlen dimenziót, egy dimenziótartományt vagy dimenziók csoportját. A szűrő is tartalmazhat dimenzióérték-készleteket. Mivel a dimenzióértékek változhatnak, a pénzügyi dimenzióalapú rendszereknek nem kell egy adott hosszúságnak megfelelniük. A szűrő alkalmazására kerül sor, függetlenül attól, hogy a jelentés tartalmaz-e jelentési fát. Bármelyik helyen használhat helyettesítő karaktert (\* vagy ?). Több számla meghatározásakor vesszővel válassza el azokat, például: +Számla=\[1200\], +Számla=\[1100\], Részleg=\[01?\] Ahhoz, hogy egy adott számla minden részlegét megkapja, kizárhatja a Részleg dimenziót a dimenziószűrőből. Például a következő dimenziószűrők ugyanúgy lesznek kezelve:
 
 -   +Számla=\[1100\], Részleg
 -   +Számla=\[1100\]
@@ -542,7 +542,7 @@ Az alábbi táblázat bemutatja a jelentés különböző eredményeit, amelyek 
 | Természetes/származó pénznem                 | **JEN**              | **Y 6000** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg.                                                                                                                        |
 | Működési pénznem a vállalati adatokból | **JEN**              | **$60** – Az eredmény csak japán jenben rögzített tranzakciókat mutat meg, ezeket azonban USD-ben jeleníti meg. **Megjegyzés:** Az átváltási árfolyam körülbelül 100 JPY / USD.                    |
 | Működési pénznem a vállalati adatokból | Üres                | **$2,310\*\*** – Az eredmény minden adatot a vállalati információk között beállított működési pénznemben jelenít meg. **Megjegyzés:** Ez az összeg a tranzakciók összesítése, működési pénznemben. |
-| Természetes/származó pénznem                 | Üres                | **$ 2250**** – Az eredmény minden összeget abban a pénznemben mutat meg, amelyben a tranzakciót elvégezték.                                                                                                 |
+| Természetes/származó pénznem                 | Üres                | **$ 2250** – Az eredmény minden összeget abban a pénznemben mutat meg, amelyben a tranzakciót elvégezték.                                                                                                 |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Számítás oszlop egy oszlopdefinícióban
 

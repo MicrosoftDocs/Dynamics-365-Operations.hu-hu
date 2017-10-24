@@ -16,13 +16,13 @@ ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 331f3480b8454dac7da12be169ba017f36cefa06
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4708ff4427fe507fee7e1ce1ca226289ddf648cc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,13 +33,13 @@ ms.lasthandoff: 05/25/2017
 
 Ez a cikk a jelentési fa definíciójáról tartalmaz információt. A jelentési fa definíciója a jelentés azon összetevője vagy építőeleme, amely segít meghatározni szervezetének szerkezetét és hierarchiáját.
 
-A Pénzügyi jelentéskészítő támogatja a rugalmas jelentést, így egyszerűen módosíthatja, ha a vállalat szerkezete megváltozik. A jelentések különböző összetevőkből vagy építőelemekből állnak. Az egyik ilyen építőelem a jelentési fa definíciója. Jelentési fa meghatározása segít a szervezeti szerkezet és hierarchia meghatározásában. Ez egy dimenziókon átnyúló hierarchia a pénzügyi adatok dimenzionális kapcsolatai alapján. Jelentési egység és összefoglaló szinten biztosít információt a fa minden eleméről. A Jelentési fa definíciók kombinálhatók oszlopdefiníciókkal és a jelentésdefiníciókkal alapvető egységek csoportjának létrehozásához, amely több vállalat által használható. Egy jelentési egységet egy szervezeti diagram minden mezője használ. A jelentési egység lehet például egy adott osztály a pénzügyi adatokból, vagy lehet egy magasabb szintű összegző egység, amely más jelentési egységek adatait kombinálja. Egy jelentési fát tartalmazó jelentésdefinícióhoz egy jelentés készül minden jelentési egységhez és az összegző szinthez. Ezek a jelentések mind sor- és oszlopdefiníciókat használnak, amelyek meg vannak határozva a jelentésdefinícióban, kivéve, ha a jelentésdefiníció megadja, hogy a jelentési fát kell használni a sordefinícióból. A sor- és oszlopdefiníciók fontos elemei a pénzügyi jelentések tervezésének és funkciójának. A jelentési fák növelik a komponensek erejét, és támogatják a rugalmas jelentést, ahogyan változik a vállalat struktúrája. A pénzügyi kimutatások, melyek nem a jelentési fán alapszanak, a Pénzügyi jelentés szolgáltatásai közül csak néhányat használnak. Több jelentési fa definíciót használhat egyszerre ugyanazokkal a sor- és oszlopdefiníciókkal, így különböző módokon tekintheti meg a szervezet adatait.
+A Pénzügyi jelentéskészítő támogatja a rugalmas jelentést, így egyszerűen módosíthatja, ha a vállalat szerkezete megváltozik. A jelentések különböző összetevőkből vagy építőelemekből állnak. Az egyik ilyen építőelem a jelentési fa definíciója. Jelentési fa meghatározása segít a szervezeti szerkezet és hierarchia meghatározásában. Ez egy dimenziókon átnyúló hierarchia a pénzügyi adatok dimenzionális kapcsolatai alapján. Jelentési egység és összefoglaló szinten biztosít információt a fa minden eleméről. A Jelentési fa definíciók kombinálhatók oszlopdefiníciókkal és a jelentésdefiníciókkal alapvető egységek csoportjának létrehozásához, amely több vállalat által használható. Egy jelentési egységet egy szervezeti diagram minden mezője használ. Egy jelentési egység lehet például egy részleg a pénzügyi adatokon belül, de léteznek olyan magas szintű összesítő egységek is, amelyek más jelentési egységek adatait kombinálják. Egy jelentési fát tartalmazó jelentésdefinícióhoz egy jelentés készül minden jelentési egységhez és az összegző szinthez. Ezek a jelentések mind sor- és oszlopdefiníciókat használnak, amelyek meg vannak határozva a jelentésdefinícióban, kivéve, ha a jelentésdefiníció megadja, hogy a jelentési fát kell használni a sordefinícióból. A sor- és oszlopdefiníciók fontos elemei a pénzügyi jelentések tervezésének és funkciójának. A jelentési fák növelik a komponensek erejét, és támogatják a rugalmas jelentést, ahogyan változik a vállalat struktúrája. A pénzügyi kimutatások, melyek nem a jelentési fán alapszanak, a Pénzügyi jelentés szolgáltatásai közül csak néhányat használnak. Több jelentési fa definíciót használhat egyszerre ugyanazokkal a sor- és oszlopdefiníciókkal, így különböző módokon tekintheti meg a szervezet adatait.
 
 ## <a name="reporting-tree-best-practices"></a>Jelentési fa legjobb gyakorlatai
 Mielőtt létrehoz egy jelentési fát, vegye figyelembe a következő gyakorlati tanácsokat:
 
 -   Először határozza meg, mely jelentési dimenziókat követeli meg a jogi személy vagy a vállalat.
--   Fontolja meg, hogyan állította fel a szerkezetét, és ezután rajzolja meg a vállalat szervezeti diagramját. A szervezeti diagram segít vizualizálni, hogy hogyan lehet egy vagy több jelentési fába csoportosítani a jelentési egységeket.
+-   Fontolja meg, hogyan állította fel a szerkezetét, és ezután rajzolja meg a vállalat szervezeti diagramját. A szervezeti diagram szemléletesebbé teszi a felépítést, így könnyebben el tudja képzelni, hogyan csoportosíthatja a jelentési egységeket egy vagy több jelentésfába.
 -   Kezdje a legalacsonyabb rendelkezésre álló részletességi szinttel, például a részlegek és a projektek, amelyeket a pénzügyi adatok határoznak meg. Tetszőleges számú mezők hozzáadása a részletességi szinthez, a magasabb szintű osztályok és régiók megjelenítéséhez. Minden mező egy lehetséges jelentési egységet képvisel bármely jelentési fán belül.
 -   A fa összeállítására való legjobb módszerét is ki kell alakítania. Egy automatikus építőfolyamat segítségével hozhat létre jelentési fát, vagy Ön is létrehozhatja azt. Fontos, hogy mindkét módszert megértse, mielőtt belevág a fák tervezésébe.
 -   A jelentési egységeket, melyek a pénzügyi adatok rendszerében vannak megadva, arra használhatja, hogy jelentési egységeket adjon hozzá a jelentési fa definíciójához.
@@ -52,13 +52,13 @@ A jelentési fa meghatározása az alábbi táblázatban leírt oszlopokat tarta
 
 | Jelentési fa oszlop | Leírás|
 |---|---|
-| Cég               | A jelentési egység vállalati neve. Az **@ANY** érték, amely rendszerint csak az összesítő szintjéhez van hozzárendelve, lehetővé teszi, hogy a jelentési fát az összes vállalatra vonatkozóan használni lehessen. Minden alárendelt ág rendelkezik egy hozzárendelt vállalattal.|
-| Egység Neve             | A kód, amely azonosítja ezt a jelentési egységet a grafikus jelentési fán. Bizonyosodjon meg róla, hogy egy konzisztens kódolási rendszert hoz létre, amit a felhasználók könnyen megérthetnek. |
+| Cég               | A jelentési egység vállalati neve. Az **@ANY** érték, amely rendszerint csak az összesítő szintjéhez van hozzárendelve, lehetővé teszi, hogy a jelentési fát az összes vállalatra vonatkozóan használni lehessen. Minden gyermek ághoz hozzá van rendelve egy vállalat.|
+| Egység neve             | A kód, amely azonosítja ezt a jelentési egységet a grafikus jelentési fán. Bizonyosodjon meg róla, hogy egy konzisztens kódolási rendszert hoz létre, amit a felhasználók könnyen megérthetnek. |
 | Egység leírása      | A jelentési egység címe megjelenik jelentés fejlécében vagy a láblécben, az **UnitDesc** kódként való megadásakor a jelentésdefiníció **Fejlécek és láblécek** lapján. A cím megjelenik a jelentés sorleírásában, ha beírja az **UnitDesc** kódot a sordefiníció **Leírás** cellájába.|
 | Dimenziók            | Egy jelentési egység, amely az adatokat közvetlenül pénzügyi adatokból vonja ki. A fiók és a kapcsolódó szegmensek logikai pozícióját és hosszát határozza meg. Ebben az oszlopban minden jelentési egység sornak rendelkeznie kell egy dimenzióval. Helyezhet dimenziót az összesítő egység sorába (például azokhoz a költségekhez, amelyek közvetlenül kapcsolódnak az egységhez) Ha beír egy dimenziót egy összesítő egység sorába, azokat a fiókokat, amelyeket fölérendelt egységek használnak, nem szabad használni alárendelt egységekben. Ellenkező esetben az összegek megduplázódhatnak.|
-| Sordefiníciók       | A jelentési egység sordefiníciójának neve. Ugyanazt a sordefiníciót használják a jelentési fa minden egyes egységéhez. Jelentés létrehozásánál ez a sordefiníció lesz használva minden jelentési egységnél. A sordefiníció több pénzügyi dimenzió-hivatkozást is tartalmazhat. Ha egy sordefiníció meg van adva a jelentési fában, válassza a **Sordefiníció használata a jelentési fából** jelölőnégyzetet a jelentésdefiníció **Jelentés** lapján.|
-| Sorhivatkozás              | A jelentési egységhez használatos sorhivatkozás. A sorhivatkozások a sordefinícióhoz vannak megadva, a hivatkozott pénzügyi dimenziók azonosítása céljából.|
-| Külső hivatkozás         | Ehhez a jelentési egységhez használatos sorhivatkozás. A sorhivatkozások a sordefinícióhoz vannak megadva, a hivatkozott jelentés azonosítása céljából.|
+| Sordefiníciók       | A jelentési egység sordefiníciójának neve. Ez a sordefiníció használatos a jelentésfa minden egyes egységéhez. Jelentés létrehozásakor ez a sordefiníció használatos minden egyes jelentési egységhez. A sordefiníció több pénzügyi dimenzióra mutató hivatkozást is tartalmazhat. Ha a jelentésfában meg van adva sordefiníció, jelölje be a **Sordefiníció használata a jelentésfából** négyzetet a jelentésdefiníció **Jelentés** lapján.|
+| Sorösszekapcsolás              | A jelentési egységhez használandó sorösszekapcsolás. A sorösszekapcsolások abból a célból vannak megadva a sordefinícióhoz, hogy azonosítsák az összekapcsolási cél pénzügyi dimenziókat.|
+| Külső összekapcsolás         | A jelentési egységhez használandó külső összekapcsolás. A sorhivatkozások a sordefinícióhoz vannak megadva, a hivatkozott jelentés azonosítása céljából.|
 | Külső file         | A pénzügyi jelentés munkalapjának elérési címe az adatok lekéréséhez.|
 | Oldalbeállítások          | Ez az oszlop szabályozza, hogy a jelentési egység részletei le legyenek-e tiltva a jelentés megtekintésénél vagy nyomtatásánál.|
 | Összesítő %              | A jelentési egység százalékszáma, melyet hozzá kell rendelni a fölérendelt egységéhez. A százalék, amelyet ebben az oszlopban ad meg, a sordefiníció összes sorára érvényes, mielőtt a sor értéke hozzá lesz adva a fölérendelt jelentéshez. Például ha egy alárendelt egységet két részleg között egyenlően kell elosztani, az összegeket minden sorban meg kellene szorozni 50 %-kal, mielőtt hozzáadjuk részlegjelentéshez. Egy jelentési egység nem rendelkezhet két fölérendelt egységgel. Egy jelentési egységnek nem lehet két fölérendelt egysége. Ahhoz, hogy az összegeket a jelentési egységektől a fölérendelt egységekhez rendelje, hozzon létre egy másik jelentési egységet ugyanazzal a dimenzióval, hogy a további 50 százalékot továbbvihesse. Teljes százalékokat adjon meg, tizedesvessző nélkül. Például a **25** 25 %-os foglalást jelent a fölérendeltnek. Ha tizedesvesszőt használ (**,25**), akkor 0,25 százalék lesz foglalva a fölérendeltnek. Az 1 százaléknál kisebb százalékértékek használatához használja az **Összesítő &lt;1 % engedélyezése** opciót a jelentésdefinícióban. Ez a beállítás a **További lehetőségek** lapon, a **Jelentésbeállítások** párbeszédpanelen található. Ez a párbeszédpanel az **Egyebek** gombra kattintva a jelentésdefiníció **Beállítások** lapján érhető el. |
@@ -138,8 +138,8 @@ A további szöveg olyan statikus karakterlánc, amely legfeljebb 255 karakterb�
 
 ### <a name="remove-additional-text-from-a-reporting-unit"></a>További szöveg eltávolítása a jelentési egységből
 
-1.  A módosításhoz a Jelentéstervezőben nyissa meg a jelentési fa definícióját.
-2.  Kattintson duplán a **További szöveg** cellára a jelentési egység sorához.
+1.  A Report Designer alkalmazásban nyissa meg a módosítani kívánt jelentésfa-definíciót.
+2.  Kattintson duplán a **További szöveg** cellára a jelentési egység sorában.
 3.  A **További szöveg** párbeszédpanelen válassza ki az eltávolítani kívánt szöveget, és kattintson a **Törlés** lehetőségre. Másik lehetőségként a diagramban kattintson a jobb gombbal, majd válassza a **Kivágás** menüpontot.
 4.  Kattintson az **OK** gombra.
 
@@ -148,7 +148,7 @@ A további szöveg olyan statikus karakterlánc, amely legfeljebb 255 karakterb�
 Egyes felhasználók és csoportok számára megakadályozhatja a hozzáférést egy jelentési egységhez. Meg is adhat korlátozásokat, így azok alkalmazva lesznek a jelentési egység alárendelt jelentési egységeire.
 
 1.  A módosításhoz a Jelentéstervezőben nyissa meg a jelentési fa definícióját.
-2.  Kattintson duplán az **Egységbiztonság** cellára a jelentési egység sorában a hozzáférés korlátozásához.
+2.  Kattintson duplán az **Egység biztonsága** cellára annak a jelentési egységnek a sorában, amelynek az elérhetőségét korlátozni szeretné.
 3.  Az **Egységbiztonság** párbeszédpanelen kattintson a **Felhasználók és csoportok** részre.
 4.  Válassza ki a felhasználókat vagy csoportokat, amelyek rendelkezhetnek hozzáféréssel a korlátozott jelentési egységhez, majd kattintson az **OK** gombra.
 5.  A hozzáférés korlátozásához az alárendelt jelentési egységeknél jelölje be a **Védelem hozzáadása az alárendelt jelentési egységekhez** jelölőnégyzetet.

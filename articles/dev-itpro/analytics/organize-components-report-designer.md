@@ -16,13 +16,13 @@ ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a8739f426c401aacbab56179bad429a231060f57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fade9e2acdb94daa6a908d949c578fd7ed439882
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -53,7 +53,7 @@ Ezzel egy időben a jelentésdefiníciókat csoportosíthatja több jelentés k�
 
 1.  A Jelentéstervező navigációs ablakában kattintson a **Jelentéscsoportok** lehetőségre.
 2.  A **Fájl** menüben kattintson az **Új** &gt; **Jelentéscsoport-definíció** lehetőségre, hogy megnyisson egy új jelentéscsoportot a megjelenítő ablakban. Másik lehetőségként kattintson a **Jelentéscsoport** gombra ![Jelentéscsoport](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Jelentéscsoport") az eszköztáron.
-3.  Kattintson a **Jelentés Csoport** lapra. Ha felül szeretné bírálni ennek a jelentés létrehozásának egyes jelentésdefinícióban lévő információkat, jelölje be a **Az egyes jelentésdefiníciókból a vállalat, adat és dátumbeállítások felülbírálása** jelölőnégyzetet. A vállalat nevét, a részletezési szintet, az ideiglenes beállítást és dátum információkat automatikusan feltölti a rendszer, de végezhet rajtuk frissítéseket.
+3.  Kattintson a **Jelentéscsoport** lapra. Ha felül szeretné bírálni ennek a jelentés létrehozásának egyes jelentésdefinícióban lévő információkat, jelölje be a **Az egyes jelentésdefiníciókból a vállalat, adat és dátumbeállítások felülbírálása** jelölőnégyzetet. A vállalat nevét, a részletezési szintet, az ideiglenes beállítást és dátum információkat automatikusan feltölti a rendszer, de végezhet rajtuk frissítéseket.
 4.  Több jelentés létrehozásához, amelyek megmutatják a jelentési pénznemeket válassza ki a **Minden jelentési pénznem szerepeltetése** jelölőnégyzetet. Ezután több nézethez férhet hozzá, ha a **Pénznem** gombra kattint a böngészőben, a jelentés megtekintésekkor.
 5.  A **Jelentések a csoportban** mezőben, kattintson a **Hozzáadás** gombra a jelentéscsoportba felvenni kívánt jelentések kiválasztásához. Több jelentés kijelöléséhez a **Hozzáadás** párbeszédablakban, tartsa lenyomva a Ctrl billentyűt, miközben kiválasztja az elemeket. Befejezése után jelölje ki a jelentéseket, és kattintson az **OK** gombra.
 6.  Kattintson a **Fájl** &gt; **Mentés** elemre az új jelentéscsoport mentéséhez.
@@ -106,7 +106,7 @@ Az alábbi táblázat ismerteti a **Jelentéscsoport** lap vezérlőit.
 <td>Részletezési szint</td>
 <td>Adja meg, hogy milyen részletes jelentést szeretne készíteni.
 <ul>
-<li><strong>Pénzügyi</strong>− Átfogó és összegző jelentés. Nem lehet számlákra és dimenziókra lebontani, kivéve az olyan számláknál és dimenzióknál, amelyeket a jelentési fán keresztül adtak hozzá.</li>
+<li><strong>Pénzügyi</strong> − Átfogó összefoglaló jelentés. Nem lehet számlákra és dimenziókra lebontani, kivéve az olyan számláknál és dimenzióknál, amelyeket a jelentési fán keresztül adtak hozzá.</li>
 <li><strong>Pénzügy és Számla</strong> – Egy jelentés, amely átfogó összegzést és részletes számlaadatokat tartalmaz.</li>
 <li><strong>Pénzügy, Számla és Tranzakció</strong> – Egy jelentés, amely átfogó összegzést és a tranzakció részletes adatait tartalmazza.</li>
 </ul></td>
@@ -115,14 +115,14 @@ Az alábbi táblázat ismerteti a **Jelentéscsoport** lap vezérlőit.
 <td>Fedezetek</td>
 <td>Adja meg, hogy milyen típusú tevékenységeket tartalmazzon a jelentés.
 <ul>
-<li><strong>Csak a feltüntetett tevékenység</strong> − Csak az olyan tranzakciókat és az egyenlegeket tartalmazza, amelyek a pénzügyi adataiban fel vannak tüntetve.</li>
-<li><strong>Feltüntetett és nem feltüntetett tevékenység</strong> − Az összes tranzakció és egyenleg, amely meg van adva és fel van tüntetve a pénzügyi adataiban.</li>
-<li><strong>Csak a nem feltüntetett tevékenység</strong> − Csak azokat a tranzakciókat tartalmazza, amelyek fel vannak jegyezve, de még nincsenek feltüntetve a pénzügyi adataiban.</li>
+<li><strong>Csak feladott tevékenység</strong> − Csak a pénzügyi adatokba feladott tranzakciókat és egyenlegeket tartalmazza.</li>
+<li><strong>Feladott és fel nem adott tevékenység</strong> − A pénzügyi adatokba felvett és feladott összes tranzakciót és egyenleget tartalmazza.</li>
+<li><strong>Csak feladatlan tevékenység</strong> − Csak a pénzügyi adatokba felvett, de még fel nem adott tranzakciókat tartalmazza.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Minden jelentési pénznemmel együtt</td>
-<td>Bármely további jelentési pénznem, amely be van állítva a Microsoft Dynamics ERP rendszeréhez itt kerül felsorolásra. Jelölje ki ezt a jelölőnégyzetet, hogy további jelentéseket hozzon létre a jelölt pénznemekkel. Ezen jelentések megtekintéséhez a böngészőben kattintson a <strong>Pénznem</strong> gombra, majd válassza ki a pénznemet.</td>
+<td>Bármely további jelentési pénznem, amely be van állítva a Microsoft Dynamics ERP rendszeréhez itt kerül felsorolásra. Jelölje ki ezt a jelölőnégyzetet, hogy további jelentéseket hozzon létre a jelölt pénznemekkel. Ezen jelentések megtekinthetők a Web Viewer eszközben, ha a <strong>Pénznem</strong> gombra kattint és kiválaszt egy pénznemet.</td>
 </tr>
 <tr class="even">
 <td>A dátummal kapcsolatos adatok mentése nem történik meg a jelentésdefiníciójával</td>
@@ -144,8 +144,8 @@ Csak az alapértelmezett alapidőszak beállításainak mentése történik a je
 <td>Jelentések a csoportokban</td>
 <td>Jelentések hozzáadása, eltávolítása és újrarendezése jelentéscsoportban.
 <ul>
-<li>A jelentés csoporthoz való jelentésdefiníciók hozzáadásához, kattintson duplán a jelentéscsoport megnyitásához, és kattintson a <strong>Hozzáadásra</strong>. Válassza ki beleszámítani kívánt jelentéseket a jelentéscsoportban és kattintson az <strong>OK</strong>lehetőségre.</li>
-<li>A jelentés csoportból a jelentés eltávolításához jelölje ki, és kattintson az <strong>Eltávolításra</strong>.</li>
+<li>Ha jelentésdefiníciókat szeretne adni a jelentéscsoporthoz, dupla kattintással nyissa meg a csoportot, majd kattintson a <strong>Hozzáadás</strong> parancsra. Jelölje ki a jelentéscsoportba felvenni kívánt jelentéseket, majd kattintson az <strong>OK</strong> gombra.</li>
+<li>Ha szeretne eltávolítani egy jelentést a jelentéscsoportból, jelölje ki, majd kattintson az <strong>Eltávolítás</strong> parancsra.</li>
 <li>A létrehozott jelentések sorrendjének módosításához válasszon ki a listából egy jelentést, majd kattintson <strong>Mozgatás felfelé</strong> vagy <strong>Mozgatás lefelé</strong> gombra.</li>
 </ul></td>
 </tr>

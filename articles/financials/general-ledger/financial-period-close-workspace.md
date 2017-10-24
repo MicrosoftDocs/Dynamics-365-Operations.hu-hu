@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 0bbf8f979aeb8b861164e345f9e46bb396f370ce
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -82,7 +81,7 @@ Használhat logikai feladatterületeket a szervezeten belül, csoportos zárási
 
 ### <a name="calendars"></a>Naptárak
 
-A Naptárak lapon létrehozhat és szerkeszthet pénzügyi zárási naptárakat.  Itt definiálhatja a zárási folyamatok munkanapjait és ütemezheti a zárási feladatokat.  Hozzon létre egy új naptárat és jelölje meg a feladat-ütemezés munkanapjait.  Legjobb megoldás, ha hosszú időszakra hozza létre a naptárat, egy, vagy akár több évre, ugyanis a létrehozás után szerkeszthető.  Miután létrehozta a naptárat kattintson a Szerkesztés gombra a naptár frissítéséhez, ha szeretne konkrét napokat, például ünnepeket megadni.  A zárási feladatok olyan napokra lesznek ütemezve ahol a Vezérlőérték Nyitva.  Ha a zárási feladatokat nem akarja egy adott napra ütemezni, akkor azon a napon a Vezérlőértéket állítsa Zárt értékre.
+A Naptárak lapon létrehozhat és szerkeszthet pénzügyi zárási naptárakat. Itt definiálhatja a zárási folyamatok munkanapjait és ütemezheti a zárási feladatokat.  Hozzon létre egy új naptárat és jelölje meg a feladat-ütemezés munkanapjait.  Legjobb megoldás, ha hosszú időszakra hozza létre a naptárat, egy, vagy akár több évre, ugyanis a létrehozás után szerkeszthető.  Miután létrehozta a naptárat kattintson a Szerkesztés gombra a naptár frissítéséhez, ha szeretne konkrét napokat, például ünnepeket megadni.  A zárási feladatok olyan napokra lesznek ütemezve ahol a Vezérlőérték Nyitva.  Ha a zárási feladatokat nem akarja egy adott napra ütemezni, akkor azon a napon a Vezérlőértéket állítsa Zárt értékre.
 
 ### <a name="templates"></a>Sablonok
 

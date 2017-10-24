@@ -16,13 +16,13 @@ ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -71,7 +71,7 @@ Az építőelem a jelentés létrehozásához használt sordefiníciókból, osz
 ### <a name="create-a-building-block-group"></a>Építőelem-csoport létrehozása
 
 1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
-2.  Kattintson az **Új** lehetőségre az **Építőelem-csoportok** párbeszédpanelben.
+2.  Az **Építőelem-csoportok** párbeszédpanelen kattintson az **Új** gombra.
 3.  Adjon egyedi nevet és leírást az építőelem-csoportnak. Minden mező legfeljebb 256 karaktert tartalmazhat. (Ez a szám a szóközöket is tartalmazza.)
 4.  Új építőelem-csoport létrehozásához kattintson az **OK** gombra.
 
@@ -79,8 +79,8 @@ Az építőelem a jelentés létrehozásához használt sordefiníciókból, osz
 
 Miután létrehozott egy új építőelem-csoportot, hozzá kell rendelnie azt legalább egy vállalathoz. Ezt követően tud jelentés-, sor-, oszlop- és jelentési-fa definíciót hozni létre, majd azokat elmenteni az építőelem-csoportba. Az alábbi eljárás megkezdése előtt be kell zárnia az összes építőelemet.
 1.  A Jelentéstervezőben kattintson a **Vállalat** menü **Vállalatok** parancsára.
-2.  A **Vállalatok** párbeszédpanelben válassza ki a vállalatot, amelyhez szeretné hozzárendelni az építőelem-csoportot.
-3.  Kattintson a **Módosítás** lehetőségre.
+2.  A **Vállalatok** párbeszédpanelen válassza ki azt a vállalatot, amelyhez építőelem-csoportot kíván társítani.
+3.  Kattintson a **Módosítás** parancsra.
 4.  A **Vállalat módosítása** párbeszédpanelben, az **Építőelem-csoport** mezőben válassza ki a vállalathoz hozzárendelni kívánt építőelem-csoportot, vagy kattintson az **Új** lehetőségre új építőelem-csoport létrehozásához.
 5.  Kattintson az **OK** lehetőségre az építőelem-csoport hozzárendeléséhez.
 6.  Kattintson a **Bezárás** lehetőségre a **Vállalatok** párbeszédpanel bezárásához. Az Ön által kijelölt építőelem-csoport a vállalathoz hozzárendelésre került. Ezt követően az összes új sordefiníció, oszlopdefiníció stb., amelyet létrehoznak a vállalathoz hozzárendelt építőelem-csoport része lesz. Importálhat .tdbx fájlt vagy a jelentést egy másik rendszerből is.
@@ -96,7 +96,7 @@ Miután létrehozott egy új építőelem-csoportot, hozzá kell rendelnie azt l
 ### <a name="save-a-building-block-group-under-a-new-name"></a>Mentse el új néven az építőelem-csoportot
 
 Új néven el tud menteni egy meglévő építőelem-csoportot. Ezután anélkül tudja módosítani az új építőelem-csoportot, hogy az hatással lenne az eredeti építőelem-csoportra.
-1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
+1.  A Report Designer eszközben válassza a **Vállalat** menü **Építőelem-csoportok** elemét.
 2.  Az **Építőelem-csoportok** párbeszédpanelen jelölje ki az új néven menteni kívánt építőelem-csoportot.
 3.  Kattintson a **Mentés másként** lehetőségre.
 4.  Adjon új nevet és leírást az építőelem-csoportnak.
@@ -104,12 +104,12 @@ Miután létrehozott egy új építőelem-csoportot, hozzá kell rendelnie azt l
 
 ### <a name="export-a-building-block-group"></a> Építőelem-csoport exportálása
 
-Exportálhat építőelem-csoportokat vagy adott építőelemeket egy építőelem-csoportból. Az exportált építőelem-csoportokat használhatja biztonsági mentésnek. Az exportált adatokat építőelem csoportok vagy a Finance and Operations programok között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
+Exportálhatja, vagy importálhatja is az építőelem-csoportokat, vagy egyes adott jelentés-építőelemeket. Az exportált építőelem-csoportot biztonsági másolatként is használhatja. Az exportált adatokat építőelem csoportok vagy a Finance and Operations programok között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
 1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
-2.  Jelölje ki az **Építőelem-csoportok** párbeszédpanelben az exportálni kívánt építőelem-csoportot, majd kattintson az **Exportálás** lehetőségre.
+2.  Az **Építőelem-csoportok** párbeszédpanelen válassza ki az exportálni kívánt építőelem-csoportot, majd kattintson az **Exportálás** parancsra.
 3.  Jelölje ki az exportálandó jelentésdefiníciókat az **Exportálás** párbeszédpanelben:
     -   Az összes jelentésdefiníció illetve a társított építőelemek exportálásához kattintson az **Összes kijelölése** lehetőségre.
-    -   Konkrét jelentések, sorok, oszlopok, fák vagy dimenziókészletek exportálásához kattintson a megfelelő lapra, majd válassza ki az exportálandó tételeket. Ha több tételt szeretne kijelölni egy lapon, nyomja le és tartsa lenyomva a Ctrl-billentyűt. **Megjegyzés:** Ha exportálandó jelentéseket jelöl ki, úgy kiválasztásra kerülnek a társított sorok, oszlopok, fák és dimenziókészletek is.
+    -   Konkrét jelentések, sorok, oszlopok, fák vagy dimenziókészletek exportálásához kattintson a megfelelő lapra, majd válassza ki az exportálandó tételeket. Ha több tételt szeretne kijelölni egy lapon, nyomja le és tartsa lenyomva a Ctrl-billentyűt. **Megjegyzés:** Ha jelentéseket jelöl ki az exportálásához, a rendszer a társított sorokat, oszlopokat, fákat és dimenziókészleteket is kijelöli.
 
 4.  Ha végzett az exportálandó cikkek kiválasztásával, kattintson az **Exportálás** lehetőségre.
 5.  A **Mentés másként** párbeszédpanelben jelölje ki, hogy hová szeretné exportálni az építőelem-csoportot.
@@ -120,8 +120,8 @@ Exportálhat építőelem-csoportokat vagy adott építőelemeket egy építőel
 
 Importálhat építőelem-csoportokat egy meglévő építőelem-csoportba, vagy létrehozhat egy új építőelem-csoportot az adatokhoz. Az összes importált építőelem-csoport megtartja az eredeti betűstílusát és a vállalati hivatkozásait, és tartalmazza a megfelelő dimenziókészleteket.
 1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
-2.  Jelölje ki az **Építőelem-csoportok** párbeszédpanelben, hogy melyik építőelembe kívánja importálni az építőelemet-csoportot, majd kattintson az **Importálás** lehetőségre.
-3.  Jelölje ki a **Megnyitás** párbeszédpanelben az importálni kívánt építőelem-csoportot, majd kattintson a **Megnyitás** lehetőségre.
+2.  Az **Építőelem-csoportok** párbeszédpanelen jelölje ki azt az építőelem-csoportot, amelybe egy másik építőelem-csoportot kíván importálni, majd kattintson az **Importálás** parancsra.
+3.  A **Megnyitás** párbeszédpanelen válassza ki az importálni kívánt építőelem-csoportot, majd kattintson a **Megnyitás** gombra.
 4.  Jelölje ki az importálandó jelentésdefiníciókat az **Importálás** párbeszédpanelben:
     -   Az összes jelentésdefiníció illetve az azt támogató építőelemek importálásához kattintson az **Összes kijelölése** lehetőségre.
     -   Konkrét jelentések, sorok, oszlopok, fák vagy dimenziókészletek importálásához válassza ki az importálandó jelentéseket, sorokat, oszlopokat, fákat vagy dimenziókészleteket.
@@ -132,7 +132,7 @@ Importálhat építőelem-csoportokat egy meglévő építőelem-csoportba, vagy
 
 Amikor megnyit egy építőelemet, a többi felhasználó csak olvasásra kap hozzáférést ahhoz az elemhez. Előfordulhat, hogy a felhasználók elfelejtik bezárni az építőelemeket, vagy kikapcsolják a rendszerüket az építőelem bezárása nélkül. Így az építőelem továbbra is kivett állapotú marad, és azt a többi felhasználó nem tudja megnyitni. Ilyen esetekben a pénzügyi jelentések rendszergazdája a **Kivett cikkek** párbeszédpanel segítségével, vissza tudja venni a másik felhasználó által kivett állapotban felejtett építőelemeket. **Megjegyzés:** Csak rendszergazda szerepkörrel lehet építőelemet visszavenni a **Kivett cikkek** párbeszédpanel használatával.
 1.  A Jelentéstervező **Eszközök** menüjében kattintson a **Kivett cikkek** lehetőségre.
-2.  A **Kivett cikkek** párbeszédpanelben válassza a **Minden felhasználó minden cikkének megjelenítése** lehetőséget. A rendszer frissíti az összes kivett építőelemet, illetve az érintett felhasználókat megjelenítő listát.
+2.  A **Kivett elemek** párbeszédpanelen válassza **Az összes felhasználó elemeinek megjelenítése** lehetőséget. A listában megjelenik az összes kivett építőelem és a hozzájuk kapcsolódó felhasználók listája.
 3.  Jelöljön ki egy építőelemet majd kattintson a **Kivétel visszavonása** parancsra.
 4.  Az építőelem visszavételéhez kattintson az **Igen** lehetőségre.
 

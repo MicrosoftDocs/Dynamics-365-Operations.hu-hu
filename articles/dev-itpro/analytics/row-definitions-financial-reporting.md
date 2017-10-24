@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -44,7 +44,7 @@ Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az
 2.  Kattintson duplán a sordefiníció nevére, hogy megnyissa.
 3.  A sordefinícióhoz társított bármely építőelem megtekintéséhez kattintson a jobb gombbal a sordefinícióra, és válassza ki a **Társítások** lehetőséget.
 
-## <a name="contents-of-a-row-definition"></a>Sordefiníció tartalma
+## <a name="contents-of-a-row-definition"></a> Sordefiníció tartalma
 Egy sordefiníció legfeljebb 20 000 pénzügyidimenzió-sort és a következő információkat tartalmazhatja:
 
 -   Leíró szöveget, amely értelmet ad a jelentésnek szakaszcímek, sorok és terek létrehozásával, például **Készpénz** vagy **Teljes bevétel**
@@ -62,13 +62,13 @@ A sordefiníció információk megadására két módja van:
 -   A sorinformáció megadása manuálisan, egy új sordefinícióba. További tudnivalókért lásd: [Sordefiníció cellák módosítása](modify-row-definition-cells-financial-reporting.md).
 -   Használja a jelentéstervezőt, hogy közvetlenül kinyerje a sorinformációkat a pénzügyi dimenziókból. További információért lásd a „Kapcsolódó képletek/sorok/egységek" részt a [Sordefiniáló cellák módosítása](modify-row-definition-cells-financial-reporting.md) fejezetben.
 
-## <a name="add-dimensions-in-a-row-definition"></a>Dimenziók hozzáadása egy sordefinícióhoz
+## <a name="add-dimensions-in-a-row-definition"></a> Dimenziók hozzáadása egy sordefinícióhoz
 Egy dimenzió az adatok és értékek egy metszete. Adat- és jelentéstervező értékeket csoportosíthat a jelentéstervezőben. Ezután részletesebben osztályozhatja és elemezheti a tranzakciókat. Használhatja a **Sorok beszúrása dimenziókból** párbeszédpanelt, hogy egy időben több sort adjon hozzá egy sordefinícióhoz. A párbeszédpanel minden dimenzióhoz egy oszlopot jelenít meg. A következő táblázat tartalmazza az egyes dimenziókhoz megadható információk leírását.
 
 | Lehetőség                | Leírás                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dimenzió             | A szabály, amely azonosítja a sordimenzióhoz adandó dimenziót. Ez a szabály tartalmaz egy és-jelet (&), vagy egy kettős kereszt jelet (\#), minden pozícióhoz a dimenziókban. Általában használjon kizárólag jeleket a Fő számlához és kizárólag számokat a többi dimenzióhoz. |
-| Dimenziótartomány kezdete | Az első érték, amely ebből a dimenzióból a sordefinícióhoz adandó.                                                                                                                                                                                                                 |
+| Dimenziótartomány kezdete | A sordefinícióhoz hozzáadni kívánt dimenzió első értéke.                                                                                                                                                                                                                 |
 | Dimenziótartomány vége   | Az utolsó érték, amely ebből a dimenzióból a sordefinícióhoz adandó.                                                                                                                                                                                                                  |
 
 Dimenziók hozzáadásához a sordefiníciókhoz végezze el a következő lépéseket.
@@ -81,7 +81,7 @@ Dimenziók hozzáadásához a sordefiníciókhoz végezze el a következő lép�
 6.  Adjon meg egy értéket a **Sorok növekménye** mezőben, hogy megadja az egymást követő sorkódok közötti rést. Például, ha az első sorkódot 100, és a növekményértéke 30, akkor az első új sorok kódjai rendre 100, 130, 160, 190 és 220. Használjon olyan növekményértéket, amely elég helyet biztosít új formátum és receptúra sorok beszúrásához. Használjon olyan növekményértéket, amely elég helyet biztosít új formátum és receptúra sorok beszúrásához.
 7.  Kattintson az **OK** gombra. Minden kijelölt dimenzióérték után egy sor adódik a sordefinícióhoz.
 
-## <a name="adjust-rounding-in-a-row-definition"></a>Kerekítés beállítása egy sordefinícióban
+## <a name="adjust-rounding-in-a-row-definition"></a> Kerekítés beállítása egy sordefinícióban
 Egy olyan mérleg esetén, amelyben az összegek kerekítve vannak az összesítések eltérhetnek az egyensúlytól. Ez a probléma akkor fordulhat elő, ha például a kerekítési lehetőséget választja a mérlegkimutatáson, és a jelentésdefiníció is határoz meg kerekítést. Használhatja a **Kerekítés helyesbítés** lehetőséget a sordefinícióban, hogy kiegyenlítse a mérlegben szereplő összegeket. A kerekítést kikapcsolhatja vagy módosíthatja a jelentésdefiníció **Beállítások** lapján. A következő táblázat bemutatja az összegek kerekítését. Ebben a táblázatban a 100-as és 200-as sorok összesítései eltérnek, ha a kerekítés be van kapcsolva.
 
 | Sorkód | Összegek kerekítés nélkül | Összeg teljes ezrekre kerekítéssel |
@@ -93,7 +93,7 @@ Egy olyan mérleg esetén, amelyben az összegek kerekítve vannak az összesít
 Hogy beállítsa a kerekítést egy mérlegben, kövesse a következő lépéseket.
 
 1.  A Jelentés Tervező eszközben, kattintson **Sor Definíciók**, majd nyissa meg a sor definíciót, hogy módosítsa.
-2.  A **Szerkesztés** menüben, kattintson a **Kerekítési helyesbítés** elemre.
+2.  Válassza a **Szerkesztés** menü **Kerekítési kiigazítás** parancsát.
 3.  A **Kerekítési helyesbítés** párbeszédpanelen írja be a következő értékeket:
     -   **Sorkerekítési helyesbítés** – Az adott sorhoz tartozó sorkód helyesbítve lesz, hogy kiegyenlítse a mérleget.
     -   **Összes eszköz sor** – A sorkód, amely ahhoz a sorhoz tartozik a mérlegben, amely tartalmazza az összes eszközt.
@@ -121,23 +121,23 @@ Létrehozhat, és módosíthat betűtípusokat a jelentéséhez. Ezeket a stílu
 <td>Új betűstílus létrehozása</td>
 <td><ol>
 <li>A jelentéstervezőben a <strong>Formátum</strong> menüben kattintson a <strong>Stílusok és formázás</strong> elemre.</li>
-<li>A <strong>Stílusok és formázás</strong> párbeszédpanelen kattintson az <strong>Új</strong> elemre, majd adjon meg egy egyedi nevet az új stílushoz.</li>
-<li>Válassza ki a kívánt betűstílusokat, majd kattintson az <strong>OK</strong> gombra.</li>
+<li>A <strong>Stílusok és formázás</strong> párbeszédpanelen kattintson az <strong>Új</strong> gombra, és írjon be egy egyedi nevet az új stílus számára.</li>
+<li>Válassza ki a kívánt betűtípus-beállításokat, majd kattintson az <strong>OK</strong> gombra.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Betűstílus módosítása</td>
 <td><ol>
 <li>A jelentéstervezőben a <strong>Formátum</strong> menüben kattintson a <strong>Stílusok és formázás</strong> elemre.</li>
-<li>A <strong>Stílusok és formázás</strong> párbeszédpanelen válassza ki a módosítani kívánt stílust, majd kattintson a <strong>Módosítás</strong> gombra.</li>
-<li>Válassza ki a kívánt betűstílusokat, majd kattintson az <strong>OK</strong> gombra.</li>
+<li>Válassza ki a módosítani kívánt stílust a <strong>Stílusok és formázás</strong> párbeszédpanelen, majd kattintson a <strong>Módosítás</strong> gombra.</li>
+<li>Válassza ki a kívánt betűtípus-beállításokat, majd kattintson az <strong>OK</strong> gombra.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Új betűstílus alkalmazása</td>
 <td><ol>
 <li>A Jelentéstervezőben, egy definícióban vagy oszlopdefinícióban, vagy fejlécekben és láblécben jelöljön ki egy vagy több cellát.</li>
-<li>A <strong>Stílus</strong> listán az eszköztárban jelöljön ki egy betűstílust.</li>
+<li>Válasszon ki egy betűstílust az eszköztár <strong>Stílus</strong> listájáról.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -164,7 +164,7 @@ Hogy megkönnyítse azon oszlopok áttekintését, amelyeken a sordefinícióban
 ### <a name="hide-columns-in-the-view-pane"></a>Oszlopok elrejtése a nézet ablakban
 
 1.  Nyissa meg a módosítandó sordefiníciót a jelentéstervezőben.
-2.  Válassza ki a minimalizálandó oszlopot vagy oszlopokat.
+2.  Válassza ki azokat az oszlopokat, amelyeket kis méretűvé kíván tenni.
 3.  Kattintson jobb gombbal, majd kattintson az **Elrejtés** gombra.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Minden rejtett oszlop megjelenítése a nézet ablakban
