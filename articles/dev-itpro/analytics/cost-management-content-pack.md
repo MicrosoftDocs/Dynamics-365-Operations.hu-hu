@@ -16,13 +16,13 @@ ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb5c39a65ea59acda05b0828f84bfaea4ad75062
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,7 +52,7 @@ A **Kezelési költség** Microsoft Power BI tartalom készletkönyvelőknek vag
 A CostAggregatedCostStatementEntryEntity elsődleges adatforrása a CostStatementCache táblában található. Ezt a táblát az Adathalmaz-gyorsítótár keretrendszere kezeli. Alapértelmezés szerint a tábla 24 óránként frissül, de az adatgyorsítótár konfigurációjában engedélyezheti a kézi frissítést is. Ezután a **Költségkezelés** vagy a **Költségelemzés** munkaterületen végezhet kézi frissítést. A CostStatementCache frissítésének futtatása után a frissített adatok a webhelyen történő megtekintéséhez frissítenie kell az OData kapcsolatot a Power BI.com-on. Az eltérési (beszerzés, termelés) mérőszámok ebben a Power BI-tartalomban csak azon elemekre vonatkoznak, amelyek értékelése Normál elszámolóár szerint történik. A termelési eltérés számítása az aktív és a realizált költség közötti különbség formájában történik. A gyártási eltérés kiszámítására akkor kerül sor, amikor a termelési rendelés állapota **Befejezve** lesz. További információért az eltérési típusokkal és az egyes típusok kiszámítási módját illetően lásd: [Befejezett termelési rendelés eltéréseinek elemzése](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Költségkezelés** Power BI-tartalom a PowerBI.com-ról érhető el. A csatlakozással és a Microsoft Dynamics 365 for Finance and Operations-adatok betöltésével kapcsolatos további tudnivalókat lásd: [Power BI-tartalom elérése a PowerBI.com webhelyről](power-bi-home-page.md).
+A **költségkezelés** Power BI-tartalom elérhető a PowerBI.com webhelyről. A csatlakozással és a Microsoft Dynamics 365 for Finance and Operations-adatok betöltésével kapcsolatos további tudnivalókat lásd: [Power BI-tartalom elérése a PowerBI.com webhelyről](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Költségkezelés** Power BI-tartalom megjelenítési formáinak áttekintése található.

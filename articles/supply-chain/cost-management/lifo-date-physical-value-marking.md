@@ -1,7 +1,7 @@
 ---
 title: "LIFO dátum tényleges értékkel és jelöléssel"
 description: "A LIFO dátum készletmodell a LIFO-elv alapján működik. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. Ha a dátum szerinti LIFO készletmodellben nincs bevételezés a kiadás előtt, akkor a kiadás az utána következő bármelyik bevételezéssel kiegyenlíthető. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 96089fed3e8b522fb3a8646ffd87fadff8fe1f3e
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 116d2f34c0317f3246b8d9c6569430603e2cd2c6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,12 +52,12 @@ Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai kiadás készletről, 1 mennyiséggel, 15,00 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
 -   4b. Pénzügyi kiadás készletről, 1 mennyiséggel, 15,00 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
 -   5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
--   5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+-   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   6. Készletzárást hajtanak végre. A LIFO dátummódszer alapján a legutóbbi pénzügyileg frissített kiadás teljesítése a legutóbb pénzügyileg frissített bevételezéssel szemben történik. A kiadási tranzakción 5,00 USD értékű korrekció történik. Ezeknek a tranzakcióknak az elszámolása egymással szemben történik.
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg frissített tranzakciók átlagának, azaz 15,00 USD összegnek felel meg. 
@@ -87,12 +87,12 @@ A következő ábrán ezek a tranzakciók láthatók:
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai kiadás készletről, 1 mennyiséggel, 18,33 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
 -   4b. Pénzügyi kiadás készletről, 1 mennyiséggel, egyenként 18,33 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
 -   5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
--   5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+-   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   6. Készletzárást hajtanak végre. A Dátum LIFO módszer alapján a legutóbbi frissített kiadás korrekciója vagy teljesítése a legutóbb frissített bevételezéssel szemben történik. Ezeknek a tranzakcióknak az elszámolása nem egymással szemben történik, mert a pénzügyi bevételezési tranzakciót fizikai frissítési tranzakcióhoz igazítja a rendszer. Ehelyett csak egy 6,67 USD értékű korrekció történik a kiadási tranzakción.
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg frissített tranzakciók átlagának, azaz 20,00 USD összegnek felel meg. 
@@ -132,7 +132,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.

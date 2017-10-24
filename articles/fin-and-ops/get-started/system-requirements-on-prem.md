@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 721c5851cd399398a8dcec5ae110b97a4f17ae0a
+ms.sourcegitcommit: 25a6f326c57e84d6a7c356ac5407be7ed3095f83
+ms.openlocfilehash: 5edc6f0b2240e9dd2d3b72a13f35e96f016aa013
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/04/2017
 
 ---
 
@@ -87,7 +87,7 @@ A tényleges hardverkövetelmények változhatnak a rendszerkonfigurációtól, 
 - Az egyidejű felhasználók száma
 
 ## <a name="minimum-infrastructure-requirements"></a>Minimális infrastruktúra-követelmények
-A Finance and Operations (helyszíni) a Service Fabric rendszert használja az AOS, köteg, adatkezelő,felügyeleti jelentéskészítő és környezeti szervező szolgáltatások ellátására. A Microsoft SQL Server Reporting Services (SSRS) nem található a Service Fabric fürtben.
+A Finance and Operations (helyszíni) a Service Fabric rendszert használja az AOS, köteg, adatkezelő,felügyeleti jelentéskészítő és környezeti szervező szolgáltatások ellátására. 
 
 Az SQL Servert egy magas rendelkezésre állású HADRON beállításra kell állítani, amelynek legalább két csomópontja van termelési használatra.
 
@@ -225,6 +225,12 @@ Az alábbi táblázat felsorolja a Finance and Operations adatbázisok által t�
 |------------------------------------------------------------------|-------|
 | Microsoft SQL Server 2016 Standard Edition vagy Enterprise Edition | Az SQL Server 2016 hardverkövetelményeiért lásd [Az SQL Server 2016 telepítésének hardver- és szoftver követelményei](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
 
+## <a name="software-requirements-for-application-object-server-aos"></a>Az Application Object Server (AOS) szoftverkövetelményei 
+- SQL Server Integration Services (SSIS)
+
+## <a name="software-requirements-for-reporting-server-bi"></a>A Jelentéskészítő kiszolgáló (BI) szoftverkövetelményei
+- SQL Server Reporting Services (SSRS)
+
 ## <a name="software-requirements-for-client-computers"></a>A kliens számítógépek szoftver követelményei
 A Finance and Operations webalkalmazás minden olyan eszközön futtatható, amely rendelkezik HTML 5.0-kompatibilis böngészővel. A Microsoft által megerősített specifikus eszköz-/böngészőkombinációk a következők:
 
@@ -244,7 +250,7 @@ A tartományvezérlő Windows Server 2012 R2 vagy újabb kell, hogy legyen, ille
 ## <a name="supported-microsoft-office-applications"></a>Támogatott Microsoft Office-alkalmazások
 A következő Microsoft Office-alkalmazások a Finance and Operations felhő alapú vagy helyszíni telepítései esetén használhatók:
 
--   A Microsoft Excel és Microsoft Word-bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   A Microsoft Excel és Microsoft Word-bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Az Exportálás Excel-be vagy az Exportálás a Word programba funkcióval létrehozott dokumentumok megtekintéséhez telepíteni kell a Microsoft Office 2007 vagy újabb verzióját.
  
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>A kiskereskedelmi összetevők hardver- és szoftver követelményei

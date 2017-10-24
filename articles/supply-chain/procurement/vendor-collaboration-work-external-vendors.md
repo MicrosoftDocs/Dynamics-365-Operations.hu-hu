@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
+ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
+ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 
@@ -34,9 +34,9 @@ Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállí
 
 A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 for Finance and Operations rendszerhez. Lehetővé teszi a szállítók számára a beszerzési rendelés, a számla és a bizományosi készlet adatainak kezelését. Ez a témakör leírja, hogyan működhet együtt a szállítói együttműködési felületet használó külső szállítókkal a beszerzési rendelések és a bizományosi készlet kezelésében. Bemutatja, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során. Ha többet szeretne megtudni arról, hogy milyen tevékenységeket végezhetnek a külső szállítók a szállítói együttműködési felületen, olvassa el a [Szállítói együttműködés vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md) részt.  
 
-Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace) részt. Az új szállítói együttműködési felhasználók létrehozásával kapcsolatos tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md).
+Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md) részt. Az új szállítói együttműködési felhasználók létrehozásával kapcsolatos tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md).
 
-Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace) részt. 
+Ha többet szeretne megtudni arról, hogyan használhatják a szállítók a szállítói együttműködést a számlázási folyamatokban, olvassa el a [Szállítói együttműködési számlázás munkaterület](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md) részt. 
 
 Az új szállítói együttműködési felhasználók létrehozásával kapcsolatos tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md).
 
@@ -131,7 +131,7 @@ Ha módosítani szeretne egy beszerzési rendelést, amire már korábban reagá
 
 ### <a name="cancelling-a-po"></a>Beszerzési rendelés visszavonása
 
-A beszerzési rendelés visszavonásakor az állapot **Jóváhagyva** állapotú lesz. Vissza kell küldenie a beszerzési rendelést a szállítónak a Szállítói portálon keresztül, hogy a szállító megerősíthesse vagy elutasíthassa az érvénytelenítést. Az érvénytelenítés jóváhagyása után a beszerzési rendelés a szállító jóváhagyott beszerzési rendeléseinek listáján **Érvénytelenítve** értékkel fog megjelenni.
+A beszerzési rendelés visszavonásakor az állapot **Jóváhagyva** állapotú lesz. Vissza kell küldenie a beszerzési rendelést a szállítónak, hogy a szállító megerősíthesse vagy elutasíthassa az érvénytelenítést. Az érvénytelenítés jóváhagyása után a beszerzési rendelés a szállító jóváhagyott beszerzési rendeléseinek listáján **Érvénytelenítve** értékkel fog megjelenni.
 
 ### <a name="adding-attachments-to-a-po"></a>Mellékletek csatolása beszerzési rendeléshez
 

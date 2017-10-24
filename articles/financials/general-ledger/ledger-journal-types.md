@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 624f38a7348ede3cc9e6fb7ce0b78a61b1452b61
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 6f665f34055e36775c8bb41be4aae9c4577639d7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -59,7 +58,7 @@ Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókh
 | Szállító - banki utalás            | Szervezete bankjának átküldhető kötelezvény-átutalási fájl létrehozása.                                                                                                                                                                                                                                                                      | Átutalásnapló                                             |
 | Szállítói kifizetés               | Szállítók kifizetési tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                    | Fizetési napló                                                |
 | Szállítói kötelezvény kiállítása       | Szállítói kötelezvény kiállítása fizetési módként. A naplótípus használatához törölje a **Kötelezvénykiállítási napló automatikus létrehozása és feladása számlák feladásakor** lehetőséget a **Fizetési módok – szállítók** oldalon.                                                                                                                                          | Kötelezvénykiállítási napló                                   |
-| Szállítói számla gyűjtője, kivéve feladás | Ideiglenes érkeztetési számlára még nem feladott szállítói számlatranzakciók létrehozása.                                                                                                                                                                                                                                                             | Szállítói számlagyűjtő a feladási részletek nélkül                  |
+| Szállítói számlagyűjtő feladás nélkül | Ideiglenes érkeztetési számlára még nem feladott szállítói számlatranzakciók létrehozása.                                                                                                                                                                                                                                                             | Szállítói számlagyűjtő a feladási részletek nélkül                  |
 | Szállítói számla gyűjtője               | Szállítói számlagyűjtő tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Szállítói számla rögzítése          | Naplóban található szállítói számlák feladása.                                                                                                                                                                                                                                                                                                                 | Számlanapló                                                |
 | Szállítói kötelezvény újbóli kiállítása     | Olyan kötelezvényt újbóli kiállítása, amelyet a szervezet bankja már korábban elfogadott.                                                                                                                                                                                                                                                                      | Újbóli kötelezvénykiállítás naplója                                 |

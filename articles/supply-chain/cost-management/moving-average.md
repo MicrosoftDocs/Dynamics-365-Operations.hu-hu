@@ -1,7 +1,7 @@
 ---
 title: "Mozgó átlag"
 description: 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0018f5df3d0d2882c300b6458bfb8adfba84e2ad
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 A következő előfeltételeknek kell megfelelni, ha a mozgó átlagköltség módszert alkalmazza költségszámításkor.
 1.  A **Cikkmodell csoportok** lapon állítson be egy olyan cikkmodell csoportot, amely esetében a mozgó átlag opció van beállítva a **Készletmodell** mezőben. **Megjegyzés:** Alapértelmezés szerint, amikor a Mozgó átlag opció van kiválasztva, a **Tényleges készlet feladása** és a **Pénzügyi készlet feladása** mezők is be lesznek jelölve. 
 
-2.  A **Feladás** oldalon, rendeljen hozzá számlákat az **Árkülönbség a mozgó átlaghoz** és az **Árértékelés a mozgó átlaghoz** számlákhoz a **Készlet** lapon. Használja az **Árkülönbség a mozgó átlaghoz** számlát, ha a költséget arányosan kell elszámolni. Ez amiatt fordul elő, mert a beszerzési elismervényen és a beszerzési számlán található költségek között különbség van, valamint az aktuális készletben szereplő mennyiség és az eredeti készletmennyiség eltérése miatt. Használja az **Árértékelés a mozgó átlaghoz** számlát, ha a mozgó átlagköltséget egy új egységárhoz kívánja módosítani egy termékre vonatkozóan.
+2.  A **Feladás** lapon rendeljen számlákat az **Árkülönbség a mozgó átlaghoz** elemhez, majd a **Költségátértékelés a mozgó átlaghoz** számlákhoz a **Készlet** lapon. Az **Árkülönbség a mozgó átlaghoz** számla akkor használatos, ha a költséget arányosan kell elszámolni. Ez amiatt fordul elő, mert a beszerzési elismervényen és a beszerzési számlán található költségek között különbség van, valamint az aktuális készletben szereplő mennyiség és az eredeti készletmennyiség eltérése miatt. Használja az **Árértékelés a mozgó átlaghoz** számlát, ha a mozgó átlagköltséget egy új egységárhoz kívánja módosítani egy termékre vonatkozóan.
 3.  A **Felszabadított termékek** oldalon rendelje hozzá a mozgó átlag cikkmodell csoportját a termékhez. **Megjegyzés:** A készlet zárása folyamat csak a könyvelési időszakot zárja le. Nem befolyásolja azon termékeket, amelyekhez mozgó átlag van hozzárendelve cikkmodell csoportként.
 
 ## <a name="convert-to-the-moving-average-costing-method"></a>Mozgó átlag költségképzési módra konvertálás

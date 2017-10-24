@@ -1,7 +1,7 @@
 ---
 title: "Anyagjegyzék-számítási csoportok"
 description: "Ez a cikk bemutatja az anyajegyzék (AJ) számítási csoportjait, valamint azok felállítását. Az AJ számítás futtatásához be kell állítania egy számítási csoportokat, majd ezeket hozzá kell rendelnie különböző cikkekhez, vagy be kell állítania egy alapértelmezett számítási csoportot. A számítási csoport számítási beállításai az alapértelmezett értékek az Anyagjegyzék-számítás oldalon az Anyajegyzék számításának ideje alatt."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3372c22d6ed90e7669f1335fdd3366b8e167ad27
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c91f7ac3ded942afd5e359b59cee2ff58256622f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,13 +72,21 @@ Az **Alábontás leállítása** jelölőnégyzet segítségével jelezheti, ha 
 
 ### <a name="warnings"></a>Figyelmeztetések
 
-A **Figyelmeztetések** gyorslapon kiválaszthatja, hogy mely figyelmeztető üzenetek jelenjenek meg a felhasználóknak, mikor az Anyajegyzék-számításokat csinálják. Ha például kiválasztja a **Nincs AJ** jelölőnégyzetet, a felhasználó egy figyelmeztetést kap, ha nem található aktív Anyajegyzék-verzió valamelyik összetevőhöz, vagy azon fölérendelt cikkhez, amihez az Anyajegyzék-számítás készül. Ha bejelöli a **Nincs útvonal** jelölőnégyzetet, a felhasználó figyelmeztetést kap, ha nem található aktív útvonalverzió. Ha forrást használ az útvonalakhoz és műveletekhez, utasíthatja a rendszert, hogy ellenőrizze ezeket az erőforrásokat. Ezután ha egy erőforrás nem található az aktív útvonal minden sorában, a felhasználó figyelmeztetést kap. Jóváhagyhatja és ellenőrizheti a fogyasztást is. A fogyasztás a mennyiség a megadott útvonalon. Általában a termelési folyamat egy adott műveletének végrehajtásához szükséges idő mennyiségét jelzi. Ellenőrizheti, hogy egy cikk rendelkezik-e önköltségi árral. Ha nem rendelkezik önköltségi árral, akkor nem kerül költség hozzáadásra az Anyajegyzék-számításhoz. Jóváhagyhatja és ellenőrizheti az önköltségi ár korát is. Például adjon meg értéknek **60**-at, hogy jelezze, hogy az egység önköltségi árát 60 nap után felül kell vizsgálni. Ha a rendszer eléri ezt a határt, egy figyelmeztetést hoz létre. Például egy cikk önköltségi ára ezen év januárjában lett megadva. Ha most augusztus van, ami több, mint 60 nappal a cikk önköltségi árának megadása után van, a felhasználó egy figyelmeztetést fog kapni az Anyajegyzéki-számítás során. A **Minimálisan engedélyezett árrés** mezőben megadhat százalékos értéket. Ez az érték azt a pontot jelöli, ahol nem lett elérve a minimálisan engedélyezett árrés. Ha egy bizonyos összetevő esetében nem lett elérve a minimálisan engedélyezett árrés, a felhasználó kap egy figyelmeztetést. Ezért ez a mező segít biztosítani, hogy az árát és a további szállítási költségeket a cikk számára ne állítsa túl alacsonyra.
-A Készlet- és raktárkezelési paraméterek alapértelmezett beállítása
---------------------------------------------------------------
+A **Figyelmeztetések** gyorslapon kiválaszthatja, hogy mely figyelmeztető üzenetek jelenjenek meg a felhasználóknak, mikor az Anyajegyzék-számításokat csinálják. 
 
-Mivel a számítási csoportok szükségesek a számítások futtatásához, ezért be kell állítania egy alapértelmezett számítási csoportot a készletkezelési paramétereknél. Ez a beállítási lehetővé teszi a vállalatoknak az általános költségcsoport és a nyereség beállítását az összes cikkhez. Ezután ha egy adott cikkhez speciális számítási követelmények szükségesek, a felhasználó hozzárendelhet különböző számítási csoportokat. Általában beállíthat számítási csoportokat az AJ összetevő cikkekhez az AJ cikkek helyett. Azonban ha figyelmeztető üzenetek jelennek meg, akkor számítási csoportok is alkalmazhatóak. Egy cikkhez hozzárendelt számítási csoport felülírja a készletkezelési paramétereknél megadott alapértelmezett értéket. Alapértelmezett paramétereket beállíthat a **Költségkezelés** &gt; **Készletkönyvelési irányelvek beállítása** &gt; **Paraméterek** &gt; **Készletkönyvelés** &gt; **Számítási csoport** menüben. Alapértelmezett konfigurációs csoport beállításával konfigurálhatja azokat a figyelmeztetési feltételeket is, amelyek az AJ számítási folyamat során jelennek meg a felhasználóknak, ha a kiválasztott összetevő számítási hibákat okozhat.
-Figyelmeztető üzenetek megtekintése a Teljesített oldalon
-------------------------------------------
+Ha például kiválasztja a **Nincs AJ** jelölőnégyzetet, a felhasználó egy figyelmeztetést kap, ha nem található aktív Anyajegyzék-verzió valamelyik összetevőhöz, vagy azon fölérendelt cikkhez, amihez az Anyajegyzék-számítás készül. Ha bejelöli a **Nincs útvonal** jelölőnégyzetet, a felhasználó figyelmeztetést kap, ha nem található aktív útvonalverzió. Ha forrást használ az útvonalakhoz és műveletekhez, utasíthatja a rendszert, hogy ellenőrizze ezeket az erőforrásokat. Ezután ha egy erőforrás nem található az aktív útvonal minden sorában, a felhasználó figyelmeztetést kap. 
+
+Jóváhagyhatja és ellenőrizheti a fogyasztást is. A fogyasztás a mennyiség a megadott útvonalon. Általában a termelési folyamat egy adott műveletének végrehajtásához szükséges idő mennyiségét jelzi. Ellenőrizheti, hogy egy cikk rendelkezik-e önköltségi árral. Ha nem rendelkezik önköltségi árral, akkor nem kerül költség hozzáadásra az Anyajegyzék-számításhoz. 
+
+Jóváhagyhatja és ellenőrizheti az önköltségi ár korát is. Például adjon meg értéknek **60**-at, hogy jelezze, hogy az egység önköltségi árát 60 nap után felül kell vizsgálni. Ha a rendszer eléri ezt a határt, egy figyelmeztetést hoz létre. Például egy cikk önköltségi ára ezen év januárjában lett megadva. Ha most augusztus van, ami több, mint 60 nappal a cikk önköltségi árának megadása után van, a felhasználó egy figyelmeztetést fog kapni az Anyajegyzéki-számítás során. A **Minimálisan engedélyezett árrés** mezőben megadhat százalékos értéket. Ez az érték azt a pontot jelöli, ahol nem lett elérve a minimálisan engedélyezett árrés. Ha egy bizonyos összetevő esetében nem lett elérve a minimálisan engedélyezett árrés, a felhasználó kap egy figyelmeztetést. Ezért ez a mező segít biztosítani, hogy az árát és a további szállítási költségeket a cikk számára ne állítsa túl alacsonyra.
+
+### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>A Készlet- és raktárkezelési paraméterek alapértelmezett beállítása
+
+Mivel a számítási csoportok szükségesek a számítások futtatásához, ezért be kell állítania egy alapértelmezett számítási csoportot a készletkezelési paramétereknél. Ez a beállítási lehetővé teszi a vállalatoknak az általános költségcsoport és a nyereség beállítását az összes cikkhez. Ezután ha egy adott cikkhez speciális számítási követelmények szükségesek, a felhasználó hozzárendelhet különböző számítási csoportokat. Általában beállíthat számítási csoportokat az AJ összetevő cikkekhez az AJ cikkek helyett. Azonban ha figyelmeztető üzenetek jelennek meg, akkor számítási csoportok is alkalmazhatóak. Egy cikkhez hozzárendelt számítási csoport felülírja a készletkezelési paramétereknél megadott alapértelmezett értéket. 
+
+Alapértelmezett paramétereket beállíthat a **Költségkezelés** &gt; **Készletkönyvelési irányelvek beállítása** &gt; **Paraméterek** &gt; **Készletkönyvelés** &gt; **Számítási csoport** menüben. Alapértelmezett konfigurációs csoport beállításával konfigurálhatja azokat a figyelmeztetési feltételeket is, amelyek az AJ számítási folyamat során jelennek meg a felhasználóknak, ha a kiválasztott összetevő számítási hibákat okozhat.
+
+### <a name="view-warning-messages-on-the-complete-page"></a>Figyelmeztető üzenetek megtekintése a Teljesített oldalon
 
 Az AJ számítások figyelmeztető üzeneteket hoznak létre. Megtekintheti a kijelölt cikkhez kapcsolódó figyelmeztetéseket. Például hozzon létre az Értékesítés és marketingnél egy új eladási rendelést a D0001-es cikkhez. Ezután az értékesítési rendelés sorban a **Sor frissítése** menüben kattintson a **Számítás az AJ/Receptúra alapján** lehetőségre, hogy megtekintse a számítás részleteit és a figyelmeztetéseket. A **Teljesített** lapon megtekintheti az AJ számítások eredményeit is. A figyelmeztető üzeneteket illetően, csak két figyelmeztetési feltétel vonatkozik a gyártott cikkekre, míg négy figyelmeztetési feltétel minden cikkre.
 -   Azonosítja, ha egy gyártott cikkhez nem tartozik aktív anyagjegyzék.
