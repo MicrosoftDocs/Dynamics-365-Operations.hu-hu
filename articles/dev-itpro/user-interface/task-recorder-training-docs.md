@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzé
 11. Válassza ki, hogyan szeretné menteni a feladatrögzítést
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>A feladatrögzítések megjelenítése a Súgó ablakban
-A saját feladatrögzítéseinek A Súgó ablakban való megjelenítéséhez, és ezáltal feladat-útmutatóként lejátszhatóak vagy szövegként megtekinthetőek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása.](../get-started/help-connect.md)
+A saját feladatrögzítéseinek A Súgó ablakban való megjelenítéséhez, és ezáltal feladat-útmutatóként lejátszhatóak vagy szövegként megtekinthetőek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása.](../../fin-and-ops/get-started/help-connect.md)
 
 <a name="see-also"></a>Lásd még
 --------
 
-[Súgó áttekintése](..\get-started\help-overview.md)
+[Súgó áttekintése](../../fin-and-ops/get-started/help-overview.md)
 
-[Súgó összekapcsolása](..\get-started\help-connect.md)
+[Súgó összekapcsolása](../../fin-and-ops/get-started/help-connect.md)
 
 [Feladatrögzítő](task-recorder.md)
 

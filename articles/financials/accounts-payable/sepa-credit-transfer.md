@@ -16,13 +16,13 @@ ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 49dfae79fe3914bcac9447d4fe3959128ff434ec
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Ez a cikk általános információkat tartalmaz az ISO 20022 átutalásokról, a
 
 ## <a name="what-is-a-credit-transfer-message"></a>Mi a jóváírási üzenet?
 A jóváírási üzenet egy olyan kérés, amelyet a kezdeményező fél (az Ön vállalata) elküld annak érdekében, hogy összegeket helyezzen át saját számlájáról egy hitelezőnek. Számos ország-/régióspecifikus és benkspecifikus megvalósítása létezik a jóváírási üzeneteknek. Néhányat csak egy országon/régión belül használnak, míg néhány már szabványossá vált. Az egyik jól megalapozott globális szabvány az ISO 20022 és annak indítási üzenetei, például a Jóváírás átvitele. Az alábbi ábrán a kapcsolatok és a lefedettség látható a kijelölt jóváírási üzenetekre vonatkozóan. 
-![Jóváírás átutalása](./media/credit-transfer.jpg) Jóváírási üzenetek\[/felirat\] 
+![Jóváírás átutalása](./media/credit-transfer.jpg) Jóváírási üzenetek 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Mik az ISO 20022 és SEPA átutalások?
 Az Egységes Euro Fizetési Övezet (SEPA) az Európai Bizottság által került meghatározásra, és a szabályai előírják, hogy minden elektronikus kifizetés belföldinek számít, függetlenül az egyes személyek, vállalatok, szervezetek vagy bankok elhelyezkedésétől. Az országon belüli és a nemzetközi kifizetések között nincs különbség. A SEPA magában foglalja a 28 Európai Uniós (EU) tagállamot, illetve Izlandot, Liechtensteint, Norvégiát, Svájcot, Monacót és San Marinót. A SEPA egységes piacot teremt az Európai Gazdasági Térségen (EGT) belüli kifizetési tranzakciók számára. A várakozások szerint a SEPA csökkenteni fogja a bankok, vállalatok és személyek által használt és kezelt kifizetési formátumok számát. Az Európai Bizottság a SEPA átutalások jogi alapját a Pénzforgalmi szolgáltatási irányelven (PSD) keresztül alakította ki. Az Európai Fizetési Tanács (EPC) a SEPA-t a következő tevékenységekkel támogatja:
@@ -59,7 +59,7 @@ A SEPA átutalás fizetési formátuma az európai országokban az elektronikus 
 Mindig meg kell keresnie a Microsoft Dynamics Lifecycle szolgáltatások (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie a legfrissebb listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő szakasz, a "Mit kell beállítanom?" hivatkozást biztosít a témához, amely leírja, hogyan hozhat létre LCS-adattárat az elérhető konfigurációk áttekintéséhez és a kiválasztott konfigurációk importálásához.
 
 ## <a name="what-do-i-have-to-set-up"></a>Mit kell beállítanom?
--   Mielőtt átutalási fájlokat hoz létre, legalább egy aktív SEPA átutalási konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Mielőtt átutalási fájlokat hoz létre, legalább egy aktív SEPA átutalási konfigurációt importálni kell az ER-konfigurációkba. További utasításokért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Válassza ki az **Általános elektronikus jelentéskészítés** jelölőnégyzetet, majd válassza ki a megfelelő átutalási formátumot (pl. **ISO 20022 átutalás (AT)**) exportformátum-konfigurációként, amikor konfigurálja a Kötelezettségek fizetési módjait.
 -   Be kell állítani a jogi entitást és a bankszámla adatait a Finance and Operations szoftverben.
 -   Bankszámlaszámok, IBAN-ok és néha SWIFT-kódok (BIC-k) vagy más azonosító adatok szükségesek az érvényes átutalások létrehozásához. Ezért be kell állítania őket az eladói bankszámlához és az átutalást kérelmező szervezet bankszámlájához.

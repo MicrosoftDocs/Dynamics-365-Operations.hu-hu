@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6119f1c85b68e6ed5dce01a266c4e681dfc4cd30
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Finance and Operations rendszerben a beszerzési rendelésekkel kezelése és a bizományosi készlet figyelése során.
 
-Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Finance and Operations rendszerben. Információkat tartalmaz a beszerzési rendelések figyelésével és nyomon követhetésével, valamint a bizományosi készlet figyelésével kapcsolatban. A szállítói együttműködést a számlázás során is használhatja. További tudnivalókért lásd: [Szállítói együttműködési számlázás munkaterület](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Finance and Operations rendszerben. Információkat tartalmaz a beszerzési rendelések figyelésével és nyomon követhetésével, valamint a bizományosi készlet figyelésével kapcsolatban. A szállítói együttműködést a számlázás során is használhatja. További tudnivalókért lásd: [Szállítói együttműködési számlázás munkaterület](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 ## <a name="working-with-purchase-orders"></a>Beszerzési rendelések intézése
 A **Beszerzési rendelések visszaigazolási** munkaterülete lehetővé teszi, hogy válaszoljon a véleményezésre elküldött beszerzési rendelésekre. Lehetővé teszi a vevői műveletre várakozó beszerzési rendelések adatainak megtekintését, valamint a vevő által visszaigazolt, de még nyitva levő beszerzési rendelésekkel kapcsolatos információk megtekintését is. A **Beszerzési rendelések visszaigazolási** munkaterülete három listát tartalmaz:

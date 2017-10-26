@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: f596f84463f46fc37b14b77bd335b9ed8a62eea9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -39,7 +39,7 @@ Mvel a **Költségkönyvelési elemzés** tartalom kiemeli a tényleges és terv
 
 A **Költségkönyvelési elemzés** tartalom segítségével a költségkönyvelők elemezhetik a költségek átfolyását a teljes szervezet költségobjektumain. 
 
-A Költségkönyveléssel kapcsolatos további tudnivalókért lásd: [Költségkönyvelési honlap](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
+A Költségkönyveléssel kapcsolatos további tudnivalókért lásd: [Költségkönyvelési honlap](../../financials/cost-accounting/cost-accounting-home-page.md). 
 
 A Költségkönyvelésben hozzáférési szintű biztonság beállításával és ezt a Power BI sorszintű biztonságával kombinálva az összes költségobjektum-tulajdonos számára hozzáférést biztosíthat a **Költségkönyvelési elemzés** Power BI-tartalomhoz. Így a képi megjelenítések összes adatának szűrése a Költségkönyvelésben vezérelt hozzáférési szint alapján történik. Ha többet szeretne megtudni a hozzáférési szintű biztonságról és a sorszintű biztonságról, lásd: [Biztonság beállítása költségkönyvelési tartalomhoz a Power BI-ban](setup-security-cost-accounting-content-pack.md).
 

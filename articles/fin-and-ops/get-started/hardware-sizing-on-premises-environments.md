@@ -15,18 +15,18 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: chwolf
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 4a1cab8c126ad063a52827421d2ea1104d0c7287
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 5be9b195754d6c8315342c83451128092f64a241
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Hardverméretezés on-premises környezetekhez
-Mielőtt elkezdi a hardver és infrastruktúra helyszíni környezetekben való méretezésének folyamatát, ismerkedjen meg ezzel: [Rendszerkövetelmények](../get-started/system-requirements.md) és ezzel: [Beállítási és telepítési útmutató](../deployment/setup-deploy-on-premises-environments.md), hogy kellőképpen ismerje a mögöttes infrastruktúrát. 
+Mielőtt elkezdi a hardver és infrastruktúra helyszíni környezetekben való méretezésének folyamatát, ismerkedjen meg ezzel: [Rendszerkövetelmények](system-requirements.md) és ezzel: [Beállítási és telepítési útmutató](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), hogy kellőképpen ismerje a mögöttes infrastruktúrát. 
 
   **Megjegyzés:** Alaposan figyeljen oda a rendszerbeállítás ajánlott eljárásaira az optimális teljesítmény érdekében. 
 
@@ -89,7 +89,7 @@ A méretezési követelmények megértése érdekében ismernie kell az ön ált
 Mindig ajánlott az SQL Server használata egy fürtben vagy egy tükrözött beállításban. A második SQL-csomópontnak ugyanannyi processzormaggal kell rendelkeznie, mint az elsődleges csomópont. 
 
 ### <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
-Az AD FS méretezéséhez lásd: [AD FS kiszolgálói kapacitás dokumentáció](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
+Az AD FS méretezéséhez lásd: [AD FS kiszolgálói kapacitás dokumentáció](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
 
 Elérhető egy [méretezési táblázat](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) a telepítésében található példányok számának tervezéséhez.
 

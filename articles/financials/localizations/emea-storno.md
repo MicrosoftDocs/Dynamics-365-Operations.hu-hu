@@ -17,10 +17,10 @@ ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: cd234755bbe92e8f1c78a2dd6e7d05e5372c4692
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: a0d5aa114564e000a2d2b2780996a14d5a41015e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -167,6 +167,6 @@ Testreszabhatja a sztornírozás megjelenítését űrlapokban, rácsokban, oszl
 ![Naplóösszegekben bejegyzés sztornírozása](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Sztornírozási dokumentumok létrehozása
-Egyes dokumentumok érvénytelenítési tranzakciók létrehozása. Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget. További részletekért lásd: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). A törlési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel. Érvénytelenítési tranzakciók is létrejönnek a készlethez. További információ [Készletzárás](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close). Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása. Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése. Dokumentumok létrehozása a fordított meghatározott paraméterek vagy sztornótranzakciók használata Például az árfolyam-korrekció fordított hoz létre, vagy az általános főkönyvi javítás paraméter alapján sztornótranzakciók. A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.
+Egyes dokumentumok érvénytelenítési tranzakciók létrehozása. Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget. További részletekért lásd: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). A törlési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel. Érvénytelenítési tranzakciók is létrejönnek a készlethez. További információ [Készletzárás](../../supply-chain/cost-management/inventory-close.md). Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása. Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése. Dokumentumok létrehozása a fordított meghatározott paraméterek vagy sztornótranzakciók használata Például az árfolyam-korrekció fordított hoz létre, vagy az általános főkönyvi javítás paraméter alapján sztornótranzakciók. A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.
 
 
