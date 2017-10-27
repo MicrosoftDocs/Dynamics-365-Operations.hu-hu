@@ -13,14 +13,14 @@ ms.reviewer: robinr
 ms.search.scope: Operations, Platform, UnifiedOperations
 ms.search.region: Global
 ms.author: tjvass
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.intro: Platform update 8
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: e819aafbdf55fbc2a6dc996d275244de1e11d89b
+ms.sourcegitcommit: fc8102d945faf9ad533f57ec1a45b0e0dc344963
+ms.openlocfilehash: d36abbf7c08c56d84ed83dbec1bfa33f30b47ef5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,10 +47,10 @@ Alkalmazás meglévő munkaterülethez kiterjesztése, vagy saját új munkater�
 4. Választható: A nézet testreszabásához bővítmények.
 
 > [!NOTE]
-> Elemzési jelentések létrehozásával kapcsolatos további tudnivalókat lásd: [Power az üzleti Intelligencia asztali – első lépések](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). Ez a lap elévült vonatkozó információkat, melyek segítséget nyújtanak arra az elemzési jelentés megoldások létrehozása esetén.
+> Elemzési jelentések létrehozásával kapcsolatos további tudnivalókat lásd: [Power az üzleti Intelligencia asztali – első lépések](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Ez a lap elévült vonatkozó információkat, melyek segítséget nyújtanak arra az elemzési jelentés megoldások létrehozása esetén.
 
 # <a name="add-a-pbix-file-as-a-resource"></a>Erőforrásként .pbix fájlt kell hozzáadni
-Mielőtt elkezdené, létre kell hoznia vagy a kiemelt Üzletiintelligencia-jelentés beágyazza a munkaterület beszerzése. Elemzési jelentések létrehozásával kapcsolatos további tudnivalókat lásd: [Power az üzleti Intelligencia asztali – első lépések](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
+Mielőtt elkezdené, létre kell hoznia vagy a kiemelt Üzletiintelligencia-jelentés beágyazza a munkaterület beszerzése. Elemzési jelentések létrehozásával kapcsolatos további tudnivalókat lásd: [Power az üzleti Intelligencia asztali – első lépések](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Adja meg a Visual Studio projekt műtermék .pbix fájl lépésekkel.
 

@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 46eacb2a01c3bfcc7144c7d8c39ee0189fd72e16
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 7fe11966b27eb0793a47835e05e465d809bf3407
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ A webes alkalmazás az alábbi böngészők bármelyikében működik, ha azok a
 A böngésző legfrissebb változatáért látogasson el a szoftver gyártójának webhelyére. 
 
 > [!NOTE]
-> -   A Task Recorder által generált képek rögzítéséhez és Microsoft Word-dokumentumba való ágyazásához telepítenie kell egy előzetes verziójú Chrome-bővítményt. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder).-->
+> -   A Task Recorder által generált képek rögzítéséhez és Microsoft Word-dokumentumba való ágyazásához telepítenie kell egy előzetes verziójú Chrome-bővítményt. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > -   A munkafolyamat-szerkesztő ClickOnce-alkalmazásként indul el. Csak a Microsoft Edge és az Internet Explorer (a Microsoft Windows egy támogatott verziójának használata esetén) támogatja a ClickOnce-alkalmazásokat. A Workflow Editor ClickOnce alkalmazáshoz 64 bit-kompatibilis operációs rendszer szükséges.
 > -   A Report Designer for Financial reporting ClickOnce alkalmazásként indul el. 64 bit-kompatibilis operációs rendszert igényel. Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a Chrome böngészőt Inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az Inkognitó módban.
 > -   A PDF-fájlok előnézetének megtekintéséhez olyan böngészők használatát javasoljuk, mint a Microsoft Edge (a legújabb nyilvánosan elérhető verzió) Windows 10 rendszeren, illetve a Google Chrome (a legújabb nyilvánosan elérhető verzió) Windows 10, Windows 8.1, Windows 8 vagy Windows 7 rendszeren vagy Google Nexus 10 táblagépeken.
@@ -70,7 +70,7 @@ A Finance and Operations esetében a Microsoft .NET-keretrendszer 4.6.2-es verzi
 ## <a name="supported-microsoft-office-applications"></a>Támogatott Microsoft Office-alkalmazások
 A következő Microsoft Office-alkalmazások a Finance and Operations felhő alapú vagy helyszíni telepítései esetén használhatók:
 
--   A Microsoft Excel és Word bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   A Microsoft Excel és Word bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Az Exportálás Excel-be vagy az Exportálás a Word programba funkcióval létrehozott dokumentumok megtekintéséhez telepíteni kell a Microsoft Office 2007 vagy újabb verzióját.
 
 ## <a name="retail-modern-pos-requirements"></a>Retail Modern POS követelményei
@@ -153,10 +153,10 @@ A számítógépnek teljesítenie kell a rendszerkövetelményeket a következő
 -   Legalább 10 GB szabad lemezterület (a csatorna-adatbázis használatához sok helyre lehet szükség).
 
 ## <a name="requirements-for-development-on-local-vms"></a>A helyi virtuális gépek fejlesztési követelményei
-A helyi virtuális gépek fejlesztési követelményeiről lásd: [helyszínen futó virtuális gép](../dev-tools/access-instances.md).
+A helyi virtuális gépek fejlesztési követelményeiről lásd: [helyszínen futó virtuális gép](../../dev-itpro/dev-tools/access-instances.md).
 
 
 ## <a name="see-also"></a>Lásd még
 
-[Szerezze be a Dynamics 365 for Finance and Operations Enterprise Edition bétaverzióját](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Szerezze be a Dynamics 365 for Finance and Operations Enterprise Edition bétaverzióját](../../dev-itpro/dev-tools/get-evaluation-copy.md)
 

@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -183,8 +182,8 @@ A következő gyakorlatban fog létrehozni új jelentés. A jelentés akkor egym
 18. **Mentés** a módosításokat, és **készítése**. A jelentés létrehozásának és megnyitásának befejeződése után böngészhet a jelentésben.
 
 ## <a name="additional-resources"></a>További erőforrások
-[Pénzügyi jelentések](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
-[Pénzügyi jelentések megtekintése](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Pénzügyi jelentések](../../financials/general-ledger/financial-reporting-getting-started.md) 
+[Pénzügyi jelentések megtekintése](../../financials/general-ledger/view-financial-reports.md) 
 [Dynamics pénzügyi jelentési webnapló](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

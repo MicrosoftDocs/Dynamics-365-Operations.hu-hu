@@ -15,10 +15,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 172d952c79347e7dd563cfda70729750fa0ddde9
-ms.openlocfilehash: c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 75865ece49837e2a8758c4d739d3e29ce9128945
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="vendor-invoice-automation"></a>Szállítói számla automatizálása
@@ -57,7 +57,7 @@ Az adatcsomag a Finance and Operations rendszerbe kötelezően elküldendő munk
 
 A szállítói számla dokumentummelléklet a funkció részeként bevezetett új adatentitás. A Szállítói számla fejlécének entitását úgy módosította a rendszer, hogy az támogassa a mellékleteket. A Szállítói számla sorentitást nem módosították ehhez a funkcióhoz.
 
-Ez a témakör nem nyújt részletes meghatározást az adatcsomagról. Nem mutatja be az adatcsomagok létrehozását sem. Ezt az információt itt találja: [Adatentitások és -csomagok keretrendszere](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).
+Ez a témakör nem nyújt részletes meghatározást az adatcsomagról. Nem mutatja be az adatcsomagok létrehozását sem. Ezt az információt itt találja: [Adatentitások és -csomagok keretrendszere](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 A számlákat és mellékleteket tartalmazó tesztadatok gyors létrehozásához kövesse az alábbi lépéseket.
 

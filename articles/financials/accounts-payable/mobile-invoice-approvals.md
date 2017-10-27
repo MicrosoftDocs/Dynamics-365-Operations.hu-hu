@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 661c5a14d27f3ad9df6088c2977c507ca315a998
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás mobilszo
 
 | Előfeltételek                                                                                            | Leírás                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobil kézikönyv előzetes olvasás                                                                                |[Mobil platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
+| Mobil kézikönyv előzetes olvasás                                                                                |[Mobil platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | Olyan környezet, amely rendelkezik a Microsoft Dynamics 365 for Operations 1611-es verziójával és a Microsoft Dynamics for Operations 3-as platformfrissítésével (2016. november).                   |
 | Telepítse a 3204341 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | A Feladatrögzítő tévesen két Bezárás parancsot rögzíthet legördülő párbeszédpaneleknél - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés) |
 | Telepítse a 3207800 számú tudásbáziscikkhez tartozó gyorsjavítást.                                                                              | Ez a gyorsjavítás lehetővé teszi a mellékletek megtekintését mobil kliensen - - ez a Dynamics 365 for Operation 3. platformfrissítésében található (2016. novemberi frissítés).           |

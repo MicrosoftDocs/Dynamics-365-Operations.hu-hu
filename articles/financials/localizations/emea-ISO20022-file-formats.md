@@ -16,10 +16,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
-ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: fcab30f03aebf7dbe76d5b3b64260f726f291fb8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -118,7 +118,7 @@ Ha formátumkonfigurációt importál az LCS-rendszerből, a teljes konfiguráci
  - **Pain.002** – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a pain.002 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében
  - **Camt.054** – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a camt.054 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében. Ugyanaz a formátumkonfiguráció fog szerepelni a vevői kifizetések importálása funkcióban, de a rendszer különböző hozzárendelést fog használni a Fizetési modell hozzárendelése az ISO20022 célhoz konfigurációban.
 
-Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektronikus jelentések áttekintése](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektronikus jelentések áttekintése](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 - [Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

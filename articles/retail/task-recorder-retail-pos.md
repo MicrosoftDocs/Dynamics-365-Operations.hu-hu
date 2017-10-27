@@ -18,11 +18,11 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 007a7e8a34f3f5a2d0d18eb3955822a8fd8bdd0a
+ms.translationtype: HT
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: 9a1e3f08eeda93adeac4509edad244754770db65
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -126,7 +126,7 @@ A **Szöveg** mezőben beírt szöveg a lépés szövege *felett* jelenik meg a 
 A **Megjegyzések** mezőben beírt szöveg a lépés szövege *alatt* jelenik meg a Feladat-útmutatóban. A megjegyzés szövegének elolvasásához a felhasználónak ki kell bontania a lépés szövegét az előugró ablakban. Ez a hely megfelelő további anyagok vagy egyéb olyan információ elolvasásához, amely hasznos lehet a felhasználó számára, de a felhasználó számára ez nem kötelező a művelet végrehajtásához.
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>A Retail Modern POS és a Cloud POS súgója
-A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](/dynamics365/unified-operations/dev-itpro/get-started/help-connect). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM-könyvtárban keres, amelyet kijelöltek a Microsoft Dynamics 365 for Retail Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot. 
+A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../fin-and-ops/get-started/help-connect.md). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM-könyvtárban keres, amelyet kijelöltek a Microsoft Dynamics 365 for Retail Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot. 
 
 [![Súgó gomb](./media/help.jpg)](./media/help.jpg) 
 

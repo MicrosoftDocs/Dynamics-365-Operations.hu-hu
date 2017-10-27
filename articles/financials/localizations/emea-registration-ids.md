@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c2c625e9c4f0df762abd6120201a2623ac756bf9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -61,7 +60,7 @@ A nyilvántartási kategória egy olyan ország-/régióalapú nyilvántartási 
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Globális címjegyzék nyilvántartási azonosítóinak megadása
 
-A Microsoft Dynamics 365 for Finance and Operations globális címjegyzéke vevők, szállítók, partnerek, üzleti kapcsolatok és jogi személyek összevont címadatait tartalmazza. A további tudnivalókat lásd: [Globális címjegyzék áttekintése](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). A globális címjegyzékben tárolt partnerrekordok egy vagy több címrekordot tartalmazhatnak. Ezeket a címeket különböző – például számlázási vagy szállítási – célokra használják. Nyilvántartási azonosítók beállíthatók vevők, szállítók, dolgozók és jogi személyek címadataihoz. Keresse meg a fél (jogi személy, szállító, vevő, dolgozó) rekordját, amelyhez meg kívánja adni a nyilvántartási azonosítót, majd kattintson a **Regisztrációs azonosítók** elemre a fél, jogi személy, szállító, vevő, dolgozó űrlapján a **Címek kezelése** oldal megnyitásához. Az **Adóregisztráció** lapon kattintson a **Hozzáadás** elemre, és adja meg a következő információkat a nyilvántartási azonosítóhoz.
+A Microsoft Dynamics 365 for Finance and Operations globális címjegyzéke vevők, szállítók, partnerek, üzleti kapcsolatok és jogi személyek összevont címadatait tartalmazza. A további tudnivalókat lásd: [Globális címjegyzék áttekintése](../../fin-and-ops/organization-administration/overview-global-address-book.md). A globális címjegyzékben tárolt partnerrekordok egy vagy több címrekordot tartalmazhatnak. Ezeket a címeket különböző – például számlázási vagy szállítási – célokra használják. Nyilvántartási azonosítók beállíthatók vevők, szállítók, dolgozók és jogi személyek címadataihoz. Keresse meg a fél (jogi személy, szállító, vevő, dolgozó) rekordját, amelyhez meg kívánja adni a nyilvántartási azonosítót, majd kattintson a **Regisztrációs azonosítók** elemre a fél, jogi személy, szállító, vevő, dolgozó űrlapján a **Címek kezelése** oldal megnyitásához. Az **Adóregisztráció** lapon kattintson a **Hozzáadás** elemre, és adja meg a következő információkat a nyilvántartási azonosítóhoz.
 
 
 |Mező                |Leírás                                                |

@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
 ms.contentlocale: hu-hu
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,7 +68,7 @@ E konfiguráció használata esetén beszerzési rendelés jön létre a kapcsol
 Egy termelési rendeléshez számos művelet tartozhat, és minden egyes művelet különböző szállítóhoz lehet hozzárendelhető. Ezért egy végpontok közötti termelési rendelés számos beszerzési rendelést is kiválthat.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Termelési folyamat tevékenységeinek alvállalkozásba adása
-A [lean manufacturing](lean-manufacturing-overview.md) megoldási modellekben az alvállalkozói munka egy [termelési folyamat](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (Feladat-útmutató témaköre) egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Ezért az ilyen típusú alvállalkozásba adást [tevékenységi alapú alvállalkozásba adásnak is nevezzük](activity-based-subcontracting.md) Egy speciális költségcsoporttípus, a **Közvetlen kiszervezés** került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele a késztermékek anyagjegyzékébe (AJ). Lean manufacturing használatakor minden olyan tevékenység meghatározása kanbannal történik, amely összefüggésben lehet egy vagy több termelési folyamat tevékenységeivel. Eddig a magyarázat ugyanúgy hangzik, mint a termelési rendelések magyarázata. A termelési rendeléseknek viszont mindig késztermékkel kell végződniük, félkész termékek biztosításához kanban hozható létre. Nem kell bevezetni új terméket és AJ-szintet.  
+A [lean manufacturing](lean-manufacturing-overview.md) megoldási modellekben az alvállalkozói munka egy [termelési folyamat](tasks/create-production-flow-version.md) (Feladat-útmutató témaköre) egy tevékenységhez kapcsolódó szolgáltatásként modelleződik. Ezért az ilyen típusú alvállalkozásba adást [tevékenységi alapú alvállalkozásba adásnak is nevezzük](activity-based-subcontracting.md) Egy speciális költségcsoporttípus, a **Közvetlen kiszervezés** került bevezetésre, a vezetett, az alvállalkozói szolgáltatások pedig már nem tartoznak bele a késztermékek anyagjegyzékébe (AJ). Lean manufacturing használatakor minden olyan tevékenység meghatározása kanbannal történik, amely összefüggésben lehet egy vagy több termelési folyamat tevékenységeivel. Eddig a magyarázat ugyanúgy hangzik, mint a termelési rendelések magyarázata. A termelési rendeléseknek viszont mindig késztermékkel kell végződniük, félkész termékek biztosításához kanban hozható létre. Nem kell bevezetni új terméket és AJ-szintet.  
 
 Mivel a kanbanszabályok nagyon dinamikusak lehetnek, a termelési folyamatban ugyanarra a termékre vonatkozóan különböző ellátási változatok modellezhetők. Lean alvállalkozásba adás használatakor az anyagáram és pénzügyi áramlását szigorúan elválnak egymástól. Minden anyagáramot kanbantevékenységek jelölnek. A szolgáltatási termékekre vonatkozó beszerzési rendelések és ezen szolgáltatások beérkezésének könyvelése automatizálható a termelési folyamatban található kanbanfeladatok állapota alapján. Kanbanfeladatok elindíthatók befejezhetők akár a beszerzési rendelések létrehozása előtt is. Az alvállalkozói dokumentumok (a szolgáltatás beszerzési rendelése és beszerzési elismervénye) időszak és szolgáltatás szerint összesíthetők. Ezért a beszerzési bizonylatok és sorok száma nagyon alacsonyan tartható még az olyan, nagy számban ismétlődő műveletek esetén is, amelyeknél a szállítók egységes folyamat formájában biztosítanak alvállalkozói szolgáltatásokat.
 
