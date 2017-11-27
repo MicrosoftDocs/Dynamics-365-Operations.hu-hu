@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
@@ -18,34 +18,33 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c4c900d7599b0dc09e97e6a62d5b43971a8c3e33
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 6b2346c635fd16fce99c2813856e0fc9b5b03a44
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="cost-accounting-home-page"></a><span data-ttu-id="42bdc-103">Költségkönyvelés kezdőlap</span><span class="sxs-lookup"><span data-stu-id="42bdc-103">Cost accounting home page</span></span>
+# <a name="cost-accounting-home-page"></a><span data-ttu-id="3336c-103">Költségkönyvelés kezdőlap</span><span class="sxs-lookup"><span data-stu-id="3336c-103">Cost accounting home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-## <a name="learning-map"></a><span data-ttu-id="42bdc-104">Tanulási térkép</span><span class="sxs-lookup"><span data-stu-id="42bdc-104">Learning map</span></span> 
+## <a name="learning-map"></a><span data-ttu-id="3336c-104">Tanulási térkép</span><span class="sxs-lookup"><span data-stu-id="3336c-104">Learning map</span></span> 
 
-<span data-ttu-id="42bdc-105">A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, amelyek a Költségkönyvelés modul keretét alkotják.</span><span class="sxs-lookup"><span data-stu-id="42bdc-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="42bdc-106">Kattintson a hivatkozásra a [Gyorshivatkozások](#quick-links) szakaszban a modul használatának elsajátításához.</span><span class="sxs-lookup"><span data-stu-id="42bdc-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
+<span data-ttu-id="3336c-105">A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, amelyek a Költségkönyvelés modul keretét alkotják.</span><span class="sxs-lookup"><span data-stu-id="3336c-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="3336c-106">Kattintson a hivatkozásra a [Gyorshivatkozások](#quick-links) szakaszban a modul használatának elsajátításához.</span><span class="sxs-lookup"><span data-stu-id="3336c-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
 
-<span data-ttu-id="42bdc-107">[![Költségkönyvelés tanulási térképe](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="42bdc-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
+<span data-ttu-id="3336c-107">[![Költségkönyvelés tanulási térképe](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="3336c-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
 
-## <a name="quick-links"></a><span data-ttu-id="42bdc-108">Gyorshivatkozások</span><span class="sxs-lookup"><span data-stu-id="42bdc-108">Quick links</span></span>
+## <a name="quick-links"></a><span data-ttu-id="3336c-108">Gyorshivatkozások</span><span class="sxs-lookup"><span data-stu-id="3336c-108">Quick links</span></span>
 |      |   |
 |------|---|
-|  [<span data-ttu-id="42bdc-109">Első lépések</span><span class="sxs-lookup"><span data-stu-id="42bdc-109">Get started</span></span>](terms-cost-accounting.md)    | [<span data-ttu-id="42bdc-110">Forrásrendszer konfigurálása</span><span class="sxs-lookup"><span data-stu-id="42bdc-110">Configure source system</span></span>](../general-ledger/financial-dimensions.md)  |
-|  [<span data-ttu-id="42bdc-111">Dimenziók létrehozása és dimenziótagok importálása</span><span class="sxs-lookup"><span data-stu-id="42bdc-111">Create dimensions and import dimension members</span></span>](cost-elements.md)    |[<span data-ttu-id="42bdc-112">Dimenzióhierarchiája létrehozása</span><span class="sxs-lookup"><span data-stu-id="42bdc-112">Create dimension hierarchy</span></span>](dimension-hierarchy.md)   |
-|  [<span data-ttu-id="42bdc-113">Alapbeállítás létrehozása</span><span class="sxs-lookup"><span data-stu-id="42bdc-113">Create basic setup</span></span>](./tasks/define-cost-control-units.md)    |  [<span data-ttu-id="42bdc-114">Foglalási alap definiálása</span><span class="sxs-lookup"><span data-stu-id="42bdc-114">Define allocation base</span></span>](allocation-bases.md) |
-|    [<span data-ttu-id="42bdc-115">Irányelvek meghatározása</span><span class="sxs-lookup"><span data-stu-id="42bdc-115">Define policies</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md)  | [<span data-ttu-id="42bdc-116">Adatforrás és adatszolgáltató</span><span class="sxs-lookup"><span data-stu-id="42bdc-116">Data source and data provider</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md)  |
-| [<span data-ttu-id="42bdc-117">Adatforrás feldolgozása</span><span class="sxs-lookup"><span data-stu-id="42bdc-117">Data source processing</span></span>](./tasks/process-trace-source-data.md)     | [<span data-ttu-id="42bdc-118">Járulékos költség számítása</span><span class="sxs-lookup"><span data-stu-id="42bdc-118">Overhead calculation</span></span>](overhead-calculation.md)  |
-|   [<span data-ttu-id="42bdc-119">Elemzés és jelentéskészítés</span><span class="sxs-lookup"><span data-stu-id="42bdc-119">Analysis and reporting</span></span>](cost-control-workspace.md)   |   |
+|  <span data-ttu-id="3336c-109">[Alapentitások (e-tanulás) konfigurálása](https://mbspartner.microsoft.com/Home) (CustomerSource számla szükséges)</span><span class="sxs-lookup"><span data-stu-id="3336c-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="3336c-110">Dimenziók létrehozása</span><span class="sxs-lookup"><span data-stu-id="3336c-110">Create dimensions</span></span>](cost-elements.md)  |
+|  [<span data-ttu-id="3336c-111">Dimenzióhierarchiája létrehozása</span><span class="sxs-lookup"><span data-stu-id="3336c-111">Create dimension hierarchy</span></span>](dimension-hierarchy.md)  |[<span data-ttu-id="3336c-112">Alapbeállítás létrehozása</span><span class="sxs-lookup"><span data-stu-id="3336c-112">Create basic setup</span></span>](./tasks/define-cost-control-units.md)| 
+| [<span data-ttu-id="3336c-113">Foglalási alap definiálása</span><span class="sxs-lookup"><span data-stu-id="3336c-113">Define allocation base</span></span>](allocation-bases.md)|[<span data-ttu-id="3336c-114">Irányelvek meghatározása</span><span class="sxs-lookup"><span data-stu-id="3336c-114">Define policies</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [<span data-ttu-id="3336c-115">Adatforrás és adatszolgáltató</span><span class="sxs-lookup"><span data-stu-id="3336c-115">Data source and data provider</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [<span data-ttu-id="3336c-116">Adatforrás és adatszolgáltató</span><span class="sxs-lookup"><span data-stu-id="3336c-116">Data source and data provider</span></span>](./tasks/process-trace-source-data.md)     | 
+|[<span data-ttu-id="3336c-117">Járulékos költség számítása</span><span class="sxs-lookup"><span data-stu-id="3336c-117">Overhead calculation</span></span>](overhead-calculation.md)  | [<span data-ttu-id="3336c-118">Elemzés és jelentéskészítés</span><span class="sxs-lookup"><span data-stu-id="3336c-118">Analysis and reporting</span></span>](cost-control-workspace.md)   |
 
-## <a name="get-started-videosbr"></a><span data-ttu-id="42bdc-120">Első lépések videói</span><span class="sxs-lookup"><span data-stu-id="42bdc-120">Get started videos</span></span><br/>
+## <a name="get-started-videosbr"></a><span data-ttu-id="3336c-119">Első lépések videói</span><span class="sxs-lookup"><span data-stu-id="3336c-119">Get started videos</span></span><br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
