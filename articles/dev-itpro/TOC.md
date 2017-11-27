@@ -54,57 +54,54 @@
 #### [X++-attribútumosztályok](dev-ref/xpp-attribute-classes.md)
 #### [Az X++ és a C\# összehasonlítása](dev-ref/xpp-cs-comparison.md)
 #### [Az X++ szintaxisa](dev-ref/xpp-syntax.md)
-## Fordításidejű funkciók
+## [Alkalmazásprogramozási felület, osztály és tábla referenciák](dev-ref/api-reference.md)
 ### [X++ fordításidejű funkciók](dev-ref/xpp-compile-time-functions.md)
-## Futásidejű funkciók
-### [X++ üzleti futásidejű funkciók](dev-ref/xpp-business-run-time-functions.md)
-### [X++ tároló futásidejű funkciók](dev-ref/xpp-container-run-time-functions.md)
-### [X++ konverzió futásidejű funkciók](dev-ref/xpp-conversion-run-time-functions.md)
-### [X++ dátum futásidejű funkciók](dev-ref/xpp-date-run-time-functions.md)
-### [X++ matematikai futásidejű funkciók](dev-ref/xpp-math-run-time-functions.md)
-### [X++ reflexió futásidejű funkciók](dev-ref/xpp-reflection-run-time-functions.md)
 ### [X++ futásidejű funkciók](dev-ref/xpp-run-time-functions.md)
-### [X++ munkamenet futásidejű funkciók](dev-ref/xpp-session-run-time-functions.md)
-### [X++ karakterlánc futásidejű funkciók](dev-ref/xpp-string-run-time-functions.md)
-## Rendszertáblák
+#### [X++ üzleti futásidejű funkciók](dev-ref/xpp-business-run-time-functions.md)
+#### [X++ tároló futásidejű funkciók](dev-ref/xpp-container-run-time-functions.md)
+#### [X++ konverzió futásidejű funkciók](dev-ref/xpp-conversion-run-time-functions.md)
+#### [X++ dátum futásidejű funkciók](dev-ref/xpp-date-run-time-functions.md)
+#### [X++ matematikai futásidejű funkciók](dev-ref/xpp-math-run-time-functions.md)
+#### [X++ reflexió futásidejű funkciók](dev-ref/xpp-reflection-run-time-functions.md)
+#### [X++ munkamenet futásidejű funkciók](dev-ref/xpp-session-run-time-functions.md)
+#### [X++ karakterlánc futásidejű funkciók](dev-ref/xpp-string-run-time-functions.md)
 ### [Rendszertáblák](dev-ref/system-tables.md)
-## Rendszerosztályok
-### [Alkalmazásprogramozási felület, osztály és tábla referenciák](dev-ref/api-reference.md)
-### [A osztályok](dev-ref/a-classes.md)
-### [B osztályok](dev-ref/b-classes.md)
-### [C osztályok](dev-ref/c-classes.md)
-### [D osztályok](dev-ref/d-classes.md)
-### [E osztályok](dev-ref/e-classes.md)
-### [F osztályok: FieldBinding – FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
-### [F osztályok: FormBuildButtonControl – FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
-### [F osztályok: FormBuildFilterPaneControl – FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
-### [F osztályok: FormBuildReferenceControl – FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
-### [F osztályok: FormChangeTracker – FormControlEventArgs](dev-ref/formchangetracker-classes.md)
-### [F osztályok: FormDataObject – FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
-### [F osztályok: FormFastTabSummarySeparator – FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
-### [F osztályok: FormGroupControl – FormIntControl](dev-ref/formgroupcontrol-classes.md)
-### [F osztályok: FormListBoxControl – FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
-### [F osztályok: FormObject – FormRealControl](dev-ref/formobject-classes.md)
-### [F osztályok: FormReferenceControl – FormStringControl](dev-ref/formreferencecontrol-classes.md)
-### [F osztályok: FormTabControl – FormWindowControl](dev-ref/formtabcontrol-classes.md)
-### [G osztályok](dev-ref/g-classes.md)
-### [H osztályok](dev-ref/h-classes.md)
-### [I osztályok](dev-ref/i-classes.md)
-### [J osztályok](dev-ref/j-classes.md)
-### [K osztályok](dev-ref/k-classes.md)
-### [L osztályok](dev-ref/l-classes.md)
-### [M osztályok](dev-ref/m-classes.md)
-### [N osztályok](dev-ref/n-classes.md)
-### [O osztályok](dev-ref/o-classes.md)
-### [P osztályok](dev-ref/p-classes.md)
-### [Q osztályok](dev-ref/q-classes.md)
-### [R osztályok](dev-ref/r-classes.md)
-### [S osztályok](dev-ref/s-classes.md)
-### [T osztályok](dev-ref/t-classes.md)
-### [U osztályok](dev-ref/u-classes.md)
-### [V osztályok](dev-ref/v-classes.md)
-### [W osztályok](dev-ref/w-classes.md)
-### [X osztályok](dev-ref/x-classes.md)
+### Rendszerosztályok
+#### [A osztályok](dev-ref/a-classes.md)
+#### [B osztályok](dev-ref/b-classes.md)
+#### [C osztályok](dev-ref/c-classes.md)
+#### [D osztályok](dev-ref/d-classes.md)
+#### [E osztályok](dev-ref/e-classes.md)
+#### [F osztályok: FieldBinding – FormBuildAnimateControl](dev-ref/fieldbinding-classes.md)
+#### [F osztályok: FormBuildButtonControl – FormBuildFastTabSummarySeparator](dev-ref/formbuildbuttoncontrol-classes.md)
+#### [F osztályok: FormBuildFilterPaneControl – FormBuildRealControl](dev-ref/formbuildfilterpanecontrol-classes.md)
+#### [F osztályok: FormBuildReferenceControl – FormButtonSeparatorControl](dev-ref/formbuildreferencecontrol-classes.md)
+#### [F osztályok: FormChangeTracker – FormControlEventArgs](dev-ref/formchangetracker-classes.md)
+#### [F osztályok: FormDataObject – FormFastTabHeaderControl](dev-ref/formdataobject-classes.md)
+#### [F osztályok: FormFastTabSummarySeparator – FormGridControl](dev-ref/formfasttabsummaryseparator-classes.md)
+#### [F osztályok: FormGroupControl – FormIntControl](dev-ref/formgroupcontrol-classes.md)
+#### [F osztályok: FormListBoxControl – FormNotifyEventArgs](dev-ref/formlistboxcontrol-classes.md)
+#### [F osztályok: FormObject – FormRealControl](dev-ref/formobject-classes.md)
+#### [F osztályok: FormReferenceControl – FormStringControl](dev-ref/formreferencecontrol-classes.md)
+#### [F osztályok: FormTabControl – FormWindowControl](dev-ref/formtabcontrol-classes.md)
+#### [G osztályok](dev-ref/g-classes.md)
+#### [H osztályok](dev-ref/h-classes.md)
+#### [I osztályok](dev-ref/i-classes.md)
+#### [J osztályok](dev-ref/j-classes.md)
+#### [K osztályok](dev-ref/k-classes.md)
+#### [L osztályok](dev-ref/l-classes.md)
+#### [M osztályok](dev-ref/m-classes.md)
+#### [N osztályok](dev-ref/n-classes.md)
+#### [O osztályok](dev-ref/o-classes.md)
+#### [P osztályok](dev-ref/p-classes.md)
+#### [Q osztályok](dev-ref/q-classes.md)
+#### [R osztályok](dev-ref/r-classes.md)
+#### [S osztályok](dev-ref/s-classes.md)
+#### [T osztályok](dev-ref/t-classes.md)
+#### [U osztályok](dev-ref/u-classes.md)
+#### [V osztályok](dev-ref/v-classes.md)
+#### [W osztályok](dev-ref/w-classes.md)
+#### [X osztályok](dev-ref/x-classes.md)
 
 ## [Bővítési honlap](extensibility/extensibility-home-page.md)
 ### Bevezetés és az első lépések
@@ -138,15 +135,12 @@
 #### [Űrlap feliratának módosítása](extensibility/change-caption-form.md)
 #### [Képernyővezérlő tulajdonságainak módosítása](extensibility/modify-control-properties.md)
 #### [Címke módosítása](extensibility/change-label.md)
-#### [A számsorozat hatáskörét bővíti](extensibility/extend-number-sequence-scope.md)
+#### [Számsorozat hatáskörének bővítése](extensibility/extend-number-sequence-scope.md)
 
-## [Folyamatos szállítás kezdőlap](dev-tools/continuous-delivery-home-page.md)
-### [Fejlesztési és folyamatos szállítási GYIK](dev-tools/continuous-delivery-faq.md)
-### [Tesztcsomagok kizárása az előállított buildből](dev-tools/exclude-test-packages.md)
-### [Harmadikfél-modellek és futásidejű csomagok kezelése forrásvezérléssel](dev-tools/manage-runtime-packages.md)
-### [Verziómodellek az automatizált buildben](dev-tools/version-models-build.md)
 
-## Teljesítmény kezdőlap
+
+
+## Teljesítmény
 ### [Nyomon követés a Trace parser használatával](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK és többfelhasználós tesztelés a Visual Studio Team Services segítségével](perf-test/perfsdk-tutorial.md)
 ### [Hibák diagnosztizálása és teljesítményproblémák elemzése a Nyomkövetés-elemző használatával](perf-test/trace-parser.md)
@@ -155,10 +149,8 @@
 ### [Tesztelés és ellenőrzés](perf-test/testing-validation.md)
 ### [Visual Studio-tesztprojektek](perf-test/testing-support.md)
 ### [Telepítés folyamatos build és tesztautomatizálással](perf-test/continuous-build-test-automation.md)
-## Dátumok
-### [Dátum érvényessége](dev-tools/date-effectivity.md)
-## Licenckezelés
-### [ISV-licenckezelés](dev-tools/isv-licensing.md)
+## [Dátum érvényessége](dev-tools/date-effectivity.md)
+## [ISV-licenckezelés](dev-tools/isv-licensing.md)
 
 # [Felhasználói felület fejlesztése](user-interface/user-interface-development-home-page.md)
 ## Oktatóanyagok
@@ -359,6 +351,104 @@
 #### [ValueDesign típus](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata típus](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
+# Adatintegrálás
+## [Integrációs minták](data-entities/integration-overview.md)
+
+## Adatintegrációs API-k
+### [Adatkezelés csomag API-ja](data-entities/data-management-api.md)
+### [Szolgáltatási végpontok](data-entities/services-home-page.md)
+#### [Szolgáltatáshitelesítési hibaelhárítás](data-entities/troubleshoot-service-authentication.md)
+### [OData](data-entities/odata.md)
+### [Egyéni szolgáltatások](data-entities/custom-services.md)
+### [Ismétlődő integrációk](data-entities/recurring-integrations.md)
+
+## Fejlesztés integrációhoz
+### [Adatintegráció az adatentitások használatával](data-entities/data-management-integration-data-entity.md)
+#### [Entitás fejlesztése az adatátvitelhez](data-entities/develop-entity-for-data-migration.md)
+#### [Összetett adatentitások fejlesztése](data-entities/develop-composite-data-entities.md)
+#### [Vállalatközi pénzügyi adatmegosztás konfigurálása](data-entities/tasks/configure-financial-cross-company-data-sharing.md)
+#### [Adatbevitel megkönnyítése érdekében rekordsablon létrehozása](data-entities/tasks/create-record-template-facilitate-data-entry.md)
+#### [Rekordsablon használata egy új rekord létrehozásához](data-entities/tasks/use-record-template-new-record.md)
+
+### [Adatok integrálása a Common Data Service környezettel](data-entities/data-integration-cds.md) 
+#### [Potenciális vevő készpénzfizetési esetre történő konfigurálása](../supply-chain/sales-marketing/prospect-to-cash.md)
+##### [A Finance and Operations-termékek szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping.md)
+##### [A Sales-számlák szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping.md)
+##### [A Sales-kapcsolatok szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping.md)
+##### [Értékesítésiajánlat-fejlécek és -sorok szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+##### [Értékesítésirendelés-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+##### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Értékesítésirendelés-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+
+### [Külső webszolgáltatásokat fogyasztó](data-entities/consume-external-web-service.md)
+
+
+# [Adatkezelés](data-entities/data-entities-data-packages.md)
+
+## [Adatentitások](data-entities/data-entities.md)
+
+### [Konfigurációs adatprojektek](data-entities/configuration-data-projects.md)
+### [Konfigurációs adatcsomagok](data-entities/configuration-data-packages.md)
+### [Konfigurációs adatok másolása vállalatok között](data-entities/copy-configuration.md)
+### [Konfigurációs adatsablonok](data-entities/configuration-data-templates.md)
+### [Entitás változásainak nyomon követése](data-entities/entity-change-track.md)
+
+## Normál adatentitások
+### [Adatentitás-jelentések](data-entities/data-entities-report.md)
+### [Adatentitások: Kötelezettségek és adók](data-entities/data-entities-accounts-payable-taxes.md)
+### [Adatentitások: Kinnlevőségek](data-entities/data-entities-accounts-receivable.md)
+### [Adatentitások: Bank](data-entities/data-entities-bank.md)
+### [Adatentitások: Nyitó egyenlegek](data-entities/data-entities-beginning-balances.md)
+### [Adatentitások: Költségvetés-tervezés](data-entities/data-entities-budget-plan.md)
+### [Adatentitások: Költségvetés-tervezés](data-entities/data-entities-budgeting.md)
+### [Adatentitások: Költségszámítás](data-entities/data-entities-costing.md)
+### [Adatentitások: Költségkezelés](data-entities/data-entities-expense-management.md)
+### [Adatentitások: Tárgyi eszközök](data-entities/data-entities-fixed-assets.md)
+### [Adatentitások: Főkönyv](data-entities/data-entities-general-ledger.md)
+### [Adatentitások: Globális címjegyzék](data-entities/data-entities-global-address-book.md)
+### [Adatentitások: Emberi erőforrások](data-entities/data-entities-human-resources.md)
+### [Adatentitások: Készletkezelés](data-entities/data-entities-inventory-management.md)
+### [Adatentitások: Alaptervezés](data-entities/data-entities-master-plan.md)
+### [Adatentitások: Beszerzés és forrás](data-entities/data-entities-procurement-sourcing.md)
+### [Adatentitások: Termékinformáció-kezelési paraméterek](data-entities/data-entities-product-information-management.md)
+### [Adatentitások: Gyártásvezérlés](data-entities/data-entities-production-control.md)
+### [Adatentitások: Projektkönyvelési folyamat engedélyezése](data-entities/data-entities-project-accounting.md)
+### [Adatentitások: Állami szektor](data-entities/data-entities-public-sector.md)
+### [Adatentitások: Kiskereskedelem](data-entities/data-entities-retail.md)
+### [Adatentitások: Értékesítési és marketingvezetés](data-entities/data-entities-sales-marketing.md)
+### [Adatentitások: Értékesítés és értékesítést megelőző marketing](data-entities/data-entities-sales-marketing-pre-sales.md)
+### [Adatentitások: Rendszeradminisztráció](data-entities/data-entities-system-administration.md)
+### [Adatentitások: Munkafolyamat](data-entities/data-entities-workflow.md)
+
+## [Adatimportálási és -exportálási feladatok](data-entities/data-import-export-job.md)
+
+### [Bevált eljárások a kuponok Általános napló entitással történő importáláshoz](data-entities/tips-tricks-import-general-journal-entity.md)
+
+## Fejlesztés adatentitásokhoz
+### [Új adatentitások létrehozása](data-entities/build-consuming-data-entities.md)
+### [Adatentitás-tulajdonságok](data-entities/behavioral-properties-data-entities.md)
+### [Számítási oszlopok és virtuális mezők létrehozása](data-entities/data-entity-computed-columns-virtual-fields.md)
+### [Vállalatközi viselkedés](data-entities/cross-company-behavior.md)
+### [Ország-/régiókódok kezelése](data-entities/countryregion-codes-configuration-keys.md)
+### [Öröklődési minták](data-entities/support-super-type-sub-type.md)
+### [Adatokentitás-varázsló szabályai](data-entities/data-entity-wizard-rules.md)
+### [Metaadat-tulajdonságok](data-entities/behavioral-properties-data-entities.md)
+### [Hitelesítések, alapértékek és nem feltérképezett mezők](data-entities/validations-defaults-unmapped-fields.md)
+### [Biztonság és adatentitások](data-entities/security-data-entities.md)
+
+## [Használja saját adatbázisát](analytics/export-entities-to-your-own-database.md)
+
+# [Folyamatos szállítás kezdőlap](dev-tools/continuous-delivery-home-page.md)
+## [Fejlesztési és folyamatos szállítási GYIK](dev-tools/continuous-delivery-faq.md)
+## [Tesztcsomagok kizárása az előállított buildből](dev-tools/exclude-test-packages.md)
+## [Harmadikfél-modellek és futásidejű csomagok kezelése forrásvezérléssel](dev-tools/manage-runtime-packages.md)
+## [Verziómodellek az automatizált buildben](dev-tools/version-models-build.md)
+
+
 # Megoldások kiadása a Lifecycle Services használatával
 ## [Fejlesztés és kiadás](lcs-solutions/lcs-solutions-app-source.md)
 ## [Állapot és közzététel](lcs-solutions/marketing-content-lcs-solutions.md)
@@ -377,9 +467,7 @@
 ### [Eltérő honosítási modellek](lcs-solutions/separate-localization-models.md)
 ### [Szabályozó figyelmeztetés elküldése](lcs-solutions/submit-localization-alerts.md)
 
-
-
-# Pénzügyi fejlesztés
+# [Pénzügyi fejlesztés](financial/financial-dev-home-page.md)
 ## [Dimenziók](financial/dimensions.md)
 ## [Dimenziók hozzáadása egy Excel-sablonhoz](financial/dimensions-overview.md)
 ## [Dimenzióbelépés vezérlő-párbeszédpanelének támogatása](financial/dimension-entry-control-dialog-support.md)
@@ -416,6 +504,7 @@
 ### [Helyszíni projekt létrehozása](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Helyszíni környezetek beállítása és telepítése](deployment/setup-deploy-on-premises-environments.md)
 ### [Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez](deployment/develop-deploy-custom-models-on-premises.md)
+### [Frissítések alkalmazása helyszíni telepítéshez](deployment/apply-updates-on-premises.md)
 
 ## Egyéni kód telepítése
 ### [Telepíthető csomag létrehozása](deployment/create-apply-deployable-package.md)
@@ -445,7 +534,7 @@
 #### [A frissített értékesítési kocka átvitele az entitástárba](migration-upgrade/migrate-upgraded-cube-entity-store.md)
 #### [Költségvetés-tervezés frissítése](migration-upgrade/upgrade-budget-planning.md)
 
-## Kód áttelepítése és frissítése
+## [Kód áttelepítése és frissítése](migration-upgrade/code-migration-home-page.md)
 ### [Kódmigráció előkészítése](migration-upgrade/prepare-migration.md)
 ### [A Visual Studio Team Services hozzárendelések konfigurálása kódmigráció alatt](migration-upgrade/configure-vso-solution.md)
 ### [Osztott modellek](dev-tools/model-split.md)
@@ -476,6 +565,7 @@
 ## [Licenckódok és konfigurációskulcs-jelentések](sysadmin/license-codes-configuration-keys-report.md)
 ## [Vállalatközi adatmegosztás](sysadmin/cross-company-data-sharing.md)
 ## [Karbantartási mód](sysadmin/maintenance-mode.md)
+## [Előre konfigurált rendszerfiókok](sysadmin/pre-configured-system-accounts.md)
 ## [Szerepkör alapú biztonság](sysadmin/role-based-security.md)
 ### [Biztonsági architektúra](sysadmin/security-architecture.md)
 ### [Biztonsági jelentések](sysadmin/security-reports.md)
@@ -496,10 +586,11 @@
 ### [Újdonságok](lifecycle-services/whats-new-lcs.md)
 ### [Ismert problémák](lifecycle-services/known-issues.md)
 ## [Dynamics Lifecycle Services használati útmutató](lifecycle-services/lcs-user-guide.md)
+## [Előfizetésbecslő](lifecycle-services/subscription-estimator.md)
 ## [A biztonsági beállítások megadása](lifecycle-services/configure-lcs-security.md)
 ## [Megoldáskereső](lifecycle-services/issue-search-lcs.md)
 ## [Konfigurációkezelő](lifecycle-services/configuration-manager-lcs.md)
-### [Konfigurációkezelő beállítása ](lifecycle-services/set-up-configuration-manager-lcs.md)
+### [Konfigurációkezelő beállítása](lifecycle-services/set-up-configuration-manager-lcs.md)
 ## [Kódfrissítési szolgáltatás konfigurálása](lifecycle-services/configure-execute-code-upgrade.md)
 ## [Módszertan létrehozása ](lifecycle-services/create-methodology.md)
 ## [Üzletifolyamat-modellező](lifecycle-services/bpm-overview.md)
@@ -509,11 +600,12 @@
 ## [Tevékenység-diagramok használata](lifecycle-services/using-activity-diagrams.md)
 ## [BPM-könyvtár szinkronizálása a Visual Studio Team Services (VSTS) megoldással](lifecycle-services/synchronize-bpm-vsts.md)
 ## [Az Üzletifolyamat-modellező folyamatábrái](lifecycle-services/flowcharts-business-process-modeler.md)
-## [Egyéni üzleti folyamatok kezelése](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
+## [Egyéni üzleti folyamatok feltöltése](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Megfigyelés és diagnosztika ](lifecycle-services/monitoring-diagnostics.md)
+## [Felhasználói bejelentkezések nyomon követése](lifecycle-services/user-logins.md)
 ## [Eszköztár](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 – fordítási szolgáltatás – áttekintés](lifecycle-services/translation-service-overview.md)
-### [Microsoft Dynamics 365 fordítási szolgáltatás – használati útmutató](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 fordítási szolgáltatás – használati útmutató  ](lifecycle-services/use-translation-service.md)
 
 ## A Dynamics AX 2012 Lifecycle Services funkciói
 ### Telepítés
@@ -594,9 +686,10 @@
 ## [Adatbázis másolása az SQL Server szolgáltatásból egy gyártási Azure SQL Database környezetbe](database/copy-database-from-sql-server-to-azure-sql.md)
 ## [Adatbázis visszaállítása egy nem termelési közegben](database/request-point-in-time-restore.md)
 ## [Adatbázis másolatának exportálása a későbbi visszaállításhoz](database/copy-operations-database.md)
+## [Védőfal adatbázis-frissítés kérése](database/database-refresh.md)
 
 # Támogatás
-## [Támogatás igénylése a Dynamics 365 for Finance and Operations, Enterprise kiadáshoz, illetve a Lifecycle Services szolgáltatáshoz](lifecycle-services/lcs-support.md)
+## [Támogatás igénylése a Dynamics 365 for Finance and Operations, Enterprise edition termékhez, illetve a Lifecycle Services szolgáltatáshoz](lifecycle-services/lcs-support.md)
 ## [Premier támogatási jegy naplózása](lifecycle-services/premier-support.md)
 ## [Igénylés benyújtása a Dynamics Service mérnöki csapatához](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 ## [Műszaki támogatás beállítása a Dynamics 365 for Finance and Operations, Enterprise kiadáshoz](lifecycle-services/support-experience.md) 
