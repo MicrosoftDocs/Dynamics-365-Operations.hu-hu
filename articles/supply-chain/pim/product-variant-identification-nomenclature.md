@@ -1,9 +1,9 @@
 ---
 title: "Termékváltozat-elnevezési rendszer számai és nevei"
-description: "Ez a témakör leírja, hogyan állíthat be termékszám-elnevezési rendszert, amelyre lecserélheti a rögzített [Alaptermék száma - Konfiguráció - Méret - Szín - Stílus] formátumot. Az új elnevezési rendszer célzott formátumú, amely magában foglalja az alaptermék számát, az aktív termékdimenziókat és az Ön által választott szöveghatárolókat. A terméknevekhez is létrehozhat elnevezési rendszert. Végül pedig megszorításon alapuló termékkonfiguráló által létrehozott konfigurációk azonosítására szolgáló elnevezési rendszert is létrehozhat. Ezek az elnevezési rendszerek tetszés szerinti attribútumokat tartalmazhatnak."
+description: "Ez a témakör leírja, hogyan állíthat be termékszám-elnevezési rendszert, amelyre lecserélheti a rögzített [Alaptermék száma - Konfiguráció - Méret - Szín - Stílus] formátumot."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ Egy póló (TS1234) három méretben (S, M, L), négy színben (piros, zöld, k�
 
 Ebben az esetben a termékváltozat száma a piros, kicsi póló esetében: TS1234-Piros-Kicsi-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Megszorításon alapuló konfigurációk elnevezési rendszere
+## <a name="nomenclature-of-constraint-based-configurations"></a>Megszorításon alapuló konfigurációk elnevezési rendszere
 A megszorításon alapuló konfigurációk esetében dedikált elnevezési rendszer hozható létre a konfiguráció termékdimenzió számára. A következő szegmenseket a **Termékek elnevezési rendszere** lapon választhatja ki:
 
 -   Számsorozat értéke
@@ -92,7 +92,7 @@ A termékkonfigurációs modell két attribútummal rendelkező gyökérszintű 
 
 Ebben az esetben a 78-as hosszúságú faanyag konfigurációs azonosítója a FaAAA78 lesz.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Dimenzión alapuló konfigurációk elnevezési rendszere
+## <a name="nomenclature-of-dimension-based-configurations"></a>Dimenzión alapuló konfigurációk elnevezési rendszere
 A dimenzión alapuló konfigurációk esetében dedikált elnevezési rendszer hozható létre a konfiguráció termékdimenzió számára. A következő szegmenseket a **Termékek elnevezési rendszere** lapon választhatja ki:
 
 -   Számsorozat értéke

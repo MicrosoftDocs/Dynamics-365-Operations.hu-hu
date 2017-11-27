@@ -1,9 +1,9 @@
 ---
 title: "Munkaidő és jelenlét rögzítése"
-description: "A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a cikk regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához."
+description: "A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a témakör regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 53351
 ms.assetid: 885b0cdf-53d7-4cb4-92fe-da1b9e32b39f
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 83603b1f8d20c18b7f10cd7224d491b558ee1b8b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a cikk regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához. 
+A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a témakör regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához. 
 
 <a name="registrations"></a>Regisztrációk
 -------------
@@ -66,7 +66,7 @@ A beállítást követően a dolgozók részére többféle regisztráció is en
 -   Olyan, a dolgozó által esetlegesen végzett közvetett tevékenységek, amelyek nem termelési tevékenységek. Ilyen tevékenység lehet például a megbeszélés vagy a munkaterület megtisztítására.
 -   Túlóra, amely a tervezetten felüli órák, rugalmas munkaidő vagy túlóra formájában regisztrálható.
 
-## <a name="adding-clockout-registrations"></a>Távozáskori blokkolások hozzáadása
+## <a name="adding-clock-out-registrations"></a>Távozáskori blokkolások hozzáadása
 Amennyiben a dolgozó távozáskor elfelejt blokkolni a munkanap végén, a hiányzó regisztráció egy kötegelt feladat futtatásával adható hozzá. A rendszer a dolgozó hozzárendelt profilja alapján összehasonlítása a érkezéskori és távozáskori blokkolás időt, és automatikusan beilleszti a hiányzó távozáskori blokkolási regisztrációt, a profil záró időpontjának megfelelően. Az érkezéskori, illetve távozáskori regisztrációk megléte egyaránt elengedhetetlen fontosságú az időjegyzékek későbbi, a bérszámfejtéshez történő továbbítást megelőző kiszámításához és jóváhagyásához.
 
 ## <a name="calculating-registrations"></a>A regisztrációk kiszámítása

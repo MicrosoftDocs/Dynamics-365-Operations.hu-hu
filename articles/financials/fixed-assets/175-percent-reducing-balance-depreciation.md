@@ -1,9 +1,9 @@
 ---
-title: "175 százalék degresszív értékcsökkenés"
-description: "Ez a cikk a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést."
+title: "175 százalékos degresszív értékcsökkenés"
+description: "Ez a témakör a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést."
 author: saraschi2
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
@@ -19,19 +19,19 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 318e111f784157666c2853bcd6d5b3af2c9ffdc5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a61e743898e3e65c0012a7aeb9837e55e9143d01
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="175-percent-reducing-balance-depreciation"></a>175 százalék degresszív értékcsökkenés
+# <a name="175-percent-reducing-balance-depreciation"></a>175 százalékos degresszív értékcsökkenés
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
+Ez a témakör a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 
 Amikor beállít egy tárgyieszköz-értékcsökkenési profilt és kijelöli a **175% degresszív** értéket a **Mód** mezőben az **Értékcsökkenési profilok** lapon, akkor a tárgyi eszközök, amelyek az értékcsökkenési profilokhoz vannak rendelve értékcsökkenése ugyanazzal százalékos értékkel lesz egyenlő, ami az egyes értékcsökkenési időszakoknál szerepel. 
 

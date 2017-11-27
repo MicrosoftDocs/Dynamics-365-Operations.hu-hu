@@ -3,7 +3,7 @@ title: "Számlaegyeztetés és vállalatközi beszerzési rendelések"
 description: "A vállalatközi kereskedelmi tranzakcióban érintett vásárló jogi személyt be kell állítani a kötelezettségek számlaegyeztetésének használatához. Ilyenkor a feladási követelményeknek a vállalatközi kereskedelemre és a kötelezettségek számlaegyeztetésre egyaránt teljesülnie kell a vállalatközi szállítói számlák feladása előtt."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: affdffd5e73958788ed2a5a4959eea71024140ab
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -52,7 +52,7 @@ A vállalatközti szállító számláján és a vállalatközti vevő számláj
 2.  Az értékesítő gyárban jegyezze be, hogy a cikkek átvételre kerültek és adjon fel egy szállítólevelet. Az ICSO888 rendelés Leszállított állapotúvá válik. Az ICPO222 rendelés Beérkezett állapotúvá válik.
 3.  Az értékesítő gyárban hajtson végre egy számlafrissítést az ICSO888 megrendeléshez. Az egységár 0,45, és 100 cikken történik a frissítés.
 4.  A vásárló gyárban hozzon létre egy számlát az ICPO222 megrendeléshez. Véletlenül 45,00-ről 54,00-re módosítja a nettó összeget. Megjelenik egy ikon, hogy jelezze, hogy az ár meghaladja a megengedhető 2 százalékos ártűréshatárt.
-5.  A számlaegyeztetés részletei lapon jelölje ki feladás engedélyezése egyeztetési eltérésekkel opciót. A szállítói számla lapon kattintson az OK gombra. Ha a szállítói számla nem egy vállalatközi szállító számlája lenne, akkor a feladás sikeres lenne. Azonban mivel vállalatközi szállítói számlával dolgozik a feladás sikertelen. A vállalatközi kereskedelemhez a vállalatközi értékesítési rendelés számlaösszegeinek egyenlőnek kell lennie a megfelelő vállalatközi beszerzési rendelés számlaösszegeivel. A probléma megoldásához a számla nettó árát vissza kell állítania a nettó ár alapértelmezett, 45,00 értékére.
+5.  A számlaegyeztetés részletei lapon jelölje ki feladás engedélyezése egyeztetési eltérésekkel opciót. A szállítói számla lapon kattintson az OK gombra. A szállítói számla lapon kattintson az OK gombra. Ha a szállítói számla nem egy vállalatközi szállító számlája lenne, akkor a feladás sikeres lenne. Azonban mivel vállalatközi szállítói számlával dolgozik a feladás sikertelen. A vállalatközi kereskedelemhez a vállalatközi értékesítési rendelés számlaösszegeinek egyenlőnek kell lennie a megfelelő vállalatközi beszerzési rendelés számlaösszegeivel. A probléma megoldásához a számla nettó árát vissza kell állítania a nettó ár alapértelmezett, 45,00 értékére.
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a> Példa: Mennyiségegyeztetés vállalatközi kereskedelemben
 A vállalatközi beszerzési rendelésen és a vállalatközi értékesítési rendelésen szereplő mennyiségeknek egyenlőnek kell lenniük. Ez a követelmény minden számlaegyeztetési jóváhagyást felülbírál. Ez a példa a következő további vállalatközi kereskedelmi beállításokat használja:

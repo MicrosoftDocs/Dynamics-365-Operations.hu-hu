@@ -3,14 +3,14 @@ title: "Finance and Operations alkalmazás kliens GYIK"
 description: "Ez a cikk válaszokat ad a Microsoft Dynamics 365 for Finance and Operations-klienssel kapcsolatos gyakori kérdésekre."
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 12334
 ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d4fa4629d203aa888fe6400126a872d2eee000
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 658d5a1a031f2292dbd445fa7fb345be01c61947
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -43,7 +43,7 @@ A böngésző biztonsági beállításai megakadályozhatják a szimbólumok meg
 ## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Hiányolom a menüszalagot a Dynamics AX 2012 rendszerből. Nyitva tarthatom folyamatosan a Műveleti ablaktáblát?
 Terveink szerint ez a funkció hamarosan elérhetővé válik. Ezt követően a felhasználók dönthetnek úgy, hogy a lapokat a Műveleti ablaktáblákon folyamatosan nyitva tartják. Ellenkező esetben a lapok mindig össze fognak csuklani, ha azokat nem használják, így biztosítva nagyobb felületet a lap számára.
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Miért jelennek meg időnként különböző ikonok, ha az egér jobb gombjával kattintok?
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-right-click"></a>Miért jelennek meg időnként különböző ikonok, ha az egér jobb gombjával kattintok?
 Ha a jobb gombbal kattint egy szerkeszthető mezőre (vagy kijelölt szövegre), a böngésző helyi menüjének ikonjai jelennek meg. Ezen menü segítségével érheti el a **Kivágás**, a **Másolás** és a **Beillesztés** parancsokat. Ezen parancsokat nem tudjuk beágyazni a Finance and Operations helyi menüjébe, mert biztonsági okokból a böngészők nem teszik lehetővé számunkra, hogy a rendszer vágólapjához a programban hozzáférjünk.
 
 Ha a jobb gombbal kattint egy mező címkéjére, vagy egy csak olvasható vezérlőelem értékére, látni fogja a Finance and Operations helyi menüjét.

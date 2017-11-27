@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbe32e248727912073631f1dfb8ee0a49cbf0a5e
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -36,9 +36,8 @@ A Kinnlevőségek, valamint a Követelések és beszedések konfigurálása a ve
 Lehetőség van vevőcsoportok, vevők, feladási profilok, különböző fizetési lehetőségek, kamatlevelek, fizetési felszólítások, jutalékok, vevőkre vonatkozó paraméterek, költségek, szállítások és célok, váltók és a fiók kötelezvény és Hitel és gyűjtemény információk más típusának beállítására.
 Az alábbi táblázat felsorolja azokat az oldalakat, amelyek a Fiók kötelezvény és Hitel és gyűjtemények konfigurációját és karbantartását szolgálja. A táblázat bejegyzései feladatok szerint, azon belül pedig betűrend szerint vannak rendezve.
 
-| ![Megjegyzés](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Megjegyzés")**Megjegyzés**          |
-|--------------------------------------------------------------------------------------------------|
-| Az alábbi táblázatban szereplő oldalak közül egyeseknél be kell állítani bizonyos adatokat és paramétereket, hogy el lehessen érni őket. |
+> [!NOTE]
+> Nem lehet elérni az alábbi táblázat néhány oldalát, kivéve, ha más lapokon beviszik az adatokat vagy a paraméterbeállításokat.
 
 | Feladat                                                 | Lapnév                            | Használat                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

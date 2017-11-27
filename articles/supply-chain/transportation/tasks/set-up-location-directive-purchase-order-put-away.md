@@ -3,7 +3,7 @@ title: "Helyutasítás beállítása beszerzési rendelés eltárolásához"
 description: "Ez az eljárás bemutatja, hogyan állíthat be egyszerű helyutasítást."
 author: BibiSp
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
+ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
+ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Helyutasítás beállítása beszerzési rendelés eltárolásához
@@ -61,7 +61,7 @@ Ez az eljárás bemutatja, hogyan állíthat be egyszerű helyutasítást. A pé
 4. Írjon be egy értéket a Mértékegység mezőbe.
     * A Forrásmennyiség egysége és a Célmennyiség egysége van kifejezve. Ha ezt a mezőt üresen hagyja, a program a cikk készletegységét fogja használni.  
 5. Egy lehetőség kiválasztása a Helymennyiség mezőben
-    * Nincs, vagy Azonosítótábla mennyisége: az egyes azonosítótáblákon regisztrált mennyiség. Egységekre bontott mennyiség: A teljes mennyiség, amely regisztrálva van. Fennmaradó mennyiség: A mennyiség, amit a beszerzési rendelési sorban regisztrálni kell. Várt mennyiség: A beszerzési rendelési sorban megadott teljes mennyiség.  
+    * Nincs vagy azonosítótábla mennyisége: az egyes azonosítótáblákon regisztrált mennyiség. Egységekre bontott mennyiség: A teljes mennyiség, amely regisztrálva van. Fennmaradó mennyiség: A mennyiség, amit a beszerzési rendelési sorban regisztrálni kell. Várt mennyiség: A beszerzési rendelési sorban megadott teljes mennyiség.  
 6. Jelölje be a Korlátozások egység szerint jelölőnégyzetet, vagy törölje a jelölést.
     * Ha ezt a beállítást választja, és az egységet megadja a Korlátozás egység szerint oldalon, csak a mértékegységgel rendelkező cikkeket teheti a helyre. Például ha a mértékegység PL (raklapok), csak a raklap cikkeit sorolhatja egy adott helyre.  
 7. Az Osztás engedélyezése jelölőnégyzet bejelölése vagy a jelölés törlése.

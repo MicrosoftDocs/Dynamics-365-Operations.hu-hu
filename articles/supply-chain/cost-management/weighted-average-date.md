@@ -1,9 +1,9 @@
 ---
 title: "Dátum szerinti súlyozott átlag"
-description: 
+description: "A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 95cc937a97596e4f6ce28636fb30b86e9b328220
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,8 +33,9 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
+A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul. A súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák. 
 
-A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul. A súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák. Ha a dátum szerinti súlyozott átlag elv alapján készletzárást futtat, az egyes napok minden bevételezését egy virtuális kiadással egyenlíti ki. Ez a virtuális kiadás tárolja a teljes bevételezett mennyiséget az adott napra. A virtuális kiadáshoz egy hasonló virtuális bevételezés tartozik, amelyből a kiadások egyenlíthetők ki. Ily módon minden kiadás ugyanazzal a költséggel történik. A virtuális kiadást és bevételezést virtuális átmozgatásnak lehet tekinteni, ezt a *súlyozott átlagú készletzárás átmozgatásának* hívják. 
+Ha a dátum szerinti súlyozott átlag elv alapján készletzárást futtat, az egyes napok minden bevételezését egy virtuális kiadással egyenlíti ki. Ez a virtuális kiadás tárolja a teljes bevételezett mennyiséget az adott napra. A virtuális kiadáshoz egy hasonló virtuális bevételezés tartozik, amelyből a kiadások egyenlíthetők ki. Ily módon minden kiadás ugyanazzal a költséggel történik. A virtuális kiadást és bevételezést virtuális átmozgatásnak lehet tekinteni, ezt a *súlyozott átlagú készletzárás átmozgatásának* hívják. 
 
 Ha az adott napon vagy azelőtt csak egy bevételezés történt akkor nem kell értékelnie az átlagot. Amiért az összes kiadást kiegyenlítette erről a bevételezésből, a virtuális transzfer nem jön létre. Hasonlóképpen, ha az adott napig csak egy kiadás történik, akkor nincsenek olyan bevételezések, amelyekből átlagot lehetne számítani, tehát nem jön létre a virtuális transzfer. A súlyozott átlag dátum alkalmazása esetén egyes készlettranzakciók megjelölésével meghatározhatja, hogy egy adott bevételezés ne a súlyozott átlag elv szerint, hanem egy meghatározott kiadással legyen kiegyenlítve. Ebben az esetben nem használható a súlyozott átlagos dátum szabály. A dátum szerinti súlyozott átlagon alapuló készletmodell alkalmazása esetén tanácsos havonta készletzárást végezni. 
 

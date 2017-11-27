@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 93a40f36e38ef5ea393cf429ad9244b56504bbfc
+ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
+ms.openlocfilehash: f610fe4b7f265c4fc38db89938d5c208b4f7661a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a>Jelentések készítése Microsoft Office formátumban beágyazott képekkel az elektronikus jelentéskészítéshez (ER) (1. rész) 
@@ -62,7 +62,7 @@ Ebben a példában a Litware, Inc. mintavállalatra vonatkozóan létrehozott ER
 1. Zárja be a lapot.
 2. Zárja be a lapot.
 3. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
-4. A fastruktúrában válassza ki ezt: „Model for cheques”.
+4. A fastruktúrában válassza ki ezt: „Model for checks”.
 5. Kattintson a Tervező pontra.
 6. Kattintson a Modell hozzárendelése adatforráshoz gombra.
 7. Kattintson a Tervező pontra.

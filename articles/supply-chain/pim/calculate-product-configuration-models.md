@@ -1,9 +1,9 @@
 ---
 title: "Kalkulációk a termékkonfigurációs modellekhez - GYIK"
-description: "Ez a cikk leírja a termékkonfigurációs modellek számításait, és elmagyarázza a számítások megszorításokkal történő használatát."
+description: "Ez a témakör leírja a termékkonfigurációs modellek számításait, és elmagyarázza a számítások megszorításokkal történő használatát."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fea4e139d32c780769bafe08d603b828d366550c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 0763e5a02e7a14b6ef369103aa25e435559abe19
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk leírja a termékkonfigurációs modellek számításait, és elmagyarázza a számítások megszorításokkal történő használatát.
+Ez a témakör leírja a termékkonfigurációs modellek számításait, és elmagyarázza a számítások megszorításokkal történő használatát.
 
 A számítások aritmetikai vagy logikai műveletekhez is használhatóak. A termékkonfigurációs modellek kifejezésmegszorításait egészítik ki. A számításokat a **Megszorításon alapuló termékkonfigurációs modell adatai** lapon definiálhatja, majd a kifejezésszerkesztőben építhet hozzájuk kifejezéseket. További információkért lásd: Számítások létrehozása.
 
@@ -75,7 +75,7 @@ Számítások akkor fordulnak elő, ha minden beviteli attribútumhoz meg van ad
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Felülírhatja az értéket, amely a célattribútumhoz van kiszámítva?
 Felülírhatja az értéket, amely a célattribútumhoz van számítva, kivéve, ha a célattribútum, rejtettre vagy csak olvashatóra van beállítva.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Hogyan állítható be a célattribútum rejtettként vagy írásvédettként?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Hogyan állítható be a célattribútum rejtettként vagy írásvédettként?
 Rejtett vagy csak olvasható attribútum beállításához kövesse az alábbi lépéseket.
 
 1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Termékkonfigurációs modellek** elemre.

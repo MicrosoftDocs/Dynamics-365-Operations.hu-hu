@@ -1,9 +1,9 @@
 ---
-title: "A gyártási folyamat áttekintése"
-description: "Ez a cikk a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig."
+title: "Termelési folyamat áttekintése"
+description: "Ez a témakör a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,19 +20,19 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e50e64057d19d0e1fbf5645c2abc31fbd19ea43a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="production-process-overview"></a>A gyártási folyamat áttekintése
+# <a name="production-process-overview"></a>Termelési folyamat áttekintése
 
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig. 
+Ez a témakör a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig. 
 
 A termékek legyártása, más néven a termelési életciklus specifikus lépésekben történik, amelyeket a termék előállításához végre kell hajtani. Az életciklus kezdete a termelési rendelés, kötegrendelés vagy a kanban. A vége egy legyártott, kész cikk, amelyik átadható a vevőnek vagy egy másik gyártási fázisnak. Az életciklus minden lépése másféle információkat igényel a feladat végrehajtásához. Amikor az egyes lépések végrehajtása megtörténik, a termelési rendelés vagy kanban műveletben változás látható a gyártási állapotnál. Különböző termékekhez különböző gyártási folyamatok szükségesek.  
 

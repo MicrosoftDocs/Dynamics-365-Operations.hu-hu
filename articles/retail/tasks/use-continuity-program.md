@@ -3,7 +3,7 @@ title: "Folytonos program használata"
 description: "Ez az eljárás a folytonos program révén történő értékesítés és a kapcsolódó vevői rendelések feldolgozását mutatja be."
 author: scott-tucker
 manager: AnnBe
-ms.date: 10/26/2016
+ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d3b5690bfbd10b77e784d35d0c4f4518de58333
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: e94d9ded5cefc731e28af6898004419a00e0c189
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 # <a name="use-a-continuity-program"></a>Folytonos program használata
@@ -58,7 +58,7 @@ Ez az eljárás a folytonos program révén történő értékesítés és a kap
 19. A Folytonos cikk mezőbe írja be, hogy „88000”, és nyomja le a Tab billentyűt.
     * A „88000” egy folytonos cikk az USRT-bemutatóadatok között.  
 20. Az Értékesítési rendelés mezőben adjon meg vagy válasszon ki egy értéket.
-    * Adja meg az eljárás során korábban feljegyzett értékesítési rendelés számát. Ez minimálisra csökkenti az eljáráshoz szükséges feldolgozási időt. A Értékesítési rendelés mező kitöltése nem kötelező - bármely programhoz feldolgozható az összes megrendelés.  
+    * Adja meg az eljárás során korábban feljegyzett értékesítési rendelés számát. Ez minimálisra csökkenti az eljáráshoz szükséges feldolgozási időt. Az Értékesítési rendelés mező kitöltése nem kötelező - bármely programhoz feldolgozható az összes megrendelés.  
 21. Kattintson az OK gombra.
 
 

@@ -3,24 +3,24 @@ title: "Tárgyi eszköz beszerzés előtti műveleteinek feladása"
 description: "Ez a témakör bemutatja, hogyan állíthatja be és könyvelheti a tárgyi eszközök beszerzése előtti műveleteket."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 264704
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3f5b5f442daa64d5ae3b414b88efe1fd6f546523
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 4cb29bf004faf95b25850c1a9700c8555da046ba
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ Ez a témakör bemutatja, hogyan állíthatja be és könyvelheti a tárgyi eszk
 
 **Megjegyzés:** a tárgyi eszközök beszerzése előtti műveletek könyvelése funkció csak azon jogi személyeknél érhető el, amelyek elsődleges címe Magyarországon vagy Csehországban található. Tárgyi eszköz beszerzés előtti műveletei nem használhatók fel értékcsökkenésben, és ezek nem befolyásolják sem a tárgyi eszköz beszerzési költségeit, sem pedig a tárgyi eszköz nettó könyv szerinti értékét. Beszerzés előtti művelet feladásakor a tárgyi eszköz állapota **Beszerzett** értékre módosul. A **Beszerzett** állapotú tárgyi eszközök nem használhatók fel értékcsökkenésben. Beszerzés feladásakor ellenben a tárgyi eszköz állapota **Nyitva** értékre módosul, és így felhasználható értékcsökkenésben.
 
-## <a name="set-up-preacquisitions"></a>Beszerzési előzmények beállítása
+## <a name="set-up-pre-acquisitions"></a>Beszerzési előzmények beállítása
 Beszerzési előzmények feladása előtt meg kell adnia a következő beállításokat:
 
 -   A **Tárgyi eszközök paraméterei** oldalon állítsa a **Beszerzés előtti műveletek engedélyezése** elemet **Igen** értékre.

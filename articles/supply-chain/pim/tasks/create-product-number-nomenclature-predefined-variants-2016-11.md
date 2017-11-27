@@ -3,7 +3,7 @@ title: "Termékszám létrehozása előre definiált termékváltozatokhoz"
 description: "Ez az útmutató bemutatja, hogyan állítható be termékszámozási rendszer előre definiált termékváltozatok számára, és hogyan rendelhető hozzá a megfelelő termékdimenzió-csoporthoz."
 author: BibiSp
 manager: AnnBe
-ms.date: 09/26/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6294e4608b31c37aa713e3a7a2028b409b5a8366
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: c423aab341ddad9383c4c95b9dbb63c9875c99ef
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="create-a-product-number-for-predefined-product-variants"></a>Termékszám létrehozása előre definiált termékváltozatokhoz
@@ -33,7 +33,7 @@ Ez az útmutató bemutatja, hogyan állítható be termékszámozási rendszer e
 1. Kattintson a Termékváltozat modelldefinícióra.
 2. Kattintson a Termékek elnevezési rendszere elemre
 3. Kattintson az Új elemre.
-4. A Név mezőben adja meg az elnevezési rendszer nevét, amely segít azonosítani a cél termékdimenzió-csoportot, például ColorSize.
+4. A Név mezőben adja meg az elnevezési rendszer nevét, amely segít azonosítani a cél termékdimenzió-csoportot, például: ColorSize.
 5. A Leírás mezőben adjon meg egy értéket.
 6. Kattintson a Hozzáadás gombra.
 7. Kattintson az Alaptermék száma elemre.

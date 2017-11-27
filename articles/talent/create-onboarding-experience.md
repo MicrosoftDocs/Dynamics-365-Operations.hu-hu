@@ -3,7 +3,7 @@ title: "Hozzon létre egy vonzó bevezetési tapasztalatot"
 description: "Ha a bevezetés jól történik, az új alkalmazottak úgy fogják érezni, valóban az új szervezethez tartoznak."
 author: tbisaacs
 manager: 
-ms.date: 05/04/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Talent
@@ -14,10 +14,10 @@ ms.search.region: Global
 ms.author: tbisaacs
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0baea020763465fcfd1b3718ff2e60de6b335143
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: c62ad20a1e3aa3bae71b07b6f5aecb5908a90a65
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -67,7 +67,7 @@ A kapcsolatokok jelentik a kulcsot ahhoz, hogy az új felvetteket gyorsan munká
 
 ## <a name="provide-training"></a>Képzés biztosítása
 
-Adja meg az új felvettnek a sikerhez szükséges önbizalmat és eszközöket. Ez a felelősségi körök és a teljesítményükre vonatkozó elvárások pontos meghatározásával kezdődik. Ezt követően hozzon létre képzési tervet, amely az elvárások teljesítéséhez szükséges szakértelemre összpontosít. Ne csak a megfelelésalapú oktatásra koncentráljon.
+Adja meg az új felvettnek a sikerhez szükséges önbizalmat és eszközöket. Ez a felelősségi körök és a teljesítésükre vonatkozó elvárások pontos meghatározásával kezdődik. Ezt követően hozzon létre képzési tervet, amely az elvárások teljesítéséhez szükséges szakértelemre összpontosít. Ne csak a megfelelésalapú oktatásra koncentráljon.
 
 ## <a name="set-clear-milestones"></a>Egyértelmű mérföldkövek kijelölése
 

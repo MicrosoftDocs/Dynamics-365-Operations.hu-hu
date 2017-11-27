@@ -3,14 +3,14 @@ title: "A Költségvetés-tervezés integrálása más modulokkal"
 description: "Költségvetési tervek számos különböző forrásból hozhatók létre. Az időszaki folyamat alapvető összetevői ugyanazok, mint a többi forrás esetében."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 311a5cbd3768d8ecc7e7430717369193e60c3e57
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -57,7 +57,7 @@ Minden létrehozási folyamat kapcsán az alábbi műveletek állnak rendelkezé
 
 ### <a name="source"></a>Forrás
 
-A **Forrás** lap minden folyamat esetében lehetővé teszi az adatok, a **Szűrő** gomb segítségével történő szűrését. Az alapértelmezés szerint a rendszer konkrét mezőket társít minden szűrőhöz. Ha például a **Költségvetési terv létrehozása főkönyv alapján** folyamatot vesszük, a **Főkönyvi számla** és a **Fő számla** kategóriák érhetők el, és jelennek meg a létrehozás lapon. Az Ön által a szűrőhöz hozzáadott mezők is hozzáadásra kerülnek az oldalhoz , csakúgy, mint az Ön által hozzáadott feltételek.
+A **Forrás** lap minden folyamat esetében lehetővé teszi az adatok, a **Szűrő** gomb segítségével történő szűrését. Az alapértelmezés szerint a rendszer konkrét mezőket társít minden szűrőhöz. Ha például a **Költségvetési terv létrehozása főkönyv alapján** folyamatot vesszük, a **Főkönyvi számla** és a **Fő számla** kategóriák érhetők el, és jelennek meg a létrehozás lapon. Az Ön által a szűrőhöz hozzáadott mezők is hozzáadásra kerülnek az oldalhoz, csakúgy, mint az Ön által hozzáadott feltételek.
 
 ### <a name="target"></a>Cél
 

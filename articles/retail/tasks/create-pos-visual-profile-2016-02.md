@@ -17,10 +17,10 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2b70bc95f56839da76612df2be3b35362925b977
+ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
+ms.openlocfilehash: 151250ed0ad68a0e5827a74918ef6323a4c4279e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="create-a-pos-visual-profile"></a>Vizuális POS-profil létrehozása 
@@ -38,7 +38,7 @@ Ez az eljárás végigveszi egy új pénztár (POS) vizuális profilja létrehoz
 7. A Téma mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
 8. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 9. A Kiemelés színe mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-10. Keresse meg és jelölje ki a kívánt rekordot a listán.
+10. A kívánt rekord megkeresése és kijelölése a listán
 11. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 12. Bontsa ki a Bejelentkezés háttere részt.
 13. A Fekvő kép azonosítója mezőben válasszon ki vagy írjon be egy képazonosítót.

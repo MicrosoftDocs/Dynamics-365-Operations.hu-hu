@@ -3,7 +3,7 @@ title: "Termékekkel kapcsolatos GYIK"
 description: "Ez a témakör ismerteti, hogyan kell kezelni a termékek, termékdimenzió értékek és termékattribútumok fordításait."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b2976d4fc62a71039da0bc8be5b50be92a95959c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -47,7 +47,7 @@ A termékkel kapcsolatos információkat bármely – a **Szöveg fordítása** 
 ## <a name="where-can-i-view-the-translated-information"></a>Hol tekinthetem meg a lefordított információkat?
 A termékkel kapcsolatos információk fordításait bármilyen külső forrásbizonylaton, például egy számlán megtekintheti, ami olyan nyelvet használ, amelyre rendelkezésre állnak fordítások.
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Hogyan hozható létre fordítás termékkel kapcsolatos információból?
+## <a name="how-do-i-create-translations-for-product-related-information"></a>Hogyan hozható létre fordítás termékkel kapcsolatos információból?
 A termék-fordítások létrehozásához tegye a következőket:
 1.  Kattintson a **Termékinformációk kezelése** &gt; **Közös** &gt; **Kiadott termékek** lehetőségre.
 2.  Válasszon ki egy terméket, majd a Műveleti ablaktáblapontban a **Nyelvek** csoportban kattintson a **Fordítások** lehetőségre.
@@ -124,7 +124,7 @@ Az értékek fordításainak dimenzióérték-csoportban történő kezeléséhe
 1.  Kövesse az előző – dimenzióérték-csoportot létrehozó – eljárás lépéseit a **Méretcsoportsorok**, a **Színcsoportsorok** vagy a **Stíluscsoportsorok** lap megnyitásához.
 2.  Kattintson a **Szöveg fordítása** lehetőségre. A **Szöveg fordítása** lapon a **Lefordított szöveg** csoportban adja meg a fordításokat a **Név** és a **Leírás** mezőkben.
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Mikor módosíthatók a termékkel kapcsolatos információk fordításai?
+## <a name="when-can-translations-of-product-related-information-be-managed"></a>Mikor módosíthatók a termékkel kapcsolatos információk fordításai?
 A termékkel kapcsolatos információk fordításai bármikor módosíthatók. Termékhez társított dimenzióérték fordításainak frissítésekor a termék-információ attól függetlenül frissül, hogy a termékhez tartoznak-e tranzakciók.
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Eszközök vételezése beszerzésen keresztül"
-description: "Ez a cikk azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat."
+description: "Ez a témakör azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 84e7e6eb17e5741a2984c570786a495864ffbc74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1e9b1dc6297f33ea25ca498895740596ebd020b8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat.
+Ez a témakör azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat.
 
  A Tárgyi eszközök és a Kötelezettségek modul integrálására a következő módszerek állnak rendelkezésre; minden tárgyi eszköz esetében ugyanazt a módszert kell alkalmazni:
 -   Manuálisan létrehoz egy tárgyi eszközt, mielőtt megadná a tárgyi eszköz számát a beszerzési rendelés vagy a szállítói számla sorában. A szállítói számla feladásakor a rendszer automatikusan felad egy beszerzési tranzakciót a tárgyi eszközre. Ez az alapértelmezett módszer.

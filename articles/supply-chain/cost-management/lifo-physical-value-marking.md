@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 86bafb9346b7335bf0a5d6c156eee6d53f1998a9
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: db6d04a64821b3b02679056f787092dc40ef4423
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -50,7 +50,7 @@ Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
@@ -81,7 +81,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
@@ -123,7 +123,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.

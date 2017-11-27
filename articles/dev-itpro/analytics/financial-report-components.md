@@ -1,17 +1,17 @@
 ---
 title: "A pénzügyi jelentés összetevői"
 description: "A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. Ez a cikk ismerteti, hogyan rendezheti és zárolhatja az építőelemeket, valamint a velük történő munkát."
-author: ShylaThompson
+author: aolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7b283b8550bd7e5eff969d45c761d0a54d93a33e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. Ez a cikk ismerteti, hogyan rendezheti és zárolhatja az építőelemeket, valamint a velük történő munkát. 
+A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. A cikk az építőelemek szervezését és zárolását ismerteti. 
 
-A pénzügyi jelentéstervező mögötti tervezési filozófia az, hogy az információkat lebontjuk a legkisebb alkotórészekig vagy építőelemekig, majd szükség szerint keverjük és párosítjuk azokat. Ezért a jelentés formázása elkülönül az Ön pénzügyi adataitól, és a jelentések kinézetét anélkül változtathatja, hogy módosítaná a pénzügyi adatait a Microsoft Dynamics ERP rendszerben. Az ilyen építőelemes megközelítés használatával egyesíthet szövegeket, összegeket és számításokat olyan jelentések készítéséhez, amelyekre szüksége van. Továbbá ez a rugalmasság támogatja a kreativitást, mivel megkönnyíti a műveletek különböző módokon történő megtekintését. A jelentésdefiníciók építőelemei egy háromdimenziós táblázathoz hasonlatosak, a szerepük azonban kiemeltebb annál. A jelentésdefiníció határozza meg a jelentéshez használandó sordefiníciót, oszlopdefiníciót és opciós jelentési-fa definíciót. Emellett tartalmaz a létrehozott jelentés tárolási helyére, illetve formázási módjára vonatkozó információkat is. A könnyebb újbóli felhasználás, illetve a megosztás érdekében létrehozhat építőelem-csoportokat, melyek a vállalathoz társított korábbi jelentésdefiníciókat, sordefiníciókat, oszlopdefiníciókat, jelentési fa-definíciókat és dimenziókészleteket tartalmazzák.
+A pénzügyi jelentéstervező mögötti tervezési filozófia az, hogy az információkat lebontjuk a legkisebb alkotórészekig vagy építőelemekig, majd szükség szerint keverjük és párosítjuk azokat. Ezért a jelentés formázása elkülönül az Ön pénzügyi adataitól, és a jelentések kinézetét anélkül változtathatja, hogy módosítaná a pénzügyi adatait a Microsoft Dynamics ERP rendszerben. Az ilyen építőelemes megközelítés használatával egyesíthet szövegeket, összegeket és számításokat olyan jelentések készítéséhez, amelyekre szüksége van. Továbbá ez a rugalmasság támogatja a kreativitást, mivel megkönnyíti a műveletek különböző módokon történő megtekintését. A jelentésdefiníciók építőelemei egy háromdimenziós táblázathoz hasonlatosak, a szerepük azonban kiemeltebb annál. A jelentésdefiníció határozza meg a jelentéshez használandó sordefiníciót, oszlopdefiníciót és opciós jelentési-fa definíciót. Emellett tartalmaz a létrehozott jelentés tárolási helyére, illetve formázási módjára vonatkozó információkat is. 
 
-## <a name="building-blocks-of-a-report"></a> A jelentések építőelemei
-| Építőelem            | Leírás                                                                                                                                                                                                                                                                              | További információ                                                                                                 |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+## <a name="building-blocks-of-a-report"></a>Jelentés építőelemei
+| Építőelem            | Leírás                     | További információ                                    |
+|---------------------------|---------------------------------|---------------------------------------------------------|
 | Sor definíciója            | A sordefiníció a jelentés leíró sorait határozza meg (pl. a fizetések vagy az értékesítés). Emellett felsorolja az egyes sorcikkek értékeit tartalmazó szegmensértékeket vagy dimenziókat is, valamint tartalmaz sorformázásokat és számításokat.                                                    | [Sordefiníciók](row-definitions-financial-reporting.md)                       |
 | Oszlopdefiníció         | Az oszlopdefiníció határozza meg a pénzügyi dimenziókból történő adatkivonatolás során használandó időszakot. Emellett tartalmaz oszlopformázásokat és számításokat is.                                                                                                                                 | [Oszlopdefiníciók](column-definitions-financial-reports.md)         |
 | Jelentési-fa definíció | A jelentési-fa definíció olyan, mint egy szervezeti diagram. Az egyes jelentési egységeket jeleníti meg az ábrán belül látható dobozok formájában. Az egységek lehetnek a pénzügyi adatokból származó önálló osztályok, vagy olyan magasabb szintű egységek, melyek más jelentési egységek adatait összesítik. | [Jelentési-fa definíciók](financial-reporting-tree-definitions.md) |
@@ -67,44 +67,20 @@ Egy zárolt építőelem zárolásának törléséhez nyissa meg az építőelem
 
 ## <a name="building-block-groups"></a>Építőelem-csoportok
 
-Az építőelem a jelentés létrehozásához használt sordefiníciókból, oszlopdefiníciókból, jelentési-fa definíciókból, és jelentésdefiníciókból áll. Az építőelem-csoportot az adott vállalattal társított definíciógyűjtemények, illetve dimenziókészletek alkotják. Az építőelemek lehetnek egy adott vállaltra jellemzőek, vagy több vállalat is használhatja ugyanazt az építőelem-készletet. Eltérő számlatükörrel rendelkező vállalatok esetén érdemes mindegyik vállalathoz önálló építőelem-csoportot használni. A másik lehetőség az, ha mindegyik építőelem elnevezése tükrözi, hogy az melyik vállalattal kompatibilis.
-### <a name="create-a-building-block-group"></a>Építőelem-csoport létrehozása
+Az építőelem a jelentés létrehozásához használt sordefiníciókból, oszlopdefiníciókból, jelentési-fa definíciókból, és jelentésdefiníciókból áll. Az építőelem-csoportok definíciók és dimenziókészletek gyűjteményei. 
 
-1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
-2.  Az **Építőelem-csoportok** párbeszédpanelen kattintson az **Új** gombra.
-3.  Adjon egyedi nevet és leírást az építőelem-csoportnak. Minden mező legfeljebb 256 karaktert tartalmazhat. (Ez a szám a szóközöket is tartalmazza.)
-4.  Új építőelem-csoport létrehozásához kattintson az **OK** gombra.
 
-### <a name="assign-a-building-block-group"></a>Építőelem-csoport hozzárendelése
+### <a name="view-a-building-block-group"></a>Építőelem-csoport megtekintése
 
-Miután létrehozott egy új építőelem-csoportot, hozzá kell rendelnie azt legalább egy vállalathoz. Ezt követően tud jelentés-, sor-, oszlop- és jelentési-fa definíciót hozni létre, majd azokat elmenteni az építőelem-csoportba. Az alábbi eljárás megkezdése előtt be kell zárnia az összes építőelemet.
-1.  A Jelentéstervezőben kattintson a **Vállalat** menü **Vállalatok** parancsára.
-2.  A **Vállalatok** párbeszédpanelen válassza ki azt a vállalatot, amelyhez építőelem-csoportot kíván társítani.
-3.  Kattintson a **Módosítás** parancsra.
-4.  A **Vállalat módosítása** párbeszédpanelben, az **Építőelem-csoport** mezőben válassza ki a vállalathoz hozzárendelni kívánt építőelem-csoportot, vagy kattintson az **Új** lehetőségre új építőelem-csoport létrehozásához.
-5.  Kattintson az **OK** lehetőségre az építőelem-csoport hozzárendeléséhez.
-6.  Kattintson a **Bezárás** lehetőségre a **Vállalatok** párbeszédpanel bezárásához. Az Ön által kijelölt építőelem-csoport a vállalathoz hozzárendelésre került. Ezt követően az összes új sordefiníció, oszlopdefiníció stb., amelyet létrehoznak a vállalathoz hozzárendelt építőelem-csoport része lesz. Importálhat .tdbx fájlt vagy a jelentést egy másik rendszerből is.
-
-### <a name="view-a-building-block-group"></a> Építőelem-csoport megtekintése
-
-Építőelem-csoport létrehozását követően, a használatakor megtekintheti az összes építőelemet, amely hozzá van rendelve. Képes továbbá exportálni vagy importálni egy építőelem csoportot, és további karbantartást végrehajtani az építőelem-csoportokon.
-1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
+Mindegyik építőelem-csoporthoz rendelt építőelemet megtekintheti. Az építőelem-csoportok exportálhatók és importálhatók.
+1.  A Report Designer eszközben válassza a **Vállalat** menü **Építőelem-csoportok** elemét.
 2.  Az **Építőelem-csoportok** párbeszédpanelben válassza ki a megtekinteni kívánt építőelemet.
 3.  Kattintson a **Nézet** lehetőségre az **Építőelem-csoport megtekintése** párbeszédpanel megnyitásához, ahol megtekintheti az építőelem-csoport tartalmát.
-4.  Kattintson a **Bezárás** gombra a párbeszédpanel bezárásához.
+4.  A **Bezárás** gombbal zárja be a párbeszédpaneleket.
 
-### <a name="save-a-building-block-group-under-a-new-name"></a>Mentse el új néven az építőelem-csoportot
+### <a name="export-a-building-block-group"></a>Építőelem-csoport exportálása
 
-Új néven el tud menteni egy meglévő építőelem-csoportot. Ezután anélkül tudja módosítani az új építőelem-csoportot, hogy az hatással lenne az eredeti építőelem-csoportra.
-1.  A Report Designer eszközben válassza a **Vállalat** menü **Építőelem-csoportok** elemét.
-2.  Az **Építőelem-csoportok** párbeszédpanelen jelölje ki az új néven menteni kívánt építőelem-csoportot.
-3.  Kattintson a **Mentés másként** lehetőségre.
-4.  Adjon új nevet és leírást az építőelem-csoportnak.
-5.  Kattintson az **OK** gombra. Az új építőelem-csoport az **Építőelem-csoportok** párbeszédpanelben jelenik meg.
-
-### <a name="export-a-building-block-group"></a> Építőelem-csoport exportálása
-
-Exportálhatja, vagy importálhatja is az építőelem-csoportokat, vagy egyes adott jelentés-építőelemeket. Az exportált építőelem-csoportot biztonsági másolatként is használhatja. Az exportált adatokat építőelem csoportok vagy a Finance and Operations programok között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
+Exportálhatja, vagy importálhatja is az építőelem-csoportokat, vagy egyes adott jelentés-építőelemeket. Az exportált építőelem-csoportot biztonsági másolatként is használhatja. Az exportált adatokat a Finance and Operations telepítések között is másolhatja. A Jelentéstervező tartalmazza a hivatkozott betűstílusokat és a dimenziókészleteket, az építőelem-csoportokkal együtt.
 1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
 2.  Az **Építőelem-csoportok** párbeszédpanelen válassza ki az exportálni kívánt építőelem-csoportot, majd kattintson az **Exportálás** parancsra.
 3.  Jelölje ki az exportálandó jelentésdefiníciókat az **Exportálás** párbeszédpanelben:
@@ -118,7 +94,7 @@ Exportálhatja, vagy importálhatja is az építőelem-csoportokat, vagy egyes a
 
 ### <a name="import-a-building-block-group"></a> Építőelem-csoport importálása
 
-Importálhat építőelem-csoportokat egy meglévő építőelem-csoportba, vagy létrehozhat egy új építőelem-csoportot az adatokhoz. Az összes importált építőelem-csoport megtartja az eredeti betűstílusát és a vállalati hivatkozásait, és tartalmazza a megfelelő dimenziókészleteket.
+Az építőelem-csoportok importálhatók egy meglévő építőelem-csoportba. Az összes importált építőelem-csoport megtartja az eredeti betűstílusát és a vállalati hivatkozásait, és tartalmazza a megfelelő dimenziókészleteket.
 1.  A Jelentéstervezőben, a **Vállalat** menüben kattintson az **Építőelem-csoportok** lehetőségre.
 2.  Az **Építőelem-csoportok** párbeszédpanelen jelölje ki azt az építőelem-csoportot, amelybe egy másik építőelem-csoportot kíván importálni, majd kattintson az **Importálás** parancsra.
 3.  A **Megnyitás** párbeszédpanelen válassza ki az importálni kívánt építőelem-csoportot, majd kattintson a **Megnyitás** gombra.

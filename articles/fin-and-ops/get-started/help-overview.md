@@ -1,16 +1,16 @@
 ---
 title: "Súgó áttekintése"
-description: "Ez a cikk a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára."
+description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára."
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
@@ -18,18 +18,18 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
-ms.openlocfilehash: 2df27a23d31ecde99bb31b4f8a19295c331cae09
+ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
+ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/11/2017
 
 ---
 
-# <a name="help-overview"></a>Súgó áttekintése
+# <a name="help-system-overview"></a>Súgórendszer áttekintése
 
 [!include[banner](../includes/banner.md)]
 
-Ez a cikk a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára. 
+Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára. 
 
 > [!NOTE] 
 > A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Enterprise kiadás; Dynamics 365 for Retail; és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
@@ -69,16 +69,17 @@ Sok kérdést kapunk arról, hogy miként kereshetők tartalmaink. Ha webhelyün
 
 Tartalmainkat bármelyik keresőmotorral is megtalálhatja. A legjobb eredmények elérése érdekében azt javasoljuk, hogy webhelyre korlátozott keresést végezzen, mint például: site:docs.microsoft.com dynamics 365 „keresőkifejezés”  
 
-![Keresés a webhelyen](./media/site-search-1.png)
-
-![Keresési eredmények a webhelyről](./media/site-search-results-2.png)
-
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>A docs.microsoft.com tartalomjegyzéke
-Az összes terméknek ugyanaz a tartalomjegyzéke a dokumentumok webhelyen, ami lehetővé teszi az ügyfelek számára, hogy lássák az aktuális témakör kontextusát. Emellett lehetővé teszi a szűrő vezérlőelem használatát a kívánt témakörök megkereséséhez.
+A Finance and Operations, Retail és Talent terméknek ugyanaz a tartalomjegyzéke a dokumentumok webhelyen, ami lehetővé teszi az ügyfelek számára, hogy lássák az aktuális témakör kontextusát. Emellett lehetővé teszi a tartalomjegyzék feletti szűrő vezérlőelem használatát a kívánt témakörök megkereséséhez.
 
-### <a name="how-can-i-contribute"></a>Hogyan járulhatok hozzá? 
+### <a name="follow-a-topic"></a>Egy témakör követése
+Egy témakör követéséhez kattintson a +Követés gombra a megjegyzésmező alatt. Témakör követéséhez be kell jelentkeznie. A részletekért lásd: [Szóljon hozzá!](#leave-us-a-comment).  
 
-Szóljon hozzá! 
+### <a name="give-feedback"></a>Visszajelzés adása 
+Szívesen vesszük az ügyfelek visszajelzéseit. Megjegyzést írhat, vagy a tartalom módosításait javasolhatja a GitHub használatával.
+
+##### <a name="leave-us-a-comment"></a>Szóljon hozzá! 
+Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megjegyzést az oldal alján.  
 
 1 Kattintson a **Megjegyzések** lehetőségre, hogy eljusson a lap alján lévő megjegyzésekhez.
 
@@ -96,6 +97,19 @@ Vagy
 A jobb oldalon adjon meg egy e-mail-címet és egy új jelszót ahhoz, hogy új fiókot hozzon létre a webhely számára. 
 
 ![Bejelentkezési beállítások](./media/signin-options.png)
+
+
+##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Javasoljon módosítást vagy járuljon hozzá a tartalomhoz a GitHub használatával
+Módosítás javasolásához GitHub-fiókra van szükség, és alá kell írni a közreműködői licencszerződést.  Egy lekéréses kérelem benyújtása után át fogjuk tekinteni a javasolt módosításokat. Szükség esetén belső körben megvitatjuk őket, és felvesszük a kapcsolatot önnel.  
+
+Első lépésként kattintson a **Szerkesztés** (ceruza) gombra egy témakörnél, vagy menjen a repónkra a https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public címen. 
+
+További tudnivalókért olvassa el a közreműködői útmutatót: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> Jelenleg csak az angol nyelvű repóhoz fogadunk el közreműködést.  
+> A GitHub használatával jelentett problémákat nem fogadunk el – a tartalomjavaslatokhoz használjon lekéréses kérelmet. A termék- és szolgáltatás-visszajelzések kezelésének legcélszerűbb módja a Dynamics 365 Ideas portál: https://ideas.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Feladat-útmutatók
@@ -196,9 +210,4 @@ A következő táblázat felsorolja a weboldalainkat. A tartalom-webhelyek a vev
 [Új vagy frissített Feladat-útmutatók (2016. augusztus)](new-updated-task-guides-available-august-2016.md)
 [Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)
 [Új Feladat-útmutatók (2016. február)](new-task-guides-available-february-2016.md)
-
-
-
-
-
 
