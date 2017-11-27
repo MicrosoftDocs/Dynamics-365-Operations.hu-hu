@@ -2,6 +2,11 @@
 
 # Első lépések
 ## [Új vagy módosult elemek](get-started/whats-new.md)
+## [Mielőtt megvásárolná a Dynamics 365 for Retail terméket](get-started/before-you-buy.md)
+## [Regisztrálás az előfizetés előnézetére](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [Bemutatókörnyezet telepítése](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Telepítési beállítások](dev-itpro/choose-deployment.md)
+
 
 # Kifizetések
 ## [Kifizetési módok](payment-methods.md)
@@ -38,7 +43,9 @@
 ## [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)
 ## [Kiskereskedelmi munkaidő és jelenlét](retail-time-attendance.md)
 
-# Modern pénztár (MPOS) és felhőalapú pénztár
+# Modern Point of Sale (MPOS) és Cloud POS
+## [Pénztárműveletek](POS-operations.md)
+## [Bemutató adatok képernyő-elrendezései az MPOS/CPOS pénztárban](demo-data.md)
 ## Hardverperifériák
 ### [Kiskereskedelmi perifériás eszközök – áttekintés](retail-peripherals-overview.md)
 ### [A Microsoft által tesztelt pénztári hardverperifériák](microsoft-tested-pos-hardware-peripherals.md)
@@ -59,9 +66,10 @@
 ### [Vevői rendelések – áttekintés](customer-orders-overview.md)
 ### [Hibrid vevői rendelések](hybrid-customer-orders.md)
 ## Értékesítési társítások
-### [Jutalékok követése a pénztárban értékesítési csoportok révén](pos-sales-groups-track-commissions.md)
+### [Jutalékok követése a POS készülékben értékesítési csoportok révén](pos-sales-groups-track-commissions.md)
+## [Rendelés leszállítása másik üzletből](charge-send.md)
 ## Eszköz aktiválása
-### [A MPOS pénztár konfigurálása és telepítése](retail-modern-pos-device-activation.md)
+### [Az MPOS pénztár konfigurálása és telepítése](retail-modern-pos-device-activation.md)
 ### [Kiterjesztett bejelentkezés beállítása felhőalapú pénztárhoz és MPOS pénztárhoz](extended-logon.md)
 ### [Kiskereskedelmi számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
 ## Bevételezések
@@ -168,11 +176,11 @@
 ### [Kommunikáció a kiskereskedelmi csatornán](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architektúra](dev-itpro/retail-modern-pos-architecture.md)
 ### [Az online kiskereskedelmi csatorna közzétételi felépítése](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Kiskereskedelmi csatorna teljesítménye Power BI-tartalom](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Retail Channel Performance Power BI-tartalom](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Telepítés és gyorsjavítások
-### [Kiskereskedelmi skálázási egység konfigurálása és telepítése](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [Kiskereskedelmi üzleti rendszer – előkészítés](dev-itpro/retail-store-system-begin.md)
+### [A Retail Store Scale Unit áttekintése](dev-itpro/retail-store-system-begin.md)
+#### [A Retail Store Scale Unit konfigurálása és telepítése](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [A Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md)
 #### [Kiskereskedelmi számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
 #### [Retail POS eszköz aktiválása](dev-itpro/retail-device-activation.md)
@@ -186,17 +194,19 @@
 ### [A frissítés és az N-1-támogatás áttekintése](dev-itpro/overview-upgrade-n-minus1.md)
 ### [N-1-összetevők telepítése](dev-itpro/n-1-installation-configuration.md)
 
-## Környezet konfigurációja
+## A környezet konfigurációja
+### [Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [A Bing Térképek kezelése](dev-itpro/manage-bing-maps.md)
 
 ## Bővíthetőség
 ### Pénztár
-#### [Retail POS képernyő-elrendezései](pos-screen-layouts.md)
+#### [A Retail POS képernyő-elrendezései](pos-screen-layouts.md)
 ##### [A POS képernyőelrendezés-tervező telepítése](install-pos-layout-designer.md)
 #### [MPOS konfigurálása offline módhoz](dev-itpro/retail-modern-pos-offline.md)
 #### [MPOS- és Cloud POS-eseményindító bővíthetősége](dev-itpro/modern-pos-trigger-extensibility.md)
 #### [Egyéni vezérlő hozzáadása a POS-nézethez](dev-itpro/pos-custom-control.md)
 #### [POS-kifizetés kiterjesztése](dev-itpro/pos-payment-extension.md)
+#### [Külső ajándékutalvány-támogatás](dev-itpro/gift-card.md)
 ### [Retail Experience alkalmazás létrehozása](dev-itpro/create-retail-experience-app.md)
 ### [Hardverállomás áttekintése és bővíthetősége](dev-itpro/hardware-station-extensibility.md)
 
@@ -230,10 +240,16 @@
 ### [A Retail szoftverfejlesztői készlet (SDK) bővíthetőségi mintái](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Készpénzjegyzékek Svédország esetében](localizations/emea-swe-cash-registers.md)
 ### [A Retail POS integrációja ellenőrzőegységekkel Svédországnál](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+### [Készpénzjegyzékek Norvégia esetében](localizations/emea-nor-cash-registers.md)
+### [Készpénzjegyzékek telepítésére vonatkozó irányelvek Norvégia esetében](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail szoftverfejlesztői készlet (SDK)-csomag](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail szoftverfejlesztői készlet (SDK)-minták ](dev-itpro/retail-sdk/retail-sdk-samples.md)
-### [A csatornaadatbázis (DB) bővítményei](dev-itpro/channel-db-extensions.md)
+### [A csatorna-adatbázis (DB) bővítményei](dev-itpro/channel-db-extensions.md)
 ### [CDX-bővíthetőség](dev-itpro/cdx-extensibility.md)
+### [Rendelés attribútumai](dev-itpro/order-attributes.md)
+### [Vevőattribútumok](dev-itpro/customer-attributes.md)
+### [A Retail Typescript és a C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Kereskedelmi futtatókörnyezet
 ### [Hűségidő kiterjesztése](dev-itpro/retail-sdk/loyalty-extension-sample.md)

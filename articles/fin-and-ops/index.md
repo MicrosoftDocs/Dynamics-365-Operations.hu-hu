@@ -3,7 +3,7 @@ title: "Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás �
 description: "Dokumentáció a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásához."
 author: margoc
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 11/13/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb040b28078e5072fdb695e7b39e82557219addc
-ms.openlocfilehash: ca1658a9dc7594168476298132274b2c5910b012
+ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
+ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/13/2017
 
 ---
 
@@ -67,7 +67,7 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 
 <h3><a href="../supply-chain/index.md">Ellátásilánc-kezelés</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Költségkezelés</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">Készletgazdálkodás</a></p>
+<p><a href="../supply-chain/inventory/inventory-home-page.md">Készletkezelés</a></p>
 <p><a href="../supply-chain/master-planning/master-plans.md">Alaptervezés</a></p>
 <p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Beszerzés és forrás</a></p>
 <p><a href="../supply-chain/pim/product-information.md">Termékinformációk kezelése</a></p>
@@ -88,7 +88,10 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Fejlesztés</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Bővíthetőség</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Adatok integrálása és kezelése</a></p>
+
+<p><a href="../dev-itpro/data-entities/integration-overview.md">Adatintegrálás</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Adatkezelés</a></p>
+
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office-integráció</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Folyamatos szállítás</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobil platform</a></p>
@@ -97,8 +100,8 @@ Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft D
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Adminisztráció</h3>
 <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Telepítés</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Frissítés</a></p>
-<p><a href="../dev-itpro/dev-tools/developer-home-page.md#service-environments">Karbantartás</a></p>
-<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Adatkezelés</a></p>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Karbantartás</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Adatkezelési keretrendszer</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Szervezeti adminisztráció</a></p>
 </td>
