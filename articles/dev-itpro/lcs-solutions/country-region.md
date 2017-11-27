@@ -3,24 +3,24 @@ title: "Honosítási és szabályozó funkciók"
 description: "Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
-ms.openlocfilehash: fd01d40d3e74503e3e310132882306ed8c23ad1d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 25c8c6c9bbccf07ce94a909824ecc8096081cd2c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -64,7 +64,7 @@ Az elektronikus jelentési (ER) eszköz a különböző országok/régiók jogi 
 -   [Elektronikus jelentéskészítés céljai](../analytics/electronic-reporting-destinations.md)
 -   [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Elektronikus jelentéskészítési konfigurációk importálása](../analytics/electronic-reporting-import-ger-configurations.md)
--   [Elektronikus jelentéskészítés adatok a Power BI-be történő lehívásához](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Elektronikus jelentéskészítés konfigurálása adatok Power BI-be történő lehívásához](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Elektronikus dokumentumok generálása és alkalmazások adatainak frissítése az Elektronikus jelentéskészítő eszköz használatával](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## <a name="task-guides"></a>Feladat-útmutatók

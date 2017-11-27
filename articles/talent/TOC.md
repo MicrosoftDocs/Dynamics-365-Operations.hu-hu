@@ -1,10 +1,9 @@
 # [Üdvözöljük a Dynamics 365 for Talent rendszerben](index.md)
 
-# Első lépések
+# [Első lépések](talent-get-started.md)
 ## [Rendszerkövetelmények és frissítési irányelv](talent-versions-update-policy.md)
 
-# Emberi erőforrásokra vonatkozó stratégia kialakítása
-## [Munkaerő szervezése részlegek, munkák és beosztások szerint](departments-jobs-positions.md)
+# [Emberi erőforrásokra vonatkozó stratégia kialakítása](departments-jobs-positions.md)
 ## [Feladatösszetevők beállítása](create-job.md)
 ## [Részleg létrehozása és társítása a szervezeti hierarchiához](create-department-add-department-hierarchy.md)
 ## [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md)
@@ -28,13 +27,11 @@
 ## [A munkaerő szakértelme és az üzleti igények egymáshoz történő igazítása](skills.md)
 ## [Tanfolyamok beállítása](courses.md)
 
-# Juttatások létrehozása és karbantartása
-## [Juttatási program kezelése](manage-benefit-program.md)
-## [Juttatásra való jogosultsági irányelvek](benefit-eligibility-policies.md)
+# [Juttatások létrehozása és karbantartása](manage-benefit-program.md)
+# [Juttatásra vonatkozó jogosultsági irányelvek](benefit-eligibility-policies.md)
 ## [A dolgozóknak kölcsönzött cikkek kezelése](loan-items.md)
 
-# Információgyűjtés kérdőívekkel
-## [Kérdőívek](questionnaires.md)
+# [Információgyűjtés kérdőívekkel](questionnaires.md)
 ## [Kérdőív tervezése](design-questionnaires.md)
 ## [Kérdőív terjesztése és kitöltése](distribute-questionnaires.md)
 ## [Kérdőív eredményeinek kiértékelése](evaluate-questionnaire-results.md)
