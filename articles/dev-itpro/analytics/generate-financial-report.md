@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 01bb8999e5d9c0e16f133a621ebfe1d102565f2f
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 09/29/2017
 
 Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban. 
 
-A jelentés létrehozásához nyissa meg a jelentésdefiníciót, majd kattintson a Létrehozás gombra az eszköztárban. Az ekkor megnyíló Jelentés-várólista állapota ablak mutatja a jelentés helyét a várólistában. Alapértelmezés szerint a létrehozott jelentés a Webes megjelenítőben nyílik meg.
-| ![Megjegyzés](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Megjegyzés")**Megjegyzés**        |
-|------------------------------------------------------------------------------------------------|
-| Csak olyan mappákba és helyekre hozható létre jelentés, amelyekhez hozzáférési engedéllyel rendelkezik. |
+A jelentés létrehozásához nyissa meg a jelentésdefiníciót, majd kattintson a Létrehozás gombra az eszköztárban. Az ekkor megnyíló Jelentés-várólista állapota ablak mutatja a jelentés helyét a várólistában. A létrehozott jelentések alapértelmezetten a Web Viewer alkalmazásban nyílnak meg.
+
+> [!NOTE]
+> Csak olyan mappákba és helyekre hozható létre jelentés, amelyekhez hozzáférési engedéllyel rendelkezik.
 
 Az alábbi táblázatban a jelentések létrehozásához rendelkezésre álló beállítások magyarázata látható.
 
@@ -50,10 +50,11 @@ Jelentés készítésekor az Ön által a Jelentésdefiníció lapon megadott be
 ## <a name="schedule-report-generation"></a> Jelentés létrehozásának ütemezése
 Számos vállalat rendelkezik egy olyan alapvető jelentéscsomaggal, amelyet az üzleti folyamatokhoz való igazodás érdekében ütemezett időközönként lefuttatnak. Lehetősége van egy jelentés rendszeres (például napi, heti, havi vagy évi) létrehozásának beütemezésére. Ezt megadhatja egy jelentésre vonatkozóan, vagy egy több vállalatot tartalmazó teljes jelentéscsoportra vonatkozóan is. Meg kell adnia az összes meghatározott vállalat, például a jelentésfa-definícióban szereplő összes vállalat hitelesítő adatait. Amennyiben a hitelesítő adatok nem érvényesek, a jelentés csak azokat az adatokat jeleníti meg, amelyekhez hozzáférési engedéllyel rendelkezik, például csak azt a vállalatot, amelyhez abban az időpontban be van jelentkezve. A kimeneti információ leolvasása elsőként a jelentéscsoportból, ezt követően pedig az egyes jelentésekből történik.
 
-Jelentésütemezések létrehozásakor és mentésekor azok a navigációs ablaktáblában jelennek meg, a Jelentésütemezések alatt. A jelentések rendszerezéséhez mappákat hozhat létre. Ha egy ütemezésben nem fut egy jelentés, az összes többi jelentés futtatása folytatódik.
-| ![Fontos](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Fontos")**Fontos**                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Jelentésütemezések létrehozásához, módosításához és törléséhez tervező vagy a rendszergazda szerepkörrel kell rendelkeznie. Jelentés futtatásakor a annak a felhasználónak a hitelesítő adatait használja a rendszer a jelentés létrehozásához, aki az ütemezést készítette. |
+Jelentésütemezések létrehozásakor és mentésekor azok a navigációs ablaktáblában jelennek meg, a Jelentésütemezések alatt. A jelentések rendszerezéséhez mappákat hozhat létre. Ha az ütemezésben szereplő egyik jelentés nem futtatható, a többi jelentés futtatása folytatódni fog.
+
+> [!IMPORTANT]
+> A jelentésütemezések létrehozásához, módosításához és törléséhez tervezői vagy rendszergazdai szerepkörrel kell rendelkeznie. Jelentés futtatásakor a annak a felhasználónak a hitelesítő adatait használja a rendszer a jelentés létrehozásához, aki az ütemezést készítette.
+
 
 ### <a name="create-a-report-schedule"></a>Jelentésütemezés létrehozása
 
@@ -99,15 +100,16 @@ A folytatáshoz kattintson az Engedélyek gombra a Jelentés ütemezése párbes
 ## <a name="missing-account-analysis-feature"></a>Hiányzó számlák elemzése funkció
 Rákereshet egy építőelem-csoport minden sordefiníciójában, jelentésifa-definíciójában és jelentésdefiníciójában az esetleges hiányzó pénzügyi számlákra és dimenziókra. Akkor hasznos, ha rövid idő alatt több számla vagy építőelem létrehozását vagy frissítését hajtja végre, és ellenőrizni akarja, hogy a jelentéseiben minden új információ szerepel.
 
-A sordefiníció vagy jelentési-fa definíció legalacsonyabb és legmagasabb értékeinek használatával meghatározza a hiányzó számlákat, majd megjeleníti a sordefinícióban vagy jelentési-fa definícióban nem szereplő, de a pénzügyi adatokban megtalálható számlák listáját. Ha egy hiányzó számla nagyobb vagy kisebb mint a sordefinícióban szereplő értékek, akkor az nem szerepel a hiányzó számlák listájában.
-| ![Tipp](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Tipp")**Tipp**                                             |
-|----------------------------------------------------------------------------------------------------------------------------------|
-| Ellenőrzés céljára, havi jelentések és új építőelemek létrehozása előtt futtassa ezt a folyamatot. |
+A sordefiníció vagy jelentési-fa definíció legalacsonyabb és legmagasabb értékeinek használatával meghatározza a hiányzó számlákat, majd megjeleníti a sordefinícióban vagy jelentési-fa definícióban nem szereplő, de a pénzügyi adatokban megtalálható számlák listáját. Ha egy hiányzó számla nagyobb vagy kisebb a sordefinícióban szereplő értékeknél, akkor az a számla nem lesz feltüntetve a hiányzó számlák listáján.
+
+> [!TIP]
+> Érvényesítési célból ezt a folyamatot mindig érdemes lefuttatni havi jelentések előállítása előtt, illetve új építőelemek létrehozásakor.
 
 Értéktartományokat tartalmazó jelentésekből kevésbé valószínű, hogy hiányzik számla. Amikor csak lehetséges, újonnan létrehozott számlák szerepeltetéséhez használjon tartományokat az építőelemben. Ha bármely jelentésdefiníció értéke @ANY vállalat, akkor bejelentkezhet egy adott vállalathoz és arra vonatkozóan hiányzó számlaelemzést futtathat.
-| ![Megjegyzés](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Megjegyzés")**Megjegyzés**                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ha új vállalat hozzáadására került sor, hozzá kell adnia azt a meglévő jelentések jelentési fáihoz, különben a vállalat nem fog szerepelni a hiányzó számla elemzésben. |
+
+> [!NOTE]
+> Ha új vállalat hozzáadására került sor, hozzá kell adnia azt a meglévő jelentések jelentési fáihoz, különben a vállalat nem fog szerepelni a hiányzó számla elemzésben.
+
 
 ### <a name="run-missing-account-analysis"></a>Hiányzó számla elemzés futtatása
 
@@ -117,11 +119,11 @@ A sordefiníció vagy jelentési-fa definíció legalacsonyabb és legmagasabb �
 4.  A Csoportosítás alapja mezőben válasszon ki egy beállítást az eredmények rendezéséhez. Az eredmények rendezhetők az érintett építőelem szerint, illetve dimenzió- és értékkészlet szerint.
 5.  Tekintse át a megjelenített eredményeket. Amikor kiválaszt egy elemet a felső ablaktáblában, az alsó ablaktáblában további információ jelenik meg a kivételről. Láthatók például a kapcsolódó dimenziók, értékek és jelentések.
 6.  Az érintett elem megnyitásához kattintson a listaablakon megjelenített társított ikonra, vagy kattintson a jobb egérgombbal az elemre és válassza a Megnyitás lehetőséget. Több elem kijelöléséhez tartsa lenyomva a Ctrl billentyűt, miközben az alsó ablakban kiválasztja az elemeket.
-7.  Ha bármilyen, analízisben szerepeltetni nem kívánt értéket, építőelemet vagy jelentést kap vissza, az elem listából való eltávolításához kattintson a jobb egérgombbal az elemre és válassza a Kizárás lehetőséget, vagy jelölje be a Kizárás jelölőnégyzetet az elem mellett. A kizárt elemek a lista frissítése után már nem szerepelnek. Több elem kijelöléséhez tartsa lenyomva a Ctrl billentyűt, miközben az alsó ablakban kiválasztja a elemeket. Minden elem megtekintéséhez – beleértve a korábban kizárásra kijelölt elemeket – jelölje be a Kizárt építőelemek és értékek megjelenítése jelölőnégyzetet, majd kattintson a Frissítés gombra.
-8.  Kattintson a Frissítés gombra a már elhárított kivételek frissítéséhez. Kattintson az Igen gombra az összes eredményre vonatkozó teljes frissítés végrehajtásához, vagy kattintson a Nem gombra a kiválasztott elemekre vonatkozó részleges frissítés végrehajtásához.
-    | ![Megjegyzés](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Megjegyzés")**Megjegyzés**                    |
-    |------------------------------------------------------------------------------------------------------------|
-    | A képernyő automatikusan frissül megnyitáskor, kivéve, ha a képernyő meg lett nyitva az utolsó 15 percben. |
+7.  Ha bármilyen, analízisben szerepeltetni nem kívánt értéket, építőelemet vagy jelentést kap vissza, az elem listából való eltávolításához kattintson a jobb egérgombbal az elemre és válassza a Kizárás lehetőséget, vagy jelölje be a Kizárás jelölőnégyzetet az elem mellett. A kizárt elemek a lista frissítése után már nem szerepelnek. Több elem kiválasztásához tartsa lenyomva a Ctrl billentyűt, miközben kijelöli az elemeket az alsó ablaktáblában. Az összes elem megtekintéséhez, beleértve azokat az eredményeket is, amelyeket korábban kizárt az elemzésből, jelölje be a Kizárt építőelemek és értékek megjelenítése jelölőnégyzetet, majd kattintson a Frissítés gombra.
+8.  Kattintson a Frissítés gombra a már elhárított kivételek frissítéséhez. Kattintson az Igen gombra az összes eredmény teljes frissítéséhez, vagy kattintson a Nem gombra, ha csak részleges frissítést kíván végezni az elhárított elemeken.
+
+    > [!NOTE]
+    > A program automatikusan frissíti a képernyőt megnyitáskor, kivéve ha az meg volt nyitva az utolsó 15 percben.
 
 9.  Amikor megoldódtak a problémák, kattintson az OK gombra a párbeszédpanel bezárásához.
 

@@ -1,27 +1,27 @@
 ---
 title: Munkafolyamat-elemek
-description: "A cikk ismerteti a munkafolyamat különböző összetevőit."
+description: "A témakör ismerteti a munkafolyamat különböző összetevőit."
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
-ms.author: tjvass
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 255777651a45b899850fc870c9da288f65df702c
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-A cikk ismerteti a munkafolyamat különböző összetevőit.
+A témakör ismerteti a munkafolyamat különböző összetevőit.
 
 Egy munkafolyamat elemekből áll. A következő részek az elemek összes típusát.
 
@@ -59,7 +59,7 @@ A *jóváhagyási folyamat* egy több lépésből álló folyamat. Az egyes jóv
 -   A dokumentum módosításának kérése
 -   A dokumentum másik felhasználóhoz rendelése jóváhagyásra.
 
-## <a name="lineitem-workflow-elements"></a>Sortétel munkafolyamatának elemei
+## <a name="line-item-workflow-elements"></a>Sortétel munkafolyamatának elemei
 Munkafolyamat létrehozható dokumentumok vagy a sorban szereplő cikkek egy dokumentumban való feldolgozásához. Például létrehozott jóváhagyási munkafolyamatot időnyilvántartásokhoz. (Erre a munkafolyamatra *dokumentum-munkafolyamat* néven fogunk hivatkozni.) Lehetőség van *egy sortétel-munkafolyamat* elem hozzáadásához a dokumentum-munkafolyamathoz. A sortétel-elem futtatásakor a rendszer a dokumentumon szereplő minden sortételt elküld feldolgozásra. Lehet, hogy az azonos sortétel-munkafolyamattal akarja feldolgoztatni a sorban szereplő cikkeket, vagy egy másik sortétel-munkafolyamattal szeretné feldolgoztatni a sorban szereplő cikkeket. Tegyük fel, hogy az alkalmazott elküldött egy időnyilvántartást, amely hasonlít az alábbi ábrára.
 
 ![Munkafolyamat sortételekkel](./media/workflow_lineitemworkflow.gif) 
@@ -70,7 +70,7 @@ Ebben az esetben szükség lehet a következő sortétel-munkafolyamatok létreh
 -   **Sortétel-munkafolyamat 2** – A munkafolyamat segítségével a 2222 projektazonosítójú sortételeket lehet feldolgozni.
 -   **Sortétel-munkafolyamat 3** – A munkafolyamat segítségével a 3333 projektazonosítójú sortételeket lehet feldolgozni.
 
-## <a name="flowcontrol-elements"></a>Vezérlési folyamat elemei
+## <a name="flow-control-elements"></a>Vezérési folyamat elemei
 A következő elemek lehetővé teszik, hogy olyan munkafolyamatokat tervezzen, amelyek másodlagos ágakkal vagy egyszerre futó ágakkal rendelkeznek.
 
 ### <a name="manual-decision"></a>Manuális döntés

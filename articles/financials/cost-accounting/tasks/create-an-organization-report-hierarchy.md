@@ -3,7 +3,7 @@ title: "Szervezeti jelentési hierarchia létrehozása"
 description: "Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchiát hozhatja létre."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/28/2017
+ms.date: 10/30/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f593c59660abcf5b0d5771ddd9daced6ec5fbfb4
+ms.sourcegitcommit: e57db8f4b692aa9c27916625897e268f63031782
+ms.openlocfilehash: 995f61bd82ac08d057b41a6db735b6695aa34c33
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/30/2017
 
 ---
 # <a name="create-an-organization-report-hierarchy"></a>Szervezeti jelentési hierarchia létrehozása
@@ -74,7 +74,7 @@ Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchi�
 40. A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a csomópontnak megfelelő dimenziótagot.  
 41. Kattintson a Mentés gombra.
-42. A fán válassza a Szervezet USP2\Vezérigazgató\Vezérigazgatói költséghelyek lehetőséget.
+42. A fán válassza a 'Organization USP2\CEO\CFO cost centers' lehetőséget.
 43. Kattintson az Új lehetőségre.
 44. A Csomópont neve mezőbe írja be a Kereskedelmi börzék értéket.
 45. Kattintson a Mentés gombra.

@@ -1,9 +1,9 @@
 ---
 title: "Értékesítési szerződések"
-description: "Ez a cikk az értékesítési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében."
+description: "A témakör az értékesítési szerződésekről nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 15e3f872e4ded027734ee73081ba7af68be5107d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk az értékesítési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
+A témakör az értékesítési szerződésekről nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
 
 Az értékesítési szerződés olyan szerződés, amely kötelez egy vevőt, hogy termékeket vásároljon egy adott mennyiségben, vagy adott összegben adott idő alatt, különleges árakért, engedményekért és egyéb különleges feltételekért cserébe, mint például fizetési vagy szállítási feltételek. Az értékesítési szerződésben foglalt árak és engedmények felülírják a többi létező kereskedelmi megállapodásban beállított árak és engedmények értékét.  
 
@@ -88,7 +88,7 @@ Ha nem erősíti meg az értékesítési szerződést, akkor is használhatja az
 A visszaigazolások valamennyi revízióját megtekintheti és ki is nyomtathatja. Ezután megoszthatja a módosításokat a vevőjével, hogy jóváhagyását kérje rájuk.
 
 ## <a name="applying-sales-agreements-during-the-ordering-process"></a>Értékesítési szerződések használata a rendelési folyamatban
-Ha nem ad ki értékesítési rendeléseket közvetlenül az értékesítési szerződésekhez, attól még hozzákapcsolhat egy értékesítési szerződést egy rendeléshez a beviteli folyamat során. Amikor egy új értékesítési rendelést hoz létre és kiválasztja az értékesítési szerződést, akkor annak a szerződésnek a feltételei, úgy mint fizetési feltételek, szállítási feltételek és szállítási cím bekerülnek a rendelés fejlécébe és a szerződés és rendelés közötti kapcsolat létrejön. Ezután a rendelési sorokba másolódnak az árak és engedmények a szerződésből, amikor termékeket és termékkategóriákat jelölhet ki a meghatározott értékesítési rendelésben. Ugyanazon értékesítési rendelés tartalmazhat olyan sorokat, amelyek nincsenek kapcsolatban állnak az értékesítési szerződéssel és olyanokat is, amelyek kötelezettséggel rendelkeznek az értékesítési szerződés felé.
+Ha nem ad ki értékesítési rendeléseket közvetlenül az értékesítési szerződésekhez, attól még hozzákapcsolhat egy értékesítési szerződés egy rendeléshez a rendelésbeviteli folyamat során. Amikor egy új értékesítési rendelést hoz létre és kiválasztja az értékesítési szerződést, akkor annak a szerződésnek a feltételei, úgy mint fizetési feltételek, szállítási feltételek és szállítási cím bekerülnek a rendelés fejlécébe és a szerződés és rendelés közötti kapcsolat létrejön. Ezután a rendelési sorokba másolódnak az árak és engedmények a szerződésből, amikor termékeket és termékkategóriákat jelölhet ki a meghatározott értékesítési rendelésben. Ugyanazon értékesítési rendelés tartalmazhat olyan sorokat, amelyek nincsenek kapcsolatban állnak az értékesítési szerződéssel és olyanokat is, amelyek kötelezettséggel rendelkeznek az értékesítési szerződés felé.
 
 ## <a name="modifying-sales-orders-that-are-linked-to-sales-agreements"></a>Értékesítési szerződésekhez kapcsolat értékesítési rendelések módosítása
 Ha létrehozott (kiadott) egy értékesítési rendelést egy értékesítési szerződés szerint, akkor az értékesítési rendelés soraiban szereplő néhány mező csak akkor módosítható, ha eltávolítja a kapcsolatot a társított értékesítési szerződés sorokkal. A következő táblázat felsorol ezen mezők közül néhányat.

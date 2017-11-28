@@ -3,7 +3,7 @@ title: "Beszerzési kategóriák hierarchiájának beállítása"
 description: "Ez az eljárás bemutatja az új csomópontok létrehozását a beszerzési kategóriák hierarchiájában, és azt, hogyan kell konfigurálni a beszerzési folyamatban használt beszerzési kategóriát."
 author: mkirknel
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/06/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
+ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
+ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Beszerzési kategóriák hierarchiájának beállítása
@@ -30,7 +30,7 @@ Ez az eljárás bemutatja az új csomópontok létrehozását a beszerzési kate
 
 
 ## <a name="add-a-new-procurement-category"></a>Új beszerzési kategória hozzáadása
-1. Ugrás a Beszerzés és forrás > .. > Beszerzési kategóriák.
+1. Ugorjon a Beszerzés és forrás > Beszerzési kategóriák pontra.
 2. Kattintson a Kategóriahierarchiák szerkesztése pontra.
     * Az aktuális beszerzési kategóriák hierarchiája az oldal bal oldalán jelenik meg. Ezzel módosítja a hierarchiát.  
 3. Kattintson az Új kategória-csomópont gombra.
@@ -42,7 +42,7 @@ Ez az eljárás bemutatja az új csomópontok létrehozását a beszerzési kate
 7. Kattintson a Mentés gombra.
 
 ## <a name="add-products-to-your-new-procurement-category"></a>Termékek hozzáadása az új beszerzési kategóriához
-1. Ugrás a Beszerzés és forrás > .. > Beszerzési kategóriák.
+1. Ugorjon a Beszerzés és forrás > Beszerzési kategóriák pontra.
     * Jelölje ki az éppen hozzáadott csomópontot. Ha ezt a folyamatot feladat-útmutatóként használja, szükség lehet a feladat-útmutató feloldására a csomópont kiválasztásához.  
 2. Váltsa át a Termékek szakasz kibontását.
 3. Kattintson a Hozzáadás gombra a termékek hozzárendeléséhez a beszerzési kategóriával.

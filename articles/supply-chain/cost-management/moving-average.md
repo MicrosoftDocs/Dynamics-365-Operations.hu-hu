@@ -1,9 +1,9 @@
 ---
 title: "Mozgó átlag"
-description: 
+description: "A mozgó átlag örökös költségszámítási módszer, amely az átlag elven alapul, ahol a készletkiadások költségei nem módosulnak, ha a beszerzési költség változik. A különbség tőkésített, és arányos számításon alapul. A fennmaradó összeg kiadásként van könyvelve."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+A mozgó átlag örökös költségszámítási módszer, amely az átlag elven alapul, ahol a készletkiadások költségei nem módosulnak, ha a beszerzési költség változik. A különbség tőkésített, és arányos számításon alapul. A fennmaradó összeg kiadásként van könyvelve. 
+
+Mozgó átlag használatakor a készletkiegyenlítések és a készletjelölés nem támogatott. A készletzárás nem befolyásolja a készletmodell-csoportként mozgó átlaggal rendelkező termékeket, és nem hoz létre kiegyenlítéseket a tranzakciók között.
 
 A következő előfeltételeknek kell megfelelni, ha a mozgó átlagköltség módszert alkalmazza költségszámításkor.
+
 1.  A **Cikkmodell csoportok** lapon állítson be egy olyan cikkmodell csoportot, amely esetében a mozgó átlag opció van beállítva a **Készletmodell** mezőben. **Megjegyzés:** Alapértelmezés szerint, amikor a Mozgó átlag opció van kiválasztva, a **Tényleges készlet feladása** és a **Pénzügyi készlet feladása** mezők is be lesznek jelölve. 
 
 2.  A **Feladás** lapon rendeljen számlákat az **Árkülönbség a mozgó átlaghoz** elemhez, majd a **Költségátértékelés a mozgó átlaghoz** számlákhoz a **Készlet** lapon. Az **Árkülönbség a mozgó átlaghoz** számla akkor használatos, ha a költséget arányosan kell elszámolni. Ez amiatt fordul elő, mert a beszerzési elismervényen és a beszerzési számlán található költségek között különbség van, valamint az aktuális készletben szereplő mennyiség és az eredeti készletmennyiség eltérése miatt. Használja az **Árértékelés a mozgó átlaghoz** számlát, ha a mozgó átlagköltséget egy új egységárhoz kívánja módosítani egy termékre vonatkozóan.
@@ -83,7 +87,7 @@ Ebben a példában módosul a mozgó átlagköltség egy termékre vonatkozóan.
 A **Lezárt bizonylatok** lapon megtekintheti az Önköltségi átértékelés a mozgó átlaghoz nevű számlára feladott 4,00 egységnyi korrekciót.
 
 ## <a name="moving-average-with-production"></a>Mozgó átlag termeléssel
-A mozgó átlag támogatja a termelt cikkeket. Ha szeretné használni a mozgó átlagot termelési környezetben, ki kell választania a **Becsült önköltségi ár használata** csúszkát a **Gyártásvezérlési paraméterek**lapon. Ez azt jelenti, hogy az aktuális anyagjegyzék-számítási ár helyett a becslés során számított önköltségi ár lesz használva.
+A mozgó átlag támogatja a termelt cikkeket. Ha szeretné használni a mozgó átlagot termelési környezetben, ki kell választania a **Becsült önköltségi ár használata** csúszkát a **Gyártásvezérlési paraméterek** lapon. Ez azt jelenti, hogy az aktuális anyagjegyzék-számítási ár helyett a becslés során számított önköltségi ár lesz használva.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Mozgó átlag visszadátumozott tranzakcióval
 A visszadátumozott tranzakciók hozzá lesznek rendelve az aktuális mozgó átlagköltséghez, és a termék tényleges mennyisége frissül, de ez nem befolyásolja a termék mozgó átlagárát. Az alábbi mozgó átlagos példában a mozgó átlagú termékhez egy visszadátumozott tranzakciót adunk fel.

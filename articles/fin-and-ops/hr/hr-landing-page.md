@@ -3,24 +3,24 @@ title: "Emberi erőforrások"
 description: "Az Emberi erőforrások modul segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez. Ezen területek magukba foglalják a toborzást és a megtartást, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést."
 author: rschloma
 manager: AnnBe
-ms.date: 07/06/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Operations, Core
 ms.custom: 20931
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 217eef722383cf0ad9dfdfbe5ca2973eb1337fe1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -66,7 +66,7 @@ A munkatársak felvétele után terveket alakíthat ki a kompenzáció hatékony
 
 ## <a name="develop-and-train-employees"></a>Alkalmazottak fejlesztése és képzése
 
-Támogassa alkalmazottait célkitűzéseik elérésében, miközben kiemelkedő üzleti igényeket elégít ki: állítson be célokat, hozzon létre teljesítmény-ellenőrzéseket, és kövesse nyomon a visszajelzéseket. Az alkalmazottak munkavégzéshez szükséges szakértelme fejlesztése érdekében állítson be oktatókat, tanfolyamtípusokat, tanfolyamokat, tanfolyamleírásokat, napirendeket, szekciókat és munkameneteket egy oktató tanfolyamhoz történő hozzárendelése vagy egy alkalmazott tanfolyamra történő regisztrálása előtt. Az oktatóknak már létezniük kell a rendszerben dolgozóként, pályázóként vagy kapcsolattartóként.
+Az alkalmazottak előmeneteli céljainak elérésének elősegítéséhez, valamint a kritikus üzleti igények teljesítéséhez célokat lehet beállítani, teljesítménybeszámolókat lehet létrehozni, és nyomon követhetők a visszajelzések. Segítségnyújtásként az alkalmazottaknak a szükséges készségek kifejlesztéséhez, mielőtt egy oktatót vagy dolgozót hozzátársítana egy képzéshez, megadhatja az oktatókat, a tanfolyamtípusokat, a tanfolyamokat, a tanfolyamleírásokat, a napirendeket, a szekciókat és a munkameneteket is. Az oktatóknak már létezniük kell a rendszerben dolgozóként, pályázóként vagy kapcsolattartóként.
 
 -   [Teljesítménykezelés](../../talent/performance-management-overview.md)
 -   [A munkaerő szakértelme és az üzleti igények egymáshoz történő igazítása](../../talent/skills.md)

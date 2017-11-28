@@ -1,9 +1,9 @@
 ---
 title: "Háromirányú egyeztetési irányelvek"
-description: "Ez a cikk a háromirányú egyeztetésről nyújt tájékoztatást."
+description: "Ez a témakör a háromirányú egyeztetésről nyújt tájékoztatást."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: bc53df6b994c0d2e490e8823a53478f2ad04e163
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: da3099a07e3084bf49d03e0f4d421aebe9b39940
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk a háromirányú egyeztetésről nyújt tájékoztatást.
+Ez a témakör a háromirányú egyeztetésről nyújt tájékoztatást.
 
 <a name="example-three-way-matching-for-items"></a>Példa: Háromirányú egyeztetés, eszközök esetében
 -------------------------------------
@@ -65,7 +65,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 1.  Sammy, a Fabrikam bevételezési osztályának dolgozója, kapja meg az összes gépet amit a Contosotól leszállítottak. A termék bevételezésen szereplő mennyiséghez 5-öt ír. mivel a beszerzési rendelés teljesen megérkezett, a beszerzési rendelés változásai állapotot Teljesítettre állítja.
 2.  April, a Fabrikam kötelezettségek koordinátora, belép és érvényesíti a Contoso által kiállított számlát. A következő információkat ellenőrzi:
     -   A háromirányú egyeztetést igénylő eszközök esetén a számlasoron található mennyiséget a kapott mennyiséggel egyezteti. A kapott mennyiség a termék bevételezésen van feltüntetve és egyeztetve van a számlával.
-    -   Azon eszközök esetében, melyek két- vagy háromirányú egyeztetést igényelnek, a számlasoron feltüntetett áraknak a Microsoft Dynamics 365 for Finance and Operations Enterprise edition által meghatározott toleranciaszinten belül kell lenniük. Ezek a következő típusú áregyeztetéseket jelentik:
+    -   Azon eszközök esetében, melyek két- vagy háromirányú egyeztetést igényelnek, a számlasoron feltüntetett áraknak a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition által meghatározott tolerancia szinten belül kell lenniük. Ezek a következő típusú áregyeztetéseket jelentik: Ezek a következő típusú áregyeztetéseket jelentik:
         -   Nettó egységár-egyeztetés – A számlasorban szereplő nettó egységár megegyezik a beszerzési rendelésen feltüntetett egységárral. Ebben a példában a nettó ára tolerancia szintje +8%.
         -   Összár egyeztetés – A számlasorban szereplő nettó ár megegyezik a beszerzési rendelésen feltüntetett nettó árral. A tolerancia szint lehet mérték, százalék vagy mérték és százalék. Ebben a példában az összárak tolerancia szintje + 15%.
 

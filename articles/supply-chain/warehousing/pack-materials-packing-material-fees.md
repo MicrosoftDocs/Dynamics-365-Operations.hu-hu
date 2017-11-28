@@ -3,7 +3,7 @@ title: "Csomagolóanyagok és díjak"
 description: "A csomagolóanyag-díjakat meghatározott időközönként kell kifizetni egy feldolgozó vállalatnak. Súlyegységenként egy bizonyos összeget kell kifizetni a csomagolási egységet alkotó minden egyes anyag után. A program a csomagolóanyag-díjakat kiszámítja és jelentést is készít róluk, viszont – mivel nem számít a hatóságoknak fizetendő adónak – nem ad fel főkönyvi tranzakciót a díjjal kapcsolatban."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d7cd7b3d60e9c265a766695b53d8d27ee2a8d0a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ A csomagolóanyag-súlyok/-díjak vagy mindkettő kiszámítása előtt létre k
 ## <a name="packing-units-on-purchase-order-lines"></a>A beszerzési rendelési sorokon lévő csomagolási egységek
 Nem hoz létre a rendszer a beszerzési rendelés sorokhoz csomagolási anyag tranzakciókat. Tranzakciókat hoz létre manuálisan a számlázott beszerzési rendelési sorhoz a **Csomagolóanyag-tranzakciók** oldalon.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Vevő csomagolóanyag-díjakhoz való licencszámának beállítása
+## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>Vevő csomagolóanyag-díjakhoz való licencszámának beállítása
 Ha a vevő fizeti a csomagolóanyag-díjakat, határozza meg a vevő csomagolási anyag díjához való licencszámokat a **Vevők** oldalon. Ha társított licencszámot a vevőhöz, akkor a program értékesítési rendelések számlázása során automatikusan kiszámítja a csomagolóanyag-díjakat. Számlázás után a **Díj kiszámítása** jelölőnégyzet törlődik a **Csomagoló anyag tranzakciók** oldalon, mert nem szükséges a kiszámítása és a jelentés nyomtatása. A csomagolóanyag súlyadatait rá lehet nyomtatni a számlára, és tájékoztatni lehet a vevőt arról, hogy ő fizeti a díjakat. 
 
 Ha a vállalat fizeti a csomagolóanyag-díjakat, ne adja meg a vevő licencszámát. Számlázás után a **Díjak kiszámítása** jelölőnégyzet be van jelölve a **Csomagolóanyag-tranzakciók** oldalon. Ez azt jelzi, hogy egy jelentés létrejöttekor a díjak kiszámítása megtörtént. A súlyadatokat rá lehet nyomtatni a számlára, és jelezni lehet, hogy a vállalat fizeti a díjakat.

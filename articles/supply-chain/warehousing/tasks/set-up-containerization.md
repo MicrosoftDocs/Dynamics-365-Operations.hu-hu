@@ -3,7 +3,7 @@ title: "Tárolóra bontás beállítása"
 description: "Ez az eljárás azt mutatja be, hogy hogyan lehet automatizálni a szállítmányok tárolóra bontását a Raktárkezelésben."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: aeb7d956560c513c08d5e20dcf20989b49137a52
+ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
+ms.openlocfilehash: c5faf926071dec5d2ddc1c9e921a98ecd0754917
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-containerization"></a>Tárolóra bontás beállítása
@@ -83,7 +83,7 @@ Ez az eljárás azt mutatja be, hogy hogyan lehet automatizálni a szállítmán
 ## <a name="set-up-a-container-group"></a>Tárolócsoport beállítása
 1. Ugorjon a Raktárkezelés > Beállítás > Tárolók > Tárolócsoport azonosítója pontra.
 2. Kattintson az Új lehetőségre.
-    * A tárolótípusokat logikai alapon csoportokba vonhatja össze. Minden csoportban meghatározhatja a tárolók csomagolásának sorrendjét és a tárolók feltöltésének százalékát. A rendszer a cikkek méretadatai alapján dönti el, hogy bele fog-e férni egy adott tárolóba. Az alkalmazás azt a tárolót használja, amely legközelebb áll a kérdéses cikk méretéhez. Ha egy csoportban több tárolótípus is van, akkor érdemes őket méretsorrendbe rendezni, úgy, hogy a legnagyobb tároló legyen a lista tetején 1-es számmal, a legkisebb pedig az utolsó.    
+    * A tárolótípusokat logikai alapon csoportokba vonhatja össze. Minden egyes csoportra vonatkozóan határozza meg azt a sorrendet, amelyben a tárolók feltöltését elvégzi és a tárolók százalékát a kitöltéshez. A rendszer a cikk méretének dimenziói alapján határozza meg, hogy elfér-e a tárolóban. Az alkalmazás azt a tárolót használja, amely legközelebb áll a kérdéses cikk méretéhez. Ha egy csoportban több tárolótípus is van, akkor érdemes őket méretsorrendbe rendezni, úgy, hogy a legnagyobb tároló legyen a lista tetején 1-es számmal, a legkisebb pedig az utolsó.    
 3. Írjon be egy értéket a Tárolócsoport azonosítója mezőbe.
 4. A Leírás mezőben adjon meg egy értéket.
 5. Kattintson az Új elemre.

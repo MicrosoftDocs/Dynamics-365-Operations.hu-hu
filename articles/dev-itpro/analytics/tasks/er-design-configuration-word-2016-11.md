@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d602e07548d22bcdee3f375c3c327c0e8963c3b4
+ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
+ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Konfiguráció tervezése Microsoft Word formátumú jelentések létrehozására elektronikus jelentéskészítéshez (ER)
@@ -30,9 +30,9 @@ A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jele
 
 Az alábbi lépések végrehajtásához először hajtsa végre az „ER-konfiguráció létrehozása az OPENXML formátumban létrejövő jelentésekre vonatkozóan” feladat-útmutató lépéseit. Előkészítésként le kell tölteni és menteni a következő sablonokat is helyileg a mintajelentéshez:
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+[Kifizetési jelentés sablonja](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
+[Kifizetési jelentés bekötött sablonja](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Ez az eljárás egy olyan funkcióra vonatkozik, amely a Microsoft Dynamics 365 for Operations 1611-es verziójába került be.
 
@@ -49,7 +49,7 @@ Ez az eljárás egy olyan funkcióra vonatkozik, amely a Microsoft Dynamics 365 
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Az Excel-sablon cseréje a Word-sablonra
     * Jelenleg az Excel-dokumentum használatos sablonként a kimenet OPENXML-formátumú előállításához. A jelentés sablonját Word-formátumban fogjuk importálni.  
 1. Kattintson a Mellékletek lehetőségre.
-    * A meglévő Excel-sablont cserélje le a korábban letöltött SampleVendPaymDocReport.docx Word-sablonra. Megjegyzés: Ez a sablon csak az ER-kimenetként létrehozandó dokumentum elrendezését tartalmazza.  
+    * A meglévő Excel-sablont cserélje le a korábban letöltött Kifizetési jelentés sablonja Word-sablonra. Megjegyzés: Ez a sablon csak az ER-kimenetként létrehozandó dokumentum elrendezését tartalmazza.  
 2. Kattintson a Törlés gombra.
 3. Kattintson az Igen gombra.
 4. Kattintson az Új lehetőségre.

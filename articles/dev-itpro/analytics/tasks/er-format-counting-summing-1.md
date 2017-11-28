@@ -3,7 +3,7 @@ title: "Formátum létrehozása számláláshoz és összegzéshez az elektronik
 description: "Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat egy elektronikus jelentési (ER) formátumot számlálás és összegzés céljára a már létrehozott szöveges kimeneti adatok alapján."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: efdb64fa157af0d96c2ff0e5de3db5a98190bc68
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: 3c4ae958a03d4681a85f5b83d81fe64b9ac99cf5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
-# <a name="create-formate-for-counting-and-summing-for-electronic-reporting-er"></a>Formátum létrehozása számláláshoz és összegzéshez az elektronikus jelentéskészítéshez (ER)
+# <a name="create-format-for-counting-and-summing-for-electronic-reporting-er"></a>Formátum létrehozása számláláshoz és összegzéshez az elektronikus jelentéskészítéshez (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 

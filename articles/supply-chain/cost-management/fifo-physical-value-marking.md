@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3e05b45e2c9ad57074fff5a7d86d0b347482fd63
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 2d3a6c412e497952c0c7f5b113990bbe693b0f22
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -77,7 +77,7 @@ Ha egy cikkhez be van jelölve a **Tényleges értékkel együtt** jelölőnégy
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
@@ -107,7 +107,7 @@ A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzak
 -   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
 -   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+-   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
 -   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 -   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 -   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.

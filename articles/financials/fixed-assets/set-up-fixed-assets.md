@@ -3,14 +3,14 @@ title: "Tárgyi eszközök beállítása"
 description: "Ez a témakör áttekintést nyújt a tárgyi eszközök modul beállításához."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/02/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d16c9ca5740c27528d74800957f9b47984c135cd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7a578c5198feb8481a77180e3ed95077296f4638
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,12 +56,12 @@ További információk: [Könyvek beállítása](tasks/set-up-value-models.md).
 ## <a name="fixed-asset-posting-profiles"></a>Tárgyieszköz-feladási profilok
 A könyvek beállítása után létrehozhatja a feladási profilt. A feladási profilt könyvenként kell meghatározni, de részletesebb szinten is meghatározható. Például meghatározhatja egy könyv és egy tárgyieszköz-csoport kombinációjának feladási profilját, vagy akár egyetlen tárgyieszköz-könyv profilját is. Alapértelmezés szerint a meghatározott főkönyvi számlákat a rendszer a tárgyieszköz-tranzakciókra használja.
 
-Meg kell határoznia az értékesítési folyamatok során használt főkönyvi számlákat, mind a kivezetési eladásokat, mind a kivezetési selejteket. A kivezetés időpontjában az előzőleg feladott tárgyieszköz-tranzakciókat sztornózza a program az eredeti fiókból, és áthelyezi a nettó összeget a megfelelő számlára az eszköz értékesítésével kapcsolatos nyereséghez és veszteséghez. A tranzakciók helyes sztornírozása érdekében a vállalatnál használt különböző típusú tranzakciók mindegyikére be kell állítania számlákat. A fő számlának az eredeti számlának kell lennie, amit a feladási profilban adott meg a tranzakció típusaként, és a kivezetési számlán az ellenszámla tartalmazza a veszteséget és a nyereséget. Kivételt képez a nettó könyv szerinti érték. Ebben az esetben mind a fő-, mind az ellenszámlát be kell állítani a nyereségnek és a veszteségnek a kivezetési számlán. További információk: [Tárgyieszköz-feladási profilok beállítása](tasks/set-up-fixed-asset-posting-profiles.md)
+Meg kell határoznia az értékesítési folyamatok során használt főkönyvi számlákat, mind a kivezetési eladásokat, mind a kivezetési selejteket. A kivezetés időpontjában az előzőleg feladott tárgyieszköz-tranzakciókat sztornózza a program az eredeti fiókból, és áthelyezi a nettó összeget a megfelelő számlára az eszköz értékesítésével kapcsolatos nyereséghez és veszteséghez. A tranzakciók helyes sztornírozása érdekében a vállalatnál használt különböző típusú tranzakciók mindegyikére be kell állítania számlákat. A fő számlának az eredeti számlának kell lennie, amit a feladási profilban adott meg a tranzakció típusaként, és a kivezetési számlán az ellenszámla tartalmazza a veszteséget és a nyereséget. Kivételt képez a nettó könyv szerinti érték. Ebben az esetben mind a fő-, mind az ellenszámlát be kell állítani a nyereségnek és a veszteségnek a kivezetési számlán. További információ: [Tárgyieszköz-feladási profilok beállítása](tasks/set-up-fixed-asset-posting-profiles.md)
 
 ## <a name="fixed-asset-groups"></a>Tárgyieszköz-csoportok
 Tárgyi eszköz létrehozásakor a Tárgyieszköz-csoport az egyetlen kötelező mező. Az ebben a mezőben található érték határozza meg az eszköz számos tájékoztató mezőjének alapértelmezett értékét. A könyvek úgy vannak beállítva, hogy egy alapértelmezett könyv van egy csoport minden egyes eszközéhez hozzárendelve. Ezután beállíthatja azon könyvek attribútumait, amelyek egy eszközcsoportra vonatkoznak, például az Élettartam és az Értékcsökkenési szabály.
 
-Különleges értékcsökkenési kereteket vagy rendkívüli értékcsökkenést is megadhat egy tárgyieszköz-csoport és egy könyv meghatározott kombinációjához. A különleges értékcsökkenési keretben meg kell adnia egy prioritást ahhoz, hogy meghatározza az engedmények számításának sorrendjét, ha több engedély van hozzárendelve egy könyvhöz. További információk: [Tárgyieszköz-csoportok beállítása](tasks/set-up-fixed-asset-groups.md)
+Különleges értékcsökkenési kereteket vagy rendkívüli értékcsökkenést is megadhat egy tárgyieszköz-csoport és egy könyv meghatározott kombinációjához. A különleges értékcsökkenési keretben meg kell adnia egy prioritást ahhoz, hogy meghatározza az engedmények számításának sorrendjét, ha több engedély van hozzárendelve egy könyvhöz. További információ: [Tárgyieszköz-csoportok beállítása](tasks/set-up-fixed-asset-groups.md)
 
 ## <a name="fixed-asset-parameters"></a>Tárgyi eszköz paraméterei
 Az utolsó lépés a tárgyi eszköz paramétereinek frissítése.

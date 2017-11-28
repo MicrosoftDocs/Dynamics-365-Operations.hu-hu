@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
-ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1b8b17b719713097d77a117cca53eff6886ff1c7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Lépjen a **Készletkezelés** \> **Beállítás** \> **Készlet- és raktárkez
 
 [![Kimeneti készletrendelési opció lezárása](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-Bizonyos esetekben néhány készleten lévő cikk nem tárolható ki a kitárolási lista folyamatának részeként. Ez az eset például akkor fordulhat elő, ha egy raktári dolgozó csökkenti a mennyiséget a kitárolási sorokban, és feldolgozza a kitárolási listát. Ha a **Kimeneti készletrendelés lezárása** beállítás **Igen** értékre van állítva, ki nem tárolt mennyiségekről visszajelentés készül a rendelés szintjére. Ha a beállítás értéke **Nem**, ki nem tárolt mennyiségek megmaradnak egy nyitott kimeneti rendelés mennyiségeként. Ebben az esetben a mennyiségek a raktárba kiadva maradnak, és hozzá kell adni őket egy új kitárolási listához a **Kimenő megrendelések** funkció részeként.
+Ha a raktári dolgozó csökkenti a kitárolási lista mennyiségeket, a megfelelő rendelés készletmennyiségek törlődnek a szállítmányból. A kitárolási lista egy időpontbeli frissítésekor a fennmaradó mennyiséget visszajelentik a rendelésbe, ha a **Kimeneti készletrendelés lezárása** beállítása **Igen**. Ha a **Kimeneti készletrendelés lezárása** beállítása **Nem**, a fennmaradó mennyiség nyitott kimeneti rendelésmennyiségként lesz tárolva, és hozzá kell adni egy új kitárolási listához a **Kimenő megrendelések** funkció részeként. 
 
 [![Kimenő megrendelések a Funkciók menüben](./media/open-output-order.png)](./media/open-output-order.png)
 

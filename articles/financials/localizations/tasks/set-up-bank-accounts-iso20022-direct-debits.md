@@ -3,7 +3,7 @@ title: "Vevők és vevői bankszámlák beállítása ISO20022 beszedési megbí
 description: "A feladat végigvezeti a vevői bankszámla és a vevői beszedési megbízási felhatalmazás beállításán, amelyek a vevői fizetési fájl, például az ISO20022 típusú beszedési megbízás létrehozásához szükségesek."
 author: mrolecki
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 10/31/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 5b4652b76e089d6beb2ce1513d06cf07a5ea3195
+ms.sourcegitcommit: 22fadf126dfa884520bc2fe6f94bc3fe3b612f77
+ms.openlocfilehash: 86c3f62e17d4955c12d09b512624eb5f576a9cd3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/31/2017
 
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a>Vevők és vevői bankszámlák beállítása ISO20022 beszedési megbízásokhoz

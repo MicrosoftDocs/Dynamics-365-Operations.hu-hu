@@ -3,7 +3,7 @@ title: "Menedzsment feltételeinek beállítása"
 description: "Engedélyezze a szabálytalanság kezelési folyamatokat ezen eljárások segítségével"
 author: perlynne
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 842a9441158defca74d1b203a1b2509773ba8919
+ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
+ms.openlocfilehash: 9b5b05a3c00f093066a2714964bb99146427c3bc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-prerequisites-for-management"></a>Menedzsment feltételeinek beállítása
@@ -38,7 +38,7 @@ Engedélyezze a szabálytalanság kezelési folyamatokat ezen eljárások segít
 4. Adjon meg egy számot az Órabér mezőben.
     * Az Órabér mező segítségével adja meg az óradíjat a helyi pénznemben. A rendszer az óradíjjal számítja ki a szabálytalansággal kapcsolatos műveletek költségeit. Az óradíj és a számított költségek csak a szabálytalanságokra vonatkoznak, más funkciókat nem érintenek.  
 5. Kattintson a Jelentés-beállítás elemre.
-    * Ez az oldal lehetővé teszi a különféle minőségirányítási jelentésekhez használandó minőségi-jelentés megjegyzéstípusainak meghatározását.  
+    * Ez az oldal lehetővé teszi a különböző minőségirányítási jelentésekhez használandó minőségi-jelentés megjegyzéstípusainak meghatározását.  
 6. Zárja be a lapot.
 7. Zárja be a lapot.
 

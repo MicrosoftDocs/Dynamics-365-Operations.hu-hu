@@ -1,7 +1,7 @@
 ---
 title: "Anyagjegyzék-számítások"
 description: "A költségösszesítés és az eladási ár számítását anyagjegyzék-számításoknak nevezik, és indításuk a Számítások lapról történik. A témakör tájékoztatást nyújt az anyagjegyzék-számításokkal kapcsolatban."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ A költség + árrés módszer használata esetén a számított eladási ár eg
 -   **Anyagjegyzék-számítás egy cikkre és megadott költésgszámítási verzióra** − Az anyagjegyzék-számítás egy függő eladásiár-rekordot generál a költségszámítási verzión belül. Ez az eladásiár-rekord kiindulópontként szolgál a számítási részletek megtekintéséhez (például a **Cikk-költség kiszámítása** lapon). Az eladásiár-rekord elsősorban referenciaadatként szolgál, az értékesítési rendelések eladási árának számításának azonban nem ez az alapja.
 -   **Rendelés-specifikus anyagjegyzék-számítás** − Az **Anyagjegyzék-számítás** lap egy változata az értékesítési rendelés, értékesítési ajánlat vagy szolgáltatási rendelés sorában szereplő cikkel összefüggésben használható. A rendelés-specifikus anyagjegyzék-számítás nem állít elő rekordot a költségszámítási verzión belül. Ehelyett egy számítási rekordot hoz létre, amely az **Anyagjegyzék-számítás eredményei** lapon jelenik meg. Ez a számítási rekord kiindulópontként szolgál a számítási részletek megtekintéséhez (például a **Cikk-költség kiszámítása** lapon). A kiválasztott számítási rekord adatai átvihetők az eredeti sorban szereplő cikkbe. Például a számított eladási árat át lehet vinni egy értékesítési rendelési sorban szereplő cikkbe.
 
-## <a name="orderspecific-bom-calculations"></a>Rendelésspecifiks anyagjegyzék-számítások
+## <a name="order-specific-bom-calculations"></a>Rendelésspecifiks anyagjegyzék-számítások
 A rendelésspecifikus anyagjegyzék-számítás a legyártott cikkre vonatkozó anyagjegyzék-számítás egyik variációja. A rendelésspecifikus anyagjegyzék-számítást értékesítési rendelés, értékesítési ajánlat vagy szervizrendelések sorainak kontextusában kell végezni. A rendelés-specifikus anyagjegyzék-számítás előállít egy számítási rekordot, amely megjelenik az **Anyagjegyzék-számítás eredményei** lapon. A számítási rekord tartalmazza a számított súlyt, az önköltségi rekordokon alapuló számított költséget, valamint a számított értékesítési árat. Egy-egy cikkhez elvégzett minden rendelésspecifikus anyagjegyzék számítás létrehoz egy számítási rekordot az **Anyagjegyzék-számítások eredményei** lapon, amelyet egyedi módon azonosít egy számítási szám. A számítási rekord eredményeit át lehet vinni a kiindulási pontot jelentő sorra is. A rendelésspecifikus anyagjegyzék-számítás két módon eltér a legyártott cikkre vonatkozó anyagjegyzék-számítástól.
 
 -   Először is, a rendelésspecifikus anyagjegyzék-számítással nem jön létre költségszámítási verzión belül cikk-költségrekord. Ezért az anyagjegyzék-számítási szabályok nem vonatkoznak a cikk-költség rekordok létrehozására vagy a költségrekordok felülírására.

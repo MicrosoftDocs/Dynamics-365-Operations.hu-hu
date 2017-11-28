@@ -3,7 +3,7 @@ title: "Fizetési módszerek hívásközpontnál"
 description: "Ez a témakör bemutatja a Dynamics 365 for Retail rendszer hívásközpontjaiban használható fizetési módokat."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 93cff4454139524911a98fc28bccd6aeb5b49d4a
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 321d03d154c224b55ffedbe55a2d5952c2b29d9a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -37,7 +37,7 @@ Az egyéb csatornákban használt fizetési módok, például: készpénz, csekk
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Attribútum**             | A **Beváltási arány** mezőben adja meg a várható beváltási arányt százalékban, majd válassza ki, hogy az utalvány egyszer használható legyen-e, ki legyen--e adva újra automatikusan, vagy pedig egy adott vevőre vonatkozzon-e.                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Attribútum**             | A **Beváltási arány** mezőben adja meg a várható beváltási arányt százalékban, majd válassza ki, hogy az utalvány egyszer használható legyen-e, ki legyen-e adva újra automatikusan, vagy pedig egy adott vevőre vonatkozzon-e.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Érvényes**                 | A **Kezdő dátum** és a **Záró dátum** mezőkben adja meg azt a kezdő és befejező dátumot, amelyek között az utalvány érvényes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Szabályokkal/szabályok nélkül** | A **Katalógusok** és a **Cikkek** mezőkben adja meg, hogy melyik katalógust vagy cikket foglalja, illetve nem foglalja magában az utalvány. Ha kiválasztja a **Felvétel** vagy **Kihagyás** lehetőséget, kattintson a **Beállítás** lehetőségre, majd válassza **Katalógusok felvétele/kihagyása** vagy a **Termékek felvétele/kihagyása** lehetőséget, hogy adatokat adhasson meg a katalógusról vagy cikkről. Ha az **Egyik sem** lehetőséget választja, akkor az összes cikket és katalógust magában foglalja az utalvány.                                                                                                                                                                                                                          |
 | **Vegyes**         | Ha nem szeretné, hogy ezt az utalványt további kedvezményekkel is igénybe vegyék, jelölje be a **Kizárólagos** jelölőnégyzetet. Ezután az **Eredet** mezőben válassza ki, hogy hol lehet használni az utalványt. Ha ez egy gyártói utalvány, válassza a **Gyártó kupon** jelölőnégyzetet.                                                                                                                                                                                                                                                                                                                                                                |

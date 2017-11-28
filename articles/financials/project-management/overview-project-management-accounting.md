@@ -3,7 +3,7 @@ title: "Projektvezetés és könyvelés"
 description: "A projektvezetési és könyvelési funkció több ágazatban használható egy szolgáltatás nyújtásához, egy termék előállításához vagy egy eredmény eléréshez."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cd30c9278c58f8e0ca9b50f67a999708bd64c0a2
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -228,7 +228,7 @@ A következő táblázat leírja a projekt a teljesítési költség kiszámít�
 <tbody>
 <tr class="odd">
 <td>Teljes költség – Tényleges</td>
-<td>Becsült költségek manuálisan kell megadni. Után a <strong>Teljes költség</strong> vagy <strong>Mennyiségének</strong> oszlopában meg a <strong>Költségbecslés </strong>lap elkészült, a felhasználó által megadott összegek összegből a tényleges költségeket. A projekt a teljesítési költség eredménye. Általában költségek állapotának nem nyomon követhetők alapján, például a szállodai tartózkodás és a étkezés időszakonként rögzített száma. Helyette. Nyomon követési általában alapul összehasonlítása szemben a becsült órák teljes összege. Ezzel a módszerrel nem szükséges előrejelzési modell, és a teljes költség vagy a teljes mennyiség manuálisan módosítható. Amikor beír egy értéket a <strong>Teljes költség</strong> vagy <strong>Összmennyiség</strong> oszlopban a Finance and Operations összehasonlítja ezt az értéket az időszakra feladott tényleges tranzakciókat szemben, és ezután a értéke csökken a <strong>Befejezendő mennyiség</strong> vagy <strong>Teljesítendő költség</strong> oszlopban.</td>
+<td>Becsült költségek manuálisan kell megadni. Után a <strong>Teljes költség</strong> vagy <strong>Mennyiségének</strong> oszlopában meg a <strong>Költségbecslés </strong>lap elkészült, a felhasználó által megadott összegek összegből a tényleges költségeket. A projekt teljesítési költsége az eredmény. Általában költségek állapota nem például a szállodai tartózkodások és az étkezések időszakonként rögzített száma alapján van nyomon követve. Helyette. Nyomon követési általában alapul összehasonlítása szemben a becsült órák teljes összege. Ezzel a módszerrel nem szükséges előrejelzési modell, és a teljes költség vagy a teljes mennyiség manuálisan módosítható. Amikor beír egy értéket a <strong>Teljes költség</strong> vagy <strong>Összmennyiség</strong> oszlopban a Finance and Operations összehasonlítja ezt az értéket az időszakra feladott tényleges tranzakciókat szemben, és ezután a értéke csökken a <strong>Befejezendő mennyiség</strong> vagy <strong>Teljesítendő költség</strong> oszlopban.</td>
 </tr>
 <tr class="even">
 <td>Teljes költségvetés – Tényleges</td>
@@ -243,15 +243,15 @@ A Finance and Operations automatikusan nem csökkenti az előre jelzett becslés
 > </tr>
 <tr class="odd">
 <td>Fennmaradó költségvetés</td>
-<td>Ezzel a módszerrel lehet kiszámítani a költséget a projekt teljesítésére használja a fennmaradó költségvetési modellt. Ezt a módszert, ha a tényleges költség és az előre jelzett összegeket a fennmaradó költségvetési modell össze kell adni. A teljes költség eredménye. Ezt a módszert, mielőtt fennmaradó költségvetési modell be kell állítani, amelyet a rendszer rögzíti a tényleges tranzakciók alapján tranzakciók levonandó. Az <strong>Előrejelzési modellek</strong> oldalon, győződjön meg arról, hogy meg vannak jelölve a mezőket a <strong>Automatikus előrejelzés csökkentése</strong> csoport. Általában a fennmaradó költségvetés másolja a rendszer az eredeti költségvetés. Tranzakciók kerülnek, mint a fennmaradó költségvetési tranzakcióihoz csökken. A projekt előrehaladtával, ha úgy dönt, hogy a fennmaradó költségvetés úgy kell beállítani, akkor terhelve a fennmaradó költségvetés-előrejelzési tranzakciók. <strong>Megjegyzés:</strong> A módszer csak akkor alkalmazható, ha van előrejelzési modell társítva a becsléshez.</td>
+<td>Ezzel a módszerrel lehet kiszámítani a költséget a projekt teljesítésére használja a fennmaradó költségvetési modellt. Ezt a módszert, ha a tényleges költség és az előre jelzett összegeket a fennmaradó költségvetési modell össze kell adni. A teljes költség az eredmény. Ezt a módszert, mielőtt fennmaradó költségvetési modell be kell állítani, amelyet a rendszer rögzíti a tényleges tranzakciók alapján tranzakciók levonandó. Az <strong>Előrejelzési modellek</strong> oldalon, győződjön meg arról, hogy meg vannak jelölve a mezőket a <strong>Automatikus előrejelzés csökkentése</strong> csoport. Általában a fennmaradó költségvetés másolja a rendszer az eredeti költségvetés. Tranzakciók kerülnek, mint a fennmaradó költségvetési tranzakcióihoz csökken. A projekt előrehaladtával, ha úgy dönt, hogy a fennmaradó költségvetés úgy kell beállítani, akkor terhelve a fennmaradó költségvetés-előrejelzési tranzakciók. <strong>Megjegyzés:</strong> A módszer csak akkor alkalmazható, ha van előrejelzési modell társítva a becsléshez.</td>
 </tr>
 <tr class="even">
 <td>Korábbi becslésként</td>
-<td>Ugyanez a becslés az előző időszakban használt módszert alkalmazza a rendszer. Ehhez a módszerhez előrejelzési modell, ha az előző időszakban az előrejelzési modell szükséges.</td>
+<td>Az előző időszakban használt becslési módszert alkalmazza a rendszer. Ehhez a módszerhez előrejelzési modell szükséges, ha az előző időszak előrejelzési modellt igényelt.</td>
 </tr>
 <tr class="odd">
 <td>Teljesítési költség nullára állítása</td>
-<td>Általában ezt a módszert használják a becsült projekt eltávolítása előtt. Ez a módszer feladott tényleges tranzakciókat tartalmazó teljes becslés megegyezik, és törli a <strong>Teljesítendő költség</strong> oszlopban. A megjelenő feldolgozottsági százalék mindig kell lennie 100 százalék. Az <strong>Előrejelzés</strong>jelölőnégyzetből az összes létrehozott költségsornál törölve van a jelölés, és a becsült összköltséget a program a korábbi költségbecslésből másolja át. A becslési időszak tényleges felhasználását a projekt a teljesítési költség vonni. Ehhez a módszerhez nem szükséges előrejelzési modell.</td>
+<td>Általában ezt a módszert használják a becsült projekt eltávolítása előtt. Ez a módszer feladott tényleges tranzakciókat tartalmazó teljes becslés megegyezik, és törli a <strong>Teljesítendő költség</strong> oszlopban. A megjelenő feldolgozottsági százalék mindig kell lennie 100 százalék. Az <strong>Előrejelzés</strong>jelölőnégyzetből az összes létrehozott költségsornál törölve van a jelölés, és a becsült összköltséget a program a korábbi költségbecslésből másolja át. A becslési időszak tényleges felhasználását a projektteljesítési költségből vonja le. Ehhez a módszerhez nem szükséges előrejelzési modell.</td>
 </tr>
 <tr class="even">
 <td>Költségsablonból</td>

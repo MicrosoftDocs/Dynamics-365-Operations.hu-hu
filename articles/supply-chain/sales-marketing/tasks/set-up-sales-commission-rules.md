@@ -3,7 +3,7 @@ title: "Értékesítési jutalékok szabályainak beállítása"
 description: "Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az értékesítési jutalékszámítást és követést."
 author: omulvad
 manager: AnnBe
-ms.date: 11/10/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8d81765884f741443d1c0f5b0cb8bc545945e1a1
+ms.sourcegitcommit: 8e7d2198b4976a6f60f05690d7b6f11f3da55e28
+ms.openlocfilehash: 3d5c38b1f07803242350fe016b45c45d49c0b59b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="set-up-sales-commission-rules"></a>Értékesítési jutalékok szabályainak beállítása
@@ -45,7 +45,7 @@ Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az érték
     * A Jutalék értékesítési csoportja a jutalékra jogosult üzletkötő beosztású alkalmazottakat határozza meg, ha a megfelelő értékesítési csoporthoz társított vevő bizonyos cikkeket vásárol.  
     * Az USMF bemutató vállalat adatai között szerepel egy „Üzletkötők Egyesül Államok” értékesítési csoport.  
 13. A Művelet panelen kattintson az Általános elemre.
-14. Kattintson az üzletkötő nevére.
+14. Kattintson az Üzletkötő lehetőségre.
     * Az üzletkötő lap megjeleníti azon vállalat értékesítési személyek listáját, akik egy adott jutalékcsoporttal társítva vannak. Ugyanahhoz a csoporthoz több értékesítő jutalékot rendelhet hozzá, és meghatározhatja a teljes jutalékdíj megfelelő részesedését százalékban kifejezve. Az összes alkalmazott közötti jutalékfelosztás nem haladhatja meg a 100 értéket.  
 15. A listában jelölje meg a kiválasztott sort.
 16. Kattintson a Szerkesztés lehetőségre.

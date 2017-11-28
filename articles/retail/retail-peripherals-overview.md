@@ -1,9 +1,8 @@
 ---
 title: "Kiskereskedelmi perifériák – áttekintés"
-description: "Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat. A perifériák pénztárhoz (POS) való csatlakoztatásának különböző módszereit írja le, valamint az összetevőket, amelyek a POS-kapcsolat kezeléséért felelősek"
-author: rubencdelgado
+description: "Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat."
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,14 +17,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Kiskereskedelmi perifériák – áttekintés
+# <a name="retail-peripherals-overview"></a>Kiskereskedelmi perifériás eszközök – áttekintés
 
 [!include[banner](includes/banner.md)]
 
@@ -575,7 +574,7 @@ Az aktuális biztonsági normáknak megfelelően az alábbi beállításokat kel
 ## <a name="peripheral-simulator"></a>Perifériaszimulátor
 Információért lásd: [Kiskereskedelmi perifériás szimulátor](dev-itpro/retail-peripheral-simulator.md).
 
-## <a name="microsofttested-peripheral-devices"></a>Microsoft által tesztelt perifériaeszközök
+## <a name="microsoft-tested-peripheral-devices"></a>Microsoft által tesztelt perifériaeszközök
 ### <a name="ipc-built-in-hardware-station"></a>IPC (beépített) hardverállomás
 
 A következő perifériákat a Modern POS for Windows beépített IPC-hardverállomásnak használatával tesztelték.
