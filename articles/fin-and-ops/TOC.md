@@ -9,7 +9,8 @@
 ##### [Felhőbeli telepítés](../dev-itpro/deployment/cloud-deployment-overview.md)
 ##### [Felhőbeli telepítések rendszerkövetelményei](get-started/system-requirements.md)
 ##### [On-premises telepítés](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
-##### [Helyszíni telepítések rendszerkövetelményei](get-started/system-requirements-on-prem.md)
+##### [On-premises telepítések rendszerkövetelményei](get-started/system-requirements-on-prem.md)
+##### [On-premises telepítések raktárkezelése](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### A Finance and Operations alkalmazás vásárlása
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
@@ -18,10 +19,11 @@
 ### [Új vagy módosult elemek](get-started/whats-new-changed.md)
 #### [Elavult szolgáltatások](../dev-itpro/migration-upgrade/deprecated-features.md)
 #### [Elhalasztott AX 2012-funkciók](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
-#### [A helyszíni telepítéseknél nem elérhető funkciók](get-started/features-not-implemented-on-prem.md)
+#### [A on-premises telepítéseknél nem elérhető funkciók](get-started/features-not-implemented-on-prem.md)
 #### [Életciklus-irányelv](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [Platform update 11 (2017. október)](get-started/whats-new-platform-update-11.md)
-#### [Platform update 10 (2017. augusztus)](get-started/whats-new-platform-update-10.md)
+#### [12. platformfrissítés (2017. november)](get-started/whats-new-platform-update-12.md)
+#### [11. platformfrissítés (2017. október)](get-started/whats-new-platform-update-11.md)
+#### [10. platformfrissítés (2017. augusztus)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise edition kiadás (2017. július)](get-started/whats-new-application-July-2017-update.md)
 #### [Platform update 9 (2017. július)](get-started/whats-new-platform-update-9.md)
 #### [Platform update 8 (2017. június)](get-started/whats-new-platform-update-8.md)
@@ -42,6 +44,7 @@
 ##### [2016. februári feladat-útmutatók](get-started/new-task-guides-available-february-2016.md)
 
 ### Ismerje meg a felhasználói felületet
+#### [Hozzáférhetőségi funkciói](get-started/accessibility-features.md)
 #### [Ügyfélfelület GYIK](get-started/client-faq.md)
 #### [Műveletkeresés](get-started/action-search.md)
 #### [Speciális szűrési és lekérdezési szintaxis](get-started/advanced-filtering-query-options.md)
@@ -56,7 +59,7 @@
 #### [Felhasználó preferált időzónájának beállítása](organization-administration/tasks/set-users-preferred-time-zone.md)
 #### [A Lifecycle Services szolgáltatás bemutatása](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### Súgó és támogatás
+### Dokumentáció elolvasása és futtatása
 #### [Súgó áttekintése](get-started/help-overview.md)
 #### [Súgó összekapcsolása](get-started/help-connect.md)
 #### [Mezőleírások megtekintése és exportálása](get-started/view-export-field-descriptions.md)
@@ -152,17 +155,21 @@
 
 #### [Adatok integrálása a Common Data Service környezettel](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Potenciális vevő készpénzfizetési esetre történő konfigurálása](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [A Finance and Operations-termékek szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [A Sales-számlák szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [A Sales-kapcsolatok szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Értékesítésiajánlat-fejlécek és -sorok szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Értékesítésirendelés-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Értékesítésirendelés-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Számlák karbantartása a Sales szolgáltatásban, majd szinkronizálásuk közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Termékek karbantartása a Finance and Operations szolgáltatásban, majd szinkronizálásuk közvetlenül a Sales szolgáltatásba](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Névjegyek karbantartása a Sales szolgáltatásban, majd szinkronizálásuk névjegyekként vagy ügyfelekként közvetlenül a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Értékesítési ajánlat közvetlen szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Értékesítési rendelések közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Értékesítési számla közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Számlák karbantartása a Sales szolgáltatásban, majd szinkronizálásuk a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Névjegyek karbantartása a Sales szolgáltatásban, majd szinkronizálásuk a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Termékek karbantartása a Finance and Operations szolgáltatásban, majd szinkronizálásuk a Sales szolgáltatásba](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Értékesítési ajánlatok létrehozása a Sales szolgáltatásban, majd szinkronizálásuk a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Értékesítési rendelések létrehozása a Finance and Operations szolgáltatásban, majd szinkronizálásuk a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Értékesítési számlák létrehozása a Finance and Operations szolgáltatásban, majd szinkronizálásuk a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+
+
 
 #### [Külső webszolgáltatásokat fogyasztó](../dev-itpro/data-entities/consume-external-web-service.md)
 
@@ -894,6 +901,7 @@
 ##### [Tiltólista-jelentés](../financials/localizations/emea-ita-black-list-report.md)
 ##### [Kompetencia dátuma](../financials/localizations/emea-ita-competence-date.md)
 ##### [Tárgyi eszközök értékcsökkenése](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Szállítólevél dátumigazolása a számlákon](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 ##### [Áfakönyvek](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -1347,7 +1355,29 @@
 ### [Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## Alaptervezés
+## [Alaptervezés](../supply-chain/master-planning/master-planning-home-page.md)
+### [Alapterv](../supply-chain/master-planning/master-plans.md)
+#### [Fedezeti beállítások](../supply-chain/master-planning/coverage-settings.md)
+#### [Cikkek fedezeti szabályainak meghatározása (feladat-útmutató)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [Korlátozott terv létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [Társtermékek anyagfelhasználási tervének létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [Tervezett rendelések karbantartása](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Késések kezelése](../supply-chain/master-planning/delays.md)
+#### [Alábontás nyomon követése](../supply-chain/master-planning/trace-explosion.md)
+#### [Műveletkérő üzenetek](../supply-chain/master-planning/action-messages.md)
+#### [Alaptervezés futtatásának megfigyelése (feladat-útmutató)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [Egy helyre vonatkozó ütemezés létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [Egy helyre vonatkozó terv létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [Az alaptervek és a többhelyes funkció](../supply-chain/master-planning/master-plan-multisite-functionality.md)
+##### [Telephely fedezet tervezése, kötelező raktár](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+##### [Telephely fedezet tervezése, raktár nem kötelező](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+##### [Telephely és raktárfedezet tervezése, kötelező raktár](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+##### [Telephely és raktárfedezet tervezése, nem kötelező raktár](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+##### [Anyagjegyzék-verzió meghatározása](../supply-chain/master-planning/master-plan-bom-version-determined.md)
+##### [Anyagjegyzék-verzió alábontása](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
+#### [Vállalatközi terv létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [Kimenő tervezett vállalatközi igény megtekintése (feladat-útmutató)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [Együttműködés a belső ellátási lánc vevőivel (feladat-útmutató)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 ### [Igény-előrejelzés](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Igény-előrejelzés beállítása](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Előzményadatok importálása az igény-előrejelzésekhez](../supply-chain/master-planning/import-historical-data.md)
@@ -1359,29 +1389,6 @@
 #### [Csökkentési kulcsok](../supply-chain/master-planning/reduction-keys.md)
 #### [Kiinduló előrejelzés létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [Igény-előrejelzés manuális módosítása (feladat-útmutató)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
-
-### [Alapterv](../supply-chain/master-planning/master-plans.md)
-#### [Fedezeti beállítások](../supply-chain/master-planning/coverage-settings.md)
-#### [Tervezett rendelések karbantartása](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [Késések](../supply-chain/master-planning/delays.md)
-#### [Műveletkérő üzenetek](../supply-chain/master-planning/action-messages.md)
-#### [Alábontás nyomon követése](../supply-chain/master-planning/trace-explosion.md)
-#### [Az alaptervek és a többhelyes funkció](../supply-chain/master-planning/master-plan-multisite-functionality.md)
-##### [Telephely fedezet tervezése, kötelező raktár](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-##### [Telephely fedezet tervezése, raktár nem kötelező](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-##### [Telephely és raktárfedezet tervezése, kötelező raktár](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-##### [Telephely és raktárfedezet tervezése, nem kötelező raktár](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-##### [Anyagjegyzék-verzió meghatározása](../supply-chain/master-planning/master-plan-bom-version-determined.md)
-##### [Anyagjegyzék-verzió alábontása](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [Alaptervezés futtatásának megfigyelése (feladat-útmutató)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
-#### [Cikkek fedezeti szabályainak meghatározása (feladat-útmutató)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-#### [Egy helyre vonatkozó terv létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-plan-site.md)
-#### [Egy helyre vonatkozó ütemezés létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-#### [Korlátozott terv létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/constrained-plan.md)
-#### [Vállalatközi terv létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-#### [Társtermékek anyagfelhasználási tervének létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-#### [Kimenő tervezett vállalatközi igény megtekintése (feladat-útmutató)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-#### [Együttműködés a belső ellátási lánc vevőivel (feladat-útmutató)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [Mobilalkalmazás](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
@@ -1853,7 +1860,7 @@
 #### [A beszerzési rendelések munkasablonjának beállítása](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 #### [Rakományok és szállítmányok tervezése a Rakománytervezési munkaterülettel](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [Fejlesztés és felügyelet](../dev-itpro/toc.md)
+# [Finance and Operations fejlesztése és adminisztrációja](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 
