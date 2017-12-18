@@ -180,11 +180,11 @@
 
 ## Telepítés és gyorsjavítások
 ### [A Retail Store Scale Unit áttekintése](dev-itpro/retail-store-system-begin.md)
-#### [A Retail Store Scale Unit konfigurálása és telepítése](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [A Retail Store Scale Unit konfigurálása és telepítése](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [A Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md)
-#### [Kiskereskedelmi számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
-#### [Retail POS eszköz aktiválása](dev-itpro/retail-device-activation.md)
-#### [Retail Cloud POS biztosítása](dev-itpro/secure-retail-cloud-pos.md)
+### [Kiskereskedelmi számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
+### [Retail POS eszköz aktiválása](dev-itpro/retail-device-activation.md)
+### [Retail Cloud POS biztosítása](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)
 ### [Retail önkiszolgáló központi telepítése](dev-itpro/retail-mass-deployment.md)
 ### [Retail összetevő-események a diagnosztikához és a hibaelhárításhoz](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -194,50 +194,54 @@
 ### [A frissítés és az N-1-támogatás áttekintése](dev-itpro/overview-upgrade-n-minus1.md)
 ### [N-1-összetevők telepítése](dev-itpro/n-1-installation-configuration.md)
 
+## Implementációs segítség
+### [Eszközkezelés implementációs útmutatója](implementation-considerations-devices.md)
+
 ## A környezet konfigurációja
 ### [Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [A Bing Térképek kezelése](dev-itpro/manage-bing-maps.md)
 
-## Bővíthetőség
-### Pénztár
-#### [A Retail POS képernyő-elrendezései](pos-screen-layouts.md)
-##### [A POS képernyőelrendezés-tervező telepítése](install-pos-layout-designer.md)
-#### [MPOS konfigurálása offline módhoz](dev-itpro/retail-modern-pos-offline.md)
-#### [MPOS- és Cloud POS-eseményindító bővíthetősége](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [Egyéni vezérlő hozzáadása a POS-nézethez](dev-itpro/pos-custom-control.md)
-#### [POS-kifizetés kiterjesztése](dev-itpro/pos-payment-extension.md)
-#### [Külső ajándékutalvány-támogatás](dev-itpro/gift-card.md)
+## Pénztár bővíthetősége
+### [A Retail POS képernyő-elrendezései](pos-screen-layouts.md)
+### [A POS képernyőelrendezés-tervező telepítése](install-pos-layout-designer.md)
+### [MPOS konfigurálása offline módhoz](dev-itpro/retail-modern-pos-offline.md)
+### [MPOS- és Cloud POS-eseményindító bővíthetősége](dev-itpro/modern-pos-trigger-extensibility.md)
+### [Egyéni vezérlő hozzáadása a POS-nézethez](dev-itpro/pos-custom-control.md)
+### [POS-kifizetés kiterjesztése](dev-itpro/pos-payment-extension.md)
+### [Külső ajándékutalvány-támogatás](dev-itpro/gift-card.md)
 ### [Retail Experience alkalmazás létrehozása](dev-itpro/create-retail-experience-app.md)
 ### [Hardverállomás áttekintése és bővíthetősége](dev-itpro/hardware-station-extensibility.md)
 
-### Retail Server
-#### [Retail Server OData-vezérlőjének kiterjesztése](dev-itpro/extend-retail-server-odata-controller.md)
-#### [Webes API- és OData-vezérlők](dev-itpro/odata-controllers-api.md)
-#### [Kiskereskedelmi kiszolgáló ügyfél és fogyasztói API-k](dev-itpro/retail-server-customer-consumer-api.md)
-#### [Metaadatok kiterjesztése](dev-itpro/extend-metadata.md)
-#### [A kiskereskedelmi futtatókörnyezet kiterjesztése a POS offline mód támogatásához](dev-itpro/call-crt-service-offline.md)
-### Kereskedelmi futtatókörnyezet
-#### [Kereskedelmi futtatókörnyezet áttekintése](dev-itpro/commerce-runtime-overview.md)
-#### [A kereskedelmi futtatókörnyezet és a kiskereskedelmi kiszolgáló bővíthetősége ](dev-itpro/commerce-runtime-extensibility.md)
-#### [Ügyfélpreferencia-adatok hozzáadása a csatornaadatbázishoz](dev-itpro/add-customer-preference-channel.md)
-#### [Tulajdonságok hozzáadása az értékesítési rendeléshez](dev-itpro/add-properties-sales-order.md)
-#### [A kereskedelmi futtatókörnyezet bővíthetősége és eseményindítói ](dev-itpro/commerce-runtime-extensibility-trigger.md)
-#### [Eseményindító-példa: Zárolási tranzakciók](dev-itpro/trigger-example-blocking-transaction.md)
-#### [Eseményindító-példa: Visszaküldési irányelv](dev-itpro/trigger-example-return-policy.md)
-### Elektronikus kereskedelem
-#### [Online áruház konfigurálása](dev-itpro/configure-online-store.md)
-#### [Hitelesítési szolgáltatók konfigurálása](dev-itpro/configure-authentication-providers.md)
-#### [Elektronikus kereskedelmi platform](dev-itpro/ecommerce-platform.md)
-#### [Elektronikus kereskedelmi platform SDK](dev-itpro/ecommerce-platform-sdk.md)
-### Fizetési csatlakoztató
-#### [Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
-#### [Fizetési csatlakozó telepítése](dev-itpro/deploy-payment-connector.md)
-#### [Windows-telepítő létrehozása egy fizetési csatlakozóhoz](dev-itpro/create-windows-installer-payment-connector.md)
+## Retail Server bővíthetősége
+### [Retail Server OData-vezérlőjének kiterjesztése](dev-itpro/extend-retail-server-odata-controller.md)
+### [Webes API- és OData-vezérlők](dev-itpro/odata-controllers-api.md)
+### [Kiskereskedelmi kiszolgáló ügyfél és fogyasztói API-k](dev-itpro/retail-server-customer-consumer-api.md)
+### [Metaadatok kiterjesztése](dev-itpro/extend-metadata.md)
+### [A kiskereskedelmi futtatókörnyezet kiterjesztése a POS offline mód támogatásához](dev-itpro/call-crt-service-offline.md)
 
-## Retail szoftverfejlesztői készlet (SDK)
-### [A Retail szoftverfejlesztői készlet (SDK) áttekintése](dev-itpro/retail-sdk/retail-sdk-overview.md)
-### [A Retail szoftverfejlesztői készlet (SDK) integrálása a folyamatos buildrendszerrel](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
-### [A Retail szoftverfejlesztői készlet (SDK) bővíthetőségi mintái](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
+## Kereskedelmi futtatókörnyezet bővíthetősége
+### [Kereskedelmi futtatókörnyezet áttekintése](dev-itpro/commerce-runtime-overview.md)
+### [A kereskedelmi futtatókörnyezet és a Retail kiszolgáló bővíthetősége ](dev-itpro/commerce-runtime-extensibility.md)
+### [Ügyfélpreferencia-adatok hozzáadása a csatornaadatbázishoz](dev-itpro/add-customer-preference-channel.md)
+### [Tulajdonságok hozzáadása az értékesítési rendeléshez](dev-itpro/add-properties-sales-order.md)
+### [A kereskedelmi futtatókörnyezet bővíthetősége és eseményindítói ](dev-itpro/commerce-runtime-extensibility-trigger.md)
+### [Eseményindító-példa: Zárolási tranzakciók](dev-itpro/trigger-example-blocking-transaction.md)
+### [Eseményindító-példa: Visszaküldési irányelv](dev-itpro/trigger-example-return-policy.md)
+
+## Elektronikus kereskedelem bővíthetősége
+### [Online áruház konfigurálása](dev-itpro/configure-online-store.md)
+### [Hitelesítési szolgáltatók konfigurálása](dev-itpro/configure-authentication-providers.md)
+### [Elektronikus kereskedelmi platform](dev-itpro/ecommerce-platform.md)
+### [Elektronikus kereskedelmi platform SDK](dev-itpro/ecommerce-platform-sdk.md)
+
+## Fizetési csatlakozó bővíthetősége
+### [Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+### [Fizetési csatlakozó telepítése](dev-itpro/deploy-payment-connector.md)
+### [Windows-telepítő létrehozása egy fizetési csatlakozóhoz](dev-itpro/create-windows-installer-payment-connector.md)
+
+## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
+### [A Retail SDK integrálása a folyamatos buildrendszerrel](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+### [A Retail SDK bővíthetőségi mintái](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Készpénzjegyzékek Svédország esetében](localizations/emea-swe-cash-registers.md)
 ### [A Retail POS integrációja ellenőrzőegységekkel Svédországnál](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 ### [Készpénzjegyzékek Norvégia esetében](localizations/emea-nor-cash-registers.md)
@@ -249,7 +253,13 @@
 ### [Rendelés attribútumai](dev-itpro/order-attributes.md)
 ### [Vevőattribútumok](dev-itpro/customer-attributes.md)
 ### [A Retail Typescript és a C# proxy](dev-itpro/typescript-proxy-retail-pos.md)
-
+### [Retail POS-minták futtatása](dev-itpro/pos-run-samples.md)
+### [POS nézetek kibővítése egyéni oszlopoknak és az alkalmazássor gombjainak hozzáadásával](dev-itpro/pos-view-extension.md)
+### [Egyéni vezérlőelemek hozzáadása a Retail Modern POS tranzakciós oldalaihoz](dev-itpro/pos-custom-transaction.md)
+### [Egyéni oszlopok hozzáadása a POS tranzakciós rácsához](dev-itpro/pos-custom-transaction-column.md)
+### [POS API meghívása, illetve művelet egy POS bővítménytől](dev-itpro/pos-api-extension.md)
+### [POS nézetek kibővítése egyéni oszlopoknak és az alkalmazássor gombjainak hozzáadásával](dev-itpro/pos-view-extension.md)
+### [A Retail Modern POS eseményindítói és nyomtatása](dev-itpro/pos-trigger-printing.md)
 
 ## Kereskedelmi futtatókörnyezet
 ### [Hűségidő kiterjesztése](dev-itpro/retail-sdk/loyalty-extension-sample.md)

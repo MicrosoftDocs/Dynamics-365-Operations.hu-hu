@@ -124,6 +124,7 @@
 #### [Alosztály regisztrálása gyári módszerhez](extensibility/register-subclass-factory-methods.md)
 #### [Válasz az EventHandlerResult szolgáltatással](extensibility/respond-event-handler-result.md)
 #### [A RunBase osztályt bővíti](extensibility/extend-runbase-class.md)
+#### [Delegált használata az Application startup osztály testreszabásánál](extensibility/startup-customizations.md)
 #### [Létező mező módosítása egy táblában](extensibility/modify-existing-field.md)
 #### [Új mező hozzáadása egy meglévő táblához](extensibility/add-field-extension.md)
 #### [Index hozzáadása egy meglévő táblához](extensibility/add-index.md)
@@ -503,12 +504,14 @@
 ### [Hardver méretezése](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Helyszíni projekt létrehozása](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Helyszíni környezetek beállítása és telepítése](deployment/setup-deploy-on-premises-environments.md)
-### [Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez](deployment/develop-deploy-custom-models-on-premises.md)
-### [Frissítések alkalmazása helyszíni telepítéshez](deployment/apply-updates-on-premises.md)
+### [Egyéni modellek fejlesztése és telepítése on-premises környezetekhez](deployment/develop-deploy-custom-models-on-premises.md)
+### [Frissítések alkalmazása on-premises telepítéshez](deployment/apply-updates-on-premises.md)
+### [On-premises telepítés újratelepítése](deployment/redeploy-on-prem.md)
+### [Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises) – problémamegoldás](deployment/troubleshoot-on-prem.md)
 
 ## Egyéni kód telepítése
 ### [Telepíthető csomag létrehozása](deployment/create-apply-deployable-package.md)
-### [Telepíthető csomag alkalmazása](deployment/apply-deployable-package-system.md)
+### [Frissítések alkalmazása egy felhőalapú környezetre](deployment/apply-deployable-package-system.md)
 ### [Telepíthető csomag telepítése](deployment/install-deployable-package.md)
 ### [Csomagalkalmazási problémák elhárítása](deployment/deployable-package-troubleshooting.md)
 
@@ -544,11 +547,13 @@
 ## Frissítés egy legutóbbi frissítésre
 ### [A legújabb kiadásra való áttelepítés folyamata](migration-upgrade/upgrade-latest-update.md)
 ### [Életciklus-irányelv](migration-upgrade/versions-update-policy.md)
-### [Frissítés a legújabb platformfrissítésre](migration-upgrade/upgrade-latest-platform-update.md)
+### [A legújabb platformfrissítés alkalmazása a környezetére](migration-upgrade/upgrade-latest-platform-update.md)
 ### [A Dynamics-platform frissítése a 2016. augusztusi kiadásra](migration-upgrade/update-platform-each-release.md)
 ### [Védőfalkörnyezet frissítése](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Adatok frissítése a fejlesztői vagy a bemutató környezetben](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Fejlesztői eszközök frissítése](dev-tools/update-development-tools.md)
+### [Frissítések alkalmazása on-premises telepítéshez](deployment/apply-updates-on-premises.md)
+### [On-premises telepítés újratelepítése](deployment/redeploy-on-prem.md)
 
 ## Gyorsjavítások és szervizelés
 ### [Gyorsjavítások letöltése a Lifecycle Services szolgáltatásból](migration-upgrade/download-hotfix-lcs.md)
@@ -566,6 +571,7 @@
 ## [Vállalatközi adatmegosztás](sysadmin/cross-company-data-sharing.md)
 ## [Karbantartási mód](sysadmin/maintenance-mode.md)
 ## [Előre konfigurált rendszerfiókok](sysadmin/pre-configured-system-accounts.md)
+## [B2B felhasználók exportálása az Azure AD felé](sysadmin/implement-b2b.md)
 ## [Szerepkör alapú biztonság](sysadmin/role-based-security.md)
 ### [Biztonsági architektúra](sysadmin/security-architecture.md)
 ### [Biztonsági jelentések](sysadmin/security-reports.md)

@@ -2,6 +2,8 @@
 
 # [Első lépések](talent-get-started.md)
 ## [Rendszerkövetelmények és frissítési irányelv](talent-versions-update-policy.md)
+## [Microsoft Dynamics 365 for Talent létesítése](provisioning-talent.md)
+## [Talent funkció kibővítése](extend-talent-functionality.md)
 
 # [Emberi erőforrásokra vonatkozó stratégia kialakítása](departments-jobs-positions.md)
 ## [Feladatösszetevők beállítása](create-job.md)
