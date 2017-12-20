@@ -3,7 +3,7 @@ title: "Értékesítési és nyereségességi teljesítmény Power BI-tartalom"
 description: "Ez a témakör azt ismerteti, mit tartalmaz az Értékesítési és a jövedelmezőségi teljesítmény Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3692b9be0fb93e0e2de743775a54bb9c9dbf5809
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: c065eb2f19bbbd553e070f06c29f73114e3efad5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ A jövedelmezőség elemzése a következő módokon történhet:
 -   Ügyfél jövedelmezősége (bevétel és bruttó nyereség szerint)
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition (2017. július) rendszert használja, az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom itt található: **Értékesítési és jövedelmezőségi teljesítmény** lap (**Gyártásvezérlés** > **Lekérdezések és jelentések** > **Értékesítési teljesítmény elemzése** > **Értékesítési és jövedelmezőségi teljesítmény**). 
+Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom az **Értékesítési és jövedelmezőségi teljesítmény** oldalon látható (**Értékesítés és marketing** > **Lekérdezések és jelentések** > **Értékesítési teljesítményelemzés** > **Értékesítési és jövedelmezőségi teljesítmény**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom tartalmaz egy jelentést, amely metrikák készletéből áll. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. Az alábbi táblázatban a tartalom megjelenítési formáinak áttekintése található.

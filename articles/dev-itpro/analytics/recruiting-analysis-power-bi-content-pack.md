@@ -3,7 +3,7 @@ title: "Toborzási Power BI-tartalom"
 description: "Ez a témakör ismerteti a Toborzási Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
 author: jcart1106
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 42d7b94e655799596f478e7592a17437b336099e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 22138ab34243aa5f8c74f785ce3aaf68b27b9622
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 Ez a témakör ismerteti a **Toborzási** Microsoft Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition (2017. július) rendszert használja, a **Felvétel** Power BI-tartalom a **Toborzás kezelése** munkaterületen jelenik meg. 
+A **Felvétel** Power BI-tartalom a **Toborzás kezelése** munkaterületen látható. 
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Jelentések és megjelenítések a Toborzás kezelése munkaterületen
 A **Toborzás kezelése** munkaterület tartalmaz egy **Elemzés** lapot. Ez a lap a beágyazott toborzási Power BI-tartalmat tartalmazza. A tartalom egy áttekintő lapból és további, részletesek adatokat tartalmazó fülekből áll. Az alábbi táblázatban található a füleken megjelenő jelentések ismertetése.

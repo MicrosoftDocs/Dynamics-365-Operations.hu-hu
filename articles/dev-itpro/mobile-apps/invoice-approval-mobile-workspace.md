@@ -3,7 +3,7 @@ title: "Számlajóváhagyások mobil munkaterület"
 description: "Ez a témakör a Számlajóváhagyások mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület a szállítói számla fejléce munkafolyamattal Önhöz rendelt számlák listáját tartalmazza."
 author: abruer
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: af673f076f684500b6ca84d04c01f7f773d65cd6
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 03179fdfd23e26250af92eb70d2ede710bd7007f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 </thead>
 <tbody>
 <tr class="odd">
-<td>A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017. július) rendszert telepíteni kell a szervezetben.</td>
+<td>A Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition rendszert telepíteni kell a szervezetben.</td>
 <td>Rendszergazda</td>
 <td>Lásd: <a href="../deployment/deploy-demo-environment.md">Bemutatókörnyezet telepítése</a>.
 </td>

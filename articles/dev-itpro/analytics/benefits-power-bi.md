@@ -3,7 +3,7 @@ title: "Juttatások Power BI-tartalom"
 description: "Ez a témakör a Juttatások Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 21f7f77148728a6e7584af76ec053250f52bc73c
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 25111ac7ae07e04bc81ac23a348464bcbe1393af
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ Ez a témakör a **Juttatások** Microsoft Power BI-tartalmat ismerteti. Leírja
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
 A **Juttatások** Power BI-tartalom a **Juttatáskezelés** munkaterületen jelenik meg, amennyiben a következő termékek valamelyikét használja:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017. július)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések

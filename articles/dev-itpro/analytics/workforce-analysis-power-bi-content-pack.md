@@ -3,7 +3,7 @@ title: "Munkaerő-mutatók Power BI-tartalom"
 description: "Ez a témakör a Munkaerő-mutatók Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
 author: jcart1106
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1a94eb68d017a334ae0246b50813de9add0ea82a
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ade42c932b764b8cf5540bddd099e57901637f35
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -34,7 +34,7 @@ Ez a témakör a **Munkaerő-mutatók** Microsoft Power BI-tartalmat ismerteti. 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
 A **Munkaerő-mutatók** Power BI-tartalom a **Személyzetkezelés** munkaterületen jelenik meg a következő termékek valamelyikének használatakor:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017. július)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás 
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák

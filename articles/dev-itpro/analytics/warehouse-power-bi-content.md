@@ -3,7 +3,7 @@ title: "Raktárteljesítmény Power BI-tartalom"
 description: "Ez a témakör azt ismerteti, mit tartalmaz a Raktári teljesítmény Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: Mirzaab
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ A raktárkezelők a **Raktárteljesítmény** Power BI-tartalom segítségével 
 -   **Hely készletének pontossága** – A készlet pontossága fontos a belső raktár-üzletiintelligencia (BI) szempontjából. Nagyon fontos, hogy meghatározza, hogy általában mennyire pontosan számol. Azonban fontos, hogy meghatározza, mennyire pontos a cikkek megfelelő helyeken való tárolására, és hogy kiemelje az eltérési adatokat annak érdekében, hogy jobb pozíciókat találjon a cikkek számára, vagy megkezdhesse az adott cikk számlálását. (Jelenleg az új cikkalapú számlálási funkció gyorsjavításként jelenik meg.) Ha ezt a Power BI-tartalmat használja a helyszínen megtalálható készletadatok helyességének megállapításához, a lopás is azonosítható a boltokban. Azt is meghatározhatja, hogy van-e olyan hely, ahol a kéznél lévő mennyiségek eltérnek a vállalati erőforrás-tervezési rendszer (ERP) adataitól. Lehet, hogy ezek a helyek túl nagyok, vagy nem lehet megszámolni őket. Emellett a fizikai helymeghatározás esetenként téves lehet, ezért nehéz egyetlen típusú cikket szinkronban tartani a kéznél lévő adatokkal.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Power BI-tartalomcsomag elérése
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition (2017. július) rendszert használja, a **Termelési teljesítmény** Power BI-tartalom itt található: **Raktári teljesítmény** lap (**Raktárkezelés** > **Lekérdezések és jelentések** > **Raktári teljesítmény elemzése** > **Raktári teljesítmény**). 
+A **Raktári teljesítmény** Power BI-tartalom a **Raktári teljesítmény** oldalon látható (**Raktárkezelés** > **Lekérdezések és jelentések** > **Raktári teljesítményelemzés** > **Raktári teljesítmény**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 A **Raktárteljesítmény** Power BI-tartalom jelentést tartalmaz. Ez a jelentés több olyan metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Raktárteljesítmény** Power BI-tartalom megjelenítési formáinak áttekintése található.

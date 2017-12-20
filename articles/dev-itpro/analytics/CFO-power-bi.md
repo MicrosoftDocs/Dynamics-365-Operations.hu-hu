@@ -3,7 +3,7 @@ title: "Pénzügyi igazgatói áttekintés Power BI-tartalom"
 description: "Ez a témakör a Pénzügyi igazgatói áttekintés Microsoft Power BI-tartalmat ismerteti."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ Ez a témakör a **Pénzügyi igazgatói áttekintés** Microsoft Power BI-tarta
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
 
-Ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017. júliusi frissítés) megoldást használja, akkor a **Pénzügyi igazgatói áttekintés** Power BI-tartalom jelentései a **Pénzügyi igazgatói áttekintés** munkaterületen jelennek meg.
+A **Pénzügyi igazgatói áttekintés** Power BI-tartalom jelentései a **Pénzügyi igazgatói áttekintés** munkaterületen jelennek meg.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
 A **Pénzügyi igazgatói áttekintés** Power BI-tartalom számos más Power BI-tartalom jelentéseinek összesítéséből, valamint a főkönyv egyes költségvetési és tényleges egyenlegekből áll. Ezáltal ez a Power BI-tartalom áttekintést nyújt a szervezetről a pénzügyi igazgató számára.

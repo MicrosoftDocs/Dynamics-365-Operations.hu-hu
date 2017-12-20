@@ -3,7 +3,7 @@ title: "Billentyűparancsok"
 description: "A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations, Enterprise edition programban."
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -34,10 +34,14 @@ A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Ope
 
 **Megjegyzés:** Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
 
+## <a name="finding-a-shorcut"></a>Billentyűparancs megkeresése
+A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billentyűparancsokat közvetlenül a felhasználói felületről fedezhetik fel. Egyszerűen kattintson jobb gombbal a kívánt vezérlőelemre, és válassza a **Billentyűparancsok megtekintése** elemet. Ennek hatására megnyílik egy párbeszédpanel, melyen láthatók az oldal adott részén használható billentyűparancsok. 
+
+
 ## <a name="action-shortcuts"></a>Műveleti billentyűparancsok
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
-| **Teendő:**                                    | **Billentyű vagy billentyűkombináció**                        |
+| **Művelet**                                    | **Billentyű vagy billentyűkombináció**                        |
 | Műveletkeresés megnyitása                                | Ctrl+’ vagy Alt+Q                  |
 | Ugrás a szokásos műveleti ablakba                  | Alt+M,A vagy Ctrl+F6               |
 | Lap megnyitása a műveleti ablakban vagy egy menüben           | Enter vagy Szóköz vagy Alt+Lefelé nyíl |
@@ -48,13 +52,14 @@ A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Ope
 | Az alapértelmezett gomb végrehajtása egy űrlapon/párbeszédablakban   | Alt+Enter                        |
 | Kattintás egy gombra vagy csempére                            | Enter vagy Szóköz                   |
 | Számláló csempe frissítési információinak megtekintése         | Alt+Felfelé nyíl                     |
+| Aktuálisan rendelkezésre álló billentyűparancsok megtekintése                | Alt+Shift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Dátum kiválasztási billentyűparancsok
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Művelet**                        | **Billentyű vagy billentyűkombináció**                                 |
 | A dátumválasztó megnyitása                  | Alt+Lefelé nyíl                            |
-| Ugrás a dátumok között a dátumválasztóban | CTRL + nyílbillentyűk                               |
+| Ugrás a dátumok között a dátumválasztóban | CTRL + nyílbillentyűk                           |
 | Ugrás az következő/előző hónapra       | Page down / Page up                       |
 | Ugrás az következő/előző évre        | Ctrl+Shift+Page down / Ctrl+Shift+Page up |
 | Áthelyezés mára                         | Ctrl+Home                                 |
@@ -65,6 +70,7 @@ A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Ope
 ## <a name="factbox-shortcuts"></a>Adatterület billentyűparancsok
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **Művelet**                                                                  | **Billentyű vagy billentyűkombináció**                                 |
 | Az adatterület ablak megnyitása (vagy az adatterület ablakra fókuszálás, ha már meg van nyitva) | Alt+M,B vagy Ctrl+F2                        |
 | Az adatterület ablak bezárása (a fókusszal az adatterület ablakban)                         | Esc                                       |
 | Ugrás a következő/előző adatterületre (a fókusszal az adatterület ablakban)              | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl |

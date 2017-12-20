@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ef58898a6822224e44873afdd7c55800215c37a0
+ms.sourcegitcommit: ff0d19a2d712ccb17762803e2fe4ab2ed5aa024e
+ms.openlocfilehash: bd5f055ef816f050ed99390c455a613d46dd6323
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/06/2017
 
 ---
 
@@ -74,7 +74,7 @@ Az **áttárolási irányelvben** Ön határozza meg, hogy mely dokumentumtípus
 ### <a name="cross-docking-policy-name-transfer-order"></a>Áttárolási irányelv neve: Átmozgatási rendelés
 
 -   Sorszám: 10
--   Munkarendelés típusa: Átmozgatási probléma
+ -   Munkarendelés típusa: Átmozgatási probléma
 -   Az áttárolási igényhez meg kell adni a helyet: Hamis
 -   Párhuzamos áttárolási stratégia: dátuma és időpontja
 
@@ -102,10 +102,9 @@ Miután egy terméket a gyártósoron befejezettnek nyilvánítottak, áthelyezi
 6.  Hozzon létre átmozgatási rendelést. Hozzon létre az L0101 tételszámú átadási rendelést. Mennyiség = 20.
 7.  Oldja fel az átadási rendelést a terheléstervező munkaállomástól. A **Szállítás** lapon válassza ki a menüelemet, a rakomány tervezési munkaterület és a, a **Kiadás** menüben a rakománysornál válassza a **Raktárba való kiadás** lehetőséget. Az átmozgatási rendelésben jelenleg létezik egy **Átmozgatási probléma** típusú nyitott hullámvonal.
 8.  Termelési rendelés létrehozása. Lépjen a **Termelési rendelés** listaoldalt, és hozzon létre egy gyártási rendelést az L0101 termékhez. Mennyiség = 20. A termelési rendelés becsült ideje és indulása. A **Kitárolási lista feladása** mező beállítása továbbra is **Nem**.
-9.  Készként jelentés a mobileszközről. Menjen a mobileszköz-portálra, és válassza ki a **Készként jelentés és betárolás** menüpontot. Most jelentse készként az L0101 cikkszámot a kézben tartott eszközről. Ne feledje, hogy a helyszín a **BAYDOOR**. Ezt a helyet az **Átmozgatási probléma** helymeghatározási irányelvnél találhatja az **Eltárolás** munkarendeléshez. Vegye figyelembe, hogy az **Átmozgatási probléma** típusú munkát létrehozták és befejezték. Lépjen az átmozgatási rendelés munkarészleteihez a munka ellenőrzéséhez.
-10. Most próbáljon 20-szor többet elindítani a termelési rendelésben, majd próbáljon meg jelenteni 20-at a kézben tartott eszköz használatával. Ezúttal az **LP-001** helyszín javasolt eltárolási helyszínként. Ezt a helyet a helymeghatározási irányelvnél találhatja a **Késztermékek betárolása** lehetőségnél. Ezt a helymeghatározási irányelvet használják, mert nincs áttárolási lehetőség. Az LP-001 átadási rendelést teljes mértékben teljesítette az első áttárolási tevékenység.
-
-Létrejött és feldolgozásra került a **Késztermékek betárolása** funkció.
+9.  Készként jelentés a mobileszközről. Menjen a mobileszköz-portálra, és válassza ki a **Készként jelentés és betárolás** menüpontot. Most jelentse készként az L0101 cikkszámot a kézben tartott eszközről. Mennyiség = 10. Ne feledje, hogy a helyszín a **BAYDOOR**. Ezt a helyet az **Átmozgatási probléma** helymeghatározási irányelvnél találhatja az **Eltárolás** munkarendeléshez. Vegye figyelembe, hogy az **Átmozgatási probléma** típusú munkát létrehozták és befejezték. Lépjen az átmozgatási rendelés munkarészleteihez a munka ellenőrzéséhez.
+10. Most jelentsen a mobileszközről további 10 darabot. Ne feledje, hogy a helyszín ismét a **BAYDOOR**. Figyelje meg, hogy egy új **Átmozgatási probléma** típusú munka jött létre a 10 darabhoz.
+11. Most próbáljon 20-szor többet elindítani a termelési rendelésben, majd próbáljon meg jelenteni 20-at a kézben tartott eszköz használatával. Ezúttal az **LP-001** helyszín javasolt eltárolási helyszínként. Ezt a helyet a helymeghatározási irányelvnél találhatja a **Késztermékek betárolása** lehetőségnél. Ezt a helymeghatározási irányelvet használják, mert nincs áttárolási lehetőség. Az LP-001 átadási rendelést teljes mértékben teljesítette a két áttárolási tevékenység a 9. és 10. lépésben. Figyelje meg, hogy létrejött és feldolgozásra került a **Késztermékek betárolása** funkció.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>2. forgatókönyv – Termelési rendelések áttárolása átadási rendelésekbe találkozási ütemtervvel
 
@@ -123,7 +122,7 @@ Miután egy terméket a gyártósoron befejezettnek nyilvánítottak, áthelyezi
 
 ### <a name="additional-information"></a>További információk
 
--   Az áttárolási forgatókönyv támogatott a kötegelt és sorozatosan vezérelt cikkeknél, mind a köteg-, mind a sorozatszám-dimenziókkal, amelyeket a foglalási hierarchiában fent és alul találhat meg.
+-   Az áttárolási forgatókönyv támogatott a kötegelt és sorozatosan vezérelt cikkeknél, mind a köteg-, mind a sorozatszám-dimenziókkal, amelyeket a foglalási hierarchiában fent és alul találhat meg. 
 
 
 

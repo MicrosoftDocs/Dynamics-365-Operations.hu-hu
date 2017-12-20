@@ -3,7 +3,7 @@ title: "Szállítói együttműködési mobil munkaterület"
 description: "Ez a témakör a Szállítói együttműködés mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 850a5dceb9ea084d9964094c0e2ba5325025fb5e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 6028f6007cf2fd3f21c2e6cf3f5fac85c6e0da0a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -60,8 +60,8 @@ A **Szállítói együttműködés** mobil munkaterület lehetővé teszi egy sz
 ## <a name="prerequisites"></a>Előfeltételek
 Az előfeltételek eltérőek lehetnek attól függően, hogy a szervezete a Microsoft Dynamics 365 melyik verzióját használja.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást használja (2017. július) 
-Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations Enterprise edition (2017. július) rendszert, a rendszergazdának közzé kell tennie a **Szállítói együttműködés** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást használja 
+Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations Enterprise Edition rendszert, a rendszergazdának közzé kell tennie a **Szállítói együttműködés** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>A Microsoft Dynamics 365 for Operations 1611-es verziójához 3. vagy újabb platformfrissítéséhez szükséges előfeltételek
 Amennyiben szervezete telepítette a Microsoft Dynamics for Operations 1611-es verziójánnak 3. vagy újabb platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
