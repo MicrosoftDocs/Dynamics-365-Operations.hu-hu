@@ -3,7 +3,7 @@ title: "Költségkezelés mobil munkaterület"
 description: "Ez a témakör a Költséggazdálkodás mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4880c74047f53704f5f4d8efb19b6f8c6b04d479
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: bbbe37330e16a079b817dfe04f4a47f046263e88
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -46,7 +46,7 @@ A **Költségkezelés** mobil munkaterület használatával a felhasználók a k
 - Fájl feltöltése rögzített nyugtaként. A fájlt később is csatolhatja a költségjelentéshez.
 - Új költségsor létrehozása csatolt nyugta használatával. Később is hozzáadhatja a sort a költségjelentéshez, majd beküldheti azt jóváhagyás és visszatérítés céljából.
 
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations, Enterprise editiont (2017. július) használja, a következő funkciók is elérhetők:
+Amennyiben a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadást használja, a következő funkciók is elérhetők:
 
 - Új költségjelentés készítése.
 - Hitelkártya-tranzakciók és egyéb, korábban létrehozott költségek csatolása egy költségjelentéshez.
@@ -60,8 +60,8 @@ Amennyiben a Microsoft Dynamics 365 for Finance and Operations, Enterprise editi
 ## <a name="prerequisites"></a>Előfeltételek
 Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziójától függően.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást használja (2017. július) 
-Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations, Enterprise editiont (2017. július), a rendszergazdának közzé kell tennie a **Költséggazdálkodás** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást használja 
+Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadást, a rendszergazdának közzé kell tennie a **Költséggazdálkodás** mobil munkaterület. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek, ha a Microsoft Dynamics 365 for Finance and Operations, 1611-es verzióját használja a 3-as vagy újabb platformfrissítéssel
 Ha a Microsoft Dynamics 365 for Operations 1611-es verzióját telepítették a szervezeténél a 3-as vagy újabb platformfrissítéssel, akkor a rendszergazdának a következő előfeltételeket kell teljesítenie. 

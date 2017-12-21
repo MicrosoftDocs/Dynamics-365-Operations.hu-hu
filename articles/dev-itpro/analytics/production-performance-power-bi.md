@@ -3,7 +3,7 @@ title: "Termelési teljesítmény Power BI-tartalom"
 description: "Ez a témakör azt ismerteti, mit tartalmaz a Termelési teljesítmény Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: baa0343713e8f75e1c9637a903b9008db0968fd4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Ez a Power BI-tartalom lehetővé teszi a termelési eltérések elemzését is.
 A **Termelési teljesítmény** Power BI-tartalom a termelési rendelésekből és a kötegelt rendelésekből származó adatokat tartalmazza. A jelentések nem tartalmazzák a kanban termelésekkel kapcsolatos adatokat.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition (2017. július) rendszert használja, a **Termelési teljesítmény** Power BI-tartalom itt található: **Termelési teljesítmény** lap (**Gyártásvezérlés** > **Lekérdezések és jelentések** > **Termelési teljesítmény elemzése** > **Termelési teljesítmény**). 
+A **Termelési teljesítmény** Power BI-tartalom a **Termelési teljesítmény** oldalon látható (**Gyártásvezérlés** > **Lekérdezések és jelentések** > **Termelési teljesítmény elemzése** > **Termelési teljesítmény**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 

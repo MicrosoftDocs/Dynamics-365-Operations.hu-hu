@@ -3,7 +3,7 @@ title: "Az Excel-bővítmény használata"
 description: "Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b1f25f3630ad5126edd20c5508b83a9811a65f8
-ms.openlocfilehash: dd986d8f82c42c4e229e6e60bdfe8d15a273e149
+ms.sourcegitcommit: bf2607596993d01abaf5e8a66f14f8c091791d4a
+ms.openlocfilehash: b4151ca929d0dbe073c1a8444cf63a90ac74e20c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -104,17 +104,6 @@ A tervező segítségével igazíthatja az oszlopokat, amelyek automatikusan ad�
 
 4. A **Frissítés** lehetőségre kattintva alkalmazhatja a módosításokat az adatforrásra. Válassza a **Kész** elemet, és lépjen ki a tervezőből.
 5. Ha hozzáadott egy mezőt (oszlop), kattintson a **Frissítés** lehetőségre egy frissített adatkészlet behúzásához.
-
-## <a name="copy-environment-data"></a>Környezeti adatok másolása
-Az egyik környezetből a munkafüzetbe beolvasott adatok átmásolhatók egy másik környezetbe. Nem módosíthatja azonban a kapcsolat URL-jét, mert a munkafüzetben lévő adatgyorsítótár továbbra is meglévő adatokként kezeli az adatokat. Ehelyett a Környezetvédelmi adatok másolási funkcióval kell új adatokat közzétenni az új környezetbe.
-
-1. Válassza ki a **beállítások** gomb (felszerelés szimbólumát), majd az a **Data Connector** gyorslapon válassza **környezeti adatok másolása**.
-2. Adja meg a kiszolgáló URL-címét az új környezethez.
-3. A művelet megerősítéséhez válassza az **OK**, majd az **Igen** elemet. Az Excel-bővítmény újraindul, és csatlakozik az új környezethez. A munkafüzetben található összes létező adat új adatként kezelendő.
-
-    Miután az Excel bővítmény újraindul, egy üzenettáblában kijelentik, hogy a munkafüzet környezeti másolási módban van.
-
-4. Ha az adatokat az új környezetbe szeretné másolni új adatként, válassza a **Közzététel** lehetőséget. A környezet másolási művelet megszakítása, és tekintse át a meglévő adatokat, az új környezetben, jelölje be a **Frissítés** lehetőséget.
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 Vannak bizonyos problémák, amelyek néhány egyszerű lépéssel megoldhatók.

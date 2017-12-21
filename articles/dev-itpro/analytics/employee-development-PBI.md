@@ -3,7 +3,7 @@ title: "Alkalmazotti fejlesztés Power BI-tartalom"
 description: "Ez a témakör ismerteti az alkalmazotti fejlesztés Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c6a1125d56239f4370d6219a93988d50d402045e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,7 +31,7 @@ Ez a témakör ismerteti az **Alkalmazotti fejlesztés** Microsoft Power BI-tart
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
 
-A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017 július) használatakor az **Alkalmazotti fejlesztés** tartalmi csomag a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárában található. A tartalmi csomag letöltésére és az adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
+Az **Alkalmazotti fejlesztés** tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) Megosztott eszközök könyvtárban található. A tartalmi csomag letöltésére és az adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
 Az **Alkalmazotti fejlesztés** Power BI által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.

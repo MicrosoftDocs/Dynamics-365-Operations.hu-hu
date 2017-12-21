@@ -3,7 +3,7 @@ title: "Felhőalapú és helyszíni szolgáltatások összehasonlítása"
 description: "A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás."
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -59,6 +59,9 @@ A következő táblázatokban a termékterületek listája található. A felhő
 | | PowerBI.com integrálása| Igen | Nincs |
 | | Analitikus munkaterületek | Igen | Nincs |
 | | Intelligens üzleti folyamat: ajánlások| Igen | Nincs |
+| | Power BI jelentések készítése az OData segítségével a Power BI asztal vagy az Excel PowerQuery eszközök használatával | Igen | Nincs |
+| | Az SQL Server Reporting Services (SSRS) támogatja a méretezést  | Igen | Nincs |
+| | A telemetria-adatokat átviszik a felhőbe | Igen | Nincs |
 | Készletgazdálkodás| | Igen | Igen |
 | Lifecycle Services| | Igen | Igen |
 | | Konfigurálható üzleti folyamatok | Igen | Nincs |
@@ -86,7 +89,7 @@ A következő táblázatokban a termékterületek listája található. A felhő
 | Szállításkezelés| | Igen | Igen |
 | Szállítói együttműködés| | Igen | Igen|
 | Raktárkezelés| | Igen | Igen |
-| | Raktári mobilalkalmazás| Igen | Nincs |
+| | Raktári mobilalkalmazás| Igen | Igen |
 | | Raktári Power BI-jelentések| Igen | Nincs |
 | Webes ügyfél | | Igen | Igen |
 | | Feladatrögzítő – Feladatrögzítések mentése vagy betöltése a BPM-tárból| Igen | Nincs |
@@ -103,6 +106,7 @@ A következő táblázatokban a termékterületek listája található. A felhő
 | Platform kompatibilitása  || Igen | Igen |
 | Karbantartás | | Igen | Igen |
 | | Szolgáltatási környezetek | Igen | Nincs |
+| Trace Parser és PerfTimer | | Igen | Nincs |
 | Frissítés | | Igen | Igen |
 | | Frissítés | Igen | Nincs |
 | | Frissítés és a korábbi verziók támogatása | Igen | Nincs |
@@ -121,6 +125,8 @@ A következő táblázatokban a termékterületek listája található. A felhő
 |---|---|---|---|
 | Összes Talent terület | Összes Talent funkció | Igen | Nincs |
 
+## <a name="see-also"></a>Lásd még
 
+- [Az on-premises telepítéseknél nem elérhető funkciók](features-not-implemented-on-prem.md)
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Értékelési rendelések szinkronizálása közvetlenül a Sales és a Finance and Operations között"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition és a Microsoft Dynamics 365 for Sales közötti kétoldalú szinkronizálásra használhatók az értékesítési rendelések fejlécei és sorai esetében."
+description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 568c33a63efdc58a179dadcb617634dcf533fd4b
-ms.openlocfilehash: c31d65328250539fbe172f220272eec9d8b59bbf
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 11/13/2017
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition és a Microsoft Dynamics 365 for Sales közötti kétoldalú szinkronizálásra használhatók az értékesítési rendelések fejlécei és sorai esetében.
+Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében.
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
 A rendelkezésre álló sablonok megtekintéséhez nyissa meg a [PowerApps Admin Centert](https://preview.admin.powerapps.com/dataintegration). Válassza a **Projektek** lehetőséget, és ezután kattintson a jobb felső sarkában az **Új projekt** elemre a nyilvános sablonok kiválasztásához.
 
-A következő sablonok és alapul szolgáló feladatok vannak használatban az értékesítési rendelési fejlécek és sorok kétoldalú szinkronizálásához a Finance and Operations és a Sales között:
+A következő sablonokat és alapul szolgáló feladatokat használják az értékesítési rendelések közvetlen szinkronizálásához a Sales és a Finance and Operations között:
 
 - **A sablonok nevei az adatintegrációban:** 
 

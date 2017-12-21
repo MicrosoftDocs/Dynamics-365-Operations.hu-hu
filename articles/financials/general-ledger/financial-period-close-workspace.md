@@ -3,7 +3,7 @@ title: "Pénzügyi időszak lezárása munkaterület"
 description: "Ez a cikk betekintést nyújt a Pénzügyi időszak zárásának munkaterületébe és az ehhez társított beállításokba."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5dbefc953c0f1608b6f5b5676850a0e9aba36cc
+ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
+ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/29/2017
 
 ---
 
@@ -91,7 +91,8 @@ A sablonban hozzárendelhet egy feladatot egy vagy több vállalatot, amire a fe
 
 A **Feladathivatkozás** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például egy zárási feladat pénznem-újraértékelési folyamatának futtatása a Kötelezettségekben hozzárendelhető a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás **Devizaátértékelés** oldalához. Külső URL-címet is hivatkozhat. 
 
-> [!Javaslat] Ha szeretne egy adott Felügyeleti jelentéskészítő jelentést csatolni egy pénzügyi időszak zárási feladatához, akkor használhat jelentés-URL-t. A jelentés-URL-címének eléréséhez nyissa meg a jelentést a jelentéstervezőben, és kattintson a **Fájl** &gt; **Jelentés megtekintése** elemre, ha szeretné a jelentést egy webböngészőben megnyitni. Ezután bemásolhatja az URL-címet a böngésző címsorába, és beillesztheti a **Feladathivatkozás** **URL** cím mezőbe. 
+> [!TIP]
+> Ha szeretne egy adott Felügyeleti jelentéskészítő jelentést csatolni egy pénzügyi időszak zárási feladatához, akkor használhat jelentés-URL-t. A jelentés-URL-címének eléréséhez nyissa meg a jelentést a jelentéstervezőben, és kattintson a **Fájl** &gt; **Jelentés megtekintése** elemre, ha szeretné a jelentést egy webböngészőben megnyitni. Ezután bemásolhatja az URL-címet a böngésző címsorába, és beillesztheti a **Feladathivatkozás** **URL** cím mezőbe. 
 
 Megadhat feladatfüggéseket a sablonban. Ha egy feladat egy vagy több feladattól is függ, akkor az a feladat nem jelölhető meg befejezettként, amíg a függő feladatokat nem végezték el. 
 

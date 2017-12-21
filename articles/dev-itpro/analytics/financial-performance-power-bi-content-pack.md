@@ -3,7 +3,7 @@ title: "Pénzügyi teljesítmény Power BI-tartalom"
 description: "Ez a témakör ismerteti a pénzügyi teljesítmény Power BI-tartalmat. Leírja, hogyan kell használni az irányítópultot és a csomagban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f111698315cd42c0c1c0d470b94688b548375bee
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -38,7 +38,7 @@ A **Pénzügyi teljesítmény** Power BI a Microsoft Dynamics Lifecycle Services
 ### <a name="available-from-lcs"></a>LCS elérhetőség
 Az LCS-szolgáltatásokból elérhető **Pénzügyi teljesítmény** Power BI-tartalom a következő verziókat támogatja:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (2017. július)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás
 - Microsoft Dynamics 365 for Operations 1611-es verzió 
 
 A Power BI-tartalom az LCS Megosztott eszközök könyvtárában található. A tartalmi csomag letöltésére és a szervezetben való implementálására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).

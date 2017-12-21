@@ -1,16 +1,16 @@
 ---
 title: "Pénzügyi jelentés elkészítése"
 description: "Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -40,15 +40,31 @@ A jelentés létrehozásához nyissa meg a jelentésdefiníciót, majd kattintso
 
 Az alábbi táblázatban a jelentések létrehozásához rendelkezésre álló beállítások magyarázata látható.
 
-| Lehetőség                                                                                | További információ |
-|---------------------------------------------------------------------------------------|----------------------|
-| Állítson be egy ütemezést jelentés vagy jelentéscsoport automatikus létrehozásához              |                      |
-| Győződjön meg arról, hogy a jelentésből nem hiányoznak számlák vagy adatok, és ellenőrizze a jelentés pontosságát |                      |
+| Lehetőség                                                                                | 
+|---------------------------------------------------------------------------------------|
+| Állítson be egy ütemezést jelentés vagy jelentéscsoport automatikus létrehozásához              |   
+| Győződjön meg arról, hogy a jelentésből nem hiányoznak számlák vagy adatok, és ellenőrizze a jelentés pontosságát |   
 
 Jelentés készítésekor az Ön által a Jelentésdefiníció lapon megadott beállításokat használatosak. A Kimenet és Elosztás lapon megadhatja a jelentéstár helyét, amellyel egyszerűen megoszthatja a jelentést.
 
-## <a name="schedule-report-generation"></a> Jelentés létrehozásának ütemezése
-Számos vállalat rendelkezik egy olyan alapvető jelentéscsomaggal, amelyet az üzleti folyamatokhoz való igazodás érdekében ütemezett időközönként lefuttatnak. Lehetősége van egy jelentés rendszeres (például napi, heti, havi vagy évi) létrehozásának beütemezésére. Ezt megadhatja egy jelentésre vonatkozóan, vagy egy több vállalatot tartalmazó teljes jelentéscsoportra vonatkozóan is. Meg kell adnia az összes meghatározott vállalat, például a jelentésfa-definícióban szereplő összes vállalat hitelesítő adatait. Amennyiben a hitelesítő adatok nem érvényesek, a jelentés csak azokat az adatokat jeleníti meg, amelyekhez hozzáférési engedéllyel rendelkezik, például csak azt a vállalatot, amelyhez abban az időpontban be van jelentkezve. A kimeneti információ leolvasása elsőként a jelentéscsoportból, ezt követően pedig az egyes jelentésekből történik.
+## <a name="generate-a-financial-report"></a>Pénzügyi jelentés elkészítése
+
+Pénzügyi jelentés létrehozásához a Microsoft Dynamics 365 for Finance and Operations rendszerben lépjen a következő elemhez: **Főkönyv** > **Lekérdezések és jelentések** > **Pénzügyi jelentések**. 
+ - Kattintson létrehozni kívánt jelentésre, és kattintson a **Létrehozás** lehetőségre. 
+ - Töltse ki a **Jelentés dátuma** mezőt, majd kattintson az **OK** gombra.
+ 
+ A jelentés generálása után a jelentést a **Jelentések** szakaszban tekintheti meg.
+ A jelentéseknél a **Megtekintés** vagy **Törlés** lehetőség választható ki.
+ 
+ 
+A jelentés létrehozásához a **Jelentéstervező** segítségével, nyissa meg a jelentésdefiníciót, majd kattintson a Létrehozás gombra az eszköztárban. Az ekkor megnyíló Jelentés-várólista állapota ablak mutatja a jelentés helyét a várólistában. A létrehozott jelentések alapértelmezetten a Web Viewer alkalmazásban nyílnak meg.
+
+> [!NOTE]
+> Csak olyan mappákba és helyekre hozható létre jelentés, amelyekhez hozzáférési engedéllyel rendelkezik.
+
+
+## <a name="schedule-report-generation"></a>A jelentések létrehozásának ütemezése
+Számos vállalat az üzleti céljainak megfelelő alapvető jelentéskészletet használ, és meghatározott időközönként futtatja a készletben lévő jelentéseket. Lehetősége van egy jelentés rendszeres (például napi, heti, havi vagy évi) létrehozásának beütemezésére. Ezt megadhatja egy jelentésre vonatkozóan, vagy egy több vállalatot tartalmazó teljes jelentéscsoportra vonatkozóan is. Meg kell adnia az összes meghatározott vállalat, például a jelentésfa-definícióban szereplő összes vállalat hitelesítő adatait. Amennyiben a hitelesítő adatok nem érvényesek, a jelentés csak azokat az adatokat jeleníti meg, amelyekhez hozzáférési engedéllyel rendelkezik, például csak azt a vállalatot, amelyhez abban az időpontban be van jelentkezve. A kimeneti információ leolvasása elsőként a jelentéscsoportból, ezt követően pedig az egyes jelentésekből történik.
 
 Jelentésütemezések létrehozásakor és mentésekor azok a navigációs ablaktáblában jelennek meg, a Jelentésütemezések alatt. A jelentések rendszerezéséhez mappákat hozhat létre. Ha az ütemezésben szereplő egyik jelentés nem futtatható, a többi jelentés futtatása folytatódni fog.
 
