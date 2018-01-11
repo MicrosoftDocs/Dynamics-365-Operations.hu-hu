@@ -3,7 +3,7 @@ title: "Bankkezelési munkaterület"
 description: "Ez a témakör a Bankszámla kezelése munkaterületről nyújt tájékoztatást. Ez a munkaterület olyan információkat jelenít meg, amelyek a vállalati bankszámlákhoz kapcsolódnak, és tartalmaz egy Összefoglaló nézetet és egy Elemzés oldalt. Az Összefoglaló nézet összegző csempéket, bankszámlaadatokat, egyenleget és kapcsolódó adatokat tartalmaz. Az Analytics oldal a Microsoft Power BI funkciói révén vizuálisan megjeleni a bankszámlaegyenlegekkel kapcsolatos információkat."
 author: saraschi2
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

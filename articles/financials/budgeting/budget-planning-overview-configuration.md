@@ -3,7 +3,7 @@ title: "A költségvetés-tervezés áttekintése"
 description: "Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolgál a költségvetés-tervezés beállítási és a költségvetés-tervezési folyamatok létrehozási lehetőségeiről."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
