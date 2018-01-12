@@ -3,7 +3,7 @@ title: "Adatellenőrzési munkaterület"
 description: "Az Adatellenőrzési ellenőrzőlista munkaterülete lehetővé teszi az adatok ellenőrzésének folyamatát a vállalatok, a területek és az emberek között. Az ellenőrzőlistát új implementáció, frissítés vagy áttelepítés után lehet használni."
 author: bking
 manager: AnnBe
-ms.date: 05/11/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

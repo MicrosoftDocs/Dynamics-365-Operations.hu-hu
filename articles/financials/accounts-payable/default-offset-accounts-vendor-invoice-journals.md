@@ -3,7 +3,7 @@ title: "Alapértelmezett ellenszámlák szállítóiszámla-naplók és számla-
 description: "A jelent témakör segítségével eldöntheti, hogy hová rendelje hozzá az alapértelmezett számlákat a számlanaplókhoz."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
