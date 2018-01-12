@@ -3,7 +3,7 @@ title: "Vállalatközi költségek"
 description: "Egy dolgozó, aki a szervezeten belüli egy jogi személy alkalmazottja, esetenként végezhet munkát az adott szervezeten belüli másik jogi személy számára. Ebben az esetben a vállalatközi költségek funkciót használhatja ahhoz, hogy a dolgozói költségeket hozzárendelje ahhoz a jogi személyhez, amelynek számára a munka el lett végezve."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
