@@ -41,10 +41,11 @@
 ## [Kiskereskedelmi csatornák meghatározása](define-maintain-retail-channels.md)
 ## [Online áruház áttekintése](online-stores.md)
 ## [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)
-## [Kiskereskedelmi munkaidő és jelenlét](retail-time-attendance.md)
+## [Retail munkaidő és jelenlét](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) és Cloud POS
-## [Pénztárműveletek](POS-operations.md)
+## [A Modern POS és a Cloud POS közötti választás](MPOS-or-CPOS.md)
+## [POS műveletek](POS-operations.md)
 ## [Bemutató adatok képernyő-elrendezései az MPOS/CPOS pénztárban](demo-data.md)
 ## Hardverperifériák
 ### [Kiskereskedelmi perifériás eszközök – áttekintés](retail-peripherals-overview.md)
@@ -76,6 +77,11 @@
 ### [Nyugtasablonok beállítása](receipt-templates-printing.md) 
 ### [E-mailes nyugták küldése MPOS pénztárból](email-receipts.md)
 ## [Feladatrögzítő és Súgó a pénztárhoz](task-recorder-retail-pos.md)
+
+# Rendelésteljesítés
+## [Áruházi rendelés teljesítése – áttekintés](Order-fulfillment-overview.md)
+## [Állítsa be a teljesítést az áruházban](Order-fulfillment-POS-setup.md)
+## [Értesítések engedélyezése a pénztárnál](Notifications-POS.md)
 
 # Megfigyelés és elemzés
 ## [Értékesítési és teljesítménykülönbözet megfigyelése](monitor-sales-margin-performance.md)
@@ -258,8 +264,10 @@
 ### [Egyéni vezérlőelemek hozzáadása a Retail Modern POS tranzakciós oldalaihoz](dev-itpro/pos-custom-transaction.md)
 ### [Egyéni oszlopok hozzáadása a POS tranzakciós rácsához](dev-itpro/pos-custom-transaction-column.md)
 ### [POS API meghívása, illetve művelet egy POS bővítménytől](dev-itpro/pos-api-extension.md)
-### [POS nézetek kibővítése egyéni oszlopoknak és az alkalmazássor gombjainak hozzáadásával](dev-itpro/pos-view-extension.md)
 ### [A Retail Modern POS eseményindítói és nyomtatása](dev-itpro/pos-trigger-printing.md)
+### [Egyéni vezérlő hozzáadása Retail Modern POS képernyő nélküli tervezőalapú megtekintéshez](dev-itpro/pos-control-non-screen.md)
+### [Retail proxy létrehozása a POS-hez és az elektronikus kereskedelemhez](dev-itpro/pos-generate-retail-proxy.md)
+### [Konfigurációs lépések a felhőalapú fejlesztői dobozokon dolgozó Retail-fejlesztők számára](dev-itpro/cloud-dev-box.md)
 
 ## Kereskedelmi futtatókörnyezet
 ### [Hűségidő kiterjesztése](dev-itpro/retail-sdk/loyalty-extension-sample.md)

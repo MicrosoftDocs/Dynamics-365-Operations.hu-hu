@@ -3,7 +3,7 @@ title: Intelligencia
 description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásában elérhető üzeltiintelligencia-eszközökre és jelentéskészítési eszközökre vonatkozóan."
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 335d38e0fb5e47136b87bac5bfa9d2fd2923def6
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -48,7 +48,6 @@ A felhasználók az oldalon található vizuális elemekre kattintva vagy azokat
  - [Beágyazott Power BI a munkaterületeken](embed-power-bi-workspaces.md)
  - [A Power BI Embedded integrációja](power-bi-embedded-integration.md)
  - [Analitika hozzáadása munkaterületekhez Power BI Embedded használatával](add-analytics-tab-workspaces.md)
- - [Elemzési alkalmazások közzététele a Power BI rendszeren](publish-apps-powerbi.md)
  - [Analitikai munkaterületek és jelentések biztosítása a Power BI Embedded segítségével](secure-analytical-workspaces.md)
  - [Power BI-tartalmak a Finance and Operations alkalmazáshoz](power-bi-home-page.md)
 
@@ -59,7 +58,7 @@ A jelentéskészítési megoldásokat gyakran használják üzleti tranzakciók 
 
 További információk a következő témakörökben találhatók:
 
-- [A jelentésdokumentumokkal kapcsolatos szolgáltatások áttekintése](document-reporting-services.md)
+- [A Document Reporting Services áttekintése](document-reporting-services.md)
 - [Nyomtatás a Finance and Operations-alkalmazásokban](print-documents.md)
 - [A Dokumentumirányítási ügynök telepítése a hálózati nyomtató eszközök engedélyezéséhez](install-document-routing-agent.md)
 
@@ -88,10 +87,7 @@ További információk a következő témakörökben találhatók:
 ## <a name="technical-reference-reports"></a>Technikai referenciajelentések
 A következő jelentéseket hivatkozási információkat biztosítanak a Finance and Operations objektumaival kapcsolatban:
 
-- [Összesítő adatentitásokat tartalmazó jelentés](aggregate-data-entities-report.md)
-- [Összesítő mértékeket tartalmazó jelentés](aggregate-measurements-report.md)
 - [Adatentitás-jelentések](../data-entities/data-entities-report.md)
-- [Fő teljesítménymutatók (KPI) jelentés](key-performance-indicators-report.md)
 - [Licenckódok és konfigurációskulcs-jelentések](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services-jelentések](SSRS-report.md)
 - [Munkafolyamat-típusok jelentése](../../fin-and-ops/organization-administration/workflow-types-report.md)
