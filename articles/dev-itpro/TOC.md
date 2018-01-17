@@ -29,7 +29,7 @@
 ### [Modell exportálása és importálása](dev-tools/models-export-import.md)
 ### [Metaadat-keresés a Visual Studio szolgáltatásban](dev-tools/metadata-search-visual-studio.md)
 ### [Modellek](dev-tools/models.md)
-### [Dynamics 365 for Finance and Operations, Enterprise kiadás projektjei](dev-tools/projects.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition kiadás projektjei](dev-tools/projects.md)
 ### [Visual Studio-eszközök és bővítmények](dev-tools/developer-tools-add-ins.md)
 ### [Kapcsolja ki a modell testreszabási és elavulási funkciókat](dev-tools/lock-models.md)
 ### [Frissítse a Visual Studio fejlesztői eszközöket](dev-tools/update-development-tools.md)
@@ -161,8 +161,8 @@
 ### [Navigáció létrehozása](user-interface/build-navigation.md)
 ### [Munkaterület felépítése](user-interface/build-workspace.md)
 ## Űrlapok
-### [Navigáció a Dynamics 365 for Finance and Operations, Enterprise kiadásban](user-interface/page-navigation.md)
-### [Dynamics 365 for Finance and Operations, Enterprise kiadás elrendezése](user-interface/page-layout.md)
+### [Navigáció a Dynamics 365 for Finance and Operations, Enterprise edition kiadásban](user-interface/page-navigation.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition kiadás elrendezése](user-interface/page-layout.md)
 ### [Szimbólum betűtípus](user-interface/symbol-font.md)
 ### [Tesztűrlapok egyedi mintákkal](user-interface/testing-forms-custom-patterns.md)
 ### [Mélylinkek létrehozása és használata](user-interface/create-deep-links.md)
@@ -500,7 +500,7 @@
 
 ## Felhőbeli telepítés
 ### [Azure Resource Manager bevezetése](deployment/arm-onboarding.md)
-### [Azure ExpressRoute és Dynamics 365 for Finance and Operations, Enterprise kiadás](deployment/expressroute.md)
+### [Azure ExpressRoute és Dynamics 365 for Finance and Operations, Enterprise edition kiadás](deployment/expressroute.md)
 
 ## [Helyszíni telepítés](deployment/on-premises-deployment-landing-page.md)
 ### [Helyszíni áttekintés](deployment/on-premises-overview.md)
@@ -513,7 +513,7 @@
 ### [Helyszíni telepítés újratelepítése](deployment/redeploy-on-prem.md)
 ### [Helyi ügynök frissítése](lifecycle-services/update-local-agent.md)
 ### [Környezet újrakonfigurálása](lifecycle-services/reconfigure-environment.md)
-### [Dynamics 365 for Finance and Operations, Enterprise kiadás (helyszíni) – problémamegoldás](deployment/troubleshoot-on-prem.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition kiadás (helyszíni) – problémamegoldás](deployment/troubleshoot-on-prem.md)
 
 ## Egyéni kód telepítése
 ### [Telepíthető csomag létrehozása](deployment/create-apply-deployable-package.md)
@@ -701,10 +701,10 @@
 ## [Védőfal adatbázis-frissítés kérése](database/database-refresh.md)
 
 # Támogatás
-## [Támogatás igénylése a Dynamics 365 for Finance and Operations, Enterprise kiadás termékhez, illetve a Lifecycle Services szolgáltatáshoz](lifecycle-services/lcs-support.md)
+## [Támogatás igénylése a Dynamics 365 for Finance and Operations, Enterprise edition kiadás termékhez, illetve a Lifecycle Services szolgáltatáshoz](lifecycle-services/lcs-support.md)
 ## [Premier támogatási jegy naplózása](lifecycle-services/premier-support.md)
 ## [Igénylés benyújtása a Dynamics Service mérnöki csapatához](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Műszaki támogatás beállítása a Dynamics 365 for Finance and Operations, Enterprise kiadáshoz](lifecycle-services/support-experience.md) 
+## [Műszaki támogatás beállítása a Dynamics 365 for Finance and Operations, Enterprise edition kiadáshoz](lifecycle-services/support-experience.md) 
 ## [Tervezett karbantartási időtartam – GYIK](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Felhőműveletek és szervizelés](lifecycle-services/cloud-operations-servicing.md)
 ## [A Finance and Operations támogatási tapasztalatai](lifecycle-services/cloud-powered-support-lcs.md)

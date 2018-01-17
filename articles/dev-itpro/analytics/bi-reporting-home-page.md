@@ -1,6 +1,6 @@
 ---
 title: Intelligencia
-description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásában elérhető üzeltiintelligencia-eszközökre és jelentéskészítési eszközökre vonatkozóan."
+description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadásában elérhető üzeltiintelligencia-eszközökre és jelentéskészítési eszközökre vonatkozóan."
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/18/2017
 
 [!include[banner](../includes/banner.md)]
 
-Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásában elérhető üzeltiintelligencia-eszközökre (BI) és jelentéskészítési eszközökre vonatkozóan.
+Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadásában elérhető üzeltiintelligencia-eszközökre (BI) és jelentéskészítési eszközökre vonatkozóan.
 
 ## <a name="get-started"></a>Első lépések
 - [Adatelérés és jelentéskészítés](information-access-reporting.md)
