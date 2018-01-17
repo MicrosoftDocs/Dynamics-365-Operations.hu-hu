@@ -16,14 +16,14 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: YuyuScheller
+ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d183654ada9cdca23cf906f250988a967ffcf1f6
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: d55e9a520b1f895d130f24834626429e19b4b939
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -255,10 +255,10 @@ ms.lasthandoff: 11/03/2017
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
 | <span data-ttu-id="65898-340">Fix költség</span><span class="sxs-lookup"><span data-stu-id="65898-340">Fixed cost</span></span>                            | <span data-ttu-id="65898-341">Szervezet</span><span class="sxs-lookup"><span data-stu-id="65898-341">Organization</span></span>                         | <span data-ttu-id="65898-342">100,00</span><span class="sxs-lookup"><span data-stu-id="65898-342">100.00</span></span>           | <span data-ttu-id="65898-343">0,00</span><span class="sxs-lookup"><span data-stu-id="65898-343">0.00</span></span>         | <span data-ttu-id="65898-344">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="65898-344">1/1/2017</span></span>   | <span data-ttu-id="65898-345">Soha</span><span class="sxs-lookup"><span data-stu-id="65898-345">Never</span></span>    |
 | <span data-ttu-id="65898-346">10001</span><span class="sxs-lookup"><span data-stu-id="65898-346">10001</span></span>                                 | <span data-ttu-id="65898-347">Szervezet</span><span class="sxs-lookup"><span data-stu-id="65898-347">Organization</span></span>                         | <span data-ttu-id="65898-348">0,00</span><span class="sxs-lookup"><span data-stu-id="65898-348">0.00</span></span>             | <span data-ttu-id="65898-349">150,00</span><span class="sxs-lookup"><span data-stu-id="65898-349">150.00</span></span>       | <span data-ttu-id="65898-350">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="65898-350">1/1/2017</span></span>   | <span data-ttu-id="65898-351">Soha</span><span class="sxs-lookup"><span data-stu-id="65898-351">Never</span></span>    |
-| <span data-ttu-id="65898-352">10001 (\*)</span><span class="sxs-lookup"><span data-stu-id="65898-352">10001 (\*)</span></span>                             | <span data-ttu-id="65898-353">Pénzügy</span><span class="sxs-lookup"><span data-stu-id="65898-353">Finance</span></span>                              |                  | <span data-ttu-id="65898-354">50,00</span><span class="sxs-lookup"><span data-stu-id="65898-354">50.00</span></span>        | <span data-ttu-id="65898-355">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="65898-355">1/1/2017</span></span>   | <span data-ttu-id="65898-356">Soha</span><span class="sxs-lookup"><span data-stu-id="65898-356">Never</span></span>    |
+| <span data-ttu-id="65898-352">10001 (\\*)</span><span class="sxs-lookup"><span data-stu-id="65898-352">10001 (\\*)</span></span>                             | <span data-ttu-id="65898-353">Pénzügy</span><span class="sxs-lookup"><span data-stu-id="65898-353">Finance</span></span>                              |                  | <span data-ttu-id="65898-354">50,00</span><span class="sxs-lookup"><span data-stu-id="65898-354">50.00</span></span>        | <span data-ttu-id="65898-355">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="65898-355">1/1/2017</span></span>   | <span data-ttu-id="65898-356">Soha</span><span class="sxs-lookup"><span data-stu-id="65898-356">Never</span></span>    |
 | <span data-ttu-id="65898-357">Költségviselkedés + változó költség (\*\*)</span><span class="sxs-lookup"><span data-stu-id="65898-357">Cost behavior or Variable cost (\*\*)</span></span>   | <span data-ttu-id="65898-358">Szervezet</span><span class="sxs-lookup"><span data-stu-id="65898-358">Organization</span></span>                         | <span data-ttu-id="65898-359">0,00</span><span class="sxs-lookup"><span data-stu-id="65898-359">0.00</span></span>             | <span data-ttu-id="65898-360">0,00</span><span class="sxs-lookup"><span data-stu-id="65898-360">0.00</span></span>         | <span data-ttu-id="65898-361">2017/1/1</span><span class="sxs-lookup"><span data-stu-id="65898-361">1/1/2017</span></span>   | <span data-ttu-id="65898-362">Soha</span><span class="sxs-lookup"><span data-stu-id="65898-362">Never</span></span>    |
 
-<span data-ttu-id="65898-363">\*A változó költségcsomópont nem kötelező.</span><span class="sxs-lookup"><span data-stu-id="65898-363">\* The variable cost node isn't required.</span></span> <span data-ttu-id="65898-364">Ha egy költség nem minősül állandó költségnek, akkor annak változó költségnek kell lennie.</span><span class="sxs-lookup"><span data-stu-id="65898-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
+<span data-ttu-id="65898-363">\\*A változó költségcsomópont nem kötelező.</span><span class="sxs-lookup"><span data-stu-id="65898-363">\\* The variable cost node isn't required.</span></span> <span data-ttu-id="65898-364">Ha egy költség nem minősül állandó költségnek, akkor annak változó költségnek kell lennie.</span><span class="sxs-lookup"><span data-stu-id="65898-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
 
 <span data-ttu-id="65898-365">\*\* A 10001 költségelem-tag és az összes költségobjektum-tag kombinációjának részletes szabálya a Pénzügy hierarchiája szintjén található (CC002, CC003, CC007).</span><span class="sxs-lookup"><span data-stu-id="65898-365">\*\* A detailed rule is created for the combination of cost element member 10001 and all cost object members that are aggregated under the Finance hierarchy level (CC002, CC003, CC007).</span></span>
 

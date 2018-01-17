@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProjTable
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 83d325b6511cb17156d3ef40d08cf09258d3f285
-ms.openlocfilehash: bdf020ac90856778a18a0a8b83f5cad395165e77
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: 8495b08887bbdf5eff975c973d1be982c85ca459
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -345,8 +346,8 @@ ms.lasthandoff: 01/10/2018
 -   <span data-ttu-id="b1099-443">**Eredeti költségvetés** – Az eredetileg kiválasztott költségsorra vonatkozó tervezett összeget.</span><span class="sxs-lookup"><span data-stu-id="b1099-443">**Original budget** – The amount that was originally budgeted for the selected cost line.</span></span> <span data-ttu-id="b1099-444">A fennmaradó költségvetés összege a számítása a **Főkönyv előnézete** oldalon.</span><span class="sxs-lookup"><span data-stu-id="b1099-444">The original budget amount is calculated on the **General ledger preview** page.</span></span>
 -   <span data-ttu-id="b1099-445">**Teljes költség** – A **Általános** lapon szereplő tényleges költség, a vállalt költség és fennmaradó költségvetés összege.</span><span class="sxs-lookup"><span data-stu-id="b1099-445">**Total cost** – The sum of the actual cost, committed cost, and remaining budget, as reported on the **General** tab.</span></span>
 -   <span data-ttu-id="b1099-446">**Eltérés** – Az eredeti költségvetési összeg és a teljes költség különbségének megjelenítése.</span><span class="sxs-lookup"><span data-stu-id="b1099-446">**Deviation** – The difference between the total cost and the original budget.</span></span>
--   <span data-ttu-id="b1099-447">**Mennyiségalapú eltérés** – Az eredeti előrejelzésben és a teljes előrejelzésben lévő eltérés teljes összege.</span><span class="sxs-lookup"><span data-stu-id="b1099-447">**Variance based on quantity** – The total difference between the original forecast and the total forecast.</span></span> <span data-ttu-id="b1099-448">Ez a különbség a következő egyenlettel fejezhető ki: (összes előrejelzett mennyiség) * (eredeti átlagár - összesített átlagár).</span><span class="sxs-lookup"><span data-stu-id="b1099-448">This difference can be expressed mathematically as (Total forecast quantity) × (Original average price – Total average price).</span></span> <span data-ttu-id="b1099-449">Ez a beállítás csak a projekt óratranzakcióira vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="b1099-449">This calculation applies only to project hours.</span></span>
--   <span data-ttu-id="b1099-450">**Áralapú eltérés** – Az eredeti előrejelzésben és a teljes előrejelzésben lévő eltérés teljes összege.</span><span class="sxs-lookup"><span data-stu-id="b1099-450">**Variance based on price** – The total difference between the original forecast and the total forecast.</span></span> <span data-ttu-id="b1099-451">Ez a különbség a következő egyenlettel fejezhető ki: (eredeti előrejelzett ár) * (eredeti előrejelzett mennyiség - összes előrejelzett mennyiség).</span><span class="sxs-lookup"><span data-stu-id="b1099-451">This difference can be expressed mathematically as (Original forecast price) × (Original forecast quantity – Total forecast quantity).</span></span> <span data-ttu-id="b1099-452">Ez a beállítás csak a projekt óratranzakcióira vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="b1099-452">This calculation applies only to project hours.</span></span>
+-   <span data-ttu-id="b1099-447">**Mennyiségalapú eltérés** – Az eredeti előrejelzésben és a teljes előrejelzésben lévő eltérés teljes összege.</span><span class="sxs-lookup"><span data-stu-id="b1099-447">**Variance based on quantity** – The total difference between the original forecast and the total forecast.</span></span> <span data-ttu-id="b1099-448">Ez a különbség a következő egyenlettel fejezhető ki: (összes előrejelzett mennyiség) \* (eredeti átlagár - összesített átlagár).</span><span class="sxs-lookup"><span data-stu-id="b1099-448">This difference can be expressed mathematically as (Total forecast quantity) × (Original average price – Total average price).</span></span> <span data-ttu-id="b1099-449">Ez a beállítás csak a projekt óratranzakcióira vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="b1099-449">This calculation applies only to project hours.</span></span>
+-   <span data-ttu-id="b1099-450">**Áralapú eltérés** – Az eredeti előrejelzésben és a teljes előrejelzésben lévő eltérés teljes összege.</span><span class="sxs-lookup"><span data-stu-id="b1099-450">**Variance based on price** – The total difference between the original forecast and the total forecast.</span></span> <span data-ttu-id="b1099-451">Ez a különbség a következő egyenlettel fejezhető ki: (eredeti előrejelzett ár) \* (eredeti előrejelzett mennyiség - összes előrejelzett mennyiség).</span><span class="sxs-lookup"><span data-stu-id="b1099-451">This difference can be expressed mathematically as (Original forecast price) × (Original forecast quantity – Total forecast quantity).</span></span> <span data-ttu-id="b1099-452">Ez a beállítás csak a projekt óratranzakcióira vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="b1099-452">This calculation applies only to project hours.</span></span>
 
 #### <a name="viewing-the-total-budgeted-amounts"></a><span data-ttu-id="b1099-453">A teljes előirányzott összegek megtekintése</span><span class="sxs-lookup"><span data-stu-id="b1099-453">Viewing the total budgeted amounts</span></span>
 
