@@ -3,7 +3,7 @@ title: "On-premises telepítés"
 description: "Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat."
 author: kfend
 manager: AnnBe
-ms.date: 06/24/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,44 +18,47 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 855967a9aacd4881315c5d5fefa06b909cd4cb59
-ms.openlocfilehash: 69151ed1c0a0a06e72bbdc8b33eb2fc68e9cc8eb
+ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
+ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 12/20/2017
 
 ---
-# <a name="on-premises-deployment-landing-page"></a><span data-ttu-id="ba1e7-103">On-premises telepítés nyitóoldal</span><span class="sxs-lookup"><span data-stu-id="ba1e7-103">On-premises deployment landing page</span></span>
+# <a name="on-premises-deployment-landing-page"></a><span data-ttu-id="b29a3-103">On-premises telepítés nyitóoldal</span><span class="sxs-lookup"><span data-stu-id="b29a3-103">On-premises deployment landing page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="ba1e7-104">Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást (on-premises).</span><span class="sxs-lookup"><span data-stu-id="ba1e7-104">You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).</span></span> <span data-ttu-id="ba1e7-105">Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól.</span><span class="sxs-lookup"><span data-stu-id="ba1e7-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="ba1e7-106">Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.</span><span class="sxs-lookup"><span data-stu-id="ba1e7-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
+<span data-ttu-id="b29a3-104">Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást (on-premises).</span><span class="sxs-lookup"><span data-stu-id="b29a3-104">You can deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises).</span></span> <span data-ttu-id="b29a3-105">Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól.</span><span class="sxs-lookup"><span data-stu-id="b29a3-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="b29a3-106">Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.</span><span class="sxs-lookup"><span data-stu-id="b29a3-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="ba1e7-107">Első lépések</span><span class="sxs-lookup"><span data-stu-id="ba1e7-107">Get started</span></span>
-- [<span data-ttu-id="ba1e7-108">Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) áttekintése</span><span class="sxs-lookup"><span data-stu-id="ba1e7-108">Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview</span></span>](on-premises-overview.md)
-- [<span data-ttu-id="ba1e7-109">Helyszíni telepítések rendszerkövetelményei</span><span class="sxs-lookup"><span data-stu-id="ba1e7-109">System requirements for on-premises deployments</span></span>](../../fin-and-ops/get-started/system-requirements-on-prem.md)
-- [<span data-ttu-id="ba1e7-110">Hardverméretezés on-premises környezetekhez</span><span class="sxs-lookup"><span data-stu-id="ba1e7-110">Hardware sizing for on-premises environments</span></span>](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [<span data-ttu-id="ba1e7-111">Online szolgáltatási és on-premises szoftveréletciklus-irányelv</span><span class="sxs-lookup"><span data-stu-id="ba1e7-111">Online service and on-premises software lifecycle policy</span></span>](../migration-upgrade/versions-update-policy.md)
-- [<span data-ttu-id="ba1e7-112">Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) megvásárlása</span><span class="sxs-lookup"><span data-stu-id="ba1e7-112">Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)</span></span>](../../fin-and-ops/get-started/purchase-on-premises.md)
-- [<span data-ttu-id="ba1e7-113">Felhőalapú és helyszíni szolgáltatások összehasonlítása</span><span class="sxs-lookup"><span data-stu-id="ba1e7-113">Cloud and on-premises feature comparison</span></span>](../../fin-and-ops/get-started/cloud-prem-comparison.md)
+## <a name="get-started"></a><span data-ttu-id="b29a3-107">Első lépések</span><span class="sxs-lookup"><span data-stu-id="b29a3-107">Get started</span></span>
+- [<span data-ttu-id="b29a3-108">Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) áttekintése</span><span class="sxs-lookup"><span data-stu-id="b29a3-108">Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) overview</span></span>](on-premises-overview.md)
+- [<span data-ttu-id="b29a3-109">Helyszíni telepítések tervezése</span><span class="sxs-lookup"><span data-stu-id="b29a3-109">Planning for your on-premises deployment</span></span>](plan-onprem-deployment.md)
+- [<span data-ttu-id="b29a3-110">Helyszíni telepítések rendszerkövetelményei</span><span class="sxs-lookup"><span data-stu-id="b29a3-110">System requirements for on-premises deployments</span></span>](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [<span data-ttu-id="b29a3-111">Hardverméretezés on-premises környezetekhez</span><span class="sxs-lookup"><span data-stu-id="b29a3-111">Hardware sizing for on-premises environments</span></span>](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+- [<span data-ttu-id="b29a3-112">Online szolgáltatási és on-premises szoftveréletciklus-irányelv</span><span class="sxs-lookup"><span data-stu-id="b29a3-112">Online service and on-premises software lifecycle policy</span></span>](../migration-upgrade/versions-update-policy.md)
+- [<span data-ttu-id="b29a3-113">Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) megvásárlása</span><span class="sxs-lookup"><span data-stu-id="b29a3-113">Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)</span></span>](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [<span data-ttu-id="b29a3-114">Felhőalapú és helyszíni szolgáltatások összehasonlítása</span><span class="sxs-lookup"><span data-stu-id="b29a3-114">Cloud and on-premises feature comparison</span></span>](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
-## <a name="onboard"></a><span data-ttu-id="ba1e7-114">Onboard</span><span class="sxs-lookup"><span data-stu-id="ba1e7-114">Onboard</span></span>
-- [<span data-ttu-id="ba1e7-115">On-premises projekt létrehozása a Lifecycle Services szolgáltatásban</span><span class="sxs-lookup"><span data-stu-id="ba1e7-115">Create an on-premises project in Lifecycle Services</span></span>](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [<span data-ttu-id="ba1e7-116">On-premises környezetek beállítása és telepítése</span><span class="sxs-lookup"><span data-stu-id="ba1e7-116">Set up and deploy on-premises environments</span></span>](setup-deploy-on-premises-environments.md)
-- [<span data-ttu-id="ba1e7-117">Az SQL Server Reporting Services konfigurálása on-premises telepítéshez</span><span class="sxs-lookup"><span data-stu-id="ba1e7-117">Configure SQL Server Reporting Services for an on-premises deployment</span></span>](../analytics/configure-ssrs-on-premises.md)
-- [<span data-ttu-id="ba1e7-118">Egyéni modellek fejlesztése és telepítése on-premises környezetekhez</span><span class="sxs-lookup"><span data-stu-id="ba1e7-118">Develop and deploy custom models to on-premises environments</span></span>](develop-deploy-custom-models-on-premises.md)
+## <a name="onboard"></a><span data-ttu-id="b29a3-115">Onboard</span><span class="sxs-lookup"><span data-stu-id="b29a3-115">Onboard</span></span>
+- [<span data-ttu-id="b29a3-116">On-premises projekt létrehozása a Lifecycle Services szolgáltatásban</span><span class="sxs-lookup"><span data-stu-id="b29a3-116">Create an on-premises project in Lifecycle Services</span></span>](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [<span data-ttu-id="b29a3-117">Helyszíni környezetek beállítása és telepítése</span><span class="sxs-lookup"><span data-stu-id="b29a3-117">Set up and deploy on-premises environments</span></span>](setup-deploy-on-premises-environments.md)
+- [<span data-ttu-id="b29a3-118">Hálózati nyomtató eszközök telepítése helyszíni környezetekben</span><span class="sxs-lookup"><span data-stu-id="b29a3-118">Install network printer devices in on-premises environments</span></span>](../analytics/install-network-printer-onprem.md)
+- [<span data-ttu-id="b29a3-119">Az SQL Server Reporting Services konfigurálása on-premises telepítéshez</span><span class="sxs-lookup"><span data-stu-id="b29a3-119">Configure SQL Server Reporting Services for an on-premises deployment</span></span>](../analytics/configure-ssrs-on-premises.md)
+- [<span data-ttu-id="b29a3-120">Egyéni modellek fejlesztése és telepítése on-premises környezetekhez</span><span class="sxs-lookup"><span data-stu-id="b29a3-120">Develop and deploy custom models to on-premises environments</span></span>](develop-deploy-custom-models-on-premises.md)
 
-## <a name="work-in-your-on-premises-deployment"></a><span data-ttu-id="ba1e7-119">Munka az on-premises telepítésen</span><span class="sxs-lookup"><span data-stu-id="ba1e7-119">Work in your on-premises deployment</span></span>
-- [<span data-ttu-id="ba1e7-120">A dokumentumkezelés konfigurálása</span><span class="sxs-lookup"><span data-stu-id="ba1e7-120">Configure document management</span></span>](../../fin-and-ops/organization-administration/configure-document-management.md)
-- [<span data-ttu-id="ba1e7-121">Elektronikus jelentéskészítési konfigurációk importálása</span><span class="sxs-lookup"><span data-stu-id="ba1e7-121">Import Electronic reporting configurations</span></span>](../analytics/electronic-reporting-import-ger-configurations.md)
-- [<span data-ttu-id="ba1e7-122">Dokumentum-létrehozási, közzétételi és nyomtatási képességek on-premises telepítéseknél</span><span class="sxs-lookup"><span data-stu-id="ba1e7-122">Document generation, publishing, and printing capabilities in on-premises deployments</span></span>](../analytics/printing-capabilities-on-premises.md)
-- [<span data-ttu-id="ba1e7-123">Műszaki támogatás beállítása</span><span class="sxs-lookup"><span data-stu-id="ba1e7-123">Set up technical support</span></span>](../lifecycle-services/support-experience.md)
-- [<span data-ttu-id="ba1e7-124">Ügyfél internetkapcsolatának hibaelhárítása</span><span class="sxs-lookup"><span data-stu-id="ba1e7-124">Client Internet connection troubleshooting</span></span>](../user-interface/client-disconnected.md)
-- [<span data-ttu-id="ba1e7-125">Frissítések alkalmazása helyszíni telepítéshez</span><span class="sxs-lookup"><span data-stu-id="ba1e7-125">Apply updates to an on-premises deployment</span></span>](apply-updates-on-premises.md)
-- [<span data-ttu-id="ba1e7-126">On-premises telepítés újratelepítése</span><span class="sxs-lookup"><span data-stu-id="ba1e7-126">Redeploy an on-premises deployment</span></span>](redeploy-on-prem.md)
+## <a name="work-in-your-on-premises-deployment"></a><span data-ttu-id="b29a3-121">Munka az on-premises telepítésen</span><span class="sxs-lookup"><span data-stu-id="b29a3-121">Work in your on-premises deployment</span></span>
+- [<span data-ttu-id="b29a3-122">A dokumentumkezelés konfigurálása</span><span class="sxs-lookup"><span data-stu-id="b29a3-122">Configure document management</span></span>](../../fin-and-ops/organization-administration/configure-document-management.md)
+- [<span data-ttu-id="b29a3-123">Elektronikus jelentéskészítési konfigurációk importálása</span><span class="sxs-lookup"><span data-stu-id="b29a3-123">Import Electronic reporting configurations</span></span>](../analytics/electronic-reporting-import-ger-configurations.md)
+- [<span data-ttu-id="b29a3-124">Dokumentum-létrehozási, közzétételi és nyomtatási képességek on-premises telepítéseknél</span><span class="sxs-lookup"><span data-stu-id="b29a3-124">Document generation, publishing, and printing capabilities in on-premises deployments</span></span>](../analytics/printing-capabilities-on-premises.md)
+- [<span data-ttu-id="b29a3-125">Műszaki támogatás beállítása</span><span class="sxs-lookup"><span data-stu-id="b29a3-125">Set up technical support</span></span>](../lifecycle-services/support-experience.md)
+- [<span data-ttu-id="b29a3-126">Ügyfél internetkapcsolatának hibaelhárítása</span><span class="sxs-lookup"><span data-stu-id="b29a3-126">Client Internet connection troubleshooting</span></span>](../user-interface/client-disconnected.md)
+- [<span data-ttu-id="b29a3-127">Frissítések alkalmazása on-premises telepítéshez</span><span class="sxs-lookup"><span data-stu-id="b29a3-127">Apply updates to an on-premises deployment</span></span>](apply-updates-on-premises.md)
+- [<span data-ttu-id="b29a3-128">On-premises telepítés újratelepítése</span><span class="sxs-lookup"><span data-stu-id="b29a3-128">Redeploy an on-premises deployment</span></span>](redeploy-on-prem.md)
 
-## <a name="other-resources"></a><span data-ttu-id="ba1e7-127">Egyéb erőforrások</span><span class="sxs-lookup"><span data-stu-id="ba1e7-127">Other resources</span></span>
-- [<span data-ttu-id="ba1e7-128">Az on-premises telepítéseknél nem elérhető funkciók</span><span class="sxs-lookup"><span data-stu-id="ba1e7-128">Features not implemented in on-premises deployments</span></span>](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
-- [<span data-ttu-id="ba1e7-129">Elavult szolgáltatások</span><span class="sxs-lookup"><span data-stu-id="ba1e7-129">Deprecated features</span></span>](../migration-upgrade/deprecated-features.md)
-- [<span data-ttu-id="ba1e7-130">Szoftver életciklus-házirend és kiadások jegyzéke</span><span class="sxs-lookup"><span data-stu-id="ba1e7-130">Software lifecycle policy and list of releases</span></span>](../migration-upgrade/versions-update-policy.md)
+## <a name="other-resources"></a><span data-ttu-id="b29a3-129">Egyéb erőforrások</span><span class="sxs-lookup"><span data-stu-id="b29a3-129">Other resources</span></span>
+- [<span data-ttu-id="b29a3-130">Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises) – problémamegoldás</span><span class="sxs-lookup"><span data-stu-id="b29a3-130">Troubleshoot Dynamics 365 for Finance and Operations, Enterprise edition on-premises</span></span>](troubleshoot-on-prem.md)
+- [<span data-ttu-id="b29a3-131">Az on-premises telepítéseknél nem elérhető funkciók</span><span class="sxs-lookup"><span data-stu-id="b29a3-131">Features not implemented in on-premises deployments</span></span>](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
+- [<span data-ttu-id="b29a3-132">Elavult szolgáltatások</span><span class="sxs-lookup"><span data-stu-id="b29a3-132">Deprecated features</span></span>](../migration-upgrade/deprecated-features.md)
+- [<span data-ttu-id="b29a3-133">Szoftver életciklus-házirend és kiadások jegyzéke</span><span class="sxs-lookup"><span data-stu-id="b29a3-133">Software lifecycle policy and list of releases</span></span>](../migration-upgrade/versions-update-policy.md)
  
 
