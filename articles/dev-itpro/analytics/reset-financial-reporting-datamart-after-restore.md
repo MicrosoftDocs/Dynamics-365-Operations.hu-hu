@@ -3,7 +3,7 @@ title: "A pénzügyi jelentési adatpiac alaphelyzetbe állítása."
 description: "Ez a témakör a pénzügyi jelentési adatpiac alaphelyzetbe állítását ismerteti."
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Ez a témakör a pénzügyi jelentési adatpiac alaphelyzetbe állítását muta
 - Microsoft Dynamics 365 for Finance and Operations: Financial Reporting, 7.0.10000.4-es és későbbi verziók
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises)
 
-A Finance and Operations Financial Reporting 7.2.6.0-s verziójának beszerzéséhez töltse le a 4052514-es tudásbáziscikket a <https://support.microsoft.com/en-us/help/4052514> oldalról.
+A Finance and Operations Financial Reporting 7.2.6.0-s verziójának beszerzéséhez töltse le a 4052514-es tudásbáziscikket a <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514> oldalról.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>A pénzügyi jelentési adatpiac alaphelyzetbe állítása a Finance and Operations Financial Reporting 7.2.6.0-s és későbbi verzióinál
 
@@ -55,7 +55,7 @@ Az adatpiac alaphelyzetbe állítása csak olyan időszakokban végezhető el, a
 
 Az adatpiac visszaállításához a Jelentéstervezőben az **Eszközök** menüben válassza a **Data Mart alaphelyzetbe állítása** lehetőséget. A megjelenő párbeszédpanel két részből áll: **Statisztika** és **Alaphelyzetbe állítás**.
 
-[![Data Mart alaphelyzetbe állítása párbeszédpanel](./media/Statistics.png)](./media/Statistics.png)
+[![Data Mart alaphelyzetbe állítása párbeszédpanel](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>Integrációs kísérletek
 
@@ -83,8 +83,10 @@ Ha úgy dönt, hogy az adatpiac alaphelyzetbe állítására van szükség, jel�
 - **Adatbázis visszaállítása** – A Finance and Operations adatbázist visszaállították, de a pénzügyi jelentési adatpiac visszaállítására nem került sor.
 - **Egyéb** – más okból kerül sor az adatpiac alaphelyzetbe állítására. Ha aggódik amiatt, hogy probléma van, forduljon a Támogatáshoz annak azonosításához.
 
+[![Data Mart alaphelyzetbe állítása](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Ellenőrizze, hogy az összes meglévő feladat integrálása befejeződött-e, mielőtt elvégezné a lépéseket. Az integráció állapotának megtekintéséhez válassza az **Eszközök** &gt; **Integráció állapota** elemet.
+> Az alaphelyzetbe állítás megkezdése előtt győződjön meg róla, hogy minden Data Mart alaphelyzetbe állítási feladat végrehajtotta a kezdeti betöltést. Erről úgy győződhet meg, hogy rákeres egy értékre a Legutóbbi futtatás ideje oszlopban azáltal, hogy kiválasztja az **Eszközök** &gt; **Integráció állapota** lehetőséget.
 
 #### <a name="clear-users-and-companies"></a>Felhasználók és vállalatok törlése
 
@@ -94,7 +96,10 @@ Ha készen áll az alaphelyzetbe állítás megkezdéséhez, válassza az **OK**
 
 Ha szeretné ellenőrizni az integráció állapotát, akkor válassza az **Eszközök** &gt; **Integráció állapota** lehetőséget az integráció utolsó futtatásának és állapotának megjelenítéséhez.
 
-[![Az integráció állapotának megjelenítése](./media/Integration.png)](./media/Integration.png)
+[![Az integráció állapotának megjelenítése](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> Az alaphelyzetbe való állítás akkor fejeződik be, amikor az összes leképezés a RanToCompletion állapotot jeleníti meg, és az Integrációs állapot ablak szerint az „Integráció kész” a bal alsó sarokban.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>A pénzügyi jelentési adatpiac alaphelyzetbe állítása a Finance and Operations Financial Reporting 7.0.10000.4-s és későbbi verzióinál
 
@@ -142,7 +147,9 @@ A következő Microsoft Windows szolgáltatások nyitott kapcsolatot létesíten
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>Töltse le a legújabb MinorVersionDataUpgrade.zip csomagot
 
-Töltse le a legújabb MinorVersionDataUpgrade.zip csomagot. Az adatfrissítési csomag helyes verziójának megkeresésével és letöltésével kapcsolatban lásd: [A legfrissebb adatfrissítési telepíthető csomag letöltése](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). A MinorVersionDataUpgrade.zip csomag letöltéséhez nincs szükség frissítésre. Ezért csak kövesse az adott témakör „A legfrissebb adatok frissítési telepíthető csomag letöltése” szakaszában leírt lépéseket. A témakörben szereplő minden egyéb lépést kihagyhat.
+Töltse le a legújabb MinorVersionDataUpgrade.zip csomagot. Az adatfrissítési csomag helyes verziójának megkeresésével és letöltésével kapcsolatban lásd: [A legfrissebb adatfrissítési telepíthető csomag letöltése](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+
+A MinorVersionDataUpgrade.zip csomag letöltéséhez nincs szükség frissítésre. Ezért csak kövesse az adott témakör „A legfrissebb adatok frissítési telepíthető csomag letöltése” szakaszában leírt lépéseket. A témakörben szereplő minden egyéb lépést kihagyhat.
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Parancsfájl-műveletek futtatása a Dynamics 365 for Finance and Operations adatbázison
 

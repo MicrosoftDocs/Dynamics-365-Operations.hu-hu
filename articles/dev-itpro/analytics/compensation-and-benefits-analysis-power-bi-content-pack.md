@@ -1,9 +1,9 @@
 ---
 title: "Kompenzáció és juttatások Power BI-tartalom"
-description: "Ez a témakör a következőt ismerteti: Finance and Operations - Kompenzáció és juttatások Power BI-tartalom. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
+description: "Ez a témakör a következőt ismerteti: Finance and Operations - Kompenzáció és juttatások Power BI-tartalom."
 author: jcart1106
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f403416921d2eede9d0071a13af09e1103f91692
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 510064a462258b2a632eaa2a5ffd341950775b89
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,12 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör a következőt ismerteti: Finance and Operations - Kompenzáció és juttatások Power BI-tartalom. Leírja, hogy hogyan kell hozzáférni a tartalmi csomagban szereplő jelentésekhez, és információkat nyújt a tartalmi csomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
-
-<a name="accessing-the-content-pack"></a>A tartalmi csomag elérése
---------------------------
-
-A Kompenzáció és juttatások tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) Megosztott eszközök könyvtárban található. A tartalomcsomag letöltésére és a Microsoft Dynamics 365 for Finance and Operations adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
+Ez a témakör a következőt ismerteti: Finance and Operations - Kompenzáció és juttatások Power BI-tartalom. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>A tartalomcsomag által tartalmazott jelentések
 Miután csatlakoztatta a tartalmi csomagot a Finance and Operations rendszer adataihoz, a jelentések megjelenítik a szervezet adatait. Ha még soha nem használt Microsoft Power BI-t, többet megtudhat róla az [Irányított tanulás a Power BI-hez oldalon](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). A csomag által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
@@ -75,15 +70,7 @@ A Kompenzáció és juttatások tartalomcsomag jelentéseinek feltöltésére a 
 | Munkaerő\_WorkerTitle            | Cím és szolgálati idő dátuma                                                                                   | Munkaerő\_CurrentWorker Munkaerő\_TerminatedWorker Munkaerő\_WorkerTrend                                                                                                                                                                                                                                                       |
 | Munkaerő\_WorkerTrend             | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Munkaerő\_Vállalat Munkaerő\_Kompenzáció Munkaerő\_GeographicLocation Munkaerő\_Teljesítmény Munkaerő\_WorkerName Munkaerő\_ReportsToWorkerName Munkaerő\_CalendarOffset Munkaerő\_Dátum Munkaerő\_WorkerTitle Munkaerő\_Demográfia Munkaerő\_Foglalkoztatás Munkaerő\_Feladat Munkaerő\_WorkerBenefit                     |
 
-Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. E kiszámított mértékek aztán a fő teljesítménymutatók (KPI-k) és a tartalmi csomagban használt jelentések kiszámításához használatosak. Ha szeretné felvenni a további számításokat a jelentésekbe és irányítópultokba, töltse le és módosítsa a CompensationandBenefits.pbix fájlt a LCS-ből. Ez a fájl azon alapértelmezett adatmodell, amelyet a tartalmi csomag létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
 
-## <a name="additional-resources"></a>További erőforrások
-Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
-
--   [Adatentitások](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
 
 
 

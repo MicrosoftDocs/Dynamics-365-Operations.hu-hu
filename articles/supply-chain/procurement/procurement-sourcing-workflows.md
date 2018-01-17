@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3bf244786e308ebcaee27a16fae378f41086f963
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -44,10 +44,11 @@ A következő munkafolyamat-típusok elérhetőek a Beszerzés és forrás modul
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
 | **Típus**                         | **Típus**                                          |
-| Beszerzési igénylés ellenőrzése      | Ellenőrzési munkafolyamatok létrehozása beszerzési igényekhez.            |
-| Beszerzési igénylési sor ellenőrzése | Ellenőrzési munkafolyamatok létrehozása beszerzésiigény-sorokhoz.       |
+| Beszerzési igénylés ellenőrzése      | Ellenőrzési és jóváhagyási munkafolyamatok létrehozása beszerzési igénylésekhez.            |
+| Beszerzési igénylési sor ellenőrzése | Ellenőrzési és jóváhagyási munkafolyamatok létrehozása beszerzésiigénylés-sorokhoz.       |
 | Beszerzési rendelés munkafolyamata          | Ellenőrzési és jóváhagyási munkafolyamatok létrehozása beszerzési rendelésekhez.     |
 | Beszerzésirendelés-sor munkafolyamata     | Ellenőrzési és jóváhagyási munkafolyamatok létrehozása beszerzésirendelés-sorokhoz. |
+| Szállítói hozzáadás alkalmazás-munkafolyamata  | Ellenőrzési és jóváhagyási munkafolyamatok létrehozása új szállítók hozzáadásához a szállítói kérelmeken keresztül. |
 
 ## <a name="creating-a-workflow"></a>Munkafolyamat létrehozása
 Hogy létrehozzon egy munkafolyamatot lépjen a Beszerzés és forrás &gt; Beállítás &gt; Beszerzés és forrás munkafolyamatok elemre és hozzon létre egy új munkafolyamatot a készíteni kívánt munkafolyamat-típus kiválasztásával.  
@@ -75,6 +76,6 @@ Jóváhagyási lépéseket rendelhet a következő résztvevőcsoportokhoz.
 
 [Beszerzési igénylési munkafolyamat](purchase-requisitions-workflow.md)
 
-
+[Szállítók felvétele](vendor-onboarding.md)
 
 

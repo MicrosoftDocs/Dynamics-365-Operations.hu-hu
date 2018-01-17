@@ -3,7 +3,7 @@ title: "Gyakorlatvezető Power BI tartalom"
 description: "Ez a témakör azt ismerteti, mit tartalmaz a Gyakorlatvezető Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni a tartalomban szereplő jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: KimANelson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 836997f9f5b146ff48252c3f06153791ec1aabed
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 44f017fc3460b83b730f2f7c909c6b88480dd918
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -39,7 +39,9 @@ A **Gyakorlatvezető** Power BI-tartalom öt jelentésoldalt tartalmaz: egy átt
 A tartalom minden összege a rendszer pénznemében jelenik meg. Beállíthatja az rendszer alapértelmezett pénznemét a **Rendszerparaméterek** oldalon.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+
 A **Gyakorlatkezelés** Power BI-tartalom a **Projektvezetés** munkaterületen látható.
+
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
 
@@ -47,7 +49,7 @@ A következő táblázat ismerteti a **Gyakorlatvezető** Power BI-tartalom egye
 
 | Jelentéslap       | Mutatók |
 |-------------------|---------|
-| Projektek áttekintése | <ul><li>Létrehozott projektek</li><li>Becsült projektek</li><li>Folyamatban lévő projektek</li><li>Projektek száma szakasz szerint</li><li>Projektek száma város szerint</li><li>Tényleges bevétel vevő szerint</li><li>Költségvetés – bruttó nyereség projekt szerint</li><li>Jelenérték-kezelés áttekintése</li></ul> |
+| Projektek áttekintése | <ul><li>Létrehozott projektek</li><li>Becsült projektek</li><li>Folyamatban lévő projektek</li><li>Tényleges bevétel vevő szerint</li><li>Költségvetés – bruttó nyereség projekt szerint</li><li>Jelenérték-kezelés áttekintése</li></ul> |
 | Költség              | <ul><li>Tényleges és költségvetési költség havonta</li><li>Tényleges és költségvetési költség évente</li><li>Tényleges és költségvetési költség kategóriánként</li><li>Tényleges költség tranzakciótípus szerint</li></ul> |
 | Bevétel           | <ul><li>Tényleges bevétel hónap szerint</li><li>Tényleges bevétel irányítószám szerint</li><li>Tényleges és költségvetési bevétel kategória szerint</li><li>Tényleges bevétel vevői iparág szerint</li></ul> |
 | EVM               | Költség- és ütemezésteljesítmény-index projekt szerint |
@@ -55,74 +57,67 @@ A következő táblázat ismerteti a **Gyakorlatvezető** Power BI-tartalom egye
 
 Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/) lehetőségre. Használhatja a Mögöttes adatok exportálása funkciót is azoknak a mögöttes adatoknak az exportálásához, amelyeknek összegzése egy ábrán látható.
 
-## <a name="extending-the-power-bi-content"></a>Power BI-tartalom kibővítése
-A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban található tartalomcsomagok révén nagyszerű elemzési lehetőségeket nyújthat azoknak a személyeknek, akik nem jelentkeztek be a Microsoft Dynamics 365 szolgáltatásba. A tartalmi csomagokat módosíthatja, hogy más jelentéseket vagy megjelenítéseket tartalmazzanak, majd közzéteheti őket elemzés céljából a Power BI.com bérlőn. 
-
-A **Gyakorlatvezető** Power BI-tartalmat az LCS Megosztott eszközök könyvtárában találja. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
-
-Ügyeljen arra, hogy azt a **Gyakorlatvezető** tartalmat töltse le, amely a Dynamics 365 ön által használt verziójára vonatkozik.
-
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 
 A **Gyakorlatvezető** Power BI-tartalom jelentési oldalainak feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
 
 A következő szakaszok leírják az egyes entitások által használt összesített mértékeket.
 
-### <a name="entity-projectaccountingcubeactualhourutilization"></a>Entitás: ProjectAccountingCube_ActualHourUtilization
+### <a name="entity-projectaccountingcubeactualhourutilization"></a>Entitás: ProjectAccountingCube\_ActualHourUtilization
 **Adatforrás:** ProjEmplTrans
 
-| Fő összesítő mérték      | Mező                              | Leírás | 
+| Fő összesítő mérték      | Mező                              | Leírás |
 |--------------------------------|------------------------------------|-------------|
 | Tényleges számlázható hasznos órák száma | Sum(ActualUtilizationBillableRate) | A ténylegesen számlázható felhasznált órák száma. |
 | Tényleges számlázható haszontalan idő   | Sum(ActualBurdenBillableRate)      | Összes tényleges haszontalan idő aránya. |
 
-### <a name="entity-projectaccountingcubeactuals"></a>Entitás: ProjectAccountingCube_Actuals
+### <a name="entity-projectaccountingcubeactuals"></a>Entitás: ProjectAccountingCube\_Actuals
 **Adatforrás:** ProjTransPosting
 
-| Fő összesítő mérték | Mező              | Leírás | 
+| Fő összesítő mérték | Mező              | Leírás |
 |---------------------------|--------------------|-------------|
-| Tényleges bevétel            | Sum(ActualRevenue) | Az összes tranzakció összes feladott bevétele. |   
+| Tényleges bevétel            | Sum(ActualRevenue) | Az összes tranzakció összes feladott bevétele. |
 | Tényleges költség               | Sum(ActualCost)    | Az összes tranzakciótípus összes feladott költsége. |
 
-### <a name="entity-projectaccountingcubecustomer"></a>Entitás: ProjectAccountingCube_Customer
+### <a name="entity-projectaccountingcubecustomer"></a>Entitás: ProjectAccountingCube\_Customer
 **Adatforrás:** CustTable
 
-| Fő összesítő mérték | Mező                                            | Leírás | 
-|---------------------------|--------------------------------------------------|-------------|
-| Projektek száma        | COUNTA(ProjectAccountingCube_Projects[PROJECTS]) | Elérhető projektek száma. |
+| Fő összesítő mérték | Mező                                             | Leírás |
+|---------------------------|---------------------------------------------------|-------------|
+| Projektek száma        | COUNTA(ProjectAccountingCube\_Projects[PROJECTS]) | Elérhető projektek száma. |
 
 
-### <a name="entity-projectaccountingcubeforecasts"></a>Entitás: ProjectAccountingCube_Forecasts
+### <a name="entity-projectaccountingcubeforecasts"></a>Entitás: ProjectAccountingCube\_Forecasts
 **Adatforrás:** ProjTransBudget
 
-| Fő összesítő mérték | Mező                  | Leírás | 
+| Fő összesítő mérték | Mező                  | Leírás |
 |---------------------------|------------------------|-------------|
 | Előirányzott költség               | Sum(BudgetCost)        | Az összes tranzakciótípus összes előrejelzett költsége. |
-| Tényleges bevétel            | Sum(BudgetRevenue)     | A megvalósult/számlázott bevétel előrejelzett összege.  |
+| Tényleges bevétel            | Sum(BudgetRevenue)     | A megvalósult/számlázott bevétel előrejelzett összege. |
 | Előirányzott bruttó nyereség       | Sum(BudgetGrossMargin) | Különbség az összes előrejelzett bevétel összege és az összes előrejelzett költség összege között. |
 
-### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Entitás: ProjectAccountingCube_ProjectPlanCostsView
+### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Entitás: ProjectAccountingCube\_ProjectPlanCostsView
 **Adatforrás:** Projekt
 
-| Fő összesítő mérték | Mező                    | Leírás | 
+| Fő összesítő mérték | Mező                    | Leírás |
 |---------------------------|--------------------------|-------------|
 | Tervezett költség              | Sum(SumOfTotalCostPrice) | Tervezett feladatokkal rendelkező projekttranzakció-típus becsléseinek teljes önköltségi ára. |
 
-### <a name="entity-projectaccountingcubeprojects"></a>Entitás: ProjectAccountingCube_Projects
+### <a name="entity-projectaccountingcubeprojects"></a>Entitás: ProjectAccountingCube\_Projects
 **Adatforrás:** Projekt
 
-| Fő összesítő mérték    | Mező | Leírás | 
+| Fő összesítő mérték    | Mező | Leírás |
 |------------------------------|-------|-------------|
-| Költségteljesítmény-index       | ProjectAccountingCube_Projects[Earned value] / ProjectAccountingCube_Projects[A végrehajtott feladatok összes tényleges költsége] | Az összes bevétel osztva az összes tényleges költséggel. |
-| Teljesítményindex ütemezése   | ProjectAccountingCube_Projects[Earned value] / ProjectAccountingCube_Projects[A végrehajtott feladatok összes tervezett költsége] | Az összes bevétel osztva az összes tervezett költséggel. |
-| A már befejezett munka százaléka. | Befejezett munka százaléka = ProjectAccountingCube_Projects[A végrehajtott feladatok összes tényleges költsége] / (ProjectAccountingCube_Projects[A végrehajtott feladatok összes tényleges költsége] + ProjectAccountingCube_Projects[Projekt összes tervezett költsége] - ProjectAccountingCube_Projects[A végrehajtott feladatok összes tervezett költsége]) | A végrehajtott munka összesített százaléka a végrehajtott feladat tényleges költsége és a projekt tervezett költsége alapján. |
-| Tényleges számlázható órák aránya  | ProjectAccountingCube_Projects[Projekt összes ténylegesen számlázható hasznos ideje] / (ProjectAccountingCube_Projects[Projekt összes ténylegesen számlázható hasznos ideje] + ProjectAccountingCube_Projects[Projekt összes ténylegesen számlázható haszontalan ideje]) | Tényleges számlázható órák összesen a hasznos órák és a haszontalan idő alapján. |
-| Jelenérték                 | ProjectAccountingCube_Projects[Projekt összes tervezett költsége] * ProjectAccountingCube_Projects[A már befejezett munka százaléka] | Összes tervezett költség szorozva a végrehajtott munka százalékával. |
+| Költségteljesítmény-index       | ProjectAccountingCube\_Projects[Jelenérték] ÷ ProjectAccountingCube\_Projects[A végrehajtott feladatok összes tényleges költsége] | Az összes bevétel osztva az összes tényleges költséggel. |
+| Teljesítményindex ütemezése   | ProjectAccountingCube\_Projects[Jelenérték] ÷ ProjectAccountingCube\_Projects[A végrehajtott feladatok összes tervezett költsége] | Az összes bevétel osztva az összes tervezett költséggel. |
+| A már befejezett munka százaléka. | Befejezett munka százaléka = ProjectAccountingCube\_Projects[A végrehajtott feladatok összes tényleges költsége] / (ProjectAccountingCube\_Projects[A végrehajtott feladatok összes tényleges költsége] + ProjectAccountingCube\_Projects[Projekt összes tervezett költsége] - ProjectAccountingCube\_Projects[A végrehajtott feladatok összes tervezett költsége]) | A végrehajtott munka összesített százaléka a végrehajtott feladat tényleges költsége és a projekt tervezett költsége alapján. |
+| Tényleges számlázható órák aránya  | ProjectAccountingCube\_Projects[Projekt összes ténylegesen számlázható hasznos ideje] / (ProjectAccountingCube\_Projects[Projekt összes ténylegesen számlázható hasznos ideje] + ProjectAccountingCube\_Projects[Projekt összes ténylegesen számlázható haszontalan ideje]) | Tényleges számlázható órák összesen a hasznos órák és a haszontalan idő alapján. |
+| Jelenérték                 | ProjectAccountingCube\_Projects[Projekt összes tervezett költsége] * ProjectAccountingCube\_Projects[A már befejezett munka százaléka] | Összes tervezett költség szorozva a végrehajtott munka százalékával. |
 
-### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entitás: ProjectAccountingCube_TotalEstimatedCosts 
+### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entity: ProjectAccountingCube\_TotalEstimatedCosts 
 **Adatforrás:** ProjTable
 
-| Fő összesítő mérték       | Mező               | Leírás | 
+| Fő összesítő mérték       | Mező               | Leírás |
 |---------------------------------|---------------------|-------------|
 | Befejeződött tevékenység tervezett költsége | Sum(TotalCostPrice) | Befejeződött feladatokkal rendelkező projekttranzakció-típus becsléseinek teljes önköltségi ára. |
 

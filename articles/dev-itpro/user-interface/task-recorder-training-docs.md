@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b744a895bbd494212c4c388362dd7290207af938
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre feladatrögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat, illetve hogyan szerepeltesse azokat a Súgóban.
 
 > [!IMPORTANT]
-> A Dynamics 365 for Talent rendszerben nem hozhat létre egyéni feladat-útmutatókat. A Talent súgórendszere automatikusan kapcsolódik a termék feladat-útmutatóihoz. 
+> Rögzítheti saját feladat-útmutatóit a Dynamics 365 for Talent számára, de jelenleg nem mentheti őket az Üzletifolyamat-modellező (BPM) tárba, illetve nem nyithatja meg őket a Súgó ablaktáblából. Mentheti őket helyben vagy egy hálózati helyre, majd megnyithatja és újra lejátszhatja őket a Feladatrögzítő használatával. 
 
 <a name="learn-about-task-recorder"></a>További tudnivalók a Feladatrögzítőről
 -------------------------
@@ -42,7 +42,7 @@ A Feladatrögzítő egy olyan eszköz, amellyel a termék felhasználói felüle
 
 -   **Feladatrögzítők feladat útmutatókként lejátszhatók.** A feladat-útmutatók a Súgó nyújtotta élmény szerves részét képezik. A feladat-útmutató irányított, vezérelt, interaktív élmény, amely végigvezet az üzleti folyamat lépésein. A felhasználónak teljesítenie kell minden lépést felugró kérdések (vagy "buborékdiagram") révén, amely keresztülmozog a felhasználói felületen és azon elemére mutat, amellyel a felhasználónak interakcióba kellene lépnie. A "buborékdiagram" arról is tájékoztatást ad, hogyan kellene interakcióba lépni az elemmel, például "Kattintson ide" vagy "Adjon meg egy értéket ebben a mezőben". A feladat-útmutató a felhasználó aktuális adathalmazára vonatkozóan fut és a bevitt adatok a felhasználó környezetében kerülnek mentésre.
 -   **A Feladatrögzítő lépésről lépésre megjeleníthető a Súgó ablakban.** A Súgó ablakot használhatja Feladatrögzítő keresésére és megjelenítésére. A **?** gombra való kattintással nyitható meg a Súgó ablaktábla. a felső navigációs sávon, vagy használja **Ctrl+Shift+?** billentyűkódot. A Feladatrögzítő lépéseit a Súgó ablakban olvashatja, vagy dönthet a felvétel lejátszása feladat-útmutatóként mellett, így az végigvezeti Önt a felhasználói felületen.
--   **Feladatrögzítések BPM-be menthetők.** A feladatrögzítést hierarchiasorhoz is mentheti, a Lifecycle Services (LCS) szolgáltatásban lévő Üzletifolyamat-modellező (BPM) tárba. Felsorolt lépések és az üzleti folyamatok ábrája a rögzítésből kerül létrehozásra. A BPM-tárba mentett feladatrögzítések Súgóként jeleníthetők meg.
+-   **Feladatrögzítések BPM-be menthetők.** A feladatrögzítést hierarchiasorhoz is mentheti, a Lifecycle Services (LCS) szolgáltatásban lévő BPM könyvtárba. Felsorolt lépések és az üzleti folyamatok ábrája a rögzítésből kerül létrehozásra. A BPM-tárba mentett feladatrögzítések Súgóként jeleníthetők meg.
 -   **Feladatrögzítők Word dokumentumként menthetők.** Ez lehetővé teszi nyomtatható képzési útmutatók egyszerű létrehozását.
 
 Létrehozhatja saját feladatrögzítését, lejátszhatja a Microsoft által biztosított feladatrögzítéseket vagy módosíthatja a Microsoft által biztosított feladatrögzítéseket a saját konfigurációja szerint. A Feladatrögzítővel kapcsolatos további információkért lásd: [Feladatrögzítő](task-recorder.md).

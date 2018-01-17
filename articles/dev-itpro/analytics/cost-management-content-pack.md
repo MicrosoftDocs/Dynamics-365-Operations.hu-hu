@@ -1,9 +1,9 @@
 ---
 title: "Költségkezelési Power BI-tartalom"
-description: "Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelési Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+description: "Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelési Power BI-tartalom modul."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelési Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelési Power BI-tartalom modul. 
 
 # <a name="overview"></a>Áttekintés
 
@@ -51,8 +51,6 @@ A **Kezelési költség** Microsoft Power BI tartalom készletkönyvelőknek vag
 
 A CostAggregatedCostStatementEntryEntity elsődleges adatforrása a CostStatementCache táblában található. Ezt a táblát az Adathalmaz-gyorsítótár keretrendszere kezeli. Alapértelmezés szerint a tábla 24 óránként frissül, de az adatgyorsítótár konfigurációjában engedélyezheti a kézi frissítést is. Ezután a **Költségkezelés** vagy a **Költségelemzés** munkaterületen végezhet kézi frissítést. A CostStatementCache frissítésének futtatása után a frissített adatok a webhelyen történő megtekintéséhez frissítenie kell az OData kapcsolatot a Power BI.com-on. Az eltérési (beszerzés, termelés) mérőszámok ebben a Power BI-tartalomban csak azon elemekre vonatkoznak, amelyek értékelése Normál elszámolóár szerint történik. A termelési eltérés számítása az aktív és a realizált költség közötti különbség formájában történik. A gyártási eltérés kiszámítására akkor kerül sor, amikor a termelési rendelés állapota **Befejezve** lesz. További információért az eltérési típusokkal és az egyes típusok kiszámítási módját illetően lásd: [Befejezett termelési rendelés eltéréseinek elemzése](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **költségkezelés** Power BI-tartalom elérhető a PowerBI.com webhelyről. A csatlakozással és a Microsoft Dynamics 365 for Finance and Operations-adatok betöltésével kapcsolatos további tudnivalókat lásd: [Power BI-tartalom elérése a PowerBI.com webhelyről](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Költségkezelés** Power BI-tartalom megjelenítési formáinak áttekintése található.
@@ -136,13 +134,6 @@ A következő fő dimenziók szolgálnak szűrőként az összesítő mértékek
 | Főkönyvek          | Pénznem, név, leírás                  |
 | Telephelyek            | Azonosító, név, ország, város                      |
 
-## <a name="additional-resources"></a>További erőforrások
-Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
-
--   [Adatentitások](..\data-entities\data-entities.md)
--   [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](configure-power-bi-integration.md)
 
 
 

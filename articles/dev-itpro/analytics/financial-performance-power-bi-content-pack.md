@@ -1,9 +1,9 @@
 ---
 title: "Pénzügyi teljesítmény Power BI-tartalom"
-description: "Ez a témakör ismerteti a pénzügyi teljesítmény Power BI-tartalmat. Leírja, hogyan kell használni az irányítópultot és a csomagban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
+description: "Ez a témakör ismerteti a pénzügyi teljesítmény Power BI-tartalmat."
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 Ez a témakör ismerteti a **Pénzügyi teljesítmény** Microsoft Power BI-tartalmat. Leírja, hogyan kell használni az irányítópultot és a csomagban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
-
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-
-A **Pénzügyi teljesítmény** Power BI a Microsoft Dynamics Lifecycle Services (LCS), valamint PowerBI.com használatával érhető el.
-
-### <a name="available-from-lcs"></a>LCS elérhetőség
-Az LCS-szolgáltatásokból elérhető **Pénzügyi teljesítmény** Power BI-tartalom a következő verziókat támogatja:
-
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadás
-- Microsoft Dynamics 365 for Operations 1611-es verzió 
-
-A Power BI-tartalom az LCS Megosztott eszközök könyvtárában található. A tartalmi csomag letöltésére és a szervezetben való implementálására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
-
-### <a name="available-from-powerbicom"></a>Elérhető PowerBI.com webhelyen
-A PowerBI.com webhelyről elérhető **Pénzügyi teljesítmény** Power BI-tartalom a Microsoft Dynamics AX 7.0 és 7.0.1-es verzióját támogatja. A csatlakozással és a Dynamics AX-adatok betöltésével kapcsolatos további tudnivalókat lásd: [Power BI-tartalom elérése a PowerBI.com webhelyről](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Fő számla beállítása
 Mivel a szervezetek szeretik, ha a kötelezettségeik és a bevételeik összegei pozitív összegként jelennek meg a jelentésekben, a fő számlák beállítása fontos szerepet játszik. Ugyanis ezen fő számlák pozitív összegként való megjelenítéséhez a fő számla típusaként **Kötelezettség** vagy **Bevétel** értéket kell megadni. E számlatípusok használatakor a Power BI szolgáltatáson keresztüli jelentéstétel megfordítja az előjeleket, és az összegeket pozitívként jeleníti meg.
@@ -101,5 +86,5 @@ A következő entitásokat használták **Pénzügyi teljesítmény** Power BI-t
 - Főkönyvek
 - ChartofAccounts
 
-Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. A kiszámított mértékek a fő teljesítménymutatók (KPI-k) és a tartalomban használt jelentések kiszámításához használatosak. Alapértelmezés szerint a tartalom tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez módosíthatja a [Microsoft Excel-munkafüzetet](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalom létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
+Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. A kiszámított mértékek a fő teljesítménymutatók (KPI-k) és a tartalomban használt jelentések kiszámításához használatosak. Alapértelmezés szerint a tartalom tartalmazza az utolsó három év és a jövő évi adatokat. A jelentésekkel és az irányítópulttal kapcsolatos további számítások felvételéhez módosíthatja a [Microsoft Excel-munkafüzetet](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ez a munkafüzet azon alapértelmezett adatmodell, amelyet a tartalom létrehozásához használtak. 
 

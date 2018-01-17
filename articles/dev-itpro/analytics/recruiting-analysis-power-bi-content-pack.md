@@ -3,7 +3,7 @@ title: "Toborzási Power BI-tartalom"
 description: "Ez a témakör ismerteti a Toborzási Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 22138ab34243aa5f8c74f785ce3aaf68b27b9622
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 0d6bc8584d202810ed14367d36d113d9b109ea7a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -66,5 +66,5 @@ A következő táblázat mutatja a **Felvétel** entitásokat, amelyeken a Power
 | Toborzási projekt  | Projekt leírása, projekt állapota és nyitott pozíciók                | Kérelmező, a pályázó alkalmazott, pályázó munkaviszonya megszűnt |
 | A pályázó munkaviszonya megszűnt | Megszűnt pályázók, ok, teljesítmény és a megszűnés dátuma | Vállalat, naptáreltolás, dátum, földrajzi elhelyezkedés, teljesítmény, demográfiai adatok, foglalkoztatás, média, toborzási projekt, pályázó neve |
 
-Ezeket az entitásokat számított mértékek létrehozására használták. E kiszámított mértékek aztán a fő teljesítménymutatók (KPI-k) és a tartalomban használt jelentések kiszámításához használatosak. Ha szeretné felvenni a további számításokat a jelentésekbe és irányítópultokba, töltse le és módosítsa a Recruiting.pbix fájlt a Microsoft Dynamics Lifecycle Services (LCS) rendszerből. Ez a fájl azon alapértelmezett adatmodell, amelyet a tartalom létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
+
 

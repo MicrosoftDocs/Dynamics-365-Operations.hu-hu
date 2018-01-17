@@ -3,7 +3,7 @@ title: "Termelési teljesítmény Power BI-tartalom"
 description: "Ez a témakör azt ismerteti, mit tartalmaz a Termelési teljesítmény Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban."
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -59,15 +59,6 @@ Az alábbi táblázat tartalmazza a tartalomban szereplő megjelenítéseket.
 | Hibatrend erőforrás szerint                  | Hibaarány (db/hó) a feldolgozott mennyiség szerint | |
 | Feladatrendeléses költségelszámolás termelési különbözetei | <ul><li>Termelési különbözet dátum és költségcsoport típusa szerint</li><li>Termelési különbözet hely és költségcsoport típusa szerint</li><li>Első 10, kedvezőtlen termelési különbözettel rendelkező termék</li><li>Első 10 kedvezőtlen termelési különbözet erőforrások szerint</li></ul> | <ul><li>Realizált költség</li><li>Termelési különbözet</li><li>Termelési különbözet százalékban kifejezve</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Power BI-tartalom kibővítése
-A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban található tartalomcsomagok révén nagyszerű elemzési lehetőségeket nyújthat azoknak a személyeknek, akik nem jelentkeztek be a Microsoft Dynamics 365 szolgáltatásba. Ezek a tartalomcsomagok módosíthatók, hogy más jelentéseket vagy megjelenítéseket is tartalmazhassanak, majd a tartalomcsomagok elemzés céljából közzétehetők a Power BI.com-bérlőjénél.
-
-A **Termelési teljesítmény** Power BI-tartalmat az LCS Megosztott eszközök könyvtárában találja. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md). Ha meg szeretne tekinteni egy demót, amely bemutatja a Power BI-tartalmak megvalósítását, lásd a [Power BI-tartalom a Microsofttól és az Ön partnereitől a Dynamics Lifecycle Services szolgáltatásban](https://mix.office.com/watch/9puyb1b2xs1w) című részt (Office Mix).
-
-Ügyeljen arra, hogy azt a **Termelési teljesítmény** tartalmat töltse le, amely a Dynamics 365 ön által használt verziójára vonatkozik.
-
-> [!NOTE]
-> Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 1611-es verzióját használja, a KB 4011327 a Power BI-tartalom előfeltétele. A Lifecycle Services szolgáltatásba való bejelentkezést követően itt férhet hozzá a tudásbázishoz: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 
@@ -139,12 +130,5 @@ Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőké
 | Erőforrások                 | Erőforrás-azonosító, erőforrás neve, erőforrástípus és erőforráscsoport |
 | Termékek                  | Termékszám, termék neve, cikkazonosító és cikkcsoport         |
 
-## <a name="additional-resources"></a>További erőforrások
 
-Az alábbiakban néhány hasznos, entitásokkal és kiemelt Üzletiintelligencia-tartalommal kapcsolatos hivatkozást találhat:
-
-- [Adatentitások](../data-entities/data-entities.md)
-- [Szervezeti tartalmi csomagok létrehozása](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Adatmodellezés az üzleti Intelligencia használatával](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Kiemelt Üzletiintelligencia-lapok hozzáadása munkaterületekhez](configure-power-bi-integration.md)
 
