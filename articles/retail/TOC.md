@@ -177,7 +177,7 @@
 # [Kiskereskedelmi fejlesztés és felügyelet](dev-itpro/dev-retail-home-page.md)
 
 ## Felépítés
-### [A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás összetevői – kiskereskedelmi változat](retail-components.md)
+### [A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadás összetevői – kiskereskedelmi változat](retail-components.md)
 ### [A kiskereskedelmi kiszolgáló felépítése](dev-itpro/retail-server-architecture.md)
 ### [Kommunikáció a kiskereskedelmi csatornán](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architektúra](dev-itpro/retail-modern-pos-architecture.md)
