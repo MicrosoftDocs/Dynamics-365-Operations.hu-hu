@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: hu-hu
 ms.lasthandoff: 09/29/2017
 
 ---
-# Készletszintek kiigazítása a raktárban (alap raktározáskészlet-nyilvántartás)
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Készletszintek kiigazítása a raktárban (alap raktározáskészlet-nyilvántartás)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készlethelyesbítési napló a raktárban található termékek készletszintjének helyesbítéséhez. Ennek megkezdése előtt először be kell állítani egy készletnaplónevet a készlethelyesbítéshez. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti. Ezeket a feladatokat általában egy raktári alkalmazott végzi el.
 
 
-## Készlethelyesbítési napló létrehozása
+## <a name="create-an-inventory-adjustment-journal"></a>Készlethelyesbítési napló létrehozása
 1. Ugrás a Készletgazdálkodás > Naplóbejegyzések > Cikkek > Készlethelyesbítés lehetőségre.
 2. Kattintson az Új lehetőségre.
 3. A Név mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
@@ -38,7 +38,7 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
     * Ki lesz töltve néhány más mező a kiválasztott készlethelyesbítés naplónév beállításai alapján.  
 5. Kattintson az OK gombra.
 
-## Naplósorok létrehozása
+## <a name="create-journal-lines"></a>Naplósorok létrehozása
 1. Kattintson az Új lehetőségre.
 2. A listában jelölje ki a Cikkszám mezőt.
 3. Válasszon egy cikket a Cikkszám mezőben. Az USMF bemutatócég használata esetén írja be a „D0001” kódot.
@@ -50,7 +50,7 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
 8. Adjon meg egy számot a Mennyiség mezőben.
     * Az önköltségi ár mező meghatározza az egységenkénti költséget a készletbevételek számára. Ha nincs megadva a költség a cikkszámhoz, vagy ha manuálisan szeretné módosítani a költséget, azt itt teheti meg.  
 
-## Készlethelyesbítési napló érvényesítése és feladása
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a>Készlethelyesbítési napló érvényesítése és feladása
 1. Kattintson az Érvényesítés gombra.
 2. Kattintson az OK gombra.
 3. Kattintson a Feladás lehetőségre.

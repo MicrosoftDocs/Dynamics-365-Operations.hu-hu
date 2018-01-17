@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: hu-hu
 ms.lasthandoff: 09/29/2017
 
 ---
-# A készlet elérhetőségének ellenőrzése
+# <a name="check-the-availability-of-stock"></a>A készlet elérhetőségének ellenőrzése
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuális, illetve ténylegesen rendelkezésre álló készletét. Az eljárás azt is bemutatja, hogy hogyan jelenítheti meg az adott cikkel kapcsolatos szállítói adatokat. A tényleges aktuális készlet a ténylegesen rendelkezésre álló, azaz a beszerzett, átvett és nyilvántartásba vett készletet mutatja meg. Az aktuális készlet nem csak a ténylegesen rendelkezésre álló, azaz a tényleges aktuális készletet, hanem a már megrendelt, viszont még nem át- vagy nyilvántartásba vett készletet is tartalmazza. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti. A USMF használata esetén alkalmazhatja az itt megjelenő, példa jellegű értékeket. Ezeket a feladatokat jellemzően egy raktári dolgozó végzi el.
 
 
-## Ellenőrizze az adott cikk aktuális készletét
+## <a name="check-on-hand-inventory-for-an-item"></a>Ellenőrizze az adott cikk aktuális készletét
 1. Nyissa meg a következőt: Készletkezelés > Lekérdezések és jelentések > Aktuális készlet.
 2. Válassza ki a Cikkszám sort.
     * Az aktuális készlet cikkszám szerinti lekérdezéséhez válassza ki azt a sort, ahol a Táblázat beállítása Aktuális készlet, a Mező beállítása pedig cikkszám.  
@@ -49,7 +49,7 @@ Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuá
 11. Zárja be a lapot.
 12. Zárja be a lapot.
 
-## Ellenőrizze az adott cikk tényleges aktuális készletét
+## <a name="check-physical-on-hand-inventory"></a>Ellenőrizze az adott cikk tényleges aktuális készletét
 1. Nyissa meg a következőt: Készletkezelés > Lekérdezések és jelentések > Tényleges aktuális készlet.
 2. A cikkmezőbe írjon egy értéket.
     * A cikklistát a Telephely és Raktár mezők segítségével tudja szűrni.  
@@ -59,7 +59,7 @@ Ez az eljárás bemutatja, hogy hogyan ellenőrizheti egy adott cikkszám aktuá
 5. Kattintson az OK gombra.
 6. Zárja be a lapot.
 
-## Ellenőrizze az aktuális készletet hely szerint.
+## <a name="check-on-hand-inventory-by-location"></a>Ellenőrizze az aktuális készletet hely szerint.
 1. Nyissa meg a következőt: Készletkezelés > Lekérdezések és jelentések > Aktuális helyenként.
 2. Érték beírása a Raktár mezőbe.
     * Ha a USMF vállalat bemutató adatait alkalmazza, úgy használhatja az „51” értéket.  
