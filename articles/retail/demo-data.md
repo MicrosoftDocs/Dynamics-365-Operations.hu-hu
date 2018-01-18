@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailTillLayout
 audience: Application user
 ms.search.scope: Operations, Retail
 ms.custom: 
@@ -18,10 +19,10 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 563c89c75e2136294f8f841bec094c2aeb85d580
-ms.openlocfilehash: b758b48230e8d9fabdccbe267a6ad6b9e74af0ff
+ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
+ms.openlocfilehash: 61a1eeba0e44a2600157f2e5c3f2de042c786d91
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -95,13 +96,13 @@ ms.lasthandoff: 10/17/2017
 
 | <span data-ttu-id="8dcea-173">Elrendezés típusa</span><span class="sxs-lookup"><span data-stu-id="8dcea-173">Layout type</span></span> | <span data-ttu-id="8dcea-174">Feloldás</span><span class="sxs-lookup"><span data-stu-id="8dcea-174">Resolution</span></span> | <span data-ttu-id="8dcea-175">Képarány</span><span class="sxs-lookup"><span data-stu-id="8dcea-175">Aspect ratio</span></span> | <span data-ttu-id="8dcea-176">Cél kijelző</span><span class="sxs-lookup"><span data-stu-id="8dcea-176">Target display</span></span>          |
 |-------------|------------|--------------|-------------------------|
-| <span data-ttu-id="8dcea-177">Tömörítés\*</span><span class="sxs-lookup"><span data-stu-id="8dcea-177">Compact\*</span></span>   | <span data-ttu-id="8dcea-178">480 × 853</span><span class="sxs-lookup"><span data-stu-id="8dcea-178">480 × 853</span></span>  | <span data-ttu-id="8dcea-179">16:9</span><span class="sxs-lookup"><span data-stu-id="8dcea-179">16:9</span></span>         | <span data-ttu-id="8dcea-180">Telefonok</span><span class="sxs-lookup"><span data-stu-id="8dcea-180">Phones</span></span>                  |
+| <span data-ttu-id="8dcea-177">Tömörítés\\*</span><span class="sxs-lookup"><span data-stu-id="8dcea-177">Compact\\*</span></span>   | <span data-ttu-id="8dcea-178">480 × 853</span><span class="sxs-lookup"><span data-stu-id="8dcea-178">480 × 853</span></span>  | <span data-ttu-id="8dcea-179">16:9</span><span class="sxs-lookup"><span data-stu-id="8dcea-179">16:9</span></span>         | <span data-ttu-id="8dcea-180">Telefonok</span><span class="sxs-lookup"><span data-stu-id="8dcea-180">Phones</span></span>                  |
 | <span data-ttu-id="8dcea-181">Teljes</span><span class="sxs-lookup"><span data-stu-id="8dcea-181">Full</span></span>        | <span data-ttu-id="8dcea-182">1024 × 768</span><span class="sxs-lookup"><span data-stu-id="8dcea-182">1024 × 768</span></span> | <span data-ttu-id="8dcea-183">4:3</span><span class="sxs-lookup"><span data-stu-id="8dcea-183">4:3</span></span>          | <span data-ttu-id="8dcea-184">Táblagépek</span><span class="sxs-lookup"><span data-stu-id="8dcea-184">Tablets</span></span>                 |
-| <span data-ttu-id="8dcea-185">Teljes\*</span><span class="sxs-lookup"><span data-stu-id="8dcea-185">Full\*</span></span>      | <span data-ttu-id="8dcea-186">1280 × 720</span><span class="sxs-lookup"><span data-stu-id="8dcea-186">1280 × 720</span></span> | <span data-ttu-id="8dcea-187">16:9</span><span class="sxs-lookup"><span data-stu-id="8dcea-187">16:9</span></span>         | <span data-ttu-id="8dcea-188">Táblagépek</span><span class="sxs-lookup"><span data-stu-id="8dcea-188">Tablets</span></span>                 |
+| <span data-ttu-id="8dcea-185">Teljes\\*</span><span class="sxs-lookup"><span data-stu-id="8dcea-185">Full\\*</span></span>      | <span data-ttu-id="8dcea-186">1280 × 720</span><span class="sxs-lookup"><span data-stu-id="8dcea-186">1280 × 720</span></span> | <span data-ttu-id="8dcea-187">16:9</span><span class="sxs-lookup"><span data-stu-id="8dcea-187">16:9</span></span>         | <span data-ttu-id="8dcea-188">Táblagépek</span><span class="sxs-lookup"><span data-stu-id="8dcea-188">Tablets</span></span>                 |
 | <span data-ttu-id="8dcea-189">Teljes</span><span class="sxs-lookup"><span data-stu-id="8dcea-189">Full</span></span>        | <span data-ttu-id="8dcea-190">1366 × 768</span><span class="sxs-lookup"><span data-stu-id="8dcea-190">1366 × 768</span></span> | <span data-ttu-id="8dcea-191">16:9</span><span class="sxs-lookup"><span data-stu-id="8dcea-191">16:9</span></span>         | <span data-ttu-id="8dcea-192">Táblagépek, nagyobb képernyők</span><span class="sxs-lookup"><span data-stu-id="8dcea-192">Tablets, larger screens</span></span> |
 | <span data-ttu-id="8dcea-193">Teljes</span><span class="sxs-lookup"><span data-stu-id="8dcea-193">Full</span></span>        | <span data-ttu-id="8dcea-194">1440 × 960</span><span class="sxs-lookup"><span data-stu-id="8dcea-194">1440 × 960</span></span> | <span data-ttu-id="8dcea-195">3:2</span><span class="sxs-lookup"><span data-stu-id="8dcea-195">3:2</span></span>          | <span data-ttu-id="8dcea-196">Táblagépek, nagyobb képernyők</span><span class="sxs-lookup"><span data-stu-id="8dcea-196">Tablets, larger screens</span></span> |
 
-<span data-ttu-id="8dcea-197">\*Ezek a további elrendezési méretek csak a Kalandorbolt és a Gyár elrendezésekben érhetők el.</span><span class="sxs-lookup"><span data-stu-id="8dcea-197">\* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.</span></span>
+<span data-ttu-id="8dcea-197">\\*Ezek a további elrendezési méretek csak a Kalandorbolt és a Gyár elrendezésekben érhetők el.</span><span class="sxs-lookup"><span data-stu-id="8dcea-197">\\* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.</span></span>
 
 
 >[!TIP]
