@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -19,10 +20,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a527136f77b65ef5a43576291e38cb168dbbd322
+ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
+ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -98,10 +99,10 @@ Ha folytatni szeretné a rögzítési munkamenetet a szüneteltetést követően
 
 ### <a name="capture-screenshots"></a>Képernyőképek rögzítése
 
-A Feladatrögzítő képes képernyőképek készítésére a Retail Modern POS kezelőfelületén az üzleti folyamat rögzítése során. A Feladatrögzítő akkor használja fel a képernyőképeket, ha Word-dokumentumként tölti le a felvételt. A képernyőkép-rögzítés funkció bekapcsolásához állítsa a **Képernyőképek rögzítése** beállítást **Igen** értékre. 
+A Feladatrögzítő képes képernyőképek készítésére a Retail Modern POS kezelőfelületén az üzleti folyamat rögzítése során. A képernyőkép-rögzítés funkció bekapcsolásához állítsa a **Képernyőképek rögzítése** beállítást **Igen** értékre, majd végezze el a rögzítést. Amikor a rögzítés befejeződött, kattintson a **Leállítás** gombra, és töltse le a Word-dokumentumot. A dokumentum a lépéseket a megfelelő képernyőfelvételekkel együtt tartalmazza.
 
 #### <a name="note"></a>Bankjegy
-> A Cloud POS (felhőalapú pénztár) nem támogatja a Képernyőkép rögzítése funkciót.
+> A Modern POS nem támogatja a Képernyőkép rögzítése funkciót.
 
 ### <a name="start-task-and-end-task"></a>Feladat indítása és Feladat befejezése
 

@@ -2,6 +2,7 @@
 # [Felhőbeli telepítések rendszerkövetelményei](../fin-and-ops/get-started/system-requirements.md)
 # [Helyszíni telepítések rendszerkövetelményei](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Bemutató adatok](../fin-and-ops/get-started/demo-data.md)
+## [Bemutató adatok létrehozása csomagokkal](data-entities/generate-demo-data-packages.md)
 
 
 # [Fejlesztés és személyre szabás a Visual Studio használatával](dev-tools/developer-home-page.md)
@@ -28,7 +29,7 @@
 ### [Modell exportálása és importálása](dev-tools/models-export-import.md)
 ### [Metaadat-keresés a Visual Studio szolgáltatásban](dev-tools/metadata-search-visual-studio.md)
 ### [Modellek](dev-tools/models.md)
-### [Dynamics 365 for Finance and Operations, Enterprise kiadás projektjei](dev-tools/projects.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition kiadás projektjei](dev-tools/projects.md)
 ### [Visual Studio-eszközök és bővítmények](dev-tools/developer-tools-add-ins.md)
 ### [Kapcsolja ki a modell testreszabási és elavulási funkciókat](dev-tools/lock-models.md)
 ### [Frissítse a Visual Studio fejlesztői eszközöket](dev-tools/update-development-tools.md)
@@ -160,8 +161,8 @@
 ### [Navigáció létrehozása](user-interface/build-navigation.md)
 ### [Munkaterület felépítése](user-interface/build-workspace.md)
 ## Űrlapok
-### [Navigáció a Dynamics 365 for Finance and Operations, Enterprise kiadásban](user-interface/page-navigation.md)
-### [Dynamics 365 for Finance and Operations, Enterprise kiadás elrendezése](user-interface/page-layout.md)
+### [Navigáció a Dynamics 365 for Finance and Operations, Enterprise edition kiadásban](user-interface/page-navigation.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition kiadás elrendezése](user-interface/page-layout.md)
 ### [Szimbólum betűtípus](user-interface/symbol-font.md)
 ### [Tesztűrlapok egyedi mintákkal](user-interface/testing-forms-custom-patterns.md)
 ### [Mélylinkek létrehozása és használata](user-interface/create-deep-links.md)
@@ -362,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Egyéni szolgáltatások](data-entities/custom-services.md)
 ### [Ismétlődő integrációk](data-entities/recurring-integrations.md)
+### [Harmadik fél szolgáltatásának tesztelése közüzemi szolgáltatások használatával](data-entities/third-party-service-test.md)
 
 ## Fejlesztés integrációhoz
 ### [Adatintegráció az adatentitások használatával](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +398,7 @@
 ### [Konfigurációs adatcsomagok](data-entities/configuration-data-packages.md)
 ### [Konfigurációs adatok másolása vállalatok között](data-entities/copy-configuration.md)
 ### [Konfigurációs adatsablonok](data-entities/configuration-data-templates.md)
+### [Több munkalapot tartalmazó adatsablonok](data-entities/excel-template-multiple.md)
 ### [Entitás változásainak nyomon követése](data-entities/entity-change-track.md)
 
 ## Normál adatentitások
@@ -497,17 +500,20 @@
 
 ## Felhőbeli telepítés
 ### [Azure Resource Manager bevezetése](deployment/arm-onboarding.md)
-### [Azure ExpressRoute és Dynamics 365 for Finance and Operations, Enterprise kiadás](deployment/expressroute.md)
+### [Azure ExpressRoute és Dynamics 365 for Finance and Operations, Enterprise edition kiadás](deployment/expressroute.md)
 
 ## [Helyszíni telepítés](deployment/on-premises-deployment-landing-page.md)
 ### [Helyszíni áttekintés](deployment/on-premises-overview.md)
+### [Helyszíni telepítés megtervezése](deployment/plan-onprem-deployment.md)
 ### [Hardver méretezése](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Helyszíni projekt létrehozása](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Helyszíni környezetek beállítása és telepítése](deployment/setup-deploy-on-premises-environments.md)
 ### [Egyéni modellek fejlesztése és telepítése on-premises környezetekhez](deployment/develop-deploy-custom-models-on-premises.md)
-### [Frissítések alkalmazása on-premises telepítéshez](deployment/apply-updates-on-premises.md)
-### [On-premises telepítés újratelepítése](deployment/redeploy-on-prem.md)
-### [Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises) – problémamegoldás](deployment/troubleshoot-on-prem.md)
+### [Frissítések alkalmazása helyszíni telepítéshez](deployment/apply-updates-on-premises.md)
+### [Helyszíni telepítés újratelepítése](deployment/redeploy-on-prem.md)
+### [Helyi ügynök frissítése](lifecycle-services/update-local-agent.md)
+### [Környezet újrakonfigurálása](lifecycle-services/reconfigure-environment.md)
+### [Dynamics 365 for Finance and Operations, Enterprise edition kiadás (helyszíni) – problémamegoldás](deployment/troubleshoot-on-prem.md)
 
 ## Egyéni kód telepítése
 ### [Telepíthető csomag létrehozása](deployment/create-apply-deployable-package.md)
@@ -695,10 +701,10 @@
 ## [Védőfal adatbázis-frissítés kérése](database/database-refresh.md)
 
 # Támogatás
-## [Támogatás igénylése a Dynamics 365 for Finance and Operations, Enterprise edition termékhez, illetve a Lifecycle Services szolgáltatáshoz](lifecycle-services/lcs-support.md)
+## [Támogatás igénylése a Dynamics 365 for Finance and Operations, Enterprise edition kiadás termékhez, illetve a Lifecycle Services szolgáltatáshoz](lifecycle-services/lcs-support.md)
 ## [Premier támogatási jegy naplózása](lifecycle-services/premier-support.md)
 ## [Igénylés benyújtása a Dynamics Service mérnöki csapatához](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Műszaki támogatás beállítása a Dynamics 365 for Finance and Operations, Enterprise kiadáshoz](lifecycle-services/support-experience.md) 
+## [Műszaki támogatás beállítása a Dynamics 365 for Finance and Operations, Enterprise edition kiadáshoz](lifecycle-services/support-experience.md) 
 ## [Tervezett karbantartási időtartam – GYIK](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Felhőműveletek és szervizelés](lifecycle-services/cloud-operations-servicing.md)
 ## [A Finance and Operations támogatási tapasztalatai](lifecycle-services/cloud-powered-support-lcs.md)

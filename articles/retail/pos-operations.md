@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02d777da3b97706f9e63478a1978ac9b230a591e
+ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
+ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -104,6 +104,7 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 521 | Hűségkártyapontok egyenlege | A megadott hűségkártya egyenlegének megjelenítése pontokban. | Igen | Igen | Nincs | Nincs | Nincs |
 | 914 | POS ablak kis méretre állítása | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nincs |
 | 1000 | Fiók kinyitása | "Nincs értékesítés" művelet végrehajtása, majd a kijelölt pénztárfiók kinyitása. | Igen | Igen | Igen | Igen | Nincs |
+| 928 | Rendelésteljesítés | Ez a művelet lehetővé teszi a felhasználók számára a rendelések kiválasztását, csomagolását, szállítását vagy visszahívását az üzleti felvételre nézve. | Igen | Igen | Igen | Nincs | Nincs |
 | 129 | Sorban szereplő termék adójának felülbírálása | A kijelölt sortétel adójának felülírása és más megadott adó alkalmazása. | Igen | Igen | Nincs | Igen | Nincs |
 | 1.3.0 | Sorban szereplő termék adójának felülírása listából | A kijelölt sortétel adójának felülírása a felhasználó által listából kiválasztott adóval. | Igen | Igen | Nincs | Igen | Nincs |
 | 127 | Tranzakció adójának felülírása | A tranzakció adójának felülírása, és más megadott adó alkalmazása. | Igen | Igen | Nincs | Igen | Nincs |

@@ -17,13 +17,14 @@
 ##### [A Finance and Operations megvásárlása (helyszíni)](get-started/purchase-on-premises.md)
 
 ### [Új vagy módosult elemek](get-started/whats-new-changed.md)
-#### [Elavult szolgáltatások](../dev-itpro/migration-upgrade/deprecated-features.md)
+#### [Eltávolított vagy elavult funkciók](../dev-itpro/migration-upgrade/deprecated-features.md)
 #### [Elhalasztott AX 2012-funkciók](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
-#### [A on-premises telepítéseknél nem elérhető funkciók](get-started/features-not-implemented-on-prem.md)
-#### [Életciklus-irányelv](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [12. platformfrissítés (2017. november)](get-started/whats-new-platform-update-12.md)
-#### [11. platformfrissítés (2017. október)](get-started/whats-new-platform-update-11.md)
-#### [10. platformfrissítés (2017. augusztus)](get-started/whats-new-platform-update-10.md)
+#### [A helyszíni telepítéseknél nem elérhető funkciók](get-started/features-not-implemented-on-prem.md)
+#### [Kiadások és életciklusra vonatkozó irányelvek](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Finance and Operations, Enterprise edition kiadás 7.3](get-started/whats-new-application-7.3-update.md)
+#### [Platform update 12 (2017. november)](get-started/whats-new-platform-update-12.md)
+#### [Platform update 11 (2017. október)](get-started/whats-new-platform-update-11.md)
+#### [Platform update 10 (2017. augusztus)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise edition kiadás (2017. július)](get-started/whats-new-application-July-2017-update.md)
 #### [Platform update 9 (2017. július)](get-started/whats-new-platform-update-9.md)
 #### [Platform update 8 (2017. június)](get-started/whats-new-platform-update-8.md)
@@ -141,7 +142,7 @@
 #### [Adatkezelés csomag API-ja](../dev-itpro/data-entities/data-management-api.md)
 #### [Szolgáltatási végpontok](../dev-itpro/data-entities/services-home-page.md)
 ##### [Szolgáltatáshitelesítési hibaelhárítás](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro//data-entities/odata.md)
+#### [OData](../dev-itpro/data-entities/odata.md)
 #### [Egyéni szolgáltatások](../dev-itpro/data-entities/custom-services.md)
 #### [Ismétlődő integrációk](../dev-itpro/data-entities/recurring-integrations.md)
 
@@ -179,9 +180,10 @@
 ### [Adatentitások](../dev-itpro/data-entities/data-entities.md)
 
 #### [Konfigurációs adatprojektek](../dev-itpro/data-entities/configuration-data-projects.md)
-#### [Konfigurációs adatcsomagok](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Konfigurációs adatok másolása vállalatok között](../dev-itpro/data-entities/copy-configuration.md)
+##### [Konfigurációs adatcsomagok (csak 2017 júliusi kiadás esetén)](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Konfigurációs adatsablonok](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [Entitás változásainak nyomon követése](../dev-itpro/data-entities/entity-change-track.md)
 
 ### Normál adatentitások
@@ -646,6 +648,11 @@
 ##### [Negatív jóváírások beállítása ](../financials/localizations/apac-chn-negative-debits-credits.md)
 ##### [Felhasználói műveletek naplója a kínai munkaszabály szerint](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [Vevői áfaszámlák GYIK](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+
+#### India
+##### [Adómotor áttekintése](../financials/general-ledger/tax-engine.md)
+##### [Adómotor integrációja](../financials/general-ledger/tax-engine-integration.md)
+##### [Adómotor kiterjesztése](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### Japán
 ##### [Tárgyi eszköz beszerzése és állami támogatás igénylése](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -1214,7 +1221,8 @@
 #### [Munkaerő-mutatók](../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md)
 
 ### Jelentésdokumentumok készítése és nyomtatása
-#### [A jelentésdokumentumokkal kapcsolatos szolgáltatások áttekintése](../dev-itpro/analytics/document-reporting-services.md)
+#### [A Document Reporting Services áttekintése](../dev-itpro/analytics/document-reporting-services.md)
+#### [Hálózati nyomtatók helyszíni környezetben történő telepítése](../dev-itpro/analytics/install-network-printer-onprem.md)
 #### [SSRS beállítása helyszíni telepítésre](../dev-itpro/analytics/configure-ssrs-on-premises.md)
 #### [Nyomtatás](../dev-itpro/analytics/print-documents.md)
 ##### [A Dokumentumirányítási ügynök telepítése a hálózati nyomtató eszközök engedélyezéséhez](../dev-itpro/analytics/install-document-routing-agent.md)
@@ -1285,30 +1293,28 @@
 ##### [Adatmodell definíciójának kiválasztása az elektronikus jelentéskészítés formátumának létrehozása közben](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md)
 ##### [A formátum frissítése a formátum új alapverziójának elfogadásával az elektronikus jelentéskészítésben](../dev-itpro/analytics/tasks/er-upgrade-format.md)
 ##### [Elektronikus jelentéskészítési konfiguráció feltöltése a Lifecycle Services rendszerbe](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
+##### [Elektronikus jelentési keretrendszer API módosítások alkalmazásához a 7.3 frissítése](../dev-itpro/analytics/er-apis-app73.md)
 
-### Elemzési eszközök és megjelenítések
+### Beágyazott analitikai megoldások
+#### [Beágyazott Power BI a munkaterületeken](../dev-itpro/analytics/embed-power-bi-workspaces.md)
+#### [Power BI Embedded integráció](../dev-itpro/analytics/power-bi-embedded-integration.md)
+
+### Személyre szabás a PowerBI.com segítségével
+#### [Power BI-integráció](../dev-itpro/analytics/power-bi-integration.md)
+#### [Power BI-jelentések rögzítése a munkaterületekhez](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Létrehozási és kiterjesztési megoldások eszközei
 #### [Elemzések, összesítő mértékek és KPI-k modellezése](../dev-itpro/analytics/analytics.md)
+#### [Szerzői elemzési jelentések a Power BI Desktop használatával](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [Adatok modellezése és összevonása](../dev-itpro/analytics/model-aggregate-data.md)
 #### [Pénzügyi dimenziók hozzáadása összesítő mértékekhez](../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md)
-#### [Kontextuális BI hozzáadása űrlapokhoz](../dev-itpro/analytics/add-contextual-bi-forms.md)
-#### [Összesítő mértékeket tartalmazó jelentés](../dev-itpro/analytics/aggregate-measurements-report.md)
-#### [Összesítő adatentitásokat tartalmazó jelentés](../dev-itpro/analytics/aggregate-data-entities-report.md)
-#### [Fő teljesítménymutató (KPI.md) jelentés](../dev-itpro/analytics/key-performance-indicators-report.md)
-#### [Power BI-integráció](../dev-itpro/analytics/power-bi-integration.md)
-#### [Power BI-tartalmak elérése](../dev-itpro/analytics/power-bi-content-microsoft-partners.md)
-#### [Power BI-jelentés és irányítópult létrehozása](../dev-itpro/analytics/create-powerbi-report-dashboard.md)
-#### [Power BI-jelentés készítése a Finance and Operations rendszer adatainak felhasználásával](../dev-itpro/analytics/create-powerbi-report-data.md)
-#### [A munkaterületek Power BI-integrációjának konfigurálása](../dev-itpro/analytics/configure-power-bi-integration.md)
-#### [Power BI beágyazott integráció](../dev-itpro/analytics/power-bi-embedded-integration.md)
-#### [Beágyazott Power BI a munkaterületeken](../dev-itpro/analytics/embed-power-bi-workspaces.md)
 #### [Analitika hozzáadása munkaterületekhez Power BI Embedded használatával](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
 #### [Analitikai munkaterületek és jelentések biztosításának segítése Power BI Embedded használatával](../dev-itpro/analytics/secure-analytical-workspaces.md)
-#### [Power BI hozzáadása a munkaterületekhez](../dev-itpro/analytics/add-bi-workspaces.md)
-#### [Power BI-jelentések rögzítése a munkaterületekhez](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Power felhasználókezelési eszközök
 #### [A Power BI integrációja az Entitástárral](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+#### [A munkaterületek Power BI-integrációjának konfigurálása](../dev-itpro/analytics/configure-power-bi-integration.md)
 #### [Használja saját adatbázisát](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-#### [Szerzői elemzési jelentések a Power BI asztal használatával](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
-#### [Elemzési alkalmazások közzététele a Power BI rendszeren](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
 ## [Készletkezelés](../supply-chain/inventory/inventory-home-page.md)
@@ -1362,6 +1368,7 @@
 #### [Korlátozott terv létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/constrained-plan.md)
 #### [Társtermékek anyagfelhasználási tervének létrehozása (feladat-útmutató)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
 #### [Tervezett rendelések karbantartása](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Biztonsági készlet kezelése](../supply-chain/master-planning/safety-stock-replenishment.md)
 #### [Késések kezelése](../supply-chain/master-planning/delays.md)
 #### [Alábontás nyomon követése](../supply-chain/master-planning/trace-explosion.md)
 #### [Műveletkérő üzenetek](../supply-chain/master-planning/action-messages.md)
@@ -1438,6 +1445,8 @@
 #### [Szállítói együttműködés beállítása és karbantartása](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [Szállítói együttműködés felhasználóinak kezelése](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [Szállítói számlák beállítása](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [Szállítókérés konfigurációi](../supply-chain/procurement/vendor-request-configurations.md)
+#### [Szállító felvétele](../supply-chain/procurement/vendor-onboarding.md)
 #### [A külső szállítókkal történő szállítói együttműködés](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Szállítói együttműködés a vevőkkel](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
 #### [Külső katalógus beállítása a PunchOut e-beszerzés számára](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
@@ -1550,7 +1559,9 @@
 #### Termelési feladatok működtetése
 ##### [Termelési rendelések létrehozása](../supply-chain/production-control/create-production-orders.md)
 ##### [Termelési rendelések kiadása](../supply-chain/production-control/release-production-orders.md)
-##### [Termelési rendelési állapot sztornírozása](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Anyagkivételek láthatósága](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [Az anyagjegyzék- és receptúrasorok kiadása a raktárba](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+#####[Termelési rendelési állapot sztornírozása](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [Anyagfelhasználás regisztrálása mobileszköz segítségével](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [Nyersanyag-fogyasztás kezelése ürítési elvek használatával](../supply-chain/production-control/flushing-principles.md) 
 ##### [Termelési rendelések áttárolása kiszállítási területekbe](../supply-chain/production-control/cross-docking-opportunities.md)
@@ -1561,7 +1572,7 @@
 ##### [Gyártásvégrehajtás regisztrációja](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Termelési visszajelzés](../supply-chain/production-control/production-feedback.md)
 ##### [Munkaidő és jelenlét rögzítése](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Távollét regisztrálása munkaidőben és jelenlétben](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Távollét regisztrálása munkaidőben és jelenlétben](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### Pénzügyi termelési adatok kezelése
 ##### [Idők hozzárendelése egy feladatköteg feladataihoz](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Anyagfelhasználás kiszámítása](../supply-chain/production-control/consumption.md)
@@ -1686,6 +1697,7 @@
 #### [Alaptermék létrehozása (feladat-útmutató)](../supply-chain/pim/tasks/create-product-master.md)
 #### [Az előre meghatározott termékváltozatok létrehozása (feladat-útmutató)](../supply-chain/pim/tasks/create-predefined-product-variants.md)
 #### [Kiadott termék létrehozása egyetlen vállalat részére (feladat-útmutató)](../supply-chain/pim/tasks/create-released-product-single-company.md)
+#### [Termékéletciklus állapota](../supply-chain/pim/product-lifecycle.md)
 #### [Vonalkód létrehozása termékhez (feladat-útmutató)](../supply-chain/pim/tasks/create-bar-code-product.md)
 #### [Adja meg a GTIN-kódot a termékhez (feladat-útmutató)](../supply-chain/pim/tasks/enter-gtin-code-product.md)
 #### [Termék kötegattribútumainak létrehozása (feladat-útmutató)](../supply-chain/pim/tasks/create-batch-attributes-product.md)
@@ -1800,7 +1812,8 @@
 ### [Egy elemre vonatkozó szállítási megszorítások beállítása](../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md)
 
 ## [Raktárkezelés](../supply-chain/warehousing/warehouse-management-overview.md)
-### [Raktár konfigurálása](../supply-chain/warehousing/warehouse-configuration.md) 
+### [Raktár konfigurálása](../supply-chain/warehousing/warehouse-configuration.md)
+#### [Raktár beállítása a raktári konfigurációs sablon segítségével](../supply-chain/inventory/warehouse-template.md)
 #### [Munka ellenőrzése munkasablonok és helyutasítások használatával](../supply-chain/warehousing/control-warehouse-location-directives.md)
 #### [Mértékegység és rakodási irányelvek](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Raktár Power BI-tartalom](../dev-itpro/analytics/warehouse-power-bi-content.md)

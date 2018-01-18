@@ -3,11 +3,12 @@ title: "Váltók beállítása"
 description: "Ez a témakör azt ismerteti, hogy miként lehet beállítani a váltókat."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustBillOfExchangeJour
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

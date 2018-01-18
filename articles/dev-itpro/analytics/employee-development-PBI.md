@@ -1,9 +1,9 @@
 ---
 title: "Alkalmazotti fejlesztés Power BI-tartalom"
-description: "Ez a témakör ismerteti az alkalmazotti fejlesztés Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban."
+description: "Ez a témakör ismerteti az alkalmazotti fejlesztés Power BI-tartalmat."
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 99ae772f3a7fe9ad274a46398a577ad96f18e251
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,11 +27,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör ismerteti az **Alkalmazotti fejlesztés** Microsoft Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
-
-## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-
-Az **Alkalmazotti fejlesztés** tartalomcsomag a Microsoft Dynamics Lifecycle Services (LCS) Megosztott eszközök könyvtárban található. A tartalmi csomag letöltésére és az adataival való összekapcsolásra vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](power-bi-content-microsoft-partners.md).
+Ez a témakör ismerteti az **Alkalmazotti fejlesztés** Microsoft Power BI-tartalmat.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
 Az **Alkalmazotti fejlesztés** Power BI által tartalmazott a jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
@@ -74,5 +70,4 @@ Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramoka
 | Teljesítmény              | Minősítési, leírás és minősítési modell                                                                      | Aktuális alkalmazott, Aktuális beosztás, Alkalmazotti trend, Feladathoz előnyben részesített képesség, Korábbi betöltött pozíció, Pozíciótrend, Megszüntetett munkaviszonyú alkalmazott |
 |  Szakértelem                   | Szakértelem, szakértelem típusa és minősítés                                                                              | Alkalmazotti szakértelem elemzése, Feladathoz előnyben részesített szakértelem |                                                                                                                        
 
-Ezeket az entitásokat számított mértékek létrehozására használták az adatmodellben. E kiszámított mértékek aztán a fő teljesítménymutatók (KPI-k) és a Power BI-tartalomban használt jelentések kiszámításához használatosak. Ha szeretné felvenni a további számításokat a jelentésekbe és irányítópultokba, töltse le és módosítsa a .pbix-fájlt a LCS-ből. Ez a fájl azon alapértelmezett adatmodell, amelyet a Power BI-tartalom létrehozásához használtak. Miután elvégezte a módosításokat, szervezeti tartalmi csomagot és a felvett adatokat tartalmazó irányítópultot hozhat létre.
 

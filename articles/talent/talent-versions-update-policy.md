@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-talent
 ms.technology: 
 ms.search.form: Talent, update policy, requirements, system requirements
 audience: Application User, IT Pro
@@ -49,7 +49,7 @@ A böngésző legfrissebb változatáért látogasson el a szoftver gyártóján
 > * A munkafolyamat-szerkesztő ClickOnce-alkalmazásként indul el. Csak a Microsoft Edge és az Internet Explorer (a Microsoft Windows egy támogatott verziójának használata esetén) támogatja a ClickOnce-alkalmazásokat. A Workflow Editor ClickOnce alkalmazáshoz 64 bit-kompatibilis operációs rendszer szükséges.
 > * A PDF-fájlok előnézetének megtekintéséhez olyan modern böngészők használatát javasoljuk, mint a Microsoft Edge (a legújabb nyilvánosan elérhető verzió) Windows 10 rendszeren, illetve a Google Chrome (a legújabb nyilvánosan elérhető verzió) Windows 10, Windows 8.1, Windows 8 vagy Windows 7 rendszeren vagy Google Nexus 10 táblagépeken.
 Hálózati követelmények
-> * A Dynamics 365 for Talent olyan hálózatokhoz tervezték, amelyek várakozási ideje kevesebb 250–300 milliszekund (ms) vagy annál kevesebb. Ez a latencia a böngészőklienstől a Microsoft Azure adatközpontig, amely tárolja a Dynamics 365 for Talent rendszert. Javasoljuk, hogy tesztelje a hálózati késleltetést a következő helyen: [www.azurespeed.com] (http://www.azurespeed.com „Azure késleltetési teszt”).
+> * A Dynamics 365 for Talent olyan hálózatokhoz tervezték, amelyek várakozási ideje kevesebb 250–300 milliszekund (ms) vagy annál kevesebb. Ez a latencia a böngészőklienstől a Microsoft Azure adatközpontig, amely tárolja a Dynamics 365 for Talent rendszert. Javasoljuk, hogy tesztelje a hálózati késleltetést a következő helyen: [www.azurespeed.com] (http://www.azurespeed.com "Azure késleltetési teszt").
 > * A Dynamics 365 for Talent sávszélességi követelményei a forgatókönyvtől függenek. A legtöbb jellemző forgatókönyv másodpercenként több mint 50 kilobájt sávszélességet igényel (KBps).
 
 > [!WARNING]
@@ -57,12 +57,12 @@ Hálózati követelmények
 
 ## <a name="supported-microsoft-office-applications"></a>Támogatott Microsoft Office-alkalmazások
 
-*   A Microsoft Excel és Word bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása] (../dev-itpro/office-integration/office-integration-troubleshooting.md „Office-integráció hibáinak elhárítása”).
+*   A Microsoft Excel és Word bővítmények futtatásához telepítve kell lennie a Microsoft Office 2016 programnak Windows vagy Mac rendszeren. Verziójának követelményeivel kapcsolatos további részletekért lásd: [Office-integráció hibáinak elhárítása] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Office-integráció hibáinak elhárítása").
 *   Az Exportálás Excel-be vagy az Exportálás a Word programba funkcióval létrehozott dokumentumok megtekintéséhez telepíteni kell a Microsoft Office 2007 vagy újabb verzióját.
 
 ## <a name="update-policy"></a>Frissítési irányelv
 
 A Microsoft Dynamics 365 for Talent szervizelése felhőalapú. A Dynamics 365 for Talent frissítései folyamatosak, és a Microsoft automatikusan alkalmazza őket.
 
-A frissítések rendszeres ütemben jelennek meg, és a rendszer minden környezetben alkalmazza őket.  A Dynamics 365 for Talent rendszert a [Microsoft támogatási életciklus-irányelve] támogatja (https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy „Microsoft Support Lifecycle”), amely egységes és kiszámítható irányelveket nyújt a termék elérhetőségével kapcsolatos támogatásról.
+A frissítések rendszeres ütemben jelennek meg, és a rendszer minden környezetben alkalmazza őket.  A Dynamics 365 for Talent rendszert a [Microsoft támogatási életciklus-irányelve] támogatja (https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), amely egységes és kiszámítható irányelveket nyújt a termék elérhetőségével kapcsolatos támogatásról.
 

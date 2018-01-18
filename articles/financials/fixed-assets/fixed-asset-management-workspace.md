@@ -3,11 +3,12 @@ title: "Tárgyi eszközök kezelési munkaterülete"
 description: "Ez a témakör a tárgyi eszközök kezelési munkaterületével kapcsolatban tartalmaz tájékoztatást. A munkaterület a rendszerben megadott tárgyi eszközökhöz kapcsolódó információkat jelenít meg. Összesítés és analitika nézet tartalmaz."
 author: saraschi
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

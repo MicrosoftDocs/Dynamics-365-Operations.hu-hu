@@ -3,11 +3,12 @@ title: "Költséggazdálkodási paraméterek"
 description: "A következő paraméterek határozzák meg a Költséggazdálkodás modul működését."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TrvParameters
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Operations, Core

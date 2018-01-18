@@ -3,11 +3,12 @@ title: "Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés haszn�
 description: "A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

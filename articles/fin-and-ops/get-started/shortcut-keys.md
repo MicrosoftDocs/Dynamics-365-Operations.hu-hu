@@ -3,7 +3,7 @@ title: "Billentyűparancsok"
 description: "A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations, Enterprise edition programban."
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Ope
 
 **Megjegyzés:** Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
 
-## <a name="finding-a-shorcut"></a>Billentyűparancs megkeresése
+## <a name="finding-a-shortcut"></a>Billentyűparancs megkeresése
 A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billentyűparancsokat közvetlenül a felhasználói felületről fedezhetik fel. Egyszerűen kattintson jobb gombbal a kívánt vezérlőelemre, és válassza a **Billentyűparancsok megtekintése** elemet. Ennek hatására megnyílik egy párbeszédpanel, melyen láthatók az oldal adott részén használható billentyűparancsok. 
 
 
@@ -143,6 +143,9 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Ugrás az első rekordra                                                                                               | Ctrl+Home                       |
 | Ugrás az utolsó rekordra                                                                                                | Ctrl+End                        |
 | Az alapértelmezett művelet végrehajtása rácsban<br><br>**Megjegyzés:** ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.                 | Bevitel                           |
+| A fókusz váltása a kiválasztott sor és a fejlécsor között                                                               | Alt+Shift+H                     |
+| Az aktuális oszlop nagyítása/kicsinyítése (a fókusz a fejlécsorban)                                                  | Jobbra nyíl / balra nyíl        |
+| Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Bevitel                           |
 
 ## <a name="input-control-shortcuts"></a>Beviteli vezérlő gyorsbillentyűk
 |                                                                              |                               |

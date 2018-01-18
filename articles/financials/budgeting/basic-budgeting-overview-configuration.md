@@ -3,11 +3,12 @@ title: "Költségvetés áttekintése"
 description: "Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations, Enterprise edition rendszerben."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

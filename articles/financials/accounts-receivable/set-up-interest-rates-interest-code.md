@@ -3,11 +3,12 @@ title: "Kamatlábak beállítása kamatkódhoz"
 description: "A kamatkódok olyan beállításokat tartalmaznak, amelyek meghatározzák, hogy mikor kerül sor kamat felszámítására, és hogyan történik annak kiszámítása a hátralékos számlákon."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: Interest
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
