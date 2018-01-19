@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -59,9 +60,9 @@ Ebben a példában az FRSI lehetőségnek kell az USSI jogi személy vevőjének
 
 1.  Az FRSI beállítása az USSI jogi személy vevőjeként és az USSI beállítása az FRSI jogi személy szállítójaként. A feladathoz szükséges lépésekhez három belépési pont van.
     | Lépés | Belépési pont                                                                       | Leírás   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A:    | Az USSI-ben kattintson a **Kinnlevőségek** &gt; **Vevők** &gt; **Összes vevő** pontra. | Hozzon létre egy új ügyfélbejegyzést az FRSI lehetőségre vonatkozóan, és válassza ki a vevőcsoportot.                                                                                                                                                                                                                           |
-    | milliárd    | Az FRSI-ben kattintson a **Kötelezettségek** &gt; **Szállítók** &gt; **Összes szállító** pontra.        | Új szállítói rekord létrehozása az USSI lehetőségre vonatkozóan, és a szállítói csoport kiválasztása.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A:    | Az USSI-ben kattintson a **Kinnlevőségek** &gt; **Vevők** &gt; **Összes vevő** pontra. | Hozzon létre egy új ügyfélbejegyzést az FRSI lehetőségre vonatkozóan, és válassza ki a vevőcsoportot.                                                                                  |
+    | milliárd    | Az FRSI-ben kattintson a **Kötelezettségek** &gt; **Szállítók** &gt; **Összes szállító** pontra.        | Új szállítói rekord létrehozása az USSI lehetőségre vonatkozóan, és a szállítói csoport kiválasztása.                                                                                    |
     | K    | Az FRSI lehetőségben nyissa meg az imént létrehozott szállítói rekordot.                            | A Műveleti ablaktáblán a **Általános** lapon a **Beállítás** csoportban kattintson a **Vállalatközi** lehetőségre. A **Vállalatközi** lapon a **Kereskedelmi kapcsolat** lapon állítsa az **Aktív** csúszkát **Igen** lehetőségre. A **Vevő vállalat** mezőben jelölje ki azt az ügyfélbejegyzést, amelyet az A. lépésben hozott létre. |
 
 2.  Kattintson a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Projektvezetés és könyvelés paraméterei** lehetőségre, ezt követően kattintson a **Vállalatközi** lapra. A paraméterek beállításának módja attól függ, hogy Ön a kölcsönbe vevő jogi személy vagy a kölcsönadó jogi személy szerepkörével rendelkezik.
