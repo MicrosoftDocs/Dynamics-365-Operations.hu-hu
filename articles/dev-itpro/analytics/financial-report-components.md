@@ -112,7 +112,7 @@ Amikor megnyit egy építőelemet, a többi felhasználó csak olvasásra kap ho
 3.  Jelöljön ki egy építőelemet majd kattintson a **Kivétel visszavonása** parancsra.
 4.  Az építőelem visszavételéhez kattintson az **Igen** lehetőségre.
 
-# <a name="see-also"></a>Lásd még
+## <a name="see-also"></a>Lásd még
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 

@@ -30,14 +30,14 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > Ez a funkció a Dynamics 365 for Finance and Operationsben támogatott (7.2-es vagy újabb verzió).
 
-# <a name="introduction"></a>Bevezetés
+## <a name="introduction"></a>Bevezetés
 Ez a témakör bemutatja, hogy miként ágyazható be egy Microsoft Power BI jelentés egy munkaterület **Elemzés** lapjára. Például az itt megadott ajánlott kiterjed a **foglalási kezelési** a flottában-kezelés alkalmazást az analitikus munkaterület beágyazása a munkaterület egy **analitika** lapon.
 
-# <a name="prerequisites"></a>Előfeltételek
+## <a name="prerequisites"></a>Előfeltételek
 + A fejlesztői környezet 8-as vagy újabb Platform frissítés futó való hozzáférést.
 + Analitikai bizonylat (.pbix fájl), amely Microsoft kiemelt az üzleti Intelligencia asztal használata lett létrehozva, és, amelynek van az entitás üzletadatbázishoz származó adatok modellről.
 
-# <a name="overview"></a>Áttekintés
+## <a name="overview"></a>Áttekintés
 Alkalmazás meglévő munkaterülethez kiterjesztése, vagy saját új munkaterület bevezetésének, beágyazott elemző nézetek segítségével az üzleti adatokban osztályon és interaktív nézetei szállítani. A folyamat hozzáadása egy analitikai munkaterület lap négy lépés tartozik.
 
 1. Dynamics 365 erőforrásként .pbix fájlt hozzáadni.
@@ -48,7 +48,7 @@ Alkalmazás meglévő munkaterülethez kiterjesztése, vagy saját új munkater�
 > [!NOTE]
 > Elemzési jelentések létrehozásával kapcsolatos további tudnivalókat lásd: [Power az üzleti Intelligencia asztali – első lépések](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Ez a lap elévült vonatkozó információkat, melyek segítséget nyújtanak arra az elemzési jelentés megoldások létrehozása esetén.
 
-# <a name="add-a-pbix-file-as-a-resource"></a>Erőforrásként .pbix fájlt kell hozzáadni
+## <a name="add-a-pbix-file-as-a-resource"></a>Erőforrásként .pbix fájlt kell hozzáadni
 Mielőtt elkezdené, létre kell hoznia vagy a kiemelt Üzletiintelligencia-jelentés beágyazza a munkaterület beszerzése. Elemzési jelentések létrehozásával kapcsolatos további tudnivalókat lásd: [Power az üzleti Intelligencia asztali – első lépések](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Adja meg a Visual Studio projekt műtermék .pbix fájl lépésekkel.
@@ -66,7 +66,7 @@ Adja meg a Visual Studio projekt műtermék .pbix fájl lépésekkel.
   
 Dynamics 365 erőforrásként felvett .pbix fájl, hogy a jelentések beágyazása munkaterületek, és közvetlen kapcsolatokat menüelemek vehet fel.
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a>Az alkalmazás munkaterületének lap vezérlő hozzáadása
+## <a name="add-a-tab-control-to-an-application-workspace"></a>Az alkalmazás munkaterületének lap vezérlő hozzáadása
 Ebben a példában ajánlott kiterjed a **foglalási kezelése** munkaterület hozzáadásával flottában felügyeleti modellben a **analitika** meghatározásának lap a **FMClerkWorkspace** képernyőn.
  
 A következő ábra azt mutatja, hogy mi a **FMClerkWorkspace** képernyőn dolgozunk a Microsoft Visual Studio-tervezőben.
@@ -105,7 +105,7 @@ Most, hogy a munkaterület jelentés beágyazása használt űrlap-vezérlőelem
  
 Ekkor befejezte a jelentkezési lap definíciójának kiterjesztését. Testreszabott bővítmények segítségével a további tudnivalókat lásd:  [Testreszabás: Overlayering és bővítéseinek](../extensibility/customization-overlayering-extensions.md).
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a>X ++ üzleti logikát a jelentésmegjelenítő vezérlőben beágyazása hozzáadása
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>X ++ üzleti logikát a jelentésmegjelenítő vezérlőben beágyazása hozzáadása
 Kövesse az alábbi lépéseket, amely inicializálja a jelentésmegjelenítő vezérlőben beágyazott üzleti logikát szeretne adni a **foglalási kezelési** munkaterület.
 
 1. Nyissa meg a **FMClerkWorkspace** képernyőtervezőt tervezési definíciójának bővítésére.
@@ -151,12 +151,12 @@ Kövesse az alábbi lépéseket, amely inicializálja a jelentésmegjelenítő v
 > [!NOTE]
 > A meglévő működési nézet alatt az oldalcím a munkaterület lapok használatával hozzáfér.
 
-# <a name="reference"></a>Hivatkozás
+## <a name="reference"></a>Hivatkozás
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl mód
+### <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl mód
 Ez a szakasz a segítő osztály, amelynek használatával az üzleti Intelligencia teljesítmény jelentés (.pbix erőforrás) beágyazása csoport űrlapvezérlő kapcsolatban tartalmaz tájékoztatást.
 
-### <a name="syntax"></a>Szintaxis
+#### <a name="syntax"></a>Szintaxis
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a>Paraméterek
+#### <a name="parameters"></a>Paraméterek
 
 | Név | Leírás |
 |---|---|

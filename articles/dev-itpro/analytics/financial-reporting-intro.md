@@ -98,7 +98,7 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 </tbody>
 </table>
 
-#<a name="see-also"></a>Lásd még
+## <a name="see-also"></a>Lásd még
 [Pénzügyi jelentés létrehozása](generate-financial-report.md)
 
 

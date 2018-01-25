@@ -53,10 +53,9 @@ A költségvetés-tervezési eset konfigurációs sémája a következőképpen 
 
 [![Excel-sablon](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>1. sz. feladat: Konfigurálás
-=========================
+## <a name="exercise-1-configuration"></a>1. sz. feladat: Konfigurálás
 
-## <a name="task-1-create-organizational-hierarchy"></a>**1. lépés: Szervezeti hierarchia létrehozása**
+### <a name="task-1-create-organizational-hierarchy"></a>**1. lépés: Szervezeti hierarchia létrehozása**
 A teljes költségvetés-tervezési folyamat a pénzügyi osztályon történik, ezért Ágnesnek egy nagyon egyszerű, csak a pénzügyi osztályt érintő szervezeti hierarchiát kell létrehoznia. 1.1. Lépjen a Szervezeti hierarchiák lehetőséghez (Szervezeti adminisztráció &gt; Szervezetek &gt; Szervezeti hierarchiák), majd kattintson az Új gombra
 
 ![Szervezeti hierarchia](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ A teljes költségvetés-tervezési folyamat a pénzügyi osztályon történik,
 
 [![Érvényesség dátuma](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>2. lépés: A felhasználói biztonság konfigurálása
+### <a name="task-2-configure-user-security"></a>2. lépés: A felhasználói biztonság konfigurálása
 A költségvetési tervadatokhoz történő hozzáférés kapcsán a költségvetés-tervezés speciális biztonsági irányelveket alkalmaz. Ágnesnek saját maga részére biztosítani szükséges a hozzáférést a költségvetési tervekhez. 
 
 2.1. Váltson a DEMF jogi személlyel kapcsolatos szövegkörnyezetre. 
@@ -109,7 +108,7 @@ A költségvetési tervadatokhoz történő hozzáférés kapcsán a költségve
 
 [![Hozzáférés megadása](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>3. lépés: Változatok létrehozása
+### <a name="task-3-create-scenarios"></a>3. lépés: Változatok létrehozása
 3.1. Lépjen a következőhöz: Költségvetés-készítés&gt;Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési konfiguráció. Jegyezze meg a Változatok lapon a jelen oktatóanyagban a továbbiakban használt változatok nevét: Előző évi tényadatok, illetve Költségvetési. 
 
 *Megjegyzés: Ha szeretné, hozhat létre, illetve használhat a jelen feladathoz új változatokat is.* 
@@ -118,7 +117,7 @@ A költségvetési tervadatokhoz történő hozzáférés kapcsán a költségve
 
 *Megjegyzés: Ágnes nem hivatalos jóváhagyási folyamat keretében készíti el a költségvetést, így kihagyjuk a jelen oktatóanyaghoz beállított Munkafolyamatokat, Szakaszokat, illetve a Munkafolyamat szakaszok beállítását, és helyettük az automatikus munkafolyamat-jóváhagyási beállítást fogjuk alkalmazni. A munkafolyamat-konfiguráció kapcsán lásd a mellékletet.*
 
-## <a name="task-4-create-budget-plan-columns"></a>4. lépés: Költségvetésiterv-oszlopok létrehozása
+### <a name="task-4-create-budget-plan-columns"></a>4. lépés: Költségvetésiterv-oszlopok létrehozása
 A költségvetésiterv-oszlopok a költségvetés-tervezési dokumentum elrendezésben felhasználható pénzügyi vagy mennyiségalapú oszlopok lehetnek. A jelen példában létre kell hoznunk egy oszlopot az Előző évi tényadatokhoz, valamint 12 oszlopot a költségvetési év hónapjaihoz. Az oszlopok létrehozása történhet a Hozzáadás gomb megnyomása, illetve az értékek kitöltése útján, vagy egy Adatentitás segítségével. A jelen oktatóanyagban Adatentitás segítségével töltjük ki az értékeket. 
 
 4.1. Nyissa meg az Oszlopok oldalt a Költségvetés-készítés&gt;Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési konfiguráció lehetőségen belül. Kattintson a képernyő jobb felső sarkában található Office gombra, majd válassza az Oszlopok (szűrés nélkül) 
@@ -151,7 +150,7 @@ A költségvetésiterv-oszlopok a költségvetés-tervezési dokumentum elrendez
 
 [![Újratöltés](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>5. lépés: Költségvetési-tervezési dokumentum elrendezések és sablonok létrehozása
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>5. lépés: Költségvetési-tervezési dokumentum elrendezések és sablonok létrehozása
 Az elrendezés azt határozza meg, hogy hogyan nézzen ki a költségvetési-tervezési dokumentum soraiból felépülő rács, amikor a felhasználó megnyitja a költségvetés-tervezési dokumentumot. Válthat is a különféle költségvetés-tervezési dokumentum elrendezések között, hogy megnézze, az adatok hogyan mutatnak a különféle elrendezésekben. Most, hogy már meghatároztuk a költségvetés-tervezési dokumentumban használandó oszlopokat, Ágnesnek létre kell hoznia egy, a költségvetési adatok létrehozásához használt Excel-táblázathoz hasonló költségvetési-tervezési dokumentum elrendezést (lásd az oktatóanyag A változatok áttekintése c. szakaszát) 
 
 5.1. Nyissa meg az Elrendezések oldalt a Költségvetés-készítés&gt;Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési konfiguráció lehetőségen belül. Hozzon létre egy új elrendezést a Havi költségvetési tételhez:
@@ -171,7 +170,7 @@ A költségvetési terv elrendezés alapján létre tud hozni egy Excel-sablont,
 
 5.3. &lt; Opcionális lépés &gt; Módosítsa az Excel-sablont úgy, hogy az jobban felhasználóbarát legyen – adjon hozzá összesítő képleteket, fejlécmezőket, formázásokat stb. Mentse a módosításokat, majd töltse fel a fájlt a költségvetésiterv-elrendezésbe a következő lehetőség segítségével: Elrendezés &gt; Feltöltés [![Feltöltés](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>6. lépés: Költségvetés-tervezési folyamat létrehozása
+### <a name="task-6-create-a-budget-planning-process"></a>6. lépés: Költségvetés-tervezési folyamat létrehozása
 Ahhoz, hogy el tudja kezdeni kitölteni a költségvetési terveket, Ágnesnek létre kell hoznia és aktiválnia kell az összes fenti beállításra kiterjedő új költségvetés-tervezési folyamatot. A Költségvetés-tervezési folyamat határozza meg, hogy milyen költségvetési szervezetek, munkafolyamatok, elrendezések és sablonok kerülnek felhasználásra a költségvetési tervek létrehozásakor. 
 
 6.1. Lépjen a következőhöz: Költségvetés készítése &gt; Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési folyamat, majd hozzon létre új rekordot.
@@ -192,10 +191,9 @@ Ahhoz, hogy el tudja kezdeni kitölteni a költségvetési terveket, Ágnesnek l
 
 [![Aktiválás](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>2. sz. feladat: Folyamat-szimuláció
-==============================
+## <a name="exercise-2-process-simulation"></a>2. sz. feladat: Folyamat-szimuláció
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>7. lépés: Kezdeti adatok létrehozása a költségvetési tervhez a Főkönyvből
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>7. lépés: Kezdeti adatok létrehozása a költségvetési tervhez a Főkönyvből
 7.1. Lépjen a következőhöz: Költségvetés készítése &gt; Időszakos &gt; Költségvetési terv létrehozása Főkönyvből. Töltse ki az időszaki folyamat paramétereit, majd kattintson a Létrehozás gombra. 
 
 [![Létrehozás](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -208,7 +206,7 @@ Ahhoz, hogy el tudja kezdeni kitölteni a költségvetési terveket, Ágnesnek l
 
 [![Költségvetési terv megjelenítése](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>8. lépés: Tárgyévi költségvetés létrehozása az előző évi tényadatok alapján
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>8. lépés: Tárgyévi költségvetés létrehozása az előző évi tényadatok alapján
 Felosztási módszerek a költségvetési tervben történő felhasználásával egyszerűen átmásolhatja a költségvetési tervhez használandó információkat az egyik változatból a másikba/ azokat eloszthatja egy adott időszakra/ feloszthatja dimenziókhoz. A felosztások segítségével hozzuk létre a tárgyévi költségvetést az előző év tényadatokból. 
 
 8.1. Válassza ki a költségvetés-tervezési dokumentumrács összes sorát, majd kattintson a költségvetés felosztása gombra 
@@ -223,7 +221,7 @@ A rendszer átmásolja az előző évi tényadatokat a tárgyévi költségveté
 
 [![Értékesítési görbe](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>9. lépés: Módosítsa a költségvetés-tervezési dokumentumot az Excel segítségével, majd véglegesítse a dokumentumot
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>9. lépés: Módosítsa a költségvetés-tervezési dokumentumot az Excel segítségével, majd véglegesítse a dokumentumot
 9.1. Kattintson a munkalap Gombra a dokumentum, az Excelben történő megnyitásához
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -238,8 +236,7 @@ A rendszer átmásolja az előző évi tényadatokat a tárgyévi költségveté
 
 A munkafolyamat befejeztét követően a jóváhagyott költségvetés-tervezési dokumentum állapota Jóváhagyottra változik. [![Jóváhagyva](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Melléklet
-========
+## <a name="appendix"></a>Melléklet
 
 ### <a name="auto-approve-workflow-configuration"></a>Munkafolyamat-konfiguráció automatikus jóváhagyása
 

@@ -44,8 +44,7 @@ A szervezet kiválaszthatja az áfa kiszámítására használni kívánt árfol
 
 Amikor külföldi pénznemben lévő dokumentumot ad fel, az esetleges árfolyamkülönbségek a meghatározott főkönyvi számlákra kerülnek.
 
-<a name="prerequisites"></a>Előfeltételek
-=============
+## <a name="prerequisites"></a>Előfeltételek
 
 Ahhoz, hogy ezt a funkciót használni tudja, konfigurálnia kell a rendszert.
 
@@ -55,8 +54,7 @@ Ahhoz, hogy ezt a funkciót használni tudja, konfigurálnia kell a rendszert.
 4.  A felszámított és fizetendő áfa közötti különbség és az eltérések főkönyvi ellenszámlájának beállítása a főkönyv feladási csoportjaiban: **Áfa** &gt; **Beállítás** &gt; **Áfa** &gt; **Főkönyvi feladási csoportok**.
 5.  Nem kötelező: Állítsa be az árfolyam-számítási szabályt a pénznempárra vonatkozóan a **Főkönyv**&gt;**Pénznemek**&gt;**Pénznempárok árfolyam-számítási szabályai** pontra. Az árfolyam-számítási szabályokat a devizában meghatározott értékesítési számlák áfaösszegének a cél pénznemre való konvertálása során alkalmazza a rendszer.
 
-<a name="overview"></a>Áttekintés
-========
+## <a name="overview"></a>Áttekintés
 
 Miután beállította a rendszert az áfaárfolyamok használatára, ha be kell írnia a dokumentumot, vagy létre kell hoznia egy devizát használó megbízást, akkor az **Áfatranzakciók** oldalon kell beállítania az **Áfatételjegyzék dátuma** értéket, illetve megadnia az alapértelmezett **Áfa árfolyama** értéket. Mindkét mező szerkeszthető. Emellett használható a **Helyesbített eredeti összeg (áfaárfolyam)** vagy a **Helyesbített áfaösszeg (áfaárfolyam)** mező is a tényleges áfaösszegek megadására abba a helyi pénznemben, amely meg van határozva egy külső dokumentumban. A könyvelés áttekintésekor megtekintheti az áfakülönbségeket az **Analitikus napló** oldalon. Amikor a dokumentumot feladják, az olyan tranzakciók esetében, amelyeket az Ön által konfigurált főkönyvi számlákra adtak fel, megtekintheti az áfa összegének azon különbségeit, amelyek az áfa pénznemének átváltási árfolyama és a számlázási devizaárfolyam különbsége okoz a szervezeted számára.
 
