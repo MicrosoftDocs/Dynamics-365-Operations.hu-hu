@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f6a1bd580de0a2c40ce3a407c0fd056cae98bfee
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 606f61814bcfc80dc1ef2f88f15fbd0d4a5cbb61
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -44,8 +44,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="16c30-118">Amikor külföldi pénznemben lévő dokumentumot ad fel, az esetleges árfolyamkülönbségek a meghatározott főkönyvi számlákra kerülnek.</span><span class="sxs-lookup"><span data-stu-id="16c30-118">When you post a document that uses a foreign currency, any exchange rate differences that occur are posted to specific ledger accounts.</span></span>
 
-<a name="prerequisites"></a><span data-ttu-id="16c30-119">Előfeltételek</span><span class="sxs-lookup"><span data-stu-id="16c30-119">Prerequisites</span></span>
-=============
+## <a name="prerequisites"></a><span data-ttu-id="16c30-119">Előfeltételek</span><span class="sxs-lookup"><span data-stu-id="16c30-119">Prerequisites</span></span>
 
 <span data-ttu-id="16c30-120">Ahhoz, hogy ezt a funkciót használni tudja, konfigurálnia kell a rendszert.</span><span class="sxs-lookup"><span data-stu-id="16c30-120">Before you can use this functionality, you must configure the system.</span></span>
 
@@ -55,8 +54,7 @@ ms.lasthandoff: 11/03/2017
 4.  <span data-ttu-id="16c30-125">A felszámított és fizetendő áfa közötti különbség és az eltérések főkönyvi ellenszámlájának beállítása a főkönyv feladási csoportjaiban: **Áfa** &gt; **Beállítás** &gt; **Áfa** &gt; **Főkönyvi feladási csoportok**.</span><span class="sxs-lookup"><span data-stu-id="16c30-125">Set up sales tax receivable and sales tax payable difference and difference offset accounts in the ledger posting groups at **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Ledger posting groups**.</span></span>
 5.  <span data-ttu-id="16c30-126">Nem kötelező: Állítsa be az árfolyam-számítási szabályt a pénznempárra vonatkozóan a **Főkönyv**&gt;**Pénznemek**&gt;**Pénznempárok árfolyam-számítási szabályai** pontra.</span><span class="sxs-lookup"><span data-stu-id="16c30-126">Optional: Set up an exchange rate calculation rule for a currency pair at **General ledger** &gt; **Currencies** &gt; **Exchange rate calculation rules for currency pairs**.</span></span> <span data-ttu-id="16c30-127">Az árfolyam-számítási szabályokat a devizában meghatározott értékesítési számlák áfaösszegének a cél pénznemre való konvertálása során alkalmazza a rendszer.</span><span class="sxs-lookup"><span data-stu-id="16c30-127">The exchange rate calculation rules are used to convert VAT amounts for foreign currency sales invoices to VAT amounts in a destination currency.</span></span>
 
-<a name="overview"></a><span data-ttu-id="16c30-128">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="16c30-128">Overview</span></span>
-========
+## <a name="overview"></a><span data-ttu-id="16c30-128">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="16c30-128">Overview</span></span>
 
 <span data-ttu-id="16c30-129">Miután beállította a rendszert az áfaárfolyamok használatára, ha be kell írnia a dokumentumot, vagy létre kell hoznia egy devizát használó megbízást, akkor az **Áfatranzakciók** oldalon kell beállítania az **Áfatételjegyzék dátuma** értéket, illetve megadnia az alapértelmezett **Áfa árfolyama** értéket.</span><span class="sxs-lookup"><span data-stu-id="16c30-129">After you've configured the system to use VAT exchange rates, if you must enter a document or create an order that uses a foreign currency, you can use **Sales tax transactions** page to set the **Date of VAT register** value to pick up and set the default **Sales tax exchange rate** value.</span></span> <span data-ttu-id="16c30-130">Mindkét mező szerkeszthető.</span><span class="sxs-lookup"><span data-stu-id="16c30-130">You can edit both fields.</span></span> <span data-ttu-id="16c30-131">Emellett használható a **Helyesbített eredeti összeg (áfaárfolyam)** vagy a **Helyesbített áfaösszeg (áfaárfolyam)** mező is a tényleges áfaösszegek megadására abba a helyi pénznemben, amely meg van határozva egy külső dokumentumban.</span><span class="sxs-lookup"><span data-stu-id="16c30-131">You can also use the **Adjusted amount origin (VAT exchange rate)** or **Adjusted sales tax amount (VAT exchange rate)** field to enter actual VAT amounts in the local currency that is stated in an external document.</span></span> <span data-ttu-id="16c30-132">A könyvelés áttekintésekor megtekintheti az áfakülönbségeket az **Analitikus napló** oldalon.</span><span class="sxs-lookup"><span data-stu-id="16c30-132">When you review the accounting, you can view sales tax difference amounts on the **Subledger journal** page.</span></span> <span data-ttu-id="16c30-133">Amikor a dokumentumot feladják, az olyan tranzakciók esetében, amelyeket az Ön által konfigurált főkönyvi számlákra adtak fel, megtekintheti az áfa összegének azon különbségeit, amelyek az áfa pénznemének átváltási árfolyama és a számlázási devizaárfolyam különbsége okoz a szervezeted számára.</span><span class="sxs-lookup"><span data-stu-id="16c30-133">When a document is posted, for transactions that are posted to the general ledger accounts that you've configured, you can view any differences in sales tax amounts that are caused by the difference between the VAT currency exchange rate and the accounting currency exchange rate for your organization.</span></span>
 

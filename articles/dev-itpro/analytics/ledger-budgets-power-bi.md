@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: a351418583ee29ad57bd2586121bb92d24635fb8
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 13f7cfa8776436ed2c73fc588948ce88fee93326
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,14 +31,14 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="5ffc9-105">Ez a témakör a **Tényleges és költségvetési** Power BI-tartalmat ismerteti.</span><span class="sxs-lookup"><span data-stu-id="5ffc9-105">This topic describes the **Actual vs budget** Microsoft Power BI content.</span></span> <span data-ttu-id="5ffc9-106">Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="5ffc9-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span> 
 
-# <a name="overview"></a><span data-ttu-id="5ffc9-107">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="5ffc9-107">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="5ffc9-107">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="5ffc9-107">Overview</span></span>
 
 <span data-ttu-id="5ffc9-108">A **Tényleges és költségvetési** Power BI-tartalmat azoknak hoztuk létre, akik a valós és a költségvetési teljesítmény összevetéséért felelősek a szervezetnél.</span><span class="sxs-lookup"><span data-stu-id="5ffc9-108">The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization.</span></span> <span data-ttu-id="5ffc9-109">A **Tényleges és költségvetési** Power BI-tartalom a költségvetés-eltérésekbe nyújt betekintést.</span><span class="sxs-lookup"><span data-stu-id="5ffc9-109">The **Actual vs budget** Power BI content provides visibility into your budget variances.</span></span> <span data-ttu-id="5ffc9-110">Az aktuális év költségvetését elemezheti számlakategória, költségvetési kód, fő számla, fő számla leírása vagy pénzügyi időszak szerint, hogy jobban megérthesse az esetleges eltérések okát.</span><span class="sxs-lookup"><span data-stu-id="5ffc9-110">You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.</span></span> 
 
-# <a name="accessing-the-power-bi-content"></a><span data-ttu-id="5ffc9-111">Power BI-tartalom elérése</span><span class="sxs-lookup"><span data-stu-id="5ffc9-111">Accessing the Power BI content</span></span>
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="5ffc9-111">Power BI-tartalom elérése</span><span class="sxs-lookup"><span data-stu-id="5ffc9-111">Accessing the Power BI content</span></span>
 <span data-ttu-id="5ffc9-112">A **Tényleges a költségvetéssel szemben** Power BI-tartalom jelentései a **Tényleges a költségvetéssel szemben** és a **Pénzügyi igazgató** munkaterületen jelennek meg.</span><span class="sxs-lookup"><span data-stu-id="5ffc9-112">Reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.</span></span>
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="5ffc9-113">A Power BI-tartalomhoz tartozó jelentések</span><span class="sxs-lookup"><span data-stu-id="5ffc9-113">Reports that are included in the Power BI content</span></span>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="5ffc9-113">A Power BI-tartalomhoz tartozó jelentések</span><span class="sxs-lookup"><span data-stu-id="5ffc9-113">Reports that are included in the Power BI content</span></span>
 <span data-ttu-id="5ffc9-114">A következő táblázat ismerteti a **Tényleges és költségvetési** Power BI-tartalom egyes jelentésoldalain található mutatókat.</span><span class="sxs-lookup"><span data-stu-id="5ffc9-114">The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.</span></span>
 
 | <span data-ttu-id="5ffc9-115">Jelentés</span><span class="sxs-lookup"><span data-stu-id="5ffc9-115">Report</span></span>                      | <span data-ttu-id="5ffc9-116">Mutatók</span><span class="sxs-lookup"><span data-stu-id="5ffc9-116">Metrics</span></span> |
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="5ffc9-129">Nettó árbevétel</span><span class="sxs-lookup"><span data-stu-id="5ffc9-129">Net income</span></span>                  | <ul><li><span data-ttu-id="5ffc9-130">Az idei nettó bevétel</span><span class="sxs-lookup"><span data-stu-id="5ffc9-130">Net income this year</span></span></li><li><span data-ttu-id="5ffc9-131">Nettó bevételi cél a költségvetési alapján</span><span class="sxs-lookup"><span data-stu-id="5ffc9-131">Goal for net income based on budget</span></span> </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="5ffc9-132">Adatmodell, illetve entitások ismertetése</span><span class="sxs-lookup"><span data-stu-id="5ffc9-132">Understanding the data model and entities</span></span>
+## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="5ffc9-132">Adatmodell, illetve entitások ismertetése</span><span class="sxs-lookup"><span data-stu-id="5ffc9-132">Understanding the data model and entities</span></span>
 
 | <span data-ttu-id="5ffc9-133">Entitás</span><span class="sxs-lookup"><span data-stu-id="5ffc9-133">Entity</span></span>                    | <span data-ttu-id="5ffc9-134">Tartalom</span><span class="sxs-lookup"><span data-stu-id="5ffc9-134">Contents</span></span> |
 |---------------------------|----------|

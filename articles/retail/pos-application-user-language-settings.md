@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dacc072ab5c070010d86302fa08a3066125b23a6
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: b49450a7deab94c62e173f730007bc40de23b267
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -34,9 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="ad081-104">Ez a témakör azt mutatja be, hogyan végezhető el a Retail Modern POS (MPOS) és a felhőalapú POS nyelvének módosítása.</span><span class="sxs-lookup"><span data-stu-id="ad081-104">This topic describes how to change language settings in Retail Modern POS (MPOS) and Cloud POS.</span></span>
 
-<a name="overview"></a><span data-ttu-id="ad081-105">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="ad081-105">Overview</span></span>
-========
-
+## <a name="overview"></a><span data-ttu-id="ad081-105">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="ad081-105">Overview</span></span>
 <span data-ttu-id="ad081-106">A Retail Modern POS (MPOS) és a felhőalapú POS támogatja az olyan környezeteket, ahol a nyelvi beállítás és a fordítás eltérhetnek egymástól az üzlet- és felhasználói beállításoknál.</span><span class="sxs-lookup"><span data-stu-id="ad081-106">Retail Modern POS (MPOS) and Cloud POS support environments where language settings and translations can vary between the store and user settings.</span></span> <span data-ttu-id="ad081-107">Például az üzlet olyan területen is lehet, ahol az angol a leggyakrabban használt nyelv az ügyfelek körében, de egyes munkavállalók inkább francia fordításban szeretnék használni az alkalmazást.</span><span class="sxs-lookup"><span data-stu-id="ad081-107">For example, the store could be located in a region where English is most common for their customers, but some workers prefer to use the application with French translations.</span></span>
 
 ## <a name="data-language"></a><span data-ttu-id="ad081-108">Adatnyelv</span><span class="sxs-lookup"><span data-stu-id="ad081-108">Data language</span></span>
