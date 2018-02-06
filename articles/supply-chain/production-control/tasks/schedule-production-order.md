@@ -1,4 +1,4 @@
---- 
+---
 title: "Termelési rendelés ütemezése"
 description: "Ez az eljárás bemutatja, hogyan lehet termelési rendelést ütemezni."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -17,10 +17,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4aeb51fd2d9e916d5838b47c4a6b74800572a9ca
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: 6cbbf509c9e60040e08ab7932fcb0e8eed5ddd22
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="schedule-a-production-order"></a><span data-ttu-id="1ee7c-103">Termelési rendelés ütemezése</span><span class="sxs-lookup"><span data-stu-id="1ee7c-103">Schedule a production order</span></span>
@@ -53,5 +53,4 @@ ms.lasthandoff: 09/29/2017
     * <span data-ttu-id="1ee7c-127">A Terhelési kapacitás lap megjeleníti, hogy milyen kapacitást foglalt le a feladat ütemezésén keresztül, az erőforráson jelenleg lefoglalt órák összes számát, illetve a fennmaradó az erőforrás a feladat ütemezéséhez még rendelkezésre álló óráinak a számát.</span><span class="sxs-lookup"><span data-stu-id="1ee7c-127">The Capacity load page displays the capacity that is reserved through job scheduling, the total number of hours that are currently reserved on the resource, and the number of hours that remain available for job scheduling on the resource.</span></span>  
 6. <span data-ttu-id="1ee7c-128">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1ee7c-128">Close the page.</span></span>
 7. <span data-ttu-id="1ee7c-129">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="1ee7c-129">Close the page.</span></span>
-
 
