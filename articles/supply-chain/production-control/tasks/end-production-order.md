@@ -1,4 +1,4 @@
---- 
+---
 title: "Termelési rendelés befejezése"
 description: "Ez az eljárás bemutatja, hogyan lehet termelési rendelést befejezni."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -46,5 +46,4 @@ Ez az eljárás bemutatja, hogyan lehet termelési rendelést befejezni. Ez az e
 1. A Művelet panelen kattintson a Költségkezelés elemre.
 2. Kattintson a Költség összehasonlítására.
     * A termelési rendelés befejezése után összehasonlíthatja a becsült önköltségi árat és a realizált önköltségi árat a termelési különbözetek áttekintése érdekében.  
-
 

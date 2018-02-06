@@ -1,4 +1,4 @@
---- 
+---
 title: "A feldolgozási kanbanfeladat előkészítése, amikor az anyagok elérhetők a munkacellához"
 description: "Ez a feladat a feldolgozási kanbanfeladat előkészítésével foglalkozik, amikor minden anyag elérhetők a munkacellához."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -40,5 +40,4 @@ Ez a feladat a feldolgozási kanbanfeladat előkészítésével foglalkozik, ami
     * Ha több feladat is ki van választva, a kitárolási lista a kiválasztott feladathoz szükséges minden cikk összegét mutatja.  
 6. Kattintson az Előkészítés lehetőségre.
     * Az előkészítési folyamat most befejeződött. A kiválasztott jelölőnégyzet a kitárolási lista minden sorában azt mutatja, hogy az ellátási állapot kitárolt.  
-
 

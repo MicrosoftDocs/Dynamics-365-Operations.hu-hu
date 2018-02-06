@@ -1,4 +1,4 @@
---- 
+---
 title: "Termelési rendelés létrehozása"
 description: "Ez az eljárás bemutatja, hogyan lehet termelési rendelést létrehozni."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ Ez az eljárás bemutatja, hogyan lehet termelési rendelést létrehozni. Ez az
     * A feldolgozási idő módosítása hatással van a becsült útvonal-felhasználásra és a termelési rendelés költségére.  
 6. Kattintson a Mentés gombra.
 7. Zárja be a lapot.
-
 

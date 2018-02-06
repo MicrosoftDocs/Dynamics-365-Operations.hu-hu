@@ -1,4 +1,4 @@
---- 
+---
 title: "Munkaidő és jelenlét bérlistafolyamatának engedélyezése"
 description: "Ez az eljárás bemutatja, hogyan lehet engedélyezni a munkaidő és jelenlét bérlistafolyamatát."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ Ez az eljárás bemutatja, hogyan lehet engedélyezni a munkaidő és jelenlét 
 6. Bontsa ki az Időnyilvántartás szakaszt.
 7. Kattintson a Szerkesztés lehetőségre.
 8. A Fizetési megállapodás mezőben adjon meg vagy válasszon ki egy értéket.
-
 

@@ -69,4 +69,3 @@ Ez az eljárás bemutatja, hogyan lehet a megfelelő szerepköröket hozzárende
 6. A Termelési egység mezőben megadhatja az alapértelmezett szűrőt a dolgozóhoz. Ez biztosítja, hogy csak a kijelölt termelési egység termelési feladatai jelenjenek meg, amikor a dolgozó bejelentkezik az eszközön.
 7. Zárja be a lapot.
 
-

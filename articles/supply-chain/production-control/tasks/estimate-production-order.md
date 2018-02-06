@@ -1,4 +1,4 @@
---- 
+---
 title: "Termelési rendelés becslése"
 description: "Ezt a folyamatot az USMF bemutatócégen vagy saját adathalmaza használatával is elvégezheti."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ Ezt a folyamatot az USMF bemutatócégen vagy saját adathalmaza használatával
 1. A Művelet panelen kattintson a Költségkezelés elemre.
 2. Kattintson a Számítás részleteinek megjelenítése elemre.
     * Ezen a lapon a költséglebontás látható. Megtekintheti például az első sorban a késztermék egységenkénti teljes önköltségi árát. A következő sorok az anyagjegyzékcikkek, a termelési útvonal és a közvetett költségek költségeit tartalmazzák.  
-
 
