@@ -1,7 +1,7 @@
 ---
 title: "Személyzeti műveletek [GYIK]"
 description: "Ez a témakör azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie."
-author: shielas
+author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

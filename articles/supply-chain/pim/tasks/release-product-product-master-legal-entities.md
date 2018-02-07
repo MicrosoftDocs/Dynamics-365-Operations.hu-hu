@@ -1,7 +1,7 @@
 --- 
 title: "Termék/alaptermék kiadása más jogi személyeknek"
 description: "Ez az eljárás bemutatja miként adhat ki egy terméket vagy alapterméket egy vagy több jogi személy számára."
-author: josaw1
+author: BibiSp
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process

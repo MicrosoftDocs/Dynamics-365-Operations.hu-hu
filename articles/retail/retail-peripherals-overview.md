@@ -1,6 +1,7 @@
 ---
 title: "Kiskereskedelmi perifériák – áttekintés"
 description: "Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat."
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article

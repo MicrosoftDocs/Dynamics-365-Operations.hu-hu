@@ -1,7 +1,7 @@
 ---
 title: "A pénzügyi jelentés összetevői"
 description: "A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. Ez a cikk ismerteti, hogyan rendezheti és zárolhatja az építőelemeket, valamint a velük történő munkát."
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
