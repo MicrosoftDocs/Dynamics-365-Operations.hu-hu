@@ -3,7 +3,7 @@ title: "Az ellátási lánc kezelése kezdőlap"
 description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
-ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
+ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
+ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/22/2018
 
 ---
 
@@ -52,9 +52,12 @@ További információkért válasszon ki egy szolgáltatásterületet.
 
 ## <a name="videos"></a>Videók
 
-### <a name="get-started"></a>Első lépések  
+Ezeknek a rövid videóknak a segítségével megismerheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017. december) új funkcióit.
 
-Ezeknek a rövid videóknak a segítségével elkezdheti használni a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás (2017. július) új funkcióit.
+-  [Készpénz-integrációra jelölt](https://youtu.be/AVV9x5x-XCg) 
+-  [Optimalizálási tanácsadó](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+Ezeknek a rövid videóknak a segítségével megismerheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) új funkcióit.
 
 -  [Első lépések a költségkönyvelésben](https://youtu.be/1pUDtJQZ8FU)
 -  [Költségellenőrzési mobil munkaterület](https://youtu.be/imsuTg8rUVk)
@@ -62,8 +65,7 @@ Ezeknek a rövid videóknak a segítségével elkezdheti használni a Microsoft 
 -  [Beszerzési rendelések jóváhagyása mobileszközön](https://youtu.be/gZ-gOlJe7H8)
 -  [Vizuális ütemezés a Gantt-diagrammal a termelési és kötegrendelésekhez](https://youtu.be/BtbuShkGj4I)
 
-### <a name="tech-conference-recordings"></a>Technikaikonferencia-felvételek
-Ezen felvételek legnagyobb része a Finance and Operations rendszer előző verziójának funkcióit tárgyalja, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
+Ezeknek a műszaki konferencián készült felvételeknek a legnagyobb része a Finance and Operations rendszer előző verziójának funkcióit tárgyalja, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Termékkonfiguráló a Microsoft Dynamics AX szolgáltatásban</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Alaptervezés – tippek és trükkök a hibajavítási teljesítményért</a>
@@ -83,7 +85,7 @@ A <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing ku
 ## <a name="white-papers"></a>Tanulmányok
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Költségkönyvelési interaktív laboratórium</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Ígérhető és kanbanfeladatok ütemezése</a> 
--  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Anyagjegyzék-számítás költségszámítási táblázat segítségével</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Darabjegyzék-számítás költségszámítási táblázat segítségével</a>
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">A ráktárban kialakítható mobilitás a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás segítségével</a>
 
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok

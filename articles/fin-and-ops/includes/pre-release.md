@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Ez a funkció egy célzott kiadés része, és csak azoknak a felhasználóknak érhető el, akik részt vesznek a folyamatos automatikus frissítések által biztosított előny programban (CAAP). Ez a funkció egy másik, a közeljövőben kiadandó általános rendelkezésre állású verzióban fog szerepelni. A normál és célzott kiadásokkal kapcsolatos további tudnivalókat lásd: [Normál és célzott platformkiadások](../get-started/public-preview-releases.md).
