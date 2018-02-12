@@ -1,4 +1,4 @@
---- 
+---
 title: "Termelési rendelés kiadása"
 description: "Ez az eljárás a termelési rendelések kiadását mutatja be."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ Ez az eljárás a termelési rendelések kiadását mutatja be. Ez az eljárás 
 5. Jelölje be az Útvonalkártya nyomtatása jelölőnégyzetet.
 6. Kattintson az OK gombra.
 7. Zárja be a lapot.
-
 

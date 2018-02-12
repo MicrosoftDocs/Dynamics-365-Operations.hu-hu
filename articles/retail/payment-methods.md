@@ -1,7 +1,7 @@
 ---
 title: "Kifizetési módok"
 description: "Minden egyes fizetéstípust, amelyet a kiskereskedő elfogad, konfigurálni kell a rendszer beállításakor. Ez a cikk a beállítható fizetéstípusokat mutatja be, valamint azok beállításának folyamatát."
-author: MargoC
+author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

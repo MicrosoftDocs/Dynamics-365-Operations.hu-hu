@@ -1,7 +1,7 @@
 ---
 title: "Kiskereskedelmi termékek engedményeinek megakadályozása"
 description: "Különböző okai lehetnek annak, hogy a kiskereskedők megakadályozzák bizonyos termékek engedménnyel való ellátását, akár promóció, akár a POS-ban történő eladás során."
-author: jeffbl
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

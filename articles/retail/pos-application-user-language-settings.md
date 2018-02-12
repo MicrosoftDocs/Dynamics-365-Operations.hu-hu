@@ -34,9 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Ez a témakör azt mutatja be, hogyan végezhető el a Retail Modern POS (MPOS) és a felhőalapú POS nyelvének módosítása.
 
-<a name="overview"></a>Áttekintés
-========
-
+## <a name="overview"></a>Áttekintés
 A Retail Modern POS (MPOS) és a felhőalapú POS támogatja az olyan környezeteket, ahol a nyelvi beállítás és a fordítás eltérhetnek egymástól az üzlet- és felhasználói beállításoknál. Például az üzlet olyan területen is lehet, ahol az angol a leggyakrabban használt nyelv az ügyfelek körében, de egyes munkavállalók inkább francia fordításban szeretnék használni az alkalmazást.
 
 ## <a name="data-language"></a>Adatnyelv

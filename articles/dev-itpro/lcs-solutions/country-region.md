@@ -8,6 +8,7 @@ ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
-ms.openlocfilehash: 9322b970eea9ab5ac01ae8461285b4dbcc1624a3
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
@@ -123,7 +124,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Adók](../../financials/localizations/latam-bra-calculate-taxes.md)
 
 ### <a name="china"></a>Kína
--   [Anyagjegyzékek összehasonlítása](../../financials/localizations/apac-chn-bom-comparison.md)
+-   [Darabjegyzékek összehasonlítása](../../financials/localizations/apac-chn-bom-comparison.md)
 -   [Kínai bizonylatok](../../financials/localizations/apac-chn-vouchers.md)
 -   [Adóintegráció konfigurációja](../../financials/localizations/apac-chn-tax-integration.md)
     -   [Vevői áfaszámlák GYIK](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
@@ -275,7 +276,9 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 
 ### <a name="norway"></a>Norvégia
 
--   [Netes importálási formátum](../../financials/localizations/emea-nor-nets-import-format.md)
+-   [Készpénzjegyzékek Norvégia esetében](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Készpénzjegyzékek telepítésére vonatkozó irányelvek Norvégia esetében](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+-   [Nets importálási formátum](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [Áfabevallás](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 
 ### <a name="poland"></a>Lengyelország

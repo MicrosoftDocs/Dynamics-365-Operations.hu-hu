@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -43,7 +44,7 @@ A felosztás pénzösszegeknek a felosztási szabályok alapján egy vagy több 
 
 [![Üzleti folyamat](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>Áfa
+## <a name="sales-tax"></a>Áfa
 Minden vállalat adót szed be és fizet különféle adóhatóságoknak. A szabályok és a mérték eltérők ország/régió, megye, állam és város.
 Ezenkívül a szabályokat frissíteni kell rendszeresen módosításakor adóhatóság által előírt követelményeknek. Az áfakód alapvetően azt határozza meg, hogy mennyi áfát kell begyűjteni és befizetni a hatóságoknak. Az áfakódok beállításakor megadhatja a begyűjtendő összeget vagy a százalékos értéket. Azon különböző módszereket is megadhatja, amelyekkel meghatározzák ezen összegeket vagy százalékokat a tranzakcióösszegekre vonatkozóan. Ebben a szakaszban található témakörök nyújtanak tájékoztatást a módok és díjak az adóhatóságnak igénylő áfakódok beállításával kapcsolatban.
 
@@ -52,13 +53,13 @@ Ezenkívül a szabályokat frissíteni kell rendszeresen módosításakor adóha
  - [Áfakifizetések és kerekítési szabályok](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>További erőforrások
+## <a name="additional-resources"></a>További erőforrások
 
-#### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
+### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
 Keresse fel a [Microsoft Dynamics 365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
 
-#### <a name="blogs"></a>Blogok
+### <a name="blogs"></a>Blogok
 
 A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) véleményeket, híreket és egyéb információkat talál a Kötelezettségek modullal és egyéb megoldásokkal kapcsolatban.
 
@@ -66,10 +67,10 @@ A [Microsoft Dynamics AX termékcsapat blogjában](https://blogs.msdn.microsoft.
 
 A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket az MBS Operations új és népszerű fejlesztéseiről.
 
-#### <a name="task-guides"></a>Feladat-útmutatók
+### <a name="task-guides"></a>Feladat-útmutatók
 Feladat-útmutatók formájában további segítség áll rendelkezésre a Finance and Operations alkalmazásban. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a Súgó gombjára.
 
-#### <a name="videos"></a>Videók
+### <a name="videos"></a>Videók
 
 Tekintse meg az útmutató-videókat, amelyek [a Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
 

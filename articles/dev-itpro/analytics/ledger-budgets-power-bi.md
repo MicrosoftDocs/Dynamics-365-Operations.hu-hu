@@ -31,14 +31,14 @@ ms.lasthandoff: 12/18/2017
 
 Ez a témakör a **Tényleges és költségvetési** Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban. 
 
-# <a name="overview"></a>Áttekintés
+## <a name="overview"></a>Áttekintés
 
 A **Tényleges és költségvetési** Power BI-tartalmat azoknak hoztuk létre, akik a valós és a költségvetési teljesítmény összevetéséért felelősek a szervezetnél. A **Tényleges és költségvetési** Power BI-tartalom a költségvetés-eltérésekbe nyújt betekintést. Az aktuális év költségvetését elemezheti számlakategória, költségvetési kód, fő számla, fő számla leírása vagy pénzügyi időszak szerint, hogy jobban megérthesse az esetleges eltérések okát. 
 
-# <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
+## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
 A **Tényleges a költségvetéssel szemben** Power BI-tartalom jelentései a **Tényleges a költségvetéssel szemben** és a **Pénzügyi igazgató** munkaterületen jelennek meg.
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
 A következő táblázat ismerteti a **Tényleges és költségvetési** Power BI-tartalom egyes jelentésoldalain található mutatókat.
 
 | Jelentés                      | Mutatók |
@@ -50,7 +50,7 @@ A következő táblázat ismerteti a **Tényleges és költségvetési** Power B
 | Nettó árbevétel                  | <ul><li>Az idei nettó bevétel</li><li>Nettó bevételi cél a költségvetési alapján </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
+## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 
 | Entitás                    | Tartalom |
 |---------------------------|----------|

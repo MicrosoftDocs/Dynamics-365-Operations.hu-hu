@@ -137,7 +137,7 @@ A leltározási eltérés akkor fordul elő a következő esetekben, ha a **cikl
 
 A számolt érték eltéréseit módosíthatja, majd elfogadhatja a számolt értéket a **Ciklikus leltározás ellenőrzése függőben** oldalon. A cikkmennyiség módosított száma jóváhagyható az **Aktuális készlet hely szerint** oldalon. Ha az eltérés nem hagyható jóvá, akkor a számolt érték elutasításra kerül.
 
-# <a name="see-also"></a>Lásd még
+## <a name="see-also"></a>Lásd még
 [Mobileszköz konfigurálása raktári munkához](configure-mobile-devices-warehouse.md)
 
 

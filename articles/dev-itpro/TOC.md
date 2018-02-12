@@ -114,6 +114,7 @@
 #### [Testreszabás: felülrétegzés és bővítmények](extensibility/customization-overlayering-extensions.md)
 ### Újdonságok
 #### [Bővítési módosítások, 2017. július](extensibility/changes-july-2017.md)
+#### [Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 bővítési módosítások](extensibility/extensibility-changes-73.md)
 ### Alapismeretek
 #### [Tolakodó testreszabások](extensibility/intrusive-customizations.md)
 #### [Osztály kiterjesztések](extensibility/class-extensions.md)
@@ -138,14 +139,19 @@
 #### [Képernyővezérlő tulajdonságainak módosítása](extensibility/modify-control-properties.md)
 #### [Címke módosítása](extensibility/change-label.md)
 #### [Számsorozat hatáskörének bővítése](extensibility/extend-number-sequence-scope.md)
+#### [Új készletdimenzió hozzáadása](extensibility/inventory-dimensions.md)
+#### [Ár és engedmény bővítésének módosításai](extensibility/pricing-app73.md)
+#### [Táblahozzárendelés-bővítmény](extensibility/map-extensions.md)
+#### [Interfészként használt tábla-hozzárendelések kiterjesztése](extensibility/maps-as-interfaces.md)
+#### [Verziókövetésre használt tábla-hozzárendelések kiterjesztése](extensibility/maps-with-versioning.md)
 
 
 
 
 ## Teljesítmény
-### [Nyomon követés a Trace parser használatával](perf-test/trace-trace-tutorial.md)
+### [Nyomon követés a Trace Parser használatával](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK és többfelhasználós tesztelés a Visual Studio Team Services segítségével](perf-test/perfsdk-tutorial.md)
-### [Hibák diagnosztizálása és teljesítményproblémák elemzése a Nyomkövetés-elemző használatával](perf-test/trace-parser.md)
+### [Hibák diagnosztizálása és teljesítményproblémák elemzése a Trace Parser használatával](perf-test/trace-parser.md)
 ### [Teljesítmény időzítő](perf-test/performance-timer.md)
 ## Támogatás tesztelése a Visual Studio szoftverben
 ### [Tesztelés és ellenőrzés](perf-test/testing-validation.md)
@@ -523,16 +529,16 @@
 
 # [Frissítés és áttelepítés](migration-upgrade/upgrade-home-page.md)
 ## [Frissítés AX 2012-ből a Dynamics 365 for Finance and Operations alkalmazásra](migration-upgrade/upgrade-overview-2012.md)
-### [Elemzés – A frissítési elemzőeszközzel tervezze meg a frissítést](migration-upgrade/upgrade-analyzer-tool.md)
-### [Elemzés – Használja a Kódfrissítési szolgáltatást a kód frissítéséhez szükséges ráfordítás megbecsüléséhez](migration-upgrade/analyze-code-upgrade.md)
-### [Elemzés – Védőfalkörnyezet telepítése](migration-upgrade/analysis-sandbox.md)
-### [Frissítés – Adatfrissítés fejlesztői környezetben](migration-upgrade/data-upgrade-2012.md)
-### [Frissítés – AX 2012 adatfrissítési feladatok](migration-upgrade/prepare-data-upgrade.md)
-### [Frissítés – Adatfrissítés védőfalkörnyezetben](migration-upgrade/upgrade-data-sandbox.md)
-### [Érvényesítés – Átállás teszt](migration-upgrade/upgrade-cutover-testing.md)
-### [Érvényesítés – Frissítést követően elvégzendő feladatok](migration-upgrade/app-validation-process.md)
-### [Érvényesítés – Funkcionális tesztelés](migration-upgrade/upgrade-functional-validation.md)
-### [Érvényesítés – Előkészítés élesítésre](migration-upgrade/upgrade-go-live-prep.md)
+### [AX 2012 frissítés – A frissítési elemzőeszköz használata a tervezéshez](migration-upgrade/upgrade-analyzer-tool.md)
+### [AX 2012 frissítés – A Kódfrissítési szolgáltatás használata a szükséges ráfordítás megbecsüléséhez](migration-upgrade/analyze-code-upgrade.md)
+### [AX 2012 frissítés – Védőfalkörnyezet telepítése](migration-upgrade/analysis-sandbox.md)
+### [AX 2012 frissítés – Adatfrissítés fejlesztői környezetben](migration-upgrade/data-upgrade-2012.md)
+### [AX 2012 frissítés – AX 2012 adatfrissítési feladatok](migration-upgrade/prepare-data-upgrade.md)
+### [AX 2012 frissítés – Adatfrissítés védőfalkörnyezetben](migration-upgrade/upgrade-data-sandbox.md)
+### [AX 2012 frissítés - Átállás tesztelése](migration-upgrade/upgrade-cutover-testing.md)
+### [AX 2012 frissítés - A frissítés után elvégzendő feladatok](migration-upgrade/app-validation-process.md)
+### [AX 2012 frissítés - Sikeres funkcionális teszt](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012 frissítés – Felkészülés az éles üzemre váltásra](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### Módosítások, amelyek hatással vannak az AX 2012-ről való frissítésre
@@ -590,6 +596,8 @@
 ## [Kötegelt feldolgozás](sysadmin/batch-processing-overview.md)
 ### [Kötegkiszolgáló áttekintése](sysadmin/batch-server-overview.md)
 ### [Kötegelt feladat létrehozása](sysadmin/tasks/create-batch-job.md)
+
+## [Optimalizálási tanácsadó szabályainak létrehozása](sysadmin/optimization-advisor.md)
 
 # Lifecycle Services
 ## [A Lifecycle Services áttekintése](lifecycle-services/lcs.md)

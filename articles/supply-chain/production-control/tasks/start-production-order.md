@@ -1,4 +1,4 @@
---- 
+---
 title: "Termelési rendelés indítása"
 description: "Ezzel az eljárással lehet megkezdeni egy termelési rendelést az üzemirányítással."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -70,5 +70,4 @@ Ezzel az eljárással lehet megkezdeni egy termelési rendelést az üzemirány�
 7. Kattintson a Feladás lehetőségre.
 8. Kattintson az OK gombra.
     * Az Útvonalkártya-naplóban rögzítheti az egyes műveletekkel töltött időt. A jó és a hibás mennyiséget is jelenteni kell.  
-
 

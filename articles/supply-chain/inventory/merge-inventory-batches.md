@@ -1,7 +1,7 @@
 ---
 title: "Készletkötegek egyesítése"
 description: "Ez a cikk a két vagy több készletköteg egyesített köteggé történő összevonásáról nyújt tájékoztatást."
-author: perlynne
+author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

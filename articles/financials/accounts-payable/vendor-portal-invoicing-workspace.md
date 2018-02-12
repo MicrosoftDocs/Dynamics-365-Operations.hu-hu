@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -47,10 +48,12 @@ Az **Összesítés** csempék áttekintést adnak a kiválasztott szállító sz
 -   A kifizetett számlák olyan számlák, amelyeket teljes mértékben kifizettek a Finance and Operations megoldásban.
 
 Kattintson egy csempére, és megnyílik a **Számlalisták** lap szűrt nézete.
+
 ### <a name="tabular-lists"></a>Táblázatos listák
 
 A **táblázatos listák** szakaszban a számlázás állapotának bontása megegyezik az összesítés csempékével: Vázlat és Elküldött, jóváhagyással még nem rendelkező listák. Vázlat állapotban a számlát be lehet küldeni a munkafolyamatba, vagy törölni lehet. Az utolsó táblázatos lista a számlák keresésére szolgáló beállítás. A gyorsabb keresés érdekében lehetőség van a keresés közbeni szűrésre.
-Az összes szállítói számla listaoldal
+
+<a name="all-vendor-invoices-list-page"></a>Az összes szállítói számla listaoldal
 -----------------------------
 
 Minden feladott és feladatlan szállítói számla megtekinthető a **Szállítói együttműködési számlák** listaoldalon. A listaoldal segítségével a számlák fizetési állapota jeleníthető meg. A kifizetés állapota lehet Feladatlan, Kifizetetlen, Részben fizetve és Teljesen kifizetve.

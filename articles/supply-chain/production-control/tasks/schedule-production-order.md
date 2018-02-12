@@ -1,4 +1,4 @@
---- 
+---
 title: "Termelési rendelés ütemezése"
 description: "Ez az eljárás bemutatja, hogyan lehet termelési rendelést ütemezni."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ Ez az eljárás bemutatja, hogyan lehet termelési rendelést ütemezni. Ez az e
     * A Terhelési kapacitás lap megjeleníti, hogy milyen kapacitást foglalt le a feladat ütemezésén keresztül, az erőforráson jelenleg lefoglalt órák összes számát, illetve a fennmaradó az erőforrás a feladat ütemezéséhez még rendelkezésre álló óráinak a számát.  
 6. Zárja be a lapot.
 7. Zárja be a lapot.
-
 

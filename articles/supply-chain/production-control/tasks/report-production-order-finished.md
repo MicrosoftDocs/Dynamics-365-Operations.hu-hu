@@ -1,4 +1,4 @@
---- 
+---
 title: "Termelési jelentés készként jelenítése"
 description: "Ez az eljárás bemutatja, hogyan lehet készre jelenteni egy termelési rendelést."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ Ez az eljárás bemutatja, hogyan lehet készre jelenteni egy termelési rendel�
 3. A listában jelölje meg a kiválasztott sort.
 4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * A Készre jelentés napló feladásra kerül. Ha módosítani szeretné a naplót, akkor manuálisan létrehozhat egy új naplót, ahol elvégezheti a módosításokat.  
-
 

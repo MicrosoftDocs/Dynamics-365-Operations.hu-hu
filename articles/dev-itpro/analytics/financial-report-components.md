@@ -1,7 +1,7 @@
 ---
 title: "A pénzügyi jelentés összetevői"
 description: "A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. Ez a cikk ismerteti, hogyan rendezheti és zárolhatja az építőelemeket, valamint a velük történő munkát."
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -112,7 +112,7 @@ Amikor megnyit egy építőelemet, a többi felhasználó csak olvasásra kap ho
 3.  Jelöljön ki egy építőelemet majd kattintson a **Kivétel visszavonása** parancsra.
 4.  Az építőelem visszavételéhez kattintson az **Igen** lehetőségre.
 
-# <a name="see-also"></a>Lásd még
+## <a name="see-also"></a>Lásd még
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 

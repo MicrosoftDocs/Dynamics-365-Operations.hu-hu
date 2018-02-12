@@ -1,17 +1,16 @@
 ---
 title: "Személyzeti műveletek [GYIK]"
 description: "Ez a témakör azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie."
-author: shielas
+author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
 ms.technology: 
-ms.search.form: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Talent
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global

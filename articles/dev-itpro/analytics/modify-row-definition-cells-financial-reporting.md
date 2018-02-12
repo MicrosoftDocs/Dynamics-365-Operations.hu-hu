@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 A cikk ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását. 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>Határozzon meg egy sor kódot a sor definícióban
+## <a name="specify-a-row-code-in-a-row-definition"></a>Határozzon meg egy sor kódot a sor definícióban
 
 A sor definíciókban, a számok vagy a címkék a **Sorkód** cellában minden sort azonosítanak a sor definícióban. A sorkód megadásával lehet hivatkozni az adatokra a számításokban és az összesítésekben.
 
@@ -506,8 +506,7 @@ A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimen
 4.  Válassza ki a törölni kívánt készletet, majd kattintson a **Törlés** lehetőségre. Kattintson az **Igen** lehetőségre, hogy véglegesen törölje a dimenzióérték készletet.
 
 
-<a name="see-also"></a>Lásd még
---------
+## <a name="see-also"></a>Lásd még
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 
