@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -24,6 +25,8 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="invoice-processing"></a>Számlák feldolgozása
+
+[!include[banner](../includes/banner.md)]
 
 Ez a témakör röviden leír néhány országspecifikus forgatókönyvet, például a közösségi általános forgalmi adó (áfa) és a halasztott áfa vonatkozásában. Egyes európai országok számára a jogi követelmények befolyásolják a számlázási folyamatot. Ez a témakör a vevői és szállítói számlák feldolgozásáról is információkkal szolgál az említett országokban. 
 <table>

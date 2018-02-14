@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalAsset
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -25,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="move-a-fixed-asset-to-inventory"></a>Tárgyi eszköz áthelyezése leltárba
+
+[!include[banner](../includes/banner.md)]
 
 Ez a cikk azt a Magyarországra vonatkozó országspecifikus funkciót írja le, amely lehetővé teszi a tárgyi eszközök készletbe való átvitelét a nettó könyv szerinti értéken. A tárgyi eszköz állapota „Selejtezett” lesz, a nettó könyv szerinti érték pedig 0 (nulla). Ezenkívül a készletben lévő termék mennyisége 1-re van állítva, és az önköltségi ár a tárgyi eszköz nettó könyv szerinti értékére van beállítva.
 
