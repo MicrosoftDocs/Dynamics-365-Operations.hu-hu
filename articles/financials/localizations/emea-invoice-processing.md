@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +17,16 @@ ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 25732cf27f91f9a6edf7aae41f7159aadd06b1e2
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: d1fca30eb6de22c2d2fb2c4d6bfdfd21fd4bbd6e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="invoice-processing"></a><span data-ttu-id="543fa-103">Számlák feldolgozása</span><span class="sxs-lookup"><span data-stu-id="543fa-103">Invoice processing</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="543fa-104">Ez a témakör röviden leír néhány országspecifikus forgatókönyvet, például a közösségi általános forgalmi adó (áfa) és a halasztott áfa vonatkozásában.</span><span class="sxs-lookup"><span data-stu-id="543fa-104">This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax.</span></span> <span data-ttu-id="543fa-105">Egyes európai országok számára a jogi követelmények befolyásolják a számlázási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="543fa-105">Legal requirements for some European countries affect the invoicing process.</span></span> <span data-ttu-id="543fa-106">Ez a témakör a vevői és szállítói számlák feldolgozásáról is információkkal szolgál az említett országokban.</span><span class="sxs-lookup"><span data-stu-id="543fa-106">This topic provides also an information about how customer and vendor invoices are processed for these countries.</span></span> 
 <table>
