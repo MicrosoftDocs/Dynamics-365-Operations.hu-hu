@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -16,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -104,7 +105,7 @@ A következő táblázat azt mutatja, hogyan használjuk a fő összesített mé
 | Késleltetve van               | 'Termelési rendelés'[RAF'ed van] = IGAZ && 'Termelési rendelés' [Késleltetett érték] = 1 |
 | Korai                 | 'Termelési rendelés'[RAF'ed van] = IGAZ && 'Termelési rendelés' [Késés napjainak száma] \< 0 |
 | Teljes egészében               | 'Termelési rendelés' [Hibátlan mennyiség] \>'Termelési rendelés' = [Ütemezett mennyiség] |
-| RAF'ed van                | '"Termelési rendelés' [Termelési állapot értéke] = 5 \|\| 'Termelési rendelés' [Termelési állapot értéke] = 7 |
+| RAF'ed van                | 'Termelési rendelés'[Termelési állapot értéke] = 5 \|\| 'Termelési rendelés'[Termelési állapot értéke] = 7 |
 | Késve és teljes egészében           | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés' [Teljes] = IGAZ & & 'Termelési rendelés' [Késik] = IGAZ)) |
 | Késve \#                  | COUNTROWS(FILTER ('Termelési rendelés', 'Termelési rendelés' [Késik] = IGAZ)) |
 | Késve százalékban kifejezve                   | IFERROR (IF('Termelési rendelés' [Késve \#] \<\> 0, 'Termelési rendelés' [Késve \#], IF ('Termelési rendelés' [Összes rendelés] = 0, BLANK(), 0)) / 'Termelési rendelés' [Összes rendelés], BLANK()) |

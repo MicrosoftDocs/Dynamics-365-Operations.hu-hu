@@ -1,9 +1,9 @@
 --- 
-title: "Jelentések készítése Microsoft Office formátumban beágyazott képekkel az elektronikus jelentéskészítéshez (ER) (1. rész)"
-description: "A következő lépések leírják, hogy a Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tervezhet meg egy új Elektronikus jelentés (ER) konfigurációkat, beágyazott képeket tartalmazó MS Office (Excel vagy Word) formátumú elektronikus dokumentumok létrehozásához."
+title: "Konfigurációk tervezése Microsoft Office formátumban beágyazott képekkel készítendő jelentések létrehozásához az elektronikus jelentéskészítéshez (ER) (1. rész)"
+description: "E témakör lépései azt mutatják be, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk Microsoft Office formátumokban (Excelben és Wordben) beágyazott képeket tartalmazó elektronikus dokumentumok létrehozására."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,108 +16,79 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: f610fe4b7f265c4fc38db89938d5c208b4f7661a
+ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
+ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/23/2018
 
 ---
-# <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a>Jelentések készítése Microsoft Office formátumban beágyazott képekkel az elektronikus jelentéskészítéshez (ER) (1. rész) 
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Konfigurációk tervezése Microsoft Office formátumban beágyazott képekkel készítendő jelentések létrehozásához az elektronikus jelentéskészítéshez (ER) (1. rész) 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A következő lépések leírják, hogy a Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tervezhet meg egy új Elektronikus jelentés (ER) konfigurációkat, beágyazott képeket tartalmazó MS Office (Excel vagy Word) formátumú elektronikus dokumentumok létrehozásához.
+A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. Ez az eljárás bemutatja, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk beágyazott képeket tartalmazó Microsoft Excel vagy Word-dokumentumok létrehozására. Ebben az eljárásban a szükséges ER konfigurációkat a Litware, Inc. mintavállalathoz hozza létre. Ezek a lépések az USMF adatkészlet segítségével tölthetők be. Ez az eljárás a rendszergazda vagy az elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. Mielőtt elkezdené, töltse le és mentse el a [Képek és alakzatok beágyazása az Elektronikus jelentéskészítés eszköz által generált üzleti dokumentumokba](../electronic-reporting-embed-images-shapes.md) súgótémában felsorolt fájlokat. A fájlok: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png és Cheque template Word.docx.
 
-Ebben a példában a Litware, Inc. mintavállalatra vonatkozóan létrehozott ER-konfigurációkat használjuk.  A lépések végrehajtásához először végre kell hajtani az „ER – Jelentések létrehozása Microsoft Office-formátumokban, beágyazott képekkel (2. rész: Konfigurációk áttekintése)” feladat-útmutató lépéseit. Ezeket a lépéseket a USMF vállalatban hajthatja végre.
+## <a name="verify-prerequisites"></a>Az előfeltételek ellenőrzése  
+ 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.  
+ 2. Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.   
+ 3. Kattintson a Jelentéskészítés konfigurációi lehetőségre.  
+ 
+## <a name="add-a-new-er-model-configuration"></a>Új ER-modellkonfiguráció hozzáadása  
+ 1. Új modell létrehozása esetén betöltheti a korábban mentett ER modellkonfigurációs fájlt (Model for cheques.xml). Ez a fájl tartalmazza a fizetési csekkek mintaadatmodelljét és az adatmodell a Dynamics 365 for Operations alkalmazás adatösszetevőire való leképezését.   
+ 2. A verzió gyorslapon kattintson az Átváltás lehetőségre.   
+ 3. Kattintson a Betöltés XML-fájlból lehetőségre.  
+ 4. Kattintson a Tallózás gombra, majd válassza ki a Model for cheques.xml dokumentumot.   
+ 5. Kattintson az OK gombra.  
+ 6. A rendszer a betöltött modellt használja információforrásként a képeket tartalmazó Excel- és Word-dokumentumok létrehozására.  
 
+## <a name="add-a-new-er-format-configuration"></a>Új ER-formátum hozzáadása  
+ 1. Új formátum létrehozása esetén betöltheti a korábban mentett ER-formátumkonfigurációs fájlt (Cheques printing format.xml). A fájl a csekkek nyomtatásához használt formátum mintaelrendezését tartalmazza egy előre nyomtatott űrlap segítségével, valamint a formátum „Model for cheques” adatmodellre való leképezését.   
+ 2. Kattintson az Átváltás lehetőségre.  
+ 3. Kattintson a Betöltés XML-fájlból lehetőségre.  
+ 4. Kattintson a Tallózás gombra, és válassza ki a Cheques printing format.xml fájlt.   
+ 5. Kattintson az OK gombra.  
+ 6. A fastruktúrában bontsa ki ezt: „Model for cheques”.  
+ 7. A fában válassza ki ezt: „Model for cheques\Cheques printing format”.  
+ 8. A rendszer a betöltött formátumot használja képeket tartalmazó Excel- és Word-dokumentumok létrehozására.   
 
-## <a name="run-format-with-initial-model-mapping"></a>Futtassa a formátumot a kiindulási modell-hozzárendeléssel
-1. Menjen a Készpénz és bankkezelés > Bankszámlák > Bankszámlák menüpontra.
-2. A gyorsszűrő használatával szűrjön rá a Bankszámla mezőre a „USMF OPER” értékkel.
-3. A műveleti ablaktáblán kattintson a Beállítások elemre.
-4. Kattintson az ellenőrzés lehetőségre.
-5. Kattintson a Tesztnyomtatás lehetőségre.
-    * Futtassa a formátumot tesztelési céllal.  
-6. Válassza az Igen lehetőséget az Átruházható csekkformátum mezőben.
-7. Kattintson az OK gombra.
-    * Tekintse át a létrehozott kimenetet. Vegye figyelembe, hogy a vállalati embléma megjelenik a jelentésben, a jogosult személy aláírásával együtt. Az aláírás képe a kiválasztott bankszámlával társított csekkelrendezése-rekord „Konténer” adattípusú mezőjéből származik.  
-8. Bontsa ki a Példányok szakaszt.
-9. Kattintson a Szerkesztés lehetőségre.
-10. A Vízjel mezőjébe írja be a következőt: „Vízjel nyomtatása érvénytelenként”.
-    * Módosítsa a vízjel elrendezése beállítást, hogy egy Excel-alakzat elemen dokumentum létrehozásakor megjelenjen a vízjel szövege.  
-11. Kattintson a Tesztnyomtatás lehetőségre.
-12. Kattintson az OK gombra.
-    * Tekintse át a létrehozott kimenetet. Vegye figyelembe, hogy a vízjel a beállítással összhangban jelenik meg a létrehozott jelentésen.  
-13. Zárja be a lapot.
-14. A Művelet panelen kattintson a Kifizetések kezelése elemre.
-15. Kattintson a Csekkek lehetőségre.
-16. Kattintson a Szűrők megjelenítése pontra.
-17. Alkalmazza a következő szűrőket: adja meg a „381”, „385”, „389” szűrőértéket a „Csekk száma” mezőben „a következők valamelyike” szűrési operátor használatával.
-18. A listában jelöljön ki minden sort.
-19. Kattintson a Csekk másolatának nyomtatása elemre.
-    * Futtassa a formátumot a kiválasztott csekkek újranyomtatásához.  
-    * Tekintse át a létrehozott kimenetet. Ne feledje, hogy a kiválasztott csekkek újra lettek nyomtatva. A vállalati embléma és a címkék nem lesznek kinyomtatva, mivel azok megjelennek az előre nyomtatott űrlapon.  
+## <a name="configure-er-user-parameters"></a>ER felhasználói paraméterek konfigurálása  
+ 1. Kattintson a Konfigurációk lehetőségre a Művelet Panelen.  
+ 2. Kattintson a Felhasználói paraméterek lehetőségre.  
+ 3. Válassza az Igen lehetőséget a Beállítások futtatása mezőben.  
+  Kapcsolja be a Vázlat futtatása jelzőt a kijelölt formátum piszkozatverziójának elindításához a befejezett verzió helyett.  
+ 4. Kattintson az OK gombra.  
 
-## <a name="modify-the-mapping-of-the-imported-data-model"></a>Módosítsa az importált adatok modell-hozzárendelését
-1. Zárja be a lapot.
-2. Zárja be a lapot.
-3. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
-4. A fastruktúrában válassza ki ezt: „Model for checks”.
-5. Kattintson a Tervező pontra.
-6. Kattintson a Modell hozzárendelése adatforráshoz gombra.
-7. Kattintson a Tervező pontra.
-    * Megváltoztatjuk az adatmodell aláírás elemének kötését, hogy a kiválasztott bankszámlával társított csekkelrendezése-rekordhoz társított fájlból vegye az aláírás képét.  
-8. Kapcsolja ki a Részletek megjelenítését.
-9. A fastruktúrában bontsa ki ezt: „layout”.
-10. A fában bontsa ki az „layout\signature” elemet.
-11. A fában válassza ki ezt: „layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp”.
-12. A fában bontsa ki a „chequesaccount” elemet.
-13. A fastruktúrában bontsa ki a „chequesaccount\<Relations” elemet.
-14. A fában bontsa ki a „chequesaccount\<Relations\BankChequeLayout” elemet.
-15. A fában bontsa ki a „chequesaccount\<Relations\BankChequeLayout\<Relations” elemet.
-16. A fában bontsa ki a „chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents” elemet.
-17. A fában válassza ki a „chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer()” elemet.
-18. Kattintson a Kötés gombra.
-19. Kattintson a Mentés gombra.
-20. Zárja be a lapot.
-21. Zárja be a lapot.
-22. Zárja be a lapot.
-23. Zárja be a lapot.
-
-## <a name="run-format-using-the-adjusted-model-mapping"></a>Futtassa a formátumot a módosított modell-hozzárendeléssel
-1. Menjen a Készpénz és bankkezelés > Bankszámlák > Bankszámlák menüpontra.
-2. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a Bankszámla mezővel az „USMF OPER” értéket beírva.
-3. A műveleti ablaktáblán kattintson a Beállítások elemre.
-4. Kattintson az ellenőrzés lehetőségre.
-5. Kattintson a Tesztnyomtatás lehetőségre.
-6. Kattintson az OK gombra.
-    * Tekintse át a létrehozott kimenetet. Vegye figyelembe, hogy a Dokumentumkezelés mellékletéből származó kép jelenik meg a jogosult személy aláírásaként.  
-
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Microsoft Word dokumentum sablonként való használata az importált formátumban
-1. Zárja be a lapot.
-2. Zárja be a lapot.
-3. Nyissa meg a következőt: Szervezeti adminisztráció > Elektronikus jelentés > Konfigurációk.
-4. A fastruktúrában bontsa ki ezt: „Model for cheques”.
-5. A fában válassza ki ezt: „Model for cheques\Cheques printing format”.
-6. Kattintson a Tervező pontra.
-7. Kattintson a Mellékletek lehetőségre.
-8. Kattintson a Törlés gombra.
-9. Kattintson az Igen gombra.
-10. Kattintson az Új lehetőségre.
-11. Kattintson a Fájlra.
-    * Kattintson a Tallózás gombra, és töltse le előre a „Cheque template Word.docx” fájlt.  
-12. Zárja be a lapot.
-13. A Sablon mezőben adjon meg vagy válasszon ki egy értéket.
-14. Kattintson a Mentés gombra.
-15. Zárja be a lapot.
-16. Kattintson a Szerkesztés lehetőségre.
-17. Válassza az Igen lehetőséget a Vázlat futtatása mezőben.
-18. Zárja be a lapot.
-19. Menjen a Készpénz és bankkezelés > Bankszámlák > Bankszámlák menüpontra.
-20. A gyorsszűrő használatával szűrjön rá a Bankszámla mezőre a „USMF OPER” értékkel.
-21. Kattintson az ellenőrzés lehetőségre.
-22. Kattintson a Tesztnyomtatás lehetőségre.
-23. Kattintson az OK gombra.
-    * Tekintse át a létrehozott kimenetet. Vegye figyelembe, hogy a kimenet Microsoft Word dokumentumként jött létre beágyazott képekkel, amelyek a vállalati emblémát, a jogosult személy aláírását és vízjel kiválasztott szövegét tartalmazzák.  
-
+## <a name="configure-cash--bank-management-parameters"></a>Készpénz- és bankkezelési paraméterek konfigurálása  
+ 1. Menjen a Készpénz és bankkezelés > Bankszámlák > Bankszámlák menüpontra.  
+ 2. A gyorsszűrő használatával szűrjön rá a Bankszámla mezőre a „USMF OPER” értékkel.  
+ 3. A műveleti ablaktáblán kattintson a Beállítások elemre.  
+ 4. Kattintson az ellenőrzés lehetőségre.  
+ 5. Bontsa ki a Beállítások szakaszt.  
+ 6. Kattintson a Szerkesztés lehetőségre.  
+ 7. Válassza ki az Igen lehetőséget a Vállalat emblémája mezőben.  
+ 8. Kattintson a Vállalat emblémája lehetőségre.  
+ 9. Kattintson a Módosítás gombra.  
+ 10. Kattintson a Tallózás gombra, és válassza ki a korábban letöltött fájlt: Company logo.png.   
+ 11. Kattintson a Mentés gombra.  
+ 12. Zárja be a lapot.  
+ 13. Bontsa ki az Aláírás szakaszt.  
+ 14. Válassza az Igen lehetőséget az Első aláírás nyomtatása mezőben.  
+ 15. Kattintson a Módosítás gombra.  
+ 16. Kattintson a Tallózás gombra, és válassza ki a korábban letöltött fájlt: Signature image.png.   
+ 17. Bontsa ki a Példányok szakaszt.  
+ 18. A Vízjel mezőben válasszon egy lehetőséget.  
+ 19. Válassza az Igen beállítást az Exportálási formátum mezőben.  
+ 20. Válassza a „Csekkek nyomtatása képernyő” konfigurációt.  
+ 21. Ekkor a rendszer a kijelölt ER-formátumot használja csekkek nyomtatására.  
+ 22. Kattintson a Csatolás elemre.  
+ 23. Kattintson az Új lehetőségre.  
+ 24. Kattintson a Fájlra.  
+ 25. Kattintson a Tallózás gombra, és válassza ki a korábban letöltött fájlt: Signature image2.png.   
+ 26. Zárja be a lapot.  
+ 27. Zárja be a lapot.  
+ 28. Zárja be a lapot.  
+ 29. Ugorjon a Készpénz- és bankkezelés > Beállítás > Készpénz- és bankkezelési paraméterek pontra.  
+ 30. AZ Ellenőrző tranzakció létrehozásának engedélyezése az inaktív bankszámláknál: mezőben válassza az Igen lehetőséget.  
+ 31. Kattintson a Mentés gombra.  
+ 32. Zárja be a lapot.  
 

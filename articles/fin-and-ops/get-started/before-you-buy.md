@@ -1,7 +1,7 @@
 ---
 title: "Vásárlás előtti teendők"
 description: "Lépésről-lépésre történő bemutatás, amelyet akkor használhat, ha a Dynamics 365 for Finance and Operations, Enterprise edition megvásárlását tervezi."
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -13,14 +13,14 @@ ms.reviewer: margoc
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4bd67b15e893613bed14d2bdc1d9a07da81dc26
+ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
+ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 
@@ -35,7 +35,17 @@ A Dynamics 365 for Finance and Operations 30 napos kipróbálásához mindössze
 
 ## <a name="step-two-choose-a-deployment-option"></a>2. lépés: Válasszon egy telepítési beállítást
 Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást felhőalapú vagy on-premises megoldás használatával. A felhőalapú telepítések olyan vállalatirányítási szolgáltatást kínálnak, amelyet teljes mértékben a Microsoft felügyel, míg az on-premises telepítések helyileg, az ügyfél adatközpontján keresztül történnek.
-A további információkat lásd: [Telepítési beállítások](../../dev-itpro/deployment/choose-deployment-type.md) 
+
+A következő megfontolásokat kell figyelembe venni, amikor telepítési opcióként a helyszínit választja:
+- Szabályozói és megfelelési követelmények, amelyek nem szerepelnek a [felhőtanúsítványokban](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Kapcsolat nélküli üzleti folyamat a Microsoft Dynamics Lifecycle Services (LCS) eléréséhez szükséges időszakos internetkapcsolattal az alkalmazások életciklus-kezeléséhez
+- [Az on-premises telepítéseknél jelenleg nem elérhető funkciók](features-not-implemented-on-prem.md)
+- [Minimális infrastruktúra-követelmények](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
+> [!IMPORTANT]
+> A Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition on-premises telepítései semmilyen nyilvános felhőinfrastruktúrán nem támogatottak, beleértve az Azure-t is. 
+
+A további információkat lásd: [Telepítési beállítások](../../dev-itpro/deployment/choose-deployment-type.md)
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Harmadik lépés: Előfizetés vásárlása és kezelése
 Az előfizetési lehetőségek felfedezéséhez lépjen a [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) árazási oldalára. Ez a lap számos különböző csomagot tartalmaz a szervezet igényeinek megfelelően.

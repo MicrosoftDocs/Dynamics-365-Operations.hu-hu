@@ -1,9 +1,9 @@
 ---
 title: "Kisegítő lehetőségek funkciói"
-description: "Ez a témakör azokat a funkciókat mutatja be, amelyek a különböző fogyatékkal élő felhasználókat segítik. Bizonyos funkciók például azokat segítik, akik olyan, gyengénlátóknak kifejlesztett technológiákat használnak, mint a Windows Narrátor."
+description: "Ez a téma azokat a funkciókat írja le, amelyek célja a Dynamics 365 for Finance and Operations, Enterprise Edition, a Dynamics 365 for Retail és a Dynamics 365 for Talent használatának megkönnyítése különböző fogyatékkal élő felhasználók számára."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 01/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,16 +16,16 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 158caf6c05515069b58121a72df1b7fe16bae236
-ms.openlocfilehash: bd71d2dee7ff7984f2088a64e9943b2541c88451
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 42b4f670dee95c073ce8dcca16afef83bbf78ff8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
-# <a name="accessibility-features"></a>Kisegítő lehetőségek funkciói
+# <a name="accessibility-features"></a>Hozzáférhetőségi funkciói
 
-Ez a témakör azokat a funkciókat mutatja be, amelyek a különböző fogyatékkal élő felhasználókat segítik. Bizonyos funkciók például azokat segítik, akik olyan, gyengénlátóknak kifejlesztett technológiákat használnak, mint a Microsoft Windows Narrátor.
+Ez a téma azokat a funkciókat írja le, amelyek célja a Dynamics 365 for Finance and Operations, Enterprise Edition, a Dynamics 365 for Retail és a Dynamics 365 for Talent használatának megkönnyítése különböző fogyatékkal élő felhasználók számára. Bizonyos funkciók például azokat segítik, akik olyan, gyengénlátóknak kifejlesztett technológiákat használnak, mint a Microsoft Windows Narrátor.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>A Windows Narrátor, és csak a billentyűzet elérése
 

@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 211442c7bd0d3079a5eb4f6d01944c0eddf533af
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -52,7 +52,7 @@ Hivatkozás létrehozása után minden mappa vagy fájl részére megadhat egy e
 
 [![Fájlcél létrehozása](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-**Megjegyzés:** Ugyanazon formátumú egyes eredménykomponensek számára csak egy elérési utat adhat meg, ami a **Fájlnév** mezőben kiválasztott fájl vagy mappa. Ezután be- és kikapcsolhatja a fájl egyes elérési útjait az **Elérési út beállításai** párbeszédpanelen. A **Beállítások** gombbal egy kiválasztott fájl elérési útjának minden célja vezérelhető. Az **Útvonalbeállítások** párbeszédpanelen minden elérési utat külön vezérelhet a **Bekapcsolva** opcióval.
+> ![MEGJEGYZÉS] Ugyanazon formátumú egyes eredménykomponensek számára csak egy elérési utat adhat meg, ami a **Fájlnév** mezőben kiválasztott fájl vagy mappa. Ezután be- és kikapcsolhatja a fájl egyes elérési útjait az **Elérési út beállításai** párbeszédpanelen. A **Beállítások** gombbal egy kiválasztott fájl elérési útjának minden célja vezérelhető. Az **Útvonalbeállítások** párbeszédpanelen minden elérési utat külön vezérelhet a **Bekapcsolva** opcióval.
 
 [![Célhely beállításai párbeszédablak](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -131,7 +131,7 @@ Az ER célokhoz kétféle jog és kötelezettség létezik. Az egyik típus fel�
 | PaymAccountsPayablePaymentsClerk    | Kötelezettségkifizetési adminisztrátor            | ERFormatDestinationRuntimeConfigure | Elektronikus jelentéskészítési formátum céljának konfigurálása futásidőben |
 | PaymAccountsReceivablePaymentsClerk | Kinnlevőség-kifizetési adminisztrátor         | ERFormatDestinationRuntimeConfigure | Elektronikus jelentéskészítési formátum céljának konfigurálása futásidőben |
 
-**Megjegyzés:** A fenti kötelezettségek teljesítésekor két jogosultság használatos. Ezeknek a jogosultságoknak a neve megegyezik a hozzájuk tartozó feladatokkal: **ERFormatDestinationConfigure** és **ERFormatDestinationRuntimeConfigure**.
+> ![MEGJEGYZÉS] A fenti kötelezettségek teljesítésekor két jogosultság használatos. Ezeknek a jogosultságoknak a neve megegyezik a hozzájuk tartozó feladatokkal: **ERFormatDestinationConfigure** és **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Rendelkezem importált elektronikus konfigurációkkal, és látom azokat az Elektronikus jelentési konfigurációk oldalon. De miért nem látom őket az Elektronikus jelentési célok oldalon?
@@ -154,7 +154,7 @@ A formula ER-konfigurációspecifikus. Például, ha az ISO 20022 Jóváírás �
 
 Előfeltétel, hogy az Ön formátuma elérhető legyen az ER-konfigurációknál. Ha megvan a formátum, nyissa meg az **Elektronikus jelentés célja** oldalt, majd hozzon létre új hivatkozást erre a konfigurációra. Ekkor négy fájlcélra lesz szüksége, egyre mindegyik eredménykomponenshez. Hozza létre az első fájlcélt, nevezze el pl. úgy, hogy **Mappa**, majd válassza ki a fájlnevet, ami a konfigurációban a mappát reprezentálja. Kattintson a **Beállítások** gombra, és győződjön meg róla, hogy minden cél ki van kapcsolva. Ehhez a fájlcélhoz nem lesz mappa létrehozva. A fájlok és szülőmappák közötti hierarchikus viszonyok miatt alapértelmezés szerint a fájlok ugyanúgy fognak viselkedni. Más szóval nem lesznek sehová elküldve. Ezen alapértelmezett viselkedés felülbírálásához három másik fájlcélt kell létrehoznia, egyet mindegyik fájlhoz. Az egyes célbeállításoknál be kell kapcsolnia azt a célt, ahová a fájlt küldeni kívánja.
 
-# <a name="see-also"></a>Lásd még
+## <a name="see-also"></a>Lásd még
 
 [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 

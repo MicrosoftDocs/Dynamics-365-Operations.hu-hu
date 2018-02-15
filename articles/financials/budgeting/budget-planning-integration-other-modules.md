@@ -3,11 +3,12 @@ title: "A Költségvetés-tervezés integrálása más modulokkal"
 description: "Költségvetési tervek számos különböző forrásból hozhatók létre. Az időszaki folyamat alapvető összetevői ugyanazok, mint a többi forrás esetében."
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -51,7 +52,7 @@ Az időszaki folyamatok alapvető összetevői ugyanazok, mint a többi folyamat
 
 Minden létrehozási folyamat kapcsán az alábbi műveletek állnak rendelkezésre:
 
--   Az **Új költségvetési terv létrehozása** a **Cél** szakaszban kiválasztott jellemzőknek megfelelő új tervet hozza létre. Ezeknek a jellemzőknek nem kell egyedinek lenniük. Így tehát két tervnek is lehet azonos a neve, illetve a további értékei.
+-   **Új költségvetési terv létrehozása** a **Cél** szakaszban kiválasztott jellemzőknek megfelelő új terv létrehozása. Ezeknek a jellemzőknek nem kell egyedinek lenniük. Így tehát két tervnek is lehet azonos a neve, illetve a további értékei.
 -   **A meglévő költségvetési tervváltozat cseréje** a cél költségvetési terv költségvetési tervváltozatában szereplő összes adat törlése, illetve a kiválasztott forrásadatokat használó új sorok létrehozása.
 -   **A meglévő költségvetési tervváltozat frissítése, és új adatok hozzáfűzése** a meglévő sorok frissítése a forrássoroknak megfelelő céltervben, és új sorokat hozzáadása új adatok rögzítéséhez. A megfeleltetés a főkönyvi számla, a dátum, a költségvetési osztály, illetve a többi mező alapján történik. Ha például előre jelzett beosztások alapján hoz létre költségvetési terveket, úgy kiemelt szerepet játszik a beosztásszám. Minden, a forrás beosztásszámmal azonos beosztásszámot tartalmazó sor helyére a forrás új sorai kerülnek.
 

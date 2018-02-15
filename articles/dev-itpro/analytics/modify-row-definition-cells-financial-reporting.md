@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9c0372f3bc4e1fb4394d69f6e3dbf6c0f844b991
+ms.sourcegitcommit: dd34fb71f7a5d31a075c6475c2fe6627193d891f
+ms.openlocfilehash: 6bb405937288b46f49420a1735c32b5b7c16248e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/02/2018
 
 ---
 
@@ -42,8 +42,10 @@ A sor definíciókban, a számok vagy a címkék a **Sorkód** cellában minden 
 Mindegyik sorhoz szükség van egy sorkódra. Vegyítheti a numerikus, az alfanumerikus és a nem beállított (üres) sorkódokat a sor definícióban. A sorkód lehet bármilyen pozitív egész szám (100 000 000 alatt), vagy egy leíró címke amely azonosítja az adott sort. A leíró címkének ezeknek a szabályoknak kell megfelelnie:
 
 -   A címkének (a és z között vagy A és Z között) egy alfabetikus karakterrel kell kezdődnie, és legfeljebb 16 karakterig a számoknak és a betűknek bármely kombinációja lehet. 
-    > [!NOTE]
-    > A címke tartalmazhat aláhúzás jelet (\_), de semmilyen más speciális karakterek nem megengedett.
+
+> [!Note] 
+> A címke tartalmazhat aláhúzás jelet (\_), de semmilyen más speciális karakterek nem megengedett.
+
 -   A címke a következő foglalt szavak egyikét sem használhatja: AND, OR, IF, THEN, ELSE, PERIODS, TO, BASEROW, UNIT, NULL, CPO, vagy RPO.
 
 Az alábbi példák érvényes sorkódok:
@@ -62,12 +64,14 @@ Az alábbi példák érvényes sorkódok:
 1.  A Jelentés Tervező eszközben, kattintson **Sor Definíciók**, majd nyissa meg a sor definíciót, hogy módosítsa.
 2.  A **Szerkesztés** menüben, kattintson a **Sorok Újraszámozása**.
 3.  A **Sorok Újraszámozása** párbeszédpanelben, határozzon meg új értékeket a kezdő sorkódnak és a sorkód növekedésnek. A numerikus sorkódokat visszaállíthatja egyenlően elosztott értékre. Azonban a jelentéstervező csak a számokkal (például 130 vagy 246) kezdődő sorkódokat számozza újra. A betűkkel kezdődő sorkódokat (például INCOME\_93 vagy TP0693) nem számozza újra. 
-> [!NOTE]
+
+> [!Note] 
 > Amikor sorkódokat számoz újra, a jelentéstervező automatikusan frissíti a **TOT** és a **CAL** hivatkozásokat. Például, ha egy **TOT** sor olyan sorozatra hivatkozik, amely a 100-as sorkóddal kezdődik, és az újraszámozás a 90-es sortól kezdődik, a kezdő **TOT** hivatkozás 100-ról 90-re változik.
 
 ## <a name="add-a-description"></a>Leírás hozzáadása
 A leírás cella biztosítja a pénzügyi adat leírását a jelentés olyan sorába, mint például „Bevétel” vagy „Nettó árbevétel.” A szöveg a **Leírás** cellában pontosan úgy jelenik meg, ahogyan a sordefinícióban megadta. 
-> [!NOTE]
+
+> [!Note] 
 > A leírás oszlop szélessége a jelentésben az oszlopdefinícióban van megadva. Ha a szöveg a **Leírás** oszlopban a sordefinícióban hosszú, ellenőrizze a **Leírás** oszlop szélességét. Amikor a **Sor Beszúrása Valahonnan** párbeszédpanelt használja, a **Leírás** oszlopban szereplő értékek szegmensértékek vagy dimenzióértékek a pénzügyi adatokból. Sorok beszúrásával leíró jellegű szöveget, például szakaszfejlécet vagy szakaszösszesítőt, illetve formázást, például összegsor előtti sort helyezhet el a jelentésben. Ha a jelentés tartalmazza egy jelentési fát, akkor beleveheti a kiegészítő szöveget is, ami a jelentési egységeknek van definiálva a jelentési fában. Korlátozhatja is a kiegészítő szöveget egy adott jelentési egységhez.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Adjon leírást egy sorhoz a jelentésben
@@ -91,7 +95,7 @@ A leírás cella biztosítja a pénzügyi adat leírását a jelentés olyan sor
 
 ## <a name="add-a-format-code"></a>Formátum kód hozzáadása
 A **Formátum Kód** cella előre megformázott lehetőségeket kínál az adott sor tartalmához. Ha a **Formátum Kód** cella üres, akkor az adott sor pénzügyi adatot leíró sorként van értelmezve. 
-> [!NOTE]
+> [!Note] 
 > Ha a jelentés olyan nem-összeg sorokat tartalmaz, amik kapcsolódnak rejtett összeg sorokhoz (például, mert az egyenlege nulla), használhatja a **Kapcsolódó Képletek/Sorok/Egységek** oszlopot, hogy megakadályozza a cím és a formátum sorok kinyomtatását.
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Formátum kód hozzáadása jelentés sorhoz
@@ -99,26 +103,27 @@ A **Formátum Kód** cella előre megformázott lehetőségeket kínál az adott
 1.  A Jelentés Tervező eszközben, kattintson a **Sor Definíciók**, majd válassza ki a sor definíciót, hogy módosítsa.
 2.  Kattintson duplán a **Formátum Kód** cellára.
 3.  Jelöljön ki egy formátumkódot a listában. Az következő táblázat leírja a formátumkódokat és a szerepüket.
-    | Formátumkód                   | Formátumkód magyarázata | Művelet|
-    |---|---|---|
-    | (Nincs)                        |                                    | Törli a **Formátum Kód** cellát.                                                                                                                                                                               |
-    | TOT                           | Összesen                              | Azonosítja a matematikai operátorokat használó sorokat a **Kapcsolódó Képletek/Sorok/Egységek** oszlopban. Az összegezők mindössze egyszerű műveleteket tartalmazhat, mint például **+** vagy **-**.                                                      |
-    | CAL                           | Számítás                        | Azonosítja a matematikai operátorokat használó sorokat a **Kapcsolódó Képletek/Sorok/Egységek** oszlopban. A számítások tartalmazhatnak összetett műveleteket, mint például **+**, **-**, **\***, **/** és **IF/THEN/ELSE** utasítások. |
-    | DES                           | Leírás                        | Egy fejléc sort, vagy egy üres sort azonosít a jelentésben.                                                                                                                                                        |
-    | LFT RGT CEN                   | Bal Jobb Közép                  | A sor leíró szöveget jelentéslapra helyezi, függetlenül a szöveg igazításától az oszlopdefinícióban.                                                                                               |
-    | CBR                           | Alapsor Módosítása                    | Azonosítja a sort, ami az alapsor lesz az oszlom számításokhoz.                                                                                                                                               |
-    | OSZLOP                        | Oszlop szünet                       | Új oszlopot kezd a jelentésben.                                                                                                                                                                             |
-    | OLDAL                          | Oldaltörés                         | Új oldalt kezd a jelentésben.                                                                                                                                                                               |
-    | ---                           | Egyszeres aláhúzás                   | Egyszeres aláhúzást tesz minden összeg oszlop alá a jelentésben.                                                                                                                                                     |
-    | ===                           | Kétszeres aláhúzás                   | Kétszeres aláhúzást tesz minden összeg oszlop alá a jelentésben.                                                                                                                                                     |
-    | LINE1                         | Vékony vonal                          | Egyetlen vékony vonalat rajzol keresztbe a lapra.                                                                                                                                                                      |
-    | LINE. sor                         | Vastag vonal                         | Egy vastag vonalat húz végig az oldalon.                                                                                                                                                                     |
-    | LINE3                         | Pontozott vonal                        | Egyetlen szaggatott vonalat rajzol keresztbe a lapra.                                                                                                                                                                    |
-    | LINE4                         | Vastag vonal és vékony vonal           | Dupla vonalat rajzol keresztbe a lapra. A felső vonal vastag, az alsó vonal pedig vékony.                                                                                                                       |
-    | LINE5                         | Vékony vonal és vastag vonal           | Dupla vonalat rajzol keresztbe a lapra. A felső vonal vékony, az alsó vonal pedig vastag.                                                                                                                       |
-    | BXB BXC                       | Keretezett sor                          | Keretet rajzol a **BXB**-al kezdődő sor és a **BXC**-al végződő sor köré.                                                                                                               |
-    | REM                           | Megjegyzés                             | Azokat a sorokat azonosítja, amelyek megjegyzéseket tartalmaznak, és amelyeket nem kell kinyomtatni a jelentés nyomtatásakor. Például a megjegyzéssor tartalmazhatja a formázási megoldások magyarázatát.                                                            |
-    | SORT ASORT SORTDESC ASORTDESC | Rendezés                               | Rendezi a kiadásokat vagy a bevételeket, rendezi az aktuális költségvetést vagy költségvetés eltérés jelentést a legnagyobb eltérés szerint, vagy betűrendbe rendezi a sorokat.                                                                   |
+
+| **Formátumkód**               | **Formátumkód magyarázata** | **Művelet**                                                                                                                                                                                                     |
+|-------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (Nincs)                        |                                       | Törli a **Formátum Kód** cellát.                                                                                                                                                                               |
+| TOT                           | Összesen                                 |  Azonosítja a matematikai operátorokat használó sorokat a **Kapcsolódó Képletek/Sorok/Egységek** oszlopban. Az összegezők mindössze egyszerű műveleteket tartalmazhat, mint például **+** vagy **-**.                                                     |
+| CAL                           | Számítás                           | Azonosítja a matematikai operátorokat használó sorokat a **Kapcsolódó Képletek/Sorok/Egységek** oszlopban. A számítások tartalmazhatnak összetett műveleteket, mint például **+**, **-**, **\***, **/** és **IF/THEN/ELSE** utasítások. |
+| DES                           | Leírás                           | Egy fejléc sort, vagy egy üres sort azonosít a jelentésben.                                                                                                                                                        |
+| LFT RGT CEN                   | Bal Jobb Közép                     |  A sor leíró szöveget jelentéslapra helyezi, függetlenül a szöveg igazításától az oszlopdefinícióban.                                                                                              |
+| CBR                           | Alapsor Módosítása                       | Azonosítja a sort, ami az alapsor lesz az oszlom számításokhoz.                                                                                                                                               |
+| OSZLOP                        | Oszlop szünet                          | Új oszlopot kezd a jelentésben.                                                                                                                                                                             |
+| OLDAL                          | Oldaltörés                            | Új oldalt kezd a jelentésben.                                                                                                                                                                               |
+| \---                          | Egyszeres aláhúzás                      | Egyszeres aláhúzást tesz minden összeg oszlop alá a jelentésben.                                                                                                                                                     |
+|  ===                          | Kétszeres aláhúzás                      | Kétszeres aláhúzást tesz minden összeg oszlop alá a jelentésben.                                                                                                                                                     |
+| LINE1                         | Vékony vonal                             | Egyetlen vékony vonalat rajzol keresztbe a lapra.                                                                                                                                                                      |
+| LINE. sor                         | Vastag vonal                            | Egy vastag vonalat húz végig az oldalon.                                                                                                                                                                     |
+| LINE3                         | Pontozott vonal                           | Egyetlen szaggatott vonalat rajzol keresztbe a lapra.                                                                                                                                                                    |
+| LINE4                         | Vastag vonal és vékony vonal              | Dupla vonalat rajzol keresztbe a lapra. A felső vonal vastag, az alsó vonal pedig vékony.                                                                                                                       |
+| LINE5                         | Vékony vonal és vastag vonal              | Dupla vonalat rajzol keresztbe a lapra. A felső vonal vékony, az alsó vonal pedig vastag.                                                                                                                       |
+| BXB BXC                       | Keretezett sor                             | Keretet rajzol a **BXB**-al kezdődő sor és a **BXC**-al végződő sor köré.                                                                                                               |
+| REM                           | Megjegyzés                                | Azokat a sorokat azonosítja, amelyek megjegyzéseket tartalmaznak, és amelyeket nem kell kinyomtatni a jelentés nyomtatásakor. Például a megjegyzéssor tartalmazhatja a formázási megoldások magyarázatát.                                                            |
+| SORT ASORT SORTDESC ASORTDESC | Rendezés                                  | Rendezi a kiadásokat vagy a bevételeket, rendezi az aktuális költségvetést vagy költségvetés eltérés jelentést a legnagyobb eltérés szerint, vagy betűrendbe rendezi a sorokat.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Kapcsolódó képletek/sorok/egységek megadása
 A **Kapcsolódó Képletek/Sorok/Egységek** cellának több célja van. Attól függően, hogy milyen típusú sor, a **Kapcsolódó Képletek/Sorok/Egységek** cella az alábbi műveletekre képes:
@@ -152,8 +157,8 @@ Sorösszegező képlet létrehozásakor kötelező sorkódokat használni az ös
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Formátumsor összekapcsolása összegsorhoz
 
 A sordefiníció **Formátum Kódja** oszlopában, a **DES**, **LFT**, **RGT**, **CEN**, **---** és **===** formátumkódok a nem-összegsorokat formázzák. Annak érdekében, hogy ez a formázás ne kerüljön nyomtatásra, ha a kapcsolódó összegsorok rejtettek (például, mert az összegsor null értékű, vagy nem aktív az időszakban), akkor kapcsolja össze a formátumsorokat a megfelelő összegsorokkal. Ez a funkció akkor hasznos, ha el akarja kerülni részösszegekre vonatkozó fejlécek és formátumok nyomtatását, mert az adott időszak nem tartalmaz nyomtatandó információt. 
-    > [!NOTE]
-    >  You can also prevent the detailed amount rows from being printed by clearing the option to display rows without amounts. This option is located on the **Settings** tab of the report definition. By default, transaction detail accounts that have a zero balance or no period activity are suppressed in reports. To show these transaction detail accounts, select the **Display rows without an amounts** check box on the **Settings** tab of the report definition.
+> [!Note] 
+> Megakadályozhatja a részletes összegsorok nyomtatását az összeg nélküli sorok megjelenítése opció törlésével. Ez a beállítás a jelentésdefiníció **Beállítások** lapján található. Azok a tranzakció részletező számlák, amelyek egyenlege nulla és az időszakban nem aktívak, alapértelmezés szerint rejtettek a jelentésekben. Ezeknek a tranzakció részletező számláknak a megjelenítéséhez válassza az **Összegek nélküli sorok megjelenítése** jelölőnégyzetet a jelentésdefiníció **Beállítások** lapján.
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Formátumsor összekapcsolása összegsorhoz
 
@@ -210,8 +215,8 @@ A rendezőkód rendezi a számlákat, vagy értékeket, rendezi az aktuális kö
 2.  Kattintson duplán a **Formátum Kód** cellára, majd válasszon ki egy rendezéskódot.
 3.  A **Kapcsolódó Képletek/Sorok/Egységek** cellában, adja meg a rendezendő tartománysort. Tartomány megadásához, adja meg az első sorkódot, kettőspont (:), majd adja meg az utolsó sorkódot. Például, írja be a **160:490** kódot, amivel meghatározza a tartományt a 160-ik sortól a 490-ik sorig.
 4.  Az **Oszlop Korlátozás** cellában, írja be a rendezéshez használni kívánt jelentésoszlop betűjét. 
-    > [!NOTE]
-    > Csak összegsorokat vegyen bele a rendezési számításba.
+> [!Note] 
+> Csak összegsorokat vegyen bele a rendezési számításba.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Példák növekvő és csökkenő oszlop értékekre
 
@@ -228,30 +233,11 @@ A következő példában, a jelentés D oszlopában lévő értékek növekvő s
 | 520      |                                                     | DES         |                             |                |                    |                              |
 | 550      | Növekvő Sorrendbe Rendezve az Idei Abszolút Eltérés Szerint | DES         |                             |                |                    |                              |
 | 580      |                                                     | ASORTDESC   | 610:940                     |                | G:                  |                              |
-| 610      | Értékesítés                                               |             |                             | C              |                    | 4100                         |
-| 640      | Értékesítési Visszáruk                                       |             |                             |                |                    | 4110                         |
+| 610      | Értékesítés                                               |             |                             | t              |                    | 4100                         |
+| 640      | Értékesítési visszáru                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Kamatbevétel                                     |             |                             | C              |                    | 7000                         |
+| 940      | Kamatbevétel                                     |             |                             | t              |                    | 7000                         |
 
-Íme egy példa a létrehozott jelentésre.
-
-|||||||||
-|---|---|---|---|---|---|---|
-|**Különbözet elemzés (Eltérés szerint rendezve)**|||||||
-
-|**Peking és Atlanta régiók**|||||||
-
-|**A 2013. július 31-én záruló, hét hónapos időszakra.**|||||||
-
-||**Július**|**Folyó évi**|||||
-
-||**Tényleges**|**Költségvetés**|**Eltérés**|**Tényleges**|**Költségvetés**|**Eltérés**|
-
-|**Növekvő Sorrendbe Rendezve Havi Eltérés Szerint**|||||||
-
-|ELÁBÉ|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
-
-|Fizetések és bérek|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |Értékesítések, Engedmények|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Értékesítési visszáru|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Bérlés Költség|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Iroda Költség|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Utazási Kiadás|7,656|7,641|(15)|51,062|51,469|407| |Értékesítések|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |**Növekvő Sorrendbe Rendezve az Idei Abszolút Eltérés Szerint**||||||| |Értékesítések|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |Utazás Költség|7,656|7,641|(15)|51,062|51,469|407| |Iroda Költség|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Értékesítési Visszáruk|10,917|7,246|(3,671)|62,809|48,803|(14,006)| |Bérlés Költség|12,052|9,019|(3,033)|80,444|60,748|(19,696)| |Értékesítések, Engedmények|36,383|24,152|(12,231)|241,562|162,670|(78,892)| |Bérek és Fizetések|97,624|65,573|(32,051)|653,884|441,664|(212,220)| |ELÁBÉ|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
 
 ## <a name="specify-a-format-override-cell"></a>Formátum Felülíró cella megadása
 A jelentés nyomtatáskor a **Formátum Felülírás** cella határozza meg a sor formátumát. Ez a formázás felülírja az oszlopdefinícióban meghatározott és a jelentésdefinícióban meghatározott formátumot. Alapértelmezés szerint, pénznem a formázás megadott definíciókban. Ha a jelentés egyik sora az eszközök számát listázza, mint például az épületek számát, és egy másik sor az eszközöket pénzben kifejezett értékét listázza, akkor felülírhatod a pénznem formázást és átállíthatod az épületek számának sorát numerikus formázásra. Ezt a tulajdonságot a **Formátum Felülbírálása** párbeszédpanelben adhatod meg. A rendelkezésre álló beállítások a kijelölt formátum kategóriától függnek. A **Minta** része a párbeszédpanelnek a példa formátumokat mutatja. A következő formátum típusok érhetők el:
@@ -276,8 +262,8 @@ A Pénznem formázás a pénzügyi összegekre vonatkozik és tartalmazza a pén
 -   **Negatív számok** – A negatív számok rendelkezhetnek mínusz előjellel (-), szerepelhetnek zárójelben, vagy jelölhetőek háromszöggel (∆).
 -   **Tizedes jegyek** – A tizedesjel után megjelenítendő számjegyek száma.
 -   **Nullérték felülíró szövege** – Az a szöveg, amelyet 0 (nulla) értékeknél szeretne megjeleníteni a jelentésben. Ez a szöveg jelenik meg utolsó sorként a **Minta** területen. 
-    > [!NOTE]
-    >  Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
+> [!Note] 
+> Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
 
 ### <a name="numeric-formatting"></a>Numerikus formázás
 
@@ -286,8 +272,8 @@ A numerikus formázás minden összegre vonatkozik, és nem tartalmazza a pénzn
 -   **Negatív számok** – A negatív számok rendelkezhetnek mínusz előjellel (-), szerepelhetnek zárójelben, vagy jelölhetőek háromszöggel (∆).
 -   **Tizedes jegyek** – A tizedesjel után megjelenítendő számjegyek száma.
 -   **Nullérték felülíró szövege** – Az a szöveg, amelyet 0 (nulla) értékeknél szeretne megjeleníteni a jelentésben. Ez a szöveg jelenik meg utolsó sorként a **Minta** területen. 
-    > [!NOTE]
-    >  Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
+> [!Note] 
+> Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
 
 ### <a name="percentage-formatting"></a>Százalék formázás
 
@@ -296,8 +282,8 @@ A százalékos formázás magában foglalja a százalékjelet (%). Az alábbi le
 -   **Negatív számok** – A negatív számok rendelkezhetnek mínusz előjellel (-), szerepelhetnek zárójelben, vagy jelölhetőek háromszöggel (∆).
 -   **Tizedes jegyek** – A tizedesjel után megjelenítendő számjegyek száma.
 -   **Nullérték felülíró szövege** – Az a szöveg, amelyet 0 (nulla) értékeknél szeretne megjeleníteni a jelentésben. Ez a szöveg jelenik meg utolsó sorként a **Minta** területen. 
-    > [!NOTE]
-    >  Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
+> [!Note] 
+> Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
 
 ### <a name="custom-formatting"></a>Egyéni formázás
 
@@ -305,8 +291,8 @@ Az egyéni formázási kategória segítségével egyéni formátum-felülírás
 
 -   **Típus** – Itt adható meg az egyéni formátum.
 -   **Nullérték felülíró szövege** – Az a szöveg, amelyet 0 (nulla) értékeknél szeretne megjeleníteni a jelentésben. Ez a szöveg jelenik meg utolsó sorként a **Minta** területen. 
-    > [!NOTE]
-    >  Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
+> [!Note] 
+> Ha a nullértékek vagy a tevékenység nélküli időszakok nyomtatása le van tiltva, akkor ez a szöveg nem jelenik meg.
 
 A típus adja meg a pozitív értéket, majd a negatív értéket. Általában olyan, hasonló formátumot ad meg, amely különbséget tesz a pozitív és a negatív értékek között. Például, ha szeretné megadni, hogy a pozitív és a negatív értékek egyaránt két tizedesjeggyel jelenjenek meg, de a negatívak legyenek zárójelben, akkor a következőt írja be: **0.00;(0.00)**. Az alábbi táblázat bemutatja azokat az egyéni formázásokat, amelyekkel irányíthatja az értékek formázásait. A példák mind az 1234,56 értéktől indulnak.
 
@@ -402,19 +388,19 @@ Alapértelmezés szerint a jelentéstervező nem nyomtat ki olyan sorokat, amely
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Helyettesítő karakterek és a tartományok használata a sordefinícióban
 Ha természetes szegmensértéket ír be a **Dimenziók** párbeszédpanelen, helyettesítő karaktereket (? vagy \*) is elhelyezhet a szegmens bármely részén. A Jelentéstervező a meghatározott karakterekre vonatkozóan minden értéket előhív, a helyettesítő karakterek figyelembevétele nélkül. Például, a sordefiníció csak természetes szegmensértékeket tartalmaz, és a természetes szegmensek négy karakteresek. **6???** megadásával egy sorban arra utasítja a jelentéstervezőt, hogy minden olyan számlát hívjon elő, amelynek természetes szegmensértéke 6-os számmal kezdődik. Ha a **6\*** kódot írja be, ugyanezeket a számlákat kapja meg, de ebben az esetben a rendszer minden hosszúságú értéket ki fog keresni, így a **60** és **600000** számút is. A jelentéstervező minden (?) helyettesítő karakter helyére a lehetséges értékek teljes tartományát behelyettesíti, ide értve a betűket és a különleges karaktereket is. Például ha a tartomány kezdete a **12?0**, a vége pedig **12?4**, akkor a **12?0** kód helyettesítő karaktere helyére behelyettesíti a karakterkészlet legalacsonyabb érétkét, a **12?4** kódban pedig a legmagasabb értéket. 
-> [!NOTE]
+> [!Note] 
 > A számlatartományok kezdő és záró értékeinél lehetőség szerint ne használjon helyettesítő karaktert. Ha a kezdő számlánál vagy a záró számlánál helyettesítő karaktert használ, előfordulhat, hogy nem a várt eredményt kapja.
 
 ### <a name="single-segment-or-single-dimension-ranges"></a>Egyetlen-szegmenses vagy egyetlen-dimenziós tartományok
 
 Megadhat egy tartományt a szegmens értékekhez vagy a dimenzió értékekhez. Egy értéktartomány meghatározásának az az előnye, hogy nem kell minden alkalommal frissítenie a sordefiníciót, valahányszor új szegmensértéket vagy dimenzióértéket adnak hozzá a pénzügyi adatokhoz. Például ha a tartomány értéke **+Számla=\[6100:6900\]** =, akkor a rendszer a 6100-tól 6900-ig tartó számlák értékeit tölti be a sorösszegbe. Ha egy tartomány tartalmaz egy helyettesítő karaktert (?), akkor a jelentéstervező nem értékeli ki a tartományt karakterenként. Ehelyett a tartomány alsó és felső végét állapítja meg, majd ezt a kettőt és a köztük levő összes értéket figyelembe veszi. 
-> [!NOTE]
+> [!Note] 
 > A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &, \*, \[, \], { vagy }. Latin és-szimbólumot (&) csak akkor vehet fel, ha automatikusan épít sordefiníciókat a **Sorok Beszúrása Dimenziókból** párbeszédpanel használatával.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Több-szegmenses vagy több-dimenziós tartományok
 
 Ha több dimenzióérték kombinálásával adja meg a tartományt, akkor a tartomány-összehasonlítást a rendszer pénzügyi dimenziónként / dimenziónként végzi el. A tartomány-összehasonlítás nem hajtható végre karakterenkénti módszerrel, sem részleges szegmens alapján. Például, a **+Számla=\[5000:6000\], Részleg=\[1000:2000\], Költséghely=\[00\]** tartomány csak azokat a számlákat tartalmazza, amelyek minden egyes szegmenssel megegyeznek. Ebben a példában, az első dimenziónak az 5000-től 6000-ig terjedő tartományba, a második dimenziónak az 1000 és a 2000 közötti tartományba kell esnie, az utolsó dimenziónak pedig 00-nak kell lennie. Ezért például a **+Számla=\[5100\], Részleg=\[1100\], Költséghely=\[01\]** kombináció nem fog bekerülni a jelentésbe, mivel az utolsó szegmens a megadott tartományon kívül esik. Ha egy szegmensérték szóközt is tartalmaz, ezt a karaktert tegye szögletes zárójelbe (\[ \]). A következő értékek érvényesek egy négy karakterből álló szegmensnek: **\[ 234\], \[123 \], \[1 34\]**. A dimenzióértékeket is szögletes zárójelben (\[ \]) kell megadni, a jelentéstervező pedig automatikusan hozzáadja ezeket a zárójeleket. Ha több szegmenst vagy több dimenziót magába foglaló tartomány helyettesítő karaktereket (? vagy \*) is tartalmaz, akkor a rendszer meghatározza a teljes többszegmenses vagy többdimenziós tartomány alsó és felső értékét, majd hozzáveszi az ezek között található összes értéket. Nagyméretű tartomány esetén ( amilyen például az összes számla 40000-től 99999-ig) lehetőleg minden esetben érvényes kezdő és záró számlát adjon meg. 
-> [!NOTE]
+> [!Note] 
 > A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &, \*, \[, \], { vagy }. Latin és-szimbólumot (&) csak akkor vehet fel, ha automatikusan épít sordefiníciókat a **Sorok Beszúrása Dimenziókból** párbeszédpanel használatával.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Hozzáadás vagy kivonás sordefinícióban más számlákhoz
@@ -436,7 +422,7 @@ Ha szeretné hozzáadni vagy kivonni egy számla pénzösszegét egy másikhoz, 
 | Helyettesítő karaktereket is tartalmazó szegmensértékek tartományának kivonása.                    | -Számla=\[120?:130?\]                                                                                       |
 
 Annak ellenére, hogy közvetlenül módosíthatja a számlákat, használhatja a **Dimenziók** párbeszédpanelt, hogy a helyes formátumot alkalmazza a pénzügyi adat hivatkozásokra. Bármely értékek tartalmazhatnak helyettesítő karaktereket (? vagy \*). Azonban a jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &, \*, \[, \], { vagy }. 
-> [!NOTE]
+> [!Note] 
 > Értékek kivonásához zárójelek közé kell tennie az értékeket. Ha például a **450?-(4509)** képletet adja meg, az a következőképpen jelenik meg: **+Számla=\[4509\]-Számla=\[450?\]**, ezzel pedig arra utasítja a jelentéstervezőt, hogy vonja ki a 4509 számlaszegmens összegét bármely azon számlaszegmens összegéből, amelynek száma 450-nel kezdődik.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Számlák hozzáadása vagy kivonása más számlákból
@@ -451,7 +437,7 @@ Annak ellenére, hogy közvetlenül módosíthatja a számlákat, használhatja 
 
 4.  További műveleti jelek hozzáadásához ismételje meg a 2–3. lépéseket.
 
-> [!NOTE]
+> [!Note] 
 > A műveleti jel a sorban szereplő összes dimenzióra vonatkozik.
 
 ## <a name="description-of-the-dimensions-dialog-box"></a>A Dimenziók párbeszédablak leírása
@@ -485,8 +471,8 @@ A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimen
 3.  A **Dimenziókészlet-értékek kezelése** párbeszédpanelen, a **Dimenzió** mezőben válassza ki a dimenziótípust.
 4.  A listában válassza ki a frissíteni kívánt dimenzióérték-készletet, majd kattintson a **Módosítás** gombra.
 5.  A **Módosítás** párbeszédpanelben, módosítsa a készletben szerepeltetendő képlet értékét. 
-    > [!NOTE]
-    >  Ha új számlákat vagy dimenziókat ad hozzá, akkor ügyeljen, hogy módosítsa a már meglévő dimenzióérték-készleteket, hogy azok a módosításokat is magukba foglalják.
+> [!Note] 
+> Ha új számlákat vagy dimenziókat ad hozzá, akkor ügyeljen, hogy módosítsa a már meglévő dimenzióérték-készleteket, hogy azok a módosításokat is magukba foglalják.
 6.  Kattintson duplán a cellára, majd válassza ki a megfelelő műveleti jelet, a **Kezdő érték** és a **Záró érték** számlát.
 7.  Kattintson az **OK** gombra, ezzel bezárja a **Módosítás** párbeszédablakot, és menti a változtatásokat.
 
