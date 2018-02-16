@@ -6,19 +6,22 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: bb4d8fae432eca7fe9163dcb0763fff5c8d465f0
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 2fa843aee8927a1cb4f642c31d6f5683098d3c74
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -49,9 +52,9 @@ Az üzlet szintjén egy beállítás érhető el annak a meghatározásához, ho
 
 Alapértelmezés szerint az üzlethez társított rendeléssorok jelölése **Elfogadva**. Ez azt jelenti, hogy azt feltételezzük, hogy a kijelölt üzletből lesznek teljesítve, és a további hozzárendelés nem szükséges. Bizonyos esetekben a kiskereskedők manuálisan szeretnék elfogadni a rendeléseket, mielőtt teljesíthetővé válnának. Ha például egy üzlet hiányos személyzettel rendelkezik és nem tudja teljesíteni a rendeléseket, az üzletvezető csak annyi rendelést fogad el feldolgozására, amennyit egy adott napon megfelelően feldolgozhatónak tart. Amíg el nem fogadják a rendelést, a háttériroda módosítással hozzárendelheti egy másik üzlethez. Ezzel a módszerrel a rendeléselfogadás azt is lehetővé teszi, hogy jelezze, hogy egy rendelést elfogadott egy üzlet, teljesítve lesz. 
 
-Üzletben való átvétel rendelési sorai mindig **Függő** megjelölésűek, és nem kell elfogadni őket.
+Üzletben való átvétel rendelési sorai **Függő** megjelölésűek, és nem kell elfogadni őket.
 
-A manuális elfogadás vagy a rendeléssorok bekapcsolásához navigáljon a **Kiskereskedelem** > **Csatornák** > **Kiskereskedelmi áruházak** > **Minden kiskereskedelmi üzlet**. Válassza ki az üzletet, és kattintson az áruház-azonosítóra az áruház részletes adatainak megtekintéséhez. Kattintson a **Szerkesztés** lehetőségre. Az **Általános** gyorslapon keresse meg a **Rendelésteljesítés** alfejlécet, és módosítása a **Manuális elfogadás** beállítását **Nem** értékről **Igen** értékre. 
+A rendeléssorok manuális elfogadásának bekapcsolásához navigáljon a **Kiskereskedelem** > **Csatornák** > **Kiskereskedelmi áruházak** > **Minden kiskereskedelmi üzlet** elemre. Válassza ki az üzletet, és kattintson az áruház-azonosítóra az áruház részletes adatainak megtekintéséhez. Kattintson a **Szerkesztés** lehetőségre. Az **Általános** gyorslapon keresse meg a **Rendelésteljesítés** alfejlécet, és módosítása a **Manuális elfogadás** beállítását **Nem** értékről **Igen** értékre. 
 
 ### <a name="enable-reject-order-line-capability"></a>Rendeléssor elutasítása funkció engedélyezése
 
@@ -114,7 +117,7 @@ Alapértelmezés szerint a rendelések állapota **Elfogadott** lesz. A rendelé
 
 **Csomag** – A csomag beállítás két műveletet támogat: a **Szállítólevél nyomtatása** szállítólevelet nyomtat ki a kiválasztott sorokhoz, a **Megjelölés csomagoltként** pedig megjelöli a sorokat csomagoltként, és a sorokat kiszállítottként jelöli meg a háttérirodában. Csak az ugyanazon rendeléshez tartozó és ugyanolyan szállítási módú sorokat lehet egyszerre csomagolni. A szállítólevél-formátumok a nyugtaformátumok részeként vannak szabályozva. A nyugtaprofilok beállítási módjával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-**Szállítás** – A szállítási művelet megjelöli a kijelölt sorokat **Szállítva** állapottal a háttérirodában. Miután a sort teljes egészében kiszállították, többé már nem jelenik meg az üzlet teljesítési nézetében.
+**Szállítás** – A szállítási művelet megjelöli a kijelölt sorokat **Szállítva** állapottal a háttérirodában. Miután a sort teljes egészében kiszállították, többé már nem jelenik meg a megrendelés teljesítési nézetében.
 
 **Átvétel** – Az átvételi művelet hozzáadja a sorokat a tranzakciónézethez átvételre. Ha vannak olyan egyéb sorok a rendelésen, amelyeket jelenleg nem vesznek át, ezek nulla mennyiséggel adódnak hozzá a tranzakciónézethez. Miután a sort teljes egészében átvették, többé már nem jelenik meg a rendelésteljesítési nézetében. 
 

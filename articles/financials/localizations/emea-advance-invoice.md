@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,10 +18,10 @@ ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2ec0af71e199075c885fa2f46de6c68397392704
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 3c284b8c67121b39837bef827dea6f24da2a0f4b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
@@ -44,7 +45,7 @@ Az előlegszámlák funkció a következő műveletek végrehajtását teszi leh
 Az előlegeket is átvevő lengyel vállalatoknak az előlegről is ki kell állítaniuk számlát a vevőnek. Ezt az előlegszámlát a főkönyvben kell feladni, és az áfaadózási célok kötelező dokumentuma. Az előlegszámlán kiszámított adót jelenteni kell az adóhatóságnak. Az áruk végleges eladása után az előlegszámlát meg kell adni az értékesítési számlán. Az értékesítés teljes összegének tartalmaznia kell az előlegeket. Az értékesítési számla feladásakor a program sztornírozza a kiegyenlített előlegszámlákat. Az eredeti előlegszámla kiegyenlítése egy előlegszámla sztornírozásával történik.
 
 ## <a name="set-up-accounts-receivable-for-advance-invoices"></a>A Kinnlevőségek előlegszámlákhoz történő beállítása
-A **Kinnlevőségek paraméterei** lap **Frissítés** lapján adja meg a következő paramétereket.
+A **Kinnlevőségek paraméterei** oldal **Frissítések** lapján adja meg a következő paramétereket.
 
 |Gyorslap|Paraméter|Leírás|
 |------|----------|------------|

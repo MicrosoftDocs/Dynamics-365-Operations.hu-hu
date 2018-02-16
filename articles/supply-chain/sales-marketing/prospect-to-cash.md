@@ -3,12 +3,12 @@ title: "A potenciális ügyfelek készpénzre váltása"
 description: "Ez a témakör áttekintést nyújt A potenciális ügyfelek készpénzre váltása megoldásról a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition és a Microsoft Dynamics 365 for Sales szolgáltatásokban."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -17,13 +17,13 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: f169b0ee20a7ca0c8d05c8bdcf2c04d411722f01
-ms.openlocfilehash: ff166f89d13acbc3aefcbdb39f485881c81cb42c
+ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
+ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,17 +31,21 @@ ms.lasthandoff: 12/21/2017
 
 [!include[banner](../includes/banner.md)]
 
-A potenciális ügyfelek készpénzre váltása megoldás közvetlen szinkronizálást biztosít a Dynamics 365 for Finance and Operations, Enterprise Edition és a Dynamics 365 for Sales között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Finance and Operations és a Sales között. Miközben az adatok áramlanak a Finance and Operations és a Sales között, Ön értékesítési és marketingtevékenységeket végezhet a Sales programban, illetve kezelheti a megrendelések teljesítését a Finance and Operations készletkezelésének használatával.
+A potenciális ügyfelek készpénzre váltása megoldás közvetlen szinkronizálást biztosít a Dynamics 365 for Finance and Operations, Enterprise Edition és a Dynamics 365 for Sales között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Finance and Operations és a Sales között. Miközben az adatok áramlanak a Finance and Operations és a Sales között, Ön értékesítési és marketingtevékenységeket végezhet a Sales programban, illetve kezelheti a megrendelések teljesítését a Finance and Operations készletkezelésének használatával. 
+
+A potenciális ügyfelek készpénzre váltásának integrációjával kapcsolatos további tájékoztatáshoz nézze meg a rövid YouTube-videót:
+
+> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
 
 A jelenlegi verzióban A potenciális ügyfelek készpénzre váltása megoldás a következő típusú közvetlen szinkronizálást biztosítja:
 
 - [Sales-fiókok fenntartása és azok szinkronizálása közvetlenül a Sales-től a Finance and Operations szolgáltatással](accounts-template-mapping-direct.md)
 - [Termékek karbantartása a Finance and Operations szolgáltatásban, majd szinkronizálásuk közvetlenül a Sales szolgáltatásba](products-template-mapping-direct.md)
 - [Névjegyek karbantartása a Sales szolgáltatásban, majd szinkronizálásuk névjegyekként vagy ügyfelekként közvetlenül a Finance and Operations szolgáltatásba](contacts-template-mapping-direct.md)
-- [Értékesítési ajánlat közvetlen szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](sales-quotation-template-mapping-sales-fin.md)
+- [Értékesítési ajánlatok közvetlen szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba (sablon kiadása függőben)](sales-quotation-template-mapping-sales-fin.md)
 - [Értékesítési rendelések közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](sales-order-template-mapping-direct.md)
-- [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között](sales-order-template-mapping-direct-two-ways.md)
-- [Értékesítési számla szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
+- [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között (sablon kiadása függőben)](sales-order-template-mapping-direct-two-ways.md)
+- [Értékesítési számla közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
 
 A korábbi verziókban A potenciális ügyfelek készpénzre váltása megoldás a következő típusú nem közvetlen szinkronizálásokat biztosította:
 
@@ -50,15 +54,19 @@ A korábbi verziókban A potenciális ügyfelek készpénzre váltása megoldás
 - [Termékek karbantartása a Finance and Operations szolgáltatásban, majd szinkronizálásuk a Sales szolgáltatásba](products-template-mapping.md)
 - [Értékesítési ajánlatok létrehozása a Sales szolgáltatásban, majd szinkronizálásuk a Finance and Operations szolgáltatásba](sales-quotation-template-mapping.md)
 - [Értékesítési rendelések létrehozása a Finance and Operations szolgáltatásban, majd szinkronizálásuk a Sales szolgáltatásba](sales-order-template-mapping.md)
-- [Értékesítési számlák létrehozása a Finance and Operationsben és azok szinkronizálása a Sales szolgáltatással](sales-invoice-template-mapping.md)
+- [Értékesítési számlák létrehozása a Finance and Operations szolgáltatásban, majd szinkronizálásuk a Sales szolgáltatásba](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Rendszerigény a Finance and Operations rendszerhez
 
-A Potenciális ügyfelek készpénzre váltása megoldás használatához telepítenie kell a következő összetevőket:
+A potenciális ügyfelek készpénzre váltásának integrációja a következő verziókban támogatott:
+
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017. december)
+
+- Dynamics 365 for Finance and Operations, Enterprise Edition (2017. december - Alkalmazás buildszáma 7.3.11971.56116, 12-es platformfrissítéssel (7.0.4709.41129)
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) 8-as platformfrissítéssel (alkalmazás buildszáma 7.2.11792.56024, platform buildszáma 7.0.4565.16212)
+- Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) - 8-as platformfrissítéssel (alkalmazás buildszáma 7.2.11792.56024, platform buildszáma 7.0.4565.16212).
 - A következők gyorsjavítások szükségesek:
 
     - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Ez a gyorsjavítás lehetővé teszi az értékesítési rendelés szinkronizálását az adatintegrációs szolgáltatással a Sales rendszerből a Finance and Operations alkalmazásba. Ezenkívül számos más fejlesztést is biztosít.
@@ -68,7 +76,7 @@ A Potenciális ügyfelek készpénzre váltása megoldás használatához telep�
     > [!NOTE]
     > Csak a KB4045570-et kell telepíteni, mivel a telepítés tartalmazza a többi gyorsjavítás változásait. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations 1611-es verzió (2016. november) 
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations 1611-es verzió (2016. november)
 
 - Dynamics 365 for Finance and Operations, 1611-es verzió (2016. november) 8-as vagy újabb platformfrissítéssel
 
@@ -106,4 +114,6 @@ A Potenciális ügyfelek készpénzre váltása megoldás használatához telep�
     2. Válassza a **Speciális megjelenítése** lehetőséget.
     3. A gyors telepítéshez válasszon régiót. Ha a **Nem tudom** lehetőséget választja, a rendszer az összes régiót végigkeresi, és a telepítés hosszabb ideig tart.
     4. Adja meg egy olyan adminisztrátori felhasználó felhasználónevét és jelszavát, aki telepítési felhasználói jogosultságokkal rendelkezik.
+
+
 

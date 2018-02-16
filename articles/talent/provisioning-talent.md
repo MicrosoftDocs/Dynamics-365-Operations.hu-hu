@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6ffb97b53f522cfe8ccd8e89df854cbc557e4f1f
-ms.openlocfilehash: fadc373b2c1c06987f22d4d9c20a9ab07b0c85d5
+ms.sourcegitcommit: a53c1997f74ebe572b17cc3090d2e236b6fe78f6
+ms.openlocfilehash: 8a84cfe9b73f0c72f3cb0c3843749754c6b3d538
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>A Microsoft Dynamics 365 for Talent létesítése
@@ -60,6 +60,9 @@ LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
 > Ha még nem írta alá a végső követelményeket, a Talent tesztpéldányát telepítheti a projektben. Ezután ezt a példányt használhatja a megoldás tesztelésére mindaddig, amíg alá nem ír. Ha az új környezet teszteléshez használja, ismételje meg ezt az eljárást, hogy létrehozzon egy éles környezetet.
 
 ## <a name="create-a-new-powerapps-environment-if-required"></a>Új PowerApps-környezet létrehozása (ha szükséges)
+
+A Talent a PowerApps-környezetekkel való integrációjának célja az, hogy lehetővé tegye az adatok integrálását és a bővítmények áramlását a Talent-adatokat kiegészítő PowerApps-eszközök segítségével. Emiatt fontos, hogy megértsük a PowerApps-környezetek célját, amikor kiválasztjuk a Talent programhoz használni kívánt környezetet. További információ a PowerApps-környezetekről, beleértve a környezeti hatásköröket, a környezethez való hozzáférést, valamint a környezet létrehozását és kiválasztását: [PowerApps-környezetek bejelentése](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/).  Míg minden bérlő automatikusan telepítésre kerül egy alapértelmezett PowerApps-környezetben, előfordulhat, hogy ez nem a legjobb környezet az Ön Talent-telepítése számára. E lépés során adatintegrációs és tesztelési stratégiákat kell figyelembe venni, ezért javasoljuk, hogy fontolja meg a telepítés különböző szempontjait, mivel később nem könnyű megváltoztatni őket.
+
 1. Válassza a **Környezetek kezelése** lehetőséget az LCS-ben. Átkerül a [PowerApps Admin Center](https://preview.admin.powerapps.com/environments) oldalra, ahol megtekintheti a meglévő környezeteket és új környezeteket hozhat létre.
 2. Válassza az (**+**) **Új környezet** gombot.
 3. Adjon egy egyedi nevet a környezet számára, és válassza ki a telepítés helyét.
@@ -74,9 +77,20 @@ LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
     > [!IMPORTANT]
     > Ha korábban létrehozott egy CDS-adatbázist, és bevitte a vállalata éles adatait, vegye figyelembe, hogy ezek a lépések **Minden** adatot eltávolítanak a kijelölt adatbázisból, akár a vállalata éles adatait is.
 
-    1. Jelentkezzen be a [PowerApps](https://preview.web.powerapps.com/home) rendszerbe, és keresse meg a 2. lépésben létrehozott környezetet.
-    2. Válassza az **Entitások** elemet. A lap jobb oldalán válassza a három pont (**…**) gombot, majd az **Összes adat törlése** lehetőséget.
-    3. Válassza az **Adatok törlése** lehetőséget annak megerősítésére, hogy el kívánja távolítani az adatokat. Ez a művelet eltávolítja a CDS-ben alapértelmezés szerint szereplő összes bemutatóadatot. Emellett eltávolítja a kiválasztott adatbázisba bevitt egyéb adatokat is.
-
+    1. Jelentkezzen be a [PowerApps](https://preview.web.powerapps.com/home) alkalmazásba, és a lap jobb oldalán a legördülő listából válassza ki a 2. lépésben a létrehozott környezetet.
+    2. Bontsa ki a **Common Data Service** elemet a bal oldali ablaktáblában, és válassza az **Entitások** elemet.
+    3. A lap jobb oldalán válassza a három pont (**…**) gombot, majd az **Összes adat törlése** lehetőséget.
+    4. Válassza az **Adatok törlése** lehetőséget annak megerősítésére, hogy el kívánja távolítani az adatokat. Ez a művelet eltávolítja a CDS-ben alapértelmezés szerint szereplő összes bemutatóadatot. Emellett eltávolítja a kiválasztott adatbázisba bevitt egyéb adatokat is.
+    
 Mostantól használhatja az új környezetet.
+
+## <a name="granting-access-to-the-environment"></a>Hozzáférést biztosítása a környezethez
+A környezetet létrehozó globális rendszergazda alapértelmezés szerint hozzáféréssel rendelkezik, de a további alkalmazásfelhasználók számára kifejezett módon kell hozzáférést biztosítani. Ezt [felhasználók hozzáadása](../dev-itpro/sysadmin/tasks/create-new-users.md) és [számukra a megfelelő szerepkörök hozzárendelése](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) révén lehet elérni az Alapvető HR környezetben. Ezenkívül hozzá kell adni ezeket a felhasználókat a PowerApps-környezethez, hogy hozzáférhessenek az Attract és az Onboard alkalmazásokhoz.  [A PowerApps adminisztrációs központjának bemutatása](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) című blogbejegyzés segíthet az alábbi lépések végrehajtásában:
+
+> 1.    A Talent környezetet telepítő globális rendszergazda lépjen a [PowerApps adminisztrációs központjába](https://preview.admin.powerapps.com/environments).   
+> 2.    Válassza ki az érintett környezet(ek)et.
+> 3.    A Biztonság lapon adja hozzá a szükséges felhasználókat a „Környezetkészítő” szerepkörhöz.
+
+Ne feledje, hogy a felhasználók a PowerApps környezethez történő hozzáadásának ezen utolsó lépése ideiglenes. Később hozzáadunk majd egy olyan funkciót, amely automatikusan engedélyezi ezt, amikor a felhasználó hozzáadásra kerül az Alapvető HR-en belül.
+
 

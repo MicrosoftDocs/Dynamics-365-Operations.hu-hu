@@ -1,6 +1,6 @@
 ---
-title: "Osztott időszakok időszaki naplókban"
-description: "Az időszaki naplókat olykor ismétlődő naplónak is nevezik, mivel az összeg, a szöveg és más adatok a napló feladásakor minden alkalommal megismétlődnek. Napló létrehozásakor adja meg az ismétlődéshez tartozó időszakot (pl. nap vagy hónap). Azoknak az időszakoknak a számát is adja meg, amelyek szerint a napló fel lesz adva."
+title: "Osztott időszakok az időszaki naplókban"
+description: "Ez a témakör ismerteti az időszaki naplókban vagy ismétlődő naplókban használt időszakok felosztása funkciót a Csehországban, Észtországban, Magyarországon, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek számára."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +18,14 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 73ccfc906e8d7a91e7bae5ae21d9ddad9d58f109
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 4fda7ad6405b00597eca354d5822f388e1ef164e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
-# <a name="split-periods-in-periodic-journals"></a>Osztott időszakok időszaki naplókban
+# <a name="split-periods-in-periodic-journals"></a>Osztott időszakok az időszaki naplókban
 
 [!include[banner](../includes/banner.md)]
 

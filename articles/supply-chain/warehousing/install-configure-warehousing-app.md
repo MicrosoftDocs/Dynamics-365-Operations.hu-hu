@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4b3d068ddbf6f0b28c97618f5fa10fa486f3af51
+ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
+ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/15/2018
 
 ---
 
@@ -31,6 +31,9 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+
+> [!NOTE]
+> Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktárkészlet-nyilvántartását. Ha azt szeretné megtudni, hogyan kell konfigurálni az on-premises telepítések raktárkészlet-nyilvántartását, lásd: [Helyszíni telepítések raktárkezelése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
 
 Ez a témakör ismerteti, hogyan telepítse és konfigurálja a Microsoft Dynamics 365 for Finance and Operations - Warehousing alkalmazást.
 
@@ -43,32 +46,29 @@ Az alkalmazás Android és Windows operációs rendszereken érhető el. Az alka
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (összes verzió)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations 1611-es verzió <br>– vagy – <br>Microsoft Dynamics AX 7.0/7.0.1 verziója és a Microsoft Dynamics AX platform 2. frissítése a KB 3210014 gyorsjavítással |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, 1611-es verzió <br>– vagy – <br>Microsoft Dynamics AX 7.0/7.0.1 verziója és a Microsoft Dynamics AX platform 2. frissítése a KB 3210014 gyorsjavítással |
 
 ## <a name="get-the-app"></a>Az alkalmazás beszerzése
--   Windows (UWP): [Finance and Operations - Warehousing a Windows Áruházban](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android:
+-   Windows (UWP)
+     - [Finance and Operations - Warehousing a Windows Áruházban](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android
     - [Finance and Operations - Warehousing a Google Play Áruházban](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Finance and Operations - Warehousing a Zebra AppGalleryben](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## <a name="create-a-web-service-application-in-active-directory"></a>Webszolgáltatási alkalmazás létrehozása az Active Directoryban
+## <a name="create-a-web-service-application-in-azure-active-directory"></a>Webszolgáltatási alkalmazás létrehozása az Azure Active Directoryban
 Ahhoz, hogy az alkalmazás együttműködhessen a kívánt Finance and Operations kiszolgálóval, regisztrálnia kell egy webszolgáltatási alkalmazást az Azure Active Directoryban a Finance and Operations bérlő számára. Biztonsági okokból az összes használt eszköz számára ajánlott létrehozni egy-egy webszolgáltatási alkalmazást. Webszolgáltatási alkalmazás létrehozásának lépései az Azure Active Directoryban (Azure AD):
 
-1.  Egy  webböngészőben lépjen a <https://manage.windowsazure.com> oldalra.
+1.  Egy webböngészőben lépjen a <https://portal.azure.com> oldalra.
 2.  Adja meg a felhasználó nevét és jelszavát, aki hozzáfér az Azure-előfizetéshez.
-3.  Az Azure-portálon a bal oldali navigációs ablaktáblán kattintson az **Active Directory** elemre.[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-example](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
-4.  A rácsban válassza a Finance and Operations által használt Active Directory-példányt.
-5.  Kattintson a felső eszköztáron az **Alkalmazások** elemre. [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
-6.  Az alsó panelen kattintson a **Hozzáadás** elemre. Az **Alkalmazás hozzáadása** varázsló elindul.
-7.  Adjon meg egy nevet az alkalmazásnak, és válassza ki a **Webes alkalmazás és/vagy web API** lehetőséget. [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  Adja meg a bejelentkezési URL-címet, amely a webes alkalmazás URL-címe. Az URL-cím megegyezik a telepítés URL-címével, de a végéhez hozzá van adva az oauth. Adja meg az alkalmazásazonosító URI-t: ez az érték kötelező, de nem szükséges a hitelesítéshez. Győződjön meg arról, hogy ez az alkalmazásazonosító URI ál-URI, például https://contosooperations/wmapp, mivel a telepítés URL-címének használata bejelentkezési problémákat okozhat más AAD-alkalmazásokban, például az Excel-bővítményben. [![WH-04-AD-add-properties3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
-9.  Lépjen a **Konfigurálás** lapra. [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. Görgessen lefelé, amíg meg nem jelenik az **Engedélyek más alkalmazások számára** szakasz. Kattintson az **Alkalmazás hozzáadása** lehetőségre. [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
-11. Válassza ki a **Microsoft Dynamics ERP** elemet a listában. Kattintson a lap jobb felső sarkában látható **Teljesség ellenőrzése** gombra. [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. Az **Engedélyek delegálása** listában jelölje be az összes jelölőnégyzetet. Kattintson a **Mentés** gombra. [![wh-08-ad-delegate-permissions](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
-13. Jegyezze fel a következő információkat:
-    -   **Ügyfél-azonosító** - a lapon legörgetve megjelenik az **Ügyfél-azonosító**.
-    -   **Kulcs** - a **Kulcsok** szakaszban hozzon létre egy kulcsot az időtartam megadásával, majd másolja le a kulcsot. A kulcs neve a továbbiakban: **Titkos ügyfélkód**.
+3.  Az Azure-portálon a bal oldali navigációs ablaktáblán kattintson az **Azure Active Directory** elemre.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+4.  Győződjön meg róla, hogy az Active Directory-példány az, amelyet a Finance and Operations használ.
+5.  A listában kattintson az **Alkalmazásregisztrációk** elemre. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+6.  Kattintson a felső panelen az **Új alkalmazás regisztrálása** elemre. Az **Alkalmazás hozzáadása** varázsló elindul.
+7.  Adjon meg egy nevet az alkalmazásnak, és válassza ki a **Webes alkalmazás / web API** lehetőséget. Adja meg a bejelentkezési URL-címet, amely a webes alkalmazás URL-címe. Az URL-cím megegyezik a telepítés URL-címével, de a végéhez hozzá van adva az oauth. Kattintson az **Új** > lehetőségre. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+8.  Válassza ki az új alkalmazást a listából. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  Ne felejtse el a **alkalmazásazonosítót**, később szükség lesz rá. Az **Alkalmazásazonosítóra** később **Ügyfél-azonosító** néven utalunk.
+10. Kattintson a **Kulcsok** elemre a **Beállítások panelen**. Hozzon létre egy kulcsot egy kulcsleírás és egy időtartam beírásával a **Jelszavak** részben. 
+11. Kattintson a **Mentés** elemre, és másolja le a kulcsot. A kulcs neve a továbbiakban: **Titkos ügyfélkód**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Felhasználói fiók létrehozása és konfigurálása a Finance and Operationsben
 Annak érdekében, hogy a Finance and Operations képes legyen az Azure AD alkalmazás használatára, kövesse az alábbi konfigurációs lépéseket:
@@ -90,8 +90,8 @@ Konfigurálnia kell az alkalmazást az eszközön, hogy csatlakozni tudjon a Fin
 1.  Az alkalmazásban lépjen a **Kapcsolat beállításai** elemre.
 2.  Törölje a **Bemutató mód** mezőt. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Adja meg a következő adatokat: 
-    + **Azure Active Directory ügyfél-azonosító** - Az ügyfél-azonosító beszerzése a 13. „Webszolgáltatási alkalmazás létrehozása az Active Directoryban" című lépésben történik. 
-    + **Azure Active Directory titkos ügyfélkód** - A titkos ügyfélkód beszerzése a 13. „Webszolgáltatási alkalmazás létrehozása az Active Directoryban" című lépésben történik. 
+    + **Azure Active Directory ügyfél-azonosító** - Az ügyfél-azonosító beszerzése a 9. „Webszolgáltatási alkalmazás létrehozása az Active Directoryban" című lépésben történik. 
+    + **Azure Active Directory titkos ügyfélkód** - A titkos ügyfélkód beszerzése a 11. „Webszolgáltatási alkalmazás létrehozása az Active Directoryban" című lépésben történik. 
     + **Azure Active Directory-erőforrás** - Az Azure Active Directory-erőforrás a Finance and Operations gyökér-URL-jét jeleníti meg. **Megjegyzés:**: ne zárja perjellel (/) ezt a mezőt. 
     + **Azure Active Directory-bérlő** - a Finance and Operations kiszolgálón használt Azure AD Directory-bérlő https://login.windows.net/az-Ön-AD-bérlői-azonosítója. Például: https://login.windows.net/contosooperations.onmicrosoft.com.
     <br>**Megjegyzés:**: ne zárja perjellel (/) ezt a mezőt. 
@@ -102,15 +102,11 @@ Konfigurálnia kell az alkalmazást az eszközön, hogy csatlakozni tudjon a Fin
 Abban az esetben, ha egy eszköz elveszett vagy a biztonsága sérült, el kell távolítania az eszköz a Finance and Operationshöz való hozzáférését. Az alábbi lépések leírják a hozzáférés-eltávolítás javasolt eljárását.
 
 1.  A Finance and Operationsben lépjen a **Rendszerfelügyelet** &gt; **Beállítás** &gt; **Azure Active Directory alkalmazások** elemre.
-2.  Törölje a sort, amely megfelel az eszköznek, amelynek a hozzáférését el szeretné távolítani. Írja le az eltávolított eszköz által használt **Ügyfél-azonosítót**.
-3.  Jelentkezzen be az Azure klasszikus portálon, a <https://manage.windowsazure.com> címen.
-4.  Kattintson az **Active Directory** ikonra a bal oldali menüben, majd kattintson a kívánt könyvtárra.
-5.  Kattintson a felső menü **Alkalmazások** elemére, majd kattintson a konfigurálni kívánt alkalmazásra. Megjelenik a **Kalauz** oldal az egyszeri bejelentkezési és egyéb konfigurációs adatokkal.
-6.  Kattintson a **Konfigurálás** lapra, görgessen le, és győződjön meg róla, hogy az alkalmazás **Ügyfél-azonosítója** megegyezik a jelen szakasz 2. lépésében látottal.
-7.  Kattintson az eszköztár **Törlés** gombjára.
+2.  Törölje a sort, amely megfelel az eszköznek, amelynek a hozzáférését el szeretné távolítani. Ne felejtse el az eltávolított eszközhöz használt **ügyfél-azonosítót**, mert később szüksége lesz rá.
+3.  Jelentkezzen be az Azure portálon az <https://portal.azure.com> címen.
+4.  Kattintson az **Active Directory** ikonra a bal oldali menüben, és ellenőrizze, hogy a megfelelő könyvtárban van-e.
+5.  A listában kattintson az **Alkalmazásregisztrációk** elemre, majd kattintson a konfigurálni kívánt alkalmazásra. Megjelenik a **Beállítások** oldal a konfigurációs adatokkal.
+6.  Győződjön meg arról, hogy az alkalmazás **Ügyfél-azonosítója** ugyanaz, mint a 2. lépésben volt.
+7.  Kattintson a felső panel **Törlés** gombjára.
 8.  A megerősítő üzeneten kattintson az **Igen** gombra.
-
-
-
-
 

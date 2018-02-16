@@ -3,7 +3,7 @@ title: "Képletszerkesztő elektronikus jelentésekhez"
 description: "Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 58bef33642d83def841eaa8334ea6f942063e0b3
+ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
+ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/23/2017
 
 ---
 
@@ -30,94 +30,117 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER). Ha egy formátumot az ER-ben meghatározott elektronikus dokumentumra vonatkozóan tervez meg, akkor használhat képleteket az adatok átalakításához a dokumentum teljesítésére és formázására vonatkozó követelményekhez történő megfeleltetés érdekében. Ezek a képletek a Microsoft Excelben található képletekre hasonlítanak. A képletek funkciók különféle típusait támogatják - szöveg, dátum és időpont, matematikai logika, információ, adattípus-konvertálás és egyéb (üzletitartomány-specifikus funkciók).
 
-Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER). Ha egy formátumot az ER-ben meghatározott elektronikus dokumentumra vonatkozóan tervez meg, akkor használhatja a Microsoft Excelt– úgy mint az adat átalakítás képleteire vonatkozó formulákat a dokumentum teljesítésére és formázására vonatkozó követelményekhez történő megfeleltetés érdekében. A rendszer funkciók különféle típusait támogatja - szöveg, dátum és időpont, matematikai logika, információ, adattípus-konvertálás és egyéb (üzletitartomány-specifikus funkciók).
+## <a name="formula-designer-overview"></a>Képletszerkesztő áttekintése
 
-<a name="formula-designer-overview"></a>Képletszerkesztő áttekintése
--------------------------
+Az ER támogatja a képletszerkesztőt. Ezért tervezéskor konfigurálhatja a futtatás közben a következő feladatokhoz használható kifejezéseket:
 
-Az elektronikus jelentés (ER) támogatja a képletszerkesztőt. Ezért tervezéskor konfigurálhatja futtatás közben a következő feladatokhoz használható kifejezéseket:
+- A Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition adatbázisból érkező átalakítási adatok, amelyeket át kell vinni az ER-formátumokra vonatkozó adatforrásnak tervezett ER-adatmodellbe (szűrés, csoportosítás, adattípus-átalakítás stb.). (Például ezek az átalakítások magukban foglalhatják a szűrést, csoportosítást és az adattípus-konverziót.)
+- Olyan formátumadatok, amelyeket egy generáló elektronikus dokumentumba kell küldeni, egy adott ER-formátum elrendezésének és feltételeinek megfelelően. (Például a formázás a kért nyelv vagy kultúra,illetve a kódolás alapján történhet).
+- Elektronikus dokumentumok létrehozási folyamatának szabályozása. (Például a kifejezések az adatok feldolgozásától függően engedélyezhetik vagy letilthatják a formátum egyes elemeinek kimenetét. Meg is szakíthatják a dokumentum létrehozásának folyamatát, vagy üzeneteket küldhetnek a felhasználóknak.)
 
--   A Microsoft Dynamics 365 for Finance and Operations adatbázisból érkeznek az átalakítási adatok és áttöltésre kerülnek az ER formátumokra vonatkozó adatforrásnak tervezett ER adatmodellbe (szűrés, csoportosítás, adattípus-átalakítás stb.)
--   Olyan adatok formázása, amelyeket ki kell küldeni egy elektronikusan létrejövő dokumentumba az adott ER formátum elrendezésével és állapotával összhangban (a kért nyelvnek vagy kultúrának, kódolásnak stb. megfelelően).
--   Az elektronikus dokumentumkészítés folyamatának irányítása (bizonyos formátumelemek kivitelének engedélyezése/tiltása a feldolgozóadattól függően, a dokumentumlétrehozás megszakítása, üzenetek küldése a végfelhasználóknak stb.)
+A **Képlettervező** lapot a következő műveletek bármelyikének végrehajtásakor meg lehet megnyitni:
 
-Emiatt a képlettervező lapot a következő módok valamelyikén lehet megnyitni:
-
--   Az adatmodellek komponenseihez tartozó adatforrás cikkek kötése.
--   A formátum komponenseihez tartozó adatforráscikkek kötése.
--   Az adatforrások részeként számított mezők karbantartásának elvégzése.
--   Felhasználó által megadott paraméterek láthatósági feltételeinek meghatározása.
--   A formátum átalakításainak tervezése.
--   A formátum összetevőkre vonatkozó engedélyező feltételek meghatározása.
--   A formátum fájl összetevőkre vonatkozó fájlneveinek definíciója.
--   A vezérlő-ellenőrzések feldolgozására vonatkozó feltételek meghatározása.
--   A vezérlő-ellenőrzések feldolgozására vonatkozó üzenetszöveg meghatározása.
+- Az adatmodellek komponenseihez tartozó adatforrás cikkek kötése.
+- A formátum komponenseihez tartozó adatforráscikkek kötése.
+- Az adatforrások részeként számított mezők karbantartásának elvégzése.
+- Felhasználó által megadott paraméterek láthatósági feltételeinek meghatározása.
+- A formátum átalakításainak tervezése.
+- A formátum összetevőkre vonatkozó engedélyező feltételek meghatározása.
+- A formátum fájl összetevőkre vonatkozó fájlneveinek definíciója.
+- A vezérlő-ellenőrzések feldolgozására vonatkozó feltételek meghatározása.
+- A vezérlő-ellenőrzések feldolgozására vonatkozó üzenetszöveg meghatározása.
 
 ## <a name="designing-er-formulas"></a>ER-képletek tervezése
+
 ### <a name="data-binding"></a>Adatok kötése
 
-Az ER Képletszerkesztő segítségével meghatározhatja azokat a kifejezéseket, amelyek átalakítják az adatforrásból származó adatokat, úgy hogy az adatokat az adattárolóban futtatási időben ki lehet tölteni:
+Az ER Képletszerkesztő segítségével meghatározhatja azokat a kifejezéseket, amelyek átalakítják az adatforrásból származó adatokat, úgy hogy az adatokat az adattárolóban futtásidőben meg lehet adni:
 
--   A Finance and Operations adatforrásokból és futtatási paraméterekből egy ER-adatmodellbe.
--   Az ER adatmodell ER formátumba.
--   A Finance and Operations adatforrásokból és futtatási paraméterekből egy ER-formátumba.
+- A Finance and Operations adatforrásokból és futtatási paraméterekből egy ER-adatmodellbe.
+- Az ER adatmodell ER formátumba
+- A Finance and Operations adatforrásokból és futtatási paraméterekből egy ER-formátumba.
 
-Az alábbi ábra bemutatja az ilyen típusú kifejezés tervezését. Ebben a példában a kifejezés megjeleníti a Finance and Operations **Intrastat.AmountMST** mezőjének – **Intrastat** tábla – értékét, miután ez az érték két tizedesjegy pontossággal kerekítve lett. [![picture-expression-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Az alábbi ábra szemlélteti, hogyan lehet használni az ilyen típusú kifejezéseket. Ebben a példában a tervezett kifejezés eredményének kitöltése a **Adóösszeg-jelentési** adatmodell **Transaction.InvoicedAmount** komponensének alapján történik. [![picture-expression-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) Futtatás közben a tervezett receptúra, a **ROUND (Intrastat.AmountMST 2)**, az **AmountMST** mező értékét két tizedesjegyre kerekíti az **Intrastat** tábla minden egyes rekordjára vonatkozóan, és a kerekített értéket feltölti az **Adóbevallás** adatmodell **Transaction.InvoicedAmount** összetevőjéhez.
+Az alábbi ábra bemutatja az ilyen típusú kifejezés tervezését. Ebben a példában a kifejezés két tizedesjegy pontosságra kerekíti a Finance and Operations **Intrastat.AmountMST** mezőjének – Intrastat tábla – értékét, majd visszaadja a kerekített értéket.
+
+[![Adatok kötése](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+
+Az alábbi ábra bemutatja, hogyan használható az ilyen típusú kifejezés. Ebben a példában a tervezett kifejezés eredményének megadása a **Adóösszeg-jelentési** adatmodell **Transaction.InvoicedAmount** komponensének alapján történik.
+
+[![Használatban lévő adatkötés](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+
+Futásidőben a tervezett **(Intrastat.AmountMST 2) a KEREKÍTÉSI** képlet az **AmountMST** mező értékét két tizedesjegy pontossággal kerekíti az Intrastat tábla minden egyes rekordjánál. Ezután a kerekített értéket beviszi az **Adóbevallás** adatmodell **Transaction.InvoicedAmount** összetevőjébe.
 
 ### <a name="data-formatting"></a>Adatformázás
 
-Az ER Képletszerkesztő segítségével meghatározhatja azokat a formátumokat, amelyek átalakítják az adatforrásból származó adatokat, úgy hogy adatokat küldhet egy elektronikusan létrejövő dokumentum részeként. Ha formázást kell alkalmazni általános szabályként, egy formátumra vonatkozóan újra fel kell használni, bemutatja, hogy a formázás egyszerre szerepel a formátum konfigurációban, amely egy formázási kifejezés nevű átalakításként jelenik meg. Ez az elnevezett átalakítás hozzákapcsolható számos formátum-összetevőhöz, amelynek kimenetét formázni kell a létrehozott kifejezésnek megfelelően. Az alábbi ábra bemutatja az ilyen típusú átalakítás tervezését. Ebben a példában a **TrimmedString** átalakítása a **karakterlánc** adattípus bejövő adatait veszi és csonkolja a kezdő és záró szóközöket, amikor karakterlánc-értéket ad vissza. [![picture-transformation-design](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Az alábbi ábra bemutatja, hogyan használható az ilyen típusú átalakítás. Ebben a példában több olyan szöveg komponens vonatkozik a név szerinti **TrimmedString** átalakításra, amely kimentként küldi el a szöveget az elektronikusan létrejövő dokumentum számára a futtatási időben. [![picture-transformation-usage](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Amikor a formátum azon összetevőit, amelyek hivatkoznak a **TrimmedString** átalakításra (például a **partyName** összetevőre az előző ábrán), ez kimenetként szöveget küld el a létrehozó dokumentumhoz. A szöveg nem tartalmazza a kezdő és záró szóközöket. Ha olyan formázással rendelkezik, amelyet egyénileg kell alkalmazni, akkor a formázás a megadott formátum-összetevő kötésének egyéni kifejezéseként jelenítheti meg. Az alábbi ábra bemutatja az ilyen típusú kifejezését. Ebben a példában a **partyType** formátum összetevő az adatforráshoz kötött azon kifejezésen keresztül, amely átalakítja a **Model.Company.RegistrationType** mezőjéből származó bejövő adatokat az adatforrásban a nagybetűs szöveghez és az elektronikus dokumentum számára kimeneti szövegként küldi el. [![picture-binding-with-formula](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+Az ER Képletszerkesztő segítségével meghatározhatja azokat a formátumokat, amelyek átalakítják az adatforrásból származó adatokat, úgy hogy adatokat küldhet egy elektronikusan létrejövő dokumentum részeként. Előfordulhat, hogy olyan formátummal kell dolgoznia, amelyet amelyet olyan tipikus szabályként kell alkalmazni, amelyet egy formátumban újra kell használni. Ebben az esetben a formátumot bevezetheti egyszer a formátum konfigurációjában névvel ellátott, formázási kifejezést tartalmazó átalakításként. Ez az elnevezett átalakítás hozzákapcsolható számos formátum-összetevőhöz, amelynek kimenetét formázni kell a létrehozott formázási kifejezésnek megfelelően.
+
+Az alábbi ábra bemutatja az ilyen típusú átalakítás tervezését. Ebben a példában a **TrimmedString** átalakítás a **karakterlánc** adattípus bejövő adatait csonkolja a kezdő és záró szóközök eltávolításával. Ezután a csonkolt karakterláncot adja vissza.
+
+[![Átalakítás](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+
+Az alábbi ábra bemutatja, hogyan használható az ilyen típusú átalakítás. Ebben a példában számos formátum-összetevő küld szöveget kimenetként futásidóben a létrehozó elektronikus dokumentum számára. Ezen formátum-összetevők mindegyike név szerint hivatkozik a **TrimmedString** átalakításra.
+
+[![Használt átalakítás](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+
+Amikor a formátum azon összetevőit, mint például az előző példában a **partyName** összetevőt, amelyek hivatkoznak a **TrimmedString** átalakításra, ez az átalakítás kimenetként küldi el a létrehozó elektronikus dokumentum számára. Ez a szöveg nem tartalmazza a kezdő és záró szóközöket.
+
+Ha olyan formázással rendelkezik, amelyet egyénileg kell alkalmazni, akkor a formázás a megadott formátum-összetevő kötésének egyéni kifejezéseként jelenítheti meg. Az alábbi ábra bemutatja az ilyen típusú kifejezését. Ebben a példában a **partyType** formátum összetevő az adatforráshoz kötött azon kifejezésen keresztül, amely átalakítja a **Model.Company.RegistrationType** mezőjéből származó bejövő adatokat az adatforrásban a nagybetűs szöveghez. A kifejezés ezután ezt a szöveget az elektronikus dokumentum számára kimenetként küldi el.
+
+[![Formázás alkalmazása egyes összetevőkre](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ### <a name="process-flow-control"></a>Folyamatáramlat irányítás
 
-A ER képlettervező segítségével meg lehet határozni azokat a kifejezéseket, amelyek irányítják a dokumentumok létrehozásának folyamatábráját. A lehetőségek:
+A ER képlettervező segítségével meg lehet határozni azokat a kifejezéseket, amelyek irányítják az elektronikus dokumentumok létrehozásának folyamatábráját. A következő feladatokat végezheti el:
 
--   Határozza meg azokat a kifejezéseket, amelyek meghatározzák, hogy mikor kell egy dokumentumkészítési folyamatot megszakítani.
--   Határozza meg azokat a kifejezéseket, amelyek üzeneteket hoznak létre a végfelhasználónak a megállított folyamatról vagy végrehajtásnapló-üzeneteket adnak ki a jelentéskészítés zajló folyamatáról.
--   Adja meg a generálási dokumentumok fájlneveit és létrehozás szabályozó feltételeit.
+- Határozza meg azokat a kifejezéseket, amelyek meghatározzák, hogy mikor kell egy dokumentumkészítési folyamatot megszakítani.
+- Határozza meg azokat a kifejezéseket, amelyek üzeneteket hoznak létre a felhasználónak a megállított folyamatról vagy végrehajtásnapló-üzeneteket adnak ki a jelentéskészítés zajló folyamatáról.
+- Adja meg a generálási elektronikus dokumentumok fájlneveit és létrehozás szabályozó feltételeit.
 
 A folyamatáramlat irányítás minden szabálya egyéni ellenőrzésként van tervezve. Az alábbi ábra bemutatja az ilyen típusú ellenőrzést. Íme a konfiguráció magyarázata ebben a példában:
 
--   Az ellenőrzés akkor megy végbe, amikor a **INSTAT** csomópont létrejön az XML-fájl létrehozásában.
--   Ha a tranzakció listája üres, az ellenőrzés megállítja a végrehajtási folyamatot és **HAMIS** értéket küld vissza.
--   Az ellenőrzés egy hibaüzenetet küld vissza, amely tartalmazza a felhasználó által előnyben részesített nyelven a SYS70894 címke szövegét.
+- Az ellenőrzés akkor megy végbe, amikor a **INSTAT** csomópont létrejön az XML-fájl létrehozása során.
+- Ha a tranzakció listája üres, az ellenőrzés megállítja a végrehajtási folyamatot és **HAMIS** értéket küld vissza.
+- Az ellenőrzés egy hibaüzenetet küld vissza, amely tartalmazza a felhasználó által előnyben részesített nyelven a Finance and Operations SYS70894 címkéjének szövegét.
 
-[![picture-validation](./media/picture-validation.jpg)](./media/picture-validation.jpg) Az ER képletszerkesztő segítségével megadhat egy fájlnevet a létrejövő elektronikus dokumentum számára és kezelheti a fájl létrejöttének folyamatát. Az alábbi ábra bemutatja az ilyen típus folyamatáramlat-irányítás tervezését. Íme a konfiguráció magyarázata ebben a példában:
+[![Érvényesítés](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
--   A rekordok listája a **model. Intrastat** adatforrásból olyan kötegekre osztódik fel, amelyek legfeljebb 1000 rekordot tartalmaznak
--   A kimenet létrehoz egy irányítószámot, amely tartalmaz egy fájlt minden létrehozott kötegre vonatkozóan egy XML-formátumú fájlban.
--   Egy kifejezés a létrejövő elektronikus dokumentumokra vonatkozó fájlnevet ad vissza a fájlnév és a fájlkiterjesztés összefűzésével. A második kötegre és minden további kötegre vonatkozóan a fájl neve tartalmazza a Kötegazonosítót utótagként.
--   Egy kifejezés lehetővé tesz ( **IGAZ** visszaküldése esetén)a fájl létrehozását azon kötegekre vonatkozóan, amelyek legalább egy rekordot tartalmaznak.
+Az ER képletszerkesztő segítségével generálhat egy fájlnevet a létrejövő elektronikus dokumentum számára, és kezelheti a fájl létrejöttének folyamatát. Az alábbi ábra bemutatja az ilyen típus folyamatáramlat-irányítás tervezését. Íme a konfiguráció magyarázata ebben a példában:
 
-[![picture-file-control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+- A **model.Intrastat** adatforrásból származó rekordok listája kötegekre oszlik. Minden egyes köteg legfeljebb 1000 rekordot tartalmaz.
+- A kimenet létrehoz egy irányítószámot, amely tartalmaz egy fájlt minden létrehozott kötegre vonatkozóan egy XML-formátumú fájlban.
+- Egy kifejezés a létrejövő elektronikus dokumentumokra vonatkozó fájlnevet ad vissza a fájlnév és a fájlnév-kiterjesztés összefűzésével. A második kötegre és minden további kötegre vonatkozóan a fájl neve tartalmazza a Kötegazonosítót utótagként.
+- Egy kifejezés lehetővé teszi ( **IGAZ** visszaküldése esetén) a fájl létrehozási folyamatát azon kötegekre vonatkozóan, amelyek legalább egy rekordot tartalmaznak.
+
+[![Fájlvezérlés](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ### <a name="basic-syntax"></a>Alap szintaxis
 
 ER kifejezések bármennyi vagy az összes elemet tartalmazhatja a következő elemek közül:
 
--   Állandók
--   Operátorok
--   Hivatkozások
--   Útvonalak
--   Függvények
+- Állandók
+- Operátorok
+- Hivatkozások
+- Útvonalak
+- Funkciók
 
 #### <a name="constants"></a>Állandók
 
-A szöveges és a numerikus állandók (nem számított értékek) segítségével, amikor a kifejezéseket tervezi. Például a **ÉRTÉK ("100") + 20** kifejezés a 20 numerikus konstanst és a „100” szövegkonstanst használja, és a **120** numerikus értéket adja vissza. Az ER képletszerkesztő támogatja a feloldó szakaszokat, így meghatározhatja a kifejezés karakterláncának azon részét, amelyet eltérően kell kezelni. Például a **„Lev Tolstoy” „Háború és béke „1. kötet”** kifejezés megjeleníti a **„Lev Tolstoy” „Háború és béke „1. kötet”** szöveges karakterláncot.
+Amikor a kifejezéseket tervezi, használhat szöveges és a numerikus állandókat (nem számított értékeket). Például az **ÉRTÉK ("100") + 20** kifejezés a **20** numerikus konstanst és a **100** szövegkonstanst használja és a **120** numerikus értéket adja vissza. Az ER képletszerkesztő támogatja a feloldó szakaszokat. Így meghatározhat olyan kifejezés-karakterláncot, amelyet eltérően kell kezelni. Például a **„Lev Tolstoy” „Háború és béke „1. kötet”** kifejezés megjeleníti a **„Lev Tolstoy” „Háború és béke „1. kötet”** szöveges karakterláncot.
 
 #### <a name="operators"></a>Operátorok
 
-Az alábbi táblázat bemutatja az aritmetikai operátorokat, amelyek segítségével elvégezheti a matematikai alapműveleteket, mint például összeadás, kivonás, osztás és szorzás.
+Az alábbi táblázat bemutatja az aritmetikai operátorokat, amelyek segítségével elvégezheti a matematikai alapműveleteket, mint például összeadás, kivonás, szorzás és osztás.
 
-| Kezelő | Jelentés              | Példa |
-|----------|----------------------|---------|
-| +        | Hozzáadás             | 1+2     |
-| -        | Kivonandó tagadás | 5-2 -1  |
-| \*       | szorzás       | 7\*8    |
-| /        | Osztály             | 9/3     |
+| Kezelő | Jelentés               | Példa |
+|----------|-----------------------|---------|
+| +        | Hozzáadás              | 1+2     |
+| -        | Kivonás, tagadás | 5-2, -1 |
+| \*       | szorzás        | 7\*8    |
+| /        | Osztály              | 9/3     |
 
-Az alábbi táblázat bemutatja az összehasonlító operátorokat, amelyek támogatva vannak, és amelyek segítségével összehasonlíthat két értéket.
+A következő táblázat a támogatott összehasonlító operátorokat mutatja. Ezen operátorok segítségével összehasonlíthat két értéket.
 
 | Kezelő | Jelentés                  | Példa    |
 |----------|--------------------------|------------|
@@ -128,86 +151,90 @@ Az alábbi táblázat bemutatja az összehasonlító operátorokat, amelyek tám
 | &lt;=    | Kisebb vagy egyenlő    | X&lt;=Y    |
 | &lt;&gt; | Nem egyenlő             | X&lt;&gt;Y |
 
-Ezenkívül használhat (&) jelet egy szöveg összefűző operátoraként, hogy egy vagy több szövegláncot összekapcsoljon vagy összefűzzön a szöveg egy részével.
+Ezenkívül használhat és-jelet (&) szövegösszefűző operátorként. Így egy vagy több szövegláncot összekapcsolhat vagy összefűzhet egyetlen szöveggé.
 
-| Kezelő | Jelentés     | Példa                                        |
-|----------|-------------|------------------------------------------------|
-| &        | Összefűzés | Nincs nyomtatni-való” és „ ” és „nem található rekord” |
+| Kezelő | Jelentés     | Példa                                             |
+|----------|-------------|-----------------------------------------------------|
+| &        | Összefűzés | „Nincs nyomtatnivaló” & ":&nbsp;" & „nem található rekord” |
 
-#### <a name="operator-precedence"></a>Operátor elsőbbségi sorrend
+##### <a name="operator-precedence"></a>Operátor elsőbbségi sorrend
 
-Fontos a sorrend, amelyben az összetett kifejezés egy része kiértékelésre került. Például a **1 + 4 / 2** kifejezés eredménye attól függően változik, hogy a kiegészítő műveletet vagy a részlegműveletet hajtották-e végre először. A zárójelek segítségével megadhatja egy kifejezés kiértékelésének módját. Például, ha jelezni szeretné, hogy először a kiegészítő műveletet kell végrehajtani, módosíthatja az előző kifejezés **(1 + 4) / 2** lehetőségre. Ha a kifejezésben elvégzendő műveletek sorrendje nincs megadva explicit módon, akkor a támogatott operátorokhoz rendelt alapértelmezett elsőbbségi sorrenden alapul. A következő táblázatok az egymáshoz rendelt műveleteket és az elsőbbségi sorrendet jeleníti meg. A magasabb elsőbbségi sorrenddel (például 7) rendelkező operátorok az alacsonyabb elsőbbségi sorrenddel rendelkező operátorok előtt (például 1) kerülnek kiértékelésre.
+Fontos a sorrend, amelyben az összetett kifejezés egy része kiértékelésre került. Például az **1 + 4 / 2** kifejezés eredménye attól függően változik, hogy az összeadás vagy az osztás művelet hajtódik-e végre először. A zárójelek segítségével megadhatja egy kifejezés kiértékelésének módját. Például, ha jelezni szeretné, hogy először a hozzáadás műveletet kell végrehajtani, így módosíthatja az előző kifejezést: **(1 + 4) / 2**. Ha a kifejezésben elvégzendő műveletek sorrendje nincs megadva explicit módon, akkor a a sorrend támogatott operátorokhoz rendelt alapértelmezett elsőbbségi sorrenden alapul. A következő táblázatok az egyes operátorokhoz rendelt elsőbbségi sorrendet jeleníti meg. A magasabb elsőbbségi sorrenddel (például 7) rendelkező operátorok az alacsonyabb elsőbbségi sorrenddel rendelkező operátorok előtt (például 1) kerülnek kiértékelésre.
 
-| Elsőbbségi sorrend | Operátorok      | Szintaxis                                                   |
-|------------|----------------|----------------------------------------------------------|
-| 7          | Csoportosítás       | ( … )                                                    |
-| 6          | Tag hozzáférés  | … gombra. …                                                    |
-| 5          | Függvényhívás  | … ( … )                                                  |
-| 4          | Szorzás | … \* … … / …                                             |
-| 3          | Additív       | … + … … - …                                              |
-| 2          | Összehasonlítás     | … &lt; … … &lt;= … … =&gt; … … &gt; … … = … … &lt;&gt; … |
-| 1          | Kiválasztás     | … , …                                                    |
+| Elsőbbségi sorrend | Operátorok      | Szintaxis                                                                  |
+|------------|----------------|-------------------------------------------------------------------------|
+| 7          | Csoportosítás       | ( … )                                                                   |
+| 6          | Tag hozzáférés  | … gombra. …                                                                   |
+| 5          | Függvényhívás  | … ( … )                                                                 |
+| 4          | Szorzás | … \* …<br>… / …                                                         |
+| 3          | Additív       | … + …<br>… - …                                                          |
+| 2          | Összehasonlítás     | … &lt; …<br>… &lt;= …<br>… =&gt; …<br>… &gt; …<br>… = …<br>… &lt;&gt; … |
+| 1          | Kiválasztás     | … , …                                                                   |
 
-Ugyanabban a sorban azonos elsőbbségi sorrenddel rendelkeznek az operátorok. Ha a kifejezés ezen operátorok közül egynél többet tartalmaz, akkor a kifejezést balról jobbra értékelte ki a program. Például az **1 + 6 / 2 \* 3 &gt; 5** kifejezés az **igaz** értéket adja vissza. Ajánlatos a zárójelek használata a kifejezések kívánt sorrendjének explicit módon történő jelzéséhez, illetve a kifejezések könnyebb olvasása és kezelése érdekében.
+Ha egy kifejezés olyan több egymást követő operátort tartalmaz, amelyek ugyanolyan elsőbbséget élveznek, akkor ezen műveletek kiértékelése balról jobbra történik. Például az **1 + 6 / 2 \* 3 &gt; 5** kifejezés az **igaz** értéket adja vissza. Ajánlatos a zárójelek használata a kifejezésekben található műveletek kívánt sorrendjének explicit módon történő jelzéséhez, illetve a kifejezések könnyebb olvasása és kezelése érdekében.
 
 #### <a name="references"></a>Hivatkozások
 
-Egy kifejezés tervezése során elérhető jelenlegi ER komponens összes adatforrását (modell vagy egy formátum) elnevezett hivatkozásként lehet használni. Például az aktuális ER adatmodell tartalmazza a **ReportingDate** adatforrást, amely megjeleníti a **DATETIME** adattípus értékét. Annak érdekében, hogy a létrejövő dokumentumban megfelelően formázott értéket kapjon, a következőképpen hivatkozhat a kifejezésben szereplő adatforrásokra: **DATETIMEFORMAT (ReportingDate, "nn-HH-éééé")** Az adatforrásra hivatkozó minden név minden olyan karaktere előtt, amely nem az ábécé egy betűjét jelöli, egyeszeres idézőjelet (') kell használni. A hivatkozási adatforrás minden nevének, amely tartalmaz legalább egy szimbólumot, amely nem az ábécé egy betűjét jelenti (például írásjelek vagy bármely más írott szimbólumok), egyszeres idézőjelekben kell megjelennie. Íme néhány példa:
+Egy kifejezés tervezése során elérhető jelenlegi ER komponens összes adatforrását elnevezett hivatkozásként lehet használni. (Az aktuális ER-összetevő modell vagy formátum lehet.) Például az aktuális ER-adatmodell tartalmazza a **ReportingDate** adatforrást, és ez az adatforrás visszaad egy értéket a **DATETIME** adattípushoz. Annak érdekében, hogy a létrejövő dokumentumban megfelelően formázott értéket kapjon, a következőképpen hivatkozhat a kifejezésben szereplő adatforrásokra: : **DATETIMEFORMAT (ReportingDate, "nn-hh-éééé")**
 
--   A **Mai dátum és idő** adatforrást a következőképpen kell hivatkozni egy ER kifejezésben: **Mai dátum és idő”**
--   A **Vevők** adatforrás **Név()** metódusát a következőképp kell hivatkozni az ER kifejezésben: **Vevők.„név()”**
+Az adatforrásra hivatkozó minden név minden olyan karaktere előtt, amely nem az ábécé egy betűjét jelöli, egyszeres idézőjelet (') kell használni. A hivatkozási adatforrás minden nevének, amely tartalmaz legalább egy szimbólumot, amely nem az ábécé egy betűjét jelenti, egyszeres idézőjelekben kell megjelennie. (Ezek a nem alfabetikus szimbólumok lehetnek például írásjelek vagy más írott szimbólumok.) Íme néhány példa:
 
-Vegye figyelembe, hogy a következő szintaxis szolgál a Dynamics 365 adatforrások metódushívásaihoz a következő paraméterekkel:
+- A **Mai dátum és idő** adatforrást a következőképpen kell hivatkozni egy ER kifejezésben: **Mai dátum és idő”**.
+- A **Vevők** adatforrás **név()** metódusát a következőképp kell hivatkozni az ER kifejezésben: **Vevők.'név()'**
 
-- A rendszeradatforrás isLanguageRTL metódusára a karakterlánc adattípusú EN-US paraméterrel a következő módon kell hivatkozni az ER-kifejezésben: System.'isLanguageRTL'("EN-US").
-- Az idézőjelek nem kötelezőek, ha egy metódus neve csak alfanumerikus szimbólumokat tartalmaz. Az olyan táblametódusok esetén kötelező, amikor a név zárójeleket tartalmaz.
+Ha a Finance and Operations adatforrásainak metódusai paraméterekkel rendelkeznek, a következő szintaxist kell használni ezen metódusok meghívásához:
 
-Amikor a rendszeradatforrása hozzá van adva egy ER-hozzárendeléshez, amelyik a globális Dynamics 365 alkalmazásosztályra hivatkozik, a kifejezés a HAMIS logikai értéket adja vissza. A módosított kifejezés – System.’ isLanguageRTL'("AR") – az IGAZ logikai értéket adja vissza.
+- Ha a **Rendszer** adatforrás **isLanguageRTL** metódusa rendelkezik egy **karakterlánc** adattípusú **EN-US** paraméterrel, erre a metódusra a következő módon kell hivatkozni az ER-kifejezésekben: **System.'isLanguageRTL'("EN-US")**.
+- Az idézőjelek nem kötelezőek, ha egy metódus neve csak alfanumerikus szimbólumokat tartalmaz. Az olyan táblametódusok esetén viszont kötelezőek, amikor a név zárójeleket tartalmaz.
 
-Vegye figyelembe, hogy a váltás az ilyen metódusparaméterekre az alábbi korlátozásokkal adható meg:
+Amikor a **Rendszer** adatforrás hozzá van adva egy ER-hozzárendeléshez, amelyik a **globális** Finance and Operations alkalmazásosztályra hivatkozik, a kifejezés a **HAMIS** logikai értéket adja vissza. A módosított **System.' isLanguageRTL'("AR")** kifejezés az **IGAZ** logikai értéket adja vissza.
 
-- Ezeknek a metódusoknak csak állandókat lehet átadni, és az értékük meghatározása a tervezéskor történik.
-- Csak egyszerű (basic) adattípusok használhatók ilyen paraméterekhez (egész, valós, logikai, karakterlánc stb.).
+Az ilyen típusú metódusok paramétereinek átadott értékek átadásának módja korlátozható:
 
-#### <a name="path"></a>Útvonal
+- Csak állandók adhatók át ilyen típusú metódusoknak. Az állandók értékeit a tervezés során kell meghatározni.
+- Az ilyen típusú paraméterekhez csak egyszerű (alap) adattípusok támogatottak. (Az egyszerű adattípusok: egész, valós, logikai, karakterlánc stb.)
 
-Amikor a kifejezés egy adatforrásra hivatkozik, az útvonal meghatározása segítségével kiválaszthatja az adatforrás egy megadott egyszerű elemének kiválasztásához. A pont karaktert (.) a strukturált adatforrás egyes elemeinek elkülönítésére használják. Például az aktuális ER adatmodell tartalmazza a **InvoiceTransactions** adatforrást, amely a rekordok listáját jeleníti meg. Az **InvoiceTransactions** rekordok szerkezete tartalmazhat **AmountDebit** és **AmountCredit** mezőket, amelyek numerikus értékeket jelenítenek meg. Ezért a számlázott összeg kiszámítása érdekében a következő kifejezést tervezheti meg: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**
+#### <a name="paths"></a>Útvonalak
 
-#### <a name="functions"></a>Függvények
+Amikor a kifejezés egy adatforrásra hivatkozik, az útvonal meghatározása segítségével kiválaszthatja az adatforrás egy megadott egyszerű elemének kiválasztásához. A pont karaktert (.) a strukturált adatforrás egyes elemeinek elkülönítésére használják. Például az aktuális ER adatmodell tartalmazza a **InvoiceTransactions** adatforrást, és ez az adatforrás rekordok listáját adja vissza. Az **InvoiceTransactions** rekordszerkezete tartalmazza az **AmountDebit** és **AmountCredit** mezőket, amelyek mindegyike numerikus értékeket ad vissza. Ezért a számlázott összeg kiszámítása érdekében a következő kifejezést tervezheti meg: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**.
 
-A következő témakör az ER kifejezésekben használható funkciókat mutatja be. A kifejezés környezet (aktuális ER adatmodell vagy ER formátum) minden adatforrása és az állandók is használhatóak függvénymeghívási paraméterként a függvénymeghívási argumentumok listájával összhangban. Például az aktuális ER adatmodell tartalmazza a **InvoiceTransactions** adatforrást, amely a rekordok listáját jeleníti meg. Az **InvoiceTransactions** rekordok szerkezete tartalmazhat **AmountDebit** és **AmountCredit** mezőket, amelyek numerikus értékeket jelenítenek meg. Ezért a számlázott összeg kiszámításához, megtervezheti azokat a következő kifejezéseket, amelyek az ER kerekítési funkciót használják: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**
+#### <a name="functions"></a>Funkciók
+
+A következő témakör az ER kifejezésekben használható funkciókat mutatja be. A kifejezéskörnyezet (aktuális ER adatmodell vagy ER formátum) minden adatforrása használható függvénymeghívási paraméterként a függvénymeghívási argumentumok listájával összhangban. Az állandók szintén használhatók függvények meghívásának paraméterként. Például az aktuális ER adatmodell tartalmazza a **InvoiceTransactions** adatforrást, és ez az adatforrás rekordok listáját adja vissza. Az **InvoiceTransactions** rekordszerkezete tartalmazza az **AmountDebit** és **AmountCredit** mezőket, amelyek mindegyike numerikus értékeket ad vissza. Ezért a számlázott összeg kiszámításához, megtervezheti azokat a következő kifejezéseket, amelyek az ER kerekítési funkciót használják: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.
 
 ## <a name="supported-functions"></a>Támogatott függvények
-Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelyeket az ER adat modellek és ER jelentések tervezéséhez használhat. A függvények listája nem rögzített, és a fejlesztők által bővíthető. A használható funkciók listájának megtekintéséhez nyissa meg a funkciók ablakot az ER képletszerkesztőben.
+
+Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelyeket az ER adat modellek és ER jelentések tervezéséhez használhat. A funkciók listája nem kötött. A fejlesztők bővíthetik. A használható funkciók listájának megtekintéséhez nyissa meg a funkciók ablakot az ER képletszerkesztőben.
 
 ### <a name="date-and-time-functions"></a>Dátum és idő függvények
 
-| Funkció                                   | Leírás                                                                                                                                                                                                                                                                                                                                                      | Példa                                                                                                                                                                                                                                                                                               |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NAPOKHOZZÁADÁSA (dátum és idő, napok)                   | Adja hozzá a napok meghatározott számát a meghatározott dátum és idő értékhez.                                                                                                                                                                                                                                                                                                | **(MOST() 7) NAPOKHOZZÁADÁSA** megjeleníti a dátum és idő hét napot a jövőben.                                                                                                                                                                                                                            |
-| DATETODATETIME (dátum)                      | A megadott dátumérték átalakítása egy dátum-idő értékre.                                                                                                                                                                                                                                                                                                            | **DATETODATETIME (CompInfo. 'getCurrentDate()')** az aktuális Finance and Operations munkamenet dátumát adja vissza, 2015. december 12., a következő módon: **12/24/2015 12:00:00 AM**. Ebben a példában a **CompInfo** a **Finance and Operations/Tábla** típus ER-adatforrása, amely a CompanyInfo táblára hivatkozik. |
-| MOST ()                                     | A jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát és időpontját dátum-idő értékként jeleníti meg.                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                       |
-| Ma ()                                   | A jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát és időpontját dátum értékként jeleníti meg.                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                       |
-| NULLDATE ()                                | **Nulla** dátumértéket jelenik meg.                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                       |
-| NULLDATETIME ()                            | **Nulla** dátum-idő érték jelenik meg.                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                       |
-| DATETIMEFORMAT (dátum és idő, a formátum)          | A megadott dátum-idő értéket a megadott formátumban karakterlánccá alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)                                                                        | **DATETIMEFORMAT (NOW(), „nn-hh-éééé”)** megjeleníti a jelenlegi Finance and Operations alkalmazáskiszogáló dátumát, 2015.12.24. **24-12-2015**, a megadott egyéni formátum szerint.                                                                                                          |
-| DATETIMEFORMAT (dátum és idő, formátum, kultúra) | A megadott dátum-idő értéket a megadott formátumban szereplő karakterlánccá és [kultúra](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) lehetőséggé alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | A **DATETIMEFORMAT (NOW(), "d", "de")** a jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát (12/24/2015) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) jeleníti meg.                                                                                                             |
-| SESSIONTODAY ()                            | Az aktuális Dynamics 365 for Finance and Operations munkamenet dátumát dátumértékként jeleníti meg.                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                       |
-| SESSIONNOW ()                              | Az aktuális Dynamics 365 Finance and Operations munkamenet dátumát és időpontját dátumértékként jeleníti meg.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
-| DATEFORMAT (dátum, formátum)                  | Karakterlánc formájában adja vissza a dátumot a megadott formátum használatával.                                                                                                                                                                                                                                                                                                    | A **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** az aktuális Dynamics 365 for Finance and Operations munkamenet dátumát (12/24/2015) a megadott egyéni formátum szerint (**24-12-2015**) jeleníti meg.                                                                                                                      |
-| DATEFORMAT (dátum, formátum, területi beállítások)         | Alakítsa a megadott dátumértéket a megadott formátumban és [területi beállításoknak](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) megfelelő karakterlánccá. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | A **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** a jelenlegi Finance and Operations munkafolyamat dátumát (12/24/2015) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) jeleníti meg.                                                                                                                       |
-| DAYOFYEAR (dátum)              | Január 1. és a megadott dátum közötti napok számát adja vissza egész szám formátumban.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** a **61** értéket adja vissza. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** a **1** értéket adja vissza. 
-                                                                                                                      |
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| NAPOKHOZZÁADÁSA (dátum és idő, napok) | Adja hozzá a napok meghatározott számát a meghatározott dátum/idő értékhez. | **(MOST() 7) NAPOKHOZZÁADÁSA** megjeleníti a dátum és idő hét napot a jövőben. |
+| DATETODATETIME (dátum) | A megadott dátumérték átalakítása egy dátum/idő értékre. | **DATETODATETIME (CompInfo. 'getCurrentDate()')** az aktuális Finance and Operations munkamenet dátumát, 2015. december 24-et, a következő módon adja vissza: **12/24/2015 12:00:00 AM**. Ebben a példában a **CompInfo** a **Finance and Operations/Tábla** típus ER-adatforrása, és a CompanyInfo táblára hivatkozik. |
+| MOST () | A jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát és időpontját dátum/idő értékként adja vissza. | |
+| Ma () | A jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát és időpontját dátum értékként jeleníti meg. | |
+| NULLDATE () | **Nulla** dátumértéket jelenik meg. | |
+| NULLDATETIME () | **Null** dátum/idő értéket ad vissza. | |
+| DATETIMEFORMAT (dátum és idő, a formátum) | A megadott dátum/idő értéket a megadott formátumban karakterlánccá alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), „nn-hh-éééé”)** a jelenlegi Finance and Operations alkalmazáskiszogáló dátumát, 2015. december 24-et adja vissza,  **24-12-2015** formában, a megadott egyéni formátum szerint. |
+| DATETIMEFORMAT (dátum és idő, formátum, kultúra) | A megadott dátum/idő értéket a megadott formátumban szereplő karakterlánccá és [kultúra](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) lehetőséggé alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | A **DATETIMEFORMAT (NOW(), "d", "de")** a jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
+| SESSIONTODAY () | A jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát és időpontját dátumértékként adja vissza. | |
+| SESSIONNOW () | A jelenlegi Finance and Operations munkamenet dátumát és időpontját dátum/idő értékként adja vissza. | |
+| DATEFORMAT (dátum, formátum) | A megadott dátumot karakterlánc formájában adja vissza a megadott formátumban. | **DATEFORMAT (SESSIONTODAY (), "nn-hh-éééé")** a jelenlegi Finance and Operations munkamenet dátumát, 2015. december 24-et adja vissza,  **24-12-2015** formában, a megadott egyéni formátum szerint. |
+| DATEFORMAT (dátum, formátum, területi beállítások) | Alakítsa a megadott dátumértéket a megadott formátumban és [területi beállításoknak](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) megfelelő karakterlánccá. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | A **DATETIMEFORMAT (SESSIONNOW(), "d", "de")** a jelenlegi Finance and Operations munkamenet dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
+| DAYOFYEAR (dátum) | Január 1. és a megadott dátum közötti napok számát adja vissza egész szám formátumban. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** a **61** értéket adja vissza. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** a **1** értéket adja vissza. |
+| DAYS (1. dátum, 2. dátum) | Az első megadott dátum és a második megadott dátum közötti napok számát adja vissza. Pozitív értéket ad vissza, ha az első dátum későbbi, mint a második dátum, **0**-t (nullát) ad vissza, ha az első dátum megegyezik a második dátummal, máskülönben pedig negatív értéket ad vissza. | A **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "ééééHHnn"), "ééééHHnn"))** **-1**-et ad vissza. |
 
-**Adatkonvertálási függvények**
+### <a name="data-conversion-functions"></a>Adatkonvertálási függvények
 
-| Funkció                                   | Leírás                                                                                                                                                                                                                                                                                                                                                      | Példa                                                                                                                                                                                                                                                                                               |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DATETODATETIME (dátum)                 | A megadott dátumérték átalakítása egy dátum-idő értékre.           | **DATETODATETIME (CompInfo. 'getCurrentDate()')** az aktuális Finance and Operations munkamenet dátumát adja vissza, 2015. december 12., a következő módon: **12/24/2015 12:00:00 AM**. Ebben a példában a **CompInfo** a **Finance and Operations/Tábla** típus ER-adatforrása, amely a **CompanyInfo** táblára hivatkozik.                                                                                                                       |
-| DATEVALUE (karakterlánc, formátum)              | Dátum formájában adja vissza a karakterláncot a megadott formátum használatával.       | **DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** a 12/21/2016 dátumot adja vissza a megadott egyéni formátum szerint, az alapértelmezett alkalmazás **EN-US** területi beállításai szerint.                                                                                                                       |
-| DATEVALUE (karakterlánc, formátum, területi beállítások)              | Dátum formájában adja vissza a karakterláncot megadott formátum és területi beállítások használatával.       | **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", “IT”)** a 01/21/2016 dátumot adja vissza a megadott egyéni formátum és a területi beállítások szerint. A rendszer kivételt jelez a függvényhívásnál, **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", “EN-US”)** azt a tájékoztatást adva, hogy a megadott karakterlánc nem ismerhető fel érvényes dátumként.                                                                                                                       |
-| DATETIMEVALUE (karakterlánc, formátum)              | Dátum-idő formájában adja vissza a karakterláncot megadott formátum használatával.       | **DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** a 2016. december 21. 2:55:00 óra értéked adja vissza megadott egyéni formátumban, és az alapértelmezett alkalmazás **EN-US** területi beállításával.                                                                                                                       |
-| DATETIMEVALUE (karakterlánc, formátum, területi beállítások)              | Dátum-idő formájában adja vissza a karakterláncot megadott formátum és területi beállítások használatával.       | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", “IT”)** a 2016. december 21. 2:55:00 óra értéket adja vissza megadott egyéni formátumban, és területi beállítással. A rendszer kivételt jelez a függvényhívásnál, **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", “EN-US”)** azt a tájékoztatást adva, hogy a megadott karakterlánc nem ismerhető fel érvényes dátum-időként.                                                                                                                       |
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| DATETODATETIME (dátum) | A megadott dátumérték átalakítása egy dátum/idő értékre. | **DATETODATETIME (CompInfo. 'getCurrentDate()')** az aktuális Finance and Operations munkamenet dátumát, 2015. december 24-et, a következő módon adja vissza: **12/24/2015 12:00:00 AM**. Ebben a példában a **CompInfo** a **Finance and Operations/Tábla** típus ER-adatforrása, és a CompanyInfo táblára hivatkozik. |
+| DATEVALUE (karakterlánc, formátum) | A megadott karakterláncot dátum formájában adja vissza a megadott formátumban. | **DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** a 2016. december 21. dátumot adja vissza a megadott egyéni formátum szerint, az alapértelmezett alkalmazás **EN-US** területi beállításai szerint. |
+| DATEVALUE (karakterlánc, formátum, területi beállítások) | A megadott karakterláncot dátum formájában adja vissza a megadott formátum és területi beállítások alapján. | A **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")** a 2016. január 21. dátumot a megadott egyéni formátum és területi beállítások alapján adja vissza. A **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")** viszont kivételt eredményez, és a felhasználó értesül, hogy a megadott karakterlánc nem ismerhető fel érvényes dátumként. |
+| DATETIMEVALUE (karakterlánc, formátum) | A megadott karakterláncot dátum/idő formájában adja vissza a megadott formátumban. | A **DATETIMEVALUE ("21-Dec-2016 02:55:00", "nn-HHH-éééé óó:pp:ss")** 2016. december 21. 02:55:00-t ad vissza a megadott egyéni formátum alapján, az alapértelmezett alkalmazás **EN-US** területi beállításai szerint. |
+| DATETIMEVALUE (karakterlánc, formátum, területi beállítások) | A megadott karakterláncot dátum/idő formájában adja vissza a megadott formátum és területi beállítások alapján. | A **DATETIMEVALUE ("21-Gen-2016 02:55:00", "nn-HHH-éééé óó:pp:ss", "IT")** 2016. december 21. 02:55:00-t ad vissza a megadott egyéni formátum alapján, az alapértelmezett egyéni formátum és területi beállítások szerint. A **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy óó:pp:ss", "EN-US")** viszont kivételt eredményez, és a felhasználó értesül, hogy a megadott karakterlánc nem ismerhető fel érvényes dátumként. |
+
 ### <a name="list-functions"></a>Lista függvények
 
 <table>
@@ -236,34 +263,32 @@ Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelye
 <li>Kötegek, mint normál listák (<strong>Érték </strong>összetevő)</li>
 <li>Az aktuális köteg száma (<strong>BatchNumber</strong> összetevő)</li>
 </ul></td>
-<td>Az alábbi példában a <strong>Sorok</strong> adatforrás három rekord rekordlistájaként jön létre, amely kötegekre oszlik, és mindegyike legalább két rekordot tartalmaz. 
-<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
-
-Íme a tervezett formátumú elrendezés, ahol a <strong>Sorok</strong> adatforráshoz tartozó kötések a kimenet létrehozása érdekében jöttek létre az XML formátumban, amely az egyes kötegekre és a rekordokra vonatkozóan jeleníti meg az egyes csomópontokat. 
-<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
-
-Itt látható a tervezett formátum futtatásának az eredménye: 
+<td>Az alábbi példában egy <strong>Sorok</strong> adatforrás jön létre három rekord rekordlistájaként. Ez a kötegekre tételekre oszlik, amelyek mindegyike legfeljebb két rekordot tartalmaz.
+<p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
+<p>Az alábbi ábrán a tervezett formátumelrendezés látható. Ebben a formátumelrendezésben a <strong>Sorok</strong> adatforráshoz kötések jönnek létre a kimenet XML-formátumú előállításához. Ez a kimenet minden egyes kötethez és a hozzá tartozó rekordokhoz egyedi csomópontokat tartalmaz.</p>
+<p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
+<p>Az alábbi ábrán a tervezett formátum futtatásának eredménye látható.</p>
 <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
-<td>LISTA (rekord 1 [, 2. rekord...])</td>
+<td>LIST (1. rekord [, 2. rekord...])</td>
 <td>A megadott argumentumokból létrehozott új listát jelenítik meg.</td>
 <td><strong>LISTA (modell. MainData, modell. OtherData)</strong> egy üres sort jelenít meg, ahol a mezők listája a <strong>MainData</strong> és <strong>OtherData</strong> rekord lista összes mezőjét tartalmazza.</td>
 </tr>
 <tr class="even">
-<td>LISTJOIN (1 lista, 2 lista, ...)</td>
+<td>LISTJOIN (1. lista, 2. lista, ...)</td>
 <td>A megadott argumentumok listájából létrehozott csatolt listát jelenítik meg.</td>
-<td>A <strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> hat rekord listáját jeleníti meg, ahol a <strong>KARAKTERLÁNC</strong> adattípusú mező egyedüli betűket tartalmaz.</td>
+<td>A <strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> hat rekord listáját adja vissza, ahol a <strong>KARAKTERLÁNC</strong> adattípusú egy mezője egyedüli betűket tartalmaz.</td>
 </tr>
 <tr class="odd">
 <td>ISEMPTY (lista)</td>
-<td><strong>IGAZ</strong> választ jelenít meg, ha a megadott lista nem tartalmaz elemeket. Ellenkező esetben <strong>HAMIS</strong> választ jelenít meg.</td>
+<td><strong>IGAZ</strong> értéket ad vissza, ha a megadott lista nem tartalmaz elemeket. Ellenkező esetben <strong>HAMIS</strong> választ jelenít meg.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>EMPTYLIST (lista)</td>
 <td>A megadott lista segítségével egy üres listát jelenít meg a lista szerkezetére vonatkozó forrásként.</td>
-<td>Az <strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> egy új üres listát jelenít meg, amelynek ugyanolyan szerkezete van, mint a <strong>SPLIT</strong> funkció által megjelenített listának.</td>
+<td>Az <strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> egy új üres listát ad vissza, amelynek ugyanolyan szerkezete van, mint a <strong>SPLIT</strong> funkció által megjelenített listának.</td>
 </tr>
 <tr class="odd">
 <td>ELSŐ (lista)</td>
@@ -282,23 +307,23 @@ Itt látható a tervezett formátum futtatásának az eredménye:
 </tr>
 <tr class="even">
 <td>ALLITEMS (útvonal)</td>
-<td>Új, összevont listát jelenít meg, amely a meghatározott elérési útnak megfelelő összes elemet tartalmazza. Az elérési utat egy érvényes adatforrás útvonalaként kell megadni a rekordlista adattípus adatforrásához. A karakterlánc, a dátum stb. adatelemek elérési útvonalának hibaüzenetet kell megjeleníteniük az ER kifejezésszerkesztő tervezéskor.</td>
+<td>Új, összevont listát jelenít meg, amely a meghatározott elérési útnak megfelelő összes elemet tartalmazza. Az elérési utat egy érvényes adatforrás útvonalaként kell megadni a rekordlista adattípus adatforrásához. Adatelemek (például elérési út karakterlánc, dátum) hibaüzenetet jelenítenek meg az ER kifejezésszerkesztőben tervezéskor.</td>
 <td>Ha adatforrásként <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> értéket ad meg (DS), a <strong>COUNT( ALLITEMS (DS.Value))</strong> által visszaadott érték <strong>3</strong>.</td>
 </tr>
 <tr class="odd">
 <td>RENDEZÉS (lista [1 kifejezés, 2 kifejezés, ...])</td>
-<td>Megadott listát jelenít meg, amely a megadott, kifejezésként definiált argumentumok kifejezése szerint van sorba rendezve.</td>
-<td>Ha <strong>Szállító </strong>a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor<strong> RENDEZÉS (Szállítók, Szállítók.„neve()”)</strong> megjeleníti a név szerinti növekvő sorrendben rendezett szállítók listáját.</td>
+<td>Visszaadja meg a megadott listát, miután rendezte a megadott argumentumok szerint. Ezek az argumentumok kifejezésként adhatók meg.</td>
+<td>Ha a <strong>Szállító </strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor az <strong>ORDERBY (Vendors, Vendors.'name()')</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
 </tr>
 <tr class="even">
 <td>SZTORNÍROZÁS (lista)</td>
 <td>A megadott listát a sztornírozott rendezési sorrendben jeleníti meg.</td>
-<td>Ha <strong>Szállító </strong>a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>SZTORNÍROZÁS (RENDEZÉS (Szállítók, Szállítók.„neve()”)) )</strong> megjeleníti a név szerinti növekvő sorrendben rendezett szállítók listáját.</td>
+<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>REVERSE (ORDERBY (Szállítók, Szállítók.'name()')) )</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
 </tr>
 <tr class="odd">
 <td>HOL (lista, feltétel)</td>
-<td>Azt megadott listát jeleníti meg, amely a megadott feltételek szerint szűrve lett. Eltérően a <strong>SZŰRŐ</strong> funkciótól, a megadott feltétel hozzá van rendelve a memóriában levő listához.</td>
-<td>Ha <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> megjeleníti a 40-es szállítócsoporthoz tartozó szállítók listáját.</td>
+<td>Visszaadja meg a megadott listát, miután szűrte a megadott feltételek szerint. A megadott feltétel a memóriában lévő listára kerül. Így a <strong>WHERE</strong> függvény más, mint a <strong>FILTER</strong> függvény.</td>
+<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>WHERE(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza.</td>
 </tr>
 <tr class="even">
 <td>ENUMERÁLÁS (lista)</td>
@@ -307,13 +332,11 @@ Itt látható a tervezett formátum futtatásának az eredménye:
 <li>A megadott lista rekordjai rendszeres listákként (<strong>Érték </strong>összetevő)</li>
 <li>Az aktuális rekord index (<strong>Szám </strong>összetevő)</li>
 </ul></td>
-<td>A következő példában az <strong>Enumerált</strong> adatforrás a szállítói rekordok sorszámozott listájaként jött létre a <strong>Szállítók</strong> adatforrásból, amely a <strong>VendTable</strong> táblájára hivatkozik. 
-<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
-
-Ez az a formátum, ahol a kötéseket az XML formátumban történő kimenet létrehozása céljából hoztak létre, amely az egyes szállítókat sorszámozott csomókként jeleníti meg. 
-<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
-
-Itt látható a tervezett formátum futtatásának az eredménye: 
+<td>A következő ábrán az <strong>Sorszámozott</strong> adatforrás a szállítói rekordok sorszámozott listájaként jött létre a <strong>Szállítók</strong> adatforrásból, amely a VendTable táblára hivatkozik.
+<p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
+<p>Az alábbi ábra bemutatja a formátumot. Ebben a formátumelrendezésben adatkötések jönnek létre a kimenet XML-formátumú előállításához. A kimenet az egyes szállítókat sorszámozott csomópontként jeleníti meg.</p>
+<p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
+<p>Az alábbi ábrán a tervezett formátum futtatásának eredménye látható.</p>
 <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
@@ -323,155 +346,120 @@ Itt látható a tervezett formátum futtatásának az eredménye:
 </tr>
 <tr class="even">
 <td>LISTOFFIELDS (útvonal)</td>
-<td>A következő argumentumok valamelyikéből létrehozott rekordlistát ad ki:
+<td>A következő argumentumok valamelyikéből létrehozott rekordlistát ad vissza:
 <ul>
 <li>Modellfelsorolás</li>
 <li>Formátumok felsorolása</li>
 <li>Konténer</li>
 </ul>
-A létrehozott lista a következő mezőket tartalmazó rekordokból áll:
+<p>A létrehozott lista olyan rekordokból áll, amelyek a következő mezőket tartalmazzák:</p>
 <ul>
 <li>Név</li>
 <li>Címke</li>
 <li>Leírás</li>
 </ul>
-A Név és a Címke mezőben futásidejű értékek jelennek meg a formátum nyelvi beállításaitól függően.</td>
-<td>A következő példa bemutatja az adatmodellbe bevezetett sorszámozást. 
-<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
-
-Az alábbi példa a következőt mutatja:
+A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű értékek jelennek meg a formátum nyelvi beállításaitól függően.</td>
+<td>A következő ábra az adatmodellbe bevezetett sorszámozást mutatja be.
+<p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
+<p>A következő ábrán ezek a részletek láthatók:</p>
 <ul>
-<li>Jelentésbe adatforrásként beillesztett modellfelsorolás.</li>
-<li>A modellfelsorolás e funkció paramétereként használatos ER kifejezés.</li>
-<li>A rekordlistatípus jelentésbe illesztett adatforrása a létrehozott ER kifejezést használatával.</li>
+<li>A modell felsorolása adatforrásként kerül be egy jelentésbe.</li>
+<li>Az ER kifejezés a modellfelsorolást a <strong>LISTOFFIELDS</strong> függvény paramétereként használja.</li>
+<li>A rekordlistatípus adatforrása beillesztésre kerülegy jelentésbe a létrehozott ER kifejezés használatával.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
-
-A következő példa azokat az ER formázási elemeket mutat be, amelyek ahhoz a rekordlistatípus-adatforráshoz vannak kötve, amelyet a LISTOFFIELDS funkcióval hoztak létre.
-<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
-
-Itt látható a tervezett formátum futtatásának az eredménye.
-<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
-
-Megjegyzés:</strong> A címkék és leírások fordított szövege az ER formátumú kimenetre van kitöltve, a szülő FILE és FOLDER formátumelemekhez konfigurált nyelvi beállításoknak megfelelően.</td>
+<p><a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="Format" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a></p>
+<p>A következő példa azokat az ER formázási elemeket mutat be, amelyek ahhoz a rekordlistatípus-adatforráshoz vannak kötve, amelyet a <strong>LISTOFFIELDS</strong> függvénnyel hoztak létre.</p>
+<p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
+<p>Az alábbi ábrán a tervezett formátum futtatásának eredménye látható.</p>
+<p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
+<blockquote>[!NOTE]<br>
+A címkék és leírások fordított szövege az ER formátumú kimenetbe kerül bevitelre, a szülő FILE és FOLDER formátumelemekhez konfigurált nyelvi beállításainak megfelelően.</blockquote></td>
 </tr>
 <tr class="odd">
-<td>STRINGJOIN (lista, mezőnév, elválasztó)</td>
-<td>A mező értékének összefűzött karakterláncát a kijelölt elválasztóval elválasztott listából adja vissza.</td>
-<td>Ha DS adatforrásként a SPLIT ("abc", 1) van megadva, a STRINGJOIN (DS, DS.Value ":") kifejezés "a: b:c" formában jelenik meg</td>
+<td>LISTOFFIELDS (elérési út, nyelv)</td>
+<td>Egy argumentumból, például modellfelsorolásból, egy formátumfelsorolásból vagy tárolóból létrehozott rekordlistát ad vissza. A létrehozott lista olyan rekordokból áll, amelyek a következő mezőket tartalmazzák:
+<ul>
+<li>Név</li>
+<li>Címke</li>
+<li>Leírás</li>
+<li>Lefordítva</li>
+</ul>
+<p>A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű értékek jelennek meg a formátum nyelvi beállításaitól és a megadott nyelvtől függően. A <strong>Lefordítva</strong> mező azt jelzi, hogy a <strong>Címke</strong> mezőt lefordították a megadott nyelvre.</td>
+<td>Használhatja például a <strong>Számított mező</strong> adatforrástípust az <strong>enumType_de</strong> és <strong>enumType_deCH</strong> adatforrások az <strong>enumType</strong> adatokmodell-felsoroláshoz való konfigurálására:
+<ul>
+<li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
+<li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
+</ul>
+Ebben az esetben a következő kifejezést használhatja a felsorolási érték címkéjének svájci német nyelven történő lekéréséhez, ha ez a fordítás elérhető. Ha a svájci német fordítás nem áll rendelkezésre, akkor a címke nyelve a német: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.</td>
 </tr>
 <tr class="even">
-<td>SPLITLISTBYLIMIT (lista, határérték, korlát forrása)</td>
-<td>A megadott listát új, részleges listákból álló listává osztja fel, és a rekordlista tartalmának eredményét adja vissza. A korlátérték paramétere a származási lista korlátjának értékét határozza meg. A korlát forrásának paramétere a teljes összeg növelésének lépését határozza meg. A rendszer nem használja a korlátot az adott lista egyetlen cikkénél, amikor a korlát forrása meghaladja a meghatározott határértéket.</td>
-<td>A következő példa bemutatja az adatforrásokat használó mintaformátumot. 
-<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
-
-Ez annak a formázásvégrehajtásnak az eredménye, amely az árucikkek listáját mutatja be.
-<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
-
-A következő példa ugyanazt a formázást mutatja be, amelyet az árucikkcsoportok listájának bemutatására állítottak be kötegek esetében, amikor egy-egy kötegnek tartalmaznia kell azt a teljes súlyozású árucikket, amely nem haladhatja meg a 9-es határértéket.
-<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
-
-Itt látható a módosított formázás futtatásának az eredménye. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
-
-<strong>Megjegyzés:</strong> a korlát nem vonatkozik a származási lista utolsó elemére, mivel a korlát forrásának (tömeg) értéke (11) meghaladja a meghatározott határértéket (9). Használja a megfelelő formátumelem <strong>WHERE</strong> funkcióját vagy az <strong>Enabled</strong> kifejezést a részleges listák figyelmen kívül hagyásához (átugrásához) a jelentés előállítása során (ha szükséges).</td>
+<td>STRINGJOIN (lista, mezőnév, elválasztó)</td>
+<td>Visszaad egy olyan karakterláncot, amely a megadott lista megadott mezőjének összefűzött értékeiből áll. Az értékeket a megadott elválasztó választja el egymástól.</td>
+<td>Ha adatforrásként (DS) a <strong>SPLIT(&quot;abc&quot; , 1)</strong> vanmegadva, a <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> kifejezés <strong>&quot;a:b:c&quot;</strong>-t ad vissza.</td>
 </tr>
 <tr class="odd">
+<td>SPLITLISTBYLIMIT (lista, határérték, korlát forrása)</td>
+<td>A megadott listát új, részleges listákból álló listává osztja fel, és a rekordlista tartalmának eredményét adja vissza. A korlátérték paramétere az eredeti lista felosztása korlátjának értékét határozza meg. A korlát forrásának paramétere a teljes összeg növelésének lépését határozza meg. A rendszer nem használja a korlátot az eredeti lista egyetlen eleménél, amikor a korlát forrása meghaladja a meghatározott határértéket.</td>
+<td>Az alábbi ábrákon látható a formátum és az adatforrások, amelyek használatosak hozzá. 
+<p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
+<p>Az alábbi ábrán a formátum futtatásának eredménye látható. Ebben az esetben a kimenet egy egyszerű lista árucikkekről.</p>
+<p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
+<p>A következő ábrákon ugyanezt a formázást módosítottuk, hogy az árucikkcsoportok listáját kötegekben mutassa be, amikor egy-egy kötegnek árucikkeket kell tartalmaznia, és a teljes súly nem haladhatja meg a 9-es határértéket.</p>
+<p><a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="Adjusted format" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a></p>
+<p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
+<p>Az alábbi ábrán a módosított formátum futtatásának eredménye látható.</p>
+<p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
+<blockquote>[!NOTE]<br>
+A korlát nem vonatkozik az eredeti lista utolsó elemére, mivel a korlát forrásának (súly) értéke (11) meghaladja a meghatározott határértéket (9). Használja a megfelelő formátumelem <strong>WHERE</strong> függvényét vagy az <strong>Enabled</strong> kifejezést a részleges listák figyelmen kívül hagyásához (átugrásához) a jelentés előállítása során, ha szükséges.</blockquote></td>
+</tr>
+<tr class="even">
 <td>FILTER (lista, feltétel)</td>
-<td>Visszaállítja az adott listát úgy, hogy a lekérdezést a megadott feltételek szerint szűrve módosítja. Ellentétben a <strong>WHERE</strong> funkcióval, a megadott feltétel az adatbázis szintjén hozzá van rendelve a Táblarekordok típus bármely ER adatforrásához.</td>
-<td>Ha a <strong>Szállító</strong> a <strong>VendTable</strong> táblára hivatkozó ER adatforrásként van konfigurálva, akkor a FILTER (Vendors, Vendors. VendGroup = &quot;40&quot;) csak a 40-es szállítócsoporthoz tartozó szállítók listáját jeleníti meg.</td>
+<td>Visszaadja meg a megadott listát, miután a lekérdezést módosította és szűrte a megadott feltételek szerint. Ez a függvény eltér a <strong>WHERE</strong> függvénytől, mivel a megadott feltétel az adatbázis szintjén kerül alkalmazásra a <strong>Táblarekordok</strong> típus bármely ER adatforrására. A lista és a feltétel táblák és kapcsolatok segítségével határozhatók meg.</td>
+  <td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>FILTER(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza. Ha a <strong>Szállító</strong> ER-adatforrásként van konfigurálva, amely a <strong>VendTable</strong> táblára és a <strong>parmVendorBankGroup</strong>-ra hivatkozik, amely ER-adatforrásként konfigurálva az értéket karakterlánc adattípusként adja vissza, a , <strong>FILTER (Szállító.'&lt;Kapcsolatok'.VendBankAccount, Szállító.'&lt;Kapcsolatok'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> csak az adott bankcsoporthoz tartozó szállítói számlák listáját adja vissza.</td>
 </tr>
 </tbody>
 </table>
 
 ### <a name="logical-functions"></a>Logikai függvények
 
-| Funkció                                                                                | Leírás                                                                                                                                                                                                                                                                     | Példa                                                                                                                                                                                                                                                      |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ESET (kifejezés, beállítás 1, eredmény 1 \[, beállítás 2, eredmény 2\] ... \[, alapértelmezett eredmény\]) | A megadott kifejezés értékének kiértékelése a megadott alternatív beállításokkal szemben. Megjeleníti a lehetőség eredményeit, amely egyenlő a kifejezés eredményével. Ellenkező esetben választható módon megadott alapértelmezett eredményt (utolsó paramétert, amelyet nem előz meg egy lehetőség) jelenít meg. | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "TÉL", "11", "TÉL", "12", "TÉL", "")** a **„TÉL”** karakterláncot jelenít meg, amikor a jelenlegi Finance and Operations munkamenet dátuma október és december közötti. Ellenkező esetben üres karakterláncot jelenít meg. |
-| HA (feltétel, 1 érték, 2 érték)                                                        | 1 megadott értéket jelenít meg a megadott feltétel teljesülése esetén. Ellenkező esetben 2-es értéket jelenít meg. Ha az 1-es érték és a 2-es érték a rekordok és a rekordok listája, az eredmény csak olyan mezőkkel rendelkezik, amelyek mindkét listában szerepelnek.                                                                     | **HA (1 = 2, „feltétel teljesülése esetén”, „feltétel nem teljesül”)** **„feltétel nem teljesül”** karakterláncot jelenít meg.                                                                                                                                                      |
-| NEM (feltétel)                                                                         | Megjeleníti a megadott feltételek sztornírozott logikai értékét.                                                                                                                                                                                                                   | **NEM (IGAZ)** **HAMIS** értéket jelenít meg.                                                                                                                                                                                                                            |
-| ÉS (1-es feltétel\[, 2-es feltétel, ...\])                                                 | **IGAZ** értéket jelenít meg, ha *minden* megadott feltétel igaz. Ellenkező esetben **HAMIS** választ jelenít meg.                                                                                                                                                                                            | **ÉS a (1 = 1, „a” = „a”)** **IGAZ** értéket jelenít meg. **ÉS a (1 = 2, „a” = „a”)** **HAMIS** értéket jelenít meg.                                                                                                                                                                           |
-| VAGY (1-es feltétel\[2-es feltétel, ...\]                                                  | **HAMIS** értéket jelenít meg, ha *minden* megadott feltétel hamis. **IGAZ** értéket jelenít meg, ha *bármely* megadott feltétel igaz.                                                                                                                                                                 | **VAGY a (1 = 2, „a” = „a”)** **IGAZ** értéket jelenít meg.                                                                                                                                                                                                                      |
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| CASE (kifejezés, 1. beállítás, 1. \[2. beállítás, 2. eredmény\] ... \[, alapértelmezett eredmény\]) | A megadott kifejezés értékének kiértékelése a megadott alternatív beállításokkal szemben. Megjeleníti a lehetőség eredményét, amely egyenlő a kifejezés eredményével. Ellenkező az opcionális alapértelmezett eredményt adja vissza, ha alapértelmezett eredmény meg van adva. (Az alapértelmezett eredmény az utolsó paraméter, amelyet nem előz meg egy lehetőség.) | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "TÉL", "11", "TÉL", "12", "TÉL", "")** a **„TÉL”** karakterláncot jelenít meg, amikor a jelenlegi Finance and Operations munkamenet dátuma október és december közötti. Ellenkező esetben üres karakterláncot jelenít meg. |
+| HA (feltétel, 1 érték, 2 érték) | Az 1. megadott értéket adja vissza a megadott feltétel teljesülése esetén. Ellenkező esetben a második megadott értéket adja vissza. Ha az 1. érték és a 2. érték rekordok vagy rekordlistáják, az eredmény csak olyan mezőkkel rendelkezik, amelyek mindkét listában szerepelnek. | **HA (1 = 2, „feltétel teljesülése esetén”, „feltétel nem teljesül”)** **„feltétel nem teljesül”** karakterláncot jelenít meg. |
+| NEM (feltétel) | Megjeleníti a megadott feltételek sztornírozott logikai értékét. | **NEM (IGAZ)** **HAMIS** értéket jelenít meg. |
+| AND (1. feltétel\[, 2. feltétel, …\]) | **IGAZ** értéket jelenít meg, ha *minden* megadott feltétel igaz. Ellenkező esetben **HAMIS** választ jelenít meg. | **ÉS a (1 = 1, „a” = „a”)** **IGAZ** értéket jelenít meg. **ÉS a (1 = 2, „a” = „a”)** **HAMIS** értéket jelenít meg. |
+| OR (1. feltétel\[, 2. feltétel, …\]) | **HAMIS** értéket jelenít meg, ha *minden* megadott feltétel hamis. **IGAZ** értéket jelenít meg, ha *bármely* megadott feltétel igaz. | **VAGY a (1 = 2, „a” = „a”)** **IGAZ** értéket jelenít meg. |
 
 ### <a name="mathematical-functions"></a>Matematikai funkciók
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Funkció</th>
-<th>Leírás</th>
-<th>Példa</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ABS (szám)</td>
-<td>A megadott szám abszolút értékét jeleníti meg (előjel nélküli számot).</td>
-<td><strong>ABS (-1)</strong> <strong>1</strong> értéket jelenít meg.</td>
-</tr>
-<tr class="even">
-<td>TELJESÍTMÉNY (szám, teljesítmény)</td>
-<td>A megadott pozitív szám megadott teljesítményre történő javításának eredményét jeleníti meg.</td>
-<td><strong>TELJESÍTMÉNY (10, 2)</strong> <strong>100</strong> értéket jelenít meg.</td>
-</tr>
-<tr class="odd">
-<td>NUMBERVALUE (karakterlánc, tizedesjegy-elválasztó, számjegy csoportosítási elválasztó)</td>
-<td>A megadott karakterlánc konvertálása egy számhoz. A megadott szimbólumot és a megadott ezres elválasztót is a decimális szám egész és tört részének elválasztására használják.</td>
-<td><strong>NUMBERVALUE(&quot;1 234,56&quot;, &quot;,&quot;, &quot; &quot;)</strong> <strong>1234,56</strong> értéket jelenít meg.</td>
-</tr>
-<tr class="even">
-<td>ÉRTÉK (karakterlánc)</td>
-<td>A megadott karakterlánc konvertálása egy számhoz. A vesszőket és a pont karaktereket (.) decimális elválasztóknak tekintik és a vezető kötőjelet (-) negatív jelként használjál. Adjon meg egy kivételt, ha más nem numerikus karakterek tapasztalhatóak a megadott karakterláncban.</td>
-<td>A <strong>VALUE (&quot;1 234,56&quot;)</strong> kivételt okoz.</td>
-</tr>
-<tr class="odd">
-<td>KEREKÍTÉS (szám, tizedesjegyek)</td>
-<td>Azt a megadott számot jeleníti meg, amelyik a tizedesjegyek megadott számára van kerekítve:
-<ul>
-<li>Ha a megadott tizedesjegyek értéke nagyobb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek megadott számára van kerekítve.</li>
-<li>Ha a megadott tizedesjegyek értéke 0 (nulla) értéket, a megadott szám a legközelebbi egészre van kerekítve.</li>
-<li>Ha a megadott tizedesjegyek értéke kisebb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek bal oldalára van kerekítve.</li>
-</ul></td>
-<td><strong>KEREKÍTÉS (1200,767, 2)</strong> két tizedesjegyre kerekít és <strong>1200,77</strong> értéket jelenít meg. <strong>KEREKÍTÉS (1200,767, -3)</strong> az 1000 legközelebbi többszörösére kerekít és <strong>1000</strong> értéket jelenít meg.</td>
-</tr>
-<tr class="even">
-<td>LEKEREKÍTÉS (szám, tizedesjegyek)</td>
-<td>Azt a megadott számot jeleníti meg, amelyik a tizedesjegyek megadott számára van lekerekítve (nullára): <strong>Megjegyzés:</strong> Ez a funkció úgy viselkedik, mint a <strong>KEREKÍTÉS</strong>, de mindig lekerekíti a megadott számot.</td>
-<td><strong>LEKEREKÍTÉS (1200,767, 2)</strong> két tizedesjegyre kerekít le és <strong>1200,76</strong> értéket jelenít meg. <strong>LEKEREKÍTÉS (1700,767, -3)</strong> az 1000 legközelebbi többszörösére kerekít le és <strong>1000</strong> értéket jelenít meg.</td>
-</tr>
-<tr class="odd">
-<td>FELKEREKÍTÉS (szám, tizedesjegyek)</td>
-<td>Azt a megadott számot jeleníti meg, amelyik a tizedesjegyek megadott számára van felkerekítve (nulla fölött): <strong>Megjegyzés:</strong> Ez a funkció úgy viselkedik, mint a <strong>KEREKÍTÉS</strong>, de mindig felkerekíti a megadott számot.</td>
-<td><strong>FELKEREKÍTÉS (1200,763, 2)</strong> két tizedesjegyre kerekít fel és <strong>1200,77</strong> értéket jelenít meg. <strong>FELKEREKÍTÉS (1200,767, -3)</strong> az 1000 legközelebbi többszörösére kerekít fel és <strong>2000</strong> értéket jelenít meg.</td>
-</tr>
-</tbody>
-</table>
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| ABS (szám) | A megadott szám abszolút értékét adja vissza. (Más szóval, a számot előjel nélkül adja vissza.) | **ABS (-1)** **1** értéket jelenít meg. |
+| TELJESÍTMÉNY (szám, teljesítmény) | A megadott pozitív szám megadott teljesítményre történő javításának eredményét jeleníti meg. | **TELJESÍTMÉNY (10, 2)** **100** értéket jelenít meg. |
+| NUMBERVALUE (karakterlánc, tizedesjegy-elválasztó, számjegy csoportosítási elválasztó) | A megadott karakterlánc konvertálása egy számhoz. A megadott tizedeselválasztó a decimális szám egészszám- és a tizedestört-részei között használatos. A megadott számjegy csoportosítási elválasztó használatos az ezresek elválasztására. | **NUMBERVALUE ("1 234,56", ",","")** **1234,56** értéket jelenít meg. |
+| ÉRTÉK (karakterlánc) | A megadott karakterlánc konvertálása egy számhoz. A vesszőket és a pont karaktereket (.) decimális elválasztóknak tekintik és a vezető kötőjelet (-) negatív jelként használjál. Kivételt ad, ha más nem numerikus karakterek találhatók a megadott karakterláncban. | **ÉRTÉK („1 234,56”)** megad egy kivételt. |
+| KEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre kerekítve:<ul><li>Ha a megadott tizedesjegy-paraméter értéke nagyobb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek ezen megadott számára van kerekítve.</li><li>Ha a tizedesjegy-paraméter értéke **0** (nulla) értéket, a megadott szám a legközelebbi egészre van kerekítve.</li><li>Ha a tizedesjegy-paraméter értéke kisebb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek bal oldalára van kerekítve.</li></ul> | **KEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít és **1200,77** értéket jelenít meg. **KEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít és **1000** értéket jelenít meg. |
+| LEKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre lefelé kerekítve.<blockquote>[!NOTE]<br>Ez a függvény úgy viselkedik, mint a <strong>ROUND</strong>, de mindig lefelé (nulla felé) kerekíti a megadott számot.</blockquote> | **LEKEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít le és **1200,76** értéket jelenít meg. **LEKEREKÍTÉS (1700,767, -3)** az 1000 legközelebbi többszörösére kerekít le és **1000** értéket jelenít meg. |
+| FELKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre felfelé kerekítve.<blockquote>[!NOTE]<br>Ez a függvény úgy viselkedik, mint a <strong>ROUND</strong>, de mindig felfelé (nullával ellenkező irányba) kerekíti a megadott számot.</blockquote> | **FELKEREKÍTÉS (1200,763, 2)** két tizedesjegyre kerekít fel és **1200,77** értéket jelenít meg. **FELKEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít fel és **2000** értéket jelenít meg. |
 
-**Adatkonvertálási függvények**
+### <a name="data-conversion-functions"></a>Adatkonvertálási függvények
 
-| Funkció             | Leírás                                                                                                                                                                                                                                     | Példa                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| ÉRTÉK (karakterlánc) | A megadott karakterlánc konvertálása egy számhoz. A vesszőket és a pont karaktereket (.) decimális elválasztóknak tekintik és a vezető kötőjelet (-) negatív jelként használjál. Ha más nem numerikus karakterek tapasztalhatók a megadott karakterláncban, hiba történik.                                                                                  | **ÉRTÉK („1 234,56”)** megad egy kivételt.   |
-| NUMBERVALUE (karakterlánc, tizedesjegy-elválasztó, számjegy csoportosítási elválasztó) | A megadott karakterlánc konvertálása egy számhoz. A megadott szimbólumot és a megadott ezres elválasztót is a decimális szám egész és tört részének elválasztására használják.                                                                                  | **NUMBERVALUE ("1 234,56", ",","")** **1234,56** értéket jelenít meg.    |
-| INTVALUE (karakterlánc) | Egy karakterlánc egész ábrázolását adja eredményül. A tizedesértékeket a program levágja.                                                                                  | **INTVALUE (“100.77”)** a **100** értéket adja vissza. |
-| INTVALUE (szám) | Egy szám egész ábrázolását adja eredményül. A tizedesértékeket a program levágja.                                                                                  | **INTVALUE (-100.77)** a **-100** értéket adja vissza. |
-| INT64VALUE (karakterlánc) | Egy karakterlánc int64 ábrázolását adja eredményül. A tizedesértékeket a program levágja.                                                                                  | **INT64VALUE (“22565422744”)** a **22565422744** értéket jelenít meg. |
-| INT64VALUE (szám) | Egy szám int64 ábrázolását adja eredményül. A tizedesértékeket a program levágja.                                                                                  | **INT64VALUE (22565422744.00)** a **22565422744** értéket jelenít meg. |
-
-
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| ÉRTÉK (karakterlánc) | A megadott karakterlánc konvertálása egy számhoz. A vesszőket és a pont karaktereket (.) decimális elválasztóknak tekintik és a vezető kötőjelet (-) negatív jelként használjál. Kivételt ad, ha más nem numerikus karakterek találhatók a megadott karakterláncban. | **ÉRTÉK („1 234,56”)** megad egy kivételt. |
+| NUMBERVALUE (karakterlánc, tizedesjegy-elválasztó, számjegy csoportosítási elválasztó) | A megadott karakterlánc konvertálása egy számhoz. A megadott tizedeselválasztó a decimális szám egészszám- és a tizedestört-részei között használatos. A megadott számjegy csoportosítási elválasztó használatos az ezresek elválasztására. | A **NUMBERVALUE("1 234,56", ",", " ")** **1234,56**-ot ad vissza. |
+| INTVALUE (karakterlánc) | A megadott karakterláncot egész szám formájában adja vissza. Minden tizedesjegy csonkolásra kerül. | Az **INTVALUE ("100.77")** a **100** értéket adja vissza. |
+| INTVALUE (szám) | A megadott számot egész szám formájában adja vissza. Minden tizedesjegy csonkolásra kerül. | **INTVALUE (-100.77)** a **-100** értéket adja vissza. |
+| INT64VALUE (karakterlánc) | A megadott karakterláncot int64 formájában adja vissza. Minden tizedesjegy csonkolásra kerül. | Az **INT64VALUE ("22565422744")** **22565422744** értéket ad vissza. |
+| INT64VALUE (szám) | A megadott számot int64 formájában adja vissza. Minden tizedesjegy csonkolásra kerül. | **INT64VALUE (22565422744.00)** a **22565422744** értéket jelenít meg. |
 
 ### <a name="record-functions"></a>Rekord függvények
 
-| Funkció             | Leírás                                                                                                                                                                                                                                     | Példa                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| NULLCONTAINER (lista) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord. **Megjegyzés:** Ez a funkció már elavult. Használja az **EMPTYRECORD** helyette.                                                                                  | **NULLCONTAINER (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
-| EMPTYRECORD (rekord) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord. **Megjegyzés**: Egy **null** rekord az a rekord, ahol az összes mező üres értékkel rendelkezik (**0** \[nulla\] a számokra vonatkozóan, üres karakterlánc a karakterláncoknál stb.). | **ÜRESREKORD (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának.   |
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| NULLCONTAINER (lista) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE]<br>Ez a funkció már elavult. Használja az <strong>EMPTYRECORD</strong> helyette.</blockquote> | **NULLCONTAINER (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
+| EMPTYRECORD (rekord) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE]<br>A <strong>null</strong> rekord olyan rekord, amelyben minden mezőhöz üres érték tartozik. Az üres érték <strong>0</strong> (nulla) a számok esetén, üres karakterlánc a karakterláncoknál stb.</blockquote> | **ÜRESREKORD (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
 
 ### <a name="text-functions"></a>Szöveg függvények
 
@@ -491,12 +479,12 @@ Itt látható a módosított formázás futtatásának az eredménye. <a href=".
 <tbody>
 <tr class="odd">
 <td>FELSŐ (karakterlánc)</td>
-<td>Megjeleníti a megadott karakterláncot, amelyet nagybetűssé alakítanak.</td>
+<td>Visszaadja a megadott karakterláncot, amelyet előtte nagybetűssé alakít.</td>
 <td><strong>FELSŐ(&quot;Minta&quot;)</strong> a következőt adja vissza: <strong>&quot;MINTA&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>ALSÓ (karakterlánc)</td>
-<td>Megjeleníti a megadott karakterláncot, amelyet kisbetűssé alakítanak.</td>
+<td>Visszaadja a megadott karakterláncot, amelyet előtte kisbetűssé alakít.</td>
 <td><strong>ALSÓ (&quot;Minta&quot;)</strong> a következőt adja vissza: <strong>&quot;minta&quot;</strong>.</td>
 </tr>
 <tr class="odd">
@@ -522,35 +510,40 @@ Itt látható a módosított formázás futtatásának az eredménye. <a href=".
 <tr class="odd">
 <td>CHAR (szám)</td>
 <td>Megjelenítik a megadott Unicode szám által hivatkozott karakterek karakterláncát.</td>
-<td><strong>CHAR (255)</strong> a következőt adja vissza: <strong>&quot;ÿ&quot;</strong>. <strong>Megjegyzés:</strong> A visszaadott karakterlánc a szülő FILE formátumelemben kiválasztott kódolástól függ. A támogatott kódolások listája a <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kódolási osztály</a> témakörben található meg.</td>
+<td><strong>CHAR (255)</strong> a következőt adja vissza: <strong>&quot;ÿ&quot;</strong>.
+<blockquote>[!NOTE]<br>
+A funkció által visszaadott karakterlánc a szülő FILE formátumelemben kiválasztott kódolástól függ. A támogatott kódolások listájához lásd: <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kódolási osztály</a>.</blockquote>
+</td>
 </tr>
 <tr class="even">
 <td>ÖSSZEFŰZÉS (1-es karakterlánc [, 2-es karakterlánc...])</td>
-<td>Megjeleníti az összes megadott szöveg karakterláncot, amely egy karakterlánchoz van kapcsolva.</td>
-<td><strong>ÖSSZEFŰZÉS (&quot;abc&quot;, &quot;def&quot;)</strong> a következőt adja vissza: <strong>&quot;abcdef&quot;</strong>. <strong>Megjegyzés:</strong> Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> is a következőt adja vissza: <strong>&quot;abcdef&quot;</strong>.</td>
+<td>Az összes megadott szöveges karakterláncot adja vissza egy karakterláncba egyesítve.</td>
+<td><strong>ÖSSZEFŰZÉS (&quot;abc&quot;, &quot;def&quot;)</strong> a következőt adja vissza: <strong>&quot;abcdef&quot;</strong>.
+<blockquote>[!NOTE]<br>
+Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az <strong>&quot;abcdef&quot;</strong> értéket adja vissza.</blockquote>
+</td>
 </tr>
 <tr class="odd">
 <td>FORDÍTÁS (karakterlánc, minta, csere)</td>
-<td>Megjeleníti a megadott karakterláncot, amelyben a megadott minta karakterlánc karaktereinek összes előfordulása a karakterekkel van helyettesítve a megadott helyettesítő karakterlánc megfelelő helyén.</td>
+<td>Úgy adja vissza a megadott karakterláncot, hogy a megadott mintakarakterlánc karaktereinek összes előfordulását a megadott helyettesítő karakterlánc megfelelő helyén található karakterekkel helyettesíti.</td>
 <td>A <strong>FORDÍTÁS (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> lecseréli a <strong>&quot;cd&quot;</strong> mintát a <strong>&quot;GH&quot;</strong> karakterlánccal, és a következőt adja vissza: <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>CSERE (karakterlánc, minta, helyettesítő, reguláris kifejezés jelző)</td>
-<td>Ha a megadott reguláris kifejezés jelző <strong>igaz</strong>, akkor megjeleníti a megadott karakterláncot, amely a funkcióra vonatkozó minta argumentumaként meghatározott reguláris kifejezés alkalmazása által módosult. A kifejezés segítségével meg lehet találni azokat a karaktereket, amelyeket ki kell cserélni. A megadott helyettesítési argumentum karakterei segítségével ki lehet cserélni a megtalált karaktereket. Ha a megadott reguláris kifejezés jelző <strong>hamis</strong>, ez a funkció úgy viselkedik, mint a <strong>FORDÍTÁS</strong> funkció.</td>
-<td>  <strong>CSERE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, igaz)</strong> reguláris kifejezést alkalmazásával eltávolítja az összes nem numerikus szimbólumot, és <strong>&quot;19234564971&quot;</strong> értéket jelenít meg. <strong>CSERE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> a <strong>&quot;cd&quot;</strong> mintát lecseréli a <strong>&quot;GH&quot;</strong> karakterlánccal, és a következőt adja vissza: <strong>&quot;abGHef&quot;</strong>.</td>
+<td>Ha a megadott reguláris kifejezés jelzője <strong>igaz</strong>, akkor úgy adja vissza a megadott karakterláncot, hogy előtte a függvény mintaargumentumaként megadott reguláris kifejezés alkalmazásával módosította azt. A kifejezés segítségével meg lehet találni azokat a karaktereket, amelyeket ki kell cserélni. A megadott helyettesítési argumentum karakterei segítségével ki lehet cserélni a megtalált karaktereket. Ha a megadott reguláris kifejezés jelző <strong>hamis</strong>, ez a funkció úgy viselkedik, mint a <strong>FORDÍTÁS</strong> funkció.</td>
+<td><strong>CSERE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, igaz)</strong> reguláris kifejezést alkalmazásával eltávolítja az összes nem numerikus szimbólumot, és <strong>&quot;19234564971&quot;</strong> értéket jelenít meg. <strong>CSERE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> a <strong>&quot;cd&quot;</strong> mintát lecseréli a <strong>&quot;GH&quot;</strong> karakterlánccal, és a következőt adja vissza: <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr class="odd">
 <td>SZÖVEG (bevitel)</td>
-<td>A megadott bemenetet jeleníti meg, amelyet az aktuális Finance and Operations példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítanak. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
-<td>Ha a Finance and Operations-példány kiszolgáló területi beállításai <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> értékként vannak meghatározva, akkor a jelenlegi Finance and Operations munkamenet dátumát (2015.12.17.) <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong> szöveges karakterláncként jeleníti meg. <strong>TEXT (1/3)</strong>a következőt adja vissza: <strong>&quot;0,33&quot;</strong>.</td>
+<td>A megadott bemenetet úgy adja vissza, hogy előtte az aktuális Finance and Operations példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítja. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
+<td>Ha a Finance and Operations-példány kiszolgáló területi beállítása <strong>EN-US</strong>, a <strong>TEXT (NOW ())</strong> a jelenlegi Finance and Operations munkamenet dátumát (2015. december 17.) <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong> szöveges karakterláncként adja vissza. <strong>TEXT (1/3)</strong>a következőt adja vissza: <strong>&quot;0,33&quot;</strong>.</td>
 </tr>
 <tr class="even">
-<td>FORMÁTUM (1-es karakterlánc, 2-es karakterlánc [, 3-as karakterlánc...])</td>
-<td>Azt a megadott karakterláncot jeleníti meg, amely az <strong>%N</strong> elem bármely előfordulásának <em>n</em>. argumentumával történő helyettesítése által formázva lett. Az argumentumok karakterláncok. Ha egy argumentum nem érhető el a paraméter számára, a paraméter a karakterláncban <strong>&quot;%N&quot;</strong> elemként jelenik meg. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
-<td>Ebben a példában a <strong>PaymentModel</strong> adatforrás megjeleníti a vevőrekordok listáját a <strong>Vevő</strong> összetevőn keresztül és az adatérték feldolgozását a <strong>ProcessingDate</strong> mezőn keresztül. 
-<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
-
-A kijelölt vevőkre vonatkozó elektronikus fájlok létrehozására tervezett ER formátumban a <strong>PaymentModel</strong> adatforrásként van kijelölve, és ellenőrzi a munkafolyamatot. A végfelhasználó kivételt kap, amikor a kiválasztott vevő le van tiltva a jelentés feldolgozása során. Az ellenőrzés feldolgozásának ezen típusára vonatkozóan tervezett formula a következő forrásokat használhatja:
+<td>FORMAT (1. karakterlánc, 2. karakterlánc[, 3. karakterlánc, …])</td>
+<td>A megadott karakterláncot úgy adja vissza, hogy előtte az <strong>%N</strong> minden előfordulását az <em>n</em>. argumentummal helyettesítve formázza. Az argumentumok karakterláncok. Ha egy argumentum nem érhető el a paraméter számára, a paraméter a karakterláncban <strong>&quot;%N&quot;</strong> elemként jelenik meg. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
+<td>A következő példában a <strong>PaymentModel</strong> adatforrás megjeleníti a vevőrekordok listáját a <strong>Vevő</strong> összetevőn keresztül és az adatérték feldolgozását a <strong>ProcessingDate</strong> mezőn keresztül.
+<p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
+<p>A kijelölt vevőkre vonatkozó elektronikus fájlok létrehozására tervezett ER formátumban a <strong>PaymentModel</strong> adatforrásként van kijelölve, és ellenőrzi a munkafolyamatot. A felhasználó tájékoztatásul kivételt kap, amikor a kiválasztott vevő le van állítva a jelentés feldolgozásának dátumára. Az ellenőrzés feldolgozásának ezen típusára vonatkozóan tervezett formula a következő forrásokat használhatja:</p>
 <ul>
 <li>A SYS70894 címkével ellátott Finance and Operations a következő szöveggel rendelkezik:
 <ul>
@@ -563,97 +556,98 @@ A kijelölt vevőkre vonatkozó elektronikus fájlok létrehozására tervezett 
 <li><strong>A DE nyelvhez</strong>: &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
-Íme a tervezhető képlet: FORMÁTUM (ÖSSZEFŰZÉS (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;)) , Ha a jelentés feldolgozása a <strong>Litware Kiskereskedelmi vevőre</strong> vonatkozóan 2015. december 17-én folyik, az <strong>EN-US</strong> kultúrában és az <strong>EN-US</strong> nyelvben ez a képlet azt a következő szöveget jeleníti meg, amelyet a végfelhasználó számára egy kifejezés üzenetként jelenítenek meg: &quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot; Ha ugyanazt a jelentést dolgozzák fel 2015. december 17-én a <strong>Litware Kiskereskedelem vevőjére</strong> vonatkozóan, akkor a <strong>DE</strong> területi beállítással és a <strong>DE</strong> nyelvben ez a képlet azt a következő szöveget jeleníti meg, amely különböző dátumformátumot használ: &quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot; <strong>Megjegyzés:</strong> A címkék ER-képleteiben kerül alkalmazásra a következő szintaxis:
+<p>Íme a tervezhető képlet:</p>
+<p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
+<p>Ha a jelentés feldolgozása a <strong>Litware Retail</strong> vevőre vonatkozóan 2015. december 17-én folyik, az <strong>EN-US</strong> területi beállításban és az <strong>EN-US</strong> nyelvben ez a képlet a következő szöveget jeleníti meg, amely a felhasználó számára egy kivételre vonatkozó üzenetként jeleníthető meg:</p>
+<p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
+<p>Ha ugyanazt a jelentést 2015. december 17-én a <strong>Litware Retail</strong> vevőre vonatkozóan a <strong>DE</strong> területi beállítással és a <strong>DE</strong> nyelven dolgozzák fel, ez a képlet a következő, eltérő dátumformátumot használó szöveget jeleníti meg:</p>
+<p>&quot;Nichts zu drucken. Debitor 'Litware Kiskereskedelmi' wird für 17.12.2015 gesperrt.&quot;</p>
+<blockquote>[!NOTE]<br>
+A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
 <ul>
 <li><strong>Finance and Operations erőforrásokból származó címkékhez:</strong> <strong>@&quot;X&quot;</strong>, ahol X az alkalmazásobjektum-fában (AOT) szereplő címkeazonosító.</li>
 <li><strong>Az ER-konfigurációkban található címkékhez:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, ahol X az ER-konfigurációban található címkeazonosító.</li>
-</ul></td>
+</ul></blockquote></td>
 </tr>
 <tr class="odd">
 <td>SZÁMFORMÁTUM (szám, formátum)</td>
-<td>Megjeleníti a megadott formátumban szereplő megadott szám karakterlánc formáját. (A támogatott formátumokkal kapcsolatos információkért lásd: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">normál</a> és <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">egyéni</a>.) A környezet, amelyben a függvény fut, a számok formázásához használt kultúra függvénye.</td>
+<td>A megadott szám karakterlánc formáját adja vissza a megadott formátumban. (A támogatott formátumokkal kapcsolatos információkért lásd: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">normál</a> és <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">egyéni</a>.) A környezet, amelyben a függvény fut, a számok formázásához használt kultúra függvénye.</td>
 <td>Az EN-US kultúrában a <strong>SZÁMFORMÁTUM (0.45, &quot;p&quot;)</strong> a következőt adja vissza: <strong>&quot;45.00 %&quot;</strong>. <strong>SZÁMFORMÁTUM (10.45, &quot;#&quot;)</strong> a következőt adja vissza: <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>NUMERALSTOTEXT (szám, nyelv, pénznem, pénznem névjelzőjének nyomtatása, tizedes)</td>
-<td>A szöveges karakterlánccá alakított (konvertált) számot adja vissza betűvel kifejezve a megadott nyelven. A nyelvkód megadása nem kötelező: ha üres karakterláncként van meghatározva, a futó környezet (mappa vagy fájl generálására meghatározott) nyelvi kódját használja helyette a rendszer. A pénznemkód megadása nem kötelező. Ha üres karakterláncként van meghatározva, a rendszer a vállalati pénznemet használja. Megjegyzés: a <strong>Pénznem nevének nyomtatása</strong> paraméter és a <strong>Tizedes</strong> paraméter elemzését csak a következő nyelvkódokra vonatkozóan végzi el a rendszer: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, <strong>RU</strong>. Megjegyzés: a <strong>Pénznem nevének nyomtatása</strong> paraméter elemzését csak azon, a Finance and Operations rendszert használó vállalatok esetében végzi el a rendszer, amelyek országkontextusa támogatja a valutaragozást.</td>
-<td>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, hamis, 2) a következőt adja vissza: “One Thousand Two Hundred Thirty Four and 56” NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, hamis, 0) a következőt adja vissza: “Sto dwadzieścia” NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, igaz, 2) a következőt adja vissza: “Сто двадцать евро 21 евроцент”</td>
+<td>A megadott számot adja vissza, miután megtörtént az átírása (konvertálása) szöveglánc formátumra a megadott nyelven. A nyelvkód megadása nem kötelező. Ha üres karakterláncként van megadva, akkor a futó környezet nyelvkódját használja a rendszer. (A futó környezet nyelvkódja létrehozó mappához vagy fájlhoz van megadva.) A pénznemkód szintén nem kötelező. Ha üres karakterláncként van meghatározva, a rendszer a vállalati pénznemet használja.
+<blockquote>[!NOTE]<br>
+A pénznem névjelzőjének nyomtatása paraméter és a tizedes paraméterek elemzését csak a következő nyelvkódokra vonatkozóan végzi el a rendszer: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> és <strong>RU</strong>. Emellett a pénznem névjelzőjének nyomtatása paraméter elemzését csak azon, a Finance and Operations rendszert használó vállalatok esetében végzi el a rendszer, amelyek ország- vagy régiókörnyezete támogatja a valuták nevének ragozását.</blockquote></td>
+<td>A <strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> a következő eredményt adja vissza: <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. A <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> a következő eredményt adja vissza: <strong>&quot;Sto dwadzieścia&quot;</strong>. A <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> a következő eredményt adja vissza: <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
 <tr class="odd">
 <td>PADLEFT (karakterlánc, hossz, kitöltő karakterek)</td>
 <td>Megadott hosszúságú karakterláncot ad vissza, amelyben az aktuális karakterlánc eleje megadott karakterekkel van kitöltve.</td>
-<td>A PADLEFT (“1234”, 10, “ “) a következő szöveges karakterláncot adja vissza: „      1234”</td>
+<td>A <strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> a következő szöveges karakterláncot adja vissza: <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>TRIM (karakterlánc)</td>
-<td>Az adott szöveget adja vissza úgy, hogy törli a kezdő és a záró szóköz karaktereket, a szavak közötti több egymást követő szóközt pedig egy szóközre cseréli. </td>
-<td><strong>TRIM ("     Sample     text     ")</strong> a <strong>"Szöveg minta" kimenetet adja vissza.</strong></td>
+<td>A megadott szöveget adja vissza, miután a kezdő és záró szóközöket levágta, és a szavak közötti több szóközt eltávolította.</td>
+<td>A <strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;szöveg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> a következő eredményt adja vissza: <strong>&quot;Minta szöveg&quot;</strong>.</td>
 </tr>
 <tr class="odd">
 <td>GETENUMVALUEBYNAME (felsorolási adatforrás elérési útja, felsorolási érték címkeszövege)</td>
 <td>Egy megadott felsorolási adatforrás értékét adja vissza a felsorolási címke megadott szövege alapján.</td>
-<td>A következő példa bemutatja az adatmodellbe bevezetett jelentési irányt. Vegye figyelembe, hogy a címkék az enumerációs értékekhez vannak megadva.
-<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>  
-<p>Az alábbi példák a következőt mutatják:</p>
-<ul><li><strong>ReportDirection</strong> modellfelsorolás jelentésbe beillesztve <strong>$Direction</strong> adatforrásként</li>
-<li>A modellfelsorolás e funkció paramétereként használatos <strong>$IsArrivals</strong> ER-kifejezés. A kifejezés értéke <strong>IGAZ</strong>.
-</li></ul>
+<td>A következő ábra az adatmodellbe bevezetett <strong>ReportDirection</strong> sorszámozást mutatja be. Vegye figyelembe, hogy a címkék az enumerációs értékekhez vannak megadva.
+<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
+<p>A következő ábrán ezek a részletek láthatók:</p>
+<ul>
+<li>A <strong>ReportDirection</strong> modellfelsorolás jelentésbe <strong>$Direction</strong> adatforrásként kerül beillesztésre.</li>
+<li>Az <strong>$IsArrivals</strong> ER-kifejezés a modellfelsorolást e függvény paramétereként használja. A kifejezés értéke <strong>IGAZ</strong>.</li>
+</ul>
 <a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
 </tr>
 </tbody>
 </table>
 
-**Adatkonvertálási függvények**
+### <a name="data-conversion-functions"></a>Adatkonvertálási függvények
 
-| Funkció             | Leírás                                                                                                                                                                                                                                     | Példa                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| SZÖVEG (bevitel) | A megadott bemenetet jeleníti meg, amelyet az aktuális Finance and Operations példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítanak.
-A valós típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.| Ha a Finance and Operations-példány kiszolgáló területi beállításai **EN-US, TEXT (NOW ())** értékként vannak meghatározva, akkor a jelenlegi Finance and Operations munkamenet dátumát (2015.12.17.) **"12/17/2015 07:59:23 AM"** szöveges karakterláncként jeleníti meg.
-**TEXT (1/3) a „0,33” értéket jelenít meg**. |
-| QRCODE (karakterlánc) | QR-kód-képet ad vissza base64 bináris formátumban az adott karakterlánchoz. | **QRCODE (“Mintaszöveg”)** a **U2FtcGxlIHRleHQ=** értéket adja vissza.   |
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| SZÖVEG (bevitel) | A megadott bemenetet úgy adja vissza, hogy előtte az aktuális Finance and Operations példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítja. A **valós** típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik. | Ha a Finance and Operations-példány kiszolgáló területi beállítása **EN-US**, a **TEXT (NOW ())** a jelenlegi Finance and Operations munkamenet dátumát (2015. december 17.) **"12/17/2015 07:59:23 AM"** szöveges karakterláncként adja vissza. **SZÖVEG (1/3)** **„0,33”** értéket jelenít meg. |
+| QRCODE (karakterlánc) | QR-kód-képet ad vissza base64 bináris formátumban az adott karakterlánchoz. | A **QRCODE (“Sample text”)** a **U2FtcGxlIHRleHQ=** értéket adja vissza. |
 
 ### <a name="data-collection-functions"></a>Adatgyűjtési függvények
 
-| Funkció             | Leírás                                                                                                                                                                                                                                     | Példa                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| FORMATELEMENTNAME () | Az aktuális formátum összetevőjének nevét adja vissza. Üres karakterláncot ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva.| Tekintse meg az **ER kimeneti adatformátum használata számlálás és összegzés céljából** című Feladat-útmutatót (az **Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése** üzleti folyamat), ha többet szeretni megtudni ezen funkciók használatáról. |
-| SUMIFS (kulcskarakterlánc az összegzéshez, feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]]) |XML-csomópontok értékeinek összegét adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételeknek (tartomány és érték). Nulla érték jelenik meg, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. |            |
-| SUMIF (kulcskarakterlánc az összegzéshez, feltételtartomány karakterlánca, kiválasztási feltétel karakterlánca) | XML-csomópontok értékeinek összegét adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételnek (tartomány és érték). Nulla érték jelenik meg, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva.|           |
-| COUNTIFS (feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]) | XML-csomópontok számát adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételeknek (tartomány és érték). Nulla érték jelenik meg, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva.|     |
-| COUNTIF (feltételtartomány karakterlánca, kiválasztási feltételek karakterlánca) | XML-csomópontok számát adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételnek (tartomány és érték). Nulla érték jelenik meg, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva.|          |
-| COLLECTEDLIST (feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]) | XML-csomópontok értékeinek listáját adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételeknek (tartomány és érték). Üres listát ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva.|               |   
-
-
-
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| FORMATELEMENTNAME () | Az aktuális formátum összetevőjének nevét adja vissza. Üres karakterláncot ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | Ha többet szeretne megtudni e függvény használatáról, tekintse meg az **ER kimeneti adatformátum használata számlálás és összegzés céljából** című feladat-útmutatót (ez az **Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése** üzleti folyamat része). |
+| SUMIFS (kulcskarakterlánc az összegzéshez, feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]]) | XML-csomópontok értékeinek összegét adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételeknek (tartomány- és értékpárok). **0** (nulla) értéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
+| SUMIF (kulcskarakterlánc az összegzéshez, feltételtartomány karakterlánca, kiválasztási feltétel karakterlánca) | XML-csomópontok értékeinek összegét adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételnek (tartomány és érték). **0** (nulla) értéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
+| COUNTIFS (feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]) | Az XML-csomópontok számát adja vissza, amelyeket a rendszer a formátum végrehajtásakor gyűjtött, és amely megfelel a megadott feltételeknek (tartomány- és értékpárok). **0** (nulla) értéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
+| COUNTIF (feltételtartomány karakterlánca, kiválasztási feltételek karakterlánca) | Az XML-csomópontok számát adja vissza, amelyet a rendszer a formátum végrehajtásakor gyűjtött, és amely megfelel a megadott feltételnek (tartomány és érték). **0** (nulla) jelzőértéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
+| COLLECTEDLIST (feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]) | Az XML-csomópontok értékeinek listáját adja vissza, amelyeket a rendszer a formátum végrehajtásakor gyűjtött, és amely megfelel a megadott feltételeknek (tartomány és érték). Üres listát ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Egyéb (üzleti területre jellemző) függvények
 
-| Funkció                                                                         | Leírás                                                                                                                                                                                                                                                        | Példa                                                                                                                                                                                                                                                                                                       |
-|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PÉNZNEMVÁLTÁS (összeg, eredeti pénznem, cél pénznem, dátum, vállalat)        | A megadott pénzösszeg konvertálása az eredeti pénznemről a cél pénznemre a megadottFinance and Operations vállalat beállításainak használata segítségével a megadott időpontban.                                                                            | **PÉNZNEMVÁLTÁS (1, „EUR”, „USD”, MA(), „DEMF”)** egy euró egyenértékét USA-dollárban jelenít meg az aktuális munkameneti napon a DEMF vállalat beállításai alapján.                                                                                                                                  |
-| ÖSSZEGKEREKÍTÉS (szám, tizedes, kerekítési szabály)                                       | A megadott összeget a megadott kerekítési szabály és a megadott tizedesjegyek száma szerint kerekítenek. **Megjegyzés:** A kerekítési szabályt a **RoundOffType** felsorolás Finance and Operations értékeként kell meghatározni.                          | Ha a modell **model.RoundOff** paramétere ****Lefelé****, az **ÖSSZEGKEREKÍTÉS (1000,787, 2, model.RoundOff)** a következő értéket adja vissza: **1000,78**. Ha a **modell.Roundoff** paraméter értéke vagy **Normál** vagy **Felkerekítés** lehetőségre van beállítva, akkor az **ÖSSZEGKEREKÍTÉS (1000,787, 2. modell.Roundoff)** **1000,79** értéket jeleníti meg. |
-| CURCredRef (számjegy)                                                              | Egy hitelező hivatkozást jelenít meg a megadott számlaszám számjegyei alapján.                                                                                                                                                                                  | **CURCredRef („VEND-200002”)** **„2200002”** értéket jelenít meg.                                                                                                                                                                                                                                                         |
-| MOD\_97 (számjegy)                                                                 | Egy hitelező hivatkozást MOD97 kifejezésként jelenít meg a megadott számlaszám számjegyei alapján.                                                                                                                                                            | **MOD\_97 ("VEND-200002")** a következőt adja vissza: **"20000285"**.                                                                                                                                                                                                                                                           |
-| ISOCredRef (számjegy)                                                              | Egy ISO hitelezői hivatkozást jelenít meg a megadott számlaszám betűi és számjegyei alapján. **Megjegyzés:** A nem ISO szabványos betűkből származó szimbólumok eltávolításához, a bemeneti paramétereket le kell fordítani a függvénynek történő megfeleltetés előtt. | **ISOCredRef („VEND-200002”)** **„RF23VEND-200002”** értéket jelenít meg.                                                                                                                                                                                                                                                 |
-| CN\_GBT\_AdditionalDimensionID (karakterlánc, szám)                                  | A további pénzügyi dimenzió azonosítójának beolvasása. Ebben a karakterláncban a dimenziókat a rendszer vesszővel elválasztott azonosítókként jeleníti meg. Ebben a karakterláncban a kért dimenzió számsorozatkódját számok határozzák meg.                                                                            | CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3) a következőt adja vissza: “CC”                                                                                                                                                                                                                                      |
-| GetCurrentCompany ()                                                             | Egy olyan jogi személyhez (vállalathoz) tartozó kód szöveges változatát adja vissza, amelybe egy felhasználó jelenleg be van jelentkezve.                                                                                                                                                                                                                    | **GETCURRENTCOMPANY ()** az **USMF** értéket adja vissza a **Contoso Entertainment System USA** Finance and Operations vállalatba bejelentkezett felhasználók számára.                                                                                                                                                                                                                                                                                                              |
-| CH\_BANK\_MOD\_10 (számjegyek)                                                       | Egy hitelező hivatkozást MOD10 kifejezésként jelenít meg a megadott számlaszám számjegyei alapján.                                                                                                                                                                      | CH\_BANK\_MOD\_10 ("VEND-200002") a következőt adja vissza: 3                                                                                                                                                                                                                                                                   |
-| FA\_SUM (tárgyi eszköz kódja, értékmodell kódja, kezdő dátum, záró dátum)               | A tárgyi eszköz időszakra vonatkozó összegeinek előkészített adattárolóját adja vissza.                                                                                                                                                                                         | A FA\_SUM ("COMP-000001", “Current”, Date1, Date2) a „COMP-000001” tárgyi eszköz előkészített adattárolóját adja vissza „Aktuális” értékmodellel a Dátum1 és Dátum2 közötti időtartamra.                                                                                                                        |
-| FA\_BALANCE (tárgyi eszköz kódja, értékmodell kódja, jelentési év, jelentés dátuma) | A tárgyieszköz-egyenlegek előkészített adattárolóját adja vissza. A jelentési évet az **AssetYear** felsorolás Finance and Operations értékeként kell meghatározni.                                                                                           | A FA\_SUM ("COMP-000001", “Current”, AxEnumAssetYear.ThisYear, SESSIONTODAY ()) a „COMP-000001” tárgyieszköz-egyenlegek előkészített adattárolóját adja vissza „Aktuális” értékmodellként az aktuális 365 for Finance and Operations munkamenet dátumán.                                                                |
-| TABLENAME2ID (karakterlánc)                                                       | Egy adott táblanévhez tartozó táblaazonosítót ad vissza egész számokkal kifejezett formában.                                                                                                                                                                      | **TABLENAME2ID ("Intrastat")** a **1510** értéket adja vissza.                                                                                                                                                                                                                                                                   |
-| ISVALIDCHARACTERISO7064 (karakterlánc)                                                       | A logikai **IGAZ** értéket adja vissza, ha egy megadott karakterlánc érvényes nemzetközi bankszámlaszámnak (IBAN) felel meg. Minden más esetben a logikai **HAMIS** értéket adja vissza.                                                                                                                                                                      | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** az **IGAZ** értéket adja vissza. **ISVALIDCHARACTERISO7064 ("AT61")** a **HAMIS** értéket adja vissza.                                                                                                                                                                                                                                                                   |
+| Funkció | Leírás | Példa |
+|----------|-------------|---------|
+| PÉNZNEMVÁLTÁS (összeg, eredeti pénznem, cél pénznem, dátum, vállalat) | A megadott forráspénzösszeg konvertálása az eredeti pénznemről a megadott cél pénznemre a megadott Finance and Operations vállalat beállításainak használata segítségével a megadott időpontban. | **PÉNZNEMVÁLTÁS (1, „EUR”, „USD”, MA(), „DEMF”)** egy euró egyenértékét USA-dollárban jelenít meg az aktuális munkameneti napon a DEMF vállalat beállításai alapján. |
+| ÖSSZEGKEREKÍTÉS (szám, tizedes, kerekítési szabály) | A megadott összeget a megadott tizedesjegyek száma és a megadott kerekítési szabály szerint kerekíti.<blockquote>[!NOTE]<br>A kerekítési szabályt a Finance and Operations <strong>RoundOffType</strong> felsorolásának értékeként kell meghatározni.</blockquote> | Ha a **model.RoundOff** paraméter **Downward** értékre van állítva, a **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** a következő értéket adja vissza: **1000,78**. Ha a **modell.Roundoff** paraméter értéke vagy **Normál** vagy **Felkerekítés** lehetőségre van beállítva, akkor az **ÖSSZEGKEREKÍTÉS (1000,787, 2. modell.Roundoff)** **1000,79** értéket jeleníti meg. |
+| CURCredRef (számjegy) | Egy hitelező hivatkozást jelenít meg a megadott számlaszám számjegyei alapján. | **CURCredRef („VEND-200002”)** **„2200002”** értéket jelenít meg. |
+| MOD\_97 (számjegy) | Egy hitelező hivatkozást MOD97 kifejezésként jelenít meg a megadott számlaszám számjegyei alapján. | **MOD\_97 ("VEND-200002")** a következőt adja vissza: **"20000285"**. |
+| ISOCredRef (számjegy) | Egy ISO (International Organization for Standardization ) hitelezői hivatkozást jelenít meg a megadott számlaszám betűi és számjegyei alapján.<blockquote>[!NOTE]<br>A nem ISO szabványos betűkből származó szimbólumok eltávolításához a bemeneti paramétereket le kell fordítani a függvénynek történő megfeleltetés előtt.</blockquote> | **ISOCredRef („VEND-200002”)** **„RF23VEND-200002”** értéket jelenít meg. |
+| CN\_GBT\_AdditionalDimensionID (karakterlánc, szám) | A további pénzügyi dimenzió azonosítójának beolvasása. Ebben a karakterláncban a dimenziókat a rendszer vesszővel elválasztott azonosítókként jeleníti meg. Ebben a karakterláncban a kért dimenzió számsorozatkódját számok határozzák meg. | A **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** a következőt adja vissza: **"CC"**. |
+| GetCurrentCompany () | Egy olyan jogi személyhez (vállalathoz) tartozó kód szöveges változatát adja vissza, amelybe egy felhasználó jelenleg be van jelentkezve. | A **GETCURRENTCOMPANY()** az **USMF** értéket adja vissza a Finance and Operations programban a **Contoso Entertainment System USA** vállalatba bejelentkezett felhasználók számára. |
+| CH\_BANK\_MOD\_10 (számjegyek) | Egy hitelező hivatkozást MOD10 kifejezésként jelenít meg a megadott számlaszám számjegyei alapján. | A **CH\_BANK\_MOD\_10 ("VEND-200002")** a következőt adja vissza: **3**. |
+| FA\_SUM (tárgyi eszköz kódja, értékmodell kódja, kezdő dátum, záró dátum) | A tárgyi eszköz adott időszakra vonatkozó összegeinek előkészített adattárolóját adja vissza. | A **FA\_SUM ("COMP-000001", "Aktuális", Dátum1, Dátum2)**  a **„COMP-000001”** tárgyi eszköz előkészített adattárolóját adja vissza **„Aktuális”** értékmodellel a **Dátum1** és **Dátum2** közötti időtartamra. |
+| FA\_BALANCE (tárgyi eszköz kódja, értékmodell kódja, jelentési év, jelentés dátuma) | A tárgyieszköz-egyenleg előkészített adattárolóját adja vissza. A jelentési évet a Finance and Operations **AssetYear** felsorolásának értékeként kell meghatározni. | A **FA\_SUM ("COMP-000001", "Aktuális", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** a **„COMP-000001”** tárgyieszköz-egyenlegek előkészített adattárolóját adja vissza **„Aktuális”** értékmodellként az aktuális Finance and Operations munkamenet dátumán. |
+| TABLENAME2ID (karakterlánc) | Egy adott táblanévhez tartozó táblaazonosítót ad vissza egész számokkal kifejezett formában. | A **TABLENAME2ID ("Intrastat")** az **1510** értéket adja vissza. |
+| ISVALIDCHARACTERISO7064 (karakterlánc) | A logikai **IGAZ** értéket adja vissza, ha a megadott karakterlánc érvényes nemzetközi bankszámlaszámnak (IBAN) felel meg. Ellenkező esetben a visszaadott logikai érték **HAMIS**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** az **IGAZ** értéket adja vissza. **ISVALIDCHARACTERISO7064 ("AT61")** a **HAMIS** értéket adja vissza. |
 
 ### <a name="functions-list-extension"></a>A funkciók lista kiterjesztése
 
-Az ER segítségével bővítheti az ER kifejezésekben használt függvények listáját. Ez bizonyos műszaki erőfeszítéseket igényel. Részletes tudnivalókat lásd: [Elektronikus jelentéskészítési funkciók listájának kibővítése](general-electronic-reporting-formulas-list-extension.md).
+Az ER segítségével bővítheti az ER kifejezésekben használt függvények listáját. Ez bizonyos műszaki erőfeszítést igényel. Részletes tudnivalókat lásd: [Elektronikus jelentéskészítési funkciók listájának kibővítése](general-electronic-reporting-formulas-list-extension.md).
 
-<a name="see-also"></a>Lásd még
---------
+## <a name="see-also"></a>Lásd még
 
 [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 
 [Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése](general-electronic-reporting-formulas-list-extension.md)
-
-
-
 

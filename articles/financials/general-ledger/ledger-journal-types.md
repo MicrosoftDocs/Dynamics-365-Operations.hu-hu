@@ -1,6 +1,6 @@
 ---
 title: "Főkönyvi naplótípusok"
-description: "Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a Naplónevek lapot a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban használható naplók beállításához."
+description: "Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a **Naplónevek** lapot a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadásban használható naplók beállításához."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c05b199104af2c367266e3cd15937425e6457397
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: ccd1b9056f8c18de1b2ef706f70f53bac6cc43a1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -30,23 +31,23 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a Naplónevek lapot a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban használható naplók beállításához.
+Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a **Naplónevek** lapot a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadásban használható naplók beállításához.
 
-| Napló típusa                      | Cél                                                                                                                                                                                                                                                                                                                                                     | Adja meg a tranzakciókat ezen az oldalon                                |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| Foglalás                        | Felosztási tranzakciók létrehozása felosztási naplóban. Mielőtt létrehozhatna egy felosztási naplót, létre kell hoznia egy felosztási szabályt a **Felosztási napló szabályi** oldalon.                                                                                                                                                                           | Felosztási kérés feldolgozása                                     |
-| Jóváhagyás                          | Jóváhagyott szállítói számlák feladása a megfelelő főkönyvi számlákra.                                                                                                                                                                                                                                                                            | Számla-jóváhagyási napló                                       |
-| Banki csekk sztornírozása               | Feladott csekk sztornója. A naplótípus használatához válassza ki az **Ellenőrzési folyamat alkalmazása a kifizetések sztornírozásakor** lehetőséget a **Készpénz- és bankkezelési paraméterek** oldalon.                                                                                                                                                                                       | Csekksztornírozások, kifizetés sztornírozása                              |
-| Banki letéti jegy érvénytelenítése    | Letéti jegy visszavonása. A naplótípus használatához válassza ki az **Ellenőrzési folyamat a letéti jegyek kifizetésének sztornírozásakor** lehetőséget a **Készpénz- és bankkezelési paraméterek** oldalon.                                                                                                                                                                       | Letétijegy-kifizetések visszavonása                             |
+| Napló típusa                      | Cél                       | Adja meg a tranzakciókat ezen az oldalon                                |
+|-----------------------------------|-------------------------------|----------------------------------------------------------------|
+| Foglalás                        | Felosztási tranzakciók létrehozása felosztási naplóban. Mielőtt létrehozhatna egy felosztási naplót, létre kell hoznia egy felosztási szabályt a **Felosztási napló szabályi** oldalon.      | Felosztási kérés feldolgozása             |
+| Jóváhagyás                          | Jóváhagyott szállítói számlák feladása a megfelelő főkönyvi számlákra.  | Számla-jóváhagyási napló                                       |
+| Banki csekk sztornírozása               | Feladott csekk sztornója. A naplótípus használatához válassza ki az **Ellenőrzési folyamat alkalmazása a kifizetések sztornírozásakor** lehetőséget a **Készpénz- és bankkezelési paraméterek** oldalon.   | Csekksztornírozások, kifizetés sztornírozása                   |
+| Banki letéti jegy érvénytelenítése    | Letéti jegy visszavonása. A naplótípus használatához válassza ki az **Ellenőrzési folyamat a letéti jegyek kifizetésének sztornírozásakor** lehetőséget a **Készpénz- és bankkezelési paraméterek** oldalon.   | Letétijegy-kifizetések visszavonása            |
 | Költségvetés                            | Költségvetési előirányzatok feldolgozása. A naplótípus használatához válassza ki a **Költségvetési előirányzat engedélyezése** lehetőséget a **Főkönyvi paraméterek** oldalon. A költségvetési naplóbejegyzések azon főkönyvi számlákon alapuló információkat tartalmazzák, amelyek a **Feladásdefiníciók** oldalon lettek meghatározva.                                                        |                                                                |
-| Vevő - váltó elfogadása  | Vevői elfogadási tranzakciók létrehozása váltóknál.                                                                                                                                                                                                                                                                                              | Váltónapló kiállítása, Váltónapló újbóli kiállítása |
-| Vevő - banki utalás          | Szervezete bankjának átküldhető váltóátutalási fájl létrehozása. A naplótípus használatához törölje az **Automatikus kiegyenlítés** lehetőséget a **Kinnlevőségek** **paraméterei** oldalon.                                                                                                                                             | Átutalás                                                     |
-| Vevő - váltó kiállítása    | Vevői váltókiállítási tranzakciók létrehozása. A naplótípus használatához törölje a **Kötelezvénykiállítási napló automatikus létrehozása és feladása számlák feladásakor** lehetőséget a **Fizetési módok – vevők** oldalon.                                                                                                                                         | Váltónapló kiállítása                                  |
-| Vevői kifizetés                  | Vevői kifizetési tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                       | Fizetési napló                                                |
-| Vevő - váltó óvatolása | Vevői óvatolt váltótranzakciók létrehozása.                                                                                                                                                                                                                                                                                                      | Váltónapló elutasítása                               |
-| Vevő - váltó visszavonása  | Vevői váltó újrakiállítási tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                       | Váltónapló újbóli kiállítása                                |
-| Vevő - váltó kiegyenlítése  | Vevők váltókiegyenlítési tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                       | Váltó kiegyenlítésének naplója                                |
-| Napi                             | Napi tranzakciók létrehozása a főkönyvi naplóban.                                                                                                                                                                                                                                                                                                             | Általános napló                                                |
+| Vevő - váltó elfogadása  | Vevői elfogadási tranzakciók létrehozása váltóknál.             | Váltónapló kiállítása, Váltónapló újbóli kiállítása |
+| Vevő - banki utalás          | Szervezete bankjának átküldhető váltóátutalási fájl létrehozása. A naplótípus használatához törölje az **Automatikus kiegyenlítés** lehetőséget a **Kinnlevőségek** **paraméterei** oldalon.            | Átutalás                                                     |
+| Vevő - váltó kiállítása    | Vevői váltókiállítási tranzakciók létrehozása. A naplótípus használatához törölje a **Kötelezvénykiállítási napló automatikus létrehozása és feladása számlák feladásakor** lehetőséget a **Fizetési módok – vevők** oldalon.   | Váltónapló kiállítása                                  |
+| Vevői kifizetés                  | Vevői kifizetési tranzakciók létrehozása.                             | Fizetési napló             |
+| Vevő - váltó óvatolása | Vevői óvatolt váltótranzakciók létrehozása.                    | Váltónapló elutasítása                               |
+| Vevő - váltó visszavonása  | Vevői váltó újrakiállítási tranzakciók létrehozása.                     | Váltónapló újbóli kiállítása                                |
+| Vevő - váltó kiegyenlítése  | Vevők váltókiegyenlítési tranzakciók létrehozása.                       | Váltó kiegyenlítésének naplója                                |
+| Napi                             | Napi tranzakciók létrehozása a főkönyvi naplóban.                          | Általános napló                                                |
 | Eltávolítás                       | Eltávolítási tranzakciók létrehozása eltávolítási naplóban. A naplótípus használatához válassza ki a **Pénzügyi eltávolítási folyamatokhoz** és a **Pénzügyi konszolidálási folyamatokhoz** lehetőséget a **Jogi személyek** oldalon. A naplótípus használata előtt létre kell hozni egy főkönyv eltávolítási szabályt a **Főkönyv eltávolítási szabály** oldalon. | Eltávolítás                                                    |
 | Tárgyi eszköz költségvetése                | Tárgyieszköz-tételjegyzékbejegyzések létrehozása.                                                                                                                                                                                                                                                                                                                 | Tárgyi eszköz költségvetése                                             |
 | Számlajegyzék                  | Szállítói számlák alapadatainak rögzítése.                                                                                                                                                                                                                                                                                                           | Számlajegyzék                                               |
