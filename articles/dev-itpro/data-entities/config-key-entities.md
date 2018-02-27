@@ -26,6 +26,9 @@ ms.lasthandoff: 01/19/2018
 ---
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurációs kulcsok és adatentitások
+
+[!include[banner](../includes/banner.md)]
+
 Mielőtt adatentitásokat használna az adatok importálására vagy exportálására, javasoljuk, hogy először határozza meg a konfigurációs kulcsok hatását a használni kívánt adatentitásokra. 
 
 Ha szeretne többet megtudni a Finance and Operations programban használt konfigurációs kulcsokról, lásd: [Licenckódok és konfigurációskulcs-jelentések](../sysadmin/license-codes-configuration-keys-report.md).
