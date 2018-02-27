@@ -19,14 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 34654c458ce74bf2ee6c2d2bac655d6c399ca393
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: e2447274016f517db3ec0eb8f55c6b3163822f50
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/27/2018
 
 ---
 
 # <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a><span data-ttu-id="88883-104">Elektronikus dokumentumok és alkalmazásadatok frissítése az Elektronikus jelentéskészítő eszköz használatával</span><span class="sxs-lookup"><span data-stu-id="88883-104">Generate electronic documents and update application data using the Electronic reporting tool</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="88883-105">Lehetőség van elektronikus jelentési (ER) formátumok tervezésére, amelyek kimenő elektronikus dokumentumok létrehozására használhatók a Finance and Operations alkalmazásban.</span><span class="sxs-lookup"><span data-stu-id="88883-105">You can design Electronic reporting (ER) formats that can be used in the Finance and Operations application to generate outgoing electronic documents.</span></span> <span data-ttu-id="88883-106">Olyan ER-formátumokat is készíthet, amelyek a bejövő elektronikus dokumentumokat elemzik, és ezeknek a dokumentumoknak a tartalmát használják az alkalmazásadatok frissítésére.</span><span class="sxs-lookup"><span data-stu-id="88883-106">You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.</span></span> 
 
