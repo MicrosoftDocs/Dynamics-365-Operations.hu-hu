@@ -62,7 +62,7 @@ A következő lépések leírják az egyéni mező létrehozásának és a mező
 10.   Kattintson a **Beillesztés** elemre a megjelölt mező a képernyő kijelölt területére történő beszúrásához. 
 11.   **Opcionális lehetőség:** Engedélyezze az **Áthelyezés** módot a személyre szabási eszköztáron az új mezők a kijelölt terület kívánt helyére való áthelyezéséhez. Lásd [A felhasználói felület testreszabása](personalize-user-experience.md) című részt a képernyők személyes használatra való optimalizálására szolgáló személyre szabási szolgáltatások használatáról.  
 
-### <a name="sharing-custom-fields-with-other-users"></a>Egyéni mezők megosztása más felhasználókkal
+## <a name="sharing-custom-fields-with-other-users"></a>Egyéni mezők megosztása más felhasználókkal
 Miután létrehozott egy egyéni mezőt, és megjelenítette egy képernyőn, érdemes lehet megadnia ezt az új mezőt is tartalmazó frissített oldalnézetet a rendszer többi felhasználójának. Ez kétféleképpen érhető el a termék személyre szabási képességeinek használatával:
 
 -   Az ajánlott útvonal a rendszergazdán keresztüli lebonyolítás, aki a személyre szabást közzéteheti az összes felhasználónak vagy a felhasználók egy részhalmazának. A további részletekhez lásd: [A felhasználói élmény testreszabása](personalize-user-experience.md). 
