@@ -25,6 +25,8 @@ ms.lasthandoff: 01/23/2018
 
 # <a name="accessibility-features"></a>Hozzáférhetőségi funkciói
 
+[!include[banner](../includes/banner.md)]
+
 Ez a téma azokat a funkciókat írja le, amelyek célja a Dynamics 365 for Finance and Operations, Enterprise Edition, a Dynamics 365 for Retail és a Dynamics 365 for Talent használatának megkönnyítése különböző fogyatékkal élő felhasználók számára. Bizonyos funkciók például azokat segítik, akik olyan, gyengénlátóknak kifejlesztett technológiákat használnak, mint a Microsoft Windows Narrátor.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>A Windows Narrátor, és csak a billentyűzet elérése

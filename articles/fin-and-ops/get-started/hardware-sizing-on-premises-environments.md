@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Hardverméretezés on-premises környezetekhez
+
+[!include[banner](../includes/banner.md)]
+
 Mielőtt elkezdi a hardver és infrastruktúra helyszíni környezetekben való méretezésének folyamatát, ismerkedjen meg ezzel: [Rendszerkövetelmények](system-requirements.md) és ezzel: [Beállítási és telepítési útmutató](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), hogy kellőképpen ismerje a mögöttes infrastruktúrát. 
 
   **Megjegyzés:** Alaposan figyeljen oda a rendszerbeállítás ajánlott eljárásaira az optimális teljesítmény érdekében. 

@@ -25,6 +25,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="expense-management-parameters"></a>Költséggazdálkodási paraméterek
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 A következő paraméterek a Költséggazdálkodás modul általános működését határozzák meg.

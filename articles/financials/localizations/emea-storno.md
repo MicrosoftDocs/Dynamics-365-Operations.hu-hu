@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="storno-accounting"></a>Sztornókönyvelés
 
+[!include[banner](../includes/banner.md)]
+
 A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.
 
 A *sztornókönyvelés* az eredeti naplószámla-bejegyzések tartozik és követel összegeinek sztornírozási gyakorlata negatív számok segítségével. Mivel a könyvelők tipikusan piros tintával írják a sztornókönyvelési bejegyzéseket, ez a számviteli gyakorlat *piros sztornó* néven is ismert. A sztornókönyvelés használatával törölheti a dokumentumot helytelen összegekkel, de a lemondás után mindig be kell írnia a megfelelő dokumentum összegét.

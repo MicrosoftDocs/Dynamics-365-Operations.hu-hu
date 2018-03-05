@@ -27,6 +27,8 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Felhőalapú és helyszíni szolgáltatások összehasonlítása
 
+[!include[banner](../includes/banner.md)]
+
 Ez a témakör bemutatja, hogy mindegyik funkció elérhető-e ezekben a termékekben:
 
 + Dynamics 365 for Finance and Operations, Enterprise edition (felhő)

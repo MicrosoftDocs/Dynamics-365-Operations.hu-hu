@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="bank-management-workspace"></a>Bankkezelési munkaterület
 
+[!include[banner](../includes/banner.md)]
+
 A **Bankszámla kezelése** munkaterület olyan információkat jelenít meg, amelyek a vállalati bankszámlákhoz kapcsolódnak. Ez a munkaterület egy **Összefoglaló** nézetet és egy **Elemzés** oldalt tartalmaz. Az **Összefoglaló** nézet összegző csempéket, bankszámlaadatokat, egyenleget és kapcsolódó adatokat tartalmaz. Az **Analytics** oldal a Microsoft Power BI funkciói révén vizuálisan megjeleni a bankszámlaegyenlegekkel kapcsolatos információkat.
 
 ## <a name="summary-view"></a>Osszegzésé megtekintése
