@@ -29,6 +29,8 @@ ms.lasthandoff: 10/17/2017
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a>Az MPOS/CPOS bemutató adatképernyő-elrendezései
 
+[!include[banner](includes/banner.md)]
+
 Ez a témakör a Microsoft Dynamics 365 for Retail pénztári bemutató adatkészleteinek részét képező képernyő-elrendezésekkel kapcsolatban tartalmaz tájékoztatást.
 
 ## <a name="overview"></a>Áttekintés
