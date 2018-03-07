@@ -16,14 +16,17 @@ ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1019b0f60673e158de1257ba7f5efe77e3a4aaa5
+ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
+ms.openlocfilehash: 64a9381224ebe9dfeac8a3fab0211937a8df733c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="reverse-charge-vat"></a><span data-ttu-id="532f4-103">Fordított áfa</span><span class="sxs-lookup"><span data-stu-id="532f4-103">Reverse charge VAT</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="532f4-104">Ez a témakör általánosan bemutatja azt, hogyan állítható be a fordított áfa számítása az európai országoknál.</span><span class="sxs-lookup"><span data-stu-id="532f4-104">This topic describes a generic approach for setting up the reverse charge value-added tax (VAT) for European countries.</span></span>
 
 <span data-ttu-id="532f4-105">A fordított áfaszámítás egy olyan adózási rendszer, amely az áfa könyvelésének és jelentésének felelősségét a termék vagy szolgáltatás eladójáról a vevőre ruházza.</span><span class="sxs-lookup"><span data-stu-id="532f4-105">Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services.</span></span> <span data-ttu-id="532f4-106">Ezért az áruk és/vagy szolgáltatások fogadói jelentik be mind a kimeneti áfát (az eladó szerepében), mind a bemeneti áfát (a beszerző szerepében).</span><span class="sxs-lookup"><span data-stu-id="532f4-106">Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) in their VAT statement.</span></span>
