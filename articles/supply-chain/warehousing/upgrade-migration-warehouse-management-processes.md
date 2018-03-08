@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>Termékek és raktárkezelés áttelepítése AX 2012-ről Finance and Operations szolgáltatásra
 
+[!include[banner](../includes/banner.md)]
+
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszer termék- és raktárkezelési áthelyezési beállításairól.
 
 <a name="introduction"></a>Bevezetés

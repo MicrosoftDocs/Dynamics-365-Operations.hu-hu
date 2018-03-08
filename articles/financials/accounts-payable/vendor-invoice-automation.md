@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="vendor-invoice-automation"></a>Szállítói számla automatizálása
 
+[!include[banner](../includes/banner.md)]
+
 Ez a témakör azokat a funkciókat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
 
 Azok a szervezetek amelyek egyszerűsítik a Kötelezettségek folyamatot, gyakran a számlafeldolgozás folyamatát tartják az egyik olyan kiemelt területnek, amelynek hatékonyabbnak kellene lennie. Sok esetben ezek a szervezetek a papíralapú számlák feldolgozását külső optikai karakterfelismerési (OCR) szolgáltatónak adják át. Ezután géppel olvasható számlázi metaadatokat kapnak az egyes számlák beolvasott képével. Az automatizálás elősegítése érdekében egy ún. „utolsó mérföld”megoldást építenek ki, amely lehetővé teszi az ilyen műtermékek felhasználását a számlázási rendszerben. A Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszer most lehetővé teszi az „utolsó mérföld” azonnali automatizálásét egy számlaautomatizálási megoldás révén.

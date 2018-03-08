@@ -27,6 +27,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="websearchax-retired"></a>WebSearchAX megszűnt
 
+[!include[banner](../includes/banner.md)]
+
 Meg kellett szüntetnünk a WebSearchAX oldalt. Javasoljuk, hogy a kedvenc keresőmotorja webhelykeresés funkciójával helyettesítse.  Példa: 
 
 site:technet.microsoft.com dynamics ax 2012 "keresőkifejezés"

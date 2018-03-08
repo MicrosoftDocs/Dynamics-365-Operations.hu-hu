@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="generate-affordable-care-act-reports"></a>Affordable Care Act-jelentések létrehozása
+
+[!include[banner](includes/banner.md)]
+
 Olyan funkció érhető el, amely azokat a munkáltatókat segítik, amelyeknek az 1095-B és 1095-C űrlapokon jelentett adatokat kell támogatniuk az Affordable Care Act **munkáltatói felhatalmazásra** vonatkozó részének támogatása érdekében. Megjegyzés: Ez a funkció csak az Egyesült Államokbeli jogi személyek számára aktív.
 
 ## <a name="getting-started"></a>Első lépések

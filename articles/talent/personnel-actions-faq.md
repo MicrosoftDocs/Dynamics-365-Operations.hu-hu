@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="personnel-actions-faq"></a>Személyzeti műveletek [GYIK]
+
+[!include[banner](includes/banner.md)]
+
 Ez a témakör azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie. Számos feladat megköveteli személyzeti műveletek elvégzését, pédául az új beosztások létrehozása, a meglévő beosztások értékeinek módosítása, új dolgozók felvétele, dolgozók átvétele, dolgozók kompenzációjának módosítása, beosztás-hozzárendelések módosítása, illetve a felmondások.
 
 **Megjegyzés:** a személyzeti műveletek csak akkor érhetők el, ha a **Dolgozói műveletek engedélyezése** és a **Beosztásműveletek engedélyezése** mezők **Igen** értékre vannak állítva a **Személyzeti műveletek** lapon az **Emberi erőforrások megosztott paraméterei** oldalon. 

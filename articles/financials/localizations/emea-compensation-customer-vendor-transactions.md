@@ -26,6 +26,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="set-up-customer-and-vendor-compensation"></a>Vevői és szállítói kompenzáció beállítása
+
+[!include[banner](../includes/banner.md)]
+
 Ez a témakör olyan információkat nyújt, amelyek segítségével lefuttathatja a kompenzációs folyamatot az olyan szállítói és vevőszámlák esetében, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
 
 A kelet-európai felhasználóknak gyakran követeléseket és kinnlevőségeket kell kezelniük egy olyan vállalatnál, amely vevőként és szállítóként egyaránt regisztrálva van a rendszerben. Ez az elszámolási eljárás egy olyan jogi eljárást alkalmaz, amelynek elnevezése *kompenzáció* vagy *nettóérték-számítás*. 

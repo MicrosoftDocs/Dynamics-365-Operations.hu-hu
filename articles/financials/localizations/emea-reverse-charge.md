@@ -24,6 +24,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="reverse-charge-vat"></a>Fordított áfa
+
+[!include[banner](../includes/banner.md)]
+
 Ez a témakör általánosan bemutatja azt, hogyan állítható be a fordított áfa számítása az európai országoknál.
 
 A fordított áfaszámítás egy olyan adózási rendszer, amely az áfa könyvelésének és jelentésének felelősségét a termék vagy szolgáltatás eladójáról a vevőre ruházza. Ezért az áruk és/vagy szolgáltatások fogadói jelentik be mind a kimeneti áfát (az eladó szerepében), mind a bemeneti áfát (a beszerző szerepében).

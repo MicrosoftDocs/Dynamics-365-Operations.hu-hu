@@ -54,10 +54,6 @@ Határozza meg a tranzakciók feladásában használt főkönyvet, ami a kijelö
 Ha azt szeretné, hogy a vevői tranzakciók feladási profiljai megegyezzenek, akkor csak egy feladási profilt állítson be az összes számla kód mezőben. Határozza meg a következő értékeket a feladási profil beállításához:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Mező</th>

@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="attract-overview"></a>Attract – áttekintés
+
+[!include[banner](includes/banner.md)]
+
 Az Attract az új szakemberek felvételi folyamatának kezeléséhez nyújt szolgáltatásokat. A pályázók hozzáadhatók a nyitott pozíciókhoz, és végigvihetők a folyamat állomásain, amíg ajánlatot nem kapnak, vagy el nem utasítják a pályázatukat. A pályázók minden egyes állomáson olyan tevékenységeken vihetők végig, mint a szűrő hívások, a felmérések vagy az interjúk ütemezése. A jelentkezést követően a jelentkezők e-mailes felkérést kapnak az Attract-regisztrációra, ahol követhetik az állás állapotát, a pályázatukat, és válaszolhatnak a hozzájuk rendelt feladatokra.
 
 Az Attract a következő funkciókra használható:

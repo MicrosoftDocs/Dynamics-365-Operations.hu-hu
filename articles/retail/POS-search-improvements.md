@@ -28,6 +28,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Termék- és vevőkeresés áttekintése a pénztárban
 
+[!include[banner](includes/banner.md)]
+
 A modern pénztár (MPOS) és a felhőpénztár (CPOS) könnyen használható keresési funkciót biztosítanak, amellyel a bolti alkalmazottak gyorsan kereshetnek termékeket és vevőket. A keresési sáv mindig látható az MPOS és a CPOS tetején, így az alkalmazottak gyorsan megtalálhatják a termékeket és a vevőket.
 
 Az alkalmazottak az aktuális üzlethez társított katalógusokban és szortimentekben, valamint a vállalat bármely más üzletéhez társított katalógusokban és szortimentekben kereshetnek termékeket. Ezért a pénztárosok értékesíthetnek és visszaküldhetnek az üzlet szortiment kívül eső termékeket. Ehhez hasonlóan az alkalmazottak kereshetnek a jelenlegi vagy a vállalat bármely más üzletével társított vevőkkel. Ezenkívül az alkalmazottak kereshetnek a fölérendelt szervezet bármely másik vállalatához társított vevőket.
