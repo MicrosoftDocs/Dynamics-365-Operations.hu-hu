@@ -19,14 +19,17 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: f755c1e46d5111282bfffdf751fe98beaa081a51
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 76d0c911bdddbc5a34644dc96ec13dd8fd53a338
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a><span data-ttu-id="ef9a4-103">Külső katalógus használata engedélyezése a PunchOut e-beszerzés számára</span><span class="sxs-lookup"><span data-stu-id="ef9a4-103">Use external catalogs for PunchOut eProcurement</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="ef9a4-104">Ha külső katalógusokat használ a PunchOut e-beszerzéssel, nem kell megőriznie a szállítók termékeivel kapcsolatos információkat a saját alapadataiban.</span><span class="sxs-lookup"><span data-stu-id="ef9a4-104">By using external catalogs for PunchOut e-procurement, you don't have to maintain information about your vendors' products in your own master data.</span></span> <span data-ttu-id="ef9a4-105">Ehelyett a rendszer a szállító webhelyén levő bevásárlókocsit alakítja át az igénylési sorokká, amelyek a megfelelő termékinformációkkal rendelkeznek.</span><span class="sxs-lookup"><span data-stu-id="ef9a4-105">Instead, the shopping cart on a vendor's website is converted to requisition lines that have the correct product information.</span></span> 
 
 <span data-ttu-id="ef9a4-106">Kerülje a szállító termékei leírásainak és árainak saját termék alapadataiban történő karbantartását.</span><span class="sxs-lookup"><span data-stu-id="ef9a4-106">You should avoid maintaining the descriptions and prices of your vendors’ products in your own product master data.</span></span> <span data-ttu-id="ef9a4-107">Ehelyett használjon külső katalógusokat a PunchOut e-beszerzéssel.</span><span class="sxs-lookup"><span data-stu-id="ef9a4-107">Instead, use external catalogs for PunchOut e-procurement.</span></span> <span data-ttu-id="ef9a4-108">Ezután amikor az alkalmazottak igénylésekethoznak létre, „blokkolhatják” ezeket a szállító külső katalógusának helyéhez (vagyis elhagyják a rendszerét és a szállítói webhelyre lépnek).</span><span class="sxs-lookup"><span data-stu-id="ef9a4-108">Then, when employees create requisitions, they can “punch out” to a vendor’s external catalog site (in other words, they leave your system and go to the vendor’s site).</span></span> <span data-ttu-id="ef9a4-109">A bevásárlókocsihoz a szállító webhelyén hozzáadott termékek ezután igénylési sorokká konvertálhatók.</span><span class="sxs-lookup"><span data-stu-id="ef9a4-109">The products that are added to the shopping cart on the vendor’s website can then be converted to requisition lines.</span></span> <span data-ttu-id="ef9a4-110">Ennek megfelelően helyes termékinformációkat kap a termékazonosító, a név, az ár stb. tekintetében.</span><span class="sxs-lookup"><span data-stu-id="ef9a4-110">Therefore, you get the correct product information: product ID, name, price, and so on.</span></span>

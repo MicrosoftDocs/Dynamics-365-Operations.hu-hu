@@ -17,14 +17,16 @@ ms.author: tbisaacs
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: bb0b97c7728f76d84b85fb5cfa209a0d3b2df3de
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 54caf2648766053ec5a662f48bd50a1ec9b8911a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="create-an-engaging-onboarding-experience"></a><span data-ttu-id="2c574-103">Hozzon létre egy vonzó bevezetési tapasztalatot</span><span class="sxs-lookup"><span data-stu-id="2c574-103">Create an engaging onboarding experience</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="2c574-104">Ha hatékonyan valósítják meg, a bevezetés segít az új alkalmazottaknak a hatékonyabb munkavégzésben, miközben kialakul az azonosulás az új szerepkörükkel.</span><span class="sxs-lookup"><span data-stu-id="2c574-104">When done effectively, onboarding helps new employees perform more effectively while also gaining a sense of belonging in their new role.</span></span> <span data-ttu-id="2c574-105">A bevezetés segíthet az új alkalmazottaknak gyorsabban és pontosabban megérteni az új szerepkörüket, mint egyébként, és elkezdhetik kiépíteni azokat a kapcsolatokat, amelyek segítségével sikeresek lehetnek.</span><span class="sxs-lookup"><span data-stu-id="2c574-105">Onboarding can help new employees understand their new role more quickly and accurately than they would have otherwise, and they get a head start on establishing relationships that can help them succeed.</span></span> <span data-ttu-id="2c574-106">A negatív forgatókönyv azt jelenti, hogy a hatástalan bevezetés esetén az alkalmazottak kételkedni kezdenek abban, hogy jó döntés volt-e csatlakozni a szervezethez.</span><span class="sxs-lookup"><span data-stu-id="2c574-106">Alternatively, an ineffective onboarding experience might leave employees questioning their decision to join your organization.</span></span> <span data-ttu-id="2c574-107">Egy 2014-ben a Gartner által végzett tanulmány szerint annak az 1005 válaszadónak, aki az első hat hónap mondott fel, közel az egyharmada azért döntött így, mert a vezetéstől kapott előírások nem voltak egyértelműek, a képzés nem volt hatékony, vagy mert nem tudtak hatékony kapcsolatokat létrehozni az új környezetben.</span><span class="sxs-lookup"><span data-stu-id="2c574-107">A study conducted by Gartner in 2014 found that nearly one third of the 1,005 respondents who quit a job within the first six months, did so because the guidelines they were given by their leadership weren't clear, their training wasn't effective, or because they didn't establish effective relationships in their new environment.</span></span>
 

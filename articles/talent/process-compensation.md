@@ -18,14 +18,17 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 21782c2906bb887290cfb1f08bea1734081d5c13
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 0886f60dbdfc531893cd2c1b23df5b52a4a2f4b6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="process-compensation"></a><span data-ttu-id="2f33e-103">Folyamatkompenzáció</span><span class="sxs-lookup"><span data-stu-id="2f33e-103">Process compensation</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="2f33e-104">A kompenzációfeldolgozás lehetővé teszi, hogy új alapkompenzációs összegeket számoljon ki az alkalmazottai számára a részvénymódosítások, az érdemi elismerések és a teljesítmény alapján.</span><span class="sxs-lookup"><span data-stu-id="2f33e-104">Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance.</span></span> <span data-ttu-id="2f33e-105">Ez a témakör a kompenzációfeldolgozás alapvető folyamatát mutatja be a rögzített kompenzációs konstrukciók esetében az alkalmazotti teljesítmény beszámítása nélkül.</span><span class="sxs-lookup"><span data-stu-id="2f33e-105">This topic covers the basic flow of compensation processing for fixed compensation plans without factoring an employee's performance.</span></span>
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a><span data-ttu-id="2f33e-106">Tervezze meg az új kompenzációs összegek és költségvetéseket</span><span class="sxs-lookup"><span data-stu-id="2f33e-106">Plan the new compensation amounts and budgets</span></span>

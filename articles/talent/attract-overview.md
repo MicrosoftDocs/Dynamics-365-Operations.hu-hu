@@ -18,13 +18,16 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: e84449475ce73b4a6a88ab9975e2572178cf0dab
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: b64a97897a1ea75eb2a9681bc9357433a570dd74
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 # <a name="attract-overview"></a><span data-ttu-id="0de4c-104">Attract – áttekintés</span><span class="sxs-lookup"><span data-stu-id="0de4c-104">Attract overview</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="0de4c-105">Az Attract az új szakemberek felvételi folyamatának kezeléséhez nyújt szolgáltatásokat.</span><span class="sxs-lookup"><span data-stu-id="0de4c-105">Attract provides capabilities to manage the process of hiring new talent.</span></span> <span data-ttu-id="0de4c-106">A pályázók hozzáadhatók a nyitott pozíciókhoz, és végigvihetők a folyamat állomásain, amíg ajánlatot nem kapnak, vagy el nem utasítják a pályázatukat.</span><span class="sxs-lookup"><span data-stu-id="0de4c-106">Candidates can be added to open jobs and advanced from stage to stage until an offer is extended or the application is rejected.</span></span> <span data-ttu-id="0de4c-107">A pályázók minden egyes állomáson olyan tevékenységeken vihetők végig, mint a szűrő hívások, a felmérések vagy az interjúk ütemezése.</span><span class="sxs-lookup"><span data-stu-id="0de4c-107">In each stage, candidates move through activities like screening calls, assessments, or the scheduling of interviews.</span></span> <span data-ttu-id="0de4c-108">A jelentkezést követően a jelentkezők e-mailes felkérést kapnak az Attract-regisztrációra, ahol követhetik az állás állapotát, a pályázatukat, és válaszolhatnak a hozzájuk rendelt feladatokra.</span><span class="sxs-lookup"><span data-stu-id="0de4c-108">After they apply, candidates get an email inviting them to sign in to Attract, where they can follow the status of the job, their application, and respond to any tasks that are assigned to them.</span></span>
 
 <span data-ttu-id="0de4c-109">Az Attract a következő funkciókra használható:</span><span class="sxs-lookup"><span data-stu-id="0de4c-109">Attract provides the following features.</span></span>
