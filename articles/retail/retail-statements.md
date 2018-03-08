@@ -28,6 +28,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="retail-statements"></a>Kiskereskedelmi nyilatkozatok
+
+[!include[banner](includes/banner.md)]
+
 A Microsoft Dynamics 365 for Retail programban a kimutatások feladásával számolhatók el azok a tranzakciók, amelyek a felhőalapú pénztárban (POS) vagy a Modern POS rendszerű pénztárban (MPOS) jönnek létre. A kimutatás feladási folyamatában az elosztási ütemezés lekérés a POS-tranzakciók a központ (HQ) ügyfél történő sorozatát használja. A megadott paraméterek az **kiskereskedelmi paraméterek** és **üzletek** lapok segítségével a egyedi kimutatásokba igénylése vannak tranzakciók kiválasztása.  
 
 A következő ábra bemutatja a kimutatás feladási folyamatot: Ebben a folyamatban a rögzített tranzakciók a pénztárnál továbbításra kerülnek a vevőnek a Kiskereskedelmi ütemezés segítségével. Miután a vevő megkapta a tranzakciókat, létrehozhatja, számíthatja, és feladhatja a tranzakció kimutatást az üzlet számára. 

@@ -25,6 +25,9 @@ ms.lasthandoff: 12/01/2017
 
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>A Microsoft Dynamics 365 for Talent lehetőségeinek bővítése
+
+[!include[banner](includes/banner.md)]
+
 Ha létrehozott bármilyen Microsoft PowerApps alkalmazást, ezeket az alkalmazásokat hivatkozásokkal indíthatja el a Microsoft Dynamics 365 for Talent alkalmazásból. Az alkalmazásokhoz való hozzáférés beállításához szükséges bizonyos információk beállítása a Talent alkalmazásban egy konfigurációs lapon, amely a **Rendszerfelügyelet** munkaterületen nyitható meg.
 
 ## <a name="configuring-embedded-powerapps-within-talent"></a>Beágyazott PowerApps alkalmazások konfigurálása a Talent alkalmazásban

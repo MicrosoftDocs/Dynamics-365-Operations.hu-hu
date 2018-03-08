@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="process-compensation"></a>Folyamatkompenzáció
+
+[!include[banner](includes/banner.md)]
+
 A kompenzációfeldolgozás lehetővé teszi, hogy új alapkompenzációs összegeket számoljon ki az alkalmazottai számára a részvénymódosítások, az érdemi elismerések és a teljesítmény alapján. Ez a témakör a kompenzációfeldolgozás alapvető folyamatát mutatja be a rögzített kompenzációs konstrukciók esetében az alkalmazotti teljesítmény beszámítása nélkül.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Tervezze meg az új kompenzációs összegek és költségvetéseket

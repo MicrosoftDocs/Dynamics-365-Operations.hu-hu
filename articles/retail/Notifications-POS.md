@@ -27,6 +27,8 @@ ms.lasthandoff: 12/20/2017
 
 # <a name="display-notifications-in-point-of-sale"></a>Értesítések megjelenítése a pénztárban
 
+[!include[banner](includes/banner.md)]
+
 A mai modern kiskereskedelmi környezetben az üzlet munkatársai különböző feladatokat látnak el, például segítenek a vevőknek, beviszik a tranzakciókat, leltáraznak és rendeléseket fogadnak az üzletben. A pénztár (POS) ügyfél lehetővé teszi a munkatársak számára, hogy elvégezzék ezeket a feladatokat és még sok minden mást is, egyetlen alkalmazásban. A nap folyamán végrehajtandó különböző feladatok miatt szükség lehet a munkatársak értesítésére, amikor valami figyelmet igényel. A pénztár értesítési keretrendszere megoldja ezt a problémát azáltal, hogy a kiskereskedőknek szerepköralapú értesítések beállítását teszi lehetővé. A Dynamics 365 for Retail 5. alkalmazásfrissítésétől ezek az értesítések csak pénztárműveletekhez konfigurálhatók.
 
 Jelenleg a rendszer a rendelésteljesítési művelet értesítéseinek megjelenítését teszi lehetővé, azonban a keretrendszert bővíthetőnek terveztük, vagyis a jövőben a fejlesztők elkészíthetnek egy értesítéskezelőt minden művelethez, és az értesítések megjeleníthetők lesznek a pénztáron.  

@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="questionnaires"></a>Kérdőívek
 
+[!include[banner](includes/banner.md)]
+
 Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
 
 A Microsoft Dynamics 365 Finance and Operations Enterprise Edition különböző funkcióival testre szabhatja a kérdőívet, hogy megfeleljen az Ön követelményeinek. Íme néhány példa a kérdőív használatához:

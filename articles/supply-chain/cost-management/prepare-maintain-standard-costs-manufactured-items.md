@@ -30,6 +30,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Felkészülés a gyártott cikkek elszámolóárának karbantartására
 
+[!include[banner](../includes/banner.md)]
+
 Ez a téma leírja a gyártott cikkek költségeinek karbantartásának előkészítésére irányuló lépéseket. A gyártott cikkek lépései kissé eltérnek a megvásárolt cikkek lépéseitől.
 
 A termékekhez hozzárendelt szabályok kihatással lehetnek a költségszámításokra a szülő gyártott termékek felé. Felkészüléshez a gyártott cikkek költségeinek karbantartására kövesse e lépéseket.
