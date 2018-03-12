@@ -1,9 +1,9 @@
 ---
 title: "Az ellátási lánc kezelése kezdőlap"
-description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza."
+description: "Ez a lap a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
-ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
+ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
+ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/21/2018
 
 ---
 
@@ -40,11 +40,11 @@ Keresse fel a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a>
 További információkért válasszon ki egy szolgáltatásterületet.
 
 - [Költségkönyvelés](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Költségkezelés](cost-management/costing-sheets.md)  
+- [Költségkezelés](cost-management/cost-management-home-page.md)  
 - [Készletkezelés](inventory/inventory-home-page.md)
 - [Alaptervezés](master-planning/master-planning-home-page.md)
 - [Beszerzés és forrás](procurement/procurement-sourcing-overview.md)
-- [Termékinformációk kezelése](pim/product-information.md)
+- [Termékinformáció-kezelés](pim/product-information.md)
 - [Gyártásvezérlés](production-control/production-process-overview.md)
 - [Értékesítés és marketing](sales-marketing/overview-sales-marketing.md)
 - [Szállításkezelés](transportation/transportation-management-overview.md)
@@ -56,6 +56,7 @@ Ezeknek a rövid videóknak a segítségével megismerheti a Microsoft Dynamics 
 
 -  [Készpénz-integrációra jelölt](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimalizálási tanácsadó](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Konfiguráció másolása a raktársablon segítségével](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 Ezeknek a rövid videóknak a segítségével megismerheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (2017. július) új funkcióit.
 
@@ -67,17 +68,36 @@ Ezeknek a rövid videóknak a segítségével megismerheti a Microsoft Dynamics 
 
 Ezeknek a műszaki konferencián készült felvételeknek a legnagyobb része a Finance and Operations rendszer előző verziójának funkcióit tárgyalja, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Termékkonfiguráló a Microsoft Dynamics AX szolgáltatásban</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Alaptervezés – tippek és trükkök a hibajavítási teljesítményért</a>
--  <a href="https://youtu.be/RLXybx20B5o">Segítség! Lassú az MPR!</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Bejövő ASN-ek feldolgozása a Raktárkezelés modulban</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Hozza ki a legtöbbet a raktárkezelési rendszeréből</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Fejlett R3 raktárkezelés – Bejövő feldolgozás és /minimális/maximális feltöltés</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Fejlett R3 raktárkezelés – Egy szokásos nap, a kimenő feldolgozás és az igényfeltöltés</a>
--  <a href="https://youtu.be/5w1MngVchBA">Címkék az új Microsoft Dynamics AX 2012 R3 raktárkezelésben</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Fejlett raktárkezelés – Egy nap a folyamatgyártásban</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Alvállalkozói műveletek és műveletek a gyártásban</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Szállításkezelés (TMS) az új Microsoft Dynamics AX rendszerben</a>
+**Költségkezelés**
+
+-  [Adminisztrációs költségek áttekintése](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**Alaptervezés**
+
+-  [Az igény-előrejelzési funkció kiterjesztése](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Alaptervezés – tippek és trükkök a hibajavítási teljesítményért](https://youtu.be/7v8BPmEs9Dg)
+-  [Segítség! Lassú az MPR!](https://youtu.be/RLXybx20B5o)
+
+**Termékinformáció-kezelés**
+
+-  [Termékkonfiguráló a Microsoft Dynamics AX szolgáltatásban](https://youtu.be/zotrj3SbCl4)
+
+**Raktárkezelés** 
+
+-  [Bejövő ASN-ek feldolgozása a Raktárkezelés modulban](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Hozza ki a legtöbbet a raktárkezelési rendszeréből](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Fejlett R3 raktárkezelés – Bejövő feldolgozás és minimális/maximális feltöltés](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Fejlett R3 raktárkezelés – Egy szokásos nap, a kimenő feldolgozás és az igényfeltöltés](https://youtu.be/Og0gLlVp7jA)
+-  [Címkék az új Microsoft Dynamics AX 2012 R3 raktárkezelésben](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: Fejlett raktárkezelés – Egy nap a folyamatgyártásban](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**Gyártásvezérlés**
+
+-  [Alvállalkozói műveletek és műveletek a gyártásban](https://youtu.be/y1jrd3A_k70)
+
+**Szállításkezelés**
+
+-  [Szállításkezelés (TMS) az új Microsoft Dynamics AX rendszerben](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogok
 A <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában</a> és a <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában</a> több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része a Finance and Operations rendszer előző verziójával kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban. 

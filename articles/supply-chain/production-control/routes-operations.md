@@ -1,7 +1,7 @@
 ---
 title: "Útvonalak és műveletek"
 description: "Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban."
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

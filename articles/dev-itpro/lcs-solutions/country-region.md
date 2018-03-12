@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
+ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
+ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -217,6 +217,21 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Értékcsökkenés módjai tárgyi eszközöknél](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
 -   [Tárgyi eszköz áthelyezése készletbe](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 -   [Kis értékű tárgyi eszközök](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+
+### <a name="india"></a>India
+
+- [Tárgyi eszközök](../../financials/localizations/apac-ind-fixed-assets.md)
+    - [Tőkeelemek átvitele a tárgyi eszközre](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [Nap alapú naptár csatolása tárgyieszközkönyvhöz](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+    - [Paraméterek beállítása értékcsökkenés számításához](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+    - [Eszközcsoport értékcsökkenés beállítása értékcsökkenés könyvekhez](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+    - [Hozzon létre egy készletmodellcsoportot a tőkeelemeknek](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+    - [Eltolódás értékcsökkenésének számítása indiai tárgyi eszközök esetében](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+    - [Határozza meg a műszak típusát és a könyvekhez rendelt ipart a tárgyi eszközhöz történő csatolás érdekében](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+- [Adómotor áttekintése](../../financials/general-ledger/tax-engine.md)
+    - [Adómotor integrációja](../../financials/general-ledger/tax-engine-integration.md)
+    - [Adóküszöbértékekre vonatkozó GYIK](../../financials/localizations/apac-ind-tax-thresholds.md)
+    - [Adómotor kiterjesztése](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
 ### <a name="italy"></a>Olaszország
 
