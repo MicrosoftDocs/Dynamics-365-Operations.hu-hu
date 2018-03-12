@@ -183,6 +183,7 @@
 ### [MPOS architektúra](dev-itpro/retail-modern-pos-architecture.md)
 ### [Az online kiskereskedelmi csatorna közzétételi felépítése](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Retail Channel Performance Power BI-tartalom](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Fizetési alkalmazás biztonsági adatszabványokat (PA-DSS) tanúsítvány](dev-itpro/PA-DSS-Certification.md)
 
 ## Telepítés és gyorsjavítások
 ### [A Retail Store Scale Unit áttekintése](dev-itpro/retail-store-system-begin.md)
