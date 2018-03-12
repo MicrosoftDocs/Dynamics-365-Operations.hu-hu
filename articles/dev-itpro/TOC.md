@@ -9,7 +9,7 @@
 ## [Az alkalmazásverem és a kiszolgáló felépítése](dev-tools/application-stack-server-architecture.md)
 ## [Értékelési másolat beszerzése](dev-tools/get-evaluation-copy.md)
 ## [Regisztrálás előfizetésre](dev-tools/sign-up-preview-subscription.md)
-## [Hozzáférési példányok](dev-tools/access-instances.md)
+## [Fejlesztői környezet telepítése és hozzáférés](dev-tools/access-instances.md)
 ## [Fejlesztési rendszerkövetelmények](dev-tools/development-system-requirements.md)
 ## Flottakezelés – mintaalkalmazás
 ### [Flottakezelés – mintaalkalmazás](dev-tools/fleet-management-sample.md)
@@ -55,7 +55,7 @@
 #### [X++-attribútumosztályok](dev-ref/xpp-attribute-classes.md)
 #### [Az X++ és a C\# összehasonlítása](dev-ref/xpp-cs-comparison.md)
 #### [Az X++ szintaxisa](dev-ref/xpp-syntax.md)
-## [Alkalmazásprogramozási felület, osztály és tábla referenciák](dev-ref/api-reference.md)
+## [API-, osztály- és táblahivatkozás](dev-ref/api-reference.md)
 ### [X++ fordításidejű funkciók](dev-ref/xpp-compile-time-functions.md)
 ### [X++ futásidejű funkciók](dev-ref/xpp-run-time-functions.md)
 #### [X++ üzleti futásidejű funkciók](dev-ref/xpp-business-run-time-functions.md)
@@ -360,10 +360,10 @@
 #### [ValueMetadata típus](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
 # Adatintegrálás
-## [Integrációs minták](data-entities/integration-overview.md)
+## [Az adatok (importálási/exportálási) integrációs stratégiájának kiválasztása](data-entities/integration-overview.md)
 
 ## Adatintegrációs API-k
-### [Adatkezelés csomag API-ja](data-entities/data-management-api.md)
+### [Adatkezelési csomag API-ja](data-entities/data-management-api.md)
 ### [Szolgáltatási végpontok](data-entities/services-home-page.md)
 #### [Szolgáltatáshitelesítési hibaelhárítás](data-entities/troubleshoot-service-authentication.md)
 ### [OData](data-entities/odata.md)
@@ -381,12 +381,12 @@
 
 ### [Adatok integrálása a Common Data Service környezettel](data-entities/data-integration-cds.md) 
 #### [Potenciális vevő készpénzfizetési esetre történő konfigurálása](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [A Finance and Operations-termékek szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping.md)
-##### [A Sales-számlák szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping.md)
-##### [A Sales-kapcsolatok szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping.md)
-##### [Értékesítésiajánlat-fejlécek és -sorok szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-##### [Értékesítésirendelés-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-##### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [A Finance and Operations-termékek szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [A Sales-számlák szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [A Sales-kapcsolatok szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Értékesítésiajánlat-fejlécek és -sorok szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Értékesítésirendelés-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
@@ -452,6 +452,8 @@
 
 ## [Használja saját adatbázisát](analytics/export-entities-to-your-own-database.md)
 
+## [Erőforrások egy GDPR adatkérelem megválaszolására](gdpr/gdpr-home-page.md)
+
 # [Folyamatos szállítás kezdőlap](dev-tools/continuous-delivery-home-page.md)
 ## [Fejlesztési és folyamatos szállítási GYIK](dev-tools/continuous-delivery-faq.md)
 ## [Tesztcsomagok kizárása az előállított buildből](dev-tools/exclude-test-packages.md)
@@ -515,8 +517,9 @@
 ### [Helyszíni projekt létrehozása](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Helyszíni környezetek beállítása és telepítése](deployment/setup-deploy-on-premises-environments.md)
 ### [Egyéni modellek fejlesztése és telepítése on-premises környezetekhez](deployment/develop-deploy-custom-models-on-premises.md)
-### [Frissítések alkalmazása helyszíni telepítéshez](deployment/apply-updates-on-premises.md)
-### [Helyszíni telepítés újratelepítése](deployment/redeploy-on-prem.md)
+### [Fordított proxy konfigurálása on-premises környezetéhez](deployment/onprem-reverseproxy.md)
+### [Frissítések alkalmazása on-premises telepítéshez](deployment/apply-updates-on-premises.md)
+### [On-premises telepítés újratelepítése](deployment/redeploy-on-prem.md)
 ### [Helyi ügynök frissítése](lifecycle-services/update-local-agent.md)
 ### [Környezet újrakonfigurálása](lifecycle-services/reconfigure-environment.md)
 ### [Dynamics 365 for Finance and Operations, Enterprise edition kiadás (helyszíni) – problémamegoldás](deployment/troubleshoot-on-prem.md)
@@ -527,7 +530,7 @@
 ### [Telepíthető csomag telepítése](deployment/install-deployable-package.md)
 ### [Csomagalkalmazási problémák elhárítása](deployment/deployable-package-troubleshooting.md)
 
-# [Frissítés és áttelepítés](migration-upgrade/upgrade-home-page.md)
+# [Frissítések és gyorsjavítások](migration-upgrade/upgrade-home-page.md)
 ## [Frissítés AX 2012-ből a Dynamics 365 for Finance and Operations alkalmazásra](migration-upgrade/upgrade-overview-2012.md)
 ### [AX 2012 frissítés – A frissítési elemzőeszköz használata a tervezéshez](migration-upgrade/upgrade-analyzer-tool.md)
 ### [AX 2012 frissítés – A Kódfrissítési szolgáltatás használata a szükséges ráfordítás megbecsüléséhez](migration-upgrade/analyze-code-upgrade.md)
@@ -555,8 +558,7 @@
 ### [Osztott modellek](dev-tools/model-split.md)
 ### [Delegált használata a modellek közötti függőségek megoldásához](migration-upgrade/delegates-migration.md)
 
-
-## Frissítés egy legutóbbi frissítésre
+## Frissítés egy legutóbbi frissítésre (felhő)
 ### [A legújabb kiadásra való áttelepítés folyamata](migration-upgrade/upgrade-latest-update.md)
 ### [Életciklus-irányelv](migration-upgrade/versions-update-policy.md)
 ### [A legújabb platformfrissítés alkalmazása a környezetére](migration-upgrade/upgrade-latest-platform-update.md)
@@ -564,13 +566,17 @@
 ### [Védőfalkörnyezet frissítése](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Adatok frissítése a fejlesztői vagy a bemutató környezetben](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Fejlesztői eszközök frissítése](dev-tools/update-development-tools.md)
+
+## Frissítés egy legutóbbi frissítésre (on-premises)
 ### [Frissítések alkalmazása on-premises telepítéshez](deployment/apply-updates-on-premises.md)
 ### [On-premises telepítés újratelepítése](deployment/redeploy-on-prem.md)
 
-## Gyorsjavítások és szervizelés
+## Gyorsjavítások
 ### [Gyorsjavítások letöltése a Lifecycle Services szolgáltatásból](migration-upgrade/download-hotfix-lcs.md)
+### [Frissítések alkalmazása egy felhőalapú környezetre](deployment/apply-deployable-package-system.md)
 ### [Telepítse a metaadatok gyorsjavítását](migration-upgrade/install-metadata-hotfix-package.md)
 ### [Patch Reporting Services különálló környezetben](migration-upgrade/patch-reporting-service-environment.md)
+### [Frissítse a Visual Studio fejlesztői eszközöket](dev-tools/update-development-tools.md)
 
 ## Értékcsökkenések
 ### [Elavult API-k](migration-upgrade/deprecated-apis.md)

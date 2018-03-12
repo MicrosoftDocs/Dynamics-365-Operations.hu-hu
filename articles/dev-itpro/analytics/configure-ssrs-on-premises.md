@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>Az SQL Server Reporting Services konfigurálása on-premises telepítéshez
 
+[!include[banner](../includes/banner.md)]
+
 Az ebben a témakörben található lépésekkel konfigurálhatja az SQL Server Reporting Services (SSRS) szolgáltatást az Ön Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) telepítésének megfelelően.
 
 1. Nyissa meg a Reporting Services konfigurációkezelő alkalmazást.
