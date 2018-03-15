@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: c996d1c8bb66f733cde2c6c46416004fb672505c
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 297e60e63b88b610d0886ad16667c4f99cc74ccb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -85,7 +85,7 @@ A következő nyolc feladatútmutató abban a sorrendben van felsorolva, amelybe
 2.  [Dimenzión alapuló alaptermék kiadása (feladat-útmutató)](tasks/release-dimension-based-product-master.md)
 3.  [Kiadott alaptermék alapbeállításának kitöltése (feladat-útmutató)](tasks/complete-basic-setup-released-product-master.md)
 4.  [Konfigurációs csoportok definiálása (feladat-útmutató)](tasks/define-configuration-groups.md)
-5.  [A dimenzión alapuló alaptermékre vonatkozó anyagjegyzék létrehozása (feladat-útmutató)](tasks/create-bill-materials-dimension-based-product-master.md)
+5.  [A dimenzión alapuló alaptermékre vonatkozó darabjegyzék létrehozása (feladat-útmutató)](tasks/create-bill-materials-dimension-based-product-master.md)
 6.  [Konfigurációs utak definiálása (feladat-útmutató)](tasks/define-configuration-route.md)
 7.  [Konfigurációs szabályok létrehozása (feladat-útmutató)](tasks/create-configuration-rules.md)
 8.  [Dimenzión alapuló konfigurációk létrehozása (feladat-útmutató)](tasks/create-dimension-based-configurations.md)

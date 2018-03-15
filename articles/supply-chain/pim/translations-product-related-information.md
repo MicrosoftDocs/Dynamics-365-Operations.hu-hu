@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -116,7 +116,7 @@ Vállalata különböző stílusú pólókat gyárt, és minden stílus Kicsi, K
 Termékkel dimenzióváltozat-csoporton keresztül társított dimenzióértéket a termékváltozat-csoportban tud karbantartani.   
 Dimenzióérték-csoport létrehozásához tegye a következőket:
 1.  Kattintson a **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Változatcsoportok** lehetőségre.
-2.  Válasszon a **Méret****csoportok**, **Színcsoportok** vagy **Stíluscsoportok** közül.
+2.  Válasszon a **Méretcsoportok**, **Színcsoportok** vagy **Stíluscsoportok** közül.
 3.  Kattintson az **Új** lehetőségre, és írjon be egy csoportnevet a **Méret** **csoport**, **Színcsoport** vagy **Stíluscsoport** mezőbe. Kattintson a **Méretek**, **Színek** vagy **Stílusok** lehetőségre sorok csoportokban történő létrehozásához.
 4.  A **Méret** **csoport** sorok, **Szín** **csoport** **sorok** vagy **Stílus csoportsorok** lapon kattintson az **Új** lehetőségre, majd hozza létre a csoportokban használandó méreteket, színeket és a stílusokat.
 

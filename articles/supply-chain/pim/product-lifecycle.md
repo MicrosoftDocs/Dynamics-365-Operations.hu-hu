@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: 33130a4061f22335aeeffa69c478b693604393a9
-ms.openlocfilehash: a57f306ba02c5758c39c4bd29d9a4fa0d7efbcd3
+ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
+ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -109,10 +109,10 @@ Használja a következő feltételeket a kiadott termékek vagy termékváltozat
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
--  Új termékéletciklus-állapot létrehozása
--  Alapértelmezett új termékéletciklus-állapot létrehozása
--  Termékéletciklus-állapot hozzárendelése egy kiadott alaptermékhez
--  Termékéletciklus-állapot hozzárendelése egy kiadott termékhez
--  Az elavult termékváltozatok megkeresése, és egy termékéletciklus-állapot hozzárendelése
--  Termékéletciklus-állapot létrehozása a termékek kizárásához az alaptervezésből
+-  [Hozzon létre egy új termék életciklus állapota (feladat útmutatója)](tasks/new-product-lifecycle-state.md)
+-  [Hozzon létre alapértelmezett termékéletciklus-állapotot (feladat-útmutató)](tasks/default-product-lifecycle-state.md)
+-  [Termékéletciklus-állapot hozzárendelése kiadott alaptermékhez (feladat-útmutató)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Termékéletciklus-állapot hozzárendelése kiadott termékhez (feladat-útmutató)](tasks/product-lifecycle-state-released-product.md)
+-  [Az elavult termékváltozatok megkeresése, és egy termékéletciklus-állapot hozzárendelése (Feladat-útmutató)](tasks/obsolete-product-variants.md)
+-  [Termékéletciklus-állapot létrehozása a termékek kizárásához az alaptervezésből (A szolgáltatás tárgyai)](tasks/exclude-products-master-planning.md)
 

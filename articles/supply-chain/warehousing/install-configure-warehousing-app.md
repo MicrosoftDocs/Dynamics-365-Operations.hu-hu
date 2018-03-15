@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
-ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 02/27/2018
 
 ---
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 01/15/2018
 
 
 > [!NOTE]
-> Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktárkészlet-nyilvántartását. Ha azt szeretné megtudni, hogyan kell konfigurálni az on-premises telepítések raktárkészlet-nyilvántartását, lásd: [Helyszíni telepítések raktárkezelése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
+
+> Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktárkészlet-nyilvántartását. Ha azt szeretné megtudni, hogyan kell konfigurálni az on-premises telepítések raktárkészlet-nyilvántartását, lásd: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
 
 Ez a témakör ismerteti, hogyan telepítse és konfigurálja a Microsoft Dynamics 365 for Finance and Operations - Warehousing alkalmazást.
 
@@ -44,7 +46,7 @@ Az alkalmazás Android és Windows operációs rendszereken érhető el. Az alka
 
 | Platform                    | Verzió                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (összes verzió)                                                                                                                                                   |
 | Finance and Operations | Microsoft Dynamics 365 for Operations, 1611-es verzió <br>– vagy – <br>Microsoft Dynamics AX 7.0/7.0.1 verziója és a Microsoft Dynamics AX platform 2. frissítése a KB 3210014 gyorsjavítással |
 
@@ -58,7 +60,7 @@ Az alkalmazás Android és Windows operációs rendszereken érhető el. Az alka
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Webszolgáltatási alkalmazás létrehozása az Azure Active Directoryban
 Ahhoz, hogy az alkalmazás együttműködhessen a kívánt Finance and Operations kiszolgálóval, regisztrálnia kell egy webszolgáltatási alkalmazást az Azure Active Directoryban a Finance and Operations bérlő számára. Biztonsági okokból az összes használt eszköz számára ajánlott létrehozni egy-egy webszolgáltatási alkalmazást. Webszolgáltatási alkalmazás létrehozásának lépései az Azure Active Directoryban (Azure AD):
 
-1.  Egy webböngészőben lépjen a <https://portal.azure.com> oldalra.
+1.  Lépjen egy böngészőben a <https://portal.azure.com> címre.
 2.  Adja meg a felhasználó nevét és jelszavát, aki hozzáfér az Azure-előfizetéshez.
 3.  Az Azure-portálon a bal oldali navigációs ablaktáblán kattintson az **Azure Active Directory** elemre.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
 4.  Győződjön meg róla, hogy az Active Directory-példány az, amelyet a Finance and Operations használ.
@@ -93,7 +95,7 @@ Konfigurálnia kell az alkalmazást az eszközön, hogy csatlakozni tudjon a Fin
     + **Azure Active Directory ügyfél-azonosító** - Az ügyfél-azonosító beszerzése a 9. „Webszolgáltatási alkalmazás létrehozása az Active Directoryban" című lépésben történik. 
     + **Azure Active Directory titkos ügyfélkód** - A titkos ügyfélkód beszerzése a 11. „Webszolgáltatási alkalmazás létrehozása az Active Directoryban" című lépésben történik. 
     + **Azure Active Directory-erőforrás** - Az Azure Active Directory-erőforrás a Finance and Operations gyökér-URL-jét jeleníti meg. **Megjegyzés:**: ne zárja perjellel (/) ezt a mezőt. 
-    + **Azure Active Directory-bérlő** - a Finance and Operations kiszolgálón használt Azure AD Directory-bérlő https://login.windows.net/az-Ön-AD-bérlői-azonosítója. Például: https://login.windows.net/contosooperations.onmicrosoft.com.
+    + **Azure Active Directory-bérlő** – a Finance and Operations kiszolgálón használt Azure AD Directory-bérlő: `https://login.windows.net/your-AD-tenant-ID`. Például: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Megjegyzés:**: ne zárja perjellel (/) ezt a mezőt. 
     + **Vállalat** - adja meg a Finance and Operationsben szereplő jogi személyt, amelyhez az alkalmazásnak csatlakoznia kell. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Válassza a **Vissza** gombot az alkalmazás bal felső sarkában. Az alkalmazás ekkor csatlakozik a Finance and Operations kiszolgálóhoz, és megjelenik a raktári dolgozó bejelentkezési képernyője. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
@@ -103,7 +105,7 @@ Abban az esetben, ha egy eszköz elveszett vagy a biztonsága sérült, el kell 
 
 1.  A Finance and Operationsben lépjen a **Rendszerfelügyelet** &gt; **Beállítás** &gt; **Azure Active Directory alkalmazások** elemre.
 2.  Törölje a sort, amely megfelel az eszköznek, amelynek a hozzáférését el szeretné távolítani. Ne felejtse el az eltávolított eszközhöz használt **ügyfél-azonosítót**, mert később szüksége lesz rá.
-3.  Jelentkezzen be az Azure portálon az <https://portal.azure.com> címen.
+3.  Jelentkezzen be az Azure portálon: <https://portal.azure.com>.
 4.  Kattintson az **Active Directory** ikonra a bal oldali menüben, és ellenőrizze, hogy a megfelelő könyvtárban van-e.
 5.  A listában kattintson az **Alkalmazásregisztrációk** elemre, majd kattintson a konfigurálni kívánt alkalmazásra. Megjelenik a **Beállítások** oldal a konfigurációs adatokkal.
 6.  Győződjön meg arról, hogy az alkalmazás **Ügyfél-azonosítója** ugyanaz, mint a 2. lépésben volt.

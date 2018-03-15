@@ -1,5 +1,5 @@
 ---
-title: "POS műveletek"
+title: "POS-műveletek, online és offline"
 description: "Ez a témakör a Microsoft Dynamics 365 for Retail pénztár (POS) műveleteinek részleteit mutatja be. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el."
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,17 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
-ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
+ms.sourcegitcommit: edfed83d4703c081d857faad0771dc1010be41b4
+ms.openlocfilehash: edd6dd23066eca782b8fd510dabab612241e480a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 
-# <a name="pos-operations"></a>POS műveletek
+# <a name="pos-operations-online-and-offline"></a>POS-műveletek, online és offline
+
+[!include[banner](includes/banner.md)]
+
 A legtöbb felhasználó műveletek a pont (POS) értékesítési műveletek veszi figyelembe. A műveletek konfigurálása és kezelése a Microsoft Dynamics 365 for Retail háttérirodai szolgáltatásánál történik. A POS-gombrács gombjai számos művelet lehet hozzáadni. Felhasználó kiválaszthatja a gombokra kattintva hajtani a műveleteket, és a kapcsolódó feladatok végrehajtása. Egyéb műveletekhez részét képezik a fő POS alkalmazást, és előforduló vagy a gombok vagy más munkafolyamatokat, és a folyamatok részeként.
 
 A következő táblázatban megtalálható a érhetők el a Retail Modern POS és a felhőből Dynamics 365 for Retail POS-műveletekkel kapcsolatos részletek. A táblázat azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy a pénztár offline módjában elérhető-e.
