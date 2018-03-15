@@ -3,7 +3,7 @@ title: "Felhőalapú és helyszíni szolgáltatások összehasonlítása"
 description: "A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás."
 author: robinarh
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
-ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
+ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
+ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -49,8 +49,9 @@ A következő táblázatokban a termékterületek listája található. A felhő
 | | Költségkezelés Power BI-tartalomcsomag | Igen | Nincs |
 | Adatok integrálása és kezelése| | Igen | Igen |
 | | Konfigurációs alapú kiterjesztés| Igen | Nincs |
-| | Adatok exportálása a saját adatraktárba| Igen | Nincs |
+| | Adatok exportálása a saját adatraktárba| Igen | Igen |
 | | Növekményes frissítések exportálásának engedélyezése egy adatentitásba | Igen | Nincs |
+| | Ismétlődő integrációk                 |Igen | Nincs|
 | Dokumentumkezelés| | Igen| Igen |
 | Pénzgazdálkodás|  | Igen | Igen |
 | Súgó| | Igen | Nincs |

@@ -18,14 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ec6cb212766dd90fa9db7719a2119419ecb935c7
-ms.openlocfilehash: e0aa0e576f88fd497472aa4141704a66d51605c3
+ms.sourcegitcommit: 997b6843fb729ed204e4e8ec5369c5a380efc25e
+ms.openlocfilehash: fb36f6ce81c5e781e3c98132f18ecbd84d0d4089
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/12/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a>Rendelésteljesítés az üzletben
+
+[!include[banner](includes/banner.md)]
 
 Számos kiskereskedő szeretné optimalizálni a rendelésteljesítést a rendelések teljesítésének engedélyezésével az üzletek számára. A rendelésteljesítés az üzlet szintjén segíthet megkönnyíteni a túlkészletezési helyzeteket az egyes üzletek esetében, vagy logisztikai szempontból lehet szükség rá, amennyiben egy üzletnek extra kapacitása van, vagy a vevőhöz közelebb van szállítási távolság szempontjából. A szükséglet megoldása érdekében egy egységes rendelésteljesítési művelet érhető el pénztárban.
 
@@ -56,7 +58,7 @@ Sorok kiválasztásához használja a műveleti ablak **Kiválasztás** funkció
 
 ## <a name="line-details"></a>Sor részletei
 
-A soradatok a sor részletei úszó menüvel jeleníthető meg. A menü használata esetén két lap áll rendelkezésre a kiválasztott sor további adatainak megjelenítésére. Az első lapon a **Soradatok** a sor részleteit mutatja, például a megrendelt mennyiséget és a fennmaradó részt. További részletek is megtekinthetők, többek között a kitárolt, csomagolt és számlázott mennyiség, valamint a szállítás módja és a szállítási cím. A **Rendelés részletei** fül olyan rendelésifejléc-adatokat nyújt, mint a vevő, a vevő azonosítója, a rendelésszám, a rendelés összesen és az egyenleg.
+A soradatok a sor részletei úszó menüvel jeleníthető meg. A menü használata esetén három lap áll rendelkezésre a kiválasztott sor további adatainak megjelenítésére. Az első lapon a **Soradatok** a sor részleteit mutatja, például a megrendelt mennyiséget és a fennmaradó részt. További részletek is megtekinthetők, többek között a kitárolt, csomagolt és számlázott mennyiség, valamint a szállítás módja és a szállítási cím. A **Rendelés részletei** fül olyan rendelésifejléc-adatokat nyújt, mint a vevő, a vevő azonosítója, a rendelésszám, a rendelés összesen és az egyenleg. A **Készlet** lapon információk jelennek meg a kijelölt sorról a fizikailag rendelkezésre álló készletre, a lefoglalt készletre és a megrendelt készletre vonatkozóan.
 
 Ha több sor van bejelölve, a rendelési sor részletei úszó menü csak azt jelzi, hogy több sor van kiválasztva. Egy sor részleteinek megjelenítéséhez törölje a sorokat, amíg csak egy sor marad. 
 

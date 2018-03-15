@@ -3,7 +3,7 @@ title: Financial Insights
 description: "A Financial Insights a Microsoft Power BI-t használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására."
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 3da5344ec6edec0af28aa21d45af962307231e67
+ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
+ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -102,10 +102,15 @@ Jelenleg a beágyazott Power BI jelentések adatait nem lehet azon jogi személy
 | Vállalatközi pénzügyi információk megtekintése   | •   A Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 verzióban ez a feladatkör nincs szerepkörhöz rendelve. • A következő kiadásban ez a feladatkör a pénzügyi igazgatói szerepkörhöz kerül hozzárendelésre. | •    Ez a feladatkör a Pénzügyi igazgató áttekintés munkaterület menüpontjához biztosít hozzáférést. •    Alapértelmezés szerint az aktív vállalat szolgál szűrőként. Viszont minden jogi személyt hozzáadhat függetlenül attól, hogy a felhasználó hozzáfér-e a többi jogi személyhez.             |
 
 
-## <a name="how-financial-statements-work"></a>A pénzügyi kimutatások működése
-Noha **Financial Insights** tartalmaz pénzügyi kimutatásokat, nem helyettesíti a Finance and Operations Pénzügyi jelentéskészítés funkcióját. A **Financial Insights** alapértelmezett pénzügyi kimutatásai korlátozottak, és nem tartalmazzák a pénzügyi kimutatások valamennyi típusát. Pénzügyi jelentéskészítő modul továbbra is elsődleges eszköz a jogszabályban meghatározott pénzügyi kimutatások megtervezéséhez, létrehozásához és előállításához.
+## <a name="financial-reporting-vs-finanical-insights"></a>Pénzügyi jelentések és Pénzügyi statisztikák
+Noha **Pénzügyi statisztikák** tartalmaznak pénzügyi kimutatásokat, nem helyettesítik a Finance and Operations Pénzügyi jelentéskészítés funkcióját. A **Pénzügyi statisztikák** alapértelmezett pénzügyi kimutatásai korlátozottak, és nem tartalmazzák a pénzügyi kimutatások valamennyi típusát. Pénzügyi jelentéskészítő modul továbbra is elsődleges eszköz a jogszabályban meghatározott pénzügyi kimutatások megtervezéséhez, létrehozásához és előállításához.
 
-Az eredeti **Pénzügyi igazgató áttekintés** munkaterületből származó vizuális elemeken kívül új KPI-k, diagramok és pénzügyi kimutatások is elérhetők. A következő pénzügyi kimutatások állnak rendelkezésre:
+A következő összehasonlító táblázattal különbséget tehet a két lehetőség között:
+
+|                                         | **Pénzügyi jelentéskészítés**                            | **Pénzügyi statisztikák**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Alapértelmezett jelentések szerkesztése**                | Igen                                                | Nem                                 | | **Új jelentések létrehozása**                  | Igen                                                | Nem                                 | | **Jelentések nyomtatása**                       | Igen                                                | Nem                                 | | **Exportálás Excelbe**                     | Igen          | Nyersadatok korlátozott exportálása az Excelbe, nem formázott jelentés       | | **Jelentéshierarchia/szervezeti hierarchia támogatása**   | Igen                               | Nem                                 | | **Jelentés a naplóadatokról**       | Igen Egy szállítóra, ügyfélre korlátozva    | Igen Szállító, ügyfél, szállítói/ügyfélcsoportok, szállítói/ügyfélcímek stb.  | | **Jelentési pénznem**      | Igen Könyvelési pénznem és átalakítás a jelentés pénznemére       | Nem Csak a könyvelési pénznem      | | **Biztonság**                | Igen Vonatkozik a Finance and Operations szolgáltatás és a jelentés faszerkezetének biztonságára | Korlátozott nézetű jelentések az összes vállalatról (a Finance and Operations biztonságától függetlenül) vagy csak az aktív vállalatról | | **Különböző számlatükrök és pénzügyi évek támogatása** | Igen                   | Nem                   | | **jelentés külső adatokról**                              | Nem                   | Nem                                   | | **Összesítések támogatása**                               | Igen                          | Korlátozott Jelentés több vállalatról, de csak a könyvelési pénznem használata                                     |
+
+
+Az eredeti **Pénzügyi igazgató áttekintés** munkaterületből származó felhasználói felületen kívül új KPI-k, diagramok és pénzügyi kimutatások is elérhetők. A következő pénzügyi kimutatások állnak rendelkezésre:
 
 •   Főkönyvi kivonat
 

@@ -3,7 +3,7 @@ title: Power BI-tartalom
 description: "Ez a témakör felsorolja az elérhető Power BI-tartalmakat, és átirányítja azon erőforrásokhoz, ahol többet tudhat meg róluk."
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -42,6 +42,7 @@ Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise Editio
 - [Költségkönyvelés elemzése Power BI-tartalom](cost-accounting-analysis-content-pack.md) 
 - [Követelések és beszedések kezelése Power BI-tartalom](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Alkalmazotti fejlesztés Power BI-tartalom](employee-development-PBI.md) 
+- [Pénzügyi információk Power BI-tartalom](financial-insights.md)
 - [Pénzügyi teljesítmény Power BI-tartalom](financial-performance-power-bi-content-pack.md)
 - [Tárgyi eszköz Power BI-tartalom](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Tanulás Power BI-tartalom](learning-power-bi.md)
@@ -73,6 +74,9 @@ Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise editio
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Power BI-tartalom a Microsoft Dynamics AX számára
 Amennyiben a Microsoft Dynamics AX 7.0-ás vagy a Microsoft Dynamics AX 7.0.1-es verzióját használja, a következő Power BI-tartalom érhető el:
+
+> [!Note]
+> Ezek a tartalomcsomagok már elavultak a [Power BI tartalmi csomagok közzététele a PowerBI.com webhelyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom) dokumentumban ismertetett módon.
 
 - [Költségkezelési Power BI-tartalom](cost-management-content-pack.md)    
 - [Pénzügyi teljesítmény Power BI-tartalom](financial-performance-power-bi-content-pack.md)

@@ -3,7 +3,7 @@ title: "Elavult szolgáltatások"
 description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve."
 author: sericks007
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: addd8c62ba034b47d8abbec29fa8682deb9698b1
+ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
+ms.openlocfilehash: 03b79816ffea649cf226408ed4660c3419103a7a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -40,6 +40,17 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 > A Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi kiadása a 8-as platformfrissítéssel verziótól kezdve minden eltávolított és elavult szolgáltatás esetében feltüntetjük a telepítések típusát. Az ebben a témakörben említett korábbi kiadások kivétel nélkül csak a felhőtelepítést támogatták.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 12-es platformfrissítéssel
+
+### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlások 
+2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük.  |
+| **Felváltotta másik szolgáltatás?**   | Szám 2018 tavaszától azonban a funkció újbóli bevezetését tervezzük annak érdekében, hogy kihasználhassunk egy új ajánlási szolgáltatást.   |
+| **Érintett területek**         | Személyre szabott termékajánlások a POS felületén.                                                    |
+| **Telepítési beállítás**              | Mind                                                                                      |
+| **Állapot**                         |Eltávolítva 2018. február 15-én. Ez hatással van a Dynamics 365 for Operations 1611 és újabb verzióit használó ügyfelekre is.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése
 A lehetőség az ER kifejezésszerkesztőben használandó egyéni funkciók bevezetésére (további tájékoztatás: [Elektronikus jelentéskészítési funkciók listájának kibővítése](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) már nem támogatott. Az ER API-kon végrehajtott módosítások következtében az ER Kifejezésszerkesztő beépített függvényeit meghívó API belsővé vált, és többé nem lehet kiterjeszteni.
@@ -132,6 +143,19 @@ A felhasználók a kormányzati portálról tölthetik le.
 | **Telepítési beállítás**                       | Minden modul                                                                    |
 | **Állapot**                                  | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.  |    
 
+
+## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
+
+### <a name="personalized-product-recommendations"></a>Személyre szabott termékajánlások 
+2018. február 15-től a kiskereskedők már nem jeleníthetnek meg személyre szabott termékjavaslatok a pénztári (POS) eszközökön. További információ: [Személyre szabott termékajánlatok áttekintése](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük.  |
+| **Felváltotta másik szolgáltatás?**   | Szám 2018 tavaszától azonban a funkció újbóli bevezetését tervezzük annak érdekében, hogy kihasználhassunk egy új ajánlási szolgáltatást.   |
+| **Érintett területek**         | Személyre szabott termékajánlások a POS felületén.                                                    |
+| **Telepítési beállítás**              | Mind                                                                                      |
+| **Állapot**                         |Eltávolítva 2018. február 15-én. Ez hatással van a Dynamics 365 for Retail 7.2 és újabb verzióit használó ügyfelekre is. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 2017 júliusi kiadás 8-es platformfrissítéssel
