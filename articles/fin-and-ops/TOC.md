@@ -20,9 +20,10 @@
 #### [Eltávolított vagy elavult funkciók](../dev-itpro/migration-upgrade/deprecated-features.md)
 #### [Elhalasztott AX 2012-funkciók](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [A helyszíni telepítéseknél nem elérhető funkciók](get-started/features-not-implemented-on-prem.md)
-#### [Kiadások és életciklusra vonatkozó irányelvek](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Kiadások és életciklusra vonatkozó irányelvek.](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Helyszíni telepítések (2018. március)](get-started/whats-new-LBD-PU12-App72.md)
 #### [Platform update 13 (2018. január)](get-started/whats-new-platform-update-13.md)
-#### [Finance and Operations, Enterprise Edition kiadás 7.3](get-started/whats-new-application-7.3-update.md)
+#### [Finance and Operations, Enterprise Edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (2017. november)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (2017. október)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (2017. augusztus)](get-started/whats-new-platform-update-10.md)
@@ -130,14 +131,14 @@
 #### [Termelés feladása](../supply-chain/cost-management/production-posting.md)
 #### [Termelhető vagy beszerezhető termék beállítása](../supply-chain/cost-management/manufactured-items-treated-as-purchased-items.md)
 #### [Teljes költségfelosztási módszer](../supply-chain/cost-management/methodology-total-cost-allocation.md)
-#### [A legyártott cikkek állandó költségeinek amortizálása](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
+#### [Legyártott cikkek állandó költségeinek amortizálása](../supply-chain/cost-management/amortize-constant-costs-manufactured-item.md)
 ### [Power BI költségkezelési tartalmi csomag](../dev-itpro/analytics/cost-management-content-pack.md)
 
 ## Adatintegrálás
-### [Integrációs minták](../dev-itpro/data-entities/integration-overview.md)
+### [Adatintegrálási (importálási/exportálási) stratégia kiválasztása](../dev-itpro/data-entities/integration-overview.md)
 
 ### Adatintegrációs API-k
-#### [Adatkezelés csomag API-ja](../dev-itpro/data-entities/data-management-api.md)
+#### [Adatkezelési csomag API-ja](../dev-itpro/data-entities/data-management-api.md)
 #### [Szolgáltatási végpontok](../dev-itpro/data-entities/services-home-page.md)
 ##### [Szolgáltatáshitelesítési hibaelhárítás](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
 #### [OData](../dev-itpro/data-entities/odata.md)
@@ -157,10 +158,9 @@
 ###### [Számlák karbantartása a Sales szolgáltatásban, majd szinkronizálásuk közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ###### [Termékek karbantartása a Finance and Operations szolgáltatásban, majd szinkronizálásuk közvetlenül a Sales szolgáltatásba](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ###### [Névjegyek karbantartása a Sales szolgáltatásban, majd szinkronizálásuk névjegyekként vagy ügyfelekként közvetlenül a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Értékesítési ajánlat közvetlen szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-###### [Értékesítési rendelések közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-###### [Értékesítési számla közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Értékesítési ajánlatok karbantartása a Sales szolgáltatásban, majd szinkronizálásuk közvetlenül a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Értékesítési rendelések karbantartása a Finance and Operations szolgáltatásban, majd szinkronizálásuk közvetlenül a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Értékesítési számlák karbantartása a Sales szolgáltatásban, majd szinkronizálásuk közvetlenül a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 
 
 #### [Külső webszolgáltatásokat fogyasztó](../dev-itpro/data-entities/consume-external-web-service.md)
@@ -473,7 +473,13 @@
 #### [Felosztások egy költségjelentésben](../financials/expense-management/expense-report-distributions.md)
 #### [Vállalatközi költségek](../financials/expense-management/intercompany-expense.md)
 #### [Költségszabályok](../financials/expense-management/travel-expense-policies.md)
-
+#### [Költségjelentés megtekintése](../financials/expense-management/view-expense-report.md)
+#### [Költségjelentés feladása](../financials/expense-management/post-expense.md)
+#### [Költségjelentések és több jóváhagyó](../financials/expense-management/expense-report-multiple-approvers.md)
+#### [Áfa-visszaigénylés a Költséggazdálkodás modulban](../financials/expense-management/VAT-expense-report.md)
+#### [Napidíj-szabályok](../financials/expense-management/per-diem.md)
+#### [Utazási igénylések](../financials/expense-management/travel-req.md)
+#### [Személyes kiadások a költségjelentéseken](../financials/expense-management/personal-expenses.md)
 
 ### [Költségvetés-készítés](../financials/budgeting/budgeting-overview.md)
 #### [A költségvetés-tervezés áttekintése ](../financials/budgeting/budget-planning-overview-configuration.md)
@@ -631,6 +637,8 @@
 ##### [Adómotor integrációja](../financials/general-ledger/tax-engine-integration.md)
 ##### [Adóküszöbértékekre vonatkozó GYIK](../financials/localizations/apac-ind-tax-thresholds.md)
 ##### [Adómotor kiterjesztése](../financials/general-ledger/extend-tax-engine-configurations.md)
+##### [GST integrációja pénztárgépekhez](../retail/localizations/apac-ind-cash-registers.md)
+##### [Pénztárgépek telepítésére vonatkozó irányelvek](../retail/localizations/apac-ind-loc-deployment-guidelines.md)
 
 #### Japán
 ##### [Tárgyi eszköz beszerzése és állami támogatás igénylése](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -910,7 +918,10 @@
 ##### [Vevői és szállítói kifizetési formátumok hozzárendelése](../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md)
 ##### [Vevői kifizetés fizetési azonosító alapján](../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md)
 ##### [Nets importálási formátum](../financials/localizations/emea-nor-nets-import-format.md)
-##### [Áfabevallás](../financials/localizations/emea-nor-sales-tax-payment-report.md) 
+##### [Áfabevallás](../financials/localizations/emea-nor-sales-tax-payment-report.md)
+##### [Pénztárgépek](../retail/localizations/emea-nor-cash-registers.md)
+##### [Pénztárgépek telepítésére vonatkozó irányelvek](../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+
 #### Lengyelország
 ##### [Sorengedmények kiszámítása az egységár alapján](../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
 ##### [Javítással kapcsolatos megjegyzések](../financials/localizations/emea-pol-correction-notes.md)
@@ -934,9 +945,10 @@
 ##### [Kötelezvény beállításai](../financials/localizations/emea-esp-promissory-note-options.md)
 ##### [340-es bevallás](../financials/localizations/emea-esp-report-340.md)
 ##### [Beszerzési és értékesítési ciklusok](../financials/localizations/emea-esp-sales-purchase-cycle.md)
-##### [Speciális bevitelek és nyitólapok](../financials/localizations/emea-esp-opening-sheets-spain.md)
+##### [Speciális bejegyzések és nyitólapok](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Svédország
 ##### [Fizetési formátumok importálása](../financials/localizations/emea-swe-payment-formats-import.md)
+##### [Pénztárgépek](../retail/localizations/emea-swe-cash-registers.md)
 #### Svájc
 ##### [Vevői kifizetések importálása ESR-ben](../financials/localizations/emea-che-esr-customer-payments-import.md)
 #### Egyesült Királyság
@@ -1644,6 +1656,7 @@
 ##### [Üzemi erőforrások](../supply-chain/production-control/operations-resources.md)
 ##### [Erőforrás-képességek](../supply-chain/production-control/resource-capabilities.md)
 ##### [Kötegattribútumok](../supply-chain/production-control/batch-attributes.md)
+##### [Tételalapú kiigazítás](../supply-chain/production-control/batch-balancing.md)
 ##### [Receptúra másolása (feladat-útmutató)](../supply-chain/production-control/tasks/copy-formula.md)
 ##### [Receptúra létrehozása meglévő receptúra másolásával (feladat-útmutató)](../supply-chain/production-control/tasks/create-formula-copying-existing-formula.md)
 ##### [Társtermékek másolása meglévő receptúraverzióból (feladat-útmutató)](../supply-chain/production-control/tasks/copy-co-products-existing-formula-version.md)
@@ -1808,6 +1821,7 @@
 #### [Mértékegység és rakodási irányelvek](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Raktár Power BI-tartalom](../dev-itpro/analytics/warehouse-power-bi-content.md)
 #### [Nyitott munkalista rendszercsoportosítása](../supply-chain/warehousing/system-group-on-open-work-list.md)
+#### [Vonalkódok beolvasása kamerával a Dynamics 365 for Finance and Operations szolgáltatásban](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Mobil vonalkód-támogatás](../supply-chain/warehousing/mobile-barcode-support.md)
 ### [Raktári munkairányelvek](../supply-chain/warehousing/warehouse-work-policies.md)
 #### [Készlet mozgatásának engedélyezése társított munkával a Raktárkezelésben](../supply-chain/warehousing/move-inventory-associated-work.md)
@@ -1818,6 +1832,7 @@
 #### [Vegyes azonosítótábla bevételezése](../supply-chain/warehousing/mixed-license-plate-receiving.md)
 #### [Raktáron belüli régebbi kötegek megjelenítésének konfigurálása mobileszközön](../supply-chain/warehousing/display-older-batches-within-warehouses.md)
 #### [Legrégebbi köteg kitárolása mobileszközön](../supply-chain/warehousing/pick-oldest-batch.md)
+#### [Vonalkódok beolvasása kamerával a Dynamics 365 for Finance and Operations szolgáltatásban](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Darab kitárolásának megerősítése](../supply-chain/warehousing/piece-picking-confirmation.md)
 #### [Termék-visszaigazolás fürt kitárolásához](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
 #### [Részlegesen foglalt átmozgatási rendelések kötegelt kiadása](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
