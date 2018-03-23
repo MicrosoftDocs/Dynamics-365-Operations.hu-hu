@@ -3,7 +3,7 @@ title: "Mi az, ami új vagy módosított"
 description: "Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Finance and Operations rendszer legújabb verzióinak új szolgáltatásait."
 author: josaw1
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,6 +34,8 @@ Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Micro
 
 A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra történő frissítés folyamata](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
+
+[!include[release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>Alkalmazáskiadások
 
