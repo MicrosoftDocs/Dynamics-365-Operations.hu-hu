@@ -3,7 +3,7 @@ title: "On-premises telepítés"
 description: "Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat."
 author: kfend
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
+ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
+ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 
 ---
-# <a name="on-premises-deployment-landing-page"></a>On-premises telepítés nyitóoldal
+# <a name="on-premises-deployment-home-page"></a>On-premises telepítés kezdőlap
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,14 +36,14 @@ Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edi
 - [Helyszíni telepítések tervezése](plan-onprem-deployment.md)
 - [Helyszíni telepítések rendszerkövetelményei](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Hardverméretezés on-premises környezetekhez](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Online szolgáltatási és on-premises szoftveréletciklus-irányelv](../migration-upgrade/versions-update-policy.md)
 - [Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) megvásárlása](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Felhőalapú és helyszíni szolgáltatások összehasonlítása](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
 - [On-premises projekt létrehozása a Lifecycle Services szolgáltatásban](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Helyszíni környezetek beállítása és telepítése](setup-deploy-on-premises-environments.md)
-- [Hálózati nyomtató eszközök telepítése helyszíni környezetekben](../analytics/install-network-printer-onprem.md)
+- [Helyszíni környezetek beállítása és telepítése (12-es platformfrissítés)](setup-deploy-on-premises-pu12.md)
+- [Helyszíni környezetek beállítása és telepítése (8-as és 11-es platformfrissítés)](setup-deploy-on-premises-pu8-pu11.md)
+- [Hálózati nyomtatók helyszíni környezetben történő telepítése](../analytics/install-network-printer-onprem.md)
 - [Az SQL Server Reporting Services konfigurálása on-premises telepítéshez](../analytics/configure-ssrs-on-premises.md)
 - [Egyéni modellek fejlesztése és telepítése on-premises környezetekhez](develop-deploy-custom-models-on-premises.md)
 

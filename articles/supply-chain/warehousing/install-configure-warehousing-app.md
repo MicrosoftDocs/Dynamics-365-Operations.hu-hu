@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
+ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
+ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/06/2018
 
 ---
 
@@ -99,6 +99,8 @@ Konfigurálnia kell az alkalmazást az eszközön, hogy csatlakozni tudjon a Fin
     <br>**Megjegyzés:**: ne zárja perjellel (/) ezt a mezőt. 
     + **Vállalat** - adja meg a Finance and Operationsben szereplő jogi személyt, amelyhez az alkalmazásnak csatlakoznia kell. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Válassza a **Vissza** gombot az alkalmazás bal felső sarkában. Az alkalmazás ekkor csatlakozik a Finance and Operations kiszolgálóhoz, és megjelenik a raktári dolgozó bejelentkezési képernyője. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+A Dynamics 365 for Finance and Operations – Raktárkezelés, vonalkódok beolvasása a mobiltelefon kamerával beállításával kapcsolatos tájékoztatásért lásd: [Vonalkódok beolvasása kamerával a Dynamics 365 for Finance and Operations szolgáltatásban – Raktárkezelés](scan-bar-codes-using-a-camera.md)
 
 ## <a name="remove-access-for-a-device"></a>Eszköz hozzáférésének eltávolítása
 Abban az esetben, ha egy eszköz elveszett vagy a biztonsága sérült, el kell távolítania az eszköz a Finance and Operationshöz való hozzáférését. Az alábbi lépések leírják a hozzáférés-eltávolítás javasolt eljárását.

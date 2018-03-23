@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -71,15 +71,15 @@ Az alábbiakban megtalálja a sablonban szereplő címkék leírását:
 
 | Mező | Leírás | 
 |---------|---------|
-|< Fejléc >< Feladó >< Hitelesítési tartomány =”” >|A vevő vállalatának tartománya.|
-|< Fejléc >< Feladó >< Hitelesítés >< Azonosító >< /Azonosító > | A vevő vállalatának azonosítója.|
-|< Fejléc >< Címzett >< Hitelesítési tartomány =”” > | A szállító vállalatának tartománya.|
-|< Fejléc >< Címzett >< Hitelesítés >< Azonosító >< /Azonosító> | A szállító vállalatának azonosítója.|
-|< Fejléc >< Feladó >< Hitelesítési tartomány =”” > | A vevő vállalatának tartománya.|
-|< Fejléc >< Feladó >< Hitelesítés >< Azonosító >< /Azonosító> | A vevő vállalatának azonosítója.|
-|< Fejléc >< Feladó >< Hitelesítés >< SharedSecret >< /SharedSecret >|A vevő vállalatának közös titkos kulcsa.|
+|< Header >< From >< Credential domain=”” >|A vevő vállalatának tartománya.|
+|< Header >< From >< Credential>< Identity >< /Identity > | A vevő vállalatának azonosítója.|
+|< Header >< To >< Credential domain=”” > | A szállító vállalatának tartománya.|
+|< Header >< To >< Credential>< Identity >< /Identity> | A szállító vállalatának azonosítója.|
+|< Header >< Sender >< Credential domain=”” > | A vevő vállalatának tartománya.|
+|< Header >< Sender >< Credential >< Identity >< /Identity> | A vevő vállalatának azonosítója.|
+|< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|A vevő vállalatának közös titkos kulcsa.|
 |< Request deploymentMode=”” >|A teszt vagy az éles telepítés.|
-|< Kérelem >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|A szállító külső katalógus végpontjának URL-címe.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|A szállító külső katalógus végpontjának URL-címe.|
 
 ### <a name="extrinsic-elements"></a>Külső elemek
 
@@ -94,13 +94,13 @@ A visszajelzési üzenet a szállítótól kapott üzenet, amikor a felhasznál�
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Mennyiség|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Külső cikkazonosító|
-|< ItemDetail>< UnitPrice >< Pénznem=”” >| Pénznem|
-|< ItemDetail >< UnitPrice >< Pénz >< /Pénz >| Egységár|
+|< ItemDetail>< UnitPrice >< Money currency=”” >| Pénznem|
+|< ItemDetail >< UnitPrice >< Money >< /Money >| Egységár|
 |< ItemDetail >< Description ShortName=”” >|Termék neve|
-|< ItemDetail >< Leírás >< /Leírás >|Szerepel a cikk leírásában; Termék neve, ha nincs megadva a ShortName.|
+|< ItemDetail >< Description >< /Description >|Szerepel a cikk leírásában; Termék neve, ha nincs megadva a ShortName.|
 |< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure >|Egység|
-|< ItemDetail >< Osztályozás >< /Osztályozás >|Szerepel a cikk leírásában|
-|< ItemDetail >< Osztályozási tartomány =”” >|Szerepel a cikk leírásában|
+|< ItemDetail >< Classification >< /Classification >|Szerepel a cikk leírásában|
+|< ItemDetail >< Classification domain=”” >|Szerepel a cikk leírásában|
 
 ## <a name="delete-an-external-catalog"></a>Külső katalógus törlése
 Törölje a külső katalógust a lapon lévő Törlés művelettel.

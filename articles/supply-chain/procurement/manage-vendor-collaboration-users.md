@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e83f46df30d13a8bffa5c2b0bd05f456b67e6ec
+ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
+ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -62,12 +62,12 @@ Amikor egy kérést benyújtanak, az hozzáadódik a **Szállítói együttműk�
 Mielőtt kérheti egy új felhasználó létrehozását a rendszerben, ezt a személyt be kell állítani kapcsolattartóként egy vagy több szállítói fiókhoz. Szállítói együttműködéshez kapcsolódó, új felhasználóra vonatkozó kérelem létrehozása:
 
 1.  Az **Összes partner** lapon kattintson a **Szállítói felhasználó létrehozása** lehetőségre.
-2.  Adjon meg egy e-mail címet a felhasználóhoz. Ezt a címet fogja a felhasználó használni, hogy bejelentkezzen a Finance and Operations alkalmazásba. Ha az e-mail cím olyan tartományhoz tartozik, amely Microsoft Azure-bérlőként van regisztrálva, akkor az e-mail címnek egy meglévő, Azure Active Directory (ADD) fióknak kell lennie ahhoz, hogy a létesítési folyamat sikeres legyen. Ha az e-mail cím nem olyan tartományhoz tartozik, amely a regisztrálva van a Microsoft Azure-nál, akkor a létesítési folyamat részeként létrejön egy ADD-fiók, és az új felhasználó levélben kap meghívást. Az olyan fogyasztói e-mail-címeket, amelyek tartományai például a @hotmail.com, @gmail.com vagy @comcast.net, nem lehet a Finance and Operations felhasználójaként regisztrálni.
+2.  Adjon meg egy e-mail címet a felhasználóhoz. Ezt a címet fogja a felhasználó használni, hogy bejelentkezzen a Finance and Operations alkalmazásba. Ha az e-mail cím olyan tartományhoz tartozik, amely Microsoft Azure-bérlőként van regisztrálva, akkor az e-mail címnek egy meglévő, Azure Active Directory (AAD) fióknak kell lennie ahhoz, hogy a létesítési folyamat sikeres legyen. Ha az e-mail cím nem olyan tartományhoz tartozik, amely a regisztrálva van a Microsoft Azure-nál, akkor a létesítési folyamat részeként létrejön egy ADD-fiók, és az új felhasználó levélben kap meghívást. Az olyan fogyasztói e-mail-címeket, amelyek tartományai például a @hotmail.com, @gmail.com vagy @comcast.net, nem lehet a Finance and Operations felhasználójaként regisztrálni.
 3.  Állítsa a **Szállítói együttműködési hozzáférés engedélyezett** lehetőséget **Igenre** minden olyan jogi személy esetében, amelynél a felhasználónak hozzáférésre van szüksége.
 4.  A **Felhasználói szerepkörök hozzárendelése** területen válassza ki a **Hozzárendelés** jelölőnégyzetet azoknál a biztonsági szerepköröknél, amelyekkel a felhasználónak rendelkeznie kell.
 5.  Kattintson a **Küldés** hivatkozásra.
 
-Amikor a szállítói felhasználóra vonatkozó kérelem benyújtásra kerül, a **Szállítói együttműködési hozzáférés engedélyezett** mező értéke **Igen**-re vált a kijelölt szállítói fióknál, és elindul egy felhasználóra vonatkozó munkafolyamat. A munkafolyamat részeként létrejön egy új felhasználó a Finance and Operations alkalmazásban, és sor kerül a biztonsági szerepkörök kijelölésére. Ezenkívül egy Azure B2B szolgáltatás aktiválódik, ami az Azure portállal való együttműködést jelzi, és egy új vagy meglévő AAD-fiók társításra kerül a Finance and Operations felhasználói fiókjával.
+Amikor a szállítói felhasználóra vonatkozó kérelem benyújtásra kerül, a **Szállítói együttműködési hozzáférés engedélyezett** mező értéke **Igen**-re vált a kijelölt szállítói fióknál, és elindul egy felhasználóra vonatkozó munkafolyamat. A munkafolyamat részeként létrejön egy új felhasználó a Finance and Operations alkalmazásban, és sor kerül a biztonsági szerepkörök kijelölésére. Ezenkívül egy Azure B2B szolgáltatás aktiválódik, ami az Azure portállal való együttműködést jelzi, és egy új vagy meglévő AAD-fiók társításra kerül a Finance and Operations felhasználói fiókjával. További tudnivalókért lásd: [Mi az Azure AD B2B együttműködés?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Egy felhasználó inaktiválása
 
