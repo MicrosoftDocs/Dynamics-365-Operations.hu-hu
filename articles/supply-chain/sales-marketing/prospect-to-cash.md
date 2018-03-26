@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,9 +42,8 @@ A jelenlegi verzióban A potenciális ügyfelek készpénzre váltása megoldás
 - [Sales-fiókok fenntartása és azok szinkronizálása közvetlenül a Sales-től a Finance and Operations szolgáltatással](accounts-template-mapping-direct.md)
 - [Termékek karbantartása a Finance and Operations szolgáltatásban, majd szinkronizálásuk közvetlenül a Sales szolgáltatásba](products-template-mapping-direct.md)
 - [Névjegyek karbantartása a Sales szolgáltatásban, majd szinkronizálásuk névjegyekként vagy ügyfelekként közvetlenül a Finance and Operations szolgáltatásba](contacts-template-mapping-direct.md)
-- [Értékesítési ajánlatok közvetlen szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba (sablon kiadása függőben)](sales-quotation-template-mapping-sales-fin.md)
-- [Értékesítési rendelések közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](sales-order-template-mapping-direct.md)
-- [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között (sablon kiadása függőben)](sales-order-template-mapping-direct-two-ways.md)
+- [Értékesítési ajánlat közvetlen szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](sales-quotation-template-mapping-sales-fin.md)
+- [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között](sales-order-template-mapping-direct-two-ways.md)
 - [Értékesítési számla közvetlen szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Rendszerigény a Finance and Operations rendszerhez
@@ -85,7 +84,7 @@ A potenciális ügyfelek készpénzre váltásának integrációja a következő
 
 A Potenciális ügyfelek készpénzre váltása megoldás használatához telepítenie kell a következő összetevőket:
 
-- Dynamics 365 for Sales, verzió: 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales, verzió: 1612 (8.2.1.207) (DB 8.2.1.207) online vagy későbbi verzió.
 - A potenciális ügyfelek készpénzre váltása megoldás Dynamics 365 for Sales szolgáltatáshoz, 1.15.0.0 (v15) 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Telepítse A potenciális ügyfelek készpénzre váltása megoldást a Salesbe

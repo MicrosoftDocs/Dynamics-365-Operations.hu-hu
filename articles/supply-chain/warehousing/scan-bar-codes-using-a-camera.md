@@ -18,14 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ffbd853c15e479fc4350a19121f2aebcedda9854
-ms.openlocfilehash: 31b9d421f3fd5378f26faeee3a83b66861ef5008
+ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
+ms.openlocfilehash: f7fe3ab07578b09822fbfeaa4b07331b79f13610
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 
 ---
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Vonalkódok beolvasása kamerával a Dynamics 365 for Finance and Operations szolgáltatásban – Raktárkezelés
+
+[!include[banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogy miként állítható be a Dynamics 365 for Finance and Operations – Raktárkezelés arra, hogy vonalkódokat olvasson be egy mobileszköz kamerájának használatához. 
 
@@ -47,8 +49,8 @@ A kamera lap minden olyan oldalnál elindul, ahol a beviteli mezőnél a prefer�
 - Kattintson a kamerára a Feladatok és részletes adatok oldalán a Kamera lapra való visszatéréshez. 
 
 | Feladatok és részletes adatok oldala | Kamera lap | 
-| --------------------- | -------------------- |
-| ![camera-scanning-example-task-detail-page](media/camera-scanning-example-task-detail-page.png)          | ![camera-scanning-example-camera-page](media/camera-scanning-example-camera-page.png)          |
+| :---------------------: | :--------------------: |
+| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
 
 Ha a kamera lapján a Kamera gombra kattint, akkor az kiszürkítve jelenik meg, amikor megpróbál azonosítani egy vonalkódot. Ha a vonalkód azonosítása nem történik meg 5 másodpercen belül, akkor a folyamat időkorlátja lejár, és a Kamera gomb ismét elérhető lesz. Ezután ismét megpróbálja beolvasni a vonalkódot.
 

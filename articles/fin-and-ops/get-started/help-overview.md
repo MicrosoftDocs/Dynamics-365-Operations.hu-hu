@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 221ce80cb7520f372f38859aa392b1d559448c81
+ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
+ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/09/2018
 
 ---
 
@@ -52,7 +52,7 @@ A Súgó lapról érhetők el a súgótémakörök és a feladat-útmutatók, a 
 Ez a témakör ismerteti a Súgó rendszert, és leírja, hogyan hozhat létre testreszabott dokumentációt és továbbképzési forrásokat szervezetének.
 
 > [!IMPORTANT]
-> A **Feladat-útmutatók** lap jelenleg nem áll rendelkezésre a Microsoft Dynamics 365 for Talent és a Microsoft Dynamics 365 for Retail esetében. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/unified-operations](../../index.md) mind a Retail, mind a Talent esetében.
+> A **Feladat-útmutatók** lap jelenleg nem áll rendelkezésre a Microsoft Dynamics 365 for Talent és a Microsoft Dynamics 365 for Retail esetében. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) mind a Retail, mind a Talent esetében.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Súgó a docs.microsoft.com-on
 
@@ -115,7 +115,7 @@ További tudnivalókért olvassa el a közreműködői útmutatót: https://gith
 
 > [!NOTE]
 > Jelenleg csak az angol nyelvű repóhoz fogadunk el közreműködést.  
-> A GitHub használatával jelentett problémákat nem fogadunk el – a tartalomjavaslatokhoz használjon lekéréses kérelmet. A termék- és szolgáltatás-visszajelzések kezelésének legcélszerűbb módja a Dynamics 365 Ideas portál: https://ideas.dynamics.com/ideas/. 
+> A GitHub használatával jelentett problémákat nem fogadunk el – a tartalomjavaslatokhoz használjon lekéréses kérelmet. A termék- és szolgáltatás-visszajelzések kezelésének legcélszerűbb módja a Dynamics 365 Ideas portál: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Feladat-útmutatók
