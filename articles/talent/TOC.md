@@ -3,6 +3,8 @@
 # [Első lépések](talent-get-started.md)
 ## [Rendszerkövetelmények és frissítési irányelv](talent-versions-update-policy.md)
 ## [Microsoft Dynamics 365 for Talent létesítése](provisioning-talent.md)
+## [Talent-környezet eltávolítása](remove-test-environment.md)
+## [Microsoft Dynamics 365 for Talent moduláris alkalmazások létesítése](modular-app-tech-faq.md)
 ## [Talent funkció kibővítése](extend-talent-functionality.md)
 
 # [Emberi erőforrásokra vonatkozó stratégia kialakítása](departments-jobs-positions.md)
@@ -39,5 +41,5 @@
 ## [Kérdőív eredményeinek kiértékelése](evaluate-questionnaire-results.md)
 
 # Munkahelyi biztonság és megfelelőség (Egyesült Államok)
-## [I-9-es űrlap: foglalkoztatási ellenőrzés](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
-## [Az ADA-nak történő megfelelés](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+## [I-9-es űrlap: foglalkoztatási ellenőrzés](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [Az ADA-nak történő megfelelés](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)

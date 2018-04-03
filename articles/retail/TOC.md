@@ -3,8 +3,8 @@
 # Első lépések
 ## [Új vagy módosult elemek](get-started/whats-new.md)
 ## [Mielőtt megvásárolná a Dynamics 365 for Retail terméket](get-started/before-you-buy.md)
-## [Regisztrálás az előfizetés előnézetére](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
-## [Bemutatókörnyezet telepítése](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Regisztrálás az előfizetés előnézetére](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
+## [Bemutatókörnyezet telepítése](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
 ## [Telepítési beállítások](dev-itpro/choose-deployment.md)
 
 
@@ -46,10 +46,11 @@
 
 # Modern Point of Sale (MPOS) és Cloud POS
 ## [A Modern POS és a Cloud POS közötti választás](MPOS-or-CPOS.md)
-## [POS műveletek](POS-operations.md)
+## [POS-műveletek, online és offline](pos-operations.md)
 ## [Bemutató adatok képernyő-elrendezései az MPOS/CPOS pénztárban](demo-data.md)
+## [Termék- és vevőkeresés áttekintése a pénztárban](POS-search-improvements.md)
 ## Hardverperifériák
-### [Kiskereskedelmi perifériás eszközök – áttekintés](retail-peripherals-overview.md)
+### [Retail perifériás eszközök – áttekintés](retail-peripherals-overview.md)
 ### [A Microsoft által tesztelt pénztári hardverperifériák](microsoft-tested-pos-hardware-peripherals.md)
 ### [Kiskereskedelmiperiféria-szimulátor](dev-itpro/retail-peripheral-simulator.md)
 ### [Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat](define-maintain-channel-clients-registers-hw-stations.md)
@@ -60,6 +61,7 @@
 ### [POS-alkalmazás és felhasználói nyelvi beállítások](pos-application-user-language-settings.md)
 ### [Képek beállítása az MPOS pénztár számára](set-up-manage-images-retail-mpos.md)
 ## [Infókódok áttekintése](info-codes-retail.md) 
+## [Pénztárjavítások szerializált termékekhez](serialized-inventory.md)
 ## Termékajánlatok
 ### [Személyre szabott termékajánlatok áttekintése](personalized-product-recommendations.md)
 ### [Ajánlások vezérlőelem felvétele a pénztári eszközön](add-recommendations-control-pos-screen.md)
@@ -97,6 +99,7 @@
 ## [Ármódosítások és engedmények](price-adjustments-discounts.md)
 ## [Átfedő engedmények optimális kombinációjának meghatározása](optimal-combination-overlapping-discounts.md)
 ## [Csatornaspecifikus engedmények definiálása](define-channel-specific-discounts.md)
+## [Kiskereskedelmi termékek engedményeinek megakadályozása](prevent-discounts.md)
 ## [Kiskereskedelmi értékesítési utalványok létrehozása](retail-coupons.md)
 
 # Termékek és termékkihelyezés
@@ -105,6 +108,7 @@
 ## [Attribútumok és attribútumcsoportok áttekintése](attribute-attributegroups-lifecycle.md)
 ## [Attribútumok létrehozása és kezelése](create-manage-attributes.md)
 ## [Kiskereskedelmi termékek beállítása](set-up-retail-products.md)
+## [Továbbfejlesztett termék- és kategóriakezelés](category-management-product-creation.md)
 ## [Termékdimenziók](../supply-chain/pim/product-dimensions.md)
 ## [Vonalkódok beállítása](set-up-bar-codes.md)
 ## [Vonalkódmaszkok beállítása](set-up-bar-code-masks.md)
@@ -190,13 +194,14 @@
 # [Kiskereskedelmi fejlesztés és felügyelet](dev-itpro/dev-retail-home-page.md)
 
 ## Felépítés
-### [A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadás összetevői – kiskereskedelmi változat](retail-components.md)
-### [A kiskereskedelmi kiszolgáló felépítése](dev-itpro/retail-server-architecture.md)
+### [A Microsoft Dynamics 365 for Finance and Operations – Retail](retail-components.md)
+### [A Retail Server felépítése](dev-itpro/retail-server-architecture.md)
 ### [Kommunikáció a kiskereskedelmi csatornán](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS architektúra](dev-itpro/retail-modern-pos-architecture.md)
 ### [Az online kiskereskedelmi csatorna közzétételi felépítése](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Retail Channel Performance Power BI-tartalom](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Retail Channel Performance Power BI-tartalom](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json)
 ### [Fizetési alkalmazás biztonsági adatszabványokat (PA-DSS) tanúsítvány](dev-itpro/PA-DSS-Certification.md)
+### [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](retail-onprem.md)
 
 ## Telepítés és gyorsjavítások
 ### [A Retail Store Scale Unit áttekintése](dev-itpro/retail-store-system-begin.md)
@@ -208,7 +213,7 @@
 ### [Retail Hardware Station konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)
 ### [Retail önkiszolgáló központi telepítése](dev-itpro/retail-mass-deployment.md)
 ### [Retail összetevő-események a diagnosztikához és a hibaelhárításhoz](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-### [Telepíthető csomag alkalmazása](../dev-itpro/deployment/apply-deployable-package-system.md)
+### [Telepíthető csomag alkalmazása](../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json)
 
 ## Frissítés és N-1-támogatás
 ### [A frissítés és az N-1-támogatás áttekintése](dev-itpro/overview-upgrade-n-minus1.md)
@@ -218,7 +223,7 @@
 ### [Eszközkezelés implementációs útmutatója](implementation-considerations-devices.md)
 
 ## A környezet konfigurációja
-### [Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [A Bing Térképek kezelése](dev-itpro/manage-bing-maps.md)
 
 ## Pénztár bővíthetősége
@@ -235,13 +240,13 @@
 ## Retail Server bővíthetősége
 ### [Retail Server OData-vezérlőjének kiterjesztése](dev-itpro/extend-retail-server-odata-controller.md)
 ### [Webes API- és OData-vezérlők](dev-itpro/odata-controllers-api.md)
-### [Kiskereskedelmi kiszolgáló ügyfél és fogyasztói API-k](dev-itpro/retail-server-customer-consumer-api.md)
+### [Retail Server ügyfél és fogyasztói API-k](dev-itpro/retail-server-customer-consumer-api.md)
 ### [Metaadatok kiterjesztése](dev-itpro/extend-metadata.md)
 ### [A kiskereskedelmi futtatókörnyezet kiterjesztése a POS offline mód támogatásához](dev-itpro/call-crt-service-offline.md)
 
 ## Kereskedelmi futtatókörnyezet bővíthetősége
 ### [Kereskedelmi futtatókörnyezet áttekintése](dev-itpro/commerce-runtime-overview.md)
-### [A kereskedelmi futtatókörnyezet és a Retail kiszolgáló bővíthetősége ](dev-itpro/commerce-runtime-extensibility.md)
+### [A kereskedelmi futtatókörnyezet és a Retail Server bővíthetősége ](dev-itpro/commerce-runtime-extensibility.md)
 ### [Ügyfélpreferencia-adatok hozzáadása a csatornaadatbázishoz](dev-itpro/add-customer-preference-channel.md)
 ### [Tulajdonságok hozzáadása az értékesítési rendeléshez](dev-itpro/add-properties-sales-order.md)
 ### [A kereskedelmi futtatókörnyezet bővíthetősége és eseményindítói ](dev-itpro/commerce-runtime-extensibility-trigger.md)
