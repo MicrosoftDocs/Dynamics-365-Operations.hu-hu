@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadás – dokumentáció"
-description: "Dokumentáció a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadásához."
+title: "A Microsoft Dynamics 365 for Finance and Operations dokumentációja"
+description: "Dokumentáció a Microsoft Dynamics 365 for Finance and Operations szolgáltatáshoz."
 author: margoc
 manager: AnnBe
 ms.date: 03/02/2018
@@ -17,17 +17,17 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7142c6bcb6e98929afdb8bb982a17efc7223ab12
-ms.openlocfilehash: 0d12082a2b10ae8e83217c5451627239e6ec640b
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: d1307729945494ee78c0ca6089b384d666fe5f20
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
 # <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>A Microsoft Dynamics 365 for Finance and Operations bemutatása
 [!include[banner](includes/banner.md)]
 
-Ismerje meg, hogyan alkalmazhatja vállalkozásában a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadást, az alábbi erőforrások nagyszerű tartalmakat kínálnak végfelhasználók, fejlesztők és informatikai szakemberek számára 
+Ismerje meg, hogyan alkalmazhatja vállalkozásában a Microsoft Dynamics 365 for Finance and Operations szolgáltatást, az alábbi erőforrások nagyszerű tartalmakat kínálnak végfelhasználók, fejlesztők és informatikai szakemberek számára. 
 
 Ezen tartalmak nagy része érvényes a kapcsolódó termékekre is: Microsoft Dynamics 365 for Retail és Microsoft Dynamics 365 for Talent. 
 

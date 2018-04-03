@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 199a8961f782816c71e47f9e76e097c069fbf686
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -43,7 +43,7 @@ A Talent rendszerrel a következő feladatok végezhetők el:
 + Tanfolyamok napirendjeinek, munkameneteinek és szekcióinak beállítása, végrehajtása és elemzése.
 
 > [!NOTE] 
-> A Dynamics 365 for Talent erősen kapcsolódik a Dynamics 365 for Finance and Operations, Enterprise kiadás Emberi erőforrások részlegéhez. Mindkét termék azonos funkciókkal bírhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, Enterprise kiadás, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> A Dynamics 365 for Talent erősen kapcsolódik a Dynamics 365 for Finance and Operations szolgáltatáshoz. Mindkét termék azonos funkciókkal bírhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Emberi erőforrások kezelési stratégiájának kialakítása
 ---------------------------------------------------------

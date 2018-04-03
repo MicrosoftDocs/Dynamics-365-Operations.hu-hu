@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 40d54a9a2920e87caba62c92b5ca6465fa68e3d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 164932ac3bc701696f5c0b08c5e2d585d9a8ba6a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/08/2018
 A Microsoft Dynamics 365 for Retail egy végponttól végpontig terjedő megoldás, amely minden csatornán egyesített kereskedelmet biztosít. Magába foglalja az értékesítést, a mobilitást, az intelligenciát és a produktivitást, így a kiskereskedők és az alkalmazottak jobb eredményeket érhetnek el, felhő és mobil alapokon. A Retail rendszer átfogó támogatást nyújt számos üzleti folyamathoz, például az árusításhoz, továbbá a készlet- és csatornakezeléshez. Emellett magával ragadó ügyfélélményt biztosít minden érintő ponton.
 
 > [!NOTE] 
-> A Dynamics 365 for Retail szorosan kapcsolódik a Dynamics 365 for Finance and Operations, Enterprise kiadás és a Dynamics 365 for Talent termékekhez. Mindhárom termék azonos funkciókkal bírhat. Ezért azon témákban, amelyek elsősorban a Retail rendszerhez kapcsolódnak, a terméknév Microsoft Dynamics 365 for Retail lesz, azon témák esetén, amelyek elsősorban az alaptermékre (Finance and Operations) kapcsolódnak, a terméknév Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás lesz, az emberi erőforrásokra vonatkozó témakörökben pedig a terméknév Dynamics 365 for Talent lesz. 
+> A Dynamics 365 for Retail szorosan kapcsolódik a Dynamics 365 for Finance and Operations és a Dynamics 365 for Talent termékekhez. Mindhárom termék azonos funkciókkal bírhat. Ezért azon témákban, amelyek elsősorban a Retail rendszerhez kapcsolódnak, a terméknév Microsoft Dynamics 365 for Retail lesz, azon témák esetén, amelyek elsősorban az alaptermékre (Finance and Operations) kapcsolódnak, a terméknév Microsoft Dynamics 365 for Finance and Operations lesz, az emberi erőforrásokra vonatkozó témakörökben pedig a terméknév Dynamics 365 for Talent lesz. 
 
 A bal ablaktáblában válasszon ki egy szolgáltatásterületet, amelyről többet szeretne megtudni.
 
