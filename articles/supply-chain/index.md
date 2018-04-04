@@ -1,6 +1,6 @@
 ---
 title: "Az ellátási lánc kezelése kezdőlap"
-description: "Ez a lap a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza."
+description: "Ez a lap a Microsoft Dynamics 365 for Finance and Operations ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 02/15/2018
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9e3551580cc03ebf62ec42283c5a9a885d8c8d8f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/21/2018
 
 [!include[banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza. 
+Ez a témakör a Microsoft Dynamics 365 for Finance and Operations ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza. 
 
 ## <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 Keresse fel a <a href="https://roadmap.dynamics.com/">Dynamics 365 ütemterv</a> oldalt az új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében. 
@@ -106,10 +106,10 @@ A <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing ku
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Költségkönyvelési interaktív laboratórium</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Ígérhető és kanbanfeladatok ütemezése</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Darabjegyzék-számítás költségszámítási táblázat segítségével</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">A ráktárban kialakítható mobilitás a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás segítségével</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">A ráktárban kialakítható mobilitás a Microsoft Dynamics 365 for Finance and Operations segítségével</a>
 
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok
-A Microsoft Dynamics 365 for Finance and Operations rendszerről szóló képzésekkel kapcsolatos további információkért látogasson el ide: <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics Tanulási Portál</a>. (CustomerSource-fiókot igényel) 
+A Microsoft Dynamics 365 for Finance and Operations rendszerről szóló képzésekkel kapcsolatos további információkért látogasson el ide: <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Tanulási Portál</a>. (CustomerSource-fiókot igényel) 
 
 
 

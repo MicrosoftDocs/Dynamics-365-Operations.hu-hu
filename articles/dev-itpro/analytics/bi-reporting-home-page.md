@@ -1,6 +1,6 @@
 ---
 title: Intelligencia
-description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadásában elérhető üzeltiintelligencia-eszközökre és jelentéskészítési eszközökre vonatkozóan."
+description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzletiintelligencia-eszközökre és jelentéskészítési eszközökre vonatkozóan."
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/18/2017
 
 [!include[banner](../includes/banner.md)]
 
-Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kiadásában elérhető üzeltiintelligencia-eszközökre (BI) és jelentéskészítési eszközökre vonatkozóan.
+Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzletiintelligencia- (BI) eszközökre és jelentéskészítési eszközökre vonatkozóan.
 
 ## <a name="get-started"></a>Első lépések
 - [Adatelérés és jelentéskészítés](information-access-reporting.md)
