@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2c0a00b6a1956f1f22a50951308c434c3f0eefc4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: baefad4efd51661c236459493b7f02747593bbab
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -73,7 +73,7 @@ Az alábbiakban néhány példát talál tipikus statisztikai dimenziótagokra.
 
 ## <a name="statistical-measure-provider-template"></a>Statisztikaimérték-szolgáltató sablon
 
-A statisztikai mértékek többféle forrásból származhatnak. A Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszer kiváló forrás a statisztikai mértékek kigyűjtésére. A statisztikaimérték-szolgáltató sablon használatával egyszerűen konfigurálhatja a kigyűhteni kívánt statisztikai mértékeket.
+A statisztikai mértékek többféle forrásból származhatnak. A Microsoft Dynamics 365 for Finance and Operations rendszer kiváló forrás a statisztikai mértékek kigyűjtésére. A statisztikaimérték-szolgáltató sablon használatával egyszerűen konfigurálhatja a kigyűhteni kívánt statisztikai mértékeket.
 
 A statisztikaimérték-szolgáltató sablon általános, és több statisztikai dimenziótagban is újrafelhasználható.
 
@@ -132,13 +132,13 @@ A statisztikai mértékek Költségkönyvelésben történő keresése előtt l�
 > [!NOTE]
 > Ebben a példában csak a **Tényleges verzió** esetében hozzuk létre a kapcsolatot.
 
-Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kezelés** \> **Statisztikai mérések** pontra a kapcsolat létesítéséhez. Ebben az esetben válassza a **Dynamics 365 for Finance and Operations Enterprise edition – Statisztikai mértékek** adatcsatlakozót rendszerrel, mivel a Finance and Operations rendszerből szeretnénk kigyűjteni az adatokat.
+Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kezelés** \> **Statisztikai mérések** pontra a kapcsolat létesítéséhez. Ebben az esetben válassza a **Dynamics 365 for Finance and Operations – Statisztikai mértékek** adatcsatlakozót rendszerrel, mivel a Finance and Operations rendszerből szeretnénk kigyűjteni az adatokat.
 
 **Adatforrás**
 
 | Név        | Adatcsatlakozó                                                                     | Statisztikai dimenziótag |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Teljes munkaidős alkalmazottak D365FO | Dynamics 365 for Finance and Operations, Enterprise Edition – Statisztikai mértékek | Teljes munkaidős alkalmazottak                         |
+| Teljes munkaidős alkalmazottak D365FO | Dynamics 365 for Finance and Operations – statisztikai mértékek | Teljes munkaidős alkalmazottak                         |
 
 **Adatszolgáltató konfigurációja**
 
@@ -220,13 +220,13 @@ A statisztikai mértékek Költségkönyvelésben történő keresése előtt l�
 > [!NOTE]
 > Ebben a példában csak a **Tényleges verzió** esetében hozzuk létre a kapcsolatot.
 
-Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kezelés** \> **Statisztikai mérések** pontra a kapcsolat létesítéséhez. Ebben az esetben válassza a **Dynamics 365 for Finance and Operations Enterprise edition – Statisztikai mértékek** adatcsatlakozót rendszerrel, mivel a Finance and Operations rendszerből szeretnénk kigyűjteni az adatokat.
+Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kezelés** \> **Statisztikai mérések** pontra a kapcsolat létesítéséhez. Ebben az esetben válassza a **Dynamics 365 for Finance and Operations – Statisztikai mértékek** adatcsatlakozót rendszerrel, mivel a Finance and Operations rendszerből szeretnénk kigyűjteni az adatokat.
 
 **Adatforrás**
 
 | Név           | Adatcsatlakozó                                                                     | Statisztikai dimenziótag |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Csomag költséghelye D365FO | Dynamics 365 for Finance and Operations, Enterprise Edition – Statisztikai mértékek | Csomag költséghelye                      |
+| Csomag költséghelye D365FO | Dynamics 365 for Finance and Operations – statisztikai mértékek | Csomag költséghelye                      |
 
 A rendszer felismeri, hogy a ProdRouteTrans olyan tábla, amelyben minden rekord egy külön jogi személyhez tartozik. Ezért rendszer megkéri, hogy jelölje ki azt a jogi személyt, amely esetében szeretné importálni a tranzakciókat.
 

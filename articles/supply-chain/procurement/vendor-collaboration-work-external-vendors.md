@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: 2d879ee5a23e3263c9dce52f4732a2be74e60f8e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 76c2b078b583a1f8f2235eef15dbba514e57b0f8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/07/2018
 
 [!include[banner](../includes/banner.md)]
 
-A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszerhez. Segítségével a szállítók beszerzési rendelésekkel, számlákkal, bizományosi készlet adataival és ajánlatkérésekel dolgozhatnak, valamint hozzáférhetnek a szállítók alapadatainak részeihez. Ez a témakör bemutatja, hogyan működhet együtt a szállítói együttműködési felületet használó külső szállítókkal a beszerzési rendelések és a bizományosi készlet kezelésében. Bemutatja továbbá, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során.
+A **Szállítói együttműködés** modul azokat a szállítókat célozza meg, akik nem rendelkeznek elektromos adatátviteli (EDI) integrációval a Microsoft Dynamics 365 for Finance and Operations rendszerhez. Segítségével a szállítók beszerzési rendelésekkel, számlákkal, bizományosi készlet adataival és ajánlatkérésekel dolgozhatnak, valamint hozzáférhetnek a szállítók alapadatainak részeihez. Ez a témakör bemutatja, hogyan működhet együtt a szállítói együttműködési felületet használó külső szállítókkal a beszerzési rendelések és a bizományosi készlet kezelésében. Bemutatja továbbá, hogyan engedélyezheti egy adott szállítónak a szállítói együttműködés használatát, valamint hogyan definiálja azokat az információkat, amelyeket minden szállító lát egy beszerzési rendelésre történő válaszolás során.
 
 Ha többet szeretne megtudni arról, hogy milyen tevékenységeket végezhetnek a külső szállítók a szállítói együttműködési felületen, olvassa el a [Szállítói együttműködés vevőkkel](vendor-collaboration-work-customers-dynamics-365-operations.md) részt.
 

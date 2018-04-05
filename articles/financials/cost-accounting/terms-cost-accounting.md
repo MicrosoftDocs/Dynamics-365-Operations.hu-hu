@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 957acdbbc6bba83b8b2e2b83fdf266524385141d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -40,7 +40,7 @@ A felosztási alap használatos a tevékenységek mérésére és számszerűsí
 
 **Költségkönyvelés**
 
-A költségkönyvelés lehetővé teszi adatok összegyűjtését különböző forrásokból, például: főkönyv, részfőkönyvek, költségvetések és statisztikai adatok. Ezután elemezheti, összesítheti és kiértékelheti a költségadatokat, hogy a vezetőség a lehető legjobb döntéseket hozhassa meg az ármódosításokkal, a költségvetésekkel, a költségkontrollal stb. kapcsolatban. A költségelemzés alapjául használt forrásadatok kezelése önállóan történik a költségkönyvelésben. Emiatt a Költségkönyvelés frissítései nem befolyásolják a forrásadatokat. Azonban amikor költségadatokat gyűjt össze különböző forrásokból, és különösen akkor, ha a fő számlák importálását a Microsoft Dynamics 365 for Finance and Operations Enterprise edition megoldásban költségösszetevőkként végzi a főkönyvből, adatredundancia lép fel, mert ugyanazok az adatok a főkönyvben és a költségkönyvelésben is léteznek. Ez a redundancia szükséges, kérik, mert a pénzgazdálkodást használjuk külső jelentésekhez és a költségkönyvelést a belső jelentésekhez.
+A költségkönyvelés lehetővé teszi adatok összegyűjtését különböző forrásokból, például: főkönyv, részfőkönyvek, költségvetések és statisztikai adatok. Ezután elemezheti, összesítheti és kiértékelheti a költségadatokat, hogy a vezetőség a lehető legjobb döntéseket hozhassa meg az ármódosításokkal, a költségvetésekkel, a költségkontrollal stb. kapcsolatban. A költségelemzés alapjául használt forrásadatok kezelése önállóan történik a költségkönyvelésben. Emiatt a Költségkönyvelés frissítései nem befolyásolják a forrásadatokat. Azonban amikor költségadatokat gyűjt össze különböző forrásokból, és különösen akkor, ha a fő számlák importálását a Microsoft Dynamics 365 for Finance and Operations megoldásban költségösszetevőkként végzi a főkönyvből, adatredundancia lép fel, mert ugyanazok az adatok a főkönyvben és a költségkönyvelésben is léteznek. Ez a redundancia szükséges, kérik, mert a pénzgazdálkodást használjuk külső jelentésekhez és a költségkönyvelést a belső jelentésekhez.
 
 **Költségkönyvelési főkönyv**
 
@@ -120,7 +120,7 @@ Két dimenzióhierarchia van: kategorizálási hierarchia és osztályozási hie
 A költségkönyvelés adatcsatlakozók sorának révén támogatja a forrásrendszerekből származó adatok integrálását. A következő adatcsatlakozók állnak rendelkezésre:
 
 -  Importált tranzakciók (előre konfigurált)
--  Dynamics 365 for Finance and Operations, Enterprise edition (előre konfigurált)
+-  Dynamics 365 for Finance and Operations (előre konfigurált)
 -  Dynamics AX (konfiguráció szükséges)
 
 **Megjegyzés:** az Importált tranzakciók adatcsatlakozó adatentitásokon alapul.
@@ -129,7 +129,7 @@ A költségkönyvelés adatcsatlakozók sorának révén támogatja a forrásren
 
 A legtöbb forrásrendszer olyan adatokat tud biztosítani, amelyek megfelelnek a költségkönyvelés egy vagy több adatforrásának. A forrásrendszerekből származó adatok a költségkönyvelés adatforrásához igazításával adatszolgáltatót kell konfigurálni. Az alábbi táblázat adatcsatlakozónként és adatforrásonként sorolja fel az adatszolgáltatók elérhetőségét.
 
-|  **Adatforrások** |  **Importált tranzakciók adatcsatlakozó** | **Dynamics 365 for Finance and Operations, Enterprise edition adatcsatlakozó**  | **Dynamics AX adatcsatlakozó**  |
+|  **Adatforrások** |  **Importált tranzakciók adatcsatlakozó** | **Dynamics 365 for Finance and Operations adatcsatlakozó**  | **Dynamics AX adatcsatlakozó**  |
 |---|---|---|---|
 | Költségösszetevő-dimenziótagok  |  Igen | Igen  | Igen  |
 |  Költségobjektum-dimenziótagok |  Igen | Igen  | Igen  |

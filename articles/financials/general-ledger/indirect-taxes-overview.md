@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -74,7 +74,7 @@ Minden tranzakcióhoz (értékesítési vagy beszerzési bizonylatsorok, naplók
 Minden tranzakcióhoz megtekintheti a számított forgalmi adót a **Forgalmi adó tranzakció** oldalon. Megtekintheti a forgalmi adót egy dokumentumsorra vagy a teljes dokumentumra. Bizonyos dokumentumok esetében (például a szállítói számla és a főkönyvi naplók) módosíthatja a számított forgalmi adót, ha az eredeti dokumentum eltérő összegeket tartalmaz.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Áfakiegyenlítés és -bevallás
-A forgalmi adót be kell vallani és kifizetni az adóhatóságoknak szabályozott időközönként (havi, negyedéves stb.). A Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás tartalmaz egy funkciót, amely lehetővé teszi az adószámlák kiegyenlítését egy intervallumra és az egyenlegek kiegyenlítési számláján az egyenlegek kiegyenlítését a főkönyvi feladási csoportokban meghatározottak szerint. Ez a funkció elérhető a **Forgalmi adó kiegyenlítése és feladása** oldalon. Meg kell adnia az áfakiegyenlítési időszakot, amelyben a forgalmi adót ki kell egyenlíteni. 
+A forgalmi adót be kell vallani és kifizetni az adóhatóságoknak szabályozott időközönként (havi, negyedéves stb.). A Microsoft Dynamics 365 for Finance and Operations tartalmaz egy funkciót, amely lehetővé teszi az adószámlák kiegyenlítését egy intervallumra és az egyenlegek kiegyenlítési számláján az egyenlegek kiegyenlítését a főkönyvi feladási csoportokban meghatározottak szerint. Ez a funkció elérhető a **Forgalmi adó kiegyenlítése és feladása** oldalon. Meg kell adnia az áfakiegyenlítési időszakot, amelyben a forgalmi adót ki kell egyenlíteni. 
 
 A forgalmi adó kifizetése után az áfakiegyenlítési számlán az egyenleget a bankszámlával szemben kell meghatározni. Ha az áfakifizetési időszakhoz megadott adóhatóság egy szállítói számlához kapcsolódik, akkor az áfaegyenleg nyitott szállítói számlaként lesz feladva, és szerepeltethető a rendszeres kifizetési javaslatban.
 

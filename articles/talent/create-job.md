@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -91,6 +91,6 @@ A munkaköri feladatok karbantartásához használja a **Munkaköri feladatok** 
 ## <a name="areas-of-responsibility"></a>Hatáskörök
 Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műveletek megjelöléséhez, amelyekért a dolgozó egy adott beosztásban felelős. Például a „Könyvelő” nevű beosztáshoz tartozó hatáskörre példa lehet a „Pénzügyi jelentés az A termékkel kapcsolatban”. A hatáskörök karbantartására használja a **Hatáskörök** oldalt, amelyet a keresés funkció használatával találhat meg. A **Hatáskörök** oldalon adja meg a hatáskör nevét és leírását. A **Megjegyzés** mezőben igény szerint további információkat is megadhat. A megjegyzések anélkül frissülnek az adott feladathoz, hogy az itt Ön által megadott megjegyzések módosulnának.
 
-
-
+## <a name="steps-for-creating-a-job"></a>A feladat létrehozásának lépései
+Lásd az [Új feladatok meghatározása](../fin-and-ops/hr/tasks/define-new-jobs.md) témakört az új feladat létrehozásának lépésről lépésre útmutatójához. 
 

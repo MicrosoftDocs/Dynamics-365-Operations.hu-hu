@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
-ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cd267f6e5623bd83bfbd21a49a72dd216259167a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 03/05/2018
 
 Ez a témakör bemutatja, hogy mindegyik funkció elérhető-e ezekben a termékekben:
 
-+ Dynamics 365 for Finance and Operations, Enterprise edition (felhő)
-+ Dynamics 365 for Finance and Operations, Enterprise edition (helyszíni)
++ Dynamics 365 for Finance and Operations (felhő)
++ Dynamics 365 for Finance and Operations (on-premises)
 
 A következő táblázatokban a termékterületek listája található. A felhő és helyszíni támogatás a szolgáltatás egészére nézve van felsorolva. Ha bizonyos szolgáltatások eltérnek az általános területtől, ezek a szolgáltatások külön sorban jelennek meg a szolgáltatás oszlopban.
 

@@ -20,10 +20,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d933910faa726ea279a3371f6c8a3eca9bc9dfee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -56,7 +56,7 @@ Az igényfeltöltés értékesítési rendelések, átmozgatási rendelések, te
 ## <a name="minmax-replenishment"></a>Minimális vagy maximális feltöltés
 Minimális/maximális feltöltés esetén a készletet úgy töltik fel, hogy a beállított minimális és maximális értékhatárok között legyen. Általában ez a folyamat naponta egyszer fut le, hogy biztosítsa, a kitárolás megkezdése előtt minden kitárolási hely maximálisan fel legyen töltve. 
 
-A minimális és maximális összeg a feltöltési sablonban van meghatározva. A sablon számos egyéb beállítása hasonlít a Hullámigény feltöltése során használt sablonok beállításaira. A sablonnak tartalmaznia kell egy-egy sort minden egyes cikkhez és helyhez. Ha a kötegelt feldolgozással futtatja a feltöltést, a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition megvizsgálja, hogy szükséges-e feltöltés abban a sorrendben, amelyben a sorok rendezve vannak. 
+A minimális és maximális összeg a feltöltési sablonban van meghatározva. A sablon számos egyéb beállítása hasonlít a Hullámigény feltöltése során használt sablonok beállításaira. A sablonnak tartalmaznia kell egy-egy sort minden egyes cikkhez és helyhez. Ha a kötegelt feldolgozással futtatja a feltöltést, a Microsoft Dynamics 365 for Finance and Operations megvizsgálja, hogy szükséges-e feltöltés abban a sorrendben, amelyben a sorok rendezve vannak. 
 
 Fontos megjegyezni, hogy a minimális/maximális feltöltési stratégia nem tud üres helyet feltölteni, kivéve, ha a hely a cikkhez rögzített helyként van beállítva. Ha a hely, amit fel kell tölteni, nem rögzített hely, a rendszer nem tudja megállapítani, melyik cikk feltöltése szükséges. Ezért legalább néhány aktuális készlet szükséges a feltöltés bekövetkezte előtt.
 

@@ -3,7 +3,7 @@ title: "Egyéni mezők"
 description: "Ez a témakör bemutatja, hogyan teszi lehetővé a Microsoft Dynamics 365 for Finance and Operations, hogy bizonyos felhasználók egyéni mezők létrehozásával az alkalmazást saját cégük igényeire szabhassák."
 author: jasongre
 manager: AnnBe
-ms.date: 01/19/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,13 +14,13 @@ ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2017-12-31
+ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: ad59346f88b7a5984e16418e2aade7ccaedf180b
-ms.openlocfilehash: 142c66c189d6401cfb3db128e45fea6c071e99bf
+ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
+ms.openlocfilehash: 4420eeb249a4d1bdac203e32d017dcebbddf95c3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -30,7 +30,9 @@ ms.lasthandoff: 02/28/2018
 
 [!include[banner](../includes/pre-release.md)] 
 
-Bár a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition is mezők sokaságát biztosítja az üzleti folyamatok széles körének kezeléséhez, néha szükség van arra, hogy a vállalat a rendszerben lévő további információkat is nyomon kövessen. Ezen igények kielégítésére a Finance and Operations lehetővé teszi, hogy olyan egyedi mezőket hozasson létre, amelyek segítségével az alkalmazás testreszabható a cég igényeire, ha rendelkezik a szolgáltatás használatára való jogosultsággal.
+Bár a Microsoft Dynamics 365 for Finance and Operations is mezők sokaságát biztosítja az üzleti folyamatok széles körének kezeléséhez, néha szükség van arra, hogy a vállalat a rendszerben lévő további információkat is nyomon kövessen. Ezen igények kielégítésére a Finance and Operations lehetővé teszi, hogy olyan egyedi mezőket hozasson létre, amelyek segítségével az alkalmazás testreszabható a cég igényeire, ha rendelkezik a szolgáltatás használatára való jogosultsággal. 
+
+Az egyéni mezők hozzáadásának funkciója a 13-as platformfrissítéstől kezdve érhető el.
 
 Ez a videó megmutatja, milyen egyszerű egy egyéni mező hozzáadása az oldalhoz.
 

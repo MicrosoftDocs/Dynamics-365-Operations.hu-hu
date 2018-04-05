@@ -1,6 +1,6 @@
 ---
 title: "Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával"
-description: "A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti."
+description: "A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti."
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b6c1b89256ab4b258f2901e47009a0eed573bd53
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.  
+A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.  
 
 <a name="import-an-electronic-bank-statement"></a>Az elektronikus banki kivonat importálása
 -----------------------------------

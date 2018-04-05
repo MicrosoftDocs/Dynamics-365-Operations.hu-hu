@@ -1,6 +1,6 @@
 ---
 title: "A költségek munkafolyamata"
-description: "Ez a témakör bemutatja, hogyan használhatja a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition munkafolyamat-rendszerét a költségjelentések felülvizsgálati folyamatának beállítására a Költséggazdálkodás modulban."
+description: "Ez a témakör bemutatja, hogyan használhatja a Microsoft Dynamics 365 for Finance and Operations munkafolyamat-rendszerét a költségjelentések felülvizsgálati folyamatának beállítására a Költséggazdálkodás modulban."
 author: saraschi2
 manager: AnnBe
 ms.date: 09/13/2017
@@ -19,10 +19,10 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d60d2f462a1fd27d4655e68aab7f96fb28a34b77
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6ee607f723659a5b6ecd655ba4fdfca35a4c582d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition munkafolyamat-rendszerét a költségjelentések felülvizsgálati folyamatának beállítására használhatja a Költséggazdálkodás modulban. Olyan munkafolyamat adható meg, amely a következő feltételek használatával határozza meg, ki hagyja jóvá a költségjelentéseket:
+A Microsoft Dynamics 365 for Finance and Operations munkafolyamat-rendszerét a költségjelentések felülvizsgálati folyamatának beállítására használhatja a Költséggazdálkodás modulban. Olyan munkafolyamat adható meg, amely a következő feltételek használatával határozza meg, ki hagyja jóvá a költségjelentéseket:
 
 - Az alkalmazott jelentési hierarchiája, és az előre meghatározott jóváhagyási korlátok
 - Köztes jóváhagyókat és végleges jóváhagyót támogató többszintű jóváhagyás

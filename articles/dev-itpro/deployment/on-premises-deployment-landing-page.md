@@ -18,25 +18,25 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
-ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="on-premises-deployment-home-page"></a>On-premises telepítés kezdőlap
 
 [!include[banner](../includes/banner.md)]
 
-Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást (on-premises). Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.
+Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise alkalmazást (on-premises). Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.
 
 ## <a name="get-started"></a>Első lépések
 - [A Dynamics 365 for Finance and Operations, Enterprise edition 7.2 12-es verziója (2018. március) helyszíni telepítéseinek újdonságai és változásai](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
-- [Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) áttekintése](on-premises-overview.md)
-- [Helyszíni telepítések tervezése](plan-onprem-deployment.md)
+- [Dynamics 365 for Finance and Operations (on-premises) áttekintése](on-premises-overview.md)
+- [Helyszíni telepítés megtervezése](plan-onprem-deployment.md)
 - [Helyszíni telepítések rendszerkövetelményei](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Hardverméretezés on-premises környezetekhez](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) megvásárlása](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [A Dynamics 365 for Finance and Operations (on-premises) megvásárlása](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Felhőalapú és helyszíni szolgáltatások összehasonlítása](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
@@ -58,7 +58,7 @@ Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edi
 - [On-premises telepítés újratelepítése](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Egyéb erőforrások
-- [Dynamics 365 for Finance and Operations, Enterprise Edition (on-premises) – problémamegoldás](troubleshoot-on-prem.md)
+- [Hibaelhárítás – Dynamics 365 for Finance and Operations, on-premises](troubleshoot-on-prem.md)
 - [Az on-premises telepítéseknél nem elérhető funkciók](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Elavult szolgáltatások](../migration-upgrade/deprecated-features.md)
 - [Szoftver életciklus-házirend és kiadások jegyzéke](../migration-upgrade/versions-update-policy.md)

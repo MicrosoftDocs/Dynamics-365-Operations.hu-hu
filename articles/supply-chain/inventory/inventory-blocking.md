@@ -1,6 +1,6 @@
 ---
 title: "Készletzárolás"
-description: "A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását."
+description: "A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations alkalmazásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását."
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eb8040531ec0c2b9c13fc927e5330772ad11ee1d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 0567cdad6f9f27097f534381655e5b468884bed8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
+A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations alkalmazásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
 
 Készletcikkeket a következő módokon zárolhat:
 -   Manuálisan
@@ -64,7 +64,7 @@ Megadhatja, hogy mely készletállapotok zároló állapotok, a **Készletzárol
 <a name="see-also"></a>Lásd még
 --------
 
-[Készletzárolás létrehozása és karbantartása (Feladat-útmutató)](tasks/create-maintain-inventory-blocking.md
+[Készletzárolás létrehozása és karbantartása](tasks/create-maintain-inventory-blocking.md)
 
 [Minőségkezelési folyamatok](quality-management-processes.md)
 

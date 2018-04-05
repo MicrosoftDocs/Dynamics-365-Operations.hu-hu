@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
-ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/23/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jele
 
 Az ER támogatja a képletszerkesztőt. Ezért tervezéskor konfigurálhatja a futtatás közben a következő feladatokhoz használható kifejezéseket:
 
-- A Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition adatbázisból érkező átalakítási adatok, amelyeket át kell vinni az ER-formátumokra vonatkozó adatforrásnak tervezett ER-adatmodellbe (szűrés, csoportosítás, adattípus-átalakítás stb.). (Például ezek az átalakítások magukban foglalhatják a szűrést, csoportosítást és az adattípus-konverziót.)
+- A Microsoft Dynamics 365 for Finance and Operations adatbázisból érkező átalakítási adatok, amelyeket át kell vinni az ER-formátumokra vonatkozó adatforrásnak tervezett ER-adatmodellbe (szűrés, csoportosítás, adattípus-átalakítás stb.). (Például ezek az átalakítások magukban foglalhatják a szűrést, csoportosítást és az adattípus-konverziót.)
 - Olyan formátumadatok, amelyeket egy generáló elektronikus dokumentumba kell küldeni, egy adott ER-formátum elrendezésének és feltételeinek megfelelően. (Például a formázás a kért nyelv vagy kultúra,illetve a kódolás alapján történhet).
 - Elektronikus dokumentumok létrehozási folyamatának szabályozása. (Például a kifejezések az adatok feldolgozásától függően engedélyezhetik vagy letilthatják a formátum egyes elemeinek kimenetét. Meg is szakíthatják a dokumentum létrehozásának folyamatát, vagy üzeneteket küldhetnek a felhasználóknak.)
 
@@ -540,7 +540,7 @@ Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az
 </tr>
 <tr class="even">
 <td>FORMAT (1. karakterlánc, 2. karakterlánc[, 3. karakterlánc, …])</td>
-<td>A megadott karakterláncot úgy adja vissza, hogy előtte az <strong>%N</strong> minden előfordulását az <em>n</em>. argumentummal helyettesítve formázza. Az argumentumok karakterláncok. Ha egy argumentum nem érhető el a paraméter számára, a paraméter a karakterláncban <strong>&quot;%N&quot;</strong> elemként jelenik meg. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
+<td>A megadott karakterláncot úgy adja vissza, hogy előtte az <strong>%N</strong> minden előfordulását az <em>n.</em> argumentummal helyettesítve formázza. Az argumentumok karakterláncok. Ha egy argumentum nem érhető el a paraméter számára, a paraméter a karakterláncban <strong>&quot;%N&quot;</strong> elemként jelenik meg. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
 <td>A következő példában a <strong>PaymentModel</strong> adatforrás megjeleníti a vevőrekordok listáját a <strong>Vevő</strong> összetevőn keresztül és az adatérték feldolgozását a <strong>ProcessingDate</strong> mezőn keresztül.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>A kijelölt vevőkre vonatkozó elektronikus fájlok létrehozására tervezett ER formátumban a <strong>PaymentModel</strong> adatforrásként van kijelölve, és ellenőrzi a munkafolyamatot. A felhasználó tájékoztatásul kivételt kap, amikor a kiválasztott vevő le van állítva a jelentés feldolgozásának dátumára. Az ellenőrzés feldolgozásának ezen típusára vonatkozóan tervezett formula a következő forrásokat használhatja:</p>

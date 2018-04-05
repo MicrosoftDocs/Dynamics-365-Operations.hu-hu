@@ -1,6 +1,6 @@
 ---
 title: "Billentyűparancsok"
-description: "A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations, Enterprise edition programban."
+description: "A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations programban."
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations, Enterprise edition programban. 
+A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations programban. 
 
 **Megjegyzés:** Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
 
@@ -119,7 +119,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Ugrás a következő/előző gyorslapra                   | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl    |
 | Ugrás az &lt;n&gt;-edik gyorslapra                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
 | Ugrás a következő/előző lapátra (függőleges lap)      | Alt+Shift+Jobbra nyíl / Alt+Shift+Balra nyíl |
-| Ugrás az &lt;n&gt;. lapátra (függőleges lap)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Lépjen az &lt;n&gt;. lapátra (függőleges lap)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Gyorslap kibontása (a fókusszal az Gyorslap fejlécen) | Szóköz vagy Enter                               |
 | Az aktuális gyorslap összecsukása                        | Alt+0                                        |
 | Váltás rácsnézetre                                 | Ctrl+Shift+G                                 |

@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1335d95c8bf02d5c571d37d78eca0ee7eae32bad
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3b6ded5e5accbbdba708c8b31119429e72bd58f5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -53,7 +53,7 @@ Az európai bankokból álló EPC kereskedelmi és műszaki keretrendszereket fe
 A SEPA átutalás olyan kifizetés, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A kifizetésnek euróban kell történnie, és tartalmaznia kell mindkét fél nemzetközi bankszámlaszámát (IBAN) és bankazonosító kódját (BIC). (A BIC kód a \[SWIFT\] (Society for Worldwide Interbank Financial Telecommunication) kód néven is ismert.) Ezenkívül a tranzakciós költségek a két fél között oszlanak el. A felek között előforduló átutalások az ISO-20022 kifizetés-feldolgozási szabványt és az EPC által meghatározott XML fájlokat és formátumot kötelesek használni.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Hogyan történik az átutalás?
-A SEPA átutalás fizetési formátuma az európai országokban az elektronikus jelentéskészítés (ER) és a Fizetési módszerek funkciók segítségével készülnek a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben. Néhány átutalási formátum, amelyet más régiókban használnak, még mindig a régi fizetési keretrendszert használja. Számos más formátum közül 12 elérhető ISO 20022 átutalási fájlformátum létezik. Ezek az exportformátumok megfelelnek a SEPA ISO 20022 XML szabványnak. Használatukkal nem euró-átutalások juttathatók el azoknak az országoknak/régióknak, ahol használják őket az EPC által kiadott SEPA Credit Transfer Scheme szabálykönyv 8.2-es verziójában meghatározott szabályok szerint. Mielőtt megvalósítana egy átutalást, kapcsolatba kell lépnie a bankjával az elektronikus bankhasználati fájlok feltöltéséhez használt szoftver érvényesítéséhez. Ezt a szoftvert fogja használni az utalványokat tartalmazó XML fájlok banki átviteléhez.
+A SEPA átutalás fizetési formátuma az európai országokban az elektronikus jelentéskészítés (ER) és a Fizetési módszerek funkciók segítségével készülnek a Microsoft Dynamics 365 for Finance and Operations rendszerben. Néhány átutalási formátum, amelyet más régiókban használnak, még mindig a régi fizetési keretrendszert használja. Számos más formátum közül 12 elérhető ISO 20022 átutalási fájlformátum létezik. Ezek az exportformátumok megfelelnek a SEPA ISO 20022 XML szabványnak. Használatukkal nem euró-átutalások juttathatók el azoknak az országoknak/régióknak, ahol használják őket az EPC által kiadott SEPA Credit Transfer Scheme szabálykönyv 8.2-es verziójában meghatározott szabályok szerint. Mielőtt megvalósítana egy átutalást, kapcsolatba kell lépnie a bankjával az elektronikus bankhasználati fájlok feltöltéséhez használt szoftver érvényesítéséhez. Ezt a szoftvert fogja használni az utalványokat tartalmazó XML fájlok banki átviteléhez.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Milyen átutalási formátumokat támogat jelenleg a Finance and Operations?
 Mindig meg kell keresnie a Microsoft Dynamics Lifecycle szolgáltatások (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie a legfrissebb listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő szakasz, a "Mit kell beállítanom?" hivatkozást biztosít a témához, amely leírja, hogyan hozhat létre LCS-adattárat az elérhető konfigurációk áttekintéséhez és a kiválasztott konfigurációk importálásához.

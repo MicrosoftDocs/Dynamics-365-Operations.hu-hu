@@ -1,6 +1,6 @@
 --- 
 title: "Konfiguráció tervezése adatok külső, CSV formátumú fájlból történő importálásához (ER)"
-description: "A folyamat bemutatja, hogyan lehet az elektronikus jelentési (ER) konfigurációt úgy megtervezni, hogy külső, CSV formátumú fájlból importáljon adatokat a Dynamics 365 for Finance and Operations, Enterprise edition kiadásának alkalmazásába."
+description: "A folyamat bemutatja, hogyan lehet az elektronikus jelentési (ER) konfigurációt úgy megtervezni, hogy külső, CSV formátumú fájlból importáljon adatokat a Dynamics 365 for Finance and Operations alkalmazásába."
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -16,24 +16,24 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 5c1766992531ee272ea156bc33c4c0ea8dfac27a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Konfiguráció tervezése adatok külső, CSV formátumú fájlból történő importálásához (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A folyamat bemutatja, hogyan lehet az elektronikus jelentési (ER) konfigurációt úgy megtervezni, hogy külső, CSV formátumú fájlból importáljon adatokat a Dynamics 365 for Finance and Operations, Enterprise edition kiadásának alkalmazásába. Ebben az eljárásban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” 
+A folyamat bemutatja, hogyan lehet az elektronikus jelentési (ER) konfigurációt úgy megtervezni, hogy külső, CSV formátumú fájlból importáljon adatokat a Dynamics 365 for Finance and Operations alkalmazásába. Ebben az eljárásban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” 
 
 Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. A lépések a USMF-adathalmazzal hajthatók végre. 
 
 Emellett le kell töltenie és helyben mentenie kell a következő fájlokat: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
 
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
-    * Konfigurálhat egy folyamatot arra, hogy külső, XML, TXT vagy CSV formátumú fájlokat importáljon a Dynamics 365 for Finance and Operations, Enterprise edition kiadás alkalmazásának táblázataiba. Először létre kell hoznia egy absztrakt adatmodellt, amely üzleti szempontból képviseli az importált adatokat – ehhez egy ER-adatmodell-konfigurációt kell létrehoznia. Ezután definiálja a tervezett adatmodellre leképező importált fájl szerkezetét úgy, hogy a fájlról adatokat küldjön az absztrakt adatmodellre – ehhez ER-formátumú konfigurációt kell létrehozni. Ezt követően az adatmodell konfigurációját ki kell bővíteni egy új leképezéssel, amely leírja, hogyan használják az importált fájl adatait és az absztrakt adatmodell megmaradó adatait a táblák vagy adatentitások frissítéséhez.  
+    * Konfigurálhat egy folyamatot arra, hogy külső, XML, TXT vagy CSV formátumú fájlokat importáljon a Dynamics 365 for Finance and Operations alkalmazásának táblázataiba. Először létre kell hoznia egy absztrakt adatmodellt, amely üzleti szempontból képviseli az importált adatokat – ehhez egy ER-adatmodell-konfigurációt kell létrehoznia. Ezután definiálja a tervezett adatmodellre leképező importált fájl szerkezetét úgy, hogy a fájlról adatokat küldjön az absztrakt adatmodellre – ehhez ER-formátumú konfigurációt kell létrehozni. Ezt követően az adatmodell konfigurációját ki kell bővíteni egy új leképezéssel, amely leírja, hogyan használják az importált fájl adatait és az absztrakt adatmodell megmaradó adatait a táblák vagy adatentitások frissítéséhez.  
     * A következő lépések megmutatják, hogyan történik a külsőleg nyomon követett szállítói tranzakciók importálása külső CSV-fájlból a szállítói kiegyenlítések 1099-es űrlapokban történő későbbi felhasználására.   
     * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, először el kell végeznie a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.  
 2. Kattintson a Jelentéskészítés konfigurációi lehetőségre.

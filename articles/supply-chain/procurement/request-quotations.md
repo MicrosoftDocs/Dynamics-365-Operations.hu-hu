@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 42ab7beb8a269cd37fd9100385bd302e4945c1e0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b86363004b8702d1a654f2a1da49bba82fc8ff2a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -46,7 +46,7 @@ Ajánlatkérést tervezett rendelésekből, beszerzési igénylésből és manu�
 
 Miután létrehozta az RFQ-esetet, és megadta a szállítókat, válassza ki a **Küldés** lehetőséget az RFQ-esetnél. Ajánlatkérési napló jön létre minden egyes olyan szállítóra vonatkozóan, amelyek számára elküldte az ajánlatkérést. A Küldés művelet nyomtatáskezelési beállításait módosítva megadhatja, hogy a rendszer külön jelentést nyomtasson minden szállítóhoz az archívumba, vagy a jelentést e-mailben küldje a szállítók e-mail-címére. Ezenkívül az egyes szállítók ajánlatkérési naplóját olyan napló létrehozására is felhasználhatja, amelyet később elküldhet vagy újraküldhet a szállítónak. A Küldés műveletet úgy is beállíthatja, hogy a rendszer a szállító által kitölthető válaszlapot is generáljon.
 
-Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer a szállítói együttműködésre van beállítva, az ajánlatok közvetlenül a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition felületén adhatók meg. További tájékoztatás: [A vevőkkel történő szállítói együttműködés](vendor-collaboration-work-customers-dynamics-365-operations.md).
+Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer a szállítói együttműködésre van beállítva, az ajánlatok közvetlenül a Microsoft Dynamics 365 for Finance and Operations felületén adhatók meg. További tájékoztatás: [A vevőkkel történő szállítói együttműködés](vendor-collaboration-work-customers-dynamics-365-operations.md).
  
 Ha módosítania kell az ajánlatkérést, miután elküldte azt, újra elküldheti az ajánlatkérést a szállítóknak, ha elkészült a két módosítási művelettel: ezek a Létrehozás és a Véglegesítés.
 

@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b2514b6ff7500863a312ee378be008a7dcfb7438
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3eb642944a31aad983758fc28bc692800bb6b4d2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Első lépések a Microsoft Dynamics 365 for Talent rendszerben
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/08/2018
 A Microsoft Dynamics 365 for Talent szolgáltatásban rendkívül könnyen módosíthatja a felhasználói felületet, és elvégezheti a szoftver intuitívebb igényeinek beállítását. Ez a témakör, amelyek tartalmaznak tájékoztatást, hogyan lehet igazítani a beállításokat a felhasználói felület témakörökre mutató hivatkozásokat tartalmaz. A témakör is tartalmaz, amelyek segítenek a rendszerben található információ hatékonyan és pontosan témakörökre mutató hivatkozásokat. 
 
 > [!NOTE] 
-> A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Enterprise kiadás; Dynamics 365 for Retail; és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 ### <a name="personalizing-talent"></a>A Talent személyre szabása 
 Az alábbi témakörök bemutatják, hogyan hozhatja létre a Dynamics 365 for Talent számos funkcióját, amelyek megkönnyítik az időben elvégezhető munkát. 

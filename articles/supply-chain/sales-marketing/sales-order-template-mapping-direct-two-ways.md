@@ -1,6 +1,6 @@
 ---
 title: "Értékelési rendelések szinkronizálása közvetlenül a Sales és a Finance and Operations között"
-description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében."
+description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2018
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 0928f9c0af52c2e19f0669841e433423ae9db467
-ms.openlocfilehash: 09c5cd14c5948818878d3f830639abc166d7072e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e26244ffc380291a40edfbd2c2cb5911b0d8b3cb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében.
+Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében.
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 

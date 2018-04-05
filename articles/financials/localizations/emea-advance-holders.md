@@ -1,6 +1,6 @@
 ---
 title: "Előlegre jogosultak"
-description: "Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition előlegre jogosulti funkciójáról."
+description: "Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre jogosulti funkciójáról."
 author: LizaGolub
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 36b6d74d29ed4606c1b501b68e0f2253e66c8eb6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 84471351555d90c5a297d613abf334a26e896e40
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition előlegre jogosulti funkciójáról.
+Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre jogosulti funkciójáról.
 
 *Előlegre jogosultnak* egy vállalat azon alkalmazottját nevezzük, aki egy a szervezet által biztosított költségösszegért felel. Előlegre jogosult csak vállalati dolgozó lehet. Beszerzéskor az előlegre jogosult jelenti a vállalatnak a foganatosított kiadásokat. A vállalat a költség összegét megtéríti az alkalmazottnak. A vállalat minden előlegre jogosult egyenlegét vezeti. Az Észtország, Lettország, Litvánia, Lengyelország, Cseh Köztársaság, Magyarország és Oroszország területén működő jogi személyek felhasználói a szervezet által biztosított költségösszegért felelős alkalmazottak által végzett műveletekre vonatkozó konkrét tranzakciókat kezelhetnek.
 
@@ -105,7 +105,7 @@ Előlegre jogosultak tranzakcióival kapcsolatos jelentés megtekintéséhez vag
 
 ## <a name="advance-holder-transactions"></a>Előlegre jogosult tranzakciói
 
-Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition előlegre jogosult funkciója tranzakcióinak használatáról.
+Ismerje meg, hogyan dolgozhat a Microsoft Dynamics 365 for Finance and Operationsben előlegre jogosultak tranzakcióival.
 
 Ezen előlegre jogosult dolgozók számára tranzakciókat előlegrejogosult-fiókok segítségével lehet feladni. A minden előlegre jogosultnál megadott dolgozói azonosító használható az előlegre jogosultak összes tranzakciójának nyomon követésére. Ez a szám számlaszámként hívható le az előlegre jogosultak tranzakcióihoz a **Főkönyvi naplók** és **Előlegre jogosult tranzakciói** oldalakon.
 

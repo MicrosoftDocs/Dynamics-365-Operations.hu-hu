@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9550faec1bbbdc233631e149c09b8e4faf25f5ff
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -85,7 +85,7 @@ Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készít
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Info lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása. **A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszeren kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hivatkozások létrehozása a jegyzetekben nem lehetséges).
+-   **Info lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása. **A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, a Microsoft Dynamics 365 for Finance and Operations alkalmazáson kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hivatkozások létrehozása a jegyzetekben nem lehetséges).
 
 **Határozza meg, milyen hosszú legyen a felvétel**
 

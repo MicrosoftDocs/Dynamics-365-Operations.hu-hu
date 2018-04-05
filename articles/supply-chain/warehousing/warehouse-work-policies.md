@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 83e8dc76350e0d40a392e9a04ddca5b4b45d0da0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben a raktári munkairányelvek szabályozzák, hogy a gyártási raktári folyamatai létrehoznak-e raktári munkát a munkarendelés-típus, a készlethely és a termék alapján.
+A Microsoft Dynamics 365 for Finance and Operations alkalmazásban a raktári munkairányelvek szabályozzák, hogy a gyártási raktári folyamatai létrehoznak-e raktári munkát a munkarendelés-típus, a készlethely és a termék alapján.
 
 Ez a munka-irányelv szabályozza, hogy létrejöjjön-e raktári munka a gyártás raktári folyamataihoz. A munka-irányelvet a **munkarendelési típusok**, egy **készlethely** és egy **termék** kombinációjának segítségével állíthatja be. Például az L0101 termék a jelentés szerint elkészült leszállításra a 001. helyre. A késztermék később egy másik termelési rendelésben kerül felhasználásra a 001. kimeneti helyen. Ebben az esetben beállíthat egy munka-irányelvet annak megakadályozására, hogy munka jöjjön létre a késztermék betárolására, amikor az L0101 termék úgy szerepel a jelentésben, mint amely elkészült leszállításra a 001. helyre. A munka-irányelv egy egyéni entitás, amelyet a következő információk segítségével lehet leírni:
 

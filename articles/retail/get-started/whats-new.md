@@ -17,10 +17,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 008f1acec62c1fc6d423dd7629d3f92f758be5e8
+ms.sourcegitcommit: 9c974041c614c67335bb40f4f461bc1999bf3eb0
+ms.openlocfilehash: 476ae035674c0b9c3af18db28668442247b5e310
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -30,10 +30,14 @@ ms.lasthandoff: 03/08/2018
 
 Ez az oldal olyan erőforrásokat mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Retail rendszer legújabb kiadásainak új szolgáltatásait és módosításait.
 
+[!include[release notes](../includes/release-notes.md)]
+ 
+
 ## <a name="releases-of-dynamics-365-for-retail"></a>A Dynamics 365 for Retail kiadásai
 
 |Kiadás | Szám felépítése | Elérhetőség | További tájékoztatás |
 |--------|--------------|--------------|------------|
+|Dynamics 365 for Retail 7.3.2 | 7.3.21971.64040 | március 2018. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keressen rá a **Dynamics 365 for Retail 7.3.2-mal kiadott** funkciókra. |
 |Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | március 2018. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keressen rá a **Dynamics 365 for Retail 7.3.1-mal kiadott** funkciókra. |
 |Dynamics 365 for Retail 7.3 | 7.3.21971.64028 | február 2018. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keressen rá a **Dynamics 365 for Retail 7.3-mal kiadott** funkciókra. |
 |5. alkalmazásfrissítés | 7.2.21792.64093 | február 2018. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keresse az **5. alkalmazásfrissítéssel kiadott** funkciókat. |

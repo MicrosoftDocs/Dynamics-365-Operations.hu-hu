@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
-ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -89,7 +89,7 @@ A pénzügyi zárási sablont az olyan feladatok definiálásához használhatja
 
 A sablonban hozzárendelhet egy feladatot egy vagy több vállalatot, amire a feladat vonatkozik. Ha egy másik személy van hozzárendelve a munkához minden egyes vállalatnál, akkor hasznos lehet több feladat létrehozása ugyanahhoz a munkához. Külön feladat létrehozása minden egyes vállalathoz. 
 
-A **Feladathivatkozás** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például egy zárási feladat pénznem-újraértékelési folyamatának futtatása a Kötelezettségekben hozzárendelhető a Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás **Devizaátértékelés** oldalához. Külső URL-címet is hivatkozhat. 
+A **Feladathivatkozás** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például egy zárási feladat pénznem-újraértékelési folyamatának futtatása a Kötelezettségekben hozzárendelhető a Microsoft Dynamics 365 for Finance and Operations **Devizaátértékelés** oldalához. Külső URL-címet is hivatkozhat. 
 
 > [!TIP]
 > Ha szeretne egy adott Felügyeleti jelentéskészítő jelentést csatolni egy pénzügyi időszak zárási feladatához, akkor használhat jelentés-URL-t. A jelentés-URL-címének eléréséhez nyissa meg a jelentést a jelentéstervezőben, és kattintson a **Fájl** &gt; **Jelentés megtekintése** elemre, ha szeretné a jelentést egy webböngészőben megnyitni. Ezután bemásolhatja az URL-címet a böngésző címsorába, és beillesztheti a **Feladathivatkozás** **URL** cím mezőbe. 

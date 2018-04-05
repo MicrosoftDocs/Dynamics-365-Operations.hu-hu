@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad76f286d16b149affa110aef75874a52b66798f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 34dac634e09a8daa8a22b9f1efbc18ca44444e21
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -54,7 +54,7 @@ A **Számlakibocsátási határidő kiszámításának beállítása** lapon ál
 Lehetősége van dátumvezérlési paraméterek beállítására, amelyek segítségével biztosítható, hogy a rendszer a vevői tranzakciókhoz tartozó vevői számlákat és jóváírásokat a szállítás teljesítését követő megadott időszakon belül generálja. Ezeket a paramétereket a **Kinnlevőségek paraméterei** oldal **Számladátumok ellenőrzése** területén találhatja meg.
 
 ## <a name="example"></a>Példa
-A Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszert beállíthatja úgy, hogy a számlakibocsátási határidőt EU-n belüli szállításoknál mindig a szállítás végrehajtását követő hónap 15-én számítsa ki – ehhez hozzon létre egy dátumintervallum-kódot és egy számítási szabályt az alábbi beállításokkal.
+A Microsoft Dynamics 365 for Finance and Operations rendszert beállíthatja úgy, hogy a számlakibocsátási határidőt EU-n belüli szállításoknál mindig a szállítás végrehajtását követő hónap 15-én számítsa ki – ehhez hozzon létre egy dátumintervallum-kódot és egy számítási szabályt az alábbi beállításokkal.
 
 ### <a name="date-interval-code"></a>Dátumtartomány kódja
 

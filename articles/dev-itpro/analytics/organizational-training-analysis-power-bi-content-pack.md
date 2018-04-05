@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 1e26785b658815fcc5026d73e4d8cfe39bd246c3
+ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
+ms.openlocfilehash: 18567a3241fce02e17df368f544e545fad93e1d9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -43,7 +43,7 @@ Miután csatlakoztatta a tartalmi csomagot a Finance and Operations rendszer ada
 Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-A Szervezeti képzés tartalomcsomag jelentéseinek feltöltésére a Finance and Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
+A Szervezeti képzés tartalomcsomag jelentéseinek kitöltésére a Finance and Operations adatok szolgálnak. A következő táblázat mutatja az entitásokat, amelyeken a csomag alapul.
 
 | Entitás                    | Tartalom                                                         | Más entitásokkal való kapcsolatok                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
