@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d904a2fe9411da1fd1a4e5810f7dcea782f1c2f7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolg
 
 A költségvetés-tervezés az a folyamat, amely során előkészíti a szervezet által a jövőben alkalmazandó költségvetést. Egy szervezet konfigurálhatja a költségvetés-tervezését, és beállíthat olyan költségvetés-tervezési folyamatokat, amelyek célja a szervezet irányelveiknek, eljárás-rendjeiknek és a költségvetési előkészítés követelményeinek való megfelelés. 
 
-Ha megérti a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rendszerben használt fogalmakat és terminológiát, könnyebben valósíthatja meg a szervezet költségvetés-tervezését.
+Ha megérti a Microsoft Dynamics 365 for Finance and Operations rendszerben használt fogalmakat és terminológiát, könnyebben valósíthatja meg a szervezet költségvetés-tervezését.
 
 ### <a name="key-terms"></a>Kulcsfogalmak
 

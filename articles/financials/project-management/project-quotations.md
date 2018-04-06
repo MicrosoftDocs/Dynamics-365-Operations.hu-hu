@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1212a46cc937b9ccc6ebfa9cc4b89b931f144130
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c7de1d7e57a2a32c339bc576f929958b9de91fcc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Ez a cikk a projektajánlatok koncepcióját mutatja be, amelynek segítségével a projektfázis első lépéseként vonzó ajánlatokkal keresheti meg a vevőket. Az ajánlat számos elemre kiterjedhet, például szerepelhetnek az ajánlatokban cikkek és szolgáltatások, alapvető kapcsolattartási információk, különleges kereskedelmi megállapodások és engedmények, valamint lehetséges adók és pótdíjak is. 
 
-A projektajánlat folyamat kezelését, megfigyelését és áttekintését támogató funkciók és a többi a projekt kezelés fontos részét képezik. A Microsoft Dynamics 365 for Finance and Operations Enterprise edition számos eszköze segít ezekben a feladatokban. Például, a megfelelő hivatkozási adat meghatározások ( árajánlat típusok, árajánlat eredet, és prognózis és valószínűség) segítenek a folyamat elemzésében. Ezekkel az eszközökkel kategorizálhatja azokat az okokat, aminek következtében a projekt ajánlat nyert vagy veszített, és meghatározhatja az árajánlat potenciális értékét. 
+A projektajánlat folyamat kezelését, megfigyelését és áttekintését támogató funkciók és a többi a projekt kezelés fontos részét képezik. A Microsoft Dynamics 365 for Finance and Operations számos eszköze segít ezekben a feladatokban. Például, a megfelelő hivatkozási adat meghatározások ( árajánlat típusok, árajánlat eredet, és prognózis és valószínűség) segítenek a folyamat elemzésében. Ezekkel az eszközökkel kategorizálhatja azokat az okokat, aminek következtében a projekt ajánlat nyert vagy veszített, és meghatározhatja az árajánlat potenciális értékét. 
 
 Egy projektajánlatban a szolgáltatásokat, alapvető kapcsolattartási információkat, különleges kereskedelmi megállapodásokat és engedményeket, valamint a becsült adókat és pótdíjakat adja meg. Kiválaszthatja egy projekt tevékenységeit és feladatait is, és létrehozhatja a feladatok és altevékenységek hierarchiáját. Az egyes tevékenységnél megadhatja az időzítés és a tevékenység időtartamának részleteit, valamint a tevékenységet végrehajtó dolgozóktól megkövetelt szakértelmet és tapasztalatokat. 
 

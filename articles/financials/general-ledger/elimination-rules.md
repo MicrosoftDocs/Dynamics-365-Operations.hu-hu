@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -132,7 +132,7 @@ Az ön vállalata, A jogi személy, eszközöket értékesített egy, az ön sze
 Mindezen tranzakciók vállalatközi tranzakciók feladásait eredményezik a megfelelő számlákra. Ezen felül a tranzakciók tartalmazhatják a haszonkulcsokat és veszteségkulcsokat abban az esetben, ha a vállalatközi eladások összege és az eladott áruk beszerzési értéke nem egyenlő.
 
 ## <a name="set-up-elimination-rules"></a>Eltávolítási szabályok beállítása
-Eltávolítási szabályok beállításakor a Microsoft Dynamics 365 for Finance and Operations, Enterprise editionben ajánlott létrehozni egy pénzügyi dimenziót kifejezetten eltávolítás céljából. A legtöbb ügyfél Kereskedelmi partnernek vagy valami hasonlónak nevezi. Ha úgy dönt, hogy nem használ pénzügyi dimenziót, úgy ügyeljen, hogy rendelkezzen olyan fő számlával, amely csak vállalatközi tranzakciókra vonatkozik. 
+Eltávolítási szabályok beállításakor a Microsoft Dynamics 365 for Finance and Operations alkalmazásban ajánlott létrehozni egy pénzügyi dimenziót kifejezetten eltávolítás céljából. A legtöbb ügyfél Kereskedelmi partnernek vagy valami hasonlónak nevezi. Ha úgy dönt, hogy nem használ pénzügyi dimenziót, úgy ügyeljen, hogy rendelkezzen olyan fő számlával, amely csak vállalatközi tranzakciókra vonatkozik. 
 
 Az eltávolítási beállítások a Konszolidáció modul Beállítás területén találhatók. Miután megadta a szabály leírását, ki kell választania a vállalatot, amelyben az eltávolítási napló könyvelni fog. Ez olyan vállalat legyen, amelynél a **Pénzügyi eltávolítási folyamatokhoz** lehetőség ki van választva a jogi személy beállításainál. 
 

@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0069246a60f1db6297df45fa57cd52d90cdb4ab5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 89a13ad5a1d3cb7f93a469d33530ec99b39160da
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a cikk a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be. 
 
-A következő paraméterek befolyásolják, hogyan hajtja végre a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition a kiegyenlítéseket. A kiegyenlítés az a folyamat, amikor a számlát kiegyenlítjük egy kifizetéssel vagy jóváírással szemben. Ezek a paraméterek a **Kiegyenlítés** területen, a **Kinnlevőségek paraméterei** és a **Kötelezettségek paraméterei** lapokon találhatók.
+A következő paraméterek befolyásolják, hogyan hajtja végre a Microsoft Dynamics 365 for Finance and Operations a kiegyenlítéseket. A kiegyenlítés az a folyamat, amikor a számlát kiegyenlítjük egy kifizetéssel vagy jóváírással szemben. Ezek a paraméterek a **Kiegyenlítés** területen, a **Kinnlevőségek paraméterei** és a **Kötelezettségek paraméterei** lapokon találhatók.
 
 -   **Automatikus kiegyenlítés** – Állítsa be az **Igen** értéket, ha a tranzakciót automatikusan más nyitott tranzakciókkal szemben kell állítani feladáskor. Ha a **Nem** értéket állítja be, a felhasználók manuálisan egyenlíthetik ki a tranzakciókat, amikor kifizetést adnak meg, vagy később a **Tranzakciók kiegyenlítése** lap segítségével.
 -   **Készpénzfizetési engedmény adminisztrációja** – Határozza meg, hogyan [kell kezelni a kézpénzfizetési engedményt, ha egy számla túlfizetett](cash-discount-handling-overpayments.md). Túlfizetés esetén a készpénzfizetési engedmény csökkenthető, kezelhető különbözetként, vagy maradhat a szállító vagy a vevő számláján.

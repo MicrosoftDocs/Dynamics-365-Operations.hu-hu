@@ -16,10 +16,10 @@ ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 03179fdfd23e26250af92eb70d2ede710bd7007f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6c95c2779d996f489679c8dda4cda462ba0a05ac
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -49,7 +49,7 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 </thead>
 <tbody>
 <tr class="odd">
-<td>A Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition rendszert telepíteni kell a szervezetben.</td>
+<td>A Microsoft Dynamics 365 for Finance and Operations rendszert telepíteni kell a szervezetben.</td>
 <td>Rendszergazda</td>
 <td>Lásd: <a href="../deployment/deploy-demo-environment.md">Bemutatókörnyezet telepítése</a>.
 </td>

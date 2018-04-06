@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82c2fab72923cfec135e207dfe194fda7d16e8e9
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -41,6 +41,8 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 - **Gombrács** – a művelet a POS gombrácsokat, amelyek részei a POS képernyő-elrendezés gombok is hozzárendelhető.
 - **Tranzakció-képernyő** – a művelet alapján a POS-tranzakciók képernyőn beállított POS-gombrács meghívhatók.
 - **Tranzakció-képernyő** – a művelet alapján a POS-tranzakciók képernyőn beállított POS-gombrács meghívhatók.
+
+Megjegyzés: Az alább felsorolt műveletek a legújabb Dynamics 365 for Retail rendszerre vonatkoznak. Bizonyos műveletek megváltozhattak, vagy nem állnak rendelkezésre a termék korábbi verzióiban.
 
 | Azonosító | Művelet | Leírás | Gombrács | Tranzakciós képernyő | Üdvözlőképernyő | Offline elérhető. | Területspecifikus |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -105,6 +107,7 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 703 | Jegyzék zárolása | Az aktuális jegyzék zárolása, hogy ne lehessen használni, de nem jelentkezteti ki az aktuális felhasználót. | Nincs | Nincs | Nincs | Igen | Nincs |
 | 701 | Kijelentkezés | Az aktuális felhasználó kijelentkeztetése a jegyzékből. | Igen | Igen | Igen | Igen | Nincs |
 | 521 | Hűségkártyapontok egyenlege | A megadott hűségkártya egyenlegének megjelenítése pontokban. | Igen | Igen | Nincs | Nincs | Nincs |
+| 918 | Műszakok kezelése | Az aktív, felfüggesztett és számlálás nélkül lezárt műszakok listájának megjelenítése. | Igen | Igen | Igen | Nincs | Nincs |
 | 914 | POS ablak kis méretre állítása | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nincs |
 | 1000 | Fiók kinyitása | "Nincs értékesítés" művelet végrehajtása, majd a kijelölt pénztárfiók kinyitása. | Igen | Igen | Igen | Igen | Nincs |
 | 928 | Rendelésteljesítés | Ez a művelet lehetővé teszi a felhasználók számára a rendelések kiválasztását, csomagolását, szállítását vagy visszahívását az üzleti felvételre nézve. | Igen | Igen | Igen | Nincs | Nincs |
@@ -162,7 +165,6 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 638 | Üzletkötő beállítása a sorban | Ez a művelet lehetővé teszi, hogy a felhasználó alapértelmezett üzletkötő később hozzáadott sorok megjelölése a támogatható az értékesítési jutalékcsoportok a jelenleg kiválasztott sornál. | Igen | Igen | Nincs | Igen | Nincs |
 | 630 | Az összes termék szállítása | A teljesítési mód beállításához **szállítási** sor összes cikkhez. | Igen | Igen | Nincs | Igen\* | Nincs |
 | 629 | Kijelölt termékek szállítása | Az összes sor a szállítási mód beállítása a kijelölt **Szállítás**. | Igen | Igen | Nincs | Igen\* | Nincs |
-| 918 | Számlálás nélkül lezárt műszakok megjelenítése | A számlálás nélkül lezárt műszakok listájának megjelenítése. | Igen | Igen | Igen | Nincs | Nincs |
 | 115 | Napló megjelenítése | Az üzlet naplójának megjelenítése. Tranzakciók megjelenítése, és a bevételek ajándékutalvány újranyomtatása és visszaküldés visszahívása. | Igen | Igen | Igen | Igen\*\* | Nincs |
 | 802 | Készletszámlálás | Ez a művelet lehetővé teszi, hogy a felhasználó létrehozása vagy módosítása a tényleges készlet vagy ciklikus leltározási számlálási naplókat. | Igen | Igen | Igen | Nincs | Nincs |
 | 401 | Almenü | Ezt a műveletet a felhasználó egy másik csatolt gombrács vesz igénybe. | Igen | Igen | Igen | Igen | Nincs |

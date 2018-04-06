@@ -1,6 +1,6 @@
 ---
 title: "Adatok importálása több munkalapos Excel adatentitás-sablonokból"
-description: "Ez a témakör leírja, hogyan importálhatók az adatok Excel adatentitás-sablonokkal a Microsoft Dynamics 365 Finance and Operations, Enterprise edition megoldásba."
+description: "Ez a témakör leírja, hogyan importálhatók az adatok Excel adatentitás-sablonokkal a Microsoft Dynamics 365 Finance and Operations megoldásba."
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2aefea9373df20bd3e99026e30aed096dcea9814
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 [!include[banner](../includes/banner.md)]
 
-Az adatkezelés a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition megoldásban támogatja a Microsoft Excel-alapú sablonokat az adatentitások esetében. Ezek a sablonok egy vagy több munkalapot is tartalmazhatnak. A több munkalapot tartalmazó sablonok gyakran használatosak olyan esetekben, amikor célszerű egyetlen fájlban kezelni az adatokat, és több entitásba importálni őket. Jó példát jelentenek erre a telephelyek és a raktárak.
+Az adatkezelés a Microsoft Dynamics 365 for Finance and Operations megoldásban támogatja a Microsoft Excel-alapú sablonokat az adatentitások esetében. Ezek a sablonok egy vagy több munkalapot is tartalmazhatnak. A több munkalapot tartalmazó sablonok gyakran használatosak olyan esetekben, amikor célszerű egyetlen fájlban kezelni az adatokat, és több entitásba importálni őket. Jó példát jelentenek erre a telephelyek és a raktárak.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Fájl feltöltése egyszer, és a hozzárendelése az összes entitáshoz
 Lássunk egy példát, amelyben egy Excel-fájl szerepel két munkalappal, amelyek a **Telephelyek** és **Raktárak** nevet viselik. Az adatimportálási projekt beállításához beállítjuk az első adatentitást, a **Telephelyeket**, majd feltöltjük a fájlt. A **Telephelyek** kiválasztható az ehhez az entitáshoz használandó munkalapként.

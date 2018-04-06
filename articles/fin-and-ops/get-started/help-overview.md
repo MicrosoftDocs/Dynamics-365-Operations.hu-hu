@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 03/09/2018
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára. 
 
 > [!NOTE] 
-> A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Enterprise kiadás; Dynamics 365 for Retail; és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 A súgórendszer közös a következő termékek esetében:
-- Dynamics 365 for Finance and Operations, Enterprise kiadás
+- Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -108,14 +108,14 @@ A jobb oldalon adjon meg egy e-mail-címet és egy új jelszót ahhoz, hogy új 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Javasoljon módosítást vagy járuljon hozzá a tartalomhoz a GitHub használatával
 Módosítás javasolásához GitHub-fiókra van szükség, és alá kell írni a közreműködői licencszerződést.  Egy lekéréses kérelem benyújtása után át fogjuk tekinteni a javasolt módosításokat. Szükség esetén belső körben megvitatjuk őket, és felvesszük a kapcsolatot önnel.  
 
-Első lépésként kattintson a **Szerkesztés** (ceruza) gombra egy témakörnél, vagy menjen a repónkra a https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public címen. 
+Első lépésként kattintson a **Szerkesztés** (ceruza) gombra egy témakörön, vagy menjen a repónkra a https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public címen. 
 
-További tudnivalókért olvassa el a közreműködői útmutatót: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+További tudnivalókért olvassa el a következő közreműködői útmutatót: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
 
 
 > [!NOTE]
 > Jelenleg csak az angol nyelvű repóhoz fogadunk el közreműködést.  
-> A GitHub használatával jelentett problémákat nem fogadunk el – a tartalomjavaslatokhoz használjon lekéréses kérelmet. A termék- és szolgáltatás-visszajelzések kezelésének legcélszerűbb módja a Dynamics 365 Ideas portál: https://experience.dynamics.com/ideas/. 
+> A GitHub használatával jelentett problémákat nem fogadunk el – a tartalomjavaslatokhoz használjon lekéréses kérelmet. A termékkel és szolgáltatással kapcsolatos visszajelzések kezelésének legcélszerűbb módja a Dynamics 365 Ideas portál: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Feladat-útmutatók

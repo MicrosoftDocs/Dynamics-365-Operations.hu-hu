@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: b0a1dba5afbd7beba45149340f637223f6ecedcf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
@@ -28,13 +28,13 @@ ms.lasthandoff: 02/07/2018
 
 Ez az útmutató azzal kapcsolatban tartalmaz tájékoztatást, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési (ER-) konfigurációkban az ER-kifejezések alkalmazásosztályainak szükséges metódusainak lehívásával. A hívóosztályok argumentumértékeit dinamikusan lehet futásidőben definiálni: például az elemző dokumentumban lévő információk alapján az információk helyességének biztosítása érdekében. Ebben az útmutatóban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. 
 
-Ezek a lépések bármely adathalmazzal végrehajthatók. Emellett le kell töltenie és helyben mentenie kell a következő fájlt: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+Ezek a lépések bármely adathalmazzal végrehajthatók. Le kell töltenie és helyileg mentenie kell következő fájlt: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
 Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfigurációszolgáltató létrehozása és aktívként történő megjelölése (ER)” eljárás lépéseit.
 
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
     * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, először el kell végeznie a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.   
-    * Tegyük fel, hogy egy alkalmazásadat-frissítéshez tervez egy folyamatot a beérkező banki kivonatok elemzésére. Az IBAN-kódokat tartalmazó bejövő banki kivonatokat TXT-fájlként fogja megkapni. A banki kivonat importálási folyamatának részeként ellenőriznie kell az IBAN-kódok helyességét a Dynamics 365 for Finance and Operations, Enterprise edition kiadás már elérhető logikáját használva.   
+    * Tegyük fel, hogy egy alkalmazásadat-frissítéshez tervez egy folyamatot a beérkező banki kivonatok elemzésére. Az IBAN-kódokat tartalmazó bejövő banki kivonatokat TXT-fájlként fogja megkapni. A banki kivonat importálási folyamatának részeként ellenőriznie kell az IBAN-kódok helyességét a Dynamics 365 for Finance and Operations kiadás már elérhető logikáját használva.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Új ER-modellkonfiguráció importálása
 1. Keresse meg és jelölje ki a kívánt rekordot a listán.

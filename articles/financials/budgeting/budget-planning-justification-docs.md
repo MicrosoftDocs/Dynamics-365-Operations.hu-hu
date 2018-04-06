@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ A költségvetés-kezelő Microsoft Wordben létrehoz egy költségvetésiterv-s
 
 1.  Bejelentkezés után kattintson a **Tervezés** elemre a Microsoft Dynamics Office-bővítményben.
 2.  A fejlécadatokhoz használja a **Mezők hozzáadása** gombot.
-3.  Válassza ki a BudgetPlanJustification entitás-adatforrást, majd kattintson a **Tovább** gombra. **Megjegyzés:** erre az entitásra minden igazoló dokumentum esetén szükség van. Más entitások is használhatók, de a Microsoft Dynamics 365 for Finance and Operations, Enterprise editionbe való visszatöltés sikertelen lesz, ha ez az entitás nincs felvéve.
+3.  Válassza ki a BudgetPlanJustification entitás-adatforrást, majd kattintson a **Tovább** gombra. **Megjegyzés:** erre az entitásra minden igazoló dokumentum esetén szükség van. Más entitások is használhatók, de a Microsoft Dynamics 365 for Finance and Operations rendszerbe való visszatöltés sikertelen lesz, ha ez az entitás nincs felvéve.
 4.  Adja hozzá a BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter és DocumentNumber címkéket és értékeket a Word-dokumentumban. **Megjegyzés:** szükség esetén használhatja saját egyéni címkéit a szabványos címkék helyett.
 5.  Kattintson a **Kész** elemre a fejléc befejezéséhez.
 6.  A sorszintű részletes költségvetésiterv-összegekhez kattintson a **Tábla hozzáadása** elemre.
@@ -61,7 +61,7 @@ A költségvetés-kezelő Microsoft Wordben létrehoz egy költségvetésiterv-s
 1.  A Finance and Operationsben lépjen a **Költségvetés készítése** &gt; **Beállítás** &gt; **Költségvetés-tervezés** &gt; **Igazoló dokumentum sablonjai** elemre.
 2.  Kattintson a **Új** lehetőségre, és keresse meg az újonnan létrehozott Microsoft Word-dokumentumot.
 3.  Adja meg a sablon megjelenítendő nevét és leírását. Kattintson az **OK** gombra.
-4.  Lépjen a következőhöz: **Költségvetés-készítés** &gt; **Beállítás** &gt; **Költségvetés****-tervezés** &gt; **Költségvetés-tervezési folyamat**.
+4.  Lépjen a következőhöz: **Költségvetés-készítés** &gt; **Beállítás** &gt; **Költségvetés** **-tervezés** &gt; **Költségvetés-tervezési folyamat**.
 5.  Válassza ki a folyamatot, ahol az indoklási sablont használni kívánja, majd kattintson a **Szerkesztés** elemre.
 6.  Az **Igazoló dokumentum sablonja** mezőben válassza ki a megfelelő sablont, és mentse el.
 

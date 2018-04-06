@@ -1,6 +1,6 @@
 ---
 title: "Projektszerződések"
-description: "Ez a témakör a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition programban."
+description: "Ez a témakör a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations alkalmazásban."
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: c8328bd2d93bbe763e629248edc1b7b4576005ae
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition programban.
+Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 
 A projektszerződés teljesítésére létrehozott projekt típusa határozza meg a megrendelő felé történő számlakiállítás módszerét. A projektszerződés és a hozzá kapcsolódó projekt módosítható, de a projekt típusa nem. 
 

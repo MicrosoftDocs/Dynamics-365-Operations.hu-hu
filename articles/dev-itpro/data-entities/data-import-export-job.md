@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
-ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-Adatimportálási és -exportálási feladatok létrehozásához és kezeléséhez a Microsoft Dynamics 365 for Finance and Operations, Enterprise editionben használja az **Adatkezelés** munkaterületet. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
+Adatimportálási és -exportálási feladatok létrehozásához és kezeléséhez a Microsoft Dynamics 365 for Finance and Operations alkalmazásban használja az **Adatkezelés** munkaterületet. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
 
 > [!NOTE]
 > Ez a témakör feltételezi, hogy már ismeri az [adatentitásokat](data-entities.md).
@@ -66,7 +66,7 @@ Adott entitásokat adhat hozzá az importálási vagy exportálási feladatokhoz
 ### <a name="set-the-data-format-for-the-job"></a>Végezze el a feladat adatformátumának beállítását
 Ha kiválaszt egy entitást, ki kell választania az exportálandó vagy importálandó adatok formátumát. A formátumokat az **Adatforrások beállítása** csempe segítségével határozhatja meg. Számos vállalat használja kiindulásnak a bemutató adatkészletben alapértelmezés szerint szerepelő formátumokat. Íme néhány formátum listája:
 
-- AX (olyan adatokhoz, amelyek importálásának vagy exportálásának a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition által használt formátumban kell történnie)
+- AX (olyan adatokhoz, amelyek importálásának vagy exportálásának a Microsoft Dynamics 365 for Finance and Operations által használt formátumban kell történnie)
 - ColonSeparated
 - CSV
 - Excel

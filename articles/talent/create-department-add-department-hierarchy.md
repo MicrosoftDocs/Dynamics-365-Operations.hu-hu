@@ -19,10 +19,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cea3ecd66a57780c9ef1b3a3c21f1e5273faa0ef
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: 3fc30669bf7a16616484bf7115cb121ce463840f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -56,7 +56,6 @@ Egy részleg hozzáadásához a részleghierarchiához, tegye a következőket.
 5.  Mentse el a módosításokat. Egy üzenet fog kapni arról, hogy létrejött-e a hierarchia egy vázlatverziója.
 6.  Ha elkészült, kattintson a **Közzététel** lehetőségre a hierarchiatervezőben. Megadhat egy hatályba lépési dátumot, amely azt jelzi, hogy mikor kell közzétenni a hierarchiát. Ha például a következő naptári év kezdetén kell hozzáadni az új részleget, akkor állítsa a hatálybalépési dátumot a következő év január 1-re. A hierarchia módosításai ezen a dátumon lépnek hatályba.
 
-
-
-
+## <a name="steps-for-creating-a-department"></a>A részleg létrehozásának lépései
+Lásd az [Új részlegek meghatározása](../fin-and-ops/hr/tasks/define-new-departments.md) témakört az új osztály létrehozásának lépésről lépésre útmutatójához. 
 

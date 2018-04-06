@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/08/2018
 
 [!include[banner](../includes/banner.md)]
 
-A külső katalógus segítségével biztosítható, hogy a Dynamics 365 for Finance and Operations Enterprise 2017. júliusi verziójában feldolgozott termék- és árinformációk pontosak és naprakészek legyenek. Az igénylés ezután jóváhagyható és beszerzési rendeléssé alakítható át, valamint leadhat egy rendelést a szállítónál.
+A külső katalógus segítségével biztosítható, hogy a Dynamics 365 for Finance and Operations 2017. júliusi verziójában feldolgozott termék- és árinformációk pontosak és naprakészek legyenek. Az igénylés ezután jóváhagyható és beszerzési rendeléssé alakítható át, valamint leadhat egy rendelést a szállítónál.
 
 Amikor a külső katalógus be van állítva, és egy alkalmazott egy igénylést készít elő, a rendszer felajánlja, hogy átirányítja egy külső webhelyre, egy külső katalógushoz, majd visszairányítja a külső webhelyen létrehozott bevásárlókosarat. Ez a kommunikáció cXML-protokollon alapul, amelyet be kell állítani a vásárló és az értékesítő szervezetek rendszerei között.
 
@@ -85,7 +85,7 @@ Az alábbiakban megtalálja a sablonban szereplő címkék leírását:
 
 A külső elem további információt jelent, például egy olyan felhasználónév, amely a külső katalógust használó felhasználónak felel meg. A külső elem beállítása a külső katalógus használatakor történik, és elküldhető a beállításkérési üzenetben.
 Megtörténhet, hogy a szállítónál követelmény áll fenn egy a beállítási kérelemben levő külső elem fogadása tekintetében. Ebben az esetben hozzá kell adni a külső elemet a külső elemek listájához az **Üzenetformátum** részben a **Külső katalógus** lapon. Olyan nevet adjon a külső elemnek, amelyet a szállító felismer, és meg tudja feleltetni egy értéknek. A lehetséges értékek a következők: Felhasználónév, Felhasználói e-mail vagy Véletlenszerű érték.
-A cXML-protokollal kapcsolatos további tudnivalókat lásd: http://cxml.org/
+További információ az cXML protokollról: http://cxml.org/
 
 ## <a name="post-back-message"></a>Visszajelzési üzenet
 A visszajelzési üzenet a szállítótól kapott üzenet, amikor a felhasználó kilép a külső webhelyről, és visszatér a Finance and Operations rendszerbe. A visszajelzési üzenetek nem konfigurálhatók. Az üzenetek a cXML-protokoll definícióján alapulnak. Itt látható az a szöveg, amely az igénylési soron beérkező visszajelzési üzenet része lehet:

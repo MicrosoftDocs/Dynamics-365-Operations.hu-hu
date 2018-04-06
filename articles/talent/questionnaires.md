@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/08/2018
 
 Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
 
-A Microsoft Dynamics 365 Finance and Operations Enterprise Edition különböző funkcióival testre szabhatja a kérdőívet, hogy megfeleljen az Ön követelményeinek. Íme néhány példa a kérdőív használatához:
+A Microsoft Dynamics 365 for Finance and Operations különböző funkcióival testre szabhatja a kérdőívet, hogy megfeleljen az Ön követelményeinek. Íme néhány példa a kérdőív használatához:
 
 -   Az alkalmazottak és a pályázók szakmai felkészültségének tesztelése.
 -   Kiértékelheti, hogy a tanfolyam résztvevői megtanulták-e a tanfolyam anyagát.

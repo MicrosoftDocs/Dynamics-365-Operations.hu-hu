@@ -16,10 +16,10 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: daded9d8ef48456cbd3f97a7bae5fa75885ce9d1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ A **Feladatok és állapot** szakaszban, az összesített adatellenőrzési proj
 Az utolsó lapon a részletes feladatok listája látható. A listán a teljes feladatlista jelenik meg.
 A feladatlistára számos szűrést alkalmazhat. Kattintson a **Feladat szerkesztése** pontra, ha módosítani szeretné egy feladat állapotát, illetve ki szeretne osztani egy feladatot. Kattintson a **Mellékletek** lehetőségre, ha meg szeretné tekinteni egy feladat mellékleteit.
 
-A feladat neve egy hivatkozás, amely a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition oldalra vagy egy másik webhelyre mutat, amelyet a felhasználónak fel kell keresnie a feladat befejezéséhez. A **Menüpont neve** mezőben beállíthatja ezt a hivatkozást a feladat **Adatellenőrzési projekt konfigurálása** űrlapon történő szerkesztésekor vagy létrehozásakor.
+A feladat neve egy hivatkozás, amely a Microsoft Dynamics 365 for Finance and Operations oldalra vagy egy másik webhelyre mutat, amelyet a felhasználónak fel kell keresnie a feladat befejezéséhez. A **Menüpont neve** mezőben beállíthatja ezt a hivatkozást a feladat **Adatellenőrzési projekt konfigurálása** űrlapon történő szerkesztésekor vagy létrehozásakor.
 
 Csatolhat fájlokat, megjegyzéseket, képeket és URL-eket egy feladathoz a **Mellékletek** művelettel. Mellékelhet például egy jelentésfájlt, amely egy feladathoz lett kinyomtatva. Egy ikon jelenik meg a **Melléklet** oszlopban a feladatnál, ha a feladat rendelkezik melléklettel.
 

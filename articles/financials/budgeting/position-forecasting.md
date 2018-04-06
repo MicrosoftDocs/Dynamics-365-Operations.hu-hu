@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa11f1775017dd9bada61340b4bed70ea66a4137
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -96,7 +96,7 @@ A kompenzációs csoporton kijelölt kereseti költségösszetevőt akkor kell h
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Előre jelzett beosztások létrehozása létező beosztásokhoz
 
-A legpontosabb költségtervezési tervezés érdekében létrehozhat előre jelzett beosztásokat létező beosztásokból származó részletes adatok használatával a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben, függetlenül attól, hogy a beosztás jelenleg be van-e töltve vagy nem. 
+A legpontosabb költségtervezési tervezés érdekében létrehozhat előre jelzett beosztásokat létező beosztásokból származó részletes adatok használatával a Microsoft Dynamics 365 for Finance and Operations rendszerben, függetlenül attól, hogy a beosztás jelenleg be van-e töltve vagy nem. 
 
 A **Meglévő beosztások hozzáadása** funkció a szervezet minden beosztását megjeleníti. Az **Ekkor** dátum beállításával módosíthatja a beosztások listáját, hogy azokat beosztásokat tartalmazza, amelyek egy bizonyos napon a múltban vagy gyakoribb esetekben a jövőben (például a következő költségvetési ciklus elején) léteztek/léteznek. Válasszon ki egy költségvetés-tervezési folyamat és a költségvetési tervváltozatot, válasszon ki a listában szereplő beosztásokat, majd kattintson az **OK** gombra, így előre jelzett beosztásokat létrehozva a kiválasztott beosztások számára. Vegye figyelembe, hogy a költségvetés-tervezési folyamatban és tervváltozatban minden meglévő pozícióhoz csak egy előre jelzett beosztást hozhat létre. Azonban más költségvetési tervváltozatok hozzárendelésével további verziókat is létrehozhat. 
 

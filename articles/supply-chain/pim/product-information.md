@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ef108fb7be65b91c531db750018f00f7fdd67da1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -58,7 +58,7 @@ A terméket elsősorban a termékszáma, a neve és a leírása határozza meg. 
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Termékadatok elosztása, exportálása és importálása
 
-A termékdefiníció a Microsoft Dynamics 365 for Finance and Operations Enterprise edition rendszerben hozható létre. Importálható a termék életciklus-kezelési (PLM), a termékadatok kezelési (PDM) vagy a termékinformációk kezelési (PIM) rendszereiből. Ha a Finance and Operations több példánya fut párhuzamosan, általában egy példány szolgál a többi példány termékadatainak alapjául. Ezt a megközelítést támogatja nagy számú adatkészlet, amely lehetővé teszi a termékdefiníciós adatok exportálását és importálását egyik példányból a másikba.
+A termékdefiníció a Microsoft Dynamics 365 for Finance and Operations rendszerben hozható létre. Importálható a termék életciklus-kezelési (PLM), a termékadatok kezelési (PDM) vagy a termékinformációk kezelési (PIM) rendszereiből. Ha a Finance and Operations több példánya fut párhuzamosan, általában egy példány szolgál a többi példány termékadatainak alapjául. Ezt a megközelítést támogatja nagy számú adatkészlet, amely lehetővé teszi a termékdefiníciós adatok exportálását és importálását egyik példányból a másikba.
 
 A termékadatok sok példányban történő elosztásának támogatásához a Finance and Operations rendszer lehetővé teszi a Common Data Service használatát. A termékdefiníciók exportálhatók a Finance and Operations egy példányából a Common Data Service szolgáltatásba. A termékdefiníciók felhasználhatók más üzleti alkalmazások, például a Microsoft Dynamics 365 for Sales termékadatokkal történő ellátására.
 

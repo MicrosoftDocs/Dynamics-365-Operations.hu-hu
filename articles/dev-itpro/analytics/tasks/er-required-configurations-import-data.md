@@ -1,6 +1,6 @@
 --- 
 title: "Kötelező konfigurációk létrehozása külső fájlból történő adatok importálásához az elektronikus jelentéskészítésben (ER)"
-description: "A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy elektronikus jelentés (ER) konfigurációt adatok importálására a Dynamics 365 for Finance and Operations, Enterprise kiadás alkalmazásba külső fájlból."
+description: "A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy elektronikus jelentés (ER) konfigurációt adatok importálására a Dynamics 365 for Finance and Operations alkalmazásba külső fájlból."
 author: NickSelin
 manager: AnnBe
 ms.date: 02/22/2017
@@ -16,26 +16,26 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c0d9636fe8a8d5230859da8fe557fe11a9513ba0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 999c6da306ff713521ce3bb5750bd7e65dc5daaf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Kötelező konfigurációk létrehozása külső fájlból történő adatok importálásához az elektronikus jelentéskészítésben (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy elektronikus jelentés (ER) konfigurációt adatok importálására a Dynamics 365 for Finance and Operations, Enterprise kiadás alkalmazásba külső fájlból. Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő feladat-útmutató lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” A lépések a USMF-adathalmazzal hajthatók végre. Emellett le kell tölteni és helyben menteni kell a következő fájlokat az Elektronikus jelentések áttekintése témakör hivatkozásainak (https://go.microsoft.com/fwlink/?linkid=852550) használatával: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy elektronikus jelentés (ER) konfigurációt adatok importálására a Dynamics 365 for Finance and Operations alkalmazásba külső fájlból. Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő feladat-útmutató lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” A lépések a USMF-adathalmazzal hajthatók végre. Emellett le kell tölteni és helyben menteni kell a következő fájlokat az Elektronikus jelentések áttekintése témakör hivatkozásainak (https://go.microsoft.com/fwlink/?linkid=852550): használatával: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
-    * Az ER lehetővé teszi az üzleti felhasználók számára, hogy a Dynamics 365 for Finance and Operations Enterprise kiadás táblázataiba történő külső adatfájl-importálás folyamatához az XML- vagy a TXT-formátumot konfigurálják. Először ki kell alakítani egy absztrakt adatmodell és egy ER adatmodell konfigurációt, amely leképezi az importálandó adatokat. Ezután definiálni kell az importálandó fájl struktúráját, valamint azt az eljárást, amelyet az adatok portolására fog használni a fájlból az absztrakt adatmodellbe. Az absztrakt adatmodellhez létre kell hozni az ER-formátum konfigurációját, amely leképezi a megtervezett adatmodellt. Ezt követően az adatmodell konfigurációját ki kell bővíteni a leképezéssel, amely leírja, hogyan marad meg az importált adatok absztrakt adatmodellje, és hogyan történik a felhasználása a táblák frissítéséhez a Dynamics 365 for Finance and Operations Enterprise kiadás megoldásban.  Az ER-adatmodell konfigurációját ki kell egészíteni egy új modell-leképezéssel, amely leírja az adatmodell kötését az alkalmazás céljához.  
-    * A következő forgatókönyv az ER-adatimportálási lehetőségeket jeleníti meg. Ez magában foglalja a külsőleg nyomon követett, majd a Dynamics 365 for Finance and Operations Enterprise kiadás megoldásba importált szállítói tranzakciókat, amelyeket később a szállítói kiegyenlítés 1099-es jelentéshez kell jelenteni.   
+    * Az ER lehetővé teszi az üzleti felhasználók számára, hogy a Dynamics 365 for Finance and Operations táblázataiba történő külső adatfájl-importálás folyamatához az XML- vagy a TXT-formátumot konfigurálják. Először ki kell alakítani egy absztrakt adatmodell és egy ER adatmodell konfigurációt, amely leképezi az importálandó adatokat. Ezután definiálni kell az importálandó fájl struktúráját, valamint azt az eljárást, amelyet az adatok portolására fog használni a fájlból az absztrakt adatmodellbe. Az absztrakt adatmodellhez létre kell hozni az ER-formátum konfigurációját, amely leképezi a megtervezett adatmodellt. Ezt követően az adatmodell konfigurációját ki kell bővíteni a leképezéssel, amely leírja, hogyan marad meg az importált adatok absztrakt adatmodellje, és hogyan történik a felhasználása a táblák frissítéséhez a Dynamics 365 for Finance and Operations megoldásban.  Az ER-adatmodell konfigurációját ki kell egészíteni egy új modell-leképezéssel, amely leírja az adatmodell kötését az alkalmazás céljához.  
+    * A következő forgatókönyv az ER-adatimportálási lehetőségeket jeleníti meg. Ez magában foglalja a külsőleg nyomon követett, majd a Dynamics 365 for Finance and Operations megoldásba importált szállítói tranzakciókat, amelyeket később a szállítói kiegyenlítés 1099-es jelentéshez kell jelenteni.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Új ER-modellkonfiguráció hozzáadása
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
     * Ellenőrizze, hogy a konfigurációszolgáltató a Litware, Inc. elérhető és aktívként megjelölt legyen. Ha nem látja a konfigurációszolgáltatót, először el kell végeznie a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.   
 2. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
-    * Ahelyett, hogy új modellt hozna létre az adatimportálás támogatásához, töltse be a korábban letöltött 1099model.xml fájlt. Ez a fájl tartalmazza az egyéni adatmodellt a szállítók tranzakcióihoz. Ez az adatmodell hozzá van rendelve a Dynamics 365 for Finance and Operations Enterprise kiadás adatösszetevőihez, amelyek az AOT-adatentitásban találhatók.   
+    * Ahelyett, hogy új modellt hozna létre az adatimportálás támogatásához, töltse be a korábban letöltött 1099model.xml fájlt. Ez a fájl tartalmazza az egyéni adatmodellt a szállítók tranzakcióihoz. Ez az adatmodell hozzá van rendelve a Dynamics 365 for Finance and Operations adatösszetevőihez, amelyek az AOT-adatentitásban találhatók.   
 3. Kattintson az Átváltás lehetőségre.
 4. Kattintson a Betöltés XML-fájlból lehetőségre.
     * Kattintson a Böngészés lehetőségre, és a navigáljon a korábban letöltött 1099model.xml fájlhoz.  
@@ -44,7 +44,7 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 
 ## <a name="review-data-model-settings"></a>Adatmodell-beállítások áttekintése
 1. Kattintson a Tervező pontra.
-    * Ezt a modellt a szállítók tranzakcióinak leképezésére tervezték üzleti szempontból, és független a Dynamics 365 for Finance and Operations Enterprise kiadás megvalósításától.   
+    * Ezt a modellt a szállítók tranzakcióinak leképezésére tervezték üzleti szempontból, és független a Dynamics 365 for Finance and Operations megvalósításától.   
 2. A fastruktúrában bontsa ki a következőt: „1099-MISC”.
 3. A fastruktúrában válassza ki ezt: „1099-MISC\Tranzakciók”.
 4. A fastruktúrában bontsa ki ezt: „1099-MISC\Tranzakciók”.
@@ -106,7 +106,7 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 1. A fastruktúrában válassza ki ezt: „1099 fizetések modellje”.
 2. Kattintson a Tervező pontra.
 3. Kattintson a Modell hozzárendelése adatforráshoz gombra.
-    * Az 1099-es manuális tranzakciók importálásának hozzárendelése a cél céliránytípussal van definiálva. Ez azt jelenti, hogy meg van adva az adatimportálás támogatásához, és tartalmazza azokat a szabályokat, amelyek megadják, hogy az importált külső fájlt, amely absztrakt modelladatként őrződik meg, hogyan használja a rendszer a táblák frissítéséhez a Dynamics 365 for Finance and Operations Enterprise kiadás alkalmazásban.  
+    * Az 1099-es manuális tranzakciók importálásának hozzárendelése a cél céliránytípussal van definiálva. Ez azt jelenti, hogy meg van adva az adatimportálás támogatásához, és tartalmazza azokat a szabályokat, amelyek megadják, hogy az importált külső fájlt, amely absztrakt modelladatként őrződik meg, hogyan használja a rendszer a táblák frissítéséhez a Dynamics 365 for Finance and Operations alkalmazásban.  
 4. Kattintson a Tervező pontra.
 5. A fastruktúrában bontsa ki a „modell: Adatmodell 1099 Fizetési modell” lehetőséget.
 6. A fastruktúrában bontsa ki a következőt: „modell: Adatmodell 1099 Fizetési modell\Tranzakciók: Rekordlista”.
@@ -120,7 +120,7 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 12. A fastruktúrában válassza ki ezt: „tax1099trans: Table 'VendSettlementTax1099' records= model.Validated”.
 13. Kattintson a Cél szerkesztése lehetőségre.
     * Ennek az ER-célnak a hozzáadása azért történt meg, hogy megadja, hogyan frissítik az importált adatok az alkalmazástáblákat.. Ebben az esetben a VendSettlementTax1099 adattábla van kiválasztva. Mivel a Beszúrás rekordművelet van kiválasztva, az importált tranzakciókat a rendszer a VendSettlementTax1099 táblába szúrja be. Vegye figyelembe, hogy az egyetlen modelles hozzárendelés több rendeltetési helyet is tartalmazhat. Ez azt jelenti, hogy az importált adatok egyszerre több alkalmazás tábláinak frissítésére használhatók. ER-célként táblák, nézetek és adatentitások használhatók.   
-    * Ha a hozzárendelést a Dynamics 365 for Finance and Operations Enterprise kiadás alkalmazás olyan pontja (például gomb vagy menüelem) hívja meg, amelyet kifejezetten erre a műveletre terveztek, az ER-céljának az integrációs pontot kell megjelölni. Ebben a példában ez az ERTableDestination#VendSettlementTax1099 pont.  
+    * Ha a hozzárendelést a Dynamics 365 for Finance and Operations alkalmazás olyan pontja (például gomb vagy menüelem) hívja meg, amelyet kifejezetten erre a műveletre terveztek, az ER-céljának az integrációs pontot kell megjelölni. Ebben a példában ez az ERTableDestination#VendSettlementTax1099 pont.  
 14. Kattintson a Mégse gombra.
 15. Kattintson az Összes megjelenítésére lehetőségre.
 16. Kattintson a Csak a hozzárendeltek megjelenítése lehetőségre.
@@ -176,15 +176,15 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 18. Zárja be a lapot.
 19. Zárja be a lapot.
 20. Kattintson a Szerkesztés lehetőségre.
-    * Ha telepítette a következő gyorsjavítást: „KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a Dynamics 365 for Finance and Operations Enterprise kiadás különböző verzióiban” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), hajtsa végre a következő lépést: „Alapértelmezett modell-leképezéshez jelző bekapcsolása” a megadott formátumkonfigurációhoz. Ellenkező esetben hagyja ki a következő lépést.  
+    * Ha telepítette a következő gyorsjavítást: „KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a Dynamics 365 for Finance and Operations különböző verzióiban” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), hajtsa végre a következő lépést: „Alapértelmezett modell-leképezéshez jelző bekapcsolása” a megadott formátumkonfigurációhoz. Ellenkező esetben hagyja ki a következő lépést.  
 21. Válassza az Igen lehetőséget a Modell-leképezés alapértelmezett értéke mezőben.
 22. A fastruktúrában válassza ki ezt: „1099 fizetések modellje”.
 23. Kattintson a Tervező pontra.
 24. Kattintson a Modell hozzárendelése adatforráshoz gombra.
 25. Kattintson a Futtatás elemre.
-    * Ha telepítette a következő gyorsjavítást: „KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a Dynamics 365 for Finance and Operations Enterprise kiadás különböző verzióiban” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), válassza ki az előnyben részesített modell-leképezést a keresés mezőben. Ha még nem telepítette a gyorsjavítást, ugorjon a következő lépésre, mert a leképezést már kiválasztotta az alapértelmezett formátumkonfiguráció meghatározása.  
+    * Ha telepítette a következő gyorsjavítást: „KB 4012871 GER-modell-leképezések támogatása elkülönített konfigurációkban különböző típusú előfeltételek megadásának képességével a telepítésükhöz a Dynamics 365 for Finance and Operations különböző verzióiban” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), válassza ki az előnyben részesített modell-leképezést a keresés mezőben. Ha még nem telepítette a gyorsjavítást, ugorjon a következő lépésre, mert a leképezést már kiválasztotta az alapértelmezett formátumkonfiguráció meghatározása.  
     * Ha még nem telepítette a KB 4012871 gyorsjavítást, figyelje meg, hogy a párbeszédpanel egy további modell-leképezési kérdést tartalmaz, amelyet a rendszer az importálandó fájl elemzéséhez használ. Ezután megtörténik az adatok portolása a párbeszédpanelből az adatmodellbe. Jelenleg az importálandó fájl típusától függően választhatja ki a használandó formátumleképezést.  
-    * Ha azt tervezi, hogy a modell-leképezést egy kifejezetten erre a műveletre tervezett pontról hívja meg a Dynamics 365 for Finance and Operations Enterprise kiadás megoldásban, az ER-célhelyét és a formátumleképezést meg kell jelölni az integráció részeként.  
+    * Ha azt tervezi, hogy a modell-leképezést egy kifejezetten erre a műveletre tervezett pontról hívja meg a Dynamics 365 for Finance and Operations megoldásban, az ER-célhelyét és a formátumleképezést meg kell jelölni az integráció részeként.  
 26. Kattintson a Mégse gombra.
 27. Zárja be a lapot.
 28. Zárja be a lapot.

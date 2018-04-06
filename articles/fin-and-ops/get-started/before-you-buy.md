@@ -1,6 +1,6 @@
 ---
 title: "Vásárlás előtti teendők"
-description: "Lépésről-lépésre történő bemutatás, amelyet akkor használhat, ha a Dynamics 365 for Finance and Operations, Enterprise edition megvásárlását tervezi."
+description: "Lépésről-lépésre történő bemutatás, amelyet akkor használhat, ha a Dynamics 365 for Finance and Operations megvásárlását tervezi."
 author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
@@ -17,10 +17,10 @@ ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
-ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 160313ac375feb875982bfdbbd850db7f2d8be35
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 01/31/2018
 
 [!include[banner](../includes/banner.md)]
 
-Új még Önnek a Dynamics 365 for Finance and Operations, Enterprise edition? Összeállítottunk egy lépésenkénti útmutatót, amely hasznára válhat; akár még teszteki a Finance and Operations szolgáltatást, akár már készen áll a vásárlásra.
+Most ismerkedik a Dynamics 365 for Finance and Operations rendszerrel? Összeállítottunk egy lépésenkénti útmutatót, amely hasznára válhat; akár még teszteki a Finance and Operations szolgáltatást, akár már készen áll a vásárlásra.
 
 ## <a name="step-one--try-out-finance-and-operations-free-for-30-days"></a>1. lépés: A Finance and Operations program ingyenes kipróbálása 30 napig
 A Dynamics 365 for Finance and Operations 30 napos kipróbálásához mindössze egy egyszerű e-mailes feliratkozás szükséges. A Finance and Operations próbaverziója magában foglalja az „Első lépések” bemutatókat is, amelyek lépésenként mutatják be az elvégzendő feladatokat, hogy működés közben tekinthessen meg egyes forgatókönyveket. A termék segítségével felfedezheti és kipróbálhatja a forgatókönyveket, ám nem szabhatja személyre azt. A bemutató adatok segítségével könnyebben használható a termék, és tartalmasabb az élmény. A próbaverzió lejárata előtt 3 nappal emlékeztető-e-mailt küldünk. További részletek: [www.microsoft.com/en-us/dynamics365/operations](https://www.microsoft.com/en-us/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>2. lépés: Válasszon egy telepítési beállítást
-Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kiadást felhőalapú vagy on-premises megoldás használatával. A felhőalapú telepítések olyan vállalatirányítási szolgáltatást kínálnak, amelyet teljes mértékben a Microsoft felügyel, míg az on-premises telepítések helyileg, az ügyfél adatközpontján keresztül történnek.
+Telepítheti a Microsoft Dynamics 365 for Finance and Operations felhőalapú vagy on-premises megoldás használatával. A felhőalapú telepítések olyan vállalatirányítási szolgáltatást kínálnak, amelyet teljes mértékben a Microsoft felügyel, míg az on-premises telepítések helyileg, az ügyfél adatközpontján keresztül történnek.
 
 A következő megfontolásokat kell figyelembe venni, amikor telepítési opcióként a helyszínit választja:
 - Szabályozói és megfelelési követelmények, amelyek nem szerepelnek a [felhőtanúsítványokban](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
@@ -43,7 +43,7 @@ A következő megfontolásokat kell figyelembe venni, amikor telepítési opció
 - [Minimális infrastruktúra-követelmények](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
-> A Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition on-premises telepítései semmilyen nyilvános felhőinfrastruktúrán nem támogatottak, beleértve az Azure-t is. 
+> A Microsoft Dynamics 365 for Finance and Operations on-premises telepítései semmilyen nyilvános felhőinfrastruktúrán nem támogatottak, beleértve az Azure-t is. 
 
 A további információkat lásd: [Telepítési beállítások](../../dev-itpro/deployment/choose-deployment-type.md)
 
@@ -70,7 +70,7 @@ A mennyiségi licencelés esetén a Finance and Operations a következő módoko
 A Microsoft felhőalapú szolgáltatója szorosan együttműködik Önnel, hogy megismerhesse vállalkozása vagy szervezete igényeit. [A Microsoft Partner Center portál segítségével megtalálhatja az Ön számára ideális partnert](https://partnercenter.microsoft.com/en-us/partner/home). 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Vásárlás Dynamics-partneren keresztül (on-premises telepítésnél)
-Egy partnerrel kell együttműködnie a Finance and Operations on-premises telepítésének megvásárlásához. További információ: [Dynamics 365 for Finance and Operations, Enterprise kiadás (on-premises) megvásárlása](purchase-on-premises.md)
+Egy partnerrel kell együttműködnie a Finance and Operations on-premises telepítésének megvásárlásához. További információ: [Dynamics 365 for Finance and Operations (on-premises) megvásárlása](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Válassza ki a támogatási lehetőséget
 A Microsoft rugalmas, iparági szinten is vezető támogatást, szolgáltatásokat és forrásokat kínál, amelyek lehetővé teszik a felhasználók számára, hogy gyorsan foglalkozhassanak a technikai kérdésekkel, és maximalizálják a Dynamics 365-befektetéseik megtérülését. Válassza ki azt a csomagot, amelyik a leginkább megfelel az üzleti igényeinek. 

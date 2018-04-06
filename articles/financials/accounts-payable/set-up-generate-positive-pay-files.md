@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: 9a36b3e7a8e496632ca7041018abe8176a2e4f25
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Ez a cikk ismerteti az ellenőrzött fizetések beállítását és az ellenőrz
 A fizetési ellenőrzés beállítása elektronikus csekklista generálásához, amely a banknak elküldhető. Ezután, amikor egy csekket bemutatnak a banknak a bank összehasonlítja azt a csekklistával. Ha a csekk megfelel a listában szereplő csekkel a bank törli azt. Ha a csekk nem egyezik meg a listában szereplő csekkel, akkor a bank bent tartja ellenőrzésre.
 
 ## <a name="security-for-positive-pay-files"></a>A fizetési ellenőrző fájlok biztonsága
-Az ellenőrzött fizetési fájlok bizalmas információt tartalmazhatnak a kedvezményezettekről és a csekk-összegekről. Ezért győződjön meg róla, hogy a megfelelő biztonsági intézkedéseket használja attól az időponttól, hogy a fájlok létrejönnek addig, amíg a bank meg nem kapja őket. A fizetési ellenőrző fájlok a webböngészője által megadott helyre lesznek letöltve. Mivel a fizetési ellenőrző fájlok bizalmas adatokat is tartalmazhatnak, fontos, hogy csak engedéllyel rendelkező felhasználók férjenek hozzá ezen információk létrehozásához és megtekintéséhez a Microsoft Dynamics 365 Finance and Operations Enterprise edition programban. A következő táblázat segítségével határozza meg a szükséges jogosultságokkal.
+Az ellenőrzött fizetési fájlok bizalmas információt tartalmazhatnak a kedvezményezettekről és a csekk-összegekről. Ezért győződjön meg róla, hogy a megfelelő biztonsági intézkedéseket használja attól az időponttól, hogy a fájlok létrejönnek addig, amíg a bank meg nem kapja őket. A fizetési ellenőrző fájlok a webböngészője által megadott helyre lesznek letöltve. Mivel a fizetési ellenőrző fájlok bizalmas adatokat is tartalmazhatnak, fontos, hogy csak engedéllyel rendelkező felhasználók férjenek hozzá ezen információk létrehozásához és megtekintéséhez a Microsoft Dynamics 365 for Finance and Operations programban. A következő táblázat segítségével határozza meg a szükséges jogosultságokkal.
 
 <table>
 <colgroup>

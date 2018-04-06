@@ -1,6 +1,6 @@
 ---
 title: "Előlegre jogosult tranzakciói"
-description: "Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition előlegre jogosult funkciója tranzakcióinak használatáról."
+description: "Ismerje meg, hogyan dolgozhat a Microsoft Dynamics 365 for Finance and Operationsben előlegre jogosultak tranzakcióival."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0983e9738e2efade14307cf366efc341031714af
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3e1fbb37c75052f10fdac3d3361e2c93c3c8a56c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition előlegre jogosult funkciója tranzakcióinak használatáról.
+Ismerje meg, hogyan dolgozhat a Microsoft Dynamics 365 for Finance and Operationsben előlegre jogosultak tranzakcióival.
 
 Ezen előlegre jogosult dolgozók számára tranzakciókat előlegrejogosult-fiókok segítségével lehet feladni. A minden előlegre jogosultnál megadott dolgozói azonosító használható az előlegre jogosultak összes tranzakciójának nyomon követésére. Ez a szám számlaszámként hívható le az előlegre jogosultak tranzakcióihoz a **Főkönyvi naplók** és **Előlegre jogosult tranzakciói** oldalakon.
 

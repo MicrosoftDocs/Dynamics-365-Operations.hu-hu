@@ -1,6 +1,6 @@
 --- 
 title: "A felhasználók hozzárendelése a biztonsági szerepkörökhöz"
-description: "A Microsoft Dynamics 365 for Finance and Operations Enterprise kiadás eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz."
+description: "A Microsoft Dynamics 365 for Finance and Operations eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz."
 author: maertenm
 manager: AnnBe
 ms.date: 06/07/2016
@@ -16,17 +16,17 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 551048af26f46d334c562d1968963aed262a5e03
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: da96ec8357ea209fd958e32ab438b13e668735df
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
-# <a name="assign-users-to-security-roles"></a>A felhasználók hozzárendelése a biztonsági szerepkörökhöz
+# <a name="assign-users-to-security-roles"></a>Felhasználók hozzárendelése a biztonsági szerepkörökhöz
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-A Microsoft Dynamics 365 for Finance and Operations Enterprise kiadás eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz. Ez az eljárás bemutatja, hogy hogyan lehet hozzárendelni automatikusan a szerepkörökhöz az üzleti adatokon alapuló rendszergazdákat. Ez az eljárás az USMF bemutatócéget használja.
+A Microsoft Dynamics 365 for Finance and Operations eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz. Ez az eljárás bemutatja, hogy hogyan lehet hozzárendelni automatikusan a szerepkörökhöz az üzleti adatokon alapuló rendszergazdákat. Ez az eljárás az USMF bemutatócéget használja.
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Felhasználók automatikus hozzárendelése a szerepkörökhöz

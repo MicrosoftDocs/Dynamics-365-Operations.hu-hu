@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7de5fbcaa9f287752e3ae4834eb48d622d263579
-ms.openlocfilehash: 890f035a291dbec936594ceeabc5de284d160ad4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>A konfigurációk függőségének meghatározása más összetevőkből az elektronikus jelentéskészítéshez (ER)
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/25/2017
 
 A lépések végrehajtásához végre kell hajtania a feladat-úmutató lépéseit, az ER model-leképezési konfigurációk kezelését, és hozzáféréssel kell rendelkeznie a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáshoz.
 
-Ez az eljárás bemutatja, hogyan hozhat létre elektronikus jelentési (ER) konfigurációt, és hogyan adhatja meg az egyéb szoftverösszetevőktől való függőségi viszonyt, hogy biztosíthassa, hogy a konfiguráció letöltése megfelelő a Microsoft Dynamics 365 for Finance and Operations Enterprise edition meghatározott verziója esetében. Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. 
+Ez az eljárás bemutatja, hogyan hozhat létre elektronikus jelentési (ER) konfigurációt, és hogyan adhatja meg az egyéb szoftverösszetevőktől való függőségi viszonyt, hogy biztosíthassa, hogy a konfiguráció letöltése megfelelő a Microsoft Dynamics 365 for Finance and Operations meghatározott verziója esetében. Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. 
 
 Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználók számára készült. Ezeket a lépéseket a vállalat között megosztott ER konfigurációjaként bármely vállalatnál végrehajthatja. 
 

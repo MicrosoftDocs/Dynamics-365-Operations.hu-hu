@@ -19,10 +19,10 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e069bf65e7dcab7f3b049aa786f3daff07383f4c
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: ff59250b836a73986848109ce48f843fed1d71a9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -41,7 +41,7 @@ A továbbfejlesztett banki egyeztetés szolgáltatás lehetővé teszi a banki k
     -   A funkciót minden formátumba ki lehet terjeszteni.
 
 2.  Állítsa be a továbbfejlesztett banki egyeztetés során használandó számsorozatot, és állítsa be a banki egyeztetési szabályokat.
-    -   Az egyeztetési szabály olyan kritériumok készlete, melyek a banki kivonat sorainak és a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition bankitranzakció-sorainak szűrésére szolgálnak az egyeztetési folyamat során. Üzleti gyakorlattól függően egynél több egyeztetési szabályt is beállíthat az egyeztetési folyamat automatizálása és optimalizálása érdekében.
+    -   Az egyeztetési szabály olyan kritériumok készlete, melyek a banki kivonat sorainak és a Microsoft Dynamics 365 for Finance and Operations bankitranzakció-sorainak szűrésére szolgálnak az egyeztetési folyamat során. Üzleti gyakorlattól függően egynél több egyeztetési szabályt is beállíthat az egyeztetési folyamat automatizálása és optimalizálása érdekében.
 
 3.  Banki kivonatok egyeztetése a Finance and Operations banki tranzakciókkal.
     -   Automatikus egyeztetés végrehajtása és egyeztetési napló létrehozása.

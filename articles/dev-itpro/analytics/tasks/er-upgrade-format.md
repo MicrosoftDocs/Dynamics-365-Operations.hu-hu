@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: db9e66a67f20ca24de3a020c1871cdda0cf2f9be
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cfc68c1d0810cbc296b35c09176dde2c948a50d0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>A formátum frissítése a formátum új alapverziójának elfogadásával az elektronikus jelentéskészítésben (ER)
@@ -107,7 +107,7 @@ A Proseware, Inc. a BACS ( UK fiktív) konfiguráció bevételezett 1.1-es verzi
     * Fontos, hogy a létrehozott konfiguráció teljesített 1.1.1-es verzióként lesz mentve. Ez azt jelenti, hogy ez az egyéni BACS (UK fiktív egyéni) formátum 1-es verziója, amely a Kifizetések (egyszerűsített modell) adatmodell 1-es verzióján alapuló BACS (UK fiktív) 1-es verzióján alapul.  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
-Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket a párhuzamos Dynamics 365 for Finance and Operations Enterprise kiadás szakaszban. Válassza ki a BACS (Egyesült Királyság fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a közelmúltban bevezetett XML-csomópontot, amely az IBAN mezőt a regionális követelményeknek megfelelően jeleníti meg.  
+Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket egy párhuzamos Dynamics 365 for Finance and Operations munkamenetben. Válassza ki a BACS (Egyesült Királyság fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a közelmúltban bevezetett XML-csomópontot, amely az IBAN mezőt a regionális követelményeknek megfelelően jeleníti meg.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>A meglévő országspecifikus konfiguráció frissítése
 A Litware, Inc. rendszernek frissítenie kell a BACS (UK fiktív) konfigurációját, és igazodnia kell az új ország követelményeihez az elektronikus dokumentum formátumának kezelésére vonatkozóan. Később ezen konfiguráció új verziójában tárolva lesz, amelyet felajánlanak a szolgáltatás előfizetői számára, többek között a Proseware, Inc.  
@@ -203,6 +203,6 @@ A Proseware, Inc. értesítést kap arról, hogy a BACS (UK fiktív) konfigurác
     * Vegye figyelembe, hogy a rendszer a létrehozott konfigurációt teljesített 1.2.2-es verzióként menti: az alap BACS (UK fiktív egyéni) formátum 2-es verziója, amely a Kifizetések (egyszerűsített modell) adatmodell 1-es verzióján alapuló alap BACS (UK fiktív) formátum 2-es verzióján alapul.  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>A testreszabott formátum tesztelése a Kifizetési fájlok létrehozásához
-Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket egy párhuzamos Dynamics 365 for Finance and Operations Enterprise kiadás szakaszban. Válassza ki a létrehozott BACS (UK fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainek megfelelően jeleníti meg.  
+Hajtsa végre a „Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a létrehozott formátum segítségével” eljárásban szereplő lépéseket egy párhuzamos Dynamics 365 for Finance and Operations munkamenetben. Válassza ki a létrehozott BACS (UK fiktív egyéni) formátumát az elektronikus fizetési módszer paramétereiben. Győződjön meg arról, hogy a létrehozott kifizetési fájl tartalmazza a Proseware, Inc. által a közelmúltban bevezetett XML-csomópontot, amely az IBAN-számlakódot a regionális követelményeknek megfelelően jeleníti meg. A fájlnak tartalmaznia kell a közelmúltban a Litware, Inc. által bevezetett XML-csomópontot is, amely a SWIFT-bankkódot az ország előírásainek megfelelően jeleníti meg.  
 
 
