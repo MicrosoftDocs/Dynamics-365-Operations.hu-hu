@@ -29,11 +29,10 @@ ms.lasthandoff: 03/06/2018
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>A Microsoft Dynamics 365 for Finance and Operations &#8211; Warehousing telepítése és konfigurálása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
-
+> 
 > Ez a témakör ismerteti, hogyan kell konfigurálni a felhőbeli telepítések raktárkészlet-nyilvántartását. Ha azt szeretné megtudni, hogyan kell konfigurálni az on-premises telepítések raktárkészlet-nyilvántartását, lásd: [Helyszíni telepítések raktárkezelése](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 

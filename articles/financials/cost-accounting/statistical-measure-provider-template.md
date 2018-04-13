@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A statisztikai dimenzió és és azok tagjai a Költségkönyvelés nem monetáris tételeinek regisztrálására és szabályozására szolgálnak. A statisztikai dimenziótagok két célra használhatók:
 

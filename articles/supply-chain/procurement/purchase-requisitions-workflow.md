@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-requisition-workflow"></a>beszerzési igénylési munkafolyamat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A munkafolyamat folyamata végigviszi a beszerzési igénylést az ellenőrzési folyamaton a kiinduló Tervezet állapottól a végső Jóváhagyva állapotig . A beszerzési igénylés ellenőrzésre való elküldésekor, elindul a munkafolyamat. A beszerzési igénylés jóváhagyása után, a beszerzési igénylés soraiban létrehozható egy beszerzési rendelés, amely elküldésre kerül a szállítónak, a rendelés teljesítése céljából.
 

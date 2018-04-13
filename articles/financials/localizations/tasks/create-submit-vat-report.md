@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-submit-vat-report"></a>Áfajelentés létrehozása és elküldése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti az áfajelentés létrehozásán és elküldésén a német hatóságok számára.
 

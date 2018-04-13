@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a>Termelési feladatok sorrendje a folyamatszerű gyártáshoz
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárásban példaként festék termékeket használ, hogy bemutassa, hogy hogyan lehet a szín és a csomag méretének prioritása szerint a tervezett rendeléseket rendezni. Ez az eljárás az USPI bemutatócéget használja. Ezt az eljárást a termeléstervező használja.
 

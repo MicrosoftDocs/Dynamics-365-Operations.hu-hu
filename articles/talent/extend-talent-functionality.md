@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>A Microsoft Dynamics 365 for Talent lehetőségeinek bővítése
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ha létrehozott bármilyen Microsoft PowerApps alkalmazást, ezeket az alkalmazásokat hivatkozásokkal indíthatja el a Microsoft Dynamics 365 for Talent alkalmazásból. Az alkalmazásokhoz való hozzáférés beállításához szükséges bizonyos információk beállítása a Talent alkalmazásban egy konfigurációs lapon, amely a **Rendszerfelügyelet** munkaterületen nyitható meg.
 
@@ -38,10 +38,10 @@ Az alábbi információkat adhatja meg vagy állíthatja be ezen az oldalon:
 > - Jól felismerhető név vagy azonosító minden PowerApps alkalmazásnak.
 > - Egyedi azonosító (GUID) minden alkalmazásnak, amelyet hozzáad valamelyik Talent oldalhoz. Az alkalmazásazonosító a PowerApps-oldalon érhető el, [powerapps.com](http://powerapps.com/). 
 > - A lap, amelyről a felhasználók megnyithatnak egy alkalmazást vagy jelentést. Nem minden Talent-lap támogatja a beágyazott PowerAppst és a PowerBI-jelentéseket. 
-
- > [!NOTE]
- >  Adja meg az oldal belső nevét, és nem az oldal tetején megjelenő megjelenítendő nevet. A belső név megkereséséhez nyissa meg a lapot, amelynek a belső nevére van szüksége, és kattintson a jobb gombbal bárhová az oldalon. A menü megnyílásakor vigye az egérmutatót a **Képernyő adatai** elemre. A belső képernyőnév a **Képernyő adatai** elem mellett jelenik meg a menüben.
- 
+> 
+> [!NOTE]
+>  Adja meg az oldal belső nevét, és nem az oldal tetején megjelenő megjelenítendő nevet. A belső név megkereséséhez nyissa meg a lapot, amelynek a belső nevére van szüksége, és kattintson a jobb gombbal bárhová az oldalon. A menü megnyílásakor vigye az egérmutatót a **Képernyő adatai** elemre. A belső képernyőnév a **Képernyő adatai** elem mellett jelenik meg a menüben.
+> 
 > - Adja meg az űrlap-vezérlőelemet, amelytől az alkalmazás be tudja beolvasni a környezeti adatokat. Például egy alkalmazás használhatja egy dolgozó adatait. Ha megadja a **Dolgozó** lapot a **Környezet** mezőben, a **Dolgozó** lap megnyílik az alkalmazás indításakor. A **Környezetmezőben** nem kötelező megadni bejegyzést. 
 > - Állítsa be a párbeszédpanel méretét, amelyen a PowerApps alkalmazás futni fog. A párbeszédpanelek lehetnek „kicsik” vagy „nagyok” a felhasználói felületet optimalizálásához, amikor az alkalmazás telefonon vagy nagyobb eszközön fut. 
 

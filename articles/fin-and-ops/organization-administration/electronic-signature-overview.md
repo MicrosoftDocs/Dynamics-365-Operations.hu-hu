@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="electronic-signature-overview"></a>Az elektronikus aláírás áttekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk betekintést nyújt az elektronikus aláírásokba, és bemutatja azok használatát Microsoft Dynamics 365 for Finance and Operations rendszerben.
 

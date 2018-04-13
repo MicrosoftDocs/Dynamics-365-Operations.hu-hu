@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-retail-products"></a>Kiskereskedelmi termékek beállítása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a cikk a kiskereskedelmi termékek Microsoft Dynamics 365 for Retail rendszerben történő beállítását írja le.
 

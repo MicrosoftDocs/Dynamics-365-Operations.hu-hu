@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Készletszintek kiigazítása a raktárban (alap raktározáskészlet-nyilvántartás)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készlethelyesbítési napló a raktárban található termékek készletszintjének helyesbítéséhez. Ennek megkezdése előtt először be kell állítani egy készletnaplónevet a készlethelyesbítéshez. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti. Ezeket a feladatokat általában egy raktári alkalmazott végzi el.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Kiterjesztett bejelentkezés funkció beállítása Pénztár felhőhöz és MPOS-hoz
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A témakör magába foglalja a felhőalapú pénztár és Kiskereskedelmi Modern pénztár (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
 

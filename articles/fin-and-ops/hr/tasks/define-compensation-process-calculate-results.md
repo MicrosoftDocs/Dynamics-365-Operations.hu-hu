@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Kompenzációs folyamat meghatározása és eredmények kiszámítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzációs konstrukciókba besorolt alkalmazottak új kompenzációs összegei és jutalmai. A Kompenzációs folyamatok többször is futtathatók többször „mi lenne ha” elemzés elvégzéséhez, hogy az összes módosítás és beállítások helyessége ellenőrizve legyen. Ez az eljárással egy kompenzációs folyamatot hoz létre, futtatja a folyamatot létrehozása, majd megtekinti az eredményeket. Ez az eljárás az USMF bemutatócéget használja.
 

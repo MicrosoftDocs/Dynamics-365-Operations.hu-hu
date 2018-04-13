@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a> Önkiszolgálás hardverállomás letöltéséhez
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás végigveszi, hogyan tölthet le egy előre definiált hardverállomást. Az eljárás az USRT bemutatócég adatait használja. Az eljárás megkezdése előtt létre kell hoznia egy új hardverállomás-profilt és egy hardverállomást.
 

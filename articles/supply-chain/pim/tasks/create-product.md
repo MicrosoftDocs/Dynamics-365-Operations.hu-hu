@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product"></a>Termék létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás az új termék létrehozását ismerteti a kiskereskedelmi termékek hierarchiájában. E feladat létrehozása az USRT bemutatócég segítségével történt, a feladat a Termékkihelyezési vezetők és a Terméktervezők részére készült.
 

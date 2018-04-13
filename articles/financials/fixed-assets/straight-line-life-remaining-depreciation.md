@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="straight-line-life-remaining-depreciation"></a>Lineáris - hátralevő élettartam értékcsökkenés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a Lineáris-hátralevő élettartam értékcsökkenés módszeréről nyújt tájékoztatást.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Manuális döntés konfigurálása munkafolyamatban
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogy hogyan kell konfigurálni a manuális döntés tulajdonságait.
 
@@ -252,73 +251,74 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket a m
 ## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Annak megadása, hogy mi történjen, amikor lejár a döntés
 Ha a felhasználó nem hozza meg a döntést a megadott idő alatt, lejár a döntés. A lejárt döntést eszkalálhatja, illetve automatikusan egy másik felhasználóhoz rendelheti jóváhagyás céljából. Kövesse az alábbi lépéseket a döntés eszkalálásához ha lejárt a döntés.
 
-1.  A bal oldali panelen kattintson az **Eszkalálás** gombra.
-2.  Válassza ki az **Eszkalációs útvonal használata** jelölőnégyzetet egy eszkalációs útvonal létrehozásához. A rendszer automatikusan hozzárendeli a döntést az eszkalációs útvonalon felsorolt felhasználókhoz. Például az alábbi táblázat egy eszkalációs útvonalat jelent.
-    | Sorozat | Eszkalációs útvonal            |
-    |----------|----------------------------|
-    | 1        | Hozzárendelés a következőhöz: Dóra           |
-    | 2        | Hozzárendelés a következőhöz: Ervin            |
-    | 3        | Végső művelet: \[Választható 1\] |
+1. A bal oldali panelen kattintson az **Eszkalálás** gombra.
+2. Válassza ki az **Eszkalációs útvonal használata** jelölőnégyzetet egy eszkalációs útvonal létrehozásához. A rendszer automatikusan hozzárendeli a döntést az eszkalációs útvonalon felsorolt felhasználókhoz. Például az alábbi táblázat egy eszkalációs útvonalat jelent.
 
-    Ebben a példában a rendszer Dórához rendeli a lejárt döntést. Ha Dóra nem hozza meg a döntést a kijelölt időkereten belül, a rendszer Ervinhez rendeli hozzá. Ha Ervin nem hozza meg a döntést a kijelölt időkereten belül, a rendszer a **\[Választható 1\]** lehetőséget választja ki döntésként.
-3.  A felhasználó eszkalációs útvonalhoz történő hozzáadásához, kattintson az **Újabb eszkalációs lépés** lehetőségre. Válasszon ki egy lehetőséget a következő táblázatban, majd ezt követően végezze el a további lépéseket a beállításhoz, mielőtt továbblép a 4. lépésre.
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Lehetőség</th>
-    <th>A döntéshez eszkalált felhasználók</th>
-    <th>További lépések</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Hierarchia</td>
-    <td>A meghatározott szervezeti hierarchiában lévő felhasználók.</td>
-    <td><ol>
-    <li>Miután kiválasztotta <strong>Hierarchia</strong> lehetőséget a <strong>Hierarchia kiválasztása</strong> lapon, a <strong>Hierarchia típusa</strong> listán, jelölje ki a döntéshez eszkalálni hierarchia típusát.</li>
-    <li>A rendszernek be kell olvasnia az felhasználó névtartományát a hierarchiából. Ezek a nevek a döntéshez eszkalálható felhasználókat jelölik. Végezze el a következő lépéseket azon felhasználók névtartományának kezdő- és végpontját, amelyet a rendszer beolvas: <ol>
-    <li>A kezdő pont megadásához válasszon ki egy személyt a <strong>Kezdet</strong> listából.</li>
-    <li>A végpont megadásához kattintson a <strong>Feltétel létrehozása</strong> lehetőségre. Ezt követően adja meg azt a feltételt, amely meghatározza, hogy a rendszer hol állítsa meg a hierarchiában a nevek beolvasását.</li>
-    </ol></li>
-    <li>A <strong>Hierarchia beállításai</strong> lapon adja meg, hogy mely, a tartományban szereplő felhasználókhoz kell a döntést eszkalálni: <ul>
-    <li><strong>Minden lekért felhasználó hozzárendelése</strong> – A tartományban szereplő összes felhasználóhoz eszkalálva van a döntés.</li>
-    <li><strong>Csak a legutóbb lekért felhasználó hozzárendelése</strong> – Csak a tartományban szereplő utolsó felhasználóhoz van eszkalálva a döntés.</li>
-    <li><strong>A következő feltételnek megfelelő felhasználók kihagyása</strong> – A döntés nincs eszkalálva a tartomány minden olyan felhasználójához, akik megfelelnek egy adott feltételnek. Kattintson a <strong>Feltétel hozzáadása</strong> lehetőségre, ha meg szeretné adni a feltételt.</li>
-    </ul></li>
-    </ol></td>
-    </tr>
-    <tr class="even">
-    <td>Munkafolyamat felhasználója</td>
-    <td>Az aktuális munkafolyamatban szereplő felhasználó</td>
-    <td><ul>
-    <li>Miután kijelölte <strong>Munkafolyamat-felhasználó</strong> lehetőséget a <strong>Munkafolyamat-felhasználó</strong> lapon a <strong>Munkafolyamat-felhasználó</strong> listából, jelöljön ki egy felhasználót, aki részt vesz a munkafolyamatban.</li>
-    </ul></td>
-    </tr>
-    <tr class="odd">
-    <td>Felhasználó</td>
-    <td>Adott Finance and Operations-felhasználók</td>
-    <td><ol>
-    <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
-    <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Finance and Operations-felhasználót tartalmazza. Válassza ki a döntéshez eszkalálni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+   | Sorozat | Eszkalációs útvonal            |
+   |----------|----------------------------|
+   | 1        | Hozzárendelés a következőhöz: Dóra           |
+   | 2        | Hozzárendelés a következőhöz: Ervin            |
+   | 3        | Végső művelet: \[Választható 1\] |
 
-4.  A **Határidő** lapon az **Időtartam** mezőben adja meg, hogy mennyi idő kell a felhasználónak a döntéshozatalhoz. Válasszon a következő lehetőségek közül:
-    -   **Órák** – Adja meg azon órák számát, amely alatt a felhasználónak meg kell hoznia a döntést. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
-    -   **Napok** – Adja meg azon napok számát, amely alatt a felhasználónak meg kell hoznia a döntést. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
-    -   **Hetek** – Adja meg azon hetek számát, amely alatt a felhasználónak meg kell hoznia a döntést.
-    -   **Hónapok** – Válassza ki, hogy melyik hét mely napjáig kell a felhasználónak meghoznia a döntést. Kérheti például, hogy a felhasználó a hónap harmadik hetének péntekéig hozza meg a döntést.
-    -   **Évek** – Válassza ki, hogy melyik hónap mely hetéig kell a felhasználónak meghoznia a döntést. Kérheti például, hogy a felhasználó december harmadik hetének péntekéig hozza meg a döntést.
+   Ebben a példában a rendszer Dórához rendeli a lejárt döntést. Ha Dóra nem hozza meg a döntést a kijelölt időkereten belül, a rendszer Ervinhez rendeli hozzá. Ha Ervin nem hozza meg a döntést a kijelölt időkereten belül, a rendszer a **\[Választható 1\]** lehetőséget választja ki döntésként.
+3. A felhasználó eszkalációs útvonalhoz történő hozzáadásához, kattintson az **Újabb eszkalációs lépés** lehetőségre. Válasszon ki egy lehetőséget a következő táblázatban, majd ezt követően végezze el a további lépéseket a beállításhoz, mielőtt továbblép a 4. lépésre.
+   <table>
+   <colgroup>
+   <col width="33%" />
+   <col width="33%" />
+   <col width="33%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Lehetőség</th>
+   <th>A döntéshez eszkalált felhasználók</th>
+   <th>További lépések</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td>Hierarchia</td>
+   <td>A meghatározott szervezeti hierarchiában lévő felhasználók.</td>
+   <td><ol>
+   <li>Miután kiválasztotta <strong>Hierarchia</strong> lehetőséget a <strong>Hierarchia kiválasztása</strong> lapon, a <strong>Hierarchia típusa</strong> listán, jelölje ki a döntéshez eszkalálni hierarchia típusát.</li>
+   <li>A rendszernek be kell olvasnia az felhasználó névtartományát a hierarchiából. Ezek a nevek a döntéshez eszkalálható felhasználókat jelölik. Végezze el a következő lépéseket azon felhasználók névtartományának kezdő- és végpontját, amelyet a rendszer beolvas: <ol>
+   <li>A kezdő pont megadásához válasszon ki egy személyt a <strong>Kezdet</strong> listából.</li>
+   <li>A végpont megadásához kattintson a <strong>Feltétel létrehozása</strong> lehetőségre. Ezt követően adja meg azt a feltételt, amely meghatározza, hogy a rendszer hol állítsa meg a hierarchiában a nevek beolvasását.</li>
+   </ol></li>
+   <li>A <strong>Hierarchia beállításai</strong> lapon adja meg, hogy mely, a tartományban szereplő felhasználókhoz kell a döntést eszkalálni: <ul>
+   <li><strong>Minden lekért felhasználó hozzárendelése</strong> – A tartományban szereplő összes felhasználóhoz eszkalálva van a döntés.</li>
+   <li><strong>Csak a legutóbb lekért felhasználó hozzárendelése</strong> – Csak a tartományban szereplő utolsó felhasználóhoz van eszkalálva a döntés.</li>
+   <li><strong>A következő feltételnek megfelelő felhasználók kihagyása</strong> – A döntés nincs eszkalálva a tartomány minden olyan felhasználójához, akik megfelelnek egy adott feltételnek. Kattintson a <strong>Feltétel hozzáadása</strong> lehetőségre, ha meg szeretné adni a feltételt.</li>
+   </ul></li>
+   </ol></td>
+   </tr>
+   <tr class="even">
+   <td>Munkafolyamat felhasználója</td>
+   <td>Az aktuális munkafolyamatban szereplő felhasználó</td>
+   <td><ul>
+   <li>Miután kijelölte <strong>Munkafolyamat-felhasználó</strong> lehetőséget a <strong>Munkafolyamat-felhasználó</strong> lapon a <strong>Munkafolyamat-felhasználó</strong> listából, jelöljön ki egy felhasználót, aki részt vesz a munkafolyamatban.</li>
+   </ul></td>
+   </tr>
+   <tr class="odd">
+   <td>Felhasználó</td>
+   <td>Adott Finance and Operations-felhasználók</td>
+   <td><ol>
+   <li>Miután kijelölte <strong>Felhasználó</strong> lehetőséget, kattintson a <strong>Felhasználó</strong> fülre.</li>
+   <li>A <strong>Rendelkezésre álló felhasználók</strong> lista az összes Finance and Operations-felhasználót tartalmazza. Válassza ki a döntéshez eszkalálni kívánt felhasználókat, majd ezt követően helyezze át ezeket a felhasználókat a <strong>Kijelölt felhasználók</strong> listájára.</li>
+   </ol></td>
+   </tr>
+   </tbody>
+   </table>
 
-5.  Ismételje meg a 3 – 4. lépést minden egyes olyan felhasználóra vonatkozóan, akiket hozzá kell adni az eszkalációs útvonalhoz. A felhasználók sorrendje módosítható.
-6.  Ha az eszkalációs útvonalban szereplő felhasználók nem hozzák meg a döntést a megadott időn belül, a rendszer hozza meg a döntést. A rendszer által kijelölt beállítás meghatározásához, válassza ki a **Művelet** sort, majd a **Művelet lezárása** fülön válasszon ki egy beállítást.
+4. A **Határidő** lapon az **Időtartam** mezőben adja meg, hogy mennyi idő kell a felhasználónak a döntéshozatalhoz. Válasszon a következő lehetőségek közül:
+   -   **Órák** – Adja meg azon órák számát, amely alatt a felhasználónak meg kell hoznia a döntést. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
+   -   **Napok** – Adja meg azon napok számát, amely alatt a felhasználónak meg kell hoznia a döntést. Ezt követően válassza ki a szervezet által használt naptárat, majd adja meg a szervezet munkahetének adatait.
+   -   **Hetek** – Adja meg azon hetek számát, amely alatt a felhasználónak meg kell hoznia a döntést.
+   -   **Hónapok** – Válassza ki, hogy melyik hét mely napjáig kell a felhasználónak meghoznia a döntést. Kérheti például, hogy a felhasználó a hónap harmadik hetének péntekéig hozza meg a döntést.
+   -   **Évek** – Válassza ki, hogy melyik hónap mely hetéig kell a felhasználónak meghoznia a döntést. Kérheti például, hogy a felhasználó december harmadik hetének péntekéig hozza meg a döntést.
+
+5. Ismételje meg a 3 – 4. lépést minden egyes olyan felhasználóra vonatkozóan, akiket hozzá kell adni az eszkalációs útvonalhoz. A felhasználók sorrendje módosítható.
+6. Ha az eszkalációs útvonalban szereplő felhasználók nem hozzák meg a döntést a megadott időn belül, a rendszer hozza meg a döntést. A rendszer által kijelölt beállítás meghatározásához, válassza ki a **Művelet** sort, majd a **Művelet lezárása** fülön válasszon ki egy beállítást.
 
 ## <a name="set-a-time-limit"></a>Időkorlát beállítása
 Kövesse az alábbi lépéseket, ha a döntést egy megadott időn belül kell meghozni. **Megjegyzés:** Az eljárásban kijelölt beállítások felülbírálják az oldal **Hozzárendelés** és **Eszkaláció** területén kijelölt beállításokat.

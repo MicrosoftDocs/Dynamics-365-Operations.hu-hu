@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a>Oldalak párhuzamos megjelenítése a Megnyitás új ablakban ikon használatával
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti, hogy hogyan jeleníthet meg lapokat egymás mellett a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 

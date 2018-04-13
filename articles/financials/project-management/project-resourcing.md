@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-resourcing"></a>Projekterőforrás
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a projekterőforrásokkal kapcsolatban tartalmaz információkat.
 

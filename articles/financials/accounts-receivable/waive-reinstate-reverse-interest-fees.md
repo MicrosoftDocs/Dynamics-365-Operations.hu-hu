@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Kamatok, díjak elengedése, visszaállítása vagy sztornírozása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ennek a cikknek a célja, hogy elmagyarázza a kamatok és díjak elengedésének, visszaállításának és fordított áfázásának folyamatát.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-management-home-page"></a>Pénzgazdálkodás kezdőlap
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations pénzgazdálkodással kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="create-service-objects"></a>Szolgáltatási objektumok létrehozása  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
    
 A szolgáltatási tárgyak a vevő azon eszközei és termékei, amelyhez szolgáltatást lehet elvégezni. 
 

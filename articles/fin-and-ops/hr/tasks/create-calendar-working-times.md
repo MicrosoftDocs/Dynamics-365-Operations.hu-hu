@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-calendar-and-generate-working-times"></a>Naptár létrehozása és munkaidők generálása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását. Ezzel az eljárással meghatározhat egy munkanaptárat egy munkaidősablon alapján. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.
 

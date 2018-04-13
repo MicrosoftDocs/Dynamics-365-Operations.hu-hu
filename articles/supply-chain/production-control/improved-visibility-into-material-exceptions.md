@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="visibility-into-material-exceptions"></a>Betekintés az anyagkivételekbe
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A **Termelési üzem kezelése** munkaterületen három csempe ad jobb betekintést a nyersanyagkivételekbe a termelési rendelések és a kötegrendelések esetében:
 

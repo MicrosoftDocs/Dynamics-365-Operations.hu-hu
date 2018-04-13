@@ -25,7 +25,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="learning-power-bi-content"></a>Tanulás Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti a **Tanulás** Microsoft Power BI-tartalmat.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="hybrid-customer-orders"></a>Hibrid vevői rendelések
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A hibrid vevői rendelés lehet egyetlen rendelés, amely az ügyfél által az üzletből kivihető termékeket tartalmaz, illetve tartalmazhat olyan termékeket, amelyek átvételére vagy kiszállítására később kerül sor.
 

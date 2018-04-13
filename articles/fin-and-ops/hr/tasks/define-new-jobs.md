@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-jobs"></a>Új feladatok meghatározása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat új feladat létrehozását célozza. Manuális bevitellel és sablon funkció használatával történő másolással történik. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez a feladat az emberi erőforrások szakértőihez szól.
 

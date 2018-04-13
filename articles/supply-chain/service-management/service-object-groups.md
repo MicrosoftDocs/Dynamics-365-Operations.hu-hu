@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-object-groups"></a>A szolgáltatás tárgyainak csoportjai 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Az objektumcsoportok jól használhatók az objektumadatok rendezésére és szűrésére a jelentéseknél és a statisztikáknál. Csoportosíthatja például a tárgyakat földrajzi hely vagy típus szerint.
 

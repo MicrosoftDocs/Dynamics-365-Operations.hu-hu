@@ -27,8 +27,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Elektronikus jelentéskészítés konfigurálása adatok Power BI-be történő lehívásához
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a Finance and Operations alkalmazásból a Power BI szolgáltatásokba. A jelen témakörben bemutatott példa Intrastat-tranzakciókat alkalmaz olyan üzleti adatokként, amelyeket át kell adni. A Power BI térképes megjelenítése ezt az Intrastat-tranzakciós adatot használja egy olyan nézet bemutatásához, amellyel egy vállalat importálási/exportálási tevékenységeit lehet elemezni a Power BI-jelentésben.
 
@@ -118,9 +117,9 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Power BI-jelentés létrehozása az új adatkészlet segítségével
 1. Kattintson az **importálás és exportálás részleteit** tartalmazó Power BI-adatkészletre, amelyet létrehozott. 
 2. Állítsa be a megjelenítést. Például válassza ki a **Kitöltött térkép** megjelenítést, és állítsa be a következőképpen:
- -   Rendelje hozzá a **OrszágEredet** adatkészlet-mezőt a térképes megjelenítés **Hely** mezőjéhez.
- -   Rendelje hozzá a **Mennyiség** adatkészlet-mezőt a térképes megjelenítés **Színtelítettség** mezőjéhez.
- -   Adja hozzá a **Tevékenység** és az **Év** adatkészlet-mezőt a térképes megjelenítés **Szűrők** mezőgyűjteményéhez.
+   -   Rendelje hozzá a **OrszágEredet** adatkészlet-mezőt a térképes megjelenítés **Hely** mezőjéhez.
+   -   Rendelje hozzá a **Mennyiség** adatkészlet-mezőt a térképes megjelenítés **Színtelítettség** mezőjéhez.
+   -   Adja hozzá a **Tevékenység** és az **Év** adatkészlet-mezőt a térképes megjelenítés **Szűrők** mezőgyűjteményéhez.
 
 3. Mentse el a Power BI-jelentést **importálás és exportálás részletezését tartalmazó jelentésként**. [![Importálás és exportálás részletezését tartalmazó jelentés](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Figyelje meg, hogy a térképen az Excel-fájlban megtalálható országok/régiók láthatók (Ausztria és Svájc ebben a példában). Ezeknek az országoknak/régióknak színei a számlázott összegek arányát is jelzik. 
 4. Frissítse az Intrastat-tranzakciók listáját. Az Olaszországból származó exporttranzakció is hozzáadásra kerül. [![Intrastat-tranzakciók listája](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 

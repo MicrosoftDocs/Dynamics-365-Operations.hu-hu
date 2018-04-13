@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quarantine-orders"></a>Karanténutasítások
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogy a karanténutasításokat hogyan lehet a készlet blokkolására használni.
 

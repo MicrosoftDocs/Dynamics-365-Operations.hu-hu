@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>Termelési rendelés becslése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezt a folyamatot az USMF bemutatócégen vagy saját adathalmaza használatával is elvégezheti. Mindkét esetben meg kell lennie a nyitott termelési rendelésnek, Létrehozva állapottal. Ez a második eljárás abból a hétből, amely bemutatja a termelési rendelés életciklusát.
 

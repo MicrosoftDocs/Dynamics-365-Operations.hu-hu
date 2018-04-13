@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-management"></a>Készletgazdálkodás 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A készletkezeléssel az alábbi feladatok végezhetők el:
 

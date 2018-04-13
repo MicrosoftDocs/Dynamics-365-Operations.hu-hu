@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Központosított kifizetések a Kötelezettségekhez
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egyetlen, minden kifizetést kezelő jogi személy alkalmazásával. Ebből adódóan ugyanazon kifejezést nem lehet több jogi személyben megadni. A cikk néhány példát mutat be, amelyek a különböző helyzetekben felmerülő központosított kifizetések feladási módjait jelenítik meg.
 

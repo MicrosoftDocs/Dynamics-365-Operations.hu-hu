@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Az elszámolóárra való átalakítás előfeltételei
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör az elszámolóárra való átalakítás futtatása előtt végrehajtandó feladatokat ismerteti. 
 

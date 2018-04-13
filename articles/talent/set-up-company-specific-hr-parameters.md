@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-company-specific-hr-parameters"></a>Vállalatfüggő HR-paraméterek beállítása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Az egyes emberi erőforrások (HR) paraméterek beállítása megosztott a vállalatok között, azonban vannak olyan paraméter beállítások, amelyek vállalatonként különböznek. Ez a cikk ismerteti a vállalat-specifikus HR paraméterek beállítását.
 

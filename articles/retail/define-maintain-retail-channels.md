@@ -29,8 +29,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="define-and-maintain-retail-channels"></a>A kiskereskedelmi csatornák definiálása és karbantartása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör a hagyományos üzlethelyiségek beállításának folyamatáról nyújt áttekintést (ezekre a Microsoft Dynamics 365 for Retail rendszer „kiskereskedelmi üzlet”-ként hivatkozik). A kiskereskedelmi üzlet beállítása előtt és után elvégzendő feladatokkal kapcsolatban is itt tájékozódhat.
 

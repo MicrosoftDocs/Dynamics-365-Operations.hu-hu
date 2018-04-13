@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelési elemzés Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a **Költségkönyvelési elemzés** Microsoft Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
@@ -111,18 +111,20 @@ A következő táblázat azt mutatja, hogyan használjuk a fő összesített mé
 
 A következő fő dimenziók szolgálnak szűrőként az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
 
-| Entitás                             | Példák attribútumokra                                                                                               |
+
+|               Entitás               |                                                Példák attribútumokra                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Költségkönyvelési főkönyvek            | Költségkönyvelési főkönyv                                                                                               |
-| Költség-ellenőrzőegységek                 | Költség-ellenőrzőegység neve                                                                                               |
-| Költségösszetevő-dimenziók            | Költségösszetevő-dimenzió neve, Költségösszetevő-dimenziótag neve, Költségösszetevő-dimenziótag leírása          |
-| Költségobjektum-dimenziók             | Költségösszetevő-dimenzió neve, Költségösszetevő-dimenziótag neve, Költségösszetevő-dimenziótag leírása              |
-| Statisztikai dimenziók             | Statisztikai dimenzió neve, Statisztikai dimenziótag neve, Statisztikai dimenziótag leírása              |
-| Költségobjektum dimenzióhierarchiái  | Költségobjektum dimenzióhierarchiájának neve, Költségobjektum dimenzióhierarchiájának szintje, Költségobjektum dimenzióhierarchiájának fája    |
+|      Költségkönyvelési főkönyvek       |                                                Költségkönyvelési főkönyv                                                |
+|         Költség-ellenőrzőegységek         |                                                Költség-ellenőrzőegység neve                                                |
+|      Költségösszetevő-dimenziók       |     Költségösszetevő-dimenzió neve, Költségösszetevő-dimenziótag neve, Költségösszetevő-dimenziótag leírása      |
+|       Költségobjektum-dimenziók       |       Költségösszetevő-dimenzió neve, Költségösszetevő-dimenziótag neve, Költségösszetevő-dimenziótag leírása        |
+|       Statisztikai dimenziók       |       Statisztikai dimenzió neve, Statisztikai dimenziótag neve, Statisztikai dimenziótag leírása        |
+| Költségobjektum dimenzióhierarchiái  |  Költségobjektum dimenzióhierarchiájának neve, Költségobjektum dimenzióhierarchiájának szintje, Költségobjektum dimenzióhierarchiájának fája   |
 | Költségösszetevő dimenzióhierarchiái | Költségelem dimenzióhierarchiájának neve, Költségelem dimenzióhierarchiájának szintje, Költségelem dimenzióhierarchiájának fája |
-| Statisztikai dimenzióhierarchiák  | Statisztikai dimenzióhierarchiája neve, Statisztikai dimenzióhierarchiája szintje, Statisztikai dimenzióhierarchia fája    |
-| Tranzakcióverziók               | Verzió neve                                                                                                         |
-| Pénzügyi naptárak                   | Naptár, Naptár leírása                                                                                       |
-| Pénzügyi évek                       | Naptári év                                                                                                        |
-| Pénzügyi időszakok                     | Naptári év időszak                                                                                                 |
+| Statisztikai dimenzióhierarchiák  |  Statisztikai dimenzióhierarchiája neve, Statisztikai dimenzióhierarchiája szintje, Statisztikai dimenzióhierarchia fája   |
+|        Tranzakcióverziók        |                                                     Verzió neve                                                     |
+|          Pénzügyi naptárak          |                                            Naptár, Naptár leírása                                            |
+|            Pénzügyi évek            |                                                    Naptári év                                                     |
+|           Pénzügyi időszakok           |                                                 Naptári év időszak                                                 |
+
 

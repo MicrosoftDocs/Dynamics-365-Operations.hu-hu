@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-entry-deadlines"></a>Rendelésbeviteli határidők
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk a rendelésbevitel határidőiről tartalmaz információkat. A rendelésbeviteli határidő, egy lezárási idő, amely meghatározza, hogy a vevői rendelés úgy lesz-e kezelve (és teljesítve), mintha az aktuális napon lett volna befogadva, vagy a következőn.
 

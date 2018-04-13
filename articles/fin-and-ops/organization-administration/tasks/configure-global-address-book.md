@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-the-global-address-book"></a>A globális címjegyzék konfigurálása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezekkel a lépésekkel beállíthatja az alapértelmezett értékeket és a globális címjegyzék biztonsági irányelveit. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-open-ended-question"></a>Kifejtős kérdés létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat. Azt megszabhatja, hogy a válasz szám, decimális, dátum, megjegyzés vagy más legyen. Ez az eljárás végigvezeti egy speciális kérdéstípus, a kifejtős kérdés létrehozásának folyamatán. Az eljárás megkezdéséhez ugorjon a Kérdőív > Tervezés > Kérdések lehetőségre. Ez az eljárás az USMF bemutatócéget használja.
 

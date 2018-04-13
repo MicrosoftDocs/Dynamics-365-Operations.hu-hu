@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>Kiadott alaptermék alapbeállításának kitöltése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan kell elvégezni azt a minimális beállítást, amely szükséges ahhoz, hogy az alapterméket használni lehessen az Anyagjegyzék-verziókban.
 

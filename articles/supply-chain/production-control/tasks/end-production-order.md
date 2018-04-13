@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="end-a-production-order"></a>Termelési rendelés befejezése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet termelési rendelést befejezni. Ez az eljárás az USMF bemutatócéget használja. Ez az utolsó eljárás abból a hétből, amely bemutatja a termelési rendelés életciklusát.
 

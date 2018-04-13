@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a>Társtermékek másolása meglévő receptúraverzióból
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan másolhat társtermékeket egy már meglévő receptúraverzióból egy másik receptúraverzióba egy kiadott termékre vonatkozóan. Az az előfeltétele, hogy legalább egy receptúraverziót társítani kell a társtermékekkel. Ez az eljárás az USP2 bemutatócéget használja.
 

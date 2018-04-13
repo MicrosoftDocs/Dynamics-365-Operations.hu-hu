@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>Költségjelentés megtekintése
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Lekérdezés futtatásakor tranzakció megjelenítésére a főkönyvből vagy a beszerzés és forrásból előfordulhat, hogy a lekérdezés túl sok információ ad vissza. Ezért érdemes a keresést szűkíteni. A szükséges információ eléréséhez lefúrhat a tranzakcióig, hogy megtekintse a költségjelentést, amelyen megjelent.
 

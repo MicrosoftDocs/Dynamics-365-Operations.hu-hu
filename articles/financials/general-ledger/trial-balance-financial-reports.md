@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>Főkönyvi kivonat pénzügyi jelentés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a főkönyvi kivonatok alapértelmezett jelentéseit mutatja be. Ismerteti továbbá azokat az építőelemeket, amelyek ezekhez a jelentésekhez kapcsolódnak, illetve beszámol arról, hogy miként módosíthatja a jelentéseket, hogy azok megfeleljenek az üzleti követelményeinek. 
 
@@ -99,7 +98,7 @@ Minden egyes főkönyvi kivonati jelentés külön oszlopdefiníciót használ. 
     -   **FD** – A előző évre csak kötelezettségeket tartalmazó pénzügyi adatok
     -   **FD** – A előző évre csak jóváírásokat tartalmazó pénzügyi adatok
 
- 
+
 
 <a name="see-also"></a>Lásd még
 --------

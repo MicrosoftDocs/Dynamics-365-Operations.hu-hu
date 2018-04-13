@@ -27,12 +27,12 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-journal-reports"></a>Készletnapló-jelentések
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.
 
 Egy adott jelentés és naplótípus közötti kapcsolat beállításához a **Készletnaplónevek** oldalon (**Készletgazdálkodás** &gt; **Beállítás** &gt; **Naplónevek** &gt; **Készlet**) adja meg a jelentés nevét. **Megjegyzés:** támogatott konfigurációk beállításához töltse le a szükséges elektronikus jelentési konfigurációkat. További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Az alábbi táblázatban példák találhatók Európában támogatott konfigurációjú készletjelentésekre.
+
 |                    |                                     |                  |                                         |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
 | **Ország**        | **Jelentés leírása**              | **Napló típusa** | **Formátum-hozzárendelés neve**                 |

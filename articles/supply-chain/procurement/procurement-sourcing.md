@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-home-page"></a>Beszerzési és forrásparaméterek kezdőlapja
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a Beszerzés és forrás modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel.
 

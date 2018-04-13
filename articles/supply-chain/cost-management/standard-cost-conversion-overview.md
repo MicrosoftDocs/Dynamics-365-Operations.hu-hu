@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="standard-cost-conversion-overview"></a>Átalakítás elszámolóárra – áttekintés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ezen cikk tájékoztatást nyújt arról, hogy hogyan lehet beállítani és futtatni az elszámolóár-átalakítást. Miután elvégezte az elszámolóárra való átalakítás előfeltételeit végre kell hajtania a felsorolt lépéseket. 
 

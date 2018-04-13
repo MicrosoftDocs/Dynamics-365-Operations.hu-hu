@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="define-coverage-rules-for-items"></a>Cikkek fedezeti szabályainak meghatározása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás bemutatja, hogyan tud fedezeti szabályokat létrehozni és egy adott cikk fedezeti beállításait felülírni. Azt is bemutatja, hogyan kell megadni az alapértelmezett készletbeállításokat.
 

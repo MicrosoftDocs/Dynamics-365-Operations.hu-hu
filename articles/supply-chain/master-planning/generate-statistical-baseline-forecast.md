@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Statisztikai kiinduló előrejelzés generálása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk az igény-előrejelzés számítása során használt paraméterekről és szűrőkről nyújt tájékoztatást. 
 

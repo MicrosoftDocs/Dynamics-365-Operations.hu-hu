@@ -25,8 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="data-validation-workspace"></a>Adatellenőrzési munkaterület
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör betekintést nyújt az **Adatellenőrzési ellenőrzőlista munkaterületébe** és az ehhez társított beállításokba.
 

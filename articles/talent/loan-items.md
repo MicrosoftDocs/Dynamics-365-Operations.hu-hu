@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-items-lent-to-workers"></a>A dolgozóknak kölcsönzött cikkek kezelése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A kölcsöncikkek olyan rekordok, amelyek segítik a menedzsert a cég által a munkavállalók számára kölcsönadott tényleges cikkkek követésében. 
 
@@ -51,7 +50,7 @@ A vezetők megtekinthetik a közvetlen jelentések közvetlen cikkeit. Megkaphat
 
 Ha egy tétel megsérül vagy rossz helyre kerül, adjon meg egy fiktív visszaadási rekordot. Ezután vagy törölje a cikket, vagy tartsa meg az áttekintésben, de a leírásában jelezze, hogy nem áll rendelkezésre.
 
- 
+
 <a name="see-also"></a>Lásd még
 --------
 

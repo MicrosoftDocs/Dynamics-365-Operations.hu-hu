@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-fixed-compensation-plans"></a>Fix kompenzációs konstrukciók létrehozása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
 

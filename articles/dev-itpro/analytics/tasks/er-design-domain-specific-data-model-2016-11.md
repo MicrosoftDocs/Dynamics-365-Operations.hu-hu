@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="design-a-domain-specific-data-model-for-electronic-reporting-er"></a>Tartományspecifikus adatmodell tervezése elektronikus jelentéskészítéshez (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy új Elektronikus jelentés (ER) konfigurációt, amely tartalmazza az Elektronikus fizetési dokumentumok adatmodelljét. Ezt az adatmodellt később adatforrásként használja a fizetési dokumentumok formátumának létrehozásakor.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personnel-actions-faq"></a>Személyzeti műveletek [GYIK]
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie. Számos feladat megköveteli személyzeti műveletek elvégzését, pédául az új beosztások létrehozása, a meglévő beosztások értékeinek módosítása, új dolgozók felvétele, dolgozók átvétele, dolgozók kompenzációjának módosítása, beosztás-hozzárendelések módosítása, illetve a felmondások.
 
@@ -64,9 +64,9 @@ Nyissa meg bármelyik személyzeti művelet listaoldalát, majd válasszon egy m
 Ha egy személyzeti műveleti kérelem sikertelen, az alábbi lépésekkel tudja megoldani a hibát és újraküldeni a kérelmet:
 
 > 1. A **Műveleti ablaktáblában** kattintson a **Hibaüzenet** gombra a hibaüzenet szövegének megtekintéséhez.
-
+> 
 > 2. A **Műveleti ablaktáblában** az **Újraaktiválása** gombra kattintva betöltheti a legutóbbi információkat, és a személyzeti műveletet visszaállíthatja **Tervezet** állapotba.
-
+> 
 > 3. Oldja meg a hibát, majd kattintson a **Befejezés** vagy a **Küldés** opcióra.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Mi történik a munkafolyamatot használó személyzeti műveletekkel a végleges jóváhagyás után?

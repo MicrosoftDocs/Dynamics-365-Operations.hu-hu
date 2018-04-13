@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-cash-denominations-for-pos"></a>Készpénzcímletek konfigurálása a POS számára
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 A háttérirodában meghatározható a pénztárosok, értékesítési munkatársak és a vezetők által az üzletben levő POS modulban használandó bankjegyek és érmék készpénzcímlete. Az ilyen címletek felhasználhatók a napvégi készpénzszámlálási fizetőeszköz-elszámolások vagy egy gyors értékesítés fizetése során.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Költségkönyvelési terminológia
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a költségkönyveléshez használt kulcskifejezéseket határozza meg.
 
@@ -150,14 +149,14 @@ A képletletöltési bázisok lehetővé teszik, hogy meghatározzuk a fejlett k
 |  + |  Hozzáadás |
 |  – |  Kivonás |
 | *  | szorzás  |
-    
+
 A hagyományos HA állítások nem támogatottak. Létrehozhat azonban állításokat, és ellenőrizheti, hogy igazak-e.
 
 |  **Kivonat érvényesítése** | **Eredmény**  |
 |---|---|
 |  a > b| Igaz  |
 |  a > b |  Hamis |
-    
+
 **Járulékos költség**
 
 A járulékos költségek a vállalat működésének folyamatos költségeire vonatkoznak. Olyan költségek, amelyeket nem lehet közvetlenül adott üzleti tevékenységekhez kapcsolni. Az alábbiakban néhány példa látható a járulékos költségekre:

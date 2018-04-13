@@ -28,7 +28,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Értékesítési és nyereségességi teljesítmény Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör azt ismerteti, mit tartalmaz az **Értékesítési és a jövedelmezőségi teljesítmény** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 

@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-tag-counting"></a>Készletcímke számlálása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ez a cikk tájékoztatást ad a címkeszámlálásról, ami akkor használatos, amikor egy raktár tényleges tartalmát hasonlítja össze az aktuális készlettel.
 

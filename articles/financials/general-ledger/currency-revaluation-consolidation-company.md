@@ -28,10 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Devizaátértékelés konszolidált vállalatban
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ha egy könyvelési pénznemből egy másikba konszolidál adatokat és változik az árfolyam, devizaátértékelést kell futtatnia, hogy a számlaegyenlegek átértékelése megfelelően történjen. Az adatok eredeti konszolidációja során használja a **Devizaátváltás** lapot, ahol kiválaszthatja a kezdeti árfolyamot a konszolidációs folyamat kezdeti átváltásához. Ha új árfolyamot ad meg (például következő hónapban), át kell értékelnie a számlaegyenlegeket. A nem realizált nyereség vagy nem realizált veszteség ezután az új árfolyamnak és dátumnak megfelelően frissül. Az alábbi példa a könyvelés bejegyzéseket mutatja be, amelyek egy ilyen folyamat során létrejönnek.
 
@@ -52,6 +49,7 @@ Ha egy könyvelési pénznemből egy másikba konszolidál adatokat és változi
 | 2015/11/10 | 130100 – kinnlevőségek | dollár      | -500   |
 
 ## <a name="exchange-rates"></a>Árfolyamok
+
 | Kezdő pénznem | Célpénznem | Kezdő dátum | Árfolyam |
 |---------------|-------------|------------|---------------|
 | HUF           | dollár         | 2015/1/10  | 200           |

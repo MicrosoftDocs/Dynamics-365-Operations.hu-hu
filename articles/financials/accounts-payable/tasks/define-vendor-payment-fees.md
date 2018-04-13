@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-fees"></a>Szállítói kifizetési díjak meghatározása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Szállítói kifizetési díjak beállítása. Ez a feladat az USMF bemutatócéget használja.
 

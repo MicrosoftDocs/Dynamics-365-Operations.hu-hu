@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="organizations-and-organizational-hierarchies"></a>Szervezetek és szervezeti hierarchiák
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Egy szervezet olyan emberek csoportja, akik valamely üzleti folyamat végrehajtása vagy egy cél elérése érdekében együtt dologoznak Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatotat jelölik.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>Minőségkezelési folyamatok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a nem megfelelő termékekre vonatkozó minőségkezelési folyamatról nyújt tájékoztatást. a minőségellenőrzési funkció használatát, továbbá a szabálytalanságok meghatározásának, karbantartásának, illetve a helyesbítések kezelésének módját írja le.
 

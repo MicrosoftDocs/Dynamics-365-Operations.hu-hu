@@ -27,8 +27,7 @@ ms.lasthandoff: 11/06/2017
 
 # <a name="new-or-updated-task-guides-august-2016"></a>Új vagy frissített feladat-útmutatók (2016. augusztus)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A témakör felsorolja a Microsoft Dynamics AX (2016. augusztus – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>Szervezeti hierarchia megtervezése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Szervezetek és szervezeti hierarchiák beállítása előtt a Microsoft Dynamics 365 for Finance and Operations programban, győződjön meg arról, hogy megtervezi, hogyan lehet modellezni vállalatát. A szervezeti modellnek jelentős hatása van a Microsoft Dynamics 365 for Finance and Operations és az üzleti folyamatok végrehajtására. 
 
@@ -158,7 +157,7 @@ Ha a törvények és a könyvelési szabályok eltérnek az országok/területek
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Ha a szervezet üzemi egységként van modellezve 
 Ha a törvények és a könyvelési szabályok ugyanazok az országokban/területeken, ahol a szervezetek találhatók, szükség lehet egységes év végi eljárásokra. Ez azt jelenti, hogy a szervezeteket működési egységekként modellezheti. Az összes üzemi egységnek ugyanazt az év végi zárási eljárást kell használnia. 
-   
+
 ### <a name="number-sequences"></a>Számsorozatok
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Ha a szervezet jogi személyként van modellezve
 A hivatkozásokhoz számsorozatok állíthatók be jogi személyenként. Egyes számsorozatok megoszthatók. 

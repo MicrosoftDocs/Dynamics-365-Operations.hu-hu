@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-control-overview"></a>Költségkontroll áttekintése 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A **Költségkontroll** munkaterület központi pont, ahol a menedzserek, akik felelősek egy költségobjektum vagy egy költségobjektum-készlet egy dimenzióban vagy dimenziókon (pl. költségközpontok és termékcsoportok) belüli vezérléséért, hozzáférhetnek a jelentésekhez. A munkaterületen lévő jelentéseket teljes mértékben költségkönyvelők kezelik, így a jelentéskészítéshez használt elrendezés és adatok konzisztensek lehetnek az egész szervezeten belül.
 

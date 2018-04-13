@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a>Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit. Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók. A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg. Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics AX programba. Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat. Ez az eljárás a Microsoft Dynamics AX rendszerre vonatkozhat. Ne feledje, hogy a Dynamics AX új neve Microsoft Dynamics 365 for Operations.
 

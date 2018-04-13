@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-production-flow-models"></a>Termelési folyamatmodellek meghatározása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A termelési folyamatmodellek írják le, hogyan kell kiszámítani és karban tartani a lean manufacturing munkacelláinak kapacitását. Ennek megfelelően a termelési folyamatmodell meghatározása előfeltétele a munkacellák meghatározásának. Ez az eljárás az USMF bemutatócéget használja.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="customer-payments-for-a-partial-amount"></a>Vevői kifizetések részösszegre
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Bizonyos esetekben a vevő kisebb összeget fizet ki, mint a számlán szereplő összeg. Ez a cikk az ilyen helyzetek megoldásait taglalja. Az Ön számára elérhető beállítások az ön üzleti igényeitől és konfigurációitól függenek.
 

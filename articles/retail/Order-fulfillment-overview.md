@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="store-order-fulfillment"></a>Rendelésteljesítés az üzletben
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Számos kiskereskedő szeretné optimalizálni a rendelésteljesítést a rendelések teljesítésének engedélyezésével az üzletek számára. A rendelésteljesítés az üzlet szintjén segíthet megkönnyíteni a túlkészletezési helyzeteket az egyes üzletek esetében, vagy logisztikai szempontból lehet szükség rá, amennyiben egy üzletnek extra kapacitása van, vagy a vevőhöz közelebb van szállítási távolság szempontjából. A szükséglet megoldása érdekében egy egységes rendelésteljesítési művelet érhető el pénztárban.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="overhead-calculation"></a>Járulékos költség számítása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a járulékos költségek kiszámításának és allokálásának jellemző folyamatait írja le.
 

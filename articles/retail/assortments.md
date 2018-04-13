@@ -23,7 +23,7 @@ ms.lasthandoff: 03/12/2018
 ---
 
 # <a name="assortment-management"></a>Szortiment kezelése
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Áttekintés
 A Microsoft Dynamics 365 for Retail *szortimenteket* tartalmaz, amelyekkel csatornákon keresztül kezelhető a termékek elérhetősége. A szortimentek határozzák meg, hogy mely termékek érhetők el bizonyos üzletekben, és egy adott időszakban.

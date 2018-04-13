@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="exchange-rate-calculation-hungary"></a>Árfolyamszámítás (Magyarország)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán. 
 

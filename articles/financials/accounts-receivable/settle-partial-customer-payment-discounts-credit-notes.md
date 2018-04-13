@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Részleges szállítói kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk végigvezeti egy eseten, ahol készpénzfizetési engedményt vonnak le egy jóváírásból úgy, hogy az eredeti számla is rendelkezett készpénzfizetési engedménnyel. 
 

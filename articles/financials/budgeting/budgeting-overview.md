@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-home-page"></a>Költségvetés kezdőlap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör áttekintést ad a Finance and Operations rendszerben elérhető költségvetési funkció összetevőiről, a költségvetési eszközökről, valamint a jelentéskészítési lehetőségekről. 
 

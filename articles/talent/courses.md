@@ -28,8 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Tanfolyamok beállítása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Az emberi erőforrások-rendszergazdák és a vezetők a tanfolyamok szolgáltatások segítségével karbantartják a dolgozóknak nyújtott képzések információit.
 
@@ -81,15 +80,15 @@ Az alábbi táblázat felsorolja azokat a tanfolyamok háromféle beállítása.
 
 ## <a name="course-tasks"></a>Tanfolyami tevékenységek
 Például a következő műveleteket végezheti:
--   Résztvevők regisztrálása
--   A regisztráció határidejének beállítása
--   A résztvevők minimális és maximális számának beállítása
--   A tanfolyam helyszínének és tantermének kiválasztása
--   Ajánlott szállodák a tanfolyam résztvevőinek
--   A tanfolyam leírásának létrehozása, amelyet közzé lehet tenni az Alkalmazott önkiszolgáló rendszerben
+- Résztvevők regisztrálása
+- A regisztráció határidejének beállítása
+- A résztvevők minimális és maximális számának beállítása
+- A tanfolyam helyszínének és tantermének kiválasztása
+- Ajánlott szállodák a tanfolyam résztvevőinek
+- A tanfolyam leírásának létrehozása, amelyet közzé lehet tenni az Alkalmazott önkiszolgáló rendszerben
 
   >**Megjegyzés** Csak akkor törölhet egy tanfolyamot, ha nincs hozzá regisztráció. 
-    
+
 ## <a name="course-statuses"></a>Tanfolyam állapota
 Az alábbi táblázat felsorolja a tanfolyam lehetséges állapotok és a műveleteket hajthatja végre, ha a tanfolyamhoz meghatározott állapota.
 

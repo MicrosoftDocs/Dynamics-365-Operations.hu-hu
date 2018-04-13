@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Konszolidációs csoportok és további konszolidációs számlák létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet konszolidációsszámla-csoportot létrehozni, majd fiókokat hozzáadni a csoporthoz. Ez az eljárás az USMF bemutatócéget használja.
 

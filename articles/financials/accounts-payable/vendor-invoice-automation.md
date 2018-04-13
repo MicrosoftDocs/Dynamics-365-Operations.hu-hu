@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="vendor-invoice-automation"></a>Szállítói számla automatizálása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör azokat a funkciókat mutatja be, amelyek a szállítói számlák végponttól végpontig történő automatizálására érhetők el, még a mellékleteket tartalmazó számlák esetében is.
 

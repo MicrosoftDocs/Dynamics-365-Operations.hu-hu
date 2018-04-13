@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="exchange-rate-adjustments"></a>Árfolyam-korrekciók
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti az árfolyam-korrekció funkciót az Észtországban, Magyarországon, a Cseh Köztársaságban, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek felhasználói számára.
 
@@ -53,18 +52,21 @@ Ebben a példában a kanadai dollár (CAD) amerikai dollárra (USD) történő �
 -   2013. január 3.: 420,0000
 
 ### <a name="invoice"></a>Számla
+
 | Dátum                             | Tartozik/követel | Összegek               | Főkönyvi számla    | Tranzakció típusa             | Feladás típusa       | Jóváírás | Korrekció |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 | 12-dec-1                         | Tartozik        | 10 000 CAD/40 000 USD | Kinnlevőségek                             | Számla                      | Vevői egyenleg   |        |            |
 | 12-dec-1                         | Jóváírás       | 10 000 CAD/40 000 USD | Ellenoldal                         | Számla                      | Főkönyvi napló     | X      |
 
 ### <a name="payment"></a>Fizetés
+
 | Dátum                             | Tartozik/követel | Összegek               | Főkönyvi számla    | Tranzakció típusa             | Feladás típusa       | Jóváírás | Korrekció |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 | 13-jan-3                         | Tartozik        | 10 000 CAD/42 000 USD | Ellenoldal                         | Fizetés                      | Főkönyvi napló     |        |            |
 | 13-jan-3                         | Jóváírás       | 10 000 CAD/42 000 USD | Kinnlevőségek                             | Fizetés                      | Vevői egyenleg   | X      |            |
 
 ### <a name="settlement"></a>Kiegyenlítés
+
 | Dátum                             | Tartozik/követel | Összegek               | Főkönyvi számla    | Tranzakció típusa             | Feladás típusa       | Jóváírás | Korrekció |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 |2013. január 3. (= kifizetési dátum) | Tartozik        | 0 CAD/2 000 USD       | Kinnlevőségek                             | Vevő                     | Árfolyamnyereség |        |            |
@@ -80,7 +82,7 @@ Az átértékelési példában figyelje meg, hogy a 2013. január 3-i bejegyzés
 | 12-dec-31           | Jóváírás       | 0 CAD/5 000 USD       | Nem realizált árfolyam-korrekciós nyereség | Devizaátértékelés | Árfolyamnyereség | X      |            |
 | 13-jan-3            | Tartozik        | 0 CAD/5 000 USD       | Kinnlevőségek                             | Devizaátértékelés | Árfolyamnyereség |        | X          |
  13-jan-3            | Jóváírás       | 0 CAD/5 000 USD       | Nem realizált árfolyam-korrekciós nyereség | Devizaátértékelés | Árfolyamnyereség | X      | X          |
- 
+
 
 ### <a name="revaluation-invoice-date-method-date--january-1-2013"></a>Átértékelés (Számlázás dátuma mód; dátum = 2013. január 1.)
 Az átértékelésben figyelje meg, hogy a 2013. január 1-i bejegyzés a fölötte levő bejegyzés (2013. január 3.) közvetlen sztornírozása. Még a főkönyvi számlák és a feladási típusok is megegyeznek. Ezenkívül figyelje meg, hogy a **Helyesbítés** jelző van beállítva.

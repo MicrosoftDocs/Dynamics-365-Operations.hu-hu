@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="handling-cash-discounts-for-overpayments"></a>Készpénzfizetési engedmény kezelése túlfizetések esetén
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk azokat az eseteket mutatja be, amelyek megmutatják a fizetés kezelésének módját, amikor a felhasználó a készpénzfizetési engedményt tesz, de a túlfizetés esetében is. 
 

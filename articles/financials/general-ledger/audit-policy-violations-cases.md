@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="audit-policy-violations-and-cases"></a>A könyvvizsgálati irányelvmegsértések és esetek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja, hogyan jönnek létre a naplózási ügyek a naplózási irányelvszabályok megsértése által. Információkat tartalmaz továbbá arról, hogyan alkalmazzák a naplózási irányelvek a dokumentumok határidő-intervallum szerinti kiválasztását.
 

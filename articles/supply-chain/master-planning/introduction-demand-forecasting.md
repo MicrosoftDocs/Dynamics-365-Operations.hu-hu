@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Az igény-előrejelzés értékesítési rendelésekből származó független igények előrejelzésére, valamint a vevői rendelések bármely szétválasztási pontjára vonatkozó függő igények előrejelzésére használható. A továbbfejlesztett, igény-előrejelzést redukáló szabályok ideális megoldást kínálnak a tömeges egyéniesítéshez.
 

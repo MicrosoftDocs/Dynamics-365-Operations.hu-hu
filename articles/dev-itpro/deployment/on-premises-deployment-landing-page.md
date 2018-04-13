@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="on-premises-deployment-home-page"></a>On-premises telepítés kezdőlap
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise alkalmazást (on-premises). Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.
 

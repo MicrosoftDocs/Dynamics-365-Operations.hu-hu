@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a>A létrehozott formátum adatmodell-elemekhez történő hozzárendelése elektronikus jelentéskészítéshez (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Az alábbi eljárás azt mutatja, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörű felhasználó miként képezhet le adatmodellelemeket a létrehozott elektronikusjelentési-konfigurációra, amely egy elektronikus dokumentumformátumot határoz meg a kifizetések üzleti tartománya számára. A formátumot a rendszer később elektronikus dokumentumok létrehozására használja majd a kifizetések feldolgozásához. Ebben a példában egy formátumkonfigurációt hozunk létre a Litware, Inc. mintavállalat számára. Ezeket a lépéseket a vállalat között megosztott ER konfigurációjaként minden vállalatnál végrehajthatja. Ezeknek a lépéseknek a végrehajtásához először hajtsa végre az „Új formátumkonfiguráció létrehozása” feladat-útmutató lépéseit.
 

@@ -28,14 +28,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Előlegszámlák és előlegek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírásokat és összehasonlításokat tartalmaz a két módszerről, amelyeket a szervezetek használhatnak az előzetes kifizetésekhez (előlegek). Az egyik módszerben Ön létrehoz egy előlegszámlát, amely társítva van a beszerzési rendeléssel. A másik módszerben Ön előlegnapló-bizonylatokat hoz létre, naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatnak jelölésével.
 
 Előfordulhat, hogy egyes szervezetek előlegeket (előzetes kifizetéseket) adnak ki szállítóknak árukért vagy szolgáltatásokért azok átvétele, illetve teljesítése előtt. Szállítói előlegek kiadására kétféle módszer használható. A kockázat minimálisra csökkentése érdekében az előleg beszerzési rendelésben való definiálásával nyomon követheti az előlegeket. Ehhez a módszerhez létre kell hoznia egy beszerzési rendeléshez társított előlegszámlát. A módszert előlegszámlázásnak nevezzük. Azok a szervezetek, amelyek nem kívánják az előlegeket ilyen szorosan nyomon követni vagy nem kapnak a szállítójuktól előlegszámlát, az előlegszámlázás módszere helyett használhatnak előlegnapló-bizonylatokat. Előlegnapló-bizonylatokat naplóbejegyzések létrehozásával és azok előlegnapló-bizonylatként való megjelölésével hozhat létre. Ezzel a módszerrel nem követhető, hogy mely szállítói előleg mely beszerzési rendelés alapján kerül kifizetésre. Azonban egy beszerzési rendelés alapján kiegyenlítésre jelölhet egy feladott előleget.
 
 ## <a name="when-to-use-prepayment-invoicing-vs-prepayments"></a>Előlegszámlázás és előlegek – mikor használjuk?
+
 | Előlegszámlázás                                                                | Előlegek                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Az előleg értéke meg van határozva a beszerzési rendelésen.                                    | Nincs meghatározva az előleg értéke a beszerzési rendelésen.                    |

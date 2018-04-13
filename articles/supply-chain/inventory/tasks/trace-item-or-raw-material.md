@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="trace-an-item-or-raw-material"></a>Egy cikk vagy egy alapanyag nyomon követése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy a cikk-követéssel, hogyan lehet azonosítani, hogy hol használtak vagy használnak egy adott cikket vagy nyersanyagot. Ezzel az eljárással azonosíthat egy cikket, visszakövetheti a forráshoz, majd onnan előre követheti a termelésen és a késztermék értékesítésén keresztül. A folyamat segítségével kivizsgálhatók az érintett ügyfelek és értékesítési rendelések, illetve még több minden más is. Ez az eljárás az USP2 bemutatócéget használja.
 

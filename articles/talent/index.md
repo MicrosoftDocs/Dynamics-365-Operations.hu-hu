@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Üdvözöljük a Microsoft Dynamics 365 for Talent rendszerben
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 for Talent rendszer segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezen folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez.
 

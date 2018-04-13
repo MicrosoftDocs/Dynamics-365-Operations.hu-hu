@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Felhasználó preferált időzónájának beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A következő eljárás bemutatja, hogy egy rendszergazda szerepkörű felhasználó hogyan állíthatja be az időzónát egy felhasználó számára.
 

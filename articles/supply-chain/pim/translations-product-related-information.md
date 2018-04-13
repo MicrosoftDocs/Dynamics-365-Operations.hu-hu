@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Termékekkel kapcsolatos GYIK
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan kell kezelni a termékek, termékdimenzió értékek és termékattribútumok fordításait. 
 
@@ -95,8 +94,7 @@ Ha a vevő meg kíván vásárolni néhány kis méretű, piros pólót, a pól�
 <tbody>
 <tr class="odd">
 <td>Az ügyfél által kívánt nyelv beállításához kövesse az alábbi lépéseket:
-<ol>  
-<li>Kattintson az <strong>Értékesítés és marketing</strong> &gt; <strong>Közös</strong> &gt; <strong>Vevők</strong> &gt; <strong>Minden</strong> <strong>vevő</strong> elemre.</li>
+<ol><br/><li>Kattintson az <strong>Értékesítés és marketing</strong> &gt; <strong>Közös</strong> &gt; <strong>Vevők</strong> &gt; <strong>Minden</strong> <strong>vevő</strong> elemre.</li>
 <li>A <strong>Vevők</strong> lap megnyitásához kattintson duplán egy vevőre. Az <strong>Általános</strong> lap <strong>Nyelv</strong> mezőjében válassza ki a <strong>nyelvet</strong>.</li>
 </ol></td>
 </tr>

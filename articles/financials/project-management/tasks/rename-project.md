@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>A projektfokozatok átnevezése és módosítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A projektfokozatok a projektek életciklusának állomásait jelzik. Meghatározhatja azokat a projektfokozatokat, amelyeket szerepeltetni kíván projektjeiben a Projektvezetési és könyvelési paraméterek oldal Projektfokozat területén. A Dynamics 365 for Finance and Operations öt előre meghatározott projektfokozatot és három felhasználó által meghatározott fokozatot tartalmaz. Frissítheti az Ön által használt projektfokozatok nevét a projektek nyomon követése érdekében. Felhasználó által definiált állapotok neveit is megadhatja. A feladat bemutatja, hogyan nevezzen át vagy módosítson egy projektszintet, és az USSI adatkészletet használja.
 

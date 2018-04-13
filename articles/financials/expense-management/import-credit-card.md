@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>Hitelkártya-tranzakciók importálása és karbantartása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A költségjellegű hitelkártya-tranzakciókat be lehet úgy állítani, hogy importálásuk ismétlődő ütemezés szerint automatikusan megtörténjen. Másik lehetőségként a tranzakciók manuálisan is importálhatók szükség szerint. A hitelkártya-tranzakciók importálása a Hitelkártya-tranzakciók adatentitáson keresztül történik.
 

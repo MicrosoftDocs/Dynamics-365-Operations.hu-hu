@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="retail-hierarchies"></a>Kiskereskedelmi hierarchiák
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a cikk a Microsoft Dynamics 365 for Retail kiskereskedelmi hierarchiáit írja le.
 

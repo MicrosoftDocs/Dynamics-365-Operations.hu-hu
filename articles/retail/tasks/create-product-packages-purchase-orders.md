@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Termékcsomagok létrehozása beszerzési rendelések
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan hozhat létre termékcsomagot, illetve hogyan használhatja azt beszerzési rendelésen. A beszerzési rendelés egy előre meghatározott termékköre vonatkozó megrendeléshez használható. Ez az eljárás az USRT bemutatócéget használja.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="outbound-process"></a>Kimenő folyamat
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a Készletkezelés kimenő folyamatairól nyújt áttekintést.
 

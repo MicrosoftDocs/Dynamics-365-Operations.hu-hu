@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-feedback"></a>Termelési visszajelzés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk információt biztosít a termékvisszajelzéssel kapcsolatban. A termékvisszajelzés termelési feladatokkal kapcsolatos visszajelzésekkel szolgál a munkások részére. A cikk a termelési visszajelzés frissítésének számos módjáról szolgál információval.
 

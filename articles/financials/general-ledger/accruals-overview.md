@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accruals-overview"></a>Könyvelések áttekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk leírást ad a könyveléseket illetően és információt biztosít azok beállításairól és a tranzakciók létrehozásáról.
 

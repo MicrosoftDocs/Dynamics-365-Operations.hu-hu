@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Költségszabályok
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Fel lehet állítani a dolgozók által követendő irányelveket (szabályokat) a költségjelentések és utazásigénylések benyújtására vonatkozóan.         
 A költségirányelvek bevezetése segítséget nyújthat a hatékony költségkezeléshez.         
@@ -39,14 +39,14 @@ dolgozót, hogy a házirend szerinti költségösszeg túl lett lépve. Az irán
 Háromféle irányelvet állíthat be:         
         
 - Figyelmeztetés – lehetővé teszi a dolgozónak, hogy a költségjelentést vagy utazási igénylést nyújtson be, de a program megjelöli a költséget a jóváhagyók számára és        
-későbbi jelentéstételre.        
+  későbbi jelentéstételre.        
 
 - Hiba – a dolgozó a költségjelentés vagy utazásigénylés benyújtása előtt köteles úgy módosítani a költséget, hogy megfeleljen az irányelvnek.       
  
- - Indoklás – a dolgozónak, illetve a vezetőnek a költségjelentés vagy utazásigénylés benyújtása előtt indoklást kell megadnia, hogy miért lépte át az irányelvben megadott összeget.        
+  - Indoklás – a dolgozónak, illetve a vezetőnek a költségjelentés vagy utazásigénylés benyújtása előtt indoklást kell megadnia, hogy miért lépte át az irányelvben megadott összeget.        
  
- Szintén felállítható egy időintervallum, amelyben a költségirányelvek érvényben vannak. Például a repülőjegyek Dánia      
- és New York között magasra szökhetnek a szabadságolások csúcs utazási időszaka alatt. Definiálni lehet egy repülési költségszabályt, amely      
- 5000 DKK-ra korlátozza a New York-i repülőutak költségét, és megadhatja, hogy ez a szabály március 15. és      
- szeptember 15. között legyen érvényben.
+  Szintén felállítható egy időintervallum, amelyben a költségirányelvek érvényben vannak. Például a repülőjegyek Dánia      
+  és New York között magasra szökhetnek a szabadságolások csúcs utazási időszaka alatt. Definiálni lehet egy repülési költségszabályt, amely      
+  5000 DKK-ra korlátozza a New York-i repülőutak költségét, és megadhatja, hogy ez a szabály március 15. és      
+  szeptember 15. között legyen érvényben.
 

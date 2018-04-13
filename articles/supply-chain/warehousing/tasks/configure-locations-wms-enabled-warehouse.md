@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis raktár (a speciális raktárkezelési folyamatokat alkalmazó raktár) helyének beállításait. A folyamatot általában a raktár vezetője végzi el. Ezt az útmutatót az USMF bemutatócéggel vagy saját adataival is futtathatja. Előfeltétel, hogy legalább egy webhely legyen beállítva.
 

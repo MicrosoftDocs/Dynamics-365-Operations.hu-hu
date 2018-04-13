@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-promising"></a>Rendelési ígéretek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk a rendelési ígéretekről nyújt információkat. A rendelési ígéret segít abban, hogy megbízható ígéretet tegyen a szállítási dátumról a vevőknek és rugalmasságot biztosít, hogy ezek a dátumok megfeleljenek.
 

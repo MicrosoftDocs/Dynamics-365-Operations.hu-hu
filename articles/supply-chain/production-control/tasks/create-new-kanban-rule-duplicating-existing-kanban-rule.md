@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a>Új kanbanszabály létrehozása egy meglévő kanbanszabály másolásával
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás egy létező kanbanszabály másolatának létrehozásával foglalkozik. Ez akkor hasznos, ha már létező kanbanszabályok alapján szeretne új kanbanszabályt létrehozni. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás a folyamatmérnök vagy az érték-előállítási vezető munkáját segíti, mert ők készítik elő a termelést a módosított termelési folyamathoz vagy az új feltöltési szabályhoz.
 

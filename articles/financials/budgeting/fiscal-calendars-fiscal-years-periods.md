@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Pénzügyi naptárak, pénzügyi évek és időszakok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a pénzügyi naptárakat, a pénzügyi éveket és időszakokat, valamint azok alkalmazását tárgyalja jogi személyek, tárgyi eszközök és a költségvetés esetében.
 

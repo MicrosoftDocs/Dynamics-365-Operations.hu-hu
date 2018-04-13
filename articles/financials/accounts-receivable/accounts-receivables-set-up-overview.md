@@ -28,8 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Fiók követelések és hitelek és gyűjtemények konfigurálása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Kinnlevőségek, valamint a Követelések és beszedések konfigurálása a vevőktől érkező kifizetések és számlák nyomon követése érdekében.
 
@@ -107,7 +106,7 @@ Az alábbi táblázat felsorolja azokat az oldalakat, amelyek a Fiók kötelezv�
 |                                                      | NSF információ.                     | Állítsa be az NSF információt azon a bankszámlán, amelyet használni fog akkor, amikor a fizetés NSF tranzakcióként jelölik meg a Beszedések lapon.                                                                                                                                              |
 |                                                      | Értékesítő adatai              | Állítsa be az értékesítők e-mail címeit. Ez a cím megjelenik a beszedések lapon és a felhasználásukkal az értékesítő számára e-mail üzenetet küldhet erről a lapról.                                                                                                                |
 
- 
+
 További tudnivalókért lásd: [Követelések és beszedések a Kinnlevőségek között](collections-credit-accounts-receivable.md).
 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-the-relationships-between-organizational-units"></a> A szervezeti egységek közötti kapcsolatok megtervezése
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti azon a folyamaton, hogyan kell a szervezeti egységek közötti kapcsolatot megtervezni. A kapcsolat megadása előtt létre kell hoznia egy új szervezeti célt, vagy használhatja a meglévő szervezet célt. A bemutató adatsor típusa, melyet a vállalat használt a folyamat elvégzéséhez, az USRT. A feladat az Adminisztrátor szerepkör számára készült.
 

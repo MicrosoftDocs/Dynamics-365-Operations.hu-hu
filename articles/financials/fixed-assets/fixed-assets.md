@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-assets-home-page"></a>Tárgyi eszközök kezdőlap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak. 
 

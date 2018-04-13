@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="post-an-expense-report"></a>Költségjelentés feladása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A költségjelentés jóváhagyás és a főkönyvbe történő átvitel után feladható a főkönyvbe. Költségjelentés feladásakor az általános forgalmi adó (áfa) visszatérítésére jogosult költségeket a rendszer azonosítja. Az áfa-befizetések ellenőrzésének és visszaigénylésének feladata a költségjelentés ellenőrzéséért felelős alkalmazotthoz van rendelve.
 

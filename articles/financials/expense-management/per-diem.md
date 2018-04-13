@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="per-diem-rules"></a>Napidíj-szabályok
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A *napidíj* a munkaügyben utazó dolgozó számára kifizetett keret. A Költséggazdálkodás modulban a napidíjszabályokat különböző utazási helyzetekhez lehet létrehozni. A napidíj alapja a dátum, az utazási helyszín, vagy a kettő kombinációja lehet. Napidíjszabályt létrehozásakor be tudja állítani, hogy a napidíj egy részét visszatartsa a rendszer, ha a dolgozó ingyenes étkezésben vagy egyéb szolgáltatásban részesül. Ezenkívül beállítható az ahhoz engedélyezett minimális és maximális óraszám, hogy egy napidíjmérték alkalmazható legyen a dolgozó utazására.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Költségvetés-tervezési sablonok Excelhez
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez használt Microsoft Excel-sablonok.
 
@@ -42,11 +41,11 @@ A költségvetésiterv-dokumentumok egy vagy több elrendezés használatával t
 1. Nyissa meg a **Költségvetési tervek listája** (**Költségvetés készítése** &gt; **Költségvetési tervek**) elemet. 
 2. Új költségvetésiterv-dokumentum létrehozásához kattintson az **Új** gombra. 
 
-  [![Költségvetési tervek listája](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Költségvetési tervek listája](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Használja a **Hozzáadás** elemet sorok hozzáadásához. Kattintson az **Elrendezések** elemre a költségvetésiterv-dokumentum elrendezési konfigurációjának megtekintéséhez. 
 
-  [![Költségvetési tervek hozzáadása](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Költségvetési tervek hozzáadása](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Áttekintheti és szükség szerint módosíthatja az elrendezés konfigurációját. 
 1. Ha Excel-fájlt akar létrehozni ehhez az elrendezéshez, lépjen a **Sablon** &gt; **Létrehozás** elemre. 

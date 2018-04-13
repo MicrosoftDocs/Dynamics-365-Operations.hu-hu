@@ -29,9 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="product-information-overview"></a>Termékek adatainak áttekintése
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást. A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba. 
 

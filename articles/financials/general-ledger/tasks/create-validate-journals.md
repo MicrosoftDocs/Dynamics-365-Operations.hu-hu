@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-validate-journals"></a>Naplók létrehozása és érvényesítése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat-útmutató naplókat és naplósorokat hoz létre, illetve ellenőriz. Ezek az eljárások az USMF bemutatócéget használják.  
 

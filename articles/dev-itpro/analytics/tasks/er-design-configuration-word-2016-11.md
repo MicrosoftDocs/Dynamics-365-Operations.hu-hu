@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Konfiguráció tervezése Microsoft Word formátumú jelentések létrehozására elektronikus jelentéskészítéshez (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy elektronikus jelentés (ER) formátumot kimenetek Microsoft Word-fájlként történő létrehozására. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
 

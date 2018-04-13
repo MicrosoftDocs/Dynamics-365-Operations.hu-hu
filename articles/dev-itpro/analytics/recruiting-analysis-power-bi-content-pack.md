@@ -28,7 +28,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="recruiting-power-bi-content"></a>Toborzási Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti a **Toborzási** Microsoft Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-worker-information"></a>Dolgozói adatok megadása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat generált, a következő lépés a dolgozói információk megadása a felvehető emberek esetében. Ez az eljárás az USMF bemutatócéget használja. A bemutatóadatok tartalmaznak egy nyitott tömeges felvételi projektet. Az eljárás megkezdéséhez ugorjon az Emberi erőforrások > Toborzás > Tömeges felvételi projektek lehetőségre.
 

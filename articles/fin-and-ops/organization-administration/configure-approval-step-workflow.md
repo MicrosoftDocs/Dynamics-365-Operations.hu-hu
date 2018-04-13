@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Jóváhagyási lépés konfigurálása munkafolyamatban
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan kell konfigurálni a jóváhagyási lépés tulajdonságait.
 
@@ -145,9 +144,9 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket jó
     Ha a felhasználó nem hajtja végre a dokumentum műveletét a megadott idő alatt, lejár a dokumentum. A lejárt dokumentum eszkalált, amely az **Eszkaláció** terület lapján kiválasztott beállításokon alapul.
 4.  Ha a jóváhagyási lépéshez több felhasználót vagy felhasználói csoportot rendel, a **Befejezési irányelv** fülön válasszon ki egyet a következő lehetőségek közül:
     -   **Egyedi jóváhagyó** – A dokumentumhoz kapcsolódó műveletet az elsőként válaszoló személy határozza meg. Például, Balázs egy 15 000 USA-dolláros költségjelentést küldött el. A költségjelentés jelenleg Zsuzsannához, Jankához és Vilmoshoz van hozzárendelve. Ha elsőként Zsuzsanna válaszol a dokumentumra, az általa végzett művelet érvényes a dokumentumra. Ha Zsuzsanna visszautasítja a dokumentumot, akkor a visszautasított dokumentum visszakerül Balázshoz. Ha Zsuzsanna jóváhagyja a dokumentumot, akkor a dokumentum Annához kerül jóváhagyásra. 
-    
+
     ![Jóváhagyási folyamattal rendelkező munkafolyamat](./media/workflow_multipleusersinstep.gif)
-    
+
     -   **A jóváhagyók többsége** – A dokumentumhoz rendelt művelet meg van határozva, ha a jóváhagyók többsége válaszol. Például, Balázs egy 15 000 USA-dolláros költségjelentést küldött el. A költségjelentés jelenleg Zsuzsannához, Jankához és Vilmoshoz van hozzárendelve. Ha Zsuzsanna és Janka az első két választ adó jóváhagyó, a rendszer hozzárendeli az általuk végzett műveletet a dokumentumhoz.
         -   Ha Zsuzsanna jóváhagyja a dokumentumot, viszont Janka visszautasítja azt, akkor a dokumentum visszautasításra kerül, és visszaküldik Balázs részére.
         -   Ha Zsuzsanna és Janka jóváhagyja a dokumentumot, akkor a dokumentum Annához kerül jóváhagyásra.

@@ -28,19 +28,17 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Teljes összeg és Intervallumszámítás opciók áfakódokhoz
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ez a cikk bemutatja a Számítási mód áfakódokra vonatkozó beállításait, valamint a forgalmi adó számítását intervallumokra és teljes összegekre.
 
 Beállíthatja, hogy az áfakód egy teljes összeg, vagy egy időszakhoz tartozó összeget alapján alapján legyen kiszámítva. A Forgalmi adó kódjainak lapján használja a Számítási mód gyorslapot az áfakód számítási módjának kiválasztásáho.
--   Teljes összeg – Az áfakulcs a teljes adózó összegre vonatkozik.
--   Intervallum – Az adóalap részekre oszlik, és mindegyik rész egy tartományba esik, amelynek saját áfakulcsa van. Az egyes részek áfájának számítása az adott részt tartalmazó intervallumra vonatkozó áfakulcs alapján történik. Az áfa értéke az egyes intervallumokra kiszámított áfák összegével egyenlő.
-> [!NOTE]                                                                                                                              
-> Az intervallum lehetőség csak akkor érhető el, ha kiválasztja a Sort a Számítási mód mezőjében a Főkönyvi paraméterek oldalon a Forgalmi adó területen. 
+- Teljes összeg – Az áfakulcs a teljes adózó összegre vonatkozik.
+- Intervallum – Az adóalap részekre oszlik, és mindegyik rész egy tartományba esik, amelynek saját áfakulcsa van. Az egyes részek áfájának számítása az adott részt tartalmazó intervallumra vonatkozó áfakulcs alapján történik. Az áfa értéke az egyes intervallumokra kiszámított áfák összegével egyenlő.
+  > [!NOTE]                                                                                                                              
+  > Az intervallum lehetőség csak akkor érhető el, ha kiválasztja a Sort a Számítási mód mezőjében a Főkönyvi paraméterek oldalon a Forgalmi adó területen. 
 
 Az intervallumok beállítása a Forgalmi adó kódlapon történik, úgy, hogy adókulcsonként Minimális és Maximális korlátösszegeket adunk meg. Az adóköteles összegekre számítandó áfák intervallumainak – a kiválasztott számítási módszertől függetlenül – a következő szabályoknak kell megfelelniük:
 -   Az első intervallumnak 0 kell, hogy legyen a Minimális határértéke.
@@ -51,6 +49,7 @@ Ha egy összeg megegyezik egy intervallum Maximális határával, ezáltal a kö
 
 ## <a name="example-whole-amount-method-of-calculation"></a>Példa: Teljes összegű számítási mód
 Az Áfakód értékek kódlapon a következő intervallumokban vannak beállítva az áfakulcsok:
+
 |                   |                   |              |
 |-------------------|-------------------|--------------|
 | **Minimumhatár** | **Maximum határ** | **Áfakulcs** |
@@ -86,7 +85,7 @@ Az áfa értéke az egyes intervallumokra kiszámított áfák összegével egye
 | 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
 | 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
- 
+
 
 További tájékoztatás: [Az áfaérték megállapítása a Számítás alapja és a Számítási módszer mezők alapján](marginal-base-field.md).
 

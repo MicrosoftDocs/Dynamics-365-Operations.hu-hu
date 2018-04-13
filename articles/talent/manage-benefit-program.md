@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-manage-a-benefits-program"></a>Juttatási program meghatározása és kezelése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Az emberi erőforrások számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a témakör a juttatások beállításával és kezelésével kapcsolatban tartalmaz tájékoztatást.
 

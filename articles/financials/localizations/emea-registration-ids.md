@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="registration-ids"></a>Nyilvántartási azonosítók
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást.
 

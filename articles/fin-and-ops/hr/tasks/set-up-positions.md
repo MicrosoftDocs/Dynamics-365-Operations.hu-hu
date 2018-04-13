@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-positions"></a>Beosztások beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei. Egy beosztás egy feladat egyedi példánya. Például az „Értékesítési igazgató (Kelet)” pozíció egyike azon beosztásoknak, amelyek hozzárendelhetők az „Értékesítési igazgató” munkához. Egy pozíció létezik a részlegen belül, és megtörténhet, hogy csak egy dolgozóval van társítva. Ebben a feladatban a beosztás létrehozásához szükséges lépéseket mutatjuk be. Ez az eljárás az emberi erőforrások szakértői számára alkalmas.
 

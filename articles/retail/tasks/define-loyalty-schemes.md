@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a>Hűségprogramok meghatározása
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja a hűségprogram meghatározását. Ezek a programok a pontszerzési és beváltási szabályokat tartalmazzák. Ez az eljárás az USRT bemutatócéget használja.
 

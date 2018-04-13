@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-catalogs"></a>Beszerzési katalógusok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk magas szinten leírja, hogy a beszerzési szakemberek hogyan állíthatnak be és tarthatnak fenn beszerzési katalógusokat. A beszerzési katalógusok határozzák meg a cikkeket és szolgáltatásokat, amelyeket a vállalati alkalmazottak megrendelhetnek belső használat céljából.
 

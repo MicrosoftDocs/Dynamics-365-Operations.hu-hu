@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>Hitelkeretet a vevőknek
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A hitelkeret beállítása lehetővé teszi maximális hitelösszeg meghatározását a vevők számára. Ha meg van adva a hitelkeretet, a rendszer automatikusan ellenőrzi, amikor egy felhasználó megpróbál frissíti egy dokumentumot. A hitelkeret túllépésekor egy üzenet jelenik meg a felhasználó számára. Ebben a cikkben áttekintés olvasható arról, hogyan működik a hitelkeret, és megválaszolja az alábbi kérdéseket:
 

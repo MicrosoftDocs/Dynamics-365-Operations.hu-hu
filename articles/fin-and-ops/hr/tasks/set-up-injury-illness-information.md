@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-injury-and-illness-information"></a>Sérülések és megbetegedések adatainak beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A munkaadóknak tudniuk kell, ha alkalmazottjaik a munkahelyi veszélyek miatt megsérülnek vagy megbetegszenek. A sérülés vagy betegség képernyőn állíthatja be a szükséges információkat a munkahelyi sérülések vagy betegségek jelentésének megkönnyítéséhez. A sérülések és a betegségek típusait is beállíthatja, beleértve a kezelések típusát, a költségeket és az eredményeket is. Ez az eljárás az USMF bemutatócéget használja.
 

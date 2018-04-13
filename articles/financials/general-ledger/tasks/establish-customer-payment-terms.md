@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-payment-terms"></a>Vevői kifizetések feltételeinek kialakítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot állítja be. Ez az útmutató-feladat az USMF bemutatócéget használja.
 

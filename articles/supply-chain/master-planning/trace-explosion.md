@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-tracing-for-explosion"></a>Nyomkövetés használata az alábontáshoz
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti, hogyan alkalmazhatja a nyomkövetést a rendelés alábontás eredményeinek alapjául szolgáló okok felfedezésére.
 

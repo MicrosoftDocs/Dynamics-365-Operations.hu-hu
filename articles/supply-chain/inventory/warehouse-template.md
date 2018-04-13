@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Raktár beállítása a raktári konfigurációs sablon segítségével
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan lehetséges egy raktár beállítása a raktári konfigurációs sablon segítségével. Számos előre definiált konfigurációs sablont használhat. Ha tájékoztatást szeretne ezen sablonok használatáról, lásd a [Konfigurációs adatsablonok](../../dev-itpro/data-entities/configuration-data-templates.md) című részt.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="ship-an-order-from-a-different-store"></a>Rendelés leszállítása egy másik áruházból
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 A Dynamics 365 for Retail költségküldési funkciójával a vevői rendelések feladhatók egy üzletben, és kiszállíthatók egy másik üzletből A pénztári (POS) ügyfélen feladott vevői rendelések több teljesítési lehetőséget támogatnak. Néhány példa a teljesítési lehetőségekre:
 -   Felvétel ugyanabban az üzletben egy másik napon.

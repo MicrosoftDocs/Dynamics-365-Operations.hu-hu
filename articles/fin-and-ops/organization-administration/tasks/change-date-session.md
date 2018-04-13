@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>A munkamenet dátumának módosítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Alapértelmezés szerint a rendszer a naplóbejegyzések vagy a forrásbizonylatok bevitelekor és feladásakor az aktuális dátumot használja. Megváltoztathatja az aktuális munkamenethez használt dátumot. Használja ezt a szolgáltatást a naplóbejegyzések vagy forrásbizonylatok szükség szerinti visszadátumozásához.
 

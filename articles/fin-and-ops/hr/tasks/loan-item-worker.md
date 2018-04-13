@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="loan-items-to-a-worker"></a>Elemek kölcsönadása egy dolgozónak
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan adhat kölcsön egy cikket egy dolgozónak, és miként rögzítheti a cikk visszaérkezését. A dolgozók kérhetik is a cikk kölcsönzését az Alkalmazotti önkiszolgáló rendszer lapjain keresztül. Ez az eljárás az USMF bemutatócéget használja.
 

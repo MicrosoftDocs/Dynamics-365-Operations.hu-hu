@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="welcome-to-dynamics-365-for-retail"></a>Üdvözöljük a Dynamics 365 for Retail rendszerben!
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 for Retail egy végponttól végpontig terjedő megoldás, amely minden csatornán egyesített kereskedelmet biztosít. Magába foglalja az értékesítést, a mobilitást, az intelligenciát és a produktivitást, így a kiskereskedők és az alkalmazottak jobb eredményeket érhetnek el, felhő és mobil alapokon. A Retail rendszer átfogó támogatást nyújt számos üzleti folyamathoz, például az árusításhoz, továbbá a készlet- és csatornakezeléshez. Emellett magával ragadó ügyfélélményt biztosít minden érintő ponton.
 

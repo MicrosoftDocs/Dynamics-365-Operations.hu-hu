@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bonus-depreciation"></a>Rendkívüli értékcsökkenés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a rendkívüli értékcsökkenési funkcióról nyújt áttekintést.
 

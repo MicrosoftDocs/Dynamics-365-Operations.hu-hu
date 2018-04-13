@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-process-overview"></a>Termelési folyamat áttekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig. 
 

@@ -29,10 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Termékdimenziók
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Négy termékdimenzió létezik: szín, konfiguráció, méret és stílus. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is.
 
@@ -51,6 +50,7 @@ Termékdimenzió-értékek, mint például méret, szín és stílus a **Méret*
 -   Kattintson a **Termékinformációk kezelése** &gt; **Kiadott termékek** lehetőségekre. Válasszon ki egy alapterméket. A **Műveleti panel** modulon kattintson a **Termék** elemre. Az **Alaptermék** csoportban kattintson a **Termékdimenziók** gombra.
 
 A változatok létrehozható egy cikkhez száma lehetséges termék cikkdimenzió-kombinációk száma korlátozza.
+
 | **Tipp**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Használatakor a termék, például egy olyan rendeléssort, választhat a termékdimenziókat, amellyel dolgozni szeretne termékváltozat azonosításához. |

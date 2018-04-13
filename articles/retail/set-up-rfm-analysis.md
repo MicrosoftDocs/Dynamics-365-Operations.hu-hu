@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Profilelemzés beállítása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogy miként állíthatók be a vevő Recency, gyakorisági és pénzügyi (RFM) elemzésének.
 
@@ -60,25 +59,25 @@ Ha a szervezet által használt szám egy összesített szám, az egyes minősí
     - Ha az RFM-pontszám minden részén egyenlő számláló vevőt kell tartalmaznia, jelölje be az **Egyenletes eloszlás** négyzetet. 
     - Jelölje be az **Értékelés hozzáadása** jelölőnégyzetet a három pontszám összeadásához. Ezáltal például a vevő 13-as RFM-pontszámot kapna 535 helyett. 
     - Az **Előzmények mentése** jelölőnégyzet bejelölésével kötelezővé teheti a rendszer számára a statisztikai adatok mentését annak érdekében, hogy az adatok az RFM-pontszám számításához használhatók legyenek.
-  
+
 5.  A **Recency** gyorslapon hajtsa végre a következő műveletet: 
     - A **Részlegek** mezőbe írja be a részlegek vagy a csoportok számát, amely a vevők recency pontszámának kiszámításához használt szám. Ha például 100, vevők, az a része, 5 azt jelenti, hogy az egyes pontszám 20 vevők. A legutóbb vásárlásokat végrehajtó 20 vevő 5-ös recency pontszámot kap. A következő 20 felhasználó recency pontszáma 4, és így tovább. Ha 50 vevők, 10 vevő van-e a recency pontszám 5, 10 van a recency pontszám 4, és így tovább. 
     - A **Prioritás** mezőben válassza ki, hogy milyen súlyú legyen a recency paraméter a többi paraméterhez képest a vevő RFM-pontszámának számításakor. Például előfordulhat, hogy több érték helyezze a recency pontszám, mint a pénzügyi pontszám. 
     - A **Szorzó** mezőbe írja be a recency pontszám szorzószámának értékét. Ha nem ad meg értéket, az eredmény nem kell szorozni. 
     - Az **Időszak** mezőben, válassza ki azt az időtartamot, ameddig a recency pontszám számítása meg kell, hogy történjen. Ha például a hét vagy hónap szerint.
-   
+
 6.  A **Gyakoriság** gyorslapon hajtsa végre a következő műveletet: 
     - A **Részlegek** mezőbe írja be a részlegek vagy a csoportok számát, amely a vevők gyakorisági pontszámának kiszámításához használt szám. 
     - A **Prioritás** mezőben válassza ki, hogy milyen súlyú legyen a gyakorisági paraméter a többi paraméterhez képest a vevő RFM-pontszámának számításakor. 
     - A **Szorzó** mezőbe írja be a gyakorisági pontszám szorzószámának értékét. Ha nem ad meg értéket, az eredmény nem kell szorozni.
-   
+
 7.  A **Pénzügyi** gyorslapon hajtsa végre a következő műveletet: 
     - A **Részlegek** mezőbe írja be a részlegek vagy a csoportok számát, amely a vevők pénzügyi pontszámának kiszámításához használt szám. 
     - A **Prioritás** mezőben válassza ki, hogy milyen súlyú legyen a pénzügyi paraméter a többi paraméterhez képest a vevő RFM-pontszámának számításakor. 
     - A **Szorzó** mezőbe írja be a pénzügyi pontszám szorzószámának értékét. Ha nem ad meg értéket, az eredmény nem kell szorozni. 
     - A **Bruttó/nettó** mező azt jelzi, hogy a rendszernek a vevő bruttó vagy nettó teljes számlázott összege alapján kell-e számítania a pénzügyi pontszámot. 
     - Ha a vevő által visszaküldött összegeket le kell vonni a vevő teljes számlaösszeg számításában, jelölje be a **Visszáru levonása** négyzetet. 
- 
+
 ## <a name="view-a-customers-rfm-score"></a>Egy vevő RFM pontszámának megtekintése
 Használja az alábbi eljárást egy vevő RFM pontszámának megtekintéséhez. 
 

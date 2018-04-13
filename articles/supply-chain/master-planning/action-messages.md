@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-messages"></a>Műveletkérő üzenetek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A műveletkérő üzenet olyan, a rendszer által létrehozott üzenet, amely javaslatot tesz egy létező tervezett vagy megerősített rendelés módosítására.
 

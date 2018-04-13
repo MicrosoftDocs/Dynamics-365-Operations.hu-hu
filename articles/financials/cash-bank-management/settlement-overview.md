@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview"></a>Kiegyenlítés – áttekintés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit.
 

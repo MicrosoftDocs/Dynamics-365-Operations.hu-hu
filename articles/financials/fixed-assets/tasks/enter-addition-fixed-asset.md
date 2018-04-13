@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a>Tárgyi eszköz kiegészítésének bevitele
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan adhat hozzá kiegészítést egy meglévő tárgyi eszközhöz. A Tárgyieszköz-kiegészítések tájékoztató jellegűek, és az cikk-kiegészítések, a karbantartás vagy a fejlesztések nyomon követését szolgálják. A tárgyi eszköz értékét vagy élettartamát érintő módosításokat külön kell végrehajtani.   
 

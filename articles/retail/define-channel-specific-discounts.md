@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-channel-specific-discounts"></a>Csatornaspecifikus engedmények definiálása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A kiskereskedők gyakran különböző engedményeket állítanak be a különböző csatornákon. Ez a témakör ellenőrzi azokat a fogalmakat, amelyeket a megadott csatornára vonatkozó engedmények létrehozásához tudnia kell. 
 
@@ -61,7 +60,7 @@ A következő példa bemutatja egy csatorna engedmény beállításába bevont f
 4.  Miután létrehozta az új **Vissza az iskolába** engedményt, akkor kattintson **Árcsoportok** az **Engedmény** lap tetején. Az **Árcsoportok engedménye engedmény** oldal jelenik meg. Ezután kattintson **Új** , és válassza ki a **Houston-PG** árcsoportot.
 5.  Ezután engedélyezheti a kedvezményt és űthelyezheti a csatornába.
 
- 
+
 
 <a name="see-also"></a>Lásd még
 --------

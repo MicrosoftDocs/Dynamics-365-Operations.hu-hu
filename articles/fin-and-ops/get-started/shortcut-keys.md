@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations programban. 
 
@@ -39,6 +38,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 
 ## <a name="action-shortcuts"></a>Műveleti billentyűparancsok
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Művelet**                                    | **Billentyű vagy billentyűkombináció**                        |
@@ -55,6 +55,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Aktuálisan rendelkezésre álló billentyűparancsok megtekintése                | Alt+Shift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Dátum kiválasztási billentyűparancsok
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Művelet**                        | **Billentyű vagy billentyűkombináció**                                 |
@@ -68,6 +69,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Soha (vagy a maximális dátum)          | N                                         |
 
 ## <a name="factbox-shortcuts"></a>Adatterület billentyűparancsok
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | **Művelet**                                                                  | **Billentyű vagy billentyűkombináció**                                 |
@@ -79,6 +81,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Az aktuális adatterület összecsukása                                                    | Alt+0                                     |
 
 ## <a name="filtering-shortcuts"></a>Szűrő billentyűparancsok
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | **Teendő:**                     | **Billentyű vagy billentyűkombináció**                |
@@ -89,6 +92,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Speciális szűrés/rendezés megnyitása                                      | Ctrl+Shift+F3            | 
 
 ## <a name="form-shortcuts"></a>Űrlap billentyűparancsok
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | **Teendő:**                                      | **Billentyű vagy billentyűkombináció**         |
@@ -110,6 +114,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Képernyő bezárása az el nem mentett módosítások mentése nélkül       | Alt+Shift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Navigációs űrlap billentyűparancsok
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Művelet**                                      | **Billentyű vagy billentyűkombináció**                                    |
@@ -128,6 +133,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Váltás sornézetre                                | Ctrl+Shift+L                                 |
 
 ## <a name="grid-shortcuts"></a>Rács billentyűparancsok
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Művelet**                                                                                                         | **Billentyű vagy billentyűkombináció**                       |
@@ -148,6 +154,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Bevitel                           |
 
 ## <a name="input-control-shortcuts"></a>Beviteli vezérlő gyorsbillentyűk
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | **Művelet**                                                               | **Billentyű vagy billentyűkombináció**                     |
@@ -163,6 +170,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Fókusz átváltása a HTML-szerkesztő szövegterülete és eszköztára között | F6                            |
 
 ## <a name="messaging-shortcuts"></a>Üzenetkezelő gyorsbillentyűk
+
 |                          |               |
 |--------------------------|---------------|
 | **Művelet**           | **Billentyű vagy billentyűkombináció**     |
@@ -170,6 +178,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Ugrás az üzenetsávba    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigációs billentyűparancsok
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | **Művelet**                                                                | **Billentyű vagy billentyűkombináció**                  |
@@ -191,6 +200,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Ugrás az adatterület panelre (ami a megnyitását is jelentheti)                       | Alt+M,B vagy Ctrl+F2         |
 
 ## <a name="personalization-shortcuts"></a>Személyre szabási gyorsbillentyűk
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Művelet**                                                                                                         | **Billentyű vagy billentyűkombináció**                           |
@@ -219,6 +229,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Kilépés személyre szabási módból (személyre szabási módban)                                                               | Esc                                 |
 
 ## <a name="segmented-entry-shortcuts"></a>Szegmentált beviteli billentyűparancsok
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Művelet**                                                                                                          | **Billentyű vagy billentyűkombináció**                        |

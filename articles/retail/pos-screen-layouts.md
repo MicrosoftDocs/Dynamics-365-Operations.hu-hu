@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-screen-layouts-for-pos"></a>Pénztár képernyő-elrendezésének beállítása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Operations for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-an-image-to-a-product"></a>Kép hozzáadása termékhez
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet hozzáadni képet termékhez; a feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.
 

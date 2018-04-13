@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>A kérdőív megtekintése, és az eredmények kiértékelése
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait. 
 

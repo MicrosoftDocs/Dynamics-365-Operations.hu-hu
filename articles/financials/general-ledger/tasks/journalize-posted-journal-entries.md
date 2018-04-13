@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="journalize-posted-journal-entries"></a>Feladott naplóbejegyzések naplózása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések. Ez az eljárás az USMF bemutatócéget használja.
 

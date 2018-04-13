@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Raktári munka ellenőrzése munkasablonok és helyutasítások használatával
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
 

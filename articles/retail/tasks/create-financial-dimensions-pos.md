@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Pénzügyi dimenziók létrehozása POS-pénztárgépekhez és a dimenzióértékek konfigurálása a pénztárgépeken
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás pénzügyi dimenziók, (POS-) pénztárgépek részére történő létrehozását mutatja be, illetve azt, hogy hogyan konfigurálja a pénzügyi dimenzióértékeket a pénztárgépeken. Ez az eljárás nem tér ki olyan kapcsolódó lépésekre, mint a dimenziókészletek és számlastruktúrák létrehozása. Ezeket a feladatokat más témakörök alatt találja meg. Ez a felvétel az USRT bemutatócéget használja.
 

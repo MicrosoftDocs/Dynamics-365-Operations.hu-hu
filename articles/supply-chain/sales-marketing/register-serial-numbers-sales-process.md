@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Sorozatszámok bejegyzése az értékesítési folyamat során
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ez a témakör bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
 

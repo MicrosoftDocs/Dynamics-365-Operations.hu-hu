@@ -24,7 +24,7 @@ ms.lasthandoff: 10/05/2017
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Eszközök létrehozása és beszerzése a követelések modulból
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A feladat-útmutató végigvezeti a tárgyi eszköz létrehozásán és a beszerzésén a beszerzési folyamaton keresztül. A Könyvelő és Kötelezettségek ügyintézőket és a bemutató USMF vállalatot használja.
 

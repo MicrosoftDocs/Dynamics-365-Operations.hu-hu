@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Képek beállítása és kezelése a Retail Modern POS számára
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a cikk ismerteti a Retail Modern POS-ben (MPOS) megjelenő különböző entitások számára a képek beállításának és kezelésének lépéseit.
 
@@ -141,7 +140,7 @@ A Kapcsolat nélküli módban használandó termékképek úgy állíthatók be,
 6.  Miközben MPOS Online módban van, futtassa a Katalógusfeladatot a HQ-ban, hogy az adatok legalább egyszer el legyenek küldve az offline adatbázisba.
 7.  Tegye az MPOS-t Offline módba. Megjelenik az adott termékhez a feltöltött kép a HQ-ban. [![offline1](./media/offline1.png)](./media/offline1.png)
 
- 
+
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Katalógus, kategória, alkalmazott és vevő képek beállítása az MPOS Kapcsolat nélküli módban való megjelenítésre
 

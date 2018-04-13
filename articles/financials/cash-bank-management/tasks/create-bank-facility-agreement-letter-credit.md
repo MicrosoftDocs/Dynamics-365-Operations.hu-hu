@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Banki hitelmegállapodás létrehozása akkreditívhez
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A feladat végigvezeti a banki hitelmegállapodás létrehozásán, az Akkreditív feldolgozásához. A feladat előtt banki hitelek és feladási profilok beállítása kívánatos.  Ez az eljárás az USMF bemutatócéget használja.  
 

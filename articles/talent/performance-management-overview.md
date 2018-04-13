@@ -27,8 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="performance-management-overview"></a>Teljesítménykezelés – áttekintés
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.  
 

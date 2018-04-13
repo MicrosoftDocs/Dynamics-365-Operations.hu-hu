@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="vendor-rebates"></a>Szállítói visszatérítések
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A szállítói visszatérítések segítséget nyújtanak a vállalatoknak szállító visszatérítési programjuk könnyebb kezelésében úgy, hogy automatizálják a megszerzett visszatérítések felügyeletéhez, nyomon követéséhez és igényléséhez szükséges feladatokat.
 

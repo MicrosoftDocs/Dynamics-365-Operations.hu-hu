@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Igény-előrejelzés manuális módosítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja egy cikk előrejelzésének módosítását. Ez az eljárás az USMF bemutatócéget használja. Ezt a felvételt a termeléstervező használja. 
 

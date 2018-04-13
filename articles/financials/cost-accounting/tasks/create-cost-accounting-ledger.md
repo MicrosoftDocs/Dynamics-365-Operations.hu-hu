@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Költségkönyvelési főkönyv létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A költségkönyvelési főkönyv megfelel a teljes adatszolgáltatási egységnek. A következők határozzák meg: költségösszetevő-dimenzió, statisztikai dimenzió, pénzügyi naptár és pénznem. Független a jogi személyek fogalmától. A jogi személy és annak adatai számos költségkönyvelési főkönyvvel társíthatók. Ez a felvétel az USP2 bemutató vállalati adatait használja.
 

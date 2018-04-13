@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-the-production-order-status"></a>A termelési rendelés állapotának sztornírozása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan lehet sztornírozni a termelési rendelés állapotát. 
 

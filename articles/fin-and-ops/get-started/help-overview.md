@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="help-system-overview"></a>Súgórendszer áttekintése
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára. 
 

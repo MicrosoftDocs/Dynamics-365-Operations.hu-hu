@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="manage-warehouse-workers"></a>Raktári dolgozók kezelése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk leírja, hogyan használható a Microsoft Dynamics 365 for Finance and Operations az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 

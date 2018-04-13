@@ -29,8 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personalized-product-recommendations-overview"></a>Személyre szabott termékajánlatok áttekintése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük. További információ: [Eltávolított vagy elavult funkciók](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Navigáljon az oldal aljára, ha problémái vannak az adott környezetben már engedélyezett termékajánlásokkal. 
@@ -86,9 +85,9 @@ Ha bekapcsolja az **Ajánlások engedélyezése** elemet, és elvégzi a konfigu
 -   A modell hitelesítő adatok és az azonosító hozzáférhetők a CRT számára, hogy ki lehessen szolgálni a felhő POS és az MPOS felől online módban érkező termékajánlás-lehívásokat.
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Már engedélyezett termékajánlások esetében problémák elhárítása 
->- Keresse meg a **Kiskereskedelmi paraméterek** > **Gépi tanulás** > **Termékajánlások letiltása** elemet, és futtassa a **Globális konfiguráció feladat [1110]** elemet. Ha nem találja a **Gépi tanulás** lapot, forduljon a Dynamics támogatásához. 
-
->- Ha az **Ajánlások vezérlőelem** hozzá van adva a tranzakcióképernyőhöz a **Képernyő-elrendezés tervezője** használatával, távolítsa el azt is. 
+> - Keresse meg a **Kiskereskedelmi paraméterek** > **Gépi tanulás** > **Termékajánlások letiltása** elemet, és futtassa a **Globális konfiguráció feladat [1110]** elemet. Ha nem találja a **Gépi tanulás** lapot, forduljon a Dynamics támogatásához. 
+> 
+> - Ha az **Ajánlások vezérlőelem** hozzá van adva a tranzakcióképernyőhöz a **Képernyő-elrendezés tervezője** használatával, távolítsa el azt is. 
 
 
 

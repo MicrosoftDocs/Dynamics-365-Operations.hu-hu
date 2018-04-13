@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan kerül sor a mobileszköz menüelemeinek beállítására. Ebben a példában, ez a menüpont a Beszerzési rendelés típusú munkák végrehajtásához használatos. A menüponthoz társított munkaosztály határozza meg, hogy melyik munka érvényes. Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást általában a raktárvezető követi nyomon.
 

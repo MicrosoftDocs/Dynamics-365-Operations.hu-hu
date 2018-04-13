@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>Előd hozzáadása termelésifolyamat-tevékenységhez
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A termelésifolyamat-verziókban az összes tevékenységet sorba kell rendezni. Egy tevékenység egy vagy több megelőző és követő tevékenységgel rendelkezhet. 
 

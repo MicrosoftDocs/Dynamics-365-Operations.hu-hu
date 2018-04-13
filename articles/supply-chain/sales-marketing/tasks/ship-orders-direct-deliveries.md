@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Szállítási rendelés közvetlen kiszállításként
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések közvetlen kiszállításait. A közvetlen kiszállítás akkor használatos, amikor a szállítótól közvetlenül a vevőhöz kell árut szállítani, ahelyett hogy a saját raktárába szállítaná. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. A „Közvetlen kiszállítások létrehozása a munkaterületről” második alfeladat sikeres befejezéséhez, ügyeljen rá, hogy az értékesítési rendelésen kiválasztott cikkhez tartozzon alapértelmezett szállító a kiadott alaptermék Beszerzés gyorslapján.
 

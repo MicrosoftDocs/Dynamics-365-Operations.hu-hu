@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="benefits-power-bi-content"></a>Juttatások Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a **Juttatások** Microsoft Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 

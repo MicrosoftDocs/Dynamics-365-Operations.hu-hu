@@ -27,8 +27,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="compensation-and-benefits-power-bi-content"></a>Kompenzáció és juttatások Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a következőt ismerteti: Finance and Operations - Kompenzáció és juttatások Power BI-tartalom. 
 

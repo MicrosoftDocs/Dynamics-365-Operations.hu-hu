@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="schedule-kanban-jobs"></a>Kanbanfeladatok ütemezése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás egy adott munkacellához tartozó kanbanfeladatok ütemezési folyamatával foglalkozik. Az „A feldolgozási kanbanfeladat előkészítése, amikor az anyagok nem elérhetők” eljárás előfeltétel, ha ilyen eljárást akar létrehozni. Ez az eljárás az USMF bemutatócéget használja. Ez a feladat a kanbanokkal dolgozó üzemirányítási felügyelő és termeléstervező munkáját segíti.
 

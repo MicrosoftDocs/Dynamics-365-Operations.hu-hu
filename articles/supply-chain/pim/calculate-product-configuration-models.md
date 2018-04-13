@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="calculations-for-product-configuration-models-faq"></a>Kalkulációk a termékkonfigurációs modellekhez - GYIK
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja a termékkonfigurációs modellek számításait, és elmagyarázza a számítások megszorításokkal történő használatát.
 

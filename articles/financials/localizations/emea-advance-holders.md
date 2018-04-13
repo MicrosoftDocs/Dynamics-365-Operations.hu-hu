@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holders"></a>Előlegre jogosultak
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre jogosulti funkciójáról.
 
@@ -48,11 +47,13 @@ Használja az **Előlegre jogosult csoportok** oldalt az előlegre jogosult csop
 ### <a name="employee-posting-profile"></a>Alkalmazott feladási sablonja
 
 Az előlegre jogosult tranzakcióihoz sablon létrehozásához használja az **Alkalmazott feladási sablonjai** oldalt. Az alkalmazott feladási sablonjához a következő adatokat adhatja meg.
-|Mező |Leírás|
-|------|-----------|
-|Feladási profil|Adja meg a feladási sablon azonosító kódját az előlegre jogosulthoz.|
-|Leírás|Adja meg a feladói sablon rövid leírását.|
-|Érvényes|A feladási sablon beállításához használt csoportosítási szinthez a következő lehetőségek közül választhat: 
+
+|      Mező      |                                            Leírás                                            |
+|-----------------|---------------------------------------------------------------------------------------------------|
+| Feladási profil |               Adja meg a feladási sablon azonosító kódját az előlegre jogosulthoz.               |
+|   Leírás   |                         Adja meg a feladói sablon rövid leírását.                         |
+|    Érvényes    | A feladási sablon beállításához használt csoportosítási szinthez a következő lehetőségek közül választhat: |
+
 **Tábla** – ezt a beállítást használhatja a feladási sablon egy előlegjogosult számára történő beállításához. Az előleg jogosultjának kódját meg kell adni a Hivatkozás mezőben.
 **Csoport** – ezt a beállítást használhatja a feladási sablon előlegjogosultak csoportja számára történő beállításához. Az csoport kódját meg kell adni a Hivatkozás mezőben.
 **Mind** – ezt a beállítást használhatja a feladási sablon az összes előlegjogosult számára történő beállításához.| |Hivatkozás|Válassza ki az előlegjogosult kódját, ha az Érvényes mezőben a Tábla lehetőség van kiválasztva, illetve válassza ki az előlegjogosulti csoportot, ha az Érvényes mezőben a Csoport lehetőség van kiválasztva.| |Összegzett számla|Válassza ki a tranzakciók feladására szolgáló összegzett számlát.|
@@ -62,6 +63,7 @@ Az előlegre jogosult tranzakcióihoz sablon létrehozásához használja az **A
 ### <a name="account-payable-parameters"></a>Kötelezettségek paraméterei
 
 Az előlegre jogosult tranzakcióinak tükrözéséhez be kell állítania a következőket a **Kötelezettségek paraméterei** lapon az **Előlegre jogosultak** szakaszban.
+
 |                                                |                   |
 |------------------------------------------------|-------------------|
 |  **Mező**                                     | **Leírás**                                                                                                                                                                  |
@@ -80,6 +82,7 @@ Beszerzési rendelés előlegre jogosulton keresztül történő megfelelő rög
 ### <a name="create-an-advance-holder-creation"></a>Előlegre jogosult létrehozása
 
 Előlegre jogosult létrehozása előtt beállított dolgozókkal kell rendelkeznie. További tudnivalókért lásd: [Dolgozó adatainak megadása (Feladat-útmutató).](../../fin-and-ops/hr/tasks/enter-worker-information.md) Használja az **Előlegre jogosultak** oldalt a dolgozó előlegre jogosultként történő beállításához. Válassza ki a dolgozót, akit előlegre jogosultként kíván használni, kattintson a **Szerkesztés** elemre, majd állítsa az **Előlegre jogosult** lehetőséget **Igaz** értékre. A következő mezőket szintén ki kell töltenie.
+
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | **Mező**      | **Leírás**                                                                             |

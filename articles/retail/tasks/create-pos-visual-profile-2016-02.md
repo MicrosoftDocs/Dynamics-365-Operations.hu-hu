@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a>Vizuális POS-profil létrehozása 
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás végigveszi egy új pénztár (POS) vizuális profilja létrehozásának lépéseit. A vizuális profilok olyan alapvető információkat tartalmaznak, amelyek meghatározzák a POS-pénztárok megjelenését. Több vizuális profil is létrehozható, majd az adott pénztárgépekhez hozzárendelhető a megfelelő profil. Ez az eljárás az USRT bemutatócéget használja.
 

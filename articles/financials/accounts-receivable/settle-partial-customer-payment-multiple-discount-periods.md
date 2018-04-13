@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Vevői kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti, hogy a részleges vevői kifizetések hogyan kerülnek kiegyenlítésre több engedményes időszak esetén.
 

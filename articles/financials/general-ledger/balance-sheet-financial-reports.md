@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>Mérleg pénzügyi jelentés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a mérlegek alapértelmezett jelentéseit mutatja be. Emellett az e jelentésekhez tartozó építőelemeket is leírja. 
 
@@ -71,7 +70,7 @@ Az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különb
     -   **DESC** – A leírás a sordefinícióból
     -   **FD** – Folyó év pénzügyi adatai, a mai napig.
 
- 
+
 
 <a name="see-also"></a>Lásd még
 --------

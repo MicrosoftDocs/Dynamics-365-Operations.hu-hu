@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 százalékos degresszív értékcsökkenés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 
@@ -68,6 +67,7 @@ Ha bejelöli **Pénzügyi** értéket az értékcsökkenés éveként a követke
 -   **Pénzügyi időszak** kiszámítja az értékcsökkenés teljes értékét a pénzügyi évre. Ez az összeg azon pénzügyi időszakokba van elszámolva, amelyek a **Pénzügyi naptárak** lapon meg vannak határozva.
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Példa a 175% degresszív értékcsökkenésre
+
 |                                |        |
 |--------------------------------|--------|
 | Beszerzési költség               | 11 000 |

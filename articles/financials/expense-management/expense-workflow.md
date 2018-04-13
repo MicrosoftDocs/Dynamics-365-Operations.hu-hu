@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-workflow"></a>A költségek munkafolyamata
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations munkafolyamat-rendszerét a költségjelentések felülvizsgálati folyamatának beállítására használhatja a Költséggazdálkodás modulban. Olyan munkafolyamat adható meg, amely a következő feltételek használatával határozza meg, ki hagyja jóvá a költségjelentéseket:
 

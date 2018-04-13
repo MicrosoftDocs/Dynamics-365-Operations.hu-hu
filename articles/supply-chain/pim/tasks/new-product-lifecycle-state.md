@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>Új termékéletciklus-állapot létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan tud új termékéletciklus-állapotot létrehozni. A termékéletciklus állapota egy kiadott termék vagy termékváltozat életciklus-állapotát dokumentálja. A termékéletciklus-állapotokat a felhasználó határozza meg, általában egy termékmenedzser vagy egy termékalapadat-menedzser. Adott üzleti folyamatokra, például az alaptervezésre, hatással lehet egy adott termékéletciklus-állapot.
 

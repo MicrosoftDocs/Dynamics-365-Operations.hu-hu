@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="warehouse-management"></a>Raktárkezelés
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Dynamics 365 for Finance and Operations szolgáltatás raktárkezelő moduljában raktári folyamatok kezelhetők gyártási, elosztási, és kiskereskedelmi vállalatoknál. A modul sokféle funkciót kínál a raktári létesítmények mindenkori optimális támogatásához. A raktárkezelés teljes mértékben integrált a Finance and Operationsben megtalálható más üzleti folyamatokkal, például a szállítással, gyártással, minőség-ellenőrzéssel, beszerzéssel, átmozgatással, értékesítéssel és visszárukkal.
 

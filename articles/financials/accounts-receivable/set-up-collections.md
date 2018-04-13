@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Követelések és beszedések beállítása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a beszedési funkciók beállítását ismerteti.
 
@@ -97,9 +96,9 @@ Ha az értékesítési képviselő nincs megadva, akkor a vevőszervezethez tart
 További információ a következő témakörökben olvasható:
 
  - [Fizetésifelszólítás-sorozat létrehozása](tasks/create-collection-letter-sequence.md)
- 
+
  - [Fizetési felszólítások feldolgozása](tasks/process-collection-letters.md)
- 
+
  - [A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata](tasks/review-collections-information.md)
 
 

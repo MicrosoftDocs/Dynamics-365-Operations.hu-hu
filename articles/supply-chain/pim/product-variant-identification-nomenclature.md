@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Termékváltozat-elnevezési rendszer számai és nevei
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan állíthat be termékszám-elnevezési rendszert, amelyre lecserélheti a rögzített [Alaptermék száma - Konfiguráció - Méret - Szín - Stílus] formátumot. Az új elnevezési rendszer célzott formátumú, amely magában foglalja az alaptermék számát, az aktív termékdimenziókat és az Ön által választott szöveghatárolókat. A terméknevekhez is létrehozhat elnevezési rendszert. Végül pedig megszorításon alapuló termékkonfiguráló által létrehozott konfigurációk azonosítására szolgáló elnevezési rendszert is létrehozhat. Ezek az elnevezési rendszerek tetszés szerinti attribútumokat tartalmazhatnak.
 

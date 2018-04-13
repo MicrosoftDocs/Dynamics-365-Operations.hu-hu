@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-a-service-template-group"></a>Szolgáltatássablon-csoport létrehozása  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Használhat szolgáltatásisablon-csoportokat a szolgáltatási sablonok rendezésére és szűrésére.
 

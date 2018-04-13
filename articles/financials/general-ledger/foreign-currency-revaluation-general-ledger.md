@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Főkönyvi devizaátértékelés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a főkönyvi devizaátértékelési folyamat következő pontjairól: telepítés, a folyamat futtatása, a folyamat számításai, valamint szükség esetén az átértékelési tranzakciók sztornírozása. 
 

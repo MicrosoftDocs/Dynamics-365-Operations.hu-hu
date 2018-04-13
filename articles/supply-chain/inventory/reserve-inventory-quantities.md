@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Tartalék készletmennyiségek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja a készlet lefoglalásával kapcsolatos különböző lehetőségeket.
 
@@ -50,6 +49,7 @@ A készletfoglalási szabályok a **Cikkmodellcsoportok**lapon, a **Készlet- é
 ### <a name="policies-on-the-item-model-groups-page"></a>A Cikkmodellcsoportok lap szabályai
 
 A **Készletszabályok** szakasz tartalmazza a következő foglalási szabályokat.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Foglalási irányelvek**  | **Leírás**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ A **Készletszabályok** szakasz tartalmazza a következő foglalási szabályok
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Példa a FIFO dátumvezérelt és a Szállítási dátumtól visszafelé lehetőségekre
 
 Ebben a példában az „A” cikkszám aktuális készletszámához három különböző kötegszám tartozik.
+
 | Cikkszám | Köteg száma | Mennyiség | Dátum             |
 |-------------|--------------|----------|------------------|
 | A:           | 1000         | 5        | 2016. február 2. |

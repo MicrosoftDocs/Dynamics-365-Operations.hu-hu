@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="general-journal-processing"></a>Általános napló feldolgozása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a Microsoft Dynamics 365 for Finance and Operations alkalmazásban szereplő funkciókat mutatja be, amelyek megkönnyítik az általános napló feldolgozását, illetve garantálják a megfelelő adatok tárolását, a belső ellenőrzés megfelelő működését.  
 

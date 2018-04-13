@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-dimension-based-product-master"></a>Dimenzión alapuló alaptermék létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozzon létre egy új alapterméket dimenzión alapuló konfigurációs technológiával. Ez az eljárás az USMF bemutatócéget használja. Ez az első eljárás a kilencből, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="set-up-sales-commission-rules"></a>Értékesítési jutalékok szabályainak beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az értékesítési jutalékszámítást és követést. Ez az eljárás bemutatja, hogy hozhat létre vevő és cikk típusú jutalékcsoportokat, és hogyan csatolhatja a kiválasztott vevőt és a terméket a megfelelő csoporthoz. Ezek a csoportok a jutalékszámítás beállításánál használatosak, vevő, cikk, és üzletkötő kombinációk létrehozásához, amelyeket értékesítési rendelésekhez kell kötni, hogy feljogosítsa az értékesítőket üzletkötésre. Vevő és cikk jutalékcsoportok létrehozása nem kötelező, mivel a jutalékszámítás egy vevőre és/vagy cikkre is elvégezhető. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
 

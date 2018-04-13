@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="online-store-overview"></a>Online áruház áttekintése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a cikk a kiskereskedelmi online áruházakkal és a Microsoft Dynamics 365 for Retail rendszerben való beállításukkal kapcsolatban tartalmaz információkat.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="formulas-and-formula-versions"></a>Receptúrák és receptúraverziók
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A receptúra határozza meg az anyagokat, az összetevőket és egy adott folyamat eredményeit a folyamatszerű gyártás során. A megfelelő útvonallal együtt a receptúra a teljes folyamatot meghatározza a folyamatszerű gyártásban. Receptúrák segítségével tervezhet és állíthat elő termékeket a folyamatszerű gyártásban.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-output-location"></a>Termelések kimeneti helye
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja a hierarchiát, amely azonosítja a termelés kimeneti helyét.
 

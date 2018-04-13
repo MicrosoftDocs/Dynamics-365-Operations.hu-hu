@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges szállítói kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk azt az esetet mutatja be, amely során a szállítói számlára vonatkozóan készülnek el a részleges kifizetések és a készpénzfizetési engedmény igénybe van véve.
 

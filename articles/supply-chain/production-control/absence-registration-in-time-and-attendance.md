@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>Munkaidő és jelenlét távollét regisztrálása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja a távolléti koncepciókat, és azt, hogyan kezelje a távollétet a munkaidő-nyilvántartásban.
 

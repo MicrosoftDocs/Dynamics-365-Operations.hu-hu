@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="explosion-of-a-bom-version"></a>Anyagjegyzék-verzió alábontása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk egy anyagjegyzék-verzió alábontásának alaptervezési forgatókönyvét ismerteti.
 

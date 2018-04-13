@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-schedule-groups"></a>Lean ütemezési csoportok meghatározása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A lean ütemezési csoportok definiálásával csoportosíthatók és különböztethetők meg a termékek a kanbanütemezésben. A csoportosítás vállalatonként általános társításként hozható létre vagy munkacella-specifikusként. Mindegyik csoport rendelkezik egy színkóddal, amely a vizuális jelöléshez kell a kanbanütemezési listaoldalon. Ez az eljárás az USMF bemutatócéget használja.
 

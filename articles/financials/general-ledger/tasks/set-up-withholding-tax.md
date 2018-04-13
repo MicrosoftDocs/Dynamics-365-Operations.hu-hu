@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-withholding-tax"></a>Adóelőleg beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Az adóelőleg a szállítókra kirótt olyan adó, amely nem hoz létre áfatranzakciókat. A szállítói kifizetésekhez számított adóelőleg kötelezettség. Emiatt az adóelőlegeket csak mérlegszámlákra vagy forrásszámlákra lehet érvényesen feladni. Ez a feladatútmutató bemutatja, hogyan lehet adóelőleget beállítani.
 

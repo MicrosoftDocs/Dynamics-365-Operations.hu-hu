@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="intelligence"></a>Intelligencia
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzletiintelligencia- (BI) eszközökre és jelentéskészítési eszközökre vonatkozóan.
 

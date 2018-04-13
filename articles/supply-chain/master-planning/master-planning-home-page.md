@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Alaptervezés kezdőlap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Lényegét tekintve az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez. Az Alaptervezés értékeli a következőket: 
 
@@ -58,6 +57,7 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 [![Az alaptervezés tanulási térképe](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Gyorshivatkozások
+
 |      |   |
 |------|---|
 |        [Alaptervek](master-plans.md)       |     [Korlátozott terv létrehozása](./tasks/constrained-plan.md)  |

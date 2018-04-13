@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-codes"></a>Vonalkódok beállítása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a cikk a vonalkódok Microsoft Dynamics 365 for Retail rendszerben történő használatát írja le.
 

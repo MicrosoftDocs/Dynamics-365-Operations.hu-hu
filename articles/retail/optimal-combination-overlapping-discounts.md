@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Átfedő kedvezmények optimális kombinációjának meghatározása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Átfedő kedvezmények esetén meg kell határozni az egymást átfedő kedvezmények azon kombinációját, amely a legalacsonyabb tranzakciós végösszeget vagy a legnagyobb összes engedményt eredményezi. Ha az engedmény összege a vásárolt termékek ára szerint változik, például a kiskereskedelmben gyakori „1 vásárlása esetén 1 X százalék engedmény” esetén ez a folyamat kombinatorikai optimalizálási problémává válik.
 

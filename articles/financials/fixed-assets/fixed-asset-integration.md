@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-integration"></a>Tárgyieszköz-integráció
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A tárgyi eszközök integrálhatók a főkönyvvel, a készletkezeléssel, a kinnlevőségekkel és a követelésekkel. A tárgyi eszközök emellett a beszerzési rendelésekkel integrálva is beállíthatók.
 

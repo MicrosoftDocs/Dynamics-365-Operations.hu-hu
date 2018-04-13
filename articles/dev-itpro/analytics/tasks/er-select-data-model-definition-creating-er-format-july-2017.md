@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a>Adatmodell definíciójának kiválasztása az elektronikus jelentéskészítés (ER) formátumának létrehozása közben
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. 
 

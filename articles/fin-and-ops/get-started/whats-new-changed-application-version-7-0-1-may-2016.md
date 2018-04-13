@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a leírás ismerteti az új vagy módosított a 7.0.1 alkalmazásverziójú Microsoft Dynamics AX szolgáltatásokat. Ez a verzió 2016 Májusában jelent meg és a build száma 7.0.1265.23014.
 
@@ -44,12 +43,14 @@ Ez a leírás ismerteti az új vagy módosított a 7.0.1 alkalmazásverziójú M
 | EJ célok beállítása úgy, hogy a kimeneti formátum eredménye meghatározott rendeltetési helyre irányuljon: fájl, e-mail vagy archívum (Microsoft SharePoint-mappa vagy Microsoft Azure tárolás). | Korábban, egy EJ-konfiguráció futtatásakor egy üzenetpanel jelent meg, amely egy fájl mentéséhez vagy megnyitásához felhasználó beavatkozást kért. Most külön elő-konfigurálhatja az egyes formátum-konfiguráció célját és annak kimeneti összetevőit (egy mappa vagy egy fájl). Megfelelő hozzáférési jogokkal rendelkező felhasználók módosíthatják a célbeállításokat futásidőben is. |
 
 ## <a name="pos--microsoft-dynamics-ax-retail"></a>Pénztár – Microsoft Dynamics AX Retail
+
 |                                |                                                                                                                                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Mit lehet tenni?**           | **Miért fontos ez?**                                                                                                                                                              |
 | Használja a Google Chrome böngészőt. | Kiskereskedők mostantól a Felhőalapú pénztárt elindíthatják Chrome böngészőből, és a Felhőalapú pénztár minden, Microsoft Edge és az Internet Explorer böngészőkben elérhető szolgáltatását megtapasztalhatják. |
 
 ## <a name="financial-reporting"></a>Pénzügyi jelentéskészítés
+
 |                                                                     |                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Mit lehet tenni?**                                                | **Miért fontos ez?**                                                                                                                                                                                                                                                                                         |
@@ -57,12 +58,14 @@ Ez a leírás ismerteti az új vagy módosított a 7.0.1 alkalmazásverziójú M
 | Már nem választhat érvénytelen jelentéstervező lehetőségek közül. | Számos Management reporter forgalmazott verziójában használt jelentéstervező a Dynamics AX ezen verziójára nem vonatkozik. Ezek a beállítások a pénzügyi jelentés tervező, a kimeneti és a csatolás voltak kapcsolatosak. Ezek a beállítások felhasználói hibák elkerülése érdekében a pénzügyi jelentés tervező el lett távolítva. |
 
 ## <a name="financial-management"></a>Pénzgazdálkodás
+
 |                                                            |                                                                  |
 |------------------------------------------------------------|------------------------------------------------------------------|
 | **Mit lehet tenni?**                                       | **Miért fontos ez?**                                       |
 | Bérszámfejtési bankszámlához tartozó ellenőrzött fizetési fájl generálása | Banki csekk csalás megelőzése érdekében a fizetési ellenőrző fájlok hozhatók létre. |
 
 ## <a name="warehouse-and-production"></a>Raktár és termelés
+
 |                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Mit lehet tenni?**                                                                                                                                                                                                                                                                                                                                                                    | **Miért fontos ez?**                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -72,7 +75,7 @@ Ez a leírás ismerteti az új vagy módosított a 7.0.1 alkalmazásverziójú M
 | Az anyagjegyzékek első szintjén lévő körkörös struktúrájú termelési rendelések kizárásra kerülnek az anyagjegyzék-szint erőforrás-tervezés kiszámításánál.                                                                                                                                                                                                                                     | Nincs lehetőség a megfelelő Anyagjegyzék-szintek Anyagjegyzék-hierarchiában körkörösséget okozó termékváltozatok hozzárendeléséhez.                                                                                                                                                                                                                                                                                                  |
 | Külön anyagjegyzékszintek számítása és erőforrástervezésre a költség kiszámításra: • Az anyag típusú erőforrás-tervezésnél anyagjegyzék szinteket új **ReqItemLevel** táblában számolják. Befejezett termelési rendelések kiszámítása során figyelmen kívül hagyja. • A termelési költség kiszámításánál anyagjegyzék szinteket a **InventTable** táblán számolnak. Befejezett termelési rendelések kiszámítása során figyelembe veszi. | • Anyag típusú erőforrás tervezés futtatásakor alaptervezési ütemezés tervezése és alábontása esetén csak az anyag típusú erőforrás-tervezéskor használt anyagjegyzékszinteket kell számítani. Más szóval nincs szükség termelési készletértékelési kiszámításához használt Anyagjegyzékszintek kiszámításakor. • Árkalkulációs műveletek futtatásakor, mint például készletzárás, csak az anyagjegyzékeket használó termelési árkalkulációt kell újraszámolni. |
 
- 
+
 
 <a name="see-also"></a>Lásd még
 --------

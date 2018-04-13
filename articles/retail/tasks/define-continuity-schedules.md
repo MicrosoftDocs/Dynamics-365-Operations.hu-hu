@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-continuity-schedules"></a>Folytonossági ütemezések meghatározása
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez a témakör végigvezeti a folyamatos program (más néven ismétlődő rendelések) beállításának lépésein. Ez a témakör az USRT cég bemutatóadatait használja.
 

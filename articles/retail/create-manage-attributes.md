@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-and-manage-attributes"></a>Attribútumok létrehozása és kezelése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a cikk a Microsoft Dynamics 365 for Retail attribútumait írja le. Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál által meghatározott mezők segítségével.
 
@@ -58,7 +57,7 @@ Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál �
 
 ## <a name="attribute-type"></a>Attribútumtípus
   [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
-  
+
 Az attribútumok az attribútumtípusokon alapulnak. Az attribútumtípusok az adott attribútumba bevihető adatok típusát azonosítják. Jelenleg a Microsoft Dynamics 365 for Retail a következő attribútumtípusokat támogatja:
 
 -   **Currency** – Ez az attribútumtípus a pénznemértékeket támogatja. Lehet kötött (vagyis támogathat egy értéktartományt) vagy nyitva is hagyható.

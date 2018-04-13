@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-close"></a>Készlet zárása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A kiadási tranzakció bevételezési tranzakciókkal való kiegyenlítésének részeként lehetősége van frissíteni a főkönyvet, hogy az tükrözze a végrehajtott módosításokat.
 

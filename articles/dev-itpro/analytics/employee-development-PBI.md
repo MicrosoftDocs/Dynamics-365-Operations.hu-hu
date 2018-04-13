@@ -25,7 +25,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="employee-development-power-bi-content"></a>Alkalmazotti fejlesztés Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti az **Alkalmazotti fejlesztés** Microsoft Power BI-tartalmat.
 
@@ -45,6 +45,7 @@ Az **Alkalmazotti fejlesztés** Power BI által tartalmazott a jelentések tábl
 Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
+
 | Entitás                   | Tartalom                                                                                                   | Más entitásokkal való kapcsolatok |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Naptáreltolás          | Naptáreltolások, részletes jelentések                                                                          | Korábbi pozíció hozzárendelése, Pozíciótrend, Alkalmazotti trend, Felmondott alkalmazott 

@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-order-overview"></a>Beszerzési rendelések áttekintése
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ez a cikk a beszerzési rendelések általános ismertetését tartalmazza és további hivatkozásokat a beszerzési rendelés különböző szakaszaihoz kapcsolódó cikkekhez .
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="maintain-planned-orders"></a>Tervezett rendelések karbantartása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a tervezett rendelések kezelésével kapcsolatban nyújt információkat. Leírja, hogyan frissítheti a tervezett rendelések állapotát, erősítheti meg őket, és hogy hogyan szűrheti a kijelölttel azonos állapotú tervezett rendeléseket.
 

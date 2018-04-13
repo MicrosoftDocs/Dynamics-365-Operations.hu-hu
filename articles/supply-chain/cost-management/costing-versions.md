@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>Költségszámítási verziók
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a költségszámítási verziókról, azok karbantartásának módjáról, illetve az azokba bevihető adattípusokról nyújt tájékoztatást. A költségszámítási verziók elsődleges célja az, hogy tartalmazzák a cikkek, költségkategóriák és a közvetett költségek számítási képleteinek rekordjait.
 

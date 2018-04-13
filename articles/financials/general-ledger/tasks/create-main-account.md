@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-main-account"></a>Fő számla létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A feladat-útmutató bemutatja a fő számla hozzáadását a meglévő számlatükörhöz. Ez a felvétel az USMF bemutatócéget használja.  
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>A Modern POS és a Cloud POS közötti választás
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör további háttérinformációkat, tippeket és útmutatást ad az alkalmazás telepítőinek azokkal a tényezőkkel kapcsolatban, amelyeket figyelembe kell venni a Microsoft Dynamics 365 for Retail üzembe helyezésekor. Az útmutató áttekintésével és követésével a telepítés részeként a bevezetők elkerülhetik azokat a problémákat, amelyek hatással lehetnek a felhasználói élményre vagy a teljesítményre.
 
@@ -92,8 +92,8 @@ A kiskereskedelmi üzletekben való pénztártelepítés tervezésekor vegye fig
 
     Azokat az eseteket kivéve, amikor az adott eszköz kapcsolata nagyon megbízható és rugalmas, vagy amikor bizonyos mennyiségű leállást elfogadható a kiskereskedő számára, a következő lehetőségek valamelyikét ajánljuk:
 
-    - Windows-alapú MPOS használata, és az offline mód engedélyezése.
-    - Helyszíni RSSU telepítése.
+  - Windows-alapú MPOS használata, és az offline mód engedélyezése.
+  - Helyszíni RSSU telepítése.
 
     Ez a két lehetőség nem zárja ki kölcsönösen egymást. A legmegbízhatóbb topológia érdekében a kiskereskedők telepíthetnek egy helyi RSSU-t az internetkapcsolat vagy az Azure rendelkezésre állásától való függőség csökkentése érdekében, továbbá telepíthetnek olyan pénztárgépeket, amelyeken engedélyezve van a kapcsolat nélküli mód arra az esetre, ha probléma lépne fel a helyi kiszolgálóval vagy a hálózattal.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="generate-a-financial-report"></a>Pénzügyi jelentés elkészítése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban. 
 
@@ -50,13 +49,13 @@ Jelentés készítésekor az Ön által a Jelentésdefiníció lapon megadott be
 ## <a name="generate-a-financial-report"></a>Pénzügyi jelentés elkészítése
 
 Pénzügyi jelentés létrehozásához a Microsoft Dynamics 365 for Finance and Operations rendszerben lépjen a következő elemhez: **Főkönyv** > **Lekérdezések és jelentések** > **Pénzügyi jelentések**. 
- - Kattintson létrehozni kívánt jelentésre, és kattintson a **Létrehozás** lehetőségre. 
- - Töltse ki a **Jelentés dátuma** mezőt, majd kattintson az **OK** gombra.
- 
- A jelentés generálása után a jelentést a **Jelentések** szakaszban tekintheti meg.
- A jelentéseknél a **Megtekintés** vagy **Törlés** lehetőség választható ki.
- 
- 
+- Kattintson létrehozni kívánt jelentésre, és kattintson a **Létrehozás** lehetőségre. 
+- Töltse ki a **Jelentés dátuma** mezőt, majd kattintson az **OK** gombra.
+
+  A jelentés generálása után a jelentést a **Jelentések** szakaszban tekintheti meg.
+  A jelentéseknél a **Megtekintés** vagy **Törlés** lehetőség választható ki.
+
+
 A jelentés létrehozásához a **Jelentéstervező** segítségével, nyissa meg a jelentésdefiníciót, majd kattintson a Létrehozás gombra az eszköztárban. Az ekkor megnyíló Jelentés-várólista állapota ablak mutatja a jelentés helyét a várólistában. A létrehozott jelentések alapértelmezetten a Web Viewer alkalmazásban nyílnak meg.
 
 > [!NOTE]
@@ -159,7 +158,7 @@ Hiányzó számla elemzésekor a következő billentyűparancsok használhatók.
 | A kiválasztott jelentésdefiníció megnyitása  | Ctrl + R                     |
 | A kiválasztott sordefiníció megnyitása     | Ctrl + O                     |
 
- 
+
 <a name="see-also"></a>Lásd még
 --------
 

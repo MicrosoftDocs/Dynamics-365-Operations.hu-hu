@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Egy elemre vonatkozó szállítási megszorítások beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás állítja be a szállítási megszorításokat annak érdekében, hogy megakadályozza a kiválasztott cikk egy kijelölt központon keresztül történő szállítását. Általában ezt a feladatot egy Szállítási koordinátor végzi el. Ezt a folyamatot az USMF bemutatócégnél vagy a saját adataiban is használhatja.
 

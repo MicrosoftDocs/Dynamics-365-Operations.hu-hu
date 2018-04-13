@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="year-end-close"></a>Év végi zárás
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör Főkönyv év végi zárási eljárására vonatkozó folyamat beállítását és futtatását mutatja be. 
 

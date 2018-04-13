@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="invoice-approvals-mobile-workspace"></a>Számlajóváhagyások mobil munkaterület
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a **Számlajóváhagyások** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület a szállítói számla fejléce munkafolyamattal Önhöz rendelt számlák listáját tartalmazza. 
 

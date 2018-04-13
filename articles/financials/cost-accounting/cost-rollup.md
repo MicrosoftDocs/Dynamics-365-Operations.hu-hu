@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Költségösszesítési irányelv többletköltségek kiszámítása 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Költségkönyvelés lehetővé teszi, hogy betekintést nyerjen a költségeknek a szervezeten belül szállított termékekhez és szolgáltatásokhoz való kapcsolatáról. A költségek átláthatóságának megítéléséhez kulcsfontosságú a költségfelosztás megvalósítása a megfelelő felosztási alapon a költségobjektumok között. Alapértelmezés szerint a költségfelosztás az elsődleges költségelemre érvényes, ami bizonyos helyzetekben kívánatos, de vannak olyan jellemzői, amelyeket figyelembe kell venni.
 

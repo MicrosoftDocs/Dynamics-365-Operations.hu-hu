@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Termék/alaptermék kiadása más jogi személyeknek
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja miként adhat ki egy terméket vagy alapterméket egy vagy több jogi személy számára. E feladat létrehozása az USRT bemutatócég segítségével történt, a feladat a Termékkihelyezési vezetők és a Terméktervezők részére készült.
 

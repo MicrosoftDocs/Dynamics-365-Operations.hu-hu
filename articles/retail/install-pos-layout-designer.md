@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="install-the-retail-pos-layout-designer"></a>Telepítse a Retail POS-képernyő elrendezéstervezőt
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Az egy-kattintás tervező segítségével különböző a Retail Modern POS (MPOS) és Felhőalapú POS elrendezéseket hozhat létre Fekvő vagy Álló módban üzletek, pénztárgépek, pénztárosok és menedzserek számára.
 

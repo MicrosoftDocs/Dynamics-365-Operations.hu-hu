@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>Készletszintek inicializálása a raktárban
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan frissítheti kézileg az aktuális készletet a Készletmozgási napló segítségével. (Az aktuális készlet frissítése az adatentitásokban található tranzakciók importálásával is történhet.) Ezt az útmutatót az USMF bemutatócégen is lefuttathatja, ahol minden előfeltétel elérhető, például a naplónevek, cikkbeállítások, feladási profilok és számlák. Az útmutató a használt cikkre és dimenziókra vonatkozóan adott értékeket javasol. Ha egy másik elemet választ, lehetséges, hogy más dimenziók értékeit kell megadnia.
 

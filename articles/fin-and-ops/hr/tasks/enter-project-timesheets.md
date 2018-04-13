@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="enter-project-timesheets"></a>Projekt időnyilvántartásának megadása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezen folyamat segítségével létrehozhat egy munkaidő-nyilvántartást egy üres munkaidő-nyilvántartási képernyő felhasználásával. Az új munkaidő-nyilvántartás egy előző munkaidő-nyilvántartás adatain, vagy a Kedvenceim oldalon található projekt- és tevékenység-hozzárendelések adatain alapulhat. Alapértelmezés szerint az Összes munkaidő-nyilvántartás listaoldal minden munkaidő-nyilvántartást megjelenít az aktuális időszakra. A Saját időnyilvántartások oldalon a Megjelenítés mező legördülő listája használható a munkaidő-nyilvántartások listájának szűrésére időszak vagy projekt alapján, vagy más munkavállalók nevében létrehozott időnyilvántartások megjelenítésére. Ez az eljárás a USSI bemutatócéggel jött létre. Ennek az eljárásnak a megkezdéséhez ugorjon a Projektvezetési és könyvelési > Munkaidő-nyilvántartások > Saját időnyilvántartások pontra
 

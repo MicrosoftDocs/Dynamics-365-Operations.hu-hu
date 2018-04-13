@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holder-transactions"></a>Előlegre jogosult tranzakciói
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ismerje meg, hogyan dolgozhat a Microsoft Dynamics 365 for Finance and Operationsben előlegre jogosultak tranzakcióival.
 

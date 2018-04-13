@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="warehouse-configuration"></a>Raktár konfigurálása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat.
 
