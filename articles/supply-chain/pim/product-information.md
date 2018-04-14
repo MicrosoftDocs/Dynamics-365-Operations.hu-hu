@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 981effde3f5e99035bcd790ee8d98cc6acf550fb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-information-overview"></a><span data-ttu-id="5cb79-104">Termékek adatainak áttekintése</span><span class="sxs-lookup"><span data-stu-id="5cb79-104">Product information overview</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="5cb79-105">Ez a témakör a termékinformációk kezelésével kapcsolatban tartalmaz tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="5cb79-105">This topic provides information about product information management.</span></span> <span data-ttu-id="5cb79-106">A termékinformációk kezelése megosztott termékmeghatározás, kategorizálás és azonosítók révén működik a jogi személyeken belül, valamint egy termék egyes konfigurációi révén is, hogy beférjen a üzleti folyamatokba.</span><span class="sxs-lookup"><span data-stu-id="5cb79-106">Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes.</span></span> 
 

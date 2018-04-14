@@ -17,18 +17,18 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 4420eeb249a4d1bdac203e32d017dcebbddf95c3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2638df96c47cf64c029e129d27af886b7ecbf4e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="custom-fields"></a><span data-ttu-id="c105e-103">Egyéni mezők</span><span class="sxs-lookup"><span data-stu-id="c105e-103">Custom fields</span></span>
 
-[!include[banner](../includes/banner.md)] 
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 <span data-ttu-id="c105e-104">Bár a Microsoft Dynamics 365 for Finance and Operations is mezők sokaságát biztosítja az üzleti folyamatok széles körének kezeléséhez, néha szükség van arra, hogy a vállalat a rendszerben lévő további információkat is nyomon kövessen.</span><span class="sxs-lookup"><span data-stu-id="c105e-104">While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system.</span></span> <span data-ttu-id="c105e-105">Ezen igények kielégítésére a Finance and Operations lehetővé teszi, hogy olyan egyedi mezőket hozasson létre, amelyek segítségével az alkalmazás testreszabható a cég igényeire, ha rendelkezik a szolgáltatás használatára való jogosultsággal.</span><span class="sxs-lookup"><span data-stu-id="c105e-105">To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.</span></span> 
 

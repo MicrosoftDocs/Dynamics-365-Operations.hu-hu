@@ -20,17 +20,16 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 0adfb1dcdaa1c57a3f8af0d874c081e19844d20a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3b1346917dc8482181acdb9dac31efbc5356dd24
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="info-codes"></a><span data-ttu-id="e27e7-103">Infókódok</span><span class="sxs-lookup"><span data-stu-id="e27e7-103">Info codes</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="e27e7-104">Ez a cikk áttekintést nyújt az infókódokról, az infókód-csoportokról és azok használatáról.</span><span class="sxs-lookup"><span data-stu-id="e27e7-104">This article provides an overview about info codes, info code groups, and how to use them.</span></span>
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="e27e7-132">**2. példa: Infókód-csoportok infókódokhoz történő csatolása** Egyes termékek, például mobileszközök eladása esetén bizonyos adatokat kell mindig összegyűjtenie, mint például a telefonszám, mozgó berendezés azonosítója (MEID) és sorozatszám.</span><span class="sxs-lookup"><span data-stu-id="e27e7-132">**Example 2: Link info codes to info code groups** When you sell certain products, for example mobile devices, you always want to collect a specific set of information, such as telephone number, mobile equipment identifier (MEID), and serial number.</span></span> <span data-ttu-id="e27e7-133">Ugyanakkor érdemes különböző adatokat összegyűjtenie a tabletekkel és mobiltelefonokkal kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="e27e7-133">However, you also want to collect different information for a tablet versus a mobile phone.</span></span> <span data-ttu-id="e27e7-134">Beállíthat egy infókód-csoportot, amely utasításokat tartalmaz a telefonszámra, MEID azonosítóra és a sorozatszámra vonatkozóan, majd az infókód-csoportokat az egyes infókódokhoz csatolja.</span><span class="sxs-lookup"><span data-stu-id="e27e7-134">You can set up an info code group that includes prompts for the telephone number, MEID, and the serial number, and then link the info code group to an individual info code.</span></span> <span data-ttu-id="e27e7-135">Ha termékspecifikus infókód kiváltása történik, az infókód-csoport kiváltása lehet a következő, hogy lehetővé tegye a gyakori adatok gyűjtését anélkül, hogy minden egyes eszközre több csatolt infókódot kellene meghatároznia.</span><span class="sxs-lookup"><span data-stu-id="e27e7-135">When the product-specific info code is triggered, the info code group can be triggered next to enable you to collect the common data without having to define multiple sets of linked info codes for each device.</span></span>
 
- 
+
 
 
 

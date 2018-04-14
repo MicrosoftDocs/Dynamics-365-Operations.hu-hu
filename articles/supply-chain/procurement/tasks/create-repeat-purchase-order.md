@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 257582d889ff55753f9bdbd234f0540503d20f27
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b7f93d991730872c0d50a23d27236be5a057f75b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-repeat-purchase-order"></a><span data-ttu-id="42a92-103">Ismételt beszerzési rendelés létrehozása</span><span class="sxs-lookup"><span data-stu-id="42a92-103">Create a repeat purchase order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="42a92-104">Ez az eljárás bemutatja, hogy hogyan lehet egy ismételt beszerzési rendelést (PO) létrehozni azáltal, hogy a sorokat egy korábbi beszerzési rendelési dokumentumból egy új, vagy egy már létező beszerzési rendelésbe másol.</span><span class="sxs-lookup"><span data-stu-id="42a92-104">This procedure shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO.</span></span> <span data-ttu-id="42a92-105">Kétféleképpen lehetséges az ismételt rendelések létrehozása.</span><span class="sxs-lookup"><span data-stu-id="42a92-105">There are two methods for creating repeat orders.</span></span> <span data-ttu-id="42a92-106">Vagy a Művelet Panel dokumentum szintjén elérhető műveleteket vagy a sorrészletek műveleteit használhatja.</span><span class="sxs-lookup"><span data-stu-id="42a92-106">You can use the actions available at the document level from the Action Pane, or you can use the line detail actions.</span></span> <span data-ttu-id="42a92-107">A dokumentumszintű műveletek leginkább egy új beszerzési rendelés létrehozására szolgálnak a sorok és egy másik rendelés fejléc információinak hozzáadásával, viszont a soradatok művelete a sorok egy már meglévő rendeléshez történő hozzáadására szolgál.</span><span class="sxs-lookup"><span data-stu-id="42a92-107">The document level actions are mainly intended for creating a new purchase order by adding lines and header information from another order, while the line details action is mainly for adding lines to an existing order.</span></span> <span data-ttu-id="42a92-108">Az útmutatóban mutatott példa használható az USMF demo adatok cégben.</span><span class="sxs-lookup"><span data-stu-id="42a92-108">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="42a92-109">Ezt a feladatot általában a beszerzési ügynök végzi el.</span><span class="sxs-lookup"><span data-stu-id="42a92-109">This task would typically be carried out by a purchasing agent.</span></span>
 

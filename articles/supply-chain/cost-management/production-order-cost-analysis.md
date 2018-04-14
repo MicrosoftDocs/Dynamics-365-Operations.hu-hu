@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1bbdd7c47013735aa384d2d64c347d08d52c0df2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a><span data-ttu-id="f0582-105">Termelési rendelés költségelemzése</span><span class="sxs-lookup"><span data-stu-id="f0582-105">Production order cost analysis</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f0582-106">Ez a cikk a befejezett és az aktuális termelési rendelésekhez tartozó elvégezhető költségelemzéssel kapcsolatban tartalmaz tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="f0582-106">This article provides information about the cost analysis that you can do for completed and current production orders.</span></span> <span data-ttu-id="f0582-107">Az Árkalkuláció lap vagy a Költségbecslés és kalkulációk jelentés használatával elemezheti a becsült költségeket és a tényleges költségeket.</span><span class="sxs-lookup"><span data-stu-id="f0582-107">You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report.</span></span> <span data-ttu-id="f0582-108">A becsült és tényleges költségekkel (és mennyiségekkel) kapcsolatos információkat tekinthet meg minden összetevő cikknél, az útvonalműveletnél, és a közvetett költségnél.</span><span class="sxs-lookup"><span data-stu-id="f0582-108">You can view information about the estimated and actual costs (and quantity) for each component item, the routing operation, and the indirect cost.</span></span>
 

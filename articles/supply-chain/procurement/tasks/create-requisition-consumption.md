@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7d8ca4e7eedea140f32e264c205b243027a06d03
-ms.openlocfilehash: d1ea95d0bc283297fcedaee730e1829850f07998
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bad86a4726ce69015f318d9af98992b36d34b29a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-requisition-for-consumption"></a><span data-ttu-id="c9b5f-103">Felhasználási igénylés létrehozása</span><span class="sxs-lookup"><span data-stu-id="c9b5f-103">Create a requisition for consumption</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c9b5f-104">Ez az eljárás bemutatja az igénylések létrehozásának a folyamatát.</span><span class="sxs-lookup"><span data-stu-id="c9b5f-104">This procedure walks you through the process of creating a requisition.</span></span> <span data-ttu-id="c9b5f-105">Megmutatja, hogy milyen különböző módokon tudja keresni a termékeket a beszerzési katalógusban, illetve hogyan tud hozzáadni egy olyan terméket, amely nem szerepel a katalógusban.</span><span class="sxs-lookup"><span data-stu-id="c9b5f-105">It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog.</span></span> <span data-ttu-id="c9b5f-106">Az eljárás megkezdése előtt rendelkeznie kell egy beszerzési irányelvvel, amelyet az igénylés alapértelmezett típusaként kell beállítania.</span><span class="sxs-lookup"><span data-stu-id="c9b5f-106">Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition.</span></span> <span data-ttu-id="c9b5f-107">Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="c9b5f-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="c9b5f-108">Az eljárás csak olyan felhasználói profil által hajtható végre, amely dolgozóként van beállítva.</span><span class="sxs-lookup"><span data-stu-id="c9b5f-108">The procedure can only be carried out by a user profile that is set up as worker.</span></span>  <span data-ttu-id="c9b5f-109">Ezt a feladatot általában egy alkalmazott végzi el.</span><span class="sxs-lookup"><span data-stu-id="c9b5f-109">This task would normally be carried out by an employee.</span></span> <span data-ttu-id="c9b5f-110">Az alkalmazott által alkalmazott biztonsági szerepkör teszi lehetővé a feladatok elvégzését, vagy ha USMF-et használ, jelentkezzen be ezen a néven: Alíz.</span><span class="sxs-lookup"><span data-stu-id="c9b5f-110">The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.</span></span>
 

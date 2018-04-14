@@ -20,17 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: c5b9ee57b0b855766628caca239059205c103b86
-ms.openlocfilehash: 4a0586324dddc10d64ad6760222f2540f31d6bce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e6bab3de11dbd2aba8b1330284986514a6ac1dfc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="personalized-product-recommendations-overview"></a><span data-ttu-id="1f5f1-103">Személyre szabott termékajánlatok áttekintése</span><span class="sxs-lookup"><span data-stu-id="1f5f1-103">Personalized product recommendations overview</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > <span data-ttu-id="1f5f1-104">A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-104">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span> <span data-ttu-id="1f5f1-105">További információ: [Eltávolított vagy elavult funkciók](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).</span><span class="sxs-lookup"><span data-stu-id="1f5f1-105">For more information see [Removed or deprecated features](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).</span></span> <span data-ttu-id="1f5f1-106">Navigáljon az oldal aljára, ha problémái vannak az adott környezetben már engedélyezett termékajánlásokkal.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-106">Navigate to the bottom of the page if you are facing issues with already-enabled product recommendations for your environment.</span></span> 
@@ -86,9 +85,9 @@ ms.lasthandoff: 03/08/2018
 -   <span data-ttu-id="1f5f1-145">A modell hitelesítő adatok és az azonosító hozzáférhetők a CRT számára, hogy ki lehessen szolgálni a felhő POS és az MPOS felől online módban érkező termékajánlás-lehívásokat.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-145">Model credentials and ID are made available to CRT so that calls for product recommendations from Cloud POS and MPOS in online mode can be honored.</span></span>
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a><span data-ttu-id="1f5f1-146">Már engedélyezett termékajánlások esetében problémák elhárítása</span><span class="sxs-lookup"><span data-stu-id="1f5f1-146">Troubleshoot issues where you have Product recommendations already enabled</span></span> 
->- <span data-ttu-id="1f5f1-147">Keresse meg a **Kiskereskedelmi paraméterek** > **Gépi tanulás** > **Termékajánlások letiltása** elemet, és futtassa a **Globális konfiguráció feladat [1110]** elemet.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-147">Navigate to **Retail Parameters** > **Machine learning** > **Disable product recommendations** and run **Global configuration job [1110]**.</span></span> <span data-ttu-id="1f5f1-148">Ha nem találja a **Gépi tanulás** lapot, forduljon a Dynamics támogatásához.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-148">If you are not able to locate **Machine learning** tab, please contact Dynamics Support.</span></span> 
-
->- <span data-ttu-id="1f5f1-149">Ha az **Ajánlások vezérlőelem** hozzá van adva a tranzakcióképernyőhöz a **Képernyő-elrendezés tervezője** használatával, távolítsa el azt is.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-149">If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well.</span></span> 
+> - <span data-ttu-id="1f5f1-147">Keresse meg a **Kiskereskedelmi paraméterek** > **Gépi tanulás** > **Termékajánlások letiltása** elemet, és futtassa a **Globális konfiguráció feladat [1110]** elemet.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-147">Navigate to **Retail Parameters** > **Machine learning** > **Disable product recommendations** and run **Global configuration job [1110]**.</span></span> <span data-ttu-id="1f5f1-148">Ha nem találja a **Gépi tanulás** lapot, forduljon a Dynamics támogatásához.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-148">If you are not able to locate **Machine learning** tab, please contact Dynamics Support.</span></span> 
+> 
+> - <span data-ttu-id="1f5f1-149">Ha az **Ajánlások vezérlőelem** hozzá van adva a tranzakcióképernyőhöz a **Képernyő-elrendezés tervezője** használatával, távolítsa el azt is.</span><span class="sxs-lookup"><span data-stu-id="1f5f1-149">If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well.</span></span> 
 
 
 

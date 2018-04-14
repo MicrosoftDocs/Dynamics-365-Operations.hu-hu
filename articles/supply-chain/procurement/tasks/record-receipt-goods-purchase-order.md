@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9b2300a593c9e153ee598fa72e29907c82f2b79e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8a47dac61705831b330f7b4939a18c865a8ace7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a><span data-ttu-id="ee213-103">Az áruk bevételezésének rögzítése a beszerzési rendelésen</span><span class="sxs-lookup"><span data-stu-id="ee213-103">Record the receipt of goods on the purchase order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ee213-104">Ez az eljárás bemutatja Önnek, hogyan rögzíthet árubeérkezést közvetlenül egy beszerzési rendelésre.</span><span class="sxs-lookup"><span data-stu-id="ee213-104">This procedure shows you how to record receipt of goods directly on a purchase order.</span></span> <span data-ttu-id="ee213-105">Ezen kívül lehetséges az is, hogy rögzítsen árubeérkezést a raktárban, amit majd később rögzíthet a beszerzési rendelésre.</span><span class="sxs-lookup"><span data-stu-id="ee213-105">It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order.</span></span> <span data-ttu-id="ee213-106">A feladatot általában a beszerzési ügynök, vagy a fizetendő számla koordinátor végzi el.</span><span class="sxs-lookup"><span data-stu-id="ee213-106">This task is typically done by a purchasing agent or an accounts payable coordinator.</span></span> <span data-ttu-id="ee213-107">Az útmutatóban mutatott példa használható az USMF demo adatok cégben.</span><span class="sxs-lookup"><span data-stu-id="ee213-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="ee213-108">A példa tartalmazza az egyszerű beszerzési rendelés létrehozásához szükséges lépéseket, így feladat segédletként használhatja a folyamat során.</span><span class="sxs-lookup"><span data-stu-id="ee213-108">The example includes steps to create a simple purchase order so that you can play the procedure as a task guide.</span></span> <span data-ttu-id="ee213-109">Ha az eljárás alatt a saját adatait használta, az Árubeérkeztetés részfeladattal kellett volna kezdenie.</span><span class="sxs-lookup"><span data-stu-id="ee213-109">If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.</span></span>
 

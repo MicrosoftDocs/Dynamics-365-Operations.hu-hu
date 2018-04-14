@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 17a7d9c40d07524378a671397fed566b9bd3af6b
-ms.openlocfilehash: 306edb85a202ba750c0e9519e5157b6b06292fde
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 091185b7c3c10fa177a3d0c9338ae7950c2f6f47
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a><span data-ttu-id="5a3e3-103">Számlaösszegek számlaegyeztetési eltéréseinek feloldása</span><span class="sxs-lookup"><span data-stu-id="5a3e3-103">Resolve discrepancies during invoice totals matching</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5a3e3-104">A számlaegyeztetés ellenőrzésének egyik módja a számlaösszegek egyeztetése.</span><span class="sxs-lookup"><span data-stu-id="5a3e3-104">One type of invoice matching validation is invoice totals matching.</span></span> <span data-ttu-id="5a3e3-105">Ha szeretné beállítani, hogy a rendszer elvégezze a számlaösszegek egyeztetését, a **Kötelezettségek paraméterei** oldalon, a **Számla ellenőrzése** fülön állítsa a **Számlaösszegek egyeztetése** lehetőséget **Igen** értékre.</span><span class="sxs-lookup"><span data-stu-id="5a3e3-105">To specify that the system should perform invoice totals matching, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Match invoice totals** option **Yes**.</span></span> 
 

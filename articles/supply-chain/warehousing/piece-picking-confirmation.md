@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b1868851d22f41d3278cd9574a48bdf062185012
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5109bc180cedfb21dfb8b2920d71d54812e7e6cf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="piece-picking-confirmation"></a><span data-ttu-id="3c213-103">Darab kitárolásának megerősítése</span><span class="sxs-lookup"><span data-stu-id="3c213-103">Piece picking confirmation</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="3c213-104">A darabkitárolás lehetővé teszi, hogy minden egyes készletet mobileszközön végzett kitárolási vagy leltározási munka segítségével hagyjon jóvá.</span><span class="sxs-lookup"><span data-stu-id="3c213-104">Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.</span></span> <span data-ttu-id="3c213-105">A kitároláshoz megersítheti a feldolgozandó munka mennyiségét a kitárolni kívánt mennyiségére vonatkoztatva.</span><span class="sxs-lookup"><span data-stu-id="3c213-105">For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked.</span></span> <span data-ttu-id="3c213-106">Leltározási munka esetén beolvashatja a leltározandó készletet, és nyomon követheti a teljes mennyiséget.</span><span class="sxs-lookup"><span data-stu-id="3c213-106">For counting work, you can scan the inventory that you are counting and track the total amount.</span></span>
 
@@ -46,8 +46,10 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="3c213-122">A következő lehetőségek közül választhat, ha a munka típusa kitárolás vagy leltározás.</span><span class="sxs-lookup"><span data-stu-id="3c213-122">The following options become available for selection when the work type is pick or counting.</span></span>
 
-| <span data-ttu-id="3c213-123">Lehetőség</span><span class="sxs-lookup"><span data-stu-id="3c213-123">Option</span></span>        | <span data-ttu-id="3c213-124">Leírás</span><span class="sxs-lookup"><span data-stu-id="3c213-124">Description</span></span>   | 
-| ------------- | ------------- |
-| <span data-ttu-id="3c213-125">Darab kitárolásának megerősítése</span><span class="sxs-lookup"><span data-stu-id="3c213-125">Piece picking confirmation</span></span>   | <span data-ttu-id="3c213-126">Elérhető kitárolási és leltározási munkatípusok esetében.</span><span class="sxs-lookup"><span data-stu-id="3c213-126">Available for pick and counting work types.</span></span> <span data-ttu-id="3c213-127">A termék megerősítése automatikusan be van jelölve.</span><span class="sxs-lookup"><span data-stu-id="3c213-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="3c213-128">Lehetővé teszi, hogy a mobileszközről erősítse meg a készlet minden elemét.</span><span class="sxs-lookup"><span data-stu-id="3c213-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> | 
-| <span data-ttu-id="3c213-129">Darabok maximális száma</span><span class="sxs-lookup"><span data-stu-id="3c213-129">Maximum number of pieces</span></span>     | <span data-ttu-id="3c213-130">Elérhető kitárolási munkához, ha a darabkitárolás megerősítése engedélyezve van.</span><span class="sxs-lookup"><span data-stu-id="3c213-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="3c213-131">Beállítja a megerősítendő darabszám maximális értékét.</span><span class="sxs-lookup"><span data-stu-id="3c213-131">Sets a limit to the number of pieces that you must confirm.</span></span> |  
+
+|           <span data-ttu-id="3c213-123">Lehetőség</span><span class="sxs-lookup"><span data-stu-id="3c213-123">Option</span></span>           |                                                                            <span data-ttu-id="3c213-124">Leírás</span><span class="sxs-lookup"><span data-stu-id="3c213-124">Description</span></span>                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="3c213-125">Darab kitárolásának megerősítése</span><span class="sxs-lookup"><span data-stu-id="3c213-125">Piece picking confirmation</span></span> | <span data-ttu-id="3c213-126">Elérhető kitárolási és leltározási munkatípusok esetében.</span><span class="sxs-lookup"><span data-stu-id="3c213-126">Available for pick and counting work types.</span></span> <span data-ttu-id="3c213-127">A termék megerősítése automatikusan be van jelölve.</span><span class="sxs-lookup"><span data-stu-id="3c213-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="3c213-128">Lehetővé teszi, hogy a mobileszközről erősítse meg a készlet minden elemét.</span><span class="sxs-lookup"><span data-stu-id="3c213-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> |
+|  <span data-ttu-id="3c213-129">Darabok maximális száma</span><span class="sxs-lookup"><span data-stu-id="3c213-129">Maximum number of pieces</span></span>  |                   <span data-ttu-id="3c213-130">Elérhető kitárolási munkához, ha a darabkitárolás megerősítése engedélyezve van.</span><span class="sxs-lookup"><span data-stu-id="3c213-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="3c213-131">Beállítja a megerősítendő darabszám maximális értékét.</span><span class="sxs-lookup"><span data-stu-id="3c213-131">Sets a limit to the number of pieces that you must confirm.</span></span>                   |
+
 

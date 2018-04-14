@@ -19,28 +19,26 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6ac0e2abcb5dce58ad16737a0ef689ceaeb50c44
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8923f75370c6707ab6a4304dd139081807c6decd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a><span data-ttu-id="d951e-103">Teljes összeg és Intervallumszámítás opciók áfakódokhoz</span><span class="sxs-lookup"><span data-stu-id="d951e-103">Whole amount and Interval calculation options for sales tax codes</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="d951e-104">Ez a cikk bemutatja a Számítási mód áfakódokra vonatkozó beállításait, valamint a forgalmi adó számítását intervallumokra és teljes összegekre.</span><span class="sxs-lookup"><span data-stu-id="d951e-104">This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.</span></span>
 
 <span data-ttu-id="d951e-105">Beállíthatja, hogy az áfakód egy teljes összeg, vagy egy időszakhoz tartozó összeget alapján alapján legyen kiszámítva.</span><span class="sxs-lookup"><span data-stu-id="d951e-105">You can set up a sales tax code to be calculated based on a whole amount or an interval amount.</span></span> <span data-ttu-id="d951e-106">A Forgalmi adó kódjainak lapján használja a Számítási mód gyorslapot az áfakód számítási módjának kiválasztásáho.</span><span class="sxs-lookup"><span data-stu-id="d951e-106">In the Sales tax codes page, use the Calculation method field on the Calculation FastTab to select how to calculate a sales tax code.</span></span>
--   <span data-ttu-id="d951e-107">Teljes összeg – Az áfakulcs a teljes adózó összegre vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="d951e-107">Whole amount – The tax rate is applied to the whole taxable amount.</span></span>
--   <span data-ttu-id="d951e-108">Intervallum – Az adóalap részekre oszlik, és mindegyik rész egy tartományba esik, amelynek saját áfakulcsa van.</span><span class="sxs-lookup"><span data-stu-id="d951e-108">Interval – The taxable amount is divided into parts, each of which falls in a range that has a specific sales tax rate.</span></span> <span data-ttu-id="d951e-109">Az egyes részek áfájának számítása az adott részt tartalmazó intervallumra vonatkozó áfakulcs alapján történik.</span><span class="sxs-lookup"><span data-stu-id="d951e-109">The part of the amount that falls in a given interval is taxed according to the tax rate for that interval.</span></span> <span data-ttu-id="d951e-110">Az áfa értéke az egyes intervallumokra kiszámított áfák összegével egyenlő.</span><span class="sxs-lookup"><span data-stu-id="d951e-110">The sales tax is the sum of the tax amounts that are calculated for each amount interval.</span></span>
-> [!NOTE]                                                                                                                              
-> <span data-ttu-id="d951e-111">Az intervallum lehetőség csak akkor érhető el, ha kiválasztja a Sort a Számítási mód mezőjében a Főkönyvi paraméterek oldalon a Forgalmi adó területen.</span><span class="sxs-lookup"><span data-stu-id="d951e-111">The Interval option is available only when you select Line in the Calculation method field in the Sales tax area of the General ledger parameters page.</span></span> 
+- <span data-ttu-id="d951e-107">Teljes összeg – Az áfakulcs a teljes adózó összegre vonatkozik.</span><span class="sxs-lookup"><span data-stu-id="d951e-107">Whole amount – The tax rate is applied to the whole taxable amount.</span></span>
+- <span data-ttu-id="d951e-108">Intervallum – Az adóalap részekre oszlik, és mindegyik rész egy tartományba esik, amelynek saját áfakulcsa van.</span><span class="sxs-lookup"><span data-stu-id="d951e-108">Interval – The taxable amount is divided into parts, each of which falls in a range that has a specific sales tax rate.</span></span> <span data-ttu-id="d951e-109">Az egyes részek áfájának számítása az adott részt tartalmazó intervallumra vonatkozó áfakulcs alapján történik.</span><span class="sxs-lookup"><span data-stu-id="d951e-109">The part of the amount that falls in a given interval is taxed according to the tax rate for that interval.</span></span> <span data-ttu-id="d951e-110">Az áfa értéke az egyes intervallumokra kiszámított áfák összegével egyenlő.</span><span class="sxs-lookup"><span data-stu-id="d951e-110">The sales tax is the sum of the tax amounts that are calculated for each amount interval.</span></span>
+  > [!NOTE]                                                                                                                              
+  > <span data-ttu-id="d951e-111">Az intervallum lehetőség csak akkor érhető el, ha kiválasztja a Sort a Számítási mód mezőjében a Főkönyvi paraméterek oldalon a Forgalmi adó területen.</span><span class="sxs-lookup"><span data-stu-id="d951e-111">The Interval option is available only when you select Line in the Calculation method field in the Sales tax area of the General ledger parameters page.</span></span> 
 
 <span data-ttu-id="d951e-112">Az intervallumok beállítása a Forgalmi adó kódlapon történik, úgy, hogy adókulcsonként Minimális és Maximális korlátösszegeket adunk meg.</span><span class="sxs-lookup"><span data-stu-id="d951e-112">Intervals are set up in the Sales tax code values page by entering Minimum and Maximum limit amounts per tax rate.</span></span> <span data-ttu-id="d951e-113">Az adóköteles összegekre számítandó áfák intervallumainak – a kiválasztott számítási módszertől függetlenül – a következő szabályoknak kell megfelelniük:</span><span class="sxs-lookup"><span data-stu-id="d951e-113">For taxes to be calculated on all taxable amounts, regardless of which calculation method is selected, intervals must follow these rules:</span></span>
 -   <span data-ttu-id="d951e-114">Az első intervallumnak 0 kell, hogy legyen a Minimális határértéke.</span><span class="sxs-lookup"><span data-stu-id="d951e-114">The first interval must have a Minimum limit of zero.</span></span>
@@ -51,6 +49,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="example-whole-amount-method-of-calculation"></a><span data-ttu-id="d951e-119">Példa: Teljes összegű számítási mód</span><span class="sxs-lookup"><span data-stu-id="d951e-119">Example: Whole amount method of calculation</span></span>
 <span data-ttu-id="d951e-120">Az Áfakód értékek kódlapon a következő intervallumokban vannak beállítva az áfakulcsok:</span><span class="sxs-lookup"><span data-stu-id="d951e-120">In the Sales tax code values page, sales tax rates are set up in the following intervals:</span></span>
+
 |                   |                   |              |
 |-------------------|-------------------|--------------|
 | <span data-ttu-id="d951e-121">**Minimumhatár**</span><span class="sxs-lookup"><span data-stu-id="d951e-121">**Minimum limit**</span></span> | <span data-ttu-id="d951e-122">**Maximum határ**</span><span class="sxs-lookup"><span data-stu-id="d951e-122">**Maximum limit**</span></span> | <span data-ttu-id="d951e-123">**Áfakulcs**</span><span class="sxs-lookup"><span data-stu-id="d951e-123">**Tax rate**</span></span> |
@@ -86,7 +85,7 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="d951e-173">85,00</span><span class="sxs-lookup"><span data-stu-id="d951e-173">85.00</span></span>                  | <span data-ttu-id="d951e-174">(50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)</span><span class="sxs-lookup"><span data-stu-id="d951e-174">(50.00 \* 0.30 = 15.00) + (35.00 \* 0.20 = 7.00)</span></span>                          | <span data-ttu-id="d951e-175">22,00</span><span class="sxs-lookup"><span data-stu-id="d951e-175">22.00</span></span>     |
 | <span data-ttu-id="d951e-176">305,00</span><span class="sxs-lookup"><span data-stu-id="d951e-176">305.00</span></span>                 | <span data-ttu-id="d951e-177">(50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50)</span><span class="sxs-lookup"><span data-stu-id="d951e-177">(50.00 \* 0.30 = 15.00) + (50.00 \* 0.20 = 10.00) + (205 \* 0.10 = 20.50)</span></span> | <span data-ttu-id="d951e-178">45,50</span><span class="sxs-lookup"><span data-stu-id="d951e-178">45.50</span></span>     |
 
- 
+
 
 <span data-ttu-id="d951e-179">További tájékoztatás: [Az áfaérték megállapítása a Számítás alapja és a Számítási módszer mezők alapján](marginal-base-field.md).</span><span class="sxs-lookup"><span data-stu-id="d951e-179">For more information, see [Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md).</span></span>
 

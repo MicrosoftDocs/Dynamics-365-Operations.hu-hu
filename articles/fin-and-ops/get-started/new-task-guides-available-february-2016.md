@@ -18,17 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 33cd67bda4d4b868b00cb1c0a062de03d3aa6273
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: caa07418cb834c7f004c4fb95d5ea1c0e3a28f56
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-task-guides-february-2016"></a><span data-ttu-id="2a290-104">Új feladatútmutatók (2016. február)</span><span class="sxs-lookup"><span data-stu-id="2a290-104">New task guides (February 2016)</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2a290-105">Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="2a290-105">This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.</span></span>  <span data-ttu-id="2a290-106">A közzétett könyvtárak tartalmazzák a Microsoft Dynamics AX APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).</span><span class="sxs-lookup"><span data-stu-id="2a290-106">The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX and (February 2016) Getting started.</span></span>
 
@@ -50,8 +49,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-124">A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-124">Set up Accounts payable invoice matching validation</span></span>       | <span data-ttu-id="2a290-125">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-125">Global</span></span>             |
 | <span data-ttu-id="2a290-126">Szállítói számla irányelveinek beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-126">Set up vendor invoice policies</span></span>                            | <span data-ttu-id="2a290-127">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-127">Global</span></span>             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a><span data-ttu-id="2a290-128">Kinnlevőségek</span><span class="sxs-lookup"><span data-stu-id="2a290-128">Accounts receivable</span></span>
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-153">A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata</span><span class="sxs-lookup"><span data-stu-id="2a290-153">Review collections information</span></span>                              | <span data-ttu-id="2a290-154">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-154">Global</span></span>             |
 | <span data-ttu-id="2a290-155">Kinnlevőségek korosítási adatainak beállítás és létrehozása</span><span class="sxs-lookup"><span data-stu-id="2a290-155">Set up and generate accounts receivable aging information</span></span>   | <span data-ttu-id="2a290-156">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-156">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a><span data-ttu-id="2a290-157">Készpénz- és bankkezelés</span><span class="sxs-lookup"><span data-stu-id="2a290-157">Cash and bank management</span></span>
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-196">Vevő által kiállított, jövőben esedékes csekk kiegyenlítése</span><span class="sxs-lookup"><span data-stu-id="2a290-196">Settle a postdated check from a customer</span></span>                             | <span data-ttu-id="2a290-197">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-197">Global</span></span>             |
 | <span data-ttu-id="2a290-198">Szállítói fizetési áttekintés</span><span class="sxs-lookup"><span data-stu-id="2a290-198">Vendor payment overview</span></span>                                              | <span data-ttu-id="2a290-199">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-199">Global</span></span>             |
 
- 
 
+ 
 ### <a name="compliance"></a><span data-ttu-id="2a290-200">Megfelelés</span><span class="sxs-lookup"><span data-stu-id="2a290-200">Compliance</span></span>
 
 |                                            |                    |
@@ -108,8 +107,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-201">**BPM Sor**</span><span class="sxs-lookup"><span data-stu-id="2a290-201">**BPM Line**</span></span>                               | <span data-ttu-id="2a290-202">**Ország/Terület**</span><span class="sxs-lookup"><span data-stu-id="2a290-202">**Country/Region**</span></span> |
 | <span data-ttu-id="2a290-203">Naplózási házirendek meghatározása a forrásbizonylatok számára</span><span class="sxs-lookup"><span data-stu-id="2a290-203">Define audit policies for source documents</span></span> | <span data-ttu-id="2a290-204">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-204">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cost-management"></a><span data-ttu-id="2a290-205">Költségkezelés</span><span class="sxs-lookup"><span data-stu-id="2a290-205">Cost management</span></span>
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-214">Jelenlegi WIP állapot megtekintése egy termelési rendelésen</span><span class="sxs-lookup"><span data-stu-id="2a290-214">View current WIP status on a production order</span></span>                       | <span data-ttu-id="2a290-215">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-215">Global</span></span>             |
 | <span data-ttu-id="2a290-216">Készletkimutatás és költségobjektumonkénti KPI megtekintése</span><span class="sxs-lookup"><span data-stu-id="2a290-216">View inventory statement and KPI by cost object</span></span>                     | <span data-ttu-id="2a290-217">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-217">Global</span></span>             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a><span data-ttu-id="2a290-218">Ország/Terület szolgáltatás</span><span class="sxs-lookup"><span data-stu-id="2a290-218">Country/Region functionality</span></span>
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-485">GB-00009 Jóváírás létrehozása a kiegyenlítési engedményre</span><span class="sxs-lookup"><span data-stu-id="2a290-485">GB-00009 Create a credit note on the settlement discount</span></span>                                               | <span data-ttu-id="2a290-486">Egyesült Királyság</span><span class="sxs-lookup"><span data-stu-id="2a290-486">United Kingdom</span></span>                  |
 | <span data-ttu-id="2a290-487">GB-00009Jóváírási paraméterek beállítása azonnali fizetési engedményhez</span><span class="sxs-lookup"><span data-stu-id="2a290-487">GB-00009 Setup parameters for credit note on prompt payment discount</span></span>                                   | <span data-ttu-id="2a290-488">Egyesült Királyság</span><span class="sxs-lookup"><span data-stu-id="2a290-488">United Kingdom</span></span>                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a><span data-ttu-id="2a290-489">Jövőkép és stratégia kialakítása</span><span class="sxs-lookup"><span data-stu-id="2a290-489">Develop Vision and Strategy</span></span>
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-498">A kérdés függővé tétele az előző kérdésre adott választól (Feltételes kérdések)</span><span class="sxs-lookup"><span data-stu-id="2a290-498">Make a question dependent on the answer of the previous question (Conditional questions)</span></span> | <span data-ttu-id="2a290-499">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-499">Global</span></span>             |
 | <span data-ttu-id="2a290-500">Százalékszámon alapuló kérdőív értékelése</span><span class="sxs-lookup"><span data-stu-id="2a290-500">Score a questionnaire based on Percent</span></span>                                                   | <span data-ttu-id="2a290-501">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-501">Global</span></span>             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a><span data-ttu-id="2a290-502">Elektronikus jelentés</span><span class="sxs-lookup"><span data-stu-id="2a290-502">Electronic reporting</span></span>
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-511">ER - adatmodell leképezése a kiválasztott adatforrásokra</span><span class="sxs-lookup"><span data-stu-id="2a290-511">ER Map data model to selected data sources</span></span>      | <span data-ttu-id="2a290-512">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-512">Global</span></span>             |
 | <span data-ttu-id="2a290-513">ER - szolgáltató kiválasztása</span><span class="sxs-lookup"><span data-stu-id="2a290-513">ER Select service provider</span></span>                      | <span data-ttu-id="2a290-514">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-514">Global</span></span>             |
 
- 
 
+ 
 ### <a name="expense-management"></a><span data-ttu-id="2a290-515">Költséggazdálkodás</span><span class="sxs-lookup"><span data-stu-id="2a290-515">Expense management</span></span>
 
 |                              |                    |
@@ -298,8 +297,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-516">**BPM Sor**</span><span class="sxs-lookup"><span data-stu-id="2a290-516">**BPM Line**</span></span>                 | <span data-ttu-id="2a290-517">**Ország/Terület**</span><span class="sxs-lookup"><span data-stu-id="2a290-517">**Country/Region**</span></span> |
 | <span data-ttu-id="2a290-518">Költségkezelés konfigurálása</span><span class="sxs-lookup"><span data-stu-id="2a290-518">Configure expense management</span></span> | <span data-ttu-id="2a290-519">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-519">Global</span></span>             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a><span data-ttu-id="2a290-520">Tárgyi eszközök</span><span class="sxs-lookup"><span data-stu-id="2a290-520">Fixed assets</span></span>
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-549">Tárgyi eszköz felosztása</span><span class="sxs-lookup"><span data-stu-id="2a290-549">Split a fixed asset</span></span>                                       | <span data-ttu-id="2a290-550">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-550">Global</span></span>             |
 | <span data-ttu-id="2a290-551">Tárgyi eszköz áthelyezése</span><span class="sxs-lookup"><span data-stu-id="2a290-551">Transfer a fixed asset</span></span>                                    | <span data-ttu-id="2a290-552">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-552">Global</span></span>             |
 
- 
 
+ 
 ### <a name="general-ledger"></a><span data-ttu-id="2a290-553">Főkönyv</span><span class="sxs-lookup"><span data-stu-id="2a290-553">General ledger</span></span>
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-602">Naplóbejegyzések vagy tranzakciók megtekintése</span><span class="sxs-lookup"><span data-stu-id="2a290-602">View journal entries or transactions</span></span>                              | <span data-ttu-id="2a290-603">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-603">Global</span></span>             |
 | <span data-ttu-id="2a290-604">Naplóból kapcsolódó vállalatközi bizonylat megtekintése</span><span class="sxs-lookup"><span data-stu-id="2a290-604">View related intercompany voucher from journal</span></span>                    | <span data-ttu-id="2a290-605">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-605">Global</span></span>             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a><span data-ttu-id="2a290-606">Emberierőforrás-menedzsment</span><span class="sxs-lookup"><span data-stu-id="2a290-606">Human capital management</span></span>
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-677">Juttatásra való jogosultsági irányelvek beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-677">Setting benefit eligibility policies</span></span>                             | <span data-ttu-id="2a290-678">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-678">Global</span></span>             |
 | <span data-ttu-id="2a290-679">I9 dokumentumtípusok beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-679">Setting up i9 document types</span></span>                                     | <span data-ttu-id="2a290-680">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-680">Global</span></span>             |
 
- 
 
+ 
 ### <a name="inventory-management"></a><span data-ttu-id="2a290-681">Készletgazdálkodás</span><span class="sxs-lookup"><span data-stu-id="2a290-681">Inventory management</span></span>
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-712">Egy cikk vagy egy alapanyag nyomon követése</span><span class="sxs-lookup"><span data-stu-id="2a290-712">Trace an item or raw material</span></span>                                                     | <span data-ttu-id="2a290-713">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-713">Global</span></span>             |
 | <span data-ttu-id="2a290-714">Tényleges készlet áthelyezése raktáron belül</span><span class="sxs-lookup"><span data-stu-id="2a290-714">Transfer physical inventory within the warehouse</span></span>                                  | <span data-ttu-id="2a290-715">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-715">Global</span></span>             |
 
- 
 
+ 
 ### <a name="manufacturing"></a><span data-ttu-id="2a290-716">Gyártás</span><span class="sxs-lookup"><span data-stu-id="2a290-716">Manufacturing</span></span>
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-803">Anyagok átvitele Kanban-feladatokkal</span><span class="sxs-lookup"><span data-stu-id="2a290-803">Transfer material with Kanban jobs</span></span>                            | <span data-ttu-id="2a290-804">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-804">Global</span></span>             |
 | <span data-ttu-id="2a290-805">Termelési folyamat és verzió érvényesítése</span><span class="sxs-lookup"><span data-stu-id="2a290-805">Validate production flow and version</span></span>                          | <span data-ttu-id="2a290-806">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-806">Global</span></span>             |
 
- 
 
+ 
 ### <a name="master-planning"></a><span data-ttu-id="2a290-807">Alaptervezés</span><span class="sxs-lookup"><span data-stu-id="2a290-807">Master planning</span></span>
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-816">Kritikus fontosságú anyagok és a szállítói kapacitás meghatározása</span><span class="sxs-lookup"><span data-stu-id="2a290-816">Identify critical materials and supplier capacity</span></span> | <span data-ttu-id="2a290-817">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-817">Global</span></span>             |
 | <span data-ttu-id="2a290-818">Igény-előrejelzés manuális módosítása</span><span class="sxs-lookup"><span data-stu-id="2a290-818">Modify a demand forecast manually</span></span>                 | <span data-ttu-id="2a290-819">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-819">Global</span></span>             |
 
- 
 
+ 
 ### <a name="organization-administration"></a><span data-ttu-id="2a290-820">Szervezeti adminisztráció</span><span class="sxs-lookup"><span data-stu-id="2a290-820">Organization administration</span></span>
 
 |                                           |                    |
@@ -501,8 +500,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-831">Az elektronikus aláírások beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-831">Set up electronic signatures</span></span>              | <span data-ttu-id="2a290-832">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-832">Global</span></span>             |
 | <span data-ttu-id="2a290-833">Állítson be minden szükséges számsorozatot a varázsló segítségével</span><span class="sxs-lookup"><span data-stu-id="2a290-833">Set up number sequences by using a wizard</span></span> | <span data-ttu-id="2a290-834">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-834">Global</span></span>             |
 
- 
 
+ 
 ### <a name="planning"></a><span data-ttu-id="2a290-835">Tervezés</span><span class="sxs-lookup"><span data-stu-id="2a290-835">Planning</span></span>
 
 |                        |                    |
@@ -510,8 +509,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-836">**BPM Sor**</span><span class="sxs-lookup"><span data-stu-id="2a290-836">**BPM Line**</span></span>           | <span data-ttu-id="2a290-837">**Ország/Terület**</span><span class="sxs-lookup"><span data-stu-id="2a290-837">**Country/Region**</span></span> |
 | <span data-ttu-id="2a290-838">Elérhetőség megállapítása</span><span class="sxs-lookup"><span data-stu-id="2a290-838">Determine availability</span></span> | <span data-ttu-id="2a290-839">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-839">Global</span></span>             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a><span data-ttu-id="2a290-840">Beszerzés és forrás</span><span class="sxs-lookup"><span data-stu-id="2a290-840">Procurement and sourcing</span></span>
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-853">Szállítók keresése</span><span class="sxs-lookup"><span data-stu-id="2a290-853">Search for vendors</span></span>                                               | <span data-ttu-id="2a290-854">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-854">Global</span></span>             |
 | <span data-ttu-id="2a290-855">Beszerzési kategóriahierarchia beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-855">Set up a procurement category hierarchy</span></span>                          | <span data-ttu-id="2a290-856">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-856">Global</span></span>             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a><span data-ttu-id="2a290-857">Termékinformáció és konfiguráció.</span><span class="sxs-lookup"><span data-stu-id="2a290-857">Product information and configuration</span></span>
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-892">..\ pénzügyi dimenziókon \ dimenziókon alapuló alaptermék közzététele</span><span class="sxs-lookup"><span data-stu-id="2a290-892">Release a ..\financial-dimensions\dimension-based product master</span></span>              | <span data-ttu-id="2a290-893">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-893">Global</span></span>             |
 | <span data-ttu-id="2a290-894">Termékmodellekhez szükséges adatok továbbítása</span><span class="sxs-lookup"><span data-stu-id="2a290-894">Transfer data for product models</span></span>                      | <span data-ttu-id="2a290-895">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-895">Global</span></span>             |
 
- 
 
+ 
 ### <a name="public-sector"></a><span data-ttu-id="2a290-896">Állami szektor</span><span class="sxs-lookup"><span data-stu-id="2a290-896">Public sector</span></span>
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-931">Alaptípus beállítása az állami szektor részére</span><span class="sxs-lookup"><span data-stu-id="2a290-931">Set up a fund for Public sector</span></span>                                                         | <span data-ttu-id="2a290-932">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-932">Global</span></span>             |
 | <span data-ttu-id="2a290-933">Beszerzési szerződés osztályozásainak beállítása az állami szektor számára</span><span class="sxs-lookup"><span data-stu-id="2a290-933">Set up purchase agreement classifications for Public Sector</span></span>                             | <span data-ttu-id="2a290-934">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-934">Global</span></span>             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a><span data-ttu-id="2a290-935">Kiskereskedelem és kereskedelem</span><span class="sxs-lookup"><span data-stu-id="2a290-935">Retail and commerce</span></span>
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-1002">Kiskereskedelmi ármódosítások</span><span class="sxs-lookup"><span data-stu-id="2a290-1002">Retail price adjustments</span></span>                                                                  | <span data-ttu-id="2a290-1003">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1003">Global</span></span>             |
 | <span data-ttu-id="2a290-1004">Konfiguráció tárolása kiskereskedelmi kimutatásokhoz</span><span class="sxs-lookup"><span data-stu-id="2a290-1004">Store configurations for Retail statements</span></span>                                                | <span data-ttu-id="2a290-1005">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1005">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales"></a><span data-ttu-id="2a290-1006">Értékesítés</span><span class="sxs-lookup"><span data-stu-id="2a290-1006">Sales</span></span>
 
 |                                            |                    |
@@ -642,8 +641,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-1035">Szállítási rendelés közvetlen kiszállításként</span><span class="sxs-lookup"><span data-stu-id="2a290-1035">Ship orders as direct deliveries</span></span>           | <span data-ttu-id="2a290-1036">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1036">Global</span></span>             |
 | <span data-ttu-id="2a290-1037">Értékesítési rendelések szállítása raktározás nélkül</span><span class="sxs-lookup"><span data-stu-id="2a290-1037">Ship sales orders without warehousing</span></span>      | <span data-ttu-id="2a290-1038">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1038">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales-tax"></a><span data-ttu-id="2a290-1039">Forgalmi adó</span><span class="sxs-lookup"><span data-stu-id="2a290-1039">Sales tax</span></span>
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-1060">Adóelőleg beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-1060">Set up withholding tax</span></span>                             | <span data-ttu-id="2a290-1061">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1061">Global</span></span>             |
 | <span data-ttu-id="2a290-1062">Feladott áfatranzakciók megtekintése</span><span class="sxs-lookup"><span data-stu-id="2a290-1062">View posted sales tax transactions</span></span>                 | <span data-ttu-id="2a290-1063">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1063">Global</span></span>             |
 
- 
 
+ 
 ### <a name="security"></a><span data-ttu-id="2a290-1064">Biztonság</span><span class="sxs-lookup"><span data-stu-id="2a290-1064">Security</span></span>
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-1069">Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása</span><span class="sxs-lookup"><span data-stu-id="2a290-1069">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="2a290-1070">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1070">Global</span></span>             |
 | <span data-ttu-id="2a290-1071">Feladatkörök szétválasztásának beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-1071">Set up segregation of duties</span></span>                            | <span data-ttu-id="2a290-1072">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1072">Global</span></span>             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a><span data-ttu-id="2a290-1073">Raktározás és szállítás</span><span class="sxs-lookup"><span data-stu-id="2a290-1073">Warehouse and transportation</span></span>
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="2a290-1106">A szállítmányozók beállítása</span><span class="sxs-lookup"><span data-stu-id="2a290-1106">Set up shipping carriers</span></span>                                                          | <span data-ttu-id="2a290-1107">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1107">Global</span></span>             |
 | <span data-ttu-id="2a290-1108">Rakománytervezési munkaterület használata a rakományok és szállítmányok tervezésére</span><span class="sxs-lookup"><span data-stu-id="2a290-1108">Use the Load Planning Workbench to plan loads and shipments</span></span>                       | <span data-ttu-id="2a290-1109">Globális</span><span class="sxs-lookup"><span data-stu-id="2a290-1109">Global</span></span>             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a><span data-ttu-id="2a290-1110">Feladat-útmutatók (február 2016) az Első lépések könyvtár</span><span class="sxs-lookup"><span data-stu-id="2a290-1110">Task guides in the (February 2016) Getting started library</span></span>
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | <span data-ttu-id="2a290-1111">**BPM Sor**</span><span class="sxs-lookup"><span data-stu-id="2a290-1111">**BPM Line**</span></span>                                       | <span data-ttu-id="2a290-1112">**Ország/Terület**</span><span class="sxs-lookup"><span data-stu-id="2a290-1112">**Country/Region**</span></span> |

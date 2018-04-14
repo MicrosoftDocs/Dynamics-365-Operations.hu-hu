@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 585ea4098d059fabd41dec935e454fa6a675b151
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intelligence"></a><span data-ttu-id="49181-103">Intelligencia</span><span class="sxs-lookup"><span data-stu-id="49181-103">Intelligence</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="49181-104">Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzletiintelligencia- (BI) eszközökre és jelentéskészítési eszközökre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="49181-104">This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

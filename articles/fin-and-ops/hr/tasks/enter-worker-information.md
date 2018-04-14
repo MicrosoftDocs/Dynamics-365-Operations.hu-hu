@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: ffd30775b15037f12a4eeb7d750aca80062455fd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bfcebf61a5f613517e05af5c1548b5ceaaed53ee
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-worker-information"></a><span data-ttu-id="8b1ac-103">Dolgozói adatok megadása</span><span class="sxs-lookup"><span data-stu-id="8b1ac-103">Enter worker information</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8b1ac-104">Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat generált, a következő lépés a dolgozói információk megadása a felvehető emberek esetében.</span><span class="sxs-lookup"><span data-stu-id="8b1ac-104">After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired.</span></span> <span data-ttu-id="8b1ac-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="8b1ac-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8b1ac-106">A bemutatóadatok tartalmaznak egy nyitott tömeges felvételi projektet.</span><span class="sxs-lookup"><span data-stu-id="8b1ac-106">The demo data contains an open mass hire project.</span></span> <span data-ttu-id="8b1ac-107">Az eljárás megkezdéséhez ugorjon az Emberi erőforrások > Toborzás > Tömeges felvételi projektek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8b1ac-107">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span>
 

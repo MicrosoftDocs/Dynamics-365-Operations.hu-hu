@@ -20,17 +20,17 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e14d5d11e987d2dbc841f86c39fc7e94864144d3
-ms.openlocfilehash: 658575492597eed91509561f4710f07e271c53c8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 84cb1b81d1ab6ac1e38b41f7f3f8629415f92926
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a><span data-ttu-id="2fbcf-103">Az elszámolóárakkal kapcsolatos költségszámítási verziókra vonatkozó korlátozások</span><span class="sxs-lookup"><span data-stu-id="2fbcf-103">Restrictions on costing versions for standard costs</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2fbcf-104">Ez a témakör az elszámolóárakra vonatkozó költségszámítási verziókra érvényes korlátozásokat mutatja be.</span><span class="sxs-lookup"><span data-stu-id="2fbcf-104">This topic describes the restrictions that apply to a costing version for standard costs.</span></span> 
 

@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a8789d7c5b06e83d0d1799b249b48a00e7c0ae34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 91b862155d60f297a1278e44f58804ac385be64c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-mass-hire-project"></a><span data-ttu-id="65ef3-103">Tömeges felvételi projekt létrehozása</span><span class="sxs-lookup"><span data-stu-id="65ef3-103">Create a mass hire project</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="65ef3-104">Ez az eljárás végigvezeti a tömeges felvételi projekt beállítási folyamatán.</span><span class="sxs-lookup"><span data-stu-id="65ef3-104">This procedure walks through the process of setting up a mass hire project.</span></span> <span data-ttu-id="65ef3-105">Egy toborzó a tömeges felvételi projekt segítségével könnyedén létrehozhat több beosztást, majd felvehet több dolgozót ezekre a beosztásokra.</span><span class="sxs-lookup"><span data-stu-id="65ef3-105">A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions.</span></span> <span data-ttu-id="65ef3-106">Az eljárás megkezdéséhez ugorjon az Emberi erőforrások > Toborzás > Tömeges felvételi projektek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="65ef3-106">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span> <span data-ttu-id="65ef3-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="65ef3-107">The demo data company used to create this procedure is USMF.</span></span>
 

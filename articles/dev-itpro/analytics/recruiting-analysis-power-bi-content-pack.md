@@ -19,16 +19,16 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: ee82e3c8cabde0a1bfb3a89308fdc020feacc4c6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ecfe713215adbc5eec0ef69c6c5c4d95b886ceb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="recruiting-power-bi-content"></a><span data-ttu-id="a9efc-104">Toborzási Power BI-tartalom</span><span class="sxs-lookup"><span data-stu-id="a9efc-104">Recruiting Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a9efc-105">Ez a témakör ismerteti a **Toborzási** Microsoft Power BI-tartalmat.</span><span class="sxs-lookup"><span data-stu-id="a9efc-105">This topic describes the **Recruiting** Microsoft Power BI content.</span></span> <span data-ttu-id="a9efc-106">Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="a9efc-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 

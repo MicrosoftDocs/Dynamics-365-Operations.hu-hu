@@ -19,16 +19,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad524e8d585da2140f3cdae17e3a1a2832ada3f0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a><span data-ttu-id="95a12-102">Attribútumok, attribútumcsoportok és a társításaik a különböző Retail entitásokkal a Finance and Operations alkalmazásban</span><span class="sxs-lookup"><span data-stu-id="95a12-102">Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="95a12-103">Az *Attribútumok* lehetővé teszik a termék és a jellemzői további leírását felhasználó által definiált mezőkkel (például **Memória mérete**, **Merevlemez kapacitása**, **Energy Star kompatibilis** és így tovább).</span><span class="sxs-lookup"><span data-stu-id="95a12-103">*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on).</span></span> <span data-ttu-id="95a12-104">A Microsoft Dynamics 365 for Finance and Operations esetében az attribútumok különböző Retail entitásokhoz, például termékkategóriákhoz és kiskereskedelmi csatornákhoz, társíthatók, és megadhatók hozzájuk alapértelmezett értékek.</span><span class="sxs-lookup"><span data-stu-id="95a12-104">In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them.</span></span> <span data-ttu-id="95a12-105">A termékek ezután öröklik az attribútumokat és a hozzájuk tartozó alapértelmezett értékeket, amikor társítják őket egy termékkategóriához vagy kiskereskedelmi csatornához.</span><span class="sxs-lookup"><span data-stu-id="95a12-105">Products then inherit the attributes and the default values when they are associated with the product categories or retail channels.</span></span> <span data-ttu-id="95a12-106">Az alapértelmezett értékek felülírhatók az egyes termékek szintjén, a kiskereskedelmi csatorna szintjén vagy a kiskereskedelmi kategóriában.</span><span class="sxs-lookup"><span data-stu-id="95a12-106">The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.</span></span>
  
@@ -227,13 +227,13 @@ ms.lasthandoff: 03/26/2018
 5. <span data-ttu-id="95a12-307">A **Termékek** gyorslapon jelölje be a szükséges terméket, és válassza ki az **Attribútumok** elemet a termékrács felett.</span><span class="sxs-lookup"><span data-stu-id="95a12-307">On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.</span></span>
 6. <span data-ttu-id="95a12-308">A következő gyorslapon frissítése a szükséges attribútumok értékeit:</span><span class="sxs-lookup"><span data-stu-id="95a12-308">On the following FastTabs, update the values of the required attributes:</span></span>
 
-    - <span data-ttu-id="95a12-309">Megosztott termékhez tartozó média</span><span class="sxs-lookup"><span data-stu-id="95a12-309">Shared product media</span></span>
-    - <span data-ttu-id="95a12-310">Megosztott termékattribútumok</span><span class="sxs-lookup"><span data-stu-id="95a12-310">Shared product attributes</span></span>
-    - <span data-ttu-id="95a12-311">Csatornamédia</span><span class="sxs-lookup"><span data-stu-id="95a12-311">Channel media</span></span>
-    - <span data-ttu-id="95a12-312">Csatornatermék-attribútumok</span><span class="sxs-lookup"><span data-stu-id="95a12-312">Channel product attributes</span></span>
+   - <span data-ttu-id="95a12-309">Megosztott termékhez tartozó média</span><span class="sxs-lookup"><span data-stu-id="95a12-309">Shared product media</span></span>
+   - <span data-ttu-id="95a12-310">Megosztott termékattribútumok</span><span class="sxs-lookup"><span data-stu-id="95a12-310">Shared product attributes</span></span>
+   - <span data-ttu-id="95a12-311">Csatornamédia</span><span class="sxs-lookup"><span data-stu-id="95a12-311">Channel media</span></span>
+   - <span data-ttu-id="95a12-312">Csatornatermék-attribútumok</span><span class="sxs-lookup"><span data-stu-id="95a12-312">Channel product attributes</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="95a12-313">Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="95a12-313">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="95a12-313">Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="95a12-313">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
 
 ![Katalógus-termékattribútum csoportok](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ ms.lasthandoff: 03/26/2018
 
 5. <span data-ttu-id="95a12-321">A következő gyorslapon frissítése a szükséges attribútumok értékeit:</span><span class="sxs-lookup"><span data-stu-id="95a12-321">On the following FastTabs, update the values of the required attributes:</span></span>
 
-    - <span data-ttu-id="95a12-322">Megosztott termékhez tartozó média</span><span class="sxs-lookup"><span data-stu-id="95a12-322">Shared product media</span></span>
-    - <span data-ttu-id="95a12-323">Megosztott termékattribútumok</span><span class="sxs-lookup"><span data-stu-id="95a12-323">Shared product attributes</span></span>
-    - <span data-ttu-id="95a12-324">Csatornamédia</span><span class="sxs-lookup"><span data-stu-id="95a12-324">Channel media</span></span>
-    - <span data-ttu-id="95a12-325">Csatornatermék-attribútumok</span><span class="sxs-lookup"><span data-stu-id="95a12-325">Channel product attributes</span></span>
+   - <span data-ttu-id="95a12-322">Megosztott termékhez tartozó média</span><span class="sxs-lookup"><span data-stu-id="95a12-322">Shared product media</span></span>
+   - <span data-ttu-id="95a12-323">Megosztott termékattribútumok</span><span class="sxs-lookup"><span data-stu-id="95a12-323">Shared product attributes</span></span>
+   - <span data-ttu-id="95a12-324">Csatornamédia</span><span class="sxs-lookup"><span data-stu-id="95a12-324">Channel media</span></span>
+   - <span data-ttu-id="95a12-325">Csatornatermék-attribútumok</span><span class="sxs-lookup"><span data-stu-id="95a12-325">Channel product attributes</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="95a12-326">Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="95a12-326">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="95a12-326">Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="95a12-326">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
 

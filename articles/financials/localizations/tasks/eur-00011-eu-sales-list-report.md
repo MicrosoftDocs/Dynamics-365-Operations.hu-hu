@@ -16,15 +16,15 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 820c18eaa8d94b67c9d246c818ea13f3bdceeb39
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d98f039628e35ef950f8fc869ab5c117cc46c051
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="generate-an-eu-sales-list-report"></a><span data-ttu-id="cf57f-103">EU értékesítési lista jelentés készítése</span><span class="sxs-lookup"><span data-stu-id="cf57f-103">Generate an EU sales list report</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cf57f-104">Ezzel az eljárás végigvezeti az EU értékesítési lista jelentésének létrehozásán.</span><span class="sxs-lookup"><span data-stu-id="cf57f-104">This procedure walks you through generating the EU sales list report.</span></span> <span data-ttu-id="cf57f-105">Ez magában foglalja a Közösségen belüli kereskedelmi tranzakciók átvitelét az EU értékesítési listára és a jelentés futtatását.</span><span class="sxs-lookup"><span data-stu-id="cf57f-105">This includes transferring intra-community trade transactions to the EU sales list and running the report.</span></span> <span data-ttu-id="cf57f-106">Az eljárással egy bemutatásra szánt közösségen belüli kereskedelmi tranzakciót is létrehozhat.</span><span class="sxs-lookup"><span data-stu-id="cf57f-106">This  procedure also includes creating an intra-community trade transaction for demo purposes.</span></span> <span data-ttu-id="cf57f-107">További tájékoztatásért az EU értékesítési lista jelentéséről, a kötelező előfeltételeket is beleértve, lásd a Dynamics 365 for Finance and Operations súgóját.</span><span class="sxs-lookup"><span data-stu-id="cf57f-107">For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.</span></span>
 

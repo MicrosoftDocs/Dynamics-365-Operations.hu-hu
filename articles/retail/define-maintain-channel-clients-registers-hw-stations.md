@@ -20,17 +20,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: c0c130a8e13197bc8e29bcc9b0234a1e957a447e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2bc302c83affbee4ce9d0ab8441cfca61d5d8335
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a><span data-ttu-id="e197e-103">Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat</span><span class="sxs-lookup"><span data-stu-id="e197e-103">Define and maintain channel clients, registers, and hardware stations</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="e197e-104">Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.</span><span class="sxs-lookup"><span data-stu-id="e197e-104">This topic covers how to connect peripherals to your Retail POS.</span></span>
 

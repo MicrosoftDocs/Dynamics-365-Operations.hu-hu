@@ -19,17 +19,16 @@ ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 606f61814bcfc80dc1ef2f88f15fbd0d4a5cbb61
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a91fa0b2952ef9baad43df63de2a39e00d7ac368
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vat-exchange-rate-overview"></a><span data-ttu-id="16c30-105">Áfa átváltási arány áttekintése</span><span class="sxs-lookup"><span data-stu-id="16c30-105">VAT exchange rate overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="16c30-106">Ez a témakör az áfaszámítás árfolyamairól nyújt tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="16c30-106">This topic provides information about exchange rates for the VAT calculation.</span></span> <span data-ttu-id="16c30-107">Az áfa kiszámításához választott átváltási árfolyam eltérhet a vállalat könyvelési funkciói esetében alkalmazott átváltási árfolyamtól.</span><span class="sxs-lookup"><span data-stu-id="16c30-107">The exchange rate that is used for VAT calculation can differ from the exchange rate that is used for company accounting functions.</span></span> <span data-ttu-id="16c30-108">Amikor külföldi pénznemben lévő dokumentumot adnak fel, az esetleges árfolyamkülönbségek a meghatározott főkönyvi számlákra kerülnek.</span><span class="sxs-lookup"><span data-stu-id="16c30-108">When a document in a foreign currency is posted, any exchange rate differences that occur are posted to specific ledger accounts.</span></span>
 

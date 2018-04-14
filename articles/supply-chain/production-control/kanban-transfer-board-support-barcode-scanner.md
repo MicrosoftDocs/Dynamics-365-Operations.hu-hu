@@ -20,17 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a8393efd51032271d3023f1e0569425a16222cc3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0696580dcf50139639dace641169d041021cf1b8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a><span data-ttu-id="e7c0a-103">Kanban átviteli tábla támogatás vonalkódolvasókhoz</span><span class="sxs-lookup"><span data-stu-id="e7c0a-103">Kanban transfer board support for barcode scanners</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e7c0a-104">A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot.</span><span class="sxs-lookup"><span data-stu-id="e7c0a-104">The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.</span></span>
 
@@ -38,6 +37,7 @@ ms.lasthandoff: 11/03/2017
 ------------------
 
 <span data-ttu-id="e7c0a-106">A **Leolvasó regisztrálása** gyorslapon kiválaszthatja a regisztrációs módot, amely irányítja a műveletet, ha beolvassa a kanbankártya számát vagy manuálisan írja be a számot a Kanbankártya száma mezőbe.</span><span class="sxs-lookup"><span data-stu-id="e7c0a-106">On the **Scanner registration** FastTab you can select the registration mode, which controls the action when you scan a kanban card number or manually type the number in the Kanban card number field.</span></span>
+
 | <span data-ttu-id="e7c0a-107">Regisztrációs mód beállítása</span><span class="sxs-lookup"><span data-stu-id="e7c0a-107">Set registration mode</span></span> | <span data-ttu-id="e7c0a-108">Leírás</span><span class="sxs-lookup"><span data-stu-id="e7c0a-108">Description</span></span>                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="e7c0a-109">Kezdő</span><span class="sxs-lookup"><span data-stu-id="e7c0a-109">Start</span></span>                 | <span data-ttu-id="e7c0a-110">A Kanban átviteli feladat regisztrálása folyamatban lévőként.</span><span class="sxs-lookup"><span data-stu-id="e7c0a-110">Registers a Kanban transfer job as in progress.</span></span>                                                 |

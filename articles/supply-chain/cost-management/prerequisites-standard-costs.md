@@ -20,17 +20,16 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f7f1cef3198462eab15c1c7d2de4c5d4a5576919
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="prerequisites-for-standard-costs"></a><span data-ttu-id="e7bc6-103">Az elszámolóár előfeltételei</span><span class="sxs-lookup"><span data-stu-id="e7bc6-103">Prerequisites for standard costs</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e7bc6-104">Ez a témakör az elszámolóár használatának alaplépéseit fedi le.</span><span class="sxs-lookup"><span data-stu-id="e7bc6-104">This topic describes the basic steps for using standard costs.</span></span> <span data-ttu-id="e7bc6-105">A további lépések a vállalati működéstől függenek.</span><span class="sxs-lookup"><span data-stu-id="e7bc6-105">Subsequent steps depend on the company's operations.</span></span> <span data-ttu-id="e7bc6-106">Például a lépések eltérőek nem termelési környezet, útvonal nélküli termelési környezet és útvonalakat használó termelési környezet esetén.</span><span class="sxs-lookup"><span data-stu-id="e7bc6-106">For example, the steps differ for a nonmanufacturing environment, a manufacturing environment that doesn't use routings, and a manufacturing environment that uses routings.</span></span> 
 

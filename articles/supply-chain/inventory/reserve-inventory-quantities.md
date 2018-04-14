@@ -19,17 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 6de5c66d4587f6577e36345f7b77d72508c449d5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c705f51e32cc03d201eb00b6a1aa8048e59ff59e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reserve-inventory-quantities"></a><span data-ttu-id="9ef7d-103">Tartalék készletmennyiségek</span><span class="sxs-lookup"><span data-stu-id="9ef7d-103">Reserve inventory quantities</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9ef7d-104">Ez a témakör leírja a készlet lefoglalásával kapcsolatos különböző lehetőségeket.</span><span class="sxs-lookup"><span data-stu-id="9ef7d-104">This topic describes the different options that are available for reserving inventory.</span></span>
 
@@ -50,6 +49,7 @@ ms.lasthandoff: 01/17/2018
 ### <a name="policies-on-the-item-model-groups-page"></a><span data-ttu-id="9ef7d-128">A Cikkmodellcsoportok lap szabályai</span><span class="sxs-lookup"><span data-stu-id="9ef7d-128">Policies on the Item model groups page</span></span>
 
 <span data-ttu-id="9ef7d-129">A **Készletszabályok** szakasz tartalmazza a következő foglalási szabályokat.</span><span class="sxs-lookup"><span data-stu-id="9ef7d-129">The **Inventory policies** section contains the following reservation policies.</span></span>
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="9ef7d-130">**Foglalási irányelvek**</span><span class="sxs-lookup"><span data-stu-id="9ef7d-130">**Reservation policy**</span></span>  | <span data-ttu-id="9ef7d-131">**Leírás**</span><span class="sxs-lookup"><span data-stu-id="9ef7d-131">**Description**</span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ ms.lasthandoff: 01/17/2018
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a><span data-ttu-id="9ef7d-155">Példa a FIFO dátumvezérelt és a Szállítási dátumtól visszafelé lehetőségekre</span><span class="sxs-lookup"><span data-stu-id="9ef7d-155">Example for FIFO date-controlled and Backward from ship date</span></span>
 
 <span data-ttu-id="9ef7d-156">Ebben a példában az „A” cikkszám aktuális készletszámához három különböző kötegszám tartozik.</span><span class="sxs-lookup"><span data-stu-id="9ef7d-156">In this example, on-hand inventory for item number A exists for three different batch numbers.</span></span>
+
 | <span data-ttu-id="9ef7d-157">Cikkszám</span><span class="sxs-lookup"><span data-stu-id="9ef7d-157">Item number</span></span> | <span data-ttu-id="9ef7d-158">Köteg száma</span><span class="sxs-lookup"><span data-stu-id="9ef7d-158">Batch number</span></span> | <span data-ttu-id="9ef7d-159">Mennyiség</span><span class="sxs-lookup"><span data-stu-id="9ef7d-159">Quantity</span></span> | <span data-ttu-id="9ef7d-160">Dátum</span><span class="sxs-lookup"><span data-stu-id="9ef7d-160">Date</span></span>             |
 |-------------|--------------|----------|------------------|
 | <span data-ttu-id="9ef7d-161">A:</span><span class="sxs-lookup"><span data-stu-id="9ef7d-161">A</span></span>           | <span data-ttu-id="9ef7d-162">1000</span><span class="sxs-lookup"><span data-stu-id="9ef7d-162">1000</span></span>         | <span data-ttu-id="9ef7d-163">5</span><span class="sxs-lookup"><span data-stu-id="9ef7d-163">5</span></span>        | <span data-ttu-id="9ef7d-164">2016. február 2.</span><span class="sxs-lookup"><span data-stu-id="9ef7d-164">February 2, 2016</span></span> |

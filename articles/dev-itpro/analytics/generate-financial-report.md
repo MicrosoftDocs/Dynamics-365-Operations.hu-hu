@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
-ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e4c49a9aaae2d6c7324dfb6a13f6079610bb24fa
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="generate-a-financial-report"></a><span data-ttu-id="9594c-103">Pénzügyi jelentés elkészítése</span><span class="sxs-lookup"><span data-stu-id="9594c-103">Generate a financial report</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9594c-104">Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="9594c-104">This topic provides information about generating a financial report.</span></span> 
 
@@ -50,13 +49,13 @@ ms.lasthandoff: 12/01/2017
 ## <a name="generate-a-financial-report"></a><span data-ttu-id="9594c-115">Pénzügyi jelentés elkészítése</span><span class="sxs-lookup"><span data-stu-id="9594c-115">Generate a financial report</span></span>
 
 <span data-ttu-id="9594c-116">Pénzügyi jelentés létrehozásához a Microsoft Dynamics 365 for Finance and Operations rendszerben lépjen a következő elemhez: **Főkönyv** > **Lekérdezések és jelentések** > **Pénzügyi jelentések**.</span><span class="sxs-lookup"><span data-stu-id="9594c-116">To generate a financal report with Microsoft Dynamics 365 for Finance and Operations, go to **General ledger** > **Inquiries and reports** > **Financial reports**.</span></span> 
- - <span data-ttu-id="9594c-117">Kattintson létrehozni kívánt jelentésre, és kattintson a **Létrehozás** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9594c-117">Select a report to generate and click **Generate**.</span></span> 
- - <span data-ttu-id="9594c-118">Töltse ki a **Jelentés dátuma** mezőt, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="9594c-118">Fill in the **Report date** field and click **OK**.</span></span>
- 
- <span data-ttu-id="9594c-119">A jelentés generálása után a jelentést a **Jelentések** szakaszban tekintheti meg.</span><span class="sxs-lookup"><span data-stu-id="9594c-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
- <span data-ttu-id="9594c-120">A jelentéseknél a **Megtekintés** vagy **Törlés** lehetőség választható ki.</span><span class="sxs-lookup"><span data-stu-id="9594c-120">You can select to **View** or **Delete** the report.</span></span>
- 
- 
+- <span data-ttu-id="9594c-117">Kattintson létrehozni kívánt jelentésre, és kattintson a **Létrehozás** lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="9594c-117">Select a report to generate and click **Generate**.</span></span> 
+- <span data-ttu-id="9594c-118">Töltse ki a **Jelentés dátuma** mezőt, majd kattintson az **OK** gombra.</span><span class="sxs-lookup"><span data-stu-id="9594c-118">Fill in the **Report date** field and click **OK**.</span></span>
+
+  <span data-ttu-id="9594c-119">A jelentés generálása után a jelentést a **Jelentések** szakaszban tekintheti meg.</span><span class="sxs-lookup"><span data-stu-id="9594c-119">After the report has been generated, the report will be available to view in the **Reports** section.</span></span>
+  <span data-ttu-id="9594c-120">A jelentéseknél a **Megtekintés** vagy **Törlés** lehetőség választható ki.</span><span class="sxs-lookup"><span data-stu-id="9594c-120">You can select to **View** or **Delete** the report.</span></span>
+
+
 <span data-ttu-id="9594c-121">A jelentés létrehozásához a **Jelentéstervező** segítségével, nyissa meg a jelentésdefiníciót, majd kattintson a Létrehozás gombra az eszköztárban.</span><span class="sxs-lookup"><span data-stu-id="9594c-121">To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar.</span></span> <span data-ttu-id="9594c-122">Az ekkor megnyíló Jelentés-várólista állapota ablak mutatja a jelentés helyét a várólistában.</span><span class="sxs-lookup"><span data-stu-id="9594c-122">The Report Queue Status window will open and indicate the location of your report in the queue.</span></span> <span data-ttu-id="9594c-123">A létrehozott jelentések alapértelmezetten a Web Viewer alkalmazásban nyílnak meg.</span><span class="sxs-lookup"><span data-stu-id="9594c-123">By default, the generated report will open in the Web Viewer.</span></span>
 
 > [!NOTE]
@@ -159,7 +158,7 @@ ms.lasthandoff: 12/01/2017
 | <span data-ttu-id="9594c-237">A kiválasztott jelentésdefiníció megnyitása</span><span class="sxs-lookup"><span data-stu-id="9594c-237">Open the selected report definition</span></span>  | <span data-ttu-id="9594c-238">Ctrl + R</span><span class="sxs-lookup"><span data-stu-id="9594c-238">Ctrl+R</span></span>                     |
 | <span data-ttu-id="9594c-239">A kiválasztott sordefiníció megnyitása</span><span class="sxs-lookup"><span data-stu-id="9594c-239">Open the selected row definition</span></span>     | <span data-ttu-id="9594c-240">Ctrl + O</span><span class="sxs-lookup"><span data-stu-id="9594c-240">Ctrl+O</span></span>                     |
 
- 
+
 <a name="see-also"></a><span data-ttu-id="9594c-241">Lásd még</span><span class="sxs-lookup"><span data-stu-id="9594c-241">See also</span></span>
 --------
 

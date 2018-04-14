@@ -20,17 +20,16 @@ ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: ed4f3a1ab578d6b0bbef37732d6c66c1bc99e02b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c3e774cd8e63d55729b67719bdaf2594b41d718a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="customer-orders-overview"></a><span data-ttu-id="9a16a-105">Vevői rendelések – áttekintés</span><span class="sxs-lookup"><span data-stu-id="9a16a-105">Customer orders overview</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="9a16a-106">Ez a témakör a vevői rendelések a Retail Modern POS (MPOS) modulban történő kezelését ismerteti.</span><span class="sxs-lookup"><span data-stu-id="9a16a-106">This topic provides information about customer orders in Retail Modern POS (MPOS).</span></span> <span data-ttu-id="9a16a-107">A vevői rendelések speciális rendelések néven is ismertek.</span><span class="sxs-lookup"><span data-stu-id="9a16a-107">Customer orders are also known as special orders.</span></span> <span data-ttu-id="9a16a-108">A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.</span><span class="sxs-lookup"><span data-stu-id="9a16a-108">The topic includes a discussion of related parameters and transaction flows.</span></span>
 

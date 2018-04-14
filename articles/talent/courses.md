@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 27fbc54afca384b804f2b0468206242ff89d4031
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a86709bc222339531a21997510a65c138024256c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-training-courses"></a><span data-ttu-id="826da-103">Tanfolyamok beállítása</span><span class="sxs-lookup"><span data-stu-id="826da-103">Set up training courses</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="826da-104">Az emberi erőforrások-rendszergazdák és a vezetők a tanfolyamok szolgáltatások segítségével karbantartják a dolgozóknak nyújtott képzések információit.</span><span class="sxs-lookup"><span data-stu-id="826da-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
 
@@ -81,15 +80,15 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="course-tasks"></a><span data-ttu-id="826da-134">Tanfolyami tevékenységek</span><span class="sxs-lookup"><span data-stu-id="826da-134">Course tasks</span></span>
 <span data-ttu-id="826da-135">Például a következő műveleteket végezheti:</span><span class="sxs-lookup"><span data-stu-id="826da-135">For each course, you can complete the following tasks.</span></span>
--   <span data-ttu-id="826da-136">Résztvevők regisztrálása</span><span class="sxs-lookup"><span data-stu-id="826da-136">Register participants</span></span>
--   <span data-ttu-id="826da-137">A regisztráció határidejének beállítása</span><span class="sxs-lookup"><span data-stu-id="826da-137">Specify a registration deadline</span></span>
--   <span data-ttu-id="826da-138">A résztvevők minimális és maximális számának beállítása</span><span class="sxs-lookup"><span data-stu-id="826da-138">Define the minimum and maximum number of participants</span></span>
--   <span data-ttu-id="826da-139">A tanfolyam helyszínének és tantermének kiválasztása</span><span class="sxs-lookup"><span data-stu-id="826da-139">Assign a course location and classroom</span></span>
--   <span data-ttu-id="826da-140">Ajánlott szállodák a tanfolyam résztvevőinek</span><span class="sxs-lookup"><span data-stu-id="826da-140">Recommend hotels to course participants</span></span>
--   <span data-ttu-id="826da-141">A tanfolyam leírásának létrehozása, amelyet közzé lehet tenni az Alkalmazott önkiszolgáló rendszerben</span><span class="sxs-lookup"><span data-stu-id="826da-141">Create a course description, which you can then advertise on Employee self service</span></span>
+- <span data-ttu-id="826da-136">Résztvevők regisztrálása</span><span class="sxs-lookup"><span data-stu-id="826da-136">Register participants</span></span>
+- <span data-ttu-id="826da-137">A regisztráció határidejének beállítása</span><span class="sxs-lookup"><span data-stu-id="826da-137">Specify a registration deadline</span></span>
+- <span data-ttu-id="826da-138">A résztvevők minimális és maximális számának beállítása</span><span class="sxs-lookup"><span data-stu-id="826da-138">Define the minimum and maximum number of participants</span></span>
+- <span data-ttu-id="826da-139">A tanfolyam helyszínének és tantermének kiválasztása</span><span class="sxs-lookup"><span data-stu-id="826da-139">Assign a course location and classroom</span></span>
+- <span data-ttu-id="826da-140">Ajánlott szállodák a tanfolyam résztvevőinek</span><span class="sxs-lookup"><span data-stu-id="826da-140">Recommend hotels to course participants</span></span>
+- <span data-ttu-id="826da-141">A tanfolyam leírásának létrehozása, amelyet közzé lehet tenni az Alkalmazott önkiszolgáló rendszerben</span><span class="sxs-lookup"><span data-stu-id="826da-141">Create a course description, which you can then advertise on Employee self service</span></span>
 
   ><span data-ttu-id="826da-142">**Megjegyzés** Csak akkor törölhet egy tanfolyamot, ha nincs hozzá regisztráció.</span><span class="sxs-lookup"><span data-stu-id="826da-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
-    
+
 ## <a name="course-statuses"></a><span data-ttu-id="826da-143">Tanfolyam állapota</span><span class="sxs-lookup"><span data-stu-id="826da-143">Course statuses</span></span>
 <span data-ttu-id="826da-144">Az alábbi táblázat felsorolja a tanfolyam lehetséges állapotok és a műveleteket hajthatja végre, ha a tanfolyamhoz meghatározott állapota.</span><span class="sxs-lookup"><span data-stu-id="826da-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
 

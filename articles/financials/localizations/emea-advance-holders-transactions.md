@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3e1fbb37c75052f10fdac3d3361e2c93c3c8a56c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6b07db5c1f11d5ead5610c2cbd48955077a90405
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advance-holder-transactions"></a><span data-ttu-id="e122f-103">Előlegre jogosult tranzakciói</span><span class="sxs-lookup"><span data-stu-id="e122f-103">Advance holder transactions</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e122f-104">Ismerje meg, hogyan dolgozhat a Microsoft Dynamics 365 for Finance and Operationsben előlegre jogosultak tranzakcióival.</span><span class="sxs-lookup"><span data-stu-id="e122f-104">Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

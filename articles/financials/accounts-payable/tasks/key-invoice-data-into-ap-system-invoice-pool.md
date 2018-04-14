@@ -16,15 +16,15 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96040b1c1ba130f773ba0defbf7bf1dcebedfc13
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fd5f9bb94817478939eeaea5890349c138de977b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a><span data-ttu-id="53c9a-103">A legfontosabb számlaadatok a kötelezettségkezelési rendszerbe számlagyűjtő használatával</span><span class="sxs-lookup"><span data-stu-id="53c9a-103">Key invoice data into the AP system using invoice pool</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="53c9a-104">Ez a feladat-útmutató bemutatja, hogy hogyan tud számlákat hozni létre a számlajegyzék segítségével.</span><span class="sxs-lookup"><span data-stu-id="53c9a-104">This task guide will show you how to use the invoice register to create invoices.</span></span>  <span data-ttu-id="53c9a-105">Ezután egyeztesse a számlát egy beszerzési rendeléssel a számlagyűjtő segítségével, majd véglegesítse a költséget a szállítói számla oldalon.</span><span class="sxs-lookup"><span data-stu-id="53c9a-105">Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.</span></span>
 

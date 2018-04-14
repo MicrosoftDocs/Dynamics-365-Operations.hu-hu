@@ -20,17 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 0e6973a8514adaa814bb688a03035659783440e9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 652233724bb4ded081f7268a001998285480372a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-screen-layouts-for-pos"></a><span data-ttu-id="e5a14-103">Pénztár képernyő-elrendezésének beállítása</span><span class="sxs-lookup"><span data-stu-id="e5a14-103">Configure screen layouts for POS</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="e5a14-104">Ez a témakör a Microsoft Dynamics 365 for Operations for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.</span><span class="sxs-lookup"><span data-stu-id="e5a14-104">This topic provides information about screen layouts for the Microsoft Dynamics 365 for Retail point of sale (POS) experiences.</span></span>
 

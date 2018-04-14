@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 0f7592c580a21040c8b630885939ceaab3855c2c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7cd2e56dab48ad8f2380dcaa72e3317250b5b2f0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expense-reports-and-multiple-approvers"></a><span data-ttu-id="c0581-103">Költségjelentések és több jóváhagyó</span><span class="sxs-lookup"><span data-stu-id="c0581-103">Expense reports and multiple approvers</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c0581-104">A szervezet költségjóváhagyási szabályaitól függően elképzelhető, hogy több mint egy személynek kell jóváhagynia egy adott alkalmazott által benyújtott költségjelentést.</span><span class="sxs-lookup"><span data-stu-id="c0581-104">Depending on your organization's expense approval policies, more than one person might have to approve an expense report that is submitted by an employee.</span></span> <span data-ttu-id="c0581-105">A költségjelentés jóváhagyási munkafolyamatának beállításakor olyan munkafolyamat-elemeket adhat meg, amelyek feladatokat vagy lépéseket tartalmaznak egy vagy több költségjelentés-jóváhagyó számára.</span><span class="sxs-lookup"><span data-stu-id="c0581-105">When you set up the workflow process for expense report approval, you can add workflow elements that include tasks or steps for one or more expense report approvers.</span></span> <span data-ttu-id="c0581-106">Például előfordulhat, hogy minden költségjelentést először jóvá kell hagynia először a jelentést elküldő alkalmazott vezetőjének, majd a kötelezettségek koordinátorának.</span><span class="sxs-lookup"><span data-stu-id="c0581-106">For example, you might require that all expense reports be approved first by the manager of the employee who submitted the report and then by the Accounts payable coordinator.</span></span>
 

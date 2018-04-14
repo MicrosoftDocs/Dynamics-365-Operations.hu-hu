@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 84471351555d90c5a297d613abf334a26e896e40
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 647bbbc8555e0aa00b2779d87e63cb4dd31edf96
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advance-holders"></a><span data-ttu-id="ec19e-103">Előlegre jogosultak</span><span class="sxs-lookup"><span data-stu-id="ec19e-103">Advance holders</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ec19e-104">Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre jogosulti funkciójáról.</span><span class="sxs-lookup"><span data-stu-id="ec19e-104">Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -48,11 +47,13 @@ ms.lasthandoff: 03/26/2018
 ### <a name="employee-posting-profile"></a><span data-ttu-id="ec19e-121">Alkalmazott feladási sablonja</span><span class="sxs-lookup"><span data-stu-id="ec19e-121">Employee posting profile</span></span>
 
 <span data-ttu-id="ec19e-122">Az előlegre jogosult tranzakcióihoz sablon létrehozásához használja az **Alkalmazott feladási sablonjai** oldalt.</span><span class="sxs-lookup"><span data-stu-id="ec19e-122">Use the **Employee posting profiles** page to create a profile for advance holder transactions.</span></span> <span data-ttu-id="ec19e-123">Az alkalmazott feladási sablonjához a következő adatokat adhatja meg.</span><span class="sxs-lookup"><span data-stu-id="ec19e-123">You can specify the following information for the employee posting profile.</span></span>
-|<span data-ttu-id="ec19e-124">Mező</span><span class="sxs-lookup"><span data-stu-id="ec19e-124">Field</span></span> |<span data-ttu-id="ec19e-125">Leírás</span><span class="sxs-lookup"><span data-stu-id="ec19e-125">Description</span></span>|
-|------|-----------|
-|<span data-ttu-id="ec19e-126">Feladási profil</span><span class="sxs-lookup"><span data-stu-id="ec19e-126">Posting profile</span></span>|<span data-ttu-id="ec19e-127">Adja meg a feladási sablon azonosító kódját az előlegre jogosulthoz.</span><span class="sxs-lookup"><span data-stu-id="ec19e-127">Enter the posting profile identification code for the advance holder.</span></span>|
-|<span data-ttu-id="ec19e-128">Leírás</span><span class="sxs-lookup"><span data-stu-id="ec19e-128">Description</span></span>|<span data-ttu-id="ec19e-129">Adja meg a feladói sablon rövid leírását.</span><span class="sxs-lookup"><span data-stu-id="ec19e-129">Enter a brief description of the posting profile.</span></span>|
-|<span data-ttu-id="ec19e-130">Érvényes</span><span class="sxs-lookup"><span data-stu-id="ec19e-130">Valid for</span></span>|<span data-ttu-id="ec19e-131">A feladási sablon beállításához használt csoportosítási szinthez a következő lehetőségek közül választhat:</span><span class="sxs-lookup"><span data-stu-id="ec19e-131">Select one of the following options for the level of grouping for setting up the posting profile:</span></span> 
+
+|      <span data-ttu-id="ec19e-124">Mező</span><span class="sxs-lookup"><span data-stu-id="ec19e-124">Field</span></span>      |                                            <span data-ttu-id="ec19e-125">Leírás</span><span class="sxs-lookup"><span data-stu-id="ec19e-125">Description</span></span>                                            |
+|-----------------|---------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="ec19e-126">Feladási profil</span><span class="sxs-lookup"><span data-stu-id="ec19e-126">Posting profile</span></span> |               <span data-ttu-id="ec19e-127">Adja meg a feladási sablon azonosító kódját az előlegre jogosulthoz.</span><span class="sxs-lookup"><span data-stu-id="ec19e-127">Enter the posting profile identification code for the advance holder.</span></span>               |
+|   <span data-ttu-id="ec19e-128">Leírás</span><span class="sxs-lookup"><span data-stu-id="ec19e-128">Description</span></span>   |                         <span data-ttu-id="ec19e-129">Adja meg a feladói sablon rövid leírását.</span><span class="sxs-lookup"><span data-stu-id="ec19e-129">Enter a brief description of the posting profile.</span></span>                         |
+|    <span data-ttu-id="ec19e-130">Érvényes</span><span class="sxs-lookup"><span data-stu-id="ec19e-130">Valid for</span></span>    | <span data-ttu-id="ec19e-131">A feladási sablon beállításához használt csoportosítási szinthez a következő lehetőségek közül választhat:</span><span class="sxs-lookup"><span data-stu-id="ec19e-131">Select one of the following options for the level of grouping for setting up the posting profile:</span></span> |
+
 <span data-ttu-id="ec19e-132">**Tábla** – ezt a beállítást használhatja a feladási sablon egy előlegjogosult számára történő beállításához.</span><span class="sxs-lookup"><span data-stu-id="ec19e-132">**Table** – This option is used to set up the posting profile for one advance holder.</span></span> <span data-ttu-id="ec19e-133">Az előleg jogosultjának kódját meg kell adni a Hivatkozás mezőben.</span><span class="sxs-lookup"><span data-stu-id="ec19e-133">You must indicate the advance holder code in the Reference field.</span></span>
 <span data-ttu-id="ec19e-134">**Csoport** – ezt a beállítást használhatja a feladási sablon előlegjogosultak csoportja számára történő beállításához.</span><span class="sxs-lookup"><span data-stu-id="ec19e-134">**Group** – This option is used to set up the posting profile for a group of advance holders.</span></span> <span data-ttu-id="ec19e-135">Az csoport kódját meg kell adni a Hivatkozás mezőben.</span><span class="sxs-lookup"><span data-stu-id="ec19e-135">You must indicate the group code in the Reference field.</span></span>
 <span data-ttu-id="ec19e-136">**Mind** – ezt a beállítást használhatja a feladási sablon az összes előlegjogosult számára történő beállításához.| |Hivatkozás|Válassza ki az előlegjogosult kódját, ha az Érvényes mezőben a Tábla lehetőség van kiválasztva, illetve válassza ki az előlegjogosulti csoportot, ha az Érvényes mezőben a Csoport lehetőség van kiválasztva.| |Összegzett számla|Válassza ki a tranzakciók feladására szolgáló összegzett számlát.|</span><span class="sxs-lookup"><span data-stu-id="ec19e-136">**All** – This option is used to set up the posting profile for all advance holders.| |Reference|Select the advance holder code if Table is selected in the Valid for field, or select the advance holder group if Group is selected in the Valid for field.| |Summary account|Select the summary account for posting the transactions.|</span></span>
@@ -62,6 +63,7 @@ ms.lasthandoff: 03/26/2018
 ### <a name="account-payable-parameters"></a><span data-ttu-id="ec19e-137">Kötelezettségek paraméterei</span><span class="sxs-lookup"><span data-stu-id="ec19e-137">Account payable parameters</span></span>
 
 <span data-ttu-id="ec19e-138">Az előlegre jogosult tranzakcióinak tükrözéséhez be kell állítania a következőket a **Kötelezettségek paraméterei** lapon az **Előlegre jogosultak** szakaszban.</span><span class="sxs-lookup"><span data-stu-id="ec19e-138">To reflect advance holder’s transactions you must set up the following on the **Account payable parameters** page in the **Advance holders** section.</span></span>
+
 |                                                |                   |
 |------------------------------------------------|-------------------|
 |  <span data-ttu-id="ec19e-139">**Mező**</span><span class="sxs-lookup"><span data-stu-id="ec19e-139">**Field**</span></span>                                     | <span data-ttu-id="ec19e-140">**Leírás**</span><span class="sxs-lookup"><span data-stu-id="ec19e-140">**Description**</span></span>                                                                                                                                                                  |
@@ -80,6 +82,7 @@ ms.lasthandoff: 03/26/2018
 ### <a name="create-an-advance-holder-creation"></a><span data-ttu-id="ec19e-160">Előlegre jogosult létrehozása</span><span class="sxs-lookup"><span data-stu-id="ec19e-160">Create an advance holder creation</span></span>
 
 <span data-ttu-id="ec19e-161">Előlegre jogosult létrehozása előtt beállított dolgozókkal kell rendelkeznie.</span><span class="sxs-lookup"><span data-stu-id="ec19e-161">Before you can create an advance holder, you must have already set up workers.</span></span> <span data-ttu-id="ec19e-162">További tudnivalókért lásd: [Dolgozó adatainak megadása (Feladat-útmutató).](../../fin-and-ops/hr/tasks/enter-worker-information.md)</span><span class="sxs-lookup"><span data-stu-id="ec19e-162">For more information, see [Enter worker information (Task guide).](../../fin-and-ops/hr/tasks/enter-worker-information.md)</span></span> <span data-ttu-id="ec19e-163">Használja az **Előlegre jogosultak** oldalt a dolgozó előlegre jogosultként történő beállításához.</span><span class="sxs-lookup"><span data-stu-id="ec19e-163">Use the **Advance holders** page to set up a worker as an advance holder.</span></span> <span data-ttu-id="ec19e-164">Válassza ki a dolgozót, akit előlegre jogosultként kíván használni, kattintson a **Szerkesztés** elemre, majd állítsa az **Előlegre jogosult** lehetőséget **Igaz** értékre.</span><span class="sxs-lookup"><span data-stu-id="ec19e-164">Select the worker to use as an advance holder, click **Edit**, and then set the **Advance holder** option to **True**.</span></span> <span data-ttu-id="ec19e-165">A következő mezőket szintén ki kell töltenie.</span><span class="sxs-lookup"><span data-stu-id="ec19e-165">You must also complete the following fields.</span></span>
+
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | <span data-ttu-id="ec19e-166">**Mező**</span><span class="sxs-lookup"><span data-stu-id="ec19e-166">**Field**</span></span>      | <span data-ttu-id="ec19e-167">**Leírás**</span><span class="sxs-lookup"><span data-stu-id="ec19e-167">**Description**</span></span>                                                                             |

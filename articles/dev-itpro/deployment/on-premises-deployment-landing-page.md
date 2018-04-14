@@ -18,15 +18,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: de36746bce4aa27d23aa45f2d08cb6c2d527ea90
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="on-premises-deployment-home-page"></a><span data-ttu-id="4ee4d-103">On-premises telepítés kezdőlap</span><span class="sxs-lookup"><span data-stu-id="4ee4d-103">On-premises deployment home page</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4ee4d-104">Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise alkalmazást (on-premises).</span><span class="sxs-lookup"><span data-stu-id="4ee4d-104">You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises).</span></span> <span data-ttu-id="4ee4d-105">Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól.</span><span class="sxs-lookup"><span data-stu-id="4ee4d-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="4ee4d-106">Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.</span><span class="sxs-lookup"><span data-stu-id="4ee4d-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a43edf71a1a77ea0d6014266bdd95d563a08cc4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 023c3b3be6544ecf25975965daf1487159c6076b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-and-associate-a-hardware-station"></a><span data-ttu-id="5638c-103">Hardverállomás létrehozása és hozzárendelése</span><span class="sxs-lookup"><span data-stu-id="5638c-103">Create and associate a hardware station</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5638c-104">Ez az eljárás végigveszi, hogyan hozhat létre egy új hardverállomást.</span><span class="sxs-lookup"><span data-stu-id="5638c-104">This procedure walks through how to create a new hardware station.</span></span> <span data-ttu-id="5638c-105">Egy új hardverprofillal új hardverállomásokat adhat hozzá egy előre definiált üzlethez (vagy üzleti csatornához).</span><span class="sxs-lookup"><span data-stu-id="5638c-105">A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel).</span></span> <span data-ttu-id="5638c-106">Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.</span><span class="sxs-lookup"><span data-stu-id="5638c-106">This procedure uses the USRT company in demo data.</span></span>
 

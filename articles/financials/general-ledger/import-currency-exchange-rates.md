@@ -19,17 +19,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 662a649f20fa4e22d83d22b651ec8bcdd69f8028
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="import-currency-exchange-rates"></a><span data-ttu-id="b6448-105">Devizaárfolyamok importálása</span><span class="sxs-lookup"><span data-stu-id="b6448-105">Import currency exchange rates</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b6448-106">Ha egy jogi személy devizában kapott számlákat, a devizát át kell váltani a saját pénznembe.</span><span class="sxs-lookup"><span data-stu-id="b6448-106">If a legal entity has received invoices in foreign currencies, it’s necessary to convert the foreign currency into the local currency.</span></span> <span data-ttu-id="b6448-107">Ez azt jelenti, hogy különböző pénznemekre nézve szükség van a legfrissebb átváltási árfolyamra.</span><span class="sxs-lookup"><span data-stu-id="b6448-107">This means that up-to-date exchange rates for different currencies are required.</span></span> <span data-ttu-id="b6448-108">Ez a témakör áttekintést ad a devizaárfolyam-szolgáltatók, mint az Európai Központi Bank és az Orosz Központi Bank által az interneten közzétett referencia-devizaárfolyamok feldolgozásához és importálásához szükséges beállításokról.</span><span class="sxs-lookup"><span data-stu-id="b6448-108">This topic provides an overview of the required settings and processing for importing foreign exchange reference rates published over the Internet by the exchange rate providers, such as the European Central Bank and the Central Bank of Russia.</span></span>
 

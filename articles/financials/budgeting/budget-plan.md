@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8af5d3343bf8376dfec5a41cd03e1325b10b978
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning"></a><span data-ttu-id="2c4a9-105">Költségvetés-tervezés</span><span class="sxs-lookup"><span data-stu-id="2c4a9-105">Budget planning</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2c4a9-106">Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba.</span><span class="sxs-lookup"><span data-stu-id="2c4a9-106">The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area.</span></span> <span data-ttu-id="2c4a9-107">Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.</span><span class="sxs-lookup"><span data-stu-id="2c4a9-107">The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</span></span>  <span data-ttu-id="2c4a9-108">Az oktatóanyag a következő üzleti folyamatokra és feladatokra fektet hangsúlyt: – Szervezeti hierarchia alkotása a költségvetés tervezéshez és a felhasználói biztonság beállítása – Költségvetési tervváltozat, költségvetési terv oszlopok és Excel sablonok tervezése – Költségvetés-tervezési folyamat létrehozása és aktiválása – Költségvetési tervdokumentum létrehozása a főkönyv alapján – Költségvetési tervdokumentum adatok beállítása felosztások használatával – Költségvetési tervdokumentum adatainak szerkesztése Excelben</span><span class="sxs-lookup"><span data-stu-id="2c4a9-108">This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</span></span> 
 

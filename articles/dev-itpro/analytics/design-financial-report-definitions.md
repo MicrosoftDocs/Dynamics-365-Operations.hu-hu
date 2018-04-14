@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: e16471e6570989b678b1856a8199796084c38bc7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 27f918e873317b07853c39ca97195f297c33955c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="report-definitions-in-financial-report-designer"></a><span data-ttu-id="f94a6-105">Jelentésdefiníciók a pénzügyi jelentéstervezőben</span><span class="sxs-lookup"><span data-stu-id="f94a6-105">Report definitions in financial report designer</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f94a6-106">Ez a cikk a jelentésdefiníciókról tartalmaz információt.</span><span class="sxs-lookup"><span data-stu-id="f94a6-106">This article provides information about report definitions.</span></span> <span data-ttu-id="f94a6-107">A jelentésdefiníció egy jelentés-összetevő (vagy építőelem), amely egy sordefiníció, egy oszlopdefiníció és egy opcionális jelentési-fa definíciót használ a jelentés elkészítéséhez.</span><span class="sxs-lookup"><span data-stu-id="f94a6-107">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="f94a6-108">Továbbá a jelentésdefiníció biztosít lehetőségeket és beállításokat, a jelentés testreszabásához.</span><span class="sxs-lookup"><span data-stu-id="f94a6-108">A report definition also provides options and settings that for customizing a report.</span></span> 
 

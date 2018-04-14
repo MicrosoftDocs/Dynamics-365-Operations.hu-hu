@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3843935cf17aeb0fd358398dccbca4cf494b132
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5938f7a439c742426e3e73a1ea6c8f66f2e0efdb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a><span data-ttu-id="95c46-104">A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik.</span><span class="sxs-lookup"><span data-stu-id="95c46-104">Settle a partial customer payment before the discount date with a final payment after the discount date</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="95c46-105">Ez a cikk fizetéskiegyenlítések számlákra és vevőkre gyakorolt hatását taglalja.</span><span class="sxs-lookup"><span data-stu-id="95c46-105">This article discusses the effect of settling payments to invoices for customers.</span></span> <span data-ttu-id="95c46-106">Az eset nem a főkönyvre, hanem az analitikus naplóra gyakorolt hatásokra összpontosít.</span><span class="sxs-lookup"><span data-stu-id="95c46-106">The scenario focuses on the effects in the subledger, not in General ledger.</span></span>
 

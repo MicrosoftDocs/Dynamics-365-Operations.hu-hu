@@ -18,17 +18,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e066bd2adbb9f27f3b0850ca25978d0777590d2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0919cdeb54b0dade68a9caba89b172c0663381da
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="eu-entry-certificates"></a><span data-ttu-id="4a6df-103">EU beérkezési igazolások</span><span class="sxs-lookup"><span data-stu-id="4a6df-103">EU entry certificates</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4a6df-104">Ez a cikk az európai uniós (EU) beérkezési igazolásokról nyújt tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="4a6df-104">This article provides information about European Union (EU) entry certificates.</span></span>
 

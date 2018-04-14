@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5faefe5da8c3a64987a38ebef92eb87049ebe874
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 04643d4d9e3c0a21f2dac3ce27a7398f7be4f775
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a><span data-ttu-id="c7fee-103">Pénzügyi dimenziók hozzáadása a pénzügyi igazgatói munkaterülethez</span><span class="sxs-lookup"><span data-stu-id="c7fee-103">Add financial dimensions to the CFO workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c7fee-104">Ez a témakör bemutatja a pénzügyi dimenziók hozzáadását a pénzügyi igazgatói munkaterülethez, így felhasználhatók a főkönyvi és költségvetési jelentésekhez.</span><span class="sxs-lookup"><span data-stu-id="c7fee-104">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports.</span></span> <span data-ttu-id="c7fee-105">A pénzügyi igazgatói munkaterület van egy **Áttekintés** lap és egy **Pénzügyi** lapon. Az ezeken a lapokon levő jelentéseket két mérték támogatja: a LedgerActivityMeasure és a BudgetActivityMeasure.</span><span class="sxs-lookup"><span data-stu-id="c7fee-105">The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure.</span></span> <span data-ttu-id="c7fee-106">A Microsoft Dynamics 365 for Finance and Operations Enterprise edition (2017. júliusi frissítés) megoldásban összefüggés van ezen két mérték és a DimensionCombinationEntity entitás között.</span><span class="sxs-lookup"><span data-stu-id="c7fee-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), there is a relation between those two measures and the DimensionCombinationEntity entity.</span></span> <span data-ttu-id="c7fee-107">Ezért dimenziókat választhat ki.</span><span class="sxs-lookup"><span data-stu-id="c7fee-107">Therefore, you can select dimensions.</span></span>
 

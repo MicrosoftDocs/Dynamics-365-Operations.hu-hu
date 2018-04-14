@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 506ca3aac7ad271ca7472f3b74627e94d97a74ee
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6ca65d3c12abd64bef23954b45f73af1bf62f9f3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reduction-keys"></a><span data-ttu-id="fdd4f-105">Csökkentési kulcsok</span><span class="sxs-lookup"><span data-stu-id="fdd4f-105">Reduction keys</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fdd4f-106">Ez a cikk az csökkentési kulcs beállítását bemutató példákat tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-106">This articles provides examples that show how to set up a reduction key.</span></span> <span data-ttu-id="fdd4f-107">Tartalmaz információkat a különböző csökkentési kulcs beállításokról és azok eredményéről.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-107">It includes information about the various reduction key settings and the results of each.</span></span> <span data-ttu-id="fdd4f-108">A csökkentési kulcsot használhatja az előrejelzési követelmények csökkentésének módjának meghatározásához.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-108">You can use a reduction key to define how to reduce forecast requirements.</span></span>
 
@@ -39,17 +38,19 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="fdd4f-110">Csökkentési kulcs az előrejelzési követelmények csökkentése a százalékok és az időszakok alapján történik, amelyeket a csökkentési kulcs definiál.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-110">This example shows how a reduction key reduces demand forecast requirements according to the percentages and periods that are defined by the reduction key.</span></span>
 
-1.  <span data-ttu-id="fdd4f-111">A **Csökkentési kulcsok** lapon állítsa be a következő sorokat.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-111">On the **Reduction keys** page, set up the following lines.</span></span>
-    | <span data-ttu-id="fdd4f-112">Módosítás</span><span class="sxs-lookup"><span data-stu-id="fdd4f-112">Change</span></span> | <span data-ttu-id="fdd4f-113">Egység</span><span class="sxs-lookup"><span data-stu-id="fdd4f-113">Unit</span></span>  | <span data-ttu-id="fdd4f-114">Százalék</span><span class="sxs-lookup"><span data-stu-id="fdd4f-114">Percent</span></span> |
-    |--------|-------|---------|
-    | <span data-ttu-id="fdd4f-115">1</span><span class="sxs-lookup"><span data-stu-id="fdd4f-115">1</span></span>      | <span data-ttu-id="fdd4f-116">Hónap</span><span class="sxs-lookup"><span data-stu-id="fdd4f-116">Month</span></span> | <span data-ttu-id="fdd4f-117">100</span><span class="sxs-lookup"><span data-stu-id="fdd4f-117">100</span></span>     |
-    | <span data-ttu-id="fdd4f-118">2</span><span class="sxs-lookup"><span data-stu-id="fdd4f-118">2</span></span>      | <span data-ttu-id="fdd4f-119">Hónap</span><span class="sxs-lookup"><span data-stu-id="fdd4f-119">Month</span></span> | <span data-ttu-id="fdd4f-120">75</span><span class="sxs-lookup"><span data-stu-id="fdd4f-120">75</span></span>      |
-    | <span data-ttu-id="fdd4f-121">3</span><span class="sxs-lookup"><span data-stu-id="fdd4f-121">3</span></span>      | <span data-ttu-id="fdd4f-122">Hónap</span><span class="sxs-lookup"><span data-stu-id="fdd4f-122">Month</span></span> | <span data-ttu-id="fdd4f-123">50</span><span class="sxs-lookup"><span data-stu-id="fdd4f-123">50</span></span>      |
-    | <span data-ttu-id="fdd4f-124">4</span><span class="sxs-lookup"><span data-stu-id="fdd4f-124">4</span></span>      | <span data-ttu-id="fdd4f-125">Hónap</span><span class="sxs-lookup"><span data-stu-id="fdd4f-125">Month</span></span> | <span data-ttu-id="fdd4f-126">25</span><span class="sxs-lookup"><span data-stu-id="fdd4f-126">25</span></span>      |
+1. <span data-ttu-id="fdd4f-111">A **Csökkentési kulcsok** lapon állítsa be a következő sorokat.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-111">On the **Reduction keys** page, set up the following lines.</span></span>
 
-2.  <span data-ttu-id="fdd4f-127">Hivatkozás a csökkentési kulcsot a cikk fedezeti csoporthoz.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-127">Link the reduction key to the item's coverage group.</span></span>
-3.  <span data-ttu-id="fdd4f-128">A **Alaptervek** az oldalon a **Csökkentési elv** mezőben válassza ki **Százalék - csökkentési kulcs**.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
-4.  <span data-ttu-id="fdd4f-129">Hozzon létre egy havi 1000 darabos értékesítési előrejelzést.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-129">Create a demand forecast of 1,000 pieces per month.</span></span>
+   | <span data-ttu-id="fdd4f-112">Módosítás</span><span class="sxs-lookup"><span data-stu-id="fdd4f-112">Change</span></span> | <span data-ttu-id="fdd4f-113">Egység</span><span class="sxs-lookup"><span data-stu-id="fdd4f-113">Unit</span></span>  | <span data-ttu-id="fdd4f-114">Százalék</span><span class="sxs-lookup"><span data-stu-id="fdd4f-114">Percent</span></span> |
+   |--------|-------|---------|
+   |   <span data-ttu-id="fdd4f-115">1</span><span class="sxs-lookup"><span data-stu-id="fdd4f-115">1</span></span>    | <span data-ttu-id="fdd4f-116">Hónap</span><span class="sxs-lookup"><span data-stu-id="fdd4f-116">Month</span></span> |   <span data-ttu-id="fdd4f-117">100</span><span class="sxs-lookup"><span data-stu-id="fdd4f-117">100</span></span>   |
+   |   <span data-ttu-id="fdd4f-118">2</span><span class="sxs-lookup"><span data-stu-id="fdd4f-118">2</span></span>    | <span data-ttu-id="fdd4f-119">Hónap</span><span class="sxs-lookup"><span data-stu-id="fdd4f-119">Month</span></span> |   <span data-ttu-id="fdd4f-120">75</span><span class="sxs-lookup"><span data-stu-id="fdd4f-120">75</span></span>    |
+   |   <span data-ttu-id="fdd4f-121">3</span><span class="sxs-lookup"><span data-stu-id="fdd4f-121">3</span></span>    | <span data-ttu-id="fdd4f-122">Hónap</span><span class="sxs-lookup"><span data-stu-id="fdd4f-122">Month</span></span> |   <span data-ttu-id="fdd4f-123">50</span><span class="sxs-lookup"><span data-stu-id="fdd4f-123">50</span></span>    |
+   |   <span data-ttu-id="fdd4f-124">4</span><span class="sxs-lookup"><span data-stu-id="fdd4f-124">4</span></span>    | <span data-ttu-id="fdd4f-125">Hónap</span><span class="sxs-lookup"><span data-stu-id="fdd4f-125">Month</span></span> |   <span data-ttu-id="fdd4f-126">25</span><span class="sxs-lookup"><span data-stu-id="fdd4f-126">25</span></span>    |
+
+
+2. <span data-ttu-id="fdd4f-127">Hivatkozás a csökkentési kulcsot a cikk fedezeti csoporthoz.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-127">Link the reduction key to the item's coverage group.</span></span>
+3. <span data-ttu-id="fdd4f-128">A **Alaptervek** az oldalon a **Csökkentési elv** mezőben válassza ki **Százalék - csökkentési kulcs**.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
+4. <span data-ttu-id="fdd4f-129">Hozzon létre egy havi 1000 darabos értékesítési előrejelzést.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-129">Create a demand forecast of 1,000 pieces per month.</span></span>
 
 <span data-ttu-id="fdd4f-130">Ha előrejelzési ütemezést január 1-jén futtatja, az igény-előrejelzés követelményeinek felhasználása a százalékokat, amelyek a beállítása a **Csökkentési kulcsok** oldalon.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-130">If you run forecast scheduling on January 1, the demand forecast requirements are consumed according to the percentages that you set up on the **Reduction keys** page.</span></span> <span data-ttu-id="fdd4f-131">Az alábbi mennyiségi követelések kerülnek az alaptervbe.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-131">The following requirement quantities are transferred to the master plan.</span></span>
 
@@ -88,20 +89,21 @@ ms.lasthandoff: 11/03/2017
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a><span data-ttu-id="fdd4f-171">3. példa: Tranzakciók dinamikus periódus előrejelzés csökkentési elv</span><span class="sxs-lookup"><span data-stu-id="fdd4f-171">Example 3: Transactions  dynamic period forecast reduction principle</span></span>
 <span data-ttu-id="fdd4f-172">A legtöbb esetben rendszerek vannak beállítva, hogy a tranzakciók csökkenti az igény-előrejelzés egyedi előrejelzési időszakokon belül: hét, hónap, és így tovább.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-172">In most cases, systems are set up so that transactions reduce demand forecast within specific forecast periods: weeks, months, and so on.</span></span> <span data-ttu-id="fdd4f-173">A csökkentési kulcs határozza meg ezeket az időszakokat.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-173">These periods are defined in the reduction key.</span></span> <span data-ttu-id="fdd4f-174">Ugyanakkor két között eltelt idő igény-előrejelzési sort is *Jelenti* egy időszakot.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-174">However, the time between two demand forecast lines can also *imply* a period.</span></span>
 
-1.  <span data-ttu-id="fdd4f-175">Hozzon létre egy igény-előrejelzés a következő dátumokat és mennyiségeket.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-175">Create a demand forecast for the following dates and quantities.</span></span>
-    | <span data-ttu-id="fdd4f-176">Dátum</span><span class="sxs-lookup"><span data-stu-id="fdd4f-176">Date</span></span>       | <span data-ttu-id="fdd4f-177">Igény-előrejelzés</span><span class="sxs-lookup"><span data-stu-id="fdd4f-177">Demand forecast</span></span> |
-    |------------|-----------------|
-    | <span data-ttu-id="fdd4f-178">Január 1.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-178">January 1</span></span>  | <span data-ttu-id="fdd4f-179">1000</span><span class="sxs-lookup"><span data-stu-id="fdd4f-179">1,000</span></span>           |
-    | <span data-ttu-id="fdd4f-180">Január 5.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-180">January 5</span></span>  | <span data-ttu-id="fdd4f-181">500</span><span class="sxs-lookup"><span data-stu-id="fdd4f-181">500</span></span>             |
-    | <span data-ttu-id="fdd4f-182">Január 12.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-182">January 12</span></span> | <span data-ttu-id="fdd4f-183">1000</span><span class="sxs-lookup"><span data-stu-id="fdd4f-183">1,000</span></span>           |
+1. <span data-ttu-id="fdd4f-175">Hozzon létre egy igény-előrejelzés a következő dátumokat és mennyiségeket.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-175">Create a demand forecast for the following dates and quantities.</span></span>
 
-    <span data-ttu-id="fdd4f-184">Ez előrejelzésben, nincs időszak törlése a következő előre jelzett dátum között: az első és második dátum között nincs négy nappal az az időtartam, és a második és harmadik dátum között van az az időtartam hét nap.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="fdd4f-185">A különböző kiterjed a dinamikus időszakok lesznek.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-185">These various spans are the dynamic periods.</span></span>
-2.  <span data-ttu-id="fdd4f-186">Értékesítésirendelés-sorok létrehozása.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-186">Create sales order lines as follows.</span></span>
-    | <span data-ttu-id="fdd4f-187">Dátum</span><span class="sxs-lookup"><span data-stu-id="fdd4f-187">Date</span></span>                             | <span data-ttu-id="fdd4f-188">Eladási árhoz kapcsolódó mennyiség</span><span class="sxs-lookup"><span data-stu-id="fdd4f-188">Sales order quantity</span></span> |
-    |----------------------------------|----------------------|
-    | <span data-ttu-id="fdd4f-189">December 15-re vonatkozóan az előző év</span><span class="sxs-lookup"><span data-stu-id="fdd4f-189">December 15 in the previous year</span></span> | <span data-ttu-id="fdd4f-190">500</span><span class="sxs-lookup"><span data-stu-id="fdd4f-190">500</span></span>                  |
-    | <span data-ttu-id="fdd4f-191">Január 3.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-191">January 3</span></span>                        | <span data-ttu-id="fdd4f-192">100</span><span class="sxs-lookup"><span data-stu-id="fdd4f-192">100</span></span>                  |
-    | <span data-ttu-id="fdd4f-193">Január 10.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-193">January 10</span></span>                       | <span data-ttu-id="fdd4f-194">200</span><span class="sxs-lookup"><span data-stu-id="fdd4f-194">200</span></span>                  |
+   | <span data-ttu-id="fdd4f-176">Dátum</span><span class="sxs-lookup"><span data-stu-id="fdd4f-176">Date</span></span>       | <span data-ttu-id="fdd4f-177">Igény-előrejelzés</span><span class="sxs-lookup"><span data-stu-id="fdd4f-177">Demand forecast</span></span> |
+   |------------|-----------------|
+   | <span data-ttu-id="fdd4f-178">Január 1.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-178">January 1</span></span>  | <span data-ttu-id="fdd4f-179">1000</span><span class="sxs-lookup"><span data-stu-id="fdd4f-179">1,000</span></span>           |
+   | <span data-ttu-id="fdd4f-180">Január 5.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-180">January 5</span></span>  | <span data-ttu-id="fdd4f-181">500</span><span class="sxs-lookup"><span data-stu-id="fdd4f-181">500</span></span>             |
+   | <span data-ttu-id="fdd4f-182">Január 12.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-182">January 12</span></span> | <span data-ttu-id="fdd4f-183">1000</span><span class="sxs-lookup"><span data-stu-id="fdd4f-183">1,000</span></span>           |
+
+   <span data-ttu-id="fdd4f-184">Ez előrejelzésben, nincs időszak törlése a következő előre jelzett dátum között: az első és második dátum között nincs négy nappal az az időtartam, és a második és harmadik dátum között van az az időtartam hét nap.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="fdd4f-185">A különböző kiterjed a dinamikus időszakok lesznek.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-185">These various spans are the dynamic periods.</span></span>
+2. <span data-ttu-id="fdd4f-186">Értékesítésirendelés-sorok létrehozása.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-186">Create sales order lines as follows.</span></span>
+   | <span data-ttu-id="fdd4f-187">Dátum</span><span class="sxs-lookup"><span data-stu-id="fdd4f-187">Date</span></span>                             | <span data-ttu-id="fdd4f-188">Eladási árhoz kapcsolódó mennyiség</span><span class="sxs-lookup"><span data-stu-id="fdd4f-188">Sales order quantity</span></span> |
+   |----------------------------------|----------------------|
+   | <span data-ttu-id="fdd4f-189">December 15-re vonatkozóan az előző év</span><span class="sxs-lookup"><span data-stu-id="fdd4f-189">December 15 in the previous year</span></span> | <span data-ttu-id="fdd4f-190">500</span><span class="sxs-lookup"><span data-stu-id="fdd4f-190">500</span></span>                  |
+   | <span data-ttu-id="fdd4f-191">Január 3.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-191">January 3</span></span>                        | <span data-ttu-id="fdd4f-192">100</span><span class="sxs-lookup"><span data-stu-id="fdd4f-192">100</span></span>                  |
+   | <span data-ttu-id="fdd4f-193">Január 10.</span><span class="sxs-lookup"><span data-stu-id="fdd4f-193">January 10</span></span>                       | <span data-ttu-id="fdd4f-194">200</span><span class="sxs-lookup"><span data-stu-id="fdd4f-194">200</span></span>                  |
 
 <span data-ttu-id="fdd4f-195">Az előrejelzés csökken a következőképpen történik:</span><span class="sxs-lookup"><span data-stu-id="fdd4f-195">The forecast will be reduced as follows:</span></span>
 

@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 63252347f88f474a0527d9e6d283e2458fabc1aa
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9832a60ee703878701927b66b0b4b63cb7efb985
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="cd01b-103">Készlet számlálása egy raktárban</span><span class="sxs-lookup"><span data-stu-id="cd01b-103">Count inventory in a warehouse</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cd01b-104">Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készletleltározási napló a raktárban egy adott helyen található konkrét cikk leltározásához.</span><span class="sxs-lookup"><span data-stu-id="cd01b-104">This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse.</span></span> <span data-ttu-id="cd01b-105">Ez az eljárás az „alapvető raktározás” szolgáltatásra vonatkozik, amely a Készletgazdálkodás modul része, és nem a „raktározás” szolgáltatásra, amely a Raktárkezelés modul része.</span><span class="sxs-lookup"><span data-stu-id="cd01b-105">The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module.</span></span> <span data-ttu-id="cd01b-106">Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="cd01b-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="cd01b-107">Ha a saját adatait használja, ügyeljen rá, hogy legyenek beállított termékek és helyek, és hogy létrehozzon egy készletnaplónevet a leltárnaplókhoz.</span><span class="sxs-lookup"><span data-stu-id="cd01b-107">If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals.</span></span> <span data-ttu-id="cd01b-108">A készletleltározást általában egy raktári alkalmazott végzi el.</span><span class="sxs-lookup"><span data-stu-id="cd01b-108">Inventory counting is normally carried out by a warehouse employee.</span></span>
 

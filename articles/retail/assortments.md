@@ -15,15 +15,15 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 364207d188c0361cbbc9627bec35e059a7bb552c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="assortment-management"></a><span data-ttu-id="5ad8d-103">Szortiment kezelése</span><span class="sxs-lookup"><span data-stu-id="5ad8d-103">Assortment management</span></span>
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a><span data-ttu-id="5ad8d-104">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="5ad8d-104">Overview</span></span>
 <span data-ttu-id="5ad8d-105">A Microsoft Dynamics 365 for Retail *szortimenteket* tartalmaz, amelyekkel csatornákon keresztül kezelhető a termékek elérhetősége.</span><span class="sxs-lookup"><span data-stu-id="5ad8d-105">Microsoft Dynamics 365 for Retail provides *assortments* that let you manage product availability across channels.</span></span> <span data-ttu-id="5ad8d-106">A szortimentek határozzák meg, hogy mely termékek érhetők el bizonyos üzletekben, és egy adott időszakban.</span><span class="sxs-lookup"><span data-stu-id="5ad8d-106">Assortments determine which products are available at specific stores and during a specific period.</span></span>

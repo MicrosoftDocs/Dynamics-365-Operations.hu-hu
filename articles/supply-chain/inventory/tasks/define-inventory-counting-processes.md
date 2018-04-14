@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: f3610b52fd690b698d50a608c41adfb918930266
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 13df47f7b04f5fc4b6c9a28b0c05a2b1bd0fe6a8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-inventory-counting-processes"></a><span data-ttu-id="7d4d7-103">Készletleltár-folyamatok meghatározása</span><span class="sxs-lookup"><span data-stu-id="7d4d7-103">Define inventory counting processes</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7d4d7-104">Ez az eljárás végigvezeti az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával.</span><span class="sxs-lookup"><span data-stu-id="7d4d7-104">This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.</span></span> <span data-ttu-id="7d4d7-105">Azt is bemutatja, hogy hogyan engedélyezheti a leltározási irányelveket raktár vagy cikk szintjén.</span><span class="sxs-lookup"><span data-stu-id="7d4d7-105">It also shows you how to enable counting policies on a warehouse and item level.</span></span> <span data-ttu-id="7d4d7-106">Ezeket a feladatokat jellemzően egy raktárvezető végzi el.</span><span class="sxs-lookup"><span data-stu-id="7d4d7-106">These tasks would typically be carried out by a warehouse supervisor.</span></span> <span data-ttu-id="7d4d7-107">Ez előfeltétele annak, hogy legyen létező kiadott termék és raktár.</span><span class="sxs-lookup"><span data-stu-id="7d4d7-107">It is a prerequisite to have some existing released products and warehouses.</span></span> <span data-ttu-id="7d4d7-108">Ha bemutató adatokat használ, ezt az eljárást az USMF vállalatban bármilyen raktározott cikkre futtathatja.</span><span class="sxs-lookup"><span data-stu-id="7d4d7-108">If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.</span></span>
 

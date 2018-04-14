@@ -18,21 +18,21 @@ ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ca43a81ab3e1dfcfec6a69369121265c54dae9a8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c293934675ac491792b55ddd81e38ae2cfe79266
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-journal-reports"></a><span data-ttu-id="df84a-103">Készletnapló-jelentések</span><span class="sxs-lookup"><span data-stu-id="df84a-103">Inventory journal reports</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="df84a-104">Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.</span><span class="sxs-lookup"><span data-stu-id="df84a-104">When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.</span></span>
 
 <span data-ttu-id="df84a-105">Egy adott jelentés és naplótípus közötti kapcsolat beállításához a **Készletnaplónevek** oldalon (**Készletgazdálkodás** &gt; **Beállítás** &gt; **Naplónevek** &gt; **Készlet**) adja meg a jelentés nevét.</span><span class="sxs-lookup"><span data-stu-id="df84a-105">To set up a relationship between a specific report and a journal type, on the **Inventory journal names** page (**Inventory management** &gt; **Setup** &gt; **Journal names** &gt; **Inventory**), enter a name for the report.</span></span> <span data-ttu-id="df84a-106">**Megjegyzés:** támogatott konfigurációk beállításához töltse le a szükséges elektronikus jelentési konfigurációkat.</span><span class="sxs-lookup"><span data-stu-id="df84a-106">**Note:** To set up supported configurations, download the required electronic reporting configurations.</span></span> <span data-ttu-id="df84a-107">További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span><span class="sxs-lookup"><span data-stu-id="df84a-107">For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span></span> <span data-ttu-id="df84a-108">Az alábbi táblázatban példák találhatók Európában támogatott konfigurációjú készletjelentésekre.</span><span class="sxs-lookup"><span data-stu-id="df84a-108">Examples of inventory reports with supported configurations in Europe are listed in the following table.</span></span>
+
 |                    |                                     |                  |                                         |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
 | <span data-ttu-id="df84a-109">**Ország**</span><span class="sxs-lookup"><span data-stu-id="df84a-109">**Country**</span></span>        | <span data-ttu-id="df84a-110">**Jelentés leírása**</span><span class="sxs-lookup"><span data-stu-id="df84a-110">**Report description**</span></span>              | <span data-ttu-id="df84a-111">**Napló típusa**</span><span class="sxs-lookup"><span data-stu-id="df84a-111">**Journal type**</span></span> | <span data-ttu-id="df84a-112">**Formátum-hozzárendelés neve**</span><span class="sxs-lookup"><span data-stu-id="df84a-112">**Format mapping name**</span></span>                 |

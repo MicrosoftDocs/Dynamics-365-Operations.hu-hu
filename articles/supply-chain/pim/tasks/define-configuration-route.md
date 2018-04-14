@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b02cbd9931821c69d8b42f796cdebd2aff6f2ddd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 26fb7dc7113411bb5117476ddfa02ae9d81cf287
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-configuration-routes"></a><span data-ttu-id="06450-103">Konfigurációs útvonalak meghatározása</span><span class="sxs-lookup"><span data-stu-id="06450-103">Define configuration routes</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="06450-104">Ez az eljárás bemutatja a konfigurációs csoportok megjelenését meghatározó konfigurációs útvonal megadását.</span><span class="sxs-lookup"><span data-stu-id="06450-104">This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented.</span></span> <span data-ttu-id="06450-105">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="06450-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="06450-106">Ez az hatodik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.</span><span class="sxs-lookup"><span data-stu-id="06450-106">This is the sixth procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 

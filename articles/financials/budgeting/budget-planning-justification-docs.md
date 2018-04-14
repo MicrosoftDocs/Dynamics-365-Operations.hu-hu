@@ -19,17 +19,16 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b38050e8a792622b772882ec4a0cddce8661a720
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-justification-documents"></a><span data-ttu-id="a7b77-103">Költségvetési tervezés igazoló dokumentumai</span><span class="sxs-lookup"><span data-stu-id="a7b77-103">Budget planning justification documents</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a7b77-104">Az igazoló dokumentumok háttérmagyarázatokat biztosítanak arra az esetre, ha valaki egy költségvetést kikérve rákérdez, miért van szükség az adott költségvetésre.</span><span class="sxs-lookup"><span data-stu-id="a7b77-104">Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary.</span></span> 
 

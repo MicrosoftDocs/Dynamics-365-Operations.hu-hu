@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8e7d2198b4976a6f60f05690d7b6f11f3da55e28
-ms.openlocfilehash: 3d5c38b1f07803242350fe016b45c45d49c0b59b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad1bd0babbf81e6296c59440cf679f131f9976c2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-sales-commission-rules"></a><span data-ttu-id="5f089-103">Értékesítési jutalékok szabályainak beállítása</span><span class="sxs-lookup"><span data-stu-id="5f089-103">Set up sales commission rules</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5f089-104">Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az értékesítési jutalékszámítást és követést.</span><span class="sxs-lookup"><span data-stu-id="5f089-104">This procedure shows you how to set up and enable sales commission calculation and tracking.</span></span> <span data-ttu-id="5f089-105">Ez az eljárás bemutatja, hogy hozhat létre vevő és cikk típusú jutalékcsoportokat, és hogyan csatolhatja a kiválasztott vevőt és a terméket a megfelelő csoporthoz.</span><span class="sxs-lookup"><span data-stu-id="5f089-105">The procedure shows how to create both customer and item commission groups, and then how to link a selected customer and product to the respective groups.</span></span> <span data-ttu-id="5f089-106">Ezek a csoportok a jutalékszámítás beállításánál használatosak, vevő, cikk, és üzletkötő kombinációk létrehozásához, amelyeket értékesítési rendelésekhez kell kötni, hogy feljogosítsa az értékesítőket üzletkötésre.</span><span class="sxs-lookup"><span data-stu-id="5f089-106">Those groups are then used in the commission calculation setup to create a customer, item, and sales representatives combination that must be matched by the sales order to entitle the sales people to a commission.</span></span> <span data-ttu-id="5f089-107">Vevő és cikk jutalékcsoportok létrehozása nem kötelező, mivel a jutalékszámítás egy vevőre és/vagy cikkre is elvégezhető.</span><span class="sxs-lookup"><span data-stu-id="5f089-107">Creating customer and item commission groups are optional, as the calculation of commission can also be done for an individual customer and/or item.</span></span> <span data-ttu-id="5f089-108">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="5f089-108">You can run this procedure in demo data company USMF or on your own data.</span></span>
 

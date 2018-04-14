@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6aef83b18ba5f18506921e08f3674b6bb272d3ab
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0da2c4e308ef377b7657f0905fec56e47f27b99
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-applicant-and-application-data-manually"></a><span data-ttu-id="1afad-103">Pályázók és a pályázatok adatainak manuális megadása</span><span class="sxs-lookup"><span data-stu-id="1afad-103">Enter applicant and application data manually</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1afad-104">Ez az eljárás bemutatja, hogyan lehet manuálisan karbantartani a pályázóval és pályázatukkal kapcsolatos információkat.</span><span class="sxs-lookup"><span data-stu-id="1afad-104">This procedure shows how to manually maintain information about applicants and their application.</span></span>   <span data-ttu-id="1afad-105">Megadhat és karban tarthat személyes információkat, állásinterjú dátumokat és időpontokat, referenciákat, kompetenciákat és a pályázó kérvényeit.</span><span class="sxs-lookup"><span data-stu-id="1afad-105">You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants.</span></span> <span data-ttu-id="1afad-106">Frissítheti a pályázó alkalmazási pályázatának állapotát, és leveleket vagy e-mail üzeneteket írhat, hogy kommunikáljon a pályázóval.</span><span class="sxs-lookup"><span data-stu-id="1afad-106">You can also update the status of applicants’ applications for employment and create letters or email messages to communicate with applicants.</span></span> <span data-ttu-id="1afad-107">Ha létrehoz egy pályázói rekordot, egy személyes rekord jön létre a pályázószámára a globális címjegyzékben.</span><span class="sxs-lookup"><span data-stu-id="1afad-107">When you create an applicant record, a person record for that applicant is created in the global address book.</span></span>       <span data-ttu-id="1afad-108">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="1afad-108">The demo data company used to create this procedure is USMF.</span></span>
 

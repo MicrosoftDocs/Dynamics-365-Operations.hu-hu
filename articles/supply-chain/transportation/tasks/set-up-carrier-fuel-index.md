@@ -17,53 +17,53 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 81f3244ff42cf13cd93ac10656c47f8a9204ef99
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cd9842a14d512353bda399a9d83eb7296a75d982
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="set-up-a-carrier-fuel-index"></a>Szállítmányozói üzemanyag-mutató beállítása
+# <a name="set-up-a-carrier-fuel-index"></a><span data-ttu-id="53088-103">Szállítmányozói üzemanyag-mutató beállítása</span><span class="sxs-lookup"><span data-stu-id="53088-103">Set up a carrier fuel index</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez az útmutató bemutatja, hogyan hozhat létre üzemanyag-mutató régiót, üzemanyag mutatót és szállítmányozói üzemanyag-mutatót. Az üzemanyag-mutató régió megadja, hogy mely régióra kell vonatkoznia az üzemanyag-mutatónak, az üzemanyag-mutató pedig megadja az adott időszakra érvényes üzemanyagárat. Üzemanyag-árak időbeli változásának tükrözéséhez több üzemanyag-mutatót is társíthat a szállítmányozóhoz.  Ezeket a feladatokat általában a szállítási koordinátor végzi. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.
+<span data-ttu-id="53088-104">Ez az útmutató bemutatja, hogyan hozhat létre üzemanyag-mutató régiót, üzemanyag mutatót és szállítmányozói üzemanyag-mutatót.</span><span class="sxs-lookup"><span data-stu-id="53088-104">This guide shows how to create a fuel index region, a fuel index and a carrier fuel index.</span></span> <span data-ttu-id="53088-105">Az üzemanyag-mutató régió megadja, hogy mely régióra kell vonatkoznia az üzemanyag-mutatónak, az üzemanyag-mutató pedig megadja az adott időszakra érvényes üzemanyagárat.</span><span class="sxs-lookup"><span data-stu-id="53088-105">The fuel index region specifies which region the fuel index should apply to, and the fuel index specifies a fuel price for a particular period of time.</span></span> <span data-ttu-id="53088-106">Üzemanyag-árak időbeli változásának tükrözéséhez több üzemanyag-mutatót is társíthat a szállítmányozóhoz.</span><span class="sxs-lookup"><span data-stu-id="53088-106">To reflect the change in fuel prices over time, you can associate multiple fuel indexes with a carrier.</span></span>  <span data-ttu-id="53088-107">Ezeket a feladatokat általában a szállítási koordinátor végzi.</span><span class="sxs-lookup"><span data-stu-id="53088-107">These tasks are normally done by a transportation coordinator.</span></span> <span data-ttu-id="53088-108">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.</span><span class="sxs-lookup"><span data-stu-id="53088-108">You can use this procedure in demo data company USMF or using your own data.</span></span>
 
 
-## <a name="create-a-fuel-index-region"></a>Üzemanyag-mutató régió létrehozása
-1. Ugorjon a Szállítási kezelés > Beállítás > Üzemanyag-mutatók > Üzemanyag-mutató régiók lehetőségre.
-    * Először létre kell hoznia különböző régiókat, ahol dolgozik, aztán ki kell számolnia az üzemanyag-pótdíjakat.  
-2. Kattintson az Új lehetőségre.
-3. A Régió mezőbe írjon be egy értéket.
-4. Írjon be egy értéket a Név mezőbe.
-5. Kattintson a Mentés gombra.
+## <a name="create-a-fuel-index-region"></a><span data-ttu-id="53088-109">Üzemanyag-mutató régió létrehozása</span><span class="sxs-lookup"><span data-stu-id="53088-109">Create a fuel index region</span></span>
+1. <span data-ttu-id="53088-110">Ugorjon a Szállítási kezelés > Beállítás > Üzemanyag-mutatók > Üzemanyag-mutató régiók lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="53088-110">Go to Transportation management > Setup > Fuel indexes > Fuel index regions.</span></span>
+    * <span data-ttu-id="53088-111">Először létre kell hoznia különböző régiókat, ahol dolgozik, aztán ki kell számolnia az üzemanyag-pótdíjakat.</span><span class="sxs-lookup"><span data-stu-id="53088-111">First you have to create the different regions, where you operate and calculate different fuel surcharges.</span></span>  
+2. <span data-ttu-id="53088-112">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="53088-112">Click New.</span></span>
+3. <span data-ttu-id="53088-113">A Régió mezőbe írjon be egy értéket.</span><span class="sxs-lookup"><span data-stu-id="53088-113">In the Region field, type a value.</span></span>
+4. <span data-ttu-id="53088-114">Írjon be egy értéket a Név mezőbe.</span><span class="sxs-lookup"><span data-stu-id="53088-114">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="53088-115">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="53088-115">Click Save.</span></span>
 
-## <a name="create-a-fuel-index"></a>Hozzon létre egy üzemanyag-mutatót
-1. Ugorjon a Szállítási kezelés > Beállítás > Üzemanyag-mutatók > Üzemanyag-mutatók lehetőségre.
-    * A beállított régiókhoz meg kell adnia a jelenlegi üzemanyagárakat.  
-2. Kattintson az Új lehetőségre.
-3. A Régió mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-5. Az Ár/gallon mezőben adjon meg egy számot.
-6. Az Érvényesség kezdő dátuma és időpontja mezőben adjon meg egy dátumot és időpontot.
-7. Kattintson a Mentés gombra.
+## <a name="create-a-fuel-index"></a><span data-ttu-id="53088-116">Hozzon létre egy üzemanyag-mutatót</span><span class="sxs-lookup"><span data-stu-id="53088-116">Create a fuel index</span></span>
+1. <span data-ttu-id="53088-117">Ugorjon a Szállítási kezelés > Beállítás > Üzemanyag-mutatók > Üzemanyag-mutatók lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="53088-117">Go to Transportation management > Setup > Fuel indexes > Fuel indexes.</span></span>
+    * <span data-ttu-id="53088-118">A beállított régiókhoz meg kell adnia a jelenlegi üzemanyagárakat.</span><span class="sxs-lookup"><span data-stu-id="53088-118">For the regions you have set up you need to enter the current prices for the fuel.</span></span>  
+2. <span data-ttu-id="53088-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="53088-119">Click New.</span></span>
+3. <span data-ttu-id="53088-120">A Régió mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="53088-120">In the Region field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="53088-121">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="53088-121">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="53088-122">Az Ár/gallon mezőben adjon meg egy számot.</span><span class="sxs-lookup"><span data-stu-id="53088-122">In the Price per gallon field, enter a number.</span></span>
+6. <span data-ttu-id="53088-123">Az Érvényesség kezdő dátuma és időpontja mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="53088-123">In the Effective start date and time field, enter a date and time.</span></span>
+7. <span data-ttu-id="53088-124">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="53088-124">Click Save.</span></span>
 
-## <a name="create-a-carrier-fuel-index"></a>Szállítmányozói üzemanyag-mutató létrehozása
-1. Ugorjon a Szállítási kezelés > Beállítás Üzemanyag-mutatók > Szállítmányozói üzemanyag-mutatók lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Szállítmányozói üzemanyag-mutató mezőbe.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Kattintson az Új elemre.
-6. Az Érvényesség kezdő dátuma és időpontja mezőben adjon meg egy dátumot és időpontot.
-7. Írjon be egy számot a Kezdő üzemanyagár mezőbe.
-    * Ebben a példában a Kezdő üzemanyagár mezőt 1,95-re állíthatja.  
-8. Írjon be egy számot a Záró üzemanyagár mezőbe.
-    * Ebben a példában a Záró üzemanyagár mezőt 2-re állíthatja.  
-9. Adjon meg egy számot a Százalék mezőben.
-    * Ebben a példában a százalékot 3-ra állíthatja.  
-10. A Pénznem mezőben kattintson a legördülő gombra a keresőlista megnyitásához.
-11. Keresse meg és jelölje ki a kívánt rekordot a listán.
-12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-13. Kattintson a Mentés gombra.
+## <a name="create-a-carrier-fuel-index"></a><span data-ttu-id="53088-125">Szállítmányozói üzemanyag-mutató létrehozása</span><span class="sxs-lookup"><span data-stu-id="53088-125">Create a Carrier fuel index</span></span>
+1. <span data-ttu-id="53088-126">Ugorjon a Szállítási kezelés > Beállítás Üzemanyag-mutatók > Szállítmányozói üzemanyag-mutatók lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="53088-126">Go to Transportation management > Setup > Fuel indexes > Carrier fuel indexes.</span></span>
+2. <span data-ttu-id="53088-127">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="53088-127">Click New.</span></span>
+3. <span data-ttu-id="53088-128">Írjon be egy értéket a Szállítmányozói üzemanyag-mutató mezőbe.</span><span class="sxs-lookup"><span data-stu-id="53088-128">In the Carrier fuel index field, type a value.</span></span>
+4. <span data-ttu-id="53088-129">A Leírás mezőben adjon meg egy értéket.</span><span class="sxs-lookup"><span data-stu-id="53088-129">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="53088-130">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="53088-130">Click New.</span></span>
+6. <span data-ttu-id="53088-131">Az Érvényesség kezdő dátuma és időpontja mezőben adjon meg egy dátumot és időpontot.</span><span class="sxs-lookup"><span data-stu-id="53088-131">In the Effective start date and time field, enter a date and time.</span></span>
+7. <span data-ttu-id="53088-132">Írjon be egy számot a Kezdő üzemanyagár mezőbe.</span><span class="sxs-lookup"><span data-stu-id="53088-132">In the PPG From field, enter a number.</span></span>
+    * <span data-ttu-id="53088-133">Ebben a példában a Kezdő üzemanyagár mezőt 1,95-re állíthatja.</span><span class="sxs-lookup"><span data-stu-id="53088-133">In this example, you can set PPG From field to 1.95.</span></span>  
+8. <span data-ttu-id="53088-134">Írjon be egy számot a Záró üzemanyagár mezőbe.</span><span class="sxs-lookup"><span data-stu-id="53088-134">In the PPG To field, enter a number.</span></span>
+    * <span data-ttu-id="53088-135">Ebben a példában a Záró üzemanyagár mezőt 2-re állíthatja.</span><span class="sxs-lookup"><span data-stu-id="53088-135">In this example you can set the PPG To field to 2.</span></span>  
+9. <span data-ttu-id="53088-136">Adjon meg egy számot a Százalék mezőben.</span><span class="sxs-lookup"><span data-stu-id="53088-136">In the Percentage field, enter a number.</span></span>
+    * <span data-ttu-id="53088-137">Ebben a példában a százalékot 3-ra állíthatja.</span><span class="sxs-lookup"><span data-stu-id="53088-137">In this example you can set the percentage to 3.</span></span>  
+10. <span data-ttu-id="53088-138">A Pénznem mezőben kattintson a legördülő gombra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="53088-138">In the Currency field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="53088-139">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="53088-139">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="53088-140">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="53088-140">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="53088-141">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="53088-141">Click Save.</span></span>
 
 

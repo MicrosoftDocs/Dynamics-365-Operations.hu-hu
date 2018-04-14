@@ -18,15 +18,15 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2ecfb759a59292ddbce484b3ae20368c486fedd9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bea198488da52de21aba0c33b4004b6ad7518fd3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a><span data-ttu-id="bbf20-103">Az SQL Server Reporting Services konfigurálása on-premises telepítéshez</span><span class="sxs-lookup"><span data-stu-id="bbf20-103">Configure SQL Server Reporting Services for an on-premises deployment</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="bbf20-104">Az ebben a témakörben található lépésekkel konfigurálhatja az SQL Server Reporting Services (SSRS) szolgáltatást az Ön Microsoft Dynamics 365 for Finance and Operations (on-premises) telepítésének megfelelően.</span><span class="sxs-lookup"><span data-stu-id="bbf20-104">Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 for Finance and Operations (on-premises) deployment.</span></span>
 
@@ -52,13 +52,13 @@ ms.lasthandoff: 03/26/2018
 
     <span data-ttu-id="bbf20-119">[![webportál url-címe lap](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-119">[![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span></span>
     
-  <span data-ttu-id="bbf20-120">A portál beállítása után a **Webes portál** lap az alábbi ábrával fog megegyezni.</span><span class="sxs-lookup"><span data-stu-id="bbf20-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
+   <span data-ttu-id="bbf20-120">A portál beállítása után a **Webes portál** lap az alábbi ábrával fog megegyezni.</span><span class="sxs-lookup"><span data-stu-id="bbf20-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
     <span data-ttu-id="bbf20-121">[![webportál lap](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-121">[![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span></span>
     
 8. <span data-ttu-id="bbf20-122">Kattintson a jelentések URL-jére az SQL Server Reporting Services webportál megtekintéséhez.</span><span class="sxs-lookup"><span data-stu-id="bbf20-122">Click the reports URL to view the SQL Server Reporting Services web portal.</span></span> 
-9.  <span data-ttu-id="bbf20-123">A portálon hozzon létre egy új, **Dynamics** nevű mappát.</span><span class="sxs-lookup"><span data-stu-id="bbf20-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
+9. <span data-ttu-id="bbf20-123">A portálon hozzon létre egy új, **Dynamics** nevű mappát.</span><span class="sxs-lookup"><span data-stu-id="bbf20-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
 
-    <span data-ttu-id="bbf20-124">[![dynamics mappa](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
+   <span data-ttu-id="bbf20-124">[![dynamics mappa](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
     
 10. <span data-ttu-id="bbf20-125">A **Reporting Services konfigurációkezelőben** kattintson az **E-mail beállítások** lapfülre, és ellenőrizze, hogy a beállítások megfelelnek-e az alábbi ábrán láthatóaknak.</span><span class="sxs-lookup"><span data-stu-id="bbf20-125">In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.</span></span>
 
@@ -68,15 +68,15 @@ ms.lasthandoff: 03/26/2018
 
     <span data-ttu-id="bbf20-128">[![végrehajtó fiók lap](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-128">[![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span></span>
     
-  <span data-ttu-id="bbf20-129">Ne módosítsa az alapértelmezett beállításokat a **Titkosítási kulcsok** lapon. [![titkosítási kulcsok lap](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-129">Don’t change the default settings on the **Encryption Keys** tab. [![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
+    <span data-ttu-id="bbf20-129">Ne módosítsa az alapértelmezett beállításokat a **Titkosítási kulcsok** lapon. [![titkosítási kulcsok lap](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-129">Don’t change the default settings on the **Encryption Keys** tab. [![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
     
 12. <span data-ttu-id="bbf20-130">Kattintson az **Előfizetési beállítások** lapfülre, és ellenőrizze, hogy a beállítások megegyeznek-e a következő ábrán láthatókkal.</span><span class="sxs-lookup"><span data-stu-id="bbf20-130">Click the **Subscription Settings** tab, and verify that the settings match the following graphic.</span></span>
 
     <span data-ttu-id="bbf20-131">[![előfizetési beállítások lap](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-131">[![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span></span>
     
-  <span data-ttu-id="bbf20-132">Ne módosítsa az alapértelmezett beállításokat a **Skálázott telepítés** lapon. [![skálázott telepítés lap](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-132">Don’t change the default settings on the **Scale-out Deployment** tab. [![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
+    <span data-ttu-id="bbf20-132">Ne módosítsa az alapértelmezett beállításokat a **Skálázott telepítés** lapon. [![skálázott telepítés lap](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-132">Don’t change the default settings on the **Scale-out Deployment** tab. [![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
     
-  <span data-ttu-id="bbf20-133">Ne módosítsa az alapértelmezett beállításokat a **Power BI-integráció** lapon. [![power bi integráció lap](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-133">Don’t change the default settings on the **Power BI Integration** tab. [![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span> 
+    <span data-ttu-id="bbf20-133">Ne módosítsa az alapértelmezett beállításokat a **Power BI-integráció** lapon. [![power bi integráció lap](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="bbf20-133">Don’t change the default settings on the **Power BI Integration** tab. [![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span> 
     
 13. <span data-ttu-id="bbf20-134">Kattintson a **Kilépés** ikonra a **Reporting Services konfigurációkezelő** bezárásához.</span><span class="sxs-lookup"><span data-stu-id="bbf20-134">Click **Exit** to close the **Reporting Services Configuration Manager**.</span></span>
 

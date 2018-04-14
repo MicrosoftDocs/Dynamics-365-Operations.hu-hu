@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 956edeac33f8531ecebef64301f2318333000429
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 13add634e275a0156c2c0f87d1fec80385d62fea
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-delivery-schedule"></a><span data-ttu-id="12d9a-103">Szállítási ütemezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="12d9a-103">Create a delivery schedule</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="12d9a-104">Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések kiszállítási ütemezését.</span><span class="sxs-lookup"><span data-stu-id="12d9a-104">This procedure demonstrates how to create a delivery schedule for a sales order.</span></span> <span data-ttu-id="12d9a-105">A szállítási ütemezés akkor használatos, ha egy rendeléshez tartozó mennyiséget több részletben kell szállítani, vagy ilyen árajánlat szükséges.</span><span class="sxs-lookup"><span data-stu-id="12d9a-105">A delivery schedule is used when a quantity on an order or a quotation is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="12d9a-106">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="12d9a-106">You can run this procedure in demo data company USMF or on your own data.</span></span>
 

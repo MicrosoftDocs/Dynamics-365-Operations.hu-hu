@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: af51b6997db39cbeb5cf09bfbe577a8db648cee3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="dimension-hierarchy"></a><span data-ttu-id="65aff-104">Dimenzióhierarchia</span><span class="sxs-lookup"><span data-stu-id="65aff-104">Dimension hierarchy</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="65aff-105">Ez a témakör tájékoztatást tartalmaz a dimenzióhierarchiákkal kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="65aff-105">This topic provides information about dimension hierarchies.</span></span> <span data-ttu-id="65aff-106">Dimenziókészlet-hierarchia segítségével határozza meg a jelentés szerkezetét, a költségirányelveket és a biztonsági beállításokat a költségkönyvelésben.</span><span class="sxs-lookup"><span data-stu-id="65aff-106">You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.</span></span>  
 

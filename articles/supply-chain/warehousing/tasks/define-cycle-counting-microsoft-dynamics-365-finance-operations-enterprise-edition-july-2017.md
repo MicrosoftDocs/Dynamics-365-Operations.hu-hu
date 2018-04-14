@@ -16,15 +16,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f9cdb0a7de0199363279c53e817c98085b31fe6b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5a95f63efe3d78dc371cacdc09734490a601b1b8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-cycle-counting"></a><span data-ttu-id="170f5-103">Ciklikus leltározás meghatározása </span><span class="sxs-lookup"><span data-stu-id="170f5-103">Define cycle counting</span></span> 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="170f5-104">A ciklikus leltározás egy olyan raktározási folyamat, amelyet az aktuális készlet cikkeinek ellenőrzésére használhat.</span><span class="sxs-lookup"><span data-stu-id="170f5-104">Cycle counting is a warehouse process that you can use to audit on-hand inventory items.</span></span> <span data-ttu-id="170f5-105">A feladatrögzítés megmutatja, hogy miként: állíthatja be az alapértelmezett leltározási feladat prioritását; engedélyezhet egy mobileszköz menüpontot a kitárolási és leltározási műveletekhez, engedélyezhet egy leltározási küszöbértéket, ha egy hely üressé válik, engedélyezhet egy ciklikus leltározási tervet egy adott raktárban található adott cikkhez.</span><span class="sxs-lookup"><span data-stu-id="170f5-105">This task recording shows how to set up the default counting work priority, enable a mobile device menu item to process both picking and counting operations, enable a counting threshold trigger when a location becomes empty, and enable a cycle counting plan for a specific item in a specific warehouse.</span></span> <span data-ttu-id="170f5-106">Általában a raktárvezető végzi el ezeket a feladatokat.</span><span class="sxs-lookup"><span data-stu-id="170f5-106">Typically, these tasks are performed by a warehouse manager.</span></span> <span data-ttu-id="170f5-107">Ezt a folyamatot az USMF bemutatócégen vagy saját adatain is elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="170f5-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
 

@@ -17,16 +17,16 @@ ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 160313ac375feb875982bfdbbd850db7f2d8be35
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 690d85cd758a117ce5b69632d63ce0f2b59c5980
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="before-you-buy"></a><span data-ttu-id="e2b55-103">Vásárlás előtti teendők</span><span class="sxs-lookup"><span data-stu-id="e2b55-103">Before you buy</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e2b55-104">Most ismerkedik a Dynamics 365 for Finance and Operations rendszerrel?</span><span class="sxs-lookup"><span data-stu-id="e2b55-104">New to Dynamics 365 for Finance and Operations?</span></span> <span data-ttu-id="e2b55-105">Összeállítottunk egy lépésenkénti útmutatót, amely hasznára válhat; akár még teszteki a Finance and Operations szolgáltatást, akár már készen áll a vásárlásra.</span><span class="sxs-lookup"><span data-stu-id="e2b55-105">We've put together step-by-step guidance whether you’re still evaluating Finance and Operations or ready to make a purchase.</span></span>
 

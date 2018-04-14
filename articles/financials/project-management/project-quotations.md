@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c7de1d7e57a2a32c339bc576f929958b9de91fcc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 490c291c956f6e2bbe04a2de7a7a3798ad3f08d8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="project-quotations"></a><span data-ttu-id="b227d-104">Projektajánlatok</span><span class="sxs-lookup"><span data-stu-id="b227d-104">Project quotations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b227d-105">Ez a cikk a projektajánlatok koncepcióját mutatja be, amelynek segítségével a projektfázis első lépéseként vonzó ajánlatokkal keresheti meg a vevőket.</span><span class="sxs-lookup"><span data-stu-id="b227d-105">This article introduces the concept of project quotations, which you can use to make an attractive offer to a customer as the first step of the project phase.</span></span> <span data-ttu-id="b227d-106">Az ajánlat számos elemre kiterjedhet, például szerepelhetnek az ajánlatokban cikkek és szolgáltatások, alapvető kapcsolattartási információk, különleges kereskedelmi megállapodások és engedmények, valamint lehetséges adók és pótdíjak is.</span><span class="sxs-lookup"><span data-stu-id="b227d-106">A project quotation might include the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges.</span></span> 
 

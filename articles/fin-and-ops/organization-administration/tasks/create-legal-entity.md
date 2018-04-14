@@ -16,15 +16,15 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 89d3babc4447ca7398521b93634db7ecb6cfb5de
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b8f3961e17ba381a75de448c85335abb026c0c53
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-legal-entity"></a><span data-ttu-id="839cb-103">Jogi személy létrehozása</span><span class="sxs-lookup"><span data-stu-id="839cb-103">Create a legal entity</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="839cb-104">A jogi személy jogi hatóságnál történő regisztráción keresztül azonosított szervezetet jelent.</span><span class="sxs-lookup"><span data-stu-id="839cb-104">A legal entity is an organization that is identified through registration with a legal authority.</span></span> <span data-ttu-id="839cb-105">A jogi személyek szerződéseket köthetnek, valamint a teljesítményükről tájékoztató beszámolókat kell készíteniük.</span><span class="sxs-lookup"><span data-stu-id="839cb-105">Legal entities can enter into contracts and are required to prepare statements that report on their performance.</span></span> <span data-ttu-id="839cb-106">Az alábbi eljárás bemutatja, hogy hogyan lehet jogi személyt létrehozni.</span><span class="sxs-lookup"><span data-stu-id="839cb-106">The following procedure explains how to create a legal entity.</span></span> <span data-ttu-id="839cb-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="839cb-107">The demo data company used to create this procedure is USMF.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f75ee28343161026a73dd889b345d65ecc345884
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3c5c8f8b01b1e48856b45e3c81df5671a1a36935
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-sales-tax-authorities"></a><span data-ttu-id="63182-103">Adóhatóságok beállítása</span><span class="sxs-lookup"><span data-stu-id="63182-103">Set up sales tax authorities</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="63182-104">Az adóhatóságok olyan entitások amelyek felé jelenteni és fizetni kell a begyűjtött áfát.</span><span class="sxs-lookup"><span data-stu-id="63182-104">Sales tax authorities are entities to which collected sales tax needs to be reported and paid.</span></span> <span data-ttu-id="63182-105">Közvetlenül is fizetheti az áfát a hatóságnak, vagy egy, az adóhatóság számára létrehozott szállítóazonosítón keresztül.</span><span class="sxs-lookup"><span data-stu-id="63182-105">You can pay sales taxes to the authority directly or through a vendor account that you create for the sales tax authority.</span></span> <span data-ttu-id="63182-106">Végrehajtása esetén a vállalat a szokásos fizetési gyakorlata szerint, időben fizetheti be az áfát.</span><span class="sxs-lookup"><span data-stu-id="63182-106">If you do this, the company can use its usual payment routines to pay the sales tax authority on time.</span></span> <span data-ttu-id="63182-107">Ha nem állítja be szállítóként az adóhatóságot, valakinek az esedékesség napján manuálisan létre kell hoznia az adóhatóságnak szóló kifizetést.</span><span class="sxs-lookup"><span data-stu-id="63182-107">If you do not set up the tax authority as a vendor, someone must prepare a manual payment to the tax authority on the appropriate due date.</span></span> <span data-ttu-id="63182-108">Ez a feladat az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="63182-108">This task uses the USMF demo company.</span></span>
 

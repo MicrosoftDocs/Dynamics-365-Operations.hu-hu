@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 22fadf126dfa884520bc2fe6f94bc3fe3b612f77
-ms.openlocfilehash: 86c3f62e17d4955c12d09b512624eb5f576a9cd3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16c59a53a5708a470fc1aa02d6730b7e83eece18
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a><span data-ttu-id="b4ff8-103">Vevők és vevői bankszámlák beállítása ISO20022 beszedési megbízásokhoz</span><span class="sxs-lookup"><span data-stu-id="b4ff8-103">Set up customers and customer bank accounts for ISO20022 direct debits</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b4ff8-104">A feladat végigvezeti a vevői bankszámla és a vevői beszedési megbízási felhatalmazás beállításán, amelyek a vevői fizetési fájl, például az ISO20022 típusú beszedési megbízás létrehozásához szükségesek.</span><span class="sxs-lookup"><span data-stu-id="b4ff8-104">This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit.</span></span> <span data-ttu-id="b4ff8-105">A vevőnél beállított fizetési formátumtól függően ebben az eljárásban nem érintett, további adatok megadására is szükség lehet a vevő vagy a vevői bankszámla számára.</span><span class="sxs-lookup"><span data-stu-id="b4ff8-105">Depending on the customer payment formats that are set up, additional information, not covered in this procedure, might be required for a customer or a customer bank account.</span></span> 
 

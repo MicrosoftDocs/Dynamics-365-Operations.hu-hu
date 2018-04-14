@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5ac75d1900a428777374dcc9d7eea10ce4d15b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e2972d06346533659dfc26ac243dc57ec5e0f6fb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a><span data-ttu-id="adf25-103">A kelet-európai elszámolási tranzakciók megtekintése</span><span class="sxs-lookup"><span data-stu-id="adf25-103">View transactions on settlement for Eastern Europe</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="adf25-104">Ez a témakör a vevők és szállítók Elszámolási tranzakciók lapjával kapcsolatosan tartalmaz információkat.</span><span class="sxs-lookup"><span data-stu-id="adf25-104">This topic provides information about the Transactions on settlement page for customers and vendors.</span></span>
 

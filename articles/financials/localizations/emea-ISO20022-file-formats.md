@@ -17,16 +17,16 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f55e8fbc4d13f84686298cb8dbcebb4baf134cf3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f094a5420e34a13ac654b01fb145728c7e9cca1c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="import-iso20022-files"></a><span data-ttu-id="e0c29-103">ISO20022 fájlok importálása</span><span class="sxs-lookup"><span data-stu-id="e0c29-103">Import ISO20022 files</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e0c29-104">A következő formátumú fizetési fájlokat importálhatja:</span><span class="sxs-lookup"><span data-stu-id="e0c29-104">You can import payment files that have the following formats:</span></span>
 
@@ -41,8 +41,8 @@ ms.lasthandoff: 03/26/2018
 3. <span data-ttu-id="e0c29-113">A **vevői bankszámla** oldalon, a vevő bankszámlájának rekordja beállítása az alábbi információk megadásával: IBAN-száma és a bank számla számát, és a SWIFT-kód vagy útvonalszám.</span><span class="sxs-lookup"><span data-stu-id="e0c29-113">On the **Customer bank account** page, set up a customer bank account record by entering the following information: IBAN or bank account number, and SWIFT code or routing number.</span></span>
 4. <span data-ttu-id="e0c29-114">A **Bankszámlák** oldalon, a vevő bankszámlájának rekordja beállítása az alábbi információk megadásával: IBAN-száma és a bank számla számát, és a SWIFT-kód vagy útvonalszám.</span><span class="sxs-lookup"><span data-stu-id="e0c29-114">On the **Bank accounts** page, set up legal entity bank accounts by entering the following information: IBAN or bank account number, SWIFT code or routing number, currency, and address.</span></span>
 
-    > [!NOTE]
-        > <span data-ttu-id="e0c29-115">Továbbfejlesztett banki egyeztetés használni tervezi a **egyeztetés** gyorslapon állítsa a **a banki egyeztetés speciális** lehetőséggel **Igen**.</span><span class="sxs-lookup"><span data-stu-id="e0c29-115">If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.</span></span> <span data-ttu-id="e0c29-116">Fel nem adott importált fizetések egyeztetni szeretné, ha a **bankszámlakivonatok használja az elektronikus fizetések visszaigazolására** lehetőséggel **Igen**.</span><span class="sxs-lookup"><span data-stu-id="e0c29-116">If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.</span></span>
+   > [!NOTE]
+   > <span data-ttu-id="e0c29-115">Továbbfejlesztett banki egyeztetés használni tervezi a **egyeztetés** gyorslapon állítsa a **a banki egyeztetés speciális** lehetőséggel **Igen**.</span><span class="sxs-lookup"><span data-stu-id="e0c29-115">If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.</span></span> <span data-ttu-id="e0c29-116">Fel nem adott importált fizetések egyeztetni szeretné, ha a **bankszámlakivonatok használja az elektronikus fizetések visszaigazolására** lehetőséggel **Igen**.</span><span class="sxs-lookup"><span data-stu-id="e0c29-116">If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.</span></span>
 
 5. <span data-ttu-id="e0c29-117">Választható: A a **Tranzakciókód-hozzárendelés** lapon állítsa be a bank Kifizetésitranzakció-kódok a fájlt, és a banki tranzakciótípusok közötti megfeleltetés.</span><span class="sxs-lookup"><span data-stu-id="e0c29-117">Optional: On the **Transaction code mapping** page, set up the mapping between bank transaction codes in the file and bank transaction types.</span></span>
 6. <span data-ttu-id="e0c29-118">Ha a fájl tartalmazza a tranzakció fel szeretné adni a beérkező fizetés és költségek, létrehozni a kifizetési díjat a **vevői kifizetés díja** oldalon.</span><span class="sxs-lookup"><span data-stu-id="e0c29-118">If the file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Customer payment fee** page.</span></span> <span data-ttu-id="e0c29-119">Ezt a **fizetési módok** oldalon, a kifizetési díj hozzárendelése a bankszámlával kifizetési díjak beállításában.</span><span class="sxs-lookup"><span data-stu-id="e0c29-119">Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.</span></span>

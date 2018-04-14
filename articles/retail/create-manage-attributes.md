@@ -20,17 +20,16 @@ ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 2066f6c9dd71144a330e00a71f02dfc21dd930bc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dccb702c072b7fae41f5200783a9c95eb8c54988
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-and-manage-attributes"></a><span data-ttu-id="10800-104">Attribútumok létrehozása és kezelése</span><span class="sxs-lookup"><span data-stu-id="10800-104">Create and manage attributes</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="10800-105">Ez a cikk a Microsoft Dynamics 365 for Retail attribútumait írja le.</span><span class="sxs-lookup"><span data-stu-id="10800-105">This article describes attributes in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="10800-106">Az attribútumokkal leírhat egy terméket és annak jellemzőit a felhasznál által meghatározott mezők segítségével.</span><span class="sxs-lookup"><span data-stu-id="10800-106">Attributes let you describe a product and its characteristics through user-defined fields.</span></span>
 
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/17/2018
 
 ## <a name="attribute-type"></a><span data-ttu-id="10800-173">Attribútumtípus</span><span class="sxs-lookup"><span data-stu-id="10800-173">Attribute type</span></span>
   <span data-ttu-id="10800-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span><span class="sxs-lookup"><span data-stu-id="10800-174">[![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png)</span></span> 
-  
+
 <span data-ttu-id="10800-175">Az attribútumok az attribútumtípusokon alapulnak.</span><span class="sxs-lookup"><span data-stu-id="10800-175">Attributes are based on attribute types.</span></span> <span data-ttu-id="10800-176">Az attribútumtípusok az adott attribútumba bevihető adatok típusát azonosítják.</span><span class="sxs-lookup"><span data-stu-id="10800-176">Attribute types identify the type of data that can be entered for a specific attribute.</span></span> <span data-ttu-id="10800-177">Jelenleg a Microsoft Dynamics 365 for Retail a következő attribútumtípusokat támogatja:</span><span class="sxs-lookup"><span data-stu-id="10800-177">Currently, Microsoft Dynamics 365 for Retail supports the following attribute types:</span></span>
 
 -   <span data-ttu-id="10800-178">**Currency** – Ez az attribútumtípus a pénznemértékeket támogatja.</span><span class="sxs-lookup"><span data-stu-id="10800-178">**Currency** – This attribute type supports currency values.</span></span> <span data-ttu-id="10800-179">Lehet kötött (vagyis támogathat egy értéktartományt) vagy nyitva is hagyható.</span><span class="sxs-lookup"><span data-stu-id="10800-179">It can be bounded (that is, it can support a value range), or it can be left open.</span></span>

@@ -17,15 +17,15 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eef5844ade45b0c7fdd38624d842c1a96efcd639
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 87828c5ea2ccd804675f2fbcf7aafef1bf422503
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-working-time-scheduling-properties"></a><span data-ttu-id="36a74-103">Munkaidő-ütemezési tulajdonságok létrehozása</span><span class="sxs-lookup"><span data-stu-id="36a74-103">Create working time scheduling properties</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="36a74-104">A munkaidő-ütemezési tulajdonságok segítségével munkaidő-intervallumok kategorizálhatók, és meghatározhatók a beállítások, melyeket a kezelőknek figyelembe kell venniük.</span><span class="sxs-lookup"><span data-stu-id="36a74-104">Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account.</span></span> <span data-ttu-id="36a74-105">Ez az eljárás bemutatja, hogyan lehet meghatározni egy munkaidő-ütemezési tulajdonságot és további kapcsolódó értékeket.</span><span class="sxs-lookup"><span data-stu-id="36a74-105">This procedure shows how to define a working time scheduling property and associated property values.</span></span> <span data-ttu-id="36a74-106">Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="36a74-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 

@@ -17,16 +17,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c6ea6769b28158f8686a139903073337646c88bd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="benefits-power-bi-content"></a><span data-ttu-id="be815-104">Juttatások Power BI-tartalom</span><span class="sxs-lookup"><span data-stu-id="be815-104">Benefits Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="be815-105">Ez a témakör a **Juttatások** Microsoft Power BI-tartalmat ismerteti.</span><span class="sxs-lookup"><span data-stu-id="be815-105">This topic describes the **Benefits** Microsoft Power BI content.</span></span> <span data-ttu-id="be815-106">Leírja, hogy hogyan kell hozzáférni a jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="be815-106">It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.</span></span>
 

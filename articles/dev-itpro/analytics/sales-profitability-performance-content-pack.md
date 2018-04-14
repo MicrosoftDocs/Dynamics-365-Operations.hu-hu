@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 6084ddb1c5b8fae9111ea1459f6e94b14930bfc5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ec77585e259bc759b422b97f4f3b10271a02b02
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a><span data-ttu-id="420c7-104">Értékesítési és nyereségességi teljesítmény Power BI-tartalom</span><span class="sxs-lookup"><span data-stu-id="420c7-104">Sales and profitability performance Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="420c7-105">Ez a témakör azt ismerteti, mit tartalmaz az **Értékesítési és a jövedelmezőségi teljesítmény** Microsoft Power BI-tartalom modul.</span><span class="sxs-lookup"><span data-stu-id="420c7-105">This topic describes what is included in the **Sales and profitability performance** Microsoft Power BI content.</span></span> <span data-ttu-id="420c7-106">Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="420c7-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="420c7-140">Bevétel termék szerint</span><span class="sxs-lookup"><span data-stu-id="420c7-140">Revenue by product</span></span>     | <span data-ttu-id="420c7-141">Bevétel és a bruttó nyereség értékesítési kategória szerint</span><span class="sxs-lookup"><span data-stu-id="420c7-141">Revenue & gross profit by sales category</span></span>   | <span data-ttu-id="420c7-142">Termékek összes száma (\#)</span><span class="sxs-lookup"><span data-stu-id="420c7-142">Total \# of products</span></span>                                    |
 |                        | <span data-ttu-id="420c7-143">10 vezető termék bevétel alapján</span><span class="sxs-lookup"><span data-stu-id="420c7-143">Top 10 products by revenue</span></span>                 | <span data-ttu-id="420c7-144">Összes aktív termék száma és a teljes termékszám százaléka</span><span class="sxs-lookup"><span data-stu-id="420c7-144">Total number of active products and percentage of total</span></span> |
 |                        | <span data-ttu-id="420c7-145">Összes bevétel értékesítési kategória szerint</span><span class="sxs-lookup"><span data-stu-id="420c7-145">Total revenue by sales category</span></span>            | <span data-ttu-id="420c7-146">A bevételek 80%-át lefedő termékek száma</span><span class="sxs-lookup"><span data-stu-id="420c7-146">Number of products accounting for 80% revenue</span></span>           |
-| <span data-ttu-id="420c7-147">Időszak bevétele\\*</span><span class="sxs-lookup"><span data-stu-id="420c7-147">Revenue by period\\*</span></span>    | <span data-ttu-id="420c7-148">Bevétel hónap szerint</span><span class="sxs-lookup"><span data-stu-id="420c7-148">Revenue by month</span></span>                           | <span data-ttu-id="420c7-149">Éves bevételnövekedés</span><span class="sxs-lookup"><span data-stu-id="420c7-149">YOY revenue growth</span></span>                                      |
+| <span data-ttu-id="420c7-147">Időszak bevétele\*</span><span class="sxs-lookup"><span data-stu-id="420c7-147">Revenue by period\*</span></span>    | <span data-ttu-id="420c7-148">Bevétel hónap szerint</span><span class="sxs-lookup"><span data-stu-id="420c7-148">Revenue by month</span></span>                           | <span data-ttu-id="420c7-149">Éves bevételnövekedés</span><span class="sxs-lookup"><span data-stu-id="420c7-149">YOY revenue growth</span></span>                                      |
 |                        | <span data-ttu-id="420c7-150">Záró bevétel eltérése, éves</span><span class="sxs-lookup"><span data-stu-id="420c7-150">Trailing revenue variance, YOY</span></span>             | <span data-ttu-id="420c7-151">Éves bevételnövekedés %</span><span class="sxs-lookup"><span data-stu-id="420c7-151">YOY revenue growth %</span></span>                                    |
 |                        | <span data-ttu-id="420c7-152">Teljes értékesítési eltérés vevői régiónként</span><span class="sxs-lookup"><span data-stu-id="420c7-152">Total sales variance by customer region</span></span>    |                                                         |
 | <span data-ttu-id="420c7-153">Bevétel hely szerint</span><span class="sxs-lookup"><span data-stu-id="420c7-153">Revenue by location</span></span>    | <span data-ttu-id="420c7-154">Értékesítési bevétel település szerint</span><span class="sxs-lookup"><span data-stu-id="420c7-154">Sales revenue by city</span></span>                      |                                                         |
@@ -75,7 +75,7 @@ ms.lasthandoff: 01/17/2018
 |                        | <span data-ttu-id="420c7-162">15 vezető ügyfél bruttó nyereség szerint</span><span class="sxs-lookup"><span data-stu-id="420c7-162">Top 15 customers by gross margin</span></span>           |                                                         |
 |                        | <span data-ttu-id="420c7-163">Bruttó nyereség havonta, éves adat</span><span class="sxs-lookup"><span data-stu-id="420c7-163">Gross profit by month, YOY</span></span>                 |                                                         |
 
-<span data-ttu-id="420c7-164">\\* Erre az évre és az előző évre eső bevétel és növekedés értékesítési kategória szerint.</span><span class="sxs-lookup"><span data-stu-id="420c7-164">\\* Revenue this and last year, and growth by sales category.</span></span>
+<span data-ttu-id="420c7-164">\* Erre az évre és az előző évre eső bevétel és növekedés értékesítési kategória szerint.</span><span class="sxs-lookup"><span data-stu-id="420c7-164">\* Revenue this and last year, and growth by sales category.</span></span>
 
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="420c7-165">Adatmodell, illetve entitások ismertetése</span><span class="sxs-lookup"><span data-stu-id="420c7-165">Understanding the data model and entities</span></span>

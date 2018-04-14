@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3c493ab60952e60e6816ebdc3decb1ebe670806f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-accounting-terminology"></a><span data-ttu-id="8832c-103">Költségkönyvelési terminológia</span><span class="sxs-lookup"><span data-stu-id="8832c-103">Cost accounting terminology</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8832c-104">Ez a témakör a költségkönyveléshez használt kulcskifejezéseket határozza meg.</span><span class="sxs-lookup"><span data-stu-id="8832c-104">This topic defines the key terms that are used in Cost accounting.</span></span>
 
@@ -150,14 +149,14 @@ ms.lasthandoff: 03/26/2018
 |  + |  <span data-ttu-id="8832c-241">Hozzáadás</span><span class="sxs-lookup"><span data-stu-id="8832c-241">Addition</span></span> |
 |  <span data-ttu-id="8832c-242">–</span><span class="sxs-lookup"><span data-stu-id="8832c-242">–</span></span> |  <span data-ttu-id="8832c-243">Kivonás</span><span class="sxs-lookup"><span data-stu-id="8832c-243">Subtraction</span></span> |
 | *  | <span data-ttu-id="8832c-244">szorzás</span><span class="sxs-lookup"><span data-stu-id="8832c-244">Multiplication</span></span>  |
-    
+
 <span data-ttu-id="8832c-245">A hagyományos HA állítások nem támogatottak.</span><span class="sxs-lookup"><span data-stu-id="8832c-245">Traditional IF statements are not supported.</span></span> <span data-ttu-id="8832c-246">Létrehozhat azonban állításokat, és ellenőrizheti, hogy igazak-e.</span><span class="sxs-lookup"><span data-stu-id="8832c-246">However, you can create statements and validate whether they are true.</span></span>
 
 |  <span data-ttu-id="8832c-247">**Kivonat érvényesítése**</span><span class="sxs-lookup"><span data-stu-id="8832c-247">**Statement  Validation**</span></span> | <span data-ttu-id="8832c-248">**Eredmény**</span><span class="sxs-lookup"><span data-stu-id="8832c-248">**Result**</span></span>  |
 |---|---|
 |  <span data-ttu-id="8832c-249">a > b</span><span class="sxs-lookup"><span data-stu-id="8832c-249">a > b</span></span>| <span data-ttu-id="8832c-250">Igaz</span><span class="sxs-lookup"><span data-stu-id="8832c-250">True</span></span>  |
 |  <span data-ttu-id="8832c-251">a > b</span><span class="sxs-lookup"><span data-stu-id="8832c-251">a > b</span></span> |  <span data-ttu-id="8832c-252">Hamis</span><span class="sxs-lookup"><span data-stu-id="8832c-252">False</span></span> |
-    
+
 <span data-ttu-id="8832c-253">**Járulékos költség**</span><span class="sxs-lookup"><span data-stu-id="8832c-253">**Overhead cost**</span></span>
 
 <span data-ttu-id="8832c-254">A járulékos költségek a vállalat működésének folyamatos költségeire vonatkoznak.</span><span class="sxs-lookup"><span data-stu-id="8832c-254">Overhead costs refer to the ongoing expenses of operating a business.</span></span> <span data-ttu-id="8832c-255">Olyan költségek, amelyeket nem lehet közvetlenül adott üzleti tevékenységekhez kapcsolni.</span><span class="sxs-lookup"><span data-stu-id="8832c-255">They are the costs that can’t be linked directly to specific business activities.</span></span> <span data-ttu-id="8832c-256">Az alábbiakban néhány példa látható a járulékos költségekre:</span><span class="sxs-lookup"><span data-stu-id="8832c-256">Here are some examples of overhead costs:</span></span>

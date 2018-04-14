@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 9cc66eccec146c9f8f562b5d4e4d21bb6b7c6457
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93f6cddd8d698dbc1a3539a156a762b8e6017aa6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-compensation-process-and-calculate-results"></a><span data-ttu-id="15eb5-103">Kompenzációs folyamat meghatározása és eredmények kiszámítása</span><span class="sxs-lookup"><span data-stu-id="15eb5-103">Define compensation process and calculate results</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="15eb5-104">A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzációs konstrukciókba besorolt alkalmazottak új kompenzációs összegei és jutalmai.</span><span class="sxs-lookup"><span data-stu-id="15eb5-104">Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans.</span></span> <span data-ttu-id="15eb5-105">A Kompenzációs folyamatok többször is futtathatók többször „mi lenne ha” elemzés elvégzéséhez, hogy az összes módosítás és beállítások helyessége ellenőrizve legyen.</span><span class="sxs-lookup"><span data-stu-id="15eb5-105">Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct.</span></span> <span data-ttu-id="15eb5-106">Ez az eljárással egy kompenzációs folyamatot hoz létre, futtatja a folyamatot létrehozása, majd megtekinti az eredményeket.</span><span class="sxs-lookup"><span data-stu-id="15eb5-106">This procedure will create a compensation process, run the process, and view the results.</span></span> <span data-ttu-id="15eb5-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="15eb5-107">The demo data company used to create this procedure is USMF.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 24f677cd3b416c6301a664629cb73e3cbae9f457
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e6600176cbbcb6e30fc451613acff1fb487e7c76
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="200-percent-reducing-balance-depreciation"></a><span data-ttu-id="ff558-103">200 százalék degresszív értékcsökkenés</span><span class="sxs-lookup"><span data-stu-id="ff558-103">200 percent reducing balance depreciation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ff558-104">Ez a cikk a 200 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.</span><span class="sxs-lookup"><span data-stu-id="ff558-104">This article gives an overview of the 200 percent reducing balance method of depreciation.</span></span>
 
@@ -70,6 +69,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="ff558-136">**Pénzügyi időszak** feladja az értékcsökkenés teljes értékét a pénzügyi évre.</span><span class="sxs-lookup"><span data-stu-id="ff558-136">**Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year.</span></span> <span data-ttu-id="ff558-137">Ez az összeg azon pénzügyi időszakokba van elszámolva, amelyek a **Pénzügyi naptárak** lapon meg vannak határozva.</span><span class="sxs-lookup"><span data-stu-id="ff558-137">This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.</span></span>
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a><span data-ttu-id="ff558-138">Példa a 200% degresszív értékcsökkenésre</span><span class="sxs-lookup"><span data-stu-id="ff558-138">Example of 200% reducing balance depreciation</span></span>
+
 |                                |        |
 |--------------------------------|--------|
 | <span data-ttu-id="ff558-139">Beszerzési költség</span><span class="sxs-lookup"><span data-stu-id="ff558-139">Acquisition cost</span></span>               | <span data-ttu-id="ff558-140">11 000</span><span class="sxs-lookup"><span data-stu-id="ff558-140">11,000</span></span> |

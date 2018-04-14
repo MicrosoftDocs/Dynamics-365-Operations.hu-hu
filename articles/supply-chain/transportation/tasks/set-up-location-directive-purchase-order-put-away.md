@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
-ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 115dfc163dce580244c2b2b6975e49ea3b69f1ef
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="7d7a2-103">Helyutasítás beállítása beszerzési rendelés eltárolásához</span><span class="sxs-lookup"><span data-stu-id="7d7a2-103">Set up a location directive for purchase order put-away</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7d7a2-104">Ez az eljárás bemutatja, hogyan állíthat be egyszerű helyutasítást.</span><span class="sxs-lookup"><span data-stu-id="7d7a2-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="7d7a2-105">A példa egy helyutasítást hoz létre ahhoz, hogy a beszerzési rendelés bevételezett cikkeinek helyét meg lehessen határozni.</span><span class="sxs-lookup"><span data-stu-id="7d7a2-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="7d7a2-106">Ezt a feladatleírást lejátszhatja az USMF bemutatócégnél említett adatokkal.</span><span class="sxs-lookup"><span data-stu-id="7d7a2-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="7d7a2-107">Előzetes feltételek: Intézkedési kódot kell létrehoznia.</span><span class="sxs-lookup"><span data-stu-id="7d7a2-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="7d7a2-108">Ebben az eljárásban egy Relabel nevű intézkedési kódot alkalmazunk.</span><span class="sxs-lookup"><span data-stu-id="7d7a2-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="7d7a2-109">Ha helyutasítást hoz létre a saját adataiban, a raktárhoz és a cikkekhez speciális raktárkezelési beállítást kell megadnia.</span><span class="sxs-lookup"><span data-stu-id="7d7a2-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="7d7a2-110">Ezt az eljárást a raktári vezető használja.</span><span class="sxs-lookup"><span data-stu-id="7d7a2-110">This procedure is intended for the warehouse manager.</span></span>
 

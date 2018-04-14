@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b7c02e5a6f5eeee270ca4b6f91e90f7799c2ca11
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a3ba01bc05d130991e8a744d9026d53edf93ee20
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-rate-masters"></a><span data-ttu-id="ba392-103">Díjtörzsek beállítása</span><span class="sxs-lookup"><span data-stu-id="ba392-103">Set up rate masters</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ba392-104">Ez az eljárás bemutatja, hogyan állíthat be egy díjnyilvántartást.</span><span class="sxs-lookup"><span data-stu-id="ba392-104">This procedure shows you how to set up a rate master.</span></span> <span data-ttu-id="ba392-105">Általában a logisztikai vezető állítja be a díjnyilvántartást, a szállítmányozókkal aláírt szerződésektől függően.</span><span class="sxs-lookup"><span data-stu-id="ba392-105">The logistic manager usually sets up rate masters, depending on the contracts signed with the carriers.</span></span> <span data-ttu-id="ba392-106">Ebben a példában egy légi fuvarozó számára állítunk be díjnyilvántartást.</span><span class="sxs-lookup"><span data-stu-id="ba392-106">In this scenario you will set up a rate master for an air carrier.</span></span> <span data-ttu-id="ba392-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="ba392-107">The demo data company used to create this procedure is USMF.</span></span>
 

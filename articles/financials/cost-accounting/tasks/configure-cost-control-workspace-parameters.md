@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8ede40951d08e159358b713fc3dde46576a1b4e3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1d2448642b0f60f8c060b3fd3e04b22e269814d4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="configure-cost-control-workspace-parameters"></a><span data-ttu-id="5b3ce-103">Költségellenőrzési munkaterület paramétereinek konfigurációja</span><span class="sxs-lookup"><span data-stu-id="5b3ce-103">Configure cost control workspace parameters</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5b3ce-104">Ezzel az eljárással konfigurálhatja a Költségellenőrzési munkaterületet úgy, hogy a szervezeten belüli különböző szinteken lévő vezetők betekintést nyerhetnek a költségobjektumokba, például a költséghelyekbe és a termékcsoportokba.</span><span class="sxs-lookup"><span data-stu-id="5b3ce-104">Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects, such as cost centers and product groups.</span></span> <span data-ttu-id="5b3ce-105">A rendszer az USP2 bemutatócéget használta a rögzítés létrehozására.</span><span class="sxs-lookup"><span data-stu-id="5b3ce-105">The USP2 demo company was used to create this recording.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: edcb01c177a3e43cea7f0b7936a4129d27314016
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a5b9f98b371dbad9b6b0538e0d9975dc5ed701c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a><span data-ttu-id="a3704-104">A munkaerő szakértelmének üzleti igényű igazítása</span><span class="sxs-lookup"><span data-stu-id="a3704-104">Align workforce skills with business needs</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="a3704-105">Nyomon követheti azokat a szakértelmeket, amelyekkel dolgozók, pályázók vagy kapcsolattartók jelentkeznek vagy jelentkezniük kellene.</span><span class="sxs-lookup"><span data-stu-id="a3704-105">You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively.</span></span> <span data-ttu-id="a3704-106">Emellett megadhatja, hogy egy adott beosztáshoz milyen szakértelem szükséges.</span><span class="sxs-lookup"><span data-stu-id="a3704-106">You can also specify the skills that are required for a specific job.</span></span>
 
@@ -55,8 +54,8 @@ ms.lasthandoff: 01/31/2018
 
 <span data-ttu-id="a3704-133">A készségleképező profilokkal olyan jelenlegi alkalmazottakra vagy jelöltekre kereshet, akiknek olyan végzettségei vannak, amelyek közvetlenül megfelelnek az üzleti szükségleteknek.</span><span class="sxs-lookup"><span data-stu-id="a3704-133">Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.</span></span>  <span data-ttu-id="a3704-134">Létrehozhat például egy készségleképezési profilt a szervezeténél meglévő nyitott pozícióhoz.</span><span class="sxs-lookup"><span data-stu-id="a3704-134">For example, you could create a skill-mapping profile for an open position in your organization.</span></span> <span data-ttu-id="a3704-135">Egy adott beosztáshoz profilok létrehozása és másolása a szakértelem, a végzettség és a tanúsítványt az adott feladat a profilt, gyorsan kereshet dolgozók, pályázó és kapcsolattartó személyek megfelelő egy vagy több mellőzhető a profilban megadott feltételeknek megfelelő és a pályázók, akiknek szakismeretei leginkább megfelelnek a projekthez szükséges szakértelmek listájának megtekintése.</span><span class="sxs-lookup"><span data-stu-id="a3704-135">By creating a profile for a particular job and copying the skills, education and certificates from that job to the profile, you can quickly search workers, applicants and contact persons who match one or more of the criteria entered on the profile and view a list of the candidates whose skills most closely match the skills required for the job.</span></span>
 
-><span data-ttu-id="a3704-136">**Megjegyzés** Csak a kereséshez kiválasztott dolgozók, pályázók és kapcsolattartó személyek jelennek meg a szakértelem-feltérképezés eredménylistájában és kerülnek bele szakértelemprofilba.</span><span class="sxs-lookup"><span data-stu-id="a3704-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="a3704-137">A dolgozó, pályázó vagy kapcsolattartó személy a szakértelem-feltérképezés kereséseinek szerepeltetéséhez beállítása a **felvétel a szakértelem-feltérképezés** kiválasztási Igen, a következő lapokon:</span><span class="sxs-lookup"><span data-stu-id="a3704-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
-
+> <span data-ttu-id="a3704-136">**Megjegyzés** Csak a kereséshez kiválasztott dolgozók, pályázók és kapcsolattartó személyek jelennek meg a szakértelem-feltérképezés eredménylistájában és kerülnek bele szakértelemprofilba.</span><span class="sxs-lookup"><span data-stu-id="a3704-136">**Note** Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile.</span></span> <span data-ttu-id="a3704-137">A dolgozó, pályázó vagy kapcsolattartó személy a szakértelem-feltérképezés kereséseinek szerepeltetéséhez beállítása a **felvétel a szakértelem-feltérképezés** kiválasztási Igen, a következő lapokon:</span><span class="sxs-lookup"><span data-stu-id="a3704-137">To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:</span></span>
+> 
 > + <span data-ttu-id="a3704-138">Dolgozó</span><span class="sxs-lookup"><span data-stu-id="a3704-138">Worker</span></span>
 > + <span data-ttu-id="a3704-139">Alkalmazott</span><span class="sxs-lookup"><span data-stu-id="a3704-139">Employee</span></span>
 > + <span data-ttu-id="a3704-140">Pályázó</span><span class="sxs-lookup"><span data-stu-id="a3704-140">Applicant</span></span>

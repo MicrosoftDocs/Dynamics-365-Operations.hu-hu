@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7cab69222c5004e6a62c632a9e85085403434ffd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b60dbe15eca10511f4aaaf472b512eb003fbf6bc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="confirm-sales-orders"></a><span data-ttu-id="7466e-103">Értékesítési rendelések megerősítése</span><span class="sxs-lookup"><span data-stu-id="7466e-103">Confirm sales orders</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7466e-104">Ez az eljárás bemutatja, hogyan kell az értékesítési rendeléseket megerősíteni.</span><span class="sxs-lookup"><span data-stu-id="7466e-104">This procedure demonstrates how to confirm sales orders.</span></span> <span data-ttu-id="7466e-105">Megjelenik, hogyan lehet megerősíteni egyetlen rendelést, illetve egyszerre több rendelést.</span><span class="sxs-lookup"><span data-stu-id="7466e-105">You’ll be shown how to confirm a single order, and how to confirm multiple orders at once.</span></span> <span data-ttu-id="7466e-106">Ezeket a feladatokat jellemzően egy értékesítési rendelés feldolgozó végzi el.</span><span class="sxs-lookup"><span data-stu-id="7466e-106">These tasks would typically be carried out by a sales order processor.</span></span> <span data-ttu-id="7466e-107">Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.</span><span class="sxs-lookup"><span data-stu-id="7466e-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="7466e-108">Mielőtt elkezdené, ellenőrizze, hogy van-e ugyanannak a vevőnek több nyitott értékesítési rendelése.</span><span class="sxs-lookup"><span data-stu-id="7466e-108">Before you start, make sure there are several open sales orders for the same customer.</span></span> <span data-ttu-id="7466e-109">Ha USMF-et használ, használhatja az US-027 vevőt.</span><span class="sxs-lookup"><span data-stu-id="7466e-109">If you’re using USMF, you can use customer US-027.</span></span>
 

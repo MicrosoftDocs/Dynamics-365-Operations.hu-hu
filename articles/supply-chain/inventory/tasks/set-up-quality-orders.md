@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: fbc99ae02576cb76edecb9ac74b1823305c5936b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0ad16d00788122eb1ab22dd03561cac488b9fad6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-quality-orders"></a><span data-ttu-id="225df-103">Minőségi rendelések beállítása</span><span class="sxs-lookup"><span data-stu-id="225df-103">Set up quality orders</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="225df-104">Ez az eljárás bemutatja, hogy hogyan engedélyezheti a minőségkezelési folyamatot, ha a bejövő készletet, a beérkezés regisztrációja után azonnal ellenőrizni szükséges.</span><span class="sxs-lookup"><span data-stu-id="225df-104">This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration.</span></span> <span data-ttu-id="225df-105">Ezt az eljárást jellemzően egy minőségbiztosítási vezető végzi.</span><span class="sxs-lookup"><span data-stu-id="225df-105">The procedure will typically be carried out by a quality manager.</span></span> <span data-ttu-id="225df-106">A folyamat részét képezi a minőségi csoport létrehozása, a mintavétellel érintett cikkek, valamint a minőségi csoportban szereplő cikkeken végzendő tesztek csoportosítását szolgáló tesztcsoport meghatározása.</span><span class="sxs-lookup"><span data-stu-id="225df-106">The process includes the creation of a quality group, to define the items that are going to be sampled, and a test group to group the tests that are to be performed on items in the quality group.</span></span> <span data-ttu-id="225df-107">Ezt az útmutatót lefuttathatja az USMF bemutatócégen.</span><span class="sxs-lookup"><span data-stu-id="225df-107">You can run this guide in the USMF demo data company.</span></span>
 

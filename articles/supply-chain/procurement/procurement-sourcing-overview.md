@@ -19,17 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7c738d888b7177a26b28438c820ce18312947318
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="procurement-and-sourcing-overview"></a><span data-ttu-id="9f81b-103">A Beszerzés és forrás modul áttekintése</span><span class="sxs-lookup"><span data-stu-id="9f81b-103">Procurement and sourcing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9f81b-104">A cikk áttekintést nyújt a beszerzés és forrás modulban elérhető funkciókról.</span><span class="sxs-lookup"><span data-stu-id="9f81b-104">This article gives an overview of the functionality that's available in the Procurement and sourcing module.</span></span>
 
@@ -39,7 +38,7 @@ ms.lasthandoff: 02/08/2018
 <span data-ttu-id="9f81b-108">A termékre vagy szolgáltatásra vonatkozó igény felmerülhet *igénylések* következtében, például amikor egy alkalmazottnak szüksége van egy adott termékre.</span><span class="sxs-lookup"><span data-stu-id="9f81b-108">The need for products or services may arise from *requisitions*, for example, when an employee requires a product.</span></span> <span data-ttu-id="9f81b-109">Létre tud hozni *Termékkatalógusokat* a rendelkezésre álló termékek közül történő választás elősegítése érdekében, illetve nyújthat be igénylést a katalógusból még nem elérhető termékek kapcsán, ily módon téve lehetővé, hogy a beszerzési részleg megvizsgálja a termék beszállításának lehetőségét.</span><span class="sxs-lookup"><span data-stu-id="9f81b-109">*Product catalogs* can be set up to guide the selection of available products to select from, or requests can be made for products that are not yet made available in a catalog, allowing the purchasing department to consider how the product can be supplied.</span></span>  
 
 <span data-ttu-id="9f81b-110">*Költekezési határok* segítségével tudja korlátozni az igénylésekhez kapcsolódó költéseket, a *beszerzési munkafolyamat* pedig lehetővé teszi, hogy a megrendelés végrehajtása jóváhagyáshoz legyen kötve.</span><span class="sxs-lookup"><span data-stu-id="9f81b-110">*Spending limits* can be used to constrain requisition spending, and the *purchasing workflow* adds the option of requiring approval before ordering happen.</span></span> <span data-ttu-id="9f81b-111">Szükség esetén tud megadni költségvetésialap-felosztásokat is.</span><span class="sxs-lookup"><span data-stu-id="9f81b-111">It's also possible to specify budget fund allocation, if required.</span></span>  
-  
+
 <span data-ttu-id="9f81b-112">A beszerzési részleg azonosítja a szükséges termékek és szolgáltatások lehetséges szállítóit, mely alapján elképzelhetően *ajánlatkérést* küld több potenciális szállító részére.</span><span class="sxs-lookup"><span data-stu-id="9f81b-112">The procurement department identifies suppliers for required products and services, and this can involve a *request for quotation* being sent out to multiple potential suppliers.</span></span> <span data-ttu-id="9f81b-113">Lehetőség nyílik az igénylendő termék specifikációinak megosztására, a potenciális szállítók pedig meg tudják tekinteni ezeket, és ellenőrizni tudják, hogy képesek-e azoknak megfelelő terméket szállítani le.</span><span class="sxs-lookup"><span data-stu-id="9f81b-113">It's possible to share the specifications of the product that's being requested and potential vendors can view these to see if they can deliver a product that conforms with them.</span></span> <span data-ttu-id="9f81b-114">A szállítók visszaküldik az ajánlataikat, melyeket a beszerzési részleg elbírál, majd kiválasztja a beszerzés céljából használni kívánt szállítót.</span><span class="sxs-lookup"><span data-stu-id="9f81b-114">Vendors return their bids which are then reviewed by the procurement department before they select the supplier that they want to procure from.</span></span>  
 
 <span data-ttu-id="9f81b-115">A beszerzési rendelések tartalmaznak egy olyan lehetőséget, amely, az átfogóbb ajánlatkérési folyamat helyett, egy *beszerzési értesítőt* küld ki a szállítóknak.</span><span class="sxs-lookup"><span data-stu-id="9f81b-115">Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process.</span></span> <span data-ttu-id="9f81b-116">A beszerzési értesítő az olyan feltételek feltérképezését szolgálja, mint az ár, az engedmények, illetve a rendelés leszállítási dátuma.</span><span class="sxs-lookup"><span data-stu-id="9f81b-116">The purchase inquiry can be used to help establish terms like prices, discounts, and delivery date for the order.</span></span> <span data-ttu-id="9f81b-117">Amennyiben a szállítókat úgy állítja be, hogy azok a **Szállítói** portált használják, úgy nem aktív a beszerzési értesítő funkció.</span><span class="sxs-lookup"><span data-stu-id="9f81b-117">If vendors are set up to use the **Vendor** portal, purchase inquiry functionality is disabled.</span></span> <span data-ttu-id="9f81b-118">Ebben az esetben a rendelés a**Szállítói** portálon kerül megosztásra, a *visszaigazolási kérés* kiküldését követően pedig a szállító képes közvetlenül visszaigazolni a rendelést.</span><span class="sxs-lookup"><span data-stu-id="9f81b-118">Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent the vendor can directly confirm the order.</span></span>  

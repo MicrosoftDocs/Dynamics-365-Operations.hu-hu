@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a83a3325c80eb6fc1a19371a6115413ca9b82185
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="time-and-attendance-registration"></a><span data-ttu-id="4377f-104">Munkaidő és jelenlét rögzítése</span><span class="sxs-lookup"><span data-stu-id="4377f-104">Time and attendance registration</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4377f-105">A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak.</span><span class="sxs-lookup"><span data-stu-id="4377f-105">Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration.</span></span> <span data-ttu-id="4377f-106">Ez a témakör regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához.</span><span class="sxs-lookup"><span data-stu-id="4377f-106">This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets.</span></span> 
 
@@ -95,7 +94,7 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="4377f-168">Munkaidő és jelenléti napok száma összesen</span><span class="sxs-lookup"><span data-stu-id="4377f-168">Time and attendance days total</span></span>            | <span data-ttu-id="4377f-169">A munkafolyamat például a napi munkaórák várható száma alapján ellenőrzi a regisztrációkat.</span><span class="sxs-lookup"><span data-stu-id="4377f-169">The workflow validates registrations against, for example, the expected number of work hours for the day.</span></span> |                                                                                                                                                                                                                                                       |
 | <span data-ttu-id="4377f-170">Munkaidő és jelenlét napló regisztráció.</span><span class="sxs-lookup"><span data-stu-id="4377f-170">Time and attendance journal registration.</span></span> | <span data-ttu-id="4377f-171">A munkafolyamat ellenőrzi a regisztráció dátumának minden egyes regisztrációtípusát.</span><span class="sxs-lookup"><span data-stu-id="4377f-171">The workflow validates each registration type for the date of the registration.</span></span>                           | <span data-ttu-id="4377f-172">Munkaidő és jelenlét • Blokkolás érkezéskor • Blokkolás távozáskor • Távollét • Szünet • Kapcsolókód • Projekt • Projekttevékenység • Közvetett tevékenység - Termelési feladatok • Várakozás előtte • Beállítás • Folyamat • Átfedés • Szállítás • Várakozás utána • Támogatás kezdete • Támogatás befejezése</span><span class="sxs-lookup"><span data-stu-id="4377f-172">Time and attendance • Clock-in • Clock-out • Absence • Break • Switch code • Project • Project activity • Indirect activity Production jobs • Queue before • Setup • Process • Overlap • Transport • Queue after • Start assistance • Stop assistance</span></span> |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a><span data-ttu-id="4377f-173">Jóváhagyott regisztrációk áthelyezése</span><span class="sxs-lookup"><span data-stu-id="4377f-173">Transferring approved registrations</span></span>
 <span data-ttu-id="4377f-174">A regisztrációk jóváhagyása után azokat át tudja helyezni az ismétlődő bérlistafeladatba.</span><span class="sxs-lookup"><span data-stu-id="4377f-174">After approval of the registrations you can transfer them to a periodic payroll job.</span></span> <span data-ttu-id="4377f-175">Az áthelyezett regisztráció olyan tevékenységhez vagy feladathoz kerül feladásra, mint például egy termelési rendelés vagy egy projekt.</span><span class="sxs-lookup"><span data-stu-id="4377f-175">A transferred registration is posted to an activity or job that it relates to, for example, a production order or a project.</span></span> <span data-ttu-id="4377f-176">A rendszer minden egyes dolgozó kapcsán a regisztrációk alapján hozza létre a bérlista-tranzakciókat.</span><span class="sxs-lookup"><span data-stu-id="4377f-176">Payroll transactions are generated for each worker based on the registrations.</span></span>  

@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 861b4eda291dc7b0a5c045a767c860b7e4718404
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: beb110091ea452ec46739c10fa2570eb9b6f656f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-control-overview"></a><span data-ttu-id="d980e-104">Költségkontroll áttekintése</span><span class="sxs-lookup"><span data-stu-id="d980e-104">Cost control overview</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d980e-105">A **Költségkontroll** munkaterület központi pont, ahol a menedzserek, akik felelősek egy költségobjektum vagy egy költségobjektum-készlet egy dimenzióban vagy dimenziókon (pl. költségközpontok és termékcsoportok) belüli vezérléséért, hozzáférhetnek a jelentésekhez.</span><span class="sxs-lookup"><span data-stu-id="d980e-105">The **Cost control** workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions (for example, cost centers and product groups) can access reports.</span></span> <span data-ttu-id="d980e-106">A munkaterületen lévő jelentéseket teljes mértékben költségkönyvelők kezelik, így a jelentéskészítéshez használt elrendezés és adatok konzisztensek lehetnek az egész szervezeten belül.</span><span class="sxs-lookup"><span data-stu-id="d980e-106">The reports in the workspace are fully managed by cost accountants, so that the layout and data that are used for reporting can be consistent across the whole organization.</span></span>
 

@@ -16,16 +16,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 4cf60021b96ab492c5d0b2535a117cb33ab13524
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a451a3e936916c6bec750ddfbc2bf71fadb7c222
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="employee-development-power-bi-content"></a><span data-ttu-id="4e5ec-103">Alkalmazotti fejlesztés Power BI-tartalom</span><span class="sxs-lookup"><span data-stu-id="4e5ec-103">Employee development Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4e5ec-104">Ez a témakör ismerteti az **Alkalmazotti fejlesztés** Microsoft Power BI-tartalmat.</span><span class="sxs-lookup"><span data-stu-id="4e5ec-104">This topic describes the **Employee development** Microsoft Power BI content.</span></span>
 
@@ -45,6 +45,7 @@ ms.lasthandoff: 01/31/2018
 <span data-ttu-id="4e5ec-124">Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton.</span><span class="sxs-lookup"><span data-stu-id="4e5ec-124">You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard.</span></span> <span data-ttu-id="4e5ec-125">A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="4e5ec-125">For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).</span></span>
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="4e5ec-126">Adatmodell, illetve entitások ismertetése</span><span class="sxs-lookup"><span data-stu-id="4e5ec-126">Understanding the data model and entities</span></span>
+
 | <span data-ttu-id="4e5ec-127">Entitás</span><span class="sxs-lookup"><span data-stu-id="4e5ec-127">Entity</span></span>                   | <span data-ttu-id="4e5ec-128">Tartalom</span><span class="sxs-lookup"><span data-stu-id="4e5ec-128">Contents</span></span>                                                                                                   | <span data-ttu-id="4e5ec-129">Más entitásokkal való kapcsolatok</span><span class="sxs-lookup"><span data-stu-id="4e5ec-129">Relationships with other entities</span></span> |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | <span data-ttu-id="4e5ec-130">Naptáreltolás</span><span class="sxs-lookup"><span data-stu-id="4e5ec-130">Calendar Offset</span></span>          | <span data-ttu-id="4e5ec-131">Naptáreltolások, részletes jelentések</span><span class="sxs-lookup"><span data-stu-id="4e5ec-131">Calendar offsets to slice reports</span></span>                                                                          | <span data-ttu-id="4e5ec-132">Korábbi pozíció hozzárendelése, Pozíciótrend, Alkalmazotti trend, Felmondott alkalmazott</span><span class="sxs-lookup"><span data-stu-id="4e5ec-132">Past Position Assignment, Position Trend, Employee Trend, Terminated Employee</span></span> 

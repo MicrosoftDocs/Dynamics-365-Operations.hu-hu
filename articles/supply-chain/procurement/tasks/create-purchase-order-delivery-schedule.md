@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1e4a0204d74c8966cd90b52ae13c88e222ebc3ef
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0e86c33580cbcafb16f508c2f6330d81422f12d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a><span data-ttu-id="66d81-103">Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása</span><span class="sxs-lookup"><span data-stu-id="66d81-103">Create a purchase order with a delivery schedule</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="66d81-104">Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy szállítási ütemezést egy beszerzési rendeléshez.</span><span class="sxs-lookup"><span data-stu-id="66d81-104">This procedure demonstrates how to create a delivery schedule for a purchase order.</span></span> <span data-ttu-id="66d81-105">A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy egy naplóhoz tartozó mennyiséget több részletben kell elszállítani.</span><span class="sxs-lookup"><span data-stu-id="66d81-105">A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="66d81-106">Az útmutatóban mutatott példa használható az USMF demo adatok cégben.</span><span class="sxs-lookup"><span data-stu-id="66d81-106">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="66d81-107">Ezt az eljárást általában a beszerzési ügynök végzi el.</span><span class="sxs-lookup"><span data-stu-id="66d81-107">This procedure would typically be done by a purchasing agent.</span></span>
 

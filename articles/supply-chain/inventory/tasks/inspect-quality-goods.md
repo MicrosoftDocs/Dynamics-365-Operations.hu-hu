@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 3a4ace658b8a3a20d613b7a251eb85c32c7f1c09
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ab536047340bdebecb7c8317e20208c87a4776f7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="a315b-103">Áru minőségének ellenőrzése</span><span class="sxs-lookup"><span data-stu-id="a315b-103">Inspect the quality of goods</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a315b-104">Ez az eljárás bemutatja, hogyan dolgozhat fel egy minőségi rendelést.</span><span class="sxs-lookup"><span data-stu-id="a315b-104">This procedure shows you how to process a quality order.</span></span> <span data-ttu-id="a315b-105">Ezt az útmutatót lefuttathatja az USMF bemutatócégen.</span><span class="sxs-lookup"><span data-stu-id="a315b-105">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="a315b-106">A példaeljárás megkezdése előtt erősítse meg a „000016” beszerzési rendelést, és adja fel a termékbevételezést.</span><span class="sxs-lookup"><span data-stu-id="a315b-106">Before you start this example procedure, you need to confirm purchase order “000016” and post a product receipt.</span></span> <span data-ttu-id="a315b-107">Ez automatikusan létrehoz egy minőségi rendelést.</span><span class="sxs-lookup"><span data-stu-id="a315b-107">This will automatically create a quality order.</span></span> <span data-ttu-id="a315b-108">A minőségvizsgálatokat általában minőségadminisztrátorok végzik.</span><span class="sxs-lookup"><span data-stu-id="a315b-108">Quality inspections are typically carried out by a quality clerk.</span></span>
 

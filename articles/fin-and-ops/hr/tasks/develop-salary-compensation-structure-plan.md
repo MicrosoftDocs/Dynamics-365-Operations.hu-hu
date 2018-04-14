@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 5d855e673df5eb6f34e6a7c778b42fe360c9d93f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d2a4a0b2bf2d33530dedc7ce3974ee558d063878
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a><span data-ttu-id="e47b1-103">Munkabér-/kompenzációs struktúra és tervek kialakítása</span><span class="sxs-lookup"><span data-stu-id="e47b1-103">Develop salary/compensation structure and plans</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e47b1-104">Ez a feladat-útmutató végigvezeti a folyamaton, amely létrehozza a Fix kompenzációs konstrukciót és az alkalmazhatósági szabályok által engedélyezi alkalmazottaknak konstrukcióba való bevitelét.</span><span class="sxs-lookup"><span data-stu-id="e47b1-104">This task guide walks through the process of creating a Fixed compensation plan and enabling employees to be enrolled in the plan through eligibility rules.</span></span> <span data-ttu-id="e47b1-105">E feladat létrehozása az USMF bemutatócég segítségével történt, a feladat a Kompenzációkért és juttatásokért felelős vezetők részére készült.</span><span class="sxs-lookup"><span data-stu-id="e47b1-105">The demo data company used to create this task is USMF and the task is intended for Compensation and Benefits Managers.</span></span>
 

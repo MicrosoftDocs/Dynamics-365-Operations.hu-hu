@@ -18,17 +18,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 445c639dc56a5d240f4e35353276ef893f2137da
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="keyboard-shortcuts"></a><span data-ttu-id="c042f-103">Billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-103">Keyboard shortcuts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c042f-104">A következő gyorsbillentyűk alkalmazhatók a Dynamics 365 for Finance and Operations programban.</span><span class="sxs-lookup"><span data-stu-id="c042f-104">The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations.</span></span> 
 
@@ -39,6 +38,7 @@ ms.lasthandoff: 03/26/2018
 
 
 ## <a name="action-shortcuts"></a><span data-ttu-id="c042f-111">Műveleti billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-111">Action shortcuts</span></span>
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | <span data-ttu-id="c042f-112">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-112">**To do this**</span></span>                                    | <span data-ttu-id="c042f-113">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-113">**Press**</span></span>                        |
@@ -55,6 +55,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-134">Aktuálisan rendelkezésre álló billentyűparancsok megtekintése</span><span class="sxs-lookup"><span data-stu-id="c042f-134">View currently available shortcuts</span></span>                | <span data-ttu-id="c042f-135">Alt+Shift+K</span><span class="sxs-lookup"><span data-stu-id="c042f-135">Alt+Shift+K</span></span>                      |                              
 
 ## <a name="date-picker-shortcuts"></a><span data-ttu-id="c042f-136">Dátum kiválasztási billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-136">Date picker shortcuts</span></span>
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | <span data-ttu-id="c042f-137">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-137">**To do this**</span></span>                        | <span data-ttu-id="c042f-138">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-138">**Press**</span></span>                                 |
@@ -68,6 +69,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-153">Soha (vagy a maximális dátum)</span><span class="sxs-lookup"><span data-stu-id="c042f-153">Pick Never (or the max date)</span></span>          | <span data-ttu-id="c042f-154">N</span><span class="sxs-lookup"><span data-stu-id="c042f-154">N</span></span>                                         |
 
 ## <a name="factbox-shortcuts"></a><span data-ttu-id="c042f-155">Adatterület billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-155">FactBox shortcuts</span></span>
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | <span data-ttu-id="c042f-156">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-156">**To do this**</span></span>                                                                  | <span data-ttu-id="c042f-157">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-157">**Press**</span></span>                                 |
@@ -79,6 +81,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-168">Az aktuális adatterület összecsukása</span><span class="sxs-lookup"><span data-stu-id="c042f-168">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="c042f-169">Alt+0</span><span class="sxs-lookup"><span data-stu-id="c042f-169">Alt+0</span></span>                                     |
 
 ## <a name="filtering-shortcuts"></a><span data-ttu-id="c042f-170">Szűrő billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-170">Filtering shortcuts</span></span>
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | <span data-ttu-id="c042f-171">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="c042f-171">**To do this**</span></span>                     | <span data-ttu-id="c042f-172">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-172">**Press**</span></span>                |
@@ -89,6 +92,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-181">Speciális szűrés/rendezés megnyitása</span><span class="sxs-lookup"><span data-stu-id="c042f-181">Open advanced filtering/sort</span></span>                                      | <span data-ttu-id="c042f-182">Ctrl+Shift+F3</span><span class="sxs-lookup"><span data-stu-id="c042f-182">Ctrl+Shift+F3</span></span>            | 
 
 ## <a name="form-shortcuts"></a><span data-ttu-id="c042f-183">Űrlap billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-183">Form shortcuts</span></span>
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | <span data-ttu-id="c042f-184">**Teendő:**</span><span class="sxs-lookup"><span data-stu-id="c042f-184">**To do this**</span></span>                                      | <span data-ttu-id="c042f-185">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-185">**Press**</span></span>         |
@@ -110,6 +114,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-216">Képernyő bezárása az el nem mentett módosítások mentése nélkül</span><span class="sxs-lookup"><span data-stu-id="c042f-216">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="c042f-217">Alt+Shift+Q</span><span class="sxs-lookup"><span data-stu-id="c042f-217">Alt+Shift+Q</span></span>       |
 
 ## <a name="form-navigation-shortcuts"></a><span data-ttu-id="c042f-218">Navigációs űrlap billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-218">Form navigation shortcuts</span></span>
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | <span data-ttu-id="c042f-219">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-219">**To do this**</span></span>                                      | <span data-ttu-id="c042f-220">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-220">**Press**</span></span>                                    |
@@ -128,6 +133,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-245">Váltás sornézetre</span><span class="sxs-lookup"><span data-stu-id="c042f-245">Switch to lines view</span></span>                                | <span data-ttu-id="c042f-246">Ctrl+Shift+L</span><span class="sxs-lookup"><span data-stu-id="c042f-246">Ctrl+Shift+L</span></span>                                 |
 
 ## <a name="grid-shortcuts"></a><span data-ttu-id="c042f-247">Rács billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-247">Grid shortcuts</span></span>
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | <span data-ttu-id="c042f-248">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-248">**To do this**</span></span>                                                                                                         | <span data-ttu-id="c042f-249">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-249">**Press**</span></span>                       |
@@ -148,6 +154,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-283">Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)</span><span class="sxs-lookup"><span data-stu-id="c042f-283">Open grid filtering for the current column (with focus in the header row)</span></span>                                              | <span data-ttu-id="c042f-284">Bevitel</span><span class="sxs-lookup"><span data-stu-id="c042f-284">Enter</span></span>                           |
 
 ## <a name="input-control-shortcuts"></a><span data-ttu-id="c042f-285">Beviteli vezérlő gyorsbillentyűk</span><span class="sxs-lookup"><span data-stu-id="c042f-285">Input control shortcuts</span></span>
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | <span data-ttu-id="c042f-286">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-286">**To do this**</span></span>                                                               | <span data-ttu-id="c042f-287">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-287">**Press**</span></span>                     |
@@ -163,6 +170,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-306">Fókusz átváltása a HTML-szerkesztő szövegterülete és eszköztára között</span><span class="sxs-lookup"><span data-stu-id="c042f-306">Switch focus between the text area and the toolbar in an HTML editor control</span></span> | <span data-ttu-id="c042f-307">F6</span><span class="sxs-lookup"><span data-stu-id="c042f-307">F6</span></span>                            |
 
 ## <a name="messaging-shortcuts"></a><span data-ttu-id="c042f-308">Üzenetkezelő gyorsbillentyűk</span><span class="sxs-lookup"><span data-stu-id="c042f-308">Messaging shortcuts</span></span>
+
 |                          |               |
 |--------------------------|---------------|
 | <span data-ttu-id="c042f-309">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-309">**To do this**</span></span>           | <span data-ttu-id="c042f-310">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-310">**Press**</span></span>     |
@@ -170,6 +178,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-313">Ugrás az üzenetsávba</span><span class="sxs-lookup"><span data-stu-id="c042f-313">Go to the Message Bar</span></span>    | <span data-ttu-id="c042f-314">Ctrl+F7</span><span class="sxs-lookup"><span data-stu-id="c042f-314">Ctrl+F7</span></span>       |
 
 ## <a name="navigation-shortcuts"></a><span data-ttu-id="c042f-315">Navigációs billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-315">Navigation shortcuts</span></span>
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | <span data-ttu-id="c042f-316">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-316">**To do this**</span></span>                                                                | <span data-ttu-id="c042f-317">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-317">**Press**</span></span>                  |
@@ -191,6 +200,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-348">Ugrás az adatterület panelre (ami a megnyitását is jelentheti)</span><span class="sxs-lookup"><span data-stu-id="c042f-348">Move to the FactBox pane (which may include opening it)</span></span>                       | <span data-ttu-id="c042f-349">Alt+M,B vagy Ctrl+F2</span><span class="sxs-lookup"><span data-stu-id="c042f-349">Alt+M,B or Ctrl+F2</span></span>         |
 
 ## <a name="personalization-shortcuts"></a><span data-ttu-id="c042f-350">Személyre szabási gyorsbillentyűk</span><span class="sxs-lookup"><span data-stu-id="c042f-350">Personalization shortcuts</span></span>
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | <span data-ttu-id="c042f-351">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-351">**To do this**</span></span>                                                                                                         | <span data-ttu-id="c042f-352">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-352">**Press**</span></span>                           |
@@ -219,6 +229,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="c042f-397">Kilépés személyre szabási módból (személyre szabási módban)</span><span class="sxs-lookup"><span data-stu-id="c042f-397">Exit personalization mode (when in personalization mode)</span></span>                                                               | <span data-ttu-id="c042f-398">Esc</span><span class="sxs-lookup"><span data-stu-id="c042f-398">Esc</span></span>                                 |
 
 ## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="c042f-399">Szegmentált beviteli billentyűparancsok</span><span class="sxs-lookup"><span data-stu-id="c042f-399">Segmented entry shortcuts</span></span>
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | <span data-ttu-id="c042f-400">**Művelet**</span><span class="sxs-lookup"><span data-stu-id="c042f-400">**To do this**</span></span>                                                                                                          | <span data-ttu-id="c042f-401">**Billentyű vagy billentyűkombináció**</span><span class="sxs-lookup"><span data-stu-id="c042f-401">**Press**</span></span>                        |

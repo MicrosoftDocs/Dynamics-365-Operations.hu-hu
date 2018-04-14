@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c408f30c783d58766ab93b13c589079c3ef375de
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a5f53a76ebd0bd428f791ce8493e9f388eb8e2fa
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="bank-statement-file-import-troubleshooting"></a><span data-ttu-id="2d6c2-107">Banki kivonatfájl importálása – hibaelhárítás</span><span class="sxs-lookup"><span data-stu-id="2d6c2-107">Bank statement file import troubleshooting</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2d6c2-108">Fontos, hogy a banki kivonatfájl a Microsoft Dynamics 365 for Finance and Operations által támogatott elrendezésnek megfeleljen.</span><span class="sxs-lookup"><span data-stu-id="2d6c2-108">It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports.</span></span> <span data-ttu-id="2d6c2-109">Banki kivonatokra vonatkozó szigorú szabályok miatt a legtöbb Integráció megfelelően fog működni.</span><span class="sxs-lookup"><span data-stu-id="2d6c2-109">Because of strict standards for bank statements, most integrations will work correctly.</span></span> <span data-ttu-id="2d6c2-110">Azonban bizonyos esetekben a fájl nem importálható, vagy helytelen eredményeket tartalmaz.</span><span class="sxs-lookup"><span data-stu-id="2d6c2-110">However, sometimes the statement file can't be imported or has incorrect results.</span></span> <span data-ttu-id="2d6c2-111">Általában ezeket a problémákat a bankszámlakivonat-fájlban levő kis eltérések okozzák.</span><span class="sxs-lookup"><span data-stu-id="2d6c2-111">Typically, these issues are caused by small differences in the bank statement file.</span></span> <span data-ttu-id="2d6c2-112">Ez a cikk bemutatja, hogy hogyan javítsa ezeket az eltéréseket és hogyan oldja meg a problémákat.</span><span class="sxs-lookup"><span data-stu-id="2d6c2-112">This article explains how to fix these differences and resolve the issues.</span></span>
 

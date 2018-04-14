@@ -19,16 +19,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7eb15f9f73f4773d98160e1b0ec5ce74c159cdea
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8d63ab3dcde9c206f1c0ddd0185109a3298f5a4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a><span data-ttu-id="faa83-104">A Modern POS és a Cloud POS közötti választás</span><span class="sxs-lookup"><span data-stu-id="faa83-104">Choose between Modern POS and Cloud POS</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="faa83-105">Ez a témakör további háttérinformációkat, tippeket és útmutatást ad az alkalmazás telepítőinek azokkal a tényezőkkel kapcsolatban, amelyeket figyelembe kell venni a Microsoft Dynamics 365 for Retail üzembe helyezésekor.</span><span class="sxs-lookup"><span data-stu-id="faa83-105">This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="faa83-106">Az útmutató áttekintésével és követésével a telepítés részeként a bevezetők elkerülhetik azokat a problémákat, amelyek hatással lehetnek a felhasználói élményre vagy a teljesítményre.</span><span class="sxs-lookup"><span data-stu-id="faa83-106">By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.</span></span>
 
@@ -92,8 +92,8 @@ ms.lasthandoff: 02/07/2018
 
     <span data-ttu-id="faa83-178">Azokat az eseteket kivéve, amikor az adott eszköz kapcsolata nagyon megbízható és rugalmas, vagy amikor bizonyos mennyiségű leállást elfogadható a kiskereskedő számára, a következő lehetőségek valamelyikét ajánljuk:</span><span class="sxs-lookup"><span data-stu-id="faa83-178">Unless the connectivity for a given device is very dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, we recommend one of the following options:</span></span>
 
-    - <span data-ttu-id="faa83-179">Windows-alapú MPOS használata, és az offline mód engedélyezése.</span><span class="sxs-lookup"><span data-stu-id="faa83-179">Use MPOS in Windows, and enable offline mode.</span></span>
-    - <span data-ttu-id="faa83-180">Helyszíni RSSU telepítése.</span><span class="sxs-lookup"><span data-stu-id="faa83-180">Deploy an on-premises RSSU.</span></span>
+  - <span data-ttu-id="faa83-179">Windows-alapú MPOS használata, és az offline mód engedélyezése.</span><span class="sxs-lookup"><span data-stu-id="faa83-179">Use MPOS in Windows, and enable offline mode.</span></span>
+  - <span data-ttu-id="faa83-180">Helyszíni RSSU telepítése.</span><span class="sxs-lookup"><span data-stu-id="faa83-180">Deploy an on-premises RSSU.</span></span>
 
     <span data-ttu-id="faa83-181">Ez a két lehetőség nem zárja ki kölcsönösen egymást.</span><span class="sxs-lookup"><span data-stu-id="faa83-181">These two options aren't mutually exclusive.</span></span> <span data-ttu-id="faa83-182">A legmegbízhatóbb topológia érdekében a kiskereskedők telepíthetnek egy helyi RSSU-t az internetkapcsolat vagy az Azure rendelkezésre állásától való függőség csökkentése érdekében, továbbá telepíthetnek olyan pénztárgépeket, amelyeken engedélyezve van a kapcsolat nélküli mód arra az esetre, ha probléma lépne fel a helyi kiszolgálóval vagy a hálózattal.</span><span class="sxs-lookup"><span data-stu-id="faa83-182">For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there is an issue with the local server or network.</span></span>
 

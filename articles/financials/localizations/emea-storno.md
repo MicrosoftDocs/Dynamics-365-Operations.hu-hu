@@ -17,16 +17,16 @@ ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 1cdc57196c93cb30c7d0bfebca2e533ae6bd7d5a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3b31dd459e15563a2220f893ab487e34a4427e84
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="storno-accounting"></a><span data-ttu-id="8318f-103">Sztornókönyvelés</span><span class="sxs-lookup"><span data-stu-id="8318f-103">Storno accounting</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8318f-104">A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.</span><span class="sxs-lookup"><span data-stu-id="8318f-104">Storno accounting is the practice of using negative numbers to reverse original journal account entries.</span></span>
 

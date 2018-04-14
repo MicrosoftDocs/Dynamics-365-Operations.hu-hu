@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 47336a19899b1fad0e63265173fd7fd02fc74ec3
-ms.openlocfilehash: 0f87e82655ac9fa83ee116d0698b38804cfbf55c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8634b8f2c41b530fcd06f253358145fdc9389d2d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="general-ledger-account-balances"></a><span data-ttu-id="30770-104">Főkönyvi számlaegyenleg</span><span class="sxs-lookup"><span data-stu-id="30770-104">General ledger account balances</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="30770-105">Ez a cikk két módszert ír le a főkönyv számlaegyenlegének megtekintésére - a főkönyvi kivonat lista lapot és a pénzügyi jelentéseket.</span><span class="sxs-lookup"><span data-stu-id="30770-105">This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports.</span></span> <span data-ttu-id="30770-106">Ismerteti továbbá a dimenziókészlet egyenlegének frissítését is.</span><span class="sxs-lookup"><span data-stu-id="30770-106">It also discusses how to update dimension set balances.</span></span>
 

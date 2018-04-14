@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 167c4577c8a9ce2fca0de29c995d9437fe35c93d
-ms.openlocfilehash: 465ff83070745a958b8b28724cfce65e0d306015
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d6e4c85c2272021364cbe25d88e889afdde83b49
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-and-filter-workspaces"></a><span data-ttu-id="88398-103">Munkaterületek konfigurálása és szűrése</span><span class="sxs-lookup"><span data-stu-id="88398-103">Configure and filter workspaces</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="88398-104">Ez a cikk a munkaterületek konfigurálásáról és szűréséről nyújt áttekintést.</span><span class="sxs-lookup"><span data-stu-id="88398-104">This article provides an overview about how to configure and filter workspaces.</span></span>
 

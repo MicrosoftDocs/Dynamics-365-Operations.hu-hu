@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8e7d2198b4976a6f60f05690d7b6f11f3da55e28
-ms.openlocfilehash: a98e58b26432ee01e62d60f81a768f14568e34e4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0ad0869907b23ce5e0b44e3e9ecee3f2cd34ede
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="ship-sales-orders-without-warehousing"></a><span data-ttu-id="10e80-103">Értékesítési rendelések szállítása raktározás nélkül</span><span class="sxs-lookup"><span data-stu-id="10e80-103">Ship sales orders without warehousing</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="10e80-104">Ez az útmutató bemutatja, hogyan lehet egy értékesítési rendelést frissíteni, ha a termékeket kiszállították a vevőhöz.</span><span class="sxs-lookup"><span data-stu-id="10e80-104">This guide demonstrates how to update a sales order when products are shipped to the customer.</span></span> <span data-ttu-id="10e80-105">Ez az útmutató olyan teljesítési folyamatra használható, amely nincs beállítva raktárkezelésre (sem alap, sem speciális raktározásra), és ezért szükséges regisztrálni termék kitárolást szállítás előtt.</span><span class="sxs-lookup"><span data-stu-id="10e80-105">The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment.</span></span> <span data-ttu-id="10e80-106">Ezt a folyamatot saját adatokkal, vagy az USMF bemutatócég adataival is futtathatja.</span><span class="sxs-lookup"><span data-stu-id="10e80-106">You can run this procedure on your own data or in demo data company USMF.</span></span> <span data-ttu-id="10e80-107">Mindkét esetben, mielőtt elkezdi a feladatot, hozzon létre egy értékesítési rendelést egy raktározott termékre, amelynek mennyisége több, mint 1.</span><span class="sxs-lookup"><span data-stu-id="10e80-107">In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1.</span></span> <span data-ttu-id="10e80-108">A feladás hibájának elkerülése érdekében ellenőrizze, hogy a termék készleten lévő mennyisége a webhelyen és a megrendeléshez kiválasztott raktárban elegendő a megrendelés teljesítéséhez.</span><span class="sxs-lookup"><span data-stu-id="10e80-108">To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you’ve selected on the order covers the order quantity.</span></span>
 

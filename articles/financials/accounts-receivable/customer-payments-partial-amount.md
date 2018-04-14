@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 6b7494a05392cbee70e6d5883bae0295e8b55ac9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1805c5972e2205cffa1a691348e5aa1e36f5f144
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="customer-payments-for-a-partial-amount"></a><span data-ttu-id="01e6f-105">Vevői kifizetések részösszegre</span><span class="sxs-lookup"><span data-stu-id="01e6f-105">Customer payments for a partial amount</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="01e6f-106">Bizonyos esetekben a vevő kisebb összeget fizet ki, mint a számlán szereplő összeg.</span><span class="sxs-lookup"><span data-stu-id="01e6f-106">Sometimes, customers make a payment that is less than the amount of an invoice.</span></span> <span data-ttu-id="01e6f-107">Ez a cikk az ilyen helyzetek megoldásait taglalja.</span><span class="sxs-lookup"><span data-stu-id="01e6f-107">This article describes the various options for handling this situation.</span></span> <span data-ttu-id="01e6f-108">Az Ön számára elérhető beállítások az ön üzleti igényeitől és konfigurációitól függenek.</span><span class="sxs-lookup"><span data-stu-id="01e6f-108">The options that are available to you depend on your business requirements and configuration.</span></span>
 

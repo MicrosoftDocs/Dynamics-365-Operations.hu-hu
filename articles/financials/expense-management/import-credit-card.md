@@ -19,16 +19,16 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: ad5485ec4d8c5f32712e14f7545525ba27b13288
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 65501866f0c465f40de842c5f612aae9349db7be
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="import-and-maintain-credit-card-transactions"></a><span data-ttu-id="afafe-104">Hitelkártya-tranzakciók importálása és karbantartása</span><span class="sxs-lookup"><span data-stu-id="afafe-104">Import and maintain credit card transactions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="afafe-105">A költségjellegű hitelkártya-tranzakciókat be lehet úgy állítani, hogy importálásuk ismétlődő ütemezés szerint automatikusan megtörténjen.</span><span class="sxs-lookup"><span data-stu-id="afafe-105">Expense-related credit card transactions can be set up so that they are automatically imported on a recurring schedule.</span></span> <span data-ttu-id="afafe-106">Másik lehetőségként a tranzakciók manuálisan is importálhatók szükség szerint.</span><span class="sxs-lookup"><span data-stu-id="afafe-106">Alternatively, the transactions can be manually imported as they are required.</span></span> <span data-ttu-id="afafe-107">A hitelkártya-tranzakciók importálása a Hitelkártya-tranzakciók adatentitáson keresztül történik.</span><span class="sxs-lookup"><span data-stu-id="afafe-107">The credit card transactions are imported through the Credit card transactions data entity.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 33ebb28196baa9ae944dbd124274b05cb587fea4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d9f9888d04f4e2419de9d4a6857a81ae40f6f21a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a><span data-ttu-id="5964d-103">Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása</span><span class="sxs-lookup"><span data-stu-id="5964d-103">Create, calculate, and post a statement for a retail store</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5964d-104">Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit.</span><span class="sxs-lookup"><span data-stu-id="5964d-104">This procedure walks through the manual steps for creating, calculating, and posting a statement for a store.</span></span> <span data-ttu-id="5964d-105">Kötegelt feladatok is léteznek, amelyek ugyanazon eljárásokhoz konfigurálhatók.</span><span class="sxs-lookup"><span data-stu-id="5964d-105">There are also batch jobs that can be configured for the same tasks.</span></span> <span data-ttu-id="5964d-106">A kötegelt feladatok konfigurálásának és futtatásának lépései egy másik témakörben találhatók meg.</span><span class="sxs-lookup"><span data-stu-id="5964d-106">The steps for configuring and running the batch jobs can be found in other topics.</span></span> <span data-ttu-id="5964d-107">Az eljárás végrehajtásához rendelkeznie kell olyan tranzakciókkal, amelyeket a pénztárban hajtottak végre, majd átvezették a Dynamics AX programba.</span><span class="sxs-lookup"><span data-stu-id="5964d-107">To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics AX.</span></span> <span data-ttu-id="5964d-108">Ez a bejegyzés az USRT cég adatait használja, mint bemutatóadatokat.</span><span class="sxs-lookup"><span data-stu-id="5964d-108">This recording uses the USRT company in demo data.</span></span> <span data-ttu-id="5964d-109">Ez az eljárás a Microsoft Dynamics AX rendszerre vonatkozhat.</span><span class="sxs-lookup"><span data-stu-id="5964d-109">This procedure may refer to Microsoft Dynamics AX.</span></span> <span data-ttu-id="5964d-110">Ne feledje, hogy a Dynamics AX új neve Microsoft Dynamics 365 for Operations.</span><span class="sxs-lookup"><span data-stu-id="5964d-110">Please note that Dynamics AX is now called Microsoft Dynamics 365 for Operations.</span></span>
 

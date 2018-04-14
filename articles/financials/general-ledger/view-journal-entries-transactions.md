@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 825dba31a7093e9d9460f5aab59a96507dafeb8a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2ada46f8be165282557044468a24291185b4aa5b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a><span data-ttu-id="e241c-103">Naplóbejegyzések és tranzakciók megtekintése</span><span class="sxs-lookup"><span data-stu-id="e241c-103">View journal entries and transactions</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e241c-104">Ez a cikk a napló bejegyzések és tranzakciók megtekintésének számos módját ismerteti.</span><span class="sxs-lookup"><span data-stu-id="e241c-104">This article explains the various ways that you can view journal entries and transactions.</span></span> 
 
@@ -55,7 +54,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="e241c-128">**Tranzakció eredete** – Ez a tranzakció jelentés mutatja a számlát napló szerint, és tranzakció, könyvelés és jelentési pénznem szerint.</span><span class="sxs-lookup"><span data-stu-id="e241c-128">**Transaction origin** – This transaction report shows the account by journal, and by transaction, accounting, and reporting currency.</span></span> <span data-ttu-id="e241c-129">Ezen felül megjeleníti napló összes ellentételként használt sorát.</span><span class="sxs-lookup"><span data-stu-id="e241c-129">It also shows each line of the journal that was used as an offset.</span></span>
 
 
-##<a name="see-also"></a><span data-ttu-id="e241c-130">Lásd még</span><span class="sxs-lookup"><span data-stu-id="e241c-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e241c-130">Lásd még</span><span class="sxs-lookup"><span data-stu-id="e241c-130">See also</span></span>
 - [<span data-ttu-id="e241c-131">Főkönyvi számlaegyenlegek</span><span class="sxs-lookup"><span data-stu-id="e241c-131">General ledger account balances</span></span>](general-ledger-account-balances.md) 
 - [<span data-ttu-id="e241c-132">Könyvelési források böngészője</span><span class="sxs-lookup"><span data-stu-id="e241c-132">Accounting source explorer</span></span>](..\accounts-payable\accounting-source-explorer.md)
 - [<span data-ttu-id="e241c-133">Pénzügyi jelentéskészítés</span><span class="sxs-lookup"><span data-stu-id="e241c-133">Financial reporting</span></span>](financial-reporting-getting-started.md)
