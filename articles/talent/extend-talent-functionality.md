@@ -3,7 +3,7 @@ title: "A Microsoft Dynamics 365 for Talent lehetőségeinek bővítése"
 description: "Ha létrehozott bármilyen Microsoft PowerApps alkalmazást, ezeket az alkalmazásokat hivatkozásokkal indíthatja el a Microsoft Dynamics 365 for Talent alkalmazásból."
 author: rschloma
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,15 +35,16 @@ Használja a **Beágyazott Microsoft PowerApps beállítása** lapot a Talent al
 
 Az alábbi információkat adhatja meg vagy állíthatja be ezen az oldalon: 
 
-> - Jól felismerhető név vagy azonosító minden PowerApps alkalmazásnak.
-> - Egyedi azonosító (GUID) minden alkalmazásnak, amelyet hozzáad valamelyik Talent oldalhoz. Az alkalmazásazonosító a PowerApps-oldalon érhető el, [powerapps.com](http://powerapps.com/). 
-> - A lap, amelyről a felhasználók megnyithatnak egy alkalmazást vagy jelentést. Nem minden Talent-lap támogatja a beágyazott PowerAppst és a PowerBI-jelentéseket. 
-> 
-> [!NOTE]
->  Adja meg az oldal belső nevét, és nem az oldal tetején megjelenő megjelenítendő nevet. A belső név megkereséséhez nyissa meg a lapot, amelynek a belső nevére van szüksége, és kattintson a jobb gombbal bárhová az oldalon. A menü megnyílásakor vigye az egérmutatót a **Képernyő adatai** elemre. A belső képernyőnév a **Képernyő adatai** elem mellett jelenik meg a menüben.
-> 
-> - Adja meg az űrlap-vezérlőelemet, amelytől az alkalmazás be tudja beolvasni a környezeti adatokat. Például egy alkalmazás használhatja egy dolgozó adatait. Ha megadja a **Dolgozó** lapot a **Környezet** mezőben, a **Dolgozó** lap megnyílik az alkalmazás indításakor. A **Környezetmezőben** nem kötelező megadni bejegyzést. 
-> - Állítsa be a párbeszédpanel méretét, amelyen a PowerApps alkalmazás futni fog. A párbeszédpanelek lehetnek „kicsik” vagy „nagyok” a felhasználói felületet optimalizálásához, amikor az alkalmazás telefonon vagy nagyobb eszközön fut. 
+ -  Jól felismerhető név vagy azonosító minden PowerApps alkalmazásnak.
+ -  Egyedi azonosító (GUID) minden alkalmazásnak, amelyet hozzáad valamelyik Talent oldalhoz. Az alkalmazásazonosító a PowerApps-oldalon érhető el, [powerapps.com](http://powerapps.com/). 
+ -  A lap, amelyről a felhasználók megnyithatnak egy alkalmazást vagy jelentést. Nem minden Talent-lap támogatja a beágyazott PowerAppst és a PowerBI-jelentéseket. 
+
+ > [!NOTE]
+ >  Adja meg az oldal belső nevét, és nem az oldal tetején megjelenő megjelenítendő nevet. A belső név megkereséséhez nyissa meg a lapot, amelynek a belső nevére van szüksége, és kattintson a jobb gombbal bárhová az oldalon. A menü megnyílásakor vigye az egérmutatót a **Képernyő adatai** elemre. A belső képernyőnév a **Képernyő adatai** elem mellett jelenik meg a menüben.
+ 
+-   Adja meg az űrlap-vezérlőelemet, amelytől az alkalmazás be tudja beolvasni a környezeti adatokat. Például egy alkalmazás használhatja egy dolgozó adatait. Ha megadja a **Dolgozó** lapot a **Környezet** mezőben, a **Dolgozó** lap megnyílik az alkalmazás indításakor. A **Környezetmezőben** nem kötelező megadni bejegyzést. 
+-   Állítsa be a párbeszédpanel méretét, amelyen a PowerApps alkalmazás futni fog. A párbeszédpanelek lehetnek „kicsik” vagy „nagyok” a felhasználói felületet optimalizálásához, amikor az alkalmazás telefonon vagy nagyobb eszközön fut. 
+
 
 Megadhatja azt is, hogy az alkalmazás mely jogi személyek számára legyen elérhető, illetve minden jogi személy számára is elérhetővé teheti. Alapértelmezés szerint a PowerApps alkalmazások elérhetők minden jogi személy számára.
 
