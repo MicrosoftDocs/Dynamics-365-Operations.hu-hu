@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a8c2d097626fad905741c35ffa8c13336f8735b9
+ms.sourcegitcommit: 3662bb1a20fbdd3769b94247ac071a7cfd7e04f1
+ms.openlocfilehash: 94c07d18de06a75ad86d69d7c06a78e446f0b506
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/20/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="47096-103">Első lépések a Microsoft Dynamics 365 for Talent rendszerben</span><span class="sxs-lookup"><span data-stu-id="47096-103">Getting started with Microsoft Dynamics 365 for Talent</span></span>
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 > [!NOTE] 
 > <span data-ttu-id="47096-107">A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail és Dynamics 365 for Talent.</span><span class="sxs-lookup"><span data-stu-id="47096-107">The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent.</span></span> <span data-ttu-id="47096-108">Mindhárom termék azonos funkciókkal bírhat.</span><span class="sxs-lookup"><span data-stu-id="47096-108">The same functionality may appear in all 3 products.</span></span> <span data-ttu-id="47096-109">Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz.</span><span class="sxs-lookup"><span data-stu-id="47096-109">As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="47096-110">Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.</span><span class="sxs-lookup"><span data-stu-id="47096-110">Topics that are written for one product may apply to the same functionality in a related product.</span></span>
 
-### <a name="personalizing-talent"></a><span data-ttu-id="47096-111">A Talent személyre szabása</span><span class="sxs-lookup"><span data-stu-id="47096-111">Personalizing Talent</span></span> 
+## <a name="personalizing-talent"></a><span data-ttu-id="47096-111">A Talent személyre szabása</span><span class="sxs-lookup"><span data-stu-id="47096-111">Personalizing Talent</span></span> 
 <span data-ttu-id="47096-112">Az alábbi témakörök bemutatják, hogyan hozhatja létre a Dynamics 365 for Talent számos funkcióját, amelyek megkönnyítik az időben elvégezhető munkát.</span><span class="sxs-lookup"><span data-stu-id="47096-112">The following topics show how to set up many features in Dynamics 365 for Talent that make it easier for you to get your work done in a timely manner.</span></span> 
 
 -   <span data-ttu-id="47096-113">[A felhasználói felület testreszabása](../fin-and-ops/get-started/personalize-user-experience.md) – Ez a témakör bemutatja a különböző módszereket, melyekkel testreszabható és igényekhez igazítható a Talent termék a preferenciáinak megfelelően.</span><span class="sxs-lookup"><span data-stu-id="47096-113">[Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.</span></span>
@@ -44,7 +44,7 @@ ms.lasthandoff: 04/13/2018
 
 -   <span data-ttu-id="47096-117">[Billentyűparancsok](../fin-and-ops/get-started/shortcut-keys.md) – Ez a témakör felsorolja a billentyűparancsokat az Egyesült Államokban használt billentyűkiosztás használata esetén.</span><span class="sxs-lookup"><span data-stu-id="47096-117">[Keyboard shortcuts](../fin-and-ops/get-started/shortcut-keys.md) - This topic lists keyboard shortcuts for the United States keyboard layout.</span></span> 
 
-### <a name="accessing-information"></a><span data-ttu-id="47096-118">Adatok elérése</span><span class="sxs-lookup"><span data-stu-id="47096-118">Accessing information</span></span>
+## <a name="accessing-information"></a><span data-ttu-id="47096-118">Adatok elérése</span><span class="sxs-lookup"><span data-stu-id="47096-118">Accessing information</span></span>
 <span data-ttu-id="47096-119">A következő témakörök leírják a lekérdezések használatát, valamint a keresési és szűrési funkciókat, hogy gyorsan megtalálja az információkat.</span><span class="sxs-lookup"><span data-stu-id="47096-119">The following topics explain how to use lookups, and the search and filtering features, to find information quickly.</span></span> 
 
 -   <span data-ttu-id="47096-120">[Információk megtalálása keresésekkel](../fin-and-ops/get-started/use-lookups-to-find-information.md) – Ez a témakör azt mutatja, hogy a keresések segítenek gyorsan megtalálni a helyes vagy a kívánt értéket.</span><span class="sxs-lookup"><span data-stu-id="47096-120">[Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) - This topic shows how lookups can help you quickly find the correct or desired value.</span></span> <span data-ttu-id="47096-121">A téma leírja, hogy a keresések hogyan működnek, és olyan tippeket tartalmaz, amelyek segítségével optimalizálhatja azok használatát.</span><span class="sxs-lookup"><span data-stu-id="47096-121">The topic describes how lookups work and includes tips to help you optimize your use of them.</span></span>
