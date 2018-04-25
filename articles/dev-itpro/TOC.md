@@ -115,9 +115,10 @@
 ### Újdonságok
 #### [Bővítési módosítások, 2017. július](extensibility/changes-july-2017.md)
 #### [Bővítési módosítások, 7.3-as verzió](extensibility/extensibility-changes-73.md)
+#### [Bővítési módosítások, 8.0-as verzió](extensibility/changes-80.md)
 ### Alapismeretek
 #### [Tolakodó testreszabások](extensibility/intrusive-customizations.md)
-#### [Osztály kiterjesztések](extensibility/class-extensions.md)
+#### [Osztálykiterjesztések](extensibility/class-extensions.md)
 #### [Osztálykiterjesztés: módszercsomagolás és parancslánc](extensibility/method-wrapping-coc.md)
 #### [Elnevezési irányelvek](extensibility/naming-guidelines-extensions.md)
 ### Hogyan?
@@ -382,19 +383,20 @@
 
 ### [Adatok integrálása a Common Data Service környezettel](data-entities/data-integration-cds.md) 
 #### [Potenciális vevő készpénzfizetési esetre történő konfigurálása](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [A Finance and Operations-termékek szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-##### [A Sales-számlák szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-##### [A Sales-kapcsolatok szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Értékesítésiajánlat-fejlécek és -sorok szinkronizálása a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-##### [Értékesítésirendelés-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Értékesítésirendelés-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+##### [Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ##### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+#### [A Field Service szolgáltatással való integráció konfigurálása](../supply-chain/sales-marketing/field-service.md)
+##### [A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel](../supply-chain/sales-marketing/field-service-product.md)
+##### [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódő számlák szinkronizálása a Finance and Operations szabadszöveges számláival](../supply-chain/sales-marketing/field-service-invoice.md)
 
-### [Külső webszolgáltatásokat fogyasztó](data-entities/consume-external-web-service.md)
+
+
+### [Külső webszolgáltatások használata](data-entities/consume-external-web-service.md)
 
 
 # [Adatkezelés](data-entities/data-entities-data-packages.md)
@@ -407,7 +409,9 @@
 ### [Konfigurációs adatsablonok](data-entities/configuration-data-templates.md)
 ### [Több munkalapot tartalmazó adatsablonok](data-entities/excel-template-multiple.md)
 ### [Entitás változásainak nyomon követése.](data-entities/entity-change-track.md)
+
 ### [Normál adatentitásokkal kapcsolatos információk](data-entities/data-entities-report.md)
+
 
 ## [Adatimportálási és -exportálási feladatok](data-entities/data-import-export-job.md)
 
@@ -427,13 +431,18 @@
 
 ## [Használja saját adatbázisát](analytics/export-entities-to-your-own-database.md)
 
-## [Erőforrások egy GDPR-adatkérelem megválaszolására](gdpr/gdpr-home-page.md)
+
+## [Adatfeladat automatizálása](data-entities/data-task-automation.md)
+
+## [Erőforrások egy GDPR adatkérelem megválaszolására](gdpr/gdpr-home-page.md)
 ### [Útmutató a Microsoft Dynamics 365 for Finance and Operations rendszerben használt GDPR-hez](gdpr/gdpr-auditing-sensitive-data.md)
-### [Személy keresése jelentés](gdpr/gdpr-person-search-report.md)
-### [A Személy keresése jelentés kiterjesztése](gdpr/gdpr-extend-person-search-report.md)
+### [Eszközbesorolások](gdpr/gdpr-asset-classification-values.md)
+### [Személykeresési jelentés használata](gdpr/gdpr-person-search-report.md)
+### [A Személykeresési jelentés kiterjesztése](gdpr/gdpr-extend-person-search-report.md)
 ### [Bizalmas adatokhoz való hozzáférés kezelése](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Személyes adatokra vonatkozó kérés megválaszolása a Talent használatával](gdpr/respond-dsr-request-talent.md)
 ### [Személyes adatokra vonatkozó kérés megválaszolása a Microsoft Dynamics AX 2012 használatával](gdpr/gdpr-ax2012.md)
+
 
 # [Folyamatos szállítás kezdőlap](dev-tools/continuous-delivery-home-page.md)
 ## [Fejlesztési és folyamatos szállítási GYIK](dev-tools/continuous-delivery-faq.md)
@@ -530,6 +539,7 @@
 ### [AX 2012 frissítés – éles indulás](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Módosítások, amelyek hatással vannak az AX 2012-ről való frissítésre
+#### [A számlatükör-elválasztónak egyedinek kell lennie.](migration-upgrade/chart-accounts-delimiter-unique.md)
 #### [Egyetlen bizonylatos és pénznemes értékelési frissítés ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Projekterőforrás-ütemezés adatmodellje](migration-upgrade/data-model-changes-resource-management.md)
 #### [Munkafolyamat alrendszer módosításai](migration-upgrade/workflow-subsystem.md)
@@ -569,6 +579,7 @@
 
 # [Rendszerfelügyelet](sysadmin/system-administration-home-page.md)
 ## [Havi platformfrissítések GYIK](sysadmin/faq-platform-monthly-updates.md)
+## [Virtuális gépek, amelyekhez a rendszergazdák nem férhetnek hozzá - gyakori kérdések](sysadmin/VMs-no-admin-access.md)
 ## [Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez](sysadmin/legal-terms-privacy-statement.md)
 ## [Licenckódok és konfigurációskulcs-jelentések](sysadmin/license-codes-configuration-keys-report.md)
 ## [Vállalatközi adatmegosztás](sysadmin/cross-company-data-sharing.md)
@@ -612,14 +623,17 @@
 ## [Feladatok elvégzése a BPM-könyvtárban](lifecycle-services/complete-tasks-bpm.md)
 ## [Tevékenység-diagramok használata](lifecycle-services/using-activity-diagrams.md)
 ## [BPM-könyvtár szinkronizálása a Visual Studio Team Services (VSTS) megoldással](lifecycle-services/synchronize-bpm-vsts.md)
+## [Elfogadási tesztcsomag létrehozása feladat-útmutatók és BPM használatával](lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
 ## [Az Üzletifolyamat-modellező folyamatábrái](lifecycle-services/flowcharts-business-process-modeler.md)
-## [Egyéni üzleti folyamatok feltöltése](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
+## [Egyéni üzleti folyamatok kezelése](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Megfigyelés és diagnosztika ](lifecycle-services/monitoring-diagnostics.md)
 ## [Környezeti szolgáltatások újraindítása](lifecycle-services/restart-environment-services.md)
 ## [Felhasználói bejelentkezések nyomon követése](lifecycle-services/user-logins.md)
 ## [Eszköztár](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 – fordítási szolgáltatás – áttekintés](lifecycle-services/translation-service-overview.md)
-### [Microsoft Dynamics 365 fordítási szolgáltatás – használati útmutató  ](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 fordítási szolgáltatás – használati útmutató](lifecycle-services/use-translation-service.md)
+### [A Microsoft Dynamics 365 fordítási szolgáltatás - dokumentációs fájlok fordítása](lifecycle-services/use-translation-service-ua.md)
+### [A Microsoft Dynamics 365 fordítási szolgáltatás - fordítási memória](lifecycle-services/use-translation-service-tm.md)
 
 ## A Dynamics AX 2012 Lifecycle Services funkciói
 ### Telepítés
