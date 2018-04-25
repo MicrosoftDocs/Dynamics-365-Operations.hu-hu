@@ -3,7 +3,7 @@
 # [Első lépések](talent-get-started.md)
 ## [Rendszerkövetelmények és frissítési irányelv](talent-versions-update-policy.md)
 ## [Microsoft Dynamics 365 for Talent létesítése](provisioning-talent.md)
-## [Talent-környezet eltávolítása](remove-test-environment.md)
+## [Talent-környezet eltávolítása](remove-talent-environment.md)
 ## [Microsoft Dynamics 365 for Talent moduláris alkalmazások létesítése](modular-app-tech-faq.md)
 ## [Talent funkció kibővítése](extend-talent-functionality.md)
 
@@ -13,8 +13,9 @@
 ## [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md)
 ## [Vállalatfüggő HR-paraméterek beállítása](set-up-company-specific-hr-parameters.md)
 ## [Személyzeti műveletek GYIK](personnel-actions-faq.md)
+## [Üzleti folyamatok formalizálása](formalize-business-processes.md)
 ## [Alkalmazotti adatok kezelése a munkafolyamat segítségével](workflow-manage-employee-information.md)
-## [Szabadság és távollét áttekintése](leave-absence-overview.md)
+## [Szabadság- és távollét áttekintése](leave-absence-overview.md)
 
 # A szervezeti személyzet kiépítése
 ## [Attract – áttekintés](attract-overview.md) 

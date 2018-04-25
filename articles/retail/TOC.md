@@ -31,7 +31,7 @@
 ## [Hívásközpont-katalógusok](call-center-catalogs.md)
 ## [Hívásközpont-katalógus létrehozása](create-call-center-catalogs.md)
 ## [Csalással kapcsolatos figyelmeztetések beállítása](set-up-fraud-alerts.md)
-## [Rendelésfeldolgozási beállítások meghatározása](set-up-order-processing-options.md)
+## [Hívásközpont beállítása](set-up-order-processing-options.md)
 ## [Folytonossági program beállítása egy hívásközpont számára](set-up-continuity-program.md)
 ## [Rendelésvárakoztatások](work-with-order-holds.md)
 ## [Fizetési lehetőségek](work-with-payments.md)
@@ -47,10 +47,11 @@
 # Modern Point of Sale (MPOS) és Cloud POS
 ## [A Modern POS és a Cloud POS közötti választás](MPOS-or-CPOS.md)
 ## [POS-műveletek, online és offline](pos-operations.md)
-## [Bemutató adatok képernyő-elrendezései az MPOS/CPOS pénztárban](demo-data.md)
+## [Az MPOS/CPOS bemutató adatképernyő-elrendezései](demo-data.md)
 ## [Termék- és vevőkeresés áttekintése a pénztárban](POS-search-improvements.md)
+## [Készlet ellenőrzése a pénztárnál](product-variants-POS.md)
 ## Hardverperifériák
-### [Retail perifériás eszközök – áttekintés](retail-peripherals-overview.md)
+### [Kiskereskedelmi perifériás eszközök – áttekintés](retail-peripherals-overview.md)
 ### [A Microsoft által tesztelt pénztári hardverperifériák](microsoft-tested-pos-hardware-peripherals.md)
 ### [Kiskereskedelmiperiféria-szimulátor](dev-itpro/retail-peripheral-simulator.md)
 ### [Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat](define-maintain-channel-clients-registers-hw-stations.md)
@@ -76,7 +77,7 @@
 ## Eszköz aktiválása
 ### [Az MPOS pénztár konfigurálása és telepítése](retail-modern-pos-device-activation.md)
 ### [Kiterjesztett bejelentkezés beállítása felhőalapú pénztárhoz és MPOS pénztárhoz](extended-logon.md)
-### [Kiskereskedelmi számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
+### [Retail számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
 ## Bevételezések
 ### [Nyugtasablonok beállítása](receipt-templates-printing.md) 
 ### [E-mailes nyugták küldése MPOS pénztárból](email-receipts.md)
@@ -96,6 +97,7 @@
 ## [RFM-profilelemzés beállítása](set-up-rfm-analysis.md)
 
 # Engedmények és ármódosítások
+## [Retail eladási ár kezelése](price-management.md)
 ## [Ármódosítások és engedmények](price-adjustments-discounts.md)
 ## [Átfedő engedmények optimális kombinációjának meghatározása](optimal-combination-overlapping-discounts.md)
 ## [Csatornaspecifikus engedmények definiálása](define-channel-specific-discounts.md)
@@ -138,17 +140,21 @@
 ## [Munkaerő szervezése részlegek, munkák és beosztások szerint](../talent/departments-jobs-positions.md)
 ## [Feladat összetevőinek beállítása](../talent/create-job.md)
 
-# ​Honosítási és szabályozó funkciók​
+# Honosítási és szabályozó funkciók​
+## Franciaország
+### [Pénztárgépek Franciaország esetében](localizations/emea-fra-cash-registers.md)
+### [Pénztárgépek telepítésére vonatkozó irányelvek Franciaország esetében](localizations/emea-fra-deployment.md)
 ## India
-### [GST integrációja pénztárgépekhez India esetében](localizations/apac-ind-cash-registers.md)
+### [GST integrációja pénztárgépekhez](localizations/apac-ind-cash-registers.md)
 ### [Pénztárgépek telepítésére vonatkozó irányelvek India esetében](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norvégia
 ### [Pénztárgépek Norvégia esetében](localizations/emea-nor-cash-registers.md)
 ### [Pénztárgépek telepítésére vonatkozó irányelvek Norvégia esetében](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Svédország
 ### [Pénztárgépek Svédország esetében](localizations/emea-swe-cash-registers.md)
+### [A Retail POS integrációja ellenőrzőegységekkel](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
-# Retail-feladatok
+# Retail feladatok
 ## [Termék létrehozása](../supply-chain/pim/tasks/create-product.md)
 ## [Összekapcsolt termékek konfigurálása](../supply-chain/pim/tasks/configure-linked-products.md)
 ## [Termék/alaptermék kiadása más jogi személyeknek](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
@@ -207,7 +213,7 @@
 ### [A Retail Store Scale Unit áttekintése](dev-itpro/retail-store-system-begin.md)
 ### [A Retail Store Scale Unit konfigurálása és telepítése](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [A Retail Modern POS konfigurálása és telepítése](retail-modern-pos-device-activation.md)
-### [Kiskereskedelmi számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
+### [Retail számlák és eszközök kezelése a központból](set-up-activation-accounts-validate-devices-hq.md)
 ### [Retail POS eszköz aktiválása](dev-itpro/retail-device-activation.md)
 ### [Retail Cloud POS biztosítása](dev-itpro/secure-retail-cloud-pos.md)
 ### [Retail Hardware Station konfigurálása és telepítése](retail-hardware-station-configuration-installation.md)
@@ -260,6 +266,7 @@
 ### [Elektronikus kereskedelmi platform SDK](dev-itpro/ecommerce-platform-sdk.md)
 
 ## Fizetési csatlakozó bővíthetősége
+### [Fizetés integrálása fizetési terminállal](dev-itpro/end-to-end-payment-extension.md)
 ### [Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Fizetési csatlakozó telepítése](dev-itpro/deploy-payment-connector.md)
 ### [Windows-telepítő létrehozása egy fizetési csatlakozóhoz](dev-itpro/create-windows-installer-payment-connector.md)
@@ -267,8 +274,9 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [A Retail szoftverfejlesztői készlet (SDK) integrálása a folyamatos buildrendszerrel](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [A Retail szoftverfejlesztői készlet (SDK) bővíthetőségi mintái](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Retail SDK-csomag](dev-itpro/retail-sdk/retail-sdk-packaging.md)
-### [Retail SDK-minták ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+### [Retail szoftverfejlesztői készlet (SDK) csomagja](dev-itpro/retail-sdk/retail-sdk-packaging.md)
+### [Retail szoftverfejlesztői készlet (SDK) mintái ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Szállítólevelek kiterjesztési pontjai](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [A csatornaadatbázis (DB) bővítményei](dev-itpro/channel-db-extensions.md)
 ### [CDX-bővíthetőség](dev-itpro/cdx-extensibility.md)
 ### [Rendelés attribútumai](dev-itpro/order-attributes.md)
