@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 57fc1c21394d91f6a8bd4726c9d948c8ae2cf4d0
+ms.sourcegitcommit: 8af424d1a1ce41316008649472c2b8748806c6d6
+ms.openlocfilehash: 0a76417e01b67b493b320973c14e059850ab772e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/25/2018
 
 ---
 
@@ -52,16 +52,12 @@ ms.lasthandoff: 04/13/2018
 
 <span data-ttu-id="6bfdd-116">A **táblázatos listák** szakaszban a számlázás állapotának bontása megegyezik az összesítés csempékével: Vázlat és Elküldött, jóváhagyással még nem rendelkező listák.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="6bfdd-117">Vázlat állapotban a számlát be lehet küldeni a munkafolyamatba, vagy törölni lehet.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="6bfdd-118">Az utolsó táblázatos lista a számlák keresésére szolgáló beállítás.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="6bfdd-119">A gyorsabb keresés érdekében lehetőség van a keresés közbeni szűrésre.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-119">You can filter as you search, to allow for faster searches.</span></span>
 
-<a name="all-vendor-invoices-list-page"></a><span data-ttu-id="6bfdd-120">Az összes szállítói számla listaoldal</span><span class="sxs-lookup"><span data-stu-id="6bfdd-120">All vendor invoices list page</span></span>
------------------------------
+### <a name="all-vendor-invoices-list-page"></a><span data-ttu-id="6bfdd-120">Az összes szállítói számla listaoldal</span><span class="sxs-lookup"><span data-stu-id="6bfdd-120">All vendor invoices list page</span></span>
 
 <span data-ttu-id="6bfdd-121">Minden feladott és feladatlan szállítói számla megtekinthető a **Szállítói együttműködési számlák** listaoldalon.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="6bfdd-122">A listaoldal segítségével a számlák fizetési állapota jeleníthető meg.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="6bfdd-123">A kifizetés állapota lehet Feladatlan, Kifizetetlen, Részben fizetve és Teljesen kifizetve.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
 <span data-ttu-id="6bfdd-124">Új számla létrehozása beszerzési rendelés alapján</span><span class="sxs-lookup"><span data-stu-id="6bfdd-124">Creating a new invoice from a purchase order</span></span>
---------------------------------------------
 
 <span data-ttu-id="6bfdd-125">Létrehozhat egy új szállítói számlát a következő kiválasztásával: **Új** a **Szállítói együttműködési számlázás** munkaterületen.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-125">You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace.</span></span> <span data-ttu-id="6bfdd-126">A beszerzési rendelés számát és számlaszámát a szállítónak kell megadnia.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-126">The purchase order number and invoice number must be provided by the vendor.</span></span> <span data-ttu-id="6bfdd-127">Alapértelmezés szerint a szállító beszerzési rendelésének összes sora meg fog jelenni az új számlán.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-127">By default, all of the lines from the vendor's purchase order will appear on the new invoice.</span></span> <span data-ttu-id="6bfdd-128">A mennyiség- és költségadatokat a szállítói számla munkafolyamatba küldése előtt lehet szerkeszteni.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-128">The quantity and cost information can be edited prior to submitting the vendor invoice to workflow.</span></span> <span data-ttu-id="6bfdd-129">A számlához a beküldése előtt fájlokat, megjegyzéseket, képeket és URL-címeket csatolhat.</span><span class="sxs-lookup"><span data-stu-id="6bfdd-129">You can attach files, notes, images, and URLs to an invoice before submitting it.</span></span>
-
-
 
 <span data-ttu-id="6bfdd-130">További tájékoztatás: [A külső szállítókkal történő szállítói együttműködés](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)</span><span class="sxs-lookup"><span data-stu-id="6bfdd-130">For more information, see [Vendor collaboration with external vendors](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)</span></span>
 
