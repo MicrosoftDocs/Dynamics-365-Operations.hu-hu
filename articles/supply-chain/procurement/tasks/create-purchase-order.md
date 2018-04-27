@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>Beszerzési rendelés létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan lehet manuálisan létrehozni beszerzési rendelést. Sokkal jobban megfigyelhető, hogy a rendszer az alaptervezés, a közvetlen kiszállítás és más folyamatok eredményeként automatikusan hozza létre a beszerzési rendeléseket. Általában a beszerzési ügynök hozza létre a beszerzési rendeléseket. Az itt bemutatott példát az USMF bemutatócégben használhatja a különböző lépések megjegyzéseiben javasolt értékek használatával.
 

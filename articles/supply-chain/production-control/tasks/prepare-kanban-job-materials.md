@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a>A feldolgozási kanbanfeladat előkészítése, amikor az anyagok elérhetők a munkacellához
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat a feldolgozási kanbanfeladat előkészítésével foglalkozik, amikor minden anyag elérhetők a munkacellához. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ezt a feladatot a gépkezelő használja.
 

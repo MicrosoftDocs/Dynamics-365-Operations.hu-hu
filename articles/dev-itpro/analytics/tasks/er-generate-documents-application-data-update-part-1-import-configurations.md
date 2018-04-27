@@ -1,5 +1,5 @@
 --- 
-title: "Konfigurációk importálása alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez (ER)"
+title: "Konfigurációk importálása dokumentumoknak alkalmazásadatokkal történő létrehozásához"
 description: "A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
-ms.openlocfilehash: 6a945eb6c733d760cc723bfa7135d73bdf502724
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 87352293a78d6a356db49deffb930016a1bf836c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="import-configurations-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Konfigurációk importálása alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez (ER)
+# <a name="import-configurations-to-generate-documents-with-application-data"></a>Konfigurációk importálása dokumentumoknak alkalmazásadatokkal történő létrehozásához
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit.
 

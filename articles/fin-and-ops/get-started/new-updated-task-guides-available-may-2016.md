@@ -18,24 +18,23 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: c42a7e50d6efb6408e480b50b3e520f5812aeb56
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Új vagy frissített feladat-útmutatók (2016. május)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk felsorolja a Microsoft Dynamics AX (2016. május – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár. 
 
 <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Feladat-útmutatók (2016. május - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
 ------------------------------------------------------------------------------------------------
 
-A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához és a Microsoft Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat. Az APQC egyesített könyvtárban kiadott (2016. február) Feladat-útmutatók honosított változatai ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md). **Megjegyzés**: Egy csillag (**\***) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics AX 2016. májusi frissítése számára készült, és a Microsoft Dynamics AX korábbi verzióiban nem támogatott.
+A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához és a Microsoft Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat. Az APQC egyesített könyvtárban kiadott (2016. február) Feladat-útmutatók honosított változatai ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md). <strong>Megjegyzés:</strong> Egy csillag (<strong>\</strong>*) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics AX 2016 májusi frissítése számára készült a Microsoft Dynamics AX korábbi verzióit nem támogatja.
 
 ### <a name="countryregion-functionality"></a>Ország/régió szerinti funkciók
 
@@ -63,15 +62,15 @@ A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics A
 
 ### <a name="electronic-reporting"></a>Elektronikus jelentés
 
-| BPM-sor                                                                   | Ország/régió |
+|                                  BPM-sor                                  | Ország/régió |
 |----------------------------------------------------------------------------|----------------|
-| ER - Célok konfigurálása                                                  | Globális         |
-| ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése         | Globális         |
-| ER – Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a formátumkonfiguráció segítségével | Globális         |
-| ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból                          | Globális         |
-| **\***ER - szolgáltató kiválasztása                                           | Globális         |
-| ER – A formátum frissítése ezen formátum új alap verziójának elfogadásával      | Globális         |
-| ER - A konfiguráció feltöltése a Lifecycle Services szolgáltatásba                          | Globális         |
+|                         ER - Célok konfigurálása                          |     Globális     |
+|     ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése     |     Globális     |
+| ER – Hozzon létre elektronikus dokumentumokat a kifizetésekre vonatkozóan a formátumkonfiguráció segítségével |     Globális     |
+|             ER - A konfiguráció importálása a Lifecycle Services szolgáltatásból              |     Globális     |
+|               <strong>\</strong>*ER - szolgáltató kiválasztása                |     Globális     |
+|   ER – A formátum frissítése ezen formátum új alap verziójának elfogadásával    |     Globális     |
+|             ER - A konfiguráció feltöltése a Lifecycle Services szolgáltatásba              |     Globális     |
 
 ### <a name="human-capital-management"></a>Emberierőforrás-menedzsment
 
@@ -177,17 +176,15 @@ A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics A
 
 ### <a name="warehouse-and-transportation"></a>Raktározás és szállítás
 
-| BPM-sor                                                            | Ország/régió |
-|---------------------------------------------------------------------|----------------|
-| A Hullámfeldolgozás konfigurálása                                           | Globális         |
-| **\***Készként történő jelentés egy nem azonosítótáblás szabályozású helyen | Globális         |
-| A minimum-maximum feltöltési folyamat beállítása                              | Globális         |
-| Tárolóra bontás beállítása                                             | Globális         |
-| A kézi csomagolás beállítása                                               | Globális         |
-| Egy elemre vonatkozó szállítási megszorítások beállítása                       | Globális         |
-| **\***A raktári munkairányelvek beállítása                                | Globális         |
-
-
+|                                     BPM-sor                                     | Ország/régió |
+|----------------------------------------------------------------------------------|----------------|
+|                            A hullámfeldolgozás konfigurálása                             |     Globális     |
+| <strong>\</strong>*Készként történő jelentés egy nem azonosítótáblás szabályozású helyen |     Globális     |
+|                      A minimum-maximum feltöltési folyamat beállítása                      |     Globális     |
+|                             Tárolóra bontás beállítása                              |     Globális     |
+|                              A kézi csomagolás beállítása                               |     Globális     |
+|                  Egy elemre vonatkozó szállítási megszorítások beállítása                   |     Globális     |
+|                <strong>\</strong>*Raktári munkairányelvek beállítása                 |     Globális     |
 
 <a name="see-also"></a>Lásd még
 --------

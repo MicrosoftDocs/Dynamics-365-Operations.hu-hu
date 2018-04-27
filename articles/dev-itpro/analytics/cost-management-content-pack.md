@@ -3,11 +3,12 @@ title: "Költségkezelési Power BI-tartalom"
 description: "Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelési Power BI-tartalom modul."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -19,124 +20,195 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: 6739d769c3f7876f67d80554743458b0abd5aae5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-management-power-bi-content"></a>Költségkezelési Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
+## <a name="overview"></a>Áttekintés
+
+A **Kezelési költség** Microsoft Power BI-tartalom készletkönyvelők, valamint a szervezeten belül a készletekért és a folyamatban lévő munkákért felelős vagy ez iránt érdeklődő, valamint elszámolóár-különbözetek elemzésével foglalkozó szakemberek számára készült.
 
 > [!Note]
-> A tartalomcsomag már elavult a [Power BI tartalmi csomagok közzététele a PowerBI.com webhelyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom) dokumentumban ismertetett módon.
+> A jelen témakörben bemutatott **Kezelési költség** Power BI tartalom a Dynamics 365 for Finance and Operations 8.0 verziójára vonatkozik.
+> 
+> A PowerBI.com webhelyen közzétett **Kezelési költség** Power BI-tartalomcsomag ezzel elavulttá vált. Az elavulttá válással kapcsolatos további tudnivalókat lásd: [Power BI tartalmi csomagok közzététele a PowerBI.com webhelyen](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
 
 
-Ez a témakör azt ismerteti, mit tartalmaz a Költségkezelési Power BI-tartalom modul. 
+Ez a Power BI-tartalom olyan kategorizált formátumot biztosít, amely segítséget nyújt a készletek teljesítményének figyelemmel kísérésében, és bemutatja a rajtuk átáramló költségeket. Ön vezetői betekintést nyerhet például a forgalom arányába, azon napok számába, amelyeken a készlet rendelkezésre áll, a pontosságba, a kívánt összesítési szinten (vállalat, cikk, cikkcsoport vagy telephely) elérhető „ABC-osztályozásba”. Az elérhető információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
 
-A **Kezelési költség** Microsoft Power BI tartalom készletkönyvelőknek vagy a szervezet azon dolgozóinak szól, akik a készletért felelősek. A **Költségkezelés** Power BI-tartalom betekintést biztosít a vezetők számára a készletbe és a befejezetlen termelés készletébe, illetve az ezeken belüli, kategóriánkénti költségáramlásba időalapú lebontásban. Az információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
+A Power BI-tartalom a **CostObjectStatementCacheMonthly** összesített mérésre épül, amely elsődleges adatforrásként a **CostObjectStatementCache** táblát használja. Ezt a táblát az Adathalmaz-gyorsítótár keretrendszere kezeli. Alapértelmezés szerint a tábla 24 óránként frissül, de a frissítési gyakoriság módosítható, illetve az adatkészlet gyorsítótárának konfigurációjában engedélyezheti a kézi frissítést is. A kézi frissítések a **Költségadminisztráció** munkaterületen vagy a **Költségelemzés** munkaterületen futtathatók.
 
-## <a name="key-measures"></a>Fő mérőszámok
+A **CostObjectStatementCache** tábla minden frissítése után a **CostObjectStatementCacheMonthly** összesített mérést frissíteni kell, mielőtt a Power BI megjelenítések adatai frissülnek.
 
-+ Nyitó egyenleg
-+ Záró egyenleg
-+ Nettó változás
-+ Nettó változás %-ban
-+ Korosítási
+## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
 
-## <a name="key-performance-indicators"></a>Fő teljesítménymutatók
-+ Készletforgás
-+ Készlet pontossága
+A **Kezelési költség** Power BI-tartalom szerepel a **Költségadminisztráció** és a **Költségelemzés** munkaterületeken.
 
-A CostAggregatedCostStatementEntryEntity elsődleges adatforrása a CostStatementCache táblában található. Ezt a táblát az Adathalmaz-gyorsítótár keretrendszere kezeli. Alapértelmezés szerint a tábla 24 óránként frissül, de az adatgyorsítótár konfigurációjában engedélyezheti a kézi frissítést is. Ezután a **Költségkezelés** vagy a **Költségelemzés** munkaterületen végezhet kézi frissítést. A CostStatementCache frissítésének futtatása után a frissített adatok a webhelyen történő megtekintéséhez frissítenie kell az OData kapcsolatot a Power BI.com-on. Az eltérési (beszerzés, termelés) mérőszámok ebben a Power BI-tartalomban csak azon elemekre vonatkoznak, amelyek értékelése Normál elszámolóár szerint történik. A termelési eltérés számítása az aktív és a realizált költség közötti különbség formájában történik. A gyártási eltérés kiszámítására akkor kerül sor, amikor a termelési rendelés állapota **Befejezve** lesz. További információért az eltérési típusokkal és az egyes típusok kiszámítási módját illetően lásd: [Befejezett termelési rendelés eltéréseinek elemzése](https://technet.microsoft.com/en-us/library/gg242850.aspx).
+A **Költségadminisztráció** munkaterület a következő lapokat tartalmazza:
+
+- **Áttekintés** – Ez a lap megjeleníti az alkalmazásadatokat.
+- **Könyvelési készletállapot** – Ez a lap Power BI-tartalmat jelenít meg.
+- **Gyártási könyvelés állapota** – Ez a lap Power BI-tartalmat jelenít meg.
+
+A **Költségelemzés** munkaterület a következő lapokat tartalmazza:
+
+- **Áttekintés** – Ez a lap megjeleníti az alkalmazásadatokat.
+- **Készletkönyvelés elemzése** – Ez a lap Power BI-tartalmat jelenít meg.
+- **Gyártási könyvelés elemzése** – Ez a lap Power BI-tartalmat jelenít meg.
+- **Elszámolóár-különbözet elemzése** – Ez a lap Power BI-tartalmat jelenít meg.
+
+## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentési oldalak
+
+A **Költségkezelés** Power BI-tartalom jelentési oldalakat is tartalmaz, amelyben mutatók sora található meg. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. 
+
+Az alábbi táblázatokban megtalálható a **Költségkezelés** Power BI-tartalom megjelenítési formáinak áttekintése.
+
+### <a name="inventory-accounting-status"></a>Készletkönyvelés állapota
+
+| Jelentéslap                               | Megjelenítés                                   |
+|-------------------------------------------|-------------------------------------------------|
+| Készlet – áttekintés                        | Nyitó egyenleg                               |
+|                                           | Nettó változás                                      |
+|                                           | Nettó változás %                                    |
+|                                           | Záró egyenleg                                  |
+|                                           | Készlet pontossága                              |
+|                                           | Készletforgalom aránya                        |
+|                                           | Napok száma, amióta a készlet rendelkezésre áll                          |
+|                                           | Aktív termék az időszakban                        |
+|                                           | Aktív költségobjektumok az időszakban                   |
+|                                           | Egyenleg cikkcsoportonként                           |
+|                                           | Egyenleg telephelyenként                                 |
+|                                           | Kimutatás kategóriánként                           |
+|                                           | Nettó változás negyedévenként                           |
+| Készlet áttekintése telephelyenként és cikkcsoportonként | Készlet pontossága telephely szerint                      |
+|                                           | Készletforgalom aránya telephelyenként                |
+|                                           | Készlet záróegyenlege telephelyenként                |
+|                                           | Készletpontosság cikkcsoportonként                |
+|                                           | Készletforgalom aránya cikkcsoportonként          |
+|                                           | Készlet záróegyenlege telephelyenként és cikkcsoportonként |
+| Készletkimutatás                       | Készletkimutatás                             |
+| Készletkimutatás telephelyenként               | Készletkimutatás telephelyenként                     |
+| Készletkimutatás termékhierarchia szerint  | Készletkimutatás                             |
+| Készletkimutatás termékhierarchia szerint  | Készletkimutatás telephelyenként                     |
+
+### <a name="manufacturing-accounting-status"></a>Gyártási könyvelés állapota
+
+| Jelentéslap                | Megjelenítés                       |
+|----------------------------|-------------------------------------|
+| Folyó évi befejezetlen termelés áttekintése           | Nyitó egyenleg                   |
+|                            | Nettó változás                          |
+|                            | Nettó változás %                        |
+|                            | Záró egyenleg                      |
+|                            | Befejezetlen termelés forgalmi aránya                  |
+|                            | Napok száma - rendelkezésre befejezetlen termelés                    |
+|                            | Aktív költségobjektum az időszakban        |
+|                            | Nettó változása erőforráscsoportonként        |
+|                            | Egyenleg telephelyenként                     |
+|                            | Kimutatás kategóriánként               |
+|                            | Nettó változás negyedévenként               |
+| folyamatban lévő munka kimutatás              | Nyitó egyenleg                   |
+|                            | Záró egyenleg                      |
+|                            | Befejezetlen termelési kimutatás kategóriánként           |
+| Befejezetlen termelési kimutatás telephelyenként      | Nyitó egyenleg                   |
+|                            | Záró egyenleg                      |
+|                            | Befejezetlen termelési kimutatás kategóriánként és telephelyenként  |
+| Befejezetlen termelési kimutatás hierarchiánként | Nyitó egyenleg                   |
+|                            | Záró egyenleg                      |
+|                            | Befejezetlen termelési kimutatás kategóriahierarchiánként |
+
+### <a name="inventory-accounting-analysis"></a>Készletkönyvelés elemzése
+
+| Jelentéslap        | Megjelenítés                                                                |
+|--------------------|------------------------------------------------------------------------------|
+| Készlet részletei  | A legjobb 10 erőforrás záróegyenleg szerint                                           |
+|                    | A legjobb 10 erőforrás nettó változásnövekedés szerint                                      |
+|                    | A legjobb 10 erőforrás nettó változáscsökkenés szerint                                      |
+|                    | A legjobb 10 erőforrás készletforgalom aránya szerint                                 |
+|                    | Erőforrások alacsony készletforgalmi arány és küszöbértéket meghaladó záróegyenleg szerint |
+|                    | Legjobb 10 erőforrás alacsony pontosság szerint                                             |
+| ABC-osztályozás | Készlet záróegyenlege                                                     |
+|                    | Felhasznált anyagok                                                            |
+|                    | Eladva (ELÁBÉ)                                                                  |
+| Készlettrendek   | Készlet záróegyenlege                                                     |
+|                    | Készlet nettó változása                                                         |
+|                    | Készletforgalom aránya                                                     |
+|                    | Készlet pontossága                                                           |
+
+### <a name="manufacturing-accounting-analysis"></a>Gyártási könyvelés elemzése
+
+| Jelentéslap | Megjelenítés      |
+|-------------|--------------------|
+| Befejezetlen termelési trendek  | Befejezetlen termelés záró egyenlege |
+|             | Befejezetlen termelés nettó változása     |
+|             | Befejezetlen termelés forgalmi aránya |
+
+### <a name="std-cost-variance-analysis"></a>Elszámolóár-különbözet elemzése
+
+| Jelentéslap                             | Megjelenítés                                        |
+|-----------------------------------------|------------------------------------------------------|
+| Folyó évi beszerzési árkülönbözet (elszámolóár) | Beszerzett egyenleg                                     |
+|                                         | Beszerzési árkülönbözet                              |
+|                                         | Beszerzési árkülönbözeti arány                        |
+|                                         | Eltérés cikkcsoportonként                               |
+|                                         | Eltérés telephelyenként                                     |
+|                                         | Beszerzési ár negyedévenként                            |
+|                                         | Beszerzési ár negyedévenként és cikkcsoportonként             |
+|                                         | A legjobb 10 erőforrás kedvezőtlen beszerzésiár-arány szerint |
+|                                         | A legjobb 10 erőforrás kedvező beszerzésiár-arány szerint   |
+| Folyó évi termelési különbözet (elszámolóár)     | Gyártási költség                                    |
+|                                         | Termelési különbözet                                  |
+|                                         | Termelési különbözeti arány                            |
+|                                         | Eltérés cikkcsoportonként                               |
+|                                         | Eltérés telephelyenként                                     |
+|                                         | Termelési különbözet negyedévenként                       |
+|                                         | Termelési különbözet negyedévenként és eltéréstípus szerint     |
+|                                         | A legjobb 10 erőforrás kedvezőtlen termelési különbözet szerint  |
+|                                         | A legjobb 10 erőforrás kedvező termelési különbözet szerint    |
+
+### <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
+
+A **Kezelési költség** Power BI-tartalom jelentési oldalainak adatai a Microsoft Dynamics 365 for Finance and Operations rendszerből származnak. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL Server-adatbázis. További tudnivalókért lásd: [A Power BI integrációja az entitástárral](power-bi-integration-entity-store.md).
+
+A következő objektumok a kulcsfontosságú összesítő mértékei a Power BI-tartalom alapjául szolgálnak.
+
+| Objektum                          | Kulcs összesítő mértékek | Adatforrás a Finance and Operationsnél | Mező               |
+|---------------------------------|----------------------------|----------------------------------------|---------------------|
+| CostObjectStatementCacheMonthly | Összeg                     | CostObjectStatementCache               | Összeg              |
+| CostObjectStatementCacheMonthly | Mennyiség                   | CostObjectStatementCache               | Mennyiség                 |
+| CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
+| CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
+
+Az alábbi táblázat bemutatja a legfontosabb számított mértékeket a Power BI-tartalomban.
+
+| Méret                            | Számítás |
+|------------------------------------|-------------|
+| Nyitó egyenleg                  | Nyitó egyenleg = [Záró egyenleg]-[Nettó változás] |
+| Nyitó egyenleg menny.             | Nyitó egyenleg menny. = [Záró egyenleg menny.]-[Nettó változás menny.] |
+| Záró egyenleg                     | Záró egyenleg = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
+| Záró egyenleg menny.                | Záró egyenleg menny. = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
+| Nettó változás                         | Nettó változás = SUM([AMOUNT]) |
+| Nettó változás menny.                    | Nettó változás menny. = SUM([QTY]) |
+| Készletforgalom aránya összegenként | Készletforgalom aránya összegenként = if(OR([Készlet átlagos egyenlege] \<= 0, [Értékesített vagy felhasznált készlet problémák] \>= 0), 0, ABS([Értékesített vagy felhasznált készlet problémák])/[Készlet átlagos egyenlege]) |
+| Készlet átlagos egyenlege          | Készlet átlagos egyenlege = (([Záró egyenleg] + [Nyitó egyenleg]) / 2) |
+| Napok száma, amióta a készlet rendelkezésre áll             | Napok száma, amióta a készlet rendelkezésre áll = 365 / CostObjectStatementEntries[Készletforgalom aránya összegenként] |
+| Készlet pontossága                 | Készletpontosság összeg alapján = IF([Záró egyenleg] \<= 0, IF(OR([Készlet leltározott mennyisége] \<\> 0, [Záró egyenleg] \< 0), 0, 1), MAX(0, ([Záró egyenleg] - ABS([Készlet leltározott mennyisége]))/[Záró egyenleg])) |
+
+Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőként szolgálnak az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
-A tartalom jelentési oldalak készletét tartalmazza. Minden oldal több metrikát tartalmaz, amelyek diagramok, mozaikok, táblázatok formájában jeleníthetők meg. Az alábbi táblázatban a **Költségkezelés** Power BI-tartalom megjelenítési formáinak áttekintése található.
-
-| Jelentéslap | Diagramok | Beosztások |
-|---|---|---|
-|Teljes készlet (alapértelmezés szerint az aktuális időszakra) |Pontosság |Készlet mérőszámai:<br>Készlet záróegyenlege<br>Készlet nettó változása<br>Készlet nettó változása %<br>|
-| |Készletforgás | |
-| |Készlet záró egyenlege erőforráscsoportonként | |
-| |Készlet nettó változása 1. Kategórianév-szint és 2. Kategórianév-szint alapján| |
-| |Beszerzési eltérések Erőforráscsoportonként és 3. Kategórianév-szint alapján | |
-|Készlet telephelyenként (alapértelmezés szerint az aktuális időszakra) |Készlet záró egyenlege Telephely neve és Erőforráscsoport alapján | |
-| |Készletforgás Telephely neve és Erőforráscsoport alapján | |
-| |Készlet záró egyenlege Városonként és Erőforráscsoportonként | |
-|Készlet erőforráscsoportonként (alapértelmezés szerint az aktuális időszakra) |Készlet mérőszámai | |
-| |Készlet összegszerű pontossága erőforráscsoportonként | |
-| |Készletforgás összegszerűen erőforráscsoportonként | |
-|Készlet egy éves időszak szerint (alapértelmezetten folyó év vs előző év) |Készlet mérőszámai | |
-| |Készlet teljesítménymutatói:<br>Készletforgás<br>Készlet pontossága | |
-| |Készlet záró egyenlege Évenként és Erőforráscsoportonként | |
-| |Beszerzési eltérések Évenként és 3. Kategórianév-szint alapján | |
-|Készlet korosítás (alapértelmezés szerint a folyó évre) |Készlet korosítása Negyedévenként és Erőforrás-csoportonként | |
-| |Készlet korosítása Negyedévenként és Telephelynevenként | |
-|Teljes befejezetlen termelés (alapértelmezés szerint az aktuális időszakra) |Befejezetlen termelés nettó változása 1. Kategórianév-szint és 2. Kategórianév-szint alapján |Folyamatban lévő munka befejezetlen termelés mérőszámai:<br>Befejezetlen termelés záró egyenlege<br>Befejezetlen termelés nettó változása<br>Befejezetlen termelés nettó változása %<br> |
-| |Termelési eltérések Erőforráscsoportonként és 3. Kategórianév-szint alapján | |
-| |Befejezetlen termelés nettó változása Erőforráscsoportonként | |
-|Befejezetlen termelés telephelyenként (alapértelmezés szerint az aktuális időszakra) |Folyamatban lévő munka befejezetlen termelés mérőszámai | |
-| |Befejezetlen termelés nettó változása Telephelynevenként és 2. Kategórianév-szint alapján | |
-| |Termelési eltérések Telephelynevenként és 3. Kategórianév-szint alapján | |
-
-## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-A **Költségkezelés** Power BI-tartalom jelentési oldalainak feltöltésére a Finance and Operations adatai szolgálnak. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL-adatbázis. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md). A következő fő összesítő mértékek szolgálnak a tartalom alapjaként.
-
-| Entitás            | Fő összesítő mérték | Adatforrás a Finance and Operationsnél | Mező             | Leírás                       |
-|-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
-| Kimutatási bejegyzések | Nettó változás                | CostAggregatedCostStatementEntryEntity      | sum(\[Összeg\])   | Összeg a könyvelési pénznemben |
-| Kimutatási bejegyzések | Nettó változás mennyisége       | CostAggregatedCostStatementEntryEntity      | sum(\[Mennyiség\]) |                                   |
-
-A következő táblázat azt mutatja, hogyan használjuk a fő összesített mértékeket számos számított mérték létrehozására a tartalom adathalmazában.
-
-| Méret                                 | A mérőszám kiszámításának módja                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nyitó egyenleg                       | \[Záró egyenleg\]-\[Nettó változás\]                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Nyitóegyenleg mennyisége              | \[Záró egyenleg mennyisége\]-\[Nettó változás mennyisége\]                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Záró egyenleg                          | CALCULATE(SUM(\[Összeg\]), FILTER(ALLEXCEPT('Pénzügyi naptárak', 'Pénzügyi naptárak'\[LedgerRecId\], 'entitások'\[Azonosító\], 'entitások'\[Név\], 'Főkönyvek'\[Pénznem\], 'Főkönyvek'\[Leírás\], 'Főkönyvek'\[Név\]), 'Pénzügyi naptárak'\[Dátum\] &lt;= MAX('Pénzügyi naptárak'\[Dátum\])))                                                                                                                                                                                           |
-| Záró egyenleg mennyisége                 | CALCULATE(SUM(\[Mennyiség\]), FILTER(ALLEXCEPT('Pénzügyi naptárak', 'Pénzügyi naptárak'\[LedgerRecId\], 'entitások'\[Azonosító\], 'entitások'\[Név\], 'Főkönyvek'\[Pénznem\], 'Főkönyvek'\[Leírás\], 'Főkönyvek'\[Név\]), 'Pénzügyi naptárak'\[Dátum\] &lt;= MAX('Pénzügyi naptárak'\[Dátum\])))                                                                                                                                                                                         |
-| Készlet nyitóegyenlege             | CALCULATE(\[Nyitóegyenleg\], 'Kimutatási bejegyzések'\[Kimutatási típus\] = "Készlet")                                                                                                                                                                                                                                                                                                                                                                                      |
-| Készlet záróegyenlege                | CALCULATE(\[Záróegyenleg\], 'Kimutatási bejegyzések'\[Kimutatási típus\] = "Készlet")                                                                                                                                                                                                                                                                                                                                                                                         |
-| Készlet nettó változása                    | CALCULATE(\[Nettó változás\], 'Kimutatási bejegyzések'\[Kimutatási típus\] = "Készlet")                                                                                                                                                                                                                                                                                                                                                                                             |
-| Nettó készletváltozás mennyisége           | CALCULATE(\[Nettó változás mennyisége\], 'Kimutatási bejegyzések'\[Kimutatási típus\] = "Készlet")                                                                                                                                                                                                                                                                                                                                                                                    |
-| Készlet nettó változása %                  | IF (\[Készlet záróegyenlege\] = 0, 0, \[Készlet nettó változása\] / \[Készlet záróegyenlege\])                                                                                                                                                                                                                                                                                                                                                                           |
-| Készletforgás összeg alapján                | if(OR(\[Készlet átlagos egyenlege\] &lt;= 0, \[Értékesített vagy felhasznált készlet problémák\] &gt;= 0), 0, ABS(\[Értékesített vagy felhasznált készlet problémák\])/\[Készlet átlagos egyenlege\])                                                                                                                                                                                                                                                                                                  |
-| Készlet átlagos egyenlege               | (\[Készlet záróegyenlege\] + \[Készlet nyitóegyenlege\]) / 2                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Értékesített vagy felhasznált készlet problémák       | \[Eladott készlet\] + \[Készletből felhasznált anyagköltség\]                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Készletből felhasznált anyagköltség        | CALCULATE(\[Készlet nettó változása\], 'Kimutatási bejegyzések'\[Kategórianév - 2. szint\_\] = "ConsumedMaterialsCost")                                                                                                                                                                                                                                                                                                                                                            |
-| Értékesített készlet                          | CALCULATE(\[Készlet nettó változása\], 'Kimutatási bejegyzések'\[Kategórianév - 2. szint\_\] = "Értékesítve")                                                                                                                                                                                                                                                                                                                                                                             |
-| Készletpontosság összeg alapján            | IF(\[Készlet záróegyenlege\] &lt;= 0, IF(OR(\[Készlet leltározott mennyisége\] &lt;&gt; 0, \[Készlet záróegyenlege\] &lt; 0), 0, 1), MAX(0, (\[Készlet záróegyenlege\] - ABS(\[Készlet leltározott mennyisége\]))/\[Készlet záróegyenlege\]))                                                                                                                                                                                                                              |
-| Készlet leltározott mennyisége                | CALCULATE(\[Készlet nettó változása\], 'Kimutatási bejegyzések'\[Kategórianév - 3. szint\_\] = "Leltár")                                                                                                                                                                                                                                                                                                                                                                         |
-| Készlet korosítása                         | if(ISBLANK(max('Pénzügyi naptárak'\[Dátum\])), blank(), MAX(0, MIN(\[Készletkorosítási bevételezések mennyisége\], \[Készletkorosítási záróegyenleg mennyisége\] - \[Jövőbeli készletkorosítási bevételezések mennyisége\]))) \* \[Készlet átlagos egységköltsége\]                                                                                                                                                                                                                                |
-| Készletkorosítási bevételezések mennyisége       | IF(\[minDate\] = \[minDateAllSelected\], CALCULATE(\[Nettó készletváltozás mennyisége\], 'Kimutatási bejegyzések'\[Mennyiség\] &gt; 0, FILTER(ALLEXCEPT('Pénzügyi naptárak', 'Pénzügyi naptárak'\[LedgerRecId\], 'entitások'\[Azonosító\], 'entitások'\[Név\], 'Főkönyvek'\[Pénznem\], 'Főkönyvek'\[Leírás\], 'Főkönyvek'\[Név\]), 'Pénzügyi naptárak'\[Dátum\] &lt;= MAX('Pénzügyi naptárak'\[Dátum\]))), CALCULATE(\[Nettó készletváltozás mennyisége\], 'Kimutatási bejegyzések'\[Mennyiség\] &gt; 0)) |
-| Készletkorosítási záróegyenleg mennyisége | \[Készletkorosítási záróegyenleg mennyisége\] + CALCULATE(\[Nettó készletváltozás mennyisége\], FILTER(ALLEXCEPT('Pénzügyi naptárak', 'Pénzügyi naptárak'\[LedgerRecId\], 'entitások'\[ID\], 'entitások'\[Név\], 'Főkönyvek'\[Pénznem\], 'Főkönyvek'\[Leírás\], 'Főkönyvek'\[Név\]), 'Pénzügyi naptárak'\[Dátum\] &gt; max('Pénzügyi naptárak'\[Dátum\]) ))                                                                                                                                 |
-| Jövőbeli készletkorosítási bevételezések  | CALCULATE(\[Készlet nettó változása\], 'Kimutatási bejegyzések'\[Összeg\] &gt; 0, FILTER(ALLEXCEPT('Pénzügyi naptárak', 'Pénzügyi naptárak'\[LedgerRecId\], 'entitások'\[ID\], 'entitások'\[Név\], 'Főkönyvek'\[Pénznem\], 'Főkönyvek'\[Description\], 'Főkönyvek'\[Név\]), 'Pénzügyi naptárak'\[Dátum\] &gt; MAX('Pénzügyi naptárak'\[Dátum\])))                                                                                                                                             |
-| Készlet átlagos egységköltsége                 | CALCULATE(\[Készlet záróegyenlege\] / \[Készletkorosítási záróegyenleg mennyisége\],ALLEXCEPT('Pénzügyi naptárak', 'Pénzügyi naptárak'\[LedgerRecId\], 'entitások'\[Azonosító\], 'entitások'\[Név\], 'Főkönyvek'\[Pénznem\], 'Főkönyvek'\[Leírás\], 'Főkönyvek'\[Név\]))                                                                                                                                                                                                                 |
-| Beszerzési eltérések                      | CALCULATE(SUM(\[Összeg\]), 'Kimutatási bejegyzések'\[Kategórianév - 2. szint\_\] = "Beszerezve", 'Kimutatási bejegyzések'\[Kimutatás típusa\] = "Eltérés")                                                                                                                                                                                                                                                                                                                              |
-| Befejezetlen termelés nyitóegyenlege                   | CALCULATE(\[Nyitóegyenleg\], 'Kimutatási bejegyzések'\[Kimutatási típus\] = "Befejezetlen termelés")                                                                                                                                                                                                                                                                                                                                                                                            |
-| Befejezetlen termelés záróegyenlege                      | CALCULATE(\[Záróegyenleg\], 'Kimutatási bejegyzések'\[Kimutatási típus\] = "Befejezetlen termelés")                                                                                                                                                                                                                                                                                                                                                                                               |
-| Befejezetlen termelés nettó változása                          | CALCULATE(\[Nettó változás\], 'Kimutatási bejegyzések'\[Kimutatási típus\] = "Befejezetlen termelés")                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Befejezetlen termelés nettó változása %                        | IF(\[Befejezetlen termelés záróegyenlege\] = 0, 0, \[Befejezetlen termelés nettó változása\] / \[Befejezetlen termelés záróegyenlege\])                                                                                                                                                                                                                                                                                                                                                                                             |
-| Termelési különbözetek                    | CALCULATE(SUM(\[Összeg\]), 'Kimutatási bejegyzések'\[Kategórianév - 2. szint\_\] = "ManufacturedCost", 'Kimutatási bejegyzések'\[Kimutatás típusa\] = "Eltérés")                                                                                                                                                                                                                                                                                                                      |
-| Kategórianév - 1. szint                 | switch(\[Kategórianév - 1. szint\_\], "Nincs", "Nincs", "NetSourcing", "Nettó forrás", "NetUsage", "Nettó forrás", "NetConversionCost", "Nettó átalakítási költség", "NetCostOfGoodsManufactured", "Gyártott áruk nettó költsége", "BeginningBalance", "Nyitóegyenleg")                                                                                                                                                                                                         |
-| Kategórianév - 2. szint                 | switch(\[Kategórianév - 2. szint\_\], "None", "Nincs", "Procured", "Beszerezve", "Disposed", "Kivezetve", "Transferred", "Átvive", "Sold", "Eladva", "ConsumedMaterialsCost", "Felhasznált anyagköltség", "ConsumedManufacturingCost", "Felhasznált gyártási költség", "ConsumedOutsourcingCost", "Felhasznált kiszervezési költség", "ConsumedIndirectCost", "Felhasznált közvetett költség", "ManufacturedCost", "Gyártási költség", "Variances", "Eltérések")                            |
-| Kategórianév - 3. szint                 | switch(\[Kategórianév - 3. szint\_\], "None", "Nincs", "Counting", "Nincs", "ProductionPriceVariance", "Előállítási ár", "QuantityVariance", "Mennyiség", "SubstitutionVariance", "Helyettesítés", "ScrapVariance", "Selejt", "LotSizeVariance", "Adagméret", "RevaluationVariance", "Átértékelés", "PurchasePriceVariance", "Beszerzési ár", "CostChangeVariance", "Költségváltozás", "RoundingVariance", "Kerekítési különbözet")                                                   |
-
-A következő fő dimenziók szolgálnak szűrőként az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
-
-| Entitás           | Példák attribútumokra                       |
-|------------------|----------------------------------------------|
-| Entitások         | Azonosító, név                                     |
-| Pénzügyi naptárak | Naptár, hónap, időszak, negyedév, év       |
-| KPI-célok        | Készletpontossági cél, készletforgási cél |
-| Főkönyvek          | Pénznem, név, leírás                  |
-| Telephelyek            | Azonosító, név, ország, város                      |
-
-
-
-
+|                         Entitás                          |             Példák az attribútumok              |
+|---------------------------------------------------------|-------------------------------------------------|
+|                        Termékek                         | Termékszám, Termék neve, Egység, Cikkcsoportok |
+| Kategóriahierarchiák (Költségkezelői szerepkörhöz rendelve) |       Kategóriahierarchia, Kategória szintje        |
+|                     Jogi személyek                      |               Jogi személyek nevei                |
+|                    Pénzügyi naptárak                     |  Pénzügyi naptár, év, negyedév, időszak, hónap  |
+|                          Telephely                           |        Azonosító, név, cím, állam, ország        |
 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supply-chain-management-home-page"></a>Az ellátási lánc kezelése kezdőlap
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza. 
 

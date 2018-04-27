@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc2fa16a44b6421d56e9cb662cfaa26da5b1c5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a>Munkalebontási struktúrák
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A munkalebontási struktúra (WBS), a projektben elvégzendő munka leírása. Ez egy feladatokból álló hierarchia, amely a projektcsapat munka-összeállításra vonatkozó elképzeléseit tükrözi, és az egyes komponensek és feladatok méretét, költségét és időtartamát. A WBS-nek három fő célja van:
 
@@ -115,7 +115,7 @@ Az ütemezés becslése általában a WBS létrehozásának második lépése. L
 
 Az előzmények nélküli levélcsomópont kezdődátuma automatikusan a projektütemezés kezdő dátumára lesz állítva. Levélcsomópont-feladat időtartamának számítása mindig a kezdő és záró dátum közötti munkanapok száma alapján történik. 
 
-****Ütemezési szabályok**** Ha az automatikus ütemezési támogatás be van kapcsolva, a következő szabályok érvényesek feladatütemezésre a levélcsomópont-feladatok esetében:
+*<strong><em>Ütemezési szabályok</em></strong>* Ha az automatikus ütemezési támogatás be van kapcsolva, a következő szabályok érvényesek feladatütemezésre a levélcsomópont-feladatok esetében:
 
 -   A projekt ütemezési naptára szerint a feladat kezdő és záró dátumainak munkanapnak kell lenniük.
 -   Az előzményekkel rendelkező feladat kezdési dátuma automatikusan az előzmények legkésőbbi dátuma lesz.

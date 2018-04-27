@@ -26,7 +26,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="welcome-to-human-resources"></a>Emberi erőforrások - Üdvözöljük!
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Az Emberi erőforrások modul segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezenkívül keretet biztosít a HR-szakemberek felügyeleti területeinek kezeléséhez. Ezen területek magukba foglalják a toborzást és a megtartást, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést.
 

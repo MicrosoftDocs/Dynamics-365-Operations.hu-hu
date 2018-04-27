@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy szállítási ütemezést egy beszerzési rendeléshez. A szállítási ütemezés akkor használatos, ha egy rendeléshez vagy egy naplóhoz tartozó mennyiséget több részletben kell elszállítani. Az útmutatóban mutatott példa használható az USMF demo adatok cégben. Ezt az eljárást általában a beszerzési ügynök végzi el.
 

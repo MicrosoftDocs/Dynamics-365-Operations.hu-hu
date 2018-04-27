@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions"></a>Pénzügyi dimenziók
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja a pénzügyi dimenziók különféle típusait és azok beállításának módját.
 

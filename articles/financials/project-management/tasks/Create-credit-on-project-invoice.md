@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a>Jóváírás létrehozása projektszámlán
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 1. Ugorjon a Projektvezetés és könyvelés > Projektek > Minden projekt pontra. 
 2. Keresse meg és jelölje ki a kívánt rekordot a listán. 

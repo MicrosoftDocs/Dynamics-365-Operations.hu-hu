@@ -19,16 +19,18 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 19d725f15f00afce1a2ae4b336226f1dafa94b41
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cf35406b43c1ec40a7c248b970559b65fcd8a6c6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-workflows-for-expense"></a>Munkafolyamatok beállítása költségekhez
 
-[!include[banner](../includes/banner.md)] Beállíthat egy munkafolyamatot, amelynek a használatával áttekintheti és jóváhagyhatja az utazások és a költségek dokumentumait. A dokumentumok, amelyekhez munkafolyamatokat lehet adni, többek között magukban foglalják a költségjelentéseket, az utazási igényléseket és a készpénzelőleg-igényléseket.
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Beállíthat egy munkafolyamatot, amelynek a használatával áttekintheti és jóváhagyhatja az utazások és a költségek dokumentumait. A dokumentumok, amelyekhez munkafolyamatokat lehet adni, többek között magukban foglalják a költségjelentéseket, az utazási igényléseket és a készpénzelőleg-igényléseket.
 
 A munkafolyamat egy üzleti folyamatot jelent. Meghatározza, hogy hogyan halad végig egy dokumentum a rendszeren keresztül, és megmutatja, kinek kell elvégznie a feladatot és jóváhagynia a dokumentumot. A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:
 
@@ -42,13 +44,15 @@ A munkafolyamat egy üzleti folyamatot jelent. Meghatározza, hogy hogyan halad 
 
 Az alábbi táblázatban a **Költség** modulban létrehozható munkafolyamatok típusai szerepelnek.
 
-| **Típus**                           | **Típus**                                                 |     
-|------------------------------------|----------------------------------------------------------------------|
-| **Költségjelentés**                 | Jóváhagyási munkafolyamatok létrehozása a költségjelentésekhez.                       |      
-| **Költségjelentés automatikus feladása**    | Hozzon létre automatikus dokumentumfeladási munkafolyamatokat a költségjelentésekhez.              |     
-| **Költségsortétel**              | Jóváhagyási munkafolyamatok létrehozása a költségjelentések sortételeihez.         |     
-| **Költségsortétel automatikus feladása** | Automatikus feladási munkafolyamatok létrehozása a költségjelentések sortételeihez.|
-| **Utazási igénylés**             | Jóváhagyási munkafolyamatok létrehozása az utazási igénylésekhez.                   |    
-| **Készpénzelőleg-igénylés**           | Hozza létre a készpénzelőleg-igénylések jóváhagyási munkafolyamatait.                 |     
-| **Áfa-visszaigénylés**               | Hozzon létre munkafolyamatokat az áfa-visszaigénylések jóváhagyására. |       
+
+|              <strong>Típus</strong>              |                   <strong>Típus</strong>                   |
+|-------------------------------------------------|-----------------------------------------------------------------------|
+|         <strong>Költségjelentés</strong>         |            Jóváhagyási munkafolyamatok létrehozása a költségjelentésekhez.             |
+|  <strong>Költségjelentés automatikus feladása</strong>   |        Hozzon létre automatikus dokumentumfeladási munkafolyamatokat a költségjelentésekhez.        |
+|       <strong>Költségsortétel</strong>        |     Jóváhagyási munkafolyamatok létrehozása a költségjelentések sortételeihez.      |
+| <strong>Költségsortétel automatikus feladása</strong> | Automatikus feladási munkafolyamatok létrehozása a költségjelentések sortételeihez. |
+|       <strong>Utazási igénylés</strong>       |          Jóváhagyási munkafolyamatok létrehozása az utazási igénylésekhez.           |
+|      <strong>Készpénzelőleg-igénylés</strong>      |         Hozza létre a készpénzelőleg-igénylések jóváhagyási munkafolyamatait.          |
+|        <strong>Áfa-visszaigénylés</strong>        | Hozzon létre munkafolyamatokat az áfa-visszaigénylések jóváhagyására.  |
+
 

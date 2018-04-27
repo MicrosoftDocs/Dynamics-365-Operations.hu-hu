@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="copy-service-templates-lines"></a>Szolgáltatási sablonok sorainak másolása 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A sablonadatokat be lehet másolni szolgáltatási szerződésbe vagy szervizrendelésbe.
 

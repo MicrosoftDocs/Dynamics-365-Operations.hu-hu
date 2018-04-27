@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Értékelési rendelések szinkronizálása közvetlenül a Sales és a Finance and Operations között
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, amelyek a Microsoft Dynamics 365 for Sales és a Microsoft Dynamics 365 for Finance and Operations közötti közvetlen szinkronizálásra használhatók az értékesítési rendelések esetében.
 

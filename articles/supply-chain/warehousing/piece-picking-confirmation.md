@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="piece-picking-confirmation"></a>Darab kitárolásának megerősítése
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A darabkitárolás lehetővé teszi, hogy minden egyes készletet mobileszközön végzett kitárolási vagy leltározási munka segítségével hagyjon jóvá. A kitároláshoz megersítheti a feldolgozandó munka mennyiségét a kitárolni kívánt mennyiségére vonatkoztatva. Leltározási munka esetén beolvashatja a leltározandó készletet, és nyomon követheti a teljes mennyiséget.
 
@@ -46,8 +46,10 @@ A darabkitárolás minden leltározási munka esetén és bármilyen munkatípus
 
 A következő lehetőségek közül választhat, ha a munka típusa kitárolás vagy leltározás.
 
-| Lehetőség        | Leírás   | 
-| ------------- | ------------- |
-| Darab kitárolásának megerősítése   | Elérhető kitárolási és leltározási munkatípusok esetében. A termék megerősítése automatikusan be van jelölve. Lehetővé teszi, hogy a mobileszközről erősítse meg a készlet minden elemét. | 
-| Darabok maximális száma     | Elérhető kitárolási munkához, ha a darabkitárolás megerősítése engedélyezve van. Beállítja a megerősítendő darabszám maximális értékét. |  
+
+|           Lehetőség           |                                                                            Leírás                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Darab kitárolásának megerősítése | Elérhető kitárolási és leltározási munkatípusok esetében. A termék megerősítése automatikusan be van jelölve. Lehetővé teszi, hogy a mobileszközről erősítse meg a készlet minden elemét. |
+|  Darabok maximális száma  |                   Elérhető kitárolási munkához, ha a darabkitárolás megerősítése engedélyezve van. Beállítja a megerősítendő darabszám maximális értékét.                   |
+
 

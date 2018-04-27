@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8b226fe4a6300cecfefdc8f4a5e3c0c82d6c625e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 317f361cbd7d63a1017cfa085afee80a5c67e0eb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-an-open-ended-question"></a>Kifejtős kérdés létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat. Azt megszabhatja, hogy a válasz szám, decimális, dátum, megjegyzés vagy más legyen. Ez az eljárás végigvezeti egy speciális kérdéstípus, a kifejtős kérdés létrehozásának folyamatán. Az eljárás megkezdéséhez ugorjon a Kérdőív > Tervezés > Kérdések lehetőségre. Ez az eljárás az USMF bemutatócéget használja.
 

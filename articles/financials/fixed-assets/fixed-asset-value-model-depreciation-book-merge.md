@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Tárgyi eszközök értékmodellje és az értékcsökkenési könyv egyesítése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek. A Microsoft Dynamics 365 for Operations 1611-es változatában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv.
 

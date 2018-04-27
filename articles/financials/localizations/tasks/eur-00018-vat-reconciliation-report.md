@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="vat-reconciliation-report"></a>Áfaegyeztetési jelentés
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan készíthető el az izlandi és norvég jogalanyok számára rendelkezésre álló Adóegyeztetési jelentés. Ez a feladat a DEMF bemutatócég adatainak segítségével jött létre, a jogi személy székhelyének országát/régióját Norvégiára állítottuk.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Idők hozzárendelése egy feladatköteg feladataihoz
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A gyártásvégrehajtásban kötegelhetők a feladatok. Egyszerre több feladatot is elkezdhet a feladatlista lapon.
 

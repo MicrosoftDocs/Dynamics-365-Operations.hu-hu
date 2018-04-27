@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduce-balance-depreciation"></a>Degresszív értékcsökkenés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk az értékcsökkenés egyenleg csökkentő módszeréről nyújt tájékoztatást.
 
@@ -80,7 +79,7 @@ A Degresszív módszerrel az értékcsökkenés alapjának (nettó könyv szerin
 | 2. év | (7000-1000) \* 30% = 1800            | (7000 -1800) = 5200                |
 | 3. év | (5200-1000) \* 30% = 1260            | (5200 - 1260) = 3940               |
 
- 
+
 -
 
 

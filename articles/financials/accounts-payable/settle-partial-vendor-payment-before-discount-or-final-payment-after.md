@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik.
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk egy olyan esetet mutat be, ahol több részfizetés is történt: néhány a készpénzfizetési engedmény időszakán belül, a többi pedig a készpénzfizetési engedmény időszakán kívül.
 

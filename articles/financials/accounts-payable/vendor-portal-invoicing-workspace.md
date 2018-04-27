@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Szállítói együttműködési számlázás munkaterület
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan tekintheti meg a szállítói számlákat, és hogyan küldheti be a számlákat a szállítói együttműködési számlázás munkaterületen.
 
@@ -53,16 +52,12 @@ Kattintson egy csempére, és megnyílik a **Számlalisták** lap szűrt nézete
 
 A **táblázatos listák** szakaszban a számlázás állapotának bontása megegyezik az összesítés csempékével: Vázlat és Elküldött, jóváhagyással még nem rendelkező listák. Vázlat állapotban a számlát be lehet küldeni a munkafolyamatba, vagy törölni lehet. Az utolsó táblázatos lista a számlák keresésére szolgáló beállítás. A gyorsabb keresés érdekében lehetőség van a keresés közbeni szűrésre.
 
-<a name="all-vendor-invoices-list-page"></a>Az összes szállítói számla listaoldal
------------------------------
+### <a name="all-vendor-invoices-list-page"></a>Az összes szállítói számla listaoldal
 
 Minden feladott és feladatlan szállítói számla megtekinthető a **Szállítói együttműködési számlák** listaoldalon. A listaoldal segítségével a számlák fizetési állapota jeleníthető meg. A kifizetés állapota lehet Feladatlan, Kifizetetlen, Részben fizetve és Teljesen kifizetve.
 Új számla létrehozása beszerzési rendelés alapján
---------------------------------------------
 
 Létrehozhat egy új szállítói számlát a következő kiválasztásával: **Új** a **Szállítói együttműködési számlázás** munkaterületen. A beszerzési rendelés számát és számlaszámát a szállítónak kell megadnia. Alapértelmezés szerint a szállító beszerzési rendelésének összes sora meg fog jelenni az új számlán. A mennyiség- és költségadatokat a szállítói számla munkafolyamatba küldése előtt lehet szerkeszteni. A számlához a beküldése előtt fájlokat, megjegyzéseket, képeket és URL-címeket csatolhat.
-
-
 
 További tájékoztatás: [A külső szállítókkal történő szállítói együttműködés](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 

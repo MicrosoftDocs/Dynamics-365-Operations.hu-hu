@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Kötelező konfigurációk létrehozása külső fájlból történő adatok importálásához az elektronikus jelentéskészítésben (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy elektronikus jelentés (ER) konfigurációt adatok importálására a Dynamics 365 for Finance and Operations alkalmazásba külső fájlból. Ebben a példában létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő feladat-útmutató lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” A lépések a USMF-adathalmazzal hajthatók végre. Emellett le kell tölteni és helyben menteni kell a következő fájlokat az Elektronikus jelentések áttekintése témakör hivatkozásainak (https://go.microsoft.com/fwlink/?linkid=852550): használatával: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 

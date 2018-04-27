@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-procurement-catalog"></a>Beszerzési katalógus létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az segédlet bemutatja, hogyan lehet beszerzési katalógust létrehozni. Ezt a feladatot tipikusan egy beszerzési szakember végzi el. Azt is megtudhatja, hogy hogyan használhatják az alkalmazottak a katalógust egy igénylést létrehozásakor. Katalógus létrehozása előtt már kell egy beszerzési kategória hierarchiával rendelkeznie a rendszerben. Az új katalógussal örökli a hierarchiát, minden olyan termékkel együtt, ami a hierarchiában benne van. Használhatja ezt a segédletet az USMF bemutató adatok vállalatban, ahol a beszerzési kategóriák hierarchiája rendelkezésre áll, ugyanúgy, mint az eljárásban használt példák.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="view-financial-reports"></a>Pénzügyi jelentések megtekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja, hogy hogyan tekintheti meg és hogyan böngészheti a Microsoft Dynamics 365 for Finance and Operations rendszer pénzügyi jelentéseit. Azokról a különféle beállítási lehetőségekről nyújt tájékoztatást, amelyek segítségével módosíthatja a pénzügyi jelentések megjelenését, illetve a bennük lévő adatokat.
 

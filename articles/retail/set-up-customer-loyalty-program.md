@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-customer-loyalty-program"></a>A vásárlói hűségprogramok beállítása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók.
 

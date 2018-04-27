@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul. A súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák. 
 

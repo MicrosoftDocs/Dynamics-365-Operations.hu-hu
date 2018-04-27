@@ -25,8 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>Pénzügyi igazgatói áttekintés Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)] 
 
 Ez a témakör a **Pénzügyi igazgatói áttekintés** Microsoft Power BI-tartalmat ismerteti. Ez a Power BI tartalom azokra vonatkozik, akik a Microsoft Dynamics 365 for Finance and Operations 7.2-es verzióját használják. Ha a 7.3-as vagy újabb verziót használja, olvassa el [Pénzügyi információk](financial-insights.md) pontot.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="invoice-issue-deadline"></a>Számlakibocsátás határideje
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja, hogy hogyan állíthatja be az Európai Unió (EU) területén belüli vevői és szállítói számlák kibocsátási határidejének kiszámításához használt paramétereket.
 

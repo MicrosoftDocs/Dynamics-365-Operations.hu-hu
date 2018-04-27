@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="unit-of-measure-and-stocking-policies"></a>Mértékegység és rakodási irányelvek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk leírja, hogy az alapértelmezett egységek, egységsorozatok és egységátváltások hogyan vannak felhasználva a raktári folyamatokban.
 

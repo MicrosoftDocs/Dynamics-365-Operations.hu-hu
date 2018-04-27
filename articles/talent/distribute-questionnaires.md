@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Kérdőívek terjesztése és kitöltése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A témakör leírja, hogyan terjesztheti a megtervezett kérdőíveket, hogy azok csak a kijelölt személy vagy csoportok számára legyenek elérhetők. 
 

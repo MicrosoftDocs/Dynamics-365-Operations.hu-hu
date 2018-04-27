@@ -1,5 +1,5 @@
 --- 
-title: "Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához az elektronikus jelentéskészítéshez (ER)"
+title: "Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához"
 description: "Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat elektronikus jelentési (ER) formátumot jelentések létrehozásához OPENXML munkalap (Excel) fájlok formájában, amelyekben a szükséges oszlopok vízszintesen bővíthető tartományokként, dinamikusan hozhatók létre."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1ccf3b2d81066fce80fe14428fab24020ab85496
-ms.openlocfilehash: b921b5ff51f951112031fe8b1bc2faa90cf29a28
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d9c3cf17cd406a50a9f92e78991289f9139d7c73
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához az elektronikus jelentéskészítéshez (ER)
+# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports"></a>Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat elektronikus jelentési (ER) formátumot jelentések létrehozásához OPENXML munkalap (Excel) fájlok formájában, amelyekben a szükséges oszlopok vízszintesen bővíthető tartományokként, dinamikusan hozhatók létre. Ezeket a lépéseket bármely vállalatban végrehajthatja.
 
@@ -36,7 +36,7 @@ A lépések végrehajtásához először hajtsa végre ezt a három feladat-útm
 
 „ER Pénzügyi dimenziók használata adatforrásként (2. rész: Modell hozzárendelése)”
 
-Ki kell töltenie és mentenie kell a sablon helyi másolatát az itt található mintajelentéssel [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
+A sablon helyi példányát is le kell töltenie és mentenie, egy mintajelentés itt található, [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
 
 
 Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.

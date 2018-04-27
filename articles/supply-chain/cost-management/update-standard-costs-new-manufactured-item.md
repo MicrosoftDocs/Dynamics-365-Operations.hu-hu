@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Újonnan gyártott cikkek elszámoló árának frissítése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a leírás az újonnan gyártott cikkek alapköltségeinek frissítéséhez nyújt útmutatást. 
 

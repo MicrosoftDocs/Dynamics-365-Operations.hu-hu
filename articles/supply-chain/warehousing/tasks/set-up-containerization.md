@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-containerization"></a>Tárolóra bontás beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás azt mutatja be, hogy hogyan lehet automatizálni a szállítmányok tárolóra bontását a Raktárkezelésben. Az automatizált tárolóra bontás folyamat tárolókat és a szállítmányok kitárolási munkáját hozza létre, amikor a rendszer feldolgozza a hullámot és amikor a munkasorokat a tárolókhoz illeszkedő mennyiségekre lehet felosztani. Ez megkönnyíti a raktári dolgozóknak a cikkek egyenesen a kiválasztott tárolóba történő kitárolását. A kézi csomagolási folyamathoz képest olyan feladatok, mint például a tárolók létrehozása, a cikkek társítása, és a rendszer által automatizált tárolók lezárása. Ez az eljárás az USMF bemutató vállalatot használja, amelyet a raktárvezető végez.
 

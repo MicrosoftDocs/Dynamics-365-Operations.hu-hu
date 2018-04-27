@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="position-budgeting-troubleshooting"></a>Beosztás-költségvetéskészítés hibaelhárítása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk olyan kérdésekre ad választ, amelyek a beosztás-költségvetés elkészítésekor merülhetnek fel. A költségvetési költségösszetevők, kompenzációs csoportok és a kompenzációs rácsok létrehozásával kapcsolatban leggyakrabban feltett kérdéseket tárgyalja. 
 

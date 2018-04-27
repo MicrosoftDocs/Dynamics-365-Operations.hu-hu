@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Alvállalkozói munkacella létrehozása a lean manufacturing szolgáltatáshoz
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A lean manufacturing feladatokhoz alvállalkozásba adott munka modellezése érdekében létre kell hoznia egy olyan munkacellát, amely a munkát nyújtó szállítóhoz van társítva. Az alvállalkozói munkacella a szállítóhoz a Szállító típusa erőforrásának társításán keresztül kapcsolódik. Ha ezt a felvételt lejátssza az USMF bemutató vállalat esetében, kiválaszthatja az 1002-es azonosítóval és az 1-es hellyes rendelkező szállítói számlát.
 

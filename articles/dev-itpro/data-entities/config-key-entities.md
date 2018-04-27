@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurációs kulcsok és adatentitások
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mielőtt adatentitásokat használna az adatok importálására vagy exportálására, javasoljuk, hogy először határozza meg a konfigurációs kulcsok hatását a használni kívánt adatentitásokra. 
 

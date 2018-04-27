@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cycle-counting"></a>Ciklikus leltározás
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk leírja, hogyan használhatja a ciklikus leltározást a raktározási megoldással, amely a Raktárkezelésben érhető el. A cikk nem vonatkozik a raktározási megoldásra, amely a Készletkezelés modulból érhető el.
 

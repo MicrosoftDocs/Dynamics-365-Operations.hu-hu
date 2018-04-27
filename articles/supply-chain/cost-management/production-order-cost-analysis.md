@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-analysis"></a>Termelési rendelés költségelemzése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a befejezett és az aktuális termelési rendelésekhez tartozó elvégezhető költségelemzéssel kapcsolatban tartalmaz tájékoztatást. Az Árkalkuláció lap vagy a Költségbecslés és kalkulációk jelentés használatával elemezheti a becsült költségeket és a tényleges költségeket. A becsült és tényleges költségekkel (és mennyiségekkel) kapcsolatos információkat tekinthet meg minden összetevő cikknél, az útvonalműveletnél, és a közvetett költségnél.
 

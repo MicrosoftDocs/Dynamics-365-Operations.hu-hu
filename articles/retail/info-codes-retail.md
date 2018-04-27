@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="info-codes"></a>Infókódok
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a cikk áttekintést nyújt az infókódokról, az infókód-csoportokról és azok használatáról.
 
@@ -52,7 +51,7 @@ A Dynamics 365 for Retail szolgáltatásban infókódok csoportjait hozhatja lé
 
 **2. példa: Infókód-csoportok infókódokhoz történő csatolása** Egyes termékek, például mobileszközök eladása esetén bizonyos adatokat kell mindig összegyűjtenie, mint például a telefonszám, mozgó berendezés azonosítója (MEID) és sorozatszám. Ugyanakkor érdemes különböző adatokat összegyűjtenie a tabletekkel és mobiltelefonokkal kapcsolatban. Beállíthat egy infókód-csoportot, amely utasításokat tartalmaz a telefonszámra, MEID azonosítóra és a sorozatszámra vonatkozóan, majd az infókód-csoportokat az egyes infókódokhoz csatolja. Ha termékspecifikus infókód kiváltása történik, az infókód-csoport kiváltása lehet a következő, hogy lehetővé tegye a gyakori adatok gyűjtését anélkül, hogy minden egyes eszközre több csatolt infókódot kellene meghatároznia.
 
- 
+
 
 
 

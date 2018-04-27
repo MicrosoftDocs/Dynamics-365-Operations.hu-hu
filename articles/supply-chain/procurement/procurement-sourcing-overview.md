@@ -28,8 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>A Beszerzés és forrás modul áttekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk áttekintést nyújt a beszerzés és forrás modulban elérhető funkciókról.
 
@@ -39,7 +38,7 @@ A Beszerzés és forrás modul kezeli az összes lépést a termék- és szolgá
 A termékre vagy szolgáltatásra vonatkozó igény felmerülhet *igénylések* következtében, például amikor egy alkalmazottnak szüksége van egy adott termékre. Létre tud hozni *Termékkatalógusokat* a rendelkezésre álló termékek közül történő választás elősegítése érdekében, illetve nyújthat be igénylést a katalógusból még nem elérhető termékek kapcsán, ily módon téve lehetővé, hogy a beszerzési részleg megvizsgálja a termék beszállításának lehetőségét.  
 
 *Költekezési határok* segítségével tudja korlátozni az igénylésekhez kapcsolódó költéseket, a *beszerzési munkafolyamat* pedig lehetővé teszi, hogy a megrendelés végrehajtása jóváhagyáshoz legyen kötve. Szükség esetén tud megadni költségvetésialap-felosztásokat is.  
-  
+
 A beszerzési részleg azonosítja a szükséges termékek és szolgáltatások lehetséges szállítóit, mely alapján elképzelhetően *ajánlatkérést* küld több potenciális szállító részére. Lehetőség nyílik az igénylendő termék specifikációinak megosztására, a potenciális szállítók pedig meg tudják tekinteni ezeket, és ellenőrizni tudják, hogy képesek-e azoknak megfelelő terméket szállítani le. A szállítók visszaküldik az ajánlataikat, melyeket a beszerzési részleg elbírál, majd kiválasztja a beszerzés céljából használni kívánt szállítót.  
 
 A beszerzési rendelések tartalmaznak egy olyan lehetőséget, amely, az átfogóbb ajánlatkérési folyamat helyett, egy *beszerzési értesítőt* küld ki a szállítóknak. A beszerzési értesítő az olyan feltételek feltérképezését szolgálja, mint az ár, az engedmények, illetve a rendelés leszállítási dátuma. Amennyiben a szállítókat úgy állítja be, hogy azok a **Szállítói** portált használják, úgy nem aktív a beszerzési értesítő funkció. Ebben az esetben a rendelés a**Szállítói** portálon kerül megosztásra, a *visszaigazolási kérés* kiküldését követően pedig a szállító képes közvetlenül visszaigazolni a rendelést.  

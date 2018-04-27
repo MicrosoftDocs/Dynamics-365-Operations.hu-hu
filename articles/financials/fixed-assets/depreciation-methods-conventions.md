@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>Értékcsökkenési módszerek és szabályok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk betekintést nyújt a Microsoft Dynamics 365 for Finance and Operations által támogatott értékcsökkenési szabályokba és az értékcsökkenési metódusokba.
 
@@ -62,7 +61,7 @@ A következő értékcsökkenési módok közül választhat.
 -   150% degresszív
 -   125% degresszív
 
- 
+
 
 
 

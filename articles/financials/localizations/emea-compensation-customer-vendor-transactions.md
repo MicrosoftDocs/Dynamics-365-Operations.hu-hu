@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="set-up-customer-and-vendor-compensation"></a>Vevői és szállítói kompenzáció beállítása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör olyan információkat nyújt, amelyek segítségével lefuttathatja a kompenzációs folyamatot az olyan szállítói és vevőszámlák esetében, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
 

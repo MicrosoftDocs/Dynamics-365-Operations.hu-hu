@@ -1,5 +1,5 @@
 --- 
-title: "Konfigurációk tervezése Microsoft Office formátumban beágyazott képekkel készítendő jelentések létrehozásához az elektronikus jelentéskészítéshez (ER) (1. rész)"
+title: "Konfigurációk tervezése jelentések készítéséshez Microsoft Office formátumokban, beágyazott képekkel"
 description: "E témakör lépései azt mutatják be, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk Microsoft Office formátumokban (Excelben és Wordben) beágyazott képeket tartalmazó elektronikus dokumentumok létrehozására."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5e3ba5c76df3dcc5042074a565d102ceaeeadfb0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Konfigurációk tervezése Microsoft Office formátumban beágyazott képekkel készítendő jelentések létrehozásához az elektronikus jelentéskészítéshez (ER) (1. rész) 
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images"></a>Konfigurációk tervezése jelentések készítéséshez Microsoft Office formátumokban, beágyazott képekkel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. Ez az eljárás bemutatja, hogyan tervezhetők elektronikus jelentési (ER) konfigurációk beágyazott képeket tartalmazó Microsoft Excel vagy Word-dokumentumok létrehozására. Ebben az eljárásban a szükséges ER konfigurációkat a Litware, Inc. mintavállalathoz hozza létre. Ezek a lépések az USMF adatkészlet segítségével tölthetők be. Ez az eljárás a rendszergazda vagy az elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. Mielőtt elkezdené, töltse le és mentse el a [Képek és alakzatok beágyazása az Elektronikus jelentéskészítés eszköz által generált üzleti dokumentumokba](../electronic-reporting-embed-images-shapes.md) súgótémában felsorolt fájlokat. A fájlok: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png és Cheque template Word.docx.
 

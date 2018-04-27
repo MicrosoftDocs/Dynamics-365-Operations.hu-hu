@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-fraud-alerts"></a>Csalással kapcsolatos figyelmeztetések beállítása
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör azt ismerteti, hogyan lehet kritériumokat és szabályokat létrehozni a potenciálisan csaló értékesítési megrendelések lefoglalására további ellenőrzés céljából. A csalás felülvizsgálatának funkciója meghatározza az információ érvényességét egy értékesítési megbízásban. Ha az értékesítési rendelésben szereplő információk a szervezet csalási kritériumai és szabályai alapján megkérdőjelezhetőnek tűnnek, akkor a megrendelést egy rendszergazda további felülvizsgálatra bocsátja.
 

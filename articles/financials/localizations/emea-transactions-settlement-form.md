@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>A kelet-európai elszámolási tranzakciók megtekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a vevők és szállítók Elszámolási tranzakciók lapjával kapcsolatosan tartalmaz információkat.
 

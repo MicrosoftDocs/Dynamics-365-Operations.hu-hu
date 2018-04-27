@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="vendor-payment-overview"></a>Szállítói fizetési áttekintés
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladatútmutató végigvezeti a szállítói kifizetések létrehozásához használt különböző módszereken, többek között a fizetési javaslat használatán, vagy egy egyszeri fizetés manuális rögzítésén. Ez az eljárás az USMF bemutatócéget használja.
 

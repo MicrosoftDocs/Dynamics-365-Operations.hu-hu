@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-scheduling-options"></a>A műveletek ütemezésének beállításai
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja a műveletek ütemezési beállításait. A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról.
 

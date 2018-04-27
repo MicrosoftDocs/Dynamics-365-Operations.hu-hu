@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduction-keys"></a>Csökkentési kulcsok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk az csökkentési kulcs beállítását bemutató példákat tartalmaz. Tartalmaz információkat a különböző csökkentési kulcs beállításokról és azok eredményéről. A csökkentési kulcsot használhatja az előrejelzési követelmények csökkentésének módjának meghatározásához.
 
@@ -39,17 +38,19 @@ Ez a cikk az csökkentési kulcs beállítását bemutató példákat tartalmaz.
 
 Csökkentési kulcs az előrejelzési követelmények csökkentése a százalékok és az időszakok alapján történik, amelyeket a csökkentési kulcs definiál.
 
-1.  A **Csökkentési kulcsok** lapon állítsa be a következő sorokat.
-    | Módosítás | Egység  | Százalék |
-    |--------|-------|---------|
-    | 1      | Hónap | 100     |
-    | 2      | Hónap | 75      |
-    | 3      | Hónap | 50      |
-    | 4      | Hónap | 25      |
+1. A **Csökkentési kulcsok** lapon állítsa be a következő sorokat.
 
-2.  Hivatkozás a csökkentési kulcsot a cikk fedezeti csoporthoz.
-3.  A **Alaptervek** az oldalon a **Csökkentési elv** mezőben válassza ki **Százalék - csökkentési kulcs**.
-4.  Hozzon létre egy havi 1000 darabos értékesítési előrejelzést.
+   | Módosítás | Egység  | Százalék |
+   |--------|-------|---------|
+   |   1    | Hónap |   100   |
+   |   2    | Hónap |   75    |
+   |   3    | Hónap |   50    |
+   |   4    | Hónap |   25    |
+
+
+2. Hivatkozás a csökkentési kulcsot a cikk fedezeti csoporthoz.
+3. A **Alaptervek** az oldalon a **Csökkentési elv** mezőben válassza ki **Százalék - csökkentési kulcs**.
+4. Hozzon létre egy havi 1000 darabos értékesítési előrejelzést.
 
 Ha előrejelzési ütemezést január 1-jén futtatja, az igény-előrejelzés követelményeinek felhasználása a százalékokat, amelyek a beállítása a **Csökkentési kulcsok** oldalon. Az alábbi mennyiségi követelések kerülnek az alaptervbe.
 
@@ -88,20 +89,21 @@ Ugyanazt a havi 1000 darabos értékesítési előrejelzést alkalmazva az aláb
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>3. példa: Tranzakciók dinamikus periódus előrejelzés csökkentési elv
 A legtöbb esetben rendszerek vannak beállítva, hogy a tranzakciók csökkenti az igény-előrejelzés egyedi előrejelzési időszakokon belül: hét, hónap, és így tovább. A csökkentési kulcs határozza meg ezeket az időszakokat. Ugyanakkor két között eltelt idő igény-előrejelzési sort is *Jelenti* egy időszakot.
 
-1.  Hozzon létre egy igény-előrejelzés a következő dátumokat és mennyiségeket.
-    | Dátum       | Igény-előrejelzés |
-    |------------|-----------------|
-    | Január 1.  | 1000           |
-    | Január 5.  | 500             |
-    | Január 12. | 1000           |
+1. Hozzon létre egy igény-előrejelzés a következő dátumokat és mennyiségeket.
 
-    Ez előrejelzésben, nincs időszak törlése a következő előre jelzett dátum között: az első és második dátum között nincs négy nappal az az időtartam, és a második és harmadik dátum között van az az időtartam hét nap. A különböző kiterjed a dinamikus időszakok lesznek.
-2.  Értékesítésirendelés-sorok létrehozása.
-    | Dátum                             | Eladási árhoz kapcsolódó mennyiség |
-    |----------------------------------|----------------------|
-    | December 15-re vonatkozóan az előző év | 500                  |
-    | Január 3.                        | 100                  |
-    | Január 10.                       | 200                  |
+   | Dátum       | Igény-előrejelzés |
+   |------------|-----------------|
+   | Január 1.  | 1000           |
+   | Január 5.  | 500             |
+   | Január 12. | 1000           |
+
+   Ez előrejelzésben, nincs időszak törlése a következő előre jelzett dátum között: az első és második dátum között nincs négy nappal az az időtartam, és a második és harmadik dátum között van az az időtartam hét nap. A különböző kiterjed a dinamikus időszakok lesznek.
+2. Értékesítésirendelés-sorok létrehozása.
+   | Dátum                             | Eladási árhoz kapcsolódó mennyiség |
+   |----------------------------------|----------------------|
+   | December 15-re vonatkozóan az előző év | 500                  |
+   | Január 3.                        | 100                  |
+   | Január 10.                       | 200                  |
 
 Az előrejelzés csökken a következőképpen történik:
 

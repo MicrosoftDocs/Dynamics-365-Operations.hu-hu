@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="new-task-guides-february-2016"></a>Új feladatútmutatók (2016. február)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics AX APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
 
@@ -50,8 +49,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása       | Globális             |
 | Szállítói számla irányelveinek beállítása                            | Globális             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a>Kinnlevőségek
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata                              | Globális             |
 | Kinnlevőségek korosítási adatainak beállítás és létrehozása   | Globális             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a>Készpénz- és bankkezelés
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Vevő által kiállított, jövőben esedékes csekk kiegyenlítése                             | Globális             |
 | Szállítói fizetési áttekintés                                              | Globális             |
 
- 
 
+ 
 ### <a name="compliance"></a>Megfelelés
 
 |                                            |                    |
@@ -108,8 +107,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | **BPM Sor**                               | **Ország/Terület** |
 | Naplózási házirendek meghatározása a forrásbizonylatok számára | Globális             |
 
- 
 
+ 
 ### <a name="cost-management"></a>Költségkezelés
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Jelenlegi WIP állapot megtekintése egy termelési rendelésen                       | Globális             |
 | Készletkimutatás és költségobjektumonkénti KPI megtekintése                     | Globális             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a>Ország/Terület szolgáltatás
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | GB-00009 Jóváírás létrehozása a kiegyenlítési engedményre                                               | Egyesült Királyság                  |
 | GB-00009Jóváírási paraméterek beállítása azonnali fizetési engedményhez                                   | Egyesült Királyság                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a>Jövőkép és stratégia kialakítása
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | A kérdés függővé tétele az előző kérdésre adott választól (Feltételes kérdések) | Globális             |
 | Százalékszámon alapuló kérdőív értékelése                                                   | Globális             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a>Elektronikus jelentés
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | ER - adatmodell leképezése a kiválasztott adatforrásokra      | Globális             |
 | ER - szolgáltató kiválasztása                      | Globális             |
 
- 
 
+ 
 ### <a name="expense-management"></a>Költséggazdálkodás
 
 |                              |                    |
@@ -298,8 +297,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | **BPM Sor**                 | **Ország/Terület** |
 | Költségkezelés konfigurálása | Globális             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a>Tárgyi eszközök
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Tárgyi eszköz felosztása                                       | Globális             |
 | Tárgyi eszköz áthelyezése                                    | Globális             |
 
- 
 
+ 
 ### <a name="general-ledger"></a>Főkönyv
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Naplóbejegyzések vagy tranzakciók megtekintése                              | Globális             |
 | Naplóból kapcsolódó vállalatközi bizonylat megtekintése                    | Globális             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a>Emberierőforrás-menedzsment
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Juttatásra való jogosultsági irányelvek beállítása                             | Globális             |
 | I9 dokumentumtípusok beállítása                                     | Globális             |
 
- 
 
+ 
 ### <a name="inventory-management"></a>Készletgazdálkodás
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Egy cikk vagy egy alapanyag nyomon követése                                                     | Globális             |
 | Tényleges készlet áthelyezése raktáron belül                                  | Globális             |
 
- 
 
+ 
 ### <a name="manufacturing"></a>Gyártás
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Anyagok átvitele Kanban-feladatokkal                            | Globális             |
 | Termelési folyamat és verzió érvényesítése                          | Globális             |
 
- 
 
+ 
 ### <a name="master-planning"></a>Alaptervezés
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Kritikus fontosságú anyagok és a szállítói kapacitás meghatározása | Globális             |
 | Igény-előrejelzés manuális módosítása                 | Globális             |
 
- 
 
+ 
 ### <a name="organization-administration"></a>Szervezeti adminisztráció
 
 |                                           |                    |
@@ -501,8 +500,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Az elektronikus aláírások beállítása              | Globális             |
 | Állítson be minden szükséges számsorozatot a varázsló segítségével | Globális             |
 
- 
 
+ 
 ### <a name="planning"></a>Tervezés
 
 |                        |                    |
@@ -510,8 +509,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | **BPM Sor**           | **Ország/Terület** |
 | Elérhetőség megállapítása | Globális             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a>Beszerzés és forrás
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Szállítók keresése                                               | Globális             |
 | Beszerzési kategóriahierarchia beállítása                          | Globális             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a>Termékinformáció és konfiguráció.
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | ..\ pénzügyi dimenziókon \ dimenziókon alapuló alaptermék közzététele              | Globális             |
 | Termékmodellekhez szükséges adatok továbbítása                      | Globális             |
 
- 
 
+ 
 ### <a name="public-sector"></a>Állami szektor
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Alaptípus beállítása az állami szektor részére                                                         | Globális             |
 | Beszerzési szerződés osztályozásainak beállítása az állami szektor számára                             | Globális             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a>Kiskereskedelem és kereskedelem
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Kiskereskedelmi ármódosítások                                                                  | Globális             |
 | Konfiguráció tárolása kiskereskedelmi kimutatásokhoz                                                | Globális             |
 
- 
 
+ 
 ### <a name="sales"></a>Értékesítés
 
 |                                            |                    |
@@ -642,8 +641,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Szállítási rendelés közvetlen kiszállításként           | Globális             |
 | Értékesítési rendelések szállítása raktározás nélkül      | Globális             |
 
- 
 
+ 
 ### <a name="sales-tax"></a>Forgalmi adó
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Adóelőleg beállítása                             | Globális             |
 | Feladott áfatranzakciók megtekintése                 | Globális             |
 
- 
 
+ 
 ### <a name="security"></a>Biztonság
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása | Globális             |
 | Feladatkörök szétválasztásának beállítása                            | Globális             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a>Raktározás és szállítás
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 | A szállítmányozók beállítása                                                          | Globális             |
 | Rakománytervezési munkaterület használata a rakományok és szállítmányok tervezésére                       | Globális             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Feladat-útmutatók (február 2016) az Első lépések könyvtár
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM Sor**                                       | **Ország/Terület** |

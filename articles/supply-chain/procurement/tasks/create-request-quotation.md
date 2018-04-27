@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-request-for-quotation"></a>Ajánlatkérés létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja az ajánlatkérés létrehozásának módját. Ez általában egy beszerzési ügynök által történik. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. A kezdés előtt be kell állítania a meghirdetési típusokat. Miután befejezte ezt a feladatot, és létrehozta, illetve elküldte az Ajánlatkérést, megadhatja ezt követően szállítónként a válaszokat, összehasonlíthatja azokat, és hozzá rendelheti a szerzősédhez.
 

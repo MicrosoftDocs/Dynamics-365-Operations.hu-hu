@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>Bevételkimutatás pénzügyi jelentés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a bevételkimutatások alapvető jelentését írja le. Emellett a jelentéshez tartozó építőelemeket is leírja. 
 
@@ -60,7 +59,7 @@ Az oszlopdefiníciók tartalmaznak különböző típusú oszlopokot, a különb
     -   **FD** – Az aktuális időszak pénzügyi adatai
     -   **FD** – Pénzügyi év adatai, a mai napig.
 
- 
+
 
 <a name="see-also"></a>Lásd még
 --------

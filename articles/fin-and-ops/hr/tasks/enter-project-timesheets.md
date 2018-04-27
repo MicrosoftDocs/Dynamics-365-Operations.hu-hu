@@ -17,15 +17,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 17195b28ebe828423b4e5bb862f5c2e9884471ce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-project-timesheets"></a>Projekt időnyilvántartásának megadása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezen folyamat segítségével létrehozhat egy munkaidő-nyilvántartást egy üres munkaidő-nyilvántartási képernyő felhasználásával. Az új munkaidő-nyilvántartás egy előző munkaidő-nyilvántartás adatain, vagy a Kedvenceim oldalon található projekt- és tevékenység-hozzárendelések adatain alapulhat. Alapértelmezés szerint az Összes munkaidő-nyilvántartás listaoldal minden munkaidő-nyilvántartást megjelenít az aktuális időszakra. A Saját időnyilvántartások oldalon a Megjelenítés mező legördülő listája használható a munkaidő-nyilvántartások listájának szűrésére időszak vagy projekt alapján, vagy más munkavállalók nevében létrehozott időnyilvántartások megjelenítésére. Ez az eljárás a USSI bemutatócéggel jött létre. Ennek az eljárásnak a megkezdéséhez ugorjon a Projektvezetési és könyvelési > Munkaidő-nyilvántartások > Saját időnyilvántartások pontra
 

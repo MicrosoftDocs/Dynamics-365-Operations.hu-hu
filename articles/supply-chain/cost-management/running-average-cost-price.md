@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="running-average-cost-price"></a>Mozgóátlagon alapuló önköltségi ár
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 A készletzárási folyamat a cikk cikkmodellcsoportjában kiválasztott készletértékelési módszer alapján a kiadási tranzakciókat a bevételezési tranzakciókkal szemben egyenlíti ki. Azonban, a készletzárás futtatása előtt a rendszer kiszámít egy mozgóátlagon alapuló önköltségi árat, amely általában a bevételi tranzakciók feladásakor kerül felhasználásra.
 

@@ -23,21 +23,21 @@ ms.contentlocale: hu-hu
 ms.lasthandoff: 09/29/2017
 
 ---
-# Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet
+# <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat a már meglévő tranzakciók alapján és ezután frissítse a cikkfedezetet a javaslatokkal. Ebben az esetben a biztonsági készlet naplóját használja. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez a feladat a termeléstervezőnek van fenntartva, hogy segítse a minimális fedezet fenntartását.
 
 
-## Hozzon létre egy új biztonsági készlet napló nevet
+## <a name="create-a-new-safety-stock-journal-name"></a>Hozzon létre egy új biztonsági készlet napló nevet
 1. Menjen a Biztonsági készlet naplók neveihez.
 2. Kattintson az Új lehetőségre.
 3. A Név mezőbe írja be: típus „Anyag”.
 4. A Leírás mezőbe írja be: típus „Anyag”.
 5. Zárja be a lapot.
 
-## Hozzon létre egy biztonsági készlet naplót
+## <a name="create-a-safety-stock-journal"></a>Hozzon létre egy biztonsági készlet naplót
 1. Menjen a Biztonsági készlet számításához.
 2. Kattintson az Új lehetőségre.
 3. A Név mezőben adjon meg vagy válasszon ki egy értéket.
@@ -51,7 +51,7 @@ Adjon meg egy dátumot a Kezdő dátum mezőben.
 7. Kattintson az OK gombra.
     * Ez hoz létre sorokat a készlettranzakciókkal rendelkező dimenziókhoz.  
 
-## Javaslat számítása
+## <a name="calculate-proposal"></a>Javaslat számítása
 1. Kattintson a Javaslat számítására.
 2. Válassza az Átlagos kiadás használata az átfutási idő alatt lehetőséget.
 3. A szorzótényezőt állítsa „10”-re.
@@ -59,7 +59,7 @@ Adjon meg egy dátumot a Kezdő dátum mezőben.
 4. Kattintson az OK gombra.
     * Görgessen le, hogy megtalálja M0002 és M0003 értékeket. Tekintse meg a Kiszámított minimum mennyiség oszlopot.   
 
-## Frissítse a minimum mennyiséget
+## <a name="update-minimum-quantity"></a>Frissítse a minimum mennyiséget
 1. Az Új minimum mennyiség mezőben adjon meg egy számot.
     * Frissítse az Új minimum mennyiségét, hogy az megegyezzen a Számított minimális mennyiséggel. Ha a Számított minimum értéke nulla, megadhatja jövőbeli kívánt értékét. Például megadhatja a Kiszámított minimum mennyiséget ebbe a mezőbe az M0002-höz, akié a 12-es raktár.  
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
@@ -67,7 +67,7 @@ Adjon meg egy dátumot a Kezdő dátum mezőben.
 3. Az Új minimum mennyiség mezőben adjon meg egy számot.
     * Frissítse az Új minimum mennyiségét, hogy az megegyezzen a Számított minimális mennyiséggel. Ha a Számított minimum értéke nulla, megadhatja jövőbeli kívánt értékét.  
 
-## Vigye fel az új minimum mennyiséget és ellenőrizze az eredményt
+## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Vigye fel az új minimum mennyiséget és ellenőrizze az eredményt
 1. Kattintson a Feladás lehetőségre.
 2. Kattintson az OK gombra.
 3. Kattintson a Cikkszám mezőben található hivatkozásra.

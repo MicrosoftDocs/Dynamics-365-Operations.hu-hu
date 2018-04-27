@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Elszámoló árak frissítése nem-termelő jellegű környezetben
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk az elszámoló-árak nem-gyártási környezetben történő frissítésének útmutatását tartalmazza.
 

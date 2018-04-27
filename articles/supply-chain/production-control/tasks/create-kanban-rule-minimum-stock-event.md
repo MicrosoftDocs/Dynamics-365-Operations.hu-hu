@@ -23,14 +23,14 @@ ms.contentlocale: hu-hu
 ms.lasthandoff: 09/29/2017
 
 ---
-# Kanbanszabály létrehozása minimális készletesemény használatával
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Kanbanszabály létrehozása minimális készletesemény használatával
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás az olyan beállításokra irányul, amelyek a minimális készletesemény segítségével történő kanbanszabály létrehozásához szükségesek, annak érdekében, hogy az adott termékek mindig elérhetőek legyenek az adott helyeken. A kanbanszabály az anyagok a helyre történő átvitelének lebonyolítására szolgál, ha a készletszint 200 darab alá csökken. Az igényjelző esemény feldolgozásának futtatása során jönnek létre a szükséges kanbanok. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez a feladat a folyamatmérnök vagy az érték-előállítási vezető munkáját segíti, mivel ők készítik elő az új vagy módosított termékek termelését a lean környezetben.
 
 
-## Új kanbanszabály létrehozása
+## <a name="create-a-new-kanban-rule"></a>Új kanbanszabály létrehozása
 1. Ugorjon a Termékinformációk kezelése > A lean manufacturing > Kanbanszabályok lehetőségre.
 2. Kattintson az Új lehetőségre.
 3. A Típus mezőben válassza ki a „Terhelések” lehetőséget.
@@ -46,7 +46,7 @@ Ez az eljárás az olyan beállításokra irányul, amelyek a minimális készle
 9. Válassza ki a „Köteg” lehetőséget a Készletfeltöltési esemény mezőben.
     * Kanbanokat hoz létre a kapcsolódó helyen az anyagi szükségletek kielégítésére az Igényjelző esemény feldolgozása során.  
 
-## Állítsa be a minimális mennyiséget a cikkhez
+## <a name="set-the-minimum-quantity-for-the-item"></a>Állítsa be a minimális mennyiséget a cikkhez
 1. Kattintson a Termék mezőben található hivatkozás követésére.
 2. Kattintson a Cikkszám mezőben található hivatkozásra.
 3. Bontsa ki a Termék kép Adatterület lehetőséget.
@@ -58,7 +58,7 @@ Ez az eljárás az olyan beállításokra irányul, amelyek a minimális készle
     * Állítsa be a 12-as raktárat.  
 9. Állítsa át a minimális értéket „200” értékre.
 
-## A kötegelt esemény létrehozási feladat futtatása
+## <a name="run-the-batch-event-creation-job"></a>A kötegelt esemény létrehozási feladat futtatása
 1. Ugorjon a Gyártásvezérlés > Időszakos feladatok > Kanban feladat kötegelt feldolgozása > Igényjelző esemény feldolgozása pontra.
 2. Kattintson az OK gombra.
 3. Ugorjon a Termékinformációk kezelése > A lean manufacturing > Kanbanszabályok lehetőségre.

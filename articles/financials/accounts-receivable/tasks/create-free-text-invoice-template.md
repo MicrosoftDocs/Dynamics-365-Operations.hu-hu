@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-free-text-invoice-template"></a>Szabadszöveges számlasablon létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a felvétel az USMF bemutatócéget használja. A rögzítést az a felhasználó használja, aki felelős a kintlévőségek számláinak kezeléséért és feldolgozásáért.
 

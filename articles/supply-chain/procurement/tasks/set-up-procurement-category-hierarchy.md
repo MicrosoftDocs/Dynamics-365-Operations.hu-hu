@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Beszerzési kategóriák hierarchiájának beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja az új csomópontok létrehozását a beszerzési kategóriák hierarchiájában, és azt, hogyan kell konfigurálni a beszerzési folyamatban használt beszerzési kategóriát. Ezeket a feladatokat jellemzően egy beszerzési vezető végzi el. Az eljárás megkezdése előtt kell lennie egy Beszerzés típusú kategóriahierarchiának. Ha bemutató adatokat használ, ezt az eljárást az USMF vállalatban futtathatja.
 

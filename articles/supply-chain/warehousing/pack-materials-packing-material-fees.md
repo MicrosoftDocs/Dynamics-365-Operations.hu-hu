@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>Csomagolóanyagok és díjak
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A csomagolóanyag-díjakat meghatározott időközönként kell kifizetni egy feldolgozó vállalatnak. Súlyegységenként egy bizonyos összeget kell kifizetni a csomagolási egységet alkotó minden egyes anyag után. A program a csomagolóanyag-díjakat kiszámítja és jelentést is készít róluk, viszont – mivel nem számít a hatóságoknak fizetendő adónak – nem ad fel főkönyvi tranzakciót a díjjal kapcsolatban.
 
@@ -63,7 +62,7 @@ Ha a vállalat fizeti a csomagolóanyag-díjakat, ne adja meg a vevő licencszá
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Csomagolóanyag súlyadatainak nyomtatása a számlákra
 A számlákra rá lehet nyomtatni a csomagolóanyag súlyadatait, és jelezni lehet, hogy ki fizeti a számlán szereplő csomagolóanyag-díjakat. A súlyok összegzése a csomagolóanyag-kód alapján történik.
- 
+
 
 
 

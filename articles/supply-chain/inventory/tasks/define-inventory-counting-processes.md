@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>Készletleltár-folyamatok meghatározása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával. Azt is bemutatja, hogy hogyan engedélyezheti a leltározási irányelveket raktár vagy cikk szintjén. Ezeket a feladatokat jellemzően egy raktárvezető végzi el. Ez előfeltétele annak, hogy legyen létező kiadott termék és raktár. Ha bemutató adatokat használ, ezt az eljárást az USMF vállalatban bármilyen raktározott cikkre futtathatja.
 

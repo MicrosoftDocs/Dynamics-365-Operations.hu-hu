@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-and-dynamics-lifecycle-services"></a>Támogatás keresése a Microsoft Dynamics 365 for Finance and Operations programhoz, illetve a Dynamics Lifecycle Services szolgáltatáshoz
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk bemutatja, hogyan kereshet segítséget a for Finance and Operations vagy a Microsoft Dynamics Lifecycle Services (LCS) a Microsoft Dynamics 365 rendszerhez. 
 

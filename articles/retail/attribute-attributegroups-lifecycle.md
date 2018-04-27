@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Attribútumok, attribútumcsoportok és a társításaik a különböző Retail entitásokkal a Finance and Operations alkalmazásban
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Az *Attribútumok* lehetővé teszik a termék és a jellemzői további leírását felhasználó által definiált mezőkkel (például **Memória mérete**, **Merevlemez kapacitása**, **Energy Star kompatibilis** és így tovább). A Microsoft Dynamics 365 for Finance and Operations esetében az attribútumok különböző Retail entitásokhoz, például termékkategóriákhoz és kiskereskedelmi csatornákhoz, társíthatók, és megadhatók hozzájuk alapértelmezett értékek. A termékek ezután öröklik az attribútumokat és a hozzájuk tartozó alapértelmezett értékeket, amikor társítják őket egy termékkategóriához vagy kiskereskedelmi csatornához. Az alapértelmezett értékek felülírhatók az egyes termékek szintjén, a kiskereskedelmi csatorna szintjén vagy a kiskereskedelmi kategóriában.
  
@@ -227,13 +227,13 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
 5. A **Termékek** gyorslapon jelölje be a szükséges terméket, és válassza ki az **Attribútumok** elemet a termékrács felett.
 6. A következő gyorslapon frissítése a szükséges attribútumok értékeit:
 
-    - Megosztott termékhez tartozó média
-    - Megosztott termékattribútumok
-    - Csatornamédia
-    - Csatornatermék-attribútumok
+   - Megosztott termékhez tartozó média
+   - Megosztott termékattribútumok
+   - Csatornamédia
+   - Csatornatermék-attribútumok
 
-    > [!NOTE]
-    > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
+     > [!NOTE]
+     > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
 
 ![Katalógus-termékattribútum csoportok](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
 
 5. A következő gyorslapon frissítése a szükséges attribútumok értékeit:
 
-    - Megosztott termékhez tartozó média
-    - Megosztott termékattribútumok
-    - Csatornamédia
-    - Csatornatermék-attribútumok
+   - Megosztott termékhez tartozó média
+   - Megosztott termékattribútumok
+   - Csatornamédia
+   - Csatornatermék-attribútumok
 
-    > [!NOTE]
-    > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
+     > [!NOTE]
+     > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása a Finance and Operations alkalmazásban jön létre, minden kiskereskedelmi termékre vonatkoznak.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ProjTable
+ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="project-management-and-accounting"></a>Projektvezetés és könyvelés
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A projektvezetési és könyvelési funkció több ágazatban használható egy szolgáltatás nyújtásához, egy termék előállításához vagy egy eredmény eléréshez.  
 
@@ -83,6 +82,7 @@ Használja a projekt-előrejelzést, amennyiben a szervezetnek van működési t
 A Microsoft Finance and Operations hat projekttípus létrehozását teszi lehetővé. Minden projekttípus beállításai eltérők a költségek és bevételek elszámolása szempontjából. A projekttípus kiválasztása a projekt célkitűzésétől függ. A következő táblázat ismerteti az egyes projekttípusok jellemző használatát.
 
                                                                                                                                                                          |
+
 | Projekt típusa      | Leírás                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Idő és anyag | Az idő- és anyagelszámolású projektek esetén a vevőnek minden olyan költséget kiszámlázunk, amely a projektben előfordul. Ezek a költségek magukban foglalják a munkabéreket, a költségeket, az eszközöket, és díjakat.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -127,10 +127,10 @@ A projekthez kapcsolódó termelési rendelés a befejezett cikk módszer vagy a
 
 Ilyen tényező kategóriakombinációkon alapuló, a következő módszerek valamelyikével:
 
--   A **Kész cikk/kapcsolás rendeléshez** módszer választása esetén a projekt értékesítési rendeléshez vagy cikkszükséglethez kapcsolható. A módszer alkalmazása a tényleges projektköltségeket feladja az értékesítési rendelés számlázásakor vagy a csomagjegyzék cikkszükségletnek megfelelő frissítésekor. A költség feladása befejezett cikként történik.
--   **Kész cikk/nincs kapcsolás rendeléshez** – tényleges költségeket nem adható fel, amíg a termelési folyamatról a cikk állapota **Befejezve**. A költség feladása a befejezett cikk egyetlen tranzakciójaként történik.
--   A **Kész cikk/kapcsolás rendeléshez** módszer választása esetén a projekt értékesítési rendeléshez vagy cikkszükséglethez kapcsolható. A módszer alkalmazása esetén a a tényleges projektköltségek megtekinthetők, amikor a termelés **Elindítva** vagy Készként jelentve állapotú. A költség feladása a nyersanyagok esetében több projektcikk tranzakcióiként, illetve a termelés esetében a felhasznált órák formájában történik. Amikor megtörténik a cikkszükségletre vonatkozóan a csomagjegyzék frissítése, nem történik projektköltségek feladása. Definiálni lehet, hogy az anyagjegyzék-hierarchia (BOM) melyik szintje legyen nyomon követve a termelési projektekben.
--   ****A Kész cikk/kapcsolás rendeléshez**** módszer választása esetén a projekt értékesítési rendeléshez vagy cikkszükséglethez kapcsolható. A módszer alkalmazása esetén a a tényleges projektköltségek megtekinthetők, amikor a termelés **Elindítva** vagy Készként jelentve állapotú. A költség feladása a nyersanyagok esetében több projektcikk tranzakcióiként, illetve a termelés esetében a felhasznált órák formájában történik. Definiálni lehet, hogy az anyagjegyzék-hierarchia (BOM) melyik szintje legyen nyomon követve a termelési projektekben.
+- A **Kész cikk/kapcsolás rendeléshez** módszer választása esetén a projekt értékesítési rendeléshez vagy cikkszükséglethez kapcsolható. A módszer alkalmazása a tényleges projektköltségeket feladja az értékesítési rendelés számlázásakor vagy a csomagjegyzék cikkszükségletnek megfelelő frissítésekor. A költség feladása befejezett cikként történik.
+- **Kész cikk/nincs kapcsolás rendeléshez** – tényleges költségeket nem adható fel, amíg a termelési folyamatról a cikk állapota **Befejezve**. A költség feladása a befejezett cikk egyetlen tranzakciójaként történik.
+- A **Kész cikk/kapcsolás rendeléshez** módszer választása esetén a projekt értékesítési rendeléshez vagy cikkszükséglethez kapcsolható. A módszer alkalmazása esetén a a tényleges projektköltségek megtekinthetők, amikor a termelés **Elindítva** vagy Készként jelentve állapotú. A költség feladása a nyersanyagok esetében több projektcikk tranzakcióiként, illetve a termelés esetében a felhasznált órák formájában történik. Amikor megtörténik a cikkszükségletre vonatkozóan a csomagjegyzék frissítése, nem történik projektköltségek feladása. Definiálni lehet, hogy az anyagjegyzék-hierarchia (BOM) melyik szintje legyen nyomon követve a termelési projektekben.
+- *<strong><em>A Kész cikk/kapcsolás rendeléshez</em></strong>* módszer választása esetén a projekt értékesítési rendeléshez vagy cikkszükséglethez kapcsolható. A módszer alkalmazása esetén a a tényleges projektköltségek megtekinthetők, amikor a termelés <strong>Elindítva</strong> vagy Készként jelentve állapotú. A költség feladása a nyersanyagok esetében több projektcikk tranzakcióiként, illetve a termelés esetében a felhasznált órák formájában történik. Definiálni lehet, hogy az anyagjegyzék-hierarchia (BOM) melyik szintje legyen nyomon követve a termelési projektekben.
 
 ### <a name="procure-products-and-services"></a>Termékek és szolgáltatások rendelése
 
@@ -239,9 +239,8 @@ A következő táblázat leírja a projekt a teljesítési költség kiszámít�
 <li>Előrejelzés-tranzakciók tényleges tranzakciók összehasonlítása.</li>
 <li>Karbantartása, csökkenti vagy növeli a becslések a következő időszakra.</li>
 </ol>
-A Finance and Operations automatikusan nem csökkenti az előre jelzett becsléseket. Ezért célszerű karbantartása rögzített árú projekten összehasonlítás alaptervet létrehozására, a projekt befejezésekor az eredeti előrejelzési modellel. 
-> [!NOTE] Ha ezt a módszert választja, legalább két előrejelzési modellt használjon. Egy modell tartalmaznia kell az eredeti előrejelzés. A modell, az előrejelzési tranzakciókat kell másolása egy másik modellbe. Ez a mező csak rögzített árú és beruházási projektekre vonatkozik.</td>
-> </tr>
+A Finance and Operations automatikusan nem csökkenti az előre jelzett becsléseket. Ezért célszerű karbantartása rögzített árú projekten összehasonlítás alaptervet létrehozására, a projekt befejezésekor az eredeti előrejelzési modellel. &gt; [!NOTE] &gt; Ha ezt a módszert választja, legalább két előrejelzési modellt használjon. Egy modell tartalmaznia kell az eredeti előrejelzés. A modell, az előrejelzési tranzakciókat kell másolása egy másik modellbe. Ez a mező csak rögzített árú és beruházási projektekre vonatkozik.</td>
+</tr>
 <tr class="odd">
 <td>Fennmaradó költségvetés</td>
 <td>Ezzel a módszerrel lehet kiszámítani a költséget a projekt teljesítésére használja a fennmaradó költségvetési modellt. Ezt a módszert, ha a tényleges költség és az előre jelzett összegeket a fennmaradó költségvetési modell össze kell adni. A teljes költség az eredmény. Ezt a módszert, mielőtt fennmaradó költségvetési modell be kell állítani, amelyet a rendszer rögzíti a tényleges tranzakciók alapján tranzakciók levonandó. Az <strong>Előrejelzési modellek</strong> oldalon, győződjön meg arról, hogy meg vannak jelölve a mezőket a <strong>Automatikus előrejelzés csökkentése</strong> csoport. Általában a fennmaradó költségvetés másolja a rendszer az eredeti költségvetés. Tranzakciók kerülnek, mint a fennmaradó költségvetési tranzakcióihoz csökken. A projekt előrehaladtával, ha úgy dönt, hogy a fennmaradó költségvetés úgy kell beállítani, akkor terhelve a fennmaradó költségvetés-előrejelzési tranzakciók. <strong>Megjegyzés:</strong> A módszer csak akkor alkalmazható, ha van előrejelzési modell társítva a becsléshez.</td>

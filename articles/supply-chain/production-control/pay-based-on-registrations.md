@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6cd1e3a1f6b5c979a4f60d97cc2203cdcd32bbbe
-ms.openlocfilehash: 6de88b82c9a663bfe6d2756fde6f1a7412a44b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a>Fizetési regisztráció alapján
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör részletesen bemutatja, hogyan van kiszámítva a fizetés a dolgozói regisztrációk alapján. Magában foglal olyan példákat is, amelyek bemutatják, hogy a számításhoz rendelkezésre álló beállítási lehetőségek kombinációi hogyan befolyásolják az eredményt. Íme néhány terület, amelyre vonatkozik:
 
@@ -446,7 +446,7 @@ A dolgozók tervezett távolléte létrehozható a **Tervezett távollét létre
 A feladat lekérdezés alapul. Emiatt létrehozhat tervezett távollétet több dolgozóra, például az ugyanazon számítási csoportba tartozó dolgozókra. Ha a tervezett távollét egy dolgozót érint, a regisztráció bevihető a **Jelenlét** lapon vagy az **Időnyilvántartás - dolgozók** lapon.
 
 - Távollét-regisztráció megadásához a **Jelenlét** oldalon válassza a **Munkaidő és jelenlét** &gt; **Lekérdezések és jelentések** &gt; **Jelenlét** &gt; **Jelenlét** elemet, majd válassza ki **Távollét-regisztráció** lehetőséget.
-- Távollét-regisztráció megadásához , az ****Időnyilvántartás - dolgozók**** lapon, válassza a **Munkaidő és jelenlét** &gt; **Beállítás** &gt; **Időnyilvántartás - dolgozók** elemet, majd az **Idő** lapon, a **Munkaidő-hozzárendelés** alatt, jelölje be a **Távollét-regisztrációk** elemet.
+- Távollét-regisztráció megadásához , az *<strong><em>Időnyilvántartás - dolgozók</em></strong>* lapon, válassza a <strong>Munkaidő és jelenlét</strong> &gt; <strong>Beállítás</strong> &gt; <strong>Időnyilvántartás – dolgozók</strong> elemet, majd az <strong>Idő</strong> lapon, a <strong>Munkaidő-hozzárendelés</strong> alatt, jelölje be a <strong>Távollét-regisztrációk</strong> elemet.
 
 Használja a **Tervezett hiányzások** jelentést áttekintés nyerésére a dolgozók tervezett távolléteiről. A jelentés megnyitásához válassza ki a **Munkaidő és jelenlét** &gt; **Lekérdezések és jelentések** &gt; **Távolléti jelentések** &gt; **Tervezett távollétek** lehetőséget.
 

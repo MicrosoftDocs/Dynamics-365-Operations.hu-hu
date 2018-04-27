@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="direct-deliveries"></a>Közvetlen kiszállítások
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk tájékoztatást nyújt a közvetlen kiszállításokkal kapcsolatban. A közvetlen kiszállítások olyan szállítások, amelyeket a rendszer közvetlenül a szállítótól küld a vevőhöz.
 

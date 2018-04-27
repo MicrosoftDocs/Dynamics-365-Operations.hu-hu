@@ -18,17 +18,16 @@ ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 3c284b8c67121b39837bef827dea6f24da2a0f4b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 97be3eee9ebb99af33e3153fe7726ed5b086b03c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advance-invoices-for-eastern-europe"></a>Előlegszámlák Kelet-Európa számára
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Az előlegszámla egy vevő vagy szállító számára létrehozott dokumentum. Azt az összeget tartalmazza, amelyet előre meg kell fizetni egy értékesítési rendelésre. Ez a témakör a kelet-európai előlegszámlákkal kapcsolatban tartalmaz tájékoztatást.
 
@@ -47,19 +46,20 @@ Az előlegeket is átvevő lengyel vállalatoknak az előlegről is ki kell áll
 ## <a name="set-up-accounts-receivable-for-advance-invoices"></a>A Kinnlevőségek előlegszámlákhoz történő beállítása
 A **Kinnlevőségek paraméterei** oldal **Frissítések** lapján adja meg a következő paramétereket.
 
-|Gyorslap|Paraméter|Leírás|
-|------|----------|------------|
-|Előlegszámla  |Feladási profil|Válassza ki az előlegszámlával használandó feladási profilt (csak Lengyelország). **Fontos:** Csehország és Magyarország esetében a program az előlegszámlákat nem könyvelési és adóbizonylatokként kezeli, és nem a főkönyvbe adja fel őket. Ezért hagyja üresen ezt a mezőt ezen országok esetében, hogy megakadályozza az előlegszámlák főkönyvbe történő feladását.
-|
-|Előlegszámla  |Ki|számla beállítása        |Válassza ki az előlegszámlázáshoz használandó alapértelmezett ellenszámlát.|
-|Előlegszámla  |Áfacsoport        |Válassza ki, hogy melyik áfacsoportot kell használni, amikor az áfát az előlegszámlázáshoz számítja ki.|
-|Előlegszámla  |Helyesbítőként sztornírozás |Jelölje be ezt a jelölőnégyzetet, ha az előlegszámla sztornírozását helyesbítésnek kell tekinteni.|
-|Előlegszámla  |Sztornírozás számlanapon|Ezen jelölőnégyzet bejelölésével sztornírozhatja az előleget a számla feladásának dátumán.|
-|Fizetés          |Több előlegfizetési dátum|A következő lehetőségek közül választhat: **Elfogadás**, **Figyelmeztetés** vagy **Hiba**.|
-|Fizetés          |Dátumeltérés          |A következő lehetőségek közül választhat: **Elfogadás**, **Figyelmeztetés** vagy **Hiba**.|
-|Fizetés          |Összegeltérés        |A következő lehetőségek közül választhat: **Elfogadás**, **Figyelmeztetés** vagy **Hiba**.|
-|Fizetés          |Kapcsolás feladott előlegszámlához|A következő lehetőségek közül választhat: **Elfogadás**, **Figyelmeztetés** vagy **Hiba**.|
-|Fizetés          |(CZE), (POL) Előleg kezelése|Válassza a **Speciális** lehetőséget.|
+
+|     Gyorslap     |             Paraméter             |                                                                                                                                                                                           Leírás                                                                                                                                                                                           |
+|-----------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Előlegszámla |          Feladási profil          | Válassza ki az előlegszámlával használandó feladási profilt (csak Lengyelország). <strong>Fontos:</strong> Csehország és Magyarország esetében a program az előlegszámlákat nem könyvelési és adóbizonylatokként kezeli, és nem a főkönyvbe adja fel őket. Ezért hagyja üresen ezt a mezőt ezen országok esetében, hogy megakadályozza az előlegszámlák főkönyvbe történő feladását. |
+|                 |                                   |                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Előlegszámla |                Ki                |                                                                                                                                                                                           számla beállítása                                                                                                                                                                                           |
+| Előlegszámla |          Áfacsoport          |                                                                                                                                                      Válassza ki, hogy melyik áfacsoportot kell használni, amikor az áfát az előlegszámlázáshoz számítja ki.                                                                                                                                                      |
+| Előlegszámla |      Helyesbítőként sztornírozás       |                                                                                                                                                 Jelölje be ezt a jelölőnégyzetet, ha az előlegszámla sztornírozását helyesbítésnek kell tekinteni.                                                                                                                                                  |
+| Előlegszámla |      Sztornírozás számlanapon      |                                                                                                                                                     Ezen jelölőnégyzet bejelölésével sztornírozhatja az előleget a számla feladásának dátumán.                                                                                                                                                     |
+|     Fizetés     |     Több előlegfizetési dátum     |                                                                                                                                        A következő lehetőségek közül választhat: <strong>Elfogadás</strong>, <strong>Figyelmeztetés</strong> vagy <strong>Hiba</strong>.                                                                                                                                         |
+|     Fizetés     |           Dátumeltérés           |                                                                                                                                        A következő lehetőségek közül választhat: <strong>Elfogadás</strong>, <strong>Figyelmeztetés</strong> vagy <strong>Hiba</strong>.                                                                                                                                         |
+|     Fizetés     |          Összegeltérés          |                                                                                                                                        A következő lehetőségek közül választhat: <strong>Elfogadás</strong>, <strong>Figyelmeztetés</strong> vagy <strong>Hiba</strong>.                                                                                                                                         |
+|     Fizetés     | Kapcsolás feladott előlegszámlához |                                                                                                                                        A következő lehetőségek közül választhat: <strong>Elfogadás</strong>, <strong>Figyelmeztetés</strong> vagy <strong>Hiba</strong>.                                                                                                                                         |
+|     Fizetés     | (CZE), (POL) Előleg kezelése  |                                                                                                                                                                                Válassza a <strong>Speciális</strong> lehetőséget.                                                                                                                                                                                |
 
 A **Számsorozatok** lapon állítsa be az alábbi hivatkozások számsorozatkódját:
 

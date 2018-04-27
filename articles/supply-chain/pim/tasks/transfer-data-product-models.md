@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-data-for-product-models"></a>Termékmodellekhez szükséges adatok továbbítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A termékkonfigurációs modell adatexportálásához szükséges legalább egy elérhető termékmodell. Ez az eljárás a felső kategóriás hangszóró modellt használja az USMF bemutatócégben, hogy bemutassa a modell adatainak exportálását.
 

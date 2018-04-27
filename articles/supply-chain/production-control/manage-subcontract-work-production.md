@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-subcontracting-work-in-production"></a>Gyártás területén végzett alvállalkozói munka kezelése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan kezeli a Microsoft Dynamics 365 for Finance and Operations az alvállalkozói műveleteket. Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.
 

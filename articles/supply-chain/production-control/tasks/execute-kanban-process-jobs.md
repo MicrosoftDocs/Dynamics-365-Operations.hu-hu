@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>Kanbanfeldolgozási feladatok végrehajtása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezzel az eljárás a kanbanfeldolgozási feladatok végrehajtására szolgál. A program az első feladatot a várt mennyiségi eredménnyel és hibák nélkül végezte el. A második feladat hibákkal fejeződött be. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a gépkezelő használja.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-lookups-to-find-information"></a>Információk megtalálása keresésekkel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations programban számos mező rendelkezik keresőkkel, amelyek révén egyszerűen megtalálhatja a helyes vagy a kívánt értéket. Számos fejlesztést adtak hozzá a keresésekhez, amelyek segítségével ezeket a lehetőségeket könnyebb használni, és segítségükkel a felhasználók hatékonyabbá válnak. Ebben a témakörben megismerheti ezeket az új keresési funkciókat, és néhány hasznos tippet is kap annak érdekében, hogy optimálisan kihasználhassa a rendszer kereséseit.  
 

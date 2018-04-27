@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>Költség-ellenőrzőegységek meghatározása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja a költség-ellenőrzőegységek meghatározását a költségkönyvelési főkönyvben. Kiválasztja azt a költségobjektum-dimenziót, amelyen költségszabályozást szeretne végrehajtani a főkönyvben. A költségobjektum-dimenziótagokat a rendszer a költség-ellenőrzőegységeinek költségobjektumaivá alakítja. Ez az eljárás az USP2 bemutatócéget használja.
 

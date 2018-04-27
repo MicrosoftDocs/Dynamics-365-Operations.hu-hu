@@ -24,7 +24,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="release-a-production-order"></a>Termelési rendelés kiadása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás a termelési rendelések kiadását mutatja be. Ez az eljárás az USMF bemutatócéget használja. Ez a negyedik eljárás abból a hétből, amely bemutatja a termelési rendelés életciklusát.
 

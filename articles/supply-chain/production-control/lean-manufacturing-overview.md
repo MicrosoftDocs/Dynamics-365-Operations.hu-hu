@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing (áttekintés)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk a Microsoft Dynamics 365 for Finance and Operations lean manufacturing funkcióinak áttekintését és leírását nyújtja.
 
@@ -40,6 +39,7 @@ A lean gyártás olyan eszközöket kínál, amelyeket használhat lean művelet
 -   Kanbanfeladatok ellenőrzése és karbantartása.
 
 A lean manufacturing architektúra a Finance and Operations programban tartalmazza a termelési folyamatokat, tevékenységeket és kanbanszabályokat. Ezek a struktúrák teljes mértékben integráltak a Finance and Operations folyamataival. Használhatja a lean manufacturing legetőséget vegyes módú gyártási környezetben, ahol különféle készletek, termelések és forrásstratégiák vannak. Ezek a stratégiák tartalmazzák a termelési rendeléseket, kötegrendeléseket feldolgozóiparoknak, beszerzési rendeléseket és transzferrendeléseket.
+
 | **Fontos**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | A Finance and Operations rendszert használhatja a lean manufacturing kanbanokkal történő végrehajtásának támogatásához. Ugyanakkor a lean irányelvek sikeres alkalmazása a használt belső üzleti folyamatokon és a tényleges termelési feltételeken és környezeten múlik. |

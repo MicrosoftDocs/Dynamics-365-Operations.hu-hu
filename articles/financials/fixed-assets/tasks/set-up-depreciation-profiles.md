@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Értékcsökkenési profilok beállítása és létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Értékcsökkenési profilok határozzák meg az adott eszköz értékcsökkenésének típusát és gyakoriságát.   Ez a felvétel a USMF bemutató vállalatot, illetve a könyvelői szerepkört használja.
 

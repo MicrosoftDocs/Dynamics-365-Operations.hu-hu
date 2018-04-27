@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Alkalmazandó árak és engedmények keresése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet árat és/vagy az engedményt találni egy termékhez, amely jelenleg érvényes egy meghatározott vevőre, értékesítési rendelés létrehozása nélkül. Az eljárás végigvezet egy adott példán, és a szükséges értékek kiválasztásához követnie kell a példában az USMF bemutatóvállalat használatát.
 

@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a>Adatimportálási és -exportálási feladatok
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Adatimportálási és -exportálási feladatok létrehozásához és kezeléséhez a Microsoft Dynamics 365 for Finance and Operations alkalmazásban használja az **Adatkezelés** munkaterületet. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
 
@@ -64,13 +64,15 @@ Azt ajánljuk, hogy szánjon időt a megfelelő projektkategória kiválasztás�
 Adott entitásokat adhat hozzá az importálási vagy exportálási feladatokhoz, vagy kiválaszthat egy alkalmazni kívánt sablont is. A sablonok enitások listájával töltenek fel egy feladatot. A **Sablon alkalmazása** beállítás azután érhető el, hogy elnevezte és mentette a feladatot.
 
 ### <a name="set-the-data-format-for-the-job"></a>Végezze el a feladat adatformátumának beállítását
-Ha kiválaszt egy entitást, ki kell választania az exportálandó vagy importálandó adatok formátumát. A formátumokat az **Adatforrások beállítása** csempe segítségével határozhatja meg. Számos vállalat használja kiindulásnak a bemutató adatkészletben alapértelmezés szerint szerepelő formátumokat. Íme néhány formátum listája:
+Ha kiválaszt egy entitást, ki kell választania az exportálandó vagy importálandó adatok formátumát. A formátumokat az **Adatforrások beállítása** csempe segítségével határozhatja meg. A forrásoldali adatformátum a **Típus**, a **Fájlformátum**, a **Sorelválasztó** és az **Oszlopelválasztó** kombinációja. Vannak egyéb attribútumok is, de ezek a legfontosabbak, amelyeket érteni kell. Az alábbi táblázat felsorolja az érvényes kombinációkat.
 
-- AX (olyan adatokhoz, amelyek importálásának vagy exportálásának a Microsoft Dynamics 365 for Finance and Operations által használt formátumban kell történnie)
-- ColonSeparated
-- CSV
-- Excel
-- Csomagolás
+| **Fájlformátum**        | **Sor-/oszlopelválasztó**                   | **XML-stílus**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-–                     |
+| XML                    | \-–                                      | XML-elem XML-attribútum |
+| Elválasztott, rögzített szélesség | Vessző, pontosvessző, tabulátor, függőleges sáv, kettőspont | \-–                     |
+
+
 
 ### <a name="sequence-the-entities"></a>Az entitások sorozetba állítása
 Az entitások sorrendbe állíthatók egy adatsablonban, valamint az importálási és exportálási feladatokban. Ha egy több adatentitást tartalmazó feladatot futtat, meg kell győződnie arról, hogy az adatentitások megfelelően vannak sorrendbe állítva. Az entitásokat alapvetően úgy kell sorozatba állítani, hogy meg lehessen címezni a funkcionális függőségeket az entitások között. Ha az entitások között nincsenek funkcionális függőségek, párhuzamos importálásra vagy exportálásra lehet ütemezni őket.

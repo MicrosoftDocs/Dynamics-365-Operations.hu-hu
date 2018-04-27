@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: b7cb5f2096f0be5211024fc6ecbfaa61d6c48c9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1fc3ab4f2a4b4604126ff72c570fc9d85e209f3c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-performance-power-bi-content"></a>Pénzügyi teljesítmény Power BI-tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!Note]
 > A tartalomcsomag már elavult a [Power BI tartalmi csomagok közzététele a PowerBI.com webhelyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom) dokumentumban ismertetett módon.
@@ -58,7 +58,7 @@ Minden egyes lapot jelentés támaszt alá. Ezek a jelentések diagramokot és t
 
 | Jelentés                      | A jelentés tartalmazza az információkat |
 |-----------------------------|--------------------------------------|
-| Készpénz-elemzés               | Készpénz jogi személyként, negyedévenkénti készpénz, teljes készpénz és készpénz számlánként<blockquote>[!NOTE]<br>A készpénz negyedév szerinti adatai nem tartalmaznak nyitó egyenlegeket az első negyedév összegében. Az egyes negyedévekben feladott tranzakciók összegét jeleníti meg.</blockquote> |
+| Készpénz-elemzés               | Készpénz jogi személyként, negyedévenkénti készpénz, teljes készpénz és készpénz számlánként<br><br>**Megjegyzés:** A készpénz negyedév szerinti adatai nem tartalmaznak nyitó egyenlegeket az első negyedév összegében. Az egyes negyedévekben feladott tranzakciók összegét jeleníti meg.|
 | Jelenlegi rátaelemzés      | Jogi személy szerinti likviditási ráta, negyedév szerinti, és az aktuális eszközök és a rövid lejáratú kötelezettségek egyenlege szerinti likvidálási ráta |
 | Gyorsráta-elemzés        | Jogi személy szerinti likvidálási gyorsráta, negyedév szerinti likvidálási gyorsráta, és a készpénz, kinnlevőségek egyenlege és a rövid lejáratú kötelezettségek egyenlege szerinti likvidálási ráta |
 | Eladott áruk beszerzési érték elemzése | Eladott áruk beszerzési értéke (ELÁBÉ) jogi személy szerint, az idei és az előző évi ELÁBÉ negyedévenként, ELÁBÉ az értékesítéshez a jogi személy szerint , az összes ELÁBÉ és ELÁBÉ az értékesítési százalék szerint |
@@ -69,7 +69,7 @@ Minden egyes lapot jelentés támaszt alá. Ezek a jelentések diagramokot és t
 | Bevételelemzés           | A tényleges és a költségvetési eredmény a kamat és az adók előtt (EBIT) a jogi személy, az idei és az előző évi EBIT, a kiadások szerint az árbevétel-százalékhoz, és a tényleges és költségvetési kiadások az árbevételhez |
 | Bevételelemzés            | A teljes bevétel, a tényleges és a költségvetés teljes árbevétele a jogi személy által, az idei és az előző évi teljes bevétel, az árbevétel kötlségvetés eltérés a jogi személy szerint, és a jelenlegi és az előző időszak összes árbevétele |
 | Költségelemzés            | Az összes költség, a költségvetés összköltsége a jogi személy szerint, a tényleges és a költségvetési összes kiadás negyedénként, az összes kiadás a számlakategória szerint, és a működési költségek aránya |
-| Számlázott bevételelemzés     | Kinnlevőségek összesen, az összes kinnlevőség jogi személy szerint, az összes kinnlevőség negyedévenként és a kinnlevőségek számlák egyenlege<blockquote>[!NOTE]<br>Az adatok nem tartalmaznak nyitó egyenlegeket a kinnlevőségek főkönyvi számlákhoz. A kinnlevőségek közé feladott új tranzakciók összegét mutatja.</blockquote> |
+| Számlázott bevételelemzés     | Kinnlevőségek összesen, az összes kinnlevőség jogi személy szerint, az összes kinnlevőség negyedévenként és a kinnlevőségek számlák egyenlege<br><br>**Megjegyzés:** Az adatok nem tartalmaznak nyitó egyenlegeket a kinnlevőségek főkönyvi számlákhoz. A kinnlevőségek közé feladott új tranzakciók összegét mutatja. |
 
 Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálására](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 

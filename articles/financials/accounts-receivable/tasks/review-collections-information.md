@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="review-collections-information"></a>A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti a beszedési adatok áttekintésén, valamint a különböző beállítási lehetőségeken és a beszedési tranzakciók ellenőrzésén. Ez az eljárás az USMF bemutatócéget használja.
 

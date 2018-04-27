@@ -3,7 +3,7 @@ title: Egy bizonylat
 description: "A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kifizetési napló és így tovább) Egy bizonylat funkciójának használatával bevihető több analitikusnapló-tranzakció egyetlen bizonylat keretein belül."
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 76ea8470786bd50896400a65564d698d96119d6f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="one-voucher"></a>Egy bizonylat
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Ez a funkció a Dynamics 365 for Finance and Operations 8.0 verziójában lesz elérhető, amely a 2018. tavaszi kiadásban jelenik meg.   
@@ -38,9 +38,12 @@ ms.lasthandoff: 03/20/2018
 
 A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kifizetési napló és így tovább) meglévő funkcióinak használatával bevihető több analitikusnapló-tranzakció egyetlen bizonylat keretein belül. Erre a funkció az „Egy bizonylat” megnevezéssel hivatkozunk. Egy bizonylatot az alábbi módszerek egyikével hozhat létre:
 
--   Állítsa be a napló nevét (**Főkönyv** \> **Naplóbeállítás** \> **Naplónevek**) úgy, hogy az **Új bizonylatot** mező értéke **Csak egy bizonylatszám** legyen. Minden, a naplóhoz hozzáadott sor most ugyanarra a bizonylatra kerül. Mivel minden sor ugyanarra a bizonylatra kerül, a bizonylat többsoros bizonylatként is megadható, mint számla/ellenszámla ugyanazon a soron, vagy kombinációként.
+-   Állítsa be a napló nevét (**Főkönyv** \> **Naplóbeállítás** \> **Naplónevek**) úgy, hogy az **Új bizonylatot** mező értéke **Csak egy bizonylatszám** legyen. * Minden, a naplóhoz hozzáadott sor most ugyanarra a bizonylatra kerül. Mivel minden sor ugyanarra a bizonylatra kerül, a bizonylat többsoros bizonylatként is megadható, mint számla/ellenszámla ugyanazon a soron, vagy kombinációként.
 
 [![Egy sor](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Megjegyzés: az "Egy bizonylat" meghatározása nem tartalmazza azokat a naplónevet, amelynek csak **Egy bizonylatszámként** vannak beállítva, amit követően a felhasználó csak csak főkönyvi számlatípusokat tartalmazó bizonylatokat visz be.  A jelen dokumentumban az „Egy bizonylat” azt jelenti, hogy van egy bizonylat, amelyen egynél több szállító, vevő, bank, tárgyi eszköz vagy projekt szerepel. 
 
 -   Adjon meg egy többsoros bizonylatot, ha nincs ellenszámla.
 
@@ -68,13 +71,16 @@ Ekkor létrehozza a **Szállítónkénti költségek** jelentést a **Pénzügyi
 
 A korábban jelzett problémák miatt az Egy bizonylat funkció elavulttá lesz nyilvánítva. Mivel azonban vannak ezen a funkción alapuló funkcionális hiányosságok, a funkció elavulása nem egy időben fog történni. Ehelyett a következő ütemezést használjuk: 
 
--   **2018. tavaszi kiadás** – A funkcionalitás alapértelmezés szerint ki lesz kapcsolva egy Főkönyvi paraméter révén. Azonban bekapcsolhatja a funkciót, ha a szervezetének olyan helyzetet kell kezelnie, amely a témakörben később ismertetett, üzleti esetekkel kapcsolatos hiányok valamelyikének felel meg.
+- **2018. tavaszi kiadás** – A funkcionalitás alapértelmezés szerint ki lesz kapcsolva egy Főkönyvi paraméter révén. Azonban bekapcsolhatja a funkciót, ha a szervezetének olyan helyzetet kell kezelnie, amely a témakörben később ismertetett, üzleti esetekkel kapcsolatos hiányok valamelyikének felel meg.
 
-    -   Ha egy vevő üzleti helyzete olyan, hogy nincs szükség az Egy bizonylat funkcióra, ne kapcsolja be a funkciót. Nem javítjuk ki a „programhibákat”, amelyeket későbbi azonosítottak ebben a témakörben, ha annak ellenére használják ezt a funkciót, hogy létezik egy másik megoldás.
+  -   Ha egy vevő üzleti helyzete olyan, hogy nincs szükség az Egy bizonylat funkcióra, ne kapcsolja be a funkciót. Nem javítjuk ki a „programhibákat”, amelyeket későbbi azonosítottak ebben a témakörben, ha annak ellenére használják ezt a funkciót, hogy létezik egy másik megoldás.
 
-    -   Az Egy bizonylatot ne használja a Microsoft Dynamics 365 Finance and Operations integrációkhoz, kivéve, ha a funkció a működési rések egyikéhez szükséges.
+  -   Az Egy bizonylatot ne használja a Microsoft Dynamics 365 Finance and Operations integrációkhoz, kivéve, ha a funkció a működési rések egyikéhez szükséges.
 
--   **2018 őszi és későbbi kiadások** – A funkcionális hiányosságok pótlása. A funkcionális hiányosságok pótlását követően az Egy bizonylat funkció véglegesen ki lesz kapcsolva.
+- **2018 őszi és későbbi kiadások** – A funkcionális hiányosságok pótlása. A funkcionális hiányosságok pótlását követően az Egy bizonylat funkció véglegesen ki lesz kapcsolva.
+
+- > [!IMPORTANT]
+  > Ne feledje, hogy a **Csak egy bizonylatszám** beállítás NEM lett eltávolítva a naplónév-beállítások közül.  A funkció továbbra is támogatott, ha a bizonylat csak főkönyvi számlatípusokat tartalmaz.  A vevőknek körültekintően kell eljárniuk a beállítás használatakor, mert a bizonylat feladása nem történik meg, ha a **Csak egy bizonylatszám** funkciót használják, de aztán egynél több vevőt, szállítót, bankot, tárgyi eszközt vagy projektet adnak meg.  Ezenkívül a vevők továbbra is megadhatnak többfajta analitikus számlatípust, például egy kifizetést egyetlen bizonylaton, amely szállítói-banki számlatípusokat tartalmaz.  
 
 <a name="why-use-one-voucher"></a>Miért használjon egy bizonylatot?
 ====================
@@ -102,13 +108,13 @@ A következő forgatókönyvek csak az Egy bizonylat funkció használatával v�
 
 >   Ha egy szervezetnek egyben kell áttekitenie az egy üzleti eseményhez tartozó könyvelési tételek, használja az Egy bizonylat funkciót. 
 
--   **Ország-/régiófüggő funkciók**
+- **Ország-/régiófüggő funkciók**
 
- -   Az egységes vámokmány (EV) funkció Lengyelország esetében jelenleg egyetlen bizonylat használatát igényli. Amíg a funkcióhoz nem érhető el csoportosítási beállítás, továbbra is az Egy bizonylat funkciót kell használni. Előfordulhat, hogy vannak további, a Egy bizonylat funkciót igénylő országspecifikus funkciók.
+  -   Az egységes vámokmány (EV) funkció Lengyelország esetében jelenleg egyetlen bizonylat használatát igényli. Amíg a funkcióhoz nem érhető el csoportosítási beállítás, továbbra is az Egy bizonylat funkciót kell használni. Előfordulhat, hogy vannak további, a Egy bizonylat funkciót igénylő országspecifikus funkciók.
 
--   **Vevői előlegkifizetési napló, amelynél több „soron” találhatók adók**
+- **Vevői előlegkifizetési napló, amelynél több „soron” találhatók adók**
 
- -   A vevő előre fizet egy rendelésért, és a rendelés sorai különböző adókat tartalmaznak, amelyeket rögzíteni kell az előlegfizetéshez. Az előleg vevői kifizetés egy tranzakció, amely szimulálja a rendelés sorait, hogy a megfelelő adó rögzíthető legyen az összeghez, soronként.
+  -   A vevő előre fizet egy rendelésért, és a rendelés sorai különböző adókat tartalmaznak, amelyeket rögzíteni kell az előlegfizetéshez. Az előleg vevői kifizetés egy tranzakció, amely szimulálja a rendelés sorait, hogy a megfelelő adó rögzíthető legyen az összeghez, soronként.
 
 Ebben az esetben az egyetlen bizonylaton szereplő vevők ugyanaz a vevő, mert a tranzakció a vevői rendelés sorait szimulálja. Az előleget egy bizonylaton kell bevinni, mert az adószámítást egy vevői kifizetés „sorain” kell végrehajtani.
 

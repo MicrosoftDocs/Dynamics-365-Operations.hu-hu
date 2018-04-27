@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="row-definitions-in-financial-report-designer"></a>Sordefiníciók a pénzügyi jelentéstervezőben
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Egy sordefiníció egy jelentés-összetevő vagy építőelem, amely megadja az egyes sorok tartalmait egy pénzügyi jelentésben. A sordefiníciók kombinálhatóak oszlop,- jelentési fa- és jelentési definíciókkal, építőelem-csoportok létrehozásához, amelyek több vállalat által használhatóak.
 

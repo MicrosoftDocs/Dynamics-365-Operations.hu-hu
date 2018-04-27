@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="questionnaires"></a>Kérdőívek
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
 

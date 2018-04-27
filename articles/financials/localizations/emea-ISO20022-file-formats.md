@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-iso20022-files"></a>ISO20022 fájlok importálása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A következő formátumú fizetési fájlokat importálhatja:
 
@@ -41,8 +41,8 @@ Teljesítenie kell az alábbi előfeltételeket a banki értesítések camt.054.
 3. A **vevői bankszámla** oldalon, a vevő bankszámlájának rekordja beállítása az alábbi információk megadásával: IBAN-száma és a bank számla számát, és a SWIFT-kód vagy útvonalszám.
 4. A **Bankszámlák** oldalon, a vevő bankszámlájának rekordja beállítása az alábbi információk megadásával: IBAN-száma és a bank számla számát, és a SWIFT-kód vagy útvonalszám.
 
-    > [!NOTE]
-        > Továbbfejlesztett banki egyeztetés használni tervezi a **egyeztetés** gyorslapon állítsa a **a banki egyeztetés speciális** lehetőséggel **Igen**. Fel nem adott importált fizetések egyeztetni szeretné, ha a **bankszámlakivonatok használja az elektronikus fizetések visszaigazolására** lehetőséggel **Igen**.
+   > [!NOTE]
+   > Továbbfejlesztett banki egyeztetés használni tervezi a **egyeztetés** gyorslapon állítsa a **a banki egyeztetés speciális** lehetőséggel **Igen**. Fel nem adott importált fizetések egyeztetni szeretné, ha a **bankszámlakivonatok használja az elektronikus fizetések visszaigazolására** lehetőséggel **Igen**.
 
 5. Választható: A a **Tranzakciókód-hozzárendelés** lapon állítsa be a bank Kifizetésitranzakció-kódok a fájlt, és a banki tranzakciótípusok közötti megfeleltetés.
 6. Ha a fájl tartalmazza a tranzakció fel szeretné adni a beérkező fizetés és költségek, létrehozni a kifizetési díjat a **vevői kifizetés díja** oldalon. Ezt a **fizetési módok** oldalon, a kifizetési díj hozzárendelése a bankszámlával kifizetési díjak beállításában.

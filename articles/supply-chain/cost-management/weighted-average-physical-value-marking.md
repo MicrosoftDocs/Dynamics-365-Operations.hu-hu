@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Súlyozott átlag tényleges értékkel és jelöléssel
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 A súlyozott átlag olyan készletmodell, amely a súlyozott átlag elven alapul, ahol a készletből történő kiadások értékét a készletzárási időszakban a készletbe bevételezett cikkek átlagos értéke, valamint az előző időszakban meglévő tényleges készlet határozza meg.
 
@@ -74,16 +74,16 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 ![Súlyozott átlagos közvetlen elszámolás a tényleges érték nélkül](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
--   A készlettranzakciókat függőleges nyilak jelölik.
--   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
--   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
--   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
--   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
--   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
--   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
--   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
+- A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
+- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
+- Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
+- A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Súlyozott átlagú összesített kiegyenlítés a tényleges érték figyelembevétele nélkül
 A súlyozott átlag kiegyenlítés, amely azon az elven alapul, hogy a minden, a záró időszakban szereplő bevételezés egy új készletmozgási tranzakcióban összegződik, amelynek Súlyozott átlagú készletzárás a neve. A nap bevételezéseit az újonnan létrehozott készletmozgási tranzakcióval szemben számolja el a program. A nap minden kiadását az új készletmozgási tranzakció bevételezésével szemben számolja el a program. Ha pozitív a tényleges készlet a készletzárás után, akkor ezt a tényleges készletet és a készlet értékét összegzi az új készletmozgási tranzakció (bevételezés). Ha negatív a készlet a készletzárás után, a tényleges készlet és a készletérték a nem teljesen elszámolt egyes kiadások összege. Az alábbi helyzetben több pénzügyi bevételezést és egy kiadást adtak fel. 
@@ -108,18 +108,18 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 ![Súlyozott átlagos összegző elszámolás a tényleges érték nélkül    ](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
--   A készlettranzakciókat függőleges nyilak jelölik.
--   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
--   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
--   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
--   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
--   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
--   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
--   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
--   A piros nyilak jelzik azt a bevételezési tranzakciót, amelyet a rendszer által létrehozott kiadási tranzakciókkal szemben elszámol a program.
--   A zöld nyilak jelzik azokat a rendszer által ellentételként generált bevételezési tranzakciókat, amelyekkel szemben az eredetileg feladott kiadási tranzakciót elszámolja a program.
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
+- A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
+- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
+- Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
+- A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
+- A piros nyilak jelzik azt a bevételezési tranzakciót, amelyet a rendszer által létrehozott kiadási tranzakciókkal szemben elszámol a program.
+- A zöld nyilak jelzik azokat a rendszer által ellentételként generált bevételezési tranzakciókat, amelyekkel szemben az eredetileg feladott kiadási tranzakciót elszámolja a program.
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Súlyozott átlagú közvetlen kiegyenlítés a tényleges érték figyelembevételével
 Az Include paraméter fizikai értéke másképp működik a súlyozott átlagú készletmodellel, mint a termék korábbi verzióiban. A Tényleges értékkel együtt a jelölőnégyzetet a Modell cikkcsoportok lapon választhatja ki. Ezután a rendszer fizikailag frissített bevételezéseket használ a becsült önköltségi ár vagy a mozgóátlag kiszámítása közben. A kiadások feladása az időszaknak ezen a becsült önköltségi árán alapul. A készletzárás során csak a pénzügyileg frissített bevételezések számítanak bele a súlyozott átlagba. A súlyozott átlagon alapuló készletmodell alkalmazása esetén tanácsos havonta készletzárást végezni. Ebben a súlyozott átlagon alapuló közvetlen kiegyenlítési példában a készletmodellcsoport magában foglalja a tényleges értéket. 
@@ -137,16 +137,16 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 ![Súlyozott átlagos közvetlen elszámolás a tényleges értékkel együtt](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
--   A készlettranzakciókat függőleges nyilak jelölik.
--   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
--   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
--   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
--   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
--   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
--   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
--   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
+- A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
+- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
+- Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
+- A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Súlyozott átlagú összesített kiegyenlítés a tényleges érték figyelembevételével
 Az Include fizikai értékparaméter másképp működik a súlyozott átlagú készletmodellel, mint a termék korábbi verzióiban. A Tényleges értékkel együtt a jelölőnégyzetet a Modell cikkcsoportok lapon választhatja ki. Ezután a rendszer fizikailag frissített bevételezéseket használ a becsült önköltségi ár vagy a mozgóátlag kiszámítása közben. A kiadások feladása az időszaknak ezen a becsült önköltségi árán alapul. A készletzárás során a súlyozott átlag számításában csak a pénzügyi bevételezések számítanak. A súlyozott átlagon alapuló készletmodell alkalmazása esetén tanácsos havonta készletzárást végezni. Ebben a súlyozott átlagon alapuló összesített kiegyenlítési példában a készletmodell magában foglalja a tényleges értéket. 
@@ -170,18 +170,18 @@ A következő diagram bemutatja a tranzakciósorozatot, és a súlyozott átlag 
 ![Súlyozott átlagos összegző elszámolás a tényleges értékkel együtt](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
--   A készlettranzakciókat függőleges nyilak jelölik.
--   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
--   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
--   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
--   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
--   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például 1a. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
--   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
--   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
--   A piros nyilak jelzik azt a bevételezési tranzakciót, amelyet a rendszer által létrehozott kiadási tranzakciókkal szemben elszámol a program.
--   A zöld nyilak jelzik azokat a rendszer által ellentételként generált bevételezési tranzakciókat, amelyekkel szemben az eredetileg feladott kiadási tranzakciót elszámolja a program.
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
+- A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
+- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
+- Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például 1a. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
+- A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
+- A piros nyilak jelzik azt a bevételezési tranzakciót, amelyet a rendszer által létrehozott kiadási tranzakciókkal szemben elszámol a program.
+- A zöld nyilak jelzik azokat a rendszer által ellentételként generált bevételezési tranzakciókat, amelyekkel szemben az eredetileg feladott kiadási tranzakciót elszámolja a program.
 
 ## <a name="weighted-average-with-marking"></a>Súlyozott átlag jelöléssel
 A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzakció egy bevételezési tranzakcióval. A jelölés történhet a tranzakciók feladása előtt és után is. A jelölés használható a készlet pontos költségének megállapítására a tranzakció feladásakor vagy a készletzárás végrehajtásakor. 
@@ -218,16 +218,16 @@ A következő diagram a tranzakciók sorozatát, és a súlyozott átlagon alapu
 ![Súlyozott átlag jelöléssel    ](./media/weightedaveragewithmarking.gif) 
 
 **Jelmagyarázat**
--   A készlettranzakciókat függőleges nyilak jelölik.
--   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
--   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva Quantity@Unitprice formátumban.
--   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
--   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
--   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
--   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
--   A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
+- A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
+- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, a mennyiség@"Unitprice" formátumban.
+- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
+- Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A készletzárásokat egy piros színű, szaggatott függőleges vonal és a Készletzárás felirat jelöli.
+- A készletzárás által végrehajtott elszámolásokat pontozott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 
 

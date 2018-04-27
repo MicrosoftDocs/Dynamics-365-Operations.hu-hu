@@ -25,7 +25,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="tax-directives-for-europe"></a>Európai adóügyi irányelvek
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Az EU-irányelv valamennyi tagállam által követendő szabályozásokat tartalmaz a számlaszabályokkal, valamint a számlák létrehozásakor kötelezően feltüntetendő információkkal kapcsolatosan. Az EU-irányelv felsorolja a szállítóknak az EU-ban az ügyfelek számára feltüntetni szükséges információkat. Például a számla tartalmazhat egy hivatkozást, amely leírja a jogi alapját a nulla százalékos áfa alkalmazásának, vagy egy mentességnek. Ha a számla módosítja a korábban elküldött számlát, például egy jóváírást, akkor egyértelmű kell utalni az eredeti számlára.
 

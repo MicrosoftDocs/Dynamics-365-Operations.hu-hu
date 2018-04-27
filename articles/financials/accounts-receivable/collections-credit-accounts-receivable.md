@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Követelések és beszedések a Kinnlevőségek modulban
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A kinnlevőségek beszedési információját a Finance and Operations beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
 
@@ -70,9 +69,9 @@ A következő listaoldalak megkönnyítik beszedési információk rendezését.
 
 > [!NOTE]
 > A korosítási pillanatképet létre kell hozni, mielőtt megtekintheti ezeken az oldalakon lévő információkat. Csak olyan vevők adatai jelennek meg, akikről készült korosítási pillanatkép. A listalapon megjelenített rekordokat szűrni is lehet, a következőképpen:
-<li>Alapértelmezés szerint a Finance and Operations-felhasználó hozzáféréssel rendelkezik az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
-<li>Ha léteznek vevőgyűjtők, a felhasználót pénzbehajtóként kell beállítani, hogy használhassa a gyűjtőt a beszedési listaoldalon lévő információk szűréséhez. A kiválasztott vevőgyűjtőben lévő vevők számára az információ korlátozott.</li>
-<li>Ha egy felhasználó pénzbehajtóként van beállítva, csak annak a pénzbehajtónak kiválasztott gyűjtők érhetők el a listaoldalon. Ha a Beszedéskezelő megtekintheti az összes vevőgyűjtőt váltás van kiválasztva a Pénzbehajtó oldalon a pénzbehajtó számára, minden gyűjtő elérhető számára.</li>
+> <li>Alapértelmezés szerint a Finance and Operations-felhasználó hozzáféréssel rendelkezik az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
+> <li>Ha léteznek vevőgyűjtők, a felhasználót pénzbehajtóként kell beállítani, hogy használhassa a gyűjtőt a beszedési listaoldalon lévő információk szűréséhez. A kiválasztott vevőgyűjtőben lévő vevők számára az információ korlátozott.</li>
+> <li>Ha egy felhasználó pénzbehajtóként van beállítva, csak annak a pénzbehajtónak kiválasztott gyűjtők érhetők el a listaoldalon. Ha a Beszedéskezelő megtekintheti az összes vevőgyűjtőt váltás van kiválasztva a Pénzbehajtó oldalon a pénzbehajtó számára, minden gyűjtő elérhető számára.</li>
 
 
 ## <a name="collections-page"></a>Beszedések lap

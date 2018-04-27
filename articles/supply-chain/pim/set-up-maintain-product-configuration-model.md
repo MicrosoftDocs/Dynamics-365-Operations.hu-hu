@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="set-up-a-product-configuration-model"></a>Termékkonfigurációs modell beállítása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja a termékkonfigurációs modell létrehozásának és beállításának lépéseit.
 

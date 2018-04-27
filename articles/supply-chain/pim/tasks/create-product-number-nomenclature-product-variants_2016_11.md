@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product-number-for-configured-product-variants"></a>Termékszám létrehozása konfigurált termékváltozatokhoz
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan állítható be termékszámozás-elnevezési rendszer konfigurált termékváltozatok számára, és hogyan rendelhető hozzá konfigurálható alaptermékhez. Az eljárás emellett bemutatja, hogyan készíthető konfigurációelnevezési rendszer termékkonfigurációs modell összetevőjéhez. Ez az eljárás az USMF bemutatócéget használja. Az új termékszám-elnevezési rendszer a D0004 alaptermékhez van rendelve. Ezt a feladatot általában egy terméktervező végzi.
 

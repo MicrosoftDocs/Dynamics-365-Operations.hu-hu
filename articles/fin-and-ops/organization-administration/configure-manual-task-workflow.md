@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-task-in-a-workflow"></a>Manuális feladat konfigurálása munkafolyamatban
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan kell konfigurálni a manuális feladat tulajdonságait.
 

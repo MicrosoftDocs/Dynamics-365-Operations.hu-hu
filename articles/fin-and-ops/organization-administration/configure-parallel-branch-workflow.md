@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Párhuzamos ágának konfigurálása munkafolyamatban
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A párhuzamos ág beállításához végezze el a következő eljárásokat a munkafolyamat-szerkesztőben.
 

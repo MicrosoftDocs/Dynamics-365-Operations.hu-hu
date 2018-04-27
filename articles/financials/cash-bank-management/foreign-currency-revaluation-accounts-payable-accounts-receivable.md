@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>A kötelezettségek és Kinnlevőségek árfolyam-korrekció
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Az árfolyamok ingadozásai a devizában megadott nyitott tranzakciók elméleti értékét (könyv szerinti értéke) az idők során megváltoztatják. Ez a cikk tájékoztatást nyújt arról a devizaátértékelési folyamatról, amely a Kötelezettségek és Kinnlevőségek nyitott tranzakciók értékének frissítését elvégzik. 
 

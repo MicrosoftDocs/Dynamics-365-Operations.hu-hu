@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-transaction-options"></a>Tárgyieszköz-tranzakciók beállításai
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be.
 

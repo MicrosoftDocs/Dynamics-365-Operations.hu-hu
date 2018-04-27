@@ -17,15 +17,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7265e119a8b59399db1fa35373a7b6aba52ba8e0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 325cf12345afcf531181f65a41d0e5262798c14f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="onboard-vendors"></a>Szállítók felvétele
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 ---
 
 Az új szállítók felvétele és szállítóként való regisztrálása a Microsoft Dynamics 365 for Finance and Operations rendszerben a szállítókat képviselő személyektől gyűjtött információk alapján történnek.
@@ -164,13 +165,15 @@ A potenciális szállító regisztrálási kérelmének különböző állapotai
 
 A **Törlés** művelet használatával a potenciális szállító regisztrálási kérelmén kiürítheti és eltávolíthatja a létrehozott rekordláncot, és így inaktiválhatja a felhasználói fiókot. A **Törlés** művelet végeredménye a potenciális szállító regisztrálási kérelmének állapotától függően változik, ahogy az alábbi táblázat is mutatja.
 
-| Állapot                   | Állapot leírása | A törlés művelet végeredménye |
-|--------------------------|--------------------|-----------------------------------|
-| Új                      | A kérelem nem eredményezett semmilyen műveletet. | A potenciális szállító regisztrálási kérelme törlésre került. |
-| Felhasználó kérelmezve           | Ha kiválasztja a **Felhasználó meghívása** opciót, akkor az állapot erre változik: **Felhasználó által kérelmezve**, és egy potenciális felhasználói kérelem jön létre, majd kerül elküldésre egy felhasználói kérelem munkafolyamathoz. | Nem törölheti ki az ebben az állapotban található potenciális szállító regisztrálási kérelmeket, mivel a felhasználói kérelem munkafolyamat nem fejeződött be. |
-| Felhasználó meghívva             | A felhasználói kérelem munkafolyamat jóváhagyásra kerül, és létrejön a felhasználó. | Létrejön egy kérelem a felhasználó inaktiválására, és a potenciális szállító regisztrálási kérelme törlésre kerül. |
-| Regisztráció folyamatban | Az új felhasználó bejelentkezett, és elindította a szállítói regisztrációs varázslót. | Létrejön egy kérelem a felhasználó inaktiválására, és a potenciális szállító regisztrálási kérelme, valamint a szállítói regisztrációs varázslóban megadott adatok törlésre kerülnek. |
-| Szállítókérés létrehozva   | A szállítói regisztrációs varázsló befejeződött. | Létrejön egy kérelem a felhasználó inaktiválására, és a potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.<blockquote>[!NOTE]<br>Nem használhatja a **Törlés** műveletet, amikor a szállítókérés ellenőrzési folyamatban van a munkafolyamaton belül.</blockquote> |
-| Engedélyezve                 | A szállítókérés jóváhagyásra kerül. | A potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek. |
-| Elutasítva                 | A szállítókérést elutasították. | A potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek. |
+
+|          Állapot          |                                                                                     Állapot leírása                                                                                      |                                                                                                                                                            A törlés művelet végeredménye                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           Új            |                                                                         A kérelem nem eredményezett semmilyen műveletet.                                                                          |                                                                                                                                              A potenciális szállító regisztrálási kérelme törlésre került.                                                                                                                                               |
+|      Felhasználó kérelmezve      | Ha kiválasztja a <strong>Felhasználó meghívása</strong> opciót, akkor az állapot erre változik: <strong>Felhasználó által kérelmezve</strong>, és egy potenciális felhasználói kérelem jön létre, majd kerül elküldésre egy felhasználói kérelem munkafolyamathoz. |                                                                                                          Nem törölheti ki az ebben az állapotban található potenciális szállító regisztrálási kérelmeket, mivel a felhasználói kérelem munkafolyamat nem fejeződött be.                                                                                                          |
+|       Felhasználó meghívva       |                                                               A felhasználói kérelem munkafolyamat jóváhagyásra kerül, és létrejön a felhasználó.                                                               |                                                                                                                      Létrejön egy kérelem a felhasználó inaktiválására, és a potenciális szállító regisztrálási kérelme törlésre kerül.                                                                                                                      |
+| Regisztráció folyamatban |                                                         Az új felhasználó bejelentkezett, és elindította a szállítói regisztrációs varázslót.                                                          |                                                                                     Létrejön egy kérelem a felhasználó inaktiválására, és a potenciális szállító regisztrálási kérelme, valamint a szállítói regisztrációs varázslóban megadott adatok törlésre kerülnek.                                                                                      |
+|  Szállítókérés létrehozva  |                                                                     A szállítói regisztrációs varázsló befejeződött.                                                                      | Létrejön egy kérelem a felhasználó inaktiválására, és a potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.<blockquote>[!NOTE]<br>Nem használhatja a <strong>Törlés</strong> műveletet, amikor a szállítókérés ellenőrzési folyamatban van a munkafolyamaton belül.</blockquote> |
+|         Engedélyezve         |                                                                               A szállítókérés jóváhagyásra kerül.                                                                               |                                                                                                   A potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.                                                                                                    |
+|         Elutasítva         |                                                                               A szállítókérést elutasították.                                                                               |                                                                                                   A potenciális szállító regisztrálási kérelme, a szállítói regisztrációs varázslóban megadott adatok, valamint a szállítókérés törlésre kerülnek.                                                                                                    |
+
 

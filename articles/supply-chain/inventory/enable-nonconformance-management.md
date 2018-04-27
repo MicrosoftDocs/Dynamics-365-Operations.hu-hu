@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nonconformance-management"></a>Szabálytalanságok kezelése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a szabálytalanságok használatához szükséges alapbeállításokat ismerteti. A minőségi rendelések használatához további beállítások szükségesek.
 

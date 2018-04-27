@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>Naplóbejegyzések és tranzakciók megtekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a napló bejegyzések és tranzakciók megtekintésének számos módját ismerteti. 
 
@@ -55,7 +54,7 @@ A pénzügyi jelentéseken kívül a következő főkönyvi jelentések állnak 
 -   **Tranzakció eredete** – Ez a tranzakció jelentés mutatja a számlát napló szerint, és tranzakció, könyvelés és jelentési pénznem szerint. Ezen felül megjeleníti napló összes ellentételként használt sorát.
 
 
-##<a name="see-also"></a>Lásd még
+## <a name="see-also"></a>Lásd még
 - [Főkönyvi számlaegyenlegek](general-ledger-account-balances.md) 
 - [Könyvelési források böngészője](..\accounts-payable\accounting-source-explorer.md)
 - [Pénzügyi jelentéskészítés](financial-reporting-getting-started.md)

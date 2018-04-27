@@ -17,31 +17,30 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9c974041c614c67335bb40f4f461bc1999bf3eb0
-ms.openlocfilehash: 476ae035674c0b9c3af18db28668442247b5e310
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 74e45d86c6d9f45ca9b1a4b0e60860a793b537a0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail"></a>Újdonságok és változások a Dynamics 365 for Retail programban
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Ez az oldal olyan erőforrásokat mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Retail rendszer legújabb kiadásainak új szolgáltatásait és módosításait.
 
-[!include[release notes](../includes/release-notes.md)]
- 
+[!INCLUDE [release notes](../includes/release-notes.md)]
 
 ## <a name="releases-of-dynamics-365-for-retail"></a>A Dynamics 365 for Retail kiadásai
 
 |Kiadás | Szám felépítése | Elérhetőség | További tájékoztatás |
 |--------|--------------|--------------|------------|
-|Dynamics 365 for Retail 7.3.2 | 7.3.21971.64040 | március 2018. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keressen rá a **Dynamics 365 for Retail 7.3.2-mal kiadott** funkciókra. |
-|Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | március 2018. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keressen rá a **Dynamics 365 for Retail 7.3.1-mal kiadott** funkciókra. |
-|Dynamics 365 for Retail 7.3 | 7.3.21971.64028 | február 2018. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keressen rá a **Dynamics 365 for Retail 7.3-mal kiadott** funkciókra. |
-|5. alkalmazásfrissítés | 7.2.21792.64093 | február 2018. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keresse az **5. alkalmazásfrissítéssel kiadott** funkciókat. |
-|4. alkalmazásfrissítés | 7.2.21792.64070 | október 2017. | 1. Lépjen a [Dynamics 365 tervhez](https://roadmap.dynamics.com/).<br><br>2. Kattintson az **Újdonságok** lapfülre.<br><br>3. Kattintson a **Dynamics 365 for Retail** jelölőnégyzetre.<br><br>4. Keresse a **4. alkalmazásfrissítéssel kiadott** funkciókat. |
+|Dynamics 365 for Retail 7.3.2 | 7.3.21971.64040 | március 2018. | [KB 4093263: 7.3.2* verzió](https://fix.lcs.dynamics.com/Issue/Details?kb=4093263&bugId=3937220&qc=63d57de184b7b2ac5563767292dacaea8621707198b55ea9c5f08b106a4c5132) |
+|Dynamics 365 for Retail 7.3.1 | 7.3.21971.64032 | március 2018. | [KB 4092799: 7.3.1* verzió](https://fix.lcs.dynamics.com/Issue/Details?kb=4092799&bugId=3936439&qc=b095917f0b114a26af430086cd5dc7eb4d383b6bcf225a62952cacff0f730c06) |
+|Dynamics 365 for Retail 7.3 | 7.3.21971.64028 | február 2018. | **Hamarosan** |
+|5. alkalmazásfrissítés | 7.2.21792.64093 | február 2018. | [KB 4089596: 5. frissítés*](https://fix.lcs.dynamics.com/Issue/Details?kb=4089596&bugId=3893142&qc=ee9db96dd13dc341e7019fad3d36d01c6dfc4edf631f752f66d87f2ebbd256f5) |
+|4. alkalmazásfrissítés | 7.2.21792.64070 | október 2017. | [KB 4052437: 4. frissítés*](https://fix.lcs.dynamics.com/Issue/Details?kb=4052437&bugId=3866274&qc=dfcd40f8c5d0d863cc6ae10fe7dd3fb57450327d4f82f10c57886d579e6d4838) |
 |3. alkalmazásfrissítés | 7.2.21792.64062 | Szeptember 2017. |[KB 4045959: 3. frissítés*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045959&bugId=3857200&qc=a4c0715ff69d491d63c424f56b124f458ac3ca422e4a74c67d23a58b16050ad1)|
 |2. alkalmazásfrissítés | 7.2.21792.64041 | Szeptember 2017. | [KB 4042241: 2. frissítés*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4042241&bugId=3850819&qc=578d82fcfe02befb2a2ee4af467bda26af88742548e1bd8291a359ebdb360410)|
 |1. alkalmazásfrissítés |7.2.21792.64032   | július 2017.|[KB 4037180: 1. frissítés*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4037180&bugId=3848337&qc=578d82fcfe02befb2a2ee4af467bda26af88742548e1bd8291a359ebdb360410)|

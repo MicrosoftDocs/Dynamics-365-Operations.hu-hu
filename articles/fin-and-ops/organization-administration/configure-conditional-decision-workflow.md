@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-conditional-decision-in-a-workflow"></a>Feltételes döntés konfigurálása munkafolyamatban
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ezt követően a következő eljárás segítségével állítsa be egy feltételes döntés tulajdonságait.
 

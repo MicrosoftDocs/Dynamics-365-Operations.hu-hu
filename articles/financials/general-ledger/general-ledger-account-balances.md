@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>Főkönyvi számlaegyenleg
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk két módszert ír le a főkönyv számlaegyenlegének megtekintésére - a főkönyvi kivonat lista lapot és a pénzügyi jelentéseket. Ismerteti továbbá a dimenziókészlet egyenlegének frissítését is.
 

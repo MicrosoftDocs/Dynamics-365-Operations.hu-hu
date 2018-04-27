@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-bank-account"></a>Szállítói bankszámla létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja a szállítóhoz tartozó bankszámla létrehozásának módját. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
 

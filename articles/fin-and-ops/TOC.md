@@ -1,3 +1,4 @@
+
 # [Dynamics 365 for Finance and Operations](index.md)
 
 ## Első lépések
@@ -17,13 +18,15 @@
 ##### [A Finance and Operations megvásárlása (helyszíni)](get-started/purchase-on-premises.md)
 
 ### [Új vagy módosult elemek](get-started/whats-new-changed.md)
+#### [A szoftver életciklusára vonatkozó irányelv és a felhőbeli kiadások](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
+#### [A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások](../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json)
 #### [Eltávolított vagy elavult funkciók](../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json)
-#### [Elhalasztott AX 2012-funkciók](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
+#### [Az AX 2012 elhalasztott funkciói](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [A helyszíni telepítéseknél nem elérhető funkciók](get-started/features-not-implemented-on-prem.md)
+#### [Finance and Operations 8.0 (2018. április)](get-started/whats-new-changed-8-0-April-2018.md)
 #### [Platform update 15 (2018. március)](get-started/whats-new-platform-update-15.md)
-#### [Kiadások és életciklusra vonatkozó irányelvek.](../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json)
-#### [Helyszíni telepítések (2018. március)](get-started/whats-new-LBD-PU12-App72.md)
-#### [Finance and Operations, Enterprise Edition 7.3](get-started/whats-new-application-7.3-update.md)
+#### [A 7.2 helyszíni telepítése a 12. platformfrissítéssel (2018. március)](get-started/whats-new-LBD-PU12-App72.md)
+#### [Finance and Operations, Enterprise edition 7.3](get-started/whats-new-application-7.3-update.md)
 #### [Platform update 12 (2017. november)](get-started/whats-new-platform-update-12.md)
 #### [Platform update 11 (2017. október)](get-started/whats-new-platform-update-11.md)
 #### [Platform update 10 (2017. augusztus)](get-started/whats-new-platform-update-10.md)
@@ -162,9 +165,13 @@
 ###### [Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
 ###### [Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ###### [Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+##### [A Field Service szolgáltatással való integráció konfigurálása](../supply-chain/sales-marketing/field-service.md)
+###### [A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel](../supply-chain/sales-marketing/field-service-product.md)
+###### [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel](../supply-chain/sales-marketing/field-service-work-order.md)
+###### [A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódő számlák szinkronizálása a Finance and Operations szabadszöveges számláival](../supply-chain/sales-marketing/field-service-invoice.md)
 
 
-#### [Külső webszolgáltatásokat fogyasztó](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
+#### [Külső webszolgáltatások használata](../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json)
 
 
 ## [Adatkezelés](../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json)
@@ -198,6 +205,8 @@
 #### [Biztonság és adatentitások](../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json)
 
 ### [Használja saját adatbázisát](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
+
+### [Adatfeladat automatizálása](../dev-itpro/data-entities/data-task-automation.md)
 
 ## [Pénzgazdálkodás](../financials/index.md)
 
@@ -752,8 +761,9 @@
 #### [EU értékesítési lista jelentés](../financials/localizations/emea-eu-sales-list.md)
 #### [Árfolyam-korrekciók](../financials/localizations/emea-exchange-rate-adjustments.md)
 #### [Fizetési módok fájlformátumai](../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
-#### [Pénzügyi szolgáltatások (ESR) integrációja](../financials/localizations/emea-fiscal-service-integration.md)
+#### [Pénzügyi szolgáltatásintegráció (ESR)](../financials/localizations/emea-fiscal-service-integration.md)
 #### [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+#### [Devizaátértékelés](../financials/localizations/emea-foreign-currency-revaluation.md)
 #### [Árumozgási dokumentum létrehozása belső készlet átviteléhez](../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md)
 #### [Az Uniós Intrastat nyilatkozat létrehozása](../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md)
 #### [EU értékesítési lista jelentés készítése](../financials/localizations/tasks/eur-00011-eu-sales-list-report.md)
@@ -809,13 +819,7 @@
 
 #### [Ausztria](../financials/localizations/austria.md)
 
-#### Belgium
-##### [CODA banki kivonat](../financials/localizations/emea-bel-coda-bank-statement-import.md)
-##### [Tranzakciók létrehozása és továbbítása a BLWI számára](../financials/localizations/tasks/be-00011-create-transfer-blwi.md)
-##### [Intervat-adóbevallás](../financials/localizations/emea-bel-intervat-tax-declaration.md)
-##### [PRODCOM-jelentés beállítása](../financials/localizations/emea-bel-prodcom-report.md)
-##### [Egyeztetési jelentések](../financials/localizations/emea-bel-reconciliation-reports.md)
-##### [Fizetésiegyenleg-jelentések beállítása](../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md)
+#### [Belgium](../financials/localizations/belgium.md)
 
 #### [Cseh Köztársaság](../financials/localizations/czech-republic.md)
 
@@ -833,6 +837,7 @@
 ##### [Fizetési bizonylat formátumának beállítása](../financials/localizations/tasks/set-up-payment-slip-format.md)
 
 #### Észtország
+##### [Személyes információk kérése](../financials/localizations/emea-est-personal-info.md)
 ##### [Áfabevallás](../financials/localizations/emea-est-vat-statement-details.md)
 
 #### Franciaország
@@ -859,6 +864,9 @@
 ##### [RB/SL értékcsökkenés](../financials/localizations/emea-fra-rbsl-depreciation.md)
 ##### [Fizetési mód beállítása](../financials/localizations/tasks/fr-00004-setup-method-payment.md)
 ##### [Fizetési mód módosítása a vevőnél](../financials/localizations/tasks/fr-00004-update-method-payment-customer.md)
+##### Retail
+###### [Pénztárgépek](../retail/localizations/emea-fra-cash-registers.md)
+###### [Pénztárgépek telepítésére vonatkozó irányelvek](../retail/localizations/emea-fra-deployment.md)
 
 #### Németország
 ##### [Értékcsökkenés a további beszerzéseken](../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
@@ -877,6 +885,7 @@
 ##### [Értékcsökkenés módjai tárgyi eszközöknél](../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)
 ##### [Kis értékű tárgyi eszközök](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 ##### [Tárgyi eszköz áthelyezése készletbe](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+##### [Adóvisszaigénylési dokumentum](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
 
 #### Izland
 ##### [Szállítói számla létrehozása és számlabevallás-kategória csatolása](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
@@ -891,6 +900,7 @@
 ##### [Tárgyi eszközök értékcsökkenése](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
 ##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Szállítólevél dátumigazolása a számlákon](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+##### [Feladás és a szállítás részleteit tartalmazó szállítólevél nyomtatása](../financials/localizations/emea-ita-packing-slip.md)
 ##### [Áfakönyvek](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
 ##### [Adóelőleg](../financials/localizations/emea-ita-withholding-tax.md)
@@ -943,8 +953,9 @@
 ##### [Kötelezvény beállításai](../financials/localizations/emea-esp-promissory-note-options.md)
 ##### [340-es bevallás](../financials/localizations/emea-esp-report-340.md)
 ##### [Beszerzési és értékesítési ciklusok](../financials/localizations/emea-esp-sales-purchase-cycle.md)
-##### [Speciális bejegyzések és nyitólapok](../financials/localizations/emea-esp-opening-sheets-spain.md)
+##### [Speciális bevitelek és nyitólapok](../financials/localizations/emea-esp-opening-sheets-spain.md)
 #### Svédország
+##### [Pénzügyi adatok exportálása könyvvizsgálóknak Svédország esetében](../financials/localizations/emea-swe-sie-standard-report.md)
 ##### [Fizetési formátumok importálása](../financials/localizations/emea-swe-payment-formats-import.md)
 ##### [Pénztárgépek](../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json)
 #### Svájc
@@ -1219,6 +1230,7 @@
 #### [SSRS beállítása helyszíni telepítésre](../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json)
 #### [Nyomtatás](../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json)
 ##### [A Dokumentumirányítási ügynök telepítése a hálózati nyomtató eszközök engedélyezéséhez](../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json)
+##### [A dokumentumirányítási ügynök frissítése](../dev-itpro/analytics/upgrade-document-routing-agent.md)
 ##### [Hálózati nyomtatók helyszíni környezetben történő telepítése](../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json)
 ##### [Dokumentum-létrehozási, közzétételi és nyomtatási képességek on-premises telepítéseknél](../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json)
 ##### [A Dokumentumirányítási ügynök futtatása Windows-szolgáltatásként](../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json)
@@ -1233,7 +1245,8 @@
 
 
 ### [Elektronikus jelentéskészítés](../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json)
-#### [Az Elektronikus jelentéskészítés keretrendszer konfigurálása](../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json)
+#### [Az Elektronikus jelentéskészítési keretrendszer konfigurálása](../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json)
+#### [Konfiguráció létrehozása](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
 ##### [Konfigurációszolgáltató létrehozása és megjelölése aktívként az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Tartományspecifikus adatmodell tervezése elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json)
 ##### [Modell-leképezés meghatározása és adatforrások kiválasztása elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json)
@@ -1248,48 +1261,46 @@
 ##### [Elektronikus jelentéskészítési célhelyek konfigurálása](../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [Konfiguráció tervezése Microsoft Word formátumú jelentések létrehozására elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json)
 #### [Konfiguráció tervezése OpenXML formátumú jelentések létrehozására elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json)
-#### [Formátum módosítása Microsoft Excel sablon újbóli alkalmazásával az elektronikus jelentéskészítésben](../dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017.md?toc=/fin-and-ops/toc.json)
 #### [Elektronikus jelentés formátumának módosítása Microsoft Excel sablon újbóli alkalmazásával](../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json)
 #### [Adatmodell definíciójának kiválasztása az elektronikus jelentéskészítés formátumának létrehozása közben](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [A konfigurációk függőségének meghatározása más összetevőkből az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Adatmodell tervezése pénzügyi dimenziók adatforrásként történő használatára elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
-##### [Modellek feltérképezése pénzügyi dimenziók adatforrásként történő használatára elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
-##### [Jelentés tervezése pénzügyi dimenziók adatforrásként történő használatára elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
-##### [Pénzügyi dimenziókat adatforrásként használó jelentés futtatása elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
-##### [Formátum létrehozása számláláshoz és összegzéshez az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
-##### [Számítások konfigurálása számláláshoz és összegzéshez az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
-##### [Számítások használata a számlálás és összegzés kimenetéhez az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
-##### [Formátum futtatása számláláshoz és összegzéshez az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
-##### [Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
-##### [Vízszintesen bővíthető tartományokat használó formátum futtatása oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
-##### [Adatmodell előkészítése dokumentumkezelési fájlok használatára formátumkimenetekben elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
-##### [Adatmodell kibővítése dokumentumkezelési fájlok használatára formátumkimenetekben elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
-##### [Formátum létrehozása dokumentumkezelési fájlok használatára formátumkimenetekben elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
-##### [Formátum futtatása dokumentumkezelési fájlok használatára formátumkimenetekben elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
-##### [Formátum módosítása és futtatása dokumentumkezelési fájlok használatára formátumkimenetekben elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
-##### [Konfigurációk tervezése Microsoft Office formátumban beágyazott képekkel készítendő jelentések létrehozásához az elektronikus jelentéskészítéshez (ER) (1. rész) ](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
-##### [Konfigurációk áttekintése Microsoft Office formátumban beágyazott képekkel készítendő jelentésekhez az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
-##### [Jelentések létrehozása Microsoft Office formátumban beágyazott képekkel az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
+#### [A konfigurációk függőségének meghatározása más összetevőkből az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Adatmodell tervezése pénzügyi dimenziók adatforrásként történő használatára](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json)
+##### [Modell feltérképezése pénzügyi dimenziók adatforrásként történő használatára](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json)
+##### [Jelentés tervezése pénzügyi dimenziók adatforrásként történő használatára](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json)
+##### [Jelentés futtatása pénzügyi dimenziók adatforrásként történő használatára](../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json)
+##### [Számlálási és összegzési formátumának létrehozása](../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json)
+##### [Számítások konfigurálása számláláshoz és összegzéshez](../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json)
+##### [Számítások használata a számlálás és összegzés kimenetéhez](../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json)
+##### [Formátum futtatása számláláshoz és összegzéshez](../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json)
+##### [Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához](../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json)
+##### [Vízszintesen bővíthető tartományokat használó formátum futtatása oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához](../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json)
+##### [Adatmodell előkészítése dokumentumkezelési fájlok használatához formátumkimenetekben](../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json)
+##### [Adatmodell kiterjesztése dokumentumkezelési fájlok használatához formátumkimenetekben](../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json)
+##### [Formátum létrehozása dokumentumkezelési fájlok használatára formátumkimenetekben](../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json)
+##### [Formátum futtatása dokumentumkezelési fájlok használatára formátumkimenetekben](../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json)
+##### [Formátum módosítása és futtatása dokumentumkezelési fájlok használatára formátumkimenetekben](../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json)
+##### [Konfigurációk tervezése jelentések készítéséshez Microsoft Office formátumokban, beágyazott képekkel](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Konfigurációk áttekintése jelentések készítéséshez Microsoft Office formátumokban, beágyazott képekkel](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Jelentések készítése Microsoft Office formátumokban, beágyazott képekkel](../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json)
 #### [Elektronikus dokumentumok generálása és alkalmazások adatainak frissítése az Elektronikus jelentéskészítő eszköz használatával](../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json)
-##### [Konfigurációk importálása alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
-##### [Alkalmazásadatok módosítását tartalmazó dokumentumok létrehozása az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
-##### [Modell és leképezés módosítása alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
-##### [Formátum módosítása az alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
-##### [Alkalmazásadatok módosítását tartalmazó dokumentumok létrehozása az elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
+##### [Konfigurációk importálása dokumentumoknak alkalmazásadatokkal történő létrehozásához](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json)
+##### [Konfigurációk tervezése dokumentumoknak alkalmazásadatokkal történő létrehozásához](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json)
+##### [Modell és feltérképezés módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json)
+##### [Formátum módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json)
+##### [Dokumentumok létrehozása alkalmazásadatokkal](../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json)
 #### [Képek és alakzatok beágyazása az Elektronikus jelentéskészítő eszköz által generált üzleti dokumentumokba](../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json)
-#### [Elektronikus jelentéskészítési konfiguráció feltöltése a Lifecycle Services rendszerbe](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
-##### [Elektronikus jelentéskészítési konfiguráció importálása a Lifecycle Services rendszerből](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
 #### [A konfiguráció életciklusának kezelése](../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json)
-#### [Konfiguráció létrehozása](../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json)
-#### [Konfigurációk letöltése a Lifecycle Services szolgáltatásból](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
-#### [Az Elektronikus jelentéskészítés funkcióinak bővítése](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
-##### [Modell-leképezési konfigurációk kezelése elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
+##### [Elektronikus jelentéskészítési konfiguráció feltöltése a Lifecycle Services rendszerbe](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Elektronikus jelentéskészítési konfiguráció importálása a Lifecycle Services rendszerből](../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json)
+##### [Konfigurációk letöltése a Lifecycle Services szolgáltatásból](../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json)
+##### [Elektronikus jelentéskészítési konfigurációk importálása](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
+#### [Modell-leképezési konfigurációk kezelése elektronikus jelentéskészítéshez](../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json)
 ##### [Kötelező konfigurációk létrehozása külső fájlból történő adatok importálásához az elektronikus jelentéskészítésben](../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json)
-#### [Elektronikus jelentéskészítési konfigurációk importálása](../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json)
 #### [Bejövő dokumentumok elemzése az alkalmazásadatok módosításához](../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json)
 #### [Bejövő dokumentumok elemzése CSV-formátumban](../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json)
-
+##### [Az Elektronikus jelentéskészítés funkcióinak bővítése](../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json)
 ##### [Elektronikus jelentési keretrendszer API módosítások a 7.3-as alkalmazásfrissítéshez](../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json)
+
 
 ### Beágyazott analitikai megoldások
 #### [Beágyazott Power BI a munkaterületeken](../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json)
@@ -1451,7 +1462,8 @@
 #### [Szállító felvétele](../supply-chain/procurement/vendor-onboarding.md)
 #### [A külső szállítókkal történő szállítói együttműködés](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Szállítói együttműködés a vevőkkel](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
-#### [Külső katalógus beállítása a PunchOut e-beszerzés számára](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
+#### [Szállítói katalógusok importálása](../supply-chain/procurement/vendor-catalogs-import.md)
+#### [Állítson be külső katalógust a PunchOut e-beszerzés számára](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
 #### [Külső katalógus használatának engedélyezése a PunchOut e-beszerzés számára](../supply-chain/procurement/use-external-catalogs-for-punchout.md)
 #### [Szállítói együttműködési mobil munkaterület](../supply-chain/procurement/vendor-collaboration-mobile-workspace.md)
 
@@ -1598,14 +1610,16 @@
 ##### [Anyaghelyettesítés a gyártásban](../supply-chain/production-control/substitute-items-bom-lines.md)
 ##### [Gyártásvégrehajtás regisztrációja](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Termelési visszajelzés](../supply-chain/production-control/production-feedback.md)
-##### [Munkaidő és jelenlét rögzítése](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Távollét regisztrálása munkaidőben és jelenlétben](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 ##### [Munkaidő és jelenlét bérlistafolyamatának engedélyezése](../supply-chain/production-control/tasks/payroll-process-time-attendance.md)
 ##### [Dolgozó konfigurálása mobil feladatvégző eszközzel](../supply-chain/production-control/tasks/worker-mobile-job-device.md)
 #### Pénzügyi termelési adatok kezelése
 ##### [Idők hozzárendelése egy feladatköteg feladataihoz](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Anyagfelhasználás kiszámítása](../supply-chain/production-control/consumption.md)
 ##### [Termelés feladása](../supply-chain/cost-management/production-posting.md)
+#### [Munkaidő és jelenlét rögzítése](../supply-chain/production-control/time-attendance-registrations.md)
+##### [Regisztrációk alapján történő fizetés](../supply-chain/production-control/pay-based-on-registrations.md)
+##### [Távollét regisztrálása munkaidőben és jelenlétben](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Rugalmasidő-csoportok](../supply-chain/production-control/time-attendance-flex-groups.md)
 
 ### Lean manufacturing (lean gyártás) 
 #### [Lean manufacturing (áttekintés)](../supply-chain/production-control/lean-manufacturing-overview.md)
@@ -1836,6 +1850,7 @@
 #### [Készlet mozgatásának engedélyezése társított munkával a Raktárkezelésben](../supply-chain/warehousing/move-inventory-associated-work.md)
 #### [Raktári dolgozók kezelése](../supply-chain/warehousing/manage-warehouse-workers.md)
 ### Kitárolás és csomagolás
+#### [Fürtkitárolás beállítása](../supply-chain/warehousing/set-up-cluster-picking.md)
 #### [Köteg és azonosítótábla megerősítése](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Menüelem létrehozása mobileszközhöz azonosítótábla-konszolidáláshoz](../supply-chain/warehousing/tasks/create-mobile-device-license-plate-consolidation.md)
 #### [Vegyes azonosítótábla bevételezése](../supply-chain/warehousing/mixed-license-plate-receiving.md)
@@ -1843,10 +1858,11 @@
 #### [Legrégebbi köteg kitárolása mobileszközön](../supply-chain/warehousing/pick-oldest-batch.md)
 #### [Vonalkódok beolvasása kamerával a Dynamics 365 for Finance and Operations szolgáltatásban](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
 #### [Darab kitárolásának megerősítése](../supply-chain/warehousing/piece-picking-confirmation.md)
-#### [Termék-visszaigazolás fürt kitárolásához](../supply-chain/warehousing/cluster-picking-item-confirmation.md)
+#### [Szállítási rakomány részleges szállíása](../supply-chain/warehousing/partial-shipping-of-transport-loads.md)
 #### [Részlegesen foglalt átmozgatási rendelések kötegelt kiadása](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 #### [Csomagolóanyagok és díjak](../supply-chain/warehousing/pack-materials-packing-material-fees.md)
 ### Készletszámlálás
+#### [Készletszámlálás okainak kódjai](../supply-chain/warehousing/reason-codes-for-counting-journals.md)
 #### [Készletzárolás](../supply-chain/inventory/inventory-blocking.md)
 #### [Ciklikus leltározás](../supply-chain/warehousing/cycle-counting.md)
 #### [Ciklikus leltározás meghatározása ](../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md)
@@ -1857,6 +1873,7 @@
 #### [Készlet állapota](../supply-chain/inventory/inventory-statuses.md)
 #### [Készletcímke számlálása](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Feltöltés](../supply-chain/warehousing/replenishment.md)
+#### [Azonnali feltöltés](../supply-chain/warehousing/immediate-replenishment.md)
 #### [Feltöltés visszavonási kanbanokkal](../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md)
 ### [A raktározási alkalmazás telepítése és konfigurálása ](../supply-chain/warehousing/install-configure-warehousing-app.md)
 #### [Mezőnevek konfigurálása a raktározási alkalmazásban](../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)

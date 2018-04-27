@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5472d69f6d0bb7a60fb417a0d1bdc3fbc6a5e18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-engines"></a>Szállításkezelő kalkulátorok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A szállításkezelő programok határozzák meg azt a logikát, amit a Szállításkezelő a szállítási díjak előállítására és feldolgozására használ. 
 
@@ -47,7 +46,7 @@ A következő táblázat a Microsoft Dynamics 365 for Finance and Operations ren
 | **Zónakalkulátor**                  | Az aktuális cím alapján kiszámítja a zónát, valamint azoknak a zónáknak a számát, amelyeken az A és B cím közötti szállítás során áthalad.                                                                                                                                                                    |
 | **Fuvarlevél típusa**            | Szabványosítja a fuvarszámlát és a fuvarlevél sorait, ezenkívül a fuvarlevél automatikus egyeztetésére is használható.                                                                                                                                                                                                                |
 
- 
+
 <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mely kalkulátorokat kell konfigurálni egy szállítmány díjának kiszámításához?
 ---------------------------------------------------
 
@@ -60,13 +59,13 @@ Annak érdekében, hogy a szállításkezelő kalkulátor a meghatározott módo
 -   Egyszerű konfigurációs adatok.
 
 Az inicializációs adatok beállításához a legtöbb esetben elég a szállításkezelő kalkulátor beállítási képernyőin a **Paraméterek** gombra kattintania. **A távolságkalkulátorra hivatkozó díjkalkulátor példája** A következő példa bemutatja, hogy milyen beállítás szükséges egy díjkalkulátor beállításához, amely a .NET kalkulátortípuson Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine alapul, és egy távolságkalkulátoron alapszik.
-| Paraméter             | Leírás                                                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | Az adott sémához a díjalap-hozzárendelés adatait értelmező .NET típus. A paraméterérték szintaxisa két függőleges vonallal (|) elválasztott szegmensből áll (|). Az első szegmens a hozzárendelés típusát meghatározó összeállítási nevet tartalmazza. A második szegmens a hozzárendelési típus teljes elérési útvonalának nevét határozza meg. Ebbe beletartozik a típus névtere is. |
-| *MileageEngineCode*   | A Microsoft Dynamics 365 for Finance and Operations adatbázisban a távolságkalkulátor rekordját azonosító távolságkalkulátor-kód.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | A Microsoft Dynamics 365 for Finance and Operations adatbázisban az arányosító kalkulátort azonosító általános kalkulátorkód.                                                                                                                                                                                                                                                              |
 
- 
+|          Paraméter           |                                                                                  Leírás                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <em>RateBaseAssigner</em>   | Az adott sémához a díjalap-hozzárendelés adatait értelmező .NET típus. A paraméterérték szintaxisa két függőleges vonallal (|) elválasztott szegmensből áll ( |
+|  <em>MileageEngineCode</em>  |                       A Microsoft Dynamics 365 for Finance and Operations adatbázisban a távolságkalkulátor rekordját azonosító távolságkalkulátor-kód.                        |
+| <em>ApportionmentEngine</em> |                        A Microsoft Dynamics 365 for Finance and Operations adatbázisban az arányosító kalkulátort azonosító általános kalkulátorkód.                        |
+
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hogyan használják a szállításkezelő kalkulátorok a metaadatokat?
 ----------------------------------------------------------
 
@@ -77,6 +76,7 @@ A Microsoft Dynamics 365 for Finance and Operations rendszerében történő dí
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Minden kalkulátorkonfigurációnak szüksége van metaadatokra?
 Nem. Nincs szükségük metaadatra azoknak a szállításkezelő kalkulátoroknak, amelyeket külső rendszerből származó díjkalkulációkhoz szükséges adatok beolvasására használnak. Az ezekhez szükséges díjadatok külső szállítmányozó rendszerekből érkezhetnek, amelyeket általában webszolgáltatással töltenek be. Például használhat olyan távolságkalkulátort, amely közvetlenül Bing térképekről tölti le az adatokat, így ehhez a kalkulátorhoz nincs szükség metaadatra.
+
 | **Megjegyzés**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | A Microsoft Finance and Operations rendszeréhez tartozó szállításkezelő kalkulátorok alkalmazásról letöltött adatokra támaszkodnak. A külső rendszerekhez csatlakozó kalkulátorok nem részei az Operations rendszernek. Azonban a kalkulátoralapú bővítési modell lehetővé teszi, hogy a Microsoft Dynamics 365 for Finance and Operations Visual Studio Tools segítségével bővítményeket hozzon létre. |

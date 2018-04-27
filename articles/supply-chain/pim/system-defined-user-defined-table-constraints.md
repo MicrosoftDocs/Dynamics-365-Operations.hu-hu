@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Rendszer által meghatározott és Felhasználó által meghatározott táblázat megszorítások
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja a táblamegszorítások két típusát termékkonfigurációs modell összetevői esetén: felhasználó és rendszer által meghatározott. A táblamegszorítások az engedélyezett attribútumkombinációk mátrixait jelölik, hol minden sor a lehetséges attribútumértékek egy készletét határozza meg.
 

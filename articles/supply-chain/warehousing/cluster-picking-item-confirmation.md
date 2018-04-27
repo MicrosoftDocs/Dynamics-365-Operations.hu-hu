@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Termék-visszaigazolás fürt kitárolásához
 A fürtkiválasztás lehetővé teszi, hogy egyszerre több megrendelést vegyen fel. Ha a fürtkiválasztást alkalmazzák, a cikkek megerősítése döntő fontosságú a fürtökhöz hozzáadott cikkek ellenőrzéséhez. A fürtkiválasztás folyamán ellenőrizheti a fürtkiválasztás cikkeit.
@@ -37,7 +37,8 @@ A fürtkiválasztáshoz tartozó cikkek ellenőrzése ugyanúgy működik, mint 
 1.  A mobileszköz menüpontjában nyissa meg a munkamegerősítés beállítási képernyőjét: **Raktárkezelés** > **Raktárkezelés** > **Beállítás** > **Mobileszköz** > **Mobileszköz menüpontjai**.
 2.  A mobileszköz menüpontjából nyissa meg a **Munkamegerősítés beállítását**.
 
-| Lehetőség        | Leírás   | 
-| ------------- | ------------- |
-|Termék visszaigazolása | Lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor.|
+|        Lehetőség        |                                    Leírás                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| Termék visszaigazolása | Lehetővé teszi, hogy a mobileszközről ellenőrizze a készlet minden elemét a beolvasáskor. |
+
 

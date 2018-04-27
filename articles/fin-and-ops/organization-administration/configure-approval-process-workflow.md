@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Jóváhagyási folyamat konfigurálása munkafolyamatban
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait.
 
@@ -136,6 +135,7 @@ Végleges jóváhagyót adhat meg olyan esetekben, amikor a jóváhagyó az a sz
 
 ## <a name="set-a-time-limit"></a>Időkorlát beállítása
 Kövesse az alábbi lépéseket, ha a jóváhagyási folyamatot egy megadott időn belül be kell fejezni.
+
 | **Megjegyzés**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Az ezen lépésekben kiválasztott beállítások felülbírálják az egyes jóváhagyási lépések esetében a **Hozzárendelés** és az **Eszkaláció** pontokban megadottakat. |

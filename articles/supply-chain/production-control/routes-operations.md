@@ -29,8 +29,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban. Az útvonal határozza meg egy termék vagy termékváltozat előállításának folyamatát. Leírja az termelési folyamat minden egyes lépését (műveletét), valamint meghatározza a lépések végrehajtásának sorrendjét is. Az útvonal minden egyes lépés esetében meghatározza a szükséges üzemi erőforrásokat, beállítási időt és futtatási időt, továbbá azt, hogy miként kell számítani a költséget.
 

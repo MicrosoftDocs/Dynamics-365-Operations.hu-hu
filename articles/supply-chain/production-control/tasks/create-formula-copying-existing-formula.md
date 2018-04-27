@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a>Receptúra létrehozása meglévő receptúra másolásával
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet gyorsan létrehozni új receptúrát meglévő receptúra másolásával. Ezen eljárás létrehozásához használhatók a USMF, USP2 vagy USPI bemutatócégek.
 

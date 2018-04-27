@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="three-way-matching-policies"></a>Háromirányú egyeztetési irányelvek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a háromirányú egyeztetésről nyújt tájékoztatást.
 

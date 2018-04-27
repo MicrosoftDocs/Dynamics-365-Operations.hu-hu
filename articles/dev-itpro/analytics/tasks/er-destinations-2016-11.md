@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-destinations-for-electronic-reporting-er"></a>Elektronikus jelentéskészítési (ER) célhelyek konfigurálása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan lehet a különböző helyeket beállítani és használnia az Elektronikus jelentés (ER) kimeneti összetevőire, például egy mappára vagy egy fájlra vonatkozóan. Ez az eljárás az DEMF bemutatócéget használja. Németország a jogi személy elsődleges címének országa\régiója, de ezen eljárás bármely jogi személyét használhatja. 
 

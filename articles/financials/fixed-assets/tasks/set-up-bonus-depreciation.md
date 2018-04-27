@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-bonus-depreciation"></a>Rendkívüli értékcsökkenés beállítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozzon létre különleges értékcsökkenési keretet, és hogyan társítsa azt tárgyieszköz-könyvhöz. Ez a könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.
 

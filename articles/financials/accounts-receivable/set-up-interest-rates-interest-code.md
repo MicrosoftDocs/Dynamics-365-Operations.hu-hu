@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7ae0bfdc157a7e2e5b9f871dae487a6f85e889b9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Kamatlábak beállítása kamatkódhoz
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A kamatkódok olyan beállításokat tartalmaznak, amelyek meghatározzák, hogy mikor kerül sor kamat felszámítására, és hogyan történik annak kiszámítása a hátralékos számlákon.
 
@@ -47,17 +46,17 @@ Ha a kamatszámításra egy kamatkód segítségével kerül sor, külön kamatl
 ## <a name="interest-rates-based-on-a-percentage"></a>Százalékértékek alapuló kamatlábak
 Beállíthat kamatlábakat, amelyek egy megadott százalékot számítanak.
 
--   A kamat összege az összes pénznemre vonatkozik.
--   A nem kötelező kamat összeg határaival lehet megadni.
--   **Százalék** van kiválasztva** **a **Kamat számítása alapján** mezőben a **Kamatkódok beállítása** oldalon.
+- A kamat összege az összes pénznemre vonatkozik.
+- A nem kötelező kamat összeg határaival lehet megadni.
+- <strong>Százalék</strong> van kiválasztva** <strong>a Kamat számítása alapján</strong> mezőben a <strong>Kamatkódok beállítása</strong> oldalon.
 
 Például, ha olyan kamatkódot szeretne beállítani, amely kéthavonta 5 % kamatot számít fel, miután a számla kifizetése túllépte a tranzakció esedékességi dátumát, akkor írjon be 2 értéket az **Összes kamat kiszámítása** mezőbe, és jelölje be **Hónap** lehetőséget.
 
 ## <a name="interest-rates-based-on-amounts"></a>Összegeken alapuló kamatlábak
 Beállíthat olyan kamatlábakat, amelyek egy megadott összeget számítanak ki pénznemenként.
--   Minden egyes pénznemhez egy kamatösszeg van megadva a kamat kódban.
--   A nem kötelező kamat összeg határaival lehet megadni.
--   **Összeg** van kiválasztva **Számítása kamat alapján** mezőben **Kamat kódok beállítása** oldalon.
+- Minden egyes pénznemhez egy kamatösszeg van megadva a kamat kódban.
+- A nem kötelező kamat összeg határaival lehet megadni.
+- <strong>Összeg** van kiválasztva **Számítása kamat alapján</strong> mezőben <strong>Kamat kódok beállítása</strong> oldalon.
 
 Például, ha olyan kamatkódot szeretne beállítani, amely 20 naponta 25,00 egység kamatot számít fel, miután a számla kifizetése túllépte a tranzakció esedékességi dátumát, akkor írjon be 20 értéket az **Összes kamat kiszámítása** mezőbe és válassza ki a **Nap** lehetőséget.
 
@@ -84,7 +83,7 @@ A tartomány adatait a következőképpen kell beállítani.
 | 1,001          | 2                  |
 | 5,001          | 3                  |
 
- 
+
 ## <a name="example-2-interest-by-range--days"></a>2. példa: Kamat tartomány szerint = Napok
 --------------------------------------------------
 
@@ -105,7 +104,7 @@ A tartomány adatait a következőképpen kell beállítani.
 | 61             | 15.                 |
 | 91             | 20                 |
 
- 
+
 ## <a name="example-3-interest-by-range--months"></a>3. példa: Kamat tartomány szerint = Hónapok
 ----------------------------------------------------
 

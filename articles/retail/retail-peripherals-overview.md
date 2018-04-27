@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="retail-peripherals-overview"></a>Kiskereskedelmi perifériás eszközök – áttekintés
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat. A perifériák pénztárhoz (POS) való csatlakoztatásának különböző módszereit írja le, valamint az összetevőket, amelyek a POS-kapcsolat kezeléséért felelősek
 

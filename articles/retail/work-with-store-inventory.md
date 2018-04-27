@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-store-inventory"></a>Kiskereskedelmi árukészlet kezelése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A cikk ismerteti, hogy mely dokumentumtípusokat használhat a készlet kezeléséhez.
 

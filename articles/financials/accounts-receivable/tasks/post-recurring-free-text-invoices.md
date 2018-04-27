@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Ismétlődő szabadszöveges számlák generálása és feladása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Az ismétlődő számlákkal rendszeresen számlákat állíthat ki a vevőknek ugyanarról az összegről. Ez a felvétel az USMF bemutatócéget használja. A rögzítést az a személy használja, aki felelős a kintlévőségek számláinak kezeléséért és feldolgozásáért.
 

@@ -19,17 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 98f5696cd6a279bdf0f8d9026a74e5a9bccd2f13
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Cikkek és nyersanyagok nyomon követése a készletben, a gyártás során és az értékesítésben
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan használja a cikk-követés azonosítására, amikor cikkeket vagy nyersanyagokat használták, használják vagy vesznek részt a termelési és értékesítési folyamatok.
 
@@ -129,7 +128,7 @@ Miután futtatta a nyomon-követést, használhatja a következő beállítások
 Ha használni szeretné az **Új vissza** vagy az **Új előre** lehetőséget, akkor használnia kell a **Megnyitása új ablakban** funkciót, hogy az új követés új ablakban jelenjen meg.
 
 ## <a name="can-i-save-the-trace-details"></a>Mentheti a nyomon követési részletek?
-Elmentheti az adatokat a **Részletek** lapon XML fájlként, a ****Nyomon követés**** művelet alatti **Exportálás** elemre kattintva a Műveleti ablakban. A nyomon követési adatok mellett az XML fájl tartalmazza a követési feltételeket, a fő csomópontot és a készleten levő mennyiséget is. A nyomon követés részleteinek mentése azért hasznos, mert így például csatolhatja az információkat egy minőségi rendeléshez vagy egyéb megfelelési dokumentumhoz. Megadhatja azt is, hogy hova legyen mentve a fájl. Hogy rögtön megtekintse a fájlt jelölje ki a **Dokumentum megjelenítése** jelölőnégyzetet. **Megjegyzés:** A fájl mentése abban az esetben is megtörténik, ha ön megakarja tekinteni azt. Alapértelmezés szerint az XML-fájl egy böngészőablak megnyitása Rákattinthat azonban a fájlra, kiválaszthatja a **Társítás** funkciót, majd kiválaszthatja a programot amelyben megszeretné jeleníteni a tartalmat.
+Elmentheti az adatokat a <strong>Részletek</strong> lapon XML fájlként, a *<strong><em>Nyomon követés</em></strong>* művelet alatti <strong>Exportálás</strong> elemre kattintva a Műveleti ablakban. A nyomon követési adatok mellett az XML fájl tartalmazza a követési feltételeket, a fő csomópontot és a készleten levő mennyiséget is. A nyomon követés részleteinek mentése azért hasznos, mert így például csatolhatja az információkat egy minőségi rendeléshez vagy egyéb megfelelési dokumentumhoz. Megadhatja azt is, hogy hova legyen mentve a fájl. Hogy rögtön megtekintse a fájlt jelölje ki a <strong>Dokumentum megjelenítése</strong> jelölőnégyzetet. <strong>Megjegyzés:</strong> A fájl mentése abban az esetben is megtörténik, ha ön megakarja tekinteni azt. Alapértelmezés szerint az XML-fájl egy böngészőablak megnyitása Rákattinthat azonban a fájlra, kiválaszthatja a <strong>Társítás</strong> funkciót, majd kiválaszthatja a programot amelyben megszeretné jeleníteni a tartalmat.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Lehet egy adott elemhez vagy összetevő egyenleg kiszámítása?
 Exportálhatja az adatokat az összesítő lapokból a Microsoft Excelbe. Nyissa meg a kívánt lapot, kattintson a **Megnyitás Microsoft Office-ban** ikonra, majd válassza ki az **Exportálása Microsoft Excelbe** opciót. Ez különösen akkor hasznos, amikor ki akarja számolni egy cikk vagy összetevő tömeges egyenlegét a **Tranzakciók összesítése** lapról. A **Tranzakciók összesítése** lapon tetszés szerint szűrhet cikket, alapanyagot és lehetőség szerint köteget, majd exportálhatja az információt Excelbe. Az Excelben képes például elválasztani a készleten lévő mennyiséget, az értékesített mennyiséget és az összeget, amely a termelés során lett felhasználva.

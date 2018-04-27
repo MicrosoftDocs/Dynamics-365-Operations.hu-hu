@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="develop-and-open-a-job-requisition"></a>Beosztásigénylés kialakítása és megnyitása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A toborzási projektek segítenek a toborzási folyamat kezelésében. Minden toborzási projekthez beállíthatja az adatokat, például a feladatot, amelyhez a toborzás történik, a toborzó nevét, a projekt és a részleg státuszát, ahol a feladatot végezni fogják. Miután létrehozta a toborzási projektet, megírhatja a projekthez tartozó álláshirdetést, közzéteheti az Alkalmazotti önkiszolgáló rendszer oldalain, hozzárendelheti a projekthez az álláspályázatokat és nyomon követheti a projekthez tartozó tevékenységeket. Ez az eljárás az USMF bemutatócéget használja. Az eljárás megkezdéséhez lépjen az Emberi erőforrások > a Toborzás > a Toborzási projektek > a Toborzási projektek menüpontokra
 

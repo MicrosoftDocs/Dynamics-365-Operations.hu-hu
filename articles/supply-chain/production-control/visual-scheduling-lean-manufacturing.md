@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Vizuális ütemezés lean manufacturing céljára
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a Kanbanütemezési tábláról nyújt tájékoztatást, amelyet a termelési tervező arra használhat, hogy ellenőrizze és optimalizálja a kanbanfeladatok termelési tervét.
 

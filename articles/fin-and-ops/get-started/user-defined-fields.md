@@ -26,9 +26,9 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="custom-fields"></a>Egyéni mezők
 
-[!include[banner](../includes/banner.md)] 
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 Bár a Microsoft Dynamics 365 for Finance and Operations is mezők sokaságát biztosítja az üzleti folyamatok széles körének kezeléséhez, néha szükség van arra, hogy a vállalat a rendszerben lévő további információkat is nyomon kövessen. Ezen igények kielégítésére a Finance and Operations lehetővé teszi, hogy olyan egyedi mezőket hozasson létre, amelyek segítségével az alkalmazás testreszabható a cég igényeire, ha rendelkezik a szolgáltatás használatára való jogosultsággal. 
 

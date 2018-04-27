@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-online-channels-and-define-channel-attributes"></a>Online csatornák létrehozása és a csatorna attribútumainak meghatározása
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ezzel az eljárással bemutatja, hogyan hozhat létre új online csatornát, és ezt hogyan adhatja hozzá a szervezeti hierarchiához. Új online csatorna létrehozása előtt létre kell hoznia a szervezeti hierarchiát. Ez az eljárás az USRT bemutatócéget használja.
 

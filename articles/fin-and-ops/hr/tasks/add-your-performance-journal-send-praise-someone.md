@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b898a5ab5ad2837ef1d9ef8ebf88aaa05f56b3a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Hozzáadás saját teljesítménynaplóhoz és pozitív visszajelzés elküldése másnak
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A teljesítménynapló a célok teljesítésének módjával, valamint adott időszak során nyújtott teljesítménnyel kapcsolatos információkat tartalmaz. A naplóból kollégák tevékenységéhez is küldhető dicséret. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
 
@@ -42,7 +42,7 @@ A teljesítménynapló a célok teljesítésének módjával, valamint adott id�
 9. A Kulcsszavak mezőben adjon meg egy értéket.
 10. Kattintson a Külső hivatkozás hozzáadása elemre.
 11. A Leírás mezőbe írja be az „Envision” értéket.
-12. Az Internetcím mezőbe írja be a „https://www.microsoft.com/en/envision/default” címet.
+12. Írja be a(z) „<https://www.microsoft.com/en/envision/default>” értéket az internetcím mezőbe.
 13. Kattintson a Mentés gomb alatti "Teljesítménynapló" feliratra a rácshoz való visszatéréshez.
     * A kijelölt napló vagy naplók hozzáadhatók egy célhoz, és ezt követően megjelennek a cél megnyitásakor. Bekerül egy hivatkozás a Hivatkozások gyorslapra. Ha egy naplót hozzáad egy célhoz, majd a célt hozzáadja egy ellenőrzéshez, úgy a napló automatikusan megjelenik az ellenőrzésben.  
     * A kijelölt napló vagy naplók hozzáadhatók egy ellenőrzéshez, és ezt követően megjelennek az ellenőrzés megnyitásakor.    Bekerül egy hivatkozás a Hivatkozások gyorslapra.  

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations-groups"></a>Anyagjegyzék-számítási csoportok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja az anyajegyzék (AJ) számítási csoportjait, valamint azok felállítását. Az AJ számítás futtatásához be kell állítania egy számítási csoportokat, majd ezeket hozzá kell rendelnie különböző cikkekhez, vagy be kell állítania egy alapértelmezett számítási csoportot. A számítási csoport számítási beállításai az alapértelmezett értékek az Anyagjegyzék-számítás oldalon az Anyajegyzék számításának ideje alatt. 
 

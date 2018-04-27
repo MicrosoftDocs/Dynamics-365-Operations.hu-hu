@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Bevált eljárások a kuponok Általános napló entitással történő importáláshoz
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör tippeket és trükköket mutat be az adatok importálásához az Általános naplóba az Általános napló entitás segítségével.  
 

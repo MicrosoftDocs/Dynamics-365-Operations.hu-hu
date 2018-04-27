@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>A termékkonfigurációs modellek kifejezésmegszorításai
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja a kifejezés megszorítások és táblamegszorítások. Megszorítások szabályozni a termékattribútum-értékeinek, amelyből választani lehet a termékek egy értékesítési rendelés, árajánlat, beszerzési rendelés vagy termelési rendelés konfigurálásakor. Kifejezés megszorítások vagy táblamegszorítások, attól függően, hogy hogyan szeretné hozhatják létre a megszorítások használhatja. 
 
@@ -204,23 +203,24 @@ A következő táblázatokban a listában az operátorok és infix jelölések, 
 
 Az alábbi táblázatban szereplő példák bemutatják, hogyan lehet írni egy infix jelölés.
 
-| Jelölés Infix:    | Leírás                                                                                   |
+
+|  Jelölés Infix:   |                                          Leírás                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Hozzáadás                                                                                      |
-| x \* y \* z       | szorzás                                                                                |
-| x - y             | Bináris kivonás egy fordító bináris összeadás második megkereséséhez, megegyezik. |
-| x ^ y ^ z         | A jobb oldali asszociativitást hatványkitevő                                                   |
-| !x                | Logikai                                                                                   |
-| x -: y            | Logikai tényezők                                                                           |
-| x | y | z         | Logikai vagy                                                                                    |
-| x & y & z         | Logikai és                                                                                   |
-| x == y == z       | egyenlőség                                                                                      |
-| x != y != z       | Különálló                                                                                      |
-| x &lt; y &lt; z   | Kisebb, mint                                                                                     |
-| x &gt; y &gt; z   | Nagyobb, mint                                                                                  |
-| x &lt;= y &lt;= z | Kisebb vagy egyenlő                                                                         |
-| x &gt;= y &gt;= z | Nagyobb vagy egyenlő                                                                      |
-| (x)               | Zárójelek alapértelmezett elsőbbségi sorrend felülbírálása.                                                      |
+|     x + y + z     |                                           Hozzáadás                                            |
+|    x \* y \* z    |                                        szorzás                                         |
+|       x - y       | Bináris kivonás egy fordító bináris összeadás második megkereséséhez, megegyezik. |
+|     x ^ y ^ z     |                          A jobb oldali asszociativitást hatványkitevő                          |
+|        !x         |                                          Logikai                                          |
+|      x -: y       |                                      Logikai tényezők                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Logikai és                                          |
+|    x == y == z    |                                           egyenlőség                                            |
+|    x != y != z    |                                           Különálló                                            |
+|  x &lt; y &lt; z  |                                           Kisebb, mint                                           |
+|  x &gt; y &gt; z  |                                         Nagyobb, mint                                          |
+| x &lt;= y &lt;= z |                                     Kisebb vagy egyenlő                                     |
+| x &gt;= y &gt;= z |                                   Nagyobb vagy egyenlő                                    |
+|        (x)        |                           Zárójelek alapértelmezett elsőbbségi sorrend felülbírálása.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Miért nem megfelelő a kifejezés megszorítások ellenőrzése?
 Attribútumok, alkatrészek vagy az egy termékkonfigurációs modell alösszetevői attribútumfeloldó neve fenntartott kulcsszó nem használható. Az alábbi lista a foglalt kulcsszavakat mutatja, amelyek nem használhatók:

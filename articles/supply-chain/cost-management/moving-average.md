@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>Mozgó átlag
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A mozgó átlag örökös költségszámítási módszer, amely az átlag elven alapul, ahol a készletkiadások költségei nem módosulnak, ha a beszerzési költség változik. A különbség tőkésített, és arányos számításon alapul. A fennmaradó összeg kiadásként van könyvelve. 
 

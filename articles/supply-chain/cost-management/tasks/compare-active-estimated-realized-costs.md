@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Az aktív, becsült és realizált költségek összevetése egy termelési rendelésen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet megjeleníteni egy termelési rendelés magas termelési különbözetének okait. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a költségellenőr használja.
 

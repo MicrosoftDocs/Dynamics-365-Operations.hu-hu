@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="delivery-schedules"></a>Szállítási ütemezések
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A szállítási ütemezések lehetővé teszik a rendeléssor mennyiségének nyomon követését, amikor több szállítást használ egyetlen értékesítési rendeléshez, értékesítési ajánlathoz vagy beszerzési rendeléshez.
 

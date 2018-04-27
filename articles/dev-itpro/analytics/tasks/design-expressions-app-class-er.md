@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az útmutató azzal kapcsolatban tartalmaz tájékoztatást, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési (ER-) konfigurációkban az ER-kifejezések alkalmazásosztályainak szükséges metódusainak lehívásával. A hívóosztályok argumentumértékeit dinamikusan lehet futásidőben definiálni: például az elemző dokumentumban lévő információk alapján az információk helyességének biztosítása érdekében. Ebben az útmutatóban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. 
 

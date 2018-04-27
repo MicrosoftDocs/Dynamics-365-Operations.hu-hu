@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consumption-depreciation"></a>Felhasználás értékcsökkenése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk az értékcsökkenés felhasználási módszeréről nyújt áttekintést.
 

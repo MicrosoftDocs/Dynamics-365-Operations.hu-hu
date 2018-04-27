@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="mass-financial-period-close"></a>Pénzügyi időszakok tömeges lezárása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan helyezhető várakoztatásba, illetve hogyan zárható le véglegesen egy időszak egy időben több jogi személyre vonatkoztatva. Ezenkívül a feladat megmutatja, hogyan lehet bizonyos modulokra korlátozni a felhasználói csoportok könyvelését.
 

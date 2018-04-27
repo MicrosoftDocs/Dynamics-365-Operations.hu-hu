@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-simulation"></a>Árszimuláció
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat.
 

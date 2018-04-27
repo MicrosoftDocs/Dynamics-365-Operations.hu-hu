@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="customer-orders-overview"></a>Vevői rendelések – áttekintés
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör a vevői rendelések a Retail Modern POS (MPOS) modulban történő kezelését ismerteti. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
 

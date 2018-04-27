@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="design-a-questionnaire"></a>Kérdőívek tervezése
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakor a kérdőívkészítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
 

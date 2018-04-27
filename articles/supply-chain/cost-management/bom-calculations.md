@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>Anyagjegyzék-számítások
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A költségösszesítés és az eladási ár számítását anyagjegyzék-számításoknak nevezik, és indításuk a Számítások lapról történik. A témakör tájékoztatást nyújt az anyagjegyzék-számításokkal kapcsolatban.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="acquire-assets-through-procurement"></a>Eszközök vételezése beszerzésen keresztül
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan állíthatja be a Tárgyi eszközök és a Kötelezettségek modul integrálásával az automatikusan létrehozható tárgyi eszközöket beszerzési megrendelésekből vagy szállítói számlákból, illetve automatikusan feladható tárgyi eszközökre vonatkozó beszerzési és beszerzés-helyesbítési tranzakciókat.
 

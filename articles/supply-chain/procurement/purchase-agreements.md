@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk beszerzési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési szerződést olyan megállapodás, amely egy szevezetet arra kötelez, hogy több beszerzési rendelés használatával egy adott mennyiségnek vagy összegnek megfelelő terméket vásároljon. Ezen kötelezettségvállalás ellenében a vevő különleges árakat és engedményeket kaphat. 
 

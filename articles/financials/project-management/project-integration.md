@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="microsoft-project-client-integration"></a>Microsoft Project-ügyfélintegráció
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A projektek ütemtervének megtervezése és karbantartása összetett lehet, ezért a projektmenedzsereknek olyan eszközöket kell használniuk, amelyek segítenek nekik elvégezni ezt a feladatot. A Microsoft Project ügyféllel való integráció támogatást nyújt a projekt munkalebontási struktúrájának megnyitásához és kezeléséhez. A projektmenedzser bármikor közzéteheti a változtatásokat a Finance and Operations projekt munkalebontási struktúrájába.
 

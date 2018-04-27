@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-code-masks"></a>Vonalkódmaszkok beállítása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör a vonalkódmaszk-karakterek és a vonalkódmaszkok beállítását ismerteti, valamint arról is beszámol, hogy miként rendelhetők vonalkódmaszkok vonalkódokhoz.
 

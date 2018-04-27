@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="analyze-sales-trends-and-patterns"></a>Értékesítési trendek és mintázatok elemzése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 for Retail rendszerben valós időben tanulmányozhatja az értékesítési trendeket és mintákat.
 

@@ -28,14 +28,14 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="financial-report-components"></a>A pénzügyi jelentés összetevői
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. A cikk az építőelemek szervezését és zárolását ismerteti. 
 
 A pénzügyi jelentéstervező mögötti tervezési filozófia az, hogy az információkat lebontjuk a legkisebb alkotórészekig vagy építőelemekig, majd szükség szerint keverjük és párosítjuk azokat. Ezért a jelentés formázása elkülönül az Ön pénzügyi adataitól, és a jelentések kinézetét anélkül változtathatja, hogy módosítaná a pénzügyi adatait a Microsoft Dynamics ERP rendszerben. Az ilyen építőelemes megközelítés használatával egyesíthet szövegeket, összegeket és számításokat olyan jelentések készítéséhez, amelyekre szüksége van. Továbbá ez a rugalmasság támogatja a kreativitást, mivel megkönnyíti a műveletek különböző módokon történő megtekintését. A jelentésdefiníciók építőelemei egy háromdimenziós táblázathoz hasonlatosak, a szerepük azonban kiemeltebb annál. A jelentésdefiníció határozza meg a jelentéshez használandó sordefiníciót, oszlopdefiníciót és opciós jelentési-fa definíciót. Emellett tartalmaz a létrehozott jelentés tárolási helyére, illetve formázási módjára vonatkozó információkat is. 
 
 ## <a name="building-blocks-of-a-report"></a>Jelentés építőelemei
+
 | Építőelem            | Leírás                     | További információ                                    |
 |---------------------------|---------------------------------|---------------------------------------------------------|
 | Sor definíciója            | A sordefiníció a jelentés leíró sorait határozza meg (pl. a fizetések vagy az értékesítés). Emellett felsorolja az egyes sorcikkek értékeit tartalmazó szegmensértékeket vagy dimenziókat is, valamint tartalmaz sorformázásokat és számításokat.                                                    | [Sordefiníciók](row-definitions-financial-reporting.md)                       |

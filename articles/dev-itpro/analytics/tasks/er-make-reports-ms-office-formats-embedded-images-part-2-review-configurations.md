@@ -1,5 +1,5 @@
 --- 
-title: "Konfigurációk áttekintése Microsoft Office formátumban beágyazott képekkel készítendő jelentésekhez az elektronikus jelentéskészítéshez (ER)"
+title: "Konfigurációk áttekintése jelentések készítéséshez Microsoft Office formátumokban, beágyazott képekkel"
 description: "A lépések végrehajtásához először végre kell hajtani az „ER – Jelentések létrehozása Microsoft Office-formátumokban, beágyazott képekkel (1. rész: Paraméterek beállítása)” feladat-útmutató lépéseit."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: dcc162a4c0ba81079eefb7564ab037c1287acd92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er"></a>Konfigurációk áttekintése Microsoft Office formátumban beágyazott képekkel készítendő jelentésekhez az elektronikus jelentéskészítéshez (ER)
+# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Konfigurációk áttekintése jelentések készítéséshez Microsoft Office formátumokban, beágyazott képekkel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A lépések végrehajtásához először végre kell hajtani az „ER – Jelentések létrehozása Microsoft Office-formátumokban, beágyazott képekkel (1. rész: Paraméterek beállítása)” feladat-útmutató lépéseit.
 

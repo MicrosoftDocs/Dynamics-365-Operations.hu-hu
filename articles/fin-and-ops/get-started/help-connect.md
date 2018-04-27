@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="connect-the-help-system"></a>A Súgó rendszer csatlakoztatása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations súgórendszerének összetevőit írja le. Áttekinti ezen összetevők kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit. 
 
@@ -42,7 +41,7 @@ A következő ábra a Finance and Operations rendszer súgórendszerének része
 ## <a name="connecting-the-help-system"></a>Csatlakozás a Súgó rendszerhez
 > [!NOTE]
 > A **Feladat-útmutatók** lap jelenleg nem áll rendelkezésre a Microsoft Dynamics 365 for Talent és a Microsoft Dynamics 365 for Retail esetében. Jelenleg azon dolgozunk, hogy a funkcionalitás engedélyezett legyen valamelyik jövőbeli programverzióban. A Talent Első lépések részének feladat-útmutatói továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárások lépéseit ismertető súgó is elérhető a docs.microsoft.com webhelyen ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) mind a Retail, mind a Talent esetében.
- 
+
 
 A **Rendszerparaméterek** oldalon a rendszergazdák csatlakoztathatják a Súgó rendszer különböző darabjait az adott megvalósításhoz. [![Rendszerparaméterek – súgó beállításai](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) A **Rendszerparaméterek** lapon végezze el az alábbi lépéseket:
 

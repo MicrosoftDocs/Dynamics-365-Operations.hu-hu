@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="sales-orders-mobile-workspace"></a>Értékesítési rendelések mobil munkaterület
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör az **Értékesítési rendelések** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével bármikor és bárhol is legyen, naprakész maradhat az értékesítési rendeléseivel kapcsolatban. 
 

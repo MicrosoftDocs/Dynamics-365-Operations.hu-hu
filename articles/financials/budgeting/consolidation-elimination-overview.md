@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consolidation-and-elimination-overview"></a>Konszolidáció és megszüntetés áttekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk a konszolidációs és megszüntetési folyamat általános ismertetését tartalmazza. Magában foglalja a gyakori kérdésekre adott válaszokat is.
 

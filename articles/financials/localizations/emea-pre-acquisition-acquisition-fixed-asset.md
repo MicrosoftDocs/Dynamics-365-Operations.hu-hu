@@ -26,8 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Tárgyi eszköz beszerzés előtti műveleteinek feladása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan állíthatja be és könyvelheti a tárgyi eszközök beszerzése előtti műveleteket.
 

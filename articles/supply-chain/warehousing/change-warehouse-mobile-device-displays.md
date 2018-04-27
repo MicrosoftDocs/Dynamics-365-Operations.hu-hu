@@ -28,8 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 # <a name="warehouse-mobile-device-display-settings"></a>Raktári mobileszköz megjelenítési beállításai
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk azt mutatja be, hogy hogyan állíthatja be egy mobileszköz kijelzőjének megjelenését és hogyan adhatja hozzá a vezérlőkhöz a billentyűparancsokat, mint például gombokat. 
 

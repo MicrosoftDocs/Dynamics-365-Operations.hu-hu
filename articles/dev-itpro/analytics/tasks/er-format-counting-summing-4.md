@@ -1,5 +1,5 @@
 --- 
-title: "Formátum futtatása számláláshoz és összegzéshez az elektronikus jelentéskészítéshez (ER)"
+title: "Formátum futtatása számláláshoz és összegzéshez"
 description: "Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat egy elektronikus jelentési (ER) formátumot számlálás és összegzés céljára a már létrehozott szöveges kimeneti adatok alapján."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9f5520dc4e1eddc2fc52a05e5dc386b982d8f5ad
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e3569e48bcc063b2423a60038732e8e53dbea2cb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="run-the-format-to-do-counting-and-summing-for-electronic-reporting-er"></a>Formátum futtatása számláláshoz és összegzéshez az elektronikus jelentéskészítéshez (ER)
+# <a name="run-the-format-to-do-counting-and-summing"></a>Formátum futtatása számláláshoz és összegzéshez
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat egy elektronikus jelentési (ER) formátumot számlálás és összegzés céljára a már létrehozott szöveges kimeneti adatok alapján. Ezeket a lépéseket a DEMF vállalatban hajthatja végre.
 

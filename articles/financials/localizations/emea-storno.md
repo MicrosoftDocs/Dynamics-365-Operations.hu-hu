@@ -26,7 +26,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="storno-accounting"></a>Sztornókönyvelés
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.
 

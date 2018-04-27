@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban átviteli tábla támogatás vonalkódolvasókhoz
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot.
 
@@ -38,6 +37,7 @@ A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner beme
 ------------------
 
 A **Leolvasó regisztrálása** gyorslapon kiválaszthatja a regisztrációs módot, amely irányítja a műveletet, ha beolvassa a kanbankártya számát vagy manuálisan írja be a számot a Kanbankártya száma mezőbe.
+
 | Regisztrációs mód beállítása | Leírás                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Kezdő                 | A Kanban átviteli feladat regisztrálása folyamatban lévőként.                                                 |

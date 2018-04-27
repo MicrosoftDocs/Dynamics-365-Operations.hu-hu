@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="personal-expenses-on-an-expense-report"></a>Személyes kiadások a költségjelentéseken
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Üzleti utazások során előfordulhat, hogy a dolgozók a vállalati hitelkártyával egyenlíti ki személyes kiadásait. Ha a személyes költségek elszámolására nem határozott meg eljárást, akkor a költségelszámolások jóváhagyási folyamata megszakadhat, amikor az alkalmazott elküldi a tételes költségjelentést. 
 

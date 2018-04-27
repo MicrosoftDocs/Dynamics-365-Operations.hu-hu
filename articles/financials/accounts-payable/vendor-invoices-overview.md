@@ -28,8 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak. 
 
@@ -87,11 +86,11 @@ További tudnivalók:
  - [Szállítói számla irányelveinek beállítása](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [Fő számlaadatok a kötelezettségekbe egy szállítói számla használatával](tasks/key-invoice-data-ap-system-vendor-invoice.md)
- 
+
  - [Fő számlaadatok a kötelezettségekbe jóváhagyási napló használatával](tasks/key-invoice-data-into-ap-system-approval-journal.md)
-  
+
  - [A legfontosabb számlaadatok a kötelezettségkezelési rendszerbe számlagyűjtő használatával](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
- 
+
  - [Szállítói számla rögzítése a számlanaplóban](tasks/record-vendor-invoice-invoice-journal.md)
 
 

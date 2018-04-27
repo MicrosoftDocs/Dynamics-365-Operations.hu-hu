@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Termék besorolása kategória-hierarchiák segítségével
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kategóriahierarchiák segítségével a termékek export-, beszerzési, értékesítési vagy egyéb célokra sorolhatók be. Ezt a feladatot jellemzően termékkezelő végzi el. A példában az M0009 termékszámot használjuk az USMF bemutató vállalattal.
 

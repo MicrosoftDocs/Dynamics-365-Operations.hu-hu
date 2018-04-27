@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-blocking"></a>Készletzárolás
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk tájékoztatást nyújt a készletzárolásról, amely a minőség-ellenőrzési eljárás része a Microsoft Dynamics 365 for Finance and Operations alkalmazásban. A készletzárolás segítségével megakadályozhatja a cikkek felhasználását vagy feldolgozását.
 

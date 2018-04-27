@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Konfiguráció tervezése adatok külső, CSV formátumú fájlból történő importálásához (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A folyamat bemutatja, hogyan lehet az elektronikus jelentési (ER) konfigurációt úgy megtervezni, hogy külső, CSV formátumú fájlból importáljon adatokat a Dynamics 365 for Finance and Operations alkalmazásába. Ebben az eljárásban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. A lépések végrehajtásához először a következő eljárás lépéseit kell végrehajtani: „ER – Konfigurációszolgáltató létrehozása, és megjelölés aktívként.” 
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="organization-administration-home-page"></a>Szervezeti adminisztráció kezdőlap
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ebből a témakörből olyan erőforrásokat érhet el, amelyek segítségével a kiemelt felhasználók és rendszergazdák hatékonyabban használhatják a Microsoft Dynamics 365 for Finance and Operations alkalmazást. A tartalom segítséget nyújt nekik a rendszer folyamatos és hatékony működésének konfigurálásában a szervezet és a cég számára.
 

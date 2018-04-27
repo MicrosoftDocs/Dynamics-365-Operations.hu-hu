@@ -3,7 +3,7 @@ title: "Az Excel-bővítmény használata"
 description: "Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f3ed06dbbce21ac093107953d3a72d8ab086af2a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0e3e86820e0857b320d832c3bf3c94757667919
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Az Excel-bővítmény használata
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Office beépülő moduljának segítségével. Az entitásadatok megnyitását elindíthatja az Excel vagy a Microsoft Dynamics 365 for Finance and Operations programból.
 
@@ -35,6 +35,11 @@ Az entitásadatok megnyitásával az Excel programban gyorsan és egyszerűen te
 
 > [!NOTE]
 > Ha a Microsoft Azure Active Directory (Azure AD) bérlője az Active Directory összevonási szolgáltatások (AD FS) használatára van beállítva, meg kell győződnie arról, hogy a 2016. májusi Office-frissítés telepítve van, hogy az Excel-bővítmény helyesen jelentkeztesse be.
+
+További tudnivalókért az Excel-bővítményről, tekintse meg a rövid videót: [Excel-sablon létrehozása a fejléc- és soramintákhoz a Dynamics 365 for Finance and Operations alkalmazásban](https://youtu.be/RTicLb-6dbI).
+
+> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
+
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Nyissa meg az entitásadatokat az Excel programban a Finance and Operations indításakor
 1. A Finance and Operations egyik lapján válassza a **Megnyitás a Microsoft Office programban** lehetőséget.

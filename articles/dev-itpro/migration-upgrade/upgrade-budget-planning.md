@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Költségvetés-tervezés frissítése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Jelentős különbségek vannak a költségvetés tervezésében a Microsoft Dynamics AX 2012 és a Microsoft Dynamics 365 for Finance and Operations között. Egyes funkciók nem frissültek, ezért újrakonfigurálást igényelnek. Ez a témakör elmagyarázza, hogy mit kell újrakonfigurálni, és leírja azokat az új funkciókat, amelyeket érdemes kipróbálni a frissítés befejezése után.  
 
@@ -70,26 +69,27 @@ A frissített rendszer beállításaira vonatkozó konfiguráció meghatározás
 
 ### <a name="define-columns-and-layouts"></a>Oszlopok és elrendezések meghatározása
 
-1.  A **Költségvetés-tervezési konfiguráció** oldalon kattintson az **Oszlopok** lapra. A frissítés részeként az új oszlopok automatikusan létrejönnek a költségvetési terv sorai alapján. Az oszlopok dinamikus dátumokat használnak, ahol az idő és az év eltolódik a költségvetési tervezés folyamatában meghatározott pénzügyi évvel. **Megjegyzés:** Teljesítményokokból a frissítés során feltételezzük, hogy az összes költségvetési ciklus naptári évet, nem pénzügyi évet jelent. Pénzügyi évek használata esetén módosítania kell az oszlopok elrendezését a pénzügyi évhez való igazítás érdekében. Például az AX 2012 rendszerben a következő elemek léteztek:
-    -   Költségvetési tervek forgatókönyvei: Tényleges adatok, Kiindulás, Költségvetési kérelem, Költségvetés jóváhagyva
-    -   Költségvetési terv sorai 2017 minden forgatókönyvéhez, valamint Tényleges adatok 2017-re és 2016-ra
+1. A **Költségvetés-tervezési konfiguráció** oldalon kattintson az **Oszlopok** lapra. A frissítés részeként az új oszlopok automatikusan létrejönnek a költségvetési terv sorai alapján. Az oszlopok dinamikus dátumokat használnak, ahol az idő és az év eltolódik a költségvetési tervezés folyamatában meghatározott pénzügyi évvel. **Megjegyzés:** Teljesítményokokból a frissítés során feltételezzük, hogy az összes költségvetési ciklus naptári évet, nem pénzügyi évet jelent. Pénzügyi évek használata esetén módosítania kell az oszlopok elrendezését a pénzügyi évhez való igazítás érdekében. Például az AX 2012 rendszerben a következő elemek léteztek:
+   -   Költségvetési tervek forgatókönyvei: Tényleges adatok, Kiindulás, Költségvetési kérelem, Költségvetés jóváhagyva
+   -   Költségvetési terv sorai 2017 minden forgatókönyvéhez, valamint Tényleges adatok 2017-re és 2016-ra
 
-    A következő oszlopok jönnek létre a Finance and Operations programban:
-    | Oszlop neve    | Költségvetési tervváltozat | Oszlop időszaka | Év eltolása |
-    |----------------|----------------------|--------------------|-------------|
-    | Jan 1. eset | Tényadatok              | 1                  | 0           |
-    | Jan 2. eset | Kiindulás             | 1                  | 0           |
-    | Jan 3. eset | Költségvetési kérelem       | 1                  | 0           |
-    | Jan 4. eset | Jóváhagyott költségvetés      | 1                  | 0           |
-    | Jan 5. eset | Tényadatok              | 1                  | -1          |
-    | Feb 1. eset | Tényadatok              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   A következő oszlopok jönnek létre a Finance and Operations programban:
 
-    Ebben a példában egy **Jan 1. eset** nevű oszlop jön létre a legfrissebb költségvetési terv tranzakciós adataihoz, amely megtalálható ott, ahol tranzakciók vannak januárban. Hasonló oszlop jön létre minden olyan forgatókönyvhöz, amely adatokkal rendelkezik. Miután oszlopok léteznek az adott év minden időszakára vonatkozóan, az előző évekhez oszlopok jönnek létre.
-2.  Módosíthatja az oszlopneveket és -leírásokat, valamint bármely más részletet, akár manuálisan az ügyfélprogramban, akár tömeges frissítésekkel az Excel-bővítményen keresztül, amely a költségvetési terv oszlopainak adatentitására mutat. Az előzőleg a mátrixmezőkhöz beállított szűrők beállítása mostantól az oszlopokon belül történik.
-3.  Új költségvetési terv elrendezésének létrehozása. Az elrendezés több oszlopra mutat az Excelben és az ügyfélprogramban megjelenő nézet meghatározásához. Az elrendezés először azt kéri, hogy megadjon egy főkönyvdimenzió-készletet annak meghatározásához, hogy mely pénzügyi dimenziók adhatók meg. Miután megadta a dimenziókészletet, kattintson a **Leírások** lehetőségre, hogy kiválassza az elrendezésbe foglalni kívánt dimenzióleírásokat.
-4.  Az **Elrendezéselemek** gyorslapon kattintson a **Hozzáadás** lehetőségre, amellyel metaadatokat adhat minden egyes sorhoz, például pénznemet, megjegyzést vagy költségvetési osztályt, amely különbséget tesz a bevételi és költségsorok között. Ezután adjon hozzá oszlopokat az időtartamhoz, továbbá azokat a forgatókönyveket, amelyek erre a költségvetési ciklusra és szakaszra vonatkoznak. Ezeket a módosításokat kézzel is végrehajthatja az ügyfélprogramban vagy az Excel-bővítményen keresztül, amely a költségvetési terv elrendezéselemeinek adatentitására mutat.
-5.  Minden egyes elrendezési elem esetén válassza ki, hogy az oszlop szerkeszthető legye-e, és hogy az oszlop az Excel-munkafüzetben is megjelenjen-e az elrendezésnél. **Megjegyzés:** Az előzményterveinknél érdemes fontolóra venni egy olyan elrendezést, amely 12 havi oszlopot tartalmaz minden olyan költségvetési terv esetében, amely az adott folyamathoz tartozik.
+   | Oszlop neve    | Költségvetési tervváltozat | Oszlop időszaka | Év eltolása |
+   |----------------|----------------------|--------------------|-------------|
+   | Jan 1. eset | Tényadatok              | 1                  | 0           |
+   | Jan 2. eset | Kiindulás             | 1                  | 0           |
+   | Jan 3. eset | Költségvetési kérelem       | 1                  | 0           |
+   | Jan 4. eset | Jóváhagyott költségvetés      | 1                  | 0           |
+   | Jan 5. eset | Tényadatok              | 1                  | -1          |
+   | Feb 1. eset | Tényadatok              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   Ebben a példában egy **Jan 1. eset** nevű oszlop jön létre a legfrissebb költségvetési terv tranzakciós adataihoz, amely megtalálható ott, ahol tranzakciók vannak januárban. Hasonló oszlop jön létre minden olyan forgatókönyvhöz, amely adatokkal rendelkezik. Miután oszlopok léteznek az adott év minden időszakára vonatkozóan, az előző évekhez oszlopok jönnek létre.
+2. Módosíthatja az oszlopneveket és -leírásokat, valamint bármely más részletet, akár manuálisan az ügyfélprogramban, akár tömeges frissítésekkel az Excel-bővítményen keresztül, amely a költségvetési terv oszlopainak adatentitására mutat. Az előzőleg a mátrixmezőkhöz beállított szűrők beállítása mostantól az oszlopokon belül történik.
+3. Új költségvetési terv elrendezésének létrehozása. Az elrendezés több oszlopra mutat az Excelben és az ügyfélprogramban megjelenő nézet meghatározásához. Az elrendezés először azt kéri, hogy megadjon egy főkönyvdimenzió-készletet annak meghatározásához, hogy mely pénzügyi dimenziók adhatók meg. Miután megadta a dimenziókészletet, kattintson a **Leírások** lehetőségre, hogy kiválassza az elrendezésbe foglalni kívánt dimenzióleírásokat.
+4. Az **Elrendezéselemek** gyorslapon kattintson a **Hozzáadás** lehetőségre, amellyel metaadatokat adhat minden egyes sorhoz, például pénznemet, megjegyzést vagy költségvetési osztályt, amely különbséget tesz a bevételi és költségsorok között. Ezután adjon hozzá oszlopokat az időtartamhoz, továbbá azokat a forgatókönyveket, amelyek erre a költségvetési ciklusra és szakaszra vonatkoznak. Ezeket a módosításokat kézzel is végrehajthatja az ügyfélprogramban vagy az Excel-bővítményen keresztül, amely a költségvetési terv elrendezéselemeinek adatentitására mutat.
+5. Minden egyes elrendezési elem esetén válassza ki, hogy az oszlop szerkeszthető legye-e, és hogy az oszlop az Excel-munkafüzetben is megjelenjen-e az elrendezésnél. **Megjegyzés:** Az előzményterveinknél érdemes fontolóra venni egy olyan elrendezést, amely 12 havi oszlopot tartalmaz minden olyan költségvetési terv esetében, amely az adott folyamathoz tartozik.
 
 ### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Frissítse a költségvetés-tervezési folyamatokat annak érdekében, hogy a megfelelő elrendezést használja minden egy költségvetés-szakasz esetén
 

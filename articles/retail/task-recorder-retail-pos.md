@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>Feladatrögzítő és Súgó a pénztárhoz
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan használható a Feladatrögzítő a Retail Modern POS és a felhőalapú POS környezetekben.
 

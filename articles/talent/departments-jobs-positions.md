@@ -28,10 +28,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Munkaerő megszervezése részlegek, munkák és beosztások szerint
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-[!include[retail name](includes/retail-name.md)]
-
+[!INCLUDE [retail name](includes/retail-name.md)]
 
 A részlegek, a munkák és a beosztások mind szervezeti elemek, melyeket az Emberi erőforrásokon belül kezelnek. Ez a témakör általános tájékoztatást ad ezeket az elemeket illetően. 
 
@@ -48,7 +47,7 @@ Az alábbi példa mutatja be a jelen témakörben leírt koncepciókat.
 |**Emberi erőforrások**|HR vezető (Nyugat)|HR vezető|
 |**Emberi erőforrások**|HR vezető (Közép)|HR vezető|
 
- 
+
  <a name="departments"></a>Osztályok
 ------------
 

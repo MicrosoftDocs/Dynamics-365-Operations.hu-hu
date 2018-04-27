@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Munkaidő és jelenlét rögzítése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a témakör regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához. 
 
@@ -95,7 +94,7 @@ Be tud állítani olyan munkafolyamat-jóváhagyási folyamatot, ami automatikus
 | Munkaidő és jelenléti napok száma összesen            | A munkafolyamat például a napi munkaórák várható száma alapján ellenőrzi a regisztrációkat. |                                                                                                                                                                                                                                                       |
 | Munkaidő és jelenlét napló regisztráció. | A munkafolyamat ellenőrzi a regisztráció dátumának minden egyes regisztrációtípusát.                           | Munkaidő és jelenlét • Blokkolás érkezéskor • Blokkolás távozáskor • Távollét • Szünet • Kapcsolókód • Projekt • Projekttevékenység • Közvetett tevékenység - Termelési feladatok • Várakozás előtte • Beállítás • Folyamat • Átfedés • Szállítás • Várakozás utána • Támogatás kezdete • Támogatás befejezése |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a>Jóváhagyott regisztrációk áthelyezése
 A regisztrációk jóváhagyása után azokat át tudja helyezni az ismétlődő bérlistafeladatba. Az áthelyezett regisztráció olyan tevékenységhez vagy feladathoz kerül feladásra, mint például egy termelési rendelés vagy egy projekt. A rendszer minden egyes dolgozó kapcsán a regisztrációk alapján hozza létre a bérlista-tranzakciókat.  

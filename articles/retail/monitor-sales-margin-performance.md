@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Értékesítési és teljesítménykülönbözet megfigyelése
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 for Retail rendszerben valós időben tanulmányozhatja az értékesítést és teljesítménykülönbözetet.
 

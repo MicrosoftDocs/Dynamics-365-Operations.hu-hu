@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését ismerteti a Microsoft Dynamics 365 for Finance and Operations megoldás esetén.
 

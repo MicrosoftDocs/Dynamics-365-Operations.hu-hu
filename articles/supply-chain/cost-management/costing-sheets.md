@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-sheets"></a>Költségszámítási táblázatok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A költségszámítási táblázat beállításakor két célt kell szem előtt tartani. Az első cél az áruk költségeinek megjelenítésére használt formátum meghatározása a gyártott cikkekre vagy termelési rendelésre vonatkozóan. A formázott megjelenítés neve költségszámítási táblázat. A második cél a közvetett költségek számításához használt alap meghatározása. A költségszámítási táblázat a költségcsoport funkcióra építve jeleníti meg az adatokat, és a költségcsoportokat a közvetett költség számítási képleteiben is felhasználja. Ebben a cikkben a költségszámítási táblázat beállításának két célkitűzése van leírva. 
 

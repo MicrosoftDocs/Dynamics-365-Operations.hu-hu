@@ -19,17 +19,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e05361bf865e44ba6073198fba94d7102b1ed19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-coupons-for-retail-sales"></a>Kiskereskedelmi értékesítési utalványok létrehozása
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview-of-coupons"></a>Utalványok áttekintése
 
@@ -46,9 +45,12 @@ Utalvány létrehozásához külön hozza létre az engedményt és az utalvány
 
 ### <a name="limited-use-coupons"></a>Korlátozottan használható utalványok
 
-Az utalványok korlátozottan használható utalványokként is konfigurálhatók. A felhasználási korlát ügyfelenként, csatornánként vagy globális korlátozásként adható meg. Ez a határérték a kód vagy a vonalkód pénztárba történő beírásakor vagy beolvasásakor vagy az értékesítési rendelés bevitele során lép érvénybe. Az utalványt a rendszer felhasználtként rögzíti, amikor egy, az utalványhoz társított rendelés befejeződött.
+Az utalványok korlátozottan használható utalványokként is konfigurálhatók. A felhasználási korlát ügyfelenként, csatornánként vagy globális korlátozásként adható meg. Ez a határérték a kód vagy a vonalkód pénztárba történő beírásakor vagy beolvasásakor vagy az értékesítési rendelés bevitele során lép érvénybe.
 
 A korlát az utalványon levő utalványkódonként lép érvénybe. Például egy két utalványkódot tartalmazó egyszer felhasználható utalvány kétszer használható: egy-egy alkalommal minden egyes utalványkód esetében. Az utalvány minden kódját függetlenül lehet aktiválni.
+
+> [!NOTE]
+> Miután egy utalványkód elérte a felhasználási korlátját, a rendszer *nem* állítja át automatikusan az utalványkód állapotát „Használt”-ra. A rendszer azonban nem engedélyezi a továbbiakban a használati határát elértő utalványkód használatát. Ha az utalványkód állapota manuális beállítás mellett bármi más, mint az „Aktív”, semelyik csatornán sem használható az utalványkód.
 
 ## <a name="managing-coupons"></a>Utalványok kezelése
 
@@ -68,8 +70,8 @@ Utalvány beállítása előtt be kell állítania az utalvány vonalkódját é
     > [!NOTE]
     > Mindkét számsorozat esetén a **Hatókör** mező **Vállalat** értékre kell állítani. A legtöbb esetben generálja automatikusan mindkét számsorozatot.
 
-5.  A **Megosztott kiskereskedelmi paraméterek** lapon a **Vonalkódok** fülön válassza ki a korábban létrehozott vonalkódot.
-6.  A **Kiskereskedelmi paraméterek** lapon a **Számsorozatok** fülön válassza ki az utalványszámhoz és az utalványazonosítóhoz létrehozott számsorozatot.
+5.  A **Kiskereskedelmi paraméterek** lapon a **Vonalkódok** fülön válassza ki a korábban létrehozott vonalkódot.
+6.  A **Kiskereskedelmi megosztott paraméterek** lapon a **Számsorozatok** fülön válassza ki az utalványszámhoz és az utalványazonosítóhoz létrehozott számsorozatot.
 7.  Most megnyithatja az **Utalványok** lapot, és új utalványokat hozhat létre.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Utalványok részleges frissítéseinek hatása

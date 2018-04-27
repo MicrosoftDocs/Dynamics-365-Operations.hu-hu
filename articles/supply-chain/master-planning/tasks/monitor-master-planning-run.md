@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-a-master-planning-run"></a>Alaptervezés futtatásának megfigyelése
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A termeléstervező látni szeretné, ha valamelyik alaptervezési futtatás folyamatban van. Az USMF bemutatócég segítségével végezze el ezt az eljárást.
 

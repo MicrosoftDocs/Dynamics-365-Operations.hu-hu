@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak. 
 

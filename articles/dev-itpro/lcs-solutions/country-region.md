@@ -3,7 +3,7 @@ title: "Honosítási és szabályozó funkciók"
 description: "Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
-ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Honosítási és szabályozó funkciók
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations tartalmaz egyes ország-/ területspecifikus előírásokkal és folyamatokkal kapcsolatos funkciókat, melyek leírása megtalálható a [Nemzetközi termékelérhetőségi útmutatóban](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
 
@@ -51,10 +50,10 @@ A következő erőforrások a tervezett és új honosítási funkciókat ismerte
 
 ### <a name="communication-and-alerts"></a>Közlemények és figyelmeztetések
 -   [Szabályozások figyelésére és frissítésére vonatkozó kommunikáció](regulatory-watch-communication.md)
--   [A Microsoft tájékoztatása az országos/régióbeli szabályozással kapcsolatos figyelmeztetésről és a jogszabálykövetési funkciók állapotának nyomon követése](submit-localization-alerts.md)
+-   [A Microsoft tájékoztatása az országos/régióbeli szabályozással kapcsolatos figyelmeztetésről és a jogszabály-követési funkciók állapotának nyomon követése](submit-localization-alerts.md)
 
-### <a name="dynamics-365-roadmap"></a>Dynamics 365 ütemterv
-A [Dynamics 365 ütemterv](https://roadmap.dynamics.com/) pillanatképet nyújt arról, hogy éppen min dolgozunk. Használja ezt az ütemtervet, ha tudni szeretné, mi válik elérhetővé a közönség számára, és mi áll fejlesztés alatt. Minden dátum és a fejlesztés alatt álló funkciók előzetesnek minősülnek, a jelenlegi várakozásokon alapulnak, továbbá külön értesítés nélkül változhatnak.
+### <a name="dynamics-365-release-notes"></a>Dynamics 365-megjegyzések
+A [Dynamics 365 verziójára vonatkozó megjegyzések (PDF-fájl letöltése)](https://aka.ms/businessappsreleasenotes) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok új és továbbfejlesztett képességeit. 
 
 ## <a name="electronic-reporting"></a>Elektronikus jelentéskészítés
 Az elektronikus jelentési (ER) eszköz a különböző országok/régiók jogi követelményeinek megfelelő formátumú elektronikus dokumentumok konfigurálását teszi lehetővé. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. További tájékoztatás a következő témakörök egyikében található:
@@ -77,27 +76,11 @@ További információ: [Feladat-útmutatók](../../fin-and-ops/get-started/help-
 
 
 ## <a name="countryregion-specific-help-topics"></a>Ország-/régióspecifikus súgó témakörök
-Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják fel.
+Az alábbi szakaszok országonként/területenként tartalmaznak erőforrásokat.
 
-### <a name="australia"></a>Ausztrália
-
--   [Banki fájlok formátumai](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [Üzletitevékenység-kimutatás ](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [Alacsony értékű csoport értékcsökkenése](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### <a name="austria"></a>Ausztria
-
-- [Féléves értékcsökkenés](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [Csomagolóanyag díjai](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [Beszerzési illetékek](../../financials/localizations/emea-aut-purchase-duties.md)
-- [Áfabevallás](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### <a name="belgium"></a>Belgium
-
--   [CODA banki kivonat](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [Intervat-adóbevallás](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [PRODCOM-jelentés beállítása](../../financials/localizations/emea-bel-prodcom-report.md)
--   [Egyeztetési jelentések](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### <a name="australiafinancialslocalizationsaustraliamd"></a>[Ausztrália](../../financials/localizations/australia.md)
+### <a name="austriafinancialslocalizationsaustriamd"></a>[Ausztria](../../financials/localizations/austria.md)
+### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgium](../../financials/localizations/belgium.md)
 
 ### <a name="brazil"></a>Brazília
 
@@ -132,24 +115,11 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Kínai Arany adó adatentitás importálása](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
 -   [Havi átlagos készletköltségmodell](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
 -   [Fő számlák készletének feladása hely szerint](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
--   [Főkönyvi számla tartozik és követel tételeinek megjelenítése](../../financials/localizations/apac-chn-negative-debits-credits.md)
+-   [Főkönyvi számla tartozik és követel összegeinek megjelenítése](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### <a name="the-czech-republic"></a>Cseh Köztársaság
-
--   [Készpénzfizetési engedmény jóváírásra](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [Értékcsökkenés kerekítése](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [A tárgyieszköz-kivezetés féléves értékcsökkenése a Cseh Köztársaság esetében](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [Értékcsökkenés felfüggesztése (ünnepek.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [Tárgyi eszközök értékcsökkenési módjai a Cseh Köztársaság esetében](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [Tárgyi eszköz előzetes beszerzésének feladása](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [Áfabevallás a Cseh Köztársaság esetében](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [Áfa bejelentése ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [Osztott időszakok az időszaki naplókban](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [Aláírók beállítása a nyomtatási képernyőkhöz](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](../../financials/localizations/emea-amount-printing-forms.md)
+### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Cseh Köztársaság](../../financials/localizations/czech-republic.md)
 
 ### <a name="estonia"></a>Észtország
-
 -   [Észtországi áfabevallás részletei](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [Tárgyi eszközök értékesítése](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
@@ -280,7 +250,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 -   [Helyesbítés – inflációkimutatási jelentés](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [ISR-bevallási jelentési jelentés](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [Elektronikus számlák (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### <a name="malaysia"></a>Malajzia
 
 -   [Áruk és szolgáltatások adója (GST)](../../financials/localizations/apac-mys-gst.md)
@@ -291,7 +261,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 
 ### <a name="norway"></a>Norvégia
 
--   [Készpénzjegyzékek Norvégia esetében](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Pénztárgépek Norvégia esetében](../../retail/localizations/emea-nor-cash-registers.md)
 -   [Készpénzjegyzékek telepítésére vonatkozó irányelvek Norvégia esetében](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Nets importálási formátum](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [Áfabevallás](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
@@ -333,7 +303,7 @@ Az alábbi szakaszok az erőforrásokat országonként/régiónként sorolják f
 ### <a name="sweden"></a>Svédország
 
 -   [Kifizetési formátumok importálása Svédország esetében](../../financials/localizations/emea-swe-payment-formats-import.md)
--   [Készpénzjegyzékek Svédország esetében](../../retail/localizations/emea-swe-cash-registers.md)
+-   [Pénztárgépek Svédország esetében](../../retail/localizations/emea-swe-cash-registers.md)
 
 ### <a name="switzerland"></a>Svájc
 

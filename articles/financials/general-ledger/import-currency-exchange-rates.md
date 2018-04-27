@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-currency-exchange-rates"></a>Devizaárfolyamok importálása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ha egy jogi személy devizában kapott számlákat, a devizát át kell váltani a saját pénznembe. Ez azt jelenti, hogy különböző pénznemekre nézve szükség van a legfrissebb átváltási árfolyamra. Ez a témakör áttekintést ad a devizaárfolyam-szolgáltatók, mint az Európai Központi Bank és az Orosz Központi Bank által az interneten közzétett referencia-devizaárfolyamok feldolgozásához és importálásához szükséges beállításokról.
 

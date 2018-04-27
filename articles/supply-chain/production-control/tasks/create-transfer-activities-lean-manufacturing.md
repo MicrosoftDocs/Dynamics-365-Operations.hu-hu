@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-transfer-activities-for-lean-manufacturing"></a>Lean manufacturing gyártási átviteli tevékenységek létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Hozzon létre átmozgatási tevékenységet lean manufacturinghez. 
 

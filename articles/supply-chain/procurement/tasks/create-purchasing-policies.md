@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-purchasing-policies"></a>Beszerzési irányelvek létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan lehet olyan beszerzési irányelveket létrehozni, amelyeket egyeztetni kíván az üzleti folyamattal a beszerzéshez. A beszerzési irányelvek létrehozása előtt, be kell állítania a beszerzési irányelvek paramétereit. Lehetőség van a beszerzési irányelvek létrehozására, módosítására és visszavonására, azonban nem törölheti a beszerzési irányelvet. Ezt a folyamatot általában egy beszerzési vezető végzi el. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja.
 

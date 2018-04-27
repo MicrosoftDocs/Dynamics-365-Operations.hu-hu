@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör az igény-előrejelzés használata előtt elvégzendő telepítési feladatokat mutatja be.  
 

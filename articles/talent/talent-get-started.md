@@ -26,14 +26,14 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Első lépések a Microsoft Dynamics 365 for Talent rendszerben
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 for Talent szolgáltatásban rendkívül könnyen módosíthatja a felhasználói felületet, és elvégezheti a szoftver intuitívebb igényeinek beállítását. Ez a témakör, amelyek tartalmaznak tájékoztatást, hogyan lehet igazítani a beállításokat a felhasználói felület témakörökre mutató hivatkozásokat tartalmaz. A témakör is tartalmaz, amelyek segítenek a rendszerben található információ hatékonyan és pontosan témakörökre mutató hivatkozásokat. 
 
 > [!NOTE] 
 > A következő termékek szorosan összefüggenek: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail és Dynamics 365 for Talent. Mindhárom termék azonos funkciókkal bírhat. Emiatt az elsősorban kiskereskedelemmel kapcsolatos témakörök esetében a terméknév a Dynamics 365 for Retail lesz, a szaktudással kapcsolatos témakörök esetében a terméknév Dynamics 365 for Talent lesz; a magtermékkel kapcsolatos témakörök esetében pedig a terméknév Dynamics 365 for Finance and Operations lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
-### <a name="personalizing-talent"></a>A Talent személyre szabása 
+## <a name="personalizing-talent"></a>A Talent személyre szabása 
 Az alábbi témakörök bemutatják, hogyan hozhatja létre a Dynamics 365 for Talent számos funkcióját, amelyek megkönnyítik az időben elvégezhető munkát. 
 
 -   [A felhasználói felület testreszabása](../fin-and-ops/get-started/personalize-user-experience.md) – Ez a témakör bemutatja a különböző módszereket, melyekkel testreszabható és igényekhez igazítható a Talent termék a preferenciáinak megfelelően.
@@ -44,7 +44,7 @@ Az alábbi témakörök bemutatják, hogyan hozhatja létre a Dynamics 365 for T
 
 -   [Billentyűparancsok](../fin-and-ops/get-started/shortcut-keys.md) – Ez a témakör felsorolja a billentyűparancsokat az Egyesült Államokban használt billentyűkiosztás használata esetén. 
 
-### <a name="accessing-information"></a>Adatok elérése
+## <a name="accessing-information"></a>Adatok elérése
 A következő témakörök leírják a lekérdezések használatát, valamint a keresési és szűrési funkciókat, hogy gyorsan megtalálja az információkat. 
 
 -   [Információk megtalálása keresésekkel](../fin-and-ops/get-started/use-lookups-to-find-information.md) – Ez a témakör azt mutatja, hogy a keresések segítenek gyorsan megtalálni a helyes vagy a kívánt értéket. A téma leírja, hogy a keresések hogyan működnek, és olyan tippeket tartalmaz, amelyek segítségével optimalizálhatja azok használatát.

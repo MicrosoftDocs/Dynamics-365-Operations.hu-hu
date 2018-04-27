@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Továbbfejlesztett banki egyeztetés importálásának beállítása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz. 
 
@@ -57,7 +56,7 @@ Az alábbiakban a továbbfejlesztett banki egyeztetési importfájl technikai el
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
 
- 
+
 
 ## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Állítsa be a ISO20022 banki kivonatok importálását
 Először definiálni kell a banki kivonat formátum feldolgozási csoportját ISO20022 banki kivonatokhoz, az adatentitás keretrendszer használatával.

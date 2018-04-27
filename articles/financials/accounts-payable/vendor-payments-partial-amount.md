@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7acf791d9a04c618b9a238e5d16e676849792b65
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aeef806980665c523f10b373f7662ecf509a8172
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-payments-for-a-partial-amount"></a>Szállítói kifizetések részösszegre
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Bizonyos esetekben előfordulhat, hogy Ön kisebb összeget fizet ki a szállítónak, mint a számlán szereplő összeg. Ez a cikk az ilyen helyzetek megoldásait taglalja. Az Ön számára elérhető beállítások az ön üzleti igényeitől és konfigurációitól függenek. 
 
@@ -39,7 +38,7 @@ Bizonyos esetekben előfordulhat, hogy Ön kisebb összeget fizet ki a szállít
 Szállítója készpénzfizetési engedményt kínálhat cégének, ha a számla esedékességi dátuma előtt fizet. Példa: egy 100,00 értékű számlát rögzít, amely 2%-os készpénzfizetési engedményt biztosít, ha 10 napon belül kifizetik. A számla határideje 30 nap. Ha egy fizetési javaslatot készpénzfizetési engedményt használ feltételként a számla kiválasztásához, és a javaslatot a készpénzfizetési engedmény dátumánál nem később futtatják, a számla ki lesz jelölve fizetésre, és 98,00 értékű kifizetési javaslat jön létre. A készpénzfizetési engedmény egy manuálisan létrehozott egyszeri fizetésre is alkalmazható.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Részleges kifizetések készpénzfizetési engedménnyel
-Amikor cége részleges kifizetést teljesít, akkor valószínű, hogy egy későbbi részleges fizetéssel teljesen ki kívánja majd egyenlíteni a számlát. Ahhoz, hogy a részleges fizetésre is tudjon készpénzfizetési engedményt alkalmazni, a **Részleges kifizetések készpénzfizetési engedményeinek számítása** opciót **Igen** beállításra kell állítani a **Kötelezettségek paraméterei** lapon. 
+Amikor cége részleges kifizetést teljesít, akkor valószínű, hogy egy későbbi részleges fizetéssel teljesen ki kívánja majd egyenlíteni a számlát. Ahhoz, hogy a részleges fizetésre is tudjon készpénzfizetési engedményt alkalmazni, a <strong>Részleges kifizetések készpénzfizetési engedményeinek számítása ** opciót **Igen</strong> beállításra kell állítani a <strong>Kötelezettségek paraméterei</strong> lapon. 
 
 Tegyük fel, hogy 2%-os készpénzfizetési engedmény kapott a szállítótól, ha a számla kifizetése a kiállítás után 10 napon belül megtörténik. Felad egy 100,00 értékű számlát. Ha 10 napon belül elküldi a 49,00 összegű kifizetést, akkor 49,00 értékű tartozik tételt rögzíthet egy fizetési naplóban. Amikor a részleges kifizetést kiegyenlíti a a **Nyitott tranzakciók kiegyenlítése** lapon, **1,00** érték jelenik meg az **Alkalmazandó készpénzfizetési engedmény összege** mezőben. 
 
@@ -47,7 +46,7 @@ Tegyük fel, hogy 2%-os készpénzfizetési engedmény kapott a szállítótól,
 > Ha részleges fizetést rögzít a rendszerben, és meghagyja a számla teljes összegét a **Kiegyenlítendő összeg** mezőben, akkor az **Alkalmazandó készpénzfizetési engedmény összege** mezőt a program a tranzakciók feladásakor automatikusan újraszámítja.
 
 ## <a name="credit-notes-with-cash-discounts"></a>Jóváírások készpénzfizetési engedménnyel
-Ha a számlán található cikkek közül visszaküld valamit, akkor jóváírást kap a szállítótól. Ha készpénzfizetési engedményt vett igénybe az eredeti számlára, akkor levonhatja az engedmény érétkét levonhatja, és a helyes összegre vonatkozóan kaphatja meg a visszatérítést. Ha a **Jóváírások készpénzfizetési engedményeinek számítása** opció **Igen** beállításra van állítva a **Kötelezettségek paraméterei** lapon, akkor a program az engedményt automatikusan kiszámítja a jóváíráshoz. 
+Ha a számlán található cikkek közül visszaküld valamit, akkor jóváírást kap a szállítótól. Ha készpénzfizetési engedményt vett igénybe az eredeti számlára, akkor levonhatja az engedmény érétkét levonhatja, és a helyes összegre vonatkozóan kaphatja meg a visszatérítést. Ha a <strong>Jóváírások készpénzfizetési engedményeinek számítása** opció **Igen</strong> beállításra van állítva a <strong>Kötelezettségek paraméterei</strong> lapon, akkor a program az engedményt automatikusan kiszámítja a jóváíráshoz. 
 
 Tegyük fel, hogy 2%-os készpénzfizetési engedmény kapott a szállítótól, ha a számla kifizetése a kiállítás után 10 napon belül megtörténik. Felad egy 100,00 értékű számlát. Ha visszaküldi az árut és kap egy jóváírást, akkor ezt rögzítheti az eredeti számla teljes összegére, ami 100,00 volt, a 2%-os készpénzfizetési engedménnyel együtt, amely szintén szerepel a jóváíráson.  A jóváírás megtekintésekor a **Tranzakciók kiegyenlítése** lapon **98,00** érték jelenik meg a **Kiegyenlítendő összeg** mezőben, és **-2.00** a **Készpénzfizetési engedmény összege** mezőben. Az engedmény összege egy készpénzfizetési engedmény számlára kerül feladásra.
 

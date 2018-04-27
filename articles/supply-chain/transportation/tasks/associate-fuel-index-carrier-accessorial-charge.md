@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Üzemanyag-mutató társítása egy szállítóhoz kiegészítő díjként
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az útmutató bemutatja, hogyan lehet létrehozni egy kiegészítő szolgáltatás társítást, szállítmányozó kiegészítő szolgáltatási díjat, kiegészítő alapszolgáltatást üzemanyag-pótdíjhoz, és társítani egy szállítmányozó üzemanyag-mutatót egy szállítmányozóhoz. Az útmutató futtatása előtt létre kell hoznia egy szállítmányozó üzemanyag-mutatót. A „Szállítmányozói üzemanyag-mutató létrehozása” útmutatót használhatja ehhez. Általában a logisztikai vezető végzi el ezeket a beállítási feladatokat. Az eljárás létrehozásához az USMF bemutatóadatokat használtuk.
 

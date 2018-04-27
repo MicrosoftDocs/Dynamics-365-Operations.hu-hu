@@ -3,7 +3,7 @@ title: "Elavult szolgáltatások"
 description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve."
 author: sericks007
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0618d71fdb4b29bfdacd6b9e1a8ed47e03abe00d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="removed-or-deprecated-features"></a>Eltávolított vagy elavult szolgáltatások
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a Dynamics 365 for Finance and Operations alkalmazásból eltávolított szolgáltatásokat írja le, illetve azokat, amelyek elavultak.
 
@@ -37,7 +37,10 @@ Ez a témakör a Dynamics 365 for Finance and Operations alkalmazásból eltávo
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 > [!Note]
-> A Dynamics 365 for Finance and Operations Enterprise edition 2017. júliusi kiadása a 8-as platformfrissítéssel verziótól kezdve minden eltávolított és elavult szolgáltatás esetében feltüntetjük a telepítések típusát. Az ebben a témakörben említett korábbi kiadások kivétel nélkül csak a felhőtelepítést támogatták.
+> A Dynamics 365 for Finance and Operations 2017. júliusi kiadása a 8-as platformfrissítéssel verziótól kezdve minden eltávolított és elavult szolgáltatás esetében feltüntetjük a telepítések típusát. Az ebben a témakörben említett korábbi kiadások kivétel nélkül csak a felhőtelepítést támogatták.
+
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 15-ös platformfrissítéssel
+Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásban. A 15-ös platformfrissítés halmozott és tartalmazza a 13-as platformfrissítés, a 14-es platformfrissítés a 15-ös platformfrissítés új vagy módosított szolgáltatásait.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 12-es platformfrissítéssel
 
@@ -96,7 +99,7 @@ A normál adatkezelési kezelőfelület a régebbi kezelőfelület, amely a felh
 | **Felváltotta másik szolgáltatás?**   | Az új felhasználói felület neve *Bővített nézet*, és a régi felhasználói felületet váltja le.            |
 | **Érintett területek**         | Adatkezelési munkaterület                                                     |
 | **Telepítési beállítás**              | Mind                                                                           |
-| **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2018 1. negyedéve. |
+| **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve. |
 
 ### <a name="excise-sales-tax-service-tax-for-india"></a>Fogyasztási adó, áfa, szolgáltatási adó India esetében
 
@@ -1033,10 +1036,11 @@ A Windows 8-ra készült táblagépes alkalmazás lehetővé tette a költségbe
 
 ### <a name="x-financial-statements"></a>X++ pénzügyi kimutatások
 
-|   |  |
-|------------|--------------------|
-| **Elavulás/eltávolítás oka** | Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.                                    |
-| **Felváltotta másik szolgáltatás?**   | Felügyeleti jelentéskészítő (a Dynamics AX jelenlegi verziójában **Pénzügyi jelentéskészítés** megjelöléssel) |
-| **Érintett területek**         | Főkönyv                                                                              |
-| **Állapot**                         | Eltávolítva a Dynamics AX 2012-s verziójában                                                              |
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <strong>Elavulás/eltávolítás oka</strong> |                         Ezt a szolgáltatást egy másik szolgáltatás váltotta fel.                         |
+|  <strong>Felváltotta másik szolgáltatás?</strong>  | Felügyeleti jelentéskészítő (a Dynamics AX jelenlegi verziójában <strong>Pénzügyi jelentéskészítés</strong> megjelöléssel) |
+|     <strong>Érintett területek</strong>     |                                              Főkönyv                                              |
+|             <strong>Állapot</strong>             |                                      Eltávolítva a Dynamics AX 2012-s verziójában                                      |
+
 

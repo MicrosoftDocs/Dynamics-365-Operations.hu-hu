@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a>Eszköz létrehozása és hozzárendelése
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás végigveszi, hogyan hozhat létre egy új eszközt, és hogyan társíthatja azt egy jegyzékhez. A leírásban feltételezzük, hogy a jegyzéket már elkészítette.  Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat. Ez az eljárás rendszergazdák, Informatikai szakértők vagy kiskereskedelmi informatikusok, illetve az üzletvezető szerepköröket betöltők számára készült.
 

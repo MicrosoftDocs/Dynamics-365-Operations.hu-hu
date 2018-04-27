@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó kereskedelmi megállapodásokat egy kategória-árazási szabály használatával. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. A feladat a Kiskereskedelmi termékkihelyezési vezető szerepkör számára készült.
 

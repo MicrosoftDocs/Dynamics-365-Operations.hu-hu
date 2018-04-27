@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-element-dimensions"></a>Költségösszetevő-dimenziók
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A költségkönyvelés egyik alapvető elemeként a költségösszetevő-dimenziók használhatók a kategorizáláshoz és a költségmozgások nyomon követéséhez. 
 

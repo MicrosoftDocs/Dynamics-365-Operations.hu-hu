@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 63a02a64ff28531bae950f1b61d9167eaa0b0373
-ms.openlocfilehash: 7fd32467cfbc8c30b398659d16b268f183b6b3d3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d2a4a0b2bf2d33530dedc7ce3974ee558d063878
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Munkabér-/kompenzációs struktúra és tervek kialakítása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat-útmutató végigvezeti a folyamaton, amely létrehozza a Fix kompenzációs konstrukciót és az alkalmazhatósági szabályok által engedélyezi alkalmazottaknak konstrukcióba való bevitelét. E feladat létrehozása az USMF bemutatócég segítségével történt, a feladat a Kompenzációkért és juttatásokért felelős vezetők részére készült.
 

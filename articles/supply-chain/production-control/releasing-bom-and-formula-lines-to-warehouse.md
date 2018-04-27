@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti a nyersanyag kiadásának folyamatát az anyagjegyzéksorok és receptúrasorok kiadásához a raktárba. Amikor kiadunk egy anyagjegyzék- vagy receptúrasort a raktárba, a rendszer először azt határozza meg, hogy az anyagok már rendelkezésre állnak-e a termelés bemeneti helyén az üzemben, ahol az anyagot felhasználják a termelési folyamat során.
 
@@ -44,7 +44,7 @@ Az anyagjegyzék- és receptúrasorok kiadásához használt módszert a **Terme
 - **Anyagjegyzék- és receptúrasorok kiadása kötegelt feladatként vagy manuális beavatkozásként** – ennél a módszernél az anyagjegyzék- és receptúrasorokat kizárólag az **Anyagjegyzék és receptúrasorok automatikus kiadása** kötegelt feladat részeként, vagy manuális beavatkozással lehet kiadni. Anyagjegyzék- és receptúrasorok manuális kiadásához válassza a **Kiadás raktárba** lehetőséget a termelési rendelés listája vagy a termelési rendelés részletei oldalon, a műveleti ablaktáblán.
 
 Ha gyors áttekintést szeretne arról, hogy miként adható ki az anyagjegyzék és a receptúrasorok a termelésbe kötegelt feladat segítségével, nézze meg ezt a YouTube-videót:
-[!Video https://www.youtube.com/embed/8urAJn50dQ8]
+[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Anyagjegyzék- és receptúrasorok kiadása kötegelt feladat segítségével
 
@@ -86,7 +86,7 @@ A következő ábrán egy termelési rendelés látható, amelyhez két művelet
 ![Példa anyag kiadására műveletszám szerint](media/two-operations.PNG)
 
 Ha gyors áttekintést szeretne arról, hogy miként adható ki az anyag a késztermékekkel arányosan, nézze meg ezt a rövid YouTube-videót:
-[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
+[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Anyagok kiadása a késztermékek mennyiségének arányában
 

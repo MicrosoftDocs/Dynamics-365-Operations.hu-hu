@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Microsoft Dynamics 365 for Finance and Operations rendszerben. A szállítók a következő munkaterületekről tudnak különböző üzleti folyamatokat végrehajtani:
 

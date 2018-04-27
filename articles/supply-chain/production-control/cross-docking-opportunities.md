@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Termelési rendelések áttárolása kiszállítási területekbe
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan kell kezelni az anyag áttárolásának folyamatát, amelyet egy gyártósorról befejezettnek jelentenek egy kimenő szállítási dokk felé.
 
@@ -76,10 +76,10 @@ Az **áttárolási irányelvben** Ön határozza meg, hogy mely dokumentumtípus
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Áttárolási irányelv neve: Átmozgatási rendelés
 
--   Sorszám: 10
- -   Munkarendelés típusa: Átmozgatási probléma
--   Az áttárolási igényhez meg kell adni a helyet: Hamis
--   Párhuzamos áttárolási stratégia: dátuma és időpontja
+- Sorszám: 10
+  -   Munkarendelés típusa: Átmozgatási probléma
+- Az áttárolási igényhez meg kell adni a helyet: Hamis
+- Párhuzamos áttárolási stratégia: dátuma és időpontja
 
 ### <a name="sequence-number"></a>Sorszám
 

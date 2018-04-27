@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d9b61e545067db592545d5fbce7b4315c51a8bf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer"></a>Képletszerkesztő
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör azt ismerteti, hogy a képletszerkesztő segítségével hogyan elemezhetők és tarthatók karban a receptúrák a fanézetben
 
@@ -88,7 +88,7 @@ A receptúrára és az útvonalra érvényes szűrő megjelenik a képlettervez�
 </tr>
 <tr class="odd">
 <td>Forrásmennyiség</td>
-<td>A verziók szűrése egy adott „forrás” mennyiség használatával. Ha megad egy értéket, különböző receptúra- és útvonalverziókat választ ki.</td>
+<td>A verziók szűrése egy adott &quot;forrás&quot; mennyiség használatával. Ha megad egy értéket, különböző receptúra- és útvonalverziókat választ ki.</td>
 </tr>
 <tr class="even">
 <td>Csak az érvényesek jelenjenek meg</td>
@@ -116,8 +116,10 @@ Használja az **Anyagjegyzéksorok** vagy a **Receptúra** funkciókat receptúr
 ## <a name="configuring-the-tree-view"></a>A fa nézet beállítása
 Kattintson a **Beállítás** menüpontra a képletszerkesztő fanézetében megjelenő információk testreszabásához.
 
-| Mezőcsoport | Leírás |
-|-------------|-------------|
-| Anyagjegyzék         | A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek a faszerkezetben jelennek meg. A képletszerkesztő mindkét lap alján megjeleníti a kiválasztott kritériumokat. |
-| Útvonal       | A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek az útvonalak között megjelennek. |
+
+| Mezőcsoport |                                                                          Leírás                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Anyagjegyzék     | A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek a faszerkezetben jelennek meg. A képletszerkesztő mindkét lap alján megjeleníti a kiválasztott kritériumokat. |
+|    Útvonal    |                                           A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek az útvonalak között megjelennek.                                           |
+
 

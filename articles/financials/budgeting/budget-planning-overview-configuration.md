@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-overview"></a>A költségvetés-tervezés áttekintése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja a költségvetés-tervezést, illetve információkkal szolgál a költségvetés-tervezés beállítási és a költségvetés-tervezési folyamatok létrehozási lehetőségeiről.
 
@@ -116,18 +115,18 @@ A költségvetés-tervezés során feloszthatja a költségvetési terv sorainak
 
 A felosztási ütemezések automatikusan felosztják a költségvetési terv sorait a munkafolyamat feldolgozása során. A **Felosztási módszer** listán szereplő bármely módszerrel végezhet felosztásokat:
 
--   **Időszaki felosztás** – A költségvetési terv sorait a költségvetési forrás tervváltozatából időszaki felosztókulcs segítségével oszthatja fel a célváltozat pénzügyi időszakai között. **Megjegyzés**: Mielőtt időszakok közötti felosztást végez, azelőtt be kell állítania az időszaki felosztási kulcsokat az ****Időszak-felosztási kategóriák**** oldalon.
--   **Dimenziókra való felosztás** – A költségvetési terv sorai a költségvetési forrás tervváltozatából a célváltozat pénzügyi dimenziói között kerülnek felosztásra. **Megjegyzés**: Mielőtt elvégezné a dimenziókra való felosztást, be kell állítania a költségvetés-felosztási feltételeket a ****Költségvetés-felosztási feltételek**** oldalon.
--   **Összesítés** – A költségvetési terv sorai a szülő költségvetési terv költségvetési forrás tervváltozatából a társított költségvetési terv célváltozatában kerülnek összesítésre.
--   **Felosztás** – A költségvetési terv sorai a szülő költségvetési terv költségvetési forrás tervváltozatából a társított költségvetési terv célváltozatába kerülnek felosztásra.
--   **Főkönyvi felosztási szabályok használata** – A költségvetési terv sorai a forrás költségvetési tervváltozat soraiból a kiválasztott főkönyvi felosztásszabály alapján a cél költségvetési tervváltozatba kerülnek felosztásra.
--   **Másolás költségvetési tervből** – A felosztás forrásaként kiválaszthat egy másik költségvetési tervet.
+- <strong>Időszaki felosztás</strong> – A költségvetési terv sorait a költségvetési forrás tervváltozatából időszaki felosztókulcs segítségével oszthatja fel a célváltozat pénzügyi időszakai között. <strong>Megjegyzés</strong>: Mielőtt időszakok közötti felosztást végez, azelőtt be kell állítania az időszaki felosztási kulcsokat *<strong><em>Időszak-felosztási kategóriák</em></strong>* oldalon.
+- <strong>Dimenziókra való felosztás</strong> – A költségvetési terv sorai a költségvetési forrás tervváltozatából a célváltozat pénzügyi dimenziói között kerülnek felosztásra. <strong>Megjegyzés</strong>: Mielőtt elvégezné a dimenziókra való felosztást, be kell állítania a költségvetés-felosztási feltételeket a *<strong><em>Költségvetés-felosztási feltételek</em></strong>* oldalon.
+- **Összesítés** – A költségvetési terv sorai a szülő költségvetési terv költségvetési forrás tervváltozatából a társított költségvetési terv célváltozatában kerülnek összesítésre.
+- **Felosztás** – A költségvetési terv sorai a szülő költségvetési terv költségvetési forrás tervváltozatából a társított költségvetési terv célváltozatába kerülnek felosztásra.
+- **Főkönyvi felosztási szabályok használata** – A költségvetési terv sorai a forrás költségvetési tervváltozat soraiból a kiválasztott főkönyvi felosztásszabály alapján a cél költségvetési tervváltozatba kerülnek felosztásra.
+- **Másolás költségvetési tervből** – A felosztás forrásaként kiválaszthat egy másik költségvetési tervet.
 
 ### <a name="stage-allocations"></a>Szakaszok felosztásai.
 
 A szakaszok felosztásait arra használjuk, hogy automatikusan felosszuk a költségvetési terv sorait a munkafolyamat feldolgozása során. Amikor szakaszfelosztásokat használunk, a célváltozat költségvetési terv sorait létrehozhatjuk és módosíthatjuk a költségvetési terv készítőjének vagy ellenőrének beavatkozása nélkül.
 
-Szakaszfelosztás beállításakor társítsa a költségvetés-tervezési munkafolyamatot és a szakaszt a felosztási ütemezéssel. A költségvetés-tervezési munkafolyamatot társítani kell egy, a ****Költségvetés-tervezési szakasz felosztása**** automatizált munkafolyamatot használó költségvetési munkafolyamattal. Ha a munkafolyamat eléri a megadott szakaszt, a felosztás automatikusan megtörténik. Ez az automatizált feladat egy új változat költségvetési terv-sorainak létrehozására használható. 
+Szakaszfelosztás beállításakor társítsa a költségvetés-tervezési munkafolyamatot és a szakaszt a felosztási ütemezéssel. A költségvetés-tervezési munkafolyamatot társítani kell egy, a *<strong><em>Költségvetés-tervezési szakasz felosztása</em></strong>* automatizált munkafolyamatot használó költségvetési munkafolyamattal. Ha a munkafolyamat eléri a megadott szakaszt, a felosztás automatikusan megtörténik. Ez az automatizált feladat egy új változat költségvetési terv-sorainak létrehozására használható. 
 
 A mintasablonban, amely a cikk korábbi részében szerepelt, egy felosztás végrehajtása szerepel összegek átvitelére a költségvetési tervből és tervváltozatokból a központ kiindulási szakaszában egy másik költségvetési tervbe és tervváltozatba az Értékesítési részleg Becslési szakaszában. A következő ábrán a mintasablon idevágó szakasza látható.
 

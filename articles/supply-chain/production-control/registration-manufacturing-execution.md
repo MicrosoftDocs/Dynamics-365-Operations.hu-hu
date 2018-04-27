@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="registration-for-manufacturing-execution"></a>Gyártásvégrehajtás regisztrációja
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja az alapfogalmakat és folyamatokat, amelyek a gyártásvégrehajtás beállításához és használatához szükségesek. 
 

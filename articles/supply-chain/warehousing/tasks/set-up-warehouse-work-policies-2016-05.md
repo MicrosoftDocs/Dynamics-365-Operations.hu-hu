@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-warehouse-work-policies"></a>Raktári munkairányelvek beállítása  
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát. A munka irányelveinek használatával megakadályozhatja a nyersanyag kitárolására és a befejezett termékek betárolására vonatkozó munka létrehozását egy termékkészletre vonatkozóan az adott helyeken. A rendszer az USMF bemutatócéget használta a rögzítés létrehozására. Ez a feladat 7.0.1-es vagy újabb verziós Dynamics AX alkalmazást igényel.
 

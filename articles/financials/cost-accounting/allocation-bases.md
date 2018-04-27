@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Felosztás alapjai 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A felosztási alap az az alap, amely szerint a Költségkönyvelés felosztja az általános költségeket. A felosztási alap olyan mennyiség lehet, mint például a felhasznált számítógépórák száma, a felhasznált kilowattórák (kWh) száma vagy a lefoglalt négyzetméterek száma. A felosztási bázisokat leginkább az általános költségek fedezésére használják a készlethez. Például egy informatikai részleg kiadja költségeit az egyes részlegek által használt számítógépek számának megfelelően.
 
@@ -424,9 +424,11 @@ Az Előnézet funkció lehetővé teszi a létrehozott képletletöltési alap �
 
 Itt van egy példa a költségelosztási szabályra, ha az Elektromos áram rögzített receptúra felosztási alapját hozzárendeli a rendszer a benne lévő felosztási bázishoz.
 
-| Költségobjektum |  Leírás  | Nagyság | Felosztási tényező                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | HR | 1,837.50  | (1,837.50 ÷ 18,162.50) x Összeg  |
-| CC002       | FI | 3,075.00  | (3,075.00 ÷ 18,162.50) x Összeg  |
-| CC003       | Készletátadás | 13,250.00 | (13,250.00 ÷ 18,162.50) x Összeg |
+
+| Költségobjektum | Leírás | Nagyság |        Felosztási tényező         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     HR      | 1,837.50  | (1,837.50 ÷ 18,162.50) x Összeg  |
+|    CC002    |     FI      | 3,075.00  | (3,075.00 ÷ 18,162.50) x Összeg  |
+|    CC003    |     Készletátadás      | 13,250.00 | (13,250.00 ÷ 18,162.50) x Összeg |
+
 

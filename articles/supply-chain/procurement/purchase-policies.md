@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchasing-policies"></a>Beszerzési irányelvek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a beszerzési irányelvekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési irányelv az igénylési folyamatot szabályozó szabályok gyűjteménye. A beszerzési irányelvek lehetővé teszik a beszerzési rendszergazdáknak a beszerzési stratégia megvalósítását a szervezet stratégiai beszerzési követelményihez igazodó irányelv struktúrájának létrehozásával.
 

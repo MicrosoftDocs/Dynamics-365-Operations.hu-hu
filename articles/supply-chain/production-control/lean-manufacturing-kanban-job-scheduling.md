@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanbanfeladat ütemezése lean manufacturing céljára
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a kanban-feladat ütemezés feletti vizuális ellenőrzésről és a kanban-feladatok ütemezésének különböző módszereiről nyújt tájékoztatást.  
 

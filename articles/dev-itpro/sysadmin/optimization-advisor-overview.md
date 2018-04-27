@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="optimization-advisor-overview"></a>Optimalizálási tanácsadó – áttekintés
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan használhatja az Optimalizálási tanácsadót a Microsoft Dynamics 365 Finance and Operations optimális konfigurációjának biztosítása érdekében.
 

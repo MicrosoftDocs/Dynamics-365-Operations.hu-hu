@@ -29,15 +29,14 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Termékéletciklus állapota 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A termékéletciklus állapota egy kiadott termék vagy termékváltozat életciklus-állapotát dokumentálja. A termékéletciklus-állapotokat a felhasználó határozza meg, általában egy termékmenedzser vagy egy termékalapadat-menedzser. Adott üzleti folyamatokra, például a fő tervezésre, hatással lehet egy adott termékéletciklus-állapot.   
- 
+
 Egy kiadott termék vagy termékváltozat társítható egy termékéletciklus-állapottal, amely azt dokumentálja, hogy jelenleg milyen életciklus-állapotban van az adott termék vagy változat. Tetszőleges számú termékéletciklus-állapot adható meg egy állapotnév és egy leírás hozzárendelésével. Kiválasztható egy életciklus-állapot az újonnan kiadott termékek alapértelmezett állapotának. A kiadott termékváltozatok öröklik termékéletciklus-állapotukat a kiadott alapterméküktől a létrehozásakor. Egy kiadott alaptermék életciklus-állapotának módosításakor lehetőség van az összes olyan létező változat frissítésére, amelynek ugyanaz az eredeti állapota.  
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Új termékéletciklus-állapot létrehozása 
- 
+
 - Új termékéletciklus-állapot létrehozásáhaz játssza le vagy olvassa el a következő feladat-útmutatót: **Új termékéletciklus-állapot létrehozása**. 
 
 -  Alapértelmezett termékéletciklus-állapot létrehozásáhaz játssza le vagy olvassa el a következő feladat-útmutatót: **Alapértelmezett termékéletciklus-állapot létrehozása**.   
@@ -73,7 +72,7 @@ Részletes információkért arról, hogyan lehet a termékéletciklus-állapoto
 
 > [!NOTE]
 > A megfelelő teljesítmény érdekében ajánlott társítani az összes elavult kiadott terméket vagy termékváltozatot, különösen, ha nem újrahasználható termékkonfigurációs változatokkal dolgozik, az alaptervezéshez inaktivált termékéletciklus-állapottal.  
- 
+
 ## <a name="default-migration-import-and-export"></a>Alapértelmezett áttelepítés, importálás és exportálás 
 
 Az adatentitások nem támogatják a termékéletciklus-állapotokat, és az életciklus-állapot nem állítható be változó állapotra a kiadott termék-adatentitásokon keresztül.
@@ -81,18 +80,18 @@ Az adatentitások nem támogatják a termékéletciklus-állapotokat, és az él
 -  A korábbi verziókról való áttelepítés esetében az összes termék és a termékváltozat életciklus-állapota üres lesz.  
 -  Kiadott termékek importálásakor egy adatentitáson keresztül, a rendszer az alapértelmezett életciklus-állapot fogja alkalmazni a létrehozáskor.  
 -  Kiadott termékváltozatok importálásakor egy adatentitáson keresztül, a rendszer a kiadott alaptermék életciklus-állapotát fogja importálni.   
- 
+
 ## <a name="find-obsolete-products-and-products-variants"></a>Elavult termékek és termékváltozatok keresése 
- 
+
 Lefuttatható egy elemzésszimuláció az elavult kiadott termékek vagy termékváltozatok felkutatására, és ezt követően frissíthető a termékéletciklus-állapotuk. Az elavult termékek felkutatásához játssza le vagy olvassa el a következő feladat-útmutatót: **Elavult termékváltozatok keresése és termékéletciklus-állapot hozzárendelése**. Ez a feladat-útmutató bemutatja, hogyan lehet megkeresni az elavult kiadott termékeket vagy termékváltozatokat, és hogyan lehet termékéletciklus-állapotot társítani az elavult termékekhez. Azt is bemutatja, hogyan lehet megtekinteni a szimulációs eredményeket, és kiértékeli, hogy hány termékhez és termékváltozathoz lesz új termékéletciklus-állapot társítva, ha a frissítést szimuláció nélkül futtatjuk.  
- 
+
 Az elemzés szimulációs üzemmódban való futtatásával az elavultként azonosított termékek és termékváltozatok egy erre a célra szolgáló képernyőn jelennek meg, ahol egyszerűen ellenőrizhetők. Az elemzés tranzakciókat és alapadatokat keres azzal a céllal, hogy azonosítsa azokat a termékeket, amelyek iránt nincs igény egy változtatható időperióduson belül, és nincs igényt eredményező alapadat. Az elemzésből ki lehet zárni a beállítható időn belül újonnan kiadott termékeket. Amikor az elemzésszimuláció visszaadja a várt eredményt, a felhasználó lefuttathatja az elemzést, és új termékéletciklus-állapotot állíthat be az összes, az elemzés által elavultként azonosított termékhez.  
- 
+
 > [!NOTE]
 > Vegye figyelembe, hogy minden elemzést és frissítést ugyanazon a jogi személyen belül kell elvégezni.  
- 
+
 ## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a>Feltételek a kiadott termékek vagy termékváltozatok kiválasztásához és frissítéséhez 
- 
+
 Használja a következő feltételeket a kiadott termékek vagy termékváltozatok kiválasztásához és frissítéséhez: 
 
 -    A termék vagy termékváltozat termékéletciklus-állapotának különböznie kell az új kívánt állapottól. 

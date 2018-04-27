@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Rakományok és szállítmányok tervezése a Rakománytervezési munkaterülettel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan használható a rakománytervezési munkaterület egy értékesítési rendeléshez kapcsolódó rakomány létrehozásához. Előfeltételként létrehozzuk az értékesítési rendelést először. Ez az eljárás a szállítási koordinátor napi munkájának része. Ez az eljárás az USMF bemutatócéget használja.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cash-discounts"></a>Készpénzfizetési engedmények
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A készpénzfizetési engedmények be vannak állítva és a meg vannak osztva a kötelezettségek és kinnlevőségek számára.  Az elérhető készpénzfizetési engedmény megadható a vevői számlán vagy a szállítói számlán, és ott meg fog jelenni, ha a számla kifizetése megtörténik a készpénzfizetési engedmény dátuma előtt. 
 
@@ -65,6 +64,7 @@ A jogi személy könyvelési pénzneme EUR és a következő árfolyamok USD-ben
 -   március 1 = 80
 
 Február 15-én adnak fel egy 20D2%-os készpénzfizetési engedménnyel rendelkező 1000 USD-s számlát. A számla összege a könyvelési pénznemben 1100 EUR. A számlaösszegből 980 USD kifizetése történik meg március 1-jén. A készpénzfizetési engedmény összege 20 USD. A fizetés könyvelési pénznemének összege 784 EUR. A készpénzfizetési engedmény összegének a könyvelési pénznemben történő kiszámítása március 1-jei átváltási árfolyam alapján történik: 20 \* 80 / 100 = 16 EUR.
+
 | **Megjegyzés**                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ha a részfizetés beállítás készpénzfizetési engedmény számítása van kiválasztva a Számla kötelezettségek paramétereinek vagy a Kötelezettségi paramétereinek lapjain, az az átváltási díj használatos, amely hatással van minden egyes részlet fizetés dátumára. |

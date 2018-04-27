@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="modeling-a-lean-organization"></a>Lean szervezeti modellezése
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk a lean szervezet modellezésében szereplő kulcsokról nyújt tájékoztatást. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a>Meglévő dolgozó felvétele toborzás útján
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Időnként a nyitott pozíciók feltölthetők olyan pályázókkal, akik már alkalmazottak a szervezetben. Ez az eljárás végigvezeti egy meglévő alkalmazott felvételén a toborzási folyamat lépéseivel. Ezzel az eljárással egy toborzási projekt már létrejött, és egy meglévő alkalmazott már beküldött a toborzási projekthez egy kérelmet. Ez az eljárás az USMF bemutatócéget használja.
 

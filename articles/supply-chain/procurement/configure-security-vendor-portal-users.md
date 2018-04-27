@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="vendor-portal-user-security"></a>Felhasználói biztonság a szállítói portálon
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti a szállítói portált használó külső szállítók biztonságának beállítását. Az itt olvasható információk csak a Dynamics AX 2016. februári és 2016. májusi verzióira vonatkoznak.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-production-flow-version"></a>Termelési folyamat verziójának létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás a termelési folyamat új verziójának létrehozását foglalja össze. Ehhez az eljáráshoz meg kell adni a lean manufacturingre vonatkozó termelési paramétereket és a mértékegységeket. Meg kell adnia egy érték-előállítási folyamatot és egy termelési csoportot is. További információt a termelési folyamatokról és a lean manufacturing tevékenységeiről a Lean manufacturing a Microsoft Dynamics AX szolgáltatáshoz c. tanulmányokban talál. Ez az eljárás az USMF bemutatócéget használja.
 

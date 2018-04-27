@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>Jelölt felvétele toborzás útján
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás lehetővé teszi a toborzók számára az olyan pályázók felvételét, akik egy speciális toborzási projekten keresztül pályáztak. Ha egy toborzási projekten keresztül vesz fel egy pályázót, új dolgozói rekord jön létre, és a pályázó rekordja Alkalmazott állapotra vált. Ez az eljárás az USMF bemutatócéget használja. Az eljárás befejezéséhez ugorjon az Emberi erőforrások > Toborzás > Pályázatok > Pályázatok lehetőségre 
 

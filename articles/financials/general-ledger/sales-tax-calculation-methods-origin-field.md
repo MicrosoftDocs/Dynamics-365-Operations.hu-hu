@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>ÁFA-számítási módok kiválasztása az Kiindulás mezőben
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ez a cikk ismerteti az áfa kódok lapon található Eredet mező opcióit és azt, hogy hogyan kerül kiszámításra az áfa a kiválasztott áfa kód alapján.
 
@@ -53,11 +52,12 @@ Az adóhatóság különleges adókat szabott ki egy cikkre. Az adó összegét 
 -   ÁFA = 25% a Bruttó összeg százaléka számítási módszer használata mellett
 
 Ha a nettó összeg 10,00, akkor az 1. ADÓ 1,00 (10.00 x 10%) a 2. ADÓ pedig 2,00 (10.00 x 20%). Az összegek a következők lesznek: Bruttó összeg: Nettó összeg + 1. ADÓ összege + 2. ADÓ összege (10,00 + 1,00 + 2,00) = 13.00 ÁFA = 13,00 x 25 % = 3,25 ADÓK és ÁFA összege: 1,00 + 2,00 + 3,25 = 6,25 Teljes összeg: 10,00 + 6,25 = 16,25
+
 | **Megjegyzés**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | A tranzakciókhoz csak egy olyan adó használható, ahol Kiindulás = Bruttó összeg százaléka. Ha egynél több ilyen adókódot állít be egy tranzakcióhoz, úgy a rendszer arra vonatkozó hibaüzenetet jelenít meg, hogy az áfa kiszámítása nem lehetséges. |
 
- 
+
 <a name="percentage-of-sales-tax"></a>Az áfa százaléka
 -----------------------
 
@@ -70,6 +70,7 @@ Az alábbi Áfakódok esetén:
 -   ÁFA = 25% a Bruttó összeg százaléka módszer használata mellett
 
 Nettó összeg: 10,00 1. ADÓ: 10,00 x 10 % = 1,00 2. ADÓ: 1,00 x 20 = 0,20 Bruttó összeg: 10,00 + 1,00 + 0,20 = 11,20 ÁFA: 11,20 x 25 % = 2.80 ADÓK és ÁFA összege: 1,00 + 0,20 + 2,80 = 4,00 Teljes összeg: 10,00 + 4,00 = 14,00
+
 | **Megjegyzés**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Az adók kiszámítása során nem alkalmazhatók többszintű adók. Az adó kiszámításának alapja nem lehet olyan adó, amely eleve egy másik adó függvénye. Több, az adókódoknál rögzített egyszintű adó is alkalmazható egy adott tranzakcióra. |
@@ -79,6 +80,7 @@ Ha az Egységenkénti összeg lehetőséget választja az Kiindulás mezőben, a
 ### <a name="example"></a>Példa
 
 Az Áfakód beállítása a következő 1,20 USD egységenkénti összeg = doboz. Az értékesítési számla 25 db adott cikket tartalmazó sora esetén az Áfa-számítás módja: 25 x 1.20 = 30,00
+
 | **Megjegyzés**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ha a tranzakció rögzítése az áfakódban rögzítettől eltérő mértékegységben történik, úgy azt a rendszer automatikusan konvertálja a Mértékegység-konverzió oldalon beállított arányoknak megfelelően. |

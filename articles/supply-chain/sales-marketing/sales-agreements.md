@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-agreements"></a>Értékesítési szerződések
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A témakör az értékesítési szerződésekről nyújt tájékoztatást. Az értékesítési szerződés olyan szerződés, amelyben egy vevő vállalja, hogy az adott termékből bizonyos összegért vagy egy bizonyos mennyiséget vásárol az idő tekintetében, különleges árak és engedmények ellenében.
 

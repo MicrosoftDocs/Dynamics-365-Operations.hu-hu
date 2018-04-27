@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-designer-interface"></a>Jelentéstervező felület
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti, hogyan navigálhat a Jelentéstervezőben és a különböző beállításokat, segítségével az igényeihez igazíthatja a programot. 
 

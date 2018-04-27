@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-scheduling-properties"></a>Munkaidő-ütemezési tulajdonságok létrehozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A munkaidő-ütemezési tulajdonságok segítségével munkaidő-intervallumok kategorizálhatók, és meghatározhatók a beállítások, melyeket a kezelőknek figyelembe kell venniük. Ez az eljárás bemutatja, hogyan lehet meghatározni egy munkaidő-ütemezési tulajdonságot és további kapcsolódó értékeket. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.
 

@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-invoicing"></a>Vállalatközi számlázás
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ebben a cikkben tudnivalók és példák találhatóak a Microsoft Dynamics 365 for Finance and Operations rendszer projektjeire vonatkozó vállalatközi számlázásról.
 
@@ -58,20 +57,22 @@ Ebben a példában az USSI a kölcsönadó jogi személy, és az erőforrásai a
 
 Ebben a példában az FRSI lehetőségnek kell az USSI jogi személy vevőjének lennie és az USSI lehetőségnek az FRSI jogi személy szállítójának kell lennie. Ezt követően beállíthat egy vállalatközi kapcsolatot a két jogi személy között. A következő eljárás bemutatja,hogy hogyan állíthatja be úgy a paramétereket, hogy mindkét jogi személy szerepeljen a vállalatközi számlázásban.
 
-1.  Az FRSI beállítása az USSI jogi személy vevőjeként és az USSI beállítása az FRSI jogi személy szállítójaként. A feladathoz szükséges lépésekhez három belépési pont van.
-    | Lépés | Belépési pont                                                                       | Leírás   |
-    |------|-----------------------------------------------------------------------------------|------------------|
-    | A:    | Az USSI-ben kattintson a **Kinnlevőségek** &gt; **Vevők** &gt; **Összes vevő** pontra. | Hozzon létre egy új ügyfélbejegyzést az FRSI lehetőségre vonatkozóan, és válassza ki a vevőcsoportot.                                                                                  |
-    | milliárd    | Az FRSI-ben kattintson a **Kötelezettségek** &gt; **Szállítók** &gt; **Összes szállító** pontra.        | Új szállítói rekord létrehozása az USSI lehetőségre vonatkozóan, és a szállítói csoport kiválasztása.                                                                                    |
-    | K    | Az FRSI lehetőségben nyissa meg az imént létrehozott szállítói rekordot.                            | A Műveleti ablaktáblán a **Általános** lapon a **Beállítás** csoportban kattintson a **Vállalatközi** lehetőségre. A **Vállalatközi** lapon a **Kereskedelmi kapcsolat** lapon állítsa az **Aktív** csúszkát **Igen** lehetőségre. A **Vevő vállalat** mezőben jelölje ki azt az ügyfélbejegyzést, amelyet az A. lépésben hozott létre. |
+1. Az FRSI beállítása az USSI jogi személy vevőjeként és az USSI beállítása az FRSI jogi személy szállítójaként. A feladathoz szükséges lépésekhez három belépési pont van.
 
-2.  Kattintson a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Projektvezetés és könyvelés paraméterei** lehetőségre, ezt követően kattintson a **Vállalatközi** lapra. A paraméterek beállításának módja attól függ, hogy Ön a kölcsönbe vevő jogi személy vagy a kölcsönadó jogi személy szerepkörével rendelkezik.
-    -   Ha a kölcsönbe vevő jogi személy, akkor válassza ki azt a beszerzési kategóriát, amelyet azon szállítói számlák egyeztetésére használnak, amelyek automatikusan létrejöttek.
-    -   Ha Ön a hitelező jogi személy az összes kölcsönbe vevő jogi személyre vonatkozóan, válassza ki az alapértelmezett projekt kategóriát minden egyes tranzakció típusra vonatkozóan. Az adó konfigurációjára a projekt kategóriákat használják, ha a vállalatközi tranzakciókban kiszámlázott kategóriák csak a kölcsönbe vevő jogi személy lehetőségben léteznek. Választhatja a bevétel elhalasztását a vállalatközi tranzakciókra vonatkozóan. Ezt a könyvelést akkor hajtják végre, amikor a tranzakciókat feladták, és ezt követően sztornírozták a vállalatközi számla feladásakor.
+   | Lépés |                                                       Belépési pont                                                        |                                                                                                                                                                                               Leírás                                                                                                                                                                                               |
+   |------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |  A:   | Az USSI-ben kattintson a <strong>Kinnlevőségek</strong> &gt; <strong>Vevők</strong> &gt; <strong>Összes vevő</strong> pontra. |                                                                                                                                                                  Hozzon létre egy új ügyfélbejegyzést az FRSI lehetőségre vonatkozóan, és válassza ki a vevőcsoportot.                                                                                                                                                                  |
+   |  milliárd   |    Az FRSI-ben kattintson a <strong>Kötelezettségek</strong> &gt; <strong>Szállítók</strong> &gt; <strong>Összes szállító</strong> pontra.     |                                                                                                                                                                    Új szállítói rekord létrehozása az USSI lehetőségre vonatkozóan, és a szállítói csoport kiválasztása.                                                                                                                                                                    |
+   |  K   |                                  Az FRSI lehetőségben nyissa meg az imént létrehozott szállítói rekordot.                                  | A Műveleti ablaktáblán a <strong>Általános</strong> lapon a <strong>Beállítás</strong> csoportban kattintson a <strong>Vállalatközi</strong> lehetőségre. A <strong>Vállalatközi</strong> lapon a <strong>Kereskedelmi kapcsolat</strong> lapon állítsa az <strong>Aktív</strong> csúszkát <strong>Igen</strong> lehetőségre. A <strong>Vevő vállalat</strong> mezőben jelölje ki azt az ügyfélbejegyzést, amelyet az A. lépésben hozott létre. |
 
-3.  Kattintson a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Árak** &gt; **Transzferár** lehetőségre.
-4.  Jelölje be a pénznem, a tranzakció típus és az átviteli ármodell lehetőséget. A számlában használt pénznem az a pénznem, amelyet konfiguráltak a vevői rekordban a kölcsönbe vevő jogi személyre vonatkozóan a kölcsönadó jogi személy lehetőségben. A pénznem az átadási ár táblában szereplő tételeket megfeleltetésére szolgál.
-5.  Kattintson a **Főkönyv** &gt; **Feladás beállítása** &gt; **Vállalatközi könyvelés** elemre, és állítsa be az USSI és FRSI kapcsolatát.
+
+2. Kattintson a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Projektvezetés és könyvelés paraméterei** lehetőségre, ezt követően kattintson a **Vállalatközi** lapra. A paraméterek beállításának módja attól függ, hogy Ön a kölcsönbe vevő jogi személy vagy a kölcsönadó jogi személy szerepkörével rendelkezik.
+   -   Ha a kölcsönbe vevő jogi személy, akkor válassza ki azt a beszerzési kategóriát, amelyet azon szállítói számlák egyeztetésére használnak, amelyek automatikusan létrejöttek.
+   -   Ha Ön a hitelező jogi személy az összes kölcsönbe vevő jogi személyre vonatkozóan, válassza ki az alapértelmezett projekt kategóriát minden egyes tranzakció típusra vonatkozóan. Az adó konfigurációjára a projekt kategóriákat használják, ha a vállalatközi tranzakciókban kiszámlázott kategóriák csak a kölcsönbe vevő jogi személy lehetőségben léteznek. Választhatja a bevétel elhalasztását a vállalatközi tranzakciókra vonatkozóan. Ezt a könyvelést akkor hajtják végre, amikor a tranzakciókat feladták, és ezt követően sztornírozták a vállalatközi számla feladásakor.
+
+3. Kattintson a **Projektvezetés és könyvelés** &gt; **Beállítás** &gt; **Árak** &gt; **Transzferár** lehetőségre.
+4. Jelölje be a pénznem, a tranzakció típus és az átviteli ármodell lehetőséget. A számlában használt pénznem az a pénznem, amelyet konfiguráltak a vevői rekordban a kölcsönbe vevő jogi személyre vonatkozóan a kölcsönadó jogi személy lehetőségben. A pénznem az átadási ár táblában szereplő tételeket megfeleltetésére szolgál.
+5. Kattintson a **Főkönyv** &gt; **Feladás beállítása** &gt; **Vállalatközi könyvelés** elemre, és állítsa be az USSI és FRSI kapcsolatát.
 
 ## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>2. példa: Egy vállalatközi idő-nyilvántartás létrehozása és feladása
 Az USSI, a kölcsönadó jogi személy, akinek létre kell hozni és fel kell adni az FRSI kölcsönbe vevő jogi személytől származó projektre vonatkozó idő-nyilvántartást. A feladathoz szükséges lépésekhez két belépési pont van.

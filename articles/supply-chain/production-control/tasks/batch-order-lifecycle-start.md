@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="batch-order-lifecycle-from-create-to-start"></a>Kötegelt rendelések életciklusa a létrehozástól az indításig
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja egy kötegrendelés életciklusának első felét.
 

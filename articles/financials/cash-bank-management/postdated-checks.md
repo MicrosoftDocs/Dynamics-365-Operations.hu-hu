@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Jövőben esedékes csekkek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk a Microsoft Dynamics 365 for Finance and Operations támogatását írja le a jövőben esedékes csekkeket illetően. A jövőben esedékes csekkek olyan csekkek, amelyeket jövőbeli dátumon való fizetés céljából állítják ki. Emiatt a csekk nem váltható be a megadott dátumig.
 
@@ -76,14 +75,14 @@ Ha a szállítónak vagy a vevőnek készült eredeti csekk elveszik vagy megsé
 <td>Érvénytelenítheti a könyvelt, jövőben esedékes csekket ezekben az esetekben: -A csekket visszaküldik a banknak.
 - A csekket nem megfelelő számlához alkalmazták.
 - Készpénzes fizetés történik a csekkel szemben.
-</td>
-</tr>
-<tr class="even">
-<td>Jövőben esedékes csekk kifizetésének leállítása</td>
-<td>Leállíthatja egy szállítónak kiállított, jövőben esedékes csekk kifizetését különböző okokból, például elégtelen fedezet esetén, a szállítóval kötött szerződés feltételeinek megváltozásakor, a szállító által szállított hibás áruk, vagy a termékek szállítóhoz történő visszaküldése miatt. Csak olyan csekkek kifizetése állítható le, amelyek még nincsenek kiegyenlítve.</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Jövőben esedékes csekk kifizetésének leállítása</td>
+  <td>Leállíthatja egy szállítónak kiállított, jövőben esedékes csekk kifizetését különböző okokból, például elégtelen fedezet esetén, a szállítóval kötött szerződés feltételeinek megváltozásakor, a szállító által szállított hibás áruk, vagy a termékek szállítóhoz történő visszaküldése miatt. Csak olyan csekkek kifizetése állítható le, amelyek még nincsenek kiegyenlítve.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

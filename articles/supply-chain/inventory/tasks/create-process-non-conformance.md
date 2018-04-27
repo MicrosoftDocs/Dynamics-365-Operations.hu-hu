@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-process-a-conformance"></a>Szabálytalanság létrehozása és feldolgozása
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezekkel a lépésekkel végrehajthatja a szabálytalanság kezelését, a meglévő minőségi rendelés alapján. Ezt a felvételt futtathatja az USMF bemutató vállalatban, és használhatja a javasolt értékeket. Ezt az eljárást általában a minőségi adminisztrátor végzi.  Előfeltételként futtassa az „Áruk minőségének vizsgálata” feladatrögzítést. A szabálytalanság jóváhagyásának feldolgozását a feladat rögzítését futtató felhasználónak rendelkeznie kell hozzárendelt „Név” értékkel a Felhasználók lapon. A dokumentummegjegyzések használatához a felhasználónak rendelkeznie kell a Dokumentumkezeléssel, amelyet a felhasználói beállításokban kell aktiválni.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreement-groups"></a>Szolgáltatásiszerződés-csoportok létrehozása 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A szolgáltatásiszerződés-csoportok jól hasznosíthatók a szolgáltatási szerződések rendezésére és szűrésére.
 

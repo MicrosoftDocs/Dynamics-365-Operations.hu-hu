@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-accounting-setup"></a>Vállalatközi könyvelés beállítása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti a vállalatközi könyvelés beállításának módját annak érdekében, hogy a vállalatközi naplók használhatók legyenek főkönyvi felosztásokhoz és pénzügyi naplókhoz, például a napi naplókhoz, szállítóiszámla-naplókhoz és fizetési naplókhoz.
 

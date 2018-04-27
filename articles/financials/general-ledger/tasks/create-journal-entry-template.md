@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-journal-entry-using-a-template"></a>Naplóbejegyzés létrehozása sablon alapján
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 A naplóba feladott bizonylatok Bizonylatsablonként elmenthetők és egy új naplóbizonylatként alkalmazhatók. Ez az eljárás az USMF bemutatócéget használja.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="practice-manager-power-bi-content"></a>Gyakorlatvezető Power BI tartalom
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör azt ismerteti, mit tartalmaz a **Gyakorlatvezető** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
@@ -118,7 +118,9 @@ A következő szakaszok leírják az egyes entitások által használt összesí
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Entity: ProjectAccountingCube\_TotalEstimatedCosts 
 **Adatforrás:** ProjTable
 
-| Fő összesítő mérték       | Mező               | Leírás |
-|---------------------------------|---------------------|-------------|
+
+|    Fő összesítő mérték    |        Mező        |                                          Leírás                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | Befejeződött tevékenység tervezett költsége | Sum(TotalCostPrice) | Befejeződött feladatokkal rendelkező projekttranzakció-típus becsléseinek teljes önköltségi ára. |
+
 

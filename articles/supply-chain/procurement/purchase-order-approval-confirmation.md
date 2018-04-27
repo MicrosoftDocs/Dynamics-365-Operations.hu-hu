@@ -28,9 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és visszaigazolása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ez a cikk ismerteti azokat az állapotokat, amiken keresztül megy a beszerzési rendelés létrehozás után, valamint a változáskezelés hatásait a beszerzési rendelésre.
 
