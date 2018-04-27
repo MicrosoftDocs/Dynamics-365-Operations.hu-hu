@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Képletszerkesztő elektronikus jelentésekhez
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER). Ha egy formátumot az ER-ben meghatározott elektronikus dokumentumra vonatkozóan tervez meg, akkor használhat képleteket az adatok átalakításához a dokumentum teljesítésére és formázására vonatkozó követelményekhez történő megfeleltetés érdekében. Ezek a képletek a Microsoft Excelben található képletekre hasonlítanak. A képletek funkciók különféle típusait támogatják - szöveg, dátum és időpont, matematikai logika, információ, adattípus-konvertálás és egyéb (üzletitartomány-specifikus funkciók).
 
@@ -313,12 +313,12 @@ Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelye
 <tr class="odd">
 <td>RENDEZÉS (lista [1 kifejezés, 2 kifejezés, ...])</td>
 <td>Visszaadja meg a megadott listát, miután rendezte a megadott argumentumok szerint. Ezek az argumentumok kifejezésként adhatók meg.</td>
-<td>Ha a <strong>Szállító </strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor az <strong>ORDERBY (Vendors, Vendors.'name()')</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
+<td>Ha a <strong>Szállító </strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor az <strong>ORDERBY (Vendors.&#39;name()&#39;)</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
 </tr>
 <tr class="even">
 <td>SZTORNÍROZÁS (lista)</td>
 <td>A megadott listát a sztornírozott rendezési sorrendben jeleníti meg.</td>
-<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>REVERSE (ORDERBY (Szállítók, Szállítók.'name()')) )</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
+<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
 </tr>
 <tr class="odd">
 <td>HOL (lista, feltétel)</td>
@@ -395,7 +395,9 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <tr class="even">
 <td>STRINGJOIN (lista, mezőnév, elválasztó)</td>
 <td>Visszaad egy olyan karakterláncot, amely a megadott lista megadott mezőjének összefűzött értékeiből áll. Az értékeket a megadott elválasztó választja el egymástól.</td>
-<td>Ha adatforrásként (DS) a <strong>SPLIT(&quot;abc&quot; , 1)</strong> vanmegadva, a <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> kifejezés <strong>&quot;a:b:c&quot;</strong>-t ad vissza.</td>
+
+<td>Ha adatforrásként (DS) <strong>SPLIT(&quot;abc&quot; , 1)</strong> van megadva, a <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> kifejezés <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong> értéket ad vissza.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (lista, határérték, korlát forrása)</td>
@@ -416,7 +418,7 @@ A korlát nem vonatkozik az eredeti lista utolsó elemére, mivel a korlát forr
 <tr class="even">
 <td>FILTER (lista, feltétel)</td>
 <td>Visszaadja meg a megadott listát, miután a lekérdezést módosította és szűrte a megadott feltételek szerint. Ez a függvény eltér a <strong>WHERE</strong> függvénytől, mivel a megadott feltétel az adatbázis szintjén kerül alkalmazásra a <strong>Táblarekordok</strong> típus bármely ER adatforrására. A lista és a feltétel táblák és kapcsolatok segítségével határozhatók meg.</td>
-  <td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>FILTER(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza. Ha a <strong>Szállító</strong> ER-adatforrásként van konfigurálva, amely a <strong>VendTable</strong> táblára és a <strong>parmVendorBankGroup</strong>-ra hivatkozik, amely ER-adatforrásként konfigurálva az értéket karakterlánc adattípusként adja vissza, a , <strong>FILTER (Szállító.'&lt;Kapcsolatok'.VendBankAccount, Szállító.'&lt;Kapcsolatok'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> csak az adott bankcsoporthoz tartozó szállítói számlák listáját adja vissza.</td>
+  <td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>FILTER(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza. Ha a <strong>Szállító</strong> ER-adatforrásként van konfigurálva, amely a <strong>VendTable</strong> táblára és a <strong>parmVendorBankGroup</strong>-ra hivatkozik, amely ER-adatforrásként konfigurálva az értéket karakterlánc adattípusként adja vissza, a , <strong>FILTER (Szállító.&#39;&lt;Kapcsolatok&#39;.VendBankAccount, Szállító.&#39;&lt;Kapcsolatok&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> csak az adott bankcsoporthoz tartozó szállítói számlák listáját adja vissza.</td>
 </tr>
 </tbody>
 </table>
@@ -553,7 +555,7 @@ Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az
 <li>A SYS18389 címkével ellátott Finance and Operations a következő szöveggel rendelkezik:
 <ul>
 <li><strong>Az EN-US nyelvhez</strong>: &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>A DE nyelvhez</strong>: &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
+<li><strong>DE nyelvhez:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Íme a tervezhető képlet:</p>
@@ -561,7 +563,7 @@ Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az
 <p>Ha a jelentés feldolgozása a <strong>Litware Retail</strong> vevőre vonatkozóan 2015. december 17-én folyik, az <strong>EN-US</strong> területi beállításban és az <strong>EN-US</strong> nyelvben ez a képlet a következő szöveget jeleníti meg, amely a felhasználó számára egy kivételre vonatkozó üzenetként jeleníthető meg:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Ha ugyanazt a jelentést 2015. december 17-én a <strong>Litware Retail</strong> vevőre vonatkozóan a <strong>DE</strong> területi beállítással és a <strong>DE</strong> nyelven dolgozzák fel, ez a képlet a következő, eltérő dátumformátumot használó szöveget jeleníti meg:</p>
-<p>&quot;Nichts zu drucken. Debitor 'Litware Kiskereskedelmi' wird für 17.12.2015 gesperrt.&quot;</p>
+<p>&quot;Nichts zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE]<br>
 A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
 <ul>

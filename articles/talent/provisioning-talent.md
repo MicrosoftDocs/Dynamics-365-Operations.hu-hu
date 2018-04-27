@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
-ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>A Microsoft Dynamics 365 for Talent létesítése
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 for Talent számára. Ez a témakör feltételezi, hogy a Talent rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik már meglévő Microsoft Dynamics 365 licenccel, amely már tartalmazza a Talent szolgáltatástervet, és nem tudja elvégezni a témakörben szereplő lépéseket, forduljon a támogatási szolgálathoz.
 
@@ -79,12 +79,12 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy mely PowerApp
  
     **CD 2.0 környezetek:** A CDS 2.0-t 2018. március 21-én jelenik meg; azonban a Talent még nem támogatja a CDS 2.0-at. Bár megtekinthet és létrehozhat CD 2.0 adatbázisokat a PowerApps Admin központban, ezek nem lesznek használhatók a Talent alkalmazásban. A CDS 2.0 környezetek használatának lehetősége a Talent telepítésekben egy későbbi időpontban lesz elérhető.
    
- > [!Note]
- > A CDS 1.0 és 2.0 környezetek megkülönböztetésére a felügyeleti portálon, jelöljön ki egy környezetet, és nézze meg a **Részletek** elemet. Az összes CD 2.0-s környezetben szerepel az „Ezeket a beállításokat a Dynamics 365 felügyeleti központban kezelheti” tájékoztatás, hivatkozás egy példányverzióra, és nincs Adatbázis lap. 
+   > [!Note]
+   > A CDS 1.0 és 2.0 környezetek megkülönböztetésére a felügyeleti portálon, jelöljön ki egy környezetet, és nézze meg a **Részletek** elemet. Az összes CD 2.0-s környezetben szerepel az „Ezeket a beállításokat a Dynamics 365 felügyeleti központban kezelheti” tájékoztatás, hivatkozás egy példányverzióra, és nincs Adatbázis lap. 
  
    **Alapértelmezett PowerApps környezetek** Bár minden bérlő számára automatikusan megtörténik az alapértelmezett PowerApps környezet létesítése, nem javasoljuk velük a Talent használatát, hiszen minden bérlő felhasználónak hozzáférése van a PowerApps környezethez, és a PowerApps vagy Flow integrációk tesztelése és feltérképezése során véletlenül kárt tehetnek termelési adatokban.
    
-   **Tesztkörnyezetek** A „TestDrive – alias@domain” névvel rendelkező környezetek 60 napos lejárati idővel kerülnek létrehozásra, és ezután lejárnak, ami automatikusan eltávolítja a környezetet.
+   <strong>Tesztkörnyezetek</strong> A „TestDrive – alias@domain” névvel rendelkező környezetek 60 napos lejárati idővel kerülnek létrehozásra, és ezután lejárnak, ami automatikusan eltávolítja a környezetet.
    
    **Nem támogatott régiók** Jelenleg a Talent csak az alábbi területeken támogatott: Egyesült Államok, Európa és Ausztrália.
   
@@ -115,7 +115,7 @@ Hajtsa végre az alábbi utasításokat a parancsfájl futtatásához:
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   **EnvironmentName**-et le kell cserélni a környezet nevére. Ez a név az LCS portálon fog megjelenni, és akkor lesz látható, amikor a felhasználók kiválasztják a használandó Talent-környezetet. 
+   **MyNewEnvironment**-et le kell cserélni a környezet nevére. Ez a név az LCS portálon fog megjelenni, és akkor lesz látható, amikor a felhasználók kiválasztják a használandó Talent-környezetet. 
 
    **YourLocation** helyettesíteni kell a Talent egyik támogatott régiójával: unitedsates, europe, australia. 
 

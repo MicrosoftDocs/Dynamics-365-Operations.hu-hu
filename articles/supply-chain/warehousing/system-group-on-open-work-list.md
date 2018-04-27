@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6403fea54be4036f7a15c05b46f70d258d97c3e2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="system-grouping-on-an-open-work-list"></a>Nyitott munkalista rendszercsoportosítása
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Csoportosító rendszermező segítségével a mobileszköz menüpontjának szerkesztése nélkül szűrheti a nyitott munkalistát.
 A rendszercsoportosítás alkalmazási köre egyetlen munkafejlécmező munkalistájának szűrése. A rendszercsoportosítás nem használható online szinten lévő mezők szűrésére.
@@ -37,9 +37,10 @@ A következő lépésekkel beállíthatja a rendszercsoportosítást egy nyitott
 
 -   Egy mobileszköz menüpontjában válassza a **Mód: közvetett** és a **Tevékenység kódja: nyitott munkalista megjelenítése** lehetőséget. Az alábbi lehetőségek válnak elérhetővé. Ezek a beállítások szükségesek a rendszercsoportosítás nyitott munkalistán történő működéséhez. 
 
-| Lehetőség        | Leírás   | 
-| ------------- | ------------- |
-| Rendszercsoportosítás engedélyezése   | Lehetővé teszi a rendszercsoportosítást a kijelölt munkalista menüelemére vonatkozóan.| 
-| Csoportosító rendszermező   | Csak akkor érhető el, ha a **Rendszer működésének ellenőrzése** értéke **Igen**. Válassza ki azt a mezőt, amely meghatározza, hogyan fogja a rendszer kitárolási munkát csoportosítani a dolgozók számára. Ha például bejelöli a **ShipmentId** mezőt, a dolgozó ellenőrzi a szállítmányazonosítót a kitárolási munka csoportosításához. A rendszer hozzárendeli a dolgozóhoz a szállítmány minden munkáját. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. Használja a **Rendszercsoportosítási címke** mezőt, amely jelzi a dolgozónak, hogy mit olvasson be. |
-| Csoportosító rendszercímke   | Csak akkor érhető el, ha a **Rendszer működésének ellenőrzése** értéke **Igen**. Írja be a szöveget, amely a dolgozót tájékoztatja arról, mit olvasson be, ha a kitárolási munka csoportosítva van a rendszerben. Például ha a **Szállítmányazonosító** mezőt használja egy szállítmány kitárolási munkájának csoportosítására, megadhatja a Szállítási azonosító értékét a mezőben. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A **Rendszercsoportosítás** mezőben ki kell választania a mezőt is, amely szerint a csoportosítás történik.|
+|        Lehetőség         |                                                                                                                                                                                                                                                                         Leírás                                                                                                                                                                                                                                                                         |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Rendszercsoportosítás engedélyezése |                                                                                                                                                                                                                                                 Lehetővé teszi a rendszercsoportosítást a kijelölt munkalista menüelemére vonatkozóan.                                                                                                                                                                                                                                                  |
+| Csoportosító rendszermező | Csak akkor érhető el, ha a <strong>Rendszer működésének ellenőrzése</strong> értéke <strong>Igen</strong>. Válassza ki azt a mezőt, amely meghatározza, hogyan fogja a rendszer kitárolási munkát csoportosítani a dolgozók számára. Ha például bejelöli a <strong>ShipmentId</strong> mezőt, a dolgozó ellenőrzi a szállítmányazonosítót a kitárolási munka csoportosításához. A rendszer hozzárendeli a dolgozóhoz a szállítmány minden munkáját. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. Használja a <strong>Rendszercsoportosítási címke</strong> mezőt, amely jelzi a dolgozónak, hogy mit olvasson be. |
+| Csoportosító rendszercímke |                       Csak akkor érhető el, ha a <strong>Rendszer működésének ellenőrzése</strong> értéke <strong>Igen</strong>. Írja be a szöveget, amely a dolgozót tájékoztatja arról, mit olvasson be, ha a kitárolási munka csoportosítva van a rendszerben. Például ha a <strong>Szállítmányazonosító</strong> mezőt használja egy szállítmány kitárolási munkájának csoportosítására, megadhatja a Szállítási azonosító értékét a mezőben. Ez a mező azt igényli, hogy hozzon létre egy menüelemet a rendszer által csoportosított meglévő munka használatához. A <strong>Rendszercsoportosítás</strong> mezőben ki kell választania a mezőt is, amely szerint a csoportosítás történik.                       |
+
 

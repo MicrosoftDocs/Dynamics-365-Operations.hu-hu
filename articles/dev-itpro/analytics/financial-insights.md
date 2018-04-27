@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-insights"></a>Financial Insights
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A **Financial Insights** a Microsoft Power BI-t használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására. A Power BI a Microsoft Dynamics 365 Finance and Operations beágyazott része.
 A **Financial Insights** lényege az analitikus jelentéskészítés. A szervezeten belüli személyek megtekinthetnek, kutatást végezhetnek, ismereteket szerezhetnek és műveleteket hajthatnak végre. 
@@ -107,8 +107,20 @@ Noha **Pénzügyi statisztikák** tartalmaznak pénzügyi kimutatásokat, nem he
 
 A következő összehasonlító táblázattal különbséget tehet a két lehetőség között:
 
-|                                         | **Pénzügyi jelentéskészítés**                            | **Pénzügyi statisztikák**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Alapértelmezett jelentések szerkesztése**                | Igen                                                | Nem                                 | | **Új jelentések létrehozása**                  | Igen                                                | Nem                                 | | **Jelentések nyomtatása**                       | Igen                                                | Nem                                 | | **Exportálás Excelbe**                     | Igen          | Nyersadatok korlátozott exportálása az Excelbe, nem formázott jelentés       | | **Jelentéshierarchia/szervezeti hierarchia támogatása**   | Igen                               | Nem                                 | | **Jelentés a naplóadatokról**       | Igen Egy szállítóra, ügyfélre korlátozva    | Igen Szállító, ügyfél, szállítói/ügyfélcsoportok, szállítói/ügyfélcímek stb.  | | **Jelentési pénznem**      | Igen Könyvelési pénznem és átalakítás a jelentés pénznemére       | Nem Csak a könyvelési pénznem      | | **Biztonság**                | Igen Vonatkozik a Finance and Operations szolgáltatás és a jelentés faszerkezetének biztonságára | Korlátozott nézetű jelentések az összes vállalatról (a Finance and Operations biztonságától függetlenül) vagy csak az aktív vállalatról | | **Különböző számlatükrök és pénzügyi évek támogatása** | Igen                   | Nem                   | | **jelentés külső adatokról**                              | Nem                   | Nem                                   | | **Összesítések támogatása**                               | Igen                          | Korlátozott Jelentés több vállalatról, de csak a könyvelési pénznem használata                                     |
 
+|                                                                       |               <strong>Pénzügyi jelentéskészítés</strong>                |                                      <strong>Financial Insights</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Alapértelmezett jelentések szerkesztése</strong>                 |                                Igen                                |                                                      Nincs                                                       |
+|                  <strong>Új jelentések készítése</strong>                  |                                Igen                                |                                                      Nincs                                                       |
+|                    <strong>Jelentések nyomtatása</strong>                     |                                Igen                                |                                                      Nincs                                                       |
+|                   <strong>Exportálás az Excel programba</strong>                    |                                Igen                                |                           A korlátozott nyers adatokat exportál az Excel programba, nem formázott jelentést                           |
+|  <strong>Jelentéskészítési hierarchia / szervezeti hierarchia támogatása</strong>  |                                Igen                                |                                                      Nincs                                                       |
+|               <strong>Jelentés analitikus adatokról</strong>               |               Igen a Korlátozott csak szállítóra, vevőre                |                 Igen: szállító, vevő, vevői és szállítói csoportok, vevői és szállítói címek stb.                 |
+|                  <strong>Jelentési pénznem</strong>                  |    Igen: könyvelési pénznem és a fordítás jelentési pénznemre    |                                          Nem: Csak a könyvelési pénznem                                          |
+|                       <strong>Biztonság</strong>                       | Igen: a Finance and Operations és a jelentési fa biztonsága alapján | Korlátozott: jelentések megtekintése minden vállalatnál (Finance and Operations biztonságtól függetlenül) vagy csak az aktív vállalatnál |
+| <strong>Támogatás különböző számlatükrökhöz és pénzügyi évekhez</strong> |                                Igen                                |                                                      Nincs                                                       |
+|               <strong>jelentés külső adatokról</strong>                |                                Nincs                                 |                                                      Nincs                                                       |
+|                <strong>Konszolidációk támogatása</strong>                |                                Igen                                |                   Korlátozott: jelentés több vállalatról is, de csak a könyvelési pénznem használatával                   |
 
 Az eredeti **Pénzügyi igazgató áttekintés** munkaterületből származó felhasználói felületen kívül új KPI-k, diagramok és pénzügyi kimutatások is elérhetők. A következő pénzügyi kimutatások állnak rendelkezésre:
 

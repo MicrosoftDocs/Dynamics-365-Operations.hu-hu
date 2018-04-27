@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bd85f89917659ac9c94590bace765b2123d6e556
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="coverage-settings"></a>Fedezeti beállítások
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Az alapütemezés a fedezeti beállítások segítségével számítja ki a cikkszükségleteket. 
 
@@ -46,7 +45,7 @@ A fedezeti beállítások többféleképpen is megadhatók:
 
 <!-- -->
 
--   Dimenziócsoport fedezeti beállításainak meghatározása. Kattintson a **Termékinformációk kezelése &gt; Közös &gt; Kiadott termékek** lehetőségre. A **Megjelent termék részletei** lapon, az **Általános** lapon a **Felügyelet** csoportban kattintson a **Tárolásidimenzió-csoport** hivatkozásra. A **Tárolásidimenzió-csoport** oldalon válassza a **Fedezeti terv dimenziónként** mezőt cikkfedezeti beállítások létrehozására egy dimenzióhoz a tárolásidimenzió-csoportban. Minden termékdimenzió, például a konfiguráció, szín, méret, stílus, kell, hogy rendelkezzen egy kiválasztott **Fedezeti terv dimenziónként** mezővel.
+- Dimenziócsoport fedezeti beállításainak meghatározása. Kattintson a <strong>Termékinformációk kezelése &gt; Közös &gt; Kiadott termékek</strong> lehetőségre. A <strong>Megjelent termék részletei **lapon, az **Általános</strong> lapon a <strong>Felügyelet</strong> csoportban kattintson a <strong>Tárolásidimenzió-csoport</strong> hivatkozásra. A <strong>Tárolásidimenzió-csoport</strong> oldalon válassza a <strong>Fedezeti terv dimenziónként</strong> mezőt cikkfedezeti beállítások létrehozására egy dimenzióhoz a tárolásidimenzió-csoportban. Minden termékdimenzió, például a konfiguráció, szín, méret, stílus, kell, hogy rendelkezzen egy kiválasztott <strong>Fedezeti terv dimenziónként</strong> mezővel.
 
 
 

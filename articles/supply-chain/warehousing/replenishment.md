@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="replenishment"></a>Feltöltés
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A témakör ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat. A témakör információi nem vonatkoznak a raktározási megoldásra, amely a Készletkezelés modulból érhető el.
 
@@ -67,13 +67,15 @@ A Rakomány igényfeltöltése stratégia többféle rakomány iránti kereslete
 Ahelyett, hogy a felosztási folyamat végén összegezné az igényeket és végezne feltöltést az összegzett mennyiségek alapján, alkalmazhat közvetlen feltöltési stratégiát. Ezen stratégia használata esetén a készletet fel lehet tölteni azonnal azután, hogy egy helyutasítás sor sikertelen volt. Így úgy állíthatja be a feltöltést,, hogy az adott egységekre korlátozódjon, és hogy az adott helyekhez beállított mennyiséget használja fel.
 
 ## <a name="replenishment-prerequisites"></a>Feltöltés előfeltételei
-| Előfeltételek            | Leírás |
-|-------------------------|-------------|
-| Cikk                    | A cikknek elérhetőnek kell lennie a raktárkezelő folyamathoz. |
-| Raktár               | A raktárnak elérhetőnek kell lennie a raktárkezelő folyamathoz. A raktárt a **Raktárak** oldalon a raktár kiválasztásával, majd a **Raktárkezelési folyamatok alkalmazása** lehetőség kijelölésével tudja a raktárkezelési folyamatokhoz elérhetővé tenni. |
-| Feltöltési sablonok | Legalább az egyik feltöltési sablon esetén be kell állítani a Minimális vagy maximális feltöltést, Hullámigény feltöltését vagy a Rakomány igényfeltöltését. |
-| Helyek               | A tárolóhelyeket létre kell hozni és csatlakoztatni kell a helyprofilhoz. |
-| Helyprofilok       | Tárolóhelyek létrehozásához helyprofilok meglétére van szükség. |
-| Helyutasítások     | Helyutasítások szükségesek a munka olyan helyekre való irányításához, ahol feltöltés szükséges és ahol a készlet forrása van. |
-| Munkasablonok          | Munkasablonok szükségesek a **Feltöltés** típusához, feltöltési munka létrehozásához, így a készlet a kívánt helyre mozgatható. |
+
+|      Előfeltételek       |                                                                                                                                Leírás                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Cikk           |                                                                                                        A cikknek elérhetőnek kell lennie a raktárkezelő folyamathoz.                                                                                                        |
+|        Raktár        | A raktárnak elérhetőnek kell lennie a raktárkezelő folyamathoz. A raktárt a <strong>Raktárak</strong> oldalon a raktár kiválasztásával, majd a <strong>Raktárkezelési folyamatok alkalmazása</strong> lehetőség kijelölésével tudja a raktárkezelési folyamatokhoz elérhetővé tenni. |
+| Feltöltési sablonok |                                                                   Legalább az egyik feltöltési sablon esetén be kell állítani a Minimális vagy maximális feltöltést, Hullámigény feltöltését vagy a Rakomány igényfeltöltését.                                                                   |
+|        Helyek        |                                                                                                       A tárolóhelyeket létre kell hozni és csatlakoztatni kell a helyprofilhoz.                                                                                                       |
+|    Helyprofilok    |                                                                                                        Tárolóhelyek létrehozásához helyprofilok meglétére van szükség.                                                                                                        |
+|   Helyutasítások   |                                                       Helyutasítások szükségesek a munka olyan helyekre való irányításához, ahol feltöltés szükséges és ahol a készlet forrása van.                                                        |
+|     Munkasablonok      |                                                   Munkasablonok szükségesek a <strong>Feltöltés</strong> típusához, feltöltési munka létrehozásához, így a készlet a kívánt helyre mozgatható.                                                    |
+
 

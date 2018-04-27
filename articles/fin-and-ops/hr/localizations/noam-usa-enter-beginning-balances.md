@@ -18,29 +18,29 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 27c03f7bd61ee7d4cb1d01f04af2f1821e9988e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Adja meg a bérlista nyitó egyenlegeit
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében. Ez az információ értékes az olyan partnerek számára, akik adatokat telepítenek át vagy visznek át egy új Bérlista rendszerbe egy másik rendszerből. A nyitó bérlistaegyenlegek bevitelének előkészítéseként ellenőrizzük az alábbi információkat:
 
 > * Az alkalmazotti rekordok meg vannak adva és elérhetők a rendszerben
 > * Az alábbi adatok be vannak állítva és hozzá vannak rendelve az alkalmazottakhoz:
-
+> 
 > > * Fizetési ciklusok és fizetési időszakok
 > > * Bevételkódok
 > > * Adók
 > > * Juttatások és levonások
-
+> 
 > * A vállalatnak ki kellett volna választania egy dátumot, amelyen megadhatók a nyitó bérlistaegyenlegek.
-
+> 
 > * A korábbi rendszerből összegyűjtött adatok minden bevételről, juttatásról és levonásról, juttatások hozzájárulásairól, alkalmazott által fizetendő adóról, munkáltatói adóról és ezek folyó évi összegeiről.
 
 A nyitó egyenleg bevitelének tervezésekor fontolja meg, hogy mennyire kell részletesnek lenniük az adatoknak. A vállalkozások többsége egyetlen, összevont, a folyó évben az adott dátumig számolt összeget ad meg. Ha azonban részletesebb információkra van szükség, az egyenlegek negyedéves lépésekben is bevihetők. A szükséges részletességi szinttel kapcsolatos döntés határozza meg, hogy hány manuális fizetési kimutatást kell létrehozni minden dolgozóhoz. Csak egy manuális kimutatásra van szükség minden egyes alkalmazott esetében, ha egyetlen év az aktuális dátumig összeget visznek be. Ehhez a korábbi rendszerből származó végső fizetési kimutatás év az aktuális dátumig összegeit kell bevinni az új bérszámfejtő rendszerbe.
@@ -128,22 +128,22 @@ A nyitó egyenlegekkel rendelkező fizetési kimutatások létrehozása után el
 
 4. Nyissa meg a **Juttatás levonásai** lapot, és írja be a következőt:
 
-| Mező                           | Érték            |
-|---------------------------------|------------------|
-| Juttatás                         | Levonás összege |
-| 401K | Résztvétel              | 3000.00          |
-| Fogászati | SubSp                  | 495,00           |
-| Elt. ellátási kiadások | Résztvétel | 2500.00          |
-| Látás | SupSp                  | 500.00           |
+|       Mező       |      Érték       |
+|-------------------|------------------|
+|      Juttatás      | Levonás összege |
+|       401K        |   Résztvétel    |
+|      Fogászati       |      SubSp       |
+| Elt. ellátási kiadások |   Résztvétel    |
+|      Látás       |      SupSp       |
 
 5. A **Juttatás hozzájárulásai** lapon írja be a következőt:
 
-| Mező              | Érték               |
-|--------------------|---------------------|
-| Juttatás            | Hozzájárulási összeg |
-| 401K | Résztvétel | 3000,00             |
-| Fogászati | SubSp     | 495,00              |
-| Látás | SubSp     | 500.00              |
+|  Mező  |        Érték        |
+|---------|---------------------|
+| Juttatás | Hozzájárulási összeg |
+|  401K   |     Résztvétel     |
+| Fogászati  |        SubSp        |
+| Látás  |        SubSp        |
 
 6. Az **Adólevonások** lapon írja be a következőt:
 
@@ -156,8 +156,8 @@ A nyitó egyenlegekkel rendelkező fizetési kimutatások létrehozása után el
 7. Az **Adó-hozzájárulások** lapon írja be a következőt:
 
 8. Kattintson a **Számítás** lehetőségre.
-> [!IMPORTANT] 
-> Ellenőrizze a fizetési kimutatás összegeit, hogy megfeleljenek a régi rendszerből hozott folyó évi összegnek a dolgozó esetében. A következő lépésben még nem kell végrehajtani a véglegesítést, hogy általános érvényesítést hajthasson végre az összes fizetési kimutatás összesített értékén. Az ellenőrzést követően fusson végig az összes fizetési kimutatáson és véglegesítse őket.
+   > [!IMPORTANT] 
+   > Ellenőrizze a fizetési kimutatás összegeit, hogy megfeleljenek a régi rendszerből hozott folyó évi összegnek a dolgozó esetében. A következő lépésben még nem kell végrehajtani a véglegesítést, hogy általános érvényesítést hajthasson végre az összes fizetési kimutatás összesített értékén. Az ellenőrzést követően fusson végig az összes fizetési kimutatáson és véglegesítse őket.
 
 Ugyanez az eljárás szükség esetén negyedéves lépésekben is elvégezhető, az összes korábbi negyedévre, minden évben. Erre csak akkor van szükség, ha az ügyfélnek negyedéves bontásban kell megtekintenie az adatokat anélkül, hogy visszalépne a korábbi rendszerbe.
 

@@ -19,17 +19,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5c92c1ca3f46d80a58ca315f1f695f082d1929ca
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="electronic-reporting-destinations"></a>Elektronikus jelentéskészítés céljai
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Konfigurálhatja az egyes Elektronikus jelentés (ER) formátum konfigurációjához tartozó célt és annak kimeneti összetevőit (egy mappa vagy egy fájl). Megfelelő hozzáférési jogokkal rendelkező felhasználók módosíthatják a célbeállításokat futásidőben is. Ez a cikk ismerteti az ER célkezelés, a támogatott célok típusait és a biztonsági megfontolásokat.
 
@@ -71,7 +70,7 @@ Amikor a **Szerkesztés** elemre kattint a **Címzett** vagy **Másolatot kap** 
 
 #### <a name="print-management"></a>Nyomtatás kezelése
 
-Ha bejelöli a **Nyomtatáskezelő e-mail** típust, fix e-mail-címeket adhat meg a **Címzett** mezőben. Nem rögzített email-cím használatához válassza ki az e-mail forrástípusát a fájlcélponthoz. A következő értékek használhatók: **Vevő**, **Szállító**, **Potenciális vevő**, **Kapcsolat**, **Versenytárs**, **Dolgozó**, **Kérelmező**, **Potenciális szállító** és **Nem engedélyezett szállító**. Miután kiválasztott egy e-mail-forrástípust, használja a **E-mail származási fiókja** mező melletti gombot a **Képletszerkesztő** képernyő megnyitásához. Ezen a képernyőn olyan képletet adhat hozzá, amely a kiválasztott fél fiókját jelöli az az e-mail címzettje vonatkozásában.
+Ha bejelöli a **Nyomtatáskezelő e-mail** típust, fix e-mail-címeket adhat meg a **Címzett** mezőben. Nem rögzített email-cím használatához válassza ki az e-mail forrástípusát a fájlcélponthoz. A következő értékek használhatók: **Vevő**, **Szállító**, **Potenciális vevő**, **Kapcsolat**, **Versenytárs**, **Dolgozó**, **Kérelmező**, **Potenciális szállító** és **Nem engedélyezett szállító**. Miután kiválasztott egy e-mail-forrástípust, használja az **E-mail származási fiókja** mező melletti gombot a **Képletszerkesztő** képernyő megnyitásához. Ezen a képernyőn olyan képletet adhat hozzá, amely a kiválasztott fél fiókját jelöli az az e-mail címzettje vonatkozásában.
 
 [![Nyomtatáskezelő e-mail-típusának beállítása](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 

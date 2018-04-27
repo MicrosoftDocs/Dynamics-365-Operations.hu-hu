@@ -17,17 +17,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: df924487c02ee9c7246ab9f12719382459634e98
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 51449f2f8448a493ebf7e4496cebdb90d902869a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-signers-for-print-forms"></a>Aláírók beállítása nyomtatási űrlapokhoz
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország, Lengyelország és Oroszország területén működő jogalanyok esetén beállíthat aláírókat és beosztásokat a dokumentumokat, például számlákat és készpénzutalványokat nyomtató szállítók és vevők számára.
 
@@ -60,19 +59,19 @@ Aláírók megadásához egy vállalat által kinyomtatott dokumentumokhoz haszn
 <li>Előzetes jelentés</li>
 <li>Pénztárbizonylati oldal</li>
 <li>Számlálási kivonat</li>
-<li>Halasztások*</li>
+<li>Halasztások<em></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Értékesítési rendelések</td>
 <td>Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő, vevőkhöz kapcsolódó, kimenő elsődleges dokumentumokat írhatják alá:
 <ul>
-<li>Kifizetendő számla*</li>
+<li>Kifizetendő számla</em></li>
 <li>Számla</li>
-<li>Számviteli számla*</li>
+<li>Számviteli számla<em></li>
 <li>Számla - jóváírás</li>
-<li>Számviteli számla - jóváírás*</li>
-<li>Adótranzakció - pénzügyi dokumentum (ügyfél)*</li>
+<li>Számviteli számla - jóváírás</em></li>
+<li>Adótranzakció - pénzügyi dokumentum (ügyfél)<em></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -80,18 +79,18 @@ Aláírók megadásához egy vállalat által kinyomtatott dokumentumokhoz haszn
 <td>Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő, szállítókhoz kapcsolódó, bejövő elsődleges dokumentumokat írhatják alá:
 <ul>
 <li>Számla</li>
-<li>Számviteli számla*</li>
+<li>Számviteli számla</em></li>
 <li>Számla - jóváírás</li>
-<li>Számviteli számla - jóváírás*</li>
-<li>Kifizetendő számla*</li>
-<li>Adótranzakció - pénzügyi dokumentum (szállító)*</li>
+<li>Számviteli számla - jóváírás<em></li>
+<li>Kifizetendő számla</em></li>
+<li>Adótranzakció - pénzügyi dokumentum (szállító)<em></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Készletcikk kezelése</td>
 <td>Adjon hozzá beosztásokat és kapcsolódó információkat az aláírókhoz, akik a következő raktározási bizonylatokat írhatják alá, amikor materiális eszköz kiadására kerül sor vevő részére vagy bevételezésére szállítótól:
 <ul>
-<li>Kiadási bizonylat értékesítési rendeléshez (M-15)*</li>
+<li>Kiadási bizonylat értékesítési rendeléshez (M-15)</em></li>
 <li>Bevételezési pénztárbizonylat / befizetési utalvány</li>
 <li>Kiadási bizonylat átmozgatási rendeléshez (M-15)*</li>
 </ul></td>

@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 468227e40165fa37e9ce80d5f52ded8e9094e5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Termelési paraméterek a Gyártásvégrehajtásban
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör a Gyártásvégrehajtás modul termelési paramétereinek beállításával kapcsolatos információkat tartalmazza.
 
@@ -69,17 +69,17 @@ Minden szakaszban az **Automatikus anyagjegyzék-felhasználás** mezőben a ter
 
 - **Ürítési elv** – Ez a lehetőség a **Termelés** modul anyagjegyzékéhez meghatározott lehetőséggel együtt használatos. Kattintson a következő lehetőségre: **Gyártásvezérlés** &gt; **Közös** &gt; **Termelési rendelések** &gt; **Minden termelési rendelés**. A **Minden termelési rendelés** lapon kiválaszthat egy termelési rendelést a listában, majd a műveleti ablaktáblán kattintson az **Anyagjegyzék** lehetőségre. Az **Anyagjegyzék** lapon a **Beállítási** lap **Ürítési elv** mezőjében válasszon egyet a következő lehetőségek közül:
 
-    - **Indítás**
-    - **Befejezés**
-    - **Manuális**
-    - Üres (nincs megadva beállítás)
-    - **Rendelkezésre áll a helyen**
+  - **Indítás**
+  - **Befejezés**
+  - **Manuális**
+  - Üres (nincs megadva beállítás)
+  - **Rendelkezésre áll a helyen**
 
     A Gyártásvégrehajtás modulban ha az **Ürítési elv** van kiválasztva az **Automatikus anyagjegyzék-felhasználás** mezőben az **Indítás** lapon, az anyagjegyzékben szereplő minden **Indítás** beállítású anyagot a rendszer levon a készletből a művelet megkezdésekor. A **Rendelkezésre áll a helyen** lehetőség a speciális raktárkezelési folyamatokkal kezelt termékek számára engedélyezett. Ha bejelöli az ürítési alapelvet, a rendszer kiürítése az anyagot a nyersanyag-kitárolás raktári munka befejezésekor. A rendszer akkor is kiüríti az anyagot, ha egy, a jelen ürítési elvet használó AJ-sort a rendszer kiadja a raktárnak, és az anyag elérhető a termelés bemeneti helyén.
-    
+
     > [!NOTE]
     > Ha az **Ürítési elv** mező be van állítva az **Indítás** lapon a Gyártásvégrehajtásban, ugyanezt az elvet kell bejelölnie a **Műveletek** lapon vagy a **Jelentés készként** lapon. Ez a követelmény segít biztosítani, hogy a rendszer levonja az anyagokat azon anyagjegyzékek készletéből, amelyek a **Befejezés** ürítési elvet használják a termelési rendelésben. Ha ugyanez az ürítési elv nincs bejelölve a **Műveletek** fülön vagy a **Jelentés készként** lapon, előfordulhat, hogy a rendszer az anyagokat kétszer vonja le a készletből.
- 
+
 - **Mindig** – Ha bejelöli ezt a lehetőséget egy fokozathoz, a rendszer mindig levonja az anyagokat a készletból abban a szakaszban. Például a termelési anyagokat a termelési rendelés indításakor vonja le. Ez a beállítás megköveteli, hogy a **Soha** legyen bejelölve a **Műveletek** és a **Jelentés készként** lapokon. Ez a követelmény megakadályozza, hogy a rendszer kétszer vonja le a cikkeket a készletből.
 - **Soha** – Ha egy fokozatban ezt a lehetőséget választja, az adott szakaszban nem történik az anyagjegyzék-felhasználás. Ha például a **Soha** lehetőséget választja mindhárom lapon (**Indítás**, **Műveletek** és **Jelentés készként**), az anyagokat manuálisan kell levonni a készletből.
 
@@ -146,11 +146,13 @@ Az ebben a részben korábban ismertetett kijelölések alapján a kitárolási 
 
 A következő beállításokat akkor használhatja, ha az anyagokat mindig manuálisan kell levonni a készletből. Ebben az esetben a kitárolási listanaplókat nem adják fel.
 
-| Lap                | Mező                          | Beállítás    |
-|--------------------|--------------------------------|------------|
-| Eleje              | Módosítás kezdete - online           | **Állapot** |
-| Eleje              | Automatikus anyagjegyzék-felhasználás      | **Soha**  |
-| Operations         | Automatikus anyagjegyzék-felhasználás      | **Soha**  |
-| Készként jelentés | Automatikus anyagjegyzék-felhasználás      | **Soha**  |
-| Készként jelentés | Módosítás befejezésének jelentése - online | **Állapot** |
+
+|        Lap         |             Mező              |         Beállítás         |
+|--------------------|--------------------------------|-------------------------|
+|       Eleje        |      Módosítás kezdete - online      | <strong>Állapot</strong> |
+|       Eleje        |   Automatikus anyagjegyzék-felhasználás    | <strong>Soha</strong>  |
+|     Operations     |   Automatikus anyagjegyzék-felhasználás    | <strong>Soha</strong>  |
+| Készként jelentés |   Automatikus anyagjegyzék-felhasználás    | <strong>Soha</strong>  |
+| Készként jelentés | Módosítás befejezésének jelentése - online | <strong>Állapot</strong> |
+
 

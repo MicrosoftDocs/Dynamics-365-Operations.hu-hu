@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8d9a27ecb99265674211a5ec768fe55040b8f5fe
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3571726fd3603371b8e1daec7d6ebe85d72d280d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-posting-profiles"></a>Szállítói feladási profilok
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A szállítói feladási profilok a szállítói tranzakciók főkönyvbe történő feladását szabályozzák.
 
@@ -89,7 +88,7 @@ Ha azt szeretné, hogy a szállítói tranzakciók feladási profiljai megegyezz
 <table>
 <thead>
 <tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Megjegyzés" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Megjegyzés</strong></th>
+<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Bankjegy" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Megjegyzés</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -111,7 +110,7 @@ Ha azt szeretné, hogy a szállítói tranzakciók feladási profiljai megegyezz
 <table>
 <thead>
 <tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Megjegyzés" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Megjegyzés</strong></th>
+<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Bankjegy" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Megjegyzés</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -132,7 +131,7 @@ Ha azt szeretné, hogy a szállítói tranzakciók feladási profiljai megegyezz
 </tr>
 </tbody>
 </table>
- 
+
 
 ### <a name="table-restrictions"></a>**Táblakorlátozások**
 

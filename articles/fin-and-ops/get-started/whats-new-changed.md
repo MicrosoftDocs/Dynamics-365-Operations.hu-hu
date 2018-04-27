@@ -19,23 +19,23 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 47de452c2072b6a29d7e2d34eb73b472be669a6c
-ms.openlocfilehash: eb6132b6d535deb13a4cd1343d04967893a2cfe9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0936ae3b8d07ef221345bda272170e1482f37cbf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed"></a>Új vagy módosult elemek
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Finance and Operations Enterprise Edition rendszer legújabb verzióinak új szolgáltatásait.
 
 A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra történő frissítés folyamata](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 
-[!include[release notes](../includes/release-notes.md)]
+[!INCLUDE [release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a>Alkalmazáskiadások
 
@@ -53,7 +53,7 @@ A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra törté
 <th>Verzió</th>
 <th>Szám felépítése</th>
 <th>Elérhetőség</th>
-<th>További információ</th>
+<th>További tájékoztatás</th>
 </tr>
 </thead>
 <tbody>
@@ -61,6 +61,13 @@ A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra törté
 
 </tr>
 <tr class="even">
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.0</td>
+<td>8.0.30</td>
+<td>április 2018.</td>
+  <td><a href="whats-new-changed-8-0-April-2018.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.0 verziójában (2018. április)</a></td>
+</tr>
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>7.3</td>
 <td>7.3.11971.56116</td>
@@ -122,7 +129,7 @@ A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra törté
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>15-es platformfrissítés</td>
 <td>7.0.4839</td>
-<td>2018. március (Ez egy célzott kiadás, amely csak azoknak a felhasználóknak érhető el, akik részt vesznek a folyamatos automatikus frissítések által biztosított előny programban (CAAP).)</td>
+<td>2018. március (Ez egy célzott kiadás, amely csak azoknak a felhasználóknak érhető el, akik részt vesznek a folyamatos automatikus frissítések által biztosított előny programban (CAAP). A 15-ös platformfrissítés a Dynamics 365 for Finance and Operations 8.0 verziójában is elérhető.)</td>
 <td><a href="whats-new-platform-update-15.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 15. platformfrissítésében (2018 márciusa)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>

@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Ez a funkció a Dynamics 365 for Finance and Operationsben támogatott (7.2-es vagy újabb verzió).
@@ -50,7 +50,7 @@ Alkalmazás meglévő munkaterülethez kiterjesztése, vagy saját új munkater�
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Erőforrásként .pbix fájlt kell hozzáadni
 Mielőtt elkezdené, létre kell hoznia vagy a kiemelt Üzletiintelligencia-jelentés beágyazza a munkaterület beszerzése. Elemzési jelentések létrehozásával kapcsolatos további tudnivalókat lásd: [Power az üzleti Intelligencia asztali – első lépések](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
- 
+
 Adja meg a Visual Studio projekt műtermék .pbix fájl lépésekkel.
 
 1. Hozzon létre egy új projektet a megfelelő modellben.
@@ -63,12 +63,12 @@ Adja meg a Visual Studio projekt műtermék .pbix fájl lépésekkel.
 5. Keresse meg a .pbix fájlt, amely tartalmazza az elemzési jelentés, és kattintson a **nyitott**.
 
     ![Válassza ki az erőforrás párbeszédpanel jelenik meg](media/analytical-workspace-select-resource.png)
-  
+
 Dynamics 365 erőforrásként felvett .pbix fájl, hogy a jelentések beágyazása munkaterületek, és közvetlen kapcsolatokat menüelemek vehet fel.
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>Az alkalmazás munkaterületének lap vezérlő hozzáadása
 Ebben a példában ajánlott kiterjed a **foglalási kezelése** munkaterület hozzáadásával flottában felügyeleti modellben a **analitika** meghatározásának lap a **FMClerkWorkspace** képernyőn.
- 
+
 A következő ábra azt mutatja, hogy mi a **FMClerkWorkspace** képernyőn dolgozunk a Microsoft Visual Studio-tervezőben.
 
 ![A képernyőn FMClerkWorkspace változtatások előtt](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglal
 16. Válasszon egy feladatot, kattintson rá a jobb gombbal, majd válassza a **Minta eltávolítása** menüpontot.
 17. Kattintson ismét jobb gombbal, és adja meg **Hozzáadás minta** > **munkaterület többlapos**.
 18. A build ellenőrizheti a módosítások végrehajtása.
- 
+
 A következő ábra mutatja, hogy a terv néz módosítások alkalmazása után.
 
 ![Módosítások után FMClerkWorkspace](media/analytical-workspace-definition-after.png)
 
 Most, hogy a munkaterület jelentés beágyazása használt űrlap-vezérlőelemek felvett tulajdonságaként méretét, hogy így alkalmazkodik az elrendezés kell megadni. Alapértelmezés szerint mind **szűrők ablak** lap és a **lap** oldal a jelentésen látható lesz. Ezeket a vezérlőelemeket a jelentés a cél fogyasztó megfelelő láthatóságát azonban módosítható.
- 
+
 > [!NOTE]
 > Beágyazott munkaterületek esetén javasoljuk, hogy a bővítmények használatával egyaránt rejtse el a **Szűrő ablaktábla** és a **Lap** oldalakat a konzisztencia érdekében.
- 
+
 Ekkor befejezte a jelentkezési lap definíciójának kiterjesztését. Testreszabott bővítmények segítségével a további tudnivalókat lásd:  [Testreszabás: Overlayering és bővítéseinek](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>X ++ üzleti logikát a jelentésmegjelenítő vezérlőben beágyazása hozzáadása
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>Paraméterek
 
-| Név | Leírás |
-|---|---|
-| resourceName | A .pbix erőforrás neve |
-| formGroupControl | A képernyőn az üzleti Intelligencia teljesítmény jelentés vezérlőelem alkalmazandó csoportvezérlőnek. |
-| defaultPageName | Alapértelmezett oldalnév. |
-| showFilterPane | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a szűrés ablaktáblája. |
-| showNavPane | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a navigációs ablaktábla. |
-| defaultFilters | A Power BI jelentés alapértelmezett szűrői. |
+|       Név       |                                                              Leírás                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    A .pbix erőforrás neve                                                     |
+| formGroupControl |                                    A képernyőn az üzleti Intelligencia teljesítmény jelentés vezérlőelem alkalmazandó csoportvezérlőnek.                                     |
+| defaultPageName  |                                                         Alapértelmezett oldalnév.                                                         |
+|  showFilterPane  |   Logikai érték, amely azt jelzi, hogy megjelenjen (<strong>true</strong>) vagy rejtve maradjon (<strong>false</strong>) a szűrés ablaktáblája.   |
+|   showNavPane    | Logikai érték, amely azt jelzi, hogy megjelenjen (<strong>true</strong>) vagy rejtve maradjon (<strong>false</strong>) a navigációs ablaktábla. |
+|  defaultFilters  |                                              A Power BI jelentés alapértelmezett szűrői.                                              |
+
 

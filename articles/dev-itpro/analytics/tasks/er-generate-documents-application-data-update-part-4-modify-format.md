@@ -1,5 +1,5 @@
 --- 
-title: "Formátum módosítása az alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez (ER)"
+title: "Formátum módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához"
 description: "Az eljárás lépéseinek elvégzéséhez először hajtsa végre az „ER – Dokumentumok létrehozása alkalmazásadat-frissítéssel (3. rész: Modell és hozzárendelés módosítása)” eljárást."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 47a1fe9cbfc80adbd5d375221912a2fa9787af19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6c7455e4293993f297aeede4d9d6a50f25ca6c07
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="modify-format-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Formátum módosítása az alkalmazásadatok módosítását tartalmazó dokumentumok létrehozásához az elektronikus jelentéskészítéshez (ER)
+# <a name="modify-format-to-generate-documents-with-application-data"></a>Formátum módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Az eljárás lépéseinek elvégzéséhez először hajtsa végre az „ER – Dokumentumok létrehozása alkalmazásadat-frissítéssel (3. rész: Modell és hozzárendelés módosítása)” eljárást.
 

@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a>Raktári munkairányelvek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations alkalmazásban a raktári munkairányelvek szabályozzák, hogy a gyártási raktári folyamatai létrehoznak-e raktári munkát a munkarendelés-típus, a készlethely és a termék alapján.
 
@@ -68,14 +67,15 @@ Amikor raktári munka-irányelv konfigurálását tervezi ehhez az esethez, vegy
 
 Íme egy példa a munka-irányelvre, amelyet be lehet beállítani ezen szempontok alapján.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Munkairányelv neve**<br>                 |**Munkarendelés típusai**<br>                               |
-| Nincs betárolás a 01 esetében                    |- Késztermék betárolása<br>                           |
-|                                         |**Helyek**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Termékek** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Munkairányelv neve</strong><br> | <strong>Munkarendelés típusai</strong><br> |
+|         Nincs betárolás a 01 esetében          |     - Késztermék betárolása<br>      |
+|                                       |    <strong>Helyek</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Termékek</strong> <br>     |
+|                                       |                 - SC1                 |
 
 Az alábbi eljárások lépésről lépésre ismertetik, hogyan lehet a raktári munka-irányelvet beállítani ehhez az esethez. Egy beállítási minta is ismertetésre kerül, amely azt mutatja meg, hogyan lehet egy jelentésben egy termelési rendelést készként szerepeltetni, ahol a leszállítás egy olyan helyre történik, amelynek szabályozása nem azonosítótáblán alapul.
 
@@ -174,7 +174,7 @@ LÉPÉS (25)
 <tr>
 <td></td>
 <td>5.</td>
-<td>Kattintson az Új > lehetőségre.</td>
+<td>Kattintson a Létrehozás lehetőségre.</td>
 </tr>
 <tr>
 <td></td>
@@ -204,7 +204,7 @@ LÉPÉS (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>Az automatikus BOM-felhasználás mezőben válassza ki a „Soha” értéket.</td>
+<td>Az automatikus darabjegyzék-felhasználás mezőben válassza ki a „Soha” értéket.</td>
 </tr>
 <tr>
 <td></td>
@@ -214,7 +214,7 @@ LÉPÉS (25)
 <tr>
 <td></td>
 <td>13.</td>
-<td>Kattintson a Készre jelentés lehetőségre.</td>
+<td>Kattintson a Jelentés készként lehetőségre.</td>
 </tr>
 <tr>
 <td></td>

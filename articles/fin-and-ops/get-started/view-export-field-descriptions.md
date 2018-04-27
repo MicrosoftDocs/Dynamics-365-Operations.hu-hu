@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Mezőleírások megtekintése és exportálása
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével.
 
@@ -77,7 +76,7 @@ Egy adott lap több módon is megkereshető a **Lap kijelölése** mezőben. Sok
     -   Ha egynél több pontos egyezés található, nem jelennek meg leírások. Ez esetben nyissa meg a legördülő listát és jelölje ki a kívánt lapot.
     -   A beírt névnek megfelelő lap leírásai jelennek meg akkor is, ha a beírt név egy másik lap nevének részét képezi. Azonban ha megnyitja a legördülő listát, abban láthatóak lesznek az adott nevet tartalmazó lapok.
 
-Például ha a **Leltár** kifejezést írja be a ****Lap kijelölése**** mezőbe, nem jelenik meg leírás. Ha rákattint a legördülő listára, két **Leltár** nevű lapot fog látni, valamint több olyan lapot, amelynek nevében szerepel a „Leltár” szó. Ha az **InventJournalCount** AOT-névvel rendelkező lapot választja, akkor megjelennek az adott laphoz tartozó mezőleírások. Azonban ha újra megnyitja a legördülő listát, látni fogja, hogy a lista most már tartalmaz minden olyan lapot, amelynél az AOT-lapnév része az „InventJournalCount”.
+Például ha a <strong>Leltár</strong> kifejezést írja be a *<strong><em>Lap kijelölése</em></strong>* mezőbe, nem jelenik meg leírás. Ha rákattint a legördülő listára, két <strong>Leltár</strong> nevű lapot fog látni, valamint több olyan lapot, amelynek nevében szerepel a „Leltár” szó. Ha az <strong>InventJournalCount</strong> AOT-névvel rendelkező lapot választja, akkor megjelennek az adott laphoz tartozó mezőleírások. Azonban ha újra megnyitja a legördülő listát, látni fogja, hogy a lista most már tartalmaz minden olyan lapot, amelynél az AOT-lapnév része az „InventJournalCount”.
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 Ez a szakasz a mezőleírások használata során felmerülő lehetséges problémák elhárításához nyújt segítséget.

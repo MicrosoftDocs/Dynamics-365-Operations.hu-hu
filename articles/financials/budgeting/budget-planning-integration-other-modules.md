@@ -19,16 +19,18 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>A Költségvetés-tervezés integrálása más modulokkal
 
-[!include[banner](../includes/banner.md)] Költségvetési tervek számos különböző forrásból hozhatók létre. Az időszaki folyamat alapvető összetevői ugyanazok, mint a többi forrás esetében. 
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Költségvetési tervek számos különböző forrásból hozhatók létre. Az időszaki folyamat alapvető összetevői ugyanazok, mint a többi forrás esetében. 
 
 
 
@@ -66,7 +68,7 @@ Az **Előzmények** beállítás a **Cél** lapon lehetővé teszi, hogy a forr�
 
 Az oldal tetején található **Összesítési szempont** mező meghatározza a használt dátumot is. Ez a mező összesíti az összegeket, illetve opcionálisan a pénzügyi év vagy időszak első napját állítja be érvényességi dátum gyanánt. 
 
-A **Cél** lapon található számos mező az Ön által választott művelet függvényében lesz szerkeszthető vagy írásvédett állapotú. Ha az új költségvetési terv létrehozása művelet helyett egy meglévő terv módosítására vált, úgy nem lesz elérhető a **Költségvetési terv neve** mező, viszont elérhetővé válnak a meglévő terv kiválasztásához kapcsolódó mezők. Sem a **Cél**, sem a **Forrás** lapon nem érhető el a **Főkönyv** mező, mivel ezt az értéket a kiválasztott költségvetés-tervezési folyamat határozza meg. 
+A <strong>Cél</strong> lapon található számos mező az Ön által választott művelet függvényében lesz szerkeszthető vagy írásvédett állapotú. Ha az új költségvetési terv létrehozása művelet helyett egy meglévő terv módosítására vált, úgy nem lesz elérhető a <strong>Költségvetési terv neve</strong> mező, viszont elérhetővé válnak a meglévő terv kiválasztásához kapcsolódó mezők. Sem a <strong>Cél</strong>, sem a <strong>Forrás **lapon nem érhető el a **Főkönyv</strong> mező, mivel ezt az értéket a kiválasztott költségvetés-tervezési folyamat határozza meg. 
 
 A **Költségvetési osztály** mezőben költségtranzakciók vagy bevételi tranzakciók formájában tudja megadni a költségvetési terv sorait. A bevételi tranzakciók jellemzően követel tételként jelennek meg a főkönyvi számlán, így azokat a rendszer negatív összegként tárolja. Ezek a tranzakciók jellemzően a költségvetési tervben is negatív összegként szerepelnek. Amennyiben azonban a terv elrendezésben hozzáadja a költségvetési osztály mezőt, úgy lehetővé teszi, hogy a bevétel pozitív összegként jelenjen meg.
 
@@ -111,7 +113,7 @@ Nincs **Költségvetési osztály** mező, mivel a költségvetési osztály (**
 
 A projektköltségvetéseket forrásként tudja felhasználni, ha kiválasztja a projekt-költségvetési összegeket tartalmazó előrejelzési modellt. Ne feledje, hogy a projektköltségvetések a jóváhagyással párhuzamosan hoznak létre projekt-előrejelzési bejegyzéseket.
 
-Ha csak a költségeket vagy bevételeket szeretné kiválasztani a költségvetésiterv-sorokhoz, szűrő segítségével állítsa be a következőt: **Költségvetési frissítések: Összeg típusa = Költség**. Egyetlen típusú előrejelzés kiválasztásához szűrő segítségével állítsa be a következőt: **Költségvetési frissítések: Tranzakciótípus = *xxx***. 
+Ha csak a költségeket vagy bevételeket szeretné kiválasztani a költségvetésiterv-sorokhoz, szűrő segítségével állítsa be a következőt: <strong>Költségvetési frissítések: Összeg típusa = Költség</strong>. Egyetlen típusú előrejelzés kiválasztásához szűrő segítségével állítsa be a következőt: <strong>Költségvetési frissítések: Tranzakciótípus = *xxx</strong>*. 
 
 Költségvetési tervváltozat létrehozásához csak egy előrejelzési modellt használható. Ha a folyamatot lefuttatja az egyik előrejelzési modellre, majd végrehajt egy frissítést és próbál megadni egy másik modellt, úgy a rendszer felülírja az első modellt, ha arra ugyanazok a projekt- és főkönyvi számlák vonatkoznak. Ha több előrejelzési modellből szeretne költségvetési tervváltozatot hozni létre, azokat különböző költségvetési tervváltozatok formájában készítse el, majd használja a felosztási beállításokat azok, egy másik változatban történő összesítése érdekében. 
 

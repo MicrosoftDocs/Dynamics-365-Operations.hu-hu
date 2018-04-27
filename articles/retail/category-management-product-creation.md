@@ -1,6 +1,6 @@
 ---
 title: "Termékkategóriák kezelése"
-description: "Ez a témakör leírja, hogy a termékkihelyezési vezetők hogyan használhatják a Retail termékkategóriákat a Retail termékhierarchia és a kiadott termék részletei közötti kapcsolatok kezeléséhez."
+description: "Ez a témakör leírja, hogy a termékkihelyezési vezetők hogyan használhatják a Retail termékkategóriákat a Retail-termékhierarchia és a kiadott termék részletei közötti kapcsolatok kezeléséhez."
 author: ashishmsft
 manager: AnnBe
 ms.date: 10/23/2017
@@ -20,44 +20,43 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2246024d7d70947690173f3d0768292abe43efd7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
+# <a name="manage-retail-product-categories-and-products"></a>Retail-termékkategóriák és termékek kezelése
 
-# <a name="enhanced-product-and-category-management"></a>Továbbfejlesztett kategória- és termékkezelés
+[!INCLUDE [banner](./includes/banner.md)]
 
-[!include[banner](./includes/banner.md)]
+Ez a témakör a Retail-termékkategóriák és termékek kezelésének továbbfejlesztett módját mutatja be a Microsoft Dynamics 365 for Retail alkalmazásban. A fejlesztések segítségével a termékkihelyezési vezetők megtekinthetik a Retail termékek hierarchiája és a kiadott termékrészletek között megosztott terméktulajdonság-struktúráját.
 
-Ez a témakör a Retail termékkategóriák és termékek kezelésének továbbfejlesztett módját mutatja be a Dynamics 365 for Retail alkalmazásban. A fejlesztések segítségével a termékkihelyezési vezetők megtekinthetik a Retail termékek hierarchiája és a kiadott termékrészletek közös terméktulajdonság-struktúráját.
+Ha többet szeretne tudni a Retail-termékkategóriák kezeléséről, a **Kategória és termék kezelése** munkaterületen válassza a **Kiskereskedelmi termékek hierarchiája** csempét.
 
-A Retail termékkategóriák kezelésével kapcsolatos további tudnivalókért kattintson a **Kiskereskedelmi termékek hierarchiája** elemre a **Kategória és termék kezelése** munkaterületen, és tekintse meg a **Kiskereskedelmi termékkategória** lap továbbfejlesztett szerkezetét.
+Figyelje meg a megjelenő **Kiskereskedelmi termékek hierarchiája** lap továbbfejlesztett szerkezetét. A Retail korábbi verzióiban a terméktulajdonságok *alapvető terméktulajdonságokra* és *kiskereskedelmi termék tulajdonságaira* lettek felosztva, az alkalmazási hatókör alapján. A Retail termékek tulajdonságai alkalmazhatóságukban *globálisak*. Másként megfogalmazva ez azt jelenti, hogy egy adott Retail-terméktulajdonság esetében ugyanaz az érték oszlik meg minden jogi személy esetében. Az alapvető terméktulajdonságok viszont *jogi személy specifikusak*. Ez azt jelenti, hogy egy adott alapvető terméktulajdonság értéke eltérő lehet a jogi személyek esetében a jogi személyek egyedi üzleti igényei alapján.
 
-![Kategória és termék kezelése munkaterület](media/LaunchRetailProductHierarchy.png)
+A továbbfejlesztett Retail-termékkategória struktúrában a terméktulajdonságok logikailag el vannak választva a csoporton belüli alkalmazhatóság alapján a megjelent termék részletei képernyőstruktúrájának megfelelően.
 
-A korábbi verziókban a terméktulajdonságok **alapvető terméktulajdonságokra** és **kiskereskedelmi termék tulajdonságaira** lettek felosztva, az alkalmazási hatókör alapján. A **kiskereskedelmi termék tulajdonságai** *globálisak* voltak az alkalmazás terjedelmét tekintve, ami azt jelenti, hogy egy adott **kiskereskedelmi termék tulajdonság** esetében ugyanazt az értéket mutatja az összes jogi személy. Az **alapvető terméktulajdonságok** *jogi személy specifikusak* voltak. Ez azt jelenti, hogy egy adott **alapvető terméktulajdonság** értéke eltérő lehet a jogi személyek esetében az egyedi üzleti igények alapján.
+![Mezők csoportosítása a tulajdonságaik alkalmazhatóságának terjedelme alapján](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-A továbbfejlesztett Retail termékkategória struktúrában a terméktulajdonságok logikailag el vannak választva a csoporton belüli alkalmazhatóság alapján a megjelent termék részletei képernyőstruktúrájának megfelelően.
+Válthat aközött, hogy a jogi személyhez megadott tulajdonságokat az összes a jogi személyre, vagy egy meghatározott jogi személyre nézve kezeli.
 
-![Mezők csoportosítása az alkalmazásuk terjedelme alapján](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+A tulajdonságok az összes jogi személy közti kezeléséhez válassza a **Megjelenítés minden jogi személyre** (vagy **Szerkesztés minden jogi személyre**) lehetőséget.
 
-Válthat aközött, hogy a jogi személyhez megadott tulajdonságokat az összes a jogi személyre nézve, vagy egy meghatározott jogi személyre nézve kezeli. Ehhez válassza a **Megjelenítés/szerkesztés minden jogi személyre** vagy a **Megjelenítés/szerkesztés egy meghatározott jogi személyre** lehetőségek egyikét.
+![Megjelenítés/szerkesztés minden jogi személyre](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
-![Nézetváltás az egyén és jogi személyek között](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+A tulajdonságok meghatározott jogi személynél való kezeléséhez válassza a **Megjelenítés egy meghatározott jogi személyre** (vagy **Szerkesztés egy meghatározott jogi személyre**) lehetőséget.
 
-![Nézetváltás az egyén és jogi személyek között](media/ToggleToEditForAllLegalEntities.PNG)  
+![Megjelenítés/szerkesztés egy meghatározott jogi személyre](media/ToggleToEditForAllLegalEntities.PNG)
 
-Összehasonlítva a korábbi verziókkal, az új Retail termékkategória-szerkezetben a termékkihelyezési vezető meghatározhat egy alapértelmezett értéket a terméktulajdonságok egy további csoportjához egy egyéni kategória szintjén. A termék létrehozása során ezeket az alapértelmezett terméktulajdonság értékeket örökli egy termék, egy egyedi kategóriával való társításuk alapján a Retail termékhierarchiájából. A termékkihelyezési vezetők módosíthatják is ezeket az örökölt terméktulajdonságokat az egyes termékekhez, az egyedi üzleti követelményeknek megfelelően.
+Amellett a bővített Retail termékkategória-szerkezetben a termékkihelyezési vezető most meghatározhat egy alapértelmezett értéket a terméktulajdonságok egy további csoportjához egy egyéni kategória szintjén. Ezután a termékek létrehozáskor öröklik az alapértelmezett értékeket a termék tulajdonságaik alapján, ezen tulajdonságok a Retail termékhierarchiában lévő egyedi kategóriával való társításuk alapján. A termékkihelyezési vezetők módosíthatják is ezeket az örökölt terméktulajdonságokat az egyes termékekhez, az egyedi üzleti követelményeknek megfelelően.
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Jelölje ki a tulajdonságokat a termékek frissítéséhez a kiskereskedelmi termékkategória űrlapról 
- 
-A terméktulajdonságok új, továbbfejlesztett struktúrája segítségével kiválaszthatja, hogy melyik frissített terméktulajdonságoknak kell átkerülniük a kapcsolódó termékekbe. 
+## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Tulajdonságok kiválasztása a termékek frissítéséhez a Retail termékhierarchia lapról
 
-![Frissített termékek új, továbbfejlesztett nézete](media/NewUpdateProductsEnhancedView.PNG) 
+A terméktulajdonságok új, továbbfejlesztett struktúrája segítségével kiválaszthatja, melyik frissített terméktulajdonságoknak kell átkerülniük a kapcsolódó termékekbe. A **Kiskereskedelmi termékek hierarchiája** oldalon a műveleti ablaktáblában válassza a **Kategória** elemet, majd a **Termékek frissítése** lehetőséget a **Termékek frissítése** dialógusablak megnyitásához.
 
-A termékkihelyezési vezetők módosíthatják ezeket az örökölt terméktulajdonságokat az egyes termékekhez, az egyedi üzleti követelményeknek megfelelően.
+![Termékek frissítése párbeszédpanel](media/NewUpdateProductsEnhancedView.PNG)
 
 

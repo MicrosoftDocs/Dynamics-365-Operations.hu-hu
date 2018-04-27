@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>Speciális szűrési és lekérdezési szintaxis
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanel "egyezések" operátor használata esetén.
 
@@ -68,7 +67,7 @@ A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhet�
 <td><em>Kezdő érték</em>..<em>Záró érték</em> (két pont)</td>
 <td>A két ponttal elválaszott értékek között keres</td>
 <td>Írja be a „-tól” értéket, majd két pontot, végül az „-ig” értéket.</td>
-<td><strong>1..10</strong> keresése esetén az 1 és 10 közötti összes értéket megtalálja a program. Karakterláncmezőkben azonban az <strong>A..C</strong> keresése esetén az összes &quot;A&quot; és &quot;B&quot; kezdetű értéket, valamint a &quot;C&quot; értékkel pontosan megegyező értékeket találja meg a program (a „Ca” értéket például nem fogja megtalálni). Ez a lekérdezés például nem fogja megtalálni a &quot;Ca&quot; értéket. Hogy minden értéket megtaláljon &quot;A*&quot; értéktől &quot;C*&quot; értékig, írja be, hogy: <strong>A..D</strong>.</td>
+<td><strong>1..10</strong> keresése esetén az 1 és 10 közötti összes értéket megtalálja a program. Karakterláncmezőkben azonban az <strong>A..C</strong> keresése esetén az összes &quot;A&quot; és &quot;B&quot; kezdetű értéket, valamint a &quot;C&quot; értékkel pontosan megegyező értékeket találja meg a program (a „Ca” értéket például nem fogja megtalálni). Ez a lekérdezés például nem fogja megtalálni a &quot;Ca&quot; értéket. Hogy minden értéket megtaláljon &quot;A<em>&quot; értéktől &quot;C</em>&quot; értékig, írja be, hogy: <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>érték</em> (két pont)</td>
@@ -97,20 +96,20 @@ A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhet�
 <tr class="even">
 <td><em>érték</em>* (csillag)</td>
 <td>A beírt értéktől kezdve</td>
-<td>Írja be a kezdő értéket, majd egy csillagot (<strong>*</strong>).</td>
-<td><strong>S*</strong> keresése esetén a program minden &quot;S&quot;-sel kezdődő karakterláncot megtalál, például a következőket: &quot;Stockholm&quot;, &quot;Sydney&quot; és &quot;San Francisco&quot;.</td>
+<td>Írja be a kezdő értéket, majd egy csillagot (<strong><em></strong>).</td>
+<td><strong>S</em></strong> keresése esetén a program minden &quot;S&quot;-sel kezdődő karakterláncot megtalál, például a következőket: &quot;Stockholm&quot;, &quot;Sydney&quot; és &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>érték</em> (csillag)</td>
+<td><em><em>érték</em> (csillag)</td>
 <td>A beírt értékre végződő</td>
 <td>Írjon be egy csillagot, majd a végződésként szereplő értéket.</td>
-<td><strong>*kelet</strong> keresése esetén a program minden olyan karakterláncot megtalál, amely a &quot;kelet&quot; szóra végződik, például a következőket: &quot;északkelet&quot;, &quot;délkelet&quot;.</td>
+<td><strong></em>east</strong> keresése esetén a program minden olyan karakterláncot megtalál, amely a &quot;kelet&quot; szóra végződik, például a következőket: &quot;északkelet&quot;, &quot;délkelet&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>érték</em>* (csillag)</td>
+<td><em><em>érték</em></em> (csillag)</td>
 <td>Tartalmazza a beírt értéket</td>
 <td>Írjon be egy csillagot, egy értéket, majd egy másik csillagot.</td>
-<td><strong>*nt*</strong> keresése esetén a program minden olyan karakterláncot megtalál, amelyben szerepel az &quot;nt&quot; érték, például a következőket: &quot;Dunántúl&quot; és &quot;Tiszántúl&quot;.</td>
+<td><strong><em>nt</em></strong> keresése esetén a program minden olyan karakterláncot megtalál, amelyben szerepel az &quot;nt&quot; érték, például a következőket: &quot;Dunántúl&quot; és &quot;Tiszántúl&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (kérdőjel)</td>
@@ -131,7 +130,7 @@ A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhet�
 <td><strong><span class="code">(adatforrás.Mezőnév != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
-<td>C</td>
+<td>e</td>
 <td>Mai dátum</td>
 <td><strong>T</strong> típus.</td>
 <td><strong>T</strong> megegyezik a mai dátummal.</td>

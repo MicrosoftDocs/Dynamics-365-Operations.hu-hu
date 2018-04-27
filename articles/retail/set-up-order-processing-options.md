@@ -1,9 +1,9 @@
 ---
-title: "Rendelésfeldolgozási beállítások meghatározása"
+title: "Hívásközpont csatorna beállítása"
 description: "Ez a témakör a következővel kapcsolatban kínál információkat: hívásközpontoknak szóló rendelések feldolgozása a Microsoft Dynamics 365 for Retail használatával."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,33 +20,64 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 144bee2102b8d1901d1b4964f6c92501c1cd573d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0d64a27aa8aed10c210ca3c2956dce67f8d634b8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Rendelésfeldolgozási beállítások meghatározása
+# <a name="set-up-a-call-center-channel"></a>Hívásközpont csatorna beállítása
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+A vállalat több hívásközponti csatornát határozhat meg a Microsoft Dynamics 365 for Retail alkalmazásban. A hívásközponti csatornák konfigurálása a **Kiskereskedelmi** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont** elemnél történik, és az adott jogi személyre jellemzők.
 
-Ez a témakör a következővel kapcsolatban kínál információkat: hívásközpontoknak szóló rendelések feldolgozása a Microsoft Dynamics 365 for Retail használatával. 
+Új hívásközponti csatorna létrehozásakor rendszerszerűen hozzárendelnek egy üzemiegység-számot. Mivel a hívásközpontok üzemi egységekként jönnek létre, a felhasználók a hívásközponti csatornákat különböző Retail funkciókhoz rendelhetik hozzá, ilyenek például a szortimentek, a katalógusok és az adott szállítási módok.
 
-A Retail számos kiskereskedelmi csatornát támogat, például online áruházakat, online piactereket, fizikailag létező üzleteket és hívásközpontokat. Egy telefonos ügyfélszolgálattól dolgozók telefonon végrehajtása a vevői rendelések és értékesítési rendelések létrehozása. Ez a témakör leírja, hogyan egy telefonos ügyfélszolgálattól létrehozására és konfigurálására a hívás beállításai. Minden egyes hívásközpont lehet a saját felhasználói, fizetési módok, árcsoportok, pénzügyi dimenziók és szállítási módok. Beállítható, hogy ezek a beállítások a hívásközpont létrehozásakor. **Fontos:** Mielőtt használni lehetne a hívásközpont munkafolyamatait, amikor a felhasználó értékesítési rendeléseket hoz létre, a felhasználót hozzá kell rendelni a hívásközponthoz hívásközpont felhasználójaként. A **Hívásközpont** oldal használatával engedélyezheti vagy letilthatja a csak a hívásközpontokra jellemző funkciócsoportokat. A következő szolgáltatáscsoportok engedélyezhető:
+A hívásközponti csatornához be lehet állítani egy alapértelmezett raktárat. Ezután, amikor a csatornán értékesítési rendeléseket hoznak létre, az alapértelmezett raktár automatikusan megjelenik az értékesítési rendelés fejlécében, kivéve, ha egy másik raktár definiálva van a kiválasztott vevőhöz, amely ki van választva az értékesítési rendeléshez. Ebben az esetben a vevő raktára kerül az értékesítési rendelésre alapértelmezetten.
 
--   **Rendelés teljesítése**– Ebbe a csoportba tartoznak a fizetéshez és a rendelés teljesítéséhez kötődő funkciók az **Értékesítési rendelés** oldalon.
--   **Irányított eladás** – Ebbe a csoportba tartoznak a forráskódokhoz, parancsfájlokhoz és a katalógus kérelmekhez kötődő funkciók.
+A hívásközpont funkcióinak használatához a felhasználókat hozzá kell csatolni egy hívásközponti csatornához. A Retail alkalmazásban a felhasználók által létrehozott összes értékesítési rendelés automatikusan csatolódik a felhasználó hívásközponti csatornájához. Jelenleg egy felhasználó nem csatolódhat egyszerre több hívásközponti csatornához.
 
-Miután engedélyezte ezeket a funkciókat a hívásközpont beállításainál, elérhetővé válnak az **Értékesítési rendelés** oldalon azon felhasználók számára, akiket a hívásközponthoz társítottak. A legtöbb szolgáltatás szükséges további beállítási, használat előtt. A képek és parancsfájlok engedélyezettek a konkrét hívásközpont irányított eladási beállításának részeként. Ha ezen funkciók engedélyezve vannak, a parancsfájlok és termékképek megjelennek az adatterület-panelen, az **Értékesítési rendelés** oldalon. A termék beállított alapértelmezett kép jelenik meg. A parancsfájlok egy cikkhez, katalógushoz, vevőhöz vagy egy katalógus kontextusában szereplő cikkhez konfigurálhatók. A hívásközpont-rendelések további részleteket is megjeleníthetnek egy adott rendelési sorhoz tartozó ár származtatásáról. Például a rendelések mutatják az alkalmazott kedvezményeket. Ezt a funkciót a **Kinnlevőségek** &gt; **Beállítás** &gt; **Kinnlevőségek paraméterei** &gt; **Árak** &gt; **Ár részletei** menüpontban engedélyezheti. Az **Ár részletei** oldalhoz az **Értékesítésirendelés-sor** legördülőlistából férhet hozzá. A rendelési esemény nyomon követését használhatja ellenőrzési célokra, a műveletek megtekintéséhez, amelyek a rendelés életciklusának során történnek vagy egy adott felhasználó által végzett műveletek nyomon követésére. Például rögzítheti a műveletet minden alkalommal, amikor egy felhasználó létrehoz egy értékesítési rendelést, felfüggeszt egy rendelést, felülírja a költséget vagy frissít egy rendelési sort. A rendelési eseményeket beállíthatja, hogy nyomon tudja követni az adott felhasználók, felhasználói csoportok, vagy minden felhasználó műveleteit egy adott időszak során. Megtekintheti azokat a műveleteket, amelyek egy dokumentumon történtek a **Rendelési események** oldal megnyitásával a Műveleti ablaktáblán az adott dokumentum oldalán. A rendelési eseményeket az **Értékesítés és marketing** &gt; **Beállítás** &gt; **Események** &gt; **Rendelési események** részben lehet konfigurálni. Ha egy vevői rendelés nem szállítható időben, a vállalat automatikusan küldhet értesítést e-mail-üzeneteken keresztül a vevőnek a rendelési állapot indoklására, és hogy lehetővé tegye a vevő számára a rendelés visszamondását. Ha a késedelmet túlnyúlik a meghatározott küszöbértéket, a rendelés automatikusan lehet visszavonni. Legfeljebb három e-mail üzenet küldhető megadott időközönként:
+A hívásközponti csatornákhoz egy e-mail értesítési profilt is be lehet állítani. A profil határozza meg a hívásközponti csatornán keresztül rendeléseket leadó vevőknek történő e-mail-küldéskor használt e-mail-sablonok halmazát. Az e-mail-eseményindítók rendszereseményekre konfigurálhatók, például rendelés benyújtása vagy rendelés szállítása.
 
-1.  **Első visszamondási értesítés** – a vevő eldöntheti, hogy visszamondja-e a rendelést.
-2.  **Második visszamondási értesítés** – a vevő eldöntheti, hogy visszamondja-e a rendelést.
-3.  **Végleges visszamondási értesítés** – a rendszer érvényteleníti a rendelést, és a vevő erről értesítést kap.
+Az értékesítések helyes, hívásközponti csatornán keresztüli feldolgozása előtt ki kell javítani a [fizetési módokat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments), és a szállítási módot meg kell adni a csatornához.
 
-Az áfamentességi az egyes vevőkkel és az Automatikus értesítés és érvénytelenítés folyamat termékek. A haszonkulcs-figyelmeztetés akkor jelenik meg, amikor a rendeléshez hozzáad egy cikket. A figyelmeztetésben fontos információk vannak a cikkről, többek között az árrés és a cikknyereségesség. Ennek az információnak a segítségével dönthet az esetleges árfelülvizsgálatról egy cikk értékesítési rendeléshez való hozzáadásakor. Beállítja például a kereskedelmi árrések küszöbértékét úgy, hogy legalább 40 százalék feletti költség legyen elfogadható egy cikkhez, de a 20-39 százalékos költség feletti küszöbérték megkérdőjelezhető. Ebben az esetben minden olyan cikk figyelmeztetést vált ki, amely 20 és 39 százalék közötti küszöbértékkel rendelkezik . Egyetlen cikk sem értékesíthető, amelynek kevesebb mint 20 százalék a költség feletti küszöbértéke, illetve ilyen esetben a cikk ára nem módosítható. A haszonkulcs-figyelmeztetések a **Kinnlevőségek** &gt; **Beállítás** &gt; **Kinnlevőségek paraméterei** &gt; **Haszonkulcs-figyelmeztetések** részben konfigurálhatók. Az alapértelmezett szabályok alapján a forgalmi adó-hozzárendelés beállításakor meghatározhatja a megfeleltetési prioritás cím elemeit. Megadhatja például, hogy az áfacsoport irányítószám szerinti megfeleltetése magasabb prioritást kapjon mint az áfacsoport állam szerinti megfeleltetése. Új vevőcímbejegyzések beírásakor az áfacsoport automatikusan hozzárendelésre kerül annak alapján, hogy a vevő címe hogyan felel meg az alapértelmezett szabályoknak és a meghatározott prioritás megfeleltetés szerint. Ezt a funkciót a **Főkönyvi paraméterek** oldalon konfigurálhatja.
+A hívásközponti csatornák szintjén be lehet állítani a többi alapértelmezett értékeket, amelyek azokhoz a pénzügyi dimenziókhoz kapcsolódnak, amelyek a csatorna által létrehozott rendelésekhez kapcsolandók.
 
+## <a name="options-for-order-processing-behavior"></a>A rendelésfeldolgozási viselkedés beállításai
 
+Három beállításnak egy hívásközpont konfigurációjában jelentős hatása van a szolgáltatásokra és funkciókra, amelyek rendelkezésre állnak az értékesítési rendelésekhez, amelyeket a hívásközponthoz hoznak létre: **rendeléskiegészítés engedélyezése**, **közvetlen értékesítés engedélyezése** és **rendelési árellenőrzés engedélyezése**.
 
+### <a name="enable-order-completion"></a>Rendeléskiegészítés engedélyezése
+
+A **Rendeléskiegészítés engedélyezése** hívásközponti csatorna beállításnak jelentős hatással van a csatornába bekerülő értékesítési rendelések rendelési folyamat feldolgozására. Ha ez a beállítás be van kapcsolva, minden értékesítési rendelésnek át kell esnie ellenőrzési szabályok készletén, mielőtt megerősítést kapnának. A szabályok futtatása a **Befejezés** gomb kiválasztásával történik, amely szerepel a műveleti ablakban az értékesítési rendelés oldalon. Értékesítési rendelések létrehozásakor, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, át kell esniük a rendelés befejezése folyamaton. Ez a folyamat megköveteli a kifizetés és a fizetés-ellenőrzési logika rögzítését. A fizetés kikényszerítése mellett a rendelés beküldése folyamat kiválthatja a [csalásellenőrzést](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts), amelyet a rendszerben konfigurálhat. A fizetési vagy csalásellenőrzéseken sikertelen megrendelések várakoztatásra kerülnek, és nem adhatók ki további feldolgozásra (például kitárolás vagy szállítás), a várakoztatást okozó probléma megoldásáig.
+
+Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van a hívásközponti csatornán, ha sorban szereplő cikkek vannak egy értékesítési rendelésben megadva, és a csatorna felhasználója megpróbál zárni, vagy az értékesítési rendelés képernyőt elhagyni anélkül, hogy először kiválasztja a **Befejezés** lehetőséget, a rendszer kikényszeríti a rendeléskiegészítést az értékesítésirendelés-összegzés lap megnyitásával és annak a megkövetelésével, hogy a felhasználó megfelelően küldje be az űrlapot. Ha a rendelés megfelelően nem küldhető a fizetéssel együtt, a felhasználó használhatja a [rendelés visszatartva](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) funkciót a rendelés várakoztatottra állításához. Ha a felhasználó megpróbálja érvényteleníteni a rendelést, megfelelően kell érvénytelenítenie vagy az érvénytelenítés, vagy a törlés funkcióval, attól függően, amit lehetővé teszi a felhasználó biztonsága.
+
+Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van a hívásközponti csatornán, a **Fizetési állapot** mezőt a rendszer nyomon követi a rendelésen. A rendszer kiszámítja a **Fizetési állapot** értékét, amikor benyújtják az értékesítési rendelést. A rendszer csak a jóváhagyott kifizetési állapotú rendeléseket engedi végighaladni a további rendelésfeldolgozási lépéseken, például a kitárolás és a szállítás lépésén. Ha a kifizetéseket elutasítja a rendszer, a **ne dolgozza fel** jelző engedélyezve lesz a részletes rendelésállapotnál, és ez várakozó állapotba helyezi a rendelést a fizetési probléma megoldásáig.
+
+Ezenkívül, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, amikor a felhasználó az értékesítési rendeléseket létrehozza és sortétel beviteli módban van, a **Forrás** mező rendelkezésre áll a fő értékesítési rendelés fejlécében. A **Forrás** mező szolgál egy [katalógus forráskód](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs) rögzítésére a közvetlen marketing eladási forgatókönyvek esetén. Ez a kód ezután különleges árak vagy promóciók hajtóereje lehet.
+
+Akkor is, ha a **Rendeléskiegészítés engedélyezése** beállítás ki van kapcsolva, a felhasználók továbbra is alkalmazhatnak egy forráskódot egy értékesítési rendelésre. Azonban ehhez meg kell nyitni az értékesítési rendelés fejlécének részleteit a **Forrás** mező eléréséhez. Ez azt jelenti, hogy néhány további kattintással szükség. Ugyanez vonatkozik az olyan funkciókra, mint a szállítás befejeződött és a sürgős rendelések. Ezek a funkciók a hívásközpontban létrehozott összes rendeléshez elérhetők. Ugyanakkor, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, a felhasználók megtekinthetik ezeknek a szolgáltatásoknak a konfigurációját az eladási fejlécben, amíg a sorbeviteli nézetben vannak. Nem kell megnyitniuk az értékesítési rendelés fejlécének részletes információit a megfelelő beállítások és mezők megkereséséhez.
+
+### <a name="enable-direct-selling"></a>Közvetlen értékesítés engedélyezése
+
+Ha a **Közvetlen értékesítés engedélyezése** beállítás engedélyezve van a hívásközponti csatornák esetében, a felhasználók kihasználhatják a Retail felül- és keresztértékesítési funkcióinak előnyeit. Ebben az esetben előugró ablakok jelennek meg a rendelésbevitel során, és egyéb termékeket javasolnak a hívásközpont felhasználója számára, amelyeket felajánlhat a vevőnek. A termékek, amelyeket a program felajánl, az értékesítésirendelés-sorban éppen megrendelt terméken alapulnak. Jelenleg a felül- és keresztértékesítési javaslatok a cikkek szintjén vannak beállítva, a termékek vagy katalógusok esetében. Ha a **Közvetlen értékesítés engedélyezése** beállítás ki van kapcsolva a hívásközponti csatornákra, előugró ablakok nem jelennek meg a rendelésbevitel során, még akkor sem, ha egy érvényes felül- és keresztértékesítés meg van adva egy rendelés alatt álló cikkre.
+
+Ha a **Közvetlen értékesítés engedélyezése** beállítás engedélyezve van, a parancsfájlok és képek szolgáltatások is be vannak kapcsolva az értékesítésirendelés-bevitel oldalon. Ebben az esetben a lap jobb oldalán információs panel érhető el rendelésbevitel során. Ez a panel parancsfájlokat jeleníthet meg, amelyek az általános rendelésbeviteli eljáráshoz, a katalógus alkalmazott forráskódjához vagy az éppen rendelt cikkekhez kapcsolódó parancsfájlokhoz kapcsolódnak. Ezenkívül a képek panelen is megjelenhet az éppen rendelt cikkekhez kapcsolódó termékkép, ha megadtak egy képet a termék beállításakor a cikkhez.
+
+### <a name="enable-order-price-control"></a>Rendelési árellenőrzés engedélyezése
+
+Ha a **Rendelési árellenőrzés engedélyezése** beállítás engedélyezve van, csak az engedéllyel rendelkező felhasználó módosíthatja a cikk eladási árát a rendelésbevitel során. A módosításoknak a meghatározott tűréshatáron belül kell lenniük. A felhasználóknak, akik nem rendelkeznek megfelelő jogosultságokkal, ehelyett be kell nyújtaniuk az árváltozás igénylését. A kérelem ezután fel lesz dolgozva a rendszer ellenőrzési és jóváhagyási munkafolyamataiban.
+
+## <a name="channel-users"></a>Csatorna felhasználói
+
+A hívásközponti csatornák definiálásakor a csatornafelhasználókat hozzá kell rendelnie a hívásközponthoz. Ellenkező esetben a hívásközpont nem használható a rendszerben. Amikor a felhasználó bejelentkeznek a Retail alkalmazásba, és értékesítési rendeléseket vagy visszárurendeléseket visznek be egy rendelésbevitelhez kapcsolódó lapon, a felhasználói azonosítójukat veti össze a program a hívásközponti csatornák konfigurációjával. Ha egy felhasználó egy adott hívásközponti csatornához van csatolva, a rendelések, amelyeket a felhasználó hoz létre, öröklik a csatorna alapértelmezett jellemzőit és értékeit.
+
+Alapértelmezés szerint a **Kiskereskedelem értékesítés** jelző az értékesítési rendelés fejlécében be van kapcsolva a hívásközpont felhasználói által létrehozott minden megrendelésre. A rendelések ezután élvezhetik a rendszer kiskereskedelem-specifikus ár- és promóció funkcióinak előnyeit.
+
+A hívásközponti csatornához nem kapcsolódó felhasználók a Microsoft Dynamics 365 Finance and Operations szokásos rendelésbeviteli jellemzőit használhatják. Az ilyen felhasználók által az értékesítési rendelés bevitele képernyőről bevitt rendelések nem lesznek rendszeresen Retail megrendelésként azonosítva. Emellett ezek a rendelések, amelyeket ezek a felhasználók visznek be, nem tartoznak a rendelés teljesítésére vonatkozó szabályok feldolgozása, a kiskereskedelmi árképzés logika vagy más rendelés-ellenőrzések hatálya alá, amelyeket a hívásközponti csatorna konfigurálásánál és a hívásközponti rendszerparaméterekben lehet meghatározni.
+
+A hívásközponti csatornák konfigurálása és a csatorna felhasználóinak megadása után, a kívánt rendszerviselkedés garantálásának elősegítésére, ellenőrizze, hogy az összes szükséges hívásközponti paraméterek meg van határozva itt: **Kiskereskedelem** \> **Csatorna beállítása** \> **Hívásközpont beállítása** \> **Hívásközponti paraméterek**. Győződjön meg arról, hogy kapcsolódó számsorozatok is meg vannak határozva.
 

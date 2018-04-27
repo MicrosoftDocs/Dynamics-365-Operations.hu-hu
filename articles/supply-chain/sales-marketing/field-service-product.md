@@ -1,0 +1,69 @@
+---
+title: "A Finance and Operations-termékek szinkronizálása a Field Service-termékekre"
+description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatot mutatja be, melyek a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti termékszinkronizálásra használhatók."
+author: ChristianRytt
+manager: AnnBe
+ms.date: 04/09/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: 
+audience: Application User, IT Pro
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: crytt
+ms.dyn365.ops.version: July 2017 update
+ms.search.validFrom: 2017-07-8
+ms.translationtype: HT
+ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
+ms.openlocfilehash: 699830ce6cd993f3dd3fd4ff744ce5a8b9645c32
+ms.contentlocale: hu-hu
+ms.lasthandoff: 04/11/2018
+
+---
+
+# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>A Finance and Operations-termékek szinkronizálása a Field Service-termékekre
+
+[!include[banner](../includes/banner.md)]
+
+Ez a témakör azokat a sablonokat és kapcsolódó feladatot mutatja be, melyek a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Field Service közötti termékszinkronizálásra használhatók.
+
+A használt **Field Service termékek (Fin and Ops – Field Service)** sablon A potenciális ügyfelek készpénzre váltása alkalmazásból eredő **Termékek (Fin and Ops – Sales) – Közvetlen** sablonon alapul. További tudnivalókért lásd: [Termékek (Fin and Ops – Sales) – Közvetlen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+
+Ez a témakör csak a **Field Service termékek (Fin and Ops – Field Service)** és a **Termékek (Fin and Ops – Sales) – Közvetlen** sablono közötti különbségeket mutatja be.
+
+## <a name="templates-and-tasks"></a>Sablonok és feladatok
+
+**A sablon neve az adatintegrációban:**
+
+- Field Service termékek (Fin and Ops – Field Service)
+
+**A feladat neve az adatintegrációs projektben:**
+
+- Termékek – Termékek
+
+A **Field Service termékek (Fin and Ops – Field Service)** sablon egy leképezést tartalmaz, amely nem található meg a **Termékek (Fin and Ops – Sales) – Közvetlen** sablonban. Ezt a leképezés biztosítja, hogy a szükséges Field Service-re jellemző mező, a **Szolgáltatás-terméktípus** megfelelően van beállítva.
+
+```
+FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
+```
+
+A következő értékleképezés van használatban.
+
+```
+inventory     :  690970000
+nonInventory  :  690970001 
+service       :  690970002 
+```
+
+A Finance and Operations alkalmazásban a **Field Service terméktípus** értéke az **Értékesíthető kiadott termékek** adatentitásban a következőképpen számítódik ki:
+
+- **Készlet:** Termék típusa = Termék és cikk modellcsoport, Raktározott termék = Igaz
+- **Készleten kívül:** Termék típusa = Termék és cikk modellcsoport, Raktározott termék = Hamis
+- **Szolgáltatás:** Terméktípus = Szolgáltatás
+

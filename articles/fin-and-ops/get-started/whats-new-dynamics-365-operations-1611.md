@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09addfd9e4a5c601970b5c8c24a3d39b041e07e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Mi új vagy mi változott a Dynamics 365 for Operations 1611. verziójában (2016. november)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti az új vagy módosított 1611 verziójú Dynamics 365 for Operations szolgáltatásokat.
 
@@ -113,6 +112,7 @@ Ez a témakör ismerteti az új vagy módosított 1611 verziójú Dynamics 365 f
 </table>
 
 ## <a name="expense-management"></a>Költséggazdálkodás
+
 | Mit lehet tenni                                                            | Miért fontos ez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kilépett alkalmazott hitelkártyás tranzakcióinak ismételt hozzárendelése.                     | Előfordul, hogy amikor egy alkalmazott munkaviszonya megszűnt, az Active Directory tartományi szolgáltatások fiókját le van tiltva, amikor kötelezően elszámolandó aktív hitelkártya-tranzakciók importálása történik. Korábban nem lehetett költségbeviteli delegáltat hozzárendelni vagy hitelkártya-tranzakciót csatolni költségjelentéshez. Használható a **Hitelkártyás tranzakciók** oldal az ismételt hozzárendeléséhez az alkalmazottnak minden hitelkártya-tranzakció esetében, ahol a társított alkalmazott kilépett. A hitelkártyás tranzakció ismételt hozzárendelése után a tranzakció kiválasztható egy költségjelentéshez, és a költségjelentések normál visszaigénylési folyamatával fizethető ki a visszatérítés. |
@@ -225,6 +225,7 @@ Ez a témakör ismerteti az új vagy módosított 1611 verziójú Dynamics 365 f
 </table>
 
 ## <a name="human-capital-management"></a>Emberierőforrás-menedzselés
+
 | Mit lehet tenni                                                                                | Miért fontos ez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Teljesítménynapló létrehozása.                                                                  | Az értékelés befejezése előtt gyakran gyűjtjük be az adatokat azokról a tevékenységekről vagy eseményekről, amelyek hozzájárultak a sikerünkhöz alkalmazottként az értékelési időszak során. Az ilyen tevékenységek és események dokumentálásához bejegyzést hozhatunk létre a teljesítménynaplóban. A tevékenységeket és eseményeket emellett hozzákapcsolhatjuk egy célhoz vagy teljesítményértékeléshez, hogy további információkat nyújthassunk az értékelés vezetőjének.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -579,6 +580,7 @@ A következő országok szintén igénylik a kiskereskedelmi honosítást. A kis
 </table>
 
 ## <a name="planning-and-scheduling"></a>Tervezés és ütemezés
+
 | Mit lehet tenni                                                                                                                                                                                                      | Miért fontos ez                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Alapértelmezett rendelésbeállítások az értékesítésekhez és beszerzésekhez, az alaptermék bármilyen aktív termékdimenziója alapján. Emiatt alapértelmezett rendelési beállításokat lehet megadni a raktározási egységhez (SKU) vagy egy részleges raktározási egységhez. | Alapértelmezett rendelésbeállítási szabályokat lehet meghatározni, amelyek termékdimenziókra vagy cikkdimenziók kombinációjára vonatkoznak. **Példa** Egy Polo póló nevű terméket értékesít. A termék két színben érhető el: kék és zöld. Emellett két méretben kapható: kicsi és közepes. A Szín és a Méret a Polo póló esetében aktív termékdimenzió. Zárolható minden zöld Polo póló beszerzése, függetlenül attól, mi a méretük. |
@@ -624,6 +626,7 @@ A következő országok szintén igénylik a kiskereskedelmi honosítást. A kis
 </table>
 
 ## <a name="project-management-and-accounting"></a>Projektvezetés és könyvelés
+
 | Mit lehet tenni                                                                                                           | Miért fontos ez                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kései kiválasztás használata számlajavaslatok kötegelt feladásakor.                                                            | A projektkönyvelők beállíthatnak egy kötegelt feladatot, amely automatikusan begyűjti a számlajavaslatokat feladásra, ha a javaslatok teljesítik a kötegelt feladatokhoz megadott feltételeket. Ez a funkció továbbfejleszti az automatikus számlafeladást, mert a kötegelt feldolgozást folyamatosan lehet futtatni, és automatikusan felveszi a javaslatokat a feladáshoz. |
