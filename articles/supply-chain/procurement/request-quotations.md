@@ -57,8 +57,8 @@ Ha e-mailben kap ajánlatokat, az **Ajánlatkérés** oldalon kezelheti őket.
 
 Ha egy szállító által küldött válasz esetében második ismétlésre is szüksége van, válassza a **Vissza** lehetőséget az **Ajánlatkérés** oldalon. A Vissza művelet új naplót és egy jelentést hoz létre, amelyet a rendszer a nyomtatási beállításoktól függően kinyomtat, archivál és elküld.
 
-[!NOTE]
-Az **Ajánlatkérés** oldal neve módosult. A Dynamics 365 for Finance and Operations rendszer korábbi kiadásaiban ezen oldal neve **Ajánlatkérésekre adott válasz** volt.
+> [!NOTE]
+> Az **Ajánlatkérés** oldal neve módosult. A Dynamics 365 for Finance and Operations rendszer korábbi kiadásaiban ezen oldal neve **Ajánlatkérésekre adott válasz** volt.
 
 Ha pontozási feltételeket adott hozzá az ajánlatkérési esethez, az ajánlatkérés egy pontozási panelt is tartalmaz, amelyen megadhatja a pontokat. Az összesített pontszámok megjelennek az ajánlatkérésen, valamint ha összehasonlítja a válaszokat a **Válaszok összehasonlítása** oldalon. A **Válaszok összehasonlítása** oldalon összehasonlíthatja a többi válaszadatot is, például a sorárakat, a szállítási dátumot és a teljes árat.
 
@@ -126,8 +126,8 @@ Ha az ajánlatban okkódot kíván használni az ajánlat elfogadásának vagy e
 
 A nyomtatott vagy tárolt ajánlatkérési dokumentumok megjelenését a Beszerzés és forrás menü **Képernyő-beállítás** oldalán állíthatja be.
 
-[!NOTE]
-A közszféra beállításainál a már elküldött ajánlatkérés módosításához a javítási folyamat használata szükséges. Az ajánlatkérés elküldésekor a mezők zárolva lesznek.
+> [!NOTE]
+> A közszféra beállításainál a már elküldött ajánlatkérés módosításához a javítási folyamat használata szükséges. Az ajánlatkérés elküldésekor a mezők zárolva lesznek.
 Ennek megfelelően az ajánlatkérés módosításához ki kell jelölnie a **Létrehozás** lehetőséget a módosítási folyamat megkezdéséhez a fentebb leírt módon. A zárolási viselkedést az **Ajánlatkérések zárolása kiküldés után** lehetőség irányítja a **Beszerzési és forrásparaméterek** lapon. A paraméter értéke alapértelmezetten **Igen**, és a közszféra konfigurációjánál ez egy olyan alapérték, amelyet nem lehet megváltoztatni. Ezért, bár a módosítási eljárást manuálisan is lehet kezelni egy nem állami szektorbeli konfigurációban, azt használni kell az állami szektorbeli konfigurációknál.
 
 Beszerzési rendelési típushoz tartozó ajánlatkérési eset létrehozásakor és egy készletcikk ajánlatkéréshez történő rendelésekor egy készlettranzakció is létrehozásra kerül **Árajánlat-bevételezés** bevételezési állapottal. Csak az ilyen típusú ajánlatkérési esetek sorainak állapota lesz figyelembe véve, ha az alapterv segítségével számolja a cikkeket. Ha azt szeretné, hogy az alapterv várható bevételezésként tartalmazza az ajánlatkérési eset sorait, ezt a viselkedést az alapterv beállításai között konfigurálnia kell.
