@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-application-inbox-records"></a>Pályázati postafiókrekordok jóváhagyása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan kell ellenőrizni az Alkalmazotti önkiszolgáló rendszer lapjain keresztül érkező pályázatokat. A pályázatok ellenőrzése mellett elfogadhatja a pályázatokat a kiválasztott fiókrekordokban. A pályázatok bejövő fiókrekordjai a céghez benyújtott alkalmazotti pályázatokat jelölik. A rekord elfogadása után pályázói rekord jön létre a pályázatot benyújtó személy számára. Ez az eljárás az USMF bemutatócéget használja.
 

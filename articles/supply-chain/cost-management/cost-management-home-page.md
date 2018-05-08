@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Költségkezelés kezdőlap
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A [költségkezeléssel (videó)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kezelheti a nyersanyagok, a félkésztermékek, késztermékek és a folyamatban lévő eszközök értékelését és könyvelését. Nem más, mint a [Készletkönyvelés](cost-object.md) és a [Gyártási könyvelés](bom-calculations.md) meghatározásának, kezelésének és jelentésének folyamata.
 

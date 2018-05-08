@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-boms-as-finished"></a>Anyagjegyzékek jelentése befejezettként
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk az anyagjegyzékek befejezettként való jelentéséről tartalmaz információkat.
 

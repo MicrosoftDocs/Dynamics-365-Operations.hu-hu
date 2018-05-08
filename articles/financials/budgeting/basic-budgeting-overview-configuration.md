@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-overview"></a>Költségvetés-készítés áttekintése 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 for Finance and Operations rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
 

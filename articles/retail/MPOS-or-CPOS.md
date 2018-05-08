@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>A Modern POS és a Cloud POS közötti választás
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör további háttérinformációkat, tippeket és útmutatást ad az alkalmazás telepítőinek azokkal a tényezőkkel kapcsolatban, amelyeket figyelembe kell venni a Microsoft Dynamics 365 for Retail üzembe helyezésekor. Az útmutató áttekintésével és követésével a telepítés részeként a bevezetők elkerülhetik azokat a problémákat, amelyek hatással lehetnek a felhasználói élményre vagy a teljesítményre.
 

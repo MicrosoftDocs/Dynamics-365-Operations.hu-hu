@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Képek beállítása és kezelése a Retail Modern POS számára
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a cikk ismerteti a Retail Modern POS-ben (MPOS) megjelenő különböző entitások számára a képek beállításának és kezelésének lépéseit.
 

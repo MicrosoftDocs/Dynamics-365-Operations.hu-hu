@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-semi-finished-product-february-2016-only"></a>Félkész termék létrehozása (csak 2016. február)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat egy félkész termék létrehozására szolgál. Ez az anyagjegyzék-számítási sorozat második feladata. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.
 

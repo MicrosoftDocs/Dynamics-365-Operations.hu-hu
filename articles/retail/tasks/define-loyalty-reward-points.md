@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-loyalty-reward-points"></a> Hűségpontok definiálása
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás hűségpontok definiálását mutatja be. Hűségprogram beállítása előtt szükséges a hűségpontok beállítása. Ez az eljárás az USRT bemutatócéget használja.
 

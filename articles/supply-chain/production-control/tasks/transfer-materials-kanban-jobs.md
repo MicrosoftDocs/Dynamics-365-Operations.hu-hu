@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-materials-with-kanban-jobs-february-2016-only"></a>Anyagok átvitele kanbanfeladatokkal (csak 2016. február)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás egy anyagszállításra használt visszavonási kanbanfeladattal foglalkozik. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a raktári dolgozó használja.
 

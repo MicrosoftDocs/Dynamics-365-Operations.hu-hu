@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-an-operations-resource"></a>Üzemi erőforrás létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Az üzemi erőforrás hajtja végre egy projekt vagy egy termelési folyamat tevékenységeit. Ez az eljárás bemutatja, hogyan határozzon meg egy üzemi erőforrást. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>A vevő az ár egy részét az engedmény dátuma előtt rendezte, azonban a végső fizetés az engedmény bevezetésének dátuma után történik.
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk fizetéskiegyenlítések számlákra és vevőkre gyakorolt hatását taglalja. Az eset nem a főkönyvre, hanem az analitikus naplóra gyakorolt hatásokra összpontosít.
 

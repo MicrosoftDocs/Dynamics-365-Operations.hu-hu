@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-schedule-for-a-site"></a>Egy helyhez tartozó ütemezés létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja az egy helyhez tartozó, még el nem indított termelési rendelések ütemezését.  Az USMF bemutatócég segítségével végzik el ezt az eljárást.
 

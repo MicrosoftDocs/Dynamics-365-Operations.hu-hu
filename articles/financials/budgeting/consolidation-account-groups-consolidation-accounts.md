@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konszolidációsszámla-csoportok és további konszolidációs számlák
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör konszolidációsszámla-csoportokról és további konszolidációs számlákról nyújt tájékoztatást, és elmagyarázza, hogyan történik ezek használata a Microsoft Dynamics 365 for Finance and Operations alkalmazásban.
 

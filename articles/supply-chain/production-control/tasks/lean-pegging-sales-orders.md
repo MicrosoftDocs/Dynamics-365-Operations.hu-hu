@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Lean igénykövetés az értékelési rendelésekből
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás arra irányul, hogy ellenőrizze az igénykövetési fát egy olyan értékesítési sorból, ahol a cikk létrehozása kanbanokkal történik. Az igénykövetési fa ellenőrzése után minden kanbanfeladat tervezetté válik. Ez olyan rendelési esetekben hasznos, ahol a rendelés végrehajtójának biztosítania kell a termelés azonnali elindítását. Ez az eljárás az USMF bemutatócéget használja. Az eljárás a lean vállalatnak dolgozó haladó rendelésvégrehajtók számára ajánlott.
 

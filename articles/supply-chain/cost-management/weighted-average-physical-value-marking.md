@@ -29,9 +29,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Súlyozott átlag tényleges értékkel és jelöléssel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 A súlyozott átlag olyan készletmodell, amely a súlyozott átlag elven alapul, ahol a készletből történő kiadások értékét a készletzárási időszakban a készletbe bevételezett cikkek átlagos értéke, valamint az előző időszakban meglévő tényleges készlet határozza meg.
 

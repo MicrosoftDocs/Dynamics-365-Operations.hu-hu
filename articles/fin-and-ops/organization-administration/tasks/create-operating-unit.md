@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-operating-unit"></a>Üzemi egység létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Egy üzemi egység olyan szervezet, amelynek segítségével meg lehet osztani a gazdasági források és működési folyamatok ellenőrzését egy üzletben. Egy üzemi egységben a személyek feladata a szűkös erőforrások maximális kihasználása, a folyamatok javítása és a teljesítményük alapján történő elszámoltatás. Az üzemi egységek típusai közé tartoznak a költséghelyek, az üzleti egységek, a szervezeti egységek és az érték-előállítási folyamatok. A következő eljárással üzemi egységet hozhat létre. Ez az eljárás az USMF bemutatócéget használja.
 

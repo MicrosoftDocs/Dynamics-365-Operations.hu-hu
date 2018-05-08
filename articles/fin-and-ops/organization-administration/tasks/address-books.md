@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>Címjegyzékek konfigurálása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezzel az eljárással, illetve A globális címjegyzék konfigurálásának tervezése során hozott döntésekkel, valamint a további címjegyzék témakörökkel a szervezet számára További címjegyzékeket állíthat be.
 

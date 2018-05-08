@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="manage-leave-of-absence"></a>Szabadság kezelése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti az alkalmazotti szabadságrekordok létrehozásán. Nyomon követheti többek között az egészségügyi, oktatási vagy szülői tevékenység miatt szabadságok idejét. Ez az eljárás az USMF bemutatócéget használja.
 

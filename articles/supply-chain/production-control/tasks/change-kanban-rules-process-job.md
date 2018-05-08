@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-kanban-rules-for-a-process-job"></a>Kanbanszabályok módosítása egy feldolgozási feladat számára
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás egy adott kanbanhoz használt kanbanszabály módosítását tekinti át. Ez akkor hasznos, ha terhelési erőforrást szintez, vagy lebontás esetén. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás a Tervező számára hasznos, aki a lean manufacturing vállalatnál dolgozik, és az érték-előállítási folyamatért felelős.
 

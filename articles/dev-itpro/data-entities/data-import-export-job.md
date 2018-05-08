@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="data-import-and-export-jobs"></a>Adatimportálási és -exportálási feladatok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Adatimportálási és -exportálási feladatok létrehozásához és kezeléséhez a Microsoft Dynamics 365 for Finance and Operations alkalmazásban használja az **Adatkezelés** munkaterületet. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
 

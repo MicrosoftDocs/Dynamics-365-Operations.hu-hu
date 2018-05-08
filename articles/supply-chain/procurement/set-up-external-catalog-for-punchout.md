@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Állítson be külső katalógust a PunchOut e-beszerzés számára
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A külső katalógus segítségével biztosítható, hogy a Dynamics 365 for Finance and Operations 2017. júliusi verziójában feldolgozott termék- és árinformációk pontosak és naprakészek legyenek. Az igénylés ezután jóváhagyható és beszerzési rendeléssé alakítható át, valamint leadhat egy rendelést a szállítónál.
 

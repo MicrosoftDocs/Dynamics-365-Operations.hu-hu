@@ -27,7 +27,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A részlegesen foglalt átmozgatási rendelések kötegelt kiadása funkció lehetővé teszi az átmozgatási rendelések részleges kiadását egy raktárba kötegelt feldolgozással.
 Mivel lehetőség van egy részleges mennyiség kiadására, egy rendelés kiadásához nem kell megvárni, hogy a teljes rendelési mennyiség elérhető legyen a raktárban.

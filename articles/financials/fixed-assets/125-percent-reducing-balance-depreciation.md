@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>125 százalékos degresszív értékcsökkenés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a 125 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 

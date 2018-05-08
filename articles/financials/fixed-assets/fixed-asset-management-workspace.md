@@ -27,7 +27,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-asset-management-workspace"></a>Tárgyi eszközök kezelési munkaterülete
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A **Tárgyi eszközök kezelése** munkaterület a rendszerben megadott tárgyi eszközökhöz kapcsolódó információkat jelenít meg. A munkaterület összesítés és analitika nézet tartalmaz. A **Saját munka** lap megjeleníti az összegző lapokat, a tárgyi eszköz részleteit, és a kapcsolódó információkat az aktuális vállalat tárgyi eszközeire nézve. Emellett közvetlenül a munkaterületen is hozzáadható az analitika a Power BI analitika szakaszához. Az **Analitika – összes vállalat** lap a Microsoft Power BI képességeit használja az összes vállalat tárgyi eszközeihez kapcsolódó vizualizációk megjelenítéséhez.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-legal-entity"></a>Jogi személy létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A jogi személy jogi hatóságnál történő regisztráción keresztül azonosított szervezetet jelent. A jogi személyek szerződéseket köthetnek, valamint a teljesítményükről tájékoztató beszámolókat kell készíteniük. Az alábbi eljárás bemutatja, hogy hogyan lehet jogi személyt létrehozni. Ez az eljárás az USMF bemutatócéget használja.
 

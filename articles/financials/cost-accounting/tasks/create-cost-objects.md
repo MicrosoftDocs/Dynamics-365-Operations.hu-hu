@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="create-cost-objects"></a>Költségobjektumok létrehozása 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet költségobjektumokat létrehozni a Dynamics 365 for Finance and Operations költséghely pénzügyi dimenziók importálásával a Költségkönyvelésbe az adatcsatlakozón keresztül. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás egy olyan költségkönyvelési funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
 

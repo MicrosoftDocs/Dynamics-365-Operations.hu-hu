@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-contracts"></a>Projektszerződések
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a különféle projektekhez és finanszírozási forrásokhoz készíthető projektszerződéseket mutatja be példákkal, továbbá ismerteti a szerződéskezelés és a projektmegrendelők felé történő számlázás módszereit a Microsoft Dynamics 365 for Finance and Operations rendszerben.
 

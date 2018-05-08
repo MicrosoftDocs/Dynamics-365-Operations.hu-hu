@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="mass-create-sales-quotations"></a>Értékesítési ajánlatok tömeges létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet hatékonyan árajánlatokat létrehozni termékek és szolgáltatásokat ajánlva, amelyek több vevőnek lesznek elküldve. Ez a tömeges árajánlatlétrehozás árajánlatsablonokon alapul. Ezt a folyamatot saját adatokkal, vagy az USMF bemutatócég adataival is futtathatja.
 

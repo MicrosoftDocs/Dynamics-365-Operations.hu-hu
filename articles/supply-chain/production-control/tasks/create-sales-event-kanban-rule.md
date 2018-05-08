@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Az értékesítési esemény kanbanszabályának létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás egy olyan kanbanszabály létrehozásához szükséges beállításokkal foglalkozik, amely az értékesítési rendelés létrehozásakor aktiválódik. Az esemény kanbanszabály eleget tesz azoknak a követelményeknek, amelyek az értékesítési rendelés soraiból származnak. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás a folyamatmérnök vagy az érték-előállítási vezető munkáját segíti, mert ők készítik elő az új vagy módosított termék termelését.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-workflow-history"></a>Munkafolyamat-előzmények megtekintése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A lépések használatával megtekintheti azoknak a dokumentumoknak az állapotát, amelyeket a munkafolyamat-rendszerbe küldtek feldolgozásra és jóváhagyásra. Ez az eljárás az USMF bemutatócéget használja.
 

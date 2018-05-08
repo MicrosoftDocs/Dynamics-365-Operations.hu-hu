@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit"></a>Akkreditívek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az akkreditívek általánosan használt banki dokumentumok a termékek nemzetközi beszerzésében és értékesítésében. 
 

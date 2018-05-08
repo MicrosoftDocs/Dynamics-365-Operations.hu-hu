@@ -28,7 +28,7 @@ ms.lasthandoff: 11/20/2017
 
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A témakör azt ismerteti, hogyan lehet személyre szabni a Microsoft Dynamics 365 Finance and Operations rendszert.
 

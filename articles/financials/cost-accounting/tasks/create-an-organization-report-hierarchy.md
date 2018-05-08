@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="create-an-organization-report-hierarchy"></a>Szervezeti jelentési hierarchia létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchiát hozhatja létre. Ezen felvétel célja a dimenzióhierarchia bemutatása, hogy folytatni tudja a munkát, amíg létrehozza a teljes szervezete jelentési struktúráját. Ez a felvétel az USP2 bemutató vállalati adatait használja.
 

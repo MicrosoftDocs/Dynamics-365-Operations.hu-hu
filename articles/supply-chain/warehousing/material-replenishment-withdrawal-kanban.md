@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="replenishment-with-withdrawal-kanbans"></a>Feltöltés visszavonási kanbanokkal
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a visszavonási kanban használatát írja le gyártási tevékenységek anyagfeltöltéséhez.
 

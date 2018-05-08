@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-estimation"></a>Termelési rendelés költségbecslése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk a termelési költségbecsléssel kapcsolatos információkról nyújt tájékoztatást. A termelési költségbecslések az előrevetített anyag- és kapacitásfelhasználás költségeivel kapcsolatos információkról nyújt információkat, amelyek a cikkek tervezett rendelésben megadott mennyiségeinek termelésekor merülnek fel. 
 

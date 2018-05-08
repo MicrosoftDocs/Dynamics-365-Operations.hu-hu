@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Alaptervezés kezdőlap
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Lényegét tekintve az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez. Az Alaptervezés értékeli a következőket: 
 

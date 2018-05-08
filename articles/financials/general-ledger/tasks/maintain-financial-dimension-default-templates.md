@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan állíthatók be a pénzügyi dimenzió alapértelmezett sablonjai. A sablonok segítségével gyorsan szétoszthatók összegek a forrásbizonylatok között.
 

@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO tényleges értékkel és jelöléssel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 A FIFO-elv (First in, First out) egy készletmodell, amelyben az elsőként bevételezett cikkek kerülnek először kiadásra. A készletből történő pénzügyi kiadások a készlettranzakciók pénzügyi dátuma alapján az első pénzügyi készletbevételezésekkel vannak kiegyenlítve. 
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 01/12/2018
 
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát.
 

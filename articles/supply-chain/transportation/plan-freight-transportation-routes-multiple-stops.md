@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Többmegállós szállítási útvonal tervezése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a Microsoft Dynamics 365 for Finance and Operations szállítási útvonalak tervezéséhez használt különböző elemeit ismerteti.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>Dimenzión alapuló alaptermék kibocsátása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet kiadni egy, a dimenzión alapuló konfigurációkhoz használandó alapterméket. Ez az eljárás az USMF bemutatócéget használja. Előfeltételként létre kell hoznia egy dimenzión alapuló konfigurációs technológiával készült alapterméket. Ez a második eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.
 

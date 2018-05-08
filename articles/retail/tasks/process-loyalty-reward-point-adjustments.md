@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a> Hűségpont-helyesbítések feldolgozása
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan tekintheti meg a hűségkártyával kapcsolatos adatokat és hogyan módosíthatja a hűségpontok számát. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. Ez a feladat a Kiskereskedelmi műveletek vezetője vagy a Vevőszolgálati vezető szerepkörnek szól.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A készpénzforgalom-előrejelzési eszközökkel elemezheti a közelgő pénzforgalmi és devizakövetelményeket, és így megbecsülheti a vállalat jövőbeli készpénzigényét. A készpénzforgalom előrejelzésének lekéréséhez a következő feladatokat kell végrehajtania:
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-a-formula"></a>Receptúra másolása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás olyan receptúra létrehozására koncentrál, amely ugyanazokat az összetevőket tartalmazza, mint a meglévő receptúra, apró eltérésekkel. A receptúrasorok létrehozásához a Másolás funkció segítségével másolhat egy meglévő receptúra, amely tartalmazza a legtöbb szükséges összetevőt. Ezután az új verzióban az egyes sorokban elvégezheti a szükséges módosításokat. A Másolás funkcióval nem szükséges több, szinte megegyező receptúrát elkészítenie. A bemutató adatsor, amelyet a vállalat használt ezen feladat készítéséhez, az USP2.
 

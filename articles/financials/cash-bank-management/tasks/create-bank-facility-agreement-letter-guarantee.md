@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Banki hitelmegállapodás létrehozása a garancialevélhez
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A feladat a garancialevél feldolgozásához banki hitelmegállapodást hoz létre. Ez a feladat az USMF bemutatócéget használja. 
 

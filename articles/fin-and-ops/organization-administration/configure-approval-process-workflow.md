@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Jóváhagyási folyamat konfigurálása munkafolyamatban
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A következő eljárás segítségével állítsa be a jóváhagyási folyamat tulajdonságait.
 

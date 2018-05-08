@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreement-groups"></a>Szolgáltatásiszerződés-csoportok 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A szolgáltatásiszerződés-csoportok jól hasznosíthatók a szolgáltatási szerződések rendezésére és szűrésére. A szolgáltatási szerződések csoportosíthatók többek között vállalatméret, földrajzi elhelyezkedés vagy iparág szerint. Lehetőség van arra is, hogy a szerződéscsoportokkal a vevőnek kínált szolgáltatás szintje szerint csoportosítsa a szolgáltatási szerződéseket.
 

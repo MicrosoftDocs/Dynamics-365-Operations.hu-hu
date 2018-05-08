@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="petty-cash-for-eastern-europe"></a>Kelet-európai házipénztár
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti a házipénztár funkciót, amellyel a felhasználók az Észtország, Litvánia, a Cseh Köztársaság, Magyarország, Lettország, Lengyelország és Oroszország készpénzműveleteit tükrözhetik a rendszerben.
 

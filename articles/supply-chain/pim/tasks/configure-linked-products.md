@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-linked-products"></a>Összekapcsolt termékek konfigurálása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás végigveszi a csatolt termékek konfigurálásának lépéseit. Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat, és azt feltételezi, hogy mindkét terméket már korábban létrehozta és kiadta.
 

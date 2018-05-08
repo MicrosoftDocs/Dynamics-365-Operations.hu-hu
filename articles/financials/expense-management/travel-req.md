@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="travel-requisitions"></a>Utazási igénylések
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az *utazási igénylés* forrásbizonylat, amely felsorolja az utazás céljából felmerülő költségeket. Az utazási igénylést be kell nyújtani véleményezésre, és ezután a kiadások engedélyezésére fel lehet használni.
 

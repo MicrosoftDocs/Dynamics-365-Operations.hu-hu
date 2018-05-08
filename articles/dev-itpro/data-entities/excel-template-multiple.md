@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="excel-templates-with-multiple-worksheets"></a>Több munkalapos Excel-sablonok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az adatkezelés a Microsoft Dynamics 365 for Finance and Operations megoldásban támogatja a Microsoft Excel-alapú sablonokat az adatentitások esetében. Ezek a sablonok egy vagy több munkalapot is tartalmazhatnak. A több munkalapot tartalmazó sablonok gyakran használatosak olyan esetekben, amikor célszerű egyetlen fájlban kezelni az adatokat, és több entitásba importálni őket. Jó példát jelentenek erre a telephelyek és a raktárak.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat a már meglévő tranzakciók alapján és ezután frissítse a cikkfedezetet a javaslatokkal. Ebben az esetben a biztonsági készlet naplóját használja. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez a feladat a termeléstervezőnek van fenntartva, hogy segítse a minimális fedezet fenntartását.
 

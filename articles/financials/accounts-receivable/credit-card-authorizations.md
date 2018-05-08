@@ -28,9 +28,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Hitelkártya-beállítás, engedélyezés és rögzítés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ez a cikk a Microsoft Dynamics 365 for Finance and Operations rendszer hitelkártya-engedélyezéséről nyújt tájékoztatást. A fizetési szolgáltatás beállításának módjáról, az értékesítési rendeléshez történő hitelkártya hozzáadásáról és az engedélyezés érvénytelenítéséről nyújt tájékoztatást.
 

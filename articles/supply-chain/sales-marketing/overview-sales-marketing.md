@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-and-marketing"></a>Értékesítés és marketing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az értékesítés és marketing segítségével beszerzése, tárolhatók és használhatók a különböző típusú adatokat az értékesítési folyamat. Ezt az adatot tartalmaz, az eredeti értékesítési kezdeményezés jövőbeli intézkedést és kiegészítő értékesítési.
 

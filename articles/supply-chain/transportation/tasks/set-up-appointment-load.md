@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-an-appointment-for-a-load"></a>Találkozó beállítása berakodáshoz
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan kell beállítani és megtervezni egy területi találkozót a rakomány számára. Ezt általában egy szállítási koordinátor végzi. Az USMF bemutatócég adataiban használhatja ezt az eljárást.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Értékcsökkenési szabály módosítása több tárgyi eszközre
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat frissíti a konkrét tárgyi eszközcsoport értékcsökkenési szabályát. Ez az útmutató-feladat az USMF bemutatócéget használja.
 

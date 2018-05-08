@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>A gyártásvezérlésben és a projekt vezetés könyvelésében alkalmazott költségkategóriák
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A termelési munkák bizonyos típusai vonatkozhatnak a projektek időbecslésére és jelentésekre. Ez a cikk tájékoztatást nyújt azokról a költségkategóriákról, amelyeket meg kell határozni a termelési munka ezen típusaihoz a termelés és a projekt céljai számára.
 

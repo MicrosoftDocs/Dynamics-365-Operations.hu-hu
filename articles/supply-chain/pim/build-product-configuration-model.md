@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="build-a-product-configuration-model"></a>Termékkonfigurációs modell építése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A speciális követelmények kielégítése érdekében a termék konfigurálásához szükséges egyre helyett a vállalkozások-, mind az egyéni üzleti kapcsolatok, a kivétel a szabály.
 

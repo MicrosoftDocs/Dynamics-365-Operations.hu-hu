@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="safety-stock-fulfillment-for-items"></a>Biztonsági készlet teljesítése cikkek számára
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A biztonsági készlet egy cikk készletbeli többletét jelenti annak érdekében, hogy csökkentse a cikk készletből való kifogyásának kockázatát. A biztonsági készlet az ütközőkészlet szerepét tölti be, ha vevői rendelés érkezik, és a szállító nem képes további cikkek küldésére a vevő kért szállítási dátumának megtartásával. Ha a biztonsági készletet egy vevői rendelés teljesítésére használja, az csökkenti a biztonsági készletet. Használhatja az alaptervezést a készlet biztonsági szinthez való automatikus visszaállításához.    
 

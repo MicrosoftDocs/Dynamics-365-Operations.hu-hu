@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="activate-a-production-flow-version"></a>Termelési folyamat verziójának aktiválása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Aktiválnia kell a verziót, mielőtt kanban feladatokat hozna létre és tevékenységeket foganatosítana a termelési folyamat verzióhoz. Az a legjobb megoldás, ha aktiválja a verziót a tényleges kezdő dátum és a lejárati idő előtt. A feladat végrehajtásához rendelkeznie kell a termelési folyamat verzióval, amely Draft státuszú, annak érdekében, hogy a verzió aktiválható legyen. 
 

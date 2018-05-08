@@ -28,7 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Fiók követelések és hitelek és gyűjtemények konfigurálása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Kinnlevőségek, valamint a Követelések és beszedések konfigurálása a vevőktől érkező kifizetések és számlák nyomon követése érdekében.
 

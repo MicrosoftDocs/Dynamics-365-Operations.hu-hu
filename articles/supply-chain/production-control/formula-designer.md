@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="formula-designer"></a>Képletszerkesztő
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör azt ismerteti, hogy a képletszerkesztő segítségével hogyan elemezhetők és tarthatók karban a receptúrák a fanézetben
 

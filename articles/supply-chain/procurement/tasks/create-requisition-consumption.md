@@ -24,7 +24,7 @@ ms.lasthandoff: 11/20/2017
 ---
 # <a name="create-a-requisition-for-consumption"></a>Felhasználási igénylés létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja az igénylések létrehozásának a folyamatát. Megmutatja, hogy milyen különböző módokon tudja keresni a termékeket a beszerzési katalógusban, illetve hogyan tud hozzáadni egy olyan terméket, amely nem szerepel a katalógusban. Az eljárás megkezdése előtt rendelkeznie kell egy beszerzési irányelvvel, amelyet az igénylés alapértelmezett típusaként kell beállítania. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti. Az eljárás csak olyan felhasználói profil által hajtható végre, amely dolgozóként van beállítva.  Ezt a feladatot általában egy alkalmazott végzi el. Az alkalmazott által alkalmazott biztonsági szerepkör teszi lehetővé a feladatok elvégzését, vagy ha USMF-et használ, jelentkezzen be ezen a néven: Alíz.
 

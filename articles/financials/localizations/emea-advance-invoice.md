@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advance-invoices-for-eastern-europe"></a>Előlegszámlák Kelet-Európa számára
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az előlegszámla egy vevő vagy szállító számára létrehozott dokumentum. Azt az összeget tartalmazza, amelyet előre meg kell fizetni egy értékesítési rendelésre. Ez a témakör a kelet-európai előlegszámlákkal kapcsolatban tartalmaz tájékoztatást.
 

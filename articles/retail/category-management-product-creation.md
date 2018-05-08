@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manage-retail-product-categories-and-products"></a>Retail-termékkategóriák és termékek kezelése
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 Ez a témakör a Retail-termékkategóriák és termékek kezelésének továbbfejlesztett módját mutatja be a Microsoft Dynamics 365 for Retail alkalmazásban. A fejlesztések segítségével a termékkihelyezési vezetők megtekinthetik a Retail termékek hierarchiája és a kiadott termékrészletek között megosztott terméktulajdonság-struktúráját.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>A főkönyv lezárása időszak végén
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A témakör a főkönyvi időszak zárásának végrehajtásakor általában elvégzett feladatokat ismerteti. 
 

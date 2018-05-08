@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>200 százalék degresszív értékcsökkenés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a 200 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 

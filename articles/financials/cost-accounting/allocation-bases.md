@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Felosztás alapjai 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A felosztási alap az az alap, amely szerint a Költségkönyvelés felosztja az általános költségeket. A felosztási alap olyan mennyiség lehet, mint például a felhasznált számítógépórák száma, a felhasznált kilowattórák (kWh) száma vagy a lefoglalt négyzetméterek száma. A felosztási bázisokat leginkább az általános költségek fedezésére használják a készlethez. Például egy informatikai részleg kiadja költségeit az egyes részlegek által használt számítógépek számának megfelelően.
 

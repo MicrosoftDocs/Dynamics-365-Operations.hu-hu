@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Költségvetés-tervezési sablonok Excelhez
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan hozhatók létre költségvetési tervekhez használt Microsoft Excel-sablonok.
 

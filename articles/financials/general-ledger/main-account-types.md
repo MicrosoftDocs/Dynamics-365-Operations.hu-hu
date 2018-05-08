@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="main-account-types"></a>Főszámlatípusok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A fő számlatípus meghatározza a fő számla használatának módját a számlatükörben.
 

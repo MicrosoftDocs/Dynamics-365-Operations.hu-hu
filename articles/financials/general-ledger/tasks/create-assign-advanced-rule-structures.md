@@ -24,7 +24,7 @@ ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Speciális szabálystruktúrák létrehozása és hozzárendelése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A feladat-útmutató bemutatja a speciális szabálystruktúra létrehozását és hozzárendelését egy számlastruktúrához. Az útmutató az USMF bemutatócéget használja.
 

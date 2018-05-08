@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-pos-permission-groups"></a> POS-engedélycsoportok létrehozása
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozhat létre új POS-engedélycsoportot. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. A feladat a Kiskereskedelmi üzemeltetési vezető szerepkör számára készült.
 

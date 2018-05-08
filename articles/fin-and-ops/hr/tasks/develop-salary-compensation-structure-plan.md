@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Munkabér-/kompenzációs struktúra és tervek kialakítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat-útmutató végigvezeti a folyamaton, amely létrehozza a Fix kompenzációs konstrukciót és az alkalmazhatósági szabályok által engedélyezi alkalmazottaknak konstrukcióba való bevitelét. E feladat létrehozása az USMF bemutatócég segítségével történt, a feladat a Kompenzációkért és juttatásokért felelős vezetők részére készült.
 

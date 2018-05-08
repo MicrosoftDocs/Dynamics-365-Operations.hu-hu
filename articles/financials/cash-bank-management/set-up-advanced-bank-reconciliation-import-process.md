@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Továbbfejlesztett banki egyeztetés importálásának beállítása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz. 
 

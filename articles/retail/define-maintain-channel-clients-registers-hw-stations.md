@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan csatlakoztasson perifériákat a kiskereskedelmi pénztárához.
 

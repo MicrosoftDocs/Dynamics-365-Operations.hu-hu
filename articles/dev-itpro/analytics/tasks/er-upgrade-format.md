@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>A formátum frissítése a formátum új alapverziójának elfogadásával az elektronikus jelentéskészítésben (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tarthatja karban az Elektronikus jelentés (ER) formátumkonfigurációját. Ez az eljárás bemutatja, hogy hogyan lehet létrehozni a formátum egyéni verzióját a konfigurációs szolgáltatóból (CP) a formátum alapján. Azt is bemutatja, hogyan lehet alkalmazni ezen verzió új, alap verzióját.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 03/09/2018
 ---
 # <a name="use-a-model-mapping-configuration-for-aggregate-calculations-at-the-database-leveler"></a>Egy modell-leképezési konfiguráció használata összesítő számítások létrehozásához az adatbázis szintjén (ER) 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A folyamat révén új, elektronikus jelentésen (ER) alapuló modell-leképezési konfigurációt tervezhet meg, és a beépített ER-funkciók segítségével hatékony összesített számításokat végezhet. Ebben a folyamatban egy konfigurációt hoz létre a Litware, Inc. példavállalatra vonatkozóan. 
 

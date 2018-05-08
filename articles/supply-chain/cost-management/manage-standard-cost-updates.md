@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>Az elszámolóár frissítéseinek kezelése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az elszámolóár adatainak frissítése két eltérő megközelítés használatával kezelhető - ezek az „egyverziós” megközelítés vagy a „kétverziós” megközelítés. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>Költségobjektum költségbejegyzéseinek megtekintése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet egy költségobjektum költségbejegyzéseit megtekinteni. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a költségellenőr használja.
 

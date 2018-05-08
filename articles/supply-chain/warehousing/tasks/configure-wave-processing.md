@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-wave-processing"></a>A hullámfeldolgozás konfigurálása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az útmutató leírja, hogy hogyan állíthatja be azokat a feltételeket, amelyek meghatározzák, hogy milyen munkát hozzon létre a rendszer a raktárra vonatkozóan, a hullám feldolgozásakor, és hogy a hullámokat manuálisan vagy automatikusan dolgozzák-e fel. A hullámsablonok és a lekérdezések beállításával határozza meg a feltételeket, amelyek megegyeznek az értékesítési rendelés, a termelési rendelés vagy a kanban rendelések kiadott soraival rendelkező hullámmal. A rendszer a hullám feldolgozását azokban raktárházakban végzi, amelyek a Raktárház kezelési modul funkcióját használják, és nem pedig Készlet kezelési modul funkcióját. Ezt a folyamatot lefuttathatja az USMF bemutatócégen.
 

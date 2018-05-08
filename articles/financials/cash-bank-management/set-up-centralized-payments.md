@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-centralized-payments"></a>Központosított kifizetések beállítása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A lépések követésével felkészülhet a kifizetéseknek más jogi személyek nevében egy jogi személyben történő feldolgozására a szervezetben. Mielőtt hozzálátna, a következő beállításoknak készen kell lenniük:
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-rules-for-optimization-advisor"></a>Optimalizálási tanácsadó szabályainak létrehozása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör elmagyarázza, hogyan hozhatók létre új szabályok az **Optimalizálási tanácsadóhoz**. Például létrehozhat egy új szabályt, amely azonosítja, melyik ajánlatkérési esetek címe üres. Címek az eseteken történő használata könnyen azonosíthatóvá és kereshetővé teszi őket. Bár nagyon egyszerű, az alábbi példa bemutatja, mit lehet elérni optimalizálási szabályokkal. 
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Egyetlen bizonylat több vevő- vagy szállítórekorddal
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör áttekinti, mi történik, ha több vevő- vagy szállítórekordot tartalmazó bizonylatot ad fel. Ez a funkció a Microsoft Dynamics 365 for Finance and Operations későbbi verzióiban meg fog szűnni. Emiatt – az elszámolásfeldolgozás könyvelési hatása miatt – nem ajánlott ezzel a módszerrel végrehajtani a feladást. 
 

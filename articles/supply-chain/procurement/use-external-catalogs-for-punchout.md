@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Külső katalógus használata engedélyezése a PunchOut e-beszerzés számára
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ha külső katalógusokat használ a PunchOut e-beszerzéssel, nem kell megőriznie a szállítók termékeivel kapcsolatos információkat a saját alapadataiban. Ehelyett a rendszer a szállító webhelyén levő bevásárlókocsit alakítja át az igénylési sorokká, amelyek a megfelelő termékinformációkkal rendelkeznek. 
 

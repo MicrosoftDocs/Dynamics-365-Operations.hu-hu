@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="manage-benefit-expiration-dates"></a>Juttatások lejárati dátumainak kezelése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan zárhat le vagy hosszabbíthat meg egy juttatást, és miként kezelheti a juttatásra jogosult dolgozók tagsági időszakát. Ez az eljárás az USMF bemutatócéget használja.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-fixed-asset-groups"></a>Tárgyieszköz-csoportok beállítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan tud új tárgyieszköz-csoportot hozni létre. Ez a Könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.
 

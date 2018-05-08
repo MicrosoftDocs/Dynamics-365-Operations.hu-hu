@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreements"></a>Szolgáltatási szerződések
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A szolgáltatási szerződések segítségével meghatározhatja, hogy milyen erőforrásokat használ egy átlagos szervizlátogatás során, és ezeket hogyan számlázza a vevőnek.
 

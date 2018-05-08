@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Szállító részére kiállított, jövőben esedékes csekk regisztrálása és feladása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A naplóbizonylat használatával a jövőben esedékes csekk adatainak nyilvántartásba vételét a csekk szállítónak történő kiállítását megelőzően is elvégezheti. A jövőben esedékes csekket feladhatja és pénzügyi tranzakciókat hozhat létre. Mielőtt regisztrálna és feladna egy szállítóhoz tartozó, a jövőben esedékes csekket, hajtsa végre a következő feladatot: 
 

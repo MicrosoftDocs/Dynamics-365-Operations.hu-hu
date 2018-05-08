@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a **Szállítói együttműködés** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
 

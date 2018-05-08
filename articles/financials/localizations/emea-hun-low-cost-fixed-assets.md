@@ -27,7 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="low-cost-fixed-assets"></a>Kis értékű tárgyi eszközök
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt.
 

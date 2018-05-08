@@ -29,7 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="shift-and-cash-drawer-management"></a>Műszak és pénztárgépfiók kezelés
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a cikk a kiskereskedelmi pénztár műszakok két típusa, az önálló és megosztott beállítását és használatát mutatja be. A megosztott műszakokat több felhasználó több helyen is használhatja viszont az önálló műszakokat egyszerre csak egy dolgozó használhatja.
 

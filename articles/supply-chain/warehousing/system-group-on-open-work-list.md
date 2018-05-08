@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="system-grouping-on-an-open-work-list"></a>Nyitott munkalista rendszercsoportosítása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Csoportosító rendszermező segítségével a mobileszköz menüpontjának szerkesztése nélkül szűrheti a nyitott munkalistát.
 A rendszercsoportosítás alkalmazási köre egyetlen munkafejlécmező munkalistájának szűrése. A rendszercsoportosítás nem használható online szinten lévő mezők szűrésére.

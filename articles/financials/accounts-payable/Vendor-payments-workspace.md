@@ -27,7 +27,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-payments-workspace"></a>Szállítói kifizetések munkaterület
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A **Szállítói kifizetések** munkaterület a szállítói kifizetések feldolgozásához kapcsolódó információkat jeleníti meg. A munkaterület egy **Saját munka** és egy **Elemzés** nézetet tartalmaz. A **Saját munka** nézet összesítő lapokat, szállítói tranzakciórácsokat és a kapcsolódó szállítói adatokat jeleníti meg. Az **Elemzés** lap a Microsoft power BI lehetőségeit kihasználva a szállítói kifizetésekkel kapcsolatos vizualizációkat jeleníti meg.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="replenishment"></a>Feltöltés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A témakör ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat. A témakör információi nem vonatkoznak a raktározási megoldásra, amely a Készletkezelés modulból érhető el.
 

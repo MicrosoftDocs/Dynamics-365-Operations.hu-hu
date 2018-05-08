@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Hozzáadás saját teljesítménynaplóhoz és pozitív visszajelzés elküldése másnak
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A teljesítménynapló a célok teljesítésének módjával, valamint adott időszak során nyújtott teljesítménnyel kapcsolatos információkat tartalmaz. A naplóból kollégák tevékenységéhez is küldhető dicséret. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
 

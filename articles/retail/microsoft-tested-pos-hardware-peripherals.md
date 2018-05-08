@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-hardware-peripherals"></a>POS-hardverperifériák
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A Retail Modern pénztár (POS) és a Felhőalapú POS a POS hardver perifériák széles palettáját tudja alkalmazni, számos felülettel és telepítési beállításokkal a kiskereskedő különböző üzleti eseteinek megvalósítása érdekében. 
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 
 # <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>A Microsoft Dynamics 365 for Finance and Operations bemutatása
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ismerje meg, hogyan alkalmazhatja vállalkozásában a Microsoft Dynamics 365 for Finance and Operations szolgáltatást, az alábbi erőforrások nagyszerű tartalmakat kínálnak végfelhasználók, fejlesztők és informatikai szakemberek számára. 
 

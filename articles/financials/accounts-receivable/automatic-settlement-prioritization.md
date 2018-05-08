@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>Automatikus kiegyenlítés és rangsorolás
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan kerülnek rendezésre a tranzakciók akkor, hogyha az Esedékes számlák paraméterei oldal Automatikus rendezés opcióját választja. Bemutatja továbbá hogyan használható az automatikus kiegyenlítés a fizetési prioritással együtt.
 

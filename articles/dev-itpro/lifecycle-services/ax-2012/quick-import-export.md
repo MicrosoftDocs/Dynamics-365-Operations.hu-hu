@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Futtassa a Test Data Transfer Tool (beta) for Dynamics AX (AX 2012) eszközt
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A Gyors importálás-exportálás célja lehetővé tenni a behozatalt és kivitelt kevesebb lépésben.
 

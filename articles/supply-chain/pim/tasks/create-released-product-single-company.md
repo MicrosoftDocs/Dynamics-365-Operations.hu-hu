@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Kiadott termék létrehozása egyetlen vállalat részére
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti egyetlen kiadott termék létrehozásán egy legális egységgel összefüggésben. A kiadott termék létrehozása után az azonnal csak ebben az egységben elérhető. Ezt a folyamatot lefuttathatja az USMF bemutatócégen. Ezt a feladatot általában egy terméktervező végzi el.
 

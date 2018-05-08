@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>A kötelezettségek számlaegyeztetése hitelesítésének beállítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a felvétel az USMF bemutatócéget használja. A kötelezettségeket kezelő vezető vagy a könyvelésért felelős vezető ezeket a lépéseket hajtja végre. Mielőtt elkezdené a beállítást, győződjön meg arról, hogy a Számlaegyeztetés konfigurációs kulcs be van állítva. Ha az Ön vállalata a költségek lehetőség segítségével követi nyomon az olyan költségeket, mint például a szállítás, akkor győződjön meg arról, hogy a Költség-konfigurációs kulcs ki van választva.  A kötelezettségek számlaegyeztetése a szállítói számla, a beszerzési rendelés és a termékbevételezés egyeztetési folyamatát jelenti. A fenti dokumentumok közötti különbségeket egyeztetési eltérésnek nevezzük. Az egyeztetési eltéréseket a rendszer összeveti a megadott tűréshatárokkal. Amennyiben az egyezési eltérés meghaladja a tűréshatár-százalékot vagy összeget, a Szállítói számla adatlapon, illetve a Számlaegyeztetés részletei adatlapon megjelenik az egyeztetési eltérés ikon.
 

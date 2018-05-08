@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-new-users"></a>Új felhasználók létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A felhasználók a szervezet olyan belső alkalmazottai vagy külső vevői és szállítói, akiknek hozzáféréssel kell rendelkezniük a rendszerhez a munkájuk elvégzéséhez. A rendszergazdák végrehajthatják ezt az eljárást, amivel felhasználókat adhatnak a rendszerhez. Ez az eljárás az USMF bemutatócéget használja. 
 

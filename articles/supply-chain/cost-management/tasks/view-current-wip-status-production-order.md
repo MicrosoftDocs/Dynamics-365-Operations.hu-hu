@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-current-wip-status-on-a-production-order"></a>Jelenlegi WIP állapot megtekintése egy termelési rendelésen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet egy termelési rendelés befejezetlen munkáinak kivonatát megtekinteni. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a költségellenőr használja.
 

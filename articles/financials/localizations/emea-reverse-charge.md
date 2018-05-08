@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 # <a name="reverse-charge-vat"></a>Fordított áfa
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Ez a témakör általánosan bemutatja azt, hogyan állítható be a fordított áfa számítása Szaúd-Arábiában és az európai országoknál.

@@ -26,9 +26,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="alerts-overview"></a>Figyelmeztetések áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Figyelmeztetések
 A figyelmeztetések a Microsoft Dynamics 365 for Finance and Operations kritikus eseményeire vonatkozó értesítési rendszert alkotnak. A figyelmeztetések használatával lehet információkat nyerni a munkanap során nyomon követni kívánt eseményekről. Egyszerűen létrehozhatja saját figyelmeztetésiszabály-rendszerét, hogy figyelmeztetést kapjon a következő eseményekkel kapcsolatban: lejárt szállítási határidők, törölt rendelések, változó árak és egyéb olyan események, amelyekre valamilyen válaszreakció szükséges.

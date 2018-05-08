@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-organization-hierarchy"></a>Szervezeti hierarchia létrehozása.
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A következő eljárás segítségével hozzon létre szervezeti hierarchiát. A szervezeti hierarchia segítségével több nézőpontból is megtekintheti vállalatát, és jelentést is készíthet róla. Például beállíthat egy hierarchiát adózási, jogi, illetve kötelezően előírt jelentésekhez. Utána beállíthat egy másik hierarchiát olyan pénzügyi információkat tartalmazó jelentéshez, mely jogilag nem kötelező, de a belső jelentésekhez használható. 
 

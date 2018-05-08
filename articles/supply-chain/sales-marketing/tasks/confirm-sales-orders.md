@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="confirm-sales-orders"></a>Értékesítési rendelések megerősítése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan kell az értékesítési rendeléseket megerősíteni. Megjelenik, hogyan lehet megerősíteni egyetlen rendelést, illetve egyszerre több rendelést. Ezeket a feladatokat jellemzően egy értékesítési rendelés feldolgozó végzi el. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. Mielőtt elkezdené, ellenőrizze, hogy van-e ugyanannak a vevőnek több nyitott értékesítési rendelése. Ha USMF-et használ, használhatja az US-027 vevőt.
 

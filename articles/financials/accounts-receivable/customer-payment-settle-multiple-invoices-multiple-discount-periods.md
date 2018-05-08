@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan lehetséges több számlát is kifizetni akkor, ha az összes számla jogosult készpénzfizetési engedményre. A cikkben bemutatott esetek rávilágítanak arra, hogy a készpénzfizetési engedmények, hogyan függnek a kifizetés idejétől.
 

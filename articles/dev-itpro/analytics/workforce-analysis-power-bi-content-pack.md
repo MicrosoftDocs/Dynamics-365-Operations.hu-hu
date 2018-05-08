@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="workforce-metrics-power-bi-content"></a>Munkaerő-mutatók Power BI-tartalom
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a **Munkaerő-mutatók** Microsoft Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 

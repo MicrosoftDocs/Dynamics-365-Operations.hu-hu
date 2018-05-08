@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Feladott áfatranzakciók megtekintése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Attól függően, hogy mit szeretne megtekinteni, megjeleníthet feladott áfatranzakciókat különböző oldalakról. Ez a feladat az USMF bemutatócéget használja.
 

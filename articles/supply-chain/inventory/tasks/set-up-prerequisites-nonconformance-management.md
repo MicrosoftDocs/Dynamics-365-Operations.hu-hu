@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-prerequisites-for-management"></a>Menedzsment feltételeinek beállítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Engedélyezze a szabálytalanság kezelési folyamatokat ezen eljárások segítségével A szabálytalanság ismerteti azt az elemet vagy eljárást, amely minőségi problémával rendelkezik, ahol a leíró jellegű információ a forrást és a probléma típusát tartalmazza. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást általában a minőségbiztosítási vezető végzi el.
 

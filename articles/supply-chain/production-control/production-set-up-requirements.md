@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-setup-requirements"></a>A termelésbeállítás követelményei
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk tájékoztatást ad a beállítási követelményekről a Gyártásvezérlés használatba vétele előtt. 
 

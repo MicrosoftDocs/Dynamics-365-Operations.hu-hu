@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-product-model-components"></a>Termékmodell-összetevők létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A megszorításon alapuló termékkonfigurációs modellek építőelemként használják az összetevőket a termékmodell szerkezetének kialakításához. Létre kell hozni az összetevőket, mielőtt a termékmodellt fel lehetne építeni. Ez az eljárás az USMF bemutatócéget használja.
 

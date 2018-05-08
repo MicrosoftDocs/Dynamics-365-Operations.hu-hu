@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="project-invoicing"></a>Projekt számlázása:
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
 

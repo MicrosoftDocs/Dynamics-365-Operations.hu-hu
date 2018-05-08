@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="create-an-engaging-onboarding-experience"></a>Hozzon létre egy vonzó bevezetési tapasztalatot
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ha hatékonyan valósítják meg, a bevezetés segít az új alkalmazottaknak a hatékonyabb munkavégzésben, miközben kialakul az azonosulás az új szerepkörükkel. A bevezetés segíthet az új alkalmazottaknak gyorsabban és pontosabban megérteni az új szerepkörüket, mint egyébként, és elkezdhetik kiépíteni azokat a kapcsolatokat, amelyek segítségével sikeresek lehetnek. A negatív forgatókönyv azt jelenti, hogy a hatástalan bevezetés esetén az alkalmazottak kételkedni kezdenek abban, hogy jó döntés volt-e csatlakozni a szervezethez. Egy 2014-ben a Gartner által végzett tanulmány szerint annak az 1005 válaszadónak, aki az első hat hónap mondott fel, közel az egyharmada azért döntött így, mert a vezetéstől kapott előírások nem voltak egyértelműek, a képzés nem volt hatékony, vagy mert nem tudtak hatékony kapcsolatokat létrehozni az új környezetben.
 

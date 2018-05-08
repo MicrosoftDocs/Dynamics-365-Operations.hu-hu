@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>Tárgyi eszközök értékcsökkenésére vonatkozó szabályok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az értékcsökkenési szabályok segítségével meghatározható, hogy mikor és hogyan kerüljön sor az értékcsökkenés számítására a tárgyi eszköz beszerzésének évében és abban az évben, amikor a tárgyi eszközt kivezetik.
 

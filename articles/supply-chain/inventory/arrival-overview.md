@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="arrival-overview"></a>Beérkezés áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a Beérkezés áttekintése funkcióival kapcsolatban tartalmaz tájékoztatást. A funkció része a Beérkezés áttekintése lap, és minden, várhatóan beérkező cikk áttekintését nyújtja.
 

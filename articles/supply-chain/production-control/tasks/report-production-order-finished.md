@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="report-a-production-order-as-finished"></a>Termelési jelentés készként jelenítése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet készre jelenteni egy termelési rendelést. Ez az eljárás az USMF bemutatócéget használja. Ez a hatodik eljárás abból a hétből, amely bemutatja a termelési rendelés életciklusát.
 

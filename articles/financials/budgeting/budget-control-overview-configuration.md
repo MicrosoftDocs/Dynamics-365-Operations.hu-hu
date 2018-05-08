@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-control-overview"></a>Költségvetés-ellenőrzés áttekintése 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy kezelni tudja a pénzügyi erőforrásokat.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing (áttekintés)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk a Microsoft Dynamics 365 for Finance and Operations lean manufacturing funkcióinak áttekintését és leírását nyújtja.
 

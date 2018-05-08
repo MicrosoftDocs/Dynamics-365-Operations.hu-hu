@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Anyagjegyzékek és receptúrák
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a termékek és termékváltozatok meghatározásának alapvető részét képező anyagjegyzékekkel (AJ) és receptúrákkal kapcsolatban tartalmaz tájékoztatást. Az anyagjegyzékek és receptúrák határozzák meg az adott termékre vonatkozóan a szükséges anyagokat vagy összetevőket. A receptúrák emellett egy adott termelési környezetben kapott társ- és melléktermékeket is meghatároznak. 
 

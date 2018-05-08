@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="employee-development-power-bi-content"></a>Alkalmazotti fejlesztés Power BI-tartalom
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti az **Alkalmazotti fejlesztés** Microsoft Power BI-tartalmat.
 

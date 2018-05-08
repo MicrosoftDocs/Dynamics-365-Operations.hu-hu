@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Termékekkel kapcsolatos GYIK
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan kell kezelni a termékek, termékdimenzió értékek és termékattribútumok fordításait. 
 

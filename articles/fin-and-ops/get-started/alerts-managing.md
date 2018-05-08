@@ -24,9 +24,9 @@ ms.lasthandoff: 03/23/2018
 ---
 
 # <a name="batch-processing-for-alerts"></a>Figyelmeztetések kötegelt feldolgozása
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 A figyelmeztetéseket a Microsoft Dynamics 365 for Finance and Operations kötegfeldolgozó funkciója dolgozza fel. A figyelmeztetések elküldéséhez előbb kötegfeldolgozást kell beállítani.
 

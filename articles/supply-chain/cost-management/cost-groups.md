@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-groups"></a>Költségcsoportok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A költségcsoportok adják a legyártott cikk kiszámolt költségében a költség-hozzájárulások szegmentálásának és elemzésének alapját, mint például az anyag, a munka és a többletköltség költség-hozzájárulását. A költségcsoport-szegmentálásnak számos szinonimája létezik a gyártási környezetekben, például költséglebontás, költségszétbontás vagy költségosztályozás. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>Rekordsablon használata egy új rekord létrehozásához
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet létrehozni egy új rekordot egy korábban definiált rekordsablon használatával. A művelet végrehajtásához előbb hajtsa végre az „Adatbevitel megkönnyítése érdekében rekordsablon létrehozása” eljárást.
 

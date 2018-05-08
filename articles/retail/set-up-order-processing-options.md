@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-a-call-center-channel"></a>Hívásközpont csatorna beállítása
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A vállalat több hívásközponti csatornát határozhat meg a Microsoft Dynamics 365 for Retail alkalmazásban. A hívásközponti csatornák konfigurálása a **Kiskereskedelmi** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont** elemnél történik, és az adott jogi személyre jellemzők.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-banner-or-logo"></a>A fejléc vagy embléma módosítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Az alábbi eljárás felsorolja a lépéseket, amelyeket a rendszergazdák használhatnak a megjelenített szalagcím vagy emblémakép frissítéséhez, ami a jogi személynél jelenik meg. Ez az eljárás az USMF bemutatócéget használja.
 

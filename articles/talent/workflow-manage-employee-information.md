@@ -27,7 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="use-workflows-to-manage-employee-information"></a>Alkalmazottadatok kezelése munkafolyamatok segítségével
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogy miként használhatja az Emberi erőforrások munkafolyamatait az alkalmazottak információinak kezelésére. Például egy munkafolyamatot társíthat egy pozícióhoz, és konfigurálhat egy jóváhagyási munkafolyamatot, amely akkor kezdődik, amikor az alkalmazottak módosítják a rekordjaikat.
 

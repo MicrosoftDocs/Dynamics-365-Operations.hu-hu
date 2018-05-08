@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Áfabevallás kódjainak beállítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A áfajelentési kódok az áfajelent mezőszámaira hivatkoznak. Ezek országspecifikus jelentési elrendezéseken és a kódonkénti áfakifizetési jelentésen használatosak az áfaösszegek nyomtatásához jelentési kód szerinti kiegyenlítési időszak összegzéséhez. A forgalmiadó-kódok létrehozása után hivatkozásként használhatja azokat az Áfakód oldal Jelentéskészítési gyorslapjain. 
 

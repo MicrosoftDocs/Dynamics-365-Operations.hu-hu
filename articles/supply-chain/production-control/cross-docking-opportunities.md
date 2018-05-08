@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Termelési rendelések áttárolása kiszállítási területekbe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan kell kezelni az anyag áttárolásának folyamatát, amelyet egy gyártósorról befejezettnek jelentenek egy kimenő szállítási dokk felé.
 

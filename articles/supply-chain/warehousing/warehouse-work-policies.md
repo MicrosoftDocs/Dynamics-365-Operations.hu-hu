@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-work-policies"></a>Raktári munkairányelvek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations alkalmazásban a raktári munkairányelvek szabályozzák, hogy a gyártási raktári folyamatai létrehoznak-e raktári munkát a munkarendelés-típus, a készlethely és a termék alapján.
 

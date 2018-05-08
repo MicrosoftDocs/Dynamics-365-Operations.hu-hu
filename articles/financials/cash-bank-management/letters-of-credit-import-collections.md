@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Akkreditívek és importbeszedvények
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk általános információt biztosít a hitellevéllel és az import-beszedésekkel kapcsolatban. A banki dokumentumok ezen két formáját gyakran alkalmazzák termékek nemzetközi beszerzésekor és értékesítésekor.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="create-a-production-order"></a>Termelési rendelés létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet termelési rendelést létrehozni. Ez az eljárás az USMF bemutatócéget használja. Ez az első eljárás abból a hétből, amely bemutatja a termelési rendelés életciklusát.
 

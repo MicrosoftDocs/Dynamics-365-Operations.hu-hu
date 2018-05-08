@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Illesztőprogram bejelentkezésének és kijelentkezésének regisztrálása egy találkozóhoz
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan kell regisztrálni egy járművezetői bejelentkezést és egy járművezetői kijelentkezést. Ezt általában egy szállítási koordinátor végzi. Az USMF bemutatócég adataiban használhatja ezt az eljárást. Mielőtt elkezdené, a rakományhoz be kell állítani egy találkozót. Találkozó létrehozásához előfeltételként lefuttathatja a „Találkozó létrehozása egy rakomány számára” eljárást.
 

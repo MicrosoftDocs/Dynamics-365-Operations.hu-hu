@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-planning-and-multisite-functionality"></a>Az alaptervezés és a többhelyes funkció
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az Alaptervezés figyelembe veszi a webhely beállításait és a raktár készletdimenziót. 
 

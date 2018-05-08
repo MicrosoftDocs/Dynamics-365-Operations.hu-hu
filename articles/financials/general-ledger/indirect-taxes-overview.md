@@ -28,9 +28,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="sales-tax-overview"></a>Áfa áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ez a témakör a forgalmiadó-rendszerről nyújt áttekintést. Bemutatja az áfa beállításának az elemeit, és azt, hogy ezek hogyan kapcsolódnak egymáshoz.
 

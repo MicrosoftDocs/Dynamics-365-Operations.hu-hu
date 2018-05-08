@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-delivery-schedule"></a>Szállítási ütemezés létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozhatja létre az értékesítési rendelések kiszállítási ütemezését. A szállítási ütemezés akkor használatos, ha egy rendeléshez tartozó mennyiséget több részletben kell szállítani, vagy ilyen árajánlat szükséges. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
 

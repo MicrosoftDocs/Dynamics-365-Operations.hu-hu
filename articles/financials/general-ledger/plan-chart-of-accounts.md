@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="plan-your-chart-of-accounts"></a>Számlatükör tervezése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A témakör olyan információkat tartalmaz, melyek segítik önt számlatükröt tervezni szervezete számára.
 

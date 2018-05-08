@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="compensation-plans"></a>Kompenzációs konstrukciók
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A kompenzációkért és juttatásokért felelős vezetők használhatják a Kompenzációkezelést a karbantartáshoz és a szervezet alkalmazottaira vonatkozó fix és változó kompenzáció feldolgozásához.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="assess-sales-performance-by-product"></a>Értékesítési teljesítmény felmérése termék szerint
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A legjobb 10 termék esetében tanulmányozhatja a nyereségességet a Microsoft Dynamics 365 for Retail használatával. 
 

@@ -28,9 +28,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-journals"></a>Készletnaplók
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ez a témakör leírja, hogyan kell alkalmazni a készletnaplót különböző típusú fizikai készlet tranzakciók közzétételéhez.
 

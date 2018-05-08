@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="release-production-orders"></a>Termelési rendelések kiadása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A kiadott termelési rendelés olyan rendelés, amely engedélyt kapott termelésre. A „Kiadva” kifejezés, egy a termelés rendelési ciklus állapotát leíró elnevezés. Jelentése, hogy a termelési rendelés készen áll a raktári folyamatokra és az értékesítésre. 
 

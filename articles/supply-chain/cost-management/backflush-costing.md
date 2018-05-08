@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>Visszavezetéses költségelszámolás
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja a lean manufacturing során használt visszavezetéses költségelszámolást. 
 

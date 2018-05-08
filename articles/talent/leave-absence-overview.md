@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="leave-and-absence-management-overview"></a>Szabadság- és távollét kezelésének áttekintése
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A **Szabadság- és távollét kezelése** modul rugalmas keretrendszert biztosít a távollétet kezelő folyamat meghatározásához. Szabadság- és távolléti tervek hozhatók létre annak meghatározásához, hogyan történik az alkalmazottak elhatárolása vagy szabadságolása. Amint regisztrálnak egy tervbe, az alkalmazottak távolléti kérelmeket nyújthatnak be a vezetőkhöz jóváhagyásra. A szabadság nyomon követése lehetővé teszi, hogy az első szintű vezető és az emberi erőforrás (HR) vezető egyaránt megtekinthessék, ki van szabadságon, és mennyi ideje van még hátra.  
 

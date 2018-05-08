@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Projektköltségvetés vagy költségvetés-verzió felosztása időszakok között
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  A projekt költségvetésének vagy a projekt költségvetés-verziójának megadása után, és jóváhagyásra való elküldése előtt, feloszthatja időszakok között az összegeket. Ha elutasítják a költségvetést vagy költségvetési-verziót, akkor az ismátelt benyújtás előtt is feloszthatja az összegeket. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enable-license-plate-label-printing"></a>Azonosítótábla-címke nyomtatásának engedélyezése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás lehetővé teszi a Konténer sorszáma (SSCC) címke automatikus nyomtatását, miután az utolsó cikk készletből való kitárolása is megtörtént az értékesítési kiválasztási munkafolyamat során. Ezt a folyamatot lefuttathatja az USMF bemutatócégen. Ha a saját adatok használatával futtatja le, akkor szüksége lesz egy az azonosítótáblákhoz beállított számsorozatra. A feladat megkezdése előtt be kell állítania egy címkenyomtatót. Lépjen a Szervezetadminisztráció > Beállítás > Hálózati nyomtatókra. A Műveleti ablakban kattintson az Opciókra, majd a Dokumentumirányítási ügynök telepítőjének letöltése gombra. Futtassa a telepítőt, és győződjön meg arról, hogy van-e működő hálózati nyomtató, amely aktív, mielőtt folytatná a műveletet.
 

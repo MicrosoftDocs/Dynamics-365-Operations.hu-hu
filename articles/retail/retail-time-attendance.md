@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="retail-time-and-attendance"></a>Kiskereskedelmi munkaidő és jelenlét
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a Microsoft Dynamics 365 for Retail programot. 
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="finance-and-operations-client-faq"></a>Finance and Operations alkalmazás kliens GYIK
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk válaszokat ad a Microsoft Dynamics 365 for Finance and Operations-klienssel kapcsolatos gyakori kérdésekre.
 

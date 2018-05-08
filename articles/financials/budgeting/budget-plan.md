@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning"></a>Költségvetés-tervezés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Az oktatóanyag a következő üzleti folyamatokra és feladatokra fektet hangsúlyt: – Szervezeti hierarchia alkotása a költségvetés tervezéshez és a felhasználói biztonság beállítása – Költségvetési tervváltozat, költségvetési terv oszlopok és Excel sablonok tervezése – Költségvetés-tervezési folyamat létrehozása és aktiválása – Költségvetési tervdokumentum létrehozása a főkönyv alapján – Költségvetési tervdokumentum adatok beállítása felosztások használatával – Költségvetési tervdokumentum adatainak szerkesztése Excelben 
 

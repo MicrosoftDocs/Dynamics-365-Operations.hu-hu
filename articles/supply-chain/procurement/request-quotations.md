@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Ajánlatkérések (RFQ-k)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör áttekintést nyújt az ajánlatkérésekről (RFQ-król). Egy szervezet akkor ad ki ajánlatkérést (RFQ-t), amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat. Az ajánlatkérésben arra kéri a szállítókat, hogy adják meg a meghatározott számú cikkekhez ajánlott áraikat és szállítási idejüket.
 Emellett kérheti a szállítóktól annak meghatározását, hogy vannak-e egyéb járulékos költségek, például szállítási költséget, illetve kínálnak-e nagyobb rendelések vagy a szállítói számla korai kifizetése esetén engedményeket.

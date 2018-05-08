@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="record-templates"></a>Rekordsablonok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk bevezetőként szolgál a rekordsablonok koncepciójába és bemutatja, hogyan alkalmazhatóak új, információ megosztására alkalmas rekordok létrehozására.
 

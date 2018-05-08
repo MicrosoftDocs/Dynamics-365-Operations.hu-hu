@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Beszerzési rendelés létrehozása értékesítési rendelésből
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozhat létre egy beszerzési rendelést egy értékesítési rendelés alapján. A termékmennyiségek a beszerzési rendelésen ezután az eredeti értékesítési rendelés az igényének a kielégítésére lesznek kijelölve. Az értékesítési rendelések ilyen módon történő teljesítése egy alternatívája egy átfogóbb és optimalizáltabb elosztási követelmény tervezési módnak. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja.
 

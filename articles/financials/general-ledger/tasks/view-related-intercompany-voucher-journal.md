@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Kapcsolódó vállalatközi bizonylat megtekintése egy naplóból
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A kapcsolódó bizonylat ablak vállalatközi tranzakció főkönyvi naplóból való feladásakor megjeleníti az ellenoldali vállalattól származó bizonylatot.
 

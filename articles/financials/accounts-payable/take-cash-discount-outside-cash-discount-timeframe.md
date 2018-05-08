@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Készpénzfizetési engedmény érvényesítése a készpénzfizetési engedményi időszakon kívül
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk két esetet tartalmaz, amelyek megmutatják, hogyan írható jóvá a készpénzfizetési engedmény, akkor is, ha a kifizetés a készpénzfizetési engedmény időszakán kívül történt.
 

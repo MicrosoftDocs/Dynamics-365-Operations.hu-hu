@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduce-balance-depreciation"></a>Degresszív értékcsökkenés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk az értékcsökkenés egyenleg csökkentő módszeréről nyújt tájékoztatást.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Termelési paraméterek a Gyártásvégrehajtásban
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a Gyártásvégrehajtás modul termelési paramétereinek beállításával kapcsolatos információkat tartalmazza.
 

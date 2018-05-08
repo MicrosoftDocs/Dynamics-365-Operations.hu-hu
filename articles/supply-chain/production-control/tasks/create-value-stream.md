@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>Érték-előállítási folyamat létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Az érték-előállítási folyamatok üzemi egységek, amelyek egy vagy több termelési folyamatot csoportosítanak. A termelési folyamat meghatározásához először meg kell határoznia egy érték-előállítási folyamatot.
 

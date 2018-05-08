@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="workflow-actions"></a>Munkafolyamat-műveletek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti a munkafolyamat elfogadási folyamatának egyes résztvevői által vállalható műveleteket.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components"></a>Konfigurációk függőségének meghatározása más összetevők közül 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A lépések végrehajtásához végre kell hajtania a feladat-úmutató lépéseit, az ER model-leképezési konfigurációk kezelését, és hozzáféréssel kell rendelkeznie a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáshoz.
 

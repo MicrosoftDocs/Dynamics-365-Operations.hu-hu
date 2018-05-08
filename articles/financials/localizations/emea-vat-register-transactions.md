@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="vat-register-transactions-for-eastern-europe"></a>Áfatételjegyzék-tranzakciók (Kelet-európa)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör az Észtország, Litvánia, Csehország, Magyarország, Lettország és Lengyelország esetén használt áfatételjegyzék-tranzakciókhoz tartalmaz információkat. 
 

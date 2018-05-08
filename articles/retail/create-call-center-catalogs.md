@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-call-center-catalog"></a>Új hívásközpont létrehozása
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a cikk egy áttekintést nyújt a telefonos ügyfélszolgálathoz tartozó katalógus létrehozásának folyamatáról. 
 

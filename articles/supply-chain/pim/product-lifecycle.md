@@ -29,7 +29,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Termékéletciklus állapota 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A termékéletciklus állapota egy kiadott termék vagy termékváltozat életciklus-állapotát dokumentálja. A termékéletciklus-állapotokat a felhasználó határozza meg, általában egy termékmenedzser vagy egy termékalapadat-menedzser. Adott üzleti folyamatokra, például a fő tervezésre, hatással lehet egy adott termékéletciklus-állapot.   
 

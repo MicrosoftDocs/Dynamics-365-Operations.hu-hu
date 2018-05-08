@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A vevőtől érkezett, jövőben esedékes csekkek részletes adatait rögzítheti. A jövőben esedékes csekket feladhatja és pénzügyi tranzakciókat hozhat létre.   A vevőtől érkezett, jövőben esedékes csekkek nyilvántartásba vétele és feladása előtt hajtsa végre a következő feladatokat: • a Készpénz- és bankkezelés lapon állítson be a jövőben esedékes csekket • Állítsa be a fizetési módot a jövőben esedékes csekkekhez Ezen eljárás szerepköre: Pénztáros. Ez az eljárás az USMF bemutatócéget használja.
 

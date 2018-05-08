@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Biztonság beállítása a Költségkönyvelési elemzés Power BI-tartalomhoz
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogy miként alkalmazhatja a hozzáférésszintű biztonságot a Költségkönyvelésnél a sorszintű biztonságnál, a Microsoft Power BI szolgáltatásban. Ez a funkció segít garantálni, hogy a felhasználók csak azokat a Power BI adatokat láthassák, amelyekhez hozzáférést kaptak.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="websearchax-retired"></a>WebSearchAX megszűnt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Meg kellett szüntetnünk a WebSearchAX oldalt. Javasoljuk, hogy a kedvenc keresőmotorja webhelykeresés funkciójával helyettesítse.  Példa: 
 

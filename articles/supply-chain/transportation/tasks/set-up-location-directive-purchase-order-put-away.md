@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Helyutasítás beállítása beszerzési rendelés eltárolásához
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan állíthat be egyszerű helyutasítást. A példa egy helyutasítást hoz létre ahhoz, hogy a beszerzési rendelés bevételezett cikkeinek helyét meg lehessen határozni. Ezt a feladatleírást lejátszhatja az USMF bemutatócégnél említett adatokkal. Előzetes feltételek: Intézkedési kódot kell létrehoznia. Ebben az eljárásban egy Relabel nevű intézkedési kódot alkalmazunk. Ha helyutasítást hoz létre a saját adataiban, a raktárhoz és a cikkekhez speciális raktárkezelési beállítást kell megadnia.  Ezt az eljárást a raktári vezető használja.
 

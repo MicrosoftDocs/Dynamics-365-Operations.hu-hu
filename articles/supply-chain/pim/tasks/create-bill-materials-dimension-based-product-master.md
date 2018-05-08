@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>A dimenzión alapuló alaptermékre vonatkozó anyagjegyzék létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ehhez az eljáráshoz el kellett végeznie az előző 4 útmutatót a nyolc rögzítés sorrendjében. Az első 4 rögzítés beállítja azt az adatot, ami szükséges az eljárás végrehajtásához. Ez az eljárás az USMF bemutatócéget használja. Ezt a feladatot általában a termék tervező kezeli.
 

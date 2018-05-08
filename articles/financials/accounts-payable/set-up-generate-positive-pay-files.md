@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Fizetési ellenőrző fájlok beállítása és létrehozása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti az ellenőrzött fizetések beállítását és az ellenőrzött fizetési fájlok létrehozását. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-and-edit-sales-quotations"></a>Értékesítési ajánlatok létrehozása és szerkesztése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési árajánlatokat. Ezt a folyamatot saját adatokkal, vagy az USMF bemutatócég adataival is futtathatja.
 

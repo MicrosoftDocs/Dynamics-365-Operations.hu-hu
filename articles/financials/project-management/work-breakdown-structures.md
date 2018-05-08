@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>Munkalebontási struktúrák
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A munkalebontási struktúra (WBS), a projektben elvégzendő munka leírása. Ez egy feladatokból álló hierarchia, amely a projektcsapat munka-összeállításra vonatkozó elképzeléseit tükrözi, és az egyes komponensek és feladatok méretét, költségét és időtartamát. A WBS-nek három fő célja van:
 

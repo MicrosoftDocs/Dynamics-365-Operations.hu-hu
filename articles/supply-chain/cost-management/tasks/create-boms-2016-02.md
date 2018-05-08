@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-boms-february-2016-only"></a>Anyagjegyzékek létrehozása (csak 2016. február)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat anyagjegyzék-struktúra létrehozására koncentrál egy késztermékhez és egy félkész termékhez. Ez az anyagjegyzék-számítási sorozat negyedik feladata. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként.
 

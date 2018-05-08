@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>Meglévő tevékenység hozzáadása termelési folyamat verziójához
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A termelési folyamatok új verzióinak létrehozásakor lehetőség van a régebbi verziókhoz létrehozott tevékenységek hozzáadására az új verzióhoz. Ez az eljárás azt mutatja be, hogyan lehet új verziót létrehozni egy meglévő termelési folyamathoz a tevékenységek másolása nélkül. A következő lépésben egy meglévő tevékenységet adunk az új verzióhoz. 
 

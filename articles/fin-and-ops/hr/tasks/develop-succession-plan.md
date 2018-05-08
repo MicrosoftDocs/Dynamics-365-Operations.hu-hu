@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-a-succession-plan"></a>Utódlási terv kialakítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy.  Szakértelem-feltérképezés segítségével elemezheti a meglévő alkalmazottait és a pályázókat, hogy ellenőrizze, egyeznek-e valamelyik értékelt alkalmazott szakértelemkészletével. Ez az eljárás az USMF bemutatócéget használja.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Vállalatközi projektszámlázás konfigurálása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan állíthatja be a projektek számlázását két vállalat között a szervezeten belül. Ez a feladat az USSI-adatkészletet használja.
 

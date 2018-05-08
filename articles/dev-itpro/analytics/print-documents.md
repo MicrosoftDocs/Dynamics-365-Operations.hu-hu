@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="printing-in-finance-and-operations-applications"></a>Nyomtatás a Finance and Operations-alkalmazásokban
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations alkalmazásban a dokumentumok nyomtathatók helyi nyomtató vagy a hálózathoz csatlakoztatott eszköz használatával. A cikk a dokumentumok nyomtatási módjainak áttekintését nyújtja.
 

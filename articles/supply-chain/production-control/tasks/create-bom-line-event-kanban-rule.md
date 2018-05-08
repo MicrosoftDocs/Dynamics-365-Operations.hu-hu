@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Az Anyagjegyzéksor esemény kanbanszabályának létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat az esemény kanbanszabály létrehozásának beállítására szolgál a termelési Anyagjegyzék sorok ellátásának a vegyes lean és a klasszikus éles környezetben történő biztosítása érdekében. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez az feladat a Folyamatmérnök vagy az Érték-előállítási vezető munkáját segíti, mert ők készítik elő az új vagy a módosított termék termelését.
 

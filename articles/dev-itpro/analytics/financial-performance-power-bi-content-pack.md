@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-performance-power-bi-content"></a>Pénzügyi teljesítmény Power BI-tartalom
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!Note]
 > A tartalomcsomag már elavult a [Power BI tartalmi csomagok közzététele a PowerBI.com webhelyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom) dokumentumban ismertetett módon.

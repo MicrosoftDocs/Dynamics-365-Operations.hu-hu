@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="customer-posting-profiles"></a>Vevői feladási profilok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A vevői feladási profilok a vevői tranzakciók főkönyvbe történő feladását szabályozzák.
 

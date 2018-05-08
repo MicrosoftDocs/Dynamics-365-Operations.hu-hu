@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="deposit-customer-payments"></a>Vevői kifizetések letétbe helyezése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Vevői kifizetések letétele. Ez a feladat az USMF bemutatócéget használja.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-rate-masters"></a>Díjtörzsek beállítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan állíthat be egy díjnyilvántartást. Általában a logisztikai vezető állítja be a díjnyilvántartást, a szállítmányozókkal aláírt szerződésektől függően. Ebben a példában egy légi fuvarozó számára állítunk be díjnyilvántartást. Ez az eljárás az USMF bemutatócéget használja.
 

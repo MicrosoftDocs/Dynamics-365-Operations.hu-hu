@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-account"></a>Szállítói számla létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozzon létre egy szállítói számlát, és adjon hozzá címet és kapcsolattartási adatokat. Az eljárás nem mutatja be, hogyan töltheti ki az összes mezőt a beszerzési és pénzügyi célokra. Az említett mezőkről további információkért olvassa el a mezőleírásokat. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is használhatja. Szállítói számlákat általában egy beszerzési vagy kinnlevőségi szakember hozza létre.
 

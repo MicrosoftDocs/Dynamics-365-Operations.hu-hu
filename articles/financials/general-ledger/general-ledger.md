@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="general-ledger"></a>Főkönyv 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Főkönyv segítségével meghatározhatja és kezelheti a jogi személy pénzügyi nyilvántartásait. A főkönyvben a tartozik és követel tételek jegyzéke. Ezek a bejegyzések sorolják be a felsorolt számláknak használata a számlatükörben. 
 

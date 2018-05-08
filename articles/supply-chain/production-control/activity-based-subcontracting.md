@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="activity-based-subcontracting"></a>Tevékenységi alapú alvállalkozásba adás
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör részletesen ismerteti, hogyan használhatók alvállalkozásba adott tevékenységek a termelési folyamatban a lean manufacturing érdekében.
 

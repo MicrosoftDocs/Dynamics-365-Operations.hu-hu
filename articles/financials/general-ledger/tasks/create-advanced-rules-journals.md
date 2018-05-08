@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-advanced-rules-for-journals"></a>Speciális szabályok létrehozása naplók részére
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja a naplók speciális szabályainak létrehozását. Ide tartozik a napló ellenőrzése és a felhasználók feladási korlátozásainak beállítása. Ez az eljárás az USMF bemutatócéget használja.
 

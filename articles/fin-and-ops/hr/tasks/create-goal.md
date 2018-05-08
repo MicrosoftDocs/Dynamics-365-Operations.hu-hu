@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-goal"></a>Cél létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Létrehozhat célokat, tevékenységeket adhat hozzá a célokhoz, nyomon követhet méréseket, és a célokat ellenőrzéshez kapcsolhatja. Az eljárás a USMF bemutatócég segítségével lett létrehozva. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="transportation-management-overview"></a>Szállítás kezelés áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations rendszer szállításkezelési funkcióját mutatja be.
 

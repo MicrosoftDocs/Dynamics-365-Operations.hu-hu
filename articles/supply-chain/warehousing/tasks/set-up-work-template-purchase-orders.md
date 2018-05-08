@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>A beszerzési rendelések munkasablonjának beállítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás egy olyan, egyszerű munkasablon beállítására összpontosít, amelyet a bevételezett cikkek betárolásakor alkalmaznak majd. A munkasablonok határozzák meg a raktári dolgozó számára mobilkészüléken biztosított utasításkészletet, amikor cikkeket helyez át a bevételezési területről. Használhatja ezt az eljárást a USMF bemutatócégnél említett adatokkal. Mielőtt belekezdene ebbe az útmutatóba, hozzon létre egy munkagyűjtő-azonosítót. Ebben a példában egy a Bejövőben meghívott munkagyűjtő-azonosítót használunk. Ezt az eljárást a raktári vezető használja.
 

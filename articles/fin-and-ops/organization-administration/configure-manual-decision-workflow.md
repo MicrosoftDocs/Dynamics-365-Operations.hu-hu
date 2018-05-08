@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Manuális döntés konfigurálása munkafolyamatban
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogy hogyan kell konfigurálni a manuális döntés tulajdonságait.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Költségváltozások szimulálása, a tervezett költségek költségszámítási verziójának alkalmazásával
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk azt mutatja be, hogy hogyan szimulálhatja a költségmódosítások hatásait egy termék kiszámított költségein egy külön költségszámítási verzió alkalmazásával a tervezett költségekre vonatkozóan.
 
