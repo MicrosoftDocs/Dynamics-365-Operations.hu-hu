@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 336356b5abe38b27fdfa5fe74d52a130e7b8d445
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5261589aaf7eded053bcc19bd1de101c86836b7d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="master-planning-home-page"></a><span data-ttu-id="74b2b-103">Alaptervezés kezdőlap</span><span class="sxs-lookup"><span data-stu-id="74b2b-103">Master planning home page</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="74b2b-104">Lényegét tekintve az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez.</span><span class="sxs-lookup"><span data-stu-id="74b2b-104">At its core, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals.</span></span> <span data-ttu-id="74b2b-105">Az Alaptervezés értékeli a következőket:</span><span class="sxs-lookup"><span data-stu-id="74b2b-105">Master planning assesses the following:</span></span> 
 

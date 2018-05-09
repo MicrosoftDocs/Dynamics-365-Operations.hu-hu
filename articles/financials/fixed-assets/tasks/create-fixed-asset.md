@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 977d175f89865682c4bdc1ae7e93581b5d6c67e9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1a1e2861e36420dd7a9806873d502fe10acdf164
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-fixed-asset"></a><span data-ttu-id="dc657-103">Tárgyi eszköz létrehozása</span><span class="sxs-lookup"><span data-stu-id="dc657-103">Create a fixed asset</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="dc657-104">Ez az útmutató-feladat az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="dc657-104">This task guide uses the USMF demo company.</span></span>  <span data-ttu-id="dc657-105">Új tárgyi eszközt hoz létre a Tárgyi eszköz lista oldalának segítségével.</span><span class="sxs-lookup"><span data-stu-id="dc657-105">It will create a new fixed asset using the Fixed asset list page.</span></span>
 

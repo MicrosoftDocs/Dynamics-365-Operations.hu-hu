@@ -18,16 +18,16 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9d889b7a64cff763c31b4375fd0e1553a4beeeb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: afdbef901c6deaad42ae89a597180d30bbc4fb28
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="performance-management-overview"></a><span data-ttu-id="bbca1-104">Teljesítménykezelés – áttekintés</span><span class="sxs-lookup"><span data-stu-id="bbca1-104">Performance management overview</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="bbca1-105">A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket.</span><span class="sxs-lookup"><span data-stu-id="bbca1-105">The performance management process lets employees document and discuss their performance with their manager.</span></span> <span data-ttu-id="bbca1-106">Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.</span><span class="sxs-lookup"><span data-stu-id="bbca1-106">In turn, managers can then provide feedback and guidance to the employees.</span></span>  
 

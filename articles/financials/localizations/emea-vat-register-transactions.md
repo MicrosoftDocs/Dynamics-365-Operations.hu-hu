@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 01906117acedfab6af5371ad0dda46f5b42f0f5f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c5f42302a294700f5acf50c7a8c0fe531937be5c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vat-register-transactions-for-eastern-europe"></a><span data-ttu-id="36372-103">Áfatételjegyzék-tranzakciók (Kelet-európa)</span><span class="sxs-lookup"><span data-stu-id="36372-103">VAT register transactions for Eastern Europe</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="36372-104">Ez a témakör az Észtország, Litvánia, Csehország, Magyarország, Lettország és Lengyelország esetén használt áfatételjegyzék-tranzakciókhoz tartalmaz információkat.</span><span class="sxs-lookup"><span data-stu-id="36372-104">This topic provides information about VAT register transactions for Estonia, Lithuania, Czech Republic, Hungary, Latvia, and Poland.</span></span> 
 

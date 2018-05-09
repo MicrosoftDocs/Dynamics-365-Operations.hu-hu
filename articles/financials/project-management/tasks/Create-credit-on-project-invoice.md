@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4d93e71408c516a31a978e698a3c6788f8e1ce47
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2e89010939f2dcaf33140d9de3bf8ec0cddfc16f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a><span data-ttu-id="060c6-103">Jóváírás létrehozása projektszámlán</span><span class="sxs-lookup"><span data-stu-id="060c6-103">Create a credit note on project invoices</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 1. <span data-ttu-id="060c6-104">Ugorjon a Projektvezetés és könyvelés > Projektek > Minden projekt pontra.</span><span class="sxs-lookup"><span data-stu-id="060c6-104">Go to Project management and accounting > Projects > All projects.</span></span> 
 2. <span data-ttu-id="060c6-105">Keresse meg és jelölje ki a kívánt rekordot a listán.</span><span class="sxs-lookup"><span data-stu-id="060c6-105">In the list, find and select the desired record.</span></span> 

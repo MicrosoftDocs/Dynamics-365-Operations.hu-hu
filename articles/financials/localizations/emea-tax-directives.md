@@ -16,16 +16,16 @@ ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 524bea27aef83b2ae4f721b438a3ccf18f7e6117
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 42861a66b44d6156341bf2d4d895a4bf35295ee6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="tax-directives-for-europe"></a><span data-ttu-id="2f504-104">Európai adóügyi irányelvek</span><span class="sxs-lookup"><span data-stu-id="2f504-104">Tax directives for Europe</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2f504-105">Az EU-irányelv valamennyi tagállam által követendő szabályozásokat tartalmaz a számlaszabályokkal, valamint a számlák létrehozásakor kötelezően feltüntetendő információkkal kapcsolatosan.</span><span class="sxs-lookup"><span data-stu-id="2f504-105">EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices.</span></span> <span data-ttu-id="2f504-106">Az EU-irányelv felsorolja a szállítóknak az EU-ban az ügyfelek számára feltüntetni szükséges információkat.</span><span class="sxs-lookup"><span data-stu-id="2f504-106">EU Directive lists the information that is required by suppliers for their customers in the EU.</span></span> <span data-ttu-id="2f504-107">Például a számla tartalmazhat egy hivatkozást, amely leírja a jogi alapját a nulla százalékos áfa alkalmazásának, vagy egy mentességnek.</span><span class="sxs-lookup"><span data-stu-id="2f504-107">For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption.</span></span> <span data-ttu-id="2f504-108">Ha a számla módosítja a korábban elküldött számlát, például egy jóváírást, akkor egyértelmű kell utalni az eredeti számlára.</span><span class="sxs-lookup"><span data-stu-id="2f504-108">If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.</span></span>
 

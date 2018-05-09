@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dfba6a237548d962bd3677d20da3745f59638ede
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7093023713a81980010b8254708801b58bc68475
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="depreciation-book-upgrade-overview"></a><span data-ttu-id="12721-105">Értékcsökkenési könyv frissítésének áttekintése</span><span class="sxs-lookup"><span data-stu-id="12721-105">Depreciation book upgrade overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="12721-106">A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek.</span><span class="sxs-lookup"><span data-stu-id="12721-106">In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</span></span> <span data-ttu-id="12721-107">A Microsoft Dynamics 365 for Operations 1611-es verziójában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv.</span><span class="sxs-lookup"><span data-stu-id="12721-107">In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</span></span> <span data-ttu-id="12721-108">Ez a témakör olyan szempontokat ismertet, amelyeket figyelembe kell venni a frissítéshez.</span><span class="sxs-lookup"><span data-stu-id="12721-108">This topic provides some things to consider for the upgrade.</span></span> 
 
@@ -62,24 +62,24 @@ ms.lasthandoff: 04/13/2018
 <span data-ttu-id="12721-145">A paraméterek a ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans osztály elején találhatók.</span><span class="sxs-lookup"><span data-stu-id="12721-145">The parameters are located at the beginning of the ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans class.</span></span> 
 
 <span data-ttu-id="12721-146">*// Adja meg a bizonylatok felosztásának előnyben részesített módszerét* 
-*// igaz, ha egy meglévő számsorozat kódját szeretné használni* 
-*// hamis, ha a rendszer által meghatározott számsorozatot (alapértelmezett) szeretné használni* const boolean NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="12721-146">*// Specify a preferable approach of vouchers allocation* 
-*// true, if you want to use an existing number sequence code* 
-*// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
+ *// igaz, ha egy meglévő számsorozat kódját szeretné használni* 
+ *// hamis, ha a rendszer által meghatározott számsorozatot (alapértelmezett) szeretné használni* const boolean NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="12721-146">*// Specify a preferable approach of vouchers allocation* 
+ *// true, if you want to use an existing number sequence code* 
+ *// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
 
 <span data-ttu-id="12721-147">*// Ha a rendszer által definiált számsorozatú megközelítést használja, adja meg a számsorozat paramétereit.*
-*// Új számsorozat jön létre ezekkel a paraméterekkel.*</span><span class="sxs-lookup"><span data-stu-id="12721-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
-*// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="12721-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="12721-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
+ *// Új számsorozat jön létre ezekkel a paraméterekkel.*</span><span class="sxs-lookup"><span data-stu-id="12721-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
+ *// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="12721-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="12721-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
 
 <span data-ttu-id="12721-149">*// Ha a meglévő számsorrenden alapuló megközelítést használja, adja meg a meglévő számsorozat kódját.* 
-*// Meglévő számsorozatok esetében a bizonylatok kiosztása soronként fut le.*</span><span class="sxs-lookup"><span data-stu-id="12721-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
-*// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="12721-150">const str NumberSequenceExistingCode = ''; *// Adja meg a meglévő számsorozat hatókörét* 
-*// igaz, ha a meghatározott számsorozat meg van osztva* 
-*// hamis, ha a megadott számsorozat egyes vállalatokra vonatkozik* 
-*// A rendszer által definiált számsorozat kerül használatra, ha nem található a megadott hatókörű számsorozatkód.*</span><span class="sxs-lookup"><span data-stu-id="12721-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
-*// true, if the specified number sequence is shared* 
-*// false, if the specified number sequence is per-company* 
-*// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="12721-151">állandó logikai NumberSequenceExistingIsShared = hamis;</span><span class="sxs-lookup"><span data-stu-id="12721-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
+ *// Meglévő számsorozatok esetében a bizonylatok kiosztása soronként fut le.*</span><span class="sxs-lookup"><span data-stu-id="12721-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
+ *// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="12721-150">const str NumberSequenceExistingCode = ''; *// Adja meg a meglévő számsorozat hatókörét* 
+ *// igaz, ha a meghatározott számsorozat meg van osztva* 
+ *// hamis, ha a megadott számsorozat egyes vállalatokra vonatkozik* 
+ *// A rendszer által definiált számsorozat kerül használatra, ha nem található a megadott hatókörű számsorozatkód.*</span><span class="sxs-lookup"><span data-stu-id="12721-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
+ *// true, if the specified number sequence is shared* 
+ *// false, if the specified number sequence is per-company* 
+ *// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="12721-151">állandó logikai NumberSequenceExistingIsShared = hamis;</span><span class="sxs-lookup"><span data-stu-id="12721-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
 
 <span data-ttu-id="12721-152">Ha a konstansok megváltoztak, újra kell építenie az osztályt tartalmazó projektet.</span><span class="sxs-lookup"><span data-stu-id="12721-152">Rebuild the project that contains the class after the constants have been modified.</span></span> 
 

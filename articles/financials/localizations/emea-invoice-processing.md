@@ -17,16 +17,16 @@ ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e05c73a434ed42eb91d0cf85bcc0bd5f03fd0bff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7486282d4fad1f9557d19f33b067242debc264f2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="invoice-processing"></a><span data-ttu-id="e9a7e-103">Számlák feldolgozása</span><span class="sxs-lookup"><span data-stu-id="e9a7e-103">Invoice processing</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e9a7e-104">Ez a témakör röviden leír néhány országspecifikus forgatókönyvet, például a közösségi általános forgalmi adó (áfa) és a halasztott áfa vonatkozásában.</span><span class="sxs-lookup"><span data-stu-id="e9a7e-104">This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax.</span></span> <span data-ttu-id="e9a7e-105">Egyes európai országok számára a jogi követelmények befolyásolják a számlázási folyamatot.</span><span class="sxs-lookup"><span data-stu-id="e9a7e-105">Legal requirements for some European countries affect the invoicing process.</span></span> <span data-ttu-id="e9a7e-106">Ez a témakör a vevői és szállítói számlák feldolgozásáról is információkkal szolgál az említett országokban.</span><span class="sxs-lookup"><span data-stu-id="e9a7e-106">This topic provides also an information about how customer and vendor invoices are processed for these countries.</span></span> 
 <table>

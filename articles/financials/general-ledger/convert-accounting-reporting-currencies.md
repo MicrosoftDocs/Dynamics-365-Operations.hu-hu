@@ -18,16 +18,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d57f3138f5a456c85550baf1eb18b4f99733a3d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f05020dfde0b985faf3a6b9dc72f94a6d87e7968
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="convert-accounting-or-reporting-currencies"></a><span data-ttu-id="71c96-103">Könyvelési vagy jelentési pénznem átváltása</span><span class="sxs-lookup"><span data-stu-id="71c96-103">Convert accounting or reporting currencies</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="71c96-104">Egy vállalat, amelynek módosítania kell a könyvelési pénznemét vagy a jelentési pénznemét, két lehetőség közül választhat.</span><span class="sxs-lookup"><span data-stu-id="71c96-104">A company that must change its accounting currency or reporting currency has two options.</span></span> <span data-ttu-id="71c96-105">Az első lehetőség új vállalat létrehozása, és új kezdés.</span><span class="sxs-lookup"><span data-stu-id="71c96-105">The first option is to create a new company and start fresh.</span></span> <span data-ttu-id="71c96-106">A rendelkezésre álló másik lehetőség a könyvelési, illetve a jelentési pénznem átváltási folyamatának futtatása.</span><span class="sxs-lookup"><span data-stu-id="71c96-106">The second option is to run the accounting and reporting currency conversion process.</span></span> <span data-ttu-id="71c96-107">Ez az egy rendkívül hosszú ideig futó folyamat, amely minden tranzakciót módosít a rendszerben.</span><span class="sxs-lookup"><span data-stu-id="71c96-107">This is a very long-running process that changes every transaction in the system.</span></span> <span data-ttu-id="71c96-108">A folyamat futtatása előtt némi beállítás is szükséges.</span><span class="sxs-lookup"><span data-stu-id="71c96-108">Some setup is also required before the process can be run.</span></span>
 

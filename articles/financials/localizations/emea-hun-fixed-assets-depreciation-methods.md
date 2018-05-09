@@ -19,16 +19,16 @@ ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fffdd3d15e980127264ba025d05ddee5bb4461cf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 74fc2acf050ca359c84f7939c917bbb4690af1cd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-assets-depreciation-methods-for-hungary"></a><span data-ttu-id="76764-103">Tárgyi eszközök értékcsökkenési módjai Magyarország esetében</span><span class="sxs-lookup"><span data-stu-id="76764-103">Fixed assets depreciation methods for Hungary</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="76764-104">Ez a témakör a magyarországi jogi személyek tárgyi eszközeinek értékcsökkenésével kapcsolatban tartalmaz tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="76764-104">This topic provides information about fixed asset depreciation for legal entities in Hungary.</span></span> <span data-ttu-id="76764-105">Magyarországon a következő négy országspecifikus értékcsökkenési mód létezik:</span><span class="sxs-lookup"><span data-stu-id="76764-105">In Hungary, there are four country-specific depreciation methods:</span></span>
 

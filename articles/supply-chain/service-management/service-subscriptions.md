@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dc3d7b17cf90c02f96e2d116177d66dc6e162da7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 55fd698586865eda5dfc937ef3c002adacc12347
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-subscriptions"></a><span data-ttu-id="68c53-104">Szolgáltatási előfizetések</span><span class="sxs-lookup"><span data-stu-id="68c53-104">Service subscriptions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="68c53-105">A feliratkozások idő-anyag szintű projekten alapulnak.</span><span class="sxs-lookup"><span data-stu-id="68c53-105">Subscriptions are based on a time-and-materials project.</span></span> <span data-ttu-id="68c53-106">Előfizetéseket hozhat létre egy projektből, a **Szolgáltatási előfizetések** lapról, illetve a szolgáltatási előfizetések csoportjának használatával.</span><span class="sxs-lookup"><span data-stu-id="68c53-106">You can create subscriptions from a project, from the **Service subscriptions** page, or by using a service subscription group.</span></span>
 

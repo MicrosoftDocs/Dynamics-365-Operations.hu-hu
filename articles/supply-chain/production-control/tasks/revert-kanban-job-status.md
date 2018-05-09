@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2bcc83c0a422ed1480f2ed41460fd710bc51ff3d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 037570ec496a59103f5f3c5c1fc4a47f536ed2b9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="revert-kanban-job-status"></a><span data-ttu-id="ff86f-103">Kanbanfeladat állapotának visszaállítása</span><span class="sxs-lookup"><span data-stu-id="ff86f-103">Revert kanban job status</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ff86f-104">Ez az eljárás egy helytelen kanbanfeladat-állapot visszaállítására irányul.</span><span class="sxs-lookup"><span data-stu-id="ff86f-104">This procedure focuses on reverting an incorrect kanban job status.</span></span> <span data-ttu-id="ff86f-105">Ez abban az esetben hasznos, ha egy hiba folytán a gépkezelő rossz feladatot frissít vagy rossz állapotot állít be.</span><span class="sxs-lookup"><span data-stu-id="ff86f-105">This is useful in case the machine operator updates the wrong job, or sets the wrong status by mistake.</span></span> <span data-ttu-id="ff86f-106">Ebben az eljárásban a kanbanfeladat egy hiba folytán előkészítettként lett rögzítve, ez az állapot kerül visszaállításra.</span><span class="sxs-lookup"><span data-stu-id="ff86f-106">In this procedure, a kanban job is registered as prepared by mistake, and the status is reverted.</span></span> <span data-ttu-id="ff86f-107">Ez az eljárás az USMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="ff86f-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ff86f-108">Ez az eljárás egy lean manufacturing vállalatban dolgozó művezető vagy gépkezelő számára javasolt.</span><span class="sxs-lookup"><span data-stu-id="ff86f-108">This procedure is intended for the shop supervisor or machine operator working in a lean manufacturing company.</span></span>
 

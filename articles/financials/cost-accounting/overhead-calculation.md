@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f56feac74dfe78b740342688a908d001614cffd0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2f37b5957974c927ade698fea65de7e3807d998a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="overhead-calculation"></a><span data-ttu-id="ee9f3-103">Járulékos költség számítása</span><span class="sxs-lookup"><span data-stu-id="ee9f3-103">Overhead calculation</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ee9f3-104">Ez a témakör a járulékos költségek kiszámításának és allokálásának jellemző folyamatait írja le.</span><span class="sxs-lookup"><span data-stu-id="ee9f3-104">This topic describes the typical processes for calculating and allocating overhead costs.</span></span>
 

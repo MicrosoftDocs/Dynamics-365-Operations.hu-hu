@@ -16,15 +16,15 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c97233261fd4d62640801f3e732d78fa6a276090
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 69d7d07d4d49b892fb4cd8a47cb6051c7bc390e7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="exchange-rate-calculation-hungary"></a><span data-ttu-id="ac521-103">Árfolyamszámítás (Magyarország)</span><span class="sxs-lookup"><span data-stu-id="ac521-103">Exchange rate calculation (Hungary)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ac521-104">Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán.</span><span class="sxs-lookup"><span data-stu-id="ac521-104">This task walks you through running an average exchange rate calculation.</span></span> 
 

@@ -16,15 +16,15 @@ ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3d888ed34e1a582f74f0174fad941c889edabd06
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a968bf4ec263f3b7c2b4e5b215fe782d4b54dd8e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a><span data-ttu-id="4cdb2-103">Tranzakciók átvitele az Intrastatba</span><span class="sxs-lookup"><span data-stu-id="4cdb2-103">Transfer transactions to the Intrastat</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4cdb2-104">Ez az eljárás bemutatja, hogy hogyan lehet beállítani az Intrastat paramétereit illetve, hogy hogyan viheti át a tranzakciókat az Intrastatba.</span><span class="sxs-lookup"><span data-stu-id="4cdb2-104">This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat.</span></span> <span data-ttu-id="4cdb2-105">Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.</span><span class="sxs-lookup"><span data-stu-id="4cdb2-105">This procedure was created using the demo data company DEMF.</span></span>
 

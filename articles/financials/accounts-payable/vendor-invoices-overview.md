@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 82370fffe9c296ef77f3b15929a9028bcac77677
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 78f276ca740e5fdbd9e7e706e3633ea7b6772cf7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-invoices-overview"></a><span data-ttu-id="21031-105">Szállítói számlák áttekintése</span><span class="sxs-lookup"><span data-stu-id="21031-105">Vendor invoices overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="21031-106">Ez a cikk a szállítói számlákkal kapcsolatos általános információkat tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="21031-106">This article provides general information about vendor invoices.</span></span> <span data-ttu-id="21031-107">A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei.</span><span class="sxs-lookup"><span data-stu-id="21031-107">Vendor invoices are requests for payment for products and services that were received.</span></span> <span data-ttu-id="21031-108">A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.</span><span class="sxs-lookup"><span data-stu-id="21031-108">Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.</span></span> 
 

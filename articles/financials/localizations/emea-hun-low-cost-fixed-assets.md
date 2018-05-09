@@ -18,16 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c27897b97789be30742f6f4383f77439066e9cfb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 85ca328013fdf276d770cdc12355eb37652d056d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="low-cost-fixed-assets"></a><span data-ttu-id="b6ac7-103">Kis értékű tárgyi eszközök</span><span class="sxs-lookup"><span data-stu-id="b6ac7-103">Low-cost fixed assets</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b6ac7-104">Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt.</span><span class="sxs-lookup"><span data-stu-id="b6ac7-104">This topic provides information about low-cost fixed assets for Hungary.</span></span>
 

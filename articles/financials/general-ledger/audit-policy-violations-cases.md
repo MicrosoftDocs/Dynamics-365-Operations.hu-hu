@@ -19,16 +19,16 @@ ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c44beba51538184c062b53d643bda98de3d752b4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1558b5db36e194a94a829c0a09cc8aa50fbc545b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="audit-policy-violations-and-cases"></a><span data-ttu-id="f873c-104">A könyvvizsgálati irányelvmegsértések és esetek</span><span class="sxs-lookup"><span data-stu-id="f873c-104">Audit policy violations and cases</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f873c-105">Ez a cikk bemutatja, hogyan jönnek létre a naplózási ügyek a naplózási irányelvszabályok megsértése által.</span><span class="sxs-lookup"><span data-stu-id="f873c-105">The article explains how audit cases are generated from violations of audit policy rules.</span></span> <span data-ttu-id="f873c-106">Információkat tartalmaz továbbá arról, hogyan alkalmazzák a naplózási irányelvek a dokumentumok határidő-intervallum szerinti kiválasztását.</span><span class="sxs-lookup"><span data-stu-id="f873c-106">It also includes information about the various ways that audit policies use the document selection date range.</span></span>
 

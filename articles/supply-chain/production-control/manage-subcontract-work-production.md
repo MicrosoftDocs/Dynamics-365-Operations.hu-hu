@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 67c0ebb47cc24b2d47add00eac07101abf596266
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9d665b7f6308618d34695626371dfc9dc1c6f2e7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="manage-subcontracting-work-in-production"></a><span data-ttu-id="4308d-104">Gyártás területén végzett alvállalkozói munka kezelése</span><span class="sxs-lookup"><span data-stu-id="4308d-104">Manage subcontracting work in production</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="4308d-105">Ez a témakör bemutatja, hogyan kezeli a Microsoft Dynamics 365 for Finance and Operations az alvállalkozói műveleteket.</span><span class="sxs-lookup"><span data-stu-id="4308d-105">This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="4308d-106">Más szóval bemutatja, hogyan kezeli azon gyártási műveleteket, amelyek szállító által kezelt erőforráshoz vannak kiosztva.</span><span class="sxs-lookup"><span data-stu-id="4308d-106">In other words, it explains how production operations that are allocated to a resource are managed by a vendor.</span></span>
 

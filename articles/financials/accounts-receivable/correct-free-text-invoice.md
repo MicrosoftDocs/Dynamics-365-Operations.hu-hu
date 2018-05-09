@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4dfa559ae5abeb8a02e5b0f1af35b04af769a0b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d1439a52c6096be93902f812aa912959347e8009
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="correct-a-free-text-invoice"></a><span data-ttu-id="9f5f9-103">Szabadszöveges számla helyesbítése</span><span class="sxs-lookup"><span data-stu-id="9f5f9-103">Correct a free text invoice</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9f5f9-104">Ez a cikk a már feladott szabadszöveges számlák kijavításának és azok javított számlaként való újbóli kiadásának módszereit mutatja be.</span><span class="sxs-lookup"><span data-stu-id="9f5f9-104">This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.</span></span>
 

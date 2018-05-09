@@ -18,16 +18,16 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 477201f262c7a92c2d2a44028447130dcdd7720e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="registration-ids"></a><span data-ttu-id="2ad2e-103">Nyilvántartási azonosítók</span><span class="sxs-lookup"><span data-stu-id="2ad2e-103">Registration IDs</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2ad2e-104">Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást.</span><span class="sxs-lookup"><span data-stu-id="2ad2e-104">This topic provides information about setting up and using registration IDs.</span></span>
 

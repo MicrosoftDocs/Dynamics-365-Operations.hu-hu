@@ -19,16 +19,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 86a4d52265a5c7f038ddc8c0201fa16b452d16cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: aa7d4595ac61d32ecfd8ba8727dccec2bc931827
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="organizations-and-organizational-hierarchies"></a><span data-ttu-id="5193a-104">Szervezetek és szervezeti hierarchiák</span><span class="sxs-lookup"><span data-stu-id="5193a-104">Organizations and organizational hierarchies</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5193a-105">Egy szervezet olyan emberek csoportja, akik valamely üzleti folyamat végrehajtása vagy egy cél elérése érdekében együtt dologoznak</span><span class="sxs-lookup"><span data-stu-id="5193a-105">An organization is a group of people who are working together to carry out a business process or achieve a goal.</span></span> <span data-ttu-id="5193a-106">Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatotat jelölik.</span><span class="sxs-lookup"><span data-stu-id="5193a-106">Organizational hierarchies represent the relationships between the organizations that make up your business.</span></span>
 

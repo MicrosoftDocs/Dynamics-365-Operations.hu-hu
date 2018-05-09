@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93e8f97dbd3f60be72793c04eb729623321016f8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fbec520054ab41e3b2d92e422d1b5f5276d44e2c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-alerts"></a><span data-ttu-id="5ec94-103">Figyelmeztetések létrehozása</span><span class="sxs-lookup"><span data-stu-id="5ec94-103">Create alerts</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a><span data-ttu-id="5ec94-104">Első lépések</span><span class="sxs-lookup"><span data-stu-id="5ec94-104">Getting started</span></span>
 <span data-ttu-id="5ec94-105">Mielőtt figyelmeztetési szabályokat állítana be, döntse el, mikor vagy milyen helyzetben szeretne figyelmeztetést kapni.</span><span class="sxs-lookup"><span data-stu-id="5ec94-105">Before you set up an alert rule, decide when or in what situations you want to receive alerts.</span></span> <span data-ttu-id="5ec94-106">Ha tudja, mely eseményről szeretne értesítést kapni, keresse meg azt az oldalt a Microsoft Dynamics 365 for Finance and Operations alkalmazásban, amelyen az eseményt előidéző adat megtalálható.</span><span class="sxs-lookup"><span data-stu-id="5ec94-106">When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations find the page where the data that causes that event appears.</span></span> <span data-ttu-id="5ec94-107">Az esemény lehet egy elérkező dátum vagy egy bizonyos módosítás.</span><span class="sxs-lookup"><span data-stu-id="5ec94-107">The event can be a date that arrives or a specific change that occurs.</span></span> <span data-ttu-id="5ec94-108">Ezért meg kell találni a lapot, ahol a dátum meg van adva, vagy ahol megjelenik a módosuló mező vagy a létrehozott új rekord.</span><span class="sxs-lookup"><span data-stu-id="5ec94-108">Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears.</span></span> <span data-ttu-id="5ec94-109">Amint birtokában van ennek az adatnak, létrehozhatja az értesítési szabályt.</span><span class="sxs-lookup"><span data-stu-id="5ec94-109">After you have this information, you can create the alert rule.</span></span>

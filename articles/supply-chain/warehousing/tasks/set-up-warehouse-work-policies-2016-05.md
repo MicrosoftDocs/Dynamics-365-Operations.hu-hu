@@ -17,15 +17,15 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe237543770fd05198b46cc7fc72b21926177807
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: af2e01ccf570bbc647784351752ecb5c7c7d7595
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-warehouse-work-policies"></a><span data-ttu-id="11567-103">Raktári munkairányelvek beállítása </span><span class="sxs-lookup"><span data-stu-id="11567-103">Set up warehouse work policies</span></span> 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="11567-104">A raktárkezelési folyamatok nem mindig tartalmazzák a raktári munkát.</span><span class="sxs-lookup"><span data-stu-id="11567-104">Warehouse processes don’t always include warehouse work.</span></span> <span data-ttu-id="11567-105">A munka irányelveinek használatával megakadályozhatja a nyersanyag kitárolására és a befejezett termékek betárolására vonatkozó munka létrehozását egy termékkészletre vonatkozóan az adott helyeken.</span><span class="sxs-lookup"><span data-stu-id="11567-105">By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations.</span></span> <span data-ttu-id="11567-106">A rendszer az USMF bemutatócéget használta a rögzítés létrehozására.</span><span class="sxs-lookup"><span data-stu-id="11567-106">The USMF demo data company was used to create this recording.</span></span> <span data-ttu-id="11567-107">Ez a feladat 7.0.1-es vagy újabb verziós Dynamics AX alkalmazást igényel.</span><span class="sxs-lookup"><span data-stu-id="11567-107">This task guide requires Dynamics AX application 7.0.1 or later.</span></span>
 

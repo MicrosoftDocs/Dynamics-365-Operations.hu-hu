@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1a32b49e7589113d518ef17a39eecc4c518b362d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d3de34eeef042cb3f283ee53579b199c6a4c9091
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="allocation-bases"></a><span data-ttu-id="a3f4d-104">Felosztás alapjai</span><span class="sxs-lookup"><span data-stu-id="a3f4d-104">Allocation bases</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a3f4d-105">A felosztási alap az az alap, amely szerint a Költségkönyvelés felosztja az általános költségeket.</span><span class="sxs-lookup"><span data-stu-id="a3f4d-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="a3f4d-106">A felosztási alap olyan mennyiség lehet, mint például a felhasznált számítógépórák száma, a felhasznált kilowattórák (kWh) száma vagy a lefoglalt négyzetméterek száma.</span><span class="sxs-lookup"><span data-stu-id="a3f4d-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="a3f4d-107">A felosztási bázisokat leginkább az általános költségek fedezésére használják a készlethez.</span><span class="sxs-lookup"><span data-stu-id="a3f4d-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="a3f4d-108">Például egy informatikai részleg kiadja költségeit az egyes részlegek által használt számítógépek számának megfelelően.</span><span class="sxs-lookup"><span data-stu-id="a3f4d-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 

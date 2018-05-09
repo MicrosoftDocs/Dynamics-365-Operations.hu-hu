@@ -16,15 +16,15 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 131635d8b4d1fed9c57d8d6bc06f3b4802ccc0ac
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3bb4d657feb2691adaf7621a325f6af75a84fe85
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="vat-reconciliation-report"></a><span data-ttu-id="4793f-103">Áfaegyeztetési jelentés</span><span class="sxs-lookup"><span data-stu-id="4793f-103">VAT reconciliation report</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4793f-104">Ez az eljárás bemutatja, hogyan készíthető el az izlandi és norvég jogalanyok számára rendelkezésre álló Adóegyeztetési jelentés.</span><span class="sxs-lookup"><span data-stu-id="4793f-104">This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities.</span></span> <span data-ttu-id="4793f-105">Ez a feladat a DEMF bemutatócég adatainak segítségével jött létre, a jogi személy székhelyének országát/régióját Norvégiára állítottuk.</span><span class="sxs-lookup"><span data-stu-id="4793f-105">This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.</span></span>
 

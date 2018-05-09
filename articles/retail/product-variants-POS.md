@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 933875f56b0f47990cb1cb767f84b23b9c9710d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ff11cf7b23c48675b108d7d03d241fcec2cb792a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a><span data-ttu-id="4cbff-103">Keresés a készletben a pénztárban</span><span class="sxs-lookup"><span data-stu-id="4cbff-103">Inventory lookup in the Point of Sale</span></span> 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="4cbff-104">A keresés a készletben a pénztárnál (POS) segítségével a kiskereskedők valós idejű üzemi kiválóságot érhetnek el, és információkat szerezhetnek az áruházak, a pénztár és a háttériroda összekapcsolásával.</span><span class="sxs-lookup"><span data-stu-id="4cbff-104">Inventory lookup in the point of sale (POS) helps retailers achieve real-time operational excellence and gain insights by connecting stores, the POS, and the back office.</span></span> <span data-ttu-id="4cbff-105">Ez a funkció lehetővé teszi az üzletek és elosztóközpontok termékkészletének pontos valós idejű megtekintését.</span><span class="sxs-lookup"><span data-stu-id="4cbff-105">This functionality provides an accurate real-time view of product inventory across stores and distribution centers.</span></span> <span data-ttu-id="4cbff-106">A hatékonyság és a költségmegtakarítás növelését teszi lehetővé a kiskereskedők számára a valós idejű készlettervezés továbbfejlesztésével.</span><span class="sxs-lookup"><span data-stu-id="4cbff-106">It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.</span></span>
 

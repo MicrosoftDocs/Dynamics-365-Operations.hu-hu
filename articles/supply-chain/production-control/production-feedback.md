@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6a4525734c468bf6eb8bc1da0c1b98f19e8d343c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 812bf62d3d2cd84b79e46b615ec6ed856feff13f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-feedback"></a><span data-ttu-id="d99e3-104">Termelési visszajelzés</span><span class="sxs-lookup"><span data-stu-id="d99e3-104">Production feedback</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d99e3-105">Ez a cikk információt biztosít a termékvisszajelzéssel kapcsolatban. A termékvisszajelzés termelési feladatokkal kapcsolatos visszajelzésekkel szolgál a munkások részére.</span><span class="sxs-lookup"><span data-stu-id="d99e3-105">This article provides information about production feedback, which gives workers feedback about production jobs.</span></span> <span data-ttu-id="d99e3-106">A cikk a termelési visszajelzés frissítésének számos módjáról szolgál információval.</span><span class="sxs-lookup"><span data-stu-id="d99e3-106">The article includes information about the various ways that production feedback can be updated.</span></span>
 

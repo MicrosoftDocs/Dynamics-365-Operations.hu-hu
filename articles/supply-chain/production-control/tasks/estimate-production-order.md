@@ -17,15 +17,15 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 454ecd9bfa19a2486610d9a412057f42ae2d68a2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 90d6dd1886deb9ec5700e1db9b5a3aaf7f83bdf8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="estimate-a-production-order"></a><span data-ttu-id="a2e24-103">Termelési rendelés becslése</span><span class="sxs-lookup"><span data-stu-id="a2e24-103">Estimate a production order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a2e24-104">Ezt a folyamatot az USMF bemutatócégen vagy saját adathalmaza használatával is elvégezheti.</span><span class="sxs-lookup"><span data-stu-id="a2e24-104">You can run this procedure by using the USMF demo data company or your own data set.</span></span> <span data-ttu-id="a2e24-105">Mindkét esetben meg kell lennie a nyitott termelési rendelésnek, Létrehozva állapottal.</span><span class="sxs-lookup"><span data-stu-id="a2e24-105">In both cases, you need to have an open production order that has the Created status.</span></span> <span data-ttu-id="a2e24-106">Ez a második eljárás abból a hétből, amely bemutatja a termelési rendelés életciklusát.</span><span class="sxs-lookup"><span data-stu-id="a2e24-106">This is the second procedure out of seven which explains the production order lifecycle.</span></span>
 

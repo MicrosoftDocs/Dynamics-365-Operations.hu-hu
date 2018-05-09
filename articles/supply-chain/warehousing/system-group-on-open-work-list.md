@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c9ff5df219c5e8b52e3d64d340fd55be7f51919a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="system-grouping-on-an-open-work-list"></a><span data-ttu-id="23a1a-103">Nyitott munkalista rendszercsoportosítása</span><span class="sxs-lookup"><span data-stu-id="23a1a-103">System grouping on an open work list</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="23a1a-104">Csoportosító rendszermező segítségével a mobileszköz menüpontjának szerkesztése nélkül szűrheti a nyitott munkalistát.</span><span class="sxs-lookup"><span data-stu-id="23a1a-104">By using a system grouping field, you can filter an open work list without having to edit the mobile device menu item.</span></span>
 <span data-ttu-id="23a1a-105">A rendszercsoportosítás alkalmazási köre egyetlen munkafejlécmező munkalistájának szűrése.</span><span class="sxs-lookup"><span data-stu-id="23a1a-105">Where it applies, system grouping works for filtering a work list on a single work header field.</span></span> <span data-ttu-id="23a1a-106">A rendszercsoportosítás nem használható online szinten lévő mezők szűrésére.</span><span class="sxs-lookup"><span data-stu-id="23a1a-106">You cannot use system grouping to filter on line level fields.</span></span>

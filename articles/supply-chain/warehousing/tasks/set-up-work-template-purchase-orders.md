@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8b5609c897466dbd0e504740cdc600fb2f800d37
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1bd59ffca94c57ad33f78f9e780d00b368750bc8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a><span data-ttu-id="bc7d7-103">A beszerzési rendelések munkasablonjának beállítása</span><span class="sxs-lookup"><span data-stu-id="bc7d7-103">Set up a work template for purchase orders</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="bc7d7-104">Ez az eljárás egy olyan, egyszerű munkasablon beállítására összpontosít, amelyet a bevételezett cikkek betárolásakor alkalmaznak majd.</span><span class="sxs-lookup"><span data-stu-id="bc7d7-104">This procedure focuses on the set up of a simple work template to be used when putting away received items.</span></span> <span data-ttu-id="bc7d7-105">A munkasablonok határozzák meg a raktári dolgozó számára mobilkészüléken biztosított utasításkészletet, amikor cikkeket helyez át a bevételezési területről.</span><span class="sxs-lookup"><span data-stu-id="bc7d7-105">Work templates determine the set of instructions presented to the warehouse worker on a mobile device when moving items from the receiving area.</span></span> <span data-ttu-id="bc7d7-106">Használhatja ezt az eljárást a USMF bemutatócégnél említett adatokkal.</span><span class="sxs-lookup"><span data-stu-id="bc7d7-106">You can use this procedure with the data mentioned in demo data company USMF.</span></span> <span data-ttu-id="bc7d7-107">Mielőtt belekezdene ebbe az útmutatóba, hozzon létre egy munkagyűjtő-azonosítót.</span><span class="sxs-lookup"><span data-stu-id="bc7d7-107">Before you start this guide, create a work pool ID.</span></span> <span data-ttu-id="bc7d7-108">Ebben a példában egy a Bejövőben meghívott munkagyűjtő-azonosítót használunk.</span><span class="sxs-lookup"><span data-stu-id="bc7d7-108">In this example, a work pool ID called in Inbound is used.</span></span> <span data-ttu-id="bc7d7-109">Ezt az eljárást a raktári vezető használja.</span><span class="sxs-lookup"><span data-stu-id="bc7d7-109">This procedure is intended for the warehouse manager.</span></span>
 

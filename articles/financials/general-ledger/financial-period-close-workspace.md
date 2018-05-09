@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2e6b36726b59190173b85ecb130fbecc8b214d63
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2708a67941bc194e239d5927b6df915f001ee663
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-period-close-workspace"></a><span data-ttu-id="2771c-103">Pénzügyi időszak lezárása munkaterület</span><span class="sxs-lookup"><span data-stu-id="2771c-103">Financial period close workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2771c-104">Ez a cikk betekintést nyújt a Pénzügyi időszak zárásának munkaterületébe és az ehhez társított beállításokba.</span><span class="sxs-lookup"><span data-stu-id="2771c-104">This article provides an overview of the Financial period close workspace and the associated configuration.</span></span>
 

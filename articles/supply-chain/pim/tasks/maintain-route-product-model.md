@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2173527d7f4ea8d92e9daf5d0dd1818b975fd1e3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 25d9530fc137b443b99a183b9d10886585c7b65f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="maintain-a-route-for-a-product-model"></a><span data-ttu-id="7ae3c-103">Termékmodell útvonalának karbantartása</span><span class="sxs-lookup"><span data-stu-id="7ae3c-103">Maintain a route for a product model</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7ae3c-104">Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre.</span><span class="sxs-lookup"><span data-stu-id="7ae3c-104">Running this procedure requires that a product configuration model exists.</span></span> <span data-ttu-id="7ae3c-105">Ez az eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használva vezeti Önt végig a folyamaton.</span><span class="sxs-lookup"><span data-stu-id="7ae3c-105">This procedure uses the High end speaker model in the demo company USMF to walk you through the process.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 826484bdd3e2960e5888617191a69f8da6ce8525
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 569989bd85c7768cef55c849199d5950f66d16b4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="advanced-bank-reconciliation-setup-process"></a><span data-ttu-id="6ebfc-104">Továbbfejlesztett banki egyeztetés beállításának folyamata</span><span class="sxs-lookup"><span data-stu-id="6ebfc-104">Advanced bank reconciliation setup process</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6ebfc-105">A Továbbfejlesztett banki egyeztetés lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations banki tranzakcióiba.</span><span class="sxs-lookup"><span data-stu-id="6ebfc-105">Advanced bank reconciliation allows you to import electronic bank statements and automatically reconcile with bank transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span>  <span data-ttu-id="6ebfc-106">Ez a cikk a beállítási folyamatokról nyújt tájékoztatást az egyeztetésre vonatkozóan.</span><span class="sxs-lookup"><span data-stu-id="6ebfc-106">This article will explain the set up processes for reconciliation.</span></span>  
 

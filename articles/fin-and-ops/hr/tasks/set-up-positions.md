@@ -16,15 +16,15 @@ ms.author: dkrame
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 110dde293fea31f82fb4b2b1c54bf96d5baa04b3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 28d907d10aa7b20a0a23efe0a224750390ed9e4c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-positions"></a><span data-ttu-id="1f5a6-103">Beosztások beállítása</span><span class="sxs-lookup"><span data-stu-id="1f5a6-103">Set up positions</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1f5a6-104">A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei.</span><span class="sxs-lookup"><span data-stu-id="1f5a6-104">Positions are an important element of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="1f5a6-105">Egy beosztás egy feladat egyedi példánya.</span><span class="sxs-lookup"><span data-stu-id="1f5a6-105">A position is an individual instance of a job.</span></span> <span data-ttu-id="1f5a6-106">Például az „Értékesítési igazgató (Kelet)” pozíció egyike azon beosztásoknak, amelyek hozzárendelhetők az „Értékesítési igazgató” munkához.</span><span class="sxs-lookup"><span data-stu-id="1f5a6-106">For example, the position, “Sales manager (East),” is one of the positions that is associated with the job, “Sales manager.”</span></span> <span data-ttu-id="1f5a6-107">Egy pozíció létezik a részlegen belül, és megtörténhet, hogy csak egy dolgozóval van társítva.</span><span class="sxs-lookup"><span data-stu-id="1f5a6-107">A position exists in a department and may have only one worker associated with it.</span></span> <span data-ttu-id="1f5a6-108">Ebben a feladatban a beosztás létrehozásához szükséges lépéseket mutatjuk be.</span><span class="sxs-lookup"><span data-stu-id="1f5a6-108">In this task we will walk through the steps required to create a position.</span></span> <span data-ttu-id="1f5a6-109">Ez az eljárás az emberi erőforrások szakértői számára alkalmas.</span><span class="sxs-lookup"><span data-stu-id="1f5a6-109">This procedure is intended for Human Resources Specialists.</span></span>
 

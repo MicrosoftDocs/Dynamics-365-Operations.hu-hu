@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d21a4aa035b55385c8b0ced3bfe91c7aaf064267
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ec4d3b1503d8159847bcf8083b5b663499df9798
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a><span data-ttu-id="3cb3f-103">Illesztőprogram bejelentkezésének és kijelentkezésének regisztrálása egy találkozóhoz</span><span class="sxs-lookup"><span data-stu-id="3cb3f-103">Register driver check-in and check-out for an appointment</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3cb3f-104">Ez az eljárás bemutatja, hogyan kell regisztrálni egy járművezetői bejelentkezést és egy járművezetői kijelentkezést. Ezt általában egy szállítási koordinátor végzi.</span><span class="sxs-lookup"><span data-stu-id="3cb3f-104">This procedure shows how to register a driver check-in and a driver check-out. This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="3cb3f-105">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="3cb3f-105">You can use this procedure in the USMF demo data company.</span></span> <span data-ttu-id="3cb3f-106">Mielőtt elkezdené, a rakományhoz be kell állítani egy találkozót.</span><span class="sxs-lookup"><span data-stu-id="3cb3f-106">Before you start, there must be an appointment set up for a load.</span></span> <span data-ttu-id="3cb3f-107">Találkozó létrehozásához előfeltételként lefuttathatja a „Találkozó létrehozása egy rakomány számára” eljárást.</span><span class="sxs-lookup"><span data-stu-id="3cb3f-107">To create an appointment, you can run the “Set up an appointment for a load” procedure as a prerequisite.</span></span>
 

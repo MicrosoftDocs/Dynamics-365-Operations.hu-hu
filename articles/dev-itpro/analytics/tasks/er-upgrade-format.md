@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a2c593b53b9cac9024f565458c6b7d0e19ecdde5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0c58a8ae1380433eff4d7dea92ab6f0a7f9578df
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a><span data-ttu-id="c241e-103">A formátum frissítése a formátum új alapverziójának elfogadásával az elektronikus jelentéskészítésben (ER)</span><span class="sxs-lookup"><span data-stu-id="c241e-103">Upgrade your format by adopting of new base version of that format for electronic reporting (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c241e-104">A következő lépések bemutatják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként tarthatja karban az Elektronikus jelentés (ER) formátumkonfigurációját.</span><span class="sxs-lookup"><span data-stu-id="c241e-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</span></span> <span data-ttu-id="c241e-105">Ez az eljárás bemutatja, hogy hogyan lehet létrehozni a formátum egyéni verzióját a konfigurációs szolgáltatóból (CP) a formátum alapján.</span><span class="sxs-lookup"><span data-stu-id="c241e-105">This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</span></span> <span data-ttu-id="c241e-106">Azt is bemutatja, hogyan lehet alkalmazni ezen verzió új, alap verzióját.</span><span class="sxs-lookup"><span data-stu-id="c241e-106">It also explains how to adopt a new, base version of that format.</span></span>
 

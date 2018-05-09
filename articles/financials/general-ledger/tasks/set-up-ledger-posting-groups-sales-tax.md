@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e326acd4a7f681b02ee4846d36e94559ce6dbdfa
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b2587af5e004bb6ccebe01487a7b3b92ee965f38
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a><span data-ttu-id="d4326-103">Főkönyvi feladási csoportok beállítása az áfához</span><span class="sxs-lookup"><span data-stu-id="d4326-103">Set up ledger posting groups for sales tax</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d4326-104">Az áfa számítása és postázása a Főkönyvi feladási csoportok lehetőségben megadott fő számlákra történik.</span><span class="sxs-lookup"><span data-stu-id="d4326-104">Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups.</span></span> <span data-ttu-id="d4326-105">Az egyes áfakódokhoz Főkönyvi postázási csoportok vannak csatolva.</span><span class="sxs-lookup"><span data-stu-id="d4326-105">Ledger posting groups are attached to each sales tax code.</span></span> <span data-ttu-id="d4326-106">Beállíthat külön főkönyvi feladási csoportot mindegyik áfakódhoz, vagy használhat egyetlen főkönyvi feladási csoportot minden áfakódhoz, továbbá több főkönyvi feladási csoportot is hozzárendelhet az áfakódokhoz.</span><span class="sxs-lookup"><span data-stu-id="d4326-106">You can set up individual ledger posting groups for each sales tax code, use one ledger posting group for all sales tax codes or assign multiple ledger posting groups to the sales tax codes.</span></span> <span data-ttu-id="d4326-107">Ez a felvétel az DEMF bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="d4326-107">This recording uses the DEMF demo company.</span></span> 
 

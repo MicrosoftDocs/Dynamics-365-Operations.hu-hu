@@ -19,16 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1f6dad98c2f025f2060f710ff66bae6deb372e63
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8114eecbaf6b8ebbf289601809faf76a052347e5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="accounting-distributions"></a><span data-ttu-id="77042-104">Könyvelési felosztások</span><span class="sxs-lookup"><span data-stu-id="77042-104">Accounting distributions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="77042-105">A cikk a könyvelési felosztásokról nyújt tájékoztatást, valamint leírja a feldolgozásra alkalmas opciókat.</span><span class="sxs-lookup"><span data-stu-id="77042-105">This article provides information about accounting distributions and describes the options that are available for processing them.</span></span> <span data-ttu-id="77042-106">A könyvelési felosztásokat egy forrásbizonylat pénzösszegeinek egy meghatározott főkönyvi számlára történő áthelyezésére használhatja.</span><span class="sxs-lookup"><span data-stu-id="77042-106">Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts.</span></span> 
 

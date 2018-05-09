@@ -19,16 +19,16 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dce403032c239053159fd3e79f3dab013b620eaf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 55de553a6732b95e4d265935b5019dac3e812585
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="welcome-to-dynamics-365-for-retail"></a><span data-ttu-id="adeaf-103">Üdvözöljük a Dynamics 365 for Retail rendszerben!</span><span class="sxs-lookup"><span data-stu-id="adeaf-103">Welcome to Dynamics 365 for Retail</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="adeaf-104">A Microsoft Dynamics 365 for Retail egy végponttól végpontig terjedő megoldás, amely minden csatornán egyesített kereskedelmet biztosít.</span><span class="sxs-lookup"><span data-stu-id="adeaf-104">Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels.</span></span> <span data-ttu-id="adeaf-105">Magába foglalja az értékesítést, a mobilitást, az intelligenciát és a produktivitást, így a kiskereskedők és az alkalmazottak jobb eredményeket érhetnek el, felhő és mobil alapokon.</span><span class="sxs-lookup"><span data-stu-id="adeaf-105">It encompasses sales, mobility, intelligence, and productivity to help retailers and workers achieve more in a cloud-first, mobile-first manner.</span></span> <span data-ttu-id="adeaf-106">A Retail rendszer átfogó támogatást nyújt számos üzleti folyamathoz, például az árusításhoz, továbbá a készlet- és csatornakezeléshez.</span><span class="sxs-lookup"><span data-stu-id="adeaf-106">Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities.</span></span> <span data-ttu-id="adeaf-107">Emellett magával ragadó ügyfélélményt biztosít minden érintő ponton.</span><span class="sxs-lookup"><span data-stu-id="adeaf-107">It also provides immersive customer experiences across all touchpoints.</span></span>
 

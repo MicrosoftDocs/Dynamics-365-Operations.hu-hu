@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a773675b858a196e795ad54cc534ef5eb98ef484
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f98f5b578c1d01463d196b6018e9f47a9d924be7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a><span data-ttu-id="4aa4d-103">Beszerzésikategória-hierarchiák irányelveinek beállítása</span><span class="sxs-lookup"><span data-stu-id="4aa4d-103">Set up policies for procurement category hierarchies</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4aa4d-104">A következő lépésekkel egy kategóriába tartozó termékek megrendelésére vonatkozóan állíthat be szabályokat.</span><span class="sxs-lookup"><span data-stu-id="4aa4d-104">Use this procedure to set up rules for ordering products in a category.</span></span> <span data-ttu-id="4aa4d-105">Egy adott beszerzési irányelvhez határozunk meg szabályokat.</span><span class="sxs-lookup"><span data-stu-id="4aa4d-105">The rules are defined for a specific purchasing policy.</span></span> <span data-ttu-id="4aa4d-106">A kategória-hozzáférési szabály meghatározza, hogy az alkalmazottaknak igénylések létrehozásakor mely beszerzési kategóriákhoz van hozzáférésük.</span><span class="sxs-lookup"><span data-stu-id="4aa4d-106">The category access rule controls which procurement categories employees have access to when they create a requisition.</span></span> <span data-ttu-id="4aa4d-107">Igénylés létrehozásakor a rendszer az alkalmazotthoz tartozó jogi személy és üzemi egység alapján határozza meg, hogy melyik beszerzési irányelvet és kategória-hozzáférési szabályt kell alkalmazni.</span><span class="sxs-lookup"><span data-stu-id="4aa4d-107">When a requisition is being created, the purchasing policy and category access rule that should be applied are determined by the legal entity and the operational unit that the employee belongs to.</span></span> <span data-ttu-id="4aa4d-108">Az USMF bemutatócég adataiban használhatja ezt az eljárást.</span><span class="sxs-lookup"><span data-stu-id="4aa4d-108">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="4aa4d-109">Ezt a feladatot általában egy beszerzési vezető végezné el.</span><span class="sxs-lookup"><span data-stu-id="4aa4d-109">This task would typically be carried out by a purchasing manager.</span></span>
 

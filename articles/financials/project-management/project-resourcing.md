@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 55cfdd24dc13305f716e2ad0425ca3f24567e7b9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6d5d21cebc42cb044172d61916f26b815bb96737
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="project-resourcing"></a><span data-ttu-id="6ea23-103">Projekterőforrás</span><span class="sxs-lookup"><span data-stu-id="6ea23-103">Project resourcing</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6ea23-104">Ez a témakör a projekterőforrásokkal kapcsolatban tartalmaz információkat.</span><span class="sxs-lookup"><span data-stu-id="6ea23-104">This topic provides information about project resourcing.</span></span>
 
