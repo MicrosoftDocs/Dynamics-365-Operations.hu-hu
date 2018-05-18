@@ -3,7 +3,7 @@ title: "Az ellátási lánc kezelése kezdőlap"
 description: "Ez a lap a Microsoft Dynamics 365 for Finance and Operations ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/09/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9e3551580cc03ebf62ec42283c5a9a885d8c8d8f
+ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
+ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
 # <a name="supply-chain-management-home-page"></a>Az ellátási lánc kezelése kezdőlap
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations ellátási lánccal kapcsolatos funkcióinak súgótémaköreit és egyéb forrásait tartalmazza. 
 
@@ -44,13 +44,18 @@ További információkért válasszon ki egy szolgáltatásterületet.
 - [Készletkezelés](inventory/inventory-home-page.md)
 - [Alaptervezés](master-planning/master-planning-home-page.md)
 - [Beszerzés és forrás](procurement/procurement-sourcing-overview.md)
-- [Termékinformáció-kezelés](pim/product-information.md)
+- [Termékinformációk kezelése](pim/product-information.md)
 - [Gyártásvezérlés](production-control/production-process-overview.md)
 - [Értékesítés és marketing](sales-marketing/overview-sales-marketing.md)
+- [Szolgáltatáskezelés](service-management/service-management-home-page.md)
 - [Szállításkezelés](transportation/transportation-management-overview.md)
 - [Raktárkezelés](warehousing/warehouse-configuration.md)
 
 ## <a name="videos"></a>Videók
+
+Ezeknek a rövid videóknak a segítségével megismerheti a Microsoft Dynamics 365 for Finance and Operations 8.0 (2018. április) új funkcióit.
+
+- [Munkarendelések szinkronizálása a Field Service és a Finance and Operations között](https://youtu.be/hAB4TDVMjxU)
 
 Ezeknek a rövid videóknak a segítségével megismerheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (2017. december) új funkcióit.
 
@@ -84,7 +89,7 @@ Ezeknek a műszaki konferencián készült felvételeknek a legnagyobb része a 
 
 **Raktárkezelés** 
 
--  [Bejövő ASN-ek feldolgozása a Raktárkezelés modulban](https://mix.office.com/watch/wpf78tr7rjuh)  
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
 -  [Hozza ki a legtöbbet a raktárkezelési rendszeréből](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Fejlett R3 raktárkezelés – Bejövő feldolgozás és minimális/maximális feltöltés](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Fejlett R3 raktárkezelés – Egy szokásos nap, a kimenő feldolgozás és az igényfeltöltés](https://youtu.be/Og0gLlVp7jA)
