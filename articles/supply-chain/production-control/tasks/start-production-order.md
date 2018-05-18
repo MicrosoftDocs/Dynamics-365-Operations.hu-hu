@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="start-a-production-order"></a>Termelési rendelés indítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ezzel az eljárással lehet megkezdeni egy termelési rendelést az üzemirányítással. Ebben a folyamatban jelentheti az idő- és nyersanyag-felhasználást. Ez az eljárás az USMF bemutatócéget használja. Ez az ötödik eljárás abból a hétből, amely bemutatja a termelési rendelés életciklusát.
 

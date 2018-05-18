@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Kulcsrakész jelentések generálása és futtatása
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Használja ezt a feladatútmutató kulcsrakész jelentések futtatásához a központban a különböző munkaterületekről és Lekérdezésekből Értékesítési jelentések a Kiskereskedelem és Kereskedelem alatt.
 

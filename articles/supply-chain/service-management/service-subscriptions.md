@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-subscriptions"></a>Szolgáltatási előfizetések
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A feliratkozások idő-anyag szintű projekten alapulnak. Előfizetéseket hozhat létre egy projektből, a **Szolgáltatási előfizetések** lapról, illetve a szolgáltatási előfizetések csoportjának használatával.
 

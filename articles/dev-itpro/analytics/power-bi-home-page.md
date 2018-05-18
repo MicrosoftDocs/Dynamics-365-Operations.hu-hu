@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 
 # <a name="power-bi-content"></a>Power BI-tartalom
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör felsorolja az elérhető Microsoft Power BI-tartalmakat, és átirányítja azon erőforrásokhoz, ahol többet tudhat meg róluk.
 

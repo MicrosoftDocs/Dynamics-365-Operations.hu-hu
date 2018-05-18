@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Ez a funkció csak a Dynamics 365 for Finance and Operations 8.0-ás verziójához és célzott felhasználói számára áll rendelkezésre, akik előfizettek a Continuous Auto-update Advantage Program (CAAP) kiegészítésre a platform frissítések esetében. A normál és célzott kiadásokkal kapcsolatos további tudnivalókat lásd: [Normál és célzott platformkiadások](../get-started/public-preview-releases.md).
+> Ez a funkció a Platform Update 15 (7.0.4841) vagy későbbi verziókban áll rendelkezésre. Ez a frissítés jelenleg csak bizonyos vevők számára áll rendelkezésre, és 2018 júniusától lesz elérhető minden felhasználó számára.

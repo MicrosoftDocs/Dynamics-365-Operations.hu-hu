@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="adjust-project-transactions"></a>Projekttranzakciók helyesbítése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A feladatútmutató leírja, hogyan lehet beállítani egy projekt tranzakcióját. A rendszerben ugyanakkor helyesbítheti a projekttranzakciókat, vagy kiválaszthatja az összes projekttranzakciót egy listán. A feladat befejezője általában a projekt felügyelője. Ez a feladat-útmutató az USSI-adatkészletet használja.
 

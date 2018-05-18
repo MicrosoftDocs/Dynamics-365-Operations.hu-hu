@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-accounts-payable"></a>Kötelezettségek konfigurálása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk azoknak az oldalaknak a leírását tartalmazza, amelyek használatával beállíthatók a Microsoft Dynamics 365 for Finance and Operations rendszer Kötelezettségek moduljának alapvető, illetve választható funkciói. Azokat a beállítási lépéseket is bemutatja, amelyeket a Kötelezettségek beállításának elkezdése előtt kell elvégezni.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-design-financial-reports"></a>Pénzügyi jelentések megtekintése és tervezése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 for Finance and Operationsben. A pénzügyi jelentések egyrészt a Dynamics 365 for Finance and Operations rendszeren belüli megtekintésből, másrészt az egy kattintással használható jelentéstervezőből állnak, amellyel pénzügyi jelentéseket hozhat létre és szerkeszthet.  
 

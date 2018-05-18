@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="enter-payroll-beginning-balances"></a>Adja meg a bérlista nyitó egyenlegeit
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében. Ez az információ értékes az olyan partnerek számára, akik adatokat telepítenek át vagy visznek át egy új Bérlista rendszerbe egy másik rendszerből. A nyitó bérlistaegyenlegek bevitelének előkészítéseként ellenőrizzük az alábbi információkat:
 

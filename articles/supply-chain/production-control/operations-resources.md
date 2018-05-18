@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-resources"></a>Operations-erőforrások
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az üzemi erőforrások hajtják végre egy projekt vagy egy termelési folyamat tevékenységeit. Ezek eltérő típusúak lehetnek, illetve eltérő képességeket hordozhatnak. 
 

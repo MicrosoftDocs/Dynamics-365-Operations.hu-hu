@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-holds"></a>Rendelésvárakoztatások
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja a Dynamics 365 for Retail rendszer használatával történő rendelésvárakoztatást.
 

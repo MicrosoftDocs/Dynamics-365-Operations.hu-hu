@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="removed-or-deprecated-features"></a>Eltávolított vagy elavult szolgáltatások
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a Dynamics 365 for Finance and Operations alkalmazásból eltávolított szolgáltatásokat írja le, illetve azokat, amelyek elavultak.
 

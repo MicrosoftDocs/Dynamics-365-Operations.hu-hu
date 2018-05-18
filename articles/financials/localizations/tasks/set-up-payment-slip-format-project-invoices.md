@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Fizetési bizonylat formátumának beállítása projektszámlákhoz
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A vállalkozások gyakran csatolnak kinyomtatott kifizetési bizonylatokat a számlákhoz, így segítve az ügyfeleket, hiszen ezzel fizetési hivatkozást biztosítanak a feladáshoz és a kiegyenlítéshez. A fizetési bizonylat projektekhez vagy szolgáltatásokhoz kapcsolódó számlák, kamatlevelek, fizetési felszólítások és számlakivonatok esetében használható fel, az értékesítési számlák és a szabadszöveges számlák mellett. A fizetési bizonylatok feldolgozásához először állítsa be a hitelezői azonosítószámot és a kifizetési bizonylat mellékletének formátumát.
 

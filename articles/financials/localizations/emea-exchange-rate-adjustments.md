@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="exchange-rate-adjustments"></a>Árfolyam-korrekciók
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti az árfolyam-korrekció funkciót az Észtországban, Magyarországon, a Cseh Köztársaságban, Lettországban, Litvániában, Lengyelországban és Oroszországban levő jogi személyek felhasználói számára.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 10/25/2017
 ---
 # <a name="create-a-product-master"></a>Alaptermék létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Hozzon létre egy alapterméket az előre megadott változatokhoz. Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a terméktervező használja.
 

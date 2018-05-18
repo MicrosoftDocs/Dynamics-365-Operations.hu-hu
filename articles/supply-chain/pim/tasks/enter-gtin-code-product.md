@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Adja meg a GTIN-kódot a termékhez
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A GTIN-kódok kiosztását a GS1 szervezet végzi. Ebben a példában termékszámként az M0001 kódot adja meg az USMF bemutatócég számára.
 

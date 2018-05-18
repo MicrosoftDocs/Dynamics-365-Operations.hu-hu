@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-statuses"></a>Készletállapotok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk leírja hogyan alkalmazza a készletállapotokat a készlet nyomon követésének és kategorizálásának érdekében.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Elszámoló árakkal BOM számításokban használt adatok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az anyagjegyzék-számítások (BOM) többféle forrásból származó adatok felhasználásával számítják ki a legyártott cikk szokásos költségeit. Az adatforrások közé tartoznak a cikkekkel, az útvonalakkal kapcsolatos információk, a közvetettköltség-számítási képletek és a költségszámítási verzió.
 

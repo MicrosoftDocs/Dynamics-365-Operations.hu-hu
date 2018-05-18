@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Vevő által kiállított, jövőben esedékes csekk kiegyenlítése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A jövőben esedékes csekkeket akkor egyenlítheti ki, miután a bank elszámolta azokat. A pénzügyi tranzakció a jövőben esedékes csekkhez tartozó áthidaló számlát is elszámolja. 
 

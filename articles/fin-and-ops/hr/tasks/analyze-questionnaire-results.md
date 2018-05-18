@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="analyze-questionnaire-results"></a>Tanfolyami kérdőív eredményei
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A kérdőív-statisztikák felhasználhatók a demográfiai adatokon alapuló átlagok, összesítések és százalékok kiszámítására. Az eljárás megkezdéséhez ugorjon a Kérdőív > Eredmények megtekintése és elemzése > Kérdőív-statisztikák lehetőségre. Ez az eljárás az USMF bemutatócéget használja.
 

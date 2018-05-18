@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="payment-methods-in-a-call-center"></a>Fizetési módszerek hívásközpontnál
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 for Retail alkalmazásban a hívásközponti csatornák konfigurációja tartalmazza a **Rendeléskiegészítés engedélyezése** nevű beállítást. A beállítás segítségével garantálható, hogy minden olyan rendelés, amelyet a csatorna felhasználói hoznak létre, csak akkor lesz kiadva rendelésfeldolgozásra, ha a jóváhagyott tűréshatáron belüli előre kifizetett vagy előzetesen jóváhagyott kifizetése van. Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, a hívásközpont felhasználói bevihetnek kifizetéseket a vevőkhöz tartozó értékesítési rendelések ellenében a hívásközpont fizetésfeldolgozási funkciói segítségével. Ha a beállítás ki van kapcsolva, hívásközpont felhasználói nem használhatják a hívásközpont fizetésfeldolgozási funkcióit, de továbbra is alkalmazhatnak előlegeket az értékesítési rendelésekre a szabványos Kinnlevőségek funkció segítségével.
 

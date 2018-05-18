@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="specify-a-lading-address-for-an-intra-community-transaction"></a>Közösségen belüli tranzakcióhoz berakodási cím megadása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan adhatja meg egy közösségen belüli kereskedelmi tranzakció berakodási címét. Például egy német cég egy német üzleti címmel rendelkező szállítótól rendel cikkeket. A szállítónak van egy raktára Olaszországban, és innen szállítja a cikkeket. Ezt a szállítást jelenteni kell az Intrastatban. Ugyanez érvényes az ügyfél visszáruszállításaira is.
 Ez az eljárás minden európai országra/régióra vonatkozik. Ezt a feladatot a németországi elsődleges címmel rendelkező DEMF bemutatócég segítségével hozták létre. Az eljárás végrehajtása előtt be kell állítania az Intrastat jelentéskészítést. Ez az eljárás könyvelőknek szól. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.

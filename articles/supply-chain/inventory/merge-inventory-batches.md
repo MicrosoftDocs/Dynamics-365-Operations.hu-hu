@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="merge-inventory-batches"></a>Készletkötegek egyesítése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a két vagy több készletköteg egyesített köteggé történő összevonásáról nyújt tájékoztatást.
 

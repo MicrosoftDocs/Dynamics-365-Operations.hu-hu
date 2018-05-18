@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holders"></a>Előlegre jogosultak
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre jogosulti funkciójáról.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-discrete-manufacturing-resource-group"></a>Elkülönített gyártási erőforráscsoport meghatározása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Egy erőforráscsoport üzemi erőforrások csoportja, amelyek általában megfelelnek a munkacellák fizikai elrendezésének, amelyet a termelésben a padlón lévő sárga vonalak jelölnek. Ez az eljárás bemutatja, hogyan adjon meg egy erőforráscsoportot a különálló termelésben való használathoz. Ezt a folyamatot az USMF bemutatócégen vagy saját adatai használatával is elvégezheti.
 

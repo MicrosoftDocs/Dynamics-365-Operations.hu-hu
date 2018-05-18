@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-orders"></a>Értékesítési rendelések létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet eladási rendelést létrehozni. Ezt a folyamatot használhatja az USMF bemutatócéghez. Az Értékesítési rendelést jellemzően értékesítési munkatárs hozza létre. 
 

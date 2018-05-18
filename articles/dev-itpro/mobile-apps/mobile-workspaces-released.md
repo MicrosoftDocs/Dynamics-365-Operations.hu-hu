@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-workspaces"></a>Mobil munkaterületek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör felsorolja azokat a mobil munkaterületeket, amelyek a Dynamics 365 for Unified Operations mobilalkalmazással együtt használhatók.
 

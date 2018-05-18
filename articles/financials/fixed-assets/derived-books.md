@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="derived-books"></a>Származtatott könyvek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a származtatott könyv funkcióról nyújt áttekintést.
 

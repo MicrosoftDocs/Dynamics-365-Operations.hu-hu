@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-settlement"></a>Kiegyenlítés konfigurálása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a cikk a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be. 
 

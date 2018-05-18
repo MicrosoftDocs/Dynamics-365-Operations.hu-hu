@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="post-periodic-journals"></a>Időszaki naplók közzététele
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Az időszaki naplókat olykor ismétlődő naplónak is nevezik, mivel az összeg, a szöveg és más adatok az időszaki napló beolvasásákor minden alkalommal megismétlődnek. Időszaki napló létrehozásakor határozza meg az ismétlődéshez tartozó időszakot (pl. nap vagy hónap). Ez a feladat útmutató havi ismétlődés időszaki naplót hoz létre.
 

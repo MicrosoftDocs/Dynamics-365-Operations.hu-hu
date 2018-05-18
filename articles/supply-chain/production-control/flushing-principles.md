@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Nyersanyag-fogyasztás kezelése ürítési elvek használatával
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az ürítési elvek a termelési folyamatokban használt nyersanyagok különböző fogyasztási stratégiáit tükrözik. A fogyasztás az a folyamat, amely levonja az anyagot a készletből és az elhasznált anyagok értékét a gyártási rendelések és kötegelt rendelések esetében **Folyamatban lévő** (WIP) értékre állítja. A nyersanyagokat általában olyan helyről fogyasztják el, amely az anyagot elhasználó folyamat számára készült. Ezt a helyet a termelési bemeneti helynek is nevezik.
 

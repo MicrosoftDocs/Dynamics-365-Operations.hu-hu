@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-insights"></a>Financial Insights
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A **Financial Insights** a Microsoft Power BI-t használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására. A Power BI a Microsoft Dynamics 365 Finance and Operations beágyazott része.
 A **Financial Insights** lényege az analitikus jelentéskészítés. A szervezeten belüli személyek megtekinthetnek, kutatást végezhetnek, ismereteket szerezhetnek és műveleteket hajthatnak végre. 

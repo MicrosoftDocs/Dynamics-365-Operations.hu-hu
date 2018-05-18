@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>Keresés a készletben a pénztárban 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A keresés a készletben a pénztárnál (POS) segítségével a kiskereskedők valós idejű üzemi kiválóságot érhetnek el, és információkat szerezhetnek az áruházak, a pénztár és a háttériroda összekapcsolásával. Ez a funkció lehetővé teszi az üzletek és elosztóközpontok termékkészletének pontos valós idejű megtekintését. A hatékonyság és a költségmegtakarítás növelését teszi lehetővé a kiskereskedők számára a valós idejű készlettervezés továbbfejlesztésével.
 

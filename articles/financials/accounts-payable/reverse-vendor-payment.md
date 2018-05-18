@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-a-vendor-payment"></a>Borderó kifizetés sztornózása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk egy kifizetés sztornírozását, törlését, érvénytelenítését és visszautasítását mutatja be. Elmagyarázza továbbá szállítói számlák sztornírozásának két módját. 
 

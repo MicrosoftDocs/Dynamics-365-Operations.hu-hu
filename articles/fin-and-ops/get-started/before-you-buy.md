@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="before-you-buy"></a>Vásárlás előtti teendők 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Most ismerkedik a Dynamics 365 for Finance and Operations rendszerrel? Összeállítottunk egy lépésenkénti útmutatót, amely hasznára válhat; akár még teszteki a Finance and Operations szolgáltatást, akár már készen áll a vásárlásra.
 

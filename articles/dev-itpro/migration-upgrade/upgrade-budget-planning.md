@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Költségvetés-tervezés frissítése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Jelentős különbségek vannak a költségvetés tervezésében a Microsoft Dynamics AX 2012 és a Microsoft Dynamics 365 for Finance and Operations között. Egyes funkciók nem frissültek, ezért újrakonfigurálást igényelnek. Ez a témakör elmagyarázza, hogy mit kell újrakonfigurálni, és leírja azokat az új funkciókat, amelyeket érdemes kipróbálni a frissítés befejezése után.  
 

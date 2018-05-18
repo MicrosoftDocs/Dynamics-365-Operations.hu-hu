@@ -27,7 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="employee-competencies-and-development-power-bi-content"></a>Alkalmazotti kompetenciák és fejlődés Power BI-tartalom
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a következőt ismerteti: Finance and Operations - Alkalmazotti kompetenciák és fejlődés Power BI-tartalom. 
 

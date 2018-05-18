@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Első lépések a Microsoft Dynamics 365 for Talent rendszerben
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A Microsoft Dynamics 365 for Talent szolgáltatásban rendkívül könnyen módosíthatja a felhasználói felületet, és elvégezheti a szoftver intuitívebb igényeinek beállítását. Ez a témakör, amelyek tartalmaznak tájékoztatást, hogyan lehet igazítani a beállításokat a felhasználói felület témakörökre mutató hivatkozásokat tartalmaz. A témakör is tartalmaz, amelyek segítenek a rendszerben található információ hatékonyan és pontosan témakörökre mutató hivatkozásokat. 
 

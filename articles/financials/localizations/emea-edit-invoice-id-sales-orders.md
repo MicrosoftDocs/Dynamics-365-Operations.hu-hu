@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör olyan kinnlevőségi paramétereket ismertet, amelyek hatással vannak a csomagjegyzékeken található számlaszámokra, valamint a cseh, észt, magyar, litván, lett és lengyel számlákra.
 

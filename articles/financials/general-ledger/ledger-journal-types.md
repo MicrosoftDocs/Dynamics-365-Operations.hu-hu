@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>Főkönyvi napló típusai
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a **Naplónevek** lapot a Microsoft Dynamics 365 for Finance and Operations alkalmazásban használható naplók beállításához.
 

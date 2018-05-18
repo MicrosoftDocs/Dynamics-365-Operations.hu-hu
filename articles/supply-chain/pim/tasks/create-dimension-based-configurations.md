@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-dimension-based-configurations"></a>Dimenzión alapuló konfigurációk létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja a dimenzión alapuló termékek konfigurációjának meghatározásának módját. Ez az utolsó eljárás a sorozatban, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti. Ezen eljárás végrehajtása az előző hét rögzítésben létrehozott adattól függ. Ez az eljárás az USMF bemutatócéget használja.
 

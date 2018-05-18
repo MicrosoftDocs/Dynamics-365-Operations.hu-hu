@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>Projektköltségvetés-verziók elküldése és jóváhagyása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás a projektköltségvetés felülvizsgálatával kapcsolatban nyújt tájékoztatást. A projektköltségvetést annyiszor lehet módosítani, ahányszor szükséges, de az egyes módosítások összege nem látható, ha a költségvetést egynél többször módosították. 
 

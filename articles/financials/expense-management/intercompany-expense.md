@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-expenses"></a>Vállalatközi költségek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Egy dolgozó, aki a szervezeten belüli egy jogi személy alkalmazottja, esetenként végezhet munkát az adott szervezeten belüli másik jogi személy számára. Ebben az esetben a vállalatközi költségek funkciót használhatja ahhoz, hogy a dolgozói költségeket hozzárendelje ahhoz a jogi személyhez, amelynek számára a munka el lett végezve. A dolgozót foglalkoztató jogi személy neve kölcsönbe adó jogi személy. A jogi személy, amelynél a dolgozóval kapcsolatos költségek felmerülnek, a kölcsönbe vevő jogi személy. 
 

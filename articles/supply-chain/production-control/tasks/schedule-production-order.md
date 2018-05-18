@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="schedule-a-production-order"></a>Termelési rendelés ütemezése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet termelési rendelést ütemezni. Ez az eljárás az USMF bemutatócéget használja. Ez a harmadik eljárás abból a hétből, amely bemutatja a termelési rendelés életciklusát.
 

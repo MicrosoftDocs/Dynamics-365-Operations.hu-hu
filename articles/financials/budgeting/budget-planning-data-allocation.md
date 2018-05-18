@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-data-allocation"></a>Költségvetés-tervezés – adatok megadása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk ismerteti a Microsoft Dynamics 365 for Finance and Operations rendszerben elérhető különféle felosztási módszereket, és bemutatja azok használatát.  
 

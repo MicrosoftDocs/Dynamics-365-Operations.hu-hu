@@ -29,7 +29,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="product-identifiers"></a>Termékazonosítók 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a különféle típusú termékazonosítókkal kapcsolatban tartalmaz tájékoztatást, és bemutatja, hogyan adhat hozzá termékazonosítókat a termékadataihoz.
 

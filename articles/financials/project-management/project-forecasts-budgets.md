@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-forecasts-and-budgets"></a>Projekt-előrejelzések és -költségvetések
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations két módot biztosít a projektek intézéséhez és irányításához: a projektek előrejelzéseit és a projektek költségevetéseit. 
 

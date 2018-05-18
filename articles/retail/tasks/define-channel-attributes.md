@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-channel-attributes"></a>Csatornaattribútumok meghatározása
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Bővítse a csatornát csatorna- és termékattribútumok hozzáadásával. Az attribútumok definiálása előtt hozzá kell adnia a csatornát a szervezet alapértelmezett hierarchiájához.
 

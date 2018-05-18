@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-accrual-schemes"></a>Könyvelési sémák létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az útmutató bemutatja a könyvelési séma létrehozásának folyamatát. Ez a feladat az USMF bemutatócéget használja.
 

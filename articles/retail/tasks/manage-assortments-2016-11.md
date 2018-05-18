@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="manage-assortments"></a> Szortimentek kezelése  
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan lehet egy új termékszortimentet létrehozni és közzétenni; az USRT bemutatócéget használja. Az eljárás a következőket igényli: Dynamics AX 7.0.1 alkalmazás vagy újabb verzió és Dynamics AX 7.1 platform.  
 

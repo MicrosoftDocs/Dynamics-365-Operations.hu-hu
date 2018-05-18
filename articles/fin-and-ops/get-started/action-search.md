@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-search"></a>Műveletkeresés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a Microsoft Dynamics 365 for Finance and Operations rendszerben használható műveletkeresés funkciót írja le. A műveletkeresés segít megkeresni és adott lapon lefuttatni műveleteket.
 

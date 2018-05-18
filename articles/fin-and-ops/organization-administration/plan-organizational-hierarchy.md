@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>Szervezeti hierarchia megtervezése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Szervezetek és szervezeti hierarchiák beállítása előtt a Microsoft Dynamics 365 for Finance and Operations programban, győződjön meg arról, hogy megtervezi, hogyan lehet modellezni vállalatát. A szervezeti modellnek jelentős hatása van a Microsoft Dynamics 365 for Finance and Operations és az üzleti folyamatok végrehajtására. 
 

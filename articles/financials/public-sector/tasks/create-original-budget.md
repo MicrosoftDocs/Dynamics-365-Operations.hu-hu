@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a>Eredeti költségvetés létrehozása és az előzetes költségvetési bejegyzések sztornírozása az állami szektorban
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Amikor eredeti költségvetési bejegyzést hoz létre és az előzetes költségvetési összegeket tartalmazó költségvetési modellt és dimenzió értékeket használja, az előzetes költségvetési összegeket sztornírozni lehet. Ez az eljárás az állami szektor partícióban lévő PSUS bemutató vállalati adatok használatával készült.
 

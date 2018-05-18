@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="ledger-allocation-rules"></a>Főkönyvi felosztási szabályok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a főkönyvi felosztási szabályokkal kapcsolatos információkat tartalmaz. Leírja az ezen felosztási szabályok különböző összetevőit, és a hozzájuk használható felosztási módszereket.
 

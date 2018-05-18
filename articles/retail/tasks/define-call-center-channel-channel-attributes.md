@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a> Hívásközponti csatorna és a csatorna attribútumainak meghatározása
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás végigvezeti egy új kiskereskedelmi csatorna létrehozásának, és a csatornaattribútumok megadásának lépésein. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. Ezt az eljárást a kiskereskedelem IT-szerepkör használja.
 

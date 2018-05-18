@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a>Funkcióprofil konfigurálása értékesítési képviselőnek
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan konfigurálhatja egy áruház üzletkötőkre vonatkozó funkcióprofil-beállításait. Ez az eljárás az USRT bemutatócéget használja.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a> Pénzügyi dimenziók létrehozása kiskereskedelmi csatornákhoz és a dimenzióértékek konfigurálása az üzletekben
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás egy Kiskereskedelmi csatorna pénzügyi dimenzió, a Kiskereskedelmi üzletekkel kapcsolatos pénzügyi dimenzióértékek konfigurálásában szerepet játszó dimenzióértékekkel és lépésekkel együtt történő létrehozását mutatja be. A témakör nem tér ki olyan kapcsolódó lépésekre, mint a dimenziókészletek és számlastruktúrák létrehozása. Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.
 

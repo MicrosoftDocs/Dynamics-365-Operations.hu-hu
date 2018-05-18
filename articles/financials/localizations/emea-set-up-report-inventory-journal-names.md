@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-journal-reports"></a>Készletnapló-jelentések
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konfigurálható készletjelentések elektronikus jelentés alapján történő használatakor be kell állítani egy kapcsolatot az adott jelentés és egy naplótípusa között.
 

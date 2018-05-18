@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Követelések és beszedések a Kinnlevőségek modulban
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A kinnlevőségek beszedési információját a Finance and Operations beszedési lapját használó központi nézetben kezelik. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a Kintlevőségkezelők kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
 

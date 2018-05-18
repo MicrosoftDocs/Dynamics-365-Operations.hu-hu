@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="one-voucher"></a>Egy bizonylat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Ez a funkció a Dynamics 365 for Finance and Operations 8.0 verziójában lesz elérhető, amely a 2018. tavaszi kiadásban jelenik meg.   

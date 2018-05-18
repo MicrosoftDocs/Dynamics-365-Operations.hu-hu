@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="process-interest"></a>Kamatfeldolgozás
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás a kamatlevél létrehozását, nyomtatását és feladását mutatja be. Ez a feladat az USMF bemutatócéget használja.
 

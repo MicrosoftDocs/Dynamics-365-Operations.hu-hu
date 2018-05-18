@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör ismerteti a nyersanyag kiadásának folyamatát az anyagjegyzéksorok és receptúrasorok kiadásához a raktárba. Amikor kiadunk egy anyagjegyzék- vagy receptúrasort a raktárba, a rendszer először azt határozza meg, hogy az anyagok már rendelkezésre állnak-e a termelés bemeneti helyén az üzemben, ahol az anyagot felhasználják a termelési folyamat során.
 

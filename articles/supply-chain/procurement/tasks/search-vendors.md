@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="search-for-vendors"></a>Szállítók keresése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Útmutató a szállítók meghatározott feltételek alapján történő kereséhez. Ez a példa bemutatja, hogyan lehet olyan szállítókat keresni, amelyek egy adott beszerzési kategóriához jóváhagyottak, és az elsődleges címük egy adott országban van. Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. Ezt a feladatot általában egy beszerzési szakember végzi el.
 

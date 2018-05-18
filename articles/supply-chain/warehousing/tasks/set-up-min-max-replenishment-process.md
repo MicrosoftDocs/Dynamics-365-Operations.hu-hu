@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>A minimum-maximum feltöltési folyamat beállítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogy hogyan állíthat be egy új feltöltési folyamatot, amely a minimális/maximális feltöltési stratégiát használja. Amikor a készlet a minimális szint alá esik, a rendszer a hely feltöltéséhez hozza létre munkát. Az eljárás azt is bemutatja, hogy hogyan lehet a rögzített kitárolási helyek segítségével az újratelepítést engedélyezni, ha a készlet a minimális szint alá esik, és hogyan lehet a feltöltési folyamatot engedélyezni a rendszeres futtatáshoz egy kötegelt feladat használatával. Ezeket a feladatokat jellemzően egy raktári vezető végzi el. A megjegyzések példaértékeinek használatával futtathatja ezt az eljárást az USMF bemutató vállalatnál, vagy a saját adatait vagy futtathatja. Ha a saját adatait használja, győződjön meg arról, hogy egy olyan raktárral rendelkezik, amely engedélyezve van a Raktárkezelési folyamatok számára.
 

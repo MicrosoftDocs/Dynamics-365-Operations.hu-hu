@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="customer-payment-overview"></a>Vevői kifizetések áttekintése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál használt különböző módszereken. Ez a feladat az USMF bemutatócéget használja.
 

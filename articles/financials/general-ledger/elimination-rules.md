@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="elimination-rules"></a>Eltávolítási szabályok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör az eltávolítási szabályokról és a különböző lehetőségekről az eltávolításokról szóló jelentésekkel kapcsolatban szolgáltat információt.
 

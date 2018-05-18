@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-a-customer-invoice"></a>Vevői számla létrehozása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad. Ezen típusú értékesítési számla kiállítása egy értékesítési rendelés alapján történik, amely tartalmazza a rendeléssorokat és cikkszámokat. A cikkszámok a főkönyvben vannak meghatározva és feladva. Analitikus naplóbejegyzések nem érhetők el értékesítési rendeléshez tartozó vevői számlához. A további információkat lásd: [Értékesítési rendelési számlák létrehozása](tasks/create-sales-order-invoices.md).
 

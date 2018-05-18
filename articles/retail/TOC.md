@@ -24,6 +24,7 @@
 # Áfa
 ## [Áfa áttekintése](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Áfaszámítási módok a Kiindulás mezőben](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Áfa-hozzárendelés és felülbírálások](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Teljes összeg és intervallumszámítási opciók áfakódokhoz](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Hívásközpont
@@ -165,10 +166,11 @@
 ## [ Gépi tanulási alapú termékajánlások konfigurálása](tasks/configure-machine-learning-product-recommendations.md)
 ## [ Eszköz létrehozása és hozzárendelése](tasks/create-associate-device.md)
 ## [ Hardverállomás létrehozása és hozzárendelése](tasks/create-associate-hardware-station.md)
-## [ Pénztárgépek létrehozása és hozzárendelése](tasks/create-associate-registers.md)
-## [ Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása](tasks/create-calculate-post-statement-retail-store.md)
-## [ Hívásközponti rendelések létrehozása](tasks/create-call-center-orders.md)
-## [ Pénzügyi dimenziók létrehozása POS-pénztárgépekhez és a dimenzióértékek konfigurálása a pénztárgépeken](tasks/create-financial-dimensions-pos.md)
+## [Pénztárgépek létrehozása és hozzárendelése](tasks/create-associate-registers.md)
+## [Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása](tasks/create-calculate-post-statement-retail-store.md)
+## [Kimutatásfeladás továbbfejlesztései](statement-posting-EOD.md)
+## [Hívásközponti rendelések létrehozása](tasks/create-call-center-orders.md)
+## [Pénzügyi dimenziók létrehozása POS-pénztárgépekhez és a dimenzióértékek konfigurálása a pénztárgépeken](tasks/create-financial-dimensions-pos.md)
 ## [ Pénzügyi dimenziók létrehozása kiskereskedelmi csatornákhoz és a dimenzióértékek konfigurálása az üzletekben](tasks/create-financial-dimensions-retail-channels.md)
 ## [ Online csatornák létrehozása és a csatorna attribútumainak meghatározása](tasks/create-online-channel-define-channel-attributes.md)
 ## [ POS-engedélycsoportok létrehozása](tasks/create-pos-permission-groups.md)
@@ -288,9 +290,8 @@
 ### [Egyéni oszlopok hozzáadása a POS tranzakciós rácsához](dev-itpro/pos-custom-transaction-column.md)
 ### [POS API meghívása, illetve művelet egy POS bővítménytől](dev-itpro/pos-api-extension.md)
 ### [A Retail Modern POS eseményindítói és nyomtatása](dev-itpro/pos-trigger-printing.md)
-### [Egyéni vezérlő hozzáadása Retail Modern POS képernyő nélküli tervezőalapú megtekintéshez](dev-itpro/pos-control-non-screen.md)
-### [Retail proxy létrehozása a POS-hez és az elektronikus kereskedelemhez](dev-itpro/pos-generate-retail-proxy.md)
-### [Konfigurációs lépések a felhőalapú fejlesztői dobozokon dolgozó Retail-fejlesztők számára](dev-itpro/cloud-dev-box.md)
+### [Egyéni vezérlő hozzáadása a Retail Modern POS nem képernyő tervező alapú nézethez](dev-itpro/pos-control-non-screen.md)
+### [Konfigurálási lépések felhő által szolgáltatott fejlesztési mezőkön dolgozó Retail fejlesztőknek](dev-itpro/cloud-dev-box.md)
 
 ## Kereskedelmi futtatókörnyezet
 ### [Hűségidő kiterjesztése](dev-itpro/retail-sdk/loyalty-extension-sample.md)

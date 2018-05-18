@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="pay-based-on-registrations"></a>Fizetési regisztráció alapján
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör részletesen bemutatja, hogyan van kiszámítva a fizetés a dolgozói regisztrációk alapján. Magában foglal olyan példákat is, amelyek bemutatják, hogy a számításhoz rendelkezésre álló beállítási lehetőségek kombinációi hogyan befolyásolják az eredményt. Íme néhány terület, amelyre vonatkozik:
 

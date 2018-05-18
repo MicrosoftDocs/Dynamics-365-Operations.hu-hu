@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Az elszámolóár frissítése gyártási környezetben
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk az elszámolóárak gyártási környezetben történő frissítésének útmutatását tartalmazza. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="pos-operations-online-and-offline"></a>POS-műveletek, online és offline
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A legtöbb felhasználó műveletek a pont (POS) értékesítési műveletek veszi figyelembe. A műveletek konfigurálása és kezelése a Microsoft Dynamics 365 for Retail háttérirodai szolgáltatásánál történik. A POS-gombrács gombjai számos művelet lehet hozzáadni. Felhasználó kiválaszthatja a gombokra kattintva hajtani a műveleteket, és a kapcsolódó feladatok végrehajtása. Egyéb műveletekhez részét képezik a fő POS alkalmazást, és előforduló vagy a gombok vagy más munkafolyamatokat, és a folyamatok részeként.
 

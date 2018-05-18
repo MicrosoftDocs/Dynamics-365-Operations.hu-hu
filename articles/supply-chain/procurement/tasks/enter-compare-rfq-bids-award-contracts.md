@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja az Ajánlatkérésre történő válaszadás, az ajánlatok pontozásának és összehasonlításának módját, és ezt követően bemutatja azt is, hogy hogyan rendelheti az ajánlatot egy szállítóhoz. Az USMF bemutatócég adataiban használhatja ezt az eljárást. Mielőtt elkezdené, egy legalább két szállítónak elküldött sorral rendelkező Ajánlatkéréssel kell rendelkeznie. Előfeltételként az "Ajánlatkérés létrehozása" eljárást futtathatja ezen elem létrehozásához. Mielőtt lehetővé válik ezen eljárás futtatása létre kell hozni a pontozási feltételeket.
 

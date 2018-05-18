@@ -28,7 +28,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="manage-vendor-collaboration-users"></a>Szállítói együttműködés felhasználóinak kezelése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan lehet kérni új szállítói együttműködési felhasználók létesítését, és hogyan lehet hozzáadni új szállítói együttműködési partnereket. 
 

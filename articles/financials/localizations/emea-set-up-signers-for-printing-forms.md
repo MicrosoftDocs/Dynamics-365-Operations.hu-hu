@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-signers-for-print-forms"></a>Aláírók beállítása nyomtatási űrlapokhoz
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország, Lengyelország és Oroszország területén működő jogalanyok esetén beállíthat aláírókat és beosztásokat a dokumentumokat, például számlákat és készpénzutalványokat nyomtató szállítók és vevők számára.
 

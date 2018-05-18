@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-method-of-payment"></a>Vevői fizetési mód kialakítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Fizetési mód létrehozása vevői kifizetésekhez. Ez a feladat az USMF bemutatócéget használja.
 

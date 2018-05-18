@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="pos-improvements-for-serialized-products"></a>Pénztárjavítások szerializált termékekhez
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Áttekintés 
 A Kiskereskedelmi központban megadott beállítások alapján a termékek lehetnek szerializáltak vagy nem szerializáltak. A szerializált termékeknél minden egyes cikkhez is hozzárendelhető egy egyedi szám, amely segít nyomon követni a garanciákat, cikkeket, és segít megerősíteni a tulajdonjogot. Bár a szerializált termékekhez már a Modern/felhőalapú pénztár (POS) rendszerben hozzá lehetett adni sorozatszámokat, számos fejlesztés révén a pénztárosok most időt takaríthatnak meg és hatékonyabban dolgozhatnak.  

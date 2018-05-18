@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-and-filter-workspaces"></a>Munkaterületek konfigurálása és szűrése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a munkaterületek konfigurálásáról és szűréséről nyújt áttekintést.
 

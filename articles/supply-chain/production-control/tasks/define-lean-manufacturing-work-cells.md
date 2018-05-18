@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Lean manufacturing munkacellák meghatározása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A munkacella egy az erőforráscsoportok egy konkrét formája, amelyet lean manufacturing termelési folyamatokban lehet használni. A munkacelláknak vannak a bemeneti és kimeneti helyekeik és egy kapacitásdefiníciójuk, amely a termelési folyamatmodellen alapszik. További információkat a lean manufacturing munkacelláinak és kapacitásszámításainak alapkoncepcióiról a Lean manufacturing modellel foglalkozó tanulmányokban találhat. Ez az eljárás az USMF bemutatócéget használja.
 

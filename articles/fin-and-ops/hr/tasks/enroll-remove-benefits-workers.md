@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Dolgozók juttatásainak felvétele és eltávolítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan lehet egyetlen dolgozót besorolni egy vagy több juttatáshoz, valamint több dolgozó egyetlen juttatáshoz. Ez az eljárás az USMF bemutatócéget használja.
 

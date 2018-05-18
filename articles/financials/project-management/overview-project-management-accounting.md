@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>Projektvezetés és könyvelés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A projektvezetési és könyvelési funkció több ágazatban használható egy szolgáltatás nyújtásához, egy termék előállításához vagy egy eredmény eléréshez.  
 

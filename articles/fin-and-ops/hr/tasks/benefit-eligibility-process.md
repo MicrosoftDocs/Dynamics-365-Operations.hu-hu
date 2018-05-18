@@ -24,7 +24,7 @@ ms.lasthandoff: 02/14/2018
 ---
 # <a name="benefit-eligibility-process"></a>Juttatási jogosultság feldolgozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárással bemutatja, hogyan működik a juttatásjogosultsági folyamat. A folyamat befejeztével megtekintheti az eredményt. Ez az eljárás az USMF bemutatócéget használja.
 

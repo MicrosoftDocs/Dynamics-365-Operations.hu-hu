@@ -26,11 +26,11 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail"></a>Újdonságok és változások a Dynamics 365 for Retail programban
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Ez az oldal olyan erőforrásokat mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Retail rendszer legújabb kiadásainak új szolgáltatásait és módosításait.
 
-[!INCLUDE [release notes](../includes/release-notes.md)]
+[!include [release notes](../includes/release-notes.md)]
 
 ## <a name="releases-of-dynamics-365-for-retail"></a>A Dynamics 365 for Retail kiadásai
 

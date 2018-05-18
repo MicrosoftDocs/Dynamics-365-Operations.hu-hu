@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="inspect-the-quality-of-goods"></a>Áru minőségének ellenőrzése
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan dolgozhat fel egy minőségi rendelést. Ezt az útmutatót lefuttathatja az USMF bemutatócégen. A példaeljárás megkezdése előtt erősítse meg a „000016” beszerzési rendelést, és adja fel a termékbevételezést. Ez automatikusan létrehoz egy minőségi rendelést. A minőségvizsgálatokat általában minőségadminisztrátorok végzik.
 

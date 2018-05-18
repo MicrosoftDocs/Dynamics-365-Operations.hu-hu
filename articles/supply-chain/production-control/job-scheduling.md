@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="job-scheduling"></a>Feladat ütemezése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk információt biztosít a feladat ütemezésről, ami a művelet ütemezés egy részletesebb ütemezésű formája. A feladatütemezést használhatja az egyéni feladatok vagy bolti sorrendek ütemezésére és a gyártási környezet irányítására.
 

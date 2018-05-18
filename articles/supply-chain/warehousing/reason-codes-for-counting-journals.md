@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="reason-codes-for-inventory-counting"></a>Okkódok készletszámláláshoz
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az okkódok segítségével elemezheti a számlálási folyamat eredményeit és a folyamat során felmerülő esetleges eltéréseket. Megadhatja a számlálás okait, például hogy eltört a raklap vagy a készletmintákon alapuló készletkiigazítás történt.
 

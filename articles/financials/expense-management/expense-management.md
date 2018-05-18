@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>Költséggazdálkodás
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Költséggazdálkodás modulban olyan integrált munkafolyamatot hozhat létre, amelyben tárolhatja a fizetési módok adatait, importálhatja a bankkártya-tranzakciókat, és nyomon követheti, hogy mennyi pénzt költenek az alkalmazottak, amikor költségeket idéznek elő a vállalat számára. Meghatározhatja a kiadásokra vonatkozó szabályokat és automatizálhatja az utazási költségtérítés elszámolását. 
 

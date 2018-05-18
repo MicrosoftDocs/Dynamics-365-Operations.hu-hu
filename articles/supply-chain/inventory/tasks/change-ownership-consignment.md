@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Bizományosi készlet tulajdonosának módosítása gyártási igény alapján
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan módosítható a bizományosi készlet tulajdonosa a szállítóról a jogi személyére, amikor a készletre gyártási igény van. A tulajdonjog-változás készlettulajdonos-változási napló létrehozásával és feladásával történik. A tulajdonosváltozási napló sorai létrehozhatók manuálisan, illetve, ahogy az a felvételen látható, meglévő gyártási igény alapján is. Ezt a feladatot általában egy üzemirányítási felügyelő végzi el. Ezt a folyamatot az USMF bemutatócégnél vagy a saját adataiban is használhatja. Saját adatok használatakor győződjön meg arról, hogy teljesíti a következő előfeltételeket: be van állítva egy készletnaplónév, amely be van állítva a készlet tulajdonjog-változásához, vannak fizikailag rögzített szállító tulajdonában lévő aktuális készletelemek, és egy vagy több gyártási rendelés sor az anyaghoz. Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
 

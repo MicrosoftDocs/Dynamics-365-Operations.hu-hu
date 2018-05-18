@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-and-bank-management-home-page"></a>Készpénz- és bankkezelési kezdőlap
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Készpénz- és bankkezelés modul segítségével karbantarthatók a jogi személy bankszámlái, valamint a hozzájuk társított pénzügyi eszközök. 
 

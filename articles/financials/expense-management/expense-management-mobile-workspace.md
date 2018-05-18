@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-management-mobile-workspace"></a>Költségkezelési mobil munkaterület
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a **Költséggazdálkodás** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítségével a felhasználók nyugtákat rögzíthetnek, majd tölthetnek fel annak érdekében, hogy később egy költségjelentéshez csatolhassák őket. A felhasználók gyorsan létrehozhatnak költségsorokat egy mellékelt nyugta használatával, valamint létrehozhatják és kezelhetik költségjelentéseiket. Ezenkívül a jóváhagyók a **Költséggazdálkodás** mobil munkaterület segítségével megtekinthetik a hozzájuk rendelt költségjelentéseket, majd jóváhagyhatják vagy elutasíthatják az adott költségjelentéseket.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="use-a-continuity-program"></a>Folytonos program használata
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás a folytonos program révén történő értékesítés és a kapcsolódó vevői rendelések feldolgozását mutatja be. Az eljárás végrehajtásához a felhasználónak hívásközpont felhasználójaként kell beállítva lennie. Ez az eljárás az USRT bemutatócéget használja.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="bom-designer-functionality"></a>Anyagjegyzék-tervező funkció
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan alkalmazza az anyagjegyzék tervezőlapot az anyagjegyzékek (BOM) fastruktúráinak tervezésére és az azokkal történő munkára. A Beállítások gombra kattintva különböző konfigurációkat állíthat be, és eldöntheti, hogy milyen információkat kíván megjeleníteni a fa soraiban.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-new-benefit"></a>Új juttatás létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új juttatás létrehozása során használni fog. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. A feladat a Kompenzációkért és juttatásokért felelős vezetőnek szól.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-quotations"></a>Projektajánlatok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a projektajánlatok koncepcióját mutatja be, amelynek segítségével a projektfázis első lépéseként vonzó ajánlatokkal keresheti meg a vevőket. Az ajánlat számos elemre kiterjedhet, például szerepelhetnek az ajánlatokban cikkek és szolgáltatások, alapvető kapcsolattartási információk, különleges kereskedelmi megállapodások és engedmények, valamint lehetséges adók és pótdíjak is. 
 

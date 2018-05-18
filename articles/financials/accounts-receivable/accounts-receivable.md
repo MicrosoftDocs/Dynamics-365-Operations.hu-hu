@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-receivable-home-page"></a>Kinnlevőségek kezdőlap
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Kinnlevőségek szakasz a vevői számlák és a beérkező kifizetések nyilvántartására szolgál. 
 

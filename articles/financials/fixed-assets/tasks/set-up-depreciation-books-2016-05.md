@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-depreciation-books"></a>Értékcsökkenési könyvek beállítása  
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a feladat-útmutató új értékcsökkenés könyvet hoz létre, illetve azt egy tárgyieszköz-csoporthoz társítja.  Ez a Könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.
 

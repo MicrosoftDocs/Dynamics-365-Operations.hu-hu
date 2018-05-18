@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-return-order"></a>Beszerzési visszárurendelés létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan hozzon létre beszerzési visszárurendelést a Jóváírás művelettel, hogy átmásolja a sorokat a szállítói számla dokumentumából egy új Beszerzési rendelésbe. Azt is bemutatja, hogyan lehet a rendelést megerősíteni és visszaküldeni árukat a szállítónak. Az eljárásban mutatott példa használható az USMF demo adatok cégben. Ezt a feladatot általában a beszerzési ügynök végzi el.
 

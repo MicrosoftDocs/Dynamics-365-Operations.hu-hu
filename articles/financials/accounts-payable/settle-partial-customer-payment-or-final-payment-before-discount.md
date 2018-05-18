@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Részleges vevői kifizetés kiegyenlítése és az utolsó részlet teljes kiegyenlítése a készpénzfizetési engedmény dátuma előtt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk olyan eseteket mutat be, amelyek megmutatják, hogyan regisztráljon részfizetéseket egy ügyfélhez és hogyan vegye igénybe a készpénzfizetési engedményeket a készpénzfizetési engedményi időszakban.
 

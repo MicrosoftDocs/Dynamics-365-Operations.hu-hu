@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-asset"></a>Tárgyi eszköz létrehozása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az útmutató-feladat az USMF bemutatócéget használja.  Új tárgyi eszközt hoz létre a Tárgyi eszköz lista oldalának segítségével.
 

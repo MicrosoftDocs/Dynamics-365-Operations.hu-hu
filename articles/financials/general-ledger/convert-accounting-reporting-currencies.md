@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Könyvelési vagy jelentési pénznem átváltása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Egy vállalat, amelynek módosítania kell a könyvelési pénznemét vagy a jelentési pénznemét, két lehetőség közül választhat. Az első lehetőség új vállalat létrehozása, és új kezdés. A rendelkezésre álló másik lehetőség a könyvelési, illetve a jelentési pénznem átváltási folyamatának futtatása. Ez az egy rendkívül hosszú ideig futó folyamat, amely minden tranzakciót módosít a rendszerben. A folyamat futtatása előtt némi beállítás is szükséges.
 

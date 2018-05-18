@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-online-store"></a>Online áruház konfigurálása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk olyan témakörökre mutató hivatkozásokat tartalmaz, amelyek segítenek az online áruház központi konfigurálásában és kezelésében.
 

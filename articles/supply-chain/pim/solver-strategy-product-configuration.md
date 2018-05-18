@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="solver-strategy-for-product-configuration"></a>Feloldási stratégia termékkonfigurációhoz
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan használhatja a feloldási stratégiát a termékkonfiguráció teljesítményének javítása érdekében.
 

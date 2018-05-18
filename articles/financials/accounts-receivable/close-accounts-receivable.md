@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-accounts-receivable"></a>Kinnlevőségek modul bezárása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az alábbi táblázat felsorolja azokat az oldalakat, amelyeken elvégezhetők a Fiók kinnlevőségeinek üzleti folyamat bezárása.
 

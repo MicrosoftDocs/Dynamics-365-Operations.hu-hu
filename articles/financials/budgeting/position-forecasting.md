@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="position-forecasting"></a>Beosztás előre jelzése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A dolgozókhoz kapcsolódó kiadások gyakran a szervezet költségeinek nagy részét alkotják. A pozíció-előrejelzés lehetővé teszi hogy megtervezze ezeket a költségeket, és beleszámolja őket költségvetések tervezetébe.
 

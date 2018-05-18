@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="report-as-finished-to-a-plate-controlled-location"></a>Jelentés készként egy azonosítótábla-vezérelt helyre  
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez a Feladat útmutató a készként történő jelentés példáját mutatja be azon a helyen, amely nem azonosítótábla-vezérelt. Az alkalmazható munkairányelvek ezen feladat előfeltételei. A korábbi feladat útmutató a munkairányelvek beállítását mutatta be. Ez a feladat 7.0.1-es vagy újabb verziós Dynamics AX alkalmazást igényel.
 

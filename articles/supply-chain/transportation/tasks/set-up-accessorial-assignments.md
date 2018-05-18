@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-accessorial-assignments"></a>Kiegészítő szolgáltatási megbízások beállítása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan állíthat be kiegészítő szolgáltatást. Ezt általában egy szállítási koordinátor végzi. Az útmutató használata előtt futassa le a „Központi kiegészítő szolgáltatások díjainak és kiegészítő alaptermékek beállítása” útmutatót.
 

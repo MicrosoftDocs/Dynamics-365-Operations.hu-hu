@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-adjustments-and-discounts"></a>Ármódosítások és engedmények
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a cikk a Microsoft Dynamics 365 for Retail Kiskereskedelem és kereskedelem moduljának ármódosítások és kedvezmények részeiről biztosít információkat.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="chart-of-accounts-delimiter-must-be-unique"></a>A számlatükör-elválasztónak egyedinek kell lennie.
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Microsoft Dynamics AX 2012-ben használható volt ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. In Dynamics 365 for Finance and Operations rendszerben nem használható ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. Ha egy elválasztó ismétlődik, frissítés után módosíthatja. 
 

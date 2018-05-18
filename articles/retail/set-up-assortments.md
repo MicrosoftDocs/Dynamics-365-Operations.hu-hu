@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-assortments"></a>Szortimentek beállítása
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a cikk leírja, hogy mi a szortiment, és elmagyarázza, hogyan kell beállítani a szortimenteket Microsoft Dynamics 365 for Retail programban.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="vat-exchange-rate-overview"></a>Áfa átváltási arány áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör az áfaszámítás árfolyamairól nyújt tájékoztatást. Az áfa kiszámításához választott átváltási árfolyam eltérhet a vállalat könyvelési funkciói esetében alkalmazott átváltási árfolyamtól. Amikor külföldi pénznemben lévő dokumentumot adnak fel, az esetleges árfolyamkülönbségek a meghatározott főkönyvi számlákra kerülnek.
 

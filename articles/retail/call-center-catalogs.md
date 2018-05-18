@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="call-center-catalogs"></a>Hívásközpont-katalógusok
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A cikk a Microsoft Dynamics 365 for Retail-katalógusok hívásközpont-specifikus funkcióit ismerteti.
 

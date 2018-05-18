@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="product-configuration-models-overview"></a>Termékkonfigurálási modellek áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a termékkonfigurálási modellekkel kapcsolatos szakkifejezéseket és fogalmakat határozza meg. A termékkonfigurálási modellek általános termékszerkezet felépítését teszik lehetővé, amely számos termékváltozat konfigurálásához használható egyetlen termékhez.
 

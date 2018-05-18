@@ -28,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="fixed-assets-depreciation-methods-for-hungary"></a>Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a magyarországi jogi személyek tárgyi eszközeinek értékcsökkenésével kapcsolatban tartalmaz tájékoztatást. Magyarországon a következő négy országspecifikus értékcsökkenési mód létezik:
 

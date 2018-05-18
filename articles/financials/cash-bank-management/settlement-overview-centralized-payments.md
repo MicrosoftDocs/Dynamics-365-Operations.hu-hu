@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Kiegyenlítés áttekintése (központosított kifizetések)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Így nem szükséges ugyanazt a tranzakciót több jogi személyhez bevinni, valamint a fizetési javaslat folyamatának, a kiegyenlítés folyamatának, a nyitott tranzakciók szerkesztésének és a lezárt tranzakciók szerkesztésének leegyszerűsítésével időt takarít meg a központosított kifizetéseknél. 
 

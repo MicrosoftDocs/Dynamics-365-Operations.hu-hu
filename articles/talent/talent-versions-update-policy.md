@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="microsoft-dynamics-365-for-talent-system-requirements-and-update-policy"></a>A Microsoft Dynamics 365 for Talent rendszerkövetelményei és frissítési irányelve
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Talent rendszerre vonatkozó rendszerkövetelményeket sorolja fel. Ezenkívül ismerteti a frissítési irányelvet is.
 

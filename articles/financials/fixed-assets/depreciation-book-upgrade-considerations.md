@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Értékcsökkenési könyv frissítésének áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek. A Microsoft Dynamics 365 for Operations 1611-es verziójában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv. Ez a témakör olyan szempontokat ismertet, amelyeket figyelembe kell venni a frissítéshez. 
 
@@ -62,17 +62,17 @@ Mielőtt futtatná az adatfrissítést, meg kell ismernie azt a két lehetőség
 A paraméterek a ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans osztály elején találhatók. 
 
 *// Adja meg a bizonylatok felosztásának előnyben részesített módszerét* 
-*// igaz, ha egy meglévő számsorozat kódját szeretné használni* 
-*// hamis, ha a rendszer által meghatározott számsorozatot (alapértelmezett) szeretné használni* const boolean NumberSequenceUseExistingCode = false;  
+ *// igaz, ha egy meglévő számsorozat kódját szeretné használni* 
+ *// hamis, ha a rendszer által meghatározott számsorozatot (alapértelmezett) szeretné használni* const boolean NumberSequenceUseExistingCode = false;  
 
 *// Ha a rendszer által definiált számsorozatú megközelítést használja, adja meg a számsorozat paramétereit.*
-*// Új számsorozat jön létre ezekkel a paraméterekkel.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
+ *// Új számsorozat jön létre ezekkel a paraméterekkel.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *// Ha a meglévő számsorrenden alapuló megközelítést használja, adja meg a meglévő számsorozat kódját.* 
-*// Meglévő számsorozatok esetében a bizonylatok kiosztása soronként fut le.* const str NumberSequenceExistingCode = ''; *// Adja meg a meglévő számsorozat hatókörét* 
-*// igaz, ha a meghatározott számsorozat meg van osztva* 
-*// hamis, ha a megadott számsorozat egyes vállalatokra vonatkozik* 
-*// A rendszer által definiált számsorozat kerül használatra, ha nem található a megadott hatókörű számsorozatkód.* állandó logikai NumberSequenceExistingIsShared = hamis; 
+ *// Meglévő számsorozatok esetében a bizonylatok kiosztása soronként fut le.* const str NumberSequenceExistingCode = ''; *// Adja meg a meglévő számsorozat hatókörét* 
+ *// igaz, ha a meghatározott számsorozat meg van osztva* 
+ *// hamis, ha a megadott számsorozat egyes vállalatokra vonatkozik* 
+ *// A rendszer által definiált számsorozat kerül használatra, ha nem található a megadott hatókörű számsorozatkód.* állandó logikai NumberSequenceExistingIsShared = hamis; 
 
 Ha a konstansok megváltoztak, újra kell építenie az osztályt tartalmazó projektet. 
 

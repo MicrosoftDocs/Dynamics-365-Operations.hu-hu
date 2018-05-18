@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-routes"></a>Konfigurációs útvonalak meghatározása
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja a konfigurációs csoportok megjelenését meghatározó konfigurációs útvonal megadását. Ez az eljárás az USMF bemutatócéget használja. Ez az hatodik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-kombinációk létrehozását ismerteti.
 

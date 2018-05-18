@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>A termelési útvonalakban használt költségkategóriák
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk tájékoztatást ad az útvonalakat használó gyártási környezetekre vonatkozó költségkategóriákról.
 

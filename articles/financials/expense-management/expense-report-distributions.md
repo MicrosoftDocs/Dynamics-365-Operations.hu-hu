@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>Felosztások egy költségjelentésben
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Ha a költségjelentésre költségeket visz fel, a költséget több projekt, jogi személy, pénzügyi dimenzió vagy számla között lehet megosztani a szervezetben.
 

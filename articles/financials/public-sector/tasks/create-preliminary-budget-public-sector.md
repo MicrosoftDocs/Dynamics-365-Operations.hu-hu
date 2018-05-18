@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>Előzetes költségvetés létrehozása az állami szektor részére
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Egy adott költségvetési modellre és dimenzió értékekre létrehozhat előzetes költségvetési tételjegyzék-bejegyzéseket. A tényleges költségvetés jóváhagyása után létrehozhat eredeti költségvetési tételjegyzék-bejegyzéseket. Ez az eljárás az állami szektor partícióban lévő PSUS bemutató vállalati adatok használatával készült.
 

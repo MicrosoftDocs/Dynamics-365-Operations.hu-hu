@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-hardware-station"></a>Hardverállomás létrehozása és hozzárendelése
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás végigveszi, hogyan hozhat létre egy új hardverállomást. Egy új hardverprofillal új hardverállomásokat adhat hozzá egy előre definiált üzlethez (vagy üzleti csatornához). Ez az eljárás az USRT cég adatait használja, mint bemutatóadatokat.
 

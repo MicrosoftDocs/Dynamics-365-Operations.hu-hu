@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="dimension-hierarchy"></a>Dimenzióhierarchia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör tájékoztatást tartalmaz a dimenzióhierarchiákkal kapcsolatban. Dimenziókészlet-hierarchia segítségével határozza meg a jelentés szerkezetét, a költségirányelveket és a biztonsági beállításokat a költségkönyvelésben.  
 
