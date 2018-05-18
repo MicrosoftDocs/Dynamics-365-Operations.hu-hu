@@ -10,7 +10,12 @@
 ## [Értékelési másolat beszerzése](dev-tools/get-evaluation-copy.md)
 ## [Regisztrálás előfizetésre](dev-tools/sign-up-preview-subscription.md)
 ## [Fejlesztői környezet telepítése és hozzáférés](dev-tools/access-instances.md)
-## [Fejlesztési rendszerkövetelmények](dev-tools/development-system-requirements.md)
+### [Fejlesztői virtuális gép konfigurálása](dev-tools/configure-developer-vm.md)
+### [Új felhasználó létrehozása fejlesztési gépen](dev-tools/enable-development-machine.md)
+### [Rendszergazdai hozzáférést nem engedélyező virtuális gépek fejlesztése és összeállítása – GYIK](sysadmin/VMs-no-admin-access.md)
+### [Helyi környezet átnevezése a Visual Studio Team Services-hozzáférés engedélyezéséhez](migration-upgrade/vso-machine-renaming.md)
+### [Fejlesztési rendszerkövetelmények](dev-tools/development-system-requirements.md)
+## [Verziókövetés, metaadatok keresése és navigáció](dev-tools/version-control-metadata-navigation.md)
 ## Flottakezelés – mintaalkalmazás
 ### [Flottakezelés – mintaalkalmazás](dev-tools/fleet-management-sample.md)
 ### [Flottakezelés – mintaalkalmazás áttekintése](dev-tools/introduction-fleet-management-sample.md)
@@ -22,7 +27,8 @@
 ### [Buildműveletek](dev-tools/build-operations.md)
 ### [Kódszerkesztő](dev-tools/code-editor.md)
 ### [Modell és adatmodellelemek létrehozása](dev-tools/create-data-model-elements.md)
-### [Új felhasználó létrehozása fejlesztési gépen](dev-tools/enable-development-machine.md)
+#### [Elnevezési irányelvek](extensibility/NamingGuidelines.md)
+#### [A modelltestreszabási és elavulási funkciók kikapcsolása](dev-tools/lock-models.md)
 ### [Testreszabás-elemzési jelentés](dev-tools/customization-analysis-report.md)
 ### [Elemtervezők](dev-tools/element-designers.md)
 ### [Elemhasználat](dev-tools/element-usage.md)
@@ -30,9 +36,8 @@
 ### [Metaadat-keresés a Visual Studio szolgáltatásban](dev-tools/metadata-search-visual-studio.md)
 ### [Modellek](dev-tools/models.md)
 ### [Projektek a Dynamics 365 for Finance and Operations szolgáltatásban](dev-tools/projects.md)
-### [Visual Studio-eszközök és bővítmények](dev-tools/developer-tools-add-ins.md)
-### [Kapcsolja ki a modell testreszabási és elavulási funkciókat](dev-tools/lock-models.md)
-### [Frissítse a Visual Studio fejlesztői eszközöket](dev-tools/update-development-tools.md)
+### [Visual Studio-eszközök és -bővítmények](dev-tools/developer-tools-add-ins.md)
+### [A Visual Studio fejlesztői eszközeinek frissítése](dev-tools/update-development-tools.md)
 ## X++ programozási nyelv
 ### [X++ és hibakeresési funkciók ](dev-tools/new-x-debugger-features.md)
 ### [Keressen X++ hibákat a termelési adatbázis egy példányában](dev-tools/debug-x-issue-against-copy-of-production.md)
@@ -104,7 +109,7 @@
 #### [W osztályok](dev-ref/w-classes.md)
 #### [X osztályok](dev-ref/x-classes.md)
 
-## [Bővítési honlap](extensibility/extensibility-home-page.md)
+## [Bővíthetőség](extensibility/extensibility-home-page.md)
 ### Bevezetés és az első lépések
 #### [Alkalmazásbővítési tervek](extensibility/extensibility-roadmap.md)
 #### [Bővítési kérelmek](extensibility/extensibility-requests.md) 
@@ -261,9 +266,9 @@
 ### [Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével](user-interface/task-recorder-training-docs.md)
 
 # [Mobil platform](mobile-apps/platform/mobile-platform-home-page.md)
-## Első lépések
-### [Első lépések](mobile-apps/platform/mobile-platform-getting-started.md)
+## [Első lépések](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [Felépítés](mobile-apps/platform/mobile-platform-architecture.md)
+### [Üzleti logika események – áttekintés](mobile-apps/platform/business-logic-events-overview.md)
 ### [Oldaltervezési irányelvek](mobile-apps/platform/page-design-guidelines.md)
 ### [Művelettervezési irányelvek](mobile-apps/platform/action-design-guidelines.md)
 ### [Képernyőtervezési követelmények](mobile-apps/platform/form-design-requirements.md)
@@ -407,9 +412,9 @@
 ### [Konfigurációs adatcsomagok](data-entities/configuration-data-packages.md)
 ### [Konfigurációs adatok másolása vállalatok között](data-entities/copy-configuration.md)
 ### [Konfigurációs adatsablonok](data-entities/configuration-data-templates.md)
-### [Több munkalapot tartalmazó adatsablonok](data-entities/excel-template-multiple.md)
-### [Entitás változásainak nyomon követése.](data-entities/entity-change-track.md)
-
+### [Több munkalap sablonokat adatok](data-entities/excel-template-multiple.md)
+### [Entitás változásainak nyomon követése](data-entities/entity-change-track.md)
+### [Konfigurációs kulcsok és adatentitások](data-entities/config-key-entities.md)
 ### [Normál adatentitásokkal kapcsolatos információk](data-entities/data-entities-report.md)
 
 
@@ -418,6 +423,7 @@
 ### [Bevált eljárások a kuponok Általános napló entitással történő importáláshoz](data-entities/tips-tricks-import-general-journal-entity.md)
 
 ## Fejlesztés adatentitásokhoz
+### [Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz](dev-tools/design-best-practices.md)
 ### [Új adatentitások létrehozása](data-entities/build-consuming-data-entities.md)
 ### [Adatentitás-tulajdonságok](data-entities/behavioral-properties-data-entities.md)
 ### [Számítási oszlopok és virtuális mezők létrehozása](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,14 +434,17 @@
 ### [Metaadat-tulajdonságok](data-entities/behavioral-properties-data-entities.md)
 ### [Hitelesítések, alapértékek és nem feltérképezett mezők](data-entities/validations-defaults-unmapped-fields.md)
 ### [Biztonság és adatentitások](data-entities/security-data-entities.md)
+### [Egy csak olvasható entitás létrehozása, amely elérhetővé teszi a pénzügyi dimenziókat](financial/read-only-entity-financial.md)
+ 
+
 
 ## [Használja saját adatbázisát](analytics/export-entities-to-your-own-database.md)
 
 
 ## [Adatfeladat automatizálása](data-entities/data-task-automation.md)
 
-## [Erőforrások egy GDPR adatkérelem megválaszolására](gdpr/gdpr-home-page.md)
-### [Útmutató a Microsoft Dynamics 365 for Finance and Operations rendszerben használt GDPR-hez](gdpr/gdpr-auditing-sensitive-data.md)
+## [Erőforrások egy GDPR-adatkérelem megválaszolására](gdpr/gdpr-home-page.md)
+### [Útmutató a Microsoft Dynamics 365 for Finance and Operations rendszerben használt GDPR-hez](gdpr/gdpr-guide.md)
 ### [Eszközbesorolások](gdpr/gdpr-asset-classification-values.md)
 ### [Személykeresési jelentés használata](gdpr/gdpr-person-search-report.md)
 ### [A Személykeresési jelentés kiterjesztése](gdpr/gdpr-extend-person-search-report.md)
@@ -443,8 +452,9 @@
 ### [Személyes adatokra vonatkozó kérés megválaszolása a Talent használatával](gdpr/respond-dsr-request-talent.md)
 ### [Személyes adatokra vonatkozó kérés megválaszolása a Microsoft Dynamics AX 2012 használatával](gdpr/gdpr-ax2012.md)
 
+## [Adatellenőrzési munkaterület](user-interface/data-validation-workspace.md)
 
-# [Folyamatos szállítás kezdőlap](dev-tools/continuous-delivery-home-page.md)
+# [Folyamatos szállítás](dev-tools/continuous-delivery-home-page.md)
 ## [Fejlesztési és folyamatos szállítási GYIK](dev-tools/continuous-delivery-faq.md)
 ## [Tesztcsomagok kizárása az előállított buildből](dev-tools/exclude-test-packages.md)
 ## [Harmadikfél-modellek és futásidejű csomagok kezelése forrásvezérléssel](dev-tools/manage-runtime-packages.md)
@@ -487,6 +497,7 @@
 ## [Szegmentált bevitelű vezérlő parm metódusai](financial/segmented-entry-control-parm-method-specification.md)
 ## [A pénzügyi dimenziók értékeinek a Microsoft Excel-sablonokban való keresésére vonatkozó lehetőség hozzáadása](financial/add-dimensions-excel-templates.md)
 ## [Árfolyam-szolgáltatók létrehozása](financial/create-exchange-rate-providers.md)
+## [Árfolyam-szolgáltatók létrehozása a Microsoft Dynamics Finance and Operations 8.0 alkalmazásban](financial/create-exchange-rate-8.md)
 
 # Ellátásilánc-fejlesztés
 ## [Gantt fejlesztési útmutató](user-interface/gantt-development-guide.md)
@@ -571,7 +582,7 @@
 ### [Frissítések alkalmazása egy felhőalapú környezetre](deployment/apply-deployable-package-system.md)
 ### [Telepítse a metaadatok gyorsjavítását](migration-upgrade/install-metadata-hotfix-package.md)
 ### [Patch Reporting Services különálló környezetben](migration-upgrade/patch-reporting-service-environment.md)
-### [Frissítse a Visual Studio fejlesztői eszközöket](dev-tools/update-development-tools.md)
+### [A Visual Studio fejlesztői eszközeinek frissítése](dev-tools/update-development-tools.md)
 
 ## Értékcsökkenések
 ### [Elavult API-k](migration-upgrade/deprecated-apis.md)
@@ -579,7 +590,6 @@
 
 # [Rendszerfelügyelet](sysadmin/system-administration-home-page.md)
 ## [Havi platformfrissítések GYIK](sysadmin/faq-platform-monthly-updates.md)
-## [Virtuális gépek, amelyekhez a rendszergazdák nem férhetnek hozzá - gyakori kérdések](sysadmin/VMs-no-admin-access.md)
 ## [Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez](sysadmin/legal-terms-privacy-statement.md)
 ## [Licenckódok és konfigurációskulcs-jelentések](sysadmin/license-codes-configuration-keys-report.md)
 ## [Vállalatközi adatmegosztás](sysadmin/cross-company-data-sharing.md)

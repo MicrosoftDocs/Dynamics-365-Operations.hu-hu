@@ -6,9 +6,10 @@
 ## [Talent-környezet eltávolítása](remove-talent-environment.md)
 ## [Microsoft Dynamics 365 for Talent moduláris alkalmazások létesítése](modular-app-tech-faq.md)
 ## [Talent funkció kibővítése](extend-talent-functionality.md)
+## [Dynamics 365 for Talent: Attract – előnézeti funkciók elérése](access-preview-feature.md)
 
 # [Emberi erőforrásokra vonatkozó stratégia kialakítása](departments-jobs-positions.md)
-## [Feladatösszetevők beállítása](create-job.md)
+## [Feladat-összetevők beállítása](create-job.md)
 ## [Részleg létrehozása és társítása a szervezeti hierarchiához](create-department-add-department-hierarchy.md)
 ## [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md)
 ## [Vállalatfüggő HR-paraméterek beállítása](set-up-company-specific-hr-parameters.md)
