@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 825dba31a7093e9d9460f5aab59a96507dafeb8a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9768154e117ca09ae84c6a9c82d43000752c2b34
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a>Naplóbejegyzések és tranzakciók megtekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a napló bejegyzések és tranzakciók megtekintésének számos módját ismerteti. 
 
@@ -54,9 +54,9 @@ A pénzügyi jelentéseken kívül a következő főkönyvi jelentések állnak 
 -   **Tranzakció eredete** – Ez a tranzakció jelentés mutatja a számlát napló szerint, és tranzakció, könyvelés és jelentési pénznem szerint. Ezen felül megjeleníti napló összes ellentételként használt sorát.
 
 
-## <a name="see-also"></a>Lásd még
+## <a name="additional-resources"></a>További erőforrások
 - [Főkönyvi számlaegyenlegek](general-ledger-account-balances.md) 
-- [Könyvelési források böngészője](..\accounts-payable\accounting-source-explorer.md)
+- [Könyvelési források böngészője](../accounts-payable/accounting-source-explorer.md)
 - [Pénzügyi jelentéskészítés](financial-reporting-getting-started.md)
 - [Naplóbejegyzések megtekintése](tasks/view-journal-entries-or-transactions.md)
 

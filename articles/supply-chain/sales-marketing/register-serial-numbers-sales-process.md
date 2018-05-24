@@ -20,24 +20,22 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Sorozatszámok bejegyzése az értékesítési folyamat során
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ez a témakör bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
 
 Sok vállalat csak szolgáltatási és garanciális célokra akar sorozatszámot rögzíteni, és nem kell sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig. Az ilyen esetekben a Microsoft Dynamics 365 for Finance and Operations lehetővé teszi, hogy bejegyezze a sorozatszámokat a szállítóleveleken vagy számlákon, amikor a termékek eladásra kerülnek. Ha a termékek később visszatérnek Önhöz, akkor minden termék nyomon követhető egy számlához, hogy meghatározza, hogy Ön adta-e el a terméket és hogy a szerviz és garancia kötelezettségek érvényesek-e.
-Vannak-e bármilyen Előfeltételek?
-----------------------------
 
 Engedélyeznie kell a sorozatszámokat az értékesítési folyamathoz az **Értékesítési folyamatban aktív** opció kijelölésével a **Nyomon követési dimenzió csoportok** oldalon. Ezután a következő események zajlanak le a Microsoft Dynamics 365 for Finance and Operations rendszerben:
 -   A **Sorozatszámok** gyorslapon a **Sorozatszám-ellenőrzés** beállítás be van jelölve. Ha ez a jelölőnégyzet be van jelölve, regisztrálnia kell a csomagjegyzéken vagy a számlán található mindegyik elemhez egy sorozatszámát.
@@ -71,8 +69,8 @@ Nem, nem tekintheti meg a készleten lévő sorozatszámmal ellátott cikkeket, 
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Regisztrálhatja a tényleges súllyal rendelkező cikkek sorozatszámait?
 Nem, az értékesítési folyamat során nincs lehetősége sorozatszám regisztrálására a tényleges súllyal rendelkező cikkekhez. Továbbá, ha egy termék tényleges súllyal rendelkező cikként van beállítva, akkor nem rendelhető hozzá egy nyomon követő dimenziócsoporthoz, amely úgy van beállítva, hogy csak az értékesítési folyamat során használjon sorozatszámokat.
-Van lehetőségem a kiskereskedelmi POS-nál regisztrálni a sorozatszámokat?
-------------------------------------------------
+
+## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Van lehetőségem a kiskereskedelmi POS-nál regisztrálni a sorozatszámokat?
 
 Igen, a kiskereskedelmi pénztár (POS) arra utasítja a felhasználót, hogy adjon meg egy sorozatszámot, amikor a felhasználó elad egy cikket ami egy nyomon követési dimenziócsoporthoz van rendelve, ami úgy van beállítva, hogy használjon sorozatszámokat az értékesítési folyamatban.
 

@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c5d13024ba15744f81406c4c8f5d5d33de658d63
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cea4aec80bc0b519a6b393724835555b4d0937a8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-fixed-compensation-plans"></a>Fix kompenzációs konstrukciók létrehozása
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
 
@@ -101,7 +101,7 @@ Az alkalmazott most már hozzárendelhető egy fix kompenzációs konstrukcióho
 
 A rendszer ellenőrzi, hogy az osztály vagy sáv típusú kompenzációs tervhez megadott kompenzációs összeg a minimális és maximális hivatkozási pont között van az alkalmazott munkájához megadott kompenzációs szint alapján. Amennyiben a kompenzációs összeg a megengedett határokon kívül esik, egy figyelmeztetés vagy egy hibaüzenet jelenik meg a fix kompenzációs konstrukcióhoz megadott tűréshatár függvényében.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Kompenzációs konstrukciók](compensation-plans.md)

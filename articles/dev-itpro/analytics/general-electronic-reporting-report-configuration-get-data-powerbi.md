@@ -18,16 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 45717bc1a7093c0282d214fc4ce5fdf153bb14a1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Elektronikus jelentéskészítés konfigurálása adatok Power BI-be történő lehívásához
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan használható az elektronikus jelentési (ER) konfiguráció arra, hogy adatokat vigyen át a Finance and Operations alkalmazásból a Power BI szolgáltatásokba. A jelen témakörben bemutatott példa Intrastat-tranzakciókat alkalmaz olyan üzleti adatokként, amelyeket át kell adni. A Power BI térképes megjelenítése ezt az Intrastat-tranzakciós adatot használja egy olyan nézet bemutatásához, amellyel egy vállalat importálási/exportálási tevékenységeit lehet elemezni a Power BI-jelentésben.
 
@@ -132,12 +132,12 @@ Kattintson az új célhely rekordjának **Beállítások** gombjára. Ezután a 
 2. Válassza ki az Ön által létrehozott, az **Importálás és exportálás részleteire** vonatkozó Power BI-jelentést ahhoz, hogy a jelentést a kijelölt lapon teendőként jelenítse meg. 
 3. Kattintson a teendőre a Finance and Operations azon lapjának megnyitásához, amely megjeleníti az Ön által a Power BI-ban megtervezett jelentést. [![Importálás és exportálás részletezését tartalmazó jelentés](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md)
 
-[Elektronikus jelentések áttekintése](general-electronic-reporting.md)
+[Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
 
 
 

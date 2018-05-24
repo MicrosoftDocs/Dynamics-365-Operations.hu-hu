@@ -3,7 +3,7 @@ title: "Elavult szolgáltatások"
 description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve."
 author: sericks007
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -78,13 +78,13 @@ Ezt a két jelentést már nem támogatja a Finance and Operations. Ehelyett a *
 | **Telepítési beállítás**        | Mind|
 | **Állapot**                       | Elavult: A két jelentés menüpontjai el lettek távolítva a 7.3 verzióban. A jelentések kódja azonban a termékben marad. A terv szerint valamelyik jövőbeli programverzióban eltávolítjuk a kódot. |
 
-### <a name="power-bi-content-packs-published-to-powerbicom"></a>Power PI tartalmi csomagok közzététele a PowerBI.com webhelyen
-A **Költségkezelés**, a **Pénzügyi teljesítmény** és a **Kiskereskedelmi csatorna teljesítménye** tartalomcsomagok, amelyek közzé lettek téve PowerBI.com a webhelyen, elavultak a Microsoft Power BI termékfrissítéseinek következtében. A rendszerfelügyeleti képernyők, amelyeknek a segítségével ezeket a tartalmi csomagokat telepítették a PowerBI.com webhelyre, szintén elavultak a Finance and Operations megoldásban.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource-on
+A **Költségkezelés**, **Pénzügyi teljesítmény** és **Kiskereskedelmi csatorna teljesítménye** tartalomcsomagok - amelyek a [Microsoft AppSource](https://appsource.microsoft.com) webhelyen állnak rendelkezésre - a Microsoft Power BI-ben elvégzett termékfrissítések miatt elavulttá válnak. A rendszerfelügyeleti képernyők, amelyeknek a segítségével ezeket a tartalmi csomagokat telepítették a PowerBI.com webhelyre, szintén elavultak a Finance and Operations megoldásban.
 
 |   |  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Microsoft Power BI termékfrissítések. |
-| **Felváltotta másik szolgáltatás?**   | A Power BI tartalmi csomagok (a PowerBI.com webhelyen közzétéve) helyébe analitikai alkalmazások lépnek, amelyek az adatbázis szintjén teszik lehetővé a megoldásintegrációt. Az analitikai alkalmazásokkal kapcsolatos további tudnivalókat lásd: [Beágyazott Power BI munkaterületek](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Felváltotta másik szolgáltatás?**   | A **Költségkezelés**, **Pénzügyi teljesítmény** és **Kiskereskedelmi csatorna teljesítménye** tartalomcsomagok - amelyek a [Microsoft AppSource](https://appsource.microsoft.com) webhelyen állnak rendelkezésre - olyan analitikus alkalmazásokra cserélődnek le, amelyek az adatbázis szintjén tesznek lehetővé megoldásintegrációt. Az analitikai alkalmazásokkal kapcsolatos további tudnivalókat lásd: [Beágyazott Power BI munkaterületek](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Érintett területek**         | Költségkezelés, pénzügy és kiskereskedelem                                                                                               |
 | **Telepítési beállítás**              | Csak felhő (A PowerBI.com webhellyel való integráció nem támogatott a helyszíni telepítések esetében.)                                                                                                            |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete 2018 2. negyedéve.    |

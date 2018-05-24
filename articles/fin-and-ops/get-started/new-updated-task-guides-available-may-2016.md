@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Új vagy frissített feladat-útmutatók (2016. május)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk felsorolja a Microsoft Dynamics AX (2016. május – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Feladat-útmutatók (2016. május - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat-útmutatók (2016. május - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
 ------------------------------------------------------------------------------------------------
 
 A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához és a Microsoft Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat. Az APQC egyesített könyvtárban kiadott (2016. február) Feladat-útmutatók honosított változatai ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md). <strong>Megjegyzés:</strong> Egy csillag (<strong>\</strong>*) a BPM (Üzletifolyamat-modellező) címsora mellett jelzi, hogy az üzleti folyamat feladat-útmutatója a Dynamics AX 2016 májusi frissítése számára készült a Microsoft Dynamics AX korábbi verzióit nem támogatja.
@@ -186,7 +186,7 @@ A (2016. májusi) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics A
 |                  Egy elemre vonatkozó szállítási megszorítások beállítása                   |     Globális     |
 |                <strong>\</strong>*Raktári munkairányelvek beállítása                 |     Globális     |
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Új Feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)

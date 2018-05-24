@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-configuration"></a>Raktár konfigurálása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat.
 
@@ -112,7 +112,7 @@ Ahogy a név javasolja, a helyutasításokat a munkatranzakciók irányításáh
 
 A különböző helyutasítássorokhoz tartozó tevékenységek meghatározása könnyebbé és gyorsabbá tehető, ha egy előre meghatározott stratégiát használ. Használhatja például az **Bejövő munka nélküli üres hely** stratégiát a raktárban lévő szabad helyek keresésére, vagy használhatja a **FEFO-Köteg lefoglalása** stratégiát a kimenő értékesítési kitárolási listához.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Helyek konfigurálása WMS-aktivált raktárban (Feladat-útmutató)](tasks/configure-locations-wms-enabled-warehouse.md)

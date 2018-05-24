@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eecd53d181a086a5cf295f54f9fa72aa2960c272
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f3d6463ab07aaaf69a16aa0d59840cbe47427335
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését ismerteti a Microsoft Dynamics 365 for Finance and Operations megoldás esetén.
 
@@ -74,10 +74,10 @@ A következő, ER rendszerrel kapcsolatos okok miatt javasolt a ER-konfiguráci�
 
 A fejlesztői környezetben megtervezett ER-konfigurációk feltölthetők a tesztkörnyezetbe a konfiguráció kiértékelése (megfelelő folyamatintegrálás, eredményhelyesség, teljesítmény), illetve a minőségbiztosítás (például szerepkörtől függő hozzáférési jogok helyessége, feladatkörök szétválasztása) céljából. Azok a funkciók használhatóak erre a célra, amelyek engedélyezik az ER konfiguráció adatcseréjét. Végül az igazoltan helyes ER-konfigurációk feltölthetők az LCS-be megosztva a szolgáltatás előfizetőivel, vagy az éles környezetbe belső használatra, a következő ábrán látható módon. ![ER-konfigurációs életciklus](./media/ger-configuration-lifecycle.png)
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
-[Elektronikus jelentések áttekintése](general-electronic-reporting.md)
+[Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
 
 
 

@@ -3,7 +3,7 @@ title: "Kiskereskedelmi eladási ár kezelése"
 description: "Ez a témakör leírja a kiskereskedelmi eladási árak létrehozása és kezelése koncepcióit a Microsoft Dynamics 365 Retail rendszerben."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -18,16 +18,16 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7e6babe1bfec60ece4f84a77bbd838faf7274e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-sales-price-management"></a>Kiskereskedelmi eladási ár kezelése
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör információkat nyújt a kiskereskedelmi eladási árak létrehozása és kezelése folyamatról a Microsoft Dynamics 365 Retail rendszerben. A folyamatban szerepet játszó fogalmakra, valamint a különböző beállítások eladási árra gyakorolt hatására koncentrál.
 
@@ -198,32 +198,6 @@ A Microsoft SQL Server Express alkalmazást gyakran használják a csatorna-adat
 A Microsoft Dynamics 365 alkalmazásban eladási árak beállításakor nem adja meg, hogy beállított ár értéke tartalmazza, vagy nem tartalmazza az adót. Az érték egyszerűen csak az ár. Azonban az **Ár tartalmazza az áfát** beállítása a kiskereskedelmi csatornákon lehetővé teszi a kiskereskedelmi csatornák konfigurálását úgy, hogy azok befoglalják vagy kizárják az áfát az árból. Ez a beállítás a csatornára van beállítva, és még egy vállalaton belül is módosulhat.
 
 Ha befoglalt és kizárt áfával egyaránt dolgozik, nagyon fontos az árak megfelelő beállítása, mert teljes összeg, amelyet a vevő fizet, változni fog, ha az **Ár tartalmazza az áfát** beállítása a csatornán módosul.
-
-### <a name="effect-of-the-price-includes-sales-tax-setting-on-financial-postings"></a>Ár tartalmazza az áfát beállítás hatása a pénzügyi feladásokra
-A bevétel- és engedmény számlákra a főkönyvbe feladott összegeket befolyásolja az **Ár tartalmazza az áfát** beállítás. A következő példa bemutatja, hogyan befolyásolja ez a beállítás a pénzügyi feladásokat.
-
-A példa csak az értékesítési feladásokat érinti, mert az **Ár tartalmazza az áfát** beállítás nincs hatással a készlet költségfeladásokra.
-
-#### <a name="example"></a>Példa
-Ebben a példában az engedményösszegek úgy vannak konfigurálva, hogy a feladásuk elkülönül a bevételtől.
-
-100 USD értékű terméket ad el, amelynek 10%-os az áfakulcsa, és 5%-os engedményt alkalmaz. A következő számlák használatosak az USRT bemutató adatokból:
-
-- **Bevétel:** 401100
-- **Kedvezmény:** 403200
-- **Adó:** 202100
-
-**1. eset: Adó kizárva (más néven a forgalmi adó)**
-
-- **Bevétel:** 100 USD
-- **Kedvezmény:** 5 USD
-- **Adó:** 9,5 USD (= 95 USD 10%-a)
-
-**2. eset: Adót magában foglaló (más néven áfa \[áfa\])**
-
-- **Bevétel:** 90 USD
-- **Engedmény:** 4,5 USD (= 90 USD 5%-a)
-- **Adó:** 10 USD
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>A kiskereskedelmi árképzés és a nem kiskereskedelmi árképzés közötti különbségek
 A kiskereskedelmi árak kiszámítására egyetlen árképzési motor használatos az összes csatornán: hívásközpont, kiskereskedelmi üzlet és online áruházak. Ez segít abban, hogy megvalósíthatók legyenek az egyesített kereskedelmi esetek. 

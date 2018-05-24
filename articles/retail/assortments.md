@@ -3,27 +3,28 @@ title: "Szortiment kezelése"
 description: "Ez a témakör bemutatja a Microsoft Dynamics 365 for Retail szortimentkezelésének az alapfogalmait, és tartalmaz a megvalósítással kapcsolatos szempontokat a projekt számára."
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assortment-management"></a>Szortiment kezelése
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Áttekintés
 A Microsoft Dynamics 365 for Retail *szortimenteket* tartalmaz, amelyekkel csatornákon keresztül kezelhető a termékek elérhetősége. A szortimentek határozzák meg, hogy mely termékek érhetők el bizonyos üzletekben, és egy adott időszakban.
@@ -35,25 +36,25 @@ A csatornához rendelt közzétett szortimentek határozzák meg a csatorna telj
 ### <a name="basic-assortment-setup"></a>Alapvető szortiment beállítása
 A következő példában egy egyedi szortiment van beállítva minden egyes üzlethez. Ebben az esetben csak az 1. termék érhető el az 1. üzletben, és a 2. üzletben csak a 2. termék érhető el.
 
-![Minden egyes termékek elérhető egy üzletben](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Minden egyes termékek elérhető egy üzletben")
+![Minden termék egy üzletben áll rendelkezésre.](./media/Managing-assortments-figure1.png)
 
 Ahhoz, hogy a 2. termék rendelkezésre álljon az 1. üzletben, hozzáadhatja a terméket az 1. szortimenthez.
 
-![1. szortimenthez hozzáadott 2. termék](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "1. szortimenthez hozzáadott 2. termék")
+![A 2. termék hozzáadásra került az 1. szortimenthez.](./media/Managing-assortments-figure2.png)
 
 Másik lehetőségként hozzáadhatja az 1. üzletet a 2. szortimenthez.
 
-![2. szortimenthez hozzáadott 1. üzlet](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "2. szortimenthez hozzáadott 1. üzlet")
+![Az 1. üzlet hozzáadásra került a 2. szortimenthez.](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Szervezeti hierarchiák
 Az olyan helyzetekben, ahol több csatorna osztozik ugyanazon a termékszortimenteken, a szortimentek konfigurálhatók a Retail szortimentszervezeti hierarchia használatával. Ha ebből a hierarchiából ad hozzá csomópontokat, a csomópontban és a gyermek csomópontjaiban levő összes csatorna szerepelni fog.
 
-![Szervezeti hierarchia](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Szervezeti hierarchia")
+![Szervezeti hierarchia](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Termékkategóriák
 Ehhez hasonlóan a termékoldalon is felvehet termékcsoportokat a termék-kategóriahierarchiák használatával. A szortimentek konfigurálását elvégezheti egy vagy több kategóriahierarchia-csomópont hozzáadásával. Ebben az esetben a szortiment tartalmazni fogja az összes terméket a kategória-csomópontból és gyermek csomópontjaiból.
 
-![Termékkategóriák](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Termékkategóriák")
+![Termékkategóriák](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Kizárt termékek vagy kategóriák
 A termékek és kategóriák szortimentekhez adásán kívül a kihagyás beállítás segítségével megadhatja azokat a termékeket vagy kategóriákat, amelyeket ki kell zárni a szortimentekből. A következő példában szeretné az összes terméket felvenni egy adott kategóriába, kivéve a 2. terméket. Ebben az esetben nem kell meghatározni a szortimentet termékről termékre, vagy további kategória-csomópontokat létrehozni. Ehelyett megadható csak a kategória, de a termék kizárásával.
@@ -61,7 +62,7 @@ A termékek és kategóriák szortimentekhez adásán kívül a kihagyás beáll
 > [!NOTE]
 > Ha egy termék egyszerre ki van zárva és be van véve egy vagy szortimentbe/szortimentből meghatározás szerint, a termék mindig kizártként lesz figyelembe véve.
 
-![Kizárt termék](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Kizárt termék")
+![Kizárt termékek](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globális és kiadott termékek
 A szortimentek globális szinten vannak meghatározva, és több jogi személy csatornáit tartalmazhatják. A szortimentekbe befoglalt termékek és kategóriák is több jogi személyek között vannak megosztva. Azonban a termék előbb ki kell adni, mielőtt ténylegesen értékesített, megrendelt, számlált vagy kapott lehet a csatornában (például a pénztárnál \[POS\]). Ebből következően annak ellenére, hogy két különböző jogi személyhez tartozó üzletek megoszthatják azt a szortimentet, amely tartalmazza ugyanazon termékeket, a termékek csak akkor érhetők el, ha azokat a jogi személyek esetében kiadták.

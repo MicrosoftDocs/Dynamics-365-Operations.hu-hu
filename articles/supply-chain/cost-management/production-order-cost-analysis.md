@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 40ac5108216fd6d9eb5cd6e76fefd66828a7da84
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Termelési rendelés költségelemzése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a befejezett és az aktuális termelési rendelésekhez tartozó elvégezhető költségelemzéssel kapcsolatban tartalmaz tájékoztatást. Az Árkalkuláció lap vagy a Költségbecslés és kalkulációk jelentés használatával elemezheti a becsült költségeket és a tényleges költségeket. A becsült és tényleges költségekkel (és mennyiségekkel) kapcsolatos információkat tekinthet meg minden összetevő cikknél, az útvonalműveletnél, és a közvetett költségnél.
 
@@ -59,7 +59,7 @@ Különálló jelentések nyújtanak információt az egyes tranzakciótípusokk
 -   **Feldolgozás alatt lévő késztermékek**– Ez a jelentés felsorolja az aktuális termelési rendeléseket és a készként jelentett tranzakciókat egy adott tranzakciódátumra vonatkozóan.
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [A termelési különbözetek gyakori okai](common-sources-of-production-variances.md)

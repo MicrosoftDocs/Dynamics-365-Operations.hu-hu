@@ -20,16 +20,16 @@ ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8fdebf692bd3cd8500274cc73ca5b0591dba4140
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 30adfefd5ec70ddce348dab2481d518875e01ff2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="install-the-retail-pos-layout-designer"></a>Telepítse a Retail POS-képernyő elrendezéstervezőt
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Az egy-kattintás tervező segítségével különböző a Retail Modern POS (MPOS) és Felhőalapú POS elrendezéseket hozhat létre Fekvő vagy Álló módban üzletek, pénztárgépek, pénztárosok és menedzserek számára.
 
@@ -51,7 +51,7 @@ Az MPOS vagy a Felhőalapú POS grafikus felületét a kasszaelrendezés vezérl
 
 **Ismert probléma:** A tervező nem működik megfelelően a Google Chrome és a Mozilla Firefox böngészőben. Dolgozunk a probléma megoldásán.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [A Retail Modern POS konfigurálása, letöltése, telepítése és aktiválása](retail-modern-pos-device-activation.md)

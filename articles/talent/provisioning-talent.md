@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>A Microsoft Dynamics 365 for Talent létesítése
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 for Talent számára. Ez a témakör feltételezi, hogy a Talent rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik már meglévő Microsoft Dynamics 365 licenccel, amely már tartalmazza a Talent szolgáltatástervet, és nem tudja elvégezni a témakörben szereplő lépéseket, forduljon a támogatási szolgálathoz.
 
@@ -54,17 +54,18 @@ LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
     > A meglévő környezetek megtekintéséhez vagy új környezetek létrehozásához a Talentet létesítő bérlő adminisztrátort hozzá kell rendelni a PowerApps P2 licenchez. Ha szervezete nem rendelkezik PowerApps P2 licenccel, kaphat egyet a CSP-től vagy a [PowerApps árképzési lapon](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Válassza a **Hozzáadás** elemet, majd válassza ki a környezetet, amelybe létesíteni kívánja a Talent rendszert.
-5. Válassza az **Igen** lehetőséget a feltételek elfogadásához és a telepítés megkezdéséhez.
+5. Válassza ki a "Demó adatokat tartalmaz" beállítást, ha azt szeretné, hogy a környezet ugyanazokat a bemutató adatokat tartalmazza, mint amelyeket a Talent tesztverziókban használtak.  Ez hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni.  Ne feledje, hogy a kezdeti telepítéskor ezt a beállítást kell kiválasztania, és a meglévő telepítést később már nem lehet frissíteni.
+6. Válassza az **Igen** lehetőséget a feltételek elfogadásához és a telepítés megkezdéséhez.
 
     Az új környezet megjelenik a bal oldali navigációs panelen látható környezetek listájában. Azonban a környezet nem indítható el mindaddig, amíg a telepítés állapota nem frissül **Telepítve** értékre. Ez a folyamat jellemzően csak pár percig tart. Ha a jogosultságkezelés folyamata sikertelen, kérje az Ügyfélszolgálat segítségét.
 
-6. Válassza a **Bejelentkezés a Talent rendszerbe** az új környezet használatához.
+7. Válassza a **Bejelentkezés a Talent rendszerbe** az új környezet használatához.
 
 > [!NOTE]
 > Ha még nem írta alá a végső követelményeket, a Talent tesztpéldányát telepítheti a projektben. Ezután ezt a példányt használhatja a megoldás tesztelésére mindaddig, amíg alá nem ír. Ha az új környezet teszteléshez használja, ismételje meg ezt az eljárást, hogy létrehozzon egy éles környezetet.
 
 > [!NOTE]
-> Az LCS-n keresztül alkalmazott Talent-környezetek nem tartalmaznak olyan demóadatokat, amelyeknek a konfigurálása HR-feladatokra történ volna, illetve amelyek a Talent-környezetre lennének specifikusak. Ha olyan környezetet szeretne, amely demóadatokat is tartalmaz, akkor javasoljuk, hogy regisztráljon egy 60 napos [Talent-próbakörnyezetre](https://dynamics.microsoft.com/en-us/talent/overview/). Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók az Alapvető HR környezet rendszergazdai felületén keresztül. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Nem úgy tervezték, hogy termelési környezetekben használják őket. Kérjük, vegye figyelembe, hogy amikor a próbakörnyezet 60 nap elteltével lejár, a benne lévő összes adat törlődik, és azok nem is állíthatók helyre. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
+> Mivel csak két LCS környezet van engedélyezve a Talent előfizetés részeként, vegye fontolóra egy ingyenes, 60 napos [Talent próba környezet igénybevételét](https://dynamics.microsoft.com/en-us/talent/overview/). Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók az Alapvető HR környezet rendszergazdai felületén keresztül. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Nem úgy tervezték, hogy termelési környezetekben használják őket. Kérjük, vegye figyelembe, hogy amikor a próbakörnyezet 60 nap elteltével lejár, a benne lévő minden adat törlődik, és azok nem is állíthatók helyre. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
 
 ## <a name="select-a-powerapps-environment"></a>Válasszon PowerApps környezetet
 
@@ -104,35 +105,29 @@ Hajtsa végre az alábbi utasításokat a parancsfájl futtatásához:
 
 1. Töltse le a ProvisionCDSEnvironment.zip fájlt a következő helyről: [ProvisionCDSEnvironment-parancsfájlok](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Bontsa ki a ProvisionCDSEnviroinment.zip fájl teljes tartalmát egy mappába.
+2. A letöltési mappában kattintson a jobb gombbal az előtte letöltött ProvisionCDSEnvironment.zip fájlra, és válassza ki a **Tulajdonságok** lehetőséget.  Ha a párbeszédpanel alján van egy biztonsági megjegyzés, amely arról tájékoztat, "Ez a fájl egy másik számítógépről érkezett, és blokkolva lehet a számítógép védelme érdekében", jelölje be a **Blokkolás feloldása** jelölőnégyzetet, majd kattintson az **Alkalmaz** és az **OK** elemre.
 
-3. Futtassa a Windows PowerShell vagy a Windows PowerShell ISE programot rendszergazdaként.
+3. Bontsa ki a ProvisionCDSEnviroinment.zip fájl teljes tartalmát egy mappába - ez a mappa nem lehet a gyökérmappa.
 
-   Keresse fel a [Végrehajtási házirend beállítása](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) témakört, amelyben bővebben olvashat a végrehajtási házirend beállításáról úgy, hogy futhassanak parancsfájlok.
+4. Futtassa a Windows PowerShell vagy a Windows PowerShell ISE programot rendszergazdaként.
+
+   Keresse fel a [Végrehajtási házirend beállítása](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) témakört, amelyben bővebben olvashat a végrehajtási házirend beállításáról úgy, hogy futhassanak parancsfájlok. A következő használatát javasoljuk: "Végrehajtási házirend beállítása- Korlátlan végrehajtási házirend - Hatókörfolyamat", de ügyeljen arra, hogy kövesse a vállalat biztonsági házirendjét, és zárja be a PowerShell ablakot, amikor elkészült. 
   
-4. A PowerShell alkalmazáson belül keresse meg azt a mappát, ahová kicsomagolta a fájlokat, és futtassa a következő parancsot, az értékek cseréjével az alábbiak szerint:
+5. A PowerShell alkalmazáson belül keresse meg azt a mappát, ahová kicsomagolta a fájlokat, és futtassa a következő parancsot, az értékek cseréjével az alábbiak szerint:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
    **MyNewEnvironment**-et le kell cserélni a környezet nevére. Ez a név az LCS portálon fog megjelenni, és akkor lesz látható, amikor a felhasználók kiválasztják a használandó Talent-környezetet. 
 
-   **YourLocation** helyettesíteni kell a Talent egyik támogatott régiójával: unitedsates, europe, australia. 
+   A **YourLocation** elemet helyettesíteni kell a Talent egyik támogatott régiójával: unitedsates, europe, australia. 
 
    **– Részletes:** opcionális, és részletes információt biztosít, amely elküldhető a támogatásnak problémák esetén.
 
-5. Folytassa a létesítési folyamatot.
+6. Folytassa a létesítési folyamatot.
  
 
-
 ## <a name="grant-access-to-the-environment"></a>Hozzáférés biztosítása a környezethez
-Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak azonban kifejezett módon engedélyezni kell a hozzáférést. Ha hozzáférést szeretne adni, [fel kell vennie a felhasználókat](../dev-itpro/sysadmin/tasks/create-new-users.md), és [hozzájuk kell rendelnie a megfelelő szerepköröket](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) az Alapvető HR környezetben. emellett hozzá kell adni ezeket a felhasználókat a PowerApps-környezethez, hogy hozzáférhessenek az Attract és az Onboard alkalmazásokhoz. Az eljárás részletei itt láthatók. Ha segítségre van szüksége a következő lépésekkel kapcsolatban, olvassa el [A PowerApps adminisztrációs központjának bemutatása](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) című blogbejegyzést.
+Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak azonban kifejezett módon engedélyezni kell a hozzáférést. Ha hozzáférést szeretne adni, [fel kell vennie a felhasználókat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users), és [hozzájuk kell rendelnie a megfelelő szerepköröket](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) az Alapvető HR környezetben. A Talent-et telepítő globális rendszergazdának el kell elindítania az Attract és az Onboard alkalmazást is ahhoz, hogy befejezze az inicializálást és engedélyezze a hozzáférést más bérlő felhasználók számára is.  Amíg erre nem kerül sor, más felhasználók nem tudják elérni az Attract és Onboard alkalmazást, és hozzáférési hibákra vonatkozó üzeneteket fognak kapni.
 
-Ezt az eljárást az a globális rendszergazda hajtja végre, aki a Talent környezetet telepítette.
-
-1. Nyissa meg a [PowerApps adminisztrációs központját](https://preview.admin.powerapps.com/environments).
-2. Jelölje be a megfelelő környezeteket.
-3. A **Biztonság** lapon adja hozzá a szükséges felhasználókat a **Környezetkészítő** szerepkörhöz.
-
-    Ne feledje, hogy a felhasználók a PowerApps környezethez történő manuális hozzáadásának ezen utolsó lépése ideiglenes. Végül automatikusan fog végbemenni, amikor megtörténik a felhasználók hozzáadása az Alapvető HR környezetben.
 

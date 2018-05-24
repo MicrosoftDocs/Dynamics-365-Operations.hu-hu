@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5d379b034c996cb0eff20a44960ba1e2701af81a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-requisition-overview"></a>Beszerzési igénylések áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a beszerzési igénylési munkafolyamatot, valamint a beszerzési igénylés különböző állapotait írja le.
 
@@ -192,7 +192,7 @@ A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a köve
 5.  Hozzon létre beszerzési rendeléseket az összesített igényléssorokhoz vagy beszerzési igényléssorokhoz egy összevonási lehetőségben.
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Felhasználási igénylés létrehozása (Feladat-útmutató)](tasks/create-requisition-consumption.md)

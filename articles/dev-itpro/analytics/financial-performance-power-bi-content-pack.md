@@ -3,7 +3,7 @@ title: "Pénzügyi teljesítmény Power BI-tartalom"
 description: "Ez a témakör ismerteti a pénzügyi teljesítmény Power BI-tartalmat."
 author: kweekley
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1fc3ab4f2a4b4604126ff72c570fc9d85e209f3c
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/13/2018
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> A tartalomcsomag már elavult a [Power BI tartalmi csomagok közzététele a PowerBI.com webhelyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom) dokumentumban ismertetett módon.
+> Ez a tartalomcsomag elavult a következő dokumentációban ismertetettek szerint [Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ez a témakör ismerteti a **Pénzügyi teljesítmény** Microsoft Power BI-tartalmat. Leírja, hogyan kell használni az irányítópultot és a csomagban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 

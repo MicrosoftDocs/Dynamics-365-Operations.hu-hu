@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c055c673443255f3e6dda5e1179e1ef28d90e693
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c2a957038bfad065361b46e85b8195214779cc2d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="optimization-advisor-overview"></a>Optimalizálási tanácsadó – áttekintés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan használhatja az Optimalizálási tanácsadót a Microsoft Dynamics 365 Finance and Operations optimális konfigurációjának biztosítása érdekében.
 
@@ -50,8 +50,6 @@ Szabványos biztonsági házirendek vonatkoznak az optimalizálási lehetősége
 Amikor műveletet hajt végre az optimalizálási lehetőségeken, a rendszer kiszámítja a lehetőség hatását az üzleti folyamatok futásidő-csökkentésének szempontjából. Sajnos ez a funkció nem használható az összes optimalizálási lehetőséghez.
 
 Ha többet szeretne megtudni az Optimalizálási tanácsadóról nézze meg a rövid [A Dynamics 365 for Finance and Operations Optimalizálási tanácsadója](https://www.youtube.com/watch?v=MRsAzgFCUSQ) videót.
-
-> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
 ## <a name="optimization-rules"></a>Optimalizálási szabályok
 
@@ -93,7 +91,7 @@ Ha egy lehetőség nem vonatkozik az Ön szerepére, válassza az **Elrejtés a 
 
 Adott szabályok kiértékelésének inaktiválásához válassza a szabály által létrehozott lehetőséget, majd válassza az **Elemzés inaktiválása** elemet.
 
-## <a name="see-also"></a>Lásd még
+## <a name="additional-resources"></a>További erőforrások
 
 [Új szabályok létrehozása](./create-rules-optimization-advisor.md)
 

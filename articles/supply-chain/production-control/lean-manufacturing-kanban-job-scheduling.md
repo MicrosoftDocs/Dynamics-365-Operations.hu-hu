@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6ac4c1afecb72d4007d830a9927bd3171ddd48ec
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5f1044e6731fd757532e34292109b9d81ca38719
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanbanfeladat ütemezése lean manufacturing céljára
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a kanban-feladat ütemezés feletti vizuális ellenőrzésről és a kanban-feladatok ütemezésének különböző módszereiről nyújt tájékoztatást.  
 
@@ -69,7 +69,7 @@ A napi vagy heti elérhető kapacitást a munkacellához rendelt naptár defini�
 
 A **Kanbanfeladat ütemezése** listaoldal tartalmaz egy olyan adatterületet, amely a kiválasztott munkacella elérhető és lefoglalt kapacitását mutatja időszakokra vonatkoztatva. A termelési folyamatmodellben kiválasztott ütemezési időszakoktól függően az időszakok napok vagy hetek lehetnek.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 

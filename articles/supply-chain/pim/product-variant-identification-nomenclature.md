@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 6a620f2a0105d578d419d3aac816c7d78fbf3e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Termékváltozat-elnevezési rendszer számai és nevei
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan állíthat be termékszám-elnevezési rendszert, amelyre lecserélheti a rögzített [Alaptermék száma - Konfiguráció - Méret - Szín - Stílus] formátumot. Az új elnevezési rendszer célzott formátumú, amely magában foglalja az alaptermék számát, az aktív termékdimenziókat és az Ön által választott szöveghatárolókat. A terméknevekhez is létrehozhat elnevezési rendszert. Végül pedig megszorításon alapuló termékkonfiguráló által létrehozott konfigurációk azonosítására szolgáló elnevezési rendszert is létrehozhat. Ezek az elnevezési rendszerek tetszés szerinti attribútumokat tartalmazhatnak.
 
@@ -192,10 +192,10 @@ Az elnevezési rendszertől függően a rendszer megkísérelhet nem egyedi szá
 
 A konfigurálási folyamat egyik lépésében a rendszer az elnevezési rendszernek megfelelő konfigurációs értéket fog javasolni. Ebben a lépésben manuálisan módosíthatja a konfigurációs értéket. A konfiguráció mentésekor a rendszer ellenőrzi, hogy konfigurációs érték egyedi-e. Ha a megadott érték nem egyedi, akkor megjelenik egy hibaüzenet. A konfiguráció mentéséhez meg kell adnia egy egyedi konfigurációs értéket.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
-[Termékszámozási rendszer létrehozása előre definiált termékváltozatokhoz](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
+[Termékszám elnevezési rendszerének létrehozása előre definiált termékváltozatokhoz](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Termékszámozás-elnevezési rendszer létrehozása konfigurált termékváltozatokhoz](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 

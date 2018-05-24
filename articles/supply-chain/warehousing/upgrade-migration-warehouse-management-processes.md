@@ -1,5 +1,5 @@
 ---
-title: "Termékek és raktárkezelés áttelepítése AX 2012-ről Finance and Operations szolgáltatásra"
+title: "Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Finance and Operations alkalmazásra"
 description: "Ez a témakör áttekintést nyújt a termékek és a raktárkezelés áttelepítési beállításairól."
 author: perlynne
 manager: AnnBe
@@ -19,56 +19,52 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 92d0b4dd9611de4d717f30dc8736c673835bea29
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>Termékek és raktárkezelés áttelepítése AX 2012-ről Finance and Operations szolgáltatásra
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Finance and Operations alkalmazásra
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Finance and Operations rendszer termék- és raktárkezelési áthelyezési beállításairól.
+Ez a témakör áttekintést nyújt a Microsoft Dynamics AX 2012 R3 verzióról, WMSII-modullal, a Microsoft Dynamics 365 for Finance and Operations alkalmazásra frissítésről.
 
-<a name="introduction"></a>Bevezetés
-------------
+A Finance and Operations rendszer már nem támogatja a Microsoft Dynamics AX 2012 rendszerből származó örökölt **WMSII** modult. Ehelyett a **Raktárkezelés** modult használhatja. A WMSII modulban a pénzügyi készlethez ki lehet választani a hely és raklap-azonosító készletdimenziókat, azonban a raklap-azonosító készletdimenzió nem használható pénzügyi készletként, a Finance and Operations alkalmazásban.
 
-A Finance and Operations rendszerre történő frissítéskor a termékek zárolva vannak, ha olyan tárolási dimenziócsoporthoz vannak társítva, amelynek beállításai nem egyeznek a tárolási dimenziócsoport beállításainak a Finance and Operations rendszerben. Azonban a frissítés után a frissítéskor zárolt termékek feloldhatja a **Tárolási dimenziócsoportok módosítása cikkekhez** folyamatban található áttelepítési lehetőségekkel. Ezután feldolgozhatja a termékekhez tartozó tranzakciókat. Megtörténhet, hogy a cikkek egy része már társítva van olyan tárolási dimenziócsoportokhoz, amelyek esetében a Telephely, Raktár és a Hely készlete aktív és fizikailag követik. Ebben az esetben használhatja a **Tárolási dimenziócsoport módosítása cikkekhez** folyamatot ahhoz, hogy engedélyezze ezen cikkek raktárkezelési folyamatokban történő használatát. Ez a funkció akkor hasznos, ha a raktárkezelési funkciót már meglévő cikkekhez szeretné használni.
+Frissítés közben az összes olyan termék, amely hozzá van rendelve egy tárolásidimenzió-csoporthoz, amely használja a raklap-azonosító készletdimenziót, a rendszer azonosítja, zároltként jelöli meg, és nem lesz feldolgozva a frissítéshez.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Frissítés a Finance and Operations rendszerre AX 2012 R3 WMSII használata esetén
-A Finance and Operations rendszer már nem támogatja a Microsoft Dynamics AX 2012 rendszerből származó örökölt **WMSII** modult. Ehelyett az új **Raktárkezelés** modult használhatja. Az előző verziókban a Hely és a Raklap-azonosító készletdimenziókat ki lehetett választani pénzügyi készlethez. A frissítési folyamat részeként azonban a raklap-azonosító készletdimenzió már nem engedélyezhető a pénzügyi készlethez. A raklap-azonosító készletdimenziót használó tárolási dimenziócsoporthoz társított termékeket zárolja és nem dolgozza fel a rendszer.
+A frissítés után a frissítéskor zárolt termékeket feloldhatja a **Tárolási dimenziócsoportok módosítása cikkekhez** folyamatban található áttelepítési lehetőségekkel, ami után a termékekhez tartozó tranzakciók feldolgozhatók.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Cikkek engedélyezése a Finance and Operations rendszerben
+Ez a változás azért szükséges, mert a Finance and Operations rendszerben a cikkek követése a raktárkezelési folyamatok része. E folyamatokhoz minden raktárat és azok helyeit egy helyprofilhoz kell társítani. Ha szeretné használni a raktárkezelési folyamatokat, a következőt kell konfigurálni:
+-   A meglévő raktáraknak engedélyezni kell a raktárkezelési folyamatok használatát 
+-   A meglévő kiadott termékeket egy tárolási dimenziócsoporthoz kell társítani, amely raktárkezelési folyamatokat használ 
 
-A Finance and Operations rendszerben a raktárkezelési folyamatok részeként használt cikkeket olyan tárolási dimenziócsoporthoz kell társítani, amelyben a **Raktárkezelési folyamatok használata** paraméter van kiválasztva. Ha ez a beállítás be van jelölve, aktívvá válnak a Telephely, a Raktár, a Készlet állapota, a Hely és az Azonosítótábla készletdimenziók. Az ilyen típusú a tárolási dimenziócsoportra csak azoknál a cikkeknél válthat át, amelyek már társítva vannak azokkal a tárolási dimenziócsoportokkal, amelyek esetén a Hely készletdimenzió aktív.
+Ha a forrás tárolási dimenziócsoportok a raklap-azonosítót használják, a raklap-azonosító dimenziót használó, meglévő aktuális készlet helyeit egy olyan helyi profilhoz kell társítani, amelyben az **Azonosítótábla követésének használata** paraméter van kiválasztva. Ha a már meglévő raktárak nem engedélyezhetők a raktárkezelési folyamatok használatához, módosíthatja a meglévő aktuális készlet tárolási dimenziócsoportjait olyan csoportokra, amelyek csak a Telephely, a Raktár és a Hely készletdimenziókat kezelik. 
 
-### <a name="items-that-are-blocked-for-inventory-updates"></a>Készletfrissítésekből kitiltott elemek
+> [!NOTE] 
+>  Akkor is módosíthatja a tárolási dimenziócsoportot egy elemhez, ha nyitott készlettranzakciók léteznek.
 
+## <a name="find-products-that-were-blocked-because-of-pallet-id"></a>Raklap-azonosító miatt blokkolt termék megkeresése.
 A frissítés során blokkolt és nem feldolgozható kiadott termékek listájának megjelenítéséhez kattintson ide: **Készletkezelés** &gt; **Beállítás** &gt; **Készlet** &gt; **Készletfrissítésekből kitiltott elemek**.
 
-### <a name="reapplying-blocked-products"></a>Kitiltott termékek újbóli alkalmazása
+## <a name="change-storage-dimension-group-for-blocked-products"></a>Letiltott termék tárolásidimenzió-csoportjának módosítása 
+ 
+A raktárkezelési folyamatok részeként való használathoz a cikkeket olyan tárolási dimenziócsoporthoz kell társítani, amelyben a helyi készlet dimenzió aktív, és a **Raktárkezelési folyamatok használata** paraméter van kiválasztva. Ha ez a beállítás be van jelölve, aktívvá válnak a Telephely, a Raktár, a Készlet állapota, a Hely és az Azonosítótábla készletdimenziók.
 
 A frissítés során blokkolt termékek zárolásának feloldásához ki kell választania egy új tárolási dimenziócsoportot a termékekhez. Ne feledje, hogy akkor is módosíthatja a tárolási dimenziócsoportot, ha nyitott készlettranzakciók léteznek. Ha a frissítés során blokkolt cikkeket szeretné használni, két lehetőség közül választhat:
 
 -   Módosítsa a cikk tárolási dimenziócsoportját olyan tárolási dimenziócsoportra, amely csak a Telephely, Raktár és Hely készletdimenziókat használja. A módosítás miatt a raklap-azonosító készletdimenzió már nincs használatban.
 -   Módosítsa a cikk tárolási dimenziócsoportját olyan tárolási dimenziócsoportra, amely a raktárkezelési eljárásokat használja. A módosítás miatt az Azonosítótábla készletdimenzió aktív lesz.
 
-### <a name="migration-processes"></a>Áttelepítési folyamatok
-
-A Finance and Operations rendszerben a cikkek követése a raktárkezelési folyamatok része. E folyamatokhoz minden raktárat és azok helyeit egy helyprofilhoz kell társítani. Fogalmi szinten ha szeretné használni a raktárkezelési folyamatokat, két folyamatot kell kezelni:
-
--   A meglévő raktáraknak engedélyezni kell a raktárkezelési folyamatok használatát.
--   A meglévő kiadott termékeket egy új tárolási dimenziócsoporthoz kell társítani, amely raktárkezelési folyamatokat használ.
-
-Ha a forrás tárolási dimenziócsoportok a raklap-azonosítót használják, a raklap-azonosító dimenziót használó, meglévő aktuális készlet helyeit egy olyan helyi profilhoz kell társítani, amelyben az **Azonosítótábla követésének használata** paraméter van kiválasztva. Ha a már meglévő raktárak nem engedélyezhetők a raktárkezelési folyamatok használatához, módosíthatja a meglévő aktuális készlet tárolási dimenziócsoportjait olyan csoportokra, amelyek csak a Telephely, a Raktár és a Hely készletdimenziókat kezelik.
-
-### <a name="using-the-warehouse-management-processes"></a>Raktárkezelési folyamatok használata
-
+## <a name="configure-warehouse-management-processes"></a>Raktárkezelési folyamatok konfigurálása
 Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a termékeknek egy tárolási dimenziócsoportot kell használniuk, ahol a **Raktárkezelési folyamatok használata** paraméter van kiválasztva.
 
-#### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Raktárak engedélyezése a raktárkezelési folyamatok használatára
+### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Raktárak engedélyezése a raktárkezelési folyamatok használatára
 
 1.  Hozzon létre legalább egy új helyprofilt.
 2.  Kattintson a **Raktárkezelés** &gt; **Beállítás** &gt; **Raktárkezelési folyamatok engedélyezése** &gt; **Raktár beállításának engedélyezése** lehetőségre.
@@ -77,7 +73,7 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 5.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 6.  Dolgozza fel a módosításokat.
 
-#### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>A cikkek tárolási dimenziócsoportjának módosítása úgy, hogy az raktárkezelési folyamatokat használjon
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>A cikkek tárolási dimenziócsoportjának módosítása úgy, hogy az raktárkezelési folyamatokat használjon
 
 1.  Hozzon létre egy új **Készletállapot** értéket, és rendelje hozzá **Alapértelmezett készletállapot-azonosító** értékként a **Raktárkezelési paraméterek** beállításaihoz.
 2.  Hozzon létre egy új tárolási dimenziócsoportot, ahol a **Raktárkezelési folyamatok használata** paraméter van kiválasztva.
@@ -87,6 +83,4 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 6.  A **Tárolási dimenziócsoport módosítása cikkekhez** lapon adja hozzá a cikkszámokat, a tárolási dimenziócsoportokat és az egységszekvencia-csoportokat. Ezt a lépést közvetlenül az oldalon végezheti el a Microsoft Office-integráció használatával vagy az adatentitás folyamat segítségével az [Adatkezelés](../../dev-itpro/data-entities/data-entities.md) lehetőségben.
 7.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 8.  Dolgozza fel a módosításokat. A készletdimenziók frissítése eltarthat egy ideig. A kötegelt feladatok segítségével figyelemmel követheti a folyamat állapotát.
-
-
 

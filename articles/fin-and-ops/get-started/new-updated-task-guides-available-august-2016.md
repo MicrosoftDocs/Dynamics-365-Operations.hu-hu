@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 838dc40fb3fa2b0de7fa131850754c3674266d73
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-august-2016"></a>Új vagy frissített feladat-útmutatók (2016. augusztus)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A témakör felsorolja a Microsoft Dynamics AX (2016. augusztus – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár.
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Feladat-útmutatók (2016. augusztus - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Feladat-útmutatók (2016. augusztus - minden nyelv) a Microsoft Dynamics AX APQC egyesített könyvtárában
 ---------------------------------------------------------------------------------------------------
 
 A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a Microsoft Dynamics AX 2016. februári kiadásához, a Microsoft Dynamics AX Platform 2. frissítéséhez (2016. augusztus), valamint a Dynamics AX 2016. májusi frissítéséhez szánt, Súgóval használatos Feladat-útmutatókat. A kiadásokkal kapcsolatban további tudnivalókat lásd: [Újdonságok és változások](whats-new-changed.md). A Feladat-útmutatók honosított verziói ebben a könyvtárban érhetők el. A Súgórendszer Feladat-útmutató könyvtárral való összekötéséhez lásd: [Első lépések a Súgóval](help-overview.md).
@@ -97,7 +97,7 @@ A (2016. augusztus – minden nyelv) APQC egyesített könyvtár tartalmazza a M
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Új Feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)

@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 22264f0d82844e63bc7fc42705184c6ecc27e28d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c71ce3045bd91a136288016cb55b460f7ac787ae
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-purchase-orders"></a>Beszerzési rendelések létrehozása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 A cikk ismerteti a beszerzési megrendelés kézi létrehozásának folyamatát és lehetőségeit.
 
@@ -86,7 +86,7 @@ A beszerzési megrendelések konfigurálhatók úgy, hogy azok csak úgy legyene
 
 Előfordulhat, hogy egy adott beszerzési megrendelés végrehajtását késleltetni kell. Például előfordulhat, hogy egy termékre vagy szolgáltatásra vonatkozóan további információkra van szüksége, vagy engedélyeztetnie kell a kiadásokat. Egy rendelés számos módon visszatartható. Például várhat a rendelés megerősítésével. Ha a változáskezelés munkafolyamatot használja, akkor azt is megteheti, hogy nem adja le a rendelést engedélyezésre. Ha egy bizonyos szállító összes rendelését fel kell függesztenie, a szállítót **Felfüggesztve** jelöléssel láthatja el a szállítói alapadatoknál. Felmerülhetnek olyan körülmények, melyek megakadályozzák egy adott rendelés feldolgozását. A feldolgozást hátráltathatja például, ha a túllépte a hitelkeretet, vagy ha a szükséges költségvetési alapok nem állnak rendelkezésre.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Beszerzési rendelések áttekintése](purchase-order-overview.md)

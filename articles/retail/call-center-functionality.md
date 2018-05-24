@@ -3,7 +3,7 @@ title: "Hívásközpont funkciói"
 description: "A témakör a Microsoft Dynamics 365 for Retail hívásközpont-eladások funkcióit ismerteti."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,43 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a>Hívásközpont funkciói
+# <a name="call-center"></a>Hívásközpont 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-A cikk a Microsoft Dynamics 365 for Retail hívásközpont-eladások funkcióit ismerteti.
+A Dynamics 365 for Retail szolgáltatásban a hívásközpont egyfajta kiskereskedelmi csatorna, amelyet az alkalmazásban lehet megadni. Ha meghatároznak egy adott csatornát a hívásközpont-entitásokhoz, az lehetővé teszi, hogy a hívásközponti csatorna felhasználója által létrehozott specifikus adatalapértelmezéseket és a rendelési alapértelmezéseket a rendszer értékesítési rendelésekhez kapcsolja.
 
-A Dynamics 365 for Retail rendszer támogatja a hívásközpontokat is mint kiskereskedelmi csatorna típust. A hívásközpontban a dolgozók telefonon vesznek fel rendeléseket a vevőktől, és értékesítési rendeléseket hoznak léte. A hívásközpont-funkció olyan szolgáltatásokat kínál, amelyekkel könnyebben felvehetők a telefonos rendelések és a vevőszolgálat kezelése a rendelés teljesítésének folyamatában. Például a hívásközpont munkatársai közvetlenül az értékesítési rendelésben adhatják meg a fizetési információkat, és megtekinthetik a költségek és kifizetések részletes összefoglalóját a rendelés leadása előtt. A dolgozók szabályozzák az árképzést is, és az **Értékesítési rendelés** oldalról számos adathoz hozzá tudnak férni a vevőkkel, termékekkel és árakkal kapcsolatban. Mindemellett a hívásközponti továbbfejlesztett funkciókat kínál a vevői előzmények és a rendelés állapotának nyomon követésére. Minden egyes hívásközpont lehet a saját felhasználói, fizetési módok, árcsoportok, pénzügyi dimenziók és szállítási módok. Beállítható, hogy ezek a beállítások a hívásközpont létrehozásakor. Emellett a **Hívásközpont** oldal használatával engedélyezheti vagy letilthatja a következő, csak hívásközpontokra jellemző funkciócsoportokat:
+A hívásközpont funkciói speciális promóciókat tartalmaznak a kiskereskedelmi árra vonatkozóan, valamint katalógusokat, ajándékutalványokat, hűségprogramokat és kuponokat. A hívásközpont által lebonyolított rendeléseket segíti a pénztári (POS) alkalmazás, amely támogatja a párhuzamos csatornákon történő rendelések teljesítését.
 
--   **Rendelés teljesítése**– Ebbe a csoportba tartoznak a fizetéshez és a rendelés teljesítéséhez kötődő funkciók az **Értékesítési rendelés** oldalon.
--   **Irányított eladás** – Ebbe a csoportba tartoznak a forráskódokhoz, parancsfájlokhoz és a katalógus kérelmekhez kötődő funkciók.
+Fontos megjegyezni, hogy míg a hívásközpont-modul a kiskereskedelmin kívül más ágazatokban is használható, a Dynamics 365 for Retail telefonos ügyfélszolgálati alkalmazás jelenlegi kiadása még nem lett optimalizálva vállalatok közötti (B2B) rendelésfeldolgozási forgatókönyvekhez, illetve olyan forgatókönyvekhez, ahol a rendelésekhez nagy mennyiségű értékesítési sorok tartoznak. Azt ajánljuk, hogy azok a felhasználók, akik a hívásközpont funkcióit a szokásos, közvetlenül az ügyféllel lebonyolított műveleteken túlmenően akarják a megrendelések feldolgozására használni, szánjanak rá elegendő időt a telefonos ügyfélszolgálat tesztelésére és annak ellenőrzésére, hogy az teljesíti-e funkcionális és teljesítménybeli elvárásokat.
 
-Miután engedélyezte ezeket a funkciókat a hívásközpont beállításainál, elérhetővé válnak az **Értékesítési rendelés** oldalon azon felhasználók számára, akiket a hívásközponthoz társítottak. A legtöbb szolgáltatás szükséges további beállítási, használat előtt. Mielőtt a felhasználók létrehozhatnának hívásközpontos rendeléseket, hozzá kell adnia ezeket a felhasználókat a hívásközponthoz felhasználóként. Ez a lépés engedélyezi a hívásközpont csatornaspecifikus konfigurációját és funkcióit. Következzék pár példa az elérhetővé váló funkciókra:
+A rendelések létrehozásának támogatásán felül a hívásközpont-modul felhasználóbarát ügyfélszolgálati alkalmazást is tartalmaz, amely megkönnyíti a felhasználók számára, hogy megkeressék a vevői számlákat és áttekintsék az összes kapcsolódó, vevői megrendeléshez kapcsolódó adatot és attribútumot. Az ügyfélszolgálati képernyő lehetővé teszi, hogy a felhasználó gyorsan elérje a rendeléshez kapcsolódó adatokat, amelyek lehetővé teszik, hogy gyorsan megválaszolja az ügyfelektől a rendelésekkel kapcsolatban kapott, leggyakoribb kérdéseket.
 
--   Az irányított értékesítés telemarketinges szövegkönyvek és termékképek konfigurációs lehetőségeit kínálja, amelyek segíthetik és irányíthatják az értékesítőt a rendelés felvétele során.
--   A rendelés nem teljesíthető, amíg az értékesítő nem rögzített legalább egy fizetési módszert.
--   A fel- és keresztértékesítési szabályok is konfigurálhatók, hogy bizonyos termékek népszerűsítésére bíztassák az értékesítőt.
--   Az értékesítő rögzítheti az ügyfél által a rendeléshez használt katalógus forráskódját.
--   Az értékesítő kiskereskedői kupont adhat hozzá a rendeléshez.
--   Az értékesítő folytonossági programokat is értékesíthet.
--   A rendeléseket kézileg vagy automatikusan is várakoztathatja, hogy jelezze, ha további vizsgálat szükséges a rendelés feldolgozása előtt.
+Ez a lap a következőkhöz kapcsolódó dokumentációkhoz biztosít hivatkozásokat: beállítás, konfiguráció és a Dynamics 365 for Retail hívásközpont funkcióinak használata.
 
+## <a name="configure-the-call-center"></a>Hívásközpont konfigurálása
+[Rendelésfeldolgozási beállítások meghatározása](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a>A megrendelés feldolgozásának konfigurálása
+[Csalás-ellenőrzési figyelmeztetések beállítása](set-up-fraud-alerts.md)
+[Megrendelés manuális várakoztatása](work-with-order-holds.md)
 
+## <a name="configure-payment-processing"></a>Fizetés feldolgozásának konfigurálása
+[Fizetési módszerek hívásközpontnál](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a>Közvetlen marketing konfigurálása
+[Hívásközpont-katalógusok](call-center-catalogs.md)
+
+[RFM-profilelemzés beállítása](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Folytonossági programok konfigurálása
+[Folytonossági program beállítása egy hívásközpont számára](set-up-continuity-program.md)
 
 

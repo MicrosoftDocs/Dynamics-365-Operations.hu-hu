@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69766e1bf37955bfd4d7253c1b7881780d491d1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 683d3de59a427df296bb0d3d644f0ec23b3a8e5e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-designer-interface"></a>Jelentéstervező felület
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti, hogyan navigálhat a Jelentéstervezőben és a különböző beállításokat, segítségével az igényeihez igazíthatja a programot. 
 
@@ -220,11 +220,11 @@ A Jelentéstervező eszköztár gyors hozzáférést biztosít a Jelentéstervez
 | [![Oszlopdefiníció gomb](./media/columnc130389.png)](./media/columnc130389.png)                 | Az aktív jelentésdefinícióhoz rendelt oszlopdefiníció megjelenítése.                                                                                                 |
 | [![Jelentési fa definíció gomb](./media/treec130389.png)](./media/treec130389.png)             | Az aktív jelentésdefinícióhoz rendelt jelentési-fa definíció megjelenítése.                                                                                         |
 | [![Jelentésmegjelenítő gomb](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | A Jelentésmegjelenítő megnyitása, és a létrehozott jelentés legfrissebb verziójának megjelenítése. Ez a gomb egy jelentésdefinícióban érhető el, ha már legalább egy jelentést létrehozott. |
-| [![Jelentés létrehozása gomb](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Jelentés létrehozása az aktív jelentésdefiníció alapján. Ez a gomb egy jelentésdefinícióban érhető el.                                                                      |
+| [![Jelentés létrehozása gomb](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Jelentés készítése az aktív jelentésdefiníció alapján. Ez a gomb a jelentésdefiníciókból érhető el.                                                                      |
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)

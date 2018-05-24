@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: faccf695642d236dbf74a324ccecaf91f62638be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-receipt-against-purchase-orders"></a>Termékbevételezés beszerzési rendelések ellenében
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 A cikk ismerteti a termékek átvettként történő regisztrálására vonatkozó különböző opciókat.
 
@@ -61,7 +61,7 @@ Miután a termékbevételezés megtörtént a beszerzési rendelésen, a beszerz
 
 Ezt az oldalt a **Bevételezés** műveletcsoportból, a **Beszerzési** rendelés oldalon érheti el. Ezek az információk a naplókban tartalmazzák a mennyiségekre, dátumokra, és dimenziókra vonatkozó adatokat.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Beszerzési rendelések áttekintése](purchase-order-overview.md)

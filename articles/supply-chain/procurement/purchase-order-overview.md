@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ee9baefc95c24d23edca8438792c9648f77e1bdf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d01ef1c496c7c79795d9d740ee755e84434dfdf1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-order-overview"></a>Beszerzési rendelések áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ez a cikk a beszerzési rendelések általános ismertetését tartalmazza és további hivatkozásokat a beszerzési rendelés különböző szakaszaihoz kapcsolódó cikkekhez .
 
@@ -82,7 +82,7 @@ A **Jóváhagyási állapot** mező akkor használatos, ha egy beszerzési rende
 -   **Megerősített** – Ez az állapot a rendelés megerősítése után kerül hozzárendelésre. Általában ez az állapot van hozzárendelve a rendelés utolsó jóváhagyási állapotához.
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Beszerzési rendelés létrehozása](purchase-order-creation.md)

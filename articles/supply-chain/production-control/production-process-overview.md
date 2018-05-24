@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8a12627db93b131450015539bb92ea4780518ed3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-process-overview"></a>Termelési folyamat áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig. 
 
@@ -78,7 +78,7 @@ Az alábbi lépések a gyártás életciklusában felléphetnek minden rendelés
 12. **Időszakzárás** – Bizonyos költségelszámolási elvek, például ismétlődő átlag, vissza-ürítés költségszámítási, FIFO vagy LIFO kötelezővé teheti az időszakos tevékenységeknek a készlet vagy a pénzügyi időszak zárását. Általában a rendszer megpróbálja jelenteni az összes erőforrás és anyagfogyasztást, továbbá a készlet és selejt korrekciókat, mielőtt az időszak lezárul. Ez a jelentés általában készletmozgási naplók vagy a készlethelyesbítési naplók segítségével történik. Célja, üzemi egység adott időszak alatti teljesítményének gazdasági értékelése. Néhány esetben, amikor hosszútávú rendeléseket használnak, amelyek tartalmazzák a pénzügyi jelentések időtartamait, akkor a termelési naplók segítségével jelenthető a termelési előrehaladás és az erőforrás felhasználás az időszak végéig.
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Termelési visszajelzés](production-feedback.md)

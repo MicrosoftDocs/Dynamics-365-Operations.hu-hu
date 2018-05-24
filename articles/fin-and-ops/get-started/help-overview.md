@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="help-system-overview"></a>Súgórendszer áttekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára. 
 
@@ -60,7 +60,7 @@ A docs.microsoft.com webhely ([docs.microsoft.com/dynamics365/unified-operations
 
 -   **Hozzáférés a legfrissebb tartalmakhoz** – A webhely lehetőséget ad a termékdokumentációk gyorsabb, rugalmasabb létrehozására, szállítására és frissítésére. Ezért segítségével biztosítható, hogy a legfrissebb technikai információkhoz jusson hozzá.
 -   **Szakértők által írt tartalmak** – A WEBHELY szélesebb körű termékdokumentációkat kínál, amelyeket a közösség tagjai a Microsofton kívül és belül is bővíthetnek.
--   **Hozzáférés különböző tartalmakhoz** – A webhely lehetővé teszi, hogy gyorsan hozzáférjen különböző tartalmakhoz a Finance and Operations rendszerben, például Microsoft Office Vegyes prezentációk, feladatsúgók, videók és témakörök.
+-   **Hozzáférés különböző típusú tartalmakhoz** – A webhely gyors hozzáférést biztosít különböző típusú tartalmakhoz a Finance and Operations modulra vonatkozóan, például feladat-útmutatókhoz, videókhoz és témakörökhöz.
 -   **Üzleti folyamatokat támogató tartalmak** – A webhely tartalmaz üzleti folyamat központú tartalmakat, amelyek előnyt jelentenek az Üzletifolyamat-modellező (BPM) programban a Microsoft Dynamics Lifecycle Services szolgáltatásokhoz (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Keresés a docs.microsoft.com-on
@@ -204,7 +204,7 @@ A következő táblázat felsorolja a weboldalainkat. A tartalom-webhelyek a vev
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 [A Finance and Operations súgórendszere (letölthető adatlap)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

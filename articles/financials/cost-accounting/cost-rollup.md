@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 044a943eeba91f5dbebd4dcd70bc8152c4109037
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Költségösszesítési irányelv többletköltségek kiszámítása 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Költségkönyvelés lehetővé teszi, hogy betekintést nyerjen a költségeknek a szervezeten belül szállított termékekhez és szolgáltatásokhoz való kapcsolatáról. A költségek átláthatóságának megítéléséhez kulcsfontosságú a költségfelosztás megvalósítása a megfelelő felosztási alapon a költségobjektumok között. Alapértelmezés szerint a költségfelosztás az elsődleges költségelemre érvényes, ami bizonyos helyzetekben kívánatos, de vannak olyan jellemzői, amelyeket figyelembe kell venni.
 
@@ -297,7 +297,7 @@ A **Költségfelosztás** és a **Költségösszegzési irányelvek** egyértelm
 
 
 
-## <a name="see-also"></a>Lásd még
+## <a name="additional-resources"></a>További erőforrások
 -  [Költségobjektum-dimenziók](cost-objects.md)
 -  [Költségösszetevő-dimenziók](cost-elements.md)
 -  [Dimenzióhierarchiák](dimension-hierarchy.md)

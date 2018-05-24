@@ -1,6 +1,6 @@
 ---
 title: "Termékek és termékváltozatok keresése a rendelésbevitel során"
-description: "Használja a <strong>Cikkszám</strong> mezőt termékek és termékváltozatok kereséséhez értékesítésirendelés-sor vagy beszerzésirendelés-sor manuális létrehozásakor.  Ez a megoldás lehetővé teszi a termékváltozatok gyors megtalálását, ha csak a konfigurációs karakterlánccal vagy a termék egyik dimenziójával rendelkezik."
+description: "Használja a **Cikkszám** mezőt termékek és termékváltozatok kereséséhez értékesítésirendelés-sor vagy beszerzésirendelés-sor manuális létrehozásakor. Ez a megoldás lehetővé teszi a termékváltozatok gyors megtalálását, ha csak a konfigurációs karakterlánccal vagy a termék egyik dimenziójával rendelkezik."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,20 +20,20 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Termékek és termékváltozatok keresése a rendelésbevitel során
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
-Használja a <strong>Cikkszám</strong> mezőt termékek és termékváltozatok kereséséhez értékesítésirendelés-sor vagy beszerzésirendelés-sor manuális létrehozásakor.  Ez a megoldás lehetővé teszi a termékváltozatok gyors megtalálását, ha csak a konfigurációs karakterlánccal vagy a termék egyik dimenziójával rendelkezik.
+Használja a **Cikkszám** mezőt termékek és termékváltozatok kereséséhez értékesítésirendelés-sor vagy beszerzésirendelés-sor manuális létrehozásakor.  Ez a megoldás lehetővé teszi a termékváltozatok gyors megtalálását, ha csak a konfigurációs karakterlánccal vagy a termék egyik dimenziójával rendelkezik.
 
 Előfordul, hogy nem a legjobb helyzet, ha valamiből túl sok van, és ez különösen akkor igaz, ha számos hasonló terméket értékesít, és megpróbálja felidézni a cikkszámokat és a termékek keresési neveit annak érdekében, hogy megtalálja a megfelelő terméket, amelyet fel kell tüntetni az értékesítési rendelésen. Az értékesítési rendelés vagy a beszerzési rendelés sorokban a **cikkszám** mező használható keresési mezőként. Megadhatja a termék nevének, számának vagy méreteinek bármely részét, és a keresés megjeleníti az összes olyan cikket, amely megfelel a keresőkifejezésnek.
 
@@ -47,7 +47,7 @@ Termékek vagy termékváltozatok keresésekor fontos, hogy megértsük, hogyan 
 
 ### <a name="examples"></a>Példák
 
-Az alábbi példák termékek és termékváltozatok használatával illusztrálják a keresés kezelésének módját különböző helyzetekben. **Előfeltétel:**  Az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési paraméterek** &gt; **Keresés típusa** alatt jelölje be a **Teljes egyezés** lehetőséget.
+Az alábbi példák termékek és termékváltozatok használatával illusztrálják a keresés kezelésének módját különböző helyzetekben. **Előfeltétel:** Az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési paraméterek &gt; Keresés típusa** alatt jelölje be a **Teljes egyezés** lehetőséget.
 
 | Terméktípus     | Termék neve    | Termékszám megjelenítése | Cikkszám | Konfiguráció |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -72,7 +72,7 @@ Néhány példa a kereséshez használható termék- és termékváltozat-azonos
 
 Nyissa meg az **Értékesítés és marketing &gt; Beállítás &gt; Keresés &gt; Keresési feltételek** lapot. A **Keresési feltételek** lap lehetővé teszi a vevő, a potenciális vevő és a termékek keresési feltételeinek meghatározását. Győződjön meg arról, hogy a termék keresési feltételek megadásával szűri a lapot. Ehhez váltson a **Termék** lehetőségre a lap menüjében.  
 
-A termékszám megjelenítése hozzáadásához a keresési feltételekhez kattintson az <strong>Új</strong> lehetőségre az oldal menüjében. Ez hozzáad egy új rekordot a <strong>Keresési feltételek</strong> rácsban. Nyissa meg a <strong>Mezőnév</strong> oszlop keresési lehetőségét, és válassza a <strong>DisplayProductNumber</strong> lehetőséget. A termék konfigurációjának a hozzáadásához a keresési feltételekhez, hozzon létre egy új rekordot a <strong>Keresési feltételek**rácsban, és válassza a **configId</strong> lehetőséget a <strong>Mezőnév</strong> oszlopban. Azonos módon hozzon létre egy rekord, amelynél a <strong>Mezőnév</strong> <strong>InventColorId</strong> a színdimenzió esetében, <strong>InventSizeId</strong> a méretdimenzió esetében és <strong>InventStyleId</strong> a stílusdimenzió esetében.
+A termékszám megjelenítése hozzáadásához a keresési feltételekhez kattintson az **Új** lehetőségre az oldal menüjében. Ez hozzáad egy új rekordot a **Keresési feltételek** rácsban. Nyissa meg a **Mezőnév** oszlop keresési lehetőségét, és válassza a **DisplayProductNumber** lehetőséget. A termék konfigurációjának a hozzáadásához a keresési feltételekhez, hozzon létre egy új rekordot a **Keresési feltételek** rácsban, és válassza a **configId** lehetőséget a **Mezőnév** oszlopban. Azonos módon hozzon létre egy rekord, amelynél a **Mezőnév** **InventColorId** a színdimenzió esetében, **InventSizeId** a méretdimenzió esetében és **InventStyleId** a stílusdimenzió esetében.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>2. lépés: Töltse fel a termékkereséshez használt adatbázistáblát
 
