@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8931908fbf643a8154da70d2ad065ea47d2aa4e6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3d7afda9371b4d21e58f2e56de3d477b1c9950a1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="maintain-planned-orders"></a>Tervezett rendelések karbantartása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a tervezett rendelések kezelésével kapcsolatban nyújt információkat. Leírja, hogyan frissítheti a tervezett rendelések állapotát, erősítheti meg őket, és hogy hogyan szűrheti a kijelölttel azonos állapotú tervezett rendeléseket.
 
@@ -47,7 +47,7 @@ A tervezett rendeléseket kezelheti az **Alaptervezés** munkaterületen, a **Te
 
 Amikor egy tervezett rendelést megerősít, akkor az a megfelelő modul rendelések szakaszába kerül. **Megjegyzés:** Ha a jobb gombbal egy tervezett rendelésre kattint, amelynek adott állapota és szűrője van, akkor elérheti a többi ugyanazon állapottal rendelkező tervezett rendelést. Ez a funkció akkor hasznos, ha például ki akarja szűrni az olyan tervezett rendeléseket, amelyek állapota **Jóváhagyva**, hogy megerősíthesse őket.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Alaptervek](master-plans.md)

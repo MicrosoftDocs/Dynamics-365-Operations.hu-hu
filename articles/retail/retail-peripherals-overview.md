@@ -19,16 +19,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ba9c828efc39d45a78500d30295e5d1d6c770c99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 77f475b0937672af268d6da938d5b2a1c9f6448b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-peripherals-overview"></a>Kiskereskedelmi perifériás eszközök – áttekintés
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör ismerteti a kiskereskedelmi perifériák kapcsolatos fogalmakat. A perifériák pénztárhoz (POS) való csatlakoztatásának különböző módszereit írja le, valamint az összetevőket, amelyek a POS-kapcsolat kezeléséért felelősek
 
@@ -786,7 +786,7 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
     -   Fizető terminál
 
     Ha a periféria nem tartozik egyik fenti kategóriába sem, a hardverállomás nem teszi lehetővé a periféria megosztását több pénztáreszköz között.
--   Néha az eszköz-illesztőprogramok okozzák azt, hogy a Common Control Object (CCO) összetevők nem működnek megfelelően. Ha az eszközt nemrégiben telepítették, de nem működik megfelelően, vagy más problémák merülnek fel, gyakran megoldhatja a problémát a CCO-k újratelepítésével. A CCO-k letöltéséhez látogasson el a <http://monroecs.com/oposccos_current.htm> webhelyre.
+-   Néha az eszköz-illesztőprogramok okozzák azt, hogy a Common Control Object (CCO) összetevők nem működnek megfelelően. Ha az eszközt nemrégiben telepítették, de nem működik megfelelően, vagy más problémák merülnek fel, gyakran megoldhatja a problémát a CCO-k újratelepítésével. A CCO-k letöltéséhez látogasson el ide: <http://monroecs.com/oposccos_current.htm>.
 -   Ha gyakran módosítja a perifériákat tesztelés és hibaelhárítás közben, előfordulhat, hogy alaphelyzetbe kell állítania az IIS-t ahelyett, hogy megvárná a gyorsítótár frissítését. Az ISS alaphelyzetbe állításához kövesse az alábbi lépéseket:
     1.  A **Start** menübe írja be a következőt: **CMD**.
     2.  A keresési eredményekben kattintson a jobb gombbal a **parancssorra**, majd kattintson a **Futtatás rendszergazdaként** lehetőségre.
@@ -801,7 +801,7 @@ A következő perifériákat megosztott IIS-hardverállomás használatával tes
     6.  A DLL-gazdagépek bezárása után indítsa újra a Modern POS alkalmazást.
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Kiskereskedelmiperiféria-szimulátor](dev-itpro/retail-peripheral-simulator.md)

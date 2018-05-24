@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
-ms.openlocfilehash: b99d1d30fc320bca5c49921b7c4ccdd7e977f67c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eac70614770189d1e45f347b282c94e645e95b00
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Ajánlások vezérlő hozzáadása egy POS-eszköz tranzakció lapján
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE]
 > A termékajánló szolgáltatás jelenlegi verzióját eltávolítjuk, mivel ezt a funkciót jobb algoritmussal és újabb kiskereskedelmi orientált képességekkel újratervezzük. További információ: [Eltávolított vagy elavult funkciók](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). 
@@ -78,10 +78,10 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 12. Kattintson a **Futtatás most** elemre.
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
-[Személyre szabott termékajánlások áttekintése](personalized-product-recommendations.md)
+[Személyre szabott termékajánlatok áttekintése](personalized-product-recommendations.md)
 
 
 

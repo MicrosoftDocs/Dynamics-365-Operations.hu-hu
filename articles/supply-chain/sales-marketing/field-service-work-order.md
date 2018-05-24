@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 854240bef9d6193c8f0f608687b68e6842fe272c
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -230,7 +230,47 @@ A munkarendelés integrációjához szükséges az értékesítés forrásának 
 6. Állítsa az **Értékesítési forrás típusa** mezőt **Munkarendelés-integráció** értékre.
 7. Válassza a **Mentés** lehetőséget.
 
-### <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
 
-(Hamarosan)
+### <a name="setup-in-data-integration"></a>Adatintegráció beállítása
+
+Ügyeljen arra, hogy legyen **integrációs kulcs** ehhez: **msdyn_workorders**
+1. Lépjen az Adatintegrációra
+2. Válassza ki a **Csatlakozás beállítása** fület
+3. Válassza ki a munkarendelés szinkronizálásához használt csatlakozási beállítást.
+4. Válassza ki az **Integrációs kulcs** fület
+5. Keresse meg a msdyn_workorders elemet, és ügyeljen arra, hogy a **msdyn_name (munkarendelés száma)** legyen hozzáadva. Ha nem látható, kattintson a **Kulcs hozzáadása** elemre a hozzáadáshoz, majd kattintson a **Mentés** elemre a lap tetején.
+
+## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
+
+Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Munkarendelések - értékesítési rendelések (Field Service - Finance and Operations): WorkOrderHeader
+
+Szűrő: (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) és (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Munkarendelések - értékesítési rendelések (Field Service - Finance and Operations): WorkOrderServiceLineEstimate
+
+Szűrő: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és (msdyn_linestatus eq 690970000) és (msdynce_headersystemstatus ne 690970004)
+
+[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Munkarendelések - értékesítési rendelések (Field Service - Finance and Operations): WorkOrderServiceLineUsed
+
+Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és ((msdyn_linestatus eq 690970001) vagy (msdynce_headersystemstatus eq 690970004))
+
+[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Munkarendelések - értékesítési rendelések (Field Service - Finance and Operations): WorkOrderProductLineEstimate
+
+Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és (msdyn_linestatus eq 690970000) és (msdynce_headersystemstatus ne 690970004) és (msdyn_allocated eq true)
+
+[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Munkarendelések - értékesítési rendelések (Field Service - Finance and Operations): WorkOrderProductLineUsed
+
+Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és ((msdyn_linestatus eq 690970001) vagy (msdynce_headersystemstatus eq 690970004) vagy (msdyn_allocated ne true))
+
+[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 

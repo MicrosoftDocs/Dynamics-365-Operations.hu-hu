@@ -20,23 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 58c083b2fa76e90d10ec8a197a4743a9e315db46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 855fdd0e57a7001628b715038785379d5a986789
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="delivery-alternatives"></a>Szállítási alternatívák
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Az értékesítési rendelések a Szállítási alternatívák lap használatával tájékozódhatnak az alternatív rendelésteljesítési beállításokról.
+Az értékesítési rendelések felvevői a **Szállítási alternatívák** oldalt használhatják arra, hogy alternatív lehetőségeket keressenek a rendelés teljesítéséhez.
 
-A Microsoft Dynamics 365 for Operations 1611-es verziójában (2016. november) az értékesítési rendelés a **Szállítási alternatívák** lap használatával tájékozódhatnak az alternatív rendelésteljesítési beállításokról. Az átalakított oldalelrendezés jobb áttekintést nyújt minden alternatív beállításról. Ezenkívül lehetővé teszi a rendelés végrehajtói számára, hogy az aktuális vállalaton túl keressenek teljesítési lehetőségeket. Megtekinthetik a vállalatközi lehetőségeket és a külső szállítók által biztosított lehetőségeket is. A beállítások szállítási dátum szerint történő rendezésével az értékesítési rendelés végrehajtói a szállítási alternatívák intelligens listáját tekinthetik meg. Ezenkívül a paraméterek segítségével jobban kezelhetik a javasolt szállításokat. Mivel a szállítási idő hatással lehet a szállítási dátumokra, az értékesítési rendelés végrehajtói tallózhatnak a szállítmányozók által megadott különböző szállítási beállítások között. Mivel minden javaslat mellett részletes információk jelennek meg, a rendelés végrehajtói megalapozott döntést hozhatnak közvetlenül a **Szállítási alternatívák** lap alapján.
+A **Szállítási alternatívák** oldal elrendezése lehetővé teszi az alternatív lehetőségek áttekintését. Ezenkívül lehetővé teszi a rendelés végrehajtói számára, hogy az aktuális vállalaton túl keressenek teljesítési lehetőségeket. Megtekinthetik a vállalatközi lehetőségeket és a külső szállítók által biztosított lehetőségeket is. A beállítások szállítási dátum szerint történő rendezésével az értékesítési rendelés végrehajtói a szállítási alternatívák intelligens listáját tekinthetik meg. Ezenkívül a paraméterek segítségével jobban kezelhetik a javasolt szállításokat. Mivel a szállítási idő hatással lehet a szállítási dátumokra, az értékesítési rendelés végrehajtói tallózhatnak a szállítmányozók által megadott különböző szállítási beállítások között. Mivel minden javaslat mellett részletes információk jelennek meg, a rendelés végrehajtói megalapozott döntést hozhatnak közvetlenül a **Szállítási alternatívák** lap alapján.
 
 ## <a name="open-the-delivery-alternatives-page"></a>A Szállítási alternatívák lap megnyitása
-A **Szállítási** **alternatívák** lapot az értékesítésirendelés-sorból nyithatja meg.
+Az értékesítési rendelés soráról megnyithatja a **Szállítási alternatívák** képernyőt.
 
 1.  Kattintson a **Termékek és készlet** &gt; **Szállítási alternatívák** lehetőségre.
 2.  Kattintson a **Sor adatai** &gt; **Szállítás** &gt; **Szállítási alternatívák** lehetőségre.
@@ -146,7 +146,7 @@ Az ezen a lapon található adatok a kijelölt alternatív kézbesítési sorhoz
 
 Ez a lap kiemeli a kiválasztott szállítási alternatíva hatását. Ha az **OK** gombra kattint, az értékesítési sor a KIJELÖLT oszlopokban a kijelölt értékekkel frissül. Vegye figyelembe, hogy ha a kiválasztott szállítási alternatíva mennyisége kisebb, mint az értékesítési sorban szereplő mennyiség, szállítási ütemezés jön létre, és a rendelési sor két sorra oszlik: egy sor a kiválasztott mennyiséget, a másik pedig a fennmaradó mennyiséget jeleníti meg. Frissítheti a kereskedelmi sort is, hogy az megfeleljen az ütemezési soroknak, és befolyásolja az árképzést.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Rendelési ígéretek](delivery-dates-available-promise-calculations.md)

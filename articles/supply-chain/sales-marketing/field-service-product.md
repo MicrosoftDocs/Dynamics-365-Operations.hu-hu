@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 699830ce6cd993f3dd3fd4ff744ce5a8b9645c32
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: bf5de13fee6db1b467c1cf4d5cc65b46c67b29fe
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -66,4 +66,12 @@ A Finance and Operations alkalmazásban a **Field Service terméktípus** érté
 - **Készlet:** Termék típusa = Termék és cikk modellcsoport, Raktározott termék = Igaz
 - **Készleten kívül:** Termék típusa = Termék és cikk modellcsoport, Raktározott termék = Hamis
 - **Szolgáltatás:** Terméktípus = Szolgáltatás
+
+## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
+
+Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
+
+### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>A Field Service szolgáltatásokban lévő termékek (Finance and Operations-- Field Service): Termékek - Termékek
+
+[![Sablonleképezés az adatintegrátorban](./media/FSProduct.png)](./media/FSProduct.png)
 

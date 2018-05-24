@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c71d7632cfdafe48eee49c848982dfa85116df75
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Statisztikai kiinduló előrejelzés generálása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk az igény-előrejelzés számítása során használt paraméterekről és szűrőkről nyújt tájékoztatást. 
 
@@ -64,10 +64,10 @@ Előrejelzés generálásakor szűrők alkalmazhatók vállalatközi tervezőcso
 
 Ha az előrejelzés generálása nagyszámú cikk esetén sikertelen, de például egyszerre egy cikk vagy egy cikkfelosztási kulcs esetén sikeres, akkor a nagyobb teljesítmény érdekében bejelölheti a **Kérelemre adott válasz mód használata** jelölőnégyzetet az **Alaptervezés - Beállítás - Igény-előrejelzés** - **Igény-előrejelzési paraméterek - Azure Machine Learning** lapon.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
-[Igény-előrejelzési beállítások](demand-forecasting-setup.md)
+[Igény-előrejelzés beállítása](demand-forecasting-setup.md)
 
 [A kiinduló előrejelzés manuális kiigazítása](manual-adjustments-baseline-forecast.md)
 

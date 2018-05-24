@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 055001c992e70ceacf57cf25a8bf83207d8d7334
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d9c7bcb8cae7b17636ffc0c87bb1147b9d27a6c8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-financial-reports"></a>Pénzügyi jelentések megtekintése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja, hogy hogyan tekintheti meg és hogyan böngészheti a Microsoft Dynamics 365 for Finance and Operations rendszer pénzügyi jelentéseit. Azokról a különféle beállítási lehetőségekről nyújt tájékoztatást, amelyek segítségével módosíthatja a pénzügyi jelentések megjelenését, illetve a bennük lévő adatokat.
 
@@ -84,7 +84,7 @@ Miután befejezte a nyomtatási beállítások megadását, kattintson a **Nyomt
 ## <a name="export-a-financial-report"></a>Pénzügyi jelentés exportálása
 Jelentés exportálásához kattintson a műveleti ablakon az **Exportálás** gombra. A jelentés Microsoft Excelbe lesz exportálva, majd a böngésző megkérdezi, hogy megnyitni vagy menteni akarja-e az exportált fájlt. Az exportálási beállítások, amik a jelentésre vonatkoznak, alkalmazva lesznek az exportált jelentésre.    
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Pénzügyi jelentéskészítés a Microsoft Dynamics AX rendszerben](../../dev-itpro/analytics/financial-reporting-intro.md)

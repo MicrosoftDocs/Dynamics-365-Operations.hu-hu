@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 81dec9d988b22959df5421b7b84ef532a28e1228
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 660d6b2dfb5fbed58a5c28b77aac3bb4604c7d8d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="operations-scheduling"></a>Műveletek ütemezése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör információkat nyújt a műveletek ütemezésével kapcsolatban. A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról.
 
@@ -75,7 +75,7 @@ Műveletütemezés futtatásakor törölheti az útvonal meghatározott részeit
 ## <a name="finite-materials"></a>Véges anyagmennyiség
 Ha véges anyagokkal dolgozik, az ütemezés a termeléshez szükséges anyagok rendelkezésre állásától is függ. Ha nincs elég elérhető összetevő a termeléshez, a termelés elhúzódhat. Az ütemezést az anyagok felhasználására alapozhatja úgy, hogy meghatározza, melyek a termeléshez feltétlenül szükséges anyagok. Ha az optimalizálás az erőforrások kapacitása és anyagok rendelkezésre állásától is függ, a rendszer a termelést ezen megszorítások alapján számolja ki. A termelési rendelés nem ütemezhető amíg a kapacitás és az anyagok egyszerre és a szükséges mennyiségben nem állnak rendelkezésre.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [A műveleti ütemezés beállításai](operation-scheduling-options.md)

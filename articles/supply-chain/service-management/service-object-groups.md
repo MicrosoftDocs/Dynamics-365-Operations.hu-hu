@@ -3,7 +3,7 @@ title: "A szolgáltatás tárgyainak csoportjai"
 description: "Az objektumcsoportok jól használhatók az objektumadatok rendezésére és szűrésére a jelentéseknél és a statisztikáknál."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: fa503ac82286099a0eafc7034d169e165b538e2c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2ab3ed8a8f36f980473b17b5dfed8cb3d0054253
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-object-groups"></a>A szolgáltatás tárgyainak csoportjai 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Az objektumcsoportok jól használhatók az objektumadatok rendezésére és szűrésére a jelentéseknél és a statisztikáknál. Csoportosíthatja például a tárgyakat földrajzi hely vagy típus szerint.
 
@@ -48,6 +48,23 @@ Ezzel a csoportosítási móddal kimutathatja, hogy milyen tárgytípusokon vég
 
 Egy ügyfél telefonál, és be szeretne állítani egy szervizszerződést a HIJ légkondícionálóról. Nincs már rekordja ennél a készüléknél. Beállított azonban egy Légkondícionálók tárgycsoportot, és hozzárendelte ezt a csoportot az összes légkondícionálóhoz. Így gyorsan kikeresheti és azonosíthatja az összes többi légkondícionálót, és ezen tárgyak sablonadataiból szolgáltatásiszerződés-sorokat hozhat létre a HIJ számára. Ha oly módon használja a tárgycsoportokat, akkor gyorsan beállíthatja az új tárgyakat, illetve meghatározhatja a szervizfeladatokat, amelyeket el kell végezni rajtuk. 
 
+## <a name="create-service-object-groups"></a>Szolgáltatás tárgyának csoportjai – Létrehozás
+
+Hozzon létre csoportokat, amelyekhez szolgáltatási objektumokat rendelhet. A szolgáltatási objektumok olyan készletcikkek és egyéb termékek, amelyekhez szolgáltatást nyújtanak. A szolgáltatási objektumok csoportosításával létrehozhat jelentéseket a hasonló és a kapcsolódó szolgáltatási objektumokhoz. Például egy szolgáltatási objektumcsoport állhat két szolgáltatásobjektumból: egy szolgáltatási objektum a csomag, a másik pedig a csomag telepítését magába foglaló szolgáltatás.
+
+Szolgáltatási objektumcsoportok létrehozásához tegye a következőket:
+
+1. Kattintson a **Szolgáltatáskezelés > Beállítás > A szolgáltatás tárgyai > A szolgáltatás tárgyai lehetőségre**.
+
+2. Kattintson az **Új** lehetőségre egy új szolgáltatási objektumcsoport létrehozásához.
+
+3. Írjon be egy egyedi nevet a szolgáltatási objektumcsoport számára, illetve igény szerint adjon meg hozzá leírást.
+
+A **Szolgáltatásobjektumok** képernyő használatával rendelhet szolgáltatási objektumokat a csoporthoz. 
+
+## <a name="see-also"></a>Lásd még
+
+[Szolgáltatási objektumok létrehozása](create-service-objects.md)
 
 
 

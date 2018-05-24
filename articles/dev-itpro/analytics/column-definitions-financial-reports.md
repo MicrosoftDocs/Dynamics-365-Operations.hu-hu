@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 88570a8dc9da6f6a2b4d3a9499e1ea406f681451
-ms.openlocfilehash: 4608f43a3db9308881d4737e49df949190e3ede2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/14/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő vagy építőelem, amely meghatározza az oszlopok tartalmait egy jelentésben. Például a sordefiníciók, az alap oszlopdefiníciókat több jelentésben is használhatják.
 
@@ -488,7 +488,7 @@ A következő példa bemutatja az oszlopleírás azon részét, amely számlaatt
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimenziószűrő az oszlopdefinícióban
 
-Dimenziószűrő használatával korlátozhatók az **FD** oszlopok a dimenzióértékek megadásához. Egy szűrő tartalmazhat egyetlen dimenziót, egy dimenziótartományt vagy dimenziók csoportját. A szűrő is tartalmazhat dimenzióérték-készleteket. Mivel a dimenzióértékek változhatnak, a pénzügyi dimenzióalapú rendszereknek nem kell egy adott hosszúságnak megfelelniük. A szűrő alkalmazására kerül sor, függetlenül attól, hogy a jelentés tartalmaz-e jelentési fát. Bármelyik helyen használhat helyettesítő karaktert (\* vagy ?). Több számla meghatározásakor vesszővel válassza el azokat, például: +Számla=\[1200\], +Számla=\[1100\], Részleg=\[01?\] Ahhoz, hogy egy adott számla minden részlegét megkapja, kizárhatja a Részleg dimenziót a dimenziószűrőből. Például a következő dimenziószűrők ugyanúgy lesznek kezelve:
+Dimenziószűrő használatával korlátozhatók az **FD** oszlopok a dimenzióértékek megadásához. Egy szűrő tartalmazhat egyetlen dimenziót, egy dimenziótartományt vagy dimenziók csoportját. A szűrő is tartalmazhat dimenzióérték-készleteket. Mivel a dimenzióértékek változhatnak, a pénzügyi dimenzióalapú ..\financial-dimensions\dimension-based rendszereknek nem kell egy adott hosszúságnak megfelelniük. A szűrő alkalmazására kerül sor, függetlenül attól, hogy a jelentés tartalmaz-e jelentési fát. Bármelyik helyen használhat helyettesítő karaktert (\* vagy ?). Több számla meghatározásakor vesszővel válassza el azokat, például: +Számla=\[1200\], +Számla=\[1100\], Részleg=\[01?\] Ahhoz, hogy egy adott számla minden részlegét megkapja, kizárhatja a Részleg dimenziót a dimenziószűrőből. Például a következő dimenziószűrők ugyanúgy lesznek kezelve:
 
 -   +Számla=\[1100\], Részleg
 -   +Számla=\[1100\]
@@ -583,7 +583,7 @@ Létrehozhat olyan oszlopot, amely egy megadott oszlop értékeit egy alapszám 
 
 Egy oszlopban szereplő összeget időszakok egy megadott számával oszhat el. Például a **B/időszakok** képlet elosztja a B oszlop értékét a B oszlopban látható időszakok számának Ha a számítás több oszlopra is kiterjed, adja meg a számításban használandó időszakok számát. Például a **(B+C)/időszakok** képlet összeadja a B oszlop és a C oszlop összegeit, majd elosztja az eredményt az időszak értékével.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Sordefiníciók a pénzügyi jelentésben](row-definitions-financial-reporting.md)

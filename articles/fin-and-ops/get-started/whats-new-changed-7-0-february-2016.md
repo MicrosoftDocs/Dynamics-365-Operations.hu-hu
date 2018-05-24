@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab12a55e41cd32c2479eb46796de57926652942f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ba9025aa5394b29bdba80e589c77fa4bd2bd47f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a leírás ismerteti az új vagy módosított a 7.0 alkalmazásverziójú Microsoft Dynamics AX szolgáltatásokat. Ez a 2016 februárjában megjelent verzió tartalmazza mind a platform, mind pedig a pályázat szolgáltatásait.
 
@@ -536,7 +536,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 </tr>
 <tr class="odd">
 <td>(EU) Mennyiség jelentése kiegészítő egységekben az Intrastathoz az egység-átalakítás beállítás segítségével.</td>
-<td>Az Intrastat árucikk kód rendelkezik egy szövegmezővel a kiegészítő egységek azonosítására, a **Termék** kártya pedig rendelkezik egy mezővel a kiegészítő egységek kilogrammban történő azonosítására.</td>
+<td>Az Intrastat árucikk kód rendelkezik egy szövegmezővel a kiegészítő egységek azonosítására,a<strong> Termék</strong> kártya pedig rendelkezik egy mezővel a kiegészítő egységek kilogrammban történő azonosítására.</td>
 <td>A kiegészítő egységek az Intrastat árucikk-kódhoz az Egységek listából kerülnek kiválasztásra. A kiegészítő egységek mennyiségét egységkonvertálási beállítások segítségével számítják ki.</td>
 <td>Ez egyesíti a megközelítést a tranzakció egységeiből történő újraszámításról a kiegészítő egységekre.</td>
 </tr>
@@ -569,7 +569,7 @@ Ez a funkció a gyártott cikkhez rendelt költségszámítási módszerektől f
 |                                                                                                                            |                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                         |
 |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Mit lehet tenni?**                                                                                                       | **Dynamics AX 2012**                                                                                                                                                                                                                                                                          | **Dynamics AX 7.0**                                                                                                                                                                                                                                                                                                                                               | **Miért fontos ez?**                                                                                                                              |
-| Figyelmeztesse a felhasználót, ha egy értékesítési rendelés vagy termelési rendelés nem áll készen szállításra az ütemezett dátumkor.                         | Az Alaptervezés által létrehozott figyelmeztetések neve: *határidő-üzenetek*. A *Határidő* a két fél között létrejött szerződés egy eszköznek a mai napon megállapodott áráról (a *határidő ár*), annak ellenére, hogy a szállítás és fizetés egy jövőbeli időpontban (a *szállítási dátum)* történhet. | A *Határidős üzenetek* és a *határidős dátumok* át lettek nevezve, új nevük: *kiszámított késések* és halasztott dátumok.                                                                                                                                                                                                                                                   | Az AX 2012 rendszerben használt terminológia a nem volt pontos és a hibás fordításokhoz vezetett.                                                               |
+| Figyelmeztesse a felhasználót, ha egy értékesítési rendelés vagy termelési rendelés nem áll készen szállításra az ütemezett dátumkor.                         | Az Alaptervezés által létrehozott figyelmeztetések neve: *határidő-üzenetek*. A *Határidő* a két fél között létrejött szerződés egy eszköznek a mai napon megállapodott áráról (a *határidő ár*), annak ellenére, hogy a szállítás és fizetés egy jövőbeli időpontban (a *szállítási dátum*) történhet. | A *Határidős üzenetek* és a *határidős dátumok* át lettek nevezve, új nevük: *kiszámított késések* és *halasztott dátumok*.                                                                                                                                                                                                                                                   | Az AX 2012 rendszerben használt terminológia a nem volt pontos és a hibás fordításokhoz vezetett.                                                               |
 | Nyerjen gyors betekintést az alaptervezés futtatásának állapotába, a sürgős tervezett rendelésekbe és a tervezett rendelésekbe, amelyek késedelmet okoznak. | Az információ rendelkezésre áll, de több képernyőn található.                                                                                                                                                                                                                       | Az **Alaptervezés** munkaterület egy pillantással áttekinthető adatokat kínál arról, hogy mikor fejeződött be a legutóbbi alaptervezés futtatása, fellépett-e hiba, mik a sürgős tervezett rendelések, és mely tervezett rendelések okoznak késést.                                                                                                                                   | Nagy előnye száramzik a munkaterület nyújtotta áttekintésből. Az Alaptervezés útmutatásához és a termelés növeléséhez releváns adatokat gyűjtött a rendszer egybe. |
 | Az igény-előrejelzések frissítésére használjon Excel formátumot.                                                                                      | Nem érhető el.                                                                                                                                                                                                                                                                                 | Kihasználhatja az Excellel való zökkenőmentes integráció előnyeit, amikor beírja az igény-előrejelzéseket, frissítéseket végez, vagy törli az igény-előrejelzéseket.                                                                                                                                                                                                                             | Segít növelni a hatékonyságot és termelékenységet.                                                                                                          |
 | Becsülje meg a jövőbeli keresletet és hozzon létre keresleti előrejelzéseket a múltbéli tranzakcióadatok alapján.                                  | A Microsoft Dynamics AX 2012 R3-ban az előrejelzési modellt a Microsoft SQL Server elemzési szolgáltatást igény-előrejelzés létrehozásához használják.                                                                                                                                                | Becsülje meg a jövőbeli keresletet a Microsoft Azure gép tanulás felhőszolgáltatás erejével és kiterjeszthetőségével. Használata könnyű, és kiterjeszti az előrejelzési modelleket a gépi tanulásban, hogy megfeleljen a vevői követelményeknek. A szolgáltatás kiválasztja a legjobban összeillő modelleket, és fő teljesítménymutatókat (KPI) kínál fel, amelyeket az előrejelzés pontosságának kiszámításához lehet felhasználni. | Hozzon létre pontosabb előrejelzéseket a gépi tanulási módszerek használatával.                                                                              |
@@ -737,8 +737,7 @@ A <strong>Katalóguskezelés</strong> munkaterület a következő funkciókat te
 
 ### <a name="retail-server-and-data-management"></a>Kiskereskedelmi kiszolgáló és adatkezelés
 
-A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és vállalatok számára, hogy omni csatorna vásárlási tapasztalatot hozzon létre on-line, üzletbe
-ni vagy hívásközponti csatornákon keresztül.
+A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és vállalatok számára, hogy omni csatorna vásárlási tapasztalatot hozzon létre on-line, üzletbe ni vagy hívásközponti csatornákon keresztül.
 
 <table>
 
@@ -1082,7 +1081,7 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Mi az, ami új vagy módosított](whats-new-changed.md)

@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5599135eebfcffdedaaadec86beb214c5c04cbaf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-report-components"></a>A pénzügyi jelentés összetevői
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk ismerteti, hogy a jelentésdefiníciók alkotórészei, más néven az építőelemei hogyan használatosak a pénzügyi jelentéseketben. Ezek az építőelemek tartalmaznak sordefiníciókat, oszlopdefiníciókat és jelentési fa definíciókat. A cikk az építőelemek szervezését és zárolását ismerteti. 
 
@@ -109,10 +109,10 @@ Az építőelem-csoportok importálhatók egy meglévő építőelem-csoportba. 
 Amikor megnyit egy építőelemet, a többi felhasználó csak olvasásra kap hozzáférést ahhoz az elemhez. Előfordulhat, hogy a felhasználók elfelejtik bezárni az építőelemeket, vagy kikapcsolják a rendszerüket az építőelem bezárása nélkül. Így az építőelem továbbra is kivett állapotú marad, és azt a többi felhasználó nem tudja megnyitni. Ilyen esetekben a pénzügyi jelentések rendszergazdája a **Kivett cikkek** párbeszédpanel segítségével, vissza tudja venni a másik felhasználó által kivett állapotban felejtett építőelemeket. **Megjegyzés:** Csak rendszergazda szerepkörrel lehet építőelemet visszavenni a **Kivett cikkek** párbeszédpanel használatával.
 1.  A Jelentéstervező **Eszközök** menüjében kattintson a **Kivett cikkek** lehetőségre.
 2.  A **Kivett elemek** párbeszédpanelen válassza **Az összes felhasználó elemeinek megjelenítése** lehetőséget. A listában megjelenik az összes kivett építőelem és a hozzájuk kapcsolódó felhasználók listája.
-3.  Jelöljön ki egy építőelemet majd kattintson a **Kivétel visszavonása** parancsra.
-4.  Az építőelem visszavételéhez kattintson az **Igen** lehetőségre.
+3.  Jelölje ki a kívánt építőelemet, majd kattintson a **Kivétel visszavonása** parancsra.
+4.  Kattintson az **Igen** gombra az építőelem bevételéhez.
 
-## <a name="see-also"></a>Lásd még
+## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 

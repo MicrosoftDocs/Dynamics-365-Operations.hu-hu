@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6ab1d60839131b3d4bb1782319754ba63d54cfd7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Microsoft Dynamics 365 for Finance and Operations rendszerben. A szállítók a következő munkaterületekről tudnak különböző üzleti folyamatokat végrehajtani:
 
@@ -141,7 +141,7 @@ Szállítóként hozzáférhet a vevő által a szállítói törzsnyilvántart�
 
 Az elérhető adatok tartalmazzák a szállító nevét, címeit, kapcsolattartási adatait, kapcsolattartóit és a hozzájuk tartozó kapcsolattartási adatokat, az azonosító számokat, az Adószámokat, a szállító által a vevőnek történő eladásra jóváhagyott beszerzési kategóriákat, illetve a tanúsítványokkal kapcsolatos tájékoztatást.
 
-## <a name="see-also"></a>Lásd még
+## <a name="additional-resources"></a>További erőforrások
 
 [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md)
 

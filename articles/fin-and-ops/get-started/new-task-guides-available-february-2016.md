@@ -18,16 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 33cd67bda4d4b868b00cb1c0a062de03d3aa6273
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eeb56ec9697447ebd2385f3a0a516fcc9dc1bd3e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-task-guides-february-2016"></a>Új feladatútmutatók (2016. február)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft BPM könyvtáraknak 2016. februárig kiadott feladat-útmutatók listáját tartalmazza.  A közzétett könyvtárak tartalmazzák a Microsoft Dynamics AX APQC Egyesített könyvtárát (2016. február) és az Első lépéseket (2016. február).
 
@@ -719,7 +719,7 @@ Az APQC Egyesített Könyvtár (2016 Február) tartalmazza a Feladat-útmutatók
 
  
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Új vagy frissített Feladat-útmutatók (2016. május)](new-updated-task-guides-available-may-2016.md)

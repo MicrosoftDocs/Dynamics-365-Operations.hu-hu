@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Változó kompenzációs tervek létrehozása
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 A változó kompenzáció teszi ki egy alkalmazott az alapon felüli kifizetéseit, például a bónuszokat vagy a készlet díjakat. A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt használhatna változó kompenzációt és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
 
@@ -100,7 +100,7 @@ Használhatja a **Felülbírálások** lapot az alkalmazotthoz rendelt adott ér
 
 A **Szervezeti felülbírálások** az alkalmazott jutalmának alapját képezik, egy vagy több részleg teljesítménye szerint. A részlegekhez hozzárendelt százalékok teljes összegének 100-nak kell lennie. Az alkalmazott egyéni teljesítménye szintén beleszámít. Ezek a beállítások csak akkor használatosak, ha a **Teljesítménybérezés** van kiválasztva a kompenzációs folyamat futtatása közben.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Kompenzációs konstrukciók](compensation-plans.md)

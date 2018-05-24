@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 1863814d6dd645da8602495858d024fbad2e7149
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 6672e283a5e56b068e3494d53a0fd6dd08253ba9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -95,4 +95,16 @@ Feladat: **Számlasorok**
 Győződjön meg arról, hogy Finance and Operations **Fő számla megjelenítendő értéke** mezője frissül, hogy megfeleljen a kívánt értéknek.
 
 Az alapértelmezett sablonérték **401100**.
+
+## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
+
+Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
+
+### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-headers"></a>Szerződéshez kapcsolódő számlák (Field Service - Finance and Operations): számlák fejlécei
+
+[![Sablonleképezés az adatintegrátorban](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+
+### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Szerződéshez kapcsolódő számlák (Field Service - Finance and Operations): számlák sorai
+
+[![Sablonleképezés az adatintegrátorban](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 

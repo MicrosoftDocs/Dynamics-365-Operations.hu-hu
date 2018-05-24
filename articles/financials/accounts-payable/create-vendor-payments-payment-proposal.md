@@ -1,6 +1,6 @@
 ---
 title: "Szállítói kifizetések készítése fizetési javaslat segítségével"
-description: "Ez a témakör tájékoztatást nyújt a fizetési javaslat beállításairól, és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját. A kifizetési javaslatok segítségével gyakran szállítói számlát is létrehozhat, mert a lekérdezést a kifizetés szállítói számláinak gyors kiválasztására lehet használni, amely olyan feltételeken alapul, mint a határidő vagy a készpénzfizetési engedmény."
+description: "Ez a témakör tájékoztatást nyújt a fizetési javaslat beállításairól, és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Szállítói kifizetések készítése fizetési javaslat segítségével
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör tájékoztatást nyújt a fizetési javaslat beállításairól, és néhány olyan példát is tartalmaz, amely bemutatja a kifizetési javaslatok működésének módját. A kifizetési javaslatok segítségével gyakran szállítói számlát is létrehozhat, mert a lekérdezést a kifizetés szállítói számláinak gyors kiválasztására lehet használni, amely olyan feltételeken alapul, mint a határidő vagy a készpénzfizetési engedmény. 
 
@@ -47,7 +47,7 @@ A fizetési javaslat lekérdezés különféle lapokat tartalmaz, melyek mindegy
 - **Szállítói egyenleg ellenőrzése** – Amennyiben a beállított opció **Igen**, a rendszer ellenőrzi, hogy a szállító rendelkezik-e tartozással, még mielőtt a számla kifizetésre kerülne. Amennyiben egy szállítónak tartozik egyenlege van, a kifizetés nem valósul meg. A szállítónak lehetnek például jóváírásai vagy már feladott, de még nem jóváírt kifizetései. Ilyen esetekben a szállítót nem kell kifizetni. Először rendezni kell a jóváírást vagy az elmaradt befizetést.
 - **Negatív kifizetések törlése** – Ez a beállítás attól függően változik, hogy egy vagy több a kritériumoknak megfelelő számlát kívánunk kifizetni. Ezt a működést a kifizetés módja határozza meg.
 - **Számlák egyenkénti kifizetése** – Amennyiben a **Negatív kifizetések törlése** beállítás **Igen** opciója van bejelölve, és van nem kiegyenlített számla és fizetés egy szállító számára, csak a számla kerül kifizetésre. A kifizetés nem rendezhető a számlával szemben. Ha a **Negatív kifizetések törlése** beállítás **Nem** opcióra van állítva, valamint a számla és a kifizetés nincsenek rendezve, mind a számla és mind a fizetés kifizetése megtörténik. Létrejön egy kifizetés a fizetés részére és egy a visszatérítés (negatív kifizetés) részére.
-- <strong>Több összegű számlák kifizetése</strong> – Ha a <strong>Negatív kifizetések törlése</strong> beállítás <strong>Igen</strong> opcióra van állítva, és létezik rendezetlen számla, illetve kifizetés, mind a rendezetlen számla és a kifizetés is kiválasztásra kerül, az összegük pedig összeadódik, így megadva az összesen kifizetendő összeget. Kivétel akkor fordulhat csak elő amennyiben a kifizetés, visszatérítéssel végződik. Ebben az esetben sem a számla, sem pedig a fizetés nincsenek kiválasztva. Amennyiben a <strong>Negatív kifizetések törlése **beállítás a **Nem opcióra van állítva</strong>, és a számla, valamint a fizetés nincsenek rendezve, mindkettő ki van választva kifizetésre és az összegük összeadódik, így megadva az összesen fizetendő összeget.
+- **Több összegű számlák kifizetése** – Ha a **Negatív kifizetések törlése** beállítás **Igen** opcióra van állítva, és létezik rendezetlen számla, illetve kifizetés, mind a rendezetlen számla és a kifizetés is kiválasztásra kerül, az összegük pedig összeadódik, így megadva az összesen kifizetendő összeget. Kivétel akkor fordulhat csak elő amennyiben a kifizetés, visszatérítéssel végződik. Ebben az esetben sem a számla, sem pedig a fizetés nincsenek kiválasztva. Amennyiben a **Negatív kifizetések törlése** beállítás a **Nem** opcióra van állítva, és a számla, valamint a fizetés nincsenek rendezve, mindkettő ki van választva kifizetésre és az összegük összeadódik, így megadva az összesen fizetendő összeget.
 - **Csak a jelentés nyomtatása** – Állítsa ezt a beállítást **Igen** opcióra, hogy megtekinthesse a fizetési javaslat eredményeit a kifizetések végrehajtása nélkül.
 - **Más jogi személyektől származó szállítói számlák tartalmazása** – Amennyiben az ön szervezete központosított kifizetési rendszert alkalmaz és a kifizetési javaslatnak tartalmaznia kell más jogi személyektől származó, valamint a kritériumoknak megfelelő számlákat is, állítsa be az **Igen** opciót.
 - **Javasoljon jogi személyenként eltérő szállítói kifizetést** – Ha ezt a beállítást **Igen** opcióra állítja, szállítónként minden jogi személyhez külön kifizetés jön létre. A kifizetésen szereplő szállító megegyezik az egyes jogi személyek számláin szereplő szállítóval. Amennyiben ez a beállítás a **Nem** opcióra van állítva és ugyanaz a szállító tartozik több jogi személyhez, egy kifizetés készül a kiválasztott számlák teljes összegével. A kifizetésen szereplő szállító megegyezik a jelenlegi jogi személy szállítójával. Amennyiben a szállító számla nem létezik jogi személyként, abban az esetben az első számlán szereplő szállító számlát kell alkalmazni.
@@ -115,7 +115,8 @@ A Dimenzió vezérlőelem lehetővé teszi a fizetési javaslat alapján létreh
 -   A **Dimenzió vezérlőelem** mező aktiválva van a dimenziók további meghatározása nélkül. A fizetési javaslatot a rendszer a dimenziók figyelmen kívül hagyásával hozza létre. A létrehozott tranzakció nem örököl dimenziókat a kiegyenlített tételből.
 -   A **Dimenzió vezérlőelem** mező aktiválva van, és a további dimenziók engedélyezve vannak. Most definiálhatja, hogy másolja át a dimenziókat a program a naplóba. Például • Ha az üzleti egység szerinti fizetési javaslatot szeretne létrehozni a fizetési módra vonatkozóan, jelölje be **BusinessUnit** jelölőnégyzetet, • Ha költséghely szerinti fizetési javaslatot szeretne létrehozni a fizetési módra vonatkozóan, jelölje be a **CostCenter** jelölőnégyzetet
 
-**Megjegyzés:** Ha a harmadik lehetőségnél több dimenziót jelöl ki, a dimenziók kombinációjára vonatkozó fizetési javaslat jön létre.
+> [[!NOTE]
+> Ha a harmadik lehetőségnél több dimenziót jelöl ki, a dimenziók kombinációjára vonatkozó fizetési javaslat jön létre.
 
 #### <a name="bank-account-selection"></a>Bankszámla kiválasztása
 

@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 4da560ca3cce5a28edd2a00506f825d5d88ef0f3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cd5fc329877bbb1f8f4ec26191e66914da29d034
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Rendszer által meghatározott és Felhasználó által meghatározott táblázat megszorítások
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk bemutatja a táblamegszorítások két típusát termékkonfigurációs modell összetevői esetén: felhasználó és rendszer által meghatározott. A táblamegszorítások az engedélyezett attribútumkombinációk mátrixait jelölik, hol minden sor a lehetséges attribútumértékek egy készletét határozza meg.
 
@@ -61,7 +61,7 @@ Rendszer által definiált táblamegszorítás létrehozásakor válasszon ki eg
 
 Mielőtt egy táblamegszorítás érvénybe lépne a termékkonfigurációs modellen, a táblamegszorítást tartalmaznia kell a modell összetevők egy megszorításának. Az eljárás az, hogy új megszorítást kell létrehozni. Ehhez válassza ki a táblázat megszorítás típusát, majd a táblázat megszorítás használni kívánt definícióját. Végül a táblamegszorítás összes mezőjének kapcsolódnia kell a termékkonfigurációs modell attribútumaihoz.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Termékkonfigurálási modellek alapfogalmai](product-configuration-models.md)

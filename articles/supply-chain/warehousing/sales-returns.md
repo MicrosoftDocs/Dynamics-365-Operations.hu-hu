@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e2125b3616310196b2c5ede0ddcaab24856ddc34
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-returns"></a>Értékesítési visszáruk
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a visszárurendelések folyamatáról nyújt tájékoztatást. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére.
 
@@ -88,7 +88,7 @@ Miután befejezte a visszáru fejlécét, az alábbi módszerek egyikével vissz
 -   Manuálisan adja meg a cikk részleteit, a mennyiséget és az egyéb adatokat minden visszárusornál.
 -   Hozzon létre egy visszárusort az **Értékesítési rendelés megkeresése** funkcióval. Javasoljuk, hogy ezt a funkciót használja visszáru-rendelés létrehozásakor. Az **Értékesítési rendelés keresése** funkció a számlázott értékesítésirendelés-sort a visszáru rendelés sornak a hivatkozást hoz létre, és olvassa be a részletek, például cikkszám, mennyiség, ár, engedmény és az eladás sorból költségértékek sor. A hivatkozás segít garantálni, hogy amikor a terméket visszaküldik a vállalatnak, az ugyanazon egységköltséggel kerüljön felértékelésre, mint az eladás során. A hivatkozás azt is igazolja, hogy a visszáru-rendeléseket nem olyan mennyiségben hozták létre, amely meghaladja a számlán eladott mennyiséget.
 
-**Megjegyzés:** Az értékesítési rendelésre hivatkozó visszárusorokat az értékesítés korrekciójaként vagy visszavonásaként kezelik. További tudnivalókért lásd a "Feladás a főkönyvbe" című részt, a témakör későbbi részében.
+>[Megjegyzés!] Az értékesítési rendelésre hivatkozó visszárusorokat az értékesítés korrekciójaként vagy visszavonásaként kezelik. További tudnivalókért lásd a "Feladás a főkönyvbe" című részt, a témakör későbbi részében.
 
 ### <a name="charges"></a>Költségek
 
@@ -193,15 +193,26 @@ A beérkezési folyamat során az általános folyamat a raktári beérkezés in
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Érkezés áttekintés listájában termékek azonosítása
 
-A **Érkeztetési áttekintés** lap felsorolja az összes tervezett bejövő érkezők. **Megjegyzés:** érkezése tranzakció típusú külön-külön kell feldolgozni az érkezések visszárurendelésekből. Után már azonosítani egy bejövő csomag a **Beérkezés áttekintése** (például úgy, hogy az RMA kísérőokmány segítségével), a műveletek ablaktábla a lap **Érkeztetés indítása** hozzon létre, és az cikkérkezési napló, amely megfelel az érkezési inicializálása.
+A **Érkeztetési áttekintés** lap felsorolja az összes tervezett bejövő érkezők. 
+>[Megjegyzés!] érkezése tranzakció típusú külön-külön kell feldolgozni az érkezések visszárurendelésekből. Után már azonosítani egy bejövő csomag a **Beérkezés áttekintése** (például úgy, hogy az RMA kísérőokmány segítségével), a műveletek ablaktábla a lap **Érkeztetés indítása** hozzon létre, és az cikkérkezési napló, amely megfelel az érkezési inicializálása.
 
 ### <a name="edit-the-arrival-journal"></a>Szerkessze az Érkeztetési napló tartalmát.
 
-Beállításával a **Karantén kezelése** **Igen**, a visszáru rendelés sornak a karanténutasítást is létrehozhat. Egy sor el lett küldve a karantén vizsgálatra, a az intézkedéskód nem adható meg. **Megjegyzés:** Ha a **karantén kezelése** be **Igen** a cikk készletmodell-csoport, a a **karantén kezelése** a beállítás a **naplósorok** lap az érkeztetési napló sorában megjelöli, és nem módosítható. Karantén a sort küld, ha meg kell adnia a megfelelő karanténraktár. Ha az érkezési sort nem küldi el ellenőrzésre, a raktár érkeztetési képviselőjének meg kell adnia az intézkedési kódot közvetlenül az Érkeztetési napló sorban, majd fel kell adnia az Érkeztetési naplót. Ha az azonos intézkedéskód nem a teljes mennyiség visszárusor kell rendelni, vagy ha a teljes mennyiséget a sor még nem érkezett meg, fel kell osztania a sor. Az érkeztetési naplósor felosztásakor is felosztja a visszárusor (**SalesLine**), és hozzon létre egy új tétel. A sor szétválaszthatja az érkeztetési napló sorában mennyiségének csökkentésével. A napló könyvelésekor a program visszatérési új sor jön létre, amelyek állapota **várt** a fennmaradó mennyiség. Megoszthatja a sort, ha a **Funkciók** &gt; **Megosztás** pontra kattint.
+Beállításával a **Karantén kezelése** **Igen**, a visszáru rendelés sornak a karanténutasítást is létrehozhat. Egy sor el lett küldve a karantén vizsgálatra, a az intézkedéskód nem adható meg. 
+ 
+Ha a **Karantén kezelése** be **Igen** a cikk készletmodell-csoport, a **Karantén kezelése** a beállítás a **Naplósorok** lap az érkeztetési napló sorában megjelöli, és nem módosítható. Karantén a sort küld, ha meg kell adnia a megfelelő karanténraktár. 
+
+Ha az érkezési sort nem küldi el ellenőrzésre, a raktár érkeztetési képviselőjének meg kell adnia az intézkedési kódot közvetlenül az Érkeztetési napló sorban, majd fel kell adnia az Érkeztetési naplót. Ha az azonos intézkedéskód nem a teljes mennyiség visszárusor kell rendelni, vagy ha a teljes mennyiséget a sor még nem érkezett meg, fel kell osztania a sor. Az érkeztetési naplósor felosztásakor is felosztja a visszárusor (**SalesLine**), és hozzon létre egy új tétel. A sor szétválaszthatja az érkeztetési napló sorában mennyiségének csökkentésével. A napló könyvelésekor a program visszatérési új sor jön létre, amelyek állapota **várt** a fennmaradó mennyiség. Megoszthatja a sort, ha a **Funkciók** &gt; **Megosztás** pontra kattint.
 
 ### <a name="process-the-quarantine-order"></a>Karanténutasítás feldolgozása
 
-Ha a visszaküldött termékek a karanténraktárban vizsgálatra küldi, minden további feldolgozásra a karanténutasítás kitölteni. Minden beérkezési sor karantén küldött egy karanténutasítás készül. Az intézkedéskód azt jelzi, hogy az ellenőrzési folyamat eredménye. A karanténutasítás szétválaszthatja, ugyanúgy, mint a cikkérkezési napló fel. A visszáru rendelés sornak megfelelő megoszlása okozhat, ha a karanténutasítás szétválasztásához. Az intézkedéskód beírásakor, töltse ki a karanténutasítás használatával a **vége** függvény vagy a **jelentés készként** függvény. Ha a **Jelentés készként** elemet választja, egy új beérkezés jön létre a kijelölt raktárban. Majd feldolgozhatja az érkezési segítségével a **Beérkezés áttekintése** oldalon. Ha az érkezés a karanténutasítás származik, az ellenőrzés során hozzárendelt intézkedéskód nem módosítható. Ha befejezte a karanténutasítás segítségével a **Vége** a rendszer automatikusan regisztrálja a függvényt, a tétel. Néha egy cikk lehet küldeni vissza a karanténból a szállítási és a fogadó osztály. Például a karantén ellenőr nem ismeri a készlet a cikk tárolási helyét. Ebben az esetben a megfelelő szállítólevél frissíteni kell, hogy megfelelően rögzíteni, és a az intézkedéskód miatt a karantén megadott jár el. Átvételi elismervényt lehet küldeni a vevőnek a visszárusor regisztrálásakor. A **Visszáru-elismervény** jelentés hasonlít az visszárurendelési bizonylatra. A **Visszáru-elismervény** jelentés nem naplózott vagy más módon a rendszerben regisztrált, és nem egy szükséges lépés a visszáru-rendelési folyamat.
+Ha a visszaküldött termékek a karanténraktárban vizsgálatra küldi, minden további feldolgozásra a karanténutasítás kitölteni. Minden beérkezési sor karantén küldött egy karanténutasítás készül. Az intézkedéskód azt jelzi, hogy az ellenőrzési folyamat eredménye. 
+
+A karanténutasítás szétválaszthatja, ugyanúgy, mint a cikkérkezési napló fel. A visszáru rendelés sornak megfelelő megoszlása okozhat, ha a karanténutasítás szétválasztásához. Az intézkedéskód beírásakor, töltse ki a karanténutasítás használatával a **vége** függvény vagy a **jelentés készként** függvény. Ha a **Jelentés készként** elemet választja, egy új beérkezés jön létre a kijelölt raktárban. Majd feldolgozhatja az érkezési segítségével a **Beérkezés áttekintése** oldalon. 
+
+Ha az érkezés a karanténutasítás származik, az ellenőrzés során hozzárendelt intézkedéskód nem módosítható. Ha befejezte a karanténutasítás segítségével a **Vége** a rendszer automatikusan regisztrálja a függvényt, a tétel. Néha egy cikk lehet küldeni vissza a karanténból a szállítási és a fogadó osztály. Például a karantén ellenőr nem ismeri a készlet a cikk tárolási helyét. Ebben az esetben a megfelelő szállítólevél frissíteni kell, hogy megfelelően rögzíteni, és a az intézkedéskód miatt a karantén megadott jár el. 
+
+Átvételi elismervényt lehet küldeni a vevőnek a visszárusor regisztrálásakor. A **Visszáru-elismervény** jelentés hasonlít az visszárurendelési bizonylatra. A **Visszáru-elismervény** jelentés nem naplózott vagy más módon a rendszerben regisztrált, és nem egy szükséges lépés a visszáru-rendelési folyamat.
 
 ## <a name="replace-a-product"></a>Termék cseréje
 Helyettesítő termék kezelésének két módszere van:
@@ -223,7 +234,9 @@ Ha az ügyfélnek szállított egy cserecikket, és használja a **csere és sel
 
 ![Helyettesítő folyamatot egy intézkedéskód használatakor](./media/SalesReturn05.png)
 
-A csereeszköz önálló értékesítési megrendeléssel, a helyettesítő értékesítési rendeléssel történik. Ez az értékesítési rendelés a visszáru-rendelés szállítólevelének létrehozásakor jön létre. A rendelés fejlécében a visszáru rendelés fejen a hivatkozott vevőtől származó adatokat használja. A sor adatgyűjtés megadott adatok alapján a **Helyettesítő cikk** oldalon. A **Helyettesítő cikk** lapot ki kell tölteni intézkedési műveleteket a word "csere." kezdetű sorok Azonban a mennyiség és a helyettesítő cikk azonosításával járó nem érvényesített vagy korlátozott. Ez a viselkedés lehetővé teszi, hogy olyan esetekben, ahol a vevő szeretné ugyanazt a cikket, de egy másik konfigurációt vagy méretét, valamint esetekben azt szeretné, ahol a vevők egy teljesen másik elemet. Alapértelmezés szerint egy azonos elemet meg a **Helyettesítő cikk** oldalon. Választhatja azonban egy másik elemet, feltéve, hogy a funkció be van állítva. **Megjegyzés:** szerkesztheti és törölheti a cserecikk-eladási rendelést létrehozását követően.
+A csereeszköz önálló értékesítési megrendeléssel, a helyettesítő értékesítési rendeléssel történik. Ez az értékesítési rendelés a visszáru-rendelés szállítólevelének létrehozásakor jön létre. A rendelés fejlécében a visszáru rendelés fejen a hivatkozott vevőtől származó adatokat használja. A sor adatgyűjtés megadott adatok alapján a **Helyettesítő cikk** oldalon. A **Helyettesítő cikk** lapot ki kell tölteni intézkedési műveleteket a word "csere." kezdetű sorok Azonban a mennyiség és a helyettesítő cikk azonosításával járó nem érvényesített vagy korlátozott. Ez a viselkedés lehetővé teszi, hogy olyan esetekben, ahol a vevő szeretné ugyanazt a cikket, de egy másik konfigurációt vagy méretét, valamint esetekben azt szeretné, ahol a vevők egy teljesen másik elemet. Alapértelmezés szerint egy azonos elemet meg a **Helyettesítő cikk** oldalon. Választhatja azonban egy másik elemet, feltéve, hogy a funkció be van állítva. 
+
+>[Megjegyzés!] Szerkesztheti és törölheti a cserecikk-eladási rendelést létrehozását követően.
 
 ## <a name="generate-a-packing-slip"></a>Hozzon létre szállítólevelet
 Ahhoz, hogy a visszaküldött cikkeket bevételezni lehessen a készletbe, frissíteni kell annak a rendelésnek a csomagjegyzékét, amelyhez a cikkek tartoznak. Ahogyan a számlafrissítés folyamata a pénzügyi tranzakció frissítése, úgy a csomagjegyzék-frissítés folyamata a készletrekord fizikai frissítése, amely véglegesíti a készlet változásait. Más szóval ez a folyamat véglegesíti a készlet módosításait. Visszaküldés esetén a csomagjegyzék frissítésekor az intézkedési művelethez tartozó lépéseket is végrehajtják. A csomagjegyzék létrehozásakor a következők történnek:
@@ -233,14 +246,19 @@ Ahhoz, hogy a visszaküldött cikkeket bevételezni lehessen a készletbe, friss
 -   A jelölt elemek a **vissza a vevőnek** besorolási műveletet kapott, és az ügyfél. Ezek az elemek nem befolyásolják a készletben.
 -   Az új csererendelés létrehozása megtörténik. Ez az értékesítési rendelés adatain alapul a **Helyettesítő cikk** oldalon.
 
-Csak azokat a sorokat, amelyek állapota visszáru szállítólevél hozhat létre **Bejegyzett**, és csak a visszáru rendelés sornak a teljes mennyiségét. Ha több sort a visszáru rendelés a **Bejegyzett** állapotát, a szállítólevél sorok részhalmazát elő a többi sor törlése a **szállítólevél könyvelése** oldalon. A részleges szállítások visszárurendelés-sorok, nem pedig visszárurendelés-szállítmányok formájában vannak meghatározva. Ez annyit jelent, hogy ha a visszárurendelés egyik sorában szereplő teljes mennyiséget visszaküldik, de a többi sor mennyiségéből semmit, akkor a szállítás nem részleges szállítás. Ha viszont egy visszárurendelés-sorban az adott cikkből tíz visszaküldendő egység szerepel, és ebből csak négyet kap meg, akkor ez egy részleges szállítás. Ha nem várható visszáru elemeinek érkeztek, félretéve a szállítólevelet, és várja meg a többi érkezzen a visszatérő mennyiség. Azt is megteheti regisztrálása és feladása a részleges mennyiséget. A szállítólevelek könyvelési folyamat részeként a csomagjegyzék hivatkozási száma a vevő szállítási dokumentumokból is társíthat a rendelési sorokban. Ez a társítás nem kötelező, és csak referenciaként szolgál. Ez nem hoz létre tranzakciós frissítéseket. Általában ki lehet hagyni a szállítólevél folyamatát, és folytatható a számlázás. Ebben az esetben a, ha szállítólevél-bizonylat létrehozása során végzett volna lépéseket számlázás során.
+Csak azokat a sorokat, amelyek állapota visszáru szállítólevél hozhat létre **Bejegyzett**, és csak a visszáru rendelés sornak a teljes mennyiségét. Ha több sort a visszáru rendelés a **Bejegyzett** állapotát, a szállítólevél sorok részhalmazát elő a többi sor törlése a **szállítólevél könyvelése** oldalon. 
+
+A részleges szállítások visszárurendelés-sorok, nem pedig visszárurendelés-szállítmányok formájában vannak meghatározva. Ez annyit jelent, hogy ha a visszárurendelés egyik sorában szereplő teljes mennyiséget visszaküldik, de a többi sor mennyiségéből semmit, akkor a szállítás nem részleges szállítás. Ha viszont egy visszárurendelés-sorban az adott cikkből tíz visszaküldendő egység szerepel, és ebből csak négyet kap meg, akkor ez egy részleges szállítás. Ha nem várható visszáru elemeinek érkeztek, félretéve a szállítólevelet, és várja meg a többi érkezzen a visszatérő mennyiség. Azt is megteheti regisztrálása és feladása a részleges mennyiséget. A szállítólevelek könyvelési folyamat részeként a csomagjegyzék hivatkozási száma a vevő szállítási dokumentumokból is társíthat a rendelési sorokban. Ez a társítás nem kötelező, és csak referenciaként szolgál. Ez nem hoz létre tranzakciós frissítéseket. 
+
+Általában ki lehet hagyni a szállítólevél folyamatát, és folytatható a számlázás. Ebben az esetben a, ha szállítólevél-bizonylat létrehozása során végzett volna lépéseket számlázás során.
 
 ## <a name="generate-an-invoice"></a>Számla előállítása
 Bár a **Visszárurendelés** lapon található információk és tevékenységek, amelyek szükségesek ahhoz, hogy kezelni a különleges logisztikai szempontok a visszárurendelés kell használnia az **Értékesítési rendelés** oldalon a számlázási folyamat befejezéséhez. A szervezet majd számlázhatja visszáru rendelések vagy eladási rendelések egy időben, és ugyanaz a személy, szükség szerint a számlázási folyamat végrehajtásához. A visszáru rendelés megtekintéséhez az **Értékesítési rendelés** lap, kattintson a hivatkozásra kattintva nyissa meg a megfelelő eladási rendelést az értékesítési rendelés számát. A visszárurendelés is megtalálható a **Minden értékesítési rendelések** lapon. Visszáru rendelések, amelyek a rendelés típusát az értékesítési rendelések **Visszaküldött rendelés**.
 
 ### <a name="credit-correction"></a>Jóváírás korrekciója
 
-A számlázási folyamat részeként a vegyes költségek helyességének ellenőrzése. Ahhoz, hogy a főkönyvi feladások javításokat (sztornó) válik, fontolja meg a **jóváírás-korrekció** a beállítás a **más** lapján a **számla** oldal a számla/jóváírás könyvelésekor. **Megjegyzés:** alapértelmezés szerint a **hitel javítás** beállítás aktiválva van, ha a **Jóváírás helyesbítésként** a beállítás a **Kinnlevőségek paraméterei** lap engedélyezve van. Azonban azt javasoljuk, hogy Ön nem post visszaad sztornó.
+A számlázási folyamat részeként a vegyes költségek helyességének ellenőrzése. Ahhoz, hogy a főkönyvi feladások javításokat (sztornó) válik, fontolja meg a **jóváírás-korrekció** a beállítás a **más** lapján a **számla** oldal a számla/jóváírás könyvelésekor. 
+>[Megjegyzés!] Alapértelmezés szerint a **Hitel javítás** beállítás aktiválva van, ha a **Jóváírás helyesbítésként** a beállítás a **Kinnlevőségek paraméterei** lap engedélyezve van. Azonban azt javasoljuk, hogy Ön nem post visszaad sztornó.
 
 ## <a name="create-intercompany-return-orders"></a>A vállalatközi visszárurendelések létrehozása
 Visszárurendelések hajtható végre a szervezeten belül a két vállalat között. A varázsló a következő forgatókönyveket támogatja:
@@ -294,7 +312,7 @@ A visszárurendelés nem hivatkozhat a vevői számla A visszárucikk létrejön
 
 ![Visszárurendelés nem hivatkozik a vevő számlára](./media/SalesReturn09.png)  
 
-**Megjegyzés:** a Cikkár fő része lesz az alapértelmezett érték a **visszáru-önköltségi ár** paraméter. Az alapértelmezett ár készletkiadás alkalmával az önköltségi ár eltér. A tényezők ezért 3 veszteség keletkezett. Ezenkívül a visszáru rendelést az eladási rendelésen a vevőnek adott engedmény nem tartalmaz. Ezért a túlzott követel következik be.
+>[Megjegyzés!] A cikkár fő része lesz az alapértelmezett érték a **Visszáru-önköltségi ár** paraméter. Az alapértelmezett ár készletkiadás alkalmával az önköltségi ár eltér. A tényezők ezért 3 veszteség keletkezett. Ezenkívül a visszáru rendelést az eladási rendelésen a vevőnek adott engedmény nem tartalmaz. Ezért a túlzott követel következik be.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>2. példa: A jóváírás-korrekció kijelöltük a visszárurendelés
 
@@ -302,7 +320,7 @@ A visszárurendelés nem hivatkozhat a vevői számla A visszárucikk létrejön
 
 ![A jóváírás-korrekció kijelöltük a visszárurendelés ](./media/SalesReturn10.png)  
 
-**Megjegyzés:** negatív helyesbítés főkönyvi feladások kerülnek.
+>[Megjegyzés!] Negatív helyesbítés főkönyvi feladások kerülnek.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>3. példa: A visszáru-rendelési sor létrejön az eladási rendelés keresés funkció használatával
 
@@ -310,7 +328,7 @@ A visszáru-rendelési sor létrejön az **Értékesítési rendelés keresése*
 
 ![A visszáru-rendelési sor létrejön az eladási rendelés keresés funkció használatával ](./media/SalesReturn11.png)  
 
-**Megjegyzés:** Az **Engedmény** és a **Visszáru-önköltségi ár** mezők helyesen vannak beállítva. Ezért a vevői számla pontos sztornírozása következik be.
+>[Megjegyzés!] Az **Engedmény** és a **Visszáru-önköltségi ár** mezők helyesen vannak beállítva. Ezért a vevői számla pontos sztornírozása következik be.
 
 
 

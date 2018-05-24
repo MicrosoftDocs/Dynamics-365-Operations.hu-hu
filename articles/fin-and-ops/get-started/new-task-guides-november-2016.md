@@ -18,16 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3db07708df55c24108c66797885318486b2b1003
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7708c8e091ef561c1a4205a1424a51d51d05002f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-november-2016"></a>Új vagy frissített Feladat-útmutatók (2016. november)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A témakör felsorolja a Microsoft Dynamics 365 for Operations (2016. november – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár.
 
@@ -587,7 +587,7 @@ A (2016. november – minden nyelv) APQC egyesített könyvtár tartalmazza a Mi
 |                       Automatikus fuvarlevél-egyeztetés beállítása                       |     Globális     |
 |              <strong>\</strong>*Cikkek újbóli felosztására vonatkozó szabályok rövid kitárolásának beállítása              |     Globális     |
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Új feladat-útmutatók érhetők el (2016. február)](new-task-guides-available-february-2016.md)

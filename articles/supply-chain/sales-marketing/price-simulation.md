@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1db68ea5728cc417f0e70675d9074d5b054883da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="price-simulation"></a>Árszimuláció
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat.
 
@@ -36,7 +36,7 @@ Az ajánlatok árszimulációja új végösszeget vagy sor szintű összeget jel
 
 Az árszimuláció nem változtatja meg az árajánlatban szereplő árat. Ha az árszimulációt az egész árajánlatra alkalmazza, akkor azt egy speciális engedményként kell kezelni az árajánlat fejlécében. Ha az árszimulációt adott cikkekre alkalmazza, akkor azt egy speciális engedményként kell kezelni az árajánlat soraiban. A létrehozott ajánlati soron az egységenkénti eladási ár nem változik az árszimuláció futtatásakor. Ehelyett a program az ajánlati sor árengedményének megfelelő engedményszázalékot alkalmaz. Amikor alkalmazza az árszimulációt, az egységenkénti eladási ár és az engedményszázalék átkerül az ajánlati sorra vagy az ajánlat fejlécére.  
 
-**Megjegyzés:** Árszimuláció futtatásakor a program csak az aktuális értékesítési pénznemet használja a szimuláció létrehozásához. Amikor azonban megnézi az ajánlat végösszegeit, együtt látja a vállalati pénznemet és az értékesítési pénznemet.  
+>[Megjegyzés:] Árszimuláció futtatásakor a program csak az aktuális értékesítési pénznemet használja a szimuláció létrehozásához. Amikor azonban megnézi az ajánlat végösszegeit, együtt látja a vállalati pénznemet és az értékesítési pénznemet.  
 
 A kiegészítő cikkek, amelyeket hozzáad az árajánlat soraihoz sorkedvezményeket vagy többsoros kedvezményeket válthatnak ki. Továbbá kiválthatnak összengedményeket, amelyek megváltoztathatják pénzügyi árréseket és az árajánlat sorok árrés arányait és az egész engedményt.  
 

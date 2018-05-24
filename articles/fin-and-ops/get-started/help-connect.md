@@ -19,21 +19,21 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c0942b66859da3659be49b19986bfd146ac43130
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1449d44149f328f780f02e798c5200595557474
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="connect-the-help-system"></a>A Súgó rendszer csatlakoztatása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Finance and Operations súgórendszerének összetevőit írja le. Áttekinti ezen összetevők kapcsolatát, valamint összefoglalja az egyéni súgó létrehozásának módszereit. 
 
 ## <a name="help-architecture"></a>Súgó-architektúra
-A következő ábra a Finance and Operations rendszer súgórendszerének részeit jeleníti meg. A beépített súgórendszer lekéri a https://docs.microsoft.com Finance and Operations Súgó webhelyen található cikkeket, valamint a Lifecycle Services (LCS) Üzletifolyamat-modellezőjében tárolt feladat-útmutatókat. 
+A következő ábra a Finance and Operations rendszer súgórendszerének részeit jeleníti meg. A termék súgója a Finance and Operations webhelyéről (https://docs.microsoft.com) tölt le cikkeket, valamint az itt tárolt feladat-útmutatókat használja: Business Process Modeler in Lifecycle Services (LCS). 
 > [!NOTE]
 > A diagramban csillaggal (\*) szereplő funkciók tervbe vannak véve, de még nem érhetők el. [![Súgó-architektúra](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -72,7 +72,7 @@ Lehetősége van egyéni súgót létrehozni saját Finance and Operations és R
 
 Partnerekhez, ha egy tárat vállalati kódtár előléptetett, és helyezze el a megoldás lesz a felhasználók számára érhető el. Ezenkívül az APQC Egyesített globális tárról is készíthet másolatot; megnyithatja a saját másolatot és az abban található feladatrögzítéseket, majd a módosítást követően elmentheti a rögzítéseket a változtatásokkal együtt. További tudnivalókért lásd: [Dokumentációként használandó feladatrögzítés vagy oktatás létrehozása](../../dev-itpro/user-interface/task-recorder.md).
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Súgó áttekintése](help-overview.md)

@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad425ab0848ab04003b7378cb5c488650f01c441
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9082c156fde52aa0c822f8e4753de816f8cc0558
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-screen-layouts-for-pos"></a>Pénztár képernyő-elrendezésének beállítása
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 for Operations for Retail pénztár (POS) használatához kapcsolódó képernyő-elrendezésekről nyújt információkat.
 
@@ -89,12 +89,12 @@ Minden elrendezésméretet a képernyő-elrendezésen belül a képernyő-elrend
 
 **Kép**- A kép vezérlőelem segítségével az üzlet emblémája vagy más márkajelzése jeleníthető meg tranzakció képernyőn. A kép vezérlőelem csak a teljes elrendezésekben érhető el. 
 
-**Javasolt termékek** - Ha a környezethez konfigurálva van, a javasolt termékek vezérlő termékjavaslatokat jelenít meg a gépi tanulás alapján. A javasolt termékek vezérlő csak a teljes elrendezésekhez érhető el a Dynamics 365 for Operations for Retail 1611-es verziójában. ** Egyéni vezérlő ** - Az egyéni vezérlő helyőrzőként működik a képernyő-elrendezésen belül, és lehetővé teszi a felhasználók számára hely fenntartását egyéni tartalom számára. Az egyéni vezérlőelem csak a teljes elrendezésekben érhető el.
+**Javasolt termékek** - Ha a környezethez konfigurálva van, a javasolt termékek vezérlő termékjavaslatokat jelenít meg a gépi tanulás alapján. A javasolt termékek vezérlő csak a teljes elrendezésekhez érhető el a Dynamics 365 for Operations for Retail 1611-es verziójában. **Egyéni vezérlő** - Az egyéni vezérlő helyőrzőként működik a képernyő-elrendezésen belül, és lehetővé teszi a felhasználók számára hely fenntartását egyéni tartalom számára. Az egyéni vezérlőelem csak a teljes elrendezésekben érhető el.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
-[Telepítse a Retail POS-képernyő elrendezéstervezőt](install-pos-layout-designer.md)
+[A Retail POS képernyőelrendezés-tervező telepítése](install-pos-layout-designer.md)
 
 
 

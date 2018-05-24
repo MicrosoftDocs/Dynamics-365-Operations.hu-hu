@@ -38,9 +38,6 @@ Az entitásadatok megnyitásával az Excel programban gyorsan és egyszerűen te
 
 További tudnivalókért az Excel-bővítményről, tekintse meg a rövid videót: [Excel-sablon létrehozása a fejléc- és soramintákhoz a Dynamics 365 for Finance and Operations alkalmazásban](https://youtu.be/RTicLb-6dbI).
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Nyissa meg az entitásadatokat az Excel programban a Finance and Operations indításakor
 1. A Finance and Operations egyik lapján válassza a **Megnyitás a Microsoft Office programban** lehetőséget.
 

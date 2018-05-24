@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 7ae83192924a790451d8da511638c7fc1cd92f90
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f87238b3b2f6e7cc68bf2f1a7cd3a21254f3599a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>A kérdőív megtekintése, és az eredmények kiértékelése
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait. 
 
@@ -73,7 +73,7 @@ Használhat kérdőív statisztikákat a kitöltött kérdőívek eredményének
 
 A program menti a megadott beállításokat, így ezek az eredmények ismételt újraszámításakor felhasználhatók.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Kérdőívek tervezése](design-questionnaires.md)

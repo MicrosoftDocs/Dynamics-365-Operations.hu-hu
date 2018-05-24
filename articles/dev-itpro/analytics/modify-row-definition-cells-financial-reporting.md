@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b8e0b51f63ecabc704a2fc5b3ebafe657b52f6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Sor definiáló cellák módosítása
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A cikk ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását. 
 
@@ -398,7 +398,7 @@ Megadhat egy tartományt a szegmens értékekhez vagy a dimenzió értékekhez. 
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Több-szegmenses vagy több-dimenziós tartományok
 
-Ha több dimenzióérték kombinálásával adja meg a tartományt, akkor a tartomány-összehasonlítást a rendszer pénzügyi dimenziónként / dimenziónként végzi el. A tartomány-összehasonlítás nem hajtható végre karakterenkénti módszerrel, sem részleges szegmens alapján. Például, a **+Számla=\[5000:6000\], Részleg=\[1000:2000\], Költséghely=\[00\]** tartomány csak azokat a számlákat tartalmazza, amelyek minden egyes szegmenssel megegyeznek. Ebben a példában, az első dimenziónak az 5000-től 6000-ig terjedő tartományba, a második dimenziónak az 1000 és a 2000 közötti tartományba kell esnie, az utolsó dimenziónak pedig 00-nak kell lennie. Ezért például a **+Számla=\[5100\], Részleg=\[1100\], Költséghely=\[01\]** kombináció nem fog bekerülni a jelentésbe, mivel az utolsó szegmens a megadott tartományon kívül esik. Ha egy szegmensérték szóközt is tartalmaz, ezt a karaktert tegye szögletes zárójelbe (\[ \]). A következő értékek érvényesek egy négy karakterből álló szegmensnek: **\[ 234\], \[123 \], \[1 34\]**. A dimenzióértékeket is szögletes zárójelben (\[ \]) kell megadni, a jelentéstervező pedig automatikusan hozzáadja ezeket a zárójeleket. Ha több szegmenst vagy több dimenziót magába foglaló tartomány helyettesítő karaktereket (? vagy \*) is tartalmaz, akkor a rendszer meghatározza a teljes többszegmenses vagy többdimenziós tartomány alsó és felső értékét, majd hozzáveszi az ezek között található összes értéket. Nagyméretű tartomány esetén ( amilyen például az összes számla 40000-től 99999-ig) lehetőleg minden esetben érvényes kezdő és záró számlát adjon meg. 
+Ha több dimenzióérték kombinálásával adja meg a tartományt, akkor a tartomány-összehasonlítást a rendszer pénzügyi dimenziónként ..\financial-dimensions\dimension-by-dimension végzi el. A tartomány-összehasonlítás nem hajtható végre karakterenkénti módszerrel, sem részleges szegmens alapján. Például, a **+Számla=\[5000:6000\], Részleg=\[1000:2000\], Költséghely=\[00\]** tartomány csak azokat a számlákat tartalmazza, amelyek minden egyes szegmenssel megegyeznek. Ebben a példában, az első dimenziónak az 5000-től 6000-ig terjedő tartományba, a második dimenziónak az 1000 és a 2000 közötti tartományba kell esnie, az utolsó dimenziónak pedig 00-nak kell lennie. Ezért például a **+Számla=\[5100\], Részleg=\[1100\], Költséghely=\[01\]** kombináció nem fog bekerülni a jelentésbe, mivel az utolsó szegmens a megadott tartományon kívül esik. Ha egy szegmensérték szóközt is tartalmaz, ezt a karaktert tegye szögletes zárójelbe (\[ \]). A következő értékek érvényesek egy négy karakterből álló szegmensnek: **\[ 234\], \[123 \], \[1 34\]**. A dimenzióértékeket is szögletes zárójelben (\[ \]) kell megadni, a jelentéstervező pedig automatikusan hozzáadja ezeket a zárójeleket. Ha több szegmenst vagy több dimenziót magába foglaló tartomány helyettesítő karaktereket (? vagy \*) is tartalmaz, akkor a rendszer meghatározza a teljes többszegmenses vagy többdimenziós tartomány alsó és felső értékét, majd hozzáveszi az ezek között található összes értéket. Nagyméretű tartomány esetén ( amilyen például az összes számla 40000-től 99999-ig) lehetőleg minden esetben érvényes kezdő és záró számlát adjon meg. 
 > [!Note] 
 > A Jelentéstervező nem tud olyan számlákat, dimenziókat vagy mezőket választani a Microsoft Dynamics ERP rendszerből, melyek nevében szerepelnek a következő különleges karakterek: &, \*, \[, \], { vagy }. Latin és-szimbólumot (&) csak akkor vehet fel, ha automatikusan épít sordefiníciókat a **Sorok Beszúrása Dimenziókból** párbeszédpanel használatával.
 
@@ -488,10 +488,10 @@ A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimen
 1.  A Report Designer alkalmazásban nyissa meg a módosítani kívánt sor-, oszlop- vagy fadefiníciót.
 2.  A **Szerkesztés** menüben kattintson a **Dimenzióérték Készletek Kezelése**.
 3.  A **Dimenziókészlet-értékek kezelése** párbeszédpanelen, a **Dimenzió** mezőben válassza ki a dimenziótípust.
-4.  Válassza ki a törölni kívánt készletet, majd kattintson a **Törlés** lehetőségre. Kattintson az **Igen** lehetőségre, hogy véglegesen törölje a dimenzióérték készletet.
+4.  Jelölje ki a törölni kívánt készletet, és kattintson a **Törlés** gombra. Kattintson az **Igen** gombra a dimenzióérték-készlet végleges törléséhez.
 
 
-## <a name="see-also"></a>Lásd még
+## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
 

@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3891688542ac6d4f9afce026808c65992a592d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-tracing-for-explosion"></a>Nyomkövetés használata az alábontáshoz
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk ismerteti, hogyan alkalmazhatja a nyomkövetést a rendelés alábontás eredményeinek alapjául szolgáló okok felfedezésére.
 
@@ -42,7 +42,7 @@ Nyomkövetés engedélyezésével megtekintheti az információt a tényezőkrő
 
 Részleteket tekinthet meg egy kijelölt rendelés határidőiről és műveleteiről. Az **Alábontás** lapon a nyomkövetési információ elérhető a **magyarázat** lapon, a felső ablakban. A nyomkövetés akkor történik meg, amikor alábont egy rendelést. Hogy megkezdje a nyomkövetést egy rendeléshez kattintson a **frissítés** gombra, majd válassza ki a **nyomkövetés engedélyezése** jelölőnégyzetet. Használhatja a **Szöveg keresése** mezőt, hogy megkeresse az adott információt a naplóban. A keresési eredmények ki lesznek emelve a fában.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Alaptervek](master-plans.md)

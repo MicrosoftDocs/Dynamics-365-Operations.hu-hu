@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 28037713a51a83f4b792adef8a26f02960fa6b07
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 93a7ed31dcad19a29a85352a2bf200915766036c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nonconformance-management"></a>Szabálytalanságok kezelése
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a szabálytalanságok használatához szükséges alapbeállításokat ismerteti. A minőségi rendelések használatához további beállítások szükségesek.
 
@@ -47,7 +47,7 @@ A szabálytalanságkezelés aktiválásához kövesse az alábbi lépéseket:
 6.  Határozza meg a szabálytalansághoz hozzárendelhető műveleteket. A **Műveletek** lapon osztályozza a jóváhagyott szabálytalanságokon elvégezhető műveleteket. Amikor a szabálytalansághoz egy kapcsolódó műveletet rendel, részletes információkat adhat meg a kapcsolódó anyagról, például a munkaidőről és vegyes költségekről, amelyek a művelet végrehajtásához szükségesek. A rendszern ezen információ alapján számítja ki a művelet becsült költségét. A részletes adatok és a becsült költségek csak tájékoztató jellegűek. A minőséggel kapcsolatos műveletek nem olyan műveletek, mint a termelési útvonalban meghatározható műveletek.
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Szabálytalanság létrehozása és feldolgozása (Feladat-útmutató)](tasks/create-process-non-conformance.md)

@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1176ce1fcd406cf363969e60ae388a83d7df210f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2985e58bd308295e1f698c391f57fc3d116835bd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="standard-cost-conversion-overview"></a>Átalakítás elszámolóárra – áttekintés
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ezen cikk tájékoztatást nyújt arról, hogy hogyan lehet beállítani és futtatni az elszámolóár-átalakítást. Miután elvégezte az elszámolóárra való átalakítás előfeltételeit végre kell hajtania a felsorolt lépéseket. 
 
@@ -96,7 +96,7 @@ A **Különbözetelemzési kimutatás** jelentés segítségével elemezheti az 
 -   Vizsgálja meg a visszadátumozott készletmozgásokat. A **Készletérték** jelentés segítségével megtekintheti az átalakítás után megadott visszadátumozott készletmozgásokat. A „Jelentés kezdő és záró dátumának meg kell fellelnie az átmenet kezdési dátumának és az átalakítást megelőző nap dátumának. A jelentés kiválasztási feltételeinek az átalakított cikkeket kell eredményül adnia. A jelentés megjeleníti azokat a készletmozgásokat, amelyeket az elszámolóárnál hoztak létre az átmeneti időszak során.
 
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Az elszámolóárra való átalakítás előfeltételei](prerequisites-standard-cost-conversion.md)

@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 75508af6d6f746b56fc3df3b6b0d730f429161c5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18920dd3490b69e9668e2d023c5ca1cc094c8126
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="quality-management-processes"></a>Minőségkezelési folyamatok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a cikk a nem megfelelő termékekre vonatkozó minőségkezelési folyamatról nyújt tájékoztatást. a minőségellenőrzési funkció használatát, továbbá a szabálytalanságok meghatározásának, karbantartásának, illetve a helyesbítések kezelésének módját írja le.
 
@@ -88,7 +88,7 @@ A **Javítások** lap lehetővé teszi a kijavítandó szabálytalanságok list�
 
 Tanácsos egyedi dokumentumtípust megadni a javításokhoz a **Dokumentum típus** oldal segítségével. Ezután használhatja a **Jelentés beállítás** oldalt, hogy megállapítsa megvannak-e jelenítve az ehhez a dokumentum típushoz tartozó megjegyzések a javítási jelentésen. A nyomtatott javítási jelentésben információk találhatóak a szabálytalanságról és a kapcsolódó szabálytalansági jegyzetekről. A jelentés tartalmazza a javítási információkat, mint például a diagnózis típusát, valamint a kapcsolódó javítási jegyzeteket.
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Minőségkezelés engedélyezése](enable-quality-management.md)

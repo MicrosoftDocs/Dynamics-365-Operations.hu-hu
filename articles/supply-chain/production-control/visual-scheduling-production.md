@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f7001158a498aa28028167a0f76ad610ec09b43c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="gantt-chart-for-job-scheduling"></a>Munkaütemezés Gantt-diagram segítségével
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Gantt-diagramot úgy tervezték, hogy a termeléstervezők számára lehetővé tegyék a termelési terv ellenőrzését és optimalizálását. A Gantt-diagram átlátja a műveletek áramlását, és megkönnyíti a termelési ütemezés módosítását, figyelembe véve az anyagi vagy erőforráshiányt. Ez segít abban, hogy a tervezők a rendelkezésre álló erőforrásokat a lehető legjobban kihasználják, minimalizálják a folyamatban lévő munkákat, valamint optimalizálják a termelési rendelések átfutási idejét.
 
@@ -156,7 +156,7 @@ A Gantt-diagram a következő lapokról is megnyitható.
 |           <strong>Végrehajtandó feladat</strong> (A <strong>Termelési szint kezelése</strong> munkaterület listája)            |                                                                                               A <strong>Termelési szint kezelésében végrehajtandó feladatok listája</strong> munkaterület azon termelési és kötegrendelések feladait jeleníti meg, amelyek a munkaterület kijelölt erőforrásain folyamatban vannak. A <strong>Gantt-diagram</strong> menüelemben megnyithatja a Gantt-diagramot, ahol a listában kiválasztott összes feladat betöltődik a diagramra.                                                                                               |
 | <strong>Kiadandó termelési rendelések</strong> (A <strong>Termelési szint kezelése</strong> munkaterületből megnyitva) |                                                                                                                                         A Kiadandó termelési rendelések lapot a <strong>Termelési szint kezelése</strong> munkaterületből nyitja meg. Ez a lap megmutatja a függő kiadásban levő ütemezett termelési és kötegrendeléseket. Ezen a lapon megnyithatja a Gantt-diagramot a kiválasztott termelési rendelésekhez.                                                                                                                                          |
 
-## <a name="see-also"></a>Lásd még  
+## <a name="additional-resources"></a>További erőforrások  
 [Vizuális ütemezés a Gantt-diagrammal a termelési és kötegrendelésekhez (videó)](https://youtu.be/BtbuShkGj4I)
 
 [Vizuális ütemezés a termeléshez (demó parancsfájl)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

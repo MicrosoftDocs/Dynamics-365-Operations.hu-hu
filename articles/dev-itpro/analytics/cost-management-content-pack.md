@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -38,8 +38,7 @@ A **Kezelési költség** Microsoft Power BI-tartalom készletkönyvelők, valam
 > [!Note]
 > A jelen témakörben bemutatott **Kezelési költség** Power BI tartalom a Dynamics 365 for Finance and Operations 8.0 verziójára vonatkozik.
 > 
-> A PowerBI.com webhelyen közzétett **Kezelési költség** Power BI-tartalomcsomag ezzel elavulttá vált. Az elavulttá válással kapcsolatos további tudnivalókat lásd: [Power BI tartalmi csomagok közzététele a PowerBI.com webhelyen](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
-
+> A Power BI **költségkezelési** tartalmi csomag már elavult - az AppSource oldalon érhető el. Az értékcsökkenéssel kapcsolatos további tudnivalókat lásd: [Power BI tartalmi csomagok elérhetők az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ez a Power BI-tartalom olyan kategorizált formátumot biztosít, amely segítséget nyújt a készletek teljesítményének figyelemmel kísérésében, és bemutatja a rajtuk átáramló költségeket. Ön vezetői betekintést nyerhet például a forgalom arányába, azon napok számába, amelyeken a készlet rendelkezésre áll, a pontosságba, a kívánt összesítési szinten (vállalat, cikk, cikkcsoport vagy telephely) elérhető „ABC-osztályozásba”. Az elérhető információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
 

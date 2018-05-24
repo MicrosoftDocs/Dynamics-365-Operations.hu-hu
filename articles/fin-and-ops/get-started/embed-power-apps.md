@@ -33,8 +33,6 @@ A Microsoft Dynamics 365 for Finance and Operations 14-es platformfrissítése t
 
 Ha többet szeretne megtudni a PowerApps beágyazásáról, nézze meg a rövid [PowerApps beágyazása a Dynamics 365 for Finance and Operations rendszerben](https://www.youtube.com/watch?v=x3qyA1bH-NY) videót.
 
-> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
-
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Beágyazott PowerApp hozzáadása egy oldalhoz
 ### <a name="overview"></a>Áttekintés
 Mielőtt PowerApp-ot ágyazna be a Finance and Operations kliensbe, először meg kell találnia vagy létre kell hoznia egy PowerApp-ot a kívánt megjelenéssel és/vagy funkcionalitással. Itt nem írjuk le a PowerApp-építés részletes folyamatát. A [PowerApps – bevezetés](https://docs.microsoft.com/en-us/powerapps/getting-started) témakör jó kiindulási pont el, ha még nem használta a PowerApps megoldást.

@@ -18,16 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobil számlajóváhagyások
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations mobilszolgáltatásai segítségével az üzleti felhasználók mobilélményeket tervezhetnek meg. Speciális esetekben a platformon a fejlesztők is igényeik szerint bővíthetik lehetőségeiket. A leghatékonyabb módszer a mobilon elérhető új lehetőségek megismeréséhez a forgatókönyvek tervezési folyamatának többszöri végigjárása. Ez a témakör gyakorlati megközelítést biztosít mobilforgatókönyvek tervezéséhez használati esetként mobilos szállítóiszámla-jóváhagyások figyelembevételével. A témakör segít a forgatókönyvek egyéb változatainak megtervezésében, és szállítói számlákhoz nem kapcsolódó más forgatókönyvekhez is alkalmazható.
 
@@ -175,9 +175,9 @@ A számla részletei lap mobilra való megtervezéséhez használja a Finance an
 1. A Finance and Operations URL-jében cserélje ki a menüelem nevét a **VendMobileInvoiceHeaderDetails** karakterláncra a képernyő megnyitásához
 2. Nyissa meg a mobiltervezőt a **Beállítások** (fogaskerék) gombbal.
 3. Kattintson a **Szerkesztés** gombra a munkaterület szerkesztési üzemmódjának elindításához.
-4. Válassza a korábban elkészített <strong>Saját szállítói **számlák oldalt, majd kattintson a **Szerkesztés</strong> elemre.
+4. Válassza ki a korábban létrehozott **Saját szállítói számlák** oldalt, majd kattintson a **Szerkesztés** elemre.
 5. A **Mezők** lapon kattintson a **Rács** oszlop fejlécére.
-6. Kattintson a **Tulajdonságok** &gt; **Oldal hozzáadása** elemre. **Megjegyzés:** amikor a **Rács** fejlécre kattint, és hozzáad egy oldalt, a részletek oldallal való kapcsolat automatikusan létrejön.
+6. Kattintson a **Tulajdonságok &gt; Oldal hozzáadása** elemre. **Megjegyzés:** amikor a **Rács** fejlécre kattint, és hozzáad egy oldalt, a részletek oldallal való kapcsolat automatikusan létrejön.
 7. Adja meg a lap címét, például: **Számla részletei**, és egy leírást, például: **Számlafejléc és sor részleteinek megtekintése**.
 8. Kattintson a **Mezők kijelölése** elemre. Ne feledje, hogy a rendelés, amelyhez hozzáadja őket, az a rendelés, amelyben a mezők megjelennek a végfelhasználó számára. A mezők sorrendjének megváltoztatása csak az összes mező újbóli kijelölésével lehetséges. 
 9. Adja hozzá a példánkban szereplő követelmények alapján a következő mezőket a fejlécből:

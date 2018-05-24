@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 25dd62081e4a6e196bffaa6cc72ff40ed68c736c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Együttműködés a szállítókkal a Szállítói portálon keresztül
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt. Az itt olvasható információk csak a Dynamics AX 2016. februári és 2016. májusi verzióira vonatkoznak.
 
@@ -96,7 +96,7 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 |                           Küldje el a beszerzési rendelés új verzióját a Szállító portálra.                            |                                                                                                                                                                    Az új verzió regisztrálva lesz a Szállítói portálon, és az állapota <strong>Külső ellenőrzés alatt</strong> állapotra módosul.                                                                                                                                                                     |
 |                                A szállító jóváhagyja a beszerzési rendelés új verzióját.                                 |                                                                                                                                                     Az állapot vagy automatikusan változik <strong>Visszaigazolva</strong> állapotra, vagy akkor, amikor megkapja a szállító válaszát, és megerősíti a beszerzési rendelést.                                                                                                                                                     |
 
-<a name="see-also"></a>Lásd még
+<a name="additional-resources"></a>További erőforrások
 --------
 
 [Biztonsági funkciók konfigurálása a szállítói együttműködés felhasználói számára](configure-security-vendor-portal-users.md)
