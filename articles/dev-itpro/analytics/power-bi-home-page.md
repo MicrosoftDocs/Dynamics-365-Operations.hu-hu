@@ -1,9 +1,9 @@
 ---
-title: Power BI-tartalom
-description: "Ez a témakör felsorolja az elérhető Power BI-tartalmakat, és átirányítja azon erőforrásokhoz, ahol többet tudhat meg róluk."
+title: "PowerBI.com-megoldások"
+description: "Ez a témakör a rendelkezésre PowerBI.com-megoldásokat sorolja fel, és útbaigazítást ad azon erőforrásokhoz, ahol többet tudhat meg a megoldásokról."
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,69 +19,49 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2473fa408ae8884b8713198debfff489ff6e6c46
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: 0aa9971226e5aa79cab85f098e098dbb789a1e2d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="power-bi-content"></a>Power BI-tartalom
-[!include [banner](../includes/banner.md)]
+# <a name="powerbicom-solutions"></a>PowerBI.com-megoldások
+A következő PowerBI.com megoldások a Dynamics 365 Pénzügy és műveletek környezetben érhetők el. 
 
-Ez a témakör felsorolja az elérhető Microsoft Power BI-tartalmakat, és átirányítja azon erőforrásokhoz, ahol többet tudhat meg róluk.
+## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>A PowerBI.com megoldások itt érhetők el: Lifecycle Services (LCS)
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a>Power BI-tartalmak a Dynamics 365 for Finance and Operations alkalmazáshoz
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations rendszert használja, a következő Power BI-tartalom érhető el:
-
-- [Tényleges és költségvetési Power BI-tartalom](ledger-budgets-power-bi.md)
-- [Juttatások Power BI-tartalom](benefits-power-bi.md)
-- [Készpénzáttekintés Power BI-tartalom](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [Pénzügyi igazgatói áttekintés Power BI-tartalom](CFO-power-bi.md)
-- [Kompenzáció Power BI-tartalom](compensation-power-bi.md)
-- [Költségkönyvelés elemzése Power BI-tartalom](cost-accounting-analysis-content-pack.md) 
-- [Költségkezelési Power BI-tartalom](cost-management-content-pack.md)    
-- [Követelések és beszedések kezelése Power BI-tartalom](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Alkalmazotti fejlesztés Power BI-tartalom](employee-development-PBI.md) 
-- [Pénzügyi információk Power BI-tartalom](financial-insights.md)
-- [Pénzügyi teljesítmény Power BI-tartalom](financial-performance-power-bi-content-pack.md)
-- [Tárgyi eszköz Power BI-tartalom](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [Tanulás Power BI-tartalom](learning-power-bi.md)
-- [Gyakorlatvezető Power BI tartalom](practice-manager-power-bi.md)
-- [Termelési teljesítmény Power BI-tartalom](production-performance-power-bi.md)
-- [Beszerzési kiadások elemzése Power BI-tartalom](purchase-content-pack-for-power-bi.md) 
-- [Toborzási Power BI-tartalom](recruiting-analysis-power-bi-content-pack.md) 
-- [Értékesítési és nyereségességi teljesítmény Power BI-tartalom](sales-profitability-performance-content-pack.md)
-- [Szállítói kifizetések Power BI-tartalom](../../financials/accounts-payable/Vendor-payments-workspace.md)
-- [Raktárteljesítmény Power BI-tartalom](warehouse-power-bi-content.md)
-- [Munkaerő-mutatók Power BI-tartalom](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Power BI tartalom a Dynamics 365 for Operations programhoz, 1611-es verzió
-Amennyiben a Microsoft Dynamics 365 for Finance and Operations Enterprise edition 1611-es verzióját használja, a következő Power BI-tartalom érhető el:
-
-- [Kompenzáció és juttatások Power BI-tartalom](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [Költségkönyvelés elemzése Power BI-tartalom](cost-accounting-analysis-content-pack.md) 
-- [Követelések és beszedések kezelése Power BI-tartalom](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Alkalmazotti kompetenciák és fejlődés Power BI-tartalom](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [Pénzügyi teljesítmény Power BI-tartalom](financial-performance-power-bi-content-pack.md)
-- [Szervezeti képzés Power BI-tartalom](organizational-training-analysis-power-bi-content-pack.md) 
-- [Gyakorlatvezető Power BI tartalom](practice-manager-power-bi.md)
-- [Termelési teljesítmény Power BI-tartalom](production-performance-power-bi.md)
-- [Beszerzési kiadások elemzése Power BI-tartalom](purchase-content-pack-for-power-bi.md) 
-- [Toborzási Power BI-tartalom](recruiting-analysis-power-bi-content-pack.md) 
-- [Értékesítési és nyereségességi teljesítmény Power BI-tartalom](sales-profitability-performance-content-pack.md)
-- [Raktárteljesítmény Power BI-tartalom](warehouse-power-bi-content.md)
-- [Munkaerő-mutatók Power BI-tartalom](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Power BI-tartalom a Microsoft Dynamics AX számára
-Amennyiben a Microsoft Dynamics AX 7.0-ás vagy a Microsoft Dynamics AX 7.0.1-es verzióját használja, a következő Power BI-tartalom érhető el:
+A következő PowerBI.com megoldások az LCS megosztott eszközök könyvtárában érhetők el. A megosztott eszközök könyvtárában ellenőrizze a verzióinformációt, hogy a környezetnek megfelelő verziót töltse le. 
 
 > [!Note]
-> Ezek a tartalomcsomagok már elavultak a [Power BI tartalmi csomagok közzététele a PowerBI.com webhelyen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom) dokumentumban ismertetett módon.
+> Az alábbi listán szereplő PowerBI.com megoldások többsége a Dynamics 365 Pénzügy és műveletek újabb változatainak analitikai munkaterületeibe van beágyazva. Az analitikus munkaterületek használatakor nem szükséges ezeket a megoldásokat letölteni az LCS megosztott eszközök könyvtárából. A jelen listán szereplő témakörök jelzik, hogy ezek a PowerBI.com megoldások hol vannak beágyazva a Pénzügy és a műveletek alkalmazásban (ahol ilyenek használatban vannak). 
 
-- [Költségkezelési Power BI-tartalom](cost-management-content-pack.md)    
-- [Pénzügyi teljesítmény Power BI-tartalom](financial-performance-power-bi-content-pack.md)
-- [Kiskereskedelmi csatorna teljesítménye Power BI-tartalom](retail-channel-performance-dashboard-power-bi-data.md) 
+- [Tényleges - költségvetés](ledger-budgets-power-bi.md)
+- [Készpénzáttekintés](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
+- [Kompenzáció és juttatások](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [Költségkönyvelési elemzés](cost-accounting-analysis-content-pack.md) 
+- [Követelések és beszedések kezelése](../../financials/accounts-receivable/credit-collections-power-bi.md)
+- [Alkalmazotti kompetenciák és fejlődés](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [Pénzügyi teljesítmény](financial-performance-power-bi-content-pack.md)
+- [Tárgyi eszközök kezelése](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
+- [Szervezeti képzés](organizational-training-analysis-power-bi-content-pack.md) 
+- [Gyakorlatkezelés](practice-manager-power-bi.md)
+- [Termelési teljesítmény](production-performance-power-bi.md)
+- [Beszerzési és ráfordítási elemzés](purchase-content-pack-for-power-bi.md) 
+- [Felvétel](recruiting-analysis-power-bi-content-pack.md)
+- [Értékesítési és jövedelmezőségi teljesítmény](sales-profitability-performance-content-pack.md)
+- [Szállítói kifizetések](../../financials/accounts-payable/Vendor-payments-workspace.md)
+- [Raktári teljesítmény](warehouse-power-bi-content.md)
+- [Munkaerő-mutatók](workforce-analysis-power-bi-content-pack.md)  
 
+## <a name="powerbicom-solutions-available-from-appsource"></a>Az AppSource-ban elérhető PowerBI.com megoldások
 
+A következő PowerBI.com megoldások itt érhetők el: [Microsoft AppSource](https://appsource.microsoft.com).
+
+> [!Note]
+> Ezek a megoldások elavulttá váltak a következő dokumentációban ismertetettek szerint [Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+
+- Költségkezelés    
+- [Pénzügyi teljesítmény](financial-performance-power-bi-content-pack.md)
+- [Kiskereskedelmi csatorna teljesítménye ](retail-channel-performance-dashboard-power-bi-data.md) 
 

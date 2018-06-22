@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fecdca72839ef8ce204b62db6e02e8fa809a30d5
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 613fcf941576b9fb05f5c059699e4cc9c4cabe3e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -94,7 +94,7 @@ A pénzügyi jelentések között 22 alapértelmezett pénzügyi jelentés talá
 | Könyvvizsgálati részletek – Alapértelmezett                                  | Az összes számla egyenlegének részletes adatainak megtekintése. Ez a jelentés a hitel- és bankkártya egyenlegeket mutatja a jelentési pénznemben és a helyi pénznemben a tranzakciók további adataival együtt, mint például a felhasználói azonosító, az utolsó módosítást végrehajtó felhasználó, az utolsó módosítás dátuma, és a napló azonosítója. |
 | Vevői egyenleglista – Alapértelmezett                                   | Az összes számla egyenlegének részletes adatainak megtekintése. Ez a jelentés megjeleníti a nyitó és záró egyenlegeket, a hitel- és bankkártyák egyenlegeit az aktuális időszakra és a folyó év aktuális napjáig a tranzakciók további adataival együtt, mint például a bizonylat.                                                                    |
 | Mérleg – Alapértelmezett                                   | A szervezet éves pénzügyi helyzetének megtekintése.                                                                                                                                                                                                                                                             |
-| Mérleg és eredménykimutatás egymás mellett - alapértelmezett] | A vállalat éves pénzügyi helyzetének és nyereségességének megjelenítése egymás mellett.                                                                                                                                                                                                                              |
+| Mérleg és bevétel-kimutatás egymás mellett – Alapértelmezett | A vállalat éves pénzügyi helyzetének és nyereségességének megjelenítése egymás mellett.                                                                                                                                                                                                                              |
 | Pénzforgalom – Alapértelmezett                                       | Betekintés a szervezet beérkező és kimenő készpénzfizetéseibe.                                                                                                                                                                                                                                   |
 | Részletes JE és TB áttekintés – Alapértelmezett                      | Nyitó egyenleg és a tevékenységi információk megtekintése az összes fiókban.                                                                                                                                                                                                                                                      |
 | Részletes főkönyvi kivonat – Alapértelmezett                         | Egyenleginformációk megtekintése minden olyan számlához, amely hitel- vagy bankkártya egyenleggel rendelkezik, valamint ezen egyenlegek nettó értéke, a tranzakció dátumával, a bizonylattal és a napló leírással együtt.                                                                                                                                  |
@@ -117,12 +117,9 @@ Amikor rákattint a **Pénzügyi jelentéskészítés** menüre, a vállalat ala
 ## <a name="creating-and-modifying-financial-reports"></a>Pénzügyi jelentések létrehozása és módosítása
 A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést. Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az **Új** gombra kattintva a műveletpanelen. Letöltődik a készülékére egy jelentéstervező program. A jelentéstervező elindulása után új jelentést hozhat létre. Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában. A listában csak a Finance and Operation rendszerben használt vállalatra vonatkozó jelentések jelennek meg. A pénzügyi jelentések a Finance and Operations rendszerben való létrehozásának és módosításának folyamatával kapcsolatos további tudnivalókért olvassa el ezeket a [blogbejegyzések](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) a Dynamics pénzügyi beszámolók webnaplóból. **Megjegyzés:** A számítógépre, amelyre letölti a jelentéstervező klienst, telepítve kell lennie a Microsoft .NET Framework 4.6.2 verziójának. A Microsoft .NET Framework ezen verziója [innen](https://www.microsoft.com/en-us/download/details.aspx?id=53345) tölthető le és telepíthető. Chrome használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. Módosíthatja is a jelentést, amely megjelenik a pénzügyi jelentések listájában. Ha be van jelölve a jelentés neve körüli terület, kattintson a **Szerkesztés** menüpontra a Műveleti ablaktáblán. A jelentéstervező program elindul.
 
-<a name="additional-resources"></a>További erőforrások
---------
-
-[Pénzügyi jelentések megtekintése](view-financial-reports.md)
-
-[Dynamics Pénzügyi jelentések blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+## <a name="additional-resources"></a>További erőforrások
+- [Pénzügyi jelentések megtekintése](view-financial-reports.md)
+- [Dynamics Pénzügyi jelentések blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

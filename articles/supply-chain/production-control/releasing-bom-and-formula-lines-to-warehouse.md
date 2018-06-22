@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -43,8 +43,7 @@ Az anyagjegyzék- és receptúrasorok kiadásához használt módszert a **Terme
 - **Anyagjegyzék- és receptúrasorok kiadása a termelési vagy a kötegrendelés kiadásának részeként** – ennél a módszernél egy termelési vagy kötegrendelés anyagjegyzék és receptúrasorait a rendelés kiadási folyamatának részeként adják ki. A termelési vagy kötegrendelés kiadásának részeként a termelési munkákat általában az üzem dolgozói számára adják ki, és kinyomtatják a termelési dokumentumokat. A folyamat során a rendelés állapota is megváltozik **Kiadva** állapotra.
 - **Anyagjegyzék- és receptúrasorok kiadása kötegelt feladatként vagy manuális beavatkozásként** – ennél a módszernél az anyagjegyzék- és receptúrasorokat kizárólag az **Anyagjegyzék és receptúrasorok automatikus kiadása** kötegelt feladat részeként, vagy manuális beavatkozással lehet kiadni. Anyagjegyzék- és receptúrasorok manuális kiadásához válassza a **Kiadás raktárba** lehetőséget a termelési rendelés listája vagy a termelési rendelés részletei oldalon, a műveleti ablaktáblán.
 
-Ha gyors áttekintést szeretne arról, hogy miként adható ki az anyagjegyzék és a receptúrasorok a termelésbe kötegelt feladat segítségével, nézze meg ezt a YouTube-videót:
-[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
+Ha gyors áttekintést szeretne arról, hogy miként adható ki az anyagjegyzék és a receptúrasorok a termelésbe kötegelt feladat segítségével, nézze meg ezt a YouTube-videót: [Termeléskitárolás kiadása a raktárba kötegelve](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Anyagjegyzék- és receptúrasorok kiadása kötegelt feladat segítségével
 
@@ -85,8 +84,7 @@ A következő ábrán egy termelési rendelés látható, amelyhez két művelet
 
 ![Példa anyag kiadására műveletszám szerint](media/two-operations.PNG)
 
-Ha gyors áttekintést szeretne arról, hogy miként adható ki az anyag a késztermékekkel arányosan, nézze meg ezt a rövid YouTube-videót:
-[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
+Ha gyors áttekintést szeretne arról, lehet kiadni a késztermékek arányában anyagokat, nézze meg ezt a rövid YouTube-videót: [A termelési rendelés kiadási folyamatának fejlesztései Dynamics 365 for Finance and Operations alkalmazásban](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Anyagok kiadása a késztermékek mennyiségének arányában
 

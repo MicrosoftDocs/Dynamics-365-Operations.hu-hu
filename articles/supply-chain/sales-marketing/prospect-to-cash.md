@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f43b3943ce27c44cc0b4756d1d5f23e3be093273
+ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
+ms.openlocfilehash: 9d20a0ba92010be17029b1b0fc826eee1cded279
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -33,11 +33,8 @@ ms.lasthandoff: 05/08/2018
 
 A potenciális ügyfelek készpénzre váltása megoldás közvetlen szinkronizálást biztosít a Dynamics 365 for Finance and Operations és a Dynamics 365 for Sales között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Finance and Operations és a Sales között. Miközben az adatok áramlanak a Finance and Operations és a Sales között, Ön értékesítési és marketingtevékenységeket végezhet a Sales programban, illetve kezelheti a megrendelések teljesítését a Finance and Operations készletkezelésének használatával. 
 
-A potenciális ügyfelek készpénzre váltásának integrációjával kapcsolatos további tájékoztatáshoz nézze meg a rövid YouTube-videót:
+A potenciális ügyfelek készpénzre váltásának integrációjával kapcsolatos további tájékoztatáshoz nézze meg a rövid YouTube-videót: [![](https://img.youtube.com/vi/AVV9x5x-XCg/0.jpg)](https://www.youtube.com/watch?v=AVV9x5x-XCg)
 
-> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
-
-[Készpénz-integrációra jelölt (YouTube videó)](https://youtu.be/AVV9x5x-XCg) 
 
 A jelenlegi verzióban A potenciális ügyfelek készpénzre váltása megoldás a következő típusú közvetlen szinkronizálást biztosítja:
 

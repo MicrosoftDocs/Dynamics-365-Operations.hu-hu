@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
@@ -96,6 +96,9 @@ Az **Újraszekventálás** menü akkor érhető el, amikor több entitás van ki
 
 #### <a name="sorting"></a>Rendezés
 Használhatja a **Rendezés** beállítást az entitások listájának sorrendben való megtekintéséhez.
+
+### <a name="truncating"></a>Csonkolás
+A projektek importálásakor az importálás előtt csonkolhatja a rekordokat az entitásokban. Ez akkor hasznos, ha a rekordokat tiszta táblázatokba kell importálnia. Alapesetben ez a beállítás ki van kapcsolva.
 
 ## <a name="validate-that-the-source-data-and-target-data-are-mapped-correctly"></a>Annak az ellenőrzése, hogy a forrásadatok és a céladatok megfelelően vannak leképezve
 A leképezés funkció az importálási és exportálási feladatokra egyaránt vonatkozik.

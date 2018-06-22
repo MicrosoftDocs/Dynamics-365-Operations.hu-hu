@@ -3,7 +3,7 @@ title: "Mi az, ami új vagy módosított"
 description: "Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Finance and Operations rendszer legújabb verzióinak új szolgáltatásait."
 author: josaw1
 manager: AnnBe
-ms.date: 03/25/2018
+ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f49c5157294f615b134c9ea0f00b93f70d59f527
+ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
+ms.openlocfilehash: 8a6ea271270fd854110a8548ab92cc4ef975ad0a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
@@ -128,13 +128,13 @@ A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra törté
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>15-es platformfrissítés</td>
-<td>7.0.4839</td>
-<td>15-ös platformfrissítés célzott frissítés, ami azt jelenti, hogy minden felhasználó számára elérhető 2018 júniusában.</td>
+<td>7.0.4841</td>
+<td>március 2018.</td>
 <td><a href="whats-new-platform-update-15.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 15. platformfrissítésében (2018 márciusa)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>12-es platformfrissítés</td>
-<td>7.0.4841</td>
+<td>7.0.4709</td>
 <td>2017. november</td>
 <td><a href="whats-new-platform-update-12.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise Edition 12. platformfrissítésében (2017. november)</a></td>
 <tbody><tr class="odd">

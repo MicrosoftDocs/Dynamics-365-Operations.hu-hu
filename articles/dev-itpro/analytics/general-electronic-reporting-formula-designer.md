@@ -3,7 +3,7 @@ title: "Képletszerkesztő elektronikus jelentésekhez"
 description: "Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
+ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
+ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/25/2018
 
 ---
 
@@ -217,13 +217,13 @@ Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelye
 | NULLDATE () | **Nulla** dátumértéket jelenik meg. | |
 | NULLDATETIME () | **Null** dátum/idő értéket ad vissza. | |
 | DATETIMEFORMAT (dátum és idő, a formátum) | A megadott dátum/idő értéket a megadott formátumban karakterlánccá alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), „nn-hh-éééé”)** a jelenlegi Finance and Operations alkalmazáskiszogáló dátumát, 2015. december 24-et adja vissza,  **24-12-2015** formában, a megadott egyéni formátum szerint. |
-| DATETIMEFORMAT (dátum és idő, formátum, kultúra) | A megadott dátum/idő értéket a megadott formátumban szereplő karakterlánccá és [kultúra](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) lehetőséggé alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | A **DATETIMEFORMAT (NOW(), "d", "de")** a jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
+| DATETIMEFORMAT (dátum és idő, formátum, kultúra) | A megadott dátum/idő értéket a megadott formátumban szereplő karakterlánccá és [kultúra](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) lehetőséggé alakítja. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | A **DATETIMEFORMAT (NOW(), "d", "de")** a jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
 | SESSIONTODAY () | A jelenlegi Finance and Operations alkalmazáskiszolgáló dátumát és időpontját dátumértékként adja vissza. | |
 | SESSIONNOW () | A jelenlegi Finance and Operations munkamenet dátumát és időpontját dátum/idő értékként adja vissza. | |
 | DATEFORMAT (dátum, formátum) | A megadott dátumot karakterlánc formájában adja vissza a megadott formátumban. | **DATEFORMAT (SESSIONTODAY (), "nn-hh-éééé")** a jelenlegi Finance and Operations munkamenet dátumát, 2015. december 24-et adja vissza,  **24-12-2015** formában, a megadott egyéni formátum szerint. |
-| DATEFORMAT (dátum, formátum, területi beállítások) | Alakítsa a megadott dátumértéket a megadott formátumban és [területi beállításoknak](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) megfelelő karakterlánccá. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | A **DATETIMEFORMAT (SESSIONNOW(), "d", "de")** a jelenlegi Finance and Operations munkamenet dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
+| DATEFORMAT (dátum, formátum, területi beállítások) | Alakítsa a megadott dátumértéket a megadott formátumban és [területi beállításoknak](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx) megfelelő karakterlánccá. (A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | A **DATETIMEFORMAT (SESSIONNOW(), "d", "de")** a jelenlegi Finance and Operations munkamenet dátumát (2015. december 24.) a kiválasztott német területi beállítások szerint (**"24.12.2015"**) adja vissza. |
 | DAYOFYEAR (dátum) | Január 1. és a megadott dátum közötti napok számát adja vissza egész szám formátumban. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** a **61** értéket adja vissza. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** a **1** értéket adja vissza. |
-| DAYS (1. dátum, 2. dátum) | Az első megadott dátum és a második megadott dátum közötti napok számát adja vissza. Pozitív értéket ad vissza, ha az első dátum későbbi, mint a második dátum, **0**-t (nullát) ad vissza, ha az első dátum megegyezik a második dátummal, máskülönben pedig negatív értéket ad vissza. | A **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "ééééHHnn"), "ééééHHnn"))** **-1**-et ad vissza. |
+| DAYS (1. dátum, 2. dátum) | Az első megadott dátum és a második megadott dátum közötti napok számát adja vissza. Pozitív értéket ad vissza, ha az első dátum későbbi, mint a második dátum, **0**-t (nullát) ad vissza, ha az első dátum megegyezik a második dátummal, vagy pedig negatív értéket ad vissza, ha az első dátum korábbi a második dátumnál. | A **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "ééééHHnn"), "ééééHHnn"))** **-1**-et ad vissza. |
 
 ### <a name="data-conversion-functions"></a>Adatkonvertálási függvények
 
@@ -238,113 +238,125 @@ Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelye
 ### <a name="list-functions"></a>Lista függvények
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Funkció</th>
 <th>Leírás</th>
 <th>Példa</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>MEGOSZTÁS (bejövő, hossza)</td>
 <td>A megadott bemeneti karakterlánc felosztása a részkarakterláncokban, amelyek mindegyike megadott időtartammal rendelkezik. Új listaként jeleníti meg az eredményt.</td>
 <td>A <strong>SPLIT (&quot;abcd&quot;, 3)</strong> két rekordot tartalmazó új listát jelenít meg, amelyek <strong>KARAKTERLÁNC</strong> mezővel rendelkeznek.. Az első rekordban szereplő mező <strong>&quot;abc&quot;</strong> szöveget tartalmaz és a második rekordban szereplő mező <strong>&quot;d&quot;</strong> betűt tartalmaz.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FELOSZTÁSLISTA (lista, szám)</td>
 <td>A megadott listát kötegekké osztja fel, amelynek mindegyike megadott számú rekordot tartalmaz. A kötegek új listájaként jeleníti meg az eredményt, amely a következő elemeket tartalmazza:
 <ul>
 <li>Kötegek, mint normál listák (<strong>Érték </strong>összetevő)</li>
 <li>Az aktuális köteg száma (<strong>BatchNumber</strong> összetevő)</li>
-</ul></td>
+</ul>
+</td>
 <td>Az alábbi példában egy <strong>Sorok</strong> adatforrás jön létre három rekord rekordlistájaként. Ez a kötegekre tételekre oszlik, amelyek mindegyike legfeljebb két rekordot tartalmaz.
 <p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
 <p>Az alábbi ábrán a tervezett formátumelrendezés látható. Ebben a formátumelrendezésben a <strong>Sorok</strong> adatforráshoz kötések jönnek létre a kimenet XML-formátumú előállításához. Ez a kimenet minden egyes kötethez és a hozzá tartozó rekordokhoz egyedi csomópontokat tartalmaz.</p>
 <p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
 <p>Az alábbi ábrán a tervezett formátum futtatásának eredménye látható.</p>
-<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LIST (1. rekord [, 2. rekord...])</td>
 <td>A megadott argumentumokból létrehozott új listát jelenítik meg.</td>
 <td><strong>LISTA (modell. MainData, modell. OtherData)</strong> egy üres sort jelenít meg, ahol a mezők listája a <strong>MainData</strong> és <strong>OtherData</strong> rekord lista összes mezőjét tartalmazza.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTJOIN (1. lista, 2. lista, ...)</td>
 <td>A megadott argumentumok listájából létrehozott csatolt listát jelenítik meg.</td>
 <td>A <strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> hat rekord listáját adja vissza, ahol a <strong>KARAKTERLÁNC</strong> adattípusú egy mezője egyedüli betűket tartalmaz.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ISEMPTY (lista)</td>
 <td><strong>IGAZ</strong> értéket ad vissza, ha a megadott lista nem tartalmaz elemeket. Ellenkező esetben <strong>HAMIS</strong> választ jelenít meg.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>EMPTYLIST (lista)</td>
 <td>A megadott lista segítségével egy üres listát jelenít meg a lista szerkezetére vonatkozó forrásként.</td>
 <td>Az <strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> egy új üres listát ad vissza, amelynek ugyanolyan szerkezete van, mint a <strong>SPLIT</strong> funkció által megjelenített listának.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ELSŐ (lista)</td>
 <td>A megadott lista első rekordját akkor jeleníti meg, ha a rekord nem üres. Ellenkező esetben egy kivételt jelenít meg.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>FIRSTORNULL (lista)</td>
 <td>A megadott lista első rekordját akkor jeleníti meg, ha a rekord nem üres. Ellenkező esetben egy <strong>null</strong> rekordot jelenít meg.</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIRSTITEM (lista)</td>
 <td>Olyan listát jelenít meg, amely csak a megadott lista első elemét tartalmazza.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>ALLITEMS (útvonal)</td>
-<td>Új, összevont listát jelenít meg, amely a meghatározott elérési útnak megfelelő összes elemet tartalmazza. Az elérési utat egy érvényes adatforrás útvonalaként kell megadni a rekordlista adattípus adatforrásához. Adatelemek (például elérési út karakterlánc, dátum) hibaüzenetet jelenítenek meg az ER kifejezésszerkesztőben tervezéskor.</td>
+<td>Ez a funkció a memóriában lévő kiválasztásként fut. Új, összevont listát jelenít meg, amely a meghatározott elérési útnak megfelelő összes elemet tartalmazza. Az elérési utat egy érvényes adatforrás útvonalaként kell megadni a rekordlista adattípus adatforrásához. Adatelemek (például elérési út karakterlánc, dátum) hibaüzenetet jelenítenek meg az ER kifejezésszerkesztőben tervezéskor.</td>
 <td>Ha adatforrásként <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> értéket ad meg (DS), a <strong>COUNT( ALLITEMS (DS.Value))</strong> által visszaadott érték <strong>3</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
+<td>ALLITEMSQUERY (útvonal)</td>
+<td>Ez a funkció illesztett SQL-lekérdezésként fut. Új, összevont listát jelenít meg, amely a meghatározott elérési útnak megfelelő összes elemet tartalmazza. A megadott elérési utat egy érvényes adatforrás útvonalaként kell megadni a rekordlista adattípus adatforrásához, és tartalmaznia kell legalább egy objektumkapcsolatot. Adatelemek (például elérési út karakterlánc, dátum) hibaüzenetet jelenítenek meg az ER kifejezésszerkesztőben tervezéskor.</td>
+<td>A következő adatforrás megadása a modell-hozzárendelésben:
+<ul>
+<li><strong>CustInv</strong> (<strong>Táblarekordok</strong> típus), amelyre vonatkozik a CustInvoiceTable táblára</li> 
+<li><strong>FilteredInv</strong> (<strong>Számított mező</strong> típus), amely ezt a kifejezést tartalmazza: <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;USA-001-&quot;)</strong></li>
+<li><strong>JourLines</strong> (<strong>Számított mező</strong> típus), amely ezt a kifejezést tartalmazza: <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></li>
+</ul>
+<p>A modell leképezés futtatásakor meghívni a <strong>JourLines</strong> adatforrást, a következő SQL-utasítás futtassa történik:</p>
+SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...
+</td>
+</tr>
+<tr>
 <td>RENDEZÉS (lista [1 kifejezés, 2 kifejezés, ...])</td>
 <td>Visszaadja meg a megadott listát, miután rendezte a megadott argumentumok szerint. Ezek az argumentumok kifejezésként adhatók meg.</td>
 <td>Ha a <strong>Szállító </strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor az <strong>ORDERBY (Vendors.&#39;name()&#39;)</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>SZTORNÍROZÁS (lista)</td>
 <td>A megadott listát a sztornírozott rendezési sorrendben jeleníti meg.</td>
 <td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>HOL (lista, feltétel)</td>
 <td>Visszaadja meg a megadott listát, miután szűrte a megadott feltételek szerint. A megadott feltétel a memóriában lévő listára kerül. Így a <strong>WHERE</strong> függvény más, mint a <strong>FILTER</strong> függvény.</td>
 <td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>WHERE(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>ENUMERÁLÁS (lista)</td>
 <td>A megadott lista enumerált rekordjait tartalmazó és a következő elemeket megjelenítő új listáját jeleníti meg:
 <ul>
 <li>A megadott lista rekordjai rendszeres listákként (<strong>Érték </strong>összetevő)</li>
 <li>Az aktuális rekord index (<strong>Szám </strong>összetevő)</li>
-</ul></td>
+</ul>
+</td>
 <td>A következő ábrán az <strong>Sorszámozott</strong> adatforrás a szállítói rekordok sorszámozott listájaként jött létre a <strong>Szállítók</strong> adatforrásból, amely a VendTable táblára hivatkozik.
 <p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
 <p>Az alábbi ábra bemutatja a formátumot. Ebben a formátumelrendezésben adatkötések jönnek létre a kimenet XML-formátumú előállításához. A kimenet az egyes szállítókat sorszámozott csomópontként jeleníti meg.</p>
 <p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
 <p>Az alábbi ábrán a tervezett formátum futtatásának eredménye látható.</p>
-<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SZÁMLÁLÓ (lista)</td>
 <td>A megadott listában szereplő rekordok számát jeleníti meg, ha a rekord nem üres. Ellenkező esetben <strong>0</strong> (zero) választ jelenít meg.</td>
 <td>A <strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> <strong>2</strong> értéket jelenít meg, mert a <strong>SPLIT</strong> funkció két rekordot tartalmazó listát hoz létre.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTOFFIELDS (útvonal)</td>
 <td>A következő argumentumok valamelyikéből létrehozott rekordlistát ad vissza:
 <ul>
@@ -358,7 +370,8 @@ Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelye
 <li>Címke</li>
 <li>Leírás</li>
 </ul>
-A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű értékek jelennek meg a formátum nyelvi beállításaitól függően.</td>
+A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű értékek jelennek meg a formátum nyelvi beállításaitól függően.
+</td>
 <td>A következő ábra az adatmodellbe bevezetett sorszámozást mutatja be.
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>A következő ábrán ezek a részletek láthatók:</p>
@@ -372,10 +385,10 @@ A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű ért
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Az alábbi ábrán a tervezett formátum futtatásának eredménye látható.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>
-A címkék és leírások fordított szövege az ER formátumú kimenetbe kerül bevitelre, a szülő FILE és FOLDER formátumelemekhez konfigurált nyelvi beállításainak megfelelően.</blockquote></td>
+<blockquote>[!NOTE]<br>A címkék és leírások fordított szövege az ER formátumú kimenetbe kerül bevitelre, a szülő FILE és FOLDER formátumelemekhez konfigurált nyelvi beállításainak megfelelően.</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIELDS (elérési út, nyelv)</td>
 <td>Egy argumentumból, például modellfelsorolásból, egy formátumfelsorolásból vagy tárolóból létrehozott rekordlistát ad vissza. A létrehozott lista olyan rekordokból áll, amelyek a következő mezőket tartalmazzák:
 <ul>
@@ -384,26 +397,27 @@ A címkék és leírások fordított szövege az ER formátumú kimenetbe kerül
 <li>Leírás</li>
 <li>Lefordítva</li>
 </ul>
-<p>A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű értékek jelennek meg a formátum nyelvi beállításaitól és a megadott nyelvtől függően. A <strong>Lefordítva</strong> mező azt jelzi, hogy a <strong>Címke</strong> mezőt lefordították a megadott nyelvre.</td>
+A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű értékek jelennek meg a formátum nyelvi beállításaitól és a megadott nyelvtől függően. A <strong>Lefordítva</strong> mező azt jelzi, hogy a <strong>Címke</strong> mezőt lefordították a megadott nyelvre.
+</td>
 <td>Használhatja például a <strong>Számított mező</strong> adatforrástípust az <strong>enumType_de</strong> és <strong>enumType_deCH</strong> adatforrások az <strong>enumType</strong> adatokmodell-felsoroláshoz való konfigurálására:
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-Ebben az esetben a következő kifejezést használhatja a felsorolási érték címkéjének svájci német nyelven történő lekéréséhez, ha ez a fordítás elérhető. Ha a svájci német fordítás nem áll rendelkezésre, akkor a címke nyelve a német: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.</td>
+Ebben az esetben a következő kifejezést használhatja a felsorolási érték címkéjének svájci német nyelven történő lekéréséhez, ha ez a fordítás elérhető. Ha a svájci német fordítás nem áll rendelkezésre, akkor a címke nyelve a német: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>STRINGJOIN (lista, mezőnév, elválasztó)</td>
 <td>Visszaad egy olyan karakterláncot, amely a megadott lista megadott mezőjének összefűzött értékeiből áll. Az értékeket a megadott elválasztó választja el egymástól.</td>
-
-<td>Ha adatforrásként (DS) <strong>SPLIT(&quot;abc&quot; , 1)</strong> van megadva, a <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> kifejezés <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong> értéket ad vissza.</td>
-
+<td>Ha ezt adja meg: <strong>SPLIT(&quot;abc&quot; , 1)</strong> adatforrásként (DS), a  <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> ezt adja vissza: <strong>&quot;a-b-c&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SPLITLISTBYLIMIT (lista, határérték, korlát forrása)</td>
-<td>A megadott listát új, részleges listákból álló listává osztja fel, és a rekordlista tartalmának eredményét adja vissza. A korlátérték paramétere az eredeti lista felosztása korlátjának értékét határozza meg. A korlát forrásának paramétere a teljes összeg növelésének lépését határozza meg. A rendszer nem használja a korlátot az eredeti lista egyetlen eleménél, amikor a korlát forrása meghaladja a meghatározott határértéket.</td>
-<td>Az alábbi ábrákon látható a formátum és az adatforrások, amelyek használatosak hozzá. 
+<td>A megadott listát új, részleges listákból álló listává osztja fel, és a rekordlista tartalmának eredményét adja vissza. A <strong>korlátérték</strong> paramétere az eredeti lista felosztása korlátjának értékét határozza meg. A <strong>korlát forrásának</strong> paramétere a teljes összeg növelésének lépését határozza meg. A rendszer nem használja a korlátot az eredeti lista egyetlen eleménél, amikor a korlát forrása meghaladja a meghatározott határértéket.</td>
+<td>Az alábbi ábra bemutatja a formátumot. 
 <p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p>Az alábbi ábrákon láthatók az adatforrások, amelyek használatosak a formátumhoz.</p>
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
 <p>Az alábbi ábrán a formátum futtatásának eredménye látható. Ebben az esetben a kimenet egy egyszerű lista árucikkekről.</p>
 <p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
@@ -412,13 +426,13 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Az alábbi ábrán a módosított formátum futtatásának eredménye látható.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>
-A korlát nem vonatkozik az eredeti lista utolsó elemére, mivel a korlát forrásának (súly) értéke (11) meghaladja a meghatározott határértéket (9). Használja a megfelelő formátumelem <strong>WHERE</strong> függvényét vagy az <strong>Enabled</strong> kifejezést a részleges listák figyelmen kívül hagyásához (átugrásához) a jelentés előállítása során, ha szükséges.</blockquote></td>
+<blockquote>[!NOTE]<br>A korlát nem vonatkozik az eredeti lista utolsó elemére, mivel a korlát forrásának (súly) értéke (11) meghaladja a meghatározott határértéket (9). Használja a megfelelő formátumelem <strong>WHERE</strong> függvényét vagy az <strong>Enabled</strong> kifejezést a részleges listák figyelmen kívül hagyásához (átugrásához) a jelentés előállítása során, ha szükséges.</blockquote>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FILTER (lista, feltétel)</td>
 <td>Visszaadja meg a megadott listát, miután a lekérdezést módosította és szűrte a megadott feltételek szerint. Ez a függvény eltér a <strong>WHERE</strong> függvénytől, mivel a megadott feltétel az adatbázis szintjén kerül alkalmazásra a <strong>Táblarekordok</strong> típus bármely ER adatforrására. A lista és a feltétel táblák és kapcsolatok segítségével határozhatók meg.</td>
-  <td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>FILTER(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza. Ha a <strong>Szállító</strong> ER-adatforrásként van konfigurálva, amely a <strong>VendTable</strong> táblára és a <strong>parmVendorBankGroup</strong>-ra hivatkozik, amely ER-adatforrásként konfigurálva az értéket karakterlánc adattípusként adja vissza, a , <strong>FILTER (Szállító.&#39;&lt;Kapcsolatok&#39;.VendBankAccount, Szállító.&#39;&lt;Kapcsolatok&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> csak az adott bankcsoporthoz tartozó szállítói számlák listáját adja vissza.</td>
+<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>FILTER(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza. Ha a <strong>Szállító</strong> ER-adatforrásként van konfigurálva, amely a <strong>VendTable</strong>  táblára és ha a <strong>parmVendorBankGroup</strong>-ra hivatkozik, amely ER-adatforrásként konfigurálva az értéket <strong>karakterlánc</strong> adattípusként adja vissza, a <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> csak az adott bankcsoporthoz tartozó szállítói számlák listáját adja vissza.</td>
 </tr>
 </tbody>
 </table>
@@ -441,9 +455,9 @@ A korlát nem vonatkozik az eredeti lista utolsó elemére, mivel a korlát forr
 | TELJESÍTMÉNY (szám, teljesítmény) | A megadott pozitív szám megadott teljesítményre történő javításának eredményét jeleníti meg. | **TELJESÍTMÉNY (10, 2)** **100** értéket jelenít meg. |
 | NUMBERVALUE (karakterlánc, tizedesjegy-elválasztó, számjegy csoportosítási elválasztó) | A megadott karakterlánc konvertálása egy számhoz. A megadott tizedeselválasztó a decimális szám egészszám- és a tizedestört-részei között használatos. A megadott számjegy csoportosítási elválasztó használatos az ezresek elválasztására. | **NUMBERVALUE ("1 234,56", ",","")** **1234,56** értéket jelenít meg. |
 | ÉRTÉK (karakterlánc) | A megadott karakterlánc konvertálása egy számhoz. A vesszőket és a pont karaktereket (.) decimális elválasztóknak tekintik és a vezető kötőjelet (-) negatív jelként használjál. Kivételt ad, ha más nem numerikus karakterek találhatók a megadott karakterláncban. | **ÉRTÉK („1 234,56”)** megad egy kivételt. |
-| KEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre kerekítve:<ul><li>Ha a megadott tizedesjegy-paraméter értéke nagyobb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek ezen megadott számára van kerekítve.</li><li>Ha a tizedesjegy-paraméter értéke **0** (nulla) értéket, a megadott szám a legközelebbi egészre van kerekítve.</li><li>Ha a tizedesjegy-paraméter értéke kisebb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek bal oldalára van kerekítve.</li></ul> | **KEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít és **1200,77** értéket jelenít meg. **KEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít és **1000** értéket jelenít meg. |
-| LEKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre lefelé kerekítve.<blockquote>[!NOTE]<br>Ez a függvény úgy viselkedik, mint a <strong>ROUND</strong>, de mindig lefelé (nulla felé) kerekíti a megadott számot.</blockquote> | **LEKEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít le és **1200,76** értéket jelenít meg. **LEKEREKÍTÉS (1700,767, -3)** az 1000 legközelebbi többszörösére kerekít le és **1000** értéket jelenít meg. |
-| FELKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre felfelé kerekítve.<blockquote>[!NOTE]<br>Ez a függvény úgy viselkedik, mint a <strong>ROUND</strong>, de mindig felfelé (nullával ellenkező irányba) kerekíti a megadott számot.</blockquote> | **FELKEREKÍTÉS (1200,763, 2)** két tizedesjegyre kerekít fel és **1200,77** értéket jelenít meg. **FELKEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít fel és **2000** értéket jelenít meg. |
+| KEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre kerekítve:<ul><li>Ha a megadott **tizedesjegy**-paraméter értéke nagyobb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek ezen megadott számára van kerekítve.</li><li>Ha a **tizedesjegy**-paraméter értéke **0** (nulla) értéket, a megadott szám a legközelebbi egészre van kerekítve.</li><li>Ha a **tizedesjegy**-paraméter értéke kisebb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek bal oldalára van kerekítve.</li></ul> | **KEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít és **1200,77** értéket jelenít meg. **KEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít és **1000** értéket jelenít meg. |
+| LEKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre lefelé kerekítve.<blockquote>[!NOTE]<br>Ez a függvény úgy viselkedik, mint a **ROUND**, de mindig lefelé (nulla felé) kerekíti a megadott számot.</blockquote> | **LEKEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít le és **1200,76** értéket jelenít meg. **LEKEREKÍTÉS (1700,767, -3)** az 1000 legközelebbi többszörösére kerekít le és **1000** értéket jelenít meg. |
+| FELKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre felfelé kerekítve.<blockquote>[!NOTE]<br>Ez a függvény úgy viselkedik, mint a **ROUND**, de mindig felfelé (nullával ellenkező irányba) kerekíti a megadott számot.</blockquote> | **FELKEREKÍTÉS (1200,763, 2)** két tizedesjegyre kerekít fel és **1200,77** értéket jelenít meg. **FELKEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít fel és **2000** értéket jelenít meg. |
 
 ### <a name="data-conversion-functions"></a>Adatkonvertálási függvények
 
@@ -460,87 +474,80 @@ A korlát nem vonatkozik az eredeti lista utolsó elemére, mivel a korlát forr
 
 | Funkció | Leírás | Példa |
 |----------|-------------|---------|
-| NULLCONTAINER (lista) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE]<br>Ez a funkció már elavult. Használja az <strong>EMPTYRECORD</strong> helyette.</blockquote> | **NULLCONTAINER (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
-| EMPTYRECORD (rekord) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE]<br>A <strong>null</strong> rekord olyan rekord, amelyben minden mezőhöz üres érték tartozik. Az üres érték <strong>0</strong> (nulla) a számok esetén, üres karakterlánc a karakterláncoknál stb.</blockquote> | **ÜRESREKORD (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
+| NULLCONTAINER (lista) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE]<br>Ez a funkció már elavult. Használja az **EMPTYRECORD** helyette.</blockquote> | **NULLCONTAINER (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
+| EMPTYRECORD (rekord) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE]<br>A **null** rekord olyan rekord, amelyben minden mezőhöz üres érték tartozik. Az üres érték **0** (nulla) a számok esetén, üres karakterlánc a karakterláncoknál stb.</blockquote> | **ÜRESREKORD (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
 
 ### <a name="text-functions"></a>Szöveg függvények
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Funkció</th>
 <th>Leírás</th>
 <th>Példa</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>FELSŐ (karakterlánc)</td>
 <td>Visszaadja a megadott karakterláncot, amelyet előtte nagybetűssé alakít.</td>
 <td><strong>FELSŐ(&quot;Minta&quot;)</strong> a következőt adja vissza: <strong>&quot;MINTA&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>ALSÓ (karakterlánc)</td>
 <td>Visszaadja a megadott karakterláncot, amelyet előtte kisbetűssé alakít.</td>
 <td><strong>ALSÓ (&quot;Minta&quot;)</strong> a következőt adja vissza: <strong>&quot;minta&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>BALRA (karakterlánc, karakterek száma)</td>
 <td>Megjeleníti a megadott karakterlánc elejéről származó karakterek megadott számát.</td>
 <td><strong>BALRA (&quot;Minta&quot;, 3)</strong> a következőt adja vissza: <strong>&quot;Min&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>JOBBRA (karakterlánc, karakterek száma)</td>
 <td>Megjeleníti a megadott karakterlánc végéről származó karakterek megadott számát.</td>
 <td><strong>JOBBRA (&quot;Minta&quot;, 3)</strong> a következőt adja vissza: <strong>&quot;nta&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>KÖZEPES (szöveg, kezdő beosztás, karakterek száma)</td>
 <td>Megjeleníti a megadott karakterláncból származó karakterek megadott számát a megadott pozíciótól kezdve.</td>
 <td><strong>KÖZEPES (&quot;Minta&quot;, 2, 3)</strong> a következőt adja vissza: <strong>&quot;amp&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LEN (karakterlánc)</td>
 <td>A megadott karakterláncban szereplő karakterek számát jeleníti meg.</td>
 <td><strong>LEN (&quot;Minta&quot;)</strong> a következőt adja vissza: <strong>6</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CHAR (szám)</td>
 <td>Megjelenítik a megadott Unicode szám által hivatkozott karakterek karakterláncát.</td>
 <td><strong>CHAR (255)</strong> a következőt adja vissza: <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>
-A funkció által visszaadott karakterlánc a szülő FILE formátumelemben kiválasztott kódolástól függ. A támogatott kódolások listájához lásd: <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kódolási osztály</a>.</blockquote>
+<blockquote>[!NOTE]<br>A funkció által visszaadott karakterlánc a szülő FILE formátumelemben kiválasztott kódolástól függ. A támogatott kódolások listájához lásd: <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kódolási osztály</a>.</blockquote>
 </td>
 </tr>
-<tr class="even">
+<tr>
 <td>ÖSSZEFŰZÉS (1-es karakterlánc [, 2-es karakterlánc...])</td>
 <td>Az összes megadott szöveges karakterláncot adja vissza egy karakterláncba egyesítve.</td>
 <td><strong>ÖSSZEFŰZÉS (&quot;abc&quot;, &quot;def&quot;)</strong> a következőt adja vissza: <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>
-Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az <strong>&quot;abcdef&quot;</strong> értéket adja vissza.</blockquote>
+<blockquote>[!NOTE]<br>Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az <strong>&quot;abcdef&quot;</strong> értéket adja vissza.</blockquote>
 </td>
 </tr>
-<tr class="odd">
+<tr>
 <td>FORDÍTÁS (karakterlánc, minta, csere)</td>
 <td>Úgy adja vissza a megadott karakterláncot, hogy a megadott mintakarakterlánc karaktereinek összes előfordulását a megadott helyettesítő karakterlánc megfelelő helyén található karakterekkel helyettesíti.</td>
 <td>A <strong>FORDÍTÁS (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> lecseréli a <strong>&quot;cd&quot;</strong> mintát a <strong>&quot;GH&quot;</strong> karakterlánccal, és a következőt adja vissza: <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>CSERE (karakterlánc, minta, helyettesítő, reguláris kifejezés jelző)</td>
 <td>Ha a megadott reguláris kifejezés jelzője <strong>igaz</strong>, akkor úgy adja vissza a megadott karakterláncot, hogy előtte a függvény mintaargumentumaként megadott reguláris kifejezés alkalmazásával módosította azt. A kifejezés segítségével meg lehet találni azokat a karaktereket, amelyeket ki kell cserélni. A megadott helyettesítési argumentum karakterei segítségével ki lehet cserélni a megtalált karaktereket. Ha a megadott reguláris kifejezés jelző <strong>hamis</strong>, ez a funkció úgy viselkedik, mint a <strong>FORDÍTÁS</strong> funkció.</td>
 <td><strong>CSERE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, igaz)</strong> reguláris kifejezést alkalmazásával eltávolítja az összes nem numerikus szimbólumot, és <strong>&quot;19234564971&quot;</strong> értéket jelenít meg. <strong>CSERE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> a <strong>&quot;cd&quot;</strong> mintát lecseréli a <strong>&quot;GH&quot;</strong> karakterlánccal, és a következőt adja vissza: <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SZÖVEG (bevitel)</td>
 <td>A megadott bemenetet úgy adja vissza, hogy előtte az aktuális Finance and Operations példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítja. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
 <td>Ha a Finance and Operations-példány kiszolgáló területi beállítása <strong>EN-US</strong>, a <strong>TEXT (NOW ())</strong> a jelenlegi Finance and Operations munkamenet dátumát (2015. december 17.) <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong> szöveges karakterláncként adja vissza. <strong>TEXT (1/3)</strong>a következőt adja vissza: <strong>&quot;0,33&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FORMAT (1. karakterlánc, 2. karakterlánc[, 3. karakterlánc, …])</td>
 <td>A megadott karakterláncot úgy adja vissza, hogy előtte az <strong>%N</strong> minden előfordulását az <em>n.</em> argumentummal helyettesítve formázza. Az argumentumok karakterláncok. Ha egy argumentum nem érhető el a paraméter számára, a paraméter a karakterláncban <strong>&quot;%N&quot;</strong> elemként jelenik meg. A <strong>valós</strong> típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik.</td>
 <td>A következő példában a <strong>PaymentModel</strong> adatforrás megjeleníti a vevőrekordok listáját a <strong>Vevő</strong> összetevőn keresztül és az adatérték feldolgozását a <strong>ProcessingDate</strong> mezőn keresztül.
@@ -563,37 +570,38 @@ Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az
 <p>Ha a jelentés feldolgozása a <strong>Litware Retail</strong> vevőre vonatkozóan 2015. december 17-én folyik, az <strong>EN-US</strong> területi beállításban és az <strong>EN-US</strong> nyelvben ez a képlet a következő szöveget jeleníti meg, amely a felhasználó számára egy kivételre vonatkozó üzenetként jeleníthető meg:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Ha ugyanazt a jelentést 2015. december 17-én a <strong>Litware Retail</strong> vevőre vonatkozóan a <strong>DE</strong> területi beállítással és a <strong>DE</strong> nyelven dolgozzák fel, ez a képlet a következő, eltérő dátumformátumot használó szöveget jeleníti meg:</p>
-<p>&quot;Nichts zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>
-A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
+<p>&quot;Nichts zu drucken. Debitor 'Litware Kiskereskedelmi' wird für 17.12.2015 gesperrt.&quot;</p>
+<blockquote>[!NOTE]<br>A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
 <ul>
 <li><strong>Finance and Operations erőforrásokból származó címkékhez:</strong> <strong>@&quot;X&quot;</strong>, ahol X az alkalmazásobjektum-fában (AOT) szereplő címkeazonosító.</li>
 <li><strong>Az ER-konfigurációkban található címkékhez:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, ahol X az ER-konfigurációban található címkeazonosító.</li>
-</ul></blockquote></td>
+</ul>
+</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SZÁMFORMÁTUM (szám, formátum)</td>
 <td>A megadott szám karakterlánc formáját adja vissza a megadott formátumban. (A támogatott formátumokkal kapcsolatos információkért lásd: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">normál</a> és <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">egyéni</a>.) A környezet, amelyben a függvény fut, a számok formázásához használt kultúra függvénye.</td>
 <td>Az EN-US kultúrában a <strong>SZÁMFORMÁTUM (0.45, &quot;p&quot;)</strong> a következőt adja vissza: <strong>&quot;45.00 %&quot;</strong>. <strong>SZÁMFORMÁTUM (10.45, &quot;#&quot;)</strong> a következőt adja vissza: <strong>&quot;10&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NUMERALSTOTEXT (szám, nyelv, pénznem, pénznem névjelzőjének nyomtatása, tizedes)</td>
-<td>A megadott számot adja vissza, miután megtörtént az átírása (konvertálása) szöveglánc formátumra a megadott nyelven. A nyelvkód megadása nem kötelező. Ha üres karakterláncként van megadva, akkor a futó környezet nyelvkódját használja a rendszer. (A futó környezet nyelvkódja létrehozó mappához vagy fájlhoz van megadva.) A pénznemkód szintén nem kötelező. Ha üres karakterláncként van meghatározva, a rendszer a vállalati pénznemet használja.
-<blockquote>[!NOTE]<br>
-A pénznem névjelzőjének nyomtatása paraméter és a tizedes paraméterek elemzését csak a következő nyelvkódokra vonatkozóan végzi el a rendszer: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> és <strong>RU</strong>. Emellett a pénznem névjelzőjének nyomtatása paraméter elemzését csak azon, a Finance and Operations rendszert használó vállalatok esetében végzi el a rendszer, amelyek ország- vagy régiókörnyezete támogatja a valuták nevének ragozását.</blockquote></td>
+<td>A megadott számot adja vissza, miután megtörtént az átírása (konvertálása szöveglánc formátumra) a megadott nyelven. A nyelvkód megadása nem kötelező. Ha üres karakterláncként van megadva, akkor a futó környezet nyelvkódját használja a rendszer. (A futó környezet nyelvkódja létrehozó mappához vagy fájlhoz van megadva.) A pénznemkód szintén nem kötelező. Ha üres karakterláncként van meghatározva, a rendszer a vállalati pénznemet használja.
+<blockquote>[!NOTE]<br>A <strong>pénznem névjelzőjének nyomtatása</strong> paraméter és a <strong>tizedes</strong> paraméterek elemzését csak a következő nyelvkódokra vonatkozóan végzi el a rendszer: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> és <strong>RU</strong>. Emellett a <strong>pénznem névjelzőjének nyomtatása</strong> paraméter elemzését csak azon, a Finance and Operations rendszert használó vállalatok esetében végzi el a rendszer, amelyek ország- vagy régiókörnyezete támogatja a valuták nevének ragozását.</blockquote>
+</td>
 <td>A <strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> a következő eredményt adja vissza: <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. A <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> a következő eredményt adja vissza: <strong>&quot;Sto dwadzieścia&quot;</strong>. A <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> a következő eredményt adja vissza: <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>PADLEFT (karakterlánc, hossz, kitöltő karakterek)</td>
 <td>Megadott hosszúságú karakterláncot ad vissza, amelyben az aktuális karakterlánc eleje megadott karakterekkel van kitöltve.</td>
 <td>A <strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> a következő szöveges karakterláncot adja vissza: <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>TRIM (karakterlánc)</td>
 <td>A megadott szöveget adja vissza, miután a kezdő és záró szóközöket levágta, és a szavak közötti több szóközt eltávolította.</td>
 <td>A <strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;szöveg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> a következő eredményt adja vissza: <strong>&quot;Minta szöveg&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>GETENUMVALUEBYNAME (felsorolási adatforrás elérési útja, felsorolási érték címkeszövege)</td>
 <td>Egy megadott felsorolási adatforrás értékét adja vissza a felsorolási címke megadott szövege alapján.</td>
 <td>A következő ábra az adatmodellbe bevezetett <strong>ReportDirection</strong> sorszámozást mutatja be. Vegye figyelembe, hogy a címkék az enumerációs értékekhez vannak megadva.
@@ -603,7 +611,24 @@ A pénznem névjelzőjének nyomtatása paraméter és a tizedes paraméterek el
 <li>A <strong>ReportDirection</strong> modellfelsorolás jelentésbe <strong>$Direction</strong> adatforrásként kerül beillesztésre.</li>
 <li>Az <strong>$IsArrivals</strong> ER-kifejezés a modellfelsorolást e függvény paramétereként használja. A kifejezés értéke <strong>IGAZ</strong>.</li>
 </ul>
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+</td>
+</tr>
+<tr>
+<td>GUIDVALUE (bevitel)</td>
+<td>Konvertálja a megadott bemenetét a <strong>karakterlánc</strong> adattípusnak a <strong>GUID</strong> adattípus adatelemévé.</td>
+<td>A következő adatforrás megadása a modell-hozzárendelésben:
+<ul>
+<li><strong>myID</strong> (<strong>Számított mező</strong> típus), amely ezt a kifejezést tartalmazza: <strong>GUIDVALUE (&quot;AF5CCDAC-F728-4609-8C8B-A4B30B0C0AA0&quot;)</strong></li>
+<li><strong>Felhasználók</strong> (<strong>Táblarekordok</strong> típus), amelyre vonatkozik a UserInfo táblára</li>
+</ul>
+Ezen adatforrások megadásakor használható kifejezés például a <strong>FILTER (Users, Users.objectId = myID)</strong> a UserInfo tábla szűréséhez az <strong>objectId</strong> területén a <strong>GUID</strong> adattípusnak.
+</td>
+</tr>
+<tr>
+<td>JSONVALUE (azonosító, elérési út)</td>
+<td>Adatok elemzése a megadott elérési út által használt JavaScript Object Notation (JSON) formátumban, a megadott azonosítón alapuló skaláris érték kibontásához.</td>
+<td>Az adatforrás: <strong>$JsonField</strong> JSON-formátumban a következő adatokat tartalmazza: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. Az adatforrásra: </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> ezt az értéket adja eredményül: <strong>7.3.1234.1</strong>, a <strong>karakterlánc</strong> adattípussal.</td>
 </tr>
 </tbody>
 </table>
@@ -631,11 +656,11 @@ A pénznem névjelzőjének nyomtatása paraméter és a tizedes paraméterek el
 | Funkció | Leírás | Példa |
 |----------|-------------|---------|
 | PÉNZNEMVÁLTÁS (összeg, eredeti pénznem, cél pénznem, dátum, vállalat) | A megadott forráspénzösszeg konvertálása az eredeti pénznemről a megadott cél pénznemre a megadott Finance and Operations vállalat beállításainak használata segítségével a megadott időpontban. | **PÉNZNEMVÁLTÁS (1, „EUR”, „USD”, MA(), „DEMF”)** egy euró egyenértékét USA-dollárban jelenít meg az aktuális munkameneti napon a DEMF vállalat beállításai alapján. |
-| ÖSSZEGKEREKÍTÉS (szám, tizedes, kerekítési szabály) | A megadott összeget a megadott tizedesjegyek száma és a megadott kerekítési szabály szerint kerekíti.<blockquote>[!NOTE]<br>A kerekítési szabályt a Finance and Operations <strong>RoundOffType</strong> felsorolásának értékeként kell meghatározni.</blockquote> | Ha a **model.RoundOff** paraméter **Downward** értékre van állítva, a **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** a következő értéket adja vissza: **1000,78**. Ha a **modell.Roundoff** paraméter értéke vagy **Normál** vagy **Felkerekítés** lehetőségre van beállítva, akkor az **ÖSSZEGKEREKÍTÉS (1000,787, 2. modell.Roundoff)** **1000,79** értéket jeleníti meg. |
+| ÖSSZEGKEREKÍTÉS (szám, tizedes, kerekítési szabály) | A megadott összeget a megadott tizedesjegyek száma és a megadott kerekítési szabály szerint kerekíti.<blockquote>[!NOTE]<br>A kerekítési szabályt a Finance and Operations **RoundOffType** felsorolásának értékeként kell meghatározni.</blockquote> | Ha a **model.RoundOff** paraméter **Downward** értékre van állítva, a **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** a következő értéket adja vissza: **1000,78**. Ha a **modell.Roundoff** paraméter értéke vagy **Normál** vagy **Felkerekítés** lehetőségre van beállítva, akkor az **ÖSSZEGKEREKÍTÉS (1000,787, 2. modell.Roundoff)** **1000,79** értéket jeleníti meg. |
 | CURCredRef (számjegy) | Egy hitelező hivatkozást jelenít meg a megadott számlaszám számjegyei alapján. | **CURCredRef („VEND-200002”)** **„2200002”** értéket jelenít meg. |
 | MOD\_97 (számjegy) | Egy hitelező hivatkozást MOD97 kifejezésként jelenít meg a megadott számlaszám számjegyei alapján. | **MOD\_97 ("VEND-200002")** a következőt adja vissza: **"20000285"**. |
 | ISOCredRef (számjegy) | Egy ISO (International Organization for Standardization ) hitelezői hivatkozást jelenít meg a megadott számlaszám betűi és számjegyei alapján.<blockquote>[!NOTE]<br>A nem ISO szabványos betűkből származó szimbólumok eltávolításához a bemeneti paramétereket le kell fordítani a függvénynek történő megfeleltetés előtt.</blockquote> | **ISOCredRef („VEND-200002”)** **„RF23VEND-200002”** értéket jelenít meg. |
-| CN\_GBT\_AdditionalDimensionID (karakterlánc, szám) | A további pénzügyi dimenzió azonosítójának beolvasása. Ebben a karakterláncban a dimenziókat a rendszer vesszővel elválasztott azonosítókként jeleníti meg. Ebben a karakterláncban a kért dimenzió számsorozatkódját számok határozzák meg. | A **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** a következőt adja vissza: **"CC"**. |
+| CN\_GBT\_AdditionalDimensionID (karakterlánc, szám) | A megadott további pénzügyi dimenzió azonosítójának beolvasása. A **karakterlánc** paraméterben a dimenziókat a rendszer vesszővel elválasztott azonosítókként jeleníti meg. A **szám** paraméter a kért dimenzió számsorozatkódját határozza meg a karakterláncban. | A **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** a következőt adja vissza: **"CC"**. |
 | GetCurrentCompany () | Egy olyan jogi személyhez (vállalathoz) tartozó kód szöveges változatát adja vissza, amelybe egy felhasználó jelenleg be van jelentkezve. | A **GETCURRENTCOMPANY()** az **USMF** értéket adja vissza a Finance and Operations programban a **Contoso Entertainment System USA** vállalatba bejelentkezett felhasználók számára. |
 | CH\_BANK\_MOD\_10 (számjegyek) | Egy hitelező hivatkozást MOD10 kifejezésként jelenít meg a megadott számlaszám számjegyei alapján. | A **CH\_BANK\_MOD\_10 ("VEND-200002")** a következőt adja vissza: **3**. |
 | FA\_SUM (tárgyi eszköz kódja, értékmodell kódja, kezdő dátum, záró dátum) | A tárgyi eszköz adott időszakra vonatkozó összegeinek előkészített adattárolóját adja vissza. | A **FA\_SUM ("COMP-000001", "Aktuális", Dátum1, Dátum2)**  a **„COMP-000001”** tárgyi eszköz előkészített adattárolóját adja vissza **„Aktuális”** értékmodellel a **Dátum1** és **Dátum2** közötti időtartamra. |
