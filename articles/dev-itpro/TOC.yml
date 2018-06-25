@@ -1,0 +1,1403 @@
+- name: Dynamics 365 for Finance and Operations fejlesztése és adminisztrációja
+  href: index.md
+- name: Felhőbeli telepítések rendszerkövetelményei
+  href: ../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json
+- name: Helyszíni telepítések rendszerkövetelményei
+  href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json
+- name: Bemutató adatok
+  href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
+  items:
+    - name: Bemutató adatok létrehozása csomagokkal
+      href: data-entities/generate-demo-data-packages.md
+- name: Fejlesztés és személyre szabás a Visual Studio használatával
+  href: dev-tools/developer-home-page.md
+  items:
+    - name: Az alkalmazásverem és a kiszolgáló felépítése
+      href: dev-tools/application-stack-server-architecture.md
+    - name: Próbaváltozat beszerzése
+      href: dev-tools/get-evaluation-copy.md
+    - name: Regisztrálás előfizetésre
+      href: dev-tools/sign-up-preview-subscription.md
+    - name: Fejlesztői környezet telepítése és hozzáférés
+      href: dev-tools/access-instances.md
+      items:
+        - name: Fejlesztői virtuális gép konfigurálása
+          href: dev-tools/configure-developer-vm.md
+        - name: Új felhasználó létrehozása fejlesztési gépen
+          href: dev-tools/enable-development-machine.md
+        - name: Rendszergazdai hozzáférést nem engedélyező virtuális gépek fejlesztése és összeállítása – GYIK
+          href: sysadmin/VMs-no-admin-access.md
+        - name: Helyi környezet átnevezése a Visual Studio Team Services-hozzáférés engedélyezéséhez
+          href: migration-upgrade/vso-machine-renaming.md
+        - name: Fejlesztési rendszerkövetelmények
+          href: dev-tools/development-system-requirements.md
+    - name: 'Verziókövetés, metaadatok keresése és navigáció'
+      href: dev-tools/version-control-metadata-navigation.md
+    - name: Flottakezelés – mintaalkalmazás
+      items:
+        - name: Flottakezelés – mintaalkalmazás
+          href: dev-tools/fleet-management-sample.md
+        - name: Flottakezelés – mintaalkalmazás áttekintése
+          href: dev-tools/introduction-fleet-management-sample.md
+    - name: Visual Studio-eszközök
+      items:
+        - name: Fejlesztői eszközök áttekintése
+          href: dev-tools/development-tools-overview.md
+        - name: Fejlesztői eszközök oktatóanyag
+          href: dev-tools/introduction-visual-studio.md
+        - name: Application Explorer
+          href: dev-tools/application-explorer.md
+        - name: Projekt létrehozása és hibakeresés
+          href: dev-tools/build-debug-project.md
+        - name: Buildműveletek
+          href: dev-tools/build-operations.md
+        - name: Kódszerkesztő
+          href: dev-tools/code-editor.md
+        - name: Modell és adatmodellelemek létrehozása
+          href: dev-tools/create-data-model-elements.md
+          items:
+            - name: Elnevezési irányelvek
+              href: extensibility/NamingGuidelines.md
+            - name: Kapcsolja ki a modell testreszabási és elavulási funkcióit
+              href: dev-tools/lock-models.md
+        - name: Testreszabás-elemzési jelentés
+          href: dev-tools/customization-analysis-report.md
+        - name: Elemtervezők
+          href: dev-tools/element-designers.md
+        - name: Elemhasználat
+          href: dev-tools/element-usage.md
+        - name: Modell exportálása és importálása
+          href: dev-tools/models-export-import.md
+        - name: Metaadat-keresés a Visual Studio szolgáltatásban
+          href: dev-tools/metadata-search-visual-studio.md
+        - name: Modellek
+          href: dev-tools/models.md
+        - name: Projektek a Dynamics 365 for Finance and Operations szolgáltatásban
+          href: dev-tools/projects.md
+        - name: Visual Studio-eszközök és -bővítmények
+          href: dev-tools/developer-tools-add-ins.md
+        - name: A Visual Studio fejlesztői eszközeinek frissítése
+          href: dev-tools/update-development-tools.md
+    - name: X++ programozási nyelv
+      items:
+        - name: 'X++ és hibakeresési funkciók  '
+          href: dev-tools/new-x-debugger-features.md
+        - name: Keressen X++ hibákat a termelési adatbázis egy példányában
+          href: dev-tools/debug-x-issue-against-copy-of-production.md
+        - name: Hibakeresés az X++-kódban
+          href: dev-tools/debug-xpp.md
+        - name: EventHandlerResult-osztályok a kérelmi vagy válaszesetekben
+          href: dev-tools/event-handler-result-class.md
+        - name: 'Üzleti logika írása C\# és X++ forráskóddal'
+          href: dev-tools/write-business-logic.md
+        - name: Programnyelv-támogatás
+          href: dev-tools/programming-language-support.md
+        - name: 'LINQ-szolgáltató a C\# nyelvhez'
+          href: dev-tools/linq-provider-c.md
+        - name: Gyakorlati tanácsok az Authoring szolgáltatáshoz
+          href: dev-tools/author-best-practice-rules.md
+        - name: Az Application Explorer tulajdonságai
+          href: dev-ref/application-explorer-aot-properties.md
+        - name: X++ nyelvi referencia
+          items:
+            - name: X++ nyelvi referencia
+              href: dev-ref/xpp-language-reference.md
+            - name: X++ típusú változók és adattípusok
+              href: dev-ref/xpp-variables-data-types.md
+            - name: 'X++ típusú állítások, ciklusok és kivételkezelés'
+              href: dev-ref/xpp-statements-loops.md
+            - name: X++-operátorok
+              href: dev-ref/xpp-operators.md
+            - name: X++-operátorprecedencia
+              href: dev-ref/xpp-operator-precedence.md
+            - name: X++-osztályok és módszerek
+              href: dev-ref/xpp-classes-methods.md
+            - name: X++-adatkiválasztás és -manipuláció
+              href: dev-ref/xpp-data-query.md
+            - name: X++-makrók
+              href: dev-ref/xpp-macros.md
+            - name: X++-attribútumosztályok
+              href: dev-ref/xpp-attribute-classes.md
+            - name: 'Az X++ és a C\# összehasonlítása'
+              href: dev-ref/xpp-cs-comparison.md
+            - name: Az X++ szintaxisa
+              href: dev-ref/xpp-syntax.md
+    - name: 'Alkalmazásprogramozási felület, osztály- és táblareferenciák'
+      href: dev-ref/api-reference.md
+      items:
+        - name: X++ fordításidejű funkciók
+          href: dev-ref/xpp-compile-time-functions.md
+        - name: X++ futásidejű funkciók
+          href: dev-ref/xpp-run-time-functions.md
+          items:
+            - name: X++ üzleti futásidejű funkciók
+              href: dev-ref/xpp-business-run-time-functions.md
+            - name: X++ tároló futásidejű funkciók
+              href: dev-ref/xpp-container-run-time-functions.md
+            - name: X++ konverzió futásidejű funkciók
+              href: dev-ref/xpp-conversion-run-time-functions.md
+            - name: X++ dátum futásidejű funkciók
+              href: dev-ref/xpp-date-run-time-functions.md
+            - name: X++ matematikai futásidejű funkciók
+              href: dev-ref/xpp-math-run-time-functions.md
+            - name: X++ reflexió futásidejű funkciók
+              href: dev-ref/xpp-reflection-run-time-functions.md
+            - name: X++ munkamenet futásidejű funkciók
+              href: dev-ref/xpp-session-run-time-functions.md
+            - name: X++ karakterlánc futásidejű funkciók
+              href: dev-ref/xpp-string-run-time-functions.md
+        - name: Rendszertáblák
+          href: dev-ref/system-tables.md
+        - name: Rendszerosztályok
+          items:
+            - name: A osztályok
+              href: dev-ref/a-classes.md
+            - name: B osztályok
+              href: dev-ref/b-classes.md
+            - name: C osztályok
+              href: dev-ref/c-classes.md
+            - name: D osztályok
+              href: dev-ref/d-classes.md
+            - name: E osztályok
+              href: dev-ref/e-classes.md
+            - name: 'F osztályok: FieldBinding – FormBuildAnimateControl'
+              href: dev-ref/fieldbinding-classes.md
+            - name: 'F osztályok: FormBuildButtonControl – FormBuildFastTabSummarySeparator'
+              href: dev-ref/formbuildbuttoncontrol-classes.md
+            - name: 'F osztályok: FormBuildFilterPaneControl – FormBuildRealControl'
+              href: dev-ref/formbuildfilterpanecontrol-classes.md
+            - name: 'F osztályok: FormBuildReferenceControl – FormButtonSeparatorControl'
+              href: dev-ref/formbuildreferencecontrol-classes.md
+            - name: 'F osztályok: FormChangeTracker – FormControlEventArgs'
+              href: dev-ref/formchangetracker-classes.md
+            - name: 'F osztályok: FormDataObject – FormFastTabHeaderControl'
+              href: dev-ref/formdataobject-classes.md
+            - name: 'F osztályok: FormFastTabSummarySeparator – FormGridControl'
+              href: dev-ref/formfasttabsummaryseparator-classes.md
+            - name: 'F osztályok: FormGroupControl – FormIntControl'
+              href: dev-ref/formgroupcontrol-classes.md
+            - name: 'F osztályok: FormListBoxControl – FormNotifyEventArgs'
+              href: dev-ref/formlistboxcontrol-classes.md
+            - name: 'F osztályok: FormObject – FormRealControl'
+              href: dev-ref/formobject-classes.md
+            - name: 'F osztályok: FormReferenceControl – FormStringControl'
+              href: dev-ref/formreferencecontrol-classes.md
+            - name: 'F osztályok: FormTabControl – FormWindowControl'
+              href: dev-ref/formtabcontrol-classes.md
+            - name: G osztályok
+              href: dev-ref/g-classes.md
+            - name: H osztályok
+              href: dev-ref/h-classes.md
+            - name: I osztályok
+              href: dev-ref/i-classes.md
+            - name: J osztályok
+              href: dev-ref/j-classes.md
+            - name: K osztályok
+              href: dev-ref/k-classes.md
+            - name: L osztályok
+              href: dev-ref/l-classes.md
+            - name: M osztályok
+              href: dev-ref/m-classes.md
+            - name: N osztályok
+              href: dev-ref/n-classes.md
+            - name: O osztályok
+              href: dev-ref/o-classes.md
+            - name: P osztályok
+              href: dev-ref/p-classes.md
+            - name: Q osztályok
+              href: dev-ref/q-classes.md
+            - name: R osztályok
+              href: dev-ref/r-classes.md
+            - name: S osztályok
+              href: dev-ref/s-classes.md
+            - name: T osztályok
+              href: dev-ref/t-classes.md
+            - name: U osztályok
+              href: dev-ref/u-classes.md
+            - name: V osztályok
+              href: dev-ref/v-classes.md
+            - name: W osztályok
+              href: dev-ref/w-classes.md
+            - name: X osztályok
+              href: dev-ref/x-classes.md
+    - name: Bővíthetőség
+      href: extensibility/extensibility-home-page.md
+      items:
+        - name: Bevezetés és az első lépések
+          items:
+            - name: Alkalmazásbővítési tervek
+              href: extensibility/extensibility-roadmap.md
+            - name: Bővítési kérelmek
+              href: extensibility/extensibility-requests.md
+            - name: GYIK
+              href: extensibility/app-sealing-faq.md
+            - name: Áttelepítés a felülrétegzésből a bővítményekbe
+              href: extensibility/migrate-overlayer-extension.md
+            - name: Modellelemek testreszabása kiterjesztésekkel (oktatóanyag)
+              href: extensibility/customize-model-elements-extensions.md
+            - name: 'Testreszabás: felülrétegzés és bővítmények'
+              href: extensibility/customization-overlayering-extensions.md
+        - name: Újdonságok
+          items:
+            - name: 'Bővítési módosítások, 2017. július'
+              href: extensibility/changes-july-2017.md
+            - name: 'Bővítési módosítások, 7.3-as verzió'
+              href: extensibility/extensibility-changes-73.md
+            - name: 'Bővítési módosítások, 8.0-as verzió'
+              href: extensibility/changes-80.md
+        - name: Alapismeretek
+          items:
+            - name: Tolakodó testreszabások
+              href: extensibility/intrusive-customizations.md
+            - name: Osztálykiterjesztések
+              href: extensibility/class-extensions.md
+            - name: 'Osztálykiterjesztés: módszercsomagolás és parancslánc'
+              href: extensibility/method-wrapping-coc.md
+            - name: Elnevezési irányelvek
+              href: extensibility/naming-guidelines-extensions.md
+            - name: Modellkorlátozások enyhítése a felülrétegzés bővítményekbe történő újrabontásának engedélyezése érdekében
+              href: extensibility/refactoring-over-layering.md
+        - name: Hogyan?
+          items:
+            - name: Felsorolásérték hozzáadása
+              href: extensibility/add-enum-value.md
+            - name: Kiterjesztett adattípus módosítása
+              href: extensibility/modify-edt.md
+            - name: Alosztály regisztrálása gyári módszerhez
+              href: extensibility/register-subclass-factory-methods.md
+            - name: Válasz az EventHandlerResult szolgáltatással
+              href: extensibility/respond-event-handler-result.md
+            - name: A RunBase osztály bővítése
+              href: extensibility/extend-runbase-class.md
+            - name: Delegált használata az Application startup osztály testreszabásánál
+              href: extensibility/startup-customizations.md
+            - name: Létező mező módosítása egy táblában
+              href: extensibility/modify-existing-field.md
+            - name: Új mező hozzáadása egy meglévő táblához
+              href: extensibility/add-field-extension.md
+            - name: Index hozzáadása egy meglévő táblához
+              href: extensibility/add-index.md
+            - name: Kapcsolat hozzáadása egy meglévő táblához
+              href: extensibility/add-relation.md
+            - name: Meglévő tábla tulajdonságainak módosítása
+              href: extensibility/modify-properties.md
+            - name: Mód hozzáadása egy táblához
+              href: extensibility/add-method-table.md
+            - name: Üzleti műveletek végrehajtása egy táblarekord életciklusán keresztül
+              href: extensibility/subscribe-table-events.md
+            - name: Új adatforrás hozzáadása képernyőhöz
+              href: extensibility/add-datasource.md
+            - name: Űrlap feliratának módosítása
+              href: extensibility/change-caption-form.md
+            - name: Képernyővezérlő tulajdonságainak módosítása
+              href: extensibility/modify-control-properties.md
+            - name: Címke módosítása
+              href: extensibility/change-label.md
+            - name: Számsorozat hatáskörének bővítése
+              href: extensibility/extend-number-sequence-scope.md
+            - name: Új készletdimenzió hozzáadása
+              href: extensibility/inventory-dimensions.md
+            - name: Ár és engedmény bővítésének módosításai
+              href: extensibility/pricing-app73.md
+            - name: Táblahozzárendelés-bővítmény
+              href: extensibility/map-extensions.md
+            - name: Interfészként használt tábla-hozzárendelések kiterjesztése
+              href: extensibility/maps-as-interfaces.md
+            - name: Verziókövetésre használt tábla-hozzárendelések kiterjesztése
+              href: extensibility/maps-with-versioning.md
+    - name: Teljesítmény
+      items:
+        - name: Nyomon követés a Trace parser használatával
+          href: perf-test/trace-trace-tutorial.md
+        - name: PerfSDK és többfelhasználós tesztelés a Visual Studio Team Services segítségével
+          href: perf-test/perfsdk-tutorial.md
+        - name: Hibák diagnosztizálása és teljesítményproblémák elemzése a Nyomkövetés-elemző használatával
+          href: perf-test/trace-parser.md
+        - name: Teljesítményidőzítő
+          href: perf-test/performance-timer.md
+    - name: Támogatás tesztelése a Visual Studio szoftverben
+      items:
+        - name: Tesztelés és ellenőrzés
+          href: perf-test/testing-validation.md
+        - name: Visual Studio-tesztprojektek
+          href: perf-test/testing-support.md
+        - name: Telepítés folyamatos build- és tesztautomatizálással
+          href: perf-test/continuous-build-test-automation.md
+    - name: Dátum érvényessége
+      href: dev-tools/date-effectivity.md
+    - name: ISV-licenckezelés
+      href: dev-tools/isv-licensing.md
+    - name: Helyszíni ISV-licenckezelés
+      href: dev-tools/isv-licensing-on-prem.md
+- name: Felhasználói felület fejlesztése
+  href: user-interface/user-interface-development-home-page.md
+  items:
+    - name: Oktatóanyagok
+      items:
+        - name: Kölcsönzés költségtípusa űrlap létrehozása
+          href: user-interface/build-rental-charge-type-form.md
+        - name: Vevő űrlap létrehozása
+          href: user-interface/build-customer-form.md
+        - name: Navigáció létrehozása
+          href: user-interface/build-navigation.md
+        - name: Munkaterület létrehozása
+          href: user-interface/build-workspace.md
+    - name: Képernyők
+      items:
+        - name: Navigáció a Dynamics 365 for Finance and Operations szolgáltatásban
+          href: user-interface/page-navigation.md
+        - name: Elrendezés a Dynamics 365 for Finance and Operations szolgáltatásban
+          href: user-interface/page-layout.md
+        - name: Szimbólum betűtípus
+          href: user-interface/symbol-font.md
+        - name: Tesztűrlapok egyedi mintákkal
+          href: user-interface/testing-forms-custom-patterns.md
+        - name: Mélylinkek létrehozása és használata
+          href: user-interface/create-deep-links.md
+        - name: 'Űrlapok, termékek és vezérlők hozzáférhetősége'
+          href: user-interface/enable-accessibility.md
+        - name: Mező testreszabása Súgó
+          href: user-interface/customize-field-help.md
+    - name: Vezérlőelemek
+      items:
+        - name: Műveleti vezérlők
+          href: user-interface/action-controls.md
+        - name: Beviteli vezérlők és rácsoszlopméretek
+          href: user-interface/sizing-input-controls-grid-columns.md
+        - name: Jelölőnégyzet-támogatás a favezérlőkben
+          href: user-interface/check-box-tree-controls.md
+        - name: Szűrők
+          href: user-interface/filtering.md
+        - name: PowerApps-állomásvezérlő
+          href: user-interface/powerapps-host-control.md
+    - name: Ablakkezelés
+      items:
+        - name: Helyimenü-kód áthelyezése
+          href: migration-upgrade/code-migration-context-menus.md
+        - name: Dupla kattintási kód áthelyezése az egérrel
+          href: migration-upgrade/code-migration-double-click.md
+        - name: Környezeti adatbevitel a keresésekhez
+          href: user-interface/contextual-data-entry-lookups.md
+        - name: HierarchyViewer-vezérlő
+          href: user-interface/hierarchy-viewer-control.md
+        - name: Keresési vezérlők
+          href: user-interface/lookups-controls.md
+        - name: Fájlfeltöltési vezérlők
+          href: user-interface/file-upload-control.md
+        - name: Rendszer által definiált gombok
+          href: user-interface/system-defined-buttons.md
+        - name: Képek
+          href: user-interface/images-form-grid.md
+        - name: 'Betűtípus és háttérszínek a bevitelhez, a táblázathoz és a rácsvezérlőkhöz'
+          href: user-interface/specify-color-font-background-controls.md
+        - name: Jobbról balra író nyelvek támogatása és kétirányú szöveg
+          href: user-interface/bidirectional-support.md
+        - name: Ikonok létrehozása a munkaterület csempéihez
+          href: user-interface/create-icons-workspace-tiles.md
+        - name: Kiterjeszthető vezérlők – Nyilvános JavaScript API-k
+          href: user-interface/public-javascript-apis.md
+        - name: Vezérlő-ellenőrzőlista
+          href: user-interface/control-checklist.md
+    - name: Üzenetek
+      items:
+        - name: Csúszka és üzenetpanel
+          href: user-interface/slider-messagebox.md
+        - name: 'API az üzenetközponthoz, az üzenetsávhoz és az üzenetadatokhoz'
+          href: user-interface/messaging-api-center-bar-details.md
+        - name: 'GYIK az üzenetközpontról, az üzenetsávról és az üzenetadatokról'
+          href: user-interface/messaging-user.md
+    - name: Elsődleges űrlap mintáira vonatkozó irányelvek
+      items:
+        - name: Űrlapminta kiválasztása
+          href: user-interface/select-form-pattern.md
+        - name: Űrlapstílusok és -minták
+          href: user-interface/form-styles-patterns.md
+        - name: Űrlapminta-bővítmények
+          href: user-interface/form-pattern-add-ins.md
+    - name: Űrlapminták
+      items:
+        - name: Űrlapokkal kapcsolatos általános irányelvek
+          href: user-interface/general-form-guidelines.md
+        - name: Részletek alapűrlap mintája
+          href: user-interface/details-master-form-pattern.md
+        - name: Részletek tranzakciója űrlap mintája
+          href: user-interface/details-transaction-form-pattern.md
+        - name: Űrlaprészszakasz-lista űrlap mintája
+          href: user-interface/section-list-form-pattern.md
+        - name: Listaoldal űrlap mintája
+          href: user-interface/list-page-form-pattern.md
+        - name: Egyszerű adatok űrlap mintája
+          href: user-interface/simple-details-form-pattern.md
+        - name: Egyszerű lista és adatok űrlap mintája
+          href: user-interface/simple-list-details-form-pattern.md
+        - name: Egyszerű lista űrlap mintája
+          href: user-interface/simple-list-form-pattern.md
+        - name: Tartalomjegyzék űrlap mintája
+          href: user-interface/table-of-contents-form-pattern.md
+        - name: Feladat dupla űrlapmintája
+          href: user-interface/task-double-form-pattern.md
+        - name: Feladat egyszerű űrlapmintája
+          href: user-interface/task-single-form-pattern.md
+        - name: Varázsló-űrlapminta
+          href: user-interface/wizard-form-pattern.md
+        - name: Munkaterület űrlap mintája
+          href: user-interface/workspace-form-pattern.md
+    - name: Másodlagos űrlap mintái
+      items:
+        - name: Összetett választási űrlap mintája
+          href: user-interface/advanced-selection-form-pattern.md
+        - name: Párbeszéd űrlap mintája
+          href: user-interface/dialog-form-pattern.md
+        - name: Legördülő párbeszédpanel űrlap mintája
+          href: user-interface/drop-dialog-form-pattern.md
+        - name: Keresési űrlap mintája
+          href: user-interface/lookup-form-pattern.md
+        - name: Adatterület űrlapjának mintája
+          href: user-interface/factbox-form-patterns.md
+    - name: Alminták
+      items:
+        - name: Egyéni szűrőcsoport-alminta
+          href: user-interface/custom-filter-group-subpattern.md
+        - name: Dimenzióbelépés-vezérlő alminta
+          href: financial/dimension-entry-control-subpattern.md
+        - name: Dimenziókifejezés-szerkesztési alminta
+          href: financial/dimension-expression-builder-subpattern.md
+        - name: Mezők és mezőcsoportok almintája
+          href: user-interface/fields-field-groups-subpattern.md
+        - name: Szűrők és az Eszköztár almintái
+          href: user-interface/filters-toolbar-subpattern.md
+        - name: Szöveges alminta kitöltése
+          href: user-interface/fill-text-subpattern.md
+        - name: Függőleges mezők és gombcsoport almintája
+          href: user-interface/horizontal-fields-buttons-group-subpattern.md
+        - name: Kép előnézetének almintája
+          href: user-interface/image-preview-subpattern.md
+        - name: Listapanel almintája
+          href: user-interface/list-panel-subpattern.md
+        - name: Beágyazott lista és adatok űrlap almintája
+          href: user-interface/nested-simple-list-details-subpattern.md
+        - name: Szakaszdiagram űrlapjának mintája
+          href: user-interface/section-chart-form-pattern.md
+        - name: Szakasz Power BI-almintája
+          href: user-interface/section-powerbi-subpattern.md
+        - name: Szakaszhoz kapcsolódó linkek almintája
+          href: user-interface/section-related-links-subpattern.md
+        - name: Szakasz halmozott diagramjának almintája
+          href: user-interface/section-stacked-chart-subpattern.md
+        - name: Szakaszlap listájának almintája
+          href: user-interface/section-tabbed-list-subpattern.md
+        - name: Szakaszcsempék almintája
+          href: user-interface/section-tiles-subpattern.md
+        - name: Táblázatos mezők almintája
+          href: user-interface/tabular-fields-subpattern.md
+        - name: Eszköztár és mezők almintái
+          href: user-interface/toolbar-fields-subpattern.md
+        - name: Eszköztár és lista almintái
+          href: user-interface/toolbar-list-subpattern.md
+        - name: Munkaterület oldal szűrőcsoport-almintája
+          href: user-interface/workspace-filter-group-subpattern.md
+    - name: Vezérlőbővíthetőség
+      items:
+        - name: Bővíthető vezérlő létrehozása
+          href: user-interface/build-extensible-control.md
+        - name: Billentyűparancsok a bővíthető vezérlőkhöz
+          href: user-interface/keyboard-shortcuts-controls.md
+        - name: Bővíthető vezérlő programozási referenciája
+          href: user-interface/extensible-control-programming-reference.md
+        - name: Vezérlőbővíthetőség
+          href: user-interface/control-extensibility.md
+        - name: Honosítható címkék létrehozása
+          href: user-interface/create-localizable-labels-client.md
+        - name: Bővíthető vezérlő elrendezésének irányelvei
+          href: user-interface/extensible-controls-layout.md
+        - name: A Feladatrögzítő által ellenőrzéshez generált szöveg kezelése
+          href: user-interface/task-recorder-control-text.md
+    - name: Munkaterületek létrehozása
+      items:
+        - name: Üzemeltetési munkaterület létrehozása
+          href: user-interface/build-workspaces.md
+        - name: Csempe- és lista-gyorsítótárazás a munkaterületekhez
+          href: user-interface/tile-list-caching-workspaces.md
+    - name: Feladatrögzítő
+      href: user-interface/task-recorder.md
+      items:
+        - name: Feladatrögzítő gyors áttekintése
+          href: user-interface/task-recorder-quick-reference.md
+        - name: Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
+          href: user-interface/task-recorder-training-docs.md
+- name: Mobil platform
+  href: mobile-apps/platform/mobile-platform-home-page.md
+  items:
+    - name: Első lépések
+      href: mobile-apps/platform/mobile-platform-getting-started.md
+      items:
+        - name: Felépítés
+          href: mobile-apps/platform/mobile-platform-architecture.md
+        - name: Üzleti logika események – áttekintés
+          href: mobile-apps/platform/business-logic-events-overview.md
+        - name: Oldaltervezési irányelvek
+          href: mobile-apps/platform/page-design-guidelines.md
+        - name: Művelettervezési irányelvek
+          href: mobile-apps/platform/action-design-guidelines.md
+        - name: Képernyőtervezési követelmények
+          href: mobile-apps/platform/form-design-requirements.md
+    - name: Általános feladatok
+      items:
+        - name: Munkaterület beállítása a SysAppWorkspace osztály használatával
+          href: mobile-apps/platform/scenarios/mobile-workspace-configuration.md
+        - name: 'Mező megjelenítésének testreszabása úgy, hogy kattintható legyen'
+          href: mobile-apps/platform/scenarios/make-workspace-field-clickable.md
+        - name: Leltározás megjelenítése egy mezőben
+          href: mobile-apps/platform/scenarios/display-count-workspace.md
+        - name: Mobil munkaterület biztonságossá tétele
+          href: mobile-apps/platform/scenarios/secure-mobile-workspace.md
+        - name: Munkaterületek honosítása a kiszolgálón
+          href: mobile-apps/platform/scenarios/localize-workspaces-on-server.md
+        - name: Mező kötelezővé tétele munkaterület-osztályok használatával
+          href: mobile-apps/platform/scenarios/make-field-mandatory.md
+    - name: Kiszolgálóoldali fejlesztési hivatkozás
+      items:
+        - name: Kiszolgálóoldali fejlesztés (X++ munkaterület API-k)
+          href: mobile-apps/platform/mobile-workspace-server-apis.md
+    - name: Ügyféloldali fejlesztési hivatkozás
+      items:
+        - name: Ügyféloldali tervezési API-k – áttekintés
+          href: mobile-apps/platform/scenarios/client-api-design-overview.md
+        - name: Ügyfél API-k
+          href: mobile-apps/platform/client-apis/client-apis-reference.md
+          items:
+            - name: PageState-felsorolás
+              href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
+            - name: Alkalmazásmodul
+              href: mobile-apps/platform/client-apis/modules/services-application.md
+            - name: Halasztási modul
+              href: mobile-apps/platform/client-apis/modules/defer.md
+            - name: Esemény modulja
+              href: mobile-apps/platform/client-apis/modules/event-ievent.md
+            - name: Vezérlési modul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md
+            - name: Tárolómodul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md
+            - name: Mezőmodul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md
+            - name: Fájlfeltöltési modul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md
+            - name: Csoportmodul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md
+            - name: Hiperhivatkozás-modul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md
+            - name: Képmodul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md
+            - name: Beviteli modul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md
+            - name: Listamodul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md
+            - name: Keresési modul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md
+            - name: Többszörös keresési modul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md
+            - name: Oldalmodul
+              href: mobile-apps/platform/client-apis/modules/view-model-ipage.md
+            - name: Pagelink-modul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md
+            - name: Részmodul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md
+            - name: Szolgáltatások modul
+              href: mobile-apps/platform/client-apis/modules/services-business-logic-services.md
+            - name: Értékmodul
+              href: mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md
+            - name: Application típus
+              href: mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md
+            - name: ApplicationMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md
+            - name: AsyncService típus
+              href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md
+            - name: CacheService típus
+              href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md
+            - name: CompleteEventArgs típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md
+            - name: ContainerControl típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md
+            - name: ContainerControlDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md
+            - name: ContainerControlMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md
+            - name: ControlMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md
+            - name: DataService típus
+              href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md
+            - name: Deferred típus
+              href: mobile-apps/platform/client-apis/interfaces/defer-ideferred.md
+            - name: Design típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md
+            - name: EventHook típus
+              href: mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md
+            - name: Field típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md
+            - name: FieldDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md
+            - name: FieldMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md
+            - name: FileUploader típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md
+            - name: FileUploaderDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md
+            - name: FileUploaderMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md
+            - name: GenericValue típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md
+            - name: getDataSource típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md
+            - name: Group típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md
+            - name: GroupDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md
+            - name: GroupMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md
+            - name: HyperLink típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md
+            - name: HyperLinkDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md
+            - name: HyperLinkMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md
+            - name: Képtípus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md
+            - name: ImageDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md
+            - name: ImageMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md
+            - name: InputControl típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md
+            - name: InputControlDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md
+            - name: InputControlMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md
+            - name: List típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md
+            - name: ListDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md
+            - name: ListMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md
+            - name: Keresési típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md
+            - name: LookupDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md
+            - name: LookupMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md
+            - name: MetadataService típus
+              href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md
+            - name: MultiLookup típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md
+            - name: MultiLookupDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md
+            - name: MultiLookupMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md
+            - name: NavigationArgs típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md
+            - name: NumberSequenceConfig típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md
+            - name: Page típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md
+            - name: PageData típus
+              href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md
+            - name: PageLink típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md
+            - name: PageLinkDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md
+            - name: PageLinkMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md
+            - name: PageMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md
+            - name: PageOptions típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md
+            - name: PageSubmitArgs típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md
+            - name: PageTarget típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md
+            - name: Part típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md
+            - name: PartDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
+            - name: PartMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
+            - name: Row típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
+            - name: Value típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
+            - name: ValueDesign típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
+            - name: ValueMetadata típus
+              href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+- name: Adatintegrálás
+  items:
+    - name: Az adatok (importálási/exportálási) integrációs stratégiájának kiválasztása
+      href: data-entities/integration-overview.md
+    - name: Adatintegrációs API-k
+      items:
+        - name: Adatkezelési csomag API-ja
+          href: data-entities/data-management-api.md
+        - name: Szolgáltatási végpontok
+          href: data-entities/services-home-page.md
+          items:
+            - name: Szolgáltatáshitelesítési hibaelhárítás
+              href: data-entities/troubleshoot-service-authentication.md
+        - name: OData
+          href: data-entities/odata.md
+        - name: Egyéni szolgáltatások
+          href: data-entities/custom-services.md
+        - name: Ismétlődő integrációk
+          href: data-entities/recurring-integrations.md
+        - name: Harmadik fél szolgáltatásának tesztelése közüzemi szolgáltatások használatával
+          href: data-entities/third-party-service-test.md
+    - name: Fejlesztés integrációhoz
+      items:
+        - name: Adatintegráció az adatentitások használatával
+          href: data-entities/data-management-integration-data-entity.md
+          items:
+            - name: Entitás fejlesztése az adatátvitelhez
+              href: data-entities/develop-entity-for-data-migration.md
+            - name: Összetett adatentitások fejlesztése
+              href: data-entities/develop-composite-data-entities.md
+            - name: Vállalatközi pénzügyi adatmegosztás konfigurálása
+              href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
+            - name: Adatbevitel megkönnyítése érdekében rekordsablon létrehozása
+              href: data-entities/tasks/create-record-template-facilitate-data-entry.md
+            - name: Rekordsablon használata egy új rekord létrehozásához
+              href: data-entities/tasks/use-record-template-new-record.md
+        - name: Adatok integrálása a Common Data Service környezettel
+          href: data-entities/data-integration-cds.md
+          items:
+            - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
+              href: ../supply-chain/sales-marketing/prospect-to-cash.md
+              items:
+                - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
+                  href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                - name: A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
+                  href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
+                - name: A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre
+                  href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
+                  href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
+                  href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba
+                  href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+            - name: A Field Service szolgáltatással való integráció konfigurálása
+              href: ../supply-chain/sales-marketing/field-service.md
+              items:
+                - name: A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
+                  href: ../supply-chain/sales-marketing/field-service-product.md
+                - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel
+                  href: ../supply-chain/sales-marketing/field-service-work-order.md
+                - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódő számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
+                  href: ../supply-chain/sales-marketing/field-service-invoice.md
+        - name: Külső webszolgáltatások használata
+          href: data-entities/consume-external-web-service.md
+- name: Adatkezelés
+  href: data-entities/data-entities-data-packages.md
+  items:
+    - name: Adatentitások
+      href: data-entities/data-entities.md
+      items:
+        - name: Konfigurációs adatprojektek
+          href: data-entities/configuration-data-projects.md
+        - name: Konfigurációs adatcsomagok
+          href: data-entities/configuration-data-packages.md
+        - name: Konfigurációs adatok másolása vállalatok között
+          href: data-entities/copy-configuration.md
+        - name: Konfigurációs adatsablonok
+          href: data-entities/configuration-data-templates.md
+        - name: Több munkalap sablonokat adatok
+          href: data-entities/excel-template-multiple.md
+        - name: Entitás változásainak nyomon követése
+          href: data-entities/entity-change-track.md
+        - name: Konfigurációs kulcsok és adatentitások
+          href: data-entities/config-key-entities.md
+        - name: Normál adatentitásokkal kapcsolatos információk
+          href: data-entities/data-entities-report.md
+    - name: Adatimportálási és -exportálási feladatok
+      href: data-entities/data-import-export-job.md
+      items:
+        - name: Bevált eljárások a kuponok Általános napló entitással történő importálásához
+          href: data-entities/tips-tricks-import-general-journal-entity.md
+    - name: Fejlesztés adatentitásokhoz
+      items:
+        - name: Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz
+          href: dev-tools/design-best-practices.md
+        - name: Új adatentitások létrehozása
+          href: data-entities/build-consuming-data-entities.md
+        - name: Adatentitás-tulajdonságok
+          href: data-entities/behavioral-properties-data-entities.md
+        - name: Számítási oszlopok és virtuális mezők létrehozása
+          href: data-entities/data-entity-computed-columns-virtual-fields.md
+        - name: Vállalatközi viselkedés
+          href: data-entities/cross-company-behavior.md
+        - name: Ország-/régiókódok kezelése
+          href: data-entities/countryregion-codes-configuration-keys.md
+        - name: Öröklődési minták
+          href: data-entities/support-super-type-sub-type.md
+        - name: Adatokentitás-varázsló szabályai
+          href: data-entities/data-entity-wizard-rules.md
+        - name: Metaadat-tulajdonságok
+          href: data-entities/behavioral-properties-data-entities.md
+        - name: 'Hitelesítések, alapértékek és leképezéssel nem rendelkező mezők'
+          href: data-entities/validations-defaults-unmapped-fields.md
+        - name: Biztonság és adatentitások
+          href: data-entities/security-data-entities.md
+        - name: 'Egy csak olvasható entitás létrehozása, amely elérhetővé teszi a pénzügyi dimenziókat'
+          href: financial/read-only-entity-financial.md
+    - name: Használja saját adatbázisát
+      href: analytics/export-entities-to-your-own-database.md
+    - name: Adatfeladat automatizálása
+      href: data-entities/data-task-automation.md
+    - name: Erőforrások egy GDPR-adatkérelem megválaszolására
+      href: gdpr/gdpr-home-page.md
+      items:
+        - name: Útmutató a Microsoft Dynamics 365 for Finance and Operations rendszerben használt GDPR-hez
+          href: gdpr/gdpr-guide.md
+        - name: Eszközbesorolások
+          href: gdpr/gdpr-asset-classification-values.md
+        - name: Személykeresési jelentés használata
+          href: gdpr/gdpr-person-search-report.md
+        - name: A Személykeresési jelentés kiterjesztése
+          href: gdpr/gdpr-extend-person-search-report.md
+        - name: Bizalmas adatokhoz való hozzáférés kezelése
+          href: gdpr/gdpr-auditing-sensitive-data.md
+        - name: Személyes adatokra vonatkozó kérés megválaszolása a Talent használatával
+          href: gdpr/respond-dsr-request-talent.md
+        - name: Személyes adatokra vonatkozó kérés megválaszolása a Microsoft Dynamics AX 2012 használatával
+          href: gdpr/gdpr-ax2012.md
+        - name: LCS GDPR-adatok kérése
+          href: gdpr/gdpr-lcs.md
+    - name: Adatellenőrzési munkaterület
+      href: user-interface/data-validation-workspace.md
+- name: Folyamatos szállítás
+  href: dev-tools/continuous-delivery-home-page.md
+  items:
+    - name: Fejlesztési és folyamatos szállítási GYIK
+      href: dev-tools/continuous-delivery-faq.md
+    - name: Tesztcsomagok kizárása az előállított buildből
+      href: dev-tools/exclude-test-packages.md
+    - name: Harmadikfél-modellek és futásidejű csomagok kezelése forrásvezérléssel
+      href: dev-tools/manage-runtime-packages.md
+    - name: Verziómodellek az automatizált buildben
+      href: dev-tools/version-models-build.md
+- name: Megoldások kiadása a Lifecycle Services használatával
+  items:
+    - name: Fejlesztés és kiadás
+      href: lcs-solutions/lcs-solutions-app-source.md
+    - name: Állapot és közzététel
+      href: lcs-solutions/marketing-content-lcs-solutions.md
+    - name: Módszertan szerkesztése
+      href: lcs-solutions/methodologies-lcs-solutions.md
+    - name: Üzletifolyamat-modellező könyvtárak beállítása
+      href: lcs-solutions/business-process-modeler-libraries-lcs-solutions.md
+    - name: Kód áthelyezése
+      href: lcs-solutions/code-migration-lcs-solutions.md
+    - name: Pályázat ellenőrzése
+      href: lcs-solutions/app-validation-lcs-solutions.md
+    - name: Adatcsomagok feldolgozása és felhasználása
+      href: lcs-solutions/process-data-packages-lcs-solutions.md
+    - name: Biztonsági mentés készítése egy megoldási adatbázisról
+      href: lcs-solutions/database-backup-lcs-solutions.md
+    - name: Honosítások
+      href: lcs-solutions/country-region.md
+      items:
+        - name: Honosítási funkciók osztályozása
+          href: lcs-solutions/classify-localization-features.md
+        - name: Ország/régióspecifikus tartalom
+          href: lcs-solutions/apply-country-context.md
+        - name: Jogszabályban előírt tanúsítványok
+          href: lcs-solutions/regulatory-certifications.md
+        - name: Jogszabály-követési frissítések
+          href: lcs-solutions/regulatory-watch-communication.md
+        - name: Eltérő honosítási modellek
+          href: lcs-solutions/separate-localization-models.md
+        - name: Szabályozó figyelmeztetés elküldése
+          href: lcs-solutions/submit-localization-alerts.md
+- name: Pénzügyi fejlesztés
+  href: financial/financial-dev-home-page.md
+  items:
+    - name: Dimenziók
+      href: financial/dimensions.md
+    - name: Dimenziók hozzáadása egy Excel-sablonhoz
+      href: financial/dimensions-overview.md
+    - name: Dimenzióbelépés vezérlő-párbeszédpanelének támogatása
+      href: financial/dimension-entry-control-dialog-support.md
+    - name: 'Dimenzióbelépés-vezérlő áthelyezése  '
+      href: financial/dimension-entry-control-migration.md
+    - name: Dimenzióbelépés-vezérlő felvétele
+      href: financial/dimension-entry-control-uptake.md
+    - name: Dimenziókifejezés-szerkesztési alminta
+      href: financial/dimension-expression-builder-subpattern.md
+    - name: Pénzügyi dimenzió konfigurációja alkalmazások integrálásához
+      href: financial/financial-dimension-configuration-integration.md
+    - name: Pénzügyi dimenziók aktiválása
+      href: financial/activate-financial-dimensions.md
+    - name: Pénzügyi dimenziók és fő számlák egy jobbról balra író nyelv esetében
+      href: financial/financial-dimensions-main-accounts-right-left-language.md
+    - name: Egy biztonsági tábla pénzügyi dimenzióként értelmezhetővé tétele
+      href: financial/dimensionable-entities.md
+    - name: 'Szegmentált bevitelű vezérlő áthelyezése  '
+      href: financial/segmented-entry-control-conversion.md
+    - name: Szegmentált bevitelű vezérlő párbeszédpanelének támogatása
+      href: financial/segmented-entry-control-dialog-support.md
+    - name: Szegmentált bevitelű vezérlő metaadatai
+      href: financial/segmented-entry-control-metadata-specification.md
+    - name: Szegmentált bevitelű vezérlő áthelyezésére vonatkozó útmutató
+      href: financial/segmented-entry-control-migration-guidance.md
+    - name: Szegmentált bevitelű vezérlő parm metódusai
+      href: financial/segmented-entry-control-parm-method-specification.md
+    - name: A pénzügyi dimenziók értékeinek a Microsoft Excel-sablonokban való keresésére vonatkozó lehetőség hozzáadása
+      href: financial/add-dimensions-excel-templates.md
+    - name: Árfolyam-szolgáltatók létrehozása
+      href: financial/create-exchange-rate-providers.md
+    - name: Árfolyam-szolgáltatók létrehozása a Microsoft Dynamics Finance and Operations 8.0 alkalmazásban
+      href: financial/create-exchange-rate-8.md
+- name: Ellátásilánc-fejlesztés
+  items:
+    - name: Gantt fejlesztési útmutató
+      href: user-interface/gantt-development-guide.md
+    - name: Új szállításkezelő motor létrehozása
+      href: ../supply-chain/transportation/create-new-transportation-management-engine.md
+- name: Telepítés
+  items:
+    - name: Bemutatókörnyezet telepítése
+      href: deployment/deploy-demo-environment.md
+    - name: Felhőbeli telepítés
+      items:
+        - name: Azure Resource Manager bevezetése
+          href: deployment/arm-onboarding.md
+        - name: Azure ExpressRoute és Dynamics 365 for Finance and Operations
+          href: deployment/expressroute.md
+        - name: Finance and Operations-architektúra
+          href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+    - name: Helyszíni telepítés
+      href: deployment/on-premises-deployment-landing-page.md
+      items:
+        - name: Helyszíni áttekintés
+          href: deployment/on-premises-overview.md
+        - name: Helyszíni telepítés megtervezése
+          href: deployment/plan-onprem-deployment.md
+        - name: Hardver méretezése
+          href: ../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+        - name: Helyszíni projekt létrehozása
+          href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+        - name: Helyszíni környezetek beállítása és telepítése
+          href: deployment/setup-deploy-on-premises-environments.md
+          items:
+            - name: Helyszíni környezetek telepítése Platform update 12-vel
+              href: deployment/setup-deploy-on-premises-pu12.md
+            - name: Helyszíni környezetek telepítése Platform update 8-cal és 11-gyel
+              href: deployment/setup-deploy-on-premises-pu8-pu11.md
+        - name: Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez
+          href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: Fordított proxy konfigurálása a helyszíni környezetéhez
+          href: deployment/onprem-reverseproxy.md
+        - name: Frissítések alkalmazása helyszíni telepítéshez
+          href: deployment/apply-updates-on-premises.md
+        - name: Helyszíni telepítés újratelepítése
+          href: deployment/redeploy-on-prem.md
+        - name: A helyi ügynök frissítése
+          href: lifecycle-services/update-local-agent.md
+        - name: Környezet újrakonfigurálása
+          href: lifecycle-services/reconfigure-environment.md
+        - name: Kliens internetkapcsolata
+          href: user-interface/client-disconnected.md
+        - name: 'Hibaelhárítás – Dynamics 365 for Finance and Operations, helyszíni telepítés'
+          href: deployment/troubleshoot-on-prem.md
+    - name: Egyéni kód telepítése
+      items:
+        - name: Telepíthető csomag létrehozása
+          href: deployment/create-apply-deployable-package.md
+        - name: Frissítések alkalmazása egy felhőalapú környezetre
+          href: deployment/apply-deployable-package-system.md
+        - name: Telepíthető csomag telepítése
+          href: deployment/install-deployable-package.md
+        - name: Csomagalkalmazási problémák elhárítása
+          href: deployment/deployable-package-troubleshooting.md
+- name: Frissítések és gyorsjavítások
+  href: migration-upgrade/upgrade-home-page.md
+  items:
+    - name: Frissítés AX 2012-ről a Dynamics 365 for Finance and Operations alkalmazásra
+      href: migration-upgrade/upgrade-overview-2012.md
+      items:
+        - name: AX 2012 frissítés – A frissítési elemzőeszköz használata a tervezéshez
+          href: migration-upgrade/upgrade-analyzer-tool.md
+        - name: AX 2012 frissítés – A Kódfrissítési szolgáltatás használata a szükséges ráfordítás megbecsüléséhez
+          href: migration-upgrade/analyze-code-upgrade.md
+        - name: AX 2012 frissítés – Védőfalkörnyezet telepítése
+          href: migration-upgrade/analysis-sandbox.md
+        - name: AX 2012 frissítés – Adatfrissítés fejlesztői környezetben
+          href: migration-upgrade/data-upgrade-2012.md
+        - name: AX 2012 frissítés – AX 2012 adatfrissítési feladatok
+          href: migration-upgrade/prepare-data-upgrade.md
+        - name: AX 2012 frissítés – Adatfrissítés védőfalkörnyezetben
+          href: migration-upgrade/upgrade-data-sandbox.md
+        - name: AX 2012 frissítés - Átállás tesztelése
+          href: migration-upgrade/upgrade-cutover-testing.md
+        - name: AX 2012 frissítés - A frissítés után elvégzendő feladatok
+          href: migration-upgrade/app-validation-process.md
+        - name: AX 2012 frissítés - Sikeres funkcionális teszt
+          href: migration-upgrade/upgrade-functional-validation.md
+        - name: AX 2012 frissítés – Felkészülés az éles üzemre váltásra
+          href: migration-upgrade/upgrade-go-live-prep.md
+        - name: AX 2012 frissítés – éles indulás
+          href: migration-upgrade/2012-upgrade-cutover.md
+        - name: 'Módosítások, amelyek hatással vannak az AX 2012-ről való frissítésre'
+          items:
+            - name: A számlatükör-elválasztónak egyedinek kell lennie.
+              href: migration-upgrade/chart-accounts-delimiter-unique.md
+            - name: Egyetlen bizonylatos és pénznemes értékelési frissítés
+              href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
+            - name: Projekterőforrás-ütemezés adatmodellje
+              href: migration-upgrade/data-model-changes-resource-management.md
+            - name: Munkafolyamat alrendszer módosításai
+              href: migration-upgrade/workflow-subsystem.md
+            - name: Miért váltottunk kockákról összesített modellekre
+              href: migration-upgrade/in-memory-real-time-aggregate-models.md
+            - name: A frissített értékesítési kocka átvitele az entitástárba
+              href: migration-upgrade/migrate-upgraded-cube-entity-store.md
+            - name: Költségvetés-tervezés frissítése
+              href: migration-upgrade/upgrade-budget-planning.md
+    - name: Kód áttelepítése és frissítése
+      href: migration-upgrade/code-migration-home-page.md
+      items:
+        - name: Kódmigráció előkészítése
+          href: migration-upgrade/prepare-migration.md
+        - name: A Visual Studio Team Services hozzárendelések konfigurálása kódmigráció alatt
+          href: migration-upgrade/configure-vso-solution.md
+        - name: Osztott modellek
+          href: dev-tools/model-split.md
+        - name: Delegáltak használata a modellek közötti függőségek megoldásához
+          href: migration-upgrade/delegates-migration.md
+    - name: Frissítés egy legutóbbi frissítésre (felhő)
+      items:
+        - name: A legújabb kiadásra való áttelepítés folyamata
+          href: migration-upgrade/upgrade-latest-update.md
+        - name: Életciklus-irányelv
+          href: migration-upgrade/versions-update-policy.md
+        - name: A legújabb platformfrissítés alkalmazása a környezetére
+          href: migration-upgrade/upgrade-latest-platform-update.md
+        - name: A Dynamics-platform frissítése a 2016. augusztusi kiadásra
+          href: migration-upgrade/update-platform-each-release.md
+        - name: Védőfalkörnyezet frissítése
+          href: migration-upgrade/upgrade-sandbox-environment.md
+        - name: Adatok frissítése a fejlesztői vagy a bemutató környezetben
+          href: migration-upgrade/upgrade-data-to-latest-update.md
+        - name: Fejlesztői eszközök frissítése
+          href: dev-tools/update-development-tools.md
+    - name: Frissítés egy legutóbbi frissítésre (helyszíni)
+      items:
+        - name: Frissítések alkalmazása helyszíni telepítéshez
+          href: deployment/apply-updates-on-premises.md
+        - name: Helyszíni telepítés újratelepítése
+          href: deployment/redeploy-on-prem.md
+    - name: Gyorsjavítások
+      items:
+        - name: Gyorsjavítások letöltése a Lifecycle Services szolgáltatásból
+          href: migration-upgrade/download-hotfix-lcs.md
+        - name: Frissítések alkalmazása egy felhőalapú környezetre
+          href: deployment/apply-deployable-package-system.md
+        - name: Metaadatok gyorsjavításának telepítése
+          href: migration-upgrade/install-metadata-hotfix-package.md
+        - name: Patch Reporting Services különálló környezetben
+          href: migration-upgrade/patch-reporting-service-environment.md
+        - name: A Visual Studio fejlesztői eszközeinek frissítése
+          href: dev-tools/update-development-tools.md
+    - name: Értékcsökkenések
+      items:
+        - name: Elavult API-k
+          href: migration-upgrade/deprecated-apis.md
+        - name: Elavult szolgáltatások
+          href: migration-upgrade/deprecated-features.md
+- name: Rendszerfelügyelet
+  href: sysadmin/system-administration-home-page.md
+  items:
+    - name: Havi platformfrissítések GYIK
+      href: sysadmin/faq-platform-monthly-updates.md
+    - name: Linkek hozzáadása a szervezet jogi szerződési feltételeihez és adatvédelmi irányelvéhez
+      href: sysadmin/legal-terms-privacy-statement.md
+    - name: Licenckódok és konfigurációskulcs-jelentések
+      href: sysadmin/license-codes-configuration-keys-report.md
+    - name: Vállalatközi adatmegosztás
+      href: sysadmin/cross-company-data-sharing.md
+    - name: Karbantartási mód
+      href: sysadmin/maintenance-mode.md
+    - name: Előre konfigurált rendszerfiókok
+      href: sysadmin/pre-configured-system-accounts.md
+    - name: B2B felhasználók exportálása az Azure AD felé
+      href: sysadmin/implement-b2b.md
+    - name: Szerepköralapú biztonság
+      href: sysadmin/role-based-security.md
+      items:
+        - name: Biztonsági architektúra
+          href: sysadmin/security-architecture.md
+        - name: Biztonsági jelentések
+          href: sysadmin/security-reports.md
+        - name: Új felhasználók létrehozása
+          href: sysadmin/tasks/create-new-users.md
+        - name: Felhasználók tömeges importálása
+          href: sysadmin/tasks/import-bulk-users.md
+        - name: Feladatkörök szétválasztásának beállítása
+          href: sysadmin/tasks/set-up-segregation-duties.md
+        - name: Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
+          href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
+        - name: Felhasználók hozzárendelése a biztonsági szerepkörökhöz
+          href: sysadmin/tasks/assign-users-security-roles.md
+    - name: Kötegelt feldolgozás
+      href: sysadmin/batch-processing-overview.md
+      items:
+        - name: Kötegkiszolgáló áttekintése
+          href: sysadmin/batch-server-overview.md
+        - name: Kötegelt feladat létrehozása
+          href: sysadmin/tasks/create-batch-job.md
+    - name: Optimalizálási tanácsadó – áttekintés
+      href: sysadmin/optimization-advisor-overview.md
+      items:
+        - name: Optimalizálási tanácsadó szabályainak létrehozása
+          href: sysadmin/create-rules-optimization-advisor.md
+- name: Lifecycle Services
+  items:
+    - name: A Lifecycle Services áttekintése
+      href: lifecycle-services/lcs.md
+      items:
+        - name: LCS ügyfelek számára
+          href: lifecycle-services/lcs-works-lcs.md
+        - name: LCS a partnerek számára
+          href: lifecycle-services/getting-started-lcs.md
+        - name: Újdonságok
+          href: lifecycle-services/whats-new-lcs.md
+        - name: Ismert problémák
+          href: lifecycle-services/known-issues.md
+    - name: Dynamics Lifecycle Services használati útmutató
+      href: lifecycle-services/lcs-user-guide.md
+    - name: Előfizetésbecslő
+      href: lifecycle-services/subscription-estimator.md
+    - name: A biztonsági beállítások megadása
+      href: lifecycle-services/configure-lcs-security.md
+    - name: Megoldáskereső
+      href: lifecycle-services/issue-search-lcs.md
+    - name: Konfigurációkezelő
+      href: lifecycle-services/configuration-manager-lcs.md
+      items:
+        - name: Konfigurációkezelő beállítása
+          href: lifecycle-services/set-up-configuration-manager-lcs.md
+    - name: Kódfrissítési szolgáltatás konfigurálása
+      href: lifecycle-services/configure-execute-code-upgrade.md
+    - name: 'Módszertan létrehozása  '
+      href: lifecycle-services/create-methodology.md
+    - name: Üzletifolyamat-modellező
+      href: lifecycle-services/bpm-overview.md
+    - name: Üzletifolyamat-könyvtárak az üzletifolyamat-modellezőben
+      href: lifecycle-services/business-process-libraries-business-process-modeler.md
+    - name: 'BPM-könyvtár létrehozása, szerkesztése és tallózása'
+      href: lifecycle-services/creating-editing-browsing.md
+    - name: Feladatok elvégzése a BPM-könyvtárban
+      href: lifecycle-services/complete-tasks-bpm.md
+    - name: Tevékenység-diagramok használata
+      href: lifecycle-services/using-activity-diagrams.md
+    - name: BPM-könyvtár szinkronizálása a Visual Studio Team Services (VSTS) megoldással
+      href: lifecycle-services/synchronize-bpm-vsts.md
+    - name: Elfogadási tesztcsomag létrehozása feladat-útmutatók és BPM használatával
+      href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+    - name: Az Üzletifolyamat-modellező folyamatábrái
+      href: lifecycle-services/flowcharts-business-process-modeler.md
+    - name: Egyéni üzleti folyamatok feltöltése
+      href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+    - name: 'Megfigyelés és diagnosztika '
+      href: lifecycle-services/monitoring-diagnostics.md
+    - name: Környezeti szolgáltatások újraindítása
+      href: lifecycle-services/restart-environment-services.md
+    - name: Felhasználói bejelentkezések nyomon követése
+      href: lifecycle-services/user-logins.md
+    - name: Eszköztár
+      href: lifecycle-services/asset-library.md
+    - name: Microsoft Dynamics 365 – fordítási szolgáltatás – áttekintés
+      href: lifecycle-services/translation-service-overview.md
+      items:
+        - name: 'Microsoft Dynamics 365 fordítási szolgáltatás – használati útmutató  '
+          href: lifecycle-services/use-translation-service.md
+        - name: A Microsoft Dynamics 365 fordítási szolgáltatás - dokumentációs fájlok fordítása
+          href: lifecycle-services/use-translation-service-ua.md
+        - name: A Microsoft Dynamics 365 fordítási szolgáltatás - fordítási memória
+          href: lifecycle-services/use-translation-service-tm.md
+    - name: A Dynamics AX 2012 Lifecycle Services funkciói
+      items:
+        - name: Telepítés
+          items:
+            - name: Felhőbeli környezetek
+              href: lifecycle-services/ax-2012/cloud-hosted-environments-lcs.md
+            - name: Konfiguráció másolása
+              href: lifecycle-services/copy-configuration-lcs.md
+            - name: A Dynamics AX 2012 R3 telepítésének megtervezése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/plan-2012-r3-deployment-azure.md
+            - name: A Dynamics AX 2012 R3 telepítése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs.md
+            - name: Dynamics AX 2012 R3 bemutatókörnyezet telepítése
+              href: lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md
+            - name: Fejlesztői környezet telepítése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/deploy-development-environment-azure.md
+            - name: Magas rendelkezésre állású környezet telepítése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/deploy-high-availability-environment-azure.md
+            - name: Tesztelési környezet telepítése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/deploy-test-environment-azure.md
+            - name: A Dynamics AX 2012 R3 telepítésének kezelése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/manage-2012-r3-deployment-azure.md
+            - name: Enterprise Portal-kiszolgálók egyesítése egyetlen kiszolgálófarmra
+              href: lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm.md
+            - name: Rekord belépési pontjai a Dynamics AX Enterprise Portalon
+              href: lifecycle-services/ax-2012/record-entry-points-enterprise-portal.md
+            - name: Kiskereskedelmi e-kereskedelmi fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure.md
+            - name: Retail Essentials bemutató környezet telepítése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure.md
+            - name: Retail Essentials fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure.md
+            - name: Kiskereskedelmi mobilitási fejlesztői/tesztelői környezet telepítése az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure.md
+            - name: A Dynamics AX 2012 R3 telepítésének hibaelhárítása az Azure szolgáltatásban
+              href: lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure.md
+            - name: A Dynamics AX 2012 R3 frissítései
+              href: lifecycle-services/ax-2012/update-2012-r3-lcs.md
+        - name: Adatimportálási/-exportálási keretrendszer használati útmutatója
+          href: lifecycle-services/ax-2012/user-guide-dixf.md
+          items:
+            - name: Telepítés
+              href: lifecycle-services/ax-2012/install-dixf.md
+              items:
+                - name: Telepítés az AX 2012 R3 szolgáltatásba
+                  href: lifecycle-services/ax-2012/install-ax-2012-r3.md
+                - name: A Dynamics AX 2012 R2 CU7 verziójának telepítése SQL Server 2014 rendszerre
+                  href: lifecycle-services/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014.md
+            - name: Adatok áttelepítése
+              href: lifecycle-services/ax-2012/migrate-data-dixf.md
+            - name: SSIS-verzió konfigurálása
+              href: lifecycle-services/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf.md
+            - name: Entitásadatok másolása és összehasonlítása vállalatok között
+              href: lifecycle-services/ax-2012/copy-compare-entity-data-between-companies-dixf.md
+            - name: Adatok másolása Dynamics AX-vállalatok között
+              href: lifecycle-services/ax-2012/copy-data-between-companies-dixf.md
+            - name: Adatok másolása Dynamics AX-példányok között
+              href: lifecycle-services/ax-2012/copy-data-between-instances-dixf.md
+            - name: Egyéni célentitás létrehozása
+              href: lifecycle-services/ax-2012/create-custom-target-entity-dixf.md
+            - name: Adatimportálási és -exportálási keretrendszer entitásai
+              href: lifecycle-services/ax-2012/entities-dixf.md
+            - name: CSV-adatforrás adatainak importálása
+              href: lifecycle-services/ax-2012/import-data-csv-data-source-dixf.md
+            - name: ODBC-adatforrás adatainak importálása
+              href: lifecycle-services/ax-2012/import-data-odbc-data-source-dixf.md
+            - name: Bemutató fájlok
+              href: lifecycle-services/ax-2012/demo-files-dixf.md
+            - name: Gyors importálás-exportálás
+              href: lifecycle-services/ax-2012/quick-import-export.md
+        - name: Táblák
+          items:
+            - name: Táblák létrehozása
+              href: lifecycle-services/ax-2012/create-tables.md
+            - name: Tábla tulajdonságai
+              href: lifecycle-services/ax-2012/table-properties.md
+        - name: Dynamics AX 2012 LCS-eszközök
+          items:
+            - name: Projektek
+              href: lifecycle-services/ax-2012/projects-lcs.md
+            - name: Módszertanok
+              href: lifecycle-services/ax-2012/methodologies-lcs.md
+            - name: 'Testreszabás-elemzés  '
+              href: lifecycle-services/ax-2012/customization-analysis-lcs.md
+            - name: Infrastruktúrabecslő
+              href: lifecycle-services/ax-2012/infrastructure-estimator-lcs.md
+            - name: Licencméretbecslő
+              href: lifecycle-services/ax-2012/license-sizing-estimator-lcs.md
+            - name: Javaslatkérelemre (lifecycle-services/RFP.md) adott válaszok
+              href: lifecycle-services/ax-2012/rfp-responses-lcs.md
+            - name: Rendszerdiagnosztika
+              href: lifecycle-services/ax-2012/system-diagnostics-lcs.md
+            - name: Rendszerdiagnosztika telepítése és futtatása
+              href: lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md
+            - name: Frissítéselemző
+              href: lifecycle-services/ax-2012/upgrade-analysis-lcs.md
+            - name: Használatiprofil-készítő
+              href: lifecycle-services/ax-2012/usage-profiler-lcs.md
+        - name: Dynamics AX 2012 letölthető eszközök
+          items:
+            - name: Kódfrissítési eszköz használati útmutatója (elavult)
+              href: lifecycle-services/ax-2012/code-upgrade-tool-user-guide.md
+            - name: A Lifecycle Services letölthető eszközei
+              href: lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource.md
+            - name: Vizsgálati adatok átvitele eszköz (béta)
+              href: lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012.md
+              items:
+                - name: Telepítés
+                  href: lifecycle-services/ax-2012/install-test-data-transfer-tool-beta.md
+                - name: Futtatás
+                  href: lifecycle-services/ax-2012/run-test-data-transfer-tool-beta.md
+                - name: Bemutató adatok importálása az AX 2012 R3 szolgáltatáshoz
+                  href: lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool.md
+            - name: Biztonsági fejlesztőeszköz
+              href: lifecycle-services/ax-2012/overview-security-development-tool-user-interface.md
+              items:
+                - name: Telepítés
+                  href: lifecycle-services/ax-2012/install-security-development-tool.md
+                - name: Használati útmutató
+                  href: lifecycle-services/ax-2012/security-development-tool-user-guide.md
+                - name: Belépésipont-engedélyek definiálása vagy szerkesztése
+                  href: lifecycle-services/ax-2012/define-edit-entry-point-permissions.md
+            - name: Teljesítménytesztelő szoftverfejlesztői készlet
+              href: lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012.md
+            - name: Biztonsági frissítések tanácsadó eszköze
+              href: lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide.md
+            - name: Intelligens adatkezelési keretrendszer (IDMF)
+              href: lifecycle-services/ax-2012/microsoft-idmf.md
+              items:
+                - name: Áttekintés
+                  href: lifecycle-services/ax-2012/overview-idmf.md
+                - name: Telepítési útmutató
+                  href: lifecycle-services/ax-2012/installation-guide-idmf.md
+                - name: Konfiguráció
+                  href: lifecycle-services/ax-2012/configuration-functionality-idmf-workspace.md
+                - name: Elemzés
+                  href: lifecycle-services/ax-2012/analysis-functionality-idmf-workspace.md
+                - name: Objektumok törlése és archiválása
+                  href: lifecycle-services/ax-2012/work-with-purge-objects-archive-objects.md
+                - name: Archivált objektumok létrehozása
+                  href: lifecycle-services/ax-2012/create-archive-objects.md
+                - name: Törölt objektumok létrehozása
+                  href: lifecycle-services/ax-2012/create-purge-objects.md
+                - name: Törlési és elemzési feladatok ütemezése
+                  href: lifecycle-services/ax-2012/schedule-purge-analysis-tasks.md
+                - name: Törölt vagy archivált munkák megtekintése
+                  href: lifecycle-services/ax-2012/view-status-purge-archive-jobs.md
+                - name: Karbantartás
+                  href: lifecycle-services/ax-2012/maintain-idmf.md
+                - name: Hibaelhárítás
+                  href: lifecycle-services/ax-2012/troubleshoot-idmf.md
+- name: Adatbáziskezelés
+  items:
+    - name: Adatbázis másolása az Azure SQL Database adatbázisból SQL Server környezetbe
+      href: database/copy-database-from-azure-sql-to-sql-server.md
+    - name: Adatbázis másolása az SQL Server szolgáltatásból egy gyártási Azure SQL Database környezetbe
+      href: database/copy-database-from-sql-server-to-azure-sql.md
+    - name: Adatbázis visszaállítása egy nem termelési közegben
+      href: database/request-point-in-time-restore.md
+    - name: Adatbázis másolatának exportálása a későbbi visszaállításhoz
+      href: database/copy-operations-database.md
+    - name: Védőfal adatbázis-frissítés kérése
+      href: database/database-refresh.md
+- name: Támogatás
+  items:
+    - name: 'Támogatás igénylése a Dynamics 365 for Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz'
+      href: lifecycle-services/lcs-support.md
+    - name: Premier támogatási jegy naplózása
+      href: lifecycle-services/premier-support.md
+    - name: Igénylés benyújtása a Dynamics Service mérnöki csapatához
+      href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+    - name: Műszaki támogatás beállítása a Dynamics 365 for Finance and Operations szolgáltatáshoz
+      href: lifecycle-services/support-experience.md
+    - name: Tervezett karbantartási időtartam – GYIK
+      href: lifecycle-services/planned-maintenance-window-faq.md
+    - name: Felhőműveletek és szervizelés
+      href: lifecycle-services/cloud-operations-servicing.md
+    - name: A Finance and Operations támogatási tapasztalatai
+      href: lifecycle-services/cloud-powered-support-lcs.md
