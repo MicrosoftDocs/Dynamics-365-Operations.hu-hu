@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6f0257d6a16d3d53953e1fbbf023109425fa6844
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: f2aa55ae4258f5ef81456b92278415297c194d66
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -34,10 +34,7 @@ Bár a Microsoft Dynamics 365 for Finance and Operations is mezők sokaságát b
 
 Az egyéni mezők hozzáadásának funkciója a 13-as platformfrissítéstől kezdve érhető el.
 
-Ez a videó megmutatja, milyen egyszerű egy egyéni mező hozzáadása az oldalhoz.
-
-
-> [!Video https://www.youtube.com/embed/gWSGZI9Vtnc]
+Ez a videó bemutatja, hogy milyen egyszerűen lehet egy egyéni mezőt hozzáadni egy weblaphoz: [Egyéni mezők felvétele a Dynamics 365 Pénzügy és műveletek alkalmazásban](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
 ## <a name="creating-custom-fields"></a>Egyéni mezők létrehozása
 Miután azonosította azokat a további információkat, amelyeket követni szeretne az alkalmazásban, a megfelelő táblában létrehozhatja az egyéni mezőt, és ezt az új mezőt megjelenítheti egy oldalon.   

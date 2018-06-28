@@ -1,6 +1,6 @@
 ---
 title: Intrastat
-description: "Ez a cikk információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket."
+description: "Ez a témakör információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket."
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
+ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
+ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket.
+Ez a témakör információt biztosít az Intrastat árukereskedelemről és esetenként az Európai Unió (EU) országainak/régióinak szolgáltatásairól szóló jelentésekről. Áttekintést biztosít továbbá a jelentési folyamatot illetően és leírja a szükséges beállításokat és előfeltételeket.
 
 Az Intrastat az Európai Unió (EU) országai/régiói közötti kereskedelemről adatokat gyűjtő és statisztikákat készítő rendszer. Intrastat-jelentés szükséges minden olyan esetben, amikor egy termék egy másik EU ország/régió határát átlépi. Az Intrastat-jelentés több országban/régióban szolgáltatásokra is vonatkozik. Az Intrastat-jelentésben kötelező és választható elemek gyűjthetők. A következő elemek kötelezőek: az információszolgáltatásért felelős fél adószáma, a referencia-időszak, a forgalom iránya (beérkezés vagy feladás), a nyolc számjegyű vámtarifakód, a partner tagállam (a partner tagállam a bizományosi ország érkezéskor és a partner tagállam a rendeltetési tagállam a feladáskor), a termékek értéke, a termékek mennyisége (nettó súly és kiegészítő egység) és az ügylet jellege. Országok/régiók opcionális elemeket is gyűjthetnek különböző feltételek mellett. Néhány választható elem: származási ország/régió, a szállítási feltételek, szállítási mód, CN8-nál részletesebb vámtarifaszám, a származási régió kiszállításkor és a rendeltetési régió beérkezéskor, a statisztikai eljárás, a statisztikai érték, az áruk leírása, valamint a be vagy kirakodó kikötő/reptér.
 
@@ -223,6 +223,7 @@ Használja a **Külkereskedelmi paraméterek** lapot az alábbi táblázatban ta
 </ul></li>
 <li><strong>Elektronikus jelentés</strong> – Adja meg a hivatkozásokat az elektronikus jelentéskészítés konfigurációihoz, így létrehozhat elektronikus fájlokat és jelentést.</li>
 <li><strong>Vámtarifakódok hierarchiája</strong> – Adja meg a kategóriahierarchiáját annak a <strong>Vámtarifakód</strong> típusnak amely az Intrastat CN8 vámtarifakódot jelöli.</li>
+  <li> <strong>Árfolyamtípus</strong> – Opcionális, adja meg az Intrastat értékesítési és beszerzési tranzakcióinak jelentéseihez használandó árfolyamot külföldi pénznemekben. Ez akkor használatos, ha az árfolyam eltér a tranzakció feladásakor alkalmazott árfolyamtól.</li>  
 </ul></td>
 </tr>
 <tr class="even">
@@ -239,9 +240,5 @@ Használja a **Külkereskedelmi paraméterek** lapot az alábbi táblázatban ta
 </tr>
 </tbody>
 </table>
-
-
-
-
 
 

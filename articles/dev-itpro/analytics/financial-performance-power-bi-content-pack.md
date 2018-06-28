@@ -1,6 +1,6 @@
 ---
-title: "Pénzügyi teljesítmény Power BI-tartalom"
-description: "Ez a témakör ismerteti a pénzügyi teljesítmény Power BI-tartalmat."
+title: "Pénzügyi teljesítmény PowerBI.com megoldás"
+description: "Ez a témakör ismerteti a pénzügyi teljesítmény PowerBI.com megoldást."
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Pénzügyi teljesítmény Power BI-tartalom
+# <a name="financial-performance-powerbicom-solution"></a>Pénzügyi teljesítmény PowerBI.com megoldás
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> Ez a tartalomcsomag elavult a következő dokumentációban ismertetettek szerint [Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Ez a PowerBI.com megoldás elavult a következő dokumentációban ismertetettek szerint [Power BI-tartalmak csomagjai állnak rendelkezésre az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-Ez a témakör ismerteti a **Pénzügyi teljesítmény** Microsoft Power BI-tartalmat. Leírja, hogyan kell használni az irányítópultot és a csomagban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör ismerteti a **Pénzügyi teljesítmény** PowerBI.com megoldást. Leírja, hogyan kell használni az irányítópultot és a megoldásban szereplő jelentéseket, és információkat nyújt a tartalmi csomag összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="main-account-setup"></a>Fő számla beállítása
 Mivel a szervezetek szeretik, ha a kötelezettségeik és a bevételeik összegei pozitív összegként jelennek meg a jelentésekben, a fő számlák beállítása fontos szerepet játszik. Ugyanis ezen fő számlák pozitív összegként való megjelenítéséhez a fő számla típusaként **Kötelezettség** vagy **Bevétel** értéket kell megadni. E számlatípusok használatakor a Power BI szolgáltatáson keresztüli jelentéstétel megfordítja az előjeleket, és az összegeket pozitívként jeleníti meg.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalom által tartalmazott irányítópult és a jelentések
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>A PowerBI.com megoldás által tartalmazott irányítópult és a jelentések
 Az irányítópult az alacsonyabb szintű jelentéseken alapuló adatok összesített lapjait tartalmazza. Minden egyes lap tartalmazza a folyó év összesített információit a szervezeten belüli összes vállalatnál. Az alábbiakban látható néhány ilyen lap:
 
 - Készpénz
@@ -74,7 +74,7 @@ Minden egyes lapot jelentés támaszt alá. Ezek a jelentések diagramokot és t
 Az összes ilyen jelentésben szereplő diagramot és a lapot ki lehet szűrni és rögzíteni lehet az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálására](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-A következő entitásokat használták **Pénzügyi teljesítmény** Power BI-tartalom alapjaként:
+A következő entitásokat használták **Pénzügyi teljesítmény** PowerBI.com megoldás alapjaként:
 
 **Összesített adatentitások**
 

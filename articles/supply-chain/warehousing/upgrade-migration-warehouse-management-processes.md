@@ -28,6 +28,7 @@ ms.lasthandoff: 05/08/2018
 
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Finance and Operations alkalmazásra
 
+
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics AX 2012 R3 verzióról, WMSII-modullal, a Microsoft Dynamics 365 for Finance and Operations alkalmazásra frissítésről.

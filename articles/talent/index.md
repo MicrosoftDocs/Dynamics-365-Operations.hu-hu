@@ -1,9 +1,9 @@
 ---
 title: Microsoft Dynamics 365 for Talent
 description: "A Talent rendszer segítségével rengeteg rutin adminisztrációs feladat leegyszerűsíthető, továbbá a vállalat munkatársaival kapcsolatos számos folyamat automatizálható. Ezen folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést."
-author: rschloma
+author: josaw
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 06/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
+ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -42,8 +42,11 @@ A Talent rendszerrel a következő feladatok végezhetők el:
 + Teljesítmények értékelése és a dolgozói célok megvalósítása.
 + Tanfolyamok napirendjeinek, munkameneteinek és szekcióinak beállítása, végrehajtása és elemzése.
 
+A Dynamics 365 for Talent felfedezése a [Kezdeti lépések a Dynamics 365 for Talent rendszerben](https://www.youtube.com/watch?v=6rg2ByadbN0) című videó megtekintésével.
+
+
 > [!NOTE] 
-> A Dynamics 365 for Talent erősen kapcsolódik a Dynamics 365 for Finance and Operations szolgáltatáshoz. Mindkét termék azonos funkciókkal bírhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
+> A Dynamics 365 for Talent szorosan kapcsolódik a Dynamics 365 for Finance and Operations rendszer Emberi erőforrások menüjéhez. Mindkét termék azonos funkciókkal bírhat. Ennek eredményeképpen az Emberi erőforrásokra vonatkozó témakörökben a terméknév Dynamics 365 for Finance and Operations, míg a főképp a Talent rendszerrel kapcsolatos témakörök esetén a terméknév Dynamics 365 for Talent lesz. Az adott termékre vonatkozó témák egy kapcsolódó termék azonos funkcióira egyaránt vonatkozhatnak.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Emberi erőforrások kezelési stratégiájának kialakítása
 ---------------------------------------------------------
@@ -55,6 +58,8 @@ A Talent rendszerben dolgozva különböző elemek – például, részlegek, fe
 -   [Több jogi entitásra kiterjedő HR-paraméterek beállítása](set-up-hr-parameters-across-legal-entities.md) 
 -   [Személyzeti műveletek GYIK](personnel-actions-faq.md)
 -   [Szabadság és távollét áttekintése](leave-absence-overview.md)
+-   [A Dynamics 365 for Talent használata: szabadság és távollét (videó)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [A személyzet kezelése a Dynamics 365 for Talent rendszerben (videó)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>A szervezeti személyzet kiépítése
 
@@ -71,6 +76,7 @@ Terveket alakíthat ki a kompenzáció hatékony és méltányos kezelésére, i
 -   [Kompenzációs folyamat](process-compensation.md)
 -   [Fix kompenzációs konstrukciók létrehozása](create-fixed-compensation-plans.md)
 -   [Változó kompenzációs konstrukciók létrehozása](create-variable-compensation-plans.md)
+-   [A kompenzáció kezelése a Dynamics 365 for Talent rendszerben (videó)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
 ## <a name="develop-and-train-employees"></a>Alkalmazottak fejlesztése és képzése
 
@@ -79,14 +85,16 @@ Támogassa alkalmazottait célkitűzéseik elérésében, miközben kiemelkedő 
 -   [Teljesítménykezelés](performance-management-overview.md)
 -   [A munkaerő szakértelme és az üzleti igények egymáshoz történő igazítása](skills.md)
 -   [Képzés tanfolyamok révén](courses.md)
+-   [Az alkalmazottak fejlesztésének kezelése a Dynamics 365 for Talent rendszerben (videó)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Juttatások létrehozása és karbantartása
 
 A munkatársak bérekkel, illetve jutalmakkal történő kifizetése mellett lehetősége van juttatási programok (pl. egészségbiztosítási, nyugdíjazási konstrukciók) létrehozására is. Egyéb juttatásokat is kezelhet, például kölcsönzési programokat, amelyek során a cég eszközöket (pl. számítógépeket vagy telefonokat) ad kölcsön az alkalmazottaknak.
 
 -   [Juttatási program kezelése](manage-benefit-program.md)
--   [Juttatásra való jogosultsági irányelvek](benefit-eligibility-policies.md)
+-   [Juttatásra vonatkozó jogosultsági irányelvek](benefit-eligibility-policies.md)
 -   [A dolgozóknak kölcsönzött cikkek kezelése](loan-items.md)
+-   [Az alkalmazottak juttatásainak kezelése a Dynamics 365 for Talent rendszerben (videó)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Munkahely biztonságosságának és megfelelőségének fenntartása
 

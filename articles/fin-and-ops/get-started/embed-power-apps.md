@@ -3,7 +3,7 @@ title: "PowerApps beágyazása"
 description: "Ez a témakör leírja, hogyan végezhető el a PowerApps beágyazása a Finance and Operations ügyfélbe a termék funkcionalitásának kibővítése érdekében."
 author: jasongre
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -26,8 +26,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="embed-powerapps"></a>PowerApps beágyazása
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 A Microsoft Dynamics 365 for Finance and Operations 14-es platformfrissítése támogatja a Microsoft PowerApps-hez való integrációt, amely egy fejlesztők és nem szakember felhasználók számára készült szolgáltatás, amellyel egyedi üzleti alkalmazások készíthetők mobilkészülékekre, táblagépekre és a webre, kód írása nélkül. Az Ön, a szervezete vagy a szélesebb ökoszisztéma által kifejlesztett PowerApp alkalmazások beilleszthetők a Finance and Operations kliensbe, hogy kiterjesszék a termék funkcionalitását. Például létrehozhat egy PowerApp-ot a Finance and Operations adatainak egy másik rendszerből lekért információkkal való kiegészítéséhez. 
 

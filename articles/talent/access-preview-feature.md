@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Használhatja a Microsoft Dynamics 365 for Talent adminisztrációs központjáb
     > A közzétett álláslehetőségek csak azon ügyfelek számára láthatók, akik egy vagy több LinkedIn álláslehetőség-szolgáltatásra előfizetnek. Ellenkező esetben az ügyfelek csak akkor látnak egy álláslehetőséget, ha arra kifejezetten rákeresnek. Az álláslehetőségek közzététele késéssel történik a LinkedIn-en. Előfordulhat, hogy egy állás csak az Attract-on való közzététel után csak néhány órával jelenik meg.
 
 - **Pályázó jelentkezése** – A belső és külső jelentkezők most közvetlenül a karrier webhely állásoldaláról jelentkezhetnek.
-- **Értékelések** – A konfigurálható felvételi folyamat részeként, a felhasználók egy új **Értékelési** tevékenységtípust érhetnek el egy meghatározott állásra vonatkozóan, vagy amikor egy álláslehetőség-sablont használnak. Használhatják a Project: "Gauge" alkalmazást a Talentben ahhoz, hogy olyan alapvető értékeléseket hozzanak létre, amelyeket elküldhetnek pályázóknak. A Project: "Gauge" ugyancsak része a nyilvános előnézetnek. További szolgáltatók kerülnek hozzáadásra a jövőben.
-- **Project: "Gauge"** – A Project: "Gauge" egy olyan alkalmazás a Talentben, amellyel a felhasználók egyszerű értékeléseket vagy felméréseket hozhatnak létre.
 - **Ajánlatkezelés** – A felhasználók ajánlati leveleket hozhatnak létre helyőrzőket tartalmazó sablonokból. Ahogyan a jelöltek tovább lépnek az ajánlati szintre, a toborzók és a felvételi menedzserek az ajánlati eszközzel formális ajánlatokat hozhatnak létre a sablonok segítségével, és elküldhetik az ajánlatot belső jóváhagyásra, majd végül elküldhetik az ajánlatot aláírásra a pályázónak. Idővel az ajánlati eszközhöz számos új lehetőség hozzáadódik, és az előnézeti funkció frissül ezekkel a lehetőségekkel, amint ezek készen állnak előzetes megtekintése.
 
 ### <a name="core-hr"></a>Alapvető HR
@@ -90,7 +88,7 @@ Függetlenül attól, hogy a visszajelzés pozitív vagy negatív, szeretnénk h
     - [Ötletek kérése](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Alapvető HR](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Ne adjon meg személyes adatokat (azaz az Önt bármilyen módon azonosítani képes adatokat) a visszajelzésében vagy a termék értékelése benyújtásakor. Előfordulhat, hogy az összegyűjtött információkat továbbelemzik, és azokat nem használjuk fel kérdések megválaszolására az alkalmazandó adatvédelmi törvényekkel összhangban. A programokhoz kapcsolódóan külön gyűjtött személyes adatokra a [Microsoft adatvédelmi nyilatkozat](https://privacy.microsoft.com/en-us/privacystatement) vonatkozik.
+Ne adjon meg személyes adatokat (azaz az Önt bármilyen módon azonosítani képes adatokat) a visszajelzésében vagy a termék értékelése benyújtásakor. Előfordulhat, hogy az összegyűjtött információkat továbbelemzik, és azokat nem használjuk fel kérdések megválaszolására az alkalmazandó adatvédelmi törvényekkel összhangban. A programokhoz kapcsolódóan külön gyűjtött személyes adatokra a [Microsoft adatvédelmi nyilatkozat](https://privacy.microsoft.com/privacystatement) vonatkozik.
 
 > [!TIP]
 > Tegyen Könyvjelzőt ehhez a témakörhöz, és a jöjjön vissza gyakran, hogy naprakész legyen az előnézeti funkciókkal kapcsolatban, ahogy azok megjelennek.
