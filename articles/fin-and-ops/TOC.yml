@@ -1653,6 +1653,7 @@
                 - name: Év végi zárás
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Dánia
+              href: ../financials/localizations/denmark.md
               items:
                 - name: Fizetésiutalvány-formátum hozzárendelése vevői számlához
                   href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -1684,6 +1685,7 @@
                 - name: Áfabevallás
                   href: ../financials/localizations/emea-est-vat-statement-details.md
             - name: Franciaország
+              href: ../financials/localizations/france.md
               items:
                 - name: Állami szektor
                   items:
@@ -1760,6 +1762,7 @@
                 - name: Elektronikus adóbevallás beállítása
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: Magyarország
+              href: ../financials/localizations/hungary.md
               items:
                 - name: Árfolyamszámítás
                   href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
@@ -1774,6 +1777,7 @@
                 - name: Év végi zárás
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Izland
+              href: ../financials/localizations/iceland.md
               items:
                 - name: Szállítói számla létrehozása és számlabevallás-kategória csatolása
                   href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
@@ -1784,6 +1788,7 @@
                 - name: 'Szállítói számla bevallásainak frissítése, és jelentés készítése'
                   href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
             - name: Olaszország
+              href: ../financials/localizations/italy.md
               items:
                 - name: Áfabevallások részletei
                   href: ../financials/localizations/emea-ita-vat-statements-details.md
@@ -1806,6 +1811,7 @@
                 - name: Adóelőleg
                   href: ../financials/localizations/emea-ita-withholding-tax.md
             - name: Lettország
+              href: ../financials/localizations/latvia.md
               items:
                 - name: Tárgyieszköz-könyvelés
                   href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
@@ -1818,6 +1824,7 @@
                 - name: Áfabevallás részletei
                   href: ../financials/localizations/emea-lva-vat-statement-details.md
             - name: Litvánia
+              href: ../financials/localizations/lithuania.md
               items:
                 - name: Tárgyi eszköz javítási kimutatása
                   href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
@@ -1828,12 +1835,14 @@
                 - name: Áfabevallás részletei
                   href: ../financials/localizations/emea-ltu-vat-statement-details.md
             - name: Hollandia
+              href: ../financials/localizations/netherlands.md
               items:
                 - name: Elektronikus adóbevallások (EVAT)
                   href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integráció
                   href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
             - name: Norvégia
+              href: ../financials/localizations/norway.md
               items:
                 - name: Vevői és szállítói kifizetési formátumok hozzárendelése
                   href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -1848,6 +1857,7 @@
                 - name: Pénztárgépek telepítésére vonatkozó irányelvek
                   href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Lengyelország
+              href: ../financials/localizations/poland.md
               items:
                 - name: Sorengedmények kiszámítása az egységár alapján
                   href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
@@ -1870,6 +1880,7 @@
                 - name: Forgalom- és mérlegkimutatás
                   href: ../financials/localizations/emea-pol-turnover-balances-statement.md
             - name: Spanyolország
+              href: ../financials/localizations/spain.md
               items:
                 - name: Készpénzfizetési engedmény alkalmazása a számlán
                   href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
@@ -1898,6 +1909,7 @@
                 - name: Speciális bevitelek és nyitólapok
                   href: ../financials/localizations/emea-esp-opening-sheets-spain.md
             - name: Svédország
+              href: ../financials/localizations/sweden.md
               items:
                 - name: Pénzügyi adatok exportálása könyvvizsgálóknak Svédország esetében
                   href: ../financials/localizations/emea-swe-sie-standard-report.md
@@ -1906,10 +1918,12 @@
                 - name: Pénztárgépek
                   href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
             - name: Svájc
+              href: ../financials/localizations/switzerland.md
               items:
                 - name: Vevői kifizetések importálása ESR-ben
                   href: ../financials/localizations/emea-che-esr-customer-payments-import.md
             - name: Egyesült Királyság
+              href: ../financials/localizations/united-kingdom.md
               items:
                 - name: 'Építőipari séma '
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
