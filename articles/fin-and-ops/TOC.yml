@@ -410,151 +410,6 @@
     - name: Pénzgazdálkodás
       href: ../financials/index.md
       items:
-        - name: Főkönyv
-          href: ../financials/general-ledger/general-ledger.md
-          items:
-            - name: Számlák
-              items:
-                - name: Könyvelések áttekintése
-                  href: ../financials/general-ledger/accruals-overview.md
-                - name: Eltávolítási szabályok
-                  href: ../financials/general-ledger/elimination-rules.md
-                - name: Dimenziókombinációk – munka
-                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                - name: Kiegyensúlyozott naplók egységközi számlázáshoz
-                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
-                - name: Feladásdefiníciók
-                  href: ../financials/general-ledger/posting-definitions.md
-                - name: 'Feladásdefiníció-példák '
-                  href: ../financials/general-ledger/example-posting-definitions.md
-                - name: Főkönyvi számlaegyenlegek
-                  href: ../financials/general-ledger/general-ledger-account-balances.md
-                - name: Pénzügyi dimenziók meghatározása
-                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
-                - name: Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
-                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                - name: Számlastruktúrák létrehozása
-                  href: ../financials/general-ledger/tasks/create-account-structures.md
-                - name: Könyvelési sémák létrehozása
-                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-                - name: Konszolidációs csoportok és további konszolidációs számlák létrehozása
-                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
-                - name: Főszámla típusai
-                  href: ../financials/general-ledger/main-account-types.md
-                - name: Fő számla létrehozása
-                  href: ../financials/general-ledger/tasks/create-main-account.md
-                - name: Számlatükör tervezése
-                  href: ../financials/general-ledger/plan-chart-of-accounts.md
-                - name: Kiegyenlítési tranzakciók a főkönyvi számlák között
-                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
-                - name: Főkönyvi számlaalias beállítása
-                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
-                - name: Fő számla kategóriáinak beállítása
-                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
-                - name: Könyvelési források böngészője
-                  href: ../financials/accounts-payable/accounting-source-explorer.md
-                - name: Könyvelési felosztások
-                  href: ../financials/accounts-payable/accounting-distributions.md
-                - name: Felosztások feldolgozása
-                  href: ../financials/general-ledger/process-allocations.md
-                - name: Pénzügyi dimenziók
-                  href: ../financials/general-ledger/financial-dimensions.md
-                - name: Könyvelési vagy jelentési pénznem átváltása
-                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
-                - name: Konszolidációs számlacsoportok és számlák
-                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
-                - name: Konszolidáció és megszüntetés áttekintése
-                  href: ../financials/budgeting/consolidation-elimination-overview.md
-                - name: 'Pénzügyi naptárak, pénzügyi évek és időszakok'
-                  href: ../financials/general-ledger/configure-account-structures.md
-                - name: Számlastruktúrák konfigurálása
-                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-            - name: Naplók és főkönyvek
-              items:
-                - name: Általános napló feldolgozása
-                  href: ../financials/general-ledger/general-journal-processing.md
-                - name: Időszaki naplók közzététele
-                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
-                - name: Főkönyvi felosztási napló feldolgozása
-                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
-                - name: Vállalatközi könyvelés beállítása
-                  href: ../financials/general-ledger/intercompany-accounting-setup.md
-                - name: Főkönyvi felosztási szabályok
-                  href: ../financials/general-ledger/ledger-allocation-rules.md
-                - name: Speciális szabályok létrehozása naplók részére
-                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
-                - name: Speciális szabálystruktúrák létrehozása és hozzárendelése
-                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
-                - name: Főkönyvi napló típusai
-                  href: ../financials/general-ledger/ledger-journal-types.md
-                - name: Naplók létrehozása és érvényesítése
-                  href: ../financials/general-ledger/tasks/create-validate-journals.md
-                - name: Naplóbejegyzések vagy tranzakciók megtekintése
-                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
-                - name: Kapcsolódó vállalatközi bizonylat megtekintése egy naplóból
-                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
-                - name: Naplóbejegyzés létrehozása sablon alapján
-                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
-                - name: Főkönyvi könyvelés tranzakcióinak létrehozása
-                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
-                - name: Naplósorok és dokumentumok közzététele az Excel programból
-                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
-                - name: Naplóbejegyzések és tranzakciók megtekintése
-                  href: ../financials/general-ledger/view-journal-entries-transactions.md
-                - name: Feladott naplóbejegyzések naplózása
-                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
-                - name: Devizaátértékelés konszolidált vállalatban
-                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
-                - name: Főkönyvi devizaátértékelés
-                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Devizaárfolyamok importálása
-                  href: ../financials/general-ledger/import-currency-exchange-rates.md
-            - name: Időszak végi lezárás
-              items:
-                - name: A főkönyv lezárása az időszak végén
-                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
-                - name: Pénzügyi időszak lezárása munkaterület
-                  href: ../financials/general-ledger/financial-period-close-workspace.md
-                - name: Év végi zárás
-                  href: ../financials/general-ledger/year-end-close.md
-                - name: A pénzügyi év lezárása
-                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
-                - name: Pénzügyi időszakok tömeges lezárása
-                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
-            - name: Áfa
-              items:
-                - name: Áfa áttekintése
-                  href: ../financials/general-ledger/indirect-taxes-overview.md
-                - name: Számítás alapján és számítási módokon alapuló áfa értéke
-                  href: ../financials/general-ledger/marginal-base-field.md
-                - name: Áfakifizetések és kerekítési szabályok
-                  href: ../financials/general-ledger/round-sales-tax-payments.md
-                - name: Áfaszámítási módok a Kiindulás mezőben
-                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
-                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: Szállítói számla áfatartalmának kiszámítása és kiigazítása
-                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: Áfakifizetés létrehozása
-                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
-                - name: Áfatranzakciók létrehozása dokumentumokra
-                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
-                - name: Főkönyvi feladási csoportok beállítása az áfához
-                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                - name: Adóhatóságok beállítása
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
-                - name: Áfakódok beállítása
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: Adócsoportok és cikkáfacsoportok beállítása
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                - name: Áfabevallás kódjainak beállítása
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                - name: Áfafizetési időszakok beállítása
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: Adóelőleg beállítása
-                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
-                - name: Feladott áfatranzakciók megtekintése
-                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
         - name: Kötelezettségek
           href: ../financials/accounts-payable/accounts-payable.md
           items:
@@ -662,6 +517,10 @@
               href: ../financials/accounts-receivable/sepa-direct-debit-mandate.md
             - name: 'Hitelkártya-beállítás, engedélyezés és rögzítés'
               href: ../financials/accounts-receivable/credit-card-authorizations.md
+            - name: Szabadszöveges számla létrehozása
+              href: ../financials/accounts-receivable/create-free-text-invoice-new.md
+            - name: Szabadszöveges számlasablon létrehozása
+              href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md
             - name: Szabadszöveges számla javítása
               href: ../financials/accounts-receivable/correct-free-text-invoice.md
             - name: Kamatlábak beállítása kamatkódhoz
@@ -682,12 +541,6 @@
                   href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
                 - name: Fizetésifelszólítás-sorozat létrehozása
                   href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-                - name: Beszedési megbízási felhatalmazás létrehozása vevő részére
-                  href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-                - name: Szabadszöveges számla létrehozása
-                  href: ../financials/accounts-receivable/tasks/create-free-text-invoice.md
-                - name: Szabadszöveges számlasablon létrehozása
-                  href: ../financials/accounts-receivable/tasks/create-free-text-invoice-template.md
                 - name: Kamatkód létrehozása tartománnyal
                   href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
                 - name: Értékesítési rendelési számlák létrehozása
@@ -732,6 +585,31 @@
                   href: ../financials/accounts-receivable/reimburse-customers.md
                 - name: Vevői kifizetések részösszegre
                   href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+        - name: Költségvetés készítése
+          href: ../financials/budgeting/budgeting-overview.md
+          items:
+            - name: 'Költségvetés-tervezés áttekintése '
+              href: ../financials/budgeting/budget-planning-overview-configuration.md
+            - name: 'Költségvetés-ellenőrzés áttekintése '
+              href: ../financials/budgeting/budget-control-overview-configuration.md
+            - name: 'Költségvetés készítésének áttekintése '
+              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+            - name: Beosztás előre jelzése
+              href: ../financials/budgeting/position-forecasting.md
+            - name: Költségvetés-tervezés igazoló dokumentumai
+              href: ../financials/budgeting/budget-planning-justification-docs.md
+            - name: Költségvetés létrehozása tranzakciószámlákra vagy összegző számlákra
+              href: ../financials/budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: Költségvetés-tervezési sablonok az Excel programhoz
+              href: ../financials/budgeting/budget-planning-excel-templates.md
+            - name: Beosztás-költségvetéskészítés – hibaelhárítás
+              href: ../financials/budgeting/position-budgeting-set-up-issues.md
+            - name: Költségvetés-tervezés
+              href: ../financials/budgeting/budget-plan.md
+            - name: Költségvetés-tervezés – adatok megadása
+              href: ../financials/budgeting/budget-planning-data-allocation.md
+            - name: A Költségvetés-tervezés integrálása más modulokkal
+              href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: Készpénz- és bankkezelés
           href: ../financials/cash-bank-management/cash-bank-management.md
           items:
@@ -811,6 +689,112 @@
                   href: ../financials/cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
                 - name: Banki napló összetett entitás frissítése
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
+        - name: Költségkönyvelés
+          href: ../financials/cost-accounting/cost-accounting-home-page.md
+          items:
+            - name: Költségkönyvelési terminológia
+              href: ../financials/cost-accounting/terms-cost-accounting.md
+            - name: 'Pénzügyi naptárak, pénzügyi évek és időszakok'
+              href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+            - name: Pénzügyi dimenziók
+              href: ../financials/general-ledger/financial-dimensions.md
+            - name: Számlastruktúrák
+              href: ../financials/general-ledger/Default-dimensions.md
+            - name: Számlastruktúrák létrehozása
+              href: ../financials/general-ledger/tasks/create-account-structures.md
+            - name: Költségvetés-készítés áttekintése
+              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+            - name: Dimenziók létrehozása és dimenziótagok importálása
+              href: ../financials/cost-accounting/cost-dimension.md
+            - name: Költségösszetevő-dimenziók
+              href: ../financials/cost-accounting/cost-elements.md
+            - name: Költségösszetevők létrehozása
+              href: ../financials/cost-accounting/tasks/create-cost-elements.md
+            - name: Költségobjektum-dimenziók
+              href: ../financials/cost-accounting/cost-objects.md
+            - name: Költségobjektumok létrehozása
+              href: ../financials/cost-accounting/tasks/create-cost-objects.md
+            - name: Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez
+              href: ../financials/cost-accounting/map-cost-elements-dimension-members.md
+            - name: Költségösszetevő-dimenzió feltérképezése
+              href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md
+            - name: Dimenzióhierarchia
+              href: ../financials/cost-accounting/dimension-hierarchy.md
+            - name: Szervezeti jelentési hierarchia létrehozása
+              href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md
+            - name: Hozzáférési jogok meghatározása egy költségobjektum-ellenőr számára
+              href: ../financials/cost-accounting/access-rights-cost-object-controller.md
+            - name: Hozzáférési jogok konfigurálása egy költségobjektum-ellenőr számára
+              href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md
+            - name: Költség-ellenőrzőegységek meghatározása
+              href: ../financials/cost-accounting/tasks/define-cost-control-units.md
+            - name: Költségkönyvelési főkönyv létrehozása
+              href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md
+            - name: Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok
+              href: ../financials/cost-accounting/statistical-measure-provider-template.md
+            - name: Felosztás alapjai
+              href: ../financials/cost-accounting/allocation-bases.md
+            - name: Költségfelosztási irányelv létrehozása egy költségellenőrző-egységhez
+              href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
+            - name: Költségviselkedési irányelv létrehozása egy költségellenőrző-egységhez
+              href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
+            - name: Költségfelosztási irányelv létrehozása egy költségellenőrző-egységhez
+              href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
+            - name: Költségösszegzési irányelv létrehozása
+              href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md
+            - name: A költségkönyvelési főkönyv adatforrásának kezelése
+              href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
+            - name: Folyamat- és nyomkövetési forrásadatok
+              href: ../financials/cost-accounting/tasks/process-trace-source-data.md
+            - name: Járulékos költség számítása
+              href: ../financials/cost-accounting/overhead-calculation.md
+            - name: Költségösszesítési irányelv és járulékos költségek kiszámítása
+              href: ../financials/cost-accounting/cost-rollup.md
+            - name: Költségellenőrzési munkaterület konfigurálása
+              href: ../financials/cost-accounting/cost-control-workspace.md
+            - name: Költségellenőrzési munkaterület paramétereinek konfigurációja
+              href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
+            - name: A hozzáférésilista-biztonság és az RLS megértése a Microsoft Power BI megoldásban
+              href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
+            - name: Tartalomcsomag használata a Microsoft Power BI segítségével végzett jelentéskészítéshez
+              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
+            - name: Költségellenőrzési munkaterület alkalmazása a Finance and Operations mobilalkalmazásban
+              href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+        - name: Költséggazdálkodás
+          href: ../financials/expense-management/expense-management.md
+          items:
+            - name: Tervköltség-gazdálkodás
+              href: ../financials/expense-management/plan-expense-management.md
+            - name: Költséggazdálkodási paraméterek
+              href: ../financials/expense-management/Expense-Management-Parameters.md
+            - name: Költségkezelési mobil munkaterület
+              href: ../financials/expense-management/expense-management-mobile-workspace.md
+            - name: Munkafolyamatok beállítása a költséggazdálkodáshoz
+              href: ../financials/expense-management/expense-workflows.md
+            - name: A költséggazdálkodás munkafolyamata
+              href: ../financials/expense-management/expense-workflow.md
+            - name: Hitelkártya-tranzakciók importálása és karbantartása
+              href: ../financials/expense-management/import-credit-card.md
+            - name: Felosztások egy költségjelentésben
+              href: ../financials/expense-management/expense-report-distributions.md
+            - name: Vállalatközi költségek
+              href: ../financials/expense-management/intercompany-expense.md
+            - name: Költségszabályok
+              href: ../financials/expense-management/travel-expense-policies.md
+            - name: Költségjelentés megtekintése
+              href: ../financials/expense-management/view-expense-report.md
+            - name: Költségjelentés feladása
+              href: ../financials/expense-management/post-expense.md
+            - name: Költségjelentések és több jóváhagyó
+              href: ../financials/expense-management/expense-report-multiple-approvers.md
+            - name: Áfa-visszaigénylés a Költséggazdálkodás modulban
+              href: ../financials/expense-management/VAT-expense-report.md
+            - name: Napidíj-szabályok
+              href: ../financials/expense-management/per-diem.md
+            - name: Utazási igénylések
+              href: ../financials/expense-management/travel-req.md
+            - name: Személyes kiadások a költségjelentéseken
+              href: ../financials/expense-management/personal-expenses.md
         - name: Tárgyi eszközök
           href: ../financials/fixed-assets/fixed-assets.md
           items:
@@ -916,152 +900,151 @@
                   href: ../financials/fixed-assets/tasks/split-fixed-asset.md
                 - name: Tárgyi eszköz áthelyezése
                   href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
-        - name: Költséggazdálkodás
-          href: ../financials/expense-management/expense-management.md
+        - name: Főkönyv
+          href: ../financials/general-ledger/general-ledger.md
           items:
-            - name: Tervköltség-gazdálkodás
-              href: ../financials/expense-management/plan-expense-management.md
-            - name: Költséggazdálkodási paraméterek
-              href: ../financials/expense-management/Expense-Management-Parameters.md
-            - name: Költségkezelési mobil munkaterület
-              href: ../financials/expense-management/expense-management-mobile-workspace.md
-            - name: Munkafolyamatok beállítása a költséggazdálkodáshoz
-              href: ../financials/expense-management/expense-workflows.md
-            - name: A költséggazdálkodás munkafolyamata
-              href: ../financials/expense-management/expense-workflow.md
-            - name: Hitelkártya-tranzakciók importálása és karbantartása
-              href: ../financials/expense-management/import-credit-card.md
-            - name: Felosztások egy költségjelentésben
-              href: ../financials/expense-management/expense-report-distributions.md
-            - name: Vállalatközi költségek
-              href: ../financials/expense-management/intercompany-expense.md
-            - name: Költségszabályok
-              href: ../financials/expense-management/travel-expense-policies.md
-            - name: Költségjelentés megtekintése
-              href: ../financials/expense-management/view-expense-report.md
-            - name: Költségjelentés feladása
-              href: ../financials/expense-management/post-expense.md
-            - name: Költségjelentések és több jóváhagyó
-              href: ../financials/expense-management/expense-report-multiple-approvers.md
-            - name: Áfa-visszaigénylés a Költséggazdálkodás modulban
-              href: ../financials/expense-management/VAT-expense-report.md
-            - name: Napidíj-szabályok
-              href: ../financials/expense-management/per-diem.md
-            - name: Utazási igénylések
-              href: ../financials/expense-management/travel-req.md
-            - name: Személyes kiadások a költségjelentéseken
-              href: ../financials/expense-management/personal-expenses.md
-        - name: Költségvetés készítése
-          href: ../financials/budgeting/budgeting-overview.md
-          items:
-            - name: 'Költségvetés-tervezés áttekintése '
-              href: ../financials/budgeting/budget-planning-overview-configuration.md
-            - name: 'Költségvetés-ellenőrzés áttekintése '
-              href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: 'Költségvetés-készítés áttekintése  '
-              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
-            - name: Beosztás előre jelzése
-              href: ../financials/budgeting/position-forecasting.md
-            - name: Költségvetés-tervezés igazoló dokumentumai
-              href: ../financials/budgeting/budget-planning-justification-docs.md
-            - name: Költségvetés létrehozása tranzakciószámlákra vagy összegző számlákra
-              href: ../financials/budgeting/create-budget-transaction-accounts-total-accounts.md
-            - name: Költségvetés-tervezési sablonok az Excel programhoz
-              href: ../financials/budgeting/budget-planning-excel-templates.md
-            - name: Beosztás-költségvetéskészítés – hibaelhárítás
-              href: ../financials/budgeting/position-budgeting-set-up-issues.md
-            - name: Költségvetés-tervezés
-              href: ../financials/budgeting/budget-plan.md
-            - name: Költségvetés-tervezés – adatok megadása
-              href: ../financials/budgeting/budget-planning-data-allocation.md
-            - name: A Költségvetés-tervezés integrálása más modulokkal
-              href: ../financials/budgeting/budget-planning-integration-other-modules.md
-        - name: Jelentés
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
-          items:
-            - name: Mérleg – pénzügyi jelentések
-              href: ../financials/general-ledger/balance-sheet-financial-reports.md
-            - name: Pénzügyi jelentés létrehozása
-              href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
-            - name: Eredménykimutatási pénzügyi jelentés
-              href: ../financials/general-ledger/income-statement-financial-report.md
-            - name: Főkönyvi kivonat – pénzügyi jelentések
-              href: ../financials/general-ledger/trial-balance-financial-reports.md
-            - name: Pénzügyi jelentések megtekintése
-              href: ../financials/general-ledger/view-financial-reports.md
-            - name: Jelentéstervező
-              href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-        - name: Költségkönyvelés
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
-          items:
-            - name: Költségkönyvelési terminológia
-              href: ../financials/cost-accounting/terms-cost-accounting.md
-            - name: 'Pénzügyi naptárak, pénzügyi évek és időszakok'
-              href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-            - name: Pénzügyi dimenziók
-              href: ../financials/general-ledger/financial-dimensions.md
-            - name: Számlastruktúrák
-              href: ../financials/general-ledger/Default-dimensions.md
-            - name: Számlastruktúrák létrehozása
-              href: ../financials/general-ledger/tasks/create-account-structures.md
-            - name: Költségvetés-készítés áttekintése
-              href: ../financials/budgeting/basic-budgeting-overview-configuration.md
-            - name: Dimenziók létrehozása és dimenziótagok importálása
-              href: ../financials/cost-accounting/cost-dimension.md
-            - name: Költségösszetevő-dimenziók
-              href: ../financials/cost-accounting/cost-elements.md
-            - name: Költségösszetevők létrehozása
-              href: ../financials/cost-accounting/tasks/create-cost-elements.md
-            - name: Költségobjektum-dimenziók
-              href: ../financials/cost-accounting/cost-objects.md
-            - name: Költségobjektumok létrehozása
-              href: ../financials/cost-accounting/tasks/create-cost-objects.md
-            - name: Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez
-              href: ../financials/cost-accounting/map-cost-elements-dimension-members.md
-            - name: Költségösszetevő-dimenzió feltérképezése
-              href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md
-            - name: Dimenzióhierarchia
-              href: ../financials/cost-accounting/dimension-hierarchy.md
-            - name: Szervezeti jelentési hierarchia létrehozása
-              href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md
-            - name: Hozzáférési jogok meghatározása egy költségobjektum-ellenőr számára
-              href: ../financials/cost-accounting/access-rights-cost-object-controller.md
-            - name: Hozzáférési jogok konfigurálása egy költségobjektum-ellenőr számára
-              href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md
-            - name: Költség-ellenőrzőegységek meghatározása
-              href: ../financials/cost-accounting/tasks/define-cost-control-units.md
-            - name: Költségkönyvelési főkönyv létrehozása
-              href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md
-            - name: Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok
-              href: ../financials/cost-accounting/statistical-measure-provider-template.md
-            - name: Felosztás alapjai
-              href: ../financials/cost-accounting/allocation-bases.md
-            - name: Költségfelosztási irányelv létrehozása egy költségellenőrző-egységhez
-              href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
-            - name: Költségviselkedési irányelv létrehozása egy költségellenőrző-egységhez
-              href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
-            - name: Költségfelosztási irányelv létrehozása egy költségellenőrző-egységhez
-              href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
-            - name: Költségösszegzési irányelv létrehozása
-              href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md
-            - name: A költségkönyvelési főkönyv adatforrásának kezelése
-              href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
-            - name: Folyamat- és nyomkövetési forrásadatok
-              href: ../financials/cost-accounting/tasks/process-trace-source-data.md
-            - name: Járulékos költség számítása
-              href: ../financials/cost-accounting/overhead-calculation.md
-            - name: Költségösszesítési irányelv és járulékos költségek kiszámítása
-              href: ../financials/cost-accounting/cost-rollup.md
-            - name: Költségellenőrzési munkaterület konfigurálása
-              href: ../financials/cost-accounting/cost-control-workspace.md
-            - name: Költségellenőrzési munkaterület paramétereinek konfigurációja
-              href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
-            - name: A hozzáférésilista-biztonság és az RLS megértése a Microsoft Power BI megoldásban
-              href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: Tartalomcsomag használata a Microsoft Power BI segítségével végzett jelentéskészítéshez
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: Költségellenőrzési munkaterület alkalmazása a Finance and Operations mobilalkalmazásban
-              href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+            - name: Számlák
+              items:
+                - name: Könyvelések áttekintése
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: Eltávolítási szabályok
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: Dimenziókombinációk – munka
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: Kiegyensúlyozott naplók egységközi számlázáshoz
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: Feladásdefiníciók
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: 'Feladásdefiníció-példák '
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: Főkönyvi számlaegyenlegek
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: Pénzügyi dimenziók meghatározása
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Számlastruktúrák létrehozása
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Könyvelési sémák létrehozása
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: Konszolidációs csoportok és további konszolidációs számlák létrehozása
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: Főszámla típusai
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: Fő számla létrehozása
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: Számlatükör tervezése
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: Kiegyenlítési tranzakciók a főkönyvi számlák között
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: Főkönyvi számlaalias beállítása
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: Fő számla kategóriáinak beállítása
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: Könyvelési források böngészője
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: Könyvelési felosztások
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: Felosztások feldolgozása
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: Pénzügyi dimenziók
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: Könyvelési vagy jelentési pénznem átváltása
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: Konszolidációs számlacsoportok és számlák
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Konszolidáció és megszüntetés áttekintése
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 'Pénzügyi naptárak, pénzügyi évek és időszakok'
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: Számlastruktúrák konfigurálása
+                  href: ../financials/general-ledger/configure-account-structures.md
+            - name: Naplók és főkönyvek
+              items:
+                - name: Általános napló feldolgozása
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: Időszaki naplók közzététele
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: Főkönyvi felosztási napló feldolgozása
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Vállalatközi könyvelés beállítása
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: Főkönyvi felosztási szabályok
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: Speciális szabályok létrehozása naplók részére
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: Speciális szabálystruktúrák létrehozása és hozzárendelése
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: Főkönyvi napló típusai
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: Naplók létrehozása és érvényesítése
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: Naplóbejegyzések vagy tranzakciók megtekintése
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: Kapcsolódó vállalatközi bizonylat megtekintése egy naplóból
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: Naplóbejegyzés létrehozása sablon alapján
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: Főkönyvi könyvelés tranzakcióinak létrehozása
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Naplósorok és dokumentumok közzététele az Excel programból
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: Naplóbejegyzések és tranzakciók megtekintése
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: Feladott naplóbejegyzések naplózása
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Devizaátértékelés konszolidált vállalatban
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: Főkönyvi devizaátértékelés
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Devizaárfolyamok importálása
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+            - name: Időszak végi lezárás
+              items:
+                - name: A főkönyv lezárása az időszak végén
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: Pénzügyi időszak lezárása munkaterület
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: Év végi zárás
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: A pénzügyi év lezárása
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: Pénzügyi időszakok tömeges lezárása
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: Áfa
+              items:
+                - name: Áfa áttekintése
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: Számítás alapján és számítási módokon alapuló áfa értéke
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: Áfakifizetések és kerekítési szabályok
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: Áfaszámítási módok a Kiindulás mezőben
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: Szállítói számla áfatartalmának kiszámítása és kiigazítása
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Áfakifizetés létrehozása
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: Áfatranzakciók létrehozása dokumentumokra
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: Főkönyvi feladási csoportok beállítása az áfához
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: Adóhatóságok beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: Áfakódok beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: Adócsoportok és cikkáfacsoportok beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: Áfabevallás kódjainak beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Áfafizetési időszakok beállítása
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: Adóelőleg beállítása
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: Feladott áfatranzakciók megtekintése
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
         - name: Állami szektor
           href: ../financials/public-sector/public-sector-functionality.md
           items:
@@ -1149,31 +1132,41 @@
                   href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
                 - name: Beszerzési szerződés osztályozásainak beállítása az állami szektorban
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
-    - name: Pénzügyi jelentéskészítés
-      href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
-      items:
-        - name: Pénzügyi jelentés létrehozása
-          href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
-        - name: A pénzügyi jelentés összetevői
-          href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
-        - name: Jelentéstervező
-          href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-        - name: Felhasználói preferenciák
-          href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
-        - name: Speciális formázási beállítások
-          href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: Jelentési összetevők rendezése
-          href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
-        - name: Jelentésdefiníciók
-          href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
-        - name: Sordefiníciók
-          href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: Oszlopdefiníciók
-          href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
-        - name: Sordefiniáló cellák módosítása
-          href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-        - name: A pénzügyi jelentési adatpiac visszaállítása az adatbázis visszaállítása után
-          href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: Pénzügyi jelentéskészítés
+          href: ../financials/general-ledger/financial-reporting-getting-started.md
+          items:
+            - name: Pénzügyi jelentéskészítés – áttekintés
+              href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
+            - name: A pénzügyi jelentés összetevői
+              href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
+            - name: Mérleg – pénzügyi jelentések
+              href: ../financials/general-ledger/balance-sheet-financial-reports.md
+            - name: Pénzügyi jelentés létrehozása
+              href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
+            - name: Eredménykimutatási pénzügyi jelentés
+              href: ../financials/general-ledger/income-statement-financial-report.md
+            - name: Főkönyvi kivonat – pénzügyi jelentések
+              href: ../financials/general-ledger/trial-balance-financial-reports.md
+            - name: Pénzügyi jelentések megtekintése
+              href: ../financials/general-ledger/view-financial-reports.md
+            - name: Jelentéstervező
+              href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
+            - name: Felhasználói preferenciák
+              href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
+            - name: Speciális formázási beállítások
+              href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: Jelentési összetevők rendezése
+              href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
+            - name: Jelentésdefiníciók
+              href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
+            - name: Sordefiníciók
+              href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: Oszlopdefiníciók
+              href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
+            - name: Sordefiniáló cellák módosítása
+              href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
+            - name: A pénzügyi jelentési adatpiac visszaállítása az adatbázis visszaállítása után
+              href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Honosítási és szabályozó funkciók
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -3990,9 +3983,7 @@
               href: ../supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md
             - name: A beszerzési rendelések munkasablonjának beállítása
               href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
-- name: Finance and Operations fejlesztése és adminisztrációja
+- name: A Finance and Operations fejlesztése és adminisztrációja
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-- name: Dynamics 365 for Talent
-  href: ../talent/toc.yml
