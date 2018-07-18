@@ -43,17 +43,17 @@ Vevői számlákat értékesítési rendelések vagy szállítólevelek alapján
 
 Kövesse nyomon a Kinnlevőségek funkcióval a vevői számlákat és a vevőktől érkező fizetéseket. Lehetőség van vevőcsoportok, vevők, feladási profilok, kamatlevelek, fizetési felszólítások, jutalékok, és vevőkre vonatkozó paraméterek, költségek, szállítások és célok, váltók és a Kinnlevőségek funkcióval kapcsolatos információk beállítására. 
 
-:::sor::: :::oszlop::: - [Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row::: :::column::: - [Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Vevői feladási profilok](customer-posting-profiles.md)
         - [Hitelkártya-beállítás, engedélyezés és rögzíté](credit-card-authorizations.md)
         - [Vevői számla létrehozása](configure-customer-invoices.md)
         - [Ismétlődő számlák beállítása és feldolgozása](set-up-process-recurring-invoices.md)
-        - [Szabadszöveges számla javítása](correct-free-text-invoice.md) :::oszlop vége::: :::oszlop::: - [Váltók beállítása](set-up-bills-exchange.md)
+        - [Szabadszöveges számla javítása](correct-free-text-invoice.md) :::column-end::: :::column::: - [Váltók beállítása](set-up-bills-exchange.md)
         - [Kamatlábak beállítása kamatkódhoz](set-up-interest-rates-interest-code.md)
         - [Kamatdíjak elengedése, visszaállítása vagy sztornírozása](waive-reinstate-reverse-interest-fees.md)
         - [SEPA beszedési megbízás – áttekintés](sepa-direct-debit-overview.md)
         - [SEPA beszedési megbízás beállítása](sepa-direct-debit-mandate.md)
-        - [Kinnlevőségek bezárása](close-accounts-receivable.md) :::oszlop vége::: :::sor vége:::
+        - [Kinnlevőségek bezárása](close-accounts-receivable.md) :::column-end::: :::row-end:::
 
 
 ## <a name="set-up-credit-and-collections"></a>Követelések és beszedések beállítása
@@ -70,13 +70,13 @@ A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetb�
 
 Fogadjon különböző módokon vevői kifizetéseket, például váltó, készpénz, csekk, hitelkártya vagy elektronikus fizetés használatával. 
 
-:::sor::: :::oszlop::: - [Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row::: :::column::: - [Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
         - [A Kinnlevőségek modul központosított kifizetései](centralized-payments-accounts-receivable.md)
         - [Részleges vevői fizetés kiegyenlítése az engedmény dátuma előtt, végleges fizetés az engedmény dátumát követően](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Részleges vevői kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::oszlop vége::: :::oszlop::: - [Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Részleges vevői kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::column-end::: :::column::: - [Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](settle-partial-customer-payment-discounts-credit-notes.md)
         - [Részleges vevői kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik](settle-partial-customer-payment-multiple-discount-periods.md)
         - [Visszatérítés vevőnek](reimburse-customers.md)
-        - [Vevői kifizetések részösszegre](customer-payments-partial-amount.md) :::oszlop vége::: :::sor vége:::
+        - [Vevői kifizetések részösszegre](customer-payments-partial-amount.md)  :::column-end::: :::row-end:::
 
 
 ### <a name="additional-resources"></a>További erőforrások

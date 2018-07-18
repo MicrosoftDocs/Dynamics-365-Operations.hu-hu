@@ -33,16 +33,16 @@ Ez a témakör a Microsoft Dynamics 365 for Finance and Operations pénzgazdálk
 
 További információkért válasszon ki egy szolgáltatásterületet.
 
-:::sor::: :::oszlop::: - [Kötelezettségek](accounts-payable/accounts-payable.md) 
+:::row::: :::column::: - [Kötelezettségek](accounts-payable/accounts-payable.md) 
         - [Kinnlevőségek](accounts-receivable/accounts-receivable.md)
         - [Költségvetés készítése](budgeting/budgeting-overview.md) 
         - [Készpénz-és bankkezelés](cash-bank-management/cash-bank-management.md)
-        - [Költségkönyvelés](cost-accounting/cost-accounting-home-page.md) :::oszlop vége::: :::oszlop::: - [Költséggazdálkodás](expense-management/expense-management.md)
+        - [Költségkönyvelés](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Költséggazdálkodás](expense-management/expense-management.md)
         - [Pénzügyi jelentéskészítés](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Tárgyi eszközök](fixed-assets/fixed-assets.md)
         - [Főkönyv](general-ledger/general-ledger.md) 
         - [Projektvezetés](project-management/overview-project-management-accounting.md)
-        - [Állami szektor](public-sector/public-sector-functionality.md) :::oszlop vége::: :::sor vége:::
+        - [Állami szektor](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
 
 
 ## <a name="additional-resources"></a>További erőforrások
