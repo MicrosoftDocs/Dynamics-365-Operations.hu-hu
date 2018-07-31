@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 86b301833f3655f7172e2d38ddca4239be71760c
-ms.openlocfilehash: bcb4af426e5967643a1c438bb19495576ce51b63
+ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
+ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
@@ -58,6 +58,8 @@ A kimutatásfeladási funkció javításának részeként három új paramétert
 - **Számlálás letiltása szükséges** – Ha ez a beállítás **Igen**, a kimutatás feladására használt eljárás tovább folytatódik akkor is, ha a kimutatáson a számolt összeg és a tranzakciós összeg közötti különbség túl van azon a küszöbértéken, amely meg van határozva a kiskereskedelmi áruházak **Kimutatás** gyorslapján.
 
 Ezenkívül a **Párhuzamos kivonatfeladás maximális száma** mező megjelent a **Kötegelt feldolgozás** gyorslapon. Ez a mező meghatározza, hogy hány kötegelt feladatot lehet egy időben futtatni. Jelenleg manuálisan meg kell adni a mező értékét.
+
+Az új feladási folyamat során emellett szükség van egy **Ajándékutalvány-termék** meghatározására az **Ajándékutalvány** gyorslapján a **Feladás** lapnak a **Kiskereskedelmi paraméterek** lapon. Ez igaz akkor is, ha a szervezet által használva nincsenek ajándékutalványok. 
 
 Megjegyzendő, hogy minden beállítás és paraméter, amely kapcsolódik a kimutatásfeladásokhoz, és meg van határozva a kiskereskedelmi áruházak és a **Kiskereskedelmi paraméterek** oldalon, alkalmazható a továbbfejlesztett kimutatásfeladási funkcióra.
 

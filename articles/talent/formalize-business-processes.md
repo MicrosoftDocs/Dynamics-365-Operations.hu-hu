@@ -1,6 +1,6 @@
 ---
 title: "Üzleti folyamatok formalizálása"
-description: "Az üzleti folyamat funkcióval üzletifolyamat-sablont lehet létrehozni a szervezeten belül végrehajtandó üzleti folyamatokhoz."
+description: "Ez a témakör ismerteti, hogy az üzleti folyamat funkcióval üzletifolyamat-sablont hogyan lehet létrehozni a szervezeten belül végrehajtandó üzleti folyamatokhoz."
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
@@ -19,47 +19,60 @@ ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1b50a97f5e2fc94255ff71702faf91ab36e68eb4
+ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
+ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/19/2018
 
 ---
 # <a name="formalize-business-processes"></a>Üzleti folyamatok formalizálása
-Az üzleti folyamat funkcióval üzletifolyamat-sablont lehet létrehozni a szervezeten belül végrehajtandó üzleti folyamatokhoz. Például a vállalat évente HR-auditot végezhet. Sablont lehet létrehozni az ellenőrzés összes feladatának nyomon követéséhez annak érdekében, hogy minden feladat elvégezhető legyen minden egyes alkalommal, amikor a folyamat befejeződik, és szükség esetén annak biztosítására, hogy a feladatok a helyes sorrendben kövessék egymást. A sablonok újra felhasználhatók az ismétlődő folyamatokhoz, vagy újak létrehozásának kiindulási pontjaként használhatók.
 
-Sablon létrehozása után folyamat indítható és követhető az Üzleti folyamat munkaterületen.  Az üzleti folyamat indításakor a feladatokat a rendszer hozzárendeli a megfelelő személyekhez, és az esedékességi dátumot is hozzáadja. Ezeket az összetevőket lent ismertetjük részletesen.
+[!include[banner](includes/banner.md)]
 
-## <a name="business-process-template"></a>Üzleti folyamat sablonja
-Az Üzleti folyamat sablon felsorolja az üzleti folyamatot alkotó feladatok csoportját. Az emberierőforrás-kezelők és asszisztensek alapértelmezés szerint létrehozhatnak üzleti folyamatokat.  Ez azonban megváltoztatható a biztonsági konfigurációban a Általános üzleti folyamatok karbantartása kötelesség szerkesztésével.
+Az üzleti folyamat funkcióval üzletifolyamat-sablont lehet létrehozni a szervezeten belül kötelezően végrehajtandó üzleti folyamatokhoz. Például a vállalata minden évben emberi erőforrások (HR) ellenőrzést hajt végre. Ebben az esetben létrehozhat egy sablont, amely nyomon követi a feladatokat, amelyekből az ellenőrzési folyamat áll. Ezzel a sablonnal garantálható, hogy az összes feladatot elvégzik minden alkalommal, amikor ellenőrzés történik. Ezenkívül ha a feladatokat egy adott sorrendben kell elvégezni, a sablon segítségével garantálható, hogy a megfelelő sorrendben végezzék őket.
 
-Minden folyamathoz meghatározható egy folyamattulajdonos. A folyamat tulajdonosa rálátást kap a folyamat feladataira, és újra kioszthatja a feladatokat vagy módosíthatja határidőket.  A HR-igazgató például létrehozhat egy üzletifolyamat-sablont juttatások ellenőrzésére.  A kompenzációkért és juttatásokért felelős vezető megadható a folyamat tulajdonosaként, így betekinthet az olyan feladatokba, amelyeket a felülvizsgálat részeként kell végrehajtani.  A folyamat tulajdonosa nem tud létrehozni vagy törölni aktív üzleti folyamatokat vagy üzletifolyamat-sablonokat.
+Az ismétlődő folyamatokhoz a sablonok újrafelhasználhatók. Le is másolhatók, és új sablonokat kiindulópontjaként szolgálhatnak.
 
-## <a name="task"></a>Feladat
-Az üzleti folyamat gyakran több feladatot is magában foglal. Bizonyos feladatokat a Dynamics 365 for Talent megoldáson belül lehet elvégezni, például a belső tanfolyamajánlatok ellenőrzését. Ebben a példában egy menüelemet választunk ki a feladathivatkozás a Feladathivatkozás mezőben. Egyéb feladatok weboldalon lévő űrlapok áttekintését vagy kitöltését foglalhatják magukban. Az URL-cím kiválasztása a feladathivatkozás mezőben engedélyezi a webcím megadását. Ebben a mezőben a belső és a külső webhelyekhez is URL-címet adhat meg. Feladatokat is létrehozhat a manuálisan elvégzett munkákhoz, például minden struktúra hozzáférhetőségének ellenőrzéséhez. Ebben az esetben feladathivatkozás használata nem kötelező. A rugalmasság segítségével többféle feladat követhető nyomon egyetlen átfogó folyamatban.
+Üzletifolyamat-sablon létrehozása után üzleti folyamat indítható és követhető az **Üzleti folyamat** munkaterületen. Az üzleti folyamat indításakor a feladatokat a rendszer hozzárendeli a megfelelő személyekhez, és az esedékességi dátumot is hozzáadja.
 
-Feladatok is hozzárendelhetők egy adott dolgozóhoz vagy pozícióhoz. Például a kompenzációkért és juttatásokért felelős vezető minden esetben a személy, aki a biztosítási díjak felülvizsgálatát végrehajtja.   A feladat létrehozásakor válassza ki a pozíciót a hozzárendelés-típus számára, majd válassza a Kompenzációkért és juttatásokért felelős vezetőt a Pozíciók listáról. A folyamat megkezdésekor a Kompenzációkért és juttatásokért felelős vezető pozícióban levő dolgozó kapja a feladat. Egy adott dolgozóhoz is hozzárendelhető egy feladat, ehhez válassza ki a dolgozót a hozzárendelés-típus mezőben, majd válassza ki a megfelelő személyt.
+## <a name="business-process-templates"></a>Üzleti folyamat sablonjai
+Az Üzleti folyamat sablon felsorolja az üzleti folyamatot alkotó feladatok csoportját. Az emberierőforrás-vezetők és asszisztensek alapértelmezés szerint létrehozhatnak üzleti folyamatokat. Azonban módosíthatja az üzleti folyamatok létrehozására jogosult szerepköröket az **Általános üzleti folyamatok kezelése** kötelesség módosításával a biztonsági beállításokban.
 
-A feladat esedékességi dátuma a folyamat elején bevitt céldátumtól függ. Bizonyos feladatokat el kell végezni a céldátumig, és néhány a céldátumot követően is végrehajtható.  Feladat meghatározásakor meg kell adnia egy esedékességi dátumot, amely a céldátumhoz viszonyított a Határidő eltérése a céldátumtól mezőben. Tegyük fel például, hogy a kompenzációkért és juttatásokért felelős vezetőnek 10 nappal a HR vizsgálat befejezése előtt felül kell vizsgálnia a biztosítási díjakat. A létrehozott feladat a céldátumhoz képest -10 határidőt fog tartalmazni. Ezért ha a folyamat indítása május 13., a feladat határideje május 3. lesz. Megjegyzés: Esedékességi dátum azután is módosítható, hogy a folyamat elindult.
+Minden üzleti folyamathoz meghatározható egy folyamattulajdonos. A folyamat tulajdonosa rálátást kap a folyamat feladataira, és újra kioszthatja a feladatokat vagy módosíthatja határidőket. Például a HR-igazgató a juttatások ellenőrzésére egy üzleti folyamat sablont hoz létre, és megadja a kompenzációkért és juttatásokért felelős vezetőt a folyamat tulajdonosának. A kompenzációs és a juttatásokért felelős vezető akkor rálátást kap az ellenőrzés részeként elvégzendő feladatokra.
 
-A komplex feladatok több lépést igényelhetnek, vagy a feladatok egyéni végrehajtása lehet szükséges további információk érdekében. Utasításokat adhat a tevékenységhez, és az utasítások rich text formázásokat is tartalmazhatnak. Az utasítások annak a személynek, aki hozzá van rendelve a feladat végrehajtásához, további információt nyújthatnak a végrehajtással kapcsolatban.
+A folyamat tulajdonosa nem hozhat létre új üzleti folyamatokat, illetve az üzleti folyamat sablonokat, és nem törölhet aktív üzleti folyamatokat, illetve üzleti folyamat sablonokat.
 
-## <a name="starting-a-process"></a>Folyamat indítása
-A folyamat egy üzletifolyamat-sablonban indítható el a Folyamat indítása lehetőség kiválasztásával.  A folyamat indításakor a kijelölt, az üzletifolyamat-sablonban megtalálható feladatokban meghatározott dolgozókhoz és/vagy beosztásokhoz létrejönnek a feladatok. A határidő is hozzá lesz rendelve az egyes feladatokhoz úgy, hogy a külön napokat hozzáadjuk vagy kivonjuk a céldátumból (a külön napokat illetően lásd a feladatokról szóló részt). Az aktív üzleti folyamatok az üzleti folyamatok munkaterületen tekinthetők meg. 
+## <a name="tasks"></a>Feladatok
+Az üzleti folyamat gyakran több feladatot is magában foglal. Bizonyos feladatokat a Microsoft Dynamics 365 for Talent[?] megoldáson belül lehet elvégezni, például a belső tanfolyamajánlatok ellenőrzését. Ebben az esetben egy beállítás van megadva a **Tevékenységkapcsolat** mezőben. Egyéb feladatok weboldalon lévő oldalak áttekintését vagy kitöltését foglalhatják magukban. Ebben az esetben az **URL-cím** van kiválasztva a **Tevékenységkapcsolat** mezőben, és ezután megadható az URL-cím. A belső és a külső webhelyekhez is URL-címet adhat meg. Feladatokat is létrehozhat a manuálisan elvégzett munkákhoz, például minden struktúra hozzáférhetőségének ellenőrzéséhez. Ebben az esetben feladathivatkozás használata nem kötelező. A rugalmasság segítségével többféle feladat követhető nyomon egyetlen átfogó folyamatban.
+
+Feladatok is hozzárendelhetők egy adott dolgozóhoz vagy pozícióhoz. Például a kompenzációkért és juttatásokért felelős vezető minden esetben a személy, aki a biztosítási díjak felülvizsgálatát végrehajtja. Ezért a feladat létrehozásakor válassza ki a **pozíciót** a **hozzárendelés-típus** mezőben, majd válassza a **Kompenzációkért és juttatásokért felelős vezetőt** a **Pozíciók** listáról. Az üzleti folyamat megkezdésekor a **Kompenzációkért és juttatásokért felelős vezető** pozícióban levő dolgozó kapja a feladat. Egy adott dolgozóhoz hozzárendelhető egy feladat, ehhez válassza ki a **dolgozót** a **hozzárendelés-típus** mezőben, majd válassza ki a megfelelő személyt.
+
+A feladat esedékességi dátuma az üzleti folyamat elején bevitt céldátumtól függ. Bizonyos feladatokat el kell végezni a céldátumig, és néhány a céldátumot követően is végrehajtható. Feladat meghatározásakor meg kell adnia egy esedékességi dátumot, amely a céldátumhoz viszonyított a **Határidő eltérése a céldátumtól** mezőben. Tegyük fel például, hogy a kompenzációkért és juttatásokért felelős vezetőnek 10 nappal a HR vizsgálat befejezése előtt felül kell vizsgálnia a biztosítási díjakat. Ebben az esetben a felülvizsgálathoz létrehozott feladat esetében a **Határidő eltérése a céldátumtól** értéke **-10**. Ezért ha az üzleti folyamat indítása május 13., a feladat határideje május 3. lesz.
+
+> [!NOTE]
+> Esedékességi dátum azután is módosítható, hogy az üzleti folyamat elindult.
+
+A komplex feladatok több lépést igényelhetnek, vagy a feladatokat végrehajtó egyéneknek további információkat kell megadniuk. Ilyen esetben a tevékenységhez lehet utasításokat adni. Az utasítások annak a személynek, aki hozzá van rendelve a feladat végrehajtásához, további információt nyújthatnak a végrehajtással kapcsolatban. Rich text formázást is adhat az utasításokhoz.
+
+## <a name="starting-a-business-process"></a>Üzleti folyamat indítása
+Az üzleti folyamat egy üzletifolyamat-sablonban indítható el a **Folyamat indítása** lehetőség kiválasztásával. A folyamat indításakor a kijelölt, a sablonban megtalálható feladatokban meghatározott dolgozókhoz és/vagy beosztásokhoz létrejönnek a feladatok. A határidő is hozzá lesz rendelve az egyes feladatokhoz úgy, hogy a külön napokat hozzáadjuk vagy kivonjuk a céldátumból, a „Feladatok„ részben leírtak szerint). Az aktív üzleti folyamatok az **üzleti folyamatok** munkaterületen tekinthetők meg.
 
 ## <a name="employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer
-Ha feladat van kiosztva egy alkalmazottnak, az alkalmazott hozzárendelt feladatai megtekinthetők az alkalmazott önkiszolgáló lapján. Azok az alkalmazottak, akikhez üzleti feladatok vannak rendelve, megtekinthetik a feladatot, leírását, kitöltési utasításait és egy kapcsolattartó személy nevét, és megnyithatják a kapcsolódó Dynamics365 oldalt vagy weboldalt az alkalmazotti önkiszolgáló oldalról. A feladatok a folyamatban lévő megszakítva vagy befejeződött megjelölésűek lehetnek.
+A feladat kiosztása után egy alkalmazottnak, az alkalmazott megtekintheti, az összes többi hozzárendelt feladatával együtt, az **Alkalmazotti önkiszolgáló rendszer** lapon. Minden egyes hozzá rendelt üzleti folyamat feladatnál, az alkalmazott láthatja a feladat nevét és leírását, az elvégzésével kapcsolatos tudnivalókat, és a kapcsolattartó személy nevét. Az **Alkalmazotti önkiszolgáló rendszer** lapról az alkalmazott megnyithatja a kapcsolódó lapot a Microsoft Dynamics 365 megoldásban, vagy a kapcsolódó weblapot, és megjelölheti a feladatokat folyamatban lévő, törölt vagy befejeződött feladatként.
 
 ## <a name="business-process-workspace"></a>Üzleti folyamat munkaterülete
-A HR szakemberek az Üzleti folyamat munkaterületről megtekinthetik az aktív üzleti folyamatokat. A munkaterület listázza az összes aktív folyamatot, valamint a hozzájuk kapcsolódó összes feladatot. A legrészletesebb feladatlistát szűrni lehet az esedékességi dátum szerint. A lap a lejárt határidejű tevékenységeket is felsorolja, és a kifejezetten a HR-szakemberhez rendelt feladatokat is. Az összes feladat állapotát is frissíthetik, és szükség esetén áthelyezhetik a feladatokat a teljes üzleti folyamat előrehaladásának megőrzése érdekében.
+A HR szakemberek az **Üzleti folyamat** munkaterületről megtekinthetik az aktív üzleti folyamatokat. Ez a munkaterület listázza az összes aktív folyamatot, valamint a hozzájuk kapcsolódó összes feladatot. A legrészletesebb feladatlistát szűrni lehet az esedékességi dátum szerint. A munkaterület a lejárt határidejű tevékenységeket is felsorolja, és a kifejezetten a HR-szakemberhez rendelt feladatokat is. A HR-szakemberek összes feladat állapotát is frissíthetik, és szükség esetén áthelyezhetik a feladatokat a teljes üzleti folyamat előrehaladásának megőrzése érdekében.
 
 ## <a name="my-business-processes-workspace"></a>Saját üzleti folyamatok munkaterület
-A folyamattulajdonosok a hozzájuk rendelt aktív üzleti folyamatokat rendeli a Saját üzleti folyamatok munkaterületről tekinthetik meg. A munkaterület listázza az összes aktív folyamatot és a kapcsolódó feladatokat, amelyek az adott felhasználó tulajdonában vannak.  A legrészletesebb feladatlistát szűrni lehet az esedékességi dátum szerint. A lap felsorolja a kifejezetten a folyamattulajdonoshoz rendelt feladatokat is. A folyamat tulajdonosa frissítheti is a feladatok állapotát, valamint máshoz is rendelheti a feladatokat.
+A folyamattulajdonosok a hozzájuk rendelt aktív üzleti folyamatokat rendeli a **Saját üzleti folyamatok** munkaterületről tekinthetik meg. A munkaterület listázza az összes aktív folyamatot és a kapcsolódó feladatokat, amelyek az adott felhasználó tulajdonában vannak. A legrészletesebb feladatlistát szűrni lehet az esedékességi dátum szerint. A munkaterület a kifejezetten a folyamatgazdához rendelt feladatokat is felsorolja. A folyamat tulajdonosa frissítheti is az összes feladat állapotát, valamint máshoz is rendelheti bármelyik feladatot.
 
 ## <a name="navigating-business-processes"></a>Navigálás az üzleti folyamatok között
-1. Üzletifolyamat-sablon hozzáadásához keresse meg az üzleti folyamatokat - a hivatkozásokat –, és az üzleti folyamatok adminisztrációját.
-   - a.   Az Új elem új sablont hoz létre.
-   - b.   A sablonból történő másolás a kiválasztott sablont átmásolja egy újba.
-   - c.   A folyamat indítása elindítja a kiválasztott üzleti folyamatot, kiosztja a feladatokat, és kiszámítja a határidőket.  
-2. Az aktív folyamatok és a hozzájuk kapcsolódó feladatok megtekintéséhez keresse meg az üzleti folyamatok munkaterületet.
+Üzleti folyamat sablon létrehozásához vagy másolásához, vagy egy üzleti folyamat elindításához, keresse meg a következőt: Üzleti folyamatok - Hivatkozások – Üzleti folyamatok felügyelete. A következő műveleteket végezheti el ezután:
+
+- Válassza az **Új** lehetőséget új üzleti folyamat sablon létrehozásához.
+- A **Másolás sablonból** lehetőséggel másolhatja át a kiválasztott sablont egy újba.
+- A **Folyamat indítása** elindítja a kiválasztott üzleti folyamatot, kiosztja a feladatokat, és kiszámítja a határidőket.
+
+Az aktív folyamatok és a hozzájuk kapcsolódó feladatok megtekintéséhez nyissa meg az **Üzleti folyamatok** munkaterületet.
+
 

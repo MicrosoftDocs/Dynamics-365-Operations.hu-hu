@@ -3,7 +3,7 @@ title: "Ajánlatkérések (RFQ-k)"
 description: "Ez a témakör áttekintést nyújt az ajánlatkérésekről (RFQ-król). Egy szervezet akkor ad ki ajánlatkérést (RFQ-t), amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ac3c55ac56c800f6f4e8e593cce7fe0874d99a5d
+ms.sourcegitcommit: 9b840f5511f6a0df0e9ce3db4be69a0ab4ec3261
+ms.openlocfilehash: 8d7b07027443d1ca3894ccb7ed7f3cf49a4dc3e3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/21/2018
 
 ---
 
@@ -100,7 +100,7 @@ A szállítóknak elküldött e-mailes értesítés sablonját a **Beszerzési �
 
 -   %RFQ case name%
 
--   %ExpiryDateTime%
+-   %Expiry Date Time%
 
 -   %Date%
 
