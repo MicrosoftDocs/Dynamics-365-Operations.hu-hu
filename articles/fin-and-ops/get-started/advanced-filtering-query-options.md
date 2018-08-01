@@ -1,6 +1,6 @@
 ---
 title: "Speciális szűrési és lekérdezési szintaxis"
-description: "A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanel \"egyezések\" operátor használata esetén."
+description: "A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanelen vagy az **egyezések** operátor vagy a rács oszlop fejléce szűrők használata esetén."
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
+ms.sourcegitcommit: edff2fba7e231ae52abf7828d55c1fe4841ccd7f
+ms.openlocfilehash: 3e7127a9412dcf9324872c06fbf6cc3cf61bf063
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 07/06/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-A cikk ismerteti a szűrési és lekérdezési beállítások, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanel "egyezések" operátor használata esetén.
+A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanelen vagy az **egyezések** operátor vagy a rács oszlop fejléce szűrők használata esetén. 
 
 <a name="advanced-query-syntax"></a>Speciális lekérdezési szintaxis
 ---------------------

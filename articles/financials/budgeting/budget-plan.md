@@ -1,16 +1,16 @@
 ---
 title: "Költségvetés-tervezés"
-description: "Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Az oktatóanyag a következő üzleti folyamatokra és feladatokra fektet hangsúlyt: – Szervezeti hierarchia alkotása a költségvetés tervezéshez és a felhasználói biztonság beállítása – Költségvetési tervváltozat, költségvetési terv oszlopok és Excel sablonok tervezése – Költségvetés-tervezési folyamat létrehozása és aktiválása – Költségvetési tervdokumentum létrehozása a főkönyv alapján – Költségvetési tervdokumentum adatok beállítása felosztások használatával – Költségvetési tervdokumentum adatainak szerkesztése Excelben"
-author: twheeloc
+description: "Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával."
+author: ShylaThompson
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -30,7 +30,13 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Az oktatóanyag a következő üzleti folyamatokra és feladatokra fektet hangsúlyt: – Szervezeti hierarchia alkotása a költségvetés tervezéshez és a felhasználói biztonság beállítása – Költségvetési tervváltozat, költségvetési terv oszlopok és Excel sablonok tervezése – Költségvetés-tervezési folyamat létrehozása és aktiválása – Költségvetési tervdokumentum létrehozása a főkönyv alapján – Költségvetési tervdokumentum adatok beállítása felosztások használatával – Költségvetési tervdokumentum adatainak szerkesztése Excelben 
+Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 for Finance and Operations- felhasználók számára a költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Ez a labor az alábbi üzleti folyamatokra és feladatokra fókuszál:
+- Költségvetés-tervezési és felhasználóbiztonsági konfigurálási célra szervezeti hierarchia létrehozása
+- Költségvetési terv esetek, költségvetési terv oszlopok, elrendezések és Excel sablonok meghatározása
+- Költségvetés-tervezési folyamat létrehozása és aktiválása
+- Költségvetés-tervezési dokumentum létrehozása tényleges adatok lekérésével a főkönyvből
+- A felosztások segítségével módosítsa a költségvetési terv dokumentumadatokat
+- Az Excel programban a költségvetési terv dokumentum adatainak szerkesztése 
 
 <a name="prerequisites"></a>Előfeltételek 
 ------------------
@@ -104,8 +110,6 @@ A költségvetési tervadatokhoz történő hozzáférés kapcsán a költségve
 2.5. Válassza a „Hozzáférés engedélyezése adott szervezetekhez” lehetőséget. Válassza ki az első lépésben létrehozott Szervezeti hierarchiát. Válassza ki a Pénzügyi csomópontot, majd kattintson a Hozzáférés biztosítása gyermekelemekkel együtt gombra 
 
 ***Fontos!*** *Győződjön meg róla, hogy a lépést a DEMF vállalatra vonatkozó szövegkörnyezetben hajtja végre, mivel a Szervezeti biztonsági beállítás az adott jogi személyre vonatkozik* 
-
-[![Hozzáférés megadása](./media/screenshot14.png)](./media/screenshot14.png)
 
 ### <a name="task-3-create-scenarios"></a>3. lépés: Változatok létrehozása
 3.1. Lépjen a következőhöz: Költségvetés-készítés&gt;Beállítás &gt; Költségvetés-tervezés &gt; Költségvetés-tervezési konfiguráció. Jegyezze meg a Változatok lapon a jelen oktatóanyagban a továbbiakban használt változatok nevét: Előző évi tényadatok, illetve Költségvetési. 

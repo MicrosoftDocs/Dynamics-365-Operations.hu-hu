@@ -20,10 +20,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: 338e0847ea91ee2582df0aab3e31a97c4f24113e
+ms.openlocfilehash: 016eec12c31398beede7fdddc4548ec196ebd704
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -51,7 +51,7 @@ Cikkfeladási szabályok megadása előtt a **Tranzakciókombinációk** képern
 
 **4. Adja meg az elszámolóárhoz tartozó készletparamétereket.** 
 
--  Az **Anyagjegyzék** képernyő használatával határozzon meg költségszabályozási paramétereket a **Készletparamérerek** oldalon, hogy meghatározza az elszámolóárhoz tartozó két költség-ellenőrzési paramétert. 
+-  A **Készletkönyvelés** képernyő használatával határozzon meg költségszabályozási paramétereket a **Készletkönyvelési irányelvek beállítása > Paramérerek** oldalon, hogy meghatározza az elszámolóárhoz tartozó két költség-ellenőrzési paramétert.
 
     -  A **Költséglebontás** mezőben válassza a **Nem** vagy **Részfőkönyv** lehetőséget. Ha a **Részfőkönyv** lehetőséget választja, a költséglebontás egy *aktív* költség lebontását jelenti. Az aktív költséglebontásnak meghatározó szerepe van az elszámolóár-elemek többszintű termékszerkezetének teljes keresztmetszetén át a költségcsoport szegmentálás kiszámításában, megőrzésében és megtekintésében. Ha a költséglebontás aktív, lehet jelenteni és elemezni a készletet, a folyamatban lévő munkát és a költségcsoportonkénti eladott áruk beszerzési értékét (ELÁBÉ) egyszintű, többszintű vagy teljes formában. Ha a költséglebontás aktív, az azt jelenti, hogy ha egy legyártott cikk költségét aktiválja, a költségcsoport-szegmentálás a cikk költségrekordjában lesz eltárolva. 
 

@@ -3,7 +3,7 @@ title: "A termékek szinkronizálása Sales-termékekre közvetlenül a Finance 
 description: "Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Microsoft Dynamics 365 for Finance and Operations és a Microsoft Dynamics 365 for Sales közötti termékszinkronizálásra használhatók."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -78,7 +78,8 @@ A **Külsőleg karbantartott** mező segít annak garantálásában, hogy csak a
 Külsőleg karbantartása termékek a program automatikusan hozzáadja az első érvényes árlista, ugyanabban a pénznemben. Az árlisták betűrendben, név szerint vannak rendezve. A Finance and Operations termékeladási ára egyben az árlistán szereplő ár. Ezért győződjön meg arról, hogy tartozik árlista minden egyes Sales termékeladási pénznemhez a Finance and Operations szolgáltatásban. A felszabadított, eladható termékek pénznemét a jogi személy számviteli pénznemére kell beállítani, ahonnan a terméket exportálják.
 
 > [!NOTE]
-> A termékszinkronizálás nem fog sikerülni, hacsak nem létezik olyan árlista, amelynek megfelelő pénzneme van.
+> - A termékszinkronizálás nem fog sikerülni, hacsak nem létezik olyan árlista, amelynek megfelelő pénzneme van.
+> - A használt árlista az integrációval szabályozható a pricelevelid.name [alapértelmezett árlista (név)] leképezésével az adatintegrációs projektben. A beírásnál csak kisbetűk használhatók. Például a „Szabványos” nevű értékesítési árlista alapértelmezetten ez lenne: Célmező: pricelevelid.name [alapértelmezett árlista (név)] és Leképezés típusa: [ { "transformType": "Default", "defaultValue": "standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
