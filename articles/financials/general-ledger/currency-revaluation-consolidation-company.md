@@ -1,7 +1,7 @@
 ---
 title: "Devizaátértékelés konszolidált vállalatban"
 description: "Ez a témakör azt ismerteti, hogyan lehet átértékelni a devizát a konszolidált vállalatban."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerExchAdjHist
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
