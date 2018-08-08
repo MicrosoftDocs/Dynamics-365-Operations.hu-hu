@@ -1,7 +1,7 @@
 --- 
 title: "Költség-ellenőrzőegységek meghatározása"
 description: "Ez az eljárás bemutatja a költség-ellenőrzőegységek meghatározását a költségkönyvelési főkönyvben."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 773c6b5a1bb804b7878f9b48241097641238570a
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 296d74a9ca68758d43be1c46acdba7d13d99e9d1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="define-cost-control-units"></a><span data-ttu-id="14e19-103">Költség-ellenőrzőegységek meghatározása</span><span class="sxs-lookup"><span data-stu-id="14e19-103">Define cost control units</span></span>
