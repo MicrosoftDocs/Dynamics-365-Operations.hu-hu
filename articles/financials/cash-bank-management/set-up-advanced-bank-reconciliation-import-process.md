@@ -1,7 +1,7 @@
 ---
 title: "Továbbfejlesztett banki egyeztetés importálásának beállítása"
 description: "A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 for Finance and Operations rendszer banki tranzakcióiba. Ez a cikk ismerteti, hogyan állítható be az importálás az Ön banki kivonataihoz."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankStatementFormat
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352

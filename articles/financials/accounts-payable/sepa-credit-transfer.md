@@ -1,7 +1,7 @@
 ---
 title: "SEPA átutalás áttekintése"
 description: "Ez a cikk általános információkat tartalmaz az ISO 20022 átutalásokról, amelyek magukban foglalják a SEPA-átutalásokat és minden más elektronikus kifizetést a szállítók számára. A SEPA átutalás olyan euroalapú kifizetéstípus, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A témakör azt is elmagyarázza, hogyan lehet beállítani és elküldeni a SEPA jóváírás-átutalási fájlt."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "A költségvetés-ellenőrzés áttekintése"
 description: "Ez a cikk bemutatja a költségvetés-ellenőrzést, és segítséget nyújt a költségvetés-ellenőrzés beállításához a Microsoft Dynamics 365 for Finance and Operations rendszerben, hogy kezelni tudja a pénzügyi erőforrásokat."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetControlConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5

@@ -1,7 +1,7 @@
 ---
 title: "Munkaidő és jelenlét rögzítése"
 description: "A munkaidő-nyilvántartási dolgozók különböző típusú időregisztrációkat adhatnak meg, például érkezéskori blokkolás, távozáskori blokkolás, közvetett tevékenységeket regisztrálhatnak és távolléteket regisztrálhatnak. Ez a témakör regisztrációkat ír le, azok számítását, jóváhagyását, valamint a munkafolyamat használatát annak érdekében, hogy szerkezetet és automatikus jóváhagyást adjon az időnyilvántartások jóváhagyásának folyamatához."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.custom: 53351
 ms.assetid: 885b0cdf-53d7-4cb4-92fe-da1b9e32b39f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
