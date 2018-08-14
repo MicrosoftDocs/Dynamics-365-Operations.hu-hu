@@ -46,8 +46,6 @@ A Field Service és a Finance and Operations közötti integráció első fázis
 
 A Field Service és a Finance and Operations közötti szinkronizálás példamódjának megtekintéséhez tekintse meg a rövid YouTube videót [Munkarendelések szinkronizálása a Dynamics 365 for Field Service és a Finance and Operations között](https://www.youtube.com/watch?v=hAB4TDVMjxU).
 
-[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
-
 ## <a name="system-requirements-for-finance-and-operations"></a>Rendszerigény a Finance and Operations rendszerhez
 A Field Service integráció a következő verziókat támogatja:
 
