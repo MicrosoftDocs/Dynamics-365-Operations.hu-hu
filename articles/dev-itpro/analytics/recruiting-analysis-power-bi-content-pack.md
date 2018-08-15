@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 63432fe5fe98b2c20ddbf9ebec6ac14b981f0106
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/08/2018
 <span data-ttu-id="a9efc-105">Ez a témakör ismerteti a **Toborzási** Microsoft Power BI-tartalmat.</span><span class="sxs-lookup"><span data-stu-id="a9efc-105">This topic describes the **Recruiting** Microsoft Power BI content.</span></span> <span data-ttu-id="a9efc-106">Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.</span><span class="sxs-lookup"><span data-stu-id="a9efc-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 
 ## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="a9efc-107">Power BI-tartalom elérése</span><span class="sxs-lookup"><span data-stu-id="a9efc-107">Accessing the Power BI content</span></span>
-<span data-ttu-id="a9efc-108">A **Felvétel** Power BI-tartalom a **Toborzás kezelése** munkaterületen látható.</span><span class="sxs-lookup"><span data-stu-id="a9efc-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span> 
+<span data-ttu-id="a9efc-108">A **Felvétel** Power BI-tartalom a **Toborzás kezelése** munkaterületen látható.</span><span class="sxs-lookup"><span data-stu-id="a9efc-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span>
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a><span data-ttu-id="a9efc-109">Jelentések és megjelenítések a Toborzás kezelése munkaterületen</span><span class="sxs-lookup"><span data-stu-id="a9efc-109">Reports and visuals in the Recruitment management workspace</span></span>
 <span data-ttu-id="a9efc-110">A **Toborzás kezelése** munkaterület tartalmaz egy **Elemzés** lapot. Ez a lap a beágyazott toborzási Power BI-tartalmat tartalmazza.</span><span class="sxs-lookup"><span data-stu-id="a9efc-110">The **Recruitment management** workspace contains an **Analytics** tab. This tab contains the embedded Power BI content for recruiting.</span></span> <span data-ttu-id="a9efc-111">A tartalom egy áttekintő lapból és további, részletesek adatokat tartalmazó fülekből áll.</span><span class="sxs-lookup"><span data-stu-id="a9efc-111">The content consists of an overview tab and additional tabs that contain details.</span></span> <span data-ttu-id="a9efc-112">Az alábbi táblázatban található a füleken megjelenő jelentések ismertetése.</span><span class="sxs-lookup"><span data-stu-id="a9efc-112">The following table describes the reports on each tab.</span></span>
@@ -66,6 +66,4 @@ ms.lasthandoff: 05/08/2018
 | <span data-ttu-id="a9efc-163">Teljesítmény</span><span class="sxs-lookup"><span data-stu-id="a9efc-163">Performance</span></span>          | <span data-ttu-id="a9efc-164">Minősítési, leírás és minősítési modell</span><span class="sxs-lookup"><span data-stu-id="a9efc-164">Rating, description, and rating model</span></span>                            | <span data-ttu-id="a9efc-165">Kérelmező, a pályázó alkalmazott, pályázó munkaviszonya megszűnt</span><span class="sxs-lookup"><span data-stu-id="a9efc-165">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="a9efc-166">Toborzási projekt</span><span class="sxs-lookup"><span data-stu-id="a9efc-166">Recruitment Project</span></span>  | <span data-ttu-id="a9efc-167">Projekt leírása, projekt állapota és nyitott pozíciók</span><span class="sxs-lookup"><span data-stu-id="a9efc-167">Project description, project status, and openings</span></span>                | <span data-ttu-id="a9efc-168">Kérelmező, a pályázó alkalmazott, pályázó munkaviszonya megszűnt</span><span class="sxs-lookup"><span data-stu-id="a9efc-168">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="a9efc-169">A pályázó munkaviszonya megszűnt</span><span class="sxs-lookup"><span data-stu-id="a9efc-169">Terminated Applicant</span></span> | <span data-ttu-id="a9efc-170">Megszűnt pályázók, ok, teljesítmény és a megszűnés dátuma</span><span class="sxs-lookup"><span data-stu-id="a9efc-170">Terminated applicants, reason, performance, and termination date</span></span> | <span data-ttu-id="a9efc-171">Vállalat, naptáreltolás, dátum, földrajzi elhelyezkedés, teljesítmény, demográfiai adatok, foglalkoztatás, média, toborzási projekt, pályázó neve</span><span class="sxs-lookup"><span data-stu-id="a9efc-171">Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name</span></span> |
-
-
 
