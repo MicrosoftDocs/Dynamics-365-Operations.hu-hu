@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 04817d1f1851e43679995641e8b0ff99edaa83ad
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8c11f64fd899b8be4e6c3179913787eb2c32c6c6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-a-format-configuration-for-electronic-reporting-er"></a>Elektronikus jelentéskészítés (ER) formátumkonfigurációjának létrehozása
+# <a name="create-electronic-reporting-er-format-configurations"></a>Elektronikus jelentéskészítés (ER) formátumkonfigurációjának létrehozása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

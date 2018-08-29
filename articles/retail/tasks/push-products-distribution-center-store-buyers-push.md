@@ -1,5 +1,5 @@
 --- 
-title: " Termékek elosztása az elosztási központból az üzletbe a központi elosztás használatával"
+title: "Termékek elosztása az elosztási központokból az üzletekbe a központi elosztás használatával"
 description: "Ez az eljárás bemutatja, hogy mely lépésekkel hozhat létre és dolgozhat fel egy Központi elosztást, amellyel termékeket oszthat el egyetlen helyről egy vagy több üzletbe."
 author: rubencdelgado
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9d9a5d4fdece1cfb573224bd54d96ccd281c0f09
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ed47b4f052dab99dec058910e4b8558481b34e59
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a> Termékek elosztása az elosztási központból az üzletbe a központi elosztás használatával
+# <a name="push-products-from-distribution-centers-to-stores-via-buyers-push"></a>Termékek elosztása az elosztási központokból az üzletekbe a központi elosztás használatával
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

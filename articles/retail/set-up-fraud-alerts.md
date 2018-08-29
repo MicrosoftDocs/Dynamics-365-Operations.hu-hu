@@ -1,5 +1,5 @@
 ---
-title: "Csalási figyelmeztetések beállítása"
+title: "Hívásközpontban jelentkező csalás-ellenőrzési figyelmeztetések beállítása és használata"
 description: "Ez a témakör ismerteti a szabályok beállítását az ügyfélszolgálati munkatársak figyelmeztetésére az esetleg csaló információról a rendelések feldolgozása során. Meghatározhat specifikus kódokat, amelyek arra szolgálnak, hogy automatikusan vagy manuálisan várakoztassák a gyanús rendeléseket."
 author: josaw1
 manager: AnnBe
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e4f89d86b64e0c8c76c15d3c2c1c00af353e9ca
-ms.openlocfilehash: 2534e687623ab750f349287a762a354bc0fcf12b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 6cca9e5b606f298d000354f6aeb01fbe2c8f2141
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

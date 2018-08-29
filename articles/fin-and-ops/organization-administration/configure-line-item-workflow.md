@@ -1,5 +1,5 @@
 ---
-title: "Sortétel munkafolyamatának beállítása"
+title: "Sortétel munkafolyamatok konfigurálása"
 description: "Ez a témakör bemutatja a sortétel-munkafolyamat-elem beállításának menetét."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30d6aeda6be7bc81763c0b3f20c568d3fc81526
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 0a57baa3ecae727721f62477cfc5fa41f60ad06d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-a-line-item-workflow"></a>Sortétel munkafolyamatának beállítása
+# <a name="configure-line-item-workflows"></a>Sortétel munkafolyamatok konfigurálása
 
 [!include [banner](../includes/banner.md)]
 

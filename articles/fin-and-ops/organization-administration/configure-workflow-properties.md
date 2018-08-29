@@ -3,7 +3,7 @@ title: "Munkafolyamat-tulajdonságok konfigurálása"
 description: "Ez a témakör bemutatja, hogyan kell konfigurálni a munkafolyamat különböző tulajdonságait."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: 7ea35d851613a19889392400e31cf8492d5dc799
+ms.sourcegitcommit: ba03473dd6fc31d51fd4e890acac1cd1494ef5a3
+ms.openlocfilehash: a327b85f18f03294a237c3795ae2e1f4a97095f0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -107,6 +107,7 @@ Amikor elküldenek egy dokumentumot feldolgozásra, létrejön egy munkafolyamat
     2.  Kattintson a **Helyőrző beszúrása** lehetőségre.
     3.  A megjelenő listában válassza ki a beilleszteni kívánt helyőrzőt.
     4.  Kattintson a **Beszúrás** lehetőségre.
+    5.  Egy gyakori **Értesítés szövege** helyőrző, melyet létrehoznak: „Utolsó jegyzetek: %Workflow.Last note%”, melly az előző lépés megjegyzéseit jelenít meg.
 
 6.  A szöveg fordításainak hozzáadásához, végezze el a következő lépéseket:
     1.  Kattintson a **Fordítások** lehetőségre.

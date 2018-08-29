@@ -1,7 +1,7 @@
 ---
 title: "Kinnlevőségek kezdőlap"
 description: "A Kinnlevőségek szakasz a vevői számlák és a beérkező kifizetések nyilvántartására szolgál."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
-ms.openlocfilehash: 9fcf106b03cd1abdd135681ceefbb7877f07c773
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -43,17 +43,24 @@ Vevői számlákat értékesítési rendelések vagy szállítólevelek alapján
 
 Kövesse nyomon a Kinnlevőségek funkcióval a vevői számlákat és a vevőktől érkező fizetéseket. Lehetőség van vevőcsoportok, vevők, feladási profilok, kamatlevelek, fizetési felszólítások, jutalékok, és vevőkre vonatkozó paraméterek, költségek, szállítások és célok, váltók és a Kinnlevőségek funkcióval kapcsolatos információk beállítására. 
 
-:::row::: :::column::: - [Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row:::
+    :::column:::
+        - [Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Vevői feladási profilok](customer-posting-profiles.md)
-        - [Hitelkártya-beállítás, engedélyezés és rögzíté](credit-card-authorizations.md)
+        - [Hitelkártya-beállítás, engedélyezés és rögzítés](credit-card-authorizations.md)
         - [Vevői számla létrehozása](configure-customer-invoices.md)
         - [Ismétlődő számlák beállítása és feldolgozása](set-up-process-recurring-invoices.md)
-        - [Szabadszöveges számla javítása](correct-free-text-invoice.md) :::column-end::: :::column::: - [Váltók beállítása](set-up-bills-exchange.md)
+        - [Szabadszöveges számla javítása](correct-free-text-invoice.md)
+    :::column-end:::
+    :::column:::
+        - [Váltók beállítása](set-up-bills-exchange.md)
         - [Kamatlábak beállítása kamatkódhoz](set-up-interest-rates-interest-code.md)
         - [Kamatdíjak elengedése, visszaállítása vagy sztornírozása](waive-reinstate-reverse-interest-fees.md)
         - [SEPA beszedési megbízás – áttekintés](sepa-direct-debit-overview.md)
         - [SEPA beszedési megbízás beállítása](sepa-direct-debit-mandate.md)
-        - [Kinnlevőségek bezárása](close-accounts-receivable.md) :::column-end::: :::row-end:::
+        - [Kinnlevőségek modul bezárása](close-accounts-receivable.md)
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="set-up-credit-and-collections"></a>Követelések és beszedések beállítása
@@ -70,13 +77,20 @@ A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetb�
 
 Fogadjon különböző módokon vevői kifizetéseket, például váltó, készpénz, csekk, hitelkártya vagy elektronikus fizetés használatával. 
 
-:::row::: :::column::: - [Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row:::
+    :::column:::
+        - [Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
         - [A Kinnlevőségek modul központosított kifizetései](centralized-payments-accounts-receivable.md)
         - [Részleges vevői fizetés kiegyenlítése az engedmény dátuma előtt, végleges fizetés az engedmény dátumát követően](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Részleges vevői kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::column-end::: :::column::: - [Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Részleges vevői kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+    :::column-end:::
+    :::column:::
+        - [Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](settle-partial-customer-payment-discounts-credit-notes.md)
         - [Részleges vevői kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik](settle-partial-customer-payment-multiple-discount-periods.md)
-        - [Visszatérítés vevőnek](reimburse-customers.md)
-        - [Vevői kifizetések részösszegre](customer-payments-partial-amount.md)  :::column-end::: :::row-end:::
+        - [Visszatérítés vevőknek](reimburse-customers.md)
+        - [Vevői kifizetések részösszegre](customer-payments-partial-amount.md)
+    :::column-end:::
+:::row-end:::
 
 
 ### <a name="additional-resources"></a>További erőforrások

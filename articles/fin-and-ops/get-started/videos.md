@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Finance and Operations videók"
+title: "Videók a Finance and Operations rendszerhez"
 description: "Ez a lap felsorolja azokat a Microsoft által létrehozott „útmutató” és technikai beszélgetés videókat, amelyek a Dynamics 365 for Finance and Operations alkalmazásra vonatkoznak, és amelyek a YouTube és más webhelyeken állnak rendelkezésre."
 author: josaw1
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: 7783671baa66b9c8ab0bb2626555d5ccbfaa1fe9
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 476b53d7e5a5ee764c23034344f375fff5db47e8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="videos-for-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operations videók
+# <a name="videos-for-finance-and-operations"></a>Videók a Finance and Operations rendszerhez
 
 [!include [banner](../includes/banner.md)]
 

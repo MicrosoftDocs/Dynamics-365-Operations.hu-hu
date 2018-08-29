@@ -1,5 +1,5 @@
 --- 
-title: "Konfigurációk tervezése a bejövő dokumentumok elemzéséhez az alkalmazásadat-frissítések céljából (ER)"
+title: "ER-konfigurációk tervezése bejövő dokumentumok elemzésére"
 description: "Ez az eljárás egy bejövő elektronikus dokumentumot elemző elektronikus jelentési (ER) konfigurációk megtervezését mutatja be."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: 96c9397c6a83d61b679492f66f4aa6661f1f8621
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Konfigurációk tervezése a bejövő dokumentumok elemzéséhez az alkalmazásadat-frissítések céljából (ER)
+# <a name="design-er-configurations-to-parse-incoming-documents"></a>ER-konfigurációk tervezése bejövő dokumentumok elemzésére
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -30,7 +30,7 @@ Ez az eljárás egy bejövő elektronikus dokumentumot elemző elektronikus jele
 
 Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. 
 
-Ezek a lépések bármely adathalmazzal végrehajthatók. Mielőtt elkezdené, töltse le és mentse a „Bejövő dokumentumok elemzése az alkalmazásadatok módosításához” súgótémakörben felsorolt fájlokat (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). A fájlok a következők: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Ezek a lépések bármely adathalmazzal végrehajthatók. Mielőtt hozzákezdene, töltse le és mentse a „Bejövő dokumentumok elemzése az alkalmazásadatok frissítéséhez” témakörben tárgyalt fájlokat (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents)). A fájlok a következők: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
     * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, végezze el a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.  

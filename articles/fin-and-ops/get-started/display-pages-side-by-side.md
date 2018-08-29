@@ -1,5 +1,5 @@
 ---
-title: "Oldalak párhuzamos megjelenítése a Megnyitás új ablakban ikon használatával"
+title: "Oldalak egymás melletti megjelenítése a Megnyitás új ablakban funkció használatával"
 description: "Ez a cikk ismerteti, hogy hogyan jeleníthet meg lapokat egymás mellett a Microsoft Dynamics 365 for Finance and Operations rendszerben."
 author: aneesmsft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a575665a2b893745a2f2044cd97177917ee1a33
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a>Oldalak párhuzamos megjelenítése a Megnyitás új ablakban ikon használatával
+# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Oldalak egymás melletti megjelenítése a Megnyitás új ablakban funkció használatával
 
 [!include [banner](../includes/banner.md)]
 

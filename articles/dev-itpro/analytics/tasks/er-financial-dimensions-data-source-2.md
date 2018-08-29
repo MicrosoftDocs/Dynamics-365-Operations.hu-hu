@@ -1,5 +1,5 @@
 --- 
-title: "Leképezési modellek a pénzügyi dimenziók adatforrásként történő használatára"
+title: "Modellek leképezés pénzügyi dimenziók adatforrásként történő használatára"
 description: "A következő lépések leírják, hogy egy rendszergazda vagy az elektronikus jelentések fejlesztője szerepkörhöz hozzárendelt felhasználó miként konfigurálhat egy elektronikusjelentés-modellt (ER-modell) a pénzügyi dimenzió használatához az ER-jelentések adatforrásaként."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c26713a8a391f9f10a6e24f6619c24c1615d4560
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4d9c0f50a724582941ac11e4f01b3cfd3b1cf262
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="map-models--to-use-financial-dimensions-as-a-data-source"></a>Leképezési modellek a pénzügyi dimenziók adatforrásként történő használatára 
+# <a name="map-models-to-use-financial-dimensions-as-data-sources"></a>Modellek leképezés pénzügyi dimenziók adatforrásként történő használatára 
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

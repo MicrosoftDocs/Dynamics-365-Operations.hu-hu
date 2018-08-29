@@ -1,5 +1,5 @@
 ---
-title: "Képek beállítása és kezelése a Retail Modern POS számára"
+title: "Képek beállítása és kezelése a Retail Modern POS (MPOS) számára"
 description: "Ez a cikk ismerteti a Retail Modern POS-ben (MPOS) megjelenő különböző entitások számára a képek beállításának és kezelésének lépéseit."
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ed4a7044b577ed6af86f6803f6abd4f9b500b4e7
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e364cf988cc80d53605fe88bf0dc1be6021c52e7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Képek beállítása és kezelése a Retail Modern POS számára
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Képek beállítása és kezelése a Retail Modern POS (MPOS) számára
 
 [!include [banner](includes/banner.md)]
 
@@ -52,7 +52,7 @@ A Retail Modern POS-ban (MPOS) megjelenő képeket külső helyen kell tárolni,
 4.  Képek esetén a fájlnév formátuma katalógus nevébe van véglegesen kódolva, és nem lehet módosítani. Ezért úgy nevezze át a képeket, hogy azok megfelelő katalógusnévvel rendelkezzenek, ezzel garantálva, hogy az MPOS megfelelően kezeli azokat.
 5.  A **Fájlkiterjesztés** mezőben válassza ki a várható fájlkiterjesztést, a képek típusától függően. Például a bemutatóadatokhoz a katalógusképek a .jpg kiterjesztéssel vannak beállítva. (A képfájlokat azért is átnevezhetik, hogy legyen katalógusnevük.)
 6.  Kattintson az **OK** gombra.
-7.  Annak ellenőrzésére, hogy helyesen mentette-e a médiasablont a képek számára, a **Katalógusképek** lapon kattintson újra a **Médiasablon definiálása** lehetőségre. A sablon ellenőrzéséhez anélkül, hogy bezárná a **Médiasablon definiálása** párbeszédpanelt, a **Kép-URL-címek generálása az Excelbe** gyorslapot használja. Ellenőrizze a kép URL-címének megjelenését, és győződjön meg róla, hogy az URL-cím megfelel a sablon szabványának, amelyet korábban említettünk. A **Médiasablon definiálása** párbeszédpanel implicit módon beállította a képelérési útvonalat az összes katalóguskép számára, amelyek ezt a közös URL-címet használják. Ez az URL-cím az összes katalógusképre vonatkozik, kivéve, ha a felül vannak írva. A kép elérési útjának első része a média alap URL-címből származik, melyet a csatornaprofilban adott meg. Az elérési út fennmaradó része a médiasablonban megadott útvonalból származik. A két rész együttesen adja ki a kép helyének teljes URL-jét. Például egy katalógus a bemutató adatok között a Fabrikam Base Catalog nevet kapta. Emiatt a kép neve Fabrikam Base Catalog.jpg kell, hogy legyen, hogy a sablonban konfigurált katalógusnevet és a .jpg fájlkiterjesztést használjuk. Ebben az esetben a két rész összefűzése után az URL-cím https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg lesz.
+7.  Annak ellenőrzésére, hogy helyesen mentette-e a médiasablont a képek számára, a **Katalógusképek** lapon kattintson újra a **Médiasablon definiálása** lehetőségre. A sablon ellenőrzéséhez anélkül, hogy bezárná a **Médiasablon definiálása** párbeszédpanelt, a **Kép-URL-címek generálása az Excelbe** gyorslapot használja. Ellenőrizze a kép URL-címének megjelenését, és győződjön meg róla, hogy az URL-cím megfelel a sablon szabványának, amelyet korábban említettünk. A **Médiasablon definiálása** párbeszédpanel implicit módon beállította a képelérési útvonalat az összes katalóguskép számára, amelyek ezt a közös URL-címet használják. Ez az URL-cím az összes katalógusképre vonatkozik, kivéve, ha a felül vannak írva. A kép elérési útjának első része a média alap URL-címből származik, melyet a csatornaprofilban adott meg. Az elérési út fennmaradó része a médiasablonban megadott útvonalból származik. A két rész együttesen adja ki a kép helyének teljes URL-jét. Például egy katalógus a bemutató adatok között a Fabrikam Base Catalog nevet kapta. Emiatt a kép neve Fabrikam Base Catalog.jpg kell, hogy legyen, hogy a sablonban konfigurált katalógusnevet és a .jpg fájlkiterjesztést használjuk. Ebben az esetben az összefűzés után az URL-cím: https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam BaseCatalog.jpg.
 8.  Futtassa le a szinkronizálási feladatokat, hogy az új sablon a csatorna-adatbázisba kerüljön, hogy az MPOS használhassa a sablont a képek eléréséhez.
 9.  A katalógusképek médiasablonjának frissítéséhez a csatorna oldalon ügyeljen arra, hogy futtassa a **Katalógusfeladat 1150** opciót a **Kiskereskedelmi IT** &gt; **Elosztási ütemezés** opciókból.[![katalógus1](./media/catalog1.png)](./media/catalog1.png)
 

@@ -1,5 +1,5 @@
 ---
-title: "Bejövő dokumentumok elemzése Microsoft Excelben"
+title: "Bejövő dokumentumok elemzése Excel-formátumban"
 description: "Ez a témakör a bejövő Microsoft Excel-fájlok tartalmának elemzéséhez használt elektronikus jelentési (ER) formátumok tervezésével kapcsolatos információkat tartalmaz."
 author: NickSelin
 manager: AnnBe
@@ -18,35 +18,34 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 001e287590b9f43ed38de803bcace3a25a6f6637
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 32fd82f0e46068c7ed7bfcfddc4ff84603bd20b4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="parse-incoming-microsoft-excel-files"></a>Bejövő Microsoft Excel fájlok elemzése
+# <a name="parse-incoming-documents-in-excel-format"></a>Bejövő dokumentumok elemzése Excel-formátumban
 
 [!include[banner](../includes/banner.md)]
 
 Lehetőség van Elektronikus jelentési (ER) formátumok kialakítására olyan bejövő Microsoft Excel-fájlok elemzésére, amelyek az adatokat Microsoft Excel-munkafüzetekben jelenítik meg (XLSX formátumú fájlok). Az ezekből a fájljokból származó tartalmakat felhasználhatja az alkalmazásadatok frissítésére. Ez hasznos a következő esetekben:
 
--   Egy új modell és formátum kialakítása, amelyet futásidőben akar tesztelni. Ebben az esetben Excel szimulálni fogja az aktuális alkalmazás adatait.
--   Az Excelben való alkalmazáson túlmenően is kezelhet adatokat, és meghatározott jelentés benyújtásához importálhatja ezeket az adatokat.
+- Egy új modell és formátum kialakítása, amelyet futásidőben akar tesztelni. Ebben az esetben Excel szimulálni fogja az aktuális alkalmazás adatait.
+- Az Excelben való alkalmazáson túlmenően is kezelhet adatokat, és meghatározott jelentés benyújtásához importálhatja ezeket az adatokat.
 
 További tudnivalók ezzel a funkcióval kapcsolatban: játssza le a következő feladat útmutatókat **ER adatimportálás Microsoft Excel-fájlból (1. rész: tervezési formátum)** és **ER adatimportálás Microsoft Excel-fájlból (2. rész: adatok importálása)** (megtalálható itt: 7.5.4.3 informatikai szolgáltatási/megoldási összetevők megszerzése/fejlesztése, (10677) üzleti folyamat). Ezek a feladat útmutatók végigvezetik azon, hogy kell a bejövő Excel-fájlt elemezni, amikor az ER formátumot használja adatok importálására a bejövő dokumentumból, illetve ezekkel frissíti az alkalmazásadatokat. A feladat útmutatók fájljait letöltheti itt: [Microsoft letöltőközpont](https://go.microsoft.com/fwlink/?linkid=874684).
 
 A fent említett feladat útmutatók befejezéséhez töltse le a következő fájlokat.
 
-| Tartalom leírása                        | Fájl                                                                       |
----------------------------------------------|----------------------------------------------------------------------------|
-| Bejövő fájl XLSX formátumban - sablon   | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)  |
-| Bejövő fájl XLSX formátumban - mintaadatok| [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
+| Tartalom leírása                         | Fájl                                                                       |
+|---------------------------------------------|----------------------------------------------------------------------------|
+| Bejövő fájl XLSX formátumban - sablon    | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
+| Bejövő fájl XLSX formátumban - mintaadatok | [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
 Ha még nem játszotta le a következő feladat útmutatót [ER létrehozása - szükséges konfigurációk a külső fájlból történő adatimportáláshoz](./tasks/er-required-configurations-import-data.md) a jelenlegi Dynamics 365 for Finance and Operation alkalmazásban, töltse le a következő fájlt.
 
-| Tartalom leírása                        | Fájl                                                                       |
----------------------------------------------|----------------------------------------------------------------------------|
-| ER modell konfigurációja                     | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266)            |
-
+| Tartalom leírása    | Fájl                                                            |
+|------------------------|-----------------------------------------------------------------|
+| ER modell konfigurációja | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
 

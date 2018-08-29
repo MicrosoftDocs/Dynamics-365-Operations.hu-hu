@@ -1,5 +1,5 @@
 ---
-title: "Munkaidő és jelenlét"
+title: "A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban"
 description: "Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a Microsoft Dynamics 365 for Retail programot."
 author: aamirallaqaband
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d5672579c1e2d51e4b6494a1e86e3606c09a93a2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Kiskereskedelmi munkaidő és jelenlét
+# <a name="time-and-attendance-management-in-retail"></a>A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban
 
 [!include [banner](includes/banner.md)]
 
@@ -43,9 +43,9 @@ Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhat
 
 ### <a name="plan-worker-schedules"></a>Tervezze meg a dolgozói beosztásokat
 
--   Alkalmazzon profilokat a munkatervező segítségével. További tudnivalókért: <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
+-   Alkalmazzon profilokat a munkatervező segítségével. További tájékoztatást a következő témakörben talál: <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
-A konfigurációs lépésekkel kapcsolatos információkért látogassa meg a <https://technet.microsoft.com/en-us/library/aa496971.aspx> honlapot.
+A konfigurálás lépéseivel kapcsolatos további tudnivalókat lásd: <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
 ### <a name="retail-specific-configuration"></a>Kiskereskedelem-specifikus konfiguráció
 
@@ -135,7 +135,7 @@ A Dynamics 365 for Retail-felhasználó követi a munkafolyamatot, hogy kiszámo
 -   Szállítmány kicsekkolás
 -   Távollét regisztrálása
 
-Az idő feldolgozásáról és a jelenléti regisztrációkról szóló további információkért látogassa meg a következő oldalt: <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+Az idő és jelenlét feldolgozásával kapcsolatban az alábbi témakör tartalmaz további tájékoztatást: <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
 
 
 

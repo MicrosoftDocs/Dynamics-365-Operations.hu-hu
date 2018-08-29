@@ -1,5 +1,5 @@
 ---
-title: "Generált fájlok felosztása méret és tartalommennyiség alapján"
+title: "Generált XML-fájlok felosztása méret és tartalommennyiség alapján"
 description: "Ez a témakör arról tartalmaz tájékoztatást, hogy a fájl mérete és tartalomelem mennyisége alapján hogy lehet felosztani a létrehozott fájlokat."
 author: NickSelin
 manager: AnnBe
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: afdf5b2596af7641182be50ced8159967164b115
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 0f13194575e2f19f585f09ffad99144c9a9fc3b1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -49,5 +49,4 @@ Az ezzel a funkcióval kapcsolatos további tudnivalókért játssza le az **ER 
 [Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md)
 
 [Képletszerkesztő elektronikus jelentésekhez](general-electronic-reporting-formula-designer.md)
-
 

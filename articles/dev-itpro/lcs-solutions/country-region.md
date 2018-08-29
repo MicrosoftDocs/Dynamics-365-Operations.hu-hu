@@ -3,7 +3,7 @@ title: "Honosítási és szabályozó funkciók"
 description: "Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország-és régióspecifikus funkciókról."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 07/18/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4485bd6442d186e5a6bac90e0a9041566e2e26d0
-ms.openlocfilehash: efa82abcd25101fc7be772c32e6c4fee7976d4bb
+ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
+ms.openlocfilehash: 787ce11701a9df951b38af5209206902d7c98019
 ms.contentlocale: hu-hu
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -147,33 +147,9 @@ Az alábbi szakaszok országonként/területenként tartalmaznak erőforrásokat
 - [Áfabevallás](../../financials/localizations/emea-vat-reporting.md)
 - [Elszámolási tranzakciók megtekintése](../../financials/localizations/emea-transactions-settlement-form.md)
 
-### <a name="france"></a>Franciaország
--   [Számla- és bizonylatszámok kronológiai sorrendben](../../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
--   [Különbözeti értékcsökkenés Franciaország esetében](../../financials/localizations/emea-fra-derogatory-depreciation.md)
--   [NAF-kódok és siret-számok](../../financials/localizations/emea-fra-naf-codes-siret-numbers.md)
--   [Lejárt határidejű vevői kifizetések kötbérei Franciaországban](../../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md)
--   [Egyösszegű visszaigénylés szövegének nyomtatása a vevői számlára](../../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
--   [RB/SL értékcsökkenés](../../financials/localizations/emea-fra-rbsl-depreciation.md)
-
-#### <a name="public-sector"></a>Állami szektor
-   -   [Az állami szektor kötelezettségei](../../financials/localizations/emea-fra-commitments-public-sector.md)
-   -   [Mandatok a franciaországi állami szektorban](../../financials/localizations/emea-fra-mandats-de-paiement.md)
-   -   [Beszerzés és forrás](../../financials/localizations/emea-fra-procurement-sourcing-public-sector.md)
-   -   [Állami szektor könyvelése](../../financials/localizations/emea-fra-public-sector-accounting.md)
-   -   [Titres de recette](../../financials/localizations/emea-fra-titres-de-recette-public-sector.md)
-   -   [Szállítói számlák visszatartott kifizetése](../../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
-
-### <a name="germany"></a>Németország
--   [Értékcsökkenés a további beszerzéseken](../../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
--   [Német könyvvizsgálati fájl (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
--   [Német naplólista jelentése](../../financials/localizations/emea-deu-journal-list-report.md)
--   [Külön címke nyomtatása értékesítésből származó jóváírásoknak](../../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
-
-### <a name="hungary"></a>Magyarország
-
--   [Értékcsökkenés módjai tárgyi eszközöknél](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
--   [Tárgyi eszköz áthelyezése készletbe](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
--   [Kis értékű tárgyi eszközök](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+### <a name="francefinancialslocalizationsfrancemd"></a>[Franciaország](../../financials/localizations/france.md)
+### <a name="germanyfinancialslocalizationsgermanymd"></a>[Németország](../../financials/localizations/germany.md)
+### <a name="hungaryfinancialslocalizationshungarymd"></a>[Magyarország](../../financials/localizations/hungary.md)
 
 ### <a name="india"></a>India
 
@@ -190,18 +166,7 @@ Az alábbi szakaszok országonként/területenként tartalmaznak erőforrásokat
     - [Adóküszöbértékekre vonatkozó GYIK](../../financials/localizations/apac-ind-tax-thresholds.md)
     - [Adómotor kiterjesztése](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
-### <a name="italy"></a>Olaszország
-
--   [Olasz tiltólistás jelentés](../../financials/localizations/emea-ita-black-list-report.md)
--   [Áfabevallások részletei](../../financials/localizations/emea-ita-vat-statements-details.md)
--   [Tranzakciók kompetenciadátuma](../../financials/localizations/emea-ita-competence-date.md)
--   [Tárgyi eszközök kézi értékcsökkenése](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
--   [Modello 770](../../financials/localizations/emea-ita-modello770.md)
--   [Szállítólevél dátumigazolása az olaszországi számlákon](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
--   [Olasz áfakönyvek](../../financials/localizations/emea-ita-fiscal-books.md)
--   [Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
--   [Adóelőleg](../../financials/localizations/emea-ita-withholding-tax.md)
-
+### <a name="italyfinancialslocalizationsitalymd"></a>[Olaszország](../../financials/localizations/italy.md)
 ### <a name="japan"></a>Japán
 
 -  [Szállítók által fedezett banki kifizetési díjak](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
@@ -216,19 +181,8 @@ Az alábbi szakaszok országonként/területenként tartalmaznak erőforrásokat
 -  [Szállító kifizetése váltó kibocsátásával](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
 -  [Fokozatos adóelőleg számítása](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
 
-### <a name="latvia"></a>Lettország
-
--   [Tárgyieszköz-könyvelés adószámítási célokra](../../financials/localizations/emea-lva-fixed-assets-accounting.md)
--   [Tárgyi eszközök helyváltozásának nyomon követése](../../financials/localizations/emea-lva-fixed-assets-location-fields-change.md)
--   [Számla és szállítólevél számozása](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [Természeti erőforrások adójáról szóló jelentés](../../financials/localizations/emea-lva-tax-natural-resources.md)
--   [Áfabevallás részletei](../../financials/localizations/emea-lva-vat-statement-details.md)
-
-### <a name="lithuania"></a>Litvánia
-
--   [Tárgyi eszköz javítási kimutatása](../../financials/localizations/emea-ltu-fixed-asset-repair-statement.md)
--   [Számla és szállítólevél számozása](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
--   [Áfabevallás részletei](../../financials/localizations/emea-ltu-vat-statement-details.md)
+### <a name="latviafinancialslocalizationslatviamd"></a>[Lettország](../../financials/localizations/latvia.md)
+### <a name="lithuaniafinancialslocalizationslithuaniamd"></a>[Litvánia](../../financials/localizations/lithuania.md)
 
 ### <a name="mexico"></a>Mexikó
 
@@ -242,29 +196,9 @@ Az alábbi szakaszok országonként/területenként tartalmaznak erőforrásokat
 
 -   [Áruk és szolgáltatások adója (GST)](../../financials/localizations/apac-mys-gst.md)
 
-### <a name="netherlands"></a>Hollandia
-
--   [Számlakibocsátás határideje](../../financials/localizations/emea-invoice-issue-deadline.md)
-
-### <a name="norway"></a>Norvégia
-
--   [Pénztárgépek Norvégia esetében](../../retail/localizations/emea-nor-cash-registers.md)
--   [Készpénzjegyzékek telepítésére vonatkozó irányelvek Norvégia esetében](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
--   [Nets importálási formátum](../../financials/localizations/emea-nor-nets-import-format.md)
--   [Áfabevallás](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
-
-### <a name="poland"></a>Lengyelország
-
--   [Sorengedmények kiszámítása az egységár alapján](../../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
--   [Javítással kapcsolatos megjegyzések](../../financials/localizations/emea-pol-correction-notes.md)
--   [Értékesítési számlamásolatok számozása](../../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md)
--   [Tárgyi eszközök értékcsökkenése](../../financials/localizations/emea-pol-fixed-assets-depreciation.md)
--   [Tárgyi eszközök értékesítése](../../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md)
--   [Visszaküldhető csomagolás](../../financials/localizations/emea-pol-returnable-packages.md)
--   [Áfajelentések](../../financials/localizations/emea-pol-sales-tax-reports.md)
--   [Standard könyvvizsgálati fájl (SAF)](../../financials/localizations/emea-pol-standard-audit-file-saf.md)
--   [Forgalom- és mérlegkimutatás](../../financials/localizations/emea-pol-turnover-balances-statement.md)
-
+### <a name="netherlandsfinancialslocalizationsnetherlandsmd"></a>[Hollandia](../../financials/localizations/netherlands.md)
+### <a name="norwayfinancialslocalizationsnorwaymd"></a>[Norvégia](../../financials/localizations/norway.md)
+### <a name="polandfinancialslocalizationspolandmd"></a>[Lengyelország](../../financials/localizations/poland.md)
 ### <a name="saudi-arabia"></a>Szaúd-Arábia
 
 -   [Zakat-jelentés](../../financials/localizations/emea-sau-zakat-reporting.md)
@@ -273,29 +207,9 @@ Az alábbi szakaszok országonként/területenként tartalmaznak erőforrásokat
 
 -   [A szingapúri GST-05 jelentés mellékletének létrehozása](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
 
-### <a name="spain"></a>Spanyolország
-
--   [Spanyol váltó](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
--   [A készpénzfizetési engedményt a számlaparaméterben alkalmazza a rendszer](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
--   [Feltételes áfa](../../financials/localizations/emea-esp-conditional-sales-tax.md)
--   [Tárgyi eszköz átértékelési csoportjai](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
--   [Közösségi áfa](../../financials/localizations/emea-esp-intra-community-vat.md)
--   [Egyszeri vevők](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
--   [Csekkek nyomtatása a spanyol elrendezésben](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
--   [Spanyol kötelezvény beállításai](../../financials/localizations/emea-esp-promissory-note-options.md)
--   [Beszerzési és értékesítési ciklusok](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
--   [Speciális bevitelek és nyitólapok](../../financials/localizations/emea-esp-opening-sheets-spain.md)
--   [Számlaszám pénzügyi adatainak használata](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
-
-### <a name="sweden"></a>Svédország
-
--   [Kifizetési formátumok importálása Svédország esetében](../../financials/localizations/emea-swe-payment-formats-import.md)
--   [Pénztárgépek Svédország esetében](../../retail/localizations/emea-swe-cash-registers.md)
-
-### <a name="switzerland"></a>Svájc
-
--   [ESR vevői importkifizetések](../../financials/localizations/emea-che-esr-customer-payments-import.md)
-
+### <a name="spainfinancialslocalizationsspainmd"></a>[Spanyolország](../../financials/localizations/spain.md)
+### <a name="swedenfinancialslocalizationsswedenmd"></a>[Svédország](../../financials/localizations/sweden.md)
+### <a name="switzerlandfinancialslocalizationsswitzerlandmd"></a>[Svájc](../../financials/localizations/switzerland.md)
 ### <a name="thailand"></a>Thaiföld
 
 -   [Készletkarton-jelentések](../../financials/localizations/apac-tha-stock-card-reports.md)
@@ -303,10 +217,7 @@ Az alábbi szakaszok országonként/területenként tartalmaznak erőforrásokat
 -   [Nem realizált áfa](../../financials/localizations/apac-tha-unrealized-vat.md)
 -   [Adóelőleg](../../financials/localizations/apac-tha-withholding-tax.md)
 
-### <a name="united-kingdom"></a>Egyesült Királyság
-
--   [Építőipari séma – Egyesült Királyság](../../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
-
+### <a name="united-kingdomfinancialslocalizationsunited-kingdommd"></a>[Egyesült Királyság](../../financials/localizations/united-kingdom.md)
 ### <a name="united-states"></a>Amerikai Egyesült Államok
 
 -   [1099-es űrlap az állami szektorban](../../financials/localizations/noam-usa-form-1099-public-sector.md)   

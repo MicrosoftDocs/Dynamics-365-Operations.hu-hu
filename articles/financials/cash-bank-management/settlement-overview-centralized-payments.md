@@ -1,16 +1,16 @@
 ---
 title: "Kiegyenlítés áttekintése (központosított kifizetések)"
-description: "Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és kezelhetnek kifizetéseket, egy jogi személy használatával, amely minden kifizetést kezel. Így nem szükséges ugyanazt a tranzakciót több jogi személyhez bevinni, valamint a fizetési javaslat folyamatának, a kiegyenlítés folyamatának, a nyitott tranzakciók szerkesztésének és a lezárt tranzakciók szerkesztésének leegyszerűsítésével időt takarít meg a központosított kifizetéseknél."
+description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations központi kifizetéseinek kiegyenlítéseit mutatja be"
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b76b141531acfc2d1d7553a3e7a13f165373921b
+ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
+ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -35,8 +35,8 @@ Olyan szervezetek, amelyek több jogi személyt tartalmaznak létrehozhatnak és
 Amikor egy vevői vagy szállítói kifizetést az egyik jogi személynél visznek be, és egy másik jogi személynél bevitt számlával egyenlítenek ki, mindegyik jogi személyhez automatikusan létrejön a megfelelő kiegyenlítés, valamint a mindkét irányú esedékességet kifejező tranzakciók. A tranzakcióban érintett mindegyik számla-kifizetés kombinációhoz kiegyenlítési rekord jön létre. Minden egyes kiegyenlítési rekord új bizonylatszámot kap, amelynek alapja a kifizetési bizonylat számlaszáma, amely a **Kinnlevőségek paraméterei** lapon található a vevők esetén, illetve a **Kötelezettségek paraméterei** lapon a szállítók esetén. 
 
 Ha készpénzfizetési engedményekhez, devizaátértékelésekhez, fillérkülönbözetekhez, túlfizetésekhez vagy alulfizetésekhez további kiegyenlítési rekordok jönnek létre, ezeket a kifizetési vagy számlatranzakció későbbi dátumához rendeli a rendszer hozzá. Ha a kiegyenlítésre a kifizetés feladása után kerül sor, a kiegyenlítési rekordok a **Nyitott tranzakciók kiegyenlítése** lapon megadott dátumot használják a kiegyenlítés feladásaként.
-Feladási típusok, tranzakciótípusok és alapértelmezett leírások
-----------------------------------------------------------
+
+## <a name="posting-types-transaction-types-and-default-descriptions"></a>Feladási típusok, tranzakciótípusok és alapértelmezett leírások
 
 A vállalatközi kiegyenlítési bizonylatok tranzakciói a vállalatközi kiegyenlítés feladási típust, a vállalatközi vevői kiegyenlítési és a vállalatközi szállítói kiegyenlítési tranzakciótípusokat használják. A tranzakciótípusra vonatkozó adatokat az **Alapértelmezett leírások** lapon állíthatja be. 
 
@@ -50,8 +50,7 @@ Egyvállalatos és vállalatközi kiegyenlítéseknél a következő típusú tr
 
 A vállalatközi kiegyenlítési bizonylatokhoz alapértelmezett leírásokat is meghatározhat.
 
-<a name="currency-exchange-gains-or-losses"></a>Árfolyamnyereségek vagy -veszteségek
----------------------------------
+## <a name="currency-exchange-gains-or-losses"></a>Árfolyamnyereségek vagy -veszteségek
 
 A vevői vagy szállítói tranzakciókhoz használt árfolyamot a tranzakcióval együtt tárolja a rendszer. A realizált árfolyamveszteség- vagy nyereség feladása a számlázó vagy a kifizető jogi személynek történik attól függően, hogy a kifizető jogi személynél a **Vállalatközi könyvelés** lapon az **Árfolyamnyereség- vagy -veszteség feladása** mezőjében milyen beállítás van megadva. Az alábbi példákban a következő pénznemek szerepelnek:
 -   Fizetés könyvelési pénzneme: EUR
@@ -59,7 +58,7 @@ A vevői vagy szállítói tranzakciókhoz használt árfolyamot a tranzakcióva
 -   A kifizetési tranzakció pénzneme: DKK
 -   A számlatranzakció pénzneme: CAD
 
-#### <a name="currency-calculations"></a>Árfolyamszámítások
+### <a name="currency-calculations"></a>Árfolyamszámítások
 
 Amikor az egyik jogi személynél bevitt számla kiegyenlítése egy másik jogi személynél bevitt kifizetéssel történik, a kifizetési tranzakció pénznemének (DKK) átváltása három lépésben történik:
 1.  Átváltás a kifizetés könyvelési pénznemére (EUR) a számlázó jogi személynek a kifizetés napján érvényes árfolyamának alkalmazásával.
@@ -75,17 +74,15 @@ Amikor a **Nyitott tranzakciók kiegyenlítése** lapot olyan kifizetési napló
 
 Az így létrejövő kifizetési összeget a **Nyitott tranzakciók kiegyenlítése** lap bezárásakor a rendszer átviszi a kifizetési napló sorára.
 
-#### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Az eltérő könyvelési pénznemekből adódó nyereség vagy veszteség feladása
+### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Az eltérő könyvelési pénznemekből adódó nyereség vagy veszteség feladása
 
 Amennyiben árfolyamnyereség vagy -veszteség áll fenn, a nyereség vagy a veszteség feladása ahhoz a jogi személyhez történik, amelyet az **Árfolyamnyereség- vagy -veszteség feladása** mezőben adott meg a **Vállalatközi könyvelés** lapon kifizetés szerinti jogi személyként. A nyereség vagy veszteség összegét a rendszer átalakítja a feladás célját jelentő jogi személy könyvelési pénznemére az adott jogi személyhez megadott árfolyam alkalmazásával.
 
-<a name="cash-discounts"></a>Készpénzfizetési engedmények
---------------
+## <a name="cash-discounts"></a>Készpénzfizetési engedmények
 
 A vállalatközi kiegyenlítési folyamat során létrejövő készpénzfizetési engedmények feladása a számlázó vagy a kifizető jogi személynek történik attól függően, hogy a kifizető jogi személynél a **Vállalatközi könyvelés** lapon a **Készpénzfizetési engedmény feladása** mezőben milyen beállítás van megadva. A számlázó jogi személynél létrejön a megfelelő kiegyenlítési tranzakció.
 
-<a name="overpayments-and-underpayments"></a>Túlfizetések és alulfizetések
-------------------------------
+## <a name="overpayments-and-underpayments"></a>Túlfizetések és alulfizetések
 
 A túlfizetések, az alulfizetések és a fillérkülönbözetek tűrését a túlfizetések esetében a kifizető jogi személy, az alulfizetések esetében a számlázó jogi személy alapján határozza meg a rendszer. A feladáshoz használt számlát vevők esetében a **Kinnlevőségek paraméterei** lap **Készpénzfizetési engedmény adminisztrációja** mezőjének beállítása, szállítók esetében a **Kötelezettségek paraméterei** lap **Készpénzfizetési engedmény adminisztrációja** mezőjének beállítása határozza meg.
 
@@ -112,9 +109,4 @@ Szállítói kifizetések esetében a kifizető jogi személy a jogi személytő
 
 ## <a name="withholding-tax"></a>Adóelőleg
 A számlához társított szállítókód alapján lehet meghatározni, hogy kell-e adóelőleget számítani. Ha az adóelőleg érvényes, a számlához társított jogi személlyel együtt számítja ki a rendszer. A jogi személyek különféle pénznemeket használnak, a rendszer a használt számlához társított jogi személy árfolyamát használja.
-
-
-
-
-
 

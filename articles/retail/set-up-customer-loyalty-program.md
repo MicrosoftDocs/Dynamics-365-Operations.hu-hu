@@ -1,5 +1,5 @@
 ---
-title: "A vásárlói hűségprogramok beállítása"
+title: "Vásárlói hűségprogramok beállítása"
 description: "Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók."
 author: scott-tucker
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fbedaa33e7cfd717a074828e47d44473d466ba5a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 8aa29282f80870b93d119c095bb95c3bcfbfc682
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>A vásárlói hűségprogramok beállítása
+# <a name="set-up-customer-loyalty-programs"></a>Vásárlói hűségprogramok beállítása
 
 [!include [banner](includes/banner.md)]
 

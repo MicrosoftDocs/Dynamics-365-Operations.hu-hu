@@ -1,5 +1,5 @@
 ---
-title: "Rendelési értesítések megjelenítése a pénztárnál"
+title: "Rendelési értesítések megjelenítése a pénztárnál (POS)"
 description: "Ez a témakör ismerteti, hogyan lehet engedélyezni a rendelési értesítéseket a pénztárban és az értesítési keretrendszerben. Idővel a fejlesztők kiterjeszthetik ezeket az értesítéseket további műveletekre a rendelés teljesítése műveletek mellett."
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="show-order-notifications-in-the-point-of-sale"></a>Rendelési értesítések megjelenítése a pénztárnál
+# <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Rendelési értesítések megjelenítése a pénztárnál (POS)
 
 [!include [banner](includes/banner.md)]
 

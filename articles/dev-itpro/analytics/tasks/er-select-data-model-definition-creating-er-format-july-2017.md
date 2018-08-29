@@ -1,5 +1,5 @@
 --- 
-title: "Adatmodell definíciójának kiválasztása az elektronikus jelentéskészítés (ER) formátumának létrehozása közben"
+title: "Adatmodell-definíciók kiválasztása formátumok létrehozásakor"
 description: "A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 70d928b0f0807731a5f96ef5497fb6060fbfebf5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a>Adatmodell definíciójának kiválasztása az elektronikus jelentéskészítés (ER) formátumának létrehozása közben
+# <a name="select-data-model-definitions-when-you-create-formats"></a>Adatmodell-definíciók kiválasztása formátumok létrehozásakor
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

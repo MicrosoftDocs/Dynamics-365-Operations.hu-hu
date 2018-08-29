@@ -1,5 +1,5 @@
 --- 
-title: "Formátum futtatása számláláshoz és összegzéshez"
+title: "Elektronikus jelentésformátumok (ER) futtatása számláláshoz és összegzéshez"
 description: "Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat egy elektronikus jelentési (ER) formátumot számlálás és összegzés céljára a már létrehozott szöveges kimeneti adatok alapján."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e3569e48bcc063b2423a60038732e8e53dbea2cb
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c6d309416a3a0c4da07a76c90246f492585deef5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="run-the-format-to-do-counting-and-summing"></a>Formátum futtatása számláláshoz és összegzéshez
+# <a name="run-electronic-reporting-er-formats-to-do-counting-and-summing"></a>Elektronikus jelentésformátumok (ER) futtatása számláláshoz és összegzéshez
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

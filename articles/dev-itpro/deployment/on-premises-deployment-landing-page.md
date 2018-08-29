@@ -1,9 +1,9 @@
 ---
-title: "On-premises telepítés"
+title: "On-premises telepítések kezdőlapja"
 description: "Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat."
 author: kfend
 manager: AnnBe
-ms.date: 03/15/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: aba11ae99393eb0d8c3e1df2276faa95ad831d29
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="on-premises-deployment-home-page"></a>On-premises telepítés kezdőlap
+# <a name="on-premises-deployments-home-page"></a>On-premises telepítések kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
@@ -61,6 +61,6 @@ Telepítheti a Microsoft Dynamics 365 for Finance and Operations, Enterprise alk
 - [Hibaelhárítás – Dynamics 365 for Finance and Operations, on-premises](troubleshoot-on-prem.md)
 - [Az on-premises telepítéseknél nem elérhető funkciók](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Elavult szolgáltatások](../migration-upgrade/deprecated-features.md)
-- [Szoftver életciklus-házirend és kiadások jegyzéke](../migration-upgrade/versions-update-policy.md)
+- [A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások](../migration-upgrade/on-prem-version-update-policy.md)
  
 

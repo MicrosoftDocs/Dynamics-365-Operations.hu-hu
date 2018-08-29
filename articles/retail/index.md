@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 for Retail
+title: "Üdvözöljük a Dynamics 365 for Retail rendszerben!"
 description: "A Dynamics 365 for Retail kezdőlapja"
 author: josaw1
 manager: AnnBe
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 164932ac3bc701696f5c0b08c5e2d585d9a8ba6a
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: fbdcfc747186e2d8f55ff294a477226a83fbe1b2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -48,7 +48,7 @@ Az ügyfelek szükségletei állandóan változnak. A vásárlási szokásokban 
 Továbbá, az ügyfelek számos opcióval rendelkeznek arra, hogy a számukra szükséges dolgot beszerezzék, az általuk kívánt időben és áron. Az ügyfelek hűségének megtartása végett a vásárlást megkönnyítő, személyre szabott értesítések és ajánlatok is alkalmazhatóak.
 
 ## <a name="hardware-and-peripherals"></a>Hardverek és perifériák
-A Retail Modern értékesítési pont (MPOS) és a Cloud POS sokféle hardveres perifériát képes használni. Az MPOS és a Cloud POS egyaránt számos felületet és telepítési opciót kínál a különféle üzleti forgatókönyvekhez.
+A Retail Modern point of sale (MPOS) és a Cloud POS sokféle hardveres perifériát képes használni. Az MPOS és a Cloud POS egyaránt számos felületet és telepítési opciót kínál a különféle üzleti forgatókönyvekhez.
 
 A Retail rendszer Periféria-szimulátora virtuális periféria-szimulátort és POS-szimulátort tartalmaz. A virtuális periféria-szimulátor elsősorban azon forgatókönyvek tesztelését támogatja, amelyekhez általában fizikai POS periférikus eszközök szükségesek. A POS szimulátor lehetővé teszi a fizikai periférikus eszközök kompatibilitásának tesztelését a Retail rendszerrel, a POS kliens telepítése nélkül.
 

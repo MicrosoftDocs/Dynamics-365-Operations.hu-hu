@@ -12,7 +12,7 @@
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Felhőalapú és helyszíni szolgáltatások összehasonlítása
               href: get-started/cloud-prem-comparison.md
-            - name: Telepítési beállítás kiválasztása
+            - name: Telepítési beállítások
               href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Felhőbeli telepítés
@@ -23,7 +23,7 @@
                   href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/fin-and-ops/toc.json
                 - name: Helyszíni telepítések rendszerkövetelményei
                   href: get-started/system-requirements-on-prem.md
-                - name: Helyszíni telepítések raktárkezelése
+                - name: Helyszíni telepítések raktárkezelésének konfigurálása
                   href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
             - name: Normál és célzott platformkiadások
               href: get-started/public-preview-releases.md
@@ -44,11 +44,11 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: A helyszíni telepítéseknél nem elérhető funkciók
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations 8.0 (2018. április)
+            - name: 'Finance and Operations, 8.0 verzió (2018. április)'
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (2018. március)
               href: get-started/whats-new-platform-update-15.md
-            - name: A 7.2 helyszíni telepítése a 12. platformfrissítéssel (2018. március)
+            - name: 'A Finance and Operations, Enterprise edition 7.2 helyszíni telepítései a platform update 12-vel (2018. március)'
               href: get-started/whats-new-LBD-PU12-App72.md
             - name: 'Finance and Operations, Enterprise edition 7.3'
               href: get-started/whats-new-application-7.3-update.md
@@ -82,7 +82,7 @@
               href: get-started/whats-new-changed-application-version-7-0-1-may-2016.md
             - name: Platform update 1 (2016. május)
               href: get-started/whats-new-changed-platform-version-7-1-may-2016.md
-            - name: Dynamics AX 7.0 (2016. február)
+            - name: AX 7.0 (2016. február)
               href: get-started/whats-new-changed-7-0-february-2016.md
             - name: Frissített feladat-útmutatók
               items:
@@ -98,9 +98,9 @@
                   href: get-started/new-task-guides-available-february-2016.md
         - name: Ismerje meg a felhasználói felületet
           items:
-            - name: Hozzáférhetőségi funkciói
+            - name: Hozzáférhetőségi funkciók
               href: get-started/accessibility-features.md
-            - name: Ügyfélfelület GYIK
+            - name: Ügyfél GYIK
               href: get-started/client-faq.md
             - name: Műveletkeresés
               href: get-started/action-search.md
@@ -108,23 +108,23 @@
               href: get-started/advanced-filtering-query-options.md
             - name: Munkaterületek konfigurálása és szűrése
               href: get-started/configure-filter-workspaces.md
-            - name: Oldalak párhuzamos megjelenítése a Megnyitás új ablakban ikon használatával
+            - name: Oldalak párhuzamos megjelenítése a Megnyitás új ablakban funkció használatával
               href: get-started/display-pages-side-by-side.md
             - name: Billentyűparancsok
               href: get-started/shortcut-keys.md
-            - name: A fejléc vagy embléma módosítása
+            - name: A jogi személyekhez tartozó szalagcímek vagy emblémaképek módosítása
               href: get-started/tasks/change-banner-or-logo.md
             - name: Navigációs keresés
               href: get-started/navigation-search.md
             - name: A felhasználói élmény testreszabása
               href: get-started/personalize-user-experience.md
-            - name: Egyéni mezők
+            - name: Egyéni mezők létrehozása és felhasználása
               href: get-started/user-defined-fields.md
-            - name: PowerApps beágyazása
+            - name: PowerApps alkalmazások beágyazása
               href: get-started/embed-power-apps.md
             - name: Információk megtalálása keresésekkel
               href: get-started/use-lookups-to-find-information.md
-            - name: A munkamenet dátumának módosítása
+            - name: Munkamenet dátumának módosítása
               href: organization-administration/tasks/change-date-session.md
             - name: Felhasználó preferált időzónájának beállítása
               href: organization-administration/tasks/set-users-preferred-time-zone.md
@@ -132,9 +132,9 @@
               href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json
         - name: Dokumentáció elolvasása és futtatása
           items:
-            - name: Súgó áttekintése
+            - name: Súgórendszer
               href: get-started/help-overview.md
-            - name: Súgó összekapcsolása
+            - name: A Súgórendszer csatlakoztatása
               href: get-started/help-connect.md
             - name: Mezőleírások megtekintése és exportálása
               href: get-started/view-export-field-descriptions.md
@@ -146,38 +146,38 @@
                   href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/fin-and-ops/toc.json
             - name: Fogalomtár
               href: get-started/glossary.md
-        - name: Dynamics 365 for Finance and Operations videók
+        - name: Videók a Finance and Operations rendszerhez
           href: get-started/videos.md
-    - name: A végrehajtási életciklus megértése
+    - name: Életciklus-kezelése bevezetése
       href: imp-lifecycle/implementation-lifecycle.md
       items:
         - name: Finance and Operations-architektúra
           href: imp-lifecycle/architecture-overview.md
-        - name: Microsoft FastTrack for Dynamics 365
+        - name: Microsoft FastTrack a Finance and Operations rendszerhez
           href: get-started/fasttrack-dynamics-365-overview.md
-        - name: Felvétel
+        - name: Megvalósítási projekt felvétele
           href: imp-lifecycle/onboard.md
-        - name: Előkészítés az éles indításra
+        - name: Felkészülés az éles üzemre váltásra
           href: imp-lifecycle/prepare-go-live.md
-        - name: Éles GYIK
+        - name: Éles indítás GYIK
           href: imp-lifecycle/go-live-faq.md
         - name: Szolgáltatási kérelem benyújtása
           href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-        - name: 'Előfizetések, LCS-projektek és az Active Directory Azure bérlői által feltett gyakori kérdések'
+        - name: 'Előfizetésekhez, LCS-projektekhez és Azure AD bérlőkhöz kapcsolódó GYIK'
           href: get-started/subscription-overview.md
         - name: Környezetek áthelyezése az adatközpontok között
           href: get-started/move-environments-data-center.md
         - name: Licencek áthelyezése a szerződéstípusok között
           href: get-started/move-licenses-between-agreement-types.md
-        - name: LCS végrehajtási projekt áthelyezése egy másik Azure Active Directory-bérlőhöz
+        - name: LCS végrehajtási projektek áthelyezése másik Azure AD bérlőkhöz
           href: get-started/move-lcs-implementation-project-tenant.md
-        - name: Több LCS-projekt és termelési környezet végrehajtása ugyanazon az Azure Active Directory-bérlőn
+        - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD bérlőnél
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: Megfelelés
       items:
-        - name: Naplórendszabályok
+        - name: Könyvvizsgálati irányelvszabályok
           href: ../financials/general-ledger/audit-policy-rules.md
-        - name: Naplórendmegsértések és esetek
+        - name: Könyvvizsgálati irányelvsértések és esetek
           href: ../financials/general-ledger/audit-policy-violations-cases.md
         - name: Naplózási házirendek meghatározása a forrásbizonylatok számára
           href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
@@ -345,10 +345,25 @@
                       href: ../supply-chain/sales-marketing/field-service-product.md
                     - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel
                       href: ../supply-chain/sales-marketing/field-service-work-order.md
-                    - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódő számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
+                    - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
                       href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Külső webszolgáltatások használata
-              href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+                - name: Project Service Automation integráció konfigurálása
+                  href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
+                  items:
+                    - name: Project Service Automation integráció paraméterei
+                      href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
+                    - name: Projektszerződések és projektek szinkronizálása
+                      href: ../financials/project-management/project-contracts-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Projektfeladatok szinkronizálása
+                      href: ../financials/project-management/project-tasks-template.md?toc=/fin-and-ops/toc.json
+                    - name: Projektköltség-kategóriák szinkronizálása
+                      href: ../financials/project-management/project-categories-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Projektbecslések szinkronizálása a projektelőrejelzésekkel
+                      href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
+                    - name: A projekt tényleges adatainak szinkronizálása a projektintegrációs naplóval
+                      href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
+                - name: Külső webszolgáltatások használata
+                  href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
     - name: Adatkezelés
       href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
@@ -357,7 +372,7 @@
           items:
             - name: Konfigurációs adatprojektek
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurációs adatok másolása vállalatok között
+            - name: Konfigurációs adatok másolása vállalatok vagy jogi személyek között
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Konfigurációs adatcsomagok (csak 2017 júliusi kiadás esetén)
@@ -468,6 +483,8 @@
                   href: ../financials/cash-bank-management/configure-settlement.md
                 - name: Szállítói kifizetések munkaterület
                   href: ../financials/accounts-payable/vendor-payments-workspace.md
+                - name: Adja meg a keresztárfolyamot
+                  href: ../financials/accounts-payable/specify-cross-rate.md
                 - name: Szállítói kifizetési díjak meghatározása
                   href: ../financials/accounts-payable/tasks/define-vendor-payment-fees.md
                 - name: Szállítói kifizetési feltételek meghatározása
@@ -588,11 +605,11 @@
         - name: Költségvetés készítése
           href: ../financials/budgeting/budgeting-overview.md
           items:
-            - name: 'Költségvetés-tervezés áttekintése '
+            - name: Költségvetés-tervezés áttekintése
               href: ../financials/budgeting/budget-planning-overview-configuration.md
-            - name: 'Költségvetés-ellenőrzés áttekintése '
+            - name: Költségvetés-ellenőrzés áttekintése
               href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: 'Költségvetés készítésének áttekintése '
+            - name: Költségvetés készítésének áttekintése
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Beosztás előre jelzése
               href: ../financials/budgeting/position-forecasting.md
@@ -622,7 +639,7 @@
             - name: Készpénzfizetési engedmények túlfizetések esetére
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
             - name: Kiegyenlítés – áttekintés
-              href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
+              href: ../financials/cash-bank-management/settlement-overview.md
             - name: Kiegyenlítés áttekintése (központosított kifizetések)
               href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
             - name: Akkreditívek
@@ -700,9 +717,11 @@
               href: ../financials/general-ledger/financial-dimensions.md
             - name: Számlastruktúrák
               href: ../financials/general-ledger/Default-dimensions.md
+            - name: Pénzügyi dimenziók hozzáadása a pénzügyi igazgatói munkaterülethez
+              href: ../financials/general-ledger/CFO-workspace.md
             - name: Számlastruktúrák létrehozása
               href: ../financials/general-ledger/tasks/create-account-structures.md
-            - name: Költségvetés-készítés áttekintése
+            - name: Költségvetés áttekintése
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Dimenziók létrehozása és dimenziótagok importálása
               href: ../financials/cost-accounting/cost-dimension.md
@@ -830,6 +849,8 @@
                   href: ../financials/fixed-assets/fixed-asset-integration.md
             - name: Értékcsökkenés módjai
               items:
+                - name: Értékcsökkenési szabályok
+                  href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
                 - name: 125 százalékos degresszív értékcsökkenés
                   href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
                 - name: 150 százalékos degresszív értékcsökkenés
@@ -886,7 +907,7 @@
                   href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
                 - name: Rendkívüli értékcsökkenés beállítása
                   href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-                - name: 'Értékcsökkenési könyvek beállítása  '
+                - name: 'Értékcsökkenési könyvek beállítása '
                   href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
                 - name: Értékcsökkenési profilok beállítása és létrehozása
                   href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
@@ -915,7 +936,7 @@
                   href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
                 - name: Feladásdefiníciók
                   href: ../financials/general-ledger/posting-definitions.md
-                - name: 'Feladásdefiníció-példák '
+                - name: Feladásdefiníció-példák
                   href: ../financials/general-ledger/example-posting-definitions.md
                 - name: Főkönyvi számlaegyenlegek
                   href: ../financials/general-ledger/general-ledger-account-balances.md
@@ -999,6 +1020,8 @@
                   href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: Devizaárfolyamok importálása
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: Egy bizonylat
+                  href: ../financials/general-ledger/one-voucher.md
             - name: Időszak végi lezárás
               items:
                 - name: A főkönyv lezárása az időszak végén
@@ -1141,7 +1164,7 @@
               href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
             - name: Mérleg – pénzügyi jelentések
               href: ../financials/general-ledger/balance-sheet-financial-reports.md
-            - name: Pénzügyi jelentés létrehozása
+            - name: Pénzügyi jelentések létrehozása
               href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
             - name: Eredménykimutatási pénzügyi jelentés
               href: ../financials/general-ledger/income-statement-financial-report.md
@@ -1149,13 +1172,13 @@
               href: ../financials/general-ledger/trial-balance-financial-reports.md
             - name: Pénzügyi jelentések megtekintése
               href: ../financials/general-ledger/view-financial-reports.md
-            - name: Jelentéstervező
+            - name: A Report Designer felhasználói kezelőfelülete
               href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-            - name: Felhasználói preferenciák
+            - name: Felhasználói beállítások a pénzügyi jelentés tervezőben
               href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
             - name: Speciális formázási beállítások
               href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Jelentési összetevők rendezése
+            - name: Jelentés-összetevők rendezése a jelentéstervezőben
               href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
             - name: Jelentésdefiníciók
               href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
@@ -1165,7 +1188,7 @@
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
             - name: Sordefiniáló cellák módosítása
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: A pénzügyi jelentési adatpiac visszaállítása az adatbázis visszaállítása után
+            - name: A pénzügyi jelentési adatpiac alaphelyzetbe állítása
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Honosítási és szabályozó funkciók
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
@@ -1223,6 +1246,7 @@
                 - name: Vevői áfaszámlák GYIK
                   href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
             - name: India
+              href: ../financials/localizations/india.md
               items:
                 - name: Tárgyi eszközök
                   href: ../financials/localizations/apac-ind-fixed-assets.md
@@ -1268,6 +1292,7 @@
                 - name: Adóküszöbértékekre vonatkozó GYIK
                   href: ../financials/localizations/apac-ind-tax-thresholds.md
             - name: Japán
+              href: ../financials/localizations/japan.md
               items:
                 - name: Tárgyi eszköz beszerzése és állami támogatás igénylése
                   href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
@@ -1426,6 +1451,7 @@
                 - name: Szétszerelési lista használata tárgyi eszközökhöz
                   href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
             - name: Malajzia
+              href: ../financials/localizations/malaysia.md
               items:
                 - name: Ügyféljóváírás létrehozása az értékesítési projektekhez
                   href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
@@ -1448,10 +1474,12 @@
                 - name: GST mentességi záradék beállítása
                   href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
             - name: Szingapúr
+              href: ../financials/localizations/singapore.md
               items:
                 - name: Az GST-05 jelentés elkészítése
                   href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
             - name: Thaiföld
+              href: ../financials/localizations/thailand.md
               items:
                 - name: Készletkarton-jelentések
                   href: ../financials/localizations/apac-tha-stock-card-reports.md
@@ -1619,7 +1647,7 @@
                   href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
                 - name: Egyeztetési jelentések
                   href: ../financials/localizations/emea-bel-reconciliation-reports.md
-                - name: 'Fizetésiegyenleg-jelentések beállítása  '
+                - name: 'Fizetésiegyenleg-jelentések beállítása '
                   href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: PRODCOM beállítása és karbantartása
                   href: ../financials/localizations/emea-bel-prodcom-report.md
@@ -1744,7 +1772,7 @@
               items:
                 - name: Értékcsökkenés a további beszerzéseken
                   href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
-                - name: 'Könyvvizsgálati fájl '
+                - name: Könyvvizsgálati fájl
                   href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                   items:
                     - name: Könyvvizsgálati fájl konfigurációjának testreszabása
@@ -1759,7 +1787,7 @@
                   href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Naplólista (jelentés)
                   href: ../financials/localizations/emea-deu-journal-list-report.md
-                - name: Elektronikus adóbevallás beállítása
+                - name: Elektronikus adóbevallások beállítása
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: Magyarország
               href: ../financials/localizations/hungary.md
@@ -1925,7 +1953,7 @@
             - name: Egyesült Királyság
               href: ../financials/localizations/united-kingdom.md
               items:
-                - name: 'Építőipari séma '
+                - name: Építőipari séma
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
                 - name: Jóváírás létrehozása a kiegyenlítési kedvezményen
                   href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
@@ -1937,12 +1965,15 @@
                   href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
                 - name: 'Fordított áfacikkcsoportok, -szabályok és -paraméterek beállítása'
                   href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: A fordított áfafizetésnél alkalmazott áfacsoportok beállítása
+                - name: A fordított áfafizetésnél alkalmazott kimeneti áfacsoportok beállítása
                   href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
         - name: Latin-Amerika
           items:
             - name: Brazília
+              href: ../financials/localizations/brazil.md
               items:
+                - name: Honosítás köre
+                  href: ../financials/localizations/latam-bra-scope.md
                 - name: Pénzügyi könyvek
                   href: ../financials/localizations/latam-bra-fiscal-books.md
                   items:
@@ -2032,7 +2063,7 @@
                       href: ../financials/localizations/latam-bra-tax-payments.md
                     - name: Áfa az értékesítési ajánlatokban
                       href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Adóelőlegek  '
+                    - name: 'Adóelőlegek '
                       href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
                     - name: A vevői kifizetések adóelőlegei
                       href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
@@ -2105,6 +2136,7 @@
                     - name: PIS és COFINS tárgyi eszközök
                       href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
             - name: Mexikó
+              href: ../financials/localizations/mexico.md
               items:
                 - name: Honosítás köre
                   href: ../financials/localizations/latam-mex-scope.md
@@ -2120,7 +2152,7 @@
                   href: ../financials/localizations/latam-mex-diot-declaration-statement.md
                 - name: E-számlázási CFDI
                   href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-                - name: 'Elektronikus számlák '
+                - name: Elektronikus számlák
                   href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
                 - name: Elektronikus főkönyvi számla kimutatásai
                   href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
@@ -2144,13 +2176,15 @@
                   href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: Szállítói regisztráció azonosítók
                   href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
-        - name: Közel-Kelet
+        - name: Szaúd-Arábia
+          href: ../financials/localizations/saudi-arabia.md
           items:
-            - name: Áfa
+            - name: Forgalmi adó
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Szaúd-arábiai zakat-jelentés
               href: ../financials/localizations/emea-sau-zakat-reporting.md
-        - name: Észak-Amerika
+        - name: Amerikai Egyesült Államok
+          href: ../financials/localizations/united-states.md
           items:
             - name: Év végi 1099-es jelentés az Egyesült Államok számára
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
@@ -2175,9 +2209,9 @@
               href: ../talent/personnel-actions-faq.md
             - name: Alkalmazotti adatok kezelése a munkafolyamat segítségével
               href: ../talent/workflow-manage-employee-information.md
-        - name: Felvétel
+        - name: Toborzás
           items:
-            - name: A toborzási folyamat kezelése
+            - name: A toborzási folyamatok kezelése
               href: hr/manage-recruiting-process.md
             - name: Tömeges felvételi projektek
               href: hr/mass-hire-projects.md
@@ -2219,61 +2253,67 @@
               href: ../talent/evaluate-questionnaire-results.md
         - name: Munkahelyi biztonság és megfelelőség (Egyesült Államok)
           items:
-            - name: 'I-9-es űrlap: foglalkoztatási ellenőrzés'
+            - name: I-9-es űrlap ellenőrzése
               href: hr/localizations/noam-usa-form-i-9-verification.md
-            - name: Foglalkoztatási ellenőrzés az I-9 űrlap használatával
+            - name: Alkalmazhatóság igazolása az I-9-es űrlap segítségével
               href: hr/localizations/tasks/employment-verification-i9-verification.md
-            - name: I-9 dokumentumtípusok beállítása
+            - name: Dokumentumtípusok beállítása az I-9-es űrlaphoz
               href: hr/localizations/tasks/set-up-i9-document-types.md
-            - name: Az ADA-nak történő megfelelés
+            - name: A fogyatékossággal élő amerikaiakra vonatkozó jogszabály (ADA) betartása
               href: hr/localizations/noam-usa-comply-ada.md
             - name: Dolgozói szállások kezelése
               href: hr/localizations/tasks/manage-worker-accommodations.md
         - name: Egyesült Államok bérlista
           href: hr/localizations/noam-usa-payroll.md
           items:
-            - name: Payroll beállítása
+            - name: Bérlista beállítása
               items:
                 - name: Bérlista beállítása a dolgozók számára
                   href: hr/localizations/noam-usa-worker-position-payroll-tasks.md
                 - name: Munkaciklusok és munkaidőszakok beállítása
                   href: hr/localizations/noam-usa-work-cycle-work-period-tasks.md
-                - name: 'Juttatáselhatárolási tervek beállítása  '
+                - name: Juttatáselhatárolási tervek beállítása
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
                 - name: Juttatások beállítása
                   href: hr/localizations/noam-usa-benefit-set-up-tasks.md
-            - name: Frekvenciák és ciklusok
-            - name: Fizetési ciklus és fizetési időszak feladatai
+            - name: Gyakoriság és ciklusok
+            - name: Fizetési ciklusok és fizetési időszakok beállítása
               href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
-            - name: Bérlistaszámítási és gyakorisági feladatok
+            - name: Bérlista számítási gyakoriságainak beállítása
               href: hr/localizations/noam-usa-payroll-calculation-frequencies-tasks.md
-            - name: Munkaütemezési és szabadságolási feladatok
+            - name: Munkaütemezés és távollét beállítása
               href: hr/localizations/noam-usa-work-schedule-leave-tasks.md
             - name: Kódok és adók
               items:
-                - name: Bevételkód és bevételkódcsoporthoz tartozó feladatok
+                - name: Bevételkódok és bevételkódcsoportok beállítása
                   href: hr/localizations/noam-usa-earning-code-group-tasks.md
-                - name: Adóinformációkhoz tartozó feladatok
+                - name: 'Adók, adórégiók, adókódok és adócsoportok beállítása'
                   href: hr/localizations/noam-usa-tax-information-tasks.md
+                - name: 'Adókódokra, adócsoportokra és feladásdefiníciókra vonatkozó GYIK'
+                  href: hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
+                - name: Bérlista nyitó egyenlegeinek megadása
+                  href: hr/localizations/noam-usa-enter-beginning-balances.md
             - name: 'Letiltások, adókivetések és fizetési prémiumok'
               items:
                 - name: Letiltások és adókivetések beállítása
                   href: hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md
-                - name: Munkavállalók felvétele a letiltásokba és az adókivetésekbe
+                - name: Munkavállalók felvétele a letiltásokba vagy adókivetésekbe
                   href: hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md
-                - name: 'Prémiumbevételek beállítása '
+                - name: Prémiumbevételek beállítása
                   href: hr/localizations/noam-usa-premium-earning-setup-tasks.md
-                - name: 'Letiltások, adókivetések és igazgatási díjak GYIK'
+                - name: 'Letiltásokhoz, adókivetésekhez és igazgatási díjakhoz tartozó GYIK'
                   href: hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
-            - name: Az FMLA szabadidő nyomon követése
+            - name: Távollét nyomok követése a Családi okokból történő és a betegszabadságról szóló amerikai törvényhez
               href: hr/localizations/noam-usa-track-time-for-fmla.md
             - name: Bérlista-feldolgozási feladatok
               items:
-                - name: Bevételek létrehozása
+                - name: Bevételre és bevételgenerálásra vonatkozó GYIK
                   href: hr/localizations/noam-usa-earnings-generation-process.md
+                - name: Dolgozók bevételeinek létrehozása
+                  href: hr/localizations/noam-usa-generate-earnings.md
                 - name: Dolgozói kifizetések kiadása
                   href: hr/localizations/noam-usa-issue-worker-payments.md
-                - name: Bérlista feladása és szállítói számlák létrehozása
+                - name: Bérlistaelosztás közzététele és szállítói számlák létrehozása
                   href: hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md
                 - name: Fizetési kimutatások és fizetések létrehozása GYIK
                   href: hr/localizations/noam-usa-pay-statements-payment-generation-process.md
@@ -2283,43 +2323,43 @@
                   href: hr/localizations/noam-usa-existing-payroll-payments.md
                 - name: Meglévő bevételek feldolgozása
                   href: hr/localizations/noam-usa-existing-earnings.md
-                - name: Fizetési kimutatások feldolgozása
+                - name: Fizetési kimutatások létrehozása és felhasználása
                   href: hr/localizations/noam-usa-pay-statements.md
             - name: Karbantartás és jelentés
               items:
                 - name: Bérlista adatainak frissítése GYIK
                   href: hr/localizations/noam-usa-payroll-data-updates.md
-                - name: Bérlistajelentések létrehozása
+                - name: Szabványos bérlistajelentések
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
         - name: Emberi erőforrások feladatok
           items:
-            - name: Hozzáadás saját teljesítménynaplóhoz és pozitív visszajelzés elküldése másnak
+            - name: Információk hozzáadása a saját teljesítménynaplóhoz és pozitív visszajelzés küldése
               href: hr/tasks/add-your-performance-journal-send-praise-someone.md
-            - name: Tanfolyami kérdőív eredményei
+            - name: Kérdőív eredményeinek elemzése
               href: hr/tasks/analyze-questionnaire-results.md
             - name: Pályázati postafiókrekordok jóváhagyása
               href: hr/tasks/approve-application-inbox-records.md
             - name: Juttatási jogosultság feldolgozása
               href: hr/tasks/benefit-eligibility-process.md
-            - name: Naptár létrehozása és munkaidők generálása
+            - name: Naptárak létrehozása és munkaidők generálása
               href: hr/tasks/create-calendar-working-times.md
-            - name: Eldöntendő kérdés létrehozása
+            - name: Eldöntendő kérdések létrehozása
               href: hr/tasks/create-closed-ended-question.md
-            - name: Cél létrehozása
+            - name: Célok létrehozása
               href: hr/tasks/create-goal.md
             - name: Kölcsöncikkek létrehozása
               href: hr/tasks/create-loan-items.md
-            - name: Tömeges felvételi projekt létrehozása
+            - name: Tömeges felvételi projektek létrehozása
               href: hr/tasks/create-mass-hire-project.md
-            - name: Új juttatás létrehozása
+            - name: Új juttatások létrehozása
               href: hr/tasks/create-new-benefit.md
-            - name: Kifejtős kérdés létrehozása
+            - name: Kifejtős kérdések létrehozása
               href: hr/tasks/create-open-ended-question.md
-            - name: Teljesítmény-áttekintés létrehozása
+            - name: Teljesítmény-áttekintések létrehozása
               href: hr/tasks/create-performance-review.md
             - name: Juttatásra való jogosultsági szabályok és irányelvek meghatározása
               href: hr/tasks/define-benefit-eligibility-rules-policies.md
-            - name: Kompenzációs folyamat meghatározása és eredmények kiszámítása
+            - name: Kompenzációs folyamatok meghatározása és eredmények kiszámítása
               href: hr/tasks/define-compensation-process-calculate-results.md
             - name: Új részlegek meghatározása
               href: hr/tasks/define-new-departments.md
@@ -2327,9 +2367,9 @@
               href: hr/tasks/define-new-jobs.md
             - name: Alkalmazotti juttatási program megvalósítása
               href: hr/tasks/deliver-employee-benefits-program.md
-            - name: Beosztásigénylés kialakítása és megnyitása
+            - name: Beosztásigénylések kialakítása és megnyitása
               href: hr/tasks/develop-open-job-requisition.md
-            - name: Munkabér-/kompenzációs struktúra és tervek kialakítása
+            - name: Munkabér-/kompenzációs struktúrák és tervek kialakítása
               href: hr/tasks/develop-salary-compensation-structure-plan.md
             - name: Utódlási terv kialakítása
               href: hr/tasks/develop-succession-plan.md
@@ -2339,7 +2379,7 @@
               href: hr/tasks/enroll-employee-fixed-compensation-plan.md
             - name: Alkalmazottak felvétele változó kompenzációs konstrukcióba
               href: hr/tasks/enroll-employee-variable-compensation-plan.md
-            - name: Dolgozók juttatásainak felvétele és eltávolítása
+            - name: Dolgozók felvétele juttatásokhoz és dolgozók juttatásainak eltávolítása
               href: hr/tasks/enroll-remove-benefits-workers.md
             - name: Pályázók és a pályázatok adatainak manuális megadása
               href: hr/tasks/enter-applicant-application-data-manually.md
@@ -2347,25 +2387,25 @@
               href: hr/tasks/enter-project-timesheets.md
             - name: Dolgozói adatok megadása
               href: hr/tasks/enter-worker-information.md
-            - name: Jelölt felvétele toborzás útján
+            - name: Jelöltek felvétele toborzás útján
               href: hr/tasks/hire-candidate-through-recruiting.md
-            - name: Meglévő dolgozó felvétele toborzás útján
+            - name: Meglévő dolgozók felvétele toborzás útján
               href: hr/tasks/hire-existing-employee-through-recruiting.md
-            - name: Jelentkezők kiválasztására szolgáló eszközök azonosítása és rendszerbe állítása
+            - name: Jelentkezők kiválasztására szolgáló eszközök azonosítása és telepítése
               href: hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Elemek kölcsönadása egy dolgozónak
+            - name: Elemek kölcsönadása a dolgozóknak
               href: hr/tasks/loan-item-worker.md
             - name: Dolgozói sérülések és megbetegedések adatainak karbantartása
               href: hr/tasks/maintain-employee-injury-illness-information.md
-            - name: A kérdés függővé tétele az előző kérdésre adott választól
+            - name: Kérdések függővé tétele az előző kérdésre adott választól
               href: hr/tasks/make-question-dependent-answer-previous-question.md
             - name: Juttatások lejárati dátumainak kezelése
               href: hr/tasks/manage-benefit-expiration-dates.md
-            - name: E-mail sablonok kezelése
+            - name: E-mail-sablonok kezelése
               href: hr/tasks/manage-email-templates.md
-            - name: Szabadság kezelése
+            - name: Szabadságok kezelése
               href: hr/tasks/manage-leave-absence.md
-            - name: Beosztás jelentési kapcsolatainak módosítása
+            - name: Beosztások jelentési kapcsolatainak módosítása
               href: hr/tasks/modify-reporting-relationships-position.md
             - name: Kompenzációs rácsok beállítása
               href: hr/tasks/set-up-compensation-grids.md
@@ -2396,7 +2436,7 @@
             - name: Költségkönyvelési elemzés
               href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Költségkönyvelési elemzés biztonsága
+                - name: Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Költségkezelés
               href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/fin-and-ops/toc.json
@@ -2424,7 +2464,7 @@
               href: ../dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Felvétel
               href: ../dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: 'Kiskereskedelmi csatorna teljesítménye  '
+            - name: 'Kiskereskedelmi csatorna teljesítménye '
               href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/fin-and-ops/toc.json
             - name: Értékesítési és jövedelmezőségi teljesítmény
               href: ../dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/fin-and-ops/toc.json
@@ -2438,166 +2478,168 @@
           items:
             - name: A jelentésdokumentumokkal kapcsolatos szolgáltatások áttekintése
               href: ../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json
-            - name: SSRS beállítása helyszíni telepítésre
+            - name: SSRS beállítása helyszíni telepítésekhez
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
             - name: Nyomtatás
               href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
               items:
-                - name: A Dokumentumirányítási ügynök telepítése a hálózati nyomtató eszközök engedélyezéséhez
+                - name: A Dokumentumirányítási ügynök telepítése a hálózati nyomtatáshoz
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: A dokumentumirányítási ügynök frissítése
                   href: ../dev-itpro/analytics/upgrade-document-routing-agent.md
                 - name: Hálózati nyomtatók helyszíni környezetben történő telepítése
                   href: ../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json
-                - name: 'Dokumentum-létrehozási, közzétételi és nyomtatási képességek helyszíni telepítéseknél'
+                - name: 'Dokumentumok létrehozása, közzététele és nyomtatása helyszíni telepítéseknél'
                   href: ../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json
                 - name: A Dokumentumirányítási ügynök futtatása Windows-szolgáltatásként
                   href: ../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json
             - name: Segítség az időtúllépés megakadályozására hosszú ideig futó jelentések esetén
               href: ../dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/fin-and-ops/toc.json
-            - name: Az SQL Server Reporting Services jelentései
+            - name: Az SQL Server Reporting Services elérhető jelentései
               href: ../dev-itpro/analytics/SSRS-report.md?toc=/fin-and-ops/toc.json
             - name: Jelentési megoldások létrehozása
               href: ../dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/fin-and-ops/toc.json
-            - name: Jelentéstervsablonok telepítése
+            - name: Jelentésterv-sablonok telepítése
               href: ../dev-itpro/analytics/install-modern-report-design-templates.md?toc=/fin-and-ops/toc.json
             - name: Az alkalmazáscsomag jelentéseinek testreszabása kiterjesztésekkel
               href: ../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/fin-and-ops/toc.json
             - name: Az alkalmazáscsomag jelentési adathalmazainak kibontása
               href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
-            - name: Jelentési menüelemek kibontása
+            - name: Jelentési menüelemek kibontása a felhasználói navigációk átirányításához
               href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
-            - name: Egyedi tervezésű üzleti dokumentumok
+            - name: Egyedi tervezésű üzleti dokumentumok létrehozása
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
         - name: Elektronikus jelentéskészítés
           href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
           items:
             - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
               href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
-            - name: Konfiguráció létrehozása
+            - name: Konfigurációk létrehozása
               href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Konfigurációszolgáltató létrehozása és megjelölése aktívként az elektronikus jelentéskészítéshez
+                - name: Konfigurációszolgáltatók létrehozása és megjelölése aktívként
                   href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Tartományspecifikus adatmodell tervezése elektronikus jelentéskészítéshez
+                - name: Tartományspecifikus adatmodellek kialakítása
                   href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Modell-leképezés meghatározása és adatforrások kiválasztása elektronikus jelentéskészítéshez
+                - name: Modell-leképezések meghatározása és adatforrások kiválasztása
                   href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Adatmodell hozzárendelése a kiválasztott adatforrásokhoz az elektronikus jelentéskészítéshez
+                - name: Adatmodellek leképezése kiválasztott adatforrásokra
                   href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Elektronikus jelentéskészítés formátumkonfigurációjának létrehozása
+                - name: Formátumkonfigurációk létrehozása
                   href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: A létrehozott formátum adatmodell-elemekhez történő hozzárendelése elektronikus jelentéskészítéshez
+                - name: A formátumok elemeinek leképezése az adatmodellelemekhez
                   href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Elektronikus dokumentumok létrehozása kifizetésekhez formátumkonfiguráció használatával elektronikus jelentéskészítéshez
+                - name: Elektronikus dokumentumok létrehozása kifizetésekhez formátumkonfigurációk használatával
                   href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-                - name: A formátum frissítése a formátum új alapverziójának elfogadásával az elektronikus jelentéskészítésben
+                - name: Formátumok frissítése új alapverziók elfogadásával
                   href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
             - name: Képletszerkesztő elektronikus jelentésekhez
               href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-            - name: Elektronikus jelentéskészítés beállítása Power BI-vel
+            - name: Elektronikus jelentéskészítés konfigurálása adatok Power BI-be történő lehívásához
               href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
             - name: Célok
               href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Elektronikus jelentéskészítési célhelyek konfigurálása
+                - name: Célok konfigurálása
                   href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Konfiguráció tervezése Microsoft Word formátumú jelentések létrehozására elektronikus jelentéskészítéshez
+            - name: Konfigurációk tervezése Word-formátumú jelentések generálásához
               href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Konfiguráció tervezése OpenXML formátumú jelentések létrehozására elektronikus jelentéskészítéshez
+            - name: Konfigurációk tervezése OpenXML-formátumú jelentések generálásához
               href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Elektronikus jelentés formátumának módosítása Microsoft Excel sablon újbóli alkalmazásával
+            - name: Elektronikus jelentések formátumának módosítása Excel-sablonok újbóli alkalmazásával
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Adatmodell definíciójának kiválasztása az elektronikus jelentéskészítés formátumának létrehozása közben
+            - name: A formátumok létrehozása közben válassza ki az adatmodell-definíciókat
               href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-            - name: A konfigurációk függőségének meghatározása más összetevőkből az elektronikus jelentéskészítéshez
+            - name: A konfigurációk függőségének meghatározása más elemeknél
               href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Adatmodell tervezése pénzügyi dimenziók adatforrásként történő használatára
+                - name: Adatmodellek tervezése pénzügyi dimenziók adatforrásként történő használatára
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-                - name: Modell feltérképezése pénzügyi dimenziók adatforrásként történő használatára
+                - name: Modellek feltérképezése pénzügyi dimenziók adatforrásként történő használatára
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-                - name: Jelentés tervezése pénzügyi dimenziók adatforrásként történő használatára
+                - name: Jelentések tervezése pénzügyi dimenziók adatforrásként történő használatára
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-                - name: Jelentés futtatása pénzügyi dimenziók adatforrásként történő használatára
+                - name: A pénzügyi dimenziókat adatforrásként használó jelentések futtatása
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-                - name: Számlálási és összegzési formátumának létrehozása
+                - name: Formátumok létrehozása számláláshoz és összegzéshez
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
                 - name: Számítások konfigurálása számláláshoz és összegzéshez
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-                - name: Számítások használata a számlálás és összegzés kimenetéhez
+                - name: Számítások használata a számlálás és összegzés kimenetének generálásához
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-                - name: Formátum futtatása számláláshoz és összegzéshez
+                - name: Formátumok futtatása számláláshoz és összegzéshez
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-                - name: Vízszintesen bővíthető tartományokat használó formátum tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához
+                - name: Formátumok tervezése oszlopok dinamikus hozzáadásához vízszintesen bővíthető tartományokként
                   href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: Vízszintesen bővíthető tartományokat használó formátum futtatása oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához
+                - name: Formátumok futtatása oszlopok dinamikus hozzáadásához vízszintesen bővíthető tartományokként
                   href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-                - name: Adatmodell előkészítése dokumentumkezelési fájlok használatához formátumkimenetekben
+                - name: Adatmodellek előkészítése dokumentumkezelési fájlok használatához kimenetekben
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-                - name: Adatmodell kiterjesztése dokumentumkezelési fájlok használatához formátumkimenetekben
+                - name: Adatmodellek kiterjesztése dokumentumkezelési fájlok használatához kimenetekben
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-                - name: Formátum létrehozása dokumentumkezelési fájlok használatára formátumkimenetekben
+                - name: Formátumok létrehozása dokumentumkezelési fájlok használatára kimenetekben
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-                - name: Formátum futtatása dokumentumkezelési fájlok használatára formátumkimenetekben
+                - name: Formátumok futtatása dokumentumkezelési fájlok használatára kimenetekben
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-                - name: Formátum módosítása és futtatása dokumentumkezelési fájlok használatára formátumkimenetekben
+                - name: Formátumok módosítása és futtatása dokumentumkezelési fájlok használatára kimenetekben
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-                - name: 'Konfigurációk tervezése jelentések készítéséshez Microsoft Office formátumokban, beágyazott képekkel'
+                - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, beágyazott képekkel'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: 'Konfigurációk áttekintése jelentések készítéséshez Microsoft Office formátumokban, beágyazott képekkel'
+                - name: 'Konfigurációk áttekintése jelentések készítéséhez Office-formátumokban, beágyazott képekkel'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
-                - name: 'Jelentések készítése Microsoft Office formátumokban, beágyazott képekkel'
+                - name: 'Jelentések készítése Office-formátumokban, beágyazott képekkel'
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
-            - name: Elektronikus dokumentumok generálása és alkalmazások adatainak frissítése az Elektronikus jelentéskészítő eszköz használatával
+            - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
               href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Konfigurációk importálása dokumentumoknak alkalmazásadatokkal történő létrehozásához
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurációk tervezése dokumentumoknak alkalmazásadatokkal történő létrehozásához
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-                - name: Modell és feltérképezés módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
+                - name: Modellek és feltérképezések módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-                - name: Formátum módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
+                - name: Formátumok módosítása dokumentumoknak alkalmazásadatokkal történő létrehozásához
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
                 - name: Dokumentumok létrehozása alkalmazásadatokkal
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
-            - name: Jelentések készítése tartalom nyers XML-kódként való hozzáadásával
+            - name: Nyomtatható FTI-űrlapok generálása
+              href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
+            - name: Jelentések generálása tartalom nyers XML-kódként való hozzáadásával
               href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
             - name: A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
               href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
             - name: Több vállalatot érintő adatforrások az elektronikus jelentéskészítésben
               href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-            - name: Képek és alakzatok beágyazása az Elektronikus jelentéskészítő eszköz által generált üzleti dokumentumokba
+            - name: Beágyazott képek és formák az Ön által generált dokumentumokban
               href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
             - name: A konfiguráció életciklusának kezelése
               href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Elektronikus jelentéskészítési konfiguráció feltöltése a Lifecycle Services rendszerbe
+                - name: Konfigurációk feltöltése a Lifecycle Services szolgáltatásba
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Elektronikus jelentéskészítési konfiguráció importálása a Lifecycle Services rendszerből
+                - name: Konfigurációk importálása a Lifecycle Services szolgáltatásból
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurációk letöltése a Lifecycle Services szolgáltatásból
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-                - name: Elektronikus jelentéskészítési konfigurációk importálása
+                - name: Konfigurációk importálása
                   href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Modell-leképezési konfigurációk kezelése elektronikus jelentéskészítéshez
+            - name: Modell-leképezési konfigurációk kezelése
               href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Kötelező konfigurációk létrehozása külső fájlból történő adatok importálásához az elektronikus jelentéskészítésben
+                - name: Konfigurációk létrehozása adatok külső fájlokból történő importálásához
                   href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
                 - name: Adatok importálásának konfigurálása a SharePoint rendszerből
                   href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: Bejövő dokumentumok elemzése Microsoft Excelben
+            - name: Bejövő dokumentumok elemzése Excel-formátumban
               href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
             - name: Bejövő dokumentumok elemzése az alkalmazásadatok frissítéséhez
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
             - name: Bejövő dokumentumok elemzése CSV-formátumban
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: Generált fájlok felosztása méret és tartalommennyiség alapján
+            - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Az Elektronikus jelentéskészítés funkcióinak bővítése
+                - name: Elektronikus jelentéskészítési funkciók listájának kibővítése
                   href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
                 - name: Elektronikus jelentési keretrendszer API módosítások az Application update 7.3 számára
                   href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
@@ -2609,7 +2651,7 @@
               href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
         - name: Személyre szabás a PowerBI.com segítségével
           items:
-            - name: Power BI-integráció
+            - name: A Power BI-integráción keresztül elérhető funkciók és szolgáltatások
               href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
             - name: Power BI-jelentések rögzítése a munkaterületekhez
               href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
@@ -2617,9 +2659,9 @@
           items:
             - name: 'Elemzések, összesítő mértékek és KPI-k modellezése'
               href: ../dev-itpro/analytics/analytics.md?toc=/fin-and-ops/toc.json
-            - name: Szerzői elemzési jelentések a Power BI Desktop használatával
+            - name: Elemzési jelentések létrehozása a Power BI Desktop használatával
               href: ../dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/fin-and-ops/toc.json
-            - name: Adatok modellezése és összevonása
+            - name: Adatösszesítés modellezése
               href: ../dev-itpro/analytics/model-aggregate-data.md?toc=/fin-and-ops/toc.json
             - name: Pénzügyi dimenziók hozzáadása összesítő mértékekhez
               href: ../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/fin-and-ops/toc.json
@@ -2631,7 +2673,7 @@
           items:
             - name: A Power BI integrációja az Entitástárral
               href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
-            - name: Entitástár karbantartása
+            - name: Problémák megoldása az Entitástár karbantartása után
               href: ../dev-itpro/analytics/entity-store-maintenance.md
             - name: A munkaterületek Power BI-integrációjának konfigurálása
               href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
@@ -2803,10 +2845,10 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Igény-előrejelzés manuális módosítása
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Mobilalkalmazás
+    - name: Dynamics 365 for Unified Operations mobilalkalmazás
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Mobil munkaterületek
+        - name: Elérhető mobil munkaterületek
           href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
           items:
             - name: Vállalat címtára
@@ -2829,14 +2871,14 @@
               href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md
             - name: Szállítói együttműködés
               href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md
-        - name: Mobil munkaterület közzététele
+        - name: Mobil munkaterületek közzététele
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Office-integráció
       href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
         - name: Office-integrációs oktatóanyag
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
-        - name: Az Excel-bővítmény használata
+        - name: Entitásadatok megnyitása Excelben és frissítésük az Excel-bővítmény segítségével
           href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/fin-and-ops/toc.json
         - name: Az Excel programban történő megnyitási élmények létrehozása
           href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/fin-and-ops/toc.json
@@ -2996,20 +3038,22 @@
               href: organization-administration/plan-organizational-hierarchy.md
             - name: Szervezeti hierarchia létrehozása
               href: organization-administration/tasks/create-organization-hierarchy.md
-            - name: Jogi személy létrehozása
+            - name: Jogi személyek létrehozása
               href: organization-administration/tasks/create-legal-entity.md
-            - name: Üzemi egység létrehozása
+            - name: Üzemi egységek létrehozása
               href: organization-administration/tasks/create-operating-unit.md
         - name: Globális címjegyzék
           href: organization-administration/overview-global-address-book.md
           items:
-            - name: Globális címjegyzék konfigurálásának megtervezése
+            - name: Terv a globális címjegyzékhez és egyéb címjegyzékekhez
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: Globális címjegyzék konfigurálása
               href: organization-administration/tasks/configure-global-address-book.md
             - name: Címjegyzékek GYIK
               href: organization-administration/qa-address-books.md
-        - name: Munkafolyamat
+            - name: Címjegyzékek konfigurálása
+              href: organization-administration/tasks/address-books.md
+        - name: Munkafolyamat-rendszer
           href: organization-administration/overview-workflow-system.md
           items:
             - name: A munkafolyamat-rendszer felépítése
@@ -3018,43 +3062,43 @@
               href: organization-administration/workflow-elements.md
             - name: Munkafolyamat-műveletek
               href: organization-administration/workflow-actions.md
-            - name: Munkafolyamat létrehozása
+            - name: Munkafolyamatok létrehozása
               href: organization-administration/create-workflow.md
               items:
                 - name: Munkafolyamat-tulajdonságok konfigurálása
                   href: organization-administration/configure-workflow-properties.md
-                - name: Manuális feladat konfigurálása
+                - name: Manuális feladatok konfigurálása
                   href: organization-administration/configure-manual-task-workflow.md
-                - name: Automatizált feladat konfigurálása
+                - name: Automatizált feladatok konfigurálása
                   href: organization-administration/configure-automated-task-workflow.md
-                - name: Jóváhagyási folyamat konfigurálása
+                - name: Jóváhagyási folyamatok konfigurálása
                   href: organization-administration/configure-approval-process-workflow.md
-                - name: Jóváhagyási lépés konfigurálása
+                - name: Jóváhagyási lépések konfigurálása
                   href: organization-administration/configure-approval-step-workflow.md
-                - name: Manuális döntés konfigurálása
+                - name: Manuális döntések konfigurálása
                   href: organization-administration/configure-manual-decision-workflow.md
-                - name: Feltételes döntés konfigurálása
+                - name: Feltételes döntések konfigurálása
                   href: organization-administration/configure-conditional-decision-workflow.md
-                - name: Párhuzamos tevékenység konfigurálása
+                - name: Párhuzamos tevékenységek konfigurálása
                   href: organization-administration/configure-parallel-activity-workflow.md
-                - name: Párhuzamos ág konfigurálása
+                - name: Párhuzamos ágak konfigurálása
                   href: organization-administration/configure-parallel-branch-workflow.md
-                - name: Sortétel munkafolyamatának konfigurálása
+                - name: Sortétel munkafolyamatainak konfigurálása
                   href: organization-administration/configure-line-item-workflow.md
-            - name: Az üzenetet feldolgozó kötegelt feladat konfigurálása
+            - name: A munkafolyamat-üzenetet feldolgozó kötegelt feladat konfigurálása kritikusként
               href: organization-administration/workflow-batch-job-critical.md
             - name: Egy munkafolyamat munkatételeinek delegálása
               href: organization-administration/tasks/delegate-work-items-workflow.md
             - name: Munkafolyamat-előzmények megtekintése
               href: organization-administration/tasks/view-workflow-history.md
-            - name: Munkafolyamattal kapcsolatos e-mail-üzenetek engedélyezése a felhasználóknak
+            - name: A rendszer konfigurálása munkafolyamattal kapcsolatos e-mailek küldéséhez a felhasználóknak
               href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
             - name: Munkafolyamat-típusok jelentése
               href: organization-administration/workflow-types-report.md
         - name: Figyelmeztetések
           href: get-started/alerts-overview.md
           items:
-            - name: Figyelmeztetések létrehozása
+            - name: Figyelmeztetési szabályok létrehozása
               href: get-started/create-alerts.md
             - name: Figyelmeztetések kötegelt feldolgozása
               href: get-started/alerts-managing.md
@@ -3066,7 +3110,7 @@
         - name: Esetkezelés
           href: organization-administration/cases.md
           items:
-            - name: 'Esetbiztonság, folyamatok és kategóriák konfigurálása'
+            - name: 'Esetbiztonság, folyamatok és kategóriák tervezése'
               href: organization-administration/plan-case-management.md
         - name: Rekordsablonok
           href: organization-administration/record-templates.md
@@ -3792,7 +3836,7 @@
                       href: ../supply-chain/service-management/reverse-changes-in-a-dispatch-board.md
                     - name: Hozzá nem rendelt szervizrendelések megtekintése
                       href: ../supply-chain/service-management/view-undispatched-service-orders.md
-                    - name: 'Szolgáltatási darabjegyzék módosítása  '
+                    - name: 'Szolgáltatási darabjegyzék módosítása '
                       href: ../supply-chain/service-management/modify-service-bom.md
                 - name: Szolgáltatás nyújtása
                   items:
@@ -3893,7 +3937,7 @@
         - name: Raktári munkairányelvek
           href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
-            - name: 'Raktári munkairányelvek beállítása  '
+            - name: 'Raktári munkairányelvek beállítása '
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: Készlet mozgatásának engedélyezése társított munkával a Raktárkezelésben
               href: ../supply-chain/warehousing/move-inventory-associated-work.md
@@ -3935,11 +3979,11 @@
               href: ../supply-chain/inventory/inventory-blocking.md
             - name: Ciklikus leltározás
               href: ../supply-chain/warehousing/cycle-counting.md
-            - name: 'Ciklikus leltározás meghatározása  '
+            - name: 'Ciklikus leltározás meghatározása '
               href: ../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
             - name: Helyek részleges ciklikus leltározása
               href: ../supply-chain/warehousing/partial-location-cycle-counting.md
-            - name: 'Részleges ciklikus leltározásos helyfolyamat meghatározása  '
+            - name: 'Részleges ciklikus leltározásos helyfolyamat meghatározása '
               href: ../supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md
             - name: Készletnapló
               href: ../supply-chain/inventory/inventory-journals.md
@@ -3958,7 +4002,7 @@
               href: ../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md
             - name: A minimum-maximum feltöltési folyamat beállítása
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
-        - name: 'A raktározási alkalmazás telepítése és konfigurálása '
+        - name: A raktározási alkalmazás telepítése és konfigurálása
           href: ../supply-chain/warehousing/install-configure-warehousing-app.md
           items:
             - name: Mezőnevek konfigurálása a raktározási alkalmazásban
