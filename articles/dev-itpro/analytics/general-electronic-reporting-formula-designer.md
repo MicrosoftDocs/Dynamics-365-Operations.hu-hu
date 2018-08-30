@@ -1,5 +1,5 @@
 ---
-title: "Képletszerkesztő elektronikus jelentésekhez"
+title: "Képletszerkesztő elektronikus jelentésekhez (ER)"
 description: "Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER)."
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Képletszerkesztő elektronikus jelentésekhez
+# <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -385,7 +385,7 @@ A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű ért
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Az alábbi ábrán a tervezett formátum futtatásának eredménye látható.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>A címkék és leírások fordított szövege az ER formátumú kimenetbe kerül bevitelre, a szülő FILE és FOLDER formátumelemekhez konfigurált nyelvi beállításainak megfelelően.</blockquote>
+<blockquote>[!NOTE] A címkék és leírások fordított szövege az ER formátumú kimenetbe kerül bevitelre, a szülő FILE és FOLDER formátumelemekhez konfigurált nyelvi beállításainak megfelelően.</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Az alábbi ábrán a módosított formátum futtatásának eredménye látható.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>A korlát nem vonatkozik az eredeti lista utolsó elemére, mivel a korlát forrásának (súly) értéke (11) meghaladja a meghatározott határértéket (9). Használja a megfelelő formátumelem <strong>WHERE</strong> függvényét vagy az <strong>Enabled</strong> kifejezést a részleges listák figyelmen kívül hagyásához (átugrásához) a jelentés előállítása során, ha szükséges.</blockquote>
+<blockquote>[!NOTE] A korlát nem vonatkozik az eredeti lista utolsó elemére, mivel a korlát forrásának (súly) értéke (11) meghaladja a meghatározott határértéket (9). Használja a megfelelő formátumelem <strong>WHERE</strong> függvényét vagy az <strong>Enabled</strong> kifejezést a részleges listák figyelmen kívül hagyásához (átugrásához) a jelentés előállítása során, ha szükséges.</blockquote>
 </td>
 </tr>
 <tr>
@@ -456,8 +456,8 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 | NUMBERVALUE (karakterlánc, tizedesjegy-elválasztó, számjegy csoportosítási elválasztó) | A megadott karakterlánc konvertálása egy számhoz. A megadott tizedeselválasztó a decimális szám egészszám- és a tizedestört-részei között használatos. A megadott számjegy csoportosítási elválasztó használatos az ezresek elválasztására. | **NUMBERVALUE ("1 234,56", ",","")** **1234,56** értéket jelenít meg. |
 | ÉRTÉK (karakterlánc) | A megadott karakterlánc konvertálása egy számhoz. A vesszőket és a pont karaktereket (.) decimális elválasztóknak tekintik és a vezető kötőjelet (-) negatív jelként használjál. Kivételt ad, ha más nem numerikus karakterek találhatók a megadott karakterláncban. | **ÉRTÉK („1 234,56”)** megad egy kivételt. |
 | KEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre kerekítve:<ul><li>Ha a megadott **tizedesjegy**-paraméter értéke nagyobb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek ezen megadott számára van kerekítve.</li><li>Ha a **tizedesjegy**-paraméter értéke **0** (nulla) értéket, a megadott szám a legközelebbi egészre van kerekítve.</li><li>Ha a **tizedesjegy**-paraméter értéke kisebb, mint 0 (nulla) akkor a megadott szám a tizedesjegyek bal oldalára van kerekítve.</li></ul> | **KEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít és **1200,77** értéket jelenít meg. **KEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít és **1000** értéket jelenít meg. |
-| LEKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre lefelé kerekítve.<blockquote>[!NOTE]<br>Ez a függvény úgy viselkedik, mint a **ROUND**, de mindig lefelé (nulla felé) kerekíti a megadott számot.</blockquote> | **LEKEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít le és **1200,76** értéket jelenít meg. **LEKEREKÍTÉS (1700,767, -3)** az 1000 legközelebbi többszörösére kerekít le és **1000** értéket jelenít meg. |
-| FELKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre felfelé kerekítve.<blockquote>[!NOTE]<br>Ez a függvény úgy viselkedik, mint a **ROUND**, de mindig felfelé (nullával ellenkező irányba) kerekíti a megadott számot.</blockquote> | **FELKEREKÍTÉS (1200,763, 2)** két tizedesjegyre kerekít fel és **1200,77** értéket jelenít meg. **FELKEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít fel és **2000** értéket jelenít meg. |
+| LEKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre lefelé kerekítve.<blockquote>[!NOTE] Ez a függvény úgy viselkedik, mint a **ROUND**, de mindig lefelé (nulla felé) kerekíti a megadott számot.</blockquote> | **LEKEREKÍTÉS (1200,767, 2)** két tizedesjegyre kerekít le és **1200,76** értéket jelenít meg. **LEKEREKÍTÉS (1700,767, -3)** az 1000 legközelebbi többszörösére kerekít le és **1000** értéket jelenít meg. |
+| FELKEREKÍTÉS (szám, tizedesjegyek) | A megadott számot adja vissza adott számú tizedesjegyre felfelé kerekítve.<blockquote>[!NOTE] Ez a függvény úgy viselkedik, mint a **ROUND**, de mindig felfelé (nullával ellenkező irányba) kerekíti a megadott számot.</blockquote> | **FELKEREKÍTÉS (1200,763, 2)** két tizedesjegyre kerekít fel és **1200,77** értéket jelenít meg. **FELKEREKÍTÉS (1200,767, -3)** az 1000 legközelebbi többszörösére kerekít fel és **2000** értéket jelenít meg. |
 
 ### <a name="data-conversion-functions"></a>Adatkonvertálási függvények
 
@@ -474,8 +474,8 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 
 | Funkció | Leírás | Példa |
 |----------|-------------|---------|
-| NULLCONTAINER (lista) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE]<br>Ez a funkció már elavult. Használja az **EMPTYRECORD** helyette.</blockquote> | **NULLCONTAINER (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
-| EMPTYRECORD (rekord) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE]<br>A **null** rekord olyan rekord, amelyben minden mezőhöz üres érték tartozik. Az üres érték **0** (nulla) a számok esetén, üres karakterlánc a karakterláncoknál stb.</blockquote> | **ÜRESREKORD (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
+| NULLCONTAINER (lista) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE] Ez a funkció már elavult. Használja az **EMPTYRECORD** helyette.</blockquote> | **NULLCONTAINER (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
+| EMPTYRECORD (rekord) | **Nulla** rekordot jelenít meg, amely ugyanolyan szerkezetű, mint a megadott rekord listája vagy a rekord.<blockquote>[!NOTE] A **null** rekord olyan rekord, amelyben minden mezőhöz üres érték tartozik. Az üres érték **0** (nulla) a számok esetén, üres karakterlánc a karakterláncoknál stb.</blockquote> | **ÜRESREKORD (FELOSZTÁS („abc”, 1))** megjelenít egy új üres rekordot, amelynek ugyanolyan szerkezete van, mint a **FELOSZTÁS** funkció által megjelenített listának. |
 
 ### <a name="text-functions"></a>Szöveg függvények
 
@@ -522,14 +522,14 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <td>CHAR (szám)</td>
 <td>Megjelenítik a megadott Unicode szám által hivatkozott karakterek karakterláncát.</td>
 <td><strong>CHAR (255)</strong> a következőt adja vissza: <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>A funkció által visszaadott karakterlánc a szülő FILE formátumelemben kiválasztott kódolástól függ. A támogatott kódolások listájához lásd: <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kódolási osztály</a>.</blockquote>
+<blockquote>[!NOTE] A funkció által visszaadott karakterlánc a szülő FILE formátumelemben kiválasztott kódolástól függ. A támogatott kódolások listájához lásd: <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kódolási osztály</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>ÖSSZEFŰZÉS (1-es karakterlánc [, 2-es karakterlánc...])</td>
 <td>Az összes megadott szöveges karakterláncot adja vissza egy karakterláncba egyesítve.</td>
 <td><strong>ÖSSZEFŰZÉS (&quot;abc&quot;, &quot;def&quot;)</strong> a következőt adja vissza: <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az <strong>&quot;abcdef&quot;</strong> értéket adja vissza.</blockquote>
+<blockquote>[!NOTE] Az <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> kifejezés szintén az <strong>&quot;abcdef&quot;</strong> értéket adja vissza.</blockquote>
 </td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Ha ugyanazt a jelentést 2015. december 17-én a <strong>Litware Retail</strong> vevőre vonatkozóan a <strong>DE</strong> területi beállítással és a <strong>DE</strong> nyelven dolgozzák fel, ez a képlet a következő, eltérő dátumformátumot használó szöveget jeleníti meg:</p>
 <p>&quot;Nichts zu drucken. Debitor 'Litware Kiskereskedelmi' wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
+<blockquote>[!NOTE] A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
 <ul>
 <li><strong>Finance and Operations erőforrásokból származó címkékhez:</strong> <strong>@&quot;X&quot;</strong>, ahol X az alkalmazásobjektum-fában (AOT) szereplő címkeazonosító.</li>
 <li><strong>Az ER-konfigurációkban található címkékhez:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, ahol X az ER-konfigurációban található címkeazonosító.</li>
@@ -587,7 +587,7 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <tr>
 <td>NUMERALSTOTEXT (szám, nyelv, pénznem, pénznem névjelzőjének nyomtatása, tizedes)</td>
 <td>A megadott számot adja vissza, miután megtörtént az átírása (konvertálása szöveglánc formátumra) a megadott nyelven. A nyelvkód megadása nem kötelező. Ha üres karakterláncként van megadva, akkor a futó környezet nyelvkódját használja a rendszer. (A futó környezet nyelvkódja létrehozó mappához vagy fájlhoz van megadva.) A pénznemkód szintén nem kötelező. Ha üres karakterláncként van meghatározva, a rendszer a vállalati pénznemet használja.
-<blockquote>[!NOTE]<br>A <strong>pénznem névjelzőjének nyomtatása</strong> paraméter és a <strong>tizedes</strong> paraméterek elemzését csak a következő nyelvkódokra vonatkozóan végzi el a rendszer: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> és <strong>RU</strong>. Emellett a <strong>pénznem névjelzőjének nyomtatása</strong> paraméter elemzését csak azon, a Finance and Operations rendszert használó vállalatok esetében végzi el a rendszer, amelyek ország- vagy régiókörnyezete támogatja a valuták nevének ragozását.</blockquote>
+<blockquote>[!NOTE] A <strong>pénznem névjelzőjének nyomtatása</strong> paraméter és a <strong>tizedes</strong> paraméterek elemzését csak a következő nyelvkódokra vonatkozóan végzi el a rendszer: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> és <strong>RU</strong>. Emellett a <strong>pénznem névjelzőjének nyomtatása</strong> paraméter elemzését csak azon, a Finance and Operations rendszert használó vállalatok esetében végzi el a rendszer, amelyek ország- vagy régiókörnyezete támogatja a valuták nevének ragozását.</blockquote>
 </td>
 <td>A <strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> a következő eredményt adja vissza: <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. A <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> a következő eredményt adja vissza: <strong>&quot;Sto dwadzieścia&quot;</strong>. A <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> a következő eredményt adja vissza: <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -656,10 +656,10 @@ Ezen adatforrások megadásakor használható kifejezés például a <strong>FIL
 | Funkció | Leírás | Példa |
 |----------|-------------|---------|
 | PÉNZNEMVÁLTÁS (összeg, eredeti pénznem, cél pénznem, dátum, vállalat) | A megadott forráspénzösszeg konvertálása az eredeti pénznemről a megadott cél pénznemre a megadott Finance and Operations vállalat beállításainak használata segítségével a megadott időpontban. | **PÉNZNEMVÁLTÁS (1, „EUR”, „USD”, MA(), „DEMF”)** egy euró egyenértékét USA-dollárban jelenít meg az aktuális munkameneti napon a DEMF vállalat beállításai alapján. |
-| ÖSSZEGKEREKÍTÉS (szám, tizedes, kerekítési szabály) | A megadott összeget a megadott tizedesjegyek száma és a megadott kerekítési szabály szerint kerekíti.<blockquote>[!NOTE]<br>A kerekítési szabályt a Finance and Operations **RoundOffType** felsorolásának értékeként kell meghatározni.</blockquote> | Ha a **model.RoundOff** paraméter **Downward** értékre van állítva, a **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** a következő értéket adja vissza: **1000,78**. Ha a **modell.Roundoff** paraméter értéke vagy **Normál** vagy **Felkerekítés** lehetőségre van beállítva, akkor az **ÖSSZEGKEREKÍTÉS (1000,787, 2. modell.Roundoff)** **1000,79** értéket jeleníti meg. |
+| ÖSSZEGKEREKÍTÉS (szám, tizedes, kerekítési szabály) | A megadott összeget a megadott tizedesjegyek száma és a megadott kerekítési szabály szerint kerekíti.<blockquote>[!NOTE] A kerekítési szabályt a Finance and Operations **RoundOffType** felsorolásának értékeként kell meghatározni.</blockquote> | Ha a **model.RoundOff** paraméter **Downward** értékre van állítva, a **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** a következő értéket adja vissza: **1000,78**. Ha a **modell.Roundoff** paraméter értéke vagy **Normál** vagy **Felkerekítés** lehetőségre van beállítva, akkor az **ÖSSZEGKEREKÍTÉS (1000,787, 2. modell.Roundoff)** **1000,79** értéket jeleníti meg. |
 | CURCredRef (számjegy) | Egy hitelező hivatkozást jelenít meg a megadott számlaszám számjegyei alapján. | **CURCredRef („VEND-200002”)** **„2200002”** értéket jelenít meg. |
 | MOD\_97 (számjegy) | Egy hitelező hivatkozást MOD97 kifejezésként jelenít meg a megadott számlaszám számjegyei alapján. | **MOD\_97 ("VEND-200002")** a következőt adja vissza: **"20000285"**. |
-| ISOCredRef (számjegy) | Egy ISO (International Organization for Standardization ) hitelezői hivatkozást jelenít meg a megadott számlaszám betűi és számjegyei alapján.<blockquote>[!NOTE]<br>A nem ISO szabványos betűkből származó szimbólumok eltávolításához a bemeneti paramétereket le kell fordítani a függvénynek történő megfeleltetés előtt.</blockquote> | **ISOCredRef („VEND-200002”)** **„RF23VEND-200002”** értéket jelenít meg. |
+| ISOCredRef (számjegy) | Egy ISO (International Organization for Standardization ) hitelezői hivatkozást jelenít meg a megadott számlaszám betűi és számjegyei alapján.<blockquote>[!NOTE] A nem ISO szabványos betűkből származó szimbólumok eltávolításához a bemeneti paramétereket le kell fordítani a függvénynek történő megfeleltetés előtt.</blockquote> | **ISOCredRef („VEND-200002”)** **„RF23VEND-200002”** értéket jelenít meg. |
 | CN\_GBT\_AdditionalDimensionID (karakterlánc, szám) | A megadott további pénzügyi dimenzió azonosítójának beolvasása. A **karakterlánc** paraméterben a dimenziókat a rendszer vesszővel elválasztott azonosítókként jeleníti meg. A **szám** paraméter a kért dimenzió számsorozatkódját határozza meg a karakterláncban. | A **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** a következőt adja vissza: **"CC"**. |
 | GetCurrentCompany () | Egy olyan jogi személyhez (vállalathoz) tartozó kód szöveges változatát adja vissza, amelybe egy felhasználó jelenleg be van jelentkezve. | A **GETCURRENTCOMPANY()** az **USMF** értéket adja vissza a Finance and Operations programban a **Contoso Entertainment System USA** vállalatba bejelentkezett felhasználók számára. |
 | CH\_BANK\_MOD\_10 (számjegyek) | Egy hitelező hivatkozást MOD10 kifejezésként jelenít meg a megadott számlaszám számjegyei alapján. | A **CH\_BANK\_MOD\_10 ("VEND-200002")** a következőt adja vissza: **3**. |

@@ -1,5 +1,5 @@
 ---
-title: "Affordable Care Act-jelentések létrehozása"
+title: "Affordable Care Act (ACA) jelentések létrehozása"
 description: "Olyan funkció érhető el, amely azokat a munkáltatókat segítik, amelyeknek az 1095-B és 1095-C űrlapokon jelentett adatokat kell támogatniuk az Affordable Care Act munkáltatói felhatalmazásra vonatkozó részének támogatása érdekében. Megjegyzés: Ez a funkció csak az Egyesült Államokbeli jogi személyek számára aktív."
 author: kherr75
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 1994edc5d6c932be3a285f9bb328a05504c90f07
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="generate-affordable-care-act-reports"></a>Affordable Care Act-jelentések létrehozása
+# <a name="generate-affordable-care-act-aca-reports"></a>Affordable Care Act (ACA) jelentések létrehozása
 
 [!include [banner](includes/banner.md)]
 

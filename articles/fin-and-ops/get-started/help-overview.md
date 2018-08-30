@@ -1,9 +1,9 @@
 ---
-title: "Súgó áttekintése"
+title: "Finance and Operations súgórendszer"
 description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Súgórendszer részeinek áttekintését tartalmazza. Azt is bemutatja, hogyan hozhat létre egyedi dokumentációkat és oktatóanyagokat a szervezete számára."
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +19,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="help-system-overview"></a>Súgórendszer áttekintése
+# <a name="finance-and-operations-help-system"></a>Finance and Operations súgórendszer
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,27 +82,19 @@ A Unified Operations összes frissítését bemutató RSS-hírcsatornára való 
 [RSS-hírcsatorna](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Visszajelzés adása 
-Szívesen vesszük az ügyfelek visszajelzéseit. Megjegyzést írhat, vagy a tartalom módosításait javasolhatja a GitHub használatával.
+Szívesen vesszük az ügyfelek visszajelzéseit. Megjegyzést írhat vagy a tartalom módosításait javasolhatja a GitHub használatával. A visszajelzési rendszer kapcsolatos további tudnivalókat lásd ebben a [blogbejegyzésben](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs)
 
-##### <a name="leave-us-a-comment"></a>Szóljon hozzá! 
+##### <a name="leave-us-feedback"></a>Visszajelzés küldése 
 Ha visszajelzése vagy kérdése van egy témakörrel kapcsolatban, hagyjon megjegyzést az oldal alján.  
 
-1 Kattintson a **Megjegyzések** lehetőségre, hogy eljusson a lap alján lévő megjegyzésekhez.
+1. Kattintson a **Visszajelzés** lehetőségre, hogy a lap alján található megjegyzésekhez jusson, majd kattintson a **Termékvisszajelzés** vagy **Bejelentkezés dokumentációval kapcsolatos visszajelzéshez**.
 
-![Megjegyzések](./media/comments.png)
+![Visszajelzés](./media/comments.png)
 
-2 Írja be megjegyzését, majd kattintson a **Megjegyzés elküldése** gombra.
+2. Írja be megjegyzését, majd kattintson a **Visszajelzés beküldése** gombra.
 
-![Megjegyzés elküldése](./media/before-signin.png)
+![Megjegyzés elküldése](./media/feedback.png)
 
-3 Válassza ki, hogy milyen típusú fiókkal kíván bejelentkezni:  
-Kattintson a bal oldali ikonok egyikére, hogy társíthassa ezt a webhelyet egy meglévő fiókhoz (például Twitter-, Facebook- vagy Microsoft-fiók). 
-
-Vagy 
-
-A jobb oldalon adjon meg egy e-mail-címet és egy új jelszót ahhoz, hogy új fiókot hozzon létre a webhely számára. 
-
-![Bejelentkezési beállítások](./media/signin-options.png)
 
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Javasoljon módosítást vagy járuljon hozzá a tartalomhoz a GitHub használatával
@@ -115,7 +107,6 @@ További tudnivalókért olvassa el a következő közreműködői útmutatót: 
 
 > [!NOTE]
 > Jelenleg csak az angol nyelvű repóhoz fogadunk el közreműködést.  
-> A GitHub használatával jelentett problémákat nem fogadunk el – a tartalomjavaslatokhoz használjon lekéréses kérelmet. A termékkel és szolgáltatással kapcsolatos visszajelzések kezelésének legcélszerűbb módja a Dynamics 365 Ideas portál: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Feladat-útmutatók

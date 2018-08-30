@@ -65,5 +65,3 @@ A **Tanulás** Power BI-tartalom jelentéseinek kitöltésére a következő ada
 | Alkalmazott neve    | Keresztnév, vezetéknév és teljes név                             | Tanfolyamrésztvevők |
 | Alkalmazott beosztása   | Cím és szolgálati idő dátuma                                         | Tanfolyamrésztvevők |
 
-
-

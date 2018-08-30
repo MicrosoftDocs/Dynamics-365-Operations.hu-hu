@@ -33,7 +33,7 @@ ms.lasthandoff: 12/19/2017
 Ez a témakör ismerteti a **Toborzási** Microsoft Power BI-tartalmat. Leírja, hogy hogyan kell hozzáférni Power BI-jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Felvétel** Power BI-tartalom a **Toborzás kezelése** munkaterületen látható. 
+A **Felvétel** Power BI-tartalom a **Toborzás kezelése** munkaterületen látható.
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Jelentések és megjelenítések a Toborzás kezelése munkaterületen
 A **Toborzás kezelése** munkaterület tartalmaz egy **Elemzés** lapot. Ez a lap a beágyazott toborzási Power BI-tartalmat tartalmazza. A tartalom egy áttekintő lapból és további, részletesek adatokat tartalmazó fülekből áll. Az alábbi táblázatban található a füleken megjelenő jelentések ismertetése.
@@ -66,6 +66,4 @@ A következő táblázat mutatja a **Felvétel** entitásokat, amelyeken a Power
 | Teljesítmény          | Minősítési, leírás és minősítési modell                            | Kérelmező, a pályázó alkalmazott, pályázó munkaviszonya megszűnt |
 | Toborzási projekt  | Projekt leírása, projekt állapota és nyitott pozíciók                | Kérelmező, a pályázó alkalmazott, pályázó munkaviszonya megszűnt |
 | A pályázó munkaviszonya megszűnt | Megszűnt pályázók, ok, teljesítmény és a megszűnés dátuma | Vállalat, naptáreltolás, dátum, földrajzi elhelyezkedés, teljesítmény, demográfiai adatok, foglalkoztatás, média, toborzási projekt, pályázó neve |
-
-
 

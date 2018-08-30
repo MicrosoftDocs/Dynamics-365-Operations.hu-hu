@@ -1,5 +1,5 @@
 --- 
-title: " Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához"
+title: "Kereskedelmi megállapodások létrehozása kategória-árazási szabályokkal"
 description: "Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó kereskedelmi megállapodásokat egy kategória-árazási szabály használatával."
 author: scott-tucker
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 133ca34a0e85454dc40d4e1d36fbe8278019c7e4
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 20393f80c8f4aa12e3103cb7df214367aa35ab16
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához
+# <a name="create-trade-agreements-by-using-category-pricing-rules"></a>Kereskedelmi megállapodások létrehozása kategória-árazási szabályokkal
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
@@ -41,8 +41,7 @@ Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó keresk
 9. A Kerekítési verzió mezőben adjon meg vagy válasszon ki egy értéket.
 10. Kattintson a Kereskedelmi megállapodások előállítása gombra.
 11. Kattintson a Tovább gombra.
-12. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
+12. Adjon meg egy dátumot a Kezdő dátum mezőben.
 13. Adja meg a dátumot a „Záró dátum” mezőben.
 14. Válassza ki az Igen lehetőséget a Következő keresése mezőben.
 15. Kattintson a Tovább gombra.

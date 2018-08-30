@@ -1,5 +1,5 @@
 ---
-title: "Új vagy frissített Feladat-útmutatók (2016. november)"
+title: "Új vagy frissített feladat-útmutatók (2016. november)"
 description: "A témakör felsorolja a Microsoft Dynamics 365 for Operations (2016. november – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat. Nincs új Első lépések könyvtár."
 author: josaw1
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7708c8e091ef561c1a4205a1424a51d51d05002f
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 9d438083cc83a4620f9164afde9add24c267f694
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="new-or-updated-task-guides-november-2016"></a>Új vagy frissített Feladat-útmutatók (2016. november)
+# <a name="new-or-updated-task-guides-november-2016"></a>Új vagy frissített feladat-útmutatók (2016. november)
 
 [!include [banner](../includes/banner.md)]
 

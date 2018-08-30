@@ -1,5 +1,5 @@
 --- 
-title: "Munkabér-/kompenzációs struktúra és tervek kialakítása"
+title: "Munkabér-/kompenzációs struktúrák és tervek kialakítása"
 description: "Ez a feladat-útmutató végigvezeti a folyamaton, amely létrehozza a Fix kompenzációs konstrukciót és az alkalmazhatósági szabályok által engedélyezi alkalmazottaknak konstrukcióba való bevitelét."
 author: kherr75
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d2a4a0b2bf2d33530dedc7ce3974ee558d063878
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 0514cd485c8fa0026390a22be350ff23933afd7b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="develop-salarycompensation-structure-and-plans"></a>Munkabér-/kompenzációs struktúra és tervek kialakítása
+# <a name="develop-salarycompensation-structures-and-plans"></a>Munkabér-/kompenzációs struktúrák és tervek kialakítása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

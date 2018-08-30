@@ -18,20 +18,20 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: af594fb7879918e6b9fc423774ee1ec7f635dec0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="generate-er-reports-by-adding-content-as-raw-xml"></a>ER jelentések készítése tartalom nyers XML-kódként való hozzáadásával
+# <a name="generate-reports-by-adding-content-as-raw-xml"></a>Jelentések készítése tartalom nyers XML-kódként való hozzáadásával
 
 [!include[banner](../includes/banner.md)]
 
 Használhatja az új **Nyers XML** formátum elemet elektronikus jelentési (ER) formátumok kimenő dokumentumok XML-formátumú előállításához. Bizonyos esetekben előfordulhat, hogy szeretné nyers XML-adatok hozzáadása ezeket a jelentéseket, a következő okok valamelyikéből:
 
-- A nyers XML használata kényelmesebb a jelentés eredeti tervezésére és karbantartásához, mert az XML-szerkezetet automatikusan létre lehet hozni egy futásidejű kifejezés végrehajtásával. Többszörös kötéseket emiatt nem kell a tervezéskor több formátumelemhez meghatározni. Akkor lehetséges, ha az éppen használt adatforrások tartalmaznak információkat, amelyek a jelentés előállításakor XML-elemek létrehozásához használhatók. 
+- A nyers XML használata kényelmesebb a jelentés eredeti tervezésére és karbantartásához, mert az XML-szerkezetet automatikusan létre lehet hozni egy futásidejű kifejezés végrehajtásával. Többszörös kötéseket emiatt nem kell a tervezéskor több formátumelemhez meghatározni. Akkor lehetséges, ha az éppen használt adatforrások tartalmaznak információkat, amelyek a jelentés előállításakor XML-elemek létrehozásához használhatók.
 - Nincs semmilyen más módszer, amellyel korábban már kapott, és a rendszerben tárolt XML-tartalommal tölthető lenne fel a jelentés. Például a létrehozott XML-válasznak előfordulhat, hogy tartalmaznia kell a korábban elküldött XML-kérés tartalmát.
 - Nincs más módszer, amelynek a használatával lehetne karaktereket beszúrni a generált dokumentumba a numerikus kódjuk alapján. Bizonyos nyelvek és karakterek esetében az ilyen típus nem létezik. Példák a görög betű rhó (ρ) és a HTML-entitás kódok, például \&eacute; az egy *e*, amelynek ékezete van (é).
 

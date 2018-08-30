@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 for Talent: – előnézeti funkciók elérése"
+title: "Talent – előnézeti funkciók elérése"
 description: "Ez a témakör leírja, hogy a rendszergazda hogyan engedélyezheti az előnézeti funkciókat, és felsorolja azokat a funkciókat, amelyek előnézet céljára jelenleg engedélyezettek."
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="access-preview-features-in-dynamics-365-for-talent"></a>Dynamics 365 for Talent: – előnézeti funkciók elérése 
+# <a name="access-preview-features-in-talent"></a>Talent – előnézeti funkciók elérése
 
 [!include[banner](../includes/banner.md)]
 
@@ -53,7 +53,7 @@ Használhatja a Microsoft Dynamics 365 for Talent adminisztrációs központjáb
 #### <a name="core-hr"></a>Alapvető HR
 
 1. Jelentkezzen be a Talentbe. Az emberi erőforrások alapvető munkaterülete megnyílik, ahol ki kell töltenie a fennmaradó lépéseket. 
-2. Válassza ki: **Rendszerfelügyelet \>Rendszerparaméterek hivatkozásai**.
+2. Válassza ki: **Rendszerfelügyelet \> Rendszerparaméterek hivatkozásai**.
 3. A **Rendszerparaméterek oldalon**, az **Előnézeti funkciók** lapon állítsa az **Előnézeti mód engedélyezése minden felhasználóra vonatkozóan** lehetőséget **Igenre** az előnézeti funkciók elérhetővé tételéhez.
 
 > [!NOTE]

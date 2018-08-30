@@ -1,5 +1,5 @@
 ---
-title: Intelligencia
+title: "Üzleti intelligencia és jelentéskészítés kezdőlap"
 description: "Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak a Microsoft Dynamics 365 for Finance and Operations szolgáltatásban elérhető üzletiintelligencia-eszközökre és jelentéskészítési eszközökre vonatkozóan."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="intelligence"></a>Intelligencia
+# <a name="business-intelligence-bi-and-reporting-home-page"></a>Üzleti intelligencia és jelentéskészítés kezdőlap
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,13 +43,13 @@ A felhasználók az oldalon található vizuális elemekre kattintva vagy azokat
 
 ![Power BI-példa egy munkaterületen](./media/Power-BI-in-D365-Workspace.png)
 
- További információk a következő témakörökben találhatók:
+További információk a következő témakörökben találhatók:
 
- - [Beágyazott Power BI a munkaterületeken](embed-power-bi-workspaces.md)
- - [A Power BI Embedded integrációja](power-bi-embedded-integration.md)
- - [Analitika hozzáadása munkaterületekhez Power BI Embedded használatával](add-analytics-tab-workspaces.md)
- - [Analitikai munkaterületek és jelentések biztosítása a Power BI Embedded segítségével](secure-analytical-workspaces.md)
- - [Power BI-tartalmak a Finance and Operations alkalmazáshoz](power-bi-home-page.md)
+- [Beágyazott Power BI a munkaterületeken](embed-power-bi-workspaces.md)
+- [A Power BI Embedded integrációja](power-bi-embedded-integration.md)
+- [Analitika hozzáadása munkaterületekhez Power BI Embedded használatával](add-analytics-tab-workspaces.md)
+- [Analitikai munkaterületek és jelentések biztosítása a Power BI Embedded segítségével](secure-analytical-workspaces.md)
+- [Power BI-tartalmak a Finance and Operations alkalmazáshoz](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Üzleti dokumentumok és nyomtatás
 A jelentéskészítési megoldásokat gyakran használják üzleti tranzakciók részleteinek rögzítésére és kommunikálására. A jelentéskészítési megoldásoknak ezért képeseknek kell lenniük az üzleti adatok fizikai reprodukálására a meglévő eszközöket például hálózati nyomtatókat használva. Az üzleti dokumentumok közé tartoznak például az értékesítési számlák, a vevői kivonatok és a csekkek.

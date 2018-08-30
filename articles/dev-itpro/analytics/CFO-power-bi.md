@@ -29,7 +29,6 @@ ms.lasthandoff: 02/23/2018
 
 Ez a témakör a **Pénzügyi igazgatói áttekintés** Microsoft Power BI-tartalmat ismerteti. Ez a Power BI tartalom azokra vonatkozik, akik a Microsoft Dynamics 365 for Finance and Operations 7.2-es verzióját használják. Ha a 7.3-as vagy újabb verziót használja, olvassa el [Pénzügyi információk](financial-insights.md) pontot.
 
-
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
 
 A **Pénzügyi igazgatói áttekintés** Power BI-tartalom jelentései a **Pénzügyi igazgatói áttekintés** munkaterületen jelennek meg.
@@ -39,13 +38,11 @@ A **Pénzügyi igazgatói áttekintés** Power BI-tartalom számos más Power BI
 
 A következő táblázat azt a Power BI-tartalmat jeleníti meg, amelyből a jelentéseket kimásolja a rendszer, illetve azokat, amelyek megjelennek a **Pénzügyi igazgatói áttekintés** munkaterületen. Hivatkozások találhatók a különböző Power BI-tartalmak dokumentációjához.
 
-| A csomagban megtalálható Power BI-tartalmak     | Jelentések |
-|---------------------------------------|---------|
+| A csomagban megtalálható Power BI-tartalmak | Jelentések |
+|-----------------------------------|---------|
 | [Pénzügyi teljesítmény](financial-performance-power-bi-content-pack.md) | <ul><li>Bevétel</li><li>Kiadás</li><li>Nettó árbevétel</li><li>Bruttó nyereség</li><li>Likviditási ráta</li><li>Kötelezettségek összesen</li><li>Kinnlevőségek összesen</li><li>Költségek számlakategóriánként</li><li>Költségek – Tényleges - költségvetés</li><li>Bevétel - Tényleges és költségvetés</li></ul> |
 | [Készpénzáttekintés](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li>Pénzforgalmi előrejelzés</li><li>Bankszámlaegyenleg</li><li>Egyenleg pénznemenként</li></ul> |
 | [Értékesítés és jövedelmezőség](sales-profitability-performance-content-pack.md) | <ul><li>Bevétel régiónként</li><li>10 vezető vevő bevétel alapján</li><li>10 vezető termék bevétel alapján</li></ul> |
 | [Követelések és beszedések kezelése](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Késedelmes vevő</li><li>Hitelkeretet túllépő vevők</li><li>Korosított egyenlegek</li></ul> |
 | [Beszerzési és ráfordítási elemzés](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Beszerzések nap/hónap szerint</li><li>10 legfontosabb szállító a beszerzések alapján</li><li>10 legfontosabb termék a beszerzések alapján</li></ul> |
-
-
 

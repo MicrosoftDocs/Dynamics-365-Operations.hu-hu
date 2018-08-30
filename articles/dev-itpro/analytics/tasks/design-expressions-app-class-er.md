@@ -1,5 +1,5 @@
 --- 
-title: "Kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)"
+title: "ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)"
 description: "Ez az útmutató azzal kapcsolatban tartalmaz tájékoztatást, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési (ER-) konfigurációkban az ER-kifejezések alkalmazásosztályainak szükséges metódusainak lehívásával."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-expressions-to-call-application-class-methods-er"></a>Kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
+# <a name="design-er-expressions-to-call-application-class-methods"></a>ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

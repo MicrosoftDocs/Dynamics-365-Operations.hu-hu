@@ -1,5 +1,5 @@
 ---
-title: "Online áruház áttekintése"
+title: "Online boltok beállítása"
 description: "Ez a cikk a kiskereskedelmi online áruházakkal és a Microsoft Dynamics 365 for Retail rendszerben való beállításukkal kapcsolatban tartalmaz információkat."
 author: kfend
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3814e5a4a88f439c89981f191e8896afb2ced68b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 640f134dff19b60c2b14259f8a6c838e44c8926e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="online-store-overview"></a>Online áruház áttekintése
+# <a name="set-up-online-stores"></a>Online boltok beállítása
 
 [!include [banner](includes/banner.md)]
 

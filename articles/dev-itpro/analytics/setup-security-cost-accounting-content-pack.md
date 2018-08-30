@@ -1,7 +1,7 @@
 ---
 title: "Biztonság beállítása a Költségkönyvelési elemzés Power BI-tartalomhoz"
 description: "Ez a témakör azt mutatja be, hogy miként alkalmazhatja a hozzáférésszintű biztonságot a Költségkönyvelésnél a sorszintű biztonságnál, a Microsoft Power BI szolgáltatásban. Ez a funkció segít garantálni, hogy a felhasználók csak azokat a Power BI adatokat láthassák, amelyekhez hozzáférést kaptak."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,14 +14,14 @@ ms.search.scope: Operations
 ms.custom: 270294
 ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e0c0faf0b12368273decacfae88c57707b350bf4
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 15d25274b02b0e9423fd4670b82c2e398316a1fa
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -53,7 +53,7 @@ A hozzáférésszintű biztonság Power BI szolgáltatásban való alkalmazásá
 A **Költségobjektum-ellenőr** szerepkörhöz hozzárendelt felhasználók csak a számukra engedélyezett adatokat láthatják, amelyeket engedélyeztek a Költségkönyvelés hozzáférésszintű szervezeti hierarchiában. **Megjegyzés:** A sorszintű biztonság a Microsoft Dynamics 365 for Finance and Operations azon mozaikjaira és jelentéseire vonatkozik, amelyeknek a beágyazása a Power BI-ből történt.
 
 ## <a name="updating-security"></a>Biztonság frissítése
-Ha frissítéseket véget a hozzáférés szintű biztonságnál a Költségnyilvántartásnál, és azt szeretné, hogy a Power BI is tükrözze a módosításokat, akkor frissítenie kell az entitástárat a **Költségkönyvelési elemzés** Power BI tartalomnál. Miután befejezte az entitástár frissítését a Finance and Operations rendszerből, frissítenie kell a műterméket a PowerBI.com webhelyen. For more Ha további információt szeretne az entitástár frissítéséről, lásd: [Az entitástár frissítése](power-bi-integration-entity-store.md#update-entity-store). A **Költségkönyvelési elemzés** Power BI tartalom tulajdonosának entitástár-frissítést kell végeznie, ha új felhasználók hozzáférést kapnak a szervezeti hierarchiához. Továbbá a tulajdonosnak hozzá kell adnia az új felhasználókat a **Költségobjektum-ellenőr** szerepkörhöz a PowerBI.com webhelyen annak érdekében, hogy rétegszintű biztonságot alkalmazzanak rájuk.
+Ha frissítéseket véget a hozzáférés szintű biztonságnál a Költségnyilvántartásnál, és azt szeretné, hogy a Power BI is tükrözze a módosításokat, akkor frissítenie kell az entitástárat a **Költségkönyvelési elemzés** Power BI tartalomnál. Miután befejezte az entitástár frissítését a Finance and Operations rendszerből, frissítenie kell a műterméket a PowerBI.com webhelyen. Ha további információt szeretne az entitástár frissítéséről, lásd: [Az entitástár frissítése](power-bi-integration-entity-store.md#update-entity-store). A **Költségkönyvelési elemzés** Power BI tartalom tulajdonosának entitástár-frissítést kell végeznie, ha új felhasználók hozzáférést kapnak a szervezeti hierarchiához. Továbbá a tulajdonosnak hozzá kell adnia az új felhasználókat a **Költségobjektum-ellenőr** szerepkörhöz a PowerBI.com webhelyen annak érdekében, hogy rétegszintű biztonságot alkalmazzanak rájuk.
 
 ## <a name="disabling-security"></a>A biztonság letiltása
 Feltételezzük, hogy szervezete korlátozni szeretné az adatokhoz való hozzáférést. Ha valamilyen okból a biztonsági paraméterek le vannak tiltva a Költségkönyvelés futtatásakor, akkor a tulajdonosnak felhasználókat kell hozzáadnia a **Költségkönyvelő munkatárs** szerepkörhöz a Power BI felületén. Ha a biztonságot engedélyezett állapotról letiltott állapotra váltja, akkor érdemes lehet eltávolítania felhasználókat a **Költségobjektum-ellenőr** szerepből. És ez fordítva is igaz, ha újra engedélyezi a biztonságot. A felhasználók mindkét szerepkörhöz is tartozhatnak. A közös hozzáférés a két szerepkör egységét jelenti. A **Költségkönyvelési elemzés** Power BI tartalom esetében a közös hozzáféréssel rendelkező felhasználók adatokhoz való hozzáférése korlátozás nélküli. Ha célja a korlátozott hozzáférés alkalmazása, akkor a felhasználókat csak a **Költségobjektum-ellenőr** szerepkörhöz szabad hozzárendelni. Ezek a sorszintű biztonsági frissítések azonnal hatályba lépnek. Az érintett felhasználóknak frissíteniük kell a böngészőprogramjukat.

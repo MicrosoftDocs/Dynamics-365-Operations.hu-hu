@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: ee130dd357b5ae678f623630165a1ab787d6ae2c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -34,44 +34,40 @@ Ez a cikk a jelentésdefiníciókról tartalmaz információt. A jelentésdefin�
 
 A jelentésdefiníció egy jelentés-összetevő (vagy építőelem), amely egy sordefiníció, egy oszlopdefiníció és egy opcionális jelentési-fa definíciót használ a jelentés elkészítéséhez. A jelentésdefiníció emellett a jelentés testre szabását lehetővé tevő lehetőségeket és beállításokat is tartalmaz. A sordefiníciók és oszlopdefiníciók meghatározása után kombinálni kell azokat egy jelentésdefinícióban. Ezen a ponton határozhatja meg a definíciók egyéb aspektusait, például a részletezési szintet és a jelentés dátumát. Ezután mentheti, majd generálhat jelentéseket. A pénzügyi jelentéskészítés a következő részletességi szinteket nyújtja:
 
--   Pénzügyi
--   Pénzügy és számla
--   Pénzügy, Számla és Tranzakció
+- Pénzügyi
+- Pénzügy és számla
+- Pénzügy, Számla és Tranzakció
 
 Ugyanakkor attól függően, hogy hogyan tárolja a Microsoft Dynamics ERP rendszer az adatokat, előfordulhat, hogy a tranzakció részletei nem elérhetők a jelentésben.
 
 ## <a name="create-a-report-definition"></a>Jelentésmeghatározás létrehozása
-1.  A jelentéstervezőben a **Fájl** menüben kattintson az **Új** lehetőségre, majd válassza a **Jelentésdefiníció** lehetőséget.
-2.  A szükséges információkat a **Jelentés**, **Kimenet és elosztás**, **Fejlécek és láblécek**, valamint a **Beállítások** lapokon határozhatja meg.
+1. A jelentéstervezőben a **Fájl** menüben kattintson az **Új** lehetőségre, majd válassza a **Jelentésdefiníció** lehetőséget.
+2. A szükséges információkat a **Jelentés**, **Kimenet és elosztás**, **Fejlécek és láblécek**, valamint a **Beállítások** lapokon határozhatja meg.
 
 ## <a name="contents-of-a-report-definition"></a>Jelentésdefiníció tartalma
 A következő táblázat bemutatja a jelentésdefinícióban lévő lapokat és az információk használatának módját.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Lap</th>
 <th>Leírás</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Jelentés</td>
 <td>Jelentése létrehozás, jelentés beállítása vagy meglévő jelentés módosítása.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Kimenet és felosztás</td>
 <td>A kimenet típusának és a jelentés céljának módosítása.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Fejlécek és láblécek</td>
 <td>A jelentés fejléceinek és lábléceinek meghatározása és formázása. Például hozzáadhat szöveget vagy képeket a fejléchez vagy a lábléchez. A pénzügyi jelentéskészítés a .bmp, .jpg, és .png formátumokat támogatja képek esetén. Az autotext kódok hozzáadásával egyéb információkat is beszúrhat, például a cég nevét, a jelentés nevét vagy az oldalszámot.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Beállítások</td>
 <td>Adja meg a jelentésdefiníció beállításait, például a következőket:
 <ul>
@@ -81,18 +77,13 @@ A következő táblázat bemutatja a jelentésdefinícióban lévő lapokat és 
 <li>Kivétel jelentés készítése</li>
 <li>Pénznem átváltásának meghatározása</li>
 <li>Részösszeg és szűrőszámla részletei</li>
-</ul></td>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-
-
-
 

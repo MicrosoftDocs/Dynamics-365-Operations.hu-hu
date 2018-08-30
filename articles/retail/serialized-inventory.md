@@ -1,5 +1,5 @@
 ---
-title: "Pénztárjavítások szerializált termékekhez"
+title: "Pénztár (POS) javítások szerializált termékekhez"
 description: "Ez a témakör a szerializált termékeken végzett fejlesztéseket sorolja fel, amelyek segítségével időt takaríthat meg, és hatékonyabban végezheti munkáját."
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 74a27761c065e475fa7c10c5812f0307df9f570e
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 65e60f3e289bb68ea055548299d58bca42e84c02
 ms.contentlocale: hu-hu
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="pos-improvements-for-serialized-products"></a>Pénztárjavítások szerializált termékekhez
+# <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Pénztár (POS) javítások szerializált termékekhez
 
 [!include [banner](includes/banner.md)]
 

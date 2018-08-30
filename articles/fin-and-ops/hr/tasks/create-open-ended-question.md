@@ -1,5 +1,5 @@
 --- 
-title: "Kifejtős kérdés létrehozása"
+title: "Kifejtős kérdések létrehozása"
 description: "A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat."
 author: kherr75
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 317f361cbd7d63a1017cfa085afee80a5c67e0eb
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 5ae80e9c1c36ea983b21da2d9c7cca5148157b67
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-an-open-ended-question"></a>Kifejtős kérdés létrehozása
+# <a name="create-open-ended-questions"></a>Kifejtős kérdések létrehozása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

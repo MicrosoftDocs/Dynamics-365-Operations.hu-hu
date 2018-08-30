@@ -4,7 +4,7 @@
   items:
     - name: Új vagy módosult elemek
       href: get-started/whats-new.md
-    - name: Mielőtt megvásárolná a Dynamics 365 for Retail terméket
+    - name: Mielőtt megvásárolná a Retail terméket
       href: get-started/before-you-buy.md
     - name: Regisztrálás az előfizetés előnézetére
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
@@ -12,13 +12,44 @@
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Telepítési beállítások
       href: dev-itpro/choose-deployment.md
+- name: A végrehajtási életciklus megértése
+  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+  items:
+    - name: Microsoft FastTrack for Dynamics 365
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
+    - name: Felvétel
+      href: ../fin-and-ops/imp-lifecycle/onboard.md
+    - name: Előkészítés az éles indításra
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
+    - name: Éles GYIK
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
+    - name: Szolgáltatási kérelem benyújtása
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+    - name: 'Előfizetések, LCS-projektek és az Active Directory Azure bérlői által feltett gyakori kérdések'
+      href: ../fin-and-ops/get-started/subscription-overview.md
+    - name: Környezetek áthelyezése az adatközpontok között
+      href: ../fin-and-ops/get-started/move-environments-data-center.md
+    - name: Licencek áthelyezése a szerződéstípusok között
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
+    - name: LCS végrehajtási projekt áthelyezése egy másik Azure Active Directory-bérlőhöz
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
+    - name: Több LCS-projekt és termelési környezet végrehajtása ugyanazon az Azure Active Directory-bérlőn
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
+    - name: Finance and Operations – Retail projektek végrehajtása
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    - name: 'Új környezetek, VSTS-ek és alágak beállítása a Retail-projektekhez'
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    - name: Kód és környezetek frissítése a Retail-projekteknél
+      href: dev-itpro/updating-environments.md
+    - name: Tesztelési vagy teljesítménnyel kapcsolatos problémák
+      href: dev-itpro/retail-implementation-testing-performance.md
 - name: Kifizetések
   items:
     - name: Kifizetési módok
       href: payment-methods.md
     - name: 'Hitelkártya-beállítás, engedélyezés és rögzítés'
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: Fizetési módok beállítása a POS számára
+    - name: Készpénzcímletek konfigurálása a POS-hoz
       href: cash-denominations.md
     - name: Kifizetések GYIK
       href: dev-itpro/payments-retail.md
@@ -36,21 +67,21 @@
       href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
 - name: Kimutatások
   items:
-    - name: Kiskereskedelmi kimutatások áttekintése
+    - name: Kiskereskedelmi kimutatások
       href: retail-statements.md
-    - name: 'Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és feladása'
+    - name: 'Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása'
       href: tasks/create-calculate-post-statement-retail-store.md
-    - name: Kimutatásfeladás továbbfejlesztései
+    - name: Kimutatásfeladás funkcióinak továbbfejlesztései
       href: statement-posting-EOD.md
-    - name: Paraméter-konfiguráció kiskereskedelmi kimutatásokhoz
+    - name: A kiskereskedelmi kimutatásokat befolyásoló Retail-paraméterek konfigurálása
       href: tasks/parameter-configurations-retail-statements.md
-    - name: Fizetéskonfiguráció kiskereskedelmi kimutatásokhoz
+    - name: A kiskereskedelmi kimutatásokat befolyásoló fizetésimód-beállítások konfigurálása
       href: tasks/payment-configurations-retail-statements.md
     - name: Kimutatások számításához használt feladat konfigurálása és futtatása
       href: tasks/run-job-calculate-statements.md
     - name: Kimutatások feladásához használt feladat konfigurálása és futtatása
       href: tasks/run-job-post-statements.md
-    - name: Konfigurációk tárolása kiskereskedelmi kimutatásokhoz
+    - name: A kiskereskedelmi kimutatásokat befolyásoló áruház-beállítások konfigurálása
       href: tasks/store-configurations-retail-statements.md
 - name: Áfa
   items:
@@ -64,7 +95,7 @@
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Hívásközpont
   items:
-    - name: Hívásközpont áttekintése
+    - name: Hívásközpont értékesítési funkciói
       href: call-center-functionality.md
     - name: Hívásközpont-katalógusok
       href: call-center-catalogs.md
@@ -72,55 +103,55 @@
       href: create-call-center-catalogs.md
     - name: Szállítási módok és díjak beállítása
       href: configure-call-center-delivery.md
-    - name: Csalással kapcsolatos figyelmeztetések beállítása
+    - name: Csalással kapcsolatos figyelmeztetések beállítása és felhasználása
       href: set-up-fraud-alerts.md
-    - name: Hívásközpont beállítása
+    - name: Hívásközponti csatornák beállítása
       href: set-up-order-processing-options.md
-    - name: Folytonossági program beállítása egy hívásközpont számára
+    - name: Folytonossági programok beállítása hívásközpontok számára
       href: set-up-continuity-program.md
-    - name: Hívásközpont rendeléseinek várakoztatása
+    - name: Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat
       href: work-with-order-holds.md
-    - name: Fizetési lehetőségek
+    - name: Kifizetési módok
       href: work-with-payments.md
 - name: Csatorna beállítása és kezelése
   items:
-    - name: Kiindulási adatok inicializálása Retail-környezetben
+    - name: Kiindulási adatok inicializálása új Retail-környezetben
       href: enable-configure-retail-functionality.md
-    - name: Kiskereskedelmi csatornák meghatározása
+    - name: A kiskereskedelmi csatornák definiálása és karbantartása
       href: define-maintain-retail-channels.md
     - name: Szortiment kezelése
       href: assortments.md
-    - name: Online áruház áttekintése
+    - name: Online áruházak beállítása
       href: online-stores.md
-    - name: Retail hardware station konfigurálása és telepítése
+    - name: A Retail hardware station konfigurálása és telepítése
       href: retail-hardware-station-configuration-installation.md
-    - name: Retail munkaidő és jelenlét
+    - name: Munkaidő és jelenlét a Retailben
       href: retail-time-attendance.md
 - name: Modern Point of Sale (MPOS) és Cloud POS
   items:
-    - name: A Modern POS és a Cloud POS közötti választás
+    - name: Az MPOS és a Cloud POS közötti választás
       href: MPOS-or-CPOS.md
-    - name: 'POS-műveletek, online és offline'
+    - name: Online és offline pénztári műveletek
       href: pos-operations.md
-    - name: Az MPOS/CPOS bemutató adatképernyő-elrendezései
+    - name: Az MPOS és Cloud POS bemutató adatképernyő-elrendezései
       href: demo-data.md
-    - name: Termék- és vevőkeresés áttekintése a pénztárban
+    - name: Termék és vevő keresése a pénztárban
       href: POS-search-improvements.md
-    - name: Készlet ellenőrzése a pénztárnál
+    - name: Készletkeresés a pénztárban
       href: product-variants-POS.md
     - name: Hardverperifériák
       items:
-        - name: Kiskereskedelmi perifériás eszközök – áttekintés
+        - name: Kiskereskedelmi perifériák
           href: retail-peripherals-overview.md
         - name: A Microsoft által tesztelt pénztári hardverperifériák
           href: microsoft-tested-pos-hardware-peripherals.md
         - name: Kiskereskedelmiperiféria-szimulátor
           href: dev-itpro/retail-peripheral-simulator.md
-        - name: 'Csatorna-ügyfélprogramok meghatározása és fenntartása, ideértve a nyilvántartásokat és a hardverállomásokat'
+        - name: Perifériák csatlakoztatása a pénztárhoz
           href: define-maintain-channel-clients-registers-hw-stations.md
-    - name: Képernyő-elrendezés
+    - name: Képernyő-elrendezések
       items:
-        - name: POS képernyő-elrendezésének beállítása
+        - name: Pénztár képernyő-elrendezései
           href: pos-screen-layouts.md
         - name: A Retail POS képernyőelrendezés-tervező telepítése
           href: install-pos-layout-designer.md
@@ -128,17 +159,17 @@
           href: Notifications-POS.md
         - name: POS-alkalmazás és felhasználói nyelvi beállítások
           href: pos-application-user-language-settings.md
-        - name: Képek beállítása az MPOS pénztár számára
+        - name: Képek beállítása és kezelése az MPOS esetében
           href: set-up-manage-images-retail-mpos.md
-    - name: Infókódok áttekintése
+    - name: Infókódok és infókódcsoportok
       href: info-codes-retail.md
     - name: Pénztárjavítások szerializált termékekhez
       href: serialized-inventory.md
     - name: Termékajánlatok
       items:
-        - name: Személyre szabott termékajánlatok áttekintése
+        - name: Személyre szabott termékajánlatok
           href: personalized-product-recommendations.md
-        - name: Ajánlások vezérlőelem felvétele a pénztári eszközön
+        - name: Ajánlások vezérlőelem felvétele a pénztári eszközökön
           href: add-recommendations-control-pos-screen.md
     - name: Kapcsolat nélküli pénztár funkciói
       href: pos-offline-functionality.md
@@ -146,7 +177,7 @@
       href: shift-drawer-management.md
     - name: Vevői rendelések
       items:
-        - name: Vevői rendelések – áttekintés
+        - name: Vevői rendelések az MPOS-ben
           href: customer-orders-overview.md
         - name: Hibrid vevői rendelések
           href: hybrid-customer-orders.md
@@ -154,31 +185,31 @@
       items:
         - name: Jutalékok követése a POS készülékben értékesítési csoportok révén
           href: pos-sales-groups-track-commissions.md
-    - name: Rendelés leszállítása másik üzletből
+    - name: Rendelések szállítása egy másik áruházból
       href: charge-send.md
     - name: Eszköz aktiválása
       items:
-        - name: Az MPOS pénztár konfigurálása és telepítése
+        - name: 'Az MPOS konfigurálása, telepítése és aktiválása'
           href: retail-modern-pos-device-activation.md
-        - name: Kiterjesztett bejelentkezés beállítása felhőalapú pénztárhoz és MPOS pénztárhoz
+        - name: Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hez
           href: extended-logon.md
-        - name: Retail számlák és eszközök kezelése a központból
+        - name: A Retail aktiválási fiókjainak kezelése és az eszközök ellenőrzése
           href: set-up-activation-accounts-validate-devices-hq.md
-    - name: Bevételezések
+    - name: Nyugták
       items:
-        - name: Nyugtasablonok beállítása
+        - name: Nyugtaformátumok beállítása és tervezése
           href: receipt-templates-printing.md
         - name: E-mailes nyugták küldése MPOS pénztárból
           href: email-receipts.md
-    - name: Feladatrögzítő és Súgó a pénztárhoz
+    - name: Feladatrögzítő és Súgó az MPOS-hez és a Cloud POS-hez
       href: task-recorder-retail-pos.md
 - name: Rendelésteljesítés
   items:
-    - name: Áruházi rendelés teljesítése – áttekintés
+    - name: Rendelésteljesítés az üzletben
       href: Order-fulfillment-overview.md
-    - name: Állítsa be a teljesítést az áruházban
+    - name: Rendelésteljesítés beállítása az üzletek esetében
       href: Order-fulfillment-POS-setup.md
-    - name: Értesítések engedélyezése a pénztárnál
+    - name: Rendelési értesítések megjelenítése a pénztárban
       href: Notifications-POS.md
 - name: Megfigyelés és elemzés
   items:
@@ -192,7 +223,7 @@
       href: assess-customer-product-profitability.md
     - name: Az üzletteljesítmény elemzése
       href: store-performance-information.md
-    - name: RFM-profilelemzés beállítása
+    - name: 'Frissesség, gyakoriság és pénzügyi szempont szerinti (Recency, Frequency, Monetary, RFM) elemzés beállítása'
       href: set-up-rfm-analysis.md
 - name: Engedmények és ármódosítások
   items:
@@ -204,23 +235,23 @@
       href: optimal-combination-overlapping-discounts.md
     - name: Csatornaspecifikus engedmények definiálása
       href: define-channel-specific-discounts.md
-    - name: Kiskereskedelmi termékek engedményeinek megakadályozása
+    - name: Lehetőségek a kiskereskedelmi termékekre vonatkozó engedmény megakadályozására
       href: prevent-discounts.md
-    - name: Kiskereskedelmi értékesítési utalványok létrehozása
+    - name: Kiskereskedelmi értékesítési utalványok beállítása
       href: retail-coupons.md
-- name: Termékek és termékkihelyezés
+- name: Termékek és értékesítés
   items:
     - name: Termékek adatainak áttekintése
       href: ../supply-chain/pim/product-information.md
     - name: Kiskereskedelmi hierarchiák
       href: retail-hierarchies.md
-    - name: Attribútumok és attribútumcsoportok áttekintése
+    - name: Atribútumok és attribútumcsoportok
       href: attribute-attributegroups-lifecycle.md
     - name: Attribútumok létrehozása és kezelése
       href: create-manage-attributes.md
     - name: Kiskereskedelmi termékek beállítása
       href: set-up-retail-products.md
-    - name: Továbbfejlesztett termék- és kategóriakezelés
+    - name: Retail-termékkategóriák és termékek kezelése
       href: category-management-product-creation.md
     - name: Termékdimenziók
       href: ../supply-chain/pim/product-dimensions.md
@@ -230,7 +261,7 @@
       href: set-up-bar-code-masks.md
     - name: Szortimentek beállítása
       href: set-up-assortments.md
-    - name: Szortimenten kívüli termékek eladása és visszavétele
+    - name: Egy üzlet szortimentjében nem szereplő termékek eladása és visszavétele
       href: sell-return-outside-assortments.md
     - name: Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások
       href: ../supply-chain/production-control/default-order-settings.md
@@ -238,7 +269,7 @@
       href: ../supply-chain/pim/search-products-product-variants.md
 - name: Hűség
   items:
-    - name: Vásárlói hűségprogram beállítása
+    - name: Vásárlói hűségprogramok beállítása
       href: set-up-customer-loyalty-program.md
 - name: Készlet
   items:
@@ -272,29 +303,29 @@
       href: ../talent/departments-jobs-positions.md
     - name: Feladat összetevőinek beállítása
       href: ../talent/create-job.md
-- name: Honosítási és szabályozó funkciók​
+- name: Honosítási és szabályozó funkciók
   items:
     - name: Franciaország
       items:
-        - name: Pénztárgépek Franciaország esetében
+        - name: Pénztárgép funkció
           href: localizations/emea-fra-cash-registers.md
-        - name: Pénztárgépek telepítésére vonatkozó irányelvek Franciaország esetében
+        - name: Pénztárgépek telepítésére vonatkozó irányelvek
           href: localizations/emea-fra-deployment.md
     - name: India
       items:
-        - name: GST integrációja pénztárgépekhez
+        - name: Áruk és szolgáltatások adójának (GST) integrálása a pénztárgépek esetén
           href: localizations/apac-ind-cash-registers.md
-        - name: Pénztárgépek telepítésére vonatkozó irányelvek India esetében
+        - name: Pénztárgépek telepítésére vonatkozó irányelvek
           href: localizations/apac-ind-loc-deployment-guidelines.md
     - name: Norvégia
       items:
-        - name: Pénztárgépek Norvégia esetében
+        - name: Pénztárgép funkció
           href: localizations/emea-nor-cash-registers.md
-        - name: Pénztárgépek telepítésére vonatkozó irányelvek Norvégia esetében
+        - name: Pénztárgépek telepítésére vonatkozó irányelvek
           href: localizations/emea-nor-loc-deployment-guidelines.md
     - name: Svédország
       items:
-        - name: Pénztárgépek Svédország esetében
+        - name: Pénztárgép funkció
           href: localizations/emea-swe-cash-registers.md
         - name: A Retail POS integrációja ellenőrzőegységekkel
           href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
@@ -306,41 +337,41 @@
       href: ../supply-chain/pim/tasks/configure-linked-products.md
     - name: Termék/alaptermék kiadása más jogi személyeknek
       href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
-    - name: Alapár- és kereskedelmi megállapodások
+    - name: Csatornaspecifikus kereskedelmi megállapodások létrehozása
       href: tasks/base-price-trade-agreements.md
-    - name: Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához
+    - name: Kereskedelmi megállapodások létrehozása kategória-árazási szabályokat segítségével
       href: tasks/category-pricing-rules-trade-agreements.md
-    - name: ' Hitelkártya-feldolgozás konfigurálása'
+    - name: Hitelkártya-feldolgozás konfigurálása
       href: tasks/configure-credit-card-processing.md
-    - name: ' Funkcióprofil konfigurálása értékesítési képviselőnek'
+    - name: Funkcióprofilok konfigurálása értékesítési képviselőknek
       href: tasks/configure-functionality-profile-sales-representative.md
-    - name: ' Gépi tanulási alapú termékajánlások konfigurálása'
+    - name: Gépi tanulási alapú termékajánlások konfigurálása
       href: tasks/configure-machine-learning-product-recommendations.md
-    - name: ' Eszköz létrehozása és hozzárendelése'
+    - name: Eszközök létrehozása és hozzárendelése jegyzékekhez
       href: tasks/create-associate-device.md
-    - name: Hardverállomás létrehozása és hozzárendelése
+    - name: Hardverállomások létrehozása
       href: tasks/create-associate-hardware-station.md
-    - name: Pénztárgépek létrehozása és hozzárendelése
+    - name: POS-pénztárgépek létrehozása
       href: tasks/create-associate-registers.md
     - name: Hívásközponti rendelések létrehozása
       href: tasks/create-call-center-orders.md
     - name: Pénzügyi dimenziók létrehozása POS-pénztárgépekhez és a dimenzióértékek konfigurálása a pénztárgépeken
       href: tasks/create-financial-dimensions-pos.md
-    - name: ' Pénzügyi dimenziók létrehozása kiskereskedelmi csatornákhoz és a dimenzióértékek konfigurálása az üzletekben'
+    - name: Pénzügyi dimenziók létrehozása kiskereskedelmi csatornákhoz és a dimenzióértékek konfigurálása az üzletekben
       href: tasks/create-financial-dimensions-retail-channels.md
-    - name: ' Online csatornák létrehozása és a csatorna attribútumainak meghatározása'
+    - name: Online csatornák létrehozása és a csatorna attribútumainak meghatározása
       href: tasks/create-online-channel-define-channel-attributes.md
-    - name: ' POS-engedélycsoportok létrehozása'
+    - name: POS-engedélycsoportok létrehozása
       href: tasks/create-pos-permission-groups.md
-    - name: ' Vizuális POS-profil létrehozása  '
+    - name: Vizuális profilok létrehozása pénztárakhoz
       href: tasks/create-pos-visual-profile-2016-02.md
-    - name: ' Termékcsomagok létrehozása beszerzési rendelések'
+    - name: Termékcsomagok létrehozása beszerzési rendelések
       href: tasks/create-product-packages-purchase-orders.md
-    - name: ' Hívásközponti csatorna és a csatorna attribútumainak meghatározása'
+    - name: Hívásközponti csatornák létrehozása és a csatornák attribútumainak meghatározása
       href: tasks/define-call-center-channel-channel-attributes.md
-    - name: ' Csatornaattribútumok meghatározása'
+    - name: Csatornaattribútumok meghatározása
       href: tasks/define-channel-attributes.md
-    - name: ' Folytonossági ütemezések meghatározása'
+    - name: Folytonossági ütemezések meghatározása
       href: tasks/define-continuity-schedules.md
     - name: ' Hűségprogramok meghatározása'
       href: tasks/define-loyalty-programs.md
@@ -352,36 +383,36 @@
       href: tasks/design-relationships-between-organizational-units.md
     - name: Szortimentek kezelése
       href: tasks/manage-assortments-2016-11.md
-    - name: Önkiszolgálás hardverállomás letöltéséhez
+    - name: Hardverállomások letöltése önkiszolgáló segítségével
       href: tasks/perform-self-service-download-hardware-station.md
     - name: Online értékesítések és kifizetések feladása
       href: tasks/posting-online-sales-payments.md
-    - name: ' Hűségpont-helyesbítések feldolgozása'
+    - name: Hűségpont-helyesbítések feldolgozása
       href: tasks/process-loyalty-reward-point-adjustments.md
-    - name: Termékek elosztása az elosztási központból az üzletbe a központi elosztás használatával
+    - name: Termékek elosztása az elosztási központokból az üzletekbe a központi elosztás használatával
       href: tasks/push-products-distribution-center-store-buyers-push.md
-    - name: Kiskereskedelmi ármódosítások
+    - name: Kiskereskedelmi ármódosítások létrehozása
       href: tasks/retail-price-adjustments.md
     - name: Kulcsrakész jelentések generálása és futtatása
       href: tasks/run-out-box-reports.md
     - name: Az áttároláshoz és a központi elosztáshoz tartozó szabályok és paraméterek beállítása
       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-    - name: Folytonos program használata
+    - name: Folytonossági programok eladása és értékesítési rendelések feldolgozása
       href: tasks/use-continuity-program.md
-    - name: Dolgozó konfigurálása
+    - name: Kiskereskedelmi dolgozók konfigurálása
       href: tasks/worker.md
-- name: Kiskereskedelmi fejlesztés és felügyelet
+- name: Kiskereskedelmi fejlesztés és adminisztráció
   href: dev-itpro/dev-retail-home-page.md
   items:
     - name: Felépítés
       items:
-        - name: A Microsoft Dynamics 365 for Finance and Operations – Retail
+        - name: Kiskereskedelem összetevői
           href: retail-components.md
         - name: Retail Server-architektúra
           href: dev-itpro/retail-server-architecture.md
-        - name: Kommunikáció a kiskereskedelmi csatornán
+        - name: A Commerce Data Exchange és a kiskereskedelmi csatorna kommunikációja
           href: dev-itpro/define-retail-channel-communications-cdx.md
-        - name: MPOS architektúra
+        - name: Retail Modern POS-architektúra
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Az online kiskereskedelmi csatorna közzétételi felépítése
           href: dev-itpro/retail-online-store-publishing-architecture.md
@@ -393,17 +424,17 @@
           href: retail-onprem.md
     - name: Telepítés és gyorsjavítások
       items:
-        - name: A Retail Store Scale Unit áttekintése
+        - name: Retail Store Scale Unit
           href: dev-itpro/retail-store-system-begin.md
         - name: A Retail Store Scale Unit konfigurálása és telepítése
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
         - name: A Retail Modern POS konfigurálása és telepítése
           href: retail-modern-pos-device-activation.md
-        - name: Retail számlák és eszközök kezelése a központból
+        - name: Retail-számlák és eszközök kezelése a központból
           href: set-up-activation-accounts-validate-devices-hq.md
         - name: Retail POS eszköz aktiválása
           href: dev-itpro/retail-device-activation.md
-        - name: A kiskereskedelmi Cloud POS biztosítása
+        - name: A Cloud POS biztonságossá tétele megosztott környezetekben
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: A Retail Hardware Station konfigurálása és telepítése
           href: retail-hardware-station-configuration-installation.md
@@ -415,9 +446,9 @@
           href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
     - name: Frissítés és N-1-támogatás
       items:
-        - name: A frissítés és az N-1-támogatás áttekintése
+        - name: Frissítés és N-1 támogatás a Retailhez
           href: dev-itpro/overview-upgrade-n-minus1.md
-        - name: N-1-összetevők telepítése
+        - name: 'Fokozatos bevezetés (N-1) telepítése, konfigurálása és átállás'
           href: dev-itpro/n-1-installation-configuration.md
     - name: Implementációs segítség
       items:
@@ -437,57 +468,57 @@
           href: pos-screen-layouts.md
         - name: A POS képernyőelrendezés-tervező telepítése
           href: install-pos-layout-designer.md
-        - name: MPOS konfigurálása offline módhoz
+        - name: Retail Modern POS offline módban
           href: dev-itpro/retail-modern-pos-offline.md
         - name: POS Dual megjelenítési nézet kiterjesztése
           href: dev-itpro/pos-dual-display-extension.md
-        - name: MPOS- és Cloud POS-eseményindító bővíthetősége
+        - name: A Retail Modern POS és a Cloud POS-eseményindító bővíthetősége
           href: dev-itpro/modern-pos-trigger-extensibility.md
-        - name: Egyéni vezérlő hozzáadása a POS-nézethez
+        - name: Egyéni vezérlők hozzáadása a pénztárnézetekhez
           href: dev-itpro/pos-custom-control.md
-        - name: Új POS-művelet hozzáadása a POS-elrendezéshez
+        - name: Pénztár-műveletek hozzáadása a pénztár-elrendezésekhez a gombrácstervezővel
           href: dev-itpro/add-POS-operations.md
         - name: POS-kifizetés kiterjesztése
           href: dev-itpro/pos-payment-extension.md
-        - name: Külső ajándékutalvány-támogatás
+        - name: Támogatás külső ajándékutalványokhoz
           href: dev-itpro/gift-card.md
-        - name: Retail Experience alkalmazás létrehozása
+        - name: Márkajelzés létrehozása és alkalmazása a Retail Experience alkalmazáshoz
           href: dev-itpro/create-retail-experience-app.md
-    - name: Hardverállomás áttekintése és bővíthetősége
+    - name: Hardverállomás és bővíthetősége
       href: dev-itpro/hardware-station-extensibility.md
     - name: Retail Server bővíthetősége
       items:
         - name: Retail Server OData-vezérlőjének kiterjesztése
           href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Webes API- és OData-vezérlők
+        - name: Webes API-vezérlő létrehozása a Retail Serverhez
           href: dev-itpro/odata-controllers-api.md
-        - name: Retail Server ügyfél és fogyasztói API-k
+        - name: Retail Server – ügyfél és fogyasztói API-k
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Metaadatok kiterjesztése
+        - name: Az alapértelmezett Retail Server metadata-vezérlő kiterjesztése
           href: dev-itpro/extend-metadata.md
-        - name: A kereskedelmi futtatókörnyezet kiterjesztése a POS offline mód támogatásához
+        - name: A CRT szolgáltatása hívása offline módban
           href: dev-itpro/call-crt-service-offline.md
-    - name: Kereskedelmi futtatókörnyezet bővíthetősége
+    - name: Commerce runtime (CRT) bővíthetősége
       items:
-        - name: Kereskedelmi futtatókörnyezet áttekintése
+        - name: A CRT architektúrája és konfigurálása
           href: dev-itpro/commerce-runtime-overview.md
-        - name: Kereskedelmi futtatókörnyezet szolgáltatásai
+        - name: CRT-szolgáltatások
           href: dev-itpro/crt-services.md
-        - name: A kereskedelmi futtatókörnyezet és a Retail Server bővíthetősége
+        - name: A CRT és a Retail Server bővíthetősége
           href: dev-itpro/commerce-runtime-extensibility.md
-        - name: Ügyfélpreferencia-adatok hozzáadása a csatornaadatbázishoz
+        - name: Ügyfélpreferencia-adatok hozzáadása a csatornaadatbázisokhoz
           href: dev-itpro/add-customer-preference-channel.md
-        - name: Tulajdonságok hozzáadása az értékesítési rendeléshez
+        - name: Tulajdonságok hozzáadása az értékesítési rendelésekhez
           href: dev-itpro/add-properties-sales-order.md
-        - name: A kereskedelmi futtatókörnyezet bővíthetősége és eseményindítói
+        - name: A CRT bővíthetősége és az eseményindítók
           href: dev-itpro/commerce-runtime-extensibility-trigger.md
-        - name: 'Eseményindító-példa: Zárolási tranzakciók'
+        - name: Tranzakciók zárolása eseményindítók segítségével
           href: dev-itpro/trigger-example-blocking-transaction.md
-        - name: 'Eseményindító-példa: Visszaküldési irányelv'
+        - name: Visszavételi irányelvek bevezetése eseményindítók segítségével
           href: dev-itpro/trigger-example-return-policy.md
     - name: Elektronikus kereskedelem bővíthetősége
       items:
-        - name: Online áruház konfigurálása
+        - name: Online áruházak beállítása
           href: dev-itpro/configure-online-store.md
         - name: Hitelesítési szolgáltatók konfigurálása
           href: dev-itpro/configure-authentication-providers.md
@@ -497,55 +528,57 @@
           href: dev-itpro/ecommerce-platform-sdk.md
     - name: Fizetési csatlakozó bővíthetősége
       items:
-        - name: Fizetés integrálása fizetési terminállal
+        - name: Fizetési integráció létrehozása fizetési terminálhoz
           href: dev-itpro/end-to-end-payment-extension.md
         - name: Fizetési csatlakozó és fizetési eszköz alkalmazása (tanulmány)
           href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
-        - name: Fizetési csatlakozó telepítése
+        - name: Fizetési csatlakozók telepítése
           href: dev-itpro/deploy-payment-connector.md
-        - name: Windows-telepítő létrehozása egy fizetési csatlakozóhoz
+        - name: Egyéni honosított hibaüzenetek létrehozása a fizetési terminálokhoz tartozó bővítményekhez
+          href: dev-itpro/payment-custom-error-messages.md
+        - name: Windows-telepítők létrehozása fizetési csatlakozókhoz
           href: dev-itpro/create-windows-installer-payment-connector.md
     - name: Retail SDK
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
-        - name: A Retail SDK integrálása a folyamatos buildrendszerrel
+        - name: A Retail és Finance and Operations buildrendszereinek egyesítése
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: A Retail SDK bővíthetőségi mintái
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-        - name: Retail SDK-csomag
+        - name: Kiskereskedelmi telepíthető csomagok létrehozása
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-        - name: 'Retail SDK-minták '
+        - name: Retail SDK-minták
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
           items:
             - name: Szállítólevelek kiterjesztési pontjai
               href: dev-itpro/extensions-shipping-carrier-integration.md
-        - name: A csatorna-adatbázis (DB) bővítményei
+        - name: A csatorna-adatbázis bővítményei
           href: dev-itpro/channel-db-extensions.md
-        - name: CDX-bővíthetőség
+        - name: Az egyéni CDX-szinkronizálás engedélyezése bővítménnyel
           href: dev-itpro/cdx-extensibility.md
-        - name: Egyéni mezők hozzáadása a pénztár panelhez
+        - name: Egyéni mezők hozzáadása a pénztár Összegek paneljéhez
           href: dev-itpro/custom-field-pos-totals.md
-        - name: Rendelés attribútumai
+        - name: Rendelési attribútumok meghatározása és beállítása
           href: dev-itpro/order-attributes.md
         - name: Vevőattribútumok
           href: dev-itpro/customer-attributes.md
-        - name: 'A Retail Typescript és a C# proxy'
+        - name: 'A Retail Typescript és a C# proxyk'
           href: dev-itpro/typescript-proxy-retail-pos.md
         - name: Retail POS-minták futtatása
           href: dev-itpro/pos-run-samples.md
-        - name: POS nézetek kibővítése egyéni oszlopoknak és az alkalmazássor gombjainak hozzáadásával
+        - name: Pénztárnézetek kibővítése egyéni oszlopok és alkalmazássáv-gombok hozzáadásához
           href: dev-itpro/pos-view-extension.md
         - name: Egyéni vezérlőelemek hozzáadása a Retail Modern POS tranzakciós oldalaihoz
           href: dev-itpro/pos-custom-transaction.md
         - name: Egyéni oszlopok hozzáadása a POS tranzakciós rácsához
           href: dev-itpro/pos-custom-transaction-column.md
-        - name: 'POS API meghívása, illetve művelet egy POS bővítménytől'
+        - name: Pénztár API-k meghívása vagy pénztárbővítményekből indított műveletek
           href: dev-itpro/pos-api-extension.md
         - name: A Retail Modern POS eseményindítói és nyomtatása
           href: dev-itpro/pos-trigger-printing.md
-        - name: Egyéni vezérlő hozzáadása a Retail Modern POS nem képernyő tervező alapú nézethez
+        - name: Egyéni vezérlők hozzáadása nem képernyő tervező alapú pénztárnézetekhez
           href: dev-itpro/pos-control-non-screen.md
-        - name: Konfigurálási lépések felhő által szolgáltatott fejlesztési mezőkön dolgozó Retail fejlesztőknek
+        - name: Fejlesztések felhőbeli fejlesztési környezetekben rendszergazdai hozzáférés nélkül
           href: dev-itpro/cloud-dev-box.md
     - name: Kereskedelmi futtatókörnyezet
       items:

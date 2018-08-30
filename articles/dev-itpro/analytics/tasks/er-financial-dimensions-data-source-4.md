@@ -1,5 +1,5 @@
 --- 
-title: "Jelentés futtatása pénzügyi dimenziók adatforrásként történő használatára"
+title: "Jelentések futtatása, melyek pénzügyi dimenziókat használnak adatforrásként"
 description: "A következő lépések leírják, hogy egy rendszergazda vagy az elektronikus jelentések fejlesztője szerepkörhöz hozzárendelt felhasználó miként konfigurálhat egy elektronikusjelentés-modellt (ER-modell) a pénzügyi dimenzió használatához az ER-jelentések adatforrásaként."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 47ba48461a1c502a93df416d1acac1e85a841079
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6569f9b97d5d15bf74b8b3882bf4bab50970dd0f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source"></a>Jelentés futtatása pénzügyi dimenziók adatforrásként történő használatára
+# <a name="run-reports-that-use-financial-dimensions-as-data-sources"></a>Jelentések futtatása, melyek pénzügyi dimenziókat használnak adatforrásként
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

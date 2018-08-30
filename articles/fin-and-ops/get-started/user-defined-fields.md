@@ -1,5 +1,5 @@
 ---
-title: "Egyéni mezők"
+title: "Egyéni mezők létrehozása és használata"
 description: "Ez a témakör bemutatja, hogyan teszi lehetővé a Microsoft Dynamics 365 for Finance and Operations, hogy bizonyos felhasználók egyéni mezők létrehozásával az alkalmazást saját cégük igényeire szabhassák."
 author: jasongre
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f2aa55ae4258f5ef81456b92278415297c194d66
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 1ce709a4b5cce145d841b844a21a5218ba250c87
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="custom-fields"></a>Egyéni mezők
+# <a name="create-and-work-with-custom-fields"></a>Egyéni mezők létrehozása és használata
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,7 +54,7 @@ A következő lépések leírják az egyéni mező létrehozásának és a mező
           - Ha a szöveg adattípust választja, megadhatja a mezőben megadható szöveg maximális hosszát is. 
           - Ha a választólista adattípust választja, kiválaszthatja a mezőben érvényes értékek listáját is.  
      3.   Adjon nevet, címkét és súgószöveget a mezőnek. A név megegyezik az adatbázisban található fizikai mezőnévvel, míg a címke és a súgószöveg a felhasználói felületen mutatják be ezt a mezőt.  
-8.   Ha ez az egyetlen mező, amelyet létre kíván hozni ezen a képernyőn, kattintson a **Mentés** elemre. Ha szeretne létrehozni további mezőket is, kattintson a **Mentés és új** elemre, és ugorjon vissza a 7. lépésre. Ne feledje, hogy jelenleg **táblánként 120 egyedi mező** hozható létre.
+8.   Ha ez az egyetlen mező, amelyet létre kíván hozni ezen a képernyőn, kattintson a **Mentés** elemre. Ha szeretne létrehozni további mezőket is, kattintson a **Mentés és új** elemre, és ugorjon vissza a 7. lépésre. Ne feledje, hogy jelenleg **táblánként 20 egyedi mező** hozható létre.
 9.   Az **Új mező létrehozása** párbeszédpanel bezárásával visszatér a **Mezők beillesztése** párbeszédpanelre. Az újonnan hozzáadott egyéni mezők automatikusan bejelölésre kerülnek az képernyőre illesztendő mezők listáján.  
 10.   Kattintson a **Beillesztés** elemre a megjelölt mező a képernyő kijelölt területére történő beszúrásához. 
 11.   **Opcionális lehetőség:** Engedélyezze az **Áthelyezés** módot a személyre szabási eszköztáron az új mezők a kijelölt terület kívánt helyére való áthelyezéséhez. Lásd [A felhasználói felület testreszabása](personalize-user-experience.md) című részt a képernyők személyes használatra való optimalizálására szolgáló személyre szabási szolgáltatások használatáról.  

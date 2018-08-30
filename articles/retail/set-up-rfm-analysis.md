@@ -1,5 +1,5 @@
 ---
-title: "Profilelemzés beállítása"
+title: "Recency/gyakorisági/monetáris (RFM) elemzés beállítása"
 description: "Ez a témakör bemutatja, hogy miként állíthatók be a vevő Recency, gyakorisági és pénzügyi (RFM) elemzésének."
 author: josaw1
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
-ms.openlocfilehash: c59d12c54563b883ae6d8ea8594f423f02797f4f
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 161e526260503d7b91b4695b7c4297cf89327ea2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-rfm-analysis"></a>Profilelemzés beállítása
+# <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Recency/gyakorisági/monetáris (RFM) elemzés beállítása
 
 [!include [banner](includes/banner.md)]
 
