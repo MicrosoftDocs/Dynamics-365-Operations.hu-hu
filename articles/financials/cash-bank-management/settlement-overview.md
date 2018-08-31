@@ -3,7 +3,7 @@ title: "Kiegyenlítés – áttekintés"
 description: "Ez a cikk a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: a96bdd8088e72bc0526589bde94242c3acf39a54
+ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
+ms.openlocfilehash: dc986b083082b590627f171a359f95099e21d2f5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 08/31/2018
 
 ---
 
@@ -51,7 +51,6 @@ ms.lasthandoff: 08/07/2018
 -   <span data-ttu-id="671fc-152">Ha a kifizetés összege egyenlő a számla egyenlegével, akkor a számla és a kifizetés is lezárul és mindkettő egyenlege 0,00 lesz.</span><span class="sxs-lookup"><span data-stu-id="671fc-152">If the payment amount equals the invoice amount, both the payment and the invoice are closed, and the balance of both is 0.00.</span></span>
 
 <span data-ttu-id="671fc-153">Ha a [kifizetés kevesebb mint a számla összege](../accounts-payable/vendor-payments-partial-amount.md) egy készpénzfizetési engedmény, leírás vagy alulfizetés miatt, akkor a számla és a kifizetés még mindig lezárható, a kiegyenlítés beállításaitól függően a kötelezettség paraméterek és a kinnlevőségi paraméterek szerint.</span><span class="sxs-lookup"><span data-stu-id="671fc-153">If a [payment is less than the invoice amount](../accounts-payable/vendor-payments-partial-amount.md) because of a cash discount, write-off, or underpayment, the invoice and payment might still be closed, depending on the setup of settlement in Accounts payable parameters and Accounts receivable parameters.</span></span> <span data-ttu-id="671fc-154">Egy kiegyenlítés létre is hozhat tranzakciókat.</span><span class="sxs-lookup"><span data-stu-id="671fc-154">Settlement can also generate transactions.</span></span> <span data-ttu-id="671fc-155">Például egy számla és kifizetés kiegyenlítése termelhet készpénzfizetés engedményt, realizált nyereséget vagy veszteséget, áfakorrekciókat, leírásokat vagy fillérkülönbözeteket.</span><span class="sxs-lookup"><span data-stu-id="671fc-155">For example, the settlement of an invoice and payment might produce a cash discount, realized gain or loss, sales tax adjustments, write-offs, or penny differences.</span></span>
-
 
 
 
