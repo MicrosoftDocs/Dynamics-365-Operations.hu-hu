@@ -3,7 +3,7 @@ title: "Kiegyenlítés – áttekintés"
 description: "Ez a cikk a rendezési folyamat általános ismertetését tartalmazza. Leírja a rendezhető tranzakciókat, azt, hogy mikor és hogyan egyenlíthetők ki ezek és a kiegyenlítési folyamat eredményeit."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,8 +16,8 @@ ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
 ms.openlocfilehash: 2f1f11a7f1340d408374e658ae616ffa99f3c911
@@ -51,7 +51,6 @@ Ahogy a tranzakciók kifizetésre kerülnek az egyes tranzakciók hátralékos e
 -   Ha a kifizetés összege egyenlő a számla egyenlegével, akkor a számla és a kifizetés is lezárul és mindkettő egyenlege 0,00 lesz.
 
 Ha a [kifizetés kevesebb mint a számla összege](../accounts-payable/vendor-payments-partial-amount.md) egy készpénzfizetési engedmény, leírás vagy alulfizetés miatt, akkor a számla és a kifizetés még mindig lezárható, a kiegyenlítés beállításaitól függően a kötelezettség paraméterek és a kinnlevőségi paraméterek szerint. Egy kiegyenlítés létre is hozhat tranzakciókat. Például egy számla és kifizetés kiegyenlítése termelhet készpénzfizetés engedményt, realizált nyereséget vagy veszteséget, áfakorrekciókat, leírásokat vagy fillérkülönbözeteket.
-
 
 
 
