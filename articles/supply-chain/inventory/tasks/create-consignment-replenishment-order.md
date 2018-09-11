@@ -1,21 +1,22 @@
----
+--- 
 title: "Új bizományosi feltöltési rendelés létrehozása"
 description: "Ez az eljárás bemutatja a bizományosi feltöltési rendelés létrehozását, ahol nyomon követhetők a várható szállítások egy szállítótól a bizományosi készletbe."
 author: mkirknel
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
 ms.openlocfilehash: f7f8005ec9e723c94d53e6ab81f04ee388c83faa
@@ -60,7 +61,7 @@ Ez az eljárás bemutatja a bizományosi feltöltési rendelés létrehozását,
 ## <a name="receive-items"></a>Cikkek átvétele
 1. Kattintson a Termékbevételezés elemre.
 2. Írjon be egy értéket a Külső termékbevételezés mezőbe.
-3. A Mennyiség mezőben adjon meg egy számot, amely kisebb az ott látható számnál.
+3. A Mennyiség mezőben adjon meg egy számot, amely kisebb az ott látható számnál. 
 4. Kattintson az OK gombra.
 
 ## <a name="check-the-on-hand-inventory"></a>Ellenőrizze az aktuális készletet
@@ -70,4 +71,5 @@ Ez az eljárás bemutatja a bizományosi feltöltési rendelés létrehozását,
     * A cikkek, amelyek a szállító tulajdonában álló bizományosi készletként érkeztek, aktuális készletként állnak rendelkezésre. A bizományosi feltöltési rendelés fennmaradó mennyisége a Megrendelve összesen mezőben jelenik meg.  
 4. Zárja be a lapot.
 5. Kattintson a Bezárás gombra.
+
 

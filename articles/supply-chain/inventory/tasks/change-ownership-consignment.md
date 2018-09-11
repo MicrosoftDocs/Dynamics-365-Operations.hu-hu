@@ -1,21 +1,22 @@
----
+--- 
 title: "Bizományosi készlet tulajdonosának módosítása gyártási igény alapján"
 description: "Ez az eljárás bemutatja, hogyan módosítható a bizományosi készlet tulajdonosa a szállítóról a jogi személyére, amikor a készletre gyártási igény van."
 author: perlynne
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 5925f5423d596adc4326dfff4734de2afd80b5a8
@@ -51,4 +52,5 @@ Ez az eljárás bemutatja, hogyan módosítható a bizományosi készlet tulajdo
     * A napló feladásakor megtörténik a szállító tulajdonában lévő készlet felszabadítása egy „Tulajdonosváltozás” hivatkozás segítségével. Ezután megtörténik a készlet érkeztetése aktuális készletként egy készlettranzakcióval, amely egy beszerzési rendelés termékbevételezéssel frissül. Vegye figyelembe, hogy csak a feladott naplóval kapcsolatos tranzakciók jönnek létre. Nem jönnek létre várt készlettranzakciók.  
 2. Kattintson az OK gombra.
 3. Zárja be a lapot.
+
 
