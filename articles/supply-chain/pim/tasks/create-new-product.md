@@ -3,23 +3,24 @@ title: "Új termék létrehozása"
 description: "Ez a feladat bemutatja, hogy hogyan lehet az új megosztott terméket létrehozni."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/08/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 62cfb3a8e348f5083d5681548d57715da0454a17
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: c214ffaabfd0d185d46b9d80a514f589cc612050
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-new-product"></a><span data-ttu-id="0f47d-103">Új termék létrehozása</span><span class="sxs-lookup"><span data-stu-id="0f47d-103">Create a new product</span></span>

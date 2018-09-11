@@ -1,26 +1,27 @@
----
+--- 
 title: "Új raktárelrendezés létrehozása"
 description: "Ez az eljárás bemutatja, hogyan adjon meg adatokat a raktár helyeivel kapcsolatban."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 11ad27e68e8eb499b2cf8e477d3dbf51d930b736
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 7db15eb5d80291641f0d0398d236b5e883cafcaf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="91505-103">Új raktárelrendezés létrehozása</span><span class="sxs-lookup"><span data-stu-id="91505-103">Create a new warehouse layout</span></span>
@@ -49,7 +50,7 @@ ms.lasthandoff: 08/07/2018
 7. <span data-ttu-id="91505-122">A Helynevek szakasz bővítésének átváltása.</span><span class="sxs-lookup"><span data-stu-id="91505-122">Toggle the expansion of the Location names section.</span></span>
     * <span data-ttu-id="91505-123">A fejezetben leírt lehetőségek helynevek alapértelmezett formátumát adják meg.</span><span class="sxs-lookup"><span data-stu-id="91505-123">The options in this section define the default format for location names.</span></span> <span data-ttu-id="91505-124">Ebben a példában megadjuk a folyosószámot, az állvány számát, illetve a polcszámot.</span><span class="sxs-lookup"><span data-stu-id="91505-124">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
 8. <span data-ttu-id="91505-125">A folyosó figyelembevételével beállítása: Igen.</span><span class="sxs-lookup"><span data-stu-id="91505-125">Set the Include aisle option to Yes.</span></span>
-9. <span data-ttu-id="91505-126">Az állvány figyelembevételével beállítása: Igen.</span><span class="sxs-lookup"><span data-stu-id="91505-126">Set the Include rack option to Yes.</span></span>
+9. <span data-ttu-id="91505-126">Az állvány figyelembevételével beállítása: Igen.</span><span class="sxs-lookup"><span data-stu-id="91505-126">Set the Include rack option to Yes.</span></span> 
 10. <span data-ttu-id="91505-127">A Formátum mezőbe írjon be egy értéket az állványhoz.</span><span class="sxs-lookup"><span data-stu-id="91505-127">In the Format field, for the rack, type a value.</span></span>
     * <span data-ttu-id="91505-128">Példa: -##</span><span class="sxs-lookup"><span data-stu-id="91505-128">For example: -##</span></span>  
 11. <span data-ttu-id="91505-129">A polc figyelembevételével beállítása: Igen.</span><span class="sxs-lookup"><span data-stu-id="91505-129">Set the Include shelf option to Yes.</span></span>
@@ -74,4 +75,5 @@ ms.lasthandoff: 08/07/2018
 14. <span data-ttu-id="91505-147">Kattintson a Finish gombra.</span><span class="sxs-lookup"><span data-stu-id="91505-147">Click Finish.</span></span>
 15. <span data-ttu-id="91505-148">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="91505-148">Close the page.</span></span>
 16. <span data-ttu-id="91505-149">Frissítse a lapot..</span><span class="sxs-lookup"><span data-stu-id="91505-149">Refresh the page.</span></span>
+
 

@@ -3,23 +3,24 @@ title: "Vevői kifizetések letétbe helyezése"
 description: "Vevői kifizetések letétele."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: f1f8ddb4b18e4e06fe0a7307ceadf8063d8eba07
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: e40a468373a3358bba9eff328a774c3f65242226
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="deposit-customer-payments"></a><span data-ttu-id="f93b4-103">Vevői kifizetések letétbe helyezése</span><span class="sxs-lookup"><span data-stu-id="f93b4-103">Deposit customer payments</span></span>

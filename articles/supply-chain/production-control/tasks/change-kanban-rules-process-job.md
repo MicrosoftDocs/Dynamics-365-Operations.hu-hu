@@ -3,23 +3,24 @@ title: "Kanbanszabályok módosítása egy feldolgozási feladat számára"
 description: "Ez az eljárás egy adott kanbanhoz használt kanbanszabály módosítását tekinti át."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KanbanRules, KanbanRuleDuplicate, KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, KanbanReassignRuleLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 8fc47751534af69300bf8f0bdb7424043cab7b26
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: afeab84f9fbdbfd1af709af656190f47ffde1759
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="change-kanban-rules-for-a-process-job"></a><span data-ttu-id="fe1b0-103">Kanbanszabályok módosítása egy feldolgozási feladat számára</span><span class="sxs-lookup"><span data-stu-id="fe1b0-103">Change kanban rules for a process job</span></span>

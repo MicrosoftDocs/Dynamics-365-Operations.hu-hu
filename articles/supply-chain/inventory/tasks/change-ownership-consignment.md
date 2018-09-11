@@ -1,26 +1,27 @@
----
+--- 
 title: "Bizományosi készlet tulajdonosának módosítása gyártási igény alapján"
 description: "Ez az eljárás bemutatja, hogyan módosítható a bizományosi készlet tulajdonosa a szállítóról a jogi személyére, amikor a készletre gyártási igény van."
 author: perlynne
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: a665387244c571907afab24a54bc88580eca093e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 5dd00e6f53d13305949d225e73223ab54947c804
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a><span data-ttu-id="29fa4-103">Bizományosi készlet tulajdonosának módosítása gyártási igény alapján</span><span class="sxs-lookup"><span data-stu-id="29fa4-103">Change the ownership of consignment inventory based on production demand</span></span>
@@ -51,4 +52,5 @@ ms.lasthandoff: 08/07/2018
     * <span data-ttu-id="29fa4-131">A napló feladásakor megtörténik a szállító tulajdonában lévő készlet felszabadítása egy „Tulajdonosváltozás” hivatkozás segítségével.</span><span class="sxs-lookup"><span data-stu-id="29fa4-131">When the journal is posted, the vendor-owned inventory is released by using an "Ownership change" reference.</span></span> <span data-ttu-id="29fa4-132">Ezután megtörténik a készlet érkeztetése aktuális készletként egy készlettranzakcióval, amely egy beszerzési rendelés termékbevételezéssel frissül.</span><span class="sxs-lookup"><span data-stu-id="29fa4-132">The inventory is then received as on-hand by using an inventory transaction that is updated with a purchase order product receipt.</span></span> <span data-ttu-id="29fa4-133">Vegye figyelembe, hogy csak a feladott naplóval kapcsolatos tranzakciók jönnek létre.</span><span class="sxs-lookup"><span data-stu-id="29fa4-133">Note that only transactions that are related to the posted journal are created.</span></span> <span data-ttu-id="29fa4-134">Nem jönnek létre várt készlettranzakciók.</span><span class="sxs-lookup"><span data-stu-id="29fa4-134">No expected inventory transactions are created.</span></span>  
 2. <span data-ttu-id="29fa4-135">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="29fa4-135">Click OK.</span></span>
 3. <span data-ttu-id="29fa4-136">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="29fa4-136">Close the page.</span></span>
+
 

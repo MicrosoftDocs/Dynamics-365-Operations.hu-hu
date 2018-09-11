@@ -3,23 +3,24 @@ title: "Meghirdetési típusok és pontozási kritériumok létrehozása az ajá
 description: "Ez az útmutató bemutatja, hogyan hozhat létre meghirdetési típust, és hogyan társíthatja azt pontozási módszerrel."
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 94bede40e8830f8d51dde5e34a03a9ad0c0144eb
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 5d2b0d1e998149a5045c655d74591c56bff81246
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="ba5ec-103">Meghirdetési típusok és pontozási kritériumok létrehozása az ajánlatkérésekhez</span><span class="sxs-lookup"><span data-stu-id="ba5ec-103">Create solicitation types and scoring criteria for RFQs</span></span>
@@ -42,6 +43,7 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="ba5ec-118">Ugorjon a Beszerzés és forrás > Ajánlatkérések > Összes ajánlatkérés pontra.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
 2. <span data-ttu-id="ba5ec-119">Kattintson az Új lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-119">Click New.</span></span>
 3. <span data-ttu-id="ba5ec-120">A Meghirdetés típusa mezőjében válassza ki az előzőleg létrehozott meghirdetési típust.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
+    *   
 4. <span data-ttu-id="ba5ec-121">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-121">Click OK.</span></span>
 5. <span data-ttu-id="ba5ec-122">Kattintson a Pontozási feltételek lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-122">Click Scoring criteria.</span></span>
     * <span data-ttu-id="ba5ec-123">Abból a pontozási módszerből jelennek meg a pontozási feltétek, amelyet a meghirdetés típusához társított.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="ba5ec-124">Ezen a lapon lehetősége van feltételek hozzáadására vagy törlésére.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="ba5ec-125">Új feltételeket más pontozási módszerből való másolással is hozzáadhat.</span><span class="sxs-lookup"><span data-stu-id="ba5ec-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  

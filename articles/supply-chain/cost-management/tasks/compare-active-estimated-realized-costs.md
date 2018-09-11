@@ -3,24 +3,25 @@ title: "Az aktív, becsült és realizált költségek összevetése egy termel�
 description: "Ez az eljárás bemutatja, hogyan lehet megjeleníteni egy termelési rendelés magas termelési különbözetének okait."
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/12/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, CostSelectPeriodDialogForm, CostCalculationPeriodTopVariancesListFormPart, ProdTable, CostCalculationCompareDialog
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: b446e5a371c731ed73285b59f6af1e78e46cb3e1
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: a99170c76040ad37b540177236db4a74dfcd09e8
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a><span data-ttu-id="b9d03-103">Az aktív, becsült és realizált költségek összevetése egy termelési rendelésen</span><span class="sxs-lookup"><span data-stu-id="b9d03-103">Compare active, estimated, and realized costs on a production order</span></span>

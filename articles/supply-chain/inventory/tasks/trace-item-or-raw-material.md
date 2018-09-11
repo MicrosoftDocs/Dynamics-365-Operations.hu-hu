@@ -1,26 +1,27 @@
----
+--- 
 title: "Egy cikk vagy egy alapanyag nyomon követése"
 description: "Ez az eljárás bemutatja, hogy a cikk-követéssel, hogyan lehet azonosítani, hogy hol használtak vagy használnak egy adott cikket vagy nyersanyagot."
 author: pjacobse
 manager: AnnBe
-ms.date: 06/21/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria, InventTrackingItemIdLookup, InventBatchIdLookup, CustTable, SalesLine
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: bc68fe6e6b87075c5406b5b6a8e89f4da8bd1166
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 3597091d62b9a6c0fc41d47e66490ff61c0226ec
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="trace-an-item-or-raw-material"></a><span data-ttu-id="8aedd-103">Egy cikk vagy egy alapanyag nyomon követése</span><span class="sxs-lookup"><span data-stu-id="8aedd-103">Trace an item or raw material</span></span>
@@ -54,4 +55,5 @@ ms.lasthandoff: 08/07/2018
 8. <span data-ttu-id="8aedd-129">A Művelet panelen kattintson a Nyomkövetés elemre.</span><span class="sxs-lookup"><span data-stu-id="8aedd-129">On the Action Pane, click Tracing.</span></span>
 9. <span data-ttu-id="8aedd-130">Kattintson a Kiszállított értékesítési rendelések lehetőségre.</span><span class="sxs-lookup"><span data-stu-id="8aedd-130">Click Shipped sales orders.</span></span>
 10. <span data-ttu-id="8aedd-131">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="8aedd-131">Close the page.</span></span>
+
 

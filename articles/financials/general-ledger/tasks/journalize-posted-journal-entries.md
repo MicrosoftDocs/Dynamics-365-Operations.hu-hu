@@ -3,23 +3,24 @@ title: "Feladott naplóbejegyzések naplózása"
 description: "Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/24/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 94849370d10ddfeedeee0d51e62afdd975ef69ac
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 7936c5e99397eb635568fc6b754132541f957002
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="journalize-posted-journal-entries"></a><span data-ttu-id="b1ba7-103">Feladott naplóbejegyzések naplózása</span><span class="sxs-lookup"><span data-stu-id="b1ba7-103">Journalize posted journal entries</span></span>
