@@ -3,7 +3,7 @@ title: "Jogi személy létrehozása"
 description: "A jogi személy jogi hatóságnál történő regisztráción keresztül azonosított szervezetet jelent."
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

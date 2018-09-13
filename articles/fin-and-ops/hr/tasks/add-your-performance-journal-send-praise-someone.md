@@ -3,7 +3,7 @@ title: "Hozzáadás saját teljesítménynaplóhoz és pozitív visszajelzés el
 description: "A teljesítménynapló a célok teljesítésének módjával, valamint adott időszak során nyújtott teljesítménnyel kapcsolatos információkat tartalmaz."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

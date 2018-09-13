@@ -3,7 +3,7 @@ title: "Munkafolyamat-előzmények megtekintése"
 description: "A lépések használatával megtekintheti azoknak a dokumentumoknak az állapotát, amelyeket a munkafolyamat-rendszerbe küldtek feldolgozásra és jóváhagyásra."
 author: jasongre
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
