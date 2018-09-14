@@ -8,7 +8,7 @@
       href: get-started/before-you-buy.md
     - name: Regisztrálás az előfizetés előnézetére
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: Bemutatókörnyezet telepítése
+    - name: Demókörnyezet telepítése
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Telepítési beállítások
       href: dev-itpro/choose-deployment.md
@@ -21,7 +21,7 @@
       href: ../fin-and-ops/imp-lifecycle/onboard.md
     - name: Előkészítés az éles indításra
       href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
-    - name: Éles GYIK
+    - name: Éles indítás GYIK
       href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
     - name: Szolgáltatási kérelem benyújtása
       href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
@@ -99,11 +99,9 @@
       href: call-center-functionality.md
     - name: Hívásközpont-katalógusok
       href: call-center-catalogs.md
-    - name: Hívásközpont-katalógus létrehozása
-      href: create-call-center-catalogs.md
-    - name: Szállítási módok és díjak beállítása
+    - name: Szállítási módok és költségek konfigurálása
       href: configure-call-center-delivery.md
-    - name: Csalással kapcsolatos figyelmeztetések beállítása és felhasználása
+    - name: Csalással kapcsolatos figyelmeztetések beállítása és használata
       href: set-up-fraud-alerts.md
     - name: Hívásközponti csatornák beállítása
       href: set-up-order-processing-options.md
@@ -129,11 +127,13 @@
       href: retail-time-attendance.md
 - name: Modern Point of Sale (MPOS) és Cloud POS
   items:
-    - name: Az MPOS és a Cloud POS közötti választás
+    - name: Az MPOS és a felhőalapú pénztár (POS) közötti választás
       href: MPOS-or-CPOS.md
     - name: Online és offline pénztári műveletek
       href: pos-operations.md
-    - name: Az MPOS és Cloud POS bemutató adatképernyő-elrendezései
+    - name: Testreszabott Retail Modern POS eszköz aktiválása
+      href: dev-itpro/retail-POS-activation-changes.md
+    - name: Az MPOS és felhőalapú pénztár (POS) bemutató adatképernyő-elrendezései
       href: demo-data.md
     - name: Termék és vevő keresése a pénztárban
       href: POS-search-improvements.md
@@ -299,7 +299,7 @@
       href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
 - name: Emberi erőforrások
   items:
-    - name: 'Munkaerő szervezése részlegek, munkák és beosztások szerint'
+    - name: 'Munkaerő szervezése részlegek, feladatok és beosztások szerint'
       href: ../talent/departments-jobs-positions.md
     - name: Feladat összetevőinek beállítása
       href: ../talent/create-job.md

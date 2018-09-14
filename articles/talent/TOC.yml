@@ -6,7 +6,9 @@
       items:
         - name: Új vagy módosult elemek
           items:
-            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018 július)
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. augusztus)
+              href: whats-new-talent-august2018.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. július)
               href: whats-new-talent-july2018.md
         - name: Rendszerkövetelmények és frissítési irányelv
           href: talent-versions-update-policy.md
@@ -16,8 +18,8 @@
           href: remove-talent-environment.md
         - name: A Talent moduláris alkalmazások létesítése
           href: modular-app-tech-faq.md
-        - name: A Talent funkcióinak kibővítése
-          href: extend-talent-functionality.md
+        - name: PowerApps alkalmazások beágyazása
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Előnézeti funkciók elérése
           href: access-preview-feature.md
         - name: Bérlista-integráció konfigurálása a Talent és a Dayforce között

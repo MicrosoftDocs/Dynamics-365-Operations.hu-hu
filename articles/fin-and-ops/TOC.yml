@@ -8,7 +8,7 @@
           items:
             - name: Regisztrálás az előfizetés előnézetére
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
-            - name: Bemutatókörnyezet telepítése
+            - name: Demókörnyezet telepítése
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Felhőalapú és helyszíni szolgáltatások összehasonlítása
               href: get-started/cloud-prem-comparison.md
@@ -153,11 +153,13 @@
       items:
         - name: Finance and Operations-architektúra
           href: imp-lifecycle/architecture-overview.md
-        - name: Microsoft FastTrack a Finance and Operations rendszerhez
+        - name: Microsoft FastTrack for Finance and Operations
           href: get-started/fasttrack-dynamics-365-overview.md
-        - name: Megvalósítási projekt felvétele
+        - name: Megvalósítási projekt előkészítése
           href: imp-lifecycle/onboard.md
-        - name: Felkészülés az éles üzemre váltásra
+        - name: Környezet tervezése
+          href: imp-lifecycle/environment-planning.md
+        - name: Felkészülés az éles indításra
           href: imp-lifecycle/prepare-go-live.md
         - name: Éles indítás GYIK
           href: imp-lifecycle/go-live-faq.md
@@ -460,7 +462,9 @@
               href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
             - name: Alapértelmezett ellenszámlák szállítóiszámla-naplók és számlajóváhagyási naplók számára
               href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
-            - name: Számlaösszegek számlaegyeztetési eltéréseinek feloldása
+            - name: Szállítói munkafolyamat
+              href: ../financials/accounts-payable/vendor-workflow.md
+            - name: Számlaösszegek egyeztetési eltéréseinek feloldása
               href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
                 - name: Kivételek kivizsgálása/feloldása
@@ -475,17 +479,23 @@
               href: ../financials/accounts-payable/vendor-portal-invoicing-workspace.md
             - name: Szállítói számla automatizálása
               href: ../financials/accounts-payable/vendor-invoice-automation.md
+            - name: Ügynöki szerződéskezelés
+              href: ../financials/accounts-payable/broker-contract.md
+            - name: Jogdíjszerződések kezelése
+              href: ../financials/accounts-payable/royalty-contract.md
             - name: Kifizetések és kiegyenlítések
               items:
                 - name: A Kötelezettségek modul központosított kifizetései
                   href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
                 - name: Kiegyenlítés konfigurálása
                   href: ../financials/cash-bank-management/configure-settlement.md
-                - name: Szállítói kifizetések munkaterület
+                - name: Szállítói fizetési áttekintés
+                  href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
+                - name: Szállítói fizetések munkaterület
                   href: ../financials/accounts-payable/vendor-payments-workspace.md
                 - name: Adja meg a keresztárfolyamot
                   href: ../financials/accounts-payable/specify-cross-rate.md
-                - name: Szállítói kifizetési díjak meghatározása
+                - name: Szállítói fizetési díjak meghatározása
                   href: ../financials/accounts-payable/tasks/define-vendor-payment-fees.md
                 - name: Szállítói kifizetési feltételek meghatározása
                   href: ../financials/accounts-payable/tasks/define-vendor-payment-terms.md
@@ -511,17 +521,21 @@
                   href: ../financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md
                 - name: A szállítói kifizetésre vonatkozóan kiszámított engedménynél nagyobb engedmény alkalmazása
                   href: ../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
-                - name: Szállítói kifizetések részösszegre
+                - name: Szállítói fizetések részösszegre
                   href: ../financials/accounts-payable/vendor-payments-partial-amount.md
+                - name: Szállítói tranzakciók listaoldala
+                  href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: Kinnlevőségek
           href: ../financials/accounts-receivable/accounts-receivable.md
           items:
             - name: Követelések és beszedések a Kinnlevőségek modulban
               href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
-            - name: Követelések és hitelek és gyűjtemények konfigurálása
+            - name: 'A Kinnlevőségek modul, követelések és beszedések konfigurálása'
               href: ../financials/accounts-receivable/accounts-receivables-set-up-overview.md
             - name: Követelések és beszedések beállítása
               href: ../financials/accounts-receivable/set-up-collections.md
+            - name: A beszedésekkel kapcsolatos adatok felülvizsgálata
+              href: ../financials/accounts-receivable/tasks/review-collections-information.md
             - name: Ismétlődő számlák beállítása és feldolgozása
               href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
             - name: Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz
@@ -540,53 +554,55 @@
               href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md
             - name: Szabadszöveges számla javítása
               href: ../financials/accounts-receivable/correct-free-text-invoice.md
+            - name: Szabadszöveges számlasablon hozzárendelése egy ügyfélhez
+              href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+            - name: Ismétlődő szabadszöveges számlák generálása és feladása
+              href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
+            - name: Értékesítési rendelési számlák létrehozása
+              href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
             - name: Kamatlábak beállítása kamatkódhoz
               href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
             - name: 'Kamatdíjak elengedése, visszaállítása vagy sztornírozása'
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
+            - name: Kamatfeldolgozás
+              href: ../financials/accounts-receivable/tasks/process-interest.md
+            - name: Szállítói számla irányelveinek beállítása
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: A szállítói számlák rögzítése és összevetése a bevételezett mennyiséggel
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Vevői számla létrehozása
               href: ../financials/accounts-receivable/configure-customer-invoices.md
-            - name: Vevői kifizetések feltételeinek kialakítása
+            - name: Vevői fizetések letétbe helyezése
+              href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
+            - name: Vevői fizetések feltételeinek kialakítása
               href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
+            - name: Vevői fizetési mód kialakítása
+              href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
+            - name: Vevői kifizetések díjainak kialakítása
+              href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
             - name: Váltók beállítása
               href: ../financials/accounts-receivable/set-up-bills-exchange.md
             - name: Kinnlevőségek modul bezárása
               href: ../financials/accounts-receivable/close-accounts-receivable.md
-            - name: Kinnlevőség-feladatok
-              items:
-                - name: Szabadszöveges számlasablon hozzárendelése egy ügyfélhez
-                  href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
-                - name: Fizetésifelszólítás-sorozat létrehozása
-                  href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-                - name: Kamatkód létrehozása tartománnyal
-                  href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
-                - name: Értékesítési rendelési számlák létrehozása
-                  href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
-                - name: Leírási napló létrehozása vevőhöz
-                  href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
-                - name: Vevői kifizetések letétbe helyezése
-                  href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-                - name: Vevői fizetési mód kialakítása
-                  href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
-                - name: Vevői kifizetések díjainak kialakítása
-                  href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
-                - name: Ismétlődő szabadszöveges számlák generálása és feladása
-                  href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
-                - name: Fizetési felszólítások feldolgozása
-                  href: ../financials/accounts-receivable/tasks/process-collection-letters.md
-                - name: Kamatfeldolgozás
-                  href: ../financials/accounts-receivable/tasks/process-interest.md
-                - name: A szállítói számlák rögzítése és összevetése a bevételezett mennyiséggel
-                  href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
-                - name: A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata
-                  href: ../financials/accounts-receivable/tasks/review-collections-information.md
-                - name: Kinnlevőségek korosítási adatainak beállítás és létrehozása
-                  href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-                - name: Szállítói számla irányelveinek beállítása
-                  href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Fizetésifelszólítás-sorozat létrehozása
+              href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
+            - name: Fizetési felszólítások feldolgozása
+              href: ../financials/accounts-receivable/tasks/process-collection-letters.md
+            - name: Csoportos beszedési megbízás létrehozása vevő részére
+              href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+            - name: Kamatkód létrehozása tartománnyal
+              href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
+            - name: Leírási napló létrehozása vevőhöz
+              href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
+            - name: Kinnlevőségek korosítási adatainak beállítása és létrehozása
+              href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Vevői munkafolyamat
+              href: ../financials/accounts-receivable/customer-workflow.md
             - name: Kifizetések és kiegyenlítések
               items:
-                - name: 'Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel'
+                - name: Vevői kifizetések áttekintése
+                  href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
+                - name: 'Több, eltérő engedményidőszakra vonatkozó számla kiegyenlítése egyetlen vevői kifizetéssel'
                   href: ../financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: A Kinnlevőségek modul központosított kifizetései
                   href: ../financials/accounts-receivable/centralized-payments-accounts-receivable.md
@@ -600,8 +616,10 @@
                   href: ../financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
                 - name: Visszatérítés vevőknek
                   href: ../financials/accounts-receivable/reimburse-customers.md
-                - name: Vevői kifizetések részösszegre
+                - name: Vevői kifizetések egy részösszegre vonatkozóan
                   href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+                - name: Vevői tranzakciók listaoldala
+                  href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: Költségvetés készítése
           href: ../financials/budgeting/budgeting-overview.md
           items:
@@ -638,18 +656,44 @@
               href: ../financials/cash-bank-management/cash-discounts.md
             - name: Készpénzfizetési engedmények túlfizetések esetére
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
-            - name: Kiegyenlítés – áttekintés
+            - name: IBAN-számlaellenőrzés kezelése
+              href: ../financials/cash-bank-management/iban-validation.md
+            - name: Kiegyenlítés áttekintése
               href: ../financials/cash-bank-management/settlement-overview.md
-            - name: Kiegyenlítés áttekintése (központosított kifizetések)
+            - name: Kiegyenlítés áttekintése központosított kifizetésekre vonatkozóan
               href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
             - name: Akkreditívek
               href: ../financials/cash-bank-management/letters-of-credit.md
+            - name: Banki hiteleszköz-megállapodás létrehozása akkreditívhez
+              href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+            - name: Banki hiteleszközök beállítása és az akkreditívhez tartozó profilok feladása
+              href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
             - name: Akkreditívek és importbeszedvények
               href: ../financials/cash-bank-management/letters-of-credit-import-collections.md
+            - name: Akkreditív exportálása
+              href: ../financials/cash-bank-management/tasks/export-letter-credit.md
+            - name: Akkreditív importálása
+              href: ../financials/cash-bank-management/tasks/import-letter-credit.md
             - name: Garancialevelek
               href: ../financials/cash-bank-management/letters-of-guarantee.md
+            - name: Garancialevél-tranzakció
+              href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
+            - name: Banki hiteleszköz-szerződés létrehozása a garancialevélhez
+              href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+            - name: Banki hiteleszközök beállítása és a garancialevélhez tartozó profilok feladása
+              href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
             - name: Jövőben esedékes csekkek
               href: ../financials/cash-bank-management/postdated-checks.md
+            - name: Jövőben esedékes csekkek beállítása
+              href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
+            - name: 'Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása'
+              href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
+            - name: 'Szállító részére kiállított, jövőben esedékes csekk regisztrálása és feladása'
+              href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
+            - name: 'Vevő által kiállított, jövőben esedékes csekk kiegyenlítése'
+              href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
+            - name: 'Szállítónak kiállított, jövőben esedékes csekk kiegyenlítése'
+              href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
             - name: Előlegszámlák és előlegek
               href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
             - name: Készpénzfizetési engedmények kezelése túlfizetések esetén
@@ -658,39 +702,9 @@
               href: ../financials/cash-bank-management/set-up-centralized-payments.md
             - name: Automatikus kiegyenlítés és rangsorolás
               href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
-            - name: Készpénz- és bankkezelési feladatok
+            - name: Speciális banki egyeztetés
               items:
-                - name: Banki hitelmegállapodás létrehozása akkreditívhez
-                  href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
-                - name: Banki hitelmegállapodás létrehozása a garancialevélhez
-                  href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-                - name: Vevői kifizetések áttekintése
-                  href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
-                - name: Akkreditív exportálása
-                  href: ../financials/cash-bank-management/tasks/export-letter-credit.md
-                - name: Akkreditív importálása
-                  href: ../financials/cash-bank-management/tasks/import-letter-credit.md
-                - name: Garancialevél-tranzakció
-                  href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
-                - name: 'Vevő részére kiállított, jövőben esedékes csekk regisztrálása és feladása'
-                  href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
-                - name: 'Szállító részére kiállított, jövőben esedékes csekk regisztrálása és feladása'
-                  href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
-                - name: 'Vevő által kiállított, jövőben esedékes csekk kiegyenlítése'
-                  href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
-                - name: 'Szállítónak kiállított, jövőben esedékes csekk kiegyenlítése'
-                  href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
-                - name: Bankhitelek beállítása és a garancialevélhez tartozó profilok feladása
-                  href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-                - name: Bankhitelek beállítása és az akkreditívhez tartozó profilok feladása
-                  href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
-                - name: Jövőben esedékes csekkek beállítása
-                  href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
-                - name: Szállítói fizetési áttekintés
-                  href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
-            - name: Továbbfejlesztett banki egyeztetés
-              items:
-                - name: Továbbfejlesztett banki egyeztetési beállítási feladatok
+                - name: Speciális banki egyeztetési beállítási feladatok
                   href: ../financials/cash-bank-management/configure-advanced-bank-reconciliation.md
                 - name: Továbbfejlesztett banki egyeztetés importálási folyamata
                   href: ../financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
@@ -817,9 +831,17 @@
         - name: Tárgyi eszközök
           href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Tárgyi eszköz létrehozása
+              href: ../financials/fixed-assets/tasks/create-fixed-asset.md
+            - name: Tárgyi eszköz kiegészítésének bevitele
+              href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
+            - name: Javaslat tárgyieszköz-beszerzésekre
+              href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
+            - name: Tárgyi eszközök átsorolása
+              href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
             - name: Tárgyi eszközök munkaterülete
               href: ../financials/fixed-assets/fixed-asset-management-workspace.md
-            - name: Jelentés a tárgyi eszköz meghosszabbításáról
+            - name: Jelentés tárgyi eszközök előregörgetéséről
               href: ../financials/fixed-assets/Fixed-asset-roll-forward-report.md
             - name: Értékcsökkenési könyv frissítésének áttekintése
               href: ../financials/fixed-assets/depreciation-book-upgrade-considerations.md
@@ -831,12 +853,22 @@
               href: ../financials/fixed-assets/post-derived-value-models.md
             - name: Tárgyieszköz-tranzakciók feladása a feladási rétegekbe
               href: ../financials/fixed-assets/post-fixed-asset-transactions-posting-layers.md
-            - name: Tárgyi eszköz-tranzakciók beállításai
+            - name: Tárgyieszköz-tranzakciók beállításai
               href: ../financials/fixed-assets/enter-fixed-asset-transactions.md
+            - name: Tárgyi eszköz áthelyezése
+              href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
+            - name: Tárgyi eszköz felosztása
+              href: ../financials/fixed-assets/tasks/split-fixed-asset.md
+            - name: Tárgyieszköz-csoportok beállítása
+              href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
+            - name: Tárgyieszköz-csoport módosítása
+              href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
             - name: Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása
               href: ../financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
-            - name: Tárgyieszköz-kivezetés feladási profilja
+            - name: Tárgyieszköz-kivezetés feladási számlája
               href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
+            - name: Tárgyi eszköz kivezetése szabadszöveges számlával
+              href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
             - name: Tárgyi eszközök tömeges módosítása
               href: ../financials/fixed-assets/fixed-asset-mass-update.md
             - name: Eszközök vételezése beszerzésen keresztül
@@ -845,11 +877,21 @@
               items:
                 - name: Tárgyi eszközök beállítása
                   href: ../financials/fixed-assets/set-up-fixed-assets.md
+                - name: Tárgyieszköz-feladási profilok beállítása
+                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: Tárgyieszköz-integráció
                   href: ../financials/fixed-assets/fixed-asset-integration.md
+                - name: Eszközök létrehozása és beszerzése a kötelezettségek modulból
+                  href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
+                - name: 'Értékcsökkenési könyvek beállítása '
+                  href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
+                - name: Értékcsökkenési profilok beállítása és létrehozása
+                  href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
+                - name: Értékmodellek beállítása
+                  href: ../financials/fixed-assets/tasks/set-up-value-models.md
             - name: Értékcsökkenés módjai
               items:
-                - name: Értékcsökkenési szabályok
+                - name: Értékcsökkenési konvenciók
                   href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
                 - name: 125 százalékos degresszív értékcsökkenés
                   href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
@@ -859,74 +901,44 @@
                   href: ../financials/fixed-assets/175-percent-reducing-balance-depreciation.md
                 - name: 200 százalékos degresszív értékcsökkenés
                   href: ../financials/fixed-assets/200-percent-reducing-balance-depreciation.md
-                - name: Rendkívüli értékcsökkenés
+                - name: További értékcsökkenés
                   href: ../financials/fixed-assets/bonus-depreciation.md
-                - name: Felhasználás értékcsökkenése
+                - name: További értékcsökkenés beállítása
+                  href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
+                - name: Felhasználás szerinti értékcsökkenés
                   href: ../financials/fixed-assets/consumption-depreciation.md
                 - name: A sztornírozások értékcsökkenésre gyakorolt hatása
                   href: ../financials/fixed-assets/depreciation-effects-reversals.md
-                - name: Értékcsökkenési módszerek és szabályok
+                - name: Értékcsökkenési módszerek és konvenciók
                   href: ../financials/fixed-assets/depreciation-methods-conventions.md
-                - name: Értékcsökkenési tényező
+                - name: Értékcsökkenési javaslat létrehozása
+                  href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
+                - name: Tényezős értékcsökkenés
                   href: ../financials/fixed-assets/factor-depreciation.md
-                - name: Tárgyieszköz-beszerzés feladási profilja
+                - name: Tárgyieszköz-beszerzés feladási számlája
                   href: ../financials/fixed-assets/fixed-asset-acquisition-posting-accounts.md
                 - name: Tárgyi eszközök értékcsökkenése
                   href: ../financials/fixed-assets/fixed-asset-depreciation.md
-                - name: Kézi értékcsökkenés
+                - name: Tárgyi eszköz értékcsökkenésének kiszámítása jogi személyek között
+                  href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
+                - name: Értékcsökkenési konvenció módosítása több tárgyi eszközre vonatkozóan
+                  href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
+                - name: Manuális értékcsökkenés
                   href: ../financials/fixed-assets/manual-depreciation.md
                 - name: Degresszív értékcsökkenés
                   href: ../financials/fixed-assets/reduce-balance-depreciation.md
                 - name: Az értékcsökkenési számítások kerekítési összegei
                   href: ../financials/fixed-assets/round-off-amount-depreciation-calculations.md
-                - name: Lineáris – hátralevő élettartam típusú értékcsökkenés
+                - name: Hátralévő élettartamon alapuló lineáris értékcsökkenés
                   href: ../financials/fixed-assets/straight-line-life-remaining-depreciation.md
-                - name: Lineáris – élettartam szerinti értékcsökkenés
+                - name: Élettartamon alapuló lineáris értékcsökkenés
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
-            - name: Tárgyi eszköz feladatai
-              items:
-                - name: Tárgyi eszköz értékcsökkenésének kiszámítása jogi személyek között
-                  href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
-                - name: Értékcsökkenési szabály módosítása több tárgyi eszközre
-                  href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
-                - name: Tárgyieszköz-csoport módosítása
-                  href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
-                - name: Eszközök létrehozása és beszerzése a követelések modulból
-                  href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
-                - name: Értékcsökkenési javaslat létrehozása
-                  href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
-                - name: Tárgyi eszköz létrehozása
-                  href: ../financials/fixed-assets/tasks/create-fixed-asset.md
-                - name: Tárgyi eszköz kivezetése szabadszöveges számlával
-                  href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-                - name: Tárgyi eszköz kiegészítésének bevitele
-                  href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
-                - name: Javaslat tárgyieszköz-beszerzésekre
-                  href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
-                - name: Tárgyi eszközök átsorolása
-                  href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
-                - name: Rendkívüli értékcsökkenés beállítása
-                  href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-                - name: 'Értékcsökkenési könyvek beállítása '
-                  href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
-                - name: Értékcsökkenési profilok beállítása és létrehozása
-                  href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
-                - name: Tárgyieszköz-csoportok beállítása
-                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
-                - name: Tárgyieszköz-feladási profilok beállítása
-                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
-                - name: Értékmodellek beállítása
-                  href: ../financials/fixed-assets/tasks/set-up-value-models.md
-                - name: Tárgyi eszköz felosztása
-                  href: ../financials/fixed-assets/tasks/split-fixed-asset.md
-                - name: Tárgyi eszköz áthelyezése
-                  href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
         - name: Főkönyv
           href: ../financials/general-ledger/general-ledger.md
           items:
             - name: Számlák
               items:
-                - name: Könyvelések áttekintése
+                - name: Elhatárolások áttekintése
                   href: ../financials/general-ledger/accruals-overview.md
                 - name: Eltávolítási szabályok
                   href: ../financials/general-ledger/elimination-rules.md
@@ -946,11 +958,18 @@
                   href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
                 - name: Számlastruktúrák létrehozása
                   href: ../financials/general-ledger/tasks/create-account-structures.md
-                - name: Könyvelési sémák létrehozása
+                - name: Elhatárolási sémák létrehozása
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-                - name: Konszolidációs csoportok és további konszolidációs számlák létrehozása
+                - name: Pénzügyi konszolidáció és pénznemátváltás
+                  href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                  items:
+                    - name: Online konszolidálás
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Konszolidált pénzügyi kimutatások létrehozása
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: Konszolidációs csoportok és további konszolidációs számla létrehozása
                   href: ../financials/general-ledger/tasks/create-consolidation-groups.md
-                - name: Főszámla típusai
+                - name: Fő számla típusai
                   href: ../financials/general-ledger/main-account-types.md
                 - name: Fő számla létrehozása
                   href: ../financials/general-ledger/tasks/create-main-account.md
@@ -1073,22 +1092,40 @@
           items:
             - name: Állami szektor funkció tervezése
               href: ../financials/public-sector/plan-public-sector-functionality.md
+            - name: Fedőlap és aláírási ívek létrehozása állami szektor fizetési jelentéseire vonatkozóan
+              href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Kötelezettségek az állami szektorban
               href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
                 - name: Beszerzési rendelési kódok az állami szektorban
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
+                - name: Kereskedelmi partnerkód létrehozása és hozzárendelése az állami szektorban
+                  href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
                 - name: Feladásdefiníciók az állami szektorban
                   href: ../financials/public-sector/posting-definitions-public-sector.md
+                - name: Egyszeri szállítók az állami szektorban
+                  href: ../financials/public-sector/one-time-vendors-public-sector.md
+                - name: Egyszeri szállító és számla létrehozása az állami szektorban
+                  href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
+                - name: Szállítói tanúsítványtípus létrehozása az állami szektorban
+                  href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
+                - name: Több egyszeri szállító és számla importálása és létrehozása az állami szektorban
+                  href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
                 - name: Egyszeri szállítók tervezése az állami szektorban
                   href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
-                - name: Egyszeri szállítók tervezése az állami szektorban
-                  href: ../financials/public-sector/one-time-vendors-public-sector.md
+                - name: Beszerzési szerződésekhez való hozzáférés vezérlése az állami szektorban
+                  href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
+                - name: Beszerzési szerződés osztályozásainak beállítása az állami szektorban
+                  href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Kinnlevőségek az állami szektorban
               href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
                 - name: Számlázási osztályok és számlázási kódok az állami szektorban
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
+                - name: Számlázási osztály létrehozása az állami szektorban
+                  href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
+                - name: Számlázási kód létrehozása az állami szektorra vonatkozóan
+                  href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
                 - name: Kiegyenlítés rangsorolása az állami szektorban
                   href: ../financials/public-sector/settlement-priority-public-sector.md
                 - name: Szabadszöveges számlák az állami szektorban
@@ -1098,10 +1135,16 @@
             - name: Költségvetés-készítés az állami szektorban
               href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: Eredeti költségvetés létrehozása és az előzetes költségvetési bejegyzések sztornírozása az állami szektorban
+                  href: ../financials/public-sector/tasks/create-original-budget.md
+                - name: Előzetes költségvetés létrehozása az állami szektor részére
+                  href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
                 - name: Költségvetés-elemzés az állami szektorban
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: Előzetes költségvetések és felosztások az állami szektorban
                   href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
+                - name: Kötelezettségvállalás létrehozása költségvetési alapok lefoglalásához az állami szektorban
+                  href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
             - name: Tárgyi eszközök az állami szektorban
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: Főkönyv az állami szektorban
@@ -1109,52 +1152,26 @@
               items:
                 - name: Speciális főkönyvi bejegyzések az állami szektorban
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
+                - name: Speciális főkönyvi bejegyzés létrehozása állami szektorban
+                  href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
                 - name: Év végi feldolgozás az állami szektorban
                   href: ../financials/public-sector/year-end-processing-public-sector.md
                 - name: Pénzügyi származtatott hierarchiák az állami szektorban
                   href: ../financials/public-sector/derived-financial-hierarchies-public-sector.md
+                - name: Származtatott pénzügyi hierarchia beállítása az állami szektorban
+                  href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
             - name: Beszerzés és forrás az állami szektorban
               href: ../financials/public-sector/procurement-sourcing-public-sector.md
             - name: Biztonsági szerepkörök az állami szektorban
               href: ../financials/public-sector/security-roles-public-sector.md
             - name: Alapok az állami szektorban
               href: ../financials/public-sector/funds-public-sector.md
-            - name: Állami szektorbeli feladatok
-              items:
-                - name: Szállítói hitelesítési típus hozzáadása egy állami szektorban
-                  href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
-                - name: Beszerzési szerződésekhez való hozzáférés vezérlése az állami szektorban
-                  href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
-                - name: Speciális főkönyvi bejegyzés létrehozása állami szektorban
-                  href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Kereskedelmi partnerkód létrehozása és hozzárendelése az állami szektorban
-                  href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
-                - name: Számlázási osztály létrehozása az állami szektorban
-                  href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
-                - name: Számlázási kód létrehozása az állami szektorra vonatkozóan
-                  href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
-                - name: Kötelezettségvállalás létrehozása költségvetési alapok lefoglalásához az állami szektorban
-                  href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
-                - name: Fedőlap és aláírási ívek létrehozása állami szektor fizetési jelentéseire vonatkozóan
-                  href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
-                - name: Alaptípus létrehozása az állami szektorban
-                  href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
-                - name: Egyszeri szállító és számla létrehozása az állami szektorban
-                  href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
-                - name: Eredeti költségvetés létrehozása és az előzetes költségvetési bejegyzések sztornírozása az állami szektorban
-                  href: ../financials/public-sector/tasks/create-original-budget.md
-                - name: Előzetes költségvetés létrehozása az állami szektor részére
-                  href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
-                - name: Szállítói tanúsítványtípus létrehozása egy állami szektorban
-                  href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
-                - name: Több egyszeri szállító és számla importálása és létrehozása az állami szektorban
-                  href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
-                - name: Származtatott pénzügyi hierarchia beállítása az állami szektorban
-                  href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
-                - name: Alaptípus beállítása az állami szektor részére
-                  href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
-                - name: Beszerzési szerződés osztályozásainak beállítása az állami szektorban
-                  href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
+            - name: Alaptípus beállítása az állami szektor részére
+              href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
+            - name: Alaptípus létrehozása az állami szektorban
+              href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
+            - name: Hitelesítési típus hozzáadása egy szállítóhoz az állami szektorban
+              href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Pénzügyi jelentéskészítés
           href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
@@ -1188,316 +1205,320 @@
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
             - name: Sordefiniáló cellák módosítása
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: A pénzügyi jelentési adatpiac alaphelyzetbe állítása
+            - name: A pénzügyi jelentéskészítési adatközpont alaphelyzetbe állítása
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
-    - name: Honosítási és szabályozó funkciók
+    - name: Honosítási és szabályozó funkciók​
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Ázsia és a csendes-óceáni térség
+        - name: Ausztrália
+          href: ../financials/localizations/australia.md
           items:
-            - name: Ausztrália
-              href: ../financials/localizations/australia.md
+            - name: Üzletitevékenység-kimutatás (BAS)
+              href: ../financials/localizations/apac-aus-business-activity-statement.md
+            - name: Jelentési mezők hozzáadása és a BAS elkészítése
+              href: ../financials/localizations/tasks/add-bas-report-boxes.md
+            - name: Alacsony értékű csoportos értékcsökkenés
+              href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
+            - name: BAS-okkódok beállítása
+              href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
+        - name: Ausztria
+          href: ../financials/localizations/austria.md
+          items:
+            - name: Féléves értékcsökkenés a további beszerzéseken
+              href: ../financials/localizations/emea-aut-half-year-depreciation.md
+            - name: Csomagolóanyag díjai
+              href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
+            - name: Áfabevallás
+              href: ../financials/localizations/emea-aut-vat-statement-details.md
+        - name: Belgium
+          href: ../financials/localizations/belgium.md
+          items:
+            - name: CODA banki kivonat
+              href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
+            - name: Tranzakciók létrehozása és továbbítása a BLWI számára
+              href: ../financials/localizations/tasks/be-00011-create-transfer-blwi.md
+            - name: INTERVAT adóbevallás
+              href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
+            - name: Egyeztetési jelentések
+              href: ../financials/localizations/emea-bel-reconciliation-reports.md
+            - name: Fizetésiegyenleg-jelentések beállítása
+              href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
+            - name: PRODCOM beállítása és karbantartása
+              href: ../financials/localizations/emea-bel-prodcom-report.md
+        - name: Brazília
+          href: ../financials/localizations/brazil.md
+          items:
+            - name: Honosítás köre
+              href: ../financials/localizations/latam-bra-scope.md
+            - name: Pénzügyi könyvek
+              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
-                - name: Üzletitevékenység-kimutatás (BAS)
-                  href: ../financials/localizations/apac-aus-business-activity-statement.md
-                - name: Jelentési mezők hozzáadása és a BAS elkészítése
-                  href: ../financials/localizations/tasks/add-bas-report-boxes.md
-                - name: Alacsony értékű csoport értékcsökkenése
-                  href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
-                - name: BAS-okkódok beállítása
-                  href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
-            - name: Kína
-              href: ../financials/localizations/china.md
+                - name: Pénzügyi könyvek konfigurálása
+                  href: ../financials/localizations/latam-bra-configure-fiscal-books.md
+                - name: ICMS pénzügyi adóbizonylatok
+                  href: ../financials/localizations/latam-bra-icms-tax-fiscal-documents.md
+                - name: Pénzügyi bizonylatok importálása
+                  href: ../financials/localizations/latam-bra-import-fiscal-documents.md
+                - name: A főkönyvi konszolidációban létrehozott jogi személy tranzakcióinak exportálása és importálása
+                  href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
+                - name: NF-e XML-dokumentumok és a DANFE-fájlok importálása és ellenőrzése
+                  href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
+                - name: Szolgáltatási elektronikus pénzügyi bizonylatok szöveges fájlok felhasználásával
+                  href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
+                - name: Elektronikus fizetési átutalások feldolgozása
+                  href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
+                - name: Elektronikus fizetések kezelése szállítói kifizetésekhez
+                  href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
+                - name: Pénzügyi bizonylatok
+                  href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
+                - name: Pénzügyi bizonylat szöveges helyőrzők
+                  href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
+                - name: Pénzügyi bizonylat forrásszövegének beállítása
+                  href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
+                - name: Pénzügyi bizonylat szövegének kezelése beszerzési dokumentumokban
+                  href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
+                - name: Pénzügyi bizonylatok kibocsátása szállítók számára
+                  href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
+                - name: Vevői pénzügyi bizonylatok kibocsátása
+                  href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
+                - name: Kiegészítő pénzügyi bizonylatok beszerzése
+                  href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
+                - name: Beszerzéskiegészítő pénzügyi bizonylat létrehozása és feladása
+                  href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
+                - name: Beszerzéskiegészítő pénzügyi bizonylat érvénytelenítése
+                  href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
+                - name: Hivatkozott pénzügyi bizonylatok
+                  href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
+                - name: Szállítói pénzügyi bizonylatok bevételezése (termékek)
+                  href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
+                - name: Szállítói pénzügyi bizonylatok bevételezése (tárgyi eszközök – PIS és COFINS hosszú távon visszatéríthető)
+                  href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
+                - name: Szállítói pénzügyi bizonylatok bevételezése (tárgyi eszközök – ICMS hosszú távon visszatéríthető)
+                  href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
+                - name: Vevői pénzügyi bizonylatok kiadása (szolgáltatások)
+                  href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
+                - name: Vevői pénzügyi bizonylatok kiadása (tárgyi eszközök)
+                  href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
+                - name: Vevői pénzügyi bizonylatok kiadása (projekt)
+                  href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
+                - name: Vevői pénzügyi bizonylatok kiadása (végfelhasználók számára)
+                  href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
+                - name: Vevői pénzügyi bizonylatok kiadása (SUFRAMA-vevők számára)
+                  href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
+                - name: Vevői pénzügyi bizonylat érvénytelenítése (projekt)
+                  href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
+                - name: Értékesítéskiegészítő pénzügyi bizonylatok
+                  href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
+                - name: Értékesítéskiegészítő pénzügyi bizonylat létrehozása és feladása
+                  href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
+                - name: Értékesítéskiegészítő pénzügyi bizonylat érvénytelenítése
+                  href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
+                - name: Szolgáltatás – elektronikus pénzügyi bizonylat
+                  href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
+                - name: Az elektronikus visszafizetési folyamat során létrehozott naplók
+                  href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
+                - name: Projektterhelések
+                  href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
+            - name: NF-e folyamat
+              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
-                - name: Anyagjegyzékek összehasonlítása
-                  href: ../financials/localizations/apac-chn-bom-comparison.md
-                - name: A számlatükör kínai hierarchiája
-                  href: ../financials/localizations/tasks/china-hierarchy-chart-accounts.md
-                - name: Kínai bizonylatfolytonossági ellenőrzés
-                  href: ../financials/localizations/tasks/chinese-voucher-continuity-check.md
-                - name: Kínai bizonylatok
-                  href: ../financials/localizations/apac-chn-vouchers.md
-                - name: Adóintegráció konfigurációja
-                  href: ../financials/localizations/apac-chn-tax-integration.md
-                - name: Kínai Aranyadó-integráció exportbeállítása
-                  href: ../financials/localizations/tasks/golden-tax-integration-export-setup.md
+                - name: NF-e pénzügyi bizonylatok automatikus továbbítása
+                  href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
+                - name: 'E-mailek létrehozása az elfogadott NF-e-hez, és a DANFE PDF-fájlok és NF-e XML-fájlok csatolása az e-mailekhez'
+                  href: ../financials/localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
+                - name: NF-e tanúsítványok
+                  href: ../financials/localizations/latam-bra-nfe-certs.md
+                - name: 'NF-e XML-dokumentumok és a DANFE-fájlok beállítása, importálása és ellenőrzése'
+                  href: ../financials/localizations/latam-bra-set-up-import-nfe.md
+                - name: NF-e szövetségi paraméterek beállítása
+                  href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
+                - name: NF-e paraméterek beállítása a pénzügyi létesítményhez
+                  href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+            - name: Jogi személyek paraméterei
+              href: ../financials/localizations/latam-bra-legal-entity-parameters.md
+            - name: Jogi személy paramétereinek beállítása
+              href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
+            - name: CIAP tárgyi eszköz beszerzése
+              href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+            - name: CIAP tárgyi eszköz kivezetése
+              href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+            - name: CIAP-tranzakció megadása
+              href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
+            - name: CIAP-jóváírás összegének kiszámítása
+              href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
+            - name: CIAP-jóváírás hozzáadása egy előző időszakból
+              href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
+            - name: Árujegyek
+              href: ../financials/localizations/tasks/br-00041-delivery-slip.md
+            - name: Nem pénzügyi műveletek
+              href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
+            - name: Vegyes költségek a szabadszöveges számlákon
+              href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
+            - name: Kamat és bírságok beállítása a szállítói kifizetésekhez
+              href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
+            - name: Kamat és bírságok kiszámítása a szállítói kifizetésekhez
+              href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
+            - name: Kamat és bírságok beállítása a vevői kifizetésekhez
+              href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
+            - name: Kamat és bírságok kiszámítása a vevői kifizetésekhez
+              href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+            - name: Adók
+              href: ../financials/localizations/latam-bra-calculate-taxes.md
+              items:
+                - name: Adó kiszámítása a beszerzési árajánlatokhoz
+                  href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
+                - name: Adómegállapítás létrehozása – ICMS
+                  href: ../financials/localizations/tasks/br-10001-4-create-tax-assessment-icms.md
+                - name: Adómegállapítás létrehozása – IPI-adó
+                  href: ../financials/localizations/tasks/br-10004-2-create-tax-assessment-ipi-tax.md
+                - name: Adómegállapítás létrehozása – PIS- és COFINS-adó
+                  href: ../financials/localizations/tasks/br-10006-4-create-tax-assessment-pis-cofins-tax.md
+                - name: Adókorrekciós tranzakciók megadása és feladása
+                  href: ../financials/localizations/tasks/br-10001-3-enter-post-tax-adjustment-transactions.md
+                - name: PIS- és COFINS-adókorrekciós tranzakciók megadása és feladása
+                  href: ../financials/localizations/tasks/br-10006-3-enter-pis-cofins-tax-adjustment-transactions.md
+                - name: Pénzügyi intézmény adóattribútumai
+                  href: ../financials/localizations/tasks/br-00002-fiscal-establishment-tax-attributes.md
+                - name: ICMS-adójóváírás pénzügyi dokumentumainak kiállítása
+                  href: ../financials/localizations/tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md
+                - name: ICMS-adójóváírás-átutalás pénzügyi dokumentumainak kiállítása
+                  href: ../financials/localizations/tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md
+                - name: Kiigazítási kódok beállítása az ICMS-adóhoz
+                  href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
+                - name: Kiigazítási kódok beállítása az ICMS-adókhoz a pénzügyi bizonylatokon
+                  href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
+                - name: Kiigazítási kódok beállítása az IPI-adókhoz
+                  href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
+                - name: PIS és COFINS tárgyi eszközök
+                  href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
+                - name: Kiigazítási kódok beállítása a PIS- és COFINS-adókhoz
+                  href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
+                - name: PIS- és COFINS-táblák beállítása
+                  href: ../financials/localizations/tasks/br-10006-1-set-up-pis-cofins-tables.md
+                - name: ISS-adómegállapítás
+                  href: ../financials/localizations/tasks/br-10005-tax-assessment-iss-tax.md
+                - name: Adóattribútumok
+                  href: ../financials/localizations/latam-bra-tax-attributes.md
+                - name: Adófizetések
+                  href: ../financials/localizations/latam-bra-tax-payments.md
+                - name: Áfa az értékesítési ajánlatokban
+                  href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
+                - name: 'Adóelőlegek '
+                  href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
+                - name: A vevői kifizetések adóelőlegei
+                  href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
+                - name: A szállítói kifizetések adóelőlegei
+                  href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
+        - name: Kína
+          href: ../financials/localizations/china.md
+          items:
+            - name: Anyagjegyzékek összehasonlítása
+              href: ../financials/localizations/apac-chn-bom-comparison.md
+            - name: A számlatükör kínai hierarchiája
+              href: ../financials/localizations/tasks/china-hierarchy-chart-accounts.md
+            - name: Kínai bizonylatfolytonossági ellenőrzés
+              href: ../financials/localizations/tasks/chinese-voucher-continuity-check.md
+            - name: Kínai bizonylatok
+              href: ../financials/localizations/apac-chn-vouchers.md
+            - name: Adóintegráció konfigurációja
+              href: ../financials/localizations/apac-chn-tax-integration.md
+            - name: Kínai Aranyadó-integráció exportbeállítása
+              href: ../financials/localizations/tasks/golden-tax-integration-export-setup.md
+            - name: Értékcsökkenés módjai tárgyi eszközöknél
+              href: ../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md
+            - name: Kínai Aranyadó adatentitás importálása
+              href: ../financials/localizations/apac-chn-import-golden-tax-data-entity.md
+            - name: Havi átlagos készletköltségmodell
+              href: ../financials/localizations/apac-chn-monthly-average-cost-model.md
+            - name: Fő számlák készletének feladása hely szerint
+              href: ../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md
+            - name: Más modulokból származó bizonylatok feladása
+              href: ../financials/localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
+            - name: Bizonylatok feladása a főkönyvi naplóból
+              href: ../financials/localizations/tasks/post-vouchers-general-journal.md
+            - name: Alapvető adóintegrációs profil beállítása Kínához
+              href: ../financials/localizations/tasks/set-up-basic-tax-integration-profile-china.md
+            - name: Kínai bizonylatok beállítása
+              href: ../financials/localizations/tasks/set-up-chinese-vouchers.md
+            - name: Tárgyi eszközök értékcsökkenési felosztásának beállítása
+              href: ../financials/localizations/tasks/fixed-asset-depreciation-allocation.md
+            - name: Főkönyvi számla tartozik és követel tételeinek megjelenítése
+              href: ../financials/localizations/apac-chn-negative-debits-credits.md
+            - name: Felhasználói műveletek naplója a kínai munkaszabály szerint
+              href: ../financials/localizations/tasks/user-operation-log-china-working-rule.md
+            - name: Vevői áfaszámlák GYIK
+              href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
+        - name: Cseh Köztársaság
+          href: ../financials/localizations/czech-republic.md
+          items:
+            - name: Jóváírás készpénzfizetési engedményre
+              href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
+            - name: Tárgyi eszközök
+              items:
+                - name: Értékcsökkenés kerekítése
+                  href: ../financials/localizations/emea-cze-depreciation-rounding.md
+                - name: Féléves értékcsökkenés a tárgyi eszköz értékesítésén
+                  href: ../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md
+                - name: Értékcsökkenés felfüggesztése (ünnepek)
+                  href: ../financials/localizations/emea-cze-depreciation-suspension-holidays.md
                 - name: Értékcsökkenés módjai tárgyi eszközöknél
-                  href: ../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Kínai Aranyadó adatentitás importálása
-                  href: ../financials/localizations/apac-chn-import-golden-tax-data-entity.md
-                - name: Havi átlagos készletköltségmodell
-                  href: ../financials/localizations/apac-chn-monthly-average-cost-model.md
-                - name: Fő számlák készletének feladása hely szerint
-                  href: ../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md
-                - name: Más modulokból származó bizonylatok feladása
-                  href: ../financials/localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
-                - name: Bizonylatok feladása a főkönyvi naplóból
-                  href: ../financials/localizations/tasks/post-vouchers-general-journal.md
-                - name: Alapvető adóintegrációs profil beállítása Kínához
-                  href: ../financials/localizations/tasks/set-up-basic-tax-integration-profile-china.md
-                - name: Kínai bizonylatok beállítása
-                  href: ../financials/localizations/tasks/set-up-chinese-vouchers.md
-                - name: Tárgyi eszközök értékcsökkenési felosztásának beállítása
-                  href: ../financials/localizations/tasks/fixed-asset-depreciation-allocation.md
-                - name: Főkönyvi számla tartozik és követel tételeinek megjelenítése
-                  href: ../financials/localizations/apac-chn-negative-debits-credits.md
-                - name: Felhasználói műveletek naplója a kínai munkaszabály szerint
-                  href: ../financials/localizations/tasks/user-operation-log-china-working-rule.md
-                - name: Vevői áfaszámlák GYIK
-                  href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
-            - name: India
-              href: ../financials/localizations/india.md
-              items:
-                - name: Tárgyi eszközök
-                  href: ../financials/localizations/apac-ind-fixed-assets.md
-                  items:
-                    - name: Nap alapú naptár csatolása tárgyieszközkönyvhöz
-                      href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Eltolódás értékcsökkenésének számítása
-                      href: ../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Hozzon létre egy készletmodellcsoportot a tőkeelemeknek
-                      href: ../financials/localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Értékcsökkenés létrehozása és feladása
-                      href: ../financials/localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Határozza meg a műszak típusát és a könyvekhez rendelt ipart a tárgyi eszközhöz történő csatolás érdekében
-                      href: ../financials/localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Tárgyieszköz-tranzakciók sztornírozása
-                      href: ../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Eltolódás-értékcsökkenés számítása
-                      href: ../financials/localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Nap alapú pénzügyi naptár beállítása
-                      href: ../financials/localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Paraméterek beállítása értékcsökkenés számításához
-                      href: ../financials/localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Eszközcsoport értékcsökkenés beállítása értékcsökkenés könyvekhez
-                      href: ../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Tőkeelemek átvitele a tárgyi eszközre
-                      href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: India GST
-                  href: ../financials/localizations/apac-ind-gst.md
-                  items:
-                    - name: India GST hivatkozáscsoportok
-                      href: ../financials/localizations/apac-ind-gst-reference-groups.md
-                    - name: GST integrációja pénztárgépekhez
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Pénztárgépek telepítésére vonatkozó irányelvek
-                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-                - name: Adómotor áttekintése
-                  href: ../financials/general-ledger/tax-engine.md
-                  items:
-                    - name: Adómotor integrációja
-                      href: ../financials/general-ledger/tax-engine-integration.md
-                    - name: Adómotor kiterjesztése
-                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
-                - name: Adóküszöbértékekre vonatkozó GYIK
-                  href: ../financials/localizations/apac-ind-tax-thresholds.md
-            - name: Japán
-              href: ../financials/localizations/japan.md
-              items:
-                - name: Tárgyi eszköz beszerzése és állami támogatás igénylése
-                  href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
-                - name: Tárgyi eszköz beszerzése kivezetési kötelezettséggel
-                  href: ../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
-                - name: Tárgyi eszköz kivezezetés kötelezettsége becslésének beállítása
-                  href: ../financials/localizations/tasks/adjustment-asset-retirement-obligation-estimate.md
-                - name: Megosztott eszköz és goodwill átvitel összegének felosztása készpénzgeneráló egységekre
-                  href: ../financials/localizations/tasks/allocate-carrying-amount.md
-                - name: Felosztási szabályok
-                  href: ../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md
-                - name: Szállítók által fedezett banki kifizetési díjak
-                  href: ../financials/localizations/apac-jpn-bank-payment-fees-vendors.md
-                - name: A könyv élettartama során használt értékcsökkenési mód megváltoztatása
-                  href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-book.md
-                - name: Egy eszköz élettartama során használt értékcsökkenési mód megváltoztatása
-                  href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-one-asset.md
-                - name: Gyorsított értékcsökkentési paraméterek és a feladási profilok konfigurálása
-                  href: ../financials/localizations/tasks/accelerated-depreciation-posting-profiles.md
-                - name: Gyűjtőszámla-paraméterek konfigurálása és beállítása kötelezettségekre vonatkozóan
-                  href: ../financials/localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
-                - name: Értékcsökkenési profil és feladási profil konfigurálása további értékcsökkenéshez
-                  href: ../financials/localizations/tasks/configure-depreciation-profile-posting.md
-                - name: Tárgyi eszköz kivezetési kötelezettségével kapcsolatos feladási és a piaci kedvezményes árak fő számláinak beállítása
-                  href: ../financials/localizations/tasks/configure-main-accounts-asset-retirement.md
-                - name: Gyűjtőszámlák
-                  href: ../financials/localizations/apac-jpn-consolidate-invoices.md
-                - name: Tárgyi eszköz létrehozása további értékcsökkenéssel
-                  href: ../financials/localizations/tasks/create-fixed-asset-additional-depreciation.md
-                - name: Tárgyi eszköz létrehozása különleges értékcsökkenési profillal
-                  href: ../financials/localizations/tasks/create-fixed-asset-special-depreciation-profile.md
-                - name: Gyorsított értékcsökkentési dokumentum létrehozása és használati adatok rögzítése
-                  href: ../financials/localizations/tasks/create-accelerated-depreciation-document-enter-usage-data.md
-                - name: Gyorsított értékcsökkenési profil létrehozása és hozzárendelése könyvhöz
-                  href: ../financials/localizations/tasks/create-accelerated-depreciation-profile-assign-it-book.md
-                - name: Csökkentési tételdokumentum létrehozása és hozzárendelése az állami támogatásra vonatkozóan
-                  href: ../financials/localizations/tasks/create-assign-reduction-document.md
-                - name: Berendezéscsoport létrehozása és hozzárendelése
-                  href: ../financials/localizations/tasks/create-assign-equipment-group.md
-                - name: Konszolidált vevői számla létrehozása és megerősítése
-                  href: ../financials/localizations/tasks/create-confirm-customer-consolidated-invoice.md
-                - name: Elismerési teszt létrehozása és megerősítése
-                  href: ../financials/localizations/tasks/create-confirm-recognition-test.md
-                - name: Konszolidált szállítói számla létrehozása és megerősítése
-                  href: ../financials/localizations/tasks/create-confirm-vendor-consolidated-invoice.md
-                - name: PGE-csoportok és pénzgeneráló egységek létrehozása
-                  href: ../financials/localizations/tasks/create-cgu-group-cash-generating-units.md
-                - name: Egyösszegű értékcsökkenésű eszközök létrehozása egyenlő felosztásos módszerrel
-                  href: ../financials/localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
-                - name: Az eszköz tétlen időszakának meghatározása és az értékcsökkenési folyamat ellenőrzése
-                  href: ../financials/localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
-                - name: Tárgyieszköz-kivezetési kötelezettségek kamatköltségének értékcsökkenése és elhatárolása
-                  href: ../financials/localizations/tasks/depreciate-accrue-interest-expense.md
-                - name: Tárgyi eszközök értékcsökkenése a közzétett csökkenési tételekkel
-                  href: ../financials/localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
-                - name: Értékcsökkenés GYIK
-                  href: ../financials/localizations/apac-jpn-fixed-asset-depreciation.md
-                - name: Tárgyi eszköz kivezetése csökkentési tétellel
-                  href: ../financials/localizations/tasks/dispose-fixed-asset-reduction-entry.md
-                - name: A JBA fizetés fájlformátum engedélyezése
-                  href: ../financials/localizations/tasks/jba-payment-file-format.md
-                - name: Értékcsökkenési ráta ütemezésének megadása és értékcsökkenési profilhoz társítása
-                  href: ../financials/localizations/tasks/enter-depreciation-rate-schedule.md
-                - name: Egyenlő arányban elosztott értékcsökkenési módszer
-                  href: ../financials/localizations/apac-jpn-equally-divided-depreciation-method.md
-                - name: Form 26 értékcsökkenthető adóbevalláshoz
-                  href: ../financials/localizations/tasks/jp-00027-form-26-depreciable-tax-declaration.md
-                - name: Fizetési JBA formátumú elektronikus átutalási fájl létrehozása
-                  href: ../financials/localizations/tasks/eft-payment-file-jba-format.md
-                - name: Kifizetési díj generálása és feladása
-                  href: ../financials/localizations/tasks/post-payment-fee.md
-                - name: Fogyasztási adójelentés készítése
-                  href: ../financials/localizations/tasks/japan-consumption-tax-report.md
-                - name: PGE értékvesztési könyvelése
-                  href: ../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
-                - name: Értékvesztési könyvelés
-                  href: ../financials/localizations/apac-jpn-impairment-accounting-fixed-assets.md
-                - name: JBA fájlformátumú vevői kifizetés importálása
-                  href: ../financials/localizations/tasks/import-customer-payment-jba-file-format.md
-                - name: Irányítószámok importálása
-                  href: ../financials/localizations/apac-jpn-import-postal-codes.md
-                - name: T alakú ábrázolású bemeneti napló
-                  href: ../financials/localizations/tasks/jp-00005-input-journal-t-account-form-japan.md
-                - name: Tárgyi eszközök kivezetési kötelezettségével kapcsolatos tranzakciók lekérdezése
-                  href: ../financials/localizations/tasks/inquiries-asset-retirement-obligation.md
-                - name: Levonható költségek lekérdezése
-                  href: ../financials/localizations/tasks/inquiry-deductible-expenses.md
-                - name: A napló kifizetési díjainak lekérdezése
-                  href: ../financials/localizations/tasks/inquiries-payment-fee-journal.md
-                - name: Levonható költségek tárgyieszköz-alapadatfájljainak karbantartása
-                  href: ../financials/localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
-                - name: Az egyes tárgyi eszközök értékvesztési mutatóinak karbantartása
-                  href: ../financials/localizations/tasks/maintain-impairment-indicators-individual-assets.md
-                - name: Szállító kifizetése váltó kibocsátásával
-                  href: ../financials/localizations/apac-jpn-endorse-bill-of-exchange.md
-                - name: Szállítói tranzakció kifizetése ügyfélváltó kibocsátásával
-                  href: ../financials/localizations/tasks/pay-vendor-transaction.md
-                - name: Értéknövekedés és értékcsökkenés időszaki elszámolása
-                  href: ../financials/localizations/tasks/periodic-settlement-over-under-depreciation.md
-                - name: Fokozatos adóelőleg számítása
-                  href: ../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md
-                - name: Kiegészítő értékcsökkenés javaslása
-                  href: ../financials/localizations/tasks/propose-additional-depreciation.md
-                - name: Gyorsított értékcsökkentés felkínálása és feladása
-                  href: ../financials/localizations/tasks/propose-post-accelerated-depreciation.md
-                - name: Kötegelt értékvesztési összeg felkínálása és feladása
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-batch.md
-                - name: Értékvesztési összeg felkínálása és feladása a tárgyieszköz-napló használatával
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-fixed-asset-journal.md
-                - name: Értékvesztés összegének felkínálása és feladása egy pénzgeneráló egységre
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-cash-generating-unit.md
-                - name: Egyedi értékcsökkenés felkínálása
-                  href: ../financials/localizations/tasks/propose-special-depreciation.md
-                - name: Konszolidált vevői számla újranyitása és szerkesztése
-                  href: ../financials/localizations/tasks/reopen-edit-customer-consolidated-invoice.md
-                - name: Konszolidált szállítói számla újranyitása és szerkesztése
-                  href: ../financials/localizations/tasks/reopen-edit-vendor-consolidated-invoice.md
-                - name: Váltóbizonylatok sztornírozása
-                  href: ../financials/localizations/tasks/reverse-endorsed-bill-exchange.md
-                - name: Az értékvesztés-elszámolási teszt futtatása és az egyes tárgyi eszközök értékvesztési összegének kiszámítása
-                  href: ../financials/localizations/tasks/run-recognition-test-calculate.md
-                - name: Vevői és értékesítési rendelés beállítása a gyűjtőszámla céljaként
-                  href: ../financials/localizations/tasks/set-up-customer-sales-order-target-consolidated-invoice.md
-                - name: ARO beállítása
-                  href: ../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md
-                - name: Eszköz kivezetési kötelezettségével kapcsolatos dokumentumok beállítása és az ARO összeg megadása a tárgyi eszközökhöz
-                  href: ../financials/localizations/tasks/set-up-asset-retirement-obligation.md
-                - name: Konszolidált számlák beállítása
-                  href: ../financials/localizations/tasks/set-up-consolidated-invoices.md
-                - name: Értékvesztés-könyvelés közös paramétereinek és feladási profiljának beállítása
-                  href: ../financials/localizations/tasks/impairment-accounting.md
-                - name: Japán fogyasztásiadó-jelentés beállítása
-                  href: ../financials/localizations/tasks/setup-japan-consumption-tax-report.md
-                - name: Japán kifizetés beállítása vevői váltók érvényesítésével
-                  href: ../financials/localizations/tasks/setup-japan-payment-endorsing-customer-bill-exchange.md
-                - name: Alapadatok beállítása a több feladási réteghez tartozó levonható költségek belefoglalásához
-                  href: ../financials/localizations/tasks/set-up-master-data-inclusion.md
-                - name: Kifizetési díj beállítása Japánhoz
-                  href: ../financials/localizations/tasks/setup-payment-fee-japan.md
-                - name: Csökkentési bejegyzések beállítása
-                  href: ../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md
-                - name: Szállítók alapadatainak és a beszerzési rendelés beállítása gyűjtőszámla céljaként
-                  href: ../financials/localizations/tasks/vendor-master-po.md
-                - name: Váltóbizonylatok sztornírozásának kiegyenlítése
-                  href: ../financials/localizations/tasks/settle-endorsed-bill-exchange.md
-                - name: Vevői gyűjtőszámlák kiegyenlítése a kifizetési napló segítségével
-                  href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
-                - name: Vevői gyűjtőszámlák kiegyenlítése a kiegyenlítési tranzakciók segítségével
-                  href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
-                - name: Szállítói gyűjtőszámlák kiegyenlítése a kifizetési napló segítségével
-                  href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
-                - name: Szállítói gyűjtőszámlák kiegyenlítése a kiegyenlítési tranzakciók segítségével
-                  href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-settle-transactions.md
-                - name: Összeállítási lista használata tárgyi eszközökhöz
-                  href: ../financials/localizations/tasks/use-assemble-list-fixed-asset.md
-                - name: Szétszerelési lista használata tárgyi eszközökhöz
-                  href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
-            - name: Malajzia
-              href: ../financials/localizations/malaysia.md
-              items:
-                - name: Ügyféljóváírás létrehozása az értékesítési projektekhez
-                  href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
-                - name: Vevői terhelés létrehozása az értékesítési projektekhez
-                  href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
-                - name: Áruk és szolgáltatások adója (GST)
-                  href: ../financials/localizations/apac-mys-gst.md
-                - name: GST – GAF-fájlok létrehozása a szükséges formátumban
-                  href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
-                - name: Vevői hitel és jóváírás kezelése a GST-hez
-                  href: ../financials/localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
-                - name: Szállítói hitel és jóváírás kezelése a GST-hez
-                  href: ../financials/localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
-                - name: GST vevői számlák nyomtatása mentességi záradékkal
-                  href: ../financials/localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
-                - name: GST adószámlák nyomtatása
-                  href: ../financials/localizations/tasks/my-00005-print-gst-tax-invoices.md
-                - name: Saját részre kibocsátott számlák
-                  href: ../financials/localizations/tasks/my-00007-self-billed-invoices.md
-                - name: GST mentességi záradék beállítása
-                  href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
-            - name: Szingapúr
-              href: ../financials/localizations/singapore.md
-              items:
-                - name: Az GST-05 jelentés elkészítése
-                  href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
-            - name: Thaiföld
-              href: ../financials/localizations/thailand.md
-              items:
-                - name: Készletkarton-jelentések
-                  href: ../financials/localizations/apac-tha-stock-card-reports.md
-                - name: Helyettesítési/helyesbítési adószámla
-                  href: ../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md
-                - name: Nem realizált áfa
-                  href: ../financials/localizations/apac-tha-unrealized-vat.md
-                - name: Adóelőleg
-                  href: ../financials/localizations/apac-tha-withholding-tax.md
+                  href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
+                - name: Előzetes beszerzés feladása
+                  href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
+            - name: Időszaki naplók közzététele
+              href: ../financials/general-ledger/tasks/post-periodic-journals.md
+            - name: Aláírók beállítása a nyomtatási képernyőkhöz
+              href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
+            - name: Osztott időszakok az időszaki naplókban
+              href: ../financials/localizations/emea-create-post-periodic-journals.md
+            - name: A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése
+              href: ../financials/localizations/emea-amount-printing-forms.md
+            - name: Áfabevallás
+              href: ../financials/localizations/emea-cze-vat-statement-details.md
+            - name: Év végi zárás
+              href: ../financials/localizations/emea-cze-hun-year-end.md
+        - name: Dánia
+          href: ../financials/localizations/denmark.md
+          items:
+            - name: Fizetésiutalvány-formátum hozzárendelése vevői számlához
+              href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
+            - name: Vevői számla létrehozása és feladása állami szektorba tartozó vevőhöz
+              href: ../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md
+            - name: Szabadszöveges számla létrehozása és feladása állami szektorba tartozó vevőhöz
+              href: ../financials/localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
+            - name: Projektszámla létrehozása és feladása állami szektorba tartozó vevőhöz
+              href: ../financials/localizations/tasks/create-post-project-invoice-public-sector-customer.md
+            - name: OIOUBL elektronikus számlázási konfiguráció importálása
+              href: ../financials/localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+            - name: Szabadszöveges számla feladása fizetési bizonylattal
+              href: ../financials/localizations/tasks/post-free-text-invoice-payment-slip.md
+            - name: Projektszöveges számla feladása fizetési bizonylattal
+              href: ../financials/localizations/tasks/post-project-invoice-payment-slip.md
+            - name: Értékesítési számla feladása fizetési bizonylattal
+              href: ../financials/localizations/tasks/post-sales-invoice-payment-slip.md
+            - name: Az OIOUBL formátumú elektronikus számlázásban használt vevői számlák beállítása
+              href: ../financials/localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
+            - name: Az OIOUBL formátumú elektronikus számlázás beállítása
+              href: ../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md
+            - name: Fizetési bizonylat formátumának beállítása
+              href: ../financials/localizations/tasks/set-up-payment-slip-format.md
+        - name: Észtország
+          href: ../financials/localizations/estonia.md
+          items:
+            - name: Személyes információk kérése
+              href: ../financials/localizations/emea-est-personal-info.md
+            - name: Áfabevallás
+              href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Európa
+          href: ../financials/localizations/europe.md
           items:
             - name: Előlegre jogosultak
               href: ../financials/localizations/emea-advance-holders.md
               items:
                 - name: Előlegre jogosultak tranzakciói
                   href: ../financials/localizations/emea-advance-holders-transactions.md
-            - name: Előleg alkalmazotthoz (Kelet-Európa)
-              href: ../financials/localizations/tasks/advance-payment-employee.md
+                - name: Előleg fizetése alkalmazottnak (Kelet-Európa)
+                  href: ../financials/localizations/tasks/advance-payment-employee.md
             - name: Speciális számlázás
               href: ../financials/localizations/emea-advance-invoice.md
             - name: Banki egyeztetés
@@ -1524,11 +1545,9 @@
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
             - name: Devizaátértékelés
               href: ../financials/localizations/emea-foreign-currency-revaluation.md
-            - name: Árumozgási dokumentum létrehozása belső készlet átviteléhez
+            - name: Átadási bizonylat létrehozása belső készlet átviteléhez
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
-            - name: Az Uniós Intrastat nyilatkozat létrehozása
-              href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
-            - name: EU értékesítési lista jelentés készítése
+            - name: EU értékesítési listajelentés készítése
               href: ../financials/localizations/tasks/eur-00011-eu-sales-list-report.md
             - name: ISO20022-fájlok
               items:
@@ -1557,6 +1576,10 @@
               items:
                 - name: Tranzakciók átvitele az Intrastatba
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
+                - name: Közösségen belüli tranzakcióhoz berakodási cím megadása
+                  href: ../financials/localizations/tasks/eur-00002-specify-lading-address-intra-community.md
+                - name: Európai Uniós Intrastat nyilatkozat létrehozása
+                  href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
             - name: Készletnapló-jelentések
               href: ../financials/localizations/emea-set-up-report-inventory-journal-names.md
             - name: Számlakibocsátás határidői
@@ -1625,583 +1648,582 @@
                   href: ../financials/localizations/emea-vat-reporting.md
                 - name: Áfajelentés létrehozása és elküldése
                   href: ../financials/localizations/tasks/create-submit-vat-report.md
-            - name: Elszámolási tranzakciók megtekintése
+            - name: Kiegyenlítési tranzakciók megtekintése
               href: ../financials/localizations/emea-transactions-settlement-form.md
-            - name: Ausztria
-              href: ../financials/localizations/austria.md
-              items:
-                - name: Féléves értékcsökkenés a további beszerzéseken
-                  href: ../financials/localizations/emea-aut-half-year-depreciation.md
-                - name: Csomagolóanyag díjai
-                  href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Áfabevallás
-                  href: ../financials/localizations/emea-aut-vat-statement-details.md
-            - name: Belgium
-              href: ../financials/localizations/belgium.md
-              items:
-                - name: CODA banki kivonat
-                  href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
-                - name: Tranzakciók létrehozása és továbbítása a BLWI számára
-                  href: ../financials/localizations/tasks/be-00011-create-transfer-blwi.md
-                - name: INTERVAT adóbevallás
-                  href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
-                - name: Egyeztetési jelentések
-                  href: ../financials/localizations/emea-bel-reconciliation-reports.md
-                - name: 'Fizetésiegyenleg-jelentések beállítása '
-                  href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
-                - name: PRODCOM beállítása és karbantartása
-                  href: ../financials/localizations/emea-bel-prodcom-report.md
-            - name: Cseh Köztársaság
-              href: ../financials/localizations/czech-republic.md
-              items:
-                - name: Jóváírás készpénzfizetési engedményre
-                  href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
-                - name: Tárgyi eszközök
-                  items:
-                    - name: Értékcsökkenés kerekítése
-                      href: ../financials/localizations/emea-cze-depreciation-rounding.md
-                    - name: Féléves értékcsökkenés a tárgyi eszköz értékesítésén
-                      href: ../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md
-                    - name: Értékcsökkenés felfüggesztése (ünnepek)
-                      href: ../financials/localizations/emea-cze-depreciation-suspension-holidays.md
-                    - name: Értékcsökkenés módjai tárgyi eszközöknél
-                      href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
-                    - name: Előzetes beszerzés feladása
-                      href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
-                - name: Időszaki naplók közzététele
-                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
-                - name: Aláírók beállítása a nyomtatási képernyőkhöz
-                  href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
-                - name: Osztott időszakok az időszaki naplókban
-                  href: ../financials/localizations/emea-create-post-periodic-journals.md
-                - name: A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése
-                  href: ../financials/localizations/emea-amount-printing-forms.md
-                - name: Áfabevallás
-                  href: ../financials/localizations/emea-cze-vat-statement-details.md
-                - name: Év végi zárás
-                  href: ../financials/localizations/emea-cze-hun-year-end.md
-            - name: Dánia
-              href: ../financials/localizations/denmark.md
-              items:
-                - name: Fizetésiutalvány-formátum hozzárendelése vevői számlához
-                  href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
-                - name: Vevői számla létrehozása és feladása állami szektorba tartozó vevőhöz
-                  href: ../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md
-                - name: Szabadszöveges számla létrehozása és feladása állami szektorba tartozó vevőhöz
-                  href: ../financials/localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
-                - name: Projektszámla létrehozása és feladása állami szektorba tartozó vevőhöz
-                  href: ../financials/localizations/tasks/create-post-project-invoice-public-sector-customer.md
-                - name: OIOUBL elektronikus számlázási konfiguráció importálása
-                  href: ../financials/localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
-                - name: Szabadszöveges számla feladása fizetési bizonylattal
-                  href: ../financials/localizations/tasks/post-free-text-invoice-payment-slip.md
-                - name: Projektszöveges számla feladása fizetési bizonylattal
-                  href: ../financials/localizations/tasks/post-project-invoice-payment-slip.md
-                - name: Értékesítési számla feladása fizetési bizonylattal
-                  href: ../financials/localizations/tasks/post-sales-invoice-payment-slip.md
-                - name: Az OIOUBL formátumú elektronikus számlázásban használt vevői számlák beállítása
-                  href: ../financials/localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
-                - name: Az OIOUBL formátumú elektronikus számlázás beállítása
-                  href: ../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md
-                - name: Fizetési bizonylat formátumának beállítása
-                  href: ../financials/localizations/tasks/set-up-payment-slip-format.md
-            - name: Észtország
-              href: ../financials/localizations/estonia.md
-              items:
-                - name: Személyes információk kérése
-                  href: ../financials/localizations/emea-est-personal-info.md
-                - name: Áfabevallás
-                  href: ../financials/localizations/emea-est-vat-statement-details.md
-            - name: Franciaország
-              href: ../financials/localizations/france.md
-              items:
-                - name: Állami szektor
-                  items:
-                    - name: Állami szektor könyvelése
-                      href: ../financials/localizations/emea-fra-public-sector-accounting.md
-                    - name: Kötelezettségek
-                      href: ../financials/localizations/emea-fra-commitments-public-sector.md
-                    - name: Mandats de paiement
-                      href: ../financials/localizations/emea-fra-mandats-de-paiement.md
-                    - name: Beszerzés és forrás
-                      href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
-                    - name: Titres de recette
-                      href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
-                    - name: Szállítói számlák visszatartott kifizetése
-                      href: ../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
-                - name: Váltókiállítás jóváhagyása és feladása
-                  href: ../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
-                - name: Számlák és bizonylatok kronológiai sorrendben
-                  href: ../financials/localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Szabványos könyvvizsgálati fájl létrehozása Franciaország (FEC) esetén
-                  href: ../financials/localizations/emea-fra-fec-audit-file.md
-                - name: Vevői és szállítói számlakivonat
-                  href: ../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md
-                - name: A megkésett fizetésekre és egyösszegű elemekre vonatkozó napi kamatszámítás a számlákon és a fizetési felszólításokon
-                  href: ../financials/localizations/tasks/fr-00018-daily-interest.md
-                - name: Különbözeti értékcsökkenés
-                  href: ../financials/localizations/emea-fra-derogatory-depreciation.md
-                - name: Francia váltók és kötelezvények
-                  href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
-                - name: NAF-kódok és siret-számok
-                  href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
-                - name: NAF-kódok és Siret-számok beállítása
-                  href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
-                - name: Lejárt határidejű vevői kifizetések kötbérei
-                  href: ../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md
-                - name: Váltókiállítási elutasítási napló feladása
-                  href: ../financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
-                - name: Váltó-újrakiállítási napló feladása
-                  href: ../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
-                - name: Egyösszegű visszaigénylés szövegének nyomtatása a vevői számlára
-                  href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
-                - name: RB/SL értékcsökkenés
-                  href: ../financials/localizations/emea-fra-rbsl-depreciation.md
-                - name: Fizetési mód beállítása
-                  href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
-                - name: Fizetési mód módosítása a vevőnél
-                  href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
-                - name: Retail
-                  items:
-                    - name: Pénztárgépek
-                      href: ../retail/localizations/emea-fra-cash-registers.md
-                    - name: Pénztárgépek telepítésére vonatkozó irányelvek
-                      href: ../retail/localizations/emea-fra-deployment.md
-            - name: Németország
-              href: ../financials/localizations/germany.md
-              items:
-                - name: Értékcsökkenés a további beszerzéseken
-                  href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
-                - name: Könyvvizsgálati fájl
-                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
-                  items:
-                    - name: Könyvvizsgálati fájl konfigurációjának testreszabása
-                      href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Könyvvizsgálati fájl generálása
-                      href: ../financials/localizations/tasks/german-audit-file.md
-                    - name: Könyvvizsgálati fájl konfigurációjának importálása
-                      href: ../financials/localizations/tasks/import-german-audit-file-configuration.md
-                - name: Értékcsökkentési helyesbítések további beszerzésekhez a második év során
-                  href: ../financials/localizations/tasks/de-00002-depreciation.md
-                - name: Elektronikus áfabevallás (ELSTER) továbbítása
-                  href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
-                - name: Naplólista (jelentés)
-                  href: ../financials/localizations/emea-deu-journal-list-report.md
-                - name: Elektronikus adóbevallások beállítása
-                  href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
-            - name: Magyarország
-              href: ../financials/localizations/hungary.md
-              items:
-                - name: Árfolyamszámítás
-                  href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
-                - name: Értékcsökkenés módjai tárgyi eszközöknél
-                  href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
-                - name: Kis értékű tárgyi eszközök
-                  href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
-                - name: Tárgyi eszköz áthelyezése készletbe
-                  href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
-                - name: Adóvisszaigénylési dokumentum
-                  href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
-                - name: Év végi zárás
-                  href: ../financials/localizations/emea-cze-hun-year-end.md
-            - name: Izland
-              href: ../financials/localizations/iceland.md
-              items:
-                - name: Szállítói számla létrehozása és számlabevallás-kategória csatolása
-                  href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
-                - name: Szállítók számára történő számlabevallás beállítása
-                  href: ../financials/localizations/tasks/set-up-invoice-declaration-vendors.md
-                - name: Kötelező fizetési hivatkozás beállítása
-                  href: ../financials/localizations/tasks/set-up-mandatory-payment-references.md
-                - name: 'Szállítói számla bevallásainak frissítése, és jelentés készítése'
-                  href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
-            - name: Olaszország
-              href: ../financials/localizations/italy.md
-              items:
-                - name: Áfabevallások részletei
-                  href: ../financials/localizations/emea-ita-vat-statements-details.md
-                - name: Tiltólista-jelentés
-                  href: ../financials/localizations/emea-ita-black-list-report.md
-                - name: Kompetencia dátuma
-                  href: ../financials/localizations/emea-ita-competence-date.md
-                - name: Tárgyi eszközök értékcsökkenése
-                  href: ../financials/localizations/emea-ita-depreciation-of-fixed-assets.md
-                - name: Modello 770
-                  href: ../financials/localizations/emea-ita-modello770.md
-                - name: Szállítólevél dátumigazolása a számlákon
-                  href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
-                - name: Feladás és a szállítás részleteit tartalmazó szállítólevél nyomtatása
-                  href: ../financials/localizations/emea-ita-packing-slip.md
-                - name: Áfakönyvek
-                  href: ../financials/localizations/emea-ita-fiscal-books.md
-                - name: Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében
-                  href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
-                - name: Adóelőleg
-                  href: ../financials/localizations/emea-ita-withholding-tax.md
-            - name: Lettország
-              href: ../financials/localizations/latvia.md
-              items:
-                - name: Tárgyieszköz-könyvelés
-                  href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
-                - name: Tárgyi eszközök helyváltozásának nyomon követése
-                  href: ../financials/localizations/emea-lva-fixed-assets-location-fields-change.md
-                - name: Számla és szállítólevél számozása
-                  href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
-                - name: Természeti erőforrások adójáról szóló jelentés
-                  href: ../financials/localizations/emea-lva-tax-natural-resources.md
-                - name: Áfabevallás részletei
-                  href: ../financials/localizations/emea-lva-vat-statement-details.md
-            - name: Litvánia
-              href: ../financials/localizations/lithuania.md
-              items:
-                - name: Tárgyi eszköz javítási kimutatása
-                  href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
-                - name: Tárgyieszköz-átvitel létrehozása a raktárdokumentumok között
-                  href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: Számla és szállítólevél számozása
-                  href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
-                - name: Áfabevallás részletei
-                  href: ../financials/localizations/emea-ltu-vat-statement-details.md
-            - name: Hollandia
-              href: ../financials/localizations/netherlands.md
-              items:
-                - name: Elektronikus adóbevallások (EVAT)
-                  href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
-                - name: Semansys XBRL-integráció
-                  href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
-            - name: Norvégia
-              href: ../financials/localizations/norway.md
-              items:
-                - name: Vevői és szállítói kifizetési formátumok hozzárendelése
-                  href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
-                - name: Vevői kifizetés fizetési azonosító alapján
-                  href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
-                - name: Nets importálási formátum
-                  href: ../financials/localizations/emea-nor-nets-import-format.md
-                - name: Áfabevallás
-                  href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
-                - name: Pénztárgépek
-                  href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Pénztárgépek telepítésére vonatkozó irányelvek
-                  href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Lengyelország
-              href: ../financials/localizations/poland.md
-              items:
-                - name: Sorengedmények kiszámítása az egységár alapján
-                  href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
-                - name: Javítással kapcsolatos megjegyzések
-                  href: ../financials/localizations/emea-pol-correction-notes.md
-                - name: Értékesítési számlamásolatok számozása
-                  href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
-                - name: Tárgyi eszközök értékcsökkenése
-                  href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
-                - name: Tárgyieszköz-kivezetési funkciók kiterjesztése
-                  href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
-                - name: Visszaküldhető csomagolás
-                  href: ../financials/localizations/emea-pol-returnable-packages.md
-                - name: Áfajelentések
-                  href: ../financials/localizations/emea-pol-sales-tax-reports.md
-                - name: Standard könyvvizsgálati fájl
-                  href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
-                - name: Adókamat és szabadkézi kamat
-                  href: ../financials/localizations/emea-pol-interest-calculation.md
-                - name: Forgalom- és mérlegkimutatás
-                  href: ../financials/localizations/emea-pol-turnover-balances-statement.md
-            - name: Spanyolország
-              href: ../financials/localizations/spain.md
-              items:
-                - name: Készpénzfizetési engedmény alkalmazása a számlán
-                  href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
-                - name: Váltó
-                  href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
-                - name: Feltételes áfa
-                  href: ../financials/localizations/emea-esp-conditional-sales-tax.md
-                - name: Jóváírás számlázása
-                  href: ../financials/localizations/tasks/emea-esp-credit-invoicing.md
-                - name: Számlafogadó pénzügyi adatai
-                  href: ../financials/localizations/emea-esp-fiscal-data-invoice-account.md
-                - name: Tárgyieszköz-csoport átértékelése
-                  href: ../financials/localizations/emea-esp-fixed-asset-group-revaluation.md
-                - name: Közösségi áfa
-                  href: ../financials/localizations/emea-esp-intra-community-vat.md
-                - name: Egyszeri vevők
-                  href: ../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md
-                - name: Csekkek kinyomtatása spanyol elrendezésben
-                  href: ../financials/localizations/emea-esp-print-checks-with-spanish-layout.md
-                - name: Kötelezvény beállításai
-                  href: ../financials/localizations/emea-esp-promissory-note-options.md
-                - name: 340. jelentés
-                  href: ../financials/localizations/emea-esp-report-340.md
-                - name: Beszerzési és értékesítési ciklusok
-                  href: ../financials/localizations/emea-esp-sales-purchase-cycle.md
-                - name: Speciális bevitelek és nyitólapok
-                  href: ../financials/localizations/emea-esp-opening-sheets-spain.md
-            - name: Svédország
-              href: ../financials/localizations/sweden.md
-              items:
-                - name: Pénzügyi adatok exportálása könyvvizsgálóknak Svédország esetében
-                  href: ../financials/localizations/emea-swe-sie-standard-report.md
-                - name: Fizetési formátumok importálása
-                  href: ../financials/localizations/emea-swe-payment-formats-import.md
-                - name: Pénztárgépek
-                  href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
-            - name: Svájc
-              href: ../financials/localizations/switzerland.md
-              items:
-                - name: Vevői kifizetések importálása ESR-ben
-                  href: ../financials/localizations/emea-che-esr-customer-payments-import.md
-            - name: Egyesült Királyság
-              href: ../financials/localizations/united-kingdom.md
-              items:
-                - name: Építőipari séma
-                  href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: Jóváírás létrehozása a kiegyenlítési kedvezményen
-                  href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: Fordított fizetésű áfa hatálya alá tartozó cikkeket tartalmazó beszerzési rendelés létrehozása
-                  href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: Fordított fizetésű áfa hatálya alá tartozó cikkeket tartalmazó értékesítési rendelés létrehozása
-                  href: ../financials/localizations/tasks/gb-00002-sales-order.md
-                - name: A fordított áfafizetésnél alkalmazott cikkáfacsoportok beállítása
-                  href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: 'Fordított áfacikkcsoportok, -szabályok és -paraméterek beállítása'
-                  href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: A fordított áfafizetésnél alkalmazott kimeneti áfacsoportok beállítása
-                  href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-        - name: Latin-Amerika
+        - name: Franciaország
+          href: ../financials/localizations/france.md
           items:
-            - name: Brazília
-              href: ../financials/localizations/brazil.md
+            - name: Állami szektor
               items:
-                - name: Honosítás köre
-                  href: ../financials/localizations/latam-bra-scope.md
-                - name: Pénzügyi könyvek
-                  href: ../financials/localizations/latam-bra-fiscal-books.md
-                  items:
-                    - name: Pénzügyi könyvek beállítása
-                      href: ../financials/localizations/latam-bra-configure-fiscal-books.md
-                    - name: ICMS pénzügyi adóbizonylatok
-                      href: ../financials/localizations/latam-bra-icms-tax-fiscal-documents.md
-                    - name: Pénzügyi bizonylatok importálása
-                      href: ../financials/localizations/latam-bra-import-fiscal-documents.md
-                    - name: A főkönyvi konszolidációban létrehozott jogi személy tranzakcióinak exportálása és importálása
-                      href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
-                    - name: NF-e XML-dokumentumok és a DANFE-fájlok importálása és ellenőrzése
-                      href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
-                    - name: Elektronikus fizetési átutalások feldolgozása
-                      href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
-                    - name: Pénzügyi dokumentumok
-                      href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
-                    - name: Pénzügyi dokumentum szöveges helyőrzők
-                      href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
-                    - name: Beszerzés – kiegészítő pénzügyi bizonylatok
-                      href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
-                    - name: Hivatkozott pénzügyi dokumentumok
-                      href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
-                    - name: Értékesítés – kiegészítő pénzügyi bizonylatok
-                      href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
-                    - name: Szolgáltatás – elektronikus pénzügyi bizonylat
-                      href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
-                    - name: Az elektronikus visszafizetési folyamat során létrehozott naplók
-                      href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
-                - name: NF-e folyamat
-                  href: ../financials/localizations/latam-bra-nf-e-process.md
-                  items:
-                    - name: NF-e pénzügyi bizonylatok automatikus továbbítása
-                      href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
-                    - name: 'E-mailek létrehozása az elfogadott NF-e-hez, és a DANFE PDF-fájlok és NF-e XML-fájlok csatolása az e-mailekhez'
-                      href: ../financials/localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
-                    - name: NF-e tanúsítványok
-                      href: ../financials/localizations/latam-bra-nfe-certs.md
-                    - name: 'NF-e XML-dokumentumok és a DANFE-fájlok beállítása, importálása és ellenőrzése'
-                      href: ../financials/localizations/latam-bra-set-up-import-nfe.md
-                    - name: NF-e szövetségi paraméterek beállítása
-                      href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
-                    - name: NF-e paraméterek beállítása a pénzügyi létesítményhez
-                      href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
-                - name: Jogi személyek paraméterei
-                  href: ../financials/localizations/latam-bra-legal-entity-parameters.md
-                - name: CIAP tárgyi eszköz beszerzése
-                  href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
-                - name: CIAP tárgyi eszköz értékesítése
-                  href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
-                - name: Adók
-                  href: ../financials/localizations/latam-bra-calculate-taxes.md
-                  items:
-                    - name: Adó kiszámítása a beszerzési árajánlatokhoz
-                      href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
-                    - name: Adómegállapítás létrehozása – ICMS
-                      href: ../financials/localizations/tasks/br-10001-4-create-tax-assessment-icms.md
-                    - name: Adómegállapítás létrehozása – IPI-adó
-                      href: ../financials/localizations/tasks/br-10004-2-create-tax-assessment-ipi-tax.md
-                    - name: Adómegállapítás létrehozása – PIS- és COFINS-adó
-                      href: ../financials/localizations/tasks/br-10006-4-create-tax-assessment-pis-cofins-tax.md
-                    - name: Adókorrekciós tranzakciók megadása és feladása
-                      href: ../financials/localizations/tasks/br-10001-3-enter-post-tax-adjustment-transactions.md
-                    - name: PIS- és COFINS-adókorrekciós tranzakciók megadása és feladása
-                      href: ../financials/localizations/tasks/br-10006-3-enter-pis-cofins-tax-adjustment-transactions.md
-                    - name: Pénzügyi intézmény adóattribútumai
-                      href: ../financials/localizations/tasks/br-00002-fiscal-establishment-tax-attributes.md
-                    - name: ICMS-adójóváírás pénzügyi dokumentumainak kiállítása
-                      href: ../financials/localizations/tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md
-                    - name: ICMS-adójóváírás-átutalás pénzügyi dokumentumainak kiállítása
-                      href: ../financials/localizations/tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md
-                    - name: Kiigazítási kódok beállítása az ICMS-adóhoz
-                      href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
-                    - name: Kiigazítási kódok beállítása az ICMS-adókhoz a pénzügyi dokumentumokon
-                      href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
-                    - name: Kiigazítási kódok beállítása az IPI-adókhoz
-                      href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
-                    - name: Kiigazítási kódok beállítása a PIS- és COFINS-adókhoz
-                      href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
-                    - name: PIS- és COFINS-táblák beállítása
-                      href: ../financials/localizations/tasks/br-10006-1-set-up-pis-cofins-tables.md
-                    - name: ISS-adómegállapítás
-                      href: ../financials/localizations/tasks/br-10005-tax-assessment-iss-tax.md
-                    - name: Adóattribútumok
-                      href: ../financials/localizations/latam-bra-tax-attributes.md
-                    - name: Adófizetések
-                      href: ../financials/localizations/latam-bra-tax-payments.md
-                    - name: Áfa az értékesítési ajánlatokban
-                      href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Adóelőlegek '
-                      href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
-                    - name: A vevői kifizetések adóelőlegei
-                      href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
-                    - name: A szállítói kifizetések adóelőlegei
-                      href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
-                - name: Feladatok Brazíliához
-                  items:
-                    - name: Jogi személy paramétereinek beállítása
-                      href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
-                    - name: Pénzügyi bizonylat forrásszövegének beállítása
-                      href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
-                    - name: Szállítói pénzügyi bizonylatok bevételezése (tárgyi eszközök – PIS és COFINS hosszú távon visszatéríthető)
-                      href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
-                    - name: Szállítói pénzügyi dokumentumok bevételezése (termékek)
-                      href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
-                    - name: Beszerzéskiegészítő pénzügyi dokumentum létrehozása és feladása
-                      href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
-                    - name: Beszerzéskiegészítő pénzügyi bizonylat érvénytelenítése
-                      href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
-                    - name: Pénzügyi bizonylatok kibocsátására a szállítók számára
-                      href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
-                    - name: Vevő pénzügyi bizonylatok kiadása
-                      href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
-                    - name: Árujegyek
-                      href: ../financials/localizations/tasks/br-00041-delivery-slip.md
-                    - name: Vegyes költségek a szabadszöveges számlákon
-                      href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
-                    - name: Értékesítéskiegészítő pénzügyi dokumentum létrehozása és feladása
-                      href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
-                    - name: Értékesítéskiegészítő pénzügyi bizonylat érvénytelenítése
-                      href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
-                    - name: Szolgáltatási elektronikus pénzügyi bizonylatok szöveges fájlok segítségével
-                      href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
-                    - name: Kamat és bírságok beállítása a szállítói kifizetésekhez
-                      href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
-                    - name: Kamat és bírságok kiszámítása a szállítói kifizetésekhez
-                      href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
-                    - name: Kamat és bírságok beállítása a vevői kifizetésekhez
-                      href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
-                    - name: Kamat és bírságok kiszámítása a vevői kifizetésekhez
-                      href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
-                    - name: Elektronikus fizetések kezelése szállítói kifizetésekhez
-                      href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
-                    - name: Projektterhelések
-                      href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
-                    - name: Pénzügyi bizonylat szövegének kezelése beszerzési dokumentumokban
-                      href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
-                    - name: Szállítói pénzügyi bizonylatok bevételezése (tárgyi eszközök – ICMS hosszú távon visszatéríthető)
-                      href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
-                    - name: Vevői pénzügyi bizonylatok kiadása (szolgáltatások)
-                      href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
-                    - name: Vevői pénzügyi bizonylatok kiadása (tárgyi eszközök)
-                      href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
-                    - name: Vevői pénzügyi bizonylatok kiadása (projekt)
-                      href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
-                    - name: Vevői pénzügyi bizonylatok kiadása (végfelhasználók számára)
-                      href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
-                    - name: Vevői pénzügyi bizonylatok kiadása (SUFRAMA-vevők számára)
-                      href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
-                    - name: Vevői pénzügyi bizonylat érvénytelenítése (projekt)
-                      href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
-                    - name: Nem pénzügyi műveletek
-                      href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
-                    - name: CIAP-tranzakció megadása
-                      href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
-                    - name: CIAP-jóváírás összegének kiszámítása
-                      href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
-                    - name: CIAP-jóváírás megadása egy előző időszakból
-                      href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
-                    - name: PIS és COFINS tárgyi eszközök
-                      href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
-            - name: Mexikó
-              href: ../financials/localizations/mexico.md
+                - name: Állami szektor könyvelése
+                  href: ../financials/localizations/emea-fra-public-sector-accounting.md
+                - name: Kötelezettségek
+                  href: ../financials/localizations/emea-fra-commitments-public-sector.md
+                - name: Mandats de paiement
+                  href: ../financials/localizations/emea-fra-mandats-de-paiement.md
+                - name: Beszerzés és forrás
+                  href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
+                - name: Titres de recette
+                  href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
+                - name: Szállítói számlák visszatartott kifizetése
+                  href: ../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
+            - name: Váltókiállítás jóváhagyása és feladása
+              href: ../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
+            - name: Számlák és bizonylatok kronológiai sorrendben
+              href: ../financials/localizations/emea-fra-chronological-invoices-vouchers.md
+            - name: Szabványos könyvvizsgálati fájl létrehozása Franciaország (FEC) esetén
+              href: ../financials/localizations/emea-fra-fec-audit-file.md
+            - name: Vevői és szállítói számlakivonat
+              href: ../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md
+            - name: A megkésett fizetésekre és egyösszegű elemekre vonatkozó napi kamatszámítás a számlákon és a fizetési felszólításokon
+              href: ../financials/localizations/tasks/fr-00018-daily-interest.md
+            - name: Különbözeti értékcsökkenés
+              href: ../financials/localizations/emea-fra-derogatory-depreciation.md
+            - name: Francia váltók és kötelezvények
+              href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+            - name: NAF-kódok és siret-számok
+              href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
+            - name: NAF-kódok és Siret-számok beállítása
+              href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
+            - name: Lejárt határidejű vevői kifizetések kötbérei
+              href: ../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md
+            - name: Váltókiállítási elutasítási napló feladása
+              href: ../financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
+            - name: Váltó-újrakiállítási napló feladása
+              href: ../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
+            - name: Egyösszegű visszaigénylés szövegének nyomtatása a vevői számlára
+              href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
+            - name: RB/SL értékcsökkenés
+              href: ../financials/localizations/emea-fra-rbsl-depreciation.md
+            - name: Fizetési mód beállítása
+              href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
+            - name: Fizetési mód módosítása a vevőnél
+              href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
+            - name: Retail
               items:
-                - name: Honosítás köre
-                  href: ../financials/localizations/latam-mex-scope.md
-                - name: Helyesbítés – inflációkimutatási jelentés
-                  href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
-                - name: Elektronikus számla visszavonása
-                  href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
-                - name: 3.3-as CFDI-verzió
-                  href: ../financials/localizations/latam-mex-cfdi-3-3.md
-                - name: Vevői regisztrációs azonosítók és egyéb adatok
-                  href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
-                - name: DIOT-nyilatkozat kimutatása
-                  href: ../financials/localizations/latam-mex-diot-declaration-statement.md
-                - name: E-számlázási CFDI
-                  href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-                - name: Elektronikus számlák
-                  href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
-                - name: Elektronikus főkönyvi számla kimutatásai
-                  href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
-                - name: Adóregisztrációs azonosítók megadása mexikói jogi személyekre
-                  href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
-                - name: Lekérdezés és elektronikus számla nyomtatása
-                  href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
-                - name: ISR-bevallási jelentés
-                  href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
-                - name: Szabadszöveges számla feladása
-                  href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-                - name: Mexikói elektronikus főkönyvi könyvelési jelentést (1.1-es verzió) előállítása
-                  href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
-                - name: Elektronikus számla paramétereinek beállítása
-                  href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
-                - name: Mexikó áfakódjainak beállítása
-                  href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
-                - name: Mexikói jogi személy számlatükrének beállítása
-                  href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
-                - name: Mexikói bankszámlák RFC regisztrációs azonosítójának megadása
-                  href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
-                - name: Szállítói regisztráció azonosítók
-                  href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+                - name: Pénztárgépek
+                  href: ../retail/localizations/emea-fra-cash-registers.md
+                - name: Pénztárgépek telepítésére vonatkozó irányelvek
+                  href: ../retail/localizations/emea-fra-deployment.md
+        - name: Németország
+          href: ../financials/localizations/germany.md
+          items:
+            - name: Értékcsökkenés a további beszerzéseken
+              href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
+            - name: Könyvvizsgálati fájl
+              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
+              items:
+                - name: Könyvvizsgálati fájl konfigurációjának testreszabása
+                  href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
+                - name: Könyvvizsgálati fájl generálása
+                  href: ../financials/localizations/tasks/german-audit-file.md
+                - name: Könyvvizsgálati fájl konfigurációjának importálása
+                  href: ../financials/localizations/tasks/import-german-audit-file-configuration.md
+            - name: Értékcsökkentési helyesbítések további beszerzésekhez a második év során
+              href: ../financials/localizations/tasks/de-00002-depreciation.md
+            - name: Elektronikus áfabevallás (ELSTER) továbbítása
+              href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
+            - name: Naplólista (jelentés)
+              href: ../financials/localizations/emea-deu-journal-list-report.md
+            - name: Elektronikus adóbevallások beállítása
+              href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
+        - name: Magyarország
+          href: ../financials/localizations/hungary.md
+          items:
+            - name: Árfolyamszámítás
+              href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
+            - name: Értékcsökkenés módjai tárgyi eszközöknél
+              href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
+            - name: Kis értékű tárgyi eszközök
+              href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
+            - name: Tárgyi eszköz áthelyezése készletbe
+              href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
+            - name: Adóvisszaigénylési dokumentum
+              href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
+            - name: Év végi zárás
+              href: ../financials/localizations/emea-cze-hun-year-end.md
+        - name: Izland
+          href: ../financials/localizations/iceland.md
+          items:
+            - name: Szállítói számla létrehozása és számlabevallás-kategória csatolása
+              href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
+            - name: Szállítók számára történő számlabevallás beállítása
+              href: ../financials/localizations/tasks/set-up-invoice-declaration-vendors.md
+            - name: Kötelező fizetési hivatkozás beállítása
+              href: ../financials/localizations/tasks/set-up-mandatory-payment-references.md
+            - name: 'Szállítói számla bevallásainak frissítése, és jelentés készítése'
+              href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
+        - name: India
+          href: ../financials/localizations/india.md
+          items:
+            - name: Tárgyi eszközök
+              href: ../financials/localizations/apac-ind-fixed-assets.md
+              items:
+                - name: Nap alapú naptár csatolása tárgyieszköz-könyvhöz
+                  href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
+                - name: Eltolódás értékcsökkenésének számítása
+                  href: ../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md
+                - name: Hozzon létre egy készletmodellcsoportot a tőkeelemeknek
+                  href: ../financials/localizations/tasks/apac-ind-create-inventory-model-group.md
+                - name: Értékcsökkenés létrehozása és feladása
+                  href: ../financials/localizations/apac-ind-calculate-post-depreciation.md
+                - name: Határozza meg a műszak típusát és a könyvekhez rendelt ipart a tárgyi eszközhöz történő csatolás érdekében
+                  href: ../financials/localizations/tasks/apac-ind-books-shift-industry-types.md
+                - name: Tárgyieszköz-tranzakciók sztornírozása
+                  href: ../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md
+                - name: Eltolódás-értékcsökkenés számítása
+                  href: ../financials/localizations/apac-ind-calculation-shift-depreciation.md
+                - name: Nap alapú pénzügyi naptár beállítása
+                  href: ../financials/localizations/tasks/apac-ind-day-based-calendar.md
+                - name: Paraméterek beállítása értékcsökkenés számításához
+                  href: ../financials/localizations/tasks/apac-ind-set-up-depreciation.md
+                - name: Eszközcsoport értékcsökkenés beállítása értékcsökkenés könyvekhez
+                  href: ../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                - name: Tőkeelemek átvitele a tárgyi eszközre
+                  href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
+            - name: India GST
+              href: ../financials/localizations/apac-ind-gst.md
+              items:
+                - name: India GST hivatkozáscsoportok
+                  href: ../financials/localizations/apac-ind-gst-reference-groups.md
+                - name: GST integrációja pénztárgépekhez
+                  href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+            - name: Pénztárgépek telepítésére vonatkozó irányelvek
+              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+            - name: Adómotor áttekintése
+              href: ../financials/general-ledger/tax-engine.md
+              items:
+                - name: Adómotor integrációja
+                  href: ../financials/general-ledger/tax-engine-integration.md
+                - name: Adómotor kiterjesztése
+                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+            - name: Adóküszöbértékekre vonatkozó GYIK
+              href: ../financials/localizations/apac-ind-tax-thresholds.md
+        - name: Olaszország
+          href: ../financials/localizations/italy.md
+          items:
+            - name: Áfabevallások részletei
+              href: ../financials/localizations/emea-ita-vat-statements-details.md
+            - name: Tiltólista-jelentés
+              href: ../financials/localizations/emea-ita-black-list-report.md
+            - name: Kompetencia dátuma
+              href: ../financials/localizations/emea-ita-competence-date.md
+            - name: Tárgyi eszközök értékcsökkenése
+              href: ../financials/localizations/emea-ita-depreciation-of-fixed-assets.md
+            - name: Modello 770
+              href: ../financials/localizations/emea-ita-modello770.md
+            - name: Szállítólevél dátumigazolása a számlákon
+              href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
+            - name: Feladás és a szállítás részleteit tartalmazó szállítólevél nyomtatása
+              href: ../financials/localizations/emea-ita-packing-slip.md
+            - name: Áfakönyvek
+              href: ../financials/localizations/emea-ita-fiscal-books.md
+            - name: Felosztott fizetés a közigazgatás részére kibocsátott számlák esetében
+              href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
+            - name: Adóelőleg
+              href: ../financials/localizations/emea-ita-withholding-tax.md
+        - name: Japán
+          href: ../financials/localizations/japan.md
+          items:
+            - name: Tárgyi eszköz beszerzése és állami támogatás igénylése
+              href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
+            - name: Tárgyi eszköz beszerzése kivezetési kötelezettséggel
+              href: ../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
+            - name: Tárgyi eszköz kivezezetés kötelezettsége becslésének beállítása
+              href: ../financials/localizations/tasks/adjustment-asset-retirement-obligation-estimate.md
+            - name: Megosztott eszköz és goodwill átvitel összegének felosztása készpénzgeneráló egységekre
+              href: ../financials/localizations/tasks/allocate-carrying-amount.md
+            - name: Felosztási szabályok
+              href: ../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md
+            - name: Szállítók által fedezett banki kifizetési díjak
+              href: ../financials/localizations/apac-jpn-bank-payment-fees-vendors.md
+            - name: A könyv élettartama során használt értékcsökkenési mód megváltoztatása
+              href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-book.md
+            - name: Egy eszköz élettartama során használt értékcsökkenési mód megváltoztatása
+              href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-one-asset.md
+            - name: Gyorsított értékcsökkentési paraméterek és a feladási profilok konfigurálása
+              href: ../financials/localizations/tasks/accelerated-depreciation-posting-profiles.md
+            - name: Gyűjtőszámla-paraméterek konfigurálása és beállítása kötelezettségekre vonatkozóan
+              href: ../financials/localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
+            - name: Értékcsökkenési profil és feladási profil konfigurálása további értékcsökkenéshez
+              href: ../financials/localizations/tasks/configure-depreciation-profile-posting.md
+            - name: Tárgyi eszköz kivezetési kötelezettségével kapcsolatos feladási és a piaci kedvezményes árak fő számláinak beállítása
+              href: ../financials/localizations/tasks/configure-main-accounts-asset-retirement.md
+            - name: Gyűjtőszámlák
+              href: ../financials/localizations/apac-jpn-consolidate-invoices.md
+            - name: Tárgyi eszköz létrehozása további értékcsökkenéssel
+              href: ../financials/localizations/tasks/create-fixed-asset-additional-depreciation.md
+            - name: Tárgyi eszköz létrehozása különleges értékcsökkenési profillal
+              href: ../financials/localizations/tasks/create-fixed-asset-special-depreciation-profile.md
+            - name: Gyorsított értékcsökkentési dokumentum létrehozása és használati adatok rögzítése
+              href: ../financials/localizations/tasks/create-accelerated-depreciation-document-enter-usage-data.md
+            - name: Gyorsított értékcsökkenési profil létrehozása és hozzárendelése könyvhöz
+              href: ../financials/localizations/tasks/create-accelerated-depreciation-profile-assign-it-book.md
+            - name: Csökkentési tételdokumentum létrehozása és hozzárendelése az állami támogatásra vonatkozóan
+              href: ../financials/localizations/tasks/create-assign-reduction-document.md
+            - name: Berendezéscsoport létrehozása és hozzárendelése
+              href: ../financials/localizations/tasks/create-assign-equipment-group.md
+            - name: Konszolidált vevői számla létrehozása és megerősítése
+              href: ../financials/localizations/tasks/create-confirm-customer-consolidated-invoice.md
+            - name: Elismerési teszt létrehozása és megerősítése
+              href: ../financials/localizations/tasks/create-confirm-recognition-test.md
+            - name: Konszolidált szállítói számla létrehozása és megerősítése
+              href: ../financials/localizations/tasks/create-confirm-vendor-consolidated-invoice.md
+            - name: PGE-csoportok és pénzgeneráló egységek létrehozása
+              href: ../financials/localizations/tasks/create-cgu-group-cash-generating-units.md
+            - name: Egyösszegű értékcsökkenésű eszközök létrehozása egyenlő felosztásos módszerrel
+              href: ../financials/localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
+            - name: Az eszköz tétlen időszakának meghatározása és az értékcsökkenési folyamat ellenőrzése
+              href: ../financials/localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
+            - name: Tárgyieszköz-kivezetési kötelezettségek kamatköltségének értékcsökkenése és elhatárolása
+              href: ../financials/localizations/tasks/depreciate-accrue-interest-expense.md
+            - name: Tárgyi eszközök értékcsökkenése a közzétett csökkenési tételekkel
+              href: ../financials/localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
+            - name: Értékcsökkenés GYIK
+              href: ../financials/localizations/apac-jpn-fixed-asset-depreciation.md
+            - name: Tárgyi eszköz kivezetése csökkentési tétellel
+              href: ../financials/localizations/tasks/dispose-fixed-asset-reduction-entry.md
+            - name: A JBA fizetés fájlformátum engedélyezése
+              href: ../financials/localizations/tasks/jba-payment-file-format.md
+            - name: Értékcsökkenési ráta ütemezésének megadása és értékcsökkenési profilhoz társítása
+              href: ../financials/localizations/tasks/enter-depreciation-rate-schedule.md
+            - name: Egyenlő arányban elosztott értékcsökkenési módszer
+              href: ../financials/localizations/apac-jpn-equally-divided-depreciation-method.md
+            - name: Form 26 értékcsökkenthető adóbevalláshoz
+              href: ../financials/localizations/tasks/jp-00027-form-26-depreciable-tax-declaration.md
+            - name: Fizetési JBA formátumú elektronikus átutalási fájl létrehozása
+              href: ../financials/localizations/tasks/eft-payment-file-jba-format.md
+            - name: Kifizetési díj generálása és feladása
+              href: ../financials/localizations/tasks/post-payment-fee.md
+            - name: Fogyasztási adójelentés készítése
+              href: ../financials/localizations/tasks/japan-consumption-tax-report.md
+            - name: PGE értékvesztési könyvelése
+              href: ../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
+            - name: Értékvesztési könyvelés
+              href: ../financials/localizations/apac-jpn-impairment-accounting-fixed-assets.md
+            - name: JBA fájlformátumú vevői kifizetés importálása
+              href: ../financials/localizations/tasks/import-customer-payment-jba-file-format.md
+            - name: Irányítószámok importálása
+              href: ../financials/localizations/apac-jpn-import-postal-codes.md
+            - name: T alakú ábrázolású bemeneti napló
+              href: ../financials/localizations/tasks/jp-00005-input-journal-t-account-form-japan.md
+            - name: Tárgyi eszközök kivezetési kötelezettségével kapcsolatos tranzakciók lekérdezése
+              href: ../financials/localizations/tasks/inquiries-asset-retirement-obligation.md
+            - name: Levonható költségek lekérdezése
+              href: ../financials/localizations/tasks/inquiry-deductible-expenses.md
+            - name: A napló kifizetési díjainak lekérdezése
+              href: ../financials/localizations/tasks/inquiries-payment-fee-journal.md
+            - name: Levonható költségek tárgyieszköz-alapadatfájljainak karbantartása
+              href: ../financials/localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
+            - name: Az egyes tárgyi eszközök értékvesztési mutatóinak karbantartása
+              href: ../financials/localizations/tasks/maintain-impairment-indicators-individual-assets.md
+            - name: Szállító kifizetése váltó kibocsátásával
+              href: ../financials/localizations/apac-jpn-endorse-bill-of-exchange.md
+            - name: Szállítói tranzakció kifizetése ügyfélváltó kibocsátásával
+              href: ../financials/localizations/tasks/pay-vendor-transaction.md
+            - name: Értéknövekedés és értékcsökkenés időszaki elszámolása
+              href: ../financials/localizations/tasks/periodic-settlement-over-under-depreciation.md
+            - name: Fokozatos adóelőleg számítása
+              href: ../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md
+            - name: Kiegészítő értékcsökkenés javaslása
+              href: ../financials/localizations/tasks/propose-additional-depreciation.md
+            - name: Gyorsított értékcsökkentés felkínálása és feladása
+              href: ../financials/localizations/tasks/propose-post-accelerated-depreciation.md
+            - name: Kötegelt értékvesztési összeg felkínálása és feladása
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-batch.md
+            - name: Értékvesztési összeg felkínálása és feladása a tárgyieszköz-napló használatával
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-fixed-asset-journal.md
+            - name: Értékvesztés összegének felkínálása és feladása egy pénzgeneráló egységre
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-cash-generating-unit.md
+            - name: Egyedi értékcsökkenés felkínálása
+              href: ../financials/localizations/tasks/propose-special-depreciation.md
+            - name: Konszolidált vevői számla újranyitása és szerkesztése
+              href: ../financials/localizations/tasks/reopen-edit-customer-consolidated-invoice.md
+            - name: Konszolidált szállítói számla újranyitása és szerkesztése
+              href: ../financials/localizations/tasks/reopen-edit-vendor-consolidated-invoice.md
+            - name: Váltóbizonylatok sztornírozása
+              href: ../financials/localizations/tasks/reverse-endorsed-bill-exchange.md
+            - name: Az értékvesztés-elszámolási teszt futtatása és az egyes tárgyi eszközök értékvesztési összegének kiszámítása
+              href: ../financials/localizations/tasks/run-recognition-test-calculate.md
+            - name: Vevői és értékesítési rendelés beállítása a gyűjtőszámla céljaként
+              href: ../financials/localizations/tasks/set-up-customer-sales-order-target-consolidated-invoice.md
+            - name: ARO beállítása
+              href: ../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md
+            - name: Eszköz kivezetési kötelezettségével kapcsolatos dokumentumok beállítása és az ARO összeg megadása a tárgyi eszközökhöz
+              href: ../financials/localizations/tasks/set-up-asset-retirement-obligation.md
+            - name: Konszolidált számlák beállítása
+              href: ../financials/localizations/tasks/set-up-consolidated-invoices.md
+            - name: Értékvesztés-könyvelés közös paramétereinek és feladási profiljának beállítása
+              href: ../financials/localizations/tasks/impairment-accounting.md
+            - name: Japán fogyasztásiadó-jelentés beállítása
+              href: ../financials/localizations/tasks/setup-japan-consumption-tax-report.md
+            - name: Japán kifizetés beállítása vevői váltók érvényesítésével
+              href: ../financials/localizations/tasks/setup-japan-payment-endorsing-customer-bill-exchange.md
+            - name: Alapadatok beállítása a több feladási réteghez tartozó levonható költségek belefoglalásához
+              href: ../financials/localizations/tasks/set-up-master-data-inclusion.md
+            - name: Kifizetési díj beállítása Japánhoz
+              href: ../financials/localizations/tasks/setup-payment-fee-japan.md
+            - name: Csökkentési bejegyzések beállítása
+              href: ../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md
+            - name: Szállítók alapadatainak és a beszerzési rendelés beállítása gyűjtőszámla céljaként
+              href: ../financials/localizations/tasks/vendor-master-po.md
+            - name: Váltóbizonylatok sztornírozásának kiegyenlítése
+              href: ../financials/localizations/tasks/settle-endorsed-bill-exchange.md
+            - name: Vevői gyűjtőszámlák kiegyenlítése a kifizetési napló segítségével
+              href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
+            - name: Vevői gyűjtőszámlák kiegyenlítése a kiegyenlítési tranzakciók segítségével
+              href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
+            - name: Szállítói gyűjtőszámlák kiegyenlítése a kifizetési napló segítségével
+              href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
+            - name: Szállítói gyűjtőszámlák kiegyenlítése a kiegyenlítési tranzakciók segítségével
+              href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-settle-transactions.md
+            - name: Összeállítási lista használata tárgyi eszközökhöz
+              href: ../financials/localizations/tasks/use-assemble-list-fixed-asset.md
+            - name: Szétszerelési lista használata tárgyi eszközökhöz
+              href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
+        - name: Lettország
+          href: ../financials/localizations/latvia.md
+          items:
+            - name: Tárgyieszköz-könyvelés
+              href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
+            - name: Tárgyi eszközök helyváltozásának nyomon követése
+              href: ../financials/localizations/emea-lva-fixed-assets-location-fields-change.md
+            - name: Számla és szállítólevél számozása
+              href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
+            - name: Természeti erőforrások adójáról szóló jelentés
+              href: ../financials/localizations/emea-lva-tax-natural-resources.md
+            - name: Áfabevallás részletei
+              href: ../financials/localizations/emea-lva-vat-statement-details.md
+        - name: Litvánia
+          href: ../financials/localizations/lithuania.md
+          items:
+            - name: Tárgyi eszköz javítási kimutatása
+              href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
+            - name: Bizonylat létrehozása a raktárak közti tárgyieszköz-átvitelről
+              href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
+            - name: Számla és szállítólevél számozása
+              href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
+            - name: Áfabevallás részletei
+              href: ../financials/localizations/emea-ltu-vat-statement-details.md
+        - name: Malajzia
+          href: ../financials/localizations/malaysia.md
+          items:
+            - name: Ügyféljóváírás létrehozása projektértékesítéshez
+              href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
+            - name: Vevői terhelés létrehozása projektértékesítéshez
+              href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
+            - name: Áruk és szolgáltatások adója (GST)
+              href: ../financials/localizations/apac-mys-gst.md
+            - name: GST – GAF-fájlok létrehozása a szükséges formátumban
+              href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
+            - name: Vevői hitel és jóváírás kezelése a GST-hez
+              href: ../financials/localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
+            - name: Szállítói hitel és jóváírás kezelése a GST-hez
+              href: ../financials/localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
+            - name: GST vevői számlák nyomtatása mentességi záradékkal
+              href: ../financials/localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
+            - name: GST-adószámlák nyomtatása
+              href: ../financials/localizations/tasks/my-00005-print-gst-tax-invoices.md
+            - name: Saját részre kibocsátott számlák
+              href: ../financials/localizations/tasks/my-00007-self-billed-invoices.md
+            - name: GST mentességi záradék beállítása
+              href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
+        - name: Mexikó
+          href: ../financials/localizations/mexico.md
+          items:
+            - name: Honosítás köre
+              href: ../financials/localizations/latam-mex-scope.md
+            - name: Kiigazítás – inflációkimutatási jelentés
+              href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
+            - name: Elektronikus számla visszavonása
+              href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
+            - name: 3.3-as CFDI-verzió
+              href: ../financials/localizations/latam-mex-cfdi-3-3.md
+            - name: Vevői regisztrációs azonosítók és egyéb adatok
+              href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
+            - name: DIOT-nyilatkozat kimutatása
+              href: ../financials/localizations/latam-mex-diot-declaration-statement.md
+            - name: E-számlázási CFDI
+              href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
+            - name: Elektronikus számlák
+              href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
+            - name: Elektronikus főkönyvi számla kimutatásai
+              href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
+            - name: Adóregisztrációs azonosítók megadása mexikói jogi személyekre
+              href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
+            - name: Lekérdezés és elektronikus számla nyomtatása
+              href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
+            - name: ISR-bevallási jelentés
+              href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
+            - name: Szabadszöveges számla feladása
+              href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
+            - name: Mexikói elektronikus főkönyvi könyvelési jelentést (1.1-es verzió) előállítása
+              href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
+            - name: Elektronikus számla paramétereinek beállítása
+              href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
+            - name: Mexikó áfakódjainak beállítása
+              href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
+            - name: Mexikói jogi személy számlatükrének beállítása
+              href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
+            - name: Mexikói bankszámlák RFC-regisztrációs azonosítójának megadása
+              href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
+            - name: Szállítói regisztrációs azonosítók
+              href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+        - name: Hollandia
+          href: ../financials/localizations/netherlands.md
+          items:
+            - name: Elektronikus adóbevallások (EVAT)
+              href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
+            - name: Semansys XBRL-integráció
+              href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
+        - name: Norvégia
+          href: ../financials/localizations/norway.md
+          items:
+            - name: Vevői és szállítói kifizetési formátumok hozzárendelése
+              href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
+            - name: Vevői kifizetés fizetési azonosító alapján
+              href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
+            - name: Nets importálási formátum
+              href: ../financials/localizations/emea-nor-nets-import-format.md
+            - name: Áfabevallás
+              href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
+            - name: Pénztárgépek
+              href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
+            - name: Pénztárgépek telepítésére vonatkozó irányelvek
+              href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+        - name: Lengyelország
+          href: ../financials/localizations/poland.md
+          items:
+            - name: Sorengedmények kiszámítása az egységár alapján
+              href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
+            - name: Javítással kapcsolatos megjegyzések
+              href: ../financials/localizations/emea-pol-correction-notes.md
+            - name: Értékesítési számlamásolatok számozása
+              href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
+            - name: Tárgyi eszközök értékcsökkenése
+              href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
+            - name: Tárgyieszköz-kivezetési funkciók kiterjesztése
+              href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Visszaküldhető csomagolás
+              href: ../financials/localizations/emea-pol-returnable-packages.md
+            - name: Áfajelentések
+              href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Standard könyvvizsgálati fájl
+              href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
+            - name: Adókamat és szabadkézi kamat
+              href: ../financials/localizations/emea-pol-interest-calculation.md
+            - name: Forgalom- és mérlegkimutatás
+              href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Szaúd-Arábia
           href: ../financials/localizations/saudi-arabia.md
           items:
-            - name: Forgalmi adó
+            - name: Áfa
               href: ../financials/localizations/apac-sau-sales-tax.md
-            - name: Szaúd-arábiai zakat-jelentés
+            - name: Szaúd-arábiai zakát-jelentés
               href: ../financials/localizations/emea-sau-zakat-reporting.md
+        - name: Szingapúr
+          href: ../financials/localizations/singapore.md
+          items:
+            - name: A GST-05 jelentés elkészítése
+              href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
+        - name: Spanyolország
+          href: ../financials/localizations/spain.md
+          items:
+            - name: Készpénzfizetési engedmény alkalmazása a számlán
+              href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
+            - name: Váltóbeállítások
+              href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Feltételes áfa
+              href: ../financials/localizations/emea-esp-conditional-sales-tax.md
+            - name: Jóváírás számlázása
+              href: ../financials/localizations/tasks/emea-esp-credit-invoicing.md
+            - name: Számlafogadó pénzügyi adatai
+              href: ../financials/localizations/emea-esp-fiscal-data-invoice-account.md
+            - name: Tárgyieszköz-csoport átértékelése
+              href: ../financials/localizations/emea-esp-fixed-asset-group-revaluation.md
+            - name: Közösségi áfa
+              href: ../financials/localizations/emea-esp-intra-community-vat.md
+            - name: Egyszeri vevők
+              href: ../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md
+            - name: Csekkek kinyomtatása spanyol elrendezésben
+              href: ../financials/localizations/emea-esp-print-checks-with-spanish-layout.md
+            - name: Kötelezvény beállításai
+              href: ../financials/localizations/emea-esp-promissory-note-options.md
+            - name: 340. jelentés
+              href: ../financials/localizations/emea-esp-report-340.md
+            - name: Beszerzési és értékesítési ciklusok
+              href: ../financials/localizations/emea-esp-sales-purchase-cycle.md
+            - name: Speciális bevitelek és nyitólapok
+              href: ../financials/localizations/emea-esp-opening-sheets-spain.md
+        - name: Svédország
+          href: ../financials/localizations/sweden.md
+          items:
+            - name: Pénzügyi adatok exportálása könyvvizsgálóknak Svédország esetében
+              href: ../financials/localizations/emea-swe-sie-standard-report.md
+            - name: Fizetési formátumok importálása
+              href: ../financials/localizations/emea-swe-payment-formats-import.md
+            - name: Pénztárgépek
+              href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
+        - name: Svájc
+          href: ../financials/localizations/switzerland.md
+          items:
+            - name: Vevői kifizetések importálása ESR-ben
+              href: ../financials/localizations/emea-che-esr-customer-payments-import.md
+        - name: Thaiföld
+          href: ../financials/localizations/thailand.md
+          items:
+            - name: Készletkarton-jelentések
+              href: ../financials/localizations/apac-tha-stock-card-reports.md
+            - name: Helyettesítési/kiigazítási adószámla
+              href: ../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md
+            - name: Nem realizált áfa
+              href: ../financials/localizations/apac-tha-unrealized-vat.md
+            - name: Adóelőleg
+              href: ../financials/localizations/apac-tha-withholding-tax.md
+        - name: Egyesült Királyság
+          href: ../financials/localizations/united-kingdom.md
+          items:
+            - name: Építőipari séma
+              href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
+            - name: Jóváírás létrehozása a kiegyenlítési engedményen
+              href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
+            - name: Fordított fizetésű áfa hatálya alá tartozó cikkeket tartalmazó beszerzési rendelés létrehozása
+              href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
+            - name: Fordított fizetésű áfa hatálya alá tartozó cikkeket tartalmazó értékesítési rendelés létrehozása
+              href: ../financials/localizations/tasks/gb-00002-sales-order.md
+            - name: A fordított áfafizetésnél alkalmazott cikkáfacsoportok beállítása
+              href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+            - name: 'Fordított áfacikkcsoportok, -szabályok és -paraméterek beállítása'
+              href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+            - name: A fordított áfafizetésnél alkalmazott áfacsoportok beállítása
+              href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
         - name: Amerikai Egyesült Államok
           href: ../financials/localizations/united-states.md
           items:
             - name: Év végi 1099-es jelentés az Egyesült Államok számára
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
-            - name: 1099-es űrlap az állami szektorban
+            - name: 1099-es űrlap az állami szektor számára
               href: ../financials/localizations/noam-usa-form-1099-public-sector.md
     - name: Emberi erőforrások
       href: hr/hr-landing-page.md
       items:
         - name: Emberi erőforrásokra vonatkozó stratégia kialakítása
           items:
-            - name: 'Munkaerő szervezése részlegek, munkák és beosztások szerint'
+            - name: Célok létrehozása
+              href: hr/tasks/create-goal.md
+            - name: 'Munkaerő szervezése részlegek, feladatok és beosztások szerint'
               href: ../talent/departments-jobs-positions.md
-            - name: Feladatösszetevők beállítása
+            - name: Feladat-összetevők beállítása
               href: ../talent/create-job.md
+            - name: Új részlegek meghatározása
+              href: hr/tasks/define-new-departments.md
+            - name: Új feladatok meghatározása
+              href: hr/tasks/define-new-jobs.md
             - name: Részleg létrehozása és társítása a szervezeti hierarchiához
               href: ../talent/create-department-add-department-hierarchy.md
-            - name: Több jogi entitásra kiterjedő HR-paraméterek beállítása
+            - name: Naptárak létrehozása és munkaidők generálása
+              href: hr/tasks/create-calendar-working-times.md
+            - name: Több jogi személyre kiterjedő HR-paraméterek beállítása
               href: ../talent/set-up-hr-parameters-across-legal-entities.md
             - name: Vállalatfüggő HR-paraméterek beállítása
               href: ../talent/set-up-company-specific-hr-parameters.md
@@ -2209,12 +2231,46 @@
               href: ../talent/personnel-actions-faq.md
             - name: Alkalmazotti adatok kezelése a munkafolyamat segítségével
               href: ../talent/workflow-manage-employee-information.md
+            - name: Beosztások jelentési kapcsolatainak módosítása
+              href: hr/tasks/modify-reporting-relationships-position.md
+            - name: Pályázati postafiókrekordok jóváhagyása
+              href: hr/tasks/approve-application-inbox-records.md
+            - name: Dolgozói adatok megadása
+              href: hr/tasks/enter-worker-information.md
+            - name: Cikkek kölcsönzése dolgozóknak
+              href: hr/tasks/loan-item-worker.md
+            - name: Kölcsöncikkek létrehozása
+              href: hr/tasks/create-loan-items.md
+            - name: A dolgozóknak kölcsönzött cikkek kezelése
+              href: ../talent/loan-items.md
+            - name: Utódlási terv kialakítása
+              href: hr/tasks/develop-succession-plan.md
+            - name: Projekt időnyilvántartásainak megadása
+              href: hr/tasks/enter-project-timesheets.md
+            - name: E-mail-sablonok kezelése
+              href: hr/tasks/manage-email-templates.md
+            - name: Szabadságok kezelése
+              href: hr/tasks/manage-leave-absence.md
         - name: Toborzás
           items:
-            - name: A toborzási folyamatok kezelése
+            - name: Toborzási folyamatok kezelése
               href: hr/manage-recruiting-process.md
             - name: Tömeges felvételi projektek
               href: hr/mass-hire-projects.md
+            - name: Tömeges felvételi projektek létrehozása
+              href: hr/tasks/create-mass-hire-project.md
+            - name: Pályázók és a pályázatok adatainak manuális megadása
+              href: hr/tasks/enter-applicant-application-data-manually.md
+            - name: Feladatigénylések kialakítása és megnyitása
+              href: hr/tasks/develop-open-job-requisition.md
+            - name: Beosztások beállítása
+              href: hr/tasks/set-up-positions.md
+            - name: Jelöltek felvétele toborzás útján
+              href: hr/tasks/hire-candidate-through-recruiting.md
+            - name: Meglévő alkalmazottak felvétele toborzás útján
+              href: hr/tasks/hire-existing-employee-through-recruiting.md
+            - name: Jelentkezők kiválasztására szolgáló eszközök azonosítása és telepítése
+              href: hr/tasks/identify-deploy-candidate-selection-tools.md
         - name: Alkalmazottak motiválása
           items:
             - name: Kompenzációs konstrukciók
@@ -2223,8 +2279,22 @@
               href: ../talent/create-fixed-compensation-plans.md
             - name: Változó kompenzációs konstrukciók létrehozása
               href: ../talent/create-variable-compensation-plans.md
-            - name: Folyamat kompenzáció
+            - name: Kompenzációs folyamatok meghatározása és eredmények kiszámítása
+              href: hr/tasks/define-compensation-process-calculate-results.md
+            - name: Folyamatkompenzáció
               href: ../talent/process-compensation.md
+            - name: Kompenzációs rácsok beállítása
+              href: hr/tasks/set-up-compensation-grids.md
+            - name: Munkabér-/kompenzációs struktúrák és tervek kialakítása
+              href: hr/tasks/develop-salary-compensation-structure-plan.md
+            - name: Adatok hozzáadása a saját teljesítménynaplóhoz és pozitív visszajelzés küldése
+              href: hr/tasks/add-your-performance-journal-send-praise-someone.md
+            - name: Alkalmazottak regisztrációja fix kompenzációs konstrukcióba
+              href: hr/tasks/enroll-employee-fixed-compensation-plan.md
+            - name: Alkalmazottak regisztrációja változó kompenzációs konstrukcióba
+              href: hr/tasks/enroll-employee-variable-compensation-plan.md
+            - name: Teljesítményértékelések létrehozása
+              href: hr/tasks/create-performance-review.md
         - name: Alkalmazottak fejlesztése és képzése
           items:
             - name: Teljesítménykezelés – áttekintés
@@ -2237,10 +2307,20 @@
           items:
             - name: Juttatási program kezelése
               href: ../talent/manage-benefit-program.md
-            - name: Juttatásra való jogosultsági irányelvek
+            - name: Juttatásra vonatkozó jogosultsági irányelvek
               href: ../talent/benefit-eligibility-policies.md
-            - name: A dolgozóknak kölcsönzött cikkek kezelése
-              href: ../talent/loan-items.md
+            - name: Juttatási jogosultsággal kapcsolatos folyamat
+              href: hr/tasks/benefit-eligibility-process.md
+            - name: Juttatásra való jogosultsági szabályok és irányelvek meghatározása
+              href: hr/tasks/define-benefit-eligibility-rules-policies.md
+            - name: Alkalmazotti juttatási program végrehajtása
+              href: hr/tasks/deliver-employee-benefits-program.md
+            - name: Új juttatások létrehozása
+              href: hr/tasks/create-new-benefit.md
+            - name: Dolgozók regisztrációja juttatásokra és dolgozók juttatásainak eltávolítása
+              href: hr/tasks/enroll-remove-benefits-workers.md
+            - name: Juttatások lejárati dátumainak kezelése
+              href: hr/tasks/manage-benefit-expiration-dates.md
         - name: Információgyűjtés kérdőívekkel
           items:
             - name: Kérdőívek
@@ -2249,8 +2329,18 @@
               href: ../talent/design-questionnaires.md
             - name: Kérdőív terjesztése és kitöltése
               href: ../talent/distribute-questionnaires.md
+            - name: Kérdőívek terjesztése ütemezés segítségével
+              href: hr/tasks/distribute-questionnaires-scheduling.md
             - name: Kérdőív eredményeinek kiértékelése
               href: ../talent/evaluate-questionnaire-results.md
+            - name: Kérdőív eredményeinek elemzése
+              href: hr/tasks/analyze-questionnaire-results.md
+            - name: Kifejtős kérdések létrehozása
+              href: hr/tasks/create-open-ended-question.md
+            - name: Eldöntendő kérdések létrehozása
+              href: hr/tasks/create-closed-ended-question.md
+            - name: Kérdések függővé tétele az előző kérdésre adott választól
+              href: hr/tasks/make-question-dependent-answer-previous-question.md
         - name: Munkahelyi biztonság és megfelelőség (Egyesült Államok)
           items:
             - name: I-9-es űrlap ellenőrzése
@@ -2263,6 +2353,10 @@
               href: hr/localizations/noam-usa-comply-ada.md
             - name: Dolgozói szállások kezelése
               href: hr/localizations/tasks/manage-worker-accommodations.md
+            - name: Sérülések és megbetegedések adatainak beállítása
+              href: hr/tasks/set-up-injury-illness-information.md
+            - name: Alkalmazotti sérülések és megbetegedések adatainak karbantartása
+              href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: Egyesült Államok bérlista
           href: hr/localizations/noam-usa-payroll.md
           items:
@@ -2325,98 +2419,16 @@
                   href: hr/localizations/noam-usa-existing-earnings.md
                 - name: Fizetési kimutatások létrehozása és felhasználása
                   href: hr/localizations/noam-usa-pay-statements.md
-            - name: Karbantartás és jelentés
+            - name: Karbantartás és jelentéskészítés
               items:
                 - name: Bérlista adatainak frissítése GYIK
                   href: hr/localizations/noam-usa-payroll-data-updates.md
                 - name: Szabványos bérlistajelentések
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
-        - name: Emberi erőforrások feladatok
-          items:
-            - name: Információk hozzáadása a saját teljesítménynaplóhoz és pozitív visszajelzés küldése
-              href: hr/tasks/add-your-performance-journal-send-praise-someone.md
-            - name: Kérdőív eredményeinek elemzése
-              href: hr/tasks/analyze-questionnaire-results.md
-            - name: Pályázati postafiókrekordok jóváhagyása
-              href: hr/tasks/approve-application-inbox-records.md
-            - name: Juttatási jogosultság feldolgozása
-              href: hr/tasks/benefit-eligibility-process.md
-            - name: Naptárak létrehozása és munkaidők generálása
-              href: hr/tasks/create-calendar-working-times.md
-            - name: Eldöntendő kérdések létrehozása
-              href: hr/tasks/create-closed-ended-question.md
-            - name: Célok létrehozása
-              href: hr/tasks/create-goal.md
-            - name: Kölcsöncikkek létrehozása
-              href: hr/tasks/create-loan-items.md
-            - name: Tömeges felvételi projektek létrehozása
-              href: hr/tasks/create-mass-hire-project.md
-            - name: Új juttatások létrehozása
-              href: hr/tasks/create-new-benefit.md
-            - name: Kifejtős kérdések létrehozása
-              href: hr/tasks/create-open-ended-question.md
-            - name: Teljesítmény-áttekintések létrehozása
-              href: hr/tasks/create-performance-review.md
-            - name: Juttatásra való jogosultsági szabályok és irányelvek meghatározása
-              href: hr/tasks/define-benefit-eligibility-rules-policies.md
-            - name: Kompenzációs folyamatok meghatározása és eredmények kiszámítása
-              href: hr/tasks/define-compensation-process-calculate-results.md
-            - name: Új részlegek meghatározása
-              href: hr/tasks/define-new-departments.md
-            - name: Új feladatok meghatározása
-              href: hr/tasks/define-new-jobs.md
-            - name: Alkalmazotti juttatási program megvalósítása
-              href: hr/tasks/deliver-employee-benefits-program.md
-            - name: Beosztásigénylések kialakítása és megnyitása
-              href: hr/tasks/develop-open-job-requisition.md
-            - name: Munkabér-/kompenzációs struktúrák és tervek kialakítása
-              href: hr/tasks/develop-salary-compensation-structure-plan.md
-            - name: Utódlási terv kialakítása
-              href: hr/tasks/develop-succession-plan.md
-            - name: Kérdőívek terjesztése ütemezés segítségével
-              href: hr/tasks/distribute-questionnaires-scheduling.md
-            - name: Alkalmazottak felvétele fix kompenzációs konstrukcióba
-              href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-            - name: Alkalmazottak felvétele változó kompenzációs konstrukcióba
-              href: hr/tasks/enroll-employee-variable-compensation-plan.md
-            - name: Dolgozók felvétele juttatásokhoz és dolgozók juttatásainak eltávolítása
-              href: hr/tasks/enroll-remove-benefits-workers.md
-            - name: Pályázók és a pályázatok adatainak manuális megadása
-              href: hr/tasks/enter-applicant-application-data-manually.md
-            - name: Projekt időnyilvántartásának megadása
-              href: hr/tasks/enter-project-timesheets.md
-            - name: Dolgozói adatok megadása
-              href: hr/tasks/enter-worker-information.md
-            - name: Jelöltek felvétele toborzás útján
-              href: hr/tasks/hire-candidate-through-recruiting.md
-            - name: Meglévő dolgozók felvétele toborzás útján
-              href: hr/tasks/hire-existing-employee-through-recruiting.md
-            - name: Jelentkezők kiválasztására szolgáló eszközök azonosítása és telepítése
-              href: hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Elemek kölcsönadása a dolgozóknak
-              href: hr/tasks/loan-item-worker.md
-            - name: Dolgozói sérülések és megbetegedések adatainak karbantartása
-              href: hr/tasks/maintain-employee-injury-illness-information.md
-            - name: Kérdések függővé tétele az előző kérdésre adott választól
-              href: hr/tasks/make-question-dependent-answer-previous-question.md
-            - name: Juttatások lejárati dátumainak kezelése
-              href: hr/tasks/manage-benefit-expiration-dates.md
-            - name: E-mail-sablonok kezelése
-              href: hr/tasks/manage-email-templates.md
-            - name: Szabadságok kezelése
-              href: hr/tasks/manage-leave-absence.md
-            - name: Beosztások jelentési kapcsolatainak módosítása
-              href: hr/tasks/modify-reporting-relationships-position.md
-            - name: Kompenzációs rácsok beállítása
-              href: hr/tasks/set-up-compensation-grids.md
-            - name: Sérülések és megbetegedések adatainak beállítása
-              href: hr/tasks/set-up-injury-illness-information.md
-            - name: Beosztások beállítása
-              href: hr/tasks/set-up-positions.md
     - name: Intelligencia
       href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Adatelérés és jelentéskészítés
+        - name: Adathozzáférés és jelentéskészítés
           href: ../dev-itpro/analytics/information-access-reporting.md?toc=/fin-and-ops/toc.json
         - name: Power BI-tartalom
           href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
@@ -2462,7 +2474,7 @@
               href: ../dev-itpro/analytics/production-performance-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Beszerzési és ráfordítási elemzés
               href: ../dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/fin-and-ops/toc.json
-            - name: Felvétel
+            - name: Toborzás
               href: ../dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
             - name: 'Kiskereskedelmi csatorna teljesítménye '
               href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/fin-and-ops/toc.json
@@ -3635,10 +3647,12 @@
               href: ../supply-chain/sales-marketing/tasks/register-sales-commissions.md
             - name: Értékesítési jutalékok szabályainak beállítása
               href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
+        - name: Kereskedelmi kedvezmény
+          href: ../supply-chain/sales-marketing/trade-allowance.md
     - name: Szolgáltatáskezelés
       href: ../supply-chain/service-management/service-management-home-page.md
       items:
-        - name: Vevőszolgáltatás beállítása
+        - name: Ügyfélszolgálat beállítása
           items:
             - name: Szolgáltatási szerződések beállítása
               href: ../supply-chain/service-management/service-agreement-groups.md
