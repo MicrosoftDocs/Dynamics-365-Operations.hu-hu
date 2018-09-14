@@ -3,7 +3,7 @@ title: "Vállalatközi projektszámlázás konfigurálása"
 description: "Ez az eljárás bemutatja, hogyan állíthatja be a projektek számlázását két vállalat között a szervezeten belül."
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 33b36e032bdecb13718e6eb8cd7a203f9a7b85f6
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 2fe06978d3a1c41a1133a568cca61df05b49d235
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="configure-intercompany-project-invoicing"></a><span data-ttu-id="a7846-103">Vállalatközi projektszámlázás konfigurálása</span><span class="sxs-lookup"><span data-stu-id="a7846-103">Configure intercompany project invoicing</span></span>

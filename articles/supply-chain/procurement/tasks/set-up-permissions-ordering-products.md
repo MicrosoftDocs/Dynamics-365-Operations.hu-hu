@@ -3,7 +3,7 @@ title: "Engedélyek létrehozása, amelyek birtokában mások nevében lehet ter
 description: "Ez az eljárás bemutatja, hogyan adhat engedélyt dolgozóknak más dolgozók nevében beszerzési igénylésének elkészítésére."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: adcbf09cebc539a19ad3603a77dca1de77ce7d11
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 35688d191cef06cc15251a6e10a2e8c9afb0e08b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a><span data-ttu-id="a9241-103">Engedélyek létrehozása, amelyek birtokában mások nevében lehet termékeket rendelni</span><span class="sxs-lookup"><span data-stu-id="a9241-103">Set up permissions for ordering products on behalf of someone else</span></span>

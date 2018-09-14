@@ -3,7 +3,7 @@ title: "Lejárati dátum megadása termék folyamatverziójához"
 description: "Egy termelésifolyamat-verzió érvényességének és feldolgozásának befejezéséhez egy adott időpontban, vagy egy aktív verzió új verzióra cserélésének tervezéséhez, be kell állítani a verzió lejárati idejét."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 5e12843f9ab12c039c962a9033e3c0187c46bb15
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: aa0bde90273f9392a36732ed79afdad2eea8bf86
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="define-an-expiry-date-for-a-production-flow-version"></a><span data-ttu-id="22781-103">Lejárati dátum megadása termék folyamatverziójához</span><span class="sxs-lookup"><span data-stu-id="22781-103">Define an expiry date for a production flow version</span></span>

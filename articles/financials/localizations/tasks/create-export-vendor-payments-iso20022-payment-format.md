@@ -3,7 +3,7 @@ title: "Szállítói kifizetések létrehozása és exportálása ISO20022 fizet
 description: "Ez az eljárás bemutatja, hogyan hozhat létre fizetési sorokat a szállítói kifizetési naplóban, és hogyan hozhat létre szállítói fizetési fájlt az ISO2022 átutalást használva példaként."
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: dac38165474712cfcd6cdd2712dab89230e07b1b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 032f1f09fd017a2ae8cf5973d9f5c6ee99ca797f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="0449f-103">Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban</span><span class="sxs-lookup"><span data-stu-id="0449f-103">Create and export vendor payments using ISO20022 payment format</span></span>

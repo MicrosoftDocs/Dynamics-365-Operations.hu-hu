@@ -3,7 +3,7 @@ title: "Vevői visszatérítések létrehozása és feldolgozása"
 description: "Ez az eljárás bemutatja, hogyan lehet feldolgozni az ügyfél-visszatérítéseket az igénylés létrehozásától addig a pontig, hogy könyvelésekként felveszi őket a Kinnlevőségek közé."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: d22d4527ee08c2b5251077cfde352b56b9e0e19f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="generate-and-process-customer-rebates"></a><span data-ttu-id="3ebc7-103">Vevői visszatérítések létrehozása és feldolgozása</span><span class="sxs-lookup"><span data-stu-id="3ebc7-103">Generate and process customer rebates</span></span>

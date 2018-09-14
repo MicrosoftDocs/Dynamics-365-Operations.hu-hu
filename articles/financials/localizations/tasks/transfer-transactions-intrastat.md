@@ -3,7 +3,7 @@ title: "Tranzakciók átvitele az Intrastatba"
 description: "Ez az eljárás bemutatja, hogy hogyan lehet beállítani az Intrastat paramétereit illetve, hogy hogyan viheti át a tranzakciókat az Intrastatba."
 author: Anasyash
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: aac902f54c263114957d799264918b7fb74e6e09
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 13cc9dc2119ad3dc85d580e92edee7bb9ef2075c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a><span data-ttu-id="4cdb2-103">Tranzakciók átvitele az Intrastatba</span><span class="sxs-lookup"><span data-stu-id="4cdb2-103">Transfer transactions to the Intrastat</span></span>
