@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 5a950a100fd5e9026300ea08eb1a6311a8e63129
+ms.sourcegitcommit: 033c9bdfce0840e1af1c63708905aec6829bbe90
+ms.openlocfilehash: 7a1d3c73e4305375ddf356b93b9502b0255df99b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 
@@ -44,11 +44,13 @@ ms.lasthandoff: 08/07/2018
 
 ## <a name="adding-a-new-credit-card"></a><span data-ttu-id="8b62b-117">Új hitelkártya hozzáadása</span><span class="sxs-lookup"><span data-stu-id="8b62b-117">Adding a new credit card</span></span>
 <span data-ttu-id="8b62b-118">Új hitelkártya-rekordokat a Vevők lapon a Vevő, Beállítás, Hitelkártya használatával hozhat létre.</span><span class="sxs-lookup"><span data-stu-id="8b62b-118">You can create new credit card records on the Customers page by using Customer, Set up, Credit card.</span></span> <span data-ttu-id="8b62b-119">Hitelkártya-rekordokat értékesítési rendelések beírásakor is létrehozhat az Értékesítési rendelés oldalon, a Kezelés, Vevő, Hitelkártya, Jegyzék segítségével.</span><span class="sxs-lookup"><span data-stu-id="8b62b-119">You can also create credit card records when you enter sales orders on the Sales order page, by using Manage, Customer, Credit card, Register.</span></span>
-<span data-ttu-id="8b62b-120">Hitelkártya hozzáadása egy értékesítési rendeléshez</span><span class="sxs-lookup"><span data-stu-id="8b62b-120">Adding a credit card to a sales order</span></span>
+
+<a name="adding-a-credit-card-to-a-sales-order"></a><span data-ttu-id="8b62b-120">Hitelkártya hozzáadása egy értékesítési rendeléshez</span><span class="sxs-lookup"><span data-stu-id="8b62b-120">Adding a credit card to a sales order</span></span>
 -------------------------------------
 
 <span data-ttu-id="8b62b-121">Hitelkártyát hozzáadhat egy értékesítési rendeléshez egy hitelkártya kiválasztásával a hitelkártya-keresőben az Ár és engedmények gyorslapon, az Értékesítési rendelés lapon.</span><span class="sxs-lookup"><span data-stu-id="8b62b-121">You can add a credit card to a sales order by selecting a credit card in the credit card lookup on the Price and discounts FastTab on the Sales order page.</span></span> <span data-ttu-id="8b62b-122">Az engedélyezési folyamat elindításához a Műveleti ablakban a Kezelés fülön válassza ki a Hitelkártyát és az Engedélyezést.</span><span class="sxs-lookup"><span data-stu-id="8b62b-122">To start the authorization process, on the Action Pane, on the Manage tab, select Credit card and Authorize.</span></span>
-<span data-ttu-id="8b62b-123">Hitelkártya engedélyezése</span><span class="sxs-lookup"><span data-stu-id="8b62b-123">Authorizing a credit card</span></span>
+
+<a name="authorizing-a-credit-card"></a><span data-ttu-id="8b62b-123">Hitelkártya engedélyezése</span><span class="sxs-lookup"><span data-stu-id="8b62b-123">Authorizing a credit card</span></span>
 -------------------------
 
 <span data-ttu-id="8b62b-124">Amikor megtörténik a hitelkártya engedélyezése, a kártyaszám és a kártyabirtokos nevének ellenőrzése megy végbe, valamint megerősítést nyer a rendelkezésre álló hitelegyenleg.</span><span class="sxs-lookup"><span data-stu-id="8b62b-124">When a credit card is authorized, the card number and cardholder's name are verified, and the available credit balance is confirmed.</span></span> <span data-ttu-id="8b62b-125">Másik lehetőségként a kártyaellenőrző kód és a kártyatulajdonos címének ellenőrzése megy végbe.</span><span class="sxs-lookup"><span data-stu-id="8b62b-125">Optionally, the card verification value and the cardholder’s address are verified.</span></span> <span data-ttu-id="8b62b-126">Ezt követően a vevő rendelkezésre álló hitelegyenlege a számla összegével csökken.</span><span class="sxs-lookup"><span data-stu-id="8b62b-126">The customer's available credit balance is then reduced by the amount of the invoice.</span></span> <span data-ttu-id="8b62b-127">A fizetési szolgáltatás információt küld arról, hogy a hitelkártyát elfogadja-e, vagy elutasítja.</span><span class="sxs-lookup"><span data-stu-id="8b62b-127">The payment service sends information that the credit card has been approved or declined.</span></span> <span data-ttu-id="8b62b-128">Az értékesítési rendelés számlázásakor a hitelkártyán végbemegy a számlaösszeg terhelése (rögzítése).</span><span class="sxs-lookup"><span data-stu-id="8b62b-128">When the sales order is invoiced, the credit card is charged (captured) for the invoice amount.</span></span>
