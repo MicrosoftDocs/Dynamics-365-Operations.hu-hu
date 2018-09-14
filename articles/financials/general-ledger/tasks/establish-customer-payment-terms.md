@@ -3,7 +3,7 @@ title: "Vevői kifizetések feltételeinek kialakítása"
 description: "Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot állítja be."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

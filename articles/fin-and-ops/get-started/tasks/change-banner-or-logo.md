@@ -3,7 +3,7 @@ title: "A fejléc vagy embléma módosítása"
 description: "Az alábbi eljárás felsorolja a lépéseket, amelyeket a rendszergazdák használhatnak a megjelenített szalagcím vagy emblémakép frissítéséhez, ami a jogi személynél jelenik meg."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

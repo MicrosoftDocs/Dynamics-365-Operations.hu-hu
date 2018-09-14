@@ -3,7 +3,7 @@ title: "Termékmodellekhez szükséges adatok továbbítása"
 description: "A termékkonfigurációs modell adatexportálásához szükséges legalább egy elérhető termékmodell."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

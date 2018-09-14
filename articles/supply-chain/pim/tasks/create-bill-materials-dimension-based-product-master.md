@@ -3,7 +3,7 @@ title: "A dimenzión alapuló alaptermékre vonatkozó anyagjegyzék létrehozá
 description: "Ehhez az eljáráshoz el kellett végeznie az előző 4 útmutatót a nyolc rögzítés sorrendjében."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

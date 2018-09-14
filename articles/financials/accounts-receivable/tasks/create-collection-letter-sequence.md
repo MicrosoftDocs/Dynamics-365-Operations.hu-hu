@@ -3,7 +3,7 @@ title: "Fizetésifelszólítás-sorozat létrehozása"
 description: "Használja ezt az útmutatót a fizetésifelszólítás-sorozat létrehozásához."
 author: mikefalkner
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

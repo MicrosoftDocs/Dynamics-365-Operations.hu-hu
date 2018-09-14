@@ -3,7 +3,7 @@ title: "A felhasználók hozzárendelése a biztonsági szerepkörökhöz"
 description: "A Microsoft Dynamics 365 for Finance and Operations Enterprise kiadás eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz."
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "A kinnlevőségek kezelésével kapcsolatos adatok felülvizsgálata"
 description: "Ez az eljárás végigvezeti a beszedési adatok áttekintésén, valamint a különböző beállítási lehetőségeken és a beszedési tranzakciók ellenőrzésén."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

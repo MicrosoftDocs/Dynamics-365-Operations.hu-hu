@@ -3,7 +3,7 @@ title: "Beszerzési visszárurendelés létrehozása"
 description: "Ez az eljárás bemutatja, hogyan hozzon létre beszerzési visszárurendelést a Jóváírás művelettel, hogy átmásolja a sorokat a szállítói számla dokumentumából egy új Beszerzési rendelésbe."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

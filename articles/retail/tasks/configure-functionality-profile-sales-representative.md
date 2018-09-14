@@ -3,7 +3,7 @@ title: "Funkcióprofil konfigurálása értékesítési képviselőnek"
 description: "Ez az eljárás bemutatja, hogyan konfigurálhatja egy áruház üzletkötőkre vonatkozó funkcióprofil-beállításait."
 author: jblucher
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

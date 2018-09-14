@@ -3,7 +3,7 @@ title: "Készletleltár-folyamatok meghatározása"
 description: "Ez az eljárás végigvezeti az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

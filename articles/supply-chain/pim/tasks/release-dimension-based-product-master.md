@@ -3,7 +3,7 @@ title: "Dimenzión alapuló alaptermék kibocsátása"
 description: "Ez az eljárás bemutatja, hogyan lehet kiadni egy, a dimenzión alapuló konfigurációkhoz használandó alapterméket."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

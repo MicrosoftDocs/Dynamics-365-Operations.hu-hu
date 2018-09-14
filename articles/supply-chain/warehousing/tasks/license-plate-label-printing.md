@@ -3,7 +3,7 @@ title: "Azonosítótábla-címke nyomtatásának engedélyezése"
 description: "Ez az eljárás lehetővé teszi a Konténer sorszáma (SSCC) címke automatikus nyomtatását, miután az utolsó cikk készletből való kitárolása is megtörtént az értékesítési kiválasztási munkafolyamat során."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

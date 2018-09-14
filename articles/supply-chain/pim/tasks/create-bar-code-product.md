@@ -3,7 +3,7 @@ title: "Vonalkód létrehozása termékhez"
 description: "Ez az eljárás bemutatja, hogyan hozható létre manuálisan vonalkód, példaként az M0001 cikkszám használatával."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

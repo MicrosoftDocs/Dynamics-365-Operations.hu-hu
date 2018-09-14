@@ -3,7 +3,7 @@ title: "Vevő által kiállított, jövőben esedékes csekk kiegyenlítése"
 description: "A jövőben esedékes csekkeket akkor egyenlítheti ki, miután a bank elszámolta azokat."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

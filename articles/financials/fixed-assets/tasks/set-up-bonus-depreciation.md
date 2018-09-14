@@ -3,7 +3,7 @@ title: "Rendkívüli értékcsökkenés beállítása"
 description: "Ez az eljárás bemutatja, hogyan hozzon létre különleges értékcsökkenési keretet, és hogyan társítsa azt tárgyieszköz-könyvhöz."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

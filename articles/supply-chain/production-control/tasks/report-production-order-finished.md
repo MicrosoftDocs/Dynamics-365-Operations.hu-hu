@@ -3,7 +3,7 @@ title: "Termelési jelentés készként jelenítése"
 description: "Ez az eljárás bemutatja, hogyan lehet készre jelenteni egy termelési rendelést."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

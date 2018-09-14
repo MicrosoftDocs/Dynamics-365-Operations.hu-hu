@@ -3,7 +3,7 @@ title: "Beosztások beállítása"
 description: "A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei."
 author: DarinKramer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

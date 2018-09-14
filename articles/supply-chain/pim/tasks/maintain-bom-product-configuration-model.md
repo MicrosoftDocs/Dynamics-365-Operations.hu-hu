@@ -3,7 +3,7 @@ title: "Termékkonfigurációs modell anyagjegyzékének karbantartása"
 description: "Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Adja meg a GTIN-kódot a termékhez"
 description: "A GTIN-kódok kiosztását a GS1 szervezet végzi."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

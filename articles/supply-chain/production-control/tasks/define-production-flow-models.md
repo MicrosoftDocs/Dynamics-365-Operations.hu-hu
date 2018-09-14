@@ -3,7 +3,7 @@ title: "Termelési folyamatmodellek meghatározása"
 description: "A termelési folyamatmodellek írják le, hogyan kell kiszámítani és karban tartani a lean manufacturing munkacelláinak kapacitását."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

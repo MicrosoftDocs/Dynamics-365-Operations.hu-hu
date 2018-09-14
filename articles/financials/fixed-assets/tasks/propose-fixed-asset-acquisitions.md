@@ -3,7 +3,7 @@ title: "Javaslat tárgyieszköz-beszerzésekre"
 description: "Ez a folyamat bemutatja, hogyan szerezhető be tárgyi eszköz a Tárgyi eszközök naplójában található Beszerzési javaslat segítségével."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

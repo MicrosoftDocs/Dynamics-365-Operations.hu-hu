@@ -3,7 +3,7 @@ title: "Mobileszköz-menüelem beállítása a bevételezett elem regisztrálás
 description: "Ez a feladat a mobileszköz menü egy elemének a beállítására összpontosít."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Szállítói kifizetési díjak meghatározása"
 description: "Szállítói kifizetési díjak beállítása."
 author: abruer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

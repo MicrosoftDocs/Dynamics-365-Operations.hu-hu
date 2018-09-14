@@ -3,7 +3,7 @@ title: "Felhasználó preferált időzónájának beállítása"
 description: "A következő eljárás bemutatja, hogy egy rendszergazda szerepkörű felhasználó hogyan állíthatja be az időzónát egy felhasználó számára."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Fizetési bizonylat formátumának beállítása projektszámlákhoz"
 description: "A vállalkozások gyakran csatolnak kinyomtatott kifizetési bizonylatokat a számlákhoz, így segítve az ügyfeleket, hiszen ezzel fizetési hivatkozást biztosítanak a feladáshoz és a kiegyenlítéshez."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

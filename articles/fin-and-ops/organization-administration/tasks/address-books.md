@@ -3,7 +3,7 @@ title: "Címjegyzékek konfigurálása"
 description: "Ezzel az eljárással, illetve A globális címjegyzék konfigurálásának tervezése során hozott döntésekkel, valamint a további címjegyzék témakörökkel a szervezet számára További címjegyzékeket állíthat be."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

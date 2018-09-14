@@ -3,7 +3,7 @@ title: "Fizetési felszólítások feldolgozása"
 description: "Ez az eljárás a fizetési felszólítások létrehozását, nyomtatását és feladását mutatja be."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

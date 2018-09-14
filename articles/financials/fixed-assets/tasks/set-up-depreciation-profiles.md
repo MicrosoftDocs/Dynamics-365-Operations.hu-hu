@@ -3,7 +3,7 @@ title: "Értékcsökkenési profilok beállítása és létrehozása"
 description: "Értékcsökkenési profilok határozzák meg az adott eszköz értékcsökkenésének típusát és gyakoriságát."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

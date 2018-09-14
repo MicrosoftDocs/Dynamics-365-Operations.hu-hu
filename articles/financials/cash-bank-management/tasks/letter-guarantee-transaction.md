@@ -3,7 +3,7 @@ title: "Garancialevél-tranzakció"
 description: "Ez az eljárás végigvezeti a Garancialevélhez kapcsolódó folyamaton."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

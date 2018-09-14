@@ -3,7 +3,7 @@ title: "Sérülések és megbetegedések adatainak beállítása"
 description: "A munkaadóknak tudniuk kell, ha alkalmazottjaik a munkahelyi veszélyek miatt megsérülnek vagy megbetegszenek."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

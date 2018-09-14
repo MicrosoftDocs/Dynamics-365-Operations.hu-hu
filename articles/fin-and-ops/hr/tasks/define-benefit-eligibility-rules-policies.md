@@ -3,7 +3,7 @@ title: "Juttatásra való jogosultsági szabályok és irányelvek meghatározá
 description: "Ez a felvétel bemutatja, hogyan hozhat létre juttatásra való jogosultsági szabályokat és irányelveket, majd miként rendelhet hozzá szabályokat a Juttatásokhoz."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

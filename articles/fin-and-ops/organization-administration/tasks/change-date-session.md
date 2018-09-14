@@ -3,7 +3,7 @@ title: "A munkamenet dátumának módosítása"
 description: "Alapértelmezés szerint a rendszer a naplóbejegyzések vagy a forrásbizonylatok bevitelekor és feladásakor az aktuális dátumot használja."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

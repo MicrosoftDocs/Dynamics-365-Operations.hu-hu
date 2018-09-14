@@ -3,7 +3,7 @@ title: "Munkaidő-ütemezési tulajdonságok létrehozása"
 description: "A munkaidő-ütemezési tulajdonságok segítségével munkaidő-intervallumok kategorizálhatók, és meghatározhatók a beállítások, melyeket a kezelőknek figyelembe kell venniük."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

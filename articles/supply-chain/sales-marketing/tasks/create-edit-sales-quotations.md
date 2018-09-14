@@ -3,7 +3,7 @@ title: "Értékesítési ajánlatok létrehozása és szerkesztése"
 description: "Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési árajánlatokat."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

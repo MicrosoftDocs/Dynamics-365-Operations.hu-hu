@@ -3,7 +3,7 @@ title: "Lean manufacturing munkacellák meghatározása"
 description: "A munkacella egy az erőforráscsoportok egy konkrét formája, amelyet lean manufacturing termelési folyamatokban lehet használni."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

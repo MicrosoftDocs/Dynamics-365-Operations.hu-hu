@@ -3,7 +3,7 @@ title: "Szabadság kezelése"
 description: "Ez az eljárás végigvezeti az alkalmazotti szabadságrekordok létrehozásán."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Termelési folyamat verziójának deaktiválása"
 description: "Ha már nincs szükség egy aktív termelésifolyamat-verzióra, inaktiválható."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

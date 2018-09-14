@@ -3,7 +3,7 @@ title: "Illesztőprogram bejelentkezésének és kijelentkezésének regisztrál
 description: "Ez az eljárás bemutatja, hogyan kell regisztrálni egy járművezetői bejelentkezést és egy járművezetői kijelentkezést."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Vállalatközi projektszámlázás konfigurálása"
 description: "Ez az eljárás bemutatja, hogyan állíthatja be a projektek számlázását két vállalat között a szervezeten belül."
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

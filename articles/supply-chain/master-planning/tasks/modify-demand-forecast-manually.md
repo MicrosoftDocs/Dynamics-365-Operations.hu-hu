@@ -3,7 +3,7 @@ title: "Igény-előrejelzés manuális módosítása"
 description: "Ez az eljárás bemutatja egy cikk előrejelzésének módosítását."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

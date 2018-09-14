@@ -3,7 +3,7 @@ title: "Egy helyhez tartozó ütemezés létrehozása"
 description: "Ez az eljárás bemutatja az egy helyhez tartozó, még el nem indított termelési rendelések ütemezését."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

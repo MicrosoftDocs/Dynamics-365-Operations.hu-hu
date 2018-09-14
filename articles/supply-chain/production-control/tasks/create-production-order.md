@@ -3,7 +3,7 @@ title: "Termelési rendelés létrehozása"
 description: "Ez az eljárás bemutatja, hogyan lehet termelési rendelést létrehozni."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

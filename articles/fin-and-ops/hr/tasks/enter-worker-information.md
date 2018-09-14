@@ -3,7 +3,7 @@ title: "Dolgozói adatok megadása"
 description: "Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat generált, a következő lépés a dolgozói információk megadása a felvehető emberek esetében."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

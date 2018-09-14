@@ -3,7 +3,7 @@ title: "Rögzített mennyiségű kanbanszabály létrehozása gyártáshoz"
 description: "Ez az eljárás a rögzített gyártású kanbanszabály létrehozására koncentrál az átalakítási tevékenységek elindításához egy munkacellában, lean környezetben."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

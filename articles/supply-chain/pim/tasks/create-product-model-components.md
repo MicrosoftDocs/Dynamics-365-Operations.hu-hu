@@ -3,7 +3,7 @@ title: "Termékmodell-összetevők létrehozása"
 description: "A megszorításon alapuló termékkonfigurációs modellek építőelemként használják az összetevőket a termékmodell szerkezetének kialakításához."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

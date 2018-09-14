@@ -3,7 +3,7 @@ title: "A pénzügyi év lezárása"
 description: "Ez a folyamat bemutatja az év végi zárás folyamatát, amely az egyenlegeket áthelyezi az új pénzügyi évbe."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

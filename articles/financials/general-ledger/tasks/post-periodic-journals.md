@@ -3,7 +3,7 @@ title: "Időszaki naplók közzététele"
 description: "Az időszaki naplókat olykor ismétlődő naplónak is nevezik, mivel az összeg, a szöveg és más adatok az időszaki napló beolvasásákor minden alkalommal megismétlődnek."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

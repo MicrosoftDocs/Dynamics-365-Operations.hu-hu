@@ -3,7 +3,7 @@ title: "Kiskereskedelmi üzlet kimutatásának létrehozása, kiszámítása és
 description: "Ez az eljárás végigveszi egy üzlet kimutatása létrehozásának, kiszámításának és feladásának manuális lépéseit."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Helyek konfigurálása WMS szolgáltatással rendelkező raktárban"
 description: "Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis raktár (a speciális raktárkezelési folyamatokat alkalmazó raktár) helyének beállításait."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

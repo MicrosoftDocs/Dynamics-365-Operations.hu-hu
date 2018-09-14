@@ -3,7 +3,7 @@ title: "Folytonossági ütemezések meghatározása"
 description: "Ez a témakör végigvezeti a folyamatos program (más néven ismétlődő rendelések) beállításának lépésein."
 author: josaw1
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

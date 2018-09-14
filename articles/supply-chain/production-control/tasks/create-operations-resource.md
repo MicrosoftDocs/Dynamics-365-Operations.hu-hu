@@ -3,7 +3,7 @@ title: "Üzemi erőforrás létrehozása"
 description: "Az üzemi erőforrás hajtja végre egy projekt vagy egy termelési folyamat tevékenységeit."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

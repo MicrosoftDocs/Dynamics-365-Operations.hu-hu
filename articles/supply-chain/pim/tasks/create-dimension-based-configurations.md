@@ -3,7 +3,7 @@ title: "Dimenzión alapuló konfigurációk létrehozása"
 description: "Ez az eljárás bemutatja a dimenzión alapuló termékek konfigurációjának meghatározásának módját."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

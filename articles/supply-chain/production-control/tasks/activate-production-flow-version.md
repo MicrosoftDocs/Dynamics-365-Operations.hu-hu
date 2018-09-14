@@ -3,7 +3,7 @@ title: "Termelési folyamat verziójának aktiválása"
 description: "Aktiválnia kell a verziót, mielőtt kanban feladatokat hozna létre és tevékenységeket foganatosítana a termelési folyamat verzióhoz."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "A feldolgozási kanbanfeladat előkészítése, amikor az anyagok elérh
 description: "Ez a feladat a feldolgozási kanbanfeladat előkészítésével foglalkozik, amikor minden anyag elérhetők a munkacellához."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

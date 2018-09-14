@@ -3,7 +3,7 @@ title: "Cikkek fedezeti szabályainak meghatározása"
 description: "Ez az eljárás az USMF bemutatócéget használja."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

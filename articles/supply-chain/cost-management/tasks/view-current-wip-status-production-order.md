@@ -3,7 +3,7 @@ title: "Jelenlegi WIP állapot megtekintése egy termelési rendelésen"
 description: "Ez az eljárás bemutatja, hogyan lehet egy termelési rendelés befejezetlen munkáinak kivonatát megtekinteni."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Kiadott alaptermék alapbeállításának kitöltése"
 description: "Ez az eljárás bemutatja, hogyan kell elvégezni azt a minimális beállítást, amely szükséges ahhoz, hogy az alapterméket használni lehessen az Anyagjegyzék-verziókban."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

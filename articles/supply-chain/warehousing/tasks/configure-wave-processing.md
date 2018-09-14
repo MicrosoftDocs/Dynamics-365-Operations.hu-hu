@@ -3,7 +3,7 @@ title: "A hullámfeldolgozás konfigurálása"
 description: "Ez az útmutató leírja, hogy hogyan állíthatja be azokat a feltételeket, amelyek meghatározzák, hogy milyen munkát hozzon létre a rendszer a raktárra vonatkozóan, a hullám feldolgozásakor, és hogy a hullámokat manuálisan vagy automatikusan dolgozzák-e fel."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

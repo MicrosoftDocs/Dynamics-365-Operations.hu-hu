@@ -3,7 +3,7 @@ title: "Érték-előállítási folyamat létrehozása"
 description: "Az érték-előállítási folyamatok üzemi egységek, amelyek egy vagy több termelési folyamatot csoportosítanak."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

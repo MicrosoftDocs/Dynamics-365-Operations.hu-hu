@@ -3,7 +3,7 @@ title: "Áru minőségének ellenőrzése"
 description: "Ez az eljárás bemutatja, hogyan dolgozhat fel egy minőségi rendelést."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
