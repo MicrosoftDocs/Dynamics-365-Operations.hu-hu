@@ -3,7 +3,7 @@ title: "A Microsoft Dynamics 365 for Finance and Operations dokumentációja"
 description: "Dokumentáció a Microsoft Dynamics 365 for Finance and Operations szolgáltatáshoz."
 author: margoc
 manager: AnnBe
-ms.date: 03/02/2018
+ms.date: 08/30/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,6 +26,7 @@ ms.lasthandoff: 08/09/2018
 ---
 
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>A Microsoft Dynamics 365 for Finance and Operations dokumentációja
+
 [!include [banner](includes/banner.md)]
 
 Ismerje meg, hogyan alkalmazhatja vállalkozásában a Microsoft Dynamics 365 for Finance and Operations szolgáltatást, az alábbi erőforrások nagyszerű tartalmakat kínálnak végfelhasználók, fejlesztők és informatikai szakemberek számára. 

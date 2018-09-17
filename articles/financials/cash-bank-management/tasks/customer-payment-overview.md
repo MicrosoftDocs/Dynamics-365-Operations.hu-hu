@@ -3,23 +3,24 @@ title: "Vevői kifizetések áttekintése"
 description: "Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál használt különböző módszereken."
 author: kweekley
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
-ms.openlocfilehash: de2526d5c674de9505174d3f40f9ae597b8a0a6b
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e6e10d0d0a05b0594ba5cf6a77f474b461bd9dca
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="customer-payment-overview"></a>Vevői kifizetések áttekintése
@@ -54,7 +55,7 @@ Ez a feladat-útmutató végigvezeti a vevői kifizetések megadásánál haszn�
 16. Válassza ki az ügyfelet, akitől a kifizetést kapta.
     * Ha nem ismeri a vevőt, de ismeri a kifizetéssel kifizetett számlát, a Számla mező segítségével manuálisan adja meg vagy válassza ki a számlát. A vevő az alapértelmezett lesz a számla kiválasztása után.  
 17. Kattintson a Tranzakciók kiegyenlítése gombra a kifizetett számlák megjelöléséhez.
-    * Nem kell semmilyen számlát kiegyenlíteni. Ha ez egy előleg, vagy ha nem tudja, hogy milyen számla lett kifizetve, megadhatja és feladhatja a kifizetést. A kifizetés egy későbbi időpontban is kiegyenlíthető egy számlára.  
+    * Ekkor nem kell semmilyen számlát kiegyenlíteni. Ha ez egy előleg, vagy ha nem tudja, hogy milyen számla lett kifizetve, megadhatja és feladhatja a kifizetést. A kifizetés egy későbbi időpontban is kiegyenlíthető egy számlára.  
 18. Jelölje be a kifizetés révén kifizetett számlákat. 
 19. Írja be a számlára kiegyenlítendő kifizetés összegét.
 20. Kattintson az OK gombra.

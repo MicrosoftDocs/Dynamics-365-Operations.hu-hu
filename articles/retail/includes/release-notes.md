@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> **A Dynamics 365 2018. tavaszi programverzióra vonatkozó megjegyzéseinek bejelentése**
+> **A Dynamics 365 programverzióra vonatkozó megjegyzéseinek bejelentése**
 >
 > Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre? 
 > 
-> [Töltse le a 2018. tavaszi programverzióra vonatkozó megjegyzéseket](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf). A részleteket minden apró információmorzsáig bezárólag egyetlen PDF-dokumentumban rögzítettük, amelyet felhasználhat a tervezés során. 
+> Nézze meg [Üzleti alkalmazások és platformok programverzióira vonatkozó bejelentéseket](https://go.microsoft.com/fwlink/?linkid=2010158). A részleteket minden apró információmorzsáig bezárólag egyetlen helyen rögzítettük, amelyet felhasználhat a tervezés során. A bejelentett programverziótól függően információkat kaphat az új szolgáltatásokról és lehetőségekről, valamint a közeljövőben bevezetésre kerülő új funkciókról is.

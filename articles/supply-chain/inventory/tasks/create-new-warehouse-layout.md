@@ -1,21 +1,22 @@
----
+--- 
 title: "Új raktárelrendezés létrehozása"
 description: "Ez az eljárás bemutatja, hogyan adjon meg adatokat a raktár helyeivel kapcsolatban."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
@@ -49,7 +50,7 @@ Ez az eljárás bemutatja, hogyan adjon meg adatokat a raktár helyeivel kapcsol
 7. A Helynevek szakasz bővítésének átváltása.
     * A fejezetben leírt lehetőségek helynevek alapértelmezett formátumát adják meg. Ebben a példában megadjuk a folyosószámot, az állvány számát, illetve a polcszámot.  
 8. A folyosó figyelembevételével beállítása: Igen.
-9. Az állvány figyelembevételével beállítása: Igen.
+9. Az állvány figyelembevételével beállítása: Igen. 
 10. A Formátum mezőbe írjon be egy értéket az állványhoz.
     * Példa: -##  
 11. A polc figyelembevételével beállítása: Igen.
@@ -74,4 +75,5 @@ Ez az eljárás bemutatja, hogyan adjon meg adatokat a raktár helyeivel kapcsol
 14. Kattintson a Finish gombra.
 15. Zárja be a lapot.
 16. Frissítse a lapot..
+
 

@@ -1,31 +1,32 @@
 --- 
-title: "Hűségpontok helyesbítéseinek feldolgozása"
+title: " Hűségpont-helyesbítések feldolgozása"
 description: "Ez az eljárás bemutatja, hogyan tekintheti meg a hűségkártyával kapcsolatos adatokat és hogyan módosíthatja a hűségpontok számát."
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoyaltyCardRewardPointAdjustment, RetailAffiliationLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 3ec914b1e51f238c4f319dd6b71c2992fb5a6247
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 2bfb5095c1db2a5ab9fb528d08d979ec850543fc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/07/2018
 
 ---
-# <a name="process-adjustments-of-loyalty-reward-points"></a>Hűségpontok helyesbítéseinek feldolgozása
+# <a name="process-loyalty-reward-point-adjustments"></a> Hűségpont-helyesbítések feldolgozása
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan tekintheti meg a hűségkártyával kapcsolatos adatokat és hogyan módosíthatja a hűségpontok számát. A feladat létrehozásához az USRT bemutató vállalatot használtuk példaként. Ez a feladat a Kiskereskedelmi műveletek vezetője vagy a Vevőszolgálati vezető szerepkörnek szól.
 

@@ -3,23 +3,24 @@ title: "Értékesítési ajánlatok létrehozása és szerkesztése"
 description: "Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési árajánlatokat."
 author: omulvad
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8e7d2198b4976a6f60f05690d7b6f11f3da55e28
-ms.openlocfilehash: 7ffa4fe8d87db5b3f8293ec9dbc042496d09d6e3
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: f56b495131836689395a2124d5a834579e1646b7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="create-and-edit-sales-quotations"></a>Értékesítési ajánlatok létrehozása és szerkesztése
@@ -50,7 +51,7 @@ Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési
 15. Kattintson az Értékesítésiajánlat-sor lehetőségre.
 16. Kattintson az Árak lehetőségre.
     * Az Árszimuláció futtatása lapon kísérletezhet az érajánlat várt bevételének vagy jövedelmezőségének beállításával a kívánt egységár, kedvezményösszeg, kedvezményszázalék, teljes összeg, árrés vagy hozzájárulási arány alapján.   Ha elégedett a cél számokkal, alkalmazza a javaslatot az ajánlati sorra, és az árral kapcsolatos mezői ennek megfelelően frissülni fognak..  
-    * Annyi árszimulációt végezhet, amennyit akar. Ha az Új gombra kattint az aktuálisár ajánlati sorból az árfeltételek átmásolódnak a lapra. Ezután módosíthatja, a célok árral kapcsolatos mezőinek értékeit. A mezők valamelyikén végzett változása elindítja az összes mező újraszámítását. Ahhoz, hogy a rendszer kiszámolja az értékesítési árrést és hozzájárulási arányt a termék egységköltségét ismerni kell. A Szimulált árak lapon részletesen megtekinthetők az eredeti árak, a javasolt módosítások és hatásaik az árajánlati összegekre.   Általános szabályként elmondható, hogy amikor egy új összeget beállító szimulációt alkalmaznak az árajánlati sorra, a rendszer újraszámolja, és egy új értéket ír be az Egységár mezőbe. Ha szimuláció alapja egy új árrés vagy egy új hozzájárulási arány, csak a Nettó összeg mező frissül, és az Egységár üres marad. Mindkét esetben törlődnek az engedmények, amelyek az árajánlati soron voltak a szimuláció előtt.  
+    * Annyi árszimulációt végezhet amennyit akar. Ha az Új gombra kattint az aktuálisár ajánlati sorból az árfeltételek átmásolódnak a lapra. Ezután módosíthatja, a célok árral kapcsolatos mezőinek értékeit. A mezők valamelyikén végzett változása elindítja az összes mező újraszámítását. Ahhoz, hogy a rendszer kiszámolja az értékesítési árrést és hozzájárulási arányt a termék egységköltségét ismerni kell. A Szimulált árak lapon részletesen megtekinthetők az eredeti árak, a javasolt módosítások és hatásaik az árajánlati összegekre.   Általános szabályként elmondható, hogy amikor egy új összeget beállító szimulációt alkalmaznak az árajánlati sorra, a rendszer újraszámolja, és egy új értéket ír be az Egységár mezőbe. Ha szimuláció alapja egy új árrés vagy egy új hozzájárulási arány, csak a Nettó összeg mező frissül, és az Egységár üres marad. Mindkét esetben törlődnek az engedmények, amelyek az árajánlati soron voltak a szimuláció előtt.  
 17. Zárja be a lapot.
 18. A Művelet panelen kattintson az Árajánlat elemre.
 19. Kattintson az Árajánlat küldése elemre.

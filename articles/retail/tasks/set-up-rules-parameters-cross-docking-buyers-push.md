@@ -1,31 +1,32 @@
 --- 
-title: "Az áttároláshoz és a központi elosztáshoz tartozó szabályok és paraméterek beállítása"
+title: " Az áttároláshoz és a központi elosztáshoz tartozó szabályok és paraméterek beállítása"
 description: "Ez az eljárás bemutatja a Feltöltési szabályok létrehozásának lépéseit."
 author: josaw1
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: RetailReplenishmentRuleTable, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 08f047ab38aea4958da97d80d7d274644b735cd7
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: f3a20b7bf476cae854c7f7c86d89d73e44b6749b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/07/2018
 
 ---
-# <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a>Az áttároláshoz és a központi elosztáshoz tartozó szabályok és paraméterek beállítása
+# <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a> Az áttároláshoz és a központi elosztáshoz tartozó szabályok és paraméterek beállítása
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja a Feltöltési szabályok létrehozásának lépéseit. A Feltöltési szabályok Áttárolás vagy Központi elosztás használatakor a termékek üzletekbe való elosztásának irányítására alkalmazhatóak. Feltöltési szabályok beállíthatók üzletekre vagy üzletcsoportokra vonatkozóan. A szabály mindegyik sorára definiált súly határozza meg, hogyan történjen a termékmennyiségek üzletek közötti szétosztása, amikor Áttárolás vagy Központi elosztás alkalmazásánál Feltöltési szabályok adják az elosztási módszert. Ez az eljárás az USRT bemutatócéget használja.
 

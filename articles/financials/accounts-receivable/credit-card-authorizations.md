@@ -44,11 +44,13 @@ Hitelkártyák használatához állítson be és aktiváljon egy fizetési szolg
 
 ## <a name="adding-a-new-credit-card"></a>Új hitelkártya hozzáadása
 Új hitelkártya-rekordokat a Vevők lapon a Vevő, Beállítás, Hitelkártya használatával hozhat létre. Hitelkártya-rekordokat értékesítési rendelések beírásakor is létrehozhat az Értékesítési rendelés oldalon, a Kezelés, Vevő, Hitelkártya, Jegyzék segítségével.
-Hitelkártya hozzáadása egy értékesítési rendeléshez
+
+<a name="adding-a-credit-card-to-a-sales-order"></a>Hitelkártya hozzáadása egy értékesítési rendeléshez
 -------------------------------------
 
 Hitelkártyát hozzáadhat egy értékesítési rendeléshez egy hitelkártya kiválasztásával a hitelkártya-keresőben az Ár és engedmények gyorslapon, az Értékesítési rendelés lapon. Az engedélyezési folyamat elindításához a Műveleti ablakban a Kezelés fülön válassza ki a Hitelkártyát és az Engedélyezést.
-Hitelkártya engedélyezése
+
+<a name="authorizing-a-credit-card"></a>Hitelkártya engedélyezése
 -------------------------
 
 Amikor megtörténik a hitelkártya engedélyezése, a kártyaszám és a kártyabirtokos nevének ellenőrzése megy végbe, valamint megerősítést nyer a rendelkezésre álló hitelegyenleg. Másik lehetőségként a kártyaellenőrző kód és a kártyatulajdonos címének ellenőrzése megy végbe. Ezt követően a vevő rendelkezésre álló hitelegyenlege a számla összegével csökken. A fizetési szolgáltatás információt küld arról, hogy a hitelkártyát elfogadja-e, vagy elutasítja. Az értékesítési rendelés számlázásakor a hitelkártyán végbemegy a számlaösszeg terhelése (rögzítése).

@@ -3,23 +3,24 @@ title: "Vevői fizetési mód kialakítása"
 description: "Fizetési mód létrehozása vevői kifizetésekhez."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymMode, BankAccountTableLookUp
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ef3cad6538d9efbd1c1881f4b7d771382d9b1ba8
-ms.openlocfilehash: 0ba359567126efaa8274644444a8a261e24c6621
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: cabcfe83ac83a8210ce4e0d46a08acdc48f4bf3b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="establish-customer-method-of-payment"></a>Vevői fizetési mód kialakítása
@@ -51,7 +52,7 @@ Fizetési mód létrehozása vevői kifizetésekhez. Ez a feladat az USMF bemuta
 13. A fájlformátum lap használatával adja meg az elektronikus kifizetésekhez való beállítást.
 14. A fizetés ellenőrző lapján határozza meg a kötelező mezőket.
     * Ha például előírja, hogy az összes ilyen fizetési módú kifizetés letétbe kerüljön, úgy válassza ezt a lehetőséget a lapon.  
-15. A fizetési attribútumok lapján határozza meg, mely fizetési attribútumokat akarja használni ehhez a fizetési módhoz.
+15. A fizetési attribútumok lapján határozza meg, mely fizetési attribútumokat kívánja használni ehhez a fizetési módhoz.
 16. Kattintson a Mentés gombra.
 
 

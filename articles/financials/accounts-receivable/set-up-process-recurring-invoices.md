@@ -55,11 +55,13 @@ Egy vevőnek lehet több, eltérő gyakorisággal rendelkező sablonja.
 
 ## <a name="generate-the-recurring-invoices"></a>Az ismétlődő számlák létrehozása
 Az **ismétlődő számlák**oldalon van egy olyan feladat, amely az ismétlődő számlasablonokat dolgozza fel. Meghatározhatja a számla dátumát és a sablont a számlák létrehozásához. A számlák létrejönnek és feldolgozott minden számlacsoporthoz egy ismétlődő azonosítószám rendelődik.
-Szabadszöveges ismétlődő számlák feladása
+
+<a name="post-recurring-free-text-invoices"></a>Szabadszöveges ismétlődő számlák feladása
 ---------------------------------
 
 Ismétlődő számlák generálása után a számla ismétlődés azonosító jelenik meg a feladási feladatban az **Ismétlődő számlák**oldalon. Megtekintheti az ismétlődés azonosító összes számláját a hivatkozásra kattintva. Az ismétlődés azonosító számláiak ellenőrzése során törölheti az egyes számlákat. A vevő ismétlődési beállításai a sablon beállításaira áll, így azt újra lehet generálni később. Feladhat egy, több, vagy az összes ismétlődés azonosítót. Ha engedélyezve vannak a munkafolyamatok, rá kell kattintania **Küldés** lehetőségre a számlák feladása előtt.
-Szabadszöveges ismétlődő számlák nyomtatása
+
+<a name="print-recurring-free-text-invoices"></a>Szabadszöveges ismétlődő számlák nyomtatása
 ----------------------------------
 
 Ismétlődő számlák feladása után, kinyomtathatja a számlákat a szabadszöveges számla listaoldalról. A kijelölt számlákat ki lehet nyomtatni, vagy kiválaszthat egy számlatartományt nyomtatásra.
