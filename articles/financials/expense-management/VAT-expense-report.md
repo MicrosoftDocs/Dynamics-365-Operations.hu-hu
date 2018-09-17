@@ -17,14 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: cf5277bf90799692b4d9d43e3279dae6e1e1bdf7
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="vat-recovery-in-expense-management"></a><span data-ttu-id="57b7d-103">Áfa-visszaigénylés a Költséggazdálkodás modulban</span><span class="sxs-lookup"><span data-stu-id="57b7d-103">VAT recovery in Expense management</span></span>
+
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="57b7d-104">Ha visszatérítést szeretne kapni az erre jogosult általános forgalmi adó (áfa) tranzakciók után, a vállalatnak vagy szervezetnek pontos adatokat kell azonosítania, gyűjtenie, ellenőriznie és elküldenie.</span><span class="sxs-lookup"><span data-stu-id="57b7d-104">To receive refunds on eligible value-added tax (VAT) transactions, a company or organization must identify, collect, verify, and submit accurate information.</span></span> <span data-ttu-id="57b7d-105">Ez a folyamat több feladatokból áll, és a vállalat méretétől függően több alkalmazottat vagy szerepkört tartalmazhat.</span><span class="sxs-lookup"><span data-stu-id="57b7d-105">This process includes multiple tasks and, depending on the size of your company, can include several employees or roles.</span></span>
 
