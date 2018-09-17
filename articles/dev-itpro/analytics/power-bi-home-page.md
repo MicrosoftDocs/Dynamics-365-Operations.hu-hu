@@ -27,6 +27,9 @@ ms.lasthandoff: 08/09/2018
 ---
 
 # <a name="powerbicom-solutions-home-page"></a>PowerBI.com megoldások kezdőlapja
+
+[!include [banner](../includes/banner.md)]
+
 A következő PowerBI.com megoldások a Dynamics 365 Pénzügy és műveletek környezetben érhetők el.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>A PowerBI.com megoldások itt érhetők el: Lifecycle Services (LCS)

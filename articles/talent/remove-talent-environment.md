@@ -26,6 +26,8 @@ ms.lasthandoff: 08/09/2018
 ---
 # <a name="remove-talent-environments"></a>Talent-környezetek eltávolítása
 
+[!include [banner](includes/banner.md)]
+
 Ez a témakör végigvezeti Önt a tesztelési termelési környezet eltávolításának folyamatán a Microsoft Dynamics 365 for Talent számára.
 
 ## <a name="removing-a-test-drive-environment"></a>Tesztkörnyezet eltávolítása

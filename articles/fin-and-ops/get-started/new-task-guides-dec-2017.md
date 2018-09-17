@@ -25,6 +25,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="new-or-updated-task-guides-december-2017"></a>Új vagy frissített feladat-útmutatók (2017. december)
 
+[!include [banner](../includes/banner.md)]
+
 Ez a témakör felsorolja a Microsoft Dynamics 365 for Operations (2016. december – minden nyelv) APQC egyesített könyvtárához kiadott új vagy frissített Feladat-útmutatókat.
 
 
