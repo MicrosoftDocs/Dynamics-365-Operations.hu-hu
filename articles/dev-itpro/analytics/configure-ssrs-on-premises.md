@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: b18050aa3c01db5667f0a529e3eb0c5eba971dc8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 166d419f16866f699b96013222ce8da147a5ec21
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>Az SQL Server Reporting Services konfigurálása on-premises telepítésekhez
@@ -31,56 +31,67 @@ ms.lasthandoff: 08/09/2018
 Az ebben a témakörben található lépésekkel konfigurálhatja az SQL Server Reporting Services (SSRS) szolgáltatást az Ön Microsoft Dynamics 365 for Finance and Operations (on-premises) telepítésének megfelelően.
 
 1. Nyissa meg a Reporting Services konfigurációkezelő alkalmazást.
-2. Hagyja meg az alapértelmezett **Kiszolgálónév** értéket, amelynek a jelenlegi gép nevének kell lennie, valamint a **Jelentéskészítő kiszolgáló példánya** is legyen az alapértelmezett **MSSQLSERVER**. 
+2. Hagyja meg az alapértelmezett **Kiszolgálónév** értéket, amelynek a jelenlegi gép nevének kell lennie, valamint a **Jelentéskészítő kiszolgáló példánya** is legyen az alapértelmezett **MSSQLSERVER**.
 3. Kattintson a **Kapcsolódás** lehetőségre.
-   
-   [![Jelentéskészítő szolgáltatások konfigurációs kapcsolata](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
-   
+
+    [![Jelentéskészítő szolgáltatások konfigurációs kapcsolata](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
+
 4. Kattintson a **Szolgáltatásfiók** lapfülre, és ellenőrizze, hogy a beállítások megegyeznek-e a következő ábrán láthatókkal.
 
     [![Szolgáltatásfiók lap](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
-    
-5. Kattintson a **Webszolgáltatás URL-címe** lapfülre, és ellenőrizze, hogy a beállítások megegyeznek-e a következő ábrán láthatókkal. 
 
-    [![Webszolgáltatás URL-címe lap](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png) 
-    
-6. Kattintson az **Adatbázis** fülre, és ellenőrizze, hogy az **Adatbázisnév** és a **Hitelesítő beállítások** megfelelnek az alábbi ábrán láthatóaknak. **Megjegyzés:** szüksége lesz új adatbázis létrehozására. Ehhez kattintson az **Adatbázis módosítása** lehetőségre, majd győződjön meg róla, hogy az új adatbázis neve a **DynamicsAxReportServer**.
+5. Kattintson a **Webszolgáltatás URL-címe** lapfülre, és ellenőrizze, hogy a beállítások megegyeznek-e a következő ábrán láthatókkal.
+
+    [![Webszolgáltatás URL-címe lap](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)
+
+6. Kattintson az **Adatbázis** fülre, és ellenőrizze, hogy az **Adatbázisnév** és a **Hitelesítő beállítások** megfelelnek az alábbi ábrán láthatóaknak.
+
+    > [!NOTE]
+    > Szüksége lesz új adatbázis létrehozására. Ehhez kattintson az **Adatbázis módosítása** lehetőségre, majd győződjön meg róla, hogy az új adatbázis neve a **DynamicsAxReportServer**.
 
     [![adatbázis lap](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)
-    
-7. Kattintson a **Webportál URL-címe** lapfülre, és ellenőrizze, hogy a beállítások megegyeznek-e a következő ábrán láthatókkal. **Megjegyzés:** Rá kell kattintania az **Alkalmaz** lehetőségre a portál létrehozásához és megfelelő konfigurálásához.
+
+7. Kattintson a **Webportál URL-címe** lapfülre, és ellenőrizze, hogy a beállítások megegyeznek-e a következő ábrán láthatókkal.
+
+    > [!NOTE]
+    > Rá kell kattintania az **Alkalmaz** lehetőségre a portál létrehozásához és megfelelő konfigurálásához.
 
     [![webportál url-címe lap](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
-    
-   A portál beállítása után a **Webes portál** lap az alábbi ábrával fog megegyezni.
+
+    A portál beállítása után a **Webes portál** lap az alábbi ábrával fog megegyezni.
+
     [![webportál lap](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
-    
-8. Kattintson a jelentések URL-jére az SQL Server Reporting Services webportál megtekintéséhez. 
+
+8. Kattintson a jelentések URL-jére az SQL Server Reporting Services webportál megtekintéséhez.
 9. A portálon hozzon létre egy új, **Dynamics** nevű mappát.
 
-   [![dynamics mappa](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
-    
+    [![dynamics mappa](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+
 10. A **Reporting Services konfigurációkezelőben** kattintson az **E-mail beállítások** lapfülre, és ellenőrizze, hogy a beállítások megfelelnek-e az alábbi ábrán láthatóaknak.
 
     [![e-mail beállítások lap](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)
-    
+
 11. Kattintson a **Végrehajtó fiók** lapfülre, és ellenőrizze, hogy a beállítások megegyeznek-e a következő ábrán láthatókkal.
 
     [![végrehajtó fiók lap](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
-    
-    Ne módosítsa az alapértelmezett beállításokat a **Titkosítási kulcsok** lapon. [![titkosítási kulcsok lap](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
-    
+
+    Ne módosítsa az alapértelmezett beállításokat a **Titkosítási kulcsok** lapon.
+
+    [![titkosítási kulcsok lap](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+
 12. Kattintson az **Előfizetési beállítások** lapfülre, és ellenőrizze, hogy a beállítások megegyeznek-e a következő ábrán láthatókkal.
 
     [![előfizetési beállítások lap](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
-    
-    Ne módosítsa az alapértelmezett beállításokat a **Skálázott telepítés** lapon. [![skálázott telepítés lap](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
-    
-    Ne módosítsa az alapértelmezett beállításokat a **Power BI-integráció** lapon. [![power bi integráció lap](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
-    
+
+    Ne módosítsa az alapértelmezett beállításokat a **Skálázott telepítés** lapon.
+
+    [![skálázott telepítés lap](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+
+    Ne módosítsa az alapértelmezett beállításokat a **Power BI-integráció** lapon.
+
+    [![power BI-integráció lap](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)
+
 13. Kattintson a **Kilépés** ikonra a **Reporting Services konfigurációkezelő** bezárásához.
 
     [![a reporting services konfigurációkezelőjének bezárása](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
-    
-
 

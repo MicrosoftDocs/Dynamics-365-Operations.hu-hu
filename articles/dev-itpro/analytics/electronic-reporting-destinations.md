@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -37,21 +37,21 @@ Az elektronikus jelentési (ER) formátum konfigurációk általában tartalmazn
 ## <a name="availability-and-general-prerequisites"></a>Elérhetőség és általános előfeltételek
 Az ER célok funkció a Microsoft Dynamics AX 7.0-ban (2016. február) nem elérhető. Ezért telepítenie kell a Microsoft Dynamics 365 for Operations 1611-es verzióját (2016. novemberi kiadás) az ebben a témakörben leírt függvények használatához. Másik lehetőségként telepíthet egyet a következő előfeltételek közül: Azonban ne feledje, hogy ezek az alternatívák az Elektronikus jelentéstétel célok korlátozottabb használatát teszik lehetővé.
 
--   Microsoft Dynamics AX 7.0.1 alkalmazásverzió (2016 Május)
--   ER célkezelési [alkalmazás gyorsjavítás](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
+- Microsoft Dynamics AX 7.0.1 alkalmazásverzió (2016 Május)
+- ER célkezelési [alkalmazás gyorsjavítás](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 A célokat csak importált ER konfigurációkhoz, és csak az **Elektronikus jelentéskonfigurációk** oldalon elérhető formátumokban állíthatja be.
 
 ## <a name="overview"></a>Áttekintés
 Az elektronikus jelentéstételi célkezelés funkció itt érhető el: **Szervezeti adminisztráció** &gt; **Elektronikus jelentés**. Itt felülírható egy adott konfigurációhoz alapbeállított viselkedés. Az importált konfigurációk az **Új** gombra kattintva, majd a **Hivatkozás** mezőben a létrehozandó célbeállításokhoz használni kívánt konfiguráció kiválasztásával jeleníthetők meg.
 
-[![Konfiguráció kiválasztása a Hivatkozás mezőben](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) 
+[![Konfiguráció kiválasztása a Hivatkozás mezőben](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg)
 
-Hivatkozás létrehozása után minden mappa vagy fájl részére megadhat egy elérési utat. 
+Hivatkozás létrehozása után minden mappa vagy fájl részére megadhat egy elérési utat.
 
 [![Fájlcél létrehozása](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> [!NOTE] 
+> [!NOTE]
 > Minden, azonos formátumú kimeneti összetevőhöz - például a **Fájl neve** mezőben kiválasztott mappához vagy fájlhoz - létrehozhat egy fájlelérési utat. Ezután be- és kikapcsolhatja a fájl egyes elérési útjait az **Elérési út beállításai** párbeszédpanelen. A **Beállítások** gombbal egy kiválasztott fájl elérési útjának minden célja vezérelhető. Az **Útvonalbeállítások** párbeszédpanelen minden elérési utat külön vezérelhet a **Bekapcsolva** opcióval.
 
 [![Célhely beállításai párbeszédablak](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
@@ -73,7 +73,7 @@ Amikor a **Szerkesztés** elemre kattint a **Címzett** vagy **Másolatot kap** 
 
 Ha bejelöli a **Nyomtatáskezelő e-mail** típust, fix e-mail-címeket adhat meg a **Címzett** mezőben. Nem rögzített email-cím használatához válassza ki az e-mail forrástípusát a fájlcélponthoz. A következő értékek használhatók: **Vevő**, **Szállító**, **Potenciális vevő**, **Kapcsolat**, **Versenytárs**, **Dolgozó**, **Kérelmező**, **Potenciális szállító** és **Nem engedélyezett szállító**. Miután kiválasztott egy e-mail-forrástípust, használja az **E-mail származási fiókja** mező melletti gombot a **Képletszerkesztő** képernyő megnyitásához. Ezen a képernyőn olyan képletet adhat hozzá, amely a kiválasztott fél fiókját jelöli az az e-mail címzettje vonatkozásában.
 
-[![Nyomtatáskezelő e-mail-típusának beállítása](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
+[![Nyomtatáskezelő e-mail-típusának beállítása](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg)
 
 Vegye figyelembe, hogy a receptúrák ER-konfigurációspecifikusak. A **Receptúra** mezőben adja meg a vevői vagy szállítói féltípusra történő dokumentumspecifikus hivatkozást. Gépelés helyett megkeresheti a vevőt vagy szállítót reprezentáló adatforrás-csomópontokat, és az **Adatforrás hozzáadása** gombra kattintva frissítheti a receptúrát Például, ha az ISO 20022 Jóváírás Átutalása konfigurációt használja, a szállító számláját reprezentáló csomópont a következő: **'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID**. A receptúra egyébként bármely karakterlánc, mint pl. **DE-001** megadásával menthető.
 
@@ -87,23 +87,27 @@ Az **E-mail címzettje** párbeszédpanelen kattintson a szemeteskukára az **E-
 
 Használja ezt az e-mail-típust, ha a használt konfiguráció tartalmaz egy e-mail-címet képviselő csomópontot az adatforrásokban. A Képletszerkesztő adatforrásainak és függvényeinek használatával helyesen formázott e-mail-címet állíthat elő.
 
-[![E-mail-cím-adatforrás hozzárendelése e-mail-célhelyhez](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
+[![E-mail-cím-adatforrás hozzárendelése e-mail-célhelyhez](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
 
-**Megjegyzés:** Az Egyszerű üzenetátviteli protokoll (Simple Mail Transfer Protocol - SMTP) kiszolgálónak konfiguráltnak és elérhetőnek kell lennie. Az SMTP-kiszolgálót megadhatja a Finance and Operations rendszerben itt: **Rendszeradminisztráció** &gt; **Beállítások** &gt; **E-mail** &gt; **E-mail-paraméterek**.
+> [!NOTE]
+> Az Egyszerű üzenetátviteli protokoll (Simple Mail Transfer Protocol - SMTP) kiszolgálónak konfiguráltnak és elérhetőnek kell lennie. Az SMTP-kiszolgálót megadhatja a Finance and Operations rendszerben itt: **Rendszeradminisztráció** &gt; **Beállítások** &gt; **E-mail** &gt; **E-mail-paraméterek**.
 
 ### <a name="archive-destination"></a>Archív cél
 
 Ezen opcióval eredmény küldhető egy Microsoft SharePoint vagy Microsoft Azure Storage mappába. A kiválasztott dokumentumtípus által meghatározott célra történő eredményküldéshez állítsa a **Bekapcsolva** opciót **Igen** állapotba. Csak azok a dokumentumtípusok választhatók ki, amelyeknél a csoport beállítása **File**. A dokumentumtípusokat itt határozhatja meg: **Szervezetadminisztráció** &gt; **Dokumentumkezelés** &gt; **Dokumentumtípusok**. Az ER célok konfigurálásának folyamata megegyezik a dokumentumkezelő rendszer konfigurálásával.
 
-[![Dokumentumtípusok lapja](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
+[![Dokumentumtípusok lapja](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
-A hely határozza meg, hogy a file hol kerül tárolásra. Az **Archívum** cél engedélyezése után a konfiguráció végrehajtásának eredménye elmenthető a Feladatarchívumba. Az eredményeket a **Szervezeti adminisztráció** &gt; **Elektronikus jelentés** &gt; **Elektronikus jelentéskészítési archivált feladatok** elemnél tekintheti meg. **Megjegyzés:** a Feladatarchívumhoz dokumentumtípus a Finance and Operationsben a következő helyen választható ki: **Szervezeti adminisztráció** &gt; **Munkaterületek** &gt; **Elektronikus jelentés** &gt; **Elektronikus jelentéskészítés paraméterei**.
+A hely határozza meg, hogy a file hol kerül tárolásra. Az **Archívum** cél engedélyezése után a konfiguráció végrehajtásának eredménye elmenthető a Feladatarchívumba. Az eredményeket a **Szervezeti adminisztráció** &gt; **Elektronikus jelentés** &gt; **Elektronikus jelentéskészítési archivált feladatok** elemnél tekintheti meg.
+
+> [!NOTE]
+> Megjegyzés: a Feladatarchívumhoz dokumentumtípus a Finance and Operations alkalmazásban a következő helyen választható ki: **Szervezeti adminisztráció** &gt; **Munkaterületek** &gt; **Elektronikus jelentés** &gt; **Elektronikus jelentéskészítés paraméterei**.
 
 #### <a name="sharepoint"></a>SharePoint
 
-A fájlt egy kijelölt SharePoint mappába is mentheti. Az alapértelmezett SharePoint kiszolgálót itt határozhatja meg: **Szervezeti adminisztráció** &gt; **Dokumentumkezelés** &gt; **Dokumentumkezelés paraméterei**, a **SharePoint** lapon. A SharePoint-mappa konfigurálása után a mappát kiválaszthatja azon mappaként, ahová az elektronikus jelentési eredmények mentésre kerülnek az adott dokumentumtípusnál. 
+A fájlt egy kijelölt SharePoint mappába is mentheti. Az alapértelmezett SharePoint kiszolgálót itt határozhatja meg: **Szervezeti adminisztráció** &gt; **Dokumentumkezelés** &gt; **Dokumentumkezelés paraméterei**, a **SharePoint** lapon. A SharePoint-mappa konfigurálása után a mappát kiválaszthatja azon mappaként, ahová az elektronikus jelentési eredmények mentésre kerülnek az adott dokumentumtípusnál.
 
-[![SharePoint-mappa kiválasztása](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
+[![SharePoint-mappa kiválasztása](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Azure Storage
 
@@ -119,7 +123,10 @@ Ha az **Engedélyezve** elem **Igen** értékre van állítva, létrejön a kime
 
 ### <a name="power-bi-destination"></a>Power BI-célhely
 
-Állítsa az **Engedélyezve** elemet **Igen** értékre ahhoz, hogy az elektronikus jelentési (ER) konfiguráció adatokat vigyen át a Finance and Operations alkalmazásból a Microsoft Power BI szolgáltatásokba. Az átvitt fájlok tárolása egy Microsoft SharePoint Server példányon történik, amelyet ennek a célnak megfelelően konfigurálni kell. További tájékoztatásért lásd: [Használja az elektronikus jelentési konfigurációt ahhoz, hogy a Finance and Operations adatait továbbítsa a Power BI-nak](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Ötlet:** Az alapértelmezett viselkedés (vagyis a konfiguráció párbeszédpanelének) felülbírálásához létrehozhat egy célhivatkozást és fájlcélt a fő eredménykomponens részére, majd kikapcsolhatja az összes célt.
+Állítsa az **Engedélyezve** elemet **Igen** értékre ahhoz, hogy az elektronikus jelentési (ER) konfiguráció adatokat vigyen át a Finance and Operations alkalmazásból a Microsoft Power BI szolgáltatásokba. Az átvitt fájlok tárolása egy Microsoft SharePoint Server példányon történik, amelyet ennek a célnak megfelelően konfigurálni kell. További tájékoztatásért lásd: [Használja az elektronikus jelentési konfigurációt ahhoz, hogy a Finance and Operations adatait továbbítsa a Power BI-nak](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+
+> [!TIP]
+> Az alapértelmezett viselkedés (vagyis a konfiguráció párbeszédpanelének) felülbírálásához létrehozhat egy célhivatkozást és fájlcélt a fő eredménykomponens részére, majd kikapcsolhatja az összes célt.
 
 ## <a name="security-considerations"></a>Biztonsági megfontolások
 Az ER célokhoz kétféle jog és kötelezettség létezik. Az egyik típus felügyeli azon célok összességének karbantartását, melyek egy jogi személy számára lettek konfigurálva (vagyis vezérli az **Elektronikus jelentés céljai** oldalhoz való hozzáférést). A másik típus szabályozza az alkalmazás felhasználóját abban, hogy a futtatás során felülírja az ER-fejlesztők vagy ER-funkciótanácsadók által konfigurált célbeállításokat.
@@ -158,7 +165,4 @@ Előfeltétel, hogy az Ön formátuma elérhető legyen az ER-konfigurációkná
 ## <a name="additional-resources"></a>További erőforrások
 
 [Az Elektronikus jelentéskészítés áttekintése](general-electronic-reporting.md)
-
-
-
 

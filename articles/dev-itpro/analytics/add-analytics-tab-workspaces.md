@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -54,7 +54,7 @@ Mielőtt elkezdené, létre kell hoznia vagy a kiemelt Üzletiintelligencia-jele
 Adja meg a Visual Studio projekt műtermék .pbix fájl lépésekkel.
 
 1. Hozzon létre egy új projektet a megfelelő modellben.
-2. A Solution Explorer alkalmazásban válassza ki a projektet, kattintson rá jobb gombbal, majd válassza ki a **Hozzáadás** > **Új elem** pontot.
+2. A Solution Explorer alkalmazásban válassza ki a projektet, kattintson rá jobb gombbal, majd válassza ki a **Hozzáadás** \> **Új elem** pontot.
 3. Az a **új elem hozzáadása** párbeszédpanel **műveletek műtermékek**, jelölje be a **erőforrás** sablon.
 4. Írjon be egy nevet, amely veszi figyelembe a jelentés X ++ metaadatokban hivatkozik, és kattintson a **hozzáadása**.
 
@@ -77,7 +77,7 @@ Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglal
 
 1. Nyissa meg a képernyőtervezőben tervezési definíciójának bővítésére.
 2. A tervezési meghatározásában, válassza ki a felső elem címkéje **tervezési | Minta: Munkaterület üzemi**.
-3. Kattintson a jobb gombbal, majd a **új** > **lap** nevű új vezérlő hozzáadása **FormTabControl1**.
+3. Kattintson a jobb gombbal, majd a **Új** \> **Lap** nevű új vezérlő hozzáadása **FormTabControl1**.
 4. A képernyőtervezőben válassza: **FormTabControl1**.
 5. Kattintson a jobb gombbal, majd a **új lap** hozzáadása egy új lap.
 6. Nevezze át a lap következhet, mint például **munkaterület**.
@@ -86,12 +86,12 @@ Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglal
 9. Nevezze át a lap következhet, mint például **Elemzés**.
 10. Az űrlap-tervezőben, jelölje be a **analitika (lapon)**.
 11. A **Felirat**  tulajdonságot **Elemzés** értékre kell állítani.
-12. Kattintson a jobb gombbal a vezérlőelem, és adja meg **új** > **csoport** új űrlapvezérlő csoport hozzáadása.
+12. Kattintson a jobb gombbal a vezérlőelem, és adja meg **Új** \> **Csoport** új űrlapvezérlő csoport hozzáadása.
 13. Nevezze át a lap következhet, mint például **powerBIReportGroup**.
 14. Az űrlap-tervezőben, jelölje be a **PanoramaBody (lap)**, és húzza a vezérlő a **munkaterület** lapon.
 15. A tervezési meghatározásában, válassza ki a felső elem címkéje **tervezési |} Minta: Munkaterület üzemi**.
 16. Válasszon egy feladatot, kattintson rá a jobb gombbal, majd válassza a **Minta eltávolítása** menüpontot.
-17. Kattintson ismét jobb gombbal, és adja meg **Hozzáadás minta** > **munkaterület többlapos**.
+17. Kattintson ismét jobb gombbal, és adja meg **Hozzáadás minta** \> **Munkaterület többlapos**.
 18. A build ellenőrizheti a módosítások végrehajtása.
 
 A következő ábra mutatja, hogy a terv néz módosítások alkalmazása után.
@@ -103,7 +103,7 @@ Most, hogy a munkaterület jelentés beágyazása használt űrlap-vezérlőelem
 > [!NOTE]
 > Beágyazott munkaterületek esetén javasoljuk, hogy a bővítmények használatával egyaránt rejtse el a **Szűrő ablaktábla** és a **Lap** oldalakat a konzisztencia érdekében.
 
-Ekkor befejezte a jelentkezési lap definíciójának kiterjesztését. Testreszabott bővítmények segítségével a további tudnivalókat lásd:  [Testreszabás: Overlayering és bővítéseinek](../extensibility/customization-overlayering-extensions.md).
+Ekkor befejezte a jelentkezési lap definíciójának kiterjesztését. Testreszabott bővítmények segítségével a további tudnivalókat lásd: [Testreszabás: Overlayering és bővítéseinek](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>X ++ üzleti logikát a jelentésmegjelenítő vezérlőben beágyazása hozzáadása
 Kövesse az alábbi lépéseket, amely inicializálja a jelentésmegjelenítő vezérlőben beágyazott üzleti logikát szeretne adni a **foglalási kezelési** munkaterület.
@@ -116,7 +116,7 @@ Kövesse az alábbi lépéseket, amely inicializálja a jelentésmegjelenítő v
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -126,11 +126,11 @@ Kövesse az alábbi lépéseket, amely inicializálja a jelentésmegjelenítő v
             // Note: secure entry point into the Workspace's Analytics report
             if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
             {
-                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                // initialize the PBI report control using shared helper
                 PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
             }
             initReportControl = false;
-    }
+        }
         /// <summary>
         /// Initializes the form.
         /// </summary>
@@ -159,23 +159,22 @@ Ez a szakasz a segítő osztály, amelynek használatával az üzleti Intelligen
 #### <a name="syntax"></a>Szintaxis
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### <a name="parameters"></a>Paraméterek
 
-|       Név       |                                                              Leírás                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    A .pbix erőforrás neve                                                     |
-| formGroupControl |                                    A képernyőn az üzleti Intelligencia teljesítmény jelentés vezérlőelem alkalmazandó csoportvezérlőnek.                                     |
-| defaultPageName  |                                                         Alapértelmezett oldalnév.                                                         |
-|  showFilterPane  |   Logikai érték, amely azt jelzi, hogy megjelenjen (<strong>true</strong>) vagy rejtve maradjon (<strong>false</strong>) a szűrés ablaktáblája.   |
-|   showNavPane    | Logikai érték, amely azt jelzi, hogy megjelenjen (<strong>true</strong>) vagy rejtve maradjon (<strong>false</strong>) a navigációs ablaktábla. |
-|  defaultFilters  |                                              A Power BI jelentés alapértelmezett szűrői.                                              |
-
+| Név             | Leírás                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | A .pbix erőforrás neve                                                                              |
+| formGroupControl | A képernyőn az üzleti Intelligencia teljesítmény jelentés vezérlőelem alkalmazandó csoportvezérlőnek.                                              |
+| defaultPageName  | Alapértelmezett oldalnév.                                                                                       |
+| showFilterPane   | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a szűrés ablaktáblája.     |
+| showNavPane      | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a navigációs ablaktábla. |
+| defaultFilters   | A Power BI jelentés alapértelmezett szűrői.                                                                 |
 

@@ -3,7 +3,7 @@ title: "Integráció a Microsoft Dynamics 365 for Field Service szolgáltatássa
 description: "Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 for Field Service szolgáltatással való integrációról."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
-ms.openlocfilehash: 0c1268d2fddcf7b28ecfc3197f21e9d30a5a5855
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: cb21667021a32381fd8038e1c9f0182b05622e3d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/31/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -44,7 +44,7 @@ A Field Service és a Finance and Operations közötti integráció első fázis
 - [Finance and Operations-munkarendelések Field Service vevői rendelésekké](field-service-work-order.md)
 - [Finance and Operations-számlák Field Service szabadszöveges számlákká](field-service-invoice.md)
 
-A Field Service és a Finance and Operations közötti szinkronizálás példamódjának megtekintéséhez tekintse meg a rövid YouTube videót [Munkarendelések szinkronizálása a Dynamics 365 for Field Service és a Finance and Operations között](https://www.youtube.com/watch?v=hAB4TDVMjxU).
+A Field Service és a Finance and Operations közötti szinkronizálás példamódjának megtekintéséhez tekintse meg a rövid YouTube videót [Munkarendelések szinkronizálása a Microsoft Dynamics 365 integrációval](https://www.youtube.com/watch?v=46ylO7raZAo).
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Rendszerigény a Finance and Operations rendszerhez
 A Field Service integráció a következő verziókat támogatja:

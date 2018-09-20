@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 3e12037f14e7e01764fd6d18f52854c35a09d196
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,31 @@ A Pénzügyi jelentéskészítés a Finance and Operations rendszerben lehetőv�
 Pénzügyi jelentéskészítés tartalmazza a dimenzió támogatást. Ezért a számlaszegmensek vagy dimenziók azonnal elérhetők. További eszközök vagy konfigurációs lépések nem szükségesek.
 
 ## <a name="financial-reporting-setup"></a>Pénzügyi jelentéskészítés beállítása
-A **Pénzügyi jelentéskészítés beállítása** lapja tartalmazza a rendszer összes pénzügyi dimenziójának listáját. **Főkönyv** > **Főkönyv beállításai** > **Pénzügyi jelentéskészítés beállítása**. 
+A **Pénzügyi jelentéskészítés beállítása** lapja tartalmazza a rendszer összes pénzügyi dimenziójának listáját. **Főkönyv** \> **Főkönyv beállításai** \> **Pénzügyi jelentéskészítés beállítása**.
 
 A **Pénzügyi jelentéskészítés beállítása** lap két részből áll, amelyek meghatározzák a pénzügyi jelentésekben jelentésre kerülő adatokat:
 
-• **Dimenziók lap** – Mivel a különböző vállalatok különböző dimenziókat és számlastruktúrákat használnak, nem lehet meghatározni, hogy a felhasználók milyen sorrendben akarják megtekinteni az összes pénzügyi dimenziót a jelentéseken. Ezen a lapon beállítható, hogy a pénzügyi dimenziók milyen sorrendben jelenjenek meg, amikor jelentést készít vagy tekint meg a pénzügyi jelentésekben.
-
-• **Attribútumok lap** – Itt választható ki, hogy **Szállítók** vagy a **Vevők** legyen használva attribútumként a szűréshez és a jelentéstervezéséhez. A jelentéskészítés szállítók és vevők szerint csak akkor hasznos, ha nem ad meg több szállítót vagy vevőt egy bizonylaton a tranzakciók feladásakor. A Szállító és/vagy a Vevő kiválasztása növeli az integrációs időt.
-
-
+- **Dimenziók lap** – Mivel a különböző vállalatok különböző dimenziókat és számlastruktúrákat használnak, nem lehet meghatározni, hogy a felhasználók milyen sorrendben akarják megtekinteni az összes pénzügyi dimenziót a jelentéseken. Ezen a lapon beállítható, hogy a pénzügyi dimenziók milyen sorrendben jelenjenek meg, amikor jelentést készít vagy tekint meg a pénzügyi jelentésekben.
+- **Attribútumok lap** – Itt választható ki, hogy **Szállítók** vagy a **Vevők** legyen használva attribútumként a szűréshez és a jelentéstervezéséhez. A jelentéskészítés szállítók és vevők szerint csak akkor hasznos, ha nem ad meg több szállítót vagy vevőt egy bizonylaton a tranzakciók feladásakor. A Szállító és/vagy a Vevő kiválasztása növeli az integrációs időt.
 
 ## <a name="financial-reporting-components"></a>A pénzügyi jelentés összetevői
 A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehozása, megtekintése és ütemezése rendkívül egyszerűvé válik.
 
-| Összetevő        | Függvények                                                                                                                                                                                                                                                                           | További információk                                                                          |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Jelentéstervező  | A jelentések építőelemeit hozhatja létre ezzel, amelyekből később jelentést határozhat meg és hozhat létre. A jelentésvarázsló a kevésbé tapasztalt felhasználókat kalauzolja végig a tervezési folyamaton. A haladó felhasználók létrehozhatnak új jelentés-építőelemeket vagy kedvükre módosíthatják a meglévő építőelemeket. |                                                                                                 |
-| Jelentésütemezések | Ütemezzen egyetlen jelentést vagy jelentéscsoportot úgy, hogy az rendszeressé váljon.                                                                                                                                                                                          | [Pénzügyi jelentés létrehozása](generate-financial-report.md) |
+| Összetevő        | Függvények | További információk |
+|------------------|-----------|------------------------|
+| Jelentéstervező  | A jelentések építőelemeit hozhatja létre ezzel, amelyekből később jelentést határozhat meg és hozhat létre. A jelentésvarázsló a kevésbé tapasztalt felhasználókat kalauzolja végig a tervezési folyamaton. A haladó felhasználók létrehozhatnak új jelentés-építőelemeket vagy kedvükre módosíthatják a meglévő építőelemeket. | |
+| Jelentésütemezések | Ütemezzen egyetlen jelentést vagy jelentéscsoportot úgy, hogy az rendszeressé váljon. | [Pénzügyi jelentés létrehozása](generate-financial-report.md) |
 
 ## <a name="features"></a>Jellemzők
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Szolgáltatás</th>
 <th>Leírás</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Rugalmas jelentéstervezés</td>
 <td>A jelentéstervező jelentés tervezésekor az alábbi jelentési beállításokat nyújtja:
 <ul>
@@ -70,9 +67,10 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 <li>Szabályozhatja a dimenzióleírások formázását és megjelenítését.</li>
 <li>Azonosíthatja a számlákat és dimenziókat, amelyek kimaradtak a jelentések építőelemeiből.</li>
 <li>Formázhatja a fejléceket a gördülő előrejelzésekhez.</li>
-</ul></td>
+</ul>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Pénzügyi jelentési együttműködés</td>
 <td>Az alábbi funkciók segítségével szabályozhatja a jelentések létrehozását és felosztását:
 <ul>
@@ -80,9 +78,10 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 <li>Exportálás csak olvasható XPS formátumba, amely nagyobb dokumentumbiztonságot nyújt digitális aláírással.</li>
 <li>Exportálás Microsoft Excel-munkalapra.</li>
 <li>A jelentések megosztásához létrehozhat e-maileket, amelyek a jelentésre mutató hivatkozást tartalmaznak.</li>
-</ul></td>
+</ul>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Jelentések interaktív megtekintése</td>
 <td>Az interaktív funkciók segítségével az alábbi műveleteket végezeti el:
 <ul>
@@ -99,8 +98,4 @@ A pénzügyi jelentéskészítés következő elemeivel a jelentések létrehoz�
 
 ## <a name="additional-resources"></a>További erőforrások
 [Pénzügyi jelentés létrehozása](generate-financial-report.md)
-
-
-
-
 

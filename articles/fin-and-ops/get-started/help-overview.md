@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -74,7 +74,7 @@ Tartalmainkat bármelyik keresőmotorral is megtalálhatja. A legjobb eredménye
 A Finance and Operations, Retail és Talent terméknek ugyanaz a tartalomjegyzéke a dokumentumok webhelyen, ami lehetővé teszi az ügyfelek számára, hogy lássák az aktuális témakör kontextusát. Emellett lehetővé teszi a tartalomjegyzék feletti szűrő vezérlőelem használatát a kívánt témakörök megkereséséhez.
 
 ### <a name="follow-a-topic"></a>Egy témakör követése
-Egy témakör követéséhez kattintson a +Követés gombra a megjegyzésmező alatt. Témakör követéséhez be kell jelentkeznie. A részletekért lásd: [Szóljon hozzá!](#leave-us-a-comment).  
+Egy témakör követéséhez kattintson a +Követés gombra a megjegyzésmező alatt. Témakör követéséhez be kell jelentkeznie. A részletekért lásd: [Visszajelzés küldése](#leave-us-feedback).  
 
 ### <a name="use-an-rss-feed"></a>RSS-hírcsatorna használata
 A Unified Operations összes frissítését bemutató RSS-hírcsatornára való előfizetéshez használja az alábbi hivatkozást egy az RSS-hírcsatornákat támogató böngészőből, például az Internet Explorerből vagy egy RSS-hírcsatorna-kezelőből: 
