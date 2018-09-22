@@ -35,7 +35,9 @@ A projektvezetési és könyvelési funkció több ágazatban használható egy 
 A projekt olyan tevékenységek csoportja, amelyekkel szolgáltatás nyújtható, termék gyártható vagy eredmény érhető el. A projektek erőforrásokat használnak, és bevételek vagy eszközök formájában pénzügyi eredményeket generálnak.
 
 ## <a name="projects-across-industries"></a>Projektek ágazatokban között
-A projektvezetési és könyvelési funkció több ágazatban is használható a következő ábrán látható módokon. [![Ágazatokon átívelő projektek](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+A projektvezetési és könyvelési funkció több ágazatban is használható a következő ábrán látható módokon.
+
+[![Ágazatokon átívelő projektek](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 Egy telefonos ügyfélszolgálat esetében, ún. „ticket” használható, amely összefoglalja azt az eljárásmenetet, amely végrehajtásával az adott probléma megoldható. A tanácsadó vállalatok, például a menedzsment- vagy műszaki tanácsadó szervezetek vagy a hirdetési ügynökségek, projektként hivatkoznak a tevékenységükre. A marketingben a kampány egy leszállítandó munkakészletet jelöl. Projekt-alapú gyártás esetén, a termelési rend határozza meg a késztermék előállításához elvégezendő különböző munkafolyamatokat. Akárhogyan is hívják őket, ezek a projektek nyersanyagokat, ütemterveket és költségeket foglalnak magukban, és a Microsoft Dynamics 365 for Finance and Operations projektvezetési és könyvelési funkciói ezeknek a projekteknek a tervezésében, kivitelezésében és elemzésében nyújthatnak segítséget.
 
