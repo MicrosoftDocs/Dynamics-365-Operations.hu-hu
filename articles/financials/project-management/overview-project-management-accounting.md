@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
+ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/21/2018
 
 ---
 
@@ -35,7 +35,9 @@ ms.lasthandoff: 08/09/2018
 <span data-ttu-id="245e1-105">A projekt olyan tevékenységek csoportja, amelyekkel szolgáltatás nyújtható, termék gyártható vagy eredmény érhető el.</span><span class="sxs-lookup"><span data-stu-id="245e1-105">A project is a group of activities that is designed to provide a service, produce a product, or achieve a result.</span></span> <span data-ttu-id="245e1-106">A projektek erőforrásokat használnak, és bevételek vagy eszközök formájában pénzügyi eredményeket generálnak.</span><span class="sxs-lookup"><span data-stu-id="245e1-106">Projects consume resources and generate financial results in the form of revenues or assets.</span></span>
 
 ## <a name="projects-across-industries"></a><span data-ttu-id="245e1-107">Projektek ágazatokban között</span><span class="sxs-lookup"><span data-stu-id="245e1-107">Projects across industries</span></span>
-<span data-ttu-id="245e1-108">A projektvezetési és könyvelési funkció több ágazatban is használható a következő ábrán látható módokon.</span><span class="sxs-lookup"><span data-stu-id="245e1-108">The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.</span></span> <span data-ttu-id="245e1-109">[![Ágazatokon átívelő projektek](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span><span class="sxs-lookup"><span data-stu-id="245e1-109">[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span></span> 
+<span data-ttu-id="245e1-108">A projektvezetési és könyvelési funkció több ágazatban is használható a következő ábrán látható módokon.</span><span class="sxs-lookup"><span data-stu-id="245e1-108">The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.</span></span>
+
+<span data-ttu-id="245e1-109">[![Ágazatokon átívelő projektek](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span><span class="sxs-lookup"><span data-stu-id="245e1-109">[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg)</span></span> 
 
 <span data-ttu-id="245e1-110">Egy telefonos ügyfélszolgálat esetében, ún. „ticket” használható, amely összefoglalja azt az eljárásmenetet, amely végrehajtásával az adott probléma megoldható.</span><span class="sxs-lookup"><span data-stu-id="245e1-110">In a call center, a ticket can be used to describe the set of actions that are required to resolve a call.</span></span> <span data-ttu-id="245e1-111">A tanácsadó vállalatok, például a menedzsment- vagy műszaki tanácsadó szervezetek vagy a hirdetési ügynökségek, projektként hivatkoznak a tevékenységükre.</span><span class="sxs-lookup"><span data-stu-id="245e1-111">Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects.</span></span> <span data-ttu-id="245e1-112">A marketingben a kampány egy leszállítandó munkakészletet jelöl.</span><span class="sxs-lookup"><span data-stu-id="245e1-112">In marketing, a campaign represents a set of work that must be delivered.</span></span> <span data-ttu-id="245e1-113">Projekt-alapú gyártás esetén, a termelési rend határozza meg a késztermék előállításához elvégezendő különböző munkafolyamatokat.</span><span class="sxs-lookup"><span data-stu-id="245e1-113">In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods.</span></span> <span data-ttu-id="245e1-114">Akárhogyan is hívják őket, ezek a projektek nyersanyagokat, ütemterveket és költségeket foglalnak magukban, és a Microsoft Dynamics 365 for Finance and Operations projektvezetési és könyvelési funkciói ezeknek a projekteknek a tervezésében, kivitelezésében és elemzésében nyújthatnak segítséget.</span><span class="sxs-lookup"><span data-stu-id="245e1-114">Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Finance and Operations can help with the planning, execution, and analysis of these projects.</span></span>
 
