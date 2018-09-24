@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,25 +30,24 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-A cikk ismerteti, hogyan állítson be felhasználói beállításokat a felhasználói műveletek testreszabásához a pénzügyi jelentés tervezőben, valamint ezek a beállítások meghatározzák a kezdeti bejelentkezés-élményt. Azt is szabályozhatja, hogy hogyan jelenjenek meg az egyes jelentések, a jelentés könyvtár, és az alapértelmezett file elérési helye. 
+A cikk ismerteti, hogyan állítson be felhasználói beállításokat a felhasználói műveletek testreszabásához a pénzügyi jelentés tervezőben, valamint ezek a beállítások meghatározzák a kezdeti bejelentkezés-élményt. Azt is szabályozhatja, hogy hogyan jelenjenek meg az egyes jelentések, a jelentés könyvtár, és az alapértelmezett file elérési helye.
 
-<a name="set-user-preferences"></a>Felhasználói beállítások megadása
---------------------
+## <a name="set-user-preferences"></a>Felhasználói beállítások megadása
 
-1.  A Jelentéstervezőben kattintson az **Eszközök** menü **Beállítások** parancsára.
-2.  Az **Opciók** párbeszédablakban adhatja meg saját preferenciális beállításait.
-3.  Kattintson az **OK** gombra.
+1. A Jelentéstervezőben kattintson az **Eszközök** menü **Beállítások** parancsára.
+2. Az **Opciók** párbeszédablakban adhatja meg saját preferenciális beállításait.
+3. Kattintson az **OK** gombra.
 
 ## <a name="options-dialog-box-options"></a>Opciók párbeszédablak beállításai
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Felhasználói beállítás</th>
 <th>Leírás</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Indításkor</td>
 <td>Válassza ki, mit szeretne látni a Jelentéstervező indításakor. Válasszon a következő lehetőségek közül:
 <ul>
@@ -57,28 +56,22 @@ A cikk ismerteti, hogyan állítson be felhasználói beállításokat a felhasz
 <li><strong>Üres környezet megjelenítése</strong> – Megnyit egy üres tervezőablakot.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>A Jelentéstervező bezárása előtt megerősítés kérése</td>
 <td>Válassza ki, hogy szeretne-e figyelmeztető üzenetet kapni kilépéskor. Ez biztosítja, hogy ne lépjen ki akaratlanul a programból.</td>
 </tr>
-<tr class="odd">
-<td>Cellaaláhúzás automatikus alkalmazása az oszlopfejlécekben</td>
+<tr>
+<td>Cella aláhúzásának automatikus alkalmazása az oszlopfejlécben</td>
 <td>Aláhúzást szúr be az új oszlopfejléc cellájába.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Felügyeleti jelentéskészítő fájlok helye</td>
 <td>Meghatározza a fájlok alapértelmezett helyét. Az alkalmazás az alapértelmezett helyet használja építőelem-csoportok exportálásánál.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
-
-
-
 

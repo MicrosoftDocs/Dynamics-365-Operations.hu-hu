@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -63,8 +63,8 @@ Egy adatmodell üzleti entitását egy tároló (rekord) képviseli. Az üzleti 
 
 Egyetlen adatmodell-összetevő több tartományspecifikus üzletientitás-hierarchiát tartalmazhat. Modell-hozzárendeléseket is tartalmazhat, amelyek támogatják a jelentésspecifikus adatáramlást futásidőben. A hierarchiákat egyetlen rekord különbözteti meg, amit a modell-hozzárendelés gyökerének választott ki. Például, a fizetési tartomány adatmodellje támogathatja a következő leképezéseket:
 
-- Vállalat > Szállító > Az AP tartomány kifizetési tranzakciói
-- Vevő > Vállalat > Az AR tartomány kifizetési tranzakciói
+- Vállalat \> Szállító \> Az AP tartomány kifizetési tranzakciói
+- Vevő \> Vállalat \> Az AR tartomány kifizetési tranzakciói
 
 Vegyük figyelembe, hogy az üzleti entitásokat (úgy mint a vállalat és a fizetési tranzakciók) egyszer hozza létre. Ezután különböző hozzárendelések újrahasználják őket.
 
@@ -74,7 +74,7 @@ A modell-hozzárendelés, amely támogatja a kimenő elektronikus dokumentumokat
 - Olyan felhasználói bemeneti paramétereket támogat, amelyeket meghatározhat az adatmodell adatforrásaiként, amikor bizonyos adatokat a futási időben kell megadni.
 - Támogatja a Finance and Operations adatok átalakítását a szükséges csoportokba. Az adatok szűrését, rendezését és összegzését is lehetővé teszi, továbbá logikai számított mezők hozzáfűzését a Microsoft Excel képleteihez hasonló képletekkel, a következő ábrán látható módon. További tudnivalókért lásd: [Képletszerkesztő elektronikus jelentésekhez](general-electronic-reporting-formula-designer.md)).
 
-[![Képletszerkesztő](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Képletszerkesztő](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 A modell-hozzárendelés, amely támogatja a bejövő elektronikus dokumentumokat, a következő lehetőségeket kínálja:
 
@@ -175,7 +175,7 @@ A szükséges **LCS-projekt** tárházak egyesével regisztrálhatók a jelenleg
 ## <a name="supported-scenarios"></a>Támogatott esetek
 ### <a name="building-a-data-model"></a>Adatmodell létrehozása
 
-Az ER modelltervezőt biztosít egy bizonyos üzleti tartomány adatmodelljeinek építésére. Minden tartományspecifikus üzleti entitás és a köztük lévő kapcsolat beállítható adatmodellként egy hierarchikus struktúrában. A következő ábrán egy példa látható az ilyen típusú adatmodellekre (a fizetési tartomány adatmodell). 
+Az ER modelltervezőt biztosít egy bizonyos üzleti tartomány adatmodelljeinek építésére. Minden tartományspecifikus üzleti entitás és a köztük lévő kapcsolat beállítható adatmodellként egy hierarchikus struktúrában. A következő ábrán egy példa látható az ilyen típusú adatmodellekre (a fizetési tartomány adatmodell).
 
 [![Fizetési tartomány adatmodell](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -185,19 +185,18 @@ Ahhoz, hogy megismerje ennek a folyamatnak a részleteit játssza le az **ER tar
 
 Az adatok modell tartalma (címke és leírás) lefordítható más, a Finance and Operations által támogatott nyelvre. Érdemes lehet az adatok modell tartalmának fordítása a következő okok miatt:
 
--   Hogy tervezés közben érthetőbb legyen az idegen nyelvű formátumtervezők számára, akik adatmodellt fognak használni a formátum-összetevők adatleképezéséhez
--   Hogy a felület felhasználóbarátabb legyen futtatás közben a rákérdezések és a futtatási paraméterek súgójának megjelenítésekor, valamint a konfigurált ellenőrzési üzenetek (hibák, figyelmeztetések) megjelenítésekor a bejelentkezett felhasználó preferált nyelven.
+- Hogy tervezés közben érthetőbb legyen az idegen nyelvű formátumtervezők számára, akik adatmodellt fognak használni a formátum-összetevők adatleképezéséhez
+- Hogy a felület felhasználóbarátabb legyen futtatás közben a rákérdezések és a futtatási paraméterek súgójának megjelenítésekor, valamint a konfigurált ellenőrzési üzenetek (hibák, figyelmeztetések) megjelenítésekor a bejelentkezett felhasználó preferált nyelven.
 
-A következő illusztráció bemutat egy példát arra az esetre, amikor az adatmodell tartalmát angolról japánra fordítjuk le. 
+A következő illusztráció bemutat egy példát arra az esetre, amikor az adatmodell tartalmát angolról japánra fordítjuk le.
 
 [![Adatmodell tartalma angolul](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Adatmodell tartalma japán nyelvre lefordítva](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>A kimenő dokumentumok adatmodell hozzárendeléseinek beállítása
 
-Az ER biztosít egy modell-leképezés tervezőt, amely lehetővé teszi a felhasználó számára az általuk specifikus Finance and Operations adatforrásokhoz tervezett adatmodellek leképezését. A leképezés alapján a rendszer az adatokat importálja futásidőben a kijelölt adatforrásokból az adatmodellbe. Az adatmodellt a rendszer ezután absztrakt adatforrásként használja a kimenő elektronikus dokumentumokat létrehozó ER-formátumokhoz. A következő ábra az ilyen adatmodell-leképezést szemlélteti (A Fizetési tartomány adatmodell **SEPA Kredit átutalás** modell-leképezése). 
+Az ER biztosít egy modell-leképezés tervezőt, amely lehetővé teszi a felhasználó számára az általuk specifikus Finance and Operations adatforrásokhoz tervezett adatmodellek leképezését. A leképezés alapján a rendszer az adatokat importálja futásidőben a kijelölt adatforrásokból az adatmodellbe. Az adatmodellt a rendszer ezután absztrakt adatforrásként használja a kimenő elektronikus dokumentumokat létrehozó ER-formátumokhoz. A következő ábra az ilyen adatmodell-leképezést szemlélteti (A Fizetési tartomány adatmodell **SEPA Kredit átutalás** modell-leképezése).
 
 [![Egy adatmodell-leképezés példája](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -210,13 +209,13 @@ Az ER biztosít egy modell-leképezés tervezőt, amely lehetővé teszi a felha
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>A létrehozott modell-összetevő tárolása modell-konfigurációként
 
-Az ER képes a megtervezett adatmodellt a hozzárendelt adatfeltérképezésekkel modellkonfigurációként tárolni az aktuális Finance and Operations példányban. A következő ábrán egy példa látható az ilyen típusú adatmodell-konfigurációkra (a fizetési modellkonfigurációra). 
+Az ER képes a megtervezett adatmodellt a hozzárendelt adatfeltérképezésekkel modellkonfigurációként tárolni az aktuális Finance and Operations példányban. A következő ábrán egy példa látható az ilyen típusú adatmodell-konfigurációkra (a fizetési modellkonfigurációra).
 
 Ahhoz, hogy megismerje ennek a folyamatnak a részleteit, játssza le az **ER adatmodell-feltérképezés a kiválasztott adatforrásokhoz** című feladat-útmutatót (a **7.5.4.3 Informatikai szolgáltatások/megoldások összetevőinek beszerzése/kifejlesztése (10677)** üzleti folyamat része).
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Formátum létrehozása adatmodell alapként való kijelölésével
 
-Az ER támogatja azt a formátumtervezőt, amely az elektromos dokumentum formátumának tervezésére szolgál a kiválasztott üzleti tartomány számára, úgy, hogy a modell-összetevőt alapként választja ki. Ugyanaz az ER formátumtervező képes arra, hogy feltérképezzen egy Ön által létrehozott, egy adott tartomány adatmodell-feltérképezését adatforrásként használó formátumot. A következő ábrán egy példát láthat erre a típusú formátumra (olyan formátumkonfiguráció, ami támogatja a **BACS** fizetési formátumot az Egyesült Királyságban). 
+Az ER támogatja azt a formátumtervezőt, amely az elektromos dokumentum formátumának tervezésére szolgál a kiválasztott üzleti tartomány számára, úgy, hogy a modell-összetevőt alapként választja ki. Ugyanaz az ER formátumtervező képes arra, hogy feltérképezzen egy Ön által létrehozott, egy adott tartomány adatmodell-feltérképezését adatforrásként használó formátumot. A következő ábrán egy példát láthat erre a típusú formátumra (olyan formátumkonfiguráció, ami támogatja a **BACS** fizetési formátumot az Egyesült Királyságban).
 
 [![Példa egy adatmodell-alapú formátumra](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -240,7 +239,7 @@ Ahhoz, hogy megismerje ennek a folyamatnak a részleteit, hajtsa végre A Micros
 - [Kifizetési jelentés mintája (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Kifizetési jelentés bekötött sablonja (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Konfigurációs létrehozása az adatok importálásához a bejövő elektronikus dokumentumokból  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Konfigurációs létrehozása az adatok importálásához a bejövő elektronikus dokumentumokból
 Az ER-formátumtervezővel XML vagy szöveg formátumban írhatók le az adatimportáláshoz használni kívánt elektronikus dokumentumok. A tervezett formátumot használjuk a bejövő dokumentum elemzéséhez. Az ER formátumleképezés-tervező használható a tervezett formátum elemeinek a kötéséhez az adatmodellhez. A következő ábra egy példát mutat be a formátumnak és a formátumleképezésnek erre a típusára. Ebben a példában olyan NETS banki kivonatokat importálunk, amelyek szöveges formátumban tartalmazzák a szállító fizetési adatait.
 
 [![ER-format-designer](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -260,7 +259,7 @@ Az ER képes a megtervezett formátumnak a konfigurált adatfeltérképezésekke
 
 ### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>A Finance and Operations konfigurálása a létrehozott formátum belső használatához
 
-A Finance and Operations beállítható úgy, hogy az elektronikus jelentések generálásához egy már létrehozott formátumot használjon. A létrehozott formátum konfigurációjának hivatkozásához bizonyos tartományspecifikus beállításokat kell meghatározni. Például, egy ER formátumkonfiguráció használható az elektronikus szállítói kifizetésekhez BACS formátumban, ha a formátumkonfiguráció a kifizetések módjánál külön le van hivatkozva, ahogyan a következő illusztrációkon is látható: 
+A Finance and Operations beállítható úgy, hogy az elektronikus jelentések generálásához egy már létrehozott formátumot használjon. A létrehozott formátum konfigurációjának hivatkozásához bizonyos tartományspecifikus beállításokat kell meghatározni. Például, egy ER formátumkonfiguráció használható az elektronikus szállítói kifizetésekhez BACS formátumban, ha a formátumkonfiguráció a kifizetések módjánál külön le van hivatkozva, ahogyan a következő illusztrációkon is látható:
 
 [![BACS (UK) formátumkonfiguráció](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -367,15 +366,9 @@ Az ER automatikusan igazodik az alapösszetevő legújabb verziójához a szárm
 |                                                  |                       | Szállítói számla bevallása (IS)                   | Izlandi szállítói számla nyilatkozat formátum                      |
 |                                                  |                       | Szállítói számla bevallásjelentés (IS)            | Izlandi szállítói számla nyilatkozatjelentés                      |
 
-
-
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [H honosítási követelményeknek – Elektronikus jelentési konfiguráció létrehozása](electronic-reporting-configuration.md)
 
 [Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-
 

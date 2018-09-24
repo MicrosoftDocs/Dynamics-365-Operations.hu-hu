@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -49,6 +49,8 @@ Megjegyzés: Az alább felsorolt műveletek a legújabb Dynamics 365 for Retail 
 | 707 | Eszköz aktiválása | Az aktuális eszköz aktiválása azáltal, hogy hitelesített felhasználók kapcsolati adatokat tartalmaznak, és rendelje hozzá az eszköz, és regisztrálja az azonosítóját. | Nincs | Nincs | Nincs | Nincs | Nincs |
 | 134 | Fiók hozzáadása | A kiválasztott fiók hozzáadása egy tranzakcióhoz. Jelölje ki a fiókot a **Gomb tulajdonságai** oldalon. | Igen | Igen | Nincs | Igen | Nincs |
 | 135 | Fiók hozzáadása listából | Adjon hozzá egy fiókot a tranzakcióhoz a listában történő kijelöléssel. | Igen | Igen | Igen | Igen | Nincs |
+| 137 | Egy fiók hozzáadása vevőhöz | Adjon hozzá fiókot a vevőhöz a **Vevőadatok** oldalon. | Nincs | Nincs | Nincs | Igen | Nincs |
+| 138 | Fiók eltávolítása az ügyfélről | Távolítsa el a fiókot a vevőtől a **Vevőadatok** oldalon. | Nincs | Nincs | Nincs | Igen | Nincs |
 | 643 | Utalványkód hozzáadása | Kupon hozzáadása kódjának pénztárnál való megadásával. | Igen | Igen | Nincs | Igen | Nincs |
 | 117 | Hűségkártya hozzáadása | Kéri a felhasználót, amely hozzáadódik az aktuális tranzakció hűségkártya számának megadása. | Igen | Igen | Nincs | Igen | Nincs |
 | 136 | Sorozatszám hozzáadása | Ez a művelet lehetővé teszi, hogy a felhasználó adja meg a kijelölt termék sorozatszámát. | Igen | Igen | Nincs | Igen | Nincs |

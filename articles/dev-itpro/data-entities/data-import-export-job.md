@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -66,13 +66,11 @@ Adott entitásokat adhat hozzá az importálási vagy exportálási feladatokhoz
 ### <a name="set-the-data-format-for-the-job"></a>Végezze el a feladat adatformátumának beállítását
 Ha kiválaszt egy entitást, ki kell választania az exportálandó vagy importálandó adatok formátumát. A formátumokat az **Adatforrások beállítása** csempe segítségével határozhatja meg. A forrásoldali adatformátum a **Típus**, a **Fájlformátum**, a **Sorelválasztó** és az **Oszlopelválasztó** kombinációja. Vannak egyéb attribútumok is, de ezek a legfontosabbak, amelyeket érteni kell. Az alábbi táblázat felsorolja az érvényes kombinációkat.
 
-| **Fájlformátum**        | **Sor-/oszlopelválasztó**                   | **XML-stílus**             |
+| Fájlformátum            | Sor-/oszlopelválasztó                       | XML-stílus                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-–                     |
 | XML                    | \-–                                      | XML-elem XML-attribútum |
 | Elválasztott, rögzített szélesség | Vessző, pontosvessző, tabulátor, függőleges sáv, kettőspont | \-–                     |
-
-
 
 ### <a name="sequence-the-entities"></a>Az entitások sorozetba állítása
 Az entitások sorrendbe állíthatók egy adatsablonban, valamint az importálási és exportálási feladatokban. Ha egy több adatentitást tartalmazó feladatot futtat, meg kell győződnie arról, hogy az adatentitások megfelelően vannak sorrendbe állítva. Az entitásokat alapvetően úgy kell sorozatba állítani, hogy meg lehessen címezni a funkcionális függőségeket az entitások között. Ha az entitások között nincsenek funkcionális függőségek, párhuzamos importálásra vagy exportálásra lehet ütemezni őket.

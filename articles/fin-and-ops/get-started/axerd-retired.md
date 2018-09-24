@@ -27,6 +27,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="axerd-page-has-been-retired"></a>Az AxErd-oldal már nem érhető el
 
+[!include [banner](../includes/banner.md)]
+
 Sajnos meg kellett szüntetnünk az AxErd weboldalt, amely entitás-kapcsolat diagramokat (ERD) biztosított számos Microsoft Dynamics AX 2012 táblához. Sikerült beküldeni mind a projekt forráskódját, mind a weboldal HTML-fájljait egy GitHub jelentés formájában: https://github.com/Microsoft/ax-2012-doc-tools
 
 A HTML-lapok a jelentésben vannak: [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)

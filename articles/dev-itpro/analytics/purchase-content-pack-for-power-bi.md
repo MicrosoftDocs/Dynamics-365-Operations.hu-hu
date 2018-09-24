@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 07b6f433a8355d7f9ed6dce8e26f78d38a86a713
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,32 +36,27 @@ Ez a témakör a **Beszerzési kiadások elemzése** Power BI-tartalom modul tar
 
 A **Beszerzési kiadások elemzése** Power BI-tartalom a beszerzési vezetők és olyan vezetők segítségével készült, akik a beszerzési kiadások költségvetéésért felelősek. A vezetők az alábbi módokon elemezhetik a beszerzési költségeket:
 
--   Az év megadott napjáig tartó beszerzések (szállítói csoport és az egyes szállítók , beszerzési kategória és egyes termékek, valamint a szállító helye szerint)
--   Egy éves időszak beszerzési változásai (szállítói csoport és a beszerzési kategória szerint)
+- Az év megadott napjáig tartó beszerzések (szállítói csoport és az egyes szállítók , beszerzési kategória és egyes termékek, valamint a szállító helye szerint)
+- Egy éves időszak beszerzési változásai (szállítói csoport és a beszerzési kategória szerint)
 
 A tartalom beszerzési tranzakciós adatokat használ, és egyrészt összesített adatokat nyújt a vállalati szintű beszerzési számokról, másrészt a kiadások szállító és termék szerinti lebontását kínálja. A jelentések kiemelik a beszerzési kiadások időbeli változásait. Ezért a jelentések riasztásra használhatók a menedzserek számára a kiadások pozitív és negatív trendjeiről az egyes szállítókra és termékekre nézve. Ezenkívül diagramok jelenítik meg a beszerzési kiadásokat a különböző beszerzési kategóriákra és szállítói csoportokra nézve. Ezért a kategória- és regionális vezetők a diagramok segítségével a kiadások viselkedési változásait azonosíthatják.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Beszerzési és ráfordítási elemzés** Power BI tartalom a **Beszerzési és ráfordítási elemzés** oldalon látható (**Beszerzés és forrás** > **Lekérdezések és jelentések** > **Beszerzési teljesítményelemzés** > **Beszerzési és ráfordítási elemzés**). 
+A **Beszerzési és ráfordítási elemzés** Power BI tartalom a **Beszerzési és ráfordítási elemzés** oldalon látható (**Beszerzés és forrás** \> **Lekérdezések és jelentések** \> **Beszerzési teljesítményelemzés** \> **Beszerzési és ráfordítási elemzés**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 A **Beszerzési kiadások elemzése** Power BI-tartalom tartalmaz egy jelentést, amely metrikák készletéből áll. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. Az alábbi táblázat tartalmazza a megjelenítések áttekintését.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Jelentéslap</th>
 <th>Diagramok</th>
 <th>Mozaik</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Szállító beszerzés</td>
 <td><ul>
 <li>10 legmagasabb szállító beszerzés szerint (halmozott sávdiagram)</li>
@@ -76,7 +71,7 @@ A **Beszerzési kiadások elemzése** Power BI-tartalom tartalmaz egy jelentést
 <li>Aktív szállítók száma</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Beszerzés termékenként</td>
 <td><ul>
 <li>Beszerzés beszerzési kategória / termék neve szerint (oszlopdiagram)</li>
@@ -89,7 +84,7 @@ A **Beszerzési kiadások elemzése** Power BI-tartalom tartalmaz egy jelentést
 <li>A beszerzések 80%-át lefedő termékek száma</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Beszerzés időszak szerint*</td>
 <td><ul>
 <li>Beszerzés hónap / nap szerint (oszlopdiagram)</li>
@@ -102,7 +97,7 @@ A **Beszerzési kiadások elemzése** Power BI-tartalom tartalmaz egy jelentést
 <li>Egy éves időszak beszerzési növekedése %</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Beszerzés a szállító helye szerint</td>
 <td><ul>
 <li>Beszerzés település szerint</li>
@@ -111,7 +106,7 @@ A **Beszerzési kiadások elemzése** Power BI-tartalom tartalmaz egy jelentést
 </ul></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Beszerzési kiadások elemzése idő szerint</td>
 <td><ul>
 <li>Beszerzési folyó év, hónap / nap szerint (vonaldiagram)</li>
@@ -119,7 +114,7 @@ A **Beszerzési kiadások elemzése** Power BI-tartalom tartalmaz egy jelentést
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Beszerzési kiadások elemzése szállító szerint</td>
 <td><ul>
 <li>A legjobb szállítói beszerzési %-a a beszerzésekből (tölcsér)</li>

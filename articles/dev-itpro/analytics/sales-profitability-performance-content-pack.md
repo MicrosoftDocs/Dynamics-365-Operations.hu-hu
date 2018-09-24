@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 55699cb41c712b49954f9ad6b03c2e7813a3a98a
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
 ms.contentlocale: hu-hu
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,21 +36,21 @@ Ez a témakör azt ismerteti, mit tartalmaz az **Értékesítési és a jövedel
 
 Az **Értékesítési és a jövedelmezőségi teljesítmény** Power BI-tartalmat az értékesítési vezetők számára hozták létre a bevétel, a bruttó nyereség és a fedezeti mutató kulcsfontosságú értékesítési mutatóinak figyelemmel kísérésére. Értékesítési tranzakciós adatokat használ, és egyaránt bemutatja a vállalat egészére kiterjedő eladási adatokat és az ügyfelek és termékek értékesítési teljesítményének lebontását.
 
-A jelentések kiemelik a bevételek és a profitnövekedés időbeli változásait. Ezért a jelentések riasztásra használhatók a menedzserek számára a pozitív és negatív trendjekről az egyes ügyfelekre és termékekre nézve. Ezenkívül a diagramok összehasonlítják a különböző termékkategóriák és ügyfélcsoportok bevételét és jövedelmezőségét egymással. Ezek segítségével a kategória- és regionális vezetők azonosíthatják a lemaradókat és a vezetőket. Végül pedig egy átfogó jelentés egymás mellé rendezi az egyéni ügyfelek bevételét és és a fedezeti mutatót. Ez a számlavezetők számára egy adatvédelemmel ellátott alapot biztosít, hogy értékesítési és marketingerőfeszítéseiket az egyes ügyfelek profiljához igazítsák. 
+A jelentések kiemelik a bevételek és a profitnövekedés időbeli változásait. Ezért a jelentések riasztásra használhatók a menedzserek számára a pozitív és negatív trendjekről az egyes ügyfelekre és termékekre nézve. Ezenkívül a diagramok összehasonlítják a különböző termékkategóriák és ügyfélcsoportok bevételét és jövedelmezőségét egymással. Ezek segítségével a kategória- és regionális vezetők azonosíthatják a lemaradókat és a vezetőket. Végül pedig egy átfogó jelentés egymás mellé rendezi az egyéni ügyfelek bevételét és a fedezeti mutatót. Ez a számlavezetők számára egy adatvédelemmel ellátott alapot biztosít, hogy értékesítési és marketingerőfeszítéseiket az egyes ügyfelek profiljához igazítsák.
 
 Az **Értékesítési és a jövedelmezőségi teljesítmény** tartalom a következő módokon teszi lehetővé az értékesítési vezetők számára az értékesítési teljesítmény elemzését:
 
--   Bevétel, éves (ügyfélkategória és egyedi ügyfelek, értékesítési kategóriák, egyedi termékek és földrajzi adatok szerint)
--   Bevételváltozás, évről évre (az ügyfélkör és az értékesítési kategóriák szerint)
+- Bevétel, éves (ügyfélkategória és egyedi ügyfelek, értékesítési kategóriák, egyedi termékek és földrajzi adatok szerint)
+- Bevételváltozás, évről évre (az ügyfélkör és az értékesítési kategóriák szerint)
 
 A jövedelmezőség elemzése a következő módokon történhet:
 
--   Bruttó nyereség és fedezeti mutató (ügyfélcsoportok és termékértékesítési kategóriák szerint)
--   Bruttó nyereségváltozás, évről évre
--   Ügyfél jövedelmezősége (bevétel és bruttó nyereség szerint)
+- Bruttó nyereség és fedezeti mutató (ügyfélcsoportok és termékértékesítési kategóriák szerint)
+- Bruttó nyereségváltozás, évről évre
+- Ügyfél jövedelmezősége (bevétel és bruttó nyereség szerint)
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom az **Értékesítési és jövedelmezőségi teljesítmény** oldalon látható (**Értékesítés és marketing** > **Lekérdezések és jelentések** > **Értékesítési teljesítményelemzés** > **Értékesítési és jövedelmezőségi teljesítmény**). 
+Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom az **Értékesítési és jövedelmezőségi teljesítmény** oldalon látható (**Értékesítés és marketing** \> **Lekérdezések és jelentések** \> **Értékesítési teljesítményelemzés** \> **Értékesítési és jövedelmezőségi teljesítmény**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom tartalmaz egy jelentést, amely metrikák készletéből áll. Ezek a metrikák mozaikok, táblázatok és diagramok formájában jelennek meg. Az alábbi táblázatban a tartalom megjelenítési formáinak áttekintése található.
@@ -77,19 +77,18 @@ Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom 
 
 \* Erre az évre és az előző évre eső bevétel és növekedés értékesítési kategória szerint.
 
-
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
-Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom jelentésének feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md). 
+Az **Értékesítési és jövedelmezőségi teljesítmény** Power BI-tartalom jelentésének feltöltésére a következő adatok szolgálnak. Ezeket az adatokat az Entitástárban lebonyolított összesített mérések jelenítik meg. Az entitástár a Microsoft analitikai célokra optimalizált SQL-szerveradatbázisa. További tudnivalókért lásd: [Az entitástár és a Power BI integrációjának áttekintése](power-bi-integration-entity-store.md).
 
-A tartalom összesítő mértékek a következőkben rendelkezésre álló összesítő mértékek részhalmazát alkotják: Sales Cube in Microsoft Dynamics AX 2012 és Microsoft Dynamics AX 2012 R3. A kocka összesítő mértékeinek előkészítéséhez az entitástárban, a mértékeket központilag telepíthetővé kell tenni. További információért lásd a következő blogbejegyzést az összesítő mértékek előkészítésének eljárásáról az entitástárban: [A Power BI és az entitástár integrálása a Dynamics programban](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+A tartalom összesítő mértékek a következőkben rendelkezésre álló összesítő mértékek részhalmazát alkotják: Sales Cube in Microsoft Dynamics AX 2012 és Microsoft Dynamics AX 2012 R3. A kocka összesítő mértékeinek előkészítéséhez az entitástárban, a mértékeket központilag telepíthetővé kell tenni. További információért lásd a következő blogbejegyzést az összesítő mértékek előkészítésének eljárásáról az entitástárban: [A Power BI és az entitástár integrálása a Dynamics programban](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 A következő kulcsfontosságú összesítő mértékek közvetlenül a számla sorai entitásból érhetők el, és a tartalom alapjául szolgálnak.
 
-| Entitás        | Kulcs összesítő mértékek                   | Adatforrás a Dynamics 365 szolgáltatáshoz                    | Mező                                        | Leírás                                   |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
-| Számlasorok | Bevétel                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Összeg a könyvelési pénznemben.            |
-|               | Eladott áruk beszerzési értéke                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | A költségösszeg és a helyesbítés összege.    |
-|               | Jutaléksor összege – könyvelési pénznem | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | A jutalék összege a könyvelési pénznemben. |
+| Entitás        | Kulcs összesítő mértékek                   | Adatforrás a Dynamics 365 szolgáltatáshoz | Mező                                        | Leírás                                       |
+|---------------|----------------------------------------------|------------------------------|----------------------------------------------|---------------------------------------------------|
+| Számlasorok | Bevétel                                      | CustInvoiceTrans             | SUM(LineAmountMST)                           | Összeg a könyvelési pénznemben.            |
+|               | Eladott áruk beszerzési értéke                           | InventTrans                  | SUM(CostAmountPosted + CostAmountAdjustment) | A költségösszeg és a helyesbítés összege.    |
+|               | Jutaléksor összege – könyvelési pénznem | CustInvoiceTrans             | SUM(CommissAmountMST)                        | A jutalék összege a könyvelési pénznemben. |
 
 A következő táblázat azt mutatja, hogyan használjuk a Számlasorok entitásának fő összesített mértékeit számos számított mérték létrehozására a tartalom adathalmazában.
 

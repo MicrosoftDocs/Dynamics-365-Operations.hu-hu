@@ -26,6 +26,8 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="vat-recovery-in-expense-management"></a>Áfa-visszaigénylés a Költséggazdálkodás modulban
 
+[!include [banner](../includes/banner.md)]
+
 Ha visszatérítést szeretne kapni az erre jogosult általános forgalmi adó (áfa) tranzakciók után, a vállalatnak vagy szervezetnek pontos adatokat kell azonosítania, gyűjtenie, ellenőriznie és elküldenie. Ez a folyamat több feladatokból áll, és a vállalat méretétől függően több alkalmazottat vagy szerepkört tartalmazhat.
 
 Áfa-visszaigényléshez a Költséggazdálkodás modulban a következő előfeltételeket kell teljesíteni:

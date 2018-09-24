@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5bc021ce9f0835f2eda310ef7818c9bc9be749f2
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,7 +36,7 @@ Lássunk egy példát, amelyben egy Excel-fájl szerepel két munkalappal, amely
 
 Ha a második entitást, a **Raktárakat** a **Fájl hozzáadása** képernyő elhagyása nélkül adjuk hozzá, a munkalap-keresés lehetővé teszi a **Raktárak** munkalap hozzáadását anélkül, hogy újra fel kellene tölteni a fájlt. Csak akkor kellene új fájlt feltölteni, ha a **Raktárak** adatai egy másik fájlban lennének.
 
-![Több munkalap](./media/AddFileMultipleWorkSheets.png) 
+![Több munkalap](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>A munkalap és az entitás közötti megfeleltetés kijavítása
 
@@ -51,5 +51,4 @@ Azokban az esetekben, amikor ugyanannak a fájlnak egy új verzióját, vagy egy
 ## <a name="upload-a-file-using-run-project"></a>Fájl feltöltése a Projekt futtatása lehetőséggel
 
 Egy importálási projekt végrehajtásához feltölthet egy Excel-fájlt a **Projekt futtatása** funkció használatával. Ügyelnie kell arra, hogy csak olyan fájlokat töltsön fel, amelyek ugyanazokat a munkalapokat tartalmazzák, mint a meglévő leképezések az adatentitásokhoz az adatprojektben. Ha egy munkalap nem található az újonnan feltöltött fájlban, a rendszer hibaüzenetet jelenít meg, és az importálás leáll. Ha egy entitás esetében módosítani kell a hozzárendelést a munkalaphoz, akkor az adatprojektben a hozzárendeléseket először frissíteni kell az adatprojektből, mielőtt a fájlt használná **Projekt futtatása** funkcióban.
-
 

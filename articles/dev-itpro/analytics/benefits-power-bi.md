@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,13 +39,12 @@ A **Juttatások** Power BI-tartalom a **Juttatáskezelés** munkaterületen jele
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó jelentések
 A **Juttatások** Power BI-tartalomban szereplő jelentések táblázatokkal és diagramokkal jelenítenek meg információkat. Az alábbi táblázatban található ezeknek a jelentéseknek az ismertetése.
 
-| Jelentés                       | Tartalom                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Juttatás bejegyzése – áttekintés  | A leggyakrabban és legritkábban regisztrált csomag, alkalmazottcsoport szerinti regisztráció és kiválasztott lehetőségek a juttatási csomagnál |
-| Alkalmazotti juttatások            | Alkalmazotti részvétel kijelölt juttatás alapján                                                        |
-                                                                                             
-Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
+| Jelentés                      | Tartalom                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Juttatás bejegyzése – áttekintés | A leggyakrabban és legritkábban regisztrált csomag, alkalmazottcsoport szerinti regisztráció és kiválasztott lehetőségek a juttatási csomagnál |
+| Alkalmazotti juttatások           | Alkalmazotti részvétel kijelölt juttatás alapján                                                        |
 
+Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozására és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 A következő adatokkal tölthetők ki a jelentések a **Juttatások** Power BI-tartalomban. Ez a táblázat megjeleníti azokat az entitásokat, amelyeken a tartalom alapul.
@@ -72,6 +71,4 @@ A következő adatokkal tölthetők ki a jelentések a **Juttatások** Power BI-
 | Alkalmazott neve            | Keresztnév, vezetéknév és teljes név                                                                       | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
 | Alkalmazott beosztása           | Cím és szolgálati idő dátuma                                                                                   | Jelenlegi kompenzáció, Jelenlegi alkalmazott, Felmondott alkalmazott, Alkalmazotti trend |
 | Alkalmazotti trend           | Túlórázó dolgozók, létszám, vállalat és beosztás                                                        | Vállalat, Kompenzáció, Földrajzi hely, Alkalmazott neve, Közvetlen felettes, Naptár ennyi nappal később, Dátum, Alkalmazott beosztása, Demográfia, Alkalmazás, Munkakör, Juttatások |
-
-
 

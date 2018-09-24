@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/09/2018
 
 A **Kezelési költség** Microsoft Power BI-tartalom készletkönyvelők, valamint a szervezeten belül a készletekért és a folyamatban lévő munkákért felelős vagy ez iránt érdeklődő, valamint elszámolóár-különbözetek elemzésével foglalkozó szakemberek számára készült.
 
-> [!Note]
+> [!NOTE]
 > A jelen témakörben bemutatott **Kezelési költség** Power BI tartalom a Dynamics 365 for Finance and Operations 8.0 verziójára vonatkozik.
 > 
 > A Power BI **költségkezelési** tartalmi csomag már elavult - az AppSource oldalon érhető el. Az értékcsökkenéssel kapcsolatos további tudnivalókat lásd: [Power BI tartalmi csomagok elérhetők az AppSource-on](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -171,7 +171,7 @@ Az alábbi táblázatokban megtalálható a **Költségkezelés** Power BI-tarta
 |                                         | A legjobb 10 erőforrás kedvezőtlen termelési különbözet szerint  |
 |                                         | A legjobb 10 erőforrás kedvező termelési különbözet szerint    |
 
-### <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
+## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 
 A **Kezelési költség** Power BI-tartalom jelentési oldalainak adatai a Microsoft Dynamics 365 for Finance and Operations rendszerből származnak. Ezek az adatok az entitástárban előkészített összesített mérések formájában jelennek meg - az entitástár egy elemzési célra optimalizált Microsoft SQL Server-adatbázis. További tudnivalókért lásd: [A Power BI integrációja az entitástárral](power-bi-integration-entity-store.md).
 
@@ -188,26 +188,25 @@ Az alábbi táblázat bemutatja a legfontosabb számított mértékeket a Power 
 
 | Méret                            | Számítás |
 |------------------------------------|-------------|
-| Nyitó egyenleg                  | Nyitó egyenleg = [Záró egyenleg]-[Nettó változás] |
-| Nyitó egyenleg menny.             | Nyitó egyenleg menny. = [Záró egyenleg menny.]-[Nettó változás menny.] |
-| Záró egyenleg                     | Záró egyenleg = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| Záró egyenleg menny.                | Záró egyenleg menny. = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| Nettó változás                         | Nettó változás = SUM([AMOUNT]) |
-| Nettó változás menny.                    | Nettó változás menny. = SUM([QTY]) |
-| Készletforgalom aránya összegenként | Készletforgalom aránya összegenként = if(OR([Készlet átlagos egyenlege] \<= 0, [Értékesített vagy felhasznált készlet problémák] \>= 0), 0, ABS([Értékesített vagy felhasznált készlet problémák])/[Készlet átlagos egyenlege]) |
-| Készlet átlagos egyenlege          | Készlet átlagos egyenlege = (([Záró egyenleg] + [Nyitó egyenleg]) / 2) |
-| Napok száma, amióta a készlet rendelkezésre áll             | Napok száma, amióta a készlet rendelkezésre áll = 365 / CostObjectStatementEntries[Készletforgalom aránya összegenként] |
-| Készlet pontossága                 | Készletpontosság összeg alapján = IF([Záró egyenleg] \<= 0, IF(OR([Készlet leltározott mennyisége] \<\> 0, [Záró egyenleg] \< 0), 0, 1), MAX(0, ([Záró egyenleg] - ABS([Készlet leltározott mennyisége]))/[Záró egyenleg])) |
+| Nyitó egyenleg                  | Nyitó egyenleg = \[[Záró egyenleg\]-\[Nettó változás\]] |
+| Nyitó egyenleg menny.             | Nyitó egyenleg menny. = \[Záró egyenleg menny.\]-\[Nettó változás menny.\] |
+| Záró egyenleg                     | Záró egyenleg = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| Záró egyenleg menny.                | Záró egyenleg menny. = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Nettó változás                         | Nettó változás = SUM(\[AMOUNT\]) |
+| Nettó változás menny.                    | Nettó változás menny. = SUM(\[QTY\]) |
+| Készletforgalom aránya összegenként | Készletforgalom aránya összegenként = if(OR(\[Készlet átlagos egyenlege\] \<= 0, \[Értékesített vagy felhasznált készlet problémák\] \>= 0), 0, ABS(\[Értékesített vagy felhasznált készlet problémák\])/\[Készlet átlagos egyenlege\]) |
+| Készlet átlagos egyenlege          | Készlet átlagos egyenlege = ((\[Záró egyenleg\] + \[Nyitó egyenleg\]) / 2) |
+| Napok száma, amióta a készlet rendelkezésre áll             | Napok száma, amióta a készlet rendelkezésre áll = 365 / CostObjectStatementEntries\[Készletforgalom aránya összegenként\] |
+| Készlet pontossága                 | Készletpontosság összeg alapján = IF(\[Záró egyenleg\] \<= 0, IF(OR(\[Készlet leltározott mennyisége\] \<\> 0, \[Záró egyenleg\] \< 0), 0, 1), MAX(0, (\[Záró egyenleg\] - ABS(\[Készlet leltározott mennyisége\]))/\[Záró egyenleg\])) |
 
 Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőként szolgálnak az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
 
 
-|                         Entitás                          |             Példák az attribútumok              |
+| Entitás                                                  | Példák az attribútumok                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        Termékek                         | Termékszám, Termék neve, Egység, Cikkcsoportok |
-| Kategóriahierarchiák (Költségkezelői szerepkörhöz rendelve) |       Kategóriahierarchia, Kategória szintje        |
-|                     Jogi személyek                      |               Jogi személyek nevei                |
-|                    Pénzügyi naptárak                     |  Pénzügyi naptár, év, negyedév, időszak, hónap  |
-|                          Telephely                           |        Azonosító, név, cím, állam, ország        |
-
+| Termékek                                                | Termékszám, Termék neve, Egység, Cikkcsoportok |
+| Kategóriahierarchiák (Költségkezelői szerepkörhöz rendelve) | Kategóriahierarchia, Kategória szintje              |
+| Jogi személyek                                          | Jogi személyek nevei                              |
+| Pénzügyi naptárak                                        | Pénzügyi naptár, év, negyedév, időszak, hónap   |
+| Telephely                                                    | Azonosító, név, cím, állam, ország               |
 

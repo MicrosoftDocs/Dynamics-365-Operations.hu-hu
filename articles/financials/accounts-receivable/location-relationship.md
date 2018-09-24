@@ -28,6 +28,8 @@ ms.lasthandoff: 06/12/2018
 
 # <a name="add-location-roles-and-party-relationship-types"></a>Helyszerepekhez és felekhez tartozó kapcsolattípusok hozzáadása 
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="add-location-roles"></a>Hely szerepköreinek hozzáadása
 
 Két módszer áll rendelkezésre új helyszerepkör hozzáadására a cím és kapcsolattartási adatokhoz:

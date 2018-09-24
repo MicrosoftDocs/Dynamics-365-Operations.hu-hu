@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,34 @@ Ez a témakör a **Munkaerő-mutatók** Microsoft Power BI-tartalmat ismerteti. 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
 A **Munkaerő-mutatók** Power BI-tartalom a **Személyzetkezelés** munkaterületen jelenik meg a következő termékek valamelyikének használatakor:
 
-- Microsoft Dynamics 365 for Finance and Operations 
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 Az alábbi táblázat felsorolja az egyes jelentésekben megjelenő mutatókat.
 
-| Jelentés                                           | Mutatók                                                                                                                                                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Személyzeti mutatók                                   | További jelentések összefoglalása                                                                                                                           |
-| Számláláselemzés – Vállalat, Részleg, Hely | Számlálás vállalat alapján, számlálás részleg alapján, számlálás hely alapján, illetve teljes számlálás                                                                                                                           |
-| Számláláselemzés – munkakör, lépés, vezető            | Számlálás munkakör alapján, számlálás lépés alapján, számlálás vezető alapján, illetve teljes számlálás                                                                                                                                      |
-| Számlálás trendelemzése                         | Számlálás az idei évre vonatkozóan és az elmúlt évre vonatkozóan vállalat szerint, illetve görgetett számlálás az elmúlt 12 hónapra vonatkozóan                                                                                                                        |
+| Jelentés                                           | Mutatók |
+|--------------------------------------------------|---------|
+| Személyzeti mutatók                                   | További jelentések összefoglalása |
+| Számláláselemzés – Vállalat, Részleg, Hely | Számlálás vállalat alapján, számlálás részleg alapján, számlálás hely alapján, illetve teljes számlálás |
+| Számláláselemzés – munkakör, lépés, vezető            | Számlálás munkakör alapján, számlálás lépés alapján, számlálás vezető alapján, illetve teljes számlálás |
+| Számlálás trendelemzése                         | Számlálás az idei évre vonatkozóan és az elmúlt évre vonatkozóan vállalat szerint, illetve görgetett számlálás az elmúlt 12 hónapra vonatkozóan |
 | FTE-elemzés                                     | Teljes teljes munkaidőssel egyenértékű dolgozók (FTE), teljes munkaidőssel egyenértékű dolgozók hozzárendelve összesen, teljes munkaidőssel egyenértékű dolgozók részlegenként, teljes munkaidőssel egyenértékű dolgozók az elmúlt 12 hónapban és teljes munkaidőssel egyenértékű dolgozók feladatok szerint |
 | Munkaerő-demográfia                           | Számlálás életkor és nem szerint, számlálás etnikai hovatartozás szerint, számlálás veterán állapot szerint, számlálás családi állapot szerint, a nappalis diákok száma, átlagos szolgálati idő, átlagos életkor, a női és férfi alkalmazottak aránya, valamint az alkalmazottak által beszélt nyelvek |
-| Pozícióelemzés                                | Nyitott beosztások részleg szerint, betöltésre váró beosztások, aktív és inaktív beosztások, illetve beosztások részleg szerint                                                                                                   |
-| Lemorzsolódáselemzés                               | Lemorzsolódás idén és tavaly, lemorzsolódás, a kilépő alkalmazottak életkor és nem szerint, a távozó személyek átlagos szolgálati ideje, ebben a hónapban kilépő alkalmazottak, illetve távozó személyek ok szerint                                                                   |
-| Személyek részleg szerint                             | Alkalmazottak személyzeti számmal részleg, pozíció, valamint a hozzárendelés kezdő és befejező dátuma szerint                                                                                                                       |
-| Ledolgozott szolgálati idő elemzése                               | Átlagos szolgálati idő, ledolgozott átlagos évek száma vállalat és szolgálati idő listája szerint                                                                                                                                                              |
-| Alkalmazotti évfordulók                           | Évfordulók ebben a hónapban, évfordulók a következő hónap, alkalmazottak ledolgozott évek szerint és évfordulók, szolgálati évek száma részleg szerint                                                                                                                                                                    |
-| Alkalmazottak születésnapjai                               | Születésnapok ebben a hónapban, születésnapok a következő hónapban, alkalmazotti születésnapok, valamint születésnapok hónap és részleg szerint                                                                                                                                                                    |
-| Tömeges felvételi projektek                               | Tömeges felvételi projektek összesen, tömeges felvételi projektek állapot szerint, tömeges felvételi projektek részleg és tulajdonos szerint, tömeges felvételi projektek munkakörönként, valamint tömeges felvételi projektek                                                                                                                                                                    |
+| Pozícióelemzés                                | Nyitott beosztások részleg szerint, betöltésre váró beosztások, aktív és inaktív beosztások, illetve beosztások részleg szerint |
+| Lemorzsolódáselemzés                               | Lemorzsolódás idén és tavaly, lemorzsolódás, a kilépő alkalmazottak életkor és nem szerint, a távozó személyek átlagos szolgálati ideje, ebben a hónapban kilépő alkalmazottak, illetve távozó személyek ok szerint |
+| Személyek részleg szerint                             | Alkalmazottak személyzeti számmal részleg, pozíció, valamint a hozzárendelés kezdő és befejező dátuma szerint |
+| Ledolgozott szolgálati idő elemzése                               | Átlagos szolgálati idő, ledolgozott átlagos évek száma vállalat és szolgálati idő listája szerint |
+| Alkalmazotti évfordulók                           | Évfordulók ebben a hónapban, évfordulók a következő hónap, alkalmazottak ledolgozott évek szerint és évfordulók, szolgálati évek száma részleg szerint |
+| Alkalmazottak születésnapjai                               | Születésnapok ebben a hónapban, születésnapok a következő hónapban, alkalmazotti születésnapok, valamint születésnapok hónap és részleg szerint |
+| Tömeges felvételi projektek                               | Tömeges felvételi projektek összesen, tömeges felvételi projektek állapot szerint, tömeges felvételi projektek részleg és tulajdonos szerint, tömeges felvételi projektek munkakörönként, valamint tömeges felvételi projektek |
 
 Az e jelentésekben szereplő diagramokat és csempéket szűrheti, a diagramokat és csempéket pedig rögzítheti az irányítópulton. A szűréssel és a Power BI-n történő rögzítéssel kapcsolatos információkért lépjen az [Irányírópult létrehozása és konfigurálása](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards) lehetőségre.
 
 Ügyeljen arra, hogy azt a **Munkaerő-mutatók** Power BI-tartalmat töltse le, amely a Microsoft Dynamics 365 rendszer ön által használt verziójára vonatkozik.
 
->[!NOTE]
->A Lifecycle Services szolgáltatásban rendelkezésre álló .pbix-fájlok csak a Finance and Operations szolgáltatásra érvényesek.
+> [!NOTE]
+> A Lifecycle Services szolgáltatásban rendelkezésre álló .pbix-fájlok csak a Finance and Operations szolgáltatásra érvényesek.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Adatmodell, illetve entitások ismertetése
 A következő táblázat mutatja az entitásokat, amelyeken a tartalom alapul.
@@ -88,6 +88,4 @@ A következő táblázat mutatja az entitásokat, amelyeken a tartalom alapul.
 | Alkalmazotti trend           | Túlórázó dolgozók, létszám, vállalat és beosztás                                 | Vállalat, Földrajzi elhelyezkedés, Alkalmazott neve, Közvetlen felettes, Naptáreltolás, Dátum, Alkalmazott beosztása, Demográfia, Alkalmazás, Feladat |
 | Tömeges felvételi projekt        | Tömeges felvételi projektek, projekt tulajdonosa, valamint projekt állapota                     | Vállalat, tömeges felvétel sora |
 | Tömeges felvétel sora           | Részleg, foglalkoztatási típus és beosztás                                           | Dátum, munkakör, tömeges felvételi projekt |
-
-
 

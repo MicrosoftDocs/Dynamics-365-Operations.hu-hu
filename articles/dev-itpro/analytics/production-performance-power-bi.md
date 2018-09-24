@@ -17,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
 ms.contentlocale: hu-hu
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -43,7 +43,7 @@ Ez a Power BI-tartalom lehetővé teszi a termelési eltérések elemzését is.
 A **Termelési teljesítmény** Power BI-tartalom a termelési rendelésekből és a kötegelt rendelésekből származó adatokat tartalmazza. A jelentések nem tartalmazzák a kanban termelésekkel kapcsolatos adatokat.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI-tartalom elérése
-A **Termelési teljesítmény** Power BI-tartalom a **Termelési teljesítmény** oldalon látható (**Gyártásvezérlés** > **Lekérdezések és jelentések** > **Termelési teljesítmény elemzése** > **Termelési teljesítmény**). 
+A **Termelési teljesítmény** Power BI-tartalom a **Termelési teljesítmény** oldalon látható (**Gyártásvezérlés** \> **Lekérdezések és jelentések** \> **Termelési teljesítmény elemzése** \> **Termelési teljesítmény**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>A Power BI-tartalomhoz tartozó metrikák
 
@@ -51,8 +51,8 @@ A **Termelési teljesítmény** Power BI-tartalom jelentési oldalak készletét
 
 Az alábbi táblázat tartalmazza a tartalomban szereplő megjelenítéseket.
 
-| Jelentéslap                                | Diagramok                                               | Mozaik |
-|--------------------------------------------|------------------------------------------------------|-------|
+| Jelentéslap                                | Diagramok | Mozaik |
+|--------------------------------------------|--------|-------|
 | Termelési teljesítmény                     | <ul><li>Termelési sorok száma dátum szerint</li><li>Termelések száma termék és cikkcsoport szerint</li><li>Tervezett termelések száma dátum szerint</li><li>A legalsó 10 termék időben és teljes egészében teljesítve</li></ul> | <ul><li>Összes rendelés</li><li>Időben és teljes egészében teljesítve százalékban kifejezve</li><li>Nem teljes százalékban kifejezve</li><li>Korán százalékban kifejezve</li><li>Késve százalékban kifejezve</li></ul> |
 | Hibák termékek szerint                         | <ul><li>Hibás ráta (db/hó) dátum szerint</li><li>Hibás ráta (db/hó) termékenként és cikkcsoportonként</li><li>Előállított mennyiség dátum szerint</li><li>Első 10 termék tényleges arány szerint</li></ul> | <ul><li>Hibás ráta (db/hó)</li><li>Hibás mennyiség</li><li>Összes mennyiség</li></ul> |
 | Hibatrend termékek szerint                   | Hibaarány (db/hó) az előállított mennyiség szerint | Hibaarány (db/hó) |
@@ -88,35 +88,35 @@ A következő táblázat azt mutatja, hogyan használjuk a fő összesített mé
 
 | Méret                  | A mérőszám kiszámításának módja |
 |--------------------------|-------------------------------|
-| Termelési különbözet százalékban kifejezve   | SUM('Termelési különbözet'[Termelési különbözet]) / SUM('Termelési különbözet'[Becsült költség]) |
+| Termelési különbözet százalékban kifejezve   | SUM('Termelési különbözet'\[Termelési különbözet\]) / SUM('Termelési különbözet'\[[Becsült költség\]]) |
 | Összes tervezett rendelés       | COUNTROWS('Tervezett termelési rendelés') |
-| Korán                    | COUNTROWS(FILTER('Tervezett termelési rendelés', 'Tervezett termelési rendelés' [Ütemezett befejezési dátum] \< 'Tervezett termelési rendelés' [Igénylés dátuma])) |
-| Késve                     | COUNTROWS(FILTER('Tervezett termelési rendelés', 'Tervezett termelési rendelés' [Ütemezett befejezési dátum] \> 'Tervezett termelési rendelés' [Igénylés dátuma])) |
-| Időben                  | COUNTROWS(FILTER('Tervezett termelési rendelés', 'Tervezett termelési rendelés' [Ütemezett befejezési dátum] = 'Tervezett termelési rendelés' [Igénylés dátuma])) |
-| Időben százalékban kifejezve                | IF (Tervezett termelési rendelés' [Időben] \<\> 0, 'Tervezett termelési rendelés' [Időben], IF ('Tervezett termelési rendelés' [Összes tervezett rendelés] \<\> 0, 0, BLANK())) / 'Tervezett termelési rendelés' [Összes tervezett rendelés] |
-| Befejezve                | COUNTROWS(FILTER ('Termelési rendelés', 'Termelési rendelés' [RAF'ed van] = IGAZ)) |
-| Hibás ráta (db/hó)     | IF ('Termelési rendelés' [Összmennyiség] = 0, BLANK(), (SUM('Termelési rendelés' [Hibás mennyiség]) / 'Termelési rendelés' [Összmennyiség]) \* 1000000) |
-| Késleltetett termelési arány  | 'Termelési rendelés" [Késve \#] / 'Termelési rendelés' [Befejeződött] |
-| Korán és teljes egészében          | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés' [Teljes] = IGAZ & & 'Termelési rendelés' [Korai] = IGAZ)) |
-| Korán \#                 | COUNTROWS(FILTER ('Termelési rendelés', 'Termelési rendelés' [Korai] = IGAZ)) |
-| Korán százalékban kifejezve                  | IFERROR (IF('Termelési rendelés' [Korai \#] \<\> 0, 'Termelési rendelés' [Korai \#], IF ('Termelési rendelés' [Összes rendelés] = 0, BLANK(), 0)) / 'Termelési rendelés' [Összes rendelés], BLANK()) |
-| Nem teljes               | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés' [Teljes] = IGAZ & & 'Termelési rendelés' [Korai] = IGAZ)) |
-| Nem teljes százalékban kifejezve             | IFERROR (IF('Termelési rendelés' [Nem teljes ] \<\> 0, 'Termelési rendelés' [Nem teljes ], IF ('Termelési rendelés' [Összes rendelés] = 0, BLANK(), 0)) / 'Termelési rendelés' [Összes rendelés], BLANK()) |
-| Késleltetve van               | 'Termelési rendelés'[RAF'ed van] = IGAZ && 'Termelési rendelés' [Késleltetett érték] = 1 |
-| Korai                 | 'Termelési rendelés'[RAF'ed van] = IGAZ && 'Termelési rendelés' [Késés napjainak száma] \< 0 |
-| Teljes egészében               | 'Termelési rendelés' [Hibátlan mennyiség] \>'Termelési rendelés' = [Ütemezett mennyiség] |
-| RAF'ed van                | 'Termelési rendelés'[Termelési állapot értéke] = 5 \|\| 'Termelési rendelés'[Termelési állapot értéke] = 7 |
-| Késve és teljes egészében           | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés' [Teljes] = IGAZ & & 'Termelési rendelés' [Késik] = IGAZ)) |
-| Késve \#                  | COUNTROWS(FILTER ('Termelési rendelés', 'Termelési rendelés' [Késik] = IGAZ)) |
-| Késve százalékban kifejezve                   | IFERROR (IF('Termelési rendelés' [Késve \#] \<\> 0, 'Termelési rendelés' [Késve \#], IF ('Termelési rendelés' [Összes rendelés] = 0, BLANK(), 0)) / 'Termelési rendelés' [Összes rendelés], BLANK()) |
-| Időben és teljes egészében        | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés' [Teljes] = TRUE & & 'Termelési rendelés' [Késik] = FALSE & & 'Termelési rendelés' [Korai] = FALSE)) |
-| Időben és teljes egészében teljesítve százalékban kifejezve      | IFERROR( IF('Termelési rendelés' [Időben és teljes egészében] \<\> 0, 'Termelési rendelés' [Időben és teljes egészében], IF ('Termelési rendelés' [Befejeződött] = 0, BLANK(), 0)) / 'Termelési rendelés' [Befejeződött], BLANK()) |
+| Korán                    | COUNTROWS(FILTER('Tervezett termelési rendelés', 'Tervezett termelési rendelés'\[Ütemezett befejezési dátum\] \< 'Tervezett termelési rendelés'\[Igénylés dátuma\])) |
+| Késve                     | COUNTROWS(FILTER('Tervezett termelési rendelés', 'Tervezett termelési rendelés'\[Ütemezett befejezési dátum\] \> 'Tervezett termelési rendelés'\[Igénylés dátuma\])) |
+| Időben                  | COUNTROWS(FILTER('Tervezett termelési rendelés', 'Tervezett termelési rendelés'\[Ütemezett befejezési dátum\] = 'Tervezett termelési rendelés'\[Igénylés dátuma\])) |
+| Időben százalékban kifejezve                | IF (Tervezett termelési rendelés'\[Időben\] \<\> 0, 'Tervezett termelési rendelés'\[Időben\], IF ('Tervezett termelési rendelés'\[Összes tervezett rendelés\] \<\> 0, 0, BLANK()) ) / 'Tervezett termelési rendelés'\[Összes tervezett rendelés\] |
+| Befejezve                | COUNTROWS(FILTER ('Termelési rendelés', 'Termelési rendelés'\[RAF'ed van\] = IGAZ)) |
+| Hibás ráta (db/hó)     | IF ('Termelési rendelés'\[Összmennyiség\] = 0, BLANK(), (SUM('Termelési rendelés'\[Hibás mennyiség\]) / 'Termelési rendelés'\[Összmennyiség\]) \* 1000000) |
+| Késleltetett termelési arány  | 'Termelési rendelés'\[Késve \#\] / 'Termelési rendelés'\[Befejeződött\] |
+| Korán és teljes egészében          | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés'\[Teljes\] = IGAZ & & 'Termelési rendelés'\[Korai\] = IGAZ)) |
+| Korán \#                 | COUNTROWS(FILTER ('Termelési rendelés', 'Termelési rendelés'\[Korai\] = IGAZ)) |
+| Korán százalékban kifejezve                  | IFERROR (IF('Termelési rendelés'\[Korai \#\] \<\> 0, 'Termelési rendelés'\[Korai \#\], IF ('Termelési rendelés'\[Összes rendelés\] = 0, BLANK(), 0)) / 'Termelési rendelés'\[Összes rendelés\], BLANK()) |
+| Hiányos               | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés'\[Teljes\] = IGAZ & & 'Termelési rendelés'\[Korai\] = IGAZ)) |
+| Nem teljes százalékban kifejezve             | IFERROR (IF('Termelési rendelés'\[Nem teljes\] \<\> 0, 'Termelési rendelés'\[Nem teljes\], IF ('Termelési rendelés'\[Összes rendelés\] = 0, BLANK(), 0)) / 'Termelési rendelés'\[Összes rendelés\], BLANK()) |
+| Késleltetve van               | 'Termelési rendelés'\[RAF'ed van\] = IGAZ && 'Termelési rendelés'\[Késleltetett érték\] = 1 |
+| Korai                 | 'Termelési rendelés'\[RAF'ed van\] = IGAZ && 'Termelési rendelés'\[Késés napjainak száma\] \< 0 |
+| Teljes egészében               | 'Termelési rendelés'\[Hibátlan mennyiség\] \>= 'Termelési rendelés'\[Ütemezett mennyiség\] |
+| RAF'ed van                | 'Termelési rendelés'\[Termelési állapot értéke\] = 5 \|\| 'Termelési rendelés'\[Termelési állapot értéke\] = 7 |
+| Késve és teljes egészében           | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés'\[Teljes\] = IGAZ & & 'Termelési rendelés'\[Késik\] = IGAZ)) |
+| Késve \#                  | COUNTROWS(FILTER ('Termelési rendelés', 'Termelési rendelés'\[Késik\] = IGAZ)) |
+| Késve százalékban kifejezve                   | IFERROR (IF('Termelési rendelés'\[Késve \#\] \<\> 0, 'Termelési rendelés'\[Késve \#\], IF ('Termelési rendelés'\[Összes rendelés\] = 0, BLANK(), 0)) / 'Termelési rendelés'\[Összes rendelés\], BLANK()) |
+| Időben és teljes egészében        | COUNTROWS (FILTER('Termelési rendelés', 'Termelési rendelés'\[Teljes\] = TRUE & & 'Termelési rendelés'\[Késik\] = FALSE & & 'Termelési rendelés'\[Korai\] = FALSE)) |
+| Időben és teljes egészében teljesítve százalékban kifejezve      | IFERROR( IF('Termelési rendelés'\[Időben és teljes egészében\] \<\> 0, 'Termelési rendelés'\[Időben és teljes egészében\], IF ('Termelési rendelés'\[Befejeződött\] = 0, BLANK(), 0)) / 'Termelési rendelés'\[Befejeződött\], BLANK()) |
 | Összes rendelés             | COUNTROWS('Termelési rendelés') |
-| Összes mennyiség           | SUM('Termelési rendelés'[Hibátlan mennyiség]) + SUM('Termelési rendelés'[Hibás mennyiség]) |
-| Hibaarány (db/hó)        | IF( 'Útvonal-tranzakciók'[Feldolgozott mennyiség] = 0, BLANK(), (SUM('Útvonal-tranzakciók'[Hibás mennyiség]) / 'Útvonal-tranzakciók[Feldolgozott mennyiség]) \* 1000000) |
-| Vegyes hibaarány (db/hó) | IF( 'Útvonal-tranzakciók'[Összes vegyes mennyiség] = 0, BLANK(), (SUM('Útvonal-tranzakciók'[Hibás mennyiség]) / 'Útvonal-tranzakciók[Összes vegyes mennyiség]) \* 1000000) |
-| Feldolgozott mennyiség       | SUM('Útvonal-tranzakciók [Hibátlan mennyiség]) + SUM('Útvonal-tranzakciók'[Hibás mennyiség]) |
-| Teljes vegyes mennyiség     | SUM('Termelési rendelés'[Hibátlan mennyiség]) + SUM('Útvonal-tranzakciók'[Hibás mennyiség]) |
+| Összes mennyiség           | SUM('Termelési rendelés'\[Hibátlan mennyiség\]) + SUM('Termelési rendelés'\[Hibás mennyiség\]) |
+| Hibaarány (db/hó)        | IF( 'Útvonal-tranzakciók'\[Feldolgozott mennyiség\] = 0, BLANK(), (SUM('Útvonal-tranzakciók'\[Hibás mennyiség\]) / 'Útvonal-tranzakciók\[Feldolgozott mennyiség\]) \* 1000000) |
+| Vegyes hibaarány (db/hó) | IF( 'Útvonal-tranzakciók'\[Összes vegyes mennyiség\] = 0, BLANK(), (SUM('Útvonal-tranzakciók'\[Hibás mennyiség\]) / 'Útvonal-tranzakciók\[Összes vegyes mennyiség\]) \* 1000000) |
+| Feldolgozott mennyiség       | SUM('Útvonal-tranzakciók'\[Hibátlan mennyiség\]) + SUM('Útvonal-tranzakciók'\[Hibás mennyiség\]) |
+| Teljes vegyes mennyiség     | SUM('Termelési rendelés'\[Hibátlan mennyiség\]) + SUM('Útvonal-tranzakciók'\[Hibás mennyiség\]) |
 
 Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőként szolgálnak az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
 
@@ -130,6 +130,4 @@ Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőké
 | Entitások                  | Azonosító és név                                                   |
 | Erőforrások                 | Erőforrás-azonosító, erőforrás neve, erőforrástípus és erőforráscsoport |
 | Termékek                  | Termékszám, termék neve, cikkazonosító és cikkcsoport         |
-
-
 
