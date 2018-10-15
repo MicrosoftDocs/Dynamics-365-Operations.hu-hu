@@ -3,7 +3,7 @@ title: "Eltávolított vagy elavult funkciók"
 description: "Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
-ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -41,6 +41,52 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > [!Note]
 > A Finance and Operations objektumaival kapcsolatban a [Technikai referenciajelentésekben](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) talál. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations egyes verzióiban.
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Kötegelt átviteli szabályok analitikus naplószámla bejegyzéseihez
+A szinkron átmozgatási módot megszüntetjük a főkönyvi paramétereknél.  A módnál csak az aszinkron és az ütemezett köteg marad mind átmozgatási lehetőség. 
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A szinkron beállítást a rendszer teljesítményére gyakorolt hatás miatt szüntetjük meg. |
+| **Felváltotta másik szolgáltatás?**   | A szinkron helyett az aszinkron és az ütemezett köteg beállítás használható.   |
+| **Érintett területek**         | Főkönyv, Kötelezettségek, Kinnlevőségek, Beszerzés, Költség    |
+| **Telepítési beállítás**              | Összes  |
+| **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete a 10.0-s verzió.|
+
+### <a name="electronic-reporting-for-russia"></a>Elektronikus jelentéskészítés Oroszország esetében
+Funkció a bevallások .txt és .xml fájlformátumainak konfigurálásához. 
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Helyére az elektronikus jelentéskészítés kerül. |
+| **Felváltotta másik szolgáltatás?**   | Igen. |
+| **Érintett területek**         | Főkönyv |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
+
+### <a name="financial-reports-generator-for-russia"></a>Pénzügyi jelentéskészítő Oroszország számára
+Eszköz az adatgyűjtemény elszámolás és adókimutatások céljából való beállításához, valamint annak érdekében, hogy XLS és DOC kimutatássablonokba exportálhassa az adatokat. Funkcionális részek: Adatok exportálása XLS és DOC jelentéssablonokba, lekérdezések, a rögzített kellékek eltávolításra kerülnek. 
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az eltávolított részek helyére az elektronikus jelentések kerülnek. |
+| **Felváltotta másik szolgáltatás?**   | Igen. A pénzügyi kimutatások beállításának kezelőfelülete használandó az adatgyűjtemény-szabályok főkönyvi számlál és adónyilvántartások általi beállítására. Adatok exportálása különböző fájltípusokba; a rögzített elemek és a lekérdezésszerű adatgyűjtési szabályok konfigurálása az elektronikus jelentésekben történik. |
+| **Érintett területek**         | Főkönyv. |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Külső szolgáltatók integrálása elektronikus jelentések kommunikációs csatornákon keresztül való küldéséhez Oroszország esetében
+A deklaráció elektronikus fájljait exportáló funkció, amely az exportálást egy mappába végzi, hogy továbbküldhesse az adatokat az elektronikus jelentések hivatalos szolgáltatóinak, akik visszaadják az állapotot.
+
+|   |  |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Helyére az elektronikus üzenetek konfigurálható funkciója kerül. |
+| **Felváltotta másik szolgáltatás?**   | Igen.  |
+| **Érintett területek**         | Főkönyv, Adó |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Eltávolítva a Dynamics 365 for Finance and Operations 8.1 20-ös platformfrissítéssel. |
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 15-ös platformfrissítéssel
 Nincsenek funkciók eltávolítva vagy elavulttá nyilvánítva ebben a kiadásban. A 15-ös platformfrissítés halmozott és tartalmazza a 13-as platformfrissítés, a 14-es platformfrissítés a 15-ös platformfrissítés új vagy módosított szolgáltatásait.

@@ -3,7 +3,7 @@ title: "Járulékos költség számítása"
 description: "Ez a témakör a járulékos költségek kiszámításának és allokálásának jellemző folyamatait írja le."
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 549e9b4b073a4e93dd3a1dd52dd6f43e7420a31b
+ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
+ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/05/2018
 
 ---
 
@@ -191,8 +191,7 @@ Bizonyos esetekben a költség egy része rögzített díj, a fennmaradó költs
 </tbody>
 </table>
 
-A költségműködéssel kapcsolatos részletes tudnivalókat lásd a Költségműködési irányelvekben. Kérjük, vegye figyelembe, hogy ez a témakör még nem készült el, de hamarosan megérkezik.)
-
+További információért lásd: [Költségviselkedési irányelv létrehozása egy költségellenőrző-egységhez](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).
 ### <a name="step-2-process-the-cost-distribution-calculation"></a>2. lépés: A kötségelosztásra vonatkozó számítás feldolgozása
 
 A költségfelosztást arra használhatja, hogy költségeket egy költségobjektumból egy vagy több más költségobjektumhoz rendelje a megfelelő felosztási bázis alkalmazásával. A költségelosztás és a költségek felosztása abban különbözik, hogy a költségelosztás mindig az eredeti költség elsődleges költségelemének szintjén történik.
@@ -263,7 +262,7 @@ Az alábbi táblázat azt az eredményt mutatja, amikor az áramfogyasztás a v�
 </tbody>
 </table>
 
-A rögzített költségeket egyenletesen kell elosztani az olyan egyéni költségobjektumoknál, amelyek villamos energiát fogyasztottak. Ezt az eredményt úgy érhetjük el, hogy a villamos energia statisztikai dimenziótagot egy képletfelosztási bázison használjuk: ((Villamos energia &gt; 0.00) Az alábbi táblázat azt az eredményt mutatja, amikor az áramfogyasztást a változó költségek felosztási alapjaként alkalmazzák.
+A rögzített költségeket egyenletesen kell elosztani az olyan egyéni költségobjektumoknál, amelyek villamos energiát fogyasztottak. Ezt az eredményt úgy érhetjük el, hogy a villamos energia statisztikai dimenziótagot egy képletfelosztási bázison használjuk: (Villamos energia &gt; 0.00) Az alábbi táblázat azt az eredményt mutatja, amikor az áramfogyasztást a változó költségek felosztási alapjaként alkalmazzák.
 
 <table>
 <thead>
@@ -430,7 +429,7 @@ A rögzített költségeket egyenletesen kell elosztani az olyan egyéni költs�
 </tbody>
 </table>
 
-Ha részletes információt szeretne a költségfelosztásról és a felosztási alapokról, lásd a Költségfelosztási irányelvet és a felosztási alapokat. Kérjük, vegye figyelembe, hogy ez a témakör még nem készült el, de hamarosan megérkezik.)
+További információért lásd: [Költségelosztási irányelv létrehozása egy költségellenőrző-egységhez](tasks/create-assign-cost-distribution-policy-cost-control-unit.md). 
 
 ### <a name="step-3-process-the-overhead-rate-calculation"></a>3. lépés: A járulékos költégek kiszámításának folyamata
 
@@ -612,13 +611,13 @@ Az alábbi táblázat azt az eredményt mutatja, amikor a HR-projekteket eloszt�
 <td>10001</td>
 <td>Villamos energia</td>
 <td>Változó költség</td>
-<td>10.00</td>
+<td>10,00</td>
 <td>2017. január 31.</td>
 </tr>
 </tbody>
 </table>
 
-A járulékos díj irányelvére vonatkozó részletes információkért lásd: A járulékos díj irányelvei és Felosztási bázisok. Kérjük, vegye figyelembe, hogy ez a témakör még nem készült el, de hamarosan megérkezik.)
+További információ: [Járulékosköltség-számítás végrehajtása](cost-rollup.md#perform-overhead-calculation).
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>4. lépés: A kötségfelosztásra vonatkozó számítás feldolgozása
 
@@ -725,7 +724,8 @@ A CC004 csomagolás költségobjektum több költségobjektumhoz is hozzájárul
 </tbody>
 </table>
 
-**Megjegyzés:** A Finance and Operations esetében a statisztikai mérések, például a termék gyártásához szükséges órák száma a forrásadatokból származhatnak. A statisztikai mérési szolgáltatókról szóló bővebb információkért lásd: Statisztikai mérték szolgáltatójának sablonjai. (Kérjük, vegye figyelembe, hogy ez a témakör még nem készült el, de hamarosan megérkezik.) Az alábbi táblázat azt az eredményt mutatja, amikor a HR-szolgáltatásokat a teljes költség (fix költség és változó költség) allokációs alapjaként alkalmazzák.
+> [!NOTE]
+> A Finance and Operations esetében a statisztikai mérések, például a termék gyártásához szükséges órák száma a forrásadatokból származhatnak. További információk: [Statisztikaimérték-szolgáltató sablon](statistical-measure-provider-template.md#statistical-measure-provider-template). Az alábbi táblázat azt az eredményt mutatja, amikor a HR szolgáltatásokat a teljes költség (fix költség és változó költség) allokációs alapjaként alkalmazzák.
 
 <table>
 <thead>
@@ -1412,7 +1412,7 @@ A pénzügyi könyvelésnél egy 10 000,00 értékű költséget adnak fel az el
 </table>
 
 > [!NOTE]
-> Ez a témakör azt mutatja meg, hogy egy elsődleges költségelem, az 10001 villamosenergia hogyan irányul a költségelemekhez. Emiatt ez a járulékos költség a szervezet legalsó szintjéig fel van osztva. Más szóval a legalsó szintű költségobjektumok viselik a költséget. Ha a költségobjektumok közötti költség vizuális áramlását szeretné megtekinteni, a költségösszesítési házirend szabályaival megjelenítheti a költség áramlását. Részletesebb tájékoztatás: Költségösszesítési irányelv. Kérjük, vegye figyelembe, hogy ez a témakör még nem készült el, de hamarosan megérkezik.)
+> Ez a témakör azt mutatja meg, hogy egy elsődleges költségelem, az 10001 villamosenergia hogyan irányul a költségelemekhez. Emiatt ez a járulékos költség a szervezet legalsó szintjéig fel van osztva. Más szóval a legalsó szintű költségobjektumok viselik a költséget. Ha a költségobjektumok közötti költség vizuális áramlását szeretné megtekinteni, a költségösszesítési házirend szabályaival megjelenítheti a költség áramlását. Részletesebb tájékoztatás: [Költségösszesítési irányelv](cost-rollup.md).
 
 
 

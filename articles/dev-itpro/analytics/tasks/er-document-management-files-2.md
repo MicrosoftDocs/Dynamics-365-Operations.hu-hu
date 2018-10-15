@@ -1,28 +1,29 @@
 --- 
-title: "Adatmodellek kiterjesztése dokumentumkezelési fájlok használatához ER kimenetben"
+title: "ER Dokumentumkezelési fájlok használata formátumkimenetekben (2. rész – Adatmodell kibővítése)"
 description: "A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy új Elektronikus jelentés (ER) formátumot a dokumentumkezelési fájlok (mellékletek) használatához az ER-kimenetben."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8363dd2af728577175a620d7b645d90cea84803a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: cb4c58dc86a159a70634c05408a8db471ebcae4c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="extend-data-models-to-use-document-management-files-in-er-output"></a>Adatmodellek kiterjesztése dokumentumkezelési fájlok használatához ER kimenetben
+# <a name="er-use-document-management-files-in-format-outputs-part-2-extend-data-model"></a>ER Dokumentumkezelési fájlok használata formátumkimenetekben (2. rész: Adatmodell kibővítése)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -57,7 +58,7 @@ Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operat
 17. A Cikktípus mezőben válassza ki a „Karakterlánc” lehetőséget.
 18. Kattintson a Hozzáadás gombra.
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-data-sources"></a>Az új adatmodellelemek leképezése a Dynamics 365 for Finance and Operations adatforrásokra
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Az új adatmodellelemek leképezése a Dynamics 365 for Finance and Operations Enterprise kiadás adatforrásokra
 1. Kattintson a Modell hozzárendelése adatforráshoz gombra.
 2. A gyorsszűrő használatával keresse meg azokat a rekordokat, ahol a Definíció mezőben az „InvoiceCustomer” érték szerepel.
     * InvoiceCustomer  

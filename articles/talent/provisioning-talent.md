@@ -3,13 +3,13 @@ title: "Talent üzembe helyezése"
 description: "Ez a témakör végigvezeti Önt az új környezet létesítésén a Microsoft Dynamics 365 for Talent számára."
 author: rschloma
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: josaw
 ms.search.scope: Talent
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 2fc4119f3b33aa583274f4d823e296752cdde41d
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 # <a name="provision-talent"></a>Talent üzembe helyezése
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/09/2018
 
 Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 for Talent számára. Ez a témakör feltételezi, hogy a Talent rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik már meglévő Microsoft Dynamics 365 licenccel, amely már tartalmazza a Talent szolgáltatástervet, és nem tudja elvégezni a témakörben szereplő lépéseket, forduljon a támogatási szolgálathoz.
 
-Első lépésként a globális rendszergazdának be kell jelentkeznie a [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) szolgáltatásba, és létre kell hoznia egy új Talent projektet. Hacsak licencelési probléma meg nem akadályozza a Talent létesítését, a Támogatás vagy a Dynamics Service Engineering (DSE) képviselőinek segítségére nincsen szkség.
+Első lépésként a globális rendszergazdának be kell jelentkeznie a [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) szolgáltatásba, és létre kell hoznia egy új Talent projektet. Hacsak licencelési probléma meg nem akadályozza a Talent létesítését, a Támogatás vagy a Dynamics Service Engineering (DSE) képviselőinek segítségére nincsen szkség.
 
 ## <a name="create-an-lcs-project"></a>LCS-projekt létrehozása
 Az LCS a Talent kezelésére való használatához előbb egy LCS-projektet kell létrehozni.
@@ -48,7 +48,6 @@ LCS-projekt létrehozása után a Talentet létesítheti egy környezetbe.
 
 1. Az LCS-projektben válassza a **Talent alkalmazás kezelése** csempét.
 2. A Talent létesítése mindig Microsoft PowerApps környezetbe történik PowerApps-integráció és a bővíthetőség érdekében. Olvassa el a témakör „PowerApps-környezet kiválasztása” című fejezetét a folytatás előtt. 
-3. Ha még nem rendelkezik PowerApps környezettel, kövesse a jelen témakör "Új PowerApps-környezet létrehozása (ha szükséges)" szakaszának lépéseit a folytatás előtt.
 
     > [!NOTE]
     > A meglévő környezetek megtekintéséhez vagy új környezetek létrehozásához a Talentet létesítő bérlő adminisztrátort hozzá kell rendelni a PowerApps P2 licenchez. Ha szervezete nem rendelkezik PowerApps P2 licenccel, kaphat egyet a CSP-től vagy a [PowerApps árképzési lapon](https://powerapps.microsoft.com/en-us/pricing/).
@@ -78,11 +77,6 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy mely PowerApp
 4. Az adatintegrációs és tesztelési stratégiákat figyelembe kell venni, például: védőfal, UAT, termelés. Ezért javasoljuk, hogy vegye figyelembe a telepítés különböző következményeit, mert nem könnyű a későbbiekben megváltoztatni a PowerApps-környezethez leképzett Talent környezetet.
 5. A következő PowerApps környezetek a Talent esetében nem használhatók, és ki lesznek szűrve a kiválasztási listából a LCS portálon belül:
  
-    **CD 2.0 környezetek:** A CDS 2.0-t 2018. március 21-én jelenik meg; azonban a Talent még nem támogatja a CDS 2.0-at. Bár megtekinthet és létrehozhat CD 2.0 adatbázisokat a PowerApps Admin központban, ezek nem lesznek használhatók a Talent alkalmazásban. A CDS 2.0 környezetek használatának lehetősége a Talent telepítésekben egy későbbi időpontban lesz elérhető.
-   
-   > [!Note]
-   > A CDS 1.0 és 2.0 környezetek megkülönböztetésére a felügyeleti portálon, jelöljön ki egy környezetet, és nézze meg a **Részletek** elemet. Az összes CD 2.0-s környezetben szerepel az „Ezeket a beállításokat a Dynamics 365 felügyeleti központban kezelheti” tájékoztatás, hivatkozás egy példányverzióra, és nincs Adatbázis lap. 
- 
    **Alapértelmezett PowerApps környezetek** Bár minden bérlő számára automatikusan megtörténik az alapértelmezett PowerApps környezet létesítése, nem javasoljuk velük a Talent használatát, hiszen minden bérlő felhasználónak hozzáférése van a PowerApps környezethez, és a PowerApps vagy Flow integrációk tesztelése és feltérképezése során véletlenül kárt tehetnek termelési adatokban.
    
    <strong>Tesztkörnyezetek</strong> A „TestDrive – alias@domain” névvel rendelkező környezetek 60 napos lejárati idővel kerülnek létrehozásra, és ezután lejárnak, ami automatikusan eltávolítja a környezetet.
@@ -91,42 +85,6 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy mely PowerApp
   
 6. Nincs konkrét végrehajtandó művelet, miután megadta a helyes használandó környezetet. Folytassa a létesítési folyamatot. 
  
-## <a name="create-a-new-powerapps-environment-if-required"></a>Új PowerApps-környezet létrehozása (ha szükséges)
-
-Futtasson PowerShell-parancsfájlt, hogy új PowerApps környezetet hozzon létre a Talent számára a PowerApps Plan 2 licenccel rendelkező bérlő adminisztrátorával összefüggésben. A parancsfájl automatizálja az alábbi lépéseket:
-
-
- + PowerApps-környezet létrehozása
- + CD 1.0 adatbázis létrehozása
- + Törölje az összes mintaadatot a CDS 1.0 adatbázisban
-
-
-Hajtsa végre az alábbi utasításokat a parancsfájl futtatásához:
-
-1. Töltse le a ProvisionCDSEnvironment.zip fájlt a következő helyről: [ProvisionCDSEnvironment-parancsfájlok](https://go.microsoft.com/fwlink/?linkid=870436)  
-
-2. A letöltési mappában kattintson a jobb gombbal az előtte letöltött ProvisionCDSEnvironment.zip fájlra, és válassza ki a **Tulajdonságok** lehetőséget.  Ha a párbeszédpanel alján van egy biztonsági megjegyzés, amely arról tájékoztat, "Ez a fájl egy másik számítógépről érkezett, és blokkolva lehet a számítógép védelme érdekében", jelölje be a **Blokkolás feloldása** jelölőnégyzetet, majd kattintson az **Alkalmaz** és az **OK** elemre.
-
-3. Bontsa ki a ProvisionCDSEnviroinment.zip fájl teljes tartalmát egy mappába - ez a mappa nem lehet a gyökérmappa.
-
-4. Futtassa a Windows PowerShell vagy a Windows PowerShell ISE programot rendszergazdaként.
-
-   Keresse fel a [Végrehajtási házirend beállítása](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) témakört, amelyben bővebben olvashat a végrehajtási házirend beállításáról úgy, hogy futhassanak parancsfájlok. A következő használatát javasoljuk: "Végrehajtási házirend beállítása- Korlátlan végrehajtási házirend - Hatókörfolyamat", de ügyeljen arra, hogy kövesse a vállalat biztonsági házirendjét, és zárja be a PowerShell ablakot, amikor elkészült. 
-  
-5. A PowerShell alkalmazáson belül keresse meg azt a mappát, ahová kicsomagolta a fájlokat, és futtassa a következő parancsot, az értékek cseréjével az alábbiak szerint:
- 
-   ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
-
-    
-   **MyNewEnvironment**-et le kell cserélni a környezet nevére. Ez a név az LCS portálon fog megjelenni, és akkor lesz látható, amikor a felhasználók kiválasztják a használandó Talent-környezetet. 
-
-   A **YourLocation** elemet helyettesíteni kell a Talent egyik támogatott régiójával: unitedsates, europe, australia. 
-
-   **– Részletes:** opcionális, és részletes információt biztosít, amely elküldhető a támogatásnak problémák esetén.
-
-6. Folytassa a létesítési folyamatot.
- 
-
 ## <a name="grant-access-to-the-environment"></a>Hozzáférés biztosítása a környezethez
 Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak azonban kifejezett módon engedélyezni kell a hozzáférést. Ha hozzáférést szeretne adni, [fel kell vennie a felhasználókat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users), és [hozzájuk kell rendelnie a megfelelő szerepköröket](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) az Alapvető HR környezetben. A Talent-et telepítő globális rendszergazdának el kell elindítania az Attract és az Onboard alkalmazást is ahhoz, hogy befejezze az inicializálást és engedélyezze a hozzáférést más bérlő felhasználók számára is.  Amíg erre nem kerül sor, más felhasználók nem tudják elérni az Attract és Onboard alkalmazást, és hozzáférési hibákra vonatkozó üzeneteket fognak kapni.
 

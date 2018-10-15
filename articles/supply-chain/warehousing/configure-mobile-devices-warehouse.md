@@ -1,9 +1,9 @@
 ---
 title: "Mobileszközök beállítása raktári munkához"
-description: "Ez a cikk bemutatja, hogyan kell konfigurálni a raktári munkások által munkára használt menüpontokat egy mobileszközön."
+description: "Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
+ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
+ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk bemutatja, hogyan kell konfigurálni a raktári munkások által munkára használt menüpontokat egy mobileszközön.
+Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához.
 
-**Megjegyzés:** ez a cikk a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A menüpontok, amelyek a raktári mobileszközön jelennek meg, a **Mobileszköz menüpontok** oldalon vannak konfigurálva. Mivel a menüelemek különféle menükbe sorolhatók, könnyen lehet úgy konfigurálni a menü szerkezetét, hogy bizonyos típusú munkák csak bizonyos felhasználók számára legyenek elérhetők. Beállíthatja, hogy a menüelemekkel a következő feladatok legyenek elvégezhetők:
+**Megjegyzés:** ez a témakör a Raktárkezelési szolgáltatásokra vonatkozik. A Készletkezelés funkciókra nem vonatkozik. A menüpontok, amelyek a raktári mobileszközön jelennek meg, a **Mobileszköz menüpontok** oldalon vannak konfigurálva. Mivel a menüelemek különféle menükbe sorolhatók, könnyen lehet úgy konfigurálni a menü szerkezetét, hogy bizonyos típusú munkák csak bizonyos felhasználók számára legyenek elérhetők. Beállíthatja, hogy a menüelemekkel a következő feladatok legyenek elvégezhetők:
 
 -   Kérelem feldolgozása vagy tevékenység elvégzése, például címke nyomtatása, rendszámtáblák létrehozása, termelési rendelés indítása vagy cikkekre vonatkozó információk gyors megkeresése egy helyen.
 -   Hozzon létre egy másik folyamaton keresztül elvégzendő munkát. Például egy beszerzési rendelés elemének fogadása betárolási munkát hozhat létre egy másik dolgozó számára.
@@ -193,7 +193,7 @@ Létrehozhat egy menüelemet, amely egy másik dolgozónak hoz létre munkát eg
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Menüelemek konfigurálása a meglévő munka feldolgozásához
-A menüelemek raktári munka létrehozására történő beállításán kívül a már létrehozott munkák feldolgozására is állíthat be menüelemeket. Állítsa a **Mód** mezőt a **Munka** lehetőségre, és válassza ki a **Meglévő munka használata** lehetőséget. Ezután néhány további lehetőség lesz elérhető az **Általános** lapon. A menüelemhez való hozzáférést úgy szabályozhatja, hogy egy vagy több munkaosztályt rendel hozzá a **Munkaosztály** gyorslapon. A munkaosztályok határozzák meg a munkát, amelyet a menüelem fel tud dolgozni. A munkaosztály arra is használható, hogy hozzáférést biztosítson adott felhasználói szerepkörök számára, illetve elválaszthatók vele a különböző műveletek feldolgozása. A következő táblázat az elérhető lehetőségeket írja le:
+A menüelemek raktári munka létrehozására történő beállításán kívül a már létrehozott munkák feldolgozására is állíthat be menüelemeket. Állítsa a **Mód** mezőt a **Munka** lehetőségre, és válassza ki a **Meglévő munka használata** lehetőséget. Ezután néhány további lehetőség lesz elérhető az **Általános** lapon. A menüelemhez való hozzáférést úgy szabályozhatja, hogy egy vagy több munkaosztályt rendel hozzá a **Munkaosztály** gyorslapon. A munkaosztályok határozzák meg a munkát, amelyet a menüelem fel tud dolgozni. A munkaosztály arra is használható, hogy hozzáférést biztosítson adott felhasználói szerepkörök számára, illetve elválaszthatók vele a különböző műveletek feldolgozása. A következő táblázat az elérhető lehetőségeket írja le: A beállítás az **Irányítja** mezőben választható ki a **Mobileszköz menüpontjai** oldalon. 
 
 <table>
 
@@ -247,6 +247,10 @@ Ez például akkor hasznos, ha például több raklap van előkészítve egy rak
 <tr class="even">
 <td>Ciklikus leltározás csoportosítása</td>
 <td>A dolgozó kiválaszt egy zónát, munkagyűjtőt vagy helyet, és a Microsoft Dynamics 365 for Finance and Operations hozzárendeli a munkát a kiválasztás alapján. Ha ezt a lehetőséget választja, akkor kattinthat a <strong>Ciklikus leltározás</strong> elemre a Műveleti ablakban további adatok megjelenítésének beállításához, és megadhatja, hogy a dolgozónak hányszor kell megismételnie a leltárt, ha eltérés van.</td>
+</tr>
+ <tr class="odd">
+<td>Szállítási berakodás</td>
+<td>Ez a funkció lehetővé teszi, hogy több raktári dolgozó ugyanabból vagy különböző rakományokból rakodhasson készletet ugyanarra a targoncára, teljesen vagy részlegesen kiszállított rakományokkal.</td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +353,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 <td>Jelölje be ezt az opciót ahhoz, hogy a dolgozók számára engedélyezze egy értékesítési rendelés vagy egy terhelés munkájának egyesítését egyetlen munkaegységgé. Egy dolgozó csak az értékesítési rendeléshez vagy a terheléshez végezhet munkát. Ez a lehetőség például akkor hasznos, ha mindenképpen növelnie kell egy értékesítési rendelés mennyiségét a terhelés, a szállítmány és munka létrehozása után az értékesítési rendeléshez. Ez a lehetőséget akkor érhető el, ha a menüelem folyamatban lévő munkát használ és a munkát a felhasználó vagy a rendszer irányítja.</td>
 </tr>
 <tr class="even">
-<td>Egyik sem</td>
+<td>Legrégebbi köteg kitárolása</td>
 <td>Adja meg, hogy a dolgozó egy helyen a legrégebbi köteget válassza-e ki először. Az alábbi lehetőségek közül választhat:
 <ul>
 <li><strong>Nincs</strong> – A dolgozó bármilyen köteget kiválaszthat a helyen. A dolgozó nem kap üzenetet.</li>

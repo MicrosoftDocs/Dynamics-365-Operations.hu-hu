@@ -3,7 +3,7 @@ title: "A felhasználói élmény testreszabása"
 description: "A témakör azt ismerteti, hogyan lehet személyre szabni a Microsoft Dynamics 365 Finance and Operations rendszert."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -64,7 +64,7 @@ A személyek és vállalatok számára eltérőek a legfontosabb adatok, vagy am
 ### <a name="shortcut-menu-options"></a>Gyorsbillentyű menüpontok
 Helyi menü segítségével néhány kifejezetten átállítása lap jobb per igényeinek, vagy a vállalat követelményeinek. (Más néven a helyi menü van egy *helyi menü* vagy *helyi menüje*.)
 
-Néhány, a szokásos és a fontos változtatást laphoz végrehajtott érhetők el közvetlenül, a helyi menü Beállítások pontjára. Például szeretne felvenni, vagy az oszlopot a Rács elrejtése, kattintson a jobb gombbal a rács oszlopfejléc, és adja meg **Oszlop hozzáadása** vagy **Ez az oszlop elrejtése**.
+Néhány, a szokásos és a fontos változtatást laphoz végrehajtott érhetők el közvetlenül, a helyi menü Beállítások pontjára. Ha például a 17. platformfrissítéstől kezdődően szeretne felvenni vagy elrejteni oszlopokat egy rácsban, kattintson a jobb gombbal a rács oszlopfejlécére, és adja meg az **Oszlop hozzáadása** vagy **Oszlop elrejtése** lehetőséget.
 
 Ezenkívül a legtöbb alaptípusok explicit személyre szabása akkor érhetők el, kattintson a jobb gombbal egy elemre, és válassza a **Személyre szabást**. (Megjegyzendő, hogy az oldalon nem minden elem szabható személyre.) Ha a személyre szabásnak ezt a módszerét választja, akkor megjelenik az elem tulajdonság ablaka.
 
@@ -81,27 +81,38 @@ A tulajdonságablak segítségével egy elem testreszabása a következőképpen
 A tulajdonságablak szerepeltethet egyéb személyre szabása funkciókat az elemtől függően. Például egy csempe a tulajdonságablak előfordulhat, hogy lehetővé teszik a támogatják ezt a csempét az irányítópultra, és a tulajdonságablak egy irányítópult előfordulhat, hogy lehetővé teszik, hogy irányítópult az új munkaterület létrehozása.
 
 ### <a name="the-personalization-toolbar"></a>Személyre szabási eszköztár
-Áthelyezés elemek elrejtése vagy egy oldalon több módosítani szeretné, ha a **Személyre szabása** eszköztár. Megnyitásához a **Személyre szabása** eszköztárnak válassza **Testreszabása ezen a képernyőn** a tulajdonságablak egy elemet. Is kiválaszthat **testreszabása ezen a képernyőn** a a **személyre szabása** csoportosításhoz a **lehetőségek** minden egyes oldal műveletpanel lapján.
+Ha több módosítást is szeretne végrehajtani egy lapon, illetve olyan módosításokat szeretne végrehajtani, amelyek nem érhetők el más mechanizmusokon keresztül (például az elemek újrarendezése), használhatja a **Személyre szabás** eszköztárat. Megnyitásához a **Személyre szabása** eszköztárnak válassza **Testreszabása ezen a képernyőn** a tulajdonságablak egy elemet. Is kiválaszthat **testreszabása ezen a képernyőn** a a **személyre szabása** csoportosításhoz a **lehetőségek** minden egyes oldal műveletpanel lapján.
 
 [![Személyre szabási eszköztár](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Ha a **Személyes beállítások** eszköztár meg van nyitva, az oldal nem lesz interaktív. Így nem tud megadni adatokat, illetve kibontani vagy összecsukni szakaszokat. A lap alkotóelemek ugyanúgy módosíthatók.
+#### <a name="navigating-the-page"></a>Navigálás a lapon 
+Az oldalon való navigálás lehetősége a **Személyre szabási eszköztár** megnyitása közben a futó platformtól függ. 
 
+- A 19. platformfrissítés előtt amikor a **Személyre szabás** eszköztár nyitva van, a lap írásvédett (nem lehet beírni semmit), és nem interaktív (csak a lap látható elemein végezhet módosításokat). Ha egy összecsukott panel vagy egy másik lap elemei között szeretne változtatni, be kell csuknia a **Személyre szabás** eszköztárát, ki kell bontania egy panelt, vagy át kell váltania a kívánt lapra, majd ismét meg kell nyitnia a **Személyre szabás** eszköztárát.  
+
+- A 19. platformfrissítést követően ha a **Személyre szabás** eszköztár nyitva van, akkor a lap továbbra is írásvédett, de sokkal interaktívabb. Kibővítheti vagy összecsukhatja az adatterületet, válthat a lapok között, továbbá kibonthatja vagy összecsukhatja a paneleket, miközben a **Személyre szabás** eszköztár nyitva van – mindezt ugyanúgy végezheti, mintha a lapon tenné. Ha személyre szabott módosítást szeretne alkalmazni egy összecsukható panelre vagy lapra (például egy gyorslap elrejtése), akkor megjelenik az összecsukható panel vagy lap mellett a gomb a billentyűzet kiemelésével, illetve amikor fölé húzza az egérmutatót.  
+
+#### <a name="personalization-tools"></a>Személyre szabási eszközök
 A következő eszközök érhetők el a **Személyre szabása** eszköztáron:
 
 - A **Kijelölés** eszközzel egy elemet kijelölve megnyithat egy párbeszédablakot, és módosíthatja az elem tulajdonságait. A **Kijelölés** eszközzel egy elemet kijelölve megnyithat egy párbeszédablakot, és azon módosíthatja az elem tulajdonságait, amelyet ki kell jelölni. Amikor kiválaszt egy elemet, az elem tulajdonságok ablaka jelenik meg, és ezen az elem bármilyen tulajdonsága módosítható. Megismételheti a folyamatot más elemekkel is, amelyek a lapon testre szabhatók. Azonban az egyes elemek használata miatt a Finance and Operations nem enged módosítani bizonyos tulajdonságaikat. Ezért amikor kiválaszt egy elemet, jelenhet meg, hogy néhány tulajdonsága nem módosítható. Kötelező mezőt például nem tud elrejteni.
-- Használja az **Áthelyezés** eszközt, ha egy elemet ki akar jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. (A szülőcsoporton kívülre nem helyezhető át egy elem). Válassza ki az **Áthelyezése** eszközt, és válassza ki az elem áthelyezése. Amikor kiválaszt egy elemet, a Finance and Operations a lap ellenőrzésével meghatározza, ha az elemet át lehet helyezni. Ezután létrehozza a „lerakási zónákat”. Az aktuális csoportban az elem húzásakor minden „lerakási zónák” mellett a terület, ahová az elem húzható színes, félkövér sorként jelenik meg.
-- Válassza ki az **Elrejtés** eszközt egy elem és elrejtéséhez a lapon. Válassza ki az **Elrejtés** eszközt, és válassza ki az elrejtendő elemet. Ha bejelöli az **Elrejtése** eszközt, minden éppen rejtett elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezután megszüntetheti az elrejtésüket. Válassza ki a **Kijelölés** eszközt, hogy lássa, hogy fog kinézni az oldal a kiválasztott elemek elrejtésével.
-- Használja az **Összegzés** eszközt, ha azt szeretné, hogy az elem a gyorslap összesítő lapján található legyen. Az Összegzés eszköz csak olyan mezőkre érvényes, amelyek a gyorslap szakaszon vannak. Ha bejelöli a **Összegzés** eszközt, összesítő mezők szerepelnek az árnyékolt tároló bejelölt összes mezőt. Interaktívan mezők felvétele az összesítő gyorslapre, és a mezők eltávolítása a gyorslap összegző mezőinek a kiválasztásával.
-- Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha bejelöli a **Kihagyás** eszközt, minden éppen kihagyott elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezt követően újra a lapsorozat részévé tehetők.
-- Válassza ki a **Szerkesztés** eszközt, ha egy elemet Szerkeszthető vagy Nem szerkeszthető állapotúra akar állítani. Ha bejelöli a **Szerkesztés** eszközt, minden éppen nem szerkeszthető elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezután újra szerkeszthetővé tehetők. Vegye figyelembe, hogy egyes mezők kötelezőek, és nem tehetők zárolttá. Lakat szimbólum jelenik meg az ilyen mezők mellett.
-- Használja a **Beszúrás** gombot a beszúrható elemek listájának megtekintéséhez egy oldalon.
 
+- Használja az **Áthelyezés** eszközt, ha egy elemet ki akar jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. (A szülőcsoporton kívülre nem helyezhető át egy elem). Válassza ki az **Áthelyezése** eszközt, és válassza ki az elem áthelyezése. Amikor kiválaszt egy elemet, a Finance and Operations a lap ellenőrzésével meghatározza, ha az elemet át lehet helyezni. Ezután létrehozza a „lerakási zónákat”. Az aktuális csoportban az elem húzásakor minden „lerakási zónák” mellett a terület, ahová az elem húzható színes, félkövér sorként jelenik meg.
+
+- Válassza ki az **Elrejtés** eszközt egy elem és elrejtéséhez a lapon. Válassza ki az **Elrejtés** eszközt, és válassza ki az elrejtendő elemet. Ha bejelöli az **Elrejtése** eszközt, minden éppen rejtett elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezután megszüntetheti az elrejtésüket. Válassza ki a **Kijelölés** eszközt, hogy lássa, hogy fog kinézni az oldal a kiválasztott elemek elrejtésével.
+    - A 18. platformfrissítéstől kezdődően elrejtheti a kötelező mezőket és a kötelező mezőket tartalmazó paneleket. Lehetővé teszi, hogy egyszerűsített élményt hozzon létre, ahol az üzleti logika által alapértelmezett kötelező mezők nem jelennek meg. Az elrejtett kötelező mezők ideiglenesen szintén láthatók, amennyiben üresek egy mentés megkísérlése során. 
+
+- Használja az **Összegzés** eszközt, ha azt szeretné, hogy az elem a gyorslap összesítő lapján található legyen. Az Összegzés eszköz csak olyan mezőkre érvényes, amelyek a gyorslap szakaszon vannak. Ha bejelöli a **Összegzés** eszközt, összesítő mezők szerepelnek az árnyékolt tároló bejelölt összes mezőt. Interaktívan mezők felvétele az összesítő gyorslapre, és a mezők eltávolítása a gyorslap összegző mezőinek a kiválasztásával.
+
+- Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha bejelöli a **Kihagyás** eszközt, minden éppen kihagyott elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezt követően újra a lapsorozat részévé tehetők.
+
+- Válassza ki a **Szerkesztés** eszközt, ha egy elemet Szerkeszthető vagy Nem szerkeszthető állapotúra akar állítani. Ha bejelöli a **Szerkesztés** eszközt, minden éppen nem szerkeszthető elem látható lesz, és árnyékolt tárolóban jelennek meg. Ezután újra szerkeszthetővé tehetők. Vegye figyelembe, hogy egyes mezők kötelezőek, és nem tehetők zárolttá. Lakat szimbólum jelenik meg az ilyen mezők mellett.
+
+- Használja a **Beszúrás** gombot a beszúrható elemek listájának megtekintéséhez egy oldalon.
     - Válassza ki a **Mező** eszközt a **Beszúrás** alatt mező felvételéhez a lapra. Használata esetén a **Mező** eszköz, csak azokat a mezőket, amelyek részei a oldaldefiníciót, de jelenleg a lapon nem látható, amelyet hozzáadhat. Új mezők, amelyek nem részei az aktuális oldaldefiníciónak, létrehozásával kapcsolatos további tudnivalókat lásd: [egyéni mezők](user-defined-fields.md). Miután kiválasztotta a **Mező** eszközt, először válasszon adott csoportot vagy terület, ahová mező hozzáadását szeretné. A kijelölt csoporttal vagy területtel kapcsolatos mezők listája egy párbeszédpanelen jelenik meg. A párbeszédpanelen válasszon hozzáadandó mezőket, majd a **Beszúrás** lehetőséget. Korábban hozzáadott mező eltávolításához meg kell ismételni a folyamatot, de a mező a párbeszédpanelen ne legyen kijelölve.
     - Válassza ki a **PowerApp** eszközt a **Beszúrás** alatt a lapba a Microsoft PowerApps használatával létrehozott alkalmazást beágyazni. A PowerApps alkalmazás beágyazásával a lapba kapcsolatos részletes tudnivalókat lásd: [beágyazása PowerApps](embed-power-apps.md).
 
 - Válassza ki a **Kezelés** gombot az aktuális oldal testreszabásához kapcsolódó beállítások listájának megjelenítéséhez.
-
     - Válassza az **Alapértelmezett** gombot az alapértelmezett, telepítési beállítások visszaállításához. Az aktuális oldal testreszabott beállításai törlődnek. Nincs visszavonás művelet. Ezért használja ezt a lehetőséget, ha biztos benne, hogy kívánja az oldal alaphelyzetbe állítását.
     - Válassza az **Importálás** lehetőséget, hogy egy korábban ön vagy más által létrehozott testreszabási fájlból töltsön be testreszabási beállításokat ehhez az oldalhoz. A jelenlegi személyes beállítások helyére kerülnek az oldal személyre szabások a kijelölt fájlból.
     - Válasszon **Exportálás** a személyes lap beállítások mentéséhez egy fájlba. A személyes beállítások megoszthatja más felhasználókkal. Ezeknek a felhasználóknak csak a lap személyes beállításokat tartalmazó fájlt kell importálni.
@@ -149,5 +160,5 @@ Amikor a készletdimenziók beállítását szabja személyre egy lapon, fontolj
 
 A **Dimenzió megjelenítési** beállításai minden lapon érvényesülnek, és ezek a beállítások az egyes lapok minden személyre szabott készletdimenzió-mező beállításait felülírják.
 
-Emiatt az előző példában, ha nem szeretné, hogy a Köteg száma készletdimenzió megjelenjen, a dimenziót törölnie kell a **Dimenziók megjelenítése** tábla beállítás részeként. Végül a módosítás nemcsak egy adott lapon, hanem minden lapon érvényes volna.
+Ennek eredményeként az előző példában, ha nem szeretné, hogy a Köteg száma készletdimenzió megjelenjen, a dimenziót törölnie kell a **Dimenziók megjelenítése** tábla beállítás részeként. Végül a módosítás nemcsak egy adott lapon, hanem minden lapon érvényes volna.
 

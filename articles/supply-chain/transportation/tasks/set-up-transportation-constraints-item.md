@@ -3,24 +3,25 @@ title: "Egy elemre vonatkozó szállítási megszorítások beállítása"
 description: "Ez az eljárás állítja be a szállítási megszorításokat annak érdekében, hogy megakadályozza a kiválasztott cikk egy kijelölt központon keresztül történő szállítását."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f2ef71e2d4d8fa0d0af0d8cb076ca59d32934181
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 900ea1476c95d295a151125afe46aebd9642630e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Egy elemre vonatkozó szállítási megszorítások beállítása
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 Ez az eljárás állítja be a szállítási megszorításokat annak érdekében, hogy megakadályozza a kiválasztott cikk egy kijelölt központon keresztül történő szállítását. Általában ezt a feladatot egy Szállítási koordinátor végzi el. Ezt a folyamatot az USMF bemutatócégnél vagy a saját adataiban is használhatja.
 
 
-## <a name="create-an-item-constraint"></a>Cikkmegszorítás létrehozása
+## <a name="create-an-item-constaint"></a>Cikkmegszorítás létrehozása
 1. Ugorjon a Megszorítások pontra.
 2. Kattintson az Új lehetőségre.
 3. Írjon be egy értéket a megszorítás mezőbe.

@@ -1,28 +1,29 @@
 --- 
-title: "Árfolyamszámítás (Magyarország)"
+title: "HU-00001 Árfolyamszámítás"
 description: "Ez a feladat végigvezeti Önt az átlagos átváltási árfolyam kiszámításának folyamatán."
 author: v-oloski
 manager: AnnBe
-ms.date: 10/27/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Hungary
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0fc481c1086e981c4c5a67c4b8f7cf655bfe52ae
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 8ab710e2506c2c44f3f44f39f02ed8d8bf4f059e
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="exchange-rate-calculation-hungary"></a>Árfolyamszámítás (Magyarország)
+# <a name="hu-00001-exchange-rate-calculation"></a>HU-00001 Árfolyamszámítás
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

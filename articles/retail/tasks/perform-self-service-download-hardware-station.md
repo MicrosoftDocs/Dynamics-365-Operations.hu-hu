@@ -1,31 +1,32 @@
 --- 
-title: "Hardverállomások letöltése önkiszolgálással"
+title: "Önkiszolgálás hardverállomás letöltéséhez"
 description: "Ez az eljárás végigveszi, hogyan tölthet le egy előre definiált hardverállomást."
 author: jashanno
 manager: AnnBe
-ms.date: 11/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 6b44f1360977fd0c224d009cc8ca3c1b54f092a1
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: bd7749adbeab37c5aac7b2ca50a2610d76d98a55
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="download-hardware-stations-by-using-self-service"></a>Hardverállomások letöltése önkiszolgálással
+# <a name="perform-self-service-to-download-hardware-station"></a>Önkiszolgálás hardverállomás letöltéséhez
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 Ez az eljárás végigveszi, hogyan tölthet le egy előre definiált hardverállomást. Az eljárás az USRT bemutatócég adatait használja. Az eljárás megkezdése előtt létre kell hoznia egy új hardverállomás-profilt és egy hardverállomást.
 

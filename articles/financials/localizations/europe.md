@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 9399df070d450b6eb89dc33ca47ddb77fe8e60b1
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a Dynamics 365 for Finance and Operations jogi személyeinek beállításában, akiknek elsődleges cím Brazíliában található. 
+Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a Dynamics 365 for Finance and Operations jogi személyeinek beállításában, akiknek elsődleges cím Európában található. 
 
 - [Előlegre jogosultak](emea-advance-holders.md)
  - [Előlegre jogosultak tranzakciói](emea-advance-holders-transactions.md)
@@ -42,12 +42,10 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a Dynamics 3
 - [EU értékesítési lista jelentés](emea-eu-sales-list.md)
 - [Árfolyam-korrekciók](emea-exchange-rate-adjustments.md)
 - [Fizetési módok fájlformátumai](emea-select-file-formats-for-the-method-of-payments.md)
-- [Pénzügyi szolgáltatásintegráció (ESR)](emea-fiscal-service-integration.md)
+- [Pénzügyi szolgáltatások (ESR) integrációja](emea-fiscal-service-integration.md)
 - [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Devizaátértékelés](emea-foreign-currency-revaluation.md)
 - [Árumozgási dokumentum létrehozása belső készlet átviteléhez](tasks/transfer-document-internal-inventory-transfer.md)
-- [Az Uniós Intrastat nyilatkozat létrehozása](tasks/eur-00002-eu-intrastat-declaration.md)
-- [EU értékesítési lista jelentés készítése](tasks/eur-00011-eu-sales-list-report.md)
+- [EU értékesítési listajelentés készítése](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-fájlok
   - [ISO20022 fájlok importálása](emea-ISO20022-file-formats.md)
   - [ISO20022 beszedési megbízási konfiguráció importálása](tasks/import-iso20022-direct-debit-configuration.md)
@@ -61,6 +59,8 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a Dynamics 3
   - [Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat](emea-intrastat.md)
   - [Tranzakciók átvitele az Intrastatba](tasks/transfer-transactions-intrastat.md)
+  - [Közösségen belüli tranzakcióhoz berakodási cím megadása](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Európai Uniós Intrastat nyilatkozat létrehozása](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Készletnapló-jelentések](emea-set-up-report-inventory-journal-names.md)
 - [Számlakibocsátás határidői](emea-invoice-issue-deadline.md)
 - [Számla feldolgozása](emea-invoice-processing.md)
@@ -82,8 +82,6 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a Dynamics 3
 - [EU értékesítési lista jelentés beállítása](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Fizetési bizonylat formátumának beállítása projektszámlákhoz](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Aláírók beállítása a nyomtatási képernyőkhöz](emea-set-up-signers-for-printing-forms.md)
-- [Vállalaton belüli árumozgás dokumentumainak beállítása](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [Közösségen belüli tranzakcióhoz berakodási cím megadása](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Sztornókönyvelés](emea-storno.md)
 - [Adóügyi irányelvek](emea-tax-directives.md)
 - [A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése](emea-amount-printing-forms.md)

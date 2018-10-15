@@ -9,12 +9,12 @@
   items:
     - name: Bemutató adatok létrehozása adatcsomagok felhasználásával
       href: data-entities/generate-demo-data-packages.md
-- name: Fejlesztés és személyre szabás a Visual Studio használatával
+- name: Fejlesztés és testreszabás
   href: dev-tools/developer-home-page.md
   items:
     - name: Az alkalmazásverem és a kiszolgáló felépítése
       href: dev-tools/application-stack-server-architecture.md
-    - name: Próbaváltozatok beszerzése
+    - name: Értékelési példányok beszerzése
       href: dev-tools/get-evaluation-copy.md
     - name: Regisztrálás az előfizetések előnézetére
       href: dev-tools/sign-up-preview-subscription.md
@@ -27,7 +27,7 @@
           href: dev-tools/enable-development-machine.md
         - name: Rendszergazdai hozzáférést nem engedélyező virtuális gépek fejlesztése és összeállítása – GYIK
           href: sysadmin/VMs-no-admin-access.md
-        - name: Helyi környezetek átnevezése a Visual Studio Team Services rendszerhez való hozzáféréshez
+        - name: Helyi környezetek átnevezése az Azure DevOps eléréséhez
           href: migration-upgrade/vso-machine-renaming.md
         - name: Fejlesztési rendszerkövetelmények
           href: dev-tools/development-system-requirements.md
@@ -106,6 +106,8 @@
               href: dev-ref/xpp-variables-data-types.md
             - name: 'X++ típusú állítások, ciklusok és kivételkezelés'
               href: dev-ref/xpp-statements-loops.md
+            - name: SQL-kapcsolat hiba X++-kivétele
+              href: dev-ref/sql-connection-error.md
             - name: X++-operátorok
               href: dev-ref/xpp-operators.md
             - name: X++-operátorprecedencia
@@ -247,10 +249,14 @@
               href: extensibility/changes-80.md
             - name: 'Bővítési módosítások, 8.0.1-as verzió'
               href: extensibility/extensibility-changes-801.md
-            - name: 'Bővítési módosítások, 8.0.2-as verzió'
+            - name: 'Bővítési módosítások, 8.0.2-es verzió'
               href: extensibility/extensibility-changes-802.md
             - name: 'Bővítési módosítások, 8.0.3-as verzió'
               href: extensibility/extensibility-changes-803.md
+            - name: 'Bővítési módosítások, 8.0.4-es verzió'
+              href: extensibility/extensibility-changes-804.md
+            - name: 'Bővítési módosítások, 8.1-es verzió'
+              href: extensibility/extensibility-changes-81.md
         - name: Alapismeretek
           items:
             - name: Tolakodó testreszabások
@@ -912,10 +918,12 @@
           href: gdpr/respond-dsr-request-talent.md
         - name: Személyes adatokra vonatkozó kérések megválaszolása az AX 2012 rendszerben
           href: gdpr/gdpr-ax2012.md
-        - name: LCS GDPR-adatok kérése
+        - name: LCS GDPR-adatkérései
           href: gdpr/gdpr-lcs.md
     - name: Adatellenőrzési ellenőrzőlista munkaterülete
       href: user-interface/data-validation-workspace.md
+    - name: Adatkezelési hibaleírások
+      href: data-entities/dm-error-descriptions.md
 - name: Folyamatos szállítás
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1007,7 +1015,7 @@
       href: ../supply-chain/transportation/create-new-transportation-management-engine.md
 - name: Telepítés
   items:
-    - name: Bemutatókörnyezet telepítése
+    - name: Bemutatókörnyezetek telepítése
       href: deployment/deploy-demo-environment.md
     - name: Felhőbeli telepítés
       items:
@@ -1109,12 +1117,27 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: Költségvetés-tervezés frissítése
               href: migration-upgrade/upgrade-budget-planning.md
+    - name: Adatok áttelepítése AX 2009-ből a Finance and Operations alkalmazásba
+      href: migration-upgrade/data-migration-tool.md
+      items:
+        - name: AX 2009 áttelepítés - Az adatáttelepítési eszköz telepítése
+          href: migration-upgrade/install-dmt.md
+        - name: AX 2009 áttelepítés - Leképezések létrehozása
+          href: migration-upgrade/generate-maps.md
+        - name: AX 2009 áttelepítés - Sablonok létrehozása
+          href: migration-upgrade/create-package-templates-dmt.md
+        - name: AX 2009 áttelepítés - Áttelepítési csoportok létrehozása
+          href: migration-upgrade/create-definition.md
+        - name: AX 2009 áttelepítés - Csomagok exportálása
+          href: migration-upgrade/ax2009-upgrade-export-package.md
+        - name: AX 2009 áttelepítés - Csomagok importálása
+          href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: Kód áttelepítése és frissítése
       href: migration-upgrade/code-migration-home-page.md
       items:
-        - name: Kódmigráció előkészítése
+        - name: Kód áttelepítésének előkészítése
           href: migration-upgrade/prepare-migration.md
-        - name: A Visual Studio Team Services-leképezés konfigurálása
+        - name: Az Azure DevOps leképezés konfigurálása
           href: migration-upgrade/configure-vso-solution.md
         - name: Osztott modellek
           href: dev-tools/model-split.md
@@ -1124,9 +1147,11 @@
       items:
         - name: A legújabb kiadásra való áttelepítés folyamata
           href: migration-upgrade/upgrade-latest-update.md
+        - name: Környezetek frissítése a 8.0-ás verzióról a 8.1-es verzióra
+          href: migration-upgrade/appupdate-80-81.md
         - name: A szoftver életciklusára vonatkozó irányelv és a felhőbeli kiadások
           href: migration-upgrade/versions-update-policy.md
-        - name: A legújabb platform update alkalmazása a környezetekre
+        - name: A legújabb platformfrissítés alkalmazása a környezetekre
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: A Dynamics AX-platform frissítése a 2016. augusztusi kiadásra
           href: migration-upgrade/update-platform-each-release.md
@@ -1248,7 +1273,7 @@
       href: lifecycle-services/complete-tasks-bpm.md
     - name: Tevékenységi diagramok felhasználása a BPM-könyvtárakban
       href: lifecycle-services/using-activity-diagrams.md
-    - name: BPM-könyvtárak szinkronizálása a Visual Studio Team Services megoldással
+    - name: BPM-könyvtárak és az Azure DevOps szinkronizálása
       href: lifecycle-services/synchronize-bpm-vsts.md
     - name: Felhasználói elfogadási tesztkönyvtárak létrehozása a feladat-útmutatók és a BPM segítségével
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
@@ -1266,6 +1291,10 @@
       href: lifecycle-services/user-logins.md
     - name: Eszköztár
       href: lifecycle-services/asset-library.md
+    - name: Teljesítményhibák elhárítása az LCS eszközeivel
+      href: lifecycle-services/performancetroubleshooting.md
+    - name: Lekérdezési útmutató
+      href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:

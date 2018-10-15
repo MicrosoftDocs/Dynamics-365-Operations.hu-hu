@@ -1,9 +1,9 @@
 ---
 title: "Raktári munka ellenőrzése munkasablonok és helyutasítások használatával"
-description: "A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban."
+description: "A témakör ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban."
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 269631124e9cab89a85bf4ff6936f3cd5d1dab2a
+ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
+ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/22/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](../includes/banner.md)]
 
-A cikk ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
+A témakör ismerteti a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzés a raktárban.
 
 A Microsoft Dynamics 365 for Finance and Operations programban beállított munkasablonok determinálják az utasításokat, amiket a raktári dolgozók a mobileszközeikre kapnak. Ezek határozzák meg a különböző raktári folyamatokat és feladatokat. A munkasablonok határozzák meg, hogy miként történik a munka minden egyes raktári folyamat esetében. A helyutasítás hozzárendelése a munkasablonhoz elősegíti, hogy a munka a raktárak meghatározott területein történjen.
 
@@ -58,12 +58,109 @@ A helyutasítási sorok további korlátozásokat szabnak meg a helykeresés sza
 
 A helyutasítások rendelkeznek egy további részletességi szinttel, ez a: *helyutasítási műveletek*. Több helyutasítási műveletet is megadhat minden sornak. Még egyszer, a sorozatszám meghatározza a műveletek értékelésének sorrendjét. Ezen a szinten megadhat egy lekérdezést, hogy megadja, hogyan legyen megtalálva a legjobb hely a raktárban. Emellett használható előre definiált **Stratégia** beállítás, az optimális hely megtalálásához.
 
+## <a name="location-directives-configuration-details"></a>Helyutasítások konfigurációs részletei 
+
+ ### <a name="sequence-number"></a>Sorszám
+ 
+Ez a szám megmutatja, hogyan történik a helyutasítás feldolgozása a kijelölt rendelés típusához. A menü  **Feljebb** és **Lejjebb** pontjaival módosítható.
+ 
+ ### <a name="work-type"></a>Munka típusa
+ 
+Ez a végrehajtandó munka típusa. A rendelkezésre álló munka típusa a készlet tranzakció típusán alapul, amelyet kiválasztott a **Munkarendelés típusa** mezőben.
+-   **Betárolás** – A **Betárolással** azonos munkatípus azt jelenti, higy a helyutasítás megkeresi a legideálisabb helyet a készlet elhelyezésére vagy kikeresésére a rendszerbe érkező készlet esetében; a fogadás, termelés vagy a készlet módosításával. Fel lehet használni arra is, hogy definiáljon egy helyet egy köztes szinten vagy a végső öböl ajtó szállítási helyére.
+-   **Betárolás** – A **Kitárolás** munkatípusa azt jelenti, hogy a raktár megkeresi a legideálisabb helyet a készlet fizikai lefoglalásához (munka létrehozása). A kitárolás még akkor is végrehajtható (a kitárolási munkasor bezárható), ha a munka nem fejeződött be. A felhasználó végrehajthatja a fizikai kitárolást, ami a kitárolás egy lépése. A felhasználó ezután megszakíthatja a folyamatot egy mobileszközről, és később befejezheti a munkát. Azonban a munkafejléc bezárása akkor történik meg, ha befejeződött a végső betárolás. 
+-   **Számlálás, Kiigazítások, Egyéni, Készletállapot-változás, Azonosítótábla felépítése, nyomtatás, Állapotváltozás, Csomagolás beágyazott azonosítótáblákhoz** – Ezek nem használhatók a helyutasítások beállításakor. Ez egy enum, tehát nincs szűrés a munkafolyamat típusához. 
+
+### <a name="directive-code"></a>Utasításkód
+
+A munkasablon, illetve a feltöltési sablon társítása irányelv kódjának kiválasztása. Az **Utasításkód** képernyőn új kódokat hozhat létre, amelyeknek használata egy munkasablon-feltöltési sablon és egy helyutasítás közötti kapcsolatoknál használható. Ez használható arra is, hogy kapcsolatot hozzon létre bármely munkasablonsor és helyutasítás között (például az öböl ajtaja vagy egy köztes hely).
+
+Ne feledje, hogy ha be van állítva kód, akkor a munka létrehozásakor a rendszer nem sorrendben keres rá a helyutasításra, hanem az utasítás kódja alapján. Ez azt jelenti, hogy pontosabban megadhatja, hogy milyen helysablont kell használni egy munkasablon adott lépéseként, például az anyagok előkészítése során. 
+
+### <a name="site"></a>Telephely
+
+A hely kötelező mező, mert a helymeghatározási irányelvnek szüksége van a helyre és a raktárra, amelyre érvényes. 
+
+### <a name="warehouse"></a>Raktár
+
+A raktár kötelező mező, mert a helymeghatározási irányelvnek szüksége van a helyre és a raktárra, amelyre érvényes.
+
+### <a name="multiple-sku"></a>Több raktározási egység
+
+Ez lehetővé teszi, hogy több raktározási egység (SKU) legyen egy helyen, például az öböl ajtajánál. **Több raktározási egység** kiválasztása esetén a betárolási hely megadása a munkában történik (ami várható), de csak több tétel betárolását képes kezelni (ha a munka különböző raktározási egységeket tartalmaz kitárolásra és betárolásra, és nem csak egy raktározási egységet betárolásra). Ha nem választja ki a **Több raktározási egység** elemet, akkor a betárolási hely csak akkor van megadva, ha a betárolásnál csak egyféle raktározási egység szerepel. Mindkét művelet használatához két sort kell megadnia; egyet a több raktározási egység bekapcsolásával és egyet a több raktározási egység kikapcsolásával. Ezeknek azonos szerkezettel és beállításokkal kell rendelkezniük. A betárolási műveletekhez olyan helyutasítások szükségesek, amelyek azonosak; még akkor is, ha Ön nem tesz különbséget az egy vagy több raktározási egység között munkaazonosítónál. Be kell állítania a kitárolást is, ha egynél több tétel szerepel a rendelésében.
+
+### <a name="sequence-number"></a>Sorszám
+
+Adja meg a sorrendet, ahogyan a helyutasítási sor feldolgozása történik a kijelölt munkatétel típusához. Szükség szerint módosíthatja a sorrendet a **Feljebb** és a **Lejjebb** lehetőség kiválasztásával.
+
+### <a name="fromto-quantity"></a>„-tól/-ig” mennyiség
+
+Ez lehetővé teszi a mennyiségtartományának megadását olyankor, amikor a középső-rács sorrendet kell kiválasztani. A „-tól/-ig” tartományt a megfelelő egységben adhatja meg.
+
+### <a name="unit"></a>Egység
+
+Megadhat egy minimális és egy maximális mennyiséget, amire az utasítás vonatkozik, valamint megadhatja, hogy az utasítás csak egy adott készletegységre vonatkozzon. A sor egység mezője csak a mennyiség értékelésénél használatos.
+
+Amikor ellenőrzi, hogy a helyutasítássor alkalmazható-e, ez azon a mennyiségen alapul, amely a megfelelő egységben található, ami a helyutasítássorban meg van adva. Minden alkalommal, amikor a rendszer eléri a helyutasítás sorát, megpróbálja átalakítani a kereseti egységet a sorban meghatározott egységekkel. Ha a mértékegység-átváltás nem létezik, a következő sornál folytatódik. 
+
+### <a name="locate-quantity"></a>Mennyiség megkeresése
+
+Ezt az opciót csak a raktárba való berakodás/mennyiségmegkeresés során lehet használni. Csak a betárolási munkatípusnál használható. Az érvényes értékek:
+
+-   **Azonosítótábla mennyisége** – Annak eldöntésekor, hogy a mennyiség a „-tól” és „-ig” tartományon belül van-e, használja a fogadott azonosítótáblán lévő mennyiséget.
+-   **Egységekre bontott mennyiség** – Annak eldöntésekor, hogy a mennyiség a „-tól” és „-ig” tartományon belül van-e, használja az adott tranzakció során egységekre bontott mennyiséget.
+-   **Fennmaradó mennyiség** – Annak eldöntésekor, hogy a mennyiség a „-tól” és „-ig” tartományon belül van-e, használja a jelenleg beadott beszerzési rendelésen még bevételezendő mennyiséget.
+-   **Várható mennyiség** – Annak eldöntésekor, hogy a mennyiség a „-tól” és „-ig” tartományon belül van-e, használja a beszerzési rendelésen lévő összesített mennyiséget, tekintet nélkül az eddig befogadott mennyiségre.
+
+### <a name="restrict-by-unit"></a>Korlátozás egység szerint
+
+Ez lehetővé teszi, hogy egy helyutasítássor adott mértékegységre vagy több mértékegységre vonatkozzon. Ha egy mennyiség foglalásakor csak meghatározott raklapokról szeretne foglalni, akkor középső rács sorozata „PL”-re korlátozza az adott sorozatot, hogy a raklapnál kisebb egy mennyiség sem választja ki a sorozatot. Válassza ki a **Korlátozás egység szerint** pontot az egységek beállításához. A sort egynél több egységre is korlátozhatja. Ez csak a kitárolási típusú munkák helyutasításainál működik. 
+
+### <a name="round-up-to-unit"></a>Felkerekítés egységre
+
+Ez a mező együttműködik a **Korlátozás egység szerint** mezővel. Ha a **Korlátozás egység szerint** helyutasítás beállítása „mező”, akkor a **Felkerekítés egységre** elem azt jelzi, hogy a nyersanyag kitárolására vonatkozó utasításból generált munkát fel kell kerekítenie egy anyagkezelési egység többszörösére (ennek megadása a **Korlátozás egység szerint** beállításban történik). Ne feledje, hogy ez a módszer csak a nyersanyag kitárolásánál és csak a kitárolás típusú helyutasítások használatával működik.
+
+### <a name="locate-packing-qty"></a>Csomagolási mennyiség keresése
+
+Ha egy csomagolási mennyiség van meghatározva egy értékesítési rendelésen, átmozgatási rendelésen vagy termelési rendelésen keresztül, ez korlátozza a rendszert, hogy csak olyan helyeket válasszon ki, ahol a csomagolás mennyisége megtalálható. Ez csak a kitárolási típusú munkák helyutasításainál működik.
+
+### <a name="allow-split"></a>Felosztás engedélyezése
+
+Ez adja meg, hogy egy helyutasítás feloszthatja-e a beérkező vagy lefolgalt mennyiséget több raktár között, vagy a teljes mennyiségnek egy helyen kell lennie, illetve azt egyetlen helyen kell lefoglalni a munka létrehozásához. 
+
+### <a name="sequence-number"></a>Sorszám
+
+Ez a szám az a sorrend, ahogyan a helyutasítás feldolgozása történik a kijelölt munkatétel típusához. A sorrendet módosíthatja ha szükséges. Azonban legyen körültekintő a sorszámok használatakor, hiszen a feldolgozás mindig sorban történik. 
+
+### <a name="name"></a>Név
+
+Adja meg az új helyutasításművelet nevét. Győződjön meg róla, hogy specifikus, amikor megad egy nevet.
+
+### <a name="fixed-location-usage"></a>Rögzített hely használata 
+
+-   **Rögzített és nem rögzített helyek** – A helyutasítás minden helyet figyelembe vesz.
+-   **Csak a termék rögzített helyei** – A helyutasítás csak a rögzített helyeket veszi figyelembe termékváltozatok esetén.
+-   **Csak a termékváltozat rögzített helyei** – A helyutasítás csak a rögzített helyeket veszi figyelembe termékváltozatok esetén.
+
+### <a name="allow-negative-inventory"></a>Negatív készlet engedélyezése
+
+A bejelölésével engedélyezi a negatív készlet megadását a kiválasztott raktárhelyhez a helyutasításokban. 
+
+### <a name="batch-enabled"></a>Kötegelt engedélyezve 
+
+Jelölje be ezt a jelölőnégyzetet kötegstratégiák használatához az olyan cikkeknél, ahol engedélyezve van a köteg. Olyan sor elérésekor, ahol a **kötegelt engedélyezve** beállítás szerepel egy nem kötegelt cikknél, a folyamat folytatódik a következő műveletsorral. 
+
+### <a name="strategy"></a>Stratégia
+
+-   **Konszolidálás** – Ez a beállítás szerepel adott helyen lévő cikkek konszolidálására, amikor hasonló cikkek rendelkezésre állnak. Ez csak a betárolási típusú munkák helyutasításainál használható. A betárolás közös beállítása az első műveletsoron fog konszolidálódni, majd a második próbálkozás konszolidáció nélkül történik. A konszolidálás hatékonyabbá teszi a későbbi kitárolást.
+-   **Csomagolási mennyiség egyeztetése** – Ez a beállítás segítségével győződjön meg róla, hogy egy kitárolási hely van-e a megadott csomagolási mennyiség. Ez csak a kitárolási típusú munkák helyutasításainál használható. 
+-   **FEFO-köteg lefoglalása** – Stratégia a megadott készlet helyének a köteg lejárati dátuma alapján történő meghatározásására és köteglefoglalási célra történő felosztására szolgáló funkció. Ez a beállítás csak a köteg engedélyezett cikkek használhatja. Ez csak a kitárolási típusú munkák helyutasításánál használható. 
+-   **Felkerekítés a teljes azonosítótáblára** – Ez a beállítás a azonosítótábla (at) mennyiséget ki kell választani a cikkekhez hozzárendelt egyeztetendő készletmennyiség Felkerekítés szolgál. Ezt a stratégiát csak a kitárolási típus helyutasításának feltöltésére használhatja. 
+-   **Üres hely, amely nem rendelkezik bejövő munkával** – Ezt a stratégiát az üres helyek keresésére használja. A hely üresnek minősül, ha nincs fizikailag megjelenő készlete vagy bejövő munkája. Ezt a stratégiát csak a helyutasítási típusnál használhatja. 
+
 ### <a name="example-of-the-use-of-location-directives"></a>Példa a helyutasítás használatához
 
-Ehhez a példához egy olyan beszerzési rendelési folyamatot veszünk alapul, ahol a helyutasításnak szabad területet kell találnia egy raktáron belül, azoknak a készletcikkeknek, amiket most regisztráltak a bevételezési területen. Először szabad kapacitást kell találnunk a raktár területén, az aktuális készlet konszolidálásával. Ha a konszolidáció nem lehetséges, üres helyet kell találnunk. 
+Ehhez a példához egy olyan beszerzési rendelési folyamatot veszünk alapul, ahol a helyutasításnak szabad területet kell találnia egy raktáron belül, azoknak a készletcikkeknek, amiket most regisztráltak a bevételezési területen. Először szabad kapacitást kell találnia a raktár területén, az aktuális készlet konszolidálásával. Ha a konszolidáció nem lehetséges, üres helyet kell találnia. 
 
-Ebben az esetben két helyutasítási műveletek kell megadni. A sorozat első művelete a **Konszolidálás** stratégiája, a másodiknak az **Üres hely bejövő munka nélkül** stratégiáját használjuk. Hacsak nem adunk meg műveletet a túlcsordulás kezelésére, két végkifejlet lehetséges akkor, ha nincs több kapacitása a raktárnak: a munka létrehozható, habár nem lesz hely meghatározva, vagy a munka-létrehozási folyamat sikertelenül zárul. Az eredményt a **Helyutasítási hibák** lap beállításai határozzák meg, ahol eldöntheti, hogy beállítja-e a **Munka leállítása, ha a helyutasítások sikertelenek** lehetőséget minden Munkarendelés-típushoz.
-
-
-
+Ebben az esetben két helyutasítási műveletet kell megadni. A sorozat első művelete a **Konszolidálás** stratégiája, a másodiknak az **Üres hely bejövő munka nélkül** stratégiáját használjuk. Hacsak nem ad meg műveletet a túlcsordulás kezelésére, két végkifejlet lehetséges akkor, ha nincs több kapacitása a raktárnak: a munka létrehozható, habár nem lesz hely meghatározva, vagy a munka-létrehozási folyamat sikertelenül zárul. Az eredményt a **Helyutasítási hibák** lap beállításai határozzák meg, ahol eldöntheti, hogy beállítja-e a **Munka leállítása, ha a helyutasítások sikertelenek** lehetőséget minden Munkarendelés-típushoz.
 
