@@ -6,6 +6,14 @@
       items:
         - name: Új vagy módosult elemek
           items:
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 1.)
+              href: whats-new-talent-october-01.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 24.)
+              href: whats-new-talent-september-24.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 17.)
+              href: whats-new-talent-september-17-2018.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 10.)
+              href: whats-new-talent-september-10.md
             - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. augusztus)
               href: whats-new-talent-august2018.md
             - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. július)
@@ -20,11 +28,15 @@
           href: modular-app-tech-faq.md
         - name: PowerApps alkalmazások beágyazása
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Core HR és Common Data Service for Apps
+          href: CoreHREntities.md
         - name: Előnézeti funkciók elérése
           href: access-preview-feature.md
         - name: Bérlista-integráció konfigurálása a Talent és a Dayforce között
           href: configure-payroll-integration.md
-    - name: 'Munkaerő szervezése részlegek, munkák és beosztások szerint'
+        - name: Támogatás kérése a Talent alkalmazáshoz
+          href: talent-support.md
+    - name: 'Munkaerő szervezése részlegek, feladatok és beosztások szerint'
       href: departments-jobs-positions.md
       items:
         - name: Feladat összetevőinek beállítása
@@ -41,11 +53,16 @@
           href: formalize-business-processes.md
         - name: Alkalmazotti adatok kezelése munkafolyamatok segítségével
           href: workflow-manage-employee-information.md
-        - name: Szabadság és távollét kezelése
-          href: leave-absence-overview.md
+    - name: Szabadság és távollét kezelése
+      href: leave-absence-overview.md
+      items:
+        - name: Elhatárolt szabadság a ledolgozott órák alapján
+          href: leave-accrue-hours-worked.md
+        - name: Munkaidőnaptárak
+          href: working-time-calendars.md
     - name: A szervezeti személyzet kiépítése
       items:
-        - name: Az Attract funkciói
+        - name: Az Attract funkciói és képességei
           href: attract-overview.md
         - name: Hozzon létre egy lebilincselő felvételi eljárást
           href: create-onboarding-experience.md
@@ -57,8 +74,10 @@
           href: create-fixed-compensation-plans.md
         - name: Változó kompenzációs konstrukciók létrehozása
           href: create-variable-compensation-plans.md
-        - name: Folyamatkompenzáció
+        - name: Kompenzáció feldolgozása
           href: process-compensation.md
+        - name: Feladat összetevőinek beállítása
+          href: create-job.md
     - name: Alkalmazottak fejlesztése és képzése
       items:
         - name: Teljesítménymenedzsment

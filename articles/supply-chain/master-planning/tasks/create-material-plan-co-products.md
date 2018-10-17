@@ -3,68 +3,112 @@ title: "Társtermékek anyagfelhasználási tervének létrehozása"
 description: "A termelési tervező megtervezi az anyagszükségleteket olyan cikkekhez, amelyek receptúra-társtermékek."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, ReqTransPo
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: adc1e520ce9ec705555939f29008d7fc4494999a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 2958f1e5c2e8a0cfa9cc6312f688d3b11b8e013c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="create-a-material-plan-for-co-products"></a><span data-ttu-id="08598-103">Társtermékek anyagfelhasználási tervének létrehozása</span><span class="sxs-lookup"><span data-stu-id="08598-103">Create a material plan for co-products</span></span>
+# <a name="create-a-material-plan-for-co-products"></a><span data-ttu-id="4a9c8-103">Társtermékek anyagfelhasználási tervének létrehozása</span><span class="sxs-lookup"><span data-stu-id="4a9c8-103">Create a material plan for co products</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="08598-104">A termelési tervező megtervezi az anyagszükségleteket olyan cikkekhez, amelyek receptúra-társtermékek.</span><span class="sxs-lookup"><span data-stu-id="08598-104">The production planner plans the material requirements for items that are formula co-products.</span></span> <span data-ttu-id="08598-105">Ez az eljárás az USP2 bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="08598-105">The demo data company used to create this procedure is USP2.</span></span>
+<span data-ttu-id="4a9c8-104">A termelési tervező megtervezi az anyagszükségleteket olyan cikkekhez, amelyek receptúra-társtermékek.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-104">The production planner plans the material requirements for items that are formula co-products.</span></span> <span data-ttu-id="4a9c8-105">Ez az eljárás az USP2 bemutatócéget használja.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-105">The demo data company used to create this procedure is USP2.</span></span>
 
 
-## <a name="create-requirement-for-a-co-product"></a><span data-ttu-id="08598-106">Társtermék szükségletének létrehozása</span><span class="sxs-lookup"><span data-stu-id="08598-106">Create requirement for a co-product</span></span>
-1. <span data-ttu-id="08598-107">Ugrás az Alapértelmezett irányítópultra.</span><span class="sxs-lookup"><span data-stu-id="08598-107">Go to Default dashboard.</span></span>
-2. <span data-ttu-id="08598-108">Kattintson az Értékesítési rendelés feldolgozása és lekérdezése menüpontra.</span><span class="sxs-lookup"><span data-stu-id="08598-108">Click Sales order processing and inquiry.</span></span>
-3. <span data-ttu-id="08598-109">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="08598-109">Click New.</span></span>
-4. <span data-ttu-id="08598-110">Kattintson az Értékesítési rendelés gombra.</span><span class="sxs-lookup"><span data-stu-id="08598-110">Click Sales order.</span></span>
-5. <span data-ttu-id="08598-111">Írjon be egy értéket a Vevői számla mezőbe.</span><span class="sxs-lookup"><span data-stu-id="08598-111">In the Customer account field, type a value.</span></span>
-    * <span data-ttu-id="08598-112">Példa: US-001</span><span class="sxs-lookup"><span data-stu-id="08598-112">Example: US-001</span></span>  
-6. <span data-ttu-id="08598-113">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="08598-113">Click OK.</span></span>
-7. <span data-ttu-id="08598-114">A cikkmezőbe írjon egy értéket.</span><span class="sxs-lookup"><span data-stu-id="08598-114">In the Item number field, type a value.</span></span>
-    * <span data-ttu-id="08598-115">Példa: P6003</span><span class="sxs-lookup"><span data-stu-id="08598-115">Example: P6003</span></span>  
-8. <span data-ttu-id="08598-116">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="08598-116">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="08598-117">Példa: 50000</span><span class="sxs-lookup"><span data-stu-id="08598-117">Example: 50000</span></span>  
-9. <span data-ttu-id="08598-118">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="08598-118">Click Save.</span></span>
+## <a name="create-requirement-for-a-co-product"></a><span data-ttu-id="4a9c8-106">Társtermék szükségletének létrehozása</span><span class="sxs-lookup"><span data-stu-id="4a9c8-106">Create requirement for a co-product</span></span>
+1. <span data-ttu-id="4a9c8-107">Ugrás az Alapértelmezett irányítópultra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-107">Go to Default dashboard.</span></span>
+2. <span data-ttu-id="4a9c8-108">Kattintson az Értékesítési rendelés feldolgozása és lekérdezése menüpontra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-108">Click Sales order processing and inquiry.</span></span>
+3. <span data-ttu-id="4a9c8-109">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-109">Click New.</span></span>
+4. <span data-ttu-id="4a9c8-110">Kattintson az Értékesítési rendelés gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-110">Click Sales order.</span></span>
+5. <span data-ttu-id="4a9c8-111">Írjon be egy értéket a Vevői számla mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-111">In the Customer account field, type a value.</span></span>
+    * <span data-ttu-id="4a9c8-112">Példa: US-001</span><span class="sxs-lookup"><span data-stu-id="4a9c8-112">Example: US-001</span></span>  
+6. <span data-ttu-id="4a9c8-113">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-113">Click OK.</span></span>
+7. <span data-ttu-id="4a9c8-114">A cikkmezőbe írjon egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-114">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="4a9c8-115">Példa: P6003</span><span class="sxs-lookup"><span data-stu-id="4a9c8-115">Example: P6003</span></span>  
+8. <span data-ttu-id="4a9c8-116">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-116">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="4a9c8-117">Példa: 50000</span><span class="sxs-lookup"><span data-stu-id="4a9c8-117">Example: 50000</span></span>  
+9. <span data-ttu-id="4a9c8-118">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-118">Click Save.</span></span>
 
-## <a name="create-a-material-plan-for-co-products"></a><span data-ttu-id="08598-119">Társtermékek anyagfelhasználási tervének létrehozása</span><span class="sxs-lookup"><span data-stu-id="08598-119">Create a material plan for co-products</span></span>
-1. <span data-ttu-id="08598-120">Kattintson az Alaptervezés parancsra.</span><span class="sxs-lookup"><span data-stu-id="08598-120">Click Master planning.</span></span>
-2. <span data-ttu-id="08598-121">A Konstrukció mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="08598-121">In the Plan field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="08598-122">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="08598-122">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="08598-123">Példa: MasterPlan</span><span class="sxs-lookup"><span data-stu-id="08598-123">Example: MasterPlan</span></span>  
-4. <span data-ttu-id="08598-124">Kattintson a Futtatás elemre.</span><span class="sxs-lookup"><span data-stu-id="08598-124">Click Run.</span></span>
-5. <span data-ttu-id="08598-125">Bontsa ki vagy csukja össze a Belefoglalandó rekordok részt.</span><span class="sxs-lookup"><span data-stu-id="08598-125">Expand or collapse the Records to include section.</span></span>
-6. <span data-ttu-id="08598-126">Kattintson a Szűrő parancsra.</span><span class="sxs-lookup"><span data-stu-id="08598-126">Click Filter.</span></span>
-7. <span data-ttu-id="08598-127">A listából válassza ki a Mező = Cikkszám sort.</span><span class="sxs-lookup"><span data-stu-id="08598-127">In the list, select the row for Field = Item number.</span></span>
-8. <span data-ttu-id="08598-128">Érték beírása a Feltétel mezőbe.</span><span class="sxs-lookup"><span data-stu-id="08598-128">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="08598-129">Példa: P6003</span><span class="sxs-lookup"><span data-stu-id="08598-129">Example: P6003</span></span>  
-9. <span data-ttu-id="08598-130">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="08598-130">Click OK.</span></span>
-10. <span data-ttu-id="08598-131">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="08598-131">Click OK.</span></span>
-11. <span data-ttu-id="08598-132">Kattintson a Tervezett rendelések elemre.</span><span class="sxs-lookup"><span data-stu-id="08598-132">Click Planned orders.</span></span>
-12. <span data-ttu-id="08598-133">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="08598-133">Use the Quick Filter to find records.</span></span> <span data-ttu-id="08598-134">Például szűkítsen a Cikkszám mezővel a „P6000” értéket beírva.</span><span class="sxs-lookup"><span data-stu-id="08598-134">For example, filter on the Item number field with a value of 'P6000'.</span></span>
-    * <span data-ttu-id="08598-135">Szűrés a receptúraelemmel, amely tartalmazza a cikk egy társtermékét, amelyre létrehozott egy értékesítési rendelést.</span><span class="sxs-lookup"><span data-stu-id="08598-135">Filter by the formula item that has as co-product of the item that you created a sales order for.</span></span>  
-13. <span data-ttu-id="08598-136">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="08598-136">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="08598-137">Válassza ki a szűrő által visszaadott sorok egyikét.</span><span class="sxs-lookup"><span data-stu-id="08598-137">Select any of the rows returned by the filter.</span></span>  
-14. <span data-ttu-id="08598-138">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="08598-138">In the list, click the link in the selected row.</span></span>
-15. <span data-ttu-id="08598-139">Bontsa ki vagy csukja össze az Igénykövetés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="08598-139">Expand or collapse the Pegging section.</span></span>
-16. <span data-ttu-id="08598-140">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="08598-140">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="08598-141">A tervezett rendelés a társtermék értékesítési rendeléséhez van rögzítve.</span><span class="sxs-lookup"><span data-stu-id="08598-141">The planned order is pegged to the sales order for the co-product.</span></span>  
-17. <span data-ttu-id="08598-142">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="08598-142">Close the page.</span></span>
+## <a name="create-a-material-plan-for-co-products"></a><span data-ttu-id="4a9c8-119">Társtermékek anyagfelhasználási tervének létrehozása</span><span class="sxs-lookup"><span data-stu-id="4a9c8-119">Create a material plan for co-products</span></span>
+1. <span data-ttu-id="4a9c8-120">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-120">Close the page.</span></span>
+2. <span data-ttu-id="4a9c8-121">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-121">Close the page.</span></span>
+3. <span data-ttu-id="4a9c8-122">Kattintson az Alaptervezés parancsra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-122">Click Master planning.</span></span>
+4. <span data-ttu-id="4a9c8-123">A Konstrukció mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-123">In the Plan field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="4a9c8-124">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-124">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="4a9c8-125">Példa: MasterPlan</span><span class="sxs-lookup"><span data-stu-id="4a9c8-125">Example: MasterPlan</span></span>  
+6. <span data-ttu-id="4a9c8-126">Kattintson a Futtatás elemre.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-126">Click Run.</span></span>
+7. <span data-ttu-id="4a9c8-127">Bontsa ki vagy csukja össze a Belefoglalandó rekordok részt.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-127">Expand or collapse the Records to include section.</span></span>
+8. <span data-ttu-id="4a9c8-128">Kattintson a Szűrő parancsra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-128">Click Filter.</span></span>
+9. <span data-ttu-id="4a9c8-129">A listából válassza ki a Mező = Cikkszám sort.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-129">In the list, select the row for Field = Item number.</span></span>
+10. <span data-ttu-id="4a9c8-130">Érték beírása a Feltétel mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-130">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="4a9c8-131">Példa: P6003</span><span class="sxs-lookup"><span data-stu-id="4a9c8-131">Example: P6003</span></span>  
+11. <span data-ttu-id="4a9c8-132">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-132">Click OK.</span></span>
+12. <span data-ttu-id="4a9c8-133">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-133">Click OK.</span></span>
+13. <span data-ttu-id="4a9c8-134">Kattintson a Tervezett rendelések elemre.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-134">Click Planned orders.</span></span>
+14. <span data-ttu-id="4a9c8-135">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-135">Use the Quick Filter to find records.</span></span> <span data-ttu-id="4a9c8-136">Például szűkítsen a Cikkszám mezővel a „P6000” értéket beírva.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-136">For example, filter on the Item number field with a value of 'P6000'.</span></span>
+    * <span data-ttu-id="4a9c8-137">Szűrés a receptúraelemmel, amely tartalmazza a cikk egy társtermékét, amelyre létrehozott egy értékesítési rendelést.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-137">Filter by the formula item that has as co-product of the item that you created a sales order for.</span></span>  
+15. <span data-ttu-id="4a9c8-138">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-138">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="4a9c8-139">Válassza ki a szűrő által visszaadott sorok egyikét.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-139">Select any of the rows returned by the filter.</span></span>  
+16. <span data-ttu-id="4a9c8-140">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-140">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="4a9c8-141">Bontsa ki vagy csukja össze az Igénykövetés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-141">Expand or collapse the Pegging section.</span></span>
+18. <span data-ttu-id="4a9c8-142">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-142">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="4a9c8-143">A tervezett rendelés a társtermék értékesítési rendeléséhez van rögzítve.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-143">The planned order is pegged to the sales order for the co-product.</span></span>  
+19. <span data-ttu-id="4a9c8-144">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-144">Close the page.</span></span>
+
+## <a name="create-requirement-for-a-co-product"></a><span data-ttu-id="4a9c8-145">Társtermék szükségletének létrehozása</span><span class="sxs-lookup"><span data-stu-id="4a9c8-145">Create requirement for a co-product</span></span>
+1. <span data-ttu-id="4a9c8-146">Ugrás az Alapértelmezett irányítópultra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-146">Go to Default dashboard.</span></span>
+2. <span data-ttu-id="4a9c8-147">Kattintson az Értékesítési rendelés feldolgozása és lekérdezése menüpontra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-147">Click Sales order processing and inquiry.</span></span>
+3. <span data-ttu-id="4a9c8-148">Kattintson az Új elemre.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-148">Click New.</span></span>
+4. <span data-ttu-id="4a9c8-149">Kattintson az Értékesítési rendelés gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-149">Click Sales order.</span></span>
+5. <span data-ttu-id="4a9c8-150">Írjon be egy értéket a Vevői számla mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-150">In the Customer account field, type a value.</span></span>
+    * <span data-ttu-id="4a9c8-151">Példa: US-001</span><span class="sxs-lookup"><span data-stu-id="4a9c8-151">Example: US-001</span></span>  
+6. <span data-ttu-id="4a9c8-152">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-152">Click OK.</span></span>
+7. <span data-ttu-id="4a9c8-153">A cikkmezőbe írjon egy értéket.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-153">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="4a9c8-154">Példa: P6003</span><span class="sxs-lookup"><span data-stu-id="4a9c8-154">Example: P6003</span></span>  
+8. <span data-ttu-id="4a9c8-155">Adjon meg egy számot a Mennyiség mezőben.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-155">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="4a9c8-156">Példa: 50000</span><span class="sxs-lookup"><span data-stu-id="4a9c8-156">Example: 50000</span></span>  
+9. <span data-ttu-id="4a9c8-157">Kattintson a Mentés gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-157">Click Save.</span></span>
+
+## <a name="create-a-material-plan-for-co-products"></a><span data-ttu-id="4a9c8-158">Társtermékek anyagfelhasználási tervének létrehozása</span><span class="sxs-lookup"><span data-stu-id="4a9c8-158">Create a material plan for co-products</span></span>
+1. <span data-ttu-id="4a9c8-159">A Konstrukció mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-159">In the Plan field, click the drop-down button to open the lookup.</span></span>
+2. <span data-ttu-id="4a9c8-160">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-160">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="4a9c8-161">Példa: MasterPlan</span><span class="sxs-lookup"><span data-stu-id="4a9c8-161">Example: MasterPlan</span></span>  
+3. <span data-ttu-id="4a9c8-162">Kattintson a Futtatás elemre.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-162">Click Run.</span></span>
+4. <span data-ttu-id="4a9c8-163">Bontsa ki vagy csukja össze a Belefoglalandó rekordok részt.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-163">Expand or collapse the Records to include section.</span></span>
+5. <span data-ttu-id="4a9c8-164">Kattintson a Szűrő parancsra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-164">Click Filter.</span></span>
+6. <span data-ttu-id="4a9c8-165">A listából válassza ki a Mező = Cikkszám sort.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-165">In the list, select the row for Field = Item number.</span></span>
+7. <span data-ttu-id="4a9c8-166">Érték beírása a Feltétel mezőbe.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-166">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="4a9c8-167">Példa: P6003</span><span class="sxs-lookup"><span data-stu-id="4a9c8-167">Example: P6003</span></span>  
+8. <span data-ttu-id="4a9c8-168">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-168">Click OK.</span></span>
+9. <span data-ttu-id="4a9c8-169">Kattintson az OK gombra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-169">Click OK.</span></span>
+10. <span data-ttu-id="4a9c8-170">Kattintson a Tervezett rendelések elemre.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-170">Click Planned orders.</span></span>
+11. <span data-ttu-id="4a9c8-171">Rekordok kereséséhez használja a gyorsszűrőt.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-171">Use the Quick Filter to find records.</span></span> <span data-ttu-id="4a9c8-172">Például szűkítsen a Cikkszám mezővel a „P6000” értéket beírva.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-172">For example, filter on the Item number field with a value of 'P6000'.</span></span>
+    * <span data-ttu-id="4a9c8-173">Szűrés a receptúraelemmel, amely tartalmazza a cikk egy társtermékét, amelyre létrehozott egy értékesítési rendelést.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-173">Filter by the formula item that has as co-product of the item that you created a sales order for.</span></span>  
+12. <span data-ttu-id="4a9c8-174">A listában jelölje meg a kiválasztott sort.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-174">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="4a9c8-175">Válassza ki a szűrő által visszaadott sorok egyikét.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-175">Select any of the rows returned by the filter.</span></span>  
+13. <span data-ttu-id="4a9c8-176">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-176">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="4a9c8-177">Bontsa ki vagy csukja össze az Igénykövetés szakaszt.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-177">Expand or collapse the Pegging section.</span></span>
+15. <span data-ttu-id="4a9c8-178">A listában kattintson a kijelölt sorban lévő hivatkozásra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-178">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="4a9c8-179">A tervezett rendelés a társtermék értékesítési rendeléséhez van rögzítve.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-179">The planned order is pegged to the sales order for the co-product.</span></span>  
+16. <span data-ttu-id="4a9c8-180">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-180">Close the page.</span></span>
+17. <span data-ttu-id="4a9c8-181">Kattintson az Alaptervezés parancsra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-181">Click Master planning.</span></span>
+18. <span data-ttu-id="4a9c8-182">Ugorjon az Alaptervezés > Beállítás > Alaptervezés paraméterei pontra.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-182">Go to Master planning > Setup > Master planning parameters.</span></span>
+19. <span data-ttu-id="4a9c8-183">Válassza a Nem lehetőséget Az összes tervezési folyamat letiltása mezőben.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-183">Select No in the Disable all planning processes field.</span></span>
+20. <span data-ttu-id="4a9c8-184">Zárja be a lapot.</span><span class="sxs-lookup"><span data-stu-id="4a9c8-184">Close the page.</span></span>
 
 
