@@ -8,7 +8,7 @@
           items:
             - name: Regisztrálás az előfizetés előnézetére
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
-            - name: Demókörnyezet telepítése
+            - name: Bemutatókörnyezet telepítése
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Felhőalapú és helyszíni szolgáltatások összehasonlítása
               href: get-started/cloud-prem-comparison.md
@@ -38,12 +38,18 @@
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
+            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
+              href: get-started/mainstream-support-ax-2009-2012.md
             - name: Eltávolított vagy elavult funkciók
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: Az AX 2012 elhalasztott funkciói
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: A helyszíni telepítéseknél nem elérhető funkciók
               href: get-started/features-not-implemented-on-prem.md
+            - name: 'Finance and Operations, 8.1 verzió (2018. október)'
+              href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 20 (2018. november)
+              href: get-started/whats-new-platform-update-20.md
             - name: 'Finance and Operations, 8.0 verzió (2018. április)'
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (2018. március)
@@ -456,6 +462,10 @@
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Számlaegyeztetés és vállalatközi beszerzési rendelés
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+            - name: Szállítói számla irányelveinek beállítása
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: A szállítói számlák rögzítése és összevetése a bevételezett mennyiséggel
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Ellenőrzött fizetési áttekintés
               href: ../financials/accounts-payable/positive-pay-overview.md
             - name: Fizetési ellenőrző fájlok beállítása és létrehozása
@@ -566,15 +576,11 @@
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: Kamatfeldolgozás
               href: ../financials/accounts-receivable/tasks/process-interest.md
-            - name: Szállítói számla irányelveinek beállítása
-              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-            - name: A szállítói számlák rögzítése és összevetése a bevételezett mennyiséggel
-              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Vevői számla létrehozása
               href: ../financials/accounts-receivable/configure-customer-invoices.md
-            - name: Vevői fizetések letétbe helyezése
+            - name: Vevői kifizetések letétbe helyezése
               href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-            - name: Vevői fizetések feltételeinek kialakítása
+            - name: Vevői kifizetések feltételeinek kialakítása
               href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
             - name: Vevői fizetési mód kialakítása
               href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
@@ -596,6 +602,8 @@
               href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Kinnlevőségek korosítási adatainak beállítása és létrehozása
               href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Vevők másolása megosztott számsorozatok használatával
+              href: ../financials/accounts-receivable/copy-customer.md
             - name: Vevői munkafolyamat
               href: ../financials/accounts-receivable/customer-workflow.md
             - name: Kifizetések és kiegyenlítések
@@ -1539,12 +1547,10 @@
               href: ../financials/localizations/emea-exchange-rate-adjustments.md
             - name: Fizetési módok fájlformátumai
               href: ../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md
-            - name: Pénzügyi szolgáltatásintegráció (ESR)
+            - name: Pénzügyi szolgáltatások (ESR) integrációja
               href: ../financials/localizations/emea-fiscal-service-integration.md
             - name: Tárgyi eszközök kivezetése Észtország és Litvánia esetében
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-            - name: Devizaátértékelés
-              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Átadási bizonylat létrehozása belső készlet átviteléhez
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
             - name: EU értékesítési listajelentés készítése
@@ -2104,6 +2110,8 @@
               href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
             - name: Tárgyieszköz-kivezetési funkciók kiterjesztése
               href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Devizaátértékelés
+              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Visszaküldhető csomagolás
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Áfajelentések
@@ -2114,12 +2122,48 @@
               href: ../financials/localizations/emea-pol-interest-calculation.md
             - name: Forgalom- és mérlegkimutatás
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+        - name: Oroszország
+          href: ../financials/localizations/russia.md
+          items:
+            - name: Előlegre jogosultak
+              href: ../financials/localizations/rus-advance-holders.md
+              items:
+                - name: Előlegre jogosult létrehozása
+                  href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
+                - name: Előlegre jogosultak napi műveletei
+                  href: ../financials/localizations/rus-advance-holders-daily-operations.md
+            - name: Tárgyi eszközök
+              items:
+                - name: Tárgyi eszközök beszerzése és üzembe helyezése
+                  href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Tárgyieszköz-beszerzések költségvetésnaplóinak létrehozása és feladása
+                  href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+                - name: Tárgyieszköz-számbavétel
+                  href: ../financials/localizations/rus-fixed-assets-counting.md
+                - name: Tárgyi eszközök devizaátértékelése
+                  href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Részleges tárgyieszköz-szétszerelés (felszámolás)
+                  href: ../financials/localizations/rus-fixed-assets-disassembly.md
+            - name: Utalványok beállítása és feldolgozása
+              href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: Devizatranzakciók árfolyamainak beállítása
+              href: ../financials/localizations/rus-exchange-difference.md
+            - name: Főkönyvi tranzakciók előnézete
+              href: ../financials/localizations/rus-ledger-transactions-preview.md
+            - name: Hivatalnokok beállítása
+              href: ../financials/localizations/rus-officials.md
+            - name: Bankszámlák beállítása
+              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+            - name: Általános forgalmi adó (áfa) az adózási ügynökök számára
+              href: ../financials/localizations/rus-tax-agent.md
+            - name: Kiegyenlítések dimenzió vezérlőelemének beállítása
+              href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Szaúd-Arábia
           href: ../financials/localizations/saudi-arabia.md
           items:
             - name: Áfa
               href: ../financials/localizations/apac-sau-sales-tax.md
-            - name: Szaúd-arábiai zakát-jelentés
+            - name: Szaúd-arábiai zakátjelentés
               href: ../financials/localizations/emea-sau-zakat-reporting.md
         - name: Szingapúr
           href: ../financials/localizations/singapore.md
@@ -2133,6 +2177,8 @@
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Váltóbeállítások
               href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: A fizetések átlagos időszakára vonatkozó határidők és jelentések kiszámítása
+              href: ../financials/localizations/emea-esp-invoice-due-dates.md
             - name: Feltételes áfa
               href: ../financials/localizations/emea-esp-conditional-sales-tax.md
             - name: Jóváírás számlázása
@@ -2281,7 +2327,7 @@
               href: ../talent/create-variable-compensation-plans.md
             - name: Kompenzációs folyamatok meghatározása és eredmények kiszámítása
               href: hr/tasks/define-compensation-process-calculate-results.md
-            - name: Folyamatkompenzáció
+            - name: Kompenzáció feldolgozása
               href: ../talent/process-compensation.md
             - name: Kompenzációs rácsok beállítása
               href: hr/tasks/set-up-compensation-grids.md
@@ -2857,7 +2903,7 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Igény-előrejelzés manuális módosítása
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Dynamics 365 for Unified Operations mobilalkalmazás
+    - name: Dynamics 365 for Unified Operations Mobile alkalmazás
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
         - name: Elérhető mobil munkaterületek

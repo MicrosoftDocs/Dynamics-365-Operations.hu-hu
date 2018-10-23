@@ -1,28 +1,29 @@
 --- 
-title: "Termékszám létrehozása előre definiált termékváltozatokhoz"
+title: "Termékszám elnevezési rendszerének létrehozása előre definiált termékváltozatokhoz"
 description: "Ez az útmutató bemutatja, hogyan állítható be termékszámozási rendszer előre definiált termékváltozatok számára, és hogyan rendelhető hozzá a megfelelő termékdimenzió-csoporthoz."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductDimensionGroup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: c423aab341ddad9383c4c95b9dbb63c9875c99ef
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 4b49e96677b94d5f669ea41861f64e62e118938c
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="create-a-product-number-for-predefined-product-variants"></a>Termékszám létrehozása előre definiált termékváltozatokhoz
+# <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Termékszám elnevezési rendszerének létrehozása előre definiált termékváltozatokhoz
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -33,7 +34,7 @@ Ez az útmutató bemutatja, hogyan állítható be termékszámozási rendszer e
 1. Kattintson a Termékváltozat modelldefinícióra.
 2. Kattintson a Termékek elnevezési rendszere elemre
 3. Kattintson az Új elemre.
-4. A Név mezőben adja meg az elnevezési rendszer nevét, amely segít azonosítani a cél termékdimenzió-csoportot, például: ColorSize.
+4. A Név mezőben adja meg az elnevezési rendszer nevét, amely segít azonosítani a cél termékdimenzió-csoportot, például ColorSize.
 5. A Leírás mezőben adjon meg egy értéket.
 6. Kattintson a Hozzáadás gombra.
 7. Kattintson az Alaptermék száma elemre.

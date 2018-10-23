@@ -32,18 +32,18 @@ Az Attract az új szakemberek felvételi folyamatának kezeléséhez nyújt szol
 
 Az Attract a következő funkciókra használható:
 
-### <a name="attract-dashboard"></a>Attract irányítópult
+## <a name="attract-dashboard"></a>Attract irányítópult
 A felvételi csapat tagjai itt tekinthetik meg azoknak az állásoknak a részleteit, amelyekben részt vesznek. A felvételi vezető vagy a toborzó emellett itt adhat hozzá egy új állás az Attracthoz: ezeket létre tudják hozni egyesével, vagy több feladat importálásával egyszerre egy Excel-táblázatból.
 
-### <a name="jobs"></a>Feladatok
+## <a name="jobs"></a>Feladatok
 A **Munkakör** oldalon az olyan részleteket lehet megtekinteni és szerkeszteni, mint a munkaköri leírás és a feladatvégzés helye. A **Munkakör** lap az a hely, ahol a felvételi csoportot összerakják, és ahol a csapat toborzói és interjúbonyolítói hozzáadhatók a listához vagy módosíthatók. Új pályázók is megadhatók a **Munkakör** oldalon.
 
-### <a name="candidates"></a>Pályázók
+## <a name="candidates"></a>Pályázók
 A pályázókat egyenként lehet hozzáadni egy munkakörhöz, vagy nagyobb számban is feltölthetők Excel-táblázatokból. Valamennyi pályázó automatikusan kerül hozzáadásra a munkakör felvételi folyamatának első állomásához, a jelentkezés állomáshoz. A jelölt összes jelentkezési adata itt tekinthető meg és kezelhető. További dokumentumokat is fel lehet tölteni és meg lehet tekinteni, az olyan kapcsolattartási adatokkal együtt, mint például az e-mail-címek, telefonszámok és a közösségimédia-fiókokra mutató hivatkozások. Ha a pályázó megadott egy, a LinkedIn profiljára mutató hivatkozást, és a LinkedIn integrációja be van állítva (amelyhez LinkedIn toborzó licencre van szükség), megjelenik a jelölt profilja.
 
-### <a name="stages"></a>Fokozatok
+## <a name="stages"></a>Fokozatok
 Az Attract tartalmaz egy előre definiált felvételi folyamatot, amely négy alapvető lépést tartalmazz: Jelentkezés, Szűrés, Interjú és Ajánlat. Az új pályázók a jelentkezés szinten indulnak, ahol felülvizsgálják az önéletrajzukat, a kísérőlevelüket, a portfoliójukat és a jelentkezéshez kacspolódó egyéb dokumentumaikat. Innen a jelentkező tovább haladhat a Szűrés lépéshez, amelyben meghívják szűrő telefonhívásra vagy Skype-videóinterjúra. A felvételi vezető és a toborzó visszajelzést küldhet a pályázóról, és tovább engedheti a következő lépéshez. Ezután személyes interjúkat ütemeznek a felvételi csoport rendelkezésre álló tagjaival, ezek testre szabhatók különböző hosszúságú négyszemközti vagy panelinterjúkként. Az interjúk után rögzítik és felülvizsgálják az interjúztató csapat visszajelzéseit. A kiválasztott pályázók tovább engedhetők a végső szakaszba, ahol ajánlatot állítanak össze számukra felülvizsgálat és jóváhagyás céljából. 
 
-### <a name="candidate-app"></a>Jelölti alkalmazás
+## <a name="candidate-app"></a>Jelölti alkalmazás
 A pályázók e-mailt kapnak, amint hozzáadták őket egy álláshoz, amelyben kapnak egy hivatkozást az alkalmazás letöltéséhez. A webes alkalmazás a pályázókat információkkal látja el a munkakör részleteivel kapcsolatban, és ez az eszköz szolgál a felvételi csapattal való kommunikációra. A pályázók az interjúkra vonatkozó elérhetőségüket is elküldhetik.
 

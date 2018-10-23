@@ -3,7 +3,7 @@ title: "Mi az, ami új vagy módosított"
 description: "Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 for Finance and Operations rendszer legújabb verzióinak új szolgáltatásait."
 author: josaw1
 manager: AnnBe
-ms.date: 06/22/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 02d66063f721357b354f7959a46ec94d617f55a2
-ms.openlocfilehash: 2a608355718509c90e766825113f386b163ee4fd
+ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
+ms.openlocfilehash: 201068db3b1bd27438b16ff3f1f51f8a1eb972c5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/02/2018
 
 ---
 
@@ -39,6 +39,8 @@ A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra törté
 
 ## <a name="application-releases"></a>Alkalmazáskiadások
 
+Ez a táblázat felsorolja az alkalmazás főbb kiadásait. A havi felhőalapú frissítésekkel kapcsolatban lásd: [A szoftver életciklusára vonatkozó irányelv és a felhőbeli kiadások](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+
 <table>
 <colgroup>
 <col width="20%" />
@@ -53,14 +55,19 @@ A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra törté
 <th>Verzió</th>
 <th>Szám felépítése</th>
 <th>Elérhetőség</th>
-<th>További tájékoztatás</th>
+<th>További információ</th>
 </tr>
 </thead>
 <tbody>
 <tr class="even">
-
 </tr>
 <tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8,1</td>
+<td>8,1,136  </td>
+<td>október 2018.</td>
+  <td><a href="whats-new-changed-8-1-October-2018.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise 8.1 verziójában (2018. október)</a></td>
+</tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.0</td>
@@ -125,6 +132,12 @@ A legújabb verzióra való frissítéshez lásd: [A legújabb verzióra törté
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>20-es platformfrissítés</td>
+<td>7,0,5030</td>
+<td>Szeptember 2018.</td>
+<td><a href="whats-new-platform-update-20.md">Újdonságok és változások a Dynamics 365 for Finance and Operations Enterprise edition 20. platformfrissítésében (2018 szeptembere)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás</td>
 <td>15-es platformfrissítés</td>

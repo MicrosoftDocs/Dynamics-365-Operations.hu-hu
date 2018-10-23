@@ -1,28 +1,29 @@
 --- 
-title: "Vízszintesen bővíthető tartományokat használó formátumok tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához"
+title: "ER Vízszintesen bővíthető tartományok használata oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához (1. rész – Formátum kialakítása)"
 description: "Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat elektronikus jelentési (ER) formátumot jelentések létrehozásához OPENXML munkalap (Excel) fájlok formájában, amelyekben a szükséges oszlopok vízszintesen bővíthető tartományokként, dinamikusan hozhatók létre."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 80cd2603ba5ee47f861077d75a955037ffbde96e
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7f0481a09e2ff4ae06fc53011067050c3373d6bc
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="design-formats-to-dynamically-add-columns-to-excel-reports-as-horizontally-expandable-ranges"></a>Vízszintesen bővíthető tartományokat használó formátumok tervezése oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához
+# <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1-design-format"></a>ER Vízszintesen bővíthető tartományok használata oszlopok Excel-kimutatásokba történő dinamikus hozzáadásához (1. rész: Formátum kialakítása)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -36,8 +37,7 @@ A lépések végrehajtásához először hajtsa végre ezt a három feladat-útm
 
 „ER Pénzügyi dimenziók használata adatforrásként (2. rész: Modell hozzárendelése)”
 
-A sablon helyi példányát is le kell töltenie és mentenie, egy mintajelentés itt található, [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
-
+Ki kell töltenie és mentenie kell a sablon helyi másolatát az itt található mintajelentéssel [Pénzügyi dimenziók webszolgáltatásának mintajelentése](https://go.microsoft.com/fwlink/?linkid=862266).
 
 Ez az eljárás egy olyan funkcióra vonatkozik, amely a Dynamics 365 for Operations 1611-es verziójába került be.
 

@@ -1,25 +1,26 @@
 --- 
 title: "ER konfigurációk tervezése jelentések Word-formátumú előállításához"
-description: "A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy elektronikus jelentés (ER) formátumot kimenetek Microsoft Word-fájlként történő létrehozására."
+description: "A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként konfigurálhat egy elektronikus jelentés formátumot kimenetek Microsoft Word-fájlként történő létrehozására."
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>ER konfigurációk tervezése jelentések Word-formátumú előállításához
@@ -30,9 +31,9 @@ A következő lépések leírják, hogy egy rendszergazda vagy elektronikus jele
 
 Az alábbi lépések végrehajtásához először hajtsa végre az „ER-konfiguráció létrehozása az OPENXML formátumban létrejövő jelentésekre vonatkozóan” feladat-útmutató lépéseit. Előkészítésként le kell tölteni és menteni a következő sablonokat is helyileg a mintajelentéshez:
 
-[Kifizetési jelentés sablonja](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Kifizetési jelentés sablonja](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Kifizetési jelentés bekötött sablonja](https://go.microsoft.com/fwlink/?linkid=862266)
 
-[Kifizetési jelentés bekötött sablonja](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Ez az eljárás egy olyan funkcióra vonatkozik, amely a Microsoft Dynamics 365 for Operations 1611-es verziójába került be.
 
@@ -49,7 +50,7 @@ Ez az eljárás egy olyan funkcióra vonatkozik, amely a Microsoft Dynamics 365 
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Az Excel-sablon cseréje a Word-sablonra
     * Jelenleg az Excel-dokumentum használatos sablonként a kimenet OPENXML-formátumú előállításához. A jelentés sablonját Word-formátumban fogjuk importálni.  
 1. Kattintson a Mellékletek lehetőségre.
-    * A meglévő Excel-sablont cserélje le a korábban letöltött Kifizetési jelentés sablonja Word-sablonra. Megjegyzés: Ez a sablon csak az ER-kimenetként létrehozandó dokumentum elrendezését tartalmazza.  
+    * A meglévő Excel-sablont cserélje le a korábban letöltött SampleVendPaymDocReport.docx Word-sablonra. Megjegyzés: Ez a sablon csak az ER-kimenetként létrehozandó dokumentum elrendezését tartalmazza.  
 2. Kattintson a Törlés gombra.
 3. Kattintson az Igen gombra.
 4. Kattintson az Új lehetőségre.

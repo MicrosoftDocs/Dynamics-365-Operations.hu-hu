@@ -1,29 +1,30 @@
----
-title: "Menedzsment feltételeinek beállítása"
+--- 
+title: "A szabálytalanságkezelésre vonatkozó előfeltételek beállítása"
 description: "Engedélyezze a szabálytalanság kezelési folyamatokat ezen eljárások segítségével"
 author: perlynne
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, InventTestReportSetup, SysUserManagement, SysUserSetup, InventTestDiagnosticType, InventTestMiscCharges, InventTestOperation, InventProblemType, InventProblemTypeSetup, InventQuarantineZone
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
-ms.openlocfilehash: 9b5b05a3c00f093066a2714964bb99146427c3bc
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 0a4062acc91e024e3a0a41c0b3cb35ff5ffe2a4a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="set-up-prerequisites-for-management"></a>Menedzsment feltételeinek beállítása
+# <a name="set-up-prerequisites-for-nonconformance-management"></a>A szabálytalanságkezelésre vonatkozó előfeltételek beállítása
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -38,7 +39,7 @@ Engedélyezze a szabálytalanság kezelési folyamatokat ezen eljárások segít
 4. Adjon meg egy számot az Órabér mezőben.
     * Az Órabér mező segítségével adja meg az óradíjat a helyi pénznemben. A rendszer az óradíjjal számítja ki a szabálytalansággal kapcsolatos műveletek költségeit. Az óradíj és a számított költségek csak a szabálytalanságokra vonatkoznak, más funkciókat nem érintenek.  
 5. Kattintson a Jelentés-beállítás elemre.
-    * Ez az oldal lehetővé teszi a különböző minőségirányítási jelentésekhez használandó minőségi-jelentés megjegyzéstípusainak meghatározását.  
+    * Ez az oldal lehetővé teszi a különféle minőségirányítási jelentésekhez használandó minőségi-jelentés megjegyzéstípusainak meghatározását.  
 6. Zárja be a lapot.
 7. Zárja be a lapot.
 
@@ -101,4 +102,5 @@ Engedélyezze a szabálytalanság kezelési folyamatokat ezen eljárások segít
 3. Írjon be egy értéket a Karanténzónák mezőbe.
 4. A Leírás mezőben adjon meg egy értéket.
 5. Zárja be a lapot.
+
 

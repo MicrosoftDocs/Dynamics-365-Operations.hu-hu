@@ -1,33 +1,34 @@
 --- 
-title: "A kézi csomagolás beállítása (csak 2016. február és május)"
+title: "A kézi csomagolás beállítása (2016. február és 2016. május)"
 description: "A csomagolási folyamat lehetővé teszi az érvényesítést és a termékek tárolókba történő csomagolását."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/04/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7f992a6a1655cd868d79228c490d59b46bfae715
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: b90b4a71e2447e942dbb4a9645ef93064da630d3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="set-up-manual-packing-february--may-2016-only"></a>A kézi csomagolás beállítása (csak 2016. február és május)
+# <a name="set-up-manual-packing-february-2016--may-2016"></a>A kézi csomagolás beállítása (2016. február és 2016. május)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-A csomagolási folyamat lehetővé teszi az érvényesítést és a termékek tárolókba történő csomagolását. Ebben a folyamatban a raktárosok a tárolási helyekből helyezik át a termékeket és azon csomagolási állomásra helyezik át ezeket, ahol a cikk mennyiségét és minőségét ellenőrzik, illetve hozzárendelik ezeket a megfelelő tárolókhoz. Amikor a tároló teljesen tele van, bezárhatja, illetve áthelyezheti a kiszállítási területekre, és a termékek készen állnak a szállításra. Ez az eljárás az USMF bemutatócéget használja.
+A csomagolási folyamat lehetővé teszi az érvényesítést és a termékek tárolókba történő csomagolását. Ebben a folyamatban a raktárosok a tárolási helyekből helyezik át a termékeket és azon csomagolási állomásra helyezik át ezeket, ahol a cikk mennyiségét és minőségét ellenőrzik, illetve hozzárendelik ezeket a megfelelő tárolókhoz. Amikor a tároló teljesen tele van, bezárhatja, illetve áthelyezheti a kiszállítási területekre, és a termékek készen állnak a szállításra. Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás csak a Dynamics 365 for Operations 2016. februári és 2016. májusi verzióira vonatkozik.
 
 
 ## <a name="set-up-location-profiles"></a>Helyprofilok beállítása

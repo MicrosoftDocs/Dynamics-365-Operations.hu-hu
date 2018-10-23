@@ -3,7 +3,7 @@ title: "Előlegre jogosultak"
 description: "Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre jogosulti funkciójáról."
 author: LizaGolub
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: e6e295390ee42da4de2ae740ba7f04f3caee6234
-ms.openlocfilehash: 289e29d33ba9e3b96e03713d52565967ed2afcc1
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: 1fc13461ab166d8f20ea2f56f641c86c3172f33b
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -34,12 +34,16 @@ Tudjon meg többet a Microsoft Dynamics 365 for Finance and Operations előlegre
 *Előlegre jogosultnak* egy vállalat azon alkalmazottját nevezzük, aki egy a szervezet által biztosított költségösszegért felel. Előlegre jogosult csak vállalati dolgozó lehet. Beszerzéskor az előlegre jogosult jelenti a vállalatnak a foganatosított kiadásokat. A vállalat a költség összegét megtéríti az alkalmazottnak. A vállalat minden előlegre jogosult egyenlegét vezeti. Az Észtország, Lettország, Litvánia, Lengyelország, Cseh Köztársaság, Magyarország és Oroszország területén működő jogi személyek felhasználói a szervezet által biztosított költségösszegért felelős alkalmazottak által végzett műveletekre vonatkozó konkrét tranzakciókat kezelhetnek.
 
 ## <a name="set-up-an-advance-holder"></a>Előlegre jogosult beállítása
-Előlegre jogosult beállításához a következő feladatokat kell sorrendben elvégezni.
-1.  Előlegre jogosult csoportok létrehozása.
-2.  Alkalmazott feladási sablonjának beállítása.
-3.  Kötelezettségek paramétereinek beállítása.
-4.  Konkrét fizetési feltételek létrehozása az előlegre jogosult számára.
-5.  Előlegre jogosult létrehozása.
+Ez a szakasz végigvezeti az előlegre jogosult beállításán. A jelen részben az alábbi sorrendben hajtsa végre a feladatokat:
+
+> [!div class="checklist"]
+> * 1. Előlegre jogosult csoportok létrehozása
+> * 2. Alkalmazott feladási sablonjának beállítása
+> * 3. Kötelezettségek paramétereinek beállítása
+> * 4. Konkrét fizetési feltételek létrehozása az előlegre jogosult számára
+> * 5. Konkrét fizetési feltételek létrehozása az előlegre jogosult számára
+> * 6. Előlegre jogosult létrehozása
+
 
 ### <a name="advance-holder-groups"></a>Előlegre jogosult csoportok
 
@@ -79,20 +83,32 @@ Az előlegre jogosult tranzakcióinak tükrözéséhez be kell állítania a kö
 ### <a name="terms-of-payment-for-advance-holder"></a>Előlegre jogosultra érvényes fizetési feltételek
 
 Beszerzési rendelés előlegre jogosulton keresztül történő megfelelő rögzítéséhez és feladásához olyan fizetési feltételeket kell használnia, amelyeknél a **Kezdő előlegre jogosult** beállítás értéke **Igaz**.
-### <a name="create-an-advance-holder-creation"></a>Előlegre jogosult létrehozása
 
-Előlegre jogosult létrehozása előtt beállított dolgozókkal kell rendelkeznie. További tudnivalókért lásd: [Dolgozó adatainak megadása (Feladat-útmutató).](../../fin-and-ops/hr/tasks/enter-worker-information.md) Használja az **Előlegre jogosultak** oldalt a dolgozó előlegre jogosultként történő beállításához. Válassza ki a dolgozót, akit előlegre jogosultként kíván használni, kattintson a **Szerkesztés** elemre, majd állítsa az **Előlegre jogosult** lehetőséget **Igaz** értékre. A következő mezőket szintén ki kell töltenie.
+### <a name="create-an-advance-holder"></a>Előlegre jogosult létrehozása
 
-|                |                                                                                             |
-|----------------|---------------------------------------------------------------------------------------------|
-| **Mező**      | **Leírás**                                                                             |
-| **Csoport**      | Válasszon ki előlegre jogosult csoportot.                                                             |
-| **Sorozatok**     | Adja meg a dokumentumsorozatot, amely az előlegre jogosult azonosítására szolgál. |
-| **Szám**     | Adja meg a dokumentum számát, amely az előlegre jogosult azonosítására szolgál. |
-| **Kiadás dátuma** | Válassza ki vagy írja be a dokumentum kibocsátási dátumát.                                                    |
-| **Kiállította:**  | Adja meg az okmányt kiállító hatóság vagy személy részleteit.                       |
+Előlegre jogosult létrehozása előtt beállított dolgozókkal kell rendelkeznie. További tudnivalókért lásd: [Dolgozó adatainak megadása (Feladat-útmutató).](../../fin-and-ops/hr/tasks/enter-worker-information.md) 
+
+1. Válassza a **Kötelezettségek** \> **Előlegre jogosultak** \> **Előlegre jogosultak** elemet.
+
+    > [!NOTE]
+    > Nem lehet hozzáadni vagy törölni alkalmazottakat az **Előlegre jogosultak** lapon. Az alkalmazottakat előbb fel kell venni az **Emberi erőforrások** modulban. Az **Alkalmazott feladási sablonjai** lapon beállíthatja az előlegre jogosultak egyenlegeinek feladására szolgáló alkalmazotti feladási profilt.
+
+2. Jelöljön ki egy alkalmazottat, és kattintson a **Szerkesztés** gombra.
+3. Az **Általános** gyorslapon állítsa az **Előlegre jogosult** lehetőséget **Igen** értékre, mert ezzel jelezheti, hogy az alkalmazott előlegre jogosult.
+4. A **Csoport** mezőben válassza ki azt az előlegre jogosult csoportot, amelyhez az alkalmazott tartozik.
+5. Az **Azonosító bizonylat** pontnál adja meg, egy azonosító dokumentum részletes adatait.
+    - **Sorozat** – Adja meg a dokumentumsorozatot, amely az előlegre jogosult azonosítására szolgál.
+    - **Szám** – Adja meg a dokumentum számát, amely az előlegre jogosult azonosítására szolgál.
+    - **Kiadás dátuma** – Válassza ki vagy írja be a dokumentum kibocsátási dátumát.
+    - **Kiállította:** – Adja meg az okmányt kiállító hatóság vagy személy részleteit.
+6. Kattintson a **Mentés** lehetőségre, vagy zárja be az oldalt.
+
+> [!NOTE]
+> Ha az **Előlegre jogosultak rendezése** beállítás értéke **Igen** a **Kötelezettségek paraméterei** oldalon, akkor az előlegre jogosultak a rács tetején jelennek meg az **Előlegre jogosultak** lapon.
+
 
 ## <a name="advance-holder-inquiries-and-reports"></a>Előlegre jogosulttal kapcsolatos lekérdezések és jelentések
+
 ### <a name="advance-holder-transactions-inquiry"></a>Előlegre jogosult tranzakcióinak lekérdezése
 
 Előlegre jogosult tranzakcióinak listájához kattintson a **Tranzakciók** gombra az **Előlegre jogosultak** oldalon. Az összes előlegre jogosult tranzakcióinak megtekintéséhez vagy előlegre jogosultak tranzakcióin alapuló konkrét lekérdezés létrehozásához kattintson a **Kötelezettségek** &gt; **Lekérdezések és jelentések** &gt; **Előlegre jogosultakkal kapcsolatos lekérdezések és jelentések** &gt; Tranzakciók elemre. Kattintson a **Bizonylat** elemre a **Bizonylattranzakciók** oldal megnyitásához.
@@ -143,6 +159,7 @@ A bizonylatnapló feldolgozása után, amennyiben az **Átutalandó összeg** me
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Előleg alkalmazotthoz (Kelet-Európa)](tasks/advance-payment-employee.md)
+- [Előlegre jogosultak Oroszország esetén](rus-advance-holders.md)
 
 
 

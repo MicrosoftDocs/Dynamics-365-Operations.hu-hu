@@ -8,10 +8,12 @@
       href: get-started/before-you-buy.md
     - name: Regisztrálás az előfizetés előnézetére
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: Demókörnyezet telepítése
+    - name: Bemutatókörnyezet telepítése
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Telepítési beállítások
       href: dev-itpro/choose-deployment.md
+    - name: Támogatás kérése a Retail alkalmazáshoz
+      href: retail-support.md
 - name: A végrehajtási életciklus megértése
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -35,9 +37,9 @@
       href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
     - name: Több LCS-projekt és termelési környezet végrehajtása ugyanazon az Azure Active Directory-bérlőn
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-    - name: Finance and Operations – Retail projektek végrehajtása
+    - name: Finance and Operations Retail-projektek megvalósítása
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: 'Új környezetek, VSTS-ek és alágak beállítása a Retail-projektekhez'
+    - name: 'Új környezetek, Azure DevOps és alágak beállítása a Retail-projektekhez'
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Kód és környezetek frissítése a Retail-projekteknél
       href: dev-itpro/updating-environments.md
@@ -303,8 +305,16 @@
       href: ../talent/departments-jobs-positions.md
     - name: Feladat összetevőinek beállítása
       href: ../talent/create-job.md
-- name: Honosítási és szabályozó funkciók
+- name: Honosítási és szabályozó funkciók​
   items:
+    - name: Kelet-Európa
+      items:
+        - name: Retail előlegszámlák (Kelet-Európa)
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Retail pénztárkezelés (Kelet-Európa)
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Retail vevői számlák és eladási visszárurendelések a kelet-európai országokban
+          href: localizations/emea-eeu-retail-invoices.md
     - name: Franciaország
       items:
         - name: Pénztárgép funkció
@@ -317,6 +327,8 @@
           href: localizations/apac-ind-cash-registers.md
         - name: Pénztárgépek telepítésére vonatkozó irányelvek
           href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: Frissítés és N-1 támogatása (India)
+          href: localizations/apac-ind-n-1-for-india.md
     - name: Norvégia
       items:
         - name: Pénztárgép funkció

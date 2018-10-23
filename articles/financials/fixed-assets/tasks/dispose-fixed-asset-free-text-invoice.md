@@ -10,41 +10,35 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 24c7721a1e5467e98e6c4d245f1d8e24a973f5aa
+ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
+ms.openlocfilehash: 1b1c9719f0697e9d5a51b0e769b3f850dc1690e5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/24/2018
 
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Tárgyi eszköz kivezetése szabadszöveges számlával
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ez a folyamat bemutatja, hogyan szerezhető be tárgyi eszköz a Tárgyi eszközök naplójában található Beszerzési javaslat segítségével. Ez a könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.
+Ez az eljárás bemutatja, hogyan értékesíthető egy tárgyi eszköz szabadszöveges számla használatával.
 
-1. Ugorjon a Tárgyi eszközök > Naplóbejegyzések > Tárgyi eszközök naplója pontra.
+1. Ugorjon a Kinnlévőségek > Számlák > Kizárólag szabadszöveges számlák pontra.
 2. Kattintson az Új lehetőségre.
-3. A Név mezőben adjon meg vagy válasszon ki egy értéket.
-4. Kattintson a Sorok pontra.
-5. Kattintson a Javaslatok elemre.
-6. Kattintson a Beszerzési javaslat elemre.
-7. Kattintson a Szűrő parancsra.
-8. A korábbi értékek törléséhez kattintson az Alaphelyzetre.
-9. Válassza ki a Tárgyieszköz-szám elnevezésű sort.
-10. A Feltétel mezőben adjon meg vagy válasszon ki egy értéket.
-    * Állítsa be a javaslat kapcsán beszerezni kívánt tárgyi eszközökre vonatkozó további feltételeket.  
-11. Kattintson az OK gombra.
-12. Kattintson az OK gombra.
-    * Erősítse meg a létrehozott tranzakciós sorokat.  
-    * A beszerzési javaslat kizárólag az értékmodellben beállított beszerzési dátummal és beszerzési árral rendelkező tárgyi eszközöket veszi figyelembe.  
-13. Kattintson a Könyvek lapra.
-14. Kattintson a Feladás lehetőségre.
+3. A Vevőszámla mezőben adjon meg vagy válasszon ki egy értéket.
+4. Ellenőrizze, és szükség szerint módosítsa a számla alapértelmezett dátumát.
+5. Ellenőrizze a hátralévő alapértelmezett fejlécmezőket, például a pénznemét, és ha szükséges, módosítsa.
+6. Adjon meg egy leírást a számlasorban.
+7. Adja meg vagy válassza ki a a számlasor fő számláját.
+8. Ellenőrizze az alapértelmezett áfacsoportot és a cikk áfacsoportját.
+9. Írja be az egységárat vagy a tárgyi eszköz értékesítésének összegét.
+10. Kattintson az Sor részletei lehetőségre.  
+11. Válassza ki az értékesítendő tárgyi eszköz számát.
+12. Kattintson a Feladás lehetőségre.
 
 

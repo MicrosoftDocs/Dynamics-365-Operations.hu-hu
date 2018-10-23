@@ -3,7 +3,7 @@ title: "Lean szervezeti modellezése"
 description: "A cikk a lean szervezet modellezésében szereplő kulcsokról nyújt tájékoztatást."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c8e24234cfa54dcbbf3638c31ced7fb83881bb9f
+ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
+ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 09/24/2018
 
 ---
 
@@ -40,20 +40,22 @@ A termelési rendeléseken alapuló termelési esetekben az anyagok egy adott te
 
 A szállítási átfutási idők és a munkaközpontokban a kötegtermelés miatt keletkező felesleges készletek csökkentése érdekében a lean manufacturing bevezeti a kanban feltöltést és a gyártásban és a raktárfeltöltésben található szupermarketeket. Ezek a funkciók általában megszakítják a részlegesen független kanban-ciklusok termelését. Egy félkész termékre vonatkozó kanban feltöltést nem indít el egy befejezett termékre vonatkozó rendelés. 
 
-A termelés és a Microsoft Dynamics 365 for Finance and Operations alkalmazásban javasolt különböző kanban-esetek költségkörnyezetének újraindításához, a tevékenység alapú termelési folyamatok alkották a lean manufacturing gerincét. Az összes kanbanszabály erre az előre definiált szerkezetre hivatkozik. A tevékenység-alapú modell támogatja a többféle esetek beállítását, mint a Dynamics AX Lean manufacturing korábbi eseteit. Azonban ez a modell nem adható hozzá az üzemi dolgozók összetettségéhez, mert az összes eset ugyanazt a tevékenység-alapú felhasználói felületet használja.
+A termelés és a Microsoft Dynamics 365 for Finance and Operations alkalmazásban javasolt különböző kanban-esetek költségkörnyezetének újraindításához, a tevékenység alapú termelési folyamatok alkották a lean manufacturing gerincét. Az összes kanbanszabály erre az előre definiált szerkezetre hivatkozik. A tevékenységalapú modell támogatja a forgatókönyvek széles skálájának beállítását. Azonban ez a modell nem adható hozzá az üzemi dolgozók összetettségéhez, mert az összes eset ugyanazt a tevékenység-alapú felhasználói felületet használja.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Félkész termékek (nem BOM-szintek)
-A Microsoft Dynamics AX Lean manufacturing egyesíti a raktározott termékek és a félkész termékek kanbanjait egyetlen keretrendszerben, és azonfelül egységes felhasználói tapasztalatot nyújt minden esethez. A kiegészítő architektúra miatt a további Anyagjegyzékszinteket már nem kell bevezetni a félkész termékekhez használatos kanban-ok engedélyezéséhez. A felépítése minimálisra csökkentheti a készlet tranzakcióit.
+A Lean manufacturing egyesíti a raktározott termékek és a félkész termékek kanbanjait egyetlen keretrendszerben, és azonfelül egységes felhasználói tapasztalatot nyújt minden esethez. A kiegészítő architektúra miatt a további Anyagjegyzékszinteket már nem kell bevezetni a félkész termékekhez használatos kanban-ok engedélyezéséhez. A felépítése minimálisra csökkentheti a készlet tranzakcióit.
 
 ## <a name="products-and-material-in-work-in-progress"></a>Termékek és anyagok folyamatban
 A kötegek méreteinek csökkentése az ideális állapotra a lean manufacturing egyetlen folyamatában drámai növekedést eredményezhet a készlettranzakciókban, ha minden egyes kitárolási folyamat vagy kanbanregisztrálás tranzakciókat hoz létre a felhasznált cikkekhez. A termelési folyamat architektúrája lehetővé teszi az anyagtranszfer számára a termelési folyamathoz a kiszállítási kanbanok tároló vagy szállítási anyagkezelési egységek visszavonását. A kiadott anyagok értéke a termelési folyamathoz kapcsolódó folyamatban lévő termelés számlájához kerül hozzáadásra. Ez a viselkedés hasonlít egy termelési rendelésre kiadott anyag viselkedésére. Ugyanez az elv alkalmazható a termékekhez és a félkész termékekhez. Kivéve, ha ezeket a termékeket létrehoztak, átvittek vagy felhasználtak a termelési folyamatban, a készlettranzakciók választhatók. Miután a termékeket feladták a készletbe, a termelési folyamat befejezetlen termelésszámlája csökken a vonatkozó standard költség visszatérítésével.
 
 ## <a name="value-streams-and-value-stream-mapping"></a>Érték-előállítási folyamatok és érték-előállítási folyamat feltérképezése
-A Microsoft Dynamics AX Lean manufacturing architektúrája Womack és Jones által megalkotott 5 Lean alapelven alapszik: Vevői érték, Érték-előállítási folyamat, Áramlás, lekérés és tökéletesség. A megvalósító lean manufacturing megoldásokra vonatkozó egy jóváhagyott módszere a gyártás fizikai világában az érték-előállítási folyamat feltérképezése (VSM). Ezt a módszert Rother és Shook a "Tanuljunk meg látni" című publikációjukban vezették be a Lean Manufacturing Intézetben. 
+A Lean manufacturing architektúrája Womack és Jones által megalkotott 5 Lean alapelven alapszik: Vevői érték, Érték-előállítási folyamat, Áramlás, lekérés és tökéletesség. A megvalósító lean manufacturing megoldásokra vonatkozó egy jóváhagyott módszere a gyártás fizikai világában az érték-előállítási folyamat feltérképezése (VSM). Ezt a módszert Rother és Shook a "Tanuljunk meg látni" című publikációjukban vezették be a Lean Manufacturing Intézetben. 
 
-A Dynamics AX-ben a jövőbeli állapotú érték a termelési folyamat verziójaként lehet modellezni. Az érték-előállítási folyamat minden folyamata folyamattevékenységként kerül modellezésre. A mozgásokat vagy átviteleket transzfertevékenységekként lehet modellezni, ha a transzferállapotot regisztrálni kell vagy készletkitárolással, esetleg összevont szállítással ellátott integráció szükséges. 
+A Finance and Operations szolgáltatásban a jövőbeli állapotú érték a termelési folyamat verziójaként lehet modellezni. Az érték-előállítási folyamat minden folyamata folyamattevékenységként kerül modellezésre. A mozgásokat vagy átviteleket transzfertevékenységekként lehet modellezni, ha a transzferállapotot regisztrálni kell vagy készletkitárolással, esetleg összevont szállítással ellátott integráció szükséges. 
 
-Az érték-előállítási folyamatot egy üzemi egységként lehet modellezni a Microsoft Dynamics AX-ben. Emiatt az érték-előállítási folyamatot a pénzügyi dimenziókban is lehet használni.
+Az érték-előállítási folyamatot egy üzemi egységként lehet modellezni. Emiatt az érték-előállítási folyamatot a pénzügyi dimenziókban is lehet használni.
+
+További információ üzemi egységekről: [Üzemi egység létrehozása](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>A lean manufacturing költségszámítása a termelési folyamaton alapszik.
 A termelési folyamatra vonatkozó költségek időszakos konszolidációja korrigálja az érintett befejezetlen termelés számlát és lehetővé teszi a termelési folyamat által megadott termékek számára meghatározandó variánsokat.
@@ -62,7 +64,7 @@ A termelési folyamatra vonatkozó költségek időszakos konszolidációja korr
 A hatékonyabb folyamatos javítás érdekében a termelési folyamatok idő-érvényességi verziókban kerülnek alkalmazásra. Ezért a meglévő termelésifolyamat-verziót az összes kapcsolódó kanban-szabályokkal együtt a termelési folyamat jövőbeli verzióiban másolhatók. Ezenkívül a jövőbeli állami termelési folyamat modellezhető a termelés érvényesítése és aktiválása előtt. A gördülékeny anyagáramlás garantálásához az áttérési dátumon és kívül, a termelési folyamatverziókból származó meglévő kanbanjai automatikusan kapcsolódnak az új verzióhoz.
 
 ## <a name="simplicity"></a>Egyszerűség
-A Lean manufacturing a Dynamics AX-ben történő feldolgozásához a termelési folyamat és tevékenység megközelítést választjuk, amely lehetővé teszi egyszerű és komplex termelési esetek modellezését egy méretezhető architektúrában. Jobban megvizsgálva a tevékenységkoncepciót egy új egyszerűsítés fedezhető fel, azoknak a felhasználóknak akiknek szükségük van rá: az üzemirányítóknak és a logisztikai dolgozóknak. Készlettranzakció helyett tevékenység alapú feladatok jelentésével egy egységes felhasználói felület alakítható ki az összes lean manufacturing variánshoz, amivel az üzlet bonyolultsága a felhasználói felületről a helyére kerül: a termelési folyamathoz, ami a lean manufacturing gerince.
+A Lean manufacturing feldolgozásához a termelési folyamat és tevékenység megközelítést választjuk, amely lehetővé teszi egyszerű és komplex termelési esetek modellezését egy méretezhető architektúrában. Jobban megvizsgálva a tevékenységkoncepciót egy új egyszerűsítés fedezhető fel, azoknak a felhasználóknak akiknek szükségük van rá: az üzemirányítóknak és a logisztikai dolgozóknak. Készlettranzakció helyett tevékenység alapú feladatok jelentésével egy egységes felhasználói felület alakítható ki az összes lean manufacturing variánshoz, amivel az üzlet bonyolultsága a felhasználói felületről a helyére kerül: a termelési folyamathoz, ami a lean manufacturing gerince.
 
 
 

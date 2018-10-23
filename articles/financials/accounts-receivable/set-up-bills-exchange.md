@@ -3,7 +3,7 @@ title: "Váltók beállítása"
 description: "Ez a témakör azt ismerteti, hogy miként lehet beállítani a váltókat."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4dfc6cc2fcbca18f3dde833917ae68a5f254643b
+ms.sourcegitcommit: c9d6866bb994cb9fb411bdd6a9ccae0e67d2d6f3
+ms.openlocfilehash: cda597b1d99e99ac5c5c396bcfcec9c0712f0eb1
 ms.contentlocale: hu-hu
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -38,6 +38,7 @@ A váltó olyan írott vagy elektronikus dokumentum, melyet a vevő állít ki a
 -   Az esedékesség ideje előtt, általában a vevőre vonatkozó fizetési feltételekben meghatározott engedmény dátumakor. A tranzakció feladásakor az engedmény összege egy költségszámlára küldhető el. A fennmaradó összeg az Ön kötelezettsége, amíg a bank meg nem kapja a fizetést a vevőtől. Ennek a megközelítésnek a neve engedményes beszedés.
 
 ## <a name="set-up-posting-profiles-for-bills-of-exchange"></a>Feladási profilok beállítása váltókhoz
+
 A **Vevő feladási profiljai** oldalon beállíthatja a váltókkal, az óvatolt váltókkal, a beszedésekkel és az engedményes beszedésekkel használandó feladási profilokat. Az **Összegzett számla** mezőben válassza ki azt az összegző számlát, amelyre a váltókat fel kell adni. A számla terhelése vagy jóváírása a váltótranzakció típusától függően történik:
 -   Váltók esetén ezen a számlán a váltó feladásakor egy tartozik tétel, a beszedés vagy az engedményes beszedés feladásakor pedig egy követel tétel jelenik meg.
 -   Az óvatolt váltók esetén az óvatolt váltó feladásakor ezen a számlán egy tartozik tétel jelenik meg.
@@ -47,8 +48,11 @@ A **Vevő feladási profiljai** oldalon beállíthatja a váltókkal, az óvatol
 A **Számla kiegyenlítése** mezőben válassza ki azt a készpénzes számlát, amelyre a váltók összegét feladja. A váltók kiegyenlítésekor ezen a számlán egy tartozik tétel jelenik meg. Az **Áfaelőlegek** mezőben válassza ki azt az összegző számlát, amelyre az áfaösszegeket fel kell adni, ha az előlegek kifizetéséhez váltókat használnak. Az engedményes beszedések esetén a **Kötelezettségek az engedményszámlához** mezőben válassza ki azt a számlát, amelyre az engedmény összegét fel szeretné adni. Ezen a számlán az engedményes beszedés feladásakor egy követel tétel jelenik meg.
 
 ## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>A váltók kinnlevőség-paraméterek beállítása
-A **Kinnlevőségek paraméterei** oldalon a váltók alapértelmezett feladási profiljait a **Főkönyv és áfa** lapon adhatja meg. A számsorozatok a **Számsorozatok** lapon vannak megadva. Állítson be váltónapló-neveket
-------------------------------------------
+
+A **Kinnlevőségek paraméterei** oldalon a váltók alapértelmezett feladási profiljait a **Főkönyv és áfa** lapon adhatja meg. A számsorozatok a **Számsorozatok** lapon vannak megadva.
+
+## <a name="set-up-journal-names-for-bills-of-exchange"></a>Váltónaplók neveinek beállítása
+
 
 A **Naplónevek** lapon a váltókhoz legalább öt naplónevet létre kell hoznia. A naplók típusai a következők:
 -   **Vevői váltókiállítás** – Hozzon létre egy nevet a vevői váltókiállítás naplója számára.
@@ -58,24 +62,24 @@ A **Naplónevek** lapon a váltókhoz legalább öt naplónevet létre kell hozn
 -   **Vevői váltókiegyenlítés** – Hozzon létre egy nevet a vevői váltókiegyenlítés naplója számára.
 
 A váltónaplók megfelelő naplóbizonylati oldalán adja meg a váltóval kapcsolatos adatokat a **Váltó** lapon. Miután feladta a váltó naplósorait, megtekintheti őket a **Váltónapló lekérdezése** oldalon és a **Váltóstatisztika** oldalon.
-Váltók kifizetési módjainak beállítása
------------------------------------------------
+
+## <a name="set-up-methods-of-payment-for-bills-of-exchange"></a>Váltók kifizetési módjainak beállítása
 
 A **Fizetési módok** oldalon állítson be legalább egy fizetési módot a váltókhoz. Ha több bankkal is kapcsolatban áll, akkor minden egyes bankhoz állítson be egy olyan kifizetési módot, amely megfelel a bank által megkövetelt váltófizetési formátumnak.
-Váltók kifizetési díjainak beállítása
------------------------------------------
+
+## <a name="set-up-payment-fees-for-bills-of-exchange"></a>Váltók kifizetési díjainak beállítása
 
 A kifizetési díj a kifizetések vevőktől való beszedéséért fizetendő díj. Minden kifizetési díjhoz több kifizetési díjbeállítási sor tartozhat. A beállítási sorokkal határozhatja meg a kifizetési díjak alapértelmezett összegének kiszámítását. Például létrehozhat beállítási sorokat fizetési módokhoz, kifizetési előírásokhoz, pénznemekhez és időszakokhoz. Emellett létrehozhat beállítási sorokat napi intervallumokon alapuló százalékhoz vagy összeghez. Például létrehozhat beállítási sorokat a fizetési módokhoz, fizetési szabályokhoz, pénznemekhez, időszakokhoz és napintervallumokon alapuló százalékhoz vagy összeghez, mint például kamatszázalék a késedelmes fizetési időszak hossza alapján. Ha a bank más-más díjat számít fel a különböző átutalási típusokért, például a **Beszedés** vagy az **Engedmény** típusért, akkor külön kifizetésidíj-sorokat állíthat be mindegyik átutalási típushoz.
-Átutalási díjak beállítása banki átutalási fájlokhoz
-------------------------------------------------
+
+## <a name="set-up-remittance-fees-for-bank-remittance-files"></a>Átutalási díjak beállítása banki átutalási fájlokhoz
 
 A **Bankszámlák** oldalon minden generált átutalási fájlhoz külön beállíthatja azokat az átutalási díjakat, amelyeket a banknak kell fizetni az átutalásért. Az átutalási díjak feladása akkor történik meg, amikor a bank visszaigazolta az átutalást, és a díj realizált összege ismertté válik. Az átutalási díjak különböznek a kifizetési díjaktól, amelyek a vevőket terhelik, és a naplósorokhoz kapcsolódnak.
-Váltódokumentumok elrendezésének beállítása
----------------------------------------------
+
+## <a name="set-up-document-layouts-for-bills-of-exchange"></a>Váltódokumentumok elrendezésének beállítása
 
 A **Bankszámlák** oldalon kattintson a **Beállítás** lehetőségre, és adjon meg egy dokumentum-elrendezést minden olyan bankszámlához, amelyekhez nyomtatható váltódokumentumokat fog előállítani.
-A váltók beállítása a vevőknél
---------------------------------------
+
+## <a name="set-up-customers-for-bills-of-exchange"></a>A váltók beállítása a vevőknél
 
 A **Vevők** lapon minden vevőnél, amely megállapodás alapján váltóval fizethet, beállíthat egy váltókhoz tartozó alapértelmezett kifizetési módot a **Fizetési alapértelmezések** lapon.
 

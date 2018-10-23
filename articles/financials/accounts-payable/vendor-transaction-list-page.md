@@ -1,6 +1,6 @@
 ---
-title: "Szállítói tranzakciók listája oldal"
-description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations a Szállítói tranzakció lista oldalát mutatja be."
+title: "Szállítói tranzakciók listaoldala"
+description: "Ez a témakör a Microsoft Dynamics 365 for Finance and Operations Szállítói tranzakciók lista oldalát mutatja be."
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
@@ -14,36 +14,88 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
-ms.search.validFrom: 2018-08-30
-ms.dyn365.ops.version: 8.0.4
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
-ms.openlocfilehash: 1ef7d97f059801f2fb2c0d451546b57055208f81
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: 53740f6ed0d463de5ba962f1ba15b208634a0739
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/31/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
-# <a name="vendor-transaction-list-page"></a>Szállítói tranzakciók listája oldal
+# <a name="vendor-transactions-list-page"></a>Szállítói tranzakciók listaoldala
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="view-settlements"></a>Kiegyenlítések megjelenítése
 
-A **Kiegyenlítések megjelenítése** a műveleti panelen gyorsan hozzáférhet a kiegyenlítési előzményekhez és a teljes kiegyenlítés tranzakció további adataihoz. További kapcsolódó tranzakciókat is megjeleníthet, amelyek kapcsolódna a kiválasztott tranzakcióhoz vagy azért, mert ugyanazon kiegyenlítés részei vagy azért, mert olyan fizetések, amelyeket ugyanazon fizetési naplóban hoztak létre.
+A műveleti panel **Kiegyenlítések megjelenítése** gombjával gyorsan hozzáférhet a kiegyenlítési előzményekhez és a teljes kiegyenlítés tranzakció további adataihoz. További kapcsolódó tranzakciókat is megjeleníthet, amelyek kapcsolódna a kiválasztott tranzakcióhoz vagy azért, mert ugyanazon kiegyenlítés részei vagy azért, mert olyan fizetések, amelyeket ugyanazon fizetési naplóban hoztak létre.
 
 1. Válassza a **Kötelezettségek \> Minden szállító** lehetőséget.
-2. Válasszon ki egy szállítót, amelyekhez tranzakciók tartoznak, majd válassza a **Szállító \> Tranzakciók** lehetőséget.
-3. Válasszon egy tranzakciót a kutatáshoz
-4. Válassza ki a **Kiegyenlítések megjelenítése** lapot a műveleti panelen.
+2. Válasszon ki egy szállítót, amelyikhez tranzakció tartozik, és ezt követően a műveleti ablak **Szállító** lapján válassza a **Tranzakciók** elemet.
+3. Válassza ki a kivizsgálni kívánt tranzakciót, majd a műveleti panelen válassza a **Kiegyenlítések megjelenítése** lehetőséget.
 
-    A **Kiegyenlítések megjelenítése** párbeszédpanel megnyílik, és mutatja a kijelölt tranzakciót minden dokumentumot, amelyek ki lettek egyenlítve vele szemben. Ezen a párbeszédpanelen hasonlít a kiegyenlítési előzmények nézetre, de az összes kapcsolódó dokumentumot tartalmazza.
+    A **Kiegyenlítések megjelenítése** párbeszédpanel mutatja a kijelölt tranzakciót és minden dokumentumot, amelyek ki lettek egyenlítve vele szemben. Ezen a párbeszédpanelen hasonlít a kiegyenlítési előzmények nézetre, de az összes kapcsolódó dokumentumot tartalmazza.
 
-5. Ezen a párbeszédpanelen a különböző feladatok hajthatók végre. Válasszon ki egy vagy több bizonylatot majd, válassza ki az alábbi menük egyikét:
+4. A párbeszédpanelen a különböző feladatok hajthatók végre. Válasszon ki egy vagy több bizonylatot majd, válassza ki az alábbi gombok egyikét:
 
-   - **Könyvelés megtekintése** – A kiválasztott dokumentumhoz kapcsolódó összes bizonylat megtekintése. A **Bezárás** gombbal zárja be a párbeszédpanelt.
-   - **Exportálás** – A kijelölt bizonylatok exportálása az Microsoft Excelbe.
-   - **Kapcsolódó fizetések megtekintése** – a fizetési napló összes tranzakciója jelenik meg, amely a kifizetési naplóban lett létrehozva és kapcsolódik a dokumentumhoz. Ezenkívül ezek a kifizetésekhez kapcsolódó valamennyi kiegyenlítés jelenik meg. A menü címkéje is módosul: **Kiegyenlítések megjelenítése**. Válassza a **Kiegyenlítések megjelenítése** lehetőséget hogy csak azokat a tranzakciókat jelenítse meg, amelyek meg lettek jelenítve amikor először nyitotta meg a  **Kiegyenlítések megjelenítése** párbeszédpanelt.
-    - **Tranzakciók kiegyenlítése** – Ez a menü jelenik meg, ha a kiválasztott eredeti dokumentum nem lett teljesen kiegyenlítve. Ha bejelöli ezt a **Tranzakciók kiegyenlítése** párbeszédpanel jelenik meg, ahol kiválaszthatja a tranzakciókat a kiegyenlítéshez.
-    - **Kiegyenlítések visszavonása** – Ez a menü jelenik meg, ha a kiválasztott eredeti dokumentum teljesen ki lett egyenlítve. Ha kiválasztja a **Kiegyenlítések visszavonása** párbeszédpanel jelenik meg, ahol visszavonhatók a dokumentumhoz végrehajtott kiegyenlítések.
+    - **Kapcsolódók megtekintése** – a fizetési napló összes tranzakciója jelenik meg, amely a kifizetési naplóban lett létrehozva és kapcsolódik a dokumentumhoz. Ezenkívül ezek a kifizetésekhez kapcsolódó valamennyi kiegyenlítés jelenik meg. Miközben megtekinti a kapcsolódó fizetéseket, a gombon a címke a **Kiegyenlítések megjelenítése** értékre vált. Válassza a **Kiegyenlítések megjelenítése** lehetőséget hogy csak azokat a tranzakciókat jelenítse meg, amelyek meg lettek jelenítve amikor először nyitotta meg a **Kiegyenlítések megjelenítése** párbeszédpanelt.
+    - **Előzmények megtekintése** – A bizonylatok kiegyenlítési előzményeinek megtekintése. A **Bezárás** gombbal zárja be a párbeszédpanelt.
+    - **Könyvelés megtekintése** – A kiválasztott dokumentumhoz kapcsolódó összes bizonylat megtekintése. A **Bezárás** gombbal zárja be a párbeszédpanelt.
+    - **Exportálás** – A kijelölt bizonylatok exportálása az Microsoft Excelbe.
+    - **Tranzakciók kiegyenlítése** – Ez a gomb csak akkor jelenik meg, ha a kiválasztott eredeti dokumentum nem lett teljesen kiegyenlítve. Ha kiválasztja ezt a gombot, a **Tranzakciók kiegyenlítése** párbeszédpanel jelenik meg, ahol kiválaszthatja a tranzakciókat a kiegyenlítéshez.
+    - **Kiegyenlítések visszavonása** – Ez a gomb csak akkor jelenik meg, ha a kiválasztott eredeti dokumentum teljesen ki lett egyenlítve. Ha kiválasztja ezt a gombot, megjelenik a **Kiegyenlítések visszavonása** párbeszédpanel jelenik meg, ahol visszavonhatók a dokumentumhoz végrehajtott kiegyenlítések.
+
+## <a name="global-transactions"></a>Globális tranzakciók
+
+A **Globális tranzakciók** gomb hozzá lett adva a szállítóhoz. Ez a gomb lehetővé teszi a szállító minden tranzakciójának megtekintéslt az összes jogi személy között. A **Szállítói tranzakciók** listaoldal csak azon jogi személyek tranzakcióit jeleníti meg, amelyekhez a felhasználó a biztonsági beállításai alapján hozzáférhet.
+
+A listalap jeleníti az összes tranzakciót azoknál a szállítóknál, akiknek félazonosítója megegyezik az induló szállítókéval. Ha például az US-001 szállító egy jogi személy esetében azonos félazonosítóval rendelkezik, mint a DE-001 egy másik jogi személynél, akkor megjelenik minden tranzakció mindkét szállítói azonosítóra vonatkozóan.
+
+A **Szállítói tranzakciók** listaoldal menüi eltérőek a tranzakció jogi személyétől függően. Ha például egy funkció csak a svájci jogi személyek esetében érhető el, az ilyen funkció menüpontjai csak akkor jelennek meg, ha svájci tranzakció van kijelölve.
+
+A szolgáltatás eléréséhez kövesse az alábbi lépéseket.
+
+1. Válassza a **Kötelezettségek** \> **Minden szállító** lehetőséget.
+2. Válasszon ki egy szállítót, és ezt követően a műveleti ablak **Szállító** lapján, a **Tranzakciók** csoportban válassza a **Globális tranzakciók** elemet.
+
+## <a name="more-transaction-filters"></a>További tranzakciószűrők
+
+A nyitott tranzakciók megjelenítését lehetővé tevő szűrő helyére egy új szűrő került, melynek révén megtekintheti a több tranzakcióból álló kombinációkat. A **Megjelenítés** mezőben a következő beállítások közül választhat:
+
+- **Mind** – Az összes tranzakció megtekintése a kiválasztott szállítónál (nyitott és lezárt).
+- **Lezárt** – Csak a teljesen kiegyenlített és lezárt tranzakciók megjelenítése.
+- **Nyitott** – Csak a még nem teljesen kiegyenlített tranzakciók megjelenítése.
+- **Nyitott adott dátumtól kezdve** – Csak azoknak a tranzakcióknak a megjelenítése, amelyek még nincsenek teljesen kiegyenlítve a megadott dátum napján. Ha ezt a lehetőséget választja, módosíthatja a szűrő mellett megjelenő dátumot. Az olyan tranzakciók, melyeknél az **Utolsó kiegyenlítés dátuma** érték az Ön által megadott dátum után van, megjelennek a listában, még akkor is, ha az adott tranzakciók teljesen ki lettek egyenlítve az aktuális dátumig. Az egyenleg azonban az aktuális dátum szerinti, és nem a kijelölt dátumnak felel meg.
+
+Egy olyan szűrőt is bevezettünk, amellyel elrejtheti a pénznemfordítási tranzakciókat. Egyszerűen jelölje be a **Pénznem-átértékelés elrejtése** jelölőnégyzetet.
+
+## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Határidők és engedménydátumok egyszerűbb módosítása
+
+A határidők és az engedmények dátumait a nyitott vevői tranzakcióknál frissítheti. A 8.1-es verzióban a folyamatot továbbfejlesztettük. Ezután felveheti az esedékességi dátumokat a **Szállítói tranzakciók** listaoldalra. Ha rákattint a határidőre a **Szállítói tranzakciók** listaoldalon, akkor módosíthatja a határidőket, a kedvezménydátumokat, a fizetési feltételeket és a készpénzfizetési kedvezmény feltételeit **Az esedékességi dátum és készpénzfizetési engedmény dátumainak frissítése** párbeszédpanelen.
+
+### <a name="activate-the-feature"></a>A funkció aktiválása
+
+Ha határidőket szeretne hozzáadni a **Szállítói tranzakciók** listaoldalhoz, és módosítani kívánja a fizetési beállításokat egy tranzakciónál **Az esedékességi dátum és készpénzfizetési engedmény dátumainak frissítése** párbeszédpanelen, kövesse ezeket a lépéseket.
+
+1. Válassza a **Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei** pontot.
+2. A **Kiegyenlítések** lapon állítsa az **Esedékességi dátum megjelenítése és a szerkesztés engedélyezése** lehetőséget **Igen** értékre.
+3. A funkció engedélyezéséhez új mezőket adtunk a szállítói tranzakciókhoz. Ezek a mezők az új tranzakció befejezésekor tölthetők ki. Akkor is megtörténik a kitöltésük, ha megnyitja **Az esedékességi dátum és készpénzfizetési engedmény dátumainak frissítése** párbeszédpanelt. Ha az **Esedékességi dátum megjelenítése és a szerkesztés engedélyezése** beállítást **Igen** értékre állítja, akkor megjelenik a **Fizetési információk frissítése** párbeszédpanel.  A meglévő tranzakciók azonnali frissítéséhez válassza az **Összes létező tranzakció frissítése** lehetőséget. Ha csak az új tranzakcióknál szeretné kitölteni a mezőket, válassza a **Folytatás frissítés nélkül** lehetőséget.
+
+A határidő most hozzáadódik a **Szállítói tranzakciók** listaoldalhoz, és Ön könnyebben módosíthatja a határidő és készpénzfizetési engedmény dátumait a tranzakcióknál.
+
+### <a name="modify-the-payment-settings"></a>A fizetési beállításainak módosítása
+
+A **Szállítói tranzakciók** listaoldal megjeleníti a szállító minden tranzakcióját. A tranzakció határidejének kiválasztásakor megjelenik egy párbeszédpanel. Ezen a párbeszédpanelen látható az esedékességi dátum és az engedményszámítások alapdátuma, az esedékességi dátum, a fizetési feltételek, a készpénzengedmény feltételei, továbbá a készpénzfizetési engedmény dátumai.
+
+Minden mező más hatással rendelkezik a tranzakcióra a szerkesztésekor:
+
+- **Alapdátum szerkesztése:** A határidőnek és az engedmény dátumai módosulnak, ha a dokumentum dátuma az alapdátum.
+- **Az esedékességi dátum szerkesztése:** Csak az esedékességi dátum módosul
+- **Az engedmények dátumainak módosítása:** Csak az engedmények dátumai módosulnak.
+- **Fizetési feltételek szerkesztése:** Az esedékességi dátum módosul az alapdátum és a fizetési feltételek alapján.
+- **Készpénzfizetési engedmény feltételeinek módosítása:** A készpénzfizetési engedmények módosulnak az alapdátum és a készpénzfizetési engedmény feltételei alapján.
+
+Amikor befejezte a fizetési beállítások módosítását, válassza a **Bezárás** elemet a módosítások mentéséhez.
 

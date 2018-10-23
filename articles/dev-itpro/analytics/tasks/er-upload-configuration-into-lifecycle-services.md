@@ -1,28 +1,29 @@
 --- 
-title: "Elektronikus jelentéskészítési konfigurációk feltöltése a Lifecycle Services rendszerbe"
+title: "ER - A konfiguráció feltöltése a Lifecycle Services szolgáltatásba"
 description: "A következő lépések leírják, hogy a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre új Elektronikus jelentés (ER) konfigurációt és hogyan töltheti fel a Microsoft Lifecycle Services (LCS) rendszerbe."
 author: NickSelin
 manager: AnnBe
-ms.date: 05/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 6aa6bf7e08285d18210741ba6618878955009280
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 19ae8820e5d4a798a5789e9632edb431fe9fede4
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="upload-electronic-reporting-configurations-into-lifecycle-services"></a>Elektronikus jelentéskészítési konfigurációk feltöltése a Lifecycle Services rendszerbe
+# <a name="er-upload-a-configuration-into-lifecycle-services"></a>ER - A konfiguráció feltöltése a Lifecycle Services szolgáltatásba
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -92,6 +93,6 @@ Ebben a példában a mintavállalatra, a Litware-ra, Inc.-ra vonatkozóan létre
 10. Kattintson a Megnyitás gombra.
     * Válassza ki a LCS tárházat és nyissa meg.  
     * Vegye figyelembe, hogy a kijelölt konfiguráció a kiválasztott projekt LCS eszközeként jelenik meg.  
-    * Nyissa meg az LCS-t a következővel: https://lcs.dynamics.com. Nyissa meg a korábban a tárház regisztrálásához használt projektet, majd nyissa meg a projekt „Eszköztár” lehetőségét, és bontsa ki a „GER konfiguráció” eszköztár tartalmát - Elérhető lesz a feltöltött ER-konfiguráció. Vegye figyelembe, hogy a feltöltött LCS konfigurációt egy másik Microsoft Dynamics 365 for Finance and Operations példányába importálhatja, ha a szolgáltatók rendelkeznek hozzáféréssel ehhez az LCS projekthez.  
+    * Nyissa meg az LCS-t a következővel: https://lcs.dynamics.com. Nyissa meg a korábban a tárház regisztrálásához használt projektet, majd nyissa meg a projekt „Eszköztár” lehetőségét, és bontsa ki a „GER konfiguráció” eszköztár tartalmát - Elérhető lesz a feltöltött ER-konfiguráció. Vegye figyelembe, hogy a feltöltött LCS konfigurációt egy másik Microsoft Dynamics 365 for Finance and Operations, Enterprise kiadás példányába importálhatja, ha a szolgáltatók rendelkeznek hozzáféréssel ehhez az LCS projekthez.  
 
 
