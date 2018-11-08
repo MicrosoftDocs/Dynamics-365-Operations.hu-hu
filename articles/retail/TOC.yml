@@ -8,12 +8,14 @@
       href: get-started/before-you-buy.md
     - name: Regisztrálás az előfizetés előnézetére
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: Bemutatókörnyezet telepítése
+    - name: Demókörnyezet telepítése
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Telepítési beállítások
       href: dev-itpro/choose-deployment.md
     - name: Támogatás kérése a Retail alkalmazáshoz
       href: retail-support.md
+    - name: Egyverziós szolgáltatási frissítések GYIK
+      href: ../fin-and-ops/get-started/one-version.md
 - name: A végrehajtási életciklus megértése
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -145,8 +147,6 @@
       items:
         - name: Kiskereskedelmi perifériák
           href: retail-peripherals-overview.md
-        - name: A Microsoft által tesztelt pénztári hardverperifériák
-          href: microsoft-tested-pos-hardware-peripherals.md
         - name: Kiskereskedelmiperiféria-szimulátor
           href: dev-itpro/retail-peripheral-simulator.md
         - name: Perifériák csatlakoztatása a pénztárhoz
@@ -229,7 +229,9 @@
       href: set-up-rfm-analysis.md
 - name: Engedmények és ármódosítások
   items:
-    - name: Retail eladási ár kezelése
+    - name: Kiskereskedelmi engedmények
+      href: retail-discounts-overview.md
+    - name: Kiskereskedelmi eladási ár kezelése
       href: price-management.md
     - name: Ármódosítások és engedmények
       href: price-adjustments-discounts.md
@@ -271,13 +273,13 @@
       href: ../supply-chain/pim/search-products-product-variants.md
 - name: Hűség
   items:
-    - name: Vásárlói hűségprogramok beállítása
+    - name: Hűség áttekintése
       href: set-up-customer-loyalty-program.md
 - name: Készlet
   items:
-    - name: Kiskereskedelmi árukészlet kezelése
+    - name: Üzleti árukészlet kezelése
       href: work-with-store-inventory.md
-    - name: Sorozatszámok bejegyzése az értékesítési folyamat során
+    - name: Sorozatszámok regisztrálása az értékesítési folyamat során
       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
     - name: Készletnaplók
       href: ../supply-chain/inventory/inventory-journals.md
@@ -305,19 +307,23 @@
       href: ../talent/departments-jobs-positions.md
     - name: Feladat összetevőinek beállítása
       href: ../talent/create-job.md
-- name: Honosítási és szabályozó funkciók​
+- name: Honosítási és szabályozási funkciók​
   items:
+    - name: A kiskereskedelmi csatorna pénzügyi integrálása
+      href: localizations/fiscal-integration-for-retail-channel.md
     - name: Kelet-Európa
       items:
         - name: Retail előlegszámlák (Kelet-Európa)
           href: localizations/emea-eeu-advance-invoices-for-retail.md
         - name: Retail pénztárkezelés (Kelet-Európa)
           href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: Retail vevői számlák és eladási visszárurendelések a kelet-európai országokban
+        - name: Retail vevői számlák és visszárukra vonatkozó értékesítési rendelések a kelet-európai országokban
           href: localizations/emea-eeu-retail-invoices.md
+        - name: 'Pénztárgépek telepítési útmutatói a Cseh Köztársaságra, Magyarországra és Lengyelországra vonatkozóan'
+          href: localizations/emea-eeu-deployment.md
     - name: Franciaország
       items:
-        - name: Pénztárgép funkció
+        - name: Pénztárgép funkciói
           href: localizations/emea-fra-cash-registers.md
         - name: Pénztárgépek telepítésére vonatkozó irányelvek
           href: localizations/emea-fra-deployment.md
@@ -329,15 +335,19 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Frissítés és N-1 támogatása (India)
           href: localizations/apac-ind-n-1-for-india.md
+    - name: Olaszország
+      items:
+        - name: Pénzügyi nyomtatók integrálása
+          href: localizations/emea-ita-fpi-sample.md
     - name: Norvégia
       items:
-        - name: Pénztárgép funkció
+        - name: Pénztárgép funkciói
           href: localizations/emea-nor-cash-registers.md
         - name: Pénztárgépek telepítésére vonatkozó irányelvek
           href: localizations/emea-nor-loc-deployment-guidelines.md
     - name: Svédország
       items:
-        - name: Pénztárgép funkció
+        - name: Pénztárgép funkciói
           href: localizations/emea-swe-cash-registers.md
         - name: A Retail POS integrációja ellenőrzőegységekkel
           href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
@@ -490,7 +500,9 @@
           href: dev-itpro/pos-custom-control.md
         - name: Pénztár-műveletek hozzáadása a pénztár-elrendezésekhez a gombrácstervezővel
           href: dev-itpro/add-POS-operations.md
-        - name: POS-kifizetés kiterjesztése
+        - name: Retail POS API-k
+          href: dev-itpro/POS-APIs.md
+        - name: Pénztárkifizetés kiterjesztése
           href: dev-itpro/pos-payment-extension.md
         - name: Támogatás külső ajándékutalványokhoz
           href: dev-itpro/gift-card.md

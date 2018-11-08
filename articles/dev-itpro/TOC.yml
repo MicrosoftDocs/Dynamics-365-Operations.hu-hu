@@ -257,7 +257,11 @@
               href: extensibility/extensibility-changes-804.md
             - name: 'Bővítési módosítások, 8.1-es verzió'
               href: extensibility/extensibility-changes-81.md
-        - name: Alapismeretek
+            - name: 'Bővítési módosítások, 8.1.1-es verzió'
+              href: extensibility/extensibility-changes-811.md
+            - name: 'Bővítési módosítások, 8.1.2-es verzió'
+              href: extensibility/extensibility-changes-812.md
+        - name: Alapelvek
           items:
             - name: Tolakodó testreszabások
               href: extensibility/intrusive-customizations.md
@@ -297,14 +301,12 @@
               href: extensibility/add-method-table.md
             - name: Üzleti műveletek végrehajtása táblarekordok életciklusán keresztül
               href: extensibility/subscribe-table-events.md
-            - name: Adatforrások hozzáadása képernyőkhöz
+            - name: Adatforrások hozzáadása űrlapokhoz
               href: extensibility/add-datasource.md
-            - name: Képernyők feliratának módosítása
+            - name: Űrlapok feliratának módosítása
               href: extensibility/change-caption-form.md
-            - name: Képernyővezérlő tulajdonságainak módosítása
+            - name: Űrlapvezérlő tulajdonságainak módosítása
               href: extensibility/modify-control-properties.md
-            - name: Címkék módosítása címke kiterjesztésű fájlokkal
-              href: extensibility/change-label.md
             - name: Számsorozatok hatáskörének bővítése
               href: extensibility/extend-number-sequence-scope.md
             - name: Új készletdimenziók hozzáadása
@@ -313,10 +315,12 @@
               href: extensibility/pricing-app73.md
             - name: Táblahozzárendelés-bővítmény
               href: extensibility/map-extensions.md
-            - name: Interfészként használt tábla-hozzárendelések kiterjesztése
+            - name: Interfészként használt tábla-leképezések kiterjesztése
               href: extensibility/maps-as-interfaces.md
-            - name: Verziókövetésre használt tábla-hozzárendelések kiterjesztése
+            - name: Verziókövetésre használt táblaleképezések kiterjesztése
               href: extensibility/maps-with-versioning.md
+            - name: A kijelölt adattípusok decimális pontosságának kiterjesztése
+              href: extensibility/decimal-point-precision.md
         - name: Kiterjeszthető megoldások létrehozása
           items:
             - name: Kiterjeszthető kód írása
@@ -530,11 +534,11 @@
           href: user-interface/toolbar-fields-subpattern.md
         - name: Eszköztár és lista almintái
           href: user-interface/toolbar-list-subpattern.md
-        - name: Munkaterület oldal szűrőcsoport-almintája
+        - name: Munkaterület oldalának szűrőcsoport-almintája
           href: user-interface/workspace-filter-group-subpattern.md
     - name: Vezérlőbővíthetőség
       items:
-        - name: Aextensible vezérlők létrehozása
+        - name: Bővíthető vezérlők létrehozása
           href: user-interface/build-extensible-control.md
         - name: Billentyűparancsok a bővíthető vezérlőkhöz
           href: user-interface/keyboard-shortcuts-controls.md
@@ -764,149 +768,13 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
             - name: ValueMetadata típus
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
-- name: Adatintegrálás
+- name: Általános adatvédelmi rendelet (GDPR)
+  href: gdpr/gdpr-guide.md
   items:
-    - name: Adatintegrálási (importálási/exportálási) stratégia kiválasztása
-      href: data-entities/integration-overview.md
-    - name: Adatintegrációs API-k
-      items:
-        - name: Adatkezelési csomag REST API-ja
-          href: data-entities/data-management-api.md
-        - name: Szolgáltatási végpontok
-          href: data-entities/services-home-page.md
-          items:
-            - name: Szolgáltatáshitelesítési hibaelhárítás
-              href: data-entities/troubleshoot-service-authentication.md
-        - name: OData
-          href: data-entities/odata.md
-        - name: Egyéni szolgáltatásfejlesztés
-          href: data-entities/custom-services.md
-        - name: Ismétlődő integrációk
-          href: data-entities/recurring-integrations.md
-        - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
-          href: data-entities/third-party-service-test.md
-    - name: Fejlesztés integrációhoz
-      items:
-        - name: Adatkezelés és integráció az adatentitások használatával
-          href: data-entities/data-management-integration-data-entity.md
-          items:
-            - name: Entitások fejlesztése az adatátvitelhez
-              href: data-entities/develop-entity-for-data-migration.md
-            - name: Összetett adatentitások fejlesztése
-              href: data-entities/develop-composite-data-entities.md
-            - name: Vállalatközi pénzügyi adatmegosztás konfigurálása
-              href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-            - name: Rekordsablonok létrehozása az adatbevitel megkönnyítése érdekében
-              href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: Rekordok létrehozása rekordsablonokkal
-              href: data-entities/tasks/use-record-template-new-record.md
-        - name: Adatok integrálása a Common Data Service környezettel
-          href: data-entities/data-integration-cds.md
-          items:
-            - name: Potenciális vevő készpénzfizetési esetre történő konfigurálása
-              href: ../supply-chain/sales-marketing/prospect-to-cash.md
-              items:
-                - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
-                  href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                - name: A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
-                  href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
-                - name: A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre
-                  href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
-                  href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
-                  href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba
-                  href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-            - name: A Field Service szolgáltatással való integráció konfigurálása
-              href: ../supply-chain/sales-marketing/field-service.md
-              items:
-                - name: A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
-                  href: ../supply-chain/sales-marketing/field-service-product.md
-                - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel
-                  href: ../supply-chain/sales-marketing/field-service-work-order.md
-                - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
-                  href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Project Service Automation integráció konfigurálása
-              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
-              items:
-                - name: Project Service Automation integráció paraméterei
-                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
-                - name: Projektszerződések és projektek szinkronizálása
-                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
-                - name: Projektfeladatok szinkronizálása
-                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
-                - name: Projektköltség-kategóriák szinkronizálása
-                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
-                - name: Projektbecslések szinkronizálása a projektelőrejelzésekkel
-                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
-                - name: A projekt tényleges adatainak szinkronizálása a projektintegrációs naplóval
-                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
-        - name: Külső webszolgáltatások használata
-          href: data-entities/consume-external-web-service.md
-- name: Adatkezelés
-  href: data-entities/data-entities-data-packages.md
-  items:
-    - name: Adatentitások
-      href: data-entities/data-entities.md
-      items:
-        - name: Konfigurációs adatprojektek
-          href: data-entities/configuration-data-projects.md
-        - name: Konfigurációs adatcsomagok
-          href: data-entities/configuration-data-packages.md
-        - name: Konfigurációs adatok másolása vállalatok között
-          href: data-entities/copy-configuration.md
-        - name: Konfigurációs adatsablonok
-          href: data-entities/configuration-data-templates.md
-        - name: Adatsablonok több munkalappal
-          href: data-entities/excel-template-multiple.md
-        - name: Változáskövetés engedélyezése az entitások esetében
-          href: data-entities/entity-change-track.md
-        - name: Konfigurációs kulcsok és adatentitások
-          href: data-entities/config-key-entities.md
-        - name: Normál adatentitásokkal kapcsolatos információk
-          href: data-entities/data-entities-report.md
-    - name: Adatimportálási és -exportálási feladatok
-      href: data-entities/data-import-export-job.md
-      items:
-        - name: Bevált eljárások a kuponok Általános napló entitással történő importálásához
-          href: data-entities/tips-tricks-import-general-journal-entity.md
-    - name: Fejlesztés adatentitásokhoz
-      items:
-        - name: Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz
-          href: dev-tools/design-best-practices.md
-        - name: Új adatentitások létrehozása
-          href: data-entities/build-consuming-data-entities.md
-        - name: Viselkedési adatentitás-tulajdonságok
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: Számítási oszlopok és virtuális mezők létrehozása
-          href: data-entities/data-entity-computed-columns-virtual-fields.md
-        - name: Vállalatközi viselkedés
-          href: data-entities/cross-company-behavior.md
-        - name: Ország-/régiókódok és konfigurációs kulcsok
-          href: data-entities/countryregion-codes-configuration-keys.md
-        - name: Öröklődési minták
-          href: data-entities/support-super-type-sub-type.md
-        - name: Adatentitás-varázsló szabályai
-          href: data-entities/data-entity-wizard-rules.md
-        - name: Metaadat-tulajdonságok
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: 'Hitelesítések, alapértékek és leképezéssel nem rendelkező mezők'
-          href: data-entities/validations-defaults-unmapped-fields.md
-        - name: Biztonság és adatentitások
-          href: data-entities/security-data-entities.md
-        - name: 'Csak olvasható entitások létrehozása, amely elérhetővé teszi a pénzügyi dimenziókat'
-          href: financial/read-only-entity-financial.md
-    - name: Használja saját adatbázisát
-      href: analytics/export-entities-to-your-own-database.md
-    - name: Adatfeladat automatizálása
-      href: data-entities/data-task-automation.md
     - name: Erőforrások GDPR-adatkérelmek megválaszolásához
       href: gdpr/gdpr-home-page.md
       items:
-        - name: Útmutató a Finance and Operations rendszerben használt GDPR-hez
-          href: gdpr/gdpr-guide.md
-        - name: Eszközbesorolások
+        - name: Eszközosztályozások
           href: gdpr/gdpr-asset-classification-values.md
         - name: Személykeresési jelentés
           href: gdpr/gdpr-person-search-report.md
@@ -918,12 +786,8 @@
           href: gdpr/respond-dsr-request-talent.md
         - name: Személyes adatokra vonatkozó kérések megválaszolása az AX 2012 rendszerben
           href: gdpr/gdpr-ax2012.md
-        - name: LCS GDPR-adatkérései
+        - name: LCS GDPR-adatkérelmei
           href: gdpr/gdpr-lcs.md
-    - name: Adatellenőrzési ellenőrzőlista munkaterülete
-      href: user-interface/data-validation-workspace.md
-    - name: Adatkezelési hibaleírások
-      href: data-entities/dm-error-descriptions.md
 - name: Folyamatos szállítás
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -953,7 +817,7 @@
       href: lcs-solutions/process-data-packages-lcs-solutions.md
     - name: Biztonsági mentés készítése megoldási adatbázisokról
       href: lcs-solutions/database-backup-lcs-solutions.md
-    - name: Honosítási és szabályozó funkciók
+    - name: Honosítási és szabályozási funkciók
       href: lcs-solutions/country-region.md
       items:
         - name: Honosítási funkciók osztályozása
@@ -1039,10 +903,12 @@
         - name: Helyszíni környezetek beállítása és telepítése
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Helyszíni környezetek telepítése a Platform update 12-n
+            - name: Helyszíni környezetek telepítése (Platform update 12-es és újabb verziókon)
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Helyszíni környezetek telepítése a Platform update 8-on és Platform update 11-en
+            - name: Helyszíni környezetek telepítése (Platform update 8-on és 11-en)
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
+            - name: A Retail csatorna összetevőinek helyszíni környezetben való telepítési lépései
+              href: deployment/deploy-retail-onprem.md
         - name: Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: Fordított proxyk konfigurálása a helyszíni környezetekhez
@@ -1157,10 +1023,12 @@
           href: migration-upgrade/update-platform-each-release.md
         - name: Védőfalkörnyezetek frissítése
           href: migration-upgrade/upgrade-sandbox-environment.md
-        - name: 'Adatok frissítése a fejlesztői, bemutató- és védőfal-környezetekben'
+        - name: 'Adatok frissítése a fejlesztői, demó- és tesztkörnyezetekben'
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Fejlesztői eszközök frissítése
           href: dev-tools/update-development-tools.md
+        - name: Kódok fordításának tervezése és felkészülés a legújabb frissítésnek megfelelően
+          href: migration-upgrade/compile-considerations.md
     - name: Frissítés egy legutóbbi frissítésre (helyszíni)
       items:
         - name: Frissítések alkalmazása helyszíni telepítésekhez
@@ -1226,6 +1094,12 @@
           href: sysadmin/batch-server-overview.md
         - name: Kötegelt feladatok létrehozása
           href: sysadmin/tasks/create-batch-job.md
+        - name: Kötegelt feladat másolása
+          href: sysadmin/copy-batch-job.md
+        - name: Aktív kötegidőszakok
+          href: sysadmin/activeperiod.md
+        - name: Kötegkezelő biztonsági szerepköre
+          href: sysadmin/runby.md
     - name: Optimalizálási tanácsadó
       href: sysadmin/optimization-advisor-overview.md
       items:
