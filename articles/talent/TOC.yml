@@ -1,11 +1,20 @@
-- name: Üdvözöljük a Dynamics 365 for Talent rendszerben!
+- name: Dynamics 365 for Talent
   href: index.md
   items:
     - name: Első lépések
       href: talent-get-started.md
       items:
         - name: Új vagy módosult elemek
+          href: whats-new.md
           items:
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 31.)
+              href: whats-new-talent-october-31.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 19.)
+              href: whats-new-talent-october-19.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 15.)
+              href: whats-new-talent-october-11.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 8.)
+              href: whats-new-talent-october-8.md
             - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 1.)
               href: whats-new-talent-october-01.md
             - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. szeptember 24.)
@@ -30,7 +39,9 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR és Common Data Service for Apps
           href: CoreHREntities.md
-        - name: Előnézeti funkciók elérése
+        - name: Integrációk
+          href: talent-financeandoperations-integration.md
+        - name: Előzetes funkciók elérése
           href: access-preview-feature.md
         - name: Bérlista-integráció konfigurálása a Talent és a Dayforce között
           href: configure-payroll-integration.md
@@ -62,9 +73,37 @@
           href: working-time-calendars.md
     - name: A szervezeti személyzet kiépítése
       items:
-        - name: Az Attract funkciói és képességei
+        - name: Az Attract funkciói és lehetőségei
           href: attract-overview.md
-        - name: Hozzon létre egy lebilincselő felvételi eljárást
+        - name: Folyamatsablon létrehozása az Attract alkalmazásban
+          href: Process-templates-Attract.md
+        - name: 'Feladatok létrehozása, jóváhagyása és közzététele az Attract alkalmazásban'
+          href: Creating-jobs-Attract.md
+        - name: Forráskeresés a tehetségállományok segítségével
+          href: attract-talent-pools.md
+        - name: Forráskeresés LinkedIn Recruiter segítségével
+          href: attract-linked-in-recruiter.md
+        - name: Felvételi folyamat tevékenységei az Attract alkalmazásban
+          href: activities-attract.md
+        - name: Bővíthetőség
+          href: extensibility-attract.md
+        - name: Karrieroldal és jelölti élmények
+          href: career-site.md
+        - name: Az ajánlatkezelés beállítása
+          href: offer-setup.md
+        - name: 'Ajánlatok létrehozása, jóváhagyása és aláírása'
+          href: creating-offers.md
+        - name: E-mail-sablonok létrehozása és kezelése
+          href: email-templates.md
+        - name: Jelentéskészítés és elemzés
+          href: Reporting-Analytics-Attract.md
+        - name: Biztonság és szerepkörök kezelése az Attract alkalmazásban
+          href: security-attract.md
+        - name: Adminisztratív beállítások az Attract alkalmazásban
+          href: Admin-Settings-Attract.md
+        - name: Intelligens ajánlások
+          href: Intelligent-Recommendations.md
+        - name: Lebilincselő felvételi eljárások létrehozása
           href: create-onboarding-experience.md
     - name: Alkalmazottak motiválása
       items:
