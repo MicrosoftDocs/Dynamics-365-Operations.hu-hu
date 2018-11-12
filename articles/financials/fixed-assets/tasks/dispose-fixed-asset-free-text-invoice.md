@@ -25,6 +25,7 @@ ms.lasthandoff: 09/24/2018
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Tárgyi eszköz kivezetése szabadszöveges számlával
 
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ez az eljárás bemutatja, hogyan értékesíthető egy tárgyi eszköz szabadszöveges számla használatával.
 
