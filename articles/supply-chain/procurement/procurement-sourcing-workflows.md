@@ -50,11 +50,12 @@ A következő munkafolyamat-típusok elérhetőek a Beszerzés és forrás modul
 | Szállítói hozzáadás alkalmazás-munkafolyamata  | Ellenőrzési és jóváhagyási munkafolyamatok létrehozása új szállítók hozzáadásához a szállítói kérelmeken keresztül. |
 
 ## <a name="creating-a-workflow"></a>Munkafolyamat létrehozása
+
 Hogy létrehozzon egy munkafolyamatot lépjen a Beszerzés és forrás &gt; Beállítás &gt; Beszerzés és forrás munkafolyamatok elemre és hozzon létre egy új munkafolyamatot a készíteni kívánt munkafolyamat-típus kiválasztásával.  
 
 A munkafolyamat vásznon behúzhatja a munkafolyamat elemeket a szerkesztőbe és bekapcsolhatja az elemeket egy folyamatba. A munkafolyamat-elemeket tanácsos konfigurálni. Jóváhagyás– és feladat munkafolyamat-elemekhez konfigurálhatja, hogy melyik résztvevőknek ajánlott cselekedniük.
-Résztvevőtípusok
-----------------------
+
+## <a name="types-of-participants"></a>Résztvevőtípusok
 
 Jóváhagyási lépéseket rendelhet a következő résztvevőcsoportokhoz.
 
@@ -68,13 +69,12 @@ Jóváhagyási lépéseket rendelhet a következő résztvevőcsoportokhoz.
 
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
-[Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Beszerzési igénylési munkafolyamat](purchase-requisitions-workflow.md)
+- [Beszerzési igénylési munkafolyamat](purchase-requisitions-workflow.md)
 
-[Szállítók felvétele](vendor-onboarding.md)
+- [Szállítók felvétele](vendor-onboarding.md)
 
 
