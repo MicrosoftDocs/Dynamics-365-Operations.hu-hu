@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
-ms.openlocfilehash: 34e744884b4bae890d7990103ecc7157c6883869
+ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
+ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/03/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -71,7 +71,7 @@ A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalo
 
 ### <a name="assignment"></a>Hozzárendelés
 
-Képernyő-elrendezések üzlet- vagy felhasználószinten rendelhetők hozzá. A felhasználó-hozzárendelés felülírja a nyilvántartás- és üzlet-hozzárendeléseket, és a nyilvántartás-hozzárendelés felülbírálja az üzlet-hozzárendelést. Egyszerű forgatókönyvek esetén, ahol minden felhasználó ugyanazt az elrendezést használja a nyilvántartástól vagy a szerepkörtől függetlenül, a képernyő-elrendezés beállítható csak az üzlet szintjén. Azokban az esetekben, ahol bizonyos nyilvántartások vagy felhasználók speciális elrendezéseket igényelnek, ezek megfelelően hozzárendelhetők.
+Képernyő-elrendezések üzlet-, nyilvántartás- vagy felhasználószinten rendelhetők hozzá. A felhasználó-hozzárendelés felülírja a nyilvántartás- és üzlet-hozzárendeléseket, és a nyilvántartás-hozzárendelés felülbírálja az üzlet-hozzárendelést. Egyszerű forgatókönyvek esetén, ahol minden felhasználó ugyanazt az elrendezést használja a nyilvántartástól vagy a szerepkörtől függetlenül, a képernyő-elrendezés beállítható csak az üzlet szintjén. Azokban az esetekben, ahol bizonyos nyilvántartások vagy felhasználók speciális elrendezéseket igényelnek, ezek megfelelően hozzárendelhetők.
 
 ### <a name="layout-sizes"></a>Elrendezési méretek
 
