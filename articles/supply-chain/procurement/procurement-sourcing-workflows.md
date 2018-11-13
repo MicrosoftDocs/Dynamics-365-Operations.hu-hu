@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 06ab745d9df9b095b861cf7bc79aba6d1361eeb0
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: d25ca64fb6a3fa7d7898ec68568703f3de7b1595
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -50,11 +50,12 @@ ms.lasthandoff: 08/07/2018
 | <span data-ttu-id="3c770-128">Szállítói hozzáadás alkalmazás-munkafolyamata</span><span class="sxs-lookup"><span data-stu-id="3c770-128">Vendor add application workflow</span></span>  | <span data-ttu-id="3c770-129">Ellenőrzési és jóváhagyási munkafolyamatok létrehozása új szállítók hozzáadásához a szállítói kérelmeken keresztül.</span><span class="sxs-lookup"><span data-stu-id="3c770-129">Create review and approval workflows for adding new vendors via vendor requests.</span></span> |
 
 ## <a name="creating-a-workflow"></a><span data-ttu-id="3c770-130">Munkafolyamat létrehozása</span><span class="sxs-lookup"><span data-stu-id="3c770-130">Creating a workflow</span></span>
+
 <span data-ttu-id="3c770-131">Hogy létrehozzon egy munkafolyamatot lépjen a Beszerzés és forrás &gt; Beállítás &gt; Beszerzés és forrás munkafolyamatok elemre és hozzon létre egy új munkafolyamatot a készíteni kívánt munkafolyamat-típus kiválasztásával.</span><span class="sxs-lookup"><span data-stu-id="3c770-131">To create a workflow, go to Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows and create a new workflow by selecting the type of workflow you want to create.</span></span>  
 
 <span data-ttu-id="3c770-132">A munkafolyamat vásznon behúzhatja a munkafolyamat elemeket a szerkesztőbe és bekapcsolhatja az elemeket egy folyamatba.</span><span class="sxs-lookup"><span data-stu-id="3c770-132">In the workflow canvas you can drag workflow elements into the designer and link the elements into a flow.</span></span> <span data-ttu-id="3c770-133">A munkafolyamat-elemeket tanácsos konfigurálni.</span><span class="sxs-lookup"><span data-stu-id="3c770-133">The workflow elements should be configured.</span></span> <span data-ttu-id="3c770-134">Jóváhagyás– és feladat munkafolyamat-elemekhez konfigurálhatja, hogy melyik résztvevőknek ajánlott cselekedniük.</span><span class="sxs-lookup"><span data-stu-id="3c770-134">For approval and task workflow elements you can configure which participant should take action.</span></span>
-<span data-ttu-id="3c770-135">Résztvevőtípusok</span><span class="sxs-lookup"><span data-stu-id="3c770-135">Types of participants</span></span>
-----------------------
+
+## <a name="types-of-participants"></a><span data-ttu-id="3c770-135">Résztvevőtípusok</span><span class="sxs-lookup"><span data-stu-id="3c770-135">Types of participants</span></span>
 
 <span data-ttu-id="3c770-136">Jóváhagyási lépéseket rendelhet a következő résztvevőcsoportokhoz.</span><span class="sxs-lookup"><span data-stu-id="3c770-136">You can assign an approval step to the following groups of participants.</span></span>
 
@@ -68,13 +69,12 @@ ms.lasthandoff: 08/07/2018
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="3c770-149">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="3c770-149">Additional resources</span></span>
---------
+## <a name="additional-resources"></a><span data-ttu-id="3c770-149">További erőforrások</span><span class="sxs-lookup"><span data-stu-id="3c770-149">Additional resources</span></span>
 
-[<span data-ttu-id="3c770-150">Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára</span><span class="sxs-lookup"><span data-stu-id="3c770-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [<span data-ttu-id="3c770-150">Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára</span><span class="sxs-lookup"><span data-stu-id="3c770-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[<span data-ttu-id="3c770-151">Beszerzési igénylési munkafolyamat</span><span class="sxs-lookup"><span data-stu-id="3c770-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
+- [<span data-ttu-id="3c770-151">Beszerzési igénylési munkafolyamat</span><span class="sxs-lookup"><span data-stu-id="3c770-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
 
-[<span data-ttu-id="3c770-152">Szállítók felvétele</span><span class="sxs-lookup"><span data-stu-id="3c770-152">Onboarding vendors</span></span>](vendor-onboarding.md)
+- [<span data-ttu-id="3c770-152">Szállítók felvétele</span><span class="sxs-lookup"><span data-stu-id="3c770-152">Onboarding vendors</span></span>](vendor-onboarding.md)
 
 
