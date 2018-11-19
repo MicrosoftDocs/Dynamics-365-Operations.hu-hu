@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -48,7 +48,8 @@ Használhatja a Microsoft Dynamics 365 for Talent adminisztrációs központjáb
 1. Jelentkezzen be ide: Microsoft Dynamics 365 for Talent: Attract
 2. A **Beállítás** menü (fogaskerék szimbólum) a jobb felső sarkában válassza ki az **Adminisztratív beállítások** lehetőséget.
 3. A **Funkciók kezelése** lapon válassza ki az **Előnézeti funkciók** beállítás melletti lehetőséget úgy, hogy az kékre változzon.
-4. Frissítse a böngészőjét, hogy elindítsa el az új szolgáltatások megjelenítését. (Bármely, már bejelentkezett felhasználó számára a következő bejelentkezéskor jelenik meg a funkció, illetve frissíthetik a böngészőt a szolgáltatások azonnal megjelenítéséhez.)
+4. Opcionálisan az egyes funkciókat az egyes szolgáltatások engedélyezésével vagy letiltásával lehet meghatározni az oldalon.
+5. Frissítse a böngészőjét, hogy elindítsa el az új szolgáltatások megjelenítését. (Bármely, már bejelentkezett felhasználó számára a következő bejelentkezéskor jelenik meg a funkció, illetve frissíthetik a böngészőt a szolgáltatások azonnal megjelenítéséhez.)
 
 #### <a name="core-hr"></a>Alapvető HR
 
@@ -63,10 +64,9 @@ Használhatja a Microsoft Dynamics 365 for Talent adminisztrációs központjáb
 
 ### <a name="attract"></a>Attract
 
-- **Munkasablonok** – Most már létrehozhat sablonokat a felvételi folyamathoz. A felhasználók már testre szabhatják a felvételi folyamatot egy adott feladatra vonatkozóan. Azonban ekkor a folyamathoz hozhat létre sablonokat, majd egy meghatározott feladat létrehozásakor kiválaszthatja a megfelelő sablont. Emiatt ez a funkció egyszerűbbé teszi a feladat beállítási folyamatát.
-- **Karrier webhely** – A karrier webhely aktuális verziója csak felsorolja az összes betöltetlen állást. A jövőben azonban további lehetőségek kerülnek hozzáadásra a webhelyen. Az állások belsőnek és külsőnek is megjelölhetők. A webhelyre bejelentkező belső felhasználók láthatják a belső és a külső állásokat is. A külső és a nem bejelentkezett belső felhasználók azonban csak a külső állásokat láthatják.
-- **Munkalehetőség közzététele** – Most már közzé tehet munkalehetőségeket a karrier webhelyen.
-- **Munkalehetőség közzététele a LinkedIn-en** – Most már közzé tehet munkalehetőségeket a LinkedIn-en.
+- **Egy feladatban releváns pályázók** – A toborzók és a felvételi vezetők könnyen megállapíthatják, hogy a jelentkezők keresztül mely pályázók a feladatra a leginkább megfelelők. A legjobb 5 pályázó az alapján jelenik meg, hogy az életrajzuk/profiljuk mennyire felel meg a munkaköri leírásnak.
+- **Releváns feladatok** – A jelentkezők az életrajzuk/profiljuk és a munkaköri leírás alapján most már láthatják a számukra releván más feladatok listáját is.  Jelenleg ez akkor jelenik meg a pályázóknak, ha más lehetőségekre javaslatként jelentkeznek.
+- **EEO/OFCCP-támogatás** – Új tevékenységtípusok egy előre meghatározott képernyő használatát engedélyezik az egyenlő foglalkoztatási lehetőség (EEO) és a szövetségi szerződés megfelelési program (OFCCP) adatok gyűjtésére a jelentkezőtől.  Ez egy előre meghatározott képernyő, ezért nem szerkeszthető.
 
     > [!NOTE]
     > A közzétett álláslehetőségek csak azon ügyfelek számára láthatók, akik egy vagy több LinkedIn álláslehetőség-szolgáltatásra előfizetnek. Ellenkező esetben az ügyfelek csak akkor látnak egy álláslehetőséget, ha arra kifejezetten rákeresnek. Az álláslehetőségek közzététele késéssel történik a LinkedIn-en. Előfordulhat, hogy egy állás csak az Attract-on való közzététel után csak néhány órával jelenik meg.

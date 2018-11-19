@@ -16,26 +16,26 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
-ms.openlocfilehash: e091aab70a98e0f4b96c41c1ee48926947539105
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 19e0528b95952de8e5503c361efcfeca4c529caf
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/31/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
-# <a name="manage-international-bank-account-number-iban-account-validation"></a>Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelése
+# <a name="manage-international-bank-account-number-iban-validation"></a>Nemzetközi bankszámlaszám (IBAN) ellenőrzésének kezelése
 
 [!include [banner](../includes/banner.md)]
 
-A Nemzetközi bankszámlaszám (IBAN) számla ellenőrzése növeli az ellenőrzések mennyiségét, amikor IBAN-t ad hozzá egy bankszámlához.
+A Nemzetközi bankszámlaszám (IBAN) ellenőrzése növeli az ellenőrzések mennyiségét, amikor IBAN-t ad hozzá egy bankszámlához.
 
-Az IBAN szám szerkezete tárolva van a Microsoft Dynamics 365 for Finance and Operations alkalmazásban, és az IBAN szám első használatakor a bankszámlák esetén automatikusan betöltődik. A bankszámlaszám az IBAN-számhoz definiált szerkezet része. A szerkezet alapján ha számlaszám helye és hossza az IBAN számban nem egyezik meg az egyes országokhoz vagy területekhez meghatározott szerkezetnek, figyelmeztető üzenet fog kapni.
+Az IBAN-szám szerkezetével kapcsolatos információkat a Microsoft Dynamics 365 for Finance and Operations tárolja. Az IBAN szám első használatakor bankszámlákkal az adatokat automatikusan betöltődnek. Az IBAN-szám hosszát, a bankszámlaszám és a bank regisztrációs azonosítójának kezdő pozícióit, és a bankszámlaszám és a bank regisztrációs azonosítójának hosszát tartalmazza.
 
 ## <a name="set-up-iban-structures"></a>IBAN-szerkezetek beállítása
 
 1. Nyissa meg a következőt: **Készpénz- és bankkezelés \> Beállítás \> IBAN-struktúrák**.
 2. Láthatja, hogy minden egyes ország vagy régió IBAN-struktúrája automatikusan be van állítva.
-3. Ha testre szabja egy adott ország vagy régió struktúráit, szerkesztheti azokat.
+3. Ha testre akarja szabni egy adott ország vagy régió struktúráit, szerkesztheti azokat.
 4. A struktúradefiníciók az egyes új kiadások részei lesznek. Használhatja a **Struktúrák alaphelyzetbe állítása** menüt, hogy az egyes frissítések után betöltse a legfrissebb definíciókat.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>A bankszámla IBAN-struktúrájának ellenőrzése
@@ -44,7 +44,9 @@ Az IBAN szám szerkezete tárolva van a Microsoft Dynamics 365 for Finance and O
 2. Hozzon létre bankszámlát
 3. A **További információk** gyorslapon adjon meg egy IBAN-t.
 
-    Ha számlaszám helye és hossza az IBAN számban nem egyezik meg az egyes országokhoz vagy területekhez meghatározott szerkezetnek, egy üzenetet fog kapni. Nem folytathatja, ha az IBAN-szám hossza nem egyezik meg az IBAN-struktúrában megadottal.
+    Ha az IBAN-szám hossza nem egyezik meg minden egyes ország vagy terület meghatározott hosszával, egy figyelmeztető üzenetet kap. Nem folytathatja, ha az IBAN-szám hossza nem egyezik meg az IBAN-struktúrában megadottal.
 
     Az ellenőrzés azt is ellenőrzi, hogy a bankszámla száma megegyezik-e az IBAN szám a bankszámlaszámot jelölő részével. Ha a bankszámlaszám nem egyezik meg, egy figyelmeztető üzenetet kap. Ez az üzenet csak egy figyelmeztetés. Folytathatja, még akkor is, ha a bankszámlaszám nem egyezik meg.
+
+    Az ellenőrzés azt is ellenőrzi, hogy a bank regisztrációs azonosítója megegyezik-e az IBAN-szám a bank regisztrációs azonosítóját jelölő részével. A bank regisztrációs azonosítója tartalmazza a banki számot, és gyakran egy további bankfiókot is. Ha a bank regisztrációs azonosítója nem egyezik meg, egy figyelmeztető üzenetet kap. Ez az üzenet csak egy figyelmeztetés. Folytathatja, még akkor is, ha a bank regisztrációs azonosítója nem egyezik meg.
 

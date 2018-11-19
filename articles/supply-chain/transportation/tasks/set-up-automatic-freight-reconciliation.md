@@ -3,7 +3,7 @@ title: "Automatikus fuvarlevél-egyeztetés beállítása"
 description: "Ez az eljárás bemutatja, hogyan lehet beállítani az adatokat az automatikus fuvaregyeztetéshez."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Automatikus fuvarlevél-egyeztetés beállítása
@@ -36,9 +36,9 @@ Ez az eljárás bemutatja, hogyan lehet beállítani az adatokat az automatikus 
     * A fuvarlevél típusa határozza meg, hogyan kell egyeztetni a fuvarleveleket és a szállítói számlákat.  
 2. Kattintson az Új lehetőségre.
 3. Adjon meg egy értéket a Fuvarlevél típusa mezőben.
-4. A Kalkulátorszerelvény mezőbe írja be a következőt: Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
+4. A Kalkulátorszerelvény mezőbe írja be a következőt: Microsoft.Dynamics.Ax.Tms.dll.
     * Ez a szabványos szállításkezelés-egyeztetési kalkulátorkódtár.  
-5. A Kalkulátorosztály mezőbe írja be a következőt: Microsoft.Dynamics.Ax.Tms.dll.
+5. A Kalkulátorosztály mezőbe írja be a következőt: Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
     * Ez a szabványos szállításkezelés-egyeztetési kalkulátorosztály.  
 6. Kattintson az Új lehetőségre.
 7. A Leírás mezőben válassza ki az értéket, amelynek egyeznie kell a fuvarlevélen és a szállítói számlán.  

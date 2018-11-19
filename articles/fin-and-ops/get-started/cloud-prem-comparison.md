@@ -3,7 +3,7 @@ title: "Felhő és helyszíni szolgáltatások összehasonlítása"
 description: "A témakör bemutatja, hogy mely szolgáltatásokat támogatja a felhőalapú és a helyszíni megoldás."
 author: robinarh
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: b59921820f02e2ac026873ce45fdecd104fef544
-ms.openlocfilehash: 4354b9d55cc84f7c74020d95617c406dc5fb225c
+ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
+ms.openlocfilehash: bc2b8aafa28d3998e223891fa95e3fe8175349e6
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 
@@ -116,11 +116,8 @@ A következő táblázatokban a termékterületek listája található. A felhő
 | Visual Studio-fejlesztés |  | Igen | Igen |
 
 
-## <a name="dynamics-365-for-retail"></a>Dynamics 365 for Retail 
-
-| Terület | Szolgáltatás | Felhő | Helyszíni|
-|---|---|---|---|
-| Minden Retail terület | Minden Retail funkció | Igen | Nincs |
+### <a name="retail"></a>Retail 
+Helyszíni telepítéseknél rendelkezésre álló lehetőségek kiskereskedelmi listájának megtekintéséhez kattintson ide: [A helyszíni telepítéseknél rendelkezésre álló kiskereskedelmi lehetőségek](../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
 
