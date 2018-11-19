@@ -3,7 +3,7 @@ title: "Dynamics 365 for Unified Operations Mobile alkalmazás kezdőlapja"
 description: "Ez a témakör bemutatja a Microsoft Dynamics 365 for Unified Operations mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,52 +18,52 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: d6d26da330974305fa3725fe7c2506d198b17e2c
+ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
+ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 10/26/2018
 
 ---
 
-# <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a><span data-ttu-id="82aa8-103">Dynamics 365 for Unified Operations Mobile alkalmazás kezdőlapja</span><span class="sxs-lookup"><span data-stu-id="82aa8-103">Dynamics 365 for Unified Operations mobile app home page</span></span>
+# <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a><span data-ttu-id="c8f06-103">Dynamics 365 for Unified Operations Mobile alkalmazás kezdőlapja</span><span class="sxs-lookup"><span data-stu-id="c8f06-103">Dynamics 365 for Unified Operations mobile app home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="82aa8-104">Ez a témakör bemutatja a Microsoft Dynamics 365 for Unified Operations mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.</span><span class="sxs-lookup"><span data-stu-id="82aa8-104">This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.</span></span>
+<span data-ttu-id="c8f06-104">Ez a témakör bemutatja a Microsoft Dynamics 365 for Unified Operations mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.</span><span class="sxs-lookup"><span data-stu-id="c8f06-104">This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="82aa8-105">A mobilalkalmazás neve korábban *Microsoft Dynamics 365 for Finance and Operations* volt.</span><span class="sxs-lookup"><span data-stu-id="82aa8-105">The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.</span></span>
+> <span data-ttu-id="c8f06-105">A mobilalkalmazás neve korábban *Microsoft Dynamics 365 for Finance and Operations* volt.</span><span class="sxs-lookup"><span data-stu-id="c8f06-105">The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.</span></span>
 
-<a name="overview"></a><span data-ttu-id="82aa8-106">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="82aa8-106">Overview</span></span>
+<a name="overview"></a><span data-ttu-id="c8f06-106">Áttekintés</span><span class="sxs-lookup"><span data-stu-id="c8f06-106">Overview</span></span>
 --------
 
-<span data-ttu-id="82aa8-107">A mobilalkalmazás lehetővé teszi a szervezet számára, hogy üzleti folyamatait mobileszközökön is elérhetővé tegye.</span><span class="sxs-lookup"><span data-stu-id="82aa8-107">The mobile app enables your organization to make its business processes available on mobile devices.</span></span> <span data-ttu-id="82aa8-108">Miután a rendszergazda lehetővé teszi a mobil munkaterületeket a szervezetnél, a felhasználók bejelentkezhetnek az alkalmazásba, és azonnal elkezdhetik az üzleti folyamatok mobileszközökről történő futtatását.</span><span class="sxs-lookup"><span data-stu-id="82aa8-108">After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.</span></span> <span data-ttu-id="82aa8-109">A mobilalkalmazás a következő olyan funkciókat tartalmazza, amelyek segíthetnek a hatékonyság növelésében:</span><span class="sxs-lookup"><span data-stu-id="82aa8-109">The mobile app includes the following features that can help increase productivity:</span></span>
+<span data-ttu-id="c8f06-107">A mobilalkalmazás lehetővé teszi a szervezet számára, hogy üzleti folyamatait mobileszközökön is elérhetővé tegye.</span><span class="sxs-lookup"><span data-stu-id="c8f06-107">The mobile app enables your organization to make its business processes available on mobile devices.</span></span> <span data-ttu-id="c8f06-108">Miután a rendszergazda lehetővé teszi a mobil munkaterületeket a szervezetnél, a felhasználók bejelentkezhetnek az alkalmazásba, és azonnal elkezdhetik az üzleti folyamatok mobileszközökről történő futtatását.</span><span class="sxs-lookup"><span data-stu-id="c8f06-108">After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.</span></span> <span data-ttu-id="c8f06-109">A mobilalkalmazás a következő olyan funkciókat tartalmazza, amelyek segíthetnek a hatékonyság növelésében:</span><span class="sxs-lookup"><span data-stu-id="c8f06-109">The mobile app includes the following features that can help increase productivity:</span></span>
 
-- <span data-ttu-id="82aa8-110">A felhasználók megtekinthetik vagy szerkeszthetik az üzleti adatokat, és reagálhatnak rájuk még akkor is, ha időszakos hálózati kapcsolatuk van, vagy mobileszközeik teljesen offline állapotban vannak.</span><span class="sxs-lookup"><span data-stu-id="82aa8-110">Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline.</span></span> <span data-ttu-id="82aa8-111">Ha egy eszköz újra hálózati kapcsolatot létesít, az offline adatműveletek automatikusan szinkronizálódnak a Dynamics 365 for Finance and Operations programmal.</span><span class="sxs-lookup"><span data-stu-id="82aa8-111">When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations.</span></span>
-- <span data-ttu-id="82aa8-112">A rendszergazdák vagy fejlesztők képesek olyan mobil munkaterületek létrehozására és közzétételére, amelyeket testre szabtak a szervezetük igényeinek megfelelően.</span><span class="sxs-lookup"><span data-stu-id="82aa8-112">IT admins or developers can build and publish mobile workspaces that have been tailored to their organization.</span></span> <span data-ttu-id="82aa8-113">Az alkalmazás a meglévő kódolási lehetőségeket használja.</span><span class="sxs-lookup"><span data-stu-id="82aa8-113">The app uses your existing code assets.</span></span> <span data-ttu-id="82aa8-114">Ezért nem kell ismét implementálnia a validálási eljárásokat, az üzleti logikát vagy a biztonsági konfigurációt.</span><span class="sxs-lookup"><span data-stu-id="82aa8-114">Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.</span></span>
-- <span data-ttu-id="82aa8-115">A rendszergazdák vagy fejlesztők könnyen megtervezhetik a mobil munkaterületeket a webes klienshez mellékelt „point-and-click” típusú munkaterület-tervező segítségével.</span><span class="sxs-lookup"><span data-stu-id="82aa8-115">IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.</span></span>
-- <span data-ttu-id="82aa8-116">A rendszergazdák vagy fejlesztők opcionálisan optimalizálhatják a munkaterületek offline funkcióit is az Üzleti logika bővítési keretrendszer használatával.</span><span class="sxs-lookup"><span data-stu-id="82aa8-116">IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework.</span></span> <span data-ttu-id="82aa8-117">Mivel az adatok feldolgozása az eszköz offline állapotában is folytatódik, mobilos forgatókönyvei továbbra is gazdagok és naprakészek maradnak még akkor is, ha az eszközök nem rendelkeznek állandó hálózati kapcsolattal.</span><span class="sxs-lookup"><span data-stu-id="82aa8-117">Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.</span></span>
+- <span data-ttu-id="c8f06-110">A felhasználók megtekinthetik vagy szerkeszthetik az üzleti adatokat, és reagálhatnak rájuk még akkor is, ha időszakos hálózati kapcsolatuk van, vagy mobileszközeik teljesen offline állapotban vannak.</span><span class="sxs-lookup"><span data-stu-id="c8f06-110">Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline.</span></span> <span data-ttu-id="c8f06-111">Ha egy eszköz újra hálózati kapcsolatot létesít, az offline adatműveletek automatikusan szinkronizálódnak a Dynamics 365 for Finance and Operations programmal.</span><span class="sxs-lookup"><span data-stu-id="c8f06-111">When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations.</span></span>
+- <span data-ttu-id="c8f06-112">A rendszergazdák vagy fejlesztők képesek olyan mobil munkaterületek létrehozására és közzétételére, amelyeket testre szabtak a szervezetük igényeinek megfelelően.</span><span class="sxs-lookup"><span data-stu-id="c8f06-112">IT admins or developers can build and publish mobile workspaces that have been tailored to their organization.</span></span> <span data-ttu-id="c8f06-113">Az alkalmazás a meglévő kódolási lehetőségeket használja.</span><span class="sxs-lookup"><span data-stu-id="c8f06-113">The app uses your existing code assets.</span></span> <span data-ttu-id="c8f06-114">Ezért nem kell ismét implementálnia a validálási eljárásokat, az üzleti logikát vagy a biztonsági konfigurációt.</span><span class="sxs-lookup"><span data-stu-id="c8f06-114">Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.</span></span>
+- <span data-ttu-id="c8f06-115">A rendszergazdák vagy fejlesztők könnyen megtervezhetik a mobil munkaterületeket a webes klienshez mellékelt „point-and-click” típusú munkaterület-tervező segítségével.</span><span class="sxs-lookup"><span data-stu-id="c8f06-115">IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.</span></span>
+- <span data-ttu-id="c8f06-116">A rendszergazdák vagy fejlesztők opcionálisan optimalizálhatják a munkaterületek offline funkcióit is az Üzleti logika bővítési keretrendszer használatával.</span><span class="sxs-lookup"><span data-stu-id="c8f06-116">IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework.</span></span> <span data-ttu-id="c8f06-117">Mivel az adatok feldolgozása az eszköz offline állapotában is folytatódik, mobilos forgatókönyvei továbbra is gazdagok és naprakészek maradnak még akkor is, ha az eszközök nem rendelkeznek állandó hálózati kapcsolattal.</span><span class="sxs-lookup"><span data-stu-id="c8f06-117">Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.</span></span>
 
-## <a name="elements-of-the-mobile-app"></a><span data-ttu-id="82aa8-118">A mobilalkalmazás elemei</span><span class="sxs-lookup"><span data-stu-id="82aa8-118">Elements of the mobile app</span></span>
-<span data-ttu-id="82aa8-119">A mobilalkalmazásban történő navigáció négy egyszerű részből áll: ezek az irányítópult, a munkaterület, az oldalak és a műveletek.</span><span class="sxs-lookup"><span data-stu-id="82aa8-119">Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions.</span></span> 
+## <a name="elements-of-the-mobile-app"></a><span data-ttu-id="c8f06-118">A mobilalkalmazás elemei</span><span class="sxs-lookup"><span data-stu-id="c8f06-118">Elements of the mobile app</span></span>
+<span data-ttu-id="c8f06-119">A mobilalkalmazásban történő navigáció négy egyszerű részből áll: ezek az irányítópult, a munkaterület, az oldalak és a műveletek.</span><span class="sxs-lookup"><span data-stu-id="c8f06-119">Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions.</span></span> 
 
-<span data-ttu-id="82aa8-120">[![A mobilalkalmazás navigációs fogalmai](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span><span class="sxs-lookup"><span data-stu-id="82aa8-120">[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span></span>
+<span data-ttu-id="c8f06-120">[![A mobilalkalmazás navigációs fogalmai](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span><span class="sxs-lookup"><span data-stu-id="c8f06-120">[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span></span>
 
-1. <span data-ttu-id="82aa8-121">Az alkalmazás indításakor az **irányítópultra** kerül.</span><span class="sxs-lookup"><span data-stu-id="82aa8-121">When you start the app, you go to the **dashboard**.</span></span>
-2. <span data-ttu-id="82aa8-122">Az irányítópulton látható a közzétett **Munkaterületek** listája.</span><span class="sxs-lookup"><span data-stu-id="82aa8-122">On the dashboard, you can see a list of **workspaces** that have been published.</span></span>
-3. <span data-ttu-id="82aa8-123">Minden munkaterületnél látható az adott munkaterület rendelkezésre álló **lapjainak** listája.</span><span class="sxs-lookup"><span data-stu-id="82aa8-123">In each workspace, you can see a list of **pages** that are available for that workspace.</span></span>
-4. <span data-ttu-id="82aa8-124">Az oldalakra lépve több művelet végezhető el.</span><span class="sxs-lookup"><span data-stu-id="82aa8-124">After you're on a page, you can perform several actions.</span></span> <span data-ttu-id="82aa8-125">Íme néhány példa:</span><span class="sxs-lookup"><span data-stu-id="82aa8-125">Here are some examples:</span></span>
+1. <span data-ttu-id="c8f06-121">Az alkalmazás indításakor az **irányítópultra** kerül.</span><span class="sxs-lookup"><span data-stu-id="c8f06-121">When you start the app, you go to the **dashboard**.</span></span>
+2. <span data-ttu-id="c8f06-122">Az irányítópulton látható a közzétett **Munkaterületek** listája.</span><span class="sxs-lookup"><span data-stu-id="c8f06-122">On the dashboard, you can see a list of **workspaces** that have been published.</span></span>
+3. <span data-ttu-id="c8f06-123">Minden munkaterületnél látható az adott munkaterület rendelkezésre álló **lapjainak** listája.</span><span class="sxs-lookup"><span data-stu-id="c8f06-123">In each workspace, you can see a list of **pages** that are available for that workspace.</span></span>
+4. <span data-ttu-id="c8f06-124">Az oldalakra lépve több művelet végezhető el.</span><span class="sxs-lookup"><span data-stu-id="c8f06-124">After you're on a page, you can perform several actions.</span></span> <span data-ttu-id="c8f06-125">Íme néhány példa:</span><span class="sxs-lookup"><span data-stu-id="c8f06-125">Here are some examples:</span></span>
 
-    - <span data-ttu-id="82aa8-126">Részletes adatok megtekintése.</span><span class="sxs-lookup"><span data-stu-id="82aa8-126">View detailed data.</span></span>
-    - <span data-ttu-id="82aa8-127">Navigálás a kapcsolódó adatokat, például az entitások részleteit vagy a sorokat tartalmazó lapokra.</span><span class="sxs-lookup"><span data-stu-id="82aa8-127">Navigate to other pages for related data, such as entity details or lines.</span></span>
-    - <span data-ttu-id="82aa8-128">Lásd az adott oldalon rendelkezésre álló **műveletek** listáját.</span><span class="sxs-lookup"><span data-stu-id="82aa8-128">See a list of **actions** that are available for that page.</span></span> <span data-ttu-id="82aa8-129">A műveletek segítségével adatokat hozhat létre, vagy módosíthatja a meglévő adatokat.</span><span class="sxs-lookup"><span data-stu-id="82aa8-129">Actions let you create or edit existing data.</span></span>
+    - <span data-ttu-id="c8f06-126">Részletes adatok megtekintése.</span><span class="sxs-lookup"><span data-stu-id="c8f06-126">View detailed data.</span></span>
+    - <span data-ttu-id="c8f06-127">Navigálás a kapcsolódó adatokat, például az entitások részleteit vagy a sorokat tartalmazó lapokra.</span><span class="sxs-lookup"><span data-stu-id="c8f06-127">Navigate to other pages for related data, such as entity details or lines.</span></span>
+    - <span data-ttu-id="c8f06-128">Lásd az adott oldalon rendelkezésre álló **műveletek** listáját.</span><span class="sxs-lookup"><span data-stu-id="c8f06-128">See a list of **actions** that are available for that page.</span></span> <span data-ttu-id="c8f06-129">A műveletek segítségével adatokat hozhat létre, vagy módosíthatja a meglévő adatokat.</span><span class="sxs-lookup"><span data-stu-id="c8f06-129">Actions let you create or edit existing data.</span></span>
 
-## <a name="implementation-process"></a><span data-ttu-id="82aa8-130">Megvalósítási folyamat</span><span class="sxs-lookup"><span data-stu-id="82aa8-130">Implementation process</span></span>
-<span data-ttu-id="82aa8-131">A következő ábra a Microsoft által biztosított, valamint az egyéni mobil munkaterületek implementálásának folyamatát mutatja.</span><span class="sxs-lookup"><span data-stu-id="82aa8-131">The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> 
+## <a name="implementation-process"></a><span data-ttu-id="c8f06-130">Megvalósítási folyamat</span><span class="sxs-lookup"><span data-stu-id="c8f06-130">Implementation process</span></span>
+<span data-ttu-id="c8f06-131">A következő ábra a Microsoft által biztosított, valamint az egyéni mobil munkaterületek implementálásának folyamatát mutatja.</span><span class="sxs-lookup"><span data-stu-id="c8f06-131">The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> 
 
-![Mobilalkalmazások megvalósítási folyamata](./media/Mobile-implementation-process-5.png)
+<span data-ttu-id="c8f06-132">[![Mobilalkalmazások megvalósítási folyamata](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span><span class="sxs-lookup"><span data-stu-id="c8f06-132">[![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span></span>
 
-<span data-ttu-id="82aa8-133">Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalmaz, amelyek segítenek a Microsoft által biztosított, valamint az egyéni mobil munkaterületek implementálásában.</span><span class="sxs-lookup"><span data-stu-id="82aa8-133">The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> <span data-ttu-id="82aa8-134">Az első oszlopban szereplő számok az előzőekben bemutatott számozott lépéseknek felelnek meg.</span><span class="sxs-lookup"><span data-stu-id="82aa8-134">The numbers in the first column correspond to the numbered steps in the previous illustration.</span></span>
+<span data-ttu-id="c8f06-133">Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalmaz, amelyek segítenek a Microsoft által biztosított, valamint az egyéni mobil munkaterületek implementálásában.</span><span class="sxs-lookup"><span data-stu-id="c8f06-133">The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> <span data-ttu-id="c8f06-134">Az első oszlopban szereplő számok az előzőekben bemutatott számozott lépéseknek felelnek meg.</span><span class="sxs-lookup"><span data-stu-id="c8f06-134">The numbers in the first column correspond to the numbered steps in the previous illustration.</span></span>
 
 <table>
 <colgroup>
@@ -74,84 +74,84 @@ ms.lasthandoff: 09/04/2018
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="82aa8-135">Lépés</span><span class="sxs-lookup"><span data-stu-id="82aa8-135">Step</span></span></th>
-<th><span data-ttu-id="82aa8-136">Szerep</span><span class="sxs-lookup"><span data-stu-id="82aa8-136">Role</span></span></th>
-<th><span data-ttu-id="82aa8-137">Művelet</span><span class="sxs-lookup"><span data-stu-id="82aa8-137">Action</span></span></th>
-<th><span data-ttu-id="82aa8-138">Források, melyek segítenek a művelet végrehajtásában</span><span class="sxs-lookup"><span data-stu-id="82aa8-138">Resources to help you complete the action</span></span></th>
+<th><span data-ttu-id="c8f06-135">Lépés</span><span class="sxs-lookup"><span data-stu-id="c8f06-135">Step</span></span></th>
+<th><span data-ttu-id="c8f06-136">Szerep</span><span class="sxs-lookup"><span data-stu-id="c8f06-136">Role</span></span></th>
+<th><span data-ttu-id="c8f06-137">Művelet</span><span class="sxs-lookup"><span data-stu-id="c8f06-137">Action</span></span></th>
+<th><span data-ttu-id="c8f06-138">Források, melyek segítenek a művelet végrehajtásában</span><span class="sxs-lookup"><span data-stu-id="c8f06-138">Resources to help you complete the action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="82aa8-139">1</span><span class="sxs-lookup"><span data-stu-id="82aa8-139">1</span></span></td>
-<td><span data-ttu-id="82aa8-140">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="82aa8-140">System administrator</span></span></td>
-<td><span data-ttu-id="82aa8-141">Finance and Operations alkalmazása a szervezeten belüli.</span><span class="sxs-lookup"><span data-stu-id="82aa8-141">Implement Finance and Operations in your organization.</span></span></td>
-<td><ul><li><span data-ttu-id="82aa8-142">Ha még nem telepítette a Microsoft Dynamics 365 valamely verzióját, lásd: <a href="../deployment/deploy-demo-environment.md">Bemutatókörnyezet telepítése</a>.</span><span class="sxs-lookup"><span data-stu-id="82aa8-142">If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span></li><li><span data-ttu-id="82aa8-143">A használható mobil munkaterületek listájának megtekintéséhez lásd <a href="mobile-workspaces-released.md">Nemrég kiadott mobil munkaterületek</a>.</span><span class="sxs-lookup"><span data-stu-id="82aa8-143">To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span></li></ul></td>
+<td><span data-ttu-id="c8f06-139">1</span><span class="sxs-lookup"><span data-stu-id="c8f06-139">1</span></span></td>
+<td><span data-ttu-id="c8f06-140">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="c8f06-140">System administrator</span></span></td>
+<td><span data-ttu-id="c8f06-141">Finance and Operations alkalmazása a szervezeten belüli.</span><span class="sxs-lookup"><span data-stu-id="c8f06-141">Implement Finance and Operations in your organization.</span></span></td>
+<td><ul><li><span data-ttu-id="c8f06-142">Ha még nem telepítette a Microsoft Dynamics 365 valamely verzióját, lásd: <a href="../deployment/deploy-demo-environment.md">Bemutatókörnyezet telepítése</a>.</span><span class="sxs-lookup"><span data-stu-id="c8f06-142">If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span></li><li><span data-ttu-id="c8f06-143">A használható mobil munkaterületek listájának megtekintéséhez lásd <a href="mobile-workspaces-released.md">Nemrég kiadott mobil munkaterületek</a>.</span><span class="sxs-lookup"><span data-stu-id="c8f06-143">To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span></li></ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="82aa8-144">2</span><span class="sxs-lookup"><span data-stu-id="82aa8-144">2</span></span></td>
-<td><span data-ttu-id="82aa8-145">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="82aa8-145">System administrator</span></span></td>
-<td><span data-ttu-id="82aa8-146"><strong>A Microsoft Dynamics 365 for Operations 1611-es verziójának használatakor:</strong> Töltse le és telepítse azokat a tudásbáziscikkeket, amelyek lehetővé teszik a Microsoft által biztosított mobil munkaterületek használatát.</span><span class="sxs-lookup"><span data-stu-id="82aa8-146"><strong>If you&#39;re using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</span></span></td>
-<td><span data-ttu-id="82aa8-147">További információ a következő témakörökben olvasható:</span><span class="sxs-lookup"><span data-stu-id="82aa8-147">See the following topics for more information:</span></span>
+<td><span data-ttu-id="c8f06-144">2</span><span class="sxs-lookup"><span data-stu-id="c8f06-144">2</span></span></td>
+<td><span data-ttu-id="c8f06-145">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="c8f06-145">System administrator</span></span></td>
+<td><span data-ttu-id="c8f06-146"><strong>A Microsoft Dynamics 365 for Operations 1611-es verziójának használatakor:</strong> Töltse le és telepítse azokat a tudásbáziscikkeket, amelyek lehetővé teszik a Microsoft által biztosított mobil munkaterületek használatát.</span><span class="sxs-lookup"><span data-stu-id="c8f06-146"><strong>If you&#39;re using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</span></span></td>
+<td><span data-ttu-id="c8f06-147">További információ a következő témakörökben olvasható:</span><span class="sxs-lookup"><span data-stu-id="c8f06-147">See the following topics for more information:</span></span>
 <ul>
 
-<li><span data-ttu-id="82aa8-148"><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Költségkontroll mobil munkaterületek</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-148"><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></span></span></li>
-<li><span data-ttu-id="82aa8-149"><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Aktuális készlet mobil munkaterület</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-149"><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></span></span></li>
-<li><span data-ttu-id="82aa8-150"><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Értékesítési rendelések mobil munkaterületek</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-150"><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></span></span></li>
-<li><span data-ttu-id="82aa8-151"><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Szállítói együttműködési mobil munkaterület</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-151"><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></span></span></li>
-<li><span data-ttu-id="82aa8-152"><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Projektidő megadása mobil munkaterület</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-152"><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></span></span></li>
-<li><span data-ttu-id="82aa8-153"><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Költségkezelési mobil munkaterület</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-153"><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></span></span></li>
+<li><span data-ttu-id="c8f06-148"><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Költségkontroll mobil munkaterületek</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-148"><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></span></span></li>
+<li><span data-ttu-id="c8f06-149"><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Aktuális készlet mobil munkaterület</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-149"><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></span></span></li>
+<li><span data-ttu-id="c8f06-150"><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Értékesítési rendelések mobil munkaterületek</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-150"><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></span></span></li>
+<li><span data-ttu-id="c8f06-151"><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Szállítói együttműködési mobil munkaterület</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-151"><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></span></span></li>
+<li><span data-ttu-id="c8f06-152"><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Projektidő megadása mobil munkaterület</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-152"><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></span></span></li>
+<li><span data-ttu-id="c8f06-153"><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Költségkezelési mobil munkaterület</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-153"><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></span></span></li>
 
 </ul></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="82aa8-154">3</span><span class="sxs-lookup"><span data-stu-id="82aa8-154">3</span></span></td>
-<td><span data-ttu-id="82aa8-155">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="82aa8-155">System administrator</span></span></td>
-<td><span data-ttu-id="82aa8-156">Tegye közzé a Microsoft által biztosított egyéni mobil munkaterületeket.</span><span class="sxs-lookup"><span data-stu-id="82aa8-156">Publish the mobile workspaces that are provided by Microsoft.</span></span></td>
-<td><span data-ttu-id="82aa8-157"><a href="publish-mobile-workspace.md">Mobil munkaterület közzététele</a>
-</span><span class="sxs-lookup"><span data-stu-id="82aa8-157"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
+<td><span data-ttu-id="c8f06-154">3</span><span class="sxs-lookup"><span data-stu-id="c8f06-154">3</span></span></td>
+<td><span data-ttu-id="c8f06-155">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="c8f06-155">System administrator</span></span></td>
+<td><span data-ttu-id="c8f06-156">Tegye közzé a Microsoft által biztosított egyéni mobil munkaterületeket.</span><span class="sxs-lookup"><span data-stu-id="c8f06-156">Publish the mobile workspaces that are provided by Microsoft.</span></span></td>
+<td><span data-ttu-id="c8f06-157"><a href="publish-mobile-workspace.md">Mobil munkaterület közzététele</a>
+</span><span class="sxs-lookup"><span data-stu-id="c8f06-157"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
 </span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="82aa8-158">4</span><span class="sxs-lookup"><span data-stu-id="82aa8-158">4</span></span></td>
-<td><span data-ttu-id="82aa8-159">Fejlesztő vagy független szoftverszállító (ISV)</span><span class="sxs-lookup"><span data-stu-id="82aa8-159">Developer or independent software vendor (ISV)</span></span></td>
-<td><span data-ttu-id="82aa8-160">Használja a mobilplatformot egyéni mobil munkaterületek létrehozására.</span><span class="sxs-lookup"><span data-stu-id="82aa8-160">Use the mobile platform to create custom mobile workspaces.</span></span></td>
-<td><span data-ttu-id="82aa8-161"><a href="platform/mobile-platform-home-page.md">Mobil platform</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-161"><a href="platform/mobile-platform-home-page.md">Mobile platform</a></span></span></td>
+<td><span data-ttu-id="c8f06-158">4</span><span class="sxs-lookup"><span data-stu-id="c8f06-158">4</span></span></td>
+<td><span data-ttu-id="c8f06-159">Fejlesztő vagy független szoftverszállító (ISV)</span><span class="sxs-lookup"><span data-stu-id="c8f06-159">Developer or independent software vendor (ISV)</span></span></td>
+<td><span data-ttu-id="c8f06-160">Használja a mobilplatformot egyéni mobil munkaterületek létrehozására.</span><span class="sxs-lookup"><span data-stu-id="c8f06-160">Use the mobile platform to create custom mobile workspaces.</span></span></td>
+<td><span data-ttu-id="c8f06-161"><a href="platform/mobile-platform-home-page.md">Mobil platform</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-161"><a href="platform/mobile-platform-home-page.md">Mobile platform</a></span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="82aa8-162">5</span><span class="sxs-lookup"><span data-stu-id="82aa8-162">5</span></span></td>
-<td><span data-ttu-id="82aa8-163">ISV</span><span class="sxs-lookup"><span data-stu-id="82aa8-163">ISV</span></span></td>
-<td><span data-ttu-id="82aa8-164">Hozzon létre egy telepíthető csomagot, amely egyéni mobil munkaterületeket tartalmaz, és töltse fel a csomagot a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásra.</span><span class="sxs-lookup"><span data-stu-id="82aa8-164">Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</span></span></td>
-<td><span data-ttu-id="82aa8-165"><a href="../deployment/create-apply-deployable-package.md">Telepíthető csomag létrehozása</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-165"><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></span></span></td>
+<td><span data-ttu-id="c8f06-162">5</span><span class="sxs-lookup"><span data-stu-id="c8f06-162">5</span></span></td>
+<td><span data-ttu-id="c8f06-163">ISV</span><span class="sxs-lookup"><span data-stu-id="c8f06-163">ISV</span></span></td>
+<td><span data-ttu-id="c8f06-164">Hozzon létre egy telepíthető csomagot, amely egyéni mobil munkaterületeket tartalmaz, és töltse fel a csomagot a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásra.</span><span class="sxs-lookup"><span data-stu-id="c8f06-164">Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</span></span></td>
+<td><span data-ttu-id="c8f06-165"><a href="../deployment/create-apply-deployable-package.md">Telepíthető csomag létrehozása</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-165"><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="82aa8-166">6</span><span class="sxs-lookup"><span data-stu-id="82aa8-166">6</span></span></td>
-<td><span data-ttu-id="82aa8-167">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="82aa8-167">System administrator</span></span></td>
-<td><span data-ttu-id="82aa8-168">Alkalmazza a telepíthető csomagot, amely tartalmazza a független szoftverszállító (ISV) által biztosított egyéni munkaterületeket.</span><span class="sxs-lookup"><span data-stu-id="82aa8-168">Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</span></span></td>
-<td><span data-ttu-id="82aa8-169"><a href="../deployment/apply-deployable-package-system.md">Telepíthető csomag alkalmazása</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-169"><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></span></span></td>
+<td><span data-ttu-id="c8f06-166">6</span><span class="sxs-lookup"><span data-stu-id="c8f06-166">6</span></span></td>
+<td><span data-ttu-id="c8f06-167">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="c8f06-167">System administrator</span></span></td>
+<td><span data-ttu-id="c8f06-168">Alkalmazza a telepíthető csomagot, amely tartalmazza a független szoftverszállító (ISV) által biztosított egyéni munkaterületeket.</span><span class="sxs-lookup"><span data-stu-id="c8f06-168">Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</span></span></td>
+<td><span data-ttu-id="c8f06-169"><a href="../deployment/apply-deployable-package-system.md">Telepíthető csomag alkalmazása</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-169"><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="82aa8-170">7</span><span class="sxs-lookup"><span data-stu-id="82aa8-170">7</span></span></td>
-<td><span data-ttu-id="82aa8-171">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="82aa8-171">System administrator</span></span></td>
-<td><span data-ttu-id="82aa8-172">Tegye közzé az ISV által biztosított egyéni mobil munkaterületeket.</span><span class="sxs-lookup"><span data-stu-id="82aa8-172">Publish the custom mobile workspaces that are provided by the ISV.</span></span></td>
-<td><span data-ttu-id="82aa8-173"><a href="publish-mobile-workspace.md">Mobil munkaterület közzététele</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-173"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></span></span></td>
+<td><span data-ttu-id="c8f06-170">7</span><span class="sxs-lookup"><span data-stu-id="c8f06-170">7</span></span></td>
+<td><span data-ttu-id="c8f06-171">Rendszergazda</span><span class="sxs-lookup"><span data-stu-id="c8f06-171">System administrator</span></span></td>
+<td><span data-ttu-id="c8f06-172">Tegye közzé az ISV által biztosított egyéni mobil munkaterületeket.</span><span class="sxs-lookup"><span data-stu-id="c8f06-172">Publish the custom mobile workspaces that are provided by the ISV.</span></span></td>
+<td><span data-ttu-id="c8f06-173"><a href="publish-mobile-workspace.md">Mobil munkaterület közzététele</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-173"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="82aa8-174">8</span><span class="sxs-lookup"><span data-stu-id="82aa8-174">8</span></span></td>
-<td><span data-ttu-id="82aa8-175">Felhasználó</span><span class="sxs-lookup"><span data-stu-id="82aa8-175">User</span></span></td>
-<td><span data-ttu-id="82aa8-176">Töltse le és telepítse a mobilalkalmazást.</span><span class="sxs-lookup"><span data-stu-id="82aa8-176">Download and install the mobile app.</span></span></td>
-<td><span data-ttu-id="82aa8-177">
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations androidos alkalmazás</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-177">
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations app for Android</a></span></span><BR/><span data-ttu-id="82aa8-178">
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations iOS-alkalmazás</a></span><span class="sxs-lookup"><span data-stu-id="82aa8-178">
+<td><span data-ttu-id="c8f06-174">8</span><span class="sxs-lookup"><span data-stu-id="c8f06-174">8</span></span></td>
+<td><span data-ttu-id="c8f06-175">Felhasználó</span><span class="sxs-lookup"><span data-stu-id="c8f06-175">User</span></span></td>
+<td><span data-ttu-id="c8f06-176">Töltse le és telepítse a mobilalkalmazást.</span><span class="sxs-lookup"><span data-stu-id="c8f06-176">Download and install the mobile app.</span></span></td>
+<td><span data-ttu-id="c8f06-177">
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations androidos alkalmazás</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-177">
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations app for Android</a></span></span><BR/><span data-ttu-id="c8f06-178">
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations iOS-alkalmazás</a></span><span class="sxs-lookup"><span data-stu-id="c8f06-178">
 <a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations app for iOS</a></span></span><BR/>
-<span data-ttu-id="82aa8-179">(A Windows Phone nem támogatott)</span><span class="sxs-lookup"><span data-stu-id="82aa8-179">(Windows Phone unsupported)</span></span>
+<span data-ttu-id="c8f06-179">(A Windows Phone nem támogatott)</span><span class="sxs-lookup"><span data-stu-id="c8f06-179">(Windows Phone unsupported)</span></span>
 </td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="82aa8-180">9</span><span class="sxs-lookup"><span data-stu-id="82aa8-180">9</span></span></td>
-<td><span data-ttu-id="82aa8-181">Felhasználó</span><span class="sxs-lookup"><span data-stu-id="82aa8-181">User</span></span></td>
-<td><span data-ttu-id="82aa8-182">Jelentkezzen be, és használja a mobilalkalmazást.</span><span class="sxs-lookup"><span data-stu-id="82aa8-182">Sign in, and use the mobile app.</span></span> <span data-ttu-id="82aa8-183">Az alkalmazás tartalmazza a rendszergazda által közzétett mobil munkaterületeket.</span><span class="sxs-lookup"><span data-stu-id="82aa8-183">The app includes the mobile workspaces that have been published by the system administrator.</span></span></td>
-<td><span data-ttu-id="82aa8-184">A Microsoft által biztosított mobil munkaterületek listájának megtekintéséhez lásd <a href="mobile-workspaces-released.md">Nemrég kiadott mobil munkaterületek</a>.</span><span class="sxs-lookup"><span data-stu-id="82aa8-184">To see a list of mobile workspaces that are provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span>
+<td><span data-ttu-id="c8f06-180">9</span><span class="sxs-lookup"><span data-stu-id="c8f06-180">9</span></span></td>
+<td><span data-ttu-id="c8f06-181">Felhasználó</span><span class="sxs-lookup"><span data-stu-id="c8f06-181">User</span></span></td>
+<td><span data-ttu-id="c8f06-182">Jelentkezzen be, és használja a mobilalkalmazást.</span><span class="sxs-lookup"><span data-stu-id="c8f06-182">Sign in, and use the mobile app.</span></span> <span data-ttu-id="c8f06-183">Az alkalmazás tartalmazza a rendszergazda által közzétett mobil munkaterületeket.</span><span class="sxs-lookup"><span data-stu-id="c8f06-183">The app includes the mobile workspaces that have been published by the system administrator.</span></span></td>
+<td><span data-ttu-id="c8f06-184">A Microsoft által biztosított mobil munkaterületek listájának megtekintéséhez lásd <a href="mobile-workspaces-released.md">Nemrég kiadott mobil munkaterületek</a>.</span><span class="sxs-lookup"><span data-stu-id="c8f06-184">To see a list of mobile workspaces that are provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span>
 </td>
 </tr>
 </tbody>
