@@ -27,7 +27,6 @@ ms.lasthandoff: 10/12/2018
 # <a name="ledger-settlements"></a>Főkönyvi kiegyenlítések
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 A főkönyvi kiegyenlítések lehetővé teszik a megfelelő terhelési és jóváírási tranzakciók egyeztetését a főkönyvben, és kiegyenlítettként jelölését. Ezzel a módszerrel biztosíthatja, hogy a kapcsolódó tranzakciók törölve lettek. A kiegyenlítéseket sztornírozni is lehet, ha tévedésből történtek.
 
