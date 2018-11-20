@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 4c27e0f75a45a2e4290ec4b6f72ee67d792449a0
+ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/11/2018
 
 ---
 
@@ -40,7 +40,7 @@ A manuális szállítóazonosító használatakor átmásolhatja továbbá a sz�
 
 ## <a name="copy-a-vendor"></a>Szállító másolása
 
-Szállító másolásához válassza a **Minden szállító** listaoldalon az **Új** lehetőséget, amely megnyitja a **Minden szállító, új rekord** oldalt. Figyelje meg, hogy az új szállítókód nincs azonnal hozzárendelve. Ez a viselkedés eltér a Microsoft Dynamics 365 for Finance and Operations korábbi verzióiban megszokott viselkedéstől. Mivel nem választotta ki a szállítócsoportot, a rendszer nem tudja megállapítani a felhasználni kívánt megfelelő számsorozatot. Nem tudja továbbá megállapítani, hogy új szállítót próbál létrehozni, vagy másolni szeretne egy szállítót. A rendszer ezért a szállítóazonosítót csak azután rendeli hozzá, miután az oldal alsó részén található **Mentés** gombra kattint.
+Szállító másolásához válassza a **Minden szállító** listaoldalon az **Új** lehetőséget, amely megnyitja a **Minden szállító, új rekord** oldalt. Figyelje meg, hogy az új szállítóazonosító nincs azonnal hozzárendelve. Ez a viselkedés eltér a Microsoft Dynamics 365 for Finance and Operations korábbi verzióiban megszokott viselkedéstől. Mivel nem választotta ki a szállítócsoportot, a rendszer nem tudja megállapítani a felhasználni kívánt megfelelő számsorozatot. Nem tudja továbbá megállapítani, hogy új szállítót próbál létrehozni, vagy másolni szeretne egy szállítót. A rendszer ezért a szállítóazonosítót csak azután rendeli hozzá, miután az oldal alsó részén található **Mentés** gombra kattint.
 
 Ha új szállítót hoz létre, folytathatja a szokásos módon a mezők értékeinek megadásával. Amikor végzett, és kiválasztja a **Mentés** lehetőséget, láthatja, hogy a rendszer automatikusan hozzárendelte a szállítóazonosítót. A másik esetben, a manuális számsorozatok esetén láthatja, hogy a manuális szállítóazonosítót használja a rendszer.
 

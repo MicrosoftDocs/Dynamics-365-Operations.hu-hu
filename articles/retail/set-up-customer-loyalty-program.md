@@ -1,9 +1,9 @@
 ---
-title: "Vásárlói hűségprogramok beállítása"
-description: "Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók."
+title: "Hűség áttekintése"
+description: "Ez a témakör leírja a hűséggel kapcsolatos képességeket a Microsoft Dynamics 365 for Retail programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat."
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,23 +20,20 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 8aa29282f80870b93d119c095bb95c3bcfbfc682
+ms.sourcegitcommit: 11ad4168c7e5ddc63608d1c86430e4a6936d5e30
+ms.openlocfilehash: 78318849873f396c662c5250f0e86146279cc3a5
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
-# <a name="set-up-customer-loyalty-programs"></a>Vásárlói hűségprogramok beállítása
+# <a name="loyalty-overview"></a>Hűség áttekintése
 
 [!include [banner](includes/banner.md)]
 
-Ez a cikk bemutatja egy hűségprogram beállítását. A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha termékeket vásárolnak az Ön kiskereskedelmi üzleteiben. A Microsoft Dynamics for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók.
+A hűségprogramok segíthetnek a vevő hűségének növelésében azáltal, hogy megjutalmazzák a vevőket, ha kapcsolatba lépnek a kereskedő márkájával. A Microsoft Dynamics 365 for Retail programban be lehet állítani olyan egyszerű vagy összetett hűségprogramokat, melyek jogi személyi státusszal rendelkező bármilyen kiskereskedelmi csatornára alkalmazhatók. Ez a témakör leírja a hűséggel kapcsolatos képességeket a Microsoft Dynamics 365 for Retail programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
 
-<a name="loyalty-features"></a>Hűségkártya funkciók
-----------------
-
-A hűségprogram beállítása lehet, hogy a következők tartoznak:
+A hűségprogram beállíthatja, hogy a következőket tartalmazza:
 
 -   Állítsa be annak a jutalomnak a típusát, amit hűségprogramjaiban használ és kövesse nyomon a részvételt a hűségprogramban.
 -   A hűségprogramokat úgy állítsa be, hogy azok a különböző Ön által ajánlott jutalomösztönzőket megfelelően képviseljék. Hűségprogram-szinteket adhat meg, hogy nagyobb ösztönzést és jutalmat nyújthasson azoknak az ügyfeleknek, akik gyakrabban vásárolnak vagy több pénzt költenek üzleteiben.
@@ -45,7 +42,7 @@ A hűségprogram beállítása lehet, hogy a következők tartoznak:
 -   Manuálisan rendezze a hűségkártyákat vagy vigye át a hűségpontegyenleget egyik kártyáról a másikra ügyfél befogadása vagy jutalmazására céljából.
 
 ## <a name="setting-up-loyalty-programs"></a>Hűségprogramok beállítása
-Néhány összetevőt be kell állítania ahhoz, hogy a Dynamics 365 for Retail hűségprogram funkcióját engedélyezhesse. A következő ábra bemutatja a hűségprogram összetevőit és azok egymással való kapcsolódását. ![Hűségbeállítás folyamata](./media/loyaltyprocess.gif)
+Néhány összetevőt be kell állítania ahhoz, hogy a Dynamics 365 for Retail hűségprogram funkcióját engedélyezhesse. A következő ábra bemutatja a hűségprogram összetevőit és azok egymással való kapcsolódását. ![Hűség beállítási folyamata](./media/loyaltyprocess.gif "A Hűség komponensei és azok kapcsolata egymással")
 
 ## <a name="loyalty-components"></a>Hűségelemek beállítása
 A következő táblázat minden egyes összetevőt és azok hűségkártyarendszerben használt helyét ismerteti.
@@ -73,8 +70,60 @@ A következő táblázat leírja a folyamatok, amelyeket el kell végezni a hűs
 | Offline hűségtranzakciók feldolgozása | Futtassa ezt a folyamatot a hűségkártyák kapcsolat nélküli feldolgozott tranzakciókat is tartalmazó frissítéséhez. Ezt az eljárást csak akkor kell alkalmazni, ha az **Offline pontszerzés** jelölőnégyzet be van jelölve a **Megosztott kiskereskedelmi paraméterek** oldalon, így offline is lehet jutalompontokat szerezni.                                                                                                                                               | Offline hűségtranzakciók feldolgozása |
 | Hűségkártyarétegek frissítése            | Futtassa ezt a folyamatot a vevő jogosultsági szintjének a hűségprogram szintszabályai ellenében történő értékeléséhez és a vevő szintállapotának frissítéséhez. Erre a folyamatra csak akkor van szükség, ha módosítja a hűségprogramok szintszabályait és a frissített szabályokat a már kibocsátott hűségkártyákra visszamenőlegesen kívánja alkalmazni. Ezt a folyamatot kötegelt folyamatként vagy egyes kártyákra futtatható. | Hűségkártyarétegek frissítése            |
 
+## <a name="loyalty-enhancements"></a>Hűség fejlesztései
 
+A Retail új hűség funkcióval rendelkezik a 2018 októberi kiadás részeként. Az új fejlesztéseket mindegyikének magyarázata az alábbiakban található.
 
+- A korábbi kiadásokban a hűségprogram részeként kiskereskedők szerinti különböző kereseti és beváltási szabályokat hozhattak létre szintek szerint, hogy eltérően jutalmazzák a különböző szintű ügyfeleket. A kiskereskedők mostantól használhatják a „fiókok” funkciót a kereseti és beváltási szabályok részeként, így bizonyos vevőcsoportok tartozhatnak egy szinthez, mégis eltérő jutalmazásban részesülhetnek. Így nem szükséges további szintek létrehozása.
+    
+    > [!NOTE]
+    > A hűségprogram belül a kereseti szabályok kiegészítő jellegűek. Például ha olyan szabályt hoz létre, amely szerint az arany szintű tagok minden egyes amerikai dollár után 10 pontot kapnak, és létrehoz egy szabályt, amely szerint a „veterán” fiók 5 pont jutalomban részesül minden egyes amerikai dollár, egy veterán, aki tagja is arany szintnek is 15 pontot pontot kap egy dollár után, mivel a vevő mindkét sorra jogosult.. Azonban ha veterán vevő nem volt arany szint tagja, akkor 5 pontot kapna minden egyes dollár után. A csatornák változásainak érvényesítéséhez, futtassa a **Hűségprogramok feldolgozása** és az **1050** (hűségadatok) feladatokat.
+    
+    ![Kereset fiók alapján](./media/Affiliation%20based%20earning.png "Keresetek fiók alapján")
 
+- A kiskereskedők sokszor speciális árakat alkalmaznak vevők adott csoportja számára, akikre nem szeretnék alkalmazni a hűségprogramot. Például nagykereskedők vagy munkavállalók, akik speciális árképzésben részesülnek, de hűségpontokat nem kapnak. Gyakran a „fiókok” szolgálnak arra, hogy az ilyen vevőcsoportok speciális árképzésben részesüljenek. Bizonyos vevőcsoportok kizárásához a hűségpontok megkereséséből a kiskereskedő egy vagy több fiókot is megadhat a hűségprogram **Kizárt fiókok** részében. Ezzel a módszerrel kizárt fiókokhoz tartozó vevők már meglévő hűséges tagok, így nem kapnak hűségpontokat a vásárlásaik után. A csatornák változásainak érvényesítéséhez, futtassa a **Hűségprogramok feldolgozása** és az **1050** (hűségadatok) feladatokat.
 
+    ![Kizárt fiókok](./media/Excluded%20affiliations.png "Fiókok kizárása hűségpontok szerzéséből")
+    
+- A kiskereskedők generálhatnak hűségkártyaszámokat a csatornákban. A 2018 októberi frissítés előtt kiskereskedők fizikai hűségkártyákat használhattak vagy bizonyos egyedi vevőadatok, például telefonszám használatával hűségkártyákat generálhattak. Ahhoz, hogy a hűségkártyák generálása engedélyezve legyen kiskereskedelmi kapcsolja be a **Hűségkártyaszám létrehozása** lehetőséget az üzlethez társított funkcióprofilban. Online csatornák esetében a kiskereskedők használható a hűségkártyák kiadásához a vevőknek az IssueLoyaltyCard API-t használhatják. Kiskereskedők vagy megadhatnak hűségkártyaszámot az API-nak a hűségkártya létrehozásához vagy a rendszer a Dynamics 365 for Retailben beállított hűségkártya-számsorozatot használja. Azonban ha nincs a számsorozat, és a kiskereskedő nem biztosít az API hívása közben a hűségkártyaszámot, egy hibaüzenet jelenik meg.
+
+![Hűségkártya létrehozása](./media/Generate%20loyalty%20card.png "Hűségkártyaszám automatikus létrehozása")
+
+- Megszerzett és beváltott hűségpontok most mentve van mindegyik tranzakciónál és értékesítési rendeléshez az értékesítési sorral szemben, hogy ugyanaz az összeg téríthető vissza vagy vehető vissza a teljes vagy részleges visszaküldés esetén. Ezenkívül a pontok láthatósága az értékesítési sor szintjén a hívásközponti felhasználóknak, lehetőséget biztosít azzal kapcsolatos kérések megválaszolására, hogy az egyes sorokhoz kapcsolódóan hány pont került megszerzésre vagy beváltásra. Ezen módosítás előtt hűségpontok mindig újra kiszámításra kerültek visszaküldés esetén, ennek eredménye eltérő összeg volt az eredetihez képest, a ha keresési vagy beváltási szabályok megváltoztak, illetve a hívásközpont felhasználói sem látták a pontok részletezését. A pontok a **Kártyatranzakciók** alatt tekinthetők meg az egyes hűségkártyák képernyőjén.
+    
+- Az kereskedők minden egyes jutalomponthoz meghatározhatnak átruházási időszakot. Az átruházási időszak meghatározz az időszakot a megszerzett dátumtól kezdve, amely után a hűségpontok a vevők számára rendelkezésre állnak. A nem átruházott pontok a **Nem átruházott** pontok oszlopában tekintheti meg a **Hűségkártyák** oldalon. Ezenkívül kiskereskedők meghatározhatnak maximális hűségesprogram jutalompont határértéket hűségkártyánként. Ez a mező használatával lehet a hűségesprogram-csalások hatását csökkenteni. Ha elérte a maximális jutalom pontokat, a felhasználó nem szerezhet több pontot. A kereskedő dönthet úgy, hogy az ilyen kártyákat mindaddig letiltja, amíg a potenciális csalást kiviszgálják. Ha kiskereskedő csalást állapít meg, a kiskereskedő nem csak a blokkolhatja a hűségkártyát a vevő számára, de meg is jelölheti a vevőt zároltként. Ehhez állítsa a **Vevő letiltása hűségprogramba való regisztráció esetén** tulajdonságot **Igen** értékre a **Minden vevő** alatt a **Kiskereskedelem** gyorslapon. A zárolt vevők nem kaphatnak hűségkártyát bármelyik csatornán keresztül sem.
+
+![Hűségpontok átruházása és a maximális megszerzett pont](./media/Vesting%20and%20maximum%20reward%20points.png "Az átruházás és maximális hűségpontok meghatározása")
+
+- A fiókok használhatók speciális árképzés és engedmények nyújtására, de van néhány fiókok, amelyeket a kiskereskedők nem szeretnék, hogy ügyfeleik lássanak. Például a „Sokat költő vásárló” fiókot előfordulhat, hogy nem fogadnának jól bizonyos vevők. Ezenkívül vannak fiókokok, amelyeket nem kezelnhetnek az az üzletnek, például az alkalmazottak, mert nem szeretné, hogy a pénztárosok eldönthessék, hogy ki alkalmazott, így alkalmazotti alapú engedményeket adjanak. A kiskereskedők most kiválaszthatják a fiókokat, amelyeket el kell rejteni a kiskereskedelmi csatornákon. Az **Elrejtés a csatornákban** módon megjelölt fiókokat nem lehet megtekinteni, hozzáadni vagy eltávolítani a pénztárban. Azonban a fiókhoz társított árképzés és engedmények továbbra is alkalmazva lesznek a termékekre.
+
+![Fiókok elrejtése](./media/Hide%20affiliations.png "Fiókok elrejtése a csatornákban")
+    
+- A Hívásközpont felhasználók mostantól több könnyen megkereshetnek ügyfeleket a hűségkártya-adatok használatával, és megkereshetik a vevő, hűségkártya és hűségkártya kártya tranzakciók lapjait a **Ügyfélszolgálat** oldalon. 
+
+![Ügyfélszolgálat](./media/Customer%20service.png "Hűségadatok keresése a vevőhöz")
+    
+- A hűségkártya sérülése esetén cserekártya kell hozható létre, és a meglévő pontok átvihetők az új kártyára. Ebben a verzióban a cserekártya-folyamat egyszerűbbé vált. Mindemellett a vásárlók elajándékozhatják hűségpontjaikat vagy azok egy részét barátaiknak és családjuknak Pontok átmozgatáskor pontkiigazítási bejegyzések készülnek minden hűségkártyához. A cserekártya és egyenlegátvitel funkciók a **Hűségkártyák** oldalon érhetők el.
+
+![Csere és pontok átvitele](./media/Replace%20and%20transfer%20points.png "Hűségkártya cseréje vagy egyenleg átvitele")
+    
+- Előfordulhat, hogy a kiskereskedők szeretnék rögzíteni egy adott csatorna hatékonyságát hogy egy hűségprogramba vegyenek fel vásárlókat. A hűségkártyák belépési forrása mostantól tárolva van, így a kiskereskedők jelentéseket futtathatnak ezeken az adatokon. A jogosultságok forrás automatikusan rögzítve van az összes a kiadott hűségkártyához a MPOS/CPOS vagy elektronikus kereskedelmi csatornákból. A back-office alkalmazásból kiadott hűségkártyák esetében a hívásközpont kiválaszthatja a megfelelő csatornát.
+
+- A korábbi kiadásokban kiskereskedők az MPOS/CPOS rendszert használhatták a hűségpontok beváltásához a vevők számára az üzletben. Azonban azon kiadásokban a hűségpontok egyenlege hűségpontokban jelenik meg, így a pénztáros sikerült nem tekinthette meg a pénznemérték összegét, amely az aktuális tranzakció felé alkalmazható. A pénztáros a pontokat át kellett váltsa pénznembe mielőtt lehetséges lett volna a fizetés hűségpontokban. A jelenlegi verzióban sorok hozzáadása után a tranzakcióhoz a pénztáros láthatja, hogy mekkora összeget fedeznek a hűségpontok a jelenlegi tranzakcióból amely megkönnyíti hűségpontok vagy azok egy részének beváltását a tranzakcióhoz. Ezenkívül a pénztáros megtekintheti a következő 30 napban lejáró pontokat, így felülértékesítésre vagy keresztértékesítésre van lehetősége, hogy a vásárló elköltse a pontokat a tranzakció során..
+
+![Hűségpontokkal fedezett összeg](./media/Points%20covered%20by%20loyalty%20balance.png "Hűségpontokkal fedezett összeg megjelenítése")
+
+![Lejáró pontok](./media/Expiring%20points.png "Lejáró pontok megtekintése")
+    
+## <a name="upcoming-enhancements"></a>Várható fejlesztések
+
+A következő funkciókra lesznek elérhetők a Dynamics 365 for Retail későbbi havi frissítéseiben.
+    
+- Vevők szeretnék megtekinteni hűségegyenlegük részleteit az ügyféllel találkozó csatornákon. Ehhez hasonlóan fontos a pénztárosok a vevő hűségpontokkal kapcsolatos előzményeinek megtekintése az MPOS/CPOS rendszerben, hogy gyorsan válaszolhassanak a vevők kérdéseire. Egy később érkező havi kiadásban a vevők és a pénztárosok megtekinthetik majd a hűségkártya-előzmények részleteit.
+
+- Számos kiskereskedő hűségpontokat csak értékesítési tranzakciók alapján adhat, de több ügyfélcentrikus kiskereskedő szeretné, ha bármilyen a márkával kapcsolatos tevékenységért adhatnának pontot. Ha például szeretnék jutalmazni egy online kérdőív kitöltését, üzlet meglátogatását a kereskedő Facebook-oldalának kedvelését, a tweetelést a kereskedővel kapcsolatosan stb. A jövőben lehetőséget biztosítunk arra, hogy minden vevői tevékenység után lehessen hűségpontot adni. Ehhez a kiskereskedő "Más tevékenységtípust" határozhat meg, és ezek a tevékenységekhez a kereseti szabályokat definiálhat. Megjelenítünk egy Retail Server API-t, amely egy tevékenység azonosítása esetén meghívható, amelyek segítségével a kereseti szabályt használva adja meg a szükséges hűségpontokat.
+
+- Ahhoz, hogy a valódi többcsatornás kiskereskedelmi élményt nyújthassanak, lehetővé tesszük a hűségpontok megszerzését beváltását minden csatorna között. 
+
+- Ingyenes vagy kedvezményes szállítás egyike az online vásárlásra motiváló tényezőknek. Ahhoz, hogy a szállítás promóciók beállítását tegyük lehetővé a kiskereskedők számára, egy új promóciótípust vezetünk be, ahol a kereskedő meghatározhat küszöbértékeket, melyek teljesülése esetén az ügyfél jogosulttá válik kedvezményes vagy ingyenes szállításra.
 

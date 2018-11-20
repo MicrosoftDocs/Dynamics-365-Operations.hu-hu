@@ -1,6 +1,6 @@
 ---
-title: "Az Attract szolgáltatásai és lehetőségei"
-description: "Az Attract az új szakemberek felvételi folyamatának kezeléséhez nyújt szolgáltatásokat. A pályázók hozzáadhatók a nyitott pozíciókhoz, és végigvihetők a folyamat állomásain, amíg ajánlatot nem kapnak, vagy el nem utasítják a pályázatukat."
+title: "Az Attract funkciói és képességei"
+description: "Ez a témakör leírja az Attract funkcióját az új szaktudás felvételi folyamatához."
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
@@ -18,32 +18,32 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 37dd0396787375fccd4082f392e079ed5dab04e9
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
-# <a name="attract-features-and-capabilities"></a>Az Attract szolgáltatásai és lehetőségei
+# <a name="attract-features-and-capabilities"></a>Az Attract funkciói és képességei
 
 [!include [banner](includes/banner.md)]
 
-Az Attract az új szakemberek felvételi folyamatának kezeléséhez nyújt szolgáltatásokat. A pályázók hozzáadhatók a nyitott pozíciókhoz, és végigvihetők a folyamat állomásain, amíg ajánlatot nem kapnak, vagy el nem utasítják a pályázatukat. A pályázók minden egyes állomáson olyan tevékenységeken vihetők végig, mint a szűrő hívások, a felmérések vagy az interjúk ütemezése. A jelentkezést követően a jelentkezők e-mailes felkérést kapnak az Attract-regisztrációra, ahol követhetik az állás állapotát, a pályázatukat, és válaszolhatnak a hozzájuk rendelt feladatokra.
+Az Attract az új szakemberek felvételi folyamatának kezeléséhez nyújt szolgáltatásokat. A pályázók hozzáadhatók a nyitott pozíciókhoz, és aztán végigvihetők a folyamat állomásain, amíg ajánlatot nem kapnak, vagy el nem utasítják a pályázatukat. A pályázók minden egyes állomáson olyan tevékenységeken vihetők végig, mint a szűrő hívások, a felmérések és az interjúk. A jelentkezést követően a jelentkezők e-mailes felkérést kapnak az Attract-regisztrációra, ahol követhetik az állás állapotát, és a pályázatukat. És válaszolhatnak a hozzájuk rendelt feladatokra.
 
-Az Attract a következő funkciókra használható:
+Ez a témakör az Attract szolgáltatásait írja le.
 
 ## <a name="attract-dashboard"></a>Attract irányítópult
-A felvételi csapat tagjai itt tekinthetik meg azoknak az állásoknak a részleteit, amelyekben részt vesznek. A felvételi vezető vagy a toborzó emellett itt adhat hozzá egy új állás az Attracthoz: ezeket létre tudják hozni egyesével, vagy több feladat importálásával egyszerre egy Excel-táblázatból.
+Az irányítópulton a felvételi csoport tagjai megtekinthetik a feladatok részletes adatait, amelyben részt vesznek. A felvételi vezető vagy a toborzó emellett az irányítópulton adhat hozzá új állásokat az Attracthoz: ezeket létre tudják hozni egyesével, vagy több feladat importálásával egyszerre egy Microsoft Excel-táblázatból.
 
-## <a name="jobs"></a>Feladatok
-A **Munkakör** oldalon az olyan részleteket lehet megtekinteni és szerkeszteni, mint a munkaköri leírás és a feladatvégzés helye. A **Munkakör** lap az a hely, ahol a felvételi csoportot összerakják, és ahol a csapat toborzói és interjúbonyolítói hozzáadhatók a listához vagy módosíthatók. Új pályázók is megadhatók a **Munkakör** oldalon.
+## <a name="jobs"></a>Munkák
+A **Munkakör** oldalon az olyan részleteket lehet megtekinteni és szerkeszteni, mint a munkaköri leírás és a feladatvégzés helye. A **Munkakör** lap emellett az a hely, ahol a felvételi csoportot összerakják, és ahol a csapat toborzói és interjúbonyolítói hozzáadhatók a listához vagy módosíthatók. Új pályázók is megadhatók a **Munkakör** oldalon.
 
 ## <a name="candidates"></a>Pályázók
-A pályázókat egyenként lehet hozzáadni egy munkakörhöz, vagy nagyobb számban is feltölthetők Excel-táblázatokból. Valamennyi pályázó automatikusan kerül hozzáadásra a munkakör felvételi folyamatának első állomásához, a jelentkezés állomáshoz. A jelölt összes jelentkezési adata itt tekinthető meg és kezelhető. További dokumentumokat is fel lehet tölteni és meg lehet tekinteni, az olyan kapcsolattartási adatokkal együtt, mint például az e-mail-címek, telefonszámok és a közösségimédia-fiókokra mutató hivatkozások. Ha a pályázó megadott egy, a LinkedIn profiljára mutató hivatkozást, és a LinkedIn integrációja be van állítva (amelyhez LinkedIn toborzó licencre van szükség), megjelenik a jelölt profilja.
+A pályázókat egyenként lehet hozzáadni egy munkakörhöz, vagy nagyobb számban is feltölthetők Excel-táblázatokból. Valamennyi pályázó automatikusan kerül hozzáadásra minden munkakör felvételi folyamatának első állomásához, a jelentkezés állomáshoz. Ebben a szakaszban az összes jelentkező adatait lehet megtekinteni és kezelni. További dokumentumokat is fel lehet tölteni és meg lehet tekinteni, az olyan kapcsolattartási adatokkal együtt, mint például az e-mail-címek, telefonszámok és a közösségimédia-fiókokra mutató hivatkozások. Ha egy jelentkező LinkedIn-profillal mutató hivatkozást is megadott, és a LinkedIn-integráció be van állítva, a jelölt profilja megjelenik. (A LinkedIn integrációhoz LinkedIn toborzó licenc szükséges.)
 
 ## <a name="stages"></a>Fokozatok
-Az Attract tartalmaz egy előre definiált felvételi folyamatot, amely négy alapvető lépést tartalmazz: Jelentkezés, Szűrés, Interjú és Ajánlat. Az új pályázók a jelentkezés szinten indulnak, ahol felülvizsgálják az önéletrajzukat, a kísérőlevelüket, a portfoliójukat és a jelentkezéshez kacspolódó egyéb dokumentumaikat. Innen a jelentkező tovább haladhat a Szűrés lépéshez, amelyben meghívják szűrő telefonhívásra vagy Skype-videóinterjúra. A felvételi vezető és a toborzó visszajelzést küldhet a pályázóról, és tovább engedheti a következő lépéshez. Ezután személyes interjúkat ütemeznek a felvételi csoport rendelkezésre álló tagjaival, ezek testre szabhatók különböző hosszúságú négyszemközti vagy panelinterjúkként. Az interjúk után rögzítik és felülvizsgálják az interjúztató csapat visszajelzéseit. A kiválasztott pályázók tovább engedhetők a végső szakaszba, ahol ajánlatot állítanak össze számukra felülvizsgálat és jóváhagyás céljából. 
+Az Attract tartalmaz egy előre definiált felvételi folyamatot, amely négy alapvető lépést tartalmazz: Jelentkezés, Szűrés, Interjú és Ajánlat. Az új pályázók a Jelentkezés szinten indulnak, ahol felülvizsgálják az önéletrajzukat, a kísérőlevelüket, a portfoliójukat és a jelentkezéshez kacspolódó egyéb dokumentumaikat. Innen a jelentkezők tovább haladhatnak a Szűrés lépéshez, amelyben meghívják őket a szűrő telefonhívásra vagy Skype-videóinterjúra. A felvételi vezető és a toborzó visszajelzést küldhet a pályázókról, és tovább engedheti a következő lépéshez, az Interjú szakaszba. Ekkor történik a személyes interjúk ütemezése a felvételi csoport elérhető tagjaival. Az interjúkat testre lehet szabni négyszemközti vagy panelinterjúként, különböző hosszúságban. Az interjúk után rögzítik és felülvizsgálják az interjúztató csapat visszajelzéseit. A kiválasztott jelentkezők ekkor az ajánlati fázis utolsó szakaszába lépnek, az Ajánlat szakaszba. Ebben a szakaszban ajánlattétel történik, és a jelölt megkapja felülvizsgálat és jóváhagyás céljából.
 
 ## <a name="candidate-app"></a>Jelölti alkalmazás
-A pályázók e-mailt kapnak, amint hozzáadták őket egy álláshoz, amelyben kapnak egy hivatkozást az alkalmazás letöltéséhez. A webes alkalmazás a pályázókat információkkal látja el a munkakör részleteivel kapcsolatban, és ez az eszköz szolgál a felvételi csapattal való kommunikációra. A pályázók az interjúkra vonatkozó elérhetőségüket is elküldhetik.
+A pályázók e-mailt kapnak, amint hozzáadták őket egy álláshoz, amelyben kapnak egy hivatkozást a webes alkalmazás letöltéséhez. Az alkalmazás információkat ad a munkakör részleteivel kapcsolatban, és ez az eszköz szolgál a felvételi csapattal való kommunikációra. A pályázók az interjúkra vonatkozó elérhetőségüket is elküldhetik vele.
 

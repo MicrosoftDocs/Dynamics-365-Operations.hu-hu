@@ -3,7 +3,7 @@ title: "Áfafizetési időszakok beállítása"
 description: "Az Áfakiegyenlítési időszakok információval rendelkeznek a periódusokról, hogy melyik áfát kell jelenteni és fizetni."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/15/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ab7d3a00a327f42a9f70c954d9b64a360a7f9163
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
 ms.contentlocale: hu-hu
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Áfafizetési időszakok beállítása
@@ -50,14 +50,15 @@ Ez a feladat az USMF bemutatócéget használja.
 12. Adja meg a Periódus időtartam egységek periódusokra vonatkoztatott számát. Például egy negyedév 3 hónapból áll.
 13. Jelölje be, vagy törölje a Kötegfolyamat használata forgalmi adó kiegyenlítéshez jelölőnégyzetet.
     * A kiegyenlítési időszakhoz tartozó kiegyenlítési folyamat kötegelt feladatként feldolgozható a háttérben. Ez adott időszakban nagyszámú adótranzakcióhoz ajánlott.  
-14. Bontsa ki az Időszak időtartamai fület.
-15. Kattintson a Hozzáadás gombra.
-16. A listában jelölje meg a kiválasztott sort.
-17. Adjon meg egy
-Adjon meg egy dátumot a Kezdő dátum mezőben.
-18. Adja meg a dátumot a „Záró dátum” mezőben.
-19. Kattintson az Új időszak intervalluma.
+14. Válassza ki, vagy törölje a jelölést Az ellenoldali adótranzakciók létrehozásának megakadályozása jelölőnégyzetből.
+    * Alapértelmezés szerint a rendszer létrehozza az ellenoldali adótranzakciókat a kiegyenlítési folyamat során, amely teljesítményproblémákat, okozhat ha nagy számú adótranzakciók van egy időintervallumon belül. Jelölje be ezt a jelölőnégyzetet ellenoldali adótranzakciók létrehozásának megakadályozásához.
+15. Bontsa ki az Időszak időtartamai fület.
+16. Kattintson a Hozzáadás gombra.
+17. A listában jelölje meg a kiválasztott sort.
+18. Adjon meg egy dátumot a Kezdő dátum mezőben.
+19. Adja meg a dátumot a „Záró dátum” mezőben.
+20. Kattintson az Új időszak intervalluma.
     * Amint megadta az első intervallumot az új időszakok automatikusan létrejönnek. Visszatérhet és szükség szerint új intervallumokat adhat hozzá.  
-20. Zárja be a lapot.
+21. Zárja be a lapot.
 
 

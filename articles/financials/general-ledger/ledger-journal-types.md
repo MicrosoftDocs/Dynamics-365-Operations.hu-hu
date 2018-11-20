@@ -1,9 +1,9 @@
 ---
-title: "Főkönyvi naplótípusok"
-description: "Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a **Naplónevek** lapot a Microsoft Dynamics 365 for Finance and Operations alkalmazásban használható naplók beállításához."
+title: "Főkönyvi napló típusai"
+description: "Ez a témakör bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a **Naplónevek** lapot a Microsoft Dynamics 365 for Finance and Operations alkalmazásban használható naplók beállításához.
+Ez a témakör bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a **Naplónevek** lapot a Microsoft Dynamics 365 for Finance and Operations alkalmazásban használható naplók beállításához.
 
 | Napló típusa                      | Cél                       | Adja meg a tranzakciókat ezen az oldalon                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -53,7 +53,8 @@ Ez a cikk bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókh
 | Bérlista kifizetése              | Kifizetések kiadása bérlistafizetési kimutatás alapján. Ebben a naplóban nem lehet manuálisan tranzakciókat megadni. Előbb fizetési kimutatás kell készíteni, majd beküldeni azokat fizetésre.                                                                                                                                                              |                                                                |
 | Időszakos                          | Időszakos tranzakciók létrehozása az időszaki naplóban.                                                                                                                                                                                                                                                                                                      | Időszaki naplók                                              |
 | Tárgyi eszközök feladása                 | Tárgyieszköz-tranzakciók feladása.                                                                                                                                                                                                                                                                                                                              | Tárgyi eszközök                                                   |
-| Projekt - költségek                | Projektköltség-tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                        | Kiadás                                                        |
+| Projekt - költségek                | Projektköltség-tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Jelentési pénznem kiigazítása     | Helyesbítések létrehozása a főkönyvi számlák egyenlegén a jelentési pénznemben.               | Jelentési pénznem kiigazítási naplói                         |
 | Statisztikai tranzakciók            | Statisztikai tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Szállító - banki utalás            | Szervezete bankjának átküldhető kötelezvény-átutalási fájl létrehozása.                                                                                                                                                                                                                                                                      | Átutalásnapló                                             |
 | Szállítói kifizetés               | Szállítók kifizetési tranzakciók létrehozása.                                                                                                                                                                                                                                                                                                                    | Fizetési napló                                                |

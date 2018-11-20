@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
+ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
 ms.contentlocale: hu-hu
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
@@ -192,7 +192,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Űrlap megjelölése kedvencként/eltávolítása a kedvencek közül (űrlappal a navigációs ablakban)   | Shift+F                    |
 | Ugrás a szokásos műveleti ablakba                                              | Alt+M,A vagy Ctrl+F6         |
 | Ugrás a Szűrőablakra (ami a megnyitását is jelentheti)                        | Alt+M,F vagy Ctrl+F3         |
-| Fókusz áthelyezése az oldal tartalmára (a fókusszal a navigációs listában)            | Alt+M,M vagy Ctrl+F3         |
+| Fókusz áthelyezése az oldal tartalmára (a fókusszal a Szűrőpanelen)                | Alt+M,M vagy Ctrl+F3         |
 | Ugrás a navigációs listára az Adatok képernyőn (ami a megnyitását is jelentheti)    | Alt+M,S vagy Ctrl+F8         |
 | Fókusz áthelyezése az oldal tartalmára (a fókusszal a navigációs listában)            | Alt+M,M vagy Ctrl+F8         |
 | A navigációs lista bezárása a Részletek űrlapon (a fókusszal a navigációs listán) | Esc                        |

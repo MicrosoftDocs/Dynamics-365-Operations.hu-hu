@@ -8,7 +8,7 @@
           items:
             - name: Regisztrálás az előfizetés előnézetére
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
-            - name: Bemutatókörnyezet telepítése
+            - name: Demókörnyezet telepítése
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Felhőalapú és helyszíni szolgáltatások összehasonlítása
               href: get-started/cloud-prem-comparison.md
@@ -29,11 +29,13 @@
               href: get-started/public-preview-releases.md
             - name: A Finance and Operations alkalmazás megvásárlása
               items:
-                - name: A Finance and Operations megvásárlása (helyszíni)
+                - name: A Finance and Operations (helyszíni) megvásárlása
                   href: get-started/purchase-on-premises.md
         - name: Új vagy módosult elemek
           href: get-started/whats-new-changed.md
           items:
+            - name: Egyverziós szolgáltatási frissítések GYIK
+              href: get-started/one-version.md
             - name: A szoftver életciklusára vonatkozó irányelv és a felhőbeli kiadások
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások
@@ -44,11 +46,19 @@
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: Az AX 2012 elhalasztott funkciói
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
-            - name: A helyszíni telepítéseknél nem elérhető funkciók
+            - name: A helyszíni telepítéseknél nem alkalmazott funkciók
               href: get-started/features-not-implemented-on-prem.md
+            - name: Platform update 22 (2018. november)
+              href: get-started/whats-new-platform-update-22.md
+            - name: 'Finance and Operations, 8.1.2 verzió (2018. november)'
+              href: get-started/whats-new-changed-8-1-2.md
+            - name: 'Finance and Operations, 8.1.1 verzió (2018. október)'
+              href: get-started/whats-new-changed-8-1-1.md
             - name: 'Finance and Operations, 8.1 verzió (2018. október)'
               href: get-started/whats-new-changed-8-1-October-2018.md
-            - name: Platform update 20 (2018. november)
+            - name: Platform update 21 (2018. október)
+              href: get-started/whats-new-platform-update-21.md
+            - name: Platform update 20 (2018. szeptember)
               href: get-started/whats-new-platform-update-20.md
             - name: 'Finance and Operations, 8.0 verzió (2018. április)'
               href: get-started/whats-new-changed-8-0-April-2018.md
@@ -300,7 +310,7 @@
           href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
         - name: Adatintegrációs API-k
           items:
-            - name: Adatkezelési csomag API-ja
+            - name: Adatkezelési csomag REST API-ja
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Szolgáltatási végpontok
               href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -309,10 +319,12 @@
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
               href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-            - name: Egyéni szolgáltatások
+            - name: Egyéni szolgáltatásfejlesztés
               href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
             - name: Ismétlődő integrációk
               href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
+            - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
+              href: ../dev-itpro/data-entities/third-party-service-test.md
         - name: Fejlesztés integrációhoz
           items:
             - name: Adatintegráció az adatentitások használatával
@@ -324,9 +336,9 @@
                   href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
                 - name: Vállalatközi pénzügyi adatmegosztás konfigurálása
                   href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-                - name: Adatbevitel megkönnyítése érdekében rekordsablon létrehozása
+                - name: Rekordsablonok létrehozása az adatbevitel megkönnyítése érdekében
                   href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-                - name: Rekordsablon használata egy új rekord létrehozásához
+                - name: Rekordok létrehozása rekordsablonokkal
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Adatok integrálása a Common Data Service környezettel
               href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
@@ -383,6 +395,8 @@
             - name: Konfigurációs adatok másolása vállalatok vagy jogi személyek között
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Konfigurációs adatcsomagok
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Konfigurációs adatcsomagok (csak 2017 júliusi kiadás esetén)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
             - name: Konfigurációs adatsablonok
@@ -391,6 +405,10 @@
               href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
             - name: Normál adatentitásokkal kapcsolatos információk
               href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+            - name: Adatsablonok több munkalappal
+              href: ../dev-itpro/data-entities/excel-template-multiple.md
+            - name: Változáskövetés engedélyezése az entitások esetében
+              href: ../dev-itpro/data-entities/entity-change-track.md
             - name: Konfigurációs kulcsok és adatentitások
               href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
             - name: Konfigurációs adatcsomagok
@@ -398,10 +416,12 @@
         - name: Adatimportálási és -exportálási feladatok
           href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
           items:
-            - name: Bevált eljárások a kuponok Általános napló entitással történő importálásához
+            - name: Bevált gyakorlat a kuponok Általános napló entitással történő importálásához
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Fejlesztés adatentitásokhoz
           items:
+            - name: Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz
+              href: ../dev-itpro/dev-tools/design-best-practices.md
             - name: Új adatentitások létrehozása
               href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Adatentitás-tulajdonságok
@@ -422,14 +442,18 @@
               href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/fin-and-ops/toc.json
             - name: Biztonság és adatentitások
               href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
-            - name: Harmadik fél szolgáltatásának tesztelése
+            - name: Harmadik fél szolgáltatásának tesztelésére szolgáló segédprogramok használata
               href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+            - name: 'Csak olvasható entitások létrehozása, amelyek elérhetővé teszik a pénzügyi dimenziókat'
+              href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
         - name: Használja saját adatbázisát
           href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
         - name: Adatfeladat automatizálása
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: Adatellenőrzési munkaterület
+        - name: Adatellenőrzési ellenőrzőlista munkaterülete
           href: ../dev-itpro/user-interface/data-validation-workspace.md
+        - name: Adatkezelési hibaleírások
+          href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Pénzgazdálkodás
       href: ../financials/index.md
       items:
@@ -1007,11 +1031,13 @@
                   href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
                 - name: Számlastruktúrák konfigurálása
                   href: ../financials/general-ledger/configure-account-structures.md
+                - name: Kettős pénznem
+                  href: ../financials/general-ledger/dual-currency.md
             - name: Naplók és főkönyvek
               items:
                 - name: Általános napló feldolgozása
                   href: ../financials/general-ledger/general-journal-processing.md
-                - name: Időszaki naplók közzététele
+                - name: Időszaki naplók feladása
                   href: ../financials/general-ledger/tasks/post-periodic-journals.md
                 - name: Főkönyvi felosztási napló feldolgozása
                   href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
@@ -1049,6 +1075,8 @@
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
                 - name: Egy bizonylat
                   href: ../financials/general-ledger/one-voucher.md
+                - name: Főkönyvi kiegyenlítések
+                  href: ../financials/general-ledger/ledger-settlements.md
             - name: Időszak végi lezárás
               items:
                 - name: A főkönyv lezárása az időszak végén
@@ -1215,7 +1243,7 @@
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
             - name: A pénzügyi jelentéskészítési adatközpont alaphelyzetbe állítása
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
-    - name: Honosítási és szabályozó funkciók​
+    - name: Honosítási és szabályozási funkciók​
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
         - name: Ausztrália
@@ -1473,7 +1501,7 @@
                   href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
                 - name: Előzetes beszerzés feladása
                   href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
-            - name: Időszaki naplók közzététele
+            - name: Időszaki naplók feladása
               href: ../financials/general-ledger/tasks/post-periodic-journals.md
             - name: Aláírók beállítása a nyomtatási képernyőkhöz
               href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
@@ -1799,6 +1827,10 @@
             - name: Adómotor áttekintése
               href: ../financials/general-ledger/tax-engine.md
               items:
+                - name: Importálás konfigurálása
+                  href: ../financials/general-ledger/tax-engine-import-configuration.md
+                - name: Adómotor alkalmazhatósága
+                  href: ../financials/general-ledger/tax-engine-applicability.md
                 - name: Adómotor integrációja
                   href: ../financials/general-ledger/tax-engine-integration.md
                 - name: Adómotor kiterjesztése
@@ -2100,9 +2132,11 @@
         - name: Lengyelország
           href: ../financials/localizations/poland.md
           items:
+            - name: Sztornókönyvelés aktiválása
+              href: ../financials/localizations/emea-pol-red-storno.md
             - name: Sorengedmények kiszámítása az egységár alapján
               href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
-            - name: Javítással kapcsolatos megjegyzések
+            - name: Helyesbítéssel kapcsolatos megjegyzések
               href: ../financials/localizations/emea-pol-correction-notes.md
             - name: Értékesítési számlamásolatok számozása
               href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
@@ -2116,6 +2150,8 @@
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Áfajelentések
               href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Raktárak szerinti számsorozatok beállítása
+              href: ../financials/localizations/emea-pol-number-sequence-warehouses.md
             - name: Standard könyvvizsgálati fájl
               href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
             - name: Adókamat és szabadkézi kamat
@@ -2132,32 +2168,60 @@
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Előlegre jogosultak napi műveletei
                   href: ../financials/localizations/rus-advance-holders-daily-operations.md
+                - name: Előlegjelentések költségvetés-ellenőrzéssel
+                  href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+                - name: Deviza újraértékelése az előlegre jogosultak esetén
+                  href: ../financials/localizations/rus-advance-adjustment-parameters.md
+                - name: Előlegre jogosultak jelentése
+                  href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+            - name: Bank
+              items:
+                - name: Bankszámlák beállítása
+                  href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+                - name: Fizetési megbízás beállítása és feldolgozása
+                  href: ../financials/localizations/rus-payment-order-settings-processing.md
             - name: Tárgyi eszközök
               items:
                 - name: Tárgyi eszközök beszerzése és üzembe helyezése
                   href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Tárgyieszköz-beszerzések regisztrálása
+                  href: ../financials/localizations/rus-register-acquisition.md
                 - name: Tárgyieszköz-beszerzések költségvetésnaplóinak létrehozása és feladása
                   href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
                 - name: Tárgyieszköz-számbavétel
                   href: ../financials/localizations/rus-fixed-assets-counting.md
                 - name: Tárgyi eszközök devizaátértékelése
                   href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Tárgyi eszközök költségének és értékcsökkenésének újraértékelése
+                  href: ../financials/localizations/rus-fixed-assets-revaluation.md
                 - name: Részleges tárgyieszköz-szétszerelés (felszámolás)
                   href: ../financials/localizations/rus-fixed-assets-disassembly.md
-            - name: Utalványok beállítása és feldolgozása
-              href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: 'Eszközök eladása, kivezetése és leírása'
+                  href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+                - name: Rögzített tárgyieszköz-helyek és -számozás beállítása
+                  href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+                - name: Értékcsökkenés beállítása
+                  href: ../financials/localizations/rus-depreciation-setup.md
+                - name: Értékcsökkenés módjai
+                  href: ../financials/localizations/rus-depreciation-methods.md
+                - name: További értékcsökkenések
+                  href: ../financials/localizations/rus-bonus-depreciation.md
+                - name: Értékcsökkenés számítása
+                  href: ../financials/localizations/rus-depreciation-calculation.md
+            - name: Vállalati részlegek
+              href: ../financials/localizations/rus-company-divisions.md
             - name: Devizatranzakciók árfolyamainak beállítása
               href: ../financials/localizations/rus-exchange-difference.md
             - name: Főkönyvi tranzakciók előnézete
               href: ../financials/localizations/rus-ledger-transactions-preview.md
             - name: Hivatalnokok beállítása
               href: ../financials/localizations/rus-officials.md
-            - name: Bankszámlák beállítása
-              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
             - name: Általános forgalmi adó (áfa) az adózási ügynökök számára
               href: ../financials/localizations/rus-tax-agent.md
-            - name: Kiegyenlítések dimenzió vezérlőelemének beállítása
+            - name: Kiegyenlítések dimenzióvezérlésének beállítása
               href: ../financials/localizations/rus-transactions-settlement-date.md
+            - name: Kifizetendő számlák
+              href: ../financials/localizations/rus-invoice-payment.md
         - name: Szaúd-Arábia
           href: ../financials/localizations/saudi-arabia.md
           items:

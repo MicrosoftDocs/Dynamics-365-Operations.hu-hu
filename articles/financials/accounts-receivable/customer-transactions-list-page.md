@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 79479f6949c52830918598583ee91dd85d2d7ac3
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/01/2018
 
 ## <a name="view-settlements"></a>Kiegyenlítések megjelenítése
 
-A műveleti panel **Kiegyenlítések megjelenítése** gombjával gyorsan hozzáférhet a kiegyenlítési előzményekhez és a teljes kiegyenlítés tranzakció további adataihoz. További kapcsolódó tranzakciókat is megjeleníthet, amelyek kapcsolódna a kiválasztott tranzakcióhoz vagy azért, mert ugyanazon kiegyenlítés részei vagy azért, mert olyan fizetések, amelyeket ugyanazon fizetési naplóban hoztak létre.
+A műveleti panel **Kiegyenlítések megjelenítése** gombjával gyorsan hozzáférhet a kiegyenlítési előzményekhez és a kiegyenlítés tranzakció részletes adataihoz. További kapcsolódó tranzakciókat is megjeleníthet, amelyek kapcsolódna a kiválasztott tranzakcióhoz vagy azért, mert ugyanazon kiegyenlítés részei vagy azért, mert olyan fizetések, amelyeket ugyanazon fizetési naplóban hoztak létre.
 
 1. Válassza a **Kinnlévőségek \> Minden vevő** lehetőséget.
 2. Válasszon ki egy vevőt, amelyikhez tranzakció tartozik, és ezt követően a műveleti ablak **Vevő** lapján válassza a **Tranzakciók** elemet.
@@ -49,7 +49,7 @@ A műveleti panel **Kiegyenlítések megjelenítése** gombjával gyorsan hozzá
 
 ## <a name="global-transactions"></a>Globális tranzakciók
 
-A **Globális tranzakciók** gomb hozzá lett adva a vevői oldalhoz. Ez a gomb lehetővé teszi a vevő minden tranzakciójának megtekintéslt az összes jogi személy között. A **Vevői tranzakciók** listaoldal csak azon jogi személyek tranzakcióit jeleníti meg, amelyekhez a felhasználó a biztonsági beállításai alapján hozzáférhet.
+A **globális tranzakciók** gomb is látható a **Vevőtranzakciók** listaoldalán. Ez a gomb lehetővé teszi a vevő minden tranzakciójának megtekintéslt az összes jogi személy között. A **Vevői tranzakciók** listaoldal csak azon jogi személyek tranzakcióit jeleníti meg, amelyekhez a felhasználó a biztonsági beállításai alapján hozzáférhet.
 
 A listalap jeleníti az összes tranzakciót azoknál a vevőknél, akiknek félazonosítója megegyezik az induló vevőkéval. Ha például az US-001 vevő egy jogi személy esetében azonos félazonosítóval rendelkezik, mint a DE-001 egy másik jogi személynél, akkor megjelenik minden tranzakció mindkét vevői azonosítóra vonatkozóan.
 
@@ -67,13 +67,13 @@ A nyitott tranzakciók megjelenítését lehetővé tevő szűrő helyére egy �
 - **Mind** – Az összes tranzakció megtekintése a kiválasztott vevőnél (nyitott és lezárt).
 - **Lezárt** – Csak a teljesen kiegyenlített és lezárt tranzakciók megjelenítése.
 - **Nyitott** – Csak a még nem teljesen kiegyenlített tranzakciók megjelenítése.
-- **Nyitott adott dátumtól kezdve** – Csak azoknak a tranzakcióknak a megjelenítése, amelyek még nincsenek teljesen kiegyenlítve a megadott dátum napján. Ha ezt a lehetőséget választja, módosíthatja a szűrő mellett megjelenő dátumot. Az olyan tranzakciók, melyeknél az **Utolsó kiegyenlítés dátuma** érték az Ön által megadott dátum után van, megjelennek a listában, még akkor is, ha az adott tranzakciók teljesen ki lettek egyenlítve az aktuális dátumig. Az egyenleg azonban az aktuális dátum szerinti, és nem a kijelölt dátumnak felel meg.
+- **Nyitott elemek, valamint a dátum napján vagy utána lezárt elemek** – Csak a megadott dátumon vagy az után még nem teljesen kiegyenlített tranzakciók megjelenítése. Ha ezt a lehetőséget választja, módosíthatja a szűrő mellett megjelenő dátumot. Az olyan tranzakciók, melyeknél az **Utolsó kiegyenlítés dátuma** érték az Ön által megadott dátumon vagy utána van, megjelennek a listában, még akkor is, ha az adott tranzakciók teljesen ki lettek egyenlítve az aktuális dátumig. Az egyenleg azonban az aktuális dátum szerinti, és nem a kijelölt dátumnak felel meg.
 
-Egy olyan szűrőt is bevezettünk, amellyel elrejtheti a pénznemfordítási tranzakciókat. Egyszerűen jelölje be a **Pénznem-átértékelés elrejtése** jelölőnégyzetet.
+Válassza ki a **Pénznem-átértékelés elrejtése** jelölőnégyzetet a pénznem átszámítási tranzakciók elrejtéséhez.
 
-## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Határidők és engedménydátumok egyszerűbb módosítása
+## <a name="modify-due-dates-and-discount-dates"></a>Határidők és engedménydátumok módosítása
 
-A határidők és az engedmények dátumait a nyitott vevői tranzakcióknál frissítheti. A 8.1-es verzióban a folyamatot továbbfejlesztettük. Ezután felveheti az esedékességi dátumokat a **Vevői tranzakciók** listaoldalra. Ha rákattint a határidőre a **Vevői tranzakciók** listaoldalon, akkor módosíthatja a határidőket, a kedvezménydátumokat, a fizetési feltételeket és a készpénzfizetési kedvezmény feltételeit **Az esedékességi dátum és készpénzfizetési engedmény dátumainak frissítése** párbeszédpanelen.
+A határidők és az engedmények dátumait a nyitott vevői tranzakcióknál frissítheti. A 8.1-es kiadásban felveheti az esedékességi dátumokat a **Vevői tranzakciók** listaoldalra. Ha rákattint a határidőre a **Vevői tranzakciók** listaoldalon, akkor módosíthatja a határidőket, a kedvezménydátumokat, a fizetési feltételeket és a készpénzfizetési kedvezmény feltételeit **Az esedékességi dátum és készpénzfizetési engedmény dátumainak frissítése** párbeszédpanelen.
 
 ### <a name="activate-the-feature"></a>A funkció aktiválása
 
@@ -83,7 +83,7 @@ Ha határidőket szeretne hozzáadni a **Vevői tranzakciók** listaoldalhoz, é
 2. A **Kiegyenlítések** lapon állítsa az **Esedékességi dátum megjelenítése és a szerkesztés engedélyezése** lehetőséget **Igen** értékre.
 3. A funkció engedélyezéséhez új mezőket adtunk a vevői tranzakciókhoz. Ezek a mezők az új tranzakció befejezésekor tölthetők ki. Akkor is megtörténik a kitöltésük, ha megnyitja **Az esedékességi dátum és készpénzfizetési engedmény dátumainak frissítése** párbeszédpanelt. Ha az **Esedékességi dátum megjelenítése és a szerkesztés engedélyezése** beállítást **Igen** értékre állítja, akkor megjelenik a **Fizetési információk frissítése** párbeszédpanel.  A meglévő tranzakciók azonnali frissítéséhez válassza az **Összes létező tranzakció frissítése** lehetőséget. Ha csak az új tranzakcióknál szeretné kitölteni a mezőket, válassza a **Folytatás frissítés nélkül** lehetőséget.
 
-A határidő most hozzáadódik a **Vevői tranzakciók** listaoldalhoz, és Ön könnyebben módosíthatja a határidő és készpénzfizetési engedmény dátumait a tranzakcióknál.
+A határidő most hozzáadódik a **Vevői tranzakciók** listaoldalhoz, és Ön könnyen módosíthatja a határidő és készpénzfizetési engedmény dátumait a tranzakcióknál.
 
 ### <a name="modify-the-payment-settings"></a>A fizetési beállításainak módosítása
 
@@ -91,11 +91,11 @@ A **Vevői tranzakciók** listaoldal megjeleníti a vevő minden tranzakcióját
 
 Minden mező más hatással rendelkezik a tranzakcióra a szerkesztésekor:
 
-- **Alapdátum szerkesztése:** A határidőnek és az engedmény dátumai módosulnak, ha a dokumentum dátuma az alapdátum.
-- **Az esedékességi dátum szerkesztése:** Csak az esedékességi dátum módosul.
-- **Az engedmények dátumainak módosítása:** Csak az engedmények dátumai módosulnak.
-- **Fizetési feltételek szerkesztése:** Az esedékességi dátum módosul az alapdátum és a fizetési feltételek alapján.
-- **Készpénzfizetési engedmény feltételeinek módosítása:** A készpénzfizetési engedmények módosulnak az alapdátum és a készpénzfizetési engedmény feltételei alapján.
+- **Alapdátum szerkesztése** – A határidőnek és az engedmény dátumai módosulnak, ha a dokumentum dátuma az alapdátum.
+- **Az esedékességi dátum szerkesztése** – Csak az esedékességi dátum módosul.
+- **Az engedmények dátumainak módosítása** – Csak az engedmények dátumai módosulnak.
+- **Fizetési feltételek szerkesztése** – Az esedékességi dátum módosul az alapdátum és a fizetési feltételek alapján.
+- **Készpénzfizetési engedmény feltételeinek módosítása:** – A készpénzfizetési engedmények módosulnak az alapdátum és a készpénzfizetési engedmény feltételei alapján.
 
 Amikor befejezte a fizetési beállítások módosítását, válassza a **Bezárás** elemet a módosítások mentéséhez.
 

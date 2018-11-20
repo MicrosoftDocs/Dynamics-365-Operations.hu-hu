@@ -3,7 +3,7 @@ title: "Pénzügyi dimenziók"
 description: "Ez a témakör leírja a pénzügyi dimenziók különféle típusait és azok beállításának módját."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
 ms.contentlocale: hu-hu
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -51,9 +51,9 @@ Az alábbiakban a limitációk közül sorolunk fel néhányat:
 
 ## <a name="custom-dimensions"></a>Egyéni dimenziók
 
-A felhasználó által definiált pénzügyi dimenziók létrehozásához az **Értékek használata innen** mezőben jelölje be az **&lt;&nbsp;Egyéni dimenzió&nbsp;&gt;**  lehetőséget.
+A felhasználó által definiált pénzügyi dimenziók létrehozásához az **Értékek használata innen** mezőben jelölje be az **Egyéni dimenzió** lehetőséget.
 
-A formátummaszk megadásával továbbá korlátozhatja a dimenzióértékekhez megadható adatok mennyiségét és típusát. Megadhat olyan karaktereket, például betűket vagy kötőjelet (-), amelyek minden egyes dimenzióértéknél változatlanok maradnak. Emellett megadhat kettős kereszt (\#) vagy és-jelet (&) olyan karakterek helyőrzőjeként, amelyek változni fognak a dimenzióértékek minden létrehozásakor. A kettős kereszt (\#) a számok, míg az és-jel (&) a betűk helyőrzője. Ez a mező a formátummaszkhoz csak akkor érhető el, ha az **&lt;&nbsp;Egyéni dimenzió&nbsp;&gt;** opciót választja ki az **Értékek használata innen** mezőből.
+A formátummaszk megadásával továbbá korlátozhatja a dimenzióértékekhez megadható adatok mennyiségét és típusát. Megadhat olyan karaktereket, például betűket vagy kötőjelet (-), amelyek minden egyes dimenzióértéknél változatlanok maradnak. Emellett megadhat kettős kereszt (\#) vagy és-jelet (&) olyan karakterek helyőrzőjeként, amelyek változni fognak a dimenzióértékek minden létrehozásakor. A kettős kereszt (\#) a számok, míg az és-jel (&) a betűk helyőrzője. Ez a mező a formátummaszkhoz csak akkor érhető el, ha az **Egyéni dimenzió** opciót választja ki az **Értékek használata innen** mezőből.
 
 **Példa**
 
@@ -108,14 +108,30 @@ A származtatott értékeket a dimenziók lapon állíthatja be.
 
 Adja meg azokat a dimenziókombinációkat, amelyeket az első oszlopban lévő dimenzióból kell származtatni. Ha például a költséghelyet szeretné használni, mint a dimenziót, amelyből a részleget és a helyet származtatni kívánja, adja meg a 10 értéket költséghelyként, a 20-at részlegként és a 30-at helyként. Ha ezt követően megadja a 10-es költséghelyet egy tözsrekordban vagy egy tranzakciólapon, akkor a rendszer automatikusan beviszi a 20-as részleget és a 30-as helyet alapértelmezés szerint.
 
-A származtatott dimenzió folyamata nem bírálja felül a meglévő értékeket a származtatott dimenzióknál. Ha például a 10-es költséghelyet ír be, és nincs megadva másik dimenzió, akkor a rendszer automatikusan beviszi a 20-as részleget és a 30-as helyet alapértelmezés szerint. Ha azonban módosítja a költséghelyet, a korábban beállított értékek nem változnak. Így megadhatja az alapértelmezett dimenziókat a törzsrekordokon, de ezeket a dimenziókat nem módosítják a származtatott dimenziók.
+### <a name="overriding-existing-values-with-derived-dimensions"></a>Meglévő értékek felülírása származtatott dimenziókkal
+ 
+Alapértelmezetten a származtatott dimenzió folyamata nem bírálja felül a meglévő értékeket a származtatott dimenzióknál. Ha például a 10-es költséghelyet ír be, és nincs megadva másik dimenzió, akkor a rendszer automatikusan beviszi a 20-as részleget és a 30-as helyet alapértelmezés szerint. Ha azonban módosítja a költséghelyet, a korábban beállított értékek nem változnak. Így megadhatja az alapértelmezett dimenziókat a törzsrekordokon, de ezeket a dimenziókat nem módosítják a származtatott dimenziók.
+
+Ha módosítani szeretné a származtatott dimenziók viselkedését a meglévő értékek felülírására, módosítsa a **Meglévő dimenzióértékek lecserélése származtatott értékekre** a jelölőnégyzetet a **Származtatott dimenziók** lapon. Ha ez a mező be van jelölve, megadhat egy dimenziót származtatott dimenzióértékkel, és ezek a származtatott dimenzióértékek az összes már meglévő értéket felülbírálják. Az előző példában, ha a 10-es költséghelyet írja be, és nincs megadva másik dimenzió, akkor a rendszer automatikusan beviszi a 20-as részleget és a 30-as helyet alapértelmezés szerint. Azonban ha az érték már az 50-es részleg és a 60-as hely volt, az értékek módosulnak a 20-as részlegre és a 30-as helyre.
+ 
+Azt ilyen beállítású származtatott dimenziók nem helyettesítik automatikusan a meglévő alapértelmezett dimenzióértékeket, ha alapértelmezett dimenzióértékek vannak. A dimenzióértékeket csak akkor lehet felülbírálni, ha egy lapon új dimenzióértéket ad meg, és ehhez a dimenzióhoz az oldalon már léteznek a származtatott értékek.
+
+### <a name="preventing-changes-with-derived-dimensions"></a>Származtatott dimenziókkal módosítások megakadályozása
+ 
+A **Szegmens hozzáadása** használata esetén a **Származtatott dimenziók lapon** szegmens hozzáadására származtatott dimenzióként, egy lehetőség van a **Szegmens hozzáadása** lap alján, amely lehetővé teszi a dimenzió módosításának megakadályozását, amikor egy weblapon származtatva van. Az alapértelmezett beállítás a ki van kapcsolva, vagyis nem akadályozza meg a származtatott dimenzióértékek módosítását. Módosítsa a beállítást **Igen** értékre, ha azt szeretné, hogy megakadályozza a dimenzió módosítását, miután származtatott lett. Például a Részleg dimenzió értéke a Költséghely dimenzió értékének származtatottja, a Szervezeti egység értéke nem módosítható, ha a **Módosításának megakadályozása** értéke **Igen**. 
+ 
+A beállítás nem akadályozza meg módosításokat, ha a dimenzióérték érvényes, de nem szerepel a származtatott dimenziók listájában. Például ha a 20-as osztály a 10-es költségközpont származtatottja, és beírja a 10-es költséghelyet, majd nem lesz szerkeszthető a 20-as részleg. Ugyanakkor ha megadja a 20-as költséghelyet, és nem szerepel a Költséghely származtatott dimenzióinak listáján, módosíthatja a Részleg értéket. 
+ 
+Minden esetben a számlaértéket és minden dimenzióértéket a program továbbra is összeveti a számlastruktúrákkal a származtatott dimenzióérték alkalmazása után. Ha származtatott dimenziókat használ, és az ellenőrzés során elbuknak egy lapon, módosítania kell a származtatott dimenzióértéket a származtatott dimenziók lapon a használatuk előtt a tranzakciókban. 
+ 
+A dimenziók változásakor a **Pénzügyi dimenziók** gyorslapon, nem lesz szerkeszthető az a dimenzió, amely be van jelölve a módosítások megakadályozására. Egy számlát és dimenziókat rögzít a szegmentált bejegyzés vezérlőelembe egy lapon, a dimenziók szerkeszthetők. Azonban ha a kijelölést elviszi a szegmentált bejegyzés vezérlőelemből, és egy másik mezőbe áthelyezi vagy műveletet végez, a fiókot és a dimenziókat a program összeveti a származtatott dimenziók listájával és a számlastruktúrákkal annak biztosítására, hogy valóban a megfelelő értékeket vigye be. 
 
 ### <a name="derived-dimensions-and-entities"></a>Származtatott dimenziók és entitások
 
 Entitások használatával beállíthatja a származtatott dimenziók szegmenseit és értékeit.
 
 - A Származtatott dimenziók entitás beállítja az irányadó dimenziókat és az adott dimenzióknál használt szegmenseket.
-- A DerivedDimensionValue entitással importálhatja azokat az értékeket, amelyeket az egyes irányadó dimenzióknál származtatni kell.
+- A származtatott dimenzió értéke entitással importálhatja azokat az értékeket, amelyeket az egyes irányadó dimenzióknál származtatni kell.
 
 Ha egy adott entitás révén importálja az adatokat, akkor amennyiben az adott entitás dimenziókat importál, akkor a származtatott dimenziószabályokat alkalmazza a rendszer az importálás során, kivéve, ha az entitás kifejezetten felülbírálja az adott dimenziókat.
 

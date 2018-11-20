@@ -3,14 +3,14 @@ title: "Képletszerkesztő elektronikus jelentésekhez (ER)"
 description: "Ez a témakör ismerteti a képletszerkesztő használatát az Elektronikus jelentésben (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
+ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
+ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
 ms.contentlocale: hu-hu
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -252,6 +252,12 @@ Az alábbi táblázatok bemutatják azokat az adatkezelő függvényeket, amelye
 <td>A <strong>SPLIT (&quot;abcd&quot;, 3)</strong> két rekordot tartalmazó új listát jelenít meg, amelyek <strong>KARAKTERLÁNC</strong> mezővel rendelkeznek.. Az első rekordban szereplő mező <strong>&quot;abc&quot;</strong> szöveget tartalmaz és a második rekordban szereplő mező <strong>&quot;d&quot;</strong> betűt tartalmaz.</td>
 </tr>
 <tr>
+<td>SPLIT (bejövő, elválasztó)</td>
+<td>A megadott bemeneti karakterlánc felosztása a részkarakterláncokban, megadott elválasztó alapján.</td>
+<td><strong>A SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> három rekordot tartalmazó új listát jelenít meg, amelyek <strong>STRING</strong> mezővel rendelkeznek.. Az első rekordra a mező a szöveg <strong>&quot;X&quot;</strong>, a második bejegyzést a mezőben a szöveg &quot;&nbsp;&quot;, míg a harmadik bejegyzés a mező a szöveg <strong>&quot;y&quot;</strong>. Ha üres az elválasztó, egy új listát ad vissza, amely egy rekordból áll, amelynek van egy <strong>STRING</strong> mezője, amely tartalmazza a beviteli mezőt. Ha a bevitel üres, akkor egy új, üres listát ad vissza.
+Ha a bejövő vagy az elválasztó nincs megadva (null), alkalmazáskivétel történik.</td>
+</tr>
+<tr>
 <td>FELOSZTÁSLISTA (lista, szám)</td>
 <td>A megadott listát kötegekké osztja fel, amelynek mindegyike megadott számú rekordot tartalmaz. A kötegek új listájaként jeleníti meg az eredményt, amely a következő elemeket tartalmazza:
 <ul>
@@ -323,12 +329,12 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <tr>
 <td>RENDEZÉS (lista [1 kifejezés, 2 kifejezés, ...])</td>
 <td>Visszaadja meg a megadott listát, miután rendezte a megadott argumentumok szerint. Ezek az argumentumok kifejezésként adhatók meg.</td>
-<td>Ha a <strong>Szállító </strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor az <strong>ORDERBY (Vendors.&#39;name()&#39;)</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
+<td>Ha a <strong>Szállító </strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor az <strong>ORDERBY (Vendors, Vendors.'name()')</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
 </tr>
 <tr>
 <td>SZTORNÍROZÁS (lista)</td>
 <td>A megadott listát a sztornírozott rendezési sorrendben jeleníti meg.</td>
-<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
+<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>REVERSE (ORDERBY (Szállítók, Szállítók.'name()')) )</strong> név szerinti növekvő sorrendben rendezve adja vissza a szállítók listáját.</td>
 </tr>
 <tr>
 <td>HOL (lista, feltétel)</td>
@@ -399,12 +405,13 @@ A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű ért
 </ul>
 A <strong>Név</strong> és a <strong>Címke</strong> mezőben futásidejű értékek jelennek meg a formátum nyelvi beállításaitól és a megadott nyelvtől függően. A <strong>Lefordítva</strong> mező azt jelzi, hogy a <strong>Címke</strong> mezőt lefordították a megadott nyelvre.
 </td>
-<td>Használhatja például a <strong>Számított mező</strong> adatforrástípust az <strong>enumType_de</strong> és <strong>enumType_deCH</strong> adatforrások az <strong>enumType</strong> adatokmodell-felsoroláshoz való konfigurálására:
+<td>Használhatja például a <strong>Számított mező</strong> adatforrástípust az <strong>enumType_de</strong> és <strong>enumType_deCH</strong> adatforrások az <strong>enumType</strong> adatokmodell-felsoroláshoz való konfigurálására.
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-Ebben az esetben a következő kifejezést használhatja a felsorolási érték címkéjének svájci német nyelven történő lekéréséhez, ha ez a fordítás elérhető. Ha a svájci német fordítás nem áll rendelkezésre, akkor a címke nyelve a német: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+<p>Ebben az esetben a következő kifejezést használhatja a felsorolási érték címkéjének svájci német nyelven történő lekéréséhez, ha ez a fordítás elérhető. Ha a svájci német fordítás nem érhető el, a címke németül szerepel.</p>
+IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </td>
 </tr>
 <tr>
@@ -432,7 +439,7 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <tr>
 <td>FILTER (lista, feltétel)</td>
 <td>Visszaadja meg a megadott listát, miután a lekérdezést módosította és szűrte a megadott feltételek szerint. Ez a függvény eltér a <strong>WHERE</strong> függvénytől, mivel a megadott feltétel az adatbázis szintjén kerül alkalmazásra a <strong>Táblarekordok</strong> típus bármely ER adatforrására. A lista és a feltétel táblák és kapcsolatok segítségével határozhatók meg.</td>
-<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>FILTER(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza. Ha a <strong>Szállító</strong> ER-adatforrásként van konfigurálva, amely a <strong>VendTable</strong>  táblára és ha a <strong>parmVendorBankGroup</strong>-ra hivatkozik, amely ER-adatforrásként konfigurálva az értéket <strong>karakterlánc</strong> adattípusként adja vissza, a <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> csak az adott bankcsoporthoz tartozó szállítói számlák listáját adja vissza.</td>
+<td>Ha a <strong>Szállító</strong> a VendTable táblára hivatkozó ER adatforrásként van konfigurálva, akkor a <strong>FILTER(Szállítók, Szállítók.VendGroup = &quot;40&quot;)</strong> csak a 40-es szállítócsoporthoz tartozó szállítók listáját adja vissza. Ha a <strong>Szállító</strong> ER-adatforrásként van konfigurálva, amely a VendTable táblára és ha a <strong>parmVendorBankGroup</strong>-ra hivatkozik, amely ER-adatforrásként konfigurálva az értéket <strong>karakterlánc</strong> adattípusként adja vissza, a <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> csak az adott bankcsoporthoz tartozó szállítói számlák listáját adja vissza.</td>
 </tr>
 </tbody>
 </table>
@@ -446,6 +453,63 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 | NEM (feltétel) | Megjeleníti a megadott feltételek sztornírozott logikai értékét. | **NEM (IGAZ)** **HAMIS** értéket jelenít meg. |
 | AND (1. feltétel\[, 2. feltétel, …\]) | **IGAZ** értéket jelenít meg, ha *minden* megadott feltétel igaz. Ellenkező esetben **HAMIS** választ jelenít meg. | **ÉS a (1 = 1, „a” = „a”)** **IGAZ** értéket jelenít meg. **ÉS a (1 = 2, „a” = „a”)** **HAMIS** értéket jelenít meg. |
 | OR (1. feltétel\[, 2. feltétel, …\]) | **HAMIS** értéket jelenít meg, ha *minden* megadott feltétel hamis. **IGAZ** értéket jelenít meg, ha *bármely* megadott feltétel igaz. | **VAGY a (1 = 2, „a” = „a”)** **IGAZ** értéket jelenít meg. |
+| VALUEIN (bejövő, lista, listaelem kifejezés) | Azt határozza meg, hogy a megadott bemenet megegyezik-e bármilyen értékkel a megadott lista valamelyik elemére. Az **IGAZ** értéket adja vissza, ha a megadott bemenet megfelel a megadott kifejezés legalább egy rekordhoz tartozó futtatásának az eredményének. Ellenkező esetben **HAMIS** választ jelenít meg. A **bemenet** paraméter az adatforrás elem elérési útját jelöli. Az elem értékét a rendszer megfelelteti. A **lista** paraméter egy rekord listatípusú adatforrás elem elérési útját határozza meg a kifejezést tartalmazó rekordok listájaként. Az elem értékét a program összehasonlítja a megadott bemenettel. A **listaelem kifejezés** argumentum egy kifejezést jelöl, amely a megadott lista egyetlen mezőjére mutat vagy azt tartalmazza, amely a megfeleltetéshez használandó. | Példákért lásd a [Példák: VALUEIN (bejövő, lista, listaelem kifejezés)](#examples-valuein-input-list-list-item-expression) következő szakaszt. |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a>Példák: VALUEIN (bejövő, lista, listaelem kifejezés)
+Általában a **VALUEIN** függvény **VAGY** feltételek egy csoportjára fordul le:
+
+(input = list.item1.value) OR (input = list.item2.value) OR …
+
+##### <a name="example-1"></a>1. példa
+A modell-hozzárendelésben határozza meg a következő adatforrást: **Lista** (**számított mező** típus). Az adatforrás tartalmaz a kifejezést: **SPLIT ("a, b, c", ",")**.
+
+Amikor egy adatforrás van meghívva, amely **VALUEIN ("B", List, List.Value)** kifejezéskén van konfigurálva, a rendszer az **IGAZ** értéket adja vissza. Ebben az esetben a **VALUEIN** függvény a következő feltételek csoportjára fordul le:
+
+**(("B" = "a") vagy ("B" = "b") or ("B" = "c"))**, ahol **("B" = "b")** egyenlő **TRUE**
+
+Amikor egy adatforrás van meghívva, amely **VALUEIN ("B", List, LEFT(List.Value, 0))** kifejezéskén van konfigurálva, a rendszer a **HAMIS** értéket adja vissza. Ebben az esetben a **VALUEIN** függvény a következő feltételre fordul le:
+
+**("B" = "")**, amely nem azonos azzal, hogy **IGAZ**
+
+Ne feledje, hogy az ilyen feltétel szövegében a karakterszám felső határa 32 768 karakter. Ezért ne hozzon létre olyan adatforrásokat, amelyek túlléphetik ezt a korlátot futásidőben. Ha túllépte a korlátot, az alkalmazás leáll, és kivételt küld. Például ez a helyzet akkor fordulhat elő, ha így van beállítva az adatforrás: **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)**, és a **List1** és **List2** listák nagy mennyiségű rekordot tartalmaznak.
+
+Bizonyos esetekben a **VALUEIN** funkció egy adatbázis-kimutatásra fordul le az **EXISTS JOIN** operátor használatával. Ez a viselkedés akkor fordul elő, amikor a **FILTER** függvény használatos, és a következő feltételek teljesülnek:
+
+- Az **ASK FOR QUERY** beállítás ki van kapcsolva az adatforrás **VALUEIN** függvényéhez, amely rekordok listájára hivatkozik. (További feltételek nem vonatkoznak erre az adatforrásra futásidőben.)
+- Nincsenek konfigurálva beágyazott kifejezések az adatforrás **VALUEIN** függvényéhez, amely rekordok listájára hivatkozik.
+- A **VALUEIN** függvény listaeleme a megadott adatforrás mezőjére (nem egy kifejezésre vagy metódusra) hivatkozik.
+
+Fontolja meg ennek használatát a **WHERE** függvény helyett, ahogy ebben a példában korábban ismertettük.
+
+##### <a name="example-2"></a>2. példa
+
+A következő adatforrás megadása a modell-hozzárendelésben:
+
+- **In** (**Táblarekordok** típus), amely az Intrastat táblára hivatkozik
+- **Port** (**Táblarekordok** típus), amely az Intrastat táblára hivatkozik
+
+Amikor adatforrás van meghívva, amely a **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)** kifejezésben van beállítva, a következő SQL-utasítás generálódik, hogy az Intrastat tábla szűrt rekordjait adja vissza:
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+A **dataAreaId** mezőkhöz, a végső SQL-utasítás az **IN** operátor használatával van előállítva.
+
+##### <a name="example-3"></a>3. példa
+
+A következő adatforrás megadása a modell-hozzárendelésben:
+
+- **Le** (**Számított mező** típus), amely a következő kifejezést tartalmazza: **SPLIT ("DEMF,GBSI,USMF", ",")**
+- **In** (**Táblarekordok** típus), amely az Intrastat táblára hivatkozik, amelyhez a **Több vállalatot érintő** beállítás engedélyezve van
+
+Amikor adatforrás van meghívva, amely a **FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)** kifejezésben van beállítva, a végső SQL-utasítás tartalmazza a következő feltételt:
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
 
 ### <a name="mathematical-functions"></a>Matematikai funkciók
 
@@ -539,7 +603,7 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 </tr>
 <tr>
 <td>CSERE (karakterlánc, minta, helyettesítő, reguláris kifejezés jelző)</td>
-<td>Ha a megadott reguláris kifejezés jelzője <strong>igaz</strong>, akkor úgy adja vissza a megadott karakterláncot, hogy előtte a függvény mintaargumentumaként megadott reguláris kifejezés alkalmazásával módosította azt. A kifejezés segítségével meg lehet találni azokat a karaktereket, amelyeket ki kell cserélni. A megadott helyettesítési argumentum karakterei segítségével ki lehet cserélni a megtalált karaktereket. Ha a megadott reguláris kifejezés jelző <strong>hamis</strong>, ez a funkció úgy viselkedik, mint a <strong>FORDÍTÁS</strong> funkció.</td>
+<td>Ha a megadott <strong>reguláris kifejezés jelzője</strong> paraméter <strong>igaz</strong>, akkor úgy adja vissza a megadott karakterláncot, hogy előtte a függvény <strong>mintaargumentumaként</strong> megadott reguláris kifejezés alkalmazásával módosította azt. A kifejezés segítségével meg lehet találni azokat a karaktereket, amelyeket ki kell cserélni. A megadott helyettesítési argumentum karakterei segítségével <strong>ki lehet cserélni</strong> a megtalált karaktereket. Ha a megadott <strong>reguláris kifejezés jelző</strong> paraméter <strong>hamis</strong>, ez a funkció úgy viselkedik, mint a <strong>TRANSLATE</strong> funkció.</td>
 <td><strong>CSERE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, igaz)</strong> reguláris kifejezést alkalmazásával eltávolítja az összes nem numerikus szimbólumot, és <strong>&quot;19234564971&quot;</strong> értéket jelenít meg. <strong>CSERE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> a <strong>&quot;cd&quot;</strong> mintát lecseréli a <strong>&quot;GH&quot;</strong> karakterlánccal, és a következőt adja vissza: <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr>
@@ -562,7 +626,7 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <li>A SYS18389 címkével ellátott Finance and Operations a következő szöveggel rendelkezik:
 <ul>
 <li><strong>Az EN-US nyelvhez</strong>: &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>DE nyelvhez:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
+<li><strong>A DE nyelvhez</strong>: &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Íme a tervezhető képlet:</p>
@@ -573,8 +637,8 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 <p>&quot;Nichts zu drucken. Debitor 'Litware Kiskereskedelmi' wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE] A címkék ER-képleteinél a következő szintaxis kerül alkalmazásra:
 <ul>
-<li><strong>Finance and Operations erőforrásokból származó címkékhez:</strong> <strong>@&quot;X&quot;</strong>, ahol X az alkalmazásobjektum-fában (AOT) szereplő címkeazonosító.</li>
-<li><strong>Az ER-konfigurációkban található címkékhez:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, ahol X az ER-konfigurációban található címkeazonosító.</li>
+<li><strong>Finance and Operations erőforrásokból származó címkékhez:</strong> <strong>@&quot;X&quot;</strong>, ahol <strong>X</strong> az alkalmazásobjektum-fában (AOT) szereplő címkeazonosító</li>
+<li><strong>Az ER-konfigurációkban található címkékhez:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, ahol <strong>X</strong> az ER-konfigurációban található címkeazonosító</li>
 </ul>
 </blockquote>
 </td>
@@ -616,7 +680,7 @@ Ebben az esetben a következő kifejezést használhatja a felsorolási érték 
 </tr>
 <tr>
 <td>GUIDVALUE (bevitel)</td>
-<td>Konvertálja a megadott bemenetét a <strong>karakterlánc</strong> adattípusnak a <strong>GUID</strong> adattípus adatelemévé.</td>
+<td>Konvertálja a megadott bemenetét a <strong>karakterlánc</strong> adattípusnak a <strong>GUID</strong> adattípus adatelemévé.<blockquote>[!NOTE] Ehhez az ellenkező irányban konverzió (például konvertálható bevitele megadott a <strong>GUID</strong> egy adatelem az adattípust a <strong>karakterlánc</strong> adattípus), használhatja a <strong>TEXT()</strong> funkció.</blockquote></td>
 <td>A következő adatforrás megadása a modell-hozzárendelésben:
 <ul>
 <li><strong>myID</strong> (<strong>Számított mező</strong> típus), amely ezt a kifejezést tartalmazza: <strong>GUIDVALUE (&quot;AF5CCDAC-F728-4609-8C8B-A4B30B0C0AA0&quot;)</strong></li>
@@ -637,7 +701,7 @@ Ezen adatforrások megadásakor használható kifejezés például a <strong>FIL
 
 | Funkció | Leírás | Példa |
 |----------|-------------|---------|
-| SZÖVEG (bevitel) | A megadott bemenetet úgy adja vissza, hogy előtte az aktuális Finance and Operations példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítja. A **valós** típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik. | Ha a Finance and Operations-példány kiszolgáló területi beállítása **EN-US**, a **TEXT (NOW ())** a jelenlegi Finance and Operations munkamenet dátumát (2015. december 17.) **"12/17/2015 07:59:23 AM"** szöveges karakterláncként adja vissza. **SZÖVEG (1/3)** **„0,33”** értéket jelenít meg. |
+| SZÖVEG (bevitel) | A megadott bemenetet úgy adja vissza, hogy előtte az aktuális Finance and Operations példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítja. A **valós** típus értékeihez a karakterlánc-konverzió két tizedesjegyre korlátozódik. | Ha a Finance and Operations-példány kiszolgáló területi beállítása **EN-US**, a **TEXT (NOW ())** a jelenlegi Finance and Operations munkamenet dátumát (2015. december 17.) **12/17/2015 07:59:23 AM** szöveges karakterláncként adja vissza. **SZÖVEG (1/3)** **„0,33”** értéket jelenít meg. |
 | QRCODE (karakterlánc) | QR-kód-képet ad vissza base64 bináris formátumban az adott karakterlánchoz. | A **QRCODE (“Sample text”)** a **U2FtcGxlIHRleHQ=** értéket adja vissza. |
 
 ### <a name="data-collection-functions"></a>Adatgyűjtési függvények
@@ -648,8 +712,8 @@ Ezen adatforrások megadásakor használható kifejezés például a <strong>FIL
 | SUMIFS (kulcskarakterlánc az összegzéshez, feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]]) | XML-csomópontok értékeinek összegét adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételeknek (tartomány- és értékpárok). **0** (nulla) értéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
 | SUMIF (kulcskarakterlánc az összegzéshez, feltételtartomány karakterlánca, kiválasztási feltétel karakterlánca) | XML-csomópontok értékeinek összegét adja vissza (kulcsként meghatározott névvel), amelyet a rendszer a formátum végrehajtásakor gyűjt, és amely megfelel a megadott feltételnek (tartomány és érték). **0** (nulla) értéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
 | COUNTIFS (feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]) | Az XML-csomópontok számát adja vissza, amelyeket a rendszer a formátum végrehajtásakor gyűjtött, és amely megfelel a megadott feltételeknek (tartomány- és értékpárok). **0** (nulla) értéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
-| COUNTIF (feltételtartomány karakterlánca, kiválasztási feltételek karakterlánca) | Az XML-csomópontok számát adja vissza, amelyet a rendszer a formátum végrehajtásakor gyűjtött, és amely megfelel a megadott feltételnek (tartomány és érték). **0** (nulla) jelzőértéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
-| COLLECTEDLIST (feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]) | Az XML-csomópontok értékeinek listáját adja vissza, amelyeket a rendszer a formátum végrehajtásakor gyűjtött, és amely megfelel a megadott feltételeknek (tartomány és érték). Üres listát ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
+| COUNTIF (feltételtartomány karakterlánca, kiválasztási feltételek karakterlánca) | Az XML-csomópontok számát adja vissza, amelyeket a rendszer a formátum végrehajtásakor gyűjtött, és amely megfelel a megadott feltételnek (tartomány és érték). **0** (nulla) jelzőértéket ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
+| COLLECTEDLIST (feltételtartomány1 karakterlánca, kiválasztási feltétel1 karakterlánca \[, feltételtartomány2 karakterlánca, kiválasztási feltétel2 karakterlánca, ...\]) | Az XML-csomópontokra nézve gyűjtött értékek listáját adja vissza, amelyeket a rendszer a formátum végrehajtásakor gyűjtött, és amely megfelel a megadott feltételeknek (tartomány és érték). Üres listát ad vissza, ha az aktuális fájlok **Kimeneti részletek gyűjtése** jelzője ki van kapcsolva. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Egyéb (üzleti területre jellemző) függvények
 
@@ -667,6 +731,9 @@ Ezen adatforrások megadásakor használható kifejezés például a <strong>FIL
 | FA\_BALANCE (tárgyi eszköz kódja, értékmodell kódja, jelentési év, jelentés dátuma) | A tárgyieszköz-egyenleg előkészített adattárolóját adja vissza. A jelentési évet a Finance and Operations **AssetYear** felsorolásának értékeként kell meghatározni. | A **FA\_SUM ("COMP-000001", "Aktuális", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** a **„COMP-000001”** tárgyieszköz-egyenlegek előkészített adattárolóját adja vissza **„Aktuális”** értékmodellként az aktuális Finance and Operations munkamenet dátumán. |
 | TABLENAME2ID (karakterlánc) | Egy adott táblanévhez tartozó táblaazonosítót ad vissza egész számokkal kifejezett formában. | A **TABLENAME2ID ("Intrastat")** az **1510** értéket adja vissza. |
 | ISVALIDCHARACTERISO7064 (karakterlánc) | A logikai **IGAZ** értéket adja vissza, ha a megadott karakterlánc érvényes nemzetközi bankszámlaszámnak (IBAN) felel meg. Ellenkező esetben a visszaadott logikai érték **HAMIS**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** az **IGAZ** értéket adja vissza. **ISVALIDCHARACTERISO7064 ("AT61")** a **HAMIS** értéket adja vissza. |
+| NUMSEQVALUE (számsorozat kódját, hatókör, hatókör-azonosító) | Egy számsorozat új generált értékét adja vissza a megadott számsorozat kódja, a hatókör és a hatókör-azonosító alapján. A hatókör értéket a **ERExpressionNumberSequenceScopeType** felsorolás alapján kell megadni (**megosztott**, **jogi személy** vagy **vállalat**). A **megosztott** hatókörnél egy üres karakterláncot adjon meg a hatókör-azonosítóként. A **vállalat** és a **jogi személy** hatóköröknél a vállalat azonosítóját adja meg a hatókör-azonosítóként. A **vállalat** és a **jogi személy** hatóköröknél, ha egy üres karakterláncot ad meg a hatókör-azonosítóként, az aktuális vállalati azonosít lesz használatos. | A következő adatforrás megadása a modell-hozzárendelésben:<ul><li>**enumScope** (**Dynamics 365 for Operations felsorolási** típusa), amely az **ERExpressionNumberSequenceScopeType** felsorolásra hivatkozik</li><li>**NumSeq** (**Számított mező** típus), amely ezt a kifejezést tartalmazza: **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vissza a **Gene\_1** számsorozatnak, amely a vállalathoz van beállítva, amely a kontextust adja, amely alatt az ER-formátumot futtatják. |
+| NUMSEQVALUE (számsorozatkód) | Egy számsorozat új generált értékét adja vissza, a megadott számsorozat alapján, a **vállalat** hatókörben, és (mint hatókör-azonosító) a vállalat kódját, amely a kontextust adja, amely alatt az ER-formátumot futtatják. | A modell-hozzárendelésben határozza meg a következő adatforrást: **NumSeq** (**számított mező** típus). Az adatforrás tartalmazza a kifejezést: **NUMSEQVALUE ("Gene\_1")**. Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vissza a **Gene\_1** számsorozatnak, amely a vállalathoz van beállítva, amely a kontextust adja, amely alatt az ER-formátumot futtatják. |
+| NUMSEQVALUE (számsorozat-rekordazonosító) | Egy számsorozat új generált értékét adja vissza a megadott számsorozat rekordazonosítója alapján. | A következő adatforrás megadása a modell-hozzárendelésben:<ul><li>**LedgerParms** (**Tábla** típus), amely a LedgerParameters táblára hivatkozik</li><li>**NumSeq** (**Számított mező** típus), amely ezt a kifejezést tartalmazza: **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>Ha a **NumSeq** adatforrást hívják meg, az új létrehozott értékét ad vissza a számsorozatnak, amely a vállalathoz van beállítva a főkönyvi paraméterekben, amely a kontextust adja, amely alatt az ER-formátumot futtatják. Ez a számsorozat egyértelműen azonosítja naplókat, és kötegszámként viselkedik, amely összekapcsolja a tranzakciókat. |
 
 ### <a name="functions-list-extension"></a>A funkciók lista kiterjesztése
 
@@ -674,7 +741,6 @@ Az ER segítségével bővítheti az ER kifejezésekben használt függvények l
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Elektronikus jelentések áttekintése](general-electronic-reporting.md)
-
-[Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése](general-electronic-reporting-formulas-list-extension.md)
+- [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
+- [Elektronikus jelentéskészítési (ER) funkciók listájának kibővítése](general-electronic-reporting-formulas-list-extension.md)
 
