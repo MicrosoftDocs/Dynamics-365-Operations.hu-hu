@@ -1,0 +1,66 @@
+--- 
+title: " A szervezeti egységek közötti kapcsolatok megtervezése"
+description: "Ez az eljárás végigvezeti azon a folyamaton, hogyan kell a szervezeti egységek közötti kapcsolatot megtervezni."
+author: mugunthanm
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner, OMNodeSelection,  HierarchyPublishAndCloseForm
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: mumani
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: b2ecf9fb75f67b4ff505598e7a38f4cc3ee328d7
+ms.contentlocale: hu-hu
+ms.lasthandoff: 02/07/2018
+
+---
+# <a name="design-the-relationships-between-organizational-units"></a> A szervezeti egységek közötti kapcsolatok megtervezése
+
+[!include[task guide banner](../includes/task-guide-banner.md)]
+
+Ez az eljárás végigvezeti azon a folyamaton, hogyan kell a szervezeti egységek közötti kapcsolatot megtervezni. A kapcsolat megadása előtt létre kell hoznia egy új szervezeti célt, vagy használhatja a meglévő szervezet célt. A bemutató adatsor típusa, melyet a vállalat használt a folyamat elvégzéséhez, az USRT. A feladat az Adminisztrátor szerepkör számára készült.
+
+1. Ugrás a Szervezet felügyelete > Szervezetek > Szervezeti hierarchiák menüpontokra.
+2. Kattintson az Új lehetőségre.
+3. Írjon be egy értéket a Név mezőbe.
+4. Kattintás a Cél hozzárendelése menüpontra.
+5. Keresse meg és jelölje ki a kívánt rekordot a listán.
+6. Kattintson a Hozzáadás gombra.
+7. Keresse meg és jelölje ki a kívánt rekordot a listán.
+8. Kattintson az OK gombra.
+    * Annyi szervezeti célt lehet kiválasztani, amennyit az ön szervezete számára szükséges.  
+9. Keresse meg és jelölje ki a kívánt rekordot a listán.
+10. Kattintás a Beállítás alapértelmezettként menüpontra.
+11. Zárja be a lapot.
+12. Kattintson a Mentés gombra.
+13. Kattintson a Megtekintés menüpontra.
+14. Kattintson a Szerkesztés lehetőségre.
+15. Kattintson a Beszúrás lehetőségre.
+16. Kattintson az Üzleti egység menüpontra.
+17. Keresse meg és jelölje ki a kívánt rekordot a listán.
+18. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+19. Kattintson a Beszúrás lehetőségre.
+20. Kattintson a Kiskereskedelmi csatorna menüpontra.
+21. Keresse meg és jelölje ki a kívánt rekordot a listán.
+22. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+    * Annyi szervezeti egységet adhat hozzá, amennyi szükséges.  
+23. Kattintson a Mentés gombra.
+24. Kattintson a Bezárás gombra.
+25. A Közzététel gombra kattintva megnyithatja a legördülő párbeszédablakot.
+26. Az Érvényesség dátuma mezőben adjon meg egy dátumot és időpontot.
+27. Az Érvényesség dátuma mezőben adjon meg egy dátumot és időpontot.
+28. Írjon be egy értéket a Változások leírása mezőbe.
+29. Kattintson a Közzététel parancsra.
+30. Kattintson a Bezárás gombra.
+
+
