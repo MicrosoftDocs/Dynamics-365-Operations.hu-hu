@@ -7,6 +7,10 @@
         - name: Új vagy módosult elemek
           href: whats-new.md
           items:
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. november 27.)
+              href: whats-new-talent-november-27.md
+            - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. november 15.)
+              href: whats-new-talent-november-15.md
             - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 31.)
               href: whats-new-talent-october-31.md
             - name: Új vagy módosult elemek a Dynamics 365 for Talent Core HR szolgáltatásban (2018. október 19.)
@@ -95,8 +99,6 @@
           href: creating-offers.md
         - name: E-mail-sablonok létrehozása és kezelése
           href: email-templates.md
-        - name: Jelentéskészítés és elemzés
-          href: Reporting-Analytics-Attract.md
         - name: Biztonság és szerepkörök kezelése az Attract alkalmazásban
           href: security-attract.md
         - name: Adminisztratív beállítások az Attract alkalmazásban
@@ -266,3 +268,27 @@
           href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Teljesítmény-áttekintés létrehozása
           href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Talent – hibaelhárítás
+      items:
+        - name: Az elemzési jelentések nincsenek frissítve
+          href: analytic-reports-not-updated.md
+        - name: Nem lehet környezetet létrehozni a PowerApps felügyeleti központjában
+          href: create-envi-powerapps-admin-ctr.md
+        - name: Talent kliens kapcsolata megszakad
+          href: client-disconnects.md
+        - name: Az adatbázis biztonsági mentéseinek kezelése
+          href: database-backups.md
+        - name: 'Szövegcsonkolás elkerülése a pozícióhierarchián, és exportálás Visio szolgáltatásba'
+          href: avoid-text-truncation-position-hierarchy-visio.md
+        - name: Kompenzációs folyamat futtatása
+          href: run-compensation-process.md
+        - name: 'Feladat-útmutatók mentése LCS-re, és újbóli lejátszásuk'
+          href: save-play-task-guides-LCS.md
+        - name: Hozzáférés privát címekhez biztonsági szerepkörnek megfelelően
+          href: security-roles-addresses.md
+        - name: A Talent nem jelenik meg a Microsoft Dynamics 365 alkalmazások között (CDS1.0)
+          href: talent-not-in-home-CDS.md
+        - name: 'A felhasználó hozzáfér a Core HR alkalmazáshoz, de az Onboard és Attract alkalmazásokhoz nem'
+          href: user-access-core-hr.md
+        - name: Jelentéskészítési lehetőségek a Talent szolgáltatásban
+          href: talent-reporting-options.md
